@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15"
+    ],
+    "result": "Prior work established that the 'variance is salience' hypothesis, derived from efficient coding principles in sampling-limited regimes, successfully accounts for visual sensitivity to binary texture statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C15 all cite Hermundstad et al., 2014 and related work that established this theoretical framework and validated it for binary textures. These are well-documented prior results that provide the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C40",
+      "C42"
+    ],
+    "result": "The authors define a 66-dimensional space of local grayscale texture correlations for 2\u00d72 blocks with three luminance levels, constrained by translation invariance to yield 2 first-order, 16 second-order, 32 third-order, and 16 fourth-order parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C35, C38, C40, and C42 describe the mathematical construction of the texture space. The dimensionality calculations follow from combinatorics and symmetry constraints, and are internally consistent. The construction is shown in Figures 1-2 and detailed in Appendix 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C50"
+    ],
+    "result": "The authors developed a texture synthesis algorithm using a Markov process to generate maximum-entropy textures with specified correlation statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C50 describe the texture generation methodology, which is detailed in Appendix 2. The approach extends prior methods (Victor and Conte, 2012) to grayscale textures and is demonstrated in Figures 1-2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C126",
+      "C129",
+      "C130",
+      "C132",
+      "C153",
+      "C154"
+    ],
+    "result": "Natural image analysis reveals that second-order texture correlations have much higher variance than third- and fourth-order correlations, leading to predictions of detection thresholds as the inverse of standard deviations in each texture direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C126-C154 describe the natural image analysis pipeline (Figure 3) and prediction methodology. The finding that second-order correlations dominate is supported by the data and follows from fitting a multivariate Gaussian to the preprocessed image distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C20",
+      "C21",
+      "C57",
+      "C58"
+    ],
+    "result": "The 'variance is salience' hypothesis predicts that two-point correlations are most salient, while correlations beyond second order are not salient. Psychophysical measurements confirm that detection thresholds could not be reliably measured in most directions beyond second order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C20-C21, and C57-C58 present the theoretical prediction and its experimental confirmation. The psychophysical data (Appendix 6) show low sensitivity to third- and fourth-order planes, consistent with the low variance of these correlations in natural images.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C7",
+      "C22",
+      "C59",
+      "C60",
+      "C61",
+      "C64",
+      "C117"
+    ],
+    "result": "Predicted thresholds for over 300 second-order correlations match psychophysical thresholds with median fractional error <0.13, demonstrating that the 'variance is salience' hypothesis accounts for visual sensitivity to grayscale textures at a striking level of detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C7, C22, C59-C61, C64, and C117 report the main quantitative finding shown in Figures 4-5. The agreement between 311 predicted and measured thresholds with only a single scaling parameter is statistically significant (p<10^-4) and represents the core validation of the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Subjects showed high consistency in relative sensitivity across texture directions, with per-subject scaling factors (range 0.855-1.15) accounting for 98.8% of inter-subject variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C149-C151 report the inter-subject consistency analysis. The high percentage of variance explained by simple scaling demonstrates that subjects share a common pattern of relative sensitivities, supporting the robustness of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C78",
+      "C79",
+      "C82",
+      "C84",
+      "C125"
+    ],
+    "result": "Systematic discrepancies exist between predictions and measurements: predictions underestimate thresholds in simple planes (median log error -0.090) and overestimate in mixed planes (+0.008), and underestimate thresholds in low-variance directions, suggesting limitations of the linear efficient coding model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72, C78-C79, C82, C84, and C125 identify systematic patterns in prediction errors (detailed in Appendix 5). The analysis of these discrepancies is thorough and the authors appropriately acknowledge model limitations. The fitted exponent \u03b7\u2208[0.81, 0.98] suggests a weak nonlinearity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C106",
+      "C118"
+    ],
+    "result": "Psychophysical thresholds show the same symmetry invariances as the natural image distribution (under vertical/horizontal flips and 90\u00b0/180\u00b0/270\u00b0 rotations), demonstrating that visually-guided behavior reflects symmetries in natural texture statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C96-C99, C106, and C118 report the symmetry analysis shown in Figure 6B. The correspondence between natural image symmetries and perceptual invariances provides a novel test of efficient coding beyond simple threshold matching, and the results are statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "The results are robust to variations in preprocessing parameters (downsampling factor N, patch size R, ternarization method) and different image datasets, though N=1 shows larger mismatches attributed to camera demosaicing artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 and C91 report robustness analyses shown in Figure 6A and Appendix 3. The consistency across parameter variations strengthens confidence in the findings, and the explanation for N=1 discrepancies is reasonable given prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "Psychophysical data show bright-dark asymmetry, but the natural image analysis does not capture this due to preprocessing (log transform, whitening, ternarization) that removes the skewed intensity distribution and power-law correlations underlying this asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 and C113 explain the discrepancy in bright-dark asymmetry between psychophysics and predictions (Figure 6B). The explanation is well-reasoned and supported by citations to prior work (Ratliff et al., 2010). The preprocessing choices are justified but do limit the scope of predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The whitening preprocessing step is justified because fixational eye movements whiten visual input during natural viewing, and short stimulus presentations (120 ms) should be pre-whitened to compensate for the absence of these movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C54 provide the rationale for whitening. While C52 cites supporting evidence (Rucci and Victor, 2015), C54 is an inference that may not fully account for differences between natural viewing and the experimental paradigm. The justification is reasonable but involves assumptions about equivalence between preprocessing and natural mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C119"
+    ],
+    "result": "This work provides a rigorous quantitative test of efficient coding in texture perception by extending binary texture analysis to grayscale images, strengthening the idea that the brain efficiently encodes visual texture information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 and C119 summarize the study's contribution. The extension to grayscale textures (66 dimensions vs. 10 for binary) with detailed quantitative predictions and validation across 311 thresholds represents a substantial advance over prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C66",
+      "C67"
+    ],
+    "result": "Permutation testing confirms the match between predictions and measurements is unlikely due to chance (p<10^-4), with 95% of permutation samples showing median absolute log errors in [0.24, 0.31] compared to the observed 0.13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C66-C67 report statistical validation (detailed in Appendix 4). The permutation test appropriately accounts for the elliptical structure of predictions within planes, and the highly significant p-value supports the conclusion that the match is not coincidental.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C77"
+    ],
+    "result": "Prediction errors are larger for sum-correlations than difference-correlations, possibly because sum-correlations are less robust due to their dependence on specific gray-level assignments and modular arithmetic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74 and C77 offer a speculative explanation for an observed pattern. While the observation is supported by data (Appendix 5), the proposed mechanism is not directly tested and remains a hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Adaptation to increasingly complex texture statistics must ultimately be limited by insufficient sampling and computational costs, and understanding these limits will reveal cost-benefit tradeoffs in efficient coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86 and C121-C123 present theoretical arguments about fundamental limits of efficient coding. While conceptually reasonable, these are speculative statements about future work rather than findings supported by the current data.",
+    "result_type": "MINOR"
+  }
+]

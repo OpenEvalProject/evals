@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Loss of LRRK2 in macrophages results in elevated basal expression of type I interferon and interferon-stimulated genes. RNA-seq analysis revealed hundreds of genes with significantly higher expression in uninfected Lrrk2 KO macrophages compared to HET controls, with well-characterized ISGs (Mx1, Ifit1, Irf7, Rsad2) expressed several times higher. Pathway analysis identified 'Interferon signaling' and 'Activation of IRF by cytosolic PRRs' as the top enriched pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36, C37, and C38 are strongly supported by converging evidence from RNA-seq (Figure 1A), RT-qPCR validation (Figure 1E), and unbiased pathway analysis (Figure 1B). The data consistently demonstrate elevated basal ISG expression across multiple experimental approaches and cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Lrrk2 KO macrophages exhibit blunted interferon responses to mycobacterial pathogens and cytosolic nucleic acid agonists. Despite elevated baseline ISG expression, Lrrk2 KO macrophages fail to induce ISGs to the same levels as controls following Mtb infection, M. leprae infection, or stimulation with ISD and DMXAA. This blunted response is specific to type I IFN pathways, as NF-\u03baB gene expression (Tnfa) remains intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39, C40, C43, C44, and C45 are well-supported by RNA-seq data (Figure 1C), RT-qPCR validation across multiple cell types (Figures 1E-F, 2A-G), and western blot analysis showing reduced phospho-STAT1 (Figure 2H). The specificity of the defect is demonstrated by intact Tnfa responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Lrrk2 KO macrophages show defects in IFNAR signaling and cytosolic DNA sensing. Western blot analysis revealed a significant defect in phospho-STAT1 activation and a modest defect in phospho-IRF3 activation following ISD transfection. Lrrk2 KO BMDMs are also defective in ISG expression following direct IFN-\u03b2 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, and C48 are supported by western blot data (Figure 2H) and RT-qPCR analysis (Figure 2J). The quantification shows clear reductions in both phospho-STAT1 and phospho-IRF3, with the STAT1 defect being more pronounced, consistent with the observed ISG induction defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Elevated basal type I IFN in Lrrk2 KO macrophages is dependent on chronic IFNAR signaling and can be rescued by blocking this pathway. Treatment with IFN-\u03b2 neutralizing antibody or genetic deletion of IFNAR reduces basal ISG levels in Lrrk2 KO cells. Loss of cGAS similarly reduces basal ISG expression and restores normal responses to DMXAA and poly(I:C), with restoration of STAT1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C50, C51, C52, and C53 are strongly supported by RT-qPCR data from antibody blocking experiments (Figure 2K), genetic crosses with Ifnar KO mice (Figure 2L), and cGas/Lrrk2 double KO experiments (Figures 3A-B). The rescue of both baseline and induction phenotypes provides compelling evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mitochondrial defects in Lrrk2 KO macrophages promote mtDNA leakage into the cytosol and chronic cGAS engagement. Lrrk2 KO cells exhibit fragmented mitochondrial networks and ~3-fold higher cytosolic mtDNA levels. Exacerbating mitochondrial defects by depleting TFAM increases basal ISG expression, while depleting mtDNA with ddC normalizes both basal ISG levels and restores IFN-\u03b2 induction capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31, C32, C54, C55, C56, C57, C58, and C59 are well-supported by immunofluorescence microscopy (Figure 3C), qPCR measurements of cytosolic mtDNA (Figure 3E), western blot controls (Figure 3F), and genetic and pharmacological rescue experiments (Figures 3G-I). The convergence of gain-of-function (TFAM depletion) and loss-of-function (ddC treatment) approaches strongly supports the causal role of cytosolic mtDNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C65"
+    ],
+    "result": "DRP1-dependent mitochondrial fragmentation contributes to altered innate immune gene expression in Lrrk2 KO macrophages. Lrrk2 KO cells show significantly higher levels of phospho-S616 DRP1. Chemical inhibition of DRP1 with Mdivi-1 returns ISG expression to control levels, restores cytosolic mtDNA to normal, and normalizes mitochondrial membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C60, C61, C62, and C65 are supported by flow cytometry data showing elevated phospho-S616 DRP1 (Figures 4A, C, D), western blot confirmation (Figure 4B), and rescue experiments with Mdivi-1 demonstrating normalization of ISG expression (Figure 4E), cytosolic mtDNA (Figure 4F), and membrane potential (Figures 5E-F). The pharmacological rescue provides strong evidence for DRP1's causal role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "Lrrk2 KO macrophages exhibit mitochondrial membrane potential defects and increased sensitivity to oxidative stress. Flow cytometry analysis using JC-1 and TMRE dyes revealed lower baseline mitochondrial membrane potential in Lrrk2 KO cells and increased sensitivity to rotenone/ATP and FCCP. Treatment with the mitochondrial antioxidant mitoTEMPO dramatically rescues basal ISG expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C66 are well-supported by flow cytometry data using two independent dyes (JC-1 and TMRE) across multiple cell types (Figures 5A-D, Figure 5\u2014figure supplement 1), stress challenge experiments (Figures 5C-D), and rescue with mitoTEMPO (Figure 5G). The consistency across methods and cell types strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Lrrk2 KO macrophages are defective in both oxidative phosphorylation and glycolysis, with metabolic defects driven by both mitochondrial ROS and constitutive IFNAR signaling. Addition of sodium pyruvate increases basal type I IFN levels in Lrrk2 KO cells. Seahorse analysis revealed defects in maximal and reserve respiratory capacity as well as reduced glycolysis. Co-treatment with mitoTEMPO and IFN-\u03b2 neutralizing antibody completely restores both OXPHOS and glycolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C68, C69, and C70 are supported by RT-qPCR data showing pyruvate effects (Figures 6A-B), Seahorse metabolic analyzer data demonstrating OXPHOS and glycolysis defects (Figure 6C), and rescue experiments showing that both mitoTEMPO and IFN-\u03b2 blockade are required for complete metabolic restoration (Figures 6C-D). The additive rescue effect provides strong evidence for independent contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Reduced purine metabolites and antioxidants contribute to mitochondrial damage and type I IFN expression in Lrrk2 KO macrophages. LC/MS/MS analysis revealed lower levels of IMP and hypoxanthine, with fewer purinosome puncta in Lrrk2 KO cells. Addition of urate reduces basal ISG expression in a dose-dependent manner and restores mitochondrial membrane potential, though neither urate nor mitoTEMPO alters DRP1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C72, C73, C74, and C75 are supported by LC/MS/MS metabolomics data validated with pure standards (Figure 7A), immunofluorescence microscopy of purinosomes (Figures 7C-D), dose-response experiments with urate (Figures 7E-F), and flow cytometry showing membrane potential rescue (Figures 7G-H). The observation that antioxidants don't affect DRP1 (Figure 7I) appropriately places oxidative stress downstream or independent of DRP1 misregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Lrrk2 KO mice can control Mtb replication in vivo with no significant differences in bacterial burdens or survival. Ex vivo, Lrrk2 KO BMDMs show increased CFUs at 5 days post-infection. In vivo, no significant differences in CFUs were observed in lungs or spleens at days 7, 21, 63, and 126 post-infection, and survival times were not different between genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C34, C76, C77, and C78 are supported by CFU data from ex vivo infections (Figure 8A), survival curves (Figure 8B), and longitudinal CFU measurements from infected mice (Figure 8C). The statistical analysis appropriately uses Mann-Whitney tests, and the sample sizes (minimum 5 mice per group) meet the stated power calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C35",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Lrrk2 KO mice exhibit exacerbated inflammation and lower ISG expression in the lungs during Mtb infection. While NF-\u03baB pathway cytokines (Tnfa, Il6, Il1b) are expressed at similar levels, ISGs (Mx1, Irf9, Gbp8) are lower in Lrrk2 KO lungs at day 21. Histopathology reveals significantly more inflammatory granulomatous nodules, particularly in perivascular regions, and increased total and degenerate neutrophils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C35, C79, C80, C81, and C82 are well-supported by RT-qPCR data from lung homogenates (Figures 8E-F), H&E staining and semi-quantitative scoring (Figures 8G-H), and neutrophil quantification (Figures 8I-J). The consistency between ex vivo and in vivo ISG phenotypes strengthens the conclusions, and the histopathological analysis was performed by a masked, board-certified veterinary pathologist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "LRRK2's role in maintaining mitochondrial homeostasis is critical for proper induction of type I IFN gene expression in macrophages and for downstream inflammatory responses during in vivo infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116 and C117 represent the main conclusions of the manuscript and are supported by the totality of experimental evidence linking LRRK2 to mitochondrial homeostasis (DRP1 phosphorylation, membrane potential, mtDNA leakage), type I IFN dysregulation (elevated baseline, blunted induction), and in vivo inflammatory phenotypes. The mechanistic chain from mitochondrial defects through cGAS/IFNAR signaling to immune outcomes is well-established through multiple rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Background claims establishing LRRK2's role in Parkinson's disease, mitochondrial function, and immunity based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C30 are background claims supported by appropriate citations to established literature. These provide context for the current study but do not represent novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Methodological and mechanistic background claims establishing experimental rationale and prior knowledge about relevant pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C115 provide methodological justification (e.g., 4 hr timepoint for Mtb infection), mechanistic background (e.g., ISD recognition by cGAS, DRP1 regulation), and context from prior studies. These are appropriately cited and provide necessary background for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Expression of non-ISG genes ApoE and Ldhb is reduced in uninfected Lrrk2 KO BMDMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C42 are supported by RT-qPCR data (Figure 1G). While these findings are interesting and may have implications for understanding LRRK2's broader cellular roles, they are not central to the main narrative about type I IFN dysregulation and are not mechanistically explored further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "LRRK2 may play a role in regulating the central nervous system immune milieu in PD patients via alteration of mitochondrial homeostasis in brain-resident glial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C118 is explicitly speculative and represents an extrapolation from the macrophage findings to potential CNS implications. While the speculation is reasonable given the established role of LRRK2 in PD and the findings in peripheral immune cells, no direct experimental evidence is provided to support this specific claim about CNS immune regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Proposed mechanisms for the refractory phenotype in Lrrk2 KO macrophages include oxidized cytosolic DNA resistant to TREX-1 or upregulation of unidentified negative regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119 and C120 are explicitly speculative proposals to explain the unusual refractory phenotype where high basal IFN leads to blunted responses rather than enhanced responses. While the oxidized DNA hypothesis is supported by a citation and is consistent with the data, neither mechanism is directly tested. These remain plausible but unvalidated hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Loss of LRRK2 could alter DRP1 phosphorylation indirectly through changing serine accessibility, protein-protein interactions, or by modifying pathways controlling mitochondrial turnover or lysosome homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121 and C122 are speculative proposals to explain the observation that Lrrk2 KO cells have elevated phospho-S616 DRP1 despite LRRK2 not being required for this phosphorylation. The proposals are reasonable given that other kinases can phosphorylate DRP1 at this site (C111), but no direct evidence is provided to distinguish between these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "Mtb infection can elicit type I IFN expression in important cGAS-independent ways in vivo that are not yet fully understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is an inference drawn from the authors' previous work (cited as Collins et al., 2015; Watson et al., 2015) showing that cGAS deletion has major effects in macrophages but minor effects in vivo. This inference is appropriately supported by the cited data and helps explain why the in vivo phenotypes in Lrrk2 KO mice are more modest than the ex vivo macrophage phenotypes.",
+    "result_type": "MINOR"
+  }
+]

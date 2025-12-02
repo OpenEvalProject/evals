@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "Using electron microscopy (EM) and STED super-resolution microscopy, the authors quantified vesicle:Ca2+ channel coupling distances at the Drosophila NMJ. Both methods revealed a broad, heterogeneous distribution of distances, with EM showing a mean of 95.9 nm (Rayleigh distribution \u03c3=76.5 nm) and the integrated distribution having a mean of 122.1 nm. STED microscopy of Unc13A showed close agreement with the EM-derived integrated distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36-C38, C42-C46, and C48 collectively demonstrate convergent evidence from two independent imaging modalities (EM and STED) that both reveal heterogeneous coupling distances. The quantitative parameters are clearly stated, the sample sizes are adequate (524 AZs from 16 NMJs for STED), and the close agreement between methods strengthens confidence in the measurements. The integration of the Rayleigh distribution from 2D EM sections to estimate 3D distributions is mathematically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Electrophysiological recordings at the Drosophila NMJ showed that eEJC1 amplitudes increase with extracellular Ca2+ concentration, and short-term plasticity shifts from strong facilitation (PPR=1.80) at 0.75 mM Ca2+ to depression at higher concentrations. Variance-mean analysis yielded estimates of nsites=164 and q=0.64 nA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 describe well-established electrophysiological measurements with appropriate controls and sample sizes (n=6 cells from 6 animals). The shift from facilitation to depression with increasing Ca2+ is clearly demonstrated in Figure 2C-D, and the variance-mean relationship follows standard binomial analysis methods. The measurements provide the experimental foundation for subsequent modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors established simulation parameters by measuring inter-AZ distances (1-4-NND) from BRP-stained NMJs and simplifying the geometry to a cylindrical volume. GCaMP6m experiments determined that half-maximal fluorescence response occurred at 2.68 mM extracellular Ca2+, which was used to parameterize Ca2+ influx in simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe methodologically sound approaches to parameterize the computational model. The inter-AZ distance measurements (Figure 3A) provide empirical basis for simulation volume, the cylindrical simplification is justified for computational efficiency while preserving radial symmetry, and the GCaMP6m calibration (Figure 3\u2014figure supplement 1) provides an independent measure of Ca2+ influx saturation consistent with prior literature (2.6 mM at Calyx of Held).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The single-sensor model reproduced eEJC1 amplitudes and short-term depression at high Ca2+ but failed to reproduce facilitation at low Ca2+ and predicted excessive variance. Analysis revealed that with heterogeneous vesicle distributions, only vesicles close to Ca2+ channels fuse in response to AP1, these sites are depleted, and AP2 draws from the same depleted pool, preventing facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 present a coherent analysis showing that the single-sensor model fails under realistic spatial heterogeneity. The model successfully fits some features (eEJC1 amplitudes, STD) but critically fails on facilitation and variance (Figures 4D-G), which is the key test. The spatial analysis (Figure 5) provides mechanistic insight into why facilitation fails: the broad distance distribution causes selective depletion of high-pVr vesicles near the center. This contrasts with prior work (C62) using uniform distances, highlighting the importance of realistic topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A dual fusion-sensor model (incorporating a slow Ca2+ sensor like syt-7 alongside the fast sensor) was tested but failed to produce sufficient facilitation (PPR~1.08 vs. experimental 1.80 at 0.75 mM Ca2+), generated excessive asynchronous release, and predicted variances much larger than experimental values. Systematic parameter exploration found no parameter combination that could reproduce experimental facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C78 demonstrate thorough testing of the dual fusion-sensor hypothesis. The model was motivated by prior literature (C67-C69) but failed multiple criteria when tested with realistic vesicle distributions: insufficient facilitation (C72, Figure 6G), excessive asynchronous release (C73, Figure 6D), excessive variance (C74, Figure 6I), and systematic parameter exploration (C75, Figure 6J-K) found no solution. Testing with cooperativity=5 (C76) did not improve results. The conclusion (C77) that this mechanism is unlikely at Drosophila NMJ is well-supported, though the careful caveat (C78) that syt-7 may function via other mechanisms is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "An unpriming model, where Ca2+ inhibits vesicle unpriming leading to RRP 'overfilling' between stimuli, successfully reproduced eEJC1 amplitudes, PPR values, and variance-mean relationships across all Ca2+ concentrations. The model showed facilitation at low Ca2+ (via RRP overfilling) and depression at high Ca2+ (via depletion), without generating asynchronous release. A site activation model performed similarly well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C91 present strong evidence that RRP-modulating mechanisms can account for the experimental data. The unpriming model successfully fits all key experimental features (Figure 7D-I): eEJC1 amplitudes (C83), PPR values including facilitation (C83), variance-mean relationships with only minor overshoot at high Ca2+ (C84), and no asynchronous release (C81, C88). The mechanism is robust across parameter space (C86-C87, Figure 7J-K) and works with different cooperativities (C85). The site activation model (C89) provides an alternative implementation of the same principle. The preference for the unpriming model (C91) is justified by parsimony (fewer parameters).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The unpriming model predicted larger Ca2+ influx (1.64-3.05 fold higher Qmax) than pVr-based models, which compensated for submaximal priming by expanding the spatial region of vesicle fusion. This allowed the model to utilize vesicles across the entire distance distribution, unlike the single- and dual fusion-sensor models that only utilized vesicles close to Ca2+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 provide important mechanistic insight into why the unpriming model succeeds where pVr-based models fail. The larger Ca2+ influx (C92, Table 2) is a fitted parameter that emerges from optimization, and the spatial analysis (C93-C95, Figure 8) shows this enables more efficient utilization of the entire vesicle distribution. This addresses a key limitation identified in the single-sensor model (C66). The comparison is clearly demonstrated in Figures 5B vs 8B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors conclude that pVr-based facilitation mechanisms (single-sensor and dual fusion-sensor models) failed to reproduce facilitation, while Ca2+-dependent regulation of the RRP (unpriming and site activation models) successfully reproduced experimental observations. They propose that Ca2+-dependent accumulation of releasable vesicles is a plausible mechanism for paired-pulse facilitation at the Drosophila NMJ and possibly in central synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98, C108-C109 summarize the main conclusions, which are well-supported by the systematic comparison of four models. The failure of pVr-based models (C96) and success of RRP-based models (C97) is clearly demonstrated across multiple criteria. The conclusion about paired-pulse facilitation requiring priming-based mechanisms (C108) is supported by the data, though the generalization to central synapses (C98, C109) is appropriately presented as speculative/plausible rather than proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Stochastic simulations using the measured vesicle distribution revealed strong constraints on short-term plasticity, with facilitation being particularly difficult to achieve. Models based on activity-dependent changes in vesicular release probability generated insufficient facilitation and excessive variance, while Ca2+-dependent mechanisms rapidly increasing the number of releasable vesicles reliably reproduced short-term plasticity and variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C39-C41 provide high-level summary statements that are supported by the detailed modeling results presented in other claim groups. The importance of stochastic simulations (C39) is justified by the proof that deterministic simulations cannot correctly estimate PPR (Materials and methods, Figure 4\u2014figure supplement 1). The conclusions about pVr-based vs. RRP-based mechanisms (C7-C8, C40-C41) are supported by the systematic model comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The modeling approach assumes all primed vesicles have identical properties except for their distance to Ca2+ channels ('positional priming'). The experimental system (muscle 6 NMJ) receives input from both Ib and Is boutons with different physiological properties, but the model does not distinguish between these inputs, representing compound behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 describe key assumptions and limitations of the modeling approach. The positional priming assumption (C99) is clearly stated and justified by citation. The limitation regarding Ib/Is inputs (C100-C102) is appropriately acknowledged, with citations supporting that these inputs differ physiologically (C101). This represents good scientific practice in stating model assumptions and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors discuss that syt-7 has been reported to function in vesicle priming and RRP replenishment, suggesting future work should investigate whether syt-7's role in facilitation involves Ca2+-dependent inhibition of unpriming or site activation. They note that similar RRP-based facilitation mechanisms have been proposed for other synapses, and that it was unclear whether RRP increases are required for paired-pulse facilitation or only for frequency facilitation in tonic synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C107 are primarily discussion points about future work (C104) and context from prior literature (C103, C105-C107). While the citations support the statements about prior work, these claims represent speculation about mechanisms (C104) and open questions in the field (C106) rather than results from this study. They provide appropriate context but do not constitute supported findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C47"
+    ],
+    "result": "The introduction establishes foundational knowledge about synaptic transmission, including the role of Ca2+-induced vesicle fusion, SNARE proteins, synaptotagmins, short-term plasticity mechanisms, and the importance of vesicle:Ca2+ channel coupling distance. It reviews prior modeling approaches and identifies gaps in knowledge about precise spatial relationships at most synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C4, C10-C35, C47 provide background context supported by extensive citations to established literature. These are primarily knowledge claims that set up the rationale for the study. While not original findings, they are accurately represented and appropriately cited. Claim C2 bridges to the current work by stating the coupling distance determines release probability and plasticity, which is then tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The authors propose activity-dependent inhibition of vesicle un-priming or release site activation as novel facilitation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 represents the main mechanistic proposal emerging from the modeling work. This is supported by the successful performance of the unpriming and site activation models (claims C79-C91) in reproducing experimental data where pVr-based models failed. However, this is a computational/theoretical proposal rather than direct experimental demonstration of the mechanism, which is appropriately indicated by the language 'propose' and the evidence type 'SPECULATION, INFERENCE'.",
+    "result_type": "MAJOR"
+  }
+]

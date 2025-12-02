@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C40",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The base rate of true effects is the major determinant of replication rates in scientific research. Low base rates lead to low replication rates even in the absence of questionable research practices, and research fields with inherently low base rates cannot substantially improve replication rates by focusing exclusively on methodological issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C40, C78, C79, and C80 collectively demonstrate through mathematical modeling (Equation 1) and extensive computational analyses across multiple scenarios that base rate is the dominant factor affecting replication rates. The modeling shows replication rates can range across nearly the full 0-1 range based solely on base rate changes, and multiple figures consistently demonstrate this relationship across different p-hacking strategies, alpha levels, and effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C56",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "P-hacking increases both Type 1 error rates and statistical power, with the power inflation substantially compensating for the increased false positive rate, resulting in modest overall effects on replicability that are small compared to the effect of base rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C56, C57, C58, and C62 are supported by the quantitative modeling throughout the manuscript showing that p-hacking's dual effects on Type 1 error and power tend to counteract each other. The analyses across multiple p-hacking strategies (selective reporting, multiple dependent measures, data peeking, outlier removal) consistently demonstrate modest impacts on replication rates, especially when effect sizes are small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Selective reporting of significant studies inflates both Type 1 error rates and statistical power, with the inflation being more pronounced for false positives when effect sizes are large, but the overall effect on replication rate is modest for k=2 attempts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C32, C33, C34, and C35 are supported by the computational modeling presented in Figures 3-5 and related analyses. The modeling demonstrates quantitatively how selective reporting affects both error rates and power, with the counterintuitive finding that false positive inflation is greater with larger effect sizes because power inflation cannot compensate as much when power is already high.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C50"
+    ],
+    "result": "Selective reporting and data peeking have little effect on replicability except in research scenarios where true effects are rare but there is high power to detect them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C50 are supported by the modeling results showing that these p-hacking strategies have minimal impact on replication rates across most parameter combinations. The analyses demonstrate that only in the specific scenario of low base rates combined with high power do these practices substantially reduce replication rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C38",
+      "C63"
+    ],
+    "result": "Decreasing the nominal alpha level from 5% to 0.5% substantially reduces Type 1 error probability and increases replication rates, especially for small base rates, though it requires larger sample sizes to maintain power. P-hacking has smaller effects on replicability at the lower alpha level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, C38, and C63 are supported by the modeling results shown throughout the figures comparing \u03b1=5% and \u03b1=0.5%. The analyses demonstrate the expected statistical relationships and show them quantitatively across multiple scenarios, with consistent findings that lower alpha improves replication rates and reduces p-hacking impacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C59",
+      "C61"
+    ],
+    "result": "The impact of p-hacking on replication rates is modest for high base rates and small effect sizes, but increases with the extent of p-hacking (larger k values), with the smallest net influence occurring when effect sizes are small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C59, and C61 are supported by the comprehensive modeling results across Figures 4-13 showing how p-hacking effects vary with base rate, effect size, and extent of p-hacking. The consistent pattern across multiple p-hacking strategies demonstrates these relationships quantitatively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The extent of Type 1 error rate inflation and power enhancement from measuring multiple dependent variables depends on the correlations among measures, with zero correlation yielding results identical to selective reporting and larger correlations weakening p-hacking effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, and C45 are supported by the modeling with different correlation values (0.2 vs 0.8) shown in Figures 6-8 and supplements. The mathematical relationship is correctly derived and the computational results demonstrate the predicted patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Multiple analyses to remove outliers can produce slightly better replication rates than single analyses when outliers are present, but worse rates when no outliers exist. The major impact on replication rate comes from base rate rather than outlier removal strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, C54, and C55 are supported by the Monte Carlo simulation results in Figures 11-13 comparing scenarios with and without outliers. The simulations demonstrate the counterintuitive finding that outlier removal can improve outcomes when outliers are present, while the base rate effect remains dominant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Median statistical power in psychological research is about 36% and in neurosciences about 21%, and low power reduces replicability by reducing the ratio of true positives to false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C8 accurately report findings from cited studies (Stanley et al., 2018; Button et al., 2013) and correctly state the statistical relationship between power and replicability. These are well-established empirical findings and statistical principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C81"
+    ],
+    "result": "Base rates of true effects are estimated to be low in psychology (\u03c0=0.09-0.20) and around 10% in various research domains based on multiple lines of evidence from replication studies and prediction markets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, and C81 accurately report estimates from multiple cited studies (Wilson and Wixted, 2018; Dreber et al., 2015; Johnson et al., 2017; Miller and Ulrich, 2016). These are empirical estimates from prior work that are correctly cited and consistently reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C16",
+      "C46",
+      "C47"
+    ],
+    "result": "There is evidence that researchers selectively report significant studies, and specific p-hacking practices like data peeking can increase false positive rates to 14-20%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C16, C46, and C47 accurately report findings from cited studies (Francis, 2014; Francis et al., 2014; Simmons et al., 2011; Armitage et al., 1969). These are established empirical findings about the prevalence and effects of questionable research practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C42",
+      "C51"
+    ],
+    "result": "Typical parameter values in psychological research include sample sizes of n=20 per group, dependent measure correlations of 0.2, and outlier exclusion limits of 2-3 standard deviations from the mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C42, and C51 are supported by citations to empirical studies characterizing research practices (Marszalek et al., 2011; Bosco et al., 2015; Bakker and Wicherts, 2014). These parameter choices for the modeling are justified by prior empirical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The extent of p-hacking in practice is uncertain, with k=8 considered a reasonable upper bound, and even the highest prevalence estimates are around 50%. Evidence of massive p-hacking is needed to conclude it is a major contributor to the replication crisis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64, C65, C66, C67, and C68 acknowledge substantial uncertainty about actual p-hacking rates. C64 is a judgment call without empirical support, C65 cites conflicting views, and C68 notes prevalence estimates may be overestimates. The conclusion in C66 is logical given the modeling, but depends on unknown actual prevalence rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The main conclusions are robust to variations in replication power (50% vs 90%) and sample size, as demonstrated by additional computations and the mathematical relationship between sample size, effect size, and power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, C71, C72, C73, and C74 describe robustness checks and sensitivity analyses. C70 and C74 report additional computations performed by the authors, C73 correctly describes statistical relationships, and C72 follows logically from the mathematical model. These support the generalizability of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Some p-hacking strategies can produce higher statistical power than good practice at each level of Type 1 error, and data peeking can yield larger expected payoff than good practice when true effects are common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C76, and C77 report findings from supplementary analyses described in Appendix 2. C75 and C77 report computational results, while C76 provides a logical explanation for why p-hacking involving additional data collection can increase power faster than Type 1 error rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Researchers can in principle increase base rates by testing theory-based hypotheses rather than seeking surprising findings, but practical constraints may make this difficult in areas lacking theoretical understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82, C83, and C84 are speculative recommendations and acknowledgments of practical limitations. While C82 is a reasonable inference about how to increase base rates, C83 and C84 acknowledge substantial uncertainty about feasibility. These represent informed speculation rather than demonstrated findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Optimizing research strategy requires balancing multiple goals simultaneously, as minimizing false positives and false negatives require opposite approaches, and focusing solely on replicability is not optimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C86, C87, C88, and C89 correctly describe fundamental principles of statistical decision theory. These are logical inferences based on established knowledge about the tradeoffs inherent in hypothesis testing and resource allocation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "P-hacking should be avoided because it inflates Type 1 error rates, but scientists should look beyond p-hacking for the primary causes of low replication rates, as even massive campaigns against p-hacking may produce only modest improvements in replicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C91, C92, and C93 represent the main practical conclusions of the manuscript. C90 is a normative statement supported by established knowledge and citations. C91, C92, and C93 are inferences drawn from the modeling results showing the limited impact of p-hacking relative to base rate effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Scientific fraud prevalence is low (<2%), and while various factors including alpha levels, QRPs, and publication bias have been proposed as causes of low replicability, false positives are an unavoidable byproduct of hypothesis testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C5, C11, C12, and C13 accurately report prior work and established statistical knowledge. C3 cites survey evidence, C4-C5 correctly describe Benjamin et al.'s proposal and its implications, and C11-C13 state established principles about hypothesis testing and researcher incentives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "QRPs can artificially increase replication rates in some circumstances through motivated replication, as demonstrated by the improbability of obtaining five consecutive positive results when single-experiment power is 0.36.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C20 correctly cite Francis, 2012a and provide a valid mathematical calculation (0.36^5 = 0.006) demonstrating the 'too good to be true' phenomenon. This is a straightforward application of probability theory to detect potential QRPs in published literature.",
+    "result_type": "MINOR"
+  }
+]

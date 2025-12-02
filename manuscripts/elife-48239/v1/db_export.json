@@ -1,0 +1,1895 @@
+{
+  "submission": {
+    "id": "22c82b51-bd1d-4ebe-887b-75603190bf1a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:56:06.895055Z",
+    "updated_at": "2025-12-02T11:56:06.895055Z"
+  },
+  "content": [
+    {
+      "id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "submission_id": "22c82b51-bd1d-4ebe-887b-75603190bf1a",
+      "content_type": "manuscript",
+      "content_text": "# Evolution of asymmetric gamete signaling and suppressed recombination at the mating type locus\n\n## Authors\n\n- Zena Hadjivasiliou<sup>1</sup> ([ORCID: 0000-0003-1174-1421](https://orcid.org/0000-0003-1174-1421)) \u2020\n- Andrew Pomiankowski<sup>2</sup> ([ORCID: 0000-0002-5171-8755](https://orcid.org/0000-0002-5171-8755))\n\n### Affiliations\n\n1. Department of Biochemistry University of Geneva Geneva Switzerland\n2. Centre for Mathematics and Physics in the Life Sciences and Experimental Biology (CoMPLEX) University College London London United Kingdom\n3. Department of Genetics, Evolution and Environment University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe two partners required for sexual reproduction are rarely the same. This pattern extends to species which lack sexual dimorphism yet possess self-incompatible gametes determined at mating-type regions of suppressed recombination, likely precursors of sex chromosomes. Here we investigate the role of cellular signaling in the evolution of mating-types. We develop a model of ligand-receptor dynamics, and identify factors that determine the capacity of cells to send and receive signals. The model specifies conditions favoring the evolution of gametes producing ligand and receptor asymmetrically and shows how these are affected by recombination. When the recombination rate evolves, the conditions favoring asymmetric signaling also favor tight linkage of ligand and receptor loci in distinct linkage groups. These results suggest that selection for asymmetric gamete signaling could be the first step in the evolution of non-recombinant mating-type loci, paving the road for the evolution of anisogamy and sexes.\n\n## Introduction\n\nSex requires the fusion of two cells. With few exceptions, the sexual process is asymmetric with partnering cells exhibiting genetic, physiological or behavioral differences. The origins of sexual asymmetry in eukaryotes trace back to unicellular organisms with isogametes lacking any size or mobility difference in the fusing cells (Parker et al., 1972; Bell, 1978; Charlesworth, 1978; Hoekstra, 1987; Randerson and Hurst, 2001; Lehtonen et al., 2016). Isogamous organisms are divided into genetically distinct mating types, determined by several mating type specific genes that reside in regions of suppressed recombination (Fraser et al., 2004; Ahmed et al., 2014; Branco et al., 2017; Branco et al., 2018). The morphologically identical gametes mate disassortatively, scarcely ever with members of the same mating type. It follows that only individuals of a different mating type are eligible mating partners. This arrangement poses a paradox as it restricts the pool of potential partners to those of a different mating type, introducing a major cost (Hoekstra, 1987).\n\nSeveral hypotheses have been proposed to explain the evolution of isogamous mating types (Billiard et al., 2011; Billiard et al., 2012; Perrin, 2012). Mating types could serve as a restrictive mechanism preventing matings between related individuals thereby avoiding the deleterious consequences of inbreeding (Charlesworth and Charlesworth, 1979; Uyenoyama, 1988; Cz\u00e1r\u00e1n and Hoekstra, 2004). Another idea is that mating types facilitate uniparental inheritance of mitochondria, which leads to improved contribution of the mitochondrial genome to cell fitness (Hastings, 1992; Hurst and Hamilton, 1992; Hutson and Law, 1993; Hurst, 1996; Hadjivasiliou et al., 2012; Hadjivasiliou et al., 2013; Christie et al., 2015; Christie and Beekman, 2017a). Both hypotheses have been studied extensively and offer compelling arguments. Nevertheless, the existence of several species where inbreeding (Billiard et al., 2011; Perrin, 2012) or biparental inheritance of mitochondria (Billiard et al., 2011; Wilson and Xu, 2012) are the rule but nonetheless maintain mating types, indicates that these ideas may not alone explain the evolution of mating types.\n\nAn alternative hypothesis is that mating types are determined by the molecular system regulating gamete interactions (Hoekstra, 1987; Hadjivasiliou et al., 2015; Hadjivasiliou and Pomiankowski, 2016). Such interactions dictate the success of mating by guiding partner attraction and recognition and the process of cell fusion, and have been shown to be more efficient when operating in an asymmetric manner (Hadjivasiliou et al., 2015). For example, diffusible molecules are often employed as signals that guide synchronous entry to gametogenesis or as chemoattractants (Tsubo, 1961; Maier, 1993; Kuhlmann et al., 1997; Merlini et al., 2013). Secreting and sensing the same diffusible molecule impedes the ability of cells to accurately detect external signals and makes partner finding many-fold slower (Hadjivasiliou et al., 2015). In addition, secreting and detecting the same molecule in cell colonies can prevent individuals responding to signals from others (Youk and Lim, 2014). Our previous review revealed that sexual signaling and communication in isogamous species are universally asymmetric (Hadjivasiliou and Pomiankowski, 2016). This applies throughout the sexual process from signals that lead to gametic differentiation, to attraction via diffusible pheromones and interactions via surface bound molecules during cell fusion (Hadjivasiliou and Pomiankowski, 2016).\n\nIn this work we take this analysis further by explicitly considering ligand-receptor interactions between and within cells. We directly follow the dynamics of ligand and receptor molecules that are surface bound and determine the conditions under which the formation of within cell ligand-receptor pairs impedes between cell communication. We use this framework to explore the evolution of gametic interactions and show that asymmetric signaling roles and tight linkage between receptor and ligand loci both evolve due to selection for intercellular communication and quick mating. Our findings demonstrate that the evolution of mating type loci with suppressed recombination can be traced back to the fundamental selection for asymmetric signaling during sex.\n\n### Theoretical set-up\n\nConsider a population where cells encounter one another at random and can mate when in physical contact. Interactions between cells leading to successful mating are dictated by a ligand-receptor pair. Population wide effects may emerge if the ligand is highly diffusible (Youk and Lim, 2014; Hadjivasiliou et al., 2015). The employment of membrane bound ligands during sexual signaling is universal, whereas diffusible signals are not\u00a0(Hadjivasiliou and Pomiankowski, 2016). In this work we therefore assume that the ligand-receptor interactions only operate locally. Receptors remain bound to the cell surface and ligands only undergo localized diffusion (Figure 1) as is the case in several yeast and other unicellular eukaryotes (Cappellaro et al., 1991; Wilson et al., 1999; Phadke and Zufall, 2009; Merlini et al., 2013). The following equations describe the concentration of free ligand $L$, free receptor $R$ and bound ligand $L\u2062R$ within a single cell,\n\n$$\n\\frac{d[L]}{dt}=\u03bd_{L}\u2212k^{+}[R][L]+k^{\u2212}[LR]\u2212\\gamma_{L}[L],\n$$\n\n\n\n$$\n\\frac{d[R]}{dt}=\u03bd_{R}\u2212k^{+}[R][L]+k^{\u2212}[LR]\u2212\\gamma_{R}[R],\n$$\n\n\n\n$$\n\\frac{d[LR]}{dt}=k^{+}[R][L]\u2212k^{\u2212}[LR]\u2212\\gamma_{LR}[LR].\n$$\n\n$\u03bd_{L}$ and $\u03bd_{R}$ describe the rate of production of the ligand and receptor respectively. $\\gamma_{L}$, $\\gamma_{R}$, and $\\gamma_{L\u2062R}$, are the degradation rate of the ligand, receptor and bound complex respectively. The terms $k^{+}$ and $k^{-}$ are the binding and unbinding rates that determine the affinity of the ligand to its receptor within a single cell. We can solve Equations (1-3) by setting the dynamics to zero to obtain the amount of free ligand, free receptor ($[L]^{*}$, $[R]^{*}$) and bound complex at steady state ($[L\u2062R]^{*}$),\n\n$$\n[L]^{*}=\\frac{k^{+}\u2062\\gamma_{L\u2062R}\u2062(\u03bd_{L}-\u03bd_{R})-k^{-}\u2062\\gamma_{L}\u2062\\gamma_{R}-\\gamma_{L}\u2062\\gamma_{R}\u2062\\gamma_{L\u2062R}+\u0394}{2\u2062k^{+}\u2062\\gamma_{L}\u2062\\gamma_{L\u2062R}}\n$$\n\n\n\n$$\n[R]^{*}=\\frac{k^{+}\u2062\\gamma_{L\u2062R}\u2062(\u03bd_{R}-\u03bd_{L})-k^{-}\u2062\\gamma_{L}\u2062\\gamma_{R}-\\gamma_{L}\u2062\\gamma_{R}\u2062\\gamma_{L\u2062R}+\u0394}{2\u2062k^{+}\u2062\\gamma_{R}\u2062\\gamma_{L\u2062R}},\n$$\n\n\n\n$$\n[L\u2062R]^{*}=\\frac{k^{+}\u2062\\gamma_{L\u2062R}\u2062(\u03bd_{R}+\u03bd_{L})+k^{-}\u2062\\gamma_{L}\u2062\\gamma_{R}+\\gamma_{L}\u2062\\gamma_{R}\u2062\\gamma_{L\u2062R}-\u0394}{2\u2062k^{+}\u2062\\gamma_{L\u2062R}^{2}},\n$$\n\nWhere $\u0394$ is given by,\n\n$$\n\u0394=\\sqrt{(k^{-}\u2062\\gamma_{L}\u2062\\gamma_{R}+\\gamma_{L\u2062R}\u2062(\\gamma_{L}\u2062\\gamma_{R}+k^{+}\u2062\\gamma_{L\u2062R}\u2062(\u03bd_{R}+\u03bd_{L})))^{2}+4\u2062k^{+}\u2062\\gamma_{L}\u2062\\gamma_{R}\u2062\\gamma_{L\u2062R}\u2062(k^{-}+\\gamma_{L\u2062R})\u2062\u03bd_{R}}.\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig1-v1.jpg)\n\n**Figure 1.:** The ligand can be either membrane bound or released in the local environment. (a) When the interacting cells produce ligand and receptor symmetrically, the ligand will bind to receptors on its own membrane as well as those on the other cell. This may impair intercellular signaling. (b) Producing the ligand and receptor in an asymmetric manner resolves this issue.\n\nWe assume that the rates of ligand and receptor production and degradation are associated to timescales that are much shorter than the timescale of interactions between cells. Hence the concentrations of $[L]$, $[R]$ and $[L\u2062R]$ in individual cells will be at steady state when two cells meet. The likelihood of a successful mating between two cells depends not just on partner signaling levels but also on how accurately the cells can compute the signal produced by their partner. Binding of ligand and receptor originating from the same cell can obstruct this interaction. To capture this, we define the strength of the incoming signal for cell1 when it interacts with cell2 as,\n\n$$\nW_{12}=k_{b}\u2062[L_{2}]^{*}\u2062[R_{1}]^{*}\u2062(1-\\frac{[L\u2062R_{1}]^{*}}{[L\u2062R_{1}]^{*}+k_{b}\u2062[L_{2}]^{*}\u2062[R_{1}]^{*}})^{n},\n$$\n\nwhere subscripts denote concentrations in cell1 and cell2, and the parameter $k_{b}$ determines the affinity of the ligand and receptor between cells. If $k_{b}$ is the same as the affinity of receptor and ligand within cells, then $k_{b}=\\frac{k^{+}}{k^{-}}$ . We also consider cases where $k_{b}\\neq\\frac{k^{+}}{k^{-}}$ , for example, when ligand interacts differently with receptors on the same as opposed to a different cell (LeBon et al., 2014; Hadjivasiliou et al., 2016a).\n\nThe cost of self-signaling is determined by $n$. When $n=0$, $W_{12}$ reduces to $k_{b}\u2062[R_{1}]^{*}\u2062[L_{2}]^{*}$ with the incoming signal dependent on the concentration of ligand produced by cell2 and receptor produced by cell1. This corresponds to a case where self-binding does not lead to activation but only causes an indirect cost through the depletion of available ligand and receptor molecules. When $n\\geq1$, binding within a cell leads to some form of activation that interferes with between cell signaling, imposing a cost in evaluating the incoming signal. Higher values for $n$ correspond to more severe costs due to self-binding.\n\nThe likelihood that two cells successfully mate ($P$) depends on the quality of their interaction given by,\n\n$$\nP=\\frac{W_{12}\u2062W_{21}}{K+W_{12}\u2062W_{21}}.\n$$\n\nEquation (9) transforms the signaling interaction into a mating probability. For the analysis that follows, we choose large values of $K$ so that $P$ is far from saturation and depends almost linearly on the product $W_{12}\u2062W_{21}$. In summary, the probability that two cells mate is defined by the production and degradation rates of the ligand and receptor molecules, and the binding affinities between and within cells.\n\n### Evolutionary model\n\nTo explore the evolution of signaling roles, we simplify the model by assuming that the degradation rates $\\gamma_{L,}\u2062\\gamma_{R,}\u2062\\gamma_{L\u2062R}$ are constant and equal to $\\gamma$, and investigate mutations that quantitatively modify the ligand and receptor production rates. We consider a finite population of $N$ haploid cells and set $N=1000$ throughout the analysis unless otherwise stated. Ligand and receptor production are controlled by independent loci with infinite alleles (Tajima, 1996). The ligand and receptor production rates of celli\u00a0is denoted by $(\u03bd_{L_{i}},\u03bd_{R_{i}})$ . We also consider different versions of the ligand and its receptor. Cells have two ligand-receptor pairs, $(L,R)$ and $(l,r)$ which are mutually incompatible, so the binding affinity is zero between $l$ and $R$, and between $L$ and $r$. Each cell has a $(L,R)$ and $(l,r)$ state, which are subject to mutational and evolutionary pressure as described below. $W_{12}$ is re-defined as the summation of the interactions of these two ligand-receptor pairs,\n\n$$\nW_{12}=k_{b}\u2062[L_{2}]^{*}\u2062[R_{1}]^{*}\u2062(1-\\frac{[L\u2062R_{1}]^{*}}{[L\u2062R_{1}]^{*}+k_{b}\u2062[L_{2}]^{*}\u2062[R_{1}]^{*}})^{n}+k_{b}\u2062[l_{2}]^{*}\u2062[r_{1}]^{*}\u2062(1-\\frac{[l\u2062r_{1}]^{*}}{[l\u2062r_{1}]^{*}+k_{b}\u2062[l_{2}]^{*}\u2062[r_{1}]^{*}})^{n}.\n$$\n\nAgain for the sake of simplicity, the ligand-receptor affinities are set to be the same between and within cells for each ligand-receptor pair (i.e. $k^{+}$, $k^{-}$ and $k_{b}$ are the same for $L-R$ and $l-r$ interactions). A cell undergoes recurrent mutation that changes the production rate for the ligand $L$ so that $\u03bd_{L_{i}}^{^{\u2032}}=\u03bd_{L_{i}}+\u03f5$ with $\u03f5\u223cN\u2062(0,\\sigma)$ with probability\u00a0\u03bc. The same mutational process occurs for all ligand and receptor production rates. We assume that mutation occurs independently at different loci and that there is a maximum capacity for ligand and receptor production, so that $\u03bd_{L}+\u03bd_{l}<1$ and $\u03bd_{R}+\u03bd_{r}<1$. It follows that the production rates of the two ligand genes are not independent of one another and similarly for the two receptor genes.\n\nWe also consider cases where $\u03bd_{L}+\u03bd_{l}<\\alpha$ and $\u03bd_{R}+\u03bd_{r}<\\alpha$ for $\\alpha\\neq1$ to reflect the relative synergy ($\\alpha>1$) or relative competition ($\\alpha<1$) between the production of the two ligands (or receptors). For example, synergy between two ligands (or receptors) could reflect reduced energy expenditure for the cell if the same machinery is used to produce the two molecules. Competition on the other hand could reflect additional costs due to the production of two different ligands (or receptors).\n\nSelection on ligand-receptor production rates is governed by the likelihood that cells pair and produce offspring. We assume that cells enter the sexual phase of their life cycle in synchrony, as is the case in the majority of unicellular eukaryotes\u00a0(Hadjivasiliou and Pomiankowski, 2016). Pairs of cells are randomly sampled (to reflect random encounters) and mate with probability $P$ defined in Equation (9). Cells failing to mate are returned to the pool of unmated individuals. The process is repeated until $M$ cells have mated, giving rise to $M/2$ mated pairs (we set $M<N$, so only some cells mate). Each mated pair produces 2 haploid offspring so the population size shrinks from $N$ to $M$. The population size is restored back to $N$ by sampling with replacement. It follows that Equations (9) and (10) together provide a proxy for fitness according to the ligand and receptor production rates of individual cells. Initially, recombination is not allowed between the genes controlling ligand and receptor production but then is considered in a later section.\n\n## Results\n\n### Dependence of gamete interactions on physical parameters\n\nThe strength of an incoming signal $W_{12}$ depends on the concentration of free receptor in cell1 and free ligand in cell2, and the cost of self-binding ($n$) (Equation (10)). The steady state concentration of $[L]$, $[R]$ and $[L\u2062R]$ are governed by different production rates (Figure 2\u2014figure supplement 1; details of the derivation can be found in the Materials\u00a0and\u00a0methods section). For low degradation rates ($\\gamma$ small), the removal of available molecules is dominated by self-binding ($k^{+}$) (Equations (1) and (2) and Figure 2a,b). At the same time, a lower degradation rate leads to higher levels of ligand and receptor (Figure 2a) even if the relative drop of free ligand and receptor is steeper as $k^{+}$ increases (Figure 2b). As a consequence, the ability of a cell to generate a strong signal and read incoming signals can change drastically when the pair of interacting cells produce the ligand and receptor in a symmetric manner (e.g. $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1,0,0)$ for both cells) rather than in an asymmetric manner (e.g. $(\u03bd_{L_{1}},\u03bd_{R_{1}},\u03bd_{l_{1}},\u03bd_{r_{1}})=(1,0,0,1)$ and $(\u03bd_{L_{2}},\u03bd_{R_{2}},\u03bd_{l_{2}},\u03bd_{r_{2}})=(0,1,1,0)$). The fold-increase in $W_{12}$ is large even when self-binding confers no cost $(n=0)$, while larger values for $n$ ramp up the costs (Figure 2c). If cells produce the ligand and receptor asymmetrically, self-binding ceases to be a problem in receiving incoming signals.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig2-v1.jpg)\n\n**Figure 2.:** (a) The amount of free ligand in individual cells at steady state $[L]^{*}$ and (b) normalized amount of free ligand at steady state $[L]^{*}/[L]_{m\u2062a\u2062x}$ varies with the intracellular binding rate $k^{+}$ and degradation rate $\\gamma$. (c) The relative amount of incoming signal $W_{12}$ for a cell that produces ligand and receptor asymmetrically versus symmetrically decreases with the degradation rate $\\gamma$ and values of intracellular binding $k^{+}$. Other parameters used: $n=1,k^{-}=1,k_{b}=1$.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Steady state concentration of the ligand $L$ and receptor $R$ in individual cells when varying the ligand and receptor production rates $\u03bd_{L}$ and $\u03bd_{R}$ for (a)\u00a0$k^{+}/k^{-}=10$\u00a0and (b) $k^{+}/k^{-}=0.1$. (c-d) show the concentration of ligand-receptor complexes for the same parameter variations. Other parameters used: $\\gamma_{R}=\\gamma_{L}=\\gamma_{L\u2062R}=0.1$.\n\nAlthough the strength of the signaling interaction between two cells ($W_{12}\u2062W_{21}$) may improve when the interacting cells produce the ligand and receptor asymmetrically, this need not be the case. Consider the interaction of a resident cell with production rates $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}=(1,1,0,0)$ with itself and a mutant cell with production rates given by $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{m\u2062u\u2062t}=(1-d\u2062x,1-d\u2062y,d\u2062x,d\u2062y)$. For all values of $d\u2062x$ and $d\u2062y$, $[W_{12}\u2062W_{21}]_{r\u2062e\u2062s+m\u2062u\u2062t}-[W_{12}\u2062W_{21}]_{r\u2062e\u2062s+r\u2062e\u2062s}$ < 0 (Figure 3a). It follows that $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1,0,0)$\u00a0cannot be invaded by any single mutant.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig3-v1.jpg)\n\n**Figure 3.:** The fitness of a rare mutant is plotted relative to the resident $[W_{12}\u2062W_{21}]_{r\u2062e\u2062s+m\u2062u\u2062t}-[W_{12}\u2062W_{21}]_{r\u2062e\u2062s+r\u2062e\u2062s}$. The production rate of the mutant cell is $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=m\u2062u\u2062t(1-dx,1-dy,dx,dy)$, where $d\u2062x$ and $d\u2062y$ are plotted on the $x$ and $y$ axes respectively. The resident production rate $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}$ is shown as a red dot and varies (a) $(1,1,0,0)_{r\u2062e\u2062s}$, (b) $(1,0.9,0,0.1)_{r\u2062e\u2062s}$, (c) $(0.5,0.5,0.5,0.5)_{r\u2062e\u2062s}$ and (d) $(1,0,0,1)_{r\u2062e\u2062s}$ . The mutant ($d\u2062x,d\u2062y$) with maximum fitness is shown as a black dot. The contour where $[W_{12}\u2062W_{21}]_{r\u2062e\u2062s+m\u2062u\u2062t}=[W_{12}\u2062W_{21}]_{r\u2062e\u2062s+r\u2062e\u2062s}$ is marked by a black dashed line (b and c). The fitness difference is always negative in (a) and always positive in (d). Other parameters used: $n=1,\\gamma=0.5,k^{+}=1,k^{-}=1,k_{b}=1$.\n\nHowever, if the resident is already slightly asymmetric, for example $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}=(1,0.9,0,0.1)$, then a mutant conferring an asymmetry in the opposite direction can be better at interacting with the resident (Figure 3b). When the resident produces both ligand and receptor equally (e.g. $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}=(0.5,0.5,0.5,0.5)$; Figure 3c), then most mutants conferring an asymmetry in either ligand or receptor production are favored. The strongest interaction occurs with mutants that produce the ligand or receptor fully asymmetrically (i.e. $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{m\u2062u\u2062t}=(1,0,0,1)$ or $(0,1,1,0)$; (Figure 3c)). Finally, when the resident production rates are already strongly asymmetric given by $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}=(1,0,0,1)$, a mutant with an asymmetry in the opposite direction is most strongly favored (Figure 3d). Note that a population composed only of cells with production rates at $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}=(1,0,0,1)$ is not viable since the probability that two such cells mate is zero. However, this analysis provides insight about how asymmetry in signaling evolves.\n\n### Evolution of mating types with asymmetric signaling roles\n\nTo explore the evolution of signaling asymmetry, we follow mutations that alter the relative production of two mutually incompatible types of ligand and receptor ($L,R$) and ($l,r$). To ease understanding, the population symmetry $s$ in the production of ligand and receptor is measured,\n\n$$\ns=1-\\frac{1}{2\u2062N}\u2062\\sumi=1N(|\u03bd_{L_{i}}-\u03bd_{R_{i}}|+|\u03bd_{l_{i}}-\u03bd_{r_{i}}|).\n$$\n\nThe population is symmetric ($s=1$) if cells produce ligand and receptor equally, for both types (i.e. $(\u03bd_{R},\u03bd_{L},\u03bd_{r},\u03bd_{l})=(a,a,1-a,1-a)$, for constant $a$), and fully asymmetric ($s=0$) when cells adopt polarized roles (i.e. $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})$ = $(1,0,0,1)$\u00a0and $(0,1,1,0)$).\n\nStarting from a population where all cells are symmetric producers of only one ligand and receptor, $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1,0,0)$, the population evolves to one of two equilibria (Figure 4a). $E_{1}$ where $s^{*}\u22481$ and all cells produce the ligand and receptor symmetrically $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})\u2248(1,1,0,0)$ or $E_{2}$ where $s^{*}\u22480$ and the population is divided into ligand and receptor producing cells, with equal frequencies of $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})\u2248(1,0,0,1)$ and $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})\u2248(0,1,1,0)$ (Figure 4b,c). Equilibria with intermediate values of $s^{*}$ are not found. The exact production rates at $E_{1}$ and $E_{2}$ exhibit some degree of noise due to mutation and finite population size (Figure 4b,c). At $E_{2}$, individual cells with high $\u03bd_{R}$ (and low $\u03bd_{r}$) have low $\u03bd_{L}$ (and high $\u03bd_{l}$), confirming that $s^{*}\u22480$ captures a fully asymmetric steady state (Figure 4b,c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig4-v1.jpg)\n\n**Figure 4.:** (a) An example of evolution to the two signaling equilibria, $E_{1}$ ($s=1$ full symmetry when $k^{+}=1$) and $E_{2}(s=0$ full asymmetry when $k^{+}=5$). (b) Production rates of individual cells in the population for the receptor-ligand pairs $L-R$ (black) and $l-r$ (red) at $E_{2}$. (c) Production rates of individual cells for the two receptor types $R$ and $r$ at $E_{2}$. (d) Steady state signaling symmetry $s^{*}$ against the intracellular binding rate ($k^{+}$) for different degradation rates ($\\gamma$). (e) Threshold value of $k^{+}$, beyond which $E_{2}$ evolves from $E_{1}$, plotted versus the cost of self-binding ($n$). The relationship is shown for different values of strength of between cell signaling ($k_{b}$) relative to strength of within cell signaling ($k^{+}/k^{-}$). Other parameters used in numerical simulations are given in the Supplemental Material.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The threshold value of $k^{+}$, beyond which $E_{2}$ becomes stable against $E_{1}$, plotted versus $n$ which dictates the cost of self-binding for $\\mu=0.1$\u00a0and $\\mu=0.001$ to show that lower mutation rates require more stringent conditions for the evolution of signaling asymmetry. Population is initiated at $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=$$(1,1,0,0)$ and $\u03c1=0$ for all cells at time zero. $\\mu=0.01$ for all ligand and receptor genes and $\\mu_{\u03c1}=0$, $\\gamma=0.5$, $k^{\u2212}=1$, $k_{b}=k^{+}/k^{\u2212}$. Population size $N=1000$ and number of cells allowed to mate $M=N/2$.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Steady state signaling asymmetry $s^{\u2217}$ against the intracellular binding rate $k^{+}$ for $\u03bd_{R}+\u03bd_{r}<\\alpha$ and $\u03bd_{L}+\u03bd_{l}<\\alpha$ for different values of $\\alpha$ indicates synergy and $\\alpha<1$ indicates competition between the two types of ligands (and receptors). For $\\alpha=0.75$ the population only evolves asymmetric signaling for large values of $k^{+}(k^{+}=5)$. In this case $s\u2217=0.75$ is the\u00a0maximum since the sum of the two production rates cannot exceed $0.75$. Population is initiated at $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=$$(1,1,0,0)$ and $\u03c1=0$ for all cells at time zero. $\\mu=0.01$ for all ligand and receptor genes and $\\mu_{\u03c1}=0$, $\\gamma=0.5$, $k^{\u2212}=1$, $k_{b}=k^{+}/k^{\u2212}$. Population size $N=1000$ and number of cells allowed to mate $M=N/2$.\n\nWhether $E_{2}$ is reached from $E_{1}$ depends on key parameters that determine the strength of self-binding and signaling interactions between cells. $E_{1}$ persists and no asymmetry evolves when $k^{+}$ (the intracellular ligand-receptor binding coefficient) is small (Figure 4d). In this case, the concentration of self-bound ligand-receptor complex is small (Equation (6)) and there is little cost of self-signaling (Equation (8)), so there is weak selection in favor of asymmetry. When the population is at $E_{1}$, asymmetric mutants are slightly deleterious on their own (Figure 3a). They are therefore more likely to be lost when $k^{+}$ is small and selection for asymmetric signaling is weak (Figure 4d). The opposite is true for larger values of $k^{+}$, as self-binding now dominates and restricts between cell signaling, promoting the evolution of asymmetry (Figure 4d). The transition from $E_{1}$ to $E_{2}$ occurs at a smaller value of $k^{+}$ when the degradation rate ($\\gamma$) is decreased (Figure 4d), as the effective removal of free ligand and receptor depends more strongly on intercellular binding (Figure 2a,b). Furthermore, the mutation rate affects the value of $k^{+}$ at which the transition from $E_{1}$ to $E_{2}$ occurs. The transition from $E_{1}$ to $E_{2}$ when mutation rates are smaller occurs at larger $k^{+}$ (Figure 4\u2014figure supplement 1). We further explore the role of the mutational process below.\n\nAnother important consideration is the relative strength of signaling within and between cells, given by $k^{+}/k^{-}$ and $k_{b}$ respectively. For example, the threshold value of the within cell binding rate beyond which symmetric signaling ($E_{1}$) evolves to asymmetric signaling ($E_{2}$, Figure 4a) increases when $k_{b}$ becomes much larger than $k^{+}/k^{-}$ (Figure 4e). Furthermore, this threshold value is smaller for larger values of $n$ indicating that asymmetric signaling is more likely to evolve when the cost for self-signaling is higher (larger $n$, Figure 4e). However, asymmetric signaling can evolve even when self-binding carries no cost $(n=0)$ as high rates of self-binding can restrict the number of ligand and receptor molecules free for between cell interactions (Figure 4e).\n\nWe also wondered how the relative synergy or competition between the two ligands (or receptors) could affect our results. When the two ligands (or receptors) exhibit synergy so that $\u03bd_{L}+\u03bd_{l}<\\alpha$ and $\u03bd_{R}+\u03bd_{r}<\\alpha$ for $\\alpha>1$, a signaling asymmetry evolves more easily (for smaller values of $k^{+}$, Figure 4\u2014figure supplement 2). Now the second ligand (or receptor) begins to evolve without imposing a cost on the preexisting ligand (or receptor) and can therefore remain present in the population longer until an asymmetry in the opposite direction evolves in other cells. The reverse dynamics are observed when the two ligands (or receptors) compete with one another ($\u03bd_{L}+\u03bd_{l}<\\alpha$ and $\u03bd_{R}+\u03bd_{r}<\\alpha$ for $\\alpha<1$ ) (Figure 4\u2014figure supplement 2).\n\nThe observations above suggest that both $E_{1}$ and $E_{2}$ are evolutionary stable states and the transition from $E_{1}$ to $E_{2}$ depends on the mutational process, drift and the parameters that determine signaling interactions. To explore this we investigated the stability of $E_{1}$ in response to rare mutations in the receptor and ligand production rates. We assume the population is initially at $E_{1}$ (i.e. $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1,0,0)$), introduce mutations in the receptor and ligand loci $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1-d\u2062x,1,d\u2062x,0)$ and $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1-d\u2062y,0,d\u2062y)$ at frequency $p$, and calculate the population symmetry at steady state for different values of $d\u2062x$ and $d\u2062y$ (Figure 5). Single mutations never spread (i.e. if $d\u2062x=0$ no value of $d\u2062y$ allows mutants to spread and vice versa). This is in agreement with the analytical predictions presented in the previous section (Figure 3a). When both $d\u2062x$ and $d\u2062y$ are nonzero the population may evolve to $E_{2}$, where the two mutants reach equal frequencies at\u00a0~0.5 and replace the resident. The basin of attraction for $E_{2}$ (and so asymmetric signaling roles) is larger when $k^{+}$\u00a0and $p$ are high and $\\gamma$ is small (Figure 5a\u2013d), as predicted analytically (Figures 2 and 3) and in accordance with our findings when mutations were continuous (Figure 4).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig5-v1.jpg)\n\n**Figure 5.:** Invasion of $E_{1}$.Contour plots showing the steady state degree of symmetry ($s^{*}$) in a population with resident $(\u03bd_{R},\u03bd_{L},\u03bd_{r},\u03bd_{l})=(1,1,0,0)$. Two mutations are introduced $(1-d\u2062x,1,d\u2062x,0)$ and $(1,1-d\u2062y,0,d\u2062y)$ at frequency $p$ and their fate is followed until they reach a stable frequency. No recurrent mutation is assumed. Orange contours inside the dotted line show the region where both mutants are eliminated and the resident persists ($s^{*}=1$). All other colors indicate that the two mutants spread to equal frequency $0.5$ displacing the resident ($s^{*}<1$). The degree of signaling symmetry at equilibrium is dictated by the magnitude of the mutations given by $d\u2062x$ and $d\u2062y$. The different panels show (a) between cell signaling $k^{+}=10$, mutation frequency $p=0.01$ and degradation rate $\\gamma=0.1$, (b) lower mutation frequency $p=0.001$, (c) high degradation rate $\\gamma=0.5$ and (d) weaker between cell signaling $k^{+}=5$. The resident type is marked by a black dot at the origin. The frequency of the resident and two mutants at steady state was recorded and the heat maps show the average steady state value of $s^{*}$ for 20 independent repeats and the population size $N=10000$. Other parameters used and simulation details are given in the Supplementary Material.\n\nNote that the initial mutation frequency ($p$) matters in our system. Single mutations are slightly deleterious on their own as predicted analytically (Figure 3a) and seen here when $d\u2062x=0$ or $d\u2062y=0$ (Figure 5). The two mutants, however, can be favored when they are asymmetric in opposite directions (i.e.\u00a0$d\u2062x>0$ and $d\u2062y>0$; Figure 5). When mutants are introduced at a lower frequency (compare Figure 5a\u2013b), the probability that they meet one another before they are lost by drift increases. This explains why smaller values of $p$ result in narrower basins of attraction for $E_{2}$ (Figure 5a\u2013b).\n\nWe next investigated how mutations invade when the resident already signals asymmetrically (i.e. produces both ligands). The resident was set to $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}=(1-d\u2062x,1,d\u2062x,0)$ and a mutant able to produce both receptors $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{m\u2062u\u2062t}=(1,1-d\u2062y,0,d\u2062y)$ was introduced. If $d\u2062x>0$, a mutant conveying a small asymmetry in receptor production (i.e. $d\u2062y>0$) increases in frequency until the population reaches a polymorphic state with the resident and mutant at 50% (Figure 6a). If $d\u2062x>0$ but the mutant only produces one receptor (i.e. $d\u2062y=0$), the mutant invades, reaching a low frequency when $d\u2062x$ is small and replaces the resident when $d\u2062x$ is large. It follows that an asymmetry in both ligand and receptor production is necessary for the evolution of a signaling asymmetry as predicted analytically (Figure 3a).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig6-v1.jpg)\n\n**Figure 6.:** Contour plots show the equilibrium frequency of the resident ($f_{r\u2062e\u2062s}$)\u00a0following the introduction of a mutatant\u00a0when\u00a0(a)\u00a0$(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{res}=(1\u2212dx,1,dx,0)$\u00a0and, $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{m\u2062u\u2062t}=(1,1-d\u2062y,0,d\u2062y)$,\u00a0and (b)\u00a0$(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{res}=(0.5\u2212dx,0.5,0.5+dx,0.5)$\u00a0and\u00a0$(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bdr)_{mut}=(0.5,0.5\u2212dy,0.5,0.5+dy)$. The mutant is introduced at a frequency $p=0.01$ and no recurrent mutation is assumed. Other parameters used and simulation details are given in the Supplemental Material.\n\nWe also consider a resident type that produces both ligands and both receptors with some degree of asymmetry in ligand production (i.e. $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}=(0.5-d\u2062x,0.5,0.5+d\u2062x,0.5)$) and map the spread of a mutant with asymmetry is receptor production $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{m\u2062u\u2062t}=(0.5,0.5-d\u2062y,0.5,0.5+d\u2062y)$. The pairwise invasibility plots for values of $d\u2062x$ and $d\u2062y$ show that signaling asymmetries in opposite directions are favored. These evolve to a polymorphic state with equal frequencies of cells at $d\u2062x=d\u2062y=-0.5$ and $d\u2062x=d\u2062y=0.5$ (Figure 6b). These findings together illustrate how the asymmetric state $E_{2}$ evolves from the symmetric state $E_{1}$.\n\n### Effects of recombination\n\nThe results above assume that the loci controlling ligand and receptor production are tightly linked which prevents the production of deleterious combinations following meiosis. Recombination is a minor problem at the $E_{1}$ equilibrium which is monomorphic (except for mutational variation). But it is likely to be a problem at the polymorphic $E_{2}$ equilibrium. For example, at $E_{2}$ mating between $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,0,0,1)$ and $(0,1,1,0)$\u00a0cells generates non-asymmetric recombinant ligand-receptor combinations, either $(1,1,0,0)$ or $(0,0,1,1)$. To implement recombination we assume that the two ligands are tightly linked in a single locus and are inherited as a pair (likewise the two receptors), and investigate the effects of recombination between the ligand locus and the receptor locus. Note that if we allow recombination between ligands (or receptors), this would be expected to generate combinations with a similar deleterious impact.\n\nConsider the effect of recombination on a population at $E_{1}$. As before, the population either stays at $E_{1}$ or evolves to $E_{2}$ dependent on parameter values (Figure 7a). When the population evolves to $E_{2}$, $s^{*}$ becomes larger as the recombination rate, ($\u03c1$), increases (Figure 7b). For low recombination rates ($\u03c1\\leq0.1$), the population largely consists of equal frequencies of $(1,0,0,1)$ and $(0,1,1,0)$ cells, producing the ligand and receptor asymmetrically. A small percentage of recombinant cells produce conspecific pairs of ligand and receptor $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1,0,0)$ and $(0,0,1,1)$ (Figure 7b,c). Recombination in this case creates \u2018macromutations\u2019 where production rates that were 0 become 1 and vice versa. As the recombination rate rises ($\u03c1\\geq0.2$), the two leading cell types diverge from $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,0,0,1)$ and $(0,1,1,0)$ towards $(1\u2212\u03f5_{1},\u03f5_{2},\u03f5_{3},1\u2212\u03f5_{4})$ and $(\u03f5_{5},1\u2212\u03f5_{6},1\u2212\u03f5_{7},\u03f5_{8})$ where the $\u03f5_{i}$ are below $0.5$ but greater than zero Figure 7d). Higher recombination rates ($\u03c1\\geq0.3$) push $s^{*}=0.5$ at $E_{2}$ (Figure 7b). \u0397ere, there is a predominance of $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,0.5,0,0.5)$ and $(0,0.5,1,0.5)$ cells at equal frequencies (or $(0.5,1,0.5,0)$\u00a0and\u00a0$(0.5,0,0.5,1)$ by symmetry). This arrangement is robust to recombination since the receptor locus is fixed at $(\u03bd_{R},\u03bd_{r})=(0.5,0.5)$ and the ligand locus is either at $(\u03bd_{L},\u03bd_{l})=(1,0)$ or $(0,1)$ (or $(\u03bd_{L},\u03bd_{l})=(0.5,0.5)$) and the receptor is either at $(\u03bd_{R},\u03bd_{r})=(1,0)$ or $(0,1)$). So pairing between these two cell types results in $(1,0.5,0,0.5)$ and $(0,0.5,1,0.5)$ offspring, whether recombination occurs or not. Note that this arrangement maintains some degree of asymmetry even with free recombination ($\u03c1=0.5$). Even though both cell types produce both receptors, they produce the ligand asymmetrically (or vice versa). Cells on average are more likely to mate successfully between rather than within the two types of cells.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig7-v1.jpg)\n\n**Figure 7.:** The effect of recombination on $E_{2}$.(a) An example of evolution of the two signaling equilibria, $E_{1}$ (for $k^{+}=1$) and $E_{2}$ (for $k^{+}=5$) given a fixed recombination rate $\u03c1=0.1$. (b) Steady state $s^{*}$ varies with the recombination rate. (c\u2013d) Production rates of individual cells in the population for receptor-ligand pairs $L-R$ (black) and $l-r$ (red) for recombination rates (c) $\u03c1=0.1$, (d)$\u03c1=0.2$ and (e) $\u03c1=0.4$. (f) Contour plot showing the steady state degree of symmetry ($s^{*}$) in a population with resident $(\u03bd_{R},\u03bd_{L},\u03bd_{r},\u03bd_{l})=(1,1,0,0)$, given a recombination rate $\u03c1=0.2$. Two mutations are introduced $(1-d\u2062x,1,d\u2062x,0)$ and $(1,1-d\u2062y,0,d\u2062y)$ at rate $p$ and their fate is followed until they reach a stable frequency. The population size $N=1000$ for panels (a) - (e) and $N=10000$ for panel (f). Other parameters used and simulation details are given in the Supplemental Material.\n\nSimilar to the case of no recombination, the invasion of $E_{1}$ by $E_{2}$ depends on the mutational process and parameter values. Figure 7f shows the steady state symmetry measure in a population initially at $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})$ = $(1,1,0,0)$ when two mutations $(1-d\u2062x,1,d\u2062x,0)$ and $(1,1-d\u2062y,0,d\u2062y)$ are introduced at low frequencies. Whether or not the mutants invade depends on the magnitude of the mutation in a similar way as in the case of no recombination (Figure 5d versus Figure 7f). However, the value of $s^{*}$ now diverges from zero reflecting the nonzero rate of recombination.\n\n### Evolution of linkage\n\nIn the analysis above, recombination between the ligand and receptor loci is fixed. However, the recombination rate itself can evolve. To investigate this, we let the recombination rate $\u03c1$ undergo recurrent mutation with probability $\\mu_{\u03c1}$ so that the mutant recombination rate becomes $\u03c1^{\u2032}=\u03c1+\\epsilon_{\u03c1}$ with $\\epsilon_{\u03c1}\u223cN\u2062(0,\\sigma_{\u03c1})$. In a diploid zygote, the rate of recombination is given by the average of the two recombination alleles, $\u03c1_{1}$ and $\u03c1_{2}$, carried by the mating cells. In this way, the recombination rate evolves together with the ligand and receptor production rates. We start with maximal recombination rate $\u03c1=0.5$ and $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1,0,0)$ for all cells and allow the recombination rate to evolve by drift for 1000 generation before we introduce mutation in the ligand and receptor loci.\n\nThe recombination rate evolves to $\u03c1^{*}=0$ whenever $E_{2}$ was reached from $E_{1}$ in the no\u00a0recombination analysis. Under these conditions, tight linkage between receptor and ligand genes is favored (Figure 8a). Furthermore, asymmetric signaling roles coevolve together with the recombination rate. The evolved trajectories of $s$ and $\u03c1$ depend on the strength of selection for asymmetric signaling. For example, when $k^{+}$ is large ($k^{+}=10$), signal asymmetry rapidly evolves; $s$ moves away from one and this is followed by a sharp drop in the recombination rate (Figure 8b). Eventually the population evolves asymmetric signaling roles ($s$ in orange, Figure 8b) and tight linkage ($\u03c1$ in blue, Figure 8b). These dynamics are similar when $k^{+}$ is smaller ($k^{+}=3$, Figure 8c) and selection for asymmetry is weaker. However, it now takes longer for the asymmetric types to co-evolve (Figure 8c). When selection for asymmetric signaling is even weaker ($k^{+}=1$, Figure 8d), no asymmetry evolves ($s$ remains at 1) and the recombination rate fluctuates randomly between its minimum and maximum value as one would expect in the case of a neutral allele.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/48239/elife-48239-fig8-v1.jpg)\n\n**Figure 8.:** Equilibrium recombination rate $\u03c1^{*}$.(a) Averaged across the population, $\u03c1^{*}$ varies with $k^{+}$ (within cell binding rate) and $n=0,1,2$ (cost of self-binding). (b\u2013d) Evolution of the recombination rate $\u03c1$ (blue) and signaling symmetry levels $s$ (orange) for different within cell binding rates: (b) $k^{+}=10$, (c) $k^{+}=3$ and (d) $k^{+}=1$. The recombination rate evolves under drift for the first 1000 generations, following which mutation at the ligand and receptor loci were introduced. When no asymmetry evolves the recombination rate fluctuates randomly between 0 and 0.5 (i.e. between its minimum and maximum value like a neutral allele). Other parameters used in simulations are given in the Supplemental Material.\n\n## Discussion\n\nExplaining the evolution of mating types in isogamous organisms constitutes a major milestone in understanding the evolution of anisogamy and sexes (Randerson and Hurst, 2001; Lehtonen et al., 2016). Mating type identity is determined by a number of genes that reside in regions of suppressed recombination and code for ligands and receptors that guide partner attraction and recognition, as well as genes that orchestrate cell fusion and postzygotic events (Billiard et al., 2011;\u00a0Perrin, 2012; Hadjivasiliou and Pomiankowski, 2016;\u00a0Branco et al., 2018). In this work we show that an asymmetry in ligand and receptor production evolves as a response to selection for swift\u00a0gamete communication and mating. Furthermore, the same conditions favoring asymmetric signaling select for tight linkage between the receptor and ligand genes. Our findings indicate that selection for asymmetric signaling roles could have played an important role in the early evolution of gamete differentiation and identity.\n\nWe investigated the evolution of mating type roles by considering two types of ligand and receptor in individual cells. Gene duplication followed by mutation is a well established route to novelty evolution (Susumu, 1970; Zhang, 2003; Magadum et al., 2013) and could explain the co-existence of two pairs of ligand and receptor in our system. Alternatively, individual cells could produce multiple ligands and receptors which evolve independently, as is the case in some basidiomycete fungi (Fowler and Vaillancourt, 2007). The production rate of the two types of ligand (and receptor) in our system is subject to mutation using an assumption of infinite alleles (Tajima, 1996), so that the amount of expressed ligand (and receptor) of each kind is modulated quantitatively. In this way we were able to explicitly express the likelihood of mating as a function of the amount of free and bound molecules on the cell membrane and the ability of cells to accurately read their partner\u2019s signal. This framework allowed us to follow the evolution of the quantitative production of ligand and receptor in mating cells for the first time.\n\nWe found that the ligand-receptor binding rate within a cell ($k^{+}$) is key in the evolution of asymmetric signaling roles (Figures 3 and 4). $k^{+}$ holds an important role because it dictates the rate at which free ligand and receptor molecules are removed from the cell surface. In addition, $k^{+}$ determines the amount of intracellular signal that interferes with the ability of cells to interpret incoming signal. Although in theory cells could avoid self-binding (by reducing $k^{+}$ to zero), there is likely to be a strong association of the within-cell and between-cell binding affinities. So reductions in $k^{+}$ are likely to have knock-on costs in reducing $k_{b}$ as well. An extreme example is the case of locally diffusible signals (Figure 1), such as those used by ciliates and yeasts to stimulate and coordinate fusion (Sugiura et al., 2010; Merlini et al., 2013). Here binding affinities between and within cells are inevitably identical (since the ligand is not membrane bound). Work in yeast cells has shown that secreted ligands utilized for intercellular signaling during sex are poorly read by cells that both send and receive the same ligand (Youk and Lim, 2014). In the case of strictly membrane bound molecules avoiding self-binding could also be an issue as it requires a ligand and receptor pair that bind poorly within a cell without compromising intercellular binding. For example, choosy budding yeast gametes (which are better at discriminating between species) take longer to mate\u00a0(Rogers et al., 2015). It would be interesting to further study these trade-offs experimentally.\n\nWe never observed the co-existence of a symmetric \u2018pansexual\u2019 type with asymmetric self-incompatible types. The two steady states consist of either a pansexual type alone or two mating types with asymmetric signaling roles. This could explain why the co-existence of mating types with pansexuals is rare in natural populations (Billiard et al., 2011; Billiard et al., 2012). This is in contrast to previous models where pansexual types were very hard to eliminate due to negative frequency dependent selection (Hoekstra, 1982; Cz\u00e1r\u00e1n and Hoekstra, 2004; Hadjivasiliou et al., 2013). For example, in the case of the mitochondrial inheritance model, uniparental inheritance raises fitness not only in individuals that carry genes for uniparental inheritance but also for pansexual individuals (benefits \u2018leak\u2019 to biparental individuals)\u00a0(Hadjivasiliou et al., 2013; Christie and Beekman, 2017b).\n\nA similar pattern is seen with inbreeding avoidance because the spread of self-incompatibility reduces the population mutation load, and so reduces the need for inbreeding avoidance (Cz\u00e1r\u00e1n and Hoekstra, 2004). These dynamics are reversed in the present model where there is positive frequency dependent selection. The spread of asymmetric signalers generates stronger selection for further asymmetry (Figures 3 and 4). This also occurs when there is recombination (Figures 7 and 8). Even though recombination between the two asymmetric types generates symmetric recombinant offspring, these are disfavored and eliminated by selection. These observations suggest that the mitochondrial inheritance and inbreeding avoidance models are unlikely to generate strong selection for suppressed recombination which is the hallmark of mating types. Finally, it would be interesting to explore how the reinstatement of recombination could be a route back to homothallism which is a state derived from species with mating types (Billiard et al., 2011).\n\nMating type identity in unicellular eukaryotes is determined by mating type loci that typically carry a number of genes (Billiard et al., 2012; Hadjivasiliou and Pomiankowski, 2016). Suppressed recombination at the mating type locus is a common feature across the evolutionary tree (Branco et al., 2018). Our work predicts the co-evolution of mating type specific signaling roles and suppressed recombination with selection favoring linkage between loci responsible for signaling and an asymmetry in signaling roles. This finding suggests that selection for asymmetric signaling could be the very first step in the evolution of tight linkage between genes that control mating type identity. In yeasts, the only genes in the mating type locus code for the production of ligand and receptor molecules (Merlini et al., 2013). These then trigger a cascade of other signals downstream that also operate asymmetrically. Evidence across species suggests that mating type loci with suppressed recombination are precursors to sex chromosomes (Menkis et al., 2008; Geng et al., 2014). In this way our work provides crucial insights about the origin of sex chromosomes.\n\nThe framework developed here could be used together with recent efforts to understand numerous features of mating type evolution. For example, opposite mating type gametes often utilize diffusible signals to attract partners (Luporini et al., 1995; Tsuchikane et al., 2005). The inclusion of long range signals such as those used in sexual chemotaxis will provide further benefits for asymmetric signaling roles and mating types (Hadjivasiliou et al., 2015). Furthermore the number of mating types varies greatly across species and is likely to depend on the frequency of sexual reproduction and mutation rates (Constable and Kokko, 2018). Signaling interactions between gametes could also play a role in determining the number of mating types and reducing their number to only two in many species (Hadjivasiliou et al., 2016b). It would be interesting to use the framework developed here to study the evolution of additional ligands and receptors and their role in reaching an optimal number of mating types. Other important features such as the mechanism of mating type determination (Billiard et al., 2011; Vuilleumier et al., 2013) and stochasticity in mating type identity (Hadjivasiliou et al., 2016b; Nieuwenhuis and Immler, 2016; Nieuwenhuis et al., 2018) could also be understood in light of this work.\n\nOur analysis revealed that the evolution of asymmetric gamete signaling and mating types is contingent upon the mutation rate. Single mutants that exhibit an asymmetry are initially slightly disadvantageous. When further mutations emerge that are asymmetric in the\u00a0opposite direction, a positive interaction between these mutants occurs that can lead to the evolution of distinct mating types. When the population size is small and mutation rates are low, there is a low probability that individuals carrying asymmetric mutations in opposite directions are segregating at the same time. Increasing the population size or the mutation rate would enhance the probability of co-segregation, making the evolution of asymmetric signaling more likely. In an infinite population the evolution of signaling asymmetry should be independent of the mutation rate. Finally, it is worth noting that unicellular eukaryotes undergo several rounds of asexual growth (tens to thousands) between each sexual reproduction\u00a0(Hadjivasiliou et al., 2016b; Constable and Kokko, 2018). It follows that the effective mutation rate between sexual rounds will end up being orders of magnitude higher than the mutation rates at each vegetative step.\n\nTaken together our findings suggest that selection for swift and robust signaling interactions between mating cells can lead to the evolution of self-incompatible mating types determined at non-recombinant mating type loci. We conclude that the fundamental selection for asymmetric signaling between mating cells could be the very first step in the evolution of sexual asymmetry, paving the way for the evolution of anisogamy, sex chromosomes and sexes.\n\n## Materials and methods\n\n### General model\n\nWe model $N$ cells so that each cell is individually characterized by a ligand locus $\u2112$ and a receptor locus $\u211b$. Two ligand genes at the locus $\u2112$ determine the production rates for two ligand types $l$ and $L$ given by $\u03bd_{l}$ and $\u03bd_{L}$. Similarly, two receptor genes at the locus $\u211b$ determine the production rates for the two receptor types $r$ and $R$ given by $\u03bd_{r}$ and $\u03bd_{L}$. The two ligand and receptor genes in our model could could arise from duplication followed by mutation that leaves two closely linked genes that code for different molecules. In our computational set-up each cell is associated with production rates $\u03bd_{l}$, $\u03bd_{L}$, $\u03bd_{r}$ and $\u03bd_{R}$ where we assume a normalized upper bound so that $\u03bd_{l}+\u03bd_{L}<1$ and $\u03bd_{r}+\u03bd_{R}<1$.\n\nThe steady state concentrations for $L,R$, and $L\u2062R$ are computed by setting $\\frac{d\u2062[L]}{d\u2062t}=\\frac{d\u2062[R]}{d\u2062t}=\\frac{d\u2062[L\u2062R]}{d\u2062t}=0$ in Equations (1-3) and solving the resulting quadratic equations. This leads two solutions only one of which gives positive concentrations. It follows that there is a unique physical solution to our system, which is what we use to define the probability of mating in our numerical simulations.\n\nThe program is initiated with $\u03bd_{L}=\u03bd_{R}=1$ and $\u03bd_{l}=\u03bd_{r}=0$ for all cells (unless otherwise stated, see Section 5.4). We introduce mutation so that the ligand and receptor production rates of individual cells mutate independently with probability $\\mu$. A mutation event at a production gene changes the production rate by an increment $\u03f5$ where $\u03f5\u223cN\u2062(0,\\sigma)$. Mutation events at the different genes $l,L,r$ and $R$ are independent of one another. If $\u03bd_{l}+\u03bd_{L}>1$ or $\u03bd_{l}+\u03bd_{L}>1$ the production rates are renormalized so their sum is capped at 1. If a mutation leads to a production rate below 0 or above one it is ignored and the production rate does not change.\n\nWe implement mating by randomly sampling individual cells. The probability that two cells mate is determined by their ligand and receptor production rates as defined in Equation (9) in the main text. We assume that $K$ takes a large value relative to $W_{12}\u2062W_{21}$ so that $P$ is linear in $W_{12}\u2062W_{21}$. Because the absolute value for $W_{12}\u2062W_{21}$ varies greatly between parameter sets, and what we are interested in is the relative change in $W_{12}\u2062W_{21}$ when signaling levels change, we chose $K$ to be equal to the maximum value $W_{12}\u2062W_{21}$ can take for a given choice of $\\gamma$, $k^{+}$, $k^{-}$ and $k_{b}$. Sampled cells that do not mate are returned to the pool of unmated cells. This process is repeated until $M=N/2$ cells have successfully mated. This produces $N/4$ pairs of cells each of which gives rise to two offspring. These are sampled with replacement until the population returns to size $N$. We assume that a mutation-selection balance has been reached when the absolute change in $s$, defined in Equation (10) in the main text, between time steps $t_{1}$ and $t_{2}$ is below $\u03f5=10^{\u22125}$ across $t_{2}-t_{1}=100$. Certain parameter sets resulted in noisy steady states and were terminated following\u00a0$10^{5}$ generations. The numerical code keeps track of all production rates for individual cells over time.\n\n### Adaptive dynamics\n\nWe model adaptive dynamics by initiating the entire population at state $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}$ and introducing a mutant $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{m\u2062u\u2062t}$ at low frequency $p$. We allow the population to evolve according to the life cycle introduced in the main text and record the frequency of the resident and mutant type when a steady state is reached. For the purposes of Figure 5, the resident type is set to $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}$ and two mutants $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{m\u2062u\u2062t_{1}}$ and $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{m\u2062u\u2062t_{2}}$ are introduced both at frequency $p$. In this case we track the frequencies of the resident and both mutants until steady state is reached. We define steady state as the point where the average value of $s$ in the population between time steps $t_{1}$ and $t_{2}$ is below $\u03f5=10^{-7}$ across $t_{2}-t_{1}=100$. The population always reached steady state.\n\n### Recombination\n\nWe implement recombination by considering a modifier $\u2133$ that lies between the ligand and receptor loci $\u2112$ and $\u211b$. That is, we assume that the two ligand genes and two receptor genes are tightly linked on the ligand and receptor locus $\u2112$ and $\u211b$ respectively, and only model recombination between the two loci. For simplicity, we assume that $\u2133$ determines the physical distance between $\u2112$ and $\u211b$ so that the distances $\u2112-\u2133$ and $\u211b-\u2133$ are the same. The modifier $\u2133$ determines the rate of recombination between the ligand and receptor loci quantitatively by determining $\u03c1_{M}$, the probability of a single recombination event following mating. Consider for example two individuals whose ligand and receptor production rates and recombination rates are determined by the triplets $R_{1}-M_{1}-L_{1}$\u00a0and $R_{2}-M_{2}-L_{2}$, the possible offspring resulting from such a mating are given by,\n\nwhere $\u03c1_{M_{1,2}}=\\frac{1}{2}\u2062(\u03c1_{M_{1}}+\u03c1_{M_{2}})$ is the joint recombination rate when cell1 and cell2 with recombination rates $\u03c1_{M_{1}}$ and $\u03c1_{M_{2}}$ respectively mate.\n\nWe allow mutation at the recombination locus at rate $\\mu_{\u03c1}$ independently of the ligand and receptor loci. A mutation event leads to a new recombination rate so that $\u03c1_{M}^{\u2032}=\u03c1_{M}-\u03f5$ for $\u03f5\u223cN\u2062(0,\\sigma_{\u03c1})$. We assume that the mutation-selection balance has been reached when the absolute change in $s$, defined in Equation (10) in the main text, and the change in the average recombination rate between time steps $t_{1}$ and $t_{2}$ is below $\u03f5=10^{-5}$ across $t_{2}-t_{1}=100$.\n\n### Methods and parameters used for simulated figures\n\n#### Figure 4\n\n(a): Individual simulations following the trajectory of $s$ over time. Population is initiated at $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1,0,0)$ and $\u03c1=0$ for all cells at time 0. $\\mu=0.01$ for all ligand and receptor genes and $\\mu_{r}=0$, $\\gamma=0.1$, $k^{\u2212}=1$ , $n=1$, $k_{b}=k^{+}/k^{\u2212}$and\u00a0$k^{+}=1$\u00a0for $E_{1}$ trajectory and 5.0 for $E_{2}$ trajectory. Population size $N=1000$ and number of cells allowed to mate $M=N/2$.\n\n(b-c): Parameters as for (a) with $k^{+}=5.0$. Each dot is represents an individual cell in the simulation.\n\n(d): Parameters used as for (a) with varying $k^{+}$ and $\\gamma$ as indicated in the Figure. Simulation was run until a steady state was reached and the value of $s^{*}$ was averaged over the last 1000 time steps to account for noise.\n\n(e): Parameters used as for (a), varying $k_{b}$ and $n$ as indicated in the Figure. $k^{+}$ was also varied here and the value of $k^{+}$ beyond which $E_{2}$ evolved at the expense of $E_{1}$ was noted (the y-axis value).\n\n#### Figure 5\n\nAdaptive dynamics simulations following the frequency of two mutants $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1\u2212dx,1,dx,0)$\u00a0and $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1-d\u2062y,0,d\u2062y)$ introduced at frequency $p$ (indicated on Figure ) in a resident population with $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1,0,0)$. The frequency of the resident and two mutants at steady state was recorded and the heat maps show the average steady state value of $s^{*}$ for 20 independent repeats. Parameters used: $\\gamma=0.5$, $k^{-}=1$, $n=1$, $k_{b}=k^{+}/k^{\u2212}$, $N=10000$, $M=N/2$.\n\n#### Figure 6\n\nJoint evolution of receptor and ligand asymmetry. Contour plots show the equilibrium frequency of the resident ($f_{r\u2062e\u2062s}$) with production rates $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}=(1-d\u2062x,1,d\u2062x,0)$ (a) $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{r\u2062e\u2062s}=(0.5-d\u2062x,0.5,0.5+d\u2062x,0.5)$ (b), following a mutation $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{m\u2062u\u2062t}=(1,1-d\u2062y,0,d\u2062y)$ (a) and $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})_{m\u2062u\u2062t}=(0.5,0.5-d\u2062y,0.5,0.5+d\u2062y)$ (b). The mutant is introduced at a frequency $p=0.001$. Other parameters used and simulations details are given in the Supplemental Material.\n\n#### Figure 7\n\n(a): Individual simulations following the trajectory of $s$ over time. Population is initiated at $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1,0,0)$ and $\u03c1=0.1$ for all cells at time 0. $\\mu=0.01$ for all ligand and receptor genes and $\\mu_{r}=0$. $\\sigma=0.1$, $\\gamma=0.5$, $k^{-}=1$, $n=1$, $k_{b}=k^{+}/k^{\u2212}$and\u00a0$k^{+}=1$\u00a0for $E_{1}$ trajectory and 5.0 for $E_{2}$ trajectory. Population size $N=1000$ and number of cells allowed to mate $M=N/2$.\n\n(b): Parameters as in (a) but varying $\u03c1$ as indicated in the Figure and using $k^{+}=3.0$. The $y$ axis shows the steady state value of $s$ averaged over 1000 steps after steady state has been reached.\n\n(c-e): Parameters as for (a) with $k^{+}=5.0$ and recombination rate $\u03c1$ as shown in each Figure . Each dot is represents an individual cell in the simulation.\n\n(f): Parameters as for (a) with $k^{+}=5$, $\\mu_{b}=0.01$, $\u03c1=0.2$and $N=10000$. The heat maps show the value of $s^{*}$ at steady state averaged over 20 repeats. Heat map was obtained in the same way as Figure 5.\n\n#### Figure 8\n\n(a): Population is initiated at $(\u03bd_{L},\u03bd_{R},\u03bd_{l},\u03bd_{r})=(1,1,0,0)$ and $\u03c1=0.5$\u00a0for all cells at time 0. $\\mu=0.01$ for all ligand and receptor genes and $\\mu_{\u03c1}=0.01$, $\\gamma=0.5$, $k^{-}=1$, $k_{b}=k^{+}/k^{\u2212}$\u00a0and $n$ vary as shown in the plot. The y axis shows the steady state value of $\u03c1$ averaged over 1000 steps after steady state has been reached. Population size $N=1000$ and number of cells allowed to mate $M=N/2$.\n\n(b-d): Parameters as in (a) with $k^{+}$\u00a0varied as shown in the individual plots.\n",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "8950e380-fcb2-4c0e-b285-5b3a6680af42",
+      "submission_id": "22c82b51-bd1d-4ebe-887b-75603190bf1a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Doebeli, University of British Columbia Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.48239.016](https://doi.org/10.7554/eLife.48239.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Evolution of the mating type locus with suppressed recombination\" for consideration by eLife. Your article has been reviewed by a Senior Editor, a Reviewing Editor, and three reviewers. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that we have decided to reject your paper in its present form. However, we would be willing to consider a revised version of your manuscript that takes into account the extensive reviewer comments.\n\nThe most important point in such a revision would be to address the criticism that it is unclear in the present version of the manuscript what exactly leads to the evolution of the mating type equilibrium E2. In particular, it is unclear whether the analytical and the simulation results presented in the paper lead to the same conclusions, and how the evolution of the asymmetric state depends on the mutational process. The relationship between the analytical and the simulation results needs to be made much clearer, and both reviewers 1 and 3 suggest doing an invasion analysis to clarify this point, e.g. using adaptive dynamics and pairwise in viability plots.\n\nOther points you may wish to consider are the evolution of more than two mating types, as well as the possible effects of population-wide ligand and receptor production.\n\nReviewer #1:\n\nHere the authors ask if self-incompatible mating types evolve from a self-compatible ancestor lacking mating types as a result of selection to improve cross-cell signalling. The intuition is clear; by producing a signal different from that being received from potential partners there is less self-interference, and this selects for two different mating types (one sending A and receiving B, one sending B and receiving A). This intuition is demonstrated with a ligand-receptor (signal-receiver) model, in which an individual can produce two different pairs of ligands and receptors. These molecules interact to form bound complexes, these complexes break down, and all molecules and complexes decay (equations 1-3). From this the equilibrium concentrations of receptors, ligands, and complexes are calculated (equations 4-7) and used to determine the probability of mating given meeting (equation 9) as a function of the signal strengths between the two cells (equation 10). The population is updated, from one generation to the next, by randomly sampling pairs of cells, until M pairs have mated. The offspring of these pairs are sampled with replacement until a population size of N is recovered. Genetic variation arises by mutation, inducing a small random normal deviation, at each of the 4 genes controlling the production rates of the 2 ligands and 2 receptors, independently (with some renormalization to keep the total ligand and receptor production below a maximum). The authors first show how the signal strength (and as a result, fitness) depends on the trait value (ligand-receptor production rates) of both the focal individual and the potential mating partner (Figure 2). In particular, populations producing only one pair of ligand-receptor molecules are evolutionary stable, but as more individuals produce the other ligand or receptor (e.g., by drift) there can be selection for individuals producing the ligand or receptor that matches this, suggesting the evolution of mating types might be an alternative stable evolutionary state. The authors then perform simulations to investigate the characteristics of this mating type equilibrium and the factors allowing it (Figure 3), as well as how the rate of recombination between the ligand and receptor loci affect this equilibrium (Figure 4). Finally, the authors then allow the recombination rate itself to evolve, showing that there is strong selection for reduced recombination at the mating type equilibrium (Figure 5). Thus, the model describes a hypothesis for the evolution of mating types with non-recombining mating type loci from an ancestor without mating types.\n\nI do not know the literature well enough to assess the novelty of this paper. I enjoyed reading it and thought it thought provoking. As far as I can tell the analysis is correct (I did not check the simulations).\n\nEssential revisions:\n\nI think a bit more could be done to demonstrate why the mating type equilibrium (E2) evolves from the monomorphic ancestor (E1), which I think is unclear in a few places (details below). One way to do this would be to take the approach of adaptive dynamics, and assume a monomorphic population (e.g., all individuals make only ligand 1 and receptor 1, v = (1,1,0,0)). You then calculate the fitness of a mutant with trait value v' = (x,y,1-x,1-y) in this population, take the derivatives with respect to x and y, and evaluate at the resident equilibrium (v' = v). A phase plane can then be shown, illustrating the direction of selection acting on small mutations around the resident. Immediately from this one sees that E1 is locally stable (as the current Figure 2D suggests), as are the other four corners of the phase space. Of particular interest are the basins of attraction for each equilibrium, the effect of parameter values on the size of these basins, and the effects of parameter values on the strength of selection keeping a population within each basin (the \"depth\" of the basin if you will). The authors have rightly stated that there are multiple basins of attraction (subsection \u201cEvolution of mating types with asymmetric signaling roles\u201d) but in other places claim that E2 evolves from E1 because of strong selection for asymmetry (subsection \u201cEvolution of mating types with asymmetric signaling roles\u201d), implying E1 is instead unstable (i.e., there is no basin of attraction for E1). This idea of instability is implicit in Figure 3D-E, where the idea is that there are threshold values of k+, \u03b3, and n that make E1 unstable. I think that the phase plane demonstrates that E1 remains stable for k+ finite and \u03b3 positive (I've only looked at n=0). Instead of changing the local stability of E1 these parameters change the size of the basin of attraction and its depth, therefore affecting the rate of drift out of E1 (so that \"threshold\" values of k+, \u03b3, and n are just the values that allow this rate to be high enough to see E1 lost by the maximum number of generations simulated). In particular, increasing k+ decreases E1's basin of attraction and also makes the basin shallower, greatly facilitating drift out. In contrast, decreasing \u03b3 shrinks E1's basin of attraction but makes it deeper, meaning the rate at which E1 transitions to E2 might be less sensitive to changes in \u03b3. This selection surface approach brings a number of new insights (e.g., increasing the size of basin vs. increasing the depth of the basin, the possibility of calculating the amount of drift needed to leave E1), could be used to explain the quantitative patterns in Figure 3D-F (e.g., yellow in Figure 3F is the boundary of the basin of attraction of E1), and highlights that E1 is always a stable state (which is not always clear from the text; subsection \u201cEvolution of mating types with asymmetric signaling roles\u201d). Further investigations along these lines could help illustrate the location and properties of the branching point leading to E2 (e.g., is there are \"garden of eden\" branching point at v = (0.5, 0.5, 0.5, 0.5)?). Additionally, one might take a quantitative genetic approach and use, for example, diffusion equations to ask what the rate of drift out of E1 is (e.g., Barton and Rouhani, 1987).\n\nReviewer #2:\n\nThis paper investigates the early evolution of the architecture of mating type locus, where individuals are initially bearing two pairs of ligand-receptors genes. The authors show that asymmetry in ligand-receptors production rates and linkage between genes are expected under a wide variety of conditions. The fundamental underlying mechanisms are the propensity of individuals to successfully mate with other individuals, which depends on their propensity to bind others' ligands on their own receptors, i.e. properly receiving a good signal. This propensity is modeled following a system of equations derived from biochemical reaction systems.\n\nThe authors investigate in particular the evolution of a population where mutations affect production rates of receptors and ligands. The model is analysed with computer individual-based simulations in a finite population with a fixed size.\n\nIn my opinion, this paper is excellent, especially because the model presented is very simple, and yet, it explains a lot. This model explains (1) why individuals can have an advantage in providing asymmetrical receptor-ligand production, (2) under which biochemical conditions should asymmetry evolve, (3) to what extent linkage between genes can affect the evolution of asymmetry, and (4) that recombination between genes is expected to evolve to zero (tight linkage) as asymmetry evolves to maximum. Such a model can apply to many different taxa: ciliates, fungi, algae, where receptor-ligand asymmetry in a mating type locus without recombination is common. Because it is very simple, the model is certainly very general. These results provide a first principle for the evolution of asymmetry between two kinds of individuals in a single population, which could trigger further differentiation for instance anisogamy or sexual chromosomes.\n\nMy only criticism would be that there can be a contradiction between two hypotheses: diffusion of ligands is local, and the use of differential equations with products between molecular concentrations as the rate of contact. This precludes the possibility that ligands produced by the whole population might interact and disturb the signalling between cells. Considering interactions between only two close cells would need more precise modeling of spatialized and stochastic processes. I am not sure that it would change a lot of the results, but I can imagine that considering the whole population ligands production could affect a lot the evolutionary outcomes since it might affect a lot the importance of the self-binding parameter k+. It would have been interesting to compare whole population vs. two cells interactions.\n\nReviewer #3:\n\nSummary:\n\nThe authors study the evolution of unicellular mating types, where mating types are defined in terms of their ligand-receptor signalling toolkit. Each cell can produce two different types of receptors and ligands. Cells reproduce faster more compatible cells, i.e. ligands and receptors, there are in the population. They find that when self-binding rate is not small, evolution favours \"asymmetric signalling\". That is, half of the cells in the population start producing only one receptor and ligand-type, which are of opposite type to avoid self-binding, while in the other half of the population it is the other way round. I find the paper very clearly written, the research interesting and worthy of publication. I do however have few concerns and comments that must be addressed before I can recommend this paper for publication.\n\nEssential revisions:\n\n1) How does the evolution towards asymmetry kick off?a) It seems that for either of the two initially non-utilized receptors \"r\" or ligands \"l\" to have a selective advantage, the other must already be present in the population. Is this true?\n\nb) If true, is it that you can nevertheless get evolution towards asymmetry because the mutation rates are assumed high and so at the mutation-selection balance there are always some \"l\" and \"r\" in the population? Would you ever observe evolution towards E2 if mutation rates would be of several orders lower?\n\nc) To gain more insight on the evolution towards asymmetry, can you perform some (analytical) invasion analysis e.g. check the stability of E1 and E2?\n\n2) It could be helpful to include some simple phase-plane/stability analysis for the model (1-3), at least in the appendix. How do we know the concentration of L and R reach their steady state (4-6)? Also, is this the only steady state? Also, in (1-3) should it be dt instead of d[R]?\n\n3) Subsection \u201cTheoretical set-up: Should the timescale separation argument be the other way round? Because if cells encounter each other at high rate, they\u2019re within cell concentration of L and R would not have enough time to reach their steady state. Why is this a reasonable assumption?\n\n4) Is there a reason for not assuming trade-off in vL vs. vR? One could imagine that cell can't arbitrarily increase the production of both L and R. Also, wouldn't such a trade-off alleviate the conditions for the evolution of asymmetry?\n\n5) If you would allow for three different receptors and ligands per cell, would three mating types evolve? Using the same logic, would you get an arbitrary number of mating types if the population would be sufficiently large and the mutation rates sufficiently high?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Evolution of asymmetric gamete signaling and suppressed recombination at the mating type locus\" for consideration by eLife. Your article has been reviewed by Detlef Weigel as the Senior Editor, a Reviewing Editor, and two reviewers. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. The consensus was that this is essentially ready to be accepted for publication, provided that the few points are addressed. The revised submission will not need to be sent out for review again.\n\nReviewer #1:\n\nThanks to the authors for carefully addressing my comments. I'm glad to see some of my ideas implemented, which I think add to the intuition gained here. I think there is still a bit of care needed in describing the stability of E1 and E2 (both comments in subsection \u201cEvolution of mating types with asymmetric signaling roles\u201dand Discussion section). I also think some care is needed in using \"epistasis\" to describe frequency dependent selection (subsection \u201cEvolution of mating types with asymmetric signaling roles\u201d), and analogies to fitness valley crossing might be useful.\n\nReviewer #3:\n\nIn my opinion the authors adequately addressed all the points raised by the reviewers. I recommend this paper for publication, provided the two points below will be taken into account.\n\n1) It would be good to mention in the \"main\" text the population size that was used in the simulations. For example, in Figure 5 where you discuss the different mutation rates, in my opinion the population size should also be present. This leads me to a more general comment that it should be made clearer that the mutation rates used throughout the manuscript are unusually high (or at least I failed to find any mention on this caveat.). My guess is that if they would be decreased below the rates used in the paper, say to 10-4 or 10-6, the evolution to asymmetry would become extremely difficult, hinting that perhaps something else is going on in the evolution of gamete signalling in addition to what is already discussed in the model. At least a sentence or two to discuss this point would be good, e.g. in the Discussion section or somewhere else in the main text.\n\n2) In subsection \u201cTheoretical set-up\u201d the timescale argument is now \"correct\", but, it would make more sense that the modeller assumes the rates (probability/unit of time) to be of different order from which it follows that the densities operate on different timescales (units of time).\n",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e2fb7ae2-bbb8-4f2c-b8c1-54eb61ed8b7d",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C1",
+      "claim": "Sexual reproduction partners are rarely the same.",
+      "claim_type": "EXPLICIT",
+      "source": "The two partners required for sexual reproduction are rarely the same.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement presented in the abstract without specific data or citations in this sentence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "e538ddef-ef22-4f30-bb11-feee54280053",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C2",
+      "claim": "Species lacking sexual dimorphism possess self-incompatible gametes determined at mating-type regions of suppressed recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern extends to species which lack sexual dimorphism yet possess self-incompatible gametes determined at mating-type regions of suppressed recombination, likely precursors of sex chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge in the field, drawing on the broader literature context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "f1a83ee2-e59d-4b87-9dc1-ca316c0f66b8",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C3",
+      "claim": "Mating-type regions of suppressed recombination are likely precursors of sex chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern extends to species which lack sexual dimorphism yet possess self-incompatible gametes determined at mating-type regions of suppressed recombination, likely precursors of sex chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an inference based on evolutionary understanding.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "18661aca-591c-4840-87bb-6b84429952b7",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C4",
+      "claim": "The model identifies factors that determine the capacity of cells to send and receive signals.",
+      "claim_type": "EXPLICIT",
+      "source": "We develop a model of ligand-receptor dynamics, and identify factors that determine the capacity of cells to send and receive signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology and findings of the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "c93c6f56-0c20-4811-91e3-63cccc865403",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C5",
+      "claim": "The model specifies conditions favoring the evolution of gametes producing ligand and receptor asymmetrically.",
+      "claim_type": "EXPLICIT",
+      "source": "The model specifies conditions favoring the evolution of gametes producing ligand and receptor asymmetrically and shows how these are affected by recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from the model presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "e4ec4f9c-bb1b-4c62-911a-6b37b944de35",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C6",
+      "claim": "Conditions favoring asymmetric signaling also favor tight linkage of ligand and receptor loci in distinct linkage groups when recombination rate evolves.",
+      "claim_type": "EXPLICIT",
+      "source": "When the recombination rate evolves, the conditions favoring asymmetric signaling also favor tight linkage of ligand and receptor loci in distinct linkage groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the evolutionary model presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "537da37f-d94d-4814-adaa-413d6f2338c1",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C7",
+      "claim": "Selection for asymmetric gamete signaling could be the first step in the evolution of non-recombinant mating-type loci.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that selection for asymmetric gamete signaling could be the first step in the evolution of non-recombinant mating-type loci, paving the road for the evolution of anisogamy and sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model results presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "ce4b7e81-457f-4fd8-8bbe-9a2e45b6e85b",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C8",
+      "claim": "The sexual process is asymmetric with partnering cells exhibiting genetic, physiological or behavioral differences, with few exceptions.",
+      "claim_type": "EXPLICIT",
+      "source": "With few exceptions, the sexual process is asymmetric with partnering cells exhibiting genetic, physiological or behavioral differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "70f1a915-d600-4c76-bc38-9944287ecc28",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C9",
+      "claim": "The origins of sexual asymmetry in eukaryotes trace back to unicellular organisms with isogametes lacking any size or mobility difference in the fusing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The origins of sexual asymmetry in eukaryotes trace back to unicellular organisms with isogametes lacking any size or mobility difference in the fusing cells (Parker et al., 1972; Bell, 1978; Charlesworth, 1978; Hoekstra, 1987; Randerson and Hurst, 2001; Lehtonen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "1b83ab46-c2c8-4e88-997c-b0099d92ad2f",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C10",
+      "claim": "Isogamous organisms are divided into genetically distinct mating types determined by several mating type specific genes that reside in regions of suppressed recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Isogamous organisms are divided into genetically distinct mating types, determined by several mating type specific genes that reside in regions of suppressed recombination (Fraser et al., 2004; Ahmed et al., 2014; Branco et al., 2017; Branco et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "179ac178-9113-4c91-ab77-683b3cf00ff5",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C11",
+      "claim": "Morphologically identical gametes mate disassortatively, scarcely ever with members of the same mating type.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphologically identical gametes mate disassortatively, scarcely ever with members of the same mating type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about isogamous mating systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "2e009134-3955-4bce-ba53-850a4724fe5f",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C12",
+      "claim": "Only individuals of a different mating type are eligible mating partners in isogamous organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "It follows that only individuals of a different mating type are eligible mating partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of disassortative mating.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "ffff8616-9c6b-4253-a4c2-8eebc152e90c",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C13",
+      "claim": "Mating type systems restrict the pool of potential partners to those of a different mating type, introducing a major cost.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement poses a paradox as it restricts the pool of potential partners to those of a different mating type, introducing a major cost (Hoekstra, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and represents a recognized paradox in the field.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "85be581d-411d-4d7c-b905-bc89d6c91172",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C14",
+      "claim": "Mating types could serve as a restrictive mechanism preventing matings between related individuals thereby avoiding the deleterious consequences of inbreeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Mating types could serve as a restrictive mechanism preventing matings between related individuals thereby avoiding the deleterious consequences of inbreeding (Charlesworth and Charlesworth, 1979; Uyenoyama, 1988; Cz\u00e1r\u00e1n and Hoekstra, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "27ace6d7-9756-461a-81d3-9d4a0bc2ded2",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C15",
+      "claim": "Mating types facilitate uniparental inheritance of mitochondria, which leads to improved contribution of the mitochondrial genome to cell fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Another idea is that mating types facilitate uniparental inheritance of mitochondria, which leads to improved contribution of the mitochondrial genome to cell fitness (Hastings, 1992; Hurst and Hamilton, 1992; Hutson and Law, 1993; Hurst, 1996; Hadjivasiliou et al., 2012; Hadjivasiliou et al., 2013; Christie et al., 2015; Christie and Beekman, 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "6d25e5dd-f601-421d-841e-31115b9c0fdc",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C16",
+      "claim": "Several species maintain mating types despite inbreeding being the rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the existence of several species where inbreeding (Billiard et al., 2011; Perrin, 2012) or biparental inheritance of mitochondria (Billiard et al., 2011; Wilson and Xu, 2012) are the rule but nonetheless maintain mating types, indicates that these ideas may not alone explain the evolution of mating types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "535abb2b-ca77-41d1-83b2-f1960cc1f807",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C17",
+      "claim": "Several species maintain mating types despite biparental inheritance of mitochondria being the rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the existence of several species where inbreeding (Billiard et al., 2011; Perrin, 2012) or biparental inheritance of mitochondria (Billiard et al., 2011; Wilson and Xu, 2012) are the rule but nonetheless maintain mating types, indicates that these ideas may not alone explain the evolution of mating types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "4b4f5c13-55c7-4567-8fe9-b1ea4f8e16b5",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C18",
+      "claim": "Inbreeding avoidance and mitochondrial inheritance hypotheses may not alone explain the evolution of mating types.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the existence of several species where inbreeding (Billiard et al., 2011; Perrin, 2012) or biparental inheritance of mitochondria (Billiard et al., 2011; Wilson and Xu, 2012) are the rule but nonetheless maintain mating types, indicates that these ideas may not alone explain the evolution of mating types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "dd8b048c-457e-496a-992d-f344bd54bdec",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C19",
+      "claim": "Mating types are determined by the molecular system regulating gamete interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative hypothesis is that mating types are determined by the molecular system regulating gamete interactions (Hoekstra, 1987; Hadjivasiliou et al., 2015; Hadjivasiliou and Pomiankowski, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "9c91b7c8-99b9-4750-8f0e-3828ad613085",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C20",
+      "claim": "Gamete interactions have been shown to be more efficient when operating in an asymmetric manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Such interactions dictate the success of mating by guiding partner attraction and recognition and the process of cell fusion, and have been shown to be more efficient when operating in an asymmetric manner (Hadjivasiliou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "b4d3b0d5-d378-443f-acbd-a0f5e7fd3bd3",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C21",
+      "claim": "Diffusible molecules are often employed as signals that guide synchronous entry to gametogenesis or as chemoattractants.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, diffusible molecules are often employed as signals that guide synchronous entry to gametogenesis or as chemoattractants (Tsubo, 1961; Maier, 1993; Kuhlmann et al., 1997; Merlini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "ed48bd10-1956-4982-bb79-99fca08ae5ba",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C22",
+      "claim": "Secreting and sensing the same diffusible molecule impedes the ability of cells to accurately detect external signals and makes partner finding many-fold slower.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreting and sensing the same diffusible molecule impedes the ability of cells to accurately detect external signals and makes partner finding many-fold slower (Hadjivasiliou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "7723c2c7-28cc-4898-b617-80caedb73002",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C23",
+      "claim": "Secreting and detecting the same molecule in cell colonies can prevent individuals responding to signals from others.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, secreting and detecting the same molecule in cell colonies can prevent individuals responding to signals from others (Youk and Lim, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "5a424861-54d7-4d15-b41f-5604d5bcbc7c",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C24",
+      "claim": "Sexual signaling and communication in isogamous species are universally asymmetric.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous review revealed that sexual signaling and communication in isogamous species are universally asymmetric (Hadjivasiliou and Pomiankowski, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to findings from a prior review by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "6eacfe81-7519-4790-8b0d-820ca7141d5c",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C25",
+      "claim": "Asymmetric signaling applies throughout the sexual process from signals that lead to gametic differentiation, to attraction via diffusible pheromones and interactions via surface bound molecules during cell fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "This applies throughout the sexual process from signals that lead to gametic differentiation, to attraction via diffusible pheromones and interactions via surface bound molecules during cell fusion (Hadjivasiliou and Pomiankowski, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "4cadb4fd-6b17-4d33-ac92-9ddf2ad7e075",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C26",
+      "claim": "The employment of membrane bound ligands during sexual signaling is universal.",
+      "claim_type": "EXPLICIT",
+      "source": "The employment of membrane bound ligands during sexual signaling is universal, whereas diffusible signals are not (Hadjivasiliou and Pomiankowski, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "31ff1843-1c4f-477a-8711-d39d8b0cdb68",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C27",
+      "claim": "Diffusible signals during sexual signaling are not universal.",
+      "claim_type": "EXPLICIT",
+      "source": "The employment of membrane bound ligands during sexual signaling is universal, whereas diffusible signals are not (Hadjivasiliou and Pomiankowski, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "95a3eaec-e5cf-4185-9b39-b345ae1f5ffb",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C28",
+      "claim": "Ligands only undergo localized diffusion in several yeast and other unicellular eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptors remain bound to the cell surface and ligands only undergo localized diffusion (Figure 1) as is the case in several yeast and other unicellular eukaryotes (Cappellaro et al., 1991; Wilson et al., 1999; Phadke and Zufall, 2009; Merlini et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations and refers to Figure 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "46936838-8095-45a0-8431-b2a08e0a828d",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C29",
+      "claim": "When interacting cells produce ligand and receptor symmetrically, the ligand will bind to receptors on its own membrane as well as those on the other cell, which may impair intercellular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "(a) When the interacting cells produce ligand and receptor symmetrically, the ligand will bind to receptors on its own membrane as well as those on the other cell. This may impair intercellular signaling.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1a and explained in the caption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "125cce28-2b1a-436a-aeed-ee98eddb6ef3",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C30",
+      "claim": "Producing the ligand and receptor in an asymmetric manner resolves the issue of self-binding impairing intercellular signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "(b) Producing the ligand and receptor in an asymmetric manner resolves this issue.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1b and explained in the caption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "ef026b67-5cf6-43bf-be92-473fcf85f2dd",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C31",
+      "claim": "For low degradation rates, the removal of available molecules is dominated by self-binding.",
+      "claim_type": "EXPLICIT",
+      "source": "For low degradation rates (\u03b3 small), the removal of available molecules is dominated by self-binding (k+) (Equations (1) and (2) and Figure 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the mathematical model and shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "78446252-75f0-4f87-a71f-6d9816ad22f1",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C32",
+      "claim": "A lower degradation rate leads to higher levels of ligand and receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, a lower degradation rate leads to higher levels of ligand and receptor (Figure 2a) even if the relative drop of free ligand and receptor is steeper as k+ increases (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "cd28ed30-dce5-46cd-8302-19b0b1c572d6",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C33",
+      "claim": "The fold-increase in W12 is large even when self-binding confers no cost (n=0).",
+      "claim_type": "EXPLICIT",
+      "source": "The fold-increase in W12 is large even when self-binding confers no cost (n=0), while larger values for n ramp up the costs (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "5be6f087-96be-425e-a83a-7d6abe08cfc7",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C34",
+      "claim": "If cells produce the ligand and receptor asymmetrically, self-binding ceases to be a problem in receiving incoming signals.",
+      "claim_type": "EXPLICIT",
+      "source": "If cells produce the ligand and receptor asymmetrically, self-binding ceases to be a problem in receiving incoming signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "d05dbc91-9c3c-44b2-9830-b5480563083c",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C35",
+      "claim": "A resident cell with production rates (\u03bdL,\u03bdR,\u03bdl,\u03bdr)res=(1,1,0,0) cannot be invaded by any single mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "It follows that (\u03bdL,\u03bdR,\u03bdl,\u03bdr)=(1,1,0,0) cannot be invaded by any single mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "a08d6c56-e248-4b2d-afb6-7bab7099e806",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C41",
+      "claim": "Starting from a population where all cells are symmetric producers of only one ligand and receptor, the population evolves to one of two equilibria.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting from a population where all cells are symmetric producers of only one ligand and receptor, (\u03bdL,\u03bdR,\u03bdl,\u03bdr)=(1,1,0,0), the population evolves to one of two equilibria (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4a from the evolutionary simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "83cc7bcd-2aec-4178-af91-def0846d1acb",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C42",
+      "claim": "E1 equilibrium is characterized by s*\u22481 where all cells produce the ligand and receptor symmetrically.",
+      "claim_type": "EXPLICIT",
+      "source": "E1 where s*\u22481 and all cells produce the ligand and receptor symmetrically (\u03bdL,\u03bdR,\u03bdl,\u03bdr)\u2248(1,1,0,0)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one of the equilibria found in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "b6433623-e0b8-48de-a737-ff0a4036c846",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C43",
+      "claim": "E2 equilibrium is characterized by s*\u22480 where the population is divided into ligand and receptor producing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "E2 where s*\u22480 and the population is divided into ligand and receptor producing cells, with equal frequencies of (\u03bdL,\u03bdR,\u03bdl,\u03bdr)\u2248(1,0,0,1) and (\u03bdL,\u03bdR,\u03bdl,\u03bdr)\u2248(0,1,1,0) (Figure 4b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the second equilibrium found in the simulations, shown in Figures 4b and 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "599c7dab-ba2c-4d8f-b142-24029ff380b0",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C44",
+      "claim": "Equilibria with intermediate values of s* are not found.",
+      "claim_type": "EXPLICIT",
+      "source": "Equilibria with intermediate values of s* are not found.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "c2b6447a-e6dc-47bd-b676-bc3742a70440",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C45",
+      "claim": "E1 persists and no asymmetry evolves when k+ (the intracellular ligand-receptor binding coefficient) is small.",
+      "claim_type": "EXPLICIT",
+      "source": "E1 persists and no asymmetry evolves when k+ (the intracellular ligand-receptor binding coefficient) is small (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "82e4ee9c-1335-44a0-a4ca-70177613faed",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C46",
+      "claim": "When k+ is small, the concentration of self-bound ligand-receptor complex is small and there is little cost of self-signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the concentration of self-bound ligand-receptor complex is small (Equation (6)) and there is little cost of self-signaling (Equation (8)), so there is weak selection in favor of asymmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mathematical model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "9c9b45df-e2cb-447a-bc69-7da0f488b4c1",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C47",
+      "claim": "When the population is at E1, asymmetric mutants are slightly deleterious on their own.",
+      "claim_type": "EXPLICIT",
+      "source": "When the population is at E1, asymmetric mutants are slightly deleterious on their own (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This refers to results shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "5d3b17fc-f3dd-43a0-a066-8ea2b5cb5e44",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C48",
+      "claim": "For larger values of k+, self-binding dominates and restricts between cell signaling, promoting the evolution of asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite is true for larger values of k+, as self-binding now dominates and restricts between cell signaling, promoting the evolution of asymmetry (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "3d9c4119-1e27-4718-a7d1-f4e74b35ec20",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C49",
+      "claim": "The transition from E1 to E2 occurs at a smaller value of k+ when the degradation rate (\u03b3) is decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition from E1 to E2 occurs at a smaller value of k+ when the degradation rate (\u03b3) is decreased (Figure 4d), as the effective removal of free ligand and receptor depends more strongly on intercellular binding (Figure 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4d and explained by reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "efbd7d94-da51-4e1b-af54-d42e02f65704",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C50",
+      "claim": "The mutation rate affects the value of k+ at which the transition from E1 to E2 occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the mutation rate affects the value of k+ at which the transition from E1 to E2 occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "ffd43401-10a7-409c-b361-751e6084221d",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C51",
+      "claim": "The transition from E1 to E2 when mutation rates are smaller occurs at larger k+.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition from E1 to E2 when mutation rates are smaller occurs at larger k+ (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "51b2e8c3-18e7-4170-a5a0-a36b2927faa6",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C52",
+      "claim": "The threshold value of the within cell binding rate beyond which symmetric signaling evolves to asymmetric signaling increases when kb becomes much larger than k+/k-.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the threshold value of the within cell binding rate beyond which symmetric signaling (E1) evolves to asymmetric signaling (E2, Figure 4a) increases when kb becomes much larger than k+/k- (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "1c3905c1-3141-47ec-a140-a9cd78248ba2",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C53",
+      "claim": "The threshold value for evolution of asymmetric signaling is smaller for larger values of n.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this threshold value is smaller for larger values of n indicating that asymmetric signaling is more likely to evolve when the cost for self-signaling is higher (larger n, Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "7bf74746-f7b8-4ff3-a31e-a6b15ff5193a",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C54",
+      "claim": "Asymmetric signaling can evolve even when self-binding carries no cost (n=0).",
+      "claim_type": "EXPLICIT",
+      "source": "However, asymmetric signaling can evolve even when self-binding carries no cost (n=0) as high rates of self-binding can restrict the number of ligand and receptor molecules free for between cell interactions (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "9da57759-c352-411f-8d2b-14fbe8b9a5fb",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C55",
+      "claim": "When the two ligands (or receptors) exhibit synergy, a signaling asymmetry evolves more easily.",
+      "claim_type": "EXPLICIT",
+      "source": "When the two ligands (or receptors) exhibit synergy so that \u03bdL+\u03bdl<\u03b1 and \u03bdR+\u03bdr<\u03b1 for \u03b1>1, a signaling asymmetry evolves more easily (for smaller values of k+, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "4c43a9dd-bfe1-420c-ba9a-7e80a93b4862",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C56",
+      "claim": "When the two ligands (or receptors) compete with one another, the reverse dynamics are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "The reverse dynamics are observed when the two ligands (or receptors) compete with one another (\u03bdL+\u03bdl<\u03b1 and \u03bdR+\u03bdr<\u03b1 for \u03b1<1 ) (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "ed20ba11-f87f-4066-889a-5a6e63d1ded0",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C57",
+      "claim": "Both E1 and E2 are evolutionary stable states.",
+      "claim_type": "EXPLICIT",
+      "source": "The observations above suggest that both E1 and E2 are evolutionary stable states and the transition from E1 to E2 depends on the mutational process, drift and the parameters that determine signaling interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "1503b537-4820-4f26-9639-6cfc9d245cce",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C60",
+      "claim": "The basin of attraction for E2 is larger when k+ and p are high and \u03b3 is small.",
+      "claim_type": "EXPLICIT",
+      "source": "The basin of attraction for E2 (and so asymmetric signaling roles) is larger when k+ and p are high and \u03b3 is small (Figure 5a\u2013d), as predicted analytically (Figures 2 and 3) and in accordance with our findings when mutations were continuous (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5 and consistent with earlier analytical and simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "36f54e8e-0890-41af-ab90-2c8552aaea0e",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C62",
+      "claim": "When mutants are introduced at a lower frequency, the probability that they meet one another before they are lost by drift increases.",
+      "claim_type": "EXPLICIT",
+      "source": "When mutants are introduced at a lower frequency (compare Figure 5a\u2013b), the probability that they meet one another before they are lost by drift increases.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from comparing Figure 5a and 5b.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "0105fd40-f5e8-48aa-bb3c-ab01b17108d0",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C63",
+      "claim": "An asymmetry in both ligand and receptor production is necessary for the evolution of a signaling asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "It follows that an asymmetry in both ligand and receptor production is necessary for the evolution of a signaling asymmetry as predicted analytically (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the adaptive dynamics results, consistent with Figure 3a.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "0e2bd0b8-6fe9-4d18-91c5-4ef5ef69b03d",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C65",
+      "claim": "When the population evolves to E2, s* becomes larger as the recombination rate (\u03c1) increases.",
+      "claim_type": "EXPLICIT",
+      "source": "When the population evolves to E2, s* becomes larger as the recombination rate, (\u03c1), increases (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "1849a93b-6fc8-4218-93a8-95ae36f027f6",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C66",
+      "claim": "For low recombination rates (\u03c1\u22640.1), the population largely consists of equal frequencies of (1,0,0,1) and (0,1,1,0) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For low recombination rates (\u03c1\u22640.1), the population largely consists of equal frequencies of (1,0,0,1) and (0,1,1,0) cells, producing the ligand and receptor asymmetrically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulations with recombination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "73b1a8fd-b344-487d-9152-30c20c354e2b",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C67",
+      "claim": "A small percentage of recombinant cells produce conspecific pairs of ligand and receptor at low recombination rates.",
+      "claim_type": "EXPLICIT",
+      "source": "A small percentage of recombinant cells produce conspecific pairs of ligand and receptor (\u03bdL,\u03bdR,\u03bdl,\u03bdr)=(1,1,0,0) and (0,0,1,1) (Figure 7b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 7b and 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "cf5eed14-4166-4aac-ae32-6a7c5c9ecc94",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C68",
+      "claim": "Higher recombination rates (\u03c1\u22650.3) push s*=0.5 at E2.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher recombination rates (\u03c1\u22650.3) push s*=0.5 at E2 (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "56cb8c51-e4d3-4de2-bf1b-cd22432962cb",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C69",
+      "claim": "At high recombination rates, there is a predominance of (\u03bdL,\u03bdR,\u03bdl,\u03bdr)=(1,0.5,0,0.5) and (0,0.5,1,0.5) cells at equal frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "\u0397ere, there is a predominance of (\u03bdL,\u03bdR,\u03bdl,\u03bdr)=(1,0.5,0,0.5) and (0,0.5,1,0.5) cells at equal frequencies (or (0.5,1,0.5,0) and (0.5,0,0.5,1) by symmetry).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulations with high recombination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "8af450ce-2777-49ec-a684-e004a779cda3",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C70",
+      "claim": "The arrangement at high recombination rates maintains some degree of asymmetry even with free recombination (\u03c1=0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this arrangement maintains some degree of asymmetry even with free recombination (\u03c1=0.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "7f1bd7e8-3a93-4fd1-bf36-862f0be66211",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C71",
+      "claim": "The recombination rate evolves to \u03c1*=0 whenever E2 was reached from E1 in the no recombination analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The recombination rate evolves to \u03c1*=0 whenever E2 was reached from E1 in the no recombination analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulations where recombination rate evolves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "76e8d396-90dc-46c6-90a6-7c609cbc9846",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C72",
+      "claim": "Tight linkage between receptor and ligand genes is favored under conditions where E2 evolves.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, tight linkage between receptor and ligand genes is favored (Figure 8a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "96c09525-60b5-473e-9132-ee8a41ab7abc",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C73",
+      "claim": "Asymmetric signaling roles coevolve together with the recombination rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, asymmetric signaling roles coevolve together with the recombination rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the simulations where both traits evolve.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "15b02366-bf1b-459a-a45b-531a7990b0ea",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C74",
+      "claim": "When k+ is large (k+=10), signal asymmetry rapidly evolves and this is followed by a sharp drop in the recombination rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when k+ is large (k+=10), signal asymmetry rapidly evolves; s moves away from one and this is followed by a sharp drop in the recombination rate (Figure 8b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "7d2b303b-c03e-4a5d-9d7d-539c6069df2f",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C75",
+      "claim": "When selection for asymmetric signaling is weaker (k+=3), it takes longer for the asymmetric types to co-evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics are similar when k+ is smaller (k+=3, Figure 8c) and selection for asymmetry is weaker. However, it now takes longer for the asymmetric types to co-evolve (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "fc7384e8-2849-4816-94c5-2ba90a82b82a",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C76",
+      "claim": "When selection for asymmetric signaling is even weaker (k+=1), no asymmetry evolves and the recombination rate fluctuates randomly.",
+      "claim_type": "EXPLICIT",
+      "source": "When selection for asymmetric signaling is even weaker (k+=1, Figure 8d), no asymmetry evolves (s remains at 1) and the recombination rate fluctuates randomly between its minimum and maximum value as one would expect in the case of a neutral allele.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "ea05dcaf-e43c-4dcb-a4d0-8623c97eb06a",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C77",
+      "claim": "An asymmetry in ligand and receptor production evolves as a response to selection for swift gamete communication and mating.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work we show that an asymmetry in ligand and receptor production evolves as a response to selection for swift gamete communication and mating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "c7fb9fc2-d3da-4f7e-8198-fe363e22fd02",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C78",
+      "claim": "The same conditions favoring asymmetric signaling select for tight linkage between the receptor and ligand genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the same conditions favoring asymmetric signaling select for tight linkage between the receptor and ligand genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "42a72d91-97d3-4ca4-a7e2-cb03e2f65542",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C79",
+      "claim": "Selection for asymmetric signaling roles could have played an important role in the early evolution of gamete differentiation and identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that selection for asymmetric signaling roles could have played an important role in the early evolution of gamete differentiation and identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "246bf1f2-4429-4a50-ad92-73bf8fe260f7",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C80",
+      "claim": "Gene duplication followed by mutation is a well established route to novelty evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene duplication followed by mutation is a well established route to novelty evolution (Susumu, 1970; Zhang, 2003; Magadum et al., 2013) and could explain the co-existence of two pairs of ligand and receptor in our system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "6755445a-e778-4606-b260-d39022d09d58",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C81",
+      "claim": "Individual cells could produce multiple ligands and receptors which evolve independently, as is the case in some basidiomycete fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, individual cells could produce multiple ligands and receptors which evolve independently, as is the case in some basidiomycete fungi (Fowler and Vaillancourt, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "875422f1-18c9-4b12-9050-804ddbf0a0e7",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C82",
+      "claim": "The co-existence of mating types with pansexuals is rare in natural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This could explain why the co-existence of mating types with pansexuals is rare in natural populations (Billiard et al., 2011; Billiard et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and is an inference from the model results.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "36ed82b5-36c4-4528-95d4-c7e8f3e17b91",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C83",
+      "claim": "In previous models, pansexual types were very hard to eliminate due to negative frequency dependent selection.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to previous models where pansexual types were very hard to eliminate due to negative frequency dependent selection (Hoekstra, 1982; Cz\u00e1r\u00e1n and Hoekstra, 2004; Hadjivasiliou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "da60c872-cfa7-4d48-925a-eeb7b78460da",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C84",
+      "claim": "In the mitochondrial inheritance model, uniparental inheritance raises fitness not only in individuals that carry genes for uniparental inheritance but also for pansexual individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the case of the mitochondrial inheritance model, uniparental inheritance raises fitness not only in individuals that carry genes for uniparental inheritance but also for pansexual individuals (benefits 'leak' to biparental individuals) (Hadjivasiliou et al., 2013; Christie and Beekman, 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "562e46c7-8c74-404b-82a6-478b1659d664",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C85",
+      "claim": "The spread of self-incompatibility reduces the population mutation load, and so reduces the need for inbreeding avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar pattern is seen with inbreeding avoidance because the spread of self-incompatibility reduces the population mutation load, and so reduces the need for inbreeding avoidance (Cz\u00e1r\u00e1n and Hoekstra, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "6e695c36-eeb4-4071-bf05-8501feda1c22",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C86",
+      "claim": "In the present model there is positive frequency dependent selection where the spread of asymmetric signalers generates stronger selection for further asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics are reversed in the present model where there is positive frequency dependent selection. The spread of asymmetric signalers generates stronger selection for further asymmetry (Figures 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the model results shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "9f992bff-cedb-4b14-afe9-bf077eb46574",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C87",
+      "claim": "Even though recombination between the two asymmetric types generates symmetric recombinant offspring, these are disfavored and eliminated by selection.",
+      "claim_type": "EXPLICIT",
+      "source": "This also occurs when there is recombination (Figures 7 and 8). Even though recombination between the two asymmetric types generates symmetric recombinant offspring, these are disfavored and eliminated by selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the simulations with recombination shown in Figures 7 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "9615c805-31ca-42b8-9585-e78f52378977",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C88",
+      "claim": "The mitochondrial inheritance and inbreeding avoidance models are unlikely to generate strong selection for suppressed recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the mitochondrial inheritance and inbreeding avoidance models are unlikely to generate strong selection for suppressed recombination which is the hallmark of mating types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing the present model with previous models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "534de655-e77a-411f-a58b-859e2fd5fe55",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C89",
+      "claim": "Mating type identity in unicellular eukaryotes is determined by mating type loci that typically carry a number of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mating type identity in unicellular eukaryotes is determined by mating type loci that typically carry a number of genes (Billiard et al., 2012; Hadjivasiliou and Pomiankowski, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "05774d6d-e5eb-44ae-8efb-04109498f396",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C90",
+      "claim": "Suppressed recombination at the mating type locus is a common feature across the evolutionary tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppressed recombination at the mating type locus is a common feature across the evolutionary tree (Branco et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "6f1c3422-0eb5-4d0f-8485-5f4bc4d29760",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C91",
+      "claim": "The work predicts the co-evolution of mating type specific signaling roles and suppressed recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work predicts the co-evolution of mating type specific signaling roles and suppressed recombination with selection favoring linkage between loci responsible for signaling and an asymmetry in signaling roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "c9a0ee5c-5cd7-4945-8965-ba6a3ae6f3a8",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C92",
+      "claim": "Selection for asymmetric signaling could be the very first step in the evolution of tight linkage between genes that control mating type identity.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that selection for asymmetric signaling could be the very first step in the evolution of tight linkage between genes that control mating type identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "9f0f86e5-f8c0-4216-9ff9-e8de9770f4e0",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C93",
+      "claim": "In yeasts, the only genes in the mating type locus code for the production of ligand and receptor molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeasts, the only genes in the mating type locus code for the production of ligand and receptor molecules (Merlini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "b7c5a58a-9452-426a-b49b-f70c90ef1ac4",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C94",
+      "claim": "Mating type loci with suppressed recombination are precursors to sex chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence across species suggests that mating type loci with suppressed recombination are precursors to sex chromosomes (Menkis et al., 2008; Geng et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "d3a8db28-f252-4448-8039-59209b0a3153",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C95",
+      "claim": "The work provides crucial insights about the origin of sex chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way our work provides crucial insights about the origin of sex chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the study's implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "523652c3-2152-4300-8bd4-b56cf9c07b6b",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C96",
+      "claim": "Opposite mating type gametes often utilize diffusible signals to attract partners.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, opposite mating type gametes often utilize diffusible signals to attract partners (Luporini et al., 1995; Tsuchikane et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "1b5d93b5-b985-4be1-8247-e9588c0ea050",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C97",
+      "claim": "The inclusion of long range signals such as those used in sexual chemotaxis will provide further benefits for asymmetric signaling roles and mating types.",
+      "claim_type": "EXPLICIT",
+      "source": "The inclusion of long range signals such as those used in sexual chemotaxis will provide further benefits for asymmetric signaling roles and mating types (Hadjivasiliou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future work, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "5e1e51c2-1261-4210-a289-0aa8b9f85c5e",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C98",
+      "claim": "The number of mating types varies greatly across species and is likely to depend on the frequency of sexual reproduction and mutation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore the number of mating types varies greatly across species and is likely to depend on the frequency of sexual reproduction and mutation rates (Constable and Kokko, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "43f84e1f-c0f3-41f1-bd12-db50eead4713",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C99",
+      "claim": "The evolution of asymmetric gamete signaling and mating types is contingent upon the mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed that the evolution of asymmetric gamete signaling and mating types is contingent upon the mutation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "86b79036-58b6-4697-b865-9d524e91a195",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C100",
+      "claim": "When the population size is small and mutation rates are low, there is a low probability that individuals carrying asymmetric mutations in opposite directions are segregating at the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "When the population size is small and mutation rates are low, there is a low probability that individuals carrying asymmetric mutations in opposite directions are segregating at the same time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "d4f62ad4-3732-4576-9f36-7410a9cfbbf9",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C101",
+      "claim": "Increasing the population size or the mutation rate would enhance the probability of co-segregation, making the evolution of asymmetric signaling more likely.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the population size or the mutation rate would enhance the probability of co-segregation, making the evolution of asymmetric signaling more likely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "1f965a31-1b0d-468a-b47b-224c5e8e4f0d",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C102",
+      "claim": "In an infinite population the evolution of signaling asymmetry should be independent of the mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In an infinite population the evolution of signaling asymmetry should be independent of the mutation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "ad04853a-0592-4bb1-ab10-e2b589524201",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C103",
+      "claim": "Unicellular eukaryotes undergo several rounds of asexual growth (tens to thousands) between each sexual reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is worth noting that unicellular eukaryotes undergo several rounds of asexual growth (tens to thousands) between each sexual reproduction (Hadjivasiliou et al., 2016b; Constable and Kokko, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "67e0b173-0d88-4cac-96f9-09841b0be820",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C104",
+      "claim": "The effective mutation rate between sexual rounds will end up being orders of magnitude higher than the mutation rates at each vegetative step.",
+      "claim_type": "EXPLICIT",
+      "source": "It follows that the effective mutation rate between sexual rounds will end up being orders of magnitude higher than the mutation rates at each vegetative step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation about asexual growth cycles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "756eb272-a403-45cd-b612-c499b2717e39",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C105",
+      "claim": "Selection for swift and robust signaling interactions between mating cells can lead to the evolution of self-incompatible mating types determined at non-recombinant mating type loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together our findings suggest that selection for swift and robust signaling interactions between mating cells can lead to the evolution of self-incompatible mating types determined at non-recombinant mating type loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "22f462ae-0a8d-467d-847f-1f513c9c6a42",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "claim_id": "C106",
+      "claim": "The fundamental selection for asymmetric signaling between mating cells could be the very first step in the evolution of sexual asymmetry, paving the way for the evolution of anisogamy, sex chromosomes and sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the fundamental selection for asymmetric signaling between mating cells could be the very first step in the evolution of sexual asymmetry, paving the way for the evolution of anisogamy, sex chromosomes and sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ed94bade-9738-49b1-8246-2549143db044",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about sexual reproduction and mating types in isogamous organisms. Sexual reproduction typically involves asymmetric partners (C1, C8), and isogamous species possess self-incompatible gametes determined at mating-type regions with suppressed recombination (C2, C10), which are likely precursors to sex chromosomes (C3). These mating type systems restrict mating to different types, introducing a cost (C13).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent well-established knowledge in the field, supported by multiple citations to prior work (C9, C10, C13). The claims are internally consistent and provide appropriate context for the study. They accurately represent the current understanding of mating type evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "9df65a24-e6ff-4c93-b080-8f620e43feac",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews existing hypotheses for mating type evolution, including inbreeding avoidance (C14) and mitochondrial inheritance (C15), but notes that these hypotheses may not fully explain mating types since some species maintain mating types despite inbreeding or biparental mitochondrial inheritance being the rule (C16, C17, C18).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize prior hypotheses and their limitations, supported by appropriate citations (C14, C15, C16, C17). The inference that these hypotheses may not alone explain mating type evolution (C18) is logically sound given the cited counterexamples.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript presents an alternative hypothesis that mating types are determined by molecular systems regulating gamete interactions (C19), which are more efficient when operating asymmetrically (C20). Sexual signaling in isogamous species is universally asymmetric (C24, C25), and membrane-bound ligands are universal while diffusible signals are not (C26, C27). Self-signaling (producing and sensing the same molecule) impairs signal detection and slows partner finding (C22, C23).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by citations to prior work, including the authors' own review (C24, C25). The evidence for asymmetric signaling being more efficient (C20, C22) and the universality of membrane-bound ligands (C26) is appropriately cited. The claims provide strong motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "17d86d7d-db9a-427f-8cb7-3c9920fe4701",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors develop a model of ligand-receptor dynamics that identifies factors determining cellular signaling capacity (C4) and specifies conditions favoring asymmetric ligand and receptor production (C5). When recombination rate evolves, conditions favoring asymmetric signaling also favor tight linkage between ligand and receptor loci (C6). The results suggest that selection for asymmetric gamete signaling could be the first step in mating-type loci evolution (C7).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize the main findings of the study, which are supported by the mathematical model and simulations presented in the Results section. The model is mathematically sound (Equations 1-10), and the simulations systematically explore parameter space (Figures 2-8). The inference in C7 is appropriately qualified as a suggestion based on the model results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "4332a136-7620-4ce7-9057-8f768d612d0c",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model demonstrates that symmetric ligand-receptor production leads to self-binding that impairs intercellular signaling (C29), while asymmetric production resolves this issue (C30). For low degradation rates, self-binding dominates molecule removal (C31), and lower degradation leads to higher ligand/receptor levels (C32). The fold-increase in signaling strength (W12) is large even without self-binding costs (C33), and asymmetric production eliminates self-binding problems (C34).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are directly supported by the mathematical model (Equations 1-8) and Figure 2. The steady-state analysis is mathematically correct, and the conclusions about self-binding effects are logically derived from the model structure. Figure 2 clearly shows the predicted relationships between parameters and signaling strength.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The evolutionary simulations identify two stable equilibria: E1 (symmetric signaling, s*\u22481) and E2 (asymmetric signaling, s*\u22480) (C41-C44). A symmetric resident cannot be invaded by single mutants (C35), but E1 persists only when intracellular binding (k+) is small (C45-C47). Larger k+ promotes asymmetry evolution (C48), with the E1-to-E2 transition depending on degradation rate (C49), mutation rate (C50-C51), between-cell binding strength (C52), and self-binding cost (C53-C54). Ligand/receptor synergy facilitates asymmetry evolution (C55-C56), and both equilibria are evolutionarily stable (C57).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by Figures 3-5 and the adaptive dynamics analysis. The pairwise invasibility plots (Figure 3) clearly demonstrate the conditions under which mutants can invade, and the evolutionary simulations (Figure 4) systematically explore parameter space. The dependence on mutation rate (Figure 4\u2014supplement 1) and other parameters (Figure 4e, 4\u2014supplement 2) is clearly documented. The conclusion about evolutionary stability (C57) is appropriately qualified as an inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "d89f0919-9bac-4e17-b001-ed51a6fd798a",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Adaptive dynamics analysis shows that E2's basin of attraction is larger when k+ and mutation frequency (p) are high and degradation (\u03b3) is small (C60). Lower mutant frequency increases the probability that complementary mutants meet before drift eliminates them (C62). Asymmetry in both ligand and receptor production is necessary for signaling asymmetry evolution (C63).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by Figure 5, which systematically maps the invasion conditions for different parameter combinations. The inference about drift effects (C62) is reasonable given the finite population size. The requirement for asymmetry in both ligand and receptor (C63) is consistent with Figure 3a and Figure 6.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "214dc930-a832-4e64-b704-49d1e3c4d065",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "When recombination is introduced, s* increases with recombination rate \u03c1 at equilibrium E2 (C65). At low recombination (\u03c1\u22640.1), the population consists mainly of fully asymmetric cells (1,0,0,1) and (0,1,1,0) with few recombinants (C66-C67). Higher recombination (\u03c1\u22650.3) pushes s* to 0.5, with cells producing one ligand fully and both receptors at 0.5 (C68-C69), maintaining some asymmetry even at free recombination (C70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are directly supported by Figure 7, which shows how population composition changes with recombination rate. The observation that some asymmetry persists even at high recombination (C70) is an important finding clearly demonstrated in Figure 7b. The model correctly accounts for recombination effects on offspring genotypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "24f2948b-7180-4fea-960e-f7e887e71e39",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "When recombination rate evolves, it evolves to \u03c1*=0 (tight linkage) whenever E2 is reached (C71-C72). Asymmetric signaling and recombination rate coevolve (C73), with dynamics depending on selection strength: strong selection (k+=10) leads to rapid asymmetry evolution followed by sharp recombination reduction (C74), weaker selection (k+=3) shows slower coevolution (C75), and very weak selection (k+=1) results in no asymmetry and neutral recombination rate fluctuation (C76).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by Figure 8, which clearly shows the coevolutionary dynamics for different parameter values. The observation that tight linkage evolves under the same conditions favoring asymmetric signaling (C71-C72) is a key finding. The parameter-dependent dynamics (C74-C76) are clearly demonstrated and make biological sense.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "40934048-3b3b-456d-bdb5-eeb3a8e06948",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The main conclusions state that asymmetry in ligand-receptor production evolves in response to selection for swift gamete communication (C77), and the same conditions favor tight linkage between receptor and ligand genes (C78). Selection for asymmetric signaling could be important in early gamete differentiation evolution (C79), could be the first step in tight linkage evolution (C92), and could lead to self-incompatible mating types at non-recombinant loci (C105), potentially being the first step toward sexual asymmetry, anisogamy, sex chromosomes, and sexes (C106).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These conclusions are appropriately supported by the model results presented throughout the manuscript. The claims are carefully qualified with 'could' and 'suggest,' acknowledging that this is a theoretical model. The logical chain from asymmetric signaling to tight linkage to mating types is well-established by the results. However, the broader evolutionary implications (C106) are more speculative, though reasonably grounded in the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "3c88ce98-5995-4b3c-9fc7-b4d9abf69083",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings relative to prior work. Gene duplication could explain two ligand-receptor pairs (C80-C81). The model explains why pansexual-mating type coexistence is rare (C82), contrasting with previous models showing negative frequency-dependent selection (C83-C85). The present model shows positive frequency-dependent selection (C86), where recombinant offspring are eliminated even with recombination (C87), suggesting mitochondrial inheritance and inbreeding avoidance models unlikely generate strong selection for suppressed recombination (C88).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims appropriately contextualize the findings within existing literature. The contrast with previous models (C83-C85) is well-supported by citations, and the observation about positive frequency-dependent selection (C86) is clearly demonstrated in Figures 3-4. The inference about other models (C88) is reasonable but somewhat speculative, as it's based on comparison rather than direct analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "86cf7823-a940-4c62-97aa-b33ac5d34fed",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The discussion connects findings to mating type loci and sex chromosome evolution. Mating type identity is determined by loci carrying multiple genes (C89), with suppressed recombination being common across species (C90). In yeasts, mating type loci only code for ligand and receptor molecules (C93). Mating type loci with suppressed recombination are precursors to sex chromosomes (C94), and this work provides insights about sex chromosome origins (C95).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by appropriate citations (C89, C90, C93, C94). The connection to sex chromosome evolution (C94, C95) is reasonable given the established relationship between mating type loci and sex chromosomes in the literature. The claim about providing 'crucial insights' (C95) may be somewhat overstated but is defensible given the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "ec032420-8c60-42ca-8c9b-3c7c955bfa81",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The discussion identifies future research directions. Opposite mating type gametes often use diffusible signals for attraction (C96), and including long-range signals would provide further benefits for asymmetric signaling (C97). Mating type number varies across species and likely depends on sexual reproduction frequency and mutation rates (C98).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims appropriately identify extensions of the current work. C96 is supported by citations, and C97 is a reasonable speculation supported by a citation to prior work. C98 is supported by a citation and represents an appropriate direction for future research. These are appropriately framed as future work rather than current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    },
+    {
+      "id": "c61d7c4a-3e55-4458-9322-999da65e49d5",
+      "content_id": "af590e3c-9be7-440f-9f93-6c070ddfb896",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The discussion addresses mutation rate effects on asymmetric signaling evolution. Evolution of asymmetric signaling is contingent on mutation rate (C99), with low probability of complementary mutants co-segregating when population size is small and mutation rates are low (C100). Increasing population size or mutation rate enhances co-segregation probability (C101), and in infinite populations, evolution should be independent of mutation rate (C102). Unicellular eukaryotes undergo many asexual generations between sexual reproduction (C103), making effective mutation rates orders of magnitude higher (C104).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by Figure 4\u2014supplement 1 and the adaptive dynamics analysis (Figure 5). The reasoning about co-segregation probability (C100-C101) is sound, and the theoretical prediction for infinite populations (C102) is appropriate. The observation about asexual generations (C103) is well-cited, and the inference about effective mutation rates (C104) is logical, though it would benefit from quantitative support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:56:06.895055Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e2fb7ae2-bbb8-4f2c-b8c1-54eb61ed8b7d",
+      "result_id": "ed94bade-9738-49b1-8246-2549143db044"
+    },
+    {
+      "claim_id": "e538ddef-ef22-4f30-bb11-feee54280053",
+      "result_id": "ed94bade-9738-49b1-8246-2549143db044"
+    },
+    {
+      "claim_id": "f1a83ee2-e59d-4b87-9dc1-ca316c0f66b8",
+      "result_id": "ed94bade-9738-49b1-8246-2549143db044"
+    },
+    {
+      "claim_id": "ce4b7e81-457f-4fd8-8bbe-9a2e45b6e85b",
+      "result_id": "ed94bade-9738-49b1-8246-2549143db044"
+    },
+    {
+      "claim_id": "70f1a915-d600-4c76-bc38-9944287ecc28",
+      "result_id": "ed94bade-9738-49b1-8246-2549143db044"
+    },
+    {
+      "claim_id": "1b83ab46-c2c8-4e88-997c-b0099d92ad2f",
+      "result_id": "ed94bade-9738-49b1-8246-2549143db044"
+    },
+    {
+      "claim_id": "179ac178-9113-4c91-ab77-683b3cf00ff5",
+      "result_id": "ed94bade-9738-49b1-8246-2549143db044"
+    },
+    {
+      "claim_id": "2e009134-3955-4bce-ba53-850a4724fe5f",
+      "result_id": "ed94bade-9738-49b1-8246-2549143db044"
+    },
+    {
+      "claim_id": "ffff8616-9c6b-4253-a4c2-8eebc152e90c",
+      "result_id": "ed94bade-9738-49b1-8246-2549143db044"
+    },
+    {
+      "claim_id": "85be581d-411d-4d7c-b905-bc89d6c91172",
+      "result_id": "9df65a24-e6ff-4c93-b080-8f620e43feac"
+    },
+    {
+      "claim_id": "27ace6d7-9756-461a-81d3-9d4a0bc2ded2",
+      "result_id": "9df65a24-e6ff-4c93-b080-8f620e43feac"
+    },
+    {
+      "claim_id": "6d25e5dd-f601-421d-841e-31115b9c0fdc",
+      "result_id": "9df65a24-e6ff-4c93-b080-8f620e43feac"
+    },
+    {
+      "claim_id": "535abb2b-ca77-41d1-83b2-f1960cc1f807",
+      "result_id": "9df65a24-e6ff-4c93-b080-8f620e43feac"
+    },
+    {
+      "claim_id": "4b4f5c13-55c7-4567-8fe9-b1ea4f8e16b5",
+      "result_id": "9df65a24-e6ff-4c93-b080-8f620e43feac"
+    },
+    {
+      "claim_id": "dd8b048c-457e-496a-992d-f344bd54bdec",
+      "result_id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2"
+    },
+    {
+      "claim_id": "9c91b7c8-99b9-4750-8f0e-3828ad613085",
+      "result_id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2"
+    },
+    {
+      "claim_id": "b4d3b0d5-d378-443f-acbd-a0f5e7fd3bd3",
+      "result_id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2"
+    },
+    {
+      "claim_id": "ed48bd10-1956-4982-bb79-99fca08ae5ba",
+      "result_id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2"
+    },
+    {
+      "claim_id": "7723c2c7-28cc-4898-b617-80caedb73002",
+      "result_id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2"
+    },
+    {
+      "claim_id": "5a424861-54d7-4d15-b41f-5604d5bcbc7c",
+      "result_id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2"
+    },
+    {
+      "claim_id": "6eacfe81-7519-4790-8b0d-820ca7141d5c",
+      "result_id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2"
+    },
+    {
+      "claim_id": "4cadb4fd-6b17-4d33-ac92-9ddf2ad7e075",
+      "result_id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2"
+    },
+    {
+      "claim_id": "31ff1843-1c4f-477a-8711-d39d8b0cdb68",
+      "result_id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2"
+    },
+    {
+      "claim_id": "95a3eaec-e5cf-4185-9b39-b345ae1f5ffb",
+      "result_id": "ff2c361c-dfb2-45bc-b0d2-9655e79424e2"
+    },
+    {
+      "claim_id": "18661aca-591c-4840-87bb-6b84429952b7",
+      "result_id": "17d86d7d-db9a-427f-8cb7-3c9920fe4701"
+    },
+    {
+      "claim_id": "c93c6f56-0c20-4811-91e3-63cccc865403",
+      "result_id": "17d86d7d-db9a-427f-8cb7-3c9920fe4701"
+    },
+    {
+      "claim_id": "e4ec4f9c-bb1b-4c62-911a-6b37b944de35",
+      "result_id": "17d86d7d-db9a-427f-8cb7-3c9920fe4701"
+    },
+    {
+      "claim_id": "537da37f-d94d-4814-adaa-413d6f2338c1",
+      "result_id": "17d86d7d-db9a-427f-8cb7-3c9920fe4701"
+    },
+    {
+      "claim_id": "46936838-8095-45a0-8431-b2a08e0a828d",
+      "result_id": "4332a136-7620-4ce7-9057-8f768d612d0c"
+    },
+    {
+      "claim_id": "125cce28-2b1a-436a-aeed-ee98eddb6ef3",
+      "result_id": "4332a136-7620-4ce7-9057-8f768d612d0c"
+    },
+    {
+      "claim_id": "ef026b67-5cf6-43bf-be92-473fcf85f2dd",
+      "result_id": "4332a136-7620-4ce7-9057-8f768d612d0c"
+    },
+    {
+      "claim_id": "78446252-75f0-4f87-a71f-6d9816ad22f1",
+      "result_id": "4332a136-7620-4ce7-9057-8f768d612d0c"
+    },
+    {
+      "claim_id": "cd28ed30-dce5-46cd-8302-19b0b1c572d6",
+      "result_id": "4332a136-7620-4ce7-9057-8f768d612d0c"
+    },
+    {
+      "claim_id": "5be6f087-96be-425e-a83a-7d6abe08cfc7",
+      "result_id": "4332a136-7620-4ce7-9057-8f768d612d0c"
+    },
+    {
+      "claim_id": "d05dbc91-9c3c-44b2-9830-b5480563083c",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "a08d6c56-e248-4b2d-afb6-7bab7099e806",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "83cc7bcd-2aec-4178-af91-def0846d1acb",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "b6433623-e0b8-48de-a737-ff0a4036c846",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "599c7dab-ba2c-4d8f-b142-24029ff380b0",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "c2b6447a-e6dc-47bd-b676-bc3742a70440",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "82e4ee9c-1335-44a0-a4ca-70177613faed",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "9c9b45df-e2cb-447a-bc69-7da0f488b4c1",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "5d3b17fc-f3dd-43a0-a066-8ea2b5cb5e44",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "3d9c4119-1e27-4718-a7d1-f4e74b35ec20",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "efbd7d94-da51-4e1b-af54-d42e02f65704",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "ffd43401-10a7-409c-b361-751e6084221d",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "51b2e8c3-18e7-4170-a5a0-a36b2927faa6",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "1c3905c1-3141-47ec-a140-a9cd78248ba2",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "7bf74746-f7b8-4ff3-a31e-a6b15ff5193a",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "9da57759-c352-411f-8d2b-14fbe8b9a5fb",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "4c43a9dd-bfe1-420c-ba9a-7e80a93b4862",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "ed20ba11-f87f-4066-889a-5a6e63d1ded0",
+      "result_id": "4cf9b69c-3a26-4ad6-867f-f847940dfc76"
+    },
+    {
+      "claim_id": "1503b537-4820-4f26-9639-6cfc9d245cce",
+      "result_id": "d89f0919-9bac-4e17-b001-ed51a6fd798a"
+    },
+    {
+      "claim_id": "36f54e8e-0890-41af-ab90-2c8552aaea0e",
+      "result_id": "d89f0919-9bac-4e17-b001-ed51a6fd798a"
+    },
+    {
+      "claim_id": "0105fd40-f5e8-48aa-bb3c-ab01b17108d0",
+      "result_id": "d89f0919-9bac-4e17-b001-ed51a6fd798a"
+    },
+    {
+      "claim_id": "0e2bd0b8-6fe9-4d18-91c5-4ef5ef69b03d",
+      "result_id": "214dc930-a832-4e64-b704-49d1e3c4d065"
+    },
+    {
+      "claim_id": "1849a93b-6fc8-4218-93a8-95ae36f027f6",
+      "result_id": "214dc930-a832-4e64-b704-49d1e3c4d065"
+    },
+    {
+      "claim_id": "73b1a8fd-b344-487d-9152-30c20c354e2b",
+      "result_id": "214dc930-a832-4e64-b704-49d1e3c4d065"
+    },
+    {
+      "claim_id": "cf5eed14-4166-4aac-ae32-6a7c5c9ecc94",
+      "result_id": "214dc930-a832-4e64-b704-49d1e3c4d065"
+    },
+    {
+      "claim_id": "56cb8c51-e4d3-4de2-bf1b-cd22432962cb",
+      "result_id": "214dc930-a832-4e64-b704-49d1e3c4d065"
+    },
+    {
+      "claim_id": "8af450ce-2777-49ec-a684-e004a779cda3",
+      "result_id": "214dc930-a832-4e64-b704-49d1e3c4d065"
+    },
+    {
+      "claim_id": "7f1bd7e8-3a93-4fd1-bf36-862f0be66211",
+      "result_id": "24f2948b-7180-4fea-960e-f7e887e71e39"
+    },
+    {
+      "claim_id": "76e8d396-90dc-46c6-90a6-7c609cbc9846",
+      "result_id": "24f2948b-7180-4fea-960e-f7e887e71e39"
+    },
+    {
+      "claim_id": "96c09525-60b5-473e-9132-ee8a41ab7abc",
+      "result_id": "24f2948b-7180-4fea-960e-f7e887e71e39"
+    },
+    {
+      "claim_id": "15b02366-bf1b-459a-a45b-531a7990b0ea",
+      "result_id": "24f2948b-7180-4fea-960e-f7e887e71e39"
+    },
+    {
+      "claim_id": "7d2b303b-c03e-4a5d-9d7d-539c6069df2f",
+      "result_id": "24f2948b-7180-4fea-960e-f7e887e71e39"
+    },
+    {
+      "claim_id": "fc7384e8-2849-4816-94c5-2ba90a82b82a",
+      "result_id": "24f2948b-7180-4fea-960e-f7e887e71e39"
+    },
+    {
+      "claim_id": "ea05dcaf-e43c-4dcb-a4d0-8623c97eb06a",
+      "result_id": "40934048-3b3b-456d-bdb5-eeb3a8e06948"
+    },
+    {
+      "claim_id": "c7fb9fc2-d3da-4f7e-8198-fe363e22fd02",
+      "result_id": "40934048-3b3b-456d-bdb5-eeb3a8e06948"
+    },
+    {
+      "claim_id": "42a72d91-97d3-4ca4-a7e2-cb03e2f65542",
+      "result_id": "40934048-3b3b-456d-bdb5-eeb3a8e06948"
+    },
+    {
+      "claim_id": "6f1c3422-0eb5-4d0f-8485-5f4bc4d29760",
+      "result_id": "40934048-3b3b-456d-bdb5-eeb3a8e06948"
+    },
+    {
+      "claim_id": "c9a0ee5c-5cd7-4945-8965-ba6a3ae6f3a8",
+      "result_id": "40934048-3b3b-456d-bdb5-eeb3a8e06948"
+    },
+    {
+      "claim_id": "756eb272-a403-45cd-b612-c499b2717e39",
+      "result_id": "40934048-3b3b-456d-bdb5-eeb3a8e06948"
+    },
+    {
+      "claim_id": "22f462ae-0a8d-467d-847f-1f513c9c6a42",
+      "result_id": "40934048-3b3b-456d-bdb5-eeb3a8e06948"
+    },
+    {
+      "claim_id": "246bf1f2-4429-4a50-ad92-73bf8fe260f7",
+      "result_id": "3c88ce98-5995-4b3c-9fc7-b4d9abf69083"
+    },
+    {
+      "claim_id": "6755445a-e778-4606-b260-d39022d09d58",
+      "result_id": "3c88ce98-5995-4b3c-9fc7-b4d9abf69083"
+    },
+    {
+      "claim_id": "875422f1-18c9-4b12-9050-804ddbf0a0e7",
+      "result_id": "3c88ce98-5995-4b3c-9fc7-b4d9abf69083"
+    },
+    {
+      "claim_id": "36ed82b5-36c4-4528-95d4-c7e8f3e17b91",
+      "result_id": "3c88ce98-5995-4b3c-9fc7-b4d9abf69083"
+    },
+    {
+      "claim_id": "da60c872-cfa7-4d48-925a-eeb7b78460da",
+      "result_id": "3c88ce98-5995-4b3c-9fc7-b4d9abf69083"
+    },
+    {
+      "claim_id": "562e46c7-8c74-404b-82a6-478b1659d664",
+      "result_id": "3c88ce98-5995-4b3c-9fc7-b4d9abf69083"
+    },
+    {
+      "claim_id": "6e695c36-eeb4-4071-bf05-8501feda1c22",
+      "result_id": "3c88ce98-5995-4b3c-9fc7-b4d9abf69083"
+    },
+    {
+      "claim_id": "9f992bff-cedb-4b14-afe9-bf077eb46574",
+      "result_id": "3c88ce98-5995-4b3c-9fc7-b4d9abf69083"
+    },
+    {
+      "claim_id": "9615c805-31ca-42b8-9585-e78f52378977",
+      "result_id": "3c88ce98-5995-4b3c-9fc7-b4d9abf69083"
+    },
+    {
+      "claim_id": "534de655-e77a-411f-a58b-859e2fd5fe55",
+      "result_id": "86cf7823-a940-4c62-97aa-b33ac5d34fed"
+    },
+    {
+      "claim_id": "05774d6d-e5eb-44ae-8efb-04109498f396",
+      "result_id": "86cf7823-a940-4c62-97aa-b33ac5d34fed"
+    },
+    {
+      "claim_id": "9f0f86e5-f8c0-4216-9ff9-e8de9770f4e0",
+      "result_id": "86cf7823-a940-4c62-97aa-b33ac5d34fed"
+    },
+    {
+      "claim_id": "b7c5a58a-9452-426a-b49b-f70c90ef1ac4",
+      "result_id": "86cf7823-a940-4c62-97aa-b33ac5d34fed"
+    },
+    {
+      "claim_id": "d3a8db28-f252-4448-8039-59209b0a3153",
+      "result_id": "86cf7823-a940-4c62-97aa-b33ac5d34fed"
+    },
+    {
+      "claim_id": "523652c3-2152-4300-8bd4-b56cf9c07b6b",
+      "result_id": "ec032420-8c60-42ca-8c9b-3c7c955bfa81"
+    },
+    {
+      "claim_id": "1b5d93b5-b985-4be1-8247-e9588c0ea050",
+      "result_id": "ec032420-8c60-42ca-8c9b-3c7c955bfa81"
+    },
+    {
+      "claim_id": "5e1e51c2-1261-4210-a289-0aa8b9f85c5e",
+      "result_id": "ec032420-8c60-42ca-8c9b-3c7c955bfa81"
+    },
+    {
+      "claim_id": "43f84e1f-c0f3-41f1-bd12-db50eead4713",
+      "result_id": "c61d7c4a-3e55-4458-9322-999da65e49d5"
+    },
+    {
+      "claim_id": "86b79036-58b6-4697-b865-9d524e91a195",
+      "result_id": "c61d7c4a-3e55-4458-9322-999da65e49d5"
+    },
+    {
+      "claim_id": "d4f62ad4-3732-4576-9f36-7410a9cfbbf9",
+      "result_id": "c61d7c4a-3e55-4458-9322-999da65e49d5"
+    },
+    {
+      "claim_id": "1f965a31-1b0d-468a-b47b-224c5e8e4f0d",
+      "result_id": "c61d7c4a-3e55-4458-9322-999da65e49d5"
+    },
+    {
+      "claim_id": "ad04853a-0592-4bb1-ab10-e2b589524201",
+      "result_id": "c61d7c4a-3e55-4458-9322-999da65e49d5"
+    },
+    {
+      "claim_id": "67e0b173-0d88-4cac-96f9-09841b0be820",
+      "result_id": "c61d7c4a-3e55-4458-9322-999da65e49d5"
+    }
+  ],
+  "comparisons": []
+}

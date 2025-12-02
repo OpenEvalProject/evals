@@ -1,0 +1,1708 @@
+{
+  "submission": {
+    "id": "969f760a-8c60-441c-ba3c-caf3ae782048",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:07:58.539614Z",
+    "updated_at": "2025-12-02T11:07:58.539614Z"
+  },
+  "content": [
+    {
+      "id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "submission_id": "969f760a-8c60-441c-ba3c-caf3ae782048",
+      "content_type": "manuscript",
+      "content_text": "# The CUL5 ubiquitin ligase complex mediates resistance to CDK9 and MCL1 inhibitors in lung cancer cells\n\n## Authors\n\n- Shaheen Kabir<sup>1</sup> ([ORCID: 0000-0002-9035-1124](https://orcid.org/0000-0002-9035-1124))\n- Justin Cidado<sup>4</sup>\n- Courtney Andersen<sup>4</sup> ([ORCID: 0000-0003-2064-2273](https://orcid.org/0000-0003-2064-2273))\n- Cortni Dick<sup>4</sup>\n- Pei-Chun Lin<sup>1</sup>\n- Therese Mitros<sup>1</sup>\n- Hong Ma<sup>1</sup>\n- Seung Hyun Baik<sup>1</sup>\n- Matthew A Belmonte<sup>4</sup>\n- Lisa Drew<sup>4</sup>\n- Jacob E Corn<sup>1</sup> ([ORCID: 0000-0002-7798-5309](https://orcid.org/0000-0002-7798-5309)) \u2020\n\n### Affiliations\n\n1. Innovative Genomics Institute University of California, Berkeley Berkeley United States\n2. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n3. Helen Diller Family Comprehensive Cancer Center University of California, San Francisco San Francisco United States\n4. Bioscience Oncology, IMED Biotech Unit AstraZeneca Waltham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOverexpression of anti-apoptotic proteins MCL1 and Bcl-xL are frequently observed in many cancers. Inhibitors targeting MCL1 are in clinical development, however numerous cancer models are intrinsically resistant to this approach. To discover mechanisms underlying resistance to MCL1 inhibition, we performed multiple flow-cytometry based genome-wide CRISPR screens interrogating two drugs that directly (MCL1i) or indirectly (CDK9i) target MCL1. Remarkably, both screens identified three components (CUL5, RNF7 and UBE2F) of a cullin-RING ubiquitin ligase complex (CRL5) that resensitized cells to MCL1 inhibition. We find that levels of the BH3-only pro-apoptotic proteins Bim and Noxa are proteasomally regulated by the CRL5 complex. Accumulation of Noxa caused by depletion of CRL5 components was responsible for re-sensitization to CDK9 inhibitor, but not MCL1 inhibitor. Discovery of a novel role of CRL5 in apoptosis and resistance to multiple types of anticancer agents suggests the potential to improve combination treatments.\n\n## Introduction\n\nCancer cells frequently manipulate the intrinsic apoptotic pathway to evade cell death and expand their proliferative capacity. Aberrant increases in levels of anti-apoptotic proteins in the BCL-2 family, such as amplification of MCL1, have been widely implicated in the transformation of cancer cells and the development of resistance to current therapies (Kelly and Strasser, 2011). BCL-2 family members are classified based on the conservation of their BCL-2 homology (BH) domains: multi-domain proteins BAK, BAX and BOK serve as apoptosis executors in the mitochondria; proteins containing only the BH3 domain (BH3-only) promote BAK/BAX activation. Anti-apoptotic proteins such as MCL1, Bcl-xL and BCL-2 inhibit apoptosis by antagonistic binding to pro-apoptotic BH3-only proteins as well as BAK and BAX (Czabotar et al., 2014).\n\nHigh-resolution investigation of somatic copy number alterations has revealed that gene amplification of MCL1 and BCL2L1 (Bcl-xL) are key determinants of survival in many cancers, including breast cancer, non-small cell lung cancer (NSCLC), multiple myeloma, acute myeloid leukemia, and B-cell acute lymphoblatic leukemia (Goodwin et al., 2015; Koss et al., 2013; Xiao et al., 2015; Zhang et al., 2011). Amplification of MCL1 is a prognostic indicator for disease severity and progression, making it an attractive therapeutic target (Campbell et al., 2018; Yin et al., 2016).\n\nIn an effort to restrict the action of anti-apoptotic proteins, numerous compounds have been developed that mimic BH3-only proteins (BH3-mimetics). Unfortunately, the first BH3-mimetics that specifically antagonized Bcl-xL were associated with significant thrombocytopenia, thus complicating their therapeutic use (Lessene et al., 2013; Leverson et al., 2015a; Tao et al., 2014). Small-molecule inhibition of MCL1 has recently gained significant attention (Figure 1A), and compounds that selectively target MCL1 are currently in clinical trials (Abulwerdi et al., 2014; Burke et al., 2015; Caenepeel et al., 2018; Kotschy et al., 2016; Leverson et al., 2015b; Tron et al., 2018;\u00a0Phase I Study of S64315 Administred Intravenously in Patients With Acute Myeloid Leukaemia or Myelodysplastic Syndrome).\u00a0Promising reports of direct BH3-mimetic MCL1 inhibitors in preclinical hematological malignancies show potent efficacy with low cytotoxicity (Kotschy et al., 2016; Leverson et al., 2015b). However, assessment of MCL1 inhibitors in solid breast tumors showed little single agent activity unless combined with a chemotherapeutic agent (Merino et al., 2017). Co-dosing Bcl-xL and MCL1 inhibitors to achieve effective treatment may be complicated by severe accompanying side effects.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44288/elife-44288-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic illustrating the mechanism of action of CDK9 and MCL1 inhibitors. The CDK9 inhibitor (CDK9i) inhibits transcription elongation, thus mRNAs with short half-lives such as MCL1 are highly susceptible to acute CDK9 inhibition. The MCL1 inhibitor (MCL1i) is a BH3-mimetic that binds directly to MCL1. (B) Graphical representation of a panel of cell lines depicting their MCL1 copy number, their ratio of MCL1:Bcl-xL protein and whether they are sensitive to the drug treatment indicated. EC50 values plotted for a 6 hr CDK9i treatment (top graph) derived from Caspase-Glo 3/7 assays. GI50 values plotted for a 24 hr MCL1i treatment (bottom graph) using CellTiter-Glo. Maroon circles indicate cell lines resistant to drug despite being MCL1-amplified. Highlighted in bright red is a resistant cell line (LK2) used for further study in this report and a sensitive cell line (H23) is shown in gray. (C) Dose response curves of LK2 and H23 treated with CDK9i (top) and MCL1i (bottom). Caspase activation was measured at 6 hr post drug treatment at the indicated concentrations by CaspaseGlo 3/7 and normalized to a positive control containing inhibitors of MCL1, BCL2 and Bcl-xL. (D) Cell viability curves of the resistant LK2 and sensitive H23 lines 24 hr following drug treatment with CDK9i (top) or MCL1 (bottom) at increasing concentrations as indicated. Viability was measured using the Cell Titer Glo assay normalized to a DMSO control.\n\nBeyond direct inhibitors of the BCL2 family of proteins, inhibitors of cyclin-dependent kinase 9 (CDK9) can indirectly target MCL1. CDK9 inhibition restricts transcription elongation thus exploiting all mRNAs and proteins that have short-lived half-lives. Due to its short half-life, MCL1 is one of several targets that is particularly susceptible to acute CDK9i treatment, and other (proto-)oncogenes such as MYC are also CDK9i targets (Figure 1A) (Akgul et al., 2000; Gregory et al., 2015; Huang et al., 2014a; Lemke et al., 2014). Although CDK9 inhibition suppresses MCL1 expression, it does not affect levels of other anti-apoptotic proteins such as Bcl-xL, exposing a potential vulnerability in CDK9i treatment such that cancers may already have or develop a mode of resistance. Selective CDK9 inhibitors have shown promising results in preclinical murine models; however, they have a limited therapeutic window and must be acutely dosed for clinical applications due to their global effects on transcription (Garcia-Cuellar et al., 2014; Hellvard et al., 2016). In order to truly harness the power of CDK9 inhibitors (CDK9i) or MCL1 inhibitors (MCL1i), it is imperative to uncover additional targets that may sensitize cells to these treatments.\n\nSince CDK9i shares at least one of its targets with MCL1i, we reasoned that a genome wide search could uncover shared factors that modulate the therapeutic activity of these compounds and suggest approaches to resensitize otherwise resistant tumor cells. As lung cancer is the leading cause of cancer mortality and most NSCLC patients develop resistance to first-line treatment, we performed genome-wide CRISPR inhibition (CRISPRi) screens in a NSCLC line resistant to both CDK9 and MCL1 inhibition (Siegel et al., 2016). We discovered that disruption of multiple members of the cullin 5-RING ubiquitin ligase (CRL5) complex markedly resensitized cells to both CDK9i and MCL1i. The CRL5 complex targets pro-apoptotic BH3-only proteins Bim and Noxa for proteasomal degradation. Epistatic knockdown of Bim or Noxa in a CUL5 knockout background rendered cells once again resistant to CDK9i, but did not affect increased sensitivity to MCL1i. Our data indicate that members of the CRL5 complex modulate the apoptotic threshold and could be attractive targets for future combination therapy to treat otherwise resistant NSCLC.\n\n## Results\n\n### MCL1-amplified NSCLC lines resistant to CDK9i and MCL1i have increased Bcl-xL\n\nWe assessed a panel of NSCLC lines for their sensitivity to CDK9i (AZD5576) or MCL1i (AZD5991) (Figure 1B and Table 1). Several cell lines with amplified MCL1 (copy number\u00a0\u22653) were highly sensitive to CDK9i and MCL1i, consistent with overexpression of MCL1 to escape apoptosis. We also found several NSCLC lines resistant to CDK9i and MCL1i despite being MCL1-amplified. Increased Bcl-xL expression correlated with the MCL1-amplified lines that were resistant to CDK9i and MCL1i. Conversely, MCL1-amplified cell lines with low levels of Bcl-xL were sensitive to CDK9i and MCL1i.\n\n**Table 1.**\n A subset of resistant and sensitive NSCLC lines.For each cell line, the table indicates MCL1 copy number, MCL1:Bcl-xL protein ratio and EC50 concentrations for both CDK9i and MCL1i treatments.\u00a0Resistant cell lines are in dark pink shaded rows; sensitive cell lines are in light pink shaded rows.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>MCL1 copy number</th>\n      <th>Mcl1:BclxL protein ratio</th>\n      <th>MCL1i GI50 (\u03bcM)</th>\n      <th>MCL1i caspase EC50 (\u03bcM)</th>\n      <th>CDK9i caspase EC50 (\u03bcM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SKLU1</td>\n      <td>1.5</td>\n      <td>0.41</td>\n      <td>10.000</td>\n      <td>30.000</td>\n      <td>30.000</td>\n    </tr>\n    <tr>\n      <td>HCC827</td>\n      <td>2.3</td>\n      <td>4.38</td>\n      <td>10.000</td>\n      <td>30.000</td>\n      <td>30.000</td>\n    </tr>\n    <tr>\n      <td>H460</td>\n      <td>3.2</td>\n      <td>16.58</td>\n      <td>10.000</td>\n      <td>30.000</td>\n      <td>30.000</td>\n    </tr>\n    <tr>\n      <td>H1734</td>\n      <td>3.6</td>\n      <td>2.63</td>\n      <td>6.150</td>\n      <td>20.056</td>\n      <td>30.000</td>\n    </tr>\n    <tr>\n      <td>LK2</td>\n      <td>4.7</td>\n      <td>3.71</td>\n      <td>7.040</td>\n      <td>30.000</td>\n      <td>30.000</td>\n    </tr>\n    <tr>\n      <td>H1395</td>\n      <td>6.6</td>\n      <td>3.79</td>\n      <td>10.000</td>\n      <td>15.404</td>\n      <td>30.000</td>\n    </tr>\n    <tr>\n      <td>H23</td>\n      <td>3.1</td>\n      <td>39.59</td>\n      <td>0.383</td>\n      <td>0.198</td>\n      <td>0.183</td>\n    </tr>\n    <tr>\n      <td>H2110</td>\n      <td>3.9</td>\n      <td>18.29</td>\n      <td>0.113</td>\n      <td>0.226</td>\n      <td>0.270</td>\n    </tr>\n    <tr>\n      <td>H1568</td>\n      <td>6.5</td>\n      <td>14.26</td>\n      <td>0.111</td>\n      <td>0.3</td>\n      <td>0.151</td>\n    </tr>\n  </tbody>\n</table>\n\nBoth MCL1i and CDK9i induce apoptosis and cell death in a sensitive cell line (H23) after just 6 hr, with saturated cell death and caspase activation at 1 \u03bcM. Conversely, a resistant line (LK2) was about 100-fold more resistant to CDK9i and MCL1i (Figure 1C). After extended treatment (24 hr), CDK9i induced a significant decrease in cell viability in both the resistant and sensitive cell lines, highlighting off-target toxicity presumably stemming from global transcriptional arrest independent of targeting short half-life transcripts such as MCL1 and MYC (Figure 1D). This emphasizes the need for a tightly regulated treatment window for CDK9i to avoid non-specific cell death.\n\n### Genome-wide CRISPRi screens identify factors that synergize with CDK9 and MCL1 inhibition\n\nWhile Bcl-xL amplification correlates with resistance to MCL1-targeting drugs, preclinical studies suggest dual inhibition of MCL1 and Bcl-xL may not be a clinically viable option due to toxic side effects. We sought to identify alternate pathways that could resensitize resistant LK2 lung cancer cells to CDK9i or MCL1i. Prolonged CDK9i treatment induces non-specific cell death, possibly due to its polypharmacology, and so a growth-based screen measuring cell abundance after extended compound exposure was inappropriate. Instead, we developed a positive selection FACS-based screen for apoptosis during acute exposure to maximize on-target cell death and minimize non-specific cell death (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44288/elife-44288-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic outlining the genome-wide CRISPRi screen in LK2 cells. Cells were exposed to acute drug treatments, fixed and FACS-sorted using the fluorogenic apoptotic detection reagent Cell Event. Enriched and depleted sgRNAs were identified by next-generation sequencing. (B\u00a0+\u00a0C) Volcano plots showing sgRNA-targeted genes significantly enriched or depleted in the apoptosing cell population following treatment with CDK9i (B) or MCL1i (C). Average of two independent experiments is graphed. Green highlighted points indicate genes with a known role in apoptosis that had a significant fold change over background. Magenta points highlight members of the CUL5-RNF7-UBE2F ubiquitin complex that were significantly enriched. Beige highlighted points are members of the Eukaryotic Translation Initiation Factor 3 (eIF3) complex. Blue point on CDK9i volcano plot highlights EIF4G2, a gene that may be involved in cap-independent translation of Bcl-xL.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44288/elife-44288-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Bar graph showing knockdown of five genes by qRT-PCR to confirm functionality of the dCas9-KRAB CRISPRi construct in an isolated clone of LK2 cells. (B) Volcano plots (as in Figure 2B) showing significantly enriched and depleted genes when treated with CDK9i (top), MCL1 (middle) and DMSO (bottom). Black dots indicate targeted genes. Gray dots indicate negative control pseudogenes with non-targeting guides. Highlighted points of different colors show genes with significant fold changes with annotated roles in apoptosis (green), factors of the CUL5-RNF7-UBE2F ubiquitin complex (magenta), and members of the eIF3 complex (beige). (C) Venn diagram of overlapping hits between CDK9i and MCL1i screens as determined by MAGeCK analysis using a threshold of p<0.01 and FDR\u00a0<\u00a00.25. Number of hits listed in circles. (D\u00a0+\u00a0E) Relative sgRNA enrichment was also determined by the MAGeCK analysis pipeline. Top 10 targeted genes following CDK9i and MCL1i treatment are shown in (D) and (E), respectively. sgRNAs targeting members of the CUL5-RNF7-UBE2F complex (outlined in magenta box) were once again identified as enriched and were amongst the most significant hits.\n\nWe exposed a clonal LK2 CRISPRi cell line transduced with a genome-wide CRISPRi-v2 guide RNA library (Materials\u00a0and\u00a0methods and Figure 2A)\u00a0to either 3 \u03bcM CDK9i for 6 hr or 1 \u03bcM MCL1i for 12 hr. Per-cell apoptosis was assayed with 0.5 \u03bcM Cell Event, which fluoresces upon cellular caspase activation, and apoptosing cells were separated by genome-scale fluorescence activated cell sorting (FACS). To identify vehicle effects, we also performed duplicate genome-wide sorts with DMSO. Bulk untreated cells were harvested on the same day as the FACS sort to provide an accurate \u2018background\u2019 sampling of sgRNAs and eliminate confounding effects from essential genes that had dropped out of the population. We measured quantitative differences in sgRNA frequency by deep sequencing and integrated enriched or depleted sgRNAs into gene-level hits by comparing sorted samples to the untreated control using ScreenProcessing (Figure 2\u2014source datas 1\u20133) and MAGeCK (Figure 2\u2014source datas 4\u20137) (Horlbeck et al., 2016; Li et al., 2014).\n\nNo significant gene-level hits were detected in the DMSO control (Figure 2\u2014figure supplement 1B), indicating that gene calls in CDK9i- or MCL1i-treated samples were derived from drug action. We found multiple sgRNAs targeting Bcl-xL led to re-sensitization of LK2 cells to CDK9i and MCL1i (Figure 2B\u2013C), confirming reports that depletion of both MCL1 and Bcl-xL initiates apoptosis (Goodwin et al., 2015; Xiao et al., 2015; Zhang et al., 2011). Downregulation of the mitochondrial porin VDAC2 also promoted apoptosis in drug-treated cells (Figure 2B\u2013C), consistent with its proposed role in BAK/BAX sequestration at the mitochondrial membrane (Cheng et al., 2003; Chin et al., 2018; Lauterwasser et al., 2016). EIF4G2 (DAP5) was identified as a hit in the CDK9i screen (Figure 2B), and this gene has been implicated in stimulating cap-independent translation of anti-apoptotic protein BCL-2 (Marash et al., 2008).\n\nComparing the most significantly enriched genes from both screens showed an overlap between MCL1i and CDK9i. The CDK9i screen had many more hits, consistent with its polypharmacology of transcriptional inhibition (Figure 2\u2014figure supplement 1C). Despite separate mechanisms of drug action and potentially distinct targets, significantly more of the top resensitization hits were shared between CDK9i and MCL1i than are expected by chance (exact hypergeometric test p<6.4\u00d710\u22129). These shared hits are part of two physical complexes, one potentially involved in specialized translation and the other involved in protein degradation. First, knockdown of multiple components of the eukaryotic translation initiation factor 3 (eIF-3) complex (EIF3H and EIF3M) resensitize LK2 cells to CDK9i and MCL1i (Figure 2B\u2013C and Figure 2\u2014figure supplement 1D\u2013E). eIF-3 is reported to bind a highly specific program of messenger RNAs involved in cell proliferation and apoptosis (Lee et al., 2015). We speculate that this complex could be involved in mediating translational activation of certain anti-apoptotic proteins or repression of pro-apoptotic proteins. Regulation of apoptosis by eIF-3 warrants further investigation, but we opted to focus on the second, better-studied complex.\n\nKnockdown of multiple members of a cullin-RING ubiquitin ligase complex (CRL) including CUL5, UBE2F and RNF7 resensitize LK2 cells to CDK9i and MCL1i (Figure 2B\u2013C and Figure 2\u2014figure supplement 1D\u2013E). The cullin 5 (CUL5) scaffold was identified as a top resensitizing hit in both screens. Repression of UBE2F was a sensitizing hit in the MCL1i screen (Figure 2C and Figure 2\u2014figure supplement 1E). Knockdown of Ring Finger Protein 7 (RNF7), a catalytic subunit that binds to the CUL5 scaffold, also sensitizes cells to both CDK9i and MCL1i (Figure 2\u2014figure supplement 1D\u2013E).\n\n### Depletion of the CUL5-RNF7-UBE2F ubiquitin ligase complex resensitizes LK2 cells to treatment with CDK9i or MCL1i\n\nCullin-RING ligases are emerging as attractive cancer targets and a novel class of small molecule neddylation inhibitors have recently been developed (Soucy et al., 2009). While the cullin 3 complex (CRL3) is more typically associated with cancer phenotypes, there is little data on the function of CRL5 in tumorigenesis or resistance. We therefore sought to further examine the role of the CRL5 complex in resensitizing LK2 cells to CDK9 and MCL1 inhibition.\n\nCUL5 serves as a protein scaffold in the CRL5 complex, forming a platform for RNF7, UBE2F, Elongin B/C, and a substrate adaptor to recruit and ubiquitinate a target substrate (Figure 3A) (Kamura et al., 2004) (Huang et al., 2009) (Mahrour et al., 2008; Okumura et al., 2016). We made stable dCas9-KRAB LK2 cell lines that expressed an individual CRISPRi sgRNA to knockdown CUL5, RNF7, UBE2F, or a non-targeting (NT) control (Figure 3B). CUL5 and RNF7 appeared to be dependent on each other for stability such that when either protein was knocked down, levels of the corresponding protein were also diminished (Figure 3C). Depletion of UBE2F resulted in the disappearance of a higher molecular weight band corresponding to neddylated CUL5 (Figure 3B\u2013C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44288/elife-44288-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic depicting the CUL5 ubiquitin ligase scaffold and its interacting partners. (B) Western blots confirming effective knockdown of CUL5, RNF7 and UBE2F by stable lentiviral expression of dCas9-KRAB and corresponding sgRNAs. Asterisk indicates neddylated CUL5. GAPDH serves as loading control. (C) Quantification of western blots as in B. Error bars show standard deviations from three independent biological replicates. (D) Induction of apoptosis when cells depleted of CUL5, RNF7 or UBE2F as in (B) are treated with CDK9i (3 \u03bcM for 6 hr), MCL1i (1 \u03bcM for 12 hr) or DMSO. Knockdown of Bcl-xL serves as a positive control for induction of apoptosis. Percentage of apoptosis determined by flow cytometry detection of the fluorogenic apoptotic detection reagent, Cell Event. Error bars are standard deviations of three independent biological replicates. (E) Western blotting for cleaved PARP (c-PARP) serves as orthogonal readout for induction of apoptosis following knockdown of target genes and treatment with 3 \u03bcM CDK9i for 6 hr or 1 \u03bcM MCL1i for 12 hr. Knockdown of Bcl-xL is included as a positive control, however due to extreme toxicity of the combination treatment, cells were harvested 3 hr after treatment with 3 \u03bcM CDK9i or 0.5 hr after treatment with 1 \u03bcM MCL1i. GAPDH, loading control. (F) Dose response curves of caspase induction showing resensitization of CUL5 knockout (CUL5-KO c3) and UBE2F knockout (UBE2F-KO c1) lines as compared to parental LK2 cells when treated with CDK9i (top) and MCL1i (bottom). Caspase activation was measured at 10 hr post drug treatment at the indicated concentrations by CaspaseGlo 3/7 and normalized to a positive control containing inhibitors of MCL1, BCL2 and Bcl-xL. (G) Colony forming potential is decreased in CUL5-KO and UBE2F-KO as compared to parental LK2 cells after 1 \u00b5M treatment with CDK9i or MC1i for 8 hr. Representative images shown of colonies stained 2 weeks after drug treatment with 0.5% crystal violet in 6% glutaraldehyde. Experiments performed in triplicate. (H) Quantification of colonies as in (G), error bars represent standard deviations of three independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44288/elife-44288-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Induction of apoptosis when cells are depleted of CUL5, RNF7, UBE2F or Bcl-xL with an additional set of sgRNAs than those used in Figure 3D and are treated with CDK9i (3 \u03bcM for 6 hr), MCL1i (1 \u03bcM for 12 hr) or DMSO. Percentage of apoptosis determined by flow cytometry for detection of the fluorogenic apoptotic detection reagent Cell Event. Error bars are standard deviations of three biological replicates. (B) Western blotting validating loss of CUL5 and UBE2F protein in the three CUL5-KO clones and one UBE2F-KO clone, respectively. As shown before, protein levels of RNF7 are also reduced when CUL5 is absent. GAPDH, loading control. (C) Sanger sequencing traces of the alleles generated in the CUL5 and UBE2F knockouts. Exon 1 size is indicated, and resulting deletions are shown. (D) CUL5-KO and UBE2F-KO clones were treated with 3 \u03bcM CDK9i for 6 hr or 1 \u03bcM MCL1i for 12 hr. Percent apoptosis determined using Cell Event detection by flow cytometry. Error bars derived from standard deviations of three biological replicates.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44288/elife-44288-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) qRT-PCR to confirm efficient knockdown of Elongin B and Elongin C. (B) Knockdown of Elongin B (EloB), but not Elongin C (EloC), elicits similar levels of apoptosis as compared to CUL5-knockdown when treated with CDK9i or MCL1i. Apoptosis measured by Cell Event, error bars are standard deviations of three biological replicates. (C) Plotted are percentages of apoptosis as determined by flow cytometry measuring Cell Event fluorescence after 3 \u03bcM drug treatment for 6 hr, as indicated on the X-axis. Each dot corresponds to an individual CRISPRi gene knockdown. Non-target (NT) sgRNA serves as the negative control (white) and CUL5 knockdown serves as the positive control (magenta). (D) Western blot for p53 in NT and CUL5-depleted cells treated with DMSO, CDK9i (3 \u03bcM for 6 hr) or MCL1i (1 \u03bcM for 12 hr). GAPDH serves as loading control. (E) Western blot of MCL1 and Bcl-xL in LK2 and CUL5-KO c1 cells treated with DMSO, CDK9i or MCL1i. HSP90 serves as loading control.\n\nUsing two independent stable LK2 CRISPRi lines targeting CUL5, RNF7, UBE2F or Bcl-xL, we validated that individual knockdowns of each gene resensitized the cell to both MCL1i and CDK9i (Figure 3D and Figure 3\u2014figure supplement 1A). Bcl-xL served as a positive control based on previous reports that dual inhibition of Bcl-xL and MCL1 induces apoptosis (Goodwin et al., 2015; Xiao et al., 2015; Zhang et al., 2011). Assessing cleaved PARP (c-PARP) levels, we found that depletion of CUL5, RNF7, UBE2F or Bcl-xL significantly induced PARP cleavage when combined with CDK9i or MCL1i (Figure 3E). In the absence of drug, knockdown of Bcl-xL alone led to substantial apoptosis but this was not the case for knockdown of CUL5, RNF7 or UBE2F (Figure 3E). This suggests that inactivation of CRL5 could be less toxic than inhibition of Bcl-xL and that inhibition of CRL5 may be better suited to co-administration with CDK9 and MCL1 inhibitors.\n\nTo further validate the synergy between inhibition of CRL5 and CDK9i or MCL1i, we made isogenic CRISPR-Cas9 knockouts of CUL5 and UBE2F in the LK2 background (Materials\u00a0and\u00a0methods and Figure 3\u2014figure supplement 1B\u2013C). Cells did not tolerate extended culturing of CRISPRi-mediated stable knockdowns of RNF7, but knockouts of CUL5 and UBE2F were viable. Challenging CUL5 or UBE2F knockout cells with CDK9i or MCL1i induced high levels of apoptosis at 1 \u03bcM of either compound, whereas wild type cells showed no response even at 10 \u03bcM (Figure 3F, Figure 3\u2014figure supplement 1D). To assess effects on long-term survival and proliferation, we performed clonogenic assays where the CUL5 and UBE2F knockout clones were exposed to an acute treatment of CDK9i or MCL1i (Figure 3G\u2013H). Drug treatment greatly reduced colony-forming ability in the CUL5 and UBE2F knockout cells, indicating efficient and persistent resensitization of these cells. Taken together, multiple lines of evidence indicate that the resistance of LK2 cells to both CDK9 and MCL1 inhibition can be overcome by depletion of the CRL5 complex.\n\nTo further investigate how CRL5 protects LK2 cells from CDK9i and MCL1i, we asked whether depletion of Elongin B and Elongin C also synergized with these drugs. Individual knockdown of Elongin B by CRISPRi-induced apoptosis at levels similar to that of CUL5 knockdown, but knockdown of Elongin C had minimal effect (Figure 3\u2014figure supplement 2A\u2013B). Elongin B and C have often been described as functioning in a complex, but our results suggest a potential separation of function (Okumura et al., 2012).\n\nIn an attempt to find the CRL5 substrate adaptor responsible for resensitization to MCL1 and CDK9 inhibitors, we used CRISPRi to individually knock down a large number of CUL5 substrate adaptors annotated in literature and tested them for synergy with MCL1i and CDK9i (Okumura et al., 2016). None of the literature-proposed substrate adaptors analyzed induced apoptosis following CDK9i or MCL1i treatment (Figure 3\u2014figure supplement 2C and Figure 3\u2014source data 1),\u00a0but we cannot rule out redundancy between substrate adaptors. The CRL5 substrate adaptors responsible for resensitization to MCL1 inhibition remain to be identified.\n\n### The CRL5 complex regulates levels of the BH3-only apoptotic sensitizers Bim and Noxa\n\nWe searched for the substrate of CRL5 that potentiates resensitization to CDK9 or MCL1 inhibition. p53, a master regulator of apoptosis, can be a target of CRL5 during viral infection (Cai et al., 2006; Querido et al., 2001; Sato et al., 2009). However, loss of CUL5 did not lead to accumulation of p53 (Figure 3\u2014figure supplement 2D), nor affected MCL1 and Bcl-xL levels (Figure 3\u2014figure supplement 2E).\n\nPro-apoptotic proteins are required for efficient induction of cell death, and CRL5 could target pro-apoptotic proteins for proteasomal degradation. Indeed, Noxa was recently proposed to be a substrate of CRL5 (Zhou et al., 2017). We interrogated the levels of all eight BH3-only proteins using individual CRISPRi knockdowns of CUL5, RNF7, UBE2F and a NT control. Knockdown of CRL5 components increased protein levels of two BH3-only proteins, Noxa and Bim (Figure 4A). After treatment with CDK9i or MCL1i, we also found that CUL5 knockdown had increased levels of both proapoptotic proteins Noxa and Bim while all other BH3-only proteins remained unchanged (Figure 4B\u2013C). Interestingly, CDK9i treatment alone reduced levels of Noxa and Bim through transcriptional downregulation, presumably related to the half-lives of these mRNAs (Figure 4D). Knockdown of CUL5 together with CDK9i rescued protein levels of Noxa and Bim but not mRNA levels, consistent CRL5-mediated post-translational degradation of Noxa and Bim.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44288/elife-44288-fig4-v3.jpg)\n\n**Figure 4.:** (A) Western blotting of all BH3-only proteins in cell lines with depleted CUL5, RNF7 or UBE2F show increased levels of Bim and Noxa as compared to cells transduced with a non-targeting (NT) sgRNA. GAPDH serves as the loading control. Blots are representative of three independent biological replicates. (B) Western blot of all BH3-only proteins in NT and CUL5-depleted cells treated with DMSO, CDK9i (3 \u03bcM for 6 hr) or MCL1i (1 \u03bcM for 12 hr). Tubulin serves as loading control. Blots are representative of three independent biological replicates. (C) Quantification of western blots as in (B). Error bars derived from standard deviations of three biological replicates consisting of independently treated and isolated protein samples. Asterisk indicates p value\u00a0<\u00a00.05 as determined by a paired student T-Test. (D) qRT-PCR showing relative mRNA levels of Noxa, Bim and MCL1 in LK2 parental and CUL5-KO c1 cells treated with DMSO, CDK9i (3 \u03bcM for 6 hr) or MCL1i (3 \u03bcM for 6 hr). Error bars show standard deviations from three biological replicates on independently treated and isolated RNA samples. (E) Western blot of LK2 and CUL5-KO c1 cells treated for 6 hr with epoxomicin (100 \u03bcM), or folimycin (100 \u03bcM) or both epoxomicin and folimycin (100 \u03bcM each). GAPDH, loading control. Blots are representative of three independent biological replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44288/elife-44288-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) LK2 and CUL5-KO c1 cells were transiently transfected with HA-Noxa and His-Ubiquitin. 48 hr following transfection cells were incubated with 100 \u03bcM epoxomicin for 8 hr and subsequently harvested for immunoprecipitations (IP) with anti-HA or Ni-NTA. Western blot show 1% input and 50% of IP loaded and probed with the indicated antibodies. (B) LK2 and CUL5-KO c1 cells were transiently transfected with HA-Bim and His-Ubiquitin. 48 hr following transfection cells were incubated with 100 \u03bcM epoxomicin for 8 hr and subsequently harvested for immunoprecipitations (IP) with anti-HA or Ni-NTA. Western blot show 1% input and 50% of IP loaded and probed with the indicated antibodies.\n\nWe used epoxomicin (proteasomal inhibitor) and folimycin (lysosomal inhibitor) to confirm that CRL5 targets Noxa and Bim for proteasomal degradation. Folimycin treatment did not affect the abundance of Noxa or Bim (Figure 4E). However, epoxomicin treatment causes accumulation of Bim in LK2 parental cells. Epoxomicin treatment had no additional effect on Bim in CUL5 knockout cells. Hence, under these conditions CRL5 appears to be the primary ligase for Bim. Noxa accumulates in both parental and CUL5 knockout cells after epoxomicin treatment (Figure 4E). These data indicate that Noxa is proteasomally regulated, but suggest that Noxa can be targeted by additional ubiquitin ligases. We were unable to demonstrate direct ubiquitination of Noxa and Bim by CRL5 via ubiquitin co-immunoprecipitation (Figure 4\u2014figure supplement 1), leaving open the possibility that these proteins are indirect substrates.\n\n### Noxa is required to resensitize CUL5-deficient cells to CDK9 inhibition\n\nWe examined whether Noxa and/or Bim were required to resensitize CUL5-CRISPRi cells to CDK9i or MCL1i using RNAi. If induction of apoptosis in CUL5-deficient cells requires Noxa and/or Bim, then removal of either or both factors should make the cells re-resistant to CDK9i and MCL1i. Knocking down BAK, the apoptosis effector required for cell death, prevented apoptosis induced by CDK9i or MCL1i in CUL5-CRISPRi cells (Figure 5A\u2013B and Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44288/elife-44288-fig5-v3.jpg)\n\n**Figure 5.:** (A) CUL5 and Noxa were knocked down in dCas9-KRAB-expressing LK2 cells by selecting for corresponding sgRNAs. Bim and Bak were knocked down by siRNA. Apoptosis was measured using Cell Event detection by flow cytometry after treatment with 3 \u03bcM CDK9i for 6 hr. Error bars are standard deviations of 3 biological drug treatment replicates. (B) Genetic manipulations were performed and apoptosis was measured as in (A) following MCL1i treatment (1 \u03bcM for 12 hr). (C) Schematic illustrating potential mechanisms of resensitization of resistant NSCLC lines to inhibition of MCL1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44288/elife-44288-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) As in Figure 5, CUL5 and Noxa were knocked down in dCas9-KRAB-expressing LK2 cells by selecting for corresponding sgRNAs. Bim and Bak were knocked down by siRNA. Apoptosis was measured using Cell Event detection by flow cytometry after treatment with 3 \u03bcM CDK9i for 6 hr. Bar graphs depict an independent set of transductions and siRNA transfections from Figure 5. Error bars are standard deviations of 3 biological drug treatment replicates. (B) Genetic manipulations were performed and apoptosis was measured as in (A) following MCL1i treatment. (C) Representative data set illustrating knockdown efficiency by qRT-PCR for genetic manipulations shown in (Figure 5A\u2013B). Error bars are standard deviations of technical replicates. qRT-PCR was conducted to validate knockdown for each biological replicate of sgRNA transduction and siRNA transfection. nd, not determined.\n\nKnocking down Noxa in CUL5-CRISPRi cells almost completely prevented CDK9i-induced apoptosis (Figure 5A and Figure 5\u2014figure supplement 1A). Knocking down Bim in CUL5-CRISPRi cells did not prevent CDK9i-induced apoptosis, and simultaneously knocking down both Noxa and Bim in CUL5-CRISPRi cells did not further inhibit apoptosis beyond what was observed with knockdown of Noxa alone. These data indicate that in CDK9i-treated cells lacking CUL5, initiation of apoptosis is primarily dependent on Noxa. Surprisingly, knocking down Noxa and/or Bim in CUL5-CRISPRi cells exposed to MCL1i still led to high levels of apoptosis (Figure 5B and Figure 5\u2014figure supplement 1B). The difference in apoptotic dependence between MCL1i and CDK9i could be due to transcriptional downregulation of Noxa and Bim during CDK9i (Figure 4D) or from downregulation of other pro-apoptotic factors, whose loss in conjunction with Noxa depletion leads to abrogation of apoptosis. The mechanism underlying CRL5-mediated resensitization to MCL1i is still unclear, and our data highlight differences between direct inhibition of MCL1 and indirect downregulation via CDK9 that can also affect other factors.\n\nIn conclusion, we find that depletion of key components of the CRL5 family of ubiquitin ligases sensitizes otherwise resistant cells to CDK9 and MCL1 inhibition. We show that the CRL5 complex targets pro-apoptotic proteins Noxa and Bim for degradation, and increased Noxa abundance upon CRL5 knockdown/out contributes to CDK9i sensitivity. However, more work is needed to elucidate the mechanistic distinctions by which CRL5 depletion re-sensitizes cells to both CDK9i and MCL1i (Figure 5C).\n\n## Discussion\n\nCullin-RING complexes comprise the largest class of ubiquitin ligases and regulate a diverse array of biological processes (Petroski and Deshaies, 2005). While CUL3 is implicated in a wide array of cancer biologies, relatively little is known about the physiological functions of many CUL5-containing ubiquitin ligases. A few reports have implicated genetic alterations in CUL5 in cancer progression and our unbiased screens reveal that the CUL5-RNF7-UBE2F ubiquitin ligase can modulate the apoptotic threshold of LK2 cells in response to multiple emerging cancer therapeutics (Burnatowska-Hledin et al., 2004; Fay et al., 2003; Lubbers et al., 2011; Xu et al., 2012). The CUL5 ligase complex regulates the stability of Noxa and Bim, while increased Noxa abundance through disruption of CUL5 underlies re-sensitization to a CDK9 inhibitor.\n\nThe discovery that inactivation of the CRL5 ligase can resensitize LK2 cells to both CDK9 and MCL1 inhibition suggests a possible co-treatment strategy, as well as a potential biomarker for patient stratification. Based on our data, patients with lung cancers that exhibit loss of function mutations in either CUL5, RNF7, UBE2F or Elongin B that coincide with high expression of MCL1/Bcl-xL could be good candidates for treatment with CDK9i or MCL1i. These patients may be unlikely to have pre-existing CRL5-mediated resistance to treatment.\n\nThere are currently no small-molecule inhibitors that target specific components of the CRL5 complex. However, several potent inhibitors that broadly inhibit the ubiquitin-proteasome system have been developed. MLN4924 inhibits the NEDD8 activating enzyme (NAE), thereby preventing conjugation of NEDD8 onto all cullin scaffolds, and shows significant antitumor activity in clinical trials (Soucy et al., 2009). Similiarly, treatment with MLN7243, a small molecule inhibitor of the ubiquitin activating enzyme (UAE) currently in clinical trials, depletes cellular ubiquitin conjugates and also demonstrates antitumor activity in xenografts (Hyer et al., 2018). Several clinically approved proteasome inhibitors such as bortezomib and carfilzomib are currently used in the treatment of multiple myeloma and lymphomas (Kuhn et al., 2007; Richardson et al., 2005). Although a therapeutic window exists for these compounds, patients also experience adverse side effects due to the widespread effects of proteasome inhibition, complicating the possibility of co-dosing with CDK9i or MCL1i.\n\nCompounds have also been developed that directly manipulate protein-protein interactions within specific ligases. The small molecule CC0651 selectively inhibits Cdc34A, an E2 for SCF-type CRLs, and has been shown to impede proliferation of cancer cells (Ceccarelli et al., 2011; Huang et al., 2014b). Another example is the synthesis of a potent inhibitor (ligand 7) targeting the von Hippel-Landau (VHL) substrate adaptor, thereby preventing the degradation of HIF-1\u03b1, a potential treatment for chronic anemia (Galdeano et al., 2014). While ubiquitin ligases are challenging targets for small molecule development, their importance in myriad disease states have spurred efforts to manipulate their activity. Our results in LK2 cells suggest that targeting CRL5 could be used to combat innate and acquired resistance to therapeutics that directly or indirectly affect MCL1. Additional work will be necessary to establish the mechanistic distinctions between CRL5\u2019s ability to set the apoptotic response to distinct small molecules, as well as the clinical applicability of targeting CRL5 in cancer.\n\n## Materials and methods\n\n### Cell culture and reagents\n\nThe LK2 cell line was obtained from AstraZeneca and maintained in RPMI supplemented with 10% (v/v) fetal bovine serum, 100 units/mL penicillin and streptomycin, GlutaMAX, sodium pyruvate and non-essential amino acids. All cells tested negative for Mycoplasma contamination using the MycoAlert Plus Mycoplasma detection kit from Lonza. AstraZeneca licensed the CDK9 inhibitor (AZD5576) originally published as PC585 (Garcia-Cuellar et al., 2014) and supplied it to us for this study. The MCL1 inhibitor (AZD5991) is synthesized by AstraZeneca (Tron et al., 2018).\n\n### Isogenic CRISPR-Cas9 knockouts\n\nPurified Cas9 ribonucleoproteins (RNPs) complexed with sgRNA pairs flanking coding exon one for CUL5 or UBE2F were nucleofected into LK2s to completely disrupt all coding potential as previously described (Lingeman et al., 2017). Nucleofected pools were seeded at single cell densities by FACS sorting. Clones were initially screened by western blot for loss of protein and confirmed by Sanger sequencing.\n\nIndividual analysis of sgRNA phenotypes sgRNA protospacers targeting CUL5, RNF7, UBE2F, Elongin B, Elongin C, Bcl-xL, Noxa and a negative control non-targeting protospacer were individually cloned into BstXI/BlpI-digested pCRISPRia-v2 (Addgene #8432) by ligating annealed complementary synthetic oligonucleotide pairs. The sgRNA expression vectors were packaged into lentivirus as previously described and successful transductants were selected with puromycin at a final concentration of 2.5 \u03bcg/mL. Protospacer sequences are in Supplementary file 1.\n\n### Lentivirus production and transduction\n\nLentivirus was produced by transfecting HEK293T with standard packaging vectors using the TransIT-LT1 Transfection Reagent (MIR 2306; Mirus Bio LLC). Viral supernatant was collected at 48 hr and 72 hr after transfection, filtered through a 0.45 \u03bcm polyethersulfone syringe filter, snap-frozen and stored at \u221280\u00b0C for future use. For screens, viral titrations were performed by transducing LK2 cells at serial dilutions and assessing BFP (present on the sgRNA-encoding plasmid) percentages 48 hr following transduction. The viral dilution resulting in\u00a0~15% BFP-positive cells was used to transduce cells for the screens.\n\n### Genome-scale CRISPRi screens\n\nThe human CRISPRi v2 library contains 5sgRNAs/annotated TSS of each gene comprising a total of 104,535 sgRNAs. In order to maintain 500X coverage (representation) of each guide at all times,~50\u00d7106 cells need to be transduced with one sgRNA. To ensure delivery of one sgRNA/cell a low MOI of\u00a0~0.3 is used, which results in not every cell getting transduced, thus 5\u20136 fold more cells need to be transduced in order to maintain 500X coverage. Replicate cultures of 3 \u00d7 108 cells were plated in twenty 15 cm dishes and transduced at an MOI of\u00a0~0.3 in the presence of 4 \u03bcg/mL polybrene. Cells were split into 2.5 \u03bcg/mL puromycin and selected for 4 days. Cells were passaged into regular media and recovered for 2 days. 60 \u00d7 106 were collected as the \u2018background\u2019 sample. 60 \u00d7 106 cells were treated with 3 \u03bcM CDK9i and 0.5 \u03bcM Cell Event for 6 hr. 60 \u00d7 106 cells were treated with 1 \u03bcM MCL1i and 0.5 \u03bcM Cell Event for 12 hr. 60 \u00d7 106 cells were treated with DMSO (1:10,000X dilution) and 0.5 \u03bcM Cell Event for 12 hr. After treatment, cells were trypsinized, washed and fixed in 1% formaldehyde/PBS. The entirety of the cell population was then FACS-sorted where GFP-positive (apoptosing) cells were isolated. As previously mentioned, this was done in duplicate. Genomic DNA was purified from each cell population with blood purification kits (Machery-Nagel, Nucleospin blood L or XL, depending on cell number) and the sgRNA-encoding region was enriched, amplified, and processed for sequencing on the Illumina Hiseq 2500. TruSeq index sequences unique to each cell population were used to multiplex samples.\n\n### Pooled screen analysis\n\nData analysis was performed as described (Horlbeck et al., 2016; Li et al., 2014). Briefly, sequence reads from the Illumina HiSeq 2500 were trimmed, aligned to CRISPRi v2 sgRNA library, counted and normalized. For the Python-based ScreenProcessing pipeline, sgRNA phenotypes and negative control gene phenotypes were determined along with Mann-Whitney P values. The top three guide-level phenotypes were collapsed to produce the gene-level phenotype score. For genes with multiple annotated transcription start sites (TSSs), phenotypes were calculated for each TSS and the TSS with the lowest Mann Whitney p-value was used to represent the gene. For MAGeCK, all sgRNAs/gene (including both TSSs if there are two) are ranked based on p-values from mean variance modeling. A robust ranking aggregation (RRA) algorithm is then used to call genes that are significantly enriched or depleted based on p-value and false discovery rate (FDR).\n\n### qRT-PCR\n\nFor qPCR, RNA was extracted with the RNeasy Mini Kits (Qiagen). cDNA was produced from 1 \u03bcg of purified RNA using the iScript Reverse Transcription Supermix for RT-qPCR (Bio-Rad Laboratories). qPCR reactions were performed with the SsoAdvanced Universal SYBR Green Supermix (Bio-Rad Laboratories) in a total volume of 10 \u03bcl with primers at final concentrations of 500 nM. Primer sequences are included in Supplementary file 2. The thermocycler was set for 1 cycle of 95\u00b0C for 30 s, and 40 cycles of 95\u00b0C for 5 s and 55\u00b0C for 15 s, respectively. Fold enrichment of the assayed genes over the control HPRT and/or GAPDH loci were calculated using the 2\u2212\u0394\u0394CT method as previously described (Livak and Schmittgen, 2001).\n\n### Cell event apoptosis detection assay\n\nCell Event reagent was added to cells for the duration of the drug or vehicle treatment, at a final concentration of 0.5 \u03bcM. Cells were harvested by trypsinization and analyzed on a flow cytometer, either the BD FACSARIA for the screen or an Attune Nxt cytometer (ThermoFisher) for the follow-up experiments.\n\n### Caspase activation assay\n\nCells were plated at 5000 cells/well of a 384-well white opaque plates in corresponding cell growth media. Cells were treated with compounds at indicated concentrations for 6 hr (37\u00b0C, 5% CO2) with a final DMSO concentration of 0.3%. Caspase-3/7 activation was subsequently determined using a Caspase-Glo 3/7 Reagent (Promega Corporation) as described in manufacturer's instructions. Dose-response curves were plotted and analyzed (including EC50 determination) using GraphPad Prism. Percentage of caspase activation was calculated against the maximum caspase activation value (100%) obtained with a combination of MCL1, BCL2, and Bcl-xL inhibition.\n\n### Cell viability assay\n\nCells were plated at 5,000 cells/well of a 384-well white opaque plates in corresponding cell growth media. Cells were treated with compounds at indicated concentrations for 24 hr (37\u00b0C, 5% CO2) with a final DMSO concentration of 0.3% and assayed for viability using the CellTiter-Glo Reagent (Promega Corporation) as described in manufacturer's instructions. Results were normalized to the samples without treatment at time 0. GI50\u00a0values were calculated using nonlinear regression algorithms in Prism.\n\n### Immunoblotting\n\nPrimary antibodies against the following proteins were used: CUL5 (ab184177; Abcam); RNF7 (ab181986; Abcam); UBE2F (ab185234; Abcam); Noxa (OP180; Millipore); Bim (ab32158; Abcam); Bid (ab32060; Abcam); Puma (ab9643; Abcam); Bad (ab62465; Abcam); Bik (ab52182; Abcam); Beclin (ab207612; Abcam); Bmf (ab9655; Abcam); MCL1 (D35A5 #5453; CST); Bcl-xL (54H6; CST); c-PARP (19F4 #9546; CST) Ubiquitin (P4D1 #3936; CST); HA (C29F4; CST); GAPDH (14C10 #2118; CST); p53 (DO-1 sc-126; Santa Cruz Biotechnology); HSP90 (sc-69703; Santa Cruz Biotechnology). For each protein antibody, manufacturer\u2019s recommended dilutions were used. Mouse or rabbit immunoglobulin G was visualized at a 1:10,000 dilution: donkey anti-mouse 680 (925\u201368022; LI-COR); donkey anti-rabbit 680 (925\u201368023; LI-COR); donkey anti-mouse 800 (925\u201332212; LI-COR); donkey anti-rabbit 800 (925\u201332213; LI-COR). Blots were imaged on an Odyssey CLx Imaging System (LI-COR).\n\n### Immunoprecipitation\n\nLK2 wild type and CUL5-KO cells were transfected with equal amounts of His-Ubiquitin and either HA-Noxa or HA-Bim. 48 hr after transfection, cells were treated with 100 \u03bcM epoxomicin for 8 hr. Cells were harvested and lysed in either denaturing buffer (8M Urea, 300 mM NaCl, 0.5% NP-40, 50 mM Na2HPO4, 50 mM Tris pH8.0) or lysis buffer from ThermoFisher (Pierce HA-Tag Magnetic IP/CoIP Kit #88838). Denatured extracts were bound to magnetic Ni-NTA beads (Qiagen #36111), while other lysed extracts were bound to magnetic anti-HA beads. Beads were washed five times and eluted in 1X Laemmli buffer by boiling for 5 min. Samples were loaded on a gel and processed for immunoblotting.\n\n### siRNA treatment\n\nCells were reverse-transfected in six-well plates using RNAiMAX (Thermo Fisher Scientific) with 50 nM siRNA. 48 hr following siRNA treatment, cells were treated for the Cell Event apoptosis assay as indicated and also harvested to verify knockdown by qRT-PCR. BCL2L11 (Bim) siRNA SMARTpool was from Dharmacon (L-004383-00-0005) and BAK siRNA was obtained from Ambion (Life Technologies 4457298).\n\n### Clonogenic assay\n\nSix-well plates were seeded at 500 cells/well and allowed to attach for 12 hr. Cells were treated with DMSO or 1 \u00b5M CDK9i or 1 \u00b5M MCL1i for 8 hr. Drug treatments were washed out and plates were replenished with fresh media. 2 weeks later colonies were stained with 0.5% crystal violet and 6% glutaraldehyde in water. Plates were scanned using a flatbed scanner and colonies were scored on ImageJ.\n",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "d12fe19f-614d-4ab8-95a9-bcb0187fd3bd",
+      "submission_id": "969f760a-8c60-441c-ba3c-caf3ae782048",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael R Green, Howard Hughes Medical Institute, University of Massachusetts Medical School United States\n\nReviewers:\n- Narendra Wajapeyee, Yale University School of Medicine United States\n\n## Review text\n\nDOI: [10.7554/eLife.44288.028](https://doi.org/10.7554/eLife.44288.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The CUL5 ubiquitin ligase complex mediates resistance to CDK9 and MCL1 inhibitors in lung cancer cells\" for consideration by eLife. Your article has been reviewed by Ivan Dikic as the Senior Editor, Michael Green as the Reviewing Editor, and two reviewers. The following individual involved in review of your submission has agreed to reveal their identity: Narendra Wajapeyee (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Kabir et al., address the important problem of resistance/non-response to drugs under clinical development. In a CRISPRi/FACS screen they identify genes for which knock-down synergizes with either CDK9 (CDK9i) or MCL1 (MCL1i) inhibition. Along BclXl, which is known to synergize with MCL1 inhibition and lower the apoptotic threshold, they identify components of a Cullin5 RING ubiquitin ligase (CRL5), namely the scaffold protein Cul5, the zinc-finger protein RBX2/RNF7 and the NEDD8 specific E2 enzyme UBE2F, suggesting a role in a CRL5 type ligase in regulating apoptosis. They go on to validate these findings in cellular models using individual knock-outs/downs of either CUL5, UBE2F and RNF7 confirming the role of these proteins in regulating the sensitivity to CDK9i/MCL1i. Since substrate receptors are a key component of a CRL5 ligase and confer specificity to the ligase complex, they attempt to identify the relevant substrate receptor by targeted knock-out of all known CRL5 substrate receptors, however, fail to identify a specific substrate receptor. In search of the relevant downstream targets, they observe up-regulation of Bim and Noxa in response to CRL5 inhibition by either CRISPRi or shRNA. They further show that in a CUL5 depleted background, efficacy of CDK9i but not MCL1i depends on the presence of Noxa.\n\nIn summary, the authors identify CRL5 as a critical node in regulating apoptosis and suggest that targeting CRL5 could provide potential synergy with CDK9i/MCL1i, or that patient stratification based on mutations in components of the CRL5 ligase could inform benefits of CDK9i/MCL1i. In the absence of a known substrate receptor, the authors did not succeed in identifying the mechanism by which CRL5 depletion regulates apoptosis, and the differences in response of CDK9i vs MCL1i suggest a more complex regulation of the pathway.\n\nEssential revisions:\n\n1) The manuscript is based on the assumption that a key target of CDK9i is MCL1 (Abstract: \"that interrogate two drugs directly or indirectly targeting MCL1\"), which appears to be only marginally supported. If that were to be the case, the genome scale screens should exhibit a significant global correlation, which the authors should show. It is also confusing why in such a scenario CDK9i but not MCL1i requires Noxa (Discussion section). The authors need to be clearer about their assumptions and the nature of CDK9i leading to a global and profound downregulation of transcription with likely complex downstream effects directly/or indirectly signaling into apoptosis. The authors need to discuss this more accurately, and reference data that suggests that CDK9i exerts therapeutic effects pre-dominantly through MCL1 downregulation.\n\n2) While the manuscript addresses an important problem and the screens are well designed and rigorously executed, it appears that some of the downstream experiments (in particular the investigation of Bim and Noxa) are not sufficient to support the overall statements. For example, subsection \"Noxa is required to resensitize CUL5-deficient cells to MCL1 inhibition\", however, in Figure 5B the authors show that co-depletion of CUL5 and Noxa still results in apoptosis levels comparable to CUL5-/- upon MCL1i treatment. There are more such inconsistencies that need to be addressed.\n\n3) Overall, the authors should rewrite the manuscript and be clearer about their overall conclusions. They show that depletion of key components of the CRL5 family of ubiquitin ligases can sensitize to CDK9 and MCL1 inhibition, while more work is needed to identify the exact mechanism.\n\n4) The majority of the drug-resistance experiments are short-term apoptosis assays. To draw strong conclusion about drug-resistance and susceptibility it is important to perform some type of long-term survival and proliferation assays. Please confirm the key conclusions of the study using some type of long-term survival and proliferation assay.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The CUL5 ubiquitin ligase complex mediates resistance to CDK9 and MCL1 inhibitors in lung cancer cells\" for further consideration at eLife. Your revised article has been favorably evaluated by Cynthia Wolberger (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nIn particular, one of the reviewers feels that the conclusions, particularly the clinical implications, have been over-stated. Some of the reviewer's original comments and other comments provided during discussion of the manuscript are provided below.\n\nPlease carefully review these comments and revise your manuscript accordingly. Please provide a point-by-point response of how you have revised the manuscript to address the reviewer's concerns.\n\nComments from original review:\n\nIn this revised manuscript, Kabir et al., deploy elegant CRISPR screens to identify potential mechanisms of resistance/non-response to CDK9 inhibitors (CDK9i) and MCL1 inhibitors (MCL1i). They identify components of the Cullin-5 RING ubiquitin ligase complex (CRL5) as mediators of sensitivity to CDK9i and MCL1i. They further show that genetic inactivation of CUL5 or RNF7 leads to elevated levels of the pro-apoptotic proteins BIM and NOXA. While they show that knockout of NOXA partially abrogates the sensitizing effect of CUL5 knockout in the context of CDK9i, no effect is observed for MCL1i.\n\nThe key criticism to the manuscript was the weakly supported assumption that both, CDK9i and MCL1i, act predominantly through inhibition of MCL1. The authors acknowledge the lack of data for their initial assumption yet fail to provide data that would further support this key assumption for conclusions drawn in the paper (rebuttal major points 1-3). In light of this, I feel that both screens have to be considered as potentially correlated but not necessarily functionally linked and the key message that CUL5 ubiquitin ligase complexes mediate resistance to CDK9i and MCL1i is not sufficiently supported. With just a single experiment in a single cell line, and sensitization to potentially unrelated drugs, depletion of CUL5 could result in general lowering of the apoptotic threshold instead of a CDK9i/MCL1i specific effect.\n\nOverall, I feel this manuscript as it is presented right now is overselling the therapeutic value of the findings and more thorough experiments and importantly discussion of the data would be necessary.\n\nRepresentative major points:\n\nThe screens are carried out in a single cell line, and since at least for MCL1i no mechanistic understanding beyond the genetic link to CUL5 is provided (regulation of NOXA impacts CDK9i but not MCL1i), the obvious question is whether knockdown of CUL5, RNF7 or UBE2F is just a general reduction of apoptotic threshold and as such would sensitize without necessarily increasing the therapeutic index. Moreover, I feel the overlap between both screens is overstated at multiple occasions, for example in Figure 2\u2014figure supplement 1D,E referenced as \"the top resensitization hits were strikingly consistent, only 3 out of the top 10 hits overlapped.\n\nFor MCL1i, the authors provide only a genetic screen, which while elegant, does not provide mechanistic inside into the resistance mechanism. The fact that Noxa/Bim are downregulated appears to be correlated, but not necessarily functionally linked to MCL1i.\n\nIn the second paragraph of the Discussion section \u2013 refer to significant co-occurrence of MCL1 amplification with CUL5/UBE2F deletions, which appears to be overstated based on data available at cbioportal: Out of 3351 lung cancer samples, only 3 have a co-occurrence of CUL5 deletions with either MCL1 or BCL-xL amplification, 2 a co-occurrence of UBE2F deletion with MCL1/BCL-xL amplification, and none a co-occurrence of RNF7 deletions. If further data is available, it should be provided as supplementary figure.\n",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c020b59a-0133-4c33-b3ae-140dce265feb",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C1",
+      "claim": "Overexpression of anti-apoptotic proteins MCL1 and Bcl-xL are frequently observed in many cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of anti-apoptotic proteins MCL1 and Bcl-xL are frequently observed in many cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cancer biology presented in the abstract without specific data in this manuscript, but is supported by the broader scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "0a929790-3da8-4cef-ac0a-e264d1aa3b34",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C2",
+      "claim": "Inhibitors targeting MCL1 are in clinical development.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitors targeting MCL1 are in clinical development, however numerous cancer models are intrinsically resistant to this approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced in the context of the study and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "24225f2d-fe53-4ad6-bf95-c0a65fb869c2",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C3",
+      "claim": "Numerous cancer models are intrinsically resistant to MCL1 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitors targeting MCL1 are in clinical development, however numerous cancer models are intrinsically resistant to this approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript showing resistant cell lines.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "059287e0-bdd0-4be0-9739-8607eba75407",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C4",
+      "claim": "Genome-wide CRISPR screens identified three components (CUL5, RNF7 and UBE2F) of a cullin-RING ubiquitin ligase complex (CRL5) that resensitized cells to MCL1 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, both screens identified three components (CUL5, RNF7 and UBE2F) of a cullin-RING ubiquitin ligase complex (CRL5) that resensitized cells to MCL1 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the screen data shown in Figure 2 and validated in subsequent experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "234188f7-e6f8-4f70-83bf-039932ffcf42",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C5",
+      "claim": "Levels of the BH3-only pro-apoptotic proteins Bim and Noxa are proteasomally regulated by the CRL5 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that levels of the BH3-only pro-apoptotic proteins Bim and Noxa are proteasomally regulated by the CRL5 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data in Figure 4 showing increased Bim and Noxa levels upon CRL5 depletion and proteasome inhibitor experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "cd8cceaa-0460-42fe-a19d-2beb8846f5b1",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C6",
+      "claim": "Accumulation of Noxa caused by depletion of CRL5 components was responsible for re-sensitization to CDK9 inhibitor, but not MCL1 inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of Noxa caused by depletion of CRL5 components was responsible for re-sensitization to CDK9 inhibitor, but not MCL1 inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by epistasis experiments shown in Figure 5 where Noxa knockdown prevented CDK9i-induced apoptosis in CUL5-depleted cells but not MCL1i-induced apoptosis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "77e176db-0c2d-4887-b412-cd364d1604b7",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C7",
+      "claim": "Cancer cells frequently manipulate the intrinsic apoptotic pathway to evade cell death and expand their proliferative capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer cells frequently manipulate the intrinsic apoptotic pathway to evade cell death and expand their proliferative capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cancer biology supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "9f42c02f-8c45-4f09-b334-7a41d97c7134",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C8",
+      "claim": "Aberrant increases in levels of anti-apoptotic proteins in the BCL-2 family have been widely implicated in the transformation of cancer cells and the development of resistance to current therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant increases in levels of anti-apoptotic proteins in the BCL-2 family, such as amplification of MCL1, have been widely implicated in the transformation of cancer cells and the development of resistance to current therapies (Kelly and Strasser, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kelly and Strasser, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "9664de41-6704-4ddf-ad8e-524b61aea67f",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C9",
+      "claim": "Multi-domain proteins BAK, BAX and BOK serve as apoptosis executors in the mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "BCL-2 family members are classified based on the conservation of their BCL-2 homology (BH) domains: multi-domain proteins BAK, BAX and BOK serve as apoptosis executors in the mitochondria",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about BCL-2 family protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "57f3eb37-28e3-4a50-af18-1b4d02852d24",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C10",
+      "claim": "Proteins containing only the BH3 domain (BH3-only) promote BAK/BAX activation.",
+      "claim_type": "EXPLICIT",
+      "source": "proteins containing only the BH3 domain (BH3-only) promote BAK/BAX activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of apoptosis regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "3aa12fa9-579e-4ac8-8bd3-be6da81727cb",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C11",
+      "claim": "Anti-apoptotic proteins such as MCL1, Bcl-xL and BCL-2 inhibit apoptosis by antagonistic binding to pro-apoptotic BH3-only proteins as well as BAK and BAX.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-apoptotic proteins such as MCL1, Bcl-xL and BCL-2 inhibit apoptosis by antagonistic binding to pro-apoptotic BH3-only proteins as well as BAK and BAX (Czabotar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Czabotar et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "50a3ac69-2b2d-4d3d-b9f0-4712436bfcbc",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C12",
+      "claim": "Gene amplification of MCL1 and BCL2L1 (Bcl-xL) are key determinants of survival in many cancers, including breast cancer, non-small cell lung cancer (NSCLC), multiple myeloma, acute myeloid leukemia, and B-cell acute lymphoblatic leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "High-resolution investigation of somatic copy number alterations has revealed that gene amplification of MCL1 and BCL2L1 (Bcl-xL) are key determinants of survival in many cancers, including breast cancer, non-small cell lung cancer (NSCLC), multiple myeloma, acute myeloid leukemia, and B-cell acute lymphoblatic leukemia (Goodwin et al., 2015; Koss et al., 2013; Xiao et al., 2015; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "b189d73b-801f-4b99-a234-f5e08a5fe1ce",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C13",
+      "claim": "Amplification of MCL1 is a prognostic indicator for disease severity and progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Amplification of MCL1 is a prognostic indicator for disease severity and progression, making it an attractive therapeutic target (Campbell et al., 2018; Yin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Campbell et al., 2018 and Yin et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "e858e991-0730-4947-b449-e4af0f42dc61",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C14",
+      "claim": "The first BH3-mimetics that specifically antagonized Bcl-xL were associated with significant thrombocytopenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the first BH3-mimetics that specifically antagonized Bcl-xL were associated with significant thrombocytopenia, thus complicating their therapeutic use (Lessene et al., 2013; Leverson et al., 2015a; Tao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "86a5a4fc-6d77-46ab-bff7-55a9053721e4",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C15",
+      "claim": "Compounds that selectively target MCL1 are currently in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Small-molecule inhibition of MCL1 has recently gained significant attention (Figure 1A), and compounds that selectively target MCL1 are currently in clinical trials (Abulwerdi et al., 2014; Burke et al., 2015; Caenepeel et al., 2018; Kotschy et al., 2016; Leverson et al., 2015b; Tron et al., 2018; Phase I Study of S64315 Administred Intravenously in Patients With Acute Myeloid Leukaemia or Myelodysplastic Syndrome).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations including a clinical trial reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "d1d315ca-4280-4179-bea0-e887ac92f89c",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C16",
+      "claim": "Direct BH3-mimetic MCL1 inhibitors show potent efficacy with low cytotoxicity in preclinical hematological malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Promising reports of direct BH3-mimetic MCL1 inhibitors in preclinical hematological malignancies show potent efficacy with low cytotoxicity (Kotschy et al., 2016; Leverson et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kotschy et al., 2016 and Leverson et al., 2015b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "a24c3571-e84c-4015-898e-9e52759dd4b9",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C17",
+      "claim": "MCL1 inhibitors showed little single agent activity in solid breast tumors unless combined with a chemotherapeutic agent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, assessment of MCL1 inhibitors in solid breast tumors showed little single agent activity unless combined with a chemotherapeutic agent (Merino et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Merino et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "5c94ecc4-5f60-4ef4-9784-ee567a3073e8",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C18",
+      "claim": "CDK9 inhibition restricts transcription elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "CDK9 inhibition restricts transcription elongation thus exploiting all mRNAs and proteins that have short-lived half-lives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CDK9 function, also illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "43376993-ead4-4781-b79d-4d4f5f1f4fb2",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C19",
+      "claim": "MCL1 is particularly susceptible to acute CDK9i treatment due to its short half-life.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its short half-life, MCL1 is one of several targets that is particularly susceptible to acute CDK9i treatment, and other (proto-)oncogenes such as MYC are also CDK9i targets (Figure 1A) (Akgul et al., 2000; Gregory et al., 2015; Huang et al., 2014a; Lemke et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "d4a31330-be18-428e-b7b1-55eb617b9773",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C20",
+      "claim": "CDK9 inhibition does not affect levels of other anti-apoptotic proteins such as Bcl-xL.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CDK9 inhibition suppresses MCL1 expression, it does not affect levels of other anti-apoptotic proteins such as Bcl-xL, exposing a potential vulnerability in CDK9i treatment such that cancers may already have or develop a mode of resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data in the manuscript and illustrated in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "5cb626a5-fd0e-4d7d-bb64-2f69f4ec7ed3",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C21",
+      "claim": "Selective CDK9 inhibitors have shown promising results in preclinical murine models.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective CDK9 inhibitors have shown promising results in preclinical murine models; however, they have a limited therapeutic window and must be acutely dosed for clinical applications due to their global effects on transcription (Garcia-Cuellar et al., 2014; Hellvard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Garcia-Cuellar et al., 2014 and Hellvard et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "1701ce41-6167-4677-8ce6-aaf5a0969421",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C22",
+      "claim": "CDK9 inhibitors have a limited therapeutic window and must be acutely dosed for clinical applications due to their global effects on transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective CDK9 inhibitors have shown promising results in preclinical murine models; however, they have a limited therapeutic window and must be acutely dosed for clinical applications due to their global effects on transcription (Garcia-Cuellar et al., 2014; Hellvard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and by the experimental design of the study which uses acute dosing.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "8cc3ba0b-e09b-48bd-94e2-7e61dbf6d2b3",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C23",
+      "claim": "Lung cancer is the leading cause of cancer mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "As lung cancer is the leading cause of cancer mortality and most NSCLC patients develop resistance to first-line treatment, we performed genome-wide CRISPR inhibition (CRISPRi) screens in a NSCLC line resistant to both CDK9 and MCL1 inhibition (Siegel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Siegel et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "26c2485a-9b88-4054-b377-60bbdbf52190",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C24",
+      "claim": "Most NSCLC patients develop resistance to first-line treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As lung cancer is the leading cause of cancer mortality and most NSCLC patients develop resistance to first-line treatment, we performed genome-wide CRISPR inhibition (CRISPRi) screens in a NSCLC line resistant to both CDK9 and MCL1 inhibition (Siegel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general clinical observation supported by the citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "46110565-e103-4d85-8fa8-646ac2f8fc52",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C25",
+      "claim": "Several cell lines with amplified MCL1 (copy number \u22653) were highly sensitive to CDK9i and MCL1i.",
+      "claim_type": "EXPLICIT",
+      "source": "Several cell lines with amplified MCL1 (copy number \u22653) were highly sensitive to CDK9i and MCL1i, consistent with overexpression of MCL1 to escape apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data presented in Figure 1B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "bee81c03-28eb-44ad-a092-9f768155bb90",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C26",
+      "claim": "Several NSCLC lines were resistant to CDK9i and MCL1i despite being MCL1-amplified.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found several NSCLC lines resistant to CDK9i and MCL1i despite being MCL1-amplified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data presented in Figure 1B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "649eb4c8-5641-4ace-848b-084ee1127469",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C27",
+      "claim": "Increased Bcl-xL expression correlated with the MCL1-amplified lines that were resistant to CDK9i and MCL1i.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased Bcl-xL expression correlated with the MCL1-amplified lines that were resistant to CDK9i and MCL1i.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data presented in Figure 1B and Table 1 showing MCL1:Bcl-xL ratios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "0646dbb3-587e-4ab5-bed9-158561501038",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C28",
+      "claim": "MCL1-amplified cell lines with low levels of Bcl-xL were sensitive to CDK9i and MCL1i.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, MCL1-amplified cell lines with low levels of Bcl-xL were sensitive to CDK9i and MCL1i.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data presented in Figure 1B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "f6874d26-c76b-4ebc-b6c3-e0583e182241",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C29",
+      "claim": "Both MCL1i and CDK9i induce apoptosis and cell death in a sensitive cell line (H23) after just 6 hr, with saturated cell death and caspase activation at 1 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Both MCL1i and CDK9i induce apoptosis and cell death in a sensitive cell line (H23) after just 6 hr, with saturated cell death and caspase activation at 1 \u03bcM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the dose response curves shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "9f9f25de-845e-4657-9aa9-dcb48fac9b66",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C30",
+      "claim": "A resistant line (LK2) was about 100-fold more resistant to CDK9i and MCL1i compared to the sensitive H23 line.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, a resistant line (LK2) was about 100-fold more resistant to CDK9i and MCL1i (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the dose response curves shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "0eebe70c-12c8-46e2-9c7e-c509d2946ff2",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C31",
+      "claim": "After extended treatment (24 hr), CDK9i induced a significant decrease in cell viability in both the resistant and sensitive cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "After extended treatment (24 hr), CDK9i induced a significant decrease in cell viability in both the resistant and sensitive cell lines, highlighting off-target toxicity presumably stemming from global transcriptional arrest independent of targeting short half-life transcripts such as MCL1 and MYC (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the cell viability data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "61a30880-e2ab-4d0b-a525-671a6fcd73c9",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C32",
+      "claim": "Extended CDK9i treatment causes off-target toxicity presumably stemming from global transcriptional arrest independent of targeting short half-life transcripts such as MCL1 and MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "After extended treatment (24 hr), CDK9i induced a significant decrease in cell viability in both the resistant and sensitive cell lines, highlighting off-target toxicity presumably stemming from global transcriptional arrest independent of targeting short half-life transcripts such as MCL1 and MYC (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data shown in Figure 1D, involving inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "8cd40627-6ff4-4b79-823a-2f736ab12f02",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C33",
+      "claim": "Prolonged CDK9i treatment induces non-specific cell death, possibly due to its polypharmacology.",
+      "claim_type": "EXPLICIT",
+      "source": "Prolonged CDK9i treatment induces non-specific cell death, possibly due to its polypharmacology, and so a growth-based screen measuring cell abundance after extended compound exposure was inappropriate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data in Figure 1D and knowledge of CDK9 function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "76d5861b-8378-4d65-9540-1f7ee8a6453c",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C34",
+      "claim": "Knockdown of Bcl-xL led to re-sensitization of LK2 cells to CDK9i and MCL1i.",
+      "claim_type": "EXPLICIT",
+      "source": "We found multiple sgRNAs targeting Bcl-xL led to re-sensitization of LK2 cells to CDK9i and MCL1i (Figure 2B\u2013C), confirming reports that depletion of both MCL1 and Bcl-xL initiates apoptosis (Goodwin et al., 2015; Xiao et al., 2015; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data shown in Figure 2B-C and by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "91f86015-4e30-417a-8d2f-a22fe16ecb34",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C35",
+      "claim": "Depletion of both MCL1 and Bcl-xL initiates apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found multiple sgRNAs targeting Bcl-xL led to re-sensitization of LK2 cells to CDK9i and MCL1i (Figure 2B\u2013C), confirming reports that depletion of both MCL1 and Bcl-xL initiates apoptosis (Goodwin et al., 2015; Xiao et al., 2015; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and confirmed by the screen data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "fb2d9db5-3d8d-4b97-80de-ae865109b20c",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C36",
+      "claim": "Downregulation of the mitochondrial porin VDAC2 promoted apoptosis in drug-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of the mitochondrial porin VDAC2 also promoted apoptosis in drug-treated cells (Figure 2B\u2013C), consistent with its proposed role in BAK/BAX sequestration at the mitochondrial membrane (Cheng et al., 2003; Chin et al., 2018; Lauterwasser et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data shown in Figure 2B-C and by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "eeb5d290-f7d9-43bd-8ef6-d23dc456a760",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C37",
+      "claim": "VDAC2 has a proposed role in BAK/BAX sequestration at the mitochondrial membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of the mitochondrial porin VDAC2 also promoted apoptosis in drug-treated cells (Figure 2B\u2013C), consistent with its proposed role in BAK/BAX sequestration at the mitochondrial membrane (Cheng et al., 2003; Chin et al., 2018; Lauterwasser et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "23da4596-6eb8-4696-9580-5666b9c548a9",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C38",
+      "claim": "EIF4G2 (DAP5) was identified as a hit in the CDK9i screen.",
+      "claim_type": "EXPLICIT",
+      "source": "EIF4G2 (DAP5) was identified as a hit in the CDK9i screen (Figure 2B), and this gene has been implicated in stimulating cap-independent translation of anti-apoptotic protein BCL-2 (Marash et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "1f292a20-91f7-4d3d-a468-a7921da8bc43",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C39",
+      "claim": "EIF4G2 has been implicated in stimulating cap-independent translation of anti-apoptotic protein BCL-2.",
+      "claim_type": "EXPLICIT",
+      "source": "EIF4G2 (DAP5) was identified as a hit in the CDK9i screen (Figure 2B), and this gene has been implicated in stimulating cap-independent translation of anti-apoptotic protein BCL-2 (Marash et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Marash et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "84a948d6-c6bb-457e-b2de-d1b6c9c672f9",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C40",
+      "claim": "The CDK9i screen had many more hits than the MCL1i screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the most significantly enriched genes from both screens showed an overlap between MCL1i and CDK9i. The CDK9i screen had many more hits, consistent with its polypharmacology of transcriptional inhibition (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the Venn diagram shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "1bb3161b-895f-4991-b9e2-512c900bf649",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C41",
+      "claim": "Significantly more of the top resensitization hits were shared between CDK9i and MCL1i than are expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite separate mechanisms of drug action and potentially distinct targets, significantly more of the top resensitization hits were shared between CDK9i and MCL1i than are expected by chance (exact hypergeometric test p<6.4\u00d710\u22129).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the screen data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "2a27cd8e-9b42-4089-9dd3-395665c24a71",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C42",
+      "claim": "Knockdown of multiple components of the eukaryotic translation initiation factor 3 (eIF-3) complex (EIF3H and EIF3M) resensitize LK2 cells to CDK9i and MCL1i.",
+      "claim_type": "EXPLICIT",
+      "source": "First, knockdown of multiple components of the eukaryotic translation initiation factor 3 (eIF-3) complex (EIF3H and EIF3M) resensitize LK2 cells to CDK9i and MCL1i (Figure 2B\u2013C and Figure 2\u2014figure supplement 1D\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the screen data shown in Figure 2B-C and Figure 2\u2014figure supplement 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "2cbdb9e3-e82d-4015-9979-89f1d215338d",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C43",
+      "claim": "eIF-3 is reported to bind a highly specific program of messenger RNAs involved in cell proliferation and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF-3 is reported to bind a highly specific program of messenger RNAs involved in cell proliferation and apoptosis (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lee et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "86707434-3478-4c53-b661-920ba8c1cfcb",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C44",
+      "claim": "CUL5 serves as a protein scaffold in the CRL5 complex, forming a platform for RNF7, UBE2F, Elongin B/C, and a substrate adaptor to recruit and ubiquitinate a target substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "CUL5 serves as a protein scaffold in the CRL5 complex, forming a platform for RNF7, UBE2F, Elongin B/C, and a substrate adaptor to recruit and ubiquitinate a target substrate (Figure 3A) (Kamura et al., 2004) (Huang et al., 2009) (Mahrour et al., 2008; Okumura et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and illustrated in Figure 3A.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "58e32649-d0d8-4f5c-8e90-8e61cc2c0e00",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C45",
+      "claim": "CUL5 and RNF7 appeared to be dependent on each other for stability such that when either protein was knocked down, levels of the corresponding protein were also diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "CUL5 and RNF7 appeared to be dependent on each other for stability such that when either protein was knocked down, levels of the corresponding protein were also diminished (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "f07f34e5-cdc2-41f9-a173-8700cc83b7fb",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C46",
+      "claim": "Depletion of UBE2F resulted in the disappearance of a higher molecular weight band corresponding to neddylated CUL5.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of UBE2F resulted in the disappearance of a higher molecular weight band corresponding to neddylated CUL5 (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "1f267848-7af5-448d-99bd-04e918f39064",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C47",
+      "claim": "Depletion of CUL5, RNF7, UBE2F or Bcl-xL significantly induced PARP cleavage when combined with CDK9i or MCL1i.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessing cleaved PARP (c-PARP) levels, we found that depletion of CUL5, RNF7, UBE2F or Bcl-xL significantly induced PARP cleavage when combined with CDK9i or MCL1i (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "b0e218fb-9132-4a87-b125-381f77c6bf3c",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C48",
+      "claim": "In the absence of drug, knockdown of Bcl-xL alone led to substantial apoptosis but this was not the case for knockdown of CUL5, RNF7 or UBE2F.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of drug, knockdown of Bcl-xL alone led to substantial apoptosis but this was not the case for knockdown of CUL5, RNF7 or UBE2F (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "88e1fe2c-3a3f-4db4-9676-82907c4a0bdd",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C49",
+      "claim": "Inactivation of CRL5 could be less toxic than inhibition of Bcl-xL.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that inactivation of CRL5 could be less toxic than inhibition of Bcl-xL and that inhibition of CRL5 may be better suited to co-administration with CDK9 and MCL1 inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that CRL5 depletion alone does not cause apoptosis while Bcl-xL depletion does.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "3e344e95-7af6-4c77-8b4d-992609438828",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C50",
+      "claim": "Challenging CUL5 or UBE2F knockout cells with CDK9i or MCL1i induced high levels of apoptosis at 1 \u03bcM of either compound, whereas wild type cells showed no response even at 10 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Challenging CUL5 or UBE2F knockout cells with CDK9i or MCL1i induced high levels of apoptosis at 1 \u03bcM of either compound, whereas wild type cells showed no response even at 10 \u03bcM (Figure 3F, Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the dose response data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "55b11eb6-3ae8-4225-8e3c-4d73e756b6e4",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C51",
+      "claim": "Drug treatment greatly reduced colony-forming ability in the CUL5 and UBE2F knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug treatment greatly reduced colony-forming ability in the CUL5 and UBE2F knockout cells, indicating efficient and persistent resensitization of these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the clonogenic assay data shown in Figure 3G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "8e53dbb1-53d4-4b6a-9c08-7cd837ddfc07",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C52",
+      "claim": "Individual knockdown of Elongin B by CRISPRi-induced apoptosis at levels similar to that of CUL5 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual knockdown of Elongin B by CRISPRi-induced apoptosis at levels similar to that of CUL5 knockdown, but knockdown of Elongin C had minimal effect (Figure 3\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "a81f198f-b7bc-49cf-ac3a-d34a089a75c3",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C53",
+      "claim": "Knockdown of Elongin C had minimal effect on apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual knockdown of Elongin B by CRISPRi-induced apoptosis at levels similar to that of CUL5 knockdown, but knockdown of Elongin C had minimal effect (Figure 3\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3\u2014figure supplement 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "3eac87f2-16d0-4d94-a947-d6646f22285c",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C54",
+      "claim": "Elongin B and C have a potential separation of function.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongin B and C have often been described as functioning in a complex, but our results suggest a potential separation of function (Okumura et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differential effects of Elongin B and C knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "58e952c0-9c87-4081-90da-a87b133c335b",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C55",
+      "claim": "None of the literature-proposed substrate adaptors analyzed induced apoptosis following CDK9i or MCL1i treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the literature-proposed substrate adaptors analyzed induced apoptosis following CDK9i or MCL1i treatment (Figure 3\u2014figure supplement 2C and Figure 3\u2014source data 1), but we cannot rule out redundancy between substrate adaptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "96f24826-f549-4fb7-9d34-0d28530acc1c",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C56",
+      "claim": "Loss of CUL5 did not lead to accumulation of p53.",
+      "claim_type": "EXPLICIT",
+      "source": "p53, a master regulator of apoptosis, can be a target of CRL5 during viral infection (Cai et al., 2006; Querido et al., 2001; Sato et al., 2009). However, loss of CUL5 did not lead to accumulation of p53 (Figure 3\u2014figure supplement 2D), nor affected MCL1 and Bcl-xL levels (Figure 3\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "30bfd59b-c948-43f8-bfbb-1dcdb2a0ab03",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C57",
+      "claim": "Loss of CUL5 did not affect MCL1 and Bcl-xL levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, loss of CUL5 did not lead to accumulation of p53 (Figure 3\u2014figure supplement 2D), nor affected MCL1 and Bcl-xL levels (Figure 3\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 3\u2014figure supplement 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "88c7620b-fee3-4dc5-9600-1b09dc305f4a",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C58",
+      "claim": "Noxa was recently proposed to be a substrate of CRL5.",
+      "claim_type": "EXPLICIT",
+      "source": "Pro-apoptotic proteins are required for efficient induction of cell death, and CRL5 could target pro-apoptotic proteins for proteasomal degradation. Indeed, Noxa was recently proposed to be a substrate of CRL5 (Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhou et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "5986f337-40d6-4693-878d-98103d3e14bb",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C59",
+      "claim": "Knockdown of CRL5 components increased protein levels of two BH3-only proteins, Noxa and Bim.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of CRL5 components increased protein levels of two BH3-only proteins, Noxa and Bim (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "000d2117-47b3-46af-a748-0d0a549dd1e0",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C60",
+      "claim": "After treatment with CDK9i or MCL1i, CUL5 knockdown had increased levels of both proapoptotic proteins Noxa and Bim while all other BH3-only proteins remained unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "After treatment with CDK9i or MCL1i, we also found that CUL5 knockdown had increased levels of both proapoptotic proteins Noxa and Bim while all other BH3-only proteins remained unchanged (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "64b3a90a-7928-43fe-a960-6216d8e290de",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C61",
+      "claim": "CDK9i treatment alone reduced levels of Noxa and Bim through transcriptional downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, CDK9i treatment alone reduced levels of Noxa and Bim through transcriptional downregulation, presumably related to the half-lives of these mRNAs (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot and qRT-PCR data shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "d9b67f68-1d00-40fd-8be1-8ec648a18acf",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C62",
+      "claim": "Knockdown of CUL5 together with CDK9i rescued protein levels of Noxa and Bim but not mRNA levels, consistent with CRL5-mediated post-translational degradation of Noxa and Bim.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of CUL5 together with CDK9i rescued protein levels of Noxa and Bim but not mRNA levels, consistent CRL5-mediated post-translational degradation of Noxa and Bim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot and qRT-PCR data shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "7c53c1db-fdbd-4f61-a218-ecad3b446d42",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C63",
+      "claim": "Folimycin treatment did not affect the abundance of Noxa or Bim.",
+      "claim_type": "EXPLICIT",
+      "source": "Folimycin treatment did not affect the abundance of Noxa or Bim (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "8be2ea4b-07ef-411f-8ada-519d10a5bb23",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C64",
+      "claim": "Epoxomicin treatment causes accumulation of Bim in LK2 parental cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, epoxomicin treatment causes accumulation of Bim in LK2 parental cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "de262cb3-afe4-473c-9f33-02c91fa17b4d",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C65",
+      "claim": "Epoxomicin treatment had no additional effect on Bim in CUL5 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Epoxomicin treatment had no additional effect on Bim in CUL5 knockout cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "01d962cc-7935-4ff6-8f43-a9278522450d",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C66",
+      "claim": "Under these conditions CRL5 appears to be the primary ligase for Bim.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, under these conditions CRL5 appears to be the primary ligase for Bim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that epoxomicin has no additional effect on Bim in CUL5 knockout cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "6c1d6468-fd6e-4b7a-9b07-fc7e9b89a59d",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C67",
+      "claim": "Noxa accumulates in both parental and CUL5 knockout cells after epoxomicin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Noxa accumulates in both parental and CUL5 knockout cells after epoxomicin treatment (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "8942d24d-92ad-482d-a9e8-fa78cd75b5f2",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C68",
+      "claim": "Noxa is proteasomally regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Noxa is proteasomally regulated, but suggest that Noxa can be targeted by additional ubiquitin ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that Noxa accumulates after epoxomicin treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "67b8401e-7d51-4d9a-9a5f-1b6ec760b4fe",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C69",
+      "claim": "Noxa can be targeted by additional ubiquitin ligases beyond CRL5.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Noxa is proteasomally regulated, but suggest that Noxa can be targeted by additional ubiquitin ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that Noxa still accumulates after epoxomicin treatment in CUL5 knockout cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "4e77898d-9178-4bb8-b22d-3b283e35afc8",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C70",
+      "claim": "Knocking down BAK prevented apoptosis induced by CDK9i or MCL1i in CUL5-CRISPRi cells.",
+      "claim_type": "EXPLICIT",
+      "source": "If induction of apoptosis in CUL5-deficient cells requires Noxa and/or Bim, then removal of either or both factors should make the cells re-resistant to CDK9i and MCL1i. Knocking down BAK, the apoptosis effector required for cell death, prevented apoptosis induced by CDK9i or MCL1i in CUL5-CRISPRi cells (Figure 5A\u2013B and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "b59e32f3-e7c4-4a2c-9d5d-43e0edb5470f",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C71",
+      "claim": "Knocking down Noxa in CUL5-CRISPRi cells almost completely prevented CDK9i-induced apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down Noxa in CUL5-CRISPRi cells almost completely prevented CDK9i-induced apoptosis (Figure 5A and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "27443875-ca0e-4443-ade0-aadd5b03ba91",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C72",
+      "claim": "Knocking down Bim in CUL5-CRISPRi cells did not prevent CDK9i-induced apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down Bim in CUL5-CRISPRi cells did not prevent CDK9i-induced apoptosis, and simultaneously knocking down both Noxa and Bim in CUL5-CRISPRi cells did not further inhibit apoptosis beyond what was observed with knockdown of Noxa alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "7a9ef486-17b3-47da-9706-5b027717dc5f",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C73",
+      "claim": "In CDK9i-treated cells lacking CUL5, initiation of apoptosis is primarily dependent on Noxa.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that in CDK9i-treated cells lacking CUL5, initiation of apoptosis is primarily dependent on Noxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the epistasis experiments shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "34bef56e-fca0-4ae6-a8e5-b5ac7d5f9dc2",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C74",
+      "claim": "Knocking down Noxa and/or Bim in CUL5-CRISPRi cells exposed to MCL1i still led to high levels of apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, knocking down Noxa and/or Bim in CUL5-CRISPRi cells exposed to MCL1i still led to high levels of apoptosis (Figure 5B and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "2d466c02-b759-44cf-a174-a1d48d59e19a",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C75",
+      "claim": "The difference in apoptotic dependence between MCL1i and CDK9i could be due to transcriptional downregulation of Noxa and Bim during CDK9i or from downregulation of other pro-apoptotic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in apoptotic dependence between MCL1i and CDK9i could be due to transcriptional downregulation of Noxa and Bim during CDK9i (Figure 4D) or from downregulation of other pro-apoptotic factors, whose loss in conjunction with Noxa depletion leads to abrogation of apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism underlying the observed differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "cd6a23b1-4c43-417e-83f9-9d05e411ad3d",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C76",
+      "claim": "Depletion of key components of the CRL5 family of ubiquitin ligases sensitizes otherwise resistant cells to CDK9 and MCL1 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we find that depletion of key components of the CRL5 family of ubiquitin ligases sensitizes otherwise resistant cells to CDK9 and MCL1 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by multiple experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "569f3183-0218-4cb7-bf6d-19b66e7aa3f2",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C77",
+      "claim": "The CRL5 complex targets pro-apoptotic proteins Noxa and Bim for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the CRL5 complex targets pro-apoptotic proteins Noxa and Bim for degradation, and increased Noxa abundance upon CRL5 knockdown/out contributes to CDK9i sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "7e61b89e-e0de-4cbb-84dd-23c12f877eeb",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C78",
+      "claim": "Increased Noxa abundance upon CRL5 knockdown/out contributes to CDK9i sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the CRL5 complex targets pro-apoptotic proteins Noxa and Bim for degradation, and increased Noxa abundance upon CRL5 knockdown/out contributes to CDK9i sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the epistasis experiments in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "fbbc0fe0-8064-4461-b9b5-741595ed77be",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C79",
+      "claim": "Cullin-RING complexes comprise the largest class of ubiquitin ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "Cullin-RING complexes comprise the largest class of ubiquitin ligases and regulate a diverse array of biological processes (Petroski and Deshaies, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "fdccf764-580e-4765-8763-54518241a191",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C80",
+      "claim": "CUL3 is implicated in a wide array of cancer biologies.",
+      "claim_type": "EXPLICIT",
+      "source": "While CUL3 is implicated in a wide array of cancer biologies, relatively little is known about the physiological functions of many CUL5-containing ubiquitin ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "ecd1018c-3d44-4ea6-af6c-d36353883b21",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C81",
+      "claim": "Relatively little is known about the physiological functions of many CUL5-containing ubiquitin ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "While CUL3 is implicated in a wide array of cancer biologies, relatively little is known about the physiological functions of many CUL5-containing ubiquitin ligases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "f3b0091b-0ee7-4036-9904-62f305b86066",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C82",
+      "claim": "A few reports have implicated genetic alterations in CUL5 in cancer progression.",
+      "claim_type": "EXPLICIT",
+      "source": "A few reports have implicated genetic alterations in CUL5 in cancer progression and our unbiased screens reveal that the CUL5-RNF7-UBE2F ubiquitin ligase can modulate the apoptotic threshold of LK2 cells in response to multiple emerging cancer therapeutics (Burnatowska-Hledin et al., 2004; Fay et al., 2003; Lubbers et al., 2011; Xu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "8d0e45dc-6df8-45e2-90f9-3a1907886cb9",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C83",
+      "claim": "The CUL5-RNF7-UBE2F ubiquitin ligase can modulate the apoptotic threshold of LK2 cells in response to multiple emerging cancer therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "A few reports have implicated genetic alterations in CUL5 in cancer progression and our unbiased screens reveal that the CUL5-RNF7-UBE2F ubiquitin ligase can modulate the apoptotic threshold of LK2 cells in response to multiple emerging cancer therapeutics (Burnatowska-Hledin et al., 2004; Fay et al., 2003; Lubbers et al., 2011; Xu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "756739b3-c139-4d23-8af9-281b862099b0",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C84",
+      "claim": "Patients with lung cancers that exhibit loss of function mutations in either CUL5, RNF7, UBE2F or Elongin B that coincide with high expression of MCL1/Bcl-xL could be good candidates for treatment with CDK9i or MCL1i.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our data, patients with lung cancers that exhibit loss of function mutations in either CUL5, RNF7, UBE2F or Elongin B that coincide with high expression of MCL1/Bcl-xL could be good candidates for treatment with CDK9i or MCL1i.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clinical implication inferred from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "b0b44295-802d-435a-93ea-8b88d355a74a",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C85",
+      "claim": "There are currently no small-molecule inhibitors that target specific components of the CRL5 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "There are currently no small-molecule inhibitors that target specific components of the CRL5 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of drug development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "2f8972de-afa2-47c4-92f0-0c310ec4596f",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C86",
+      "claim": "MLN4924 inhibits the NEDD8 activating enzyme (NAE), thereby preventing conjugation of NEDD8 onto all cullin scaffolds, and shows significant antitumor activity in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "MLN4924 inhibits the NEDD8 activating enzyme (NAE), thereby preventing conjugation of NEDD8 onto all cullin scaffolds, and shows significant antitumor activity in clinical trials (Soucy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "2049f70a-48dd-481c-9ac4-8dc91b09862f",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C87",
+      "claim": "Treatment with MLN7243, a small molecule inhibitor of the ubiquitin activating enzyme (UAE) currently in clinical trials, depletes cellular ubiquitin conjugates and demonstrates antitumor activity in xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similiarly, treatment with MLN7243, a small molecule inhibitor of the ubiquitin activating enzyme (UAE) currently in clinical trials, depletes cellular ubiquitin conjugates and also demonstrates antitumor activity in xenografts (Hyer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "1059cf49-a4ff-4445-9cf8-22b060237832",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C88",
+      "claim": "Clinically approved proteasome inhibitors such as bortezomib and carfilzomib are currently used in the treatment of multiple myeloma and lymphomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Several clinically approved proteasome inhibitors such as bortezomib and carfilzomib are currently used in the treatment of multiple myeloma and lymphomas (Kuhn et al., 2007; Richardson et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "debd1044-8211-469a-b0db-ab47f4bc9509",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C89",
+      "claim": "Patients experience adverse side effects due to the widespread effects of proteasome inhibition, complicating the possibility of co-dosing with CDK9i or MCL1i.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a therapeutic window exists for these compounds, patients also experience adverse side effects due to the widespread effects of proteasome inhibition, complicating the possibility of co-dosing with CDK9i or MCL1i.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a clinical consideration based on known side effects of proteasome inhibitors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "8829cfae-44df-42b9-98c1-269e22a7535b",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C90",
+      "claim": "The small molecule CC0651 selectively inhibits Cdc34A, an E2 for SCF-type CRLs, and has been shown to impede proliferation of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The small molecule CC0651 selectively inhibits Cdc34A, an E2 for SCF-type CRLs, and has been shown to impede proliferation of cancer cells (Ceccarelli et al., 2011; Huang et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "c965a838-d11c-4bfc-83d4-fb9055056e14",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C91",
+      "claim": "A potent inhibitor (ligand 7) targeting the von Hippel-Landau (VHL) substrate adaptor prevents the degradation of HIF-1\u03b1, a potential treatment for chronic anemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is the synthesis of a potent inhibitor (ligand 7) targeting the von Hippel-Landau (VHL) substrate adaptor, thereby preventing the degradation of HIF-1\u03b1, a potential treatment for chronic anemia (Galdeano et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "3244ba2a-05f9-4f77-9476-8e311fe61f86",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "claim_id": "C92",
+      "claim": "Targeting CRL5 could be used to combat innate and acquired resistance to therapeutics that directly or indirectly affect MCL1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results in LK2 cells suggest that targeting CRL5 could be used to combat innate and acquired resistance to therapeutics that directly or indirectly affect MCL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a therapeutic implication inferred from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02c3c30e-abc5-4a89-8776-974c4930a504",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on MCL1 and Bcl-xL overexpression in cancer, the development of MCL1 and CDK9 inhibitors, and the clinical context of resistance to these therapies in NSCLC. These claims establish the rationale for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C24 are primarily background statements supported by citations to prior literature (C2, C8, C12, C13, C14, C15, C16, C17, C21, C23, C24) or established biological knowledge (C1, C7, C9, C10, C11, C18, C19). Some claims (C3, C20, C22) are supported by data presented later in the manuscript. These claims appropriately contextualize the study and are well-supported by the cited literature and general knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "6c702b7d-0d43-4b8f-a885-09a870ee1fde",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors characterize a panel of NSCLC cell lines for sensitivity to CDK9i and MCL1i, identifying that MCL1-amplified lines with high Bcl-xL expression are resistant, while those with low Bcl-xL are sensitive. Extended CDK9i treatment causes non-specific toxicity in both resistant and sensitive lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C33 are supported by experimental data in Figure 1B-D and Table 1. The correlation between Bcl-xL levels and resistance (C27) is clearly shown in the data. The dose-response curves (C29, C30) and viability assays (C31) provide quantitative support. The interpretation of off-target toxicity (C32, C33) is reasonable given the data, though it involves some inference about mechanism. Overall, these claims are well-supported by the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "53f6bebb-5cd5-4343-b894-57e1fea328ef",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genome-wide CRISPRi screens identified CUL5, RNF7, and UBE2F as components that resensitize resistant cells to both CDK9i and MCL1i. Additional hits include Bcl-xL, VDAC2, EIF4G2, and eIF-3 complex components. The overlap between CDK9i and MCL1i screens is statistically significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C34-C42 are supported by the screen data shown in Figure 2 and supplementary figures. The identification of CRL5 components (C4) is a primary finding validated by multiple independent experiments. The statistical significance of overlap (C41) is supported by hypergeometric test (p<6.4\u00d710\u207b\u2079). The identification of Bcl-xL (C34, C35), VDAC2 (C36), EIF4G2 (C38), and eIF-3 components (C42) is supported by screen data and consistent with cited literature (C35, C37, C39, C43). The screen methodology appears sound with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Validation experiments confirm that depletion of CRL5 components (CUL5, RNF7, UBE2F) resensitizes resistant LK2 cells to CDK9i and MCL1i. CUL5 and RNF7 are interdependent for stability. Unlike Bcl-xL depletion, CRL5 depletion alone does not induce apoptosis. Elongin B but not Elongin C knockdown phenocopies CUL5 depletion. CRL5 depletion does not affect p53, MCL1, or Bcl-xL levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C57 are supported by extensive validation data in Figure 3 and supplementary figures. Western blots confirm knockdown efficiency and protein interdependence (C45, C46). Multiple orthogonal assays (caspase activation, PARP cleavage, dose-response curves, clonogenic assays) demonstrate resensitization (C47, C50, C51). The differential effect of CRL5 vs. Bcl-xL depletion (C48, C49) is clearly shown. The Elongin B/C differential (C52-C54) is interesting but the inference of functional separation (C54) is speculative. The negative results for substrate adaptors (C55) and p53/MCL1/Bcl-xL (C56, C57) are appropriately reported. Overall, the validation is thorough and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "a9e40038-e688-4931-9bf2-baca3f9a2f68",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The CRL5 complex regulates levels of pro-apoptotic BH3-only proteins Noxa and Bim through proteasomal degradation. CRL5 depletion increases Noxa and Bim protein levels without affecting other BH3-only proteins. CDK9i treatment reduces Noxa and Bim mRNA levels, but CUL5 knockdown rescues protein levels, consistent with post-translational regulation. Proteasome inhibitor experiments suggest CRL5 is the primary ligase for Bim, while Noxa may be targeted by additional ligases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C69, C77 are supported by data in Figure 4. Western blots show increased Noxa and Bim upon CRL5 depletion (C59, C60). The qRT-PCR data (C61, C62) support post-translational regulation. The proteasome/lysosome inhibitor experiments (C63-C67) provide mechanistic insight, though the interpretation that CRL5 is the primary ligase for Bim (C66) is reasonable but involves inference. The suggestion that Noxa has additional ligases (C69) is appropriately cautious. However, the authors were unable to demonstrate direct ubiquitination (Figure 4\u2014figure supplement 1), leaving open the possibility of indirect regulation. This limitation should be acknowledged more prominently.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "98808830-6c67-4dce-b608-a0e76105b23d",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Epistasis experiments show that Noxa accumulation is responsible for resensitization to CDK9i but not MCL1i in CUL5-depleted cells. Noxa knockdown prevents CDK9i-induced apoptosis in CUL5-depleted cells, while Bim knockdown does not. Surprisingly, Noxa/Bim knockdown does not prevent MCL1i-induced apoptosis in CUL5-depleted cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C70-C75, C78 are supported by epistasis experiments in Figure 5. The data clearly show that Noxa is required for CDK9i sensitivity (C71, C73) but not MCL1i sensitivity (C74) in CUL5-depleted cells. BAK knockdown prevents apoptosis in both conditions (C70), confirming the apoptotic pathway. The differential requirement for Noxa between CDK9i and MCL1i is surprising and mechanistically interesting. The speculation about potential mechanisms (C75) is appropriately cautious. However, the mechanism underlying MCL1i resensitization remains unclear, which the authors acknowledge. This is a significant gap that limits the completeness of the mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    },
+    {
+      "id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e",
+      "content_id": "bacdd449-6064-4189-a7cb-8adcbf593fbf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors discuss the broader context of CRL5 in cancer biology, the lack of specific CRL5 inhibitors, and the potential therapeutic implications of targeting CRL5 to overcome resistance to MCL1-targeting therapies. They propose that patients with CRL5 loss-of-function mutations could be candidates for CDK9i or MCL1i treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76, C79-C92 are primarily discussion points. The summary conclusions (C76, C83) are supported by the experimental data. Background statements about CRLs and existing inhibitors (C79-C81, C85-C91) are supported by citations. However, the clinical implications (C84, C92) are speculative and not directly tested. The suggestion that CRL5 loss-of-function mutations could predict drug sensitivity (C84) is a reasonable hypothesis based on the cell line data, but would require clinical validation. The therapeutic potential of targeting CRL5 (C92) is also speculative given the lack of specific inhibitors (C85) and the incomplete mechanistic understanding of MCL1i resensitization. These claims represent future directions rather than established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:07:58.539614Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c020b59a-0133-4c33-b3ae-140dce265feb",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "0a929790-3da8-4cef-ac0a-e264d1aa3b34",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "24225f2d-fe53-4ad6-bf95-c0a65fb869c2",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "77e176db-0c2d-4887-b412-cd364d1604b7",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "9f42c02f-8c45-4f09-b334-7a41d97c7134",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "9664de41-6704-4ddf-ad8e-524b61aea67f",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "57f3eb37-28e3-4a50-af18-1b4d02852d24",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "3aa12fa9-579e-4ac8-8bd3-be6da81727cb",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "50a3ac69-2b2d-4d3d-b9f0-4712436bfcbc",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "b189d73b-801f-4b99-a234-f5e08a5fe1ce",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "e858e991-0730-4947-b449-e4af0f42dc61",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "86a5a4fc-6d77-46ab-bff7-55a9053721e4",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "d1d315ca-4280-4179-bea0-e887ac92f89c",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "a24c3571-e84c-4015-898e-9e52759dd4b9",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "5c94ecc4-5f60-4ef4-9784-ee567a3073e8",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "43376993-ead4-4781-b79d-4d4f5f1f4fb2",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "d4a31330-be18-428e-b7b1-55eb617b9773",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "5cb626a5-fd0e-4d7d-bb64-2f69f4ec7ed3",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "1701ce41-6167-4677-8ce6-aaf5a0969421",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "8cc3ba0b-e09b-48bd-94e2-7e61dbf6d2b3",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "26c2485a-9b88-4054-b377-60bbdbf52190",
+      "result_id": "02c3c30e-abc5-4a89-8776-974c4930a504"
+    },
+    {
+      "claim_id": "46110565-e103-4d85-8fa8-646ac2f8fc52",
+      "result_id": "6c702b7d-0d43-4b8f-a885-09a870ee1fde"
+    },
+    {
+      "claim_id": "bee81c03-28eb-44ad-a092-9f768155bb90",
+      "result_id": "6c702b7d-0d43-4b8f-a885-09a870ee1fde"
+    },
+    {
+      "claim_id": "649eb4c8-5641-4ace-848b-084ee1127469",
+      "result_id": "6c702b7d-0d43-4b8f-a885-09a870ee1fde"
+    },
+    {
+      "claim_id": "0646dbb3-587e-4ab5-bed9-158561501038",
+      "result_id": "6c702b7d-0d43-4b8f-a885-09a870ee1fde"
+    },
+    {
+      "claim_id": "f6874d26-c76b-4ebc-b6c3-e0583e182241",
+      "result_id": "6c702b7d-0d43-4b8f-a885-09a870ee1fde"
+    },
+    {
+      "claim_id": "9f9f25de-845e-4657-9aa9-dcb48fac9b66",
+      "result_id": "6c702b7d-0d43-4b8f-a885-09a870ee1fde"
+    },
+    {
+      "claim_id": "0eebe70c-12c8-46e2-9c7e-c509d2946ff2",
+      "result_id": "6c702b7d-0d43-4b8f-a885-09a870ee1fde"
+    },
+    {
+      "claim_id": "61a30880-e2ab-4d0b-a525-671a6fcd73c9",
+      "result_id": "6c702b7d-0d43-4b8f-a885-09a870ee1fde"
+    },
+    {
+      "claim_id": "8cd40627-6ff4-4b79-823a-2f736ab12f02",
+      "result_id": "6c702b7d-0d43-4b8f-a885-09a870ee1fde"
+    },
+    {
+      "claim_id": "059287e0-bdd0-4be0-9739-8607eba75407",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "76d5861b-8378-4d65-9540-1f7ee8a6453c",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "91f86015-4e30-417a-8d2f-a22fe16ecb34",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "fb2d9db5-3d8d-4b97-80de-ae865109b20c",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "eeb5d290-f7d9-43bd-8ef6-d23dc456a760",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "23da4596-6eb8-4696-9580-5666b9c548a9",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "1f292a20-91f7-4d3d-a468-a7921da8bc43",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "84a948d6-c6bb-457e-b2de-d1b6c9c672f9",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "1bb3161b-895f-4991-b9e2-512c900bf649",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "2a27cd8e-9b42-4089-9dd3-395665c24a71",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "2cbdb9e3-e82d-4015-9979-89f1d215338d",
+      "result_id": "53f6bebb-5cd5-4343-b894-57e1fea328ef"
+    },
+    {
+      "claim_id": "86707434-3478-4c53-b661-920ba8c1cfcb",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "58e32649-d0d8-4f5c-8e90-8e61cc2c0e00",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "f07f34e5-cdc2-41f9-a173-8700cc83b7fb",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "1f267848-7af5-448d-99bd-04e918f39064",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "b0e218fb-9132-4a87-b125-381f77c6bf3c",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "88e1fe2c-3a3f-4db4-9676-82907c4a0bdd",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "3e344e95-7af6-4c77-8b4d-992609438828",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "55b11eb6-3ae8-4225-8e3c-4d73e756b6e4",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "8e53dbb1-53d4-4b6a-9c08-7cd837ddfc07",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "a81f198f-b7bc-49cf-ac3a-d34a089a75c3",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "3eac87f2-16d0-4d94-a947-d6646f22285c",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "58e952c0-9c87-4081-90da-a87b133c335b",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "96f24826-f549-4fb7-9d34-0d28530acc1c",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "30bfd59b-c948-43f8-bfbb-1dcdb2a0ab03",
+      "result_id": "54bffd4b-f667-4840-b8b3-b4a93c336dc9"
+    },
+    {
+      "claim_id": "88c7620b-fee3-4dc5-9600-1b09dc305f4a",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "5986f337-40d6-4693-878d-98103d3e14bb",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "000d2117-47b3-46af-a748-0d0a549dd1e0",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "64b3a90a-7928-43fe-a960-6216d8e290de",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "d9b67f68-1d00-40fd-8be1-8ec648a18acf",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "7c53c1db-fdbd-4f61-a218-ecad3b446d42",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "8be2ea4b-07ef-411f-8ada-519d10a5bb23",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "de262cb3-afe4-473c-9f33-02c91fa17b4d",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "01d962cc-7935-4ff6-8f43-a9278522450d",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "6c1d6468-fd6e-4b7a-9b07-fc7e9b89a59d",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "8942d24d-92ad-482d-a9e8-fa78cd75b5f2",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "67b8401e-7d51-4d9a-9a5f-1b6ec760b4fe",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "569f3183-0218-4cb7-bf6d-19b66e7aa3f2",
+      "result_id": "a9e40038-e688-4931-9bf2-baca3f9a2f68"
+    },
+    {
+      "claim_id": "cd8cceaa-0460-42fe-a19d-2beb8846f5b1",
+      "result_id": "98808830-6c67-4dce-b608-a0e76105b23d"
+    },
+    {
+      "claim_id": "4e77898d-9178-4bb8-b22d-3b283e35afc8",
+      "result_id": "98808830-6c67-4dce-b608-a0e76105b23d"
+    },
+    {
+      "claim_id": "b59e32f3-e7c4-4a2c-9d5d-43e0edb5470f",
+      "result_id": "98808830-6c67-4dce-b608-a0e76105b23d"
+    },
+    {
+      "claim_id": "27443875-ca0e-4443-ade0-aadd5b03ba91",
+      "result_id": "98808830-6c67-4dce-b608-a0e76105b23d"
+    },
+    {
+      "claim_id": "7a9ef486-17b3-47da-9706-5b027717dc5f",
+      "result_id": "98808830-6c67-4dce-b608-a0e76105b23d"
+    },
+    {
+      "claim_id": "34bef56e-fca0-4ae6-a8e5-b5ac7d5f9dc2",
+      "result_id": "98808830-6c67-4dce-b608-a0e76105b23d"
+    },
+    {
+      "claim_id": "2d466c02-b759-44cf-a174-a1d48d59e19a",
+      "result_id": "98808830-6c67-4dce-b608-a0e76105b23d"
+    },
+    {
+      "claim_id": "7e61b89e-e0de-4cbb-84dd-23c12f877eeb",
+      "result_id": "98808830-6c67-4dce-b608-a0e76105b23d"
+    },
+    {
+      "claim_id": "cd6a23b1-4c43-417e-83f9-9d05e411ad3d",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "fbbc0fe0-8064-4461-b9b5-741595ed77be",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "fdccf764-580e-4765-8763-54518241a191",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "ecd1018c-3d44-4ea6-af6c-d36353883b21",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "f3b0091b-0ee7-4036-9904-62f305b86066",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "8d0e45dc-6df8-45e2-90f9-3a1907886cb9",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "756739b3-c139-4d23-8af9-281b862099b0",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "b0b44295-802d-435a-93ea-8b88d355a74a",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "2f8972de-afa2-47c4-92f0-0c310ec4596f",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "2049f70a-48dd-481c-9ac4-8dc91b09862f",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "1059cf49-a4ff-4445-9cf8-22b060237832",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "debd1044-8211-469a-b0db-ab47f4bc9509",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "8829cfae-44df-42b9-98c1-269e22a7535b",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "c965a838-d11c-4bfc-83d4-fb9055056e14",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    },
+    {
+      "claim_id": "3244ba2a-05f9-4f77-9476-8e311fe61f86",
+      "result_id": "4eefc7ac-da8a-4dbe-9e43-3d25e9db8d6e"
+    }
+  ],
+  "comparisons": []
+}

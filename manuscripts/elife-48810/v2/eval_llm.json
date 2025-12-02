@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C29",
+      "C30",
+      "C39",
+      "C40",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Across five experiments using a matching-pennies game variant, participants toggled between model-based and stochastic selection strategies based on feedback. Following wins, participants used model-based selection that tracked opponent switch rates; following losses, they reverted to stochastic selection centered around 50% switch rate, independent of opponent strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C29-C30, C39-C40 are strongly supported by behavioral data across all five experiments shown in Figure 2. The pattern is robust across different experimental manipulations (ITI in C46, response complexity in C48-C51, human opponents in C52), demonstrating the generalizability of the feedback-contingent strategy switching. Statistical analyses confirm significant interactions between feedback and opponent switch rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C53",
+      "C54",
+      "C55",
+      "C67",
+      "C68"
+    ],
+    "result": "Computational modeling revealed that choice behavior is influenced by four factors: model-based selection (ms parameter 0.48-0.87), loss-contingent suppression of the model (sm parameter), perseveration bias (pe parameter), and win-stay/lose-shift bias (ss parameter). The loss-contingent model suppression parameter had robust effects on choice behavior across all experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C53-C55, C67-C68 are supported by modeling results in Table 1 showing consistent parameter estimates across experiments. The model fits group-average data well (R\u00b2 0.975-0.998) and individual-level analyses confirm the robustness of all four parameters. The sm parameter is consistently negative and significant, indicating model suppression after losses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C70",
+      "C92",
+      "C110"
+    ],
+    "result": "Individual differences in model parameters predicted competitive success. Greater model strength positively predicted success, while perseveration/alternation biases reduced earnings. Critically, the loss-contingent increase in stochasticity (sm parameter) negatively predicted success, representing a suboptimal influence on performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C63-C66, C69-C70, C92, C110 are supported by regression analyses in Tables 2 and 3. The relationships between model parameters and competitive success are statistically significant and consistent across experiments with simulated opponents (Table 2) and human opponents (Table 3). The negative effect of stochasticity on success is particularly robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C95"
+    ],
+    "result": "The loss-induced increase in stochastic choice was not accompanied by consistent increases in error rates or reaction times across individuals. The post-win/loss contrast in model-based choice remained robust after controlling for RTs and errors, indicating that stochasticity reflects strategic choice rather than general information-processing noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C95 are supported by data in Figure 3 showing no consistent relationship between model-based choice slopes and error rates or RTs. Multilevel regression analyses controlling for RTs and errors still showed robust post-win/loss effects (t-values 3.96-10.78). This dissociation between choice stochasticity and action execution errors is critical for distinguishing strategic from noise-based accounts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C31",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C102",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "EEG data from Experiment 5 revealed that mid-frontal feedback-related activity contained information about opponent strategy (global switch rate and local history) following wins but not losses. After wins, EEG signals robustly encoded context variables; after losses, this information was initially present but suppressed by ~400ms post-feedback, indicating temporary suppression of the internal model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C31, C74-C79, C102, C117-C119 are supported by EEG regression analyses in Figure 5 showing significant post-win vs. post-loss differences in context encoding (opponent switch rate: t(25)=5.22, p<0.001; opponent lag-1: t(25)=4.14, p=0.001; interaction: t(25)=-7.22, p<0.001). The time-course analysis demonstrates initial activation followed by suppression on loss trials, providing neural evidence for the behavioral pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Psychophysiological interaction (PPI) analysis showed that residual EEG activity predicted upcoming choices on post-win trials. The EEG signal modulated how opponent's recent behavior (n-1 switch/repeat) affected upcoming choices, demonstrating that context information in the EEG signal is behaviorally relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by PPI analysis results in Table 4 showing significant main effects and interactions between residual EEG and context variables for post-win trials. The significant interaction between residual EEG and opponent's n-1 switch/repeat (z=-3.31) directly demonstrates that EEG-encoded information influences choice behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Individual differences analysis revealed that the strength of context representation in post-win EEG signals predicted both model-based adaptation (switch-rate slopes) and overall competitive success. These relationships were largely absent for post-loss trials, consistent with suppression of model-based representations after negative feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 are based on exploratory individual differences analyses shown in Figure 6 with a small sample (N=25). While the pattern of correlations is consistent with the main hypothesis, the authors acknowledge this was not designed as an individual differences study and results should be interpreted with caution. Some correlations reach significance but the small sample limits confidence in generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Stochastic choice following losses is not due to loss-induced processing constraints, as manipulating inter-trial interval (300ms vs 1000ms) had no effect on the pattern of results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by Experiment 2 data in Figure 2 showing identical patterns for both ITI conditions. This control experiment rules out the alternative explanation that post-loss stochasticity results from insufficient time to engage model-based processing, strengthening the interpretation that it reflects an active strategic shift.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "In Experiment 4a with human opponents, model strength was substantially smaller than with simulated opponents but still significant. The model suppression parameter was significant and approximately equal in magnitude to model strength, indicating near-complete elimination of model effects on post-loss trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by modeling results in Table 1 showing ms=0.16\u00b10.10 and sm=-0.14\u00b10.13 for Experiment 4a. The similar magnitudes of these parameters support the interpretation that model effects are eliminated after losses. However, the overall weaker model-based behavior with human opponents likely reflects greater variability in naturally occurring opponent strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors propose that the mixed-strategy approach allows negotiating two conflicting goals: exploiting opponent deviations from randomness while remaining unpredictable. Wins signal model validity; losses signal potential model invalidity or danger of exploitation, triggering exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C106-C108 represent theoretical interpretations of the findings. While the data demonstrate feedback-contingent strategy switching, the adaptive function remains speculative. The negative correlation between post-loss stochasticity and success (C70, C110) suggests this strategy may be maladaptive rather than adaptive, contradicting the proposed functional account.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The introduction establishes theoretical background on competitive decision-making, memory-based constraints on unpredictable behavior, model-free vs. model-based selection, and the potential benefits and costs of stochastic choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C26 are background knowledge claims supported by appropriate citations to prior literature. These establish the theoretical context for the study but do not represent novel empirical findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Methods description covering the fox/rabbit paradigm design, participant samples, experimental procedures, and key design features across all five experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38, C125-C139 accurately describe the experimental methods. The paradigm is well-designed to distinguish model-based from stochastic behavior through systematic variation of opponent switch rates. Sample sizes are adequate (N=25-100 per experiment) and procedures are clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Discussion contextualizes findings within prior literature on feedback asymmetries, model-based/model-free decision-making, and related work in animal models. The authors note consistency with studies by Donahue et al. (2013), Tervo et al. (2014), and Hermoso-Mendizabal et al. (2019).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C93-C94, C96-C101, C103-C105, C109, C111-C116, C120-C124 appropriately contextualize the findings within existing literature. The comparisons to related work are generally accurate, though some interpretations (e.g., C109 regarding irrationality, C111 regarding learned helplessness) extend beyond the data.",
+    "result_type": "MINOR"
+  }
+]

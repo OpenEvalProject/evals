@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The study identified 4 DCN cells with synaptic input from at least 4 PCs each (24 presynaptic, 35 non-synaptic PCs total). Two DCN cells were localized to the interpositus nucleus, two were likely in interpositus or medial dentate. All DCN cells showed mixed tonic/bursting firing patterns. PC firing rates did not differ between presynaptic and non-synaptic groups, and DCN firing rates were within typical ranges though lower than a previous larger sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 provide a clear description of the experimental dataset with appropriate statistical comparisons and anatomical localization. The characterization of firing patterns and rates is well-documented with specific values and statistical tests (C30, C31). The small sample size (n=4 DCN cells) is acknowledged but the data are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CS-triggered correlograms showed a sharp drop in DCN activity at 1.5 ms latency (consistent with monosynaptic connection), with response ending at 68.75\u00b112.66 ms (average duration 67.25 ms). A brief pre-CS excitation was present in 4/24 cases. Long-latency increases in DCN activity occurred 200-500 ms before and after CSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C47-C49 describe temporal features of CS-DCN relationships with specific latencies and durations. The 1.5 ms onset latency is physiologically plausible for monosynaptic connections. Measurements are quantified with appropriate statistics (mean\u00b1SD, n=4). The observations are directly supported by the correlograms shown in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C75",
+      "C79"
+    ],
+    "result": "Presynaptic PCs were spatially restricted in the mediolateral (ML) direction, forming narrow rostrocaudal strips. The average ML separation of presynaptic PCs fell below the 5th percentile of random distributions in all cases and below the 1st percentile in 3/4 cases. Rostrocaudal separation was similar between presynaptic and random groups. This spatial organization is consistent with known PC-DCN projection topography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C75, C79 demonstrate spatial clustering of presynaptic PCs using rigorous statistical comparison to randomized controls (Figure 3). The finding that ML but not rostrocaudal separation differs from random is internally consistent and aligns with cited anatomical studies of PC-DCN projections. The statistical approach (percentile analysis) is appropriate for the small sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C76",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Presynaptic PCs showed significantly higher CS synchrony at all separation distances compared to non-synaptic PCs (p<0.05 at 0, 250, 500 \u03bcm). For non-synaptic PCs, synchrony decreased with ML separation (consistent with prior studies), while for presynaptic PCs synchrony remained constant or increased with ML separation. This pattern is consistent with presynaptic PCs belonging to the same zebrin band.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C76, C81-C83 present synchrony analysis with appropriate statistical tests showing significant differences between presynaptic and non-synaptic groups (Figure 4). The maintained synchrony with distance for presynaptic PCs is a key finding supported by both parametric and non-parametric tests. The interpretation linking this to zebrin band organization is well-reasoned based on cited anatomical literature (C80-C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "CS synchrony events at all levels occurred in the experiments, though events with CSs in only one or a minority of presynaptic PCs were most common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 describe the distribution of synchrony levels shown in Figure 5. The observation that low synchrony events are most common but all levels occur is clearly demonstrated by the histograms. This provides important context for subsequent analyses of synchrony-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "Post-CS inhibition of DCN activity increased significantly with CS synchrony level. At the highest synchrony levels (6/7 and 7/7), DCN cells were almost completely silenced for ~100 ms. The inhibitory effect was weakest when only one PC fired a CS and strongest at highest synchrony. Combined data showed strong correlation between CS synchrony and inhibition strength (r=0.93, p=4\u00d710\u207b\u2079, n=20), with all experiments fitting a single regression line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C51-C54, C57 present the core finding of synchrony-dependent inhibition with robust statistical support (Figure 6-7). The correlation is very strong (r=0.93) and highly significant. The consistency across all four experiments (single regression line fits all data) strengthens the conclusion. Both visual (rasters) and quantitative (histograms, statistics) evidence converge on this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The duration of initial post-CS inhibition generally did not vary significantly with synchrony, except possibly at the highest levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by the analysis in Figure 7A showing response durations across synchrony levels. While two experiments showed significant correlations, the authors note this was driven by less reliable measurements at highest synchrony levels (fewer sweeps). The conclusion that duration is largely independent of synchrony is reasonable given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Baseline DCN activity showed little change across synchrony levels, with no significant correlation between baseline and synchrony (p=0.14, n=20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 address the important control that the synchrony-dependent inhibition is not due to baseline changes (Figure 7G). The statistical test appropriately shows no significant relationship. This strengthens the interpretation that synchrony specifically affects the post-CS response rather than reflecting pre-existing differences in DCN activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "For individual PCs, high synchrony CSs caused significantly greater DCN inhibition than all CSs (All: -38.4\u00b115.4%; Synchronous: -72.5\u00b113.1; p=1\u00d710\u207b\u2077, n=24). This held for 23/24 PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 demonstrate that the synchrony effect holds at the individual PC level, not just for population averages (Figure 8). The statistical test is appropriate (Wilcoxon signed rank) and highly significant. The near-universal effect (23/24 PCs) is compelling evidence for the robustness of the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Regression analysis extrapolating to single PC effects yielded good fits (r\u00b2: 0.85-0.99) and estimated that an isolated CS has at most a weak effect on DCN activity (estimated inhibition not significantly different from zero: p=0.10-0.11, n=4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C62 involve extrapolation beyond the measured data range to estimate single PC effects. While the regression fits are good (C60), extrapolating to 1-2% of the population (single PC among 50-100 total) involves substantial uncertainty. The assumption of linearity may not hold at very low synchrony levels. The conclusion (C62) is reasonable but should be considered tentative given the extrapolation required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C78"
+    ],
+    "result": "The temporal precision of CS synchrony required for maximal DCN inhibition was ~10 ms in most cases. The \u00b15 ms window contained the most synchronous events, followed by a sharp drop. Expanding the time window reduced inhibitory effectiveness in 3/4 experiments. Removing the most precisely synchronized events further reduced inhibition, with one experiment showing inhibition equivalent to single PC events. The precision of synchrony was found to be ~10 ms in most cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71, C78 analyze temporal precision requirements using multiple complementary approaches (Figure 9-10). The histogram analysis (C63-C65) and effectiveness curves (C66-C67) converge on ~10 ms precision. The 'donut' analysis (C69-C70) provides additional evidence that precise synchrony is critical. Experiment A shows a distinct pattern (C67) which is acknowledged and discussed. The overall conclusion about ~10 ms precision is well-supported for 3/4 experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Long-latency modulation of DCN activity was prominent in 3/4 experiments. Pre-CS activity showed a non-significant trend toward increasing with synchrony (r=0.45, p=0.08, n=16). Post-CS long-latency excitation showed significant correlation with synchrony (r=0.56, p=0.024, n=16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 describe longer-timescale effects (Figure 11). The statistical analysis appropriately distinguishes significant (post-CS) from non-significant (pre-CS) correlations. The correlation for post-CS excitation is modest (r=0.56) but significant. The absence of this modulation in 1/4 experiments (C72) suggests some heterogeneity, but the overall pattern is supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C77"
+    ],
+    "result": "The main findings are that presynaptic PCs are located in rostrocaudal strips with synchronous CS activity, CS-associated DCN modulation includes short-latency inhibition and long-latency excitations, post-CS response amplitudes correlate with PC synchronization level, temporal precision of \u226410 ms is required for maximal CS effectiveness, and CS synchrony is a key control parameter of cerebellar output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C8, C77 summarize the main findings. These are well-supported by the detailed analyses in the results section. The spatial organization (C2), synchrony patterns (C3), temporal modulation (C4-C5), synchrony-dependence (C6), temporal precision (C7), and overall conclusion (C8, C77) are all backed by convergent evidence from multiple analyses with appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C88",
+      "C89"
+    ],
+    "result": "Anatomical considerations support the identification of synaptic connections: PC input to each DCN region comes from one zebrin band, olivary axons branch to innervate ~7 PCs in rats, and olivary branches are generally confined to the same narrow cortical strip.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C88-C89 cite established anatomical literature to support the interpretation of the correlogram-based connectivity identification. The citations are appropriate and the anatomical constraints are well-established. This provides important context for interpreting the spatial clustering results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Alternative explanations for the post-CS inhibition can be excluded: olivocerebellar and mossy fiber collaterals are excitatory and would need to show precisely-timed decreases; the olivocerebellar system is active during CSs; and the post-CS pause in SSs would cause DCN excitation, not inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 systematically exclude alternative explanations for the observed inhibition. The reasoning is sound: excitatory inputs (C84-C85) cannot explain inhibition, olivocerebellar activity is definitionally present during CSs (C86), and SS pauses would have opposite effects (C87). This strengthens the conclusion that CS activity directly causes the inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The major limitation is the low number of DCN cells (n=4) with identified presynaptic PCs. However, all four showed similar strong relationships between CS synchrony and DCN inhibition, suggesting the relationship is not rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 appropriately acknowledge the main limitation (small n) while noting the consistency of findings. The authors correctly note that each case involves thousands of spikes, providing substantial data per cell. The consistency across all four cases (C91) does suggest generalizability, though caution is warranted given the small sample.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Regarding anesthesia effects: differences between ketamine-anesthetized and awake animals have been reported, but CS/SS/DCN firing rates are similar in both conditions, DCN rates in awake animals vary widely (10-100+ Hz), CS synchrony patterns are similar, the PC-DCN synapse is GABAergic (not affected by ketamine's NMDA blocking), and ketamine has negligible effects on GABA-A receptors except alpha6 subunit (found only on granule cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 address the important limitation of using anesthesia. The arguments are well-reasoned with appropriate citations: firing rates are comparable (C93-C94), synchrony patterns are preserved (C95), and the GABAergic synapse should not be affected by ketamine (C96-C99). This provides reasonable justification that the key findings likely generalize to awake conditions, though direct confirmation would be ideal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "CS synchrony patterns change during movement, CS activity influences interpositus firing during conditioned eyeblinks, suggesting synchrony is a physiologically relevant parameter for cerebellar output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 cite relevant behavioral studies showing that CS synchrony is modulated during behavior and affects DCN activity in vivo. The citations are appropriate and support the physiological relevance of the findings. However, these are inferences from other studies rather than direct demonstrations in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Individual PC SS activity has 'near negligible' effects on DCN cells. While CSs trigger high-frequency axonal spike bursts, DCN cells should function as coincidence detectors given their short membrane time constants (~7 ms in vivo vs ~35 ms in vitro) and brief IPSCs (~2 ms), consistent with the finding that precisely synchronized CSs are most effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 integrate the current findings with prior electrophysiological studies. The citations are appropriate (C103-C107) and the inference about coincidence detection (C108) is well-reasoned given the temporal properties. This provides a mechanistic framework for understanding why synchrony is critical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "DCN-IO projection neurons have very long IPSC time constants and likely longer membrane time constants, so their modulation would not require precisely synchronized input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 note an exception to the coincidence detector model for a specific DCN cell subtype. The citations are appropriate and the inference is logical. This is used to potentially explain the distinct pattern in Experiment A, though this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "CSs can have up to 8 spikelets over ~20 ms (not all associated with axonal spikes), CS-CS correlogram peaks are typically 5-10 ms wide, and DCN neurons have plateau potentials and can exhibit bistability, which could prolong inhibition beyond IPSP duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 cite relevant physiological properties that help explain the observed inhibition duration. The citations are appropriate and the reasoning is sound. These factors could explain why inhibition lasts longer than would be expected from single brief IPSCs alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C122"
+    ],
+    "result": "Following the post-CS pause, SS activity rebounds to higher-than-baseline rates for 50-100 ms, then shows mildly decreased activity until ~600 ms post-CS. Synchronous CS activity may act both directly and by synchronizing SS activity modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116, C122 cite SS modulation patterns and propose a mechanism involving both direct CS effects and indirect effects via synchronized SS modulation. The citations are appropriate (C115-C116) and the proposed mechanism (C122) is reasonable, though it remains somewhat speculative as it is not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Synchrony is a critical parameter of PC influence on DCN. The olivocerebellar system is organized to generate synchronous CS activity across large PC ensembles in rostrocaudal strips extending across lobules, while spontaneous SS activity shows low synchronization. Olivocerebellar synchrony may be the key control parameter of DCN activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 synthesize the current findings with prior literature to argue for a central role of olivocerebellar synchrony in controlling DCN output. The argument is well-constructed with appropriate citations (C118-C120). The conclusion (C121) is a reasonable inference from the data, though it is stated cautiously ('may be') acknowledging that SS activity also plays a role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23"
+    ],
+    "result": "Background and motivation: PCs are the major input to DCN cells (70-80% of synapses). The cerebellum plays significant roles in brain function with output from DCN. While PC GABAergic nature suggests inverse PC-DCN relationships, this is often not observed during behavior. Prior work shows DCN firing is more effectively phase-locked by synchronized PC activity, synchronous CSs occur in rostrocaudal strips and zebrin compartments, and generalized CS synchrony increases are associated with greater DCN inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C23 provide background context with appropriate citations. These establish the motivation for the study by noting the complexity of PC-DCN relationships and prior evidence for synchrony-dependent effects. The citations are appropriate and accurately represent prior work.",
+    "result_type": "MINOR"
+  }
+]

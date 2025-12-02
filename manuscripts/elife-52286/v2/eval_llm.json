@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes the context and motivation for developing automated cryoFIB milling by describing the capabilities and limitations of current cryoET and manual cryoFIB milling methods. CryoET is a powerful technique for imaging cells in native states but is limited to thin samples (<800 nm), requiring sample thinning via cryoFIB milling. Current manual cryoFIB milling methods are low-throughput, time-consuming, and require constant operator attention with manual inputs every 5-15 minutes, producing up to 16 lamellae in 10 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide well-established background knowledge supported by multiple citations to the literature. The technical specifications (e.g., 800 nm thickness limit, 16 lamellae per 10 hr session) are appropriately referenced, and the description of manual workflow limitations is consistent with established practice in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors developed and implemented an automated sequential cryoFIB milling method on two Zeiss Crossbeam 550 FIB-SEM instruments using SmartFIB software. The method incorporates stage backlash correction and drift correction modules for reliable targeting, allows unattended execution after setup (~9 min per target), and uses specific milling parameters including tungsten coating (~4 nm), platinum deposition, and four FIB currents (700, 300, 100, and 50 pA) for rough milling and polishing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C80 provide detailed technical descriptions of the automated method implementation, equipment specifications, and protocol parameters. These are directly observable experimental details that are well-documented with specific values, times, and procedures. The method description is sufficiently detailed for reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The automated rough milling method was tested across nine independent sessions on yeast and cyanobacteria samples, achieving a 98% success rate (121/123 lamellae). The only failures resulted from user error (duplicate milling and milling on a grid bar). The method successfully generated 10 lamellae across two grids with different samples, demonstrating robustness of the targeting routine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 present quantitative experimental results with clear success metrics and sample sizes (n=123). The data is presented in Table 1 and shows high reproducibility across multiple sessions and sample types. The attribution of failures to user error is supported by specific descriptions of the errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C92"
+    ],
+    "result": "Automated sequential polishing achieved an 88% success rate (93/106 rough lamellae). Analysis revealed that 9 of 13 failures occurred in session C where lamellae were left in the instrument for 10 hours before polishing, showing signs of bending. When session C was repeated without delay (sessions H and I), bending was not observed and 95% polishing success was obtained, leading to the recommendation to execute rough milling and polishing in quick succession.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 and C92 present experimental data identifying a specific failure mode (lamella bending after delays) and demonstrate causality through controlled repetition of the experiment. The comparison between session C (with delay) and sessions H/I (without delay) provides strong evidence for the timing recommendation. The sample sizes are adequate (n=106 total).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C99"
+    ],
+    "result": "Of 93 fully automated lamellae, 16% were lost in transfer and 3% showed contamination or cracks. Lamella thicknesses ranged from 117-379 nm (300 nm pattern spacing), with an average of 243 nm for automated lamellae, comparable to 258 nm for manually polished lamellae. Minute drift during polishing is suggested as a possible contributor to thickness variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 provide quantitative data on lamella quality and thickness measurements from tomograms (supported by Figure 2 supplements). The comparison between automated and manual methods shows comparable results. However, C99 is speculative about drift as a cause of thickness variation without direct evidence, though this is appropriately presented as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "CryoET imaging of automated lamellae revealed distinct cellular features in both yeast (nuclei, nuclear pore complexes, mitochondria, endoplasmic reticula, ribosomes, vacuoles, and microtubules with 13 protofilaments) and cyanobacteria (thylakoid membranes, phycobilisomes, septal junctions). The lamellae were suitable for high-quality cryoET imaging, demonstrating reproducible application to both eukaryotic and bacterial model organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C93-C95, C97-C98 describe observations from tomographic data with supporting images in Figure 3. The identification of cellular structures demonstrates that automated lamellae preserve structural information at high quality. The protofilament count (C93) is directly observable in Figure 3C. Thickness measurements (C94, C95) are specific and verifiable from the tomograms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Subtomogram averaging of cyanobacterial septal junctions from nine automated lamellae yielded 412 extracted particles, with 343 remaining after classification. The resulting structure with 5-fold symmetry showed the same architecture as previously described (cap module with five arches, plug module, tube module), with FSC analysis indicating resolution similar to structures from manually milled samples (343 particles each).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 and C55-C60 present a complete subtomogram averaging workflow with specific particle numbers and processing steps. The comparison to previous manual milling results (Weiss et al., 2019) using matched particle numbers provides a fair benchmark. FSC curves (Figure 3 supplement 1) support the resolution comparison. The structural features match prior work, validating the quality of automated lamellae for structural biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C96"
+    ],
+    "result": "The automated method significantly reduces operator time from ~10 hours to ~2.4 hours per session (16 targets) and reduces minimum machine time from 30-45 min to ~25.75 min per lamella (~9 min setup + ~16.75 min milling). This represents a substantial reduction in user input requirements and improvement in throughput.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C96 present time comparisons based on experimental measurements (C14, C48, C49) and cited manual method times (C9, Medeiros et al., 2018). The calculations are straightforward and the improvements are substantial. However, C34 notes that values depend on sample type, thickness, and instrument stability, appropriately qualifying the generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors conclude that the automated procedure can be adapted to various samples and milling techniques, will enable systematic exploration of novel milling methods, can be combined with correlated pre-screening approaches (cryo-light microscopy, cryo-FIB-SEM volume imaging), and renders cryoET applicable to previously unfeasible projects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C38 are largely speculative about future applications and broader impacts. While C35 and C37 cite relevant techniques, the actual demonstration of adaptability is limited to two sample types (yeast and cyanobacteria). C36 is explicitly speculative about future exploration. C38 is a broad conclusion that, while reasonable given the demonstrated improvements, extends beyond what was directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Rough milling exposure took approximately 12 minutes per target and polishing took approximately 4.75 minutes. Instrument 2 suffered from stage drift requiring a 3-minute wait time before polishing, implemented using low current patterns as a workaround since SmartFIB lacks integrated wait time functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide specific timing measurements and describe an instrument-specific issue with an implemented solution. The stage drift problem and workaround are practical details that demonstrate the method's adaptability to instrument variations. These are directly observable experimental parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "CryoET data was collected on a Titan Krios 300kV microscope with specific parameters: cyanobacteria at 2\u00b0 increments (\u00b160\u00b0), -8 \u03bcm defocus, ~140 e-/\u00c5\u00b2 dose, 3.38 \u00c5 pixel size; yeast at 2\u00b0 increments (\u00b160\u00b0), -8 \u03bcm defocus, ~120 e-/\u00c5\u00b2 dose, 4.57 \u00c5 pixel size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide standard data collection parameters that are clearly specified and appropriate for cryoET. These are routine methodological details necessary for reproducibility and are well within established practices for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study used S. cerevisiae SK1 (diploid, specific genotype) generated in this study and wild-type Anabaena sp. PCC7120 (from Rippka et al., 1979). Samples were prepared by plunge-freezing with specific parameters (back-blotted twice for 3-5 s, 4\u00b0C, 95% humidity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 provide standard strain information and sample preparation details. The genotypes are clearly specified in Table 2, and the plunge-freezing protocol is a standard method. These are routine methodological details necessary for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The manuscript describes the standard manual cryoFIB workflow (plunge-freezing, rough milling with decreasing currents to ~500 nm, polishing to 100-250 nm using visual endpoint detection) and contrasts it with the automated approach where exposure time is calculated by software and the user can choose manual or automated polishing. The automated workflow includes automatic stage movement, backlash correction, drift correction via image recognition, and sequential pattern exposure from highest to lowest current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 accurately describe both manual and automated workflows, with the manual method supported by citations and the automated method supported by experimental implementation. The comparison clearly highlights the key differences (visual vs. calculated endpoints, manual vs. automated execution). These descriptions are consistent with the demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

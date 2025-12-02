@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims establishing that diabetes is a risk factor for severe influenza, describing diabetes types and complications, and reviewing prior work on hyperglycemia's effects on infections and epithelial barriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C21) are all supported by appropriate citations to prior literature and represent established knowledge in the field. They provide necessary context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28"
+    ],
+    "result": "High glucose history increases IAV-induced barrier damage in vitro without increasing viral replication or widespread cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are well-supported by experimental data in Figure 1, showing increased TEER decrease and dextran permeability in high glucose co-cultures without differences in viral replication or LDH release. The experimental design appropriately controls for glucose exposure timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Endothelial cells are the main drivers of high glucose-induced barrier damage, as the effect is absent in epithelial mono-cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by comparative experiments between co-cultures and mono-cultures (Figure 2). The absence of the high glucose effect in epithelial mono-cultures provides strong evidence for endothelial involvement, though the inference in C33 could be strengthened with additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "High glucose endothelial cells exhibit a more pro-inflammatory state after IAV infection, with reduced regulatory pathways and increased pro-inflammatory cytokine expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 are supported by RNASeq data (Figure 3A-C) and qPCR/protein measurements (Figure 3D-E). The pathway analysis showing differential enrichment between glucose conditions is compelling, though the interpretation of a 'more pro-inflammatory state' (C38) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48"
+    ],
+    "result": "A heat-labile soluble factor from high glucose infected co-cultures induces barrier damage, requiring active virus but not IL-1\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 are supported by supernatant transfer experiments (Figure 3F), UV-inactivation studies (Figure 3\u2014supplement 1), and Anakinra treatment (Figure 3\u2014supplement 2). The experiments logically demonstrate that a secreted protein mediates the effect, though the specific factor remains unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "High glucose conditions lead to reduced Claudin-4 and JAM-1 in epithelial junctions in co-cultures but not mono-cultures, with damage occurring in both infected and bystander cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by immunofluorescence data (Figures 4 and 5). The observation that damage occurs in bystander cells (C54) supports the soluble factor hypothesis. The co-culture vs mono-culture comparison strengthens the endothelial-mediated mechanism, though quantification methods could be more rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C96"
+    ],
+    "result": "In vivo validation using leprdb/db mice shows that hyperglycemia increases IAV severity (reduced blood oxygen saturation) with reduced tight junction proteins and elevated cytokines, without increased infectious virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C69 and C96 present in vivo data (Figure 6) that generally support the in vitro findings. However, several concerns limit confidence: (1) cytokine differences often lack statistical significance (C68, p=0.06 for IP-10), (2) viral mRNA differs between groups (C65) despite no difference in infectious virus (C64), creating inconsistency, (3) the authors cannot definitively show cytokines are endothelial-derived in vivo (C69), and (4) only one time point (3 dpi) is examined. The model is appropriate but validation is incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "Summary and interpretation: hyperglycemia increases influenza severity through endothelial inflammation and epithelial barrier damage, with clinical implications for glucose control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C73, C76-C77, and C93-C98 represent the authors' interpretation and proposed mechanism. While the in vitro data strongly support the mechanism (C71, C93-C95), the in vivo validation is incomplete (see previous result). The claim of 'first evidence' (C97) may be overstated given prior work on hyperglycemia and barriers. The clinical recommendation (C98) is reasonable but speculative given the model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C46",
+      "C49",
+      "C50",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Discussion of prior work on hyperglycemia effects, potential mechanisms involving ATPases and cytokines, the 'legacy effect' concept, and diabetes epidemiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C46, C49-C50, C74-C75, C78-C84, and C87-C92 are appropriately cited literature claims that contextualize the findings. The connection to the 'legacy effect' (C87-C90) is an interesting interpretation of the experimental design where cells had glucose history but were infected under uniform conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Methodological details and validation of the co-culture model, including cell types, glucose concentrations, culture conditions, and model appropriateness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C110 describe methodological details that are appropriately cited and validated. The choice of glucose concentrations (C104) is clinically relevant, the model design (C106-C107) is appropriate for distal lung, and key controls (C109-C110) show the model behaves as expected. These support the validity of the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Characterization of the leprdb/db mouse model and rationale for using blood oxygen saturation as a disease severity measure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C59-C62 appropriately describe the mouse model and justify the use of pulse oximetry over weight loss as a severity measure. These are well-supported by citations and are important for interpreting the in vivo results.",
+    "result_type": "MINOR"
+  }
+]

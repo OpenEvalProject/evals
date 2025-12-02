@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C63"
+    ],
+    "result": "HTL and BAM physically interact through periplasmic domains of SecDF and YidC, but not SecYEG. This interaction was demonstrated by co-fractionation in sucrose gradients showing migration shifts when HTL or SecDF are overproduced, and by co-immunoprecipitation experiments showing BamA co-precipitates with SecG. The interaction requires the periplasmic domain P1 of SecD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (sucrose gradient fractionation C45-C47, co-immunoprecipitation C49-C53, glycerol gradient C59-C63) consistently demonstrate physical interaction between HTL and BAM. Controls (\u0394secG strain, antibody omission, P1 deletion) appropriately validate specificity. The convergence of evidence from different methodologies strongly supports this core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C144"
+    ],
+    "result": "Cardiolipin (CL) enhances the HTL-BAM interaction. Omission of CL reduced SecG-SecD interaction ~3-fold and SecG-BamA interaction ~5-fold. CL also stabilizes the 'open' state of HTL that is capable of interacting with BAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CL-dependence is demonstrated through quantitative co-IP experiments (C55) with appropriate controls and statistical analysis (p<0.05). The connection to HTL stabilization (C56) is supported by prior work. The role of CL in promoting the open state (C87, C144) provides a mechanistic link between lipid composition and complex formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The HTL-BAM complex forms a large assembly (~300\u00d7250\u00d7150 \u00c5) sufficient to span the periplasm between inner and outer membranes. Negative stain EM and cryo-EM (18.2 \u00c5 resolution) reveal that periplasmic domains of SecD, YidC, and SecF extend to establish multiple interactions with BAM lipoproteins, defining a large cavity between membrane regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural characterization is supported by multiple EM approaches (negative stain, cryo-EM) with appropriate image processing and resolution assessment (C71). The dimensions are consistent with known periplasmic width (~250 \u00c5) and extensions of SecDF (~60 \u00c5) and BamA POTRA domains (~110 \u00c5) from literature (C66). The low resolution (18.2 \u00c5) limits atomic-level interpretation but is sufficient for overall architecture determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C75",
+      "C76"
+    ],
+    "result": "Difference mapping of EM reconstructions of sub-complexes (HTL-BAM, SecYEG-DF-BAM, SecDF-BAM, HTL-BAM(\u0394BamB)) revealed locations of individual components. YidC, SecDF, and SecYEG localize to the inner-membrane region, while BamB localizes to the outer-membrane region. Loss of BamB also diminishes YidC density, suggesting mutual interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The difference mapping approach is methodologically sound for component localization at this resolution. Multiple sub-complexes were analyzed (C67-C69), providing internal consistency. The BamB-YidC interaction inference (C70) is appropriately cautious ('suggestive') given the resolution limitations. XL-MS data (C76) provides independent validation of component positions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "HTL exists in 'compact' and 'open' conformational states, with the open state being capable of BAM interaction. The open state is stabilized by cardiolipin, increasing from 8% to 17% with CL addition, and further enriched to 40% by cross-linking. The HTL sample purity rules out that the open state is due to contaminants or oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conformational heterogeneity is demonstrated by EM classification showing distinct populations (C82, C87). Sample purity is established by prior characterization (C83), ruling out artifacts. The CL-dependence provides a mechanistic explanation for the conformational equilibrium (C86-C87). However, the functional significance of the two states (C89) remains speculative and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Increasing periplasmic width by expressing Lpp+21 (increasing distance from ~250 \u00c5 to ~290 \u00c5) reduced HTL-BAM interaction more than 3-fold while leaving HTL integrity unaffected, demonstrating that the interaction is distance-dependent and consistent with the structural dimensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an elegant functional test of the structural model. The Lpp+21 system is well-established (C92), and the prediction (C91) follows logically from structural dimensions. The experimental result (C93-C94) with appropriate controls (HTL integrity maintained) and statistical significance (p<0.05) validates the model. This provides strong evidence that the interaction is physiologically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "SecDF is required for cell viability and general secretion, but proton transport through SecDF (blocked in SecDD519N mutant) is not required for ATP- and PMF-driven protein translocation across the inner membrane via SecYEG. In vitro transport assays with IMVs containing HTL or HTL(SecDD519N) showed similar transport efficiencies, indicating the proton wire through SecDF is required for downstream events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic complementation experiments (C96-C98) clearly demonstrate that proton transport is essential for viability. The in vitro transport assays (C99-C100) with appropriate controls (SecY quantification) rigorously demonstrate that inner membrane translocation does not require SecDF proton transport. This distinguishes two PMF-dependent steps and is a key mechanistic insight. The conclusion (C101) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C123"
+    ],
+    "result": "SecDF depletion leads to accumulation of unfolded OmpA in the periplasm, particularly during exponential growth phase. The levels of unfolded OmpA anti-correlate with SecDF expression. This effect is not due to BamA loss and indicates that HTL-BAM interaction is required for efficient OMP maturation in rapidly growing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The OmpA folding assay is well-established (C102-C103) and appropriately controlled (proOmpA contamination ruled out, BamA levels verified C108). The time-course experiments (C104-C107) demonstrate clear anti-correlation between SecDF levels and unfolded OmpA. The interpretation (C109, C123) is well-supported by the data, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Proton transport through SecD is required for efficient OMP folding but not for HTL-BAM interaction. The SecDD519N mutant maintains interaction with BAM (shown by co-IP) but fails to complement the growth defect and leads to accumulation of unfolded OmpA, indicating that static HTL-BAM interaction is insufficient for OMP maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a critical mechanistic finding that separates physical interaction from functional coupling. The co-IP experiments (C115-C117) demonstrate maintained interaction with the mutant, while functional assays (C113-C114) show impaired OMP folding. The logic connecting these observations (C118) is sound. This distinguishes structural association from dynamic, PMF-driven functional coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "HTL containing SecDD519N adopts a different 'open' conformation with shorter periplasmic domain extension compared to wild-type HTL. This conformational difference is consistent with the F-form of SecDF observed at atomic resolution and would be communicated to the outer membrane in the HTL-BAM complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EM analysis (C119-C120) demonstrates clear conformational differences between wild-type and mutant HTL. The consistency with atomic-resolution SecDF structures (C121) provides validation. The inference about communication to the outer membrane (C122) is reasonable given the structural data, though direct demonstration of this communication would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "There are two distinct PMF-dependent steps in protein secretion: (1) SecA-driven translocation through SecYEG at the inner membrane, and (2) PMF-driven conformational changes in SecDF that enable OMP maturation. The SecD periplasmic domain cycles between I-form and F-form (approximated by SecDD519N) during proton transport, potentially coupling inner membrane PMF to outer membrane processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis integrates multiple lines of evidence: the in vitro transport data showing SecYEG/SecA sufficiency (C100), the requirement for SecDF proton transport for OMP folding (C114), and the structural data showing conformational changes (C120-C121). The model of cyclical conformational changes (C142) is well-grounded in structural data. The energy coupling mechanism (C143) is speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The HTL-BAM interaction could enable efficient protein flux through the periplasm while minimizing aggregation and proteolysis. The complex contains a large cavity opening into the periplasm that could serve as a conduit for OMP passage. Trans-membrane complexes appear to be a fundamental feature of Gram-negative bacterial envelopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural observation of the cavity (C127) is well-supported by EM data, the functional interpretation (C128) is speculative. The proposed role in minimizing aggregation (C124) is reasonable but not directly tested. The broader conclusion about trans-membrane complexes (C125) is supported by cited examples but represents a generalization beyond the specific data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Periplasmic chaperones (SurA, YfgM, PpiD) likely interact with the HTL-BAM complex. SurA is known to interact with BamA, and YfgM/PpiD mediate interactions with emergent periplasmic proteins. The genetic linkage of yfgL (encoding BamB) and yfgM, and proteomic data showing cross-membrane interactions, support coordinated function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The interaction of SurA with BamA is established (C129), but the interaction with HTL is speculative. The roles of YfgM and PpiD (C130) are based on literature but not directly tested in this study. The genetic and proteomic evidence (C131-C132) is suggestive but circumstantial. Direct demonstration of chaperone interactions with the HTL-BAM complex would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The periplasmic domain of SecD is central to HTL-BAM interaction, and a functioning proton wire is required for dynamic interplay between the complexes. The consequences of preventing PMF-driven dynamics (SecDD519N) are as severe as physical disconnection (SecDF depletion). This raises the prospect of TonB-style energy coupling from the inner membrane PMF for OMP folding at the outer membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The centrality of SecD periplasmic domain is demonstrated by deletion experiments (C47, C133). The equivalence of static interaction and disconnection (C136) is supported by comparable functional defects (C104, C113). The TonB analogy (C137) is speculative but provides a useful conceptual framework. The proposal about SecDF's role in energy transduction (C138) is well-supported by the totality of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Direct association between inner and outer membrane components appears to be a general principle for transporters in double-membrane systems, with parallels in TAM (auto-transporter secretion), TIC-TOC (chloroplast import), and MICOS-SAM (mitochondria). The outer membrane components (TamA, TOC75) are homologous to BamA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis draws on well-established examples from the literature (C146-C148). The homology of TamA and TOC75 to BamA (C147) is established knowledge. The role of CL in PMF-driven translocation (C145) connects to the current findings. This contextualizes the HTL-BAM interaction within a broader biological principle, though it represents synthesis of literature rather than new experimental data.",
+    "result_type": "MINOR"
+  }
+]

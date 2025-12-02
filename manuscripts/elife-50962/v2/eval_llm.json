@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "FEFSEM preparatory activity evolves in parallel with behavioral measures of visual-motor gain during fixation. Neural preparatory firing rate increases over fixation time with a time course that matches the increase in eye velocity responses to visual motion pulses, and there is a positive linear correlation between neural preparatory responses and behavioral gain measures across the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C29 provide converging evidence from both neural recordings and behavioral measurements showing parallel time courses and significant positive correlations (p<10^-11 for both monkeys). The behavioral pulse experiments were specifically designed to probe visual-motor gain, and the tight correspondence with neural preparatory activity strongly supports the parallel evolution claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "FEFSEM preparatory activity and behavioral visual-motor gain both encode expected target speed based on trial context. Both neural preparatory firing and behavioral gain responses are significantly larger in fast-context blocks compared to slow-context blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 demonstrate context-dependent modulation in both neural and behavioral measures with statistically significant differences (p=8.30\u00d710^-6, Cohen's d=1.06). The parallel modulation by expected speed context strengthens the link between FEFSEM preparatory activity and gain control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Preparatory enhancement of visual-motor gain shows both direction-specific and direction-nonspecific components. Behaviorally, eye speed responses to motion pulses are largest for same-direction, intermediate for orthogonal, and smallest for opposite-direction pulses, but all directions show significant increases over fixation time. Neural preparatory activity in FEFSEM shows corresponding directional tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 provide comprehensive behavioral and neural evidence for directional specificity with appropriate statistical tests (all p<10^-5). The finding that all pulse directions show increased responses over fixation time, combined with directional differences, supports both specific and nonspecific gain enhancement components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Demixed principal component analysis reveals that the first three components of FEFSEM preparatory population activity account for ~90% of variance and fully reconstruct the behavioral features of preparatory gain enhancement. Component 1 is direction-independent and increases for all directions; components 2 and 3 are direction-dependent and show differential evolution for preferred versus non-preferred directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54 present a comprehensive dPCA analysis linking neural population dynamics to behavioral observations. The three components capture distinct features (direction-independent baseline, directional offset, and directional ramping) that correspond to specific behavioral phenomena. However, the claim that these components 'fully reconstruct' the behavioral gain enhancement (C54) is somewhat strong given this is a correlational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "FEFSEM preparatory activity does not reside in movement-null dimensions but instead predicts movement when applied to an optimal linear model. The model trained on pursuit responses predicts non-zero eye velocities during fixation in the appropriate direction for upcoming target motion, contradicting the movement-null space hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C68 provide strong evidence against the movement-null hypothesis through optimal linear modeling with good cross-validation (r\u00b2=0.85). Both trial-averaged and single-trial bootstrap analyses predict significant eye movements during preparation. The analytical approach is well-justified with multiple control analyses addressing potential confounds (Figure 6 supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "There is a partial reorganization of FEFSEM population activity between preparation and movement. The angle between the first preparatory and pursuit principal components is 65.2 degrees (95% CI: 61.4-69.2\u00b0), significantly different from both 0\u00b0 (complete alignment) and 90\u00b0 (complete orthogonality).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 demonstrate partial reorganization through rigorous PCA with bootstrap validation (n=1000 iterations, p<0.001). The first PCs capture >70% of variance in each epoch, and the intermediate angle provides clear evidence against both complete alignment and complete orthogonality. The validation of PCPurs1 (C70) strengthens confidence in the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Two distinct subpopulations exist in FEFSEM with different relationships between preparatory and pursuit activity. Subpopulation 1 (positive PCPrep1/PCPurs1 ratios) shows aligned preparatory and pursuit dimensions (26.2\u00b0 separation) with conventional direction tuning. Subpopulation 2 (negative ratios) shows near-orthogonal dimensions (151.2\u00b0 separation) with non-conventional tuning and is responsible for the partial reorganization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C87 identify two subpopulations through bimodal distribution analysis (Hartigan's Dip Test, p=0.001) with distinct properties confirmed by multiple measures: preferred direction distributions, response amplitudes (p<0.02), correlations between prep/pursuit activity, and PC angles. The characterization is thorough, though the functional interpretation (C86-C87) involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The two subpopulations provide a mechanistic explanation for direction-specific and direction-nonspecific gain enhancement. Subpopulation 1's conventional tuning explains maximal gain in the expected direction, while Subpopulation 2's non-conventional tuning may explain directionally-nonspecific gain enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 link the subpopulation properties to behavioral observations. The direction tuning patterns are clearly demonstrated in Figure 8D-F. However, C91 uses 'might explain' appropriately, as this is an interpretive link rather than direct causal evidence. The explanation is plausible and consistent with the data but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Optimal linear models applied separately to each subpopulation show that Subpopulation 1 predicts directional eye movement during preparation while Subpopulation 2 predicts no significant movement but shows large variance consistent with directionally-nonspecific gain modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 extend the linear modeling analysis to subpopulations, providing additional support for their distinct functional roles. The finding that Subpopulation 2 predicts no significant movement (C94) while showing large spread (C95) is consistent with gain modulation. The interpretation is reasonable though somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C106",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors propose that FEFSEM output functions as a gain signal rather than a movement command, allowing preparatory activity to progress without causing movement. This mechanism explains how preparation can occur without premature eye movements in the pursuit system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C106, C115-C117 present the central hypothesis supported by the parallel evolution of preparatory activity and gain (Results 1-2), the failure of movement-null hypothesis (Result 5), and prior work on FEFSEM's role in gain control. The hypothesis is well-supported by the convergent evidence, though it remains a proposed mechanism rather than directly demonstrated causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C105",
+      "C107"
+    ],
+    "result": "FEFSEM is a critical node in the pursuit circuit, as demonstrated by prior work showing that lesions/inactivation impair pursuit, microstimulation induces smooth eye movement, and neural activity is strongly modulated before and during pursuit with appropriate directional tuning and speed relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C10, C105, C107 establish the importance of FEFSEM through citations to prior experimental work. These are well-established findings in the field that provide essential context for the current study. The claims are appropriately supported by multiple independent prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Preparatory activity in FEFSEM grows over hundreds of milliseconds before pursuit onset and encodes expected target speed, combining with visual motion input to determine pursuit responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 are supported by both citation to prior work (Darlington et al., 2018) and demonstration in current data (Figures 2C, 3B). This establishes key properties of FEFSEM preparatory activity that motivate the current study's focus on gain control mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C55",
+      "C56"
+    ],
+    "result": "In the arm movement system, preparatory activity in M1 and PMd evolves in movement-null dimensions that are orthogonal to movement-potent dimensions, preventing premature movement through a dynamical systems mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18, C55-C56 accurately describe prior work in the arm movement system through appropriate citations. These claims establish the movement-null hypothesis as an alternative mechanism for preventing movement during preparation, providing important context for testing whether this mechanism applies to pursuit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C100",
+      "C101"
+    ],
+    "result": "In the saccadic system, movement is prevented during preparation by omnipause neurons that create an all-or-none inhibitory gate. This mechanism does not appear to operate in the pursuit system, as omnipause neurons show different behavior during pursuit versus saccades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C100-C101 accurately describe the saccadic gating mechanism and its inapplicability to pursuit through appropriate citations. This establishes that pursuit must use a different mechanism than saccades, motivating the search for alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C119",
+      "C120"
+    ],
+    "result": "The pursuit system has distinct organizational features compared to arm movements: pursuit is driven directly by sensory inputs from MT with relatively short latencies, while in arm movements the link from sensory input to motor output is less direct and motor cortex affects motoneurons over monosynaptic/disynaptic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114, C119-C120 accurately describe anatomical and functional differences between pursuit and arm movement systems through appropriate citations. These differences provide context for why different motor systems might use different mechanisms to prevent movement during preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that the brain uses multiple mechanisms to prevent preparatory activity from causing movement, with the primary mechanism depending on the organization of each motor system. Gain control may be ideal for systems with short latencies and graded responses, while movement-null dimensions may be specialized for systems with direct connections to motor pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112, C130-C131 present a synthetic framework integrating the current findings with prior work on other motor systems. This is a reasonable interpretive conclusion based on the evidence, though it involves speculation about general principles. The framework is well-justified by the comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The authors suggest that microstimulation-induced smooth eye movements may not reflect the natural function of FEFSEM output, as artificial stimulation could drive brainstem neurons simply through anatomical connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C109 present a speculative reinterpretation of prior microstimulation results. While this interpretation is plausible and helps reconcile microstimulation findings with the gain control hypothesis, it is explicitly speculative ('we suspect') and lacks direct supporting evidence. The interpretation is reasonable but remains unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C102",
+      "C103",
+      "C104",
+      "C121",
+      "C122",
+      "C123",
+      "C129"
+    ],
+    "result": "The authors discuss potential connections and mechanisms across motor systems, including possible FEFSEM interactions with omnipause neurons, potential gain control mechanisms in arm movements, and evidence for distinct preparatory and movement subpopulations in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57, C102-C104, C121-C123, C129 present various speculative connections and possibilities ('it is possible that', 'could reflect'). While these are reasonable hypotheses supported by some anatomical or functional evidence, they remain speculative and would require additional experiments to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The study used two male rhesus monkeys aged 8-10 years for both neurophysiology and behavioral experiments, with all procedures approved by Duke's IACUC and compliant with NIH guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 provide standard methodological information about subjects and ethical compliance. These are straightforward factual statements about the experimental design.",
+    "result_type": "MINOR"
+  }
+]

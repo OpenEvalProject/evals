@@ -1,0 +1,548 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The GFP-CBX2 fusion protein is functionally incorporated into PRC1 complexes. GFP pull-out experiments confirmed proper incorporation with endogenous PRC1 subunits, and ChIP-seq showed that GFP-CBX2 target genes largely overlap with endogenous CBX2 targets and H2AK119ub-enriched genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence from biochemical (pull-out) and genomic (ChIP-seq) approaches demonstrating functional incorporation of the GFP-CBX2 fusion protein. The overlap with ENCODE data and H2AK119ub targets validates the construct's biological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Heat shock induces relocalization of GFP-CBX2 from pan-nuclear distribution to nucleoli. This relocalization occurs in multiple cell types (cord blood CD34+, K562, HL60) and GFP-CBX2 localizes primarily to the granular component of the nucleolus, surrounding the dense fibrillar component marker Fibrillarin and partially colocalizing with NPM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 demonstrate consistent nucleolar relocalization across cell types using multiple microscopy approaches. The colocalization data with established nucleolar markers (Fibrillarin, NPM1) provides spatial resolution of GFP-CBX2 within nucleolar subcompartments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The kinetics of heat shock-induced nucleolar accumulation of GFP-CBX2 depend on both the duration and temperature of heat shock. Cells exposed to 42\u00b0C show nucleolar localization with slower kinetics compared to 44\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 establish dose-response relationships for both temperature and duration, demonstrating that nucleolar accumulation is a graded, temperature-dependent response rather than an all-or-none phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Heat shock-induced nucleolar accumulation is conserved across CBX paralogs. All tested CBX paralogs (CBX4, CBX6, CBX7, CBX8) show nucleolar accumulation upon heat shock, and endogenous CBX4 shows nucleolar accumulation in both K562 and HL60 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 demonstrate that nucleolar relocalization is not specific to CBX2 but is a conserved response across the CBX family. Validation with endogenous CBX4 confirms this is not an artifact of GFP tagging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The chromodomain is sufficient for heat shock-induced nucleolar localization. Truncated GFP-CBX constructs containing only the chromodomain (with or without AT hook) display nucleolar localization after heat shock, though with slightly slower kinetics than full-length proteins, suggesting non-homologous regions also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 use domain deletion analysis to identify the chromodomain as necessary and sufficient for nucleolar targeting. The slower kinetics of truncated proteins suggest additional contributing regions, providing mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Biochemical fractionation confirms heat shock-induced enrichment of PRC1 subunits in nucleoli. Western blot analysis of isolated nucleolar fractions shows increased GFP-CBX8, endogenous CBX4, CBX8, and RING1B in nucleoli after heat shock in both K562 and HL60 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 provide orthogonal biochemical validation of the microscopy observations. The consistency across cell lines and multiple PRC1 subunits strengthens the conclusion that PRC1 complexes accumulate in nucleoli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "LC-MS/MS proteomics of isolated nucleoli identified 1279 proteins, with NPM1 and Fibrillarin among the most abundant, validating nucleolar enrichment. Heat shock resulted in 153 significantly enriched and 6 depleted proteins, while core nucleolar proteins remained unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 establish the quality of nucleolar preparations through detection of known markers and provide unbiased quantification of heat shock-induced changes. The stability of core nucleolar proteins validates specificity of the response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Proteins enriched in nucleoli after heat shock include chromatin modifiers and PRC1/2 subunits. GO analysis shows enrichment for chromatin modification, gene expression, DNA repair, histone ubiquitination, and protein refolding. Both PRC1 (CBX2, RING1A, RING1B, PHC2) and PRC2 (EZH2, SUZ12, EED) subunits are significantly enriched, confirmed by western blot and immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 demonstrate that nucleolar accumulation extends beyond CBX proteins to include both PRC1 and PRC2 complexes, validated by multiple orthogonal methods (LC-MS/MS, western blot, immunofluorescence) across cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Intra-nucleolar levels of H3K27me3 and H2AK119ub do not increase after heat shock, suggesting PcG proteins are not involved in Polycomb-mediated silencing of nucleolar chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 address whether nucleolar PcG proteins are functionally active. The lack of increased histone marks in nucleoli argues against a chromatin regulatory role in this compartment, supporting a protein quality control function instead.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Heat shock induces nucleolar accumulation of diverse chromatin and transcription regulators beyond PcG proteins, including CHD family members, FACT complex, PAF complex, BRD proteins, and JMJD6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 demonstrate that nucleolar accumulation is not specific to PcG proteins but represents a broader response affecting multiple classes of chromatin regulators. Citations establish the functional roles of these proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Specific heat shock proteins accumulate in nucleoli after heat shock. HSP70 family members (HSPA1A/B), DNAJB1, DNAJC7, and HSPB1 are enriched, while HSP90 family members show weak or no enrichment, indicating specificity of the chaperone response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 identify specific chaperones that accumulate in nucleoli. The selective enrichment of certain HSP families over others argues for a specific functional role rather than non-specific protein aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "26S proteasome subunits strongly accumulate in nucleoli after heat shock, suggesting possible proteasomal degradation of damaged proteins in the nucleolus, consistent with observations using model proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 identify proteasome accumulation and propose a degradation function. While C62 is speculative, it is supported by C63's citation to published work with model proteins, providing a plausible mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Independent LC-MS/MS analysis with K562 GFP-CBX8 cells confirmed heat shock-induced nucleolar accumulation of chromatin regulators, protein chaperones, and proteasomal subunits, demonstrating this is a conserved biological phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide independent replication of the proteomics findings in a different cell line, strengthening the conclusion that nucleolar accumulation represents a conserved stress response mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Heat shock causes strong reduction in chromatin binding of PRC1 and PRC2 subunits. ChIP-qPCR shows reduced binding of GFP-CBX2, BMI1-GFP, MEL18-GFP, GFP-RING1B, endogenous CBX8, and endogenous EZH2 to Polycomb target genes after heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 demonstrate that nucleolar accumulation coincides with loss of chromatin binding. The consistency across multiple PRC1 and PRC2 subunits, both tagged and endogenous, provides strong evidence for complex-wide displacement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Heat shock causes reduction of PRC1/2-associated histone modifications. H2AK119ub and H3K27me3 levels are significantly reduced at Polycomb target genes after heat shock, indicating that heat shock causes both displacement of PRC1/2 complexes and loss of their epigenetic marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 demonstrate functional consequences of PRC1/2 displacement. The parallel loss of both complexes and their respective histone marks establishes that heat shock disrupts the epigenetic landscape at Polycomb targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ChIP-seq analysis confirms genome-wide loss of CBX8 and GFP-CBX2 chromatin binding after heat shock. Loss occurs at both intergenic peaks and TSS-associated peaks, with TSS-localized peaks associated with genes enriched for development-related GO terms, confirming these are Polycomb target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 provide genome-wide validation of the ChIP-qPCR results. The GO analysis confirms that affected genes are bona fide Polycomb targets, establishing biological relevance of the chromatin binding changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Heat shock affects multiple histone modifications beyond PRC1/2 marks. H3K4me3 levels are reduced while H3K4me1 levels increase after heat shock. The increase in H3K4me1 argues that loss of epimarks reflects changes in epigenetic marking rather than decreased nucleosome occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 demonstrate broader epigenetic disruption beyond PRC1/2 marks. The reciprocal changes in H3K4me3/me1 provide important evidence that heat shock causes active remodeling of the epigenetic landscape rather than passive loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Heat shock-induced loss of PRC1/2 marks results in derepression of Polycomb target genes. Expression of various Polycomb target genes increases 3 hours after heat shock and recovers to pre-heat shock levels afterward, demonstrating functional consequences for transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 establish functional consequences of epigenetic disruption at the transcriptional level. The transient derepression followed by recovery demonstrates that the epigenetic changes have biological significance for gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Nucleolar GFP-CBX2 is highly immobile in heat-shocked cells, existing in a solid-like state. FRAP analysis shows very quick kinetics in untreated cells but high immobility with limited nucleolar-nucleoplasmic exchange after heat shock. FRAP/FLIP analysis reveals minimal fluorescence recovery and loss, and nucleolar accumulations are insensitive to 1,6-hexanediol, consistent with a solid, aggregation-like state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 use multiple biophysical approaches (FRAP, FLIP, 1,6-hexanediol sensitivity) to characterize the physical state of nucleolar CBX proteins. The convergent evidence from different methods strongly supports a solid-phase, aggregation-like state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Nucleolar accumulations of PcG proteins and chaperones are reversible. GFP-CBX2 nucleolar accumulations disperse within 3 hours after heat shock, regaining pan-nuclear distribution. DNAJB1 and HSP70 also show reversible nucleolar accumulation, though HSP70 accumulation is less prominent than DNAJB1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 establish that nucleolar accumulation is a dynamic, reversible process rather than irreversible aggregation. The parallel recovery of both PcG proteins and chaperones suggests coordinated resolution of the stress response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "HSP70 activity is required for recovery of GFP-CBX2 from nucleoli but not for initial accumulation. HSP70 inhibition does not impair post-heat shock nucleolar accumulation but causes clear delay in recovery. HSPA1A knockdown also results in significant delay of GFP-CBX2 recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 use both pharmacological inhibition and genetic knockdown to demonstrate HSP70's specific role in recovery rather than accumulation. The convergent results from two approaches strengthen the mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Elevated HSP levels accelerate recovery of GFP-CBX2 from nucleoli. In thermotolerance experiments, recovery after a second heat shock is completed within 30 minutes versus nearly 3 hours after the first heat shock, while initial accumulation amounts remain similar, indicating HSP levels specifically affect recovery from the solid phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 use thermotolerance to manipulate HSP levels and demonstrate dose-dependent effects on recovery kinetics. The unchanged accumulation with faster recovery provides strong evidence for HSP-mediated disaggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Epigenetic marks recover after heat shock with different kinetics. H2AK119ub completely recovers at 4 hours after heat shock, while H3K27me3 recovery is slightly delayed. Complete recovery of GFP-CBX2 and various epigenetic modifications occurs at later time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 demonstrate that epigenetic recovery follows protein recovery with mark-specific kinetics. The differential recovery rates suggest distinct mechanisms for reinstalling different modifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "H2AK119ub recovery is strongly dependent on HSP expression. Thermotolerant cells receiving a second heat shock show much faster H2AK119ub recovery than after the first heat shock. HSP70 and DNAJB1 are strongly induced after the first heat shock, while EZH2 and CBX8 protein levels remain stable or slightly reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 link HSP expression levels to functional epigenetic recovery. The correlation between elevated HSP levels and faster mark recovery, combined with stable PcG protein levels, supports HSP-mediated reactivation of existing proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C111",
+      "C126",
+      "C127"
+    ],
+    "result": "Epigenetic recovery does not depend on de novo protein synthesis. H2AK119ub levels recover in cycloheximide-treated cells, indicating that recovery depends on Polycomb proteins recovered from the nucleolus rather than newly translated proteins, suggesting nucleolar PcG proteins are re-solubilized and functionally refolded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C126-C127 use translation inhibition to demonstrate that recovery involves reactivation of existing proteins rather than new synthesis. This is critical evidence that nucleolar accumulation serves a protein quality control function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C145"
+    ],
+    "result": "Molecular chaperones are crucial for recovery of GFP-CBX2 from nucleoli and essential for epigenetic recovery after heat shock. HSP70-dependent protein disaggregation and refolding enables PcG proteins to quickly re-initiate their epigenetic functions at target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113, C145 synthesize the mechanistic findings to establish the central role of chaperones in both protein and epigenetic recovery. The evidence from inhibition, knockdown, and thermotolerance experiments converges on this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C117",
+      "C154"
+    ],
+    "result": "The nucleolus functions as an essential protein quality control center for epigenetic regulators. This study is the first to show that numerous endogenous chromatin regulators temporarily accumulate in the nucleolus upon heat shock and, in an HSP70-dependent manner, fully and functionally recover to chromatin, demonstrating the nucleolus is indispensable for recovery of epigenetic regulators and maintenance of the epigenome after heat shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117 and C154 represent the major conclusions of the study. The comprehensive evidence from localization, proteomics, chromatin binding, epigenetic marks, and functional recovery experiments strongly supports this novel model of nucleolar function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background on heat shock response and its effects on transcription, ubiquitin pools, chromatin architecture, and HSP function. Heat shock leads to transcriptional shutdown (except HSP genes), depletes free ubiquitin pools, reduces H2AK119ub, alters 3D chromatin architecture, and induces HSP expression via HSF-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 provide established background knowledge supported by appropriate citations. These claims contextualize the study within existing literature on heat shock biology and protein quality control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119"
+    ],
+    "result": "Prior work on spatial protein separation during stress and nucleolar protein sequestration. Spatial separation has been suggested to prevent interference of misfolded proteins with cellular processes and allow rapid recovery. Studies with reporter proteins showed nucleolar redistribution is important for refolding or degradation, and ncRNA can sequester proteins in nucleoli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 accurately summarize prior work on stress-induced protein compartmentalization, supported by appropriate citations. These establish the conceptual framework for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Mechanistic insights into HSP70-dependent recovery from solid-phase nucleolar accumulations. PcG protein appearance in nucleoli is HSP70-independent, but HSP70 knockdown/inhibition delays recovery while elevated HSP70 accelerates it. The 1,6-hexanediol insensitivity suggests a solid phase requiring HSP70/DNAJB1 disaggregation machinery for re-solubilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 integrate multiple lines of evidence to propose a mechanism where HSP70 acts on solid-phase aggregates. The combination of biophysical characterization and functional studies supports this model, though C124 is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "A fraction of nucleolar accumulated proteins may undergo proteasomal degradation. This is supported by HS-induced nucleolar enrichment of 26S proteasome and prior work showing links between proteasome and nucleolus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C129 propose proteasomal degradation as an alternative fate for nucleolar proteins. While proteasome accumulation is demonstrated (C61), C128 is speculative and lacks direct evidence for degradation of PcG proteins specifically. The cycloheximide data (C111) suggests most proteins are refolded rather than degraded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The nucleolus responds to multiple stress types with distinct protein composition changes. Heat shock induces protein accumulation, while transcription inhibition causes release of ribosomal proteins and increase of snRNPs. Proteasome inhibition increases ribosomal proteins, suggesting the nucleolus is an important protein quality control center under various stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 compare heat shock effects to other stresses based on cited literature. The stress-specific responses support the broader conclusion about nucleolar quality control function, though C133 is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Heat shock-induced redistribution of PcG proteins affects multiple histone marks and is distinct from Drosophila observations. The effects extend beyond H2AK119ub to H3K27me3, H3K4me3, and H3K4me1. Unlike Drosophila where Pc showed moderate nucleolar localization and potential rDNA regulation, mammalian CBX proteins show robust nucleolar accumulation without increased rDNA binding or nucleolar histone marks, suggesting protein quality control rather than chromatin regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C143 integrate current findings with prior literature, particularly Drosophila studies. The comparison highlights species-specific differences and supports the protein quality control model over a chromatin regulatory function in nucleoli. C140-C141 rely on unpublished data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C144",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Heat shock directly affects PcG chromatin binding and epigenetic modifications with implications for aging. Quick re-installation of PcG epimarks is key for maintaining proper regulation, but errors may create epigenetic scars contributing to cellular transformation or death. Cellular stress-induced epigenetic changes may contribute to age-associated alterations, particularly given age-related decline in chaperone function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144 and C146 are well-supported by the data, but C147, C149, and C151 are highly speculative connections to aging and disease without direct experimental evidence. While conceptually interesting and supported by citations about aging (C148, C150), these remain hypotheses requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C152",
+      "C153"
+    ],
+    "result": "Proposed model: Heat shock leads to loss of chromatin binding and nucleolar accumulation of PcG proteins and other epigenetic regulators, likely due to protein unfolding. Loss of PcG chromatin binding causes loss of PRC1/2-related epigenetic modifications, and recovery depends on HSP70 activity in the nucleolus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C153 present the overall model synthesizing the study's findings. While protein unfolding is inferred rather than directly demonstrated, the model is well-supported by the comprehensive data on localization, chromatin binding, epigenetic marks, and HSP-dependent recovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Upon heat shock, many chromatin remodelers and transcriptional regulators accumulate in the nucleolus, which may become a hot spot for protein quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 summarizes the proteomics findings and proposes the quality control function. This is well-supported by the comprehensive LC-MS/MS data showing accumulation of diverse chromatin regulators, chaperones, and proteasome subunits.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C21",
+      "C22"
+    ],
+    "result": "The GP4.3 transgenic line preferentially expresses GCaMP6s in non-GABAergic neurons (95% of GCaMP+ cells were GAD67-negative), while the Gad2;Ai96 line expresses GCaMP6s predominantly in GABAergic neurons (>93% of GCaMP+ cells were GAD67-positive). However, not all neurons of each type express GCaMP6s in either line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, C21, and C22 are well-supported by immunohistochemistry data shown in Figure 1, with clear quantification of co-labeling between GCaMP and GAD67. The data demonstrate selective but incomplete labeling of neuronal subtypes in both transgenic lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The two transgenic lines show differential expression of calcium-binding proteins: 94% of GCaMP+ cells in GP4.3 lacked strong parvalbumin or calretinin immunoreactivity, while in Gad2;Ai96 mice, larger fractions were positive (CR++: 17%; PV++: 22%). Conversely, GCaMP was expressed in 38% of CR++ cells and 70% of PV++ cells in Gad2;Ai96 mice, but lower fractions in GP4.3 mice (CR++: 9.1%; PV++: 13.4%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by immunohistochemistry data in Figure 1\u2014figure supplement 1, showing differential expression patterns of calcium-binding proteins between the two lines. The quantification is clear and the data support the conclusions about neurochemical heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Calcium imaging revealed diverse fluorescence response types to sound stimuli, including increases (transient or sustained), decreases during stimulation, and increases after sound cessation. These were classified as excitatory (further subdivided into onset and sustained), inhibitory, and offset responses. Decreases in fluorescence were interpreted as sound-evoked inhibition of spontaneous firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by calcium imaging data in Figures 2 and 3, with clear examples of different response types. The classification scheme is described in methods and applied systematically. The interpretation of fluorescence decreases as inhibition (C30) is reasonable given GCaMP properties, though it remains an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In GP4.3 mice, 64% of cells showed detectable responses to pure tones, with 30% showing excitatory FRAs, 13% offset FRAs, and 30% inhibitory FRAs. In Gad2;Ai96 mice, 73% of cells responded, with 46% excitatory, 4% offset, and 26% inhibitory FRAs. The remaining cells in each line showed mixed response types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 provide quantitative summaries of response proportions supported by the imaging data presented in Figures 3 and 4. The numbers are internally consistent and the classification criteria are described in methods. The data demonstrate functional heterogeneity in both cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The proportion of cells showing sound-evoked inhibition in awake mice was higher than the 2-23% reported in anesthetized C57BL/6 mice by Willott et al. (1988a).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by comparison of the current data (30% inhibitory in GP4.3, 26% in Gad2;Ai96) with cited literature. The comparison is appropriate given the methodological differences (awake vs. anesthetized), though direct statistical comparison is not possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "GABAergic cells (Gad2;Ai96) had larger soma sizes than non-GABAergic cells (GP4.3), with estimated diameters of 21.9 \u00b1 4.9 \u00b5m and 15.9 \u00b1 2.6 \u00b5m, respectively (p<0.001). Within each genotype, soma size did not differ significantly among cells with different FRA classes in GP4.3 mice (p=0.112).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by quantitative analysis of ROI sizes shown in Figure 4C with appropriate statistical tests. The finding is consistent with previous literature cited in C41. The lack of size differences among response classes within genotypes is properly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Simultaneous juxtacellular recordings and calcium imaging confirmed that onset fluorescence responses corresponded to rapidly adapting firing, sustained responses to sustained firing, and inhibitory responses to reduced spontaneous firing during sound stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are strongly supported by simultaneous electrophysiology and imaging data shown in Figure 5. This ground-truth validation directly links fluorescence patterns to spiking activity, providing critical validation of the calcium imaging classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Modeling of the relationship between spiking and fluorescence showed that a single action potential produced a median fluorescence increase of 0.35 (GP4.3) or 0.14 (Gad2;Ai96) times F0, with rise times of 480-560 ms and decay time constants of 1.04-1.36 s. The model explained 50-95% of fluorescence variance (median 79%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by quantitative modeling of simultaneous recording and imaging data. The model parameters are reasonable for GCaMP6s kinetics and the variance explained indicates good model fit. However, the sample sizes are small (n=5 for GP4.3, n=12 for Gad2;Ai96).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A tonotopic gradient was observed running from caudolateral to rostromedial, with a reversal at the site of lowest characteristic frequencies. This pattern is consistent with banding patterns observed in developmental studies using epifluorescent calcium imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by spatial analysis of characteristic frequencies shown in Figure 6, with polynomial fitting revealing the gradient orientation. The comparison with developmental data (C51) provides additional support, though it relies on inference about the relationship between developmental and adult organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The four response types (onset, sustained, inhibitory, offset) showed similar tonotopic organization but considerable microheterogeneity. This microheterogeneity was similar for GABAergic and glutamatergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by spatial analysis shown in Figure 6C-D. The data show that while overall tonotopic gradients are preserved across cell types and response classes, there is substantial local variability. This is an important finding distinguishing IC from auditory cortex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "After excluding cells with motion artifacts and those with excitatory/offset FRAs, 41 cells (3% of total) showed spontaneous calcium transients correlated with animal movement. These movement-sensitive cells were enriched in the caudolateral dorsal IC, with 4 found in Gad2;Ai96 (1% of GABAergic cells) and 37 in GP4.3 (4% of glutamatergic cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by movement correlation analysis shown in Figure 8, with appropriate exclusion criteria to avoid false positives from motion artifacts or sound-evoked responses. The spatial enrichment and cell-type distribution are clearly documented, though the functional significance requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The minimum frequency line from functional mapping aligns with the DCIC/LCIC demarcation from the Allen Reference Atlas but is orthogonal to the Paxinos and Franklin atlas demarcation. GAD67-dense modules, considered hallmarks of LCIC, were observed both medially and laterally from each demarcation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by comparison of functional mapping with anatomical atlases and histological data in Figure 9. The observation that GAD67 modules appear on both sides of traditional boundaries challenges conventional anatomical definitions and supports the need for functional redefinition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Two motion-sensitive neurons retrieved in histology both possessed dendrites extending into GAD67-dense modules, despite their somata residing in extramodular regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by detailed histological analysis shown in Figures 9 and 10, including dendritic reconstruction. While based on only two cells, this provides important anatomical evidence for how extramodular neurons might integrate multisensory inputs from modules.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Based on tonotopic organization and movement-related activity, the authors propose that the laterocaudal area with high frequencies represents the dorsal edge of LCIC, the mediorostral part belongs to DCIC, and the tonotopic reversal provides a functional demarcation between them. The central low-frequency strip may represent the dorsal extension of CNIC, making all three main IC areas accessible at the dorsal surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C66 represent interpretations and proposals for redefining IC boundaries based on the functional data. While the functional evidence (tonotopy, movement sensitivity) is solid, the anatomical assignments remain somewhat speculative. The proposal is reasonable and supported by the data, but definitive validation would require additional anatomical tracing or molecular marker studies to confirm the proposed boundaries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Inhibitory and offset responses were not reported in earlier imaging experiments in anesthetized mice, possibly due to shorter stimulus durations that prevented distinction between onset and sustained responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by comparison with cited literature and methodological differences. The explanation that longer stimuli (1 s vs. shorter) and awake state contribute to detecting these response types is reasonable, though the relative contributions of these factors cannot be definitively determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The introduction establishes background knowledge about IC anatomy, including its division into CNIC, LCIC, and DCIC; the non-lemniscal pathway; cortical feedback; neurochemical modules; developmental markers; non-auditory inputs; accessibility for imaging; and GABAergic neuron diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C16 represent established anatomical and organizational knowledge about the IC, supported by appropriate citations to previous literature. These provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The study demonstrates that both GABAergic and non-GABAergic neurons in the mouse dorsal IC show spatial microheterogeneity in temporal responses, but share a conserved double rostromedial-caudolateral gradient of frequency tuning. A subset of neurons is sensitive to spontaneous movements, providing functional evidence for redefining the DCIC/LCIC border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 represent the main conclusions of the study, well-supported by the comprehensive imaging data, electrophysiological validation, and anatomical analysis presented throughout the manuscript. These findings significantly advance understanding of dorsal IC functional organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "GCaMP6s-positive neurons in GP4.3 mice are enriched at the border of neurochemical modules characterized by dense GAD67 terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by immunohistochemistry data in Figure 1E-G showing spatial relationship between GCaMP+ cells and GAD67-dense modules. This observation is important for understanding the relationship between the transgenic expression pattern and anatomical organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Not all non-GABAergic cells in the IC were GCaMP-positive in GP4.3 mice, as evidenced by NeuN-positive, GCaMP-negative cell bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by immunohistochemistry in Figure 1C. This is an important caveat indicating incomplete labeling of the non-GABAergic population, which should be considered when interpreting the functional results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C48"
+    ],
+    "result": "mAChR-A is required in Kenyon cells for aversive olfactory learning in adult Drosophila. RNAi knockdown of mAChR-A in KCs significantly reduces short-term aversive learning without affecting odor or shock detection, and this effect is physiological rather than developmental.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C9, C10, C13-C16, and C48 collectively demonstrate that mAChR-A knockdown in KCs impairs learning through multiple independent RNAi lines (C9, C10), with appropriate controls showing no defects in sensory perception (C13, C14) and adult-specific knockdown producing the same phenotype (C15, C16). The data include qRT-PCR validation of knockdown efficiency and behavioral assays with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "mAChR-A knockdown does not affect learning with high-intensity shock (90V), suggesting mAChR-A may be specifically required for learning with moderate but not severe reinforcement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C11 presents data showing no learning defect at 90V shock, C12 is explicitly labeled as speculation. The interpretation that mAChR-A is only required for moderate reinforcement requires additional experiments to rule out alternative explanations such as ceiling effects or different learning mechanisms at high shock intensities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "mAChR-A is specifically required in gamma Kenyon cells for aversive olfactory learning and short-term memory. Expression analysis shows mAChR-A is present in \u03b1\u03b2 and \u03b3 but not \u03b1'\u03b2' lobes, and cell-type-specific knockdown demonstrates learning deficits only when \u03b3 KCs are targeted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 provide converging evidence from expression mapping (C17, C18) and functional genetics (C19, C20). The MiMIC-GAL4 expression pattern is corroborated by independent single-cell transcriptomics, and the behavioral requirement is demonstrated through multiple driver combinations with appropriate controls. Statistical significance is reported for the \u03b3-specific effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C4"
+    ],
+    "result": "mAChR-A knockdown increases odor-evoked calcium responses in Kenyon cells, particularly in the gamma lobe, indicating that mAChR-A inhibits odor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C23, and C4 are supported by calcium imaging data showing increased \u0394F/F in the calyx and specifically in the \u03b3 lobe with statistical significance for both odors tested. This finding is consistent across multiple figures and provides physiological evidence for mAChR-A's inhibitory function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "mAChR-A knockdown does not impair learning by altering the sparseness or inter-odor correlation of KC population odor representations, despite increasing overall odor response amplitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 demonstrate through population imaging that mAChR-A knockdown increases response amplitudes but preserves coding properties. This is shown for both pan-KC (C24) and \u03b3-specific (C25, C26) manipulations, with quantitative analysis of sparseness and correlation metrics. This rules out one potential mechanism for the learning deficit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C4"
+    ],
+    "result": "Pharmacological activation of mAChR-A with muscarine strongly decreases odor responses in all KC subtypes without affecting projection neuron responses, indicating mAChR-A acts directly on KCs to inhibit their activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide complementary pharmacological evidence for mAChR-A's inhibitory function. Bath application of muscarine decreased KC responses across all subtypes (C28) while sparing PN responses (C29), supporting the inference that the effect is KC-intrinsic (C30). This converges with the genetic loss-of-function data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Muscarine's inhibitory effect on KC odor responses does not require the GABAergic APL neuron, as muscarine suppresses KC responses even when APL output is blocked by tetanus toxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C32 demonstrate through within-animal controls (APL-TNT vs unlabeled hemispheres) that muscarine acts independently of APL-mediated inhibition. The experimental design with stochastic labeling provides strong internal controls, and the lack of difference between conditions supports the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Local application of muscarine to the calyx increases calcium signals in the calyx and \u03b1 lobe in the absence of odor, but suppresses odor-evoked responses in KC axons, suggesting complex effects on KC physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 describe the effects of local muscarine application with appropriate controls (red dye spread). The increase in baseline calcium (C33, C34) combined with suppression of odor responses (C35, C36) is well-documented, though the interpretation of these complex effects requires caution. The data are internally consistent and include proper controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C5"
+    ],
+    "result": "mAChR-A is localized to KC dendrites in the calyx, as shown by FLAG-tagged overexpression, and dendritic mAChR-A is sufficient to rescue learning deficits in a hypomorphic mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 provide multiple lines of evidence for dendritic localization: immunostaining of overexpressed FLAG-tagged receptor (C37, C38), validation of the hypomorphic allele by qPCR (C39), and functional rescue demonstrating the tagged receptor supports learning (C40, C41). The convergence of localization and functional data strongly supports the conclusion (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C6"
+    ],
+    "result": "mAChR-A knockdown in KCs prevents the learning-induced depression of odor responses in the mushroom body output neuron MB-MVP2, suggesting mAChR-A function in KC dendrites is necessary for synaptic plasticity at KC-MBON synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 demonstrate that mAChR-A knockdown abolishes the training-induced reduction in MCH/OCT response ratio in MB-MVP2 (C45, C46), while controls show the expected depression (C44). The inference that dendritic mAChR-A is required for axonal plasticity (C47) is supported by the combination of localization and plasticity data, though the mechanism remains unclear. Sample size (n=5) is validated by power analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C51",
+      "C64",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "mAChR-A signals through Gq protein when expressed in heterologous cells, and while mammalian M1-type Gq-coupled receptors are typically excitatory, examples exist of inhibitory Gq signaling through multiple mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C51, C64, and C68-C70 are all supported by appropriate citations to prior literature. These establish the signaling properties of mAChR-A and provide precedent for inhibitory Gq signaling. However, these are background claims from the literature rather than findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The authors propose that mAChR-A is inhibitory and acts on KC dendrites, and that dendritically-acting mAChR-A is required for synaptic depression between KCs and their outputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 represent the main conclusions synthesizing multiple experimental findings. C49 is supported by the combination of genetic (increased responses with knockdown) and pharmacological (decreased responses with agonist) data plus localization studies. C50, while labeled as speculation in the evidence, is reasonably supported by the convergence of dendritic localization and impaired KC-MBON plasticity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors speculate that mAChR-A may mediate lateral inhibition in conjunction with APL, that Gq signaling may render synapses more labile to aid both learning and forgetting, and that mAChR-A may enable metaplasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73, C82, and C83 are explicitly labeled as speculation in the evidence field. While these hypotheses are plausible given the data presented, they lack direct experimental support in the current manuscript. These represent interesting directions for future work but should not be considered established results.",
+    "result_type": "MINOR"
+  }
+]

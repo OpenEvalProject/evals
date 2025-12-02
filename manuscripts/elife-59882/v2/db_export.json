@@ -1,0 +1,1784 @@
+{
+  "submission": {
+    "id": "02139121-818d-443a-8517-1a5f8292345a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:45:26.823752Z",
+    "updated_at": "2025-12-02T20:45:26.823752Z"
+  },
+  "content": [
+    {
+      "id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "submission_id": "02139121-818d-443a-8517-1a5f8292345a",
+      "content_type": "manuscript",
+      "content_text": "# Functional reconstitution of a bacterial CO2 concentrating mechanism in Escherichia coli\n\n## Authors\n\n- Avi I Flamholz<sup>1</sup> ([ORCID: 0000-0002-9278-5479](https://orcid.org/0000-0002-9278-5479))\n- Eli Dugan<sup>1</sup> ([ORCID: 0000-0003-2400-5511](https://orcid.org/0000-0003-2400-5511))\n- Cecilia Blikstad<sup>1</sup> ([ORCID: 0000-0001-5740-926X](https://orcid.org/0000-0001-5740-926X))\n- Shmuel Gleizer<sup>2</sup>\n- Roee Ben-Nissan<sup>2</sup>\n- Shira Amram<sup>2</sup>\n- Niv Antonovsky<sup>2</sup>\n- Sumedha Ravishankar<sup>1</sup> ([ORCID: 0000-0002-4026-0742](https://orcid.org/0000-0002-4026-0742))\n- Elad Noor<sup>2</sup> ([ORCID: 0000-0001-8776-4799](https://orcid.org/0000-0001-8776-4799))\n- Arren Bar-Even<sup>3</sup> ([ORCID: 0000-0002-1039-4328](https://orcid.org/0000-0002-1039-4328))\n- Ron Milo<sup>2</sup> ([ORCID: 0000-0003-1641-2299](https://orcid.org/0000-0003-1641-2299)) \u2020\n- David F Savage<sup>1</sup> ([ORCID: 0000-0003-0042-2257](https://orcid.org/0000-0003-0042-2257)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States\n2. Department of Plant and Environmental Sciences, Weizmann Institute of Science Rehovot Israel\n3. Max Planck Institute of Molecular Plant Physiology Potsdam Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany photosynthetic organisms employ a CO2 concentrating mechanism (CCM) to increase the rate of CO2 fixation via the Calvin cycle. CCMs catalyze \u224850% of global photosynthesis, yet it remains unclear which genes and proteins are required to produce this complex adaptation. We describe the construction of a functional CCM in a non-native host, achieved by expressing genes from an autotrophic bacterium in an Escherichia coli strain engineered to depend on rubisco carboxylation for growth. Expression of 20 CCM genes enabled E. coli to grow by fixing CO2 from ambient air into biomass, with growth in ambient air depending on the components of the CCM. Bacterial CCMs are therefore genetically compact and readily transplanted, rationalizing their presence in diverse bacteria. Reconstitution enabled genetic experiments refining our understanding of the CCM, thereby laying the groundwork for deeper study and engineering of the cell biology supporting CO2 assimilation in diverse organisms.\n\n## Introduction\n\nNearly all carbon in the biosphere enters by CO2 fixation in the Calvin-Benson-Bassham cycle (Bassham, 2003; Bassham et al., 1954; Benson, 2002; Field et al., 1998; Raven, 2009). Ribulose Bisphosphate Carboxylase/Oxygenase - commonly known as rubisco - is the CO2 fixing enzyme in this cycle (Kawashima and Wildman, 1971; Weissbach et al., 1956; Wildman, 2002) and likely the most abundant enzyme on Earth (Bar-On and Milo, 2019).\n\nAs rubisco is abundant and central to biology, one might expect it to be an exceptional catalyst, but it is not. Photosynthetic rubiscos are modest enzymes, with carboxylation turnover numbers (kcat) ranging from 1 to 10 s\u22121\u00a0(Badger et al., 1998; Flamholz et al., 2019; I\u00f1iguez et al., 2020; Jordan and Ogren, 1983; Savir et al., 2010; Tcherkez et al., 2006). Moreover, all known rubiscos catalyze a competing oxygenation of the five-carbon organic substrate, ribulose 1,\u00a05-bisphosphate (Bathellier et al., 2018; Bowes and Ogren, 1972; Cleland et al., 1998). Rubisco oxygenation represents a \u2018waste\u2019 of cellular resources on two fronts: it fails to generate any new organic carbon and also produces a molecule (2-phosphoglycolate) that is not part of the Calvin cycle and therefore must be recycled through a salvage pathway to keep the cycle going (Busch, 2020).\n\nRubisco arose\u00a0>2.5 billion years ago, when Earth\u2019s atmosphere contained little O2 and abundant CO2\u00a0(Fischer et al., 2016; Shih et al., 2016). In this environment, rubisco\u2019s eponymous oxygenase activity could not have hindered carbon fixation or the growth of CO2-fixing organisms. Present-day atmosphere, however, poses a problem for plants and other autotrophs: their primary carbon source, CO2, is relatively scarce (\u22480.04%) while a potent competing substrate, O2, is abundant (\u224821%).\n\nCO2 concentrating mechanisms (CCMs) arose multiple times over the last 2 billion years (Flamholz and Shih, 2020; Raven et al., 2017) and overcame rubisco\u2019s limitations by concentrating CO2 near the enzyme (Figure 1A). In an elevated CO2 environment, most rubisco active sites will be occupied with CO2 and not O2. As such, high CO2 is expected to increase the rate of carboxylation and competitively inhibit oxygenation (Bowes and Ogren, 1972) thereby improving overall carbon assimilation (Figure 1B). Today, at least four varieties of CCMs are found in plants, algae, and bacteria (Flamholz and Shih, 2020; Raven et al., 2017), organisms with CCMs are collectively responsible for \u224850% of global net photosynthesis (Raven et al., 2017), and some of the most productive human crops (e.g. maize and sugarcane) rely on CCMs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig1-v2.jpg)\n\n**Figure 1.:** (A) The bacterial CCM consists of at least two essential components - energy-coupled inorganic carbon uptake and carboxysome structures that encapsulate rubisco with a carbonic anhydrase (CA) enzyme (Desmarais et al., 2019; Kaplan et al., 1980; Price and Badger, 1989a, Price and Badger, 1989b; Rae et al., 2013; Shively et al., 1973). Transport generates a large cytosolic HCO3- pool, which is rapidly converted to high carboxysomal CO2 concentration by the carboxysomal CA (Mangan et al., 2016; McGrath and Long, 2014). (B) Elevated CO2 increases the rubisco carboxylation rate (green) and suppresses oxygenation by competitive inhibition (grey). [O2] was set to 270 \u03bcM for rate calculations. A more detailed version of this calculation is described in Figure 1\u2014figure supplement 1. (C) H. neapolitanus CCM genes are mostly contained in a 20 gene cluster (Desmarais et al., 2019) expressing rubisco and its associated chaperones (green), carboxysome structural proteins (purple), and an inorganic carbon transporter (orange). Supplementary file 1 gives fuller description of the functions of these 20 genes along with a per-gene bibliography. Figure 1\u2014figure supplement 2 demonstrates that the operon beginning with acRAF indeed encodes a functional inorganic carbon transporter.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Kinetic data assembled for \u2248300 rubiscos from diverse organisms show that there is limited variation (less than one order of magnitude) in CO2 specificity (SC/O) and maximum carboxylation rate (kcat,C) among the Form I rubiscos found in all photoautotrophs and all bacteria harboring carboxysome CCMs (Flamholz et al., 2019). Moreover, SC/O and kcat,C appear to trade-off with each other. Although this relationship is not strict, rubiscos with high kcat,C values also typically have lower SC/O(Savir et al., 2010; Tcherkez et al., 2006). As carboxylation and oxygenation reactions occur at the same active site, elevated CO2 will both increase the carboxylation rate (until it reaches kcat,C) and also inhibit oxygenation by exclusion of oxygen from the active site. As it relies only on the well-founded assumption that catalysis with CO2 and O2 substrates are mutually exclusive, this mechanism should function for any rubisco. Panels B-D depict this effect for three distinct rubiscos, which are highlighted with black borders in (A). Panels give carboxylation (light green), oxygenation (red) and net carboxylation (dark green) rates as a function of the aqueous CO2 concentration at ambient O2 levels (270 uM at 25 \u2103). All curves were calculated using standard kinetic equations for rubisco. Net carboxylation was calculated as the carboxylation rate less \u00bd the oxygenation rate, which presumes a plant-type photorespiratory pathway that loses one CO2 for every two oxygenation\u00a0reactions. (B) Bacterial Form II rubiscos are typically found in organisms living in low O2 environments and, accordingly, display low CO2 specificities (SC/O \u2248 10) and relatively high maximum carboxylation rates (kcat,C \u224810\u201320 s\u22121, Davidi et al., 2020). As such, Form II rubiscos do not perform well in ambient CO2 and O2 concentrations. (C) C3 plants like spinach do not have CCMs. Furthermore, the CO2 concentration inside the leaf is typically measured to be lower than ambient due to a balance of stomatal conductance and CO2 fixation by rubisco itself (Caemmerer and Evans, 1991). Accordingly, C3 plant rubiscos display high CO2 specificities (SC/O \u2248 100), modest kcat,C \u2248 3 s\u22121, and perform well at ambient and sub-ambient CO2 levels, displaying relatively little oxygenation and, consequently, net carboxylation rates that are similar to the total carboxylation rate. (D) Rubiscos found in bacteria with a carboxysome CCM typically have relatively low CO2 specificities (SC/O \u2248 50) and fast maximum carboxylation rates relative to other Form I rubiscos (kcat,C \u2248 10 s\u22121). In general, rubiscos from organisms bearing CCMs (whether bacteria, algae, or plants) tend to have lower CO2 specificities and higher kcat,C than enzymes from related organisms without CCMs (I\u00f1iguez et al., 2020; Savir et al., 2010). The carboxysomal rubisco from S. elongatus PCC 7942 performs worse than a typical C3 plant rubisco in ambient air, but much better in the elevated CO2 environment we presume is maintained by the carboxysome CCM. The aqueous CO2 and O2 concentrations were calculated assuming Henry\u2019s law equilibrium at 25 \u2103. Notably, changes in temperature will affect CO2 and O2 solubility (Milo and Phillips, 2015; Sander, 2015) and rubisco kinetics, most notably decreasing CO2-specificity at elevated temperatures (Boyd et al., 2019; Sage et al., 2012).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** In previous work, we showed that the H. neapolitanus genome contains two homologous complexes DAB1 and DAB2 that are required for growth in ambient air (Desmarais et al., 2019). We further demonstrated that DAB2 is a two-gene operon whose protein products form a membrane associated complex that is capable of energetically active inorganic carbon uptake, but did not investigate DAB1 in detail. Here, we use DAB1 because it is encoded in the same genomic locus as the carboxysome, in a putative operon that also contains other potentially CCM-relevant genes like rubisco chaperones. See Figure 1C and Supplementary file 1 for further detail on the contents of this operon. As before, we rely on a reporter strain, CAfree, to test inorganic carbon transporters. This strain lacks all endogenous carbonic anhydrases and fails to grow in ambient air as a result (Desmarais et al., 2019). Growth of CAfree is complemented by elevating the CO2 level in the growth chamber, expressing carbonic anhydrases, or by supplying intracellular HCO3- via an inorganic carbon transporter like DAB2. Panel (A) reproduces our previous result - that expression of DAB2 from the pFA backbone complements growth of CAfree in ambient air, such that CAfree:pFA-DAB2 (orange) grows similarly to the wild-type strain (WT:vec, light grey). A negative control (CAfree:vec, dark grey) fails to grow, as expected. (B) DAB1 genes, which are marked in orange in Figure 1C, also rescue growth of CAfree in ambient air. pFA-DAB1 expresses only the DAB1 genes and omits the remaining eight genes in the operon. (C) The pCCM plasmid encodes all 11 genes found in the same putative operon as DAB1. CAfree:pCCM also well grows in ambient air. Cells were grown in LB media with 100 nM aTc induction throughout, with \u2018vec\u2019 denoting a vector control of pFA-sfGFP.\n\nCCMs are particularly common among autotrophic bacteria: all Cyanobacteria and many Proteobacteria have CCM genes (Kerfeld and Melnicki, 2016; Rae et al., 2013). Bacterial CCMs rely on two crucial features: (i) energy-coupled inorganic carbon uptake at the cell membrane and (ii) a 200+ MDa protein organelle called the carboxysome that encapsulates rubisco with a carbonic anhydrase enzyme (Desmarais et al., 2019; Kaplan et al., 1980; Price and Badger, 1989a, Price and Badger, 1989b; Rae et al., 2013; Shively et al., 1973). In the prevailing model of the carboxysome CCM (Fridlyand et al., 1996; Mangan et al., 2016; McGrath and Long, 2014), inorganic carbon uptake produces a high, above-equilibrium cytosolic HCO3- concentration (\u224830 mM) that diffuses into the carboxysome, where carbonic anhydrase activity produces a high carboxysomal CO2 concentration that promotes efficient carboxylation by rubisco (Figure 1A\u2013B).\n\nAs CCMs accelerate CO2 fixation by rubisco, there is great interest in transplanting them into crops (Ermakova et al., 2020; McGrath and Long, 2014). Carboxysome-based CCMs are especially attractive because they natively function in single cells and appear to rely on a tractable number of genes (Lin et al., 2014; Long et al., 2018; Occhialini et al., 2016; Orr et al., 2020). Modeling suggests that introducing bacterial CCM components could improve plant photosynthesis (McGrath and Long, 2014), especially if aspects of plant physiology can be modulated via genetic engineering (Wu et al., 2019). However, expressing bacterial rubiscos and carboxysome components has, so far, uniformly resulted in transgenic plants displaying impaired growth (Lin et al., 2014; Long et al., 2018; Occhialini et al., 2016; Orr et al., 2020). More generally, as our understanding of the genes and proteins participating in the carboxysome CCM rests mostly on loss-of-function genetic experiments in native hosts (Baker et al., 1998; Cai et al., 2009; Cannon et al., 2001; Desmarais et al., 2019; Marcus et al., 1986; Ogawa et al., 1987; Price and Badger, 1989a), it is possible that some genetic, biochemical, and physiological aspects of CCM function remain unappreciated. We therefore sought to test whether current understanding is sufficient to reconstitute the bacterial CCM in a non-native bacterial host, namely Escherichia coli.\n\nUsing a genome-wide screen in the CO2-fixing proteobacterium Halothiobacillus neapolitanus, we recently demonstrated that a 20-gene cluster encodes all activities required for the CCM, at least in principle (Desmarais et al., 2019). These genes are detailed in Supplementary file 1 and include rubisco large and small subunits, the carboxysomal carbonic anhydrase, seven structural proteins of the \u0251-carboxysome (Bonacci et al., 2012), an energy-coupled inorganic carbon transporter (Desmarais et al., 2019; USF MCB4404L et al., 2017; Scott et al., 2019), three rubisco chaperones (Aigner et al., 2017; Feiz et al., 2014; Mueller-Cajar, 2017; Wheatley et al., 2014), and four genes of uncertain function (Figure 1C). We aimed to test whether these genes are sufficient to establish a functioning CCM in E. coli.\n\n## Results\n\nAs E. coli is a heterotroph, consuming organic carbon molecules to produce energy and biomass, it does not natively rely on rubisco. Therefore, in order to evaluate the effect of heterologous CCM expression, we first designed an E. coli strain that depends on rubisco carboxylation for growth. To grow on glycerol as the sole carbon source, E. coli must synthesize ribose 5-phosphate (Ri5P) for nucleic acids. Synthesis of Ri5P via the pentose phosphate pathway forces co-production of ribulose 5-phosphate (Ru5P). Deletion of ribose 5-phosphate isomerase (rpiAB genes, denoted \u0394rpi), however, makes Ru5P a metabolic \u2018dead-end\u2019 (Figure 2A). Expression of phosphoribulokinase (prk) and rubisco enables a \u2018detour\u2019 pathway converting Ru5P and CO2 into two units of the central metabolite 3-phosphoglycerate (3PG), enabling Ru5P metabolism and growth (Figure 2A). Additionally, cytosolic carbonic anhydrase activity is incompatible with the bacterial CCM (Price and Badger, 1989b). We therefore constructed a strain, named CCMB1 for \u2018CCM Background 1\u2019, lacking rpiAB and all endogenous carbonic anhydrases (Materials\u00a0and\u00a0methods, Appendix 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig2-v2.jpg)\n\n**Figure 2.:** (A) Ribose-5-phosphate (Ri5P) is required for nucleotide biosynthesis. Deletion of ribose-phosphate isomerase (\u0394rpi) in CCMB1 blocks ribulose-5-phosphate (Ru5P) metabolism in the pentose phosphate (PP) pathway. Expression of rubisco (H. neapolitanus CbbLS) and phosphoribulokinase (S. elongatus PCC7942 prk) on the p1A plasmid (B) permits Ru5P metabolism, thus enabling growth on M9 glycerol media in 10% CO2 (C). Mutating the rubisco active site (p1A CbbL-) abrogates growth, as does mutating ATP-binding residues of Prk (p1A Prk-). (D) CCMB1:p1A grows well under 10% CO2, but fails to grow in ambient air. Cells were grown on M9 glycerol media throughout. The algorithmic design of CCMB1 is described in Figure 2\u2014figure supplement 4 and\u00a0Appendix\u00a01.\u00a0The mechanism of rubisco-dependence is diagrammed in Figure 2\u2014figure supplement 3. Figure supplement 2 demonstrates growth of CCMB1:p1A on various media, Figure 2\u2014figure supplement 5 demonstrates complementation by a variety of bacterial rubiscos and Figure 2\u2014figure supplement 1 demonstrates anaerobic growth of CCMB1:p1A, establishing that oxygenation is not required for growth. Acronyms: ribulose 1,\u00a05-bisphosphate (RuBP), 3-phosphoglycerate (3PG).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Expression of five diverse rubiscos in CCMB1 complemented growth in 5% CO2 (colored lines) but not in ambient air (grey). Expressing the carboxysomal Form IA rubisco from H. neapolitanus along with prk on the p1A plasmid (CCMB1:p1A) permits growth in 5% CO2 (teal) but not in ambient air. A catalytically inactive variant (p1A CbbL K194M) failed to grow in both conditions, as expected and shown in Figure 2 and Figure 2\u2014figure supplements 2, 5. The kinetic parameters of this rubisco have not been measured, but it is assumed to be relatively fast (kcat,C \u2248 5\u201310 s\u22121) and relatively non-specific towards CO2 (SC/O \u2248 30\u201350) like other carboxysome-localized Form IA rubiscos. Four additional rubiscos were expressed from an identical plasmid backbone and all of them permitted CCMB1 to grow in 5% CO2 with varying kinetics. The non-carboxysomal Form IC rubisco from Ralstonia eutropha (also known as Cupriavidis\u00a0necator) is in orange and is the most specific bacterial rubisco known, with kcat,C \u2248 2\u20133 s\u22121 and SC/O \u2248 75\u201385. The Form IC rubisco from Rhodobacter sphaeroides (light blue) and has kcat,C \u2248 1\u20132 s\u22121 and SC/O \u2248 55\u201360. The cyanobacterium S. elongatus PCC 6301 expresses a Form IB rubisco in the same family found in eukaryotic algae and land plants (pink). This enzyme is exceptionally fast for a Form I rubisco, with kcat,C \u2248 10\u201314 s\u22121 and SC/O \u2248 40\u201350. Finally, the model Form II rubisco from R. rubrum (light green) also complemented CCMB1 for growth in 5% CO2. Form II enzymes have relatively high kcat,C \u2248 10 s\u22121 and low SC/O \u2248 10\u201320. Biological triplicate measurements were conducted for all rubiscos in panel A and were all consistent. Notably, none of these rubiscos permit growth in ambient air, even though they span a large fraction of the known diversity in maximum carboxylation rate (kcat,C) and CO2-specificity (SC/O). For kinetic measurements of diverse rubiscos, see recent meta-analyses by Flamholz et al., 2019; I\u00f1iguez et al., 2020. For recent measurements of the R. eutropha, R. rubrum, and S. elongatus enzymes, see Davidi et al., 2020; Occhialini et al., 2016; Satagopan and Tabita, 2016. (B) Growth rate and yield of CCMB1:p1A+vec depend on the CO2 concentration, with higher CO2 improving growth (\u2018vec\u2019 denotes pFA-sfGFP). This result\u00a0suggests that growth of CCMB1 is indeed coupled to the rate of carboxylation by rubisco, as predicted by the OptSlope algorithm described in Figure 2\u2014figure supplement 4.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Titer plating assays were used to measure the viability of CCMB1:p1A grown on glycerol media under ambient air (\u22480.04% CO2, 21% O2), 10% CO2 (balance air), and an anoxic mix of 10% CO2 and 90% N2 (\u2018No O2\u2019). Since E. coli cannot ferment glycerol, 20 mM nitrate\u00a0(NO3-)\u00a0was provided as an alternate electron acceptor as marked. (B) CCMB1:p1A grows on glycerol media in the absence of O2 so long as nitrate is provided. While CCMB1:p1A colonies are noticeably smaller than WT in panel (A), the colony count is indistinguishable, as quantified in panel (B). Experiments were conducted in biological duplicate (i.e. pre-cultures from distinct colonies) with at least two technical replicates (repeated spotting from the same preculture).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) CCMB1 depends on rubisco and prk for growth in glycerol, gluconate, and xylose minimal media. The common mechanism is an inability to metabolize ribulose-5-phosphate (Ru5P) due to the deletion of both ribose-phosphate isomerase genes (\u0394rpiAB). When gluconate or xylose is the growth substrate, Ru5P must be produced in order to metabolize the carbon source. Although wild-type E. coli can metabolize gluconate via the ED pathway, the ED dehydratase knockout (\u0394edd) in CCMB1 blocks this route and forces 1:1 production of Ru5P from gluconate. Expression of prk and rubisco opens a new route of Ru5P metabolism, thus enabling CCMB1 to grow in gluconate or xylose media. Since extracellular glycerol is converted to glyceraldehyde 3-phosphate (GAP), it can be metabolized through lower glycolysis or through gluconeogenesis. The gluconeogenesis route produces hexoses that enter the pentose phosphate pathway, which is required to synthesize ribose 5-phosphate (Ri5P) for nucleotide and histidine biosynthesis. Depending on the growth rate, products of Ri5P make up 5\u201325% of E. coli biomass (Bremer and Dennis, 2008; Taymaz-Nikerel et al., 2010). As shown in (B), the pentose phosphate pathway forces co-production of Ri5P, Ru5P and xylulose 5-phosphate (Xu5P). In the absence of rpi activity, there is no pathway for metabolism of Xu5P or Ru5P. This defect is complemented by the expression of rubisco and prk. Notably, rubisco can also oxygenate RuBP, as shown in (C). E. coli can, in principle, recycle the oxygenation product 2-phosphoglycolate (2PG)\u00a0through an ersatz salvage pathway via tartronate semialdehyde. This pathway is not the dominant mechanism of rubisco complementation because CCMB1:p1A cannot grow in ambient air, where O2 is abundant (Figure 2D). Panel (D) describes the initial metabolism of extracellular glycerol, gluconate, and xylose in E. coli Extracellular carbon sources are marked with a grey background throughout. Abbreviations: 3-phosphoglycerate (3PG), 2-phosphoglycolate (2PG), glyceraldehyde 2-phosphate (GAP), dihydroxyacetone phosphate (DHAP), ribose 5-phosphate (Ri5P), ribulose 5-phosphate (Ru5P), xylulose 5-phosphate (Xu5P), ribulose 1,\u00a05-bisphosphate (RuBP), 2-keto-3-deoxy-6-phosphogluconate (KDGP), fructose 6-phosphate (F6P), fructose 1,6-bisphosphate (F-1,6-BP), phosphoenolpyruvate (PEP).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Optslope searches for metabolic knockout mutants in which biomass production is coupled to flux through a reaction of choice (e.g. rubisco) at all growth rates. (A) shows the space of feasible biomass production and rubisco fluxes for wildtype (WT, grey) and a knockout mutant (green). For WT, biomass production and, therefore, growth rate, are independent of rubisco at all feasible growth rates (i.e. within the grey polygon). The mutant is \u2018rubisco-coupled\u2019 because maximal biomass production requires non-zero rubisco carboxylation flux and increasing biomass production demands increased carboxylation. The slope of this relationship is the \u2018coupling slope.\u2019 (B) We computationally generated pairs of E. coli central metabolic knockouts and calculated the coupling slope on nine carbon sources: glucose (gluc), fructose (fruc), gluconate (gnt), ribose (ribo), succinate (succ), xylose (xyl), glycerate (glyate), acetate (ace), and glycerol (glyol). Each double knockout is summarized as a 3\u00a0\u00d7\u00a03 matrix of coupling slopes. Black denotes a rubisco-independent mutant and maroon a coupling slope of 0. The published mutant \u2206gapA (Mueller-Cajar et al., 2007) has a coupling slope of 0 (left), while the \u2206rpiAB \u2206edd strain is rubisco-coupled on seven of the carbon sources (right). (C) Feasible phase space diagram for the \u2206gapA strain shows that biomass production is not coupled to rubisco flux. (D) \u2206rpiAB \u2206edd has a positive coupling slope in glycerol, gluconate and xylose media.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Expression of rubisco and prk complements CCMB1 growth on M9 glycerol and gluconate media under 10% CO2, but not in ambient conditions (100 nM aTc induction in M9 plates). Mutations ablating rubisco (CbbL-) or prk (Prk-) activity abrogate growth in selective media but not in LB under 10% CO2. Growth in LB is robust and rubisco-independent in 10% CO2, but CCMB1 does not grow in ambient air even when supplied with rich media because it lacks CA genes (Merlin et al., 2003). Growth curves in (B) show the rubisco-dependence of CCMB1:p1A growth in glycerol (green) and gluconate (blue) media under 5% CO2 in a gas controlled plate reader (Materials\u00a0and\u00a0methods). Negative controls (CCMB1:p1A CbbL- in glycerol or gluconate media) and uninduced cultures failed to grow in these conditions (dashed grey lines). Experiments were conducted in technical sextuplicate\u00a0and\u00a0replicates were all consistent.\n\nAs predicted, CCMB1 required rubisco and prk for growth on glycerol minimal media in 10% CO2 (Figure 2B\u2013C). CCMB1:p1A failed to grow on glycerol media in ambient air, however, presumably due to insufficient carboxylation at low CO2 (Figure 2D). As such, CCMB1:p1A displays the \u2018high-CO2 requiring\u2019 phenotype that is the hallmark of CCM mutants (Baker et al., 1998; Marcus et al., 1986; Price and Badger, 1989a). Four additional bacterial rubiscos were tested and displayed the same pattern, enabling CCMB1 to grow reproducibly in high CO2 but not in ambient air (Figure 2\u2014figure supplement 1). When expressing rubisco and prk from the p1A plasmid, CCMB1 also grew reproducibly in an anoxic mix of 10:90 CO2:N2 (Figure 2\u2014figure supplement 2) implying that carboxylation is sufficient for growth on glycerol media and rubisco-catalyzed oxygenation of RuBP is not required.\n\nWe expected that expressing a functional CO2-concentrating mechanism would cure CCMB1 of its high-CO2 requirement and permit growth in ambient air. We therefore generated two plasmids, pCB and pCCM, that together express all 20 genes from the H. neapolitanus CCM cluster (Figure 1C). pCB encodes 10 carboxysome genes (Bonacci et al., 2012; Cai et al., 2008), including rubisco large and small subunits, along with prk. The remaining H. neapolitanus genes, including putative rubisco chaperones (Aigner et al., 2017; Mueller-Cajar, 2017; Wheatley et al., 2014) and an inorganic carbon transporter (Desmarais et al., 2019; Scott et al., 2019), were cloned into the second plasmid, pCCM.\n\nCCMB1 co-transformed with pCB and pCCM initially failed to grow on glycerol media. We therefore conducted selection experiments, described fully in Appendix 2, that ultimately resulted in the isolation of mutant plasmids conferring growth in ambient air. Briefly, CCMB1:pCB + pCCM cultures were grown to saturation in 10% CO2. These cultures were washed and plated on glycerol minimal media (Materials\u00a0and\u00a0methods). Colonies became visible after 20 days of incubation in ambient air, but only when induction and both plasmids were provided (Figure 3\u2014figure supplement 1). Deep-sequencing of plasmid DNA revealed mutations in regulatory sequences (e.g. a promoter and transcriptional repressor) but none in sequences coding for CCM components (Supplementary file 1). Individual post-selection plasmids pCB\u2019 and pCCM\u2019 were reconstructed by PCR, resequenced, and transformed into naive CCMB1 (Materials\u00a0and\u00a0methods). As shown in Figure 3, pCB\u2019 and pCCM\u2019 together enabled reproducible growth of CCMB1 in ambient air, suggesting that the 20 genes expressed are sufficient to produce a heterologous CCM without any genomic mutations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig3-v2.jpg)\n\n**Figure 3.:** Time course data give representative growth curves from a bioreactor bubbling ambient air. CCMB1:pCB\u2019 + pCCM\u2019 grows well (purple, \u2018full CCM\u2019), while rubisco and prk alone are insufficient for growth in ambient air (grey, CCMB1:p1A+vec). Inset: a plate reader experiment in biological triplicate (different shades) gave the same result. Expressing the full complement of CCM genes led to an increase in culture density (optical density at 600 nm) of \u22480.6 units after 80 hr of cultivation. Bootstrapping was used to calculate a 99.9% confidence interval of 0.56\u20130.64 OD units for the effect of expressing the full CCM during growth in ambient air. Figure 3\u2014figure supplement 1 and Appendix 2 describe the selection procedures in detail while Figure 3\u2014figure supplement 2 shows triplicate growth curves and evaluates statistical significance.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) pCB and pCCM plasmids together encode 20 H. neapolitanus genes including 12 confirmed CCM components. pCB carries kanamycin resistance and has two transcriptional units both\u00a0expressed under an aTc-inducible PLtetO-1 promoter (Lutz and Bujard, 1997). The first derives from pHnCB10 (Bonacci et al., 2012) and expresses 10 carboxysome proteins. The second expresses phosphoribulokinase (prk). pCCM carries chloramphenicol resistance and expresses an 11 gene operon from H. neapolitanus that contains both putative and confirmed CCM genes (Desmarais et al., 2019). Although pCB expresses both rubisco and prk, CCMB1:pCB did not initially grow in M9 media under 10% CO2 (not shown) and so we undertook a series of selections, described in panels (B\u2013D) that ultimately led to isolation of pCB\u2019 and pCCM\u2019 plasmids that together enable CCMB1 to grow in ambient air. (B) We first selected CCMB1:pCB for growth on minimal media by screening for mutants able to grow on M9 glycerol and then M9 gluconate media. Gluconate growing mutant #9 (gg.9) was used for subsequent experiments as this mutant was found to grow best on gluconate (as shown in E). (C) Plasmid extracted from gg.9 was deep sequenced and electroporated into naive CCMB1 to test for plasmid linkage of growth on minimal. (D) Selection for rubisco-dependent growth in ambient air. A turbid pre-culture of the CCMB1:pCB gg.9+pCCM double transformant was washed and plated on M9 glycerol media under ambient air. Colonies formed after \u224820 days (as shown in F). Forty colonies (s.1\u201340) were picked into rich media, grown to saturation, washed and plated on M9 glycerol media to verify growth under ambient air. Roughly \u00bc of chosen colonies regrew under ambient air to varying degrees (s.1\u20136 are shown in G). Plasmid extracted from several strains was deep-sequenced and electroporated into naive CCMB1 to test plasmid-linkage of growth on glycerol minimal media in ambient air. Pooled plasmid extracted from s.4 was found to confer replicable growth in ambient air (as shown in H). PCR and Gibson cloning were used to reconstruct the individual pCB and pCCM plasmids from this pool. We termed these reconstructed plasmids pCB\u2019 and pCCM\u2019. (E) Restreaking of gluconate-growing mutants gg.8\u201312 described in panel B shows that gg.9 grew best on gluconate. (F) CCMB1:pCB gg.9+pCCM double transformants were plated for mutants on M9 glycerol media under ambient air. A negative control lacking carboxysome genes (CCMB1:p1A+pCCM) was plated at the same time. Colonies formed after 20 days (bottom right) only on induced plates (100 nM) and only when all CCM genes were provided (i.e. pCB gg.9 and pCCM). (G) Several of the chosen colonies regrew in ambient air. Growth characteristics varied from colony to colony, suggesting genetic variation. (H) Pooled plasmid extracted from s.4 was found to permit naive CCMB1 to grow in ambient air. For comparison, plasmid from s.6 produced less reproducible growth in ambient air.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Biological triplicate growth curves from a bioreactor bubbling ambient air. CCMB1 co-transformed with post-selection plasmids pCB\u2019 and pCCM\u2019 (CCMB1:pCB\u2019 + pCCM\u2019) grows well (purple, \u2018full CCM\u2019), while rubisco and prk alone are insufficient for growth in air (grey, \u2018rubisco+prk\u2019). Maximal growth rates for the 'full CCM' cultures ranged from 0.03 to 0.06 hr\u22121, corresponding to doubling times of 12\u201325 hr. As these are biological replicate cultures, heterogeneity in growth kinetics could be due to genetic effects (e.g. point mutations in founding colonies) or non-genetic differences (e.g. varying degree of carboxysome production during pre-culturing). (B) Data for the same strains grown in a 96-well plate in ambient air in a shaking plate reader. Different shades mark biological replicates (pre-cultures deriving from three distinct colonies). Additionally, each preculture was used to inoculate at least 12 technical replicates. (C) Quantification of the experiment in panel (B) using endpoint data at 80 hr for biological and technical replicates. Panel (C) uses the same colors as (A) and (B) with the addition of a rubisco active site mutant as a negative control (grey, CCMB1:p1A- + vec). \u2018****\u2019 indicates p<10\u221210. p-Values were calculated with a Bonferroni-corrected two-sided Mann-Whitney-Wilcoxon test. 104-fold bootstrapping was used to compare \u2018full CCM\u2019 data to \u2018rubisco + prk\u2019 and estimate a confidence interval for the effect of expressing a full CCM on growth in ambient air, which gave a 99.9% confidence interval of 0.56\u20130.64 OD units.\n\nTo verify that growth in ambient air depends on the CCM, we generated plasmids carrying targeted mutations to known CCM components (Figure 4). An inactivating mutation to the carboxysomal rubisco (CbbL K194M) prohibited growth entirely. Mutations targeting the CCM, rather than rubisco itself, should ablate growth in ambient air while permitting growth in high CO2(Desmarais et al., 2019; Mangan et al., 2016; Marcus et al., 1986; Price and Badger, 1989a; Rae et al., 2013). Consistent with this understanding, an inactive mutant of the carboxysomal carbonic anhydrase (CsoSCA C173S) required high-CO2 for growth. Similarly, disruption of carboxysome formation by removal of the pentameric shell proteins or the N-terminal domain of CsoS2 also eliminated growth in ambient air. Removing the pentameric proteins CsoS4AB disrupts the permeability barrier at the carboxysome shell (Cai et al., 2009), while truncating CsoS2 prohibits carboxysome formation entirely (Oltrogge et al., 2020). Finally, an inactivating mutation to the inorganic carbon transporter also eliminated growth in ambient air (Desmarais et al., 2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig4-v2.jpg)\n\n**Figure 4.:** We generated plasmid variants carrying inactivating mutations to known components of the CCM. (A) Pre-cultures were grown in 10% CO2 and diluted into pairs of tubes, one of which was cultured in 10% CO2 and the other in ambient air (Materials\u00a0and\u00a0methods). Strains were tested in biological quadruplicate and culture density was measured after 12 days to ensure an endpoint measurement of capacity to grow. (B) Targeted mutations to CCM components ablated growth in ambient air while permitting growth in 10% CO2, as expected. The left bar (darker color) gives the mean endpoint density in 10% CO2 for each strain. The right bar (lighter color) gives the mean in ambient air. Error bars give a 95% confidence interval for the mean. From left to right, in pairs: a positive control for growth (a complemented carbonic anhydrase knockout in grey, see Materials\u00a0and\u00a0methods) grew in 10% CO2 and ambient air, while a negative control CCMB1 strain carrying catalytically inactive rubisco (CCMB1:pCB\u2019 CbbL-+pCCM\u2019) failed to grow in either condition; CCMB1 expressing rubisco and prk but no CCM genes (green, CCMB1:p1A+vec) grew only in 10% CO2; CCMB1:pCB\u2019+pCCM\u2019 grew in 10% CO2 and ambient air, recapitulating results presented in Figure 3. The following four pairs of maroon bars give growth data for strains carrying targeted mutations to CCM genes: an inactivating mutation to carboxysomal carbonic anhydrase (CCMB1:pCB\u2019 CsoSCA-+pCCM\u2019), deletion of the CsoS2 N-terminus responsible for recruiting rubisco to the carboxysome (CCMB1:pCB\u2019 CsoS2 \u0394NTD+pCCM\u2019), deletion of pentameric vertex proteins (CCMB1:pCB\u2019 \u0394csoS4AB + pCCM\u2019), and inactivating mutations to the DAB carbon uptake system (CCMB1:pCB\u2019 DabA1- + pCCM\u2019). All four CCM mutations abrogated growth in air while permitting growth in 10% CO2. The positive control is the CAfree strain expressing human carbonic anhydrase II (Materials\u00a0and\u00a0methods). Figure 4\u2014figure supplement 1 describes statistical analyses, a 4-day replicate experiment, and additional mutants testing the contribution of rubisco chaperones to the CCM. Figure 4\u2014figure supplement 2 gives measurements of media pH after growth in 10% CO2 and ambient air. Detailed description of all plasmid and mutation abbreviations is given in Supplementary file 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Pre-cultures were grown to saturation in 10% CO2 and then diluted to an optical density of 0.01 (600 nm) into two tubes (Materials\u00a0and\u00a0methods). One tube was grown in 10% CO2 and the other in ambient air, as diagrammed in (B). Cells were incubated for 4 days before measuring optical density in (A) and 12 days in (C). The left bar (darker color) gives the mean endpoint density of biological quadruplicate cultures in 10% CO2 and the right bar (lighter color) gives the mean in ambient air. Error bars give a 95% confidence interval of measurements. (A) and (C) share the leftmost 11 strains. From left to right: a positive control (grey, grows in both conditions), two negative controls carrying active site mutants of rubisco (CCMB1:p1A-+vec and CCMB1:pCB\u2019 CbbL-+pCCM\u2019), CCMB1 expressing rubisco and prk but no CCM genes (green, CCMB1:p1A+vec) or an incomplete set of CCM genes (green, CCMB1:p1A+pCCM\u2019), CCMB1:pCB+pCCM which carries the pre-selection CCM plasmids (purple), and CCMB1:pCB\u2019+pCCM\u2019 which carries the post-selection plasmids. \u2018vec\u2019 denotes an appropriate vector control (pFA-sfGFP). The following pairs of maroon bars describe strains carrying plasmids with targeted CCM mutations: CCMB1:pCB\u2019 CsoSCA-+pCCM\u2019 which carries an inactivating mutation to carboxysomal carbonic anhydrase, CCMB1:pCB\u2019 CsoS2 \u0394NTD +pCCM\u2019 harboring a deletion of the N-terminal domain of CsoS2 responsible for recruiting rubisco to the carboxysome, CCMB1:pCB\u2019 \u0394csoS4AB + pCCM\u2019 lacking both genes pentameric vertex proteins, and CCMB1:pCB\u2019 DabA1- + pCCM\u2019 carrying an inactivated DAB carbon uptake system. (A) CCMB1 grows well in ambient air only when given a full complement of CCM genes on the post-selection plasmids. All mutations to the CCM abrogate growth in air (maroon). Panel (C) shows consistent results over a 12-day time period. (C) describes three additional mutants: CCMB1:pCB\u2019 CbbL Y72R + pCCM\u2019 carrying a mutation to the rubisco large subunit that eliminates rubisco-CsoS2 binding, CCMB1:pCB\u2019 + pCCM\u2019 CbbQ- harboring inactivating mutation to the CbbQ subunit of the rubisco activase complex, and CCMB1:pCB\u2019 + pCCM\u2019 \u0394acRAF lacking the putative rubisco chaperone acRAF (CCMB1:pCB\u2019 + pCCM\u2019 \u0394acRAF). Ablation of rubisco-CsoS2 interaction should eliminate recruitment of rubisco to the carboxyome (Oltrogge et al., 2020). Accordingly, the Y72R mutation eliminated growth in air. Chaperone mutants (CbbQ or acRAF) were both viable in air, although removal of acRAF produced a substantial growth defect (2.5 fold in mean and 8.5 fold in median final density). The positive control strain is the CAfree strain expressing human carbonic anhydrase II (Materials\u00a0and\u00a0methods). p-Values calculated by a one-sided Mann-Whitney-Wilcoxon test. \u2018*\u2019 denotes a p<0.05. Detailed description of all plasmid abbreviations is given in Supplementary file 1.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Pre-cultures were grown to saturation in 10% CO2 and then diluted to an optical density of \u22480.01 (600 nm) as in Figure 4 (Materials\u00a0and\u00a0methods). One tube was grown in 10% CO2 and the other in ambient air. The media pH was measured in technical triplicate prior to the experiment and was found to be 7.02\u00a0\u00b1\u00a00.01. Cells were incubated for 4 days before measuring optical density and pH of culture supernatants. In both panels, the left bar (darker color) gives the mean endpoint density or pH of biological replicate cultures in 10% CO2 and the right bar (lighter color) gives the mean in ambient air. Error bars give a 95% confidence interval of measurements. Consistent with Figure 4, panel (A) shows that the positive control (leftmost, CAfree:vec+pFA-HCAII) and CCMB1:pCB\u2019+pCCM\u2019 grow (rightmost) in both conditions, while CCMB1:p1A+vec fails to grow in ambient air (center). Panel (B) gives endpoint pH measurements for the same cultures. In all cases, growth led to a relative acidification of the media, consistent with chemiosmotic H+ pumping from the cytoplasm to the media. For the control, the endpoint pH was \u22486.3 in both conditions. For CCMB1:pCB\u2019+pCCM\u2019 (\u2018full CCM\u2019) the endpoint pH was \u22486.5 in 10% CO2 and \u22486.6 in ambient. These differences between conditions and between control and experimental samples are consistent with inward-directed H+ pumping mechanism proposed for the DAB-type transport systems (Desmarais et al., 2019), but could also be due to large differences in the growth rate and intracellular metabolic flux distributions due to the multiple central metabolic knockouts in the CCMB1 strain.\n\nThese experiments demonstrate that pCB\u2019 and pCCM\u2019 enable CCMB1 to grow in ambient air in a manner that depends on the known components of the bacterial CCM. To confirm that these cells produce carboxysome structures, we performed thin section electron microscopy. Regular polyhedral inclusions of \u2248100 nm diameter were visible in micrographs (Figure 5A), implying production of morphologically\u00a0normal carboxysomes. Furthermore, we were able to purify carboxysome structures from CCMB1:pCB\u2019+pCCM\u2019 using established methods. Carboxysomes from CCMB1:pCB\u2019+pCCM\u2019 were similar in appearance to those from the native host, although more heterogeneous in size and shape (Figure 5B). The rubisco complex was visible inside isolated carboxysomes and confirmed to co-migrate with the structure via SDS-PAGE analysis (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig5-v2.jpg)\n\n**Figure 5.:** (A) Polyhedral bodies resembling carboxysomes are evident in electron micrographs of CCMB1:pCB\u2019+pCCM\u2019 cells grown in air (full CCM, both images on the right) but were not observed in a negative control lacking pCB and pCCM plasmids (left, Methods). All panels have equal scale. (B) Carboxysome structures purified from CCMB1:pCB\u2019+pCCM\u2019 grown in ambient air (Materials\u00a0and\u00a0methods, right) resemble structures isolated from the native host (left) in size and morphology. Figure 5\u2014figure supplement 2 gives full size and additional images clearly showing rubisco inside isolated carboxysomes. SDS-PAGE gels in Figure 5\u2014figure supplement 1 demonstrate co-migration of rubisco large and small subunits with carboxysomes structures through the purification procedure.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Lanes 1 and 2 give purifications from CCMB1:pCB\u2019+pCCM\u2019 grown in ambient air stained with silver and coomassie stains, respectively. Lane 3 is a purification from wild-type H. neapolitanus (Materials\u00a0and\u00a0methods). The legend on the right marks the carboxysome components that are typically visible on preparations from the native host: the shell proteins CsoS1CAB, two forms of the disordered protein CsoS2, the carbonic anhydrase CsoSCA, and the rubisco large and small subunits CbbLS. CbbLS bands are evident in all lanes, and all three purifications were found to contain carboxysome-like structures when imaged by transmission electron microscopy, as shown in Figure 5 and Figure 5\u2014figure supplement 2.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Thin section transmission electron micrographs of a negative control strain (A) and experimental cells (B) show that air-grown CCMB1:pCB\u2019+pCCM\u2019 cells (\u2018full CCM\u2019 in panel B) contain morphological carboxysomes (white arrows). The negative control for carboxysome expression is CAfree:pFE-sfGFP + pFA-HCAII (Materials\u00a0and\u00a0methods). Expression of CCM was associated with production of black-staining stress granules, which were not observed in images of the negative control. (C) Carboxysomes isolated from wild-type H. neapolitanus displayed regular pseudo-icosahedral structures with \u2248100 nm diameter, as expected (Shively et al., 1973). (D) Carboxysomes isolated from CCMB1 were less regular, but clearly resemble native structures. Preparations also contained \u2018rosette\u2019 structures we often observe when isolating carboxysomes from E. coli (far right panel). Purification yields from CCMB1:pCB\u2019+pCCM\u2019 were much lower than is typical for preparations from wild-type E. coli which may explain the relative abundance of rosette structures.\n\nWe next conducted isotopic labeling experiments to determine whether CCMB1:pCB\u2019 + pCCM\u2019 fixes CO2 from ambient air into biomass. Cells were grown in minimal media with 13C-labeled glycerol as the sole organic carbon source, such that CO2 from ambient air was the dominant source of 12C. The isotopic composition of amino acids in total biomass hydrolysate was analyzed via mass spectrometry (Materials\u00a0and\u00a0methods). Serine is a useful sentinel of rubisco activity because E. coli produces it from the rubisco product 3PG (Stauffer, 2004; Szyperski, 1995). 3PG is also an intermediate of lower glycolysis (Bar-Even et al., 2012), and so the degree of 12C labeling on serine reports on the balance of fluxes through rubisco and lower glycolysis (Figure 6A). We therefore expected excess 12C labeling of serine when rubisco is active in CCMB1. Consistent with this expectation, serine from CCMB1:pCB\u2019+pCCM\u2019 cells contained roughly threefold more 12C than the rubisco-independent control (Figure 6B). We estimated the contribution of rubisco to 3PG synthesis in vivo by comparing labeling patterns between the rubisco-dependent experimental cultures and controls (Appendix 2). Based on these estimates, rubisco carboxylation was responsible for at least 10% of 3PG synthesis in all four biological replicates (Figure 6C, Materials\u00a0and\u00a0methods), confirming fixation of CO2 from ambient air. As such, this work represents the first functional reconstitution of any CCM.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig6-v2.jpg)\n\n**Figure 6.:** Biological replicate cultures were grown in ambient air in M9 media containing 99% 13C labeled glycerol such that 12CO2 from air is the dominant source of 12C. In (A) 13C is depicted as open circles and partial 12C incorporation is indicated in green. As serine is a direct metabolic product of 3PG, we expect 12C enrichment on serine when rubisco is active in CCMB1 cells. 3PG also derives from glycolytic metabolism of glycerol, so complete 12C labeling of serine was not expected. (B) The 12C composition of serine from CCMB1:pCB\u2019 + pCCM\u2019 (\u2018Experiment\u2019) is roughly threefold above the control strain (CAfree:vec+pFA-HCAII), which grows in a rubisco-independent manner (Materials\u00a0and\u00a0methods). Figure 6\u2014figure supplement 1 gives 12C composition of all measured amino acids. (C) The fraction of 3PG production due to rubisco was predicted via Flux Balance Analysis and estimated from isotopic labeling data (Materials\u00a0and\u00a0methods, Appendix 3). Estimates of the rubisco flux fraction exceeded 10% for all four biological replicates and the mean estimate of \u224814% accords reasonably with predictions ranging from 16\u00a0to\u00a024%. Appendix 3 and Figure 6\u2014figure supplements 2\u20133 detail the flux inference procedure and give additional evidence for in vivo carboxylation from the fragmentation of serine.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Cells were grown under ambient air in M9 media containing 99% 13C-labeled glycerol (0.4% v/v) so that nearly all 12C in biomass must derive from inorganic carbon. The isotopic composition of amino acids in total biomass hydrolysate of CCMB1:pCB\u2019 + pCCM\u2019 and an appropriate rubisco-independent control were measured via LC-MS (Materials\u00a0and\u00a0methods). The control strain is CAfree complemented with the human carbonic anhydrase II, which does not express rubisco (Materials\u00a0and\u00a0methods). Serine and valine, which are marked in green, are downstream of the rubisco product 3PG in E. coli central metabolism and, accordingly, show significantly greater 12C incorporation in CCMB1:pCB\u2019 + pCCM\u2019 than the control. Most of the carbon atoms in histidine derive from ribose, which might contain rubisco-derived carbon atoms if the addition of rubisco enables cycling of carbon deriving from CO2 through the pentose phosphate pathway and gluconeogenesis. This could explain the significant increase in histidine labeling in the experimental samples relative to the control. Threonine, proline, and glutamate are synthesized from precursors deriving from the TCA cycle and thus their carbon atoms are not expected to derive primarily from 3PG (Szyperski, 1995). Arginine is synthesized via a rubisco-independent carboxylation of glutamate by the addition of carboxyphosphate (Gleizer et al., 2019), and so the difference between arginine and glutamate labeling is used to calculate the isotopic composition of intracellular inorganic carbon (Ci, Appendix\u00a03). Notably, intracellular Ci derives both from extracellular Ci (predominantly 12C) and\u00a0intracellular decarboxylation of the 99% 13C glycerol carbon source. As such, the composition will depend on Ci uptake as well as the rate of glycerol metabolism. Control cells also grew faster than CCMB1:pCB\u2019+pCCM, which might explain why arginine from these cells contains significantly less 12C than control samples (i.e. due to rapid decarboxylation of glycerol).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Cells were grown under ambient air in M9 media containing 99% 13C-labeled glycerol (0.4% v/v) so that nearly all 12C in biomass must derive from inorganic carbon. In (A) 13C atoms are depicted as open circles and fractional 12C labeling by a partial green fill color. In CCMB1, 3-phosphoglycerate (3PG) can be produced either through glycolytic metabolism of glycerol (via dihydroxyacetone-phosphate, DHAP) or through rubisco-catalyzed carboxylation of RuBP. At most \u2159 of the carbon atoms on 3PG will be 12C when rubisco is active in vivo. In practice, this fraction will be less than \u2159 because some of the intracellular inorganic carbon pool (Ci) derives from decarboxylation of 13C-labeled glycerol and also because a large fraction of intracellular 3PG is produced through glycolysis (Appendix\u00a03). Serine is a direct metabolic product of 3PG and so reports on the labeling of 3PG. As such, we measured the 12C composition of amino acids in total protein hydrolysate via LC-MS (Materials\u00a0and\u00a0methods). (B) Serine from CCM-expressing CCMB1 cells (\u2018Experiment\u2019) displayed roughly threefold higher 12C labeling than controls, which grow in a rubisco-independent manner (Materials\u00a0and\u00a0methods). (C) Rubisco carboxylation draws from the intracellular inorganic carbon pool, whose 12C composition can be inferred for each sample by comparing the labeling of L-arginine and L-glutamate (Materials\u00a0and\u00a0methods). The mean 12C fraction of intracellular Ci was estimated to be 20% \u00b1 1% and 61%\u00a0\u00b1\u00a020% for the control and experiment, respectively. (D) These values were integrated to estimate the percent of 3PG production flux that is due to carboxylation by rubisco (Appendix\u00a03), which was inferred to be 14%\u00a0\u00b1\u00a03%. These values compare favorably with predictions made via Flux Balance Analysis (16-24%, Appendix 3). A sampling approach, described in Appendix 3, was used to estimate the uncertainty in these rubisco flux inferences. 99% confidence intervals on the rubisco flux fraction were strictly positive for each biological replicate, with 99% of all posterior estimates between 5% and 20.3% across all four replicates.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/59882/elife-59882-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** In (A) CO2 and carboxyl groups deriving from it are marked in green. When rubisco carboxylates ribulose 1,\u00a05-bisphosphate, it produces two molecules of 3-phosphoglycerate only one of which has a CO2-derived carboxylic acid. Serine biosynthesis does not alter this position, and so we expect one CO2-derived carboxylic acid for every two serines that ultimately derive from rubisco-catalyzed carboxylation of ribulose 1,\u00a05-bisphosphate. If fully 13C-labeled ribulose 1,\u00a05-bisphosphate undergoes carboxylation with 12CO2, it would result in one fully 13C-labeled 3-phosphoglycerate and one with 12C at the carboxyl position\u00a0as\u00a0diagrammed. In panel (B), we summarize data from multiple reaction monitoring of the fragmentation of the serine M+2 isotopologue. This molecule has two additional mass units due to two 13C atoms. Fragmentation cleaves the bond between the carboxyl carbon and the \u0251-carbon on L-serine, marked by a red \u2018x\u2019 (Piraud et al., 2003), enabling us to ask: what fraction of the carboxyl carbons are 12C? If the 12C was incorporated at random, it would appear in the carboxyl position 33% of the time. However, if the carboxyl position derives appreciably from carboxylation by rubisco, we expect 12C enrichment at the carboxyl position as described in panel (A). We find that the control strain contains \u224845% 12C at this position, consistent with some background incorporation of CO2 into carboxyl groups in central metabolism, but that the experimental strain (CCMB1:pCB\u2019+pCCM\u2019 grown in ambient air) incorporates nearly twofold more 12C at the same position (\u224880%), as would be expected if rubisco produces a substantial fraction of intracellular 3-phosphoglycerate.\n\nReconstitution in E. coli enabled us to investigate which H. neapolitanus genes are necessary for CCM function in the absence of any regulation or genetic redundancy (i.e. genes with overlapping function) present in the native host. We focused on genes involved in rubisco proteostasis and generated plasmids lacking acRAF, a putative rubisco chaperone, or carrying targeted mutations to CbbQ, an ATPase involved in activating rubisco catalysis (Aigner et al., 2017; Mueller-Cajar, 2017; Sutter et al., 2015; Wheatley et al., 2014). Although acRAF deletion had a large negative effect in H. neapolitanus (Desmarais et al., 2019), neither acRAF nor CbbQ were strictly required for CCMB1 to grow in ambient air. Consistent with our screen in the native host (Desmarais et al., 2019); however, acRAF deletion produced a substantial growth defect (Figure 4\u2014figure supplement 1, panel C), suggesting that the rate of rubisco complex assembly is an important determinant of carboxysome biogenesis.\n\n## Discussion\n\nToday, CCMs catalyze about half of global photosynthesis (Raven et al., 2017), but this was not always so. Land plant CCMs, for example, arose only in the last 100 million years (Flamholz and Shih, 2020; Raven et al., 2017; Sage et al., 2012). Although all contemporary Cyanobacteria have CCM genes, these CCMs are found in two convergently\u00a0evolved varieties (Flamholz and Shih, 2020; Kerfeld and Melnicki, 2016; Rae et al., 2013), suggesting that the ancestor of present-day Cyanobacteria and chloroplasts did not have a CCM (Rae et al., 2013). So how did carboxysome CCMs come to dominate the cyanobacterial phylum?\n\nHere, we demonstrated that the \u0251-carboxysome CCM from H. neapolitanus can be readily transferred between species and confers a large growth benefit, suggesting that these CCMs became so widespread by horizontal transfer between bacteria (Kerfeld and Melnicki, 2016; Rae et al., 2013). We constructed a functional bacterial CCM by expressing 20 genes in\u00a0an E. coli strain, CCMB1, engineered to depend on rubisco carboxylation. In accordance with its role in native autotrophic hosts (Desmarais et al., 2019; Long et al., 2018; Marcus et al., 1986; Price and Badger, 1989a), the transplanted CCM required (i) \u0251-carboxysome structures containing both rubisco and carbonic anhydrase and (ii) inorganic carbon uptake at the cell membrane in order to enable CCMB1 to grow by fixing CO2 from ambient air (Figures 3\u20136). These results conclusively demonstrate that at most 20 gene products are required to produce a bacterial CCM. The \u0251-carboxysome CCM is apparently genetically compact and \u2018portable\u2019 between organisms. It is possible, therefore, that expressing bacterial CCMs in non-native autotrophic hosts will improve CO2 assimilation and growth. This is a promising approach to improving plant growth characteristics (Ermakova et al., 2020; Long et al., 2016; Wu et al., 2019) and also engineering enhanced microbial production of fuel, food products, and commodity chemicals from CO2 (Claassens et al., 2016; Gleizer et al., 2019).\n\nReconstitution also enabled us to test, via simple genetic experiments, whether particular genes play a role in the CCM (Figure 4\u2014figure supplement 1). These experiments demonstrated that the rubisco chaperones are strictly dispensable for producing a functional bacterial CCM, although removing acRAF produced a substantial growth defect that warrants further investigation. Further such experiments can use our reconstituted CCM to delineate a minimal reconstitution of the bacterial CCM suitable for plant expression (Du et al., 2014; Long et al., 2018, Long et al., 2016; Occhialini et al., 2016; Orr et al., 2020), test hypotheses about carboxysome biogenesis (Bonacci et al., 2012; Oltrogge et al., 2020), and probe the relationship between CCMs and host physiology (Mangan et al., 2016; McGrath and Long, 2014; Price and Badger, 1989b). This last point deserves special emphasis as the growth physiologies of plants and bacteria are exceedingly different and it remains unclear whether microbial CCMs can function efficiently when expressed in macroscopic land plants (Flamholz and Shih, 2020).\n\nOur approach to studying CCMs by reconstitution in tractable non-native hosts can be also applied to other CCMs, including \u03b2-carboxysome CCMs, the algal pyrenoid, and plausible evolutionary ancestors thereof. Historical trends in atmospheric CO2 likely promoted the evolution of CCMs (Fischer et al., 2016; Flamholz and Shih, 2020), so testing the growth of plausible ancestors of bacterial CCMs (e.g. carboxysomes lacking carbonic anhydrase activity) may provide insight into paths of CCM evolution and the composition of the ancient atmosphere at the time bacterial CCMs arose. In response to these same pressures, diverse eukaryotic algae evolved CCMs relying on micron-sized rubisco aggregates called the pyrenoids (Flamholz and Shih, 2020; Wang and Jonikas, 2020). Pyrenoid CCMs are collectively responsible for perhaps 70\u201380% of oceanic photosynthesis (Mackinder et al., 2016; Raven et al., 2017), yet many fundamental questions remain regarding the composition and operation of algal CCMs (Wang and Jonikas, 2020). Functional reconstitution of a pyrenoid CCM is a worthy goal which, once achieved, will indicate enormous progress in our collective understanding of the genetics, cell biology, biochemistry, and physical processes supporting the eukaryotic complement of oceanic photosynthesis. We hope such studies will further our principled understanding of, and capacity to engineer, the cell biology supporting CO2 fixation in diverse organisms.\n\n## Materials and methods\n\n### Growth conditions\n\nUnless otherwise noted, cells were grown on M9 minimal media supplemented with 0.4% v/v glycerol, 0.5 ppm thiamin (104 fold dilution of 0.5% w/v stock) and a trace element mix. The trace element mix components and their final concentrations in M9 media are: 50 mg/L EDTA, 31 mM FeCl3, 6.2 mM ZnCl2, 0.76 mM CuSO4\u00b75H2O, 0.42 mM CoCl2\u00b76H2O, 1.62 mM H3BO3, 81 nM MnCl2\u00b74H2O. 100 nM anhydrotetracycline (aTc) was used in induced cultures. For routine cloning, 25 mg/L chloramphenicol and 60 mg/L kanamycin selection were used as appropriate. Antibiotics were reduced to half concentration (12.5 and 30 mg/L, respectively) for CCMB1 growth experiments and kanamycin was omitted when evaluating rubisco-dependence of growth as pF-derived plasmids carrying kanamycin resistance also express rubisco. Culture densities were measured at 600 nm in a table top spectrophotometer (Genesys 20, Thermo Scientific) and turbid cultures were measured in five- or tenfold dilution as appropriate in order to reach the linear regime of the spectrophotometer.\n\nAgar plates were incubated at 37\u00b0C in defined CO2 pressures in a CO2 controlled incubator (S41i, New Brunswick). For experiments in which a frozen bacterial stock was used to inoculate the culture, cells were first streaked on agar plates and incubated at 10% CO2 to facilitate fast growth. Pre-cultures derived from colonies were grown in 2\u20135 mL liquid M9 glycerol media under 10% CO2 with a matching 1 mL control in ambient air. Negative control strains unable to grow in minimal media (i.e. active site mutants of rubisco) were streaked on and pre-cultured in LB media under 10% CO2.\n\nGrowth curves were obtained using two complementary methods: an eight-chamber bioreactor for large-volume cultivation (MC1000, PSI), and 96-well plates in a gas controlled plate reader plate (Spark, Tecan). For the 96-well format, cells were pre-cultured in the appropriate permissive media, M9 glycerol under 10% CO2 where possible. If rich media was used, for\u00a0example for negative controls, stationary phase cells were washed in 2x the culture volume and resuspended in 1x culture volume of M9 media with no carbon source. Cultures were diluted to an OD of 1.0 (600 nm) and 250 \u03bcl cultures were inoculated by adding 5 \u03bcl of cells to 245 \u03bcl media. A humidity cassette (Tecan) was refilled daily with distilled water to mitigate evaporation during multi-day cultivation at 37\u00a0\u00b0C. Evaporation nonetheless produced irregular growth curves (e.g. Figure 3\u2014figure supplement 2), which motivated larger volume cultivation in the bioreactor, which mixes by bubbling ambient air into each growth vessel. 80 mL bioreactor cultures were inoculated to a starting OD of 0.005 (600 nm) and grown at 37\u00b0C to saturation. Optical density was monitored continuously at 680 nm.\n\nAnaerobic cultivation of agar plates was accomplished using a BBL GasPak 150 jar (BD) flushed six times with an anoxic mix of 10% CO2 and 90% N2. Tenfold titers of biological duplicate cultures were plated on M9 glycerol media with and without 20 mM NaNO3 supplementation. Because E. coli cannot ferment glycerol, NO3- was supplied as an alternative electron acceptor. Plates without NO3- showed no growth (Figure 2\u2014figure supplement 1), confirming the presence of an anaerobic atmosphere in the GasPak.\n\n### Computational design of rubisco-dependent strains\n\nTo computationally design mutant strains in which growth is coupled to rubisco carboxylation flux, we used a variant of Flux Balance Analysis (Lewis et al., 2012) called \u2018OptSlope\u2019 (Antonovsky et al., 2016). Starting from a published model of E. coli central metabolism, the Core Escherichia coli Metabolic Model (Orth et al., 2010), we considered all pairs of central metabolic knockouts and ignored those that permit growth in silico in the absence of rubisco and phosphoribulokinase (Prk) activities. For the remaining knockouts, we evaluated the degree of coupling between rubisco flux and biomass production during growth in nine carbon sources: glucose, fructose, gluconate, ribose, succinate, xylose, glycerate, acetate, and glycerol. This approach highlighted several candidate rubisco-dependent knockout strains, including \u0394rpiAB \u0394edd, which is the basis of the CCMB1 strain. Full discussion of our algorithmic approach to strain design is given in Appendix 1 along with detailed description of the proposed mechanisms of rubisco coupling in CCMB1 and a comparison to other rubisc-dependent E. coli strains. OptSlope source code is available at https://gitlab.com/elad.noor/optslope (Noor, 2019)\u00a0and calculations specific to CCMB1 can be found at https://github.com/flamholz/carboxecoli\u00a0(Flamholz and Noor, 2020;\u00a0copy archived at swh:1:rev:76596e1e8614173d8ef64aa13e93674307cfa3de).\n\n### Genomic modifications producing the CCMB1 strain\n\nStrains used in this study are documented in Supplementary file 1. To produce CCMB1, we first constructed a strain termed \u2018\u0394rpi\u2019. This strain has the genotype \u0394rpiAB \u0394edd and was constructed in the E. coli BW25113 background by repeated rounds of P1 transduction from the KEIO collection followed by pCP20 curing of the kanamaycin selection marker (Baba et al., 2006; Datsenko and Wanner, 2000). Deletion of edd removes the Entner-Doudoroff pathway (Peekhaus and Conway, 1998), forcing rubisco-dependent metabolism of gluconate via the pentose phosphate pathway (Figure 2\u2014figure supplement 3). CCMB1 has the genotype BW25113 \u0394rpiAB \u0394edd \u0394cynT \u0394can and was constructed from \u0394rpiAB by deleting both native carbonic anhydrases using the same methods, first transducing the KEIO \u0394cynT and then \u0394can from EDCM636 (Merlin et al., 2003), which was obtained from the Yale Coli Genetic Stock Center. Transformation was performed by electroporation (ECM 630, Harvard Biosciences) and electrocompetent stocks were prepared using standard protocols. Strain genotypes were routinely verified by PCR, as described below.\n\n### Recombinant expression of rubisco, prk, and CCM components\n\npFE21 and pFA31 are compatible vectors derived from pZE21 and pZA31 (Lutz and Bujard, 1997). These vectors use an anhydrotetracycline (aTc) inducible PLtetO-1 promoter to regulate gene expression. pF plasmids were modified from parent vectors to constitutively express the tet repressor (TetR) under the Pbla promoter so that expression is repressed by default (Liang et al., 1999). We found that an inducible system aids in cloning problematic genes like prk (Wilson et al., 2018). We refer to these vectors as pFE and pFA, respectively. The p1A plasmid (Figure 2A) derives from pFE and expresses two additional genes: the Form IA rubisco from H. neapolitanus and a prk gene from Synechococcus elongatus PCC 7942. The pCB plasmid is properly called pFE-CB, while pCCM is pFA-CCM. The two CCM plasmids are diagrammed in Figure 3\u2014figure supplement 1. Cloning was performed by Gibson and Golden-Gate approaches as appropriate. Large plasmids (e.g. pCB, pCCM) were verified by Illumina resequencing (Harvard MGH DNA Core plasmid sequencing service) and maps were updated manually after reviewing results compiled by breseq resequencing software (Deatherage and Barrick, 2014). Plasmids used in this study are described in Supplementary file 1 and available on Addgene at https://www.addgene.org/David_Savage/.\n\n### Strain verification by PCR and phenotypic testing\n\nAs CCMB1 is a relatively slow-growing knockout strain, we occasionally observed contaminants in growth experiments. We used two strategies to detect contamination by faster-growing organisms (e.g. wild-type E. coli). As most strains grew poorly or not at all in ambient air, pre-cultures grown in 10% CO2 were accompanied by a matching 1 mL negative control in ambient air. Pre-cultures showing growth in the negative control were discarded or verified by PCR genotyping in cases where air-growth was plausible.\n\nPCR genotyping was performed using primer sets documented in Supplementary file 1. Three primer pairs were used to probe a control locus (zwf) and two target loci (cynT and rpiA). The zwf locus is intact in all strains. cynT and rpiA probes test for the presence of the CCMB1 strain (genotype BW25113 \u0394rpiAB \u0394edd \u0394cynT \u0394can). Notably, the CAfree strain (BW25113 \u0394cynT \u0394can) that we previously used to test the activity of DAB-type transporters (Desmarais et al., 2019) is a cynT knockout but has a wild-type rpiA locus, so this primer set can distinguish between wild-type, CAfree, and CCMB1. This was useful for some experiments where CAfree was used as a control (e.g. Figures S7-8). Pooled colony PCRs were performed using Q5 polymerase (NEB), annealing at 65\u00b0C and with a 50 s extension time.\n\n### Selection for growth in novel conditions\n\nCCMB1:pCB did not initially grow in M9 media supplemented with glycerol, which was unexpected because pCB carries rubisco and prk genes. We therefore performed a series of selection experiments to isolate plasmids conferring growth at elevated CO2 and then in ambient air. Here we describe the methodology; the full series of experiments is described in Appendix 2 and illustrated in Figure 3\u2014figure supplement 1. CCMB1 cultures carrying appropriate plasmids were first grown to saturation in rich LB media in 10% CO2. Stationary phase cultures were pelleted by centrifugation for 10 min at 4000 x g, washed in 2x the culture volume, and resuspended in 1x culture volume of M9 media with no carbon source. After resuspension, multiple dilutions were plated on selective media (e.g. M9 glycerol media) and incubated in the desired conditions (e.g. in ambient air) with a positive control in 10% CO2 on appropriate media. When colonies formed in restrictive conditions, they were picked into permissive media, grown to saturation, washed and tested for re-growth in restrictive conditions by titer plating or streaking. Plasmid DNA was isolated from verified colonies and transformed into naive CCMB1 cells to test whether plasmid mutations confer improved growth (i.e. in the absence of genomic mutations).\n\nWe first selected for CCMB1:pCB growth on M9 glycerol media in 10% CO2 and then in M9 gluconate media under 10% CO2. The resulting plasmid, pCB-gg for \u2018gluconate grower,\u2019 was isolated and deep sequenced (Harvard MGH DNA Core plasmid sequencing service). Plasmid maps were manyally updated based on results from the breseq software (Deatherage and Barrick, 2014). Following this first round of selection, CCMB1 was co-transformed with pCB-gg and pCCM and selected for growth in ambient air. Washed stationary phase cultures of CCMB1:pCB-gg+pCCM were plated on M9 glycerol media in ambient CO2. Parallel negative control selections were plated on uninduced plates (no aTc) and using CCMB1:p1A+pCCM, which lacks carboxysome genes. Plates were incubated in a humidified incubator for 20 days until colonies became visible.\n\nForty colonies were picked and tested for re-growth in ambient air by titer plating. Pooled plasmid DNA was extracted from verified colonies and electroporated into naive CCMB1 to test plasmid-linkage of growth. Colony #4 re-transformant #13 grew robustly was chosen due to replicable growth. Pooled plasmid DNA extracted from this strain was resequenced by a combination deep sequencing and targeted Sanger sequencing of the TetR locus and origins of replication, as these regions share sequence between pCB and pCCM. The individual post-selection plasmids, termed pCB\u2019 and pCCM\u2019, were reconstructed from pooled plasmid extract by PCR and Gibson cloning. These plasmids, termed pCB\u2019 and pCCM\u2019, were again verified by resequencing. Naive CCMB1 was transformed with the reconstructed post-selection plasmids pCB\u2019 and pCCM\u2019 and tested for growth in ambient air in plate reader (Spark, Tecan) and bioreactor (MC1000, PSI) assay formats.\n\n### Design of mutant CCM plasmids\n\nTo verify that growth in ambient air depends on CCM components, we generated variants of pCB\u2019 and pCCM\u2019 carrying targeted null mutations. CCMB1 was then co-transformed with two plasmids: a mutant plasmid (of either pCB\u2019 or pCCM\u2019) and its cognate, unmodified plasmid. Mutant plasmids are listed here along with expected growth phenotypes, with full detail in Supplementary file 1. pCB\u2019 CbbL K194M, or pCB\u2019 cbbL-, contains an inactivating mutation to the large subunit of the carboxysomal Form 1A rubisco (Andersson et al., 1989; Cleland et al., 1998). This mutation was expected to abrogate rubisco-dependent growth entirely.\n\nMutations targeting the CCM, rather than rubisco itself, are expected to ablate growth in ambient air but permit growth in high CO2. The following plasmid mutations were designed to specifically target essential components of the CCM. pCB\u2019 CsoSCA C173S, or pCB\u2019 CsoSCA-, carries a mutation to an active site cysteine residue responsible for coordinating the catalytic Zn2+ ion in \u03b2-carbonic anhydrases (Sawaya et al., 2006). pCB\u2019 CsoS2 \u0394NTD lacks the N-terminal domain of CsoS2, which is responsible for recruiting rubisco to the carboxysome during the biogenesis of the organelle (Oltrogge et al., 2020). Similarly, pCB\u2019 CbbL Y72R carries an arginine residue instead of the tyrosine responsible for mediating cation-\u03c0 interactions between the rubisco large subunit and the N-termus of CsoS2. This mutation eliminates binding between the rubisco complex and the N-termus of CsoS2 (Oltrogge et al., 2020). pCB\u2019 \u0394csoS4AB lacks both pentameric shell proteins, CsoS4AB, which was shown to disrupt the permeability barrier at the carboxysome shell (Cai et al., 2009). pCCM\u2019 DabA1 C462A, D464A, or pCCM\u2019 DabA1-, carries inactivating mutations to the putative active site of the inorganic carbon transporter component DabA1 (Desmarais et al., 2019).\n\nTwo more mutant plasmids were designed to test the roles of rubisco chaperones in producing a functional CCM. pCCM\u2019 CbbQ K46A, E107Q, denoted pCCM\u2019 CbbQ-, carries mutations that inactivate the ATPase activity of the CbbQ subunit of the CbbOQ rubisco activase complex (Tsai et al., 2015). pCCM\u2019 \u0394acRAF lacks the putative rubisco chaperone acRAF. acRAF is homologous to a plant rubisco folding chaperone (Aigner et al., 2017) and likely involved in the folding of the H. neapolitanus Form IA rubisco (Wheatley et al., 2014). Experimental evaluation of growth phenotypes for the above-described mutants is detailed below and results are given in Figure 4\u2014figure supplement 1.\n\n### Phenotyping of matched cultures in 10% CO2 and ambient air\n\nTo interrogate the phenotypic effects of mutations to the CCM, we tested the growth of matched biological replicate cultures of CCM mutants (e.g. disruption of carboxysome components or transporter function) in M9 glycerol medium in 10% CO2 and ambient air (Figure 4A). Individual colonies were picked into a round-bottom tube with 4 mL of M9 glycerol media with full strength antibiotic and 100 nM aTc. 1 mL of culture was then transferred to a second tube. The 3 mL pre-culture was incubated in 10% CO2, while the 1 mL culture was incubated in ambient air as a negative control. Control strains unable to grow in minimal media (e.g. those expressing inactive rubisco mutants) were pre-cultured in LB media. High-CO2 pre-cultures were grown to saturation, after which optical density (OD600) was measured in five-fold dilution.\u00a0Experimental cultures were inoculated to a starting OD600 of 0.01 in 3 mL of M9 glycerol media with 12.5 mg/L chloramphenicol and 100 nM aTc. Each pre-culture was used to inoculate a matched pair of experimental cultures, one incubated in 10% CO2 and another in ambient air (Figure 4A). The endpoint culture density was measured at 600 nm. All experiments were performed in biological quadruplicate. As a positive control we\u00a0used a complemented double carbonic anhydrase knockout (CAfree:pFE-sfGFP+pFA-HCAII) as its growth in air depends on expression of the human carbonic anhydrase II (Desmarais et al., 2019).\n\n### Carboxysome purification and imaging\n\nRoughly 1.2 L of CCMB1:pCB\u2019+pCCM\u2019 was grown in M9 glycerol media in ambient air in two identical bioreactors (MC1000, PSI) as described above. Sixteen distinct 80 mL cultures were grown, comprising eight technical replicates of two biological replicates deriving from distinct colonies. Cells were harvested before the onset of stationary phase, with optical densities ranging from \u22480.5 to \u22482.0 (600 nm, Genesys 20, Thermo Scientific) and pooled before subsequent purification steps. Wild type H. neapolitanus cells were grown in a 10 L bioreactor (Eppendorf BioFlo 115) modified to function as a chemostat. A continuous culture was grown in DSMZ-68 medium at a dilution rate of 0.03\u20130.05/hour. The culture was grown at 30\u00b0C, sparged with ambient air and the pH was held constant at 6.4 by addition of KOH. Chemostat effluent was collected in a 20 L glass flask and cells harvested every 2\u20133 day by centrifugation at 6000 x g for 15 min. A cell pellet of approximately 10 L of culture was used for subsequent purification.\n\nCells were chemically lysed in B-PER II (Thermo Fischer) diluted to 1x with TEMB buffer (10 mM Tris pH 8.0, 10 mM MgCl2, 20 mM NaHCO3 and 1 mM EDTA) supplemented with 0.1 mg / mL lysozyme, 1 mM phenylmethylsulfonyl fluoride (PMSF) and 0.1 ul of benzonase/mL (Sigma-Aldrich). E. coli cells (CCMB1:pCB\u2019+pCCM\u2019) were lysed for 30 min under mild shaking while H. neapolitanus cells were stirred vigorously with a magnetic stirrer for 1 hr. Lysed cells were centrifuged 12,000 x g for 15 min to remove cell debris. The clarified lysate (supernatant) was centrifuged 40,000 x g for 30 min to pellet carboxysomes and obtained pellets were gently resuspended in 1.5 mL TEMB buffer. Resuspended pellets were loaded on top of a 25 mL 10\u201350% sucrose step gradient (10, 20, 30, 40% and 50% w/v sucrose, made in TEMB buffer) and ultracentrifuged at 105,000 x g for 35 min (SW 32 Ti Swinging-bucket, Beckman Coulter). Gradients were fractionated, analysed by SDS-PAGE and carboxysome containing fractions pooled. Due to the low concentration of carboxysomes in the CCMB1:pCB\u2019+pCCM\u2019 sample, fraction numbers corresponding to H. neapolitanus gradient were pooled. Pooled fractions were ultracentrifuged 100,000 x g for 90 min and pellets were gently resuspended in TEMB to obtain the final purified carboxysome sample. The co-migration of carboxysomes with rubisco confirmed by coomassie and silver stained SDS-page gels of the final sample. Purified carboxysomes were visualized by negative stain TEM. Sample was applied to glow discharged formvar/carbon coated copper grids. Grids were then washed with deionized water and stained with 2% aqueous uranyl acetate. Imaging was performed on a JEOL 1200 EX TEM (H. neapolitanus) or a Tecnai 12 TEM at 120 KV (FEI) (CCMB1:pCB\u2019+pCCM\u2019). Images were collected using UltraScan 1000 digital micrograph software (Gatan Inc).\n\n### Thin sectioning and electron microscopy of whole cells\n\nCCMB1:pCB\u2019+pCCM\u2019 was grown in ambient air in 3 mL of M9 glycerol medium and induced with 100 nM aTc. A carboxysome-negative control, CAfree:pFE-sfGFP+pFA-HCAII, was grown in the same conditions. Sample preparation and sectioning were performed by the University of California Berkeley Electron Microscope Laboratory. Cell pellets were fixed for 30 min at room temperature in 2.5% glutaraldehyde in 0.1 M cacodylate buffer pH 7.4. Fixed cells were stabilized in 1% very low melting-point agarose and cut into small cubes. Cubed sample was then rinsed three times at room temperature for 10 min in 0.1 M sodium cacodylate buffer, pH 7.4 and then immersed in 1% osmium tetroxide with 1.6% potassium ferricyanide in 0.1 M cacodylate buffer for an hour in the dark on a rocker. Samples were later rinsed three times with a cacodylate buffer and then subjected to an ascending series of acetone for 10 min each (35%, 50%, 75%, 80%, 90%, 100%, 100%). Samples were progressively infiltrated with Epon resin (EMS, Hatfield, PA, USA) while rocking and later polymerized at 60\u00b0C for 24 hr. 70 nm thin sections were cut using an Ultracut E (Leica) and collected on 100 mesh formvar coated copper grids. The grids were further stained for 5 min with 2% aqueous uranyl acetate and 4 min with Reynold's lead citrate. The sections were imaged using a Tecnai 12 TEM at 120 KV (FEI) and images were collected using UltraScan 1000 digital micrograph software (Gatan Inc).\n\n### Sample preparation and LC-MS analysis\n\nProtein-bound amino acids were analyzed in total biomass hydrolysate of cultures grown in minimal media with 99% 13C glycerol (Cambridge Isotopes) as the sole organic carbon source. Biological quadruplicate cultures of the experimental strain, CCMB1:pCB\u2019 + pCCM\u2019, and the rubisco-independent control strain, CAfree:pFE-sfGFP + pFA-HCAII, were grown in 80 mL volumes in a bioreactor bubbling ambient air into each growth vessel (MC1000, PSI). After harvesting biomass, samples were prepared and analyzed as described in Antonovsky et al., 2016. Briefly, the OD600 was recorded and 2 OD x mL of sample were pelleted by centrifugation for 15 min at 4000 x g. The pellet was resuspended in 1 mL of 6 N HCl and incubated for 24 hr at 110\u00b0C. The acid was subsequently evaporated under a nitrogen stream using a custom gas manifold (Nevins et al., 2005), resulting in a dry hydrolysate. Dry hydrolysates were resuspended in 0.6 mL of MilliQ water, centrifuged for 5 min at 14,000 x g, and supernatant was analyzed by liquid chromatography-mass spectrometry (LC-MS).\n\nHydrolyzed amino acids were separated using ultra performance liquid chromatography (UPLC, Acquity, Waters) on a C-8 column (Zorbax Eclipse XBD, Agilent) at a flow rate of 0.6 mL/min, and eluted off the column using a hydrophobicity gradient. Buffers used were: (A) H2O + 0.1% formic acid and (B) acetonitrile + 0.1% formic acid with the following gradient: 100% of A (0\u20133 min), 100% A to 100% B (3\u20139 min), 100% B (9\u201313 min), 100% B to 100% A (13\u201314 min), 100% A (14\u201320 min). The UPLC was coupled online to a triple quadrupole mass spectrometer (TQS, Waters). Data were acquired using MassLynx v4.1 (Waters). Amino acids and metabolites used for analysis were selected according to the following criteria: amino acids that had peaks at a distinct retention time and m/z values for all isotopologues and also showed correct 13C labeling fractions in control samples that contained protein hydrolyzates of WT cells grown with known ratios of uniformly 13C-labeled (U-13C) glucose to 12C-glucose. We further analyzed the serine M+2 isotopologue (parent ion in positive ionization mode with 108.1 m/z) using multiple reaction monitoring (MRM). This approach by selecting the channels of a daughter ion (fragment) with the formula [C2H6NO]+: (A) 61.1 m/z, where the undetected fragment contains a carboxylic acid carbon which is a 13C isotope and (B) 62.1 m/z, where the undetected fragment contains a carboxylic acid carbon which is 12C (Piraud et al., 2003). We looked at the ratio of the peak integrals of A/B to infer the distribution of 13C/12C for that particular carboxyl carbon. Since the carboxylic acid on L-serine derives from the rubisco carboxylation product 3-phosphoglycerate, measuring the 13C/12C distribution at this position reports directly on carboxylation by rubisco in vivo (Figure 6 and supplements) and with lower background than the total mass measurement described above.\n\n### Isotopic analysis of the composition of biomolecules\n\nThe total 13C fraction of each metabolite was determined as the weighted average of the fractions of all the isotopologues for that metabolite:\n\n$$\nf_{13_{C}}=\\frac{\\sum_{i=0}^{N}f_{i}\\timesi}{N}\n$$\n\nHere, N is the number of carbons in the compound (e.g. N = 3 for serine) and fi is the relative fraction of the i-th isotopologue, that\u00a0is containing i 13C carbon atoms. Each metabolite\u2019s total 12C fraction was calculated as $f_{12_{C}}=1-f_{13_{C}}$. Our quantitative approach to inferring the rubisco carboxylation flux from these data is described fully in Appendix 3; source code and data are available at https://github.com/flamholz/carboxecoli.\n",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "34dbfa62-9a17-49a6-8711-c450035563ca",
+      "submission_id": "02139121-818d-443a-8517-1a5f8292345a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Manajit Hayer-Hartl, Max Planck Institute of Biochemistry Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59882.sa1](https://doi.org/10.7554/eLife.59882.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nPhotosynthetic bacteria have evolved CO2 concentrating mechanism (CCM) to increase carbon fixation by Rubisco, the key photosynthetic enzyme. Savage and colleagues have now succeeded in expressing all the components necessary to establish a functional CCM in the bacterium E. coli. This study lays the groundwork for engineering of CCMs into crop plants for increasing yields.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Functional reconstitution of a bacterial CO2 concentrating mechanism in E. coli\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Christian Hardtke as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Martin C Jonikas.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus, most of the revisions requested below address clarity and presentation.\n\nSummary:\n\nThe work presented is a major scientific achievement. This is the first functional reconstitution of any CO2 concentrating mechanism (CCM). The work has major implications for engineering of CCMs into crops for increasing yields: the authors have definitively identified a set of components that confer CCM activity in a heterologous host. As a bonus, the authors demonstrate a new way of generating a Rubisco-dependent E. coli.\n\nRevisions:\n\n1) The EM images shown in Figure 5\u2014figure supplement 1 should be presented as a main figure, not a supplement. The negative control is too dark and difficult to compare with the other micrographs. Moreover, it is concerning that the positive control (WT:pHnCB10) failed. It should be repeated as it would allow comparison of the putative carboxysomes to a native carboxysome and would greatly improve the quality and value of this figure.\n\n2) For the benefit of a non-expert reader, the names of the 20 proteins and corresponding genes should listed in a table, together with their function and the relevant references.\n\n3) In Figure 3\u2014figure supplement 1A, the authors should discuss why the gene csos1D is present in both pCB and pCCM.\n\n4) In Figure 4B, the large variance in the OD600 after 4 days for CCMB1:pCB'+pCCM' cultures was explained as being due to genetic effects or non-genetic differences. However, in Figure 3\u2014figure supplement 2B the measured growth kinetics did not show such big differences. Authors please explain.\n\n5) Would be nice if the authors can demonstrate that Rubisco localizes to the putative carboxysomes by performing an experiment such as immunogold labeling. It would improve the claim that the observed polyhedral bodies are in fact carboxysomes. We leave the decision of such an experiment to the authors.\n",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5013fe41-94a1-4491-a4cc-138c698d2e57",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C1",
+      "claim": "Many photosynthetic organisms employ a CO2 concentrating mechanism (CCM) to increase the rate of CO2 fixation via the Calvin cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Many photosynthetic organisms employ a CO2 concentrating mechanism (CCM) to increase the rate of CO2 fixation via the Calvin cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that draws from established scientific knowledge about photosynthetic organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "57b60d8b-3152-43ea-b4d1-28b9695c3fde",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C2",
+      "claim": "CCMs catalyze approximately 50% of global photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "CCMs catalyze \u224850% of global photosynthesis, yet it remains unclear which genes and proteins are required to produce this complex adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement cites a specific quantitative estimate about the contribution of CCMs to global photosynthesis, drawing from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "2c636e43-64e7-4f8c-8410-0a1683b5f643",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C3",
+      "claim": "Expression of 20 CCM genes enabled E. coli to grow by fixing CO2 from ambient air into biomass.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of 20 CCM genes enabled E. coli to grow by fixing CO2 from ambient air into biomass, with growth in ambient air depending on the components of the CCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "6c5a6aa1-add5-49ed-8f94-bb443e6e3d3b",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C4",
+      "claim": "Growth in ambient air depends on the components of the CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of 20 CCM genes enabled E. coli to grow by fixing CO2 from ambient air into biomass, with growth in ambient air depending on the components of the CCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that mutations to CCM components ablate growth in ambient air.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "84a1637c-93ff-46cc-a4ec-63ec421a9c76",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C5",
+      "claim": "Bacterial CCMs are genetically compact and readily transplanted.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial CCMs are therefore genetically compact and readily transplanted, rationalizing their presence in diverse bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the successful reconstitution of the CCM with only 20 genes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "297bcf0d-fb3c-4ce4-9bec-47362d2a2986",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C6",
+      "claim": "Nearly all carbon in the biosphere enters by CO2 fixation in the Calvin-Benson-Bassham cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly all carbon in the biosphere enters by CO2 fixation in the Calvin-Benson-Bassham cycle (Bassham, 2003; Bassham et al., 1954; Benson, 2002; Field et al., 1998; Raven, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to established scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "7a4c9cff-7100-458f-a286-45a341de871d",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C7",
+      "claim": "Rubisco is the CO2 fixing enzyme in the Calvin cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribulose Bisphosphate Carboxylase/Oxygenase - commonly known as rubisco - is the CO2 fixing enzyme in this cycle (Kawashima and Wildman, 1971; Weissbach et al., 1956; Wildman, 2002) and likely the most abundant enzyme on Earth (Bar-On and Milo, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "45e72cfb-a6e5-4110-824b-eb0570095dc1",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C8",
+      "claim": "Rubisco is likely the most abundant enzyme on Earth.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribulose Bisphosphate Carboxylase/Oxygenase - commonly known as rubisco - is the CO2 fixing enzyme in this cycle (Kawashima and Wildman, 1971; Weissbach et al., 1956; Wildman, 2002) and likely the most abundant enzyme on Earth (Bar-On and Milo, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bar-On and Milo, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "f9869760-4c78-4611-aed9-dcd77beb3409",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C9",
+      "claim": "Photosynthetic rubiscos have carboxylation turnover numbers (kcat) ranging from 1 to 10 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Photosynthetic rubiscos are modest enzymes, with carboxylation turnover numbers (kcat) ranging from 1 to 10 s\u22121 (Badger et al., 1998; Flamholz et al., 2019; I\u00f1iguez et al., 2020; Jordan and Ogren, 1983; Savir et al., 2010; Tcherkez et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to scientific literature providing kinetic measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "beef2337-a7eb-4947-a03c-bc418f4d1e9e",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C10",
+      "claim": "All known rubiscos catalyze a competing oxygenation of ribulose 1,5-bisphosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, all known rubiscos catalyze a competing oxygenation of the five-carbon organic substrate, ribulose 1, 5-bisphosphate (Bathellier et al., 2018; Bowes and Ogren, 1972; Cleland et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "a278a23a-c55e-497a-a406-c6a897346d47",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C11",
+      "claim": "Rubisco oxygenation fails to generate any new organic carbon.",
+      "claim_type": "EXPLICIT",
+      "source": "Rubisco oxygenation represents a 'waste' of cellular resources on two fronts: it fails to generate any new organic carbon and also produces a molecule (2-phosphoglycolate) that is not part of the Calvin cycle and therefore must be recycled through a salvage pathway to keep the cycle going (Busch, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and draws from established biochemical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "3dc0c18d-c4bb-497e-bf61-5141300730e2",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C12",
+      "claim": "Rubisco oxygenation produces 2-phosphoglycolate that must be recycled through a salvage pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Rubisco oxygenation represents a 'waste' of cellular resources on two fronts: it fails to generate any new organic carbon and also produces a molecule (2-phosphoglycolate) that is not part of the Calvin cycle and therefore must be recycled through a salvage pathway to keep the cycle going (Busch, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and draws from established biochemical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "3471bb33-e209-401e-9061-c036043fdbbb",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C13",
+      "claim": "Rubisco arose more than 2.5 billion years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Rubisco arose >2.5 billion years ago, when Earth's atmosphere contained little O2 and abundant CO2 (Fischer et al., 2016; Shih et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on the evolutionary history of rubisco.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "74420ffd-ca51-4b75-b1ee-5d20cfd72ac1",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C14",
+      "claim": "When rubisco arose, Earth's atmosphere contained little O2 and abundant CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Rubisco arose >2.5 billion years ago, when Earth's atmosphere contained little O2 and abundant CO2 (Fischer et al., 2016; Shih et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on ancient atmospheric composition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "98689f03-8914-4e88-b0d2-21066c85a867",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C15",
+      "claim": "Present-day atmosphere contains approximately 0.04% CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "Present-day atmosphere, however, poses a problem for plants and other autotrophs: their primary carbon source, CO2, is relatively scarce (\u22480.04%) while a potent competing substrate, O2, is abundant (\u224821%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about atmospheric composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "89a494d9-3b71-4fd6-9a79-941558aec236",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C16",
+      "claim": "Present-day atmosphere contains approximately 21% O2.",
+      "claim_type": "EXPLICIT",
+      "source": "Present-day atmosphere, however, poses a problem for plants and other autotrophs: their primary carbon source, CO2, is relatively scarce (\u22480.04%) while a potent competing substrate, O2, is abundant (\u224821%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about atmospheric composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "1a03f1b6-78f4-47dc-a18b-af0518db0651",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C17",
+      "claim": "CO2 concentrating mechanisms arose multiple times over the last 2 billion years.",
+      "claim_type": "EXPLICIT",
+      "source": "CO2 concentrating mechanisms (CCMs) arose multiple times over the last 2 billion years (Flamholz and Shih, 2020; Raven et al., 2017) and overcame rubisco's limitations by concentrating CO2 near the enzyme (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on CCM evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "e1d7b6f6-aab3-4a91-97f5-5f67646d3685",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C18",
+      "claim": "CCMs overcome rubisco's limitations by concentrating CO2 near the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "CO2 concentrating mechanisms (CCMs) arose multiple times over the last 2 billion years (Flamholz and Shih, 2020; Raven et al., 2017) and overcame rubisco's limitations by concentrating CO2 near the enzyme (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "4756f74d-e8db-490d-ad36-7cbc25e5dac8",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C19",
+      "claim": "High CO2 increases the rate of carboxylation and competitively inhibits oxygenation.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, high CO2 is expected to increase the rate of carboxylation and competitively inhibit oxygenation (Bowes and Ogren, 1972) thereby improving overall carbon assimilation (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "73be1e75-3295-42b6-b143-d846e15dbb07",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C20",
+      "claim": "At least four varieties of CCMs are found in plants, algae, and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Today, at least four varieties of CCMs are found in plants, algae, and bacteria (Flamholz and Shih, 2020; Raven et al., 2017), organisms with CCMs are collectively responsible for \u224850% of global net photosynthesis (Raven et al., 2017), and some of the most productive human crops (e.g. maize and sugarcane) rely on CCMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "ad2077b4-5c3a-491e-97dd-17148168db1c",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C21",
+      "claim": "Organisms with CCMs are collectively responsible for approximately 50% of global net photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Today, at least four varieties of CCMs are found in plants, algae, and bacteria (Flamholz and Shih, 2020; Raven et al., 2017), organisms with CCMs are collectively responsible for \u224850% of global net photosynthesis (Raven et al., 2017), and some of the most productive human crops (e.g. maize and sugarcane) rely on CCMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Raven et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "622cfe1f-f4a4-4028-8386-05ee0bc22c2e",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C22",
+      "claim": "Some of the most productive human crops (e.g. maize and sugarcane) rely on CCMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Today, at least four varieties of CCMs are found in plants, algae, and bacteria (Flamholz and Shih, 2020; Raven et al., 2017), organisms with CCMs are collectively responsible for \u224850% of global net photosynthesis (Raven et al., 2017), and some of the most productive human crops (e.g. maize and sugarcane) rely on CCMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about crop physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "994079cb-1140-44e8-a134-caccf38b9d52",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C23",
+      "claim": "The bacterial CCM consists of at least two essential components: energy-coupled inorganic carbon uptake and carboxysome structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterial CCM consists of at least two essential components - energy-coupled inorganic carbon uptake and carboxysome structures that encapsulate rubisco with a carbonic anhydrase (CA) enzyme (Desmarais et al., 2019; Kaplan et al., 1980; Price and Badger, 1989a, Price and Badger, 1989b; Rae et al., 2013; Shively et al., 1973).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "333d0a1a-3afd-486a-bd38-cb1d522b0972",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C24",
+      "claim": "Carboxysomes encapsulate rubisco with a carbonic anhydrase enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterial CCM consists of at least two essential components - energy-coupled inorganic carbon uptake and carboxysome structures that encapsulate rubisco with a carbonic anhydrase (CA) enzyme (Desmarais et al., 2019; Kaplan et al., 1980; Price and Badger, 1989a, Price and Badger, 1989b; Rae et al., 2013; Shively et al., 1973).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "8fa56c17-a592-472f-b32c-6649631c8009",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C25",
+      "claim": "Inorganic carbon transport generates a large cytosolic HCO3- pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Transport generates a large cytosolic HCO3- pool, which is rapidly converted to high carboxysomal CO2 concentration by the carboxysomal CA (Mangan et al., 2016; McGrath and Long, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "9b603aeb-ac68-4a84-bcf7-ff49f0937067",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C26",
+      "claim": "Carboxysomal carbonic anhydrase converts cytosolic HCO3- to high carboxysomal CO2 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Transport generates a large cytosolic HCO3- pool, which is rapidly converted to high carboxysomal CO2 concentration by the carboxysomal CA (Mangan et al., 2016; McGrath and Long, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "bd951808-7845-4111-b3f7-3a8a9c1186bf",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C27",
+      "claim": "H. neapolitanus CCM genes are mostly contained in a 20 gene cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "H. neapolitanus CCM genes are mostly contained in a 20 gene cluster (Desmarais et al., 2019) expressing rubisco and its associated chaperones (green), carboxysome structural proteins (purple), and an inorganic carbon transporter (orange).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "e67f966b-7743-4794-a280-43e89377c022",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C28",
+      "claim": "The 20 gene cluster expresses rubisco and its associated chaperones, carboxysome structural proteins, and an inorganic carbon transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "H. neapolitanus CCM genes are mostly contained in a 20 gene cluster (Desmarais et al., 2019) expressing rubisco and its associated chaperones (green), carboxysome structural proteins (purple), and an inorganic carbon transporter (orange).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "d64de8cc-2eb5-4c3c-a751-f127a5fea6e0",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C29",
+      "claim": "CCMs are particularly common among autotrophic bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "CCMs are particularly common among autotrophic bacteria: all Cyanobacteria and many Proteobacteria have CCM genes (Kerfeld and Melnicki, 2016; Rae et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "7b781117-8cdd-4923-a300-6f255edf5567",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C30",
+      "claim": "All Cyanobacteria have CCM genes.",
+      "claim_type": "EXPLICIT",
+      "source": "CCMs are particularly common among autotrophic bacteria: all Cyanobacteria and many Proteobacteria have CCM genes (Kerfeld and Melnicki, 2016; Rae et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "e4eb9e77-d5c2-4b6a-82d3-4c86a743b778",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C31",
+      "claim": "Many Proteobacteria have CCM genes.",
+      "claim_type": "EXPLICIT",
+      "source": "CCMs are particularly common among autotrophic bacteria: all Cyanobacteria and many Proteobacteria have CCM genes (Kerfeld and Melnicki, 2016; Rae et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "a399d479-f9cd-4577-8421-04475d197f70",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C32",
+      "claim": "Carboxysomes are 200+ MDa protein organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial CCMs rely on two crucial features: (i) energy-coupled inorganic carbon uptake at the cell membrane and (ii) a 200+ MDa protein organelle called the carboxysome that encapsulates rubisco with a carbonic anhydrase enzyme (Desmarais et al., 2019; Kaplan et al., 1980; Price and Badger, 1989a, Price and Badger, 1989b; Rae et al., 2013; Shively et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "458d36b1-f8cc-4654-a541-b5ace9535b6e",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C33",
+      "claim": "In the prevailing model of the carboxysome CCM, inorganic carbon uptake produces a high, above-equilibrium cytosolic HCO3- concentration of approximately 30 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "In the prevailing model of the carboxysome CCM (Fridlyand et al., 1996; Mangan et al., 2016; McGrath and Long, 2014), inorganic carbon uptake produces a high, above-equilibrium cytosolic HCO3- concentration (\u224830 mM) that diffuses into the carboxysome, where carbonic anhydrase activity produces a high carboxysomal CO2 concentration that promotes efficient carboxylation by rubisco (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to modeling studies and illustrated in Figure 1A-B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "112aea90-07e7-4e9e-8213-9982c7ae0aa5",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C34",
+      "claim": "Cytosolic HCO3- diffuses into the carboxysome where carbonic anhydrase produces high carboxysomal CO2 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In the prevailing model of the carboxysome CCM (Fridlyand et al., 1996; Mangan et al., 2016; McGrath and Long, 2014), inorganic carbon uptake produces a high, above-equilibrium cytosolic HCO3- concentration (\u224830 mM) that diffuses into the carboxysome, where carbonic anhydrase activity produces a high carboxysomal CO2 concentration that promotes efficient carboxylation by rubisco (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to modeling studies and illustrated in Figure 1A-B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "c329b403-7fba-4236-94dd-5446c304cfe3",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C35",
+      "claim": "There is great interest in transplanting CCMs into crops.",
+      "claim_type": "EXPLICIT",
+      "source": "As CCMs accelerate CO2 fixation by rubisco, there is great interest in transplanting them into crops (Ermakova et al., 2020; McGrath and Long, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on crop engineering.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "8ec5b45f-19f9-419e-a3ed-199f9ebfc25c",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C36",
+      "claim": "Carboxysome-based CCMs natively function in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Carboxysome-based CCMs are especially attractive because they natively function in single cells and appear to rely on a tractable number of genes (Lin et al., 2014; Long et al., 2018; Occhialini et al., 2016; Orr et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and draws from established knowledge about bacterial physiology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "3bf42dce-176c-427e-b573-5246d0b03088",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C37",
+      "claim": "Carboxysome-based CCMs appear to rely on a tractable number of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Carboxysome-based CCMs are especially attractive because they natively function in single cells and appear to rely on a tractable number of genes (Lin et al., 2014; Long et al., 2018; Occhialini et al., 2016; Orr et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "053d2a11-8b19-413b-a908-89a49ded88d3",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C38",
+      "claim": "Modeling suggests that introducing bacterial CCM components could improve plant photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling suggests that introducing bacterial CCM components could improve plant photosynthesis (McGrath and Long, 2014), especially if aspects of plant physiology can be modulated via genetic engineering (Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "8780c4ff-b8b2-423f-b61e-7e62f43f832f",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C39",
+      "claim": "Expressing bacterial rubiscos and carboxysome components has uniformly resulted in transgenic plants displaying impaired growth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, expressing bacterial rubiscos and carboxysome components has, so far, uniformly resulted in transgenic plants displaying impaired growth (Lin et al., 2014; Long et al., 2018; Occhialini et al., 2016; Orr et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies in plants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "b4837807-a7ab-4411-9b4a-57888ede3320",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C40",
+      "claim": "Current understanding of the carboxysome CCM rests mostly on loss-of-function genetic experiments in native hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, as our understanding of the genes and proteins participating in the carboxysome CCM rests mostly on loss-of-function genetic experiments in native hosts (Baker et al., 1998; Cai et al., 2009; Cannon et al., 2001; Desmarais et al., 2019; Marcus et al., 1986; Ogawa et al., 1987; Price and Badger, 1989a), it is possible that some genetic, biochemical, and physiological aspects of CCM function remain unappreciated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to genetic studies in native hosts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "bf0bd7ee-8ca2-4e53-96f3-65662b360045",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C41",
+      "claim": "A genome-wide screen in H. neapolitanus demonstrated that a 20-gene cluster encodes all activities required for the CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a genome-wide screen in the CO2-fixing proteobacterium Halothiobacillus neapolitanus, we recently demonstrated that a 20-gene cluster encodes all activities required for the CCM, at least in principle (Desmarais et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "8ff3b4a9-0bcd-42a0-a122-a9226529169c",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C42",
+      "claim": "The 20-gene cluster includes rubisco large and small subunits, the carboxysomal carbonic anhydrase, seven structural proteins of the \u03b1-carboxysome, an energy-coupled inorganic carbon transporter, three rubisco chaperones, and four genes of uncertain function.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes are detailed in Supplementary file 1 and include rubisco large and small subunits, the carboxysomal carbonic anhydrase, seven structural proteins of the \u0251-carboxysome (Bonacci et al., 2012), an energy-coupled inorganic carbon transporter (Desmarais et al., 2019; USF MCB4404L et al., 2017; Scott et al., 2019), three rubisco chaperones (Aigner et al., 2017; Feiz et al., 2014; Mueller-Cajar, 2017; Wheatley et al., 2014), and four genes of uncertain function (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "f2273819-6f89-4c06-a62a-fe7b494a0b63",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C43",
+      "claim": "E. coli does not natively rely on rubisco.",
+      "claim_type": "EXPLICIT",
+      "source": "As E. coli is a heterotroph, consuming organic carbon molecules to produce energy and biomass, it does not natively rely on rubisco.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E. coli metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "ea71259e-eead-432e-b796-383da5e6daad",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C44",
+      "claim": "To grow on glycerol as the sole carbon source, E. coli must synthesize ribose 5-phosphate (Ri5P) for nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "To grow on glycerol as the sole carbon source, E. coli must synthesize ribose 5-phosphate (Ri5P) for nucleic acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E. coli metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "a529e01e-b996-4835-af0e-4bbbf12ac610",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C45",
+      "claim": "Synthesis of Ri5P via the pentose phosphate pathway forces co-production of ribulose 5-phosphate (Ru5P).",
+      "claim_type": "EXPLICIT",
+      "source": "Synthesis of Ri5P via the pentose phosphate pathway forces co-production of ribulose 5-phosphate (Ru5P).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the pentose phosphate pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "90c99aea-c0a0-46be-879d-6120322c6d68",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C46",
+      "claim": "Deletion of ribose 5-phosphate isomerase (rpiAB genes) makes Ru5P a metabolic 'dead-end'.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of ribose 5-phosphate isomerase (rpiAB genes, denoted \u0394rpi), however, makes Ru5P a metabolic 'dead-end' (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on metabolic pathway knowledge and illustrated in Figure 2A.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "4c7e5c28-aaf4-471a-be73-4bdd2d12d855",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C47",
+      "claim": "Expression of phosphoribulokinase (prk) and rubisco enables a 'detour' pathway converting Ru5P and CO2 into two units of 3-phosphoglycerate (3PG).",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of phosphoribulokinase (prk) and rubisco enables a 'detour' pathway converting Ru5P and CO2 into two units of the central metabolite 3-phosphoglycerate (3PG), enabling Ru5P metabolism and growth (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and illustrated in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "e78e9bbb-f651-4a94-92c1-27947576e36f",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C48",
+      "claim": "Cytosolic carbonic anhydrase activity is incompatible with the bacterial CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, cytosolic carbonic anhydrase activity is incompatible with the bacterial CCM (Price and Badger, 1989b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "3a93ec63-04f5-4820-bce2-40093d60576c",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C49",
+      "claim": "CCMB1 lacks rpiAB and all endogenous carbonic anhydrases.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore constructed a strain, named CCMB1 for 'CCM Background 1', lacking rpiAB and all endogenous carbonic anhydrases (Materials and methods, Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental strain construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "e0e3b34f-c705-4a77-a8b1-7a655b703fe2",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C50",
+      "claim": "CCMB1 required rubisco and prk for growth on glycerol minimal media in 10% CO2.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, CCMB1 required rubisco and prk for growth on glycerol minimal media in 10% CO2 (Figure 2B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "1984f091-c5cf-4c3f-ba6d-5e0fe2b7b8f7",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C51",
+      "claim": "CCMB1:p1A failed to grow on glycerol media in ambient air.",
+      "claim_type": "EXPLICIT",
+      "source": "CCMB1:p1A failed to grow on glycerol media in ambient air, however, presumably due to insufficient carboxylation at low CO2 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "00d03fcf-c5cb-45fe-b6c7-6e34a84ba8ed",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C52",
+      "claim": "CCMB1:p1A displays the 'high-CO2 requiring' phenotype that is the hallmark of CCM mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, CCMB1:p1A displays the 'high-CO2 requiring' phenotype that is the hallmark of CCM mutants (Baker et al., 1998; Marcus et al., 1986; Price and Badger, 1989a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on experimental data and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "d9cad32c-f204-4e26-a47d-7169f1a760c1",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C53",
+      "claim": "Four additional bacterial rubiscos enabled CCMB1 to grow reproducibly in high CO2 but not in ambient air.",
+      "claim_type": "EXPLICIT",
+      "source": "Four additional bacterial rubiscos were tested and displayed the same pattern, enabling CCMB1 to grow reproducibly in high CO2 but not in ambient air (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "54c74990-1118-4aec-840e-b618a1fe0510",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C54",
+      "claim": "CCMB1:p1A grew reproducibly in an anoxic mix of 10:90 CO2:N2.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressing rubisco and prk from the p1A plasmid, CCMB1 also grew reproducibly in an anoxic mix of 10:90 CO2:N2 (Figure 2\u2014figure supplement 2) implying that carboxylation is sufficient for growth on glycerol media and rubisco-catalyzed oxygenation of RuBP is not required.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "f66443c6-e10d-4bbd-9fe8-7ddca476c45f",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C55",
+      "claim": "Carboxylation is sufficient for growth on glycerol media and rubisco-catalyzed oxygenation of RuBP is not required.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressing rubisco and prk from the p1A plasmid, CCMB1 also grew reproducibly in an anoxic mix of 10:90 CO2:N2 (Figure 2\u2014figure supplement 2) implying that carboxylation is sufficient for growth on glycerol media and rubisco-catalyzed oxygenation of RuBP is not required.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on experimental data showing growth in anoxic conditions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "294aa8b4-aff0-434e-8b81-c863cc9308e0",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C56",
+      "claim": "pCB encodes 10 carboxysome genes including rubisco large and small subunits, along with prk.",
+      "claim_type": "EXPLICIT",
+      "source": "pCB encodes 10 carboxysome genes (Bonacci et al., 2012; Cai et al., 2008), including rubisco large and small subunits, along with prk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the plasmid construction supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "0afecef0-d0a3-4a8a-a8a4-eafd916e2aa4",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C57",
+      "claim": "pCCM encodes putative rubisco chaperones and an inorganic carbon transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining H. neapolitanus genes, including putative rubisco chaperones (Aigner et al., 2017; Mueller-Cajar, 2017; Wheatley et al., 2014) and an inorganic carbon transporter (Desmarais et al., 2019; Scott et al., 2019), were cloned into the second plasmid, pCCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the plasmid construction supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "9744e14f-8e69-499b-8e57-7e3a8c6fb9e6",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C58",
+      "claim": "CCMB1 co-transformed with pCB and pCCM initially failed to grow on glycerol media.",
+      "claim_type": "EXPLICIT",
+      "source": "CCMB1 co-transformed with pCB and pCCM initially failed to grow on glycerol media.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "5d7ffaec-9fbc-4708-974c-b7771f2dd978",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C59",
+      "claim": "Selection experiments resulted in the isolation of mutant plasmids conferring growth in ambient air.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conducted selection experiments, described fully in Appendix 2, that ultimately resulted in the isolation of mutant plasmids conferring growth in ambient air.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "ea6037c7-2c61-4a1e-9aab-c6cfd6e9000a",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C60",
+      "claim": "Colonies became visible after 20 days of incubation in ambient air, but only when induction and both plasmids were provided.",
+      "claim_type": "EXPLICIT",
+      "source": "Colonies became visible after 20 days of incubation in ambient air, but only when induction and both plasmids were provided (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "d0fef18f-e101-42a1-9b38-515277a02762",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C61",
+      "claim": "Deep-sequencing of plasmid DNA revealed mutations in regulatory sequences but none in sequences coding for CCM components.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep-sequencing of plasmid DNA revealed mutations in regulatory sequences (e.g. a promoter and transcriptional repressor) but none in sequences coding for CCM components (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "3fde2eb9-4898-4352-9635-7f4b13c92f91",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C62",
+      "claim": "pCB' and pCCM' together enabled reproducible growth of CCMB1 in ambient air.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3, pCB' and pCCM' together enabled reproducible growth of CCMB1 in ambient air, suggesting that the 20 genes expressed are sufficient to produce a heterologous CCM without any genomic mutations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "0e0f519f-aa83-4409-b7e6-f69e01412ec8",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C63",
+      "claim": "The 20 genes expressed are sufficient to produce a heterologous CCM without any genomic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3, pCB' and pCCM' together enabled reproducible growth of CCMB1 in ambient air, suggesting that the 20 genes expressed are sufficient to produce a heterologous CCM without any genomic mutations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on experimental data showing growth with plasmids alone.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "6fd0e4d4-ab52-44ea-b9f8-e0cc647471bf",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C64",
+      "claim": "An inactivating mutation to the carboxysomal rubisco (CbbL K194M) prohibited growth entirely.",
+      "claim_type": "EXPLICIT",
+      "source": "An inactivating mutation to the carboxysomal rubisco (CbbL K194M) prohibited growth entirely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "2c3a1088-cad5-4721-b1ac-113d1dfd696b",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C65",
+      "claim": "An inactive mutant of the carboxysomal carbonic anhydrase (CsoSCA C173S) required high-CO2 for growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this understanding, an inactive mutant of the carboxysomal carbonic anhydrase (CsoSCA C173S) required high-CO2 for growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "7e770f01-1dc5-44ac-b753-847708d0f6c8",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C66",
+      "claim": "Disruption of carboxysome formation by removal of the pentameric shell proteins eliminated growth in ambient air.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, disruption of carboxysome formation by removal of the pentameric shell proteins or the N-terminal domain of CsoS2 also eliminated growth in ambient air.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "d53d8f6b-32de-40cc-94b2-8c1af0d3e600",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C67",
+      "claim": "Truncating CsoS2 prohibits carboxysome formation entirely.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing the pentameric proteins CsoS4AB disrupts the permeability barrier at the carboxysome shell (Cai et al., 2009), while truncating CsoS2 prohibits carboxysome formation entirely (Oltrogge et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Oltrogge et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "3e144a89-3a22-48f7-b1e0-767cca54bbdf",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C68",
+      "claim": "An inactivating mutation to the inorganic carbon transporter eliminated growth in ambient air.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, an inactivating mutation to the inorganic carbon transporter also eliminated growth in ambient air (Desmarais et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "84ae04e1-ab2c-4c5f-8fa8-0edc62b037b3",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C69",
+      "claim": "Regular polyhedral inclusions of approximately 100 nm diameter were visible in micrographs of CCMB1:pCB'+pCCM'.",
+      "claim_type": "EXPLICIT",
+      "source": "Regular polyhedral inclusions of \u2248100 nm diameter were visible in micrographs (Figure 5A), implying production of morphologically normal carboxysomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electron microscopy data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "fb18e613-ef99-4528-b082-ecb1624fcdae",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C70",
+      "claim": "Carboxysomes from CCMB1:pCB'+pCCM' were similar in appearance to those from the native host, although more heterogeneous in size and shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Carboxysomes from CCMB1:pCB'+pCCM' were similar in appearance to those from the native host, although more heterogeneous in size and shape (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electron microscopy data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "414ffd68-dc1e-457c-be45-262a2cbeb8a0",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C71",
+      "claim": "The rubisco complex was visible inside isolated carboxysomes and confirmed to co-migrate with the structure via SDS-PAGE analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The rubisco complex was visible inside isolated carboxysomes and confirmed to co-migrate with the structure via SDS-PAGE analysis (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by biochemical data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "856e8af3-5956-45ad-9664-17b099d6ddef",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C72",
+      "claim": "Serine from CCMB1:pCB'+pCCM' cells contained roughly threefold more 12C than the rubisco-independent control.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this expectation, serine from CCMB1:pCB'+pCCM' cells contained roughly threefold more 12C than the rubisco-independent control (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by isotopic labeling data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "82833aca-f31a-4690-917a-5aadca0cd9b0",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C73",
+      "claim": "Rubisco carboxylation was responsible for at least 10% of 3PG synthesis in all four biological replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these estimates, rubisco carboxylation was responsible for at least 10% of 3PG synthesis in all four biological replicates (Figure 6C, Materials and methods), confirming fixation of CO2 from ambient air.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by isotopic labeling data and flux analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "bb6e9210-71fb-4e31-9bdf-b314401c591d",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C74",
+      "claim": "This work represents the first functional reconstitution of any CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, this work represents the first functional reconstitution of any CCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "a0946711-b581-4c8a-a959-07a4bb7f3fd2",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C75",
+      "claim": "The \u03b1-carboxysome CCM from H. neapolitanus can be readily transferred between species.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrated that the \u0251-carboxysome CCM from H. neapolitanus can be readily transferred between species and confers a large growth benefit, suggesting that these CCMs became so widespread by horizontal transfer between bacteria (Kerfeld and Melnicki, 2016; Rae et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results of successful reconstitution.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "8be56876-95ee-486c-acd1-739b35e931c8",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C76",
+      "claim": "The transplanted CCM confers a large growth benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrated that the \u0251-carboxysome CCM from H. neapolitanus can be readily transferred between species and confers a large growth benefit, suggesting that these CCMs became so widespread by horizontal transfer between bacteria (Kerfeld and Melnicki, 2016; Rae et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing growth in ambient air with the CCM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "685f767b-5830-455c-b892-f215f826bb17",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C77",
+      "claim": "These CCMs became widespread by horizontal transfer between bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrated that the \u0251-carboxysome CCM from H. neapolitanus can be readily transferred between species and confers a large growth benefit, suggesting that these CCMs became so widespread by horizontal transfer between bacteria (Kerfeld and Melnicki, 2016; Rae et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "25bb0bd9-6b99-4d94-a50e-89c5a30d27c3",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C78",
+      "claim": "At most 20 gene products are required to produce a bacterial CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "These results conclusively demonstrate that at most 20 gene products are required to produce a bacterial CCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results showing successful reconstitution with 20 genes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "1a9796b2-f267-405f-9503-b8675212bd3e",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C79",
+      "claim": "The \u03b1-carboxysome CCM is genetically compact and 'portable' between organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0251-carboxysome CCM is apparently genetically compact and 'portable' between organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "ddf88968-7e0d-4452-8228-9d968ef5e14f",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C80",
+      "claim": "Expressing bacterial CCMs in non-native autotrophic hosts may improve CO2 assimilation and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible, therefore, that expressing bacterial CCMs in non-native autotrophic hosts will improve CO2 assimilation and growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "5aa228be-3905-4da0-b671-cc585d7c2c57",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C81",
+      "claim": "The rubisco chaperones are strictly dispensable for producing a functional bacterial CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrated that the rubisco chaperones are strictly dispensable for producing a functional bacterial CCM, although removing acRAF produced a substantial growth defect that warrants further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "1f01b67b-e8bf-404a-a684-06725b48fd67",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C82",
+      "claim": "Removing acRAF produced a substantial growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrated that the rubisco chaperones are strictly dispensable for producing a functional bacterial CCM, although removing acRAF produced a substantial growth defect that warrants further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "e6d8bd62-94a5-4f24-9596-1a86dcb89acb",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C83",
+      "claim": "All contemporary Cyanobacteria have CCM genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all contemporary Cyanobacteria have CCM genes, these CCMs are found in two convergently evolved varieties (Flamholz and Shih, 2020; Kerfeld and Melnicki, 2016; Rae et al., 2013), suggesting that the ancestor of present-day Cyanobacteria and chloroplasts did not have a CCM (Rae et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "32fc3515-4f2b-4460-b65b-edf4a83caaaa",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C84",
+      "claim": "Cyanobacterial CCMs are found in two convergently evolved varieties.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all contemporary Cyanobacteria have CCM genes, these CCMs are found in two convergently evolved varieties (Flamholz and Shih, 2020; Kerfeld and Melnicki, 2016; Rae et al., 2013), suggesting that the ancestor of present-day Cyanobacteria and chloroplasts did not have a CCM (Rae et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "342ef588-f7a8-4d2f-9a30-01978fa24435",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C85",
+      "claim": "The ancestor of present-day Cyanobacteria and chloroplasts did not have a CCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Although all contemporary Cyanobacteria have CCM genes, these CCMs are found in two convergently evolved varieties (Flamholz and Shih, 2020; Kerfeld and Melnicki, 2016; Rae et al., 2013), suggesting that the ancestor of present-day Cyanobacteria and chloroplasts did not have a CCM (Rae et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to scientific literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "e6ba2fa5-0c1f-4fc8-9453-ee86f22aaecf",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C86",
+      "claim": "Land plant CCMs arose only in the last 100 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "Land plant CCMs, for example, arose only in the last 100 million years (Flamholz and Shih, 2020; Raven et al., 2017; Sage et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature on CCM evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "5e3450bb-cabc-4074-8fcf-77c36a81b9e6",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C87",
+      "claim": "Pyrenoid CCMs are collectively responsible for perhaps 70\u201380% of oceanic photosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyrenoid CCMs are collectively responsible for perhaps 70\u201380% of oceanic photosynthesis (Mackinder et al., 2016; Raven et al., 2017), yet many fundamental questions remain regarding the composition and operation of algal CCMs (Wang and Jonikas, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "3fd9794a-0ac3-40af-a988-122700913883",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C88",
+      "claim": "Many fundamental questions remain regarding the composition and operation of algal CCMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Pyrenoid CCMs are collectively responsible for perhaps 70\u201380% of oceanic photosynthesis (Mackinder et al., 2016; Raven et al., 2017), yet many fundamental questions remain regarding the composition and operation of algal CCMs (Wang and Jonikas, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "2db74331-7730-4cc6-bada-2fd00b4f3f7f",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C89",
+      "claim": "CCMB1 has the genotype BW25113 \u0394rpiAB \u0394edd \u0394cynT \u0394can.",
+      "claim_type": "EXPLICIT",
+      "source": "CCMB1 has the genotype BW25113 \u0394rpiAB \u0394edd \u0394cynT \u0394can and was constructed from \u0394rpiAB by deleting both native carbonic anhydrases using the same methods, first transducing the KEIO \u0394cynT and then \u0394can from EDCM636 (Merlin et al., 2003), which was obtained from the Yale Coli Genetic Stock Center.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the strain construction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "ee460060-d2f4-4c16-8989-5d3830d6c2ba",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C90",
+      "claim": "Expressing the full complement of CCM genes led to an increase in culture density of approximately 0.6 OD units after 80 hr of cultivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing the full complement of CCM genes led to an increase in culture density (optical density at 600 nm) of \u22480.6 units after 80 hr of cultivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "13763aeb-87f2-44fd-92ba-8217c2aec082",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C91",
+      "claim": "Bootstrapping was used to calculate a 99.9% confidence interval of 0.56\u20130.64 OD units for the effect of expressing the full CCM during growth in ambient air.",
+      "claim_type": "EXPLICIT",
+      "source": "Bootstrapping was used to calculate a 99.9% confidence interval of 0.56\u20130.64 OD units for the effect of expressing the full CCM during growth in ambient air.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the statistical analysis performed on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "be9bd721-6ecc-4728-a54c-b34abef303e4",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "claim_id": "C92",
+      "claim": "Maximal growth rates for the 'full CCM' cultures ranged from 0.03 to 0.06 hr\u22121, corresponding to doubling times of 12\u201325 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximal growth rates for the 'full CCM' cultures ranged from 0.03 to 0.06 hr\u22121, corresponding to doubling times of 12\u201325 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0ddce76a-196c-41d1-8ee4-ca280d74a771",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on CO2 concentrating mechanisms (CCMs), rubisco function, and their evolutionary context. CCMs catalyze approximately 50% of global photosynthesis and arose multiple times over the last 2 billion years to overcome rubisco's limitations by concentrating CO2 near the enzyme.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22 establish well-documented background knowledge about CCMs, rubisco, and photosynthesis, all supported by appropriate citations to the scientific literature. These claims provide essential context for understanding the experimental work but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "462d0d0b-c532-46c5-8352-592b19ac177b",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The bacterial CCM consists of two essential components: energy-coupled inorganic carbon uptake and carboxysome structures that encapsulate rubisco with carbonic anhydrase. A genome-wide screen in H. neapolitanus demonstrated that a 20-gene cluster encodes all activities required for the CCM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C42 describe the composition and organization of the bacterial CCM based on prior work, particularly the authors' previous genome-wide screen (C41). These claims are well-supported by citations and provide the foundation for the reconstitution experiments, though they represent prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "b67b255a-68c0-44f1-be52-d7c53990e64d",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors engineered an E. coli strain (CCMB1) that depends on rubisco carboxylation for growth by deleting ribose 5-phosphate isomerase and carbonic anhydrases. CCMB1 expressing rubisco and prk grows in 10% CO2 but not in ambient air, displaying the 'high-CO2 requiring' phenotype characteristic of CCM mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C55 describe the rational design and validation of the CCMB1 strain, supported by experimental data in Figures 2 and supplements. The strain design is based on sound metabolic logic, and the phenotypes are well-documented. The demonstration that carboxylation alone is sufficient (C54-C55) is particularly important for interpreting subsequent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "482491d0-1e2d-40fb-ab46-1259b06528d9",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Expression of 20 CCM genes on two plasmids (pCB' and pCCM') enabled CCMB1 to grow reproducibly in ambient air. Selection experiments isolated mutant plasmids with mutations only in regulatory sequences, suggesting that the 20 genes expressed are sufficient to produce a heterologous CCM without genomic mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 describe the core experimental achievement of the paper, supported by growth data in Figure 3 and sequencing data (C61). The requirement for selection (C58-C59) and the nature of the mutations (C61) are clearly documented. However, the inference that 20 genes are sufficient (C63) is somewhat weakened by the need for regulatory mutations to achieve growth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "1e1cea8f-6adc-41df-9e1b-90d968bfc19a",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Targeted mutations to known CCM components (rubisco, carbonic anhydrase, carboxysome shell proteins, and inorganic carbon transporter) eliminated growth in ambient air while permitting growth in high CO2, demonstrating that growth depends on functional CCM components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by experimental data in Figure 4 showing that mutations to each essential CCM component ablate growth in ambient air. The experimental design appropriately distinguishes between rubisco-dependent growth (which requires high CO2) and CCM-dependent growth (which enables growth in ambient air). Statistical analysis is provided in supplements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "138a1041-f5ce-428f-a69e-820de11a6d76",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Electron microscopy revealed polyhedral inclusions of approximately 100 nm diameter in CCMB1:pCB'+pCCM' cells. Purified carboxysomes were similar in appearance to those from the native host, though more heterogeneous, and contained rubisco as confirmed by SDS-PAGE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by electron microscopy data in Figure 5 and biochemical data in supplements. The morphological characterization provides important evidence that the reconstituted system produces bona fide carboxysome structures. The noted heterogeneity (C70) is an honest assessment of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "d3d15939-bf09-48ba-bec7-8814b1caa7e6",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Isotopic labeling experiments using 13C-glycerol and 12CO2 from ambient air showed that serine from CCMB1:pCB'+pCCM' contained threefold more 12C than controls. Rubisco carboxylation was responsible for at least 10% of 3PG synthesis, confirming CO2 fixation from ambient air and representing the first functional reconstitution of any CCM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by isotopic labeling data in Figure 6 and detailed flux analysis in Appendix 3. The experimental design appropriately uses 13C-labeled substrate to trace CO2 fixation. The claim of 'first functional reconstitution' (C74) appears justified given the demonstration of growth, carboxysome formation, and CO2 fixation in a heterologous host.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "bd9575d0-251f-4b19-8954-6b08988818a4",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The \u03b1-carboxysome CCM from H. neapolitanus can be readily transferred between species and confers a large growth benefit. At most 20 gene products are required to produce a bacterial CCM, demonstrating that the \u03b1-carboxysome CCM is genetically compact and 'portable' between organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C79 represent key conclusions from the experimental work. The successful reconstitution (C75) and growth benefit (C76) are well-documented. The claim about horizontal transfer (C77) is a reasonable inference supported by citations. The conclusion about genetic compactness (C78-C79) is supported by the data, though the need for regulatory mutations suggests some caveats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "604f3a92-9fb7-49c5-b940-a66f350cdcbb",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Rubisco chaperones are strictly dispensable for producing a functional bacterial CCM, although removing acRAF produced a substantial growth defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 are supported by experimental data in Figure 4\u2014figure supplement 1. The distinction between 'strictly dispensable' (growth is possible) and 'substantial growth defect' (growth is impaired) is appropriate and honestly represents the data. This finding refines understanding of CCM requirements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "652a727c-ffe5-4416-8895-eaefdc0e2cff",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Expressing bacterial CCMs in non-native autotrophic hosts may improve CO2 assimilation and growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C80 is explicitly speculative ('It is possible, therefore...') and represents a potential application rather than a demonstrated result. While the successful reconstitution in E. coli provides some support for this possibility, the manuscript also notes that previous attempts in plants have failed (C39), suggesting significant challenges remain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "5b4d3a50-1528-4662-a9fc-9848db0d45db",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "There is great interest in transplanting CCMs into crops, and carboxysome-based CCMs are attractive because they function in single cells and rely on a tractable number of genes. However, expressing bacterial rubiscos and carboxysome components has uniformly resulted in transgenic plants displaying impaired growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 provide important context about the motivation for this work and the challenges in the field. All claims are supported by appropriate citations. The honest acknowledgment of previous failures (C39) strengthens the significance of the current work by highlighting the difficulty of the problem.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "d46bc47f-97f7-4427-a7a4-980e466f5c68",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "All contemporary Cyanobacteria have CCM genes found in two convergently evolved varieties, suggesting their ancestor lacked a CCM. Land plant CCMs arose only in the last 100 million years. Pyrenoid CCMs are responsible for 70-80% of oceanic photosynthesis, yet many questions remain about algal CCMs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 provide evolutionary and ecological context for CCMs, all supported by appropriate citations. These claims help frame the broader significance of the work but represent established knowledge rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    },
+    {
+      "id": "e5843454-b46e-451e-8783-d595f465bdda",
+      "content_id": "18a024f4-e652-4f70-bc41-8192618cad73",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The CCMB1 strain has genotype BW25113 \u0394rpiAB \u0394edd \u0394cynT \u0394can. Expressing the full complement of CCM genes led to an increase in culture density of approximately 0.6 OD units after 80 hr with a 99.9% confidence interval of 0.56-0.64 OD units. Maximal growth rates ranged from 0.03 to 0.06 hr\u207b\u00b9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 provide technical details about the strain and quantitative growth measurements. The statistical analysis (C91) using bootstrapping is appropriate, and the confidence intervals are clearly stated. The growth rates (C92) are honestly reported despite being quite slow, which is expected for this engineered system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:26.823752Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5013fe41-94a1-4491-a4cc-138c698d2e57",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "57b60d8b-3152-43ea-b4d1-28b9695c3fde",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "297bcf0d-fb3c-4ce4-9bec-47362d2a2986",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "7a4c9cff-7100-458f-a286-45a341de871d",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "45e72cfb-a6e5-4110-824b-eb0570095dc1",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "f9869760-4c78-4611-aed9-dcd77beb3409",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "beef2337-a7eb-4947-a03c-bc418f4d1e9e",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "a278a23a-c55e-497a-a406-c6a897346d47",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "3dc0c18d-c4bb-497e-bf61-5141300730e2",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "3471bb33-e209-401e-9061-c036043fdbbb",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "74420ffd-ca51-4b75-b1ee-5d20cfd72ac1",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "98689f03-8914-4e88-b0d2-21066c85a867",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "89a494d9-3b71-4fd6-9a79-941558aec236",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "1a03f1b6-78f4-47dc-a18b-af0518db0651",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "e1d7b6f6-aab3-4a91-97f5-5f67646d3685",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "4756f74d-e8db-490d-ad36-7cbc25e5dac8",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "73be1e75-3295-42b6-b143-d846e15dbb07",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "ad2077b4-5c3a-491e-97dd-17148168db1c",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "622cfe1f-f4a4-4028-8386-05ee0bc22c2e",
+      "result_id": "0ddce76a-196c-41d1-8ee4-ca280d74a771"
+    },
+    {
+      "claim_id": "994079cb-1140-44e8-a134-caccf38b9d52",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "333d0a1a-3afd-486a-bd38-cb1d522b0972",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "8fa56c17-a592-472f-b32c-6649631c8009",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "9b603aeb-ac68-4a84-bcf7-ff49f0937067",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "bd951808-7845-4111-b3f7-3a8a9c1186bf",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "e67f966b-7743-4794-a280-43e89377c022",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "d64de8cc-2eb5-4c3c-a751-f127a5fea6e0",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "7b781117-8cdd-4923-a300-6f255edf5567",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "e4eb9e77-d5c2-4b6a-82d3-4c86a743b778",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "a399d479-f9cd-4577-8421-04475d197f70",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "458d36b1-f8cc-4654-a541-b5ace9535b6e",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "112aea90-07e7-4e9e-8213-9982c7ae0aa5",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "b4837807-a7ab-4411-9b4a-57888ede3320",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "bf0bd7ee-8ca2-4e53-96f3-65662b360045",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "8ff3b4a9-0bcd-42a0-a122-a9226529169c",
+      "result_id": "462d0d0b-c532-46c5-8352-592b19ac177b"
+    },
+    {
+      "claim_id": "f2273819-6f89-4c06-a62a-fe7b494a0b63",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "ea71259e-eead-432e-b796-383da5e6daad",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "a529e01e-b996-4835-af0e-4bbbf12ac610",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "90c99aea-c0a0-46be-879d-6120322c6d68",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "4c7e5c28-aaf4-471a-be73-4bdd2d12d855",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "e78e9bbb-f651-4a94-92c1-27947576e36f",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "3a93ec63-04f5-4820-bce2-40093d60576c",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "e0e3b34f-c705-4a77-a8b1-7a655b703fe2",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "1984f091-c5cf-4c3f-ba6d-5e0fe2b7b8f7",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "00d03fcf-c5cb-45fe-b6c7-6e34a84ba8ed",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "d9cad32c-f204-4e26-a47d-7169f1a760c1",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "54c74990-1118-4aec-840e-b618a1fe0510",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "f66443c6-e10d-4bbd-9fe8-7ddca476c45f",
+      "result_id": "b67b255a-68c0-44f1-be52-d7c53990e64d"
+    },
+    {
+      "claim_id": "294aa8b4-aff0-434e-8b81-c863cc9308e0",
+      "result_id": "482491d0-1e2d-40fb-ab46-1259b06528d9"
+    },
+    {
+      "claim_id": "0afecef0-d0a3-4a8a-a8a4-eafd916e2aa4",
+      "result_id": "482491d0-1e2d-40fb-ab46-1259b06528d9"
+    },
+    {
+      "claim_id": "9744e14f-8e69-499b-8e57-7e3a8c6fb9e6",
+      "result_id": "482491d0-1e2d-40fb-ab46-1259b06528d9"
+    },
+    {
+      "claim_id": "5d7ffaec-9fbc-4708-974c-b7771f2dd978",
+      "result_id": "482491d0-1e2d-40fb-ab46-1259b06528d9"
+    },
+    {
+      "claim_id": "ea6037c7-2c61-4a1e-9aab-c6cfd6e9000a",
+      "result_id": "482491d0-1e2d-40fb-ab46-1259b06528d9"
+    },
+    {
+      "claim_id": "d0fef18f-e101-42a1-9b38-515277a02762",
+      "result_id": "482491d0-1e2d-40fb-ab46-1259b06528d9"
+    },
+    {
+      "claim_id": "3fde2eb9-4898-4352-9635-7f4b13c92f91",
+      "result_id": "482491d0-1e2d-40fb-ab46-1259b06528d9"
+    },
+    {
+      "claim_id": "0e0f519f-aa83-4409-b7e6-f69e01412ec8",
+      "result_id": "482491d0-1e2d-40fb-ab46-1259b06528d9"
+    },
+    {
+      "claim_id": "6fd0e4d4-ab52-44ea-b9f8-e0cc647471bf",
+      "result_id": "1e1cea8f-6adc-41df-9e1b-90d968bfc19a"
+    },
+    {
+      "claim_id": "2c3a1088-cad5-4721-b1ac-113d1dfd696b",
+      "result_id": "1e1cea8f-6adc-41df-9e1b-90d968bfc19a"
+    },
+    {
+      "claim_id": "7e770f01-1dc5-44ac-b753-847708d0f6c8",
+      "result_id": "1e1cea8f-6adc-41df-9e1b-90d968bfc19a"
+    },
+    {
+      "claim_id": "d53d8f6b-32de-40cc-94b2-8c1af0d3e600",
+      "result_id": "1e1cea8f-6adc-41df-9e1b-90d968bfc19a"
+    },
+    {
+      "claim_id": "3e144a89-3a22-48f7-b1e0-767cca54bbdf",
+      "result_id": "1e1cea8f-6adc-41df-9e1b-90d968bfc19a"
+    },
+    {
+      "claim_id": "84ae04e1-ab2c-4c5f-8fa8-0edc62b037b3",
+      "result_id": "138a1041-f5ce-428f-a69e-820de11a6d76"
+    },
+    {
+      "claim_id": "fb18e613-ef99-4528-b082-ecb1624fcdae",
+      "result_id": "138a1041-f5ce-428f-a69e-820de11a6d76"
+    },
+    {
+      "claim_id": "414ffd68-dc1e-457c-be45-262a2cbeb8a0",
+      "result_id": "138a1041-f5ce-428f-a69e-820de11a6d76"
+    },
+    {
+      "claim_id": "856e8af3-5956-45ad-9664-17b099d6ddef",
+      "result_id": "d3d15939-bf09-48ba-bec7-8814b1caa7e6"
+    },
+    {
+      "claim_id": "82833aca-f31a-4690-917a-5aadca0cd9b0",
+      "result_id": "d3d15939-bf09-48ba-bec7-8814b1caa7e6"
+    },
+    {
+      "claim_id": "bb6e9210-71fb-4e31-9bdf-b314401c591d",
+      "result_id": "d3d15939-bf09-48ba-bec7-8814b1caa7e6"
+    },
+    {
+      "claim_id": "a0946711-b581-4c8a-a959-07a4bb7f3fd2",
+      "result_id": "bd9575d0-251f-4b19-8954-6b08988818a4"
+    },
+    {
+      "claim_id": "8be56876-95ee-486c-acd1-739b35e931c8",
+      "result_id": "bd9575d0-251f-4b19-8954-6b08988818a4"
+    },
+    {
+      "claim_id": "685f767b-5830-455c-b892-f215f826bb17",
+      "result_id": "bd9575d0-251f-4b19-8954-6b08988818a4"
+    },
+    {
+      "claim_id": "25bb0bd9-6b99-4d94-a50e-89c5a30d27c3",
+      "result_id": "bd9575d0-251f-4b19-8954-6b08988818a4"
+    },
+    {
+      "claim_id": "1a9796b2-f267-405f-9503-b8675212bd3e",
+      "result_id": "bd9575d0-251f-4b19-8954-6b08988818a4"
+    },
+    {
+      "claim_id": "5aa228be-3905-4da0-b671-cc585d7c2c57",
+      "result_id": "604f3a92-9fb7-49c5-b940-a66f350cdcbb"
+    },
+    {
+      "claim_id": "1f01b67b-e8bf-404a-a684-06725b48fd67",
+      "result_id": "604f3a92-9fb7-49c5-b940-a66f350cdcbb"
+    },
+    {
+      "claim_id": "ddf88968-7e0d-4452-8228-9d968ef5e14f",
+      "result_id": "652a727c-ffe5-4416-8895-eaefdc0e2cff"
+    },
+    {
+      "claim_id": "c329b403-7fba-4236-94dd-5446c304cfe3",
+      "result_id": "5b4d3a50-1528-4662-a9fc-9848db0d45db"
+    },
+    {
+      "claim_id": "8ec5b45f-19f9-419e-a3ed-199f9ebfc25c",
+      "result_id": "5b4d3a50-1528-4662-a9fc-9848db0d45db"
+    },
+    {
+      "claim_id": "3bf42dce-176c-427e-b573-5246d0b03088",
+      "result_id": "5b4d3a50-1528-4662-a9fc-9848db0d45db"
+    },
+    {
+      "claim_id": "053d2a11-8b19-413b-a908-89a49ded88d3",
+      "result_id": "5b4d3a50-1528-4662-a9fc-9848db0d45db"
+    },
+    {
+      "claim_id": "8780c4ff-b8b2-423f-b61e-7e62f43f832f",
+      "result_id": "5b4d3a50-1528-4662-a9fc-9848db0d45db"
+    },
+    {
+      "claim_id": "e6d8bd62-94a5-4f24-9596-1a86dcb89acb",
+      "result_id": "d46bc47f-97f7-4427-a7a4-980e466f5c68"
+    },
+    {
+      "claim_id": "32fc3515-4f2b-4460-b65b-edf4a83caaaa",
+      "result_id": "d46bc47f-97f7-4427-a7a4-980e466f5c68"
+    },
+    {
+      "claim_id": "342ef588-f7a8-4d2f-9a30-01978fa24435",
+      "result_id": "d46bc47f-97f7-4427-a7a4-980e466f5c68"
+    },
+    {
+      "claim_id": "e6ba2fa5-0c1f-4fc8-9453-ee86f22aaecf",
+      "result_id": "d46bc47f-97f7-4427-a7a4-980e466f5c68"
+    },
+    {
+      "claim_id": "5e3450bb-cabc-4074-8fcf-77c36a81b9e6",
+      "result_id": "d46bc47f-97f7-4427-a7a4-980e466f5c68"
+    },
+    {
+      "claim_id": "3fd9794a-0ac3-40af-a988-122700913883",
+      "result_id": "d46bc47f-97f7-4427-a7a4-980e466f5c68"
+    },
+    {
+      "claim_id": "2db74331-7730-4cc6-bada-2fd00b4f3f7f",
+      "result_id": "e5843454-b46e-451e-8783-d595f465bdda"
+    },
+    {
+      "claim_id": "ee460060-d2f4-4c16-8989-5d3830d6c2ba",
+      "result_id": "e5843454-b46e-451e-8783-d595f465bdda"
+    },
+    {
+      "claim_id": "13763aeb-87f2-44fd-92ba-8217c2aec082",
+      "result_id": "e5843454-b46e-451e-8783-d595f465bdda"
+    },
+    {
+      "claim_id": "be9bd721-6ecc-4728-a54c-b34abef303e4",
+      "result_id": "e5843454-b46e-451e-8783-d595f465bdda"
+    }
+  ],
+  "comparisons": []
+}

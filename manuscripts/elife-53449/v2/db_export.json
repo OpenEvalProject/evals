@@ -1,0 +1,2113 @@
+{
+  "submission": {
+    "id": "2093de8b-14c8-4f64-8afa-bfe7150704cb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:18:43.361924Z",
+    "updated_at": "2025-12-02T16:18:43.361924Z"
+  },
+  "content": [
+    {
+      "id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "submission_id": "2093de8b-14c8-4f64-8afa-bfe7150704cb",
+      "content_type": "manuscript",
+      "content_text": "# Germline burden of rare damaging variants negatively affects human healthspan and lifespan\n\n## Authors\n\n- Anastasia V Shindyapina<sup>1</sup> ([ORCID: 0000-0002-7336-3086](https://orcid.org/0000-0002-7336-3086))\n- Aleksandr A Zenin<sup>2</sup> ([ORCID: 0000-0003-1522-0359](https://orcid.org/0000-0003-1522-0359))\n- Andrei E Tarkhov<sup>2</sup> ([ORCID: 0000-0003-3350-4785](https://orcid.org/0000-0003-3350-4785))\n- Didac Santesmasses<sup>1</sup>\n- Peter O Fedichev<sup>2</sup> \u2020\n- Vadim N Gladyshev<sup>1</sup> ([ORCID: 0000-0002-0372-7016](https://orcid.org/0000-0002-0372-7016)) \u2020\n\n### Affiliations\n\n1. Brigham and Women\u2019s Hospital, Harvard Medical School Boston United States\n2. Gero LLC Moscow Russian Federation\n3. The Faculty of Bioengineering and Bioinformatics, Lomonosov Moscow State University Moscow Russian Federation\n4. Skolkovo Institute of Science and Technology, Skolkovo Innovation Center Moscow Russian Federation\n5. Moscow Institute of Physics and Technology Moscow Russian Federation\n\n\u2020 Corresponding author\n\n## Abstract\n\nHeritability of human lifespan is 23\u201333% as evident from twin studies. Genome-wide association studies explored this question by linking particular alleles to lifespan traits. However, genetic variants identified so far can explain only a small fraction of lifespan heritability in humans. Here, we report that the burden of rarest protein-truncating variants (PTVs) in two large cohorts is negatively associated with human healthspan and lifespan, accounting for 0.4 and 1.3 years of their variability, respectively. In addition, longer-living individuals possess both fewer rarest PTVs and less damaging PTVs. We further estimated that somatic accumulation of PTVs accounts for only a small fraction of mortality and morbidity acceleration and hence is unlikely to be causal in aging. We conclude that rare damaging mutations, both inherited and accumulated throughout life, contribute to the aging process, and that burden of ultra-rare variants in combination with common alleles better explain apparent heritability of human lifespan.\n\n## Introduction\n\nGenome-wide association studies (GWAS) of human lifespan, including studies examining extreme lifespan, parental survival, and healthspan, produced a number of gene variants potentially associated with human aging. For example, GWAS on centenarians consistently demonstrate loci near APOE gene to be associated with extreme longevity, and loci near FOXO3A, HLA-DQA1 and SH2B3 genes to have population-specific associations (Melzer et al., 2020). However, even in developed countries, centenarians represent less than\u00a00.1% of the population, and the genetic determinants responsible for the survival of general population remain poorly understood. Release of massive genotype and phenotype data by UK Biobank (UKB) (Bycroft et al., 2018) allowed to investigate the relationship between genetics and several longevity proxies, such as parental lifespan (Pilling et al., 2017) and healthspan, within the general population (Zenin et al., 2019). They confirmed most of the variants from centenarian studies and identified additional variants. However, the combined contribution of common variants could explain only a small fraction of the lifespan variation as most of the individuals lack any of the alleles previously associated with lifespan. We hypothesized that some of the remaining heritability could be explained by the combined burden of rare damaging gene variants as those are present in every genome. Until very recently, only common variants could be probed in genetic studies due to sample size limitations. However, large datasets such as gnomAD and UKB now allow assessing the effects of variants with minor allele frequency (MAF) lower than 0.1%\u00a0(Lek et al., 2016).\n\nThese ultra-rare variants, most notably protein-truncating variants (PTVs), are known to be enriched for damaging alleles. They tend to have larger effect sizes and dramatically change gene expression and function. An inverse relationship between variant's minor allele frequency (MAF) and effect size was recently demonstrated for type II diabetes, an archetypal age-related disease (Mahajan et al., 2018). Multi-tissue gene expression outliers were enriched with rare variants in the GTEx dataset (Li et al., 2017). Notably, PTVs represent a significant fraction of those variants. Most of the underexpressed outliers harbor rare PTVs, which are more likely to trigger nonsense-mediated mRNA decay (NMD) than common variants (Rivas et al., 2015). Additionally, ExAC consortium demonstrated that the nonsense variants with a high Combined Annotation Dependent Depletion score (Rentzsch et al., 2019), a widely used predictor of deleteriousness of single-nucleotide variants, were enriched in singletons (Lek et al., 2016). Although missense and non-coding variants may also be damaging, PTVs are substantially enriched for deleterious alleles. They also alter gene expression more dramatically than missense and untranslated region (UTR) variants (GTEx Consortium et al., 2017).\n\nUltra-rare PTVs are usually eliminated by purifying selection, but the small effective population size of humans means that they are present in all human genomes. Increased rare PTV burden was associated with complex diseases, such as schizophrenia, epilepsy and autism (Leu et al., 2015; Singh et al., 2017; Ji et al., 2016), whereas individual genetic variants exhibited small effects. The burden of rare PTVs in genes intolerant to such variants was tested for association across ExAC traits, wherein these variants were defined as PI-PTVs - protein-truncating variants in proteins intolerant to protein-truncating variants (defined as having pLI score of 0.9 or above). This analysis revealed a negative association with years of schooling (academic attainment) and a positive association with intellectual disability, autism, schizophrenia and bipolar disorder (Ganna et al., 2018). Notably, the age at enrollment was also negatively correlated with the burden of PI-PTVs, suggesting a possible association with lifespan. Rare variants emerged as a novel genetic component with profound effect on complex traits and fitness. In this study, we focused specifically on the association of germline PTV burden with lifespan and disease-free survival, and estimated the effect of somatic PTV accumulation on mortality and morbidity acceleration.\n\n## Results\n\n### Study design and data sources\n\nWe characterized the effects of inherited mutations burden on human traits associated with lifespan. For the UK Brain Bank Network (UKBBN), we ran a survival analysis against the age at death (Keogh et al., 2017). For UKB subjects, we tested the effects of mutations on lifespan and healthspan. For these analyses, we define lifespan as survival within a follow-up period of 11 years, and healthspan as the disease-free period before one of the following conditions is diagnosed for the first time (Table 1): cancer, diabetes, myocardial infarction, congestive heart failure, chronic obstructive pulmonary disease, stroke, dementia, and death (Zenin et al., 2019). In addition, following the approach of Joshi et al., 2016, we studied the effect of mutation burden on parental survival (separately for the age at death for mothers and fathers), a useful lifespan proxy in genetic studies.\n\n**Table 1.**\n Incidence of first disease (end of healthspan) statistics in UK Biobank subjects.MI - myocardial infarction, COPD - chronic obstructive pulmonary disease, CHF - congestive heart failure.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Number of events</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cancer</td>\n      <td>6239</td>\n    </tr>\n    <tr>\n      <td>Diabetes</td>\n      <td>2009</td>\n    </tr>\n    <tr>\n      <td>MI</td>\n      <td>1862</td>\n    </tr>\n    <tr>\n      <td>COPD</td>\n      <td>619</td>\n    </tr>\n    <tr>\n      <td>Stroke</td>\n      <td>527</td>\n    </tr>\n    <tr>\n      <td>Dementia</td>\n      <td>211</td>\n    </tr>\n    <tr>\n      <td>Death</td>\n      <td>126</td>\n    </tr>\n    <tr>\n      <td>CHF</td>\n      <td>114</td>\n    </tr>\n  </tbody>\n</table>\n\nWe selected a cohort of 40,368 individuals from UKB with sequenced exomes who self-reported \u2019White British\u2019 and were of close genetic ancestry based on a principal component analysis of their genotypes (Bycroft et al., 2018). Of those, 21,742 (54%) were males with mean age of 58.1 years (SD\u00a0=\u00a07.9, age range 40.2\u00a0\u2212\u00a070.6) and 18,626\u00a0(46%) were females with mean age of 57 years (SD\u00a0=\u00a07.8, age range 40.1\u00a0\u2212\u00a070.4) at the time of assessment. In the UKB cohort, 1,122 subjects died during the follow-up period of 11 years (2005\u00a0\u2212\u00a02016), mostly of cancer (Table 2). The UKBBN cohort included 1,105 deceased subjects of European origin after we excluded cases of suicides, accidents, and cases of death with no abnormalities detected. Of those, 489 (44%) were females with mean age of 71.2 years (SD\u00a0=\u00a018, age range 16\u00a0\u2212\u00a0103 years) and 616 (56%) were males with mean age of 67.7 years (SD\u00a0=\u00a017, age range 17\u00a0\u2212\u00a0105 years). The cause of death was reported for 359 out of 1,105 individuals used for downstream analysis. Most participants in this study were diagnosed with neurodegenerative diseases, for\u00a0example Alzheimer\u2019s, Parkinson\u2019s, and Pick\u2019s diseases (Keogh et al., 2017).\n\n**Table 2.**\n Cause of death reported for 1,122 and 359 subjects in UKB and UKBBN cohorts, respectively.UKB - UK Biobank, UKBBN - UK Brain Bank Network.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>UKB</th>\n      <th>Ukbbn</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Neoplasm</td>\n      <td>638(56.9%)</td>\n      <td>20(5.6%)</td>\n    </tr>\n    <tr>\n      <td>Circulatory system</td>\n      <td>208(18.5%)</td>\n      <td>90(25.1%)</td>\n    </tr>\n    <tr>\n      <td>Respiratory system</td>\n      <td>82(7.3%)</td>\n      <td>171(47.6%)</td>\n    </tr>\n    <tr>\n      <td>Digestive</td>\n      <td>47(4.2%)</td>\n      <td>7(1.9%)</td>\n    </tr>\n    <tr>\n      <td>Nervous system</td>\n      <td>43(3.8%)</td>\n      <td>51(14.2%)</td>\n    </tr>\n    <tr>\n      <td>External</td>\n      <td>35(3.1%)</td>\n      <td>\u2014</td>\n    </tr>\n    <tr>\n      <td>Other (infections, congenital, endocrine, mental)</td>\n      <td>69(6.1%)</td>\n      <td>19(5.3%)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe used here the set of variants identified through whole-exome sequencing (WES) as part of the UKB and UKBBN projects (Keogh et al., 2017). As in Ganna et al. (2018), we limited our analysis to PTVs, defined as splice donors/acceptors, stop codon gains, and frameshifts, observed in canonical transcripts. To address the relationship between the PTVs allele frequency and their effects on lifespan, we binned the PTVs according to their minor allele frequency: (1) $M\u2062A\u2062F<10^{-4}$; (2) $10^{-4}<M\u2062A\u2062F<10^{-3}$; (3) $10^{-3}<M\u2062A\u2062F<0.01$; (4) $0.01<M\u2062A\u2062F<0.2$. For each allele frequency bin, we computed the PTV burden as the total number of PTVs per individual\u2019s exome (Figure 1\u2014figure supplement 1 for PTV burden distribution in the MAF bins).\n\n### Survival analysis\n\nWe examined the association of PTV burden against lifespan traits (i.e. survival in UKB and UKBBN, the chronic disease free survival (healthspan), mother\u2019s and father\u2019s age at death in UKB) using variations of Cox proportional hazards (PH) models. We used sex, assessment center, and genetic principal components as covariates to account for the effects related to the population heterogeneity.\n\nAs we shall see below in the \u2018Somatic mutations and mortality acceleration\u2019 section, predicted effects of PTVs accumulation with age provides negligible contribution to mortality acceleration. Therefore, time-varying effects can be neglected and the age-independent PTV load contribution to the age-dependent mortality in UKB can be found by means of the standard Cox proportional hazards model (hereinafter referred to as the \u2018mortality risk\u2019 or survival model) using the follow-up survival information and the age of the first assessment as a covariate.\n\nThe survival model involving the follow-up time and the explicit age as the regression parameter is a maximum likelihood estimator of probability of short-term survival for the individuals healthy enough to survive till the age of the first assessment. In this form, the survival model does not depend on the life history and hence should be robust with regard to enrollment bias effects.\n\nIn Zenin et al. (2019), we observed that the incidence of major chronic diseases (such as Congestive Heart Failure (CHF), Myocardial Infarction (MI), Chronic Obstructive Pulmonary Disease (COPD), stroke, dementia, diabetes, cancer, and death) in UKB increases exponentially with age in accordance to Gompertz law. Therefore, the end of healthspan can also be naturally modeled with the help of PH models including risk estimates exponential in age variables. As much as 28%\u00a0of UKB participants were diagnosed with at least one of the selected diseases by the time of the first assessment. Therefore, the chronic disease-free survival, also known as healthspan, cannot be studied with the help of the standard Cox PH model.\n\nInstead, in Zenin et al. (2019) we noted the very limited number of death events during the follow-up time in UKB and hence assumed that the incidence of diseases do not considerably affect enrollment. Accordingly, we suggested and employed here the maximum likelihood formulation of PH model (hereinafter referred to as the \u2018morbidity risk\u2019, simply \u2018morbidity\u2019, or healthspan model) involving the age at the first incidence chronic disease or the end of the follow-up time.\n\nThe mortality and morbidity risk models returned Cox regression parameters that were consistent with well-established mortality and morbidity acceleration patterns. For example, the survival (the remaining lifespan) model in the UKB produced the regression coefficient $\u0393=0.087$ (95 % CI 0.078\u20130.097) per year for the age of first assessment, very close to the mortality and morbidity acceleration rate of approximately 0.09 per year in UKB cohort (Zenin et al., 2019). The characteristic time scale is $t_{1/2}=ln\u2061(2)/\u0393=7.5$ years and hence is nothing else but the mortality rate doubling time from Gompertz mortality law.\n\nThe Cox regression coefficients for males were 0.47 (95% CI 0.35\u20130.59) in UKB and 0.26 (95% CI 0.13\u20130.38) in UKBBN. Under constant mortality acceleration, this would correspond to approximately 3\u00a0\u2212\u00a05 years of difference in life expectancy. Women in the UK (the population relevant to this study) live longer than men, although the gap between the sexes has decreased over time down to 3.7 years (Sanders, 2017).\n\nWe found that, in both datasets, burden of ultra-rare ($M\u2062A\u2062F<0.0001$) PTVs was negatively and significantly correlated with lifespan, and with healthspan in UKB (Figure 1). The proportional hazards effect estimations (sign and order of magnitude) were consistent, $\\beta=0.046$ and 0.014 per mutation, for lifespan and healthspan in UKB, respectively. To estimate the effect of ultra-rare PTVs on lifespan and healthspan in years, we equate the contributions to log-hazards from the Gompertz term, $\u0393=0.093$ per year, and the burden term, $\\beta$ per mutation: each additional ultra-rare PTV accounts for $\\beta/\u0393$ years of reduction, that is roughly 0.5 and 0.16 years per mutation for lifespan and healthspan, respectively. Moreover, the Cox regression coefficients were very similar in UKBBN and UKB datasets, indicating consistency of the effect across populations despite differences in population structure and morbidity statistics (Table 2), tissue source (blood in UKB and brain in UKBBN), sequencing methods and variant calling pipelines (Keogh et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig1-v2.jpg)\n\n**Figure 1.:** Number of ultra-rare variants belonging to each MAF bin was calculated for each exome and tested for association with lifespan phenotypes using Cox proportional hazards model and covariates to account for population structure. UKBBN lifespan was tested for associations with corresponding PTVs burdens using sex and 20 first principal components (PCs) from PCA analysis with 1000G project. UKB lifespan during follow-up was tested for associations using sex, age of enrollment, assessment centers and 40 PCs provided by UKB as covariates. UKB healthspan, mother\u2019s and father\u2019s ages at death were tested for associations using sex, assessment centers and 40 PCs as covariates. Beta coefficients estimated by Cox proportional hazards model (Cox PH beta) are plotted as dots with whiskers representing 95% confidence intervals. p-Values are shown for significant results only. Blue color designates statistically significant associations. Red dashed line designates zero Cox PH beta coefficient value. MAF - minor allele frequency, PTV - protein-truncating variants (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant), UKB - UK Biobank, UKBBN - UK Brain Bank Network.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The burden of variants increases with the frequency of the variant in the population. \u00b5 and $\\sigma$ shown in the upper right corners are mean and standard deviation of the corresponding distribution. PTV - protein-truncating variants (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant).\n\nWe also observed a smaller but still significant effect of the ultra-rare PTV burden on mothers\u2019 but not on fathers\u2019 age at death in UKB. The effect size on mother\u2019s age at death was smaller and less significant than that on the subject\u2019s healthspan and lifespan.\n\nThe difference between male and female longevity is one of the most conserved observations in human biology. In light of this, we ran analysis separately for men and women and found sex-specific effects for lifespan phenotypes (Table 3). Association with age at death was similar between the sexes. However, the associations with healthspan and mother\u2019s age at death were almost entirely driven by women.\n\n**Table 3.**\n Association of burden of ultra-rare ($M\u2062A\u2062F<0.0001$) PTVs with healthspan and mother\u2019s age at death is sex-specific.Number of ultra-rare variants was calculated for each genome and tested for association with lifespan phenotypes using Cox proportional hazards model and covariates to account for population structure (see Materials\u00a0and\u00a0methods). Beta coefficients reported in the \u2019coef\u2019 column. Bold font designates statistically significant associations. N - number of individuals analyzed, events - number of corresponding events reported in UK Biobank.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Phenotype</th>\n      <th>Sex</th>\n      <th>Coef</th>\n      <th>Ci (2.5%)</th>\n      <th>Ci (97.5%)</th>\n      <th>p-value</th>\n      <th>N</th>\n      <th>Events</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Death</td>\n      <td>female</td>\n      <td>0.048</td>\n      <td>0.012</td>\n      <td>0.083</td>\n      <td>0.008</td>\n      <td>21742</td>\n      <td>450</td>\n    </tr>\n    <tr>\n      <td>Death</td>\n      <td>male</td>\n      <td>0.041</td>\n      <td>0.011</td>\n      <td>0.070</td>\n      <td>0.007</td>\n      <td>18626</td>\n      <td>672</td>\n    </tr>\n    <tr>\n      <td>Mother age at death</td>\n      <td>female</td>\n      <td>0.008</td>\n      <td>0.001</td>\n      <td>0.015</td>\n      <td>0.026</td>\n      <td>21320</td>\n      <td>12370</td>\n    </tr>\n    <tr>\n      <td>Mother age at death</td>\n      <td>male</td>\n      <td>0.006</td>\n      <td>\u22120.002</td>\n      <td>0.013</td>\n      <td>0.130</td>\n      <td>17989</td>\n      <td>11081</td>\n    </tr>\n    <tr>\n      <td>Father age at death</td>\n      <td>female</td>\n      <td>0.002</td>\n      <td>\u22120.004</td>\n      <td>0.008</td>\n      <td>0.558</td>\n      <td>20914</td>\n      <td>15679</td>\n    </tr>\n    <tr>\n      <td>Father age at death</td>\n      <td>male</td>\n      <td>\u22120.001</td>\n      <td>\u22120.008</td>\n      <td>0.006</td>\n      <td>0.796</td>\n      <td>17783</td>\n      <td>13785</td>\n    </tr>\n    <tr>\n      <td>Healthspan</td>\n      <td>female</td>\n      <td>0.024</td>\n      <td>0.014</td>\n      <td>0.034</td>\n      <td>4.1E-06</td>\n      <td>21742</td>\n      <td>5667</td>\n    </tr>\n    <tr>\n      <td>Healthspan</td>\n      <td>male</td>\n      <td>0.009</td>\n      <td>\u22120.001</td>\n      <td>0.019</td>\n      <td>0.070</td>\n      <td>18626</td>\n      <td>6037</td>\n    </tr>\n  </tbody>\n</table>\n\nOn average, we identified 6 ($S\u2062D=2.6$) ultra-rare PTVs per genome (Figure 1\u2014figure supplement 1, upper left corner). The variability of the burden of $S\u2062D=2.6$ transforms into the variability in life- and healthspan reduction of 1.3 and 0.4 years, respectively. To visualize the effects of such PTVs on survival, we split deceased UKB subjects into five nearly equal groups corresponding to increasing PTV burden. The subjects in the first group had 0\u20133 ultra-rare PTVs per genome, in the second - 4 or 5 PTVs, in the third - 6 or 7 PTVs, in the forth - 8 or 9 PTVs and in the fifth - 10 or more PTVs (Figure 2, inset). Mean ages within the groups were 57.7, 57.5, 57.5, 57.4, and 57.4 years, respectively, with no difference in age distribution across the groups (Kolmogorov-Smirnov test on two samples p-value\u00a0>\u00a01%).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig2-v2.jpg)\n\n**Figure 2.:** Ultra-rare ($M\u2062A\u2062F<0.0001$) PTV burden distribution and survival curves for the deceased UKB subjects stratified into\u00a0groups based on the increasing burden.Blue line represents survival of individuals with low PTV burden (3 or less ultra-rare PTVs per genome) and red line represents survival of individuals with high PTV burden (10 or more ultra-rare PTVs per genome) during eleven years of follow-up (log-rank test $p=7.1\\times10^{-5}$). The absolute number of deceased subjects in each line, and the corresponding percentage, is indicated in the legend. The inset shows the distribution of the number of ultra-rare ($M\u2062A\u2062F<0.0001$) PTVs per deceased individual in UKB cohort, colored accordingly to the survival curves. MAF - minor allele frequency, PTV - protein-truncating variants (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant).\n\nThe Kaplan-Mayer (KM) survival curves for UKB individuals who harbor the lowest and the highest number of ultra-rare PTVs are shown in Figure 2 as a function of the follow-up time. The separation of the curves further illustrated elevated mortality of the subjects with high PTV burden, with the most significant difference between cohorts #1 and #5 (log-rank test $p=7.1\\times10^{-5}$). Due to Gompertz mortality acceleration, most of the death events involve the oldest individuals. Accordingly, the KM analysis here is naturally limited to a relatively narrow age group representing those close to the maximum age in the UKB population.\n\nHaving established the association of PTVs number with lifespan, we explored other types of genetic variants selected for incidence frequency and category: 3-prime and 5-prime UTR region variants, transcription factor (TF) binding sites, and structural interaction variants (Table 4). Among all tested PTV types, the most significant associations with lifespan and healthspan were observed for the ultra-rare ($M\u2062A\u2062F<0.0001$) stop gain, splice donor, and frameshift variants (Figure 3). However, only stop gains were associated with mother\u2019s age at death, and none of the categories were associated with father\u2019s age at death. As a negative control, we also included the effects of neutral variants - synonymous variants, which showed no significant associations with lifespan phenotypes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig3-v2.jpg)\n\n**Figure 3.:** Association of ultra-rare ($M\u2062A\u2062F<0.0001$) variants burden with UKB and UKBBN lifespan, UKB healthspan, and parental longevity (father\u2019s and mother\u2019s age at death).The number of ultra-rare variants belonging to each category was calculated for each genome and tested for association with lifespan phenotypes using Cox proportional hazards model and covariates to account for population structure. UKBBN lifespan was tested using sex and 20 first principal components (PCs) taken from principal component analysis of common variants shared between UKBBN and 1000G project. UKB lifespan during follow-up was tested for association with ultra-rare variants burdens using sex, age of enrollment, assessment centers, and 40 PCs provided by UKB as covariates. Sex, assessment centers, and 40 PCs were used as covariates for associations with UKB healthspan, and mother\u2019s and father\u2019s age at death. Beta coefficients estimated by Cox proportional hazards model (Cox PH beta) are plotted as dots with whiskers representing 95% confidence intervals. p-Values are shown for significant results only. Blue color designates statistically significant associations. Red dashed line designates zero Cox PH beta coefficient value. UKB - UK Biobank, UKBBN - UK Brain Bank Network, TF - transcription factor, UTR - untranslated region, MAF - minor allele frequency, PTV - protein-truncating variants (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites).\n\n**Table 4.**\n Variant annotations for 8,959,608 SNPs from FE dataset which is part of UKB.Variant types selected for analysis are written in italics, and PTV burden components marked in bold. Some variants may have multiple effects. PTV - protein-truncating variants, UTR - untranslated region, TF - transcription factor, TFBS - transcription factor binding site.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variant effect</th>\n      <th>Number of variants</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>intron_variant</td>\n      <td>3643472</td>\n    </tr>\n    <tr>\n      <td>missense_variant</td>\n      <td>2281322</td>\n    </tr>\n    <tr>\n      <td>synonymous_variant</td>\n      <td>1159078</td>\n    </tr>\n    <tr>\n      <td>splice_region_variant</td>\n      <td>333226</td>\n    </tr>\n    <tr>\n      <td>downstream_gene_variant</td>\n      <td>329399</td>\n    </tr>\n    <tr>\n      <td>upstream_gene_variant</td>\n      <td>303346</td>\n    </tr>\n    <tr>\n      <td>3_prime_UTR_variant</td>\n      <td>303346</td>\n    </tr>\n    <tr>\n      <td>5_prime_UTR_variant</td>\n      <td>192159</td>\n    </tr>\n    <tr>\n      <td>frameshift_variant</td>\n      <td>96359</td>\n    </tr>\n    <tr>\n      <td>intragenic_variant</td>\n      <td>85619</td>\n    </tr>\n    <tr>\n      <td>sequence_feature</td>\n      <td>79868</td>\n    </tr>\n    <tr>\n      <td>stop_gained</td>\n      <td>68054</td>\n    </tr>\n    <tr>\n      <td>structural_interaction_variant</td>\n      <td>57365</td>\n    </tr>\n    <tr>\n      <td>TF_binding_site_variant</td>\n      <td>45909</td>\n    </tr>\n    <tr>\n      <td>5_prime_UTR_premature_start_codon_gain_variant</td>\n      <td>34381</td>\n    </tr>\n    <tr>\n      <td>splice_donor_variant</td>\n      <td>22476</td>\n    </tr>\n    <tr>\n      <td>disruptive_inframe_deletion</td>\n      <td>21392</td>\n    </tr>\n    <tr>\n      <td>splice_acceptor_variant</td>\n      <td>18591</td>\n    </tr>\n    <tr>\n      <td>conservative_inframe_deletion</td>\n      <td>12612</td>\n    </tr>\n    <tr>\n      <td>disruptive_inframe_insertion</td>\n      <td>11080</td>\n    </tr>\n    <tr>\n      <td>intergenic_region</td>\n      <td>11012</td>\n    </tr>\n    <tr>\n      <td>conservative_inframe_insertion</td>\n      <td>8665</td>\n    </tr>\n    <tr>\n      <td>start_lost</td>\n      <td>5807</td>\n    </tr>\n    <tr>\n      <td>stop_lost</td>\n      <td>2442</td>\n    </tr>\n    <tr>\n      <td>protein_protein_contact</td>\n      <td>1590</td>\n    </tr>\n    <tr>\n      <td>stop_retained_variant</td>\n      <td>1077</td>\n    </tr>\n    <tr>\n      <td>initiator_codon_variant</td>\n      <td>609</td>\n    </tr>\n    <tr>\n      <td>TFBS_ablation</td>\n      <td>180</td>\n    </tr>\n    <tr>\n      <td>bidirectional_gene_fusion</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>gene_fusion</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>exon_loss_variant</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>3_prime_UTR_truncation</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>non_canonical_start_codon</td>\n      <td>2</td>\n    </tr>\n  </tbody>\n</table>\n\n### Gene constraints analysis\n\nUltra-rare PTVs affect 89% of the sequenced genes in the UKB dataset. No ultra-rare PTVs were observed in the remaining 11%, which we refer as genes intolerant to rare PTVs (iPTV). We compared these genes with those harboring at least one PTV ($n=16,495$) within the same 4 MAF bins tested for the association with lifespan. iPTV genes, on average, were expressed in a higher number of tissues (Figure 4a) and had higher indispensability scores (a metric to measure gene essentiality introduced by Khurana et al., 2013; Figure 4b). As expected, iPTV genes in the UKB cohort are strongly enriched in genes intolerant to PTVs measured by pLI scores (Figure 4\u2014figure supplement 1b), confirming that genes intolerant to PTVs largely overlap between UKB and ExAC datasets. Accordingly, genes that harbored frequent PTVs had tissue-specific expressions and had lower indispensability scores, thus were less essential, in agreement with previously published results for ExAC cohort (Lek et al., 2016). Ultra-rare stop gains were more likely to trigger nonsense-mediated mRNA decay (NMD) (Figure 4c) as predicted by snpEff by 50 base-pair rule (Maquat, 2004) which was also demonstrated for the rare variants in GTEx dataset (Li et al., 2017).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig4-v2.jpg)\n\n**Figure 4.:** (a) PTV-intolerant (iPTV) genes and genes harboring ultra-rare PTVs ($[0,1\u2062e-4)$ bin) are more broadly expressed and (b) have higher indispensability scores (a metric to measure gene essentiality introduced by Khurana et al., 2013). The results of comparisons are grouped in subsequent MAF bins and the numbers in the horizontal axis represent the number of genes included in the analysis. (c) Ultra-rare stop gains are more likely to trigger nonsense-mediated decay (NMD) based on 50 bp rule prediction, the numbers in the horizontal axis represent the total number of stop gains in each bin. Each group was compared to the bin of rarest variants $[0,1\u2062e-4)$, where PTVs are significantly associated with lifespan. p-Values in (a) and (b) are calculated using Wilcoxon rank-sum test, p-values in (c) are calculated using Fisher\u2019s exact test. NMD - nonsense-mediated mRNA\u00a0decay, PTV - protein-truncating variant (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant), iPTV - genes intolerant to PTV.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Top:\u00a0human-chimpanzee $d\u2062N/d\u2062S$ ratios, bottom:\u00a0pLI scores for genes harboring PTVs belonging to different MAF bins or lacking PTVs (iPTV) in UKB population. Numbers below each bin represents number of genes harboring PTVs of corresponding population\u00a0frequency included in the analyses.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Positions were binned by 50 bp window and plotted according to the chromosome (vertical axis) and position (horizontal axis).\u00a0Each line represents a 50 window, and color intensity corresponds to proportion of ultra-rare PTVs to total number of variants identified in UKB subjects.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Each dot is a gene.\u00a0Genes with an odds ratio below one had a disproportionately low number of rare PTVs. Shown in red are genes with Bonferroni-corrected p-value<0.05. For this analysis protein-truncating variants were restricted to stop codon gains and frameshifts.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** In order to identify genes with a significantly low number of rare PTVs, we performed a Fisher\u2019s exact test using number of rare PTVs and synonymous variants. For each gene, we build a 2 \u00d7 2 contingency table containing the number of rare PTVs observed in the gene and those observed in the rest of the genome, and the number of synonymous variants observed in the gene and those observed in the rest of the genome. We first focused on the genes that pass Bonferroni-corrected p-value cut-off of 0.05. Those with odds ratio (OR)\u00a0<1 showed a disproportionately low number of ultra-rare PTVs, and genes with OR\u00a0>1 were enriched in ultra-rare PTVs. The oe scores from gnomAD correspond to the gene selective constraints against loss-of-function variants, e.g. essential genes are known to have low oe scores. We used here the upper limit of the 95% confidence interval obtained from gnomAD v2.1.1. For this analysis protein-truncating variants were restricted to stop codon gains and frameshifts.\n\nWe further hypothesized that subjects with the same number of ultra-rare PTVs may have different lifespan due to difference in the damaging effect of their PTVs. Thus, subjects dying earlier would harbor more deleterious alleles than those dying later. To test this idea, we compared characteristics of genes disrupted by PTVs in subjects with the same PTV number (5 PTVs per exome, $n=\u2004171$) but different lifespan (Figure 5a). Our analysis confirmed the idea that subjects dying younger harbored more damaging PTVs. Those variants affect more broadly expressed genes, based on GTEx gene expression data (Figure 5c), and cause gene loss-of-function more frequently (Figure 5e). PTVs in shorter-lived subjects also resided in genes less likely to maintain a wild-type phenotype when a single copy of the gene is inactivated, as evident by genome-wide haploinsufficiency score GHIS from Steinberg et al. (2015); Figure 5b. Also, these PTVs affected genes with stronger constraints against PTVs, based on the observed/expected LoF (oe, gnomAD v2.1) scores, suggesting that these genes harbored fewer PTVs than expected in the general population. Mean values for constraints of the genes disrupted by PTVs showed association across lifespan tested by Cox PH model (Figure 5a, inset). Percent of tissues expressing these genes, oe scores and loss-of-function occurrence were all significantly associated with lifespan of subjects with 5 PTVs (Figure 5a, inset).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53449/elife-53449-fig5-v2.jpg)\n\n**Figure 5.:** (a) Survival of UKB subjects with 5 ultra-rare PTVs per exome. The inset shows association between lifespan and the properties of genes harboring ultra-rare PTV: evolutionary constraint quantified by $d\u2062N/d\u2062S$ ratios (the ratio of substitution rates at non-synonymous and synonymous sites) in human-chimpanzee orthologs; indispensability score (IS) as in Khurana et al., 2013; genome-wide haploinsufficiency score (GHIS) as in Steinberg et al. (2015); (relative) number of tissues expressing the gene; observed/expected (oe) score; prediction for variants being loss-of-function (LOF, see LOF-gene) and triggering NMD (see NMD-gene). Orange and blue areas in (a) designate survival windows for subjects dying earlier in life (young) and later in life (old) and this color scheme is the same as that in the plots B-D. Difference in (B) GHIS scores, (C) percent of tissues expressing gene affected by variants, and (D) oe scores, and (e) proportion of predicted loss-of-function ($L\u2062O\u2062F\u2062_\u2062g\u2062e\u2062n\u2062e$) variants for individuals with same PTV number but differing in lifespan (i.e. dying younger (47.4\u00a0\u2212\u00a058.9 years) or older (73.8\u00a0\u2212\u00a078.5 years)). p-Values in (b) and (d) were\u00a0calculated by Student t-test, p-value in (c) and (e) were calculated by Wilcoxon rank-sum test. NMD - nonsense-mediated decay, IS - indispensability score, GHIS - genome-wide haploinsufficiency score, LOF - loss of function, PTV - protein-truncating variant (defined as stop codon gains, frameshifts, canonical splice acceptor/donor sites variant).\n\n### Gene burden test\n\nWe further tested whether some of the genes were more frequently affected by ultra-rare PTVs in UKB individuals depending on their lifespan and healthspan. For that, we 1) split the list of UKB subjects ordered by lifespan or healthspan into two groups of same size, 2) summed up a number of unique cases of the gene harboring ultra-rare PTV for each group, and 3) tested whether those numbers are biased towards one of the groups by Fisher\u2019s exact test. Interestingly, none of the genes reached statistical significance under FDR p-value cut-off of 0.05 (Supplementary file 1 and Supplementary file 2).\n\nPrevious efforts to characterize rare PTVs in large datasets demonstrated that some genes are more prone to be affected by rare PTVs than others (Lek et al., 2016). However, it was unclear to what extent that applies to the UKB dataset. We first assessed the genome-wide distribution of ultra-rare PTVs and found it to be similar to the rest of the variants (Figure 4\u2014figure supplement 2). To address the same question at the level of individual genes, we estimated the number of ultra-rare stop gains and frameshifts per gene in the UKB cohort, as well as the number of all synonymous variants per gene as a neutral read-out to normalize for coverage. By comparing the number of PTVs and synonymous variants per gene, to the overall number of those variants, we found 110 genes that were prone to ultra-rare PTVs, as well as 188 genes intolerant to those variants (Supplementary file 3, Figure 4\u2014figure supplement 3). Our estimations were in agreement with oe scores provided by gnomAD. As expected, genes prone to ultra-rare PTVs in UKB showed high oe scores in gnomAD, while genes intolerant to those variants had low oe scores (Figure 4\u2014figure supplement 4). We excluded variants in splice donor and acceptor sites, as the number of variants per gene is directly affected by the number of introns.\n\n### Somatic mutations and mortality acceleration\n\nIn addition to the germline burden of extremely rare PTVs, somatic cells accumulate new genetic variants (Vijg, 2000; Milholland et al., 2015; Zhang and Vijg, 2018) at a median mutation frequency of $R\u224810^{-8}$ per base pair per year (Milholland et al., 2017). Thus, the negative effects on healthspan and lifespan due to germline burden should get gradually amplified with age in somatic cells. We quantitatively assessed whether the contribution of accumulated somatic PTVs is strong enough to explain the exponential growth of mortality with age, a.k.a. the Gompertz law. In doing so, we extrapolated the Cox PH model for germline PTV burden by taking into account the effects of acquiring new PTVs with age in somatic cells. The somatic PTV burden increases linearly with age and can be estimated as $\\lambda\u2062L\u2062R\u2062t$, where $t$ is age, the genome size is $L=3$\u00a0Gbp, and the fraction of the genome covered with the extremely rare PTVs (10 kbp) with $M\u2062A\u2062F<10^{-4}$ is $\\lambda=0.33\u22c510^{-5}$. Overall, the somatic PTV burden contributed to the mortality log-hazard a linear (in age) term $\\beta\u2062\\lambda\u2062L\u2062R\u2062t$, where $\\beta=0.046$\u00a0per year is the Cox PH coefficient, whereas the Gompertz contribution would be proportional to $\u0393\u2062t$. We estimate that the somatic PTV burden term $\\beta\u2062\\lambda\u2062L\u2062R\u22484.6\u22c510^{-6}$ per year is negligible in comparison to the Gompertz exponent $\u0393\u22480.09$ per year characterizing mortality and incidence of chronic disease acceleration with age (Zenin et al., 2019). The estimated effect of somatic PTV accumulation is minor in comparison to the effect of germline PTV burden, and can account only for a minute fraction of mortality and morbidity acceleration.\u00a0However, our prediction should be experimentally validated, for example, by testing the effect of somatic mutations on lifespan and healthspan in model organisms.\n\n## Discussion\n\nWe report that both lifespan and healthspan are negatively impacted by the burden of rarest variants that disrupt genes and are already present at birth. These mutations are found in most human subjects. Thus, disease occurrence and age of death are directly influenced by genotype. Our approach is radically different from the previous searches for variants that contribute to longevity, for\u00a0example searches for alleles enriched in centenarians. In this regard, we find that the genetic component of lifespan is shaped by two mutation types: common variants, as found by previous studies, and ultra-rare PTVs, as shown here.\n\nThese conclusions are based on the analysis of two large independent datasets that provide both whole exome sequencing data and lifespan traits. Previously released genotyping data were probed primarily for common variants, thus missing information on the most deleterious, rare variants. Here, we took advantage of the recent release of UKB exomes and revealed the relationship between the most damaging variants, ultra-rare PTVs, and lifespan traits.\n\nHowever, due to the limited follow-up, mortality in the UKB dataset reflects the progression rate of age-related chronic diseases in an individual; that\u00a0is if a subject is deceased, he/she most probably had one or more age-related disease at the time of enrollment. As a result, UKB subjects included in lifespan analysis are biased toward shorter lifespan. A general UK population born at the same time had a life expectancy at birth of 71 years which is much longer compared to the average lifespan of 57 years in the deceased UKB cohort. On the other hand, UKBBN subjects had an average lifespan of 69 years which is closer to the actual lifespan in the UK. However, subjects in the UKBBN cohort were born in the period spanning the whole century from 1891 to 1996. As one would expect, deleterious alleles might accumulate in recent generations due to advances in medicine. Thus, our UKBBN analysis of a mixture of a few generations could be biased. Both limitations can be addressed 30\u201340 years later when the average lifespan of UKB individuals will reach the average lifespan of the UK population.\n\nThe association of ultra-rare PTV mutations with healthspan, however, reflects the effect of deleterious gene variants on the incidence of the first chronic disease and thus covers the accumulated effect of genotype on health and survival over a much longer time, effectively from birth up to the age of enrollment/death.\n\nThe association of ultra-rare mutation burden and lifespan is consistent between the UKB and UKBBN cohorts. UKB has more subjects but a narrower age distribution, and UKBBN provides postmortem genotypes of individuals deceased at ages of 16\u00a0\u2212\u00a0105 years old. By the nature of its design, the UKBBN cohort may be enriched for individuals prone to diseases and death at any given age. On the other hand, UKB subjects exhibit lower mortality and hence are probably healthier than the general population (Ganna and Ingelsson, 2015). It, therefore, appears that the association of ultra-rare mutations and lifespan traits is a general feature that applies to the UK population. However, there is still an open question whether our findings are translatable to the populations outside UK and Europe. The release of more ethnically diverse datasets accompanied by lifespan phenotypes would help to address this question in the future. It is also unclear if the association would be preserved beyond the 11 years of the follow-up period in UKB. Findings from a much older UKBBN cohort suggest that the effect size of ultra-rare PTVs on lifespan will remain significant. To fully understand the role of\u00a0rare variants in human lifespan, we need to test its effects in an older UKB cohort as well as in large ethnically diverse datasets.\n\nWe found no association between father\u2019s age at death and PTV burden, while there was a modest effect for mother\u2019s age at death. At the same time, a genetic correlation between longevity and father\u2019s age at death was reported to be one of the strongest (Deelen et al., 2019). One of explanations would be that ultra-rare PTV burden is more relevant for lifespan than for longevity. To address this hypothesis in the future, PTV burden can be compared between centenarians and an appropriate control group. If PTV burden is associated with longevity, we would expect centenarians to be severely depleted of ultra-rare PTVs.\n\nInterestingly, we observed sex-specific effects of PTV burden for healthspan and mother\u2019s age at death. Both signals were mostly driven by women. At the same time, men had a much shorter healthspan compared to women (Cox ph beta\u00a0=\u00a00.16, p-value=1.55E-18). We hypothesize that the genetic component, represented here by ultra-rare PTVs, may play a less important role in male healthspan due to the lifestyle choices such as smoking, drinking, risky behavior and unhealthy diet. Indeed, men are known to smoke more (Peters et al., 2014), drink more, and exhibit higher BMI scores (Wills et al., 2017) than women in UKB. To investigate sex specificity in more detail, we ran an analysis of the X-chromosome in men, where mutations cannot be compensated by in the homologous chromosome. We found no associations of X-chromosome PTV burden with either lifespan or healthspan. However, the number of PTVs per individual specifically on X chromosome is extremely low; thus, we may be out of power to pick up the difference.\n\nUltra-rare PTVs occur across the genome and affect 89% of sequenced genes in UKB. Intriguingly, we observed a subset of 1,496 genes that are free of ultra-rare PTVs in the whole UKB population sequenced so far. These genes are more essential as evidenced by high indispensability scores and are\u00a0expressed more broadly throughout the body. Together, this findings indicate strong purifying selection against PTVs in these genes. Their disruption could lead to either childhood or embryonic lethality, the time periods that are not covered by UKB as well as other public datasets, for\u00a0example ExAC.\n\nAs expected, genes affected by rare and common PTVs ($M\u2062A\u2062F>0.0001$) are less evolutionary conserved and more frequently disrupted in the general population (Figure 4\u2014figure supplement 1), less essential (based on indispensability scores), and expressed in fewer tissues (Figure 4a,b). Moreover, fewer common nonsense variants were predicted to trigger nonsense-mediated mRNA decay; thus, they affect gene expression less than ultra-rare stop gains (Figure 4c). Overall, common PTVs are expected to have a lower effect on fitness, which would explain the lack of the association between the burden of common PTVs and lifespan phenotypes. It is apparent that the ultra-rare PTVs are more damaging than common PTVs but not enough damaging to cause early life mortality.\n\nNotably, individuals sharing same PTV number still have diverse lifespan. This discrepancy might be explained by differences in the rate of age-related damage accumulation, regulated by environment and genetic factors. In addition, the impact of a PTV on phenotype depends on the gene it disrupts and its position within the gene body. For example, disruption of a more evolutionary conserved gene and with a broad expression would, intuitively, have a stronger effect on lifespan than the disruption of a less conserved gene with a tissue-specific expression. Indeed, our analysis confirmed that individuals with shorter lifespan were born with more deleterious alleles. Genes disrupted in short-lived individuals are broadly expressed in the body, are more likely to cause haploinsufficiency when inactivated, and are more intolerant to PTVs (according to gnomAD oe scores). Additionally, PTVs in subjects with shorter lifespan were more likely to cause gene loss-of-function. Thus, both the degree of damage caused by ultra-rare PTVs and the number of these variants are important factors influencing human lifespan.\n\nIntriguingly, the effect size of ultra-rare PTVs on lifespan was comparable to the effect of known longevity alleles. For example, $\u03f5\u20624$ allele in APOE/TOMM40 locus conferred an estimated 1.24 years of life shortening in women, as inferred from a large parental survival study (Joshi et al., 2016). The PTV burden difference of\u00a02\u00a0\u2212\u00a03 variants corresponds to the similar effect size (1\u00a0\u2212 1.5 years) on the lifespan variation at the standard deviation for $M\u2062A\u2062F<0.0001$.\n\nHaving established the mortality and morbidity risk association with PTVs, we were able to factor in the rates of somatic mutation accumulation over the lifespan. The dramatic discrepancy between the estimate for somatic PTV burden accumulation and the empirical mortality and morbidity acceleration does not support the hypothesis that random somatic mutations significantly reduce healthspan or lifespan. Moreover, the analysis shows that the effect of accumulation of somatic mutations is less profound than that of germline PTV burden. Thus, we found little evidence for a significant role of somatic mutations in aging (Promislow and Tatar, 1998; Moorad and Promislow, 2008). Somatic mutations may, however, play a role through high-order effects, such as clonal expansion and cell competition, and hence amplify the effects of other forms of damage (Martincorena, 2019).\n\nTaken together, the effects of common variants earlier implicated in longevity and the effects of ultra-rare variants reported here could help explain the apparent heritability of lifespan. Currently, this issue is not fully resolved. Twin studies (Herskind et al., 1996; Ljungquist et al., 1998) suggest that lifespan could be as much as\u00a023\u00a0\u2212\u00a033% genetically determined. A more recent study (Ruby et al., 2018) puts up a challenge to this conclusion and points to a much lower level of genetic determinism. We therefore expect that future investigations of the effects of ultra-rare genetic variants may turn to be crucial for quantitative understanding of lifespan heritability.\n\nThese findings strengthen the case for complexity of aging, wherein aging is a systemic process resulting from the combined accumulation of age-related deleterious changes, none of which could cause aging on their own (Gladyshev, 2016). The advantage of mutations in aging studies, however, is that they can be quantified and their contribution estimated, which is something that is currently much more difficult to do for other forms of age-related damage.\n\n## Materials and methods\n\n### UKB cohort\n\nThe first batch of UKB exome sequence group consists of 49,960 individuals who passed QC procedures by UKB. Exome sequencing cohort is enriched with samples with a higher rate of imaging and enhanced measurements such as retinal optical coherence tomography test, visual acuity, hearing test, and other. This cohort is not biased on any health condition, disease or physical measurement results from the UKB population of almost 500,000 individuals (Hout et al., 2019). We selected a cohort of 41,250 individuals who self-reported \u2019White British\u2019 and have very similar genetic ancestry based on a principal components analysis of the genotypes. Then, we made an effort to produce the maximal independent set of individuals based on computed kinship coefficients (two individuals were considered related if they share relatedness of third degree or closer) and selected 40,368 individuals for the analysis.\n\n### Exome data\n\nExome data consisted of 8,959,608 SNPs and short indels from human coding DNA. We selected\u00a06,208,943 variants that are not monomorphic in UKB cohort and have a missing rate less than\u00a010% and $M\u2062A\u2062F<0.2$. We annotated these genetic variants for functional consequence using SNPeff (Cingolani et al., 2012) software and GRCh38.86 genome reference. UKBBN dataset was additionally annotated with ANNOVAR (Wang et al., 2010) to add ExAC MAFs. In downstream analysis we focused on protein-truncating variants annotated as: stop codon gained, frameshift variant, slice donor or splice acceptor site, this produced 152,790 and 11,393 SNPs and indels in UKB and UKBBN, correspondingly.\n\n### PTV burden calculation and Cox proportional hazards model\n\nPTV burden was defined as a number of ultra-rare ($MAF<0.0001$) variants that disrupt open reading frame (stop gain, frameshift, disruption of\u00a0splice donor/acceptor site). PTV burden was tested for association with UKBBN lifespan using Cox PH model with sex and first 20\u00a0principal components (obtained by clustering with 1000G dataset, see below) as covariates in R (R Development Core Team, 2018). For UKB data we included sex,\u00a040 genetic principal components and assessment centers as covariates for Cox PH analysis on lifespan, healthspan and mother\u2019s and father\u2019s age at death. For all types of survival data except for healthspan we\u00a0have also added age at assessment as covariate. Genetic principal components were calculated on genotypes for\u00a0500,000 UKB participants (Bycroft et al., 2018).\n\n### UKBBN PCA with 1000G\n\nFirst and second chromosome for all 1000G super populations and UKBBN dataset\u00a0were clustered together. For that, 1000G vcf files were lifted over to hg19 using picard tools\u00a0(Broad Institute, 2018)\u00a0combined with UKBBN vcf file by overlap variants using GATK tools\u00a0(Van der Auwera et al., 2013). Variants with MAF deviating between datasets over 30% were excluded. Eigen vectors were obtained from variants with $M\u2062A\u2062F>10%$ pruned using 50 window size, step size of 5 and variance inflation factor threshold of 1.5 by Plink (Purcell et al., 2007). We kept individuals that clustered with EUR superpopulation.\n\n### Data filtering\n\nPTVs in UKB were filtered using internal MAFs. Since UKBBN cohort is much smaller to get desired resolution we used ExAC MAFs for non-finish European population (ExAC_NFE). We excluded ultra-rare variants absent in ExAC dataset (ExAC_ALL = 0) from UKBBN analysis to reduce number of sequencing and variant calling errors. Analysis in both datasets was restricted to autosomal chromosomes to avoid sex bias. We restricted UKBBN cohort to natural causes of death (i.e. excluding car accidents, poisoning and suicides) and excluded deaths with no abnormalities detected.\n\n### Data sources\n\nUKBBN vcf files were downloaded from EGA repository (EGAS00001001599, https://www.ebi.ac.uk/ega/studies/EGAS00001001599). Transcripts per kilobase million (TPM) counts for 53 human tissues were downloaded from GTEx Portal, release v7. Gene expression values within brain regions, two heart and two skin samples were averaged for subsequent analysis, and primary cell cultures were excluded, yielding a total of 37 tissues. Transcripts considered to be expressed in the tissue if $T\u2062P\u2062M>10$. Oe ratios were downloaded from gnomAD repository (gnomad.v2.1.1.lof_metrics.by_gene.txt.bgz). GHIS values were obtained from Steinberg et al. (2015) and indispensability scores were downloaded from Khurana et al., 2013. $d\u2062S$ and $d\u2062N$ values for chimpanzee-human orthologs were downloaded from Ensembl Biomart. NMD and LoF predictions were obtained from snpEff annotation (\u2019NMD.gene\u2019, \u2019LoF.gene\u2019) (Cingolani et al., 2012). All UK Biobank data are available upon application.\n\n### Gene burden analysis\n\nGene burden analysis was performed with assumptions that all ultra-rare PTVs would have the same effect direction and the same effect size. Following those assumptions, we summed up all cases of gene harboring ultra-rare PTV. Cohorts were defined by splitting UKB into two groups with equal number of subjects based on ordered lifespan or healthspan data. We tested the hypothesis that some genes harbor more ultra-rare PTVs in one cohort than another (compared to the sum of PTV number in each cohort) using Fisher\u2019s exact test. To explore sex-specific effects, we separately run analysis for healthspan in males and females. In order to identify genes with a significantly deviated burden of ultra-rare PTVs in UKB, we performed a Fisher\u2019s exact test using the number of ultra-rare PTVs and synonymous variants. For each gene, we build a 2 \u00d7 2 contingency table containing the number of ultra-rare PTVs observed in the gene and those observed in the rest of the population, and the number of synonymous variants observed in the gene and those observed in the rest of the population. The result of each test was an odds ratio and p-value, where genes with odds ratio\u00a0<1 showed a disproportionately low number of rare PTVs. The Fisher test was performed using the fisher.test function in R, and the Bonferroni correction is performed using p.adjust function in R.\n",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "9ad9c7c6-bd47-49ce-b3a4-14d0983e89f7",
+      "submission_id": "2093de8b-14c8-4f64-8afa-bfe7150704cb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sara Hagg, Karolinska Institutet Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53449.sa1](https://doi.org/10.7554/eLife.53449.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe believe that your work will be of great interest to the aging research community. The paper will add to the current understanding of genetics of lifespan by demonstrating the importance of rare variants and PTVs.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Germline burden of rare damaging variants negatively affects human healthspan and lifespan\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Sara Hagg as Reviewing Editor and Jessica Tyler as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Joris Deelen (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper by Shindyapina and colleagues reports the results from a study on the cumulative effect of rare variants, identified using exome sequencing data, on healthspan and lifespan. The authors showed that a higher burden of ultra-rare protein-truncating variants is associated with increased lifespan and healthspan. Overall, the reviewers agreed on the fact that this is an interesting analysis using a unique dataset that will be an important contribution to the field of aging biology. Some suggestions may still improve the paper and are needed before it can be accepted for publication.\n\nEssential revisions:\n\n1) The difference between male and female longevity is one of the most conserved observations in human biology. In this light, it is important to see if any effects are sex specific or sex biases? Once the sexes are separated, is the effect observed in both or is it stronger in one sex? It would be interesting if the authors can speculate a bit more (in their Discussion section) about why they think they observed an association with mother's, but not father's age at death, given that the genetic correlation of longevity with father's age at death is much stronger than with mother's age at death (see Deelen et al., 2019). Hence, it may be that the ultra-rare PTV burden is relevant for lifespan, but not so much for longevity. A related but non overlapping question is whether PTVs have more damaging effects when on the X chromosome, where they are not compensated for by a second allele in males?\n\n2) Are there genes with more frequent ultra-rare PTVs than other genes based on what is explored in the paper? This could be tested with gene-based burden tests, where more frequent PTV regions should be investigated in terms of functional annotation.\n\n3) On the contrary, the ~1500 genes without PTVs, are they also found to be \"human gene knock-outs\"? What are the overlap of these identified genes with those identified in other similar projects?\n\n4) More info on the Cox models is needed. What do the proportional hazards look like, Schoenfeldt residuals? Describe the underlying time scale: does it matter if it is age or time since measurement? Are there time-varying effects here, for example in the somatic mutation accumulations? Provide all estimates with 95% CI\u2019s, less focus on p-values overall in the manuscript is desired. Related, in Figure 2, why did the authors decide to use follow-up time as timescale for their Kaplan-Meier curve? It would make more sense to use the actual age of the included individuals (as done in Figure 4A) given that the age range is quite narrow.\n\n5) The section about somatic mutations and mortality acceleration is currently only based on estimations of somatic variation and computational modeling. It would be better if the authors use the actual sequencing data to try to detect somatic variants (using variant allele fractions) and subsequently associate these with lifespan and healthspan.\n\n6) Are the analyses affected by the errors on mis-mapping encountered in the exome data from UKB? If so, have the authors re-ran the analyses after correcting errors?\n\n7) Figure 4C; Did the authors only compare the 0, 1e-4 bin with the 1e-4, 1e-3 bin or was that the only comparison showing a significant difference? If the latter is the case, they should also report the P-values for the comparison with the other 2 bins.\n\n8) Figure 5: The authors should add a panel with the difference in the LOF-gene between young and old (even if this is not significant), given that this one is also significantly associated with lifespan (Figure 5A).\n\n9) Cohort differences should be acknowledged: are these cohorts representative of the general UK population? There is some discussion around this but more is needed. What are the implications if these cohorts are prone to selection bias? Authors should discuss the possibility that data beyond the 11 years of follow-up in UKB may lead to a bias in the results even if it's not possible to account for it directly. What are the mean ages at death in UK in general, and in the two cohorts?\n\n10) The Introduction section currently contains some statements that are incorrect, and should be addressed:\n\n\"For example, GWAS on centenarians consistently demonstrate the loci near LPA and APOE, FOXO3A, HLA-DQA1 and SH2B3 genes to be associated with longevity (Serbezov et al., 2018)\". The majority of the loci mentioned here have consistently been associated with parental lifespan, but not with longevity (which is defined as living to an age above a certain age threshold). The only locus consistently associated with longevity (including studies containing centenarians) is APOE. Hence, the authors need to update this statement and use a more appropriate reference here, such as the recent review from Melzer et al., 2019.\n\n\"However, the combined contribution of these variants could explain only a small part of lifespan heritability, at least as asserted from twin studies (Ruby et al., 2018).\" The paper by Ruby et al. used pedigree data to estimate the heritability of lifespan. Hence, the authors cannot use this reference to refer to the heritability as estimated by twin studies and should thus update this reference or change their statement.\n\n\"We hypothesized that the rest could be explained by the combined burden of rare damaging gene variants\". Why do the authors assume that the rare variants have to be damaging? It could well be that there is a contribution of variants that lead to increased functioning of genes/proteins and are thus not considered 'damaging'. It would be better to tune down this statement to something like: \"We hypothesized that some of the remaining heritability could be explained by the combined burden of rare damaging gene variants\".\n",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2feacf1f-3f3c-413b-a6b3-1ea1f6b893b0",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C1",
+      "claim": "Heritability of human lifespan is 23\u201333% as evident from twin studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Heritability of human lifespan is 23\u201333% as evident from twin studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to twin studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "63c8f9a4-1dd3-4132-a4f7-5f74fc7b305f",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C2",
+      "claim": "The burden of rarest protein-truncating variants (PTVs) in two large cohorts is negatively associated with human healthspan and lifespan, accounting for 0.4 and 1.3 years of their variability, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that the burden of rarest protein-truncating variants (PTVs) in two large cohorts is negatively associated with human healthspan and lifespan, accounting for 0.4 and 1.3 years of their variability, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from analysis of two cohorts (UKB and UKBBN)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "4cbbc1e5-483f-47ce-a8bb-5f68908ff81f",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C3",
+      "claim": "Longer-living individuals possess both fewer rarest PTVs and less damaging PTVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, longer-living individuals possess both fewer rarest PTVs and less damaging PTVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis comparing PTV burden and characteristics across individuals with different lifespans",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "fc0fc7b4-c0e7-4719-91cf-97eb413e9395",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C4",
+      "claim": "Somatic accumulation of PTVs accounts for only a small fraction of mortality and morbidity acceleration and hence is unlikely to be causal in aging.",
+      "claim_type": "EXPLICIT",
+      "source": "We further estimated that somatic accumulation of PTVs accounts for only a small fraction of mortality and morbidity acceleration and hence is unlikely to be causal in aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from calculations comparing somatic PTV accumulation rates to observed mortality acceleration",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "e718f309-d12c-49c3-8388-f5e87cd71f79",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C5",
+      "claim": "Rare damaging mutations, both inherited and accumulated throughout life, contribute to the aging process.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that rare damaging mutations, both inherited and accumulated throughout life, contribute to the aging process, and that burden of ultra-rare variants in combination with common alleles better explain apparent heritability of human lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from data analysis of germline and somatic mutations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "eb4c6baf-b8a7-4781-bcb4-e81651523975",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C6",
+      "claim": "Burden of ultra-rare variants in combination with common alleles better explain apparent heritability of human lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that rare damaging mutations, both inherited and accumulated throughout life, contribute to the aging process, and that burden of ultra-rare variants in combination with common alleles better explain apparent heritability of human lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on inference from data analysis and comparison with previous GWAS findings",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "edc3e9c2-560f-4e30-8284-450e94518c6d",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C7",
+      "claim": "GWAS on centenarians consistently demonstrate loci near APOE gene to be associated with extreme longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, GWAS on centenarians consistently demonstrate loci near APOE gene to be associated with extreme longevity, and loci near FOXO3A, HLA-DQA1 and SH2B3 genes to have population-specific associations (Melzer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Melzer et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "92d055bc-6741-4a62-adff-2c562a48c6af",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C8",
+      "claim": "Loci near FOXO3A, HLA-DQA1 and SH2B3 genes have population-specific associations with extreme longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, GWAS on centenarians consistently demonstrate loci near APOE gene to be associated with extreme longevity, and loci near FOXO3A, HLA-DQA1 and SH2B3 genes to have population-specific associations (Melzer et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Melzer et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "fa500edc-beb6-4e4b-acdc-377d420789a4",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C9",
+      "claim": "Centenarians represent less than 0.1% of the population in developed countries.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even in developed countries, centenarians represent less than 0.1% of the population, and the genetic determinants responsible for the survival of general population remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established demographic knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "5cc9f2a3-887b-4132-91d0-9122927b88e4",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C10",
+      "claim": "The combined contribution of common variants could explain only a small fraction of the lifespan variation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the combined contribution of common variants could explain only a small fraction of the lifespan variation as most of the individuals lack any of the alleles previously associated with lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from previous GWAS studies and citation to prior work",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "54fccb12-2ffc-4f62-868a-ff1c8a6b06db",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C11",
+      "claim": "Ultra-rare variants are enriched for damaging alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "These ultra-rare variants, most notably protein-truncating variants (PTVs), are known to be enriched for damaging alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "e11c8a21-5d82-42dd-b003-e75a8ffe5f99",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C12",
+      "claim": "An inverse relationship between variant's minor allele frequency (MAF) and effect size was recently demonstrated for type II diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "An inverse relationship between variant's minor allele frequency (MAF) and effect size was recently demonstrated for type II diabetes, an archetypal age-related disease (Mahajan et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mahajan et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "99b7d5d8-63c0-4f33-9681-1a0f9fd36078",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C13",
+      "claim": "Multi-tissue gene expression outliers were enriched with rare variants in the GTEx dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-tissue gene expression outliers were enriched with rare variants in the GTEx dataset (Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "0581c985-039d-441f-8b38-c9ae315c3132",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C14",
+      "claim": "Most of the underexpressed outliers harbor rare PTVs, which are more likely to trigger nonsense-mediated mRNA decay (NMD) than common variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the underexpressed outliers harbor rare PTVs, which are more likely to trigger nonsense-mediated mRNA decay (NMD) than common variants (Rivas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rivas et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "547ada4a-39de-4cb3-9d09-1d10d8be41e3",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C15",
+      "claim": "Nonsense variants with a high Combined Annotation Dependent Depletion score were enriched in singletons.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, ExAC consortium demonstrated that the nonsense variants with a high Combined Annotation Dependent Depletion score (Rentzsch et al., 2019), a widely used predictor of deleteriousness of single-nucleotide variants, were enriched in singletons (Lek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lek et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "8f59d894-7e06-4e8a-9d18-d6847628dc00",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C16",
+      "claim": "PTVs are substantially enriched for deleterious alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Although missense and non-coding variants may also be damaging, PTVs are substantially enriched for deleterious alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "42d2318f-0604-41d4-8be6-359f2a479bd5",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C17",
+      "claim": "PTVs alter gene expression more dramatically than missense and untranslated region (UTR) variants.",
+      "claim_type": "EXPLICIT",
+      "source": "They also alter gene expression more dramatically than missense and untranslated region (UTR) variants (GTEx Consortium et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to GTEx Consortium et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "bce9991f-9ec1-49c0-8d82-0fb5b74a63d9",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C18",
+      "claim": "Ultra-rare PTVs are usually eliminated by purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultra-rare PTVs are usually eliminated by purifying selection, but the small effective population size of humans means that they are present in all human genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established evolutionary genetics knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "51b368dc-0fcf-4962-90ed-c58d15142c18",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C19",
+      "claim": "The small effective population size of humans means that ultra-rare PTVs are present in all human genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultra-rare PTVs are usually eliminated by purifying selection, but the small effective population size of humans means that they are present in all human genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established evolutionary genetics knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "9cbf0eec-4e45-4466-9bec-4bf5c54630e6",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C20",
+      "claim": "Increased rare PTV burden was associated with complex diseases, such as schizophrenia, epilepsy and autism.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased rare PTV burden was associated with complex diseases, such as schizophrenia, epilepsy and autism (Leu et al., 2015; Singh et al., 2017; Ji et al., 2016), whereas individual genetic variants exhibited small effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Leu et al., 2015; Singh et al., 2017; Ji et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "0cf46ab5-f134-4ca1-936d-864557c53051",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C21",
+      "claim": "The burden of rare PTVs in genes intolerant to such variants was negatively associated with years of schooling (academic attainment).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a negative association with years of schooling (academic attainment) and a positive association with intellectual disability, autism, schizophrenia and bipolar disorder (Ganna et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ganna et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "e8bfbbd8-60b6-497d-9870-78f47b0f0cdd",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C22",
+      "claim": "The burden of rare PTVs in genes intolerant to such variants was positively associated with intellectual disability, autism, schizophrenia and bipolar disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a negative association with years of schooling (academic attainment) and a positive association with intellectual disability, autism, schizophrenia and bipolar disorder (Ganna et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ganna et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "efacc3a8-9bdb-4679-bc93-3c1af5a02aee",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C23",
+      "claim": "The age at enrollment was negatively correlated with the burden of PI-PTVs, suggesting a possible association with lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the age at enrollment was also negatively correlated with the burden of PI-PTVs, suggesting a possible association with lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from data reported by Ganna et al., 2018",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "7c4c73d9-43dd-46b7-b219-bbeddea797a9",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C24",
+      "claim": "The UKB cohort included 40,368 individuals who self-reported 'White British' and were of close genetic ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected a cohort of 40,368 individuals from UKB with sequenced exomes who self-reported 'White British' and were of close genetic ancestry based on a principal component analysis of their genotypes (Bycroft et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "c0de61a5-1eca-4d2f-acbe-c80c5068ffe3",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C25",
+      "claim": "Of the UKB cohort, 21,742 (54%) were males with mean age of 58.1 years (SD = 7.9, age range 40.2 \u2212 70.6).",
+      "claim_type": "EXPLICIT",
+      "source": "Of those, 21,742 (54%) were males with mean age of 58.1 years (SD = 7.9, age range 40.2 \u2212 70.6) and 18,626 (46%) were females with mean age of 57 years (SD = 7.8, age range 40.1 \u2212 70.4) at the time of assessment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study cohort demographics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "758e1721-3aa4-4096-bac1-eeac57732146",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C26",
+      "claim": "Of the UKB cohort, 18,626 (46%) were females with mean age of 57 years (SD = 7.8, age range 40.1 \u2212 70.4) at the time of assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "Of those, 21,742 (54%) were males with mean age of 58.1 years (SD = 7.9, age range 40.2 \u2212 70.6) and 18,626 (46%) were females with mean age of 57 years (SD = 7.8, age range 40.1 \u2212 70.4) at the time of assessment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study cohort demographics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "3951fe3a-3b4e-4d63-b7e5-46598799db17",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C27",
+      "claim": "In the UKB cohort, 1,122 subjects died during the follow-up period of 11 years (2005 \u2212 2016), mostly of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UKB cohort, 1,122 subjects died during the follow-up period of 11 years (2005 \u2212 2016), mostly of cancer (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Table 2 showing causes of death",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "7821d54a-4087-478c-b1b9-1ca7a837c8fd",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C28",
+      "claim": "The UKBBN cohort included 1,105 deceased subjects of European origin after excluding cases of suicides, accidents, and cases of death with no abnormalities detected.",
+      "claim_type": "EXPLICIT",
+      "source": "The UKBBN cohort included 1,105 deceased subjects of European origin after we excluded cases of suicides, accidents, and cases of death with no abnormalities detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "314fabd5-7f76-4734-ad05-29e927cf8fbd",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C29",
+      "claim": "Of the UKBBN cohort, 489 (44%) were females with mean age of 71.2 years (SD = 18, age range 16 \u2212 103 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Of those, 489 (44%) were females with mean age of 71.2 years (SD = 18, age range 16 \u2212 103 years) and 616 (56%) were males with mean age of 67.7 years (SD = 17, age range 17 \u2212 105 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study cohort demographics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "4c07759e-2f4d-4668-ac23-0d3a91d91b1d",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C30",
+      "claim": "Of the UKBBN cohort, 616 (56%) were males with mean age of 67.7 years (SD = 17, age range 17 \u2212 105 years).",
+      "claim_type": "EXPLICIT",
+      "source": "Of those, 489 (44%) were females with mean age of 71.2 years (SD = 18, age range 16 \u2212 103 years) and 616 (56%) were males with mean age of 67.7 years (SD = 17, age range 17 \u2212 105 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of study cohort demographics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "67be7335-a468-44a3-826d-cbdc5c7f200b",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C31",
+      "claim": "Most participants in the UKBBN study were diagnosed with neurodegenerative diseases, for example Alzheimer's, Parkinson's, and Pick's diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Most participants in this study were diagnosed with neurodegenerative diseases, for example Alzheimer's, Parkinson's, and Pick's diseases (Keogh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Keogh et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "d0305517-bff2-46f6-82a5-839e55569fbd",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C37",
+      "claim": "The Cox regression coefficients were very similar in UKBBN and UKB datasets, indicating consistency of the effect across populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the Cox regression coefficients were very similar in UKBBN and UKB datasets, indicating consistency of the effect across populations despite differences in population structure and morbidity statistics (Table 2), tissue source (blood in UKB and brain in UKBBN), sequencing methods and variant calling pipelines (Keogh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of Cox regression results between two cohorts",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "ce8b7a5b-1bec-4d5b-8ac0-f24bdfc14625",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C38",
+      "claim": "A smaller but still significant effect of the ultra-rare PTV burden was observed on mothers' but not on fathers' age at death in UKB.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a smaller but still significant effect of the ultra-rare PTV burden on mothers' but not on fathers' age at death in UKB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Cox proportional hazards analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "f38bbb8c-4fe0-4122-a5ca-2c96e65d6518",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C39",
+      "claim": "The effect size on mother's age at death was smaller and less significant than that on the subject's healthspan and lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect size on mother's age at death was smaller and less significant than that on the subject's healthspan and lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of Cox regression coefficients",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "7809ea06-ab67-48b5-af40-62cdf83d8809",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C40",
+      "claim": "Association with age at death was similar between the sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Association with age at death was similar between the sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sex-stratified analysis shown in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "5ef73cb5-8e63-458e-82bd-63ed3aa47a07",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C41",
+      "claim": "The associations with healthspan and mother's age at death were almost entirely driven by women.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the associations with healthspan and mother's age at death were almost entirely driven by women.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sex-stratified analysis shown in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "bae6a372-ea2b-4e77-94cd-53a3b855a08e",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C45",
+      "claim": "Only stop gains were associated with mother's age at death among PTV types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only stop gains were associated with mother's age at death, and none of the categories were associated with father's age at death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Cox proportional hazards analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "50a1d10e-e62e-4bd9-b291-0730b3c5e5f6",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C46",
+      "claim": "None of the PTV categories were associated with father's age at death.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only stop gains were associated with mother's age at death, and none of the categories were associated with father's age at death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Cox proportional hazards analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "865efe23-fd9e-4ab0-a636-67525325bd2b",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C47",
+      "claim": "Synonymous variants showed no significant associations with lifespan phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control, we also included the effects of neutral variants - synonymous variants, which showed no significant associations with lifespan phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Cox proportional hazards analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "17116534-0380-4dd7-8180-e268d782476d",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C48",
+      "claim": "Ultra-rare PTVs affect 89% of the sequenced genes in the UKB dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultra-rare PTVs affect 89% of the sequenced genes in the UKB dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of variant distribution across genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "07c3b6b6-e980-40a0-b8d4-21923f7ac564",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C49",
+      "claim": "11% of sequenced genes in the UKB dataset had no ultra-rare PTVs observed, referred to as genes intolerant to rare PTVs (iPTV).",
+      "claim_type": "EXPLICIT",
+      "source": "No ultra-rare PTVs were observed in the remaining 11%, which we refer as genes intolerant to rare PTVs (iPTV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of variant distribution across genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "853edf5a-ae82-4811-af4b-2e22dfaced1a",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C50",
+      "claim": "iPTV genes, on average, were expressed in a higher number of tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "iPTV genes, on average, were expressed in a higher number of tissues (Figure 4a) and had higher indispensability scores (a metric to measure gene essentiality introduced by Khurana et al., 2013; Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "a619bcc9-a904-4ce9-8529-82c62c4def61",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C51",
+      "claim": "iPTV genes had higher indispensability scores.",
+      "claim_type": "EXPLICIT",
+      "source": "iPTV genes, on average, were expressed in a higher number of tissues (Figure 4a) and had higher indispensability scores (a metric to measure gene essentiality introduced by Khurana et al., 2013; Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "4b194ad5-22c2-4b81-bec2-4f861c9ccee3",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C52",
+      "claim": "iPTV genes in the UKB cohort are strongly enriched in genes intolerant to PTVs measured by pLI scores.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, iPTV genes in the UKB cohort are strongly enriched in genes intolerant to PTVs measured by pLI scores (Figure 4\u2014figure supplement 1b), confirming that genes intolerant to PTVs largely overlap between UKB and ExAC datasets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4\u2014figure supplement 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "11c8f7fb-73ad-434c-b564-a88996350d52",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C53",
+      "claim": "Genes intolerant to PTVs largely overlap between UKB and ExAC datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, iPTV genes in the UKB cohort are strongly enriched in genes intolerant to PTVs measured by pLI scores (Figure 4\u2014figure supplement 1b), confirming that genes intolerant to PTVs largely overlap between UKB and ExAC datasets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from comparison of pLI scores between datasets",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "278ea20a-eede-4ba7-b102-832b1d399540",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C54",
+      "claim": "Genes that harbored frequent PTVs had tissue-specific expressions and had lower indispensability scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, genes that harbored frequent PTVs had tissue-specific expressions and had lower indispensability scores, thus were less essential, in agreement with previously published results for ExAC cohort (Lek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis and citation to Lek et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "bafa8290-9aa4-4497-a888-0c16b5992af8",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C55",
+      "claim": "Ultra-rare stop gains were more likely to trigger nonsense-mediated mRNA decay (NMD) as predicted by snpEff by 50 base-pair rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultra-rare stop gains were more likely to trigger nonsense-mediated mRNA decay (NMD) (Figure 4c) as predicted by snpEff by 50 base-pair rule (Maquat, 2004) which was also demonstrated for the rare variants in GTEx dataset (Li et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4c and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "17508979-0e21-4939-8e51-8226c5029a3b",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C56",
+      "claim": "Subjects dying earlier harbored more damaging PTVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis confirmed the idea that subjects dying younger harbored more damaging PTVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis comparing gene characteristics between subjects with different lifespans",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "51ee3ad8-b3c2-4e4a-affc-cdf9af56f5cb",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C57",
+      "claim": "PTVs in shorter-lived subjects affect more broadly expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Those variants affect more broadly expressed genes, based on GTEx gene expression data (Figure 5c), and cause gene loss-of-function more frequently (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "ea230b20-4ffe-445f-8c00-3d1bbd5de476",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C58",
+      "claim": "PTVs in shorter-lived subjects cause gene loss-of-function more frequently.",
+      "claim_type": "EXPLICIT",
+      "source": "Those variants affect more broadly expressed genes, based on GTEx gene expression data (Figure 5c), and cause gene loss-of-function more frequently (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "6d5ccfd6-93c2-4e97-a355-9889b4dcb7ed",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C59",
+      "claim": "PTVs in shorter-lived subjects resided in genes less likely to maintain a wild-type phenotype when a single copy of the gene is inactivated, as evident by genome-wide haploinsufficiency score GHIS.",
+      "claim_type": "EXPLICIT",
+      "source": "PTVs in shorter-lived subjects also resided in genes less likely to maintain a wild-type phenotype when a single copy of the gene is inactivated, as evident by genome-wide haploinsufficiency score GHIS from Steinberg et al. (2015); Figure 5b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5b and citation to Steinberg et al. (2015)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "555a3ce0-f700-4d65-aded-c06950272cee",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C60",
+      "claim": "PTVs in shorter-lived subjects affected genes with stronger constraints against PTVs, based on the observed/expected LoF (oe, gnomAD v2.1) scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, these PTVs affected genes with stronger constraints against PTVs, based on the observed/expected LoF (oe, gnomAD v2.1) scores, suggesting that these genes harbored fewer PTVs than expected in the general population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of oe scores shown in Figure 5d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "b58d3c40-28ae-4e40-a8b8-75a5cac7199a",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C61",
+      "claim": "Percent of tissues expressing genes, oe scores and loss-of-function occurrence were all significantly associated with lifespan of subjects with 5 PTVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Percent of tissues expressing these genes, oe scores and loss-of-function occurrence were all significantly associated with lifespan of subjects with 5 PTVs (Figure 5a, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Cox proportional hazards analysis shown in Figure 5a inset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "72280cea-c3ba-4c1f-876f-97c46f94dfba",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C62",
+      "claim": "None of the genes reached statistical significance under FDR p-value cut-off of 0.05 in gene burden test for lifespan or healthspan.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, none of the genes reached statistical significance under FDR p-value cut-off of 0.05 (Supplementary file 1 and Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Fisher's exact test for gene burden analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "110afb31-df56-4152-8574-55013ed7ce34",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C63",
+      "claim": "110 genes were prone to ultra-rare PTVs in the UKB cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the number of PTVs and synonymous variants per gene, to the overall number of those variants, we found 110 genes that were prone to ultra-rare PTVs, as well as 188 genes intolerant to those variants (Supplementary file 3, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Fisher's exact test comparing PTVs and synonymous variants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "cea49ee4-1c8e-4691-b9cf-36a9e3cc8ad0",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C64",
+      "claim": "188 genes were intolerant to ultra-rare PTVs in the UKB cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the number of PTVs and synonymous variants per gene, to the overall number of those variants, we found 110 genes that were prone to ultra-rare PTVs, as well as 188 genes intolerant to those variants (Supplementary file 3, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on Fisher's exact test comparing PTVs and synonymous variants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "325289f5-96bf-4fa3-9321-6fd5870d505a",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C65",
+      "claim": "Genes prone to ultra-rare PTVs in UKB showed high oe scores in gnomAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimations were in agreement with oe scores provided by gnomAD. As expected, genes prone to ultra-rare PTVs in UKB showed high oe scores in gnomAD, while genes intolerant to those variants had low oe scores (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison with gnomAD data shown in Figure 4\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "78911578-1819-4bba-ae93-77d85aa9c0d7",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C66",
+      "claim": "Genes intolerant to ultra-rare PTVs in UKB had low oe scores in gnomAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimations were in agreement with oe scores provided by gnomAD. As expected, genes prone to ultra-rare PTVs in UKB showed high oe scores in gnomAD, while genes intolerant to those variants had low oe scores (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison with gnomAD data shown in Figure 4\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "c473f8e9-6279-4b68-9d0b-77e62c19a1db",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C69",
+      "claim": "The estimated effect of somatic PTV accumulation is minor in comparison to the effect of germline PTV burden.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated effect of somatic PTV accumulation is minor in comparison to the effect of germline PTV burden, and can account only for a minute fraction of mortality and morbidity acceleration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of calculated somatic and germline PTV effects",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "167c7ec6-7adf-489c-ace7-a20aa369ff6c",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C70",
+      "claim": "Somatic PTV accumulation can account only for a minute fraction of mortality and morbidity acceleration.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated effect of somatic PTV accumulation is minor in comparison to the effect of germline PTV burden, and can account only for a minute fraction of mortality and morbidity acceleration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on calculation comparing somatic mutation accumulation to Gompertz mortality acceleration",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "c7ee30ef-33bf-40fc-beb8-a1fdaf280294",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C71",
+      "claim": "Both lifespan and healthspan are negatively impacted by the burden of rarest variants that disrupt genes and are already present at birth.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that both lifespan and healthspan are negatively impacted by the burden of rarest variants that disrupt genes and are already present at birth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on Cox proportional hazards analysis of germline PTVs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "5353fe41-f726-4234-a470-0cae79600ae0",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C72",
+      "claim": "The genetic component of lifespan is shaped by two mutation types: common variants and ultra-rare PTVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, we find that the genetic component of lifespan is shaped by two mutation types: common variants, as found by previous studies, and ultra-rare PTVs, as shown here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on integration of current findings with previous GWAS studies",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "73e0f6ea-bce6-4d46-8a10-e7472ba2dd28",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C73",
+      "claim": "The association of ultra-rare PTV mutations with healthspan reflects the effect of deleterious gene variants on the incidence of the first chronic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of ultra-rare PTV mutations with healthspan, however, reflects the effect of deleterious gene variants on the incidence of the first chronic disease and thus covers the accumulated effect of genotype on health and survival over a much longer time, effectively from birth up to the age of enrollment/death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on interpretation of healthspan definition and analysis results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "0d018286-6c6e-46d6-bd73-ec7c7b84ede4",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C74",
+      "claim": "The association of ultra-rare mutation burden and lifespan is consistent between the UKB and UKBBN cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of ultra-rare mutation burden and lifespan is consistent between the UKB and UKBBN cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of Cox regression results between cohorts",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "790fe0c8-3dbb-45c5-9e82-bab76404ce3f",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C75",
+      "claim": "UKB subjects exhibit lower mortality and hence are probably healthier than the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, UKB subjects exhibit lower mortality and hence are probably healthier than the general population (Ganna and Ingelsson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ganna and Ingelsson, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "b1ae3173-1d44-43b8-9f2a-5086e9e95dae",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C76",
+      "claim": "The association of ultra-rare mutations and lifespan traits is a general feature that applies to the UK population.",
+      "claim_type": "EXPLICIT",
+      "source": "It, therefore, appears that the association of ultra-rare mutations and lifespan traits is a general feature that applies to the UK population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from consistency of results across UKB and UKBBN cohorts",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "f0f6c005-9bad-4118-ab1d-95e393e7d949",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C77",
+      "claim": "There is an open question whether the findings are translatable to the populations outside UK and Europe.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is still an open question whether our findings are translatable to the populations outside UK and Europe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about generalizability of findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "84ba9810-8296-4b38-b901-04d49bc49459",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C78",
+      "claim": "A genetic correlation between longevity and father's age at death was reported to be one of the strongest.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, a genetic correlation between longevity and father's age at death was reported to be one of the strongest (Deelen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Deelen et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "6dc18d60-5fe2-47d8-82d2-5d036752c3cc",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C79",
+      "claim": "Ultra-rare PTV burden may be more relevant for lifespan than for longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "One of explanations would be that ultra-rare PTV burden is more relevant for lifespan than for longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation to explain lack of association with father's age at death",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "c516ac5b-804a-4a71-85b8-8ab35c1b936c",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C80",
+      "claim": "Men had a much shorter healthspan compared to women (Cox ph beta = 0.16, p-value=1.55E-18).",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, men had a much shorter healthspan compared to women (Cox ph beta = 0.16, p-value=1.55E-18).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Cox proportional hazards analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "09996ec0-1a07-48a3-98ce-51b983e743d1",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C81",
+      "claim": "The genetic component, represented by ultra-rare PTVs, may play a less important role in male healthspan due to lifestyle choices such as smoking, drinking, risky behavior and unhealthy diet.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the genetic component, represented here by ultra-rare PTVs, may play a less important role in male healthspan due to the lifestyle choices such as smoking, drinking, risky behavior and unhealthy diet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis to explain sex-specific effects",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "15a8a955-1cf4-4e05-9ca1-d5ccf81c5271",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C82",
+      "claim": "Men smoke more than women in UKB.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, men are known to smoke more (Peters et al., 2014), drink more, and exhibit higher BMI scores (Wills et al., 2017) than women in UKB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Peters et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "2853fdfb-1fb2-4f4d-be02-b49bdad6006d",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C83",
+      "claim": "Men drink more and exhibit higher BMI scores than women in UKB.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, men are known to smoke more (Peters et al., 2014), drink more, and exhibit higher BMI scores (Wills et al., 2017) than women in UKB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wills et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "bd20f395-5f6d-4312-b059-caf67191f072",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C84",
+      "claim": "No associations of X-chromosome PTV burden with either lifespan or healthspan were found in men.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no associations of X-chromosome PTV burden with either lifespan or healthspan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on Cox proportional hazards analysis of X-chromosome PTVs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "5260c96b-cbaf-4a0b-87c1-229f1b988f35",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C85",
+      "claim": "The number of PTVs per individual specifically on X chromosome is extremely low.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of PTVs per individual specifically on X chromosome is extremely low; thus, we may be out of power to pick up the difference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on observation of variant counts",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "15ac9ad2-b54c-4865-85f8-db02f6582ccf",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C86",
+      "claim": "1,496 genes are free of ultra-rare PTVs in the whole UKB population sequenced so far.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we observed a subset of 1,496 genes that are free of ultra-rare PTVs in the whole UKB population sequenced so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of variant distribution across genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "2aa0748c-2b95-4ab9-8b8d-f2cdee0425ad",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C87",
+      "claim": "Genes free of ultra-rare PTVs are more essential as evidenced by high indispensability scores and are expressed more broadly throughout the body.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes are more essential as evidenced by high indispensability scores and are expressed more broadly throughout the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of gene characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "be6d114d-3eff-4cce-ac52-4b870777436f",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C88",
+      "claim": "Disruption of genes free of ultra-rare PTVs could lead to either childhood or embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Their disruption could lead to either childhood or embryonic lethality, the time periods that are not covered by UKB as well as other public datasets, for example ExAC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on gene essentiality and absence of PTVs",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "e2f2a5cd-7a6a-4f0c-b9f8-5939def329b2",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C89",
+      "claim": "Common PTVs are expected to have a lower effect on fitness than ultra-rare PTVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, common PTVs are expected to have a lower effect on fitness, which would explain the lack of the association between the burden of common PTVs and lifespan phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on evolutionary principles and gene characteristics",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "87f62750-4135-47cd-bb3b-8fbb320e3d49",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C90",
+      "claim": "Ultra-rare PTVs are more damaging than common PTVs but not enough damaging to cause early life mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "It is apparent that the ultra-rare PTVs are more damaging than common PTVs but not enough damaging to cause early life mortality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison of variant characteristics and association results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "ddc1144f-f5c0-4096-b5f5-d7f2d246e607",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C91",
+      "claim": "The discrepancy in lifespan among individuals sharing same PTV number might be explained by differences in the rate of age-related damage accumulation, regulated by environment and genetic factors.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy might be explained by differences in the rate of age-related damage accumulation, regulated by environment and genetic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about factors contributing to lifespan variability",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "5e1fa052-a541-45f1-8f12-e7d3d723386c",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C92",
+      "claim": "The impact of a PTV on phenotype depends on the gene it disrupts and its position within the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the impact of a PTV on phenotype depends on the gene it disrupts and its position within the gene body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genetic knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "dd6dcaed-6cb8-4a36-b1d3-e3614d765d6c",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C93",
+      "claim": "Both the degree of damage caused by ultra-rare PTVs and the number of these variants are important factors influencing human lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both the degree of damage caused by ultra-rare PTVs and the number of these variants are important factors influencing human lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on analysis of PTV characteristics and lifespan associations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "16a7605e-97c1-45c1-b69f-4b9f65d47be1",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C94",
+      "claim": "The effect size of ultra-rare PTVs on lifespan was comparable to the effect of known longevity alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the effect size of ultra-rare PTVs on lifespan was comparable to the effect of known longevity alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of effect sizes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "dcf542c8-e30f-4c36-80c3-bfb98187da78",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C97",
+      "claim": "There is little evidence for a significant role of somatic mutations in aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we found little evidence for a significant role of somatic mutations in aging (Promislow and Tatar, 1998; Moorad and Promislow, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on calculation of somatic mutation effects",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "c8157db7-3fed-4ff8-a2b0-c3255a7b6d52",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C98",
+      "claim": "Somatic mutations may play a role through high-order effects, such as clonal expansion and cell competition, and hence amplify the effects of other forms of damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic mutations may, however, play a role through high-order effects, such as clonal expansion and cell competition, and hence amplify the effects of other forms of damage (Martincorena, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation supported by citation to Martincorena, 2019",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "3ddf777a-4f0b-446d-aa5a-5671cfa3c8c2",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C99",
+      "claim": "The effects of common variants earlier implicated in longevity and the effects of ultra-rare variants could help explain the apparent heritability of lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the effects of common variants earlier implicated in longevity and the effects of ultra-rare variants reported here could help explain the apparent heritability of lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion based on integration of current findings with previous studies",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "be7014b6-34f4-400a-a9ad-0faffcf0748f",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C100",
+      "claim": "A more recent study puts up a challenge to the 23-33% heritability conclusion and points to a much lower level of genetic determinism.",
+      "claim_type": "EXPLICIT",
+      "source": "A more recent study (Ruby et al., 2018) puts up a challenge to this conclusion and points to a much lower level of genetic determinism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ruby et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "3ab29c25-463a-4884-ac4d-9c70013b4f5e",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C101",
+      "claim": "Future investigations of the effects of ultra-rare genetic variants may turn to be crucial for quantitative understanding of lifespan heritability.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore expect that future investigations of the effects of ultra-rare genetic variants may turn to be crucial for quantitative understanding of lifespan heritability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about future research directions",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "57bd9969-89ee-4562-abe9-3255eeec6f9e",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C102",
+      "claim": "Aging is a systemic process resulting from the combined accumulation of age-related deleterious changes, none of which could cause aging on their own.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings strengthen the case for complexity of aging, wherein aging is a systemic process resulting from the combined accumulation of age-related deleterious changes, none of which could cause aging on their own (Gladyshev, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gladyshev, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "e83bdb8e-709b-45f9-a19e-1a901af8257c",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C103",
+      "claim": "The advantage of mutations in aging studies is that they can be quantified and their contribution estimated.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of mutations in aging studies, however, is that they can be quantified and their contribution estimated, which is something that is currently much more difficult to do for other forms of age-related damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of measurability of different types of age-related damage",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "292e2bdb-6cb9-40cd-93c2-a6353b8a7cdc",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C104",
+      "claim": "The first batch of UKB exome sequence group consists of 49,960 individuals who passed QC procedures by UKB.",
+      "claim_type": "EXPLICIT",
+      "source": "The first batch of UKB exome sequence group consists of 49,960 individuals who passed QC procedures by UKB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data source",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "d7852c88-3a67-4301-8515-75b98341a108",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C105",
+      "claim": "The exome sequencing cohort is enriched with samples with a higher rate of imaging and enhanced measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Exome sequencing cohort is enriched with samples with a higher rate of imaging and enhanced measurements such as retinal optical coherence tomography test, visual acuity, hearing test, and other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of cohort characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "df88e372-f2ef-4eb6-a096-a2b1285e60e7",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C106",
+      "claim": "The exome sequencing cohort is not biased on any health condition, disease or physical measurement results from the UKB population.",
+      "claim_type": "EXPLICIT",
+      "source": "This cohort is not biased on any health condition, disease or physical measurement results from the UKB population of almost 500,000 individuals (Hout et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hout et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "dcff2edd-82b3-44e1-b25e-8764ebda31a9",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C107",
+      "claim": "The Cox regression coefficient for males was 0.47 (95% CI 0.35\u20130.59) in UKB.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cox regression coefficients for males were 0.47 (95% CI 0.35\u20130.59) in UKB and 0.26 (95% CI 0.13\u20130.38) in UKBBN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Cox proportional hazards analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "a11e4875-9cfa-4b7c-923e-24a3971e09a6",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C108",
+      "claim": "The Cox regression coefficient for males was 0.26 (95% CI 0.13\u20130.38) in UKBBN.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cox regression coefficients for males were 0.47 (95% CI 0.35\u20130.59) in UKB and 0.26 (95% CI 0.13\u20130.38) in UKBBN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Cox proportional hazards analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "2b68d685-1456-45e7-8f03-9a7b45372b3a",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C109",
+      "claim": "Under constant mortality acceleration, the Cox regression coefficient for males would correspond to approximately 3 \u2212 5 years of difference in life expectancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Under constant mortality acceleration, this would correspond to approximately 3 \u2212 5 years of difference in life expectancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from Cox regression coefficients",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "24e9adf0-ff8c-40e0-9083-ee9fa8813d5a",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C110",
+      "claim": "Women in the UK live longer than men, although the gap between the sexes has decreased over time down to 3.7 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Women in the UK (the population relevant to this study) live longer than men, although the gap between the sexes has decreased over time down to 3.7 years (Sanders, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sanders, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "f0141dee-65f5-4653-9499-021e6a9df8e0",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C114",
+      "claim": "The incidence of major chronic diseases in UKB increases exponentially with age in accordance to Gompertz law.",
+      "claim_type": "EXPLICIT",
+      "source": "In Zenin et al. (2019), we observed that the incidence of major chronic diseases (such as Congestive Heart Failure (CHF), Myocardial Infarction (MI), Chronic Obstructive Pulmonary Disease (COPD), stroke, dementia, diabetes, cancer, and death) in UKB increases exponentially with age in accordance to Gompertz law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zenin et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "34fb63d6-eab8-4aea-a8d2-5e2fa063f2cb",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C115",
+      "claim": "28% of UKB participants were diagnosed with at least one of the selected diseases by the time of the first assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "As much as 28% of UKB participants were diagnosed with at least one of the selected diseases by the time of the first assessment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of UKB health records",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "e7246acc-31cc-499b-9f0c-70a0fa825b6a",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C116",
+      "claim": "Exome data consisted of 8,959,608 SNPs and short indels from human coding DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Exome data consisted of 8,959,608 SNPs and short indels from human coding DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "bf634085-3fde-4242-9721-a5ba8d9c7caf",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C118",
+      "claim": "152,790 and 11,393 SNPs and indels were identified as PTVs in UKB and UKBBN, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In downstream analysis we focused on protein-truncating variants annotated as: stop codon gained, frameshift variant, slice donor or splice acceptor site, this produced 152,790 and 11,393 SNPs and indels in UKB and UKBBN, correspondingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of variant annotation results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "9b4bc288-8b4e-4b99-a722-967fcd0844a9",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C119",
+      "claim": "Mortality in the UKB dataset reflects the progression rate of age-related chronic diseases in an individual.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the limited follow-up, mortality in the UKB dataset reflects the progression rate of age-related chronic diseases in an individual; that is if a subject is deceased, he/she most probably had one or more age-related disease at the time of enrollment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on follow-up period and disease prevalence",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "ef666e58-b494-4abd-8665-6ea81456844a",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C120",
+      "claim": "UKB subjects included in lifespan analysis are biased toward shorter lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, UKB subjects included in lifespan analysis are biased toward shorter lifespan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on comparison with general UK population",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "3f200a41-82a1-4797-925b-7692814c797f",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C121",
+      "claim": "A general UK population born at the same time as UKB subjects had a life expectancy at birth of 71 years.",
+      "claim_type": "EXPLICIT",
+      "source": "A general UK population born at the same time had a life expectancy at birth of 71 years which is much longer compared to the average lifespan of 57 years in the deceased UKB cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on demographic data",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "d6cfdbcc-5a67-49be-a937-f5f0e6bdecc8",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C122",
+      "claim": "UKBBN subjects had an average lifespan of 69 years.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, UKBBN subjects had an average lifespan of 69 years which is closer to the actual lifespan in the UK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of UKBBN cohort",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "f34f3466-f34a-44c1-970b-490d148d1eba",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C123",
+      "claim": "UKBBN subjects were born in the period spanning the whole century from 1891 to 1996.",
+      "claim_type": "EXPLICIT",
+      "source": "However, subjects in the UKBBN cohort were born in the period spanning the whole century from 1891 to 1996.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of cohort characteristics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "ed559769-9a26-43dd-bf7b-3b2ea183848a",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C124",
+      "claim": "Deleterious alleles might accumulate in recent generations due to advances in medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "As one would expect, deleterious alleles might accumulate in recent generations due to advances in medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on evolutionary reasoning",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "8de83213-2fef-4274-979d-3023682e719e",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "claim_id": "C125",
+      "claim": "The UKBBN cohort may be enriched for individuals prone to diseases and death at any given age.",
+      "claim_type": "EXPLICIT",
+      "source": "By the nature of its design, the UKBBN cohort may be enriched for individuals prone to diseases and death at any given age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on cohort design (brain bank)",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "44ee5acf-8670-4e5c-9e93-18581875bdf4",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ultra-rare PTV burden (MAF<0.0001) is negatively associated with lifespan and healthspan in two independent cohorts (UKB and UKBBN), accounting for approximately 1.3 and 0.4 years of variability respectively. The effect is consistent across cohorts despite methodological differences, with Cox regression coefficients of 0.046 and 0.014 per mutation for lifespan and healthspan in UKB. Sex-specific effects were observed, with associations for healthspan and mother's age at death driven primarily by women.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C37, C107-C109 provide consistent Cox regression coefficients across two independent cohorts with different characteristics (UKB and UKBBN), demonstrating reproducibility. The statistical significance is strong (p<0.001 for most associations), sample sizes are large (>40,000 in UKB, >1,000 in UKBBN), and appropriate covariates were included. The sex-stratified analysis (C40-C41, Table 3) is properly conducted and shows differential effects by sex, which is biologically plausible given known sex differences in longevity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "d2f9d759-4356-4ad3-823d-efc5002908db",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Among individuals with the same number of ultra-rare PTVs, those with shorter lifespans harbor more damaging variants affecting broadly expressed genes, genes with higher haploinsufficiency scores (GHIS), genes with stronger constraints against PTVs (lower oe scores), and variants more likely to cause loss-of-function. Both the number and quality of PTVs influence lifespan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 are supported by systematic comparison of gene characteristics in individuals with identical PTV counts (5 PTVs, n=171) but different lifespans, shown in Figure 5. The analysis controls for PTV number, isolating the effect of variant quality. Multiple independent metrics (tissue expression breadth, GHIS, oe scores, LOF prediction) all show consistent directional effects with statistical significance (Figure 5a inset). This convergent evidence from multiple orthogonal measures strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "fed8d95d-8dc3-436a-ba11-c6854407cfbc",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Somatic accumulation of PTVs accounts for only a small fraction of mortality and morbidity acceleration and is unlikely to be causal in aging. The estimated somatic PTV burden contribution (\u03b2\u00d7\u03bb\u00d7L\u00d7R \u2248 4.6\u00d710\u207b\u2076 per year) is negligible compared to the Gompertz mortality acceleration (\u0393 \u2248 0.09 per year).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C69-C70, C97 present a quantitative calculation comparing somatic mutation accumulation rates to observed mortality acceleration. The calculation uses established mutation rates (R\u224810\u207b\u2078 per bp per year from Milholland et al., 2017), genome size, and the empirically derived Cox coefficient. The ~20,000-fold difference between somatic contribution and Gompertz acceleration provides strong quantitative evidence. However, C98 appropriately notes this analysis doesn't account for clonal expansion or other higher-order effects, which is an important caveat.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "bdcaea03-e14c-455a-8555-099717ef0567",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ultra-rare PTVs affect 89% of sequenced genes in UKB, while 11% (1,496 genes) are completely free of such variants. These PTV-intolerant genes are more essential (higher indispensability scores), more broadly expressed, and strongly enriched for high pLI scores, suggesting their disruption may cause embryonic or childhood lethality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53, C86-C88 are supported by systematic analysis of variant distribution across genes with multiple lines of evidence. The enrichment of iPTV genes in high pLI scores (Figure 4\u2014figure supplement 1b) validates the UKB findings against the independent ExAC dataset. The higher tissue expression breadth (Figure 4a) and indispensability scores (Figure 4b) are statistically significant with appropriate tests (Wilcoxon rank-sum). The inference about embryonic/childhood lethality (C88) is reasonable given the gene characteristics and absence of PTVs, though it remains an inference rather than direct observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "c64fcf09-5aef-48fa-957d-86a9099ddbc4",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genes harboring frequent PTVs have tissue-specific expression and lower essentiality scores. Ultra-rare stop gains are more likely to trigger nonsense-mediated decay (NMD) than common variants. Ultra-rare PTVs are more damaging than common PTVs but not sufficiently damaging to cause early-life mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are supported by data in Figure 4c showing NMD prediction differences across MAF bins, with appropriate statistical testing (Fisher's exact test). The comparison with ExAC data (Lek et al., 2016) provides external validation. Claims C89-C90 represent reasonable inferences from the data showing no association of common PTV burden with lifespan phenotypes (Figure 1) combined with the gene characteristic analyses. The evolutionary logic is sound: variants causing early mortality would be eliminated from the population.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "92a2f0ee-1a03-4401-ade2-18fccd22b1d4",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Among PTV subtypes, stop gains, splice donors, and frameshifts show significant associations with lifespan and healthspan, with only stop gains associated with mother's age at death. No PTV categories were associated with father's age at death. Synonymous variants (negative control) showed no associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by Cox proportional hazards analysis shown in Figure 3. The inclusion of synonymous variants as a negative control (C47) strengthens the interpretation that the observed effects are specific to protein-truncating variants rather than artifacts of sequencing or analysis. The differential associations across phenotypes (mother's vs father's age at death) are intriguing but appropriately reported as observed patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "b3ed0e64-8544-4d1c-b594-11f6aa9728b7",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Gene burden analysis identified 110 genes prone to ultra-rare PTVs and 188 genes intolerant to such variants in UKB, with patterns consistent with gnomAD oe scores. However, no individual genes reached statistical significance (FDR<0.05) for association with lifespan or healthspan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C66 accurately report the results of Fisher's exact tests for gene-level associations. The lack of individual gene significance (C62) after multiple testing correction is appropriately reported and suggests the effect is distributed across many genes rather than driven by specific loci. The validation against gnomAD oe scores (C65-C66, Figure 4\u2014figure supplement 4) provides external consistency, strengthening confidence in the gene classification approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study analyzed two cohorts: UKB (40,368 individuals, 54% male, mean age 58.1 years for males and 57 years for females, 1,122 deaths during 11-year follow-up) and UKBBN (1,105 deceased individuals, 56% male, mean age 67.7 years for males and 71.2 years for females). The UKB exome sequencing cohort was enriched for imaging/enhanced measurements but not biased on health conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C31, C104-C106 provide clear descriptions of cohort characteristics with specific numbers and demographics. The statement that the UKB exome cohort is not biased on health conditions (C106) is supported by citation to Hout et al., 2019. The cohort descriptions are internally consistent and provide sufficient detail for evaluating the study design. The differences between cohorts (age ranges, causes of death) are appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "d37cd950-e468-4d00-8552-b489d04d545b",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The association between ultra-rare mutation burden and lifespan is consistent across UKB and UKBBN cohorts, suggesting generalizability to the UK population. However, UKB subjects are biased toward shorter lifespan (mean 57 years vs. 71 years UK life expectancy) due to limited follow-up, while UKBBN spans multiple generations (1891-1996) and may be enriched for disease-prone individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C119-C125 appropriately acknowledge important limitations and potential biases in both cohorts. The consistency of effects across cohorts with different biases (C74, C37) actually strengthens the main findings. The authors transparently discuss how UKB mortality reflects disease progression rather than true lifespan (C119-C121) and how UKBBN's multi-generational span could introduce confounding (C123-C124). These are thoughtful considerations of study limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "e51d6d02-3b49-4468-ac5e-99446444e7a0",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Men had significantly shorter healthspan than women (Cox beta=0.16, p=1.55E-18), and the genetic effects of ultra-rare PTVs on healthspan were primarily driven by women. This may reflect greater influence of lifestyle factors (smoking, drinking, BMI) in men. No associations were found for X-chromosome PTV burden, possibly due to low statistical power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 are supported by statistical analysis (Table 3) and citations to prior work on sex differences in lifestyle factors. The hypothesis about lifestyle factors (C81) is reasonable speculation clearly presented as such. The X-chromosome analysis (C84-C85) appropriately acknowledges the power limitation due to low variant counts. The sex-specific effects are biologically plausible and add important nuance to the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "24cc9f98-b441-4af2-be14-5d78b7f556b5",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that rare damaging mutations (both inherited and accumulated) contribute to aging, and that ultra-rare variants combined with common alleles better explain lifespan heritability than common variants alone. The genetic component of lifespan is shaped by both common variants (from previous GWAS) and ultra-rare PTVs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C71-C72, C99 represent the main conclusions integrating the current findings with prior GWAS studies. The conclusion is supported by the demonstrated associations of ultra-rare PTVs with lifespan/healthspan (C2, C37) and the calculation showing somatic mutations are unlikely causal (C4, C69-C70). However, the claim that this 'better explains' heritability (C6, C99) is somewhat overstated\u2014the study shows ultra-rare variants contribute ~1.3 years of lifespan variability, but doesn't quantitatively demonstrate this resolves the missing heritability problem.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "d9e6e74a-d5c5-4b16-b153-e13a71b33943",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The effect size of ultra-rare PTVs on lifespan (approximately 0.5 years per mutation, or 3-5 years for the observed range of variation) is comparable to known longevity alleles such as APOE \u03b54 (1.24 years effect in women).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94 and C109 provide appropriate context by comparing effect sizes to established longevity variants. The calculation converting Cox coefficients to years of life expectancy is clearly explained and uses the Gompertz mortality rate. The comparison to APOE \u03b54 (citing Joshi et al., 2016) is apt and helps readers understand the magnitude of the observed effects. This is a reasonable and well-supported contextualization of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "63b8a1ea-3b91-422d-9f98-a3dd1740914b",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Several open questions remain: generalizability beyond UK/European populations, the relationship between PTV burden and longevity (vs. lifespan), the role of environmental factors in lifespan variability among individuals with similar PTV burden, and potential higher-order effects of somatic mutations through clonal expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79, C91-C92, C98, C100-C101 appropriately identify limitations and future directions. These are presented as speculation or open questions rather than definitive conclusions. The discussion of father's age at death (C78-C79) acknowledges an unexpected null result and proposes testable hypotheses. The mention of clonal expansion (C98) appropriately qualifies the somatic mutation analysis. These represent thoughtful consideration of what the study does and doesn't establish.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "c88d9b87-da70-437b-8209-d9e33333eae6",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes prior knowledge: lifespan heritability is 23-33% from twin studies; GWAS identified APOE and other loci associated with longevity; common variants explain only a small fraction of lifespan variation; ultra-rare PTVs are enriched for damaging alleles and associated with complex diseases; and prior work suggested possible association with lifespan based on age at enrollment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C23 summarize established prior work with appropriate citations. These background claims are well-supported by the cited literature and provide necessary context for the current study. The progression from twin studies (C1) to GWAS limitations (C7-C10) to properties of rare variants (C11-C19) to prior disease associations (C20-C23) logically motivates the current investigation. The citations appear appropriate and the characterizations of prior work are accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    },
+    {
+      "id": "cade8461-ec78-49b0-8cab-f5c6c8eacd9c",
+      "content_id": "9a9285ae-07fd-4491-9165-ed90871b2d7e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The findings support the complexity of aging as a systemic process resulting from combined accumulation of deleterious changes. Mutations have the advantage of being quantifiable compared to other forms of age-related damage. The study utilized 8,959,608 variants from exome sequencing, identifying 152,790 PTVs in UKB and 11,393 in UKBBN. Disease incidence in UKB follows Gompertz law, with 28% of participants diagnosed with at least one chronic disease by first assessment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 represent appropriate interpretation of the findings in the context of aging theory, supported by citation to Gladyshev, 2016. Claims C110, C114-C115 provide demographic context supported by prior work (Sanders, 2017; Zenin et al., 2019). Claims C116, C118 describe the data analyzed. These are straightforward descriptive or contextual claims that are well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:18:43.361924Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "63c8f9a4-1dd3-4132-a4f7-5f74fc7b305f",
+      "result_id": "44ee5acf-8670-4e5c-9e93-18581875bdf4"
+    },
+    {
+      "claim_id": "d0305517-bff2-46f6-82a5-839e55569fbd",
+      "result_id": "44ee5acf-8670-4e5c-9e93-18581875bdf4"
+    },
+    {
+      "claim_id": "ce8b7a5b-1bec-4d5b-8ac0-f24bdfc14625",
+      "result_id": "44ee5acf-8670-4e5c-9e93-18581875bdf4"
+    },
+    {
+      "claim_id": "f38bbb8c-4fe0-4122-a5ca-2c96e65d6518",
+      "result_id": "44ee5acf-8670-4e5c-9e93-18581875bdf4"
+    },
+    {
+      "claim_id": "7809ea06-ab67-48b5-af40-62cdf83d8809",
+      "result_id": "44ee5acf-8670-4e5c-9e93-18581875bdf4"
+    },
+    {
+      "claim_id": "5ef73cb5-8e63-458e-82bd-63ed3aa47a07",
+      "result_id": "44ee5acf-8670-4e5c-9e93-18581875bdf4"
+    },
+    {
+      "claim_id": "dcff2edd-82b3-44e1-b25e-8764ebda31a9",
+      "result_id": "44ee5acf-8670-4e5c-9e93-18581875bdf4"
+    },
+    {
+      "claim_id": "a11e4875-9cfa-4b7c-923e-24a3971e09a6",
+      "result_id": "44ee5acf-8670-4e5c-9e93-18581875bdf4"
+    },
+    {
+      "claim_id": "2b68d685-1456-45e7-8f03-9a7b45372b3a",
+      "result_id": "44ee5acf-8670-4e5c-9e93-18581875bdf4"
+    },
+    {
+      "claim_id": "4cbbc1e5-483f-47ce-a8bb-5f68908ff81f",
+      "result_id": "d2f9d759-4356-4ad3-823d-efc5002908db"
+    },
+    {
+      "claim_id": "17508979-0e21-4939-8e51-8226c5029a3b",
+      "result_id": "d2f9d759-4356-4ad3-823d-efc5002908db"
+    },
+    {
+      "claim_id": "51ee3ad8-b3c2-4e4a-affc-cdf9af56f5cb",
+      "result_id": "d2f9d759-4356-4ad3-823d-efc5002908db"
+    },
+    {
+      "claim_id": "ea230b20-4ffe-445f-8c00-3d1bbd5de476",
+      "result_id": "d2f9d759-4356-4ad3-823d-efc5002908db"
+    },
+    {
+      "claim_id": "6d5ccfd6-93c2-4e97-a355-9889b4dcb7ed",
+      "result_id": "d2f9d759-4356-4ad3-823d-efc5002908db"
+    },
+    {
+      "claim_id": "555a3ce0-f700-4d65-aded-c06950272cee",
+      "result_id": "d2f9d759-4356-4ad3-823d-efc5002908db"
+    },
+    {
+      "claim_id": "b58d3c40-28ae-4e40-a8b8-75a5cac7199a",
+      "result_id": "d2f9d759-4356-4ad3-823d-efc5002908db"
+    },
+    {
+      "claim_id": "dd6dcaed-6cb8-4a36-b1d3-e3614d765d6c",
+      "result_id": "d2f9d759-4356-4ad3-823d-efc5002908db"
+    },
+    {
+      "claim_id": "fc0fc7b4-c0e7-4719-91cf-97eb413e9395",
+      "result_id": "fed8d95d-8dc3-436a-ba11-c6854407cfbc"
+    },
+    {
+      "claim_id": "c473f8e9-6279-4b68-9d0b-77e62c19a1db",
+      "result_id": "fed8d95d-8dc3-436a-ba11-c6854407cfbc"
+    },
+    {
+      "claim_id": "167c7ec6-7adf-489c-ace7-a20aa369ff6c",
+      "result_id": "fed8d95d-8dc3-436a-ba11-c6854407cfbc"
+    },
+    {
+      "claim_id": "dcf542c8-e30f-4c36-80c3-bfb98187da78",
+      "result_id": "fed8d95d-8dc3-436a-ba11-c6854407cfbc"
+    },
+    {
+      "claim_id": "17116534-0380-4dd7-8180-e268d782476d",
+      "result_id": "bdcaea03-e14c-455a-8555-099717ef0567"
+    },
+    {
+      "claim_id": "07c3b6b6-e980-40a0-b8d4-21923f7ac564",
+      "result_id": "bdcaea03-e14c-455a-8555-099717ef0567"
+    },
+    {
+      "claim_id": "853edf5a-ae82-4811-af4b-2e22dfaced1a",
+      "result_id": "bdcaea03-e14c-455a-8555-099717ef0567"
+    },
+    {
+      "claim_id": "a619bcc9-a904-4ce9-8529-82c62c4def61",
+      "result_id": "bdcaea03-e14c-455a-8555-099717ef0567"
+    },
+    {
+      "claim_id": "4b194ad5-22c2-4b81-bec2-4f861c9ccee3",
+      "result_id": "bdcaea03-e14c-455a-8555-099717ef0567"
+    },
+    {
+      "claim_id": "11c8f7fb-73ad-434c-b564-a88996350d52",
+      "result_id": "bdcaea03-e14c-455a-8555-099717ef0567"
+    },
+    {
+      "claim_id": "15ac9ad2-b54c-4865-85f8-db02f6582ccf",
+      "result_id": "bdcaea03-e14c-455a-8555-099717ef0567"
+    },
+    {
+      "claim_id": "2aa0748c-2b95-4ab9-8b8d-f2cdee0425ad",
+      "result_id": "bdcaea03-e14c-455a-8555-099717ef0567"
+    },
+    {
+      "claim_id": "be6d114d-3eff-4cce-ac52-4b870777436f",
+      "result_id": "bdcaea03-e14c-455a-8555-099717ef0567"
+    },
+    {
+      "claim_id": "278ea20a-eede-4ba7-b102-832b1d399540",
+      "result_id": "c64fcf09-5aef-48fa-957d-86a9099ddbc4"
+    },
+    {
+      "claim_id": "bafa8290-9aa4-4497-a888-0c16b5992af8",
+      "result_id": "c64fcf09-5aef-48fa-957d-86a9099ddbc4"
+    },
+    {
+      "claim_id": "e2f2a5cd-7a6a-4f0c-b9f8-5939def329b2",
+      "result_id": "c64fcf09-5aef-48fa-957d-86a9099ddbc4"
+    },
+    {
+      "claim_id": "87f62750-4135-47cd-bb3b-8fbb320e3d49",
+      "result_id": "c64fcf09-5aef-48fa-957d-86a9099ddbc4"
+    },
+    {
+      "claim_id": "bae6a372-ea2b-4e77-94cd-53a3b855a08e",
+      "result_id": "92a2f0ee-1a03-4401-ade2-18fccd22b1d4"
+    },
+    {
+      "claim_id": "50a1d10e-e62e-4bd9-b291-0730b3c5e5f6",
+      "result_id": "92a2f0ee-1a03-4401-ade2-18fccd22b1d4"
+    },
+    {
+      "claim_id": "865efe23-fd9e-4ab0-a636-67525325bd2b",
+      "result_id": "92a2f0ee-1a03-4401-ade2-18fccd22b1d4"
+    },
+    {
+      "claim_id": "72280cea-c3ba-4c1f-876f-97c46f94dfba",
+      "result_id": "b3ed0e64-8544-4d1c-b594-11f6aa9728b7"
+    },
+    {
+      "claim_id": "110afb31-df56-4152-8574-55013ed7ce34",
+      "result_id": "b3ed0e64-8544-4d1c-b594-11f6aa9728b7"
+    },
+    {
+      "claim_id": "cea49ee4-1c8e-4691-b9cf-36a9e3cc8ad0",
+      "result_id": "b3ed0e64-8544-4d1c-b594-11f6aa9728b7"
+    },
+    {
+      "claim_id": "325289f5-96bf-4fa3-9321-6fd5870d505a",
+      "result_id": "b3ed0e64-8544-4d1c-b594-11f6aa9728b7"
+    },
+    {
+      "claim_id": "78911578-1819-4bba-ae93-77d85aa9c0d7",
+      "result_id": "b3ed0e64-8544-4d1c-b594-11f6aa9728b7"
+    },
+    {
+      "claim_id": "7c4c73d9-43dd-46b7-b219-bbeddea797a9",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "c0de61a5-1eca-4d2f-acbe-c80c5068ffe3",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "758e1721-3aa4-4096-bac1-eeac57732146",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "3951fe3a-3b4e-4d63-b7e5-46598799db17",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "7821d54a-4087-478c-b1b9-1ca7a837c8fd",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "314fabd5-7f76-4734-ad05-29e927cf8fbd",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "4c07759e-2f4d-4668-ac23-0d3a91d91b1d",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "67be7335-a468-44a3-826d-cbdc5c7f200b",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "292e2bdb-6cb9-40cd-93c2-a6353b8a7cdc",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "d7852c88-3a67-4301-8515-75b98341a108",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "df88e372-f2ef-4eb6-a096-a2b1285e60e7",
+      "result_id": "a68a35db-8154-4ba8-9df2-b02f5043e5ab"
+    },
+    {
+      "claim_id": "0d018286-6c6e-46d6-bd73-ec7c7b84ede4",
+      "result_id": "d37cd950-e468-4d00-8552-b489d04d545b"
+    },
+    {
+      "claim_id": "790fe0c8-3dbb-45c5-9e82-bab76404ce3f",
+      "result_id": "d37cd950-e468-4d00-8552-b489d04d545b"
+    },
+    {
+      "claim_id": "b1ae3173-1d44-43b8-9f2a-5086e9e95dae",
+      "result_id": "d37cd950-e468-4d00-8552-b489d04d545b"
+    },
+    {
+      "claim_id": "9b4bc288-8b4e-4b99-a722-967fcd0844a9",
+      "result_id": "d37cd950-e468-4d00-8552-b489d04d545b"
+    },
+    {
+      "claim_id": "ef666e58-b494-4abd-8665-6ea81456844a",
+      "result_id": "d37cd950-e468-4d00-8552-b489d04d545b"
+    },
+    {
+      "claim_id": "3f200a41-82a1-4797-925b-7692814c797f",
+      "result_id": "d37cd950-e468-4d00-8552-b489d04d545b"
+    },
+    {
+      "claim_id": "d6cfdbcc-5a67-49be-a937-f5f0e6bdecc8",
+      "result_id": "d37cd950-e468-4d00-8552-b489d04d545b"
+    },
+    {
+      "claim_id": "f34f3466-f34a-44c1-970b-490d148d1eba",
+      "result_id": "d37cd950-e468-4d00-8552-b489d04d545b"
+    },
+    {
+      "claim_id": "ed559769-9a26-43dd-bf7b-3b2ea183848a",
+      "result_id": "d37cd950-e468-4d00-8552-b489d04d545b"
+    },
+    {
+      "claim_id": "8de83213-2fef-4274-979d-3023682e719e",
+      "result_id": "d37cd950-e468-4d00-8552-b489d04d545b"
+    },
+    {
+      "claim_id": "c516ac5b-804a-4a71-85b8-8ab35c1b936c",
+      "result_id": "e51d6d02-3b49-4468-ac5e-99446444e7a0"
+    },
+    {
+      "claim_id": "09996ec0-1a07-48a3-98ce-51b983e743d1",
+      "result_id": "e51d6d02-3b49-4468-ac5e-99446444e7a0"
+    },
+    {
+      "claim_id": "15a8a955-1cf4-4e05-9ca1-d5ccf81c5271",
+      "result_id": "e51d6d02-3b49-4468-ac5e-99446444e7a0"
+    },
+    {
+      "claim_id": "2853fdfb-1fb2-4f4d-be02-b49bdad6006d",
+      "result_id": "e51d6d02-3b49-4468-ac5e-99446444e7a0"
+    },
+    {
+      "claim_id": "bd20f395-5f6d-4312-b059-caf67191f072",
+      "result_id": "e51d6d02-3b49-4468-ac5e-99446444e7a0"
+    },
+    {
+      "claim_id": "5260c96b-cbaf-4a0b-87c1-229f1b988f35",
+      "result_id": "e51d6d02-3b49-4468-ac5e-99446444e7a0"
+    },
+    {
+      "claim_id": "e718f309-d12c-49c3-8388-f5e87cd71f79",
+      "result_id": "24cc9f98-b441-4af2-be14-5d78b7f556b5"
+    },
+    {
+      "claim_id": "eb4c6baf-b8a7-4781-bcb4-e81651523975",
+      "result_id": "24cc9f98-b441-4af2-be14-5d78b7f556b5"
+    },
+    {
+      "claim_id": "c7ee30ef-33bf-40fc-beb8-a1fdaf280294",
+      "result_id": "24cc9f98-b441-4af2-be14-5d78b7f556b5"
+    },
+    {
+      "claim_id": "5353fe41-f726-4234-a470-0cae79600ae0",
+      "result_id": "24cc9f98-b441-4af2-be14-5d78b7f556b5"
+    },
+    {
+      "claim_id": "3ddf777a-4f0b-446d-aa5a-5671cfa3c8c2",
+      "result_id": "24cc9f98-b441-4af2-be14-5d78b7f556b5"
+    },
+    {
+      "claim_id": "16a7605e-97c1-45c1-b69f-4b9f65d47be1",
+      "result_id": "d9e6e74a-d5c5-4b16-b153-e13a71b33943"
+    },
+    {
+      "claim_id": "2b68d685-1456-45e7-8f03-9a7b45372b3a",
+      "result_id": "d9e6e74a-d5c5-4b16-b153-e13a71b33943"
+    },
+    {
+      "claim_id": "f0f6c005-9bad-4118-ab1d-95e393e7d949",
+      "result_id": "63b8a1ea-3b91-422d-9f98-a3dd1740914b"
+    },
+    {
+      "claim_id": "84ba9810-8296-4b38-b901-04d49bc49459",
+      "result_id": "63b8a1ea-3b91-422d-9f98-a3dd1740914b"
+    },
+    {
+      "claim_id": "6dc18d60-5fe2-47d8-82d2-5d036752c3cc",
+      "result_id": "63b8a1ea-3b91-422d-9f98-a3dd1740914b"
+    },
+    {
+      "claim_id": "ddc1144f-f5c0-4096-b5f5-d7f2d246e607",
+      "result_id": "63b8a1ea-3b91-422d-9f98-a3dd1740914b"
+    },
+    {
+      "claim_id": "5e1fa052-a541-45f1-8f12-e7d3d723386c",
+      "result_id": "63b8a1ea-3b91-422d-9f98-a3dd1740914b"
+    },
+    {
+      "claim_id": "c8157db7-3fed-4ff8-a2b0-c3255a7b6d52",
+      "result_id": "63b8a1ea-3b91-422d-9f98-a3dd1740914b"
+    },
+    {
+      "claim_id": "be7014b6-34f4-400a-a9ad-0faffcf0748f",
+      "result_id": "63b8a1ea-3b91-422d-9f98-a3dd1740914b"
+    },
+    {
+      "claim_id": "3ab29c25-463a-4884-ac4d-9c70013b4f5e",
+      "result_id": "63b8a1ea-3b91-422d-9f98-a3dd1740914b"
+    },
+    {
+      "claim_id": "2feacf1f-3f3c-413b-a6b3-1ea1f6b893b0",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "edc3e9c2-560f-4e30-8284-450e94518c6d",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "92d055bc-6741-4a62-adff-2c562a48c6af",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "fa500edc-beb6-4e4b-acdc-377d420789a4",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "5cc9f2a3-887b-4132-91d0-9122927b88e4",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "54fccb12-2ffc-4f62-868a-ff1c8a6b06db",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "e11c8a21-5d82-42dd-b003-e75a8ffe5f99",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "99b7d5d8-63c0-4f33-9681-1a0f9fd36078",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "0581c985-039d-441f-8b38-c9ae315c3132",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "547ada4a-39de-4cb3-9d09-1d10d8be41e3",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "8f59d894-7e06-4e8a-9d18-d6847628dc00",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "42d2318f-0604-41d4-8be6-359f2a479bd5",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "bce9991f-9ec1-49c0-8d82-0fb5b74a63d9",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "51b368dc-0fcf-4962-90ed-c58d15142c18",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "9cbf0eec-4e45-4466-9bec-4bf5c54630e6",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "0cf46ab5-f134-4ca1-936d-864557c53051",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "e8bfbbd8-60b6-497d-9870-78f47b0f0cdd",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "efacc3a8-9bdb-4679-bc93-3c1af5a02aee",
+      "result_id": "c88d9b87-da70-437b-8209-d9e33333eae6"
+    },
+    {
+      "claim_id": "57bd9969-89ee-4562-abe9-3255eeec6f9e",
+      "result_id": "cade8461-ec78-49b0-8cab-f5c6c8eacd9c"
+    },
+    {
+      "claim_id": "e83bdb8e-709b-45f9-a19e-1a901af8257c",
+      "result_id": "cade8461-ec78-49b0-8cab-f5c6c8eacd9c"
+    },
+    {
+      "claim_id": "24e9adf0-ff8c-40e0-9083-ee9fa8813d5a",
+      "result_id": "cade8461-ec78-49b0-8cab-f5c6c8eacd9c"
+    },
+    {
+      "claim_id": "f0141dee-65f5-4653-9499-021e6a9df8e0",
+      "result_id": "cade8461-ec78-49b0-8cab-f5c6c8eacd9c"
+    },
+    {
+      "claim_id": "34fb63d6-eab8-4aea-a8d2-5e2fa063f2cb",
+      "result_id": "cade8461-ec78-49b0-8cab-f5c6c8eacd9c"
+    },
+    {
+      "claim_id": "e7246acc-31cc-499b-9f0c-70a0fa825b6a",
+      "result_id": "cade8461-ec78-49b0-8cab-f5c6c8eacd9c"
+    },
+    {
+      "claim_id": "bf634085-3fde-4242-9721-a5ba8d9c7caf",
+      "result_id": "cade8461-ec78-49b0-8cab-f5c6c8eacd9c"
+    }
+  ],
+  "comparisons": []
+}

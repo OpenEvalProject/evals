@@ -1,0 +1,1756 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Locomotion of fruit flies was measured 3 min before an odor (apple cider vinegar or ACV) was turned on, and 3 min during the presence of ACV.",
+    "claim_type": "EXPLICIT",
+    "source": "Briefly, locomotion of each of the 34 flies in our dataset was measured 3 min before an odor (apple cider vinegar or ACV) was turned on, and 3 min during the presence of ACV.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly describes the experimental protocol for measuring fly locomotion before and during odor exposure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The dataset contains 34 flies.",
+    "claim_type": "EXPLICIT",
+    "source": "Briefly, locomotion of each of the 34 flies in our dataset was measured 3 min before an odor (apple cider vinegar or ACV) was turned on, and 3 min during the presence of ACV.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript explicitly states the number of flies in the dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The circular arena has a radius of 3.2 cm.",
+    "claim_type": "EXPLICIT",
+    "source": "Tracks of an example fly in a circular arena (3.2 cm in radius).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The arena dimensions are stated in the figure caption and shown in Figure 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "The central odor-zone has a radius of 1.2 cm.",
+    "claim_type": "EXPLICIT",
+    "source": "The central region (1.2 cm radius) has no odor during the first 3 min (before period) and is odorized in the last 3 min (during odor).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The odor-zone dimensions are stated in the figure caption and shown in Figure 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "HMM was only modestly successful because it was never able to classify >70% of the tracks into one of the states with >85% confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "HMM was only modestly successful because it was never able to classify >70% of the tracks into one of the states with >85% confidence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the performance metric of the HMM model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The HHMM model has 10 high-level states and 5 low-level states for each high-level state.",
+    "claim_type": "EXPLICIT",
+    "source": "The model we chose has 10 HL states (Figure 2A) and 5 LL states for each HL state.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The model architecture is explicitly described in the text and shown in Figure 2A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The HHMM model was able to successfully assign an HL state (defined as >85% confidence) for >80% of the data points.",
+    "claim_type": "EXPLICIT",
+    "source": "The model was able to successfully assign an HL state (defined as >85% confidence) for >80% of the data points (Figure 2B, median 81%).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the performance metric of the HHMM model with reference to Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "An HMM with 50 states can only classify 68% of the data with >85% confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "In comparison, an HMM with 50 states can only classify 68% of the data with the same level of confidence.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript provides a comparison of HMM performance to HHMM performance.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "A single HHMM is an excellent fit for all the data suggesting that the behavior of wild-type flies is composed of similar components.",
+    "claim_type": "EXPLICIT",
+    "source": "Remarkably, a single HHMM is an excellent fit for all the data suggesting that the behavior of wild-type flies is composed of similar components.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the model fitting results to conclude that flies use similar behavioral components.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "In a Bayesian model comparison, HHMMs outperformed HMMs with the same number of states.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, in a Bayesian model comparison (see Materials and methods section 4), HHMMs outperformed HMMs with the same number of states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the results of a Bayesian model comparison.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "A two-level HHMM with 6 HL states and 4 LL states was compared to a single-level HMM with 24 states, and the null model (HMM) was rejected at p < 0.0001.",
+    "claim_type": "EXPLICIT",
+    "source": "We compared a two-level HHMM with 6 HL states and 4 LL states to a single-level HMM with the same number of states (4 \u00d7 6 = 24 states). We labeled the non-hierarchical model as the null model, and were able to reject the null model using Bayesian model comparison at p < 0.0001, implying that a hierarchical model is necessary.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the statistical comparison between HHMM and HMM models.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "The transition probability matrix for the HL states is sparse, with a vast majority of transitions from each HL state to 2-3 other HL states.",
+    "claim_type": "EXPLICIT",
+    "source": "The transition probability matrix is sparse \u2013 a vast majority of transitions from each HL state were to 2-3 other HL states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the structure of the transition probability matrix.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "47 out of 81 possible transitions between HL states have a non-zero probability.",
+    "claim_type": "EXPLICIT",
+    "source": "This gradual transition is not because flies cannot make large transitions due to biomechanical limitations because 47/81 1 possible transitions between HL states have a non-zero probability.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript quantifies the number of non-zero transitions in the model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "HL state 1 represents very slow walking with frequent changes in direction.",
+    "claim_type": "EXPLICIT",
+    "source": "HL state 1 represents very slow walking with frequent changes in direction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of HL state 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "In state 2, flies are either completely stopped or they walk at a speed about twice the speed of the fly in state 1; state 2 represents stop and start locomotion.",
+    "claim_type": "EXPLICIT",
+    "source": "In state 2, flies are either completely stopped or they walk at a speed about twice the speed of the fly in state 1; state 2 represents stop and start locomotion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of HL state 2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "States 1, 2, and 3 together represent slow locomotion.",
+    "claim_type": "EXPLICIT",
+    "source": "These three states together represent slow locomotion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript groups states 1-3 as representing slow locomotion.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "In states 4-7, flies are walking at a medium-speed.",
+    "claim_type": "EXPLICIT",
+    "source": "In states 4-7, flies are walking at a medium-speed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript categorizes states 4-7 as medium-speed states.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "States 8\u201310 are high-speed states.",
+    "claim_type": "EXPLICIT",
+    "source": "States 8\u201310 are high-speed states; each of these states is also characterized by their turn direction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript categorizes states 8-10 as high-speed states.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "During states 8 and 9, the fly turns right.",
+    "claim_type": "EXPLICIT",
+    "source": "During states 8 and 9, the fly turns right; the fly's speed is higher during state 9 than during state 8.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the turn direction for states 8 and 9.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "During state 10, the fly turns left.",
+    "claim_type": "EXPLICIT",
+    "source": "During state 10, the fly turns left.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the turn direction for state 10.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "States 9 and 10 are mirror-symmetric versions of each other.",
+    "claim_type": "EXPLICIT",
+    "source": "States 9 and 10 are mirror-symmetric versions of each other.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the relationship between states 9 and 10.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Flies spend 60% of time performing a locomotor feature for >300 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "Flies spend 60% of time performing a locomotor feature for >300 ms, and >10% of their time performing a single locomotor feature for >3 s (Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the duration statistics of locomotor features with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Flies spend >10% of their time performing a single locomotor feature for >3 s.",
+    "claim_type": "EXPLICIT",
+    "source": "Flies spend 60% of time performing a locomotor feature for >300 ms, and >10% of their time performing a single locomotor feature for >3 s (Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the duration statistics of locomotor features with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "In the absence of ACV, the fly spends 30% of its time in state 2.",
+    "claim_type": "EXPLICIT",
+    "source": "In the absence of ACV, the state occupancy inside and outside the odor-zone are quite similar: The fly spends 30% of its time in state 2 and roughly equal time in all other HL states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the state occupancy before odor exposure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Inside the odor-zone, in the presence of ACV, the fly spends more time in HL states 1 and 3 at the expense of time spent in HL states 7\u201310.",
+    "claim_type": "EXPLICIT",
+    "source": "Inside the odor-zone, in the presence of ACV, the fly spends more time in HL states 1 and 3 at the expense of time spent in HL states 7\u201310 (Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the odor-induced changes in state occupancy inside the odor-zone with reference to Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Outside the odor-zone, the fly spends more time in the high-speed states (HL states 8\u201310), with a decrease in the occupancy of HL state 2.",
+    "claim_type": "EXPLICIT",
+    "source": "Outside the odor-zone (Figure 5B), the fly spends more time in the high-speed states (HL states 8\u201310), with a decrease in the occupancy of HL state 2 (which includes stopping).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the odor-induced changes in state occupancy outside the odor-zone with reference to Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "Odors affect locomotion not by creating new locomotor features, but by altering the frequency with which existing locomotor features are used.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, these results showed that odors affect locomotion not by creating new locomotor features, but by altering the frequency with which existing locomotor features are used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the results to conclude that odors modulate the frequency of existing locomotor features.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The probability that a fly is in HL state 1 increases dramatically only at the edge of the odor-zone.",
+    "claim_type": "EXPLICIT",
+    "source": "The probability that a fly is in HL state 1 increases dramatically only at the edge of the odor-zone (Figure 6A), and not throughout the odor-zone where the odor concentration is uniform throughout, showing that the effect of odor on locomotion has a fine-grained spatial structure.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the spatial distribution of odor-induced changes in state 1 occupancy with reference to Figure 6A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The effect of odor on locomotion has a fine-grained spatial structure.",
+    "claim_type": "EXPLICIT",
+    "source": "The probability that a fly is in HL state 1 increases dramatically only at the edge of the odor-zone (Figure 6A), and not throughout the odor-zone where the odor concentration is uniform throughout, showing that the effect of odor on locomotion has a fine-grained spatial structure.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the spatial distribution of state changes to conclude that odor effects have fine-grained spatial structure.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "Increases in state 2 are largest in an annular region just inside the odor-zone.",
+    "claim_type": "EXPLICIT",
+    "source": "The fine-grained modulation of locomotion is observed in other states as well - increases in state 2 are largest in an annular region just inside the odor-zone and increases in state 3 are largest at the very center of the arena.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the spatial pattern of odor-induced changes in state 2 occupancy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "Increases in state 3 are largest at the very center of the arena.",
+    "claim_type": "EXPLICIT",
+    "source": "The fine-grained modulation of locomotion is observed in other states as well - increases in state 2 are largest in an annular region just inside the odor-zone and increases in state 3 are largest at the very center of the arena.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the spatial pattern of odor-induced changes in state 3 occupancy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The occupancy of state 8 increases uniformly across the entire chamber outside the odor-zone.",
+    "claim_type": "EXPLICIT",
+    "source": "Increases in the occupancy of state 8 are uniform across the entire chamber outside the odor-zone; in contrast, the occupancy of states 9 and 10 increases in the region close to the odor-zone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the spatial pattern of odor-induced changes in state 8 occupancy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The occupancy of states 9 and 10 increases in the region close to the odor-zone.",
+    "claim_type": "EXPLICIT",
+    "source": "Increases in the occupancy of state 8 are uniform across the entire chamber outside the odor-zone; in contrast, the occupancy of states 9 and 10 increases in the region close to the odor-zone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the spatial pattern of odor-induced changes in states 9 and 10 occupancy.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "A variety of different decoding techniques failed to decode the presence of ACV based on the distribution of HL states.",
+    "claim_type": "EXPLICIT",
+    "source": "Surprisingly, a variety of different decoding techniques failed to decode the presence of ACV based on the distribution of HL states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the failure of decoding approaches.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "Population decoding based on HL states did not perform any better than decoding based on the observables.",
+    "claim_type": "EXPLICIT",
+    "source": "Even more surprisingly, population decoding based on HL states did not perform any better than decoding based on the observables (Figure 7\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the comparison of decoding performance with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The distances between empirical flies are much larger than the distances between the synthetic flies.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with large fly-to-fly differences in behavior, we found that the distances between empirical flies are much larger than the distances between the synthetic flies (Figure 7A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the comparison of distances between empirical and synthetic flies with reference to Figure 7A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "It is statistically impossible (p < 10\u2212131) that the observed Euclidean distance represents variations around the same average fly.",
+    "claim_type": "EXPLICIT",
+    "source": "It is statistically impossible (p < 10\u2212131) that the observed Euclidean distance represents variations around the same average fly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the statistical test result for the hypothesis that flies represent variations around an average.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "X-means clustering showed that there are 4 clusters of flies based on their locomotion outside the odor-zone, before odor onset.",
+    "claim_type": "EXPLICIT",
+    "source": "X-means clustering (see Materials and methods section 6) showed that there are 4 clusters of flies based on their locomotion outside the odor-zone, before odor onset (Figure 7B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the results of X-means clustering with reference to Figure 7B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "A similar number of clusters was found in each of the four conditions (Before odor/inside odor-zone, during odor/inside odor-zone, before-outside and during-outside).",
+    "claim_type": "EXPLICIT",
+    "source": "Although the identity of flies that cluster together changed, a similar number of clusters was found in each of the four conditions (Before odor/inside odor-zone, during odor/inside odor-zone, before-outside and during-outside, Figure 7 and Figure 7\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the consistency of cluster numbers across conditions with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "X-means clustering on a set of 34 randomly sampled points from a uniform distribution in the probability simplex space found no clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, X-means clustering on a set of 34 randomly sampled points from a uniform distribution in the probability simplex space that the data reside in found no clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the control analysis to validate the clustering approach.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The Euclidean distances between synthetic flies drawn from the four different clusters were similar to the distances between empirical flies.",
+    "claim_type": "EXPLICIT",
+    "source": "The Euclidean distances between synthetic flies drawn from the four different clusters were similar to the distances between empirical flies (Figure 7B and Figure 7\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the comparison of distances for synthetic flies from clusters with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "Cluster two was distinct from the others because flies move at markedly slower speed and spent >60% of their time in State 2.",
+    "claim_type": "EXPLICIT",
+    "source": "Cluster two was distinct from the others because flies move at markedly slower speed and spent >60% of their time in State 2 (Figure 7D) during which the fly was often stopped.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 2 with reference to Figure 7D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Locomotion of flies in the largest cluster (cluster 1) was characterized by an alternation between medium- and slow-speed states.",
+    "claim_type": "EXPLICIT",
+    "source": "Locomotion of flies in the largest cluster (cluster 1) was characterized by an alternation between medium- and slow-speed states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Flies in cluster 1 employed states 5 and 7 with a high frequency while making radially inward forays into the center of the arena.",
+    "claim_type": "EXPLICIT",
+    "source": "Flies in this cluster employed states 5 and 7 with a high frequency while making radially inward forays into the center of the arena.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 1.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Flies in cluster 3 demonstrated behavior similar to cluster 1, except that the flies employed the slower medium-speed states (states 4 and 5).",
+    "claim_type": "EXPLICIT",
+    "source": "Similar behavior was observed in cluster 3, except that the flies employed the slower medium-speed states (states 4 and 5).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 3.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Flies in cluster four traversed the arena in concentric circles using the high-speed states (states 8\u201310).",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, the fourth cluster of flies demonstrated a different locomotor strategy. Flies in cluster four traversed the arena in concentric circles using the high-speed states (states 8\u201310).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 4.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Only a one-second chunk of data is sufficient for better than chance clustering.",
+    "claim_type": "EXPLICIT",
+    "source": "Only a one-second chunk of data is sufficient for better than chance clustering, and just 30 s of sampling is enough to accurately classify >85% of the flies into their respective clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the minimum data requirements for accurate clustering.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Just 30 s of sampling is enough to accurately classify >85% of the flies into their respective clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "Only a one-second chunk of data is sufficient for better than chance clustering, and just 30 s of sampling is enough to accurately classify >85% of the flies into their respective clusters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the minimum data requirements for accurate clustering.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Within the short timeframe of the experiments, the cluster assignments are stable.",
+    "claim_type": "EXPLICIT",
+    "source": "These analyses show that within the admittedly short timeframe of our experiments, the cluster assignments are stable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the stability analysis results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Behavior before odor onset is only weakly predictive of behavior during the presence of odor.",
+    "claim_type": "EXPLICIT",
+    "source": "Apart from the fly-to-fly variability, another reason why decoding based on the average fly fails is that the behavior of the fly before odor onset is only weakly predictive of its behavior during the presence of odor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the results to explain why decoding fails.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "There is a weak correlation between Euclidean distances between pair of flies in the before and during periods.",
+    "claim_type": "EXPLICIT",
+    "source": "This conclusion is supported by the weak correlation between Euclidean distances between pair of flies in the before and during periods (Figure 7\u2014figure supplement 5A and Figure 7\u2014figure supplement 5B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the correlation analysis with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Logistic regression based on individual flies to decode the presence or absence of odor based on HL state occupancy during a 1s-interval was able to classify odor-no odor at better than chance level for every single fly.",
+    "claim_type": "EXPLICIT",
+    "source": "Logistic regression based on individual flies to decode the presence or absence of odor based on HL state occupancy during a 1s-interval was able to classify odor-no odor at better than chance level for every single fly (Figure 8A, see Materials and methods section seven and Figure 8\u2014figure supplement 1 for details).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the results of individualized logistic regression with reference to figures.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Logistic regression using the HL states performed significantly better than did the observables.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, as expected, logistic regression using the HL states performed significantly better than did the observables (Figure 8B) which indicate that HL states are more predictive of the presence of ACV than the observables.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the comparison of logistic regression performance with reference to Figure 8B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "X-means clustering found five clusters inside the odor-zone and four clusters outside the odor-zone based on the change in state occupancy before and during odor.",
+    "claim_type": "EXPLICIT",
+    "source": "To evaluate whether a fly's response to ACV cluster into a small number of response types, we once again started with X-means clustering based on the change in state occupancy before and during odor. X-means clustering found five clusters inside the odor-zone and four clusters outside the odor-zone (Figure 8C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the results of X-means clustering on odor responses with reference to Figure 8C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "A fly's response to odors can be approximated as a choice between few response-types.",
+    "claim_type": "EXPLICIT",
+    "source": "Using these clusters as a starting point, we could reconfigure the clusters such that the logistic regression on flies in each cluster performed at a better than chance level for each fly in the cluster (Figure 8C, see Materials and methods section seven for details), thus implying that a fly's response to odors can be approximated as a choice between few response-types.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the clustering and logistic regression results to conclude that odor responses can be approximated by a few response types.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Flies in cluster 5 slow down inside the odor-zone, similar to the average fly.",
+    "claim_type": "EXPLICIT",
+    "source": "Flies in cluster 5, just like the average fly (in Figure 5), slow down inside the odor-zone.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 5 inside the odor-zone.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Flies in cluster 3 demonstrate a strategy similar to flies in cluster 5 except that ACV causes a large decrease in the time a fly spends in the medium-speed states rather than the high-speed states.",
+    "claim_type": "EXPLICIT",
+    "source": "Flies in cluster 3 also demonstrate a strategy similar to flies in cluster five except that ACV causes a large decrease in the time a fly spends in the medium-speed states rather than the high-speed states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 3 inside the odor-zone.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Flies in cluster 2 demonstrate a fundamentally different strategy in which there is a large decrease in state 2 in favor of states 1, 3 and 4.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to clusters 3 and 5 during which the fly slows down inside the odor-zone, flies in cluster two demonstrate a fundamentally different strategy in which there is a large decrease in state 2 in favor of states 1, 3 and 4.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 2 inside the odor-zone.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "For the flies in cluster 1, there is no dramatic change in state inside the odor-zone.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, for the flies in cluster 1, there is no dramatic change in state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 1 inside the odor-zone.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Different clusters show diametrically different effects of ACV on some HL states, with the most striking example being the opposing effects of the odor on HL state 2 occupancies.",
+    "claim_type": "EXPLICIT",
+    "source": "These different strategies represent diametrically different effects of ACV on some HL states \u2013 the most striking example is the opposing effects of the odor on HL state 2 occupancies in different clusters \u2013 a large decrease in cluster 2, and an increase in clusters 3 and 5.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the opposing effects of odor on state 2 occupancy across clusters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "Flies in cluster 1 outside the odor-zone decrease the time they spend in slow-states (state 1\u20132) and instead spend time in the fast states (states 8\u201310) resembling the behavior of the average fly.",
+    "claim_type": "EXPLICIT",
+    "source": "Flies in cluster 1 decrease the time they spend in slow-states (state 1\u20132) and instead spend time in the fast states (states 8\u201310) resembling the behavior of the average fly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 1 outside the odor-zone.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Cluster 2 outside the odor-zone shows a large decrease in HL state 2 occupancy while exhibiting a large increase in medium-speed states (state 4\u20136).",
+    "claim_type": "EXPLICIT",
+    "source": "Cluster 2) shows a large decrease in HL state 2 occupancy similar to the behavior of flies in inside odor-zone cluster 2 while exhibiting a large increase in medium-speed states (state 4\u20136).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 2 outside the odor-zone.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Cluster 3 outside the odor-zone showed no dramatic change in state.",
+    "claim_type": "EXPLICIT",
+    "source": "Cluster 3 showed no dramatic change in state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral characteristics of cluster 3 outside the odor-zone.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Fly locomotion is well-structured and an HHMM is an elegant representation of this structure.",
+    "claim_type": "EXPLICIT",
+    "source": "We show that fly locomotion is well-structured and an HHMM is an elegant representation of this structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes the main finding about the structure of fly locomotion.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "HHMM provides a simple and intuitive description of both a fly's locomotion and the effect of odors on the same.",
+    "claim_type": "EXPLICIT",
+    "source": "HHMM provides a simple and intuitive description of both a fly's locomotion and the effect of odors on the same.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes the utility of the HHMM model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Different flies employ different strategies in their locomotion both before odor onset and in response to odors.",
+    "claim_type": "EXPLICIT",
+    "source": "Surprisingly, different flies employ different strategies in their locomotion both before odor onset and in response to odors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes the finding about individual differences in fly behavior.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The data are inconsistent with the idea that the behavior of different flies represent variations around an 'average' fly.",
+    "claim_type": "EXPLICIT",
+    "source": "Our data are, thus, inconsistent with the idea that the behavior of different flies represent variations around an 'average' fly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the results to reject the average fly model.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The data are most consistent with the idea that flies employ three to five different strategies, at a minimum, to explore a small circular arena and a similar number in their response to odors.",
+    "claim_type": "EXPLICIT",
+    "source": "Rather, our data are most consistent with the idea that flies employ three to five different strategies, at a minimum, to explore a small circular arena and a similar number in their response to odors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the results to support the multiple strategies model.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "The actual radius of the odor-zone was 1.5 cm.",
+    "claim_type": "EXPLICIT",
+    "source": "The nominal radius of the odor-zone defined by the radius of the odor tube was 1.25 cm (Jung et al., 2015). However, because there was some spread of the odor outside the odor-zone, the actual radius of the odor-zone was 1.5cm (Jung et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the actual odor-zone radius, citing Jung et al., 2015.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "At most locations in the arena, the air speed was 0.07 m/s; the highest wind-speed was 0.11 m/s.",
+    "claim_type": "EXPLICIT",
+    "source": "At most locations in the arena, the air speed was 0.07 m/s; the highest wind-speed was 0.11 m/s (Jung et al., 2015), a value lower than has been employed in most studies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the air speed measurements in the arena, citing Jung et al., 2015.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Non-olfactory directional cues from vision or wind are minimized in the experimental setup.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, non-olfactory directional cues from vision or wind are minimized (Jung et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the experimental conditions to conclude that non-olfactory cues are minimized, citing Jung et al., 2015.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "There was no change in the distribution of the flies when wind was completely eliminated.",
+    "claim_type": "EXPLICIT",
+    "source": "Consistent with this idea, there was no change in the distribution of the flies when wind was completely eliminated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript reports the result of a control experiment eliminating wind.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The flies first detect odor slightly outside the odor-zone as defined in this study.",
+    "claim_type": "EXPLICIT",
+    "source": "The flies first detect odor slightly outside the odor-zone as defined in this study (Jung et al., 2015), and their behavior during the first 10 s after odor encounter differs from their behavior during the rest of the odor period (Figure 6\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the spatial extent of odor detection and temporal dynamics of behavior, citing Jung et al., 2015 and referencing a figure.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Fly behavior during the first 10 s after odor encounter differs from their behavior during the rest of the odor period.",
+    "claim_type": "EXPLICIT",
+    "source": "The flies first detect odor slightly outside the odor-zone as defined in this study (Jung et al., 2015), and their behavior during the first 10 s after odor encounter differs from their behavior during the rest of the odor period (Figure 6\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript reports the temporal dynamics of behavior after odor encounter with reference to a figure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "At least some of the spatial structure results from the change in the radial density of the fly as a function of time.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, at least some of the spatial structure results from the change in the radial density of the fly as a function of time (Figure 6\u2014figure supplement 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The manuscript interprets the spatial structure with reference to a figure showing radial density changes.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "A fly's interaction with odor is dynamic and HL states are a good analytical framework to extract the spatiotemporal patterning of fly's behavior by odor.",
+    "claim_type": "EXPLICIT",
+    "source": "A fly's interaction with odor is dynamic and that HL states are a good analytical framework to extract the spatiotemporal patterning of fly's behavior by odor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the results to conclude that HL states are useful for analyzing spatiotemporal patterns.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The spatiotemporal pattern of odor response likely differs among flies.",
+    "claim_type": "EXPLICIT",
+    "source": "This spatiotemporal pattern likely differs among flies; a full description of this pattern requires a larger dataset and represents an important avenue for future research.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript speculates about individual differences in spatiotemporal patterns and identifies a limitation of the current study.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "The model presented here is a model of locomotion and not the model of locomotion.",
+    "claim_type": "EXPLICIT",
+    "source": "The model presented here is a model of locomotion and not the model of locomotion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges the limitations of the model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "The choice of observables and model strongly influences the features of the structure that is discovered.",
+    "claim_type": "EXPLICIT",
+    "source": "The choice of observables and model strongly influences the features of the structure that is discovered.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript discusses the impact of modeling choices on results.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The particular model reveals the structure of locomotion in the velocity space.",
+    "claim_type": "EXPLICIT",
+    "source": "Our particular model reveals the structure of locomotion in the velocity space.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes what aspect of locomotion the model captures.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "The current model has state durations of <3 s.",
+    "claim_type": "EXPLICIT",
+    "source": "The current model has state durations of <3 s.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes a limitation of the current model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "There is structure in the data that is >3 s long.",
+    "claim_type": "EXPLICIT",
+    "source": "It is clear to human observers that there is structure in the data that is >3 s long.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges that longer timescale structure exists in the data.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "The short duration of states in the current model cannot capture structure on long timescales.",
+    "claim_type": "EXPLICIT",
+    "source": "The short duration of states in our model cannot capture structure on these long-time scales.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript identifies a limitation of the current model.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "If a deeper-layered architecture were used, structure on a longer timescale would likely be uncovered.",
+    "claim_type": "EXPLICIT",
+    "source": "Given the structured transitions between the HL states in our model, it is likely that if we used a deeper-layered architecture, we would likely uncover structure on a longer timescale.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript speculates about the potential of deeper models.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The HHMM presented here or the states revealed by it may not reflect the actual states employed by neurons in the brain.",
+    "claim_type": "EXPLICIT",
+    "source": "The HHMM presented here or the states revealed by it may not reflect the actual states employed by neurons in the brain.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges a limitation in interpreting the model in terms of neural mechanisms.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "There is an ongoing debate whether behavior and its control is better represented as a continuum than by discrete states.",
+    "claim_type": "EXPLICIT",
+    "source": "In fact, there is an ongoing debate whether behavior and its control is better represented as a continuum than by discrete states.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges a broader debate in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "The presence of long-lasting states that are employed repeatedly by all flies implies that either locomotion consists of transition between discrete states, or that these states represent fixed points or peaks of a dynamical system.",
+    "claim_type": "EXPLICIT",
+    "source": "The presence of long-lasting states that are employed repeatedly by all flies in our dataset implies that either locomotion does consists of transition between discrete states, or that these states represent fixed points or peaks of a dynamical system around which the animal spends most of its time (Berman, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the results in the context of different theoretical frameworks, citing Berman, 2018.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "All flies can be reasonably modeled by the same model, implying that within a given environment all flies construct their locomotion from the same building blocks.",
+    "claim_type": "EXPLICIT",
+    "source": "The fact that all flies can be reasonably modeled by the same model implies that within a given environment all flies construct their locomotion from the same building blocks, and differences in locomotion amongst flies or the effect of sensory stimulation can be quantified as changes in the frequency with which these building blocks are employed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the model fitting results to conclude that flies use the same locomotor building blocks.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Differences in locomotion amongst flies or the effect of sensory stimulation can be quantified as changes in the frequency with which locomotor building blocks are employed.",
+    "claim_type": "EXPLICIT",
+    "source": "The fact that all flies can be reasonably modeled by the same model implies that within a given environment all flies construct their locomotion from the same building blocks, and differences in locomotion amongst flies or the effect of sensory stimulation can be quantified as changes in the frequency with which these building blocks are employed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the model fitting results to describe how differences in behavior can be quantified.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "An important avenue for future research is to assess whether locomotor features are fixed or flexible.",
+    "claim_type": "EXPLICIT",
+    "source": "An important avenue for future research is to assess whether these locomotor features are fixed or flexible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript identifies a direction for future research.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "In nature, animals encounter odors in a cluttered and dynamic sensory environment.",
+    "claim_type": "EXPLICIT",
+    "source": "In nature, animals encounter odors in a cluttered and dynamic sensory environment (Riffell et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the natural context of odor encounters, citing Riffell et al., 2014.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Discriminating between odors, navigating towards the chosen odor source and pinpointing the odor source requires a flexible deployment of multiple different motor programs.",
+    "claim_type": "EXPLICIT",
+    "source": "Discriminating between odors, navigating towards the chosen odor source and pinpointing the odor source requires a flexible deployment of multiple different motor programs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the behavioral requirements for odor-guided navigation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Laboratory studies are typically aimed at different subsets of the complex environment experienced by animals.",
+    "claim_type": "EXPLICIT",
+    "source": "It is difficult to replicate the complex natural environment in the laboratory. Therefore, laboratory studies are typically aimed at different subsets of the complex environment experienced by animals.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript discusses the limitations of laboratory studies.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "The experiments described model an insect's behavior under one specific condition wherein the fly tries to locate an odor source at a distance using strong directional information from wind and vision.",
+    "claim_type": "EXPLICIT",
+    "source": "These experiments model an insect's behavior under one specific condition wherein the fly tries to locate an odor source at a distance using strong directional information from wind and vision.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the specific behavioral context modeled by previous studies.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The experiments described here explore a fly's behavior in a small, dark circular arena.",
+    "claim_type": "EXPLICIT",
+    "source": "The experiments described here explore a fly's behavior in a small, dark circular arena.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the experimental conditions of the current study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The HL state description is accurate enough to facilitate discovery of arena structure.",
+    "claim_type": "EXPLICIT",
+    "source": "This analysis shows that the HL state description is accurate enough to facilitate discovery of arena structure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the spatial analysis results to validate the HL state description.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The analysis misses some details because it averaged HL state distribution over the entire 3 min of odor exposure.",
+    "claim_type": "EXPLICIT",
+    "source": "However, because we averaged HL state distribution over the entire 3 min of odor exposure, the analysis misses some details.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges a limitation of the spatial analysis.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "A full description of the spatiotemporal pattern requires a larger dataset.",
+    "claim_type": "EXPLICIT",
+    "source": "This spatiotemporal pattern likely differs among flies; a full description of this pattern requires a larger dataset and represents an important avenue for future research.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript identifies a limitation and direction for future research.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Even single-cell organisms and animals with simple nervous systems display substantial individuality.",
+    "claim_type": "EXPLICIT",
+    "source": "Even single-cell organisms and animals with simple nervous systems display substantial individuality (Jordan et al., 2013; Gallagher et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites studies showing individuality in simple organisms.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "Animals with larger nervous systems are likely to display even greater individuality.",
+    "claim_type": "EXPLICIT",
+    "source": "Animals with larger nervous systems are likely to display even greater individuality, in the case of adult flies this individuality was demonstrated in the context of locomotor handedness (Buchanan et al., 2015) in a choice assay.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript infers that larger nervous systems lead to greater individuality and cites a study on fly handedness.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "The nature and extent of individuality is harder to assess in more complex behaviors because of the difficulty in assessing individuality in a large behavioral space.",
+    "claim_type": "EXPLICIT",
+    "source": "The nature and extent of individuality is harder to assess in more complex behaviors because of the difficulty in assessing individuality in a large behavioral space; differences in behavior can simply be different instantiation of the same behavior, or reflect fundamental differences in behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript discusses the challenges in assessing individuality in complex behaviors.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "Different flies employ the same locomotor features but use them in vastly different proportions.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, we find that different flies employ the same locomotor features but use them in vastly different proportions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript summarizes a key finding about individual differences.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "The observed variability between the flies is inconsistent with a single type of locomotor behavior but can be approximated by invoking 3\u20134 clusters of flies.",
+    "claim_type": "EXPLICIT",
+    "source": "The observed variability between the flies is inconsistent with a single type of locomotor behavior but can be approximated by invoking 3\u20134 clusters of flies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the clustering results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "X-means underestimates the number of clusters.",
+    "claim_type": "EXPLICIT",
+    "source": "Because the clustering framework we employed (X-means) underestimates the number of clusters, and because there were only 34 flies in our dataset, it remains to be seen whether there are a few locomotor-types or a whole continuum of locomotor-types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges a limitation of the clustering method.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "It remains to be seen whether there are a few locomotor-types or a whole continuum of locomotor-types.",
+    "claim_type": "EXPLICIT",
+    "source": "Because the clustering framework we employed (X-means) underestimates the number of clusters, and because there were only 34 flies in our dataset, it remains to be seen whether there are a few locomotor-types or a whole continuum of locomotor-types.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges uncertainty about the true number of locomotor types.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "The study has not yet ascertained whether a fly's behavior persists over a longer time frame.",
+    "claim_type": "EXPLICIT",
+    "source": "Another limitation of this study is that we have not yet ascertained whether a fly's behavior persists over a longer time frame.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript acknowledges a limitation regarding temporal persistence of behavior.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "The study develops a statistical framework to study complex behaviors.",
+    "claim_type": "EXPLICIT",
+    "source": "First, we develop a statistical framework to study complex behaviors.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes a methodological contribution.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "The study provides a framework for testing whether the description based on an average fly is appropriate.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, in many behavioral studies, researchers focus on the effect of some stimuli on behavior and make conclusions based on the average fly. In this study, we provide a framework for testing whether the description based on an average fly is appropriate, and ways to proceed if such an approach is inadequate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes a methodological contribution for assessing the validity of average fly analyses.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "The diversity of odor responses observed here is consistent with work done on moths.",
+    "claim_type": "EXPLICIT",
+    "source": "The diversity of odor responses observed here is consistent with work done on moths where (Willis and Arbas, 1998) but in sharp contrast to recent work on walking Drosophila (Bell and Wilson, 2016) in which the authors reported that attraction to odors results from a stereotypical motor pattern.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript compares the current findings to previous studies, citing Willis and Arbas, 1998 and Bell and Wilson, 2016.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "The diversity of odor responses is in sharp contrast to recent work on walking Drosophila in which attraction to odors results from a stereotypical motor pattern.",
+    "claim_type": "EXPLICIT",
+    "source": "The diversity of odor responses observed here is consistent with work done on moths where (Willis and Arbas, 1998) but in sharp contrast to recent work on walking Drosophila (Bell and Wilson, 2016) in which the authors reported that attraction to odors results from a stereotypical motor pattern.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript contrasts the current findings with a previous study, citing Bell and Wilson, 2016.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "In the presence of a steady wind cue in a narrow arena, it is likely that the flies' locomotor behavior is dominated by upwind walking and suppresses other elements of their behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Another possibility is that in their study there is a strong, directional wind cue. In the presence of a steady wind cue in a narrow arena, it is likely that the flies' locomotor behavior is dominated by upwind walking and suppresses other elements of their behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript speculates about the reasons for differences between studies.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "A fly's response to odor is strongly influenced by context.",
+    "claim_type": "EXPLICIT",
+    "source": "It is well-established that a fly's response to odor is strongly influenced by context, as was demonstrated recently by comparing the response to odors in different visual and air flow conditions (Saxena et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a study showing context-dependence of odor responses.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C119",
+    "claim": "A hungry fly in search of food should respond with a singular, hardwired behavior which represents an optimal strategy for locating food.",
+    "claim_type": "EXPLICIT",
+    "source": "When considered from the viewpoint of an individual animal, this variability is hard to understand: A hungry fly in search of food should respond with a singular, hardwired behavior which represents an optimal strategy for locating food.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript presents a naive expectation about individual behavior.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C120",
+    "claim": "A successful species should be able to adapt to fluctuating environmental condition.",
+    "claim_type": "EXPLICIT",
+    "source": "However, species evolve as large populations of individuals, and a successful species should be able to adapt to fluctuating environmental condition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript presents an evolutionary perspective on behavioral variability.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C121",
+    "claim": "Bet hedging - a process by which the same genotype shows considerable phenotypic variation - is important for adaptation to fluctuating environments.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent work has shown that - bet hedging - a process by which the same genotype shows considerable phenotypic variation is important for adaptation to fluctuating environments (Kain et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript cites a study on bet hedging as an adaptive strategy.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C122",
+    "claim": "Having a diversity of phenotypes ensures that some individuals would thrive in any condition and behavioral variability is a feature not a bug.",
+    "claim_type": "EXPLICIT",
+    "source": "Having a diversity of phenotypes ensures that some individuals would thrive in any condition and behavioral variability is a feature not a bug and its careful consideration is critical.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets behavioral variability as an adaptive feature.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C123",
+    "claim": "Analyzing behavior at the population level can provide important insights into an animal's response but does not provide the resolution necessary for understanding the neural mechanism underlying the moment-by-moment control of behavior at the level of individual flies.",
+    "claim_type": "EXPLICIT",
+    "source": "Studying individual behavioral responses is also important to understand the mechanism underlying both the control of locomotion and how odors control locomotion. Analyzing behavior at the population level can provide important insights into an animal's response but does not provide the resolution necessary for understanding the neural mechanism underlying the moment-by-moment control of behavior at the level of individual flies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript argues for the importance of individual-level analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C124",
+    "claim": "The average fly is an aggregate of different clusters of flies, each of which has a distinct response to odor.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the average fly is an aggregate of these different clusters of flies, each of which has a distinct response to odor.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript interprets the clustering results to explain the average fly behavior.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C125",
+    "claim": "Disaggregation is an essential first step to understanding neural control of behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Disaggregation is an essential first step to understanding neural control of behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript argues for the importance of analyzing individual differences.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C126",
+    "claim": "Flies were raised in a sparse culture.",
+    "claim_type": "EXPLICIT",
+    "source": "Briefly, flies were raised in a sparse culture.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the fly rearing conditions.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C127",
+    "claim": "Flies that were 3\u20135 days post-eclosion were starved for 14\u201318 hr.",
+    "claim_type": "EXPLICIT",
+    "source": "Flies that were 3\u20135 days post-eclosion were starved for 14\u201318 hr.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the experimental preparation of flies.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C128",
+    "claim": "Locomotion of a single fly was recorded at a rate of 30 frames per second.",
+    "claim_type": "EXPLICIT",
+    "source": "Locomotion of a single fly was recorded for a 3 min period before odor was introduced (before period) and a 3-min period during odor (during period), using a video camera at a rate of 30 frames per second.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the video recording parameters.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C129",
+    "claim": "The coordinates of the fly were extracted using a custom MATLAB program.",
+    "claim_type": "EXPLICIT",
+    "source": "The coordinates of the fly were extracted using a custom MATLAB program (https://github.com/bhandawat/fly-walking-behavior/tree/master/tracking; Bhandawat, 2017; copy archived at https://github.com/elifesciences-publications/fly-walking-behavior).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the tracking method with a citation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C130",
+    "claim": "The behavioral arena was normalized to a unit circle centered at the origin.",
+    "claim_type": "EXPLICIT",
+    "source": "The behavioral arena was normalized to a unit circle centered at the origin.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the data preprocessing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C131",
+    "claim": "The raw coordinates of the centroid of the fly were smoothed using wavelet denoising followed by a locally weighted (lowess) filter.",
+    "claim_type": "EXPLICIT",
+    "source": "The raw coordinates of the centroid of the fly were smoothed using wavelet denoising followed by a locally weighted (lowess) filter.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the data smoothing procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C132",
+    "claim": "Speed and curvature were defined exactly as in the previous study.",
+    "claim_type": "EXPLICIT",
+    "source": "Speed and curvature were defined exactly as in the previous study.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript references a previous study for the definition of speed and curvature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C134",
+    "claim": "The HHMM has 102+10*52+50*5 = 600 parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "The model that we employ in the manuscript has 102+10*52+50*5 = 600 parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript calculates the number of parameters in the HHMM model.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C135",
+    "claim": "Instances during which the flies transitioned from one HL state to another HL state and back to the same initial state in less than five frames (~170 ms) were reassigned to the initial HL state.",
+    "claim_type": "EXPLICIT",
+    "source": "Instances during which the flies transitioned from one HL state to another HL state and back to the same initial state in less than five frames (~170 ms) were reassigned to the initial HL state.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the post-processing of model output.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C136",
+    "claim": "Instances during which the fly only spends one frame (~30 ms) in a certain HL state before changing states were removed.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, instances during which the fly only spends one frame (~30 ms) in a certain HL state before changing states were removed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the post-processing of model output.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C137",
+    "claim": "These corrections were done because such short transitions are likely to arise from noise in the observables rather than rapid transitions.",
+    "claim_type": "EXPLICIT",
+    "source": "These corrections were done because such short transitions are likely to arise from noise in the observables rather than rapid transitions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript justifies the post-processing corrections.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

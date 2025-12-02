@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27"
+    ],
+    "result": "Frequency-tagging successfully isolated neural responses at 0.8 Hz (imagery rate) and 4 Hz (stimulus rate). During the mental imagery task, significant spectral peaks were observed at both 0.8 Hz (t19=5.33, p<0.001) and 4 Hz (t19=18.45, p<0.001), while the baseline condition showed only 4 Hz peaks. The 0.8 Hz peak power was significantly larger during imagery than baseline (t19=2.40, p=0.027).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22, C26-C27 provide converging statistical evidence with appropriate corrections (FDR) and effect sizes. The frequency-tagging paradigm successfully dissociates imagery-related (0.8 Hz) from stimulus-driven (4 Hz) neural activity. Sample size (n=20) appears adequate given the large effect sizes (Cohen's d = 1.19 for 0.8 Hz, 4.13 for 4 Hz).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C98"
+    ],
+    "result": "A negative correlation (r=-0.68, p=0.001) was observed between neural response power at 0.8 Hz and 4 Hz during mental imagery, but not during baseline (r=-0.11, p=0.63). This may reflect reallocation of cognitive resources between auditory representation and imagery construction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the correlation during imagery (C28) is statistically significant and the contrast with baseline (C29) is clear, the mechanistic interpretation (C98) is explicitly speculative. The correlation could arise from multiple mechanisms including attention, inhibition, or resource competition. No direct test of the resource allocation hypothesis is provided, and alternative explanations are not systematically ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C48",
+      "C71"
+    ],
+    "result": "MEG source estimation identified three brain regions significantly activated at 0.8 Hz during mental imagery: left central-frontal lobe (including operIFG, PrG, PoG), left inferior occipital gyrus (IOG), and right inferior parietal lobe (IPL including SMG). These networks are proposed to be dissociated from sensory-driven processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C32 report statistically significant clusters (p<0.01 FWE corrected), but several concerns limit confidence: (1) The minimum L1-norm estimation method has known limitations in spatial resolution and can produce spurious sources. (2) No validation of source localization accuracy is provided beyond the limited sEEG confirmation. (3) The claim of 'dissociation' (C48, C71) is inferential - absence of auditory cortex activation at 0.8 Hz doesn't prove functional independence. (4) Potential confounds from working memory, attention, and motor planning are acknowledged but not controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "At 4 Hz, extensive bilateral activation was observed in auditory and sensorimotor regions (HG, STG, MTG, INS, PrG, PoG, SMG) under both imagery and baseline conditions. The right MFG showed greater activation during imagery than baseline (p=0.014). Most regions showed stronger 4 Hz than 0.8 Hz activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C47 provide detailed statistical comparisons with Bonferroni correction across multiple ROIs. The pattern is internally consistent: stimulus-driven responses dominate at 4 Hz across conditions, with the MFG showing an additive imagery effect. The extensive post-hoc testing raises multiple comparison concerns, but corrections were applied. However, the ROI selection was non-independent (based on activation peaks), which may inflate effect sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C69",
+      "C72",
+      "C86",
+      "C87"
+    ],
+    "result": "sEEG recordings confirmed imagery-related activity at 0.8 Hz in the left operIFG (t19=3.61, p=0.021), with periodic high-gamma modulation every 1.25s. The operIFG localization was consistent with MEG source estimates, and 0.8 Hz power increased during imagery versus baseline (t38=3.52, p=0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C69, C86-C87 provide critical validation of MEG source localization using direct intracranial recordings. The convergence between MEG and sEEG in operIFG (C52, C72) strengthens confidence in the source estimation. However, limitations include: (1) Only one subject showed 0.8 Hz sEEG response, limiting generalizability. (2) No sEEG confirmation for left IOG or right IPL. (3) Clinical population (epilepsy patients) may not represent typical neural organization. (4) Different trial numbers and fixed condition order in sEEG versus MEG experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "sEEG identified 4 Hz responses in left posterior INS, anterior SMG, HG, bilateral middle STG, and right middle MTG. These regions showed significant peaks under baseline and/or imagery conditions, generally agreeing with MEG source estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C54-C67 document systematic sEEG responses at 4 Hz with appropriate statistics. The general agreement with MEG (C58) provides cross-validation. However, the comparison is qualitative rather than quantitative, and some discrepancies exist (e.g., not all MEG-identified regions had sEEG coverage). The varying degrees of freedom across regions suggest different numbers of contacts/trials, which could affect statistical power unevenly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C96",
+      "C97"
+    ],
+    "result": "During mental imagery, 4 Hz power in bilateral middle STG was reduced compared to baseline (left: t38=-2.93, p=0.006; right: t198=-4.05, p<0.001), suggesting imagery-driven suppression of auditory perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The statistical evidence for reduced STG activity (C68, C96) is solid, but the interpretation as 'imagery-driven suppression' (C97) is speculative. Alternative explanations include: (1) attentional modulation, (2) predictive coding effects, (3) general task difficulty effects. The authors acknowledge this is 'potential' suppression and cite supporting literature, but no direct test of the suppression mechanism is provided. The different degrees of freedom (t38 vs t198) suggest unequal sample sizes that aren't explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "At 4 Hz, neural responses showed right-hemisphere lateralization under both imagery (t19=3.78, p=0.001) and baseline (t19=3.21, p=0.004) conditions, but no hemispheric asymmetry was observed at 0.8 Hz during imagery (t19=0.34, p=0.72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 provide clear statistical evidence for differential lateralization patterns. The right-lateralization of auditory responses at 4 Hz is consistent with known hemispheric specialization for spectral processing. The absence of lateralization at 0.8 Hz may reflect bilateral involvement in higher-order cognitive processes. Statistics are appropriate with adequate effect sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C88",
+      "C94",
+      "C95",
+      "C107",
+      "C111",
+      "C130"
+    ],
+    "result": "The study demonstrates that neural activity induced by speech mental imagery can be tracked in the frequency domain and distinguished from stimulus-driven processing, with distinct neural networks underlying speech mental imagery independent of auditory perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This overarching conclusion (C70, C88, C130) synthesizes multiple findings but overstates the evidence. While frequency-tagging successfully isolated 0.8 Hz imagery-related activity (supported), the claim of 'independence' from auditory perception is problematic: (1) The task still required auditory input as a pacing cue. (2) Absence of auditory cortex activation at 0.8 Hz (C94, C107, C111) doesn't prove functional independence - it may reflect different temporal dynamics. (3) The negative correlation (C28) and STG suppression (C68) actually suggest interaction, not independence. (4) The task confounds imagery with working memory, attention, and motor planning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C110",
+      "C77"
+    ],
+    "result": "The study employed a novel frequency-tagging paradigm manipulating imagery rate to 0.8 Hz, using MEG source estimation and sEEG validation to localize neural sources while eliminating bottom-up sensory influences by using identical pure tone stimuli across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C77, C110 accurately describe the methodological innovation. The frequency-tagging approach is well-implemented, and the combination of MEG and sEEG provides complementary spatial and temporal information. The use of identical stimuli across conditions is a strength. However, 'eliminating' bottom-up influences (C77) is overstated - the stimuli still drive auditory responses, and the task requires processing these stimuli to maintain counting rhythm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "The rhythmic inner counting task produced cyclical neural signals captured in the frequency domain, reflecting top-down regulation of internally constructed mental imagery. The task requires high levels of working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 provide reasonable interpretations of the task demands. The cyclical neural signals at 0.8 Hz clearly reflect the rhythmic structure of the counting task. The working memory requirement is evident from the need to maintain group structure across 50 tones. However, the task conflates multiple cognitive processes (imagery, working memory, attention, implicit motor planning), making it difficult to attribute the 0.8 Hz response specifically to 'mental imagery' versus these other processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The MEG experiment included 20 right-handed Mandarin speakers with normal hearing, using 440 Hz pure tones presented at 4 Hz for 12.5s per trial across 15 trials per condition in counterbalanced blocks. Participants received training to ensure task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C124 provide clear methodological details. Sample size (n=20) is reasonable for MEG studies. Counterbalancing (C118) controls for order effects. Training (C121-C122) ensures participants could perform the task, though objective performance verification during scanning would strengthen confidence. The restriction to right-handed Mandarin speakers limits generalizability but provides a homogeneous sample.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Five epilepsy patients undergoing clinical evaluation participated in the sEEG experiment with intracranial electrodes. The baseline condition was presented first to reduce confusion, and different sampling rates were used across subjects (512 Hz for 4 subjects, 2048 Hz for 1 subject).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 document the sEEG methodology. The clinical population is appropriate for intracranial recordings but limits generalizability. The fixed condition order (C129) is a significant limitation - it introduces potential confounds from practice, fatigue, or carryover effects. The varying sampling rates (C128) are adequately high for the frequencies of interest but introduce heterogeneity. The small sample size (n=5) and sparse coverage limit the validation of MEG sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The introduction establishes that speech mental imagery is ubiquitous, involves distributed neural networks including Broca's area, but has been limited by fMRI temporal resolution. Frequency-tagging methods have successfully characterized higher-level processes in music and speech, motivating the current approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide appropriate background and motivation. The citations appear accurate and relevant. The logical progression from fMRI limitations (C4) to the need for better temporal resolution (C5-C6) to frequency-tagging as a solution (C11-C14) is sound. The prior work on adaptation paradigms (C7-C10) appropriately identifies the gap that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The discussion contextualizes findings within theories of mental imagery as attention-guided memory retrieval requiring planned articulation. The activated regions (IOG, IPL, PrG, PoG, operIFG) are linked to verbal representation, working memory, numeral processing, and speech production based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C85 appropriately integrate findings with existing literature. The functional interpretations of activated regions are supported by citations. However, the reverse inference problem is present - just because a region is activated doesn't mean it's performing the specific function attributed to it. The discussion acknowledges that the task involves multiple processes beyond pure imagery (C76), but doesn't fully address how this affects interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The discussion reviews mixed evidence on whether mental imagery and perception share neural substrates, citing studies showing both overlap (visual cortex in visual imagery, auditory cortex in music imagery) and dissociation (preserved imagery despite perceptual deficits, differential activation in singing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 accurately represent the debate in the literature with appropriate citations. This provides important context for interpreting the current findings. The authors position their work as contributing to this debate by showing dissociation between imagery and perception processes, though as noted in other results, the evidence for complete independence is overstated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The discussion proposes that higher-order frontal cortex (inferior frontal cortex) is engaged in dynamic organization of speech mental imagery and may modulate lower-order auditory cortex activity, based on predictive coding frameworks and prior findings of opposite effects of top-down and bottom-up processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 appropriately cite relevant literature on predictive coding and top-down control. However, C101 is explicitly speculative ('we propose', 'might modulate'). The current study doesn't directly test functional connectivity or causal relationships between frontal and auditory cortices. The proposal is plausible and consistent with the data, but remains a hypothesis requiring future testing with methods like dynamic causal modeling or perturbation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The right MFG showed greater activation at 4 Hz during imagery than baseline, potentially reflecting generation of individual number imagery. Prior work linked MFG to auditory imagery of music and hearing imagery (HI) of speech, but the current study suggests MFG also contributes to articulatory imagery (AI).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is supported by the data (C47), but the interpretation is complicated. The authors acknowledge (C105-C106) that HI and AI are theoretically distinct, and that their task wasn't designed to distinguish them. The MFG activation could reflect either or both types of imagery, or other processes like working memory or attention. The comparison with prior studies (C102-C103) is informative but the different tasks limit direct comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The absence of auditory cortex activation at 0.8 Hz differs from prior findings of similar responses for overt and covert hearing. This is explained by differences in imagery requirements (articulatory vs. hearing imagery) and the novel frequency-tagging paradigm that dissociates imagery from perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 appropriately address an apparent discrepancy with prior work (Tian & Poeppel, 2010). The explanations are reasonable: (1) different task demands can engage different neural pathways (C109), and (2) the frequency-tagging method tags auditory cortex at stimulus rate rather than imagery rate (C111). However, this also highlights that the current paradigm may not capture all aspects of speech imagery, particularly auditory/perceptual components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The discussion notes recent advances in behavioral measurement of imagery (keyboard output during music imagery) and neural decoding of imagined speech from intracranial signals, suggesting future directions for the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 appropriately cite relevant recent work and acknowledge limitations of the current study regarding behavioral validation. This provides useful context for future research directions. The authors recognize that objective behavioral measures would strengthen imagery research, though implementing such measures for the current paradigm would be challenging.",
+    "result_type": "MINOR"
+  }
+]

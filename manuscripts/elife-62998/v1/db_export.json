@@ -1,0 +1,1693 @@
+{
+  "submission": {
+    "id": "d238842b-499c-4c02-bdab-7532c995476b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:47:36.851663Z",
+    "updated_at": "2025-12-02T21:47:36.851663Z"
+  },
+  "content": [
+    {
+      "id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "submission_id": "d238842b-499c-4c02-bdab-7532c995476b",
+      "content_type": "manuscript",
+      "content_text": "# Time-to-event modeling of hypertension reveals the nonexistence of true controls\n\n## Authors\n\n- Daniel Shriner<sup>1</sup> ([ORCID: 0000-0003-1928-5520](https://orcid.org/0000-0003-1928-5520)) \u2020\n- Amy R Bentley<sup>1</sup>\n- Jie Zhou<sup>1</sup>\n- Kenneth Ekoru<sup>1</sup>\n- Ayo P Doumatey<sup>1</sup>\n- Guanjie Chen<sup>1</sup>\n- Adebowale Adeyemo<sup>1</sup>\n- Charles N Rotimi<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Center for Research on Genomics and Global Health, National Human Genome Research Institute Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGiven a lifetime risk of ~90% by the ninth decade of life, it is unknown if there are true controls for hypertension in epidemiological and genetic studies. Here, we compared Bayesian logistic and time-to-event approaches to modeling hypertension. The median age at hypertension was approximately a decade earlier in African Americans than in European Americans or Mexican Americans. The probability of being free of hypertension at 85 years of age in African Americans was less than half that in European Americans or Mexican Americans. In all groups, baseline hazard rates increased until nearly 60 years of age and then decreased but did not reach zero. Taken together, modeling of the baseline hazard function of hypertension suggests that there are no true controls and that controls in logistic regression are cases with a late age of onset.\n\n## Introduction\n\nHypertension, or abnormally high blood pressure, is common in the US, affecting approximately 45% of adults (Centers for Disease Control and Prevention, National Center for Health Statistics, 2018). Hypertension is a risk factor for heart disease and stroke and causes or contributes to nearly half a million deaths a year (Centers for Disease Control and Prevention, 2019). Globally, an estimated 1.13 billion people have hypertension, and less than 20% of these people have their blood pressure under control (World Health Organization, 2019).\n\nSystolic blood pressure (SBP) has a general tendency to increase linearly with age, across sexes and ethnic groups (Burt et al., 1995). Diastolic blood pressure (DBP) has a general tendency to increase until the end of the fifth decade of life, after which DBP either stabilizes or decreases, again across sexes and ethnic groups (Burt et al., 1995). In the Framingham Heart Study, an individual who is normotensive at 55\u201365 years of age has an 80\u201390% residual lifetime risk of developing hypertension, adjusted for competing causes of mortality (Vasan et al., 2002). Compared to age-matched European Americans, hypertension in African Americans develops at an earlier age and is more prevalent (Chobanian et al., 2003; Cooper et al., 1996; Mozaffarian et al., 2016).\n\nA common approach in genetic epidemiology studies of hypertension involves coding the outcome as a binary variable representing cases and controls and proceeds with logistic regression. Given that the lifetime risk is so high, we first investigated whether a proportional hazards model in time-to-event analysis yields a better fit than logistic regression. Second, as time-to-event analysis assumes that the event will occur, that\u00a0is, that every individual will become hypertensive if they live long enough, we investigated a proportional hazards model including a fraction of individuals that will never become hypertensive and hence are true epidemiological controls. Third, using an agnostic model screening approach, we explored the issue of what covariates to include and how much variance they explain. We performed these analyses in an observational study of African Americans and then replicated and extended our findings in a nationally representative study of African Americans, European Americans, and Mexican Americans.\n\n## Results\n\n### Time-to-event analysis\n\nAcross African Americans, European Americans, and Mexican Americans, median systolic blood pressure increased with age, whereas median diastolic blood pressure increased and then decreased (Figure 1). In time-to-event analysis, the probability of not having hypertension decreased across the entire age range (Figure 2). However, in all three groups, there was an inflection point in middle age after which the probability of having hypertension increased at a slower rate (Figure 2). Despite this slowdown, the probability of not having hypertension was not zero, even by the middle of the ninth decade (Figure 2). In the discovery study (HUFS), by 85 years of age, 12.2% (95% credible interval (CI) [5.1%, 20.6%]) of African Americans remained free of hypertension (Figure 2). In the replication study (NHANES), by 85 years of age, 8.4% (95% CI [5.4%, 11.6%]) of African Americans, 21.4% (95% CI [18.1%, 24.6%]) of European Americans, and 20.6% (95% CI [13.6%, 27.3%]) of Mexican Americans remained free of hypertension (Figure 2). The median age at which hypertension occurred was 48 (95% CI [45, 50]) years for African Americans in HUFS and 42 (95% CI [40, 44]) years for African Americans, 57 (95% CI [55, 59]) years for European Americans, and 56 (95% CI [54, 58]) years for Mexican Americans in NHANES (Figure 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/62998/elife-62998-fig1-v1.jpg)\n\n**Figure 1.:** The solid red horizontal line represents the diagnostic threshold of 140 mm Hg and the solid blue horizontal line represents the diagnostic threshold of 90 mm Hg.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/62998/elife-62998-fig2-v1.jpg)\n\nWe next investigated seven distributions, six parametric, and one nonparametric, for the baseline hazard function in a proportional hazards model. Generalized gamma, loglogistic, and exponential distributions all yielded poor fits to the HUFS data (Figure 3). Log-normal, gamma, and Weibull distributions all yielded good fits to the HUFS data (Figure 3), with the log-normal distribution yielding the highest likelihood of the six parametric distributions (Table 1). Overall, a nonparametric hazard function yielded the highest likelihood (Table 1). However, we could not perform model comparison between the log-normal distribution of the baseline hazard function and the nonparametric hazard function in the frequentist framework because it is unclear how to measure the dimensionality of the nonparametric hazard function.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/62998/elife-62998-fig3-v1.jpg)\n\n**Table 1.**\n Likelihoods for several parametric and nonparametric baseline hazard functions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Distribution</th>\n      <th>-ln(Likelihood)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Nonparametric</td>\n      <td>553.690</td>\n    </tr>\n    <tr>\n      <td>Log-normal</td>\n      <td>580.417</td>\n    </tr>\n    <tr>\n      <td>Gamma</td>\n      <td>580.589</td>\n    </tr>\n    <tr>\n      <td>Weibull</td>\n      <td>582.688</td>\n    </tr>\n    <tr>\n      <td>Exponential</td>\n      <td>624.069</td>\n    </tr>\n    <tr>\n      <td>Loglogistic</td>\n      <td>625.762</td>\n    </tr>\n    <tr>\n      <td>Generalgamma</td>\n      <td>638.588</td>\n    </tr>\n  </tbody>\n</table>\n\nBased on a Bayesian model in which the hazard rates were gamma distributed with a correlated prior process, we estimated the underlying hazard rates. Across African Americans, European Americans, and Mexican Americans, hazard rates increased and then decreased (Figure 4). The initial hazard rate for African Americans (0.0123 (95% highest posterior density interval [0.0091, 0.0161])) was larger than the initial hazard rate for both European Americans (0.0028 (95% highest posterior density interval [0.0013, 0.0044])) and Mexican Americans (0.0036 (95% highest posterior density interval [0.0019, 0.0052])). The maximum hazard rate for African Americans (0.0630 (95% highest posterior density interval [0.0341, 0.0940])) was trending larger than the maximum hazard rate for European Americans (0.0368 (95% highest posterior density interval [0.0200, 0.0546])) and Mexican Americans (0.0417 (95% highest posterior density interval [0.0219, 0.0635])). The age of maximum hazard was 55 (95% CI [43, 72]) years in HUFS and 58 (95% CI [48, 67]) years in African Americans, 60 (95% CI [52, 70]) years in European Americans, and 58 (95% CI [48, 69]) years in Mexican Americans in NHANES (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/62998/elife-62998-fig4-v1.jpg)\n\n### Proportional hazards vs. logistic models\n\nUsing the HUFS data, we found that logistic regression yielded a better fit than the proportional hazards model based on the DIC, provided that both age and age2 were included as covariates in the logistic regression model (Table 2). Using logistic regression, the addition of age to the reduced (intercept-only) model resulted in a substantially lower DIC (Table 2), with a linear effect of age explaining 27.8% of the variance at the cost of one additional parameter. The addition of age2 further decreased the DIC (Table 2), explaining an additional 0.8% of the variance at the cost of one additional parameter. With smoothing, the effective dimensionality of the proportional hazards model was 3.3, comparable to the dimensionality of 3.0 for the logistic model adjusted for age and age2 (Table 2). We also found that inclusion of a permanent stayer fraction increased the DIC of the proportional hazards model, indicating that inclusion of a permanent stayer fraction was not supported (Table 2).\n\n**Table 2.**\n Effective dimensionality of logistic and proportional hazards models.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>Parameters</th>\n      <th>DIC</th>\n      <th>pD</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Logistic</td>\n      <td>intercept</td>\n      <td>1406.6</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>Logistic</td>\n      <td>intercept, age</td>\n      <td>1171.2</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>Logistic</td>\n      <td>intercept, age, age2</td>\n      <td>1165.3</td>\n      <td>3.0</td>\n    </tr>\n    <tr>\n      <td>Proportional hazards</td>\n      <td>\u03b1, \u03b2, \u03bb0(t)</td>\n      <td>1166.5</td>\n      <td>3.3</td>\n    </tr>\n    <tr>\n      <td>Proportional hazards</td>\n      <td>\u03b1, \u03b2, \u03bb0(t), \u03c0</td>\n      <td>1167.3</td>\n      <td>4.0</td>\n    </tr>\n  </tbody>\n</table>\n\n### Model selection\n\nWe used forward-backward regression to perform model selection on a set of 38 potential covariates. In the HUFS data set, the final model included six of these covariates: chloride, insulin, low-density lipoprotein cholesterol, potassium, uric acid, and weight. Compared to the logistic model with age and age2, these six covariates improved the fit (p=2.01\u00a0\u00d7\u00a010\u221215) and explained an additional 8.1% of the variance, for a total of 36.7% of variance explained. Each of these six covariates were replicated (p-values from 2.81\u00a0\u00d7\u00a010\u22122 to 1.83\u00a0\u00d7\u00a010\u221212) and directionally consistent in NHANES African Americans (Table 3). Furthermore, chloride, low-density lipoprotein cholesterol, potassium, uric acid, and weight, but not insulin, were significant covariates in NHANES European Americans, whereas chloride, insulin, low-density lipoprotein cholesterol, uric acid, and weight, but not potassium, were significant covariates in NHANES Mexican Americans (Table 4). The borderline non-significance of potassium in NHANES Mexican Americans reflected a smaller sample variance, a smaller effect size estimate, and a larger standard error for the effect size, which could be compensated for by increasing the sample size by 20%. In NHANES, the variance explained by age, age2, chloride, low-density lipoprotein cholesterol, uric acid, and weight was 40.9% in African Americans, 34.8% in European Americans, and 28.3% in Mexican Americans.\n\n**Table 3.**\n Replication of covariates from model selection in African Americans.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">HUFS (\u00a0=\u00a01,014)</th>\n      <th colspan=\"3\">NHANES (\u00a0=\u00a05,135)</th>\n    </tr>\n    <tr>\n      <th>Variable</th>\n      <th>Estimate</th>\n      <th>SE</th>\n      <th>p-Value</th>\n      <th>Estimate</th>\n      <th>SE</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chloride (mmol/L)</td>\n      <td>\u22120.0253</td>\n      <td>0.0122</td>\n      <td>3.81E-02</td>\n      <td>\u22120.0241</td>\n      <td>0.0110</td>\n      <td>2.81E-02</td>\n    </tr>\n    <tr>\n      <td>Insulin (mIU/L)</td>\n      <td>0.0112</td>\n      <td>0.0054</td>\n      <td>3.61E-02</td>\n      <td>0.0115</td>\n      <td>0.0044</td>\n      <td>9.04E-03</td>\n    </tr>\n    <tr>\n      <td>LDL cholesterol (mg/dL)</td>\n      <td>\u22120.0031</td>\n      <td>0.0013</td>\n      <td>1.75E-02</td>\n      <td>\u22120.0018</td>\n      <td>0.0008</td>\n      <td>3.04E-02</td>\n    </tr>\n    <tr>\n      <td>Potassium (mmol/L)</td>\n      <td>\u22120.2553</td>\n      <td>0.1016</td>\n      <td>1.20E-02</td>\n      <td>\u22120.5695</td>\n      <td>0.0930</td>\n      <td>9.30E-10</td>\n    </tr>\n    <tr>\n      <td>Uric acid (mg/dL)</td>\n      <td>0.1713</td>\n      <td>0.0351</td>\n      <td>1.04E-06</td>\n      <td>0.1283</td>\n      <td>0.0227</td>\n      <td>1.66E-08</td>\n    </tr>\n    <tr>\n      <td>Weight (lbs.)</td>\n      <td>0.0033</td>\n      <td>0.0011</td>\n      <td>2.36E-03</td>\n      <td>0.0106</td>\n      <td>0.0015</td>\n      <td>1.83E-12</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Covariates from model selection in European Americans and Mexican Americans.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">European Americans (\u00a0=\u00a010,023)</th>\n      <th colspan=\"3\">Mexican Americans (\u00a0=\u00a05,040)</th>\n    </tr>\n    <tr>\n      <th>Variable</th>\n      <th>Estimate</th>\n      <th>SE</th>\n      <th>p-Value</th>\n      <th>Estimate</th>\n      <th>SE</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chloride (mmol/L)</td>\n      <td>\u22120.0656</td>\n      <td>0.0077</td>\n      <td>1.99E-17</td>\n      <td>\u22120.0534</td>\n      <td>0.0153</td>\n      <td>4.85E-04</td>\n    </tr>\n    <tr>\n      <td>Insulin (mIU/L)</td>\n      <td>0.0022</td>\n      <td>0.0051</td>\n      <td>6.76E-01</td>\n      <td>0.0111</td>\n      <td>0.0039</td>\n      <td>5.05E-03</td>\n    </tr>\n    <tr>\n      <td>LDL cholesterol (mg/dL)</td>\n      <td>\u22120.0023</td>\n      <td>0.0006</td>\n      <td>1.38E-04</td>\n      <td>\u22120.0049</td>\n      <td>0.0013</td>\n      <td>1.88E-04</td>\n    </tr>\n    <tr>\n      <td>Potassium (mmol/L)</td>\n      <td>\u22120.3524</td>\n      <td>0.0683</td>\n      <td>2.49E-07</td>\n      <td>\u22120.2331</td>\n      <td>0.1298</td>\n      <td>7.25E-02</td>\n    </tr>\n    <tr>\n      <td>Uric acid (mg/dL)</td>\n      <td>0.1391</td>\n      <td>0.0165</td>\n      <td>3.16E-17</td>\n      <td>0.0833</td>\n      <td>0.0315</td>\n      <td>8.28E-03</td>\n    </tr>\n    <tr>\n      <td>Weight (lbs.)</td>\n      <td>0.0150</td>\n      <td>0.0016</td>\n      <td>5.61E-21</td>\n      <td>0.0164</td>\n      <td>0.0027</td>\n      <td>2.72E-09</td>\n    </tr>\n  </tbody>\n</table>\n\nWe further investigated two unexpected results of the model selection. One, sex was not selected in the final model. Of the selected covariates, three showed sex dimorphisms in HUFS by Welch\u2019s t-test, with uric acid and weight higher in males and low-density lipoprotein cholesterol higher in females (Table 5). Second, across African Americans, European Americans, and Mexican Americans, increasing low-density lipoprotein cholesterol was associated with decreased risk of hypertension (Tables 3 and 4). As the direction of this effect was unexpected, we reanalyzed the HUFS African Americans accounting for lipids medications. Self-reported use of any lipid medication (coded as yes/no) was associated with increased risk of hypertension (p=1.25\u00a0\u00d7\u00a010\u22123) but increasing low-density lipoprotein cholesterol remained associated with decreased risk of hypertension (p=4.46\u00a0\u00d7\u00a010\u22122). Of the individuals in this sub-analysis, 8.3% reported use of any lipid medication, all instances of which involved statins, so drug class was not a confounder.\n\n**Table 5.**\n Sexual dimorphism among covariates in HUFS.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Variable</th>\n      <th>Male (\u00a0=\u00a0414)</th>\n      <th>Female (\u00a0=\u00a0600)</th>\n      <th>p-Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Chloride (mmol/L)</td>\n      <td>101.4 (4.4)</td>\n      <td>101.1 (5.3)</td>\n      <td>0.482</td>\n    </tr>\n    <tr>\n      <td>Insulin (mIU/L)</td>\n      <td>10.9 (15.3)</td>\n      <td>12.0 (11.9)</td>\n      <td>0.228</td>\n    </tr>\n    <tr>\n      <td>LDL cholesterol (mg/dL)</td>\n      <td>111.3 (38.0)</td>\n      <td>117.9 (38.7)</td>\n      <td>7.28E-03</td>\n    </tr>\n    <tr>\n      <td>Potassium (mmol/L)</td>\n      <td>4.5 (0.7)</td>\n      <td>4.4 (1.3)</td>\n      <td>0.052</td>\n    </tr>\n    <tr>\n      <td>Uric acid (mg/dL)</td>\n      <td>6.3 (1.5)</td>\n      <td>5.0 (1.5)</td>\n      <td>6.36E-35</td>\n    </tr>\n    <tr>\n      <td>Weight (lbs.)</td>\n      <td>194.4 (52.2)</td>\n      <td>186.1 (52.5)</td>\n      <td>0.014</td>\n    </tr>\n  </tbody>\n</table>\n\nTo investigate the possibility of time-dependent covariates, we added interaction terms to the full logistic model (with age, age2 and the selected covariates). For each of the selected covariates, the Akaike information criterion was larger for the model containing a term that interacted with age (Table 6). Thus, the evidence does not support time-dependence for any of the selected covariates.\n\n**Table 6.**\n Time-dependence for selected covariates in HUFS.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Interaction term</th>\n      <th>AIC</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>None</td>\n      <td>1096.053</td>\n    </tr>\n    <tr>\n      <td>Age\u00a0\u00d7\u00a0chloride</td>\n      <td>1096.695</td>\n    </tr>\n    <tr>\n      <td>Age\u00a0\u00d7\u00a0insulin</td>\n      <td>1097.190</td>\n    </tr>\n    <tr>\n      <td>Age\u00a0\u00d7\u00a0low-density lipoprotein cholesterol</td>\n      <td>1097.748</td>\n    </tr>\n    <tr>\n      <td>Age\u00a0\u00d7\u00a0potassium</td>\n      <td>1097.956</td>\n    </tr>\n    <tr>\n      <td>Age\u00a0\u00d7\u00a0uric acid</td>\n      <td>1097.919</td>\n    </tr>\n    <tr>\n      <td>Age\u00a0\u00d7\u00a0weight</td>\n      <td>1097.013</td>\n    </tr>\n  </tbody>\n</table>\n\n### 2017 revised classification of hypertension\n\nWe reanalyzed the HUFS data based on the 2017 reclassification of hypertension as SBP\u00a0\u2265130 mm Hg or DBP\u00a0\u226580 mm Hg (Whelton et al., 2018). Under these more stringent thresholds, the prevalence of hypertension increased from 48.3% to 66.1%, the median time to hypertension decreased to 36 years (95% CI [33, 39]), the age at maximum hazard increased to 57 (95% CI [33, 72]) years, and the lifetime risk at 85 years of age increased to 95.8% (95% CI [90.3%, 99.2%]). The 95% highest posterior density interval of the permanent stayer fraction included zero.\n\n## Discussion\n\nTime-to-event analysis of hypertension with a primary focus on modeling the baseline hazard function recapitulated three known health disparities. One, at the earliest ages, the baseline hazard rate was higher in African Americans compared to European Americans and Mexican Americans. Two, the median age when hypertension occurred was approximately a decade earlier for African Americans compared to European Americans and Mexican Americans. Three, by the middle of the ninth decade of life, the probability of African Americans remaining free of hypertension was less than half the probability for European Americans and Mexican Americans.\n\nThe Bayesian model of the hazard rates revealed an inflection point, consistent with the log-normal parametric distribution yielding the best fit among the parametric distributions we explored. A decrease in hazard rates implies that the number of events decreases or that the number of individuals at risk increases. We suggest that the simplest explanation for the inflection point in hazard rates is the change in trajectory of DBP, with the decrease in DBP leading to a decreased hazard of hypertension and consequently a reduced number of events. We cannot rule out the possibility that there are individuals who are at less risk, although the finding that the hazard rate does not reach zero (by 85 years of age) indicates the continued presence of risk. It is also possible that mortality due to comorbidities begins to subside by around 60 years of age, leading to reduced hazard rates of hypertension in older ages.\n\nTo enable model comparison between logistic regression and proportional hazards analysis, we used the DIC, which is based on an estimate of dimensionality. The existence of the inflection point in the baseline hazard function implies an approximately quadratic effect of age, which in logistic regression is captured by an age2 term with a negative regression coefficient. Our results indicated that the proportional hazards model we used, which incorporated smoothing to prevent over-parameterization, and logistic regression with age and age2, provide comparable fits. Therefore, we recommend that studies of hypertension using a case-control design should always include a logistic regression adjustment for both linear and quadratic effects of age.\n\nIn addition to non-zero hazard rates, evidence for the lack of existence of true controls comes from the modeling of a permanent stayer fraction. We found that the permanent stayer fraction essentially corresponded to the fraction of individuals who had not yet become hypertensive at the last observed age. As the permanent stayer fraction did not capture any additional information, models including the permanent stayer fraction had a worse fit compared to models without that additional parameter. A major implication for proportional hazards analysis is that the assumption that the event will occur for every individual at some point in time, unless the individual dies first, is valid. A major implication for logistic regression is that controls should be interpreted as individuals that have not yet become hypertensive, rather than as individuals who will not become hypertensive.\n\nTraditional risk factors for hypertension include excess body weight, excess dietary sodium intake, reduced physical activity, deficiency of potassium, and excess alcohol intake (Chobanian et al., 2003). Our results have three implications regarding these risk factors. One, we confirmed that excess weight and low potassium, but not excess sodium, were risk factors in our multiple regression model. It is possible that the inclusion of chloride could account for the effects of sodium. We found that chloride was negatively associated with hypertension. Although high dietary intake of chloride is a risk factor for hypertension, lower serum chloride levels have been associated with higher risks of hypertension and cardiovascular disease and higher all-cause and cause-specific mortality among hypertensives (McCallum et al., 2013; Taylor et al., 2007). Two, longitudinal analysis of 30 years of follow-up in the Framingham Heart Study showed that the incidence rate of hypertension increased faster in females than in males, with females having lower incidence under 50 years of age and higher incidence over 50 years of age (Dannenberg et al., 1988). In contrast, we found that sex was not a significant covariate, although low-density lipoprotein cholesterol, uric acid, and weight showed sex dimorphisms. Three, we did not have data on birth weight, but our findings regarding hazard rates at early ages are consistent with low birth weight being a risk factor for hypertension (Lackland et al., 2003) and African Americans having lower birth weight than European Americans (David and Collins, 1997).\n\nLow-density lipoprotein cholesterol has been reported to be positively associated with hypertension, but this association generally does not remain significant after covariate adjustment (Haffner et al., 1992; Laaksonen et al., 2008; Otsuka et al., 2016; Sesso et al., 2005; Wildman et al., 2004). In contrast, we found that low-density lipoprotein cholesterol was negatively associated with hypertension, across African Americans, European Americans, and Mexican Americans. The explanation for this discrepancy is unclear, but we present evidence against three possibilities. We obtained a negative association in both single and multiple regression models, suggesting that the opposite direction of effect was not due to other (known) covariates. We also found that the opposite direction of effect was not due to a time-dependent effect. Furthermore, the opposite direction of effect was not due to confounding by self-reported use of medication (i.e. statins). Studies of the relationship between low-density lipoprotein cholesterol and healthy aging have led to conflicting conclusions, with some studies reporting a negative association (Barzilai et al., 2001; Postmus et al., 2015) and other studies reporting a positive association (Lv et al., 2015; Lv et al., 2019; Rantanen et al., 2015). One possible explanation for this discrepancy is survival bias, if individuals with higher low-density lipoprotein cholesterol disproportionately experience mortality prior to the onset of hypertension. Given that both data sets in our study were observational, we lack follow-up data to model all-cause or cause-specific mortality as a competing risk.\n\nUric acid is associated with hypertension, but whether this association is causal remains unestablished. Mendelian randomization (MR) studies have provided conflicting evidence regarding the causality of uric acid for hypertension, with evidence for no effect (Palmer et al., 2013), protection (Sedaghat et al., 2014), and risk (Parsa et al., 2012). MR studies have reported that uric acid is not causal for adiposity, chronic kidney disease, triglycerides, type 2 diabetes, or obesity (Jordan et al., 2019; Kleber et al., 2015; Lyngdoh et al., 2012; Rasheed et al., 2014). In contrast, higher adiposity, higher body mass index, lower high-density lipoprotein cholesterol, and higher triglycerides are causally associated with increased uric acid (Lyngdoh et al., 2012; Palmer et al., 2013; Rasheed et al., 2014; Yu et al., 2019). The association of uric acid with hypertension may reflect pleiotropy through linked metabolic pathways, perhaps those involving lipid metabolism (Li et al., 2019).\n\nThe African Americans in HUFS were all recruited and enrolled in Washington, D.C. The fact that neither the last completed grade of education nor income were significant predictors during model selection may reflect homogeneity of study participants within one city. In contrast, the African Americans in NHANES were recruited nationwide. All covariates that were significant during model selection in HUFS replicated in NHANES African Americans, indicating that the findings in HUFS were generalizable to the national level.\n\nIn summary, by Bayesian modeling of the baseline hazard function in time-to-event analysis of hypertension, we found that logistic regression, if adjusted for both linear and quadratic effects of age, yielded a fit comparable to proportional hazards regression. We found no evidence to support the existence of true controls, suggesting that if an individual lives long enough, hypertension is inevitable. Finally, we found that the combination of chloride, low-density lipoprotein cholesterol, uric acid, and weight, in addition to age and age2, accounted for 40.9% of the variance of hypertension in African Americans, 34.8% in European Americans, and 28.3% in Mexican Americans, simultaneously consistent with common risk factors among the groups and heterogeneity across the groups.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>R Project for Statistical Computing</td>\n      <td>R Project for Statistical Computing</td>\n      <td>RRID:SCR_001905</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Discovery study\n\nThe Howard University Family Study (HUFS) is a population-based observational study of African American families and unrelated individuals from Washington, D.C. (Adeyemo et al., 2009). Ethics approval for the Howard University Family Study (HUFS) was obtained from the Howard University Institutional Review Board (protocol number IRB-06-GSAS-32-A) and written informed consent was obtained from each participant. All clinical investigation was conducted according to the principles expressed in the Declaration of Helsinki. Families and individuals were not ascertained based on any phenotype. Weight was measured on an electronic scale to the nearest 0.1 kg. Height was measured on a stadiometer to the nearest 0.1 cm. Body mass index (BMI) was calculated as weight divided by the square of height (kg/m2). Waist circumference was measured to the nearest 0.1 cm at the narrowest part of the torso. Hip circumference was measured to the nearest 0.1 cm at the widest part of the buttocks. The waist-hip ratio was calculated as waist circumference in cm divided by hip circumference in cm. Fat mass and fat-free mass were estimated using bioelectrical impedance analysis with a validated population-specific equation as previously described (Luke et al., 1997). Percent fat mass was defined as fat mass divided by weight\u00a0\u00d7100. Blood pressure was measured while seated using an oscillometric device (Omron Healthcare, Inc, Bannockburn, Illinois). Three readings were taken at 10 min intervals. Reported readings were the averages of the second and third readings. Hypertension was defined as SBP\u00a0\u2265140 mm Hg, DBP\u00a0\u226590 mm Hg, or treatment with anti-hypertensive medication. Blood was drawn after an overnight fast of at least 8 hr and all collected samples were stored at \u221280\u00b0C pending biochemical assay. Creatinine, total cholesterol, high-density lipoprotein cholesterol, low-density lipoprotein cholesterol, triglycerides, fructosamine, glucose, alkaline phosphatase, alanine aminotransferase, total bilirubin, sodium, potassium, chloride, calcium, uric acid, urea, C-reactive protein, albumin, bicarbonate, and total protein were measured using COBAS INTEGRA tests (Roche Diagnostics, Indianapolis, Indiana). Cortisol and insulin were measured using Elecsys assays (Roche Diagnostics). Creatinine clearance was calculated using the Cockcroft-Gault equation and the estimated glomerular filtration rate (eGFR) was calculated using the four-variable Modification of Diet in Renal Disease Study equation (National Kidney Foundation, 2002; Levey et al., 1999). T2D case status was defined as fasting plasma glucose level\u00a0\u2265126 mg/dL or treatment with anti-diabetic medication. T2D control status was defined as fasting plasma glucose\u00a0\u2264100 mg/dL and no treatment with anti-diabetic medication. The last completed grade of education and income were self-reported on a questionnaire. The proportions of African and European ancestry were estimated as described previously (Shriner et al., 2011). We extracted a subset of 1014 unrelated individuals.\n\n### Bayesian logistic regression and time-to-event analysis\n\nLet $T$ represent the time of an event and $S(t)=Pr(T>t)$ represent the survival function, that\u00a0is, the probability of being event-free as a function of observation time $t$. With cross-sectional data, there is a single observation for each individual. If the individual has not yet experienced the event, then the event time is right censored, because the event is presumed to occur some unknown time after observation. If the individual has already experienced the event, then the event time is left censored, because the event occurred at some unknown time prior to observation. The combination of left and right censored data is known as interval censored data. We performed interval censored proportional hazards analysis using the R package icenReg.\n\nTo perform Bayesian modeling, we used WinBUGS, version 1.4 with the R package R2WinBUGS. For\u00a0the\u00a0ith\u00a0individual,\u00a0we modeled logistic regression as:\n\n$$\ny_{i}~Bernoulli(\\theta_{i})\n$$\n\n\n\n$$\nlogit(\\theta_{i})=\\alpha\n$$\n\n\n\n$$\n\\alpha\u223cNormal(0,10^{6}).\n$$\n\nIn this reduced model, the prior distribution for the intercept $\\alpha$ follows a diffuse normal distribution with mean 0 and variance 106. We ran three chains of 10,000 iterations, with a burn-in of 2500 iterations and thinning of 10, yielding a posterior sample based on 2250 iterations. We assessed convergence using the potential scale reduction factor Rhat, which should equal 1 at convergence for all monitored parameters. We assessed model fit using the deviance information criterion (DIC). We then added age to the reduced model and ran three chains of 10,000 iterations, with a burn-in of 2500 iterations and thinning of 10, yielding a posterior sample of 2250 iterations. Next, we added age and age2 to the reduced model and ran three chains of 100,000 iterations, with a burn-in of 10,000 and thinning of 50, yielding a posterior sample of 5400 iterations. In all instances, effect sizes followed a diffuse normal prior distribution with mean 0 and variance 106.\n\nWe performed time-to-event analysis using a proportional hazards model (Congdon, 2003). The hazard function $h(t)$ defines the instantaneous risk of the event at time $t$, conditional on being event-free at that time:\n\n$$\nh(t)=lim\u0394t\u21920\\frac{Pr(t\\leqT<t+\u0394t|T\\geqt)}{\u0394t}\n$$\n\nGiven the hazard function $h(t)$, the cumulative hazard function $H(t)$ and the survival function $S(t)$ are defined as follows:\n\n$$\nH(t)=\\int0th(u)du\n$$\n\n\n\n$$\nS(t)=Pr(T\\geqt)=e^{\u2212H(t)}\n$$\n\nIn Cox\u2019s proportional hazards model (Cox, 1972), the hazard function $\\lambda(t|z)$ is given by $\\lambda_{0}(t)e^{\\betaz}$, in which $\\lambda_{0}(t)$ is the baseline hazard function and $z$ is a covariate with coefficient \u03b2. In the absence of covariates, the hazard function is equivalent to the baseline hazard function, $\\lambda(t)=\\lambda_{0}(t)$. We modeled the hazard rates as gamma-distributed with a correlated prior process (Arjas and Gasbarra, 1994; Congdon, 2006). Specifically, the hazard rates were:\n\n$$\n\\lambda_{0}(t=0)~Gamma(\\alpha,\\beta)\n$$\n\n\n\n$$\n\\lambda_{0}(t+1)~Gamma(\\alpha,\\frac{\\alpha}{\\lambda_{0}(t)})\n$$\n\n\n\n$$\n\\alpha~Uniform(10,100)\n$$\n\n\n\n$$\n\\beta\u223cUniform(0.001,0.01).\n$$\n\nIn this model, the expected value of $\\lambda_{0}(t+1)$ equals $\\lambda_{0}(t)$ and hence the hazard function is a martingale. We divided time into intervals of one year and assumed that the baseline hazard was constant within intervals.\n\nA major assumption of time-to-event analysis is that the event will occur for every individual at some point in time, although the individual may die before the event would have occurred. This assumption can be relaxed by incorporating a permanent stayer or cured fraction, that\u00a0is, a fraction of individuals who will never experience the event. In our context, this fraction represents individuals who never develop hypertension and hence are true epidemiological controls. Let $\\pi$ represent the permanent stayer fraction. Then, the survival function for the entire population $S_{p}(t)$ is the two-component mixture model $S_{p}(t)=\\pi+(1\u2212\\pi)S(t)$ (Gu et al., 2011). We assigned to $\\pi$ the prior distribution $Uniform(0,1)$.\n\n### Model selection\n\nWe tested 38 covariates for inclusion in the model: sex; weight, height, hip circumference, waist circumference, waist-hip ratio, body mass index; fat mass, fat-free mass, percent fat mass; type 2 diabetes status, fasting glucose, fasting insulin, fructosamine; triglycerides, high-density lipoprotein cholesterol, low-density lipoprotein cholesterol, total cholesterol; creatinine, creatinine clearance, estimated glomerular filtration rate; alkaline phosphatase, alanine aminotransferase, total bilirubin; last grade of education completed, income; percent African ancestry; calcium, chloride, potassium, sodium; albumin, carbon dioxide, C-reactive protein, total protein, uric acid, urea, and cortisol. We used a four-step forward-backward regression procedure to perform model selection. First, we fit a single regression model for each covariate. Second, we fit a multiple regression model with all significant predictors from step 1 and used backward selection to remove nonsignificant predictors. Third, starting with the final model from step 2, we reconsidered each nonsignificant covariate from step 1 using forward selection. Fourth, we performed a final pruning step on the final model from step 3. For every test, we declared a significance level of 0.05. Pseudo-r2 values were estimated using the formula $r^{2}=\\frac{1\u2212exp(\\frac{D_{1}\u2212D_{0}}{n})}{1\u2212exp(\\frac{\u2212D_{0}}{n})}$, in which $D_{1}$ is the deviance, $D_{0}$ is the null deviance, and $n$ is the sample size (Nagelkerke, 1991). Finally, we added age, age2, and selected covariates to the Bayesian logistic regression model described above and ran three chains of 1,000,000 iterations, with a burn-in of 100,000 iterations and thinning of 1,000, yielding a posterior sample of 2700 iterations. Effect sizes for all covariates followed a diffuse normal prior distribution with mean 0 and variance 106.\n\n### Replication study\n\nThe National Center for Health Statistics of the US Centers for Disease Control and Prevention conducts the ongoing National Health and Nutrition Examination Survey (NHANES). The survey comprises an in-home interview and a clinical examination by a mobile examination center. We retrieved 16 years of examination data (from 1999 to 2014) from the CDC portal (http://wwwn.cdc.gov/Nchs/Nhanes). We downloaded the variables BMXWT, BPQ020, BPQ040A, BPXDI1, BPXDI2, BPXDI3, BPXDI4, BPXSY1, BPXSY2, BPXSY3, BPXSY4, LBDLDL, LBXIN, LBXSCLSI, LBXSKSI, LBXSUA, RIDAGEEX, RIAGENDR, RIDRETH1, SDVMVPSU, SDMVSTRA, and WTSAF2YR. SBP was defined as the average of BPXSY1, BPXSY2, BPXSY3, and BPXSY4. DBP was defined as the average of BPXDI1, BPXDI2, BPXDI3, and BPXDI4. Hypertension was defined as SBP \u2265 140 mm Hg, DBP \u2265 90 mm Hg, treatment with anti-hypertensive medication, or having ever been diagnosed by a doctor. Strata, clusters, and weights were designed to make statistical estimates representative of the non-institutionalized, civilian US population. We included the strata variable SDMVSTRA as a factor with 118 levels. The factor SDMVPSU defined clusters nested within strata. There were up to three levels of cluster within each stratum, yielding a total of 241 combinations of stratum and cluster. Individuals with fasting samples represented less than half of the individuals assessed by interview or the mobile examination center, such that some clusters and some strata were empty or sparse. Consequently, we omitted the cluster factor. To account for eight survey cycles, we multiplied the weights WTSAF2YR equally by 1/8. For each value of RIDRETH, we rescaled the weights by dividing by the mean. For the survey cycle 2013\u20132014, we recalibrated insulin to account for changes in the protocol: $Insulin_{2011\u22122012}=10^{(0.9765^{\u2217}log_{10}\u2061(Insulin_{2013\u22122014}+0.07832))}$ (https://wwwn.cdc.gov/Nchs/Nhanes/2013-2014/INS_H.htm). Across the eight survey cycles, we retrieved data for a total of 23,628 participants, including 5146 African Americans (\u2018non-Hispanic Blacks\u2019), 10,023 European Americans (\u2018non-Hispanic Whites\u2019), and 5059 Mexican Americans.\n\n### Code availability\n\nWinBUGS code is available at https://github.com/dshriner/Time-to-event\u00a0(Shriner, 2020).\n",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "da13a446-0aa0-44eb-95ac-0bf5f9a2fd28",
+      "submission_id": "d238842b-499c-4c02-bdab-7532c995476b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mone Zaidi, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.62998.sa1](https://doi.org/10.7554/eLife.62998.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYou have compared Bayesian logistic and time-to-event approaches to modeling hypertension in African Americans, European Americans and Mexican Americans. Your modeling of the baseline hazard function of hypertension suggests that there are no true controls and that controls in logistic regression are cases with a late age of onset. The studies are significant to our understanding of the efficacy of anti-hypertensive agents, and in particular, when comparator studies with established agents are used to approve new compounds.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Time-to-Event Modeling of Hypertension Reveals the Nonexistence of True Controls\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Zan\u00e9 Lombard (Reviewer #1); Bert-Jan van den Born (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors describe a statistical modelling approach to determine whether true controls for hypertension (i.e. individuals who will not develop hypertension over their lifetime) exist. This is an important question, as control participants are a key component in study design for epidemiological and genetic studies, particularly those that follow a chronic course. The authors tested their model in the Howard University Family Study (HUFS) and replicated their findings in the National Health and Nutrition Examination Survey (NHANES). The authors conclude that there are no true (normotensive) controls as previously normotensive individuals will become hypertensive later in life. The manuscript is based on high quality analyses and is well written.\n\nEssential revisions:\n\nThe following points need careful consideration and resolution.\n\n1) The realization that many normotensive controls will later become hypertensive is not surprising giving the known sharp increase of hypertension prevalence with age from both cross-sectional analyses and prospective follow-up data. From population studies, we already know that >50% of the population is hypertensive above age 50 years, and that above 80 years of age, prevalence rates are ~80%. Except for the interesting modeling approach, the question therefore remains what this study really adds. Please comment.\n\n2) The authors have assessed 38 potential covariates, with 6 remaining in the final model including 3 variables that had a negative association with life-time hypertension risk, including LDL cholesterol. The finding that increasing LDL cholesterol was associated with a decreased risk of hypertension (not known in existing literature) raises the question whether competing risks for mortality (individuals with higher LDL cholesterol die earlier and therefore have a lower life time-risk of hypertension) was sufficiently taken into account.\n\n3) The authors do not explain the counterintuitive finding that lower chloride levels are associated with a higher risk of hypertension.\n\n4) The models with the 6 covariates that remained is reported for European and Hispanic (Mexican) Americans, but not for African Americans. This would be of interest as African Americans are known to have a more slat-sensitive type of hypertension and are genetically more different compared to European and Hispanic Americans (who have the common European background).\n",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "06b90d7d-65d7-4c0a-9548-5b65ea1ad51a",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C1",
+      "claim": "Hypertension has a lifetime risk of approximately 90% by the ninth decade of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Given a lifetime risk of ~90% by the ninth decade of life, it is unknown if there are true controls for hypertension in epidemiological and genetic studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a given fact, drawing from established scientific knowledge about hypertension lifetime risk.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "89b6b4cb-2979-4370-9dba-c5965bd3cb25",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C2",
+      "claim": "The median age at hypertension was approximately a decade earlier in African Americans than in European Americans or Mexican Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "The median age at hypertension was approximately a decade earlier in African Americans than in European Americans or Mexican Americans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data presented in the study, specifically in Figure 2 and the Results section showing median ages of 42, 48, 56, and 57 years for different groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "6a5aaa7f-d7ec-4bda-9bfd-09ffca98c30b",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C3",
+      "claim": "The probability of being free of hypertension at 85 years of age in African Americans was less than half that in European Americans or Mexican Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of being free of hypertension at 85 years of age in African Americans was less than half that in European Americans or Mexican Americans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing 8.4% for African Americans versus 21.4% for European Americans and 20.6% for Mexican Americans.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "b92115e3-3942-41d2-ba86-084bc3530a38",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C4",
+      "claim": "Baseline hazard rates increased until nearly 60 years of age and then decreased but did not reach zero in all groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In all groups, baseline hazard rates increased until nearly 60 years of age and then decreased but did not reach zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the hazard rate analysis presented in Figure 4 and described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "e785af77-5581-4d35-8d76-01da5d1da168",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C5",
+      "claim": "There are no true controls for hypertension, and controls in logistic regression are cases with a late age of onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, modeling of the baseline hazard function of hypertension suggests that there are no true controls and that controls in logistic regression are cases with a late age of onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the modeling results showing non-zero hazard rates and lack of support for a permanent stayer fraction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "7f9e35f1-4c4d-430d-bc2d-d97a89846b51",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C6",
+      "claim": "Hypertension affects approximately 45% of adults in the US.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypertension, or abnormally high blood pressure, is common in the US, affecting approximately 45% of adults (Centers for Disease Control and Prevention, National Center for Health Statistics, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to CDC data from 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "edbbec83-5f6e-43a5-bc2d-84bddbd11aac",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C7",
+      "claim": "Hypertension causes or contributes to nearly half a million deaths a year in the US.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypertension is a risk factor for heart disease and stroke and causes or contributes to nearly half a million deaths a year (Centers for Disease Control and Prevention, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to CDC data from 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "2b8426c3-2f64-464d-9e1f-021292648eed",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C8",
+      "claim": "An estimated 1.13 billion people have hypertension globally.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, an estimated 1.13 billion people have hypertension, and less than 20% of these people have their blood pressure under control (World Health Organization, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO data from 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "c8970911-560f-4f07-a6e2-e2c44564151c",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C9",
+      "claim": "Less than 20% of people with hypertension globally have their blood pressure under control.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, an estimated 1.13 billion people have hypertension, and less than 20% of these people have their blood pressure under control (World Health Organization, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO data from 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "7fafe654-61c6-4609-a9a7-af0013ee1c73",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C10",
+      "claim": "Systolic blood pressure has a general tendency to increase linearly with age, across sexes and ethnic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Systolic blood pressure (SBP) has a general tendency to increase linearly with age, across sexes and ethnic groups (Burt et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Burt et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "73d4ee26-3329-4592-b44d-91b5148574a5",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C11",
+      "claim": "Diastolic blood pressure has a general tendency to increase until the end of the fifth decade of life, after which DBP either stabilizes or decreases, across sexes and ethnic groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Diastolic blood pressure (DBP) has a general tendency to increase until the end of the fifth decade of life, after which DBP either stabilizes or decreases, again across sexes and ethnic groups (Burt et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Burt et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "f51e3cb7-a8c3-4bf9-8e25-104693a76a3f",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C12",
+      "claim": "An individual who is normotensive at 55-65 years of age has an 80-90% residual lifetime risk of developing hypertension, adjusted for competing causes of mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Framingham Heart Study, an individual who is normotensive at 55\u201365 years of age has an 80\u201390% residual lifetime risk of developing hypertension, adjusted for competing causes of mortality (Vasan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the Framingham Heart Study (Vasan et al., 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "0fa2ac0b-e4dd-41a7-8ce2-9006c1668f46",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C13",
+      "claim": "Compared to age-matched European Americans, hypertension in African Americans develops at an earlier age and is more prevalent.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to age-matched European Americans, hypertension in African Americans develops at an earlier age and is more prevalent (Chobanian et al., 2003; Cooper et al., 1996; Mozaffarian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to three studies (Chobanian et al., 2003; Cooper et al., 1996; Mozaffarian et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "15effdc9-593a-4c12-bf84-b1b148a0e3e2",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C14",
+      "claim": "Median systolic blood pressure increased with age across African Americans, European Americans, and Mexican Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "Across African Americans, European Americans, and Mexican Americans, median systolic blood pressure increased with age, whereas median diastolic blood pressure increased and then decreased (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "6d44a8da-aad1-48e9-a767-3923eab08194",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C15",
+      "claim": "Median diastolic blood pressure increased and then decreased with age across African Americans, European Americans, and Mexican Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "Across African Americans, European Americans, and Mexican Americans, median systolic blood pressure increased with age, whereas median diastolic blood pressure increased and then decreased (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "7768a15f-a04b-4f9f-9fe5-4c0fd6842a13",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C16",
+      "claim": "By 85 years of age, 12.2% (95% credible interval [5.1%, 20.6%]) of African Americans in HUFS remained free of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "In the discovery study (HUFS), by 85 years of age, 12.2% (95% credible interval (CI) [5.1%, 20.6%]) of African Americans remained free of hypertension (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "c25c71ec-dff6-47c9-91ec-13bd3cecc940",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C17",
+      "claim": "By 85 years of age, 8.4% (95% CI [5.4%, 11.6%]) of African Americans in NHANES remained free of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "In the replication study (NHANES), by 85 years of age, 8.4% (95% CI [5.4%, 11.6%]) of African Americans, 21.4% (95% CI [18.1%, 24.6%]) of European Americans, and 20.6% (95% CI [13.6%, 27.3%]) of Mexican Americans remained free of hypertension (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "2de2c38a-82c7-4e2a-a0d7-db385fbc3bdd",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C18",
+      "claim": "By 85 years of age, 21.4% (95% CI [18.1%, 24.6%]) of European Americans in NHANES remained free of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "In the replication study (NHANES), by 85 years of age, 8.4% (95% CI [5.4%, 11.6%]) of African Americans, 21.4% (95% CI [18.1%, 24.6%]) of European Americans, and 20.6% (95% CI [13.6%, 27.3%]) of Mexican Americans remained free of hypertension (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "d8231186-29a8-423d-9336-d38ab5f00412",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C19",
+      "claim": "By 85 years of age, 20.6% (95% CI [13.6%, 27.3%]) of Mexican Americans in NHANES remained free of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "In the replication study (NHANES), by 85 years of age, 8.4% (95% CI [5.4%, 11.6%]) of African Americans, 21.4% (95% CI [18.1%, 24.6%]) of European Americans, and 20.6% (95% CI [13.6%, 27.3%]) of Mexican Americans remained free of hypertension (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "7133bb9e-a949-4426-90a9-f2ced1d4213e",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C20",
+      "claim": "The median age at which hypertension occurred was 48 (95% CI [45, 50]) years for African Americans in HUFS.",
+      "claim_type": "EXPLICIT",
+      "source": "The median age at which hypertension occurred was 48 (95% CI [45, 50]) years for African Americans in HUFS and 42 (95% CI [40, 44]) years for African Americans, 57 (95% CI [55, 59]) years for European Americans, and 56 (95% CI [54, 58]) years for Mexican Americans in NHANES (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "ff763c41-18d0-4a61-9bdd-55bfe02aa17b",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C21",
+      "claim": "The median age at which hypertension occurred was 42 (95% CI [40, 44]) years for African Americans in NHANES.",
+      "claim_type": "EXPLICIT",
+      "source": "The median age at which hypertension occurred was 48 (95% CI [45, 50]) years for African Americans in HUFS and 42 (95% CI [40, 44]) years for African Americans, 57 (95% CI [55, 59]) years for European Americans, and 56 (95% CI [54, 58]) years for Mexican Americans in NHANES (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "7395e50e-73ed-46e1-83b7-c834e97ef16d",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C22",
+      "claim": "The median age at which hypertension occurred was 57 (95% CI [55, 59]) years for European Americans in NHANES.",
+      "claim_type": "EXPLICIT",
+      "source": "The median age at which hypertension occurred was 48 (95% CI [45, 50]) years for African Americans in HUFS and 42 (95% CI [40, 44]) years for African Americans, 57 (95% CI [55, 59]) years for European Americans, and 56 (95% CI [54, 58]) years for Mexican Americans in NHANES (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "87081233-98d0-4cf7-ba97-a80b4e44706c",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C23",
+      "claim": "The median age at which hypertension occurred was 56 (95% CI [54, 58]) years for Mexican Americans in NHANES.",
+      "claim_type": "EXPLICIT",
+      "source": "The median age at which hypertension occurred was 48 (95% CI [45, 50]) years for African Americans in HUFS and 42 (95% CI [40, 44]) years for African Americans, 57 (95% CI [55, 59]) years for European Americans, and 56 (95% CI [54, 58]) years for Mexican Americans in NHANES (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "e2499ba0-0377-48b4-a244-49c389ae8a24",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C24",
+      "claim": "The log-normal distribution yielded the highest likelihood among six parametric distributions for the baseline hazard function in HUFS data.",
+      "claim_type": "EXPLICIT",
+      "source": "Log-normal, gamma, and Weibull distributions all yielded good fits to the HUFS data (Figure 3), with the log-normal distribution yielding the highest likelihood of the six parametric distributions (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by likelihood values presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "fb77e9b2-f832-4afd-9f05-ef5340f16072",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C25",
+      "claim": "A nonparametric hazard function yielded the highest likelihood overall compared to parametric distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, a nonparametric hazard function yielded the highest likelihood (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by likelihood values presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "5b599779-929d-47fb-8066-b9c0a6a15879",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C26",
+      "claim": "The initial hazard rate for African Americans (0.0123 (95% highest posterior density interval [0.0091, 0.0161])) was larger than the initial hazard rate for both European Americans (0.0028 (95% highest posterior density interval [0.0013, 0.0044])) and Mexican Americans (0.0036 (95% highest posterior density interval [0.0019, 0.0052])).",
+      "claim_type": "EXPLICIT",
+      "source": "The initial hazard rate for African Americans (0.0123 (95% highest posterior density interval [0.0091, 0.0161])) was larger than the initial hazard rate for both European Americans (0.0028 (95% highest posterior density interval [0.0013, 0.0044])) and Mexican Americans (0.0036 (95% highest posterior density interval [0.0019, 0.0052])).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by hazard rate estimates from the Bayesian model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "f84f0518-1afb-4cae-b8fc-e8f6fc1e69e0",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C27",
+      "claim": "The maximum hazard rate for African Americans (0.0630 (95% highest posterior density interval [0.0341, 0.0940])) was trending larger than the maximum hazard rate for European Americans (0.0368 (95% highest posterior density interval [0.0200, 0.0546])) and Mexican Americans (0.0417 (95% highest posterior density interval [0.0219, 0.0635])).",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum hazard rate for African Americans (0.0630 (95% highest posterior density interval [0.0341, 0.0940])) was trending larger than the maximum hazard rate for European Americans (0.0368 (95% highest posterior density interval [0.0200, 0.0546])) and Mexican Americans (0.0417 (95% highest posterior density interval [0.0219, 0.0635])).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by hazard rate estimates from the Bayesian model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "156f25ae-f587-46ad-a604-9694cee5bee3",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C28",
+      "claim": "The age of maximum hazard was 55 (95% CI [43, 72]) years in HUFS.",
+      "claim_type": "EXPLICIT",
+      "source": "The age of maximum hazard was 55 (95% CI [43, 72]) years in HUFS and 58 (95% CI [48, 67]) years in African Americans, 60 (95% CI [52, 70]) years in European Americans, and 58 (95% CI [48, 69]) years in Mexican Americans in NHANES (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "85359071-cd45-4bea-b3c2-b2c2614aae5d",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C29",
+      "claim": "The age of maximum hazard was 58 (95% CI [48, 67]) years in African Americans in NHANES.",
+      "claim_type": "EXPLICIT",
+      "source": "The age of maximum hazard was 55 (95% CI [43, 72]) years in HUFS and 58 (95% CI [48, 67]) years in African Americans, 60 (95% CI [52, 70]) years in European Americans, and 58 (95% CI [48, 69]) years in Mexican Americans in NHANES (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "09437892-ebd4-4886-b47a-d4933754e11b",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C30",
+      "claim": "The age of maximum hazard was 60 (95% CI [52, 70]) years in European Americans in NHANES.",
+      "claim_type": "EXPLICIT",
+      "source": "The age of maximum hazard was 55 (95% CI [43, 72]) years in HUFS and 58 (95% CI [48, 67]) years in African Americans, 60 (95% CI [52, 70]) years in European Americans, and 58 (95% CI [48, 69]) years in Mexican Americans in NHANES (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "02bdb689-8624-4cae-a8c6-4cbb9ceefec5",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C31",
+      "claim": "The age of maximum hazard was 58 (95% CI [48, 69]) years in Mexican Americans in NHANES.",
+      "claim_type": "EXPLICIT",
+      "source": "The age of maximum hazard was 55 (95% CI [43, 72]) years in HUFS and 58 (95% CI [48, 67]) years in African Americans, 60 (95% CI [52, 70]) years in European Americans, and 58 (95% CI [48, 69]) years in Mexican Americans in NHANES (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data analysis presented in the Results section and shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "596bef4d-c4dc-4c9c-a7c9-4919261d8bbf",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C32",
+      "claim": "Logistic regression yielded a better fit than the proportional hazards model based on the DIC, provided that both age and age\u00b2 were included as covariates.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the HUFS data, we found that logistic regression yielded a better fit than the proportional hazards model based on the DIC, provided that both age and age2 were included as covariates in the logistic regression model (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DIC values presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "a0436693-bbce-4c18-8104-c8912b18f3de",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C33",
+      "claim": "The addition of age to the reduced (intercept-only) model resulted in a substantially lower DIC, with a linear effect of age explaining 27.8% of the variance at the cost of one additional parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Using logistic regression, the addition of age to the reduced (intercept-only) model resulted in a substantially lower DIC (Table 2), with a linear effect of age explaining 27.8% of the variance at the cost of one additional parameter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DIC values and variance explained calculations from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "f1f9f30b-a8b3-44f2-959c-3d317d84ada8",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C34",
+      "claim": "The addition of age\u00b2 further decreased the DIC, explaining an additional 0.8% of the variance at the cost of one additional parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of age2 further decreased the DIC (Table 2), explaining an additional 0.8% of the variance at the cost of one additional parameter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DIC values and variance explained calculations from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "66935b32-dc6d-450d-aa50-14d89ca547d1",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C35",
+      "claim": "Inclusion of a permanent stayer fraction increased the DIC of the proportional hazards model, indicating that inclusion of a permanent stayer fraction was not supported.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that inclusion of a permanent stayer fraction increased the DIC of the proportional hazards model, indicating that inclusion of a permanent stayer fraction was not supported (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DIC values presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "baa42e43-b9ce-4db4-b6cc-9d2f910243d0",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C36",
+      "claim": "In the HUFS data set, the final model from forward-backward regression included six covariates: chloride, insulin, low-density lipoprotein cholesterol, potassium, uric acid, and weight.",
+      "claim_type": "EXPLICIT",
+      "source": "In the HUFS data set, the final model included six of these covariates: chloride, insulin, low-density lipoprotein cholesterol, potassium, uric acid, and weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the model selection procedure described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "9e1669f4-1be1-4515-898c-ae7f626e0f36",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C37",
+      "claim": "Compared to the logistic model with age and age\u00b2, the six selected covariates improved the fit (p=2.01 \u00d7 10\u207b\u00b9\u2075) and explained an additional 8.1% of the variance, for a total of 36.7% of variance explained.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the logistic model with age and age2, these six covariates improved the fit (p=2.01 \u00d7 10\u221215) and explained an additional 8.1% of the variance, for a total of 36.7% of variance explained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis comparing models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "468e3922-2d66-4b16-b83d-a3af6f1ec7b1",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C38",
+      "claim": "Each of the six covariates selected in HUFS were replicated (p-values from 2.81 \u00d7 10\u207b\u00b2 to 1.83 \u00d7 10\u207b\u00b9\u00b2) and directionally consistent in NHANES African Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these six covariates were replicated (p-values from 2.81 \u00d7 10\u22122 to 1.83 \u00d7 10\u221212) and directionally consistent in NHANES African Americans (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by replication analysis presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "3a48b22b-692b-4332-bc5e-b680c0210ceb",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C39",
+      "claim": "Chloride, low-density lipoprotein cholesterol, potassium, uric acid, and weight, but not insulin, were significant covariates in NHANES European Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, chloride, low-density lipoprotein cholesterol, potassium, uric acid, and weight, but not insulin, were significant covariates in NHANES European Americans, whereas chloride, insulin, low-density lipoprotein cholesterol, uric acid, and weight, but not potassium, were significant covariates in NHANES Mexican Americans (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis presented in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "3d73e8e0-f300-4a24-88bc-50ec3acc2c41",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C40",
+      "claim": "Chloride, insulin, low-density lipoprotein cholesterol, uric acid, and weight, but not potassium, were significant covariates in NHANES Mexican Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, chloride, low-density lipoprotein cholesterol, potassium, uric acid, and weight, but not insulin, were significant covariates in NHANES European Americans, whereas chloride, insulin, low-density lipoprotein cholesterol, uric acid, and weight, but not potassium, were significant covariates in NHANES Mexican Americans (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by analysis presented in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "13efcb81-f995-4907-82df-8727445b4a48",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C41",
+      "claim": "In NHANES, the variance explained by age, age\u00b2, chloride, low-density lipoprotein cholesterol, uric acid, and weight was 40.9% in African Americans, 34.8% in European Americans, and 28.3% in Mexican Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "In NHANES, the variance explained by age, age2, chloride, low-density lipoprotein cholesterol, uric acid, and weight was 40.9% in African Americans, 34.8% in European Americans, and 28.3% in Mexican Americans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by variance explained calculations from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "4cf3a936-4175-48d4-93ef-a25321a54403",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C42",
+      "claim": "Three covariates showed sex dimorphisms in HUFS by Welch's t-test, with uric acid and weight higher in males and low-density lipoprotein cholesterol higher in females.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the selected covariates, three showed sex dimorphisms in HUFS by Welch's t-test, with uric acid and weight higher in males and low-density lipoprotein cholesterol higher in females (Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis presented in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "87495ab4-5074-4d24-9d85-b7fee47aca5c",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C43",
+      "claim": "Across African Americans, European Americans, and Mexican Americans, increasing low-density lipoprotein cholesterol was associated with decreased risk of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, across African Americans, European Americans, and Mexican Americans, increasing low-density lipoprotein cholesterol was associated with decreased risk of hypertension (Tables 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by regression coefficients presented in Tables 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "745d3ccd-27a8-4f8f-8479-e26ff1da1d25",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C44",
+      "claim": "Self-reported use of any lipid medication was associated with increased risk of hypertension (p=1.25 \u00d7 10\u207b\u00b3) in HUFS African Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-reported use of any lipid medication (coded as yes/no) was associated with increased risk of hypertension (p=1.25 \u00d7 10\u22123) but increasing low-density lipoprotein cholesterol remained associated with decreased risk of hypertension (p=4.46 \u00d7 10\u22122).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis accounting for lipid medications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "a72e9817-19c3-4fad-9794-ce733c1cc574",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C45",
+      "claim": "Increasing low-density lipoprotein cholesterol remained associated with decreased risk of hypertension (p=4.46 \u00d7 10\u207b\u00b2) even after accounting for lipid medications in HUFS African Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-reported use of any lipid medication (coded as yes/no) was associated with increased risk of hypertension (p=1.25 \u00d7 10\u22123) but increasing low-density lipoprotein cholesterol remained associated with decreased risk of hypertension (p=4.46 \u00d7 10\u22122).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis accounting for lipid medications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "65ace2ef-a14e-47d2-b6dc-f5ed301525fb",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C46",
+      "claim": "For each of the selected covariates, the Akaike information criterion was larger for the model containing a term that interacted with age.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of the selected covariates, the Akaike information criterion was larger for the model containing a term that interacted with age (Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AIC values presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "435744e2-1ebc-41ad-93ee-f29f2d246ab8",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C47",
+      "claim": "The evidence does not support time-dependence for any of the selected covariates.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the evidence does not support time-dependence for any of the selected covariates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the AIC analysis showing worse fit with interaction terms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "53ad6682-6993-4e18-bf45-a3c7fb3d60b6",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C48",
+      "claim": "Under the 2017 revised classification of hypertension (SBP \u2265130 mm Hg or DBP \u226580 mm Hg), the prevalence of hypertension in HUFS increased from 48.3% to 66.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these more stringent thresholds, the prevalence of hypertension increased from 48.3% to 66.1%, the median time to hypertension decreased to 36 years (95% CI [33, 39]), the age at maximum hazard increased to 57 (95% CI [33, 72]) years, and the lifetime risk at 85 years of age increased to 95.8% (95% CI [90.3%, 99.2%]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reanalysis of HUFS data using the 2017 revised thresholds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "57fcc501-784e-4f61-8e0f-549293ef7acc",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C49",
+      "claim": "Under the 2017 revised classification, the median time to hypertension in HUFS decreased to 36 years (95% CI [33, 39]).",
+      "claim_type": "EXPLICIT",
+      "source": "Under these more stringent thresholds, the prevalence of hypertension increased from 48.3% to 66.1%, the median time to hypertension decreased to 36 years (95% CI [33, 39]), the age at maximum hazard increased to 57 (95% CI [33, 72]) years, and the lifetime risk at 85 years of age increased to 95.8% (95% CI [90.3%, 99.2%]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reanalysis of HUFS data using the 2017 revised thresholds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "289d6d06-9c9e-46fa-8f60-72a38bc54a15",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C50",
+      "claim": "Under the 2017 revised classification, the age at maximum hazard in HUFS increased to 57 (95% CI [33, 72]) years.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these more stringent thresholds, the prevalence of hypertension increased from 48.3% to 66.1%, the median time to hypertension decreased to 36 years (95% CI [33, 39]), the age at maximum hazard increased to 57 (95% CI [33, 72]) years, and the lifetime risk at 85 years of age increased to 95.8% (95% CI [90.3%, 99.2%]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reanalysis of HUFS data using the 2017 revised thresholds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "488b242d-a0b0-4663-b926-53910d49b840",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C51",
+      "claim": "Under the 2017 revised classification, the lifetime risk at 85 years of age in HUFS increased to 95.8% (95% CI [90.3%, 99.2%]).",
+      "claim_type": "EXPLICIT",
+      "source": "Under these more stringent thresholds, the prevalence of hypertension increased from 48.3% to 66.1%, the median time to hypertension decreased to 36 years (95% CI [33, 39]), the age at maximum hazard increased to 57 (95% CI [33, 72]) years, and the lifetime risk at 85 years of age increased to 95.8% (95% CI [90.3%, 99.2%]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reanalysis of HUFS data using the 2017 revised thresholds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "a8f6c5e9-2c07-4b26-8a1c-223cde9f31bf",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C52",
+      "claim": "The inflection point in hazard rates is consistent with the log-normal parametric distribution yielding the best fit among the parametric distributions explored.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bayesian model of the hazard rates revealed an inflection point, consistent with the log-normal parametric distribution yielding the best fit among the parametric distributions we explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the observed inflection point to the best-fitting distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "2fdb5e69-c6f4-4bbf-8138-98f00525d6aa",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C53",
+      "claim": "The simplest explanation for the inflection point in hazard rates is the change in trajectory of DBP, with the decrease in DBP leading to a decreased hazard of hypertension and consequently a reduced number of events.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the simplest explanation for the inflection point in hazard rates is the change in trajectory of DBP, with the decrease in DBP leading to a decreased hazard of hypertension and consequently a reduced number of events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation proposed by the authors for the observed inflection point.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "09175f5e-5cd0-4c37-936a-5beb65f671b7",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C54",
+      "claim": "The finding that the hazard rate does not reach zero (by 85 years of age) indicates the continued presence of risk.",
+      "claim_type": "EXPLICIT",
+      "source": "We cannot rule out the possibility that there are individuals who are at less risk, although the finding that the hazard rate does not reach zero (by 85 years of age) indicates the continued presence of risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that hazard rates remain non-zero.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "56921494-a1b5-40ea-99fa-e521b4caabbc",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C55",
+      "claim": "It is possible that mortality due to comorbidities begins to subside by around 60 years of age, leading to reduced hazard rates of hypertension in older ages.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that mortality due to comorbidities begins to subside by around 60 years of age, leading to reduced hazard rates of hypertension in older ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation proposed by the authors for the observed decrease in hazard rates.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "59eea929-cd2e-4bb0-a231-17e213c267db",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C56",
+      "claim": "Studies of hypertension using a case-control design should always include a logistic regression adjustment for both linear and quadratic effects of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we recommend that studies of hypertension using a case-control design should always include a logistic regression adjustment for both linear and quadratic effects of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the finding that proportional hazards and logistic regression with age and age\u00b2 provide comparable fits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "f2efbd53-1894-49ba-8365-41235ad1a89c",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C57",
+      "claim": "The permanent stayer fraction essentially corresponded to the fraction of individuals who had not yet become hypertensive at the last observed age.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the permanent stayer fraction essentially corresponded to the fraction of individuals who had not yet become hypertensive at the last observed age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "27594328-4fc2-4d26-9d53-c1f3ac0c2216",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C58",
+      "claim": "The assumption that the event will occur for every individual at some point in time, unless the individual dies first, is valid for hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "A major implication for proportional hazards analysis is that the assumption that the event will occur for every individual at some point in time, unless the individual dies first, is valid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the finding that the permanent stayer fraction did not improve model fit.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "c99f0fce-4a74-4fd6-964b-34b4ded898cc",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C59",
+      "claim": "Controls in logistic regression should be interpreted as individuals that have not yet become hypertensive, rather than as individuals who will not become hypertensive.",
+      "claim_type": "EXPLICIT",
+      "source": "A major implication for logistic regression is that controls should be interpreted as individuals that have not yet become hypertensive, rather than as individuals who will not become hypertensive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the finding that there are no true controls.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "1ff254cd-39d9-4183-9787-0abaab679b69",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C60",
+      "claim": "Traditional risk factors for hypertension include excess body weight, excess dietary sodium intake, reduced physical activity, deficiency of potassium, and excess alcohol intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional risk factors for hypertension include excess body weight, excess dietary sodium intake, reduced physical activity, deficiency of potassium, and excess alcohol intake (Chobanian et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chobanian et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "aca330d4-aa12-485a-80f8-62aa48c2e7e8",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C61",
+      "claim": "Excess weight and low potassium, but not excess sodium, were confirmed as risk factors in the multiple regression model.",
+      "claim_type": "EXPLICIT",
+      "source": "One, we confirmed that excess weight and low potassium, but not excess sodium, were risk factors in our multiple regression model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the model selection results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "b5c95b9d-5581-4f81-b12f-22a13cba60da",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C62",
+      "claim": "Chloride was negatively associated with hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that chloride was negatively associated with hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by regression coefficients from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "5e37e3b0-3dc7-4d7f-9825-bd3db5753302",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C63",
+      "claim": "Lower serum chloride levels have been associated with higher risks of hypertension and cardiovascular disease and higher all-cause and cause-specific mortality among hypertensives.",
+      "claim_type": "EXPLICIT",
+      "source": "Although high dietary intake of chloride is a risk factor for hypertension, lower serum chloride levels have been associated with higher risks of hypertension and cardiovascular disease and higher all-cause and cause-specific mortality among hypertensives (McCallum et al., 2013; Taylor et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to McCallum et al., 2013 and Taylor et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "7f07d819-4d10-4825-ba2f-27480607de60",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C64",
+      "claim": "In the Framingham Heart Study, the incidence rate of hypertension increased faster in females than in males, with females having lower incidence under 50 years of age and higher incidence over 50 years of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Two, longitudinal analysis of 30 years of follow-up in the Framingham Heart Study showed that the incidence rate of hypertension increased faster in females than in males, with females having lower incidence under 50 years of age and higher incidence over 50 years of age (Dannenberg et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dannenberg et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "01f4f157-e6f5-42e1-96fc-d7cc0b1b7347",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C65",
+      "claim": "Sex was not a significant covariate in the model selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that sex was not a significant covariate, although low-density lipoprotein cholesterol, uric acid, and weight showed sex dimorphisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the model selection results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "61496846-4e5d-4e1c-a3a7-49276835cea6",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C66",
+      "claim": "The findings regarding hazard rates at early ages are consistent with low birth weight being a risk factor for hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Three, we did not have data on birth weight, but our findings regarding hazard rates at early ages are consistent with low birth weight being a risk factor for hypertension (Lackland et al., 2003) and African Americans having lower birth weight than European Americans (David and Collins, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the observed early hazard rates to known risk factors from the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "be529252-3847-4c8e-8fb7-533b17bed177",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C67",
+      "claim": "African Americans have lower birth weight than European Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "Three, we did not have data on birth weight, but our findings regarding hazard rates at early ages are consistent with low birth weight being a risk factor for hypertension (Lackland et al., 2003) and African Americans having lower birth weight than European Americans (David and Collins, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to David and Collins, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "db944000-ad5b-490c-b7f3-cc4564a1b8c2",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C68",
+      "claim": "Low-density lipoprotein cholesterol has been reported to be positively associated with hypertension, but this association generally does not remain significant after covariate adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-density lipoprotein cholesterol has been reported to be positively associated with hypertension, but this association generally does not remain significant after covariate adjustment (Haffner et al., 1992; Laaksonen et al., 2008; Otsuka et al., 2016; Sesso et al., 2005; Wildman et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "a1530410-64a7-4ecb-8296-331222914969",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C69",
+      "claim": "The opposite direction of effect of LDL cholesterol was not due to other (known) covariates.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained a negative association in both single and multiple regression models, suggesting that the opposite direction of effect was not due to other (known) covariates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing single and multiple regression results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "b1f7609c-5d3a-4581-9886-fff8d6011867",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C70",
+      "claim": "The opposite direction of effect of LDL cholesterol was not due to a time-dependent effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the opposite direction of effect was not due to a time-dependent effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the time-dependence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "15193b19-707c-43dc-9a6d-17eeb5546afc",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C71",
+      "claim": "The opposite direction of effect of LDL cholesterol was not due to confounding by self-reported use of medication (i.e. statins).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the opposite direction of effect was not due to confounding by self-reported use of medication (i.e. statins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the analysis accounting for lipid medications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "b7419490-8aa1-49f0-9544-e8ef5d444b84",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C72",
+      "claim": "Studies of the relationship between low-density lipoprotein cholesterol and healthy aging have led to conflicting conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of the relationship between low-density lipoprotein cholesterol and healthy aging have led to conflicting conclusions, with some studies reporting a negative association (Barzilai et al., 2001; Postmus et al., 2015) and other studies reporting a positive association (Lv et al., 2015; Lv et al., 2019; Rantanen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies with conflicting results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "099cfc5a-1fba-42e5-bcb8-d251519f4de8",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C73",
+      "claim": "One possible explanation for the discrepancy in LDL cholesterol associations is survival bias, if individuals with higher low-density lipoprotein cholesterol disproportionately experience mortality prior to the onset of hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation for this discrepancy is survival bias, if individuals with higher low-density lipoprotein cholesterol disproportionately experience mortality prior to the onset of hypertension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "17e2c3db-1218-4634-8f90-4312869f8a01",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C74",
+      "claim": "Uric acid is associated with hypertension, but whether this association is causal remains unestablished.",
+      "claim_type": "EXPLICIT",
+      "source": "Uric acid is associated with hypertension, but whether this association is causal remains unestablished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge regarding uric acid and hypertension.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "eda3b75c-e6ec-49fb-83c1-4c7e78e25fea",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C75",
+      "claim": "Mendelian randomization studies have provided conflicting evidence regarding the causality of uric acid for hypertension.",
+      "claim_type": "EXPLICIT",
+      "source": "Mendelian randomization (MR) studies have provided conflicting evidence regarding the causality of uric acid for hypertension, with evidence for no effect (Palmer et al., 2013), protection (Sedaghat et al., 2014), and risk (Parsa et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple MR studies with conflicting results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "fbc38ded-6845-4436-b587-96b8e0865896",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C76",
+      "claim": "MR studies have reported that uric acid is not causal for adiposity, chronic kidney disease, triglycerides, type 2 diabetes, or obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "MR studies have reported that uric acid is not causal for adiposity, chronic kidney disease, triglycerides, type 2 diabetes, or obesity (Jordan et al., 2019; Kleber et al., 2015; Lyngdoh et al., 2012; Rasheed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple MR studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "68e51c34-1ce4-4b8a-a56f-b613d5ea911b",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C77",
+      "claim": "Higher adiposity, higher body mass index, lower high-density lipoprotein cholesterol, and higher triglycerides are causally associated with increased uric acid.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, higher adiposity, higher body mass index, lower high-density lipoprotein cholesterol, and higher triglycerides are causally associated with increased uric acid (Lyngdoh et al., 2012; Palmer et al., 2013; Rasheed et al., 2014; Yu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "86789d69-c4e8-408e-b58d-004b871d709d",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C78",
+      "claim": "The association of uric acid with hypertension may reflect pleiotropy through linked metabolic pathways, perhaps those involving lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of uric acid with hypertension may reflect pleiotropy through linked metabolic pathways, perhaps those involving lipid metabolism (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation supported by a citation to Li et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "2e6e75aa-e7e9-4040-b81e-baf935ec8bbc",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C79",
+      "claim": "All covariates that were significant during model selection in HUFS replicated in NHANES African Americans, indicating that the findings in HUFS were generalizable to the national level.",
+      "claim_type": "EXPLICIT",
+      "source": "All covariates that were significant during model selection in HUFS replicated in NHANES African Americans, indicating that the findings in HUFS were generalizable to the national level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the replication of findings across studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "01438bcc-4454-4b09-92a4-ce516f88c0a4",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C80",
+      "claim": "If an individual lives long enough, hypertension is inevitable.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence to support the existence of true controls, suggesting that if an individual lives long enough, hypertension is inevitable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the modeling results showing no support for a permanent stayer fraction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "56d531f5-38af-478a-a162-296f374f65f8",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C81",
+      "claim": "The combination of chloride, low-density lipoprotein cholesterol, uric acid, and weight, in addition to age and age\u00b2, accounted for 40.9% of the variance of hypertension in African Americans, 34.8% in European Americans, and 28.3% in Mexican Americans.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that the combination of chloride, low-density lipoprotein cholesterol, uric acid, and weight, in addition to age and age2, accounted for 40.9% of the variance of hypertension in African Americans, 34.8% in European Americans, and 28.3% in Mexican Americans, simultaneously consistent with common risk factors among the groups and heterogeneity across the groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by variance explained calculations from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "cda31bad-a1e4-4c1d-98ce-ac4a67f72182",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C82",
+      "claim": "The variance explained by the selected covariates is simultaneously consistent with common risk factors among the groups and heterogeneity across the groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that the combination of chloride, low-density lipoprotein cholesterol, uric acid, and weight, in addition to age and age2, accounted for 40.9% of the variance of hypertension in African Americans, 34.8% in European Americans, and 28.3% in Mexican Americans, simultaneously consistent with common risk factors among the groups and heterogeneity across the groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the variance explained results showing both commonalities and differences across groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "0e05335e-e34a-42b9-a520-1ae93acec2d8",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C83",
+      "claim": "The Howard University Family Study (HUFS) is a population-based observational study of African American families and unrelated individuals from Washington, D.C.",
+      "claim_type": "EXPLICIT",
+      "source": "The Howard University Family Study (HUFS) is a population-based observational study of African American families and unrelated individuals from Washington, D.C. (Adeyemo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the study design supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "073c0e0d-8903-48b2-8392-7f4e4bed4b4e",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C84",
+      "claim": "Hypertension was defined as SBP \u2265140 mm Hg, DBP \u226590 mm Hg, or treatment with anti-hypertensive medication in HUFS.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypertension was defined as SBP \u2265140 mm Hg, DBP \u226590 mm Hg, or treatment with anti-hypertensive medication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "592eb4aa-1cae-4036-a1d5-363c0cd26881",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "claim_id": "C85",
+      "claim": "The 2017 revised classification of hypertension defines it as SBP \u2265130 mm Hg or DBP \u226580 mm Hg.",
+      "claim_type": "EXPLICIT",
+      "source": "We reanalyzed the HUFS data based on the 2017 reclassification of hypertension as SBP \u2265130 mm Hg or DBP \u226580 mm Hg (Whelton et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological definition supported by a citation to Whelton et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "African Americans develop hypertension earlier and have lower probability of remaining hypertension-free compared to European Americans and Mexican Americans. The median age at hypertension was approximately a decade earlier in African Americans (42-48 years) than in European Americans (57 years) or Mexican Americans (56 years), and by age 85, only 8.4-12.2% of African Americans remained free of hypertension compared to ~21% in the other groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C20-C23, C16-C19, and C26-C31 provide consistent, quantitative evidence across two independent cohorts (HUFS and NHANES) with credible intervals. The findings replicate known health disparities and are supported by Figures 2 and 4 showing clear separation between ethnic groups in survival curves and hazard rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "19707d7a-08de-4a18-b479-a3453be1f953",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Hazard rates for hypertension increase until approximately 60 years of age, then decrease but remain non-zero through age 85. The log-normal distribution provided the best parametric fit, though a nonparametric model yielded the highest overall likelihood, and the hazard rates showed an inflection point consistent with the log-normal distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C24, C25, C52, and C54 are well-supported by likelihood comparisons in Table 1 and hazard rate modeling shown in Figure 4. The non-zero hazard rates at advanced ages are consistently observed across all ethnic groups, providing strong evidence for continued risk.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "6253966f-dcfe-42d1-9f1c-6b5b4a68c839",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "There are no true controls for hypertension; individuals classified as controls in case-control studies are actually cases with late age of onset. Modeling with a permanent stayer fraction worsened model fit (increased DIC), indicating that if individuals live long enough, hypertension is inevitable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C35, C57, C58, C59, and C80 are supported by the DIC analysis in Table 2 showing that including a permanent stayer fraction increased DIC, indicating worse fit. The non-zero hazard rates at all ages (C4, C54) provide additional support. This is a major conceptual finding with implications for study design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "99d1db53-5c58-4708-9cff-5ed6325b6624",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Logistic regression with age and age\u00b2 provides a fit comparable to proportional hazards models for hypertension. Age explains 27.8% of variance and age\u00b2 adds 0.8%, with the effective dimensionality of the proportional hazards model (3.3) being comparable to logistic regression with age and age\u00b2 (3.0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 and C56 are supported by DIC comparisons in Table 2. The recommendation (C56) follows logically from the comparable model fits. However, the small additional variance explained by age\u00b2 (0.8%) raises questions about practical significance, though the DIC improvement supports its inclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Six covariates (chloride, insulin, LDL cholesterol, potassium, uric acid, and weight) were identified through model selection in HUFS and replicated in NHANES African Americans. These covariates, along with age and age\u00b2, explained 40.9% of variance in African Americans, 34.8% in European Americans, and 28.3% in Mexican Americans, showing both common risk factors and ethnic heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41, C61, C79, C81-C82 are well-supported by Tables 3-4 showing replication with significant p-values and directional consistency. The variance explained is substantial and the replication across cohorts strengthens the findings. Minor differences across ethnic groups (e.g., insulin non-significant in European Americans, potassium borderline in Mexican Americans) are acknowledged and explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "3b31f153-c03d-42c8-8e44-728a44e40137",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Increasing LDL cholesterol was unexpectedly associated with decreased risk of hypertension across all ethnic groups. This negative association persisted in both single and multiple regression models, was not time-dependent, and remained significant after accounting for lipid medications, contradicting prior literature showing positive or null associations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43-C45 and C69-C71 show consistent negative associations across ethnic groups (Tables 3-4), but this contradicts established literature (C68). While the authors rule out several confounders, the proposed explanation of survival bias (C73) is speculative and untestable with the cross-sectional data. The lack of longitudinal follow-up to assess competing mortality risks is a critical limitation that prevents definitive interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "34a69c54-d9f6-4c21-85e6-f246efa26bd0",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sex was not a significant covariate in the model selection, despite three covariates (uric acid, weight, LDL cholesterol) showing sex dimorphisms in HUFS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C65 are supported by Table 5 showing significant sex differences in three covariates and the model selection results showing sex was not retained. This suggests that sex effects on hypertension may be mediated through these intermediate phenotypes rather than being independent. The finding is internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "8140cab1-282c-4669-bae0-195fcf8ca43c",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "None of the selected covariates showed evidence of time-dependence, as models with age-interaction terms had larger AIC values than models without interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C47 are supported by Table 6 showing consistently larger AIC values for all interaction models. The analysis appropriately uses AIC for model comparison. This is a methodological finding that validates the use of time-independent covariate effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "dc4eb432-6646-438b-9633-11ba9a936354",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Under the 2017 revised hypertension classification (SBP \u2265130 or DBP \u226580 mm Hg), prevalence increased from 48.3% to 66.1%, median age at hypertension decreased to 36 years, and lifetime risk at age 85 increased to 95.8% in HUFS African Americans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are internally consistent and show the expected directional changes with more stringent diagnostic thresholds. The 95.8% lifetime risk under revised criteria approaches near-universality. However, these are secondary analyses in only one cohort (HUFS) without replication in NHANES, limiting generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "2f2b8306-ee5b-4cb6-bfaa-4b8680e968bb",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Median systolic blood pressure increased with age while median diastolic blood pressure increased then decreased across all ethnic groups, consistent with known blood pressure trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C15 are supported by Figure 1 and are consistent with prior literature (C10, C11). These findings validate the dataset and provide context for the hazard rate inflection point but are confirmatory rather than novel.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "51c13abf-ab88-4c39-bd10-3af648148394",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that the inflection point in hazard rates may be explained by the decrease in diastolic blood pressure after age 60, or alternatively by reduced mortality from comorbidities at older ages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53 and C55 are speculative explanations for the observed inflection point. While the DBP trajectory (C15) provides some support for C53, neither hypothesis is directly tested. The study lacks data on competing mortality risks and longitudinal DBP changes within individuals to evaluate these mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "843a5fff-c087-4d0a-8638-d4f8e42070d0",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Chloride was negatively associated with hypertension, consistent with prior literature showing lower serum chloride levels associated with higher hypertension risk despite high dietary chloride intake being a risk factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62 and C63 are supported by regression coefficients in Tables 3-4 showing consistent negative associations across ethnic groups, and the cited literature (C63) provides biological plausibility. The distinction between dietary intake and serum levels is appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "fd80e3b2-67de-46db-8c2e-cf07f00f91d1",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The higher initial hazard rates in African Americans are consistent with low birth weight being a risk factor for hypertension and African Americans having lower birth weight than European Americans, though birth weight data were not available in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66 and C67 represent post-hoc interpretation connecting observed hazard rates to literature on birth weight. While the cited literature (C66, C67) supports these associations, the lack of actual birth weight data in the study means this remains speculative. The inference is plausible but untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "8d13513e-05ba-422d-940d-c43ff331ffdc",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The association of uric acid with hypertension may reflect pleiotropy through metabolic pathways rather than direct causation, as Mendelian randomization studies show conflicting evidence for causality of uric acid on hypertension but consistent evidence that metabolic factors causally increase uric acid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 appropriately summarize the literature on uric acid and hypertension, noting the conflicting MR evidence (C75) and the more consistent evidence for reverse causation (C77). The interpretation (C78) is reasonable given the cited evidence, though it remains a hypothesis requiring further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    },
+    {
+      "id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6",
+      "content_id": "64c135dd-6444-4501-b0f0-063df2126d67",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about hypertension prevalence, mortality, blood pressure trajectories, and risk factors from prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C13, C60, C64, and C72 are background information supported by appropriate citations to CDC, WHO, and peer-reviewed literature. These provide context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:47:36.851663Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "89b6b4cb-2979-4370-9dba-c5965bd3cb25",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "6a5aaa7f-d7ec-4bda-9bfd-09ffca98c30b",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "7133bb9e-a949-4426-90a9-f2ced1d4213e",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "ff763c41-18d0-4a61-9bdd-55bfe02aa17b",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "7395e50e-73ed-46e1-83b7-c834e97ef16d",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "87081233-98d0-4cf7-ba97-a80b4e44706c",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "7768a15f-a04b-4f9f-9fe5-4c0fd6842a13",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "c25c71ec-dff6-47c9-91ec-13bd3cecc940",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "2de2c38a-82c7-4e2a-a0d7-db385fbc3bdd",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "d8231186-29a8-423d-9336-d38ab5f00412",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "5b599779-929d-47fb-8066-b9c0a6a15879",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "f84f0518-1afb-4cae-b8fc-e8f6fc1e69e0",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "156f25ae-f587-46ad-a604-9694cee5bee3",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "85359071-cd45-4bea-b3c2-b2c2614aae5d",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "09437892-ebd4-4886-b47a-d4933754e11b",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "02bdb689-8624-4cae-a8c6-4cbb9ceefec5",
+      "result_id": "4875b8cb-d3c1-4e8d-a058-0f6e5e1a0cf5"
+    },
+    {
+      "claim_id": "b92115e3-3942-41d2-ba86-084bc3530a38",
+      "result_id": "19707d7a-08de-4a18-b479-a3453be1f953"
+    },
+    {
+      "claim_id": "e2499ba0-0377-48b4-a244-49c389ae8a24",
+      "result_id": "19707d7a-08de-4a18-b479-a3453be1f953"
+    },
+    {
+      "claim_id": "fb77e9b2-f832-4afd-9f05-ef5340f16072",
+      "result_id": "19707d7a-08de-4a18-b479-a3453be1f953"
+    },
+    {
+      "claim_id": "a8f6c5e9-2c07-4b26-8a1c-223cde9f31bf",
+      "result_id": "19707d7a-08de-4a18-b479-a3453be1f953"
+    },
+    {
+      "claim_id": "09175f5e-5cd0-4c37-936a-5beb65f671b7",
+      "result_id": "19707d7a-08de-4a18-b479-a3453be1f953"
+    },
+    {
+      "claim_id": "e785af77-5581-4d35-8d76-01da5d1da168",
+      "result_id": "6253966f-dcfe-42d1-9f1c-6b5b4a68c839"
+    },
+    {
+      "claim_id": "66935b32-dc6d-450d-aa50-14d89ca547d1",
+      "result_id": "6253966f-dcfe-42d1-9f1c-6b5b4a68c839"
+    },
+    {
+      "claim_id": "f2efbd53-1894-49ba-8365-41235ad1a89c",
+      "result_id": "6253966f-dcfe-42d1-9f1c-6b5b4a68c839"
+    },
+    {
+      "claim_id": "27594328-4fc2-4d26-9d53-c1f3ac0c2216",
+      "result_id": "6253966f-dcfe-42d1-9f1c-6b5b4a68c839"
+    },
+    {
+      "claim_id": "c99f0fce-4a74-4fd6-964b-34b4ded898cc",
+      "result_id": "6253966f-dcfe-42d1-9f1c-6b5b4a68c839"
+    },
+    {
+      "claim_id": "01438bcc-4454-4b09-92a4-ce516f88c0a4",
+      "result_id": "6253966f-dcfe-42d1-9f1c-6b5b4a68c839"
+    },
+    {
+      "claim_id": "596bef4d-c4dc-4c9c-a7c9-4919261d8bbf",
+      "result_id": "99d1db53-5c58-4708-9cff-5ed6325b6624"
+    },
+    {
+      "claim_id": "a0436693-bbce-4c18-8104-c8912b18f3de",
+      "result_id": "99d1db53-5c58-4708-9cff-5ed6325b6624"
+    },
+    {
+      "claim_id": "f1f9f30b-a8b3-44f2-959c-3d317d84ada8",
+      "result_id": "99d1db53-5c58-4708-9cff-5ed6325b6624"
+    },
+    {
+      "claim_id": "59eea929-cd2e-4bb0-a231-17e213c267db",
+      "result_id": "99d1db53-5c58-4708-9cff-5ed6325b6624"
+    },
+    {
+      "claim_id": "baa42e43-b9ce-4db4-b6cc-9d2f910243d0",
+      "result_id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46"
+    },
+    {
+      "claim_id": "9e1669f4-1be1-4515-898c-ae7f626e0f36",
+      "result_id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46"
+    },
+    {
+      "claim_id": "468e3922-2d66-4b16-b83d-a3af6f1ec7b1",
+      "result_id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46"
+    },
+    {
+      "claim_id": "3a48b22b-692b-4332-bc5e-b680c0210ceb",
+      "result_id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46"
+    },
+    {
+      "claim_id": "3d73e8e0-f300-4a24-88bc-50ec3acc2c41",
+      "result_id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46"
+    },
+    {
+      "claim_id": "13efcb81-f995-4907-82df-8727445b4a48",
+      "result_id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46"
+    },
+    {
+      "claim_id": "aca330d4-aa12-485a-80f8-62aa48c2e7e8",
+      "result_id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46"
+    },
+    {
+      "claim_id": "2e6e75aa-e7e9-4040-b81e-baf935ec8bbc",
+      "result_id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46"
+    },
+    {
+      "claim_id": "56d531f5-38af-478a-a162-296f374f65f8",
+      "result_id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46"
+    },
+    {
+      "claim_id": "cda31bad-a1e4-4c1d-98ce-ac4a67f72182",
+      "result_id": "2f2a01a4-aa06-4a5c-8387-a7861a6bba46"
+    },
+    {
+      "claim_id": "87495ab4-5074-4d24-9d85-b7fee47aca5c",
+      "result_id": "3b31f153-c03d-42c8-8e44-728a44e40137"
+    },
+    {
+      "claim_id": "745d3ccd-27a8-4f8f-8479-e26ff1da1d25",
+      "result_id": "3b31f153-c03d-42c8-8e44-728a44e40137"
+    },
+    {
+      "claim_id": "a72e9817-19c3-4fad-9794-ce733c1cc574",
+      "result_id": "3b31f153-c03d-42c8-8e44-728a44e40137"
+    },
+    {
+      "claim_id": "db944000-ad5b-490c-b7f3-cc4564a1b8c2",
+      "result_id": "3b31f153-c03d-42c8-8e44-728a44e40137"
+    },
+    {
+      "claim_id": "a1530410-64a7-4ecb-8296-331222914969",
+      "result_id": "3b31f153-c03d-42c8-8e44-728a44e40137"
+    },
+    {
+      "claim_id": "b1f7609c-5d3a-4581-9886-fff8d6011867",
+      "result_id": "3b31f153-c03d-42c8-8e44-728a44e40137"
+    },
+    {
+      "claim_id": "15193b19-707c-43dc-9a6d-17eeb5546afc",
+      "result_id": "3b31f153-c03d-42c8-8e44-728a44e40137"
+    },
+    {
+      "claim_id": "099cfc5a-1fba-42e5-bcb8-d251519f4de8",
+      "result_id": "3b31f153-c03d-42c8-8e44-728a44e40137"
+    },
+    {
+      "claim_id": "4cf3a936-4175-48d4-93ef-a25321a54403",
+      "result_id": "34a69c54-d9f6-4c21-85e6-f246efa26bd0"
+    },
+    {
+      "claim_id": "01f4f157-e6f5-42e1-96fc-d7cc0b1b7347",
+      "result_id": "34a69c54-d9f6-4c21-85e6-f246efa26bd0"
+    },
+    {
+      "claim_id": "65ace2ef-a14e-47d2-b6dc-f5ed301525fb",
+      "result_id": "8140cab1-282c-4669-bae0-195fcf8ca43c"
+    },
+    {
+      "claim_id": "435744e2-1ebc-41ad-93ee-f29f2d246ab8",
+      "result_id": "8140cab1-282c-4669-bae0-195fcf8ca43c"
+    },
+    {
+      "claim_id": "53ad6682-6993-4e18-bf45-a3c7fb3d60b6",
+      "result_id": "dc4eb432-6646-438b-9633-11ba9a936354"
+    },
+    {
+      "claim_id": "57fcc501-784e-4f61-8e0f-549293ef7acc",
+      "result_id": "dc4eb432-6646-438b-9633-11ba9a936354"
+    },
+    {
+      "claim_id": "289d6d06-9c9e-46fa-8f60-72a38bc54a15",
+      "result_id": "dc4eb432-6646-438b-9633-11ba9a936354"
+    },
+    {
+      "claim_id": "488b242d-a0b0-4663-b926-53910d49b840",
+      "result_id": "dc4eb432-6646-438b-9633-11ba9a936354"
+    },
+    {
+      "claim_id": "15effdc9-593a-4c12-bf84-b1b148a0e3e2",
+      "result_id": "2f2b8306-ee5b-4cb6-bfaa-4b8680e968bb"
+    },
+    {
+      "claim_id": "6d44a8da-aad1-48e9-a767-3923eab08194",
+      "result_id": "2f2b8306-ee5b-4cb6-bfaa-4b8680e968bb"
+    },
+    {
+      "claim_id": "2fdb5e69-c6f4-4bbf-8138-98f00525d6aa",
+      "result_id": "51c13abf-ab88-4c39-bd10-3af648148394"
+    },
+    {
+      "claim_id": "56921494-a1b5-40ea-99fa-e521b4caabbc",
+      "result_id": "51c13abf-ab88-4c39-bd10-3af648148394"
+    },
+    {
+      "claim_id": "b5c95b9d-5581-4f81-b12f-22a13cba60da",
+      "result_id": "843a5fff-c087-4d0a-8638-d4f8e42070d0"
+    },
+    {
+      "claim_id": "5e37e3b0-3dc7-4d7f-9825-bd3db5753302",
+      "result_id": "843a5fff-c087-4d0a-8638-d4f8e42070d0"
+    },
+    {
+      "claim_id": "61496846-4e5d-4e1c-a3a7-49276835cea6",
+      "result_id": "fd80e3b2-67de-46db-8c2e-cf07f00f91d1"
+    },
+    {
+      "claim_id": "be529252-3847-4c8e-8fb7-533b17bed177",
+      "result_id": "fd80e3b2-67de-46db-8c2e-cf07f00f91d1"
+    },
+    {
+      "claim_id": "17e2c3db-1218-4634-8f90-4312869f8a01",
+      "result_id": "8d13513e-05ba-422d-940d-c43ff331ffdc"
+    },
+    {
+      "claim_id": "eda3b75c-e6ec-49fb-83c1-4c7e78e25fea",
+      "result_id": "8d13513e-05ba-422d-940d-c43ff331ffdc"
+    },
+    {
+      "claim_id": "fbc38ded-6845-4436-b587-96b8e0865896",
+      "result_id": "8d13513e-05ba-422d-940d-c43ff331ffdc"
+    },
+    {
+      "claim_id": "68e51c34-1ce4-4b8a-a56f-b613d5ea911b",
+      "result_id": "8d13513e-05ba-422d-940d-c43ff331ffdc"
+    },
+    {
+      "claim_id": "86789d69-c4e8-408e-b58d-004b871d709d",
+      "result_id": "8d13513e-05ba-422d-940d-c43ff331ffdc"
+    },
+    {
+      "claim_id": "06b90d7d-65d7-4c0a-9548-5b65ea1ad51a",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "7f9e35f1-4c4d-430d-bc2d-d97a89846b51",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "edbbec83-5f6e-43a5-bc2d-84bddbd11aac",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "2b8426c3-2f64-464d-9e1f-021292648eed",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "c8970911-560f-4f07-a6e2-e2c44564151c",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "7fafe654-61c6-4609-a9a7-af0013ee1c73",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "73d4ee26-3329-4592-b44d-91b5148574a5",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "f51e3cb7-a8c3-4bf9-8e25-104693a76a3f",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "0fa2ac0b-e4dd-41a7-8ce2-9006c1668f46",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "1ff254cd-39d9-4183-9787-0abaab679b69",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "7f07d819-4d10-4825-ba2f-27480607de60",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    },
+    {
+      "claim_id": "b7419490-8aa1-49f0-9544-e8ef5d444b84",
+      "result_id": "6cf3e1ac-f4fa-4df9-8aa2-ae7ab2b3d7b6"
+    }
+  ],
+  "comparisons": []
+}

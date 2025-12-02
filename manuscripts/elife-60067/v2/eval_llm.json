@@ -1,0 +1,596 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C37",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C58",
+      "C59",
+      "C60",
+      "C193",
+      "C194"
+    ],
+    "result": "The authors developed a novel forecasting framework that uses earth mover's distance to compare viral populations between seasons, eliminating the need for stochastic clade definitions. The framework estimates future population composition by applying exponential growth factors scaled by fitness estimates, with model coefficients learned to minimize earth mover's distance between observed and estimated future populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C37, C42, C45-C49, C58-C60, C193-C194 collectively describe the methodological innovation. The framework is well-documented with clear mathematical formulation (Equations 1-2), implementation details, and validation on both simulated and natural populations. The use of earth mover's distance is appropriately justified and implemented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C196"
+    ],
+    "result": "The authors introduced fitness metrics based on both genotypic data (epitope antigenic novelty, mutational load, LBI, delta frequency) and phenotypic measurements (HI antigenic novelty, DMS mutational effects). These metrics estimate antigenic drift, functional constraint, and clade growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C54-C57, C196 describe the fitness metrics used in the framework. The metrics are clearly defined with appropriate citations to original work and detailed implementation in the Methods section. The combination of genotypic and phenotypic metrics represents a key contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C83"
+    ],
+    "result": "Models were validated on simulated H3N2-like populations evolving under positive and purifying selection for 40 years. The true fitness model achieved 6.82\u00b11.52 AAs distance to future, outperforming the naive model (8.97\u00b11.35 AAs) in 97% of timepoints. LBI was the best individual sequence-only metric (7.57\u00b11.85 AAs), while mutational load showed consistent negative coefficients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C78, C83 describe simulation validation results supported by data in Table 4 and Figures 2-5. The simulated populations show realistic phylogenetic structures (Tables 2-3). The true fitness model provides an appropriate positive control, though it doesn't reach the theoretical lower bound (4.57\u00b10.61 AAs), which is expected given new mutations during the prediction interval.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The composite model combining mutational load and LBI achieved 7.24\u00b11.66 AAs on validation data and 7.10\u00b11.19 AAs on test data for simulated populations, matching the true fitness model's performance (97% of timepoints outperforming naive). The coefficients remained stable across validation timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87, C99-C101 describe composite model performance on simulated data, supported by Table 4 and Figure 5. The model's performance is rigorously evaluated with bootstrap testing (Table 5) showing no significant difference from true fitness on test data. The stable coefficients suggest the metrics capture complementary aspects of fitness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C110",
+      "C111"
+    ],
+    "result": "The true fitness model accurately predicted growth of 87% of growing clades and decline of 58% of declining clades in simulated populations. The estimated closest strain was in the top 20th percentile for 89% of test timepoints. However, clade frequency forecasts were less accurate than single-strain identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93, C103-C106, C110-C111 describe clade-level validation supported by Figure 6 and supplements. The asymmetry between growth (82-87%) and decline (53-58%) prediction accuracy is notable but not explained. The finding that single-strain identification is more tractable than clade frequency forecasting is well-supported by comparing Figures 6A vs 6B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Models were trained on 25 years of natural H3N2 data (1990-2015) and tested on 2015-2019 data. Biologically-informed metrics generally outperformed the naive model (6.40\u00b11.36 AAs) except epitope antigenic novelty and DMS mutational effects. The lower bound (2.60\u00b10.89 AAs) was considerably lower than for simulated populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 describe the natural population analysis setup and general results, supported by Figure 7, Table 6, and Figure 8. The reduced performance compared to simulated populations is acknowledged but the explanation (C120) is speculative. The data sources are well-documented with appropriate strain selection criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "HI antigenic novelty (6.01\u00b11.50 AAs, 70% timepoints better than naive) consistently outperformed epitope antigenic novelty (7.13\u00b11.47 AAs, 30% timepoints). The epitope model's coefficient transitioned from positive (1.17\u00b10.03 pre-2009) to negative (-0.19\u00b10.34 post-2009), suggesting historical contingency. An oracle model using 25 sites identified across the validation period achieved 5.71\u00b11.27 AAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C138 describe antigenic drift metric performance, supported by Table 6 and Figure 8. The historical contingency hypothesis is well-supported by the coefficient transition and oracle model results (Figure 8 supplement 1). However, the oracle model benefits from 'borrowing from the future' as acknowledged (C138), making it unsuitable for real forecasting but valuable for understanding epitope site dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Mutational load (6.14\u00b11.37 AAs, coefficient -0.99\u00b10.30) outperformed DMS mutational effects (6.75\u00b11.95 AAs) for natural populations. The DMS model performed best when forecasting emergence of the A/Perth/16/2009 clade, consistent with overfitting to the background strain used in DMS experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145, C202-C205 describe functional constraint metric comparison, supported by Table 6. The overfitting explanation for DMS poor performance is well-reasoned given the single-strain background (A/Perth/16/2009). The suggestion that future models need multi-strain DMS data (C205) is appropriate speculation for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "LBI was the best individual metric for natural populations by average distance to future, tying mutational load by outperforming naive at 74% of timepoints. Delta frequency performed worse than LBI and HI antigenic novelty, suggesting current implementations represent qualitatively different fitness components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 describe growth metric performance, supported by Table 6 and Figure 8. The observation that LBI and delta frequency differ despite theoretically measuring similar aspects is well-documented. However, the interpretation that they represent 'qualitatively different fitness components' (C149) is somewhat speculative without deeper mechanistic analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C225",
+      "C226",
+      "C227"
+    ],
+    "result": "Composite models modestly outperformed individual models for natural populations. Mutational load + LBI achieved 5.44\u00b11.80 AAs (best on validation). However, the three-metric model (HI + mutational load + LBI) effectively eliminated LBI (coefficient -0.04\u00b10.09), revealing limitations of the additive approach and substantial overlap in predictive value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C154, C225-C227 describe composite model performance, supported by Tables 5-6 and Figure 9. The modest gains and coefficient instability in multi-metric models are well-documented. The elimination of LBI in the three-metric model is a key finding revealing model limitations, though the interpretation of 'overlap in predictive value' could benefit from correlation analysis between metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224"
+    ],
+    "result": "On test data (2015-2019), only HI antigenic novelty-based models significantly outperformed naive. The best validation model (mutational load + LBI, 7.70\u00b13.53 AAs) was among the worst on test data, with LBI performing especially poorly during the A2/re reassortant clade dynamics (2018-2019). Only HI + mutational load models remained robust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C171, C219-C224 describe test period performance, supported by Table 6 and Figure 8. The failure of LBI-based models during the A2/re episode is well-documented (Potter et al., 2019 citation). The higher diversity during test period (8-year MRCA) provides context but the explanation for LBI failure (C222) is speculative. This represents a critical finding about model robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "For natural populations, the mutational load + LBI model achieved 87% growth and 89% decline accuracy on validation data, with estimated closest strains in top 20th percentile for 87% of timepoints. The HI + mutational load model achieved 52% growth and 58% decline accuracy on test data, with 100% of estimated closest strains in top 20th percentile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159, C173-C176 describe clade-level validation for natural populations, supported by Figure 10 and supplements. The lower clade frequency prediction accuracy on test data compared to validation is consistent with the overall model performance decline. The consistent performance in identifying closest strains (100% in top 20th percentile) is notable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The mutational load + LBI model selected strains as close or closer to future than WHO vaccine strains for 83% of seasons (average improvement 1.93 AAs). The HI + mutational load model achieved 92% (average improvement 2.33 AAs). Notably, the naive model always selected better strains than WHO (average improvement 2.19 AAs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C185 compare model selections to WHO vaccine strains, supported by Figure 11. The finding that the naive model consistently outperforms WHO vaccine selection is striking and well-documented. However, this comparison has limitations: (1) WHO selection considers factors beyond sequence distance, (2) vaccine strains may be selected earlier than model timepoints, (3) egg adaptation is not considered. These limitations are not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C197",
+      "C229",
+      "C230",
+      "C231",
+      "C236",
+      "C255"
+    ],
+    "result": "Forecasts informed by phenotypic measures (HI antigenic novelty) consistently outperformed sequence-only estimates. The best models achieved average gains of 0.96 AAs/year (validation) and 0.85 AAs/year (test) over naive, corresponding to explaining 27% and 24% of expected additional distance between annual populations given H3N2's 3.6 AA/year accumulation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C40, C197, C229-C231, C236, C255 describe the main finding about phenotypic vs genotypic metrics, supported by Tables 4 and 6. The contextualization of gains relative to H3N2's evolutionary rate (C236) is appropriate. However, the 'consistent' outperformance claim is somewhat overstated given the test period failures of some models. The statistical significance is established through bootstrap tests (Table 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C145"
+    ],
+    "result": "Sequence-only estimates of functional constraint (mutational load) surpassed experimentally-informed estimates (DMS mutational effects). A simple model where any non-epitope mutation is deleterious was more predictive than comprehensive biophysical models based on single-strain measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C145 describe the counterintuitive finding about functional constraint metrics, supported by Table 6. The result is well-documented but the interpretation requires caution: the DMS data are from a single strain background (A/Perth/16/2009), which limits generalizability. Alternative DMS implementations also failed (C144), strengthening the conclusion. This highlights the importance of genetic context in phenotypic measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C41",
+      "C225",
+      "C226"
+    ],
+    "result": "The best models integrated estimates of both functional constraint and either antigenic drift phenotypes or recent population growth. Composite models consistently outperformed individual fitness models, consistent with previous work integrating multiple fitness components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C41, C225-C226 describe the composite model advantage, supported by Tables 4-6. The finding is consistent across simulated and natural populations (validation period). However, 'consistently outperform' is overstated given test period results where some composite models failed. The gains are also modest and show substantial metric overlap (C154), limiting the benefit of combining metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "When coefficients were refit to test data, two of three models performed worse than fixed-coefficient implementations. The FRA antigenic novelty + mutational load model received positive coefficients (1.40\u00b10.24) but performed considerably worse than the HI-based model, suggesting more FRA data across longer timespans may be needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C190 describe coefficient refitting and FRA model results, supported by Figure 9 supplement 1. The poor performance after refitting suggests overfitting, which is appropriate to document. The FRA model's poor performance is attributed to limited historical data (earliest measurements from 2012), which is a reasonable explanation. The speculation about future FRA model potential (C190) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C199"
+    ],
+    "result": "Using data through June 6, 2020, the model predicted growth of clades 3c3.A and A1b/94N and decline of clades A1b/135K, A1b/137F, and A1b/197R. The framework has been integrated into nextstrain.org for real-time forecasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C191-C192, C199 describe real-time forecasts and implementation, supported by Figure 12. While the forecasts are clearly presented, they cannot be evaluated for accuracy without future data. The integration into nextstrain.org is verifiable and represents practical impact. However, the COVID-19 pandemic's disruption of influenza circulation after early 2020 means these specific forecasts may never be properly validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C195",
+      "C198"
+    ],
+    "result": "The best models effectively capture clade dynamics and identify optimal vaccine candidates without relying on clades as model targets. A naive model predicting no change can often identify a single representative strain despite inability to forecast clade frequencies accurately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195, C198 describe key findings about model capabilities, supported by Figures 6, 10, and 11. The validation of clade dynamics without using clades as targets is well-demonstrated. The naive model's strong performance for single-strain identification (Figures 6B, 10B, 11) is a surprising and well-documented finding, though the mechanistic explanation is limited (C258-C262 provide speculation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C208",
+      "C213",
+      "C214",
+      "C216",
+      "C217"
+    ],
+    "result": "Time-series cross-validation revealed substantial overfitting to both specific genetic backgrounds (DMS) and historical contexts (epitope sites). Models based on predefined epitope sites overfit except for the seven Koel sites. The HI antigenic novelty model avoided overfitting by continuously updating with recent experimental data and assigning weight to phylogenetic branches rather than specific positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C200-C201, C208, C213-C214, C216-C217 describe overfitting patterns, supported by Tables 4-6 and Figures 8-9. The identification of two types of overfitting is well-documented. The explanation for HI model's robustness (C217) is speculative but reasonable. The finding that epitope site importance varies over time (C214) is supported by coefficient dynamics (C127) and oracle model results (C134-C138).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C256",
+      "C257",
+      "C258",
+      "C259",
+      "C260",
+      "C261",
+      "C262",
+      "C263"
+    ],
+    "result": "Several metrics expected to have predictive power (epitope mutations, delta frequency) do not, while unexpected metrics (mutational load) are predictive. This may be because optimal future representatives tend to be basal, less-evolved strains, and LBI/mutational load assign low fitness to evolved tips rather than truly predicting fitness. A companion manuscript shows LBI has little predictive power for mutation fixation probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C256-C263 present an alternative interpretation of model performance, supported by citation to Barrat-Charlaix et al., 2020. This is thoughtful self-criticism about what the models actually measure. However, this interpretation is largely speculative (C262) and somewhat undermines the main claims about fitness prediction. The distinction between 'predicting fitness' and 'identifying basal strains' is important but not fully resolved. This represents honest uncertainty about mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C232",
+      "C233",
+      "C234",
+      "C235"
+    ],
+    "result": "The one-year forecast horizon is a fraction of H3N2's 3-8 year coalescence time, so diversity is expected to persist between seasons. H3N2 HA accumulates 3.6 amino acids per year, contributing to the distance between annual populations observed by the naive model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C232-C235 provide evolutionary context for interpreting results, supported by citations to Rambaut et al., 2008 and Smith et al., 2004. This contextualization is appropriate and helps explain why model gains over naive appear modest. The reasoning is sound and well-supported by established H3N2 evolutionary parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims establish that seasonal influenza A/H3N2 causes 250,000-500,000 deaths annually, vaccination is the most effective preventative, rapid HA mutation enables immune escape necessitating regular vaccine updates, and vaccine effectiveness for H3N2 (33% from 2004-2015) is lower than other subtypes due to multiple factors including strain selection, egg adaptation, and recipient infection history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C11-C23 provide background context, supported by appropriate citations (WHO 2014, Belongia et al. 2016, Zost et al. 2017, Cobey et al. 2018, etc.). These are well-established facts in influenza research that appropriately motivate the study. The statistics and mechanisms are accurately represented from cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on methods establishes that HI and FRA assays are gold standards for antigenic characterization but are low-throughput, leading to development of sequence-only computational methods. Recent developments make phenotypic measurements accessible through phylogenetic models (HI) and DMS experiments, but published methods have not developed complete forecasting frameworks comparing these metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C36 provide methodological background, supported by appropriate citations (Hirst 1943, Chambers et al. 2015, Neher et al. 2016, Lee et al. 2018, etc.). The characterization of previous work's limitations (C35) appropriately motivates the current study. The acknowledgment of unpublished work by Luksza and L\u00e4ssig (C36) is important for context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C237",
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244",
+      "C245",
+      "C246",
+      "C247",
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C252"
+    ],
+    "result": "Future improvements could include: more FRA data over time, high-throughput antigenic escape assays with human sera to improve epitope definitions, integration of multiple genome segments (neuraminidase, other genes) balanced against reassortment costs, and accounting for geographic distribution and sampling biases since successful clades often emerge from less-sampled regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C237-C252 describe future research directions, mixing supported observations (C247: data availability, C250-C251: sampling biases with citations) with speculation about improvements (C238, C241, C243, C252). These are reasonable suggestions for future work but cannot be evaluated for feasibility or impact. The data availability statistics (C247) are concrete and useful for planning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C253",
+      "C254"
+    ],
+    "result": "Influenza population prediction is intrinsically limited by small numbers of data points for training and testing, making increasingly complex models prone to overfitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C253-C254 provide important context about fundamental limitations, supported by the empirical findings of overfitting (C200-C201) and test period failures (C163-C171). This is an honest assessment of inherent constraints in the forecasting problem. The limited number of annual timepoints (23 validation, 8 test for natural populations) indeed constrains model complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors calculated a lower bound for model performance as the optimal distance possible given current sequences at each timepoint, and evaluated a naive model predicting no change. Best models were expected to consistently outperform naive and approach the lower bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 describe the evaluation framework, supported by implementation details and results in Tables 4 and 6. The lower bound calculation is appropriate for establishing theoretical limits. The naive model provides a necessary baseline. However, the expectation that best models would 'consistently' outperform naive (C64) was not fully met in test data, which is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Earth mover's distance to the future can never be zero because models make predictions based on sequences available at the time and cannot account for new mutations during the prediction interval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 explains a fundamental limitation of the approach. This is a logical inference about the forecasting problem that is well-supported by the observation that even the true fitness model on simulated data (where fitness is known) doesn't reach the lower bound (C73). This represents appropriate acknowledgment of inherent limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C65",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "Background on H3N2 evolution establishes it as a balance between positive selection for immune escape at epitopes and purifying selection on functional domains. While seven specific sites were experimentally validated by Koel et al. 2013, these don't explain all antigenic drift. Other epitope site definitions rely on escape assays or retrospective computational analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C209-C212 provide evolutionary background, supported by appropriate citations (Bush et al. 1999, Neher 2013, Koel et al. 2013, Neher et al. 2016, Wolf et al. 2006, Shih et al. 2007, Luksza and L\u00e4ssig 2014). This background appropriately motivates the comparison of different epitope site definitions and the development of the oracle model (C134-C138).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C215"
+    ],
+    "result": "Recent experimental mapping shows that specific sites conferring antigenic escape can vary dramatically between individuals based on their exposure history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C215 cites Lee et al. 2019 to support the idea that epitope sites vary by individual exposure history. This provides important context for understanding why fixed epitope site definitions may fail (C213) and supports the hypothesis about immune landscape dependence (C214). The citation is appropriate and the claim is accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C228"
+    ],
+    "result": "The recent success of weighted ensembles for short-term influenza forecasting through CDC's FluSight network suggests long-term forecasting may benefit from a similar approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C228 cites Reich et al. 2019 and speculates about ensemble approaches for long-term forecasting. While the citation to short-term forecasting success is appropriate, the extrapolation to long-term forecasting is speculative. The finding that the three-metric model eliminated LBI (C153, C227) suggests ensemble approaches might help, but this remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C264",
+      "C265",
+      "C266"
+    ],
+    "result": "The framework enables real-time forecasts by leveraging historical and modern experimental assays and sequences. Released as open source using modern data science standards, it may enable future forecasting research with pathogens whose genomes cannot be analyzed by traditional phylogenetic methods (recombinant viruses, bacteria, fungi).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C264-C266 describe practical implementation and potential applications. The real-time capability is demonstrated through nextstrain.org integration (C199). The open source release is verifiable. The speculation about applications to other pathogens (C266) is reasonable given that earth mover's distance doesn't require phylogenetic structure, though this remains to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

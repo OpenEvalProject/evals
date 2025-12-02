@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "MAGEA genes are frequently mutated in cancer, with about 1000 unique non-silent aberrations identified across pan-cancer analyses. Most mutations are missense, uniformly distributed without hotspots, and MAGEA genes are more frequently mutated in lung and pancreatic cancers compared to random gene sets, suggesting functional importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from multiple cancer databases (ICGC, TCGA, COSMIC) with statistical support (p < 2.2 \u00d7 10^-16) and visual data (Figure 1). The mutation frequency analysis and distribution patterns are well-documented, though C4's inference about functional importance requires additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Approximately one-third of MAGEA variants show reduced protein expression, with mutations predominantly located in the conserved C-terminal MAGE homology domain (MHD). Mutated amino acids leading to lower expression are significantly more conserved than those not affecting expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by systematic immunoblot analysis of 67 variants (Figure 2A-B), conservation analysis with statistical significance (p=0.0290, Figure 2C), and domain mapping. The experimental design is rigorous, though the inference about C-terminal importance (C11) would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "MAGEA variant protein and mRNA expression levels do not correlate, and proteasome inhibitor MG132 rescues protein levels of multiple variants, demonstrating that many MAGEA variants are degraded through the ubiquitin proteasome pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are supported by correlation analysis (r = -0.1574, Figure 3A) and MG132 rescue experiments (Figure 3B). However, the lack of correlation is weak and some variants did not respond to MG132, indicating alternative mechanisms exist. The conclusion is appropriately qualified but would benefit from quantification of rescue efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Two PDAC-specific MAGEA6 mutations (N254I and H305fs*) identified in ICGC studies show reduced protein expression that is rescued by proteasome inhibitor MG132, with strong polyubiquitination signals detected on mutant proteins, confirming proteasome-mediated degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are well-supported by multiple lines of evidence: ICGC data with statistical significance, immunoblot analysis in relevant cell lines (Figure 4A), MG132 rescue experiments, and co-immunoprecipitation assays showing ubiquitination (Figure 4B). The experimental approach is rigorous and uses appropriate cell models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "MAGEA6 protein levels decrease after prolonged culture in KSFM, independent of cell confluency or KRAS/MAPK signaling, but are completely rescued by refreshing medium every 24 hours, suggesting medium components preserve MAGEA6 protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by time-course experiments (Figure 4C-D) and appropriate controls for confluency (Figure 4\u2014supplement 3) and KRAS signaling. However, C26 is inferential and the specific medium components responsible are not identified. The conclusion is reasonable but requires follow-up to identify the protective factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MAGEA6 expression is nutrient-sensitive, with glucose/glutamine depletion causing rapid downregulation that is rescued by carbon source supplementation or FBS. This degradation is proteasome-dependent (rescued by MG132) but independent of the AKT/mTORC1 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are supported by systematic nutrient depletion experiments (Figure 4E-G) with appropriate controls and inhibitor studies (Figure 4\u2014supplement 5). The coordination with S6K phosphorylation provides additional validation. However, the mechanism linking nutrient status to MAGEA6 degradation remains unclear and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Wild-type MAGEA6 suppresses basal autophagy in PDAC cells, as evidenced by reduced AMPK phosphorylation, increased S6K phosphorylation, decreased LC3B puncta formation, and slower autophagic flux. Degradation-prone mutants (H305fs*, N254I) show minimal autophagy suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by multiple complementary autophagy assays: signaling pathway analysis (Figure 5A), LC3B puncta quantification with statistical significance (p=0.002, Figure 5B), and autophagic flux measurements (Figure 5C). The use of multiple cell lines and assays strengthens the conclusions. The differential effects of mutants provide important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "MAGEA6 suppresses both basal and short-term starvation-induced autophagy, but long-term nutrient depletion (24 hr) abolishes MAGEA6 expression and allows autophagy re-initiation. This autophagy-quenching effect is also revoked by degradation-prone mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by time-course experiments under nutrient stress (Figure 5D-G) showing temporal dynamics of MAGEA6 degradation and autophagy reactivation. The experiments demonstrate a clear mechanistic link between MAGEA6 stability and autophagy regulation, though the E3 ligase responsible remains unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "MAGEA6 expression transforms HPDE cells, induces xenograft tumor growth, and leads to poor survival in mouse models. This oncogenic effect is independent of p53, as no association was found between MAGEA6 and p53 expression in PDAC cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 are supported by xenograft experiments with statistical significance (p=0.016 for tumor growth, p=0.0494 for survival, Figure 6A-B) and comprehensive p53 expression analysis (Figure 6\u2014supplement 1, Figure 4\u2014supplement 1). The p53-independence is well-established through multiple cell lines and conditions, distinguishing this mechanism from prior reports.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "MAGEA6 knockdown in established PDAC cells (BxPC-3) dramatically increases tumor growth with elevated autophagy activity (decreased LC3B). Knockdown of autophagy genes (ATG7, VPS34) suppresses this tumor growth, demonstrating that autophagy promotes tumor progression when MAGEA6 is depleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by xenograft experiments with strong statistical significance (p=0.016, 0.001 for MAGEA6 knockdown; p=0.51, 0.90 for autophagy gene rescue, Figure 6C-D) and immunohistochemistry. However, the high p-values for ATG7/VPS34 rescue (0.51, 0.90) indicate non-significance, which contradicts the claim of suppression. This is a critical inconsistency.",
+    "result_type": "UNSUPPORTED"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In lung cancer patients, high MAGEA6 expression is significantly associated with poor survival in stage I disease (HR=1.96, p<0.0001) but not in stages II or III. Combined with xenograft data, this supports stage-dependent roles for wild-type and mutant MAGEA6 in tumor progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by large patient cohort analysis (889 patients, Figure 6E) with clear statistical significance for stage I and appropriate non-significance for later stages. The stage-specific pattern aligns with the autophagy model. However, the analysis is correlative and does not directly demonstrate causation or mutation-specific effects in patients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The authors propose a model where intact MAGEA6 suppresses autophagy to promote early-stage tumorigenesis, while MAGEA6 degradation via the ubiquitin proteasome pathway in late-stage disease reactivates autophagy to further promote cancer progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 synthesize the experimental findings into a coherent model supported by in vitro autophagy assays, xenograft experiments, and patient survival data. The model is well-supported by the data presented, though it remains somewhat speculative regarding the precise timing and triggers of the transition between stages. Additional longitudinal studies would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The manuscript discusses established knowledge about crosstalk between autophagy and ubiquitin proteasome pathways, MAGE protein interactions with E3 ligases, and prior findings on MAGEA3/6 autophagy suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are appropriately cited to prior literature (Milani et al., 2009; Pandey et al., 2007; Doyle et al., 2010; Pineda et al., 2015) and represent accurate summaries of established knowledge. These provide important context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Prior studies have shown that autophagy inhibition sensitizes cancer cells to chemotherapy in various cancers, and that autophagy is activated when KRAS/ERK signaling is suppressed in PDAC, with autophagy inhibitors enhancing ERK inhibitor efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 accurately cite prior literature (Li et al., 2009, 2016; Liu et al., 2011; Bryant et al., 2019; Kinsey et al., 2019) and provide relevant context for the therapeutic implications of the findings. These are appropriately used to frame the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The authors speculate that PDAC tumors with high MAGEA6 expression may be more sensitive to cytotoxic agents due to low autophagy, while tumors with MAGEA6 degradation-prone mutations may be more susceptible to autophagy inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 are explicitly speculative and not tested experimentally. While the speculation is logical based on the findings, it requires validation through combination therapy experiments. The authors appropriately frame these as hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The manuscript provides background on cancer/testis antigens, MAGE gene regulation, their association with cancer progression and poor prognosis, interactions with E3 ligases, and prior findings on MAGEA-autophagy relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 accurately cite and summarize prior literature establishing the biological context for MAGEA genes in cancer. The citations are appropriate and the summaries are accurate representations of the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The manuscript reviews established knowledge about the dual role of autophagy in cancer (tumor suppressor in early stages, tumor promoter in late stages) and the specific context of PDAC with KRAS mutations and stage-dependent autophagy effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 accurately cite prior literature (Panda et al., 2015; Pylayeva-Gupta et al., 2011; White, 2012; Almoguera et al., 1988; Rosenfeldt et al., 2013; Yang et al., 2014; Yang and Klionsky, 2010) and provide essential background for understanding the significance of the current findings. The synthesis of this prior work is accurate and relevant.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "An arrayed library of 276 validated CRISPRi mutants targeting essential M. smegmatis genes was successfully constructed, with approximately 90% of strains lacking prior morphological characterization and almost 40% having no biochemical or structural information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 collectively demonstrate successful library construction with appropriate validation. The 93% success rate (C2) is well-documented through sequencing and growth assays. The novelty of the resource is established through literature review (C3, C4), though these percentages rely on the completeness of the cited supplementary file.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "An 18-hour ATc exposure duration was determined optimal for CRISPRi knockdown experiments, representing approximately 6-7 doubling times and achieving 64-128 fold dilution of pre-existing protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are supported by time-lapse microscopy data on three well-characterized genes. However, the authors acknowledge this single timepoint may not be optimal for all mutants (C54), representing a pragmatic rather than universally optimal choice. The calculation in C6 appropriately cites prior work for doubling time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "A high-throughput quantitative imaging and analysis pipeline was developed, achieving ROC AUC of 0.952 for cell classification and high reproducibility (r=0.88) across 163,559 cells from 263 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 demonstrate robust pipeline development with appropriate validation metrics. The classifier performance (C7) is well-validated on reserved test data. Dataset size (C8) is substantial. Reproducibility (C9) is good though not excellent, with r=0.88 indicating some biological or technical variation between replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Morphological profiling revealed that 78% of essential genes produced dramatically aberrant phenotypes, with distinct patterns: DNA metabolism/divisome/translation genes caused elongation, histidine biosynthesis uniquely caused filamentation, and cell-wall genes caused shortening with bulging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 describe the morphological atlas findings. The 78% figure (C10) is based on Z-score analysis with clear thresholds. The categorical descriptions (C11-C13) are supported by visual inspection and quantitative analysis, though the histidine filamentation observation (C12) is noted as surprising and unprecedented, requiring further mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "UMAP dimensionality reduction with hdbscan clustering produced three reproducible clusters, with genes in verified operons and predicted protein-protein interaction pairs showing non-random proximity in UMAP space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 demonstrate successful unsupervised clustering and biological validation. The three-cluster structure (C14) is reproducible across 100 initializations. Validation using operons (C15) and protein interactions (C16) from independent sources provides strong evidence that UMAP space captures biological relationships, though the authors acknowledge CRISPRi polar effects may contribute to operonic clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "MSMEG_3213 was identified as a putative DNA methylase of a type II restriction-modification system through morphological profiling, transcriptional analysis showing SOS regulon overlap, REBASE annotation, and genetic rescue experiments with dual MSMEG_3213/3214 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 provide converging evidence for MSMEG_3213 function. Morphological clustering with DNA replication genes (C17), cell cycle disruption (C18), SOS response transcriptional signature (C19), REBASE annotation (C20), and genetic rescue (C21) collectively support the restriction-modification system hypothesis. However, the authors appropriately note that definitive biochemical validation is still required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Histidine biosynthesis gene knockdowns produced a unique filamentation phenotype that clustered tightly in UMAP space, was reversed by histidine supplementation (except for hisS), and differed morphologically from divisome-related filamentation with minimal branching and no clear septa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 describe a novel pathway-specific phenotype. The tight UMAP clustering (C23) and rescue experiments (C24-C26) provide strong evidence. The morphological distinctions (C27-C28) are well-documented. However, the mechanism remains unclear (C46), and this represents an unprecedented observation requiring further investigation. The hisA rescue with tryptophan (C25) appropriately validates its bifunctional annotation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Mycolic acid biosynthesis genes clustered tightly in UMAP space with consistent morphological changes regardless of pathway position, and isoniazid treatment at 1X MIC produced morphological changes similar to inhA genetic silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 demonstrate pathway-level consistency and chemical-genetic validation. The tight clustering (C29) despite chromosomal dispersion argues against polar effects (C47). Consistency across pathway steps (C30) is notable. The isoniazid-inhA correspondence (C31) validates the approach for MOA determination, though the authors acknowledge this represents proof-of-concept rather than comprehensive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Drug-treated cells showed MOA-consistent clustering for several compound classes: bedaquiline clustered with ATP synthase genes, ethambutol with lipid metabolism, DNA replication inhibitors produced filamentation, though moxifloxacin-treated cells did not co-localize with gyrA/gyrB knockdowns while novobiocin did.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 demonstrate partial success in MOA determination. Strong concordance for bedaquiline (C32), ethambutol (C33-C34), and general DNA replication inhibitors (C35) supports the approach. The moxifloxacin/novobiocin distinction (C36-C37) is explained by mechanistic differences (C48-C49): fluoroquinolones induce SOS-dependent DNA breaks while novobiocin does not, and gyrase has transcriptional roles beyond DNA replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Peptidoglycan-targeting compounds and protein synthesis inhibitors failed to produce definitive morphological profiles, likely due to rapid lysis induction and differences between drug-mediated inhibition versus genetic knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 acknowledge important limitations. The lack of definitive profiles for peptidoglycan inhibitors (C38) is reasonably attributed to lysis (C39) based on manual inspection. Protein synthesis inhibitor failures (C40) highlight that the approach may not work for all target classes, particularly large macromolecular complexes. These limitations are appropriately discussed (C53-C54).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Of the 294 targeted genes, 229 genes (~78%) were not in identified operons, and 20 of the 65 operonic genes possessed downstream transcriptional start sites expected to abrogate CRISPRi polar effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 address a critical confounding factor in CRISPRi experiments. The analysis using transcriptional landscape data from Martini et al. 2019 (C42-C43) is appropriate. However, 34 genes remain where polar effects could complicate interpretation, which the authors acknowledge. The observation that dispersed mycolic acid genes cluster together (C47) provides empirical evidence that polar effects don't dominate the morphological signatures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The mechanism underlying histidine starvation-induced filamentation likely reflects translation defects from uncharged tRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 is explicitly speculative, as acknowledged by the authors. While the hypothesis is reasonable given that histidine starvation would produce uncharged his-tRNAs affecting translation, no direct evidence is provided. The observation that hisS (tRNA synthetase) knockdown filamentation is not rescued by histidine (C26) supports a tRNA-related mechanism, but definitive validation requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study has inherent limitations including potential bias from the single 18-hour endpoint, concentration-dependent drug effects, condition-specific phenotypes, and the need for time-optimization and validation in disease-relevant conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 represent appropriate acknowledgment of limitations. The 18-hour endpoint bias (C54) is recognized as pragmatic but potentially non-optimal. Concentration effects (C55) are observed but not fully resolved. The citations to prior work (C56-C57) appropriately contextualize these issues. The condition-specificity caveat (C58) is important for interpretation. These represent honest assessment of the approach's boundaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Morphological profiling offers a rapid means for preliminary gene function assignment and compound MOA determination, with all data made available via an interactive online database.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 appropriately summarize the utility and accessibility of the resource. The qualification that definitive validation is required (C59) is important and honest. The provision of an interactive database (C60) enhances community value. However, the actual utility will depend on the database's usability and maintenance, which cannot be fully evaluated from the manuscript alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The M. smegmatis ParB-mCherry reporter strain was chosen to enable visualization of chromosome dynamics and copy number during essential gene knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 describes the rationale for strain selection. This is appropriate and the ParB-mCherry data are used in the analysis (e.g., C18 for MSMEG_3213). However, the manuscript doesn't extensively exploit this feature for most mutants, suggesting this capability remains underutilized in the current study but provides value for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Fundamental differences between genetic knockdown and drug treatment explain some discordances: genetic silencing is gradual while drug treatment causes instantaneous inhibition or corruption of function, and morphotypes report on physiological stress responses rather than direct target inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49, C51-C53 provide important conceptual framework for interpreting chemical-genetic comparisons. The distinction between hypomorph screens (identifying cognate targets, C51) versus morphological profiling (reporting stress responses, C52) is well-articulated. The time-dependent differences (C53) and specific examples like fluoroquinolone SOS induction (C49) versus gyrase knockdown are appropriately cited and reasoned.",
+    "result_type": "MINOR"
+  }
+]

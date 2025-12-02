@@ -1,0 +1,2661 @@
+{
+  "submission": {
+    "id": "81365ce2-6242-46d4-9f68-e193a5133c43",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:57:27.165085Z",
+    "updated_at": "2025-12-02T17:57:27.165085Z"
+  },
+  "content": [
+    {
+      "id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "submission_id": "81365ce2-6242-46d4-9f68-e193a5133c43",
+      "content_type": "manuscript",
+      "content_text": "# MxB sensitivity of HIV-1 is determined by a highly variable and dynamic capsid surface\n\n## Authors\n\n- Richard J Miles<sup>1</sup>\n- Claire Kerridge<sup>1</sup>\n- Laura Hilditch<sup>1</sup>\n- Christopher Monit<sup>1</sup>\n- David A Jacques<sup>2</sup> ([ORCID: 0000-0002-6426-4510](https://orcid.org/0000-0002-6426-4510))\n- Greg J Towers<sup>1</sup> ([ORCID: 0000-0002-7707-0264](https://orcid.org/0000-0002-7707-0264)) \u2020\n\n### Affiliations\n\n1. Division of Infection and Immunity, University College London London United Kingdom\n2. EMBL Australia Node in Single Molecule Science and ARC Centre of Excellence in Advanced Molecular Imaging, School of Medical Sciences, University of New South Wales Sydney Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe type one interferon induced restriction factor Myxovirus resistance B (MxB) restricts HIV-1 nuclear entry evidenced by inhibition of 2-LTR but not linear forms of viral DNA. The HIV-1 capsid is the key determinant of MxB sensitivity and cofactor binding defective HIV-1 capsid mutants P90A (defective for cyclophilin A and Nup358 recruitment) and N74D (defective for CPSF6 recruitment) have reduced dependency on nuclear transport associated cofactors, altered integration targeting preferences and are not restricted by MxB expression. This has suggested that nuclear import mechanism may determine MxB sensitivity. Here we have use genetics to separate HIV-1 nuclear import cofactor dependence from MxB sensitivity. We provide evidence that MxB sensitivity depends on HIV-1 capsid conformation, rather than cofactor recruitment. We show that depleting CPSF6 to change nuclear import pathway does not impact MxB sensitivity, but mutants that recapitulate the effect of Cyclophilin A binding on capsid conformation and dynamics strongly impact MxB sensitivity. We demonstrate that HIV-1 primary isolates have different MxB sensitivities due to cytotoxic T lymphocyte (CTL) selected differences in Gag sequence but similar cofactor dependencies. Overall our work demonstrates a complex relationship between cyclophilin dependence and MxB sensitivity likely driven by CTL escape. We propose that cyclophilin binding provides conformational flexibility to HIV-1 capsid facilitating simultaneous evasion of capsid-targeting restriction factors including TRIM5 as well as MxB.\n\n## Introduction\n\nMx proteins (MxA and MxB in humans [Aebi et al., 1989]) are interferon-induced, high molecular weight, GTPases with globular N-terminal domains forming an enzymatic active site and C-terminal leucine zipper domains connected by a hinge-like bundle-signalling element (BSE) (Fribourgh et al., 2014). MxA has well-characterised antiviral activity against influenza A virus (Pavlovic et al., 1990), bunyaviruses (Kochs et al., 2002) and rhabdoviruses (Pavlovic et al., 1990), whereas closely related MxB has been shown to inhibit HIV-1 infection (Goujon et al., 2013; Kane et al., 2013; Liu et al., 2013) and more recently hepatitis C virus (Yi et al., 2019) and herpesviruses (Crameri et al., 2018; Schilling et al., 2018). The antiviral mechanisms of Mx proteins is poorly understood. Cryo-electron microscopy of MxB has revealed higher order oligomers and large helical assembles (Alvarez et al., 2017). MxB dimerisation and oligomerisation appears to be important for anti-HIV activity, but larger helical assemblies are thought not to be required (Alvarez et al., 2017; Buffone et al., 2015; Fricke et al., 2014). Mx GTPase activity is highly conserved through evolution and is functional in human MxB (King et al., 2004), but surprisingly, is dispensable for MxB anti-HIV-1 activity (Goujon et al., 2013). MxA does not restrict HIV-1 but the transfer of the N-terminal nuclear envelope targeting amino acids (1-26) from MxB to MxA generates a chimeric protein with anti-HIV-1 activity equivalent to the wild-type MxB protein (Goujon et al., 2014). This observation illustrates the dependence of MxB anti-HIV-1 activity on its amino terminal region and suggests that protein location at the nuclear membrane, conveyed by the MxB N terminus, is important for anti-viral activity. MxB is thought to suppress HIV-1 nuclear transport because it inhibits HIV-1 2-LTR circle formation but not viral DNA synthesis. Several studies have identified HIV-1 CA mutations that desensitise HIV-1 to MxB restriction (Busnadiego et al., 2014; Goujon et al., 2013; Kane et al., 2013; Liu et al., 2013; Wei et al., 2016), but biochemical CA-MxB binding studies have suggested that MxB escape mutations in the capsid do not prevent MxB interacting with CA in vitro (Fribourgh et al., 2014; Fricke et al., 2014; Liu et al., 2015; Wei et al., 2016). Recently, it has been suggested that MxB can interact with various components of the nuclear pore complex via its N-terminal domain (Dicks et al., 2018). Both Nup214 and TNPO1 were shown to be required for MxB nuclear envelope localisation, and for MxB restriction of HIV-1, through interaction with the triple arginine motif within the N-terminal domain of MxB. Together these observations suggest that MxB restricts HIV-1 nuclear entry through manipulation of the nuclear pore complex and/or transport machinery.\n\nHere we sought to better understand the mechanism of MxB restriction and whether MxB sensitivity is dictated by the nuclear entry mechanism used by the virus. We find that the cellular cofactors used by HIV-1 to enter the nucleus, that\u00a0is the nuclear entry mechanism, do not constitute a determinant of MxB sensitivity. We demonstrate conserved cofactor dependence for divergent wild type HIV-1 Gag proteins with different MxB sensitives and no effect of CPSF6 depletion on MxB sensitivity. We also show that the interaction of CypA with the classical reference strain R9 is essential for MxB sensitivity but that this interaction is not required for MxB sensitivity of a series of R9 mutants or divergent wild type HIV-1 Gag sequences. We propose that MxB sensitivity is determined by CA surface dynamics governed by CypA recruitment and CA sequence.\n\n## Results\n\n### MxB sensitivity is variable amongst primary viral isolates that are dependent on the same cofactors for nuclear import\n\nPrevious studies of MxB have suggested that MxB sensitivity is determined by CA sequence and influenced by changes in CA sequence driven by adaptive immune pressure, particularly from CTL escape (Liu et al., 2015; Merindol et al., 2018; Wei et al., 2016). The expression of MxB is tightly controlled by the type one interferon (IFN) - JAK-STAT axis (Von Wussow et al., 1990) and upon IFN stimulation, MxB expression is strongly induced (Figure 1B) and MxB proteins localize to diffuse cytoplasmic puncta and to a distinct ring in the region of the nuclear envelope, while the nucleus interior is largely devoid of MxB (Figure 1A). Since we found constitutive MxB expression to be toxic, and as we aimed to isolate the effect of MxB from that of other interferon-stimulated genes, we utilized a doxycycline (dox) inducible expression system to study the effects of MxB on HIV-1 infection. Importantly, induction of MxB expression in HEK293 cells with dox for 48 hr prior to infection, resulted in MxB levels similar to those seen after IFN-\u03b2 induction (Figure 1B). Thus, in this system, MxB expression levels are similar to natural IFN-induced cellular levels. We then examined MxB sensitivity using VSV-G pseudotyped, HIV-1 virus like particles, bearing a GFP encoding genome (hereafter referred to as HIV-1 GFP). Our reference HIV-1 strain, here referred to as HIV-1 GFP R9 is made using the p8.91 packaging construct derived from the HIV-1 clone R9 (Zufferey et al., 1997). Importantly, HIV-1 R9 is identical to, or very closely related to, the viruses used in all other MxB studies.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56910/elife-56910-fig1-v1.jpg)\n\n**Figure 1.:** (a) Immunofluorescence staining MxB (green) in U87-MG cells 24 hr post-treatment with IFN (1000 U/ml). Counterstaining for DAPI (blue). (b) Immunoblot detecting MxB in U87-MG or HEK293 cell lysates after treatment with IFN or doxycycline as shown. Actin detected as a loading control. (c) HIV-1 GFP vector titre in HEK293-iMxB, THP-1-iMxB or A3.01-iMxB untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)). (d) HIV-1 GFP RT products, 2LTR circles and proviral DNA of HIV-1 GFP vector in HEK293 untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)). (e, g) Titre and (f, h) fold MxB restriction, of HIV-1 GFP vectors, containing gag-pro from. (e, f) founder isolates or. (g, h) other M-group clones, in HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)). Titre of HIV-1 GFP vectors, containing gag-pro sequences from the stated isolates, in. (i, j) HeLa cells stably expressing control, TNPO3 or Nup358 specific short hairpin RNA. (k) Matched representative immunoblot analysis from (i,j) detecting Nup358 or TNPO3. Actin detected as loading control. (l, m) HeLa cells stably expressing either control or deltaCPSF6. (n) Matched representative immunoblot analysis from (l,m) detecting HA epitope. Actin detected as loading control. (o, p) CRFK cells stably expressing either empty control vector or Trim-CypA. + / - SEM n\u00a0=\u00a03. (***) p<0.01 (**) p<0.05 (*) p<0.1 (ns) not significant p>0.1.\n\nAs previously reported, MxB expression reduced the titre of HIV-1 GFP R9 by approximately 10-fold (Figure 1C;\u00a0Goujon et al., 2013; Kane et al., 2013). Dox induced MxB antiviral activity against HIV-1 GFP R9 was consistent in HEK293, monocytic cell line THP-1 and T cell line A3.01 (Figure 1C). MxB expression in HEK293 cells did not effect HIV-1 GFP R9 reverse transcription (Figure 1D), but reduced 2-LTR circles and integrated proviral DNA (Figure 1D) as previously described (Goujon et al., 2013; Kane et al., 2013) consistent with suppression of viral nuclear entry. To probe MxB specificity we examined MxB sensitivity of a series of HIV-1 GFP constructs bearing gag genes from HIV-1(M) primary isolates originally selected to represent HIV-1(M) diversity (Gao et al., 1998; Ikeda et al., 2004; Figure 1E) or HIV-1(M) founder clones (Salazar-Gonzalez et al., 2009; Figure 1G). To our surprise we discovered quite different MxB sensitivities of between 10 fold and 2-fold inhibition, on MxB induction (Figure 1F,H). Given that only the nuclear periphery-localising long form of MxB restricts HIV-1 infection, and that MxB apparently restricts HIV-1 nuclear entry, we hypothesised that MxB sensitivity of the different Gag sequences might be influenced by their dependence on cofactors associated with nuclear entry. This notion is consistent with published demonstration that HIV-1 CA mutants, which have altered sensitivity to nuclear entry associated cofactor depletion, are insensitive to MxB restriction. For example, MxB-insensitive CA mutant N74D (Goujon et al., 2013; Kane et al., 2013) is insensitive to depletion of HIV-1 nuclear entry cofactors Nup358, TNPO3, CPSF6 and to some degree Nup153 (Achuthan et al., 2018; Lee et al., 2010; Schaller et al., 2011; Sowd et al., 2016). HIV-1 bearing CA P90A, which alters the otherwise completely conserved CypA binding site and reduces CA affinity for CypA (Yoo et al., 1997) and Nup358 (Schaller et al., 2011), is completely insensitive to MxB restriction and also has reduced sensitivity to depletion of Nup358, TNPO3 and CPSF6. Both of these mutants also have retargeted proviral integration preferences consistent with altered nuclear entry mechanisms (Achuthan et al., 2018; Lee et al., 2010; Schaller et al., 2011; Sowd et al., 2016).\n\nTo probe the relationship between cofactor use and MxB sensitivity, we tested whether each of the divergent HIV-1 GFPs were sensitive to depletion of TNPO3 or Nup358. The karyopherin TNPO3 is a nuclear transport factor for CPSF6, and HIV-1 infectivity is reduced when TNPO3 is depleted in part due to the consequent relocalisation of CPSF6 to the cytoplasm (Bejarano et al., 2019; De Iaco et al., 2013; Maertens et al., 2014). Nup358 is a cytoplasmic component of the nuclear pore complex, thought to be required for HIV-1 to associate with the NPC via the Nup358 C-terminal Cyclophilin like domain (Di Nunzio et al., 2012; Schaller et al., 2011). However, viruses bearing both MxB sensitive, and insensitive, HIV-1(M) Gags had similar cofactor dependence, evidenced by similar sensitivities to stable depletions (Figure 1K) of TNPO3 or Nup358 in HeLa cells (Figure 1I,J). Depletion of HIV-1 cofactor CPSF6 does not typically cause a defect in infection in cell lines (Lee et al., 2010). We therefore tested the divergent Gag bearing HIV-1 GFP for sensitivity to restriction by a CPSF6 construct with a deleted C-terminal nuclear localisation signal (NLS) (Rasaiyaah et al., 2013). Again, HIV-1 GFP bearing each of the divergent Gags were sensitive to \u2206CPSF6 expression (Figure 1N) consistent with CPSF6 use as a cofactor (Figure 1L,M). The CypA binding site was conserved in all of the Gags tested and concordantly, each virus was sensitive to expression of a human TRIM5-CypA chimera (Figure 1O and P) suggesting all tested viruses are able to bind CypA. These observations demonstrated striking conservation of sensitivity to cofactor depletion and cofactor-derived restriction factors, and suggests that nuclear entry cofactor use does not dictate MxB sensitivity.\n\n### Impact of CPSF6 and HIV-1 nuclear entry mechanism on MxB sensitivity\n\nTo further probe the mechanism of MxB restriction we returned to HIV-1 GFP R9 due to its particular sensitivity to MxB. As reported, HIV-1 GFP R9 bearing CA mutant N74D, which does not bind the cellular cofactor CPSF6, was insensitive to MxB (Figure 2A,B) and MxB induction did not strongly suppress infection (Figure 2A), viral DNA synthesis, or 2LTR circle formation (Figure 2B). To test whether HIV-1 CA N74D insensitivity is due to its different mechanism of nuclear entry, we measured the effect of CPSF6 depletion on MxB sensitivity of wild type HIV-1 GFP R9. This is informative because, like CA mutation N74D, CPSF6 depletion reduces HIV-1 R9 sensitivity to depletion of nuclear entry associated cofactors without impacting infectivity (Lee et al., 2010; Ocwieja et al., 2011; Schaller et al., 2011; Sowd et al., 2016). However, when we effectively depleted CPSF6 with shRNA (Figure 2D), HIV-1 remained sensitive to MxB (Figure 2C). In the absence of CPSF6, the MxB block to infection was accompanied by a reduction in 2LTR circles, as in wild type cells, suggesting MxB mediated suppression of nuclear entry was retained (Figure 2C). To our knowledge this is the first occasion in which the effects of CPSF6 depletion and CA N74D mutation on HIV-1 infection differ (Lee et al., 2010; Ocwieja et al., 2011; Schaller et al., 2011; Sowd et al., 2016). Importantly, CPSF6 was found in the nucleus by immunostaining 293 T cells and this was not altered by MxB expression suggesting that MxB does not inhibit HIV-1 by regulating CPSF6 traffic into the nucleus (Figure 2E). Together, these observations suggest that HIV-1 bearing CA N74D is insensitive to MxB as a direct result of the CA mutation and not due to loss of CPSF6 recruitment.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56910/elife-56910-fig2-v1.jpg)\n\n**Figure 2.:** (a) HIV-1 GFP WT or N74D vector titre on HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)). (a) HIV-1 GFP WT or N74D vector titre on HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)). (b) HIV-1 N74D RT products, 2LTR circles and proviral DNA in HEK293 untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)). (c) HIV-1 GFP vector titre, RT products, 2LTR circles in HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)) and depleted of CPSF6 by shRNA transduction. (d) Matched representative immunoblot analysis from (c) detecting MxB or CPSF6. Tubulin detected as loading control. (e) Immunofluorescence of CPSF6 (yellow) in HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)). Counterstaining with DAPI (blue). (f) HIV-1 GFP WT (left) or P90A (right) vector titre on HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)) and depleted of TNPO3 by shRNA transduction. (g) Matched representative immunoblot analysis from (f) detecting MxB or TNPO3. Tubulin detected as loading control. (h) Immunofluorescence of TNPO3 (green) in HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)). Counterstaining with DAPI (blue). (i) HIV-1 GFP WT (left) or P90A (right) vector titre on HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)) and depleted of Nup358 by shRNA transduction. (j) Matched representative immunoblot analysis from (i) detecting MxB or Nup358. Tubulin detected as loading control. + / - SEM n\u00a0=\u00a03. (***) p<0.01 (**) p<0.05 (*) p<0.1 (ns) not significant p>0.1.\n\nWe also tested the effect of TNPO3 depletion on HIV-1 GFP R9 MxB sensitivity. Effective transient TNPO3 depletion (Figure 2G) reduced wild type HIV-1 GFP R9 infection in HEK293 cells but did not rescue infection from MxB (Figure 2F). TNPO3 depletion also did not affect the sensitivity of HIV-1 CA P90A to MxB, which was insensitive to TNPO3 depletion as described (Schaller et al., 2011; Figure 2F). MxB induction also did not relocalise TNPO3, suggesting that the MxB block to HIV-1 nuclear entry is direct and not due to MxB influencing TNPO3 nuclear transport. Since the longer, inhibitory form, of MxB is located around the nuclear rim, we tested whether Nup358 is required for MxB restriction. Transient Nup358 depletion did not significantly impact HIV-1 GFP infectivity in HEK293 cells (Figure 2I), despite efficient protein depletion (Figure 2J). Importantly, wild type HIV-1 GFP was fully sensitive to MxB after Nup358 depletion and HIV-1 P90A MxB insensitivity was also not affected (Figure 2I). Together, these observations suggest that MxB restriction of HIV-1 is independent of the cofactors used for nuclear entry, and therefore mutation of Gag appears to be impacting MxB sensitivity in a more direct way.\n\n### Impact of cyclophilin A on MxB sensitivity\n\nWe next sought to understand how cyclophilin A impacts HIV-1 sensitivity to MxB. HIV-1 bearing CA mutant P90A, which alters the otherwise completely conserved CypA binding site and causes reduced interaction with CypA (Yoo et al., 1997) and Nup358 (Schaller et al., 2011), is completely insensitive to MxB restriction. But HIV-1 P90A also has reduced sensitivity to depletion of Nup358, TNPO3 and CPSF6 and has retargeted proviral integration preferences, which again suggests a connection between nuclear transport and MxB sensitivity (Achuthan et al., 2018; Lee et al., 2010; Schaller et al., 2011; Sowd et al., 2016).\n\nWe verified that HIV-1 CA P90A is insensitive to MxB demonstrating no reduction in HIV-1 P90A infectivity (Figure 3A), 2LTR or proviral DNA levels (Figure 3B) after induction of MxB expression. Furthermore, we confirmed the observation (Liu et al., 2013) that CypA depletion, here using shRNA (Figure 3D), fully rescues wild type HIV-1 GFP from MxB restriction, leading to a recovery of 2LTR circles and infectivity (Figure 3C). Addition of the CypA inhibitor, cyclosporine A (CsA), at the time of infection, also rescued wild type HIV-1 infectivity from MxB restriction (Figure 3E), consistent with CypA recruitment by CA being necessary for MxB sensitivity. We also found that HIV-1 infectivity can be almost completely rescued from MxB restriction, by the addition of CsA, up to 8 hr post infection, with the efficacy of CsA diminishing 24 hr post infection (Figure 3F). This shows that inhibition by MxB is reversible and suggests that the interaction between HIV-1 and MxB is not destructive, at least not immediately (Figure 3F). In a control experiment, HIV-1 CA P90A was treated with CsA during infection of MxB expressing cells and we observed no rescue to infectivity, consistent with P90A being resistant to MxB due to failure to recruit CypA (Figure 3F). Together, these data are consistent with CypA either acting as a cofactor for MxB interaction with the HIV-1 capsid or MxB targeting a form or conformation of Gag that is CypA dependent.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56910/elife-56910-fig3-v1.jpg)\n\n**Figure 3.:** (a) HIV-1 GFP WT or P90A vector titre in HEK293 untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)). (b) HIV-1 GFP P90A RT products, 2LTR circles and proviral DNA in HEK293 untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)). (c) HIV-1 GFP vector titre, RT products, 2LTR circles in HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)) and depleted of CypA by shRNA transduction. (d) Matched representative immunoblot analysis from (c) detecting MxB or CypA. Tubulin detected as loading control. (e) HIV-1 GFP vector titre on HEK293 untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)) after treatment with CsA at the point of infection. (f) HIV-1 GFP WT (left) or P90A (right) vector titre on HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)) after CsA was added at the stated times after infection. Titre of HIV-1 GFP vector containing the stated CA mutants in. (g) HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)),. (h) HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)) and depleted of CypA by shRNA transduction or. (i, j) HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)) after treatment with CsA at the point of infection. + / - SEM n\u00a0=\u00a03. (***) p<0.01 (**) p<0.05 (*) p<0.1 (ns) not significant p>0.1.\n\nTo distinguish between these two possibilities, we combined mutation A92E with P90A on HIV-1 CA and examined MxB sensitivity. The A92E mutation was identified by selection of HIV-1 replicating mutants during CypA inhibition with CsA (Aberham et al., 1996). This mutation appears to recapitulate the effect of CypA binding by reducing the dynamics of the CypA binding loop on the surface of the CA (Lu et al., 2015) leading to core stabilisation (Li et al., 2000). Thus, HIV-1 bearing CA A92E infects HEK293 cells efficiently, in the absence of CypA recruitment, enabling us to test whether CypA recruitment, or the conformational effect of CypA binding, is required for MxB sensitivity. In fact, adding A92E to HIV-1 CA P90A rescued sensitivity to MxB. Thus, MxB induction with dox restricted HIV-1 CA P90A A92E but not HIV-1 bearing CA P90A alone (Figure 3G). Importantly, the A92E CA mutation also rescued MxB sensitivity in the absence of CypA protein, after shRNA-mediated CypA depletion, and after CypA inhibition with CsA (Figure 3H and I). HIV-1 sensitivity to MxB in the presence of CsA was also rescued by a second CsA escape mutant G94D (Figure 3J), which is also thought to recapitulate the effect of CypA binding by stabilising the CypA binding loop. These data demonstrate that, for this particular HIV-1 isolate (HIV-1 R9), it is not CypA recruitment per se that is required for MxB sensitivity, but rather the conformational effect of CypA recruitment, likely the CypA mediated stabilisation of the CypA binding loop, which is recapitulated by the A92E and G94D mutations (Lu et al., 2015).\n\n### Mapping sensitivity determinants of MxB in HIV-1 capsid\n\nGiven that nuclear entry cofactor dependence does not correlate with MxB sensitivity, we sought to understand MxB sensitivity genetically. We first tested the HIV-1 GFP constructs bearing HIV-1 primary gag sequences for MxB sensitivity in the presence and absence of CsA. We found a surprising complexity of CsA/MxB sensitivities. As reported, HIV-1 GFP R9 was sensitive to MxB and CsA rescued infectivity but had itself a 2\u20133 fold inhibitory effect. HIV-1 GFP bearing clade H 90CF056 Gag was insensitive to MxB and CsA treatment. Clade C 92BR025 Gag was insensitive to MxB but strongly inhibited by CsA treatment. Clade F 93BR020 Gag was MxB sensitive, but in a CsA insensitive way. Clade D 94UG114 Gag was weakly sensitive to MxB and CsA rescued infection from MxB but inhibited infection by 2\u20133 fold (Figure 4A,B). The CA C-terminal region has been linked to MxB sensitivity, particularly amino acids 207\u2013210 (Busnadiego et al., 2014). Indeed, a threonine at position 210 correlated with MxB sensitivity and a serine correlated with MxB escape (Supplementary file 1). There was however, no obvious association between the C-terminal CA sequence and sensitivity to CsA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56910/elife-56910-fig4-v1.jpg)\n\n**Figure 4.:** (a) Titre and (b) fold MxB restriction of HIV-1 GFP vector, containing gag-pro sequences from the stated isolates, in HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)) after CsA was added at the point of infection. (c) Summary of virus phenotypes, amino acid sequence, and conservation around the CypA binding loop of the stated isolates. (d) Titre of HIV-1-GFP wild type or indicated mutant in HEK293 cells untreated (UT) or treated with Dox to induce MxB expression (+Dox (MxB)) after CsA was added at the point of infection. (e) Structure of HIV-1 CA protein (PDB: 6ES8) indicating interaction of residues M96, G116 and H120. + / - SEM n\u00a0=\u00a03. (***) p<0.01 (**) p<0.05 (*) p<0.1 (ns) not significant p>0.1.\n\nTo gain further insight into the role of CypA in MxB sensitivity, we sought to convey the CsA insensitivity of clade F 93BR20 to the HIV-1 R9 GFP, while maintaining MxB sensitivity, by CA mutation. Inspection of the CypA binding loop sequence revealed that the critical G89 and P90 residues required for CypA recruitment are conserved but positions CA 86, 87, 92 and 96 are polymorphic between HIV-1 R9 and 93BR020 Gags (Figure 4C). To establish their contribution to MxB sensitivity we made the HIV-1 R9 GFP quadruple mutant V86T, H87Q, A92P M96I (named \u2018TQPI\u2019) to mimic the 93BR020 sequence in the CypA binding loop in CA and measured TQPI sensitivity to inhibition by CsA and MxB (Figure 4D). We found HIV-1 CA TQPI lost both MxB and CsA sensitivity and thus had a phenotype that was different to the parental R9 and 93BR020 Gags but similar to 90CF056 and 94UG114 Gags. Further examination of HIV-1 CA structures indicated that residue 96 is very close in space to another pair of polymorphic residues at positions 116 and 120 in the short alpha helix on the surface of the CA (Figure 4E). We therefore added G116Q and H120G to the HIV-1 R9 GFP CA TQPI to make HIV-1 GFP CA TQPIQG and again tested sensitivity to restriction by MxB and CsA (Figure 4D). We found that this virus behaved like the 93BR020 Gag bearing virus and was sensitive to MxB and this was not affected by CypA inhibition with CsA. Importantly, the double mutation HIV-1 R9 CA G116Q, H120G was not particularly different from the wild type HIV-1 R9 in either sensitivity to MxB or CsA indicating that the TQPI mutations are required to achieve the 93BR029 phenotype.\n\nExamination of CA sequence variation in a large (Figure 5\u2014figure supplement 1) or smaller (Figure 5) selection of HIV-1(M) sequences using Chromaclade (Monit et al., 2019) illustrated that five of six CA positions responsible for the different MxB and CsA sensitivity in Figure 4 are highly variable, as opposed to the residues required for CypA recruitment at positions 89 and 90, which are completely conserved (Figure 5 and Figure 5\u2014figure supplement 1). Intriguingly, some positions, particularly 116 and 120 appear to have some degree of clade specificity. Rendering CA crystal structures according to their atomic displacement parameters (B-factors) revealed that the regions around 116, 120 and 96 are particularly mobile relative to the rest of the protein (Figure 6). B-factors reflect the fluctuation of atoms about their average positions and provide important information about protein dynamics. Thus these structures suggest that the highly variable residues that influence MxB and CsA sensitivity are dynamic with 120, 116 and 96 close in space and likely influencing each other. NMR studies have suggested that CypA, which influences some cases of MxB sensitivity, also influences CA by changing surface dynamics (Lu et al., 2015). This observation, and the relatively large B-factors in CA structures for specific polymorphic residues which dictate MxB sensitivity, support the notion that MxB sensitivity is principally influenced by CA surface conformation and dynamics (Figure 6).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56910/elife-56910-fig5-v1.jpg)\n\n**Figure 5.:** Phylogenetic trees of a set of HIV-1 M group subtype reference genome sequences for residues CA86, CA87, CA92, CA96, CA116 and CA120 using ChromaClade.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56910/elife-56910-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Phylogenetic trees of a larger complied dataset of approximately 1300 HIV-1 M genome sequences for residues CA86, 87, 89, 90, 92, 96, 116 and 120.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56910/elife-56910-fig6-v1.jpg)\n\n**Figure 6.:** B factor putty representation of HIV-1 CA protein (PDB: 4XFX) indicating location of mutated residues, CypA binding loop and \u03b2-hairpin.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56910/elife-56910-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Structure of HIV-1 CA protein (PDB: 4XFX) indicating the location of the N74 residue in relation to the putative MxB binding residues E71 and E75 and K70.\n\n## Discussion\n\nThe reported localisation of the MxB active form to the nuclear periphery, the inhibition of HIV-1 nuclear transport by MxB and the influence on MxB sensitivity of mutations that effect nuclear transport cofactor use suggested that nuclear transport mechanism may dictate MxB sensitivity. In such a gatekeeper hypothesis we reasoned that only HIV-1 utilising a specific set of nuclear entry cofactors might be sensitive to MxB restriction because viruses using alternate nuclear entry cofactors may not encounter MxB. However, while cofactor depletion sensitivity was conserved, MxB sensitivity was not (Figure 1). Furthermore, HIV-1 bearing the CPSF6 binding mutant N74D was MxB insensitive, but CPSF6 depletion, which has a similar effect on HIV-1 as N74D mutation in terms of cofactor dependence and integration targeting (Achuthan et al., 2018; Lee et al., 2010; Sowd et al., 2016), did not render HIV-1 R9 GFP MxB insensitive. Direct recruitment of wild type CA, and not CA N74D, by MxB is the simplest explanation for these data. Concordantly, recent work (Smaga et al., 2019) has suggested that MxB may bind at the tri-hexamer interface to a strongly negatively charged patch composed of E71, E75 and E213 which may interact with the 11RRR13 motif of MxB. CA N74 lies between two of the putative MxB binding residues E71 and E75, but critically the N74 side chain extends away from the E71 and E75 side chains and into the CPSF6 binding pocket. Mutation N74D replaces the amide side chain with a negatively charged acidic side chain in close spatial proximity to the positively charged K70 (Figure 6\u2014figure supplement 1). We therefore hypothesise that N74D conformationally alters this region of the capsid to prevent both CPSF6 and MxB binding.\n\nDependence of MxB sensitivity on CA conformation, rather than on cofactor binding, was also supported by the demonstration that mutants which mimic the conformational and dynamic changes caused by CypA recruitment to CA (Lu et al., 2015) (CA A92E and G94D) make HIV-1 R9 sensitive to MxB independently of CypA binding (Figure 3). By testing a small number of divergent Gag sequences, we illustrated that wild type HIV-1 Gag sequences have different sensitivities to both cofactors (CypA) and restriction factors (MxB). Mapping the amino acid differences required to make HIV-1 R9 behave like HIV-1 93BR020, with respect to MxB and CsA sensitivity, required changes including positions that are close together in space (Figure 4E), highly variable (Figure 5, Figure 5\u2014figure supplement 1) and dynamic in X-ray crystallography (Figure 6) and NMR data (Lu et al., 2015). We assume that MxB recruitment to CA is required for restriction but it appears that the capacity to recruit CA in biochemical assays does not correlate with sensitivity to MxB restriction (Smaga et al., 2019). We concur with these authors, hypothesising that CA mutation can influence the inhibitory effect of MxB binding, as well as influencing whether MxB binds at all. This hypothesis is consistent with MxB insensitive HIV-1 CA mutant P90A being reported to retain MxB binding capacity. Indeed, we observe that, despite insensitivity to MxB mediated inhibition of infectivity, proviral DNA levels of HIV-1 bearing CA P90A were increased by MxB induction (Figure 3B). This suggests that MxB still influences HIV-1 CA P90A, possibly at the level of nuclear entry and integration, despite not reducing the number of GFP positive cells. Thus our model, based on the literature and data herein, is that MxB binds either directly or indirectly to incoming HIV-1 CA, at the nuclear rim where long MxB resides, and restriction occurs if CA is in an MxB sensitive conformation or state. Further, we conclude that CypA recruitment influences sensitivity to MxB restriction in a CA sequence sensitive way by influencing CA conformation. The effect of MxB restriction is to reduce nuclear entry of viral particles.\n\nA recent study, demonstrating how CypA protects HIV-1 from restriction by TRIM5, likely explains inhibition of HIV-1 GFP infection by CsA in Figure 5 (Kim et al., 2019). It is striking that CypA does not protect infection from MxB but rather in some cases (R9, 94UG114) CypA causes MxB sensitivity. Thus perhaps MxB provides less selective pressure on CA than TRIM5 because MxB expression is strictly controlled by IFN, while TRIM5 expression is enhanced by IFN but typically expressed at restrictive levels in unstimulated cells (Jimenez-Guarde\u00f1o et al., 2019). We have proposed that HIV-1 has adapted to avoid triggering IFN production (Khan et al., 2020; Rasaiyaah et al., 2013; Sumner et al., 2019; Sumner et al., 2017) and this may reduce exposure to MxB. It is striking that cofactor use is not entirely flexible. All the wild\u00a0type\u00a0Gag sequences tested here were dependent on Nup358 and TNPO3 for maximal infectivity and were sensitive to overexpression of mutant CPSF6 and TRIMCyp (Figure 1;\u00a0Ikeda et al., 2004). The difference between absolute dependence (Nup358, CPSF6, TNPO3) versus flexible (CypA) cofactor use likely reflects their role in the infectious cycle.\n\nGag is under strong selective pressure from immune responses, particularly cytotoxic T lymphocytes presenting Gag derived peptides (Carlson et al., 2015). Thus HIV-1 must adapt to a selection of CTL escape mutations in CA and this is known to influence the relationship with specific co-factors e.g. CypA (Brockman et al., 2007; Leslie et al., 2004) and CPSF6 (Henning et al., 2014), and sensitivity to restriction factors e.g. MxB (Liu et al., 2015; Merindol et al., 2018; Wei et al., 2016) and TRIM5\u03b1 (Battivelli et al., 2011; Granier et al., 2013). All HIV-1 sequences have been influenced by CTL exposure because CTL escape variants can be transmitted (Leslie et al., 2004). We interpret our data as suggesting a model in which HIV-1 flexibly uses CypA and changing CA sequence to influence surface dynamics and conformation to achieve maximally infectious CA behaviour. We hypothesise that CypA recruitment facilitates CA sequence change and escape from immune pressure, by providing additional conformational options to retaining insensitivity to CA targeting restriction factors while retaining appropriate interactions with essential cofactors.\n\nCharacterising restriction of HIV-1 by MxB in natural targets of HIV-1 infection such as primary T-cells and macrophages would be informative. This is challenging because inducing MxB with IFN induces the activity of other restriction factors that inhibit HIV-1 prior to MxB engagement, at the nuclear membrane. For example, the IFITM proteins inhibit HIV-1 at the level of fusion with the cell membrane (Foster et al., 2016) TRIM5 inhibits HIV-1 uncoating, at least in the absence of CypA activity, (Fletcher et al., 2018; Kim et al., 2019) and TRIM34 may also have anti-HIV-1 activity (Ohainle et al., 2020). Thus isolating MxB activity from other restriction factors is a challenge. Future experiments could use selected depletion or knock out of anti HIV-1 factors to allow comparative characterisation of MxB restriction mechanism and sensitivity determinants with results derived from cell lines, where MxB activity can be more easily isolated.\n\nHIV-1 sensitivity to the human restriction factor MxB was originally surprising. Here we evidence a more complex picture of MxB sensitivity and cofactor dependence by using a variety of divergent wild type Gag sequences. Use of a single lab adapted strain to study host-HIV-1 interactions, here represented by the HIV-1 R9 derived packaging plasmid p8.91, which is very closely related to NL4.3 (Zufferey et al., 1997) is typical, and this can give the impression that HIV-1 cofactor use and restriction sensitivity is very specific. However, experimental use of more divergent HIV-1 sequences, and consideration of conservation of the amino acids under study (Monit et al., 2019) can give a broader perspective of functional variation in cofactor use and restriction factor sensitivity and allow development of more complex models for host-virus relationships. We expect that a deeper understanding these relationships will allow development of better antiviral therapeutics. Recent demonstration of the potency and broad antiviral activity of the HIV-1 CA-targeting Gilead Sciences new inhibitor series underlines this ambition (Yant et al., 2019). We also expect that a better understanding of the workings of innate immune defences, and their role in inflammatory processes, will continue to provide exciting diagnostic and therapeutic opportunities for a wide variety of diseases.\n\n## Materials and methods\n\n### Cell culture and reagents\n\nCell lines were cultured in Dulbecco\u2019s Modified Eagle\u2019s Media (DMEM) (Gibco/BRL; Paisley, UK) supplemented with 10% (v/v) fetal calf serum (FCS) and penicillin (Pen; 100 U/ml), streptomycin (Strep; 100 \u03bcg/ml) unless otherwise stated. G418 was used at 1000 \u03bcg/ml. Puromycin was used at 5 \u03bcg/ml. 293 cell lines were incubated at 37\u00b0C, 5% (v/v) CO2. All other cell lines were incubated at 37\u00b0C, 10% (v/v) CO2. Inducible MxB cell lines were made by transduction of HEK293, THP-1 and A3.01 with pLVX-Tet3G (Clontech), containing the Tet-responsive transactivator, and cells were selected for one week in G418. Cells were subsequently transduced with pLVX-mCherryKilled-MxB (modified from Clontech) and selected for one week in puromycin (2 \u03bcg/ml). Single cell clones were produced by limiting dilution in 96 well plates and assayed for optimal MxB induction. MxB inducible cell lines were induced for MxB expression by addition of 2 \u03bcg/ml of doxycycline for 48 hr prior to infection. Cell lines used in this study HEK293, U87-MG, HeLa, THP-1, A3.01. Cells routinely tested negative for mycoplasma using the Lonza MycoAlert mycoplasma detection kit. Antibodies used in this study; TNPO3 (ab54353, Abcam), CPSF6 (ab175237, Abcam), MxB (sc47197 N-17, Santa Cruz Biotechnology), CypA (BML-SA296-0100, ENZO), Nup358 (C288), Tubulin (DM1A, EMD Millipore), \u03b2-actin (ab6276, Abcam).\n\n### Plasmids and cloning\n\nHuman MxB was PCR cloned from cDNA derived from IFN-induced THP-1 cells and cloned into pLVX-mCherryKilled vector at a multiple cloning site under the control of a doxycycline-inducible promoter. MxB mutant derivatives were produced by QuickChange site-directed mutagenesis and sub-cloned between appropriate restriction enzyme sites. All cloning and mutagenesis was confirmed by sequencing.\n\n### Viral infectivity assay\n\nCells were seeded at 1\u00a0\u00d7\u00a0105/ml and 1 ml/well in 24 well plates; after 24 hr media was replaced with 250 \u00b5l of media containing the appropriate concentration of virus. After 48 h cells were thoroughly trypsinised with Trypsin + 0.25% EDTA (100 \u00b5l) and fixed by addition of 1X PBS + 4% paraformaldehyde (PFA; 100 \u03bcl). All experiments included an uninfected control. Each virus was titrated on each cell line initially starting with neat supernatant followed by a 10\u201312 point 3-fold dilution; subsequent experiments contained at least four viral dilutions points with the aim of achieving a 1\u201330% infection range from which titres were calculated. Titres were normalised to units of reverse transcriptase (UnitRT) in viral supernatant as calculated by SG-PERT (Pizzato et al., 2009) or RT ELISA.\n\n### Lentiviral production\n\nHEK293T cells were routinely passaged 1:4 in DMEM supplemented with 10% (v/v) FCS and Pen/Strep. HEK293T cells were seeded (DMEM + 10% FCS + 1% Pen/Strep) at a cell density of 4 \u00d7 106 in 10 cm cell culture dishes. Fugene-6 transfectant reagent (Promega; 10 \u03bcl) was incubated at room temperature with Optimal Minimum Essential Media (200 \u03bcl; Opti-MEM) for 5mins. Transfection DNA mix was prepared containing 1 \u03bcg of viral gag-pol (p8.91), 1 \u03bcg of VSV-G env (pMDG) and 1.5 \u03bcg of GFP-encoding genome (pCSGW) or expression plasmid to a total volume of 15 \u03bcl, added to the Fugene-6 mix and incubated for 30mins (Fletcher et al., 2015). Cell media was replaced and the transfectant mix was added drop-wise and incubated for 24 hr. Culture media was replaced (8 ml; DMEM 10% FCS) and virus-containing media was harvested 48 hr and 72 hr post-transfection, passed through 0.44 \u03bcm Nalgene sterilization filter, aliquoted and stored at \u221280\u00b0C.\n\n### Short hairpin RNA knockdown\n\nCells were plated at 4\u00a0\u00d7\u00a0105 cells/well in 2 ml in 6-well plates prior to transduction with appropriate short hairpin RNA, which have been described previously (Rasaiyaah et al., 2013; Schaller et al., 2011), cloned into the retroviral expression vector pC-SIREN RetroQ (Clontech). Cell media was replaced 24 hr post-transduction and cells stimulated with dox (2 \u03bcg/ml). After 24 hr, cells were seeded at 1\u00a0\u00d7\u00a0105/ml/well in 24 well plates for viral infectivity assays.\n\n### Immunofluorescence confocal microscopy\n\nCells were plated in 24 well plates at a density of 5\u00a0\u00d7\u00a0104 on glass cover slips, previously washed in EtOH and then PBS. After\u00a0~24 hr, cells were fixed with paraformaldehyde (4%) for 15 min and washed with PBS (1 ml). Cover slips were transferred to a fresh 24-well plate and permeabilised with PBS/FCS (2%)/Triton X-100 (0.5%) for 30 min after which the cells were washed with PBS (1 ml) for 5 min. Permeabilised cells were incubated at room temperature for 1 hr with the appropriate dilution of primary antibody in PBS/FCS (2%) then washed three x 5 min with PBS. Cells were incubated with the appropriate anti-species fluorophore-conjugated secondary antibody for 1 hr in the dark after which cells were washed three x 5 min with PBS. Cover slips were mounted on glass slides using VectorShield containing DAPI nuclear stain and stored in the dark at 4\u00b0C. Cells were visualized using the Lucia confocal laser microscope.\n\n### Immunoblots\n\nResolving acrylamide gels were prepared as follows: acrylamide/bis-acrylamide (7.5\u201312%), Tris (1M, pH 8.8; 25.2%), sodium dodecylsulphate (SDS; 0.1%), ammonium persulfate (APS; 0.05%), tetramethylethylenediamine (TEMED; 0.05%). Stacking acrylamide gels were prepared as follows: acrylamide/bis-acrylamide (4%), Tris (0.5M, pH 6.8; 25.2%), sodium dodecylsulphate (SDS; 0.1%), ammonium persulfate (APS; 0.05%), tetramethylethylenediamine (TEMED; 0.1%). Cells were collected by centrifugation and resuspended in SDS loading buffer supplemented with 2-mercaptoethanol (5%) and heated to 95\u00b0C for 10 min to fully denture the proteins. Cell extract samples and protein markers were run through acrylamide gels at 120V. Proteins were transferred by electrophoresis on to nitrocellulose membranes that were subsequently blocked with phosphate-buffered saline plus Tween (1%; PBS-T) supplemented with skimmed milk powder (10% w/v). Membranes were incubated with appropriate dilution of primary antibody followed by anti-species secondary antibody conjugated to horseradish-peroxidase (HRP), each diluted in PBS-T plus skimmed milk powder (10% w/v), for 1 hr at room temperature with agitation followed by washing in PBS-T (3 \u00d7 5 mins) after each antibody incubation. Membranes were incubated with enhanced-chemiluminescence (ECL) solution for 5 min, exposed to photographic film and developed using an X-ray film processor.\n\n### Quantitative PCR\n\nTo measure viral RT products, cells were collected at 6 hr post infection; for 2-LTR circles cells were collected at 72 hr post-infection; for proviral DNA cells were collected after passage for 3 weeks. DNA was isolated using QIAamp DNA Mini Blood kit (Qiagen). Viral DNA products were measured by TaqMan quantitative PCR using ABI FastCycler 9600. Viral RT products and proviral DNA was detected with the following GFP specific primer pair\u2013 fwd:5\u2019-CAACAGCCACAACGTCTATATCAT-3\u2019 and rev:5\u2019-ATGTTGTGGCGGATCTTGAAG-3\u2019 and probe \u2013 5\u2019-FAM-CCGACAAGCAGAAGAACGGCATCAA-TAMRA-3\u2019. Viral 2-LTR circles were detected with the following primer pair \u2013 fwd:5\u2019-AACTAGAGATCCCTCAGACCCTTTT-3\u2019 and rev:5\u2019-CTTGTCTTCGTTGGGAGTGAATT-3\u2019 and probe \u2013 5\u2019-FAM-TTCCAGTACTGCTAGAGATTTTCCACACT-TAMRA-3\u2019. DNA copy number was determined by comparison with a standard curve made using CSGW plasmid DNA of known concentrations.\n",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "128224d2-8f51-4752-82b2-84cc93238969",
+      "submission_id": "81365ce2-6242-46d4-9f68-e193a5133c43",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Guangxia Gao, Institute of Biophysics, Chinese Academy of Sciences China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56910.sa1](https://doi.org/10.7554/eLife.56910.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper demonstrates that the sensitivity of HIV-1 to the host antiviral factor MxB is dictated by the conformation of the viral capsid, rather than the viral nuclear entry cofactor use. The interaction of the viral capsid with cylcophilin A plays an important role in the sensitivity of the virus to MxB. HIV-1 primary isolates have different MxB sensitivities due to differences in Gag sequence but similar cofactor dependencies, suggesting a complex relationship between cyclophilin dependence and MxB sensitivity likely driven by CTL escape.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"MxB sensitivity of HIV-1 is determined by a highly variable and dynamic capsid surface\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and P\u00e4ivi Ojala as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nIn this paper, the authors analyzed the phenotypes of HIV-1 CA mutants for their sensitivity to MxB and dependence on nuclear entry confactors. They demonstrated that the sensitivity of HIV-1 to MxB is not determined by the viral nuclear entry cofactor use. They further provided evidence indicating that the interaction of CA with cyclophilin A is important for MxB sensitivity, suggesting that the conformation of CA surface dictates the sensitivity. These are interesting findings that should help to better understand the mechanism of action of MxB. The paper fits the scope of eLife, though some concerns need to be addressed before publication.\n\nEssential revisions:\n\n1) This paper clearly showed that the sensitivity of HIV-1 CA to MxB is not determined by the nuclear entry cofactor use. However, it is not clear exactly what determines the sensitivity. It seems that the authors tried to avoid stating that the sensitivity is dictated by the interaction of CA with MxB, as some MxB escape CA mutants were reported to interact with MxB in in vitro assays. The term \"capsid conformation and dynamics\" used in this paper is vague in describing the mechanism of MxB action. The two MxB escape CA mutants, P90A and N74D were analyzed in details. While they are both insensitive to MxB, P90A was shown to bind MxB (Smaga et al., 2019) and N74D was proposed by the authors to prevent MxB binding based on the model described in the same Smaga paper (Discussion paragraph one). If the authors wish to conclude that MxB sensitivity is dependent on HIV-1 capsid binding to MxB, the authors need to test experimentally whether the N74D mutant binds MxB. Otherwise, the authors need to modify their claims. In either case, the authors need to describe their working model more clearly.\n\n2) HIV-1 nuclear entry is dictated and influenced by both viral and cellular factors. Logically, dependence on a specific cellular factor(s) does not equate the same nuclear entry mechanism. For example, two different signaling cascades or nuclear entry pathways may happen to use the same cellular factor, but MxB may hit one pathway but not the other. The data support the conclusion that MxB sensitivity of a specific HIV-1 Gag sequence is independent of a particular factor, but may not be necessarily correct when extending the conclusion to the nuclear import pathway dictated by this Gag. The authors were careful with their wording in the Abstract and Discussion. But in the Results section, sometimes \"nuclear entry routes\" or \"nuclear entry mechanisms\" are used. The authors need to describe their results more carefully.\n",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cb95daad-7ac8-4e13-b6f8-dc363895b95d",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C1",
+      "claim": "MxB is a type one interferon induced restriction factor.",
+      "claim_type": "EXPLICIT",
+      "source": "The type one interferon induced restriction factor Myxovirus resistance B (MxB) restricts HIV-1 nuclear entry",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a defining characteristic of MxB.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "8d8744b3-0ffd-4e9a-96e6-f86ac3a2980a",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C2",
+      "claim": "MxB restricts HIV-1 nuclear entry.",
+      "claim_type": "EXPLICIT",
+      "source": "The type one interferon induced restriction factor Myxovirus resistance B (MxB) restricts HIV-1 nuclear entry evidenced by inhibition of 2-LTR but not linear forms of viral DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract and supported by experimental data showing inhibition of 2-LTR circles.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "d804b4c1-367c-4bb5-845f-b0fa5002fa38",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C3",
+      "claim": "MxB inhibits 2-LTR circle formation but not linear forms of viral DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The type one interferon induced restriction factor Myxovirus resistance B (MxB) restricts HIV-1 nuclear entry evidenced by inhibition of 2-LTR but not linear forms of viral DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by qPCR data in Figure 1D showing reduced 2-LTR circles but not RT products.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "f5ce5314-59c1-4829-b0a9-3478b9286d7c",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C4",
+      "claim": "The HIV-1 capsid is the key determinant of MxB sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The HIV-1 capsid is the key determinant of MxB sensitivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by experiments showing capsid mutants have altered MxB sensitivity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "ee53b316-0dee-4cfe-aa23-e57668b7927a",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C5",
+      "claim": "HIV-1 capsid mutant P90A is defective for cyclophilin A and Nup358 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "cofactor binding defective HIV-1 capsid mutants P90A (defective for cyclophilin A and Nup358 recruitment)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "28c5e728-ab99-4673-92fb-b3076ee33d1a",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C6",
+      "claim": "HIV-1 capsid mutant N74D is defective for CPSF6 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "N74D (defective for CPSF6 recruitment)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "2ae46911-2d6f-4eb3-afda-04babbcaf0be",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C7",
+      "claim": "HIV-1 capsid mutants P90A and N74D have reduced dependency on nuclear transport associated cofactors.",
+      "claim_type": "EXPLICIT",
+      "source": "cofactor binding defective HIV-1 capsid mutants P90A (defective for cyclophilin A and Nup358 recruitment) and N74D (defective for CPSF6 recruitment) have reduced dependency on nuclear transport associated cofactors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "353153ae-3fa9-453d-86fc-6d51993d0939",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C8",
+      "claim": "HIV-1 capsid mutants P90A and N74D have altered integration targeting preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "cofactor binding defective HIV-1 capsid mutants P90A (defective for cyclophilin A and Nup358 recruitment) and N74D (defective for CPSF6 recruitment) have reduced dependency on nuclear transport associated cofactors, altered integration targeting preferences",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "a2728c77-e1a9-4bec-9a6e-c21ba7d0cc08",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C9",
+      "claim": "HIV-1 capsid mutants P90A and N74D are not restricted by MxB expression.",
+      "claim_type": "EXPLICIT",
+      "source": "cofactor binding defective HIV-1 capsid mutants P90A (defective for cyclophilin A and Nup358 recruitment) and N74D (defective for CPSF6 recruitment) have reduced dependency on nuclear transport associated cofactors, altered integration targeting preferences and are not restricted by MxB expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and confirmed by experimental data in Figures 2A and 3A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "8b3c73ca-e15a-40a7-acf8-6154ec95ee04",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C10",
+      "claim": "Depleting CPSF6 to change nuclear import pathway does not impact MxB sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that depleting CPSF6 to change nuclear import pathway does not impact MxB sensitivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by experimental data in Figure 2C showing MxB sensitivity is retained after CPSF6 depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "30422955-be16-436c-aaef-77576bf5e5bf",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C11",
+      "claim": "Mutants that recapitulate the effect of Cyclophilin A binding on capsid conformation and dynamics strongly impact MxB sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "mutants that recapitulate the effect of Cyclophilin A binding on capsid conformation and dynamics strongly impact MxB sensitivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by data in Figure 3G-J showing A92E and G94D mutations restore MxB sensitivity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "d605c9b1-8a25-4c87-ae3b-433e174043b9",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C12",
+      "claim": "HIV-1 primary isolates have different MxB sensitivities due to cytotoxic T lymphocyte (CTL) selected differences in Gag sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that HIV-1 primary isolates have different MxB sensitivities due to cytotoxic T lymphocyte (CTL) selected differences in Gag sequence but similar cofactor dependencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by data in Figure 1E-H showing variable MxB sensitivity among primary isolates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "f964bf5d-1a70-41e1-967a-93150d594f00",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C13",
+      "claim": "HIV-1 primary isolates have similar cofactor dependencies despite different MxB sensitivities.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that HIV-1 primary isolates have different MxB sensitivities due to cytotoxic T lymphocyte (CTL) selected differences in Gag sequence but similar cofactor dependencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by data in Figure 1I-P showing conserved sensitivity to cofactor depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "e0114f93-f76f-4ace-81b3-4a5b7994eb2f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C14",
+      "claim": "Cyclophilin binding provides conformational flexibility to HIV-1 capsid facilitating simultaneous evasion of capsid-targeting restriction factors including TRIM5 as well as MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that cyclophilin binding provides conformational flexibility to HIV-1 capsid facilitating simultaneous evasion of capsid-targeting restriction factors including TRIM5 as well as MxB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "14f9dd2e-142f-4da8-8166-24899e547af7",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C15",
+      "claim": "MxA and MxB are interferon-induced, high molecular weight GTPases in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Mx proteins (MxA and MxB in humans [Aebi et al., 1989]) are interferon-induced, high molecular weight, GTPases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "c050d79d-7887-43a2-88de-474807e3cde1",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C16",
+      "claim": "Mx proteins have globular N-terminal domains forming an enzymatic active site and C-terminal leucine zipper domains connected by a hinge-like bundle-signalling element (BSE).",
+      "claim_type": "EXPLICIT",
+      "source": "Mx proteins (MxA and MxB in humans [Aebi et al., 1989]) are interferon-induced, high molecular weight, GTPases with globular N-terminal domains forming an enzymatic active site and C-terminal leucine zipper domains connected by a hinge-like bundle-signalling element (BSE) (Fribourgh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "356e6a3a-83e9-4427-899b-d53f7d1e9dcc",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C17",
+      "claim": "MxA has antiviral activity against influenza A virus.",
+      "claim_type": "EXPLICIT",
+      "source": "MxA has well-characterised antiviral activity against influenza A virus (Pavlovic et al., 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "7ca04ac2-b308-467f-aed2-bc5efc0f12de",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C18",
+      "claim": "MxA has antiviral activity against bunyaviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "MxA has well-characterised antiviral activity against influenza A virus (Pavlovic et al., 1990), bunyaviruses (Kochs et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "956e7dbc-4e77-46f5-b177-1642fd15ad75",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C19",
+      "claim": "MxA has antiviral activity against rhabdoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "MxA has well-characterised antiviral activity against influenza A virus (Pavlovic et al., 1990), bunyaviruses (Kochs et al., 2002) and rhabdoviruses (Pavlovic et al., 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "82cf0cc1-5c1f-48e2-a48f-8acc3002a6aa",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C20",
+      "claim": "MxB inhibits HIV-1 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas closely related MxB has been shown to inhibit HIV-1 infection (Goujon et al., 2013; Kane et al., 2013; Liu et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "a3d3fa11-da4b-4831-ba7b-23728e360f39",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C21",
+      "claim": "MxB inhibits hepatitis C virus.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas closely related MxB has been shown to inhibit HIV-1 infection (Goujon et al., 2013; Kane et al., 2013; Liu et al., 2013) and more recently hepatitis C virus (Yi et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "02de508c-15e8-4abe-9586-8e3342a7c8f3",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C22",
+      "claim": "MxB inhibits herpesviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas closely related MxB has been shown to inhibit HIV-1 infection (Goujon et al., 2013; Kane et al., 2013; Liu et al., 2013) and more recently hepatitis C virus (Yi et al., 2019) and herpesviruses (Crameri et al., 2018; Schilling et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "ce1c7383-f8b6-481c-87b1-3a76d8442a4c",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C23",
+      "claim": "Cryo-electron microscopy of MxB has revealed higher order oligomers and large helical assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-electron microscopy of MxB has revealed higher order oligomers and large helical assembles (Alvarez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "1dff8a54-c8dc-4c0f-95cd-475a8af1666e",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C24",
+      "claim": "MxB dimerisation and oligomerisation is important for anti-HIV activity.",
+      "claim_type": "EXPLICIT",
+      "source": "MxB dimerisation and oligomerisation appears to be important for anti-HIV activity, but larger helical assemblies are thought not to be required (Alvarez et al., 2017; Buffone et al., 2015; Fricke et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "6360b4eb-550a-4e1f-b461-f824683494bd",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C25",
+      "claim": "Larger helical assemblies of MxB are thought not to be required for anti-HIV activity.",
+      "claim_type": "EXPLICIT",
+      "source": "MxB dimerisation and oligomerisation appears to be important for anti-HIV activity, but larger helical assemblies are thought not to be required (Alvarez et al., 2017; Buffone et al., 2015; Fricke et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "51f172f9-8b87-49ea-ad6e-c9cd4ef01f0c",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C26",
+      "claim": "Mx GTPase activity is highly conserved through evolution and is functional in human MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "Mx GTPase activity is highly conserved through evolution and is functional in human MxB (King et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "171fdd79-5b8f-4b92-8abd-ab0b9100ef19",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C27",
+      "claim": "MxB GTPase activity is dispensable for MxB anti-HIV-1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mx GTPase activity is highly conserved through evolution and is functional in human MxB (King et al., 2004), but surprisingly, is dispensable for MxB anti-HIV-1 activity (Goujon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "2f71fc0a-eca3-40a6-8bd1-92492fa5aaec",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C28",
+      "claim": "MxA does not restrict HIV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "MxA does not restrict HIV-1 but the transfer of the N-terminal nuclear envelope targeting amino acids (1-26) from MxB to MxA generates a chimeric protein with anti-HIV-1 activity equivalent to the wild-type MxB protein (Goujon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "1d11c62a-cfa1-4182-a732-d863348cd438",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C29",
+      "claim": "Transfer of the N-terminal nuclear envelope targeting amino acids (1-26) from MxB to MxA generates a chimeric protein with anti-HIV-1 activity equivalent to wild-type MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "MxA does not restrict HIV-1 but the transfer of the N-terminal nuclear envelope targeting amino acids (1-26) from MxB to MxA generates a chimeric protein with anti-HIV-1 activity equivalent to the wild-type MxB protein (Goujon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "52c368f4-6f09-4230-bd82-5eea3522d790",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C30",
+      "claim": "MxB anti-HIV-1 activity depends on its amino terminal region.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation illustrates the dependence of MxB anti-HIV-1 activity on its amino terminal region",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the MxA/MxB chimera experiment cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "92eff0d8-30dc-433c-a271-2faf49cb5e39",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C31",
+      "claim": "Protein location at the nuclear membrane, conveyed by the MxB N terminus, is important for anti-viral activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation illustrates the dependence of MxB anti-HIV-1 activity on its amino terminal region and suggests that protein location at the nuclear membrane, conveyed by the MxB N terminus, is important for anti-viral activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the MxA/MxB chimera experiment.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "a313a3ac-80b6-466f-831a-97580c5c87e9",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C32",
+      "claim": "MxB is thought to suppress HIV-1 nuclear transport because it inhibits HIV-1 2-LTR circle formation but not viral DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "MxB is thought to suppress HIV-1 nuclear transport because it inhibits HIV-1 2-LTR circle formation but not viral DNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction based on experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "a75a486b-9678-46de-9164-d79dadbaff50",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C33",
+      "claim": "Several studies have identified HIV-1 CA mutations that desensitise HIV-1 to MxB restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have identified HIV-1 CA mutations that desensitise HIV-1 to MxB restriction (Busnadiego et al., 2014; Goujon et al., 2013; Kane et al., 2013; Liu et al., 2013; Wei et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "88cb1ece-fa69-4f9f-848d-89b1d0167e9a",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C34",
+      "claim": "Biochemical CA-MxB binding studies have suggested that MxB escape mutations in the capsid do not prevent MxB interacting with CA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "but biochemical CA-MxB binding studies have suggested that MxB escape mutations in the capsid do not prevent MxB interacting with CA in vitro (Fribourgh et al., 2014; Fricke et al., 2014; Liu et al., 2015; Wei et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "cbaf5e6e-9f4c-47f9-aed2-6bd695b23d5c",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C35",
+      "claim": "MxB can interact with various components of the nuclear pore complex via its N-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it has been suggested that MxB can interact with various components of the nuclear pore complex via its N-terminal domain (Dicks et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "3071baf0-074b-434e-a1ee-ddff27872879",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C36",
+      "claim": "Both Nup214 and TNPO1 are required for MxB nuclear envelope localisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Nup214 and TNPO1 were shown to be required for MxB nuclear envelope localisation, and for MxB restriction of HIV-1, through interaction with the triple arginine motif within the N-terminal domain of MxB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "43ca4312-3c45-41ce-a995-d545513575df",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C37",
+      "claim": "Both Nup214 and TNPO1 are required for MxB restriction of HIV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Nup214 and TNPO1 were shown to be required for MxB nuclear envelope localisation, and for MxB restriction of HIV-1, through interaction with the triple arginine motif within the N-terminal domain of MxB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "fd123a15-0050-433a-875c-ef71d3a0c0bf",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C38",
+      "claim": "Nup214 and TNPO1 interact with the triple arginine motif within the N-terminal domain of MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Nup214 and TNPO1 were shown to be required for MxB nuclear envelope localisation, and for MxB restriction of HIV-1, through interaction with the triple arginine motif within the N-terminal domain of MxB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "57e2f32c-4950-4e4f-881e-4d6f9be204fa",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C39",
+      "claim": "The cellular cofactors used by HIV-1 to enter the nucleus do not constitute a determinant of MxB sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the cellular cofactors used by HIV-1 to enter the nucleus, that is the nuclear entry mechanism, do not constitute a determinant of MxB sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction as a finding of this study, supported by experimental data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "0014aca5-52ed-4e5d-a475-06eecac9d3c9",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C40",
+      "claim": "The interaction of CypA with the classical reference strain R9 is essential for MxB sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that the interaction of CypA with the classical reference strain R9 is essential for MxB sensitivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction as a finding, supported by data in Figure 3C showing CypA depletion rescues R9 from MxB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "dab989d9-0a02-4c52-a49a-f871364b53ee",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C41",
+      "claim": "CypA interaction is not required for MxB sensitivity of a series of R9 mutants or divergent wild type HIV-1 Gag sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that the interaction of CypA with the classical reference strain R9 is essential for MxB sensitivity but that this interaction is not required for MxB sensitivity of a series of R9 mutants or divergent wild type HIV-1 Gag sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in introduction as a finding, supported by data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "57ada5a2-23d0-4529-abc3-16edca4c171d",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C42",
+      "claim": "MxB sensitivity is determined by CA surface dynamics governed by CypA recruitment and CA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that MxB sensitivity is determined by CA surface dynamics governed by CypA recruitment and CA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "279d1d7e-86a2-4780-9b43-81b39870b23b",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C43",
+      "claim": "Upon IFN stimulation, MxB expression is strongly induced.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of MxB is tightly controlled by the type one interferon (IFN) - JAK-STAT axis (Von Wussow et al., 1990) and upon IFN stimulation, MxB expression is strongly induced (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results with citation and supported by immunoblot data in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "ee4643d0-a680-4f8d-b0bb-c54f937f8044",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C44",
+      "claim": "MxB proteins localize to diffuse cytoplasmic puncta and to a distinct ring in the region of the nuclear envelope upon IFN stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "and upon IFN stimulation, MxB expression is strongly induced (Figure 1B) and MxB proteins localize to diffuse cytoplasmic puncta and to a distinct ring in the region of the nuclear envelope, while the nucleus interior is largely devoid of MxB (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by immunofluorescence data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "dde331f0-a4a9-4a16-8f58-175ee9be1bad",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C45",
+      "claim": "The nucleus interior is largely devoid of MxB upon IFN stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "and MxB proteins localize to diffuse cytoplasmic puncta and to a distinct ring in the region of the nuclear envelope, while the nucleus interior is largely devoid of MxB (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by immunofluorescence data in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "6aae24e9-9b5c-4ba9-9633-da4687872b74",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C46",
+      "claim": "Constitutive MxB expression is toxic.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we found constitutive MxB expression to be toxic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "1901b498-1842-4f2d-a502-841882d27536",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C47",
+      "claim": "Induction of MxB expression in HEK293 cells with dox for 48 hr prior to infection results in MxB levels similar to those seen after IFN-\u03b2 induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, induction of MxB expression in HEK293 cells with dox for 48 hr prior to infection, resulted in MxB levels similar to those seen after IFN-\u03b2 induction (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by immunoblot data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "b5de8457-0dea-43c2-95f7-3a18e0d45716",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C48",
+      "claim": "MxB expression reduced the titre of HIV-1 GFP R9 by approximately 10-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, MxB expression reduced the titre of HIV-1 GFP R9 by approximately 10-fold (Figure 1C; Goujon et al., 2013; Kane et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results with citation support and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "84a25e0d-7580-4555-ac64-b66b09961435",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C49",
+      "claim": "Dox induced MxB antiviral activity against HIV-1 GFP R9 was consistent in HEK293, monocytic cell line THP-1 and T cell line A3.01.",
+      "claim_type": "EXPLICIT",
+      "source": "Dox induced MxB antiviral activity against HIV-1 GFP R9 was consistent in HEK293, monocytic cell line THP-1 and T cell line A3.01 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "cf66a8df-403f-4c4f-9b2c-7aa73ffceaa3",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C50",
+      "claim": "MxB expression in HEK293 cells did not affect HIV-1 GFP R9 reverse transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "MxB expression in HEK293 cells did not effect HIV-1 GFP R9 reverse transcription (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by qPCR data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "505b6856-b278-40a4-8082-34ac6f1b2210",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C51",
+      "claim": "MxB expression reduced 2-LTR circles and integrated proviral DNA of HIV-1 GFP R9.",
+      "claim_type": "EXPLICIT",
+      "source": "MxB expression in HEK293 cells did not effect HIV-1 GFP R9 reverse transcription (Figure 1D), but reduced 2-LTR circles and integrated proviral DNA (Figure 1D) as previously described (Goujon et al., 2013; Kane et al., 2013) consistent with suppression of viral nuclear entry.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results with citation support and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "4fb195f9-be46-4d16-9b69-af7fb9ae779b",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C52",
+      "claim": "HIV-1 GFP constructs bearing gag genes from HIV-1(M) primary isolates have different MxB sensitivities of between 10 fold and 2-fold inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise we discovered quite different MxB sensitivities of between 10 fold and 2-fold inhibition, on MxB induction (Figure 1F,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 1F and 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "ca971374-03bc-4334-a1c0-db56169e3f65",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C53",
+      "claim": "HIV-1 CA mutant N74D is insensitive to depletion of HIV-1 nuclear entry cofactors Nup358, TNPO3, CPSF6 and to some degree Nup153.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MxB-insensitive CA mutant N74D (Goujon et al., 2013; Kane et al., 2013) is insensitive to depletion of HIV-1 nuclear entry cofactors Nup358, TNPO3, CPSF6 and to some degree Nup153 (Achuthan et al., 2018; Lee et al., 2010; Schaller et al., 2011; Sowd et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "320d521b-790d-4526-bc0b-ebf83c84e48b",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C54",
+      "claim": "HIV-1 bearing CA P90A has reduced sensitivity to depletion of Nup358, TNPO3 and CPSF6.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 bearing CA P90A, which alters the otherwise completely conserved CypA binding site and reduces CA affinity for CypA (Yoo et al., 1997) and Nup358 (Schaller et al., 2011), is completely insensitive to MxB restriction and also has reduced sensitivity to depletion of Nup358, TNPO3 and CPSF6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "91c47592-faba-48f0-aa35-f8e8e495230c",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C55",
+      "claim": "HIV-1 bearing CA P90A is completely insensitive to MxB restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 bearing CA P90A, which alters the otherwise completely conserved CypA binding site and reduces CA affinity for CypA (Yoo et al., 1997) and Nup358 (Schaller et al., 2011), is completely insensitive to MxB restriction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results with citation support and confirmed by data in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "b82697c6-6934-4eee-81b9-f9d8a073d14d",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C56",
+      "claim": "HIV-1 CA mutants P90A and N74D have retargeted proviral integration preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these mutants also have retargeted proviral integration preferences consistent with altered nuclear entry mechanisms (Achuthan et al., 2018; Lee et al., 2010; Schaller et al., 2011; Sowd et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "fc9ef0a4-e0e1-4a0c-8324-3eeb66852e70",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C57",
+      "claim": "Viruses bearing both MxB sensitive and insensitive HIV-1(M) Gags had similar cofactor dependence, evidenced by similar sensitivities to stable depletions of TNPO3 or Nup358 in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, viruses bearing both MxB sensitive, and insensitive, HIV-1(M) Gags had similar cofactor dependence, evidenced by similar sensitivities to stable depletions (Figure 1K) of TNPO3 or Nup358 in HeLa cells (Figure 1I,J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 1I, 1J, and 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "9d157cab-214c-4533-9a8e-7e4a91d2e891",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C58",
+      "claim": "HIV-1 GFP bearing each of the divergent Gags were sensitive to \u2206CPSF6 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, HIV-1 GFP bearing each of the divergent Gags were sensitive to \u2206CPSF6 expression (Figure 1N) consistent with CPSF6 use as a cofactor (Figure 1L,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 1L, 1M, and 1N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "4dc70bd5-e31f-49a9-87db-1b4e9594ce2f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C59",
+      "claim": "The CypA binding site was conserved in all of the Gags tested.",
+      "claim_type": "EXPLICIT",
+      "source": "The CypA binding site was conserved in all of the Gags tested",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "7ce20e9b-6577-4df1-be3b-e87d2d57718e",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C60",
+      "claim": "Each virus tested was sensitive to expression of a human TRIM5-CypA chimera suggesting all tested viruses are able to bind CypA.",
+      "claim_type": "EXPLICIT",
+      "source": "The CypA binding site was conserved in all of the Gags tested and concordantly, each virus was sensitive to expression of a human TRIM5-CypA chimera (Figure 1O and P) suggesting all tested viruses are able to bind CypA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 1O and 1P.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "eac63850-13bd-4732-a039-3019e46f9031",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C61",
+      "claim": "HIV-1 GFP R9 bearing CA mutant N74D was insensitive to MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported, HIV-1 GFP R9 bearing CA mutant N74D, which does not bind the cellular cofactor CPSF6, was insensitive to MxB (Figure 2A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results with citation support and shown in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "d95d4212-ccfc-4eb8-970c-d36ce05c0726",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C62",
+      "claim": "MxB induction did not strongly suppress HIV-1 CA N74D infection, viral DNA synthesis, or 2LTR circle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported, HIV-1 GFP R9 bearing CA mutant N74D, which does not bind the cellular cofactor CPSF6, was insensitive to MxB (Figure 2A,B) and MxB induction did not strongly suppress infection (Figure 2A), viral DNA synthesis, or 2LTR circle formation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "5059ec9e-20c4-4a83-a70d-5e06019ef592",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C63",
+      "claim": "CPSF6 depletion reduces HIV-1 R9 sensitivity to depletion of nuclear entry associated cofactors without impacting infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is informative because, like CA mutation N74D, CPSF6 depletion reduces HIV-1 R9 sensitivity to depletion of nuclear entry associated cofactors without impacting infectivity (Lee et al., 2010; Ocwieja et al., 2011; Schaller et al., 2011; Sowd et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "3027821c-c260-4085-995e-3dab6d35ce57",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C64",
+      "claim": "When CPSF6 was effectively depleted with shRNA, HIV-1 remained sensitive to MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we effectively depleted CPSF6 with shRNA (Figure 2D), HIV-1 remained sensitive to MxB (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "b6af04c7-82c5-401d-a1ed-924b036b1dd4",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C65",
+      "claim": "In the absence of CPSF6, the MxB block to infection was accompanied by a reduction in 2LTR circles, suggesting MxB mediated suppression of nuclear entry was retained.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of CPSF6, the MxB block to infection was accompanied by a reduction in 2LTR circles, as in wild type cells, suggesting MxB mediated suppression of nuclear entry was retained (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figure 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "5c94d2b3-aad5-4117-97cb-66def30dfd1f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C66",
+      "claim": "This is the first occasion in which the effects of CPSF6 depletion and CA N74D mutation on HIV-1 infection differ.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge this is the first occasion in which the effects of CPSF6 depletion and CA N74D mutation on HIV-1 infection differ (Lee et al., 2010; Ocwieja et al., 2011; Schaller et al., 2011; Sowd et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results with citation support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "53d70543-5f8b-459d-9250-8885356474e5",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C67",
+      "claim": "CPSF6 was found in the nucleus by immunostaining 293 T cells and this was not altered by MxB expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, CPSF6 was found in the nucleus by immunostaining 293 T cells and this was not altered by MxB expression suggesting that MxB does not inhibit HIV-1 by regulating CPSF6 traffic into the nucleus (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by immunofluorescence data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "6675f9ac-d391-479c-8dda-933710220c0f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C68",
+      "claim": "MxB does not inhibit HIV-1 by regulating CPSF6 traffic into the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, CPSF6 was found in the nucleus by immunostaining 293 T cells and this was not altered by MxB expression suggesting that MxB does not inhibit HIV-1 by regulating CPSF6 traffic into the nucleus (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from immunofluorescence data showing CPSF6 localization is unchanged by MxB.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "ce5fa744-9919-4752-821e-dffce7d77f8d",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C69",
+      "claim": "HIV-1 bearing CA N74D is insensitive to MxB as a direct result of the CA mutation and not due to loss of CPSF6 recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations suggest that HIV-1 bearing CA N74D is insensitive to MxB as a direct result of the CA mutation and not due to loss of CPSF6 recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing differential effects of N74D mutation versus CPSF6 depletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "278e38ca-d522-435f-aef9-7c873c86b579",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C70",
+      "claim": "Effective transient TNPO3 depletion reduced wild type HIV-1 GFP R9 infection in HEK293 cells but did not rescue infection from MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "Effective transient TNPO3 depletion (Figure 2G) reduced wild type HIV-1 GFP R9 infection in HEK293 cells but did not rescue infection from MxB (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 2F and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "b754ff40-96ef-4e0f-b2c2-b1b93971d3f4",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C71",
+      "claim": "TNPO3 depletion did not affect the sensitivity of HIV-1 CA P90A to MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "TNPO3 depletion also did not affect the sensitivity of HIV-1 CA P90A to MxB, which was insensitive to TNPO3 depletion as described (Schaller et al., 2011; Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results with citation support and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "cc13f3ff-bc94-49ca-9946-544d6fbb4eff",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C73",
+      "claim": "The MxB block to HIV-1 nuclear entry is direct and not due to MxB influencing TNPO3 nuclear transport.",
+      "claim_type": "EXPLICIT",
+      "source": "MxB induction also did not relocalise TNPO3, suggesting that the MxB block to HIV-1 nuclear entry is direct and not due to MxB influencing TNPO3 nuclear transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that TNPO3 localization is unchanged by MxB.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "dfb79c1b-34ec-4ef8-9d94-3571f285bd83",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C74",
+      "claim": "Transient Nup358 depletion did not significantly impact HIV-1 GFP infectivity in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient Nup358 depletion did not significantly impact HIV-1 GFP infectivity in HEK293 cells (Figure 2I), despite efficient protein depletion (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 2I and 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "4c3e59d9-8212-49f5-a07e-25a4fe0f9c38",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C75",
+      "claim": "Wild type HIV-1 GFP was fully sensitive to MxB after Nup358 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, wild type HIV-1 GFP was fully sensitive to MxB after Nup358 depletion and HIV-1 P90A MxB insensitivity was also not affected (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "1828828c-8467-4fe6-b484-8604a27360dd",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C76",
+      "claim": "HIV-1 P90A MxB insensitivity was not affected by Nup358 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, wild type HIV-1 GFP was fully sensitive to MxB after Nup358 depletion and HIV-1 P90A MxB insensitivity was also not affected (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "facf0f64-fedd-4c69-acad-e7d921fad818",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C77",
+      "claim": "MxB restriction of HIV-1 is independent of the cofactors used for nuclear entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations suggest that MxB restriction of HIV-1 is independent of the cofactors used for nuclear entry, and therefore mutation of Gag appears to be impacting MxB sensitivity in a more direct way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results showing cofactor depletion does not affect MxB sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "01a2e0e8-f3d8-4da8-820b-3d8d0399dda5",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C78",
+      "claim": "Mutation of Gag appears to be impacting MxB sensitivity in a more direct way.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations suggest that MxB restriction of HIV-1 is independent of the cofactors used for nuclear entry, and therefore mutation of Gag appears to be impacting MxB sensitivity in a more direct way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "1a928bfb-da03-48f6-8c4a-8f3ca9705def",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C79",
+      "claim": "HIV-1 CA P90A is insensitive to MxB demonstrating no reduction in HIV-1 P90A infectivity, 2LTR or proviral DNA levels after induction of MxB expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that HIV-1 CA P90A is insensitive to MxB demonstrating no reduction in HIV-1 P90A infectivity (Figure 3A), 2LTR or proviral DNA levels (Figure 3B) after induction of MxB expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "9be15ef9-0bbb-451a-b14b-26346959fc4f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C80",
+      "claim": "CypA depletion fully rescues wild type HIV-1 GFP from MxB restriction, leading to a recovery of 2LTR circles and infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we confirmed the observation (Liu et al., 2013) that CypA depletion, here using shRNA (Figure 3D), fully rescues wild type HIV-1 GFP from MxB restriction, leading to a recovery of 2LTR circles and infectivity (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results with citation support and shown in Figures 3C and 3D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "cdce2a96-0e22-40cf-a849-faf8aee3a39f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C81",
+      "claim": "Addition of the CypA inhibitor, cyclosporine A (CsA), at the time of infection, rescued wild type HIV-1 infectivity from MxB restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of the CypA inhibitor, cyclosporine A (CsA), at the time of infection, also rescued wild type HIV-1 infectivity from MxB restriction (Figure 3E), consistent with CypA recruitment by CA being necessary for MxB sensitivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "2e041669-d5d0-4ecc-bd92-418caab5a064",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C82",
+      "claim": "CypA recruitment by CA is necessary for MxB sensitivity of HIV-1 R9.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of the CypA inhibitor, cyclosporine A (CsA), at the time of infection, also rescued wild type HIV-1 infectivity from MxB restriction (Figure 3E), consistent with CypA recruitment by CA being necessary for MxB sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the CsA rescue experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "65d08e26-7852-4b35-992d-cafd00073e73",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C83",
+      "claim": "HIV-1 infectivity can be almost completely rescued from MxB restriction by the addition of CsA up to 8 hr post infection, with the efficacy of CsA diminishing 24 hr post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that HIV-1 infectivity can be almost completely rescued from MxB restriction, by the addition of CsA, up to 8 hr post infection, with the efficacy of CsA diminishing 24 hr post infection (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "1b9bd290-c025-4afc-a98c-99fa98711f23",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C84",
+      "claim": "Inhibition by MxB is reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that inhibition by MxB is reversible and suggests that the interaction between HIV-1 and MxB is not destructive, at least not immediately (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the time-of-addition CsA experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "15f5548a-bc94-40e1-9b8f-d8993c9ac7ee",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C85",
+      "claim": "The interaction between HIV-1 and MxB is not destructive, at least not immediately.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that inhibition by MxB is reversible and suggests that the interaction between HIV-1 and MxB is not destructive, at least not immediately (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the reversibility of MxB inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "892f39de-010b-4aa0-a4e8-0a5672c1341e",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C86",
+      "claim": "HIV-1 CA P90A treated with CsA during infection of MxB expressing cells showed no rescue to infectivity, consistent with P90A being resistant to MxB due to failure to recruit CypA.",
+      "claim_type": "EXPLICIT",
+      "source": "In a control experiment, HIV-1 CA P90A was treated with CsA during infection of MxB expressing cells and we observed no rescue to infectivity, consistent with P90A being resistant to MxB due to failure to recruit CypA (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "76b4606c-97e8-405c-b6c3-f21b8c62780a",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C87",
+      "claim": "The A92E mutation was identified by selection of HIV-1 replicating mutants during CypA inhibition with CsA.",
+      "claim_type": "EXPLICIT",
+      "source": "The A92E mutation was identified by selection of HIV-1 replicating mutants during CypA inhibition with CsA (Aberham et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "18974f91-01b8-47a6-bea3-ae1abaa6603f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C88",
+      "claim": "The A92E mutation appears to recapitulate the effect of CypA binding by reducing the dynamics of the CypA binding loop on the surface of the CA leading to core stabilisation.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation appears to recapitulate the effect of CypA binding by reducing the dynamics of the CypA binding loop on the surface of the CA (Lu et al., 2015) leading to core stabilisation (Li et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "6b2a9ae7-18d6-4f49-9b00-3192baa8af89",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C89",
+      "claim": "HIV-1 bearing CA A92E infects HEK293 cells efficiently in the absence of CypA recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, HIV-1 bearing CA A92E infects HEK293 cells efficiently, in the absence of CypA recruitment",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "65ebd14e-94d5-4e9d-b1e6-9dc2b8b33fff",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C90",
+      "claim": "Adding A92E to HIV-1 CA P90A rescued sensitivity to MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, adding A92E to HIV-1 CA P90A rescued sensitivity to MxB. Thus, MxB induction with dox restricted HIV-1 CA P90A A92E but not HIV-1 bearing CA P90A alone (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "bb4e27d5-0087-4844-9a6a-57f1d0b4b0a5",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C91",
+      "claim": "The A92E CA mutation rescued MxB sensitivity in the absence of CypA protein, after shRNA-mediated CypA depletion, and after CypA inhibition with CsA.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the A92E CA mutation also rescued MxB sensitivity in the absence of CypA protein, after shRNA-mediated CypA depletion, and after CypA inhibition with CsA (Figure 3H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 3H and 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "41528d60-402a-471b-b07a-c8647665356f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C92",
+      "claim": "HIV-1 sensitivity to MxB in the presence of CsA was also rescued by a second CsA escape mutant G94D.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 sensitivity to MxB in the presence of CsA was also rescued by a second CsA escape mutant G94D (Figure 3J), which is also thought to recapitulate the effect of CypA binding by stabilising the CypA binding loop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figure 3J.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "cdeddccc-c698-47c4-b0de-32d7a600d08f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C93",
+      "claim": "For HIV-1 R9, it is not CypA recruitment per se that is required for MxB sensitivity, but rather the conformational effect of CypA recruitment, likely the CypA mediated stabilisation of the CypA binding loop.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that, for this particular HIV-1 isolate (HIV-1 R9), it is not CypA recruitment per se that is required for MxB sensitivity, but rather the conformational effect of CypA recruitment, likely the CypA mediated stabilisation of the CypA binding loop, which is recapitulated by the A92E and G94D mutations (Lu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results with A92E and G94D mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "cd82e465-0b54-438b-b73b-eb329a3a3669",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C94",
+      "claim": "HIV-1 GFP R9 was sensitive to MxB and CsA rescued infectivity but had itself a 2\u20133 fold inhibitory effect.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported, HIV-1 GFP R9 was sensitive to MxB and CsA rescued infectivity but had itself a 2\u20133 fold inhibitory effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results and supported by data in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "906fe893-5f99-4633-a90b-bbdf21d08576",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C95",
+      "claim": "HIV-1 GFP bearing clade H 90CF056 Gag was insensitive to MxB and CsA treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 GFP bearing clade H 90CF056 Gag was insensitive to MxB and CsA treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results and supported by data in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "71d2189d-074a-4b3a-b857-66ded6492016",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C96",
+      "claim": "Clade C 92BR025 Gag was insensitive to MxB but strongly inhibited by CsA treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Clade C 92BR025 Gag was insensitive to MxB but strongly inhibited by CsA treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results and supported by data in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "6837869d-1f0d-4fa8-8328-2cf0341d8040",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C97",
+      "claim": "Clade F 93BR020 Gag was MxB sensitive, but in a CsA insensitive way.",
+      "claim_type": "EXPLICIT",
+      "source": "Clade F 93BR020 Gag was MxB sensitive, but in a CsA insensitive way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results and supported by data in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "ad65ddbf-300b-4afd-9142-dbf446944deb",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C98",
+      "claim": "Clade D 94UG114 Gag was weakly sensitive to MxB and CsA rescued infection from MxB but inhibited infection by 2\u20133 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Clade D 94UG114 Gag was weakly sensitive to MxB and CsA rescued infection from MxB but inhibited infection by 2\u20133 fold (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by data in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "a7cddafc-c1e0-4260-99cb-a602dc2f5336",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C99",
+      "claim": "A threonine at position 210 correlated with MxB sensitivity and a serine correlated with MxB escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a threonine at position 210 correlated with MxB sensitivity and a serine correlated with MxB escape (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "2c77f3d2-dabc-4db9-a2a3-bed6455cec9a",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C100",
+      "claim": "There was no obvious association between the C-terminal CA sequence and sensitivity to CsA.",
+      "claim_type": "EXPLICIT",
+      "source": "There was however, no obvious association between the C-terminal CA sequence and sensitivity to CsA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results based on sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "ecad0d35-0e34-4d06-833b-ba6895145ff5",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C101",
+      "claim": "The critical G89 and P90 residues required for CypA recruitment are conserved between HIV-1 R9 and 93BR020 Gags.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the CypA binding loop sequence revealed that the critical G89 and P90 residues required for CypA recruitment are conserved but positions CA 86, 87, 92 and 96 are polymorphic between HIV-1 R9 and 93BR020 Gags (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "7fc2bb07-9b2e-447a-a33d-207417b9c535",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C102",
+      "claim": "Positions CA 86, 87, 92 and 96 are polymorphic between HIV-1 R9 and 93BR020 Gags.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of the CypA binding loop sequence revealed that the critical G89 and P90 residues required for CypA recruitment are conserved but positions CA 86, 87, 92 and 96 are polymorphic between HIV-1 R9 and 93BR020 Gags (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "f334bc37-8278-4ec5-bab6-732991497161",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C103",
+      "claim": "HIV-1 CA TQPI (V86T, H87Q, A92P M96I) lost both MxB and CsA sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found HIV-1 CA TQPI lost both MxB and CsA sensitivity and thus had a phenotype that was different to the parental R9 and 93BR020 Gags but similar to 90CF056 and 94UG114 Gags.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results and supported by data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "60ba41ff-9ae1-4162-bc26-05543020e122",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C104",
+      "claim": "Residue 96 is very close in space to another pair of polymorphic residues at positions 116 and 120 in the short alpha helix on the surface of the CA.",
+      "claim_type": "EXPLICIT",
+      "source": "Further examination of HIV-1 CA structures indicated that residue 96 is very close in space to another pair of polymorphic residues at positions 116 and 120 in the short alpha helix on the surface of the CA (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "a6f1d86d-50f8-4978-b075-b61339891fe2",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C105",
+      "claim": "HIV-1 GFP CA TQPIQG (V86T, H87Q, A92P M96I, G116Q, H120G) behaved like the 93BR020 Gag bearing virus and was sensitive to MxB and this was not affected by CypA inhibition with CsA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this virus behaved like the 93BR020 Gag bearing virus and was sensitive to MxB and this was not affected by CypA inhibition with CsA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results and supported by data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "2bf9cdfd-0c8c-4e27-8a8c-13ecc7095ea1",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C106",
+      "claim": "The double mutation HIV-1 R9 CA G116Q, H120G was not particularly different from the wild type HIV-1 R9 in either sensitivity to MxB or CsA.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the double mutation HIV-1 R9 CA G116Q, H120G was not particularly different from the wild type HIV-1 R9 in either sensitivity to MxB or CsA indicating that the TQPI mutations are required to achieve the 93BR029 phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results and supported by data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "93780da4-42c6-428f-acb0-c225470ac48d",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C107",
+      "claim": "Five of six CA positions responsible for the different MxB and CsA sensitivity are highly variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of CA sequence variation in a large (Figure 5\u2014figure supplement 1) or smaller (Figure 5) selection of HIV-1(M) sequences using Chromaclade (Monit et al., 2019) illustrated that five of six CA positions responsible for the different MxB and CsA sensitivity in Figure 4 are highly variable",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by phylogenetic analysis in Figure 5 and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "92d6d94d-72e9-4ad1-b537-a6afcd36e09f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C108",
+      "claim": "The residues required for CypA recruitment at positions 89 and 90 are completely conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of CA sequence variation in a large (Figure 5\u2014figure supplement 1) or smaller (Figure 5) selection of HIV-1(M) sequences using Chromaclade (Monit et al., 2019) illustrated that five of six CA positions responsible for the different MxB and CsA sensitivity in Figure 4 are highly variable, as opposed to the residues required for CypA recruitment at positions 89 and 90, which are completely conserved (Figure 5 and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and supported by phylogenetic analysis in Figure 5 and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "f15ea14f-dbd9-4132-9610-4eee646101ae",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C109",
+      "claim": "Some CA positions, particularly 116 and 120, appear to have some degree of clade specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, some positions, particularly 116 and 120 appear to have some degree of clade specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results based on phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "cca3a270-b931-4702-ad6f-b21188478199",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C110",
+      "claim": "The regions around CA positions 116, 120 and 96 are particularly mobile relative to the rest of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Rendering CA crystal structures according to their atomic displacement parameters (B-factors) revealed that the regions around 116, 120 and 96 are particularly mobile relative to the rest of the protein (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in results and shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "1196e39b-9c77-4d7a-a332-974483f35e77",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C111",
+      "claim": "B-factors reflect the fluctuation of atoms about their average positions and provide important information about protein dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "B-factors reflect the fluctuation of atoms about their average positions and provide important information about protein dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about B-factors in crystallography.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "a1519526-acc7-4324-939c-c9e6b3609f08",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C112",
+      "claim": "The highly variable residues that influence MxB and CsA sensitivity are dynamic with 120, 116 and 96 close in space and likely influencing each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus these structures suggest that the highly variable residues that influence MxB and CsA sensitivity are dynamic with 120, 116 and 96 close in space and likely influencing each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the B-factor analysis and structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "ffe4c5ae-a596-4a54-a9f9-da973d07d894",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C113",
+      "claim": "NMR studies have suggested that CypA influences CA by changing surface dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR studies have suggested that CypA, which influences some cases of MxB sensitivity, also influences CA by changing surface dynamics (Lu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in results with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "a50e8c73-f9f3-4825-b75c-c9beb34c487a",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C114",
+      "claim": "MxB sensitivity is principally influenced by CA surface conformation and dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation, and the relatively large B-factors in CA structures for specific polymorphic residues which dictate MxB sensitivity, support the notion that MxB sensitivity is principally influenced by CA surface conformation and dynamics (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the B-factor analysis, NMR data, and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "c1d14424-30bd-4106-92a9-1ae84607e67b",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C115",
+      "claim": "Direct recruitment of wild type CA, and not CA N74D, by MxB is the simplest explanation for the differential MxB sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct recruitment of wild type CA, and not CA N74D, by MxB is the simplest explanation for these data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "c864d1c3-282d-42f5-a454-b7fccc0381e7",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C116",
+      "claim": "Recent work has suggested that MxB may bind at the tri-hexamer interface to a strongly negatively charged patch composed of E71, E75 and E213 which may interact with the 11RRR13 motif of MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "Concordantly, recent work (Smaga et al., 2019) has suggested that MxB may bind at the tri-hexamer interface to a strongly negatively charged patch composed of E71, E75 and E213 which may interact with the 11RRR13 motif of MxB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "d99bb014-8bd3-48b6-849e-4ea36993b699",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C117",
+      "claim": "CA N74 lies between two of the putative MxB binding residues E71 and E75.",
+      "claim_type": "EXPLICIT",
+      "source": "CA N74 lies between two of the putative MxB binding residues E71 and E75, but critically the N74 side chain extends away from the E71 and E75 side chains and into the CPSF6 binding pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion based on structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "37c08659-a508-4e5b-9aa4-149781a00d92",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C118",
+      "claim": "The N74 side chain extends away from the E71 and E75 side chains and into the CPSF6 binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "CA N74 lies between two of the putative MxB binding residues E71 and E75, but critically the N74 side chain extends away from the E71 and E75 side chains and into the CPSF6 binding pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion based on structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "536ae550-8f47-4a1c-8b1a-4d2e81b22366",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C119",
+      "claim": "Mutation N74D replaces the amide side chain with a negatively charged acidic side chain in close spatial proximity to the positively charged K70.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation N74D replaces the amide side chain with a negatively charged acidic side chain in close spatial proximity to the positively charged K70 (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in discussion and shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "778575c9-2d95-4877-9f7a-21af9b1685e3",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C120",
+      "claim": "N74D conformationally alters the capsid region to prevent both CPSF6 and MxB binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore hypothesise that N74D conformationally alters this region of the capsid to prevent both CPSF6 and MxB binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on structural analysis and experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "7c83b739-98df-4bef-9b0c-80a7f1ba6cee",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C121",
+      "claim": "MxB recruitment to CA is required for restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that MxB recruitment to CA is required for restriction but it appears that the capacity to recruit CA in biochemical assays does not correlate with sensitivity to MxB restriction (Smaga et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assumption in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "b8f82f12-77b3-4841-bcdd-309ae3daf755",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C122",
+      "claim": "The capacity to recruit CA in biochemical assays does not correlate with sensitivity to MxB restriction.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that MxB recruitment to CA is required for restriction but it appears that the capacity to recruit CA in biochemical assays does not correlate with sensitivity to MxB restriction (Smaga et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "8f35dcf2-6497-4b34-a181-945127607abc",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C123",
+      "claim": "CA mutation can influence the inhibitory effect of MxB binding, as well as influencing whether MxB binds at all.",
+      "claim_type": "EXPLICIT",
+      "source": "We concur with these authors, hypothesising that CA mutation can influence the inhibitory effect of MxB binding, as well as influencing whether MxB binds at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "6831b1a3-4fea-4cda-99a9-ec0cb081eb87",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C124",
+      "claim": "Despite insensitivity to MxB mediated inhibition of infectivity, proviral DNA levels of HIV-1 bearing CA P90A were increased by MxB induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observe that, despite insensitivity to MxB mediated inhibition of infectivity, proviral DNA levels of HIV-1 bearing CA P90A were increased by MxB induction (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in discussion and supported by data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "5a9b2549-a4c9-497d-87f0-d288660bcde3",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C125",
+      "claim": "MxB still influences HIV-1 CA P90A, possibly at the level of nuclear entry and integration, despite not reducing the number of GFP positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that MxB still influences HIV-1 CA P90A, possibly at the level of nuclear entry and integration, despite not reducing the number of GFP positive cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of increased proviral DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "c2b1b4fd-640d-4a47-ae76-a9fc49a54661",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C126",
+      "claim": "MxB binds either directly or indirectly to incoming HIV-1 CA, at the nuclear rim where long MxB resides, and restriction occurs if CA is in an MxB sensitive conformation or state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus our model, based on the literature and data herein, is that MxB binds either directly or indirectly to incoming HIV-1 CA, at the nuclear rim where long MxB resides, and restriction occurs if CA is in an MxB sensitive conformation or state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings and literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "61c8c97f-8aac-4b2e-949f-c1f008eb8dcd",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C127",
+      "claim": "CypA recruitment influences sensitivity to MxB restriction in a CA sequence sensitive way by influencing CA conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we conclude that CypA recruitment influences sensitivity to MxB restriction in a CA sequence sensitive way by influencing CA conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "bcf4c812-bcbe-4981-8097-fad70d24ff0a",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C128",
+      "claim": "The effect of MxB restriction is to reduce nuclear entry of viral particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of MxB restriction is to reduce nuclear entry of viral particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing reduced 2-LTR circles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "af05192b-f34e-49c5-bf38-0b536d4277cd",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C129",
+      "claim": "CypA protects HIV-1 from restriction by TRIM5.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study, demonstrating how CypA protects HIV-1 from restriction by TRIM5, likely explains inhibition of HIV-1 GFP infection by CsA in Figure 5 (Kim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "90f22de7-6f57-43e3-b68b-dc7932c9753f",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C130",
+      "claim": "CypA does not protect infection from MxB but rather in some cases (R9, 94UG114) CypA causes MxB sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is striking that CypA does not protect infection from MxB but rather in some cases (R9, 94UG114) CypA causes MxB sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "0c093ba8-2dc2-4443-8aa4-49fba5349a69",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C131",
+      "claim": "MxB provides less selective pressure on CA than TRIM5 because MxB expression is strictly controlled by IFN, while TRIM5 expression is enhanced by IFN but typically expressed at restrictive levels in unstimulated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus perhaps MxB provides less selective pressure on CA than TRIM5 because MxB expression is strictly controlled by IFN, while TRIM5 expression is enhanced by IFN but typically expressed at restrictive levels in unstimulated cells (Jimenez-Guarde\u00f1o et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the discussion with citation support.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "c582cb61-b9bd-46db-bcf3-38d86c05454d",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C132",
+      "claim": "HIV-1 has adapted to avoid triggering IFN production.",
+      "claim_type": "EXPLICIT",
+      "source": "We have proposed that HIV-1 has adapted to avoid triggering IFN production (Khan et al., 2020; Rasaiyaah et al., 2013; Sumner et al., 2019; Sumner et al., 2017) and this may reduce exposure to MxB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "6ea4af15-a41b-4f95-a276-ec344871c84e",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C133",
+      "claim": "HIV-1 adaptation to avoid triggering IFN production may reduce exposure to MxB.",
+      "claim_type": "EXPLICIT",
+      "source": "We have proposed that HIV-1 has adapted to avoid triggering IFN production (Khan et al., 2020; Rasaiyaah et al., 2013; Sumner et al., 2019; Sumner et al., 2017) and this may reduce exposure to MxB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "f6d138c3-c4d8-4666-800f-ffeb03f44d5b",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C134",
+      "claim": "All the wild type Gag sequences tested were dependent on Nup358 and TNPO3 for maximal infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is striking that cofactor use is not entirely flexible. All the wild type Gag sequences tested here were dependent on Nup358 and TNPO3 for maximal infectivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion based on experimental results in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "a20e571b-d449-4b55-ac17-87318a1e6843",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C135",
+      "claim": "All the wild type Gag sequences tested were sensitive to overexpression of mutant CPSF6 and TRIMCyp.",
+      "claim_type": "EXPLICIT",
+      "source": "All the wild type Gag sequences tested here were dependent on Nup358 and TNPO3 for maximal infectivity and were sensitive to overexpression of mutant CPSF6 and TRIMCyp (Figure 1; Ikeda et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion based on experimental results in Figure 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "b85345d4-1333-45dd-b2fb-188502d469fb",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C136",
+      "claim": "The difference between absolute dependence (Nup358, CPSF6, TNPO3) versus flexible (CypA) cofactor use likely reflects their role in the infectious cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between absolute dependence (Nup358, CPSF6, TNPO3) versus flexible (CypA) cofactor use likely reflects their role in the infectious cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "2b03c37a-cf65-4cc8-b8c0-cd7d76ece9a4",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C137",
+      "claim": "Gag is under strong selective pressure from immune responses, particularly cytotoxic T lymphocytes presenting Gag derived peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Gag is under strong selective pressure from immune responses, particularly cytotoxic T lymphocytes presenting Gag derived peptides (Carlson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "e173c6cf-e9dc-404f-8fbd-605dac7b0381",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C138",
+      "claim": "HIV-1 must adapt to a selection of CTL escape mutations in CA and this is known to influence the relationship with specific co-factors e.g. CypA and CPSF6.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus HIV-1 must adapt to a selection of CTL escape mutations in CA and this is known to influence the relationship with specific co-factors e.g. CypA (Brockman et al., 2007; Leslie et al., 2004) and CPSF6 (Henning et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "7837ec94-66a8-4076-9f25-aef11d64d73b",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C139",
+      "claim": "CTL escape mutations in CA influence sensitivity to restriction factors e.g. MxB and TRIM5\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus HIV-1 must adapt to a selection of CTL escape mutations in CA and this is known to influence the relationship with specific co-factors e.g. CypA (Brockman et al., 2007; Leslie et al., 2004) and CPSF6 (Henning et al., 2014), and sensitivity to restriction factors e.g. MxB (Liu et al., 2015; Merindol et al., 2018; Wei et al., 2016) and TRIM5\u03b1 (Battivelli et al., 2011; Granier et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "abb0b180-59ec-4890-b0f7-7889d41a3980",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C140",
+      "claim": "All HIV-1 sequences have been influenced by CTL exposure because CTL escape variants can be transmitted.",
+      "claim_type": "EXPLICIT",
+      "source": "All HIV-1 sequences have been influenced by CTL exposure because CTL escape variants can be transmitted (Leslie et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in discussion with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "8ec46d5c-c3c7-47a6-aed5-feb87e33e090",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C141",
+      "claim": "HIV-1 flexibly uses CypA and changing CA sequence to influence surface dynamics and conformation to achieve maximally infectious CA behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret our data as suggesting a model in which HIV-1 flexibly uses CypA and changing CA sequence to influence surface dynamics and conformation to achieve maximally infectious CA behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "d22ef5c2-4249-4370-8029-ecd87c17d3e1",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "claim_id": "C142",
+      "claim": "CypA recruitment facilitates CA sequence change and escape from immune pressure, by providing additional conformational options to retaining insensitivity to CA targeting restriction factors while retaining appropriate interactions with essential cofactors.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesise that CypA recruitment facilitates CA sequence change and escape from immune pressure, by providing additional conformational options to retaining insensitivity to CA targeting restriction factors while retaining appropriate interactions with essential cofactors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis stated in the discussion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MxB is an interferon-induced restriction factor that localizes to the nuclear envelope and restricts HIV-1 nuclear entry by reducing 2-LTR circle formation without affecting reverse transcription. A doxycycline-inducible MxB expression system was developed that achieves physiologically relevant MxB levels and consistently restricts HIV-1 R9 by approximately 10-fold across multiple cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C43-C51 provide converging evidence from immunofluorescence (Figure 1A), immunoblots (Figure 1B), infectivity assays (Figure 1C), and qPCR (Figure 1D) demonstrating MxB localization, induction, and mechanism of restriction. The data show consistent restriction across cell types and proper controls for expression levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HIV-1 capsid is the key determinant of MxB sensitivity, with capsid mutants P90A and N74D showing complete insensitivity to MxB restriction. These mutants also exhibit altered cofactor dependencies and integration targeting, and primary HIV-1 isolates show variable MxB sensitivity (2-10 fold) despite conserved capsid sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C9 and C52-C56 are supported by infectivity data (Figures 1F-H, 2A-B, 3A-B) and prior literature citations. The variable MxB sensitivity among primary isolates with similar cofactor dependencies (C52) is well-documented in Figure 1, establishing capsid as the determinant rather than cofactor use.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "67f74152-3c69-4ff4-bf14-987bae5cbd44",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MxB sensitivity is independent of nuclear entry cofactor usage. CPSF6 depletion does not affect MxB sensitivity of wild-type HIV-1, despite the N74D mutation (which prevents CPSF6 binding) conferring MxB resistance. All tested primary isolates showed conserved dependence on TNPO3, Nup358, and CPSF6, regardless of MxB sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C39, C57-C69 are strongly supported by experimental data in Figures 1I-P and 2A-E. The key finding that CPSF6 depletion maintains MxB sensitivity (C64-C65, Figure 2C) while N74D mutation confers resistance (C61-C62) is novel and well-controlled. This is the first demonstration that these two conditions have different effects (C66), suggesting direct capsid effects rather than cofactor-mediated mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "872356b7-1bf3-4140-8727-55be40c49272",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Depletion of nuclear transport cofactors TNPO3 and Nup358 does not rescue HIV-1 from MxB restriction, and MxB does not affect the localization of these cofactors. This indicates MxB restriction is independent of the nuclear entry pathway used by the virus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C78 are supported by data in Figures 2F-J showing that cofactor depletion does not affect MxB sensitivity. The immunofluorescence and immunoblot controls demonstrate proper depletion and lack of relocalization. The inference that MxB acts directly on capsid (C77-C78) is reasonable given the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "3fce7d5b-9386-4502-9c71-acd2293ae601",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CypA interaction is essential for MxB sensitivity of HIV-1 R9. CypA depletion or inhibition with cyclosporine A (CsA) fully rescues HIV-1 from MxB restriction. The rescue is time-dependent (effective up to 8 hours post-infection) and reversible, suggesting MxB inhibition is not immediately destructive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C79-C86 are well-supported by data in Figures 3A-F. The CypA depletion (Figure 3C-D) and CsA treatment (Figure 3E-F) experiments include proper controls (P90A mutant shows no rescue). The time-of-addition experiment (C83, Figure 3F) provides strong evidence for reversibility (C84-C85).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "0248a86b-3969-41f9-b5f4-1fe137c7f270",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For HIV-1 R9, MxB sensitivity requires the conformational effect of CypA binding rather than CypA recruitment per se. Mutations A92E and G94D, which mimic the conformational effects of CypA binding by stabilizing the CypA binding loop, restore MxB sensitivity to the CypA-binding-defective P90A mutant even in the absence of CypA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C87-C93 are strongly supported by elegant genetic experiments in Figures 3G-J. The key finding that A92E restores MxB sensitivity to P90A in the absence of CypA (C91, Figures 3H-I) directly demonstrates that conformational effects, not CypA recruitment, determine MxB sensitivity. This is supported by prior structural/NMR data (C88, citations) and a second mutation G94D (C92).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "1897e751-3395-447e-9e56-d00ec4c5a5db",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MxB sensitivity is determined by HIV-1 capsid surface conformation and dynamics, which are governed by both CypA recruitment and capsid sequence. This represents a mechanistic model where capsid conformational state, rather than cofactor binding or nuclear entry pathway, determines MxB sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C42, C93, C114, C127 represent the central mechanistic conclusion supported by the CypA conformational mimicry experiments (Figures 3G-J), B-factor analysis (Figure 6), and cofactor independence experiments (Figures 1-2). The model is well-supported by converging lines of evidence including genetics, structural analysis, and NMR data (C113).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "b93d8cbd-321d-487d-a172-ad158075cc9c",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Primary HIV-1 isolates exhibit diverse MxB and CsA sensitivities due to polymorphisms in capsid residues 86, 87, 92, 96, 116, and 120. Systematic mutagenesis identified that combinations of mutations in these positions (TQPI and TQPIQG) can interconvert MxB/CsA sensitivity phenotypes between different isolates, with position 210 also correlating with MxB sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C94-C106 are supported by comprehensive phenotypic analysis (Figures 4A-B) and systematic mutagenesis (Figures 4C-E). The identification of specific residues and their epistatic interactions (C103-C106) is well-controlled. The correlation with position 210 (C99) is noted but the lack of association with CsA sensitivity (C100) is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "a84ed9f5-b7f8-4991-813a-e18e25a69bf9",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis reveals that five of six capsid positions determining MxB/CsA sensitivity (86, 87, 92, 96, 116, 120) are highly variable across HIV-1 M group sequences, while CypA recruitment residues (89, 90) are completely conserved. Some positions (116, 120) show clade-specific patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 are supported by phylogenetic analysis in Figures 5 and Figure 5-supplement 1 using Chromaclade. The contrast between variable MxB sensitivity determinants and conserved CypA binding residues is clearly demonstrated. The observation of clade specificity (C109) is appropriately tentative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "54edde19-1ffc-43b4-9095-c65189316b4a",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Crystallographic B-factor analysis reveals that capsid regions around positions 96, 116, and 120 are particularly mobile/dynamic relative to the rest of the protein. These dynamic regions correspond to the highly variable residues that influence MxB sensitivity, supporting the model that capsid surface dynamics determine MxB sensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C114 are supported by B-factor analysis of crystal structures (Figure 6) and integration with NMR data (C113). The correlation between high B-factors, sequence variability, and functional importance for MxB sensitivity is compelling. Claim C111 correctly describes B-factors as established crystallographic knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "da73c0d4-dbe2-4455-b6b1-83e6a841cf12",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The N74D mutation likely prevents MxB binding through conformational alteration of the capsid surface. Structural analysis suggests N74D introduces a negatively charged residue near K70, potentially disrupting the putative MxB binding site (E71, E75, E213) at the tri-hexamer interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C115-C120 present a structural hypothesis based on published MxB binding sites (C116, Smaga et al. 2019) and structural modeling (Figure 6-supplement 1). While the structural analysis is reasonable (C117-C119), the mechanistic conclusion (C120) is explicitly stated as a hypothesis and lacks direct experimental validation. The model is plausible but speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "d874eb70-7e0e-4101-bdab-a855a6403ea2",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A mechanistic model is proposed where MxB binds HIV-1 capsid at the nuclear rim, and restriction occurs when capsid is in an MxB-sensitive conformation. CA mutations can affect both MxB binding and the inhibitory consequences of binding. Evidence includes increased proviral DNA in P90A mutant despite lack of infectivity reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C121-C128 present a mechanistic model that integrates the experimental findings. While the model is reasonable and supported by the observation that P90A shows increased proviral DNA with MxB (C124, Figure 3B), several aspects are explicitly stated as assumptions (C121) or hypotheses (C123). The model (C126) is appropriately presented as interpretive rather than definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "1c2fafbf-4847-4dcc-99c2-c31f89691c28",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CypA has opposite effects on TRIM5 versus MxB restriction: it protects HIV-1 from TRIM5 but causes MxB sensitivity in some isolates (R9, 94UG114). This may reflect differential selective pressure, as MxB expression is strictly IFN-controlled while TRIM5 is constitutively expressed, and HIV-1 has adapted to avoid triggering IFN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C129-C133 present an evolutionary hypothesis. The observation that CypA causes MxB sensitivity (C130) is well-supported by experimental data, and the contrast with TRIM5 (C129) is supported by recent literature. However, the explanations regarding selective pressure (C131) and IFN avoidance (C132-C133) are explicitly speculative hypotheses, though they are grounded in cited prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "b9547158-4e8a-492d-9335-98a9c01a59a7",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "All tested wild-type HIV-1 Gag sequences show absolute dependence on Nup358, TNPO3, and CPSF6, but flexible CypA usage. This pattern is interpreted as reflecting CTL-driven capsid sequence variation, with CypA recruitment providing conformational flexibility that allows escape from immune pressure while maintaining essential cofactor interactions and avoiding restriction factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C134-C142 present an evolutionary model integrating cofactor dependence (C134-C135, supported by Figure 1) with CTL escape (C137-C140, supported by citations). The model that CypA provides conformational flexibility for immune escape (C141-C142) is a reasonable interpretation but remains speculative. The distinction between absolute and flexible cofactor dependence (C136) is an inference rather than directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    },
+    {
+      "id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2",
+      "content_id": "0adff2c0-08b5-44b0-a281-9d0774a1be31",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on Mx proteins: MxA and MxB are interferon-induced GTPases with conserved structure but different antiviral specificities. MxB restricts HIV-1 through its N-terminal nuclear envelope targeting domain, with GTPase activity being dispensable. MxB interacts with nuclear pore components Nup214 and TNPO1, and CA mutations can confer MxB resistance without preventing CA-MxB binding in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C38 summarize established literature on Mx protein structure, function, and HIV-1 restriction. All claims are appropriately cited and represent accurate summaries of prior work. These provide essential context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:57:27.165085Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cb95daad-7ac8-4e13-b6f8-dc363895b95d",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "8d8744b3-0ffd-4e9a-96e6-f86ac3a2980a",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "d804b4c1-367c-4bb5-845f-b0fa5002fa38",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "279d1d7e-86a2-4780-9b43-81b39870b23b",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "ee4643d0-a680-4f8d-b0bb-c54f937f8044",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "dde331f0-a4a9-4a16-8f58-175ee9be1bad",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "6aae24e9-9b5c-4ba9-9633-da4687872b74",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "1901b498-1842-4f2d-a502-841882d27536",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "b5de8457-0dea-43c2-95f7-3a18e0d45716",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "84a25e0d-7580-4555-ac64-b66b09961435",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "cf66a8df-403f-4c4f-9b2c-7aa73ffceaa3",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "505b6856-b278-40a4-8082-34ac6f1b2210",
+      "result_id": "7dd90a68-0c9e-48fe-b74d-14b45ddd7bf0"
+    },
+    {
+      "claim_id": "f5ce5314-59c1-4829-b0a9-3478b9286d7c",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "ee53b316-0dee-4cfe-aa23-e57668b7927a",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "28c5e728-ab99-4673-92fb-b3076ee33d1a",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "2ae46911-2d6f-4eb3-afda-04babbcaf0be",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "353153ae-3fa9-453d-86fc-6d51993d0939",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "a2728c77-e1a9-4bec-9a6e-c21ba7d0cc08",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "4fb195f9-be46-4d16-9b69-af7fb9ae779b",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "ca971374-03bc-4334-a1c0-db56169e3f65",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "320d521b-790d-4526-bc0b-ebf83c84e48b",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "91c47592-faba-48f0-aa35-f8e8e495230c",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "b82697c6-6934-4eee-81b9-f9d8a073d14d",
+      "result_id": "8c2197f1-c531-44a4-82b3-dd6ea9be1991"
+    },
+    {
+      "claim_id": "8b3c73ca-e15a-40a7-acf8-6154ec95ee04",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "57e2f32c-4950-4e4f-881e-4d6f9be204fa",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "fc9ef0a4-e0e1-4a0c-8324-3eeb66852e70",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "9d157cab-214c-4533-9a8e-7e4a91d2e891",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "4dc70bd5-e31f-49a9-87db-1b4e9594ce2f",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "7ce20e9b-6577-4df1-be3b-e87d2d57718e",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "eac63850-13bd-4732-a039-3019e46f9031",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "d95d4212-ccfc-4eb8-970c-d36ce05c0726",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "5059ec9e-20c4-4a83-a70d-5e06019ef592",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "3027821c-c260-4085-995e-3dab6d35ce57",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "b6af04c7-82c5-401d-a1ed-924b036b1dd4",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "5c94d2b3-aad5-4117-97cb-66def30dfd1f",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "53d70543-5f8b-459d-9250-8885356474e5",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "6675f9ac-d391-479c-8dda-933710220c0f",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "ce5fa744-9919-4752-821e-dffce7d77f8d",
+      "result_id": "67f74152-3c69-4ff4-bf14-987bae5cbd44"
+    },
+    {
+      "claim_id": "278e38ca-d522-435f-aef9-7c873c86b579",
+      "result_id": "872356b7-1bf3-4140-8727-55be40c49272"
+    },
+    {
+      "claim_id": "b754ff40-96ef-4e0f-b2c2-b1b93971d3f4",
+      "result_id": "872356b7-1bf3-4140-8727-55be40c49272"
+    },
+    {
+      "claim_id": "cc13f3ff-bc94-49ca-9946-544d6fbb4eff",
+      "result_id": "872356b7-1bf3-4140-8727-55be40c49272"
+    },
+    {
+      "claim_id": "dfb79c1b-34ec-4ef8-9d94-3571f285bd83",
+      "result_id": "872356b7-1bf3-4140-8727-55be40c49272"
+    },
+    {
+      "claim_id": "4c3e59d9-8212-49f5-a07e-25a4fe0f9c38",
+      "result_id": "872356b7-1bf3-4140-8727-55be40c49272"
+    },
+    {
+      "claim_id": "1828828c-8467-4fe6-b484-8604a27360dd",
+      "result_id": "872356b7-1bf3-4140-8727-55be40c49272"
+    },
+    {
+      "claim_id": "facf0f64-fedd-4c69-acad-e7d921fad818",
+      "result_id": "872356b7-1bf3-4140-8727-55be40c49272"
+    },
+    {
+      "claim_id": "01a2e0e8-f3d8-4da8-820b-3d8d0399dda5",
+      "result_id": "872356b7-1bf3-4140-8727-55be40c49272"
+    },
+    {
+      "claim_id": "0014aca5-52ed-4e5d-a475-06eecac9d3c9",
+      "result_id": "3fce7d5b-9386-4502-9c71-acd2293ae601"
+    },
+    {
+      "claim_id": "1a928bfb-da03-48f6-8c4a-8f3ca9705def",
+      "result_id": "3fce7d5b-9386-4502-9c71-acd2293ae601"
+    },
+    {
+      "claim_id": "9be15ef9-0bbb-451a-b14b-26346959fc4f",
+      "result_id": "3fce7d5b-9386-4502-9c71-acd2293ae601"
+    },
+    {
+      "claim_id": "cdce2a96-0e22-40cf-a849-faf8aee3a39f",
+      "result_id": "3fce7d5b-9386-4502-9c71-acd2293ae601"
+    },
+    {
+      "claim_id": "2e041669-d5d0-4ecc-bd92-418caab5a064",
+      "result_id": "3fce7d5b-9386-4502-9c71-acd2293ae601"
+    },
+    {
+      "claim_id": "65d08e26-7852-4b35-992d-cafd00073e73",
+      "result_id": "3fce7d5b-9386-4502-9c71-acd2293ae601"
+    },
+    {
+      "claim_id": "1b9bd290-c025-4afc-a98c-99fa98711f23",
+      "result_id": "3fce7d5b-9386-4502-9c71-acd2293ae601"
+    },
+    {
+      "claim_id": "15f5548a-bc94-40e1-9b8f-d8993c9ac7ee",
+      "result_id": "3fce7d5b-9386-4502-9c71-acd2293ae601"
+    },
+    {
+      "claim_id": "892f39de-010b-4aa0-a4e8-0a5672c1341e",
+      "result_id": "3fce7d5b-9386-4502-9c71-acd2293ae601"
+    },
+    {
+      "claim_id": "dab989d9-0a02-4c52-a49a-f871364b53ee",
+      "result_id": "0248a86b-3969-41f9-b5f4-1fe137c7f270"
+    },
+    {
+      "claim_id": "76b4606c-97e8-405c-b6c3-f21b8c62780a",
+      "result_id": "0248a86b-3969-41f9-b5f4-1fe137c7f270"
+    },
+    {
+      "claim_id": "18974f91-01b8-47a6-bea3-ae1abaa6603f",
+      "result_id": "0248a86b-3969-41f9-b5f4-1fe137c7f270"
+    },
+    {
+      "claim_id": "6b2a9ae7-18d6-4f49-9b00-3192baa8af89",
+      "result_id": "0248a86b-3969-41f9-b5f4-1fe137c7f270"
+    },
+    {
+      "claim_id": "65ebd14e-94d5-4e9d-b1e6-9dc2b8b33fff",
+      "result_id": "0248a86b-3969-41f9-b5f4-1fe137c7f270"
+    },
+    {
+      "claim_id": "bb4e27d5-0087-4844-9a6a-57f1d0b4b0a5",
+      "result_id": "0248a86b-3969-41f9-b5f4-1fe137c7f270"
+    },
+    {
+      "claim_id": "41528d60-402a-471b-b07a-c8647665356f",
+      "result_id": "0248a86b-3969-41f9-b5f4-1fe137c7f270"
+    },
+    {
+      "claim_id": "cdeddccc-c698-47c4-b0de-32d7a600d08f",
+      "result_id": "0248a86b-3969-41f9-b5f4-1fe137c7f270"
+    },
+    {
+      "claim_id": "30422955-be16-436c-aaef-77576bf5e5bf",
+      "result_id": "1897e751-3395-447e-9e56-d00ec4c5a5db"
+    },
+    {
+      "claim_id": "57ada5a2-23d0-4529-abc3-16edca4c171d",
+      "result_id": "1897e751-3395-447e-9e56-d00ec4c5a5db"
+    },
+    {
+      "claim_id": "cdeddccc-c698-47c4-b0de-32d7a600d08f",
+      "result_id": "1897e751-3395-447e-9e56-d00ec4c5a5db"
+    },
+    {
+      "claim_id": "a50e8c73-f9f3-4825-b75c-c9beb34c487a",
+      "result_id": "1897e751-3395-447e-9e56-d00ec4c5a5db"
+    },
+    {
+      "claim_id": "61c8c97f-8aac-4b2e-949f-c1f008eb8dcd",
+      "result_id": "1897e751-3395-447e-9e56-d00ec4c5a5db"
+    },
+    {
+      "claim_id": "d605c9b1-8a25-4c87-ae3b-433e174043b9",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "f964bf5d-1a70-41e1-967a-93150d594f00",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "cd82e465-0b54-438b-b73b-eb329a3a3669",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "906fe893-5f99-4633-a90b-bbdf21d08576",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "71d2189d-074a-4b3a-b857-66ded6492016",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "6837869d-1f0d-4fa8-8328-2cf0341d8040",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "ad65ddbf-300b-4afd-9142-dbf446944deb",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "a7cddafc-c1e0-4260-99cb-a602dc2f5336",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "2c77f3d2-dabc-4db9-a2a3-bed6455cec9a",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "ecad0d35-0e34-4d06-833b-ba6895145ff5",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "7fc2bb07-9b2e-447a-a33d-207417b9c535",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "f334bc37-8278-4ec5-bab6-732991497161",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "60ba41ff-9ae1-4162-bc26-05543020e122",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "a6f1d86d-50f8-4978-b075-b61339891fe2",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "2bf9cdfd-0c8c-4e27-8a8c-13ecc7095ea1",
+      "result_id": "b93d8cbd-321d-487d-a172-ad158075cc9c"
+    },
+    {
+      "claim_id": "93780da4-42c6-428f-acb0-c225470ac48d",
+      "result_id": "a84ed9f5-b7f8-4991-813a-e18e25a69bf9"
+    },
+    {
+      "claim_id": "92d6d94d-72e9-4ad1-b537-a6afcd36e09f",
+      "result_id": "a84ed9f5-b7f8-4991-813a-e18e25a69bf9"
+    },
+    {
+      "claim_id": "f15ea14f-dbd9-4132-9610-4eee646101ae",
+      "result_id": "a84ed9f5-b7f8-4991-813a-e18e25a69bf9"
+    },
+    {
+      "claim_id": "cca3a270-b931-4702-ad6f-b21188478199",
+      "result_id": "54edde19-1ffc-43b4-9095-c65189316b4a"
+    },
+    {
+      "claim_id": "1196e39b-9c77-4d7a-a332-974483f35e77",
+      "result_id": "54edde19-1ffc-43b4-9095-c65189316b4a"
+    },
+    {
+      "claim_id": "a1519526-acc7-4324-939c-c9e6b3609f08",
+      "result_id": "54edde19-1ffc-43b4-9095-c65189316b4a"
+    },
+    {
+      "claim_id": "ffe4c5ae-a596-4a54-a9f9-da973d07d894",
+      "result_id": "54edde19-1ffc-43b4-9095-c65189316b4a"
+    },
+    {
+      "claim_id": "a50e8c73-f9f3-4825-b75c-c9beb34c487a",
+      "result_id": "54edde19-1ffc-43b4-9095-c65189316b4a"
+    },
+    {
+      "claim_id": "c1d14424-30bd-4106-92a9-1ae84607e67b",
+      "result_id": "da73c0d4-dbe2-4455-b6b1-83e6a841cf12"
+    },
+    {
+      "claim_id": "c864d1c3-282d-42f5-a454-b7fccc0381e7",
+      "result_id": "da73c0d4-dbe2-4455-b6b1-83e6a841cf12"
+    },
+    {
+      "claim_id": "d99bb014-8bd3-48b6-849e-4ea36993b699",
+      "result_id": "da73c0d4-dbe2-4455-b6b1-83e6a841cf12"
+    },
+    {
+      "claim_id": "37c08659-a508-4e5b-9aa4-149781a00d92",
+      "result_id": "da73c0d4-dbe2-4455-b6b1-83e6a841cf12"
+    },
+    {
+      "claim_id": "536ae550-8f47-4a1c-8b1a-4d2e81b22366",
+      "result_id": "da73c0d4-dbe2-4455-b6b1-83e6a841cf12"
+    },
+    {
+      "claim_id": "778575c9-2d95-4877-9f7a-21af9b1685e3",
+      "result_id": "da73c0d4-dbe2-4455-b6b1-83e6a841cf12"
+    },
+    {
+      "claim_id": "7c83b739-98df-4bef-9b0c-80a7f1ba6cee",
+      "result_id": "d874eb70-7e0e-4101-bdab-a855a6403ea2"
+    },
+    {
+      "claim_id": "b8f82f12-77b3-4841-bcdd-309ae3daf755",
+      "result_id": "d874eb70-7e0e-4101-bdab-a855a6403ea2"
+    },
+    {
+      "claim_id": "8f35dcf2-6497-4b34-a181-945127607abc",
+      "result_id": "d874eb70-7e0e-4101-bdab-a855a6403ea2"
+    },
+    {
+      "claim_id": "6831b1a3-4fea-4cda-99a9-ec0cb081eb87",
+      "result_id": "d874eb70-7e0e-4101-bdab-a855a6403ea2"
+    },
+    {
+      "claim_id": "5a9b2549-a4c9-497d-87f0-d288660bcde3",
+      "result_id": "d874eb70-7e0e-4101-bdab-a855a6403ea2"
+    },
+    {
+      "claim_id": "c2b1b4fd-640d-4a47-ae76-a9fc49a54661",
+      "result_id": "d874eb70-7e0e-4101-bdab-a855a6403ea2"
+    },
+    {
+      "claim_id": "bcf4c812-bcbe-4981-8097-fad70d24ff0a",
+      "result_id": "d874eb70-7e0e-4101-bdab-a855a6403ea2"
+    },
+    {
+      "claim_id": "af05192b-f34e-49c5-bf38-0b536d4277cd",
+      "result_id": "1c2fafbf-4847-4dcc-99c2-c31f89691c28"
+    },
+    {
+      "claim_id": "90f22de7-6f57-43e3-b68b-dc7932c9753f",
+      "result_id": "1c2fafbf-4847-4dcc-99c2-c31f89691c28"
+    },
+    {
+      "claim_id": "0c093ba8-2dc2-4443-8aa4-49fba5349a69",
+      "result_id": "1c2fafbf-4847-4dcc-99c2-c31f89691c28"
+    },
+    {
+      "claim_id": "c582cb61-b9bd-46db-bcf3-38d86c05454d",
+      "result_id": "1c2fafbf-4847-4dcc-99c2-c31f89691c28"
+    },
+    {
+      "claim_id": "6ea4af15-a41b-4f95-a276-ec344871c84e",
+      "result_id": "1c2fafbf-4847-4dcc-99c2-c31f89691c28"
+    },
+    {
+      "claim_id": "f6d138c3-c4d8-4666-800f-ffeb03f44d5b",
+      "result_id": "b9547158-4e8a-492d-9335-98a9c01a59a7"
+    },
+    {
+      "claim_id": "a20e571b-d449-4b55-ac17-87318a1e6843",
+      "result_id": "b9547158-4e8a-492d-9335-98a9c01a59a7"
+    },
+    {
+      "claim_id": "b85345d4-1333-45dd-b2fb-188502d469fb",
+      "result_id": "b9547158-4e8a-492d-9335-98a9c01a59a7"
+    },
+    {
+      "claim_id": "2b03c37a-cf65-4cc8-b8c0-cd7d76ece9a4",
+      "result_id": "b9547158-4e8a-492d-9335-98a9c01a59a7"
+    },
+    {
+      "claim_id": "e173c6cf-e9dc-404f-8fbd-605dac7b0381",
+      "result_id": "b9547158-4e8a-492d-9335-98a9c01a59a7"
+    },
+    {
+      "claim_id": "7837ec94-66a8-4076-9f25-aef11d64d73b",
+      "result_id": "b9547158-4e8a-492d-9335-98a9c01a59a7"
+    },
+    {
+      "claim_id": "abb0b180-59ec-4890-b0f7-7889d41a3980",
+      "result_id": "b9547158-4e8a-492d-9335-98a9c01a59a7"
+    },
+    {
+      "claim_id": "8ec46d5c-c3c7-47a6-aed5-feb87e33e090",
+      "result_id": "b9547158-4e8a-492d-9335-98a9c01a59a7"
+    },
+    {
+      "claim_id": "d22ef5c2-4249-4370-8029-ecd87c17d3e1",
+      "result_id": "b9547158-4e8a-492d-9335-98a9c01a59a7"
+    },
+    {
+      "claim_id": "14f9dd2e-142f-4da8-8166-24899e547af7",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "c050d79d-7887-43a2-88de-474807e3cde1",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "356e6a3a-83e9-4427-899b-d53f7d1e9dcc",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "7ca04ac2-b308-467f-aed2-bc5efc0f12de",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "956e7dbc-4e77-46f5-b177-1642fd15ad75",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "82cf0cc1-5c1f-48e2-a48f-8acc3002a6aa",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "a3d3fa11-da4b-4831-ba7b-23728e360f39",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "02de508c-15e8-4abe-9586-8e3342a7c8f3",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "ce1c7383-f8b6-481c-87b1-3a76d8442a4c",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "1dff8a54-c8dc-4c0f-95cd-475a8af1666e",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "6360b4eb-550a-4e1f-b461-f824683494bd",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "51f172f9-8b87-49ea-ad6e-c9cd4ef01f0c",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "171fdd79-5b8f-4b92-8abd-ab0b9100ef19",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "2f71fc0a-eca3-40a6-8bd1-92492fa5aaec",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "1d11c62a-cfa1-4182-a732-d863348cd438",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "52c368f4-6f09-4230-bd82-5eea3522d790",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "92eff0d8-30dc-433c-a271-2faf49cb5e39",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "a313a3ac-80b6-466f-831a-97580c5c87e9",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "a75a486b-9678-46de-9164-d79dadbaff50",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "88cb1ece-fa69-4f9f-848d-89b1d0167e9a",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "cbaf5e6e-9f4c-47f9-aed2-6bd695b23d5c",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "3071baf0-074b-434e-a1ee-ddff27872879",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "43ca4312-3c45-41ce-a995-d545513575df",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    },
+    {
+      "claim_id": "fd123a15-0050-433a-875c-ef71d3a0c0bf",
+      "result_id": "71f145f6-ab38-495f-afe7-ffc6bfcc82b2"
+    }
+  ],
+  "comparisons": []
+}

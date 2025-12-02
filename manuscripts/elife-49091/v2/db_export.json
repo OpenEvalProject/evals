@@ -1,0 +1,1438 @@
+{
+  "submission": {
+    "id": "45f6207c-a86a-4a5a-843e-24de946a7eed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:45:47.970253Z",
+    "updated_at": "2025-12-02T12:45:47.970253Z"
+  },
+  "content": [
+    {
+      "id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "submission_id": "45f6207c-a86a-4a5a-843e-24de946a7eed",
+      "content_type": "manuscript",
+      "content_text": "# Tonotopic and non-auditory organization of the mouse dorsal inferior colliculus revealed by two-photon imaging\n\n## Authors\n\n- Aaron Benson Wong<sup>1</sup> ([ORCID: 0000-0003-1650-2710](https://orcid.org/0000-0003-1650-2710))\n- J Gerard G Borst<sup>1</sup> ([ORCID: 0000-0002-6092-1544](https://orcid.org/0000-0002-6092-1544)) \u2020\n\n### Affiliations\n\n1. Department of Neuroscience Erasmus MC, University Medical Center Rotterdam Rotterdam Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe dorsal (DCIC) and lateral cortices (LCIC) of the inferior colliculus are major targets of the auditory and non-auditory cortical areas, suggesting a role in complex multimodal information processing. However, relatively little is known about their functional organization. We utilized in vivo two-photon Ca2+ imaging in awake mice expressing GCaMP6s in GABAergic or non-GABAergic neurons in the IC to investigate their spatial organization. We found different classes of temporal responses, which we confirmed with simultaneous juxtacellular electrophysiology. Both GABAergic and non-GABAergic neurons showed spatial microheterogeneity in their temporal responses. In contrast, a robust, double rostromedial-caudolateral gradient of frequency tuning was conserved between the two groups, and even among the subclasses. This, together with the existence of a subset of neurons sensitive to spontaneous movements, provides functional evidence for redefining the border between DCIC and LCIC.\n\n## Introduction\n\nThe inferior colliculus (IC) is a major auditory processing center, which receives input from most brainstem auditory nuclei. The IC is usually divided into three main regions: the central nucleus (CNIC), the lateral cortex (LCIC), and the dorsal cortex (DCIC; Oliver, 2005). The latter two, together also known as the \u2018shell region\u2019 of the IC, are part of the non-lemniscal pathway, and are heavily innervated by feedback projections from the cerebral cortex. The DCIC is often defined as the part that covers the CNIC dorsally (e.g. Zhou and Shore, 2006). The LCIC is characterized by distinct neurochemical modules, which can be visualized with various histochemical methods such as acetylcholinesterase or NADPH diaphorase staining, as well as dense labeling of GABAergic terminals and sparse calretinin immunoreactivity (Lesicko et al., 2016; Dillingham et al., 2017). These modules show a distinct complement of Eph-ephrin guidance molecules during development (Wallace et al., 2016; Gay et al., 2018) and receive input from non-auditory areas (Lesicko et al., 2016; Patel et al., 2017), hinting at their integral role in multisensory integration in the IC. Here, we refer to the external cortex and lateral nucleus of the IC as the lateral cortex (LCIC; Loftus et al., 2008), which includes layer three or the ventrolateral nucleus, and refer to the dorsal cortex and pericentral nucleus as the dorsal cortex of the IC (DCIC). The DCIC and LCIC are at the surface of the mouse brain, making the dorsal IC an accessible structure for in vivo imaging (Geis and Borst, 2013; Barnstedt et al., 2015; Babola et al., 2018).\n\nBecause of the prominence of descending, cortical input, the DCIC and LCIC is ideally studied in awake, behaving animals. A number of studies have addressed the firing of IC neurons in awake bats (e.g. Xie et al., 2005; Xie et al., 2007; Xie et al., 2008; Andoni and Pollak, 2011; Gittelman and Li, 2011a; Gittelman and Pollak, 2011b; Gittelman et al., 2012) or mice (Gittelman et al., 2013; Grimsley et al., 2013; Duque and Malmierca, 2015; Ayala et al., 2016; Grimsley et al., 2016; Longenecker and Galazyuk, 2016; Galazyuk et al., 2017). However, the yield of such recordings is limited, and the acute nature of some of the studies means that residual anesthetics and analgesics may have interfered with neuronal activity.\n\nMoreover, relatively little is known about different cell types in the DCIC and LCIC. Around one-fourth of neurons in the IC are GABAergic (Schofield and Beebe, 2019). In particular the large GABAergic neurons seem to form a distinct subclass (Ito et al., 2009; Ito and Oliver, 2012; Geis and Borst, 2013), but based on histology, at least four different subclasses of GABAergic neurons can be discriminated, which all contribute to the ascending projections to the medial geniculate body of the thalamus (Beebe et al., 2018).\n\nHere, we describe the use of two transgenic mouse lines to characterize GABAergic and glutamatergic neuronal subpopulations in the dorsal IC in awake animals using in vivo two-photon Ca2+ imaging. We studied GABAergic neurons with a Gad2-IRES-Cre mouse (Taniguchi et al., 2011) that was crossed with the GCaMP6s reporter line Ai96 (Madisen et al., 2015) and a sub-population of non-GABAergic neurons using the Thy1-driven GCaMP6s transgenic line GP4.3 (Dana et al., 2014). We show a rich diversity of sound-evoked responses in both GABAergic and non-GABAergic neurons in the awake mouse, confirmed with simultaneous juxtacellular electrophysiology in awake animals. Remarkably, we observed a reversal of the characteristic frequency (CF) gradient in the rostromedial-caudolateral direction, which was conserved between GABAergic and non-GABAergic cells, as well as among cells with different classes of sound-evoked response. Moreover, we found a subset of neurons that were responsive to spontaneous movement of the animal, and were potentially associated with multisensory neurochemical modules (Lesicko et al., 2016). These findings suggest that the large majority of the dorsal IC surface belongs to the LCIC.\n\n## Results\n\n### Expression of GCaMP6s in IC subpopulations of transgenic mice\n\nTo better understand the response heterogeneity observed in IC neurons, we used transgenic lines in which the GCaMP reporter was selectively expressed in subpopulations. Two transgenic mouse lines were used: GP4.3, a Thy1-driven GCaMP6s expression line (Dana et al., 2014), and a cross between Gad2-IRES-Cre line (Taniguchi et al., 2011) and Ai96, a Cre-dependent GCaMP6s reporter line (Madisen et al., 2015). We will refer to the latter as Gad2;Ai96.\n\nTo confirm the neurochemical identity of GCaMP6s-positive neurons in the transgenic lines, we performed immunolabeling of GAD67. Figure 1 shows example staining and the proportion of GCaMP-positive neurons expressing GAD67 in each line. We did not distinguish between the different subregions of the IC in this analysis. The large majority (4651/4898; 95%) of GCaMP-positive neurons in the GP4.3 line were not positive for GAD67 (Figure 1A\u2013D), showing that the Thy1-promoter preferentially expressed GCaMP6s in non-GABAergic cells in the IC. Not all non-GABAergic cells were GCaMP-positive, as shown by the NeuN-positive, GCaMP-negative cell bodies in Figure 1C (arrowheads). In particular, we observed that GCaMP6s-positive neurons are enriched at the border of neurochemical modules characterized by dense GAD67 terminals (Figure 1E\u2013G).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig1-v2.jpg)\n\n**Figure 1.:** (A) Single optical section of an IC brain slice from a GP4.3 mouse immunolabeled for GAD67 (magenta) and GCaMP6s (green). (B) Distribution of GCaMP+ and GAD67+ cells within the 40 \u00b5m brain slice in A, color-coded by their immunoreactivity to GFP and GAD67 antibodies. GP+/\u2212: GCaMP-positive/negative. (C) Enlarged image from A (small square), showing different combinations of immunoreactivity: GCaMP (green), GAD67 (magenta) and NeuN (blue). Arrowheads point at two GP\u2212GAD67+ cells. Due to optical sectioning only a subset of cells marked in B are visible. (D) Percentage of GCaMP+ cells showing immunoreactivity for GAD67 antibodies (error bars: s.e.m.; GP4.3: n\u00a0=\u00a03 slices from three animals; Gad2;Ai96: n\u00a0=\u00a04 slices from three animals) (E\u2013G) Enlarged image from large square in A showing two GAD67-dense modules marked by dashed lines. GP+ cells in GP4.3 were concentrated at the border of these modules. (H\u2013I) Same as A and B, but from a Gad2;Ai96 mouse. (J\u2013K) Enlarged region from H (square). Arrowheads point at two GP\u2212GAD67+ cells. (L\u2013O) Examples of GP+GAD67+ cells from G showing images from GAD67 and GCaMP channels separately.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Single optical section of an IC brain slice from a GP4.3 mouse immunolabeled for GCaMP6s (green), parvalbumin (PV; red) and calretinin (CR; blue). (B) Distribution of GCaMP+ cells within the 40 \u00b5m brain slice in A, color-coded by their immunoreactivity to PV and CR antibodies. (C) Enlarged image from A (square), showing different combinations of immunoreactivity. Arrowhead: GCaMP+CR-PV++ cell. Due to optical sectioning not all cells marked in B are visible. (D,E) As A and B, but from a Gad2;Ai96 mouse. (F) Enlarged region from D (square). Arrowheads: GCaMP+CR-PV++ cells; Arrow: GCaMP+CR++PV- cell. (G) Percentage of GCaMP+ cells showing immunoreactivity for PV and/or CR antibodies. (H) Percentage of PV++ cells that are GCaMP-positive. (I) Percentage of CR++ cells that are GCaMP-positive. Error bars: s.e.m.; GP4.3: n\u00a0=\u00a02 slices from two animals; Gad2;Ai96: n\u00a0=\u00a03 slices from two animals.\n\nIn contrast, we detected GAD67 immunoreactivity in\u00a0>93% (1702/1828) of GCaMP-positive neurons in the Gad2;Ai96 mice (Figure 1D,H\u2013O). Not all GAD67-positive cells in this mouse line were labeled by GCaMP6s (e.g. arrowheads in Figure 1J).\n\nIn addition to GAD67, the calcium buffer parvalbumin (PV) is another marker for neurochemical modules in the rat (Chernock et al., 2004), while the calcium buffer calretinin (CR) shows a complementary expression (i.e. in the extramodular region) in early postnatal and juvenile mice (Dillingham et al., 2017). To get a better idea of the relative contribution of modular and extramodular regions to GCaMP6 responses, we investigated the co-expression of GCaMP6 with PV or CR in the two transgenic lines (Figure 1\u2014figure supplement 1). We found that a large majority (94%) of GCaMP+ cells in GP4.3 did not show strong immunoreactivity for either marker (CR++: 2.2%; PV++: 2.9%; PV++CR++: 0.9%), whereas in the Gad2;Ai96 line a larger fraction of GCaMP+ cells were positive for CR or PV (CR++: 17%; PV++: 22%; PV++CR++: 7%; Figure 1\u2014figure supplement 1G). On the other hand, GCaMP was expressed in 38% of CR++ cells and 70% of PV++ cells in the IC of Gad2;Ai96 mice, while a lower fraction of CR++ (9.1%) and PV++ (13.4%) cells were positive for GCaMP in GP4.3 mice (Figure 1\u2014figure supplement 1H,I). At the single neuron level, the presence or absence of the two buffers was insufficient to indicate whether the neurons lay within a module. These results suggest that for both lines there is not a clear enrichment of GCaMP6+ neurons within the neurochemical modules.\n\n### Sound-evoked changes in FGCaMP of IC neurons show prominent inhibitory responses\n\nUnanaesthetized, head-fixed mice with implanted cranial windows (Figure 2A\u2013B) were imaged with two photon microscopy (Figure 2C\u2013D) and subjected to 1 s pure tones of various frequencies and intensities (Figure 2E). Average fluorescence of regions-of-interest (ROIs) encompassing the cell body were analyzed, after subtracting the fluorescent change of a background region surrounding the cell body (Figure 2D). The use of longer stimuli allowed a detailed characterization of the kinetics of the fluorescence change (\u0394FGCaMP). Importantly, we observed both increases, which were either transient or sustained, and decreases in FGCaMP during the presentation of stimuli, and some cells showed a sharp increase in FGCaMP directly after the cessation of the sound (Figure 2E). The different fluorescence responses were classified as excitation, inhibitory and offset, respectively (see Materials and methods, Figure 3A\u2013D). The excitatory responses were further divided into onset and sustained classes based on the kinetics of the fluorescence change (Figure 3A,B, Figure 3\u2014figure supplement 1). The decrease in fluorescence upon sound stimulation was likely due to sound-evoked inhibition of spontaneous firing in these cells. Some cells showed a mixture of response kinetics, some even to the same stimulus. Particularly common was the combination of inhibitory and offset responses (e.g. Figure 3E,M). Another common combination were onset-offset cells in which a lower frequency elicited an onset/sustained response, while a slightly higher frequency elicited an offset response (e.g. Figure 3I). Inhibitory and offset responses were not reported in earlier imaging experiments performed in anesthetized mice (Ito et al., 2014; Barnstedt et al., 2015); their use of shorter stimuli did not allow a distinction between onset and sustained responses. A great variety of frequency response areas (FRAs) was observed (Figure 3F\u2013M), with some cells showing responses to tones as high as 64 kHz, the highest frequency presented in this study (e.g. Figure 3G).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig2-v2.jpg)\n\n**Figure 2.:** (A) Illustration of the cranial window construct imaged with a numerical aperture (NA) 0.95 water-immersion objective. (B) Top-down view of cranial window, showing optically exposed inferior colliculus (IC), superior colliculus (SC), cerebral cortex (cortex) and cerebellum (Cb). (C) Averaged GCaMP6s fluorescence in a 256 \u00d7 128 \u03bcm area, showing regions-of-interest (ROIs; dotted lines) defined around neuronal somata. (D) Enlarged view from C, showing pixels included in an ROI (green overlay) and a surrounding 2 \u03bcm wide background region (magenta overlay). Pixels belonging to other ROIs were excluded from the background region. (E) Background-subtracted fluorescence over time of the ROIs labeled a,b,c in C. Tones of 1 s duration with different frequencies and intensities were played, evoking different responses in IC neurons. The same sound (shaded area) evoked an inhibitory response in ROI\u00a0a, an offset response in ROI\u00a0b and a sustained excitatory response in ROI\u00a0c.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Sound spectra measured with a calibration microphone (Model 7016, ACO Pacific) with a sensitivity of \u221249.1 dBV @ 1 Pa and 40 dB signal amplification, positioned where the right pinna of a mouse would be located in an experiment. Each spectrum is an average of 16 spectra calculated with the pwelch function in Matlab from one-second audio recording segments with a frequency resolution of 10 Hz. The spectra represent, from bottom to top, background noise (black), sawtooth scanning (green), sinusoidal scanning (red) and sinusoidal scanning with an additional 4 kHz, 40 dB SPL tone played through the speakers (blue). The spectra are offset by 20 dB (=2 decade in power) for display, and the Y-axis corresponds to values of the background noise spectrum (bottom, black). (B) The power spectra shown near the frequencies produced during sinusoidal scanning at\u00a0~580 Hz.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig3-v2.jpg)\n\n**Figure 3.:** (A) An onset fluorescence response to a 1 s pure tone. Gray vertical lines indicate onset and offset of sound stimulus. Colored and gray traces are average and individual trial fluorescence changes, respectively, normalized to a one-second baseline immediately before the stimulus onset (\u0394F/Fb). (B) A sustained fluorescence response. (C) An inhibitory response. (D) An offset response. (E) A mixed inhibitory and offset response. Example FRAs from GP4.3 (F\u2013I) and Gad2;Ai96 (J\u2013M) mice. Each subplot shows the average \u0394F/Fb to a stimulus of the specified frequency and intensity. Background color shows average Pearson\u2019s correlation among repetitions, indicating consistency of response (Geis et al., 2011). Black squares mark significant correlation from bootstrap analysis. Cells in (G) and (J) are examples of cells with an onset FRA; cells in (F) and (K) showed a sustained FRA; cells in (H) and (L) were inhibited by sound; cells in (I) and (M) showed a mixture of different response classes. (I) A typical onset-offset cell with frequency-dependent responses: onset fluorescence responses to 2.5 kHz tones and offset fluorescent responses to 3.2 and 4 kHz tones. (M) A cell showing intensity-dependent responses: at 12.7 kHz, low intensity tones evoked a decrease in fluorescence (inhibited) while tones at 80 dB elicited an offset response. Tones at 60\u201370 dB elicited a mixture of inhibition and offset responses. Vertical scale bars in (F\u2013I) indicates 1 Fb.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Example of the average fluorescence response of a cell with an onset-type response to sound (gray trace). Single exponential fits were performed on the onset (0\u20131000 ms; solid black curve) and decay (1.5\u20135 s; dashed black curve) periods. Due to the short inter-stimulus interval (1.5 s), responses where another effective stimulus followed immediately were excluded for averaging. (B) For inhibitory responses, the recovery from inhibition was used for the fitting (1.5\u20135 s; solid black curve). (C) Onset time constant for cells showing onset response (\u03c4onset) (GP4.3 mean \u03c4onset304\u00a0\u00b1\u00a0240 ms, n\u00a0=\u00a0111 cells; Gad2;Ai96 mean \u03c4onset514\u00a0\u00b1\u00a0280 ms, n\u00a0=\u00a010 cells) (D) Decay time constant (\u03c4decay) for cells showing onset, sustained or offset responses. Mean \u03c4decay for onset cells (GP4.3: 1190\u00a0\u00b1\u00a0828 ms, n\u00a0=\u00a063 cells; Gad2;Ai96: 1200\u00a0\u00b1\u00a01040 ms, n\u00a0=\u00a026 cells), sustained cells (GP4.3: 1500\u00a0\u00b1\u00a01120 ms, n\u00a0=\u00a061 cells; Gad2;Ai96: 987\u00a0\u00b1\u00a0373 ms, n\u00a0=\u00a079 cells) and offset cells (GP4.3: 1670\u00a0\u00b1\u00a0981 ms, n\u00a0=\u00a041 cells; Gad2;Ai96: 1430\u00a0\u00b1\u00a0795 ms, n\u00a0=\u00a08 cells). (E) Recovery time constant (\u03c4recovery) for inhibited cells (GP4.3: mean \u03c4recovery: 1630\u00a0\u00b1\u00a01120 ms, n\u00a0=\u00a0148 cells; Gad2;Ai96 mean \u03c4recovery = 1990 \u00b1 1310 ms, n\u00a0=\u00a054 cells). Error bars in C-E represent s.d.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Vertical scale bar indicates 1 Fb.\n\nIn GP4.3 mice, 64% of the cells (696 out of 1090) cells showed detectable fluorescence changes in response to 1 s pure tone stimuli. We classified the responses and the overall FRA of a cell based on the criteria described in the Materials and methods. Among the responsive cells, 30% (210 cells) showed excitatory FRAs (e.g. Figure 3\u2014figure supplement 2), with fluorescence increasing during sound presentation; while 13% (89 cells) showed offset FRAs, with fluorescence increasing after sound presentation. Another 30% (207 cells) showed inhibitory FRAs, with fluorescence decreasing during sound. The FRAs of the remaining 27% (190 cells) showed mixtures of these response categories. The proportion of different FRA classes are summarized in Figure 4A. The proportion of cells showing sound-evoked inhibition was clearly higher than the 2\u201323% reported for anesthetized C57BL/6 mice in Willott et al. (1988a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Proportions of response classes in GP4.3 (A) and GAD2;Ai96 animals (B). (C) Bee swarm plot and mean\u00a0\u00b1s.d. for cell size for ROIs of different non-mixed response classes, separated by genotypes, measured as the size of the ROI (Area) in imaging experiments. Estimated diameters (d) were calculated by assuming a circular shape (i.e. $d=2\\sqrt{Area/\\pi}$). Cells imaged in Gad2;Ai96 mice were on average larger than those in GP4.3 mice.\n\nIn Gad2;Ai96 mice 73% (247 out of 342 cells) of GCaMP6s-positive IC neurons showed consistent fluorescence responses to 1 s pure tone stimuli. Among the responsive cells, 46% (115 cells) showed excitatory FRAs. Four percent (11 cells) showed offset FRAs. Another 26% (65 cells) showed inhibitory FRAs. The remaining 23% (56 cells) showed mixtures of the three response categories. The proportion of different FRA classes in Gad2;Ai96 mice are summarized in Figure 4B; it was similar to that of GP4.3 mice, but with a somewhat smaller fraction of offset and a larger fraction of excitatory FRAs.\n\n### Relationship between cell type and soma size\n\nGABAergic cells had a larger soma size, as reported previously (cat: Oliver et al., 1994; rat: Merch\u00e1n et al., 2005). The estimated diameters for Gad2;Ai96 and GP4.3 cells, defined as 4/\u03c0 times the square root of the ROI area in imaging experiments, were 21.9\u00a0\u00b1\u00a04.9 \u00b5m (mean\u00a0\u00b1s.d.) and 15.9\u00a0\u00b1\u00a02.6 \u00b5m, respectively (Figure 4C, p<0.001 Wilcoxon Rank Test). Within each genotype, soma size did not differ significantly among cells with different FRA classes. For GP4.3: onset cells 12.3\u00a0\u00b1\u00a02.6 \u00b5m, sustained 12.5\u00a0\u00b1\u00a02.0 \u00b5m, inhibited 13.0\u00a0\u00b1\u00a01.8 \u00b5m, offset 12.3\u00a0\u00b1\u00a02.0 \u00b5m (p=0.112, Kruskal-Wallis Rank test). For Gad2;Ai96: onset cells 16.6\u00a0\u00b1\u00a03.4 \u00b5m, sustained 17.4\u00a0\u00b1\u00a03.6 \u00b5m, inhibited 18.1\u00a0\u00b1\u00a03.3 \u00b5m, offset 15.6\u00a0\u00b1\u00a03.1 \u00b5m (Figure 4C; p=0.033, Kruskal-Wallis Rank test, followed by Dunn\u2019s [Dunn-Holland-Wolfe] test where none of the comparisons reached critical value; only cells with non-mixed FRAs were compared because of the heterogeneity and small sample size of the different mixed response classes).\n\n### Detailed kinetics of the different response classes\n\nThe temporal kinetics of the FGCaMP response of each cell were assessed by averaging the fluorescence change across all stimuli that showed a significant response. Single exponential functions were fit to the onset (0\u20131 s re stimulus onset) and the offset/decay (0.5\u20134 s re stimulus offset) periods (Figure 3\u2014figure supplement 1A,B). Time constants were restricted to be positive. Due to the limited stimulus duration, any fit resulting in an onset time constant (\u03c4onset) greater than 1000 ms to an increase in fluorescence was considered sustained activity and these fit constants were not used for averaging. For excitatory responses (onset, sustained and offset), a time constant of around 1 s (Figure 3\u2014figure supplement 1D) was found for the decay period, similar to the decay time constant reported previously for GCaMP6s (Chen et al., 2013).\n\n### Electrophysiological correlates of response classes\n\nTo relate the different fluorescence responses to spiking patterns, which are highly heterogeneous within the IC (e.g. Willott et al., 1988a; Willott et al., 1988b; Tan and Borst, 2007), we combined Ca2+ imaging with in vivo juxtacellular recordings in awake mice. We recorded from neurons showing onset, sustained and inhibitory tone-evoked fluorescence responses. For fluorescence responses that we classified as onset, electrophysiological recordings showed that this class can represent a cell whose firing rate quickly adapted during our one-second long stimuli (example in Figure 5A\u2013C,D left). We observed sustained fluorescence responses that corresponded to sustained firing (Figure 5D middle) with different amount of adaptation. Inhibitory responses corresponded to cells that reduced their spontaneous firing upon sound stimulation (Figure 5D right).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig5-v2.jpg)\n\n**Figure 5.:** (A) Imaging of a GCaMP6s+ cell (green) in an awake GP4.3 animal with simultaneous juxtacellular recording with a pipette filled with Alexa 594 (red). (B) Spiking pattern (upper) and fluorescence (lower) of the example cell can be well related by a linear convolution of spike rate with a linear ramp, exponential decay kernel (model: green). Fit parameters: F0\u00a0=\u00a028.8 a.u.; \u0394F1AP = 10.2 a.u.; trise\u00a0=\u00a0532 ms; \u03c4decay = 859 ms. Numbers above bursts indicate number of spikes, and asterisks (*) mark single spikes. (C) Frequency tuning of the cell. Peristimulus time histogram (PSTH; upper, 50 ms bins, 10 repetitions) and mean\u00a0fluorescence change of the cell in response to 1 s tone bursts. (D) Raster plots, PSTHs and fluorescence responses\u00a0(mean: black; individual: gray) of an onset cell (same example as A-C), a sustained cell and an inhibited cell. Due to their rarity, we have not obtained a simultaneous recording for offset cells. (E) Relation between normalized single action potential amplitude (F1AP/F0) and decay time constant (\u03c4decay). (F) Relation between rise time (zero-to-peak; trise) and \u03c4decay. Color in E and F indicate response class (red: inhibited; dark green: onset; light green: sustained; black: no tone-evoked response) of the cell.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** From top to bottom: sound stimulus (purple trace), spiking pattern (black), spike rate (gray histogram, 1 s bins) and fluorescence (black trace) of a cell from a Gad2;Ai96 animal with a sustained FRA and the model fit (green). Fit parameters: F0\u00a0=\u00a014.7 a.u.; \u0394F1AP = 1.25 a.u.; trise\u00a0=\u00a0607 ms; \u03c4decay = 1180 ms. Variance explained by model: 90.9%. Cell id: a11958_04_c5.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** From top to bottom: sound stimulus (purple trace), spiking pattern (black), spike rate (gray histogram, 1 s bins) and fluorescence (black trace) of a cell from a Gad2;Ai96 animal with an inhibited FRA and the model fit (green). Fit parameters: F0\u00a0=\u00a044.3 a.u.; \u0394F1AP = 1.85 a.u.; trise\u00a0=\u00a0626 ms; \u03c4decay = 1770 ms. Variance explained by model: 79.4%. Cell id: a11958_04_c6.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** From top to bottom: spiking pattern (black), spike rate (gray histogram, 1 s bins) and fluorescence (black trace) of a spontaneously active cell from a GP4.3 animal and the model fit (green). Fit parameters: F0\u00a0=\u00a066.2 a.u.; \u0394F1AP = 22.5 a.u.; trise\u00a0=\u00a0489 ms; \u03c4decay = 1640 ms. Variance explained by model: 93.0%. Cell id: a11814_08_c5.\n\nWe further characterized the relationship between fluorescence responses and firing patterns by fitting a model to our data set (Figure 5E,F, Figure 5\u2014figure supplements 1\u20133; see Materials and methods for equations). We found that on average, an action potential led to a median increase of 0.35 (GP4.3; n\u00a0=\u00a05 cells) or 0.14 (Gad2;Ai96; n\u00a0=\u00a012 cells) times the minimal fluorescence (F0), with a median zero-to-peak rise time of 480 ms (GP4.3) or 560 ms (Gad2;Ai96) and a median decay time constant of 1.04 s (GP4.3) or 1.36 s (Gad2;Ai96). The model could explain between 50% and 95% of the variance in the fluorescence (median: 79%; average\u00a0\u00b1s.d.: 77 \u00b1 13%).\n\n### Spatial distribution of frequency tuning\n\nThe widespread and homogeneous expression of GCaMP6s in the IC of the transgenic mice allowed a good overview of its functional organization. We aligned the position of the cells from multiple animals (GP4.3: n\u00a0=\u00a07 mice; Gad2;Ai96: n\u00a0=\u00a06 mice) by anatomical landmarks (midline, anterior and posterior extent of the exposed IC, lateral extent of the exposed IC), and plotted the cells on this common anatomical coordinate system (Figure 6A; Figure 6\u2014video 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig6-v2.jpg)\n\n**Figure 6.:** (A) Combined spatial distribution of characteristic frequencies (CFs) in the two transgenic lines, aligned to the same top-down image of an exposed left IC. Symbol size represents the size of the ROI, while colors indicate different CFs. Cells from Gad2;Ai96 mice were marked by diamonds. For GP4.3, the shape of the symbol represents ROIs from C57BL/6J (circles) or B6CBAF1 (squares) background. To capture a direction of tonotopy, CF was fitted with a 4th-order polynomial r\u00a0=\u00a0x\u00a0cos\u2061\u03b8\u00a0+\u00a0y\u00a0sin\u2061\u03b8\u00a0where r is a presumed direction of tonotopy at an angle \u03b8 (i.e. r\u00a0=\u00a0xcos\u03b8+ysin\u03b8), with the origin being the contact point between superior and inferior colliculi at the midline. The best fit yielded an angle \u03b8 of 50\u00b0 from the medial-lateral axis. Contour lines indicate the predicted CF of the fit. (B) Geometric mean (open circles) and probability distribution (background shading) of CF along the 50\u00b0 line, in 75 \u03bcm bins. Black trace shows the fitted 4th-order polynomial. (C) Geometric mean of CF along the 50\u00b0 line for the GP4.3 (black) and Gad2-cre*Ai96 (gray) lines. Size of symbol represent number of cells in each 75 \u03bcm bin. (D) Geometric mean of CF for cells of onset, sustained, inhibited or offset FRAs. (E) Depth dependence of CFs along the 50\u00b0 line. (F) Histogram of CF grouped according to depth from pia surface. Note that low CF cells are present at all imaging depths.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig6-figsupp1-v2.jpg)\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig6-figsupp2-v2.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig6-figsupp3-v2.jpg)\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Same animal as Figure 9A.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** Same animal as Figure 9E.\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig6-figsupp6-v2.jpg)\n\n![Figure 6\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig6-figsupp7-v2.jpg)\n\n**Figure 6\u2014figure supplement 7.:** Scatter plot of CF against depth of each ROI from pia surface. Black: all cells; red: cells within the central strip, r\u00a0=\u00a0525\u2013725 \u03bcm. Solid lines represent regression lines for the two data sets.\n\n![Figure 6\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig6-figsupp8-v2.jpg)\n\n**Figure 6\u2014figure supplement 8.:** Combined spatial distribution of characteristic frequencies (CFs) for cells within 50 \u03bcm of the pia surface in the two transgenic lines, aligned to the same top-down image of an exposed left IC. Symbol size represents the size of the ROI, while colors indicate CFs. Cells from Gad2;Ai96 mice were marked by diamonds. For GP4.3, the shape of the symbol represents ROIs from C57BL/6J (circles) or B6CBAF1 (squares) background. A 4th-order polynomial fit of the superficial cells also yielded a double gradient.\n\nInterestingly, we observed a central strip running in the caudomedial-rostrolateral orientation of cells responding to lower frequencies, while CF progressively increased in both the caudolateral and the rostromedial direction. We tried to estimate the orientation of the spatial organization by projecting the x,y-coordinates of all neurons onto an axis with a parametrized angle \u03b8, while simultaneously fitting the log-transformed CF using a polynomial model (see Materials and methods). We used a polynomial model fit as a way to extract any general direction along which CFs may diverge, without imposing any presumption about the spatial CF dependence. We found that a fourth order polynomial captured the variance maximally; further increasing its order did not lead to better fits. The results of the fit are presented as contour lines in Figure 6A, with the best orientation (\u03b8) 50\u00b0 from the medial-lateral (x) axis. A plot along this orientation shows a high fraction of low CF (~4 kHz) neurons near the 625 \u03bcm position, with the mode going towards\u00a0~20 kHz at the 1300 \u03bcm end (Figure 6B). The increase in CFs on the rostromedial side was not as pronounced, likely due to the low number of neurons sampled in this region. The solid line in Figure 6B shows the best polynomial fit, which explained around 13% of the variance in CFs. This tonotopic organization can also be appreciated in individual animals in which a wide extent of the dorsal IC was imaged (Figure 6\u2014figure supplements 1\u20133). Additional examples of the tonotopic organization in individual animals are shown in Figure 6\u2014figure supplements 4\u20136. A similar spatial distribution of CFs was observed for GABAergic and glutamatergic neurons (Figure 6C) and for cells showing different response classes (Figure 6D).\n\nBased on a clustering analysis, Barnstedt et al. (2015) suggested that the central strip of low frequency neurons were from the most dorsal end of the central nucleus, and we did observe a small but significant correlation between depth and log(CF) (Figure 6\u2014figure supplement 7; correlation coefficient\u00a0=\u00a0\u22120.22; n\u00a0=\u00a0799; p=3\u00a0\u00d7\u00a010\u221210). However, a plot of CF along the best orientation from the polynomial fit as a function of depth illustrates that most cells were located within 100 \u00b5m from the surface, and that the low frequency neurons were also among the most superficial cells (Figure 6E). When we limited the fit to neurons\u00a0<\u00a050 \u03bcm from the pia surface, the same tonotopic pattern appeared (Figure 6\u2014figure supplement 8). There was an over-representation of low CF neurons in the deepest regions (121\u2013160 \u03bcm deep, Figure 6E,F). We attribute this to a sampling bias in which the low frequency region coincided with the center of the cranial window, where it was possible to image somewhat deeper than towards the edges (Figure 6E). Objects in the center of the window profit from utilization of the full NA for focusing excitation light, which is especially critical for two-photon excitation, and in the center both excitation and fluorescence emission light is least obstructed (Figure 2A). Restricting the analysis to cells in the central strip (525\u2013725 \u03bcm of projected area) reduced the correlation coefficient for the relation between depth and log(CF), but it remained significant (Figure 6\u2014figure supplement 7; correlation coefficient\u00a0=\u00a0\u22120.17, n\u00a0=\u00a0295; p=0.003), hinting at differences between deeper and the most superficial cells. While we do not exclude the possibility of imaging into the central nucleus of the IC, we believe the observed tonotopy to be a good representation of the IC shell region because all CFs were represented among the most superficial neurons (Figure 6E,F).\n\n### Spatial distribution for response classes\n\nWe next asked whether there was any obvious spatial organization of the different response classes. Figure 7A shows the proportion of different response classes along our presumed tonotopic axis, which looked rather homogenous, without any obvious difference between cells rostromedial and caudolateral to the CF minimum. The same pattern holds for the orthogonal direction (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig7-v2.jpg)\n\n**Figure 7.:** Similar proportions of response classes along (A) the presumed tonotopic axis (bin size 50 \u03bcm) and (B) the direction orthogonal to the axis (bin size 100 \u03bcm). Zero position was taken as the contact point between superior and inferior colliculi at the midline. Vertical dashed line in (A) denotes the minimal CF position based on our polynomial fit (625 \u03bcm).\n\n### Neurons with movement related activity and their localization\n\nInterestingly, we observed cells that showed fluorescence transients in the absence of sound presentation (Figure 8A,B). Numerous studies have shown both ascending and descending somatosensory projections to the IC (Aitkin et al., 1981; K\u00fcnzle, 1998; Jain and Shore, 2006; Zhou and Shore, 2006; Lesicko et al., 2016; Patel et al., 2017), as well as from nuclei that are upstream from IC such as the dorsal cochlear nucleus, which also receive somatosensory inputs (Wu et al., 2014). In addition, the IC receives inputs from the motor cortex (Cooper and Young, 1976; Olthof et al., 2019). This prompted us to investigate whether these \u2018spontaneous\u2019 activities could be attributed to non-auditory inputs. Our recordings were performed while the animal was passively awake, which allowed us to observe and correlate the voluntary movement of the animal to simultaneously recorded calcium transients.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig8-v2.jpg)\n\n**Figure 8.:** (A) Two example cells that were spontaneously active in the absence of sound presentation. Calcium transients occurred when the animal was moving its paws or showing facial movement (e.g. whisking). These transients decayed much more slowly than motion artefacts (image shifts, bottom trace; see also Figure 8\u2014figure supplement 1). (B) Facial movements were quantified from a simultaneously recorded video of the animal by calculating the root-mean-square of the changes in pixel intensity between consecutive frames of a rectangular area at the whisker pad. (C\u2013D) Cells showing motion-related activity were predominently located in the caudolateral part of the dorsal IC. Broken line indicates the minimum CF position obtained from the polynomial fit. (F) The motion-related calcium transients were unlikely to be caused by sounds, as the two cells showed either an inhibitory FRA (cell 1) or no clear tone-evoked response (cell 2).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Vertical or horizontal blurring was due to subpixel image registration. (A) Single image frame for GCaMP fluorescence from experiment in Figure 8, i-iii corresponds to frames marked in Figure 8A. (B) Autofluorescence in red channel for the same frames in A. Arrows point to two autofluorescence spots, both of which remained in focus during this period. (C) Enlarged image of the two autofluorescence spots for the three frames.\n\nWe found that the onset of many of these spontaneous transients coincided with movement events of the animal (paw and facial movements in Figure 8A). By correlating movement and fluorescence, we detected 165 (out of 1359) cells that showed a positive correlation (r\u00a0>\u00a00.25) with facial movements during the spontaneous recording period. To exclude potential false-positive detection due to motion artefacts (i.e. cells moving into and out of focus), we excluded cells with fluorescence transients that did not show the typical\u00a0~1 s exponential decay kinetics, which last much longer than the brief image shifts that could accompany movement events (image shifts in Figure 8A, Figure 8\u2014figure supplement 1). Since animal movement inevitably produces sound that may activate the IC neurons, leading to an apparent movement sensitivity, we also excluded the cells that showed excitatory or offset responses in their FRA. In the end, 41 cells showed spontaneous calcium transients that correlated with animal movement and that could not be explained by their FRA, which was either inhibited-type or showed no clear pure tone evoked responses (example FRAs in Figure 8F). These cells seemed to be enriched at the caudolateral side of the dorsal IC (Figure 8C\u2013D). Four of the 41 cells were found in the Gad2;Ai96 line, in agreement with a recent report that inputs from motor or somatosensory cortex can directly target GABAergic cells (Olthof et al., 2019), and the remainder in the GP4.3 line, making them 1% of GABAergic and 4% of investigated glutamatergic cells, respectively.\n\n### Comparison of tonotopic organization with histological data and literature\n\nFigure 9A and E show two relatively superficial brain sections (within 80 \u03bcm and 120 \u03bcm from dorsal surface, respectively) from one Gad2;Ai96 and one GP4.3 animal stained for GAD67 after two photon imaging. We overlaid the line representing the neurons with the lowest CF and compared its location with the border of LCIC and DCIC traced from the latest Allen Reference Atlas (CCFv3) and from the classical reference atlas by Paxinos and Franklin (2001). The minimum frequency line aligns with the demarcation from the Allen Reference Atlas, while that by Paxinos and Franklin lays in the orthogonal direction.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig9-v2.jpg)\n\n**Figure 9.:** (A) Epifluorescence image of the IC in a horizontal brain section stained for GAD67. This brain slice was from a Gad2;Ai96 mouse after two-photon imaging. Black straight line indicates the minimum frequency location derived from fitting two-photon imaging data. Dashed curve represents the demarcation between the dorsal and the lateral (external) cortices traced from version 3 of the Allen Reference Atlas. Circles connected with solid and broken lines mark the demarcation at the dorsal brain surface traced from the atlas by Paxinos and Franklin (2001). The rostral and caudal end of this demarcation are marked by a dashed line because at the indicated positions on the anterior-posterior axis the whole structure was labeled as LCIC or DCIC, respectively. Modules with dense GAD67 staining, considered to be a hallmark for the LCIC, were observed both medially and laterally from each of the three demarcations (arrowheads). We observed a region in the center of the IC whose GAD67 staining density was at least as strong as in the neurochemical modules (square labeled B). (B\u2013D) Single confocal optical sections of GAD67 (black) and GCaMP6s (green) staining in different areas of the brain slice corresponding to the yellow squares in A. (B) Dense GAD67 area in the central region of the IC (<80 \u00b5m from dorsal surface). (C) An area showing a GAD67-dense module (m) in the center, cut transversely and surrounded by extramodular region (e) with sparse GAD67 staining. (D1-2) Optical sections at different focal depths of an area showing another GAD67 module from the same slice (m), cut tangentially. Arrow in D2 indicates a cell showing motion-related responses. (E) Similar to A but from an imaged GP4.3 mouse. (F) Single confocal section for GCaMP6s (green) and GAD67 (black) staining in region marked in E. Arrow marks another cell with motion-related response. Scale bars, A,E: 500 \u03bcm; B-D,F: 50 \u03bcm.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Same sections as supplements 2 & 3.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig9-figsupp2-v2.jpg)\n\n**Figure 9\u2014figure supplement 2.:** Same sections as supplements 1 and 3.\n\n![Figure 9\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig9-figsupp3-v2.jpg)\n\n**Figure 9\u2014figure supplement 3.:** Same sections as supplements 1 and 2.\n\n![Figure 9\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig9-figsupp4-v2.jpg)\n\n**Figure 9\u2014figure supplement 4.:** Same sections as supplements 5 and 6. Figure 9\u2014figure supplement 5.\n\n![Figure 9\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig9-figsupp5-v2.jpg)\n\n**Figure 9\u2014figure supplement 5.:** Same sections as supplements 4 and 6.\n\n![Figure 9\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig9-figsupp6-v2.jpg)\n\n**Figure 9\u2014figure supplement 6.:** Same sections as supplements 4 and 5.\n\nNeurochemical modules with a high density of GAD67-positive terminals have been reported as a hallmark for the LCIC (Chernock et al., 2004; Lesicko et al., 2016; Dillingham et al., 2017). We indeed found modules with higher density of GAD67 terminals in our animals as well (arrowheads in Figure 9A,E,a clear example in Figure 9C). In the most superficial sections, these modules were not as well defined, but they were contiguous to the more densely stained modules in deeper sections (Figure 9\u2014figure supplements 1 and 4; 3D reconstruction in Figure 9\u2014video 1), and the superficial modules also had reduced calretinin staining (Figure 9\u2014figure supplements 2 and 5), in line with previous findings (Dillingham et al., 2017). These modules are the predominant target of the somatosensory projections from the cerebral cortex as well as other brainstem areas (Lesicko et al., 2016). We also observed a central strip of dense GABAergic staining (enlarged in Figure 9B), which was not contiguous with the modules (Figure 9\u2014figure supplements 1 and 4). GCaMP expression in these two example animals are presented for comparison in Figure 9\u2014figure supplements 3 and 6.\n\nHow do motion-sensitive cells associate with the GAD67-dense modules? Figure 9D2\u00a0and F show two motion-sensitive neurons retrieved in histology (cells 3 and 4, marked by arrows), both of which resided in close proximity to a GAD67-dense module. We observed that although the somata of both cells seemed to reside in the extramodular regions, both possessed dendrites that extended into a GAD67-dense module (Figure 10). Figure 10A and B show a dendritic extension of cell 3. For cell 4, a pixel-wise correlation of the in vivo somatic fluorescence change (Junek et al., 2009) nicely revealed its dendritic arbor at the same focal plane (Figure 10C,E). Aligning this to post hoc histological staining (Figure 10D), we can demonstrate that cell four has dendritic branches extending both inside and outside of a GAD67 module (Figure 10F). We suggest that this may be a functional connection scheme for extramodular neurons to enable them to integrate somatosensory or motor with auditory inputs to the IC (Figure 10G).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/49091/elife-49091-fig10-v2.jpg)\n\n**Figure 10.:** (A) Maximum projection of GCaMP staining showing dendritic arbor of cell three in Figure 9D2, overlaid with a single optical section of GAD67 staining showing a module (m; at same focus as Figure 9D2). While its soma is extramodular (e), at least one branch of its dendrite (arrowheads) appeared to extend into the modular region. (B) A single confocal section of cell three showing the root (arrow) of the dendrite labeled in A (small arrowheads). (C) Averaged GCaMP6s fluorescence for the in vivo session imaging area in Figure 9F, revealing a dendrite of cell four extending into the modular region. (D) Single confocal section of a fixed brain slice stained for GCaMP6s. (E) Dendritic arbor of cell four was revealed using pixel-wise correlation to the average somatic fluorescence (Junek et al., 2009), showing extension into the modular region (arrowheads). (F) Background subtracted pixel correlation from E (green) overlaid onto GAD67 staining (black). (G) Schematic representation of hypothesis that integration of auditory and non-auditory inputs by multisensory neurons in the IC can be based on extension of their dendrites into both modular and extramodular regions. Scale bars: A: 20 \u03bcm; B: 10 \u03bcm; C-F: 50 \u03bcm.\n\n## Discussion\n\nWe investigated the functional organization of the dorsal IC in awake mice at the single neuron level. We found that the dorsal IC is tonotopically organized, with isofrequency bands running in a rostrolateral-caudomedial orientation with frequency tuning varying along the caudolateral-rostromedial direction. The lowest CF band was found in the middle, dividing the dorsal IC into two reversed tonotopic gradients. In the caudolateral part, but not in the rostromedial part, neurons that were sensitive to whisker or other movements were found, which was in agreement with the view that the caudolateral and rostromedial part corresponded to the LCIC and DCIC, respectively. We observed four different types of firing patterns in response to tones, but other than the tonotopical organization, no obvious topographical organization was observed for the firing patterns. GABAergic neurons were on average somewhat larger, but otherwise there were not clear differences with glutamatergic neurons in spatial organization or firing patterns. Our experiments thus provide a functional definition of the major organization principles of the dorsal IC in adult mice.\n\n### Suitability of GP4.3 and GAD2-cre mice for 2P imaging in awake mice\n\nBecause of the prominence of GABAergic neurons and their substantial contribution to ascending projections (Schofield and Beebe, 2019), we compared the responses and functional organization of GABAergic and glutamatergic neurons in the dorsal IC using in vivo two-photon calcium imaging. We confirmed that virtually all neurons expressing GCaMP6s in the GP4.3 line were glutamatergic, but not all glutamatergic neurons were labeled. There may have been a preponderance of labeled cells around the modules in the LCIC (Figure 1D), but a systematic screen of markers would be needed to test for a selective enrichment of glutamatergic subtypes in the GP4.3 line. The large majority of GCaMP6s-positive neurons in the IC of mice from the Gad2;Ai96 line expressed GAD67, in agreement with findings in a related mouse line (Gay et al., 2018). In our hands, these two transgenic lines had the advantage that the kinetics of the responses were relatively homogeneous and well approximated by a linear model (Figure 5B), suggesting that the expression levels, which are a major determinant of the Ca2+ kinetics (e.g. \u00c9ltes et al., 2019), were similar across cells. Moreover, in contrast to pilot experiments in which we expressed GCaMP6 using adeno-associated viruses, we found little evidence for toxicity. The more sparse expression facilitated the isolation of the responses of individual neurons.\n\nA substantial fraction of cells did not respond to tones. Low probability responses may have been below detection, since the juxtacellular recordings indicated that single APs could not always be detected. Some cells may respond preferentially to more complex sound stimuli, as previously found for neurons in the shell region (Ehret and Moffat, 1985; Aitkin et al., 1994). As discussed below, some cells may prefer somatosensory or motor stimuli instead of sound stimuli.\n\n### Response types\n\nIn both transgenic lines, we observed four different tone-evoked fluorescence response patterns in awake mice: onset, sustained, offset and inhibitory. Our simultaneous juxtacellular recordings showed corresponding patterns. These types were typically also observed in several earlier electrophysiological studies (e.g. Willott et al., 1988a; Willott et al., 1988b; Jain and Shore, 2006; Xie et al., 2007). Apart from a possibly lower fraction of GABAergic neurons with pure offset responses (Figure 4B), our results are thus in line with a recent study that showed that GABAergic and glutamatergic IC neurons have similar response properties throughout the IC (Ono et al., 2017).\n\nThe prominence of inhibitory responses in the IC (~44% of sound-responsive neurons) in both transgenic lines was a striking finding in our recordings. An important factor contributing to their prominence is probably that our experiments were done in awake animals, as a recent single unit recording study showed the presence of inhibitory responses as well as higher spontaneous spike rates in IC neurons of awake mice compared to mice under urethane anesthesia (Duque and Malmierca, 2015), and synaptic inhibition has also been shown to be prominently present in whole-cell recordings in awake bats (Xie et al., 2007).\n\nOffset responses can be found throughout the auditory system including the IC, and they may have an important role in perceptual grouping or in duration discrimination (Kopp-Scheinpflug et al., 2018). However, studies in the IC of anesthetized mice, rats and chinchillas showed that offset responses are generally restricted to cells showing band-pass duration tuning, which only responded to much shorter tones than the 1 s employed here (Chen, 1998; Brand et al., 2000; P\u00e9rez-Gonz\u00e1lez et al., 2006). Another striking finding was therefore that we saw clear evidence for offset responses in 3\u201311% of sound-responsive cells. A whole-cell study in the mouse IC showed that in most cases offset responses are inherited from upstream, but that they may also be generated de novo as a rebound from inhibition (Kasai et al., 2012). Similar to the inhibition class, we therefore suggest that the prominence of offset responses may be related to the increased impact of synaptic inhibition in the IC of awake animals. A study using communication calls suggests that offset responses may be even more prominent following more complex sound stimuli, such as communication calls (Akimov et al., 2017), possibly by a summation of inhibition at different frequency bands (Sanchez et al., 2008).\n\n### Tonotopical organization of the dorsal IC\n\nFollowing pooling of the data from several experiments, we observed a tonotopic gradient that ran along a gradient from caudolateral to rostromedial. The gradient reversed at the site where the CFs were the lowest. This reversal is in line with the banding patterns observed with epifluorescent calcium imaging in unanesthetized mice before and at hearing onset; the pre-hearing spontaneous neural activities originate from the cochlea, thus regions activated synchronously likely receive input from the same tonotopic area (Babola et al., 2018). In addition, they observed a double band pattern with higher frequency stimulation in the juvenile (p15) mice. Interestingly, our data are also compatible with two earlier two-photon calcium imaging studies (Ito et al., 2014; Barnstedt et al., 2015). Ito et al. (2014) reported gradients in the medial regions of the dorsal IC, which ran from lateral (low-frequency) to medial (high-frequency), whereas Barnstedt et al. (2015) reported gradients in a mediorostral to laterocaudal direction.\n\nWe found considerable variability in CFs within a band. Imprecisions in the alignment of imaging areas and variability between animals may have contributed to the variability, but substantial variability was also observed within a single animal, in line with previous results (Ito et al., 2014; Barnstedt et al., 2015). Two-photon calcium imaging studies in the mouse auditory cortex have met with variable amount of microheterogeneity, apparently depending on layer, calcium dye, or the use of anesthetics (Bandyopadhyay et al., 2010; Rothschild et al., 2010; Winkowski and Kanold, 2013; Issa et al., 2014; Kato et al., 2017; Tischbirek et al., 2019).\n\nThe four response types showed a similar tonotopic organization, but considerable microheterogeneity. This microheterogeneity was larger than in an earlier study in which bulk loading of an organic Ca indicator was used (Ito et al., 2014), which may have made it more difficult to isolate responses from individual cells. Our results are in line with patch-clamp results showing considerable heterogeneity between adjacent cells within the dorsal IC, which extended to heterogeneity in their inputs (Geis et al., 2011). The microheterogeneity was similar for GABAergic and glutamatergic neurons. Our results thus differ from auditory cortex, where response patterns are different and local microheterogeneity is much smaller for (parvalbumin-positive) GABAergic neurons than for glutamatergic neurons (Maor et al., 2016; Liang et al., 2018; Liu et al., 2019). We conclude that despite the shared input and firing behavior during development (Babola et al., 2018), functional heterogeneity dominates within bands in the dorsal IC of adult mice. Whereas some of the mechanisms that underlie the microheterogeneity within the auditory cortex are being elucidated (Kato et al., 2017; Tao et al., 2017; Vasquez-Lopez et al., 2017), they remain to be explored for the dorsal IC.\n\n### Presence of non-auditory inputs in LCIC\n\nWe monitored spontaneous whisker and general body movements, and used strict criteria to exclude movement artefacts. As we restricted the analysis to neurons that were not excited by tones, we consider it unlikely that the observed movement-related responses were caused by self-generated sounds. Despite these severe restrictions, we did find that a few percent of the cells were excited during whisker or body movements, suggesting a substantial role for somatosensory or motor inputs. Little is known about the functional characteristics of motor inputs that are not related to eye movements (Gruters and Groh, 2012). For somatosensory inputs, the dominant effect appears to be inhibitory and only a minority of cells have been shown to respond to unimodal tactile stimuli (Aitkin et al., 1978; Aitkin et al., 1981; Zhou and Shore, 2006), which would not help detection based on our selection criteria. We did not further discriminate between different movements as they tended to be heavily correlated. Moreover, it is known that neurons in the LCIC have broad tuning for somatosensory input (Aitkin et al., 1981). Movement-sensitive neurons were not found in the high-frequency DCIC regions, but only in the putative CNIC region and the LCIC.\n\nA defining feature of the LCIC is the presence of neurochemical modules, which have been shown in many species, including rats (Chernock et al., 2004; Choy Buentello et al., 2015), but also in both adult (Choy Buentello et al., 2015; Lesicko et al., 2016; Patel et al., 2017) and developing mice (Dillingham et al., 2017). While it is still unclear how neurons in these modules and extramodular zones connect with each other, there is evidence that somatosensory inputs project predominantly to the modules, while auditory input projects to the extramodular region (Lesicko et al., 2016). The main sources for somatosensory input to the LCIC are the spinal trigeminal nucleus, the dorsal column nuclei and the somatosensory cortex (reviewed in Gruters and Groh, 2012). These inputs target the layer two modules, which constitute only a small fraction of the LCIC volume. Moreover, neurons in the modules do not seem to target extramodular IC neurons (Lesicko and Llano, 2019). This raises the question how so many cells in the LCIC can be sensitive to non-auditory inputs. We obtained anecdotal evidence that neurons at the border of the modules can extend dendrites into the modules (Figure 10A,F), which would allow them to sample non-auditory inputs. Indeed, neurons in LCIC can have extensive dendritic trees (Smith, 1992), and Golgi stainings show that cells in layer 3 of LCIC can send dendrites up to layer 1 (Meininger et al., 1986; Malmierca et al., 2011). The CNIC has few somatosensory inputs, but at least half of the cells in CNIC are affected by stimulation of the dorsal column nuclei (Gruters and Groh, 2012). The CNIC may get somatosensory inputs indirectly via the dorsal cochlear nucleus, which is innervated by the spinal trigeminal nucleus and the dorsal column nuclei, or in the form of intracollicular input from the LCIC. Direct stimulation of the different non-auditory inputs would be needed to obtain a better idea of their importance for the observed facial or body movement-related responses.\n\n### Functional parcellation of the dorsal IC\n\nThere is little agreement on the precise borders of the different nuclei of the IC, and its parcellation has been different based on whether cell morphology, inputs, or physiological properties were chosen as the main classifier (Oliver, 2005). Here we used physiological properties as the main criterion to look at the borders between the DCIC, LCIC and CNIC in the dorsal IC. Our findings suggest that the laterocaudal area with high frequencies is the dorsal edge of the LCIC, whereas the mediorostral part of the dorsal IC belongs to the DCIC. The tonotopic reversal would thus provide a functional demarcation between the dorsal and lateral cortices of the IC. Earlier tracing studies of intracollicular projections in the guinea pig (Malmierca et al., 1995) and the rat (Salda\u00f1a and Merch\u00e1n, 1992), as well as ascending projections from the cochlear nucleus in the rat (Malmierca et al., 2002), have shown interesting V-shaped arrangements in coronal sections, where the medial side corresponds to isofrequency laminae in CNIC and DCIC, while the lateral side corresponds to those in the LCIC. These V-shaped axon terminal plexuses, if extended to the dorsal surface of the IC, provide an anatomical explanation for the observed tonotopic reversal. This is also in agreement with the latest anatomical framework published by the Allen Brain Institute (Figure 9A; Allen Mouse Common Coordinate Framework, 2015), previous imaging studies (Ito et al., 2014; Barnstedt et al., 2015; Babola et al., 2018), the known somatosensory inputs to the LCIC, and both the descending and ascending inputs to the IC (Aitkin et al., 1981; K\u00fcnzle, 1998; Jain and Shore, 2006; Zhou and Shore, 2006; Lesicko et al., 2016; Patel et al., 2017). Surprisingly, we observed GAD67-dense modules in both the medial and the lateral aspect of the IC (arrowheads Figure 9A,G), that\u00a0is within both LCIC and DCIC in either atlas. The medial modules could not be imaged within this study, so their association with somatosensory inputs is currently unclear.\n\nThe central strip with neurons tuned to low frequencies in between the LCIC and the DCIC may be the most dorsal extension of the dorsolateral low frequency area of the CNIC (Stiebler and Ehret, 1985; Barnstedt et al., 2015). This strip contains the large density of GABAergic inputs (Figure 9A,B) that is characteristic of the CNIC (Choy Buentello et al., 2015). Lemniscal inputs are known to extend quite dorsally, almost up to the surface, and neurons with short latency sound responses have been found in the dorsal IC, although their exact location was not studied (Geis and Borst, 2013). The low tuning in the central strip extended close to the surface, but a more systematic study of their properties would be needed to be able to assign the most superficial layers to either the DCIC or another region. From our data it thus appears that the three main areas of the IC, LCIC, CNIC, DCIC, are readily accessible at the dorsal IC. Their accessibility for imaging studies will thus help to further delineate their functions and the role of their inputs in the future.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>B6;129S6-Gt(ROSA)26Sortm96(CAG-GCaMP6s)Hze/J</td>\n      <td>The Jackson Laboratory; originally reported in Madisen et al. (2015)</td>\n      <td>IMSR Cat# JAX:024106, RRID:IMSR_JAX:024106</td>\n      <td>Designated as \u2018Ai96\u2019 in this manuscript. Maintained in heterozygous state by backcrossing to C57BL/6J.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>STOCK Gad2tm2(cre)Zjh/J</td>\n      <td>The Jackson Laboratory; originally reported in Taniguchi et al. (2011)</td>\n      <td>IMSR Cat# JAX:010802, RRID:IMSR_JAX:010802</td>\n      <td>Designated as \u2018Gad2-IRES-Cre\u2019 in this manuscript. Maintained in homozygous state after\u00a0&gt;\u00a010 generations of backcrossing to C57BL/6J, and re-backcrossed to C57BL/6J every 4\u20135 generations.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>C57BL/6J-Tg(Thy1-GCaMP6s)GP4.3Dkim/J</td>\n      <td>The Jackson Laboratory; originally reported in Dana et al. (2014)</td>\n      <td>IMSR Cat# JAX:024275, RRID:IMSR_JAX:024275</td>\n      <td>Designated as \u2018GP4.3\u2019 in this manuscript. Maintained in heterozygous state by backcrossing to C57BL/6J, or crossed with CBA/JRj to obtain mice with B6CBAF1/J background.</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>JAX C57BL/6J</td>\n      <td>Charles Rivers Laboratories</td>\n      <td>IMSR Cat# JAX:000664, RRID:IMSR_JAX:000664</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>CBA/JRj</td>\n      <td>Janvier Labs</td>\n      <td>MGI Cat# 6157506, RRID:MGI:6157506</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>antibody</td>\n      <td>chicken anti-GFP (Chicken polyclonal)</td>\n      <td>Aves</td>\n      <td>Aves Labs Cat# GFP-1020, RRID:AB_10000240</td>\n      <td>IF(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-Gad67 (Mouse monoclonal)</td>\n      <td>Millipore</td>\n      <td>Millipore Cat# MAB5406, RRID:AB_2278725</td>\n      <td>IF(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-NeuN (Rabbit polyclonal)</td>\n      <td>Millipore</td>\n      <td>Millipore Cat# ABN78, RRID:AB_10807945</td>\n      <td>IF(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse anti-parvalbumin (Mouse monoclonal)</td>\n      <td>Swant</td>\n      <td>Swant Cat# 235, RRID:AB_10000343</td>\n      <td>IF(1:7000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit anti-calretinin (Rabbit polyclonal)</td>\n      <td>Swant</td>\n      <td>Swant Cat# 7699/4, RRID:AB_2313763</td>\n      <td>IF(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 488-conjugated Donkey anti-chicken antibody (Donkey polyclonal)</td>\n      <td>Jackson ImmunoResearch Labs</td>\n      <td>Cat# 703-545-155, RRID:AB_2340375</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 594-conjugated Donkey anti-mouse antibody (Donkey polyclonal)</td>\n      <td>Jackson ImmunoResearch Labs</td>\n      <td>Cat# 715-585-150, RRID:AB_2340854</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Alexa Fluor 647-conjugated Donkey anti-rabbit antibody (Donkey polyclonal)</td>\n      <td>Jackson ImmunoResearch Labs</td>\n      <td>Cat# 711-605-152, RRID:AB_2492288</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IGOR Pro</td>\n      <td>Wavemetrics</td>\n      <td>RRID:SCR_000325</td>\n      <td>Analysis of calcium imaging and electrophysiology data</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pClamp</td>\n      <td>Molecular Devices</td>\n      <td>RRID:SCR_011323</td>\n      <td>Signal digitization.\u2003software, algorithm</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>MATLAB</td>\n      <td>MathWorks</td>\n      <td>RRID:SCR_001622</td>\n      <td>Stimulus generation and presentation</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LabView</td>\n      <td>National Instruments</td>\n      <td>RRID:SCR_014325</td>\n      <td>Control of microscope and other hardware</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>http://fiji.sc</td>\n      <td>RRID:SCR_002285</td>\n      <td>Processing and analysis of images from immunohistochemistry</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nDetailed two-photon imaging experiments were conducted on seven GP4.3 transgenic animals (Dana et al., 2014) (three in C57BL/6J background and four in B6CBAF1/J background) and six F1 progeny between Gad2-IRES-cre (Taniguchi et al., 2011), and Ai96 reporter line (B6;129S6-Gt(ROSA)26Sortm96(CAG-GCaMP6s)Hze/J) (Madisen et al., 2015). We will refer to the Gad2-IRES-Cre x Ai96 cross as Gad2;Ai96. Postnatal age at recordings ranged between 11\u201335 weeks (median: 19; Q1: 15; Q3: 23). Ground-truth juxtacellular recordings were performed on four GP4.3 and three Gad2;Ai96 animals. Immunohistochemistry for cell counting was performed on three GP4.3 and three Gad2;Ai96 animals.\n\nGP4.3 animals were originally obtained from the Jackson Laboratory (C57BL/6J-Tg(Thy1-GCaMP6s)GP4.3Dkim/J; JAX stock #024275); they were maintained in a heterozygous state by backcrossing to C57BL/6J from Charles Rivers (JAX C57BL/6J). To create GP4.3 animals with B6CBAF1/J background, heterozygous GP4.3 in C57BL/6J background were crossed with CBA/JRj mice from Janvier. Gad2-IRES-Cre (originally STOCK Gad2tm2(cre)Zjh/J, the Jackson Laboratory) was maintained in homozygous state after\u00a0>10 generations of backcrossing to C57BL/6J, and re-backcrossed to C57BL/6J every 4\u20135 generations. Ai96 mice were obtained from Jackson Laboratory with already 3 generations of backcross to C57BL/6J (N3), and were subsequently maintained by backcrossing to C57BL/6J for 5\u20137 generations. All experiments complied with the ethical guidelines for laboratory animals within our institute and with European guidelines, and were approved by the animal ethical committee of the Erasmus MC.\n\n### Surgery\n\nAnimals were anaesthetised through respiratory intake of isoflurane and maintained at surgical level of anaesthesia, assessed through the hind limb withdrawal reflex. A heating pad with rectal feedback probe (40-90-8C; FHC, Bowdoinham, ME, USA) was used to maintain body core temperature at 36\u201337\u00b0C. Eye ointment (Duratears; Alcon Nederland, Gorinchem, The Netherlands) was used to keep the eyes moist during surgery. A bolus of buprenorphine (0.05 mg/kg; Temgesic, Merck Sharp and Dohme, Inc, Kenilworth, NJ, USA) was injected subcutaneously at the beginning of surgery. The skin overlying the IC was incised. Lidocaine (Xylocaine 10%; AstraZeneca, Zoetermeer, The Netherlands) was applied before removing the periosteum and cleaning the skull. After etching the bone surface with phosphoric acid gel (Etch Rite; Pulpdent Corporation, Watertown, MA, USA), a titanium head plate was glued to the cleaned bone above the left IC using dental adhesive (OptiBond FL; Kerr Italia S.r.l., Scafati, SA, Italy) and further secured with dental composite (Charisma; Heraeus Kulzer GmbH, Hanau, Germany).\n\nThrough an opening in the head plate, a craniotomy of 3 mm diameter centered at one of the ICs was made by thinning and removing the skull bone. A cranial window, made by gluing a 3 mm cover slip (CS-3R-0; Warner Instrument Inc, Hamden, CT, USA) on a custom built, 500 \u00b5m thick steel ring with UV-cured optical adhesive (NOA68; Norland Products), was installed over the exposed brain surface and secured with superglue. Each animal was allowed to recover for at least two days before the first measurements. For in vivo electrophysiology, the cranial window construct was gently removed, and the dura mater covering the IC and part of the cerebellum was carefully punctured and removed with a pair of fine forceps.\n\nAfter all recordings had been done, animals received an intraperitoneal injection of pentobarbital (300 mg/kg) and were perfused transcardially, first with physiological saline (Baxter Healthcare, Zurich, Switzerland), followed by 4% paraformaldehyde (PFA) in 0.1 M phosphate buffer (PB; 4% PFA in PB, pH 7.4; Merck).\n\n### Two-photon imaging\n\nFor two-photon imaging of the IC, a 20X water-immersion objective (LUMPlanFI/IR, 20X, NA: 0.95; Olympus Corporation, Tokyo, Japan) on a custom-built two-photon microscope was used, except for simultaneous juxtacellular recordings, for which a long working distance 40x objective (LUMPlanFl/IR, 40X, NA: 0.80, Olympus Corporation, Tokyo, Japan) was used. Excitation light was provided by a MaiTai Ti:Sapphire laser (Spectra Physics Lasers, Mountain View, CA, USA) tuned to a wavelength of 920 nm. A layer of Ringer solution was put between the objective and the cranial window. GCaMP6s fluorescence was captured by a photomultiplier tube (H6780-20, Hamamatsu, Japan) after a barrier filter at 720 nm (FF01-720/SP-25; Semrock), a secondary dichroic at 558 nm and a green bandpass filter centered at 510 nm (bandwidth: 84 nm; FF01-510/84-25; Semrock); AlexaFluor 594 fluorescence was captured at the second channel with a red bandpass filter centered at 630 nm (bandwidth: 60 nm; D630/60; Chroma). Images (256\u00a0\u00d7\u00a0128 pixels) were collected at 9 Hz (2 \u03bcs/pixel; 1\u20132 \u03bcm/pixel). To minimize acoustic noise from scanning, a sinusoidal waveform was used for the X Galvo-scanner (for acoustic spectra see Figure 2\u2014figure supplement 1). Data were acquired in the middle 80% of the sinusoidal waveform to minimize nonlinearity. Multiple regions were imaged sequentially in multiple sessions in awake, head-fixed animals. For depth estimation, a Z-stack was acquired over a 512\u00a0\u00d7\u00a0512 \u00b5m area at 1\u00a0\u00d7\u00a01\u00a0\u00d7\u00a01 \u00b5m voxel size. Depth of each imaged area was estimated by measuring the Z-distance from the pia surface. Imaged neurons lay between 15\u2013155 \u03bcm from the pia surface. The relative position of each region was tracked through the micromanipulator (MP-285, Sutter Instrument) that controlled the microscope objective. The positions of imaged areas were further aligned across animals to a common coordinate using the midline, lateral extreme and anterior-posterior extremes of the IC as anatomical landmarks in bright field images (SZ 61,Olympus) of the cranial window.\n\nFrame timing of the scanner, timing of the sound stimuli, and animal movements were digitized using a Digidata 1440A (Molecular Devices, Sunnyvale, CA, USA) with Clampex v. 10.3 (Molecular Devices, Sunnyvale, CA, USA).\n\n### Juxtacellular recording\n\nIn vivo juxtacellular recordings were made under two-photon guidance (Kitamura et al., 2008). Glass pipettes were pulled from 1.5 mm, thick-walled borosilicate capillaries (Hilgenberg, Malsfeld, Germany) to 1\u20132 \u00b5m tip diameter (P-97; Sutter Instrument, Novato, CA) and filled with internal solution containing (in mM): potassium gluconate 138, KCl 8, Na2-phosphocreatine 10, Mg-ATP 4, Na2-GTP 0.3, EGTA 0.5, HEPES 10, (pH 7.2 with KOH; Merck). The internal solution also contained 40 \u00b5M Alexa Fluor 594 hydrazide. Ringer solution containing 1\u20132% agarose and (in mM): NaCl 135, KCl 5.4, MgCl2 1, CaCl2 1.8, HEPES 5, was applied on the brain surface to reduce movement artefacts. A positive pressure of about 300 mbar was maintained before penetration of the pia surface, and reduced to about 30 mbar upon pia entry; pressure was removed upon cell approach. Electrode resistances were constantly monitored and recording started when resistance increased to\u00a0>25 M\u03a9. Juxtacellular potentials were acquired with a MultiClamp 700A amplifier (Molecular Devices, Sunnyvale, CA, USA) in current-clamp mode. Signals were low-pass filtered at 10 kHz (four-pole Bessel filter) and digitized at 25 kHz (Digidata 1322A). Data were recorded with pCLAMP 9.2 (Molecular Devices). In some cases a large current injection (1\u20136 nA) was used to elicit (positive current) or suppress (negative current) spikes of the cell being recorded (nanostimulation; for\u00a0example Houweling et al., 2010), usually for cells that did not show obvious change in spike rate upon pure-tone stimulations. These data were also used for fitting the fluorescence ground-truth model.\n\n### Sound stimulation\n\nTone stimuli were generated in MATLAB v7.6.0 (The MathWorks, Natick, MA, USA) and played back via a TDT System3 setup (RX6 processor, PA5 attenuator, ED1 electrostatic speaker driver and two EC1 electrostatic speakers; Tucker Davis Technologies, Alachua, FL, USA). Sound stimuli were presented bilaterally in open field. Sound intensities were calibrated using a condenser microphone (ACO pacific Type 7017; ACO Pacific, Inc, Belmont, CA, USA) connected to a calibrated pre-amplifier and placed at the position of the pinnae.\n\nFor measurement of FRAs, 1 s tones (including 2.5 ms cosine-squared rise/decay times) with frequencies between 1 and 64 kHz with three steps per octave were presented at intensities between 30 and 80 dB sound pressure level (dB SPL) in steps of 10 dB. The set of stimuli was presented 6\u201310 times per experiment each in a pseudorandom order at an inter-stimulus interval of 1.5 s. For juxtacellular recordings, due to the limited recording time tones were only presented at one or two intensities (70 dB SPL; or 50 and 70 dB SPL).\n\n### Behavioral measurements\n\nVisual recordings were made using an RS Miniature CCD Camera (RS Components, Corby, UK) at 3 Hz. The camera was aimed at the animal\u2019s head from a roughly right lateral perspective, in order to clearly record the animal\u2019s right eye and whiskers. Facial movement was detected by calculating the root-mean-square intensity change between successive frames in a rectangular region behind the whisker pad (facial ROI in Figure 8B). General movement of the animal was registered using a piezo-electric motion sensor under the front paws of the mouse (pressure sensor in Figure 8B), digitized without further amplification using an AD channel of the Digidata 1440A.\n\n### Immunohistochemistry and cell counting\n\nGelatin-embedded, 40 \u03bcm sections of PFA-fixed mouse brains were stained with the following antibodies: mouse anti-Gad67 (cat. no.: MAB5406; Millipore; 1:1000; RRID: AB_2278725); chicken anti-GFP (cat. no.: GFP-1020; Aves; 1:1000; RRID: AB_10000240); rabbit anti-NeuN (cat. no.: ABN78; Millipore; 1:1000; RRID: AB_10807945); mouse anti-parvalbumin (cat. no.: 235; Swant; 1:7000; RRID: AB_10000343); rabbit anti-calretinin (cat. no.: 7699/4; Swant; 1:5000; RRID: AB_2313763); and AlexaFluor-, Cy3- or Cy5-conjugated secondary antibodies (Invitrogen or Jackson ImmunoResearch). To ensure a more homogeneous GAD67 fluorescence for the post-hoc immunostaining of imaged brains, the brain slices were incubated twice in the primary antibody solution, each for 1 week at 4\u00b0C. The secondary antibody was also applied twice, but overnight at room temperature. Cell counting was performed manually in FIJI using the Cell Counter plug-in on confocal z-stacks. Confocal images were acquired using a Zeiss LSM700 microscope. Overview epifluorescence images were acquired using a Zeiss AxioImagerM2 equipped with a Zeiss Axiocam 503 mono camera.\n\n### General analysis\n\nData analysis was performed with Igor Pro (WaveMetrics, Inc, Lake Oswego, OR, USA) using custom written procedures. Two-photon images and behavior video were aligned to ClampEx data using stimulus timing. Whisking behavior was assessed by calculating the root-mean-square of the frame to frame intensity difference in an area at the whisker pad.\n\nMovement artefacts in two-photon images were corrected based on the built-in ImageRegistration operation in Igor Pro, which is based on a published algorithm (Th\u00e9venaz et al., 1998). Neuronal cell bodies were identified visually based on the average image of the motion-corrected image series, and a higher sampling Z-stack of the area (0.5\u00a0\u00d7\u00a00.5 \u00b5m pixels; 1 \u00b5m z steps) taken directly after each experiment. Regions-of-interests (ROIs) were drawn around cell bodies. Average fluorescence values for individual ROIs were corrected for background fluorescence, which was defined as the change in average fluorescence in a 2 \u00b5m wide contour surrounding the ROI, excluding any pixel directly belonging to another ROI (Figure 2D).\n\n### Analysis of Frequency Response Areas and response classification\n\nIndividual baseline fluorescence values of an ROI were measured for each trial by averaging the fluorescence in the 1 s preceding each stimulus onset. To mitigate carry over effects from earlier stimuli caused by the slow kinetics of GCaMP6s, the distribution of these baseline values was fitted with a Gaussian distribution. Any trial with a more extreme average baseline fluorescence than $\\mu\\pm3\\sigma$ was excluded from further analysis.\n\nTo analyze the FRA of each ROI, we isolated the stimulus-related response by extracting the signal autocorrelation (Geis et al., 2011) by calculating the average Pearson correlation coefficient among fluorescence waveforms to the same stimulus; the fluorescence trace within 1 s of the beginning or end of each stimulus was taken as the stimulus related waveform ($F_{i}t$ for stimulus i), that\u00a0is between -1 s and +2 s of the stimulus onset. For a stimulus that was repeated n times, we calculated the signal autocorrelation ($\u03c1-_{auto}$) by averaging the Pearson\u2019s correlation coefficient ($\u03c1_{i,j}$) for the $\\frac{n(n-1)}{2}$ possible pairs of responses:\n\n$$\n\u03c1\u2212_{auto}=\\frac{2}{n(n\u22121)}\\sumi=1;i<jn\u03c1_{i,j}\n$$\n\nwhere $\u03c1_{i,j}$ was calculated from fluorescence waveforms at trial i and j with the StatsCorrelation function in Igor Pro using the standard formula:\n\n$$\n\u03c1_{i,j}=\\frac{\\sum(F_{i}t-F_{i}-)F_{j}t-F_{j}-}{\\sqrt{\\sum(F_{i}t-F_{i}-)^{2}\\sum(F_{j}t-F_{j}-)^{2}}}\n$$\n\nStatistical significance of signal correlation was done by a bootstrap method: for each ROI, a distribution of average Pearson correlation coefficient was constructed by drawing 30,000 random samples of n fluorescence trace segments within an experimental session, where n is again the number of stimulus repetitions. The p-value of each stimulus was calculated as the fraction of n-member samples having a greater (for frequency autocorrelation area; Geis et al., 2011) signal autocorrelation than that of the stimulus. The ranked p-values were then tested for significance with \u03b1\u00a0=\u00a00.05 and Holm-Bonferroni correction for the number of different stimuli presented (19 frequencies\u00a0\u00d7\u00a06 intensities=114 for FRA measurements). The characteristic frequency (CF) of an ROI was defined as the sound frequency at which the lowest intensity evoked a significant response. If multiple frequencies evoked significant responses at the lowest level, their geometric mean was taken as CF.\n\nThe FRA of a cell is generally continuous in frequency-intensity space. Making use of this, we refined the FRA by quantifying the similarity of responses to \u201cadjacent\u201d stimuli by analogously calculating the signal crosscorrelation ($\u03c1-_{cross}$).\n\n$$\n\u03c1-_{cross}=\\frac{1}{nm}\\sumi=1n\\sumj=1m\u03c1_{i,j}\n$$\n\nwhere n and m are the number of repetitions of the two adjacent stimuli, leading to n\u00d7m possible pairs of responses and $\u03c1_{i,j}$ is again the Pearson correlation coefficient of the two responses. Note that, different from the cell to cell comparison described in Geis et al. (2011), none of the response pairs here were simultaneous. If the maximum $\u03c1-_{cross}$ calculated against up to 8 (i.e. including diagonals) neighbors of a particular stimulus was >0.12, the stimulus was included for classification of its response type. For this purpose, the fluorescence response was calculated for four periods: onset (0-500 ms re onset), steady (500-1000 ms re onset), offset (0-500 ms re offset) and off-late (500-1000 ms re offset). We used the following scheme (in pseudocode) to classify individual responses within an FRA as excitatory, inhibitory or offset:\n\n<table>\n  <thead>\n    <tr>\n      <th>Response class</th>\n      <th>Criteria (non-exclusive)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Excitation (onset and sustained)</td>\n      <td>Fonset \u2013 Fbaseline\u00a0&gt;\u00a02\u00a0\u00d7 s.d. baseline; OR Fsteady \u2013 Fbaseline\u00a0&gt;\u00a02\u00a0\u00d7 s.d. baseline</td>\n    </tr>\n    <tr>\n      <td>Inhibition</td>\n      <td>Fsteady \u2013 Fbaseline &lt; \u20132\u00a0\u00d7\u00a0s.d. baseline; OR Foffset \u2013 Fbaseline &lt; \u20132\u00a0\u00d7\u00a0s.d. baseline</td>\n    </tr>\n    <tr>\n      <td>Offset</td>\n      <td>If (excitation) Foff-late \u2013 Foffset\u00a0&gt;\u00a02 x s.d.\u00a0baseline elseif (inhibition) Foff-late \u2013 Foffset\u00a0&gt;\u00a02 x s.d.\u00a0baseline; AND Foff-late\u00a0&gt;\u00a0Fbaseline else Foffset \u2013 Fsteady\u00a0&gt;\u00a02 x s.d.\u00a0baseline; OR Foff-late\u2013 Fsteady\u00a0&gt;\u00a02 x s.d.\u00a0baseline</td>\n    </tr>\n    <tr>\n      <td>Unclassified</td>\n      <td>If none of the above,\u00a0for\u00a0example due to low signal-to-noise ratio</td>\n    </tr>\n  </tbody>\n</table>\n\nIf at least 25% of all significant responses to frequency-intensity combinations belonged to the same class (e.g. inhibition), we named the FRA after that response (e.g. inhibition FRA). Typically an ROI showed a dominant response class in the majority of its significant responses: 20% of cells showed a dominant class in all significant responses; 54% of cells in\u00a0\u226575% of significant responses; 92% of cells in\u00a0\u226550% of significant responses. If more than one class reached the threshold of 25% of the significant responses, the FRA of an ROI was classified as mixed (e.g. Figure 3I,M).\n\nFinally, to distinguish between onset and sustained responses, we averaged all excitatory responses of an ROI that were not immediately preceded or followed by any significant responses. The kinetics of sound-evoked responses were fitted by a single exponential function with the form $A(1-exp\u2061(-t/\\tau_{onset}))$. If this onset time constant, $\\tau_{onset}$, was >1 s, the ROI response type was designated as sustained, else as onset.\n\n### Orientation of CF gradient\n\nTo find the most prominent direction of CF gradient, we parametrized the location of each neuron as a projected distance $r$ from the anatomical origin along a line with an angle $\\theta$ with the medial-lateral orientation:\n\n$$\nr=xcos\u2061\\theta+ysin\u2061\\theta\n$$\n\nwhere x and y are coordinates (in micrometers) of cells along the medial-lateral and anterior-posterior axes, respectively. We then model CF as a polynomial function of\u00a0$r$:\n\n$$\na_{0}+a_{1}r^{1}+a_{2}r^{2}+a_{3}r^{3}+a_{4}r^{4}+\u2026=\\sumi=0na_{i}r^{i}\n$$\n\nThis whole function was then fitted to the logarithm of the CF values of the recorded neurons using the Levenberg-Marquardt least-squares method, implemented in Igor Pro, that\u00a0is:\n\n$$\narg\u00a0min\\theta,\u00a0a_{0\u22124}\\sumx=1n(log\u2061(CF_{x})\u2212\\sumi=04a_{i}r^{i})^{2}\n$$\n\nA 4th order polynomial was used in Figure 6 because increasing the number of exponents did not increase the explained variance further. The best fit parameters were $\\theta$ = 0.875 rad (\u224850\u00b0), $a_{0}$= 6.95, $a_{1}$= \u22120.0135 dec \u03bcm\u22121, $a_{2}$= 1.95 \u00d7 10\u22125 dec \u03bcm\u22122, $a_{3}$= \u22121.11 \u00d7 10\u22128 dec \u03bcm\u22123, $a_{4}$= 2.17 \u00d7 10\u221212 dec \u03bcm\u22124. Cross-validation (70% fitting/30% test) indicated a slight overfitting. We also considered 2D polynomial fits in the form $\\suma_{ij}x^{i}y^{j}$, where $0\\leqi+j\\leqn$, and found that a 3rd order ($n=3$) fit would be an optimal compromise between bias (underfitting) and variance (overfitting). However, we opted for the single dimension polynomial to avoid potential overinterpretation of the complex contour created by the 2D polynomial.\n\n### Ground-truth and modeling of GCaMP6s fluorescence\n\nTraces from juxtacellular recording were first subjected to a digital DC remove filter which subtracts at each point in time the average potential within\u00a0\u00b11 ms to remove DC drift or offset introduced by nanostimulation (Houweling et al., 2010). Traces were blanked around the start and end of each current injection (2 ms before and 3 ms after) to remove stimulus artefacts. Spikes were then detected by a simple thresholding procedure, with spike times defined as the peak time of the spikes, which presumably corresponds to the maximum rate of rise of the action potential.\n\nFor spike vs fluorescence model, spike times were converted to number of spikes over time ($n(t)$) at the same sampling rate of the imaging (114.4 ms bins). It was then convolved with a simple ramp-decay kernel ($g(t)$) according to the equations:\n\n$$\nF(t)=F_{0}+n(t)\u2217g(t)\n$$\n\n\n\n$$\ng(t)={F_{1AP}(\\frac{t}{t_{rise}}),\u00a0t<t_{rise}F_{1AP}(1\u2212exp\u2061(\\frac{t\u2212t_{rise}}{\\tau_{decay}})),\u00a0t\\geqt_{rise}\n$$\n\nwhere F1AP is the amplitude of the fluorescence change per action potential, trise is the rise time of the fluorescence and \u03c4decay is the decay time constant for the fluorescence. An offset (F0) is added, which represents the minimal fluorescence at zero spike rate.\n\nThis 4-parameter model was fitted to the fluorescence trace using a genetic fitting routine in Igor Pro (Gencurvefit XOP, kindly provided by Andrew Nelson, Australian Nuclear Science and Technology Organization).\n",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "a586a57b-72c0-4c59-b270-d45bca0dd536",
+      "submission_id": "45f6207c-a86a-4a5a-843e-24de946a7eed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Brice Bathellier, CNRS France\n\nReviewers:\n- Brice Bathellier, CNRS France\n- Johannes C Dahmen, University of Oxford United Kingdom\n- Daniel Llano\n\n## Review text\n\nDOI: [10.7554/eLife.49091.045](https://doi.org/10.7554/eLife.49091.045)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Tonotopic and multisensory organization of the mouse dorsal inferior colliculus revealed by two-photon imaging\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Brice Bathellier as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Andrew King as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Johannes C Dahmen (Reviewer #2); Daniel Llano (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript is an interesting and detailed investigation into the functional organization of the dorsal inferior colliculus of the mouse based on results from challenging two-photon calcium imaging experiments in unanesthetised animals. Several interesting results are reported, ranging from the lack of spatial organization of simple temporal envelope features, the prominence of inhibitory responses, the tonotopic organization in the dorsal colliculus and the presence of non-auditory activity related to facial movements. Information about the cellular identity of recorded neurons, as well as juxtacellularly recorded electrical signals and histological data, usefully complement this technically solid study.\n\nWhile the reviewers are convinced that this paper will be a very valuable resource for researchers with an interest in the auditory system, a number of important concerns regarding the reproducibility of the analysis methods, the conclusions on the tonotopic organization of dorsal IC, the description of activity related to facial movements, and the presentation of some of the key results must be addressed before a final decision can be made. The title and Abstract should also be edited to better account for the different results of the study. The title could be broader, removing any reference to tonotopy and multisensory (which is debatable).\n\nEssential revisions:\n\n1) The authors should make sure to provide reproducible analyses based on a well-described statistical assessment. This is missing in several places:\n\n- It is not clear in the manuscript what criteria are used to define each functional cell type (onset, offset, sustained) and how these criteria are measured and statistically assessed. This is particularly important as several claims of the paper are dependent on these classes. The authors should make sure that this is done in a reproducible manner and provide enough information about the algorithm used for cell classification.\n\n- Figure 4D; \"There were more sustained responses in cells with a larger size.\" This is unclear from the figure. The graph is complex and there is no statistical assessment. Why not just compute the mean size for each class and test for differences?\n\n- Regarding the idea of cell classes, the data in Figure 4 are intriguing, but the figure is still confusing. The Legend shown in Figure 7 should actually appear in Figure 4. Beyond that, it would be helpful to have diagrams, similar to the 4 idealized waveforms shown in Figure 4, to describe the rest of the response types.\n\n2) The analysis of the two horizontal tonotopic gradients in the dorsal part of the IC is interesting but incomplete. The authors state that this analysis is biased by more dense sampling at the center of the IC with deeper recordings here without resolving this bias. We know that the central nucleus of the IC is organised such that neurons with a preference for low frequencies are located at its dorsal tip. In the present manuscript the authors find that in a region that approaches the medial edge of the IC's surface low frequency neurons dominate. This overrepresentation of low frequency neurons seems to become particularly strong as soon as one images just 100um below the brain surface (Figure 6B), where almost no high frequency neurons can be encountered anymore. The most parsimonious explanation for this clustering of low frequency neurons just below the surface of the IC is that these neurons form the most dorsal tip of the central nucleus of the IC as hypothesized by Barnstedt et al., 2015 (who actually also see the continuation of the vertical gradient in the deepest recordings). The authors acknowledge this explanation (e.g. subsection \u201cSpatial distribution of frequency tuning\u201d, third paragraph) but nevertheless choose to regard the low frequency cluster as belonging to the shell of the IC (dorsal/lateral cortex) and go on to interpret the low frequency region as the site of a frequency reversal in a high-low-high frequency map. The authors are correct in saying that a gradient reversal along the dorsal surface of the IC was also observed in one mouse imaged by Barnstedt et al. However, that reversal was actually opposite in sign, i.e. low-high-low rather than the high-low-high reversal reported here.\n\nMore analysis is required to substantiate (or not) the discrepancy with Barnstedt's conclusions. As a minimum, the tonotopic gradient should be described in the first 50\u00b5m alone (without taking recordings deeper than 50\u00b5m into account). But it would be better to show the progressive changes in BF organization as one progresses more deeply into the IC. Does the tonotopy seen at the surface continue to project downward, as it does in the auditory cortex?\n\nAnother important analysis is to test if there is any evidence of frequency gradients along the dorsal surface when the low frequency clusters are removed from the analysis (i.e. remove all neurons with a CF of, for example, 8kHz and below). Also, it might be informative to plot some frequency maps from individual mice rather than only aggregated ones.\n\nThe authors also state that they have oversampled the center of IC at larger depths. This is important information about the limitations of their dataset. It should, however, not be used as an argument in favor of their hypothesis, as it is done currently.\n\nThe dimension of depth is glossed over throughout the manuscript. It should also be addressed more directly for temporal features and non-auditory responses.\n\n3) The analysis of calcium kinetics is not convincing, in particular, the rise time values seem much too large and spread out. This is likely because the equation used is underdetermined (i.e. too many free parameters \u2013 4 instead of 3). The rising phase equation contains a parameter A for amplitude and trise which are totally redundant (there is an infinity of combination A and trise that lead to the same curve).\n\nIt is necessary to redo this analysis with a 3 parameter kernel, such as F1AP*f(t)/fmax with f(t)=(exp(-t/tdecay)-exp(-t/trise)) and fmax=max(f(t)).\n\nIt is also necessary to see how well the model performs by comparing real vs. model traces. This is described in the subsection \u201cElectrophysiological correlates of response classes\u201d, but the fits are not shown.\n\n4) Contrary to what the title suggests, the manuscript tells us little about the relationship between neural activity in the dorsal IC and multisensory input. The authors show that a small proportion of neurons show activity patterns that vary with facial movements. That does not mean that these activity patterns are the consequence of stimulation of somatosensory receptors that results from these movements. However, that seems to be how the authors interpret this result. Provided the ROIs were on the whisker pad (which isn't actually clear from the figures \u2013 the ROI shown in Figure 8B appears to have been placed behind the whisker pad rather than on it), the data indicate that the activity of some IC neurons varies with self-generated movements of the whiskers. We do not know, however, whether the changes in neural activity reflect somatosensory stimulation arising from the whisker movement (such as when the whiskers touch a part of the experimental apparatus during those movements) or are related to, for instance, the preparation of the movement, its execution or the product of some change in internal state that accompanies the movement. Therefore, claims that these data indicate sensitivity of IC neurons to somatosensory (or even multisensory) input should be toned down. Unless direct stimulation data are provided, the term 'multisensory' should be removed from the title and the description of the results focused on non-auditory inputs, related to facial movements.\n\n5) It is not clear what the analysis of PV/CR/GCaMP cells contributes to this manuscript. It should be more clearly linked to the main themes of the paper as the other conclusions are reframed ('multisensory', claims on tonotopy). Also the observation that there is strong inhibition should be better emphasized as it is one of the important observations of the paper.\n\n6) Regarding the \"modules\" seen in Figure 9A, these look very different from the more traditional modules in Figure 9\u2014figure supplement 1, which are larger and stain more strongly for GAD. It is an important distinction, because the presence of modules in the dorsal cortex would be new, as far as we are aware, but these modules look very different than those of Chernock et al. This distinction should be made in the text.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Tonotopic and non-auditory organization of the mouse dorsal inferior colliculus revealed by two-photon imaging\" for further consideration at eLife. Your revised article has been favorably evaluated by Andrew King as the Senior Editor, and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) Figure 6\u2014figure supplement 9, very convincingly addresses the question whether the tonotopy observed in this study is depth-dependent within the range of depths that were extensively sampled. Looking at it, it becomes evident that depth is not an issue. This figure should be presented as a new panel of the main Figure 6 not as a figure supplement.\n\nAlso, the caption of this figure should be changed. The current title does not describe it appropriately. Something like \"tonotopy across different recording depths\" would be better suited.\n\nIt is also necessary to mitigate the statement about horizontal localisation biases (more central) for high depth. It seems that just very few recordings were done below 100\u00b5m.\n\n2) It seems that the acronym CF is nowhere defined. Please do so.\n\nIt is also important to describe in the method (Analysis) how the CF was computed, particularly as previous calcium imaging studies have focused on the best frequency (i.e., the sound frequency at which the strongest response was elicited).\n\n3) Please check again for typos and duplications in the revised text. Here a few examples:\n\n\"For somatosensory inputs the dominant effect of somatosensory inputs appears to be inhibitory and only a minority of cells have been shown to respond to unimodal tactile stimuli\" > Remove one 'somatosensory inputs'\n\n\"appreciated in neurons in individual animals\" > remove 'in neurons'\n\n\"responses to \"adjacent\" stimuli by analogously calculated\" > calculating.\n",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1ba91693-d480-4238-b1c3-c87648e9822d",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C1",
+      "claim": "The dorsal (DCIC) and lateral cortices (LCIC) of the inferior colliculus are major targets of the auditory and non-auditory cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The dorsal (DCIC) and lateral cortices (LCIC) of the inferior colliculus are major targets of the auditory and non-auditory cortical areas, suggesting a role in complex multimodal information processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that references established anatomical knowledge about IC connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "b6aeff27-0628-4bed-b77c-ace8f7ea67c2",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C2",
+      "claim": "Both GABAergic and non-GABAergic neurons in the mouse dorsal IC showed spatial microheterogeneity in their temporal responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GABAergic and non-GABAergic neurons showed spatial microheterogeneity in their temporal responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript showing different response classes across spatial locations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "b0104d91-de65-4df8-8f8d-1844c1d145e8",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C3",
+      "claim": "A robust, double rostromedial-caudolateral gradient of frequency tuning was conserved between GABAergic and non-GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a robust, double rostromedial-caudolateral gradient of frequency tuning was conserved between the two groups, and even among the subclasses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the tonotopic mapping data shown in Figure 6 and related analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "05cad976-ee19-4b0a-a46a-a7eac3402704",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C4",
+      "claim": "A subset of neurons in the dorsal IC is sensitive to spontaneous movements.",
+      "claim_type": "EXPLICIT",
+      "source": "This, together with the existence of a subset of neurons sensitive to spontaneous movements, provides functional evidence for redefining the border between DCIC and LCIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the movement-related activity data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "aa4004ff-c55e-47ef-9348-71c3d62417e4",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C5",
+      "claim": "The inferior colliculus is usually divided into three main regions: the central nucleus (CNIC), the lateral cortex (LCIC), and the dorsal cortex (DCIC).",
+      "claim_type": "EXPLICIT",
+      "source": "The IC is usually divided into three main regions: the central nucleus (CNIC), the lateral cortex (LCIC), and the dorsal cortex (DCIC; Oliver, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established anatomical knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "293af832-f203-422f-8c5d-86959c5e52fa",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C6",
+      "claim": "The DCIC and LCIC are part of the non-lemniscal pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter two, together also known as the 'shell region' of the IC, are part of the non-lemniscal pathway, and are heavily innervated by feedback projections from the cerebral cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about IC organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "5162209c-7d4b-4fa8-83bf-f615244337c4",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C7",
+      "claim": "The DCIC and LCIC are heavily innervated by feedback projections from the cerebral cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter two, together also known as the 'shell region' of the IC, are part of the non-lemniscal pathway, and are heavily innervated by feedback projections from the cerebral cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about IC connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "6cdd5ce9-197b-4de5-80af-bb817bad13c2",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C8",
+      "claim": "The LCIC is characterized by distinct neurochemical modules visualized with acetylcholinesterase or NADPH diaphorase staining.",
+      "claim_type": "EXPLICIT",
+      "source": "The LCIC is characterized by distinct neurochemical modules, which can be visualized with various histochemical methods such as acetylcholinesterase or NADPH diaphorase staining, as well as dense labeling of GABAergic terminals and sparse calretinin immunoreactivity (Lesicko et al., 2016; Dillingham et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "17a658e3-13d4-4fea-8336-518b83e84813",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C9",
+      "claim": "The LCIC modules show dense labeling of GABAergic terminals and sparse calretinin immunoreactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The LCIC is characterized by distinct neurochemical modules, which can be visualized with various histochemical methods such as acetylcholinesterase or NADPH diaphorase staining, as well as dense labeling of GABAergic terminals and sparse calretinin immunoreactivity (Lesicko et al., 2016; Dillingham et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "2b3eced4-d2d1-4cc6-bbf1-4a4f625c2bac",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C10",
+      "claim": "LCIC modules show a distinct complement of Eph-ephrin guidance molecules during development.",
+      "claim_type": "EXPLICIT",
+      "source": "These modules show a distinct complement of Eph-ephrin guidance molecules during development (Wallace et al., 2016; Gay et al., 2018) and receive input from non-auditory areas (Lesicko et al., 2016; Patel et al., 2017), hinting at their integral role in multisensory integration in the IC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous developmental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "7e52e2b9-ba85-4241-acbb-40bf193f9bf8",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C11",
+      "claim": "LCIC modules receive input from non-auditory areas.",
+      "claim_type": "EXPLICIT",
+      "source": "These modules show a distinct complement of Eph-ephrin guidance molecules during development (Wallace et al., 2016; Gay et al., 2018) and receive input from non-auditory areas (Lesicko et al., 2016; Patel et al., 2017), hinting at their integral role in multisensory integration in the IC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "bcb36af4-c062-4077-b371-4fc2353b2a0e",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C12",
+      "claim": "The DCIC and LCIC are at the surface of the mouse brain, making the dorsal IC accessible for in vivo imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The DCIC and LCIC are at the surface of the mouse brain, making the dorsal IC an accessible structure for in vivo imaging (Geis and Borst, 2013; Barnstedt et al., 2015; Babola et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous imaging studies and anatomical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "e8180304-2f96-41d7-9210-6622b6fe982a",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C13",
+      "claim": "Around one-fourth of neurons in the IC are GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Around one-fourth of neurons in the IC are GABAergic (Schofield and Beebe, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "0e889abf-a27d-4f1f-bd1f-21396986ae44",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C14",
+      "claim": "Large GABAergic neurons in the IC form a distinct subclass.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular the large GABAergic neurons seem to form a distinct subclass (Ito et al., 2009; Ito and Oliver, 2012; Geis and Borst, 2013), but based on histology, at least four different subclasses of GABAergic neurons can be discriminated, which all contribute to the ascending projections to the medial geniculate body of the thalamus (Beebe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "5d1756e1-8aea-47e8-8bba-b2e5a538ecaf",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C15",
+      "claim": "At least four different subclasses of GABAergic neurons can be discriminated in the IC based on histology.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular the large GABAergic neurons seem to form a distinct subclass (Ito et al., 2009; Ito and Oliver, 2012; Geis and Borst, 2013), but based on histology, at least four different subclasses of GABAergic neurons can be discriminated, which all contribute to the ascending projections to the medial geniculate body of the thalamus (Beebe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "4db03185-2eb7-47aa-87c0-5af50ccdf5e0",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C16",
+      "claim": "All four subclasses of GABAergic neurons in the IC contribute to ascending projections to the medial geniculate body of the thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular the large GABAergic neurons seem to form a distinct subclass (Ito et al., 2009; Ito and Oliver, 2012; Geis and Borst, 2013), but based on histology, at least four different subclasses of GABAergic neurons can be discriminated, which all contribute to the ascending projections to the medial geniculate body of the thalamus (Beebe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "41e46722-8101-4317-9056-f5d9ddc773c2",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C17",
+      "claim": "The large majority (95%) of GCaMP-positive neurons in the GP4.3 line were not positive for GAD67.",
+      "claim_type": "EXPLICIT",
+      "source": "The large majority (4651/4898; 95%) of GCaMP-positive neurons in the GP4.3 line were not positive for GAD67 (Figure 1A\u2013D), showing that the Thy1-promoter preferentially expressed GCaMP6s in non-GABAergic cells in the IC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "f922548b-a41e-4233-aaad-72770faf4c2b",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C18",
+      "claim": "The Thy1-promoter in GP4.3 mice preferentially expressed GCaMP6s in non-GABAergic cells in the IC.",
+      "claim_type": "EXPLICIT",
+      "source": "The large majority (4651/4898; 95%) of GCaMP-positive neurons in the GP4.3 line were not positive for GAD67 (Figure 1A\u2013D), showing that the Thy1-promoter preferentially expressed GCaMP6s in non-GABAergic cells in the IC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the immunohistochemistry data showing that 95% of GCaMP+ cells were GAD67-negative.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "496a3a00-ca6a-4572-800c-e98b40bc93e5",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C19",
+      "claim": "Not all non-GABAergic cells in the IC were GCaMP-positive in GP4.3 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all non-GABAergic cells were GCaMP-positive, as shown by the NeuN-positive, GCaMP-negative cell bodies in Figure 1C (arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "f9fa37ca-5420-4111-8970-a0797095287a",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C20",
+      "claim": "GCaMP6s-positive neurons in GP4.3 mice are enriched at the border of neurochemical modules characterized by dense GAD67 terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we observed that GCaMP6s-positive neurons are enriched at the border of neurochemical modules characterized by dense GAD67 terminals (Figure 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "8a0da139-25c3-4ffe-8424-e3b887dfec32",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C21",
+      "claim": "More than 93% (1702/1828) of GCaMP-positive neurons in Gad2;Ai96 mice expressed GAD67.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we detected GAD67 immunoreactivity in >93% (1702/1828) of GCaMP-positive neurons in the Gad2;Ai96 mice (Figure 1D,H\u2013O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "ae4a7855-996a-49cb-8a93-7265e6e5c5fb",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C22",
+      "claim": "Not all GAD67-positive cells in Gad2;Ai96 mice were labeled by GCaMP6s.",
+      "claim_type": "EXPLICIT",
+      "source": "Not all GAD67-positive cells in this mouse line were labeled by GCaMP6s (e.g. arrowheads in Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "25ec24c1-749f-4476-83d3-9b37e71c79e4",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C23",
+      "claim": "A large majority (94%) of GCaMP+ cells in GP4.3 did not show strong immunoreactivity for parvalbumin or calretinin.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a large majority (94%) of GCaMP+ cells in GP4.3 did not show strong immunoreactivity for either marker (CR++: 2.2%; PV++: 2.9%; PV++CR++: 0.9%), whereas in the Gad2;Ai96 line a larger fraction of GCaMP+ cells were positive for CR or PV (CR++: 17%; PV++: 22%; PV++CR++: 7%; Figure 1\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "75c1c767-3ecb-4b0e-abcd-f8c01e7cd565",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C24",
+      "claim": "In Gad2;Ai96 mice, a larger fraction of GCaMP+ cells were positive for calretinin or parvalbumin (CR++: 17%; PV++: 22%; PV++CR++: 7%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a large majority (94%) of GCaMP+ cells in GP4.3 did not show strong immunoreactivity for either marker (CR++: 2.2%; PV++: 2.9%; PV++CR++: 0.9%), whereas in the Gad2;Ai96 line a larger fraction of GCaMP+ cells were positive for CR or PV (CR++: 17%; PV++: 22%; PV++CR++: 7%; Figure 1\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "88df675f-dab0-43b7-8c32-a58761bd6f29",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C25",
+      "claim": "GCaMP was expressed in 38% of CR++ cells and 70% of PV++ cells in the IC of Gad2;Ai96 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, GCaMP was expressed in 38% of CR++ cells and 70% of PV++ cells in the IC of Gad2;Ai96 mice, while a lower fraction of CR++ (9.1%) and PV++ (13.4%) cells were positive for GCaMP in GP4.3 mice (Figure 1\u2014figure supplement 1H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "ac484778-9821-4496-9e6b-20d4deb1d4c7",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C26",
+      "claim": "A lower fraction of CR++ (9.1%) and PV++ (13.4%) cells were positive for GCaMP in GP4.3 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, GCaMP was expressed in 38% of CR++ cells and 70% of PV++ cells in the IC of Gad2;Ai96 mice, while a lower fraction of CR++ (9.1%) and PV++ (13.4%) cells were positive for GCaMP in GP4.3 mice (Figure 1\u2014figure supplement 1H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "00660675-f426-4c1b-856e-fe218279e7c1",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C27",
+      "claim": "Both increases and decreases in FGCaMP were observed during the presentation of sound stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we observed both increases, which were either transient or sustained, and decreases in FGCaMP during the presentation of stimuli, and some cells showed a sharp increase in FGCaMP directly after the cessation of the sound (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the calcium imaging data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "2a77d0c6-87e5-4aff-9e76-9a58c60ccb43",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C28",
+      "claim": "The different fluorescence responses were classified as excitation, inhibitory and offset.",
+      "claim_type": "EXPLICIT",
+      "source": "The different fluorescence responses were classified as excitation, inhibitory and offset, respectively (see Materials and methods, Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the classification scheme described in the methods and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "a1a5fbdc-b3e8-4e6d-9df5-4dbc0dd87348",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C29",
+      "claim": "Excitatory responses were further divided into onset and sustained classes based on the kinetics of the fluorescence change.",
+      "claim_type": "EXPLICIT",
+      "source": "The excitatory responses were further divided into onset and sustained classes based on the kinetics of the fluorescence change (Figure 3A,B, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the classification scheme and kinetic analysis shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "9d8a1833-8f29-40eb-8790-14104bba879d",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C30",
+      "claim": "The decrease in fluorescence upon sound stimulation was likely due to sound-evoked inhibition of spontaneous firing in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in fluorescence upon sound stimulation was likely due to sound-evoked inhibition of spontaneous firing in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observed fluorescence decreases and knowledge of calcium indicator properties.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "60ff9b61-3350-44a2-ba40-59b321800309",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C31",
+      "claim": "Inhibitory and offset responses were not reported in earlier imaging experiments performed in anesthetized mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory and offset responses were not reported in earlier imaging experiments performed in anesthetized mice (Ito et al., 2014; Barnstedt et al., 2015); their use of shorter stimuli did not allow a distinction between onset and sustained responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and comparison with the current study's methods.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "5b10501a-7594-4b58-add0-86090de8551b",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C32",
+      "claim": "In GP4.3 mice, 64% of the cells (696 out of 1090) showed detectable fluorescence changes in response to 1 s pure tone stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In GP4.3 mice, 64% of the cells (696 out of 1090) cells showed detectable fluorescence changes in response to 1 s pure tone stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "b50e3c18-b259-4d41-bcc9-d2b2f8a0d162",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C33",
+      "claim": "Among responsive cells in GP4.3 mice, 30% (210 cells) showed excitatory FRAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the responsive cells, 30% (210 cells) showed excitatory FRAs (e.g. Figure 3\u2014figure supplement 2), with fluorescence increasing during sound presentation; while 13% (89 cells) showed offset FRAs, with fluorescence increasing after sound presentation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative summary of the imaging data shown in Figure 3 and Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "e70f135f-4c4e-48e2-91bf-af3ecfb5030b",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C34",
+      "claim": "Among responsive cells in GP4.3 mice, 13% (89 cells) showed offset FRAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the responsive cells, 30% (210 cells) showed excitatory FRAs (e.g. Figure 3\u2014figure supplement 2), with fluorescence increasing during sound presentation; while 13% (89 cells) showed offset FRAs, with fluorescence increasing after sound presentation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative summary of the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "df6b1444-96b8-4967-997e-a61f52db0eff",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C35",
+      "claim": "Among responsive cells in GP4.3 mice, 30% (207 cells) showed inhibitory FRAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Another 30% (207 cells) showed inhibitory FRAs, with fluorescence decreasing during sound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "d33aafec-4f03-4b7b-8277-80be5f0eff0d",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C36",
+      "claim": "The proportion of cells showing sound-evoked inhibition was clearly higher than the 2\u201323% reported for anesthetized C57BL/6 mice in Willott et al. (1988a).",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of cells showing sound-evoked inhibition was clearly higher than the 2\u201323% reported for anesthetized C57BL/6 mice in Willott et al. (1988a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with a previous study supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "6cc4ab35-babe-4c8c-8bb8-d6ea6d575a5e",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C37",
+      "claim": "In Gad2;Ai96 mice, 73% (247 out of 342 cells) of GCaMP6s-positive IC neurons showed consistent fluorescence responses to 1 s pure tone stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In Gad2;Ai96 mice 73% (247 out of 342 cells) of GCaMP6s-positive IC neurons showed consistent fluorescence responses to 1 s pure tone stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "d48414ca-bc7a-4745-877f-b1c9c99dc7c0",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C38",
+      "claim": "Among responsive cells in Gad2;Ai96 mice, 46% (115 cells) showed excitatory FRAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the responsive cells, 46% (115 cells) showed excitatory FRAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "d6249ab2-4712-450e-a350-eea8fc617e8d",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C39",
+      "claim": "Among responsive cells in Gad2;Ai96 mice, 4% (11 cells) showed offset FRAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Four percent (11 cells) showed offset FRAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "842c8e73-eb66-4bf5-8882-2454a1828cce",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C40",
+      "claim": "Among responsive cells in Gad2;Ai96 mice, 26% (65 cells) showed inhibitory FRAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Another 26% (65 cells) showed inhibitory FRAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "42d67318-a206-4b1d-b99e-8ca5ad7caba9",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C41",
+      "claim": "GABAergic cells had a larger soma size than non-GABAergic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAergic cells had a larger soma size, as reported previously (cat: Oliver et al., 1994; rat: Merch\u00e1n et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the current data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "e6ba4d81-2d2a-46d8-8e88-1272512c4a24",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C42",
+      "claim": "The estimated diameters for Gad2;Ai96 and GP4.3 cells were 21.9 \u00b1 4.9 \u00b5m and 15.9 \u00b1 2.6 \u00b5m, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated diameters for Gad2;Ai96 and GP4.3 cells, defined as 4/\u03c0 times the square root of the ROI area in imaging experiments, were 21.9 \u00b1 4.9 \u00b5m (mean \u00b1s.d.) and 15.9 \u00b1 2.6 \u00b5m, respectively (Figure 4C, p<0.001 Wilcoxon Rank Test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative summary of the imaging data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "e053b6ef-6b9a-43ca-88c4-ad4e7aaa62e4",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C43",
+      "claim": "Within each genotype, soma size did not differ significantly among cells with different FRA classes in GP4.3 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each genotype, soma size did not differ significantly among cells with different FRA classes. For GP4.3: onset cells 12.3 \u00b1 2.6 \u00b5m, sustained 12.5 \u00b1 2.0 \u00b5m, inhibited 13.0 \u00b1 1.8 \u00b5m, offset 12.3 \u00b1 2.0 \u00b5m (p=0.112, Kruskal-Wallis Rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the imaging data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "f26bc9d4-6c9a-4f02-b526-885c29bcafaa",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C44",
+      "claim": "Onset fluorescence responses corresponded to cells whose firing rate quickly adapted during one-second long stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "For fluorescence responses that we classified as onset, electrophysiological recordings showed that this class can represent a cell whose firing rate quickly adapted during our one-second long stimuli (example in Figure 5A\u2013C,D left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simultaneous juxtacellular recording and imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "7e12e06f-67ce-447e-be0f-632fe299677d",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C45",
+      "claim": "Sustained fluorescence responses corresponded to sustained firing.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed sustained fluorescence responses that corresponded to sustained firing (Figure 5D middle) with different amount of adaptation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simultaneous juxtacellular recording and imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "693fd0a0-e490-4789-ac65-7ba503776729",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C46",
+      "claim": "Inhibitory responses corresponded to cells that reduced their spontaneous firing upon sound stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibitory responses corresponded to cells that reduced their spontaneous firing upon sound stimulation (Figure 5D right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simultaneous juxtacellular recording and imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "4a889722-1e93-48aa-80e0-1abdf50c9415",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C47",
+      "claim": "An action potential led to a median increase of 0.35 (GP4.3) or 0.14 (Gad2;Ai96) times the minimal fluorescence (F0).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that on average, an action potential led to a median increase of 0.35 (GP4.3; n = 5 cells) or 0.14 (Gad2;Ai96; n = 12 cells) times the minimal fluorescence (F0), with a median zero-to-peak rise time of 480 ms (GP4.3) or 560 ms (Gad2;Ai96) and a median decay time constant of 1.04 s (GP4.3) or 1.36 s (Gad2;Ai96).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the model fitting to simultaneous recording and imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "ea0dd8a1-6da5-45fc-9ed5-0fe7c82a2065",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C48",
+      "claim": "The model could explain between 50% and 95% of the variance in the fluorescence (median: 79%).",
+      "claim_type": "EXPLICIT",
+      "source": "The model could explain between 50% and 95% of the variance in the fluorescence (median: 79%; average \u00b1s.d.: 77 \u00b1 13%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the model fitting results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "a198fe18-7c50-48eb-8b9d-a4a708cbea1e",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C49",
+      "claim": "A tonotopic gradient was observed that ran along a gradient from caudolateral to rostromedial.",
+      "claim_type": "EXPLICIT",
+      "source": "Following pooling of the data from several experiments, we observed a tonotopic gradient that ran along a gradient from caudolateral to rostromedial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the spatial analysis of characteristic frequencies shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "aee7d0f2-b115-42ee-b2cd-73e03a88fb58",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C50",
+      "claim": "The tonotopic gradient reversed at the site where the CFs were the lowest.",
+      "claim_type": "EXPLICIT",
+      "source": "The gradient reversed at the site where the CFs were the lowest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the spatial analysis of characteristic frequencies shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "a8d75d9b-4cf6-4c36-9ce1-31f0677bb254",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C51",
+      "claim": "The tonotopic reversal is in line with the banding patterns observed with epifluorescent calcium imaging in unanesthetized mice before and at hearing onset.",
+      "claim_type": "EXPLICIT",
+      "source": "This reversal is in line with the banding patterns observed with epifluorescent calcium imaging in unanesthetized mice before and at hearing onset; the pre-hearing spontaneous neural activities originate from the cochlea, thus regions activated synchronously likely receive input from the same tonotopic area (Babola et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with a previous study cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "9cf4493c-b0a9-4d31-840e-f62605c6bdfe",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C52",
+      "claim": "The four response types showed a similar tonotopic organization.",
+      "claim_type": "EXPLICIT",
+      "source": "The four response types showed a similar tonotopic organization, but considerable microheterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the spatial analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "d1461e14-e969-49ec-8b7a-889d4fdf07af",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C53",
+      "claim": "The microheterogeneity in tonotopic organization was similar for GABAergic and glutamatergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The microheterogeneity was similar for GABAergic and glutamatergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the spatial analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "c073cd01-da34-4508-965f-ea51b4b57bee",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C54",
+      "claim": "165 cells (out of 1359) showed a positive correlation (r > 0.25) with facial movements during the spontaneous recording period.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the onset of many of these spontaneous transients coincided with movement events of the animal (paw and facial movements in Figure 8A). By correlating movement and fluorescence, we detected 165 (out of 1359) cells that showed a positive correlation (r > 0.25) with facial movements during the spontaneous recording period.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative summary of the movement correlation analysis shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "69dc092d-0525-47c5-b1d7-89d5e5a02098",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C55",
+      "claim": "41 cells showed spontaneous calcium transients that correlated with animal movement and could not be explained by their FRA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the end, 41 cells showed spontaneous calcium transients that correlated with animal movement and that could not be explained by their FRA, which was either inhibited-type or showed no clear pure tone evoked responses (example FRAs in Figure 8F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative summary of the movement-related cells after applying exclusion criteria, shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "62f93f42-af50-47b2-8149-c062e6d10715",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C56",
+      "claim": "Movement-sensitive cells seemed to be enriched at the caudolateral side of the dorsal IC.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells seemed to be enriched at the caudolateral side of the dorsal IC (Figure 8C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the spatial distribution of movement-related cells shown in Figure 8C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "993814c0-c9db-4d12-a053-534724c780d8",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C57",
+      "claim": "Four of the 41 movement-related cells were found in the Gad2;Ai96 line, making them 1% of GABAergic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the 41 cells were found in the Gad2;Ai96 line, in agreement with a recent report that inputs from motor or somatosensory cortex can directly target GABAergic cells (Olthof et al., 2019), and the remainder in the GP4.3 line, making them 1% of GABAergic and 4% of investigated glutamatergic cells, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the movement-related cells by genotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "421c36be-bc35-46de-a3b9-cc03c368f082",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C58",
+      "claim": "The remainder of movement-related cells were in the GP4.3 line, making them 4% of investigated glutamatergic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the 41 cells were found in the Gad2;Ai96 line, in agreement with a recent report that inputs from motor or somatosensory cortex can directly target GABAergic cells (Olthof et al., 2019), and the remainder in the GP4.3 line, making them 1% of GABAergic and 4% of investigated glutamatergic cells, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the movement-related cells by genotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "3c551659-7a05-4bfc-9907-d567c98d61a6",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C59",
+      "claim": "The minimum frequency line aligns with the demarcation from the Allen Reference Atlas.",
+      "claim_type": "EXPLICIT",
+      "source": "The minimum frequency line aligns with the demarcation from the Allen Reference Atlas, while that by Paxinos and Franklin lays in the orthogonal direction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the comparison shown in Figure 9A and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "09eebdfd-e99c-4f2e-afaa-d1b867049a3b",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C60",
+      "claim": "Modules with dense GAD67 staining were observed both medially and laterally from each of the three demarcations.",
+      "claim_type": "EXPLICIT",
+      "source": "Modules with dense GAD67 staining, considered to be a hallmark for the LCIC, were observed both medially and laterally from each of the three demarcations (arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the histological data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "e2c0d1cc-c12a-45e4-bb99-660c3f59929e",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C61",
+      "claim": "Two motion-sensitive neurons retrieved in histology both possessed dendrites that extended into a GAD67-dense module.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 9D2 and F show two motion-sensitive neurons retrieved in histology (cells 3 and 4, marked by arrows), both of which resided in close proximity to a GAD67-dense module. We observed that although the somata of both cells seemed to reside in the extramodular regions, both possessed dendrites that extended into a GAD67-dense module (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the histological data shown in Figures 9 and 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "9131fa79-d85a-41ed-b200-9fbc50372ee3",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C62",
+      "claim": "The laterocaudal area with high frequencies is the dorsal edge of the LCIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the laterocaudal area with high frequencies is the dorsal edge of the LCIC, whereas the mediorostral part of the dorsal IC belongs to the DCIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the tonotopic organization and movement-related activity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "84cb48c2-ed05-49c6-823a-66465b516978",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C63",
+      "claim": "The mediorostral part of the dorsal IC belongs to the DCIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the laterocaudal area with high frequencies is the dorsal edge of the LCIC, whereas the mediorostral part of the dorsal IC belongs to the DCIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the tonotopic organization and movement-related activity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "22f04469-7489-4d74-8020-3846c3cc0289",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C64",
+      "claim": "The tonotopic reversal provides a functional demarcation between the dorsal and lateral cortices of the IC.",
+      "claim_type": "EXPLICIT",
+      "source": "The tonotopic reversal would thus provide a functional demarcation between the dorsal and lateral cortices of the IC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the tonotopic organization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "0d917a40-a0dc-4983-a731-32471689a4b0",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C65",
+      "claim": "The central strip with neurons tuned to low frequencies in between the LCIC and the DCIC may be the most dorsal extension of the dorsolateral low frequency area of the CNIC.",
+      "claim_type": "EXPLICIT",
+      "source": "The central strip with neurons tuned to low frequencies in between the LCIC and the DCIC may be the most dorsal extension of the dorsolateral low frequency area of the CNIC (Stiebler and Ehret, 1985; Barnstedt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the tonotopic organization data and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "123cca33-e896-4d66-8123-099e4327ea29",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "claim_id": "C66",
+      "claim": "The three main areas of the IC, LCIC, CNIC, DCIC, are readily accessible at the dorsal IC.",
+      "claim_type": "EXPLICIT",
+      "source": "From our data it thus appears that the three main areas of the IC, LCIC, CNIC, DCIC, are readily accessible at the dorsal IC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the functional organization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e0fc3d5c-c19e-4e34-9053-cd07656eb65d",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The GP4.3 transgenic line preferentially expresses GCaMP6s in non-GABAergic neurons (95% of GCaMP+ cells were GAD67-negative), while the Gad2;Ai96 line expresses GCaMP6s predominantly in GABAergic neurons (>93% of GCaMP+ cells were GAD67-positive). However, not all neurons of each type express GCaMP6s in either line.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C18, C21, and C22 are well-supported by immunohistochemistry data shown in Figure 1, with clear quantification of co-labeling between GCaMP and GAD67. The data demonstrate selective but incomplete labeling of neuronal subtypes in both transgenic lines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "c0eb3d56-d477-4e2e-bfbb-28108528d3fa",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The two transgenic lines show differential expression of calcium-binding proteins: 94% of GCaMP+ cells in GP4.3 lacked strong parvalbumin or calretinin immunoreactivity, while in Gad2;Ai96 mice, larger fractions were positive (CR++: 17%; PV++: 22%). Conversely, GCaMP was expressed in 38% of CR++ cells and 70% of PV++ cells in Gad2;Ai96 mice, but lower fractions in GP4.3 mice (CR++: 9.1%; PV++: 13.4%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are supported by immunohistochemistry data in Figure 1\u2014figure supplement 1, showing differential expression patterns of calcium-binding proteins between the two lines. The quantification is clear and the data support the conclusions about neurochemical heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "125e7dd6-16dd-4ecb-a0aa-5b87c2324f48",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Calcium imaging revealed diverse fluorescence response types to sound stimuli, including increases (transient or sustained), decreases during stimulation, and increases after sound cessation. These were classified as excitatory (further subdivided into onset and sustained), inhibitory, and offset responses. Decreases in fluorescence were interpreted as sound-evoked inhibition of spontaneous firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are supported by calcium imaging data in Figures 2 and 3, with clear examples of different response types. The classification scheme is described in methods and applied systematically. The interpretation of fluorescence decreases as inhibition (C30) is reasonable given GCaMP properties, though it remains an inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "579f99bd-3731-42a9-819f-396e17d20390",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In GP4.3 mice, 64% of cells showed detectable responses to pure tones, with 30% showing excitatory FRAs, 13% offset FRAs, and 30% inhibitory FRAs. In Gad2;Ai96 mice, 73% of cells responded, with 46% excitatory, 4% offset, and 26% inhibitory FRAs. The remaining cells in each line showed mixed response types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40 provide quantitative summaries of response proportions supported by the imaging data presented in Figures 3 and 4. The numbers are internally consistent and the classification criteria are described in methods. The data demonstrate functional heterogeneity in both cell populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "7cb06cff-671f-4c47-b51f-b224c5e7bcb3",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The proportion of cells showing sound-evoked inhibition in awake mice was higher than the 2-23% reported in anesthetized C57BL/6 mice by Willott et al. (1988a).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by comparison of the current data (30% inhibitory in GP4.3, 26% in Gad2;Ai96) with cited literature. The comparison is appropriate given the methodological differences (awake vs. anesthetized), though direct statistical comparison is not possible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "b2db5c83-237c-435d-98ea-8d9add121700",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GABAergic cells (Gad2;Ai96) had larger soma sizes than non-GABAergic cells (GP4.3), with estimated diameters of 21.9 \u00b1 4.9 \u00b5m and 15.9 \u00b1 2.6 \u00b5m, respectively (p<0.001). Within each genotype, soma size did not differ significantly among cells with different FRA classes in GP4.3 mice (p=0.112).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by quantitative analysis of ROI sizes shown in Figure 4C with appropriate statistical tests. The finding is consistent with previous literature cited in C41. The lack of size differences among response classes within genotypes is properly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "59aaa2d8-9549-4c4a-8095-700ed6d08e1f",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Simultaneous juxtacellular recordings and calcium imaging confirmed that onset fluorescence responses corresponded to rapidly adapting firing, sustained responses to sustained firing, and inhibitory responses to reduced spontaneous firing during sound stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are strongly supported by simultaneous electrophysiology and imaging data shown in Figure 5. This ground-truth validation directly links fluorescence patterns to spiking activity, providing critical validation of the calcium imaging classifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "4387c8c3-ca48-486f-b36b-8100c1e2abf4",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Modeling of the relationship between spiking and fluorescence showed that a single action potential produced a median fluorescence increase of 0.35 (GP4.3) or 0.14 (Gad2;Ai96) times F0, with rise times of 480-560 ms and decay time constants of 1.04-1.36 s. The model explained 50-95% of fluorescence variance (median 79%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by quantitative modeling of simultaneous recording and imaging data. The model parameters are reasonable for GCaMP6s kinetics and the variance explained indicates good model fit. However, the sample sizes are small (n=5 for GP4.3, n=12 for Gad2;Ai96).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "0def4e05-114f-4916-8eb6-2674ef735395",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A tonotopic gradient was observed running from caudolateral to rostromedial, with a reversal at the site of lowest characteristic frequencies. This pattern is consistent with banding patterns observed in developmental studies using epifluorescent calcium imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 are supported by spatial analysis of characteristic frequencies shown in Figure 6, with polynomial fitting revealing the gradient orientation. The comparison with developmental data (C51) provides additional support, though it relies on inference about the relationship between developmental and adult organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "e473c234-8a94-474a-a6eb-e4257d2f2d38",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The four response types (onset, sustained, inhibitory, offset) showed similar tonotopic organization but considerable microheterogeneity. This microheterogeneity was similar for GABAergic and glutamatergic neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by spatial analysis shown in Figure 6C-D. The data show that while overall tonotopic gradients are preserved across cell types and response classes, there is substantial local variability. This is an important finding distinguishing IC from auditory cortex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "85a3ec34-e0c5-4f4a-9b69-f749a10394e7",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "After excluding cells with motion artifacts and those with excitatory/offset FRAs, 41 cells (3% of total) showed spontaneous calcium transients correlated with animal movement. These movement-sensitive cells were enriched in the caudolateral dorsal IC, with 4 found in Gad2;Ai96 (1% of GABAergic cells) and 37 in GP4.3 (4% of glutamatergic cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by movement correlation analysis shown in Figure 8, with appropriate exclusion criteria to avoid false positives from motion artifacts or sound-evoked responses. The spatial enrichment and cell-type distribution are clearly documented, though the functional significance requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "c6e4ba1c-04e3-4c6f-86ed-d9b98f646626",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The minimum frequency line from functional mapping aligns with the DCIC/LCIC demarcation from the Allen Reference Atlas but is orthogonal to the Paxinos and Franklin atlas demarcation. GAD67-dense modules, considered hallmarks of LCIC, were observed both medially and laterally from each demarcation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by comparison of functional mapping with anatomical atlases and histological data in Figure 9. The observation that GAD67 modules appear on both sides of traditional boundaries challenges conventional anatomical definitions and supports the need for functional redefinition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "b096e059-8c08-4677-abcc-b50575cf50ad",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Two motion-sensitive neurons retrieved in histology both possessed dendrites extending into GAD67-dense modules, despite their somata residing in extramodular regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by detailed histological analysis shown in Figures 9 and 10, including dendritic reconstruction. While based on only two cells, this provides important anatomical evidence for how extramodular neurons might integrate multisensory inputs from modules.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "ea290fe8-351f-422d-b502-0fac6fe97c1c",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Based on tonotopic organization and movement-related activity, the authors propose that the laterocaudal area with high frequencies represents the dorsal edge of LCIC, the mediorostral part belongs to DCIC, and the tonotopic reversal provides a functional demarcation between them. The central low-frequency strip may represent the dorsal extension of CNIC, making all three main IC areas accessible at the dorsal surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C66 represent interpretations and proposals for redefining IC boundaries based on the functional data. While the functional evidence (tonotopy, movement sensitivity) is solid, the anatomical assignments remain somewhat speculative. The proposal is reasonable and supported by the data, but definitive validation would require additional anatomical tracing or molecular marker studies to confirm the proposed boundaries.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "c570a2df-1745-431a-bd39-13940b8f8498",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Inhibitory and offset responses were not reported in earlier imaging experiments in anesthetized mice, possibly due to shorter stimulus durations that prevented distinction between onset and sustained responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by comparison with cited literature and methodological differences. The explanation that longer stimuli (1 s vs. shorter) and awake state contribute to detecting these response types is reasonable, though the relative contributions of these factors cannot be definitively determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "577407df-0c7b-4d35-b252-64b24bc679db",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about IC anatomy, including its division into CNIC, LCIC, and DCIC; the non-lemniscal pathway; cortical feedback; neurochemical modules; developmental markers; non-auditory inputs; accessibility for imaging; and GABAergic neuron diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C16 represent established anatomical and organizational knowledge about the IC, supported by appropriate citations to previous literature. These provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "1517fea5-6b5f-4384-a9d2-56ac63917d89",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study demonstrates that both GABAergic and non-GABAergic neurons in the mouse dorsal IC show spatial microheterogeneity in temporal responses, but share a conserved double rostromedial-caudolateral gradient of frequency tuning. A subset of neurons is sensitive to spontaneous movements, providing functional evidence for redefining the DCIC/LCIC border.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 represent the main conclusions of the study, well-supported by the comprehensive imaging data, electrophysiological validation, and anatomical analysis presented throughout the manuscript. These findings significantly advance understanding of dorsal IC functional organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "1ac72c05-71de-4d65-9e9f-f1bdd89148a9",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "GCaMP6s-positive neurons in GP4.3 mice are enriched at the border of neurochemical modules characterized by dense GAD67 terminals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is supported by immunohistochemistry data in Figure 1E-G showing spatial relationship between GCaMP+ cells and GAD67-dense modules. This observation is important for understanding the relationship between the transgenic expression pattern and anatomical organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    },
+    {
+      "id": "5ab23076-85b0-4f5d-b774-d85453ac88d1",
+      "content_id": "fcb06d00-88b2-45b8-9ba4-7c85ffb63bb1",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Not all non-GABAergic cells in the IC were GCaMP-positive in GP4.3 mice, as evidenced by NeuN-positive, GCaMP-negative cell bodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is supported by immunohistochemistry in Figure 1C. This is an important caveat indicating incomplete labeling of the non-GABAergic population, which should be considered when interpreting the functional results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:45:47.970253Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "41e46722-8101-4317-9056-f5d9ddc773c2",
+      "result_id": "e0fc3d5c-c19e-4e34-9053-cd07656eb65d"
+    },
+    {
+      "claim_id": "f922548b-a41e-4233-aaad-72770faf4c2b",
+      "result_id": "e0fc3d5c-c19e-4e34-9053-cd07656eb65d"
+    },
+    {
+      "claim_id": "8a0da139-25c3-4ffe-8424-e3b887dfec32",
+      "result_id": "e0fc3d5c-c19e-4e34-9053-cd07656eb65d"
+    },
+    {
+      "claim_id": "ae4a7855-996a-49cb-8a93-7265e6e5c5fb",
+      "result_id": "e0fc3d5c-c19e-4e34-9053-cd07656eb65d"
+    },
+    {
+      "claim_id": "25ec24c1-749f-4476-83d3-9b37e71c79e4",
+      "result_id": "c0eb3d56-d477-4e2e-bfbb-28108528d3fa"
+    },
+    {
+      "claim_id": "75c1c767-3ecb-4b0e-abcd-f8c01e7cd565",
+      "result_id": "c0eb3d56-d477-4e2e-bfbb-28108528d3fa"
+    },
+    {
+      "claim_id": "88df675f-dab0-43b7-8c32-a58761bd6f29",
+      "result_id": "c0eb3d56-d477-4e2e-bfbb-28108528d3fa"
+    },
+    {
+      "claim_id": "ac484778-9821-4496-9e6b-20d4deb1d4c7",
+      "result_id": "c0eb3d56-d477-4e2e-bfbb-28108528d3fa"
+    },
+    {
+      "claim_id": "00660675-f426-4c1b-856e-fe218279e7c1",
+      "result_id": "125e7dd6-16dd-4ecb-a0aa-5b87c2324f48"
+    },
+    {
+      "claim_id": "2a77d0c6-87e5-4aff-9e76-9a58c60ccb43",
+      "result_id": "125e7dd6-16dd-4ecb-a0aa-5b87c2324f48"
+    },
+    {
+      "claim_id": "a1a5fbdc-b3e8-4e6d-9df5-4dbc0dd87348",
+      "result_id": "125e7dd6-16dd-4ecb-a0aa-5b87c2324f48"
+    },
+    {
+      "claim_id": "9d8a1833-8f29-40eb-8790-14104bba879d",
+      "result_id": "125e7dd6-16dd-4ecb-a0aa-5b87c2324f48"
+    },
+    {
+      "claim_id": "5b10501a-7594-4b58-add0-86090de8551b",
+      "result_id": "579f99bd-3731-42a9-819f-396e17d20390"
+    },
+    {
+      "claim_id": "b50e3c18-b259-4d41-bcc9-d2b2f8a0d162",
+      "result_id": "579f99bd-3731-42a9-819f-396e17d20390"
+    },
+    {
+      "claim_id": "e70f135f-4c4e-48e2-91bf-af3ecfb5030b",
+      "result_id": "579f99bd-3731-42a9-819f-396e17d20390"
+    },
+    {
+      "claim_id": "df6b1444-96b8-4967-997e-a61f52db0eff",
+      "result_id": "579f99bd-3731-42a9-819f-396e17d20390"
+    },
+    {
+      "claim_id": "6cc4ab35-babe-4c8c-8bb8-d6ea6d575a5e",
+      "result_id": "579f99bd-3731-42a9-819f-396e17d20390"
+    },
+    {
+      "claim_id": "d48414ca-bc7a-4745-877f-b1c9c99dc7c0",
+      "result_id": "579f99bd-3731-42a9-819f-396e17d20390"
+    },
+    {
+      "claim_id": "d6249ab2-4712-450e-a350-eea8fc617e8d",
+      "result_id": "579f99bd-3731-42a9-819f-396e17d20390"
+    },
+    {
+      "claim_id": "842c8e73-eb66-4bf5-8882-2454a1828cce",
+      "result_id": "579f99bd-3731-42a9-819f-396e17d20390"
+    },
+    {
+      "claim_id": "d33aafec-4f03-4b7b-8277-80be5f0eff0d",
+      "result_id": "7cb06cff-671f-4c47-b51f-b224c5e7bcb3"
+    },
+    {
+      "claim_id": "42d67318-a206-4b1d-b99e-8ca5ad7caba9",
+      "result_id": "b2db5c83-237c-435d-98ea-8d9add121700"
+    },
+    {
+      "claim_id": "e6ba4d81-2d2a-46d8-8e88-1272512c4a24",
+      "result_id": "b2db5c83-237c-435d-98ea-8d9add121700"
+    },
+    {
+      "claim_id": "e053b6ef-6b9a-43ca-88c4-ad4e7aaa62e4",
+      "result_id": "b2db5c83-237c-435d-98ea-8d9add121700"
+    },
+    {
+      "claim_id": "f26bc9d4-6c9a-4f02-b526-885c29bcafaa",
+      "result_id": "59aaa2d8-9549-4c4a-8095-700ed6d08e1f"
+    },
+    {
+      "claim_id": "7e12e06f-67ce-447e-be0f-632fe299677d",
+      "result_id": "59aaa2d8-9549-4c4a-8095-700ed6d08e1f"
+    },
+    {
+      "claim_id": "693fd0a0-e490-4789-ac65-7ba503776729",
+      "result_id": "59aaa2d8-9549-4c4a-8095-700ed6d08e1f"
+    },
+    {
+      "claim_id": "4a889722-1e93-48aa-80e0-1abdf50c9415",
+      "result_id": "4387c8c3-ca48-486f-b36b-8100c1e2abf4"
+    },
+    {
+      "claim_id": "ea0dd8a1-6da5-45fc-9ed5-0fe7c82a2065",
+      "result_id": "4387c8c3-ca48-486f-b36b-8100c1e2abf4"
+    },
+    {
+      "claim_id": "a198fe18-7c50-48eb-8b9d-a4a708cbea1e",
+      "result_id": "0def4e05-114f-4916-8eb6-2674ef735395"
+    },
+    {
+      "claim_id": "aee7d0f2-b115-42ee-b2cd-73e03a88fb58",
+      "result_id": "0def4e05-114f-4916-8eb6-2674ef735395"
+    },
+    {
+      "claim_id": "a8d75d9b-4cf6-4c36-9ce1-31f0677bb254",
+      "result_id": "0def4e05-114f-4916-8eb6-2674ef735395"
+    },
+    {
+      "claim_id": "9cf4493c-b0a9-4d31-840e-f62605c6bdfe",
+      "result_id": "e473c234-8a94-474a-a6eb-e4257d2f2d38"
+    },
+    {
+      "claim_id": "d1461e14-e969-49ec-8b7a-889d4fdf07af",
+      "result_id": "e473c234-8a94-474a-a6eb-e4257d2f2d38"
+    },
+    {
+      "claim_id": "c073cd01-da34-4508-965f-ea51b4b57bee",
+      "result_id": "85a3ec34-e0c5-4f4a-9b69-f749a10394e7"
+    },
+    {
+      "claim_id": "69dc092d-0525-47c5-b1d7-89d5e5a02098",
+      "result_id": "85a3ec34-e0c5-4f4a-9b69-f749a10394e7"
+    },
+    {
+      "claim_id": "62f93f42-af50-47b2-8149-c062e6d10715",
+      "result_id": "85a3ec34-e0c5-4f4a-9b69-f749a10394e7"
+    },
+    {
+      "claim_id": "993814c0-c9db-4d12-a053-534724c780d8",
+      "result_id": "85a3ec34-e0c5-4f4a-9b69-f749a10394e7"
+    },
+    {
+      "claim_id": "421c36be-bc35-46de-a3b9-cc03c368f082",
+      "result_id": "85a3ec34-e0c5-4f4a-9b69-f749a10394e7"
+    },
+    {
+      "claim_id": "3c551659-7a05-4bfc-9907-d567c98d61a6",
+      "result_id": "c6e4ba1c-04e3-4c6f-86ed-d9b98f646626"
+    },
+    {
+      "claim_id": "09eebdfd-e99c-4f2e-afaa-d1b867049a3b",
+      "result_id": "c6e4ba1c-04e3-4c6f-86ed-d9b98f646626"
+    },
+    {
+      "claim_id": "e2c0d1cc-c12a-45e4-bb99-660c3f59929e",
+      "result_id": "b096e059-8c08-4677-abcc-b50575cf50ad"
+    },
+    {
+      "claim_id": "9131fa79-d85a-41ed-b200-9fbc50372ee3",
+      "result_id": "ea290fe8-351f-422d-b502-0fac6fe97c1c"
+    },
+    {
+      "claim_id": "84cb48c2-ed05-49c6-823a-66465b516978",
+      "result_id": "ea290fe8-351f-422d-b502-0fac6fe97c1c"
+    },
+    {
+      "claim_id": "22f04469-7489-4d74-8020-3846c3cc0289",
+      "result_id": "ea290fe8-351f-422d-b502-0fac6fe97c1c"
+    },
+    {
+      "claim_id": "0d917a40-a0dc-4983-a731-32471689a4b0",
+      "result_id": "ea290fe8-351f-422d-b502-0fac6fe97c1c"
+    },
+    {
+      "claim_id": "123cca33-e896-4d66-8123-099e4327ea29",
+      "result_id": "ea290fe8-351f-422d-b502-0fac6fe97c1c"
+    },
+    {
+      "claim_id": "60ff9b61-3350-44a2-ba40-59b321800309",
+      "result_id": "c570a2df-1745-431a-bd39-13940b8f8498"
+    },
+    {
+      "claim_id": "1ba91693-d480-4238-b1c3-c87648e9822d",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "aa4004ff-c55e-47ef-9348-71c3d62417e4",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "293af832-f203-422f-8c5d-86959c5e52fa",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "5162209c-7d4b-4fa8-83bf-f615244337c4",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "6cdd5ce9-197b-4de5-80af-bb817bad13c2",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "17a658e3-13d4-4fea-8336-518b83e84813",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "2b3eced4-d2d1-4cc6-bbf1-4a4f625c2bac",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "7e52e2b9-ba85-4241-acbb-40bf193f9bf8",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "bcb36af4-c062-4077-b371-4fc2353b2a0e",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "e8180304-2f96-41d7-9210-6622b6fe982a",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "0e889abf-a27d-4f1f-bd1f-21396986ae44",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "5d1756e1-8aea-47e8-8bba-b2e5a538ecaf",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "4db03185-2eb7-47aa-87c0-5af50ccdf5e0",
+      "result_id": "577407df-0c7b-4d35-b252-64b24bc679db"
+    },
+    {
+      "claim_id": "b6aeff27-0628-4bed-b77c-ace8f7ea67c2",
+      "result_id": "1517fea5-6b5f-4384-a9d2-56ac63917d89"
+    },
+    {
+      "claim_id": "b0104d91-de65-4df8-8f8d-1844c1d145e8",
+      "result_id": "1517fea5-6b5f-4384-a9d2-56ac63917d89"
+    },
+    {
+      "claim_id": "05cad976-ee19-4b0a-a46a-a7eac3402704",
+      "result_id": "1517fea5-6b5f-4384-a9d2-56ac63917d89"
+    },
+    {
+      "claim_id": "f9fa37ca-5420-4111-8970-a0797095287a",
+      "result_id": "1ac72c05-71de-4d65-9e9f-f1bdd89148a9"
+    },
+    {
+      "claim_id": "496a3a00-ca6a-4572-800c-e98b40bc93e5",
+      "result_id": "5ab23076-85b0-4f5d-b774-d85453ac88d1"
+    }
+  ],
+  "comparisons": []
+}

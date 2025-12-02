@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Wtf4 proteins function in S. cerevisiae, a species that diverged from S. pombe >350 million years ago. Wtf4poison-GFP is toxic to S. cerevisiae cells, while Wtf4antidote-mCherry has minimal toxicity and can rescue Wtf4poison toxicity, suggesting conserved targets and mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 provide direct experimental evidence from viability assays showing Wtf4poison toxicity and Wtf4antidote rescue in S. cerevisiae. Claims C68-C70 provide appropriate evolutionary context and logical inference about conservation. The data clearly demonstrate cross-species functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73",
+      "C93"
+    ],
+    "result": "Wtf4poison forms dispersed, toxic aggregates throughout the cytoplasm in both S. pombe and S. cerevisiae, with some ER localization. These aggregates appear as puncta of varying sizes and are associated with nuclear condensation in affected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C71-C73 provide consistent imaging evidence across species showing dispersed Wtf4poison aggregates. Claim C93 provides mechanistic interpretation based on DAmFRET data showing the aggregates are poorly-ordered assemblies. The evidence converges from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C86",
+      "C90",
+      "C91"
+    ],
+    "result": "Wtf4poison and Wtf4antidote physically interact and co-assemble. In spores inheriting wtf4, the two proteins colocalize in a restricted region with a Pearson coefficient of 0.61. FRET experiments confirm physical interaction, and DAmFRET shows both proteins self-assemble without inhibiting each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide quantitative colocalization data from imaging. Claims C86, C90-C91 provide independent FRET-based evidence of physical interaction and self-assembly. Multiple complementary techniques support the co-assembly conclusion with appropriate quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C99",
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Neutralization of Wtf4poison requires both co-assembly with Wtf4antidote and proper sequence matching. Mutations in the IGNAFRG repeat region that disrupt sequence similarity between poison and antidote prevent neutralization and cause cell death, even when the proteins are co-expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 provide direct experimental evidence using mutant alleles showing that matching repeats are required for neutralization. The mutant poison and antidote proteins fail to colocalize and fail to rescue toxicity. This supports the requirement for homotypic interactions (C99) and validates claims C8-C10.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C52",
+      "C54",
+      "C74",
+      "C75",
+      "C122",
+      "C123"
+    ],
+    "result": "Wtf4antidote localizes to vacuoles in S. pombe and to vacuole-adjacent regions (IPOD) in S. cerevisiae. When co-expressed, Wtf4poison is recruited to these same locations. Wtf4antidote colocalizes with vacuole markers (Cpy1, CMAC) in S. pombe and with IPOD markers (Rnq1) in S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C52, C54 provide colocalization data with vacuole markers in S. pombe (Pearson coefficient 0.89). Claims C74-C75, C122-C123 show analogous localization in S. cerevisiae with IPOD markers. The species-specific differences in localization (within vs. adjacent to vacuole) are appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Electron microscopy reveals that Wtf4 protein aggregates in S. cerevisiae are embedded within clusters of lipid droplets and large vesicles with bilayer membranes. Cells expressing Wtf4 proteins have significantly more lipid droplets and vesicles compared to control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 provide qualitative EM observations, while C112-C114 provide quantitative analysis showing significant increases in lipid droplets and vesicles. The EM data directly visualizes the association between Wtf4 aggregates and these organelles, with appropriate statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Physical interaction between Wtf4poison and Wtf4antidote is insufficient for neutralization. In vps1\u0394 cells, the proteins still interact (FRET positive) but fail to form large inclusions and Wtf4antidote cannot neutralize Wtf4poison toxicity, demonstrating that aggregate trafficking to vacuole-associated sites is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 provide direct experimental evidence from vps1\u0394 mutants showing maintained interaction but loss of function. Claims C150-C151 provide appropriate mechanistic interpretation. This is a critical experiment that separates the requirements for interaction versus trafficking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C133",
+      "C138",
+      "C141",
+      "C142"
+    ],
+    "result": "A genetic screen in S. cerevisiae identified 106 genes required for survival when Wtf4 proteins are expressed. Enriched gene ontology groups include mitochondrial function and cell wall integrity pathways. Genes involved in vesicle trafficking to vacuoles (ATG11, SNF7, VPS genes) are also required. In all 106 mutants, Wtf4 protein localization is disrupted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 provide the screen results with appropriate statistical analysis (FDR p<0.05). Claims C133, C138 identify specific functional categories. Claim C141-C142 provide validation through imaging showing disrupted localization in all hits. The screen design and validation are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C73"
+    ],
+    "result": "Spores that do not inherit wtf4 exhibit nuclear condensation (24/38 asci) and nuclear fragmentation (11/38 asci) as they mature. Similar nuclear condensation is observed in S. cerevisiae cells expressing Wtf4poison. These phenotypes are reminiscent of apoptotic cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide quantitative observations from time-lapse microscopy in S. pombe with appropriate sample sizes. Claim C73 shows the phenotype is conserved in S. cerevisiae. Claim C64 provides appropriate comparison to known apoptotic markers with citations. The temporal progression is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "Wtf4antidote aggregates have very low internal mobility as measured by half-FRAP, indicating they are solid-like rather than liquid-like. This property is conserved in both S. cerevisiae and S. pombe spores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 provide direct half-FRAP measurements in both species showing minimal fluorescence recovery. The biophysical characterization is appropriate and the cross-species validation strengthens the conclusion about aggregate properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C92"
+    ],
+    "result": "DAmFRET analysis shows that Wtf4poison and Wtf4antidote proteins self-assemble at all expression levels without requiring a rate-limiting nucleation step. All cells expressing these proteins exhibit FRET, and co-expression does not change AmFRET levels, indicating the proteins do not inhibit each other's assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 provide quantitative DAmFRET data showing consistent self-assembly. Claim C92 provides important mechanistic insight about the lack of nucleation requirement, distinguishing Wtf4 from prion-like proteins. The interpretation is supported by appropriate citation (Khan et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Wtf4antidote becomes more toxic when its trafficking is disrupted (e.g., in vps1\u0394 cells), suggesting that distributed antidote aggregates are more detrimental than sequestered ones. However, even in vps1\u0394, Wtf4antidote is less toxic than Wtf4poison, indicating fundamental differences between the two aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 provide experimental observations from vps1\u0394 and other mutants showing enhanced Wtf4antidote toxicity when distributed. Claim C155 provides appropriate interpretation about fundamental differences. The comparative analysis between poison and antidote toxicity is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Western blot analysis shows Wtf4antidote-mCherry migrates at ~65 kDa (expected size) with some degradation, while Wtf4poison-GFP shows multiple bands (15-85 kDa) suggesting post-translational modifications and degradation. Both proteins are enriched in the pellet fraction, indicating low solubility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 provide detailed biochemical characterization with appropriate controls (empty vector samples). The interpretation of band patterns as degradation and post-translational modifications is reasonable. The low solubility observation (pellet enrichment) is consistent with the aggregation phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Overexpression of individual chaperones (SIS1, YDJ1, HSP42, JJJ2, HSC82, HSP82, HSP104) fails to ameliorate Wtf4poison toxicity, suggesting that neutralization may require multiple chaperones or stress response pathways acting simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 provides negative results from systematic testing of multiple chaperones. Claim C95 provides reasonable interpretation of why single chaperones are insufficient. While negative results, they are informative about the mechanism and appropriately interpreted as requiring multiple pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In vegetatively growing S. pombe cells, Wtf4poison-GFP cannot be maintained without Wtf4antidote-mCherry, likely due to leaky expression from the inducible promoter. This suggests Wtf4poison is toxic in vegetative cells but can be neutralized by Wtf4antidote.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 document failed attempts to generate cells with poison alone, with reasonable interpretation about leaky expression. Claims C58-C59 provide appropriate conclusions about toxicity and rescue. The inference is logical given the experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C120",
+      "C121"
+    ],
+    "result": "Control experiments show that expression of Rnq1-mCardinal (another aggregation-prone protein) does not increase vesicles or lipid droplets, indicating the Wtf4-associated vesicle phenotype is specific. Cells expressing only Wtf4antidote are morphologically similar to cells expressing both Wtf4 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 provides an important negative control showing the vesicle phenotype is specific to Wtf4, not a general feature of aggregating proteins. Claims C118, C120-C121 provide additional controls characterizing cells expressing individual Wtf4 proteins. These controls strengthen the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The study uses fluorescently tagged wtf4 alleles to visualize the proteins. The mCherry-wtf4 allele tags only Wtf4antidote and is fully functional. The wtf4poison-GFP separation-of-function allele encodes only tagged poison and is functional but slightly weaker than untagged versions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 describe the tagged alleles used throughout the study with appropriate validation of functionality. These are essential methodological details that support the interpretation of all imaging experiments. The acknowledgment of slightly weaker phenotype for wtf4poison-GFP is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Wtf4antidote-mCherry colocalizes with or is adjacent to GFP-Atg8 (autophagy marker) when both are outside the vacuole. However, in most cells expressing both proteins, they localize inside the vacuole, suggesting GFP-ATG8 overexpression enhances Wtf4antidote degradation and autophagosome recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C127 provide observations about Atg8 colocalization, but the interpretation about enhanced degradation (C126-C127) is speculative. The majority localization inside vacuoles could have alternative explanations. Additional experiments (e.g., protein levels, degradation rates) would be needed to confirm the degradation hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "Cells expressing Wtf4 proteins show separated, significantly smaller mitochondria, consistent with mitochondrial hyper-fission. This observation, combined with genetic screen hits in mitochondrial and cell wall integrity genes, suggests links between these stress response pathways and Wtf4antidote function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C136 provides quantitative EM data showing smaller mitochondria. Claim C137 appropriately integrates this observation with the genetic screen results. The connection to stress response pathways is logical, though the mechanistic details remain to be elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background information establishes that wtf4 is a meiotic driver in S. pombe using a poison-antidote mechanism. The wtf genes are small (~1 kb), encode overlapping poison and antidote proteins, with the antidote containing ~45 additional N-terminal amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C23-C28 provide established background from prior work (appropriately cited). These claims set the context for the current study and are well-supported by previous publications. The structural information about the overlapping coding sequences is factual.",
+    "result_type": "MINOR"
+  }
+]

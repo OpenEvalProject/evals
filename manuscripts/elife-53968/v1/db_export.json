@@ -1,0 +1,1331 @@
+{
+  "submission": {
+    "id": "bad486c0-9dbb-4a8d-9459-8aa767807c9d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:07:20.276946Z",
+    "updated_at": "2025-12-02T17:07:20.276946Z"
+  },
+  "content": [
+    {
+      "id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "submission_id": "bad486c0-9dbb-4a8d-9459-8aa767807c9d",
+      "content_type": "manuscript",
+      "content_text": "# Efficient targeted integration directed by short homology in zebrafish and mammalian cells\n\n## Authors\n\n- Wesley A Wierson<sup>1</sup>\n- Jordan M Welker<sup>1</sup>\n- Maira P Almeida<sup>1</sup>\n- Carla M Mann<sup>1</sup>\n- Dennis A Webster<sup>2</sup>\n- Melanie E Torrie<sup>1</sup>\n- Trevor J Weiss<sup>1</sup>\n- Sekhar Kambakam<sup>1</sup>\n- Macy K Vollbrecht<sup>2</sup>\n- Merrina Lan<sup>1</sup>\n- Kenna C McKeighan<sup>1</sup>\n- Jacklyn Levey<sup>1</sup>\n- Zhitao Ming<sup>1</sup>\n- Alec Wehmeier<sup>1</sup>\n- Christopher S Mikelson<sup>1</sup>\n- Jeffrey A Haltom<sup>1</sup>\n- Kristen M Kwan<sup>3</sup> ([ORCID: 0000-0003-0052-275X](https://orcid.org/0000-0003-0052-275X))\n- Chi-Bin Chien<sup>4</sup>\n- Darius Balciunas<sup>5</sup> ([ORCID: 0000-0003-1938-3243](https://orcid.org/0000-0003-1938-3243))\n- Stephen C Ekker<sup>6</sup> ([ORCID: 0000-0003-0726-4212](https://orcid.org/0000-0003-0726-4212))\n- Karl J Clark<sup>6</sup> ([ORCID: 0000-0002-9637-0967](https://orcid.org/0000-0002-9637-0967))\n- Beau R Webber<sup>7</sup>\n- Branden S Moriarity<sup>7</sup>\n- Stacy L Solin<sup>2</sup>\n- Daniel F Carlson<sup>2</sup>\n- Drena L Dobbs<sup>1</sup>\n- Maura McGrail<sup>1</sup> ([ORCID: 0000-0001-9308-6189](https://orcid.org/0000-0001-9308-6189)) \u2020\n- Jeffrey Essner<sup>1</sup> ([ORCID: 0000-0001-8816-3848](https://orcid.org/0000-0001-8816-3848)) \u2020\n\n### Affiliations\n\n1. Department of Genetics, Development and Cell Biology, Iowa State University Ames United States\n2. Recombinetics, Inc St. Paul United States\n3. Department of Human Genetics, University of Utah School of Medicine Salt Lake City United States\n4. Department of Neurobiology and Anatomy, University of Utah Medical Center Salt Lake City United States\n5. Department of Biology, Temple University Philadelphia United States\n6. Department of Biochemistry and Molecular Biology, Mayo Clinic Rochester United States\n7. Department of Pediatrics, Masonic Cancer Center, University of Minnesota Minneapolis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEfficient precision genome engineering requires high frequency and specificity of integration at the genomic target site. Here, we describe a set of resources to streamline reporter gene knock-ins in zebrafish and demonstrate the broader utility of the method in mammalian cells. Our approach uses short homology of 24\u201348 bp to drive targeted integration of DNA reporter cassettes by homology-mediated end joining (HMEJ) at high frequency at a double strand break in the targeted gene. Our vector series, pGTag (plasmids for Gene Tagging), contains reporters flanked by a universal CRISPR sgRNA sequence which enables in vivo liberation of the homology arms. We observed high rates of germline transmission (22\u2013100%) for targeted knock-ins at eight zebrafish loci and efficient integration at safe harbor loci in porcine and human cells. Our system provides a straightforward and cost-effective approach for high efficiency gene targeting applications in CRISPR and TALEN compatible systems.\n\n## Introduction\n\nDesigner nucleases have rapidly expanded the way in which researchers can utilize endogenous DNA repair mechanisms for creating gene knock-outs, reporter gene knock-ins, gene deletions, single nucleotide polymorphisms, and epitope tagged alleles in diverse species (Bedell et al., 2012; Beumer et al., 2008; Carlson et al., 2012; Geurts et al., 2009; Yang et al., 2013). A single dsDNA break in the genome results in increased frequencies of recombination and promotes integration of homologous recombination (HR)-based vectors (Hasty et al., 1991; Hoshijima et al., 2016; Orr-Weaver et al., 1981; Rong and Golic, 2000; Shin et al., 2014; Zu et al., 2013). Additionally, in vitro or in vivo linearization of targeting vectors stimulates homology-directed repair (HDR) (Hasty et al., 1991; Hoshijima et al., 2016; Orr-Weaver et al., 1981; Rong and Golic, 2000; Shin et al., 2014; Zu et al., 2013). Utilizing HDR or HR at a targeted double-strand break (DSB) allows directional knock-in of exogenous DNA with base pair precision, however, reported frequencies vary widely, and engineering targeting vectors with long homology arms is not straightforward.\n\nPrevious work has shown Xenopus oocytes have the ability to join or recombine linear DNA molecules that contain short regions of homology at their ends, and this activity is likely mediated by exonuclease activity allowing base pairing of the resected homology (Grzesiuk and Carroll, 1987). More recently, it was shown in Xenopus, silkworm, zebrafish, and mouse cells that a plasmid donor containing short (\u226440 bp) regions of homology to a genomic target site can promote precise integration at the genomic cut site when the donor plasmid is cut adjacent to the homology (Aida et al., 2016; Hisano et al., 2015; Nakade et al., 2014). Gene targeting in these studies\u00a0is likely mediated by the alternative-end joining/microhomology-mediated end joining (MMEJ) pathway or by a single strand annealing (SSA) mechanism (Ceccaldi et al., 2016), collectively referred to as a homology mediated end joining (HMEJ). In contrast, in human cell culture, linear donors using a similar strategy with homologous ends have been reported to show inefficient integration until homology domains reach\u00a0~600 bp (Zhang et al., 2017), suggesting different repair pathways may predominate depending on cell type. In the initial reports using short regions of homology for in vivo gene targeting in zebrafish, the level of mosaicism in F0 injected animals was high, resulting in inefficient recovery of targeted alleles through the germline (Aida et al., 2016; Hisano et al., 2015; Luo et al., 2018; Nakade et al., 2014). Most recently, studies in\u00a0Drosophila\u00a0show efficient integration of exogenous DNA in flies and S2 cells using 100 bp homology arms flanked by a CRISPR target site for in vivo homology liberation (Kanca et al., 2019). Together, these studies suggest a strategy that combines short homology flanked donors with in vivo homology arm liberation should lead to efficient precision targeting in zebrafish and mammalian cells.\n\nHere, we present GeneWeld, a HMEJ strategy for targeted integration directed by short homology and demonstrate efficient germline transmission rates for recovery of targeted alleles in zebrafish. We provide a suite of donor vectors, called pGTag, that can be easily engineered with homologous sequences (hereafter called homology arms) to a gene of interest and a web interface for designing homology arms (www.genesculpt.org/gtaghd/). We demonstrate that 24 or 48 base pairs of homology directly flanking cargo DNA promotes efficient gene targeting in zebrafish, pig, and human cells. Our results also suggest that longer homology arms up to 1 kb in length do not increase the frequency of on-target integration in zebrafish in comparison to 24 or 48 bp. Our experiments illustrate that Cas9 mediated in vivo release to expose homology on the knock-in cassette ends is integral for enhancing targeted integration. Using short homology-arm mediated end joining, we can achieve germline transmission rates averaging approximately 50% across several zebrafish loci when pre-selecting reporter-positive embryos to raise to adulthood. Southern blot analysis in the F1 generation reveals we can recover single copy integration alleles with precision at both 5\u2019 and 3\u2019 ends at high frequency, enabling efficient recovery of zebrafish with precise site-directed gene modifications. We present a strategy to delete and replace up to 48 kb of genomic DNA with a donor containing homology arms flanking two distal CRISPR/Cas9 sites in a gene. Finally, we show that short homology arm-directed targeted integration of a GFP reporter into safe harbor loci in porcine and human cells increased 10-fold in comparison to homologous recombination. The tools and methodology described here provide a tractable solution to creating precise targeted integrations and open the door for other genome editing strategies using short homology.\n\n## Results\n\n### A single short homology domain drives efficient CRISPR targeted integration\n\nTo develop baseline gene targeting data, we engineered variable length homology domains to target noto, using a similar strategy to Hisano et al. (2015). Homology lengths were based on observations that DNA repair enzymes bind DNA and search for homology in 3 or 4 base pair lengths (Figure 1a; Conway et al., 2004; Singleton et al., 2002). We engineered a 2A-TagRFP-CAAX-SV40 donor vector to contain a sgRNA site that matches a site in exon 1 of the zebrafish noto gene. The donor vector used a 2A peptide sequence in frame with noto and TagRFP to allow separation of the fluorescent protein from the nascent protein of the disrupted noto gene during translation. For fluorescence to be detected, the integrated reported gene is required to be in frame with the open reading frame of noto. The sgRNA site was followed by 12, 24 or 48 bp of sequence homologous to the 5\u2019 region directly adjacent to the Cas9 cut site in noto exon 1 (Figure 1a). The noto exon 1 sgRNA targeting efficiency was tested by co-injection with Cas9 mRNA into zebrafish embryos. At 3 dpf, 5 larvae were pooled for genomic DNA extraction and PCR to generate a noto exon 1 amplicon. MiSeq analysis showed 95% of the amplified alleles contained indels at the noto sgRNA genomic target site (Supplementary file 1 Table S1-S2). Injection into the cytoplasm of the 1 cell stage embryo of the donor cargo DNA together with noto exon 1 sgRNA and Cas9 mRNA resulted in efficient targeted integration, as observed by notochord-specific RFP expression and PCR amplification of junction fragments between the noto gene and the targeting donor (Figure 1a-c; Supplementary file 1 Table S2-S3). The frequency of embryos with notochord-specific RFP expression increased with the length of the homology arm up to 48 bp (Figure 1b), suggesting that longer homology arms promote increased precise integration of the targeting construct.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic for noto homology arm and donor vector design. Bold letters show the noto sgRNA target sequence in the genome. This sgRNA target sequence was also used to target Cas9 cutting in the donor vector. Black bars represent the different homology arm lengths 12, 24, or 48 bp, used to target the 2A-tagRFP-CAAX donor vector into the noto exon 1 target site. PAM sequences are underlined. Red arrows indicate the Cas9 cut site 3 bp upstream of the PAM. The 3 nucleotide spacer lacking homology to the genome is represented by the lowercase sequence \u2018aaa\u2019 located in between the donor vector PAM and the 5\u2019 end of the homology arm. (b) Targeting efficiency of noto exon1 2A-tagRFP-CAAX donor vectors containing a single 5\u2019 homology arm of 12, 24, or 48 bp. Data represents mean +/-\u00a0s.e.m. of 3 independent targeting experiments. p values calculated using two-tailed unpaired t-test. (c) Live confocal image of noto-2A-TagRFP-CAAX-SV40 targeted embryo showing specific RFP expression in the notochord. Scale bar, 100 \u03bcm. (d) Sanger sequencing of cloned 5\u2019 junction fragments from RFP positive F0 embryos, aligned to the expected sequence from a precise integration event. Numerator represents correct clones, denominator represents total clones sequenced. Junctions are considered precise if the homology arm does not contain any mismatch and there are no insertions or deletions up- or downstream of the programmed homology.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Universal sgRNA (UgRNA) sequence. Cas9 PAM underlined. (b) Schematic of targeting using the UgRNA to direct CRISPR/Cas cutting in the donor vector. The genomic sgRNA target site sequence in noto exon 2 is shown in bold green. The sequence of the UgRNA in the donor vector is shown in bold black. PAM sequences are underlined, and Cas9 cut sites are indicated with red arrow. The 24 bp noto homology arm in the donor vector is in green; since it lacks the last 3 base pairs and PAM sequence found at the genomic noto target site it is not recognized by the noto sgRNA. (c) Frequency of injected embryos displaying RFP expression in the notochord compared to total number of injected embryos following targeting using the noto sgRNA, UgRNA, and UgRNA-24bp-2A-tagRFP-CAAX vector shown in (b).\n\nTo examine the targeted alleles, we performed junction fragment analysis by PCR amplification of the junction between the noto gene and the targeted construct. Junction fragment analysis in the RFP expressing embryos injected with the 12 bp homology arm construct revealed precise integration at the 5\u2019 end in 56% of the sequenced alleles (5/9 junctions) (Figure 1d). The imprecise allele was a single base insertion between the homology domain and PAM that creates a frame shift and would not produce RFP expression. 95% of the recovered alleles following injection with the 24 bp homology arm construct (19/20 junctions) were precise, with the one imprecise allele containing a duplication of the homology domain. This latter allele most likely occurred by non-homologous end joining (NHEJ) rather than homology directed repair. 79% of the recovered alleles from embryos injected with 48 bp homology arm construct (15/19 junctions) were also precise (Figure 1d). In these experiments we did not analyze the 3\u2019 end of the integration, since the targeting construct only had a 5\u2019 homology arm and the 3\u2019 junctions are likely resolved by the NHEJ pathway, similar to previous reports (Auer et al., 2014; Maresca et al., 2013; Suzuki et al., 2016). Taken together, these experiments suggested that short homology arms can promote precise integration of a targeting construct by homology directed repair at relatively high frequency, however, imprecise alleles containing single base substitutions and insertions generated by NHEJ are also recovered.\n\n### A universal guide RNA to liberate donor homology for targeted integration\n\nTo simplify targeting construct design and allow for consistent, reproducible liberation of the donor cargo in vivo by Cas9, we previously designed a universal guide RNA sequence, UgRNA (Wierson et al., 2019a), with optimal base composition using CRISPRScan (Figure 1\u2014figure supplement 1a; Moreno-Mateos et al., 2015). The UgRNA does not have predicted targets in the zebrafish, pig, or human genomes, and in vivo use shows efficient double strand break induction and homology mediated repair at a target site in a fluorescent reporter integrated into the zebrafish noto gene (Wierson et al., 2019a). The UgRNA and a CGG PAM sequence were cloned 5\u2019 to the 24 bp noto homology arm in the 2A-TagRFP-CAAX-SV40 donor vector (Figure 1\u2014figure supplement 1b). To test the ability of the UgRNA guide to direct a Cas9 double strand break to the vector in vivo and promote efficient targeted integration, zebrafish embryos were co-injected with Cas9 mRNA, UgRNA, noto sgRNA, and the noto targeting construct. 21% of injected embryos showed notochord-specific RFP expression, suggesting that Cas9 cutting at the vector UgRNA site efficiently exposes the donor vector 5\u2019 homology arm and drives precise targeted integration (Figure 1\u2014figure supplement 1c, Supplementary file 1 Tables S2-S3). This frequency was similar to the above experiments that used the gene specific noto sgRNA to cut the targeting construct.\n\n### Dual homology arm liberation directs precise 5\u2019 and 3\u2019 integration in somatic tissue\n\nWe leveraged the activity of the UgRNA to develop GeneWeld, a strategy for targeted integration that promotes high frequency precision integration at both 5\u2019 and 3\u2019 junctions of the genomic target site. The donor vector contains 5\u2019 and 3\u2019 homology arms cloned on either side of the targeting cassette, which are flanked by UgRNA\u00a0sites\u00a0(Figure 2a) . The strategy takes advantage of DNA ends cut by CRISPR/Cas9 to initiate targeted integration directed by short homology (Figure 2a). A high efficiency nuclease introduces a DSB in the chromosomal target, and a second nuclease makes two DSBs in the vector at the UgRNA sites, exposing both 5\u2019 and 3\u2019 short homology arms. The complementarity between the chromosomal DSB and the donor 5\u2019 and 3\u2019 homology arms likely activates a MMEJ/SSA or other non-NHEJ DNA repair mechanism, together referred to as HMEJ. The reagents needed for this gene targeting strategy include Cas9 mRNA to express the Cas9 nuclease, a guide RNA targeting the genomic sequence of interest, the universal sgRNA UgRNA, and the UgRNA donor vector with 5\u2019 and 3\u2019 homology arms complementary to the genomic target site (Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig2-v1.jpg)\n\n**Figure 2.:** (a) GeneWeld reagent components are designed for simultaneous nuclease targeting of genome and donor to reveal short regions of homology.\u00a0Red arrowheads represent nuclease DSB cut sites. Components include: 1 - Designer nuclease mRNA, either Cas9 to target both the genome and donor, or Cas9 to target the donor and TALEN to cut the genome; 2 - sgRNA for targeting Cas9 to genome; 3 - Universal sgRNA to liberate donor cargo and homologous ends; and 4 - pGTag donor of interest with short homology arms. (b) Stippled and striped boxes represent sticky ends created by Type IIs restriction endonucleases BfuAI and BspQI, allowing digestion and ligation of both homology arms into the donor vector in a single reaction. Homology arm fragments are formed by annealing complementary oligonucleotides to form dsDNA with sticky ends for directional cloning into the vector. XFP\u00a0=\u00a0Green or Red Fluorescent Protein. pA\u00a0=\u00a0SV40 or \u03b2-actin 3\u2019 untranslated region. Red and green fluorescent proteins were cloned into the pGTag vectors, and for each color, subcellular localization sequences for either nuclear localization (NLSs) and membrane localization (CAAX) are provided. (c) Schematic of GeneWeld targeting in vivo. After designer nuclease creates targeted double-strand breaks in the genome and donor, end resection likely precedes homology recognition and strand annealing, leading to integration of the donor without vector backbone.\n\nWe built a series of vectors, pGTag, which contain sites on both sides of the cargo for cloning a short homology arm that is complementary to the 5\u2019 or 3\u2019 sequence flanking the genomic target site. The vectors also include the UgRNA sequence outside the sites for homology arm cloning (Figure 2a, b). A 3 bp spacer that lacks homology to the nucleotides that sit 5\u2019 to the start of the homology arm in the genome was added between the universal sgRNA PAM CGGand the homology arm\u00a0(Figure 2c), in order to maintain the length of the homology arm at 24 or 48 bp. The 5\u2019 and 3\u2019 homology arms can be cloned simultaneously into the vector in a 1-pot reaction using type II restriction enzyme sites, or can be cloned sequentially. The final donor targeting vector contains a cargo flanked by 5\u2019 and 3\u2019 homology arms with UgRNA sequences on both ends. Following injection, we hypothesize that cleavage by Cas9 at the UgRNA sites liberates the DNA cargo from the plasmid backbone and exposes both 5\u2019 and 3\u2019 donor homology arms for interaction with DNA on either side of the genomic DSB (Figure 2c).\n\nTo test this strategy, we targeted four genes in zebrafish, notochord homeobox (noto), tyrosinase (tyr), endothelial cell adhesion molecule a (esama), and connexin 43.4 (cx43.4), with efficient gRNAs which either produced a mutant phenotype or displayed 80\u201396% indel formation (Supplementary file 1 Tables S1-S2). The frequency of expression from the pGTag targeting vector reporter genes was measured in somatic tissue following injection (Figure 3a-d). Injection of 24 or 48 bp homology arm noto 2A-eGFP-SV40 donors resulted in 24% of zebrafish embryos showing extensive reporter expression in the notochord (Figure 3a,e), indicating a similar in frame and precise integration efficiency compared to targeting with the single 5\u2019 homology arm 2A-TagRFP-CAAX-SV40 vector (Supplementary file 1\u00a0Tables\u00a0S2-S3). The results also suggest that when using the UgRNA to liberate the cargo, 24 bp of homology directs targeted integration as efficiently as 48 bp, further reducing the cost of homology arms for construction of targeting vectors.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig3-v1.jpg)\n\n**Figure 3.:** (a\u2013d) Live confocal images of F0 injected embryos showing fluorescent reporter expression after GeneWeld targeted integration. (a, a\u2019) Mid somite stage embryo targeted at noto with 2A-eGFP. (b, b\u2019) 5 days post fertilization (dpf) Tg(UAS:mRFP)tpl2 embryo targeted at tyr with 2A-Gal4/VP16. (c) 2 dpf and (c\u2019) 3dpf Tg(UAS:mRFP)tpl2 embryo targeted at esama with \u22122A-Gal4/VP16. (d, d\u2019) 31 hr post fertilization embryo targeted at cx43.4 with 2A-tagRFP-CAAX. (e) Fraction of embryos with reporter gene expression following GeneWeld targeting at noto, tyr and esama. 5\u2019 and 3\u2019 homology lengths flanking donor cargos indicated in base pairs as 24/24 or 48/48. (f) Comparison of the fraction of RFP expressing embryos after targeting cx43.4 exon 2 using GeneWeld 24/24 bp homology, GeneWeld 48/48 bp homology, Geneweld 1 kb/1 kb homology, Circular HR 1 kb/1 kb (injection did not include UgRNA, *p=0.0067), Linear HR 1 kb/1 kb (donor was digested and the linear DNA fragment containing the homology arm targeting construct was gel purified before injection, *p=0.0111). Data represents mean +/-\u00a0s.e.m. of 3 independent targeting experiments. p values calculated using Students t test. Scale bars, 100 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** PCR amplification and sequence of 5\u2019 junction fragments between tyr exon 4 and the targeted 2A-tagRFP-CAAX-Sv40 vector from randomly selected RFP-negative F0 injected embryos. 5/6 RFP-negative F0 injected embryos contain the expected 5\u2019 junction fragment (marked with an \u2018*\u2019). The junction fragments from embryos F0-1 and \u22122 were TA-cloned and sequenced. 3 out of 4 cloned PCR products from embryo F0-1 and 3 out of 3 cloned products from embryo 2 showed precise 5\u2019 integration in tyr. 1 of the 4 embryos from F0-1 contained a single nucleotide polymorphism in the 2A peptide sequence (shown in red).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Comparison of the frequency of RFP expressing injected embryos after targeting esama exon two using GeneWeld 24/24 bp homology arms, Geneweld 1 kb/1 kb homology arms, Circular HR 1 kb/1 kb homology arms (injection did not include UgRNA), and Linear HR 1 kb/1 kb homology arms (donor was digested and the linear DNA fragment containing the homology arm targeting construct was gel purified before injection). Increasing the length of the homology arm to 1 kb significantly increased the frequency of RFP expressing embryos using GeneWeld (p=0.0001), Circular, or Linear template. Data represents mean +/-\u00a0s.e.m. of 3 independent targeting experiments. p value calculated using Students t test.\n\nTargeting exon 4 of tyr or exon 2 of esama with a 24 bp homology arm 2A-TagRFP-CAAX-SV40 donor did not result in detectable RFP signal in pigmented cells where tyr is expressed, similar to previous reports for tyr (Hisano et al., 2015). However, PCR amplification and sequencing of a fragment of the expected size that spans the exon-integration cassette junction from injected embryos indicated the 2A-RFP cassette was precisely integrating in frame in tyr exon 4 (Figure 3\u2014figure supplement 1). This suggested the level of RFP expression was below the threshold of detection. To amplify the fluorescent signal, we built pGTag 24 bp homology arm 2A-Gal4/VP16-\u03b2\u2212actin3\u2019UTR targeting vectors with 24 bp homology arms\u00a0to integrate the Gal4/VP16 trans-activator into the tyr and esama target sites. The Gal4 vectors were injected into transgenic zebrafish embryos carrying a 14xUAS-RFP reporter, Tg(UAS:mRFP)tpl2 (Balciuniene et al., 2013). This resulted in strong RFP signal in 64% of tyr injected animals (Figure 3b,e), however, the embryos were highly mosaic, with only 9% of embryos displaying extensive RFP expression throughout most of the pigmented cells. Targeting esama exon 2 with 2A-Gal4/VP16 in the Tg(UAS:mRFP)tpl2 transgenic background resulted in 21% of embryos displaying extensive RFP expression specifically in the vasculature where esama is expressed (Figure 3c,e). This approach was extended to five additional loci, targeting 2A-Gal4/VP16 to filamin a (flna) exon 4, moesin a (msna) exon 2 and 6, aquaporin 1a1 (aqp1a1) exon 1, aquaporin 8a1 (aqp8a1) exon 1, and annexin a2a (anxa2a) exon 3. At these loci, mosaic expression of RFP was observed following injection in 4\u201355% of Tg(UAS:mRFP)tpl2 embryos in domains consistent with the normal expression of these genes (Supplementary file 1 Table S2 and S3). Taken together, these results suggest that our short homology arm targeting strategy promotes high efficiency integration in somatic tissue and allows endogenous gene expression patterns to be followed in living embryos.\n\nPrevious work in zebrafish indicated that longer homology arms (200 bp to 1 kb in length), in combination with restriction enzyme digestion either in vitro or in vivo to liberate a linear donor template, could promote efficient targeted integration (Hoshijima et al., 2016; Shin et al., 2014). Using the pGTag vectors with UgRNA sites for in vivo homology arm liberation, we tested whether 1 kb long homology arms altered the efficiency of integration in comparison with 24 or 48 bp of short homology. Targeted integration of a 2A-TagRFP-CAAX-SV40 cassette into exon 2 of cx43.4 with 24 and 48 bp homology arms resulted in 38\u201356% and 29\u201347% of injected embryos showing broad RFP expression throughout the nervous system and vasculature (Figure 3d,f). Increasing the length of the 5\u2019 and 3\u2019 homology arms to 1 kb did not significantly change the frequency of RFP expression compared to 24 bp (p=0.1693) or 48 bp (p=0.6520) (Figure 3f), with 26\u201347% of injected embryos showing the expected neuronal and vascular RFP expression pattern (Supplementary file 1 Table S2-S3). Injection without the UgRNA leaves the 1 kb homology circular donor intact, and reduced targeting to 0\u20133% (Figure 3f Circular HR 1 kb; p=0.0067; Supplementary file 1 Table S2-S3), as expected given the low frequency of homologous recombination in zebrafish embryos. For comparison with previous reports using in vitro liberation of long homology arm cassettes before injection, the 1 kb homology arm vector digested with restriction enzymes that cut within the homology arms, reducing the 5\u2019 arm to approximately 900 bp and the 3\u2019 homology arm to 700 bp. The linear DNA template was gel purified before injection. The frequency of RFP expressing embryos after injection of the linear 1 kb homology arm template was significantly reduced to approximately 5% (Figure 3f Linear HR 1 kb; p=0.0111; Supplementary file 1 Table S2-S3). No expression was observed when the linear template was injected without genomic gRNA (Linear control)\u00a0(Supplementary file 1 Table S3). Together, these results suggest long homology arms do not enhance the frequency of integration at the genomic target site, compared with short 24 or 48 bp homology arms, when using the UgRNA to target double strand breaks and liberate the donor homology arms in vivo.\n\nThe comparison of short and long homology arm length on integration efficiency was also tested by targeting the 2A-Gal4/VP16 cassette to the esama exon two target site. Increasing the homology arms from 24 bp to 1 kb dramatically increased the percentage of RFP positive embryos, from 20\u201323% to 82\u201394% (p=0.0001 Figure 3\u2014figure supplement 2, Supplementary file 1 Table S3). However, the majority of RFP was not vascular specific, suggesting off-target integration of the Gal4/VP16 cassette. A high frequency of RFP-positive embryos was also observed when the donor template was injected without UgRNA (27\u201353%) (Figure 3\u2014figure supplement 2 Circular HR 1 kb) or the donor template was digested in vitro and the linear template gel purified before injection (83\u201394%) (Figure 3\u2014figure supplement 2 Linear HR 1 kb). Common repetitive elements, enhancers, or a cryptic promoter in the intronic sequence of the esama 1 kb homology arms may lead to off target integration and ectopic RFP expression. These results underscore the utility of short homology arms, which simplifies donor vector construction and leads to efficient precision targeted integration.\n\n### Efficient germline transmission of precision targeted integration events\n\nTo determine the efficiency of recovering precision integration alleles through the germline, we targeted short homology arm Gal4/VP16 or tagRFP GTag cassettes into 9 independent zebrafish loci. Embryos from the noto, tyr, esama, and cx43.4 GTag targeting experiments described above were raised to adulthood and outcrossed to screen for germline transmission of the reporter integrations. Three out of five (60%) adults from the noto injected embryos that had shown widespread notochord RFP expression transmitted a noto-2A-TagRFP-CAAX tagged allele through the germline (Figure 4, Table 1, Supplementary file 1 Table S4-S5). At the tyr locus, although RFP expression in tyr-2A-Gal4/VP16 injected Tg(UAS:mRFP)tpl2 embryos was highly mosaic, three out of eight (37.5%) embryos raised to adulthood transmitted germline tagged alleles (Figure 4, Table 1, Supplementary file 1 Table S4-S5). For esama, 12/18 (66.7%) adults that displayed widespread vasculature RFP expression as embryos transmitted esama-2A-Gal4/VP16 alleles to their F1 progeny (Figure 4, Table 1, Supplementary file 1 Table S4-S5). While no germline integration events were observed with cx43.4, other experiments with different integration cassettes showed similar germline integration frequencies (Table 2, Supplementary file 1 Table S4-S5 and data not shown). We extended the germline transmission analysis to include six additional loci: flna, two target sites in msna (exon 2 and 6), aqp1a1, aqp8a1, and anxa2a. Overall the data reveal high rates of germline transmission, with a combined average of 49%, that ranged from 22\u2013100% across all targeted loci (Figure 4, Table 1, Supplementary file 1 Table S4-S5). In addition, the founders from these experiments transmitted gametes that produced expression of RFP consistent with the targeted locus at frequencies from 2% to 64% of the F1 embryos, with an average of 17.4% (Supplementary file 1 Table S4-S5). Together, as inferred from expression of RFP, these results suggest that the 5\u2019 and 3\u2019 short homology arms liberated with the UgRNA in vivo promote targeted integration that is efficiently transmitted through the germline in zebrafish.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig4-v1.jpg)\n\n**Figure 4.:** (a, a\u2019) Tg(noto-2A-TagRFP) embryo at mid somite stage showing expression in the notochord and floor plate. (b, b\u2019) Tg(tyr-2A-Gal4/VP16); Tg(UAS:mRFP)tpl25 dpf larva displaying expression in the melanocytes. (c, c\u2019) Tg(esama-2A-Gal4/VP16); Tg(UAS:mRFP)tpl24 dpf larva showing expression in the vascular system. (d, d\u2019) Tg(flna-2A-Gal4/VP16); Tg(UAS:mRFP)tpl21 dpf embryo showing widespread expression. (e, e\u2019 and f, f\u2019) Exon 2 and exon 6 msna targeted Tg(msna-2A-Gal4/VP16); Tg(UAS:mRFP)tpl2 2dpf embryos showed expression in the central nervous system and vasculature. (g, g\u2019 and h, h\u2019) Tg(aqp1a1-2A-Gal4/VP16; Tg(UAS:mRFP)tpl2) and Tg(aqp8a1-2A-Gal4/VP16); Tg(UAS:mRFP)tpl22 dpf embryos display RFP expression in the trunk and tail vasculature. Scale bars, 100 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013c) Molecular analysis of Tg(tyr-2A-GAL4/VP16) F1 offspring from a single targeted F0 founder. (a) Schematic of expected integration pattern for tyr targeted with pGTag-2A-GAL4/VP16. 148 bp tyr probe in Exon 3 and 583 bp probe in GAL4/VP16 are indicated. (b) GAL4/VP16 and (c) tyr probed Southern blots of genomic DNA from wild type (WIK) and 4 individual GAL4/VP16 positive F1s. The expected 7400 bp band is detected with both probes, suggesting a single copy integration. (d\u2013f) Tg(noto-2A-RFP) F1 targeted integration alleles from 2 independent F0 founders. (d) noto gene model with location of restriction enzymes used for genomic Southern blot analysis. Location of the 513 bp noto probe is indicated (dark lines). The predicted and an interpretation of the recovered alleles are shown. (e) Southern blots of F1 Tg(noto-2A-RFP) individuals hybridized with RFP probe. F1 from founder F0#1 contain a\u00a0~\u00a02100 bp band corresponding to integration plus deletion of\u00a0~400 bp in noto. F1 progeny from founder F0#2 show two bands: a\u00a0~\u00a03700 bp band corresponding to integration of the reporter plus 2000 bp of vector backbone, and a\u00a0~\u00a01500 bp band which may represent an off-target integration. Loading controls (10, 1) correspond to 10 copies or 1 copy of RFP containing plasmid. WIK, wild type control DNA. (f) Southern blot in (e) stripped and re-hybridized with the noto-specific probe. A 1342 bp band representing the wild type allele was detected in all individuals. The integration allele in F1s from F0 #1 was not detected due to deletion of the region containing the probe. F1s from F0 #2 contain the\u00a0~3700 bp band corresponding to the noto-2A-RFP integration allele.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Precise integration at the 5\u2019 and 3\u2019 ends in F1 progeny from F0 founder fish targeted at tyr, esama, flna, msna, aqp1a1, and aqp8a1. noto F1 progeny from founder #1 had a precise 5\u2019 junction and imprecise 3\u2019 junction. noto F1 progeny from founder #2 had a 5\u2019 precise junction; no 3\u2019 junction was amplified by PCR. Lowercase letters represent \u2018padding\u2019 nucleotides to place the integrated GTag cassette in frame with the targeted gene. Red letters represent mismatches unless otherwise noted below. esama F1 3\u2019 junctions contain a single nucleotide variant shown in red. One esama F1 3\u2019 junction included a 20 bp insertion (strike-through).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** esama, flna, and msna. esama F1 3\u2019 junctions contain a single nucleotide variant shown in red. One esama\u00a0F1 3\u2019 junction included a 20 bp insertion (strike-through). Lowercase letters represent \u201cpadding\u201d nucleotides to place the integrated GTag cassette in frame with the targeted gene. Red letters represent mismatches unless otherwise noted below.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** aqp1a1\u00a0and aqp8a1. Lowercase letters represent \u201cpadding\u201d nucleotides to place the integrated GTag cassette in frame with the targeted gene.\n\n**Table 1.**\n Germline transmission of zebrafish GeneWeld GTag integrations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genomic target</th>\n      <th>Exon</th>\n      <th>5\u2019/3\u2019 Homology arm length</th>\n      <th>Reporter expression</th>\n      <th>Number of germline transmitting adults</th>\n      <th>Percentage of germline transmitting adults</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>noto</td>\n      <td>E1</td>\n      <td>24/24</td>\n      <td>24%</td>\n      <td>3/5</td>\n      <td>60%</td>\n    </tr>\n    <tr>\n      <td>tyr</td>\n      <td>E4</td>\n      <td>24/24</td>\n      <td>64%</td>\n      <td>3/8</td>\n      <td>38%</td>\n    </tr>\n    <tr>\n      <td>cx43.4*</td>\n      <td>E2</td>\n      <td>24/24</td>\n      <td>50%</td>\n      <td>0/1</td>\n      <td>0%</td>\n    </tr>\n    <tr>\n      <td>cx43.4*</td>\n      <td>E2</td>\n      <td>48/48</td>\n      <td>38%</td>\n      <td>0/4</td>\n      <td>0%</td>\n    </tr>\n    <tr>\n      <td>esama</td>\n      <td>E4</td>\n      <td>24/24</td>\n      <td>21%</td>\n      <td>12/18</td>\n      <td>67%</td>\n    </tr>\n    <tr>\n      <td>flna</td>\n      <td>E4</td>\n      <td>48/42</td>\n      <td>100%</td>\n      <td>3/4</td>\n      <td>75%</td>\n    </tr>\n    <tr>\n      <td>msna</td>\n      <td>E2</td>\n      <td>48/48</td>\n      <td>55%</td>\n      <td>1/4</td>\n      <td>25%</td>\n    </tr>\n    <tr>\n      <td>msna</td>\n      <td>E6</td>\n      <td>48/48</td>\n      <td>26%</td>\n      <td>1/3</td>\n      <td>33%</td>\n    </tr>\n    <tr>\n      <td>aqp1a1</td>\n      <td>E1</td>\n      <td>48/48</td>\n      <td>4%</td>\n      <td>2/9</td>\n      <td>22%</td>\n    </tr>\n    <tr>\n      <td>aqp8a1</td>\n      <td>E1</td>\n      <td>48/48</td>\n      <td>14%</td>\n      <td>1/1</td>\n      <td>100%</td>\n    </tr>\n    <tr>\n      <td>anxa2a^</td>\n      <td>E3</td>\n      <td>48/48</td>\n      <td>35%</td>\n      <td>4/4</td>\n      <td>100%</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>Total</td>\n      <td>30/61</td>\n      <td>49%</td>\n    </tr>\n  </tbody>\n</table>\n\n_F0\u2019s raised to adulthood were outcrossed and screened for germline transmission of fluorescence reporter expression. F0s transmitting/F0s outcrossed x 100\u00a0=\u00a0Germline transmission percentage. At least 75 F1 embryos from each F0 adult were screened for fluorescence.*Other experiments showed cx43.4 alleles could be transmitted through the germline in 3/11 F0 fish (27%) with a similar vector (data not shown). cx43.4 indel alleles result in sex determination defects, suggesting germline defects could contribute to variable frequencies for germline transmission of targeted integration alleles (data not shown).^Transmission is based on expression in the vasculature only._\n\n**Table 2.**\n Summary of zebrafish GeneWeld GTag integrations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genomic target</th>\n      <th># of germline transmitting adults</th>\n      <th># of precise 5\u2019 junctions by PCR</th>\n      <th># of precise 3\u2019 junctions by PCR</th>\n      <th># of precise integrations by Southern</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>noto</td>\n      <td>3/5</td>\n      <td>8/8</td>\n      <td>0/3 and n/d</td>\n      <td>0/2</td>\n    </tr>\n    <tr>\n      <td>tyr</td>\n      <td>3/8</td>\n      <td>1/1</td>\n      <td>1/1</td>\n      <td>1/1</td>\n    </tr>\n    <tr>\n      <td>esama</td>\n      <td>12/18</td>\n      <td>8/10*</td>\n      <td>9/10*</td>\n      <td>n/d</td>\n    </tr>\n    <tr>\n      <td>flna</td>\n      <td>3/4</td>\n      <td>4/4</td>\n      <td>n/d</td>\n      <td>n/d</td>\n    </tr>\n    <tr>\n      <td>msna</td>\n      <td>1/4</td>\n      <td>12/12</td>\n      <td>1/12</td>\n      <td>n/d</td>\n    </tr>\n    <tr>\n      <td>aqp1a1</td>\n      <td>2/9</td>\n      <td>1/1</td>\n      <td>1/1</td>\n      <td>n/d</td>\n    </tr>\n    <tr>\n      <td>aqp8a1</td>\n      <td>1/1</td>\n      <td>1/1</td>\n      <td>1/1</td>\n      <td>n/d</td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>25/49 (51%)</td>\n      <td>35/37 (95%)</td>\n      <td>13/28 (46%)</td>\n      <td>1/3 (33%)</td>\n    </tr>\n  </tbody>\n</table>\n\n_F1 or F2 embryos were analyzed for junction fragments.*Embryos from a single esama F0 founder inherited a mix of precise and imprecise junction alleles. Multiple positive FI embryos were obtained in which at least one of the embryos contained precise junctions. A polymorphism in the homology domain was also detected in the esama 5\u2019 junction from F0 #4. One of the F1s from F0#5 also contained an imprecise junction at the 5\u2019 end. esama F1 3\u2019 junctions all contain a single nucleotide variant in the homology arm. Interestingly, this was corrected to the genomic sequence. One esama F1 3\u2019 junction also included a 20 bp insertion.n/d \u2013 not determined._\n\n### Precise 5\u2019 and 3\u2019 junctions and single copy integration in germline GTag alleles\n\nWe performed Genomic Southern blot analyses and PCR junction fragment sequencing of F1 GTag alleles to determine whether the cassettes were precisely integrated at the 5\u2019 and 3\u2019 sides of the genomic target site. Southern blot analysis and sequencing of four tyr-2A- Gal4/VP16 F1 progeny from founder F0#1 demonstrated a single copy integration of the Gal4/VP16 cassette (Table 2 and Figure 4\u2014figure supplement 1) with precise sequence at both 5\u2019 and 3\u2019 ends of the integration site (Table 2 and Figure 4\u2014figure supplement 2). Analysis of four F1 progeny from two noto-2A-TagRFP-CAAX-SV40 founder adults confirmed a single copy integration in noto exon 1 in one of the lines (noto F0 #1 F1s), however the RFLP pattern indicated imprecise integration, while the second noto founder (noto F0#2) transmitted an allele with two RFLP fragments, suggesting an additional off-target integration (Figure 4\u2014figure supplement 1d-f). Sequencing of PCR junction fragments in the noto F1 progeny revealed precise 5\u2019 integration but imprecise 3\u2019 integration, that could represent repair by NHEJ and are consistent with the Southern blot analyses (Table 2 and Figure 4\u2014figure supplement 2). While these data show recovery of a precise single copy integration at tyr, imprecise and possible off-target integrations such as those detected at noto can occur, as we previously observed when integrating a genomic reporter into noto (Wierson et al., 2019a).\n\nJunction fragment analysis of F1 alleles from 5 additional targeted sites in esama, flna, msna, aqp1a1, and aqp8a1 revealed precise integration events at the 5\u2019 side for nearly all genes examined (35/37 or 95% across seven genes) (Table 2 and Figure 4\u2014figure supplement 3 and 4). This result is expected, since screening for fluorescent reporter expression selects for in-frame integration of the cassette at the 5\u2019 end. At the esama locus the 3\u2019 junctions were also precise in 9/10 F1s examined from 6 different F0s, and both aqp1a1 and app8a1 F1 alleles had precise 3\u2019 junctions (Table 2 and Figure 4\u2014figure supplement 3). Junction fragment analysis of 12 F1 msna-2A-Gal4/VP16 from a single founder had precise 5\u2019 integrations, but only one out of the 12 had a precise 3\u2019 junction (Figure 4\u2014figure supplement 3). A lower frequency of precise 3\u2019 integrations (13/28 or 46% across six genes) was observed over all loci (Table 2 and Figure 4\u2014figure supplement 2\u20134). Together, these results indicate that using short homology arm vectors and in vivo UgRNA liberation can promote precise, single copy integration by HMEJ at a genomic sgRNA site at high frequency in the germline, without insertion of donor vector backbone sequences, however, precision at the 3\u2019 end is reduced likely due to a lack of selection.\n\n### Homology engineered to distant genomic sgRNA sites seeds deletion tagging in somatic tissue\n\nTo further demonstrate the utility of short homology arm directed targeted integration, we tested whether the pGTag donor could function to bridge two sgRNA genomic cuts, resulting in simultaneous deletion of intervening sequences and integration of exogenous DNA to create a \u2018deletion tagged\u2019 allele. Guide RNAs that target sites in the retinoblastoma1 (rb1) gene were designed to exons 2 and 4, which are located 394 bp apart, and tested for efficiency (68% and 32% indel formation, Supplementary file 1 Table S1). A more distal guide was designed in exon 25 which sits\u00a0~48.4 kb from the exon 2 sgRNA site and had 19% indel induction (Figure 5a and Supplementary file 1 Table S1). The pGTag-2A-Gal4/VP16 donor contained a 48 bp 5\u2019 homology arm with sequence upstream of the sgRNA site in exon 2, and a 48 bp 3\u2019 homology arm of sequence downstream of the sgRNA site in either exon 4 or exon 25. Injection of the exon 2\u20134 or exon 2\u201325 pGTag-2A-Gal4/VP16 donor into Tg(UAS:mRFP)tpl2 embryos resulted in embryos showing broad and ubiquitous RFP expression (Figure 5b\u2013c). Targeting msna at exons 2 and 6 (88% and 98% indel formation, Supplementary file 1 Table S1), located 7.8 kb apart, with a pGTag-2A-Gal4/VP16 donor containing 48 bp 5\u2019 exon 2 and 3\u2019 exon 6 homology arms (Figure 5d) resulted in RFP expression in a pattern consistent with the expression of msna (Figure 5e,e\u2019). The frequency of RFP positive embryos was similar after targeting rb1 exon 2\u20134 (44\u201378%) and msna exon 2\u20136 (50\u201385%) and did not seem to be affected by increasing the size of the deleted region from 394 bp to 48.4 Kb in rb1 exon 2\u201325 (49\u201370%) (Figure 5f). Somatic junction fragment analysis detected precise integration of the 2A-Gal4/VP16 cassette in both genes at the 5\u2019 upstream exon (rb1 97%; msna 85%) and 3\u2019 downstream exon (rb1 67%; msna 45%) (Figure 5\u2014figure supplement 1). However, only one out of 16 (6%) rb1 targeted F0 founders transmitted a rb1-e2-25-2A-Gal4/VP16 integration allele through the germline (Supplementary file 1 Table S4-S5). The allele contained a precise 5\u2019 junction at the exon 2 target site, but the 3\u2019 junction could not be amplified by PCR. None of the 10 msna e2-e6 2A-Gal4/VP16 targeted F0 zebrafish transmitted a deletion tagged allele to the next generation (Supplementary file 1 Table S4-S5). In contrast, targeting 2A-Gal4/VP16 to msna exon 2 or 6 alone resulted in 2 out of 7 F0s transmitting a targeted allele to the next generation (Supplementary file 1 Table S4-S5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig5-v1.jpg)\n\n**Figure 5.:** (a) Schematic for Gal4/VP16 reporter integration to tag a deletion allele of rb1 exons 2\u20134 (top) and rb1 exons 2\u201325 (bottom). Arrowheads designate CRISPR/Cas9 DSBs. CRISPR sgRNAs in two exons are expected to excise the intervening genomic DNA. The targeting vector contains a 5\u2019 homology arm flanking the upstream exon target site and a 3\u2019 homology arm flanking the downstream exon target site. (b, b\u2019) Live confocal image of F0 Tg(UAS:mRFP)tpl2 embryo after 2A-Gal4/VP16 deletion tagging at rb1 exons 2\u20134. (c, c\u2019) Live confocal image of F1 Tg(rb1-e2-2A-Gal4/VP16) embryo from a founder targeted at rb1 exons 2\u201325. A deletion from exon 2\u201325 was not observed in the F1 generation, but the 5\u2019 junction was in frame. (d) Schematic for 2A-Gal4/VP16 deletion tagging of msna exons 2\u20136. (e, e\u2019) Live confocal image of F0 Tg(UAS:mRFP)tpl2 embryo after 2A-Gal4/VP16 deletion tagging at msna exons 2\u20136. (f) Somatic reporter efficiency of targeted deletion tagging using 48 bp homology arms for rb1 exons 2\u20134, rb1 exons 2\u201325, and msna exons 2\u20136. Data represents mean +/-\u00a0s.e.m. of 4 (rb1) and 5 (msna) independent targeting experiments. Scale bars 200 \u03bcm (b, c, c\u2019, e); 100 \u03bcm (b\u2019, e\u2019).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Detection of precise and imprecise 5\u2019 and 3\u2019 junction fragments in somatic tissue of F0 embryos injected with two guides that target two exons and a pGTag-Gal4/VP16 donor with 5\u2019 and 3\u2019 homology arms corresponding to the 5\u2019 exon and 3\u2019 exon target sites. Cloned PCR amplicons were sequenced from 3 individual embryos for each targeted deletion tagging experiment.\n\nTogether, these results demonstrate simultaneous targeting of two distal genomic cut sites in somatic tissue can create precise integration at both ends of a pGTag reporter cassette, but these events were not efficiently passed through the germline. We attempted deletion tagging at three additional loci, kdrl, s1pr1, and vegfaa, which showed 32\u201381% expression in F0 embryos, but did not recover germline transmission to the F1 generation (Supplementary file 1 Table S2-S5). While HMEJ driven by short homology arms and liberation by the UgRNA can efficiently promote precision targeted integration at a single double strand break in somatic and germline tissue, efficient simultaneous deletion and integration to bride two target sites in the germline likely occurs at a much lower frequency.\n\n### Integration of exogenous DNA using HMEJ in porcine and human cells is more efficient than HR\n\nTo determine if HMEJ integration directed by short homology functions efficiently in large animal systems, we tested our targeting strategy in S. scrofa fibroblasts (Figure 6a\u2013c). A cassette that drives ubiquitous eGFP expression from the UbC promoter (Figure 6a) was designed based on the pGTag vector series, with UgRNA sites on either side of 48 bp homology arms that flank the cassette (UgRNA donor). The 5\u2019 and 3\u2019 homology arms contained sequences that map to a TALEN cut site in intron 1 of the ROSA26 safe harbor locus. Fibroblasts were electroporated with TALENs, UgRNA, and Cas9 RNAs, and the ROSA26 UbC:GFP UgRNA targeting vector. The efficiency of precision integration was compared to cells electroporated with just the TALEN pair and a donor containing 760 bp homology arms (HR Donor), which would integrate through homologous recombination (HR). GFP expression was observed in 23% of colonies using the UgRNA donor, compared to 2% of colonies using the HR donor with 760 bp homology arms (Figure 6b). 5\u2019 and 3\u2019 junctions were observed in over 50% of the UgRNA donor GFP+ colonies while none of the HR donor GFP+ colonies contained both junctions (Figure 6c). Sequencing of junctions from 8 UgRNA donor GFP+ colonies that were positive for both junctions showed precise integration in 7/8 colonies at the 5\u2019 junction and 8/8 colonies at the 3\u2019 junction.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig6-v1.jpg)\n\n**Figure 6.:** (a) Strategy for integration using HMEJ and HR donors into intron 1 of S. scrofa ROSA26 locus. Arrowheads CRISPR/Cas9 (for HMEJ donor) and TALEN (genome) DSBs. (b) Targeting efficiency of the HMEJ donor vs the HR donor as reported by GFP positive colonies out of total colonies. (c) Percent of GFP positive colonies analyzed containing properly sized junction fragments, comparing HMEJ and HR donors. Data are from three independently targeted cell populations. Data represents mean +/-\u00a0s.e.m. of 3 independent targeting experiments. (d) Diagram of HR and HMEJ strategies for targeted integration of a MND:GFP reporter cassette into the human AAVS1 locus. (e) Flow cytometry analysis of GFP expression 14 days post-electroporation for each targeting modality: HR (left), HMEJ without universal sgRNA (middle), and HMEJ with universal sgRNA (right). Stable gate was drawn to measure the uniformly expressing population formed by targeted integration and was set based on episome only controls. (f) Quantification of stable GFP expressing population as measured by flow cytometry at day 14. Data are from three independently targeted cell populations. Data represents mean +/-\u00a0s.e.m. of 3 independent targeting experiments. p values calculated using two-tailed unpaired t-test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** FACs sorted percent of GFP+ cells out of total K-562 cells at day 7, 21, 28, and 50. (b) Summary data for percent of stable GFP+ K-562 cells from day 7, 14, 21, and 28. (b\u2019) Summary data for percent of total cells GFP+ from day 7, 14, 21, 28, and 50. Data represents mean +/-\u00a0s.e.m. of 3 independent targeting experiments. p values calculated using two-tailed unpaired t-test.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53968/elife-53968-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) Direct sequencing of 5\u2019 junction PCR products derived from three independently targeted bulk cell populations.\u00a048 bp HMEJ homology region and remainder of genomic AAVS1 sgRNA are indicated. Genomic sequence is directly left of the 48 bp HMEJ region and vector sequence is directly to the right of the AAVS1 sgRNA cut site.\n\nWe next tested the efficiency of HMEJ targeted integration in human K-562 cells using a donor vector with a MND:GFP reporter (Halene et al., 1999) and 48 bp homology arms designed to target a CRISPR/Cas9 site in the AAVS1 safe harbor (Figure 6d\u2013f). K-562 cells were electroporated with AAVS1 sgRNA, UgRNA, Cas9 and the UgRNA HMEJ donor or an HR donor with long 806 bp homology arms. Cells were FACs sorted by GFP at day 14 following electroporation. Over 50% of cells targeted with the HMEJ 48 bp homology arm donor were GFP positive, compared to only 6% of cells electroporated with the 806 bp homology arm HR donor, indicating HMEJ promoted efficient integration and stable expression of the MND:GFP cassette at the AAVS1 locus (Figure 6\u2014figure supplement 1). GFP expression was maintained over 50 days, and 5\u2019 precise junction fragments were observed following PCR amplification in bulk cell populations (Figure 6\u2014figure supplement 2). These results demonstrate that the HMEJ strategy using short homology arms outperforms traditional HR techniques for targeted integration in mammalian cell systems and is effective without antibiotic selection.\n\n## Discussion\n\nHere we adapted the short homology arm targeted integration approach described by Hisano et al. (2015) to develop a vector suite, pGTag, and detailed protocol for efficient site-directed gene targeting in zebrafish. We extended this strategy to mammalian cells and show efficient recovery of precision targeted integration at safe harbor loci in pig fibroblasts and human K-562 cells. The pGTag vector series has been deposited at Addgene, and the open source protocol and homology arm website design tool are available at The Gene Sculpt suite (genescultp.org) (Mann et al., 2019). We engineered our targeting vectors with knock-in cassettes flanked by enzyme sites to clone short homology arms that are first assembled by oligonucleotide annealing. We also placed a universal sgRNA sequence outside the homology arm cloning sites, which allows for Cas9 liberation of the targeting cassette in vivo. The pGTag cassettes contain 2A-fluorescent protein or 2A-Gal4/VP16 reporters for visualizing integrated reporter expression in injected embryos. Together, these design elements, that include simultaneous double strand breaks by Cas9 at the genomic target site and vector universal sgRNA sites, and preselection of fluorescent reporter expression that requires in frame fusion and precise 5\u2019 targeted integration, may enhance the efficient recovery of germline alleles over previous reports in zebrafish (Hisano et al., 2015; Hoshijima et al., 2016; Shin et al., 2014). Our results show 49% of all adult zebrafish preselected for on target reporter expression as embryos transmitted precision targeted knock-in alleles through the germline, with 17.4% of gametes carrying the edited allele of interest (Supplementary file 1 Table S4-S5). We demonstrated efficient targeted integration of cargos up to 2 kb in length in zebrafish, pig fibroblasts, and human K-562cells. Both CRISPR/Cas9 and TALEN genomic sites are targeted with high efficiency, providing flexibility in design and increasing genome-wide accessibility.\n\nOur initial targeting experiments at noto using a single 5\u2019 homology arm and single noto sgRNA to target the genome and donor vector showed an increase in targeting efficiency as the length of the homology arm increased from 12 to 48 bp. However, when targeting was performed with homology on both sides of the cargo flanked by the universal UgRNA sites, short and long homology arms were equally efficient at targeted integration (Figure 3e). This may reflect enhanced efficiency of in vivo cargo liberation by the UgRNA. Positive integration events of tagged alleles are selected by fluorescence reporter expression, reflecting the endogenous pattern of expression of the targeted gene. Our observations indicate this correlates with predominantly precise integration events as analyzed by PCR and sequencing in both somatic tissue and through the germline. We speculate that inclusion of homology at the 3\u2019 end of our cargo creates competition for the donor DNA ends, as not all editing events are precise at both 5\u2019 and 3\u2019 junctions (Figure 4\u2014figure supplement 1 and 2). Thus, it is conceivable that precise events at the 3\u2019 end could preclude precise integration at the 5\u2019 end during some editing events, and vice versa. It is tempting to speculate that these data hint at synthesis dependent strand annealing (SDSA) as a possible DNA repair mechanism for pGTag donor integration (Ceccaldi et al., 2016). After strand invasion using either of the homology domains and replication through the reporter, second DNA end capture may abort before or after replication through the opposing homology domain, resulting in imprecision, as greater than or equal to 150 bp is required for proper second end capture in yeast (Mehta et al., 2017). Our targeting results are similar to a recent study in zebrafish that reported short homology directed integration of a 2A fluorescent reporter near the termination codon at three genes (Luo et al., 2018). Our study robustly demonstrates the short homology targeted integration strategy can be reproducibly applied at many loci to generate zebrafish knock-in mutations which transmit through the germline at high frequency.\n\nUsing two sgRNAs we attempted to simultaneously delete a section of the rb1 gene and introduce a 2A-Gal4/VP16 reporter cassette to create a deletion tagged allele. While we found evidence of efficient deletion and tagging in F0 targeted embryos, we were unable to recover germline alleles. It is possible that the inability to recover rb1 tagged alleles was due to the essential requirement for this tumor suppressor gene, in either somatic tissue or germline stem cells. Our previous targeted mutagenesis at rb1 revealed it is necessary to significantly reduce the amount of TALENs or CRISPR/Cas9 sgRNA injected into the embryo in order to prevent complete bi-allelic inactivation and allow for recovery of viable mosaic adults that transmit indel mutations through the germline (Solin et al., 2015). Combined with previous work that indicates stem cells are susceptible to apoptosis following gene editing (Ihry et al., 2018; Li et al., 2018), these factors may have contributed to the lack of recovery of rb1 deletion tagged alleles. Additional experiments at non-essential genes are needed to determine the efficiency of simultaneous gene deletion and tagging.\n\nPrevious studies in zebrafish examined whether homology arm length (Shin et al., 2014) or in vivo I-SceI cleaved, linear templates with exposed homology arms (Hoshijima et al., 2016) would enhance targeting efficiency. We compared the effect of short and long homology arm length on targeted integration in somatic tissue using our pGTag vectors and targeting strategy. Increasing the cx43.4 5\u2019 and 3\u2019 homology arms to 1 kb did not result in a significant difference in targeting efficiency compared to vectors with short 24 bp or 48 bp homology arms, as assayed by fluorescence (Figure 3). As expected, injection of the long homology arms vector without the universal sgRNA to liberate the arms effectively eliminated reporter expression and targeted integration. We also found there may be a significant disadvantage to long homology arms. Injection of the esama 2A-Gal4/VP16 vector with 1 kb homology arms led to nearly 100% of embryos showing widespread RFP expression, and 30\u201360% of embryos injected with circular plasmid alone were reporter positive (Figure 3\u2014figure supplement 2). Together, these results suggest long homology arms of intronic or intergenic sequences may contain repetitive elements that drive off-target integration across the genome. Alternatively, intronic promoters or enhancers could be unmasked by integration at ectopic sites, leading to high rates of false positives. Given the simple design, low cost, and ease of assembly of short homology arms, this approach may be preferable for most precision targeted integration experiments. However, further experiments are required at additional loci to determine whether the advantages of using short homology in targeting vectors represents a universal rule.\n\nOur results show short homology arms are effective at directing precision targeted integration at CRISPR/Cas and TALEN sites in mammalian cells without selection by antibiotic resistance. Introducing a universal targeting vector with 48 bp homology arms into pig fibroblasts or human K562 cells lead to a 10-fold increase in targeted integration in comparison to a circular template that would integrate by homologous recombination. This is in contrast to previous studies in mammalian cells that indicated the frequency of targeted integration was not significantly enhanced until the length of homology arms was increased to 600 bp (Zhang et al., 2017). This discrepancy may reflect variation in experimental design or activity of DNA repair pathways in different cell types. Our results showing robust precision targeted integration using short homology arms in zebrafish and two mammalian cells lines suggest this simple, straightforward approach will be broadly applicable across species and model systems. In support of this, a recent study has shown 100 bp short homology arms and flanking CRISPR sgRNA sites efficiently directs targeted integration of DNA cassettes inDrosophilaand S2 cells (Kanca et al., 2019).\n\nIn summary, we have shown short homology arm directed targeted integration is highly efficient in zebrafish and mammalian cell lines. The simplicity of our strategy for building arms into the pGTag vectors, a universal guide to liberate the targeting cassette, and the GeneSculpt Suite website together will aid in streamlining targeted integration experimental design. Our vector suite provides a platform that can expand the zebrafish functional genomics toolkit for efficient site-directed modifications that create gene fusions, introduce cDNA variants, recombinases, or floxed gene-breaking cassettes (Clark et al., 2011) for conditional gene inactivation. Targeted integration will allow tagged or mutant genes to be expressed at endogenous levels and avoid ectopic or over-expression that can result from random transgene integration. These tools will broaden the use of designer nucleases for homology-based gene editing at CRISPR/Cas9 and TALEN cut sites in zebrafish and mammalian cell lines. Our results open the door for more advanced genome edits in animal agriculture and human cell lines.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>anxa2a</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000003216</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>aqp1a1</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000023713</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>aqp8a1</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000045141</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>cx43.4</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000007099</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>esama</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000077039</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>flna</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000074201</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>kdrl</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000105215</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>mmp14a</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000002235</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>msna</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000058128</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>rb1</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000006782</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>s1pr1</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000042690</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>tyr</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000039077</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Danio rerio)</td>\n      <td>vegfaa</td>\n      <td></td>\n      <td>ensemble: ENSDARG00000103542</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>AAVS1</td>\n      <td></td>\n      <td>HGCN:22 Adeno-Associated Virus Integration Site 1</td>\n      <td>(Kotin et al., 1992)</td>\n    </tr>\n    <tr>\n      <td>Gene (Sus scrofa)</td>\n      <td>ROSA26</td>\n      <td>This paper</td>\n      <td>Porcine homolog of mouse ROSA26 safe harbor locus for transgene integration</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>NEB Stable Competent E. coli</td>\n      <td>New England Biolabs</td>\n      <td>C3040I</td>\n      <td>Electrocompetent Cells</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>One Shot TOP10 Chemically Competent E. coli</td>\n      <td>Thermo Fisher/Invitrogen</td>\n      <td>C404010</td>\n      <td>Electrocompetent Cells</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>WIK</td>\n      <td>Zebrafish International Resource Center</td>\n      <td>ZIRC:ZL84</td>\n      <td>Wildtype strain of zebrafish</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>Tg(UAS:mRFP)tpl2</td>\n      <td>Balciunas lab</td>\n      <td>Tg(miniTol2\u00a0&lt;\u00a014XUAS:mRFP, \u03b3Cry:GFP&gt;)tpl2</td>\n      <td>Maintained in the lab of D. Balciunas (Balciuniene et al., 2013)</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>K562</td>\n      <td>ATCC</td>\n      <td>ATCC:CCL-243</td>\n      <td>chronic myelogenous leukemia cell line</td>\n    </tr>\n    <tr>\n      <td>Cell line (Sus scrofa)</td>\n      <td>Porcine fibroblast cell line</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Recombinetics, Inc</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>pAAVS1-MND:GFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>B. Moriarity lab</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Sus scrofa)</td>\n      <td>pROSA26 UbC:GFP UgRNA</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Recombinetics, Inc</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pT3TS-nCas9n</td>\n      <td>Wenbiao Chen</td>\n      <td>Addgene:46757</td>\n      <td>Plasmid for in vitro synthesis of Cas9 mRNA</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>p494-2a-TagRFP-CAAX-SV40</td>\n      <td>This paper</td>\n      <td></td>\n      <td>available from J. Essner lab; Deposited at Addgene</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGTag-2A-TagRFP-CAAX-SV40</td>\n      <td>This paper</td>\n      <td></td>\n      <td>available from J. Essner lab; Deposited at Addgene</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGTag-2A-Gal4/VP16-\u03b2actin</td>\n      <td>This paper</td>\n      <td></td>\n      <td>available from J. Essner lab; Deposited at Addgene</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pGTag-2A-eGFP-SV40</td>\n      <td>This paper</td>\n      <td></td>\n      <td>available from J. Essner lab; Deposited at Addgene</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td></td>\n      <td>This paper</td>\n      <td>PCR primers and oligos</td>\n      <td>See Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>pCR4 TOPO TA Cloning Kit</td>\n      <td>ThermoFisher/Invitrogen</td>\n      <td>ThermoFisher:K457502</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Zero Blunt TOPO PCR Cloning Kit</td>\n      <td>ThermoFisher/Invitrogen</td>\n      <td>ThermoFisher:K2800J10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NEBNext Ultra II DNA Library Prep Kit for Illumina</td>\n      <td>New England Biolabs</td>\n      <td>NEB:E7645L</td>\n      <td>For MiSeq multiplex DNA sequencing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CRISPRScan</td>\n      <td>A. Giraldez lab</td>\n      <td>http://www.crisprscan.org/</td>\n      <td>(Moreno-Mateos et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>pGTag</td>\n      <td>This paper</td>\n      <td>http://genesculpt.org/gtaghd/ and https://github.com/Dobbs-Lab/GTagHD Wierson et al., 2019b\u00a0copy archived at https://github.com/elifesciences-publications/GTagHD</td>\n      <td>short homology arm design</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ICE</td>\n      <td>Synthego</td>\n      <td>Inference of CRISPR Edits (ICE)https://www.synthego.com/products/bioinformatics/crispr-analysis</td>\n      <td>Indel analysis of Sanger sequenced DNA</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cas-Analyzer</td>\n      <td>RGEN</td>\n      <td>CRISPR RGEN Tools http://www.rgenome.net/cas-analyzer/#!</td>\n      <td>Indel analysis of NextGen sequenced DNA</td>\n    </tr>\n  </tbody>\n</table>\n\n### Contact for reagent and resource sharing\n\nFurther information and requests for resources and reagents should be directed to Jeffrey Essner (jessner@iastate.edu).\n\n### Zebrafish strains and mammalian cell lines\n\nZebrafish were maintained on an Aquatic Habitats (Pentair) aquaculture system at 27\u00b0C on a 14 hr light/10 hr dark cycle. Wild-type WIK were obtained from the Zebrafish International Resource Center (https://zebrafish.org/home/guide.php). The transgenic line Tg(miniTol2\u00a0<14XUAS:mRFP, \u03b3Cry:GFP>)tpl2, referred to as Tg(UAS:mRFP)tpl2, was previously described (Balciuniene et al., 2013). All zebrafish experiments were carried out under approved protocols from Iowa State University Animal Care and Use Committee Log#11-06-6252, in compliance with American Veterinary Medical Association and NIH guidelines for the humane use of animals in research.\n\nThe human K-562 chronic myelogenous leukemia cell line (ATCC CCL-243) used in gene targeting experiments was cultured at 37\u00b0C in 5% CO2 in RPMI-1640 medium (Thermo Fisher Scientific) supplemented with 10% fetal bovine serum (FBS) and Penicillin/Streptomycin. Electroporation was conducted with 1.5 \u00d7 105 cells in a 10 \u03bcl tip using the Neon electroporation device (Thermo Fisher Scientific) with the following conditions: 1450V, 10 ms, 3x pulse. Nucleic acid dosages were as follows: 1.5 \u03bcg Cas9 mRNA (Trilink Biotechnologies), 1 \u03bcg each chemically modified sgRNA (Synthego), and 1 \u03bcg donor plasmid.\n\nPorcine fibroblasts were cultured in DMEM (high glucose) supplemented to 10% vol/vol FBS, 20 mM L-glutamine and 1X Pen/Strep solution and transfected using the Neon system (Invitrogen). Briefly, 1 \u00d7 106 fibroblasts were transfected with 1 ug of polyadenylated ROSA TALEN mRNA, 1 \u03bcg of universal UgRNA, 1 \u03bcg of polyadenylated Cas9 mRNA and 1 \u03bcg of donor plasmid. Transfected cells were cultured for 3 days at 30\u00b0C before low density plating, extended culture (10 days) and colony isolation. Individual colonies were aspirated under gentle trypsanization, replated into 96- well plates and cultured for 3\u20134 days.\n\n### pGTag series vectors\n\nTo build the pGTag vector series, 2A-TagRFP, 2A-eGFP, and 2A-Gal4/VP16 cassettes were assembled from a 2A-TagRFP-CAAX construct, p494. To clone the eGFP cassette, the plasmid p494 was amplified with primers F-p494-XhoI and R-p494-SpeI to generate unique enzyme sites in the backbone. The eGFP coding sequence (Clontech Inc) was amplified with the primers F-eGFP-SpeI and R-eGFP-XhoI to generate the corresponding enzyme sites on the eGFP coding sequence. Fragments were digested with SpeI-HF and XhoI (NEB) and following column purification with the Qiagen miniprep protocol, were ligated to the plasmid backbone with T4 ligase (Fisher).\n\nThe Gal4/VP16 coding sequence and zebrafish \u03b2-actin 3\u2019 untranslated region was amplified from vector pDB783 (Balciuniene et al., 2013) with primers F-2A-Gal4-BamHI and R-Gal4-NcoI to add a 2A peptide to the 5\u2019 end of the Gav4Vp16 cDNA. The resulting PCR product was then cloned into the intermediate Topo Zero Blunt vector (Invitrogen) and used for mutagenesis PCR with primers F and R \u2018-gal4-Ecofix\u2019 to disrupt the internal EcoRI restriction site. The resulting Gal4/VP16 sequence was cloned into the BamHI and NcoI sites in the p494 backbone.\n\nThe 5\u2019 universal guide RNA UgRNA site and lacZ cassette were added to pC-2A-TagRFP-CAAX-SV40, pC-2A-eGFP-SV40, and pC-2A-Gal4/VP16-\u03b2-actin with the following steps. The lacZ was first amplified with primers F-lacZ and R-lacZ, which add the type IIS enzyme sites to either end of the lacZ. The resulting PCR product was then cloned into an intermediate vector with the Zero Blunt TOPO PCR Cloning Kit (Invitrogen). This intermediate was used as a template in a nested PCR to add the Universal guide sequence GGGAGGCGTTCGGGCCACAGCGG to the end of the lacZ sequence. The nested PCR used primers F-lacZ-universal-1 and R-lacZ-universal-BamHI to add the first part of the universal guide to one end and a BamHI site to the other. This was used as template for PCR with the primers F-lacZ-universal-EcoRI and R-lacZ-universal-BamHI to add the remainder of the universal guide and an EcoRI site. The fragment was column purified as above, digested with EcoRI-HF and BamHI-HF and cloned into the appropriate sites in the three vectors.\n\nThe 3\u2019 universal guide RNA UgRNA site and type 2 restriction enzyme sites were cloned into each vector in two steps. A segment from a Carp \u03b2-actin intron containing a 99 bp spacer flanked by two BspQI sites was amplified using the primers F-3\u2019-uni-1 and R-3\u2019-uni-1 to add the universal site to one side of the spacer. This product was column purified as above and used as template for the second amplification with primers F-3\u2019-uniNco1 and R-3\u2019-uniEagI to add cloning sites. This product was column purified and cloned using the Topo zero blunt kit. This intermediate was digested with NcoI-HF and EagI, and the BspQI fragment purified and cloned into the three vectors as above. Ligations were grown at 30\u00b0C to reduce the possibility of recombination between the two universal guide sites.\n\nCorrect clones for pU-2A-TagRFP-CAAX-U, pU-2A-eGFP-U, and pU-2A-Gal4/VP16-U were selected and used as template for mutagenesis PCR with KOD to remove extra BspQI sites from the backbone with primers F/R-BBfix, digested with DpnI (NEB), and ligated with T4 ligase. A correct pU-2A-TagRFP-CAAX-U clone was used as template for PCR with F/R-TagRFPfix to interrupt the BspQI site in the TagRFP coding sequence as above. A correct clone of pU-2A-Gal4/VP16-U was selected and used as template with primers F/R-Bactfix to remove the BspQI site in the \u03b2-actin terminator, the product was re-cloned as above. All constructs were sequence verified.\n\n### sgRNA target site selection, homology arm design and pGTag donor vector construction\n\nCRISPR/Cas9 target sites in exons of zebrafish genes were identified using CRISPRScan (http://www.crisprscan.org/; Moreno-Mateos et al., 2015). 5\u2019 and 3\u2019 homology arms of specified length directly flanking a genomic targeted double strand break were generated by annealing two complementary oligonucleotides. The double stranded 5\u2019 and 3\u2019 homology arms with appropriate overhangs were cloned into the pGTag vector BfuAI and BspQI sites, respectively, flanking the cargo. A three-nucleotide buffer sequence lacking homology to the genomic target site was engineered between the donor UgRNA PAM and the 5\u2019 end of the homology arms. This was done in case the UgRNA PAM sequence was complementary to the nucleotides located 5\u2019 to the start of the homology arm, which would increase the 24 or 48 bp homology arm length. Maps for the pGTag vectors and an open source protocol for cloning the homology arms are available at http://genesculpt.org/gtaghd/. The pGTag vectors are available through Addgene (https://www.addgene.org/kits/essner-geneweld/).\n\nTo generate 1 kb homology arms for zebrafish cx43.4 and esama,\u00a0~2 kb of genomic DNA surrounding the CRISPR target site was PCR amplified from adult WIK finclips using the proofreading enzyme KOD (EMD Millipore), and then sequenced to identify polymorphisms. Primers were designed to sit 1032 bp up and down stream of the cut site according to the Ensemble.org reference genome V11. Primers also contain either BfuAI and BspQI recognition sequences to make the appropriate overhangs for Golden Gate cloning into a pGTag vector or sequence for Gibson cloning into a pGTag vector. PCR was performed with the proofreading polymerase KOD and using genomic DNA from animals homozygous for the most common polymorphisms was used as template. The products were then Topo Blunt (Thermo Fisher Scientific) cloned for sequencing. The homology arms were Golden Gate or Gibson cloned into a pGTag vector containing the same cassette as the previous injections for the target locus. pGTag vectors with 1 kb homology arm vectors were injected into embryos from adults with the matching genomic sequence. Supplementary file 1 Table S5 lists the sequences of all homology arms, sgRNA target sites, and spacers. For each locus injections were done in triplicate, and for those targeting the locus with 1 kb homology arms the following controls were also performed; plasmid only, plasmid with universal gRNA and without genomic gRNA, and plasmid linearized in vitro with genomic gRNA.\n\n### Zebrafish embryo injection\n\nThe pT3TS-nCas9n expression vector for in vitro synthesis of nls-Cas9-nls mRNA was a gift from Wenbiao Chen (Addgene plasmid # 46757). XbaI linearized pT3TS-nCas9n was purified under RNase-free conditions with the Promega PureYield Plasmid Miniprep System. Linear, purified pT3TS-nCas9n was used as template for in vitro transcription of capped, polyadenylated mRNA with the Ambion T3TS mMessage mMachine Kit. mRNA was purified using the Qiagen miRNeasy Kit. The genomic and universal sgRNAs were generated using cloning free sgRNA synthesis as described in Varshney et al. (2015) and purified using Qiagen miRNeasy Kit. Donor vector plasmid DNA was purified with the Promega PureYield Plasmid Miniprep System.\n\nsgRNA targeted mutagenesis efficiency was determined by measuring the frequency of indel mutations at the target site. Individual embryos were injected with 150 pg Cas9 mRNA and 25 pg sgRNA. PCR amplicons over the cut site were first examined for mutagenesis (or a smear) on a 2\u20133% agarose gels in 1X TAE. For the flna exon 4 and msna exon 2 sgRNAs, a single 2 dpf embryo was placed in 15 ul of 50 mM NaOH, heated at 95\u00b0C for 30 min to extract genomic DNA, and neutralized by addition of 1.5 ul of 1M Tris pH 8.0. 1 ul of DNA extract was used as template for PCR to generate amplicons for sequence analysis. The flna exon 4 and msna exon 2 amplicons were sequenced directly by Sanger sequencing at the Iowa State University DNA Facility, and indel frequency determined using the Inference of CRISPR Edits (ICE) analysis tool at Synthego (https://www.synthego.com/products/bioinformatics/crispr-analysis). For the noto exon 1, cx43.4 exon 2, esama exon 2, msna exon 6, rb1 exon 2, exon 4 and exon 25, aqp1a1 exon 1 and aqp8a1 exon 1 sgRNAs, at 3 dpf 5 embryos were pooled in 50 ul of 50 mM NaOH, and 2 ul used as template for PCR. Barcoded libraries were prepared using NEBNext Ultra II DNA Library Prep Kit for Illumina (NEB #E7645L) for MiSeq 250 bp single read sequencing at the University of Kansas Genome Sequencing Core. Indel analysis of MiSeq reads was performed using Cas-Analyzer at CRISPR RGEN Tools (http://www.rgenome.net/cas-analyzer/#!). MiSeq data can be found at: Essner, Jeffrey; McGrail et al., 2011, MiSeq data for Cas9, Dryad, Dataset, https://doi.org/10.5061/dryad.m63xsj3zc.\n\nLinear targeting cassettes for cx43.4 and esama were generated by restriction enzyme digestion with enzymes that cut in or adjacent to the 1 kb homology arms, followed by gel isolation and re-purification with the Promega PureYield Plasmid Miniprep System. The resulting linear fragments were similar in size to the circular vectors containing short homology arms. The cx43.4 vector was digested with NdeI, which truncates the 5\u2019 homology arm to 900 bp, and EcoRI, which truncates the 3\u2019 homology arm to 700 bp. In the esama vector the EcoRI site sits upstream and next to the 5\u2019 universal guide RNA sequence, leaving 31 bp of non-homologous sequence on the 5\u2019 end of the 1 kb arm. The EagI site sits 16 bp downstream of the 3\u2019 UgRNA target sequence, adding 43 bp of non-homologous sequence at the 3\u2019 end of the 3\u2019 homology arm.\n\nAll genes were targeted by injection into the cytoplasm of the 1 cell stage embryo 2 nl of solution containing 150 pg of nCas9n mRNA, 25 pg of genomic sgRNA, 25 pg of UgRNA, and 10 pg of donor DNA diluted in RNAse free ddH2O with the exception of rb1. The rb1 targeting mixture contained 300 pg nCas9n mRNA. Gal4/VP16 pGTag donors were injected into embryos from the UAS mRFP reporter line Tg(miniTol2\u00a0<14XUAS:mRFP, \u03b3Cry:GFP>)tpl2 (Balciuniene et al., 2013).\n\n### Zebrafish targeted integration junction fragment analysis and recovery of germline alleles\n\nInjected embryos were screened for fluorescence reporter expression at 24, 48 and 72 hr post fertilization on a Zeiss Discovery dissection microscope. Genomic DNA for PCR was extracted by digestion of single embryos in 50 mM NaOH at 95\u00b0C for 30 min and neutralized by addition of 1/10th volume 1M Tris-HCl pH 8.0. Junction fragments were PCR-amplified with primers listed in Supplementary file 1 Table S6 and the PCR products TOPO-TA cloned before sequencing. For live imaging of reporter expression, embryos were mounted on slides in 1.2% low-melt agarose in 160 ug/ml tricaine methanesulfonate, and images were captured on a Zeiss LSM 700 laser scanning confocal microscope. RFP or GFP positive embryos were raised to adulthood and outcrossed to wildtype WIK adults to test for germline transmission of fluorescence in F1 progeny. Adults that were injected as embryos with Gal4/VP16 constructs targeting tyr, esama, rb1 and msna were crossed to Tg(miniTol2\u00a0<14XUAS:mRFP, \u03b3Cry:GFP>)tpl2 (Balciuniene et al., 2013).\n\n### Zebrafish genomic southern blot analysis\n\nGenomic Southern blot and knock-in cassette copy number analysis of zebrafish F1 progeny carrying targeted integration alleles was performed as described previously (McGrail et al., 2011). Adult zebrafish were euthanized in ice cold water, flash frozen in liquid nitrogen, and tissues ground with a mortar and pestle. Genomic DNA was extracted from ground tissue using the Qiagen Blood and Cell Culture Maxi Kit (Qiagen). 10 ug of genomic DNA was digested with restriction enzymes, electrophoresed, and blotted using a Whatman Turboblotter Rapid Downward Transfer System (ISC BioExpress). DIG labeled probes were synthesized with PCR-DIG Probe Synthesis Kit (Roche), and hybridization and chemiluminescence detection were performed with DIG Easy Hyb Granules/Wash and Block Buffer Set and CSPD (Roche). Images were captured and analyzed on a BioRad ChemiDoc XRS system. PCR primers used for genomic and donor specific probes are listed in Supplementary file 1 Table S6.\n\n### Targeted integration junction fragment analysis in pig fibroblasts\n\nIndividual colonies were scored for GFP expression and prepared for PCR by washing with 1X PBS and resuspension in PCR-safe lysis buffer (10 mM Tris-Cl, pH 8.0; 2 mM EDTA; 2.5% (vol/vol) Tween-20; 2.5% (vol/vol) Triton-X 100; 100 \u03bcg/mL Proteinase K followed by incubation at 50\u00b0C for 60 min and 95\u00b0C for 15 min. PCR was performed using 1X Accustart Supermix (Quanta) with the primers: 5\u2019 junction F-5\u2019 TAGAGTCACCCAAGTCCCGT-3\u2019, R-5\u2019- ACTGATTGGCCGCTTCTCCT-3\u2019; 3\u2019 junction F-5\u2019- GGAGGTGTGGGAGGTTTTT-3\u2019, R-5\u2019- TGATTTCATGACTTGCTGGCT-3\u2019. ROSA TALEN sequences are: TAL FNG NI NI HD HD NG NN NI NG NG HD NG NG NN NN; TAL RHD NN NG NI HD NI HD HD NG NN HD NG HD NI NI NG.\n\n### K-592 flow cytometry\n\nK-562 cells were assessed for GFP expression every 7 days for 28 days following electroporation. Flow cytometry was conducted on an LSRII instrument (Becton Dickinson) and data was analyzed using FlowJo software v10 (Becton Dickinson). Dead cells were excluded from analysis by abnormal scatter profile and exclusion based on Sytox Blue viability dye (Thermo Fisher Scientific).\n\nJunction PCR to detect targeted integration was conducted using external genomic primers outside of the 48 bp homology region and internal primers complementary to the expression cassette. PCR was conducted using Accuprime HIFI Taq (Thermo Fisher Scientific). PCR products from bulk population were sequenced directly.\n\n### Quantification and statistical analysis\n\nStatistical analyses were performed using GraphPad Prism software. Data plots represent mean +/-\u00a0s.e.m. of n independent experiments, indicated in the text. p values were calculated with two-tailed unpaired t-test. Statistical parameters are included in the Figure legends.\n\n### Data and software availability\n\nOur webtool GTagHD was developed to assist users in designing oligonucleotides for targeted integration using the pGTag vector suite (Mann et al., 2019). GTagHD guides users through entering: 1) the guide RNA for cutting their cargo-containing plasmid; 2) the guide RNA for cutting their genomic DNA sequence; 3) the genomic DNA sequence, in the form of a GenBank accession number or copy/pasted DNA sequence; and 4) the length of microhomology to be used in integrating the plasmid cargo. If the user is utilizing one of the pGTag series plasmids, GTagHD can also generate a GenBank/ApE formatted file for that plasmid, which includes the user's incorporated oligonucleotide sequences. GTagHD is freely available online at http://genesculpt.org/gtaghd/ and for download at https://github.com/Dobbs-Lab/GTagHD.\n",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "95bd9a97-695f-49a2-8559-9694fc0cd3fb",
+      "submission_id": "bad486c0-9dbb-4a8d-9459-8aa767807c9d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lilianna Solnica-Krezel, Washington University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53968.sa1](https://doi.org/10.7554/eLife.53968.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWierson et al., report methodological improvement for targeted integration of DNA reporter sequences in zebrafish and mammalian cells. This approach combines the use of short homology arms with the deployment of universal CRISPR sgRNA sequences flanking reporter sequences that allows to expose homology arms in vivo. Along with the suite of vectors that facilitate adopting these approaches this work will stimulate genome engineering-based lines of research.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Efficient targeted integration directed by short homology in zebrafish and mammalian cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Lilianna Solnica-Krezel as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard White as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript reports the engineering of a homology directed repair platform for tagging loci after double strand breaks in zebrafish, pig and human cell lines. The authors demonstrate that short homology arms are ideal for targeting, with longer homology arms offering little advantage. Moreover, in vivo release of a double stranded donor with short homology arms is sufficient to drive targeted homology end joining (HMEJ) repair at high efficiency. The manuscript also reports a workaround for loci that are lowly expressed and thus difficult or impossible to directly screen for successful integration events by fluorescence: inserting a Gal4 instead of a fluorescent protein amplifies the signal in a UAS-FP zebrafish line and thus enables screening by fluorescence. The most interesting aspect of the work was the observation that 5' or 3' homology may compete for one another to reduce efficiency and possibly reduce for precise repair at these 5' and 3' ends.\n\nDespite the fact that there are several previous published studies that have reported alternative approaches for achieving this task, precise gene editing is still a non-routine task for zebrafish labs due to low efficiency and imprecise integration. Thus, the combination of technological advancements in this area and the tools generated here that can be broadly shared will have a major impact on the zebrafish community as a whole, and also advance gene editing approaches in mammalian cells.\n\nTherefore, although there was a discussion about the novelty and advance reported, the reviewers consider the manuscript in principle suitable for publication in eLife. However, they have raised a number of questions and concerns that will need to be addressed before the manuscript can be published.\n\nEssential revisions:\n\n1) The Southern blots shown in Figure 4B, C should include images of higher molecular weight regions, to more fully assess potential off-targets integrations. Currently they are limited to ca. 8Kb.\n\n2) The experiments presented in Figure 2F for cx43.4 support the notion that when the Universal CRISPR sgRNA and CRISPR/Cas9 are co-injected with the donor construct to expose homology arms in vivo, increasing the length of homology arms to 1kb does not increase efficiency of integration based on reporter expression in F0. However, the experiments comparing the circular and in vitro linearized construct with the same homology arms of 1kb require providing further detail and discussion.\n\nIn particular, it is not clear where in the donor construct was the cut introduced to linearize the HR construct? The in vitro linearized constructs appear to have overhangs that are non-homologous to the target locus (based on what could be deduced from the Materials and methods). Shin et al., 2014 carried systematic comparison of integration efficiency of circular or in vitro linearized at various positions, HR constructs, concluding that internal cuts within homology arms increase efficiency over a circular donor. The current work that introduces cuts in vivo and exposes homology arms is consistent with these results. Therefore, assessing the effect of different cut sites as well as in vitro/in vivo generation of linear ends will be important to clarify what works best. This can be done by assessing reporter expression in F0, without studying germline transmission.\n\n3) An inherent problem of all studies published on CRISPR/Cas9 gene editing technologies: in the absence of data providing direct cross-comparisons of different strategies it is difficult to compare the reported efficiencies across different approaches/research groups, and thus not possible to judge for a reviewer (or reader) whether this technique will really be superior compared to others. In this manuscript, the authors do provide some level of comparison by comparing with uncut and long homology arms and mention other studies in their discussion. However, this should be extended. For example, the study by Luo et al., 2018, appears overall very similar apart from targeting the last exon. If the same gRNAs have been used in the past by other reports, a direct comparison of efficiencies would be helpful.\n\n4) A general comment on how well your genome targeted CRISPR or TALEN reagents worked to target double strand break at each locus will be helpful. I feel many do not grasp how important the genome targeted double strand break is for HDR/HMEJ. Please add in these data and highlight in the Results.\n\n5) Subsection \u201cDual homology arm liberation directs precise 5\u2019 and 3\u2019 integration in somatic tissue\u201d: This reads like a formal observation of multiple highly speculative molecular events. Please revise accordingly.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Efficient targeted integration directed by short homology in zebrafish and mammalian cells\" for consideration by eLife. Your article has been reviewed by a Reviewing Editor and Richard White as the Senior Editor.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nRevisions:\n\nYour revised manuscript largely addressed the reviewers' questions and concerns. The manuscript is suitable for publication when the following textual edits are incorporated.\n\n1) The Abstract and Discussion should reflect the changes made in response to reviewers. Please, revise the following sentences in the Abstract: \"Here, we describe a set of resources to streamline precision gene targeting in zebrafish\", to \"Here, we describe a set of resources to streamline reporter gene knock-ins in zebrafish\".\n\nThis is important distinction, given that the Abstracts also states \"1 kb long homology arms did not increase targeting efficiency.\" However, it remains unclear whether this is the case for both reporter gene knock-ins and generation of in-frame fusion proteins in endogenous genes. Indeed, as noted by the reviewers, universal precision genome editing requires a higher bar of demonstrating the ability to generate protein fusions. The authors cite in their letter \"manuscript\" in preparation and note \"Our preliminary studies show the frequency of precision integration is reduced with these vectors, however, precise integration events can be recovered when screening higher numbers of F0s. We are assembling all of our data to provide a rigorous analysis of these observations prior to publication.\" Therefore, this rigorous analysis of precise integration events for generating protein fusions is needed before the efficiencies of short and long homology arms for this endpoint can be compared.\n\n2) Therefore, the above considerations should be added to the Discussion following the section comparing the short and long homology arms efficiency.\n\n3) The major and exciting advance of the approach is the combination of using short homology arms AND releasing short homology arms of the injected donor constructs in vivo, but this is not clearly stated in the Abstract. Please consider revising the following sentence \"Our vector series, pGTag (plasmids for Gene Tagging), contains reporters flanked by a universal CRISPR sgRNA sequence to target double strand breaks in vivo and expose homology arms\u201d \"Our vector series, pGTag (plasmids for Gene Tagging), contains reporters flanked by a universal CRISPR sgRNA sequence enabling to expose in vivo homology arms and target double strand breaks.\"\n",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cee95cb4-eb40-4a7a-a793-c0baee972cba",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C1",
+      "claim": "Designer nucleases have rapidly expanded the way researchers can utilize endogenous DNA repair mechanisms for creating gene knock-outs, reporter gene knock-ins, gene deletions, single nucleotide polymorphisms, and epitope tagged alleles in diverse species.",
+      "claim_type": "EXPLICIT",
+      "source": "Designer nucleases have rapidly expanded the way in which researchers can utilize endogenous DNA repair mechanisms for creating gene knock-outs, reporter gene knock-ins, gene deletions, single nucleotide polymorphisms, and epitope tagged alleles in diverse species (Bedell et al., 2012; Beumer et al., 2008; Carlson et al., 2012; Geurts et al., 2009; Yang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior work demonstrating these applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "c8835968-8167-430c-a09a-fb9d209c71b0",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C2",
+      "claim": "A single dsDNA break in the genome results in increased frequencies of recombination and promotes integration of homologous recombination (HR)-based vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "A single dsDNA break in the genome results in increased frequencies of recombination and promotes integration of homologous recombination (HR)-based vectors (Hasty et al., 1991; Hoshijima et al., 2016; Orr-Weaver et al., 1981; Rong and Golic, 2000; Shin et al., 2014; Zu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies demonstrating this phenomenon.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "ee8b33a3-9289-4d7b-89e3-5ecdf0c64972",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C3",
+      "claim": "In vitro or in vivo linearization of targeting vectors stimulates homology-directed repair (HDR).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in vitro or in vivo linearization of targeting vectors stimulates homology-directed repair (HDR) (Hasty et al., 1991; Hoshijima et al., 2016; Orr-Weaver et al., 1981; Rong and Golic, 2000; Shin et al., 2014; Zu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies showing this effect.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "b779c2b9-361b-48d6-addd-3e6fd82ec1a6",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C4",
+      "claim": "Xenopus oocytes have the ability to join or recombine linear DNA molecules that contain short regions of homology at their ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown Xenopus oocytes have the ability to join or recombine linear DNA molecules that contain short regions of homology at their ends, and this activity is likely mediated by exonuclease activity allowing base pairing of the resected homology (Grzesiuk and Carroll, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work in Xenopus oocytes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "f0a74e4f-880f-4133-9c7b-ab2c8d973d3c",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C5",
+      "claim": "A plasmid donor containing short (\u226440 bp) regions of homology to a genomic target site can promote precise integration at the genomic cut site when the donor plasmid is cut adjacent to the homology in Xenopus, silkworm, zebrafish, and mouse cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, it was shown in Xenopus, silkworm, zebrafish, and mouse cells that a plasmid donor containing short (\u226440 bp) regions of homology to a genomic target site can promote precise integration at the genomic cut site when the donor plasmid is cut adjacent to the homology (Aida et al., 2016; Hisano et al., 2015; Nakade et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies in multiple species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "580fe3ce-0ea6-4142-bdcc-6a9e3e5703ae",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C6",
+      "claim": "Gene targeting using short homology is likely mediated by the alternative-end joining/microhomology-mediated end joining (MMEJ) pathway or by a single strand annealing (SSA) mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene targeting in these studies is likely mediated by the alternative-end joining/microhomology-mediated end joining (MMEJ) pathway or by a single strand annealing (SSA) mechanism (Ceccaldi et al., 2016), collectively referred to as a homology mediated end joining (HMEJ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to work on DNA repair pathways.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "b39e1542-2e8f-43e8-bc24-df3f821b6a59",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C7",
+      "claim": "In human cell culture, linear donors using short homology show inefficient integration until homology domains reach ~600 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in human cell culture, linear donors using a similar strategy with homologous ends have been reported to show inefficient integration until homology domains reach ~600 bp (Zhang et al., 2017), suggesting different repair pathways may predominate depending on cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study in human cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "816c74f6-6c58-4eee-b05a-ac5fe2e81d77",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C8",
+      "claim": "In initial reports using short regions of homology for in vivo gene targeting in zebrafish, the level of mosaicism in F0 injected animals was high, resulting in inefficient recovery of targeted alleles through the germline.",
+      "claim_type": "EXPLICIT",
+      "source": "In the initial reports using short regions of homology for in vivo gene targeting in zebrafish, the level of mosaicism in F0 injected animals was high, resulting in inefficient recovery of targeted alleles through the germline (Aida et al., 2016; Hisano et al., 2015; Luo et al., 2018; Nakade et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple zebrafish studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "a57cdcac-b72d-44c1-bd68-f3a906f94dd1",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C9",
+      "claim": "Studies in Drosophila show efficient integration of exogenous DNA in flies and S2 cells using 100 bp homology arms flanked by a CRISPR target site for in vivo homology liberation.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, studies in Drosophila show efficient integration of exogenous DNA in flies and S2 cells using 100 bp homology arms flanked by a CRISPR target site for in vivo homology liberation (Kanca et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a Drosophila study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "cc618e6b-5bb7-47b9-93bb-ca65290c08b9",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C10",
+      "claim": "The noto exon 1 sgRNA targeting efficiency was 95% as measured by indel formation at 3 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "At 3 dpf, 5 larvae were pooled for genomic DNA extraction and PCR to generate a noto exon 1 amplicon. MiSeq analysis showed 95% of the amplified alleles contained indels at the noto sgRNA genomic target site (Supplementary file 1 Table S1-S2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by MiSeq sequencing data showing indel frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "f4199382-b4d0-40c8-a259-a94ba5d9e069",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C11",
+      "claim": "Injection of the donor cargo DNA together with noto exon 1 sgRNA and Cas9 mRNA resulted in efficient targeted integration, as observed by notochord-specific RFP expression and PCR amplification of junction fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection into the cytoplasm of the 1 cell stage embryo of the donor cargo DNA together with noto exon 1 sgRNA and Cas9 mRNA resulted in efficient targeted integration, as observed by notochord-specific RFP expression and PCR amplification of junction fragments between the noto gene and the targeting donor (Figure 1a-c; Supplementary file 1 Table S2-S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence imaging and PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "1d44cdb2-7eb4-43f6-aec1-6ef7eecdd5db",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C12",
+      "claim": "The frequency of embryos with notochord-specific RFP expression increased with the length of the homology arm up to 48 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of embryos with notochord-specific RFP expression increased with the length of the homology arm up to 48 bp (Figure 1b), suggesting that longer homology arms promote increased precise integration of the targeting construct.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 1b comparing different homology arm lengths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "f66febe1-36e3-417c-9a1f-ed2f48a817fe",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C13",
+      "claim": "Junction fragment analysis in RFP expressing embryos injected with the 12 bp homology arm construct revealed precise integration at the 5' end in 56% of the sequenced alleles (5/9 junctions).",
+      "claim_type": "EXPLICIT",
+      "source": "Junction fragment analysis in the RFP expressing embryos injected with the 12 bp homology arm construct revealed precise integration at the 5' end in 56% of the sequenced alleles (5/9 junctions) (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequencing data of junction fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "6bfa20cd-e16f-443d-9cbe-9de7f020e68a",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C14",
+      "claim": "95% of the recovered alleles following injection with the 24 bp homology arm construct were precise (19/20 junctions).",
+      "claim_type": "EXPLICIT",
+      "source": "95% of the recovered alleles following injection with the 24 bp homology arm construct (19/20 junctions) were precise, with the one imprecise allele containing a duplication of the homology domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequencing data of junction fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "c98cd2fa-ee23-4723-b207-1aab4ff3a232",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C15",
+      "claim": "79% of the recovered alleles from embryos injected with 48 bp homology arm construct were precise (15/19 junctions).",
+      "claim_type": "EXPLICIT",
+      "source": "79% of the recovered alleles from embryos injected with 48 bp homology arm construct (15/19 junctions) were also precise (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequencing data of junction fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "f69feefb-ea5c-4171-ae0e-d8926a501b72",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C16",
+      "claim": "The UgRNA does not have predicted targets in the zebrafish, pig, or human genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The UgRNA does not have predicted targets in the zebrafish, pig, or human genomes, and in vivo use shows efficient double strand break induction and homology mediated repair at a target site in a fluorescent reporter integrated into the zebrafish noto gene (Wierson et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work and computational prediction.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "4ee61464-aa5c-477c-8c76-f81b52e3a75d",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C17",
+      "claim": "21% of injected embryos showed notochord-specific RFP expression when using the UgRNA guide to direct Cas9 double strand break to the vector in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "21% of injected embryos showed notochord-specific RFP expression, suggesting that Cas9 cutting at the vector UgRNA site efficiently exposes the donor vector 5' homology arm and drives precise targeted integration (Figure 1\u2014figure supplement 1c, Supplementary file 1 Tables S2-S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "99f5d8fc-874c-4c26-b710-0c33c7a61627",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C18",
+      "claim": "Injection of 24 or 48 bp homology arm noto 2A-eGFP-SV40 donors resulted in 24% of zebrafish embryos showing extensive reporter expression in the notochord.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of 24 or 48 bp homology arm noto 2A-eGFP-SV40 donors resulted in 24% of zebrafish embryos showing extensive reporter expression in the notochord (Figure 3a,e), indicating a similar in frame and precise integration efficiency compared to targeting with the single 5' homology arm 2A-TagRFP-CAAX-SV40 vector (Supplementary file 1 Tables S2-S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorescence data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "1935ed13-e1e8-4c0f-8cf1-1295560be33d",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C19",
+      "claim": "When using the UgRNA to liberate the cargo, 24 bp of homology directs targeted integration as efficiently as 48 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "The results also suggest that when using the UgRNA to liberate the cargo, 24 bp of homology directs targeted integration as efficiently as 48 bp, further reducing the cost of homology arms for construction of targeting vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of targeting efficiencies with different homology arm lengths.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "c3923573-a3f2-46ec-abe8-a9cf81c474db",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C20",
+      "claim": "Targeting exon 4 of tyr with a 24 bp homology arm 2A-Gal4/VP16-\u03b2-actin3'UTR donor in Tg(UAS:mRFP)tpl2 transgenic zebrafish resulted in strong RFP signal in 64% of injected animals.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in strong RFP signal in 64% of tyr injected animals (Figure 3b,e), however, the embryos were highly mosaic, with only 9% of embryos displaying extensive RFP expression throughout most of the pigmented cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "d87a7f80-63e8-4b36-b1c3-d220a0fa6fad",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C21",
+      "claim": "Targeting esama exon 2 with 2A-Gal4/VP16 in the Tg(UAS:mRFP)tpl2 transgenic background resulted in 21% of embryos displaying extensive RFP expression specifically in the vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeting esama exon 2 with 2A-Gal4/VP16 in the Tg(UAS:mRFP)tpl2 transgenic background resulted in 21% of embryos displaying extensive RFP expression specifically in the vasculature where esama is expressed (Figure 3c,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorescence data and imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "e1827b0e-a467-4c37-8b76-2127c1cd0691",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C22",
+      "claim": "Targeted integration of a 2A-TagRFP-CAAX-SV40 cassette into exon 2 of cx43.4 with 24 and 48 bp homology arms resulted in 38\u201356% and 29\u201347% of injected embryos showing broad RFP expression throughout the nervous system and vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted integration of a 2A-TagRFP-CAAX-SV40 cassette into exon 2 of cx43.4 with 24 and 48 bp homology arms resulted in 38\u201356% and 29\u201347% of injected embryos showing broad RFP expression throughout the nervous system and vasculature (Figure 3d,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "df5a948d-1541-4cb6-905f-6b9cc393beaa",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C23",
+      "claim": "Increasing the length of the 5' and 3' homology arms to 1 kb did not significantly change the frequency of RFP expression compared to 24 bp (p=0.1693) or 48 bp (p=0.6520) at the cx43.4 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the length of the 5' and 3' homology arms to 1 kb did not significantly change the frequency of RFP expression compared to 24 bp (p=0.1693) or 48 bp (p=0.6520) (Figure 3f), with 26\u201347% of injected embryos showing the expected neuronal and vascular RFP expression pattern (Supplementary file 1 Table S2-S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "60be1090-77f3-4f46-b6a1-0b25ba5b106f",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C24",
+      "claim": "Injection without the UgRNA leaves the 1 kb homology circular donor intact and reduced targeting to 0\u20133% at the cx43.4 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection without the UgRNA leaves the 1 kb homology circular donor intact, and reduced targeting to 0\u20133% (Figure 3f Circular HR 1 kb; p=0.0067; Supplementary file 1 Table S2-S3), as expected given the low frequency of homologous recombination in zebrafish embryos.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "52608f2d-08d8-4c36-be2b-2a4379b05c7c",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C25",
+      "claim": "The frequency of RFP expressing embryos after injection of the linear 1 kb homology arm template was significantly reduced to approximately 5% at the cx43.4 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of RFP expressing embryos after injection of the linear 1 kb homology arm template was significantly reduced to approximately 5% (Figure 3f Linear HR 1 kb; p=0.0111; Supplementary file 1 Table S2-S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "3ae84af4-77f3-4613-9cf0-9ad6386cd5ff",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C26",
+      "claim": "Long homology arms do not enhance the frequency of integration at the genomic target site, compared with short 24 or 48 bp homology arms, when using the UgRNA to target double strand breaks and liberate the donor homology arms in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest long homology arms do not enhance the frequency of integration at the genomic target site, compared with short 24 or 48 bp homology arms, when using the UgRNA to target double strand breaks and liberate the donor homology arms in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of targeting efficiencies with different homology arm lengths.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "3155f3b8-8e67-47dc-a390-3ffef8ba5644",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C27",
+      "claim": "Increasing the esama homology arms from 24 bp to 1 kb dramatically increased the percentage of RFP positive embryos from 20\u201323% to 82\u201394% (p=0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the homology arms from 24 bp to 1 kb dramatically increased the percentage of RFP positive embryos, from 20\u201323% to 82\u201394% (p=0.0001 Figure 3\u2014figure supplement 2, Supplementary file 1 Table S3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "9d7b7650-693d-4280-b635-2ee56957a94a",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C28",
+      "claim": "The majority of RFP expression with 1 kb homology arms at esama was not vascular specific, suggesting off-target integration of the Gal4/VP16 cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the majority of RFP was not vascular specific, suggesting off-target integration of the Gal4/VP16 cassette.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation of non-specific RFP expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "a6e6228c-49ed-4842-ae98-67ba64873f6b",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C29",
+      "claim": "Three out of five (60%) adults from the noto injected embryos that had shown widespread notochord RFP expression transmitted a noto-2A-TagRFP-CAAX tagged allele through the germline.",
+      "claim_type": "EXPLICIT",
+      "source": "Three out of five (60%) adults from the noto injected embryos that had shown widespread notochord RFP expression transmitted a noto-2A-TagRFP-CAAX tagged allele through the germline (Figure 4, Table 1, Supplementary file 1 Table S4-S5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by germline transmission data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "0f1eba7b-e353-4002-a7fd-a65be2296e0a",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C30",
+      "claim": "At the tyr locus, three out of eight (37.5%) embryos raised to adulthood transmitted germline tagged alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "At the tyr locus, although RFP expression in tyr-2A-Gal4/VP16 injected Tg(UAS:mRFP)tpl2 embryos was highly mosaic, three out of eight (37.5%) embryos raised to adulthood transmitted germline tagged alleles (Figure 4, Table 1, Supplementary file 1 Table S4-S5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by germline transmission data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "88bb20f5-c719-4fc9-96b6-778fa7e8f723",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C31",
+      "claim": "For esama, 12/18 (66.7%) adults that displayed widespread vasculature RFP expression as embryos transmitted esama-2A-Gal4/VP16 alleles to their F1 progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "For esama, 12/18 (66.7%) adults that displayed widespread vasculature RFP expression as embryos transmitted esama-2A-Gal4/VP16 alleles to their F1 progeny (Figure 4, Table 1, Supplementary file 1 Table S4-S5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by germline transmission data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "12b3bcbc-64ee-4765-8c8d-f3d12ebe8510",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C32",
+      "claim": "Overall germline transmission data reveal high rates of germline transmission, with a combined average of 49%, that ranged from 22\u2013100% across all targeted loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall the data reveal high rates of germline transmission, with a combined average of 49%, that ranged from 22\u2013100% across all targeted loci (Figure 4, Table 1, Supplementary file 1 Table S4-S5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by aggregated germline transmission data across multiple loci.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "19ea1d6a-e0d9-4967-add4-34674219c180",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C33",
+      "claim": "The founders from these experiments transmitted gametes that produced expression of RFP consistent with the targeted locus at frequencies from 2% to 64% of the F1 embryos, with an average of 17.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the founders from these experiments transmitted gametes that produced expression of RFP consistent with the targeted locus at frequencies from 2% to 64% of the F1 embryos, with an average of 17.4% (Supplementary file 1 Table S4-S5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative data on F1 expression frequencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "0e34b6ff-4cbd-4eec-9dd3-5fd12a37a851",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C34",
+      "claim": "Southern blot analysis and sequencing of four tyr-2A-Gal4/VP16 F1 progeny from founder F0#1 demonstrated a single copy integration of the Gal4/VP16 cassette with precise sequence at both 5' and 3' ends of the integration site.",
+      "claim_type": "EXPLICIT",
+      "source": "Southern blot analysis and sequencing of four tyr-2A- Gal4/VP16 F1 progeny from founder F0#1 demonstrated a single copy integration of the Gal4/VP16 cassette (Table 2 and Figure 4\u2014figure supplement 1) with precise sequence at both 5' and 3' ends of the integration site (Table 2 and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Southern blot and sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "473f914b-0372-410e-9cb2-70e4001e4f16",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C35",
+      "claim": "Junction fragment analysis of F1 alleles from 5 additional targeted sites revealed precise integration events at the 5' side for nearly all genes examined (35/37 or 95% across seven genes).",
+      "claim_type": "EXPLICIT",
+      "source": "Junction fragment analysis of F1 alleles from 5 additional targeted sites in esama, flna, msna, aqp1a1, and aqp8a1 revealed precise integration events at the 5' side for nearly all genes examined (35/37 or 95% across seven genes) (Table 2 and Figure 4\u2014figure supplement 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequencing data of junction fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "167a6520-ea37-49c5-af9e-957d8b02e5e5",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C36",
+      "claim": "A lower frequency of precise 3' integrations (13/28 or 46% across six genes) was observed over all loci.",
+      "claim_type": "EXPLICIT",
+      "source": "A lower frequency of precise 3' integrations (13/28 or 46% across six genes) was observed over all loci (Table 2 and Figure 4\u2014figure supplement 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequencing data of junction fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "01b799ba-2227-4273-8ceb-6b5500df8d8f",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C37",
+      "claim": "Using short homology arm vectors and in vivo UgRNA liberation can promote precise, single copy integration by HMEJ at a genomic sgRNA site at high frequency in the germline.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that using short homology arm vectors and in vivo UgRNA liberation can promote precise, single copy integration by HMEJ at a genomic sgRNA site at high frequency in the germline, without insertion of donor vector backbone sequences, however, precision at the 3' end is reduced likely due to a lack of selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the aggregated data on germline transmission and junction analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "93b0cc9b-5149-4dd7-a3c8-6e47d01e4c99",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C38",
+      "claim": "Injection of the exon 2\u20134 or exon 2\u201325 pGTag-2A-Gal4/VP16 donor into Tg(UAS:mRFP)tpl2 embryos resulted in embryos showing broad and ubiquitous RFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of the exon 2\u20134 or exon 2\u201325 pGTag-2A-Gal4/VP16 donor into Tg(UAS:mRFP)tpl2 embryos resulted in embryos showing broad and ubiquitous RFP expression (Figure 5b\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "a99d6c3b-9e06-4b0f-ae69-4ae53cabf801",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C39",
+      "claim": "The frequency of RFP positive embryos was similar after targeting rb1 exon 2\u20134 (44\u201378%) and msna exon 2\u20136 (50\u201385%) and did not seem to be affected by increasing the size of the deleted region from 394 bp to 48.4 Kb in rb1 exon 2\u201325 (49\u201370%).",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of RFP positive embryos was similar after targeting rb1 exon 2\u20134 (44\u201378%) and msna exon 2\u20136 (50\u201385%) and did not seem to be affected by increasing the size of the deleted region from 394 bp to 48.4 Kb in rb1 exon 2\u201325 (49\u201370%) (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative fluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "2c3df78c-b2cd-4833-85a0-67d054482973",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C40",
+      "claim": "Somatic junction fragment analysis detected precise integration of the 2A-Gal4/VP16 cassette in both genes at the 5' upstream exon (rb1 97%; msna 85%) and 3' downstream exon (rb1 67%; msna 45%).",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic junction fragment analysis detected precise integration of the 2A-Gal4/VP16 cassette in both genes at the 5' upstream exon (rb1 97%; msna 85%) and 3' downstream exon (rb1 67%; msna 45%) (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequencing data of junction fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "4c23dd34-a542-42c3-8e7f-7e2479a7d746",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C41",
+      "claim": "Only one out of 16 (6%) rb1 targeted F0 founders transmitted a rb1-e2-25-2A-Gal4/VP16 integration allele through the germline.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only one out of 16 (6%) rb1 targeted F0 founders transmitted a rb1-e2-25-2A-Gal4/VP16 integration allele through the germline (Supplementary file 1 Table S4-S5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by germline transmission data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "b05f5b92-49a5-456b-b72d-f63e71f17ee6",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C42",
+      "claim": "None of the 10 msna e2-e6 2A-Gal4/VP16 targeted F0 zebrafish transmitted a deletion tagged allele to the next generation.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the 10 msna e2-e6 2A-Gal4/VP16 targeted F0 zebrafish transmitted a deletion tagged allele to the next generation (Supplementary file 1 Table S4-S5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by germline transmission data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "b96d746d-ce1d-407d-ae22-d55c8b943d72",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C43",
+      "claim": "HMEJ driven by short homology arms and liberation by the UgRNA can efficiently promote precision targeted integration at a single double strand break in somatic and germline tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "While HMEJ driven by short homology arms and liberation by the UgRNA can efficiently promote precision targeted integration at a single double strand break in somatic and germline tissue, efficient simultaneous deletion and integration to bride two target sites in the germline likely occurs at a much lower frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of single-site and dual-site targeting efficiencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "51a54e04-207b-4963-9ba6-2f3d99377c7b",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C44",
+      "claim": "GFP expression was observed in 23% of porcine fibroblast colonies using the UgRNA donor, compared to 2% of colonies using the HR donor with 760 bp homology arms.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP expression was observed in 23% of colonies using the UgRNA donor, compared to 2% of colonies using the HR donor with 760 bp homology arms (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data on colony GFP expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "1aa1a579-0eeb-43d4-b418-8337082531a0",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C45",
+      "claim": "5' and 3' junctions were observed in over 50% of the UgRNA donor GFP+ porcine fibroblast colonies while none of the HR donor GFP+ colonies contained both junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "5' and 3' junctions were observed in over 50% of the UgRNA donor GFP+ colonies while none of the HR donor GFP+ colonies contained both junctions (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by PCR junction analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "390f674e-272e-46cd-bbac-62d2a99f6185",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C46",
+      "claim": "Sequencing of junctions from 8 UgRNA donor GFP+ porcine fibroblast colonies that were positive for both junctions showed precise integration in 7/8 colonies at the 5' junction and 8/8 colonies at the 3' junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing of junctions from 8 UgRNA donor GFP+ colonies that were positive for both junctions showed precise integration in 7/8 colonies at the 5' junction and 8/8 colonies at the 3' junction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sequencing data of junction fragments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "4012f754-4d43-4cf4-841d-cb3057fbc1a8",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C47",
+      "claim": "Over 50% of K-562 cells targeted with the HMEJ 48 bp homology arm donor were GFP positive at day 14, compared to only 6% of cells electroporated with the 806 bp homology arm HR donor.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 50% of cells targeted with the HMEJ 48 bp homology arm donor were GFP positive, compared to only 6% of cells electroporated with the 806 bp homology arm HR donor, indicating HMEJ promoted efficient integration and stable expression of the MND:GFP cassette at the AAVS1 locus (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "fc2601fe-e25e-4c2c-9d94-fef3ae9920cd",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C48",
+      "claim": "GFP expression in K-562 cells was maintained over 50 days.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP expression was maintained over 50 days, and 5' precise junction fragments were observed following PCR amplification in bulk cell populations (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by longitudinal flow cytometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "f87f8da4-65c3-4bf7-a72b-1e33d055e63d",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C49",
+      "claim": "The HMEJ strategy using short homology arms outperforms traditional HR techniques for targeted integration in mammalian cell systems and is effective without antibiotic selection.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the HMEJ strategy using short homology arms outperforms traditional HR techniques for targeted integration in mammalian cell systems and is effective without antibiotic selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of HMEJ and HR targeting efficiencies in mammalian cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "8b233eb3-3c75-42de-aa5f-f1e60c95c3c6",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C50",
+      "claim": "The pGTag vector series has been deposited at Addgene.",
+      "claim_type": "EXPLICIT",
+      "source": "The pGTag vector series has been deposited at Addgene, and the open source protocol and homology arm website design tool are available at The Gene Sculpt suite (genescultp.org) (Mann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement of fact about resource availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "cd7304e1-964c-4975-a658-1acffeddcf97",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C51",
+      "claim": "The open source protocol and homology arm website design tool are available at The Gene Sculpt suite (genescultp.org).",
+      "claim_type": "EXPLICIT",
+      "source": "The pGTag vector series has been deposited at Addgene, and the open source protocol and homology arm website design tool are available at The Gene Sculpt suite (genescultp.org) (Mann et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement of fact about resource availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "5c932d33-301e-483c-b9ba-10ac3b5d9766",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C52",
+      "claim": "The design elements, including simultaneous double strand breaks by Cas9 at the genomic target site and vector universal sgRNA sites, and preselection of fluorescent reporter expression, may enhance the efficient recovery of germline alleles over previous reports in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these design elements, that include simultaneous double strand breaks by Cas9 at the genomic target site and vector universal sgRNA sites, and preselection of fluorescent reporter expression that requires in frame fusion and precise 5' targeted integration, may enhance the efficient recovery of germline alleles over previous reports in zebrafish (Hisano et al., 2015; Hoshijima et al., 2016; Shin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the reasons for improved efficiency compared to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "97f19487-3f54-4d48-a1ce-6dc89de63e4d",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C53",
+      "claim": "Positive integration events of tagged alleles are selected by fluorescence reporter expression, reflecting the endogenous pattern of expression of the targeted gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive integration events of tagged alleles are selected by fluorescence reporter expression, reflecting the endogenous pattern of expression of the targeted gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental design and observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "29991f3b-20e4-427e-a68c-b779661e97a3",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C54",
+      "claim": "It is conceivable that precise events at the 3' end could preclude precise integration at the 5' end during some editing events, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is conceivable that precise events at the 3' end could preclude precise integration at the 5' end during some editing events, and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the mechanism of integration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "d39d03d1-3009-48cf-89cd-d3404ff7fbfc",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C55",
+      "claim": "These data hint at synthesis dependent strand annealing (SDSA) as a possible DNA repair mechanism for pGTag donor integration.",
+      "claim_type": "EXPLICIT",
+      "source": "It is tempting to speculate that these data hint at synthesis dependent strand annealing (SDSA) as a possible DNA repair mechanism for pGTag donor integration (Ceccaldi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the DNA repair mechanism involved.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "765df3e8-1e20-4b2b-87b6-20c6cab3b9df",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C56",
+      "claim": "The inability to recover rb1 tagged alleles may have been due to the essential requirement for this tumor suppressor gene, in either somatic tissue or germline stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the inability to recover rb1 tagged alleles was due to the essential requirement for this tumor suppressor gene, in either somatic tissue or germline stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the reason for lack of germline transmission.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "0fcf5b27-3581-4237-9880-0c0aeff3d728",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C57",
+      "claim": "Common repetitive elements, enhancers, or a cryptic promoter in the intronic sequence of the esama 1 kb homology arms may lead to off target integration and ectopic RFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Common repetitive elements, enhancers, or a cryptic promoter in the intronic sequence of the esama 1 kb homology arms may lead to off target integration and ectopic RFP expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the cause of off-target integration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "4d9e4ba7-68ab-4371-8418-f6909ba97328",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C58",
+      "claim": "Short homology arms simplify donor vector construction and lead to efficient precision targeted integration.",
+      "claim_type": "EXPLICIT",
+      "source": "These results underscore the utility of short homology arms, which simplifies donor vector construction and leads to efficient precision targeted integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison of short and long homology arm results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "c89fca68-ddf9-4731-9934-2dd2ae33f5a4",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C59",
+      "claim": "The simplicity of the strategy for building arms into the pGTag vectors, a universal guide to liberate the targeting cassette, and the GeneSculpt Suite website together will aid in streamlining targeted integration experimental design.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplicity of our strategy for building arms into the pGTag vectors, a universal guide to liberate the targeting cassette, and the GeneSculpt Suite website together will aid in streamlining targeted integration experimental design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the utility of the developed tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "afdb3833-5bf0-4b21-960b-992bc686e24f",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C60",
+      "claim": "The vector suite provides a platform that can expand the zebrafish functional genomics toolkit for efficient site-directed modifications that create gene fusions, introduce cDNA variants, recombinases, or floxed gene-breaking cassettes for conditional gene inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our vector suite provides a platform that can expand the zebrafish functional genomics toolkit for efficient site-directed modifications that create gene fusions, introduce cDNA variants, recombinases, or floxed gene-breaking cassettes (Clark et al., 2011) for conditional gene inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about potential applications of the developed tools.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "9a37025d-b8d9-491a-8d24-33d379d7762f",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C61",
+      "claim": "Targeted integration will allow tagged or mutant genes to be expressed at endogenous levels and avoid ectopic or over-expression that can result from random transgene integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Targeted integration will allow tagged or mutant genes to be expressed at endogenous levels and avoid ectopic or over-expression that can result from random transgene integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about targeted vs. random integration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "0fe07613-7ce2-4304-a0ce-8dcb5718121a",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C62",
+      "claim": "These tools will broaden the use of designer nucleases for homology-based gene editing at CRISPR/Cas9 and TALEN cut sites in zebrafish and mammalian cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "These tools will broaden the use of designer nucleases for homology-based gene editing at CRISPR/Cas9 and TALEN cut sites in zebrafish and mammalian cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the potential impact of the developed tools.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "6dfa6a95-b2c3-4acb-8cf3-d15109bcccc3",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "claim_id": "C63",
+      "claim": "The results open the door for more advanced genome edits in animal agriculture and human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results open the door for more advanced genome edits in animal agriculture and human cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the potential applications of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "12db745b-3173-4198-83eb-3b30f6dc47ce",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established that designer nucleases enable diverse genome editing applications, that double-strand breaks promote homologous recombination, and that short homology arms can direct targeted integration in various species, though with variable efficiency and high mosaicism in zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 are all supported by citations to prior work and accurately summarize the state of the field before the current study. These claims establish the scientific context and motivation for the authors' work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "72475c63-fc52-4bd9-80d2-35176e56ec55",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A single 5' homology arm of 12-48 bp directs targeted integration at the noto locus with increasing efficiency and precision as homology length increases, achieving 95% precise integration with 24 bp homology arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 are supported by MiSeq data showing 95% sgRNA cutting efficiency, fluorescence imaging showing increased RFP expression with longer homology arms, and sequencing data showing 56%, 95%, and 79% precise 5' junctions for 12, 24, and 48 bp homology arms respectively. The data directly support the conclusion that longer homology arms up to 48 bp improve targeting efficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "dfa6c654-c0be-46ba-832a-6e064ffe8dc5",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A universal guide RNA (UgRNA) with no predicted off-targets in zebrafish, pig, or human genomes efficiently liberates donor homology arms in vivo, resulting in 21% of embryos showing targeted integration at the noto locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 are supported by computational prediction of no off-targets, citation to prior validation work, and quantitative fluorescence data showing 21% targeting efficiency. This efficiency is comparable to using the gene-specific sgRNA to cut the donor, validating the UgRNA approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "134b948b-eaee-4151-ac67-3b70a14825f4",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dual homology arm liberation using the UgRNA directs efficient targeted integration at multiple zebrafish loci (noto, tyr, esama, cx43.4), with 24 bp homology arms performing as efficiently as 48 bp arms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 are supported by quantitative fluorescence data across multiple loci showing 21-64% targeting efficiency. The data demonstrate that the dual homology arm strategy works at multiple genes and that 24 bp and 48 bp homology arms show similar efficiency when using UgRNA liberation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "cf69aa05-40db-499c-83c7-339d16b4af11",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "At the cx43.4 locus, increasing homology arm length from 24/48 bp to 1 kb does not significantly improve targeting efficiency when using UgRNA liberation, while circular or linear donors without UgRNA show dramatically reduced efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are supported by quantitative data with statistical analysis showing no significant difference between short and 1 kb homology arms (p=0.1693 and p=0.6520), while circular (0-3%, p=0.0067) and linear (5%, p=0.0111) donors without UgRNA show significantly reduced efficiency. This demonstrates the importance of UgRNA liberation and suggests short homology arms are sufficient.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "489bf006-506f-4302-9b3e-1263b0955cce",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "At the esama locus, increasing homology arms from 24 bp to 1 kb dramatically increased targeting efficiency to 82-94% (p=0.0001), but the majority of expression was non-specific, suggesting off-target integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 are supported by quantitative data showing significantly increased RFP-positive embryos with 1 kb homology arms, but the observation that expression was not vascular-specific indicates off-target integration. This is a locus-specific effect that contrasts with cx43.4 results and highlights potential risks of long homology arms containing intronic sequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "ce9c1961-110e-409d-9d46-5db42ba1cc8c",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Germline transmission of targeted integrations occurred at high rates across multiple loci, with an average of 49% of F0 founders transmitting tagged alleles (range 22-100%), and F1 progeny showing targeted expression at an average frequency of 17.4% (range 2-64%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 are supported by comprehensive germline transmission data across 9 loci showing 30/61 (49%) F0 founders transmitted targeted alleles. The data demonstrate efficient germline transmission, which is a major improvement over prior reports of high mosaicism and inefficient germline recovery in zebrafish.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "53c19d35-99d8-4e14-80b5-af12122d122a",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Junction fragment analysis and Southern blot analysis of F1 progeny revealed predominantly precise 5' integrations (95% across seven genes) and single-copy integrations, but lower precision at 3' junctions (46% across six genes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 are supported by Southern blot data showing single-copy integration at tyr, and sequencing data showing 35/37 (95%) precise 5' junctions but only 13/28 (46%) precise 3' junctions across multiple loci. The asymmetry between 5' and 3' precision is notable and the authors appropriately note this may be due to lack of selection at the 3' end.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "9dd5d3ee-a455-4e7d-a408-681e13c4e6cb",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Deletion tagging using two sgRNAs to simultaneously delete genomic regions (394 bp to 48.4 kb) and integrate a reporter cassette showed efficient somatic integration (44-85% RFP-positive embryos) with high precision at both 5' and 3' junctions in somatic tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by fluorescence data showing similar targeting efficiency regardless of deletion size, and sequencing data showing 85-97% precise 5' junctions and 45-67% precise 3' junctions in somatic tissue. This demonstrates the strategy can bridge two distant cut sites in somatic cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "dc28c5e8-dd71-415a-995f-fa7e1edce18b",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Deletion tagging showed poor germline transmission efficiency, with only 1/16 (6%) rb1 founders and 0/10 msna founders transmitting deletion-tagged alleles, suggesting simultaneous deletion and integration at two sites occurs at much lower frequency in the germline than single-site targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by germline transmission data showing very low or absent transmission of deletion-tagged alleles, in stark contrast to the 49% average germline transmission for single-site targeting. This represents a significant limitation of the deletion tagging approach for germline applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "e7a13627-71ff-41f1-89d9-59f9cc9fe5bd",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In porcine fibroblasts, the HMEJ strategy with 48 bp homology arms and UgRNA liberation resulted in 23% GFP-positive colonies with >50% showing both 5' and 3' junctions, compared to 2% with traditional HR using 760 bp homology arms where no colonies had both junctions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are supported by quantitative colony counting data and PCR junction analysis showing dramatically improved efficiency with HMEJ compared to HR. Sequencing confirmed 7/8 colonies had precise 5' junctions and 8/8 had precise 3' junctions, demonstrating the strategy works efficiently in mammalian cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "73ffd760-adf2-4f04-a548-98d46293f45b",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In human K-562 cells, HMEJ with 48 bp homology arms resulted in >50% GFP-positive cells at day 14 compared to 6% with 806 bp HR donor, with stable expression maintained over 50 days and precise 5' junctions detected in bulk populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by flow cytometry data showing >50% vs 6% GFP-positive cells, longitudinal data showing stable expression over 50 days, and sequencing showing precise 5' junctions. This demonstrates HMEJ outperforms traditional HR in human cells without antibiotic selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "df72eb62-2f83-4e0c-8ff3-b57a5d940f97",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The pGTag vector series has been deposited at Addgene and the protocol and design tools are available at genesculpt.org.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are statements of fact about resource availability that can be verified. These represent important contributions to the community by making the tools openly available.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "c834dfb2-649f-430a-9632-cbc52e76c9fd",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that their design elements (simultaneous DSBs, UgRNA liberation, fluorescence preselection) may enhance germline recovery, that precise 3' and 5' events may compete, that SDSA may be the repair mechanism, that rb1 essentiality may explain lack of germline transmission, and that repetitive elements in long homology arms may cause off-target integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C57 are explicitly speculative statements by the authors about mechanisms and explanations for their observations. While these are reasonable hypotheses based on the data, they are not directly tested and represent interpretations rather than demonstrated results. The speculation about SDSA (C55) is particularly uncertain as no mechanistic experiments were performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    },
+    {
+      "id": "74f9eea5-bd29-413a-9773-544cb5ddd6d2",
+      "content_id": "514fdf1d-cab5-4dae-b415-e0dd43281e5c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors conclude that short homology arms simplify vector construction and enable efficient targeting, that their tools will streamline experimental design and expand the zebrafish functional genomics toolkit, and that the results enable advanced genome editing in agriculture and human cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 represent reasonable conclusions based on the demonstrated results. The simplicity and efficiency of short homology arms is well-supported by the data (C58), the utility of the tools is demonstrated across multiple applications (C59-C60), and the successful application in mammalian cells supports broader utility (C62-C63). These are appropriate interpretations of the significance of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:07:20.276946Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cee95cb4-eb40-4a7a-a793-c0baee972cba",
+      "result_id": "12db745b-3173-4198-83eb-3b30f6dc47ce"
+    },
+    {
+      "claim_id": "c8835968-8167-430c-a09a-fb9d209c71b0",
+      "result_id": "12db745b-3173-4198-83eb-3b30f6dc47ce"
+    },
+    {
+      "claim_id": "ee8b33a3-9289-4d7b-89e3-5ecdf0c64972",
+      "result_id": "12db745b-3173-4198-83eb-3b30f6dc47ce"
+    },
+    {
+      "claim_id": "b779c2b9-361b-48d6-addd-3e6fd82ec1a6",
+      "result_id": "12db745b-3173-4198-83eb-3b30f6dc47ce"
+    },
+    {
+      "claim_id": "f0a74e4f-880f-4133-9c7b-ab2c8d973d3c",
+      "result_id": "12db745b-3173-4198-83eb-3b30f6dc47ce"
+    },
+    {
+      "claim_id": "580fe3ce-0ea6-4142-bdcc-6a9e3e5703ae",
+      "result_id": "12db745b-3173-4198-83eb-3b30f6dc47ce"
+    },
+    {
+      "claim_id": "b39e1542-2e8f-43e8-bc24-df3f821b6a59",
+      "result_id": "12db745b-3173-4198-83eb-3b30f6dc47ce"
+    },
+    {
+      "claim_id": "816c74f6-6c58-4eee-b05a-ac5fe2e81d77",
+      "result_id": "12db745b-3173-4198-83eb-3b30f6dc47ce"
+    },
+    {
+      "claim_id": "a57cdcac-b72d-44c1-bd68-f3a906f94dd1",
+      "result_id": "12db745b-3173-4198-83eb-3b30f6dc47ce"
+    },
+    {
+      "claim_id": "cc618e6b-5bb7-47b9-93bb-ca65290c08b9",
+      "result_id": "72475c63-fc52-4bd9-80d2-35176e56ec55"
+    },
+    {
+      "claim_id": "f4199382-b4d0-40c8-a259-a94ba5d9e069",
+      "result_id": "72475c63-fc52-4bd9-80d2-35176e56ec55"
+    },
+    {
+      "claim_id": "1d44cdb2-7eb4-43f6-aec1-6ef7eecdd5db",
+      "result_id": "72475c63-fc52-4bd9-80d2-35176e56ec55"
+    },
+    {
+      "claim_id": "f66febe1-36e3-417c-9a1f-ed2f48a817fe",
+      "result_id": "72475c63-fc52-4bd9-80d2-35176e56ec55"
+    },
+    {
+      "claim_id": "6bfa20cd-e16f-443d-9cbe-9de7f020e68a",
+      "result_id": "72475c63-fc52-4bd9-80d2-35176e56ec55"
+    },
+    {
+      "claim_id": "c98cd2fa-ee23-4723-b207-1aab4ff3a232",
+      "result_id": "72475c63-fc52-4bd9-80d2-35176e56ec55"
+    },
+    {
+      "claim_id": "f69feefb-ea5c-4171-ae0e-d8926a501b72",
+      "result_id": "dfa6c654-c0be-46ba-832a-6e064ffe8dc5"
+    },
+    {
+      "claim_id": "4ee61464-aa5c-477c-8c76-f81b52e3a75d",
+      "result_id": "dfa6c654-c0be-46ba-832a-6e064ffe8dc5"
+    },
+    {
+      "claim_id": "99f5d8fc-874c-4c26-b710-0c33c7a61627",
+      "result_id": "134b948b-eaee-4151-ac67-3b70a14825f4"
+    },
+    {
+      "claim_id": "1935ed13-e1e8-4c0f-8cf1-1295560be33d",
+      "result_id": "134b948b-eaee-4151-ac67-3b70a14825f4"
+    },
+    {
+      "claim_id": "c3923573-a3f2-46ec-abe8-a9cf81c474db",
+      "result_id": "134b948b-eaee-4151-ac67-3b70a14825f4"
+    },
+    {
+      "claim_id": "d87a7f80-63e8-4b36-b1c3-d220a0fa6fad",
+      "result_id": "134b948b-eaee-4151-ac67-3b70a14825f4"
+    },
+    {
+      "claim_id": "e1827b0e-a467-4c37-8b76-2127c1cd0691",
+      "result_id": "134b948b-eaee-4151-ac67-3b70a14825f4"
+    },
+    {
+      "claim_id": "df5a948d-1541-4cb6-905f-6b9cc393beaa",
+      "result_id": "cf69aa05-40db-499c-83c7-339d16b4af11"
+    },
+    {
+      "claim_id": "60be1090-77f3-4f46-b6a1-0b25ba5b106f",
+      "result_id": "cf69aa05-40db-499c-83c7-339d16b4af11"
+    },
+    {
+      "claim_id": "52608f2d-08d8-4c36-be2b-2a4379b05c7c",
+      "result_id": "cf69aa05-40db-499c-83c7-339d16b4af11"
+    },
+    {
+      "claim_id": "3ae84af4-77f3-4613-9cf0-9ad6386cd5ff",
+      "result_id": "cf69aa05-40db-499c-83c7-339d16b4af11"
+    },
+    {
+      "claim_id": "3155f3b8-8e67-47dc-a390-3ffef8ba5644",
+      "result_id": "489bf006-506f-4302-9b3e-1263b0955cce"
+    },
+    {
+      "claim_id": "9d7b7650-693d-4280-b635-2ee56957a94a",
+      "result_id": "489bf006-506f-4302-9b3e-1263b0955cce"
+    },
+    {
+      "claim_id": "a6e6228c-49ed-4842-ae98-67ba64873f6b",
+      "result_id": "ce9c1961-110e-409d-9d46-5db42ba1cc8c"
+    },
+    {
+      "claim_id": "0f1eba7b-e353-4002-a7fd-a65be2296e0a",
+      "result_id": "ce9c1961-110e-409d-9d46-5db42ba1cc8c"
+    },
+    {
+      "claim_id": "88bb20f5-c719-4fc9-96b6-778fa7e8f723",
+      "result_id": "ce9c1961-110e-409d-9d46-5db42ba1cc8c"
+    },
+    {
+      "claim_id": "12b3bcbc-64ee-4765-8c8d-f3d12ebe8510",
+      "result_id": "ce9c1961-110e-409d-9d46-5db42ba1cc8c"
+    },
+    {
+      "claim_id": "19ea1d6a-e0d9-4967-add4-34674219c180",
+      "result_id": "ce9c1961-110e-409d-9d46-5db42ba1cc8c"
+    },
+    {
+      "claim_id": "0e34b6ff-4cbd-4eec-9dd3-5fd12a37a851",
+      "result_id": "53c19d35-99d8-4e14-80b5-af12122d122a"
+    },
+    {
+      "claim_id": "473f914b-0372-410e-9cb2-70e4001e4f16",
+      "result_id": "53c19d35-99d8-4e14-80b5-af12122d122a"
+    },
+    {
+      "claim_id": "167a6520-ea37-49c5-af9e-957d8b02e5e5",
+      "result_id": "53c19d35-99d8-4e14-80b5-af12122d122a"
+    },
+    {
+      "claim_id": "01b799ba-2227-4273-8ceb-6b5500df8d8f",
+      "result_id": "53c19d35-99d8-4e14-80b5-af12122d122a"
+    },
+    {
+      "claim_id": "93b0cc9b-5149-4dd7-a3c8-6e47d01e4c99",
+      "result_id": "9dd5d3ee-a455-4e7d-a408-681e13c4e6cb"
+    },
+    {
+      "claim_id": "a99d6c3b-9e06-4b0f-ae69-4ae53cabf801",
+      "result_id": "9dd5d3ee-a455-4e7d-a408-681e13c4e6cb"
+    },
+    {
+      "claim_id": "2c3df78c-b2cd-4833-85a0-67d054482973",
+      "result_id": "9dd5d3ee-a455-4e7d-a408-681e13c4e6cb"
+    },
+    {
+      "claim_id": "4c23dd34-a542-42c3-8e7f-7e2479a7d746",
+      "result_id": "dc28c5e8-dd71-415a-995f-fa7e1edce18b"
+    },
+    {
+      "claim_id": "b05f5b92-49a5-456b-b72d-f63e71f17ee6",
+      "result_id": "dc28c5e8-dd71-415a-995f-fa7e1edce18b"
+    },
+    {
+      "claim_id": "b96d746d-ce1d-407d-ae22-d55c8b943d72",
+      "result_id": "dc28c5e8-dd71-415a-995f-fa7e1edce18b"
+    },
+    {
+      "claim_id": "51a54e04-207b-4963-9ba6-2f3d99377c7b",
+      "result_id": "e7a13627-71ff-41f1-89d9-59f9cc9fe5bd"
+    },
+    {
+      "claim_id": "1aa1a579-0eeb-43d4-b418-8337082531a0",
+      "result_id": "e7a13627-71ff-41f1-89d9-59f9cc9fe5bd"
+    },
+    {
+      "claim_id": "390f674e-272e-46cd-bbac-62d2a99f6185",
+      "result_id": "e7a13627-71ff-41f1-89d9-59f9cc9fe5bd"
+    },
+    {
+      "claim_id": "4012f754-4d43-4cf4-841d-cb3057fbc1a8",
+      "result_id": "73ffd760-adf2-4f04-a548-98d46293f45b"
+    },
+    {
+      "claim_id": "fc2601fe-e25e-4c2c-9d94-fef3ae9920cd",
+      "result_id": "73ffd760-adf2-4f04-a548-98d46293f45b"
+    },
+    {
+      "claim_id": "f87f8da4-65c3-4bf7-a72b-1e33d055e63d",
+      "result_id": "73ffd760-adf2-4f04-a548-98d46293f45b"
+    },
+    {
+      "claim_id": "8b233eb3-3c75-42de-aa5f-f1e60c95c3c6",
+      "result_id": "df72eb62-2f83-4e0c-8ff3-b57a5d940f97"
+    },
+    {
+      "claim_id": "cd7304e1-964c-4975-a658-1acffeddcf97",
+      "result_id": "df72eb62-2f83-4e0c-8ff3-b57a5d940f97"
+    },
+    {
+      "claim_id": "5c932d33-301e-483c-b9ba-10ac3b5d9766",
+      "result_id": "c834dfb2-649f-430a-9632-cbc52e76c9fd"
+    },
+    {
+      "claim_id": "97f19487-3f54-4d48-a1ce-6dc89de63e4d",
+      "result_id": "c834dfb2-649f-430a-9632-cbc52e76c9fd"
+    },
+    {
+      "claim_id": "29991f3b-20e4-427e-a68c-b779661e97a3",
+      "result_id": "c834dfb2-649f-430a-9632-cbc52e76c9fd"
+    },
+    {
+      "claim_id": "d39d03d1-3009-48cf-89cd-d3404ff7fbfc",
+      "result_id": "c834dfb2-649f-430a-9632-cbc52e76c9fd"
+    },
+    {
+      "claim_id": "765df3e8-1e20-4b2b-87b6-20c6cab3b9df",
+      "result_id": "c834dfb2-649f-430a-9632-cbc52e76c9fd"
+    },
+    {
+      "claim_id": "0fcf5b27-3581-4237-9880-0c0aeff3d728",
+      "result_id": "c834dfb2-649f-430a-9632-cbc52e76c9fd"
+    },
+    {
+      "claim_id": "4d9e4ba7-68ab-4371-8418-f6909ba97328",
+      "result_id": "74f9eea5-bd29-413a-9773-544cb5ddd6d2"
+    },
+    {
+      "claim_id": "c89fca68-ddf9-4731-9934-2dd2ae33f5a4",
+      "result_id": "74f9eea5-bd29-413a-9773-544cb5ddd6d2"
+    },
+    {
+      "claim_id": "afdb3833-5bf0-4b21-960b-992bc686e24f",
+      "result_id": "74f9eea5-bd29-413a-9773-544cb5ddd6d2"
+    },
+    {
+      "claim_id": "9a37025d-b8d9-491a-8d24-33d379d7762f",
+      "result_id": "74f9eea5-bd29-413a-9773-544cb5ddd6d2"
+    },
+    {
+      "claim_id": "0fe07613-7ce2-4304-a0ce-8dcb5718121a",
+      "result_id": "74f9eea5-bd29-413a-9773-544cb5ddd6d2"
+    },
+    {
+      "claim_id": "6dfa6a95-b2c3-4acb-8cf3-d15109bcccc3",
+      "result_id": "74f9eea5-bd29-413a-9773-544cb5ddd6d2"
+    }
+  ],
+  "comparisons": []
+}

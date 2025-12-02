@@ -1,0 +1,489 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C30",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C43"
+    ],
+    "result": "An alignment-based screen of 2173 bacterial genomes from a single hospital identified 51 clusters of identical nucleotide sequences (\u22655 kb, 100% identity) shared across different genera, present in 196 genomes from 11 genera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C30-C31, C36-C40, and C43 collectively describe the dataset, methodology, and primary finding. The approach is clearly documented with specific parameters (5 kb cutoff, 100% identity, cross-genus requirement), and the quantitative results (51 clusters, 196 genomes, 11 genera) are explicitly stated with supporting figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The number of shared sequence clusters identified was highly dependent on alignment length cutoffs, with the 5 kb threshold chosen based on producing an intermediate number of clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C151-C154 describe parameter sensitivity testing and acknowledge the arbitrary nature of the chosen cutoff. Figure 1\u2014figure supplement 1 shows results with different cutoffs (3 kb and 10 kb), demonstrating methodological transparency about this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Patients whose isolates encoded shared sequence clusters had significantly higher comorbidity scores (p=0.03) and higher rates of solid organ transplant (p=0.02) compared to other patients, though demographics were similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 report statistical comparisons with specific p-values shown in Table 1. The statistical tests used (Fisher's Exact and Wilcoxon rank-sum) are appropriate for the data types, and the findings are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The 51 shared sequence clusters ranged from 2-52 genomes, comprised 2-4 genera, were predominantly found in Enterobacteriaceae, and >80% encoded mobilization genes while ~25% contained antimicrobial resistance genes and 8/51 contained metal interaction genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 provide detailed characterization of the clusters supported by Figures 1B-E and Supplementary file 2. The quantitative findings are specific and well-documented, with annotation confirming the functional content of the sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Phylogenetic analysis showed shared sequences were often found among related genera (particularly Enterobacteriaceae) and in distantly related bacteria, but no sequences were shared between Gram-positive and Gram-negative isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe phylogenetic patterns shown in Figure 2. The core gene phylogeny using GTDBTK is an appropriate method, and the findings about taxonomic distribution are clearly supported by the phylogenetic tree visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Specific examples of cross-genus sequence sharing include: aminoglycoside resistance genes between E. faecium and C. difficile (C9), an integrative conjugative element between P. aeruginosa and S. marcescens (C30), and identical Tn7 transposons in A. baumannii, E. coli, and P. mirabilis (C17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe three specific examples with detailed characterization shown in Figure 3A-C. The sequences are well-documented with gene annotations and comparisons to known elements (e.g., pR721), providing strong evidence for cross-genus MGE sharing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C112"
+    ],
+    "result": "Long-read sequencing and hybrid assembly of selected isolates revealed that shared sequences were fragments of larger MGEs that occurred in different orders, orientations, and combinations on various plasmids and chromosomal elements, confirming their mobilizable nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C65-C68, C70-C71, and C112 describe the long-read sequencing approach and findings shown in Table 2 and Figure 4. The hybrid assembly methodology is appropriate for resolving MGE structures, and the mosaic arrangement of sequences is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Cluster C1 sequences formed a pairwise alignment 'chain' without a common core, while clusters C2 and C3 contained core sequences present in all genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe structural differences between clusters shown in Figure 4B-D. The alignment patterns are clearly visualized and demonstrate different evolutionary or transfer patterns among the major clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "An iterative approach using long-read sequencing and reference-based mapping identified 17 distinct plasmids carrying clusters C1-C5 in 104 isolates, with 10 plasmids shared between multiple isolates and 7 present in single isolates; an additional 16 isolates were identified in the full dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C74-C82 describe the MGE resolution methodology and quantitative results shown in Table 2, Figure 5, and Supplementary files 3-4. The iterative approach with 90% coverage cutoff is clearly documented, though the threshold choice is somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Two plasmids were restricted to single sequence types (pKLP00149_2 in K. pneumoniae ST258 Clade II and an IncF plasmid in E. coli ST131), suggesting vertical transmission with bacterial clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 describe plasmids with restricted distributions shown in Figure 5A and Figure 5\u2014figure supplement 1. The phylogenetic clustering of plasmid-carrying isolates supports the inference of vertical transmission, though experimental confirmation is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Plasmids were identified in different STs of the same species or different species of the same genus, all within Klebsiella (K. pneumoniae and K. oxytoca), carrying antibiotic resistance and metal interaction genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 describe intermediate-range plasmid sharing shown in Figure 5B and Table 2. The taxonomic restriction to Klebsiella species with documented gene content supports horizontal transfer within this genus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Three plasmids were shared across different genera within Enterobacteriaceae, including a 9.5 kb ColRNAI plasmid found in 26 isolates from 10 STs and 4 genera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 describe the broadest plasmid distribution shown in Figure 5C. The wide distribution of the small ColRNAI plasmid across multiple genera and STs provides strong evidence for horizontal transfer independent of bacterial transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C97",
+      "C114",
+      "C145"
+    ],
+    "result": "Plasmid tracking revealed both vertical transmission (plasmids inherited with bacterial clones) and horizontal transfer (plasmids shared between unrelated bacteria), providing evidence of plasmid transfer independent from bacterial transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C97, C114, and C145 synthesize the transmission patterns observed across all plasmids. The dual modes of transmission are well-supported by the distribution patterns shown in Figure 5, though direct experimental evidence of transfer is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "A 113.6 kb IncF plasmid was found in K. pneumoniae and E. coli isolates from the same patient (Patient A) and a nearly identical plasmid in a second patient (Patient B) who occupied an adjacent room 109 days later, suggesting within-patient and between-patient transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C98-C102 describe the first case of likely HGT shown in Figure 6A-B. The high plasmid identity (>99.9%) and epidemiological link (adjacent rooms, shared staff) support the inference of recent transfer, though intermediate samples were not collected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "A 196.8 kb IncF plasmid was nearly identical in K. pneumoniae and C. braakii from the same patient (Patient C), with similar plasmids in two subsequent patients (D and E) lacking epidemiological links, suggesting transfer via unsampled bacterial populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C103-C108 describe the second within-patient HGT case shown in Figure 6C. The high identity between isolates from Patient C (99.97%) contrasts with lower identity in Patients D and E (95-98%), and the lack of epidemiological links is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Nearly identical plasmids in within-patient HGT cases suggest recent transfer, and the ability to identify transmission routes only when plasmids were nearly identical supports high sequence identity as evidence of recent transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 present an inference about transfer timing based on sequence identity. The logic is sound given the assumption of similar mutation rates for plasmids and chromosomes, though this assumption is not validated and mutation rates could differ.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Plasmids restricted to ST258 K. pneumoniae or ST131 E. coli are likely well-adapted to these lineages through compensatory adaptations resolving fitness costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C130 is a speculation about plasmid-host adaptation supported by a citation but lacking direct evidence. While the restricted distribution is consistent with adaptation, alternative explanations (e.g., recent acquisition, limited transfer opportunities) are not ruled out, and fitness measurements are absent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The Tn7 transposon was identical across three genera and in over two dozen public genomes, with insertion downstream of glmS suggesting TnsD-mediated transposition, though the reason for high conservation remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 describe the Tn7 conservation with data from this study and public databases. The insertion site analysis supports the transposition mechanism inference, though the explanation for extreme conservation is appropriately acknowledged as unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The vast majority of shared sequences contained mobile element signatures and could move independently, assembling in mosaic fashion on larger MGEs like plasmids and integrative conjugative elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135, C69-C71 synthesize findings about MGE mobility supported by annotation data (Figure 1D) and structural analysis (Figure 4, Table 2). The mosaic arrangement and presence in multiple MGE contexts strongly support mobility, though in vitro transfer was not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "While only ~25% of shared sequence clusters contained resistance genes, follow-up analysis showed resistance genes were highly prevalent among resolved MGEs, consistent with variable MGE-associated resistance gene distribution over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 reconcile an apparent discrepancy between cluster-level and MGE-level resistance gene prevalence. The explanation is supported by data in Figures 1D-E and Table 2, and contextualized with a relevant citation about K. pneumoniae resistance gene dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "A large number of metal-interacting genes and operons were found in shared sequences, which have been hypothesized to confer disinfectant tolerance and virulence, though their role in hospital survival requires further study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 report an unexpected finding (8/51 clusters with metal genes) supported by Figure 1D and Table 2. The functional hypotheses are appropriately cited, and the need for further study is acknowledged, making this a descriptive finding rather than a mechanistic claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "MGEs found in different lineages collected within days or weeks highlight frequent MGE movement between bacterial populations in hospitalized patients and the importance of pairing genomic and epidemiological data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 interpret temporal patterns in the data shown in Figure 5. The short time intervals between cross-lineage MGE occurrences support frequent transfer, and the successful identification of transmission routes when epidemiological data were available validates the integrated approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C149",
+      "C150"
+    ],
+    "result": "The dataset was limited to clinical infection isolates from pre-selected species without environmental or colonization samples, and the exact route of between-patient plasmid transfer could not be determined due to lack of intermediate samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150 acknowledge important limitations of the study design. These are appropriately recognized constraints that affect the interpretation of transmission routes and the completeness of the HGT picture in the hospital environment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The cross-genus parameter may have enriched for Enterobacteriaceae MGEs, and the reference-based MGE assignment approach may have grouped divergent MGEs together based on coverage alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 acknowledge methodological limitations that could bias results. The potential for enrichment of Enterobacteriaceae (known for HGT) and the limitations of coverage-based assignment are appropriately recognized as affecting interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C158"
+    ],
+    "result": "The study was based exclusively on comparative genomic analysis without in vitro testing of MGE transfer capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C158 acknowledges a key limitation: the lack of experimental validation of transfer capacity. This is an important caveat for all inferences about HGT, as genomic evidence alone cannot prove functional transferability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C115",
+      "C116",
+      "C123",
+      "C159"
+    ],
+    "result": "The study produced a high-resolution view of MGE dynamics in a single hospital using a systematic, unbiased alignment-based approach that identified both expected and unexpected cases of sequence sharing, demonstrating how clinical WGS data can be leveraged to study HGT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111, C115-C116, C123, and C159 summarize the study's contributions. The systematic approach, large dataset, integration with epidemiological data, and comprehensive characterization of MGEs represent significant advances over prior work, as documented throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Prior work has established that HGT drives multidrug resistance in healthcare settings, but methods to track MGE movement are limited, often focusing on marker genes rather than full MGE context, and rates of HGT in clinical settings remain poorly quantified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C29 provide background context supported by appropriate citations. These claims accurately represent the state of the field and identify gaps that motivate the current study, establishing the rationale for the systematic alignment-based approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C142",
+      "C143"
+    ],
+    "result": "Prior genomic epidemiology studies of HGT have been limited by technical challenges in resolving MGEs, lack of in vivo HGT rate data, and unavailability of large genomic datasets with corresponding epidemiological data from single health systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121, C142-C143 contextualize the study within prior work, supported by appropriate citations. These claims accurately identify limitations of previous approaches and data availability that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "High-identity sequences in phylogenetically distinct bacteria could result from recent transfer, optimal adaptation, or mutation intolerance, and the dataset likely contains all three cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C125 present three possible explanations for observed sequence identity but provide limited evidence to distinguish among them. While the speculation is reasonable, the study does not systematically test these hypotheses or provide criteria for classification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Future work will include further MGE characterization, within-genus transfer assessment, MGE-host co-evolution studies, and incorporation of additional epidemiological data to develop actionable methods for infection control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C164 outline future research directions that logically extend from the current findings and address acknowledged limitations. These represent appropriate next steps for developing the approach into a practical infection control tool.",
+    "result_type": "MINOR"
+  }
+]

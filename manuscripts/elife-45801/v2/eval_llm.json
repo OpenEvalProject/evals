@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The X-ray crystal structure of FLuc in complex with iDLSA was resolved to 3.2 \u00c5 resolution, capturing the enzyme in the adenylation step. Structural analysis reveals a more open active site compared to the DLSA complex, with disruption of the hydrogen-bonding network (particularly the Arg337-Glu311 H-bond), altered positions of key residues (especially Lys529 with 2.4 \u00c5 shift), and conformational changes that may contribute to the red-shifted emission through increased active site polarity and extended \u03c0-conjugation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 and C74-C78 collectively provide strong structural evidence from crystallography (3.2 \u00c5 resolution, PDB 6HPS), detailed comparative analysis with prior structures (DLSA, 2D1S), and mechanistic interpretation linking structural changes to spectral properties. The structural data is well-documented with specific measurements (RMSD values, distance measurements) and supported by citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C68",
+      "C73",
+      "C82"
+    ],
+    "result": "iLH2 maintains the color modulation properties of FLuc mutants while red-shifting all emissions >100 nm into the near-infrared. With iLH2, FLuc_green, FLuc_natural, and FLuc_red emit at ~680 nm, ~700 nm, and ~720 nm respectively, maintaining their relative spectral separation. In contrast, other luciferin analogues (CycLuc1, Aka-Lumine-HCL) show consistent red-shifts regardless of luciferase mutant, making them unsuitable for dual-color BLI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C68, C73, and C82 are supported by in vitro spectral characterization data (Figure 2\u2014figure supplement 1) comparing multiple substrates with multiple FLuc mutants. The preservation of relative spectral shifts with iLH2 is a key finding that distinguishes it from other luciferin analogues and is well-documented experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Both LH2 and iLH2 enable accurate spectral unmixing of FLuc_green and FLuc_red in vitro, with high correlation coefficients (R\u00b2 = 0.9983 for LH2, R\u00b2 = 0.9972 for iLH2) when using all 18 bandpass filters. Spectral unmixing remains highly accurate with reduced filter sets (3 filters: R\u00b2 > 0.99; 2 filters: R\u00b2 > 0.97 for both substrates), and successfully reflects differing expression levels of both luciferases within the same cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are supported by systematic in vitro experiments with mixed cell populations at defined ratios (Figure 2), statistical analysis showing high correlation coefficients, and demonstration that the system works with reduced filter sets. The data includes appropriate replicates (n=6) and demonstrates technical feasibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C66",
+      "C84",
+      "C85"
+    ],
+    "result": "In vivo spectral characterization across three tumor models (subcutaneous, systemic, intracranial) reveals that with LH2, both FLuc_green and FLuc_red converge to similar peak emissions (610-630 nm) due to tissue attenuation, with FLuc_green showing ~60 nm red-shift and bimodal distortion. In contrast, with iLH2, FLuc_green and FLuc_red maintain ~20 nm spectral separation (700 nm vs 720 nm) across all tissue depths, with more balanced relative intensities (1.2-1.51-fold difference vs 4.12-42-fold with LH2, p>0.05 for iLH2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54, C66, C84-C85 are strongly supported by comprehensive in vivo spectral imaging data across multiple tumor models with different tissue depths (Figures 3, 4). The maintenance of spectral separation with iLH2 versus loss with LH2 is clearly demonstrated with quantitative measurements and statistical analysis. This represents a key validation of the dual-BLI approach in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In vivo spectral unmixing validation using systemic tumor models with mixed FLuc populations shows that iLH2 achieves excellent correlation with flow cytometry measurements (R\u00b2 = 0.99, SD = 0.01) with no significant differences except at 90% FLuc_green (p=0.0257). LH2 shows significantly lower correlation (R\u00b2 = 0.89, SD = 0.06, p<0.0001 vs flow cytometry) with significant differences at multiple mixing ratios, establishing iLH2 as superior for in vivo dual reporting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by rigorous validation experiments comparing spectral unmixing results to flow cytometry ground truth (Figure 5), with appropriate statistical analysis (ANOVA, t-tests) and multiple mixing ratios (n=4 per condition). The superiority of iLH2 is demonstrated both statistically and practically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C6"
+    ],
+    "result": "The near-infrared dual BLI system was successfully applied to simultaneously monitor tumor burden (FLuc_green-expressing Raji cells) and CAR T cell therapy (FLuc_red-expressing CD19 CAR T cells) in a systemic mouse model. Longitudinal imaging showed initial tumor dominance followed by CAR T cell expansion and tumor reduction in treated mice, representing homing, expansion, and therapeutic effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C61-C62 are supported by proof-of-concept longitudinal imaging data (Figure 6) showing distinct temporal dynamics of tumor and CAR T cells. While this is a limited demonstration (small n, single control), it successfully shows the practical application of the dual-BLI system to monitor a clinically relevant therapeutic scenario.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "FLuc_green (V241I/G246A/F250S) and FLuc_red (S284T) were identified as stabilized FLuc mutants that exhibit wide separation in peak emission wavelength and balanced relative intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by the experimental characterization data showing spectral separation and intensity balance. The specific mutations are documented and the selection criteria (spectral separation and intensity balance) are validated by subsequent in vitro and in vivo experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The FLuc-iLH2 reaction has lower quantum yield compared to FLuc-LH2 (~2-3 orders of magnitude dimmer), but all mice were successfully imaged with both substrates due to the sensitivity of CCD cameras in optical imagers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 acknowledge a limitation (lower brightness) but demonstrate that it does not prevent successful imaging in practice. This is supported by the successful imaging of all animals in the study and citation to camera sensitivity capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C79",
+      "C80",
+      "C81",
+      "C88"
+    ],
+    "result": "The crystal structure provides insight into the FLuc-iLH2 reaction mechanism and will be important for future optimization of the dual-BLI system, including increasing brightness and discovering novel color mutants. However, the structure captures the adenylation step rather than the light-emitting step, and further computational modeling or crystallography of the light-emitting conformation is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C37, C79-C81, C88 mix supported structural findings with speculative statements about future applications and limitations. While the structure does provide mechanistic insights (supported), the claims about future utility are speculative, and the authors acknowledge that capturing the adenylation step rather than light-emitting step limits mechanistic interpretation. The speculative nature of future applications and the acknowledged limitation prevent full support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "BLI is widely used for sensitive monitoring of biological processes in small animals, but is largely restricted to tracking single parameters in vivo due to tissue light attenuation and limited near-infrared bioluminescent enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C10 establish the background and motivation for the work. These are well-supported by multiple citations to prior literature and represent established knowledge in the field about both the utility and limitations of current BLI technology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Previous approaches to dual-BLI have significant limitations including sequential substrate administration, differential biodistribution, spectral overlap due to tissue attenuation, and inability to achieve adequate spectral separation in the near-infrared with existing luciferase mutants and luciferin analogues. An ideal approach would use two spectrally distinct luciferases with a single substrate, but this was not feasible with LH2 due to limits in mutational color modulation (maximal 610-620 nm) and differential tissue attenuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C23, C63-C65, C67, C69-C72 provide comprehensive background on prior dual-BLI approaches and their limitations. These are well-supported by citations to relevant literature and establish the rationale for the current work. The assessment of prior work limitations is substantiated by both literature citations and the authors' own experimental validation (e.g., Figure 4 showing loss of spectral separation with LH2 in vivo).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors previously described iLH2 with luciferase-dependent red-shifted emission up to 706 nm, and hypothesized that combining color modulation through FLuc mutagenesis with red-shifting through iLH2 would enable dual-BLI, an approach not previously described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 establish the novelty of the approach and are supported by citation to prior work (C24) and assessment of the literature (C26). The hypothesis (C25) is then tested and validated by the experimental work presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C90"
+    ],
+    "result": "By combining stabilized color mutants of FLuc with iLH2, near-infrared dual BLI can be achieved in vivo, with iLH2 being superior to LH2 for spectral unmixing. This work represents an important step forward in increasing the utility of BLI and opens the window for multi-colored BLI in the near-infrared.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C90 represent the main conclusions of the work and are well-supported by the comprehensive experimental validation including in vitro characterization, in vivo spectral characterization across multiple tumor models, quantitative validation against flow cytometry, and proof-of-concept application to CAR T cell therapy monitoring.",
+    "result_type": "MAJOR"
+  }
+]

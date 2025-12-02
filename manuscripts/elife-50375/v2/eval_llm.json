@@ -1,0 +1,495 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Single-cell RNA-seq of Drosophila neuroblast tumors reveals that a subset of larval temporal patterning genes (including Imp, Oatp74D, SP1173, Plum, Gapdh2, Chd64, Syp, E93, stg, noe, CG15646) are redeployed in tumors to define distinct tNB subpopulations. Chinmo+Imp+ tNBs and Syp+E93+ tNBs compose two exclusive subpopulations encompassing most tNBs, with Chinmo and Syp regulated post-transcriptionally in tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C66 collectively demonstrate through single-cell RNA-seq (5740 cells), PCA, UMAP clustering, differential expression analysis, and immunostaining that temporal patterning genes are redeployed in tumors. The data show clear separation of Imp+ and E93+ populations, post-transcriptional regulation of chinmo and Syp, and identification of specific marker genes distinguishing these populations. Multiple complementary approaches (transcriptomics, imaging, transgenic reporters) converge on consistent findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "poxn>prosRNAi tumors evolve from homogeneous Chinmo+Imp+ tNBs in early larvae to heterogeneous tumors with a reproducible 20/80 (\u00b110) ratio of Chinmo+Imp+ to Syp+E93+ tNBs in adults. Despite Chinmo+Imp+ tNBs exhibiting higher mitotic index, they become the minority, reaching a stable equilibrium that is reproducible across tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C81 are supported by longitudinal immunostaining data at multiple timepoints (late L2, early-late L3, 8d, 10d, 11d, 15d after induction) from >20 tumors, quantification of tNB proportions and mitotic indices with statistical analysis, and consistency with single-cell RNA-seq data (22% Imp+ cells in cluster 2). The reproducibility of the 20/80 ratio across multiple independent tumors strongly supports the existence of robust constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Clonal analysis using Flybow reveals three categories of clones (CI, MIXED, SYP) with dynamic proportions over 8 days. CI clones rapidly decrease while MIXED clones increase, and clones show large heterogeneity in size, indicating differential proliferation potential among tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 are supported by clonal analysis data at multiple timepoints (8h, 2d, 4d, 8d ACI) with substantial sample sizes (117-338 clones per timepoint from 4-5 animals). Statistical analysis shows significant changes in clone proportions over time. The observation of three distinct clone categories and their dynamics provides direct evidence for hierarchical organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Numerical modeling of four scenarios (no hierarchy, strict hierarchy #1 and #2, plastic hierarchy) demonstrates that only a rigid, unidirectional Chinmo+Imp+\u2192Syp+E93+ hierarchy is consistent with experimental clone data. Model fitting determines that Syp+ tNBs have 47% probability of quiescence vs 4% for Chinmo+Imp+ tNBs, and reverse divisions are negligible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C100 are supported by systematic comparison of model predictions with experimental data. The stochastic model with fitted parameters (Pc\u2192cc=0.64, Ts=1.3d, qc=4%, qs=47%) shows excellent agreement with both clone sizes and compositions. Testing alternative scenarios (including 1-5% reverse divisions) significantly worsens fit, strongly supporting the rigid hierarchy conclusion. However, the model makes simplifying assumptions (neglects apoptosis, neuronal differentiation) that may limit precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "NB tumors are strongly hierarchical with Chinmo+Imp+ tNBs at the top exhibiting cancer stem cell (CSC)-like properties: preference for symmetric self-renewing divisions (>60%), rare quiescence, and ability to generate Syp+E93+ tNBs. Syp+E93+ tNBs have limited self-renewal, high propensity for cell-cycle exit, and cannot generate Chinmo+Imp+ tNBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 synthesize findings from clonal analysis and numerical modeling (C82-C100). The CSC-like designation is supported by quantitative parameters from model fitting and comparison with established CSC criteria (cited: Nassar and Blanpain 2016, Nguyen et al. 2012, Valent et al. 2012). The characterization is internally consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The hierarchical model with fitted parameters predicts that tumors starting from homogeneous Chinmo+Imp+ tNBs reach a 20/80 equilibrium, consistent with in vivo observations. The equilibrium is robust to initial conditions, suggesting the hierarchical scheme buffers biological perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C112 are supported by simulations using both stochastic and deterministic versions of the model with parameters from C97-C98. The prediction matches experimental data from C75-C76 (20% Chinmo+Imp+ tNBs at multiple timepoints). Testing different initial conditions (C111) demonstrates robustness. The model successfully integrates clonal dynamics with population-level observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Snr1RNAi tumors exhibit a different but reproducible ratio of Chinmo+Imp+ to Syp+ tNBs (50/50 \u00b110) compared to prosRNAi tumors (20/80 \u00b110), suggesting tumor-specific mechanisms that fine-tune the Imp-to-Syp transition, possibly determined by the NB of origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 are supported by immunostaining and quantification data from Snr1RNAi tumors (n=5-7 central brains) showing reproducible but distinct ratios from prosRNAi tumors. The reproducibility within each tumor type combined with differences between types supports the conclusion of robust but tumor-specific regulation. However, the mechanism remains speculative (C116 is inference, not demonstrated).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Syp acts as a tumor suppressor by restraining Chinmo+Imp+ CSC-like tNBs. Syp knockdown leads to tumors almost exclusively composed of Chinmo+Imp+ tNBs with 3.9-fold increased volume, while Syp overexpression blocks tumor growth. Imp is essential for Chinmo expression and tumor growth even in absence of Syp, demonstrating cellular heterogeneity is not required for tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C129 are supported by genetic manipulation experiments with quantitative measurements: Syp knockdown increases tumor volume 3.9-fold (n=6 VNCs, p=0.002), Syp overexpression blocks growth, and double Syp/Imp knockdown arrests growth. Immunostaining confirms Chinmo+Imp+ tNB composition changes. The conclusion that heterogeneity is not required for growth is well-supported, though the tumor suppressor designation could be more nuanced (Syp may regulate differentiation rather than suppress transformation per se).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Both Imp and Syp can associate with chinmo mRNA UTRs, with Syp showing greater affinity for the 5'UTR. This provides molecular explanation for chinmo post-transcriptional silencing and demonstrates that NB tumor growth, hierarchy and cellular heterogeneity is governed by Imp and Syp activities via chinmo regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 are supported by affinity pull-down assays with in vitro synthesized chinmo UTRs showing binding of both Imp and Syp, with differential affinity for 5' vs 3' UTRs. This molecular mechanism is consistent with prior work (cited: Zhu et al. 2006) and integrates with genetic data (C117-C129). However, the claim that this is the primary mechanism governing all aspects of tumor biology (C134) may be overstated given complexity of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Pseudotime analysis identifies differentiation trajectories from Imp+ tNBs (at root) to E93+ tNBs (at branches). Top 200 genes separate into three clusters: cluster 1 (111 genes including early markers like Imp, Oatp74D) decreases along pseudotime; clusters 2 and 3 (71 and 18 genes) increase along pseudotime but distinguish two E93+ branches characterized by stg and E(spl) genes respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C150 are supported by pseudotime analysis using Monocle 2 on single-cell RNA-seq data, with semi-supervised ordering based on established hierarchy (C101-C107). Gene clustering and differential expression along branches are documented with p-values and visualized in figures. The identification of two distinct E93+ branches (stg+ and E(spl)+) is novel and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Bulk RNA-seq comparing prosRNAi and prosRNAi,SypRNAi tumors shows generic NB identity genes (grh, dpn) unchanged, while temporal markers vary greatly: early markers (Imp, Oatp74D, Sip1, plum, Chd64) enriched and late markers (E93, Syp, CG15646) down-regulated in SypRNAi tumors. This confirms differentiation trajectories driven by the Imp-to-Syp switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 are supported by bulk RNA-seq data with appropriate controls and statistical analysis. The differential expression patterns are consistent with single-cell data and genetic perturbations. Detection of lin-28 and E23 in bulk but not single-cell RNA-seq (C153) is appropriately noted as a technical limitation of droplet-based methods, consistent with C63-C64.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Single-cell and bulk RNA-seq identify genes downregulated along the Imp/Syp trajectory including nAChRalpha3/5 (tumor-specific) and glycolysis/TCA/OXPHOS genes. Chinmo+Imp+ tNBs highly express glucose and glutamine metabolism genes (including Gdh). The E93+stg+ branch shows transient cell cycle activity with medium metabolic gene levels, while the E93+E(spl)+ branch shows low metabolic and cell cycle genes, suggesting quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C164 are supported by comprehensive transcriptomic analysis (single-cell and bulk RNA-seq) with pseudotime ordering and branch-specific differential expression. The metabolic gene expression patterns are well-documented with p-values and GO enrichment analysis. The inference that E(spl)+ cells are quiescent (C163) is reasonable given low metabolic/cell cycle gene expression and consistency with model predictions (C97), though direct functional validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Knockdown of glycolytic (Gapdh1, Pglym78) or OXPHOS (Cyt-c-p, Cyt-c1) genes leads to slower tumor growth in late L3 and failure to maintain tumors in adults. Syp+E93+ tNBs are smaller than Chinmo+Imp+ tNBs. This demonstrates the Imp-to-Syp transition induces a metabolic switch that prevents long-term self-renewal and reduces cell growth, providing a tumor-intrinsic mechanism for metabolic heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C169 are supported by genetic knockdown experiments with quantitative tumor volume measurements at multiple timepoints (late L3, 4d and 7d adults) showing consistent growth defects across multiple metabolic genes (n=5-10 VNCs per condition with statistical significance). Cell size measurements (C167) provide additional support. The conclusion integrates genetic, transcriptomic, and cellular data coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Temporal patterning has an overarching role in governing CNS tumor susceptibility, hierarchy, heterogeneity and metabolism. About 20 temporal patterning genes are redeployed in tumors, though regulation differs from development (Cas/Svp not enriched in Imp+ tNBs, Syp post-transcriptionally rather than transcriptionally regulated). Given conservation of temporal patterning in mammalian brain, this may provide a framework for understanding pediatric CNS tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C176 synthesize major findings and place them in broader context. The core conclusions about temporal patterning's role are well-supported by the comprehensive data. The differences from developmental regulation (C174-C176) are appropriately noted based on single-cell RNA-seq data. The translational relevance (C171) is supported by citation to Telley et al. 2019, though the applicability to human tumors remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The hierarchical division scheme is finely tuned and robust: Imp+ tNBs favor symmetric self-renewal (>60%) with rare quiescence, allowing perpetuation of CSC-like cells with unlimited self-renewal potential. They generate Syp+E93+ tNBs that accumulate through limited self-renewal with high propensity for cell-cycle exit. Different tumor types (prosRNAi vs snr1RNAi) exhibit different but reproducible ratios, suggesting tumor-specific mechanisms possibly related to cell of origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C191 synthesize findings from multiple experimental approaches (clonal analysis, modeling, genetic perturbations, transcriptomics) into a coherent model. The quantitative parameters are well-supported by data. The speculation about tumor-specific mechanisms (C190-C191) is reasonable given the reproducible differences between tumor types, though the underlying mechanisms are not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Temporal patterning in mammalian neural progenitors has been recently discovered, but whether it determines cell of origin and governs CNS tumor growth in children remains unknown. The finding that fetal cerebellar programs are recapitulated in medulloblastomas is promising. This work on Drosophila possibly provides a conceptual framework for understanding pediatric CNS tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C195 appropriately contextualize the work within mammalian biology. The citations to recent work (Clark et al. 2019, Telley et al. 2019, Vladoiu et al. 2019) support the claims about temporal patterning conservation and transcriptional recapitulation in medulloblastomas. The statement that applicability to human tumors 'remains unknown' (C193) is appropriately cautious. The claim that this work 'possibly provides' a framework (C195) is reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "Temporal patterning provides a tumor-intrinsic mechanism generating metabolic heterogeneity through progressive silencing of glucose and glutamine metabolism genes. Chinmo+Imp+ CSC-like tNBs highly express glycolytic, OXPHOS, and Gdh genes, likely favoring sustained self-renewal and metabolic plasticity. Down-regulation after Imp-to-Syp transition progressively exhausts Syp+E93+ tNB growth and self-renewal, leading to cell-cycle exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C202 integrate transcriptomic data (C157-C159) with functional data (C165-C167) and modeling predictions (C97, C105). The metabolic characterization is well-supported by RNA-seq and genetic perturbations. The inference about metabolic plasticity (C198) is reasonable and supported by citation to Sancho et al. 2016. The mechanistic model linking metabolism to self-renewal capacity (C201) is logical but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Syp+E93+ tNBs with lowest metabolic and cell-cycle gene levels upregulate E(spl) genes. Expression of Hes genes (E(spl) orthologs) in vertebrate neural stem cells is associated with quiescence maintenance. Thus, E(spl) genes may promote the quiescent tNB state while preventing neuronal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C205 are supported by pseudotime analysis showing E(spl) enrichment in a specific branch (C149-C150, C162-C163) and citations to vertebrate literature (Chapouton et al. 2011, Sueda et al. 2019). The inference about E(spl) function in tumors (C205) is reasonable given the correlation with low metabolic/cell cycle genes and consistency with model predictions of quiescence, though direct functional validation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "Down-regulation of metabolic gene mRNAs after Imp-to-Syp transition could be due to transcriptional silencing or increased mRNA degradation. Chinmo is a candidate transcriptional activator (its inactivation reduces NB growth and it's a direct Imp/Syp target). Alternatively, Imp orthologs in humans promote OXPHOS in glioma cells through post-transcriptional regulation of mitochondrial genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C206-C208 present two plausible but unresolved mechanisms. C207 is supported by prior work (Narbonne-Reveau et al. 2016) and binding data (C130-C132), but direct evidence that Chinmo transcriptionally activates metabolic genes is not provided. C208 is supported by citation to Janiszewska et al. 2012 but represents work in a different system. Both mechanisms could operate simultaneously. Further experiments are needed to distinguish these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "A small population of tNBs expresses stress/growth arrest factors (Gadd45, Irbp18, Xrp1, GstE6). Xrp1 is a p53 target in irradiation response and has been linked to translation defects along with Irbp18 and GstE6. These factors may label tNBs undergoing DNA or translational stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C209-C212 are supported by single-cell RNA-seq identifying small clusters (5 and 6) expressing these factors (C42) with appropriate citations (Akdemir et al. 2007, Francis et al. 2016, Lee et al. 2018). The inference about stress (C212) is reasonable given the known functions of these genes, though the functional significance and consequences for tumor progression are not investigated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C213",
+      "C214",
+      "C215",
+      "C216"
+    ],
+    "result": "Transcriptomic analyses reveal strong similarities between tNB and larval NB differentiation trajectories. However, down-regulation of glucose metabolism genes after Imp-to-Syp transition has not been detected in larval NBs. The glial niche surrounding NBs may sustain high metabolic gene expression in late Syp+E93+ NBs during development, but this niche is absent in tumors, potentially leading to progressive cell-cycle exit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C213-C216 appropriately note a discrepancy between tumor and developmental data. C214 is supported by citation to Ren et al. 2017. The speculation about glial niche role (C215-C216) is reasonable given citations (Chell and Brand 2010, Cheng et al. 2011, Sousa-Nunes et al. 2011) but remains untested. This represents an interesting hypothesis requiring future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222"
+    ],
+    "result": "Chinmo and Imp are reminiscent of mammalian oncofetal genes. The three human IMP orthologs (IGF2BP1-3) are oncofetal genes and important regulators of proliferation and metabolism in many cancers including pediatric neural cancers. SYNCRIP paralogs emerge as tumor suppressors. The oncogenic and tumor suppressor roles appear conserved and may not be restricted to neural tumors, raising the possibility that IMP and SYNCRIP families form a master module regulating CSC populations and hierarchy across human cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C217-C222 are well-supported by multiple citations documenting IMP and SYNCRIP family roles in human cancers (Bell et al. 2015, Dai et al. 2017, Degrauwe et al. 2016a/b, Janiszewska et al. 2012, Sakurai et al. 2016, Vanharanta et al. 2014). The parallel between Drosophila and human is compelling. However, C222 is speculative ('raises the possibility') about the generality across cancer types, which is appropriate given current evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "CNS tumors are rare in adults (<2%) but represent >25% of pediatric cancers. The developing CNS is particularly sensitive to malignant transformation. Pediatric tumors are often genetically stable, with biallelic inactivation of single genes sometimes sufficient to trigger malignant growth (e.g., RB1, SMARCB1). CNS pediatric tumors like medulloblastomas recapitulate fetal transcription programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide well-established background supported by appropriate citations (Arora et al. 2009, Curado et al. 2007, Biswas et al. 2016, Gr\u00f6bner et al. 2018, Marshall et al. 2014, Puisieux et al. 2018, Scotting et al. 2005, Vogelstein et al. 2013, Vladoiu et al. 2019). These are standard knowledge claims that contextualize the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Drosophila CNS arises from asymmetrically-dividing neuroblasts (NBs) with limited self-renewal that divide throughout development to generate GMCs, which produce neurons/glia. NBs are the fastest cycling cells (dividing every hour in larvae) but terminate during metamorphosis. Imp and Syp are essential for promoting and concluding NB activity. The Imp-to-Syp transition is regulated by temporal transcription factors and is essential for NB decommissioning; failure results in NBs permanently dividing in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20 provide well-established background on Drosophila NB biology supported by appropriate citations (Maurange and Gould 2005, Truman and Bate 1988, Yang et al. 2017, Homem et al. 2014, Maurange et al. 2008, Narbonne-Reveau et al. 2016, Ren et al. 2017, Syed et al. 2017, Bayraktar and Doe 2013, Isshiki et al. 2001, Li et al. 2013). These are standard knowledge claims that provide essential context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Perturbation of asymmetric division during early development leads to NB amplification with tumorigenic characteristics. Inactivation of Prospero (Pros) in type I NBs causes GMCs to fail differentiation and revert to NB-like state. Inactivation of pros before mid-L3 leads to aggressive tumors persisting in adults, caused by aberrant maintenance of Imp and Chinmo. NB tumors can also be induced by inactivating Brat (type II NBs) or Nerfin-1 (neurons), with growth relying on the Chinmo/Imp module. Chinmo and Imp are expressed in subpopulations, demonstrating tumor heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C34 provide background on Drosophila NB tumor models supported by appropriate citations (Caussinus and Gonzalez 2005, Choksi et al. 2006, Hirata et al. 1995, Matsuzaki et al. 1992, Bello et al. 2006, Narbonne-Reveau et al. 2016, Betschinger et al. 2006, Lee et al. 2006, Froldi et al. 2015). These establish the experimental system and prior knowledge that motivates the current study.",
+    "result_type": "MINOR"
+  }
+]

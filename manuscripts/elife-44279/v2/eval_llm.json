@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C60",
+      "C61",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study used 96 B. cinerea isolates with natural genetic variation to infect three Arabidopsis genotypes (WT Col-0, coi1-1, and npr1-1) and conducted dual transcriptome analysis at 16 hours post-infection with four biological replicates, generating 1,152 RNA samples sequenced on Illumina HiSeq platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C8, C60-C61, and C69-C74 collectively describe a well-designed experimental system with appropriate controls (JA and SA mutants), adequate replication, established methodology (detached leaf assays validated by C71), and a diverse pathogen collection. The experimental design is clearly stated and methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "Mapping dual-transcriptome reads against the B. cinerea B05.10 reference genome identified 9,284 predicted gene models (approximately 79% of the 11,701 predicted genes) using thresholds of either 30 gene counts in one isolate or 300 gene counts across 96 isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 provide explicit quantitative data on gene detection with clear thresholds. The dual threshold approach (isolate-specific and pan-isolate) is reasonable for capturing both common and isolate-specific expression patterns. The 79% coverage is appropriate for in planta transcriptomics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Early B. cinerea transcriptional activity (measured as fraction of B. cinerea reads at 16HPI) correlates with later lesion development at 72HPI, with significant correlations in WT Col-0 (R\u00b2=0.1101, p=0.0016), coi1-1 (R\u00b2=0.2562), and npr1-1 (R\u00b2=0.161), and more vigorous early transcriptomic activity in the two mutants compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 present a coherent finding with statistical support. The correlations are modest but significant, and the differential responses across genotypes are biologically plausible. The curvilinear relationships in mutants and stronger correlation in coi1-1 suggest complex host-pathogen dynamics. However, the R\u00b2 values indicate that early transcriptional activity explains only 11-26% of lesion variance, suggesting other factors are important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Genetic variation in the pathogen significantly influenced 8,603 B. cinerea transcripts (74% of gene models, average H\u00b2=0.152), while host genetic variation influenced 5,244 transcripts (45%, average H\u00b2=0.010), and 4,541 genes (39%) showed genotype-by-genotype dependent expression (average H\u00b2=0.116), indicating that pathogen genetic variation has far greater influence on B. cinerea gene expression than host defense responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 provide comprehensive heritability analysis with explicit statistical values. The finding that pathogen variation (H\u00b2=0.152) dominates over host variation (H\u00b2=0.010) is well-supported by the data. The substantial interaction effect (H\u00b2=0.116) on 39% of genes demonstrates complex host-pathogen dynamics. The statistical approach using negative binomial GLM is appropriate for count data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Bcpg1 encodes an endopolygalacturonase and Bcoah encodes an oxaloacetate hydrolase, both showing variable expression across isolates and host genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 state established gene functions supported by prior literature. These are used as examples of genes showing host x pathogen interaction effects, which is supported by Figures 3 and 3-supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Genome-wide correlation analysis identified 2,521 B. cinerea genes (22%) positively correlated and 114 genes (1%) negatively correlated with lesion area (p<0.01), with the top 100 positively correlated genes including all seven BOT biosynthesis genes, over 30 cell wall degrading enzymes, 10 peptidases, and 37 genes with no GO annotation representing potential novel virulence mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 describe a systematic approach to identify virulence-associated genes with appropriate statistical correction (FDR). The enrichment of known virulence factors (BOT genes, cell wall enzymes, peptidases) in top-correlated genes validates the approach. The identification of 37 unannotated genes provides novel hypotheses. The correlation approach is appropriate though causation cannot be inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Ten distinct B. cinerea gene co-expression networks (GCNs) were identified, including two large trans-regulated networks (242 genes for vesicle/virulence and 128 genes for translation/growth), five smaller trans-regulated networks (5-20 genes distributed across chromosomes), and three cis-regulated networks with genes clustered on single chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe the identification and classification of GCNs with clear structural and functional characterization. The distinction between trans- and cis-regulated networks based on chromosomal distribution is logical. The functional annotations (vesicle/virulence, translation/growth) are supported by GO analysis. The correlation threshold (0.8) and network construction methodology are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Three chromosomally clustered secondary metabolite biosynthesis GCNs were identified: BOT (7 genes on chromosome 12 with Zn(II)2Cys6 transcription factor), BOA (13 genes on chromosome 1), and a novel putative cyclic peptide pathway (10 genes on chromosome 1), with variable expression across isolates including complete pathway absence in some isolates (1 isolate lacking BOT, 19 lacking BOA, 24 lacking cyclic peptide).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 identify known (BOT, BOA) and novel (cyclic peptide) secondary metabolite pathways with clear genomic organization and expression patterns. The chromosomal clustering and co-expression support functional relationships. The natural variation in pathway expression (including complete absence) is well-documented and biologically plausible. The novel cyclic peptide pathway identification is supported by homology analysis, though functional validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "BOT and BOA pathway expression showed significant relationships with lesion area at 72HPI, while the putative cyclic peptide pathway was only associated with lesion development in a BOT-dependent manner, suggesting potential synergism with BOT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 use eigengene analysis and linear mixed models to link pathway expression to virulence. The BOT-dependent association of the cyclic peptide pathway is an interesting finding suggesting functional interaction. However, the statistical details are in supplementary files, limiting full evaluation. The inference of synergism (C39) is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "B. cinerea GCN core membership was largely maintained across three Arabidopsis genotypes, but specific linkages within and between GCNs were variable, with the two largest GCNs developing multiple new co-expression connections in the JA-compromised coi1-1 host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 demonstrate that GCN structure is partially host-dependent while maintaining core membership. This is supported by comparative network analysis across genotypes (Figure 7). The finding that JA deficiency alters network connectivity is biologically plausible and suggests host immunity shapes pathogen transcriptional coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Three cross-kingdom GCNs (CKGCNs) were identified containing 54 hub genes (27 from each species) in WT, with plant genes predominantly from the Defense/camalexin GCN and the Defense/camalexin and Photosystem I GCNs showing higher centrality than Cell Division or Plastid GCNs across all host genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 describe cross-kingdom network analysis identifying direct gene-gene interactions between species. The equal representation of hub genes from both species and enrichment of defense-related plant genes are biologically meaningful. The centrality analysis provides insights into which host processes most interact with pathogen networks. The methodology using correlation across isolates is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In WT Col-0, fungal GCNs (Copper transport, Exocytosis regulation, BOT, IPP) positively correlated with host Defense/camalexin GCN showed negative correlations with PSI, but in npr1-1, Defense/camalexin and PSI GCNs shifted to positive correlation, reflecting a shift where BOT GCN has positive correlation with Defense/camalexin in Col-0 but negative in npr1-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 reveal complex, genotype-dependent correlational relationships between host and pathogen GCNs. The opposing correlations of pathogen GCNs with Defense/camalexin versus PSI in WT, and the shift in npr1-1, suggest SA pathway involvement in coordinating these responses. However, these are correlations and causation cannot be inferred. The biological interpretation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In planta germination estimates significantly associated with virulence, but all B. cinerea GCNs remained significantly associated with lesion area after controlling for germination, with BOT and BOA GCN links largely unaffected while vesicle GCN link was decreased but not abolished, indicating germination is one of multiple factors influencing the co-transcriptome without dominant global influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 address an important potential confound (germination variation) using an eigengene approach based on published germination-associated genes. The finding that GCN-virulence associations persist after controlling for germination strengthens the main conclusions. The differential effects on different GCNs (BOT/BOA unaffected, vesicle partially affected) suggest distinct mechanisms. The approach is reasonable though indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C59"
+    ],
+    "result": "The transcriptional virulence strategy of B. cinerea depends on both fungal genotype and host immune system function, with co-transcriptome networks revealing known and novel virulence components coordinated with host GCNs, and late-stage disease development determined during the first few hours of infection by plant immune and fungal virulence response interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C59 represent the main conclusions synthesizing multiple lines of evidence: heritability analysis (C15-C18), correlation with lesion area (C21-C26), GCN identification (C27-C41), and cross-kingdom networks (C42-C48). The conclusion that early transcriptional interactions determine late disease is supported by the 16HPI to 72HPI correlations. These are well-supported integrative conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The BOT GCN shows strong positive correlation with Arabidopsis Defense/camalexin GCN in WT Col-0, suggesting BOT production may directly induce host defense, while BOT GCN is negatively linked to plant PSI GCN, suggesting BOT may repress photosynthetic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57 present correlational data with speculative mechanistic interpretations. While the correlations are supported by the data, the causal interpretations ('directly induce', 'repress') are not demonstrated. These are reasonable hypotheses but require experimental validation. The manuscript appropriately uses 'suggesting' to indicate speculation, but the claims remain uncertain without functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Background knowledge claims about B. cinerea as a necrotrophic generalist pathogen, plant immune systems, pathogen virulence strategies, and specific mechanisms in Arabidopsis and B. cinerea are established in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C62-C68 represent established background knowledge supported by appropriate citations. These provide context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The exocytosis complex is responsible for delivery of secondary metabolites and proteins to the extracellular space and plasma membrane in fungi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 states established knowledge about exocytosis function with supporting citations. This provides biological context for interpreting the exocytosis regulation GCN identified in the study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Single-cell RNA sequencing of the mouse habenula yielded 7,506 high-quality single-cell transcriptomes from 25,289 initial cells, which were clustered into 12 cellular populations using principal component analysis and shared-nearest-neighbor clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe the data collection and initial processing pipeline. The quality control metrics (C25-C26) are clearly stated, the clustering methodology is cited (C27), and cell type identification is cross-referenced with published datasets (C28). These methodological claims are internally consistent and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The habenula contains two major neuronal populations: MHb neurons (n=3,370 cells) expressing Tac2, and LHb neurons (n=560 cells) expressing Gap43, which were identified through differential gene expression and validated by in situ hybridization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C36-C39 establish the primary division of habenular neurons into MHb and LHb populations based on marker gene expression. The findings are supported by both transcriptomic data and ISH validation from the Allen Brain Atlas (C38), providing orthogonal confirmation of the cell type assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Initial clustering of MHb neurons revealed eight clusters, three of which were distinguished by high expression of activity-dependent genes (ADGs). After regressing out the principal component containing ADGs, five distinct MHb neuronal subtypes remained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 describe a critical data processing step where activity-dependent gene expression was identified as a confounding factor. The approach of regressing out ADG-associated variance is methodologically sound and appropriately documented with references to supplementary figures. This demonstrates careful consideration of technical artifacts in single-cell data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "All MHb neurons express glutamatergic markers (Slc17a6, Slc17a7) and Tac2, indicating they are glutamatergic and produce Neurokinin B. Two of five MHb subtypes also express cholinergic markers (Slc18a3, Chat), suggesting glutamate/acetylcholine co-release. MHb neurons lack canonical GABAergic markers (Slc32a1, Gad1, Slc18a2), though Gad2 is expressed at low levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 characterize the neurotransmitter phenotypes of MHb neurons based on expression of canonical markers. The inference that neurons are glutamatergic (C45) and may co-release acetylcholine (C47) is supported by established knowledge linking these genes to neurotransmitter synthesis and packaging. The conclusion that MHb neurons are unlikely to release GABA (C50) is appropriately cautious given the absence of vesicular GABA transporter expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MHb neuronal subtypes map to discrete anatomical regions: neurons divide along the dorsal/ventral axis with a lateral subtype (enriched for Sema3d, Calb1, Spon1), ventral subtypes ('ventral two thirds' enriched for Lmo3, and 'ventrolateral' enriched for Esam and Slc18a3), and dorsal subtypes ('dorsal' enriched for Col16a1, Wif1, Adcyap1, and 'superior' enriched for Cck and Avil).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 establish the spatial organization of MHb subtypes by cross-referencing differentially expressed genes with ISH data from the Allen Brain Atlas. The consistent mapping of DEGs to discrete anatomical regions (C51) provides strong evidence for the spatial organization. The observation that some subtypes may be partially intermingled (C56) appropriately acknowledges the limitations of sharp boundaries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "LHb neurons are distinguished from MHb by high expression of Gap43 and other genes (Htr2c, Pcdh10, Gabra1, Syn2). Unlike MHb, LHb neurons do not show elevated activity-dependent genes and cluster into four subtypes that all express high levels of the glutamatergic marker Slc17a6 and very low levels of the GABAergic marker Slc32a1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 characterize the molecular properties of LHb neurons. The differential expression analysis distinguishing LHb from MHb (C60) is supported by the data. The uniform expression of glutamatergic markers across all LHb subtypes (C64) contrasts with the neurotransmitter diversity in MHb, representing a key finding about LHb organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Four LHb neuronal subtypes were identified based on spatial patterns of differentially expressed genes: oval/medial (high expression in lateral oval and central medial subdivisions), marginal (marginal subdivision of medial LHb), lateral (lateral subdivision avoiding lateral oval), and HbX (dorsal border between MHb and LHb). The HbX region is transcriptionally more similar to other LHb clusters than to MHb clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 define four LHb subtypes based on spatial gene expression patterns validated by ISH. The finding that HbX is transcriptionally more similar to LHb than MHb (C70) is particularly notable as it refines previous anatomical classifications. The spatial mapping is supported by consistent DEG patterns (C65) and references to prior anatomical studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Multiplexed FISH using four highly expressed DEGs (Chrm3, Vgf, Gpr151, Sst) confirmed that the four LHb neuronal subtypes are molecularly distinct at the single-cell level. The genes are largely expressed in non-overlapping patterns at the macroscopic level, with cells occupying distinct spatial domains along the medial/lateral axis, though cells from different subtypes intermingle without sharp borders. An exception is HbX neurons, which co-express Sst and Gpr151.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C81 provide critical orthogonal validation of the transcriptomic clustering using FISH. The general non-overlapping expression of marker genes (C73, C76) confirms the distinctness of subtypes, while the acknowledgment of intermingling (C78) and the HbX exception (C74) demonstrates careful observation. The spatial analysis along the medial/lateral axis (C77) and the observation that most genes do not show gradients (C80) provide important details about LHb organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Monosynaptic retrograde tracing from VTA GABAergic neurons (VGAT-IRES-Cre mice) revealed that all four LHb subtypes project to VTA GABA neurons, with the majority of labeled neurons in lateral (48\u00b10.5% Gpr151+) and oval/medial (41\u00b10.6% Chrm3+) subtypes, fewer in marginal (10\u00b11% Vgf+), and very few in HbX (2\u00b11% Sst+). The distribution of labeled cells was skewed laterally along the medial/lateral axis. Approximately 30% of starter cells co-expressed Slc17a6, indicating they are GABA/glutamate co-releasing neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 describe the connectivity between LHb subtypes and VTA GABAergic neurons using rabies-based monosynaptic tracing. The quantitative data (C90-C92) are clearly presented with error estimates. The characterization of starter cells (C87-C88) is important for interpreting the results, as it reveals that ~30% are co-releasing neurons. The spatial bias toward lateral LHb (C93) is a key finding about circuit organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Monosynaptic retrograde tracing from VTA dopaminergic neurons (DAT-IRES-Cre mice) showed a different pattern than from VTA GABA neurons: a larger proportion of labeled neurons were in oval/medial (61\u00b12% Chrm3+) and marginal (20\u00b11% Vgf+) subtypes, with fewer in lateral (10\u00b10.4% Gpr151+) and almost none in HbX (0.7\u00b10.5% Sst+). The distribution was relatively even along the medial/lateral axis. Approximately 9% of starter cells co-expressed Slc32a1, indicating low overlap with VGAT-IRES-Cre experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 demonstrate differential targeting of VTA dopaminergic versus GABAergic neurons by LHb subtypes. The quantitative differences in subtype proportions (C96-C98) and spatial distributions (C99) are clearly documented. The characterization of starter cell overlap (C94-C95) is crucial for establishing that the two experiments target largely distinct VTA populations, strengthening the conclusion of differential targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Both VTA GABAergic and dopaminergic neurons receive input from all four LHb subtypes, but with different proportions: VTA dopaminergic neurons receive the largest proportion from oval/medial LHb, while VTA GABAergic neurons receive equal input from oval/medial and lateral subtypes. The spatial distribution differs, with input to VTA GABA neurons skewed laterally and input to dopamine neurons distributed evenly along the medial/lateral axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 synthesize the retrograde tracing results to reveal differential circuit organization. The conclusion that both VTA cell types receive input from all LHb subtypes (C100) is supported by the detection of labeled neurons in all four subtypes in both experiments. The quantitative and spatial differences (C101-C103) demonstrate subtype-specific targeting patterns that are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Retrograde tracing from the dorsal raphe nucleus (DRN) using non-pseudotyped G-deleted rabies virus showed that DRN receives the largest proportion of LHb input from oval/medial subtype (51\u00b12% Chrm3+), with minor inputs from lateral (16\u00b15% Gpr151+), marginal (28\u00b15% Vgf+), and HbX (1\u00b10.5% Sst+). The proportions are more similar to VTA dopamine than VTA GABA neurons, but the distribution has a prominent spike on the medial edge of LHb. This reveals a medial-to-lateral organization: medial LHb neurons preferentially target DRN, lateral neurons target VTA GABA neurons, and VTA DA neurons receive evenly distributed input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 extend the connectivity analysis to DRN and synthesize the overall spatial organization of LHb outputs. The use of non-pseudotyped rabies virus (C105-C106) is appropriate for this experiment. The quantitative data (C107-C108) and comparisons across targets (C109) are well-documented. The synthesis of spatial organization (C111) represents an important higher-order conclusion about LHb circuit architecture that is supported by the combined tracing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C70"
+    ],
+    "result": "The HbX subtype, located at the border between MHb and LHb, is transcriptionally more similar to other LHb subtypes than to MHb subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C70 make the same assertion about HbX transcriptional similarity, supported by clustering analysis and gene expression data. This finding refines previous anatomical classifications that may have grouped HbX with MHb based on location. The transcriptional evidence provides a molecular basis for reclassifying HbX as part of LHb.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "In contrast to other species, no major transcriptional differences were observed across left and right hemispheres in the mouse habenula, leading to pooling of cells from both hemispheres for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 report the absence of hemispheric differences in mouse habenula, contrasting with findings in other species. This is an important negative result that justifies the methodological decision to pool hemispheres (C32). The comparison to other species (C31) is appropriately cited and the data are shown in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The single-cell data confirmed recent findings on non-neuronal cell types in habenula, including high levels of Tnf in macrophages and microglia, and high levels of Kir4.1 (Kcnj10) in astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 validate the dataset by confirming previously published findings about non-neuronal cell types. This cross-validation with recent literature strengthens confidence in the overall dataset quality and cell type identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The anatomical locations of MHb subtypes identified by single-cell transcriptional profiling largely agree with previously defined MHb subnuclei. The two ventral subtypes co-express transcripts for glutamate and acetylcholine neurotransmission and can be differentially targeted using genes such as Lmo3 and Esam.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 validate the transcriptomic findings against prior anatomical studies and suggest practical applications. The agreement with previous work (C122) strengthens the findings, while the identification of differential markers (C124) provides tools for future functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "In contrast to some reports, the study found no evidence of GABAergic neurons in LHb or MHb. Although Gad2 and Slc6a1 were present at low levels, Slc32a1 and Slc18a2 (required for vesicular GABA loading) were not expressed. This agrees with recent findings that Gad2 expression is a poor discriminator for GABAergic neurons, suggesting either GABAergic cells are rare enough to be missed or the habenula lacks GABAergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 address a controversy in the literature about GABAergic neurons in habenula. The absence of vesicular GABA transporter expression (C138) is strong evidence against functional GABAergic transmission, even with low Gad2 expression. The citation of recent work showing Gad2 is a poor marker (C139) strengthens this interpretation. The cautious conclusion (C140) appropriately acknowledges alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Retrograde tracing from VTA shows that Gpr151+ lateral LHb neurons avoid dopaminergic VTA neurons but heavily innervate GABAergic VTA neurons. VTA GABAergic interneurons are functionally similar to RMTg neurons (both inhibit VTA dopaminergic neurons), consistent with both being innervated by lateral LHb. The lateral LHb is likely the major subtype translating aversive signals to VTA GABAergic neurons, which become active following reward omission. These cells are positioned to translate signals from entopeduncular nucleus to downstream midbrain structures involved in dopamine and serotonin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 integrate the study's findings with prior knowledge about circuit function. The retrograde tracing data (C146) directly support the connectivity claims. The functional interpretations (C147-C148) are appropriately supported by citations to prior work. The synthesis about circuit position (C149) represents a reasonable inference based on the connectivity data and prior knowledge of inputs and outputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C159"
+    ],
+    "result": "The majority of LHb neurons projecting to VTA dopamine neurons express Chrm3 (oval/medial subregion marker), with their distribution shifted medially compared to neurons projecting to VTA GABA neurons. This suggests VTA dopamine-projecting Chrm3+ neurons reside primarily in the more medial part of the oval/medial subdivision. Studies suggest LHb neurons targeting VTA dopamine neurons may be distinct from those targeting RMTg, indicating two populations of Chrm3+ neurons with different targets may exist. The data show VTA dopamine and GABAergic neurons receive quite different synaptic input from LHb due to differential targeting by LHb subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 and C159 synthesize the retrograde tracing findings to reveal fine-scale organization within the oval/medial LHb subtype. The spatial shift in distribution (C156) is supported by the data. The inference about two Chrm3+ populations (C157) is appropriately cautious ('may exist') and supported by citations to prior work. The overall conclusion about differential targeting (C159) is well-supported by the quantitative and spatial data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The marginal LHb subdivision (enriched for Vgf and Plch1) projects most heavily to DRN, with a prominent spike in the distribution of LHb input to DRN on the medial edge of LHb. This agrees with other studies showing labeling of the medial half of LHb following retrograde tracing from raphe nucleus. The marginal region also receives dense input from serotonergic raphe neurons and expresses Htr2c and other serotonin receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C164 characterize the marginal LHb subdivision and its relationship to DRN. The retrograde tracing data (C161) support the connectivity claim, and agreement with prior studies (C162) validates the findings. The reciprocal connectivity (C163) and receptor expression (C164) suggest this region is part of a feedback circuit with DRN, though the functional implications require further study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The study performed transcriptional and anatomical analyses of the habenula, classifying MHb and LHb neurons into five and four major types respectively, each with distinct gene expression patterns. The four LHb populations were confirmed as non-overlapping by FISH. Monosynaptic retrograde tracing revealed that GABAergic VTA neurons receive equal input from oval/medial and lateral LHb subtypes, while dopaminergic VTA neurons receive input primarily from oval/medial LHb. DRN neurons receive input from similar LHb cell types in proportions similar to dopaminergic VTA neurons, but the LHb cells targeting DRN are skewed medially compared to those targeting VTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 summarize the major findings of the study. These summary claims are well-supported by the detailed results described in other claim groups. The integration of transcriptional profiling, FISH validation, and circuit tracing provides a comprehensive characterization of habenular organization and connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C158"
+    ],
+    "result": "Additional genetic heterogeneity between Chrm3+ oval and medial subdivisions could be further resolved with higher resolution sequencing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C158 is a speculation about future work. While the suggestion is reasonable given the current resolution of the data, it represents a hypothesis about what might be found rather than a supported result. The citations to higher-resolution methods are appropriate, but this claim cannot be evaluated as supported or unsupported based on the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C165"
+    ],
+    "result": "The marginal LHb subregion is expected to project heavily to the lateral dorsal tegmental nucleus (LDTg) and posterior hypothalamic area (PH), as retrograde injections into these areas exclusively label the medial half of LHb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C165 is an inference based on prior work rather than data from this study. While the inference is reasonable given the spatial organization revealed by the study and the cited prior work, it represents a prediction that would require experimental validation. The claim appropriately uses 'expect' to indicate this is not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C168"
+    ],
+    "result": "Future studies will improve understanding of habenula cell type function by employing optogenetic, chemogenetic, and electrophysiological approaches for precise control and monitoring of individual habenular populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C168 is a statement about future research directions rather than a result of the current study. While the study provides the molecular tools to enable such future work, this claim cannot be evaluated as supported or unsupported as it describes work that has not yet been done.",
+    "result_type": "MINOR"
+  }
+]

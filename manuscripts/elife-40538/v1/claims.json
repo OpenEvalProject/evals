@@ -1,0 +1,1462 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The Pearson correlation coefficient is equal to the average element-wise product of two traits measured across individuals, after each trait is mean centered and scaled.",
+    "claim_type": "EXPLICIT",
+    "source": "Our approach builds on previous work (Steiger, 1980), and is based on the fact that the Pearson correlation coefficient is equal to the average element-wise product of two traits measured across individuals, after each trait is mean centered and scaled",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a mathematical definition of the Pearson correlation coefficient, which is established knowledge in statistics.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "CILP can accommodate covariates and continuous predictor variables.",
+    "claim_type": "EXPLICIT",
+    "source": "This vector of products can be used as the outcome variable in a linear model or linear mixed model, and consequently our approach can accommodate covariates and continuous predictor variables.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference from the fact that the product vector can be used as an outcome variable in standard linear modeling frameworks.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "With an effect size of 0.3 and n = 1000, CILP detected 98.19% of simulated true positive correlation QTLs at a threshold of p=0.05.",
+    "claim_type": "EXPLICIT",
+    "source": "With an effect size of 0.3 and n = 1000, we detected 98.19% of simulated true positive correlation QTLs at a threshold of p=0.05",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation data presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "With an effect size of 0.3 and n = 1000, CILP detected 50.91% of true positives after correcting for multiple hypothesis testing using Bonferroni correction.",
+    "claim_type": "EXPLICIT",
+    "source": "With an effect size of 0.3 and n = 1000, we detected 98.19% of simulated true positive correlation QTLs at a threshold of p=0.05, and 50.91% of true positives after correcting for multiple hypothesis testing (using Bonferroni correction).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation data presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Under the null (effect size = 0), CILP detected 5.19% of correlation QTLs at a threshold of p=0.05.",
+    "claim_type": "EXPLICIT",
+    "source": "Under the null, where the effect size was set to zero, we detect 5.19% of correlation QTLs at a threshold of p=0.05",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation data presented in the manuscript and matches the expected false positive rate.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Under the null (effect size = 0), CILP detected no correlation QTL after correcting for multiple testing.",
+    "claim_type": "EXPLICIT",
+    "source": "Under the null, where the effect size was set to zero, we detect 5.19% of correlation QTLs at a threshold of p=0.05 and no correlation QTL after correcting for multiple testing",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation data presented in the manuscript.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "The presence of strong varQTLs decreased power to detect correlation QTLs.",
+    "claim_type": "EXPLICIT",
+    "source": "None of these scenarios increased the false positive rate, though the presence of strong varQTLs did decrease power to detect correlation QTLs",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by simulation data presented in Table 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Including the expression levels of both genes as covariates in models did not improve power to detect correlation QTLs.",
+    "claim_type": "EXPLICIT",
+    "source": "We also found that including the expression levels of both genes as covariates in our models did not improve our power to detect correlation QTLs (Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by simulation data shown in Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "958 gene pairs showed a significant (FDR < 5%) change in correlation between the uninfected/baseline state versus 2 hr post LPS stimulation.",
+    "claim_type": "EXPLICIT",
+    "source": "We found 958 gene pairs with a significant (FDR < 5%) change in correlation between the uninfected/baseline state versus 2 hr post LPS stimulation",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of gene expression data from human monocytes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "461 gene pairs that showed significant correlation changes at 2 hr post LPS stimulation replicated with similar effect sizes at the 24 hr time point.",
+    "claim_type": "EXPLICIT",
+    "source": "We found 958 gene pairs with a significant (FDR < 5%) change in correlation between the uninfected/baseline state versus 2 hr post LPS stimulation, 461 of which replicated with similar effect sizes at the 24 hr time point (correlation between effect sizes at the two time points: R2 = 0.12, p<10\u221216, binomial test for concordance of effect size direction: p<10\u221216; Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by analysis of gene expression data from human monocytes at multiple time points.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "There is no relationship between the magnitude of the difference in mean gene expression levels between conditions and the magnitude of the difference in correlation between conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "We observed no relationship between the magnitude of the difference in mean gene expression levels between conditions and the magnitude of the difference in correlation between conditions, suggesting our results are not driven by statistical artifacts associated with large mean changes in transcription following LPS stimulation (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by analysis shown in Figure 2\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "61% of significant transcript pairs at the 2 hr time point were more strongly correlated across individuals in uninfected versus LPS challenged cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, however, we found much greater support for the latter pattern: 61% (at the 2 hr time point) and 73% (at the 24 hr time point) of significant transcript pairs were more strongly correlated across individuals in uninfected versus LPS challenged cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of gene expression data from human monocytes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "73% of significant transcript pairs at the 24 hr time point were more strongly correlated across individuals in uninfected versus LPS challenged cells.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, however, we found much greater support for the latter pattern: 61% (at the 2 hr time point) and 73% (at the 24 hr time point) of significant transcript pairs were more strongly correlated across individuals in uninfected versus LPS challenged cells.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of gene expression data from human monocytes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "There is a statistically significant bias toward a loss of correlation (decoherence) following two hours of simulated bacterial infection (p=1.05\u00d710\u22127, log2 odds = 0.503).",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, this represents a statistically significant bias toward a loss of correlation (i.e. decoherence) following two hours of simulated bacterial infection (p=1.05\u00d710\u22127, log2 odds = 0.503, Fisher's exact test)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by statistical analysis of gene expression data from human monocytes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "There is an even stronger bias toward decoherence after 24 hr of immune challenge (p<10\u221216, log2 odds = 0.941).",
+    "claim_type": "EXPLICIT",
+    "source": "with an even stronger bias toward decoherence after 24 hr of immune challenge (p<10\u221216, log2 odds = 0.941, Fisher's exact test).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by statistical analysis of gene expression data from human monocytes.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "1528 metabolite pairs were more correlated in healthy individuals relative to those with metabolic syndrome (FDR < 5%).",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, we identified 1528 metabolite pairs that were more correlated in healthy individuals relative to those with metabolic syndrome, and 619 metabolite pairs that showed the opposite pattern (FDR < 5%; linear mixed model controlling for age, sex, year, and individual identity).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "619 metabolite pairs were more correlated in individuals with metabolic syndrome relative to healthy individuals (FDR < 5%).",
+    "claim_type": "EXPLICIT",
+    "source": "Specifically, we identified 1528 metabolite pairs that were more correlated in healthy individuals relative to those with metabolic syndrome, and 619 metabolite pairs that showed the opposite pattern (FDR < 5%; linear mixed model controlling for age, sex, year, and individual identity).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "There is a 2.20x enrichment (p<10\u221216) of metabolite pairs that lose correlation following the onset of disease.",
+    "claim_type": "EXPLICIT",
+    "source": "This represents a 2.20x enrichment (p<10\u221216, Fisher's exact test) of metabolite pairs that lose correlation following the onset of disease.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by statistical analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "The set of 1528 metabolite pairs that lose correlation includes metabolites that are both more highly expressed (n = 93 metabolites, FDR < 5%) and more lowly expressed (n = 32) in individuals with metabolic syndrome, as well as metabolites that do not significantly differ between sample groups (n = 4).",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, the set of 1528 metabolite pairs that lose correlation includes metabolites that are both more highly expressed (n = 93 metabolites, FDR < 5%) and more lowly expressed (n = 32) in individuals with metabolic syndrome, as well as metabolites that do not significantly differ between sample groups (n = 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Apolipoproteins show the strongest enrichment for metabolites that exhibited decreases in correlation (odds ratio = 1.94, p=2.34\u00d710\u221213).",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we found the strongest enrichment for apolipoproteins (hypergeometric test, odds ratio = 1.94, p=2.34\u00d710\u221213)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by enrichment analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Measures of total cholesterol show enrichment for metabolites that exhibited decreases in correlation (odds ratio = 1.39, p=1.58\u00d710\u221215).",
+    "claim_type": "EXPLICIT",
+    "source": "measures of total cholesterol (odds ratio = 1.39, p=1.58\u00d710\u221215)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by enrichment analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Small molecules involved in energy metabolism show enrichment for metabolites that exhibited decreases in correlation (odds ratio = 1.43, p=2.75\u00d710\u221213).",
+    "claim_type": "EXPLICIT",
+    "source": "and small molecules involved in energy metabolism (odds ratio = 1.43, p=2.75\u00d710\u221213).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by enrichment analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Fatty acids show enrichment among metabolite pairs that were more strongly correlated in individuals with metabolic syndrome (odds ratio = 1.30, p=7.10\u00d710\u22126).",
+    "claim_type": "EXPLICIT",
+    "source": "Among metabolite pairs that showed the opposite pattern (i.e., were more strongly correlated in individuals with metabolic syndrome), we found an enrichment of fatty acids (odds ratio = 1.30, p=7.10\u00d710\u22126)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by enrichment analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "HDL lipoproteins show enrichment among metabolite pairs that were more strongly correlated in individuals with metabolic syndrome (odds ratio = 1.18, p=1.53\u00d710\u22125).",
+    "claim_type": "EXPLICIT",
+    "source": "as well as HDL (odds ratio = 1.18, p=1.53\u00d710\u22125) and LDL lipoproteins (odds ratio = 1.28, p=3.58\u00d710\u22126)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by enrichment analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "LDL lipoproteins show enrichment among metabolite pairs that were more strongly correlated in individuals with metabolic syndrome (odds ratio = 1.28, p=3.58\u00d710\u22126).",
+    "claim_type": "EXPLICIT",
+    "source": "as well as HDL (odds ratio = 1.18, p=1.53\u00d710\u22125) and LDL lipoproteins (odds ratio = 1.28, p=3.58\u00d710\u22126)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by enrichment analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "PC1 of 34 metabolites with the strongest evidence for decoherence at the first time point could distinguish between individuals that remained healthy across all time points and individuals that were healthy at the first time point but developed metabolic syndrome later on (R2 = 0.056, p=3.03\u00d710\u221210, AIC = \u2212448.40).",
+    "claim_type": "EXPLICIT",
+    "source": "Strikingly, we found that PC1, constructed only using data from the first time point, could distinguish between individuals that remained healthy across all time points and individuals that were healthy at the first time point but developed metabolic syndrome later on (R2 = 0.056, p=3.03\u00d710\u221210, AIC = \u2212448.40; Figure 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by longitudinal analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The predictive effect of PC1 of decoherent metabolites was stronger than that observed using triglyceride levels at the first time point (R2 = 0.046, p=6.32\u00d710\u22129, AIC = -432.61).",
+    "claim_type": "EXPLICIT",
+    "source": "This effect was stronger than that observed in parallel analyses using triglyceride levels at the first time point (a classic biomarker of metabolic syndrome; R2 = 0.046, p=6.32\u00d710\u22129, AIC = -432.61)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by comparative analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The predictive effect of PC1 of decoherent metabolites was stronger than an index created from the 34 metabolites that exhibited the strongest mean differences between healthy and metabolic syndrome individuals at the first time point (R2 = 0.037, p=1.42\u00d710\u22126, AIC = \u2212422.08).",
+    "claim_type": "EXPLICIT",
+    "source": "or an index created from the 34 metabolites that exhibited the strongest mean differences between healthy and metabolic syndrome individuals at the first time point (R2 = 0.037, p=1.42\u00d710\u22126, AIC = \u2212422.08).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by comparative analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "484 associations between a SNP and variation in co-expression were identified in the NESDA discovery dataset (at a 10% FDR threshold, corresponding to p<4.6\u00d710\u22129).",
+    "claim_type": "EXPLICIT",
+    "source": "In total, we identified 484 associations between a SNP and variation in co-expression in our NESDA discovery dataset (at a 10% FDR threshold, corresponding to p<4.6\u00d710\u22129; linear model controlling for sex, age, smoking behavior, major depressive disorder, red blood cell counts, year of sample collection, study phase, and the first five principal components from a PCA on the filtered genotype call set).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by correlation QTL mapping in the NESDA dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "The 484 correlation QTL associations involved 247 unique probe sets and 51 genotyped SNPs.",
+    "claim_type": "EXPLICIT",
+    "source": "These 484 associations involved 247 unique probe sets and 51 genotyped SNP, each of which was involved in 1\u2013424 (mean \u00b1s.d.=3.91 \u00b1 26.9) and 1\u2013173 (mean \u00b1s.d.=9.43 \u00b1 34.1) correlation QTLs, respectively",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by correlation QTL mapping in the NESDA dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "304/484 correlation QTLs replicated in a separate set of NESDA participants (at a Bonferroni corrected p=1.03\u00d710\u22124, n = 1337).",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we found that 304/484 correlation QTLs replicated (at a Bonferroni corrected p=1.03\u00d710\u22124, n = 1337",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by replication analysis in an independent NESDA cohort.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "428/484 correlation QTLs replicated at a 10% FDR in a separate set of NESDA participants.",
+    "claim_type": "EXPLICIT",
+    "source": "428/484 correlation QTLs replicated at a 10% FDR; Figure 4",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by replication analysis in an independent NESDA cohort.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "47/74 testable correlation QTLs replicated at a 10% FDR in whole-blood derived gene expression data from 1414 YFS participants.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, in whole-blood derived gene expression data from 1414 YFS participants, we found that 47/74 testable correlation QTLs replicated at a 10% FDR",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by replication analysis in the YFS dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The direction of correlation QTL effects consistently agreed across NESDA and YFS datasets (binomial test, p<10\u221216).",
+    "claim_type": "EXPLICIT",
+    "source": "0 replicated at a Bonferroni corrected p=6.76\u00d710\u22124, but the direction of the effects consistently agreed across datasets, binomial test, p<10\u221216",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by replication analysis comparing NESDA and YFS datasets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "73.76% of correlation QTL were located on the same chromosome as one of the two correlated genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Here, we found that 73.76% of correlation QTL were located on the same chromosome as one of the two correlated genes",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of the physical location of correlation QTLs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "14.57% of correlation QTL were located on the same chromosome as both correlated genes.",
+    "claim_type": "EXPLICIT",
+    "source": "14.57% were located on the same chromosome as both correlated genes",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of the physical location of correlation QTLs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "11.57% of correlation QTL were acting in trans on both genes.",
+    "claim_type": "EXPLICIT",
+    "source": "and 11.57% were acting in trans on both genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of the physical location of correlation QTLs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "87.81% of significant correlation QTL were also cis eQTL or varQTL for one of the correlated genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, 87.81% of significant correlation QTL were also cis eQTL or varQTL for one of the correlated genes",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of the relationship between correlation QTLs and eQTLs/varQTLs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "No correlation QTL had mean or variance effects on both genes.",
+    "claim_type": "EXPLICIT",
+    "source": "but no correlation QTL had mean or variance effects on both genes (Figure 4\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by analysis shown in Figure 4\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Genes involved in significant correlation QTLs were 1.90x more likely to be transcription factors (hypergeometric test, p=1.7\u00d710\u22123).",
+    "claim_type": "EXPLICIT",
+    "source": "In support of these ideas, genes involved in significant correlation QTLs were 1.90x more likely to be TFs (hypergeometric test, p=1.7\u00d710\u22123)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by enrichment analysis of genes involved in correlation QTLs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "Genes involved in significant correlation QTLs were 1.52x more likely to be known targets of transcription factors (p=6.7\u00d710\u22124).",
+    "claim_type": "EXPLICIT",
+    "source": "and 1.52x more likely to be known targets of transcription factors (p=6.7\u00d710\u22124) relative to the background set of all genes tested.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by enrichment analysis of genes involved in correlation QTLs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "Genes involved in significant correlation QTLs were enriched for cellular response to oxidative stress (odds ratio = 2.21, p<10\u221216).",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, genes involved in significant correlation QTLs were enriched for biological processes involved in metabolism and metabolic disease (James et al., 2012; Rani et al., 2016) such as cellular response to oxidative stress (hypergeometric test, odds ratio = 2.21, p<10\u221216)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by Gene Ontology enrichment analysis of genes involved in correlation QTLs.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Genes involved in significant correlation QTLs were enriched for intracellular signal transduction (log2 odds ratio = 1.44, p<10\u221216).",
+    "claim_type": "EXPLICIT",
+    "source": "intracellular signal transduction (log2 odds ratio = 1.44, p<10\u221216)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by Gene Ontology enrichment analysis of genes involved in correlation QTLs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "Genes involved in significant correlation QTLs were enriched for mitophagy (log2 odds ratio = 0.82, p=0.018).",
+    "claim_type": "EXPLICIT",
+    "source": "and mitophagy (the selective degradation of mitochondria; log2 odds ratio = 0.82, p=0.018",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by Gene Ontology enrichment analysis of genes involved in correlation QTLs.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "87.81% of the correlation QTL involve three SNPs (rs1384673, rs333170, and rs829373), which have strong effects on the mean expression of RAP1GAP.",
+    "claim_type": "EXPLICIT",
+    "source": "Many (87.81%) of the correlation QTL we uncovered involve three SNPs (rs1384673, rs333170, and rs829373), which have strong effects on the mean expression of one gene, RAP1GAP (Figure 4\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by analysis of correlation QTLs and their relationship to RAP1GAP expression.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "Genes involved in correlation QTL with RAP1GAP tend to be closer to RAP1 binding sites (two-sided Wilcoxon-signed rank test, p=0.04).",
+    "claim_type": "EXPLICIT",
+    "source": "and genes involved in correlation QTL with RAP1GAP tend to be closer to RAP1 binding sites (two-sided Wilcoxon-signed rank test, p=0.04)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of RAP1 ChIP-seq data in relation to genes involved in correlation QTLs with RAP1GAP.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Genes involved in correlation QTL with RAP1GAP are more likely to be bound in vivo by RAP1 (Fisher's exact test, odds ratio = 2.14, p=0.03).",
+    "claim_type": "EXPLICIT",
+    "source": "and to be bound in vivo by RAP1 (Fisher's exact test, odds ratio = 2.14, p=0.03; ChIP-seq data are from mouse embryonic fibroblasts (Martinez et al., 2010)).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analysis of RAP1 ChIP-seq data in relation to genes involved in correlation QTLs with RAP1GAP.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Environmental exposures (infection and disease) lead to a systematic loss of correlation, defined as 'decoherence'.",
+    "claim_type": "EXPLICIT",
+    "source": "We use data from three human cohorts to study the effects of genetic and environmental variation on correlations among mRNA transcripts and among NMR metabolites. We first show that environmental exposures (infection and disease) lead to a systematic loss of correlation, which we define as 'decoherence'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by analyses of gene expression data from LPS-stimulated monocytes and metabolite data from individuals with metabolic syndrome.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "Decoherent metabolites are better predictors of whether someone will develop metabolic syndrome than metabolites commonly used as biomarkers of this disease.",
+    "claim_type": "EXPLICIT",
+    "source": "Using longitudinal data, we show that decoherent metabolites are better predictors of whether someone will develop metabolic syndrome than metabolites commonly used as biomarkers of this disease.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by longitudinal analysis of NMR metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Correlation itself is under genetic control.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we demonstrate that correlation itself is under genetic control by mapping hundreds of 'correlation quantitative trait loci (QTLs)'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by correlation QTL mapping in the NESDA dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Hundreds of correlation QTLs were mapped.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we demonstrate that correlation itself is under genetic control by mapping hundreds of 'correlation quantitative trait loci (QTLs)'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by correlation QTL mapping in the NESDA dataset.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Decoherence may play a role in disease.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, this work furthers our understanding of how and why coordinated biological processes break down, and points to a potential role for decoherence in disease.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement based on the findings presented in the manuscript.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Identifying factors associated with changes in co-expression between healthy and sick individuals should point toward key regulatory changes driving phenotypic differences between groups.",
+    "claim_type": "EXPLICIT",
+    "source": "From a medical perspective, identifying factors associated with changes in co-expression between healthy and sick individuals should point toward key regulatory changes driving phenotypic differences between groups (Mentzen et al., 2009; Hudson et al., 2009; Kostka and Spang, 2004; Choi et al., 2005; de la Fuente, 2010).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work on differential co-expression.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Gene regulatory networks evolve over many generations of stabilizing selection.",
+    "claim_type": "EXPLICIT",
+    "source": "From an evolutionary perspective, work on decanalization (Gibson, 2009a; Gibson, 2009b; Careau et al., 2014) indicates that gene regulatory networks evolve over many generations of stabilizing selection",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work on decanalization.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "New mutations or novel environments may disrupt fine-tuned connections in gene regulatory networks.",
+    "claim_type": "EXPLICIT",
+    "source": "and new mutations or novel environments may disrupt these fine-tuned connections.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work on decanalization.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Decanalization has been hypothesized to explain the recent rise of non-communicable diseases in humans.",
+    "claim_type": "EXPLICIT",
+    "source": "Decanalization has been hypothesized to explain the recent rise of non-communicable diseases in humans (Gibson, 2009b; Hu et al., 2016)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work on decanalization.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Recent major shifts in diet and lifestyle have led to dysregulation of regulatory programs that evolved under past environmental conditions.",
+    "claim_type": "EXPLICIT",
+    "source": "with the idea being that recent major shifts in diet and lifestyle have led to dysregulation of regulatory programs that evolved under past environmental conditions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothesis based on decanalization theory.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Most studies of differential co-expression to date have relied on building co-expression networks separately within each group of interest and contrasting their properties.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, most studies of differential co-expression to date have relied on two types of approaches: (i) building co-expression networks separately within each group of interest (e.g., diseased versus healthy) and contrasting their properties (Kostka and Spang, 2004; Choi et al., 2005; Steiger, 1980; Watson, 2006)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous methodological work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Most studies of differential co-expression to date have relied on asking whether predefined sets of genes are differentially co-expressed between groups.",
+    "claim_type": "EXPLICIT",
+    "source": "or (ii) asking whether predefined sets of genes are differentially co-expressed between groups (Fukushima, 2013; Jen et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous methodological work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Previous approaches for studying differential co-expression are generally designed to compare population-level statistics between two sample groups, and thus cannot test the effect of continuous predictor variables on variation in correlation.",
+    "claim_type": "EXPLICIT",
+    "source": "Generally, these approaches are designed to compare population-level statistics (e.g., correlation coefficients) between two sample groups, and thus cannot test the effect of continuous predictor variables on variation in correlation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critique of previous methodological approaches based on their design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Previous approaches for studying differential co-expression are generally designed for datasets in which no individual-level covariates may bias co-expression estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "Further, these approaches are generally designed for datasets in which no individual-level covariates (e.g., age, sex, or batch) may bias co-expression estimates, which could lead to false conclusions if not accounted for (Parsana, 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critique of previous methodological approaches based on their design.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Limited flexibility of previous approaches has made it difficult to identify individual-specific factors that predict co-expression in humans or other organisms that are not amenable to controlled manipulations.",
+    "claim_type": "EXPLICIT",
+    "source": "This limited flexibility has made it difficult to identify individual-specific factors that predict co-expression in humans or other organism that are not amenable to controlled manipulations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a critique of previous methodological approaches based on their limitations.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "A SNP that disrupts a transcription factor binding site in a promoter would lead to low levels of co-expression between the TF and the target gene, but only for individuals carrying the disrupting variant.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, a SNP that disrupts a transcription factor (TF) binding site in a promoter would lead to low levels of co-expression between the TF and the target gene, but only for individuals carrying the disrupting variant.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a hypothetical mechanistic scenario proposed to explain correlation QTLs.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The mechanism where a SNP disrupts a TF binding site has been repeatedly proposed to generate variation in co-expression, with some empirical support.",
+    "claim_type": "EXPLICIT",
+    "source": "This is one mechanistic scenario that has been repeatedly proposed to generate variation in co-expression (de la Fuente, 2010; Gaiteri et al., 2014), with some empirical support (Nath et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work on mechanisms of differential co-expression.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "The relationship between genetic variation and co-expression is largely unexplored.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the relationship between genetic variation and co-expression is largely unexplored, suggesting that alterative mechanisms may exist that have yet to be uncovered.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the limited literature on genetic effects on co-expression.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "Alternative mechanisms for genetic effects on co-expression may exist that have yet to be uncovered.",
+    "claim_type": "EXPLICIT",
+    "source": "However, the relationship between genetic variation and co-expression is largely unexplored, suggesting that alterative mechanisms may exist that have yet to be uncovered.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement based on the limited literature on genetic effects on co-expression.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The RAP1GAP correlation QTL 'hotspot' is generated because genotype controls whether RAP1 and its targets are constitutively 'on' or 'off', and variation in RAP1 activity levels only modulates the expression of RAP1 target genes within the 'on' genotype.",
+    "claim_type": "EXPLICIT",
+    "source": "We hypothesize that the RAP1GAP correlation QTL 'hotspot' is thus generated because genotype controls whether RAP1 and its targets are constitutively 'on' or 'off', and variation in RAP1 activity levels only modulates the expression of RAP1 target genes within the 'on' genotype (see schematic in Figure 4\u2014figure supplement 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a hypothesis proposed to explain the RAP1GAP correlation QTL hotspot.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Previous work has found evidence for convergence of trans eQTL effects on RAP1GAP in whole blood.",
+    "claim_type": "EXPLICIT",
+    "source": "this example is of interest because previous work has found evidence for converge of trans eQTL effects on RAP1GAP in whole blood (Fehrmann et al., 2011)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "RAP1 has been implicated in the development of insulin resistance, inflammation, and obesity.",
+    "claim_type": "EXPLICIT",
+    "source": "and has also implicated RAP1 in the development of insulin resistance, inflammation, and obesity (Kaneko et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Patterns of transcriptional correlation are widely considered to arise from co-regulation between genes.",
+    "claim_type": "EXPLICIT",
+    "source": "Patterns of transcriptional correlation are widely considered to arise from co-regulation between genes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge in the field of gene expression analysis.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "The analysis of co-expression has become an essential tool for the functional interpretation of transcriptional variation.",
+    "claim_type": "EXPLICIT",
+    "source": "The analysis of co-expression has become an essential tool for the functional interpretation of transcriptional variation (de la Fuente, 2010; Gaiteri et al., 2014)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work on co-expression analysis.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Co-expression analysis has increasing relevance for medical diagnosis.",
+    "claim_type": "EXPLICIT",
+    "source": "with increasing relevance for medical diagnosis (van Dam et al., 2017; Vidal et al., 2011; Barab\u00e1si et al., 2011)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work on co-expression analysis in medical contexts.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Co-expression analysis has relevance for understanding trait evolution.",
+    "claim_type": "EXPLICIT",
+    "source": "and our understanding of trait evolution (Wang et al., 2013; Sun et al., 2008; Southworth et al., 2009; Fukushima, 2013; Huang et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work on co-expression analysis in evolutionary contexts.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Stressful environmental exposures (infection and disease) lead to decoherence, manifested as a widespread decrease in the magnitude of pairwise correlation coefficients between mRNA transcripts or metabolites.",
+    "claim_type": "EXPLICIT",
+    "source": "In both instances, we find that stressful environmental exposures (infection and disease) lead to decoherence, manifested as a widespread decrease in the magnitude of pairwise correlation coefficients between mRNA transcripts or metabolites (Figure 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is supported by analyses of gene expression and metabolite data.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Similar biased losses in correlation have been observed in miRNA pairs measured in the plasma of patients suffering from cognitive impairment versus healthy controls.",
+    "claim_type": "EXPLICIT",
+    "source": "Similar biased loses in correlation have also been observed in miRNA pairs measured in the plasma of patients suffering from cognitive impairment versus healthy controls (Kayano et al., 2016)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Similar biased losses in correlation have been observed in gene expression data collected from aging versus young mice.",
+    "claim_type": "EXPLICIT",
+    "source": "as well as in gene expression data collected from aging versus young mice (Southworth et al., 2009)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Similar biased losses in correlation have been observed in a wide range of cancers.",
+    "claim_type": "EXPLICIT",
+    "source": "and in a wide range of cancers (Anglani et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citation to previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The degree to which biased loss of correlation commonly characterizes disease, aging, or environmental perturbations remains to be seen.",
+    "claim_type": "EXPLICIT",
+    "source": "However, as this pattern has generally not been tested for explicitly, the degree to which it commonly characterizes disease, aging, or environmental perturbations remains to be seen.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about the current state of knowledge in the field.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The loss of transcriptional robustness observed is an intuitive extension of decanalization models.",
+    "claim_type": "EXPLICIT",
+    "source": "The loss of transcriptional robustness we observe is an intuitive extension of decanalization models (Gibson, 2009b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the results in the context of decanalization theory.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Through many generations of stabilizing selection, biological systems evolve to maintain homeostasis under a certain range of environmental (or genetic) perturbations.",
+    "claim_type": "EXPLICIT",
+    "source": "Decanalization models posit that, through many generations of stabilizing selection, biological systems evolve to maintain homeostasis under a certain range of environmental (or genetic) perturbations",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of decanalization models from the literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Changing the environment beyond the range of homeostasis will result in homeostatic breakdown.",
+    "claim_type": "EXPLICIT",
+    "source": "and changing the environment beyond this range will result in homeostatic breakdown (Gibson, 2009a; Gibson, 2009b).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of decanalization models from the literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "Homeostatic 'breakdown' in decanalization models has traditionally been thought of as an increase in variance.",
+    "claim_type": "EXPLICIT",
+    "source": "This 'breakdown' has traditionally been thought of as an increase in variance (Geiler-Samerotte et al., 2018; Gibson and Wagner, 2000)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of traditional decanalization models from the literature.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The discussion of decanalization as a change in correlation is a departure from traditional models.",
+    "claim_type": "EXPLICIT",
+    "source": "and we note that our discussion of decanalization as a change in correlation is a departure from traditional models.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explicit statement by the authors about their interpretation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Decanalization is potentially playing out at the molecular level, where formerly co-regulated molecules become dysregulated following a shift in the environment.",
+    "claim_type": "EXPLICIT",
+    "source": "Nevertheless, we believe we are potentially seeing decanalization play out at the molecular level, where formerly co-regulated molecules become dysregulated following a shift in the environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the results in the context of decanalization theory.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Decoherence at the molecular level is associated with disease risk.",
+    "claim_type": "EXPLICIT",
+    "source": "In support of decanalization models, we found that metabolite pairs that lose correlation following disease onset at the first-time point could be used to distinguish between perpetually healthy individuals and those that would develop disease later on.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by longitudinal analysis of metabolite data from the YFS study.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Metabolites that lose correlation following disease onset are especially sensitive to the homeostatic breakdown associated with metabolic syndrome.",
+    "claim_type": "EXPLICIT",
+    "source": "This set of metabolites are particularly interesting from a clinical perspective, as they appear to be especially sensitive to the homeostatic breakdown associated with metabolic syndrome",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the results.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "Metabolites that lose correlation following disease onset could potentially serve as biomarkers.",
+    "claim_type": "EXPLICIT",
+    "source": "and could thus potentially serve as biomarkers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about potential clinical applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "Work on differential co-expression has largely focused on contrasts between cases and controls, between tissues, or between individuals inhabiting different environments.",
+    "claim_type": "EXPLICIT",
+    "source": "To date, work on differential co-expression has largely focused on contrasts between cases and controls (de la Fuente, 2010; van Dam et al., 2017; Rotival and Petretto, 2014), between tissues (Saha et al., 2017; Gao et al., 2016), or between individuals inhabiting different environments (de la Fuente, 2010; Hsu et al., 2015)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work on differential co-expression.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The genetic basis of differential co-expression has received much less attention.",
+    "claim_type": "EXPLICIT",
+    "source": "while the genetic basis of differential co-expression has received much less attention.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the limited literature on genetic effects on co-expression.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The ability to map correlation QTLs directly using CILP fills a gap in understanding the genetic basis of differential co-expression.",
+    "claim_type": "EXPLICIT",
+    "source": "Our ability to map correlation QTLs directly using CILP fills this gap, and reveals that correlation between mRNA transcripts is under genetic control.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the contribution of the current work.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Nath et al. identified correlated groups of mRNA transcripts and metabolites (termed 'modules'), and performed genome-wide scans to associate specific SNPs with variation in each module.",
+    "claim_type": "EXPLICIT",
+    "source": "First, Nath et al. identified correlated groups of mRNA transcripts and metabolites (termed 'modules'), and performed genome-wide scans to associate specific SNPs with variation in each module (Nath et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Lukowski et al. demonstrated that mRNA transcripts with evidence for genetic correlations were more likely to be regulated by the same eQTL.",
+    "claim_type": "EXPLICIT",
+    "source": "In a related analysis, Lukowski et al. demonstrated that mRNA transcripts with evidence for genetic correlations were more likely to be regulated by the same eQTL (Lukowski et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "van der Wijst leveraged single-cell mRNA-seq data from 45 individuals to build personalized co-expression networks, and used these data to identify genetic variants that predicted inter-individual variation in correlation structure.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, van der Wijst recently leveraged single-cell mRNA-seq data from 45 individuals to build personalized co-expression networks, and used these data to identify genetic variants that predicted inter-individual variation in correlation structure (van der Wijst et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Previous studies point toward pervasive genetic control of co-expression.",
+    "claim_type": "EXPLICIT",
+    "source": "Together, these studies point toward pervasive genetic control of co-expression",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on previous work.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "CILP provides the tools to probe genetic control of co-expression even further.",
+    "claim_type": "EXPLICIT",
+    "source": "and CILP provides the tools to probe this form of regulation even further.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretation of the contribution of the current work.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Mapping correlation QTLs across different environments is a major priority for future work.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, mapping correlation QTLs across different environments, and compiling a more mechanistic picture of how genetic variation affects correlation dynamics (e.g., using ChIP-seq or ATAC-seq data integrated with correlation QTL scans) are major priorities for future work.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about future research directions.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Compiling a more mechanistic picture of how genetic variation affects correlation dynamics is a major priority for future work.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, mapping correlation QTLs across different environments, and compiling a more mechanistic picture of how genetic variation affects correlation dynamics (e.g., using ChIP-seq or ATAC-seq data integrated with correlation QTL scans) are major priorities for future work.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a statement about future research directions.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Testing for variation in correlation across all genes expressed in a given tissue would require tens of millions of tests.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, we focused on differentially expressed or BMI-associated genes (in the Fairfax et al (Fairfax et al., 2014). and NESDA (Penninx et al., 2008) datasets, respectively), because testing for variation in correlation across all genes expressed in a given tissue would require tens of millions of tests.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the computational burden of genome-wide correlation QTL mapping.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "Applying CILP using unbiased screens will require extremely large sample sizes to overcome the multiple testing burden.",
+    "claim_type": "EXPLICIT",
+    "source": "Applying CILP using unbiased screens will require extremely large sample sizes to overcome the multiple testing burden.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the statistical requirements for genome-wide correlation QTL mapping.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Power to detect variation in correlation using CILP increases with sample size.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, power to detect variation in correlation using CLIP does increase with sample size.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the statistical properties of CILP.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "For methods that compare group rather than individual-level variation in correlation, increasing sample size would increase the precision of the estimated correlation in a given group, but not directly the power to detect differential correlation.",
+    "claim_type": "EXPLICIT",
+    "source": "This would not be the case with other methods that compare group rather than individual-level variation in correlation (de la Fuente, 2010; van Dam et al., 2017); for these methods, increasing sample size would increase the precision of the estimated correlation in a given group, but not directly the power to detect differential correlation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference about the statistical properties of alternative methods.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The study focused on human genomics because of the availability of large datasets with individual-level data.",
+    "claim_type": "EXPLICIT",
+    "source": "Lastly, we focused on human genomics in this study because of the availability of large datasets with individual-level data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explicit statement about the rationale for the study design.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The study builds on extensive previous work in model systems investigating variation in co-expression in yeast, mice, Arabidopsis, and Drosophila.",
+    "claim_type": "EXPLICIT",
+    "source": "However, our study builds on extensive previous work in model systems investigating variation in co-expression in yeast (Wang et al., 2013; Sun et al., 2008), mice (Southworth et al., 2009), Arabidopsis (Fukushima, 2013; Mine et al., 2018; Zhang et al., 2017), and Drosophila (Huang et al., 2015)",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by citations to previous work in model systems.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "Previous work in model systems points to the critical importance of co-regulation in complex trait variation.",
+    "claim_type": "EXPLICIT",
+    "source": "all of which point to the critical importance of co-regulation in complex trait variation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on previous work in model systems.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "The CILP framework could be particularly useful in conjunction with multi-parent mapping populations.",
+    "claim_type": "EXPLICIT",
+    "source": "The framework we outline here could be particularly useful in conjunction with a growing number of multi-parent mapping populations (Long et al., 2014; Iraqi and Collaborative Cross Consortium, 2012; de Koning and McIntyre, 2017; Cubillos et al., 2013; Pascual et al., 2016), which provide unprecedented statistical power in model systems.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about potential applications of CILP.",
+    "evidence_type": [
+      "SPECULATION",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "CILP paired with controlled manipulations in model systems could allow researchers to uncover genotype x environment effects on correlation.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, CILP paired with controlled manipulations in model systems could allow researchers to uncover genotype x environment effects on correlation, a problem that has been notoriously difficult to study in humans.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about potential applications of CILP.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Genotype x environment effects on correlation have been notoriously difficult to study in humans.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, CILP paired with controlled manipulations in model systems could allow researchers to uncover genotype x environment effects on correlation, a problem that has been notoriously difficult to study in humans.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge about the challenges of studying GxE interactions in humans.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "CILP could be used to identify the drivers of community level correlations in ecological datasets.",
+    "claim_type": "EXPLICIT",
+    "source": "Moving beyond genetics, CILP could be used to identify the drivers of community level correlations in ecological datasets",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about potential applications of CILP.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "CILP could be used to study tradeoffs (that manifest as negative correlations) between different fitness components or life history traits.",
+    "claim_type": "EXPLICIT",
+    "source": "tradeoffs (that manifest as negative correlations) between different fitness components or life history traits",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about potential applications of CILP.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Questions of how and why correlations between molecular or organism-level phenotypes vary is at the heart of many fields.",
+    "claim_type": "EXPLICIT",
+    "source": "In essence, questions of how and why correlations between molecular or organism-level phenotypes vary is at the heart of many fields",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement about the importance of studying correlation.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "The CILP approach will be widely applicable.",
+    "claim_type": "EXPLICIT",
+    "source": "and we anticipate that our approach will thus be widely applicable.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative statement about the potential impact of CILP.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  }
+]

@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C33",
+      "C34",
+      "C35",
+      "C60",
+      "C71"
+    ],
+    "result": "3D single-molecule diffusion simulations predict that EB1 arrival rates are dramatically increased (~70-fold, or ~6000%) at protofilament edge sites with 2-tubulin interfaces compared to closed lattice sites with 4-tubulin interfaces, due to reduced steric hindrance at edge sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation results (C1, C33-C35) consistently demonstrate a dramatic increase in EB1 arrivals to disrupted/tapered microtubule structures. The simulations are based on established physical principles (diffusion, collision detection, molecular structures from cryo-EM), with no free parameters. The ~70-fold increase at edge sites (C35) is statistically significant and mechanistically explained by reduced steric hindrance (C60, C71).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Experimental measurements using fluorescence microscopy and electron microscopy demonstrate that EB1 binding is substantially increased (50-98%) on disrupted-structure microtubules compared to closed microtubules, regardless of nucleotide state (GDP, GMPCPP, GTP\u03b3S).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple experimental approaches (fluorescence TIRF microscopy C29-C31, electron microscopy with gold-conjugated EB1 C32) consistently show increased EB1 binding to disrupted structures across all three nucleotide states tested. The statistical significance is strong (p<<10^-5 for all comparisons), and the effect is observed with different experimental methods, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Rapid frame-rate fluorescence microscopy reveals that EB1-GFP association rates are 3.5-45 fold higher for disrupted-structure microtubules compared to closed microtubules across GDP, GMPCPP, and GTP\u03b3S nucleotide states, while dwell times are reduced on disrupted structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The on-rate measurements (C37-C39) using 100 Hz imaging provide direct kinetic evidence supporting the simulation predictions. The range of fold-increases varies by nucleotide type, which the authors attribute to differences in disruption efficiency between preparation protocols. The reduced dwell times on disrupted structures (C40) are consistent with edge-binding having fewer stabilizing contacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Electron microscopy analysis of EB1-gold beads on microtubule sheets shows sevenfold more beads at sheet edges than in the middle of sheets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electron microscopy data (C36) provides direct structural evidence for preferential edge binding. The statistical significance is strong (p<<10^-5), and when normalized for available binding sites, this yields a ~49-fold preference for edge sites, which is consistent with the ~70-fold increase predicted by simulations (C35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Simulations and experiments with face-binding proteins (modeled and Kif5B-GFP) show no substantial increase in binding to disrupted-structure microtubules compared to closed microtubules, contrasting with pocket-binding EB1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The face-binding simulations (C41-C42) and Kif5B-GFP experiments (C43) serve as important controls demonstrating that the structural recognition effect is specific to pocket-binding proteins. The lack of preferential binding to disrupted structures for face-binding proteins supports the mechanistic model that steric hindrance at pocket sites drives the observed effect for EB1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "EB1-GFP binding is reduced (~53%) on GDP+Pi microtubules compared to GDP microtubules, with a ~2-fold lower affinity for GDP-Pi-analog microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiments with both inorganic phosphate (C44-C45) and AlF4- analog (C46) consistently show reduced EB1 binding to GDP+Pi states. This finding challenges the prevailing model that EB1 preferentially binds GDP-Pi lattices. The use of two different Pi analogs strengthens the conclusion, though the ionic strength control in the AlF4- experiments is better than the KPO4 experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In LLC-Pk1 cells, Vinblastine treatment reduces microtubule tip tapering (blunts ends) and correlates with reduced EB1-GFP targeting to growing microtubule ends, while EB1 binding to closed GDP microtubules in vitro is unaffected by Vinblastine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cellular experiments (C3, C47-C49) provide important in vivo validation of the structural recognition model. Vinblastine reduces tip standard deviation (C47) and EB1 peak intensity (C48) in a dose-dependent manner, while not affecting EB1 binding to closed microtubules in vitro (C49). This suggests the effect is due to structural changes at growing ends rather than direct effects on EB1-microtubule affinity. However, the authors appropriately note that other cellular responses to Vinblastine cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "At intermediate salt concentrations (30 mM KCl), EB1-GFP preferentially localizes to GMPCPP microtubule ends, with brighter EB1 signal correlating with larger tip standard deviations (more tapering), and EB1 enrichment at transition points and microtubule ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GMPCPP experiments (C21-C28) establish the initial observation that motivated the study. The correlation between EB1 intensity and tip tapering (C24) is statistically significant for two different microtubule length groups. The enrichment at transition points (C26, C28) provides additional evidence that structural discontinuities enhance EB1 binding. Electron microscopy confirmation of tapered and blunt ends (C25) validates the structural interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C56",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors propose a model where EB1 tip tracking is facilitated by structural recognition: EB1 rapidly binds to protofilament edges at tapered microtubule ends, matures into high-affinity binding upon addition of GTP-tubulin subunits, and is released upon tubulin hydrolysis to GDP-Pi/GDP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic model (C4, C54-C56, C74-C75) integrates the simulation and experimental findings into a coherent framework. The model is supported by: (1) simulation predictions of increased edge binding, (2) experimental validation of preferential binding to disrupted structures, (3) kinetic measurements showing increased on-rates, (4) reduced binding to GDP-Pi states, and (5) cellular validation with Vinblastine. The model provides a parsimonious explanation for EB1 tip tracking that is consistent with all presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "EB1 dwell times on disrupted structures are best modeled as two exponential distributions with a short component (~20 ms) potentially representing edge-bound EB1, which is long enough for multiple tubulin subunit arrivals at physiological concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dwell time analysis (C57) provides kinetic support for the model, showing that edge-bound EB1 (short dwell time) could be stabilized by incoming tubulin subunits. The comparison to tubulin arrival rates from literature (C58) demonstrates that the timescales are compatible with the proposed maturation mechanism. However, the two-exponential model is an interpretation, and alternative explanations for the dwell time distribution are possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors predict that EB1 on-rates to closed lattice sites are extremely low due to high steric hindrance, while on-rates to edge sites are ~70-fold higher, and overall affinity may be higher on disrupted structures despite increased off-rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These predictions (C59-C61) are logical inferences from the simulation and experimental data. The ~70-fold on-rate difference is directly supported by simulations (C35), and the inference about overall affinity (C61) is supported by steady-state binding measurements (C29-C31). The reasoning that increased on-rates can overcome increased off-rates to yield higher overall affinity is sound and supported by the calculated Kd values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors speculate that structural recognition may apply to other microtubule-associated proteins with pocket-located binding sites (e.g., Doublecortin, CLIP-170), while proteins binding to tubulin faces (e.g., TPX2, XMAP215) may be less likely to display this behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C62-C69) are speculative extrapolations from the EB1 findings, supported by citations to prior literature about other MAPs. While the reasoning is logical and the speculation is appropriately qualified, there is no direct experimental evidence in this manuscript testing these predictions for other proteins. The speculation is valuable for generating hypotheses but requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors acknowledge that EB1 may also bind to curved protofilaments but argue that steric hindrance effects (~70-fold) are more significant than curvature recognition, and that EB1 dimerization would not alter structural preference but might increase dwell times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C70, C72-C73) address alternative explanations and limitations of the model. The observation that curvature is not routinely seen at lattice defects (C72) provides some evidence against curvature being the primary recognition mechanism. However, the speculation about dimerization effects (C73) is not tested experimentally or in simulations, and the relative contributions of steric hindrance vs. curvature recognition remain incompletely resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The authors propose a general principle that microtubule-associated protein binding rates are influenced by the location and conformation of the protein binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This general principle (C76) is well-supported by the combined simulation and experimental evidence for EB1 and the control experiments with Kif5B. The principle is appropriately stated as a generalization from the specific findings and represents a conceptual advance in understanding MAP-microtubule interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The manuscript provides standard background information on microtubule structure, dynamics, nucleotide states, EB1 function, and prior observations of tapered microtubule ends and EB1 binding preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C5-C20, C50-C53) are well-established facts from prior literature, appropriately cited, and provide necessary context for the study. They are not novel findings but are accurately presented.",
+    "result_type": "MINOR"
+  }
+]

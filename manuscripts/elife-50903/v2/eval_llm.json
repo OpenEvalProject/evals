@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C40",
+      "C41",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Ubp1, a deubiquitinating enzyme with an N-terminal transmembrane segment, counteracts Hrd1 autoubiquitination and stabilizes Hrd1. Ubp1 overexpression increases Hrd1 levels and reduces polyubiquitinated Hrd1, and this activity requires Ubp1's catalytic activity and transmembrane segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C29, C32-C34, C37, C40-C41, C96-C98 collectively demonstrate that Ubp1 deubiquitinates Hrd1 and requires its transmembrane segment for activity. The data from Figures 1 and 2 show consistent effects of Ubp1 overexpression on Hrd1 stability, reduced polyubiquitination, and requirement for catalytic activity (C110S mutant has no effect). Co-immunoprecipitation confirms interaction between Hrd1 and Ubp1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C133"
+    ],
+    "result": "The transmembrane segment of Ubp1 is required for Hrd1 stabilization primarily by anchoring Ubp1 to the ER membrane, and can be functionally replaced by unrelated transmembrane segments or by direct targeting to Hrd1 via the H-domain of Usa1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56, C61-C65, C133 are supported by data in Figure 2 showing that Ubp1 lacking its TM segment (\u0394TM) does not stabilize Hrd1, but replacement with Cue4 TM or H-domain targeting restores function. Co-IP experiments (C61-C63) correlate interaction strength with stabilization activity. The conclusion that the TM primarily serves as a membrane anchor is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C16",
+      "C68",
+      "C100",
+      "C101",
+      "C114",
+      "C120"
+    ],
+    "result": "Hrd3 serves as a brake for Hrd1 autoubiquitination. In the absence of Hrd3, Hrd1 is excessively autoubiquitinated and rapidly degraded, but Ubp1 overexpression can bypass the requirement for Hrd3 in ERAD-L substrate degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C16, C68, C100-C101, C114, C120 are supported by data showing that hrd3\u0394 cells have low Hrd1 levels (Figure 1B-C), and Ubp1 overexpression rescues both Hrd1 stability and CPY* degradation in hrd3\u0394 cells (Figure 3E-G). The model that Hrd3 inhibits Hrd1 autoubiquitination is well-supported, though C100 (substrate binding releases the brake) is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C90",
+      "C91",
+      "C115",
+      "C116"
+    ],
+    "result": "The UBL domain of Usa1 attenuates Ubp1's deubiquitination activity. Deletion of the UBL domain (Usa1 \u0394UBL) results in hyperactive Ubp1 and increased Hrd1 stability, particularly in hrd3\u0394 backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C81-C88, C90-C91, C115-C116 are supported by data in Figure 4 showing that Usa1 \u0394UBL stabilizes Hrd1 more than wild-type Usa1 in multiple genetic backgrounds. The effect requires Ubp1 (C90), supporting the model that the UBL domain inhibits Ubp1 activity. The mechanism of inhibition is not determined but the functional relationship is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C106",
+      "C109"
+    ],
+    "result": "Ubp1 is required for optimal ERAD-L substrate degradation. Deletion of Ubp1 slows CPY* degradation, while overexpression of Ubp1 does not prevent substrate degradation, indicating Ubp1 acts on Hrd1 rather than on ERAD substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C49, C106, C109 are supported by data in Figure 1H and supplements showing that ubp1\u0394 cells have slower CPY* degradation, while Ubp1 overexpression does not block substrate degradation. This supports the specificity of Ubp1 for Hrd1 rather than substrates. The effect is modest, which the authors attribute to potential redundancy with other DUBs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C78",
+      "C80",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "ERAD-M substrate degradation does not require Hrd1 autoubiquitination or deubiquitination. The Hrd1 KRK mutant, which cannot be autoubiquitinated in its RING domain, can still mediate Erg3 degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C78, C80, C102-C105 are supported by data in Figure 3M showing that Hrd1 KRK mediates Erg3 degradation despite being unable to undergo RING domain autoubiquitination. This contrasts with ERAD-L substrates (Figure 3I). The mechanistic explanation involving Dfm1 (C104-C105) is speculative but the core observation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C69",
+      "C70",
+      "C71",
+      "C119"
+    ],
+    "result": "Ubp1 overexpression bypasses the requirement for Hrd3 in ERAD-L but does not obviate the need for other ERAD components (Hrd1, Usa1, Der1). In hrd3\u0394 cells, Ubp1 overexpression rescues both Hrd1 stability and CPY* degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C69-C71, C119 are supported by data in Figure 3A-G showing that Ubp1 overexpression specifically rescues CPY* degradation in hrd3\u0394 cells but not in hrd1\u0394, usa1\u0394, or der1\u0394 cells. This demonstrates that Ubp1's effect is specific to bypassing Hrd3's regulatory function rather than replacing core ERAD machinery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C99"
+    ],
+    "result": "Mere membrane targeting of a DUB is insufficient to stabilize Hrd1. The mammalian DUB Usp2 with Ubp1's transmembrane segment has minimal effect, but direct targeting to Hrd1 via the H-domain of Usa1 enables Usp2 to stabilize Hrd1, indicating additional specificity determinants in Ubp1's catalytic domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C99 are supported by data in Figure 2D showing that TM-Usp2 has minimal effect while H-domain-Usp2 stabilizes Hrd1. This demonstrates that membrane localization alone is insufficient and suggests additional specificity determinants in the Ubp1 catalytic domain, though these determinants are not identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The Hrd1 KRK mutant (unable to be autoubiquitinated in its RING domain) is stabilized by Ubp1 overexpression but does not support CPY* degradation. Catalytically inactive Hrd1(C399S) is not stabilized by Ubp1 and does not support substrate degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by data in Figure 3H-K showing that Hrd1 KRK is stabilized by Ubp1 (consistent with ubiquitination in other domains) but cannot mediate CPY* degradation, while Hrd1(C399S) is neither stabilized by Ubp1 nor functional. This confirms that Ubp1 acts on polyubiquitinated Hrd1 and does not bypass normal Hrd1 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Deletion of Ubp1 decreases Hrd1 levels, and this effect is enhanced by additional deletion of Hrd3. Ubp1 is 20-fold more abundant than Hrd1, and the Hrd1-Ubp1 interaction is maintained in the absence of Hrd3 or Usa1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C42-C44 are supported by data in Figure 1E showing reduced Hrd1 levels in ubp1\u0394 cells, Figure 1\u2014supplement 2D showing Ubp1 abundance, and Figure 1\u2014supplement 2E showing maintained interaction in deletion backgrounds. The weak co-IP signal (C41) is explained by the abundance difference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Overexpression of Usa1 or Usa1 \u0394UBL partially inhibits ERAD-L substrate degradation but does not affect ERAD-M substrate degradation. This effect is likely due to sequestration of Der1 rather than direct effects on substrate degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by data in Figure 4\u2014supplement 1B-D showing that Usa1 overexpression inhibits CPY* but not ERAD-M substrate degradation. The interpretation that this is due to Der1 sequestration (C94) is reasonable given that Der1 is required for ERAD-L but not ERAD-M, though not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Ubp1 overexpression inhibits Hrd1 degradation in cells lacking Der1 or Usa1, and has no effect on enzymatically inactive Hrd1(C399S), indicating Ubp1 reverses autoubiquitination of Hrd1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by data in Figure 1\u2014supplement 2A-B and Figure 1D showing that Ubp1 stabilizes Hrd1 in der1\u0394 and usa1\u0394 cells but has no effect on Hrd1(C399S). This supports the conclusion that Ubp1 acts on autoubiquitinated Hrd1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C110"
+    ],
+    "result": "Ubp1 overexpression accelerates ERAD-M substrate (Erg3) degradation by stabilizing Hrd1, and slightly slows ERAD-M substrate degradation when overexpressed alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C110 are supported by data in Figure 3L and Figure 1\u2014supplement 3B-C showing accelerated Erg3 degradation with Ubp1-stabilized Hrd1, and slight slowing with Ubp1 overexpression alone. The modest effects are consistent with the differential requirements for ERAD-L versus ERAD-M.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "CPY* degradation is not accelerated by increased Hrd1 levels from Ubp1 overexpression, likely because other ERAD complex components (Hrd3, Usa1, Der1) remain at unchanged levels. Ubp1 does not act on polyubiquitinated ERAD-L substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 are supported by data in Figures 1H and 3A showing no acceleration of CPY* degradation despite increased Hrd1, and Figure 1\u2014supplement 1 showing unchanged levels of other components. The inference that Ubp1 does not act on substrates is supported by the lack of effect on substrate degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C130"
+    ],
+    "result": "The Hrd1 channel is regulated by cycles of autoubiquitination and deubiquitination. ERAD involves two distinct deubiquitination reactions: Ubp1 at the ER membrane resets Hrd1, and Otu1 in the cytosol releases substrate from Cdc48/p97.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C130 represent the central model of the paper. C9 is well-supported by the collective experimental findings showing cycles of Hrd1 ubiquitination and deubiquitination. C130 integrates the current findings with established knowledge about Otu1 (C127-C129), providing a comprehensive model of ERAD deubiquitination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background knowledge about ERAD pathways, Hrd1 complex components, and the ubiquitin-gated channel model for Hrd1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C10-C28 represent established knowledge in the ERAD field, supported by appropriate citations to prior work. These provide the necessary context for the current study and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C111",
+      "C112",
+      "C113",
+      "C121",
+      "C122",
+      "C134"
+    ],
+    "result": "Speculative interpretations about mechanisms underlying Ubp1 function, including potential redundancy with other DUBs, effects on ERAD-M substrates, and incomplete inhibition of the UBL domain by Ubp1 overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C108, C111-C113, C121-C122, C134 are speculative interpretations offered by the authors to explain observations but are not directly tested. While reasonable, these remain hypotheses requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Background knowledge about substrate deubiquitination by Otu1/Yod1, membrane-bound DUBs, and potential mammalian homologs of the yeast system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129, C131-C132, C135-C140 represent established knowledge about ERAD substrate deubiquitination, DUB distribution, and potential mammalian counterparts. These are accurately cited and provide context for the significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

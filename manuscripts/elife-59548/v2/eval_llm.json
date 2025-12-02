@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Individual GAT1 or GAT3 blockade prolonged seizure-like oscillations in acute thalamic slices, while dual GAT1+GAT3 blockade unexpectedly suppressed and eventually abolished oscillations. GAT1 blockade increased oscillation duration by 36% and period by 13%; GAT3 blockade increased duration by 99% and period by 32%; dual blockade decreased duration by 48% and abolished oscillations after 60 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C26-C31 provide converging experimental evidence with appropriate statistical analysis (n=5-9 slices, p<0.05) showing bidirectional effects of GAT blockade on oscillations. The data are internally consistent and supported by Figure 1, with proper controls and replication across multiple animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Dynamic clamp experiments showed that thalamocortical neuron rebound burst probability increased following GAT1-Block (+63%) or GAT3-Block (+106%) IPSC waveforms but decreased following Dual-Block (-82%) waveforms relative to control. GAT3-Block significantly prolonged both LTS and burst latency, while GAT1-Block had modest effects on burst latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are well-supported by dynamic clamp recordings from 47 cells with appropriate statistical tests (p<0.05). The bidirectional effects on burst probability parallel the oscillation findings in C3-C4, providing mechanistic insight. Sample sizes are adequate and statistical methods appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Computational modeling revealed that LTS production depends on T channel open probability discrepancy reaching a threshold through two criteria: (1) the discrepancy curve must reach an inflection point, and (2) the inflection point must have a steep slope. High inhibition amplitude enables sufficient T channel recovery, while fast inhibition kinetics drives rapid depolarization. Dual GAT blockade eliminates oscillations by promoting sustained inhibition that converges instantaneous and steady-state T channel open probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C38, C41-C43, C57-C60 present a coherent mechanistic model supported by 31 well-fitted computational neurons. The model successfully recapitulates experimental observations and provides testable predictions. The two-criteria framework for LTS production is well-justified by systematic parameter manipulations shown in Figures 5-7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Two-cell and 200-cell network models recapitulated the bidirectional effects of GAT blockade on oscillations. In two-cell networks, oscillation probability increased with simGAT1-Block (+66%) or simGAT3-Block (+93%) but oscillations did not arise with simDual-Block. TC-heterogeneous 200-cell networks showed similar patterns and provided more robust oscillations that better matched experimental oscillation periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 demonstrate that network-level simulations reproduce experimental findings from C3-C4. The inclusion of cellular heterogeneity (C47) is well-justified and improves model realism. Statistical analysis is appropriate (n=24 networks, p<0.05), and the results provide strong validation of the single-neuron mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "A non-linear dependence of T-type calcium channel gating on GABAB receptor activity regulates network oscillations. Only within a narrow range does prolonging GABAB receptor activity promote channel opening and intensify oscillations; activity that is too brief or too protracted fails to sufficiently open T channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 represent the central conclusion synthesized from experimental (C3-C4, C32-C35) and computational (C38, C41-C43, C57-C60) findings. The non-linear relationship is well-demonstrated through systematic manipulation of IPSC kinetics and amplitude. This integrative result is strongly supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The observed changes in oscillation duration and period following GAT blockade correspond to previously reported changes in GABAB IPSC amplitude and decay kinetics under the same pharmacological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 appropriately contextualize current findings with prior work (Beenhakker and Huguenard, 2010). The correspondence between oscillation changes and IPSC properties strengthens the mechanistic link between GABAB receptor kinetics and network oscillations. The comparison is quantitatively reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "In the acute rat brain slice model, baseline oscillations lasted 2-13 seconds with autocorrelogram peaks at approximately 500 ms intervals, indicating rhythmic activity at ~2 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide basic characterization of the experimental model supported by Figure 1A. The measurements are straightforward and establish baseline properties for subsequent comparisons. Methods for spike detection and autocorrelation analysis are described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The average electrotonic length across all recorded neurons was 0.71 \u00b1 0.08 space constants (range: 0.1-1.5), mitigating concerns about voltage attenuation during dynamic clamp experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 addresses an important technical consideration for dynamic clamp experiments. The electrotonic length measurement validates that somatic current injection can effectively control membrane potential throughout the neuron. This supports the validity of the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "In two-cell model networks, each successive oscillation cycle was initiated by a thalamocortical neuron rebound burst, consistent with prior experimental recordings of thalamic oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 validates the network model against prior experimental observations (Bal et al., 1995). The agreement between model behavior and established experimental findings supports the biological relevance of the computational approach. This is shown in Figure 8C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Absence seizures result from 3-5 Hz thalamocortical oscillations dependent on regulated inhibitory neurotransmission, and efficient GABA reuptake is essential as reuptake failure worsens seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 establish the scientific context based on established knowledge and prior literature. These background claims are well-supported by the broader literature on absence epilepsy and provide appropriate motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Thalamocortical neurons produce post-inhibitory rebound bursts mediated by CaV3.1 T-type calcium channels. These channels require depolarization to open and hyperpolarization to recover from inactivation, with hyperpolarization necessary for robust bursting since T channels are largely inactivated at rest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 summarize well-established prior knowledge about thalamocortical neuron physiology, appropriately cited. These claims provide essential background for understanding the experimental and modeling results. The citations are appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Reticular thalamic neurons provide GABAergic inhibition to thalamocortical neurons, which express synaptic and extrasynaptic GABAA and GABAB receptors. Extrasynaptic receptors are implicated in seizures, and a shift from GABAA to GABAB receptor-mediated inhibition transforms oscillations from 10 Hz spindle-like to 3 Hz seizure-like activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 accurately summarize prior literature on thalamic circuitry and receptor pharmacology relevant to absence seizures. The citations are appropriate and the knowledge claims are well-established in the field. This provides important context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "GABA transporters GAT1 and GAT3 control GABAB receptor activation by regulating extrasynaptic GABA. GAT3 is localized farther from synapses than GAT1. GAT1 blockade increases GABAB IPSC amplitude only, GAT3 blockade increases both amplitude and decay, while dual blockade produces a supralinear 10-fold increase in decay time constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 accurately cite prior work (particularly Beenhakker and Huguenard, 2010) establishing the differential effects of GAT blockade on GABAB IPSCs. These findings provide the foundation for the current study's experimental design and predictions. The citations are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The GAT1 blocker tiagabine can paradoxically induce absence status epilepticus and non-convulsive status epilepticus in patients. GAT1 knockout mice show increased spike-wave discharges. GABAB receptor agonists increase seizures while antagonists suppress absence seizures but increase focal seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 cite clinical and preclinical evidence for paradoxical pro-seizure effects of GAT blockade and complex roles of GABAB receptors in different seizure types. These claims appropriately contextualize the therapeutic implications of the findings. Citations appear accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "CaV3.1 T channel expression by thalamocortical neurons correlates with spike-wave discharge expression in animal models and human patients. Blocking T channels reduces thalamocortical neuron bursting and oscillations in slice models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 cite established literature linking T channels to absence seizures across species and experimental systems. These claims support the focus on T channel dynamics in the current study. The citations are appropriate and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Oscillations were evoked at 1-minute intervals to avoid rundown. Sprague-Dawley rats aged P11-P17 (either sex) were used for oscillation experiments, while male P11-P15 rats were used for dynamic clamp experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 describe methodological details that are appropriately documented. The stimulation interval is justified by citation (Jacobsen et al., 2001). Animal ages and sexes are clearly specified, though the use of only males for dynamic clamp is not justified.",
+    "result_type": "MINOR"
+  }
+]

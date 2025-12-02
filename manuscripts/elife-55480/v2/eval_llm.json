@@ -1,0 +1,411 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C48",
+      "C49",
+      "C88"
+    ],
+    "result": "KdpFABC is inhibited when cells return to K+-rich media through phosphorylation of Ser162 on KdpB. This inhibition is time-dependent, proportional to the extent of serine phosphorylation, and can be reversed in vitro by lambda protein phosphatase (LPP) treatment. K+ shock experiments demonstrated ~40% inhibition of ATPase activity with corresponding increases in Ser162 phosphorylation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C38-C41, C48-C49, and C88 collectively demonstrate that K+-rich conditions trigger Ser162 phosphorylation leading to KdpFABC inhibition. The data show clear correlations between K+ exposure, phosphorylation levels (measured by mass spectrometry and Phos-tag staining), and ATPase activity reduction. LPP treatment consistently restored activity, establishing causality. The time-dependent response (C39, C56) and quantitative measurements (C48-C49) provide robust experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C63",
+      "C64"
+    ],
+    "result": "The S162A mutation prevents serine phosphorylation and produces constitutive activity, while the phosphomimetic S162D mutation inactivates the pump. The D307A and E161Q mutations also resulted in complete inhibition of ATPase activity even after LPP treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C63-C64 demonstrate that mutations at Ser162 have predictable effects on pump activity. The S162A mutation (preventing phosphorylation) maintains activity while S162D (mimicking phosphorylation) abolishes it, providing strong genetic evidence for the regulatory mechanism. The controls (D307A, E161Q) behave as expected based on P-type ATPase biochemistry, validating the experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C70",
+      "C71",
+      "C73",
+      "C129",
+      "C130"
+    ],
+    "result": "Serine phosphorylation abolishes the K+-dependence of ATP hydrolysis and EP formation. EP formation with the S162A mutant was K+-dependent, but serine phosphorylation and the S162D mutation eliminated this K+-dependence. The Q116R and S162D constructs produced high levels of EP both in the presence and absence of K+, while S162A showed much lower EP levels with significant K+ dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C44-C45, C70-C71, C73, C129-C130 provide converging evidence from multiple mutants and conditions. The EP formation assays clearly demonstrate that phosphorylation uncouples K+ sensing from catalytic activity. The S162A mutant serves as an effective control showing normal K+-dependent behavior, while phosphorylated forms and S162D show K+-independent EP formation. The data are internally consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C43",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C125",
+      "C139"
+    ],
+    "result": "Serine phosphorylation blocks the catalytic cycle after formation of the E1~P intermediate. Pulse-chase experiments with ADP showed that both serine phosphorylation and the S162D mutation trapped the pump in the E1~P state, as EP levels were immediately reduced to zero upon ADP addition. The E161Q/S162A/Q116R construct was unreactive with ADP, indicating E2-P trapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C43, C75-C78, C125, C139 describe pulse-chase experiments that definitively identify the blocked step in the catalytic cycle. The ADP sensitivity assay is a well-established method to distinguish E1~P from E2-P states. The data show clear differences between constructs: S162A and S162D are ADP-sensitive (E1~P), while E161Q is ADP-insensitive (E2-P). This provides mechanistic insight into how phosphorylation inhibits the pump by preventing the E1~P to E2-P transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "EP levels for the S162A mutation were much lower than for serine-phosphorylated WT or S162D mutant. Active constructs showed decaying EP levels in the presence of K+ due to ATP exhaustion, while EP levels were stable in the absence of K+ or at 4\u00b0C. Inactive constructs (S162D, E161Q) showed stable EP levels under all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C65-C69, C72, C122-C124 describe the EP formation kinetics that distinguish active from inactive pumps. The lower EP levels for S162A in the presence of K+ are correctly interpreted as reflecting catalytic turnover (C123). The stability of EP for inactive constructs (C68, C124) and under conditions preventing turnover (C66-C67) is consistent with the proposed mechanism. The use of E161Q/S162A/Q116R for normalization (C69) is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C89",
+      "C131",
+      "C132"
+    ],
+    "result": "Serine phosphorylation disrupts allosteric coupling of the pump and provides a secondary level of control over K+ homeostasis. The E161Q and S162D mutations resulted in uncoupling of K+-dependence, suggesting that the TGES162 loop has long-range allosteric effects over K+ sensing within the transmembrane domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C89, C131-C132 present the interpretation that phosphorylation disrupts allosteric coupling. This is well-supported by the data showing loss of K+-dependence (C7, C45, C129) and the effects of mutations in the TGES loop (C131). The conclusion that this provides secondary control over K+ homeostasis (C47, C89) is reasonable given the physiological context and the rapid, reversible nature of the inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Substrate affinity measurements showed no significant differences in KM for K+ (21 mM vs 7 mM) or ATP (60 \u03bcM vs 72 \u03bcM) between untreated and LPP-treated samples. IC50 for orthovanadate inhibition was also unchanged (9.2 \u03bcM vs 8.4 \u03bcM). These results are consistent with the interpretation that preparations consist of a mixture of active and inactive molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 demonstrate that serine phosphorylation does not significantly alter substrate binding affinities. The lack of change in KM values and IC50 supports the interpretation that phosphorylation acts by blocking a catalytic step rather than affecting substrate binding. The interpretation that preparations contain mixed populations (C82) is reasonable and consistent with the partial inhibition observed. However, the authors acknowledge this is not comprehensive (C82), and the Q116R mutation might mask effects on WT K+ affinity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C143"
+    ],
+    "result": "Membrane transport assays showed that K+ transport across the membrane remains coupled to ATPase activity. Active molecules are fully capable of coupled transport, while inactive molecules with serine phosphorylation do not allow passive transport of K+ across the membrane. Although serine phosphorylation eliminates K+-dependence of EP formation, the complex is not truly uncoupled since both active and passive transport are inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 and C143 demonstrate that phosphorylation inhibits transport without causing uncoupling. The DiSC3 fluorescence assays (C84) show membrane potential generation correlates with ATPase activity (C85). The interpretation that inactive molecules don't allow passive K+ leak (C86) is supported by the observation that membrane potential is maintained. This addresses a potential alternative explanation (uncoupling) and strengthens the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The Q116R/K357A/R363A construct showed robust inhibition by serine phosphorylation despite mutations designed to prevent salt bridges between Ser162 and the N-domain. This finding contradicts the earlier hypothesis that salt bridges between the serine phosphate and N-domain hold the protein in an inactive conformation, as this interaction was not seen in recent cryo-EM structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C144-C147 demonstrate that the initially proposed mechanism (salt bridges to N-domain) is incorrect. The K357A/R363A mutations eliminate the proposed interaction but don't prevent inhibition (C87, C146). This is consistent with cryo-EM data showing variable conformations (C145) and lack of conservation of these residues (C147). The authors appropriately revise their earlier hypothesis based on new data, demonstrating scientific rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C97",
+      "C103",
+      "C104"
+    ],
+    "result": "This regulatory mechanism is unique amongst P-type pumps. The inhibition of KdpFABC by phosphorylation of the highly conserved TGES motif represents a novel approach for the P-type ATPase superfamily, as the modification inhibits rather than stimulates the transport cycle and is applied directly to a catalytic domain rather than an accessory element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C97, C103-C104 assert the novelty of this regulatory mechanism. This is well-supported by comparison with known P-type ATPase regulatory mechanisms (C98-C102) which typically involve regulatory domains/subunits that inhibit and are relieved by stimulatory modifications. The direct modification of a catalytic domain (TGES motif) to cause inhibition is indeed unprecedented in this superfamily, making this a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "This novel inhibitory mechanism explains earlier studies showing cell-based K+ uptake inactivation under similar conditions. Previous work by Roe et al. (2000) showed irreversible inactivation in situ that was specific to K+ and not due to osmotic upshock. However, the current study achieved only ~75% maximal inhibition after longer incubation times (90 min vs 2 min) compared to complete inhibition in previous cell-based assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 connect the current findings to previous observations. The mechanism explains the rapid, K+-specific inhibition observed by Roe et al. (C90-C92). The difference in extent of inhibition (C93) is acknowledged and explained by differences in expression levels (C94). This demonstrates appropriate integration of current findings with prior literature, though the incomplete inhibition in vitro raises questions about whether additional factors operate in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Formation of E1~P by functional KdpFABC molecules is dependent on K+ binding by KdpA from the periplasm, and K+ is likely imported across the membrane during the transition from E1~P to E2-P. This contradicts earlier biochemical studies that concluded E1~P formation was K+-independent and that K+ bound to E2-P, but is consistent with recent structural studies showing E1-like states with K+ bound in KdpA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 present a revised model of the transport cycle based on the current data (C121-C122) and reconcile apparent contradictions with earlier biochemical studies (C117-C118) and recent structural work (C120). The key insight is that previous biochemical studies likely used phosphorylated protein (C121), explaining the apparent K+-independence. The S162A mutant data showing K+-dependent EP formation (C122) provides the critical evidence. This represents an important correction to the field's understanding of the KdpFABC mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Treatment of several mutants with LPP resulted in significant stimulation of ATPase activity. WT protein expressed at low K+ concentrations had virtually no serine phosphorylation. Phos-tag staining data were more consistent across experiments than mass spectrometry and showed a time-dependent increase in serine phosphorylation with inverse correlation to ATPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe the initial survey of mutants that revealed the inhibitory effect of phosphorylation. The LPP stimulation (C52) provides functional evidence, while the lack of phosphorylation in WT at low K+ (C53) establishes the K+-dependence. The comparison of quantification methods (C55) is methodologically important, showing Phos-tag staining is more reliable than mass spectrometry for relative quantification. The time-dependent correlation (C56) strengthens the causal relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "High levels of phosphorylation on the D307A/Q116R mutant preclude transfer of phosphate from Asp307 to Ser162. The complete lack of signal in EP formation experiments using the D307A mutation is inconsistent with direct phosphate transfer from ATP to Ser162.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 address the mechanism of Ser162 phosphorylation. The data rule out two potential mechanisms: transfer from Asp307 (C114) and direct transfer from ATP (C115). This is important for understanding the regulatory pathway, though it leaves the actual kinase unidentified. The logic is sound and the experimental evidence (D307A mutant data) is clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C141"
+    ],
+    "result": "The loss of K+ dependence by serine phosphorylated KdpFABC could reflect enhanced mobility of the A-domain allowing cytosolic ions access to the canonical binding site. A phosphate moiety on Ser162 would likely sterically interfere with the interaction between the TGES162 loop and Asp307, preventing E2-P formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137, C138, C141 present mechanistic speculation about how phosphorylation causes the observed effects. While these hypotheses are reasonable and consistent with structural knowledge of P-type ATPases (C133-C136), they are explicitly speculative (C137, C141 marked as SPECULATION). No direct structural or biophysical data are provided to test these models. These represent plausible working hypotheses that require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The higher expression level used in the current study might affect the extent of phosphorylation by exceeding kinase capacity or changing cellular ionic balance. The inability to completely inhibit KdpFABC is likely detrimental to cells by exhausting ATP or creating ionic imbalance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 are speculative explanations for the incomplete inhibition observed. While the reasoning is plausible, no experimental data directly test these hypotheses. The difference between in vitro and in vivo results (C93) could have multiple explanations. These claims represent reasonable speculation but lack experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Cryo-EM structures show both E1 and E2-P conformations can be adopted by serine phosphorylated KdpFABC. This apparent contradiction with biochemical data showing E1~P trapping is explained by back-door phosphorylation from inorganic phosphate, possibly facilitated by AlF4 in cryo-EM samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C150 attempt to reconcile structural and biochemical data. The observation of E2-P-like conformations in cryo-EM (C148) appears to contradict the biochemical data showing E1~P trapping. The explanation invoking back-door phosphorylation (C149) is plausible, and the role of AlF4 (C150) is reasonable speculation. However, this remains uncertain without direct experimental verification of the phosphorylation state and conformational distribution under different conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The KdpA-Q116R mutation lowers K+ affinity to the millimolar range and facilitates study of K+-dependence by eliminating background activity. The serine in the TGES motif has the greatest variability in the P-type ATPase superfamily. Expression behind the pBAD promoter in K+-rich media activated the pathway for serine phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe methodological aspects of the study. The Q116R mutation is well-characterized from previous work (C59-C60 with citations). The phylogenetic analysis supporting variability at the serine position (C61) justifies the S162A mutation. The observation that pBAD expression in K+-rich media produces phosphorylation (C62) is experimentally demonstrated and important for interpreting the EP formation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on K+ homeostasis and KdpFABC: Potassium is the primary osmolyte for maintaining homeostasis and cell growth. KdpFABC is an ATP-dependent K+ pump with micromolar affinity that is induced by K+-deficient conditions via the KdpD/E two-component system. It can generate gradients up to six orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C24 provide established background knowledge about K+ homeostasis and KdpFABC regulation. These are well-supported by citations to prior literature and represent the accepted understanding in the field. This background appropriately contextualizes the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Prior observations and structural studies: Inhibition of KdpFABC transport has been observed when cells return to K+-rich media, occurring more rapidly than protein turnover. Previous structural analysis revealed phosphorylation of Ser162 in the conserved TGES motif, which was surprising given the lack of precedent in P-type ATPases. Initial structural work suggested salt bridges to the N-domain, but subsequent cryo-EM structures showed variable conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28, C33-C37 summarize prior observations and structural studies that motivated the current work. These are appropriately cited and accurately represent the state of knowledge before this study. The progression from initial X-ray structure (C33-C35) to cryo-EM structures (C36-C37) showing variable conformations sets up the need for the current biochemical investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C58",
+      "C126",
+      "C140"
+    ],
+    "result": "Background on P-type ATPase catalytic cycle: P-type ATPases share the Post-Albers scheme involving E1~P and E2-P intermediates distinguished by ADP reactivity. The TGES motif with Glu161 is crucial for E2-P hydrolysis. The E161Q mutation blocks this hydrolysis step based on work with other P-type ATPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C58, C126, C140 provide essential background on P-type ATPase biochemistry. This is well-established knowledge appropriately cited. Understanding the catalytic cycle and the role of conserved residues is necessary for interpreting the experimental results. The E161Q mutation serves as an important control based on established precedent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Background on P-type ATPase regulation and bacterial serine phosphorylation: P-type ATPases are subject to various regulatory strategies, typically involving regulatory domains/subunits. Serine phosphorylation is well-known in eukaryotes but relatively rare in bacteria, with only a few characterized Ser/Thr kinases in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C98-C102, C105-C113 provide context on P-type ATPase regulation and bacterial phosphorylation systems. This background is well-cited and establishes why the current findings are novel. The rarity of serine phosphorylation in bacteria and the lack of precedent for this type of regulation in P-type ATPases emphasizes the significance of the discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Mass spectrometry quantification considerations: Positive ion mass spectrometry typically underestimates phosphorylation levels due to differential ionization efficiency, but relative phosphorylation levels between samples are reliable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 address an important methodological consideration for interpreting the mass spectrometry data. The limitation of absolute quantification (C50) is acknowledged with citation, while the reliability of relative measurements (C51) is also cited. This appropriate caveat strengthens confidence in the comparative analyses presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C116",
+      "C151",
+      "C152"
+    ],
+    "result": "Implications and future directions: The dependence of serine phosphorylation on growth conditions has important ramifications for understanding the reaction cycle. Fundamental questions remain about KdpFABC mechanism. Future structural and biochemical work should control for serine phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116, C151-C152 discuss implications and recommendations. The importance for understanding the reaction cycle (C116) is well-supported by the data showing effects on K+-dependence and catalytic intermediates. The recommendation to control for phosphorylation in future studies (C152) is appropriate given the demonstrated effects on enzymatic properties. The acknowledgment of remaining questions (C151) is scientifically honest.",
+    "result_type": "MINOR"
+  }
+]

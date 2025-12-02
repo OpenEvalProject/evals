@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C60",
+      "C63"
+    ],
+    "result": "Side-by-side quantitative comparison reveals that endocytic protein abundances in S. pombe and S. cerevisiae are more similar than previously reported, with most homologous proteins differing by only 1.2-1.7 fold between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 provide direct quantitative measurements of protein ratios between the two yeasts using simultaneous imaging in the same microscope field. The data in Figure 1 and Tables 1-2 support the conclusion (C60, C63) that protein abundances are more similar than indicated by previous literature. The methodology of side-by-side comparison eliminates imaging inconsistencies and provides robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C61",
+      "C62"
+    ],
+    "result": "A novel 120-sfGFP nanocage standard enables accurate absolute quantification of endocytic proteins, yielding measurements of 168\u00b148 Sla1, 199\u00b172 Myo5, and 102\u00b130 Las17 molecules at budding yeast endocytic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 and C61-C62 describe the nanocage calibration method and resulting protein counts. The validation using Cse4 kinetochore protein (C29) that agrees with previous studies provides strong support for the method's accuracy. Figure 2B-D demonstrates linearity and reproducibility of the standard.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C40",
+      "C68",
+      "C101",
+      "C102"
+    ],
+    "result": "Membrane invagination speed in S. pombe (51.8 nm/s) is approximately two-fold faster than in S. cerevisiae (23.8 nm/s), though both yeasts spend similar time (~4-5 s) deforming the membrane prior to scission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C40, C68, C101, and C102 are supported by quantitative analysis of coat protein movement presented in Figures 4F and related analyses. The particle tracking data with custom alignment software provides robust measurements of invagination dynamics. The conclusion that similar time but different speeds result in different invagination depths is logically consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Membrane invagination depth in S. pombe (~200 nm) is approximately two-fold greater than in S. cerevisiae (~100-125 nm), as determined by particle tracking of fluorescent proteins and validated by 3D-STORM imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C33, C36-C38, C69-C71 are supported by converging evidence from live-cell imaging (Figures 3-4) and super-resolution microscopy (Figure 6). The transition to irregular movement at different distances (C30, C32) provides a functional readout of invagination depth, while STORM data (C44-C48) provides structural validation. The inference that irregular movement represents vesicle release (C31, C33) is reasonable given correlation with EM data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C90",
+      "C91"
+    ],
+    "result": "Accumulation of approximately 70 WASp molecules triggers switch-like activation of the Arp2/3 complex to drive membrane invagination in both S. pombe and S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C90, and C91 are supported by quantitative analysis of WASp dynamics in Figure 7B-C and correlation with actin assembly initiation. The threshold of ~70 WASp molecules is consistent with previous work (Sun et al., 2017) and represents a conserved mechanism. The data show tight temporal correlation between WASp accumulation and actin assembly onset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C57",
+      "C98"
+    ],
+    "result": "WASp-mediated actin nucleation is essential for endocytosis in S. pombe, as demonstrated by severe impairment of membrane invagination in spWsp1-CA\u2206 mutants where 92% of actin patches are non-motile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55, C57, and C98 are supported by genetic experiments with CA domain deletion mutants presented in Figure 8. The two-color live-cell imaging (C55) provides direct evidence that actin still assembles but patches fail to move in the spWsp1-CA\u2206 mutant, indicating loss of force generation. This contrasts with budding yeast where WASp NPF activity is not essential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C58",
+      "C59"
+    ],
+    "result": "The assembly of two zones of actin filaments is specific to fission yeast but not essential for CME, as endocytic internalization still occurs in spmyo1-CA\u2206 mutants lacking type I myosin NPF activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56, C58, and C59 are supported by genetic experiments showing that deletion of the Myo1 CA domain does not prevent endocytosis (Figure 8E-F). This challenges the two-zone model and demonstrates that WASp alone is sufficient for force generation in fission yeast. The data are internally consistent with patch lifetime measurements (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C76",
+      "C100"
+    ],
+    "result": "Vesicle scission occurs approximately 4-5 seconds after initiation of membrane invagination in both yeasts and is tightly correlated with maximum actin network intensity, with actin assembly beginning slightly before membrane invagination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C39, C41-C43, C76, and C100 are supported by temporal correlation analysis from two-color imaging experiments (Figures 3F-G, 4E, 5B-D, 7C). The tight correlation between predicted scission timing and actin maximum is demonstrated across multiple proteins and both yeast species. The inference about timing (C35, C42-C43) is reasonable based on the transition to irregular movement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C77",
+      "C89",
+      "C93"
+    ],
+    "result": "In fission yeast, spWsp1 and spMyo1 are recruited with similar timing and reach maximum levels before membrane invagination begins, with actin assembly initiating when both NPFs reach ~50% of peak levels, followed by rapid NPF disassembly during invagination elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54, C77, C89, and C93 are supported by high-resolution two-color imaging data in Figure 7. The observation that spWsp1 only moves when at maximum intensity (C49) and that both NPFs peak before invagination (C53) supports their role in initiating membrane deformation. The rapid disassembly (C54) suggests decreasing nucleation during elongation. The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "3D-STORM imaging reveals that spFim1-labeled structures range from 120-350 nm in length, spPan1 structures range from 50-180 nm, and spPan1 forms ring structures in the X-Y plane, with presumed vesicles measuring 193\u00b137 nm (Fim1) and 152\u00b130 nm (Pan1) along their longest axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by 3D-STORM imaging data in Figure 6. The measurements provide nanoscale structural details consistent with the invagination depth inferred from live-cell imaging. The interpretation that structures represent progression through endocytosis (C44) and that Pan1 rings encircle invaginated membrane (C46) are reasonable though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Validation experiments with N-terminal and C-terminal GFP-tagged Las17 confirm that differences in WASp dynamics between budding and fission yeast are real and not artifacts of tag position or analytical methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by control experiments in Figure 7\u2014figure supplement 1 showing that despite some differences in individual patch behavior, population-level measurements (lifetimes, actin marker behavior) are indistinguishable between N- and C-terminal tags. This validates the comparison between yeasts where different tag positions were used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "spFim1 dynamics are identical across different strain backgrounds (spfim1-mEGFP, mEGFP-spwsp1 spfim1-mCherry, mEGFP-spmyo1 spfim1-mCherry), indicating that mEGFP fusions do not affect protein function or actin patch dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by comparison of dynamics data across strains in Figures 3G, 7C, and 7E. This control validates the use of fluorescent fusions for quantitative measurements and ensures that observed differences reflect biological variation rather than tag effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The spWsp1-CA\u2206 mutant protein accumulates and persists at endocytic sites nearly three times longer than wild-type without pronounced movement, while Myo1-CA\u2206 has indistinguishable lifetime from wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 are supported by quantitative analysis in Figure 8A-B. These observations provide additional evidence for the differential requirements of WASp vs. Myo1 NPF activity and suggest that loss of WASp function leads to stalled endocytic intermediates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The current study's protein counts differ from previous reports, being 1.5-3 times higher for budding yeast and 1.5-2 times lower for key fission yeast proteins compared to earlier studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C82 are supported by comparison with previous literature in Figure 2E-G and Table 1. The differences likely reflect methodological improvements (side-by-side comparison, nanocage standard) rather than biological variation. This highlights the importance of standardized quantification methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Both yeasts accumulate similar maximum numbers of Arp2/3 complexes (~300) and HIP1R homologs (~130) at endocytic sites, suggesting similar capacities for producing actin filament branches and connecting the actin network to the endocytic coat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by quantitative data in Figure 2E-F. The similar numbers of these key components suggest conserved core machinery despite differences in dynamics and invagination geometry. The inference about similar capacities (C85) is reasonable though somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99"
+    ],
+    "result": "Comparative analysis reveals that coat proteins reach maximum levels before actin assembly in both yeasts, but the two yeasts differ in type I myosin recruitment timing and the relative importance of WASp vs. myosin NPF activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C92, C94-C97, and C99 are supported by dynamics data in Figures 4, 7, and 9. The observations highlight both conserved features (coat protein timing) and species-specific adaptations (myosin timing, NPF requirements). The data are consistent with previous studies cited for budding yeast.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establish that CME is conserved from yeast to humans, involves actin assembly to overcome membrane tension/turgor pressure, and that budding and fission yeast diverged 330-420 million years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C15 represent established knowledge supported by multiple citations to previous research. These provide context for the comparative study but are not novel findings. The evolutionary distance claim (C12-C13) justifies the comparative approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Previous studies reported lower protein numbers at budding yeast endocytic sites compared to fission yeast and distinctly different WASp dynamics between the two species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 accurately summarize previous literature (Picco et al., 2015; Sirotkin et al., 2010; Kaksonen et al., 2003) and provide motivation for the current study's direct comparison. These are literature review claims rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The modest differences in protein numbers between the two yeasts may help explain differences in dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is speculative and not directly tested. While the correlation between protein numbers and dynamics is plausible, the manuscript does not provide mechanistic evidence linking specific protein abundances to specific dynamic behaviors. This remains a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The transition to irregular movement of scAbp1-GFP beyond ~125 nm likely represents vesicle release in budding yeast, consistent with previous EM studies showing ~100 nm invagination depth and agreeing with Picco et al. (2015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 combine current live-cell imaging data with previous EM studies to infer the meaning of irregular movement. The inference is reasonable given the correlation with EM measurements (C66) and agreement with independent studies (C67), though direct validation would require correlative microscopy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Knowing protein numbers at endocytic sites is crucial for developing quantitative understanding of CME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is a general statement about the importance of quantitative measurements that is well-supported by the field and demonstrated by the current study's findings. This is a motivating principle rather than a result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Mammalian type I myosin lacks a CA motif, suggesting that two zones of actin assembly may not be required for mammalian CME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86 and C87 represent speculation about mammalian CME based on sequence analysis (C86 is established knowledge) and extrapolation from yeast findings. While the logic is reasonable, this hypothesis is not tested in the manuscript and would require experimental validation in mammalian systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "300 million years of divergent evolution has resulted in two systems using essentially the same conserved proteins somewhat differently to achieve endocytic vesicle formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is a synthesis of all findings in the study. The data support this conclusion by demonstrating conserved protein composition and core mechanisms alongside species-specific adaptations in dynamics, invagination geometry, and NPF requirements. This represents the overarching conclusion of the comparative analysis.",
+    "result_type": "MAJOR"
+  }
+]

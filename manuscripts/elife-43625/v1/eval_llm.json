@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C25"
+    ],
+    "result": "The study demonstrates that representational untangling (RU) of orientation information occurs at the first cortical stage (V1) via the firing rate nonlinearity (FRNL) of simple cells, not at earlier stages (retina/LGN), suggesting RU may be a universal principle involving cellular mechanisms and that information reformatting rather than maximization is relevant for early visual processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 are directly supported by computational modeling showing RU occurs in V1 but not retina/LGN (C40-C41). The broader interpretations (C7, C25) are appropriately framed as suggestions based on the modeling and experimental results. The core finding is well-supported by converging computational and experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Nuisance parameters (phase, contrast, spatial period) make membrane potential responses highly tangled and linearly undecodable, but the FRNL creates a trade-off between information loss and sparsification that results in an optimal firing threshold for linear decodability of orientation from firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by the computational modeling results shown in Figures 2 and 3. The mechanistic explanation of how the FRNL enables RU through sparsification despite information loss is clearly demonstrated. The existence of an optimal threshold is shown across multiple conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C24",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The optimal firing threshold depends on specific experimentally measurable parameters (mean membrane potential, modulation depth, noise variance), and V1 simple cells from awake mice have firing thresholds in the near-optimal regime, with this co-tuning being statistically significant (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C24 are supported by the parameter analysis in Figure 6. Claims C6, C52-C54 are supported by experimental validation in Figure 7 with intracellular recordings from 4 cells. The permutation test (C53) provides statistical support. However, the small sample size (n=4 cells) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The optimal firing threshold for RU is robust across multiple nuisance parameters (phase, spatial period, contrast), with contrast causing the least entanglement, and the optimal threshold generalizes across different stimulus distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by the systematic analysis in Figures 4 and 5. The robustness of the optimal threshold across different combinations of nuisance parameters and stimulus distributions is clearly demonstrated. The mechanistic explanation for why contrast causes less entanglement (radial response manifolds) is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The optimal firing threshold exists across varied model parameters (population size, decoder resolution, noise correlations) and is largely independent of these parameters except for the FRNL exponent, which substantially affects the optimal threshold value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by the systematic parameter exploration shown in Figure 6 and supplementary figures. The robustness analysis is thorough and demonstrates that the main findings are not artifacts of specific parameter choices. The special role of the FRNL exponent is clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The infomax hypothesis (information maximization) cannot convincingly account for the experimental data due to limited specificity, with only 3 of 4 recorded cells in the predicted regime (p=0.54, not significant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by the comparison in Figure 7D and the permutation test. The analysis appropriately contrasts the RU hypothesis with the alternative infomax hypothesis. However, the small sample size (n=4) limits the strength of this negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The computational model uses Gabor filters to approximate V1 simple cell receptive fields, with membrane potentials subject to temporally correlated Gaussian noise (20 ms windows), and firing rates obtained via a rectifying nonlinearity matching experimental FRNL properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are well-supported by citations to established methods and experimental studies (C27-C29). The model design is standard and appropriate for the research question. The parameter choices are justified by references to experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The optimal firing threshold is robust to the choice of performance measure (fraction correct, probabilistic fraction correct, cosine error) and to whether receptive fields cover the full visual field or a local 3\u00b0 region (hypercolumn).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by supplementary analyses (Figure 3\u2014figure supplements 2 and 3). The robustness checks strengthen the main findings by showing they are not dependent on arbitrary methodological choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Orientation is linearly undecodable from membrane potentials and firing rates of model retinal and LGN populations, even with optimal firing thresholds, demonstrating that RU is specific to V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by modeling results in Figure 3C-D. The comparison with earlier processing stages strengthens the conclusion that the FRNL-based RU mechanism is specific to V1. However, the retinal and LGN models are simplified approximations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Linear decodability of spatial period and contrast shows similar firing threshold-dependence as orientation, with peak performance near the optimal threshold for orientation decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by Figure 4\u2014figure supplement 2. It demonstrates that the FRNL mechanism for RU generalizes beyond orientation to other stimulus features, strengthening the broader significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In heterogeneous populations, modifying thresholds from locally optimal values deteriorates performance, and thresholds optimized for homogeneous populations remain effective in heterogeneous populations, suggesting local optimization rules could achieve global optimality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by the heterogeneous population analysis in Figure 8. The finding that local optimization is sufficient is important for biological plausibility. However, C59 is appropriately framed as speculation about potential biological mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The current study's findings on FRNL-based RU differ from prior work on mixed selectivity and information maximization in the retina, with the optimal threshold emerging from measuring linearly decodable information rather than total information, suggesting different computational roles for FRNL at different processing stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately contextualize the current findings relative to prior work (C60-C62, C64). The mechanistic distinction (C65) is clearly explained. The broader interpretation (C66) is appropriately framed as a suggestion. The discussion accurately represents both the current work and cited prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Experimental procedures were ethically approved, and intracellular recordings were performed in awake mice using established two-photon guided methods, with spike removal and FRNL parameter estimation following published protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are supported by appropriate citations to established methods (C68-C72) and ethical approval documentation (C67). The experimental methods are standard and well-documented in the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript provides background on visual processing hierarchy, representational untangling, linear decodability, and prior work on orientation decoding in V1, identifying gaps in previous studies that did not examine membrane potentials or multiple nuisance parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C8-C18) are well-supported by appropriate citations to established literature. The characterization of prior work and identification of gaps (C15-C20) appropriately motivates the current study. The background accurately represents the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "At low firing thresholds, linear decoder coefficients show no systematic relationship with preferred orientations, reflecting the failure of linear decoding from membrane potentials under phase variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by Figure 3\u2014figure supplement 1B. It provides additional evidence for the entanglement of membrane potential representations and complements the main decoding performance results.",
+    "result_type": "MINOR"
+  }
+]

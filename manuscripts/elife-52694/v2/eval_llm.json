@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes the public health context of the opioid epidemic, reporting that opioid overdose rates in the United States quadrupled between 1999 and 2017 (reaching 130 deaths per day), with nearly 400,000 deaths from opioid overdoses during this period, and noting that this has become a global public health emergency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, and C9 are supported by appropriate citations (Scholl et al., 2018; Rudd et al., 2016) and represent well-documented public health statistics. These background claims establish the significance of the research problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The manuscript reviews prior work establishing that opioid-induced respiratory depression (OIRD) causes death through slow and shallow breathing, that mice exhibit similar respiratory depression to opioids as humans (eliminated by global Oprm1 deletion), and that Oprm1 is broadly expressed in multiple brain regions capable of modulating breathing, with multiple sites independently slowing breathing after local opioid injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 are supported by appropriate citations to prior literature (Pattinson, 2008; Dahan et al., 2001; Mansour et al., 1994; Kirby and McQueen, 1986; Montandon et al., 2011; Mustapic et al., 2010; Prkic et al., 2012). These establish the scientific background and rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Morphine administration (20 mg/kg) in mice causes substantial respiratory depression in both normoxia and hypercapnia, with respiratory rate and inspiratory airflow each decreasing by 50-60%, and minute ventilation decreasing by 50-60%, establishing this dose as suitable for modeling OIRD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 are supported by experimental data shown in Figure 1B-F with n=29 animals. The quantitative measurements are consistent and the conclusion that 20 mg/kg morphine is suitable for modeling OIRD follows logically from the observed ~50% decrease in minute ventilation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Morphine administration introduces a novel 'pause' phase during expiration characterized by prolonged low airflow (<0.5 mL/sec) lasting up to several hundred milliseconds and accounting for about one-third of breath length, while also prolonging inspiratory time (Ti). These changes in Ti and pause duration are the primary contributors to the 50% decrease in respiratory rate and the decrease in minute ventilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 are supported by detailed experimental data in Figure 1G-J. The identification and quantification of the pause phase is novel and well-documented. However, the threshold of 0.5 mL/sec for defining pause is somewhat arbitrary, though the authors provide justification in Figure 1\u2014figure supplement 2 showing this threshold identifies pauses rare in control conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Despite morphine-induced changes, the correlation between inspiratory time (Ti) and peak inspiratory airflow is maintained, resulting in preserved tidal volume through compensatory prolongation of Ti. The authors conclude that opioids cause two primary changes to breathing: decreased inspiratory airflow and addition of a pause phase that delays breath initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by experimental data in Figure 1K-N and citations (West, 2005; Hill et al., 2018). The identification of two primary breathing changes is a key conceptual contribution that simplifies understanding of OIRD mechanisms. The preservation of tidal volume through compensatory Ti prolongation is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The two primary breathing changes caused by opioids can be controlled by the preB\u00f6tzinger Complex (preB\u00f6tC), suggesting it may be a key locus for OIRD. Prior work showed localized opioid injection into the preB\u00f6tC causes respiratory depression and localized naloxone reverses systemic opioid effects, but these experiments cannot distinguish between presynaptic versus postsynaptic actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by appropriate citations (Smith et al., 1991; Feldman et al., 2013; Cui et al., 2016; Montandon et al., 2011; Montandon and Horner, 2014; Mudge et al., 1979; Dobbins and Feldman, 1994; Gray et al., 1999). The identification of the limitation in prior localized injection studies provides strong rationale for the genetic deletion approach used in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Genetic deletion of Oprm1 specifically from preB\u00f6tC neurons (via AAV-Cre injection in Oprm1f/f mice) markedly attenuates OIRD: breathing rate doubles (3 to 6 Hz), peak inspiratory flow increases, and pauses are nearly eliminated after morphine administration, while saline-induced breathing remains unaffected. Control experiments confirm viral expression is localized to the preB\u00f6tC and that animals do not develop opioid tolerance within the experimental timeline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 are supported by experimental data in Figure 2D-J and supplementary figures, with appropriate controls (n=6 Cre-injected, n=7 sham controls). The within-animal design strengthens the conclusions. Statistical significance is reported (p-values and Cohen's d). Histological validation of injection sites (Figure 2\u2014figure supplement 1) and control experiments address key concerns about specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "OIRD rescue after preB\u00f6tC Oprm1 deletion occurs in both normoxia and hypercapnia, and is specific to breathing since opioids still induce analgesia in tail-flick assays after preB\u00f6tC Oprm1 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by data in Figure 2\u2014figure supplements 2 and 3. The demonstration that analgesia is preserved while respiratory depression is attenuated is critical for the translational significance of these findings, suggesting the preB\u00f6tC as a potential therapeutic target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "OIRD rescue after preB\u00f6tC Oprm1 deletion is incomplete, which could be explained by incomplete deletion within the preB\u00f6tC or participation of another brain site. The PBN/KF is identified as a candidate second site based on prior work showing opioid injection there can slow breathing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by the data showing partial rescue and citations to prior work (Mustapic et al., 2010; Prkic et al., 2012; Eguchi et al., 1987; Lalley et al., 2014). The acknowledgment of incomplete rescue and consideration of alternative explanations demonstrates appropriate scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "AAV-Cre injection into the PBN/KF produces a slight increase in morphine-evoked respiratory rate and inspiratory airflow, with a more moderate effect than preB\u00f6tC injection. Double deletion of Oprm1 from both preB\u00f6tC and PBN/KF results in breathing after morphine that is nearly identical to saline controls (only ~20% depression), with effects appearing additive. This rescue occurs in normoxia, even with mostly unilateral PBN/KF transduction, and breathing remains resilient to super-saturating doses of fentanyl (150 mg/kg).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 are supported by experimental data in Figure 3 and supplementary figures (n=6 cohort 1, n=4 cohort 2). The sequential deletion design allows assessment of individual and combined contributions. The near-complete rescue with double deletion and resilience to high-dose fentanyl are particularly compelling. However, the inclusion of animals with unilateral PBN/KF transduction (C56) introduces some uncertainty about the necessity of bilateral deletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C80",
+      "C81",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Both the preB\u00f6tC and PBN/KF contribute independently and additively to OIRD, with the preB\u00f6tC being predominant, and together these two small brainstem sites are sufficient to account for OIRD. Combined deletion of \u03bc-Opioid receptor from both sites essentially eliminates OIRD, even to extremely high doses of fentanyl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C80-C81, C88-C91 represent the major in vivo conclusion of the manuscript, supported by the double deletion experiments. The data strongly support that these two sites are sufficient for OIRD. The claim of 'essential elimination' is slightly overstated given the remaining ~20% depression, though the authors acknowledge this may be due to incomplete transduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The small remaining effect of opioids after double deletion may be due to incomplete viral transduction or spillover deletion in neighboring areas such as the rostral ventral respiratory group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 are speculative interpretations of the incomplete rescue. While these are reasonable possibilities, they are not directly tested. The authors appropriately acknowledge these as interpretations rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Single-cell transcriptome profiling of P0 mouse ventral lateral brainstem reveals that Oprm1 mRNA is expressed almost exclusively by neurons and is restricted to just 8% of presumed preB\u00f6tC neurons. Within the preB\u00f6tC, Oprm1 is expressed by glycinergic, GABAergic, and glutamatergic neural types, and is not exclusive to any known rhythmogenic subpopulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by single-cell RNA sequencing data shown in Figure 4A-C and Figure 4\u2014figure supplement 1. The finding that only 8% of preB\u00f6tC neurons express Oprm1 is striking and well-documented. The analysis appropriately identifies the presumed preB\u00f6tC cluster based on marker gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In vitro preB\u00f6tC slice preparations show that bath application of DAMGO (50 nM) eliminates rhythmic bursting in control slices, which is rescued by naloxone. Deletion of Oprm1 from glutamatergic neurons (Slc17a6-Cre;Oprm1f/f) prevents DAMGO-induced rhythm cessation, while deletion from GABAergic or glycinergic neurons does not. This demonstrates that glutamatergic excitatory neurons, representing ~50% of preB\u00f6tC Oprm1-expressing neurons (4% of all preB\u00f6tC neurons), mediate OIRD in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 are supported by slice electrophysiology data in Figure 4D-F and Figure 4\u2014figure supplement 2. The cell-type specific deletion approach clearly identifies glutamatergic neurons as critical. Sample sizes are modest (n=3-11 slices per genotype) but the effects are robust and consistent. The calculation that these represent ~140 neurons is based on the scRNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Triple-labeling identifies three molecular subtypes of Oprm1 glutamatergic preB\u00f6tC neurons: 92\u00b19 Dbx1-only, 50\u00b12 Dbx1/FOXP2, and 20\u00b14 FOXP2-only. Elimination of Oprm1 from Dbx1-Cre or Foxp2-Cre lineages rescues preB\u00f6tC bursting frequency and amplitude in DAMGO, with Dbx1 rescue comparable to pan-glutamatergic deletion and Foxp2 rescue being substantial but partial (~50-60%). This shows that opioids silence a small cohort (~140) of glutamatergic neurons, and that a molecularly defined subpopulation of about half (~70) can be targeted for rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 are supported by immunohistochemistry data (Figure 4H-I) and dose-response curves (Figure 4J) with n=3-4 slices per genotype. The molecular dissection of the critical glutamatergic population is elegant. However, the partial rescue with Foxp2-Cre suggests additional complexity, and the exact number of critical neurons remains somewhat uncertain given the overlapping populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C94"
+    ],
+    "result": "The manuscript identifies ~140 Oprm1 glutamatergic neurons in the preB\u00f6tC as responsible for opioid-induced respiratory depression in vitro. The two hallmark changes during OIRD (decreased inspiratory airflow and delayed initiation/pause) match the opioid-induced depression of amplitude and frequency in the preB\u00f6tC slice, with the preB\u00f6tC determining the force and timing of inspiration and expression of active expiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 and C94 integrate the in vivo and in vitro findings, supported by data throughout the manuscript and appropriate citations (Smith et al., 1991; Feldman et al., 2013; Cui et al., 2016; Huckstepp et al., 2016). The correspondence between in vivo breathing changes and in vitro slice activity strengthens the mechanistic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The manuscript proposes that just ~70 glutamatergic neurons (the Foxp2+ subset) may be sufficient to prevent preB\u00f6tC depression, consistent with the number of Dbx1 neurons that must be lesioned to arrest preB\u00f6tC activity. The authors hypothesize that opioids act by silencing presynaptic release or postsynaptically hyperpolarizing rhythmogenic neurons, and suggest that either these neurons are key for rhythmogenesis or that recurrent excitatory networks are exquisitely sensitive to the number of participating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C104 are largely speculative interpretations supported by citations (Gray et al., 2010; Bouvier et al., 2010; Wang et al., 2014; Phillips et al., 2019; Koizumi et al., 2016; Montandon et al., 2011; Johnson et al., 1996). While these hypotheses are reasonable and well-grounded in prior literature, they are not directly tested in this manuscript. The comparison to lesion studies (C97) is compelling but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The critical ~70-140 Oprm1 neurons in the preB\u00f6tC are not required for opioid-induced analgesia, suggesting they represent a potential neutral target for developing safer opioids or rescue strategies for opioid overdose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by tail-flick assay data (Figure 2\u2014figure supplement 3) showing preserved analgesia after preB\u00f6tC Oprm1 deletion. This is a critical translational finding, though the tail-flick assay is only one measure of analgesia and more comprehensive pain testing would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "A recent similar approach (Varga et al., 2020) demonstrated some role for the preB\u00f6tC and PBN/KF in OIRD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 appropriately cites concurrent work (Varga et al., 2020) that reached similar conclusions. This acknowledgment of related work is appropriate.",
+    "result_type": "MINOR"
+  }
+]

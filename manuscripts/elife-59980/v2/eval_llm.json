@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Diabetic retinopathy is a common complication of diabetes with significant genetic contribution. While duration of diabetes and glycemic control are primary risk factors, they do not fully explain individual susceptibility. Genetic factors account for 25\u201350% of risk, and the condition is highly polygenic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish the background and rationale for the study through well-cited epidemiological and genetic literature. The claims about prevalence (C1, C2), risk factors (C3, C4), phenotypic variation (C5, C6), and genetic architecture (C7, C8) are all supported by appropriate citations to established literature and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Most genetic variants associated with diabetic retinopathy are located in non-coding regions and function by regulating gene expression. Disease-associated SNPs are enriched in DNase hypersensitivity sites and affect chromatin state or transcription factor binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are well-supported by citations to prior GWAS studies and functional genomics literature. The observation that disease-associated variants are predominantly regulatory (C9, C10) and the specific finding about DNase hypersensitivity sites (C11) are supported by the authors' prior meta-GWAS work and established eQTL studies (C12).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C80"
+    ],
+    "result": "The study cohort consisted of matched DCCT/EDIC participants with type 1 diabetes who were Caucasian (60% female), showing expected differences in diabetes duration and HbA1c between those with and without retinopathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C14, and C80 describe the study population and are supported by data from Supplementary file 1a. The observed differences in diabetes duration (53\u00b143.4 vs 27\u00b113.4 months) and HbA1c (9.71\u00b12.37 vs 7.62\u00b11.07) between PDR and nDR groups are consistent with known risk factors and expected given the matching strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Gene expression profiling revealed that 22% of genes (299 at FDR<0.05) showed differential response to glucose, with TXNIP exhibiting the largest and most significant response. Interindividual variance in transcriptional response exceeded intraindividual variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are well-supported by the gene expression data shown in Figure 1 and supplements. The statistical analysis is appropriate with FDR correction for multiple testing. The finding that TXNIP is the top glucose-responsive gene (C18, C19) is validated by citations showing this is consistent across multiple cell types. The comparison of inter- vs intra-individual variance (C17) is statistically significant (p=2\u00d710\u207b\u00b9\u2076).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C59",
+      "C60"
+    ],
+    "result": "Pathway analysis revealed that glucose exposure upregulates genes involved in DNA packaging and transcriptional regulation while downregulating immune response genes, consistent with glucose-induced suppression of cellular immune responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C59, and C60 are supported by GSEA analysis shown in Figure 1b with highly significant FDR values (<0.0001). The biological interpretation is strengthened by citations to prior work on glucose effects on immune function (Delamaire et al., 1997; Al-Mashat et al., 2006). The pathway findings are internally consistent and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Principal component analysis showed that interindividual variance in transcriptional response to glucose is dominated by retinopathy status and is not confounded by technical factors such as LCL growth rate or EBV copy number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by PCA analysis shown in Figure 2\u2014figure supplement 1 with appropriate statistical testing. The significant association with retinopathy status (p=3\u00d710\u207b\u2076) and lack of confounding by growth rate and EBV copy number (both p>0.05) demonstrate proper quality control and validate the biological signal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "103 genes showed differential glucose response between individuals with and without retinopathy (p<0.01), including IL1B and genes in the PDGF signaling pathway, both previously implicated in diabetic retinopathy pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 are supported by gene-wise analysis (Figure 2, Supplementary file 1b) and GSEA (Figure 2\u2014figure supplement 2). The identification of IL1B (C28, p=0.008) and PDGF signaling (C31, FDR=0.012) as differential response genes is validated by multiple citations showing their prior implication in diabetic retinopathy, providing biological validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Differential response genes are significantly enriched for eQTLs (p=2.0\u00d710\u207b\u00b9\u2076), and their eSNPs show enrichment for association with diabetic retinopathy in GWAS (FDR<0.05), validated by permutation testing showing <1% of random gene sets had similar enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 demonstrate a key finding linking gene expression to genetic association. The enrichment of eQTLs among differential response genes (C35, Figure 3\u2014figure supplement 1) and the enrichment of these eSNPs for diabetic retinopathy association (C37-C40, Figure 3b-c) are well-supported by statistical analysis. The permutation testing (C38) provides strong validation that this enrichment is not due to chance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C78",
+      "C79"
+    ],
+    "result": "rs11867934, the most significant retinopathy-associated eSNP, regulates FLCN expression in multiple tissues. FLCN is expressed in retinal neurons and blood vessels, and shows greater glucose-induced upregulation in individuals with diabetic retinopathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C78, and C79 are well-supported by multiple lines of evidence: GWAS data (C42, p=6.7\u00d710\u207b\u2076), eQTL data from GTEx (C43), immunofluorescence showing FLCN expression in human retina (C44, C78, C79, Figure 4\u2014figure supplement 1), and differential expression analysis (C45, log2FC=0.27, p=2.5\u00d710\u207b\u00b3). The convergence of genetic, expression, and localization data strongly supports FLCN as a candidate gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "At least 43% of retina eQTLs are shared with LCLs. FLCN eSNPs show strong enrichment for association with diabetic retinopathy in both the meta-GWAS (\u03c0\u2081=0.9) and independent UK Biobank validation cohort (\u03c0\u2081=0.73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide critical validation of the LCL model relevance to retina (C46) and replication of the FLCN association in an independent cohort (C48). The enrichment statistics (\u03c0\u2081=0.9 in meta-GWAS, \u03c0\u2081=0.73 in UKBB) shown in Figure 4b and Figure 4\u2014figure supplement 4 demonstrate robust and reproducible association across multiple datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C70"
+    ],
+    "result": "Mendelian randomization analysis demonstrates that increased FLCN expression causally increases diabetic retinopathy risk (0.15 SD increase per SD increase in FLCN, p=0.024; OR=1.3), with no evidence of horizontal pleiotropy (HEIDI p=0.2) and significant multi-SNP effect (p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 and C70 present strong causal evidence through Mendelian randomization. The SMR analysis (C49, C50) with appropriate pleiotropy testing (C51) and multi-SNP validation (C52) provides robust support for a causal relationship. The effect size is modest but statistically significant, and the lack of horizontal pleiotropy strengthens the causal interpretation. This represents the strongest evidence for FLCN as a disease gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "TXNIP, identified as the top glucose-responsive gene, is a key oxidative stress marker that is upregulated in diabetic retina, induces M\u00fcller cell activation, and shows differential methylation in EDIC cases versus controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are well-supported by citations to prior literature establishing TXNIP's role in oxidative stress (C54, C57), diabetic retinopathy (C55), glucose response (C56), and epigenetic regulation (C58). These claims provide biological context for the gene expression findings and connect the LCL model to retinal pathophysiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "FLCN is a biologically plausible diabetic retinopathy gene expressed in retinal neurons and vessels. It negatively regulates AMPK, which modulates cellular stress response, and higher FLCN levels suggest reduced stress tolerance. Protective agents like metformin and fenofibrate may act through AMPK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 provide biological rationale for FLCN's role in diabetic retinopathy. The expression data (C61) is supported by immunofluorescence, while the mechanistic claims (C62-C66) are supported by appropriate citations. The connection to therapeutic agents (C66) provides translational relevance, though this remains speculative and would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "LCLs are a valid model system for studying diabetic retinopathy genetics: they are accessible, show differential molecular characteristics by retinopathy status, share eQTLs across tissues (43% with retina), and maintain high genotype concordance (99.63%) with parent leukocytes despite some genomic alterations with passaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 and C72-C77 justify the use of LCLs as a model system through multiple citations. The acknowledgment of limitations (C72, C73) balanced with evidence of validity (C74, C75) demonstrates appropriate critical evaluation. The finding that 43% of retina eQTLs are shared with LCLs (C46, C69) and that shared eQTLs explain more trait associations than tissue-specific ones (C76, C77) provides strong empirical support for the model's relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C81"
+    ],
+    "result": "The study design has 95% power to detect 2-fold expression changes between retinopathy groups. Aggregating independent eQTLs for the same gene revealed enriched associations that conventional GWAS approaches might miss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C81 address methodological considerations. The power calculation (C81) is supported by citation to prior work and is appropriate for the sample size (n=15 diabetic individuals). The statement about aggregating eQTLs (C71) is supported by citation and is validated by the empirical findings showing enrichment when multiple FLCN eQTLs are considered together.",
+    "result_type": "MINOR"
+  }
+]

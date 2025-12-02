@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C119"
+    ],
+    "result": "APOE2 is associated with increased longevity independent of Alzheimer's disease status and neuropathology in human clinical cohorts. Analysis of NACC data (n=24,661) showed that APOE2 carriers had better survival compared to APOE3, while APOE4 carriers had worse survival. These effects persisted after adjusting for AD diagnosis, cognitive status, cardiovascular factors, and even when controlling for AD neuropathology including amyloid plaques, neurofibrillary tangles, and vascular pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 provide converging evidence from multiple statistical models (Kaplan-Meier, Cox regression) with appropriate adjustments for confounders. The analysis includes stratification by AD status and neuropathological assessment, with consistent effects observed across all models. Sample sizes are large (n=24,661 overall, n=3,528 with neuropathology), and statistical significance is maintained after Bonferroni correction (p<0.025). The authors appropriately acknowledge limitations including the referral-based nature of NACC and unmeasured confounders (C108-C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C89"
+    ],
+    "result": "APOE2 extends lifespan in mouse models lacking AD pathology. ApoE2-TR mice showed reduced all-cause mortality compared to apoE3-TR (p=0.0004), apoE4-TR (p=0.007), and Apoe-KO (p=0.0001) mice. The median lifespan was 911 days for apoE2-TR versus 825 days for apoE3-TR, representing an ~10% increase. These effects were observed in mice without amyloid or tau pathology characteristic of AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 provide survival data from animal models (n=118) with appropriate statistical analysis (log-rank tests adjusted for sex, Bonferroni correction applied). The finding is strengthened by the absence of AD pathology in these models (C35), directly addressing the independence from AD. However, the authors note that 33.9% of animals were euthanized for age-related symptoms (C36), which could introduce bias, though no genotype differences were observed in euthanasia rates (C37). The lack of significant difference between apoE4-TR and apoE3-TR in overall survival (only in early survival) is a limitation acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C120"
+    ],
+    "result": "APOE2 is associated with preserved exploratory activity during aging in mice, which correlates with lifespan. ApoE2-TR mice showed greater locomotor and exploratory activity at old age compared to other genotypes, with the most prominent effect on rearing events (p<0.0001). ApoE2-TR mice showed less age-associated decline in activity, and activity levels in the open field assay significantly correlated with age at death across genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 provide behavioral data from multiple measures (distance traveled, time mobile, rearing events) with appropriate statistical analysis (linear regression adjusted for sex, Pearson correlations). The finding that rearing events (exploratory behavior) showed stronger effects than general locomotion (C48-C49) is internally consistent and strengthens the interpretation. The correlation between activity and lifespan (C51) is supported by data in Figures 2I-K. Sample sizes are adequate (n=17-20 per group for behavioral testing).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "APOE2 is associated with preserved activity in human clinical cohorts, and reduced activity is associated with shorter lifespan. In cognitively normal subjects over 60 years old (n=9,530), APOE2 carriers had lower frequency of 'dropped activities and interests' compared to APOE3 (OR=0.80, p=0.019), while APOE4 showed no difference. 'Dropped activities and interests' was associated with shorter lifespan (HR=1.20, p=0.010) after adjusting for sex, race, and APOE genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 provide clinical evidence consistent with animal findings. The analysis appropriately restricts to cognitively normal subjects to avoid confounding by cognitive impairment (C57). The lack of difference in total GDS score (C61) and validation with memory problems in APOE4 (C63) support that the finding is specific to activity rather than general depression. However, the measure is subjective and self-reported (C58), which is a limitation. The association between dropped activities and lifespan (C64) strengthens the biological relevance of this measure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C121"
+    ],
+    "result": "ApoE protein levels and associated lipid metabolism correlate with activity levels in aged mice. ApoE2-TR mice had the highest apoE levels in brain, CSF, and plasma, which correlated with activity levels. Brain cholesterol was inversely correlated with apoE levels and activity. Plasma HDL-cholesterol and triglycerides were associated with activity levels, with apoE2-TR mice showing the highest triglycerides and no age-associated decline in these lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C81 provide extensive biochemical data with correlations to activity. However, the authors acknowledge critical limitations: correlations were primarily observed across genotypes rather than within genotypes (C98-C99), and several correlations disappeared after stratifying by genotype (C99). This suggests the associations may be driven by genotype differences rather than direct mechanistic relationships. The authors propose multiple explanations including individual variation and time lag between testing and harvest (C101), or involvement of other factors (C102). While the data are suggestive, they do not establish a clear mechanistic link between apoE/lipid levels and activity within genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Synaptic and inflammatory markers (PSD95, GFAP, CD11b, IL1\u03b2, TNF\u03b1, CRP) in brain or plasma were not associated with activity levels in aged mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 reports negative findings from biochemical analyses. This is consistent with the authors' previous work showing APOE2 effects independent of synaptic and neuroinflammatory changes (C25). The negative result strengthens the specificity of the lipid-related findings, though the absence of evidence is not definitive evidence of absence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Elevated plus maze (EPM) test showed trends toward positive association with lifespan (p=0.059), while rotarod test showed no correlation with lifespan in aged mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 report behavioral data distinguishing exploratory/anxiety behavior (EPM) from pure motor function (rotarod). The trend for EPM (p=0.059, not significant) and lack of correlation for rotarod (C55) are consistent with the interpretation that exploratory behavior, not general motor function, associates with longevity. This is supported by similar findings in the literature (C92-C93). Sample sizes are adequate (n=17-20 per group).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Body weights did not significantly change across APOE genotypes in the survival cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 reports a negative finding that helps rule out body weight as a confounding factor in the survival and activity differences. While data are not shown, this is a straightforward measurement that would be expected to be reliable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Significant APOE effects on mortality were not observed in cognitively normal individuals alone, possibly due to smaller number of death events or because cognitive decline is downstream of APOE-associated longevity pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 reports a negative finding with data not shown. The authors provide two speculative explanations (C87-C88), but cannot distinguish between them. This represents an important limitation in fully separating APOE effects on longevity from cognitive effects, though the stratified analyses and neuropathology adjustments in other cohorts partially address this concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Preserved activity associated with longevity has been observed in other longevity models including calorie restriction and aged C57BL/6J mice, though causality is unclear. Activity may serve as a surrogate marker for longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 appropriately contextualize the findings within the broader longevity literature through citations. The acknowledgment of uncertainty about causality (C94) and the proposal of activity as a surrogate marker (C95) are appropriately cautious. The recommendation for future research (C96) is reasonable given the limitations of the subjective GDS measure in humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Previous studies show that higher HDL-cholesterol and triglycerides are associated with longevity in various organisms, suggesting these lipids regulated by apoE2 might contribute to APOE2-mediated longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C106 appropriately cite relevant literature on lipids and longevity. However, C107 is speculative ('might contribute') and the authors acknowledge that further study is necessary. The evidence from this study is correlational and the within-genotype correlations are weak (C98-C99), limiting mechanistic conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study has several acknowledged limitations including the referral-based nature of NACC, short follow-up periods, unavailable cause of death data, unmeasured confounders, and the use of homozygous APOE2 mice that develop hyperlipidemia unlike most human carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C118 appropriately acknowledge important limitations of the study. The authors are transparent about the constraints of the NACC database (C108-C112) and the animal model (C116). The discussion of potential confounders like BBB breakdown (C113-C115) and recommendations for future studies (C115, C118) demonstrate appropriate scientific rigor. These limitations do not invalidate the main findings but do constrain their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C83",
+      "C84",
+      "C85",
+      "C122",
+      "C123"
+    ],
+    "result": "Background and context claims establishing that APOE2 benefits longevity but the mechanism is not understood, APOE alleles affect AD risk and longevity, and apoE regulates lipid metabolism and has AD-independent effects on cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 and C83-C85, C122-C123 provide established background knowledge supported by appropriate citations to the literature. These claims set up the rationale for the study and are well-supported by prior work. The characterization of the NACC database (C84-C85) is accurate and relevant to the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The \u03b52/\u03b54 genotype was mildly but not significantly associated with worse survival compared to \u03b53/\u03b53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 reports a non-significant finding for the \u03b52/\u03b54 genotype, which the authors note was not of primary interest. This is appropriately reported as a negative result with data in Supplementary file 1c.",
+    "result_type": "MINOR"
+  }
+]

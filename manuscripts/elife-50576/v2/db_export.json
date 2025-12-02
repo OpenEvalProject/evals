@@ -1,0 +1,1928 @@
+{
+  "submission": {
+    "id": "eb49034a-f722-423c-acf7-164b09700404",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:07:42.136771Z",
+    "updated_at": "2025-12-02T14:07:42.136771Z"
+  },
+  "content": [
+    {
+      "id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "submission_id": "eb49034a-f722-423c-acf7-164b09700404",
+      "content_type": "manuscript",
+      "content_text": "# Large-scale state-dependent membrane remodeling by a transporter protein\n\n## Authors\n\n- Wenchang Zhou<sup>1</sup> ([ORCID: 0000-0003-0397-1032](https://orcid.org/0000-0003-0397-1032))\n- Giacomo Fiorin<sup>1</sup> ([ORCID: 0000-0002-8793-8645](https://orcid.org/0000-0002-8793-8645))\n- Claudio Anselmi<sup>1</sup> ([ORCID: 0000-0002-3017-5085](https://orcid.org/0000-0002-3017-5085))\n- Hossein Ali Karimi-Varzaneh<sup>2</sup>\n- Horacio Poblete<sup>1</sup>\n- Lucy R Forrest<sup>2</sup> ([ORCID: 0000-0003-1855-7985](https://orcid.org/0000-0003-1855-7985)) \u2020\n- Jos\u00e9 D Faraldo-G\u00f3mez<sup>1</sup> ([ORCID: 0000-0001-7224-7676](https://orcid.org/0000-0001-7224-7676)) \u2020\n\n### Affiliations\n\n1. Theoretical Molecular Biophysics Laboratory National Heart, Lung and Blood Institute, National Institutes of Health Bethesda United States\n2. Computational Structural Biology Section National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThat channels and transporters can influence the membrane morphology is increasingly recognized. Less appreciated is that the extent and free-energy cost of these deformations likely varies among different functional states of a protein, and thus, that they might contribute significantly to defining its mechanism. We consider the trimeric Na+-aspartate symporter GltPh, a homolog of an important class of neurotransmitter transporters, whose mechanism entails one of the most drastic structural changes known. Molecular simulations indicate that when the protomers become inward-facing, they cause deep, long-ranged, and yet mutually-independent membrane deformations. Using a novel simulation methodology, we estimate that the free-energy cost of this membrane perturbation is in the order of 6\u20137 kcal/mol per protomer. Compensating free-energy contributions within the protein or its environment must thus stabilize this inward-facing conformation for the transporter to function. We discuss these striking results in the context of existing experimental observations for this and other transporters.\n\n## Introduction\n\nIntegral membrane proteins can have a marked impact on the morphology of the surrounding bilayer. For example, they might alter its curvature or thickness, or foster the enrichment or depletion of specific types of lipid in their vicinity (Lee, 2004; Andersen and Koeppe, 2007; Marsh, 2008; Phillips et al., 2009). These perturbations develop to accommodate the amino-acid composition and specific structural features of the protein surface. For a broad range of systems of interest, however, these features are not static, but vary as the protein carries out its biological activity. Examples include channel proteins and their gating mechanisms, or the conformational cycles resulting in alternating access in active transporters. The protein-lipid interface also changes when membrane proteins form complexes or oligomers. Because most membrane perturbations entail an energetic or entropic cost, it seems reasonable to expect that the bilayer contributes to the thermodynamics and kinetics of these processes, favoring or disfavoring specific structural states. Such interdependence would help explain why changes in lipid bilayer composition, either resulting from natural regulatory mechanisms or induced artificially, can have a determining effect on protein function (Jensen and Mouritsen, 2004; Andersen and Koeppe, 2007; Denning and Beckstein, 2013; Cordero-Morales and V\u00e1squez, 2018; Haselwandter and MacKinnon, 2018).\n\nHere, we seek to gain insights into this interplay for a class of membrane proteins known to undergo a striking structural transformation, namely secondary-active transporters featuring the so-called elevator mechanism. We specifically focus on the Na+-aspartate symporter GltPh from Pyrococcus horikoshii, a member and model system of the Excitatory Amino-Acid Transporter (EAAT) family, which includes the human SLC1 neurotransmitter transporters (Gether et al., 2006). Secondary-active transporters like GltPh interconvert between two major conformational states that alternately expose binding sites for ions and substrate to either side of the membrane (Figure 1) (Jardetzky, 1966; Reyes et al., 2009; Boudker and Verdon, 2010; Forrest et al., 2011). In GltPh, this conformational interconversion takes place only when Na+ and aspartate occupy the transporter or when the transporter is empty (Yernool et al., 2004; Boudker et al., 2007; Ryan et al., 2009), which defines this protein as a co-transporter. For either occupancy state, the exchange between outward- and inward-facing conformations is spontaneous, that\u00a0is it does not require an extrinsic electrochemical driving force. However, the relative populations of these conformational states and the net directionality of the transport cycle do depend on the membrane potential and the relative concentrations of ions and substrates on either side of the membrane. This dependence is why downhill translocation of Na+ will power uphill transport of aspartate, and vice versa.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig1-v2.jpg)\n\n**Figure 1.:** (A) View from the extracellular space, with the three protomers in the outward-facing conformation (PDB 2NWL). The \u2018scaffold\u2019 (blue) mediates all protein-protein interactions between protomers. The \u2018transport\u2019 domains (orange) carry the bound substrates, moving relative to the scaffold perpendicularly to the membrane. Side-chains that might form\u00a0hydrogen-bonds with lipid headgroups are highlighted (Tyr, Trp, Arg, Lys).\u00a0(B) Same as (A), viewed along the membrane plane, with the approximate membrane region shown as a gray box. (C) Same view as (B), with all three protomers in the inward-facing conformation (PDB 3KBC).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Coarse-grained representation of all-inward GltPh (yellow surface) in a model POPC membrane (298 K), viewed from the extracellular space. Phosphate and choline groups are highlighted with orange and blue spheres, respectively. The system amounts to\u00a0~260,000 particles, including\u00a0~7500 lipid molecules. Analogous simulation systems were constructed to study states of GltPh with one, two or all three protomers in the outward-facing conformation. (B) All-atom representation of all-inward GltPh, in a DPPC membrane (323 K). This simulation system amounts to\u00a0~3,000,000 atoms. Note that the longest dimension of the GltPh trimer is\u00a0~80 \u00c5. The solvent is omitted in both panels, for clarity.\n\nGltPh forms a homotrimer (Yernool et al., 2004); yet, each protomer works independently from its neighbors (Akyuz et al., 2013; Erkens et al., 2013; Akyuz et al., 2015; Ruan et al., 2017). The protomers consist of two distinct units: the scaffold domain, which provides a stable trimerization interface (Groeneveld and Slotboom, 2007; Verdon and Boudker, 2012; Georgieva et al., 2013; H\u00e4nelt et al., 2013), and the transport domain, which encapsulates the ion and aspartate binding sites (Yernool et al., 2004; Reyes et al., 2009). Both domains are exposed to the lipid bilayer, but structures of GltPh in outward- and inward-facing states clearly reveal that it is the movement of the latter domain that results in alternating access (Yernool et al., 2004; Reyes et al., 2009). Specifically, if one assumes that the scaffold domains remain stationary relative to the membrane mid-plane, each transport domain would move perpendicularly to that plane by approximately 15 \u00c5, that\u00a0is about one-third of the total bilayer width. How this drastic structural change impacts the relationship between protein and membrane has, to our knowledge, not been previously evaluated. One might envisage that the transport domains simply traverse the membrane (like an elevator), moving polar sidechains on their surface into the bilayer interior and exposing hydrophobic ones to the solvent (Reyes et al., 2009). Alternatively, the morphology of the lipid bilayer could adapt to the conformational state of the protein, and match the amino-acid make-up of the protein surface throughout the transport cycle. Which of these two possibilities entails the least energetic cost is entirely unclear. The absence of functional cooperativity among protomers would appear to rule out the latter, as a pronounced membrane deformation induced by one protomer could impact the conformational dynamics of its two neighbors. On the other hand, the cumulative cost of dehydration of polar and charged sidechains could be exceedingly large. Experimental studies of the GltPh homolog EAAT2 also appear to show that bilayer-facing regions in the outward-facing state are similarly solvent-accessible throughout the transport cycle (Silverstein et al., 2013).\n\nMolecular dynamics simulations in principle provide a means to examine this interplay in great detail (Cui et al., 2013; Marrink et al., 2019). Current computing power makes it feasible to examine the morphology of simple phospholipid membranes around protein structures, for many cases of interest. Highly complex membranes remain beyond reach, however, if represented in atomic detail, as the relaxation time of an arbitrarily-configured multi-component lipid mixture is slower than typically attainable simulation times, thus imposing a starting-condition bias on any analysis. In such cases, so-called coarse-grained simulations are a viable approach despite their reduced level of detail (Corradi et al., 2018). By contrast, simulation methods that permit a direct quantification of the energetic footprint of a membrane morphological change have been lacking. Computational approaches in this area have typically relied on continuum-mechanics theories of membrane elasticity, which necessarily pre-suppose important parameters defining the bilayer energetics (Argudo et al., 2017). Although such approaches can be predictive and insightful in some cases (Mondal et al., 2011; Bethel and Grabe, 2016), it is unclear whether macroscopic models are generally transferable to the length-scales of individual membrane proteins (Lee et al., 2013; Fiorin et al., 2019). To circumvent this problem, we have recently developed a free-energy simulation method (Fiorin et al., 2019) with which the potential-of-mean-force of a membrane deformation can be probed directly from a simulation system, much in the same way processes such as ligand recognition or ion permeation are commonly characterized. Here, in addition to conventional simulations and structural bioinformatic approaches, we apply this new technology to obtain quantitative insights into the nature of the interplay between GltPh and the surrounding membrane. The implications of the major conformational change required for transport are discussed in the light of available experimental observations.\n\n## Results\n\n### Alternating access causes major membrane deformations, long-ranged but non-cooperative\n\nTo examine how the transport cycle of GltPh impacts the surrounding membrane, we carried out molecular dynamics simulations of phospholipid bilayers containing structures of GltPh trimers in four different conformational states. Specifically, we examined states where all three protomers are in either the inward- or outward-facing states (Figure 1), as well as two intermediates where one protomer is inward-facing and the other two are outward-facing, or vice versa. To enable the calculations to reveal long-range perturbations, the simulated membranes are about 50\u00a0\u00d7\u00a050 nm2 in size, that\u00a0is six-fold wider than the transporter (Figure 1\u2014figure supplement 1). This area translates into\u00a0~7500 lipid molecules, much larger than typical simulation systems. In a first set of calculations, therefore, we opted for coarse-grained representation of the molecular system, using the MARTINI forcefield (Marrink et al., 2007; Monticelli et al., 2008). The conformational state of the trimer was preserved throughout each of the simulations, while the lipid bilayer was free to adjust to that state. It is worth noting that the elastic properties of lipid bilayers, as quantified by, for\u00a0example, their macroscopic bending modulus, are well described by MARTINI, despite its inherent approximations (Marrink et al., 2004; Fiorin et al., 2019).\n\nThe results of this analysis are summarized in Figure 2. For the state with all three protomers in the outward-facing conformation, we found the membrane to be only modestly perturbed. This perturbation is maximal in the vicinity of the transport domains, where the membrane mid-plane is elevated by 3\u20134 \u00c5; near the scaffold, however, the elevation is only\u00a0~2 \u00c5. By contrast, for the cases in which one, two or all three transport domains are in the inward-facing state, we observe a major morphological impact on the surrounding membrane. Specifically, we observe that the displacement of the transport domain causes a\u00a0~\u00a010 \u00c5 depression in the lipid bilayer, that\u00a0is, about 50% of the width of its hydrophobic core. This perturbation is also remarkably long-ranged, extending radially for nearly 100 \u00c5 from the protein surface (Figure 2D). Strikingly, however, along the perimeter of the protein, the perturbation is entirely confined to the interface with the transport domain, that\u00a0is, it is abruptly terminated near the scaffold, where the membrane is again minimally depressed, by only about 1\u20132 \u00c5. Indeed, comparison of intermediates with one or two protomers in the inward-facing state shows that each transport domain causes an independent perturbation, largely identical and seemingly additive to that caused by the other protomers, while in the vicinity of the scaffold domains the membrane remains largely unperturbed.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig2-v2.jpg)\n\n**Figure 2.:** The results are based on coarse-grained MD simulations of the transporter in a POPC bilayer at 298K. (A) Deflection of the membrane mid-plane for each of the primary states in the cycle. The deflection is quantified by calculating the mean value of the Z coordinate of the bilayer across the X-Y plane. The zero-level is set at\u00a0~200 \u00c5 from the protein center, where the membrane mid-plane is flat, on average. The resulting maps are viewed from the extracellular space. Each map is the mean of N\u00a0=\u00a03 observations, each of which is a time-average for one simulated trajectory. Positive values reflect an outward deflection; negative values reflect inward bending. Values equal to or greater than\u00a0\u00b13 \u00c5 are contoured (black/white), for clarity. From left to right, the standard error of the data across each map is, on average, 0.8 \u00c5, 0.8 \u00c5, 0.5 \u00c5 and 0.6 \u00c5. (B) Structure of all-outward GltPh (represented as in Figure 1), alongside a calculated density map for the lipid bilayer alkyl chains within 10 \u00c5 of the protein surface (yellow), based on all simulation data gathered for this state. See also Figure 2\u2014video 1. (C) Same as (B), for the all-inward state. See also Figure 2\u2014video 2. (D) Cross-sections of the membrane-deflection data in (A), plotted as a function of the distance to the protein surface. The cross-sections project away from the transport domain, in either the all-outward or all-inward states (solid red and orange lines, respectively), or from the scaffold domain (solid black and blue lines, respectively), following the direction indicated by the inset schematic. Horizontal dashed lines indicate the location of the center of mass of each domain, in either conformation (same color scheme).\n\nThe data presented in Figure 2 were obtained for a POPC membrane under no tension (Materials\u00a0and\u00a0methods). Similar results were obtained in simulations with applied membrane tensions as high as 10 mN/m (Figure 3), and in simulations with bilayers of different composition, namely either POPE, a 2:1 mixture of POPE and POPG (both at 298 K), and DPPC (at 323 K) (Figure 4). It should also be noted that the observed deflections in the membrane mid-plane do not result from significant differences in lipid-bilayer thickness (Figure 4\u2014figure supplement 1). Analysis of the second-rank order parameter of the lipid alkyl tails, which is a measure of their tilt relative to the membrane perpendicular, also shows little contrast between the outward- and inward-facing conformational states (Figure 4\u2014figure supplement 2). The only significant difference is observed for the inner leaflet, at the point where the transport domain meets the scaffold, in the inward-facing state. Here, the lipids become significantly tilted, on average, seemingly to adapt to the abrupt changes in membrane curvature induced by the transport domains. This effect is, however, localized and does not propagate beyond the perimeter of the scaffold. We conclude, therefore, that the long-ranged deformations induced by GltPh are most accurately described as bending, rather than other types of perturbation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig3-v2.jpg)\n\n**Figure 3.:** The deflection of the membrane mid-plane was calculated and represented as in Figure 2A. From left to right, the standard error of the data (N\u00a0=\u00a03) across each map is, on average, 0.6 \u00c5, 0.7 \u00c5, 0.4 \u00c5 and 0.3 \u00c5.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig4-v2.jpg)\n\n**Figure 4.:** The data for POPC, POPE, and 2:1 POPE:POPG were obtained at 298 K; the data for DPPC were obtained at 323 K. The deflection of the membrane mid-plane was calculated and represented as in Figure 2A. From left to right, the standard error of the data (N\u00a0=\u00a03) across each map is, on average, 0.6 \u00c5, 0.6 \u00c5, 0.4 \u00c5 and 1.0 \u00c5.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The plots quantify the thickness of the hydrophobic core of the membrane, as defined by the lipid alkyl chains, in either the all-outward or all-inward states of the transporter. Data are shown for coarse-grained simulations in POPC at 298 K and in DPPC at 323 K. Similarly to Figure 2A, each map reflects the mean of N\u00a0=\u00a03 time-averages derived from independent simulation trajectories.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The plots quantify the mean second-rank order parameter of the C-C bonds along the lipid alkyl chains, for either the outer or inner layers of the lipid bilayer (upper and lower panels, respectively), in either the all-outward or all-inward state of the transporter. The second-rank order parameter of a given C-C bond along the chain is defined as 1/2 (3 cos2< \u03b8 > \u2212 1), where < \u03b8\u00a0>\u00a0denotes the average value of the angle between the bond and the bilayer normal. Data are shown for coarse-grained simulations in POPC at 298 K and in DPPC at 323 K. Similarly to Figure 2A, each map reflects the mean of N\u00a0=\u00a03 time-averages derived from independent simulation trajectories.\n\nFinally, it is interesting to note that our simulations show that the trimerization domain is not completely static relative to the membrane throughout the alternating-access cycle; as indicated in Figure 2D, we observe that the scaffold shifts by about 2 \u00c5 when the all-outward and all-inward states are compared. Consequently, the vertical displacement of the transport domains relative to the membrane is slightly larger than the\u00a0~15 \u00c5 that would be deduced from an overlay of the structures.\n\n### Transport domains bend the membrane, while scaffold domains anchor it\n\nAlthough the coarse-grained MARTINI forcefield yields a reasonably accurate description of membrane elasticity (Marrink et al., 2004; Fiorin et al., 2019), the degree to which it also captures the specificity of bi-molecular interactions has been questioned (Javanainen et al., 2017). We thus considered the possibility that the nature of the membrane deformations observed for the inward-facing conformation of GltPh results from the lack of sufficient detail in the representation of protein and lipid structures and their interactions. To address this concern, we carried out three independent simulations of the all-inward state, using the all-atom CHARMM forcefield (see Materials\u00a0and\u00a0methods). Each trajectory was initialized with a different starting condition, derived from the previous coarse-grained simulations. The simulation systems are therefore identical in size to those described above. Of course, the computational cost is much greater, as the simulation system now amounts to\u00a0~3,000,000 atoms (Figure 1\u2014figure supplement 1B).\n\nReassuringly, the results obtained with the all-atom representation recapitulate those obtained with the coarse-grained forcefield (Figure 5). Even after a suitable relaxation time following the change in forcefield (Figure 5\u2014figure supplement 1AB), and despite a significant number of exchanges between lipids in the bulk and near the protein surface (Figure 5\u2014figure supplement 1C), the deformations induced by the transport domains were sustained in both magnitude and range; the abrupt restoration of membrane shape at the scaffold-domain interface also continued to be observed.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig5-v2.jpg)\n\n**Figure 5.:** (A) Deflection of the membrane mid-plane relative to a flat surface, calculated exactly as in Figure 2A. The standard error of the data (N\u00a0=\u00a03 trajectories, 150 ns each) across the deflection map is, on average, 1.5 \u00c5. (B) Structure of all-inward GltPh (as in Figure 1), alongside a calculated density map for the lipid bilayer alkyl chains within 10 \u00c5 from the protein surface (yellow), based on all simulation data gathered for this state. See also Figure 5\u2014video 1. (C) Hydrogen-bonding lipid-protein interactions observed during the all-atom simulations of all-inward GltPh. Direct donor-acceptor interactions are considered, as are interactions mediated by a water molecule. For each protein side chain, the plot quantifies the fraction of the simulation time during which an interaction with a lipid was observed. Figure 1C indicates the location of most of the side chains observed to have persistent lipid interactions.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A, B) All-atom simulation of the relaxation of an artificial 10 \u00c5 deflection in the membrane mid-plane. Given the large system size of the all-atom simulation system for all-inward GltPh (~3,000,000 atoms), we sought to determine the minimum sampling time required to evaluate whether the membrane deformation induced by the protein in coarse-grained simulations was compatible with this more accurate representation. To this end we constructed a simulation system consisting of a 640-DPPC lipid bilayer (323 K) and\u00a0~32,700 TIP3P water molecules, enclosed in a periodic box of\u00a0~140\u00a0\u00d7\u00a0140\u00d780 \u00c5. After equilibration, an artificial deflection of the membrane mid-plane was created in this bilayer whose magnitude is comparable to that observed in the simulations of inward-facing GltPh (see Figure 2A). To create this perturbation, lipid molecules inside a cylinder of\u00a0~10 \u00c5 in radius were progressively displaced perpendicularly to the plane of the membrane by applying a harmonic restraint with a moving center and force constant of 100 kcal/mol \u00c5\u22122. The rate of movement of the restraint center was such that after 50 ns of simulation the vertical deflection was 10 \u00c5; this value was then sustained for 70 ns, using the same restraint, now stationary. An unrestrained simulation of\u00a0~200 ns was carried out thereafter to evaluate the persistence or relaxation of the membrane deformation, during which we observed that the membrane relaxed fully within\u00a0~150 ns. Accordingly, each of the three all-atom trajectories calculated for inward-facing GltPh was 150 ns long. (C) Lipid dynamics in the all-atom simulations of inward-facing GltPh. The plot quantifies the number of lipid molecules that reside in three different shells around the protein (of 5, 10 or 20 \u00c5 width \u2013 red, orange and blue, respectively) for at least 50% of a 20-ns window at the beginning of the simulations (N\u00a0=\u00a03). The same values are given for a 20-ns window at the end of the simulations. The number of lipid molecules found in the latter set but not the former gives the number of exchanges between lipid molecules inside the shell and those further away from the protein.\n\nWhat might explain these striking effects? The complementary analyses described in Figure 5C and Figure 6 indicate that the membrane adapts to the conformational state of the protein to preclude strongly hydrophilic side chains from penetrating the core of the bilayer, while also avoiding exposure of hydrophobic portions of the protein surface to solvent. The deformed state of the bilayer also appears to be stabilized by numerous hydrogen-bonding interactions between polar and aromatic residues and lipid headgroups. For example, it is apparent that Arg105 and Lys230, which face the extracellular solution in the outward-facing state (Figure 1), would be fully dehydrated in the inward-facing conformation were it not for the fact that the membrane bends inwards (Figure 6C). Instead, these residues form highly persistent interactions with the phosphate and ester groups in the lipid bilayer (Figure 5C). Conversely, a large number of hydrophobic residues on the intracellular side of the transport domain would be exposed to solvent if the membrane was unchanged (Figure 6C). As illustrated in Figure 6B (and Figure 6\u2014figure supplement 1B) individual per-residue preferences accumulated across the protein surface add up to very large energetic gains (which, as will be discussed later, are balanced by the resistance of the membrane to be deformed). Notably, this pattern of H-bonding interactions extends to the scaffold, where they appear to help anchor the bilayer in between adjacent transport domains, on both sides of the membrane (Figure 5C). Interestingly, clear co-evolutionary relationships can be detected across GltPh homologs for several clusters of membrane-exposed residues that include those engaged in hydrogen-bonding with lipids in our simulations (Figure 6D). In summary, the changes in membrane morphology induced by the conformational cycle of GltPh thus appear to be dictated by the displacement of protein interfaces that have evolved to be closely matched with the chemical features of the membrane and the surrounding solvent.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig6-v2.jpg)\n\n**Figure 6.:** (A) Molecular systems used to evaluate the change in the free energy of polar/hydrophobic solvation that results from membrane bending, for all-inward GltPh. The solvent-accessible surface area of each residue in the protein was calculated for either case (Materials\u00a0and\u00a0methods). (B) Per-residue change in the free-energy of polar/hydrophobic solvation, deduced from two alternative hydrophobicity scales (Materials\u00a0and\u00a0methods). Negative values of \u03b4Gsol indicate the deformed membrane state is favored; positive values favor the flat configuration instead. All residue contributions, in the three protomers, were summed to obtain the total value of \u0394Gsol. (C) Residues for which the magnitude of \u03b4Gsol is 1 kBT or greater (with both scales) are highlighted in the context of the proposed membrane deformation for all-inward GltPh. Residues that favor the deformed state are shown in gray; those that favor the flat state are shown in red. The protein structure examined in panels (A, B) is an equilibrated snapshot of the all-atom simulation of all-inward GltPh. An analogous analysis of the X-ray structure of all-inward GltPh is shown in Figure 6\u2014figure supplement 1. (D) Residues involved in H-bonds to lipid head groups (Figure 5C) that are also predicted to have co-evolved with neighboring residues at the protein-lipid interface (Materials\u00a0and\u00a0methods). The position of these residues in the outward-facing X-ray structure of GltPh is indicated by their C\u03b1 atoms (spheres). On the cytoplasmic side of the protein, there are three main clusters: one on the transport domain (cluster 1, purple) comprising residues E80, K84 and Y88 (TM3), L250, Y254 (TM6), I411, V412, K414, T415, and E416 (TM8); and two mostly on the scaffold: one including A67 (TM3), A164, Y167 (TM4), K196, and G200 (TM5) (cluster 2, gray), and the other including K15 (TM1), Q203 and I207 (TM5) (cluster 3, white). On the periplasmic side, there are two clusters: one on the transport domain (cluster 4, cyan), comprising R105, N108 (TM3), F323 (TM7), V335, and Q338 (HP2a); and one on the scaffold (cluster 5, yellow) containing L30, H32, Y33 (TM1), T41, Y42, and V43 (TM2).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Panels (A), (B) and (C) display information analogous to that shown in Figure 6, but for the X-ray structure of all-inward GltPh (PDB 3KBC).\n\n### The inward-facing state incurs a major energetic penalty due to membrane bending\n\nThe data presented in Figures 2\u20135 shows each GltPh protomer causes a membrane deflection of about 10 \u00c5 in an area of about 1,000 \u00c52, that\u00a0is, a very pronounced change in membrane curvature. This observation begs the question: what is the energetic cost of such a deformation? To answer this question precisely is very challenging. As we discuss in detail elsewhere (Fiorin et al., 2019), most computational strategies to examine the energetics of membrane bending are based upon the Helfrich-Canham theory, which predicts a relationship between curvature and energy dictated by the bending modulus of the bilayer (Canham, 1970; Helfrich, 1973). Although this theory is appropriate for mesoscopic perturbations, it can be inadequate on its own in the length scales that are relevant to membrane protein mechanistic studies (Goetz et al., 1999; Brannigan and Brown, 2006). Hence, a number of variations and extensions of the Helfrich-Canham function have been proposed to account for other possible contributions to the membrane energetics, based on more complex functions of the local bilayer curvature (Brannigan and Brown, 2006; Watson et al., 2012; Khelashvili et al., 2013). An alternative route to evaluate membrane perturbations would be to calculate the associated free-energy cost directly from a molecular dynamics simulation, using enhanced-sampling techniques. This type of model-free, microscopic approach has become state-of-the-art in computational studies of other molecular-scale processes such as ion permeation, ligand binding, or protein conformational change (Perez et al., 2016; Harpole and Delemotte, 2018; Flood et al., 2019), superseding other types of models and theories. The reason why microscopic enhanced-sampling approaches have lagged behind for membranes is the difficulty in formulating appropriate descriptors of the membrane shape and configuration \u2013 that\u00a0is the so-called \u2018collective variable\u2019 problem.\n\nIn a recent development, we have reported a novel free-energy simulation strategy to address this problem, which we refer to as Multi-Map (Fiorin et al., 2019). The central element of this method is a collective variable that quantifies the similarity between the instantaneous configuration of the lipid membrane and a set of pre-defined density distributions mapped onto a 3D grid. Biased exploration of this Multi-Map variable, for example using umbrella-sampling simulations, not only transforms the bilayer shape as dictated by the set of target density distributions, but also permits derivation of the corresponding potential-of-mean-force. What, then, is the free-energy cost of the membrane deformations induced by inward-facing GltPh?\n\nTo evaluate this cost, we devised a Multi-Map calculation whereby a lipid membrane is driven to deform in a manner that mimics the perturbation caused by GltPh, but in the absence of the protein. In Figure 7A, we show 2D representations of three membrane configurations sampled by this enhanced-simulation methodology. The simulations also sample configurations for which the amplitude of the membrane perturbations is greater and smaller than those shown in Figure 7A, that\u00a0is larger and smaller values of the Multi-Map variable. The corresponding potential-of-mean-force curve, that\u00a0is, the free-energy change as a function of the deformation amplitude, is shown in Figure 7B. From comparison of this data with the results shown in Figure 2A, it can be inferred that the cost of the membrane perturbation induced by all-inward GltPh is on the order of 20 kcal/mol in total, or 6\u20137 kcal/mol per protomer. (This value was obtained in the absence of membrane tension; under membrane tension, the cost would be greater, as shown in Figure 7B, but the extent of the deformation is smaller, as shown in Figure 3.) Clearly, this energetic penalty is sizable; as noted above, however, energetic gains that result from polar and hydrophobic solvation of the protein surface when the membrane is deformed are comparable in magnitude, if not greater (Figure 6). At any rate, this analysis shows that the morphological preference of the membrane is a major contributor to the free-energy landscape of this transporter; it specifically and strongly opposes the inward-facing state, and so must be counterbalanced by other free-energy contributions for the transporter to carry out its structural mechanism. (For completeness, a comparative analysis with results obtained using the Helfrich-Canham macroscopic theory is presented and discussed in Figure 7\u2014figure supplement 1.)\n\n![Figure 7.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig7-v2.jpg)\n\n**Figure 7.:** (A) Simulated membrane deformation, in the absence of the protein, induced by application of the Multi-Map method in combination with umbrella\u00a0sampling, for a coarse-grained POPC lipid bilayer at 298 K. The figure shows three deflection maps analogous to those shown in Figure 2A, that\u00a0is calculated from trajectory data by averaging the Z coordinate of the bilayer mid-plane across the range of X and Y encompassed by the simulation box. The deflection maps shown correspond to three individual umbrella-sampling windows used in this free-energy calculation, differing in the amplitude of the perturbation that is induced in each case. Other trajectories/windows sample deformation amplitudes that are smaller or larger than those represented in the figure, that\u00a0is, smaller or larger values of the Multi-Map variable. Each map reflects an average of 18 independent simulations of 1 \u03bcs each. (B) Potential-of-mean-force (PMF) curve for the morphological perturbation depicted in panel (A), as a function of the Multi-Map variable, that\u00a0is, as a function of an increasing deformation amplitude. The free-energy values for the three configurations represented in panel (A) are indicated. PMF curves are also shown for two additional calculations based on umbrella-sampling simulations under an applied membrane tension, for the values indicated. Each of these PMF curves is an average of 18 independent calculations, each sampling 1 \u03bcs per window. Error bars for each curve average to about 0.6 kcal/mol.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) The PMF curves shown in Figure 7 are correlated with energy profiles calculated with the Helfrich-Canham equation. Calculation of the latter requires two inputs: the assumed bending modulus kc and the membrane curvature distribution across the X-Y plane, c(x, y). For each of the umbrella-sampling windows used in the PMF calculation (18 trajectories\u00a0\u00d7\u00a01 \u03bcs), that\u00a0is for each value of the progress variable \u03be, we evaluate this curvature distribution from analysis of the average mid-plane of the membrane; specifically, maps such as those shown in Figure 7A were interpolated with cubic splines and differentiated with respect to coordinates x and y to obtain the corresponding local curvature maps, c(x, y). The elastic energy for each value of \u03be was then calculated by integrating the Helfrich-Canham energy density [0.5 kc c2(x, y)] over the area of the membrane. The three plots in panel (A) describe Helfrich-Canham calculations that use the same value of kc, namely 18 kcal/mol (Fiorin et al., 2019), but differ in the level of resolution used to quantify c(x, y), as indicated. Linear regressions of the data in each case (using points up to\u00a0~100 kcal/mol \u2013 dashed red lines) show that the Helfrich-Canham energies can be much larger, similar or somewhat smaller that the PMF values depending on the resolution used for this curvature evaluation. (B) Comparison of curvature evaluations carried out at different resolutions. Specifically, for each umbrella-sampling window we compute the root-mean-squared curvature across the whole bilayer plane and contrast different resolutions. Despite extensive simulation time, that\u00a0is 18 trajectories\u00a0\u00d7\u00a01 \u03bcs per window, the evaluation of the local membrane curvature is prone to large statistical errors (which propagate to the energy calculations) and ill-defined averages for moderate to low curvature values. By contrast, the PMFs curves shown in Figure 7 approximately converge after 1 \u03bcs of sampling per window. In our view, these ambiguities in the definition of membrane curvature and the appropriate value of the bending modulus highlight the merits of direct PMF calculations such as those shown in Figure 7.\n\n## Discussion\n\nOur simulations predict that the conformational cycle of GltPh induces a long-ranged remodeling of the surrounding lipid membrane, as a result of the elevator-like motion of the transport domains, each of which displaces its protein-lipid interface by about one-half the width of the bilayer hydrophobic core. Strikingly, this perturbation is abruptly suppressed at the point where the bilayer meets the trimerization domain; therefore, each protomer induces an independent deformation, consistent with existing experimental evidence demonstrating no protomer-protomer cooperativity in this class of transporters (Grewer et al., 2005; Koch and Larsson, 2005; Koch et al., 2007; Leary et al., 2007; Akyuz et al., 2013; Erkens et al., 2013; Akyuz et al., 2015; Ruan et al., 2017). These results provide a working hypothesis and as such require experimental verification; while direct structural data confirming the drastic effects that we predict here are still lacking, such information is not beyond reach. As demonstrated by recent structural studies of Ca2+-dependent lipid scramblases, single-particle cryo-EM can reveal the morphological features of detergent micelles and lipid nanodiscs in considerable detail (Falzone et al., 2018; Falzone et al., 2019; Kalienkova et al., 2019); crystallographic studies can also reveal the contours of the lipid bilayer, as observed for stacked membrane crystals of the SERCA Ca2+-ATPase pump (Sonntag et al., 2011). Analogous data for alternate conformational states of GltPh, or a close homolog thereof, ought to validate or refute the predicted impact of this transporter on the membrane morphology.\n\nSingle-molecule FRET measurements of substrate-loaded and substrate-free GltPh in outside-out proteoliposomes have indicated that the intrinsic free-energy difference between the outward- and inward-facing states of the transporter is approximately zero, that\u00a0is, both states are approximately equally populated (Akyuz et al., 2013; Erkens et al., 2013; Akyuz et al., 2015). Here, we have shown that the membrane deflection induced by inward-facing GltPh translates into a substantial energetic penalty, which we estimate to be in the order of 6\u20137 kcal/mol per protomer, or about 20 kcal/mol in total. To balance out this cost, therefore, the inward-facing conformation must somehow recoup this energy, through distinct protein-protein, protein-lipid and/or protein-water interactions. Admittedly, at this point we can only infer the magnitude of free-energy penalty from simulations where the Multi-Map method mimics the impact of the protein on the membrane. While imperfect, it is worth underscoring the technical breakthrough made by this approach: it provides a means to estimate the membrane energetics directly from simulated molecular-dynamics trajectories, without a priori theoretical assumptions. Thus, we believe that further methodological developments and systematic applications of this methodology, in combination with other enhanced-sampling techniques, will result in increasingly precise estimates, and will also enable us to dissect the compensating interactions that must occur in this and other membrane-protein systems. These caveats notwithstanding, we believe our estimate of the free-energy penalty of membrane bending not to be at all unrealistic. For example, based on electrophysiological studies of the gating mechanism of the Shaker voltage-gated K+ channel, it has been deduced that at zero membrane potential the conformational free-energy of the open state is about 15 kcal/mol lower than that of the closed state (Chowdhury and Chanda, 2012). Similarly, a value of 16 kcal/mol was deduced for the Na+-channel Nav1.4 (Chowdhury and Chanda, 2012). Regardless of the specifics, this study underscores that the configurational energetics of the lipid bilayer are non-negligible and must therefore be incorporated into the conceptual models and theories used to describe membrane-protein mechanisms \u2013 much in the same way one would consider, for example, the dehydration energetics of different ions (also in the order of tens of kcal/mol) when rationalizing the selectivity or conductance rates of a channel protein. It is hoped, therefore, that the calculations presented here will spur further biophysical studies designed to assess the impact of bilayer composition and morphology on the energetics of transporters \u2013 in analogy with research other membrane proteins such as receptors (Brown and Chawla, 2017) and channels (Phillips et al., 2009; Andersen, 2013). For example, it would be of interest to dissect how the functional dynamics of a transporter such as GltPh are influenced by the amino-acid make-up of the protein-lipid interface, as well as by lipid bilayer composition. Indeed, functional studies have shown that subtle lipid modifications (methylation) and single-point mutations (Tyr33) have detectable effects on the rates of GltPh transport (McIlwain et al., 2015). It is also intriguing that long-chain polyunsaturated fatty acids (PUFA) modulate the activity of neuronal EAAT transporters (Zerangue et al., 1995; Fairman et al., 1998; Tzingounis et al., 1998; Grintal et al., 2009) and are also known to influence the bending energetics of lipid bilayers (Cordero-Morales and V\u00e1squez, 2018).\n\nThe aforementioned smFRET studies have also indicated that the balance of outward- and inward-facing states hardly differs when measured in liposomes (containing mostly PE, PG and PC lipids) or in DDM micelles (Akyuz et al., 2015). Taken together with our findings, this observation challenges the notion that detergent micelles have no distinct morphological preference and will comply to the conformation of a protein at little or no energetic cost. To the contrary, when a detergent solution is concentrated above a certain threshold, the micelles that form have an inherently preferred geometry and size (Lipfert et al., 2007; Oliver et al., 2013), that\u00a0is, there exists a well-defined free-energy minimum of micelle formation. When a micelle assembles around a protein, one might expect that free-energy minimum to naturally shift, that\u00a0is, the micelle morphology will adapt to the volume and surface of the protein. However, this adaption is not necessarily identical for all conformations of a protein; indeed, one might expect that different free-energy minima will exist for alternative structural states (both in magnitude and morphology), and that this difference in will be greater for some detergents than for others. The expectation that the deformation of a micelle entails little or no energetic cost is even less intuitive if one assumes that the micelle does not reassemble when a protein changes structure. Indeed, the above-mentioned cryo-EM data for nhTMEM16 shows that a highly localized feature of the protein surface causes nearly identical morphological changes in a lipid nanodisc and in a DDM micelle, namely a perturbation that gradually decays along the protein perimeter (Kalienkova et al., 2019). If the DDM micelle was indeed much softer or more compliant than the lipid nanodisc, the resulting curvature would be more localized. Thus, on this matter too we believe our data highlights the need for further work probing how the thermodynamics of micellar or lipid solvation might depend on the conformational state of a protein, or on its oligomerization state.\n\nThe dynamics of GltPh at the single-molecule level have also been evaluated using high-speed AFM measurements in protein-dense 2D preparations (Ruan et al., 2017). These elegant measurements clearly confirmed that each protomer exchanges between outward- and inward-facing states stochastically (provided the adequate occupancy state) and independently from each other. Intriguingly, though, in these measurements the population ratio between outward- and inward-facing is shifted significantly against the latter, by about 5-fold (Ruan et al., 2017; Heath and Scheuring, 2019). A possible explanation for the discrepancy between the smFRET and AFM measurements is that the curvature of the outside-out proteoliposomes used in the former experiment favors the inward-facing state, while the flat membranes in the latter do not. However, our finding that the membrane perturbation caused by GltPh projects away from the protein surface for several nanometers provides an alternative explanation: transition to the inward-facing state would be more energetically costly when this deformation must occur in a more confined space. In other words, it is conceivable that the aforementioned balance between large, competing energetic contributions is altered as a result of molecular crowding, in this case favoring the outward-facing conformation. Interestingly, some members of the EAAT family are expressed in the membranes of certain cell types at very high densities (in the order of thousands of transporters per square-micron [Danbolt, 2001]), raising the possibility that crowding effects occur in physiological settings. On a related, more technical note, it is worth noting that molecular simulation studies aiming to evaluate the alternating-access mechanism and protein-lipid interplay for cases such as GltPh might be significantly skewed by finite-size effects if the lipid bilayer patch is not sufficiently large to accommodate the full range of the membrane perturbation created by the protein.\n\nLarge-scale structural changes are not exclusive to membrane proteins in the EAAT superfamily. Elevator-like secondary-active transporters are, however, appealing model systems to evaluate the interplay between proteins and the lipid bilayer, given the range of their motions and that these motions occur spontaneously and, in some cases, on time-scales amenable to single-molecule measurements like smFRET or high-speed AFM. As an example of another elevator-like mechanism, an initial analysis of the bacterial sodium-dicarboxylate symporter VcINDY is shown in Figure 8. VcINDY is a dimer, but is similar to GltPh in that each of the constituent protomers features two distinct domains, one facilitating dimerization and the other responsible for substrate translocation (Mancusso et al., 2012; Mulligan et al., 2016). Our simulations show that upon transition from the (predicted) outward-facing state to the (experimentally determined) inward-facing conformation, the transport domains would induce a deformation in the membrane that is comparable to that observed for GltPh. Again, this deformation is suppressed by the scaffold, suggesting that the protomers function independently. Despite the commonalities between GltPh and VcINDY, however, it is important to note that other elevator-like transporters, perhaps even those in the same structural family, might influence the membrane differently, as this interplay is ultimately determined by the amino-acid make-up of the protein surface. For example, it is entirely possible that, in some cases, the outward-facing state perturbs the membrane the most. To document and dissect this variability is no doubt of interest and will be the focus of future studies.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/50576/elife-50576-fig8-v2.jpg)\n\n**Figure 8.:** (A) Structure of the VcINDY dimer in the outward-facing state, viewed along the membrane perpendicular from the extracellular space. The protein is represented as GltPh in Figure 1. (B) Deflection of the membrane mid-plane induced by VcINDY in the outward- and inward-facing states (left and right, respectively) based on three independent simulations for either state. The view is from the extracellular space. From left to right, the standard error of the data (N\u00a0=\u00a03) across each map is, on average, 1.0 \u00c5 and 0.8 \u00c5. (C) Structures of outward- and inward-facing VcINDY (represented as in panel A), alongside calculated density maps for lipid alkyl chains within 10 \u00c5 from the protein surface (yellow), based on all the simulation data obtained for either state. Note the outward-facing state is a model, constructed on the basis of the experimental inward-facing\u00a0structure\u00a0through repeat-swapping (Mulligan et al., 2016).\n\nGltPh and VcINDY are stark examples of membrane proteins that cause large-scale morphological changes in the bilayer. Needless to say, numerous channels and transporters also undergo major conformational changes during function, which might impact the membrane to varying degrees. The computational analysis presented here makes it clear that the inherent configurational energetics of the lipid bilayer can be both non-negligible and markedly state-dependent, and must therefore be integrated in our conceptualizations of membrane protein mechanisms.\n\n## Materials and methods\n\n### Coarse-grained simulations of GltPh trimers and VcINDY dimers\n\nFour different conformational states of the GltPh transporter were simulated using a coarse-grained (CG) representation of the protein and its environment, using the MARTINI 2.1 forcefield (Marrink et al., 2007). Symmetric trimers of outward- and inward-facing conformers were obtained from X-ray crystal structures (PDB 2NWL and 3KBC, respectively Boudker et al., 2007; Reyes et al., 2009). These differ primarily in the position of the transport domains (defined here as residues 74\u2013129 and 223\u2013416), relative to the central oligomerization domain, or scaffold (residues 6\u201373 and 120\u2013222). Two asymmetric trimers were also considered, combining two outward- and one inward-facing protomer, or two inward- and one outward-facing protomer. These intermediates were constructed by superposing the scaffold domain of individual protomers from the inward-facing structure onto the trimer with all protomers outward-facing. All four states of the transporter were embedded in a hydrated bilayer of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) lipids, to evaluate the morphological adaption of the membrane to the protein conformation. The conformation of each state was maintained throughout the simulations by applying a network of harmonic distance restraints to a pre-defined set of pairs of non-bonded protein atoms. This set comprises all pairs of backbone atoms separated by a distance between 5 and 9 \u00c5; the force constant of these elastic restraints is 1.2 kcal/mol \u00c5\u22122. The protein-membrane systems include\u00a0~7500 lipids and\u00a0~170,000 solvent molecules, for a total of\u00a0~260,000 particles. The dimensions of the simulation systems are approximately 500 \u00d7 500 \u00d7 120 \u00c5.\u00a0Counter-ions were added to the solvent to neutralize the total charge of all molecular systems.\n\nAll CG simulations were carried out using GROMACS 4.5.5 (Hess et al., 2008), with a 10-fs integration time-step. Temperature and pressure were maintained constant using the Berendsen barostat and thermostat (Berendsen et al., 1984). The pressure (one atm) was applied semi-isotropically, that\u00a0is X and Y dimensions (the bilayer plane) fluctuate but at constant X/Y ratio, while fluctuations in Z are independent. Unless specified otherwise, the pressure components Pxx, Pyy and Pzz were such that the resulting membrane tension is zero. Periodic boundary conditions were used. Non-bonded interactions were described by a shifted Lennard-Jones potential, cut-off at 12 \u00c5, and by a Coulombic potential with relative dielectric constant \u03b5r = 15.\n\nFor each GltPh state, we calculated three independent trajectories of 600 ns. Analogous, triplicated simulations of 600 ns were also carried out for all-inward GltPh in a bilayer of 1,2-dipalmitoyl-sn-glycero-3-phosphocholine (DPPC) lipids at 323 K; in a mixed bilayer of 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine (POPE) lipids and 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (POPG) lipids in a 2:1 ratio, at 298K; and in a bilayer of POPE lipids, also at 298 K. Triplicated simulations of 600 ns were also carried out for all-inward GltPh in POPC at 298 K under applied membrane tensions of 1, 5 and 10 mN/m. Finally, triplicated simulations of 600 ns each were carried out for the Na+-dicarboxylate transporter VcINDY, in POPC at 298 K, in both outward- and inward-facing conformations; the latter\u00a0corresponds to the experimentally determined X-ray structure (PDB 5ULD,\u00a0Nie et al., 2017 ) while the former is a computational model (Mulligan et al., 2016).\n\n### All-atom simulations in all-inward GltPh\n\nFor the all-inward state (with all three GltPh protomers inward-facing) we also calculated three independent trajectories of 150 ns each, using an all-atom representation of the molecular system. The starting coordinates for each of these simulations were obtained from selected snapshots of the three independent CG simulations carried out for the all-inward state in DPPC. Specifically, we chose those snapshots in which the instantaneous shape of the membrane mid-plane showed the lowest RMS deviation from\u00a0the shape calculated by averaging all trajectory data for this all-inward state. Using an all-atom model of the protein derived from the crystal structure (PDB 3KBC), the surrounding (coarse-grained) membrane and solvent were transformed into an all-atom representation as prescribed elsewhere (Wassenaar et al., 2014), and equilibrated through a series of simulations implementing positional restraints. The final models comprise\u00a0~3,000,000 atoms. The all-atom simulations were carried out using NAMD version 2.9 (Phillips et al., 2005). The CHARMM36 force field (Klauda et al., 2010; Best et al., 2012) was used for the protein and the lipids, while the TIP3P model was adopted for the water (Jorgensen et al., 1983). To preserve the conformation of the protein, a restraint was applied to the RMSD of the C\u03b1 trace, relative to the experimental structure, of force constant 100 kcal/mol \u00c5\u22122. The simulations were carried out at constant temperature (323 K), using a Langevin thermostat, and constant semi-isotropic pressure (one atm), using the Nos\u00e9-Hoover-Langevin barostat, with periodic boundaries. The integration time-step was 2 fs. Electrostatic interactions were calculated using Particle-Mesh Ewald with a real space cut-off of 12 \u00c5. The same cut-off was also used for the shifted Lennard-Jones potential describing van der Waals interactions.\n\n### Energetics of polar/hydrophobic solvation\n\nThe molecular systems depicted in Figure 6A show two membrane states: one deformed, and identical to that observed in our simulations (Figure 5A), and a hypothetical version thereof with the same thickness (16 \u00c5) but flat; both membranes are aligned at the scaffold. (In this context, \u2018membrane\u2019 refers to the solvent-excluded region of the bilayer). For each of these two systems, we calculated the solvent-accessible surface area (SASA) for each of the protein residues i, denoted by Abent(i) and Aflat(i), using PyMol (Schr\u00f6dinger, Inc) and a probe radius of 1.4 \u00c5. A SASA value denoted as Amax(i) was also calculated for each amino-acid type when fully solvent-exposed in a GXG tri-peptide. The per-residue change in the free-energy of polar/hydrophobic solvation (Figure 6B) was then calculated as \u03b4Gsol(i)\u00a0=\u00a0Stransfer(i) \u00d7 [ Aflat(i) \u2013 Abent(i)\u00a0]\u00a0/\u00a0Amax(i), where Stransfer(i) are identical for residues of the same type, and derive from two independent hydrophobicity scales: one based on experimental measurements of the stability of wild-type and mutagenized OMPLA, referred to as the Fleming scale (Moon and Fleming, 2011); and another based on PMF calculations of side-chain analog insertion in a DOPC bilayer, referred to as the Tieleman scale (MacCallum et al., 2007). For His, Gly and Pro, which lack values in the latter scale, values from the Fleming scale were used in both calculations.\n\n### Coevolutionary analysis\n\nThe Uniprot sequence GLT_PYRHO was used as input to the EVcouplings server (Marks et al., 2011) with default parameters. The results can be considered to be robust because the ratio of effective sequences in the alignment (9565 sequences obtained using a bit-score threshold of 0.3) to the length of the protein sequence is\u00a0>20. To limit our search to reliable scores, we focused on pairs whose scores have coupling probabilities greater than 0.5, which\u00a0comprises the top 0.8% of all possible pairs. To identify positions that co-evolved in order to maintain interactions with the lipid head groups, we focused on pairs involving at least one residue known to H-bond with lipids in the all-atom simulations of GltPh (Figure 5C). Pairs were excluded if they contained buried residues, or residues exposed only to the central aqueous vestibule, or were less than eight residues apart in sequence, that\u00a0is within two turns of a helix. The remaining pairs were assigned to a cluster if at least one residue was involved in more than one pair in that cluster.\n\n### Potential-of-mean-force (PMF) calculations\n\nThe recently developed Multi-Map method (Fiorin et al., 2019) was used to compute the free-energy cost of a membrane deformation that is similar to that induced by all-inward GltPh, but in the absence of the protein. To this end, a set of 10 three-dimensional density maps that idealize this deformation but vary in its amplitude were generated and used to define the so-called Multi-Map coordinate \u03be. This variable quantifies the similarity between any instantaneous configuration of the membrane and each of the density maps in the target set. Biased-sampling of the Multi-Map coordinate \u03be thus perturbs the membrane as dictated by the set of target maps and permits a derivation of the corresponding free-energy cost as a function of the deformation amplitude, that\u00a0is, the potential of mean force (Fiorin et al., 2019). This technique was applied to a CG bilayer of 1,800 POPC molecules (side length of approx. 230 \u00c5), using a developmental version of NAMD (Phillips et al., 2005) and analogous pressure and temperature conditions as those specified above. Umbrella-sampling was employed as the biasing method; the target range in \u03be was divided into 61 windows, and 18 simulations of 1 \u03bcs each were carried out to sample \u03be in each window. The PMF was calculated on the basis of the resulting time-series of \u03be, using the WHAM method (Kumar et al., 1992). To examine the effect of membrane tension, analogous umbrella-sampling simulations and PMF curves were calculated under applied tensions of 1 and 10 mN/m.\n",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "015dcf37-a289-4b87-a8f1-c60bdb148329",
+      "submission_id": "eb49034a-f722-423c-acf7-164b09700404",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Ben-Tal, Tel Aviv University Israel\n\nReviewers:\n- Nir Ben-Tal, Tel Aviv University Israel\n- Simon Scheuring, Weill Cornell Medical College United States\n\n## Review text\n\nDOI: [10.7554/eLife.50576.sa1](https://doi.org/10.7554/eLife.50576.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nConventional molecular dynamics simulations and a new enhanced sampling method, presented in another paper (in J Comp Chem), were used to examine the extent of lipid perturbation due to conformational changes of the Na+-aspartate symporter GltPh. This transporter, which follows the 'elevator mechanism', undergoes particularly large conformational changes upon substrate transport; the transition between the outward-facing and inward-facing conformations involves a 15Ang motion of the transport domain with respect to the stationary domain of the protein. Their simulations suggested that this transition radically perturbs the lipid bilayer, which is expected. However, very surprisingly, it leads to a large free energy penalty of about 20 kcal/mol, which of course needs to be balanced by internal components of the free energy. The manuscript addresses a fundamental and very interesting question in membrane biophysics.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Large-scale state-dependent membrane remodeling by a transporter protein\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Nir Ben-Tal as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Simon Scheuring (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nA new enhanced sampling simulation method, presented in another paper (in review with J Comp Chem), is used to examine the extent of lipid perturbation due to conformational changes of the Na+-aspartate symporter GltPh. This transporter, that typifies the 'elevator mechanism', undergoes particularly large conformational changes upon substrate transport; the transition between the outward-facing and inward-facing conformations involves a 15 Ang motion of the transport domain with respect to the stationary domain of the protein. The simulations suggest that this transition radically perturbs the lipid bilayer, which is expected. However, very surprisingly, it leads to a large free energy penalty of about 20 kcal/mol (which of course needs to be balanced by internal components of the free energy).\n\nOpinion:\n\nThe manuscript addresses a fundamental and very interesting question in membrane biophysics. In this respect it is very suitable for publication in eLife. The problem is that it is unclear how trustworthy this large estimate is. The following suggestions may increase the credibility of the manuscript.\n\nEssential revisions:\n\n1) The in-plane distributions of the membrane deformations predicted by the simulations are inaccessible for experimental verifications. Moreover, the character of these deformations (types of strains in the case of 3D description or bending/stretching/chain tilting for a 2D description of the membrane) is not determined.\n\n2) \"In a recent breakthrough, we have developed and validated a promising free-energy simulation strategy to address this problem, which we refer to as Multi-Map (Fiorin, 2019)\". The Fiorin paper is not in review here so we will not comment about it in detail. However, the draft that is included does not consolidate this bold statement. To our understanding it shows that the new formalism converges to the Helfrich-Canham theory and agrees with measurements at long distances (100Ang and more), as it should. However, we did not see any comparison regarding short distances which are relevant here. This statement should be removed.\n\n3) The authors dismiss the Helfrich-Canham theory and its extensions, arguing that they do not hold for short distances. And yet, it would be insightful for the reader to know what values this approximate model and its extensions give for GltPh. At the very least it would indicate how high the 20 kcal/mol value is compared to existing theory.\n\n4) The derived energies of the membrane deformations, which could be indeed important for understanding the effects of the membrane lipid composition on the protein function, are not supported by any independent estimations and remain, therefore, completely dependent on the parameters of the computational model (forcefield parameters), and other details of the simulations. The authors should admit to it or provide experimental measurements.\n\n5) No analysis is provided either of the effects of membrane tension, which may dramatically change the protein-mediated deformations and their distribution, or of the presence in the membrane of specific lipids such as cholesterol, PIPs, DAGs, etc, whose redistribution to the protein vicinity may moderate the elastic energy. This decreases the general impact of the results.\n\n6) Evidently, the authors are aware of the exceedingly high energy penalty due to lipid perturbation and try to explain it in Discussion. However, the arguments raised are not compelling. Thus, the tune of the manuscript should reflect the fact that all we have here is a computation that may or may not be correct.\n\n7) Introduction, third paragraph: The question is nicely set between (1) \"moving polar sidechains on their surface into the bilayer interior and exposing hydrophobic ones to the solvent\" and (2) \"the morphology of the lipid bilayer could adapt to the conformational state of the protein, and match the amino-acid make-up of the protein surface\". The authors obviously come to the conclusion that the latter (2) is the case. However, at a considerable (20kcal/mol) cost. Given that the structure of all conformations are known, the authors should provide an estimate of the energetic cost for the rejected hypothesis (1).\n\nThe simulations:\n\n8) The boundary conditions imposed on the membrane fragment are not specified. At the same time, in the absence of membrane tension, which seems to be the case here, the effects of the boundary conditions might be substantial.\n\n9) The method is based on combining coarse-grained and all-atom simulations, which can be tricky. In particular, for the all-atom simulations, the authors take the course-grained system they simulated and convert it to all-atom, while also (naturally) changing force-fields. Then they let the system relax and report that the trends observed are consistent with the course-grain simulations. It is theoretically possible that transitioning the system from the course-grained to the all-atom parameters is not that trivial, and maybe the fact that they start from an already equilibrated state introduces some bias. Could it be examined somehow?\n\n10) It is unfortunate that DPPC (transition temperature 41C) was chosen for many simulations. Why? Also, simulations using POPC (transition temperature -2C) are shown. The fact that the results are quasi identical seems rather worrying than comforting. Why these choices? Why not using a mixture, it is not unthinkable that in a mixture the protein would recruit specific lipids on these interfaces between transporter and scaffold domains. Please comment. Or, better, examine in simulations.\n\nPresentation:\n\n11) Introduction: \"These perturbations develop to accommodate the amino-acid composition and specific structural features of the protein surface.\": This deserves a reference to the Piezo channel, the only protein that displays clear structural features that force the membrane into bending, and for which a theory and experiments about how membrane bending (and flattening / the physics of the membrane) is exploited to gate the channel was presented.\n\n12) The general reader might not know what the second-rank order parameter of the lipid alkyl chains is.\n\n13) Figure 2, Figure 3 and associated, in the context of \"Transport domains bend the membrane, while scaffold domains anchor it\": While we understand the measurements, the results and the importance of all these results, the presentation is unclear with respect to the setting of the 0-level. From the captions \"2(A) The deflection is quantified by calculating the mean value of the Z coordinate of the bilayer across the X-Y plane.\" and \"(A) Deflection of the membrane mid-plane relative to a flat surface\". For example, the image in 3A), all the membrane has negative deformation. Wouldn't that correspond to creation of a net elastic and potential energy? Shouldn't the bilayer as a whole still go towards flat and as a result one has negative deformation next to the transporter domains and positive deformation next to the scaffold domain. This does not change anything to the results in terms of local deformation, right? Is the bilayer held in place at the periphery of the simulation box?\n\n14) Further on this: Why is the scaffold domain considered the 'anchor'? Why does the membrane next to the transporter domains (that are in the inward (down) orientation) move down, rather than the scaffold domain moving upwards? Overall \u2013 after sufficiently long relaxation of the all-inward structure \u2013 shouldn't the overall level of the membrane remain 0 and the membrane next to the transporter domains shift downwards, but the membrane next to the scaffold domains shift upwards? Especially, in light of Figure 3C, which seems to show that there are many more key amino acids in the transporter than in the scaffold domain, one would expect that the transport domain dominates the relative motion. It is unclear how in panels like Figure 2A left, 2A right, Figure 3A, all membrane deformation values can be positive or negative? Is this the reason why such huge energy penalties result from the analysis?\n\n15) Discussion section: The authors find a large energetic penalty for the inward facing state due to membrane deformation. They note that the smFRET studies displayed almost zero energy difference between the states. In contrast the HS-AFM study revealed that the inward facing state indeed was the high energy state (like here). The authors mention that the HS-AFM study was performed in rather densely packed membrane where no such long range lipid relaxations are possible as in the study here, yet it is a flat membrane. In this context, it is also noticeable that the smFRET studies are performed either in detergent or on transporters in small vesicles that are tethered in outside-out configuration only \u2013 which goes against the bowl-shaped structure of GltPh \u2013 of which the authors see the preference for membrane bending in Figure 1 (side view), which might favor the adoption of the inward-facing state in the smFRET experiments.\n",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "86eda56b-d22e-470b-afe5-e74ad50fca40",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C1",
+      "claim": "Channels and transporters can influence membrane morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "That channels and transporters can influence the membrane morphology is increasingly recognized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract, representing current scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "e7f647b7-75d2-4952-bc45-9facd46cbe75",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C2",
+      "claim": "The extent and free-energy cost of membrane deformations likely varies among different functional states of a protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Less appreciated is that the extent and free-energy cost of these deformations likely varies among different functional states of a protein, and thus, that they might contribute significantly to defining its mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis or inference based on the authors' reasoning about protein-membrane interactions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "5e29aa9f-da12-44d7-ab2f-c34e55941ba6",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C3",
+      "claim": "Membrane deformations might contribute significantly to defining a protein's mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Less appreciated is that the extent and free-energy cost of these deformations likely varies among different functional states of a protein, and thus, that they might contribute significantly to defining its mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the functional importance of membrane deformations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "b3be0533-119b-4aef-8ce4-62eee1c4df84",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C4",
+      "claim": "GltPh is a homolog of an important class of neurotransmitter transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "We consider the trimeric Na+-aspartate symporter GltPh, a homolog of an important class of neurotransmitter transporters, whose mechanism entails one of the most drastic structural changes known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GltPh's relationship to neurotransmitter transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "12a90cd0-2e8a-4dd7-ad1b-b885334a8337",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C5",
+      "claim": "GltPh's mechanism entails one of the most drastic structural changes known.",
+      "claim_type": "EXPLICIT",
+      "source": "We consider the trimeric Na+-aspartate symporter GltPh, a homolog of an important class of neurotransmitter transporters, whose mechanism entails one of the most drastic structural changes known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization based on existing structural knowledge of GltPh.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "0102f927-4e3b-4066-b508-15e9bd0bc230",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C6",
+      "claim": "When GltPh protomers become inward-facing, they cause deep, long-ranged, and mutually-independent membrane deformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular simulations indicate that when the protomers become inward-facing, they cause deep, long-ranged, and yet mutually-independent membrane deformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "4a3ba06b-8506-447f-9766-8a8118911ecb",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C7",
+      "claim": "The free-energy cost of the membrane perturbation caused by inward-facing GltPh is in the order of 6\u20137 kcal/mol per protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a novel simulation methodology, we estimate that the free-energy cost of this membrane perturbation is in the order of 6\u20137 kcal/mol per protomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative estimate derived from Multi-Map free-energy simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "da7a1016-f856-4d68-b521-a7da7b5acc95",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C8",
+      "claim": "Compensating free-energy contributions within the protein or its environment must stabilize the inward-facing conformation for the transporter to function.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensating free-energy contributions within the protein or its environment must thus stabilize this inward-facing conformation for the transporter to function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the calculated energetic penalty and the known functionality of the transporter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "a311c199-1e55-4693-a643-2332ebbd3c37",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C9",
+      "claim": "Integral membrane proteins can alter membrane curvature or thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, they might alter its curvature or thickness, or foster the enrichment or depletion of specific types of lipid in their vicinity (Lee, 2004; Andersen and Koeppe, 2007; Marsh, 2008; Phillips et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "ca08b5e1-90d0-411c-806a-42712a0396a0",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C10",
+      "claim": "Membrane proteins can foster the enrichment or depletion of specific types of lipid in their vicinity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, they might alter its curvature or thickness, or foster the enrichment or depletion of specific types of lipid in their vicinity (Lee, 2004; Andersen and Koeppe, 2007; Marsh, 2008; Phillips et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "75fed4e0-9e26-4d4d-87c1-8d830cf7bd67",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C11",
+      "claim": "Membrane perturbations develop to accommodate the amino-acid composition and specific structural features of the protein surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These perturbations develop to accommodate the amino-acid composition and specific structural features of the protein surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle based on established understanding of protein-membrane interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "15ed150b-3208-485c-b477-badb9cbe61e8",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C12",
+      "claim": "Most membrane perturbations entail an energetic or entropic cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Because most membrane perturbations entail an energetic or entropic cost, it seems reasonable to expect that the bilayer contributes to the thermodynamics and kinetics of these processes, favoring or disfavoring specific structural states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on thermodynamic principles and general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "d2e1953d-ab28-4d8a-8fd6-0fc31ccf9084",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C13",
+      "claim": "The bilayer contributes to the thermodynamics and kinetics of protein processes, favoring or disfavoring specific structural states.",
+      "claim_type": "EXPLICIT",
+      "source": "Because most membrane perturbations entail an energetic or entropic cost, it seems reasonable to expect that the bilayer contributes to the thermodynamics and kinetics of these processes, favoring or disfavoring specific structural states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on thermodynamic reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "a32feb11-c9de-498e-9496-e58ad1103ca5",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C14",
+      "claim": "Changes in lipid bilayer composition can have a determining effect on protein function.",
+      "claim_type": "EXPLICIT",
+      "source": "Such interdependence would help explain why changes in lipid bilayer composition, either resulting from natural regulatory mechanisms or induced artificially, can have a determining effect on protein function (Jensen and Mouritsen, 2004; Andersen and Koeppe, 2007; Denning and Beckstein, 2013; Cordero-Morales and V\u00e1squez, 2018; Haselwandter and MacKinnon, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "2a1df276-0359-4e10-9b34-fc13bb1bd5e9",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C15",
+      "claim": "GltPh is a Na+-aspartate symporter from Pyrococcus horikoshii.",
+      "claim_type": "EXPLICIT",
+      "source": "We specifically focus on the Na+-aspartate symporter GltPh from Pyrococcus horikoshii, a member and model system of the Excitatory Amino-Acid Transporter (EAAT) family, which includes the human SLC1 neurotransmitter transporters (Gether et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established factual information about GltPh with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "94e026a3-6f8f-45d6-855e-d6e4d342df18",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C16",
+      "claim": "GltPh is a member and model system of the Excitatory Amino-Acid Transporter (EAAT) family.",
+      "claim_type": "EXPLICIT",
+      "source": "We specifically focus on the Na+-aspartate symporter GltPh from Pyrococcus horikoshii, a member and model system of the Excitatory Amino-Acid Transporter (EAAT) family, which includes the human SLC1 neurotransmitter transporters (Gether et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "1f580eba-dc2e-4486-b90c-f7db2567cb51",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C17",
+      "claim": "The EAAT family includes the human SLC1 neurotransmitter transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "We specifically focus on the Na+-aspartate symporter GltPh from Pyrococcus horikoshii, a member and model system of the Excitatory Amino-Acid Transporter (EAAT) family, which includes the human SLC1 neurotransmitter transporters (Gether et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "e6b9ceee-a105-4a80-9cc3-224477d7c80f",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C18",
+      "claim": "Secondary-active transporters like GltPh interconvert between two major conformational states that alternately expose binding sites for ions and substrate to either side of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary-active transporters like GltPh interconvert between two major conformational states that alternately expose binding sites for ions and substrate to either side of the membrane (Figure 1) (Jardetzky, 1966; Reyes et al., 2009; Boudker and Verdon, 2010; Forrest et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about the alternating access mechanism, supported by citations and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "d681ed81-2a7d-4afc-bd62-3f4a9941f54a",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C19",
+      "claim": "In GltPh, conformational interconversion takes place only when Na+ and aspartate occupy the transporter or when the transporter is empty.",
+      "claim_type": "EXPLICIT",
+      "source": "In GltPh, this conformational interconversion takes place only when Na+ and aspartate occupy the transporter or when the transporter is empty (Yernool et al., 2004; Boudker et al., 2007; Ryan et al., 2009), which defines this protein as a co-transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GltPh's mechanism, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "b4bc33f4-de8e-423b-aed0-65d925eccb16",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C20",
+      "claim": "GltPh is defined as a co-transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "In GltPh, this conformational interconversion takes place only when Na+ and aspartate occupy the transporter or when the transporter is empty (Yernool et al., 2004; Boudker et al., 2007; Ryan et al., 2009), which defines this protein as a co-transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the occupancy-dependent conformational changes.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "ea0d1752-9f80-45f6-aafb-1ddd66f420e3",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C21",
+      "claim": "For either occupancy state, the exchange between outward- and inward-facing conformations is spontaneous.",
+      "claim_type": "EXPLICIT",
+      "source": "For either occupancy state, the exchange between outward- and inward-facing conformations is spontaneous, that is it does not require an extrinsic electrochemical driving force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GltPh's conformational dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "869e2caf-4a98-4f5b-a1bb-da7566bbca8a",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C22",
+      "claim": "The relative populations of GltPh conformational states depend on the membrane potential and the relative concentrations of ions and substrates on either side of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relative populations of these conformational states and the net directionality of the transport cycle do depend on the membrane potential and the relative concentrations of ions and substrates on either side of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the thermodynamic coupling in transport.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "fa444e81-730f-43e4-bfcd-041130a670f7",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C23",
+      "claim": "Downhill translocation of Na+ will power uphill transport of aspartate in GltPh, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "This dependence is why downhill translocation of Na+ will power uphill transport of aspartate, and vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the coupling mechanism of secondary active transport.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "6f5ad070-fa13-4553-b78c-7f1b262dc9d0",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C24",
+      "claim": "GltPh forms a homotrimer.",
+      "claim_type": "EXPLICIT",
+      "source": "GltPh forms a homotrimer (Yernool et al., 2004); yet, each protomer works independently from its neighbors (Akyuz et al., 2013; Erkens et al., 2013; Akyuz et al., 2015; Ruan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "c1768be4-6ddc-4451-90b4-a302c7151235",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C25",
+      "claim": "Each GltPh protomer works independently from its neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "GltPh forms a homotrimer (Yernool et al., 2004); yet, each protomer works independently from its neighbors (Akyuz et al., 2013; Erkens et al., 2013; Akyuz et al., 2015; Ruan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple experimental studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "27472b97-a20c-4b46-8221-8007e197c15b",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C26",
+      "claim": "GltPh protomers consist of two distinct units: the scaffold domain and the transport domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The protomers consist of two distinct units: the scaffold domain, which provides a stable trimerization interface (Groeneveld and Slotboom, 2007; Verdon and Boudker, 2012; Georgieva et al., 2013; H\u00e4nelt et al., 2013), and the transport domain, which encapsulates the ion and aspartate binding sites (Yernool et al., 2004; Reyes et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "bf471389-a52b-419d-9ed2-f5762ab27f09",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C27",
+      "claim": "The scaffold domain provides a stable trimerization interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The protomers consist of two distinct units: the scaffold domain, which provides a stable trimerization interface (Groeneveld and Slotboom, 2007; Verdon and Boudker, 2012; Georgieva et al., 2013; H\u00e4nelt et al., 2013), and the transport domain, which encapsulates the ion and aspartate binding sites (Yernool et al., 2004; Reyes et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "d223988a-e3ad-4215-9f59-fa161a0162a2",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C28",
+      "claim": "The transport domain encapsulates the ion and aspartate binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The protomers consist of two distinct units: the scaffold domain, which provides a stable trimerization interface (Groeneveld and Slotboom, 2007; Verdon and Boudker, 2012; Georgieva et al., 2013; H\u00e4nelt et al., 2013), and the transport domain, which encapsulates the ion and aspartate binding sites (Yernool et al., 2004; Reyes et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "16177ef3-b7ce-4d7f-8192-57d65dcef7c4",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C29",
+      "claim": "Both scaffold and transport domains are exposed to the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Both domains are exposed to the lipid bilayer, but structures of GltPh in outward- and inward-facing states clearly reveal that it is the movement of the latter domain that results in alternating access (Yernool et al., 2004; Reyes et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "b2ad8f31-aa03-4a08-809f-6c1aa855e1cc",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C30",
+      "claim": "It is the movement of the transport domain that results in alternating access in GltPh.",
+      "claim_type": "EXPLICIT",
+      "source": "Both domains are exposed to the lipid bilayer, but structures of GltPh in outward- and inward-facing states clearly reveal that it is the movement of the latter domain that results in alternating access (Yernool et al., 2004; Reyes et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "a0bbea86-66c2-4bc6-9355-b0cd8fcef063",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C31",
+      "claim": "Each transport domain moves perpendicularly to the membrane mid-plane by approximately 15 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, if one assumes that the scaffold domains remain stationary relative to the membrane mid-plane, each transport domain would move perpendicularly to that plane by approximately 15 \u00c5, that is about one-third of the total bilayer width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative structural observation based on comparison of crystal structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "13006287-caec-4c6c-9158-7dbadc14c5cc",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C32",
+      "claim": "The transport domain movement of approximately 15 \u00c5 is about one-third of the total bilayer width.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, if one assumes that the scaffold domains remain stationary relative to the membrane mid-plane, each transport domain would move perpendicularly to that plane by approximately 15 \u00c5, that is about one-third of the total bilayer width.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison based on structural data and membrane dimensions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "63b942cb-b4bf-402c-96c7-dff9ff5bc812",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C33",
+      "claim": "Experimental studies of the GltPh homolog EAAT2 show that bilayer-facing regions in the outward-facing state are similarly solvent-accessible throughout the transport cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental studies of the GltPh homolog EAAT2 also appear to show that bilayer-facing regions in the outward-facing state are similarly solvent-accessible throughout the transport cycle (Silverstein et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental evidence from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "b600b87f-6ae3-4ed1-aa55-3c3a2d6912dc",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C34",
+      "claim": "For the all-outward state of GltPh, the membrane is only modestly perturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "For the state with all three protomers in the outward-facing conformation, we found the membrane to be only modestly perturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the coarse-grained molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "eb93c49d-8af3-475c-938b-0875bc975c34",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C35",
+      "claim": "In the all-outward state, the membrane mid-plane is elevated by 3\u20134 \u00c5 near the transport domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This perturbation is maximal in the vicinity of the transport domains, where the membrane mid-plane is elevated by 3\u20134 \u00c5; near the scaffold, however, the elevation is only ~2 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "97502291-33a4-4376-909c-ade8a9feb6c4",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C36",
+      "claim": "In the all-outward state, the membrane mid-plane elevation near the scaffold is only ~2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "This perturbation is maximal in the vicinity of the transport domains, where the membrane mid-plane is elevated by 3\u20134 \u00c5; near the scaffold, however, the elevation is only ~2 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "b90f6640-8b1b-4f89-a15f-337a5e05890f",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C37",
+      "claim": "When one, two or all three transport domains are in the inward-facing state, a major morphological impact on the surrounding membrane is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, for the cases in which one, two or all three transport domains are in the inward-facing state, we observe a major morphological impact on the surrounding membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the coarse-grained molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "64020d10-c26f-4394-8145-eb89b806f036",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C38",
+      "claim": "The displacement of the transport domain causes a ~10 \u00c5 depression in the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observe that the displacement of the transport domain causes a ~ 10 \u00c5 depression in the lipid bilayer, that is, about 50% of the width of its hydrophobic core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "76be2c5a-3fc6-406a-8695-d29ec35765b2",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C39",
+      "claim": "The membrane depression caused by the transport domain is about 50% of the width of the bilayer's hydrophobic core.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observe that the displacement of the transport domain causes a ~ 10 \u00c5 depression in the lipid bilayer, that is, about 50% of the width of its hydrophobic core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison based on simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "1314fd58-2f92-49b8-9246-135610fc6c0f",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C40",
+      "claim": "The membrane perturbation caused by inward-facing transport domains is remarkably long-ranged, extending radially for nearly 100 \u00c5 from the protein surface.",
+      "claim_type": "EXPLICIT",
+      "source": "This perturbation is also remarkably long-ranged, extending radially for nearly 100 \u00c5 from the protein surface (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the simulation data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "ca59e734-5b47-4723-810b-48cb80346ebc",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C41",
+      "claim": "The membrane perturbation is entirely confined to the interface with the transport domain and is abruptly terminated near the scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, along the perimeter of the protein, the perturbation is entirely confined to the interface with the transport domain, that is, it is abruptly terminated near the scaffold, where the membrane is again minimally depressed, by only about 1\u20132 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulation data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "62a20648-f2f0-4351-9ce7-c6f73e513235",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C42",
+      "claim": "Each transport domain causes an independent perturbation, largely identical and seemingly additive to that caused by the other protomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, comparison of intermediates with one or two protomers in the inward-facing state shows that each transport domain causes an independent perturbation, largely identical and seemingly additive to that caused by the other protomers, while in the vicinity of the scaffold domains the membrane remains largely unperturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparison of simulation data for different conformational states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "49b0e181-a930-45e6-bc00-8a2e2cf33d05",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C43",
+      "claim": "The MARTINI forcefield yields a reasonably accurate description of membrane elasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the coarse-grained MARTINI forcefield yields a reasonably accurate description of membrane elasticity (Marrink et al., 2004; Fiorin et al., 2019), the degree to which it also captures the specificity of bi-molecular interactions has been questioned (Javanainen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the MARTINI forcefield with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "b1188bfa-d99d-403c-9b2c-72f61dc608b2",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C44",
+      "claim": "The degree to which MARTINI captures the specificity of bi-molecular interactions has been questioned.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the coarse-grained MARTINI forcefield yields a reasonably accurate description of membrane elasticity (Marrink et al., 2004; Fiorin et al., 2019), the degree to which it also captures the specificity of bi-molecular interactions has been questioned (Javanainen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of the MARTINI forcefield with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "f36de27d-84ce-4cac-bbc9-8b543f2ef014",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C45",
+      "claim": "The results obtained with the all-atom representation recapitulate those obtained with the coarse-grained forcefield.",
+      "claim_type": "EXPLICIT",
+      "source": "Reassuringly, the results obtained with the all-atom representation recapitulate those obtained with the coarse-grained forcefield (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparison of all-atom and coarse-grained simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "5f548bc0-4c7c-4f39-b4c4-45a392d57da9",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C46",
+      "claim": "The deformations induced by the transport domains were sustained in both magnitude and range in all-atom simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Even after a suitable relaxation time following the change in forcefield (Figure 5\u2014figure supplement 1AB), and despite a significant number of exchanges between lipids in the bulk and near the protein surface (Figure 5\u2014figure supplement 1C), the deformations induced by the transport domains were sustained in both magnitude and range; the abrupt restoration of membrane shape at the scaffold-domain interface also continued to be observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from all-atom simulations shown in Figure 5 and its supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "907bf7bb-330d-4e65-a00d-c11c81caa7b4",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C47",
+      "claim": "The membrane adapts to the conformational state of the protein to preclude strongly hydrophilic side chains from penetrating the core of the bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "The complementary analyses described in Figure 5C and Figure 6 indicate that the membrane adapts to the conformational state of the protein to preclude strongly hydrophilic side chains from penetrating the core of the bilayer, while also avoiding exposure of hydrophobic portions of the protein surface to solvent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the simulation data shown in Figures 5C and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "273ace6b-7da0-46e3-ac6f-f228f4675672",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C48",
+      "claim": "The membrane adapts to avoid exposure of hydrophobic portions of the protein surface to solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "The complementary analyses described in Figure 5C and Figure 6 indicate that the membrane adapts to the conformational state of the protein to preclude strongly hydrophilic side chains from penetrating the core of the bilayer, while also avoiding exposure of hydrophobic portions of the protein surface to solvent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the simulation data shown in Figures 5C and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "92e32a44-ce1c-48ec-ad4a-b4750d43bcd4",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C49",
+      "claim": "The deformed state of the bilayer is stabilized by numerous hydrogen-bonding interactions between polar and aromatic residues and lipid headgroups.",
+      "claim_type": "EXPLICIT",
+      "source": "The deformed state of the bilayer also appears to be stabilized by numerous hydrogen-bonding interactions between polar and aromatic residues and lipid headgroups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the hydrogen bonding data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "d873fd9c-8941-4e9c-be79-5866f3b4f8e0",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C50",
+      "claim": "Arg105 and Lys230 would be fully dehydrated in the inward-facing conformation if the membrane did not bend inwards.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is apparent that Arg105 and Lys230, which face the extracellular solution in the outward-facing state (Figure 1), would be fully dehydrated in the inward-facing conformation were it not for the fact that the membrane bends inwards (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural analysis shown in Figures 1 and 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "da0c0a39-7e37-413b-a564-e50d5b2afc1d",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C51",
+      "claim": "Arg105 and Lys230 form highly persistent interactions with the phosphate and ester groups in the lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, these residues form highly persistent interactions with the phosphate and ester groups in the lipid bilayer (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the all-atom simulation data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "110c5e7d-9aa3-4251-bc25-3cea3925a6ac",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C52",
+      "claim": "A large number of hydrophobic residues on the intracellular side of the transport domain would be exposed to solvent if the membrane was unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, a large number of hydrophobic residues on the intracellular side of the transport domain would be exposed to solvent if the membrane was unchanged (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on structural analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "a9522ac2-cf25-4d9a-bc94-b8152850d758",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C53",
+      "claim": "H-bonding interactions extend to the scaffold, where they help anchor the bilayer in between adjacent transport domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this pattern of H-bonding interactions extends to the scaffold, where they appear to help anchor the bilayer in between adjacent transport domains, on both sides of the membrane (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the hydrogen bonding data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "e8a893ad-3d06-4d6e-b000-2f7cdf9fb1f5",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C54",
+      "claim": "Clear co-evolutionary relationships can be detected across GltPh homologs for several clusters of membrane-exposed residues that include those engaged in hydrogen-bonding with lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, clear co-evolutionary relationships can be detected across GltPh homologs for several clusters of membrane-exposed residues that include those engaged in hydrogen-bonding with lipids in our simulations (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from coevolutionary analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "91cfc29f-afc9-44c2-9c50-597fefd48767",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C55",
+      "claim": "The changes in membrane morphology induced by the conformational cycle of GltPh are dictated by the displacement of protein interfaces that have evolved to be closely matched with the chemical features of the membrane and the surrounding solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the changes in membrane morphology induced by the conformational cycle of GltPh thus appear to be dictated by the displacement of protein interfaces that have evolved to be closely matched with the chemical features of the membrane and the surrounding solvent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis and interpretation of multiple lines of evidence from the simulations and coevolutionary analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "3c074b56-a56a-4194-9995-71379f1e5c2d",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C56",
+      "claim": "Single-molecule FRET measurements indicate that the intrinsic free-energy difference between the outward- and inward-facing states of GltPh is approximately zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule FRET measurements of substrate-loaded and substrate-free GltPh in outside-out proteoliposomes have indicated that the intrinsic free-energy difference between the outward- and inward-facing states of the transporter is approximately zero, that is, both states are approximately equally populated (Akyuz et al., 2013; Erkens et al., 2013; Akyuz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental evidence from cited smFRET studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "485f2a06-c2a2-49f9-b6a7-03632ff5c2fe",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C57",
+      "claim": "Both outward- and inward-facing states of GltPh are approximately equally populated according to smFRET measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule FRET measurements of substrate-loaded and substrate-free GltPh in outside-out proteoliposomes have indicated that the intrinsic free-energy difference between the outward- and inward-facing states of the transporter is approximately zero, that is, both states are approximately equally populated (Akyuz et al., 2013; Erkens et al., 2013; Akyuz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental evidence from cited smFRET studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "91cbe23b-d43e-4016-b146-78b8bad44f31",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C58",
+      "claim": "The membrane deflection induced by inward-facing GltPh translates into a substantial energetic penalty of about 20 kcal/mol in total.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that the membrane deflection induced by inward-facing GltPh translates into a substantial energetic penalty, which we estimate to be in the order of 6\u20137 kcal/mol per protomer, or about 20 kcal/mol in total.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative estimate from the Multi-Map free-energy calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "50a5b5cd-c095-40ba-848c-bb7f587c837f",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C59",
+      "claim": "To balance out the energetic cost of membrane deformation, the inward-facing conformation must recoup this energy through distinct protein-protein, protein-lipid and/or protein-water interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "To balance out this cost, therefore, the inward-facing conformation must somehow recoup this energy, through distinct protein-protein, protein-lipid and/or protein-water interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on thermodynamic principles and the calculated energetic penalty.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "c93ffc55-0dcd-4b2d-879d-d866d8f3c707",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C60",
+      "claim": "Based on electrophysiological studies, the conformational free-energy of the open state of the Shaker voltage-gated K+ channel is about 15 kcal/mol lower than that of the closed state at zero membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, based on electrophysiological studies of the gating mechanism of the Shaker voltage-gated K+ channel, it has been deduced that at zero membrane potential the conformational free-energy of the open state is about 15 kcal/mol lower than that of the closed state (Chowdhury and Chanda, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental evidence from a cited electrophysiology study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "61a2b051-7d38-427d-b16a-7ae71c5d8e23",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C61",
+      "claim": "A value of 16 kcal/mol was deduced for the conformational free-energy difference in the Na+-channel Nav1.4.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a value of 16 kcal/mol was deduced for the Na+-channel Nav1.4 (Chowdhury and Chanda, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental evidence from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "26cf1314-8a93-4709-8881-646aa9dd13e7",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C62",
+      "claim": "The configurational energetics of the lipid bilayer are non-negligible and must be incorporated into conceptual models and theories used to describe membrane-protein mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the specifics, this study underscores that the configurational energetics of the lipid bilayer are non-negligible and must therefore be incorporated into the conceptual models and theories used to describe membrane-protein mechanisms \u2013 much in the same way one would consider, for example, the dehydration energetics of different ions (also in the order of tens of kcal/mol) when rationalizing the selectivity or conductance rates of a channel protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "0c8d0d28-8c4c-4d8f-981c-9a2af0cf6581",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C63",
+      "claim": "Functional studies have shown that subtle lipid modifications (methylation) and single-point mutations (Tyr33) have detectable effects on the rates of GltPh transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, functional studies have shown that subtle lipid modifications (methylation) and single-point mutations (Tyr33) have detectable effects on the rates of GltPh transport (McIlwain et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental evidence from a cited functional study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "44a9c9c0-793e-46d7-9e53-3d8ed841653a",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C64",
+      "claim": "Long-chain polyunsaturated fatty acids (PUFA) modulate the activity of neuronal EAAT transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also intriguing that long-chain polyunsaturated fatty acids (PUFA) modulate the activity of neuronal EAAT transporters (Zerangue et al., 1995; Fairman et al., 1998; Tzingounis et al., 1998; Grintal et al., 2009) and are also known to influence the bending energetics of lipid bilayers (Cordero-Morales and V\u00e1squez, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "cdc0c1dc-455e-452c-b472-604384b78293",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C65",
+      "claim": "PUFAs are known to influence the bending energetics of lipid bilayers.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also intriguing that long-chain polyunsaturated fatty acids (PUFA) modulate the activity of neuronal EAAT transporters (Zerangue et al., 1995; Fairman et al., 1998; Tzingounis et al., 1998; Grintal et al., 2009) and are also known to influence the bending energetics of lipid bilayers (Cordero-Morales and V\u00e1squez, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "47a357c7-27bb-49fd-b6fc-dae89c6fd9f2",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C66",
+      "claim": "The balance of outward- and inward-facing states of GltPh hardly differs when measured in liposomes or in DDM micelles.",
+      "claim_type": "EXPLICIT",
+      "source": "The aforementioned smFRET studies have also indicated that the balance of outward- and inward-facing states hardly differs when measured in liposomes (containing mostly PE, PG and PC lipids) or in DDM micelles (Akyuz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental evidence from a cited smFRET study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "e60aacfd-7c9c-4f39-b443-9cfddfbd6428",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C67",
+      "claim": "When a detergent solution is concentrated above a certain threshold, the micelles that form have an inherently preferred geometry and size.",
+      "claim_type": "EXPLICIT",
+      "source": "To the contrary, when a detergent solution is concentrated above a certain threshold, the micelles that form have an inherently preferred geometry and size (Lipfert et al., 2007; Oliver et al., 2013), that is, there exists a well-defined free-energy minimum of micelle formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about micelle formation with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "4113a80e-af8e-465a-95f0-b98cbd54bc08",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C68",
+      "claim": "There exists a well-defined free-energy minimum of micelle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "To the contrary, when a detergent solution is concentrated above a certain threshold, the micelles that form have an inherently preferred geometry and size (Lipfert et al., 2007; Oliver et al., 2013), that is, there exists a well-defined free-energy minimum of micelle formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about micelle thermodynamics with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "ddce343c-71cb-4481-b38a-1dcba6e62b56",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C69",
+      "claim": "Cryo-EM data for nhTMEM16 shows that a highly localized feature of the protein surface causes nearly identical morphological changes in a lipid nanodisc and in a DDM micelle.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the above-mentioned cryo-EM data for nhTMEM16 shows that a highly localized feature of the protein surface causes nearly identical morphological changes in a lipid nanodisc and in a DDM micelle, namely a perturbation that gradually decays along the protein perimeter (Kalienkova et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental evidence from a cited cryo-EM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "a24403cf-e520-4cfb-92c5-e8071d230815",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C70",
+      "claim": "High-speed AFM measurements confirmed that each GltPh protomer exchanges between outward- and inward-facing states stochastically and independently from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "These elegant measurements clearly confirmed that each protomer exchanges between outward- and inward-facing states stochastically (provided the adequate occupancy state) and independently from each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental evidence from cited AFM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "4ce33acc-6cb5-4a33-8689-4929f4b03f62",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C71",
+      "claim": "In AFM measurements, the population ratio between outward- and inward-facing states is shifted significantly against the latter, by about 5-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, though, in these measurements the population ratio between outward- and inward-facing is shifted significantly against the latter, by about 5-fold (Ruan et al., 2017; Heath and Scheuring, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental evidence from cited AFM studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "aebd38f7-981c-413c-b305-e840941582d4",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C72",
+      "claim": "Some members of the EAAT family are expressed in the membranes of certain cell types at very high densities (in the order of thousands of transporters per square-micron).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some members of the EAAT family are expressed in the membranes of certain cell types at very high densities (in the order of thousands of transporters per square-micron [Danbolt, 2001]), raising the possibility that crowding effects occur in physiological settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "ddff73fc-8ea2-4006-9dba-07fe4248f862",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C73",
+      "claim": "VcINDY is a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "VcINDY is a dimer, but is similar to GltPh in that each of the constituent protomers features two distinct domains, one facilitating dimerization and the other responsible for substrate translocation (Mancusso et al., 2012; Mulligan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "94bc98b0-f30c-413c-afb4-303a4fdb0fae",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C74",
+      "claim": "Each VcINDY protomer features two distinct domains, one facilitating dimerization and the other responsible for substrate translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "VcINDY is a dimer, but is similar to GltPh in that each of the constituent protomers features two distinct domains, one facilitating dimerization and the other responsible for substrate translocation (Mancusso et al., 2012; Mulligan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "d60bb756-35a2-43b8-b08c-ed800911d2c0",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C75",
+      "claim": "Upon transition from the outward-facing state to the inward-facing conformation, the VcINDY transport domains induce a membrane deformation comparable to that observed for GltPh.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations show that upon transition from the (predicted) outward-facing state to the (experimentally determined) inward-facing conformation, the transport domains would induce a deformation in the membrane that is comparable to that observed for GltPh.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from simulations of VcINDY shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "1a38876d-c6ff-40a3-87b3-c4bd697e40f3",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C76",
+      "claim": "The membrane deformation caused by VcINDY is suppressed by the scaffold, suggesting that the protomers function independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, this deformation is suppressed by the scaffold, suggesting that the protomers function independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation data for VcINDY shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "4b72166a-bca1-4f0d-ad15-e059c29bfcdd",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C77",
+      "claim": "The coarse-grained simulation systems for GltPh include ~7500 lipids and ~170,000 solvent molecules, for a total of ~260,000 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein-membrane systems include ~7500 lipids and ~170,000 solvent molecules, for a total of ~260,000 particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation system setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "4d76a661-f2f3-48a3-94ba-3080f095d1ac",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C78",
+      "claim": "The dimensions of the coarse-grained simulation systems are approximately 500 \u00d7 500 \u00d7 120 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimensions of the simulation systems are approximately 500 \u00d7 500 \u00d7 120 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation system setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "89e02b10-9d5f-4c70-83e6-251a4b902ce4",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C79",
+      "claim": "The all-atom simulation models for GltPh comprise ~3,000,000 atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The final models comprise ~3,000,000 atoms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the all-atom simulation system setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "7a1d22f4-9a99-4b0c-8ab2-04b98552254d",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C80",
+      "claim": "The trimerization domain is not completely static relative to the membrane throughout the alternating-access cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is interesting to note that our simulations show that the trimerization domain is not completely static relative to the membrane throughout the alternating-access cycle; as indicated in Figure 2D, we observe that the scaffold shifts by about 2 \u00c5 when the all-outward and all-inward states are compared.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the simulation data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "15d3fd22-e43c-475c-aa2c-21424954a97b",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C81",
+      "claim": "The scaffold shifts by about 2 \u00c5 when the all-outward and all-inward states are compared.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it is interesting to note that our simulations show that the trimerization domain is not completely static relative to the membrane throughout the alternating-access cycle; as indicated in Figure 2D, we observe that the scaffold shifts by about 2 \u00c5 when the all-outward and all-inward states are compared.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the simulation data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "db4440ea-8aa6-4c13-b169-e1c2c5b92078",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C82",
+      "claim": "The vertical displacement of the transport domains relative to the membrane is slightly larger than the ~15 \u00c5 that would be deduced from an overlay of the structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the vertical displacement of the transport domains relative to the membrane is slightly larger than the ~15 \u00c5 that would be deduced from an overlay of the structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed scaffold shift.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "b377dd52-4f0e-48a0-bd49-ddcc0675b801",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C83",
+      "claim": "The elastic properties of lipid bilayers, as quantified by their macroscopic bending modulus, are well described by MARTINI.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the elastic properties of lipid bilayers, as quantified by, for example, their macroscopic bending modulus, are well described by MARTINI, despite its inherent approximations (Marrink et al., 2004; Fiorin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the MARTINI forcefield with citation support.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "a63fd1fa-b2c4-465a-ba75-fba332297713",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C84",
+      "claim": "Similar membrane deformation results were obtained in simulations with applied membrane tensions as high as 10 mN/m.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained in simulations with applied membrane tensions as high as 10 mN/m (Figure 3), and in simulations with bilayers of different composition, namely either POPE, a 2:1 mixture of POPE and POPG (both at 298 K), and DPPC (at 323 K) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from additional simulations shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "bd5a68c5-2e73-4243-a4ad-1e16a2fc620a",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C85",
+      "claim": "Similar membrane deformation results were obtained in simulations with bilayers of different composition (POPE, 2:1 POPE:POPG, and DPPC).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained in simulations with applied membrane tensions as high as 10 mN/m (Figure 3), and in simulations with bilayers of different composition, namely either POPE, a 2:1 mixture of POPE and POPG (both at 298 K), and DPPC (at 323 K) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from additional simulations shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "c2824356-5dd2-41ed-b036-7e75b0cf26ed",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C86",
+      "claim": "The observed deflections in the membrane mid-plane do not result from significant differences in lipid-bilayer thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be noted that the observed deflections in the membrane mid-plane do not result from significant differences in lipid-bilayer thickness (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "57fb441a-db1c-4504-927b-682ee58d5828",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C87",
+      "claim": "The long-ranged deformations induced by GltPh are most accurately described as bending, rather than other types of perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude, therefore, that the long-ranged deformations induced by GltPh are most accurately described as bending, rather than other types of perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on analysis of lipid order parameters and thickness data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "593f4186-7bb2-4931-9ba6-a5ab24296774",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C88",
+      "claim": "The Multi-Map method is a novel free-energy simulation strategy to evaluate membrane deformation energetics.",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent development, we have reported a novel free-energy simulation strategy to address this problem, which we refer to as Multi-Map (Fiorin et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological development reported by the authors with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "7e43a312-9f22-43e1-a841-a49d8427083a",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C89",
+      "claim": "The Multi-Map variable quantifies the similarity between the instantaneous configuration of the lipid membrane and a set of pre-defined density distributions mapped onto a 3D grid.",
+      "claim_type": "EXPLICIT",
+      "source": "The central element of this method is a collective variable that quantifies the similarity between the instantaneous configuration of the lipid membrane and a set of pre-defined density distributions mapped onto a 3D grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Multi-Map methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "cd6cda99-6fb0-423c-bded-8ab933055c4d",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C90",
+      "claim": "Under membrane tension, the cost of membrane deformation would be greater.",
+      "claim_type": "EXPLICIT",
+      "source": "(This value was obtained in the absence of membrane tension; under membrane tension, the cost would be greater, as shown in Figure 7B, but the extent of the deformation is smaller, as shown in Figure 3.)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations under different tension conditions shown in Figures 7B and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "a39a7e08-fe98-4825-8002-160d355e3e95",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C91",
+      "claim": "Under membrane tension, the extent of the membrane deformation is smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "(This value was obtained in the absence of membrane tension; under membrane tension, the cost would be greater, as shown in Figure 7B, but the extent of the deformation is smaller, as shown in Figure 3.)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations under different tension conditions shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "1b41446b-c447-4cbe-82fe-4f515fba69a3",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C92",
+      "claim": "Energetic gains from polar and hydrophobic solvation of the protein surface when the membrane is deformed are comparable in magnitude to the membrane deformation cost, if not greater.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, this energetic penalty is sizable; as noted above, however, energetic gains that result from polar and hydrophobic solvation of the protein surface when the membrane is deformed are comparable in magnitude, if not greater (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the solvation free energy analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "dd0b809a-4173-4ed0-a23b-5957ae29237e",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C93",
+      "claim": "The morphological preference of the membrane is a major contributor to the free-energy landscape of GltPh.",
+      "claim_type": "EXPLICIT",
+      "source": "At any rate, this analysis shows that the morphological preference of the membrane is a major contributor to the free-energy landscape of this transporter; it specifically and strongly opposes the inward-facing state, and so must be counterbalanced by other free-energy contributions for the transporter to carry out its structural mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the free-energy calculations and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "464e96f2-966d-431b-9844-d8ea64e84a2a",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "claim_id": "C94",
+      "claim": "The membrane morphological preference specifically and strongly opposes the inward-facing state of GltPh.",
+      "claim_type": "EXPLICIT",
+      "source": "At any rate, this analysis shows that the morphological preference of the membrane is a major contributor to the free-energy landscape of this transporter; it specifically and strongly opposes the inward-facing state, and so must be counterbalanced by other free-energy contributions for the transporter to carry out its structural mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the free-energy calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Coarse-grained molecular dynamics simulations reveal that GltPh induces state-dependent membrane deformations. The all-outward state causes modest perturbations (3-4 \u00c5 elevation near transport domains, ~2 \u00c5 near scaffold). In contrast, inward-facing transport domains cause deep (~10 \u00c5, ~50% of hydrophobic core width), long-ranged (extending ~100 \u00c5 from protein surface) membrane depressions that are confined to the transport domain interface and abruptly terminated at the scaffold. Each protomer causes independent, additive perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C34-C42 are consistently supported by coarse-grained simulation data presented in Figure 2 with quantitative measurements and multiple independent trajectories (N=3). The findings show clear differences between outward- and inward-facing states with specific numerical values for deformation magnitudes and spatial extent. The independence of protomer effects is demonstrated through comparison of intermediate states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "25a80679-9243-428d-9f47-92f29db99f94",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All-atom simulations validate the coarse-grained findings. Despite known limitations of the MARTINI forcefield in capturing specific biomolecular interactions, all-atom simulations using the CHARMM36 forcefield recapitulate the membrane deformations observed in coarse-grained simulations. The deformations are sustained in both magnitude and range even after relaxation and significant lipid exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C83 are supported by comparative simulation data shown in Figure 5 and supplements. The authors appropriately acknowledge MARTINI limitations (C44) and address them through all-atom validation. The convergence between methods strengthens confidence in the findings, though the all-atom simulations are shorter (150 ns) than ideal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "5df410bb-add2-43af-bd67-5467a4b39186",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The membrane deformations are driven by optimization of protein-lipid interactions. The membrane adapts to prevent hydrophilic residues (e.g., Arg105, Lys230) from penetrating the bilayer core and to avoid exposing hydrophobic residues to solvent. The deformed state is stabilized by hydrogen-bonding interactions between protein residues and lipid headgroups, extending to the scaffold domain. Co-evolutionary analysis reveals that membrane-exposed residues engaged in lipid interactions show evolutionary coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 are supported by multiple lines of evidence: hydrogen bonding analysis (Figure 5C), solvation free energy calculations (Figure 6), and coevolutionary analysis (Figure 6D). The interpretation that membrane morphology changes are dictated by evolved protein-lipid interfaces is well-reasoned and supported by the data, though the energetic calculations involve approximations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "28c205a1-0488-4e38-b5ba-528d58a57907",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The free-energy cost of membrane deformation induced by inward-facing GltPh is estimated at 6-7 kcal/mol per protomer (~20 kcal/mol total) using the novel Multi-Map simulation methodology. This method quantifies membrane deformation energetics by comparing instantaneous membrane configurations to predefined density distributions. The energetic cost increases under membrane tension, while the deformation extent decreases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C58, C88-C91 present a novel computational approach and quantitative free-energy estimates. While the Multi-Map method (C88-C89) represents a methodological advance, the authors acknowledge the estimate is imperfect as it mimics rather than directly measures the protein's impact. The magnitude (~20 kcal/mol) is plausible but requires experimental validation. The tension-dependence findings (C90-C91) are internally consistent but also model-dependent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "f384170c-2b04-4654-b378-0359eb750288",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The substantial energetic penalty of membrane deformation must be compensated by other interactions for the transporter to function. The membrane morphological preference strongly opposes the inward-facing state and is a major contributor to the free-energy landscape. Energetic gains from polar and hydrophobic solvation of the protein surface are comparable in magnitude to the membrane deformation cost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C59, C92-C94 present thermodynamically sound inferences based on the calculated energetic penalties and known functional properties of GltPh. The logic that compensating interactions must exist (C8, C59) follows from the observation that the transporter functions despite the energetic penalty. The solvation analysis (C92, Figure 6) provides quantitative support for the magnitude of compensating interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "6eeb92eb-ad08-4766-9fde-53637ca66482",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The membrane deformation findings are robust across different conditions. Similar results were obtained under membrane tensions up to 10 mN/m and with different lipid compositions (POPE, POPE:POPG mixtures, DPPC). The deformations represent bending rather than thickness changes, as confirmed by analysis of lipid order parameters and bilayer thickness measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 are supported by systematic control simulations shown in Figures 3-4 and supplements. The robustness across conditions strengthens the main findings. The characterization as bending (C87) is supported by quantitative analysis of thickness and order parameters, though some localized tilting is observed at the transport-scaffold interface.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "4006dad5-d20c-4ded-b3ce-9bc49b4a2747",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Experimental smFRET measurements indicate that outward- and inward-facing states of GltPh are approximately equally populated (free-energy difference ~0), and this balance is similar in liposomes and DDM micelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 and C66 cite established experimental findings from multiple studies (Akyuz et al., 2013, 2015; Erkens et al., 2013). These are well-documented observations that provide important context for interpreting the simulation results, particularly the apparent paradox that the inward-facing state has a large energetic penalty yet is equally populated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "54edfcc0-94a9-4e13-9302-ca6bb2430978",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "High-speed AFM measurements confirm independent, stochastic conformational exchange between protomers but show a 5-fold shift in population ratio favoring the outward-facing state, contrasting with smFRET results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 accurately cite experimental AFM findings (Ruan et al., 2017; Heath and Scheuring, 2019). The discrepancy with smFRET measurements is acknowledged and discussed by the authors as potentially arising from differences in experimental conditions (membrane curvature, crowding effects). This represents an important unresolved question in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "05aa2763-fb2c-4d9b-a99c-cc6d4f760826",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Simulations of the bacterial Na+-dicarboxylate symporter VcINDY show that its transport domains induce membrane deformations comparable to GltPh upon transitioning to the inward-facing state. The deformation is suppressed by the scaffold, suggesting independent protomer function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 are supported by simulation data shown in Figure 8. This extends the findings to another elevator-type transporter, suggesting generalizability. However, the VcINDY outward-facing structure is a computational model rather than experimental structure, introducing some uncertainty. The analysis is less extensive than for GltPh.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "451d64c4-93ec-43d0-b2ac-6eda3f2f78e6",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that membrane deformation energetics vary among functional states and contribute significantly to protein mechanisms. They conclude that configurational energetics of lipid bilayers are non-negligible and must be incorporated into models of membrane protein function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C62 represent the central hypothesis and main conclusion of the work. While C2-C3 are initially speculative, the simulation data (particularly the large state-dependent energy differences) provide strong support. The conclusion (C62) is well-justified by the findings, though the magnitude of effects may vary across different protein systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "b92a4575-4dd1-4c3a-9aca-1d8ca3e8252f",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors contextualize their findings by citing conformational free-energy differences in other membrane proteins (Shaker K+ channel: ~15 kcal/mol; Nav1.4: ~16 kcal/mol) and experimental evidence that lipid modifications and mutations affect GltPh transport rates, and that PUFAs modulate EAAT activity and membrane bending energetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 and C63-C65 accurately cite relevant literature to contextualize the magnitude of the calculated energetic penalties and the functional importance of lipid-protein interactions. These comparisons strengthen the plausibility of the main findings and connect them to broader experimental observations in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "74d856d6-d6df-478c-964f-3842ae319ca1",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors discuss that detergent micelles have inherent morphological preferences with well-defined free-energy minima, and cite cryo-EM evidence that protein-induced morphological changes can be similar in lipid nanodiscs and DDM micelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 cite established knowledge about micelle thermodynamics and recent cryo-EM observations. This discussion challenges the assumption that micelles are infinitely compliant and provides context for interpreting the smFRET measurements in micelles versus liposomes. The reasoning is sound though the implications remain somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "21ef8554-1abf-4a4b-955e-f21c870c1590",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on GltPh structure and mechanism, including its relationship to EAAT transporters, trimeric organization with independent protomers, domain architecture (scaffold and transport domains), alternating access mechanism, and the ~15 \u00c5 perpendicular movement of transport domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C32 accurately describe established structural and functional knowledge about GltPh, well-supported by multiple citations to primary literature. These provide essential context for the study but represent prior knowledge rather than new findings. The quantitative estimate of transport domain movement (C31-C32) is based on structural comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "913ee1d8-2454-47c0-abfd-c32c406bae81",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The simulation systems are large-scale: coarse-grained systems contain ~7,500 lipids and ~170,000 solvent molecules (~260,000 particles total) in boxes of ~500 \u00d7 500 \u00d7 120 \u00c5; all-atom systems comprise ~3,000,000 atoms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 describe the simulation system specifications, which are verifiable from the methods and represent appropriate system sizes for studying long-range membrane effects. The large system size is a strength of the computational approach, enabling observation of long-range deformations without significant finite-size artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "4e5dddca-7396-4af1-b657-c413d0d0a18b",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Simulations reveal that the scaffold domain shifts by ~2 \u00c5 between all-outward and all-inward states, making the actual vertical displacement of transport domains slightly larger than the ~15 \u00c5 estimated from structural overlays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 report a quantitative observation from the simulation data (Figure 2D). This refinement of the transport domain displacement is a minor but interesting finding that affects the interpretation of the structural changes. The magnitude is small but measurable in the simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "37cdb9ce-bf69-43c3-9902-1649ddca734f",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The introduction establishes general principles about membrane protein-lipid interactions: proteins can influence membrane morphology (curvature, thickness, lipid composition); perturbations accommodate protein surface features and entail energetic costs; the bilayer contributes to protein thermodynamics and kinetics; lipid composition changes can affect protein function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C14 accurately summarize established knowledge in the field, supported by appropriate citations. These provide the conceptual framework for the study but represent prior knowledge rather than new findings. The reasoning about thermodynamic contributions (C12-C13) is sound and well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "5009350b-9451-4300-9c8e-be59e6477993",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "GltPh is characterized as a homolog of neurotransmitter transporters whose mechanism involves one of the most drastic structural changes known.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 provide accurate characterization of GltPh based on established knowledge. The description of the structural changes as among the most drastic is qualitatively reasonable given the ~15 \u00c5 transport domain movement, though 'most drastic' is somewhat subjective. This provides motivation for studying this particular system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "eea5bb2f-4ce6-4839-9b75-56084389ab84",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Experimental studies of EAAT2 suggest that bilayer-facing regions remain similarly solvent-accessible throughout the transport cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C33 cites experimental evidence (Silverstein et al., 2013) that appears to contradict the membrane deformation hypothesis. However, the authors use cautious language ('appear to show'), and the interpretation of solvent accessibility data in the context of membrane deformation is not straightforward. This represents an unresolved tension between different lines of evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "42b43d20-32ec-4b6d-9c89-36f8ece1a43e",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Some EAAT family members are expressed at very high densities (thousands per square micron) in certain cell membranes, raising the possibility of physiological crowding effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 cites established knowledge about EAAT expression levels (Danbolt, 2001) and reasonably suggests this could lead to crowding effects. This provides biological context for discussing how membrane deformations might affect function in native settings, though the functional implications remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    },
+    {
+      "id": "18dde189-2b8b-403e-942b-512b2dbc5949",
+      "content_id": "5f076712-f269-4e91-bd73-6bcbdea530ed",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "VcINDY is described as a dimeric transporter with domain architecture similar to GltPh (dimerization and transport domains).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 accurately describe established structural knowledge about VcINDY with appropriate citations. This provides context for the comparative analysis but represents prior knowledge rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:07:42.136771Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0102f927-4e3b-4066-b508-15e9bd0bc230",
+      "result_id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f"
+    },
+    {
+      "claim_id": "b600b87f-6ae3-4ed1-aa55-3c3a2d6912dc",
+      "result_id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f"
+    },
+    {
+      "claim_id": "eb93c49d-8af3-475c-938b-0875bc975c34",
+      "result_id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f"
+    },
+    {
+      "claim_id": "97502291-33a4-4376-909c-ade8a9feb6c4",
+      "result_id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f"
+    },
+    {
+      "claim_id": "b90f6640-8b1b-4f89-a15f-337a5e05890f",
+      "result_id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f"
+    },
+    {
+      "claim_id": "64020d10-c26f-4394-8145-eb89b806f036",
+      "result_id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f"
+    },
+    {
+      "claim_id": "76be2c5a-3fc6-406a-8695-d29ec35765b2",
+      "result_id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f"
+    },
+    {
+      "claim_id": "1314fd58-2f92-49b8-9246-135610fc6c0f",
+      "result_id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f"
+    },
+    {
+      "claim_id": "ca59e734-5b47-4723-810b-48cb80346ebc",
+      "result_id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f"
+    },
+    {
+      "claim_id": "62a20648-f2f0-4351-9ce7-c6f73e513235",
+      "result_id": "dafb2c67-7698-40f3-85fa-b3afe3c8b93f"
+    },
+    {
+      "claim_id": "49b0e181-a930-45e6-bc00-8a2e2cf33d05",
+      "result_id": "25a80679-9243-428d-9f47-92f29db99f94"
+    },
+    {
+      "claim_id": "b1188bfa-d99d-403c-9b2c-72f61dc608b2",
+      "result_id": "25a80679-9243-428d-9f47-92f29db99f94"
+    },
+    {
+      "claim_id": "f36de27d-84ce-4cac-bbc9-8b543f2ef014",
+      "result_id": "25a80679-9243-428d-9f47-92f29db99f94"
+    },
+    {
+      "claim_id": "5f548bc0-4c7c-4f39-b4c4-45a392d57da9",
+      "result_id": "25a80679-9243-428d-9f47-92f29db99f94"
+    },
+    {
+      "claim_id": "b377dd52-4f0e-48a0-bd49-ddcc0675b801",
+      "result_id": "25a80679-9243-428d-9f47-92f29db99f94"
+    },
+    {
+      "claim_id": "907bf7bb-330d-4e65-a00d-c11c81caa7b4",
+      "result_id": "5df410bb-add2-43af-bd67-5467a4b39186"
+    },
+    {
+      "claim_id": "273ace6b-7da0-46e3-ac6f-f228f4675672",
+      "result_id": "5df410bb-add2-43af-bd67-5467a4b39186"
+    },
+    {
+      "claim_id": "92e32a44-ce1c-48ec-ad4a-b4750d43bcd4",
+      "result_id": "5df410bb-add2-43af-bd67-5467a4b39186"
+    },
+    {
+      "claim_id": "d873fd9c-8941-4e9c-be79-5866f3b4f8e0",
+      "result_id": "5df410bb-add2-43af-bd67-5467a4b39186"
+    },
+    {
+      "claim_id": "da0c0a39-7e37-413b-a564-e50d5b2afc1d",
+      "result_id": "5df410bb-add2-43af-bd67-5467a4b39186"
+    },
+    {
+      "claim_id": "110c5e7d-9aa3-4251-bc25-3cea3925a6ac",
+      "result_id": "5df410bb-add2-43af-bd67-5467a4b39186"
+    },
+    {
+      "claim_id": "a9522ac2-cf25-4d9a-bc94-b8152850d758",
+      "result_id": "5df410bb-add2-43af-bd67-5467a4b39186"
+    },
+    {
+      "claim_id": "e8a893ad-3d06-4d6e-b000-2f7cdf9fb1f5",
+      "result_id": "5df410bb-add2-43af-bd67-5467a4b39186"
+    },
+    {
+      "claim_id": "91cfc29f-afc9-44c2-9c50-597fefd48767",
+      "result_id": "5df410bb-add2-43af-bd67-5467a4b39186"
+    },
+    {
+      "claim_id": "4a3ba06b-8506-447f-9766-8a8118911ecb",
+      "result_id": "28c205a1-0488-4e38-b5ba-528d58a57907"
+    },
+    {
+      "claim_id": "91cbe23b-d43e-4016-b146-78b8bad44f31",
+      "result_id": "28c205a1-0488-4e38-b5ba-528d58a57907"
+    },
+    {
+      "claim_id": "593f4186-7bb2-4931-9ba6-a5ab24296774",
+      "result_id": "28c205a1-0488-4e38-b5ba-528d58a57907"
+    },
+    {
+      "claim_id": "7e43a312-9f22-43e1-a841-a49d8427083a",
+      "result_id": "28c205a1-0488-4e38-b5ba-528d58a57907"
+    },
+    {
+      "claim_id": "cd6cda99-6fb0-423c-bded-8ab933055c4d",
+      "result_id": "28c205a1-0488-4e38-b5ba-528d58a57907"
+    },
+    {
+      "claim_id": "a39a7e08-fe98-4825-8002-160d355e3e95",
+      "result_id": "28c205a1-0488-4e38-b5ba-528d58a57907"
+    },
+    {
+      "claim_id": "da7a1016-f856-4d68-b521-a7da7b5acc95",
+      "result_id": "f384170c-2b04-4654-b378-0359eb750288"
+    },
+    {
+      "claim_id": "50a5b5cd-c095-40ba-848c-bb7f587c837f",
+      "result_id": "f384170c-2b04-4654-b378-0359eb750288"
+    },
+    {
+      "claim_id": "1b41446b-c447-4cbe-82fe-4f515fba69a3",
+      "result_id": "f384170c-2b04-4654-b378-0359eb750288"
+    },
+    {
+      "claim_id": "dd0b809a-4173-4ed0-a23b-5957ae29237e",
+      "result_id": "f384170c-2b04-4654-b378-0359eb750288"
+    },
+    {
+      "claim_id": "464e96f2-966d-431b-9844-d8ea64e84a2a",
+      "result_id": "f384170c-2b04-4654-b378-0359eb750288"
+    },
+    {
+      "claim_id": "a63fd1fa-b2c4-465a-ba75-fba332297713",
+      "result_id": "6eeb92eb-ad08-4766-9fde-53637ca66482"
+    },
+    {
+      "claim_id": "bd5a68c5-2e73-4243-a4ad-1e16a2fc620a",
+      "result_id": "6eeb92eb-ad08-4766-9fde-53637ca66482"
+    },
+    {
+      "claim_id": "c2824356-5dd2-41ed-b036-7e75b0cf26ed",
+      "result_id": "6eeb92eb-ad08-4766-9fde-53637ca66482"
+    },
+    {
+      "claim_id": "57fb441a-db1c-4504-927b-682ee58d5828",
+      "result_id": "6eeb92eb-ad08-4766-9fde-53637ca66482"
+    },
+    {
+      "claim_id": "3c074b56-a56a-4194-9995-71379f1e5c2d",
+      "result_id": "4006dad5-d20c-4ded-b3ce-9bc49b4a2747"
+    },
+    {
+      "claim_id": "485f2a06-c2a2-49f9-b6a7-03632ff5c2fe",
+      "result_id": "4006dad5-d20c-4ded-b3ce-9bc49b4a2747"
+    },
+    {
+      "claim_id": "47a357c7-27bb-49fd-b6fc-dae89c6fd9f2",
+      "result_id": "4006dad5-d20c-4ded-b3ce-9bc49b4a2747"
+    },
+    {
+      "claim_id": "a24403cf-e520-4cfb-92c5-e8071d230815",
+      "result_id": "54edfcc0-94a9-4e13-9302-ca6bb2430978"
+    },
+    {
+      "claim_id": "4ce33acc-6cb5-4a33-8689-4929f4b03f62",
+      "result_id": "54edfcc0-94a9-4e13-9302-ca6bb2430978"
+    },
+    {
+      "claim_id": "d60bb756-35a2-43b8-b08c-ed800911d2c0",
+      "result_id": "05aa2763-fb2c-4d9b-a99c-cc6d4f760826"
+    },
+    {
+      "claim_id": "1a38876d-c6ff-40a3-87b3-c4bd697e40f3",
+      "result_id": "05aa2763-fb2c-4d9b-a99c-cc6d4f760826"
+    },
+    {
+      "claim_id": "e7f647b7-75d2-4952-bc45-9facd46cbe75",
+      "result_id": "451d64c4-93ec-43d0-b2ac-6eda3f2f78e6"
+    },
+    {
+      "claim_id": "5e29aa9f-da12-44d7-ab2f-c34e55941ba6",
+      "result_id": "451d64c4-93ec-43d0-b2ac-6eda3f2f78e6"
+    },
+    {
+      "claim_id": "26cf1314-8a93-4709-8881-646aa9dd13e7",
+      "result_id": "451d64c4-93ec-43d0-b2ac-6eda3f2f78e6"
+    },
+    {
+      "claim_id": "c93ffc55-0dcd-4b2d-879d-d866d8f3c707",
+      "result_id": "b92a4575-4dd1-4c3a-9aca-1d8ca3e8252f"
+    },
+    {
+      "claim_id": "61a2b051-7d38-427d-b16a-7ae71c5d8e23",
+      "result_id": "b92a4575-4dd1-4c3a-9aca-1d8ca3e8252f"
+    },
+    {
+      "claim_id": "0c8d0d28-8c4c-4d8f-981c-9a2af0cf6581",
+      "result_id": "b92a4575-4dd1-4c3a-9aca-1d8ca3e8252f"
+    },
+    {
+      "claim_id": "44a9c9c0-793e-46d7-9e53-3d8ed841653a",
+      "result_id": "b92a4575-4dd1-4c3a-9aca-1d8ca3e8252f"
+    },
+    {
+      "claim_id": "cdc0c1dc-455e-452c-b472-604384b78293",
+      "result_id": "b92a4575-4dd1-4c3a-9aca-1d8ca3e8252f"
+    },
+    {
+      "claim_id": "e60aacfd-7c9c-4f39-b443-9cfddfbd6428",
+      "result_id": "74d856d6-d6df-478c-964f-3842ae319ca1"
+    },
+    {
+      "claim_id": "4113a80e-af8e-465a-95f0-b98cbd54bc08",
+      "result_id": "74d856d6-d6df-478c-964f-3842ae319ca1"
+    },
+    {
+      "claim_id": "ddce343c-71cb-4481-b38a-1dcba6e62b56",
+      "result_id": "74d856d6-d6df-478c-964f-3842ae319ca1"
+    },
+    {
+      "claim_id": "2a1df276-0359-4e10-9b34-fc13bb1bd5e9",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "94e026a3-6f8f-45d6-855e-d6e4d342df18",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "1f580eba-dc2e-4486-b90c-f7db2567cb51",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "e6b9ceee-a105-4a80-9cc3-224477d7c80f",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "d681ed81-2a7d-4afc-bd62-3f4a9941f54a",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "b4bc33f4-de8e-423b-aed0-65d925eccb16",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "ea0d1752-9f80-45f6-aafb-1ddd66f420e3",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "869e2caf-4a98-4f5b-a1bb-da7566bbca8a",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "fa444e81-730f-43e4-bfcd-041130a670f7",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "6f5ad070-fa13-4553-b78c-7f1b262dc9d0",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "c1768be4-6ddc-4451-90b4-a302c7151235",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "27472b97-a20c-4b46-8221-8007e197c15b",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "bf471389-a52b-419d-9ed2-f5762ab27f09",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "d223988a-e3ad-4215-9f59-fa161a0162a2",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "16177ef3-b7ce-4d7f-8192-57d65dcef7c4",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "b2ad8f31-aa03-4a08-809f-6c1aa855e1cc",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "a0bbea86-66c2-4bc6-9355-b0cd8fcef063",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "13006287-caec-4c6c-9158-7dbadc14c5cc",
+      "result_id": "21ef8554-1abf-4a4b-955e-f21c870c1590"
+    },
+    {
+      "claim_id": "4b72166a-bca1-4f0d-ad15-e059c29bfcdd",
+      "result_id": "913ee1d8-2454-47c0-abfd-c32c406bae81"
+    },
+    {
+      "claim_id": "4d76a661-f2f3-48a3-94ba-3080f095d1ac",
+      "result_id": "913ee1d8-2454-47c0-abfd-c32c406bae81"
+    },
+    {
+      "claim_id": "89e02b10-9d5f-4c70-83e6-251a4b902ce4",
+      "result_id": "913ee1d8-2454-47c0-abfd-c32c406bae81"
+    },
+    {
+      "claim_id": "7a1d22f4-9a99-4b0c-8ab2-04b98552254d",
+      "result_id": "4e5dddca-7396-4af1-b657-c413d0d0a18b"
+    },
+    {
+      "claim_id": "15d3fd22-e43c-475c-aa2c-21424954a97b",
+      "result_id": "4e5dddca-7396-4af1-b657-c413d0d0a18b"
+    },
+    {
+      "claim_id": "db4440ea-8aa6-4c13-b169-e1c2c5b92078",
+      "result_id": "4e5dddca-7396-4af1-b657-c413d0d0a18b"
+    },
+    {
+      "claim_id": "86eda56b-d22e-470b-afe5-e74ad50fca40",
+      "result_id": "37cdb9ce-bf69-43c3-9902-1649ddca734f"
+    },
+    {
+      "claim_id": "a311c199-1e55-4693-a643-2332ebbd3c37",
+      "result_id": "37cdb9ce-bf69-43c3-9902-1649ddca734f"
+    },
+    {
+      "claim_id": "ca08b5e1-90d0-411c-806a-42712a0396a0",
+      "result_id": "37cdb9ce-bf69-43c3-9902-1649ddca734f"
+    },
+    {
+      "claim_id": "75fed4e0-9e26-4d4d-87c1-8d830cf7bd67",
+      "result_id": "37cdb9ce-bf69-43c3-9902-1649ddca734f"
+    },
+    {
+      "claim_id": "15ed150b-3208-485c-b477-badb9cbe61e8",
+      "result_id": "37cdb9ce-bf69-43c3-9902-1649ddca734f"
+    },
+    {
+      "claim_id": "d2e1953d-ab28-4d8a-8fd6-0fc31ccf9084",
+      "result_id": "37cdb9ce-bf69-43c3-9902-1649ddca734f"
+    },
+    {
+      "claim_id": "a32feb11-c9de-498e-9496-e58ad1103ca5",
+      "result_id": "37cdb9ce-bf69-43c3-9902-1649ddca734f"
+    },
+    {
+      "claim_id": "b3be0533-119b-4aef-8ce4-62eee1c4df84",
+      "result_id": "5009350b-9451-4300-9c8e-be59e6477993"
+    },
+    {
+      "claim_id": "12a90cd0-2e8a-4dd7-ad1b-b885334a8337",
+      "result_id": "5009350b-9451-4300-9c8e-be59e6477993"
+    },
+    {
+      "claim_id": "63b942cb-b4bf-402c-96c7-dff9ff5bc812",
+      "result_id": "eea5bb2f-4ce6-4839-9b75-56084389ab84"
+    },
+    {
+      "claim_id": "aebd38f7-981c-413c-b305-e840941582d4",
+      "result_id": "42b43d20-32ec-4b6d-9c89-36f8ece1a43e"
+    },
+    {
+      "claim_id": "ddff73fc-8ea2-4006-9dba-07fe4248f862",
+      "result_id": "18dde189-2b8b-403e-942b-512b2dbc5949"
+    },
+    {
+      "claim_id": "94bc98b0-f30c-413c-afb4-303a4fdb0fae",
+      "result_id": "18dde189-2b8b-403e-942b-512b2dbc5949"
+    }
+  ],
+  "comparisons": []
+}

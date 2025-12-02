@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "HSV-1 infection exhibits temporal heterogeneity in viral gene expression initiation and progression. Time-lapse imaging shows ICP4 expression initiates between 1-4 hr post-infection, with secondary infection peaks at 8 and 11 hr. At 5 hr post-infection, 55% of cells are ICP4+, with nuclear ICP4 levels varying ~100-fold. Infected cells display three temporally-linked ICP4 localization phenotypes: diffuse nuclear, discrete nuclear foci (replication compartments), and cytoplasmic foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are well-supported by time-lapse microscopy and quantitative imaging data (Figure 1B-D). The temporal dynamics, quantification of infection rates, and characterization of ICP4 localization phenotypes are directly demonstrated by the imaging data with appropriate sample sizes (n=970-1814 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Single-cell RNA-seq reveals extreme heterogeneity in viral gene expression during HSV-1 infection. Viral transcript levels range from 0-36% with highly skewed distribution. Gini coefficients are 0.8 for wildtype and 0.77 for \u0394ICP0, higher than influenza (0.64). Cells cluster into two groups based on viral expression (<1% vs >1%), with late gene fraction increasing with total viral expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are strongly supported by scRNA-seq data (Figure 1E-H) with appropriate sample sizes (807 wt-infected, 1613 \u0394ICP0-infected cells). The Gini coefficient calculations, tSNE clustering, and correlation analyses between viral gene classes and expression levels are properly quantified and visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Viral gene expression is negatively correlated with cell-cycle stage, with cells in later cell-cycle phases expressing ~10-fold fewer viral genes than those in early phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by cell-cycle analysis of scRNA-seq data (Figure 2\u2014figure supplement 1). The correlation analysis is appropriate and the finding is consistent with prior work cited by the authors. Cell-cycle regression was properly performed before subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Anti-viral signaling is initiated in a rare subset of abortively infected cells during wildtype HSV-1 infection. Canonical anti-viral genes (IFIT2, IFIT3) are detected in only 2-3% of cells. RNA-seq of sorted populations shows anti-viral genes (IFIT1, IFIT2) are specifically upregulated in ICP4- cells. IRF3 shows nuclear localization in <1% of ICP4- cells, while being blocked at the nuclear periphery in ICP4+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C54-C59 are well-supported by multiple complementary approaches: scRNA-seq (Figure 2C), bulk RNA-seq of FACS-sorted populations (Figure 2D-E), QPCR validation, and IRF3 immunofluorescence (Figure 2F). The convergence of evidence from different methodologies strengthens this major finding that resolves the paradox in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In \u0394ICP0 infection, anti-viral signaling is enhanced but still restricted to a subset of cells. Cells cluster into four groups, with ~8% expressing anti-viral genes (IFIT1, MX2, OASL). Anti-viral signaling is absent in highly infected cluster 4 cells. RNA-seq identifies ~80 upregulated genes in ICP4- cells. Unlike wildtype, anti-viral genes are also activated in ICP4+ cells, albeit to lesser extent. IRF3 nuclear localization is more frequent than in wildtype infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 are supported by scRNA-seq clustering (Figure 3A-D), bulk RNA-seq of sorted populations (Figure 3E-H), and IRF3 immunofluorescence (Figure 3I). The comparison between wildtype and \u0394ICP0 is appropriate and demonstrates that even without ICP0, highly infected cells block anti-viral responses. Sample sizes are adequate (1613 cells for \u0394ICP0).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Highly infected cells undergo transcriptional reprogramming to an embryonic-like state. 977 genes are upregulated in ICP4+ cells (bulk RNA-seq) and 21 genes in highly infected single cells (scRNA-seq). These genes are enriched for GO terms related to RNA transcription regulation and developmental processes. Promoters are enriched for LEF1, TCF3, and MYC binding sites, with 23% containing TCF/LEF sites. Upregulated genes include WNT targets (AXIN2, LEF1), developmental genes (SOX, HOX, HES families), stem cell markers (LGR5), and developmental pathway ligands. Fibroblast markers are downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C68-C79 are strongly supported by both bulk RNA-seq (Figure 4A, 5A-B) and scRNA-seq (Figure 4B) with appropriate GO enrichment and transcription factor binding site analyses (Figure 4C-F). The convergence of findings from two independent sequencing approaches strengthens the conclusion. The identification of specific upregulated genes is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "\u03b2-catenin is recruited to the nucleus and viral replication compartments during HSV-1 infection. In mock-infected cells, \u03b2-catenin is cytoplasmic/membrane-bound. In infected cells, \u03b2-catenin shows three localization patterns: cytoplasmic, diffuse nuclear, or nuclear foci. \u03b2-catenin localization is temporally linked to infection progression: remaining cytoplasmic in ICP4- and early ICP4+ cells, translocating to nucleus upon RC formation, and co-localizing with RCs in late-stage cells. Similar patterns are observed in A549 and Mel624 cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C80-C88 are well-supported by immunofluorescence imaging (Figure 6A-G) with quantification of different infection stages (n=204 cells). The temporal progression is clearly demonstrated, and validation in multiple cell types strengthens the finding. Statistical comparisons between stages are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "\u03b2-catenin is required for late viral gene expression and progeny production. \u03b2-catenin inhibition (iCRT14) has minimal impact on immediate-early gene expression but significantly inhibits early and late gene expression. \u03b2-catenin inhibition reduces viral progeny formation by ~50%. Similar results are obtained with siRNA knockdown of \u03b2-catenin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C89-C94 are supported by RT-PCR data (Figure 7A-D), plaque assays (Figure 7E-F), and siRNA experiments (Figure 7G-H). The functional requirement is demonstrated through two independent approaches (chemical inhibition and genetic knockdown) with appropriate statistical testing (n=3-5 biological replicates). The finding is consistent with prior work (Zhu and Jones, 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The genome:PFU ratio is 36\u00b14 for wildtype HSV-1 and 1,422\u00b134 for \u0394ICP0. Based on Poisson distribution calculations, essentially all cells encountered at least one viral genome during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by digital droplet PCR measurements. The statistical calculation assuming Poisson distribution is appropriate for determining the probability of viral genome encounter. This methodological detail is important for interpreting the ICP4- population as abortively infected rather than unexposed cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C95",
+      "C96"
+    ],
+    "result": "Single-cell analysis reveals heterogeneity in all aspects of HSV-1 infection, including initial phenotype, timing and rate of viral gene expression, and cellular response. The findings uncover transcriptional differences in cells with variable infection outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C95, C96 are summary statements supported by the totality of experimental evidence presented in the study. These claims integrate findings from time-lapse imaging, scRNA-seq, bulk RNA-seq, and immunofluorescence experiments. The comprehensive multi-modal approach provides strong support for these overarching conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C37"
+    ],
+    "result": "Population-averaged measurements of HSV-1 infection have produced contradictory results regarding type I interferon signaling, with studies showing both activation and repression. This paradox arises from averaging over heterogeneous populations containing opposite phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36, C37 are supported by extensive literature citations showing both activation and repression of type I IFN pathway. The authors' single-cell data (C3, C54-C59) resolves this paradox by demonstrating that activation occurs in rare abortively infected cells while repression occurs in highly infected cells. This is a well-supported conceptual framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Historical and recent studies have documented cell-to-cell variability in viral infection across multiple systems. Sources of variability include random virus encounter, genetic variability in virus populations, and host cell state (both deterministic and stochastic processes). Single-cell RNA-sequencing has enabled examination of virus-host interactions in multiple systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 are background claims supported by appropriate citations to the literature. These establish the context and motivation for the current study. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "HSV-1 is a common human pathogen with lytic and latent phases. The lytic phase involves infection of epithelial cells, viral replication, and cell destruction. Viral gene expression proceeds in a temporal cascade (IE, E, L genes) with specific regulatory mechanisms. Viral DNA replication occurs in replication compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C28 are established background knowledge about HSV-1 biology, supported by appropriate citations to the literature. These claims provide necessary context for interpreting the experimental results. The citations appear accurate and comprehensive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Prior population-level studies using RNA-seq and proteomics have characterized widespread deregulation of host transcription during HSV-1 infection, including disruption of transcription termination, activation of anti-sense transcription, depletion of RNA-polymerase II, changes in splicing/polyadenylation, and upregulation of some genes including anti-viral genes and transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are background claims about prior work, supported by appropriate citations. These establish the state of knowledge from population-level studies and motivate the need for single-cell approaches. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Rare activation of anti-viral signaling has been reported in other viruses (West-Nile, influenza). Multiple viruses show links to \u03b2-catenin pathway. ICP0 is not directly responsible for host cell reprogramming since it occurs in \u0394ICP0 infection. Epigenomic changes and other developmental factors (e.g., DUX4) may contribute to infection outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 place the current findings in broader context through comparison with other viruses and discussion of mechanisms. C99 is supported by comparison of wildtype and \u0394ICP0 data. The other claims are appropriately cited to the literature. These discussion points are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "\u03b2-catenin and developmental pathways are often dysregulated in cancer and are therapeutic targets. Immune checkpoint inhibitors are first-line treatment for late-stage melanoma, with response heterogeneity linked to \u03b2-catenin activity. An HSV-1-based oncolytic therapy is FDA-approved for melanoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are discussion points about clinical implications, supported by appropriate citations. These claims establish potential translational relevance of the findings. The citations appear accurate, though the speculation about combining oncolytic HSV-1 with checkpoint inhibitor-resistant melanomas is appropriately noted as requiring further study.",
+    "result_type": "MINOR"
+  }
+]

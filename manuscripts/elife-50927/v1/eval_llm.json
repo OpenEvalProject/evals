@@ -1,0 +1,472 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior work has established that focal seizures exhibit consistent clinical features including a dual spatial structure with an ictal wavefront and core, slow wavefront propagation (<1 mm/sec), and fast inward-moving ictal discharges traveling two orders of magnitude faster than the wavefront.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 are well-supported by multiple citations to prior literature (Worthington 2005, Kotagal et al. 2008, Schevon et al. 2012, Smith et al. 2016, Trevelyan et al. 2006-2007, etc.). These claims establish the empirical foundation and prior knowledge upon which the current modeling work is built.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Despite extensive prior computational modeling work, no theoretical study has shown how the dynamic topological structure of seizures can arise from basic biophysical mechanisms, representing a gap in the field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 accurately characterize the state of prior modeling work (citing Soltesz and Staley 2011, Jirsa et al. 2014, Cressman et al. 2009, etc.) and identify the specific gap that motivates the current study. This provides appropriate context for the novelty of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors developed a 2D neural field model with pyramidal-like neurons containing leak, slow potassium, AMPA, and GABA-A conductances, spike-frequency adaptation, and a 'Mexican hat' connectivity structure with distance-dependent local inhibition and distance-independent global inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 describe the model architecture with appropriate citations (Bressloff 2014, Prince and Wilder 1967, Coombes 2005, Eissa et al. 2017, Liou et al. 2018). The model structure is clearly defined with biophysical parameters listed in Table 1. The model does not spontaneously seize but can be provoked, representing a 'healthy' circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The model reproduces key dynamics observed in human microelectrode recordings from Patient A, including slow wavefront propagation and fast inward traveling waves following tonic firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 compare patient data (Figure 1B) with model output (Figure 1C), demonstrating qualitative agreement. The patient data shows left-to-right seizure recruitment and right-to-left fast waves, which are reproduced in the model. This provides initial validation of the model's ability to capture essential seizure dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The 1D model exhibits distinct seizure stages (pre-ictal, ictal-tonic, ictal-clonic, pre-termination, post-ictal) with fast inward waves traveling 170 times faster than the wavefront, approximating the ratio observed in human recordings (0.83\u00b10.14 mm/sec vs 26\u00b124 cm/sec).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 describe model behavior shown in Figure 2 and validated in a spiking model (Figure 2\u2014figure supplement 1). The quantitative speed ratio (170) closely matches human data cited from Schevon et al. 2012, Smith et al. 2016, and Liou et al. 2017. The sequence of stages is robust to input parameters (Figure 2\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The slow ictal wavefront propagation results from sequential activation of two processes: usage-dependent exhaustion of inhibition (modeled as intracellular chloride accumulation) followed by upregulation of adaptation currents (modeled as sAHP conductance activation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 describe the core mechanistic insight of the model, shown in Figures 2B-C. The sequence is clearly demonstrated: chloride accumulation ahead of the wavefront compromises inhibition, allowing tonic firing, then sAHP activation causes transition to bursting. The mechanisms are grounded in biophysical equations (Equations 3-4) and supported by the model dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C49",
+      "C50",
+      "C53"
+    ],
+    "result": "Model cortices with fast chloride clearance (\u03c4Cl \u2264 3 sec) or strong sAHP conductance (\u0394K \u2265 0.25 nS/Hz) are resistant to seizure initiation, demonstrating that robust inhibition and strong adaptation prevent seizure formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C47, C49, C50, and C53 describe parameter sensitivity analyses shown in Figures 2D-F and Figure 2\u2014figure supplement 3. The results clearly show that faster chloride clearance and stronger adaptation currents reduce seizure susceptibility. The parameter boundaries for seizure resistance are quantitatively defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Ictal wavefront dissipation occurs when non-localized recurrent inhibition builds up as the seizure territory expands, functioning as a spatial integrator that eventually slows propagation below the threshold needed to escape sAHP-induced suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 describe the mechanism of wavefront annihilation shown in Figures 2A and 3. The mechanism is clearly explained: global inhibition increases proportionally to seizure territory size, eventually overwhelming the wavefront's ability to propagate. This is supported by prior work (Smith et al. 2016, Liou et al. 2017) and demonstrated in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The pre-termination stage shows four characteristic trends (decreasing peak firing rate, increasing inter-burst intervals, decreasing wave speed, increasing burst width) that match patient recordings, explained by progressive recovery of inhibition during longer silent periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 compare model predictions (Figures 3A-B) with patient data (Figures 3C-F). Statistical correlations are provided for patient data (Spearman's \u03c1 ranging from -0.62 to 0.78, all p<0.002, n=35-93). The mechanistic explanation linking longer silent periods to inhibition recovery is clearly articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "A generalized inhibition exhaustion process (not specific to chloride) can reproduce all seizure stages, suggesting that any mechanism compromising inhibition on a seconds timescale could underlie seizure dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 demonstrate model generalizability using a phenomenological variable z instead of explicit chloride dynamics (Figure 2\u2014figure supplement 4, Equation 8). This strengthens the conclusion that the specific mechanism is less important than the general property of usage-dependent inhibition exhaustion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The spatial distribution of recurrent inhibition determines seizure onset patterns: strong local inhibition produces focal LVFA (5:1 local:global ratio), while spatially non-specific inhibition produces rhythmic discharges (1:1 ratio), with outward waves moving slower than inward waves as predicted and observed in human data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe spiking model results (Figures 4A-C) showing how inhibition topology shapes onset patterns. The prediction about directional speed differences is confirmed in patient data (Figure 4C, U-test p<0.001). The model provides a mechanistic explanation for clinically observed onset pattern variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "STDP during seizures creates centripetal connectivity bias due to inward traveling waves, reducing seizure threshold and enabling spontaneous seizure generation; the model predicts centripetal pre-ictal discharges, which are observed in Patient A's recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 describe STDP-induced network remodeling (Figures 5A-C) and validate the prediction with patient data (Figures 5D-F). The mechanism is clear: pre-before-post STDP strengthens connections from periphery to center following inward wave direction. Patient A shows centripetal pre-ictal waves traveling opposite to seizure expansion direction, confirming the prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In the 2D model with noise, uniformly distributed white noise creates persistent traveling wave direction preferences during the clonic stage through random bias of the confluence point, which then drifts slowly; after wavefront annihilation, directions become variable, matching human recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 describe noise effects in the 2D model (Figure 6). Without noise, waves are perfectly centripetal (Figure 6A); with noise, a stable directional bias emerges (Figure 6B-C, autocorrelation \u03c1\u03b8(1)=0.97, p<0.001) that becomes variable after wavefront annihilation (\u03c1\u03b8(1)=0.09, p=0.5). This matches patient data (Figure 6\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Under background noise, 3 of 10 simulations failed to terminate spontaneously, instead forming persistent spiral waves (status epilepticus), suggesting bistable seizure dynamics with stochastic endpoint determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 report quantitative simulation results (Figure 7A-B) showing 30% failure rate for spontaneous termination. The bistability is clearly demonstrated, with spiral wave formation as the alternative endpoint. The interpretation is supported by citation to Kramer et al. 2012.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Model status epilepticus (spiral waves) can be terminated by a globally synchronizing excitatory pulse of adequate strength (200 pA, 30 ms) that briefly activates the entire neural sheet, causing termination within hundreds of milliseconds without pre-termination slowing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe intervention results shown in Figures 7C-E. The effectiveness depends on pulse amplitude (200 pA succeeds, 100 pA fails). The mechanism and timing are clearly demonstrated in the model simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The model reproduces many key aspects of human focal seizures despite using a reduced set of neural properties, demonstrating that collapse of inhibition followed by hyperpolarizing currents can account for major seizure features including wavefront propagation, tonic-clonic transition, inward waves, onset patterns, plasticity-induced susceptibility, and termination dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 summarize the main findings of the study. These summary claims are well-supported by the detailed results presented throughout the manuscript and validated against human data (Smith et al. 2016, Liou et al. 2017). The model successfully links cellular mechanisms to large-scale dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The spatial seizure topology with slow wavefront and fast inward waves has not been previously studied in its entirety; the model demonstrates these dynamics can result from localized cellular interactions rather than large-area network mechanisms, and that persistent wave directions can arise from random fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 discuss the novelty and implications of the work, supported by citations to prior work (Schevon et al. 2012, Smith et al. 2016, Liou et al. 2017, Kramer et al. 2010, Jirsa et al. 2014). The model provides a parsimonious explanation for phenomena previously attributed to large-scale networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Without STDP modification, the model network resembles a healthy brain that maintains baseline firing, does not spontaneously seize, but can be provoked into seizures; varying stimulus strength produces a range of responses from depression to after-discharges to full seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 describe baseline model behavior shown in Figure 2\u2014figure supplement 2. The graded response to stimulation is clearly demonstrated, providing a model of seizure susceptibility in otherwise healthy tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The model's chloride accumulation mechanism is supported by in vitro and in vivo studies showing surround inhibition, excitatory GABA effects in epilepsy patients, reduced KCC2 in patient tissues, and chloride accumulation preceding seizure onset; the model confirms that slow chloride clearance increases seizure susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C117 provide extensive literature support for the chloride mechanism (Trevelyan et al. 2007b, Schevon et al. 2012, Prince and Wilder 1967, Cohen et al. 2002, Huberfeld et al. 2007, Pallud et al. 2014, Zhu et al. 2005, Lillis et al. 2012). The model findings are consistent with this body of experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The model explores sAHP's role throughout the seizure life cycle (onset control, tonic-clonic transition, pre-termination dynamics), consistent with prior theory and clinical evidence linking KCNQ2/KCNQ3 mutations to familial neonatal epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 discuss the sAHP mechanism with appropriate citations (Beverlin et al. 2012, Tzingounis and Nicoll 2008). The model extends prior work by showing sAHP's role across multiple seizure stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The model adopts a simplistic approach to ionic dynamics, holding most ion concentrations constant except chloride, though other ionic shifts (Na+, K+, Ca2+, H+) occur during seizures and may contribute to seizure initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 acknowledge model limitations with appropriate citations (Raimondo et al. 2015, Gonz\u00e1lez et al. 2019). This is an honest assessment of what the model does and does not include, suggesting directions for future extensions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The model's global inhibition mechanism for seizure termination is supported by animal studies and computational models showing widespread inhibitory effects, cross-areal PV+ interneuron activation, and long-distance projections to inhibitory interneurons; alternative mechanisms like hypoxia-induced K+ channel activation could produce similar effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129 provide literature support for the global inhibition assumption (Burman and Parrish 2018, Liou et al. 2018-2019, Eissa et al. 2017, Wenzel et al. 2017, Zhang et al. 2014, Sun et al. 2019, Feng et al. 2017, Blumenfeld 2012, Ching et al. 2012). The discussion acknowledges multiple possible mechanisms with similar functional effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "While interneuron dynamics may be important for seizure initiation and propagation, the model demonstrates that complex interneuron dynamics are not required to replicate key seizure features; alternative mechanisms (depolarization block, sodium channel inactivation, synaptic depletion) may contribute, but universal mechanisms are primary candidates for therapeutic targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 discuss model simplifications and alternative mechanisms with appropriate citations (Librizzi et al. 2017, Eissa et al. 2017, Meijer et al. 2015, Fleidervish et al. 1996, Beverlin et al. 2012, Ziburkus et al. 2006). The argument for focusing on universal mechanisms is reasonable and well-articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The model demonstrates that recurrent inhibition distribution shapes seizure onset patterns, with focal LVFA (a positive predictor of surgical success) occurring with strong local inhibition; this contrasts with prior proposals emphasizing long-range connections or increased excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 discuss clinical implications with appropriate citations (Alarcon et al. 1995, Perucca et al. 2014, Weiss et al. 2016, Wang et al. 2017). The model provides an alternative mechanistic explanation for onset pattern variability based on inhibition topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The model predicts that STDP hijacks physiological plasticity to create pathological centripetal connectivity, manifesting as pre-ictal discharges traveling toward the seizure center; this prediction is supported by clinical observations and rodent data, with potential implications for seizure prediction and therapeutic intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C147 discuss plasticity mechanisms and clinical implications with citations (Mehta et al. 1993, Lee et al. 2000, Liou et al. 2019). The prediction is validated with patient data (Figures 5D-E). However, claims C146-C147 are speculative about clinical applications, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The model predicts bistable seizure endpoints with spiral waves representing status epilepticus, supported by animal studies; synchronizing pulses can terminate spiral waves, consistent with clinical observations in status epilepticus patients and analogous to cardiac defibrillation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C155 discuss status epilepticus mechanisms with extensive citations (Kramer et al. 2012, Huang et al. 2004, Petsche et al. 1974, Huang et al. 2010, Viventi et al. 2011, Schindler et al. 2007). The analogy to cardiac arrhythmia is appropriate. Claim C151 notes spiral waves haven't been detected in humans, and C155 is appropriately speculative about therapeutic applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The model explains why ictal wavefronts are rarely observed in microelectrode recordings (arrays must be positioned near onset and within seizure territory); the model focuses on generalizable principles rather than exact replication of individual recordings, consistent with bottom-up modeling approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C161 discuss model philosophy and limitations with appropriate citations (Wang et al. 2017, Jacob et al. 2019, Karoly et al. 2018, Einevoll et al. 2013). The explanation for limited wavefront observations is reasonable based on model predictions. The discussion of modeling philosophy is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The reductionist model demonstrates that a small number of biophysically informed processes can explain complex seizure dynamics, with model seizures consistent with clinical and microelectrode observations; this supports the slowly propagating wavefront with inward traveling waves as the fundamental topology of neocortical focal seizures, though subcortical involvement requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C166 provide concluding statements about the model's achievements and limitations. These are well-supported by the extensive results presented throughout the manuscript. The acknowledgment of areas requiring further investigation (C166) is appropriate.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Sensory TRN sectors (S1 and AC) exhibit stronger repetitive burst discharge than non-sensory sectors (MD), and this differential bursting is mediated by CaV3.3 channels. Optogenetic identification confirmed sector-specific connectivity, and genetic deletion of CaV3.3 abolished the sector-dependent differences in burst propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C55 provide converging evidence from optogenetic mapping (C39-C44), in vitro electrophysiology (C45-C49), and genetic manipulation (C53-C54) demonstrating sector-specific differences in TRN burst discharge. The data show appropriate controls (paired-pulse facilitation, CaV3.3 KO comparisons) and statistical analysis (Kruskal-Wallis tests, p-values reported). The conclusion that CaV3.3 mediates this heterogeneity is well-supported by the abolition of differences in KO animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "NREMS spectral properties differ across cortical areas in a CaV3.3-dependent manner. Somatosensory cortices (S1, S2) show prominent sigma power and spindle activity in WT animals, which is lost in CaV3.3 KO animals along with increased delta power. In contrast, PFC shows no CaV3.3-dependent changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C57-C67 demonstrate area-specific NREMS regulation through multi-site LFP recordings with appropriate sample sizes (n=6-13 per group) and statistical comparisons (Mann-Whitney tests with Bonferroni correction). The power spectral analyses show consistent patterns across S1 and S2 versus AC and PFC, with clear genotype effects in sensory but not non-sensory areas. The data presentation includes both raw traces and quantified power spectra.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Somatosensory cortex NREMS switches from spindle-enriched to delta-dominated sleep when TRN bursting is suppressed, either through genetic deletion of CaV3.3 or chemogenetic hyperpolarization of somatosensory TRN cells. This identifies decreased TRN bursting as the primary mechanism for this spectral shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C68-C80 provide complementary evidence from genetic (CaV3.3 KO) and chemogenetic (DREADD-mediated hyperpolarization) approaches. The chemogenetic experiments include appropriate controls (non-fluorescent cells, control virus) and show that CNO reproduces the KO phenotype without affecting sleep timing or duration. The convergence of two independent manipulations targeting TRN bursting strongly supports the mechanistic conclusion (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Individual spindle events in S1 and S2 have higher amplitudes and frequencies than in AC and PFC, and these properties depend on CaV3.3 channels. CaV3.3 deletion specifically reduces spindle amplitude and frequency in S1 and S2 but not in AC and PFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 demonstrate spindle-level analysis using an automated detection algorithm. The data show clear area-specific differences in spindle properties (amplitude and frequency) with appropriate statistical comparisons (Mann-Whitney tests, p-values reported). The cumulative probability distributions (C84) and frequency histograms (C85-C86) provide detailed characterization. The CaV3.3-dependence is specific to S1/S2, consistent with the sector-specific expression pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "CaV3.3 channels ensure proper temporal coupling of sleep spindles to the active state of the slow oscillation in S1 and S2. In WT animals, ~60% of spindles occur during the active state, but this coupling is disrupted in CaV3.3 KO animals specifically in S1 and S2, not in AC or PFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 demonstrate phase-locking analysis of spindles to slow oscillations. The methodology is appropriate (phase determination via Hilbert transform), and the results show clear genotype and area-specific effects. The data include individual animal values and statistical comparisons (paired t-tests, Wilcoxon tests). The finding that coupling is disrupted in S1/S2 but not AC/PFC in KO animals is consistent with the sector-specific CaV3.3 expression and provides functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C98",
+      "C99"
+    ],
+    "result": "The TRN is identified as a source for local, sensory-cortex-specific NREMS that can be tuned between different spectral states, potentially enabling local sleep regulation according to use- and experience-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C1 and C98 are well-supported by the experimental data showing TRN sector heterogeneity and its effects on local NREMS, claims C8 and C99 regarding use- and experience-dependent regulation are speculative. The study demonstrates the mechanism for local NREMS control but does not directly test whether this mechanism responds to use or experience. This would require additional experiments manipulating sensory experience and measuring TRN activity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study establishes that cellular heterogeneities align with TRN sectors and that TRN sectors align with area-specific NREMS. PV-positive TRN cells are proposed as primary determinants of somatosensory spindle properties based on their stronger bursting capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is well-supported by the combined in vitro and in vivo data. However, claims C110-C111 regarding PV-positive cells are based on inference from a previous study (Clemente-Perez et al., 2017) rather than direct demonstration in this manuscript. The current study does not directly measure PV expression or manipulate PV-positive cells specifically, making this conclusion speculative despite being a reasonable hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Somatosensory cortices show strong, fast, CaV3.3-dependent spindle activity, revising the view that mouse NREMS has weak spindle generation. Full-fledged spindle activity is generated in local regions of the mouse brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by the spindle detection and characterization data (Figures 3 and 5). The local LFP recordings reveal spindle activity that was not apparent in previous EEG studies, likely due to spatial averaging. The data show clear sigma power shoulders and individual spindle events with amplitudes comparable to slow oscillations in S1 and S2. This represents an important technical and conceptual advance in understanding mouse sleep.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Slow oscillation power is co-modulated with spindle activity in both CaV3.3 KO and chemogenetically inhibited animals, potentially indicating a role for TRN in slow oscillation generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C128 is supported by the power spectral data showing concurrent changes in SO and spindle power. However, claims C129-C132 regarding the mechanism are speculative. The co-modulation could reflect TRN involvement in SO generation (C129), secondary effects of spindle suppression (C130), relative power changes due to delta enhancement (C131), or cortical interneuron contributions (C132). The study does not include experiments to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "TRN cell membrane potential polarization determines the balance between spindle and delta rhythms in somatosensory thalamocortical circuits. TRN hyperpolarization liberates thalamocortical cells to engage in delta frequency rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C143 synthesize the genetic and chemogenetic findings with previous literature. The conclusion that TRN membrane polarization controls the spindle/delta balance (C138) is well-supported by the convergent evidence from two independent manipulations. The proposed mechanism (C141) that hyperpolarization liberates TC cells for delta rhythms is consistent with pioneering work and supported by the double CaV3 knockout data (C142). The locality of recordings (C136) was crucial for revealing this effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "TRN-dependent mechanisms could contribute to homeostatic sleep regulation and use-dependent local sleep modulation. Membrane potential polarization within TRN sectors could complement cortical synaptic strength mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claim C145 correctly states established knowledge and claim C146 is supported by the demonstrated TRN control of delta power, claims C147-C154 are largely speculative. The study shows that TRN can control slow-wave activity components but does not test whether this mechanism actually contributes to sleep homeostasis (C147) or use-dependent regulation (C148-C151, C154). These remain plausible hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The findings have potential implications for schizophrenia, where CaV3.3 is a candidate risk gene and sleep spindle deficits are observed. Modality-specific deficits in sleep spindles might correlate with sensory-specific symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C155-C156 correctly cite relevant literature on schizophrenia and CaV3.3. However, claims C157-C158 proposing modality-specific deficits in patients are speculative. The study demonstrates the mechanism in mice but does not include any patient data or test whether sensory-specific spindle deficits exist in schizophrenia. This represents a reasonable hypothesis for future clinical investigation but is not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Anatomical substrates including the focal barrel system organization and high PV-positive cell density likely enable strong local spindles in somatosensory cortex. Different mechanisms may generate spindles in non-sensory areas like PFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C120 and C123-C124 are reasonable speculations based on known anatomy and the current findings, but they are not directly tested. Claims C121-C122 are supported by the data showing no CaV3.3 dependence in AC. Claims C125-C127 regarding alternative spindle-generating mechanisms in PFC are speculative and would require additional experiments to validate. The anatomical hypotheses are plausible but remain to be directly demonstrated.",
+    "result_type": "MINOR"
+  }
+]

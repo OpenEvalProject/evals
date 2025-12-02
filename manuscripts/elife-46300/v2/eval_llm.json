@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ALA feeding induces rapid, specific degradation of GluTR1 protein in Arabidopsis leaves in darkness, independent of transcriptional changes. GluTR1 protein levels decreased by 76% after 4 hours and 96% after 24 hours of ALA treatment, while HEMA1 transcript levels decreased similarly with or without ALA, indicating post-translational regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by western blot data (Figure 1A) showing time-dependent GluTR1 degradation and qRT-PCR data (Figure 1E) showing that HEMA1 transcript levels decrease similarly regardless of ALA treatment. The specificity of the effect is demonstrated by the stability of other proteins. The conclusion that this represents post-translational regulation is logically sound given the disconnect between protein and mRNA levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C81"
+    ],
+    "result": "ALA-induced GluTR1 degradation is mediated by the Clp protease. Clp protease mutants (clpc1-1 and clpr2-1) retain significantly more GluTR1 after ALA treatment compared to wild-type (50% vs 26% after 4 hours, 22-25% vs near-zero after 24 hours), while maintaining normal ALA uptake and metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by western blot data (Figures 2A, 2D) showing reduced GluTR1 degradation in clp mutants, and metabolite data (Figures 2B, 2C) confirming normal ALA processing. The correlation between reduced Clp activity and increased GluTR1 stability is clear and consistent across multiple time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C83",
+      "C84"
+    ],
+    "result": "The N-terminal regulatory domain (RED) of GluTR1 is required for ALA-induced degradation, and GBP protects GluTR1 from degradation. Deletion of the RED prevents ALA-induced degradation, while knockout of GBP accelerates GluTR1 breakdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by western blot data (Figure 3B) showing that \u0394RED-GluTR1 is resistant to ALA-induced degradation while gbp-2 mutants show enhanced degradation. The data clearly demonstrate the opposing roles of the RED domain (promoting degradation) and GBP (preventing degradation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Heme, specifically from the iron branch of tetrapyrrole biosynthesis, is the signal that triggers GluTR1 degradation. Inhibitors of heme synthesis (ACI, DP) prevent ALA-induced GluTR1 degradation, the gun5-2 mutant (unable to synthesize Mg-branch metabolites) still shows GluTR1 degradation, and hemin specifically triggers GluTR1 degradation in isolated chloroplasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by multiple complementary lines of evidence: inhibitor studies (Figure 4D), gun5-2 mutant analysis (Figure 4E), and direct tetrapyrrole supplementation experiments (Figure 4F). The convergence of these independent approaches provides robust support for heme as the degradation signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "FC2-derived heme specifically regulates GluTR1 stability. The fc2-2 mutant retains GluTR1 after short-term ALA treatment (4 hours) and shows reduced free heme accumulation upon ALA feeding, while an FC1 knockdown mutant shows wild-type GluTR1 degradation. This suggests FC2-synthesized heme is specifically allocated for GBP binding and GluTR1 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by western blot data (Figure 5B) showing differential GluTR1 stability in fc2-2 vs wild-type, free heme measurements (Figure 5H) showing reduced heme in fc2-2, and comparison with fc1-1 mutant (Figure 5\u2014figure supplement 1). The specificity for FC2 over FC1 is clearly demonstrated, though the proposed model of FC2-specific heme allocation is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C103",
+      "C19",
+      "C104"
+    ],
+    "result": "GBP, but not GluTR1, binds directly to heme. Hemin-agarose binding assays show that both GST- and HIS-tagged GBP bind to hemin-agarose but not control agarose, while GluTR1 variants do not bind hemin-agarose. This contradicts the previous designation of the GluTR1 N-terminus as a 'heme-binding domain.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by hemin-agarose binding assay data (Figures 6A, 6B) showing clear differential binding. The conclusion that GluTR1 does not bind heme is further supported by consistency with crystal structure data (cited). This represents an important correction to previous assumptions about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C109",
+      "C5",
+      "C20"
+    ],
+    "result": "Heme binding to GBP disrupts the GBP-GluTR1 interaction. Pull-down assays show GBP binds GluTR1 in the absence of heme but not in its presence. MST measurements reveal high-affinity binding (Kd ~65-113 nM) that is reduced 7-14 fold upon hemin addition (Kd ~800-930 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are strongly supported by both qualitative pull-down data (Figures 7A, 7B) and quantitative MST measurements (Figures 7C, 7D). The consistency between independent methods and the magnitude of the effect (7-14 fold reduction in affinity) provide robust support for heme-dependent regulation of the GBP-GluTR1 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The proposed regulatory model: Heme accumulation triggers GluTR1 degradation by binding to GBP, which releases GluTR1 and exposes its N-terminal RED to Clp protease recognition. This provides a molecular mechanism for heme-dependent feedback regulation of ALA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model is well-supported by the collective experimental evidence from genetic, biochemical, and biophysical studies. The mechanism logically integrates all major findings: heme as the signal, GBP as the heme sensor, competitive binding between GBP and Clp for the GluTR1 RED, and FC2-specific heme synthesis. While some aspects are inferred, the model is consistent with all presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "An additional, FC2-independent pathway for GluTR1 degradation may exist. GluTR1 degradation is observed in fc2-2 after 24 hours of ALA treatment, though significantly less than in wild-type, suggesting either an alternative proteolysis pathway or possible contribution from elevated FC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of residual GluTR1 degradation in fc2-2 (Figure 5B) is clear, but the interpretation is speculative. The authors appropriately present this as indicating a possible additional pathway, but provide no direct evidence to distinguish between FC1 compensation and a truly independent mechanism. Further experiments would be needed to resolve this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "GluTR2 may be regulated differently than GluTR1 despite GBP binding to both isoforms. GluTR2 is not degraded during ALA feeding, and its N-terminal region lacks four amino acids relative to GluTR1's RED.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential behavior of GluTR2 is clearly shown in western blots (Figure 1A), and the sequence difference is documented (Figure 8\u2014figure supplement 1). However, the mechanistic explanation for why GluTR2 is not degraded remains unclear. The observation is solid but the interpretation is incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "FLU and heme likely act in concert to control ALA synthesis in photosynthetic tissues, while heme may serve as the sole regulatory signal in heterotrophic tissues that lack the FLU-POR-Pchlide complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is largely a proposed integration of the current findings with previous literature on FLU. While the logic is sound and the proposal is reasonable, the current study provides no direct experimental evidence for the coordinated action of FLU and heme, or for heme-only regulation in heterotrophic tissues. This represents informed speculation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "GBP and the RED of GluTR1 are found only in land plants and may have coevolved for heme-dependent regulation of GluTR stability, possibly in response to the need for tight ALA synthesis control during light-dark cycles in angiosperms lacking dark-dependent POR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis (Figure 8\u2014figure supplement 2) clearly supports the land plant-specific distribution of GBP and RED. The evolutionary interpretation is reasonable given the biological context, though the coevolution hypothesis is somewhat speculative. The data support the observation but the mechanistic/evolutionary explanation is inferred.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The heme-dependent GluTR1 degradation mechanism explains several previously reported phenotypes in mutants with altered heme metabolism (fc2-2 flu phenotype, tomato au and yg-2 mutants, flu/hy1 double mutants), providing a unified molecular explanation for diverse observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the proposed explanation is logical and consistent with the new findings, this represents reinterpretation of published data rather than new experimental validation. The authors appropriately present this as a proposal ('it is reasonable to propose'), but direct experimental testing of these specific cases would be needed to confirm the mechanism applies to these other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C80",
+      "C82",
+      "C87",
+      "C88",
+      "C101",
+      "C102",
+      "C119",
+      "C123"
+    ],
+    "result": "Background knowledge claims about tetrapyrrole biosynthesis, GluTR regulation, and related proteins establish the context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited. They provide necessary background but are not novel findings of this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  }
+]

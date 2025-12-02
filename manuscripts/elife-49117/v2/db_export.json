@@ -1,0 +1,1881 @@
+{
+  "submission": {
+    "id": "9d5ead09-80b5-45c7-bdde-91c4876bcdfd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:46:02.998374Z",
+    "updated_at": "2025-12-02T10:46:02.998374Z"
+  },
+  "content": [
+    {
+      "id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "submission_id": "9d5ead09-80b5-45c7-bdde-91c4876bcdfd",
+      "content_type": "manuscript",
+      "content_text": "# The endonuclease Cue2 cleaves mRNAs at stalled ribosomes during No Go Decay\n\n## Authors\n\n- Karole N D'Orazio<sup>1</sup> ([ORCID: 0000-0003-1954-4406](https://orcid.org/0000-0003-1954-4406))\n- Colin Chih-Chien Wu<sup>1</sup> ([ORCID: 0000-0002-6013-0224](https://orcid.org/0000-0002-6013-0224))\n- Niladri Sinha<sup>1</sup> ([ORCID: 0000-0002-9143-495X](https://orcid.org/0000-0002-9143-495X))\n- Raphael Loll-Krippleber<sup>2</sup>\n- Grant W Brown<sup>2</sup>\n- Rachel Green<sup>1</sup> ([ORCID: 0000-0001-9337-2003](https://orcid.org/0000-0001-9337-2003)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology and Genetics Howard Hughes Medical Institute, Johns Hopkins University School of Medicine Baltimore United States\n2. Donnelly Centre for Cellular and Biomolecular Research, Department of Biochemistry University of Toronto Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nTranslation of problematic sequences in mRNAs leads to ribosome collisions that trigger a series of quality control events including ribosome rescue, degradation of the stalled nascent polypeptide, and targeting of the mRNA for decay (No Go Decay or NGD). Using a reverse genetic screen in yeast, we identify Cue2 as the conserved endonuclease that is recruited to stalled ribosomes to promote NGD. Ribosome profiling and biochemistry provide strong evidence that Cue2 cleaves mRNA within the A site of the colliding ribosome. We demonstrate that NGD primarily proceeds via Xrn1-mediated exonucleolytic decay and Cue2-mediated endonucleolytic decay normally constitutes a secondary decay pathway. Finally, we show that the Cue2-dependent pathway becomes a major contributor to NGD in cells depleted of factors required for the resolution of stalled ribosome complexes. Together these results provide insights into how multiple decay processes converge to process problematic mRNAs in eukaryotic cells.\u200b\n\n## Introduction\n\nTranslation is a highly regulated process in which ribosomes must initiate, elongate, and terminate accurately and efficiently to maintain optimal protein levels. Disruptions in the open-reading frames (ORFs)\u00a0of mRNAs cause ribosome stalling events, which trigger downstream quality control pathways that carry out ribosome rescue, nascent peptide degradation (via the Ribosome-mediated Quality control Complex or RQC) and mRNA decay (No Go Decay or NGD) (Brandman and Hegde, 2016; Simms et al., 2017a). Recent work in eukaryotes has revealed that ribosome collisions on problematic mRNAs create a unique interface on the aligned 40S subunits that serves as a substrate for E3 ubiquitin ligases, such as Hel2 and Not4, and the RQC-trigger (RQT) complex, comprised of factors Slh1, Cue2 and Rqt4; together these factors are thought to trigger downstream quality control (Ferrin and Subramaniam, 2017; Garzia et al., 2017; Ikeuchi et al., 2019; Juszkiewicz et al., 2018; Juszkiewicz and Hegde, 2017; Matsuo et al., 2017; Simms et al., 2017b; Sundaramoorthy et al., 2017). A failure to process such colliding ribosomes and their associated proteotoxic nascent peptide products results in broad cellular distress, made evident by the strong conservation of these pathways (Balchin et al., 2016).\n\nPrevious genetic screens and biochemistry have identified key factors involved in the recognition of stalling or colliding ribosomes and in targeting the nascent polypeptide to the RQC (Brandman et al., 2012; Kuroha et al., 2010; Letzring et al., 2013). As these earliest screens focused on the identification of factors that stabilized reporter protein expression, factors involved in regulating mRNA decay by NGD remain largely unknown. The hallmark of NGD (Frischmeyer et al., 2002; van Hoof et al., 2002) is the presence of endonucleolytic cleavage events upstream of the ribosome stalling sequence as first detected by northern analysis (Doma and Parker, 2006) and more recently by high-resolution ribosome profiling or sequencing approaches (Arribere and Fire, 2018; Guydosh et al., 2017; Guydosh and Green, 2017; Simms et al., 2017b). Importantly, these mRNA cut sites depend on ribosome collisions and the consequent polyubiquitination of the 40S subunit by the yeast protein Hel2 (Ikeuchi et al., 2019; Simms et al., 2017b). Multiple studies in the field collectively position NGD cleavage events within the vicinity of colliding ribosomes (Arribere and Fire, 2018; Guydosh and Green, 2017; Guydosh et al., 2017; Ibrahim et al., 2018; Ikeuchi and Inada, 2016; Ikeuchi et al., 2019; Simms et al., 2018; Simms et al., 2017b).\n\nInterestingly, an endonuclease has been implicated in a related mRNA decay pathway, Nonsense Mediated Decay (NMD), in metazoans. During NMD, the ribosome translates to a premature stop codon (PTC), where an initial endonucleolytic cleavage event is carried out by a critical PIN-domain containing endonuclease, SMG6 (Glavan et al., 2006); sequencing experiments suggest that SMG6 cleavage occurs in the A site of PTC-stalled ribosomes (Arribere and Fire, 2018; Lykke-Andersen et al., 2014; Schmidt et al., 2015). In C. elegans, there is evidence that the initial SMG6-mediated endonucleolytic cleavage leads to iterated cleavages upstream of the PTC similar to those characterized for the NGD pathway in yeast (Arribere and Fire, 2018). The idea that the various decay pathways may act synergistically is intriguing. Homologs of SMG6 (NMD4/EBS1 in yeast) (Dehecq et al., 2018) and other PIN domain-containing proteins, as well as other endonuclease folds, exist throughout Eukarya and anecdotally have been evaluated by the field as potential candidates for functioning in NGD, although there are no reports to indicate that any function in this capacity. The identity of the endonuclease responsible for cleavage in NGD remains unknown.\n\nThe presumed utility of endonucleolytic cleavage of a problematic mRNA is to provide access to the mRNA for the canonical exonucleolytic decay machinery that broadly regulates mRNA levels in the cell. In yeast, Xrn1 is the canonical 5\u2019 to 3\u2019 exonuclease which, after decapping of the mRNA, degrades mRNA from the 5\u2019 end; importantly, Xrn1 normally functions co-translationally such that signals from elongating ribosomes might be relevant to its recruitment (Hu et al., 2009; Pelechano et al., 2015; Tesina et al., 2019).\u00a0Additionally, the exosome is the 3\u2019 to 5\u2019 exonuclease which,\u00a0after deadenylation, degrades mRNAs from the 3\u2019 end and is recruited by the SKI auxiliary complex consisting of Ski2/Ski3/Ski8 and Ski7 (Halbach et al., 2013). While Xrn1-mediated degradation is thought to be the dominant pathway for most general decay in yeast (Anderson and Parker, 1998), the exosome has been implicated as critical for many degradation events in the cell including those targeting prematurely polyadenylated mRNAs (these mRNAs are usually referred to as Non-Stop Decay (NSD) targets) (Frischmeyer et al., 2002; Tsuboi et al., 2012; van Hoof et al., 2002). In metazoans, it is less clear what the relative contributions of Xrn1 and the exosome are to the degradation of normal cellular mRNAs. How the endonucleolytic and canonical exonucleolytic decay pathways coordinate their actions on problematic mRNAs remains unknown.\n\nHere, we present a reverse genetic screen in S. cerevisiae that identifies Cue2 as the primary endonuclease in NGD. Using ribosome profiling and biochemical assays, we show that Cue2 cleaves mRNAs in the A site of collided ribosomes, and that ribosomes which accumulate at these cleaved sites are rescued by the known ribosome rescue factor Dom34 (Guydosh and Green, 2014; Shoemaker et al., 2010). We further show that stall-dependent endonucleolytic cleavage represents a relatively minor pathway contributing to the decay of the problematic mRNA reporter\u00a0used\u00a0here, while exonucleolytic processing by canonical decay machinery, in particular Xrn1, plays the primary role. Cue2-mediated endonucleolytic cleavage activity is substantially increased in genetic backgrounds lacking the factor Slh1, a known component of the RQT complex (Matsuo et al., 2017), suggesting that the relative contribution of this pathway could increase in different environmental conditions. Our final model provides key insights into what happens in cells upon recognition of stalled ribosomes on problematic mRNAs, and reconciles how both endo- and exonucleolytic decay act synergistically to resolve these dead-end translation intermediates.\n\n## Results\n\n### Screening for factors involved in NGD\n\nTo identify factors that impact the degradation of mRNAs targeted by NGD, we developed a construct that directly reports on mRNA levels. Previous genetic screens in yeast (Brandman et al., 2012; Kuroha et al., 2010; Letzring et al., 2013) were based on reporters containing a stalling motif in an (ORF). As a result, these screens primarily revealed machinery involved in recognition of stalled ribosomes and in degradation of the nascent polypeptide, but missed factors involved in mRNA decay. In our reporters (GFP-2A-FLAG-HIS3), the protein output for the screen (GFP) is decoupled from the stalling motif positioned within HIS3 by a 2A self-cleaving peptide sequence (Di Santo et al., 2016; Sharma et al., 2012) (Figure 1A). Because GFP is released before the ribosome encounters the stalling sequence within the HIS3 ORF, its abundance directly reflects the reporter mRNA levels and translation efficiency, independent of the downstream consequences of nascent peptide degradation. These reporters utilize a bidirectional galactose inducible promoter such that an RFP transcript is produced from the opposite strand and functions as an internal-control for measurement of general protein synthesis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of reporters used in genetic screens. Top is 'OPT'; middle is 'NGD-CGA'; bottom is 'NGD-AAA'. (B) Normalized reporter GFP levels. Violin plots show flow cytometry data from\u00a0>4000 WT cells containing the indicated reporter. (C\u2013D) Plots of Z-scores from overexpression screens comparing the NGD-CGA and NGD-AAA reporters to OPT. Z-scores reflecting the significance of log2(GFP/RFP) values from each strain are plotted against each other for the two reporters. Dashed lines represent cutoffs at a Z-score greater than 2.5 or less than \u22122.5 for each reporter. Blue dots represent overexpression strains that have a Z-score value outside the cut-off for the NGD reporters, but not the OPT. Red dots identify the CUE2 overexpression strain. (E) Validation data for overexpression screen candidate CUE2. Top, three averages from individual flow cytometry experiments are plotted for the NGD-CGA reporter strain without CUE2 overexpression (left), and with CUE2 overexpression (right). Bottom, northern blots of steady state mRNA levels for the same strains. See Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Northern (left)\u00a0and western blot (right)\u00a0data for the indicated strains and reporters. (B) Venn diagram of top outliers from the overexpression screen. (C) Raw flow cytometry data from\u00a0>4000 cells from empty vector and CUE2 overexpression strains. This data is from one replicate of the triplicates in Figure 1E.\n\nThe screen utilized two different NGD constructs with stalling motifs inserted into the HIS3 gene: the first contains 12 CGA codons (NGD-CGA) which are decoded slowly (Kuroha et al., 2010; Letzring et al., 2010) by the low-copy ICG-tRNAArg and the second contains 12 AAA codons (NGD-AAA) that mimic\u00a0the polyA tail and are known to trigger ribosome stalling and mRNA quality control in both yeast and mammalian systems (Arthur et al., 2015; Frischmeyer et al., 2002; Garzia et al., 2017; Guydosh and Green, 2017; Ito-Harashima et al., 2007; Juszkiewicz and Hegde, 2017; Sundaramoorthy et al., 2017; van Hoof et al., 2002) (Figure 1A). The (CGA)12 and (AAA)12 inserts result in robust threefold and twofold decreases in the GFP/RFP ratio, respectively, compared to the no insert (optimal, OPT) control (Figure 1B). Similar changes are also seen in GFP levels by western blot and in full-length mRNA levels by northern blot (Figure 1\u2014figure supplement 1A). As previously reported, deletion of the exosome auxiliary factor gene SKI2 stabilized the 5\u2019 decay fragment resulting from endonucleolytic cleavage associated with NGD reporters (Figure 1\u2014figure supplement 1A) (Doma and Parker, 2006). Finally, stalling during the synthesis of the FLAG-His3 fusion protein in the two stalling reporters (NGD-CGA and NGD-AAA) leads to degradation of the nascent peptide (Figure 1\u2014figure supplement 1A, FLAG panel).\n\nWe used high-throughput reverse genetic screens and reporter-synthetic genetic array (R-SGA) methods (Fillingham et al., 2009; Tong et al., 2001) to evaluate the effects of overexpressing annotated genes on GFP expression. We began by crossing strains carrying the control (OPT) and the two different no-go decay reporters (NGD-CGA and NGD-AAA) described in Figure 1A into the S. cerevisiae overexpression library (Douglas et al., 2012; Giaever et al., 2002; Hu et al., 2007). For each overexpression screen, we isolated diploid strains containing both the overexpression plasmid and our reporter. Selected strains were transferred to galactose-rich plates and the GFP and RFP levels were evaluated by fluorimetry. We plotted the results from the screens individually, comparing Z-scores for the log2(GFP/RFP) signals from each NGD reporter strain to Z-scores from the corresponding strain carrying the OPT reporter (Figure 1C\u20131D). Normalization with RFP intensity was used to eliminate non-specific factors that impact expression of both RFP and GFP.\n\nThe overexpression screen revealed a set of candidate genes that modulate GFP levels for the NGD reporters relative to the OPT reporter (Figure 1C\u20131D and Figure 1\u2014source data 1). Broadly, we see a stronger overlap in candidate overexpression genes among the NGD reporters than for either NGD reporter compared to the OPT reporter (Figure 1\u2014figure supplement 1B). By far, the strongest outlier by Z-score causing reduced GFP expression for both NGD reporters, without affecting the OPT reporter, resulted from overexpression of the gene CUE2 (Figure 1C\u20131D). Flow cytometry and northern analysis confirm that NGD-CGA reporter mRNA levels are substantially reduced upon CUE2 overexpression whereas the control RFP transcript is not affected (Figure 1E and Figure 1\u2014figure supplement 1C).\n\n### CUE2 domain structure and homology modeling\n\nThe domain structure of Cue2 reveals it to be a promising candidate for the missing endonuclease for NGD. Cue2 contains two conserved CUE (coupling of ubiquitin to ER degradation) ubiquitin-binding domains at the N-terminus (Kang et al., 2003), followed by two putative ubiquitin-binding domains (UBA* (ubiquitin-associated domain) and CUE* domain, respectively), and an SMR (small MutS-related) hydrolase domain at the C-terminus (Figure 2A). We performed alignments of the CUE and SMR domains of Cue2 using structure-based alignment tools (Figure 2\u2014figure supplement 1A; Figure 2\u2014figure supplement 1B) and found putative homologs in various kingdoms of life,\u00a0including the human NEDD4-binding protein 2, N4BP2. While the SMR domain of MutS family enzymes canonically functions as\u00a0a DNA-nicking hydrolase (Fukui and Kuramitsu, 2011), the SMR domain of SOT1 in plants exhibits RNA endonuclease activity (Zhou et al., 2017). Additionally, SMR domains show structural similarity to bacterial RNase E (Fukui and Kuramitsu, 2011). Alignments of the SMR domains of these and other proteins enabled us to identify conserved residues (Figure 2\u2014figure supplement 1B)\u00a0some of which are known to be critical for RNA endonuclease activity in the plant enzyme (Zhou et al., 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig2-v2.jpg)\n\n**Figure 2.:** (A) Domain organization of S. cerevisiae Cue2, with the \u2018NoSMR\u2019 mutant schematic below the WT Cue2. Putative ubiquitin binding domains indicated by asterisks. (B) Superimposition of homology model of Cue2-SMR domain (cyan) (templated on human N4BP2-SMR; PDB: 2VKC [Diercks et al., 2008]) on full-length IF3 (orange, PDB: 5LMQ [Hussain et al., 2016]). Positions of Arg-159 of IF3-CTD and Arg-402 of Cue2-SMR are indicated. (C) Putative positioning of Cue2-SMR in the context of IF3 and tRNAfMet bound to the small ribosome subunit. 30S PIC-2A (as described in Hussain et al., 2016) is light gray; mRNA is dark gray; tRNAfMet is blue; IF3 is orange; Cue2-SMR is cyan. (D) Cue2-SMR homology model in the same orientation as seen in Figure 2\u2014figure supplement 1F showing putative positions of Asp-348, His-350 and Arg-402 with 30S pre-initiation complex (PIC) with tRNAfMet density subtracted (PDB: 5LMQ, State 2A [Hussain et al., 2016]). (E) Mutational analysis of the Cue2-SMR domain. Cue2 WT and mutants are all HA tagged at the N-terminus. Three averages for individual sets of log2(GFP/RFP) values of flow cytometry experiments for each indicated overexpression construct are shown. p-Values for the mutant HA-CUE2 as compared to WT\u00a0HA-CUE2 are 0.007195, 0.02602, 0.03857, 0.7788, and 0.002127 for D348A, H350A, R402A, R402K, D348A/F349A/H350A, respectively. (F\u2013G) Northern blot analysis of the indicated strains, with full-length mRNA and the 5\u2019 (F) and 3\u2019 (G) fragments labeled; RFP probed for normalization. (H) Northern blot analysis of 5\u2019 NGD-CGA cleavage fragments in the ski2\u0394 strain with the indicated mutations made at the endogenous CUE2 locus; RFP probed for normalization. See Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Sequence alignment of CUE domains of representative proteins. Conserved residues depicted in red on yellow background. Putative ubiquitin binding domains of\u00a0Cue2\u00a0indicated by asterisks. (B) Sequence alignment of SMR domains of representative proteins. Identical residues shown in white on red background; conserved residues shown in red on yellow background. (C) Structure-based sequence alignment of the SMR domain of Saccharomyces cerevisiae Cue2 (residues 344\u2013440) with the C-terminal domain (CTD) of Thermus thermophilus translation initiation factor 3 (IF-3) (residues 82\u2013171). Identical residues depicted in white on red background; conserved residues depicted in red on yellow background. (D) Superimposition of the CTD of IF3 (orange, PDB: 1TIG [Biou et al., 1995]) and a homology model of the SMR domain of Cue2 (cyan) showing structural conservation between the two domains. (E) Modeling of the Cue2-SMR homology model in the context of IF3 and tRNAfMet bound 30S pre-initiation complex (PIC) (PDB: 5LMQ, State 2A [Hussain et al., 2016], also see Figure 2C\u2013D). Light gray, 30S; dark gray, mRNA; blue, tRNAfMet; orange, IF3; cyan, Cue2-SMR. Vignettes show the position of Arg-159 of IF3 near the AUG-start codon at the P site, with the putative position of the catalytic Arg-402 of Cue2-SMR in the vicinity of the mRNA, based on homology modeling. (F) Alternate view of IF3-CTD (top panel) bound to 30S pre-initiation complex (PIC) with the tRNAfMet density subtracted (PDB: 5LMQ, State 2A, [Hussain et al., 2016]), and N4BP2 SMR domain (bottom panel) showing putative positions of the corresponding Asp-1692, His-1694 and Arg-1731 residues (PDB: 2D9I [Diercks et al., 2008]). (G) Western blot analysis of HA-tagged WT and mutant Cue2 overexpression levels for flow cytometry data in Figure 2E. (H) Western blot analysis of HA-tagged endogenous WT and mutant Cue2 levels for northern blot analysis in Figure 2H.\n\nHeuristic searches of the structurally defined SMR domain of the mammalian homolog of Cue2 (N4BP2) (Diercks et al., 2008) against known structures in the Protein Data Bank found it to be structurally homologous to the C-terminal domain (CTD) of bacterial Initiation Factor 3 (Biou et al., 1995) (Figure 2B and Figure 2\u2014figure supplement 1C\u2013D). During initiation in bacteria, IF3 binds to the 30S pre-initiation complex (PIC) and helps position the initiator tRNA at the AUG start codon; the CTD of IF3 binds in close proximity to the P and A sites of the small subunit, closely approaching the mRNA channel (Hussain et al., 2016). We aligned the Cue2-SMR homology model with the structure of the IF3-CTD on the ribosome and observed that conserved residues D348, H350, and R402 are positioned along the mRNA channel in this model (Figure 2C\u20132D and Figure 2\u2014figure supplement 1E\u2013F) and thus represent potential residues critical for endonucleolytic cleavage activity; additionally, R402 had previously been implicated in the RNA cleavage activity of other SMR domains (Zhou et al., 2017).\n\n### Characterizing roles of CUE2 in NGD in vivo\n\nWe performed several different experiments to ask if these conserved residues are necessary for Cue2 function. First, we generated mutations in HA-tagged Cue2 and performed flow cytometry on the NGD-CGA reporter under overexpression conditions for the different Cue2 variants. We find that individually mutating the conserved residues D348, H350, and R402 to alanine (A) causes a modest increase in GFP expression relative to CUE2 WT, whereas the R402K mutation (which maintains a positively charged amino acid) has no discernible effect (Figure 2E). Mutating residues 348 through 350, which includes the conserved residues D348 and H350, nearly restores GFP reporter signal in this assay (Figure 2E). Importantly, each of these variants is expressed at similar levels (Figure 2\u2014figure supplement 1G). These data suggest a potential role for residues D348, H350, and R402 in the SMR domain of Cue2 in reducing levels of problematic mRNAs.\n\nWe next asked if Cue2 is necessary for the previously documented endonucleolytic cleavage of the NGD reporter transcripts. In order to visualize the mRNA fragments resulting from cleavage, we deleted either the 3\u2019 - 5\u2019 mRNA decay auxiliary factor, SKI2, or the major 5\u2019 - 3\u2019 exonuclease, XRN1, to stabilize the 5\u2019- and 3\u2019-fragments, respectively (Doma and Parker, 2006) (Figure 2F; lane 1 and Figure 2G; lane 1). Upon deletion of CUE2 in the appropriate yeast background, we see that both of these decay intermediates disappear (Figure 2F; lane 2 and Figure 2G; lane 2).\n\nIn order to further investigate the role of the specific amino acids proposed to be catalytically critical, we modified CUE2 at its endogenous chromosomal locus. We\u00a0added an HA tag to allow us to follow native CUE2 protein levels and generated mutations in\u00a0CUE2 in a ski2\u0394 background. As a first test, we deleted the C-terminal portion of CUE2 comprising the SMR domain and revealed a complete loss of endonucleolytic cleavage (Figure 2H, lane 3). To further refine this analysis, we made combined mutations in CUE2 at D348 and H350 and observed a complete abolishment of endonucleolytic cleavage activity\u00a0(Figure 2H,\u00a0lane\u00a04). Western analysis confirmed that protein expression levels from the CUE2 locus are equivalent for these different protein variants (Figure 2\u2014figure supplement 1H). These data provide strong support for a hydrolytic role for Cue2 in the endonucleolytic cleavage of problematic mRNAs in the NGD pathway.\n\n### Contribution of Cue2 to NGD is increased in specific genetic backgrounds\n\nSurprisingly, deletion of CUE2 in the WT, ski2\u0394 or xrn1\u0394 background does not demonstrably impact GFP or steady-state full-length mRNA levels (Figure 3A\u20133B, Figure 2F, or Figure 2G, respectively) suggesting that the endonucleolytic decay pathway is not responsible for the majority of the three-fold loss in mRNA levels observed for this NGD reporter (relative to OPT,\u00a0Figure 1\u2014figure supplement 1A). However, we see that deleting XRN1 alone greatly restores NGD-CGA reporter mRNA levels while deleting SKI2 alone has very little effect (Figure 3A\u20133B). These results together suggest that the majority of mRNA degradation observed for the NGD-CGA reporter is mediated by canonical decay pathways, mostly through Xrn1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig3-v2.jpg)\n\n**Figure 3.:** (A) Northern blot analysis of full length OPT and NGD-CGA reporter levels in the indicated strains. (B) Quantitated northern blot signals (in triplicate) from full length GFP/RFP mRNA levels for the indicated strains are plotted.\n\nA key insight into the regulation of decay by these distinct mRNA decay pathways (endo- and exonucleolytic) came from examining decay intermediates in strains lacking the factor Slh1. Slh1 is a member of the Ribosome Quality control\u00a0Trigger (RQT)\u00a0complex that was previously implicated in regulating NGD (Ikeuchi et al., 2019; Matsuo et al., 2017). This large protein (~200 kDa) is homologous to helicases implicated in RNA decay and splicing including Ski2 and Brr2, respectively (Johnson and Jackson, 2013). Slh1 contains two RecA-like helicase cassettes with DEAD box motifs and a K to R mutation in the first RecA motif disrupts targeting of the nascent peptide on problematic mRNAs to proteolytic decay by the RQC. Based on these observations, Slh1 has been proposed to directly or indirectly dissociate stalled ribosomes via its ATPase activity and to thereby target them for the RQC (Matsuo et al., 2017).\n\nWe found that in the ski2\u0394 slh1\u0394 and xrn1\u0394 slh1\u0394 strains, we see a sizeable build-up of endonucleolytically cleaved mRNA fragments (Figure 2F; lane 3 and Figure 2G; lane 3). Consistent with the recent study by Ikeuchi et al. (2019), we also see smearing of the signal representative of shorter 5\u2019 and longer 3\u2019 fragments due to additional cleavage events occurring upstream of the primary stall site in the absence of SLH1. Importantly, we also observe a robust decrease in full-length mRNA levels upon deletion of SLH1 (Figure 2F; lane 3 and Figure 2G; lane 3). These data suggest a model wherein Slh1 activity somehow competes with Cue2-mediated endonucleolytic cleavage. To ask whether the increased endonucleolytic cleavage seen in the SLH1 deletion background is the result of Cue2 activity, we deleted CUE2 in the xrn1\u0394 slh1\u0394 background and observed a complete loss of the decay intermediate and a restoration of full-length mRNA levels (Figure 2G; lane 4). These data provide strong evidence that the action of Slh1 negatively regulates the assembly of a potent Cue2 substrate though the molecular mechanism for this regulation is not defined.\n\n### Ribosome profiling provides high-resolution view of Cue2 cleavage sites\n\nWe next utilized ribosome profiling to assess the role and specificity of Cue2 in endonucleolytic cleavage of problematic mRNAs. Ribosome profiling was performed in various genetic backgrounds where the NGD-CGA reporter construct was included to follow the process of NGD on a well-defined mRNA substrate. The approach benefits from our ability to distinguish three distinct sizes of ribosome-protected mRNA fragment (RPF) that correspond to three different states of the ribosome during translation. 16 nucleotide (nt) RPFs correspond to ribosomes that have translated to the truncated end of an mRNA in the cell, usually an mRNA that has been endonucleolytically processed; these 16 nt RFPs are enriched in a dom34\u0394 strain since these are established targets for Dom34-mediated ribosome rescue (Arribere and Fire, 2018; Guydosh and Green, 2017; Guydosh and Green, 2014; Guydosh et al., 2017). 21 and 28 nt RPFs are derived from ribosomes on intact mRNA, with the two sizes corresponding to different conformational states of ribosomes in the elongation cycle (Lareau et al., 2014; Wu et al., 2019b). In our modified ribosome profiling library preparation (Wu et al., 2019b)\u00a021 nt RPFs represent classical/decoding ribosomes waiting for the next aminoacyl-tRNA whereas the 28 nt RPFs primarily represent ribosomes in a rotated/pre-translocation state. Throughout this study, we performed ribosome profiling in a ski2\u0394 background to prevent 3\u2019\u22125\u2019 exonucleolytic degradation by the exosome and enable detection of mRNA decay intermediates. We note that deleting SKI2 generally stabilizes prematurely polyadenylated and truncated mRNAs in the cell, as seen previously (Tsuboi et al., 2012; van Hoof et al., 2002); therefore, use of this background likely enhanced Cue2 cleavage on these mRNA substrates.\n\nIn a first set of experiments, we compare the distributions of RPFs in ski2\u0394 strains to strains additionally lacking DOM34, or DOM34 and CUE2; in each case, we separately consider the different RPF sizes (16, 21 and 28,\u00a0Wu et al., 2019a copy archived at https://github.com/elifesciences-publications/Cue2eLife)\u00a0to determine the state of the ribosome on these sequences. In ski2\u0394, we observe a clear accumulation of ribosome density at the (CGA)12 stall site (in the 21 nt RPF track) in our reporter (Figure 4A) consistent with ribosome stalling at this site. Looking first within the actual (CGA)12 codon tract, we see a quadruplet of 21 nt RPF peaks from the second\u00a0to the fifth CGA codon (Figure 4A,\u00a0middle\u00a0panel). Because of difficulties in mapping monosome\u00a0reads to repetitive sequences such as (CGA)12, we also isolated longer\u00a0RPFs from a minor (<5% of total reads on reporter) population of stacked disome species (Guydosh and Green, 2014) and show that although some ribosomes move into the subsequent CGA codons, the principal ribosome accumulation occurs between the second\u00a0and the fifth codon (Figure 4\u2014figure supplement 1). While 21 nt RFPs are enriched on CGA codons, 28 nt RPFs are not (Figure 4A, compare middle and bottom panels), indicating that most ribosomes found at the CGA codons are waiting to decode the next aminoacyl-tRNA; these observations are consistent with the fact that CGA codons are poorly decoded (Letzring et al., 2010). The 21 nt RPF quadruplet at the CGA cluster represents the stalled \u2018lead\u2019 ribosome in its classical (unrotated) conformation, which is consistent with recent cryo-EM structures of collided ribosomes (Ikeuchi et al., 2019; Juszkiewicz et al., 2018). About 30 nts upstream of these lead ribosomes, we observe the accumulation of 28 nt RPFs that correspond to colliding ribosomes in a rotated state (Figure 4A, bottom panel), also in agreement with the ribosome states recently reported in cryo-EM structures of collided disomes. In the dom34\u0394 ski2\u0394 strain (where 16 nt RPFs are stabilized), we observe a strong quadruplet of 16 nt RPF peaks exactly 30 nts upstream of the quadruplet of 21 nt RPFs (Figure 4B), indicative of endonucleolytic cleavage events occurring upstream of the (CGA)12\u2013stalled ribosomes. The precise 30 nt distance between the 16 nt RPFs and the downstream 21 nt RPFs is consistent with the measured distance between the A sites of two colliding ribosomes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013F) 16, 21 and 28 nt RPFs mapped to NGD-CGA reporter in ski2\u2206 (A), dom34\u2206 ski2\u2206 (B), cue2\u2206 dom34\u2206 ski2\u2206 (C), slh1\u2206 ski2\u2206 (D), slh1\u2206 dom34\u2206 ski2\u2206 (E), and cue2\u2206 slh1\u2206 dom34\u2206 ski2\u2206 (F) strains with schematic depicting Cue2-mediated cleavage in the A sites of collided ribosomes. (G) Schematic of the precise Cue2 cleavage location on the mRNA, relative to collided ribosomes. (H) Comparison of the combined 21 and 28 nt ribosome occupancies on GFP, from 300 nt upstream of the (CGA)12 to the end of the (CGA)12 sequence, normalized to RFP for the indicated strains (n\u00a0=\u00a02). p-value from Student\u2019s t-test is indicated by asterisks. **, p<0.01. See Figure 4\u2014figure supplements 1\u20132.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Comparison between monosome 21 nt RPFs and disome footprints. Disome footprints show predominant ribosome stall site at the 2nd to 5th CGA codons.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** 16, 21 and 28 nt RPFs on the NGD-CGA reporter from hel2\u2206 dom34\u2206 ski2\u2206 (A) and hel2\u2206 slh1\u2206 dom34\u2206 ski2\u2206 (B) strains.\n\nTo address the role of Cue2 as the endonuclease, we examined the same collection of RPFs in the cue2\u0394 dom34\u0394 ski2\u0394 strain. In this background, the 16 nt RPFs indicative of endonucleolytic cleavage are dramatically reduced in abundance while the distributions of 21 and 28 nt RPFs are largely unaffected (Figure 4C). These data argue that endonucleolytic cleavage occurs precisely in the A site of the collided, rotated ribosome and requires Cue2. A high-resolution view of the site of cleavage within the A site codon is found in the model in Figure 4G. These observations are broadly consistent with recent RACE analyses (Ikeuchi et al., 2019) and with our structural homology modeling placing Cue2 in the decoding center of the ribosome (Figure 2C and 2D).\n\nBased on our observations that deletion of Slh1 increases utilization of Cue2 for processing of problematic mRNAs, we next examined the distribution of RPFs on the NGD-CGA reporter in yeast strains lacking SLH1. In the slh1\u0394 ski2\u0394 strain, the pattern of RPF distributions is broadly similar to what we observed in the ski2\u0394 strain (Figure 4D compared to 4A): 21 nt RPFs accumulate on the second through fifth CGA codons and 28 nt RPFs accumulate 30 nts behind the lead ribosome; we also see modest accumulation of RPFs downstream of the stalling sequence as previously reported (Figure 4D) (Sitron et al., 2017). SLH1 deletion does not stabilize 16 nt RPFs, and therefore, likely does not act on cleaved Cue2-products (Figure 4D compared to 4A). When we delete DOM34 in the slh1\u0394 ski2\u0394 background (slh1\u0394 dom34\u0394 ski2\u0394), we see a dramatic accumulation of 16 nt RPF peaks (again, as a quadruplet, although with an altered relative distribution) behind the lead ribosomes (Figure 4E compared to 4B, top panels, note the larger y-axis scale in Figure 4E and 4F compared to 4B and 4C). These data are consistent with the substantial increase in cleavage we see via northern blot (Figure 2F and 2G) and previous findings that deletion of the RQT complex causes somewhat distinct cleavage events (Ikeuchi et al., 2019). Importantly, deletion of CUE2 in the slh1\u0394 dom34\u0394 ski2\u0394 background leads to a near complete loss of the 16 nt RPFs (Figure 4F, top panel) and an enrichment of 21 and 28 nt RPFs.\n\nLastly, consistent with earlier studies showing that endonucleolytic cleavage events associated with NGD depend on the E3 ligase Hel2 (Ikeuchi et al., 2019), we show that deletion of HEL2 in both dom34\u0394 ski2\u0394 and slh1\u0394 dom34\u0394 ski2\u0394 backgrounds leads to a complete loss of 16 nt RPFs (Figure 4\u2014figure supplement 2A and f, respectively).\n\n### In vitro reconstitution of Cue2 cleavage on isolated colliding ribosomes\n\nTo test if Cue2 cleaves mRNA directly, we performed in vitro cleavage assays with the heterologously expressed SMR domain (and R402A mutant) of Cue2 and purified colliding ribosomes. To isolate the colliding ribosomes, cell-wide ribosome collision events were induced using low-dose cycloheximide treatment of growing yeast (Simms et al., 2017b). We both optimized the yield and ensured that the purified Cue2-SMR domain was the only source of Cue2 in our experiment by isolating ribosomes from the cue2\u0394\u00a0slh1\u0394 dom34\u0394 ski2\u0394 strain; these cells also carried and expressed the NGD-CGA reporter. Since collided ribosomes are resistant to general nucleases (Juszkiewicz et al., 2018), MNase digestion of lysates collapses elongating ribosomes from polysomes to monosomes but spares those with closely packed (nuclease resistant) ribosomes (Figure 5\u2014figure supplement 1). As anticipated, only cells treated with low doses of cycloheximide yielded a substantial population of nuclease resistant, or collided ribosomes after MNase digestion (Figure 5\u2014figure supplement 1, black trace). We isolated nuclease-resistant trisomes from a sucrose gradient to serve as the substrate for our in vitro reconstituted cleavage experiment.\n\nWe purified the isolated SMR domain of Cue2 based on our in vivo evidence that this domain represents the functional endonuclease portion of the protein. We added the purified SMR domain of Cue2 to the isolated nuclease-resistant trisomes and resolved the products of the reaction on a sucrose gradient that optimally resolves trisomes from monosomes and disomes. While we initially isolated trisomes, it is clear that the \u2018untreated\u2019 sample (black trace) contains trisomes, as well as disomes and monosomes; this may be the result of cross-contamination of those peaks during purification or the instability of the trisome complex. Nevertheless, on addition of Cue2-SMR (WT) (pink trace), we observe a substantial loss of trisomes and a corresponding increase in monosomes and disomes (Figure 5A), while on addition of the Cue2 SMR-R402A mutant (orange trace), we observe a more modest decrease in trisomes (Figure 5A). These results provide initial in vitro evidence that the SMR (hydrolase) domain of Cue2 cleaves the mRNA within a stack of colliding ribosomes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig5-v2.jpg)\n\n**Figure 5.:** (A) Absorbance at 260 nm (y-axis) for sucrose gradient of nuclease resistant trisomes treated with no enzyme (black), the SMR domain of Cue2 (pink), or the SMR-R402A mutant Cue2 (orange). (B) In vivo 16 nt RPFs from the slh1\u2206 dom34\u2206 ski2\u2206 strain (cyan) aligned relative to the 60\u201365 nt RPFs from the combined fractions (mono-, di- and trisomes) treated with no enzyme (black), SMR domain (pink), or R402-SMR (orange) in vitro. Arrowheads indicate the positions where the in vitro and the in vivo cleavages coincide. See Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Sucrose gradients of undigested lysates from cells with low-dose cycloheximide treatment (blue), MNase digested lysates from cells with no drug treatment (gray), and MNase digested lysates from cells with low-dose cycloheximide treatment (black). A260s are normalized to area under the curve, excluding mRNPs.\n\nTo extend these observations, we mapped more precisely the in vitro cleavage sites of the SMR domain by sequencing the ribosome-protected mRNA fragments from the untreated and SMR-treated samples. Because\u00a0the strain used to prepare the cycloheximide-induced colliding ribosomes also expressed the NGD-CGA reporter, we anticipated that within our population of bulk colliding ribosomes would be a sub-population of colliding ribosomes on our reporter, also subject to cleavage by the\u00a0recombinant SMR domain. We performed RNA-seq by standard means from the trisomes treated with or without the Cue2 SMR domain and aligned the 3\u2019 ends of the RNA reads to the reporter sequence. In the sample treated with the wild-type Cue2-SMR domain, we see a striking accumulation of 3\u2019 fragment ends that maps precisely where the strong cleavage sites were reported (in the A site of the colliding ribosome) in the ribosome profiling data for the same strain (slh1\u0394 dom34\u0394 sk2i\u0394); reassuringly, these cleavage events are not seen in the sequencing data for the Cue2 SMR-R402A mutant or for the no enzyme control (Figure 5B). The remarkable agreement between the in vivo-based ribosome profiling data and the in vitro-based cleavage data provides strong support for the identity of Cue2 as the endonuclease involved in NGD.\n\n### Ribosome profiling provides evidence that Slh1 inhibits ribosome accumulation on problematic mRNAs\n\nOur analyses (northern blots and profiling) provide strong evidence that deletion of SLH1 in yeast results in increased levels of Cue2 cleavage on our NGD-CGA reporter. Multiple molecular mechanisms could be responsible for this outcome. For example, a simple model might involve direct competition on the colliding ribosomes wherein Slh1 binding simply blocks Cue2 from binding to the same site. Another model could be that Slh1 functions to clear colliding ribosomes, dissociating large and small subunits from one another, and thus allowing the released peptidyl-tRNA:60S complex to be targeted for RQC (Matsuo et al., 2017). Lastly,\u00a0earlier studies have argued that Slh1 functions as a translational repressor, though the dependence of RQC activity on Slh1 function argues against this model (Searfoss et al., 2001).\n\nWe used ribosome profiling to directly assess ribosome occupancy on our problematic mRNA sequence as a function of Slh1 activity. As described above, when we compared 16 nt RPF accumulation on the NGD-CGA reporter in a ski2\u2206 or slh1\u2206 ski2\u2206 strain (Figure 4A and 4C) we saw no differential accumulation of these RPFs that might be indicative of Slh1 function on ribosomes trapped on truncated mRNAs. However, when we compared RPFs on the uncleaved mRNAs (i.e. the 21 and 28 nt RPFs) in the cue2\u0394 dom34\u0394 ski2\u2206 and slh1\u0394 cue2\u0394 dom34\u0394 ski2\u2206 strains, we observed that SLH1 deletion results in a substantial build-up of RPFs both at the stalling site (21 nt RPFs) (compare middle panels, Figure 4C and 4F) and upstream (28 nt RPFs) of the stalling site (compare bottom panels, Figure 4C and 4F\u00a0and quantitation in 4H). These data were normalized to overall mRNA levels and reveal more than a twofold increase in ribosome occupancy when SLH1 is deleted. These data are consistent with the proposed model that Slh1 prevents the accumulation of colliding ribosomes (Matsuo et al., 2017) thereby limiting the availability of Cue2 substrates.\n\n### Genome-wide exploration of endogenous mRNA substrates of Cue2\n\nOne possible endogenous target class for Cue2 is the set of prematurely polyadenylated mRNAs (where polyadenylation happens within the ORF) that are commonly generated by aberrant RNA processing events in the nucleus. We looked for such candidates in our data sets by first identifying genes that exhibit evidence of untemplated A\u2019s within the monosome footprint population (i.e. ribosomes that are actively translating prematurely polyadenylated mRNAs) (Figure 6A, pink dots). These candidate genes nicely correlated with those previously identified from 3\u2019 end sequencing approaches (Ozsolak et al., 2010; Pelechano et al., 2013) (e.g. see data for two specific mRNAs RNA14 and YAP1 in Figure 6\u2014figure supplement 1A) and from ribosome profiling approaches exploring Dom34 function (Guydosh and Green, 2017). We next identify Cue2-dependent 16 nt RPFs in a ski2\u2206 dom34\u2206 strain\u00a0(Figure 6A, orange dots) as well as in a ski2\u2206 dom34\u2206 slh1\u2206 background (Figure 6\u2014figure supplement 1B, orange dots) and see that they are substantially enriched in the prematurely polyadenylated mRNAs (Figure 6A and Figure 6\u2014figure supplement 1B, red dots). We note that in the ski2\u2206 dom34\u2206 background a good fraction (21/55) of the prematurely polyadenylated genes are substantially reduced in 16 nt RPFs upon CUE2 deletion (Figure 6B). Moreover, we show that for well-defined mRNA targets RNA14 and YAP1, the Cue2-dependent 16 nt RPFs are positioned as anticipated directly upstream of the previously characterized sites of premature polyadenylation (Figure 6C and Figure 6\u2014figure supplement 1C) (Guydosh and Green, 2017; Pelechano et al., 2013). These data support a role for Cue2-mediated endonucleolytic cleavage on such problematic transcripts. Although the SKI complex and the exosome decay NSD substrates (Frischmeyer et al., 2002; van Hoof et al., 2002), Cue2-cleavage may be one mechanism for cells to initiate this decay.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig6-v2.jpg)\n\n**Figure 6.:** (A) Ratio of 16 nt over 20\u201332 nt RPFs plotted in dom34\u2206 ski2\u2206 and cue2\u2206 dom34\u2206 ski2\u2206 strains. Genes in orange correspond to those with reproducibly decreased 16 nt RPFs upon CUE2 deletion. Pink dots indicate genes where premature polyadenylation was identified empirically from sequencing data. Red dots indicate the overlap between the pink and orange dots. NGD-CGA reporter, YAP1 and RNA14 are labeled and shown in green, blue and purple, respectively. (B) Overlap (red) between annotated prematurely polyadenylated genes (pink) and genes on which CUE2 deletion had a substantial effect on 16 nt RPFs (orange). (C) Gene model examples of 16 nt RPFs mapped to genes, RNA14 (left) and YAP1 (right), in dom34\u2206 ski2\u2206 and cue2\u2206 dom34\u2206 ski2\u2206 strains with known premature polyadenylation sites indicated (gray traces; Pelechano et al., 2013). See Figure 6\u2014figure supplement 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Examples of reads with untemplated A\u2019s on RNA14 (top) and YAP1 (bottom). (B) Ratio of 16 nt over 20\u201332 nt RPFs plotted from slh1\u2206 dom34\u2206 ski2\u2206 and cue2\u2206 slh1\u2206 dom34\u2206 ski2\u2206 strains. Genes in orange indicate those with reproducibly decreased 16 nt RPFs upon CUE2 deletion. Pink dots indicate genes with premature polyadenylation identified empirically. NGD-CGA reporter, YAP1 and RNA14 are labeled and shown in green, blue and purple, respectively (C) Examples of 16 nt RPFs mapped to genes, RNA14 (left) and YAP1 (right) in slh1\u2206 dom34\u2206 ski2\u2206 and cue2\u2206 slh1\u2206 dom34\u2206 ski2\u2206 strains with known premature polyadenylation sites (gray traces, from Pelechano et al., 2013).\n\n## Discussion\n\nCells have evolved a complex set of mechanisms to recognize and resolve ribosomes stalled on problematic mRNAs and to target the mRNAs for decay. The data presented here identify and characterize Cue2 as the endonuclease critical for NGD in yeast. We demonstrate using a wide range of in vivo and in vitro approaches that Cue2 is necessary and sufficient for cleavage of mRNAs loaded with stalled, colliding ribosomes. Structural homology modeling with the C-terminal domain of IF3 positions the catalytic SMR domain of Cue2 in the A site of the small ribosome subunit (Figure 2C and 2D; Figure 2\u2014figure supplement 1D to 1F). And, according to this model, the conserved amino acids in Cue2 that closely approach mRNA in the A site (Figure 2D; Figure 2\u2014figure supplement 1B and 1C) are indeed critical for efficient endonuclease cleavage activity (Figure 2E and 2H). Although mutating any one of the residues D348, H350, or R402, did not completely abolish Cue2 activity, mutating a combination of these residues or removing the entire SMR domain from the protein had a very strong effect (Figure 2E and 2H). Other studies have argued that the NGD endonuclease leaves a cyclic 3\u2019 phosphate and a 5\u2019 hydroxyl, products that are consistent with Cue2 being a metal independent endonuclease (Navickas et al., 2018). As metal independent RNases typically depend on mechanisms where RNA is contorted to act upon itself, it is often difficult to identify a single essential catalytic residue. Interestingly, N4BP2, the mammalian homolog of Cue2, contains a PNK domain; this kinase activity could be required for the further degradation of the mRNA through Xrn1, which depends on 5\u2019 phosphate groups.\n\nStrong support for the modeling of Cue2 in the A site came from the high-resolution ribosome profiling data establishing that Cue2 cleaves mRNAs precisely in the A site of the \u2018colliding\u2019 ribosome (Figure 4). We additionally find by profiling that the lead ribosome is stalled in an unrotated state (21 nt RPFs), unable to effectively accommodate the ICG-tRNAArg\u00a0that should normally decode the CGA codon in the A site in concordance with previous studies on problematic codon pairs (Wu et al., 2019b). We also find that the lagging ribosomes are found in a pre-translocation or rotated state (28 nt RPFs). These different conformational states of the colliding ribosomes identified by ribosome profiling correlate with those defined in recent cryo-EM structures of colliding ribosomes (Ikeuchi et al., 2019; Juszkiewicz et al., 2018). We note that our data and existing structures suggest that Cue2 requires partial displacement of the peptidyl-tRNA substrate positioned in the A site of the colliding ribosome in order to access the mRNA. Recent studies identify residues in Rps3 at the mRNA entry tunnel that are required for NGD cleavage consistent with the idea that Cue2 binds within the ribosome mRNA channel to promote cleavage (Simms et al., 2018).\n\nAnother structural feature of Cue2 is that it possesses two highly conserved CUE domains at the N-terminus and up to two putative ubiquitin-binding domains prior to the proposed catalytic SMR domain. Endonucleolytic cleavage of problematic mRNAs was previously shown to depend on the function of the E3 ligase Hel2 which ubiquitinates several small subunit ribosome proteins (Ikeuchi et al., 2019)\u00a0and our ribosome profiling data provides strong support for this model (Figure 4\u2014figure supplement 2). We suspect that the ubiquitin-binding domains of Cue2 might recognize Hel2-ubiquitinated sites on the stacked ribosomes thus allowing recruitment of the SMR domain into the A site of the colliding ribosome. We can imagine that recognition of ubiquitin chains by Cue2 might involve multiple ubiquitinated sites on a single collided ribosome or those found on neighboring ribosomes. These conserved and putative ubiquitin-binding domains might also function within Cue2 itself to inhibit promiscuous activity of the endonuclease in the absence of an appropriate target, a\u00a0possibility\u00a0that prompted us to perform in vitro cleavage experiments with the isolated SMR domain of Cue2.\n\nIn addition to the identification and characterization of the key endonuclease involved in NGD, our results help to clarify the relative contributions of decay pathways for problematic mRNAs. We show that canonical exonucleolytic processing of problematic mRNAs is the dominant pathway on our NGD-CGA reporter, with the strongest contributions from Xrn1 rather than the exosome (Figure 3). Importantly, we find that the Cue2-mediated endonucleolytic pathway is activated in genetic backgrounds lacking the helicase Slh1 (a member of the previously identified RQT complex) (Figure 2F\u20132G). These ideas are brought together in the model in Figure 7 that outlines how multiple decay pathways converge to bring about the decay of problematic mRNAs. We anticipate that mRNAs with different problematic features might differentially depend on these pathways as suggested by previous studies (Tsuboi et al., 2012). Importantly, however, our identification of the endonuclease for NGD will allow subsequent studies to better disentangle the distinct contributions from multiple decay machineries in the cell. A challenge moving forward will be to identify how problematic mRNAs with colliding ribosomes signal to decapping factors and Xrn1 to initiate degradation (indicated with question marks in the model in Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/49117/elife-49117-fig7-v2.jpg)\n\n**Figure 7.:** Ribosome stalling triggers decay either by the exonuclease Xrn1 or by the endonuclease Cue2. The relative contributions of these pathways are modulated by the activity of Slh1 (member of the RQT complex). Ribosomes are gray; open reading frame is yellow; \u2018xxx\u2019 indicates a stalling sequence in the mRNA.\n\nOur genetic insights also lead us to speculate that under conditions where cells are overwhelmed by colliding ribosome complexes, for example under stressful RNA-damaging conditions (Simms et al., 2014), that the RQT machinery might become limiting and that there will be an increased role for Cue2-mediated endonucleolytic processing. Previous genetic screens reveal increased sensitivity of CUE2 deletion strains to ribosome-targeted compounds (Alamgir et al., 2010; Mircus et al., 2015). More generally, the strong conservation of Cue2 throughout eukaryotes argues that this endonucleolytic processing pathway plays a fundamental role in biology.\n\nPrevious studies provide strong evidence that the activity of the RQT complex is critical in targeting nascent peptides on problematic mRNAs for degradation via the RQC (Matsuo et al., 2017; Sitron et al., 2017) through ribosome rescue events that generate a dissociated 60S-peptidyl-tRNA complex. Our ribosome profiling results indicate that ribosome occupancies on problematic mRNAs increase on deletion of SLH1 (Figure 4C, 4F and 4H) consistent with the possibility that Slh1 functions directly or indirectly to dissociate ribosomes. The increased Cue2-dependent cleavage (Figure 2F\u20132G and Figure 4B and 4E) that we observe in slh1\u2206 background suggests that an increase in the density of collided ribosomes makes an ideal Cue2 substrate.\n\nTaken together, we suggest that Slh1 and Dom34 may both target collided ribosomes for the RQC, although their specificities may be somewhat distinct. For example, Slh1 may use its helicase function to target ribosomes on intact mRNAs with an accessible 3\u2019 end, while Dom34 targets those ribosomes on truncated mRNAs that are inaccessible to Slh1 activity. In this view, a critical role of Cue2-mediated endonucleolytic cleavage is to provide another pathway for ribosome dissociation that can target nascent peptides for RQC. Previous studies provide strong support for the idea that Dom34 preferentially rescues ribosomes that are trapped on truncated mRNAs (Guydosh and Green, 2014; Shoemaker et al., 2010) and in vitro studies have connected this rescue activity of Dom34 to downstream RQC functions (Shao et al., 2013). These two distinct rescue pathways, one on intact mRNA by the RQT complex (and Slh1) and the other on endonucleolytically cleaved mRNA by Dom34, might provide the cell with redundant means to deal with toxic mRNP intermediates.\n\nProteotoxic stress is a critical problem for all cells and elaborate quality control systems have evolved to minimize its effects as made clear by the exquisite sensitivity of neurons to defects in these pathways (Bengtson and Joazeiro, 2010; Ishimura et al., 2014). The synergistic contributions of exonucleases and endonucleases that we delineate here for targeting problematic mRNAs for decay are critical for ensuring that proteotoxic stress is minimized. Future studies will delineate the biological targets and conditions in which these systems function.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>GFP primary antibody \u2013 mouse monoclonal</td>\n      <td>Takara</td>\n      <td>632381</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FLAG primary antibody \u2013 mouse monoclonal</td>\n      <td>Sigma</td>\n      <td>F3165</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PGK1 primary antibody \u2013 mouse monoclonal</td>\n      <td>Invitrogen</td>\n      <td>22C5D8</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>HA primary antibody \u2013 rat monoclonal</td>\n      <td>Roche</td>\n      <td>11867423001</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>eEF2 primary antibody \u2013 rabbit polyclonal</td>\n      <td>Kerafast</td>\n      <td>ED7002</td>\n      <td>(1:10000)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Rstudio</td>\n      <td>http://www.rstudio.com/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Graphpad prism</td>\n      <td>www.graphpad.com</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>skewer</td>\n      <td>Jiang et al., 2014</td>\n      <td>Version 0.2.2</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>seqtk</td>\n      <td>https://github.com/lh3/seqtk</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>STAR</td>\n      <td>Dobin et al., 2013</td>\n      <td>STAR_2.5.3a_modified</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageQuant TL</td>\n      <td>GE Healthcare Life Sciences</td>\n      <td>Version 8.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Spotfinder</td>\n      <td>Saeed et al., 2003</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SGAtools</td>\n      <td>http://sgatools.ccbr.utoronto.ca/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom software</td>\n      <td>https://github.com/ greenlabjhmi/Cue2eLife</td>\n      <td>yeast_KD2.gff</td>\n      <td>Find information on use in Materials\u00a0and\u00a0methods section 'Analysis of ribosome profiling data'</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom software</td>\n      <td>https://github.com/greenlabjhmi/Cue2eLife</td>\n      <td>StarAlignment_KD2.py</td>\n      <td>Find information on use in Materials\u00a0and\u00a0methods section 'Analysis of ribosome profiling data'</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Custom software</td>\n      <td>https://github.com/greenlabjhmi/Cue2eLife</td>\n      <td>Screen_data_analysis.R</td>\n      <td>Find information on use in Materials\u00a0and\u00a0methods section 'Screen data analysis'</td>\n    </tr>\n    <tr>\n      <td>Strains</td>\n      <td>All strains</td>\n      <td>Supplementary file 1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>All plasmids</td>\n      <td>Supplementary file 1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence based reagent</td>\n      <td>All primers and oligos</td>\n      <td>Supplementary file 1</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Cue2-SMR, and Cue2-SMR-R402A</td>\n      <td>This study</td>\n      <td></td>\n      <td>Find information in Materials\u00a0and\u00a0methods section \u2013 'Cue2 E. coli expression plasmids' and 'Cue2-SMR prep'</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmid construction\n\n#### GFP reporters\n\nThe OPT reporter plasmid, or pKD065, was cloned in pECB1806 (Gamble et al., 2016) as follows. Briefly, the GAL1 promoter, a GFP-2A-FLAG, a partially non-optimal HIS3 and the ADH1 terminator were introduced in SpeI/SphI- digested pECB1806 using Gibson assembly leading to pKD064. The GAL1 promoter was amplified by PCR using primers KD235 and KD236 and the ADH1 terminator was PCR amplified using KD239 and KD240 with pECB1806 as template (Supplementary file 1). All PCR products were cleaned using Zymo Research DNA Clean and Concentrator Kit. The GFP-2A-FLAG and a partially non-optimal HIS3 sequence fragment was gene-synthesized by Integrated DNA Technologies (IDT). The partially non-optimal FLAG-HIS3 in pKD064 was then replaced by a fully optimal sequence of FLAG-HIS3 from pJC797 (Radhakrishnan et al., 2016) to make pKD065 (Supplementary file 1).\n\nThe NGD-AAA and NGD-CGA reporter plasmids (pKD079 and pKD080, respectively) were cloned using pKD065. In brief, a (AAA)x12 or (CGA)x12 codon sequence was inserted 90 codons into the HIS3 gene of pKD065. The PCR product from (AAA)12 primers (KD281 and KD280) or (CGA)12 primers (KD283 and KD280) with pKD065 template was combined with the PCR product from primers KD287 and KD276 with pKD065 template and SalI/Sph1 digested pKD065 and these products were Gibson assembled to produce pKD079 and pKD080 (Supplementary file 1).\n\n#### HA-CUE2 overexpressing plasmid\n\nThe CUE2 overexpressing FLEX plasmid (pKD100) was rescued from the yeast FLEX library (Hu et al., 2007; Kainth et al., 2009). A gene block (gKD002) of truncated CUE2 (NoSMR) was inserted into BamHI/SphI digested pKD100, to make pKD105. 5\u2019 3xHA-tagged CUE2, and NoSMR were PCR amplified using KD414 and KD416 and Gibson assembled with BamHI/SphI digested pKD100 to make pKD120 and pKD125, respectively (Supplementary file 1).\n\n#### Site-directed mutagenesis\n\nUsing the standard protocol for the QuikChange Lightning Multi Site-Directed Mutagenesis Kit from Agilent Technologies, the indicated mutations in the HA-CUE2 construct (pKD120) were made to make pKD127, pKD129, pKD131, pKD133, and pKD145 (Supplementary file 1).\n\n#### CRISPR plasmids\n\nBplI digested plasmid pJH2972 (Anand, Memisoglu, and Haber, n.d.) was used in a Gibson reaction with primers KD503, KD505, and KD509 to make plasmids pKD163, pKD165, and pKD169 respectively.\n\n#### Cue2 E. coli expression plasmids\n\nPCR products from KD457 and KD338 from plasmids pKD120 and pKD129 were Gibson cloned into BamHI and XhoI digested pSMT3, to make pKD097 and pKD098, respectively.\n\n### Yeast strains and growth conditions\n\nYeast strains used in this study are described in Supplementary file 1 and are all derivatives of BY4741 unless specified otherwise. Yeast strain construction was performed using standard lithium acetate transformations. Reporters strains were constructed by integrating the various GFP-2A-FLAG-HIS3 cassettes, from StuI digested pKD065, pKD079, and pKD080, into the ADE2 locus of BY4741 (Supplementary file 1). For SGA experiments, query strains overexpression screens were constructed by introducing the GFP-2A-FLAG-HIS3 cassettes from StuI digested pKD065, pKD079, or pKD080 at the ADE2 locus in BY4741 (Supplementary file 1).\n\nDeletion strains were constructed by inserting resistance cassettes from Longtine et al. (1998) into the designated loci and genotypes are listed in Supplementary file 1. Note: two different deletion strains were used for XRN1 deletions in this study. See Supplementary file 1 for genotypes.\n\nHA tag insertions, point mutations, and the SMR deletion were made in yKD143 as described in Anand et al. (2017), using plasmids pKD163, pKD165, and pKD169 and homology directed repair templates.\n\nRecipes for media used in this study are listed in Supplementary file 1.\n\nFor gal-induced growths, overnight cultures were grown in YPAGR media, or, for strains with plasmids, overnight cultures were grown in SC/A/GR/-Ura. Overnights were diluted in the same media to an OD of 0.1 and harvested at an OD of 0.4\u20130.5.\n\n### Flow cytometry\n\n#### Data collection\n\n100 \u03bcl of log-phase cells were pelleted and washed once with 1 x PBS. Cells were then resuspended in 500 \u03bcl of 1 x PBS and 5000 cells were analyzed with a Millipore guava easyCyte flow cytometer for GFP and RFP detection using 488 nm and 532 nm excitation lasers, respectively.\n\n#### Data analysis\n\nCells were gated based on size, and random outliers were cut off from graphs for visual purposes (plot values were not changed upon removal of outliers). For all flow cytometry data, violin plots show the density of cells for log2(GFP/RFP) values for individual cells. Flow cytometry was done in triplicate, with each group of cells taken from individual growths. For triplicate plots, the average of each individual flow cytometry sample was taken and plotted. Machine settings remained constant between samples.\n\nFor statistical analysis of flow cytometry triplicates, a standard t-test was run in R and p-values are reported.\n\n### Northern blots\n\n#### RNA isolation\n\n25 ml of log-phase cells were pelleted and supernatant was poured off. Cells were resuspended in residual media, pelleted again, and flash frozen in liquid nitrogen. Cell pellet was resuspended in buffer with 8.4 mM EDTA, and 60 mM NaOAc. 20% SDS was added to a final concentration of 1.5%. Cell solution was warmed at 65\u00b0C for 2 min and added to acid phenol at 65\u00b0C. Phenol/cell solution was shaken at 1100 rpm at 65\u00b0C for 10\u201320 min with intermittent vortexing. Samples were put on ice for 5 min then spun at 16 krpm. The aqueous layer was removed and added to an equal volume of phenol, and samples were vortexed again. Samples were spun at 16 krpm again, the aqueous layer was removed and added to an equal volume of chloroform, and samples were vortexed. Lastly, samples were spun again at 16 krpm, the aqueous layer was removed and precipitated in NaOAc and isopropanol. The RNA pellet was resuspended in 10 mM Tris-HCl, pH 8.0.\n\n#### Northern blot\n\nBetween 5 and 10 \u03bcg of RNA were loaded into a 1.2% agarose, formaldehyde denaturing gel and run for 2\u20132.5 hr at 125 volts (for any given gel, the same amount of RNA was loaded for each sample, but this varied from gel to gel). The RNA was vacuum transferred to a nitrocellulose (N\u00a0+\u00a0Hbond, Amersham) membrane in 10 x SSC buffer. The RNA was then UV crosslinked to the membrane and placed in pre-hybridization buffer and rotated at 42\u00b0C. The indicated PNK-end labeled probe was added to the pre-hybridization buffer at 42\u00b0C after 30 min (Supplementary file 1). The membrane was probed overnight, rotating at 42\u00b0C. The membrane was washed 3 times in 2 x SSC, 0.1% SDS for 20 min at 30\u00b0C, then exposed to a phosphoscreen. The phosphoscreen was scanned using a Typhoon FLA 9500.\n\n#### End-labeled DNA probe\n\nThis indicated DNA-oligo listed in Supplementary file 1 was end labeled using gamma-ATP and the standard T4 Polynucleotide Kinase radioactive labeling protocol from NEB. The labeled oligo was purified using GE Healthcare illustra ProbeQuant G-50 Micro Columns.\n\n### Western blots\n\n#### Protein isolation\n\n2 OD units of log-phase cells were pelleted and supernatant was poured off. Cells were resuspended in residual media, pelleted again, and flash frozen in liquid nitrogen. Pellets were resuspended in 200 \u03bcl lysis buffer containing 20 mM Tris-HCl, pH 8.0, 140 mM KCl, 5 mM MgCl2, 1% triton, 1 mM DTT, Roche cOmplete protease inhibitor tablet, and PMSF, pepstatin, and leupeptin protease inhibitors. The volume of cell solution was approximately doubled using acid-washed glass beads and cells were mechanically lysed using bead beater 1 min on, 1 min off, for three cycles. 6x SDS loading dye was added to the lysis solution at 2x and samples were boiled for 5 min.\n\n#### Western blot\n\nEqual volumes of lysate were loaded for each sample onto 4\u201312% Criterion XT Bis-Tris protein gels in 1x XT MES buffer. Protein was transferred to PVDF membrane via turbo blot. Membranes were then placed in 2.5% milk, 1x TBST blocking solution for 1 hr. Primary antibody was used in 1x TBST at either 1:50,000 for anti-eEF2 (Kerafast, rabbit), or 1:5000 for anti-PGK1 (Invitrogen, mouse), anti-HA (Roche, rat), anti-FLAG (Sigma, mouse), and anti-GFP (Takara, mouse) and incubated on a rotator overnight at 4\u00b0C. Membranes were washed in 1x TBST three times, 10 min each. The corresponding HRP-conjugated secondary antibody was added to the membrane at 1:5000 in 1x TBST and incubated for 1\u20132 hr. Membranes were washed three times for 10 min each. Pico solution (details) was added to membranes for approximately 3 min and then membranes were scanned using a G:BOX Chemi XX6 (Syngene) with varying exposure times.\n\n### Reporter-SGA screens\n\n#### SGA procedure\n\nSGA screens were performed using a Biomatrix Robot (S and P Robotics Inc) with a few modifications (Tong and Boone, 2006). Briefly, yKD131, yKD132, yKD133 query strains (Supplementary file 1) were crossed individually with the FLEX collection (Douglas et al., 2012; Hu et al., 2007). The FLEX library was arrayed in a 1536-format containing four colonies for each overexpression strain. Mating steps were performed on standard SGA media (Tong and Boone, 2006).\n\nFor the overexpression screen, diploid strains were selected on OEDIP media listed in Supplementary file 1. Sporulation and haploid double mutant selection steps were not performed in this screen.\n\nTo induce reporter expression and FLEX gene overexpression, cells were pinned onto the same medium (OEDIP), with the exception that glucose was replaced by raffinose and galactose at a final concentration of 2% (OEDIPGR media listed in Supplementary file 1). Cells were grown for 40\u201346 hr for the overexpression screen before scanning on a Typhoon FLA9500 (GE Healthcare) fluorescence scanner equipped with 488 nm and 532 nm excitation lasers and 520/40 and 610/30 emission filters. Plates were also photographed using a robotic system developed by S and P Robotics Inc in order to determine colony size.\n\n#### Screen data analysis\n\nGFP and RFP fluorescent intensity data was collected using the microarray software, TIGR Spotfinder (Saeed et al., 2003). Colony size data was aquired using SGATools (Wagih et al., 2013) (http://sgatools.ccbr.utoronto.ca/). Subsequent data analysis was performed as previously described (Hendry et al., 2015; Kainth et al., 2009). In brief, border strains and size outliers (<1500 or>6000 pixels) were eliminated, and median GFP and RFP values were taken for the remaining strains. Log2(mean GFP/mean RFP) values were then calculated and LOESS normalized for each plate. Finally, Z-scores for each individual plate were calculated based on the LOESS normalized log2(mean GFP/mean RFP). Strains for the AAA or CGA reporters with Z-scores greater than 2.5 or less than \u22122.5 were considered as hits if their Z-score in the OPT reporter was unaffected (i.e had a Z-score between \u22122.5 and 2.5). For subsequent experiments, hits were reconstructed in the background strain yKD133 as described above and all experiments were performed with the reconstructed strains.\n\n#### Venn diagrams\n\nOverexpression screen strains with a Z-score greater than 2.5 or less than \u22122.5 were considered candidate genes and analyzed for overlap using BioVenn (http://www.biovenn.nl/) to produce the diagrams.\n\n### Cue2-SMR prep\n\nThe SMR and the R402A-SMR constructs, pKD097 and pKD098, respectively, were expressed in RIPL BL21 E. coli strain using Kan resistance and inducing at OD\u00a0=\u00a00.4, at 18\u00b0C with IPTG at 0.5 mM overnight. Cells were harvested by centrifugation and then flash frozen in liquid nitrogen. Pellets were then resuspended in protein prep lysis buffer [25 mM Tris-Cl pH 7.5, 500 mM KCl, 1 mM MgCl2, 5 mM bMe, 10% glycerol]+PMSF, leupeptin, pepstatin, and Roche cOmplete EDTA-free protease inhibitors.\n\nCells were lysed using the French press, three times, 1100 pressure units. Lysis solution was clarified at 20,000xg for 30 min. Lysate was filtered through a 0.2 um filter and run over HiTrap 5 ml Ni-NTA column. Column was washed for 5 CV in lysis buffer with high salt (1 M KCl) and 20 mM imidazole. Sample was batch eluted using Ni elution buffer [25 mM Tris-Cl pH 7.5, 500 mM KCl, 1 mM MgCl2, 5 mM bMe, 10% glycerol, 500 mM imidazole]. Sample was diluted 10 fold into S column buffer [25 mM Tris-Cl pH 7.5, 200 mM KCl, 5 mM MgCl2, 5 mM bMe, 10% glycerol] and then run on a Resource S column. Sample was washed in S column buffer for 5 CV and then gradient eluted off of S column in S column buffer with 1 M salt. 6xHIS-Sumo tag was cleaved overnight using SUMO protease. And sample was run on an orthogonal Ni column to remove tag. Flow through was collected and concentrated to 40 uM SMR, and 20 uM SMR-R402A.\n\n### Isolation of nuclease-resistant trisomes\n\nGrow 1 L of yKD307 in YPAGR to an OD 0.4. For cycloheximide treated cells, added 1 mg/L cycloheximide, grew for 30 min and filter harvested. For untreated cells, immediately filter harvested. Cell pellets were ground with 1 mL lysis buffer [10 mM potassium phosphate (pH 6.1), 140 mM KCl, 5 mM MgCl2, 1% Triton X-100, 0.1 mg/mL cycloheximide, 1 mM DTT, Roche cOmplete EDTA-free protease inhibitor, leupeptin, PMSF, pepstatin] in a Spex 6870 freezer mill. Cell lysates were clarified by centrifugation. CaCl2 was added to 200 OD units of clarified lysates to a final concentration of 2.5 mM and the indicated clarified lysates were treated with 20 \u03bcl of NEB MNase at 2e^six gel units/ml for 30 min. 4 mM EGTA was added to quench the digestion. Samples were layered on a 15\u201345% sucrose gradient [10 mM potassium phosphate (pH 6.1), 140 mM KCl, 5 mM MgCl2] and spun in SW28 rotor at max speed for 4 hr. Nuclease resistant trisome peak was isolated and diluted two fold in lysis buffer.\n\n### Cleavage of lysates with SMR and analysis\n\nProtein prep buffer, the purified SMR domain of Cue2, and the R402A mutant of the SMR domain of Cue2 were added to separate aliquots of isolated nuclease-resistant trisomes, such that the final concentration of enzyme (for samples with enzyme)=3 \u00b5M. Samples were left at room temperature for 2 hr. Next, samples were run on a 15\u201345% sucrose gradient [10 mM potassium phosphate (pH 6.1), 140 mM KCl, 5 mM MgCl2] and the A260 trace is reported. RPFs were extracted from pooled fractions (mono-, di-, and trisomes).\n\n### Sequence alignment\n\nInformation from NCBI conserved domain database (Marchler-Bauer et al., 2011), conserved domain architecture retrieval tool (Geer et al., 2002), available structures, and Phyre-based homology modeling (Kelley et al., 2015) was used to define domain boundaries. Structure-based multiple sequence alignments were carried out using Expresso (Armougom et al., 2006), and illustrated with ESPript (Robert and Gouet, 2014). Protein names are indicated, followed by the name of organism, and residues used for alignment. YEAST, Saccharomyces cerevisiae; CANGA, Candida glabrata; ARATH, Arabidopsis thaliana; HUMAN, Homo sapiens; MACMU, Macaca mulatta; BOVIN, Bos taurus; THETH, Thermus thermophilus; BACSU, Bacillus subtilis; ECOLI, Escherichia coli.\n\n### Homology modeling\n\nHomology model of the Cue2 SMR domain templated on human N4BP2 SMR domain (PDB: 2VKC [Diercks et al., 2008]) was generated using Phyre 2.0 (Kelley et al., 2015) and SWISS-MODEL (Waterhouse et al., 2018). After identifying N4BP2 as a Cue2 homolog, a heuristic DALI search was performed using the N4BP2 SMR domain (PDB IDs: 2D9I and 2VKC) as query against structures in the Protein Data Bank (PDB). This exercise, along with templates identified using Phyre 2.0 (Kelley et al., 2015) and SWISS-MODEL (Waterhouse et al., 2018), enabled us to identify structural conservation between the SMR domain of Cue2 and the C-terminal domain (CTD) of translational initiation factor 3 (IF3). This was further validated using structure-based sequence alignments as shown in Figure 2\u2014figure supplement 1B. Structural comparisons and fittings were performed using UCSF Chimera (Goddard et al., 2007; Pettersen et al., 2004). Superimposition of the CTD of IF3 (PDB: 1TIG [Biou et al., 1995]) and the Cue2-SMR homology model revealed structural conservation between the two domains (Figure 2\u2014figure supplement 1C). This enabled superimposition of the Cue2 SMR in the context of full-length Thermus thermophilus IF3 (PDB: 5LMQ [Hussain et al., 2016]) (see Figure 2C). This fitting enabled overlay of the Cue2-SMR at the A/P-site in the context of IF3 and tRNAfMet-bound 30S pre-initiation complex (PDB: 5LMQ, State 2A [Hussain et al., 2016]) (see Figure 2D and Figure 2\u2014figure supplement 1, D\u2013E). The mRNA and the 30S ribosomal subunit are represented as surfaces to minimize over interpretation (Figure 2D and Figure 2\u2014figure supplement 1, D\u2013E).\n\n### Yeast growth conditions for ribosome profiling\n\nOvernight seed cultures were grown in YPAD at 30\u00b0C. To induce NGD-CGA reporter expression, cells were collected by centrifugation, washed, and resuspended in YPAGR. Cells were then harvested at OD\u00a0~0.5 by fast filtration and flash frozen in liquid nitrogen.\n\n### Preparation of libraries for yeast ribosome footprints\n\nCell pellets were ground with 1 mL footprint lysis buffer [20 mM Tris-Cl (pH8.0), 140 mM KCl, 1.5 mM MgCl2, 1% Triton X-100, 0.1 mg/mL cycloheximide, 0.1 mg/mL tigecycline] in a Spex 6870 freezer mill. Lysed cell pellets were diluted to 15 mL in footprint lysis buffer and clarified by centrifugation. The supernatant was layered on a sucrose cushion [20 mM Tris-Cl (pH8.0), 150 mM KCl, 5 mM MgCl2, 0.5 mM DTT, 1M sucrose]. Polysomes were pelleted by centrifugation at 60,000 rpm for 106 min in a Type 70Ti rotor (Beckman Coulter). Ribosome pellets were gently resuspended in 800 \u00b5L footprint lysis buffer. 350 \u00b5g of isolated polysomes were treated with 500 units of RNaseI (Ambion) for 1 hr at 25\u02daC. Monosomes or disomes were isolated by sucrose gradients (10\u201350%). RNA was extracted by hot acid phenol and then size-selected from 15% denaturing PAGE gels, cutting between 15\u201334 nt for monosome footprints, 40\u201380 nt for disome footprints, and 15\u201390 nt for in vitro Cue2 cleavage assays. Library construction was carried out as described (Wu et al., 2019b). Libraries were sequenced on a HiSeq2500 machine at facilities at the Johns Hopkins Institute of Genetic Medicine.\n\n### Analysis of ribosome profiling data\n\nThe R64-1-1 S288C reference genome assembly (SacCer3) from the Saccharomyces Genome Database Project was used for yeast genome alignment. For the rest of our libraries, 3\u2019 adapter (NNNNNNCACTCGGGCACCAAGGA) was trimmed, and four random nucleotides included in RT primer (RNNNAGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGC/iSP18/TTCAGACGTGTGCTCTTCCGATCTGTCCTTGGTGCCCGAGTG) were removed from the 5\u2019 end of reads with skewer (54). Trimmed reads were aligned to yeast ribosomal and non-coding RNA sequences using STAR (49) with \u2018--outFilterMismatchNoverLmax 0.3\u2019. Unmapped reads were then mapped to genome using the following options \u2018--outFilterIntronMotifs RemoveNoncanonicalUnannotated --outFilterMultimapNmax 1 --outFilterMismatchNoverLmax 0.1\u2019. All other analyses were performed using software custom written in Python 2.7 and R 3.3.1.\n\nFor monosome footprints, the offset of the A site from the 5\u2019 end of reads was calibrated using start codons of CDS (Wu et al., 2019b). For 28 nt RPFs, offsets (27:[16], 28:[16], 29:[17], 30:[17], 31:[17], 32:[17]) were used to infer the A sites of 27\u201332 nt reads. For 21 nt RPFs, offsets (20:[16], 21:[17], 22:[17]) were used. For 16 nt RPFs, 3\u2019 ends of 15\u201317 nt RPFs were used to infer cleavage sites. For 60 nt disome footprints, offsets (57:[47],58:[47],59:[47],60:[47],61:[47],62:[47]) were used to infer the A sites of lead ribosomes. For 54 nt disome footprints, offsets (51:[47],52:[47],53:[47],54:[47]) were used. For 46 nt disome footprints, 3\u2019ends of 44\u201348 nt RPFs were used to infer cleavage sites. For in vitro cleavage assays, 3\u2019ends of 60\u201365 nt were used to infer Cue2 SMR cleavage sites. Prematurely polyadenylated mRNAs were identified by monosome footprints (15\u201334 nt) with the criteria of at least three RPFs of more than one untemplated A\u2019s in the 3\u2019end from both slh1\u2206 cue2\u2206 dom34\u2206 ski2\u2206 datasets. Cue2 target genes were identified using 15\u201317 nt RPFs that exhibited reproducible reduction upon Cue2 deletion (adjusted p<0.005, DESeq [Anders and Huber, 2010]).\n\n### Accession number\n\nRaw sequencing data were deposited in the GEO database under the accession number GSE129128.\n\n### Data and materials availability\n\nRaw sequencing data were deposited in the GEO database under the accession number GSE129128.\n",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "70898bff-83f7-4129-87d1-8ebdb3303b44",
+      "submission_id": "9d5ead09-80b5-45c7-bdde-91c4876bcdfd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, McGill University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49117.021](https://doi.org/10.7554/eLife.49117.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for choosing to send your work entitled \"The endonuclease Cue2 cleaves mRNAs at stalled ribosomes during No Go Decay\" for consideration at eLife. Your submission, the previous reviews, and your responses have been evaluated by a Senior Editor (James Manley) and a Reviewing Editor (Nahum Sonenberg), and we would be happy to accept the present version for publication by eLife.\n\nThe authors have added important data showing in vitro activity of Cue2, including use of a mutant. They have also amended the paper to include missing information concerning the experimental repeats. Considering the novelty of the data and the great interest in this area of research, we recommend acceptance.\n",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "01a335c5-441b-41b3-9b24-af8630174b74",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C1",
+      "claim": "Translation of problematic sequences in mRNAs leads to ribosome collisions that trigger ribosome rescue, degradation of the stalled nascent polypeptide, and targeting of the mRNA for decay (No Go Decay or NGD).",
+      "claim_type": "EXPLICIT",
+      "source": "Translation of problematic sequences in mRNAs leads to ribosome collisions that trigger a series of quality control events including ribosome rescue, degradation of the stalled nascent polypeptide, and targeting of the mRNA for decay (No Go Decay or NGD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the NGD pathway supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "a69da976-bf9e-4b40-902a-ace095d92f71",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C2",
+      "claim": "Cue2 is the conserved endonuclease that is recruited to stalled ribosomes to promote NGD.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a reverse genetic screen in yeast, we identify Cue2 as the conserved endonuclease that is recruited to stalled ribosomes to promote NGD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the reverse genetic screen data presented in the manuscript, including flow cytometry and northern blot results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "f8618fc8-28d5-437c-8e79-6ea65285b39e",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C3",
+      "claim": "Cue2 cleaves mRNA within the A site of the colliding ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome profiling and biochemistry provide strong evidence that Cue2 cleaves mRNA within the A site of the colliding ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ribosome profiling data and in vitro biochemical assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "b5ac4618-20f2-4f93-b156-247dc4770240",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C4",
+      "claim": "NGD primarily proceeds via Xrn1-mediated exonucleolytic decay.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that NGD primarily proceeds via Xrn1-mediated exonucleolytic decay and Cue2-mediated endonucleolytic decay normally constitutes a secondary decay pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by northern blot data showing that deletion of XRN1 greatly restores NGD-CGA reporter mRNA levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "e46c4b27-032b-484b-8b0c-16345bbb1c9e",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C5",
+      "claim": "Cue2-mediated endonucleolytic decay normally constitutes a secondary decay pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that NGD primarily proceeds via Xrn1-mediated exonucleolytic decay and Cue2-mediated endonucleolytic decay normally constitutes a secondary decay pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that deletion of CUE2 alone does not substantially impact mRNA levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "41037187-3dd7-4ecc-9c7a-f890db6f61d6",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C6",
+      "claim": "The Cue2-dependent pathway becomes a major contributor to NGD in cells depleted of factors required for the resolution of stalled ribosome complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that the Cue2-dependent pathway becomes a major contributor to NGD in cells depleted of factors required for the resolution of stalled ribosome complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing increased Cue2-mediated cleavage in slh1\u0394 backgrounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "e7122f4a-0925-4653-90c0-159301ee4f0e",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C7",
+      "claim": "Ribosome collisions on problematic mRNAs create a unique interface on the aligned 40S subunits that serves as a substrate for E3 ubiquitin ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in eukaryotes has revealed that ribosome collisions on problematic mRNAs create a unique interface on the aligned 40S subunits that serves as a substrate for E3 ubiquitin ligases, such as Hel2 and Not4, and the RQC-trigger (RQT) complex, comprised of factors Slh1, Cue2 and Rqt4; together these factors are thought to trigger downstream quality control (Ferrin and Subramaniam, 2017; Garzia et al., 2017; Ikeuchi et al., 2019; Juszkiewicz et al., 2018; Juszkiewicz and Hegde, 2017; Matsuo et al., 2017; Simms et al., 2017b; Sundaramoorthy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "e5618640-c9de-4ba2-8e55-35f27b0aeecf",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C8",
+      "claim": "The RQT complex is comprised of factors Slh1, Cue2 and Rqt4.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in eukaryotes has revealed that ribosome collisions on problematic mRNAs create a unique interface on the aligned 40S subunits that serves as a substrate for E3 ubiquitin ligases, such as Hel2 and Not4, and the RQC-trigger (RQT) complex, comprised of factors Slh1, Cue2 and Rqt4; together these factors are thought to trigger downstream quality control (Ferrin and Subramaniam, 2017; Garzia et al., 2017; Ikeuchi et al., 2019; Juszkiewicz et al., 2018; Juszkiewicz and Hegde, 2017; Matsuo et al., 2017; Simms et al., 2017b; Sundaramoorthy et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "ee69abf9-a044-42be-9701-1861dc4fe181",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C9",
+      "claim": "A failure to process colliding ribosomes and their associated proteotoxic nascent peptide products results in broad cellular distress.",
+      "claim_type": "EXPLICIT",
+      "source": "A failure to process such colliding ribosomes and their associated proteotoxic nascent peptide products results in broad cellular distress, made evident by the strong conservation of these pathways (Balchin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and the observation of strong conservation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "ff6b6f9b-31f4-4d2a-abc8-b6e924e38019",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C10",
+      "claim": "The hallmark of NGD is the presence of endonucleolytic cleavage events upstream of the ribosome stalling sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "The hallmark of NGD (Frischmeyer et al., 2002; van Hoof et al., 2002) is the presence of endonucleolytic cleavage events upstream of the ribosome stalling sequence as first detected by northern analysis (Doma and Parker, 2006) and more recently by high-resolution ribosome profiling or sequencing approaches (Arribere and Fire, 2018; Guydosh et al., 2017; Guydosh and Green, 2017; Simms et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "f48de6b7-f734-4514-895d-5a2b0a38b63b",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C11",
+      "claim": "mRNA cut sites in NGD depend on ribosome collisions and the consequent polyubiquitination of the 40S subunit by the yeast protein Hel2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these mRNA cut sites depend on ribosome collisions and the consequent polyubiquitination of the 40S subunit by the yeast protein Hel2 (Ikeuchi et al., 2019; Simms et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "cc745032-f33a-4452-8994-ffb5b0e5ca36",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C12",
+      "claim": "Multiple studies position NGD cleavage events within the vicinity of colliding ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple studies in the field collectively position NGD cleavage events within the vicinity of colliding ribosomes (Arribere and Fire, 2018; Guydosh and Green, 2017; Guydosh et al., 2017; Ibrahim et al., 2018; Ikeuchi and Inada, 2016; Ikeuchi et al., 2019; Simms et al., 2018; Simms et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "a1c2c373-398b-4af4-9911-838475f043aa",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C13",
+      "claim": "An endonuclease has been implicated in Nonsense Mediated Decay (NMD) in metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, an endonuclease has been implicated in a related mRNA decay pathway, Nonsense Mediated Decay (NMD), in metazoans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "8268b3b1-0c1f-4d67-9659-5db616a4c836",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C14",
+      "claim": "During NMD, an initial endonucleolytic cleavage event is carried out by SMG6.",
+      "claim_type": "EXPLICIT",
+      "source": "During NMD, the ribosome translates to a premature stop codon (PTC), where an initial endonucleolytic cleavage event is carried out by a critical PIN-domain containing endonuclease, SMG6 (Glavan et al., 2006); sequencing experiments suggest that SMG6 cleavage occurs in the A site of PTC-stalled ribosomes (Arribere and Fire, 2018; Lykke-Andersen et al., 2014; Schmidt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "c15227eb-9096-4f1d-a059-cfe95659c2a6",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C15",
+      "claim": "SMG6 cleavage occurs in the A site of PTC-stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "During NMD, the ribosome translates to a premature stop codon (PTC), where an initial endonucleolytic cleavage event is carried out by a critical PIN-domain containing endonuclease, SMG6 (Glavan et al., 2006); sequencing experiments suggest that SMG6 cleavage occurs in the A site of PTC-stalled ribosomes (Arribere and Fire, 2018; Lykke-Andersen et al., 2014; Schmidt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to sequencing experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "75552ea7-85c7-49b8-aaa1-bdbc30b4acf8",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C16",
+      "claim": "In C. elegans, SMG6-mediated endonucleolytic cleavage leads to iterated cleavages upstream of the PTC similar to those characterized for the NGD pathway in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, there is evidence that the initial SMG6-mediated endonucleolytic cleavage leads to iterated cleavages upstream of the PTC similar to those characterized for the NGD pathway in yeast (Arribere and Fire, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "68f0dbc3-9aa2-436f-8de4-882f628def4f",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C17",
+      "claim": "The identity of the endonuclease responsible for cleavage in NGD remains unknown (prior to this study).",
+      "claim_type": "EXPLICIT",
+      "source": "The identity of the endonuclease responsible for cleavage in NGD remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement establishes the knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "9085a92d-29b1-496a-ad86-a242b69ffc88",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C18",
+      "claim": "Xrn1 is the canonical 5' to 3' exonuclease in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, Xrn1 is the canonical 5' to 3' exonuclease which, after decapping of the mRNA, degrades mRNA from the 5' end; importantly, Xrn1 normally functions co-translationally such that signals from elongating ribosomes might be relevant to its recruitment (Hu et al., 2009; Pelechano et al., 2015; Tesina et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "aea53d51-7059-4572-bedb-379037a8ea49",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C19",
+      "claim": "Xrn1 normally functions co-translationally.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, Xrn1 is the canonical 5' to 3' exonuclease which, after decapping of the mRNA, degrades mRNA from the 5' end; importantly, Xrn1 normally functions co-translationally such that signals from elongating ribosomes might be relevant to its recruitment (Hu et al., 2009; Pelechano et al., 2015; Tesina et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "fd0f3403-ac9a-40ea-a81d-697e80409495",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C20",
+      "claim": "The exosome is the 3' to 5' exonuclease which degrades mRNAs from the 3' end after deadenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the exosome is the 3' to 5' exonuclease which, after deadenylation, degrades mRNAs from the 3' end and is recruited by the SKI auxiliary complex consisting of Ski2/Ski3/Ski8 and Ski7 (Halbach et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "fbcf0881-e4a9-420e-ba59-523a0de9874a",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C21",
+      "claim": "The exosome is recruited by the SKI auxiliary complex consisting of Ski2/Ski3/Ski8 and Ski7.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the exosome is the 3' to 5' exonuclease which, after deadenylation, degrades mRNAs from the 3' end and is recruited by the SKI auxiliary complex consisting of Ski2/Ski3/Ski8 and Ski7 (Halbach et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "fad9324d-e6e6-4904-9750-e0f3981355eb",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C22",
+      "claim": "Xrn1-mediated degradation is the dominant pathway for most general decay in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "While Xrn1-mediated degradation is thought to be the dominant pathway for most general decay in yeast (Anderson and Parker, 1998), the exosome has been implicated as critical for many degradation events in the cell including those targeting prematurely polyadenylated mRNAs (these mRNAs are usually referred to as Non-Stop Decay (NSD) targets) (Frischmeyer et al., 2002; Tsuboi et al., 2012; van Hoof et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "5bd679e0-b2fd-4be3-b5bd-59690231a56e",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C23",
+      "claim": "The exosome has been implicated as critical for degradation events targeting prematurely polyadenylated mRNAs (Non-Stop Decay targets).",
+      "claim_type": "EXPLICIT",
+      "source": "While Xrn1-mediated degradation is thought to be the dominant pathway for most general decay in yeast (Anderson and Parker, 1998), the exosome has been implicated as critical for many degradation events in the cell including those targeting prematurely polyadenylated mRNAs (these mRNAs are usually referred to as Non-Stop Decay (NSD) targets) (Frischmeyer et al., 2002; Tsuboi et al., 2012; van Hoof et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "8b71bd38-072f-48e1-bd3c-4759e6df46bd",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C24",
+      "claim": "The NGD-CGA reporter results in a robust threefold decrease in the GFP/RFP ratio compared to the OPT control.",
+      "claim_type": "EXPLICIT",
+      "source": "The (CGA)12 and (AAA)12 inserts result in robust threefold and twofold decreases in the GFP/RFP ratio, respectively, compared to the no insert (optimal, OPT) control (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "6612c1b3-9e99-4326-9623-42face52ccf5",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C25",
+      "claim": "The NGD-AAA reporter results in a robust twofold decrease in the GFP/RFP ratio compared to the OPT control.",
+      "claim_type": "EXPLICIT",
+      "source": "The (CGA)12 and (AAA)12 inserts result in robust threefold and twofold decreases in the GFP/RFP ratio, respectively, compared to the no insert (optimal, OPT) control (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "7939f35b-b46b-4d48-be2c-9e65a9b52667",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C26",
+      "claim": "Deletion of SKI2 stabilized the 5' decay fragment resulting from endonucleolytic cleavage associated with NGD reporters.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, deletion of the exosome auxiliary factor gene SKI2 stabilized the 5' decay fragment resulting from endonucleolytic cleavage associated with NGD reporters (Figure 1\u2014figure supplement 1A) (Doma and Parker, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data in Figure 1\u2014figure supplement 1A and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "1c513621-f9d2-4737-8e63-dcf3236874e7",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C27",
+      "claim": "Stalling during the synthesis of the FLAG-His3 fusion protein in the two stalling reporters leads to degradation of the nascent peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, stalling during the synthesis of the FLAG-His3 fusion protein in the two stalling reporters (NGD-CGA and NGD-AAA) leads to degradation of the nascent peptide (Figure 1\u2014figure supplement 1A, FLAG panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "3c32bb71-76b4-4de4-be93-47a928d4dcfc",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C28",
+      "claim": "CUE2 overexpression was the strongest outlier by Z-score causing reduced GFP expression for both NGD reporters, without affecting the OPT reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "By far, the strongest outlier by Z-score causing reduced GFP expression for both NGD reporters, without affecting the OPT reporter, resulted from overexpression of the gene CUE2 (Figure 1C\u20131D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the overexpression screen data shown in Figure 1C-1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "08e66ca7-bded-4a95-abe7-fb52e19b4d69",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C29",
+      "claim": "NGD-CGA reporter mRNA levels are substantially reduced upon CUE2 overexpression whereas the control RFP transcript is not affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry and northern analysis confirm that NGD-CGA reporter mRNA levels are substantially reduced upon CUE2 overexpression whereas the control RFP transcript is not affected (Figure 1E and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry and northern blot data in Figure 1E and Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "537c088b-3751-458b-abb5-c34750da39ba",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C30",
+      "claim": "Cue2 contains two conserved CUE ubiquitin-binding domains at the N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Cue2 contains two conserved CUE (coupling of ubiquitin to ER degradation) ubiquitin-binding domains at the N-terminus (Kang et al., 2003), followed by two putative ubiquitin-binding domains (UBA* (ubiquitin-associated domain) and CUE* domain, respectively), and an SMR (small MutS-related) hydrolase domain at the C-terminus (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by domain analysis and citation to previous work, as shown in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "80332ce3-b443-492b-ad67-09dfafe54001",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C31",
+      "claim": "Cue2 contains an SMR (small MutS-related) hydrolase domain at the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Cue2 contains two conserved CUE (coupling of ubiquitin to ER degradation) ubiquitin-binding domains at the N-terminus (Kang et al., 2003), followed by two putative ubiquitin-binding domains (UBA* (ubiquitin-associated domain) and CUE* domain, respectively), and an SMR (small MutS-related) hydrolase domain at the C-terminus (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by domain analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "4c095c52-4b18-4e43-8001-d561018499e6",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C32",
+      "claim": "The human NEDD4-binding protein 2, N4BP2, is a putative homolog of Cue2.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed alignments of the CUE and SMR domains of Cue2 using structure-based alignment tools (Figure 2\u2014figure supplement 1A; Figure 2\u2014figure supplement 1B) and found putative homologs in various kingdoms of life, including the human NEDD4-binding protein 2, N4BP2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structure-based alignment data shown in Figure 2\u2014figure supplement 1A and 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "1477f79f-3c78-4b4a-bffb-5a400cc3da5d",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C33",
+      "claim": "The SMR domain of SOT1 in plants exhibits RNA endonuclease activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While the SMR domain of MutS family enzymes canonically functions as a DNA-nicking hydrolase (Fukui and Kuramitsu, 2011), the SMR domain of SOT1 in plants exhibits RNA endonuclease activity (Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "04f08ad2-ddc1-4d78-9e7e-ebb2f84ee55f",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C34",
+      "claim": "SMR domains show structural similarity to bacterial RNase E.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, SMR domains show structural similarity to bacterial RNase E (Fukui and Kuramitsu, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "abd34f01-8a34-4dae-93f1-0f69c4dc9278",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C35",
+      "claim": "Conserved residues D348, H350, and R402 in Cue2 are positioned along the mRNA channel in the homology model.",
+      "claim_type": "EXPLICIT",
+      "source": "We aligned the Cue2-SMR homology model with the structure of the IF3-CTD on the ribosome and observed that conserved residues D348, H350, and R402 are positioned along the mRNA channel in this model (Figure 2C\u20132D and Figure 2\u2014figure supplement 1E\u2013F) and thus represent potential residues critical for endonucleolytic cleavage activity; additionally, R402 had previously been implicated in the RNA cleavage activity of other SMR domains (Zhou et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by homology modeling shown in Figure 2C-2D and Figure 2\u2014figure supplement 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "84946e2b-e138-481d-9d00-7804ee6e4ad7",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C36",
+      "claim": "R402 had previously been implicated in the RNA cleavage activity of other SMR domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We aligned the Cue2-SMR homology model with the structure of the IF3-CTD on the ribosome and observed that conserved residues D348, H350, and R402 are positioned along the mRNA channel in this model (Figure 2C\u20132D and Figure 2\u2014figure supplement 1E\u2013F) and thus represent potential residues critical for endonucleolytic cleavage activity; additionally, R402 had previously been implicated in the RNA cleavage activity of other SMR domains (Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "70a9189b-ca2e-44d2-b737-77dbd169ae36",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C37",
+      "claim": "Individually mutating the conserved residues D348, H350, and R402 to alanine causes a modest increase in GFP expression relative to CUE2 WT.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that individually mutating the conserved residues D348, H350, and R402 to alanine (A) causes a modest increase in GFP expression relative to CUE2 WT, whereas the R402K mutation (which maintains a positively charged amino acid) has no discernible effect (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "fad38f87-e04f-471e-a1ad-b6d6323f61b1",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C38",
+      "claim": "The R402K mutation has no discernible effect on GFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that individually mutating the conserved residues D348, H350, and R402 to alanine (A) causes a modest increase in GFP expression relative to CUE2 WT, whereas the R402K mutation (which maintains a positively charged amino acid) has no discernible effect (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "2322c49b-e022-4840-a912-0e57b4a49d7c",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C39",
+      "claim": "Mutating residues 348 through 350 nearly restores GFP reporter signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating residues 348 through 350, which includes the conserved residues D348 and H350, nearly restores GFP reporter signal in this assay (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "6a1fcf86-ae82-48e5-8098-ecca669d52a2",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C40",
+      "claim": "Deletion of CUE2 in the ski2\u0394 background causes both 5' and 3' decay intermediates to disappear.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon deletion of CUE2 in the appropriate yeast background, we see that both of these decay intermediates disappear (Figure 2F; lane 2 and Figure 2G; lane 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 2F and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "954ff17e-6e79-4c1b-a8b3-6042fed62dbc",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C41",
+      "claim": "Deletion of the C-terminal portion of CUE2 comprising the SMR domain results in a complete loss of endonucleolytic cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "As a first test, we deleted the C-terminal portion of CUE2 comprising the SMR domain and revealed a complete loss of endonucleolytic cleavage (Figure 2H, lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "c7362f62-bf8d-4e70-904f-40e6c306e5a8",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C42",
+      "claim": "Combined mutations in CUE2 at D348 and H350 result in a complete abolishment of endonucleolytic cleavage activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To further refine this analysis, we made combined mutations in CUE2 at D348 and H350 and observed a complete abolishment of endonucleolytic cleavage activity (Figure 2H, lane 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "11bf6a6f-c8e7-4adb-a226-d5c6a8ef8e1f",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C43",
+      "claim": "Deletion of CUE2 in the WT, ski2\u0394 or xrn1\u0394 background does not demonstrably impact GFP or steady-state full-length mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, deletion of CUE2 in the WT, ski2\u0394 or xrn1\u0394 background does not demonstrably impact GFP or steady-state full-length mRNA levels (Figure 3A\u20133B, Figure 2F, or Figure 2G, respectively) suggesting that the endonucleolytic decay pathway is not responsible for the majority of the three-fold loss in mRNA levels observed for this NGD reporter (relative to OPT, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot and flow cytometry data shown in Figure 3A-3B, Figure 2F, and Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "8d1ef156-f822-4b56-b73f-be23e434479a",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C44",
+      "claim": "Deleting XRN1 alone greatly restores NGD-CGA reporter mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we see that deleting XRN1 alone greatly restores NGD-CGA reporter mRNA levels while deleting SKI2 alone has very little effect (Figure 3A\u20133B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 3A-3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "a1d213ee-c8e9-4506-bee0-bd0103fee107",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C45",
+      "claim": "Deleting SKI2 alone has very little effect on NGD-CGA reporter mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we see that deleting XRN1 alone greatly restores NGD-CGA reporter mRNA levels while deleting SKI2 alone has very little effect (Figure 3A\u20133B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 3A-3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "fb81a9f5-6fbf-443b-a5ca-7b629ef15735",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C46",
+      "claim": "The majority of mRNA degradation observed for the NGD-CGA reporter is mediated by canonical decay pathways, mostly through Xrn1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results together suggest that the majority of mRNA degradation observed for the NGD-CGA reporter is mediated by canonical decay pathways, mostly through Xrn1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the northern blot data showing that XRN1 deletion restores mRNA levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "90ffb64d-5b04-4dd4-8b20-e842daa6e196",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C47",
+      "claim": "In the ski2\u0394 slh1\u0394 and xrn1\u0394 slh1\u0394 strains, there is a sizeable build-up of endonucleolytically cleaved mRNA fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in the ski2\u0394 slh1\u0394 and xrn1\u0394 slh1\u0394 strains, we see a sizeable build-up of endonucleolytically cleaved mRNA fragments (Figure 2F; lane 3 and Figure 2G; lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 2F and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "f40b77d5-0202-4efe-b2b1-376d23b0256c",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C48",
+      "claim": "In the absence of SLH1, there is smearing of the signal representative of shorter 5' and longer 3' fragments due to additional cleavage events occurring upstream of the primary stall site.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the recent study by Ikeuchi et al. (2019), we also see smearing of the signal representative of shorter 5' and longer 3' fragments due to additional cleavage events occurring upstream of the primary stall site in the absence of SLH1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by northern blot data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "cbee2dbc-5af5-4c94-ba4a-d10c442c4860",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C49",
+      "claim": "A robust decrease in full-length mRNA levels is observed upon deletion of SLH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also observe a robust decrease in full-length mRNA levels upon deletion of SLH1 (Figure 2F; lane 3 and Figure 2G; lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 2F and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "ada063ab-e254-4233-8ee6-3d8f8a31aea5",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C50",
+      "claim": "Slh1 activity competes with Cue2-mediated endonucleolytic cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a model wherein Slh1 activity somehow competes with Cue2-mediated endonucleolytic cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that deletion of SLH1 increases Cue2-mediated cleavage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "3199faa6-0567-4982-bbdb-d8709969eea3",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C51",
+      "claim": "Deletion of CUE2 in the xrn1\u0394 slh1\u0394 background results in a complete loss of the decay intermediate and a restoration of full-length mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "To ask whether the increased endonucleolytic cleavage seen in the SLH1 deletion background is the result of Cue2 activity, we deleted CUE2 in the xrn1\u0394 slh1\u0394 background and observed a complete loss of the decay intermediate and a restoration of full-length mRNA levels (Figure 2G; lane 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "fad56fa9-ce0e-436e-859c-d2b1fb187173",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C52",
+      "claim": "The action of Slh1 negatively regulates the assembly of a potent Cue2 substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "These data provide strong evidence that the action of Slh1 negatively regulates the assembly of a potent Cue2 substrate though the molecular mechanism for this regulation is not defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing increased Cue2 activity in slh1\u0394 backgrounds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "d6df8d3d-ed1e-4ddf-aa0c-561eea5ad4c9",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C53",
+      "claim": "16 nucleotide RPFs correspond to ribosomes that have translated to the truncated end of an mRNA in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "16 nucleotide (nt) RPFs correspond to ribosomes that have translated to the truncated end of an mRNA in the cell, usually an mRNA that has been endonucleolytically processed; these 16 nt RFPs are enriched in a dom34\u0394 strain since these are established targets for Dom34-mediated ribosome rescue (Arribere and Fire, 2018; Guydosh and Green, 2017; Guydosh and Green, 2014; Guydosh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work establishing this interpretation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "62c35e8e-08df-4a61-8601-613713485daf",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C54",
+      "claim": "16 nt RPFs are enriched in a dom34\u0394 strain since these are established targets for Dom34-mediated ribosome rescue.",
+      "claim_type": "EXPLICIT",
+      "source": "16 nucleotide (nt) RPFs correspond to ribosomes that have translated to the truncated end of an mRNA in the cell, usually an mRNA that has been endonucleolytically processed; these 16 nt RFPs are enriched in a dom34\u0394 strain since these are established targets for Dom34-mediated ribosome rescue (Arribere and Fire, 2018; Guydosh and Green, 2017; Guydosh and Green, 2014; Guydosh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "c89138ac-f2d0-4fc6-8842-a7fb581fa8a4",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C55",
+      "claim": "21 and 28 nt RPFs are derived from ribosomes on intact mRNA, with the two sizes corresponding to different conformational states of ribosomes in the elongation cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "21 and 28 nt RPFs are derived from ribosomes on intact mRNA, with the two sizes corresponding to different conformational states of ribosomes in the elongation cycle (Lareau et al., 2014; Wu et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "94d6aaf2-46f4-41e0-b598-01f910b5283b",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C56",
+      "claim": "21 nt RPFs represent classical/decoding ribosomes waiting for the next aminoacyl-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In our modified ribosome profiling library preparation (Wu et al., 2019b) 21 nt RPFs represent classical/decoding ribosomes waiting for the next aminoacyl-tRNA whereas the 28 nt RPFs primarily represent ribosomes in a rotated/pre-translocation state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the modified ribosome profiling method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "10478c4a-e67a-4c49-a24f-eaae7e72dbf7",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C57",
+      "claim": "28 nt RPFs primarily represent ribosomes in a rotated/pre-translocation state.",
+      "claim_type": "EXPLICIT",
+      "source": "In our modified ribosome profiling library preparation (Wu et al., 2019b) 21 nt RPFs represent classical/decoding ribosomes waiting for the next aminoacyl-tRNA whereas the 28 nt RPFs primarily represent ribosomes in a rotated/pre-translocation state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the modified ribosome profiling method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "4f5d7f4e-c1de-464d-9cdb-3b86f0db0fd4",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C58",
+      "claim": "Deleting SKI2 generally stabilizes prematurely polyadenylated and truncated mRNAs in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that deleting SKI2 generally stabilizes prematurely polyadenylated and truncated mRNAs in the cell, as seen previously (Tsuboi et al., 2012; van Hoof et al., 2002); therefore, use of this background likely enhanced Cue2 cleavage on these mRNA substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "b395f183-85f9-4c1a-9884-9cb6532648b7",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C59",
+      "claim": "In ski2\u0394, there is a clear accumulation of ribosome density at the (CGA)12 stall site in the 21 nt RPF track.",
+      "claim_type": "EXPLICIT",
+      "source": "In ski2\u0394, we observe a clear accumulation of ribosome density at the (CGA)12 stall site (in the 21 nt RPF track) in our reporter (Figure 4A) consistent with ribosome stalling at this site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "df540b3c-1fac-421c-b668-cc240d86439d",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C60",
+      "claim": "A quadruplet of 21 nt RPF peaks is observed from the second to the fifth CGA codon within the (CGA)12 codon tract.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking first within the actual (CGA)12 codon tract, we see a quadruplet of 21 nt RPF peaks from the second to the fifth CGA codon (Figure 4A, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "56bfa00b-db18-41dc-9552-667b0694620b",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C61",
+      "claim": "The principal ribosome accumulation occurs between the second and the fifth CGA codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of difficulties in mapping monosome reads to repetitive sequences such as (CGA)12, we also isolated longer RPFs from a minor (<5% of total reads on reporter) population of stacked disome species (Guydosh and Green, 2014) and show that although some ribosomes move into the subsequent CGA codons, the principal ribosome accumulation occurs between the second and the fifth codon (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by disome footprint data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "2b518a26-f37a-4be7-8ac6-59280774bf96",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C62",
+      "claim": "Most ribosomes found at the CGA codons are waiting to decode the next aminoacyl-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "While 21 nt RFPs are enriched on CGA codons, 28 nt RPFs are not (Figure 4A, compare middle and bottom panels), indicating that most ribosomes found at the CGA codons are waiting to decode the next aminoacyl-tRNA; these observations are consistent with the fact that CGA codons are poorly decoded (Letzring et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4A and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "340bc736-5250-4e25-92f1-a03d0e81741b",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C63",
+      "claim": "The 21 nt RPF quadruplet at the CGA cluster represents the stalled 'lead' ribosome in its classical (unrotated) conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The 21 nt RPF quadruplet at the CGA cluster represents the stalled 'lead' ribosome in its classical (unrotated) conformation, which is consistent with recent cryo-EM structures of collided ribosomes (Ikeuchi et al., 2019; Juszkiewicz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on ribosome profiling data and supported by citations to cryo-EM structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "f0989fbe-5b9f-4e98-8dee-81a9334d7fab",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C64",
+      "claim": "About 30 nts upstream of the lead ribosomes, there is accumulation of 28 nt RPFs that correspond to colliding ribosomes in a rotated state.",
+      "claim_type": "EXPLICIT",
+      "source": "About 30 nts upstream of these lead ribosomes, we observe the accumulation of 28 nt RPFs that correspond to colliding ribosomes in a rotated state (Figure 4A, bottom panel), also in agreement with the ribosome states recently reported in cryo-EM structures of collided disomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4A and is consistent with cryo-EM structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "1cd31ef2-cb0b-4260-bab5-4d61694fad46",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C65",
+      "claim": "In the dom34\u0394 ski2\u0394 strain, a strong quadruplet of 16 nt RPF peaks is observed exactly 30 nts upstream of the quadruplet of 21 nt RPFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the dom34\u0394 ski2\u0394 strain (where 16 nt RPFs are stabilized), we observe a strong quadruplet of 16 nt RPF peaks exactly 30 nts upstream of the quadruplet of 21 nt RPFs (Figure 4B), indicative of endonucleolytic cleavage events occurring upstream of the (CGA)12\u2013stalled ribosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "970d23f6-261c-476b-a98e-052ed069fc3b",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C66",
+      "claim": "The precise 30 nt distance between the 16 nt RPFs and the downstream 21 nt RPFs is consistent with the measured distance between the A sites of two colliding ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The precise 30 nt distance between the 16 nt RPFs and the downstream 21 nt RPFs is consistent with the measured distance between the A sites of two colliding ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ribosome profiling data and knowledge of ribosome structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "23d8da11-f2b5-4cbf-a63c-9feb23b8d38c",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C67",
+      "claim": "In the cue2\u0394 dom34\u0394 ski2\u0394 strain, the 16 nt RPFs indicative of endonucleolytic cleavage are dramatically reduced in abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "To address the role of Cue2 as the endonuclease, we examined the same collection of RPFs in the cue2\u0394 dom34\u0394 ski2\u0394 strain. In this background, the 16 nt RPFs indicative of endonucleolytic cleavage are dramatically reduced in abundance while the distributions of 21 and 28 nt RPFs are largely unaffected (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "74d33c25-1a71-4ea2-8b99-02b05ab755d8",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C68",
+      "claim": "Endonucleolytic cleavage occurs precisely in the A site of the collided, rotated ribosome and requires Cue2.",
+      "claim_type": "EXPLICIT",
+      "source": "These data argue that endonucleolytic cleavage occurs precisely in the A site of the collided, rotated ribosome and requires Cue2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ribosome profiling data showing loss of 16 nt RPFs in cue2\u0394.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "a83caa31-24f6-449a-91de-063f52d800b3",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C69",
+      "claim": "In the slh1\u0394 dom34\u0394 ski2\u0394 strain, there is a dramatic accumulation of 16 nt RPF peaks behind the lead ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "When we delete DOM34 in the slh1\u0394 ski2\u0394 background (slh1\u0394 dom34\u0394 ski2\u0394), we see a dramatic accumulation of 16 nt RPF peaks (again, as a quadruplet, although with an altered relative distribution) behind the lead ribosomes (Figure 4E compared to 4B, top panels, note the larger y-axis scale in Figure 4E and 4F compared to 4B and 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "a9c7535e-2e69-4c6c-9b33-f0a348c923d5",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C70",
+      "claim": "Deletion of CUE2 in the slh1\u0394 dom34\u0394 ski2\u0394 background leads to a near complete loss of the 16 nt RPFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, deletion of CUE2 in the slh1\u0394 dom34\u0394 ski2\u0394 background leads to a near complete loss of the 16 nt RPFs (Figure 4F, top panel) and an enrichment of 21 and 28 nt RPFs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "8a960e77-c7cc-46b5-a95b-1d3dab963685",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C71",
+      "claim": "Endonucleolytic cleavage events associated with NGD depend on the E3 ligase Hel2.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, consistent with earlier studies showing that endonucleolytic cleavage events associated with NGD depend on the E3 ligase Hel2 (Ikeuchi et al., 2019), we show that deletion of HEL2 in both dom34\u0394 ski2\u0394 and slh1\u0394 dom34\u0394 ski2\u0394 backgrounds leads to a complete loss of 16 nt RPFs (Figure 4\u2014figure supplement 2A and f, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4\u2014figure supplement 2 and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "7234d043-4e76-4cb6-a8f5-849f2731c6b6",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C72",
+      "claim": "On addition of Cue2-SMR (WT), there is a substantial loss of trisomes and a corresponding increase in monosomes and disomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, on addition of Cue2-SMR (WT) (pink trace), we observe a substantial loss of trisomes and a corresponding increase in monosomes and disomes (Figure 5A), while on addition of the Cue2 SMR-R402A mutant (orange trace), we observe a more modest decrease in trisomes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sucrose gradient data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "9e3798a7-6a40-4c0a-8f37-cd6be2d86c0b",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C73",
+      "claim": "On addition of the Cue2 SMR-R402A mutant, there is a more modest decrease in trisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, on addition of Cue2-SMR (WT) (pink trace), we observe a substantial loss of trisomes and a corresponding increase in monosomes and disomes (Figure 5A), while on addition of the Cue2 SMR-R402A mutant (orange trace), we observe a more modest decrease in trisomes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sucrose gradient data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "7eeccf78-4854-422c-9c16-8d3b8554ff76",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C74",
+      "claim": "The SMR (hydrolase) domain of Cue2 cleaves the mRNA within a stack of colliding ribosomes in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provide initial in vitro evidence that the SMR (hydrolase) domain of Cue2 cleaves the mRNA within a stack of colliding ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the in vitro cleavage assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "a3614ed7-ff2c-4c5d-867b-9237af35fe75",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C75",
+      "claim": "In the sample treated with the wild-type Cue2-SMR domain, there is a striking accumulation of 3' fragment ends that maps precisely where the strong cleavage sites were reported in the ribosome profiling data.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sample treated with the wild-type Cue2-SMR domain, we see a striking accumulation of 3' fragment ends that maps precisely where the strong cleavage sites were reported (in the A site of the colliding ribosome) in the ribosome profiling data for the same strain (slh1\u0394 dom34\u0394 sk2i\u0394); reassuringly, these cleavage events are not seen in the sequencing data for the Cue2 SMR-R402A mutant or for the no enzyme control (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "f2c60912-d269-4c86-aa58-50e195747419",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C76",
+      "claim": "The cleavage events are not seen in the sequencing data for the Cue2 SMR-R402A mutant or for the no enzyme control.",
+      "claim_type": "EXPLICIT",
+      "source": "In the sample treated with the wild-type Cue2-SMR domain, we see a striking accumulation of 3' fragment ends that maps precisely where the strong cleavage sites were reported (in the A site of the colliding ribosome) in the ribosome profiling data for the same strain (slh1\u0394 dom34\u0394 sk2i\u0394); reassuringly, these cleavage events are not seen in the sequencing data for the Cue2 SMR-R402A mutant or for the no enzyme control (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "9167bdf6-ce51-4218-b706-495720911ece",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C77",
+      "claim": "The remarkable agreement between the in vivo-based ribosome profiling data and the in vitro-based cleavage data provides strong support for the identity of Cue2 as the endonuclease involved in NGD.",
+      "claim_type": "EXPLICIT",
+      "source": "The remarkable agreement between the in vivo-based ribosome profiling data and the in vitro-based cleavage data provides strong support for the identity of Cue2 as the endonuclease involved in NGD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the concordance of in vivo and in vitro data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "db3d5e8f-5f54-4bf5-94b8-1eb536f461d1",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C78",
+      "claim": "When SLH1 is deleted, there is a substantial build-up of RPFs both at the stalling site (21 nt RPFs) and upstream (28 nt RPFs) of the stalling site.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we compared RPFs on the uncleaved mRNAs (i.e. the 21 and 28 nt RPFs) in the cue2\u0394 dom34\u0394 ski2\u2206 and slh1\u0394 cue2\u0394 dom34\u0394 ski2\u2206 strains, we observed that SLH1 deletion results in a substantial build-up of RPFs both at the stalling site (21 nt RPFs) (compare middle panels, Figure 4C and 4F) and upstream (28 nt RPFs) of the stalling site (compare bottom panels, Figure 4C and 4F and quantitation in 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4C, 4F, and 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "30c6ae6d-cdc7-49eb-b758-5d54faceb39f",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C79",
+      "claim": "SLH1 deletion results in more than a twofold increase in ribosome occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "These data were normalized to overall mRNA levels and reveal more than a twofold increase in ribosome occupancy when SLH1 is deleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitation of ribosome profiling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "74654a44-9f21-4f9f-a484-163b274456d0",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C80",
+      "claim": "Slh1 prevents the accumulation of colliding ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with the proposed model that Slh1 prevents the accumulation of colliding ribosomes (Matsuo et al., 2017) thereby limiting the availability of Cue2 substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on ribosome profiling data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "a7b9f0f4-c0e0-4249-a73e-8ff4cd7ce65c",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C81",
+      "claim": "Prematurely polyadenylated mRNAs are one possible endogenous target class for Cue2.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible endogenous target class for Cue2 is the set of prematurely polyadenylated mRNAs (where polyadenylation happens within the ORF) that are commonly generated by aberrant RNA processing events in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the known properties of these mRNAs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "40916ce6-d053-4b3d-abca-457de32796b2",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C82",
+      "claim": "Cue2-dependent 16 nt RPFs are substantially enriched in the prematurely polyadenylated mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We next identify Cue2-dependent 16 nt RPFs in a ski2\u2206 dom34\u2206 strain (Figure 6A, orange dots) as well as in a ski2\u2206 dom34\u2206 slh1\u2206 background (Figure 6\u2014figure supplement 1B, orange dots) and see that they are substantially enriched in the prematurely polyadenylated mRNAs (Figure 6A and Figure 6\u2014figure supplement 1B, red dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 6A and Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "00516ac5-e7bd-4ef2-ae24-3594975d867d",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C83",
+      "claim": "In the ski2\u2206 dom34\u2206 background, a good fraction (21/55) of the prematurely polyadenylated genes are substantially reduced in 16 nt RPFs upon CUE2 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in the ski2\u2206 dom34\u2206 background a good fraction (21/55) of the prematurely polyadenylated genes are substantially reduced in 16 nt RPFs upon CUE2 deletion (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "0c937d6b-4ad7-41a7-afa2-815933e975ba",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C84",
+      "claim": "For well-defined mRNA targets RNA14 and YAP1, the Cue2-dependent 16 nt RPFs are positioned directly upstream of the previously characterized sites of premature polyadenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we show that for well-defined mRNA targets RNA14 and YAP1, the Cue2-dependent 16 nt RPFs are positioned as anticipated directly upstream of the previously characterized sites of premature polyadenylation (Figure 6C and Figure 6\u2014figure supplement 1C) (Guydosh and Green, 2017; Pelechano et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 6C and Figure 6\u2014figure supplement 1C and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "846eff8a-63f3-44c6-a2bf-28b0085610d0",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C85",
+      "claim": "Cue2-cleavage may be one mechanism for cells to initiate decay of prematurely polyadenylated mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the SKI complex and the exosome decay NSD substrates (Frischmeyer et al., 2002; van Hoof et al., 2002), Cue2-cleavage may be one mechanism for cells to initiate this decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the data showing Cue2 activity on prematurely polyadenylated mRNAs.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "6569e1e2-79f6-4769-be25-f7baf205952e",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C86",
+      "claim": "The ubiquitin-binding domains of Cue2 might recognize Hel2-ubiquitinated sites on the stacked ribosomes thus allowing recruitment of the SMR domain into the A site of the colliding ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect that the ubiquitin-binding domains of Cue2 might recognize Hel2-ubiquitinated sites on the stacked ribosomes thus allowing recruitment of the SMR domain into the A site of the colliding ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the domain structure of Cue2 and the known role of Hel2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "76acb9a9-8d2e-4220-986b-e78a5d5733c2",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C87",
+      "claim": "Recognition of ubiquitin chains by Cue2 might involve multiple ubiquitinated sites on a single collided ribosome or those found on neighboring ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We can imagine that recognition of ubiquitin chains by Cue2 might involve multiple ubiquitinated sites on a single collided ribosome or those found on neighboring ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of Cue2 recruitment.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "caae676d-1caf-41e3-ae1a-28bed5f0b416",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C88",
+      "claim": "The conserved and putative ubiquitin-binding domains might function within Cue2 itself to inhibit promiscuous activity of the endonuclease in the absence of an appropriate target.",
+      "claim_type": "EXPLICIT",
+      "source": "These conserved and putative ubiquitin-binding domains might also function within Cue2 itself to inhibit promiscuous activity of the endonuclease in the absence of an appropriate target, a possibility that prompted us to perform in vitro cleavage experiments with the isolated SMR domain of Cue2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the regulatory function of the ubiquitin-binding domains.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "2a667376-1240-4213-be4f-fa990599a056",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C89",
+      "claim": "Canonical exonucleolytic processing of problematic mRNAs is the dominant pathway on the NGD-CGA reporter, with the strongest contributions from Xrn1 rather than the exosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that canonical exonucleolytic processing of problematic mRNAs is the dominant pathway on our NGD-CGA reporter, with the strongest contributions from Xrn1 rather than the exosome (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "a107a08b-6dd5-494e-a8e3-c050add75035",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C90",
+      "claim": "The Cue2-mediated endonucleolytic pathway is activated in genetic backgrounds lacking the helicase Slh1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we find that the Cue2-mediated endonucleolytic pathway is activated in genetic backgrounds lacking the helicase Slh1 (a member of the previously identified RQT complex) (Figure 2F\u20132G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by northern blot data shown in Figure 2F-2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "bc32a01e-859e-4c7f-9347-a040f217657b",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C91",
+      "claim": "Under conditions where cells are overwhelmed by colliding ribosome complexes, the RQT machinery might become limiting and there will be an increased role for Cue2-mediated endonucleolytic processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our genetic insights also lead us to speculate that under conditions where cells are overwhelmed by colliding ribosome complexes, for example under stressful RNA-damaging conditions (Simms et al., 2014), that the RQT machinery might become limiting and that there will be an increased role for Cue2-mediated endonucleolytic processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the genetic data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "0c445554-a643-489a-a733-ee8d6b17096c",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C92",
+      "claim": "Previous genetic screens reveal increased sensitivity of CUE2 deletion strains to ribosome-targeted compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous genetic screens reveal increased sensitivity of CUE2 deletion strains to ribosome-targeted compounds (Alamgir et al., 2010; Mircus et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "940997b3-effc-4211-8a3f-0cad4ac7e11e",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C93",
+      "claim": "The strong conservation of Cue2 throughout eukaryotes argues that this endonucleolytic processing pathway plays a fundamental role in biology.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the strong conservation of Cue2 throughout eukaryotes argues that this endonucleolytic processing pathway plays a fundamental role in biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of conservation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "8f83c76a-12df-439b-a285-f2eb26eb93fa",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C94",
+      "claim": "The activity of the RQT complex is critical in targeting nascent peptides on problematic mRNAs for degradation via the RQC.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies provide strong evidence that the activity of the RQT complex is critical in targeting nascent peptides on problematic mRNAs for degradation via the RQC (Matsuo et al., 2017; Sitron et al., 2017) through ribosome rescue events that generate a dissociated 60S-peptidyl-tRNA complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "85692ba0-d4ff-4cd2-8591-79c0a0d017b8",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C95",
+      "claim": "Ribosome occupancies on problematic mRNAs increase on deletion of SLH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ribosome profiling results indicate that ribosome occupancies on problematic mRNAs increase on deletion of SLH1 (Figure 4C, 4F and 4H) consistent with the possibility that Slh1 functions directly or indirectly to dissociate ribosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 4C, 4F, and 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "0d29565c-c767-45e7-a0bf-996548868d77",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C96",
+      "claim": "The increased Cue2-dependent cleavage observed in slh1\u2206 background suggests that an increase in the density of collided ribosomes makes an ideal Cue2 substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased Cue2-dependent cleavage (Figure 2F\u20132G and Figure 4B and 4E) that we observe in slh1\u2206 background suggests that an increase in the density of collided ribosomes makes an ideal Cue2 substrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the data showing increased cleavage in slh1\u2206.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "03772719-0130-4c0d-8bcc-2e5462def5fd",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C97",
+      "claim": "Slh1 and Dom34 may both target collided ribosomes for the RQC, although their specificities may be somewhat distinct.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we suggest that Slh1 and Dom34 may both target collided ribosomes for the RQC, although their specificities may be somewhat distinct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the data presented.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "29963e11-2757-49c6-8799-31b4fa391aad",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C98",
+      "claim": "Slh1 may use its helicase function to target ribosomes on intact mRNAs with an accessible 3' end, while Dom34 targets those ribosomes on truncated mRNAs that are inaccessible to Slh1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Slh1 may use its helicase function to target ribosomes on intact mRNAs with an accessible 3' end, while Dom34 targets those ribosomes on truncated mRNAs that are inaccessible to Slh1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the distinct roles of Slh1 and Dom34.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "5fd26bcd-74da-4306-97f0-482fcc31f070",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C99",
+      "claim": "A critical role of Cue2-mediated endonucleolytic cleavage is to provide another pathway for ribosome dissociation that can target nascent peptides for RQC.",
+      "claim_type": "EXPLICIT",
+      "source": "In this view, a critical role of Cue2-mediated endonucleolytic cleavage is to provide another pathway for ribosome dissociation that can target nascent peptides for RQC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the role of Cue2 in the broader quality control pathway.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "cf87549a-3c9a-4d54-9833-0f918f28f8fb",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C100",
+      "claim": "Dom34 preferentially rescues ribosomes that are trapped on truncated mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies provide strong support for the idea that Dom34 preferentially rescues ribosomes that are trapped on truncated mRNAs (Guydosh and Green, 2014; Shoemaker et al., 2010) and in vitro studies have connected this rescue activity of Dom34 to downstream RQC functions (Shao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "f59fe49b-8e9e-4d00-a747-e3f3cf469942",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C101",
+      "claim": "Two distinct rescue pathways exist: one on intact mRNA by the RQT complex (and Slh1) and the other on endonucleolytically cleaved mRNA by Dom34.",
+      "claim_type": "EXPLICIT",
+      "source": "These two distinct rescue pathways, one on intact mRNA by the RQT complex (and Slh1) and the other on endonucleolytically cleaved mRNA by Dom34, might provide the cell with redundant means to deal with toxic mRNP intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the data and previous work.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "63dd4fbc-eeee-4010-9571-d9a169b8614c",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C102",
+      "claim": "Proteotoxic stress is a critical problem for all cells and elaborate quality control systems have evolved to minimize its effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteotoxic stress is a critical problem for all cells and elaborate quality control systems have evolved to minimize its effects as made clear by the exquisite sensitivity of neurons to defects in these pathways (Bengtson and Joazeiro, 2010; Ishimura et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "5361b609-6e1c-4156-ac9d-6dbec4b2ee80",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "claim_id": "C103",
+      "claim": "The synergistic contributions of exonucleases and endonucleases for targeting problematic mRNAs for decay are critical for ensuring that proteotoxic stress is minimized.",
+      "claim_type": "EXPLICIT",
+      "source": "The synergistic contributions of exonucleases and endonucleases that we delineate here for targeting problematic mRNAs for decay are critical for ensuring that proteotoxic stress is minimized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d5556dca-2ad1-4645-b908-bd3d50bceef2",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cue2 is identified as the conserved endonuclease responsible for NGD through a reverse genetic screen, and its SMR domain contains conserved residues (D348, H350, R402) critical for endonucleolytic cleavage activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The identification of Cue2 through the overexpression screen (C28, C29) is well-supported by flow cytometry and northern blot data. The domain structure analysis (C30-C32, C35-C36) is supported by homology modeling and sequence alignments. Mutagenesis experiments (C37-C39, C41-C42) and deletion of CUE2 abolishing decay intermediates (C40) provide strong functional evidence. The convergence of genetic, structural, and biochemical data robustly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "03f1dbdd-5517-439a-bd0c-327220511ec2",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ribosome profiling reveals that Cue2 cleaves mRNA precisely in the A site of the colliding ribosome, positioned 30 nucleotides upstream of the stalled lead ribosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ribosome profiling data (C59-C67) provides high-resolution evidence for the precise cleavage site. The 16 nt RPFs appear exactly 30 nts upstream of the 21 nt RPFs marking the stalled ribosome (C65-C66), and these 16 nt RPFs are dramatically reduced in cue2\u0394 strains (C67). The spatial relationship between different RPF sizes and their interpretation as different ribosome states is well-supported by citations to previous work and is consistent with cryo-EM structures (C63-C64). This result is strongly supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "ccd1e107-accf-470d-bdb1-761761a32f6a",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NGD primarily proceeds via Xrn1-mediated exonucleolytic decay, with Cue2-mediated endonucleolytic decay constituting a secondary pathway under normal conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Northern blot data clearly shows that XRN1 deletion greatly restores NGD-CGA reporter mRNA levels (C44), while CUE2 deletion alone has minimal effect (C43). SKI2 deletion also has little effect (C45), indicating the exosome is not the primary pathway. The inference that Xrn1 mediates the majority of decay (C46) is well-supported by these data. This hierarchy of decay pathways is convincingly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The Cue2-dependent endonucleolytic pathway becomes a major contributor to NGD in cells lacking Slh1, which normally prevents accumulation of colliding ribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple lines of evidence support this result: northern blots show increased endonucleolytic cleavage fragments in slh1\u0394 backgrounds (C47-C49), deletion of CUE2 in slh1\u0394 backgrounds eliminates these fragments and restores full-length mRNA (C51), and ribosome profiling shows dramatic accumulation of 16 nt RPFs in slh1\u0394 dom34\u0394 ski2\u0394 that are lost upon CUE2 deletion (C69-C70). The increased ribosome occupancy in slh1\u0394 strains (C78-C79) provides a mechanistic explanation. The data converge to support the model that Slh1 negatively regulates Cue2 substrate formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "860cecfc-7b17-4171-a3cc-5aedf7b9b4f2",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In vitro reconstitution experiments demonstrate that the SMR domain of Cue2 is sufficient to cleave mRNA within colliding ribosomes, with cleavage sites matching those observed in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The in vitro cleavage assays show that addition of wild-type Cue2-SMR causes substantial loss of trisomes (C72), while the R402A mutant has reduced activity (C73). RNA-seq of the in vitro cleavage products shows striking accumulation of 3' fragment ends that precisely match the in vivo cleavage sites (C75), and these are absent in the R402A mutant and no-enzyme controls (C76). The concordance between in vivo and in vitro data (C77) strongly supports the conclusion that Cue2-SMR is sufficient for cleavage activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "f91ee696-59cd-4698-93e9-ef20864d7369",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Endonucleolytic cleavage events associated with NGD depend on the E3 ligase Hel2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Ribosome profiling data shows complete loss of 16 nt RPFs in hel2\u0394 backgrounds (C71), consistent with previous work. This result is well-supported by the data presented and citations to prior studies, though it represents confirmation of previous findings rather than a novel discovery in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "f5bdc95b-e570-4023-b45e-28b020b2b117",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prematurely polyadenylated mRNAs are endogenous targets for Cue2-mediated cleavage, with Cue2-dependent 16 nt RPFs enriched at sites upstream of premature polyadenylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The ribosome profiling data shows substantial enrichment of Cue2-dependent 16 nt RPFs in prematurely polyadenylated mRNAs (C82), with 21/55 genes showing substantial reduction in 16 nt RPFs upon CUE2 deletion (C83). For specific targets RNA14 and YAP1, the 16 nt RPFs are positioned precisely upstream of known premature polyadenylation sites (C84). While the functional significance is somewhat speculative (C85), the data clearly demonstrate that these mRNAs are Cue2 substrates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "c01d928a-31af-460c-9901-8f260646a40e",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The NGD-CGA and NGD-AAA reporters exhibit robust decreases in GFP/RFP ratios compared to the OPT control, with corresponding decreases in mRNA levels and nascent peptide degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Flow cytometry data clearly shows threefold and twofold decreases for NGD-CGA and NGD-AAA reporters respectively (C24-C25). Northern blots confirm mRNA level changes and show stabilization of 5' decay fragments in ski2\u0394 (C26). Western blots demonstrate nascent peptide degradation (C27). These data validate the reporter system used throughout the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "4e589b33-110c-4526-b855-80d76a78b4cf",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Different sizes of ribosome-protected fragments (16, 21, and 28 nt RPFs) correspond to distinct ribosome states: 16 nt RPFs indicate ribosomes at truncated mRNA ends, 21 nt RPFs represent classical/decoding ribosomes, and 28 nt RPFs represent rotated/pre-translocation ribosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These interpretations of RPF sizes are well-supported by citations to previous work establishing these relationships (C53-C57). The use of ski2\u0394 backgrounds to stabilize truncated mRNAs (C58) is also supported by prior studies. This represents established methodology rather than a novel finding, but is critical for interpreting the ribosome profiling results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "d1ba5274-56ab-4e9d-8e5d-c2f097c92a5d",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ubiquitin-binding domains of Cue2 may recognize Hel2-ubiquitinated sites on collided ribosomes to recruit the SMR domain, and may also regulate endonuclease activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are explicitly speculative (C86-C88) and lack direct experimental evidence. While the domain structure of Cue2 and the dependence on Hel2 are established, the specific mechanism of recruitment and regulation through ubiquitin-binding domains is not tested. This represents a reasonable hypothesis but requires further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "22185938-3485-4301-82d4-eab3f3c29bdf",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Under conditions of cellular stress with overwhelming ribosome collisions, Cue2-mediated endonucleolytic processing may play an increased role, and the conservation of Cue2 suggests fundamental biological importance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The speculation about stress conditions (C91) is not directly tested in this study. While previous genetic screens show sensitivity of cue2\u0394 strains to ribosome-targeted compounds (C92), this is correlative. The inference about conservation (C93) is reasonable but not rigorously demonstrated. These represent plausible hypotheses requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    },
+    {
+      "id": "a6e875e5-c6ec-4e2f-9742-eef9a8278af1",
+      "content_id": "6bccafe6-d48d-4245-b3c9-7147a0ed5c19",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Slh1 and Dom34 may represent distinct ribosome rescue pathways targeting different substrates, with Slh1 acting on intact mRNAs and Dom34 on truncated mRNAs, and Cue2-mediated cleavage providing an alternative pathway for ribosome dissociation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the ribosome profiling data shows increased occupancy in slh1\u0394 strains (C95) and increased Cue2 cleavage (C96), the proposed distinct specificities of Slh1 and Dom34 (C97-C98) are largely speculative. The role of Cue2 in providing an alternative dissociation pathway (C99) is inferred but not directly demonstrated. The model of two distinct rescue pathways (C101) is plausible but requires additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:02.998374Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a69da976-bf9e-4b40-902a-ace095d92f71",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "3c32bb71-76b4-4de4-be93-47a928d4dcfc",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "08e66ca7-bded-4a95-abe7-fb52e19b4d69",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "537c088b-3751-458b-abb5-c34750da39ba",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "80332ce3-b443-492b-ad67-09dfafe54001",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "4c095c52-4b18-4e43-8001-d561018499e6",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "abd34f01-8a34-4dae-93f1-0f69c4dc9278",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "84946e2b-e138-481d-9d00-7804ee6e4ad7",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "70a9189b-ca2e-44d2-b737-77dbd169ae36",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "fad38f87-e04f-471e-a1ad-b6d6323f61b1",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "2322c49b-e022-4840-a912-0e57b4a49d7c",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "6a1fcf86-ae82-48e5-8098-ecca669d52a2",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "954ff17e-6e79-4c1b-a8b3-6042fed62dbc",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "c7362f62-bf8d-4e70-904f-40e6c306e5a8",
+      "result_id": "d5556dca-2ad1-4645-b908-bd3d50bceef2"
+    },
+    {
+      "claim_id": "f8618fc8-28d5-437c-8e79-6ea65285b39e",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "b395f183-85f9-4c1a-9884-9cb6532648b7",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "df540b3c-1fac-421c-b668-cc240d86439d",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "56bfa00b-db18-41dc-9552-667b0694620b",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "2b518a26-f37a-4be7-8ac6-59280774bf96",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "340bc736-5250-4e25-92f1-a03d0e81741b",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "f0989fbe-5b9f-4e98-8dee-81a9334d7fab",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "1cd31ef2-cb0b-4260-bab5-4d61694fad46",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "970d23f6-261c-476b-a98e-052ed069fc3b",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "23d8da11-f2b5-4cbf-a63c-9feb23b8d38c",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "74d33c25-1a71-4ea2-8b99-02b05ab755d8",
+      "result_id": "03f1dbdd-5517-439a-bd0c-327220511ec2"
+    },
+    {
+      "claim_id": "b5ac4618-20f2-4f93-b156-247dc4770240",
+      "result_id": "ccd1e107-accf-470d-bdb1-761761a32f6a"
+    },
+    {
+      "claim_id": "e46c4b27-032b-484b-8b0c-16345bbb1c9e",
+      "result_id": "ccd1e107-accf-470d-bdb1-761761a32f6a"
+    },
+    {
+      "claim_id": "11bf6a6f-c8e7-4adb-a226-d5c6a8ef8e1f",
+      "result_id": "ccd1e107-accf-470d-bdb1-761761a32f6a"
+    },
+    {
+      "claim_id": "8d1ef156-f822-4b56-b73f-be23e434479a",
+      "result_id": "ccd1e107-accf-470d-bdb1-761761a32f6a"
+    },
+    {
+      "claim_id": "a1d213ee-c8e9-4506-bee0-bd0103fee107",
+      "result_id": "ccd1e107-accf-470d-bdb1-761761a32f6a"
+    },
+    {
+      "claim_id": "fb81a9f5-6fbf-443b-a5ca-7b629ef15735",
+      "result_id": "ccd1e107-accf-470d-bdb1-761761a32f6a"
+    },
+    {
+      "claim_id": "2a667376-1240-4213-be4f-fa990599a056",
+      "result_id": "ccd1e107-accf-470d-bdb1-761761a32f6a"
+    },
+    {
+      "claim_id": "41037187-3dd7-4ecc-9c7a-f890db6f61d6",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "90ffb64d-5b04-4dd4-8b20-e842daa6e196",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "f40b77d5-0202-4efe-b2b1-376d23b0256c",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "cbee2dbc-5af5-4c94-ba4a-d10c442c4860",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "ada063ab-e254-4233-8ee6-3d8f8a31aea5",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "3199faa6-0567-4982-bbdb-d8709969eea3",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "fad56fa9-ce0e-436e-859c-d2b1fb187173",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "a83caa31-24f6-449a-91de-063f52d800b3",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "a9c7535e-2e69-4c6c-9b33-f0a348c923d5",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "db3d5e8f-5f54-4bf5-94b8-1eb536f461d1",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "30c6ae6d-cdc7-49eb-b758-5d54faceb39f",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "74654a44-9f21-4f9f-a484-163b274456d0",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "a107a08b-6dd5-494e-a8e3-c050add75035",
+      "result_id": "5b53495f-fb73-4ccd-ba47-4f270d72ccdc"
+    },
+    {
+      "claim_id": "7234d043-4e76-4cb6-a8f5-849f2731c6b6",
+      "result_id": "860cecfc-7b17-4171-a3cc-5aedf7b9b4f2"
+    },
+    {
+      "claim_id": "9e3798a7-6a40-4c0a-8f37-cd6be2d86c0b",
+      "result_id": "860cecfc-7b17-4171-a3cc-5aedf7b9b4f2"
+    },
+    {
+      "claim_id": "7eeccf78-4854-422c-9c16-8d3b8554ff76",
+      "result_id": "860cecfc-7b17-4171-a3cc-5aedf7b9b4f2"
+    },
+    {
+      "claim_id": "a3614ed7-ff2c-4c5d-867b-9237af35fe75",
+      "result_id": "860cecfc-7b17-4171-a3cc-5aedf7b9b4f2"
+    },
+    {
+      "claim_id": "f2c60912-d269-4c86-aa58-50e195747419",
+      "result_id": "860cecfc-7b17-4171-a3cc-5aedf7b9b4f2"
+    },
+    {
+      "claim_id": "9167bdf6-ce51-4218-b706-495720911ece",
+      "result_id": "860cecfc-7b17-4171-a3cc-5aedf7b9b4f2"
+    },
+    {
+      "claim_id": "8a960e77-c7cc-46b5-a95b-1d3dab963685",
+      "result_id": "f91ee696-59cd-4698-93e9-ef20864d7369"
+    },
+    {
+      "claim_id": "a7b9f0f4-c0e0-4249-a73e-8ff4cd7ce65c",
+      "result_id": "f5bdc95b-e570-4023-b45e-28b020b2b117"
+    },
+    {
+      "claim_id": "40916ce6-d053-4b3d-abca-457de32796b2",
+      "result_id": "f5bdc95b-e570-4023-b45e-28b020b2b117"
+    },
+    {
+      "claim_id": "00516ac5-e7bd-4ef2-ae24-3594975d867d",
+      "result_id": "f5bdc95b-e570-4023-b45e-28b020b2b117"
+    },
+    {
+      "claim_id": "0c937d6b-4ad7-41a7-afa2-815933e975ba",
+      "result_id": "f5bdc95b-e570-4023-b45e-28b020b2b117"
+    },
+    {
+      "claim_id": "846eff8a-63f3-44c6-a2bf-28b0085610d0",
+      "result_id": "f5bdc95b-e570-4023-b45e-28b020b2b117"
+    },
+    {
+      "claim_id": "8b71bd38-072f-48e1-bd3c-4759e6df46bd",
+      "result_id": "c01d928a-31af-460c-9901-8f260646a40e"
+    },
+    {
+      "claim_id": "6612c1b3-9e99-4326-9623-42face52ccf5",
+      "result_id": "c01d928a-31af-460c-9901-8f260646a40e"
+    },
+    {
+      "claim_id": "7939f35b-b46b-4d48-be2c-9e65a9b52667",
+      "result_id": "c01d928a-31af-460c-9901-8f260646a40e"
+    },
+    {
+      "claim_id": "1c513621-f9d2-4737-8e63-dcf3236874e7",
+      "result_id": "c01d928a-31af-460c-9901-8f260646a40e"
+    },
+    {
+      "claim_id": "d6df8d3d-ed1e-4ddf-aa0c-561eea5ad4c9",
+      "result_id": "4e589b33-110c-4526-b855-80d76a78b4cf"
+    },
+    {
+      "claim_id": "62c35e8e-08df-4a61-8601-613713485daf",
+      "result_id": "4e589b33-110c-4526-b855-80d76a78b4cf"
+    },
+    {
+      "claim_id": "c89138ac-f2d0-4fc6-8842-a7fb581fa8a4",
+      "result_id": "4e589b33-110c-4526-b855-80d76a78b4cf"
+    },
+    {
+      "claim_id": "94d6aaf2-46f4-41e0-b598-01f910b5283b",
+      "result_id": "4e589b33-110c-4526-b855-80d76a78b4cf"
+    },
+    {
+      "claim_id": "10478c4a-e67a-4c49-a24f-eaae7e72dbf7",
+      "result_id": "4e589b33-110c-4526-b855-80d76a78b4cf"
+    },
+    {
+      "claim_id": "4f5d7f4e-c1de-464d-9cdb-3b86f0db0fd4",
+      "result_id": "4e589b33-110c-4526-b855-80d76a78b4cf"
+    },
+    {
+      "claim_id": "6569e1e2-79f6-4769-be25-f7baf205952e",
+      "result_id": "d1ba5274-56ab-4e9d-8e5d-c2f097c92a5d"
+    },
+    {
+      "claim_id": "76acb9a9-8d2e-4220-986b-e78a5d5733c2",
+      "result_id": "d1ba5274-56ab-4e9d-8e5d-c2f097c92a5d"
+    },
+    {
+      "claim_id": "caae676d-1caf-41e3-ae1a-28bed5f0b416",
+      "result_id": "d1ba5274-56ab-4e9d-8e5d-c2f097c92a5d"
+    },
+    {
+      "claim_id": "bc32a01e-859e-4c7f-9347-a040f217657b",
+      "result_id": "22185938-3485-4301-82d4-eab3f3c29bdf"
+    },
+    {
+      "claim_id": "0c445554-a643-489a-a733-ee8d6b17096c",
+      "result_id": "22185938-3485-4301-82d4-eab3f3c29bdf"
+    },
+    {
+      "claim_id": "940997b3-effc-4211-8a3f-0cad4ac7e11e",
+      "result_id": "22185938-3485-4301-82d4-eab3f3c29bdf"
+    },
+    {
+      "claim_id": "8f83c76a-12df-439b-a285-f2eb26eb93fa",
+      "result_id": "a6e875e5-c6ec-4e2f-9742-eef9a8278af1"
+    },
+    {
+      "claim_id": "85692ba0-d4ff-4cd2-8591-79c0a0d017b8",
+      "result_id": "a6e875e5-c6ec-4e2f-9742-eef9a8278af1"
+    },
+    {
+      "claim_id": "0d29565c-c767-45e7-a0bf-996548868d77",
+      "result_id": "a6e875e5-c6ec-4e2f-9742-eef9a8278af1"
+    },
+    {
+      "claim_id": "03772719-0130-4c0d-8bcc-2e5462def5fd",
+      "result_id": "a6e875e5-c6ec-4e2f-9742-eef9a8278af1"
+    },
+    {
+      "claim_id": "29963e11-2757-49c6-8799-31b4fa391aad",
+      "result_id": "a6e875e5-c6ec-4e2f-9742-eef9a8278af1"
+    },
+    {
+      "claim_id": "5fd26bcd-74da-4306-97f0-482fcc31f070",
+      "result_id": "a6e875e5-c6ec-4e2f-9742-eef9a8278af1"
+    },
+    {
+      "claim_id": "cf87549a-3c9a-4d54-9833-0f918f28f8fb",
+      "result_id": "a6e875e5-c6ec-4e2f-9742-eef9a8278af1"
+    },
+    {
+      "claim_id": "f59fe49b-8e9e-4d00-a747-e3f3cf469942",
+      "result_id": "a6e875e5-c6ec-4e2f-9742-eef9a8278af1"
+    }
+  ],
+  "comparisons": []
+}

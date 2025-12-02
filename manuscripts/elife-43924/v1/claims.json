@@ -1,0 +1,926 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The optoPAD is a closed-loop optogenetics system that allows optogenetic manipulation of neurons in Drosophila contingent on feeding behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "We describe an experimental setup which allows the closed-loop optogenetic manipulation of specific neurons in Drosophila melanogaster contingent on the feeding behavior of the animal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The abstract and discussion explicitly describe the system's capabilities, supported by experimental demonstrations throughout the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "The flyPAD system measures feeding behavior using capacitive proximity sensors from two food sources.",
+    "claim_type": "EXPLICIT",
+    "source": "We previously developed the flyPAD system, which reliably measures feeding behavior in high throughput using capacitive proximity sensors from two food sources (Itskov et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement cites prior work (Itskov et al., 2014) establishing the flyPAD technology.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "The optoPAD system has a latency between food contact and LED illumination of 50 to 120 ms.",
+    "claim_type": "EXPLICIT",
+    "source": "Our measurements revealed that it takes between 50 and 120 ms for the LED to be activated upon contact with the food.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Direct measurement data of system latency is reported.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Flies take approximately 400 ms to initiate a feeding burst after touching food.",
+    "claim_type": "EXPLICIT",
+    "source": "This delay is quite reproducibly in the range of 400 ms (Figure 1\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The online activity bout detector correctly identifies 91.5% of capacitance trace samples as belonging to an activity bout.",
+    "claim_type": "EXPLICIT",
+    "source": "The detection of activity bouts by the online method correctly identified 91.5% of the capacitance trace samples as belonging to an activity bout (8.5% false negatives) and misclassified 1.6% of the samples as activity bouts (false positives).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "ROC analysis results comparing online and offline detection methods are reported.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The irradiance of LEDs increases linearly with forward voltage above 2 V for red and amber LEDs and above 2.5 V for green and blue LEDs.",
+    "claim_type": "EXPLICIT",
+    "source": "The luminous flux of the LEDs increased linearly with the forward voltage on the LEDs above 2 V for the red and amber LEDs and 2.5 V for the green and blue LEDs (Figure 2A)",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Measurements shown in Figure 2A demonstrate the linear relationship.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Gr5a-GAL4 drives expression in sugar-sensing neurons of the labellum.",
+    "claim_type": "EXPLICIT",
+    "source": "To test if we can induce appetitive consummatory behaviors using the optoPAD, we used the Gr5a-GAL4 line, which drives expression in sugar-sensing neurons of the labellum (Marella et al., 2006; Thorne et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior literature (Marella et al., 2006; Thorne et al., 2004) establishing the expression pattern.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Sugar-sensing neurons labeled by Gr5a-GAL4 are sufficient to initiate feeding.",
+    "claim_type": "EXPLICIT",
+    "source": "These neurons have been shown to be sufficient to initiate feeding (Zhang et al., 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior work (Zhang et al., 2007) demonstrating sufficiency.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Optogenetic activation of Gr5a neurons at low stimulation intensities (2 V) leads to increased feeding from the food source paired with optogenetic stimulation.",
+    "claim_type": "EXPLICIT",
+    "source": "Even very low stimulation intensities (2 V) led to a clear and strong increase of feeding from the food source paired with optogenetic stimulation compared to the unstimulated source (Figure 2B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 2B demonstrates the behavioral effect.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Increasing stimulation intensity beyond 2 V does not increase the appetitiveness induced by Gr5a neuron activation.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, increasing the stimulation intensity did not lead to an increase in appetitiveness, indicating that a maximal behavioral impact can be achieved at low irradiances, thereby minimizing possible side effects caused by light.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The observation is based on experimental data from the dose-response experiments.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Mated female flies deprived of protein for 3 days develop a robust appetite for yeast.",
+    "claim_type": "EXPLICIT",
+    "source": "Mated female flies deprived of protein for 3 days develop a robust appetite for yeast \u2013 their main protein source (Carvalho-Santos and Ribeiro, 2018; Leit\u00e3o-Gon\u00e7alves et al., 2017; Ribeiro and Dickson, 2010; Steck et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites multiple prior studies establishing this phenomenon.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Yeast appetite in protein-deprived flies is driven by an increase in the length of feeding bursts.",
+    "claim_type": "EXPLICIT",
+    "source": "This appetite is driven by an increase in the length of feeding bursts, which is controlled by the activity of specific subsets of yeast gustatory neurons (taste pegs gustatory neurons) located on the labellum (Corrales-Carvajal et al., 2016; Steck et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior work (Corrales-Carvajal et al., 2016; Steck et al., 2018) establishing this mechanism.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Silencing taste peg neurons with GtACR1 is sufficient to terminate feeding on yeast.",
+    "claim_type": "EXPLICIT",
+    "source": "We previously demonstrated that silencing taste peg neurons with the anion channelrhodopsin GtACR1 (Mohammad et al., 2017) using the optoPAD system is sufficient to terminate feeding on yeast (Steck et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior work (Steck et al., 2018) demonstrating this effect.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Flies expressing GtACR1 in taste peg neurons fed significantly less from the channel paired with green light at 3 V compared to control flies.",
+    "claim_type": "EXPLICIT",
+    "source": "As we increased the intensity of light by increasing the voltage of the LED to 3 V, flies expressing GtACR1 in taste peg neurons fed significantly less from the channel paired with light compared to control flies (Figure 2C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 2C demonstrates the behavioral effect.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The decrease in yeast feeding upon taste peg neuron silencing was accentuated with increases in applied voltage.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to the Gr5a activation experiments (Figure 2B), the decrease in yeast feeding was accentuated with the increase in the applied voltage.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Comparison of dose-response data between different experiments.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Light illumination itself has minimal effects on fly feeding behavior in control genotypes.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, it is important to note that in both experiments, we observed no behavioral effect of light in control genotypes. This indicates that the illumination itself has minimal effects on fly feeding behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Control experiments demonstrate lack of behavioral effects in the absence of optogenetic effectors.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Silencing taste peg neurons in open-loop led to a specific decrease in the length of feeding bursts.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, silencing taste peg neurons by delivering the light in a fixed pattern not contingent on the behavior of the animal led to a specific decrease in the length of feeding bursts (Figure 2\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 2\u2014figure supplement 1 demonstrates the effect.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Flies expressing CsChrimson in escape neurons jumped upon light activation during feeding, leading to termination of feeding.",
+    "claim_type": "EXPLICIT",
+    "source": "Indeed, upon the initiation of feeding and concomitant light activation, flies expressing CsChrimson in escape neurons (Namiki et al., 2018) jumped, leading to the termination of feeding (Videos 2 and 3).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Video evidence (Videos 2 and 3) demonstrates the jumping behavior and feeding termination.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Activation of escape neurons led to a drastic decrease in feeding from the food source triggering light compared with the control food source.",
+    "claim_type": "EXPLICIT",
+    "source": "This led to a drastic decrease in feeding from the food source triggering light when compared with the control food source (Figure 2\u2014figure supplement 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 2\u2014figure supplement 2 demonstrates the behavioral effect.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The optoPAD can be used to manipulate very sparse, centrally located neurons and monitor the impact on feeding behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "These results show that the optoPAD can be used to manipulate very sparse, centrally located neurons, and monitor the impact of the manipulation on feeding behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The conclusion is drawn from the escape neuron experiments demonstrating manipulation of sparse neurons.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Gr64f-GAL4 labels appetitive sugar-sensing neurons important for sustaining carbohydrate feeding.",
+    "claim_type": "EXPLICIT",
+    "source": "We tested the ability of the optoPAD system to both induce and suppress appetitive feeding responses using the Gr64f-GAL4 line, which labels appetitive sugar-sensing neurons previously shown to be important to sustain carbohydrate feeding (Jiao et al., 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior work (Jiao et al., 2008) establishing the function of these neurons.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "Closed-loop activation of Gr64f neurons using CsChrimson led to increased feeding.",
+    "claim_type": "EXPLICIT",
+    "source": "As observed for Gr5a neurons, closed-loop activation of Gr64f neurons using CsChrimson led to increased feeding (Figure 3A, left panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 3A demonstrates the behavioral effect.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Hyperpolarization of Gr64f neurons using GtACR1 led to a loss of appetitive behavior and a decrease in feeding from the sugar source paired with green light activation.",
+    "claim_type": "EXPLICIT",
+    "source": "Conversely, hyperpolarization of Gr64f neurons using GtACR1 led to a loss of appetitive behavior and hence a decrease in feeding from the sugar source paired with green light activation (Figure 3B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 3B demonstrates the behavioral effect.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Gr66a-GAL4 labels bitter-sensing neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "To characterize the effect of closed-loop optogenetic manipulation of aversive neurons on feeding, we used Gr66a-GAL4, which labels bitter-sensing neurons (Marella et al., 2006; Thorne et al., 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior literature (Marella et al., 2006; Thorne et al., 2004) establishing the expression pattern.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Flies expressing CsChrimson in bitter gustatory neurons immediately terminated feeding from an appetitive food source upon light activation.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast to the depolarization of sweet gustatory neurons, flies expressing CsChrimson in bitter gustatory neurons immediately terminated feeding from an appetitive food source upon light activation (Figure 3C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 3C demonstrates the behavioral effect.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Flies expressing GtACR1 in Gr66a neurons exhibited higher feeding from the bitter food source paired with light stimulation than from the unpaired food source.",
+    "claim_type": "EXPLICIT",
+    "source": "To test if we could suppress the aversive effect of bitter food using the optoPAD setup, we expressed GtACR1 in Gr66a neurons and observed the effect of green light activation on feeding from a quinine-laced sucrose solution. Indeed, flies exhibited higher feeding from the bitter food source paired with light stimulation than from the unpaired food source (Figure 3D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 3D demonstrates the behavioral effect.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "The optoPAD can induce and suppress both appetitive and aversive effects on feeding behavior using optogenetic activation or inhibition of different neuronal populations.",
+    "claim_type": "EXPLICIT",
+    "source": "These experiments demonstrate the ability of the optoPAD to induce and suppress both appetitive and aversive effects on feeding behavior using either optogenetic activation or inhibition of different neuronal populations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The conclusion is drawn from the comprehensive set of experiments with sweet and bitter neurons.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "The optoPAD system allows arbitrary predefinition of conditions upon which animal behavior triggers light activation.",
+    "claim_type": "EXPLICIT",
+    "source": "We therefore implemented the ability to arbitrarily predefine the conditions upon which the behavior of the animal triggers light activation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The system design and implementation described in the manuscript.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "In dynamic virtual taste environment experiments, flies expressing CsChrimson in bitter neurons fed less from the food source paired with light activation after 10 minutes of exploration.",
+    "claim_type": "EXPLICIT",
+    "source": "From the beginning of the assay, the behavior of the flies appears to follow the stimulation pattern, with flies feeding less from the food source paired with light activation (Figure 4B). Only after 10 min of exploration, however, did these preferences reach statistical significance.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 4B demonstrates the temporal dynamics of the behavioral effect.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "By initiating optogenetic activation of Gr66a neurons 1.5, 3 or 6 s after the fly starts interacting with food, flies terminated their interaction with food after precisely 2.66, 4.25 or 7.34 s, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "By initiating the optogenetic activation of Gr66a neurons 1.5, 3 or 6 s after the fly starts interacting with the food, we could make the flies terminate their interaction with food after precisely 2.66, 4.25 or 7.34 s, respectively (Figure 4D).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 4D demonstrates precise temporal control of feeding behavior.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "Control flies displayed reproducibly long activity bouts with a median of around 15 s.",
+    "claim_type": "EXPLICIT",
+    "source": "This was a dramatic shortening of their activity bout, as control flies displayed reproducibly long bouts with a median of around 15 s.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Control data from experiments provides baseline measurements.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "In probabilistic stimulation experiments with 90% stimulation probability, catch trials (10% unstimulated) resulted in longer food interaction bouts than in control experiments where no light was triggered.",
+    "claim_type": "EXPLICIT",
+    "source": "Intriguingly however, in the catch trials, the food interaction bouts were much longer than in control experiments where no light was triggered throughout the experiment (Figure 4F).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 4F demonstrates the behavioral effect in catch trials.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "When controlling for food intake by analyzing only trials until flies performed 1100 sips, there were no significant differences in the length of food interactions in catch trials between flies that did not receive stimulation and experimental groups.",
+    "claim_type": "EXPLICIT",
+    "source": "This analysis revealed no significant differences in the length of food interactions in catch trials between the flies that did not receive Gr66a neurons stimulation (no light) and any of the experimental groups (Figure 4H).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Experimental data shown in Figure 4H after controlling for internal state.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The originally observed increase in the duration of food interactions during catch trials can be explained by differences in the deprivation state of the fly.",
+    "claim_type": "EXPLICIT",
+    "source": "This result strongly suggests that the originally observed increase in the duration of food interactions during catch trials can be explained by differences in the deprivation state of the fly.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The interpretation is based on comparison of calibrated and non-calibrated data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The optoPAD system allows the implementation of behavioral paradigms in which stimuli are delivered optogenetically in a probabilistic manner.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall these experiments show that the optoPAD system allows the implementation of behavioral paradigms, in which stimuli are delivered optogenetically in a probabilistic manner.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The conclusion is drawn from the probabilistic stimulation experiments.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The exposure of animals to gustatory stimuli is highly dependent on their behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "Given that the exposure of the animal to gustatory stimuli is highly dependent on its behavior, it is essential that the design of gustatory circuit manipulations takes into account the behavior of the animal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general principle about gustation based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The modular regulation of feeding microstructure plays a key role in nutrient homeostasis.",
+    "claim_type": "EXPLICIT",
+    "source": "As the modular regulation of feeding microstructure plays a key role in nutrient homeostasis, the high temporal sensitivity of the flyPAD makes the optoPAD ideally suited to study its circuit basis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement draws on established understanding of feeding regulation.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "The flyPAD technology has been used to significantly advance understanding of Drosophila feeding behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "The ability to analyze feeding behavior in a quantitative, high-resolution, and high-throughput fashion using the flyPAD technology has been leveraged to significantly advance our understanding of Drosophila feeding behavior.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary statement about the impact of the technology based on prior work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Jaeger and colleagues described an adaptation of the flyPAD technology to manipulate taste neurons during feeding using a hardware-based approach.",
+    "claim_type": "EXPLICIT",
+    "source": "After we described the first use of the flyPAD technology to manipulate behavior using optogenetics (Steck et al., 2018), Jaeger and colleagues also described an adaptation of the flyPAD technology to manipulate taste neurons during feeding (Jaeger et al., 2018). Interestingly, their approach is fundamentally different from the one we described, attesting to the flexibility of the flyPAD system. They define at the level of the hardware, specific features of the capacitance signal to trigger light activation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites and describes the work of Jaeger et al., 2018.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The STROBE system allows rapid triggering of light when the capacitance signal reaches a certain level, but lacks flexibility in modifying behavioral analysis or stimulation protocols.",
+    "claim_type": "EXPLICIT",
+    "source": "This approach allows the rapid triggering of light when the capacitance signal reaches a certain level, which is likely to be highly correlated with the time periods the fly touches the food. Given that the analysis of the behavior is implemented at the level of the hardware, it is however not possible for the user to readily modify the analysis of the behavior leading to the triggering of the light or to modify how and when the light stimulus gets triggered (delays, probabilities of stimulation, dynamic changes to the stimulation protocol).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparative analysis of the STROBE system based on its design.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The optoPAD system introduces longer latency than the STROBE system due to flexible behavioral data processing.",
+    "claim_type": "EXPLICIT",
+    "source": "While our experiments clearly show that the current optoPAD system is able to modulate feeding behavior using closed-loop optogenetic manipulations, the ability to process the behavioral data in a flexible and complex way is likely to introduce a longer latency than that of the STROBE system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the trade-off between flexibility and speed.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "There is a conflict between flexibility in experimental design and minimizing delay between behavior detection and light stimulation.",
+    "claim_type": "EXPLICIT",
+    "source": "There will, however, always be a conflict between flexibility in experimental design, requiring computation time to analyze the behavioral signal, and minimizing the delay between behavior detection and light stimulation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general principle about system design trade-offs.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "As long as the delay is not beyond the behaviorally meaningful scale, the advantages of flexibility outweigh small improvements in the speed of the system.",
+    "claim_type": "EXPLICIT",
+    "source": "We propose that as long as the delay is not beyond the behaviorally meaningful scale, the advantages of flexibility outweigh small improvements in the speed of the system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a design philosophy statement based on the authors' reasoning.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The flyPAD technology is flexible enough to allow implementation of either speed-prioritized or flexibility-prioritized approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "In any case as shown by both the optoPAD and the STROBE system, the flyPAD technology is flexible enough to allow the implementation of either priority.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This conclusion is drawn from comparison of the two systems.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The optoPAD system allows researchers to predefine how many light stimulations will happen in one session, stimulate after the termination of an activity bout, or perform experiments in an open-loop mode.",
+    "claim_type": "EXPLICIT",
+    "source": "Given its flexible design, the optoPAD system not only allows for a fixed closed-loop manipulation of neurons, but confers substantial flexibility to define how feeding behavior is linked to light activation. The researcher can for example predefine how many light stimulations will happen in one session, stimulate after the termination of an activity bout, or perform experiments in an open-loop mode.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The system capabilities are described based on its design and implementation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The ability to alter the dynamics and probabilities of optogenetic manipulations will be most useful to manipulate Drosophila behavior to probe its ability to learn complex contingencies.",
+    "claim_type": "EXPLICIT",
+    "source": "We expect that the ability to alter the dynamics and probabilities of optogenetic manipulations will be most useful to manipulate the behavior of Drosophila in order to probe its ability to learn complex contingencies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prospective statement about future applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The optoPAD system should allow the design of new operant conditioning paradigms in which the animal learns to associate consequences of its behavior with specific outcomes or the statistical structure of its environment.",
+    "claim_type": "EXPLICIT",
+    "source": "By activating 'reward' and 'punishment' neurons in closed-loop using different behavioral contingencies, the optoPAD system should allow the design of new operant conditioning paradigms in which the animal learns to associate the consequences of its own behavior with specific outcomes or the statistical structure of its environment.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prospective statement about potential applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "Learning abstract environmental structures is a fundamental ability animals use to optimize their foraging strategies.",
+    "claim_type": "EXPLICIT",
+    "source": "Learning such abstract environmental structures is a fundamental ability animals use to optimize their foraging strategies (Chittka, 2017; Glimcher and Fehr, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior literature (Chittka, 2017; Glimcher and Fehr, 2013) establishing this principle.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The flexibility and high-throughput design of the optoPAD will allow researchers to explore how flies adapt their behavior to complex environmental features and identify underlying neuronal circuits and computations.",
+    "claim_type": "EXPLICIT",
+    "source": "We expect that the flexibility of the optoPAD as well as its high-throughput design will allow researchers to explore how flies adapt their behavior to complex environmental features and identify the underlying neuronal circuits and computations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a prospective statement about future research applications.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The optoPAD system uses Bonsai for real-time data stream processing.",
+    "claim_type": "EXPLICIT",
+    "source": "We took advantage of the low complexity of the capacitance signal paired with the real-time data processing capacities of the Bonsai data stream processing language (Lopes et al., 2015) to analyze feeding behavior of flies in real time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the use of Bonsai software and cites its source (Lopes et al., 2015).",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The optoPAD LED board houses a high-power multicolor LED with four colors, MOSFET gates, and current limiting resistors.",
+    "claim_type": "EXPLICIT",
+    "source": "To allow for optogenetic manipulation of neurons, we designed an LED board housing a high-power multicolor LED (four colors), as well as metal-oxide-semiconductor field-effect transistor (MOSFET) gates and current limiting resistors, that fits on top of the flyPAD arenas (Figure 1B).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The hardware design is described and shown in Figure 1B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Five parameters of LED activation can be easily controlled using the optoPAD software: which food source triggers LED activation, which LED color is activated, the delay between detection and light onset, the duration the LED remains on, and the probability of LED illumination.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, five parameters of LED activation can be easily controlled using this software: which food source triggers LED activation; which LED color is activated; the delay between the detection of the initiation of an interaction with the food and light onset; the duration the LED remains on during the light stimulation; and the probability with which an onset of food interaction leads to LED illumination.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The software capabilities are described based on its implementation.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The total time of food interactions ('activity bouts') correlates well with total food intake.",
+    "claim_type": "EXPLICIT",
+    "source": "We focused on using Bonsai to extract the periods in which the fly was actively interacting with food ('activity bouts'), as we previously showed that the total time of these interactions correlated well with total food intake (Itskov et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior work (Itskov et al., 2014) establishing this correlation.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Different circuit and molecular mechanisms impinge on food intake by modulating the probability of initiating a feeding burst and the length of feeding bursts.",
+    "claim_type": "EXPLICIT",
+    "source": "Using this framework, we have shown that different circuit and molecular mechanisms impinge on food intake by modulating two key variables of the feeding microstructure: the probability of initiating a feeding burst and the length of feeding bursts (Corrales-Carvajal et al., 2016; Itskov et al., 2014; Steck et al., 2018; Walker et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites multiple prior studies establishing this framework.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Gustation allows animals to both detect suitable food sources and reject harmful foods.",
+    "claim_type": "EXPLICIT",
+    "source": "Classically, gustation has been shown to allow animals to both detect suitable food sources as well as to reject harmful foods (Dethier, 1976; Jaeger et al., 2018; Scott, 2018; Yarmolinsky et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites multiple prior studies establishing this principle.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Gustation requires physical interaction of taste organs with the sampled substrate, making gustatory information outstandingly contextual and dependent on animal behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "A key feature of gustation when compared to olfaction or audition is that it requires the physical interaction of taste organs with the sampled substrate. As such, gustatory information is outstandingly contextual and depends critically on the behavior of the animal as it actively explores substrates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general principle about gustation based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Taste peg sensory neurons specifically control the length of yeast feeding bursts in D. melanogaster.",
+    "claim_type": "EXPLICIT",
+    "source": "We have previously used such an approach to show that in D. melanogaster, taste peg sensory neurons specifically control the length of yeast feeding bursts (Steck et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior work (Steck et al., 2018) establishing this finding.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The ability to experimentally manipulate neuron activity with cellular resolution has revolutionized understanding of how circuits generate behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "The ability to experimentally manipulate the activity of neurons with cellular resolution has revolutionized our understanding of how circuits generate behavior (Luo et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior work (Luo et al., 2018) and reflects established knowledge in neuroscience.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Technologies for automated and quantitative analysis of behavior have improved alongside methods for neuronal manipulation.",
+    "claim_type": "EXPLICIT",
+    "source": "This ability has gone hand in hand with an improvement in technologies allowing for the automated and quantitative analysis of behavior (Anderson and Perona, 2014; Branson et al., 2009; Brown and de Bivort, 2018; Calhoun and Murthy, 2017; Egnor and Branson, 2016; Mathis et al., 2018; Wiltschko et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites multiple prior studies documenting technological advances.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Alternative methods to video recordings play important roles in neuroscience research for analyzing behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "While most methods for analyzing behavior quantitatively rely on video recordings, alternative methods play important roles in neuroscience research (Davis, 1973; McLean and Kinsey, 1964).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior work establishing the importance of alternative methods.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Alternative approaches to video-based methods have become especially important to study feeding in Drosophila melanogaster.",
+    "claim_type": "EXPLICIT",
+    "source": "Such approaches have become especially important to study feeding in Drosophila melanogaster (Murphy et al., 2017; Ro et al., 2014; Yapici et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim cites prior work establishing the importance of these methods for feeding studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The flyPAD allows automated, high-throughput, quantitative analysis of feeding behavior with high temporal resolution.",
+    "claim_type": "EXPLICIT",
+    "source": "The flyPAD allows automated, high-throughput, quantitative analysis of feeding behavior with high temporal resolution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the capabilities of the flyPAD system based on its design and prior validation.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "High temporal resolution of the flyPAD enables dissection of feeding behavior at the level of motor pattern and microstructure.",
+    "claim_type": "EXPLICIT",
+    "source": "This high temporal resolution enables the dissection of feeding behavior at the level of the motor pattern and the microstructure of feeding.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference about the capabilities enabled by the system's temporal resolution.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "The regulation of feeding plays a key role in determining animal fitness through its impact on nutrition.",
+    "claim_type": "EXPLICIT",
+    "source": "The regulation of feeding plays a key role in determining the fitness of animals through its impact on nutrition.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general principle in biology based on established knowledge.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Elucidating the circuit basis of feeding and related behaviors is an important goal in neuroscience.",
+    "claim_type": "EXPLICIT",
+    "source": "Elucidating the circuit basis of feeding and related behaviors is an important goal in neuroscience.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This reflects a general research priority in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The use of optogenetics allowed variation of dynamics and probability of stimulation in single flies and assessment of impact on feeding behavior quantitatively and with high throughput.",
+    "claim_type": "EXPLICIT",
+    "source": "The use of optogenetics allowed us to vary the dynamics and probability of stimulation in single flies and assess the impact on feeding behavior quantitatively and with high throughput.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the capabilities demonstrated in the experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The optoPAD is a powerful tool to dissect the circuit basis of feeding behavior.",
+    "claim_type": "EXPLICIT",
+    "source": "These data demonstrate that the optoPAD is a powerful tool to dissect the circuit basis of feeding behavior, allowing the efficient implementation of sophisticated behavioral paradigms to study the mechanistic basis of animals' adaptation to dynamic environments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary conclusion based on the experimental demonstrations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "The optoPAD allows efficient implementation of sophisticated behavioral paradigms to study the mechanistic basis of animals' adaptation to dynamic environments.",
+    "claim_type": "EXPLICIT",
+    "source": "These data demonstrate that the optoPAD is a powerful tool to dissect the circuit basis of feeding behavior, allowing the efficient implementation of sophisticated behavioral paradigms to study the mechanistic basis of animals' adaptation to dynamic environments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary conclusion based on the experimental demonstrations.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  }
+]

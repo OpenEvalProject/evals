@@ -1,0 +1,170 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Using the R2D2 ratiometric auxin sensor, the authors find no obvious asymmetry in auxin sensing between adaxial and abaxial tissues in developing Arabidopsis leaf primordia at 3DAS and 4DAS. Quantitative analysis of DII/mDII ratios shows high variability within both tissue types, with distributions that are overall very similar (AUC = 0.556). High auxin sensing is restricted to distal regions and provasculature where PIN1-GFP is expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C36, and C46-C49 provide converging evidence from R2D2 imaging, quantitative nuclear segmentation, and statistical analysis (n=28/28 leaves at 3DAS and 4DAS; n=20 leaves for quantification). The consistent pattern across multiple samples, rigorous quantification pipeline, and statistical measures (means, SD, SEM, AUC) strongly support the conclusion of no obvious auxin asymmetry between adaxial and abaxial tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Both DII and mDII auxin sensors, when driven by the 35S promoter, show asymmetric expression patterns in early leaf primordia (3DAS), with higher expression in adaxial tissues. This asymmetry diminishes by 4DAS, when both markers show more uniform expression across adaxial and abaxial tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by consistent observations across multiple samples (n=18/18 leaves for DII at 3DAS; n=16/16 leaves for mDII at 3DAS; n=20/20 leaves at 4DAS). The finding that both the auxin-sensitive DII and the auxin-insensitive mDII control show similar asymmetric patterns is critical evidence that the asymmetry is not auxin-dependent but rather reflects differential promoter activity or protein stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Treatment with 5 mM NAA validates the auxin sensitivity of both sensors: DII expression strongly decreases while mDII remains stable, and the mDII-tdTom/DII-V ratio increases, consistent with elevated auxin levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide essential positive controls demonstrating that the sensors respond appropriately to exogenous auxin application. This validation is critical for interpreting the developmental expression patterns and supports the technical reliability of the measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57"
+    ],
+    "result": "The findings argue against the proposal that asymmetries in auxin distribution within young leaf primordia have a strong influence on leaf polarity or regulate tissue mechanics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56, and C57 represent the main conclusion drawn from the experimental data (C3, C30-C49) combined with prior findings. The R2D2 data showing no auxin asymmetry, coupled with the observation that both DII and mDII show similar asymmetric patterns (indicating non-auxin-dependent asymmetry), provide strong evidence against the auxin asymmetry hypothesis for leaf polarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The data argue against a role for auxin in limiting WOX1 and PRS expression to the middle domain. Instead, the results support that HD-ZIPIII and KANADI/ARF genes restrict auxin response to pattern these genes, independent of auxin levels in adaxial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 integrate current observations (high auxin sensing in provascular cells) with prior experimental evidence from Caggiano et al., 2017 (exogenous auxin does not cause ectopic WOX1/PRS expression; PRS expression is not restricted to high PIN1 cells). The logic is internally consistent and supported by cited data, though it relies heavily on prior work by the same authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C22",
+      "C23"
+    ],
+    "result": "KAN1 expression is associated with low auxin sensing cells, while REV expression is associated with different levels of auxin sensing depending on developmental stage. KAN1 expression is invariably complementary to cells with high PIN1 expression, while REV can coincide with PIN1 at later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 integrate R2D2 ratio observations with prior gene expression data from Caggiano et al., 2017. The inference about KAN1 and REV association with auxin sensing levels (C24-C25) is logically drawn from the spatial correlation between DII/mDII ratios and gene expression domains, though the developmental stage-dependence of REV could benefit from more detailed temporal analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Methodological differences may explain discrepancies with prior studies: previous work used DII alone without the mDII control, and the mDII expression pattern changes rapidly over 12 hours, making developmental staging critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 provide reasonable explanations for discrepancies with prior work. C59 is directly supported by time-lapse imaging data (Figure 4\u2014figure supplement 3), and C58 is a logical inference about methodological differences. These claims appropriately acknowledge limitations in comparing studies and highlight the importance of ratiometric sensors and precise staging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "At 3DAS, REV and KAN1 expression patterns are already polar within leaf primordia, while FIL expression is still being refined. PIN1 is polarized toward the distal tip but shows reversed polarity in adjacent adaxial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 describe the developmental context at 3DAS based on prior work (Caggiano et al., 2017) and current PIN1 observations. These provide important staging information for interpreting the auxin sensor data, though they primarily cite prior findings rather than presenting new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript reviews two competing models for leaf polarity: a pre-pattern mechanism based on KANADI and HD-ZIPIII gene expression in the SAM, versus an auxin asymmetry model based on DII sensor observations and exogenous auxin experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C17 accurately summarize prior work and competing hypotheses in the field. These are appropriately cited background claims that establish the scientific context and motivation for the current study. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C18",
+      "C19",
+      "C60"
+    ],
+    "result": "The manuscript establishes basic botanical and technical knowledge: leaf tissue organization, R2D2 sensor interpretation, and the relationship between DII/mDII ratios and auxin sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C18-C19, and C60 represent established knowledge appropriately cited from the literature. These provide necessary background for interpreting the experimental results and are accurately stated.",
+    "result_type": "MINOR"
+  }
+]

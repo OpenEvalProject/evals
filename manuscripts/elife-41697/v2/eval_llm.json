@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Template switching (TS) is detected up to 75 kb downstream of a collapsed replication fork at RTS1-AO, with significant increases in recombinant frequency at sites up to 35 kb downstream. Deletion of ori-1253 extends TS detection to 75 kb by allowing more time for restarted replication before convergence with canonical forks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C43, C45-C47 collectively demonstrate that TS occurs over long distances (up to 75 kb) downstream of RTS1-AO. The experimental data from Figure 1 and Figure 1\u2014figure supplement 1 show statistically significant increases in recombinants at multiple reporter sites, with appropriate controls (RTS1-IO) and mechanistic validation through ori-1253 deletion experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The pattern of recombination events changes with distance from RTS1-AO: gene conversions predominate at the 0 kb site (3:1 ratio), while deletions become increasingly favored at downstream sites (12.4 kb, 35 kb, 75 kb), suggesting that initial restart phases favor gene conversion while ongoing restarted replication favors deletions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe a clear spatial pattern in recombination outcomes supported by quantitative data from Figure 1C. The inference that initial restart phases favor gene conversion while TS during restarted replication favors deletions is reasonable given the data, though the mechanistic basis remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Head-on collision between restarted replication and RNA Polymerase III transcription at a tRNA gene triggers TS, with tRNAGLU08HO causing a 2.3-fold increase in recombinants downstream of RTS1-AO compared to minimal effect from co-directional collision (tRNAGLU08CD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C82-C85 demonstrate that head-on collisions with Pol III complexes trigger TS, supported by experimental data in Figure 5B-C showing orientation-dependent effects. The controls (no RTS1, co-directional orientation) appropriately validate the specificity of the head-on collision effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Pfh1 promotes efficient replication restart at RTS1-AO, as demonstrated by 2DGE analysis showing that pfh1-mt* mutants resolve blocked forks primarily through fork convergence rather than restart, with reduced large Y-shaped molecules and increased double Y-shaped molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C66-C69 are supported by 2DGE data in Figure 3B-C showing clear differences in replication intermediate patterns between wild-type and pfh1-mt* mutants. The interpretation that Pfh1 promotes restart is well-supported by the quantitative analysis of different DNA structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Pfh1 suppresses TS downstream of RTS1-AO in a dosage-sensitive manner. While pfh1 mutants show reduced TS at 0.2 kb and 12.4 kb reporters under standard conditions, deletion of ori-1253 reveals that pfh1-m21 actually increases deletions >2-fold at 0.2 kb, demonstrating a dual role in promoting restart and limiting TS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C62-C65, C76-C78 demonstrate Pfh1's role in suppressing TS through experiments in Figures 2B, 4, and 4\u2014figure supplement 1. The ori-1253 deletion experiments cleverly separate Pfh1's restart-promoting function from its TS-suppressing function, providing strong evidence for the dual role. The dosage-sensitivity is shown by differential effects of pfh1-m21 vs pfh1-mt*.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C73",
+      "C74"
+    ],
+    "result": "A novel Exo1-dependent DNA signal accumulates in pfh1-mt* mutants, representing extensively resected regressed replication forks. However, Pfh1 does not simply counter Exo1 activity to promote RDR, as pfh1-mt* exo1\u0394 double mutants still show low levels of restart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C73-C74 are supported by 2DGE data in Figure 3B showing the novel signal and its Exo1-dependence. The conclusion that Pfh1 doesn't simply counter Exo1 is well-supported by the double mutant analysis showing similarly low restart levels in both pfh1-mt* and pfh1-mt* exo1\u0394 strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Pfh1 is not required to suppress TS induced by head-on collisions between restarted replication and Pol III complexes, as the fold-change in TS in pfh1 mutants is essentially the same with and without tRNAGLU08HO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by data in Figure 5D showing that pfh1 mutants cause large increases in recombination without RTS1, but the fold-change relative to wild-type is similar with and without tRNAGLU08HO when RTS1-AO is present. This suggests Pfh1's TS suppression mechanism is independent of Pol III collision-induced TS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C90",
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "Rqh1 suppresses TS downstream of RTS1-AO with a 2.9-fold increase in recombinants at 12.4 kb in rqh1\u0394 mutants. However, this effect is smaller than the 10-fold increase at the 0 kb site, suggesting Rqh1 plays a more important role in limiting ectopic recombination during restart than in controlling TS during restarted replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C90-C92, C94 are supported by data in Figure 6A-C showing differential effects of rqh1\u0394 at different positions. The inference that Rqh1 is more important for limiting ectopic recombination during restart than for suppressing TS is reasonable given the quantitative differences, though the mechanistic basis remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "CAF1 (chromatin assembly factor 1) promotes both ectopic recombination during restart and TS associated with restarted replication. Deletion of CAF1 subunits (pcf2\u0394, pcf3\u0394) causes ~3-fold reduction in gene conversions and ~30% reduction in deletions at 0 kb, and 2-4 fold reductions at 12.4 kb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99, C101 are supported by data in Figure 6A-C showing consistent reductions in recombination at both 0 kb and 12.4 kb sites in CAF1 mutants. The conclusion that CAF1 promotes TS is well-supported, and the distinction from its role in restart is validated by citation C100 showing CAF1 is not required for restart itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The UvrD family helicases Srs2 and Fbh1 strongly suppress TS associated with restarted replication. srs2\u0394 causes ~6-fold increases at both 0 kb and 12.4 kb reporters, while fbh1\u0394 causes even greater increases despite not affecting spontaneous recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by data in Figure 6A-C showing consistent and substantial increases in TS in both mutants. The differential effects on spontaneous vs. RTS1-induced recombination provide insight into the specific roles of these helicases in suppressing TS during restarted replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Fml1 and Mus81 have minimal effects on TS frequency downstream of RTS1-AO. fml1\u0394 shows little change at 12.4 kb despite affecting recombination at 0 kb, while mus81\u0394 causes only modest changes (~1.4-1.5 fold) in deletions. 2DGE analysis confirms restart is unaffected in both mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C111-C117 are supported by data in Figure 6B-C and Figure 6\u2014figure supplement 2. The lack of major effects on TS at 12.4 kb is well-documented, and the 2DGE analysis appropriately rules out indirect effects through altered restart efficiency. This contrasts with findings in S. cerevisiae BIR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "pfh1 mutants show minimal effects on recombination with RTS1-IO at downstream sites (0.2 kb, 12.4 kb), but pfh1-mt* causes ~3-fold increase in deletions when RTS1-IO is flanked by repeats (0 kb), suggesting Pfh1 aids non-recombinogenic replication past RTS1-IO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by data in Figure 2A. The inference that Pfh1 aids non-recombinogenic replication past RTS1-IO is reasonable given the comparison to strains without RTS1 (citation to Steinacher et al., 2012), though the mechanism remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "pfh1 mutants show >7-fold increases in recombinants when RTS1-AO is flanked by repeats at 0 kb, with essentially all additional recombinants being deletions in both pfh1-m21 and pfh1-mt* mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by data in Figure 2B and Figure 2\u2014figure supplement 1, consistent with previous findings (Steinacher et al., 2012). The specific increase in deletions rather than gene conversions provides insight into the mechanism of Pfh1 function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "In control strains with RTS1-IO and ori-1253 deleted, pfh1 mutants show modest increases in recombinants at 0.2 kb but not 12.4 kb, possibly due to fork collapse at RTS1-IO from loss of Pfh1 sweepase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 is supported by data in Figure 4, but the interpretation that this stems from loss of sweepase activity is speculative and not directly tested. The differential effect at 0.2 kb vs 12.4 kb is interesting but mechanistically unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C154"
+    ],
+    "result": "When pfh1 is mutated and increases in recombinants are detected, it is specifically deletions that increase while gene conversions either decrease or remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 is supported by comprehensive analysis across multiple figures (Figure 2, Figure 2\u2014figure supplement 1, Figure 4, Figure 4\u2014figure supplement 1). This pattern provides important mechanistic insight into how Pfh1 suppresses TS, specifically by preventing deletion formation.",
+    "result_type": "MINOR"
+  }
+]

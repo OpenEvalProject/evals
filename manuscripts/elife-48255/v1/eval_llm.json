@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Multiple CLU protein isoforms with distinct subcellular localizations are expressed in rodent brain tissue. Four major CLU immunoreactive bands (CLU_49 kDa, CLU_45 kDa, CLU_39 kDa, and CLU_36 kDa) are detected in whole-brain lysate with consistent expression across brain regions. Subcellular fractionation reveals two bands in cytosol, five in organelles, and one nuclear-specific band (CLU_68 kDa), with immunohistochemistry confirming nuclear and cytosolic localization in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 provide converging biochemical and immunohistochemical evidence for multiple CLU isoforms with distinct subcellular distributions. The data from Figure 1A-C show consistent protein expression patterns across multiple brain regions and cellular compartments, with appropriate fraction-specific markers validating the subcellular localization findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Neurons and astrocytes exhibit distinct and overlapping CLU mRNA and protein expression profiles. Both cell types express Exon 3-4, Exon 2, and Exon 1B mRNA, while Exon 1A is astrocyte-specific and Exon 1C is neuron-specific. Two CLU protein isoforms (CLU_53 kDa and CLU_68 kDa) are observed exclusively in neurons and are likely derived from Exon 1C-containing transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are supported by RT-PCR data (Figure 2A) showing differential exon expression and immunoblotting data (Figure 2B) demonstrating cell-type-specific protein profiles. The inference that CLU_53 kDa and CLU_68 kDa derive from Exon 1C transcripts (C60) is reasonable given the correlation between neuron-specific Exon 1C mRNA and neuron-specific protein expression, though direct evidence would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C61",
+      "C62",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A non-glycosylated 45 kDa CLU isoform (mitoCLU) is localized to the mitochondrial matrix of rodent brain. Pure mitochondrial isolation shows only CLU_45 kDa, which is not affected by deglycosylation enzymes. Digitonin sub-fractionation experiments demonstrate that CLU_45 kDa is released similarly to soluble matrix proteins and does not localize to outer membrane, intermembrane space, or inner membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C61-C69 are strongly supported by multiple complementary experimental approaches. Pure mitochondrial isolation (Figure 3B), deglycosylation assays (Figure 3C), siRNA knockdown (Figure 4B), and digitonin sub-fractionation (Figure 5) provide converging evidence for mitochondrial matrix localization. The expression pattern of CLU_45 kDa matches that of Grp75 (a known matrix marker), supporting the matrix localization conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C74",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Rodent mitoCLU is translated from a non-canonical CUG (Leu) start site in Exon 3. Overexpression of murine Exon 2-9 constructs produces mCLU isoforms (CLU_60 kDa, CLU_49 kDa, CLU_39 kDa) that are secreted, while Exon 3-9 constructs generate intracellular CLU_45 kDa and two lower molecular weight bands corresponding to translation from Exon 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C70-C74 are supported by overexpression experiments (Figure 6B) showing differential protein products from Exon 2-9 versus Exon 3-9 constructs. The sequence analysis showing CUG at the predicted start site in rodents, combined with the generation of CLU_45 kDa from Exon 3-9 constructs, provides strong evidence for non-canonical translation initiation. The identification of lower MW bands as Exon 4 products is based on sequence analysis and is reasonable but somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Human mitoCLU is translated from an AUG (Met) start site in Exon 3, and CLU_45 kDa can be generated from both AUG and CUG start sites. Overexpression of human Exon 3-9 produces a single robust 45 kDa band. Site-directed mutagenesis experiments show that 34_ATG (human) produces robust CLU_45 kDa, 34_CTG (murine mimic) produces weaker CLU_45 kDa, and 34_CTA (non-functional) produces no CLU_45 kDa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C75-C80 are strongly supported by overexpression experiments (Figure 7A) and site-directed mutagenesis (Figure 8A). The mutagenesis experiments provide direct evidence that both AUG and CUG can initiate translation of CLU_45 kDa, with the negative control (CTA) confirming specificity. This demonstrates conservation of mitoCLU between species despite different start codon usage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "MitoCLU is expressed in both human and rodent neurons and astrocytes. Human CLU_45 kDa is not modified by N- or O-linked glycans and shows predominant expression in the mitochondrial fraction of transfected cells with low cytosolic expression. Primary human neurons and astrocytes both express CLU_45 kDa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C81-C83 are supported by deglycosylation assays (Figure 7B), subcellular fractionation of transfected cells (Figure 7C), and immunoblotting of primary human cells (Figure 8B). The data demonstrate conservation of mitoCLU across species and cell types. However, the primary human cell data (C83) shows relatively weak bands and lacks quantification or replication information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "MitoCLU is present at the gene and protein level in the currently available CLU\u2212/\u2212 mouse model. Exon 2 is absent as expected, but Exon 3-4 mRNA and CLU_45 kDa, CLU_49 kDa, and CLU_53 kDa proteins are present, indicating that the CLU\u2212/\u2212 model actually represents mCLU\u2212/\u2212 rather than total CLU deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C84-C86 are supported by RT-PCR (Figure 9A) and immunoblotting (Figure 9B) data from CLU\u2212/\u2212 mice. The presence of Exon 3-4 mRNA and multiple protein isoforms in the knockout model is clearly demonstrated. This is an important finding that recharacterizes a widely-used mouse model. However, the explanation for CLU_49 kDa presence is acknowledged as unavailable, representing a gap in understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "CLU_60 kDa is a high mannose-modified form of CLU_49 kDa, as demonstrated by deglycosylation with both PNGase F and Endo H. CLU_39 kDa is modified by sialic-acid-containing complex glycans, as shown by deglycosylation to CLU_25 kDa by PNGase F but not Endo H.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by deglycosylation experiments (Figure 3C) using appropriate positive controls (Supplementary Figure D). The differential sensitivity to PNGase F versus Endo H provides clear evidence for the glycosylation states of these isoforms, consistent with known glycoprotein processing pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "CLU_53 kDa is hypothesized to be translated from an mRNA transcript containing Exons 1C-9 and post-translationally modified via ubiquitination or SUMOylation to form CLU_68 kDa. This hypothesis is based on nuclear localization of CLU_68 kDa, cytosolic location of CLU_53 kDa, molecular weight differences, and the known importance of these modifications for nuclear protein function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 are explicitly stated as hypotheses by the authors and lack direct experimental validation. While the reasoning is logical based on the observed localization patterns, molecular weights, and established knowledge about post-translational modifications, no experiments directly test ubiquitination/SUMOylation of CLU_53 kDa or demonstrate that modified CLU_53 kDa becomes CLU_68 kDa. This represents speculation requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Astrocytes contain two mRNA transcripts capable of being translated into mCLU (Exon 1A and 1B), whereas neurons contain only one (Exon 1B). Astrocytes likely generate and secrete more mCLU than neurons as a means of regulating extracellular homeostasis, and astrocyte-secreted mCLU is necessary for maintaining neuronal health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is supported by mRNA expression data (Figure 2A). However, C96 is speculative\u2014while the protein expression profiles suggest astrocytes may produce more mCLU, no quantitative comparison of secreted mCLU levels between cell types is provided. Claim C97 cites prior literature but represents interpretation rather than data from this study. The functional claims require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "CLU is the third most predominant genetic risk factor for late-onset Alzheimer's disease (LOAD), which represents >95% of AD cases. The CLU polymorphism rs11136000 confers increased LOAD risk independent of ApoE \u03b54 status, with nearly 36% of Caucasians carrying this risk genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C12 are background claims supported by appropriate citations to established literature including genome-wide association studies and epidemiological data. These provide context for the study's significance but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The CLU gene is located on chromosome 8 in humans, chromosome 14 in mice, and chromosome 15 in rats. It is organized into 11 exons spanning 18,115 bp (human), 13,065 bp (mouse), or 39,246 bp (rat), producing at least three mRNA isoforms in humans and mice. The translated proteins share high sequential homology across species, with three Exon 1 variants (1A, 1B, 1C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C21 are background information supported by citations to genomic databases and published literature. These provide necessary context for understanding CLU gene structure but represent established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The Exon 1A-9 mRNA transcript is translated into mature secreted CLU (mCLU). The mCLU pre-protein (448-449 amino acids) contains an N-terminal 22-amino-acid ER-signaling peptide and two nuclear localization sequences. Following ER targeting, the signal peptide is removed, the protein is glycosylated at six N-linked sites, processed in the Golgi, cleaved into \u03b1 and \u03b2 subunits, and disulfide-bonded to form the heterodimeric mCLU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 describe established knowledge about mCLU biosynthesis and processing, supported by appropriate citations. While not novel findings from this study, this information provides essential context for understanding the multiple CLU isoforms characterized in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "An alternative CLU isoform (nCLU/icCLU) lacking Exon 2 and translated from Exon 3 has been reported with molecular weight 45-50 kDa, primarily detected in cytosol and nucleus. This isoform is hypothesized to be pro-apoptotic, with overexpression associated with reduced cell growth, increased anoikis, and induction of cell-cycle arrest and apoptosis, contrasting with the pro-survival function of mCLU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 summarize prior literature on alternative CLU isoforms, supported by multiple citations. This provides important context for the authors' recharacterization of the 45 kDa isoform as mitochondrial rather than nuclear. These are background claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Previous literature shows conflicting evidence regarding CLU cellular localization in brain, with some studies showing predominant astrocytic expression and others showing neuronal expression. CLU expression is altered following various brain injuries including traumatic brain injury, ischemic stroke, drug-induced seizures, and ethanol exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 summarize prior literature showing inconsistencies in understanding CLU localization and stress responses, supported by appropriate citations. This background establishes the rationale for the comprehensive characterization performed in this study but does not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Bioenergetic dysfunction occurs throughout the pre-clinical phase of LOAD, with reductions in glucose utilization occurring decades before clinical onset. The CLU AD risk allele is associated with reduced CLU protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 provide context for the potential significance of mitochondrial CLU in LOAD pathogenesis. C87 is supported by appropriate citations, while C88 is stated as established knowledge. These are background claims that motivate the study's focus on mitochondrial CLU.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The amino-acid sequence comprising mitoCLU does not contain a mitochondrial targeting sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by sequence analysis of the mitoCLU protein. This is an important observation that raises questions about the mechanism of mitochondrial import, which the authors acknowledge requires future investigation. The absence of a canonical targeting sequence is clearly demonstrated but leaves the import mechanism unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The CLU\u2212/\u2212 mouse model was generated in 2001 for studying murine autoimmune myocarditis and has since been used to demonstrate CLU involvement in various pathological, developmental, and molecular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 provide background on the CLU\u2212/\u2212 mouse model, supported by appropriate citations. This context is important for understanding the significance of the finding that this model retains mitoCLU expression, but these are not novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1465 @@
+{
+  "submission": {
+    "id": "5a8d775b-94ee-42f2-8c7c-745932538b17",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:49:04.317260Z",
+    "updated_at": "2025-12-02T08:49:04.317260Z"
+  },
+  "content": [
+    {
+      "id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "submission_id": "5a8d775b-94ee-42f2-8c7c-745932538b17",
+      "content_type": "manuscript",
+      "content_text": "# The impact of pathological high-frequency oscillations on hippocampal network activity in rats with chronic epilepsy\n\n## Authors\n\n- Laura A Ewell<sup>1</sup> ([ORCID: 0000-0002-1638-426X](https://orcid.org/0000-0002-1638-426X)) \u2020\n- Kyle B Fischer<sup>1</sup>\n- Christian Leibold<sup>4</sup> ([ORCID: 0000-0002-4859-8000](https://orcid.org/0000-0002-4859-8000))\n- Stefan Leutgeb<sup>1</sup> ([ORCID: 0000-0003-3367-6536](https://orcid.org/0000-0003-3367-6536))\n- Jill K Leutgeb<sup>1</sup> ([ORCID: 0000-0002-2014-842X](https://orcid.org/0000-0002-2014-842X)) \u2020\n\n### Affiliations\n\n1. Neurobiology Section and Center for Neural Circuits and Behavior, Division of Biological Sciences University of California, San Diego La Jolla United States\n2. Institute of Experimental Epileptology and Cognition Research University of Bonn Medical Center Bonn Germany\n3. Neuroscience Graduate Program University of California, San Diego La Jolla United States\n4. Department Biologie II Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen Martinsried Germany\n5. Berstein Center for Computational Neuroscience Munich Martinried Germany\n6. Kavli Institute for Brain and Mind University of California, San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn epilepsy, brain networks generate pathological high-frequency oscillations (pHFOs) during interictal periods. To understand how pHFOs differ from normal oscillations in overlapping frequency bands and potentially perturb hippocampal processing, we performed high-density single unit and local field potential recordings from hippocampi of behaving rats with and without chronic epilepsy. In epileptic animals, we observed two types of co-occurring fast oscillations, which by comparison to control animals we could classify as \u2018ripple-like\u2019 or \u2018pHFO\u2019. We compared their spectral characteristics, brain state dependence, and cellular participants. Strikingly, pHFO occurred irrespective of brain state, were associated with interictal spikes, engaged distinct subnetworks of principal neurons compared to ripple-like events, increased the sparsity of network activity, and initiated both general and immediate disruptions in spatial information coding. Taken together, our findings suggest that events that result in pHFOs have an immediate impact on memory processes, corroborating the need for proper classification of pHFOs to facilitate therapeutic interventions that selectively target pathological activity.\n\n## Introduction\n\nIn epilepsy, transient fast oscillations in local field potentials called pathological high-frequency oscillations (pHFOs) are observed in brain regions near the seizure focus and are hypothesized to play a role in epileptogenesis (Bragin et al., 2004; Staba et al., 2002). In the clinical setting, interictal pHFOs are used as a biomarker for the location of seizure generating zones (Worrell et al., 2004) and are utilized by neurosurgeons to select which tissue to resect in surgical treatments of refractory epilepsy (Haegelen et al., 2013; Frauscher et al., 2017). The possible role of pHFOs in epileptogenesis and their use as a biomarker of disease highlight the necessity of being able to properly identify and classify physiological high frequency oscillations, which can be difficult in brain regions that also normally generate physiological high-frequency oscillations (Engel et al., 2009).\n\nIn temporal lobe epilepsy, seizure-genic circuits are located in brain regions that support memory formation such as the hippocampal and parahippocampal regions. In these regions, the healthy brain generates physiological high frequency oscillations or \u2018ripples\u2019, which are necessary for memory processing (Axmacher et al., 2008). Ripples overlap in frequency range with pHFOs, which presents a challenge for algorithms to distinguish the two types of events (Engel et al., 2009). In human studies that have separately classified normal physiological ripples and pHFOs, the two event types were recorded from different electrode locations in segregated brain regions (Matsumoto et al., 2013), leaving the question of whether physiological ripples persist within seizure-genic networks that are producing pHFO, such that the same network generates both event types. Furthermore, it is difficult to know whether ripples observed in humans with epilepsy are normal or altered because there are no control data from healthy brains available and because of the difficulty in humans to simultaneously record the activity of many single neurons within a collective brain network. Here, we address these questions in an animal model of chronic temporal lobe epilepsy, in which we can record high-frequency oscillations and the neuron ensembles that participate in them from both epileptic and control rats.\n\nSince the discovery of ripples in the rat hippocampus (Buzs\u00e1ki et al., 1992), there has been extensive study of their mechanisms and function (for review, see Buzs\u00e1ki, 2015). Ripples occur predominantly during sleep and immobility. Interestingly, the neuronal activation during ripples reflects a compressed version of the sequential activation of neurons during wakefulness (Wilson and McNaughton, 1994). When rats are awake and mobile, the hippocampal local field potential shows a theta rhythm, a sustained low amplitude oscillation that ranges between 5\u00a0and\u00a012 Hz (Vanderwolf, 1969). During ongoing theta, individual principal neurons burst theta rhythmically when the rat is in the neuron\u2019s spatial receptive field (O'Keefe and Dostrovsky, 1971; Muller et al., 1987; Ylinen et al., 1995; Csicsvari et al., 1999). As a result of each neuron being theta-rhythmically active within spatially restricted fields, principal neurons are sequentially activated within theta cycles when animals transverse a space. These emerging theta sequences are then compressed and replayed during ripples, which is thought to be important for consolidation of memory during sleep as well as for decision-making and path planning during behavior (Girardeau et al., 2009; Jadhav et al., 2012; \u00d3lafsd\u00f3ttir et al., 2015; Pfeiffer and Foster, 2013). These direct links between behavior and neural network dynamics underscore the importance of ripple dynamics in healthy cognitive processes. In epilepsy, it is known that CA1 ensembles are activated during high frequency oscillations (Ibarz et al., 2010), while sequence coding is likely disrupted due to non-specific activation of pyramidal neurons (Valero et al., 2017). To date, however, no study has compared CA1 dynamics between pathological and more physiological (ripple-like) high-frequency oscillations in the same animal to test whether memory-related neural computations persist in seizure-genic networks. Using high-density single-unit recording, we compare the neural dynamics of high-frequency oscillations between control rats and those with chronic temporal lobe epilepsy. In animals with epilepsy, we find that the CA1 network of the same animal can generate pHFO and ripple-like oscillations. Here, we compare the brain state dependencies, cellular participation, and functional role of pHFO and ripple-like oscillations with control ripple oscillations.\n\n## Results\n\n### Ripple-like oscillations and pHFOs occur in CA1 of the same animal\n\nWe first determined whether the hippocampus of animals with chronic epilepsy is capable of engaging in two types of high-frequency oscillations, pathological and more normal, ripple-like events. Given that brain states differ between foraging and rest and that normal ripple oscillations are dependent on select brain states, we reasoned that recording across immobile and mobile behavioral states would be useful for assessing the pathology of high-frequency oscillations in epilepsy. Furthermore, recording during foraging behavior would also facilitate the study of the interplay between place coding and high-frequency oscillations in epilepsy. Recording sessions were\u00a0thus comprised of\u00a0two to four 10 min foraging epochs during which rats actively searched for food in an open arena, separated by rest periods during which rats quietly rested in a small box before and after foraging (Figure 1A) (n\u00a0=\u00a04 control, n\u00a0=\u00a04 with chronic epilepsy). For recording local field potential (LFP) and single units, tetrodes were positioned in the dorsal CA1 cell layer, where ripple oscillations are routinely recorded in healthy animals. Using identical event detection parameters, we isolated high-frequency oscillations (>140 Hz) in control animals (example traces shown in Figure 1B, Figure 1\u2014figure supplement 1A) and in animals with epilepsy (example traces shown in Figure 1C, Figure 1\u2014figure supplement 1B). Given that filtering can be problematic for detection of ripples in epileptic networks (B\u00e9nar et al., 2010), we confirmed that our filter did not induce spurious detection of artifact or interictal spikes with no associated high-frequency oscillations (Figure 1\u2014figure supplement 2). In control animals, the peak amplitudes of the high-passed ripple oscillations were similar in amplitude across an entire recording session and therefore recording sessions were associated with small coefficients of variation. In contrast, in animals with epilepsy the amplitudes of high-frequency oscillations within recording sessions varied more substantially (ctrl, n\u00a0=\u00a04; mean\u00a0\u00b1\u00a0SEM, 0.3\u00a0\u00b1\u00a00.01; epileptic, n\u00a0=\u00a012; mean\u00a0\u00b1\u00a0SEM, 0.5\u00a0\u00b1\u00a00.05) (Unpaired t-test, p\u00a0=\u00a00.04, tstat\u00a0=\u00a0\u22122.2, d.f.\u00a0=\u00a014) (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig1-v1.jpg)\n\n**Figure 1.:** (A) Each recording session consisted of a sequence of rest epochs (grey blocks) and foraging epochs (white blocks). Rats were placed in either circular (diameter\u00a0=\u00a01 meter, pictured) or square (0.8 x\u00a00.8 meters) open arenas for foraging and in a plexiglass holding box (0.2 \u00d7 0.2 meters) adjacent to the open arena for rest. (B) Example high-frequency oscillations recorded from the CA1 cell layer of a control rat during rest and foraging. Each line of the heat map corresponds to a 100 ms voltage trace of a high-frequency oscillatory event, high-pass filtered, and centered on its peak voltage amplitude. Positive and negative voltages are represented on a color scale (bottom). Three example voltage traces are shown to the left, and see Figure \u2013 Supplement1 for more examples. (C) The same as (B), but recorded from the CA1 cell layer of a rat with chronic epilepsy. (D) For each recording session that had at least 20 high-frequency events (n\u00a0=\u00a04 control, n\u00a0=\u00a012 epileptic), the coefficient of variability was calculated for the distribution of peak voltage amplitudes associated with each high-frequency oscillation. *, p\u00a0\u2264\u00a00.05, Wilcoxon Rank Sum test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) LFP recordings from the CA1 cell layer were bandpass filtered and putative HFO events were detected when the RMS surpassed 3.5 standard deviations (step 1) and when the event had at least five cycles (step 2). (B) As a third step to confirm that HFOs were not misidentified as fast gamma rhythm or a noise artifact, putative HFOs were either accepted or rejected based on peak frequency of the power spectrum. Events were only accepted if the peak power at frequencies greater than 150 Hz was higher than the peak power from 75 to 125 Hz (shaded grey region). For each animal included in the study, two rejected and two accepted events are depicted, except for rat 393, in which all putative events were accepted.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** A Example LFP recording from the CA1 cell layer of an epileptic animal. Signals detected as HFOs (see methods section) are indicated by red tick marks on top. An example of a single event (blue box) is enlarged below to show the HFO co-occurring with the interictal spike. As the first step of HFO detection, the trace was filtered (shown to the right), and a clear high-frequency oscillatory signal is seen in the enlarged version of the same event as shown on the left. (B) LFP from stratum radiatum recorded simultaneously with the signal in the cell layer shown in (A). Note that at this recording location, the interictal spikes are larger in amplitude than in (A) and do not contain detectable HFOs (note absence of red tick marks). To confirm that HFO detection in the filtered signal cannot be attributed to ringing of the filter in response to the large interictal spikes, the same analysis as in (A) is performed on the large interictal spikes. Importantly, filtering this signal, as shown to the right, did not introduce false HFOs. (C) Simulated step artifact. A 4000 \u03bcV signal was added to the second half of a LFP trace recorded from the CA1 cell layer. Filtering this signal introduced oscillation events (right), but there were not a sufficient number of large amplitude cycles to cause the signal to be classified as an HFO event (cycles larger than threshold shown in red). (D) Similarly, when introducing a biphasic artifact (\u22123000 \u03bcV to 3000 \u03bcV), a false oscillation was introduced after filtering, but again the oscillation was not detected as a HFO event as it did not reach our criteria for number of large amplitude cycles (see Materials\u00a0and\u00a0methods section).\n\nThe larger variability in high-frequency oscillation amplitude observed in recordings from animals with epilepsy suggested that the pathological CA1 network can engage in different types of fast oscillations, even within the same recording period. It is well known that fast oscillations in epileptic networks can co-occur with interictal spikes (Jacobs et al., 2008; Salami et al., 2014), leading to the question whether heterogeneity in fast oscillations could be explained by co-occurrence with interictal spikes. In our data, we observed that fast oscillations co-occurred with two distinct types of comparatively slower voltage deflections or \u2018envelopes\u2019. Some co-occurred with large voltage envelopes that resembled interictal spikes, whereas others co-occurred with smaller voltage deflections that appeared similar to normal \u2018sharp waves\u2019 observed in control animals. We therefore analyzed the relationship between the amplitude of the envelope and the peak frequency of the fast oscillation (Figure 2\u2014figure supplement 1A\u2013C). Plotting the relationship between the two shape parameters for each event revealed that events from control animals (\u2018ripples\u2019) clustered into one area and events from animals with epilepsy indeed clustered into two areas (Figure 2A & B, Figure 2\u2014figure supplement 1D), indicating the presence of two types of high-frequency oscillations in the CA1 region in our animal model of epilepsy.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig2-v1.jpg)\n\n**Figure 2.:** A Density plot of high-frequency oscillations (HFOs) recorded from all sessions in control rats (n\u00a0=\u00a04 rats, n\u00a0=\u00a04 sessions). All events were characterized by a single cluster of similar frequency and envelope amplitude. (B) Density plot of HFOs from all sessions recorded from epileptic rats (n\u00a0=\u00a04 rats, n\u00a0=\u00a012 sessions). In animals with epilepsy, two clusters are present, one characterized by envelope amplitudes and frequencies that resemble control ripples (circled in blue), and the other characterized by higher frequencies and larger envelope amplitudes (circled in red), and see Figure \u2013 Supplement1 A-C. (C) Distribution of the oscillation frequencies for control ripples (cyan, n\u00a0=\u00a01414), and in animals with epilepsy (blue and red). The two distributions for animals with epilepsy were separated by clustering the data presented in (B), and see Figure \u2013 Supplement1D for display of individual animals. Note that the blue population overlaps with control ripples and is thus referred to as \u2018ripple-like\u2019 (n\u00a0=\u00a01616). The red population is separate from control ripples and is thus referred to as \u2018pathological HFOs (pHFO)\u2019 (n\u00a0=\u00a0923). (D) The separation (or not) of each cluster in epileptic animals from control ripples is confirmed analytically using a binary classifier and plotted in a Receiver Operator Curve. True positive and false positive rates are plotted with the range of oscillation frequencies used as criteria values (see Materials\u00a0and\u00a0methods for more detail). (E, F) The same as (C, D), but for envelope amplitude rather than oscillation frequency.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** A Example \u2018ripple\u2019 event recorded from the CA1 cell layer of a control animal. Left: The raw LFP is shown. Middle: To calculate the amplitude of the envelope (the simultaneously occurring voltage deflection, which in control animals is called the \u2018sharp wave\u2019), the LFP window around the event was band-pass filtered between 0.2 Hz and 40 Hz, and the maximum absolute amplitude of the filtered data was taken. Right: To determine the \u2018peak frequency\u2019 the peak in power spectrum at frequencies higher than 150 Hz was selected. (B) Example \u2018ripple-like\u2019 event recorded from the CA1 cell layer of an epileptic animal. (C) Example \u2018pHFO\u2019 event recorded from the same recording site in the CA1 cell layer of the same animal as in (B). (B) and (C) confirm that both \u2018ripple-like\u2019 and pHFO events can be generated by the same hippocampal network. (D) Envelope amplitude vs. frequency plots for high-frequency oscillations recorded in each animal with chronic epilepsy. For each epileptic rat, events from one recording session recorded from a tetrode located in the CA1 layer. Each event is represented by a dot, color coded based on whether they belong to the ripple-like cluster (blue) or pHFO cluster (red), confirming that both types of events are present in individual animals.\n\nThe presence of two clusters of high-frequency oscillations led to the question whether one cluster resembled the normal ripples of control animals. First, k-means clustering was used to segregate high frequency oscillations from the CA1 of epileptic animals into two groups. Interestingly, one group, which we refer to as \u2018ripple-like\u2019, had substantial overlap with control ripples for both peak frequency and envelope amplitude (Figure 2C & E) (ctrl ripple n\u00a0=\u00a01414; peak frequency median, 185.8 Hz; inter-quartile range (IQR), 175.8\u2013197.8 Hz; envelope median, 244.9 \u03bcV; IQR, 169.6\u2013380.2 \u03bcV; ripple-like n\u00a0=\u00a01616; peak frequency median, 184.9 Hz; IQR, 168.7\u2013199.1329 Hz; envelope median 253.8 \u03bcV; IQR, 148.9\u2013377.2 \u03bcV). The other group, which we refer to as \u2018pathological high-frequency oscillations (pHFOs)\u2019, were associated with large amplitude envelopes (interictal spikes) and had minor overlap with control ripples (Figure 2C & E) (pHFO n\u00a0=\u00a0923, peak frequency median, 245.9 Hz; IQR, 233.7\u2013264.1 Hz; envelope median, 520.0 \u03bcV; IQR, 407.3\u2013647.4 \u03bcV). Both groups were present in individual epileptic rats, even in the same recording session (Figure 2\u2014figure supplement 1D). A binary classifier was able to distinguish pHFOs from control ripples with high accuracy, as shown by a receiver operator curve (ROC) in the far left quadrant of the ROC plot (Figure 2D & F, red line). In contrast, the classifier was unable to distinguish ripple-like from control-ripple, as shown by the curve along the identity line that indicates equal numbers of false positive and true positive classifications (Figure 2D &F, blue line). Together, these data show that in animals with epilepsy the CA1 network of the hippocampus engages in two types of fast oscillations, one of which resembles the sharp wave ripples in controls.\n\n### pHFOs are not brain state dependent and occur during foraging epochs characterized by movement-related theta oscillations\n\nTo further investigate the extent to which ripple-like events are normal and pHFOs are abnormal we studied their occurrence in relation to ongoing behavior. When animals are mobile, the hippocampal LFP is characterized by sustained theta oscillations that range from 5 to 12 Hz (Vanderwolf, 1969). Typically, movement-related theta states preclude ripple oscillations (Vandecasteele et al., 2014) such that ripple oscillations are rarely reported to co-occur with theta in healthy animals. Given the direct relationship between movement and theta states and immobility and non-theta slow wave states, we used running speed as an indirect measure of brain state. We analyzed foraging sessions in which the animal\u2019s position was tracked allowing calculation of animal running speed at the time of high-frequency oscillations. As expected, ripple events in control animals preferentially occurred during periods of immobility \u2013 associated with high slow wave activity and low theta power. Ripple-like events in epileptic animals retained the same association with immobility as observed in the healthy brain (Figure 3A) (ctrl ripples n\u00a0=\u00a0691; median speed, 0.8 cm/s; IQR, 0.6\u20131.9 cm/s; ripple-like n\u00a0=\u00a0293; median speed, 0.5 cm/s; IQR, 0.2\u20133.1 cm/s). In contrast, pHFOs occurred over the entire range of running speeds (pHFO n\u00a0=\u00a0490; median speed, 4.7 cm/s; IQR, 1.9\u20137.4 cm/s) (p\u00a0=\u00a05.3\u00d710\u221274, Chi-sq\u00a0=\u00a0337.4, d.f.\u00a0=\u00a02, Kruskal-Wallis ANOVA followed by Tukey Kramer multiple comparison test with p\u00a0<\u00a00.05; control ripple compared to ripple-like, n.s.; ctrl compared to pHFO, p\u00a0<\u00a00.05). The lack of dependence on immobility of pHFOs was not a consequence of gross differences in behavior between epileptic and control rats, as the two groups ran at similar speeds during foraging periods (ctrl n\u00a0=\u00a013 10 min foraging periods, median speed 5.6 cm/s; IQR, 5.1\u20136.9 cm/s; epileptic n\u00a0=\u00a035 10 min foraging periods, median speed 6.4 cm/s; IQR 4.4\u20137.6 cm/s, Wilcoxon Rank Sum test; n.s., p\u00a0=\u00a00.7, z-value\u00a0=\u00a0\u22120.4). Furthermore, when event rates were calculated for the time in the rest box and for different speeds in the arena, high rates of ripple and ripple-like events were observed only during periods of immobility and rest, whereas rates of pHFOs were at approximately the same level during rest as over the entire range of running speeds (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig3-v1.jpg)\n\n**Figure 3.:** (A) Cumulative distributions of the running speed at times when a high-frequency oscillation occurred. All data were recorded from behavioral sessions when animals were foraging for food reward and when position and running speed were tracked (n\u00a0=\u00a0691 control ripple, n\u00a0=\u00a0293 ripple-like, n\u00a0=\u00a0490 pHFO). *, p\u00a0\u2264\u00a00.05, Kruskal-Wallis ANOVA. Control ripple (cyan) and ripple-like (blue) events occur primarily when animals were not moving while pHFOs (red) occurred at all running speeds. (B) Event rates for control ripple (cyan), ripple-like (blue), and pHFOs (red) plotted as a function of time spent in the rest box or time spent at each running speed recorded during foraging experiments. Behavior during recordings in the rest box comprised a mixture of mobile and rest behavior. (C) Top, LFP recorded in stratum radiatum around the time of a pHFO/interictal spike event. The time frequency plot over the four seconds around the event is characterized by strong theta rhythm leading up to the event and a reduction in theta power after the event. Red parallel lines denote the LFP window that was clipped to remove the large interictal spike before wavelet analysis was performed. Bottom, the running speed of the animal plotted over the corresponding four seconds. See Figure 3\u2014figure supplement 1 for theta phase analysis. (D) LFP and running speed around pHFOs that occurred when animals were running at speeds\u00a0\u2265\u00a05 cm/s were examined for modulation (n\u00a0=\u00a0231). The distributions of the change in theta power (top) or running speed (bottom) compared to baseline (BL) are plotted for the periods before and after interictal events. Time windows are defined as shown by the black boxes in (C). ***, p\u00a0\u2264\u00a00.001, Wilcoxon Sign Rank test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A LFP traces simultaneously recorded from stratum pyramidale (grey) and stratum radiatum (black) from an epileptic rat during a 10-min foraging session. The coherence between the two recorded sites is plotted below. The strongest coherence was observed in the theta band (7 Hz in this case). Note that toward the end of the recording, interictal spikes (which were associated with pHFO) were observed. Several hundred milliseconds of the two traces are enlarged in (a) to illustrate the prominence of theta rhythm in the raw data and the phase shift between the two layers. In this example, theta in stratum pyramidale is leading theta in radiatum by\u00a0~90 \u00b0, which is quantified in (B). (B) The phase lag at the frequency with the highest coherence (7\u20139 Hz) between stratum pyramidale and radiatum was calculated for each foraging session. The example shown, corresponds to the data shown in (A). (C) No difference was observed in the coherence of the two recording sites (stratum radiatum and stratum pyramidale) between control and epileptic rats (ctrl, n\u00a0=\u00a010; epilepsy, n\u00a0=\u00a012; Wilcoxon Rank Sum Test, p\u00a0=\u00a00.67, z\u00a0=\u00a00.4). (D) To determine the theta phase at which interictal spikes and pHFOs occurred, LFP traces recorded at stratum radiatum were clipped at the moment the interictal spike occurred and the phase was estimated (see Materials\u00a0and\u00a0methods, Analysis of theta oscillations). In this example, the trace was clipped at the dotted line. (E) For each animal the phase distribution of interictal spikes/pHFO are shown in reference to theta rhythm in stratum pyramidale (0 \u00b0 corresponds to the peak of a theta cycle). The distribution of theta phase associated with interictal spike/pHFO occurrence shows a clear phase modulation in 3 of four animals (Raleigh Test), however the phase modulation was inconsistent between animals (for the three that reached significance; mean phase\u00a0\u00b1\u00a0SEM; 62.1\u00a0\u00b1 9.7,\u201363.5 \u00b1 7.0,\u201356.8 \u00b1 13.3).\n\nThe occurrence of pHFOs during periods of fast running speed was surprising and raised two possibilities. One possibility is that pHFOs occur during movement related theta, without altering ongoing theta oscillations. Alternatively, theta rhythm might be suppressed when pHFOs are generated, which would mean that theta is decoupled from running in animals when pHFOs occur. To distinguish between these two possibilities, a wavelet analysis was performed on LFP recordings during the seconds prior to and following pHFOs that occurred when animals were moving quickly (running speeds of 5 cm/s or faster, n\u00a0=\u00a0231). Even though running speed was consistent around the time of the pHFO (median speed change from baseline to before the pHFO 0 cm/s; IQR \u22122\u20133 cm/s; from baseline to after the pHFO, 0 cm/s; IQR \u22123\u20133 cm/s), LFP recorded in stratum radiatum was characterized by robust theta oscillations leading up to the pHFO (median power change between baseline and the period immediately preceding the pHFO, 10.9 \u03bcV2; IQR, \u221251.5\u201374.6 \u03bcV2, n.s., p\u00a0=\u00a00.08, z-value\u00a0=\u00a01.6, Wilcoxon signed rank test) followed by a transient suppression of theta oscillations for several hundred ms after the event (median reduction from baseline, 98.0 \u03bcV2; IQR, 21.3\u2013206.2 \u03bcV2, p\u00a0=\u00a04.7\u00d710\u221229, z-value\u00a0=\u00a011.2, Wilcoxon signed rank test) (Figure 3C & D). These results are consistent with previous reports that observe theta suppression after interictal spikes in humans (Fu et al., 2018). Indeed, in stratum radiatum, the most prominent feature of the interictal event is the interictal spike, consistent with the notion that the interictal spike/pHFO complex also suppresses theta in the rat model. We wondered whether pHFOs preferentially occurred at specific phases of theta, which could have implications of involvement of other brain regions (e.g. entorhinal cortex). Although a phase preference was observed, the exact phase preference differed between animals (Figure 3\u2014figure supplement 1). The suppression of theta after each event implies that pHFOs and the associated inter-ictal spikes disrupt ongoing theta oscillations. The transient interruption in theta occurs even while animals continue to explore their environment, and thus could have negative impacts on the temporal coordination of hippocampal ensembles during exploration.\n\n### Sparse activation of CA1 principal cells during high frequency oscillations in animals with epilepsy\n\nOur results thus far indicated that in chronic epilepsy, networks were still capable of generating ripple-like events even though they concurrently generated pHFOs, which suggested that some normal physiological processes could be maintained in these highly pathological networks. In control animals, ripple oscillations in the LFP coincide with activation of ensembles of neurons in CA1 (Wilson and McNaughton, 1994). We therefore asked whether ripple-like and pHFO events in animals with epilepsy would show similar participation by principal neurons in CA1 that were recorded over an entire recording session (Figure 4A & B, example from an animal with chronic epilepsy and Figure 4\u2014figure supplement 1 for more examples and cluster quality metrics). In control animals, most principal neurons were ripple-modulated, increasing their firing rate during ripples (32/35, or 91%) (Figure 4C), which is consistent with reports from other rat strains (Csicsvari et al., 1999). In striking contrast, in animals with chronic epilepsy, a smaller proportion of principal cells were modulated by ripple-like events (59/127, or 46% compared to 91%, p\u00a0=\u00a02.1 *10\u22126, chi-sq\u00a0=\u00a022.5, Chi-square test) (Figure 4D). Thus, in animals with epilepsy, fewer CA1 neurons were engaged during ripple-like oscillations. One possible explanation for fewer neurons being modulated by ripple-like events is that neurons have been \u2018hijacked\u2019 and now participate in pHFO events instead of ripple-like events. This was not the case, however, as an even sparser activation of neurons was observed during pHFOs, with only 34/153, or 21% participating (Figure 4E). Others have reported that there is strong recruitment of inhibitory neurons during interictal spikes (Muldoon et al., 2015), which could partially explain the sparser activation of principal cells in pHFO events.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig4-v1.jpg)\n\n**Figure 4.:** (A) Coronal section through the area of the hippocampus with tetrode tracks in the CA1 area. The area in the black box is magnified in the inset on the upper left. The tetrode position for the spike recordings in (B) is indicated by an arrow. Scale bar, 300 \u00b5m. (B) Scatterplots of spike amplitudes on two of the four recording channels (ch2, ch3) from the tetrode identified in (A). Each colored cluster corresponds to spikes from one cell, and insets show average waveforms of two well-isolated cells. Noise spikes are shown in grey. The similarity of the scatterplots and waveforms across the rest and foraging epochs indicates that the same cells were reliably recorded throughout the session. For more details about single unit sorting, see Figure \u2013 Supplement 1.( C) Each row in the heat map is the average rate vector for an individual control CA1 principal neuron aligned to ripple events (time 0). Average rates are normalized to their peak and range from 0 (black) to 1 (white). Neurons are sorted by ripple-modulation significance such that strongly modulated neurons are at the top. Neurons that show significant modulation (p\u00a0<0.05, *) are marked by a black dash to the left of the row. Almost all control neurons are ripple-modulated (91%), and fire maximally during the ripple period (time 0). (D) The same as (C), but for neurons recorded in animals with epilepsy during ripple-like events (left, 46% of neurons were modulated). (E) The same as (C), but for neurons recorded during pHFO events (right, 21% of neurons were modulated). Please note that neurons in (D) and (E) are ordered differently, therefore cell identity across rows are not comparable. For rates and p-values see Figure \u2013 source data (1\u20133, corresponding to C-E).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Scatterplots of spike amplitudes on two of the four recording channels (ch1, ch4) from a tetrode different from the one shown in the main Figure 4, but also implanted in an animal with epilepsy. Each colored cluster corresponds to spikes from one cell. In this projection (peaks from ch1, peaks from ch4), the cluster denoted by dark blue was clearly distinct from the noise and far from other clusters (cells), therefore boundaries were drawn around the cluster to define it. The gray dots within these boundaries were excluded by boundaries set in a different projection. All boundary definitions were assigned manually, i.e. we did not employ automated spike sorting. Note, the relationship of spike clusters to other cells and the noise did not change for a cluster over the recording session. (B) For each cluster shown in (A), the waveforms recorded on each tetrode channel (1 \u2013 4) are shown for each behavioral period, with average waveforms superimposed in white. Dotted lines are drawn to mark the height of the average waveform at its largest in Rest 1, and extended so that a by-eye comparison can be made across the behavioral periods. Although different firing rates can be observed during different behavioral periods, the relationship of the spike amplitude across channels remains constant. This consistency is an indicator of a stable tetrode position in relation to the cell layer. (C) L-Ratio was the same for clusters recorded in control (n\u00a0=\u00a0203; median, IQR, 0.0023, 0.0009\u20130.0076) and in epileptic animals (n\u00a0=\u00a0795; median, IQR, 0.0025, 0.0009 -. 0073) (p\u00a0=\u00a00.54, Wilcoxon Rank Sum Test, z-value\u00a0=\u00a0\u22120.6). (D) Isolation distance was large in control and epileptic animals (98.7% of clusters had isolation distance\u00a0>\u00a010 cm). In epileptic animals, the isolation distance (n\u00a0=\u00a0795; median, IQR, 48.6, 32.6\u201378.3) was larger than in controls (n\u00a0=\u00a0203; median, IQR, 24.7, 17.1\u201343.3) (p\u00a0=\u00a05.1 * 10\u221229, Wilcoxon Rank Sum Test, z-value\u00a0=\u00a0\u221211.2). (E) for each cell, the channel that recorded the largest waveform in the first session (e.g., channel 4 for cluster one shown in (B)) was selected, and the average waveform is plotted for Rest one versus Rest 2. Note that all cells lie close to the identity line, confirming that waveforms were stable across the entire recording. (F) Changes in waveform amplitude from the first to the second rest session were the same for cells recorded in control (n\u00a0=\u00a035; median, IQR, 0.7\u20131.6 \u2013 9.1) and epileptic animals (n\u00a0=\u00a0177; median, IQR, 1.8,\u20134.1 \u2013 10.8)(not significant, Wilcoxon Rank Sum Test, p\u00a0=\u00a00.57, z-value\u00a0=\u00a0\u22120.57). The results in (C) \u2013 (F) indicate that cluster quality does not differ significantly between control and epileptic animals, and when there is a significant difference it is toward higher cluster quality in epileptic animals.\n\nIn several recording sessions, we were able to record from the same neurons (n\u00a0=\u00a0127) during periods with sufficient numbers of pHFOs and ripple-like events to test whether individual neurons were preferentially modulated by a specific event type. Of the 59 neurons that were modulated by at least one type of high-frequency oscillation during these recording sessions, most were modulated by only ripple-like events, while smaller subsets were modulated by both or only pHFOs (Figure 5A\u2013C). Thus, more than two thirds of modulated neurons were modulated by only one event type (60% by only ripple-like, 12% by only pHFO, Figure 5D), suggesting that unrelated cell ensembles in the CA1 network may support the two distinct types of high-frequency oscillations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig5-v1.jpg)\n\n**Figure 5.:** (A) Example CA1 pyramidal neuron that is modulated by ripple-like events only. The mean firing rate\u00a0\u00b1SEM over all ripple-like (blue) and pHFO events (red) is shown, and traces are centered on the ripple event (\u2018E\u2019, time zero). Insets show the mean rate changes for the same neuron during individual events (the rates associated with individual events are depicted with distinct line colors). Rates are shown comparing baseline (\u2018BL\u2019) to ripple-like events (upper plot, blue border) or comparing baseline to pHFO events (lower plot, red border). ***, p\u00a0\u2264\u00a00.001, Wilcoxon Sign Rank test. (B) As in (A) but an example of a cell modulated by pHFO events only. (C) A neuron that was modulated by both ripple-like and pHFO events.\u00a0(D) Population summary of which event types individual neurons were modulated by.\n\n### Fewer active neurons and reduced spatial information during spatial coding in animals with epilepsy\n\nNeurons active during behavior typically show a correspondence to those active during ripple oscillations (Wilson and McNaughton, 1994). Given our observation that a smaller proportion of neurons were modulated by ripple-like events in animals with epilepsy than during ripples in controls, we wondered whether we would also observe fewer active neurons during foraging epochs in those animals. For our analysis, we considered epochs with good foraging behavior (100% coverage of the spatial arena, 177 CA1 pyramidal neurons in animals with epilepsy, 35 CA1 pyramidal neurons in control animals). Exploration of the environment did not differ between the two groups of animals (mean time spent in each spatial bin\u00a0\u00b1\u00a0SEM; Ctrl, 2.1\u00a0\u00b1\u00a00.03 s, n\u00a0=\u00a02560 spatial bins; Epilepsy, 2.2\u00a0\u00b1\u00a00.03 s, n\u00a0=\u00a06656 spatial bins; n.s., p\u00a0=\u00a00.08, d.f.\u00a0=\u00a09214, Unpaired t-test). For individual neurons, we plotted the action potential locations as a function of the animal\u2019s path during foraging in an open arena (Figure 6A & B, left). From these maps of place-modulated activity of individual neurons, we calculated the average rates for each spatial bin in the map and the peak rate (Figure 6A & B, right). Consistent with our observation that a smaller proportion of neurons was activated during ripple-like events in animals with epilepsy, we also observed a smaller proportion of \u2018active\u2019 neurons (neurons with peak rates\u00a0>\u00a02 Hz) during foraging sessions in animals with epilepsy (Figure 6C) (73/177 active in animals with epilepsy, compared to 30/35 in control animals, p\u00a0<\u00a01.5 *10\u22126, chi-sq\u00a0=\u00a023.1, Chi square test). Further contributing to decreased spatial coding, active neurons in animals with epilepsy (peak rates\u00a0>\u00a02 Hz) had significantly less spatial information compared to active neurons recorded from control animals (epilepsy n\u00a0=\u00a073; median spatial information, 0.5 bits; IQR, 0.3\u20131.0 bits; ctrl n\u00a0=\u00a030; median spatial information, 1.7 bits; IQR, 1.0\u20132.5; p\u00a0=\u00a03.0\u00d710\u22128, z-value\u00a0=\u00a05.5, Wilcoxon rank sum test) (Figure 6D), consistent with results reported in other models of epilepsy (Liu et al., 2003).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig6-v1.jpg)\n\n**Figure 6.:** (A) The activity patterns of four control CA1 neurons recorded simultaneously during a 10 min foraging epoch in the open field. Left, for each cell the animal\u2019s path is in grey and the positions where spikes of an individual neuron occurred are overlaid as red dots. Right, the corresponding firing rate maps with the average firing rate in each spatial location represented from 0 Hz (dark blue) to the peak rate for each cell (red, noted to the right of each map). (B) The firing patterns of four CA1 neurons recorded simultaneously from an epileptic rat during a 10-min foraging epoch. Maps are as described in (A). (C) Distributions of peak rates during foraging for all neurons recorded in control and epileptic rats (for neurons active in several sessions, foraging sessions with highest rates were selected, n\u00a0=\u00a035 ctrl, n\u00a0=\u00a0177 epileptic).\u00a0(D) Distribution of spatial information for neurons with peak rates\u00a0\u2265\u00a02 Hz (n\u00a0=\u00a030 ctrl, n\u00a0=\u00a073 epileptic). (E,F,G) Distributions of spatial parameters are shown for three neuron types: (1) CA1 pyramidal neurons recorded from control animals that were ripple modulated \u2018Ctrl Ripple\u2019, (2) CA1 pyramidal neurons recorded from animals with epilepsy that were only modulated by ripple-like events \u2018R-L\u2019, and (3) CA1 pyramidal neurons recorded from animals with epilepsy that were either modulated by pHFOs only or by both pHFOs and ripple-like events \u2018pHFO\u2019. See Figure 6 \u2013 source data for numerical values. *,\u00a0\u2264\u00a00.05 Kruskal \u2013 Wallis test, Turkey-Kramer post hoc.\n\nIn addition, we also analyzed the spatial firing pattern of neurons active during pHFOs and compared them to those active during ripple-like events. Interestingly, several parameters used to quantify place coding were comparable between neurons modulated by ripple-like versus those modulated by pHFOs (Figure 6E \u2013 G). Generally, all neurons in animals with epilepsy that were active during foraging had reduced spatial information (Figure 6E), reduced stability of place-related activity (Figure 6F), and larger more dispersed place-related activity (Figure 6G) compared to neurons recorded in control animals) (p\u00a0=\u00a01.4\u00d710\u221213; 4.2 \u00d7 10\u221215, 3.9 \u00d7 10\u221212; Chi-sq\u00a0=\u00a059.1, 66.2, 53.0; d.f.\u00a0=\u00a02; 2; 2 Kruskal-Wallis ANOVA followed by Tukey Kramer multiple comparison test with p\u00a0<\u00a00.05) (see Figure 6 \u2013 source data for numerical details). Our results thus reveal that functional impairments of hippocampal networks in epilepsy extend beyond the cellular ensembles that participate in pathological activity patterns. Overall, the physiology that underlies place coding is generally perturbed in animals with epilepsy, as fewer neurons encode place relevant information and those that do are less precise and less stable.\n\n### pHFOs during foraging partially disrupt hippocampal\u00a0place coding\n\nGiven our results that pHFOs can be generated while animals are actively running while foraging for food, and that a proportion of CA1 pyramidal neurons increase their firing rates during pHFOs, we asked whether pHFOs during running might contribute to spatial coding deficits. First, we tested whether pHFOs occurred in specific locations, which could be the case if pHFOs were driven by neurons that had place specific activity. For each foraging session with a sufficient number of pHFOs (>15 events), we constructed maps of where pHFOs occurred relative to animal position (Figure 7A). From these maps, we calculated the spatial information carried by pFHO events. To determine a \u2018chance level\u2019 spatial information that would account for the number of events, we randomly shuffled when pHFOs occurred (1000 shuffles per session), and calculated the distribution of spatial information values for comparison (Figure 7B). In 9 out of 11 sessions, pHFOs occurred randomly throughout the environment, and thus carried the same amount of spatial information as when pHFO times were shuffled (Figure 7C). To then test whether ongoing pHFOs would acutely perturb place coding, we first compared the spatial information of individual neuron\u2019s maps from foraging epochs when pHFOs occurred to maps that were free of pHFOs (Figure 7D). No difference was observed between these two conditions. However, consistent with the results above (Figure 6), both distributions from epileptic animals were significantly different than from control animals (p\u00a0=\u00a01.1\u00d710\u221219, chi-sq\u00a0=\u00a087.4, Kruskal-Wallis ANOVA followed by Tukey Kramer multiple comparison test with p\u00a0<\u00a00.05) (ctrl n\u00a0=\u00a093 maps, median spatial information\u00a0=\u00a01.7 bits; IQR\u00a0=\u00a01.1\u20132.2 bits; w/pHFOs, n\u00a0=\u00a083 maps med.\u00a0=\u00a00.5 bits; IQR\u00a0=\u00a00.3\u20130.9 bits; pHFO free, n\u00a0=\u00a059 maps, med.\u00a0=\u00a00.5 bits; IQR\u00a0=\u00a00.3\u20130.9).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/42148/elife-42148-fig7-v1.jpg)\n\n**Figure 7.:** (A) The animal\u2019s path is depicted in grey with the positions where pHFO events occurred overlaid as red dots. The corresponding average rate map is displayed to the right, with a peak rate of 0.16 Hz. (B) Distribution of shuffled spatial information for pHFO events shown in (A). The actual spatial information is denoted by the red line. (C) Summary of the relationship between shuffled and actual spatial information of pHFOs for all foraging epochs with frequent pHFOs. Blue bars denote 5 and 95 percentile of shuffled distributions. Red dots show actual information. (D) Distributions of spatial information of neurons recorded from control animals (cyan, n\u00a0=\u00a093 maps) compared to spatial information of neurons in animals with epilepsy recorded either during foraging epochs with ongoing pHFOs (black, n\u00a0=\u00a083 maps) or no pHFOs (red, n\u00a0=\u00a059 maps). *\u00a0\u2264\u00a00.05 Kruskal \u2013 Wallis test, Tukey Kramer post hoc. (E) Distribution of the number of spikes that occurred during pHFOs for individual neurons during foraging epochs with ongoing pHFOs (n\u00a0=\u00a021). (F) The distribution of spatial information after random down-sampling (random d.s.) was calculated to determine whether targeted removal of spikes that occurred during pHFOs (targeted d.s., shown as a red x) led to a significantly higher spatial information score than would be expected by random down-sampling. (G) Spatial information of individual neurons was improved when spikes that occurred during pHFOs were removed from the map (targeted d.s.). ***\u00a0\u2264\u00a00.001 Wilcoxon Sign Rank test. (H) The improvement in spatial information as a function of the percentage of spikes which occurred during pHFOs. Values from individual neurons are plotted as black points. Only maps that had significant improvements beyond what would be expected by random down-sampling (as shown in F) are plotted and fit with a line.\n\nThe corresponding deficit in place coding for foraging epochs with and without pHFOs is consistent with the result that only a few neurons are engaged by pHFOs and that the firing patterns of most neurons would thus not be directly altered by the occurrence of pHFOs. Thus, we examined specifically neurons that spiked during pHFOs and asked whether these cells would show reduced spatial tuning. We selected the subset of neurons with at least 1% of spikes occurring during pHFOs (Figure 7E) (n\u00a0=\u00a021, median number of spikes occurring during pHFOs\u00a0=\u00a014; IQR, 8\u201320) and examined their place maps. We removed spikes that occurred during pHFOs, and calculated the spatial information after the targeted down-sample. As a control for reducing the number of spikes, we calculated the spatial information when a random set of spikes equal to the number that occurred during pHFOs were removed (random down-sampling was done 1000 times for each map). For 10/21 maps, the improvement in spatial information after removing spikes that occurred during pHFOs was greater than could be expected by random down-sampling (Figure 7F). For the remaining 11/21 maps, the improvement in spatial information after removing spikes during pHFOs could be explained by random down-sampling. When considering all 21 maps after removing spikes during pHFO, there was a small but significant increase in spatial information (increase of 0.02; IQR 0.01\u20130.08; p\u00a0=\u00a09.2\u00d710-5, z-value\u00a0=\u00a03.9, Wilcoxon Sign Rank Test) (Figure 7G). Not surprisingly, for the neurons in which targeted down sampling led to an improvement in spatial information, there was a positive relationship between the improvement in spatial information and the percentage of total pHFO-related spikes that were removed (Figure 7H, R2\u00a0=\u00a00.82, p\u00a0<\u00a01.6 * 10\u22128). Therefore, spikes during pHFOs can have a negative effect on place coding in individual neurons, and negative effects are stronger in neurons with a large number of spikes that occur during pHFOs. Collectively, these results indicate that pHFOs, as they occur randomly with respect to relevant stimuli (in this case spatial location) can reduce the information that is conveyed by CA1 place cells.\n\n## Discussion\n\nOur findings highlight that in individual animals with epilepsy, the hippocampus is capable of engaging in two types of high-frequency oscillations: pHFOs and ripple-like events, both of which involve distinct subnetworks of hippocampal neurons. Ripple-like events in epileptic animals are similar to ripples observed in the healthy brain of control animals in that they are characterized by similar oscillation frequencies and slow envelope amplitudes (\u2018sharp waves\u2019) as well as by an increased prevalence during non-theta brain states. In contrast, pHFOs are only observed in the epileptic brain, exhibit faster oscillation frequencies than ripples, are associated with interictal spikes, and are not brain state dependent. The preservation of ripple-like events in parallel with the occurrence of pHFOs suggests that memory-related neural computations are at least partially preserved in animals with epilepsy. Therefore, we investigated to what extent ripple-like events corresponded to control ripples with respect to network dynamics during behavior. In the epileptic brain, strikingly, a much smaller proportion of total CA1 neurons were participating in ripple-like events compared to the proportion that are ripple-modulated in controls. The reduction in the number of neurons that engages in network activity during ripples during immobility extends to spatial activity patterns in theta states during movement. During foraging, we also found a smaller proportion of active neurons in animals with epilepsy compared to healthy controls. Across behavioral states, activation of cell assemblies was therefore sparser in the epileptic compared to the control hippocampus. When neurons were active during foraging in epileptic animals, they did have place fields, although their fields were less precise and more unstable. We found that the general decline in hippocampal spatial information was further enhanced by the immediate effects of pHFOs on the network. Immediate effects included a transient reduction in hippocampal theta power, as well as a further reduction in spatial precision for place cells that were activated by the pathological oscillation. Therefore, the proper classification and selective therapeutic targeting of events that result in pHFOs has the potential to normalize hippocampal function in the epileptic brain.\n\nClinical practices, which use pHFOs to determine ictal-genic areas in the brain, depend on proper classification of pathological high frequency oscillations. We found that combining frequency and slow envelope amplitude (interictal spike in epilepsy, sharp wave in physiological events) of high-frequency oscillations facilitated separation of two distinct event types in animals with epilepsy. Similar classification approaches have been successfully implemented in human epilepsy patients (Nonoda et al., 2016), and others have proposed that the association between high-frequency oscillations and concurrent interictal spikes is indicative that the oscillations are pathological (Schevon et al., 2009). However, we are the first to show that such waveform-based classification could separate events recorded at the same electrode. Interestingly, we found that pHFOs occurred during periods of active exploration characterized by robust theta oscillations. We therefore propose that brain state dependence could be added as an additional criterion for classification of pathological oscillations in hippocampus in epilepsy. Contrary to our result, there are reports that fast oscillations in epilepsy are more rare during awake and REM sleep states and instead occur predominantly during non-REM sleep (Bagshaw et al., 2009; Frauscher et al., 2015). However, it is important to consider that if physiological ripples were not properly separated and removed from the analysis; fast oscillations would appear to be most frequent during non-REM sleep compared to other brain states because of the prevalence of ripple-like events during this brain state (Figure 3). Consistent with our results of the occurrence of pHFOs irrespective of brain state, one study in human patients found that pHFOs can occur during theta states (REM sleep), but only when recording in the ictal onset zone (Sakuraba et al., 2016). Therefore, it is possible that only pHFOs occur independent of brain state in ictal-genic networks, underscoring the potential for using brain state dependence to improve classification.\n\nIt was previously unclear whether pathological and physiological ripple events could coincide in the same seizure-genic network. Modeling has suggested that the same network of neurons would be able to flexibly transition between activity modes that are either lower frequency and therefore normal and higher frequency and therefore pathological (Fink et al., 2015). Here, we confirmed that both pHFO and ripple-like events can co-occur in memory circuits. In support of computational models, we observed a small number of CA1 principal cells that participated in both event types (28%). However, the activity of the majority of CA1 neurons were modulated by only one event type or the other. This segregation suggests that tracking single-unit activity could improve separation of oscillation types in epilepsy, but more importantly motivates future experiments aimed at more selective therapeutic interventions designed to target pathological sub-networks in the hippocampus.\n\nTracking large numbers of single-units across pHFOs and ripple-like events in behaving animals not only allowed for the identification of additional criteria to better classify pathological and physiological high-frequency activity, but also provided more precise insights into the general and immediate effects pathological oscillations have on hippocampal circuits. The idea that interictal spikes (and co-occurring pHFOs) would disrupt memory processing is widespread (Holmes and Lenck-Santini, 2006). Most studies have found that interictal events disrupt memory consolidation processes, as interictal spikes have negative impacts when they occur during retrieval versus encoding phases of memory tasks (Kleen et al., 2010; Kleen et al., 2013). Furthermore, during sleep, interictal spikes inappropriately initiate spindle activity in cortex, and therefore disrupt memory consolidation processes that engage cortical areas (Gelinas et al., 2016). Moreover, a recent study uncovered a cellular mechanism of the perturbed dynamics during CA1 high-frequency oscillations in epilepsy, involving improper inhibition resulting in non-specific recruitment of CA1 neurons during fast ripples (Valero et al., 2017). In their study they exclude sessions that had ongoing interictal spikes, whereas in our study, we define pHFOs as those associated with large amplitude envelopes (i.e. interictal spikes), and it is unclear whether the cellular dynamics they report during fast ripple would be similar to those during interictal spike associated pHFO. A better comparison between our two data sets would be made between our ripple-like events and their fast ripples, although in our hands ripple-like events were spectrally more similar to control than their fast-ripples, perhaps because of differences in time-points of recordings. Importantly, we report fewer CA1 neurons are active during ripple-like events compared to control, so in both studies high-frequency oscillations that are not associated with interictal spikes have abnormal dynamics, which could negatively influence memory consolidation.\n\nGiven that most studies of interictal activity focus on the effect on consolidation processes, which occur during sleep, our finding that pHFOs occur during active exploration are provocative when considering the effects on memory encoding. We are the first to record from large cell populations during pHFOs while animals are freely exploring, which allowed us to ascertain whether networks generating awake-pHFOs would have specific deficits with regard to place coding. In line with previous reports, we confirmed that place coding is generally disrupted in animals with temporal lobe epilepsy (Lenck-Santini and Holmes, 2008; Liu et al., 2003). In addition to this general change in place field size, we observed that the place code was generally more \u2018sparse\u2019, both during encoding and during consolidation periods. During foraging epochs (encoding), fewer neurons had place fields, and in subsequent resting periods (consolidation), fewer neurons were active during ripple-like oscillations compared to control animals. A reduction in the place-related activity of CA1 neurons in a rat model of epilepsy has been reported previously (Liu et al., 2003), but we are the first to observe that place field networks are also more sparsely activated during behavior as well as during ripple-like events in rest. The reduced number of neurons with place-related as well as memory-related activity may exacerbate the consequence of the reduced spatial precision of the remaining active neurons. It is widely believed that neural networks can overcome high variability in individual neurons by implementing population coding schemes (Abbott and Dayan, 1999). Conversely, as individual neurons become more variable, the size of the population required for optimal decoding increases (Yarrow and Seri\u00e8s, 2015). For place coding in temporal lobe epilepsy \u2013 individual place cells become more variable, and the population size encoding animal position is reduced, which would collectively deteriorate spatial information coding in cell assembles. Moreover, the reduced number of neurons participating in ripple events would also worsen the efficacy of memory consolidation and readout. Therefore, the association of pHFOs with a higher network sparsity and a decrease in information coding serves as potential mechanisms for memory impairment in epilepsy.\n\nOur findings also suggest that pHFOs have an immediate impact on an already compromised hippocampal network. Despite most studies focusing on interictal events during consolidation, a few studies have shown that interictal spikes can impact perception at the moment that the spikes occur (Shewmon and Erwin, 1988a; Shewmon and Erwin, 1988b; Shewmon and Erwin, 1988c; Shewmon and Erwin, 1989). Our data support the possibility that pHFOs associated with interictal spikes occurring during wakefulness could also confer immediate negative effects on the place code. We observed that pHFOs occur at random locations in environments and modulate a subset of cells that should otherwise not be active at those locations. Such aberrant recruitment could influence the formation of neuronal sequences that are established during exploration and thus compromise memory-guided behavior and navigation. A potential further disruption in neural computations could also be related to the observation that pHFOs have an immediate effect on hippocampal theta power. Theta timing and the organization of hippocampal phase precession has been shown to be generally impaired in temporal lobe epilepsy (Lenck-Santini and Holmes, 2008). We show that unlike ripple-like oscillations, pHFOs occur during theta states in behavior when hippocampal sequences are established. In immediate response to the pHFO, we observed a sustained suppression in hippocampal theta despite a lack of change in ongoing behavior and running speed. During this period of time, spatial navigation would not be accompanied by the standard spatial encoding schemes that have been described in the CA1 network during spatial exploration, which are dependent on the local theta rhythm. A lack of hippocampal theta has previously been shown to be associated with a severe reduction in hippocampal-dependent memory and pathfinding (Chrobak et al., 1989; Mizumori et al., 1989; Wang et al., 2015). It should be noted, however, that our data suggests that immediate effects of pHFO are relatively subtle \u2013 few neurons are active during them and when they occur during exploration, theta suppression is short lived. Therefore, longitudinal studies to address the long-term effects of pHFO activity on hippocampal network activity are essential to motivate whether early stage intervention of pHFO activity could have a positive impact on preserving healthy levels of network sparsity and spatial coding. For example, such studies would reveal whether neuronal activation during pHFO becomes sparse over time as part of a compensatory mechanism. Furthermore, it remains to be explored how the acute effects of pathological activity differs with distance from the epicenter of epileptic activity, a problem better addressed by simultaneous recordings of cell ensembles across multiple brain regions including hippocampus.\n\nGiven the negative effects of epilepsy on cognition, it is of interest that ripple-like oscillations persist in epileptic networks even though they are associated with a smaller proportion of participating cells, suggesting remnants of a healthy network. Furthermore, ripple-like oscillations engage unrelated neurons from those active during pHFOs, which suggests that the event types are supported by distinct network mechanisms. Future research is needed to determine whether neurons participating in the two event types correspond to different classes of CA1 pyramidal cells, as there is heterogeneity within CA1 and certain classes are more likely to be active during normal ripples (Cembrowski et al., 2016; Ciocchi et al., 2015; Dong et al., 2009; Lee et al., 2014; Valero et al., 2015). Nonetheless, due to the non-overlapping populations of CA1 cells recruited by each event in the same network, the development of selective manipulations that target specific types of pathological activity are possible. Such experiments could directly test the causal role of observed changes in network function for memory comorbidities in epilepsy and have the potential to lead to a reduction in seizures along with a recovery in memory.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background</td>\n      <td>Wistar rats; Crl:WI</td>\n      <td>Charles River Labs</td>\n      <td>Strain Code: 003; RRID:RGD_13508588</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Kainic acid; kainate</td>\n      <td>Tocris</td>\n      <td>Cat # 0222</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Isoflurane</td>\n      <td>MWI</td>\n      <td>Cat #: NDC 13985-528-60</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Buprenorphine</td>\n      <td>MWI</td>\n      <td>Cat #: 29308</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Chloroplatinic acid for platinum plating</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat #: 206083; CAS 18497-13-7</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium pentobarital</td>\n      <td>MWI</td>\n      <td>Cat #: 15199</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Formaldehyde</td>\n      <td>EMD</td>\n      <td>Cat #: FX-0415\u20134; CAS 50-00-0</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cresyl violet</td>\n      <td>EMD</td>\n      <td>Cat #: M-19012; CAS 10510-54-0</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Matlab v2015b</td>\n      <td>Mathworks</td>\n      <td>MATLAB, RRID:SCR_001622</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MClust</td>\n      <td>AD Redish</td>\n      <td>http://redishlab.neuroscience.umn.edu/MClust/MClust.html</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chronux</td>\n      <td>Partha Mitra</td>\n      <td>http://chronux.org/</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Hyperdrive</td>\n      <td>Custom built; Designed by B McNaughton</td>\n      <td>US Patent: US5928143 A</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Platinum- Iridium tetrode wire</td>\n      <td>California fine wire company</td>\n      <td>Cat #: CFW0011873</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Freezing microtome</td>\n      <td>Leica</td>\n      <td>Model: SM 2000R</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Digital Neuralynx recording system</td>\n      <td>Neuralynx</td>\n      <td>Model: Digital Lynx SX</td>\n    </tr>\n  </tbody>\n</table>\n\n### Subjects\n\nAll experimental procedures were performed as approved by the Institutional Animal Care and Use Committee at the University of California, San Diego and according to National Institutes of Health and institutional guidelines. Epilepsy was induced in male Wistar rats (40 days of age, Charles River, CA) using a repeated low-dose kainate chronic model of temporal lobe epilepsy (Hellier et al., 1998). Rats were treated with kainic acid (5 mg/kg, i.p.,\u00a0Tocris) each hour until the onset of status epilepticus, which was defined as\u00a0>10 motor seizures per hour of class IV or V on the Racine scale (Racine, 1972). After the seizure induction protocol, the rats were housed individually and maintained on a reverse 12 hr light/12 hr dark cycle. To confirm whether rats had developed chronic spontaneous seizures that define epilepsy, the animals were video-monitored for 4 hr per day beginning at 2 months after kainic acid treatment. Once two or more motor seizures of class III or greater on the Racine scale were observed, the animal was considered epileptic. Four epileptic rats (6\u201312 months old) and four control rats that were not injected with kainate (6\u201312 months old) were used for electrophysiological experiments. Four animals per condition was chosen to match the standard of the field of in vivo electrophysiology. Despite obtaining large n from individual animals (corresponding to various electrophysiological measures), it is important to record from several animals in each condition to account for between animal variability.\n\n### Surgery and electrode placement\n\nRats were anesthetized with isoflurane (2% to 2.5% in O2) and an electrode assembly that consisted of 14 independently movable tetrodes was implanted above the right hippocampus (AP, 4.1 mm posterior to bregma; ML, 3.0 mm) and fixed to the skull using stainless steel screws and dental cement. Two screws were used as animal ground and were implanted to touch the surface of cortex, anterior and lateral to bregma. Tetrodes were prepared by twisting four insulated platinum wires together (diameter\u00a0=\u00a00.017 mm, California Fine Wire Company). Leads were plated with platinum prior to surgery to obtain stable impedances near 200 M\u03a9. Two tetrodes had all four leads shorted with one of the two left in the cortex to record a differential reference signal, while the other was advanced to stratum radiatum to record local field potentials\u00a0(LFP). The other 12 tetrodes were positioned in the CA1 cell layer to record single units.\n\n### Cell sorting and cell-tracking\n\nSingle units were manually sorted using MClust (MClust 3.5, written by A. David Redish; http://redishlab.neuroscience.umn.edu/MClust/MClust.html) adapted to aid in the tracking of cell identity over extended periods of time (Mankin et al., 2012). Clusters that persisted in the same region of parameter space throughout a behavioral session were accepted for analysis, such that the action potentials of a given neuron included in the analysis did not change shape, were distinct from noise signals, and remained inside the cluster boundary. The cluster was required to be clearly defined in both the first and last rest period of the recording session, but was not required to be present in individual foraging epochs, as many CA1 single units are silent within a particular environment. Units were not tracked across days. In cases in which several sessions were recorded for individual animals, units were only analyzed if the tetrode did not have units on previous recording days \u2013 in other words, units in this study are not double counted. In control animals (n\u00a0=\u00a04), for each animal, units were isolated in one recording session. In epileptic animals (n\u00a0=\u00a04), units were isolated in three, five, two, and three recording sessions.\n\n### Recordings and data acquisition\n\nSingle units and LFP were recorded during restful and running behavior. All recording sessions occurred during the animal\u2019s dark cycle (between 7 am \u2013 7 pm). Animals were food deprived to 85% of their baseline weight and trained to forage for randomly scattered food reward (chocolate cereal crumbs) in open arenas. Open arenas were enclosed by either circular walls (diameter\u00a0=\u00a01.0 m, height\u00a0=\u00a00.5 m) or square walls (0.8 \u00d7 0.8 m, height\u00a0=\u00a00.5 m). Behavioral sessions consisted of two to four 10 min foraging epochs preceded and followed by resting periods. The rats were also allowed to rest in a holding box for 5 min between foraging epochs. For position tracking, light emitting diodes on the head-mounted preamplifier were tracked at 30 Hz by processing video images.\n\n### Detection of high-frequency oscillations\n\nAnalysis was performed on LFP recordings from the CA1 cell layer in control and chronically epileptic rats. Recordings were band-pass filtered between 140 and 800 Hz, and the root mean square (RMS) was calculated using a five point (2.5 ms) sliding window. The filter used was an Equiripple Bandpass Filter designed using the FIRPM function in the Signal Processing Toolbox of Matlab. The filter was designed to have: first stopband\u00a0=\u00a00\u2013140 Hz, amplitude 0; passband\u00a0=\u00a0150\u2013800 Hz, amplitude 1; second stopband\u00a0=\u00a0810 Hz \u2013 Nyquist Frequency, amplitude 0. The first and second stopband attenuation were set to 5.6 \u00d7 10\u22124. The passband attenuation was set to 2.8 \u00d7 10\u22122. These led to error minimization weights of 51.2 and 1, respectively. Putative high-frequency events were detected as periods when the RMS signal deviated from the mean RMS by greater than 3.5 x the standard deviation of the RMS. Putative high frequency events within 6 ms of each other were merged. Events were required to have at least five peaks (cycles of oscillation) that each had amplitudes greater than 3 x the standard deviation of the rectified band-passed LFP signal. After initial detection, 20 randomly selected events from each recording session were visually inspected by the experimenter to determine whether detected high-frequency events were not artifacts (also see Figure 1\u2014figure supplement 2 for further validation of detection). Furthermore, to confirm that the high-frequency events were not misidentified fast gamma rhythm or noise artifact, the FFT for each event was calculated, and only events for which the peak power for frequencies greater than 150 Hz were larger than the peak power from 75 to 125 Hz were included for further analysis (see Figure 1\u2014figure supplement 1).\n\n### Classification of high-frequency oscillations in animals with chronic epilepsy\n\nPeak slow wave amplitude and peak frequency were calculated for each event. To calculate the slow wave amplitude, 500 ms segments of data centered on the high-frequency event were band-pass filtered between 0.2 Hz and 40 Hz, and the maximum absolute amplitude of the filtered data was taken. To calculate the peak frequency, the FFT of the data segment was calculated over the frequency range of 40 Hz to 600 Hz. The peak in power for frequencies greater than 150 Hz was taken as the peak frequency. Peak slow wave amplitude and peak frequency were each normalized to the maximum across the entire data set, and the resulting data were clustered into two populations using a k-means algorithm. For clustering, initial starting centroids were given by user input based on by-eye estimation of the center of masses (highest density of points) in the feature plot. Clustered distributions were then compared to the distribution recorded from control animals using ROC analysis.\n\n### ROC discrimination\n\nTo compare the degree of similarity of oscillation shape parameters between events recorded in animals with epilepsy compared to events recorded in control animals we performed a discrimination using receiver operating characteristics analysis (ROC). Comparisons were made between (1) maximum frequency of events in epilepsy cluster one compared to events in control, (2) maximum frequency of events in epilepsy cluster two compared to events in control, (3) envelope amplitude of events in epilepsy cluster one compared to events in control, and (4) envelope amplitude of events in epilepsy cluster two compared to events in control. The true positive rate (ranging from 0 to 1; rate of correct classification of data from distribution A as belonging to distribution A) and false positive rate (ranging from 0 to 1; rate of misclassification of data from distribution B as belonging to distribution A) is plotted for ranges of criteria thresholds (across values of (1) frequency or (2) envelope amplitude). As an example, imagine sliding a vertical line (criterion threshold) from left to right along the x axis of the histograms of the two distributions being compared (see Figure 2C and E). For each x position of the line, consider the probability of data to the right of the line to come from one distribution (true positive rate) as opposed to a second distribution. When distributions have no overlap, all thresholds between the two distributions would yield true positive rates equal to one. Distributions with complete overlap would yield true positive rates equal to 0.5 for all criteria thresholds because it would be equally likely for data to belong to either distribution along the entire range of x. For each ROC, the area under the curve (a.u.c.) was used to evaluate discrimination quality \u2013 values greater than 0.8 are considered as acceptable discrimination. Analyses were performed in Matlab (2015b) using the built in functions \u2018patternnet\u2019 and \u2018roc\u2019.\n\n### Analysis of theta oscillations\n\nFor each detected pHFO that occurred when animals were running at least 5 cm/s or faster, four seconds of LFP signal (recorded in stratum radiatum) that were centered on the pHFO event were taken. The large voltage spike (the interictal spike) associated with the pHFO was removed by setting the 200 ms at the center of the signal to the mean of the entire 10 min LFP recording. The spike was removed to avoid distortion of time frequency plots by the large voltage change associated with the interictal spike. Time frequency plots of the four seconds were generated using Morlet wavelets over a frequency range of 4\u201320 Hz. Mean power over the frequency range of 7\u201311 Hz was calculated for three time windows: \u2018baseline\u2019 defined as the 1 s between 2.0\u00a0and\u00a01.0 s before the pHFO, \u2018before\u2019 defined as the 500 ms between 0.6\u00a0and\u00a00.1 s immediately before the pHFO, and \u2018after\u2019 defined as the 500 ms between 0.1\u00a0and\u00a00.6 s immediately after the pHFO. To determine the phase that pHFO occurred, the two seconds of LFP data (recorded from stratum radiatum) previous to the time of the pHFO event were taken for further analysis. A threshold was determined by multiplying the standard deviation over the first second (std) by 5, and only interictal spikes that exceeded the threshold were included in analyses (excluded 45 events of the 231). To determine the phase of theta rhythm when the pHFO/interictal spike was generated, the onset of the interictal spike (envelope) was determined with user input to make sure that the calculated onset was not early (which would cut out partial theta cycles) or late (which would add large voltage deflections at the end of the signal and distort filtering). The signal was truncated at the onset of the interictal spike; therefore, the theta phase associated with the last point in the truncated segment was our estimation of the theta phase at the time of pHFO initiation. To determine the phase at the end of the signal we determined the theta phase of the whole signal by a Hilbert transform on the band-pass filtered LFP using both a zero-phase and a causal butterworth filter (4\u201312 Hz). The causal filter can be applied until the end of the signal just before the pHFO, because it only uses information from past sampling points, but provides incorrect phase estimates that include phase distortions introduced by the asymmetry of the filter kernel. Conversely, the symmetric zero-phase filter provides correct phases but cannot be applied until the end of the signal because it includes samples perturbed by the pHFO. We used the unperturbed time interval to estimate the phase difference between causal and zero-phase filter and used this phase offset to linearly extrapolate the theta phase at the pHFO over the last six cycles from the causally filtered trace.\n\n### Neuron modulation by high-frequency oscillations\n\nOnly neurons that were recorded during a period in which at least 10 high-frequency oscillations occurred were included in the analysis of neuron modulation by HFO. Spike times that fell within 1 s of each high-frequency oscillation (500 ms before, 500 ms after) were binned into 20 ms bins. The number of spikes that occurred within each bin was divided by 20 ms to calculate a binned firing rate vector. For statistical analysis, the binned firing rate vector associated with each high-frequency oscillation was treated as an independent observation. Paired comparisons between baseline rates (mean from 500 ms to 400 ms before HFO) and \u2018during HFO rates\u2019 (mean of 100 ms centered on the HFO) were done with a Wilcoxon Signed Rank Test, and neurons that had p-values less than 0.05 were considered to be significantly modulated by the high-frequency event.\n\n### Neuronal firing rate map\n\nFor each neuron, we constructed firing rate maps for each behavioral session by summing the total number of spikes that occurred in a given location bin (5 \u00d7 5 cm), dividing by the total amount of time that the rat occupied the bin, and smoothing with a 5 \u00d7 5 bin Gaussian filter with a standard deviation of approximately one bin:\n\n[0.0025 0.0125 0.0200 0.0125 0.0025;\n\n0.0125 0.0625 0.1000 0.0625 0.0125;\n\n0.0200 0.1000 0.1600 0.1000 0.0200;\n\n0.0125 0.0625 0.1000 0.0625 0.0125;\n\n0.0025 0.0125 0.0200 0.0125 0.0025].\n\nBins that were never within a distance of less than 2.5 cm from the tracked path or with total occupancy of less than 150 ms were regarded as unvisited and were not included in the rate map.\n\n### Proportion of active neurons\n\nThe total number of single units was determined as the number that were tracked across resting and foraging behavior. All included single units were active during the first and last resting period (validating their stability), but not all single units had high firing rates during foraging epochs. Thus, we determine the proportion of active neurons as the number of neurons that had at least one neuronal firing rate map with a peak\u00a0>2 Hz divided by the total number of single units recorded.\n\n### Spatial information score\n\nSpatial information was calculated for each neuron for each foraging session in which the neuron had a peak firing rate of at least 2 Hz in at least one spatial bin. We calculated the spatial information per spike for each firing rate map as: $I=\\sumiP_{i}\\frac{R_{i}}{R}log_{2}\\frac{R_{i}}{R},$\u00a0where i indexes the spatial bins, Pi is the probability of occupancy in each bin, Ri is the mean firing rate in each bin, and R is the mean firing rate across the spatial map (Skaggs et al., 1993).\n\n### Within session spatial correlation\n\nTo estimate consistency of spatial firing, a within session spatial correlation was calculated for each neuron for each foraging session in which the neuron had a peak firing rate of at least 2 Hz in at least one spatial bin. The foraging session was split in half and rate maps were calculated for each half of the recording (~5 min). We calculated the spatial correlation between the two rate maps using Pearson\u2019s correlation between the firing rates of bins at corresponding locations. Any bins that were unvisited in either map were excluded from the calculation.\n\n### Spatial sparsity\n\nSpatial sparsity was calculated for each neuron for each foraging session in which the neuron had a peak firing rate of at least 2 Hz in at least one spatial bin. We calculated the spatial sparsity as $(\\sumiP_{i}R_{i})^{2}/\\sumiP_{i}R_{i}^{2},$\u00a0where i indexes the spatial bins, Pi is the probability of occupancy in each bin, Ri is the mean firing rate in each bin.\n\n### Statistics\n\nFor each statistical comparison, normality was assessed with Lilliefors test and either parametric or non-parametric tests were chosen accordingly. Multiple comparisons were made with Tukey Kramer post-hoc tests. Throughout the text values are presented as median and inter-quartile interval unless otherwise noted.\n\n### Data and software availability\n\nMClust software is freely available from AD Redish at:\u00a0http://redishlab.neuroscience.umn.edu/MClust/MClust.html. Chronux software is freely available at: http://chronux.org/. The processed data (single unit and LFP) and HFO detection analysis code that support the findings of this study are available on Dryad Digital Repository:\u00a0https://doi.org/10.5061/dryad.c89124p.\n",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "1b1ba78f-ebc0-4960-8477-aff94fe67384",
+      "submission_id": "5a8d775b-94ee-42f2-8c7c-745932538b17",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- John Huguenard, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.42148.024](https://doi.org/10.7554/eLife.42148.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The impact of pathological high frequency oscillations on hippocampal network activity in rats with chronic epilepsy\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Laura Colgin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript from Ewell and Colleagues investigates normal and pathological high frequency oscillations (ripples vs. pHFOs, respectively) and their network effect on kainic acid rat model of temporal lobe epilepsy. The scope of the manuscript is important since it focuses on an electrophysiological signal (pHFOs) that is potentially considered as a biomarker of the epileptogenic zone.\n\nAuthors show several results but the most novel ones are that 1) PHFos can be observed during locomotion, which is never the case with normal ripples; 2) PHFos during locomotion decrease theta rhythm amplitude; 3) there is little overlap between neurons activated by pHFO and those activated during ripples; 4) PHFO occurrence decrease spatial information of hippocampal neurons that are in pHFO modulated, as well as instability and blurring of place fields. There is also some mechanistic investigation included, e.g. demonstration that interictal discharges/pHFOs disrupt hippocampal theta oscillations, and evidence that only some CA1 neurons are \"hijacked\" to participate in pHFOs.\n\nThe manuscript is clearly written and contains a trove of results that altogether make a very interesting paper. The methods and experimental design are sound, so are the interpretation of results. There are however a few points that deserve attention.\n\nEssential revisions:\n\n1) The authors must clearly highlight novel findings compared to previous studies, particularly from Dr. Menendez de la Prida's laboratory (Valero et al., 2017) on HFOs and ripple relationships and their contribution to cognition. This should be clearly stated in the Discussion.\n\n2) pHFOs and interictal spikes are reported to often co-occur. This is well known (Jacobs et al., 2008; Salami et al., 2014 for example) and raises a specific point. To grasp the significance of the current results, it is important to know what the relative contribution of pHFOS vs. IS here. By themselves, IS have been found to alter ongoing oscillations, information processing and performance. Since pHFOs and IS often co-occur, it is possible that the effects reported on place cells and EEG are just due to the spikes and not the pHFO. For instance, it is not clear whether the disruption of theta activity can be observed when pHFOs occur without interictal spikes (see Kleen et al., 2010, 2013; Chauviere et al., 2009; Fu et al., 2018).\n\n3) Related to this, HFOs can easily be confused with the filtered signal from interictal spikes. Indeed, interictal spike waveforms can be steep, leading to ripples in all frequency bands, including those that we focus on while detecting HFOs (see Benar et al., 2010). Restricting analysis to events with 6 cycles may not be sufficient if the filter used leads to ringing artifacts. The authors should describe the precautions taken to rule out filter artifacts. Please provide details of the filter used (type, order, frequency/amplitude response etc.), as ripple events could result from filtering population action potentials, and pHFOs could be a result of high-pass filtering a sharp wave. The authors allude to this issue in the first paragraph of the Discussion, but need to ensure this is not the case. Supplementary figures are helpful for this since they show unfiltered data, but authors need to comment on this in the main text.\n\n4) A large chunk of the paper is devoted to the association between neural firing and pHFOs, which appear to be a proxy for interictal discharges in this model. The observation of sparse neuronal activity during high amplitude very high frequency events (up to 700 Hz, well into the range of multiunit activity) seems self-contradictory, and this needs to be resolved. There are some obvious possible explanations. First, extensive gliosis and cell death are well known to occur with the kainate model. Second, it is likely that the pHFOs are being recorded at a distance from the origination of the epileptiform activity. Finally, there is the possibility of filter artifact causing spurious pHFO detection (see point 3, above).\n\n5) How did the authors guarantee that the same neurons were recorded across sessions? Changes in neuronal waveshape during epileptiform activity and over time have been reported in continuous recordings. Was there an analysis of waveshape drift that would support the contention that a given neuron was identified correctly across sessions? Also, please provide statistics for number of sessions of recording and total number of days from first to last recording per animal.\n\n6) Please describe and appropriately cite how wake/sleep state is determined. Also, it is incorrect to state that pHFOs \"do not occur during awake and REM sleep states.\" They are simply less common in some (not all) patients, and likely depend on the temporal pattern of interictal discharges which are often (not always) increased during sleep. Some of the papers cited by the authors provide data on pHFOs during wakefulness, as do several studies employing long-term, round the clock automated detection.\n\n7) The authors should report test statistics, degrees of freedom, and actual p-values for statistical tests. It's not clear that their across-animal statistics were adequately powered. Some evidence of sufficient power would greatly support the early claims. Also, in some cases statistics are presented far removed from the accompanying claim, which is confusing to the reader. When dealing with multiple groups and ANOVA, could the authors provide the global statistical effect before comparing individual groups (CTR vs. ripple like, CTRL vs. pHFO etc.). Did authors adjust for multiple comparisons?\n\n8) The conclusion that different neuronal populations could be selectively targeted ventures too far into speculation, as the authors did not show that the ripple vs. pHFO neurons came from different classes. This section should be removed or limited to a brief comment. Similarly, it is too much of a reach to propose that suppressing pHFOs would improve cognition, as the pHFOs are likely a manifestation of an interictal discharge and may also reflect other epilepsy-related abnormalities that contribute independently to the observed effects.\n\n9) The supplementary information shows many individual examples from each recorded animal, and this inclusion extensive raw data is quite laudable. This could be improved by showing in panels A and B of Figure 2\u2014figure supplement 1 single examples of each of the ripples, ripple-like events, and pHFOs.\n\n10) It is striking that pHFOs occur all the time, and yet have relatively modest effects on behavior, and that they don't appear to \"hijack\" normal circuits in any reliable way. This might suggest that epileptic networks compensate in many ways, for example, to decrease activity of neurons contributing to pHFOs, or for networks to learn to develop firewalls serving to suppress the jumbled signal arising out of pathological activity. Such possibilities, while speculative, are clearly important questions for future research and should be further developed in the Discussion.\n",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "05c62405-eb45-45c2-93c4-0864c6145610",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C1",
+      "claim": "In epilepsy, brain networks generate pathological high-frequency oscillations (pHFOs) during interictal periods.",
+      "claim_type": "EXPLICIT",
+      "source": "In epilepsy, brain networks generate pathological high-frequency oscillations (pHFOs) during interictal periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement in the abstract that is supported by the study's findings and established literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "9cddd96f-2b46-4156-a018-0db9469d6e52",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C2",
+      "claim": "In epileptic animals, two types of co-occurring fast oscillations were observed, which could be classified as 'ripple-like' or 'pHFO'.",
+      "claim_type": "EXPLICIT",
+      "source": "In epileptic animals, we observed two types of co-occurring fast oscillations, which by comparison to control animals we could classify as 'ripple-like' or 'pHFO'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding, which is supported by data presented in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "4db75525-5f12-46db-8100-7b985bd0063d",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C3",
+      "claim": "pHFOs occurred irrespective of brain state.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, pHFO occurred irrespective of brain state, were associated with interictal spikes, engaged distinct subnetworks of principal neurons compared to ripple-like events, increased the sparsity of network activity, and initiated both general and immediate disruptions in spatial information coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is explicitly stated in the abstract and supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "8b934db8-0f14-45ee-b930-d67029595a80",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C4",
+      "claim": "pHFOs were associated with interictal spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, pHFO occurred irrespective of brain state, were associated with interictal spikes, engaged distinct subnetworks of principal neurons compared to ripple-like events, increased the sparsity of network activity, and initiated both general and immediate disruptions in spatial information coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract and demonstrated in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "9d0cce9f-900f-4d50-8ef3-16f3a4db667e",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C5",
+      "claim": "pHFOs engaged distinct subnetworks of principal neurons compared to ripple-like events.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, pHFO occurred irrespective of brain state, were associated with interictal spikes, engaged distinct subnetworks of principal neurons compared to ripple-like events, increased the sparsity of network activity, and initiated both general and immediate disruptions in spatial information coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by single-unit recording data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "a2681cdc-4d67-4284-82cc-da76b47a65c4",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C6",
+      "claim": "pHFOs increased the sparsity of network activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, pHFO occurred irrespective of brain state, were associated with interictal spikes, engaged distinct subnetworks of principal neurons compared to ripple-like events, increased the sparsity of network activity, and initiated both general and immediate disruptions in spatial information coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract and supported by data in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "5b13e58a-969b-4511-a373-61150a2a4478",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C7",
+      "claim": "pHFOs initiated both general and immediate disruptions in spatial information coding.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, pHFO occurred irrespective of brain state, were associated with interictal spikes, engaged distinct subnetworks of principal neurons compared to ripple-like events, increased the sparsity of network activity, and initiated both general and immediate disruptions in spatial information coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by data in Figures 6 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "63c9a5c1-6843-42db-a10f-840c1975d1f0",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C8",
+      "claim": "Interictal pHFOs are used as a biomarker for the location of seizure generating zones in the clinical setting.",
+      "claim_type": "EXPLICIT",
+      "source": "In the clinical setting, interictal pHFOs are used as a biomarker for the location of seizure generating zones (Worrell et al., 2004) and are utilized by neurosurgeons to select which tissue to resect in surgical treatments of refractory epilepsy (Haegelen et al., 2013; Frauscher et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "29228424-7319-4298-8306-a46598a310da",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C9",
+      "claim": "Ripples overlap in frequency range with pHFOs, which presents a challenge for algorithms to distinguish the two types of events.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripples overlap in frequency range with pHFOs, which presents a challenge for algorithms to distinguish the two types of events (Engel et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and is a known challenge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "487bad1c-4296-4928-911c-5738abfab3d2",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C10",
+      "claim": "Ripples occur predominantly during sleep and immobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripples occur predominantly during sleep and immobility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ripple oscillations in the hippocampus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "6bdbb4ab-1629-4bac-9fec-bd6e1365472f",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C11",
+      "claim": "The neuronal activation during ripples reflects a compressed version of the sequential activation of neurons during wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the neuronal activation during ripples reflects a compressed version of the sequential activation of neurons during wakefulness (Wilson and McNaughton, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "ee1318c0-984c-4d79-966f-b8d24b7e94cc",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C12",
+      "claim": "In control animals, the peak amplitudes of the high-passed ripple oscillations were similar in amplitude across an entire recording session.",
+      "claim_type": "EXPLICIT",
+      "source": "In control animals, the peak amplitudes of the high-passed ripple oscillations were similar in amplitude across an entire recording session and therefore recording sessions were associated with small coefficients of variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "f8707b44-c315-4757-bade-5f3aefd5e161",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C13",
+      "claim": "In animals with epilepsy, the amplitudes of high-frequency oscillations within recording sessions varied more substantially than in control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in animals with epilepsy the amplitudes of high-frequency oscillations within recording sessions varied more substantially (ctrl, n = 4; mean \u00b1 SEM, 0.3 \u00b1 0.01; epileptic, n = 12; mean \u00b1 SEM, 0.5 \u00b1 0.05) (Unpaired t-test, p = 0.04, tstat = \u22122.2, d.f. = 14) (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is explicitly stated with statistical support and reference to Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "f4dba15f-ec3d-4c7d-bbb5-683a338c4cb9",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C14",
+      "claim": "The coefficient of variation for peak voltage amplitudes was significantly higher in epileptic animals (0.5 \u00b1 0.05) compared to control animals (0.3 \u00b1 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in animals with epilepsy the amplitudes of high-frequency oscillations within recording sessions varied more substantially (ctrl, n = 4; mean \u00b1 SEM, 0.3 \u00b1 0.01; epileptic, n = 12; mean \u00b1 SEM, 0.5 \u00b1 0.05) (Unpaired t-test, p = 0.04, tstat = \u22122.2, d.f. = 14) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison with p-value and reference to Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "a410dbbe-0c7d-4a43-9359-501ff0dfbfa9",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C15",
+      "claim": "Fast oscillations in epileptic networks can co-occur with interictal spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that fast oscillations in epileptic networks can co-occur with interictal spikes (Jacobs et al., 2008; Salami et al., 2014), leading to the question whether heterogeneity in fast oscillations could be explained by co-occurrence with interictal spikes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "fb3a7fef-d01d-4733-9dbd-42ec657b11ec",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C16",
+      "claim": "Events from control animals ('ripples') clustered into one area in the envelope amplitude vs. peak frequency plot.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the relationship between the two shape parameters for each event revealed that events from control animals ('ripples') clustered into one area and events from animals with epilepsy indeed clustered into two areas (Figure 2A & B, Figure 2\u2014figure supplement 1D), indicating the presence of two types of high-frequency oscillations in the CA1 region in our animal model of epilepsy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "11fbe553-c940-4f29-b8f1-fadd819d0d62",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C17",
+      "claim": "Events from animals with epilepsy clustered into two areas in the envelope amplitude vs. peak frequency plot.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the relationship between the two shape parameters for each event revealed that events from control animals ('ripples') clustered into one area and events from animals with epilepsy indeed clustered into two areas (Figure 2A & B, Figure 2\u2014figure supplement 1D), indicating the presence of two types of high-frequency oscillations in the CA1 region in our animal model of epilepsy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "31cc3d00-fa55-45b2-afcf-e7dc676242ef",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C18",
+      "claim": "The presence of two clusters of high-frequency oscillations in epileptic animals indicates two types of high-frequency oscillations in the CA1 region.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the relationship between the two shape parameters for each event revealed that events from control animals ('ripples') clustered into one area and events from animals with epilepsy indeed clustered into two areas (Figure 2A & B, Figure 2\u2014figure supplement 1D), indicating the presence of two types of high-frequency oscillations in the CA1 region in our animal model of epilepsy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the clustering data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "b78a0453-14b2-4dfe-81b1-51d61a0d450e",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C19",
+      "claim": "One group of high-frequency oscillations in epileptic animals ('ripple-like') had substantial overlap with control ripples for both peak frequency and envelope amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, one group, which we refer to as 'ripple-like', had substantial overlap with control ripples for both peak frequency and envelope amplitude (Figure 2C & E) (ctrl ripple n = 1414; peak frequency median, 185.8 Hz; inter-quartile range (IQR), 175.8\u2013197.8 Hz; envelope median, 244.9 \u03bcV; IQR, 169.6\u2013380.2 \u03bcV; ripple-like n = 1616; peak frequency median, 184.9 Hz; IQR, 168.7\u2013199.1329 Hz; envelope median 253.8 \u03bcV; IQR, 148.9\u2013377.2 \u03bcV).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical data and reference to Figure 2C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "433dc71c-d1a3-47f8-b4e7-c7fb0d9f3b2d",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C20",
+      "claim": "pHFOs were associated with large amplitude envelopes (interictal spikes) and had minor overlap with control ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "The other group, which we refer to as 'pathological high-frequency oscillations (pHFOs)', were associated with large amplitude envelopes (interictal spikes) and had minor overlap with control ripples (Figure 2C & E) (pHFO n = 923, peak frequency median, 245.9 Hz; IQR, 233.7\u2013264.1 Hz; envelope median, 520.0 \u03bcV; IQR, 407.3\u2013647.4 \u03bcV).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical data and reference to Figure 2C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "b8b4c113-b907-4ebe-9f2e-03e66d3d8f15",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C21",
+      "claim": "Both ripple-like and pHFO groups were present in individual epileptic rats, even in the same recording session.",
+      "claim_type": "EXPLICIT",
+      "source": "Both groups were present in individual epileptic rats, even in the same recording session (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "9cdf948b-f3b8-45c4-8073-883e692bcbe4",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C22",
+      "claim": "A binary classifier was able to distinguish pHFOs from control ripples with high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "A binary classifier was able to distinguish pHFOs from control ripples with high accuracy, as shown by a receiver operator curve (ROC) in the far left quadrant of the ROC plot (Figure 2D & F, red line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2D and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "4579386a-a78c-4bf4-8499-9c16d929631a",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C23",
+      "claim": "The binary classifier was unable to distinguish ripple-like events from control ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the classifier was unable to distinguish ripple-like from control-ripple, as shown by the curve along the identity line that indicates equal numbers of false positive and true positive classifications (Figure 2D &F, blue line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 2D and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "5cea701b-183f-4ef8-96c1-66af36f01c85",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C24",
+      "claim": "Ripple events in control animals preferentially occurred during periods of immobility.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, ripple events in control animals preferentially occurred during periods of immobility \u2013 associated with high slow wave activity and low theta power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and is consistent with established knowledge about ripples.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "b279c6b6-060a-46db-b7e1-c1893460def6",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C25",
+      "claim": "Ripple-like events in epileptic animals retained the same association with immobility as observed in the healthy brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripple-like events in epileptic animals retained the same association with immobility as observed in the healthy brain (Figure 3A) (ctrl ripples n = 691; median speed, 0.8 cm/s; IQR, 0.6\u20131.9 cm/s; ripple-like n = 293; median speed, 0.5 cm/s; IQR, 0.2\u20133.1 cm/s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "8996da10-8a97-4b5d-b76f-0640250b500d",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C26",
+      "claim": "pHFOs occurred over the entire range of running speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pHFOs occurred over the entire range of running speeds (pHFO n = 490; median speed, 4.7 cm/s; IQR, 1.9\u20137.4 cm/s) (p = 5.3\u00d710\u221274, Chi-sq = 337.4, d.f. = 2, Kruskal-Wallis ANOVA followed by Tukey Kramer multiple comparison test with p < 0.05; control ripple compared to ripple-like, n.s.; ctrl compared to pHFO, p < 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "a09b43a3-265e-4849-8ef8-077055e8a04c",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C27",
+      "claim": "The lack of dependence on immobility of pHFOs was not a consequence of gross differences in behavior between epileptic and control rats.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of dependence on immobility of pHFOs was not a consequence of gross differences in behavior between epileptic and control rats, as the two groups ran at similar speeds during foraging periods (ctrl n = 13 10 min foraging periods, median speed 5.6 cm/s; IQR, 5.1\u20136.9 cm/s; epileptic n = 35 10 min foraging periods, median speed 6.4 cm/s; IQR 4.4\u20137.6 cm/s, Wilcoxon Rank Sum test; n.s., p = 0.7, z-value = \u22120.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "06a90f46-0ce2-4fa4-9fd0-626f66e1f63b",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C28",
+      "claim": "LFP recorded in stratum radiatum was characterized by robust theta oscillations leading up to the pHFO.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though running speed was consistent around the time of the pHFO (median speed change from baseline to before the pHFO 0 cm/s; IQR \u22122\u20133 cm/s; from baseline to after the pHFO, 0 cm/s; IQR \u22123\u20133 cm/s), LFP recorded in stratum radiatum was characterized by robust theta oscillations leading up to the pHFO (median power change between baseline and the period immediately preceding the pHFO, 10.9 \u03bcV2; IQR, \u221251.5\u201374.6 \u03bcV2, n.s., p = 0.08, z-value = 1.6, Wilcoxon signed rank test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "0da3f5bd-8cf8-4833-b21e-153c96e47906",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C29",
+      "claim": "Theta oscillations were transiently suppressed for several hundred ms after pHFO events.",
+      "claim_type": "EXPLICIT",
+      "source": "followed by a transient suppression of theta oscillations for several hundred ms after the event (median reduction from baseline, 98.0 \u03bcV2; IQR, 21.3\u2013206.2 \u03bcV2, p = 4.7\u00d710\u221229, z-value = 11.2, Wilcoxon signed rank test) (Figure 3C & D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and reference to Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "c9aa05b3-bc1b-4822-9c9d-13dc5859f2a1",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C30",
+      "claim": "In control animals, most principal neurons were ripple-modulated, increasing their firing rate during ripples (32/35, or 91%).",
+      "claim_type": "EXPLICIT",
+      "source": "In control animals, most principal neurons were ripple-modulated, increasing their firing rate during ripples (32/35, or 91%) (Figure 4C), which is consistent with reports from other rat strains (Csicsvari et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to Figure 4C and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "c29d5acf-87cb-4130-84d9-8b44012b1120",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C31",
+      "claim": "In animals with chronic epilepsy, a smaller proportion of principal cells were modulated by ripple-like events (59/127, or 46%) compared to control animals (91%).",
+      "claim_type": "EXPLICIT",
+      "source": "In striking contrast, in animals with chronic epilepsy, a smaller proportion of principal cells were modulated by ripple-like events (59/127, or 46% compared to 91%, p = 2.1 *10\u22126, chi-sq = 22.5, Chi-square test) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and reference to Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "834fde10-a063-435b-a738-06eb49db97a6",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C32",
+      "claim": "An even sparser activation of neurons was observed during pHFOs, with only 34/153, or 21% participating.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not the case, however, as an even sparser activation of neurons was observed during pHFOs, with only 34/153, or 21% participating (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "f305fd64-be18-4586-8fdb-09e0f02b01ca",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C33",
+      "claim": "Of the 59 neurons that were modulated by at least one type of high-frequency oscillation, most were modulated by only ripple-like events, while smaller subsets were modulated by both or only pHFOs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 59 neurons that were modulated by at least one type of high-frequency oscillation during these recording sessions, most were modulated by only ripple-like events, while smaller subsets were modulated by both or only pHFOs (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "cbe1af2d-529a-4c2f-8eaf-1e00f1f584f4",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C34",
+      "claim": "More than two thirds of modulated neurons were modulated by only one event type (60% by only ripple-like, 12% by only pHFO).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, more than two thirds of modulated neurons were modulated by only one event type (60% by only ripple-like, 12% by only pHFO, Figure 5D), suggesting that unrelated cell ensembles in the CA1 network may support the two distinct types of high-frequency oscillations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "48b14b35-1440-43d1-9f54-769446e1b177",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C35",
+      "claim": "A smaller proportion of neurons was active (neurons with peak rates > 2 Hz) during foraging sessions in animals with epilepsy compared to control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observation that a smaller proportion of neurons was activated during ripple-like events in animals with epilepsy, we also observed a smaller proportion of 'active' neurons (neurons with peak rates > 2 Hz) during foraging sessions in animals with epilepsy (Figure 6C) (73/177 active in animals with epilepsy, compared to 30/35 in control animals, p < 1.5 *10\u22126, chi-sq = 23.1, Chi square test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and reference to Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "01e0c7c9-6ebf-45cc-8b54-52a49b746eb6",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C36",
+      "claim": "Active neurons in animals with epilepsy (peak rates > 2 Hz) had significantly less spatial information compared to active neurons recorded from control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Further contributing to decreased spatial coding, active neurons in animals with epilepsy (peak rates > 2 Hz) had significantly less spatial information compared to active neurons recorded from control animals (epilepsy n = 73; median spatial information, 0.5 bits; IQR, 0.3\u20131.0 bits; ctrl n = 30; median spatial information, 1.7 bits; IQR, 1.0\u20132.5; p = 3.0\u00d710\u22128, z-value = 5.5, Wilcoxon rank sum test) (Figure 6D), consistent with results reported in other models of epilepsy (Liu et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support, reference to Figure 6D, and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "55d2e4e1-5be4-4f9a-9865-1db4ec3be6f8",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C37",
+      "claim": "In 9 out of 11 sessions, pHFOs occurred randomly throughout the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In 9 out of 11 sessions, pHFOs occurred randomly throughout the environment, and thus carried the same amount of spatial information as when pHFO times were shuffled (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "6b584016-05a0-47bd-a272-11c3bbd34269",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C38",
+      "claim": "For 10/21 maps, the improvement in spatial information after removing spikes that occurred during pHFOs was greater than could be expected by random down-sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "For 10/21 maps, the improvement in spatial information after removing spikes that occurred during pHFOs was greater than could be expected by random down-sampling (Figure 7F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with reference to Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "5c440462-8476-4217-b657-9b7c0685deab",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C39",
+      "claim": "When considering all 21 maps after removing spikes during pHFO, there was a small but significant increase in spatial information (increase of 0.02; IQR 0.01\u20130.08; p = 9.2\u00d710-5, z-value = 3.9).",
+      "claim_type": "EXPLICIT",
+      "source": "When considering all 21 maps after removing spikes during pHFO, there was a small but significant increase in spatial information (increase of 0.02; IQR 0.01\u20130.08; p = 9.2\u00d710-5, z-value = 3.9, Wilcoxon Sign Rank Test) (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and reference to Figure 7G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "3828f665-8e02-4d74-9300-58ce2b15642c",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C40",
+      "claim": "For neurons in which targeted down sampling led to an improvement in spatial information, there was a positive relationship between the improvement in spatial information and the percentage of total pHFO-related spikes that were removed (R2 = 0.82, p < 1.6 * 10\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, for the neurons in which targeted down sampling led to an improvement in spatial information, there was a positive relationship between the improvement in spatial information and the percentage of total pHFO-related spikes that were removed (Figure 7H, R2 = 0.82, p < 1.6 * 10\u22128).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with statistical support and reference to Figure 7H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "2666f123-4007-4b5c-8060-ff197e5e6544",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C41",
+      "claim": "Ripple-like events in epileptic animals are similar to ripples observed in the healthy brain of control animals in that they are characterized by similar oscillation frequencies and slow envelope amplitudes ('sharp waves').",
+      "claim_type": "EXPLICIT",
+      "source": "Ripple-like events in epileptic animals are similar to ripples observed in the healthy brain of control animals in that they are characterized by similar oscillation frequencies and slow envelope amplitudes ('sharp waves') as well as by an increased prevalence during non-theta brain states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "2af4202c-d549-44c8-9fcf-d424fa0c6d73",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C42",
+      "claim": "Ripple-like events in epileptic animals show an increased prevalence during non-theta brain states.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripple-like events in epileptic animals are similar to ripples observed in the healthy brain of control animals in that they are characterized by similar oscillation frequencies and slow envelope amplitudes ('sharp waves') as well as by an increased prevalence during non-theta brain states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "2ca1adbe-d6fa-451a-8dd3-6d82980d5daf",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C43",
+      "claim": "pHFOs are only observed in the epileptic brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pHFOs are only observed in the epileptic brain, exhibit faster oscillation frequencies than ripples, are associated with interictal spikes, and are not brain state dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "a2de0fef-771b-4de3-a770-a55e0dd1ebf7",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C44",
+      "claim": "pHFOs exhibit faster oscillation frequencies than ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pHFOs are only observed in the epileptic brain, exhibit faster oscillation frequencies than ripples, are associated with interictal spikes, and are not brain state dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "404253d6-452c-4192-b130-1529b3e3aa25",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C45",
+      "claim": "pHFOs are not brain state dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pHFOs are only observed in the epileptic brain, exhibit faster oscillation frequencies than ripples, are associated with interictal spikes, and are not brain state dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "85238e1b-ab30-4be3-b3e1-88d1dcde1565",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C46",
+      "claim": "The preservation of ripple-like events in parallel with the occurrence of pHFOs suggests that memory-related neural computations are at least partially preserved in animals with epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "The preservation of ripple-like events in parallel with the occurrence of pHFOs suggests that memory-related neural computations are at least partially preserved in animals with epilepsy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Discussion section based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "9dc99680-c6bb-4bf2-a912-99d21411c3d5",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C47",
+      "claim": "Combining frequency and slow envelope amplitude of high-frequency oscillations facilitated separation of two distinct event types in animals with epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that combining frequency and slow envelope amplitude (interictal spike in epilepsy, sharp wave in physiological events) of high-frequency oscillations facilitated separation of two distinct event types in animals with epilepsy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "a23b6b13-a596-48f2-8994-10d54528f77c",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C48",
+      "claim": "Similar classification approaches have been successfully implemented in human epilepsy patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar classification approaches have been successfully implemented in human epilepsy patients (Nonoda et al., 2016), and others have proposed that the association between high-frequency oscillations and concurrent interictal spikes is indicative that the oscillations are pathological (Schevon et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "a191bbf7-536d-4c14-8059-a1cb2eb2d801",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C49",
+      "claim": "This study is the first to show that waveform-based classification could separate events recorded at the same electrode.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we are the first to show that such waveform-based classification could separate events recorded at the same electrode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim of novelty stated in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "7ab10db7-722d-4512-84a1-d672bfcc8ed3",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C50",
+      "claim": "Brain state dependence could be added as an additional criterion for classification of pathological oscillations in hippocampus in epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that brain state dependence could be added as an additional criterion for classification of pathological oscillations in hippocampus in epilepsy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal stated in the Discussion section based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "164803af-0044-4671-8b08-41e010ef8e38",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C51",
+      "claim": "It is possible that only pHFOs occur independent of brain state in ictal-genic networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that only pHFOs occur independent of brain state in ictal-genic networks, underscoring the potential for using brain state dependence to improve classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Discussion section.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "e00b1aaf-2b4b-44e4-8ad1-38f2c2a86404",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C52",
+      "claim": "The same network of neurons would be able to flexibly transition between activity modes that are either lower frequency and therefore normal and higher frequency and therefore pathological.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling has suggested that the same network of neurons would be able to flexibly transition between activity modes that are either lower frequency and therefore normal and higher frequency and therefore pathological (Fink et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a modeling study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "aff6f62d-8001-471f-8597-99ec0bea5fa9",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C53",
+      "claim": "A small number of CA1 principal cells participated in both ripple-like and pHFO event types (28%).",
+      "claim_type": "EXPLICIT",
+      "source": "In support of computational models, we observed a small number of CA1 principal cells that participated in both event types (28%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "405131e9-c9fb-4428-8a8c-15b2861e1de0",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C54",
+      "claim": "The activity of the majority of CA1 neurons were modulated by only one event type or the other.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the activity of the majority of CA1 neurons were modulated by only one event type or the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "c3fcb43c-d37b-4934-bd3e-205f03e5ad21",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C55",
+      "claim": "Tracking single-unit activity could improve separation of oscillation types in epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "This segregation suggests that tracking single-unit activity could improve separation of oscillation types in epilepsy, but more importantly motivates future experiments aimed at more selective therapeutic interventions designed to target pathological sub-networks in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion stated in the Discussion section based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "061016d0-cf27-4c4a-b2ad-2a4f5584442b",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C56",
+      "claim": "Interictal spikes have negative impacts when they occur during retrieval versus encoding phases of memory tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Most studies have found that interictal events disrupt memory consolidation processes, as interictal spikes have negative impacts when they occur during retrieval versus encoding phases of memory tasks (Kleen et al., 2010; Kleen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "8b06a6ac-db38-4576-a573-5a2911fef5ce",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C57",
+      "claim": "During sleep, interictal spikes inappropriately initiate spindle activity in cortex, and therefore disrupt memory consolidation processes that engage cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, during sleep, interictal spikes inappropriately initiate spindle activity in cortex, and therefore disrupt memory consolidation processes that engage cortical areas (Gelinas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "04e49991-12bd-46bb-839f-631d9e172392",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C58",
+      "claim": "A recent study uncovered a cellular mechanism of the perturbed dynamics during CA1 high-frequency oscillations in epilepsy, involving improper inhibition resulting in non-specific recruitment of CA1 neurons during fast ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a recent study uncovered a cellular mechanism of the perturbed dynamics during CA1 high-frequency oscillations in epilepsy, involving improper inhibition resulting in non-specific recruitment of CA1 neurons during fast ripples (Valero et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "d6487227-42a3-4a3c-8260-6c849bd7c581",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C59",
+      "claim": "This study is the first to record from large cell populations during pHFOs while animals are freely exploring.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that most studies of interictal activity focus on the effect on consolidation processes, which occur during sleep, our finding that pHFOs occur during active exploration are provocative when considering the effects on memory encoding. We are the first to record from large cell populations during pHFOs while animals are freely exploring, which allowed us to ascertain whether networks generating awake-pHFOs would have specific deficits with regard to place coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim of novelty stated in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "a4cbf5fb-78ef-4f54-9b5b-238f71453b19",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C60",
+      "claim": "Place coding is generally disrupted in animals with temporal lobe epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous reports, we confirmed that place coding is generally disrupted in animals with temporal lobe epilepsy (Lenck-Santini and Holmes, 2008; Liu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature and data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "9c3bfec4-fb59-4582-9826-9d3162fed531",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C61",
+      "claim": "A reduction in the place-related activity of CA1 neurons in a rat model of epilepsy has been reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduction in the place-related activity of CA1 neurons in a rat model of epilepsy has been reported previously (Liu et al., 2003), but we are the first to observe that place field networks are also more sparsely activated during behavior as well as during ripple-like events in rest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "4a6c0c6f-1f43-49fe-98dd-165b8aedcb54",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C62",
+      "claim": "This study is the first to observe that place field networks are more sparsely activated during behavior as well as during ripple-like events in rest in epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "A reduction in the place-related activity of CA1 neurons in a rat model of epilepsy has been reported previously (Liu et al., 2003), but we are the first to observe that place field networks are also more sparsely activated during behavior as well as during ripple-like events in rest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim of novelty stated in the Discussion section and supported by data in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "711e8af2-d48e-40a2-a1a0-a31ed29105f4",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C63",
+      "claim": "As individual neurons become more variable, the size of the population required for optimal decoding increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, as individual neurons become more variable, the size of the population required for optimal decoding increases (Yarrow and Seri\u00e8s, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "c5d57390-9038-42b6-9b7b-752bfccfdfdc",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C64",
+      "claim": "The association of pHFOs with a higher network sparsity and a decrease in information coding serves as potential mechanisms for memory impairment in epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the association of pHFOs with a higher network sparsity and a decrease in information coding serves as potential mechanisms for memory impairment in epilepsy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Discussion section based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "4a9930f5-2bb4-4a32-8d77-be2fc63deb98",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C65",
+      "claim": "Interictal spikes can impact perception at the moment that the spikes occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite most studies focusing on interictal events during consolidation, a few studies have shown that interictal spikes can impact perception at the moment that the spikes occur (Shewmon and Erwin, 1988a; Shewmon and Erwin, 1988b; Shewmon and Erwin, 1988c; Shewmon and Erwin, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "4067b3e9-33ab-4157-8dc2-33dc02bd50f3",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C66",
+      "claim": "pHFOs associated with interictal spikes occurring during wakefulness could confer immediate negative effects on the place code.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support the possibility that pHFOs associated with interictal spikes occurring during wakefulness could also confer immediate negative effects on the place code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "e03141cf-b27b-4b49-ae55-36979c8175f8",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C67",
+      "claim": "Theta timing and the organization of hippocampal phase precession has been shown to be generally impaired in temporal lobe epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Theta timing and the organization of hippocampal phase precession has been shown to be generally impaired in temporal lobe epilepsy (Lenck-Santini and Holmes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "a3430ea3-1a3f-423b-b254-f0f41e0de89d",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C68",
+      "claim": "A lack of hippocampal theta has previously been shown to be associated with a severe reduction in hippocampal-dependent memory and pathfinding.",
+      "claim_type": "EXPLICIT",
+      "source": "A lack of hippocampal theta has previously been shown to be associated with a severe reduction in hippocampal-dependent memory and pathfinding (Chrobak et al., 1989; Mizumori et al., 1989; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "b78548eb-3f75-46d6-acd0-3898df905573",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C69",
+      "claim": "Ripple-like oscillations persist in epileptic networks even though they are associated with a smaller proportion of participating cells, suggesting remnants of a healthy network.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the negative effects of epilepsy on cognition, it is of interest that ripple-like oscillations persist in epileptic networks even though they are associated with a smaller proportion of participating cells, suggesting remnants of a healthy network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Discussion section based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "064a3028-5c56-4566-95e4-22a7cf248418",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C70",
+      "claim": "Ripple-like oscillations engage unrelated neurons from those active during pHFOs, which suggests that the event types are supported by distinct network mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ripple-like oscillations engage unrelated neurons from those active during pHFOs, which suggests that the event types are supported by distinct network mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation stated in the Discussion section based on the findings in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "d08f45cb-860b-42af-b121-f5fa42ca3c5e",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C71",
+      "claim": "Due to the non-overlapping populations of CA1 cells recruited by each event in the same network, the development of selective manipulations that target specific types of pathological activity are possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, due to the non-overlapping populations of CA1 cells recruited by each event in the same network, the development of selective manipulations that target specific types of pathological activity are possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement in the Discussion section based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "ca337be4-db7c-457a-adea-8770b11de3ee",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C72",
+      "claim": "Epilepsy was induced in male Wistar rats using a repeated low-dose kainate chronic model of temporal lobe epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Epilepsy was induced in male Wistar rats (40 days of age, Charles River, CA) using a repeated low-dose kainate chronic model of temporal lobe epilepsy (Hellier et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "614ccd8e-975a-4968-aad8-f6c3af293b79",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C73",
+      "claim": "Four epileptic rats (6\u201312 months old) and four control rats that were not injected with kainate (6\u201312 months old) were used for electrophysiological experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Four epileptic rats (6\u201312 months old) and four control rats that were not injected with kainate (6\u201312 months old) were used for electrophysiological experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "226bceab-d189-4501-9736-b972545ce73f",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C74",
+      "claim": "High-frequency oscillations (>140 Hz) were isolated using identical event detection parameters in control and epileptic animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using identical event detection parameters, we isolated high-frequency oscillations (>140 Hz) in control animals (example traces shown in Figure 1B, Figure 1\u2014figure supplement 1A) and in animals with epilepsy (example traces shown in Figure 1C, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "8b731e74-0cd9-4f88-8092-d2d67688deb4",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "claim_id": "C75",
+      "claim": "Filtering was confirmed not to induce spurious detection of artifact or interictal spikes with no associated high-frequency oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that filtering can be problematic for detection of ripples in epileptic networks (B\u00e9nar et al., 2010), we confirmed that our filter did not induce spurious detection of artifact or interictal spikes with no associated high-frequency oscillations (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In epileptic animals, two distinct types of high-frequency oscillations co-occur in the same CA1 network: 'ripple-like' events that resemble control ripples in frequency and envelope amplitude, and 'pHFOs' that are associated with interictal spikes, exhibit higher frequencies, and occur independently of brain state. These event types can be distinguished using a combination of oscillation frequency and envelope amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C16-C23 provide converging evidence from clustering analysis (Figure 2), ROC discrimination, and statistical comparisons demonstrating two distinct oscillation types in epileptic animals. The classification is validated by multiple parameters (frequency, envelope amplitude, brain state dependence) with appropriate statistical tests and controls. The methodology is clearly described and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "aa3e43ce-67da-4e3b-8382-5c65909cbb8c",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "pHFOs occur irrespective of brain state, including during active exploration with ongoing theta oscillations, and transiently suppress theta rhythm for several hundred milliseconds after occurrence. In contrast, ripple-like events in epileptic animals retain the brain state dependence of control ripples, occurring predominantly during immobility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24-C29 are supported by statistical analyses of running speed distributions (Figure 3A), event rate calculations (Figure 3B), and wavelet analysis of theta power (Figure 3C-D). The p-values are appropriately reported (p = 5.3\u00d710\u207b\u2077\u2074 for speed differences, p = 4.7\u00d710\u207b\u00b2\u2079 for theta suppression), and controls for behavioral differences between groups are included (C27). The findings are consistent across multiple measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "dab2b069-4989-488f-a4f5-a9e49a956dd9",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "pHFOs and ripple-like events engage distinct subnetworks of CA1 principal neurons. In epileptic animals, only 46% of neurons are modulated by ripple-like events (compared to 91% in controls), and only 21% participate in pHFOs. Among modulated neurons, 72% respond to only one event type, with minimal overlap between the two populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C30-C34, C53-C54 are supported by single-unit recording data (Figures 4-5) with appropriate statistical tests (chi-square tests with significant p-values). The proportion of modulated neurons is clearly quantified for each condition, and the segregation of neuronal populations is demonstrated both at the population level and for individual neurons recorded across both event types. The cluster quality metrics (Figure 4\u2014supplement 1) validate the single-unit isolation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "64e24ea5-a3ed-4972-a2f8-066ee86dd941",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Epileptic animals show increased network sparsity with fewer active neurons during foraging (73/177 vs 30/35 in controls) and reduced spatial information in active place cells (median 0.5 bits vs 1.7 bits in controls). This represents a general disruption of hippocampal spatial coding that extends beyond the immediate effects of pHFOs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35-C36, C60, C62 are supported by place field analysis (Figure 6) with appropriate statistical tests (chi-square test p < 1.5\u00d710\u207b\u2076 for proportion of active neurons; Wilcoxon rank sum test p = 3.0\u00d710\u207b\u2078 for spatial information). The findings are consistent with prior literature (C60, C61) and represent a novel observation about network sparsity during both behavior and ripple-like events (C62). Sample sizes are adequate (177 neurons in epilepsy, 35 in controls).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "e34c6c8b-8bf8-40b0-871a-9b3ddaa2f5c2",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "pHFOs cause immediate disruptions in spatial information coding. pHFOs occur randomly with respect to spatial location (9/11 sessions), and removing spikes that occurred during pHFOs significantly improves spatial information (p = 9.2\u00d710\u207b\u2075), with the improvement correlating with the proportion of pHFO-related spikes removed (R\u00b2 = 0.82).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C37-C40, C66 are supported by spatial information analysis (Figure 7) using appropriate controls (shuffled distributions, random down-sampling). The statistical tests are appropriate (Wilcoxon Sign Rank Test), and the correlation analysis (R\u00b2 = 0.82, p < 1.6\u00d710\u207b\u2078) provides strong evidence for a dose-dependent relationship. However, the effect size is modest (median increase of 0.02 bits), and only 10/21 maps showed improvement beyond random down-sampling, suggesting the immediate effects are relatively subtle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "1445fc4a-f7a6-48d9-8d21-216b324e5b31",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The coefficient of variation for peak voltage amplitudes of high-frequency oscillations is significantly higher in epileptic animals (0.5 \u00b1 0.05) compared to control animals (0.3 \u00b1 0.01), indicating greater heterogeneity in oscillation amplitudes within recording sessions in epilepsy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 are supported by statistical comparison (unpaired t-test, p = 0.04) and reference to Figure 1D. The sample sizes are small (n=4 control, n=12 epileptic sessions) but the effect is significant and provides initial evidence for heterogeneity in high-frequency oscillations in epilepsy. This finding motivates the subsequent clustering analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "d327aeab-a365-4e66-a800-f59a26121438",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study used a kainate model of temporal lobe epilepsy in male Wistar rats (4 epileptic, 4 control) and employed identical high-frequency oscillation detection parameters (>140 Hz) across groups, with validation that filtering did not induce spurious artifact detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 describe the experimental methods with appropriate citations (C72) and validation controls (C75, Figure 1\u2014supplement 2). The sample size of 4 animals per group is standard for in vivo electrophysiology studies with large numbers of neurons recorded per animal. The validation of the filtering approach addresses a known concern in the field (B\u00e9nar et al., 2010).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "58a01b8f-d1dc-4758-a5eb-16c25f6ebcc7",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The preservation of ripple-like events alongside pHFOs suggests that memory-related neural computations are partially preserved in epileptic animals, though the association of pHFOs with increased network sparsity and decreased information coding represents a potential mechanism for memory impairment in epilepsy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46, C64, C69-C70 represent interpretations and inferences from the data rather than direct experimental findings. While the underlying observations (preservation of ripple-like events, network sparsity, distinct cellular populations) are well-supported, the functional implications for memory require additional behavioral testing. The claims are reasonable interpretations but lack direct causal evidence linking the observed network changes to memory performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "e92399bd-b583-4043-97b4-9ed22cb88c5e",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study makes several claims of novelty: first demonstration of waveform-based classification separating events at the same electrode, first recordings from large cell populations during pHFOs in freely exploring animals, and first observation of sparse activation during both behavior and ripple-like events in epilepsy. The authors propose brain state dependence as an additional classification criterion and suggest potential for selective therapeutic targeting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49, C59, C62 assert novelty but cannot be fully verified without comprehensive literature review. The proposals in C50-C51, C55, C71 are speculative suggestions for future work rather than demonstrated results. While the observations supporting these claims appear sound, the novelty claims and therapeutic implications require independent verification and additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    },
+    {
+      "id": "0a4aef2a-326d-4454-826f-67d57bad370a",
+      "content_id": "eb76b92c-2926-49a0-94d9-52db4e687c15",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript cites established knowledge and prior work regarding pHFOs as biomarkers in epilepsy, the properties of normal ripples, the overlap between ripples and pHFOs, mechanisms of interictal spike effects on memory, and disruptions in place coding and theta timing in epilepsy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C11, C15, C48, C52, C56-C58, C61, C63, C65, C67-C68 appropriately cite published literature to support background knowledge and contextualize the current findings. The citations appear appropriate and the claims are consistent with established understanding in the field. These provide necessary context for interpreting the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:04.317260Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9cddd96f-2b46-4156-a018-0db9469d6e52",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "fb3a7fef-d01d-4733-9dbd-42ec657b11ec",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "11fbe553-c940-4f29-b8f1-fadd819d0d62",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "31cc3d00-fa55-45b2-afcf-e7dc676242ef",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "b78a0453-14b2-4dfe-81b1-51d61a0d450e",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "433dc71c-d1a3-47f8-b4e7-c7fb0d9f3b2d",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "b8b4c113-b907-4ebe-9f2e-03e66d3d8f15",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "9cdf948b-f3b8-45c4-8073-883e692bcbe4",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "4579386a-a78c-4bf4-8499-9c16d929631a",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "2666f123-4007-4b5c-8060-ff197e5e6544",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "2af4202c-d549-44c8-9fcf-d424fa0c6d73",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "2ca1adbe-d6fa-451a-8dd3-6d82980d5daf",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "a2de0fef-771b-4de3-a770-a55e0dd1ebf7",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "404253d6-452c-4192-b130-1529b3e3aa25",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "9dc99680-c6bb-4bf2-a912-99d21411c3d5",
+      "result_id": "b73e43fe-48b9-47cd-bb40-702c6bf0a5c2"
+    },
+    {
+      "claim_id": "4db75525-5f12-46db-8100-7b985bd0063d",
+      "result_id": "aa3e43ce-67da-4e3b-8382-5c65909cbb8c"
+    },
+    {
+      "claim_id": "5cea701b-183f-4ef8-96c1-66af36f01c85",
+      "result_id": "aa3e43ce-67da-4e3b-8382-5c65909cbb8c"
+    },
+    {
+      "claim_id": "b279c6b6-060a-46db-b7e1-c1893460def6",
+      "result_id": "aa3e43ce-67da-4e3b-8382-5c65909cbb8c"
+    },
+    {
+      "claim_id": "8996da10-8a97-4b5d-b76f-0640250b500d",
+      "result_id": "aa3e43ce-67da-4e3b-8382-5c65909cbb8c"
+    },
+    {
+      "claim_id": "a09b43a3-265e-4849-8ef8-077055e8a04c",
+      "result_id": "aa3e43ce-67da-4e3b-8382-5c65909cbb8c"
+    },
+    {
+      "claim_id": "06a90f46-0ce2-4fa4-9fd0-626f66e1f63b",
+      "result_id": "aa3e43ce-67da-4e3b-8382-5c65909cbb8c"
+    },
+    {
+      "claim_id": "0da3f5bd-8cf8-4833-b21e-153c96e47906",
+      "result_id": "aa3e43ce-67da-4e3b-8382-5c65909cbb8c"
+    },
+    {
+      "claim_id": "9d0cce9f-900f-4d50-8ef3-16f3a4db667e",
+      "result_id": "dab2b069-4989-488f-a4f5-a9e49a956dd9"
+    },
+    {
+      "claim_id": "c9aa05b3-bc1b-4822-9c9d-13dc5859f2a1",
+      "result_id": "dab2b069-4989-488f-a4f5-a9e49a956dd9"
+    },
+    {
+      "claim_id": "c29d5acf-87cb-4130-84d9-8b44012b1120",
+      "result_id": "dab2b069-4989-488f-a4f5-a9e49a956dd9"
+    },
+    {
+      "claim_id": "834fde10-a063-435b-a738-06eb49db97a6",
+      "result_id": "dab2b069-4989-488f-a4f5-a9e49a956dd9"
+    },
+    {
+      "claim_id": "f305fd64-be18-4586-8fdb-09e0f02b01ca",
+      "result_id": "dab2b069-4989-488f-a4f5-a9e49a956dd9"
+    },
+    {
+      "claim_id": "cbe1af2d-529a-4c2f-8eaf-1e00f1f584f4",
+      "result_id": "dab2b069-4989-488f-a4f5-a9e49a956dd9"
+    },
+    {
+      "claim_id": "aff6f62d-8001-471f-8597-99ec0bea5fa9",
+      "result_id": "dab2b069-4989-488f-a4f5-a9e49a956dd9"
+    },
+    {
+      "claim_id": "405131e9-c9fb-4428-8a8c-15b2861e1de0",
+      "result_id": "dab2b069-4989-488f-a4f5-a9e49a956dd9"
+    },
+    {
+      "claim_id": "a2681cdc-4d67-4284-82cc-da76b47a65c4",
+      "result_id": "64e24ea5-a3ed-4972-a2f8-066ee86dd941"
+    },
+    {
+      "claim_id": "48b14b35-1440-43d1-9f54-769446e1b177",
+      "result_id": "64e24ea5-a3ed-4972-a2f8-066ee86dd941"
+    },
+    {
+      "claim_id": "01e0c7c9-6ebf-45cc-8b54-52a49b746eb6",
+      "result_id": "64e24ea5-a3ed-4972-a2f8-066ee86dd941"
+    },
+    {
+      "claim_id": "a4cbf5fb-78ef-4f54-9b5b-238f71453b19",
+      "result_id": "64e24ea5-a3ed-4972-a2f8-066ee86dd941"
+    },
+    {
+      "claim_id": "4a6c0c6f-1f43-49fe-98dd-165b8aedcb54",
+      "result_id": "64e24ea5-a3ed-4972-a2f8-066ee86dd941"
+    },
+    {
+      "claim_id": "5b13e58a-969b-4511-a373-61150a2a4478",
+      "result_id": "e34c6c8b-8bf8-40b0-871a-9b3ddaa2f5c2"
+    },
+    {
+      "claim_id": "55d2e4e1-5be4-4f9a-9865-1db4ec3be6f8",
+      "result_id": "e34c6c8b-8bf8-40b0-871a-9b3ddaa2f5c2"
+    },
+    {
+      "claim_id": "6b584016-05a0-47bd-a272-11c3bbd34269",
+      "result_id": "e34c6c8b-8bf8-40b0-871a-9b3ddaa2f5c2"
+    },
+    {
+      "claim_id": "5c440462-8476-4217-b657-9b7c0685deab",
+      "result_id": "e34c6c8b-8bf8-40b0-871a-9b3ddaa2f5c2"
+    },
+    {
+      "claim_id": "3828f665-8e02-4d74-9300-58ce2b15642c",
+      "result_id": "e34c6c8b-8bf8-40b0-871a-9b3ddaa2f5c2"
+    },
+    {
+      "claim_id": "4067b3e9-33ab-4157-8dc2-33dc02bd50f3",
+      "result_id": "e34c6c8b-8bf8-40b0-871a-9b3ddaa2f5c2"
+    },
+    {
+      "claim_id": "ee1318c0-984c-4d79-966f-b8d24b7e94cc",
+      "result_id": "1445fc4a-f7a6-48d9-8d21-216b324e5b31"
+    },
+    {
+      "claim_id": "f8707b44-c315-4757-bade-5f3aefd5e161",
+      "result_id": "1445fc4a-f7a6-48d9-8d21-216b324e5b31"
+    },
+    {
+      "claim_id": "f4dba15f-ec3d-4c7d-bbb5-683a338c4cb9",
+      "result_id": "1445fc4a-f7a6-48d9-8d21-216b324e5b31"
+    },
+    {
+      "claim_id": "ca337be4-db7c-457a-adea-8770b11de3ee",
+      "result_id": "d327aeab-a365-4e66-a800-f59a26121438"
+    },
+    {
+      "claim_id": "614ccd8e-975a-4968-aad8-f6c3af293b79",
+      "result_id": "d327aeab-a365-4e66-a800-f59a26121438"
+    },
+    {
+      "claim_id": "226bceab-d189-4501-9736-b972545ce73f",
+      "result_id": "d327aeab-a365-4e66-a800-f59a26121438"
+    },
+    {
+      "claim_id": "8b731e74-0cd9-4f88-8092-d2d67688deb4",
+      "result_id": "d327aeab-a365-4e66-a800-f59a26121438"
+    },
+    {
+      "claim_id": "85238e1b-ab30-4be3-b3e1-88d1dcde1565",
+      "result_id": "58a01b8f-d1dc-4758-a5eb-16c25f6ebcc7"
+    },
+    {
+      "claim_id": "c5d57390-9038-42b6-9b7b-752bfccfdfdc",
+      "result_id": "58a01b8f-d1dc-4758-a5eb-16c25f6ebcc7"
+    },
+    {
+      "claim_id": "b78548eb-3f75-46d6-acd0-3898df905573",
+      "result_id": "58a01b8f-d1dc-4758-a5eb-16c25f6ebcc7"
+    },
+    {
+      "claim_id": "064a3028-5c56-4566-95e4-22a7cf248418",
+      "result_id": "58a01b8f-d1dc-4758-a5eb-16c25f6ebcc7"
+    },
+    {
+      "claim_id": "a191bbf7-536d-4c14-8059-a1cb2eb2d801",
+      "result_id": "e92399bd-b583-4043-97b4-9ed22cb88c5e"
+    },
+    {
+      "claim_id": "7ab10db7-722d-4512-84a1-d672bfcc8ed3",
+      "result_id": "e92399bd-b583-4043-97b4-9ed22cb88c5e"
+    },
+    {
+      "claim_id": "164803af-0044-4671-8b08-41e010ef8e38",
+      "result_id": "e92399bd-b583-4043-97b4-9ed22cb88c5e"
+    },
+    {
+      "claim_id": "c3fcb43c-d37b-4934-bd3e-205f03e5ad21",
+      "result_id": "e92399bd-b583-4043-97b4-9ed22cb88c5e"
+    },
+    {
+      "claim_id": "d6487227-42a3-4a3c-8260-6c849bd7c581",
+      "result_id": "e92399bd-b583-4043-97b4-9ed22cb88c5e"
+    },
+    {
+      "claim_id": "4a6c0c6f-1f43-49fe-98dd-165b8aedcb54",
+      "result_id": "e92399bd-b583-4043-97b4-9ed22cb88c5e"
+    },
+    {
+      "claim_id": "d08f45cb-860b-42af-b121-f5fa42ca3c5e",
+      "result_id": "e92399bd-b583-4043-97b4-9ed22cb88c5e"
+    },
+    {
+      "claim_id": "05c62405-eb45-45c2-93c4-0864c6145610",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "63c9a5c1-6843-42db-a10f-840c1975d1f0",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "29228424-7319-4298-8306-a46598a310da",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "487bad1c-4296-4928-911c-5738abfab3d2",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "6bdbb4ab-1629-4bac-9fec-bd6e1365472f",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "a410dbbe-0c7d-4a43-9359-501ff0dfbfa9",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "a23b6b13-a596-48f2-8994-10d54528f77c",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "e00b1aaf-2b4b-44e4-8ad1-38f2c2a86404",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "061016d0-cf27-4c4a-b2ad-2a4f5584442b",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "8b06a6ac-db38-4576-a573-5a2911fef5ce",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "04e49991-12bd-46bb-839f-631d9e172392",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "9c3bfec4-fb59-4582-9826-9d3162fed531",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "711e8af2-d48e-40a2-a1a0-a31ed29105f4",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "4a9930f5-2bb4-4a32-8d77-be2fc63deb98",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "e03141cf-b27b-4b49-ae55-36979c8175f8",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    },
+    {
+      "claim_id": "a3430ea3-1a3f-423b-b254-f0f41e0de89d",
+      "result_id": "0a4aef2a-326d-4454-826f-67d57bad370a"
+    }
+  ],
+  "comparisons": []
+}

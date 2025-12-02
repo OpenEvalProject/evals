@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A computational model demonstrates that varying the ratio of activity-dependent migration to neurite growth modulates neuronal clustering, mesoscale network organization, and modularity. The model shows that increased migration promotes clustering, accelerates connectivity buildup and activity onset, reduces neurite field size, and increases network modularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C30 collectively describe a computational model with well-defined parameters and mechanisms (C16-C21). The model produces consistent, interpretable results showing how migration rate affects network architecture (C22-C30), with clear relationships between clustering, connectivity, and modularity. The model's predictions are internally consistent and later validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "PKC manipulation experimentally altered mesoscale network architecture in cultured cortical neurons. PKC inhibition (PKC\u2212) produced more homogeneous networks, while PKC activation (PKC+) produced well-delineated clusters of 30-60 neurons. Clustering increased during the first three weeks in vitro and stabilized after 22 DIV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 describe experimental observations with quantitative measurements and statistical significance (C35: p=3.3\u00d710\u207b\u00b2, p=4.4\u00d710\u207b\u2074). The morphological characterization is supported by immunohistochemical imaging (Figure 3A) and clustering index measurements over development (Figure 3B). The cessation of migration after 22 DIV (C36) is a reasonable interpretation of the stabilization of CI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Dendrite size was inversely correlated with neuronal clustering across PKC conditions. PKC\u2212 networks had significantly larger dendrites (1413\u00b164 \u00b5m) while PKC+ networks had smaller dendrites (816\u00b124 \u00b5m) at 22 DIV. Dendrite size stabilized after 22 DIV in all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 present quantitative measurements with statistical significance (p=7.9\u00d710\u207b\u2075, p=3.6\u00d710\u207b\u2074) and are supported by immunohistochemical analysis (Figure 3C,D). The inverse correlation between dendrite size and clustering (C39) is consistent across experimental and computational results, strengthening the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Synapse density increased with dendritic outgrowth between 8-22 DIV, then decreased between 22-29 DIV. At 29 DIV, synapse densities were significantly higher in PKC\u2212 networks (2019\u00b1110) and lower in PKC+ networks (669\u00b121). Synapse occupancy scaled approximately quadratically with dendrite size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 present quantitative data with strong statistical significance (p=4.5\u00d710\u207b\u2078, p=5.7\u00d710\u207b\u2078) from immunohistochemical analysis. The quadratic scaling relationship (C43) is supported by Figure 3G and provides a mechanistic explanation based on multiplicative increases in axo-dendritic intersection probability. The developmental trajectory is well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C71"
+    ],
+    "result": "Maximum connectivity estimates showed that PKC\u2212 networks had approximately double the connectivity of PKCN networks (0.23\u00b10.03 vs 0.12\u00b10.01), while PKC+ networks had reduced connectivity (0.08\u00b10.01). Connectivity was inversely correlated with clustering and saturated at ~10% in clustered and ~20% in homogeneous networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C71 present connectivity estimates with statistical significance (p=9.2\u00d710\u207b\u2074, p=3.8\u00d710\u207b\u00b2) derived from synapse density and neuron counts. The inverse correlation with clustering is consistent with other morphological findings. The saturation values are compared to literature values for cultured and native cortical networks, providing external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Spontaneous burst event (SBE) rates increased faster with clustering during development. At 28-35 DIV, SBE rates were significantly higher in PKC+ networks (41.1\u00b15.1 min\u207b\u00b9) and lower in PKC\u2212 networks (5.0\u00b10.8 min\u207b\u00b9). In early development, SBE strength inversely correlated with SBE rates, resulting in similar average firing rates (AFR) across conditions, but this compensation was incomplete in late development, leading to different AFRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 describe electrophysiological recordings with strong statistical significance (p=2.2\u00d710\u207b\u00b9\u00b3, p=7.9\u00d710\u207b\u2079) and are supported by extensive MEA data (Figure 4A-C, Table 2). The finding that clustering promotes spontaneous activity (C47) is consistent with computational predictions cited. The incomplete compensation in late development is a key observation that challenges simple homeostatic models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "In PKC\u2212 networks, neurons frequently experienced depolarization block during bursts, with membrane potential remaining above spiking threshold (\u221240 mV) for a significantly larger fraction of time (5.2\u00b10.7%) compared to PKCN (1.7\u00b10.5%) and PKC+ (1.2\u00b10.7%) networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by patch-clamp recordings with statistical significance (p=1.7\u00d710\u207b\u2074, p=1.2\u00d710\u207b\u00b3) and illustrated in Figure 4D,E. The depolarization block phenomenon provides a mechanistic explanation for differences in firing patterns across network architectures. Sample sizes are adequate (N=24-30 neurons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C4"
+    ],
+    "result": "Ca\u00b2\u207a transient amplitude increased exponentially with peak firing rate (PFR) during bursts. PKC\u2212 networks had higher PFRs and slightly smaller exponents (0.11\u00b10.01) than PKCN networks (0.12\u00b10.02).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C4 are supported by simultaneous calcium imaging and MEA recordings (Figure 5A-E). The exponential relationship is well-characterized with strong statistical significance (p=3.2\u00d710\u207b\u00b9\u2078) and is consistent with known biophysics of voltage-gated Ca\u00b2\u207a channels. The data include 179-622 neurons across multiple networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C5",
+      "C6"
+    ],
+    "result": "Throughout development, peak firing rates (PFR) were highest in homogeneous networks and lowest in clustered networks. However, long-term Ca\u00b2\u207a influx converged during late development across different PKC conditions, network architectures, and average firing rates, indicating homeostatic regulation toward a common Ca\u00b2\u207a influx set-point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C5-C6 present the central finding that reconciles different AFRs with homeostatic regulation. The convergence of long-term Ca\u00b2\u207a influx (Figure 5H) despite different network architectures and AFRs is well-supported by the exponential relationship between PFR and Ca\u00b2\u207a amplitude combined with inverse modulation of SBE rates. This is a key mechanistic insight of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Network synchrony increased steeply between 3-15 DIV and stabilized between 15-21 DIV. Synchronization was highest in PKC\u2212 networks (0.53\u00b10.04), intermediate in PKCN networks (0.35\u00b10.02), and lowest in PKC+ networks (0.16\u00b10.03), decreasing with the degree of clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by MEA recordings with strong statistical significance (p=4.6\u00d710\u207b\u2075, p=1.7\u00d710\u207b\u2075). The inverse relationship between synchrony and clustering is consistent with connectivity estimates and provides a mechanistic link to differences in PFR. The early stabilization of synchrony is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Acute application of picrotoxin (PTX) significantly amplified bursting after 21 DIV in all PKC conditions, with comparable developmental time courses, indicating comparable maturation of GABAergic inhibition across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by pharmacological experiments with statistical significance across multiple time points and conditions. The comparable maturation of inhibition (C59) is an important control showing that differences in network dynamics are due to architectural differences rather than differential inhibition development. Sample sizes are adequate (N=11-33 networks per condition/age).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C72",
+      "C74"
+    ],
+    "result": "The spatial distribution of neurons and activity-dependent neurite outgrowth shape network modularity through interactions between neurite growth and neuronal migration that affect the balance between local and global connectivity. The degree of modularity has crucial impact on activity generation, propagation, synchronization, and network function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C72, C74 represent the overarching conclusions of the study. They are well-supported by the convergence of computational modeling (C12-C30) and experimental results (C31-C59) showing consistent relationships between migration, clustering, connectivity, and activity patterns. The mechanistic framework linking morphological development to functional outcomes is coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Spontaneous activity and synchronized burst rates increased with clustering, while peak firing rates in bursts increased in highly interconnected homogeneous networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 summarize key experimental findings that are well-supported by extensive electrophysiological data (C45-C54). These results contrast with some theoretical predictions but are consistent with predictions for modular networks, as noted in C47. The findings are robust across development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C68",
+      "C70"
+    ],
+    "result": "Activity stabilized after approximately 21 DIV irrespective of network architecture. The mesoscale network architecture formed early determines the probabilistic framework for connectivity, and PKC manipulation did not critically impair synaptogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C68, C70 describe important developmental milestones and interpretations. The stabilization at ~21 DIV is supported by multiple measures (Figures 4, 6). The interpretation that early architecture determines connectivity framework (C68) is reasonable given the data. The conclusion about synaptogenesis (C70) is supported by the consistent scaling relationship in Figure 3G.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior work establishes that cortical networks are organized in local clusters, activity-dependent processes influence modularity, modular connectivity promotes spontaneous activity, and neuronal migration and neurite outgrowth are regulated by Ca\u00b2\u207a-dependent mechanisms including PKC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 summarize relevant prior work through citations. These provide appropriate context for the current study. C14 cites the authors' own prior work showing PKC effects on network architecture, which is extended in the current study. The literature foundation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Basal cytosolic Ca\u00b2\u207a is low and constant, so free Ca\u00b2\u207a for growth regulation is determined by transient elevations from synaptic input and spiking. Nuclear Ca\u00b2\u207a regulates gene expression for neurite growth capacity, while local Ca\u00b2\u207a transients direct migration and growth. Cell migration relies on localized Ca\u00b2\u207a gradients but ceases with increasing activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 present a mechanistic framework for Ca\u00b2\u207a signaling in development, supported by citations to prior work. This framework provides the conceptual basis for interpreting the experimental results. The distinction between nuclear Ca\u00b2\u207a (growth capacity) and local Ca\u00b2\u207a (directed growth/migration) is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C73"
+    ],
+    "result": "Potential synapses realize into functional synapses with approximately constant probability in vivo. Cell migration defects are proposed as pathogenic mechanisms in neurological conditions associated with altered cortical mini-column organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C73 cite relevant prior work. C69 provides context for interpreting connectivity estimates. C73 discusses broader implications for neurological disorders, appropriately supported by multiple citations. These claims provide important context but are not primary findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

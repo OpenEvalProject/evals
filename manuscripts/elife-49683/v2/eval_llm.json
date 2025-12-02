@@ -1,0 +1,440 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C22",
+      "C26"
+    ],
+    "result": "MIEL is a novel high-content screening platform that profiles chromatin organization using texture features derived from immunofluorescence images of four histone modifications (H3K27me3, H3K9me3, H3K27ac, H3K4me1) present in all eukaryotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19, C22, and C26 collectively describe the MIEL methodology. The approach is well-documented with experimental validation throughout the manuscript, including detailed methods and multiple applications demonstrating its functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C98",
+      "C99"
+    ],
+    "result": "MIEL was validated across multiple cell lines and drug concentrations, demonstrating robustness and coherence of readouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C98, and C99 are supported by extensive experimental data including concentration-response curves (C49-C54), multi-cell line validation (C55), and comparative analyses showing consistent performance across different experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "MIEL identified 122 active compounds from 222 tested epigenetic drugs, demonstrating increased detection sensitivity compared to standard intensity-based thresholding methods which identified only 94 compounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are directly supported by experimental data from the epigenetic drug screen. The comparative analysis with intensity-based methods is clearly documented in Figure 1b, showing MIEL's superior detection across all functional categories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C48"
+    ],
+    "result": "MIEL accurately classified epigenetically active drugs by molecular function with 91.4% average accuracy using discriminant analysis, substantially outperforming intensity-based methods (51.6% accuracy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C48 are supported by discriminant analysis results shown in Figure 1c,d. The classification accuracy is quantified and compared directly with intensity-based approaches, demonstrating MIEL's superior performance in functional categorization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C21"
+    ],
+    "result": "MIEL detected off-target effects of valproic acid at low concentrations, revealing epigenetic changes distinct from known HDAC inhibition that correlated with transcriptomic profiles (R=0.91, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 describe the valproic acid case study supported by multiple lines of evidence: MIEL detection, immunofluorescence quantification, RNA sequencing, and correlation analysis. The high correlation between MIEL and transcriptomic data validates the biological relevance of detected changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MIEL revealed concentration-dependent epigenetic effects, showing that HDAC inhibitors produce distinct, separable epigenetic landscapes at different concentrations (0.1-10 \u00b5M), while other drug classes show concentration-independent profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by discriminant analysis across concentration ranges (Figure 2a) and correlation with cytotoxicity (Figure 2b). The data demonstrate MIEL's ability to detect dose-dependent effects and distinguish them from toxicity-related changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "MIEL profiles showed significant positive correlation across four glioblastoma cell lines, enabling accurate separation of drugs with distinct functions (100% accuracy) but not similar functions (76.8% accuracy), with drug effects correlating with target gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by multi-cell line validation data (Figure 2c-e) and correlation with gene expression (Figure 2\u2014figure supplement 1b,c). The inverse correlation between Sirt1 expression and SIRT inhibitor effect (R=-0.87) demonstrates biological validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C73",
+      "C74"
+    ],
+    "result": "BET inhibitors synergized with TMZ in three glioblastoma lines (CDI 0.51-0.78) but not in three others (CDI 1.2-1.4), with MIEL-measured BET inhibitor activity significantly correlating with synergy in responsive lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66, C73-C74 are supported by synergy experiments (Figure 3c), MIEL activity measurements (Figure 3d), and correlation analysis. The data demonstrate MIEL's ability to rank drug activity and predict functional outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "BET inhibitors synergize with TMZ by reducing MGMT expression in MGMT-expressing glioblastoma lines, as demonstrated by the lack of additional benefit when combining BET inhibitors with direct MGMT inhibitor Lomeguatrib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by qPCR data showing differential MGMT expression (Figure 3e), BET inhibitor-induced MGMT reduction (Figure 3f), and combination experiments with Lomeguatrib (Figure 3g). The mechanistic link is well-established through multiple complementary experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "PARP inhibitor activity did not correlate with MIEL-measured epigenetic effects, suggesting a non-epigenetic mechanism of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by the lack of correlation shown in Figure 3d (bottom panel) and Figure 3\u2014figure supplement 1b. This negative result is important for demonstrating MIEL's specificity for epigenetic mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "MIEL accurately discriminated between three cell fates (fibroblasts, iPSCs, NPCs) across three donors with 100% accuracy at both population and single-cell levels, but showed low accuracy (55.5%) for discriminating between donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by discriminant analysis (Figure 4b,c) and SVM classification (Figure 4\u2014figure supplement 1b,d). The high accuracy for cell fate and low accuracy for donor discrimination demonstrates MIEL's sensitivity to cell state over genetic background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "MIEL discriminated between primary hematopoietic cell types (lymphoid, myeloid, stem/progenitors) from mouse bone marrow but could not separate closely related stem and progenitor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by data in Figure 4\u2014figure supplement 2. This demonstrates MIEL's applicability to primary cells and defines its resolution limits for distinguishing closely related cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "MIEL distinguished tumor-propagating cells (TPCs) from differentiated glioma cells (DGCs) with 100% accuracy at the population level and 83% at single-cell level, with a classifier trained on one TPC/DGC pair generalizing to other pairs with 88% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by discriminant analysis (Figure 4d) and SVM classification (Figure 4e,f). The generalizability across different TPC/DGC pairs demonstrates the robustness of the epigenetic signature for glioblastoma differentiation state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Three days of serum or Bmp4 treatment initiated TPC differentiation, as evidenced by downregulation of stemness transcription factors, reduced expression of stemness signature genes, attenuated growth rate, and enrichment of differentiation-associated GO categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by immunostaining (Figure 4\u2014figure supplement 3a), RNA sequencing (Figure 4\u2014figure supplement 3b,c), and GO analysis (Figure 4\u2014figure supplement 4). Multiple complementary assays confirm that short-term treatment induces differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "MIEL distinguished serum- and Bmp4-induced differentiation with 100% accuracy, and MIEL-based distances showed high correlation (R=0.93, p<0.001) with global gene expression-based distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by discriminant analysis (Figure 4h) and correlation analysis (Figure 4i,j). The high correlation with transcriptomic data validates MIEL as a proxy for cellular state and demonstrates its ability to distinguish closely related differentiation routes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "MIEL screening of the Prestwick library identified 31 differentiation-inducing compounds, with MIEL-based rankings showing high correlation (R=0.92, p<0.001) with gene expression-based rankings, correctly identifying etoposide as the top candidate and digoxin as the lowest-ranking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by the Prestwick screen results (Figure 5a,b), correlation analysis (Figure 5c), and RNA sequencing validation (Figure 5d). The high correlation between MIEL and transcriptomic rankings demonstrates MIEL's utility for compound prioritization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Sox2 protein levels did not correlate with the degree of differentiation assessed by global gene expression, while MIEL-based metrics did correlate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by correlation analysis in Figure 5\u2014figure supplement 2d. This demonstrates that MIEL provides more accurate information about differentiation state than traditional single-marker approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C100",
+      "C101"
+    ],
+    "result": "A single histone modification yielded similar detection rates to multiple modifications for MIEL analysis across most functional categories, but separating similar drug classes required multiple modifications. H3K27me3 showed consistently reduced detection except for EZH1/2 inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C100-C101 are supported by comparative analysis in Figure 1\u2014figure supplement 2a and Figure 1\u2014figure supplement 3b. The data demonstrate both the robustness of individual marks and the added value of multiple marks for fine discrimination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "DAPI texture features yielded 65.6% classification accuracy compared to 86.4% for H3K9me3, suggesting DAPI may be a cheaper alternative for applications with very distinct epigenetic landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by discriminant analysis in Figure 1\u2014figure supplement 3b. While DAPI shows reduced accuracy, the data support its potential utility in specific applications, appropriately qualified by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Class I+HDAC6 inhibitors displayed the same MIEL profile as Pan HDAC inhibitors, likely due to high expression of HDAC Class I and HDAC6 and low expression of other HDACs in GBM2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by discriminant analysis results and RNA sequencing data showing HDAC expression levels (Figure 1\u2014figure supplement 4a,b,c). The mechanistic explanation is reasonable given the expression data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C11"
+    ],
+    "result": "High-content phenotypic screening is the approach of choice for drug discovery, but current methods for collecting epigenetic information are not adapted for high-content screening, representing a gap that MIEL addresses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9, C11 establish the context and motivation for MIEL development. While these are primarily literature-based assessments, they are reasonable characterizations of the field supported by the authors' citations and the demonstrated need for MIEL.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Glioblastoma is the most common and lethal brain tumor with limited therapeutic progress. Tumor-propagating cells (TPCs) are more resistant to standard treatments, potentially explaining therapeutic failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 provide clinical context supported by appropriate citations. These are well-established facts in the glioblastoma field that motivate the therapeutic applications of MIEL.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Targeting epigenetic enzymes to increase sensitivity to cytotoxic treatments and differentiating TPCs to reduce tumorigenic potential are established therapeutic approaches for glioblastoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 describe established therapeutic strategies supported by multiple citations. These provide the rationale for using MIEL to identify drugs that sensitize glioblastoma to chemotherapy or induce differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The four histone modifications used in MIEL have well-established biological functions: H3K27me3 and H3K9me3 mark heterochromatin, H3K27ac marks active chromatin at promoters/enhancers, and H3K4me1 marks enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 describe established knowledge about histone modifications supported by appropriate citations. This provides the biological rationale for the choice of marks used in MIEL.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Similar texture features have been successfully employed for cell painting techniques to classify subcellular protein localization, cellular subpopulations, and drug mechanisms of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by citations to previous work. This establishes precedent for the computational approach used in MIEL and situates it within the broader field of high-content screening.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The magnitude of drug-induced profile changes varies between individual drugs within each drug class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by MIEL distance measurements shown in Figure 3\u2014figure supplement 1a. This observation motivates the drug ranking experiments and demonstrates MIEL's sensitivity to differences within drug classes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "No drugs were identified that synergized with radiation therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is a negative result from the synergy screen shown in Figure 3b. While negative, this result is clearly documented and helps define the scope of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "MGMT provides defense against DNA alkylating agents like TMZ and is epigenetically silenced in many glioblastomas. MGMT silencing improves TMZ response, but clinical trials combining TMZ with MGMT inhibitors have not improved outcomes, possibly due to required dose reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C105-C107 provide established clinical and molecular context supported by appropriate citations. This background is essential for interpreting the BET inhibitor findings and their potential clinical relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C102",
+      "C104",
+      "C108",
+      "C110",
+      "C113"
+    ],
+    "result": "MIEL's capabilities make it an attractive alternative for primary screens, could aid in personalized medicine, and represents the first high-throughput screening signature for glioblastoma differentiation, though further studies are needed to determine clinical utility of BET inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102, C104, C108, C110, C113 are primarily speculative statements about future applications and potential impact. While the demonstrated capabilities support these possibilities, they represent inferences about future utility rather than established results. The authors appropriately qualify these statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C103",
+      "C109",
+      "C111"
+    ],
+    "result": "Phenotypic profiling has been used for genotype-specific drug responses, serum and BMP4 are established differentiation inducers, and previous glioblastoma differentiation studies were not suitable for high-throughput screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C109, C111 provide literature context supported by citations. These establish precedent for the approaches used and highlight the novelty of MIEL's application to glioblastoma differentiation screening.",
+    "result_type": "MINOR"
+  }
+]

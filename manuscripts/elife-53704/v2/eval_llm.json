@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The study collected blood samples from two healthy donors (M1 and P30) at multiple timepoints before and after YFV17D immunization, with appropriate ethical approval from the institutional review board.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 describe the basic study design and ethical compliance. These are straightforward methodological claims that are well-documented in the Materials and methods section and are standard for human subject research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Primary YFV17D immunization induced expansion of approximately 1580 TCR beta and 1566 TCR alpha clonotypes, representing 6.7% and 7.8% of the TCR repertoire respectively, with a cumulative 950-fold expansion within 2-3 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 present quantitative measurements from TCR sequencing that are consistent with previous studies (C5 cites multiple prior works). The data are shown in Figure 1B,C and represent core findings about the magnitude of primary response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The secondary response to YFV17D booster vaccination was weaker (2.5-fold increase to 0.5% of repertoire) but faster (peak at day 5 vs day 15) than primary response, with minimal recruitment of new naive clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 characterize the secondary response dynamics. The quantitative measurements are supported by TCR sequencing data (Figure 1D), and the conclusion about minimal naive recruitment (C9) is based on edgeR analysis showing only 73 additional clonotypes with negligible impact (C8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "CD4+ and CD8+ T-cell subsets showed distinct response dynamics, with CD4+ cells peaking earlier and expanding more during secondary response, while showing faster contraction than CD8+ cells during primary response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 describe differential dynamics between CD4+ and CD8+ subsets with specific quantitative measurements from TCR sequencing (Figure 1D). The conclusion (C14) is supported by the data and consistent with previous reports (Blom et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Donor P30, vaccinated 30 years prior, showed a booster response with 204 TCR beta and 201 TCR alpha clonotypes (0.69% peak frequency), with dynamics similar to the 18-month booster in donor M1, suggesting maintained protection after 30 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15-C21 describe the long-term memory response. While the quantitative measurements (C16-C19) are supported by data, the inference about maintained protection (C21) is based solely on similarity of response dynamics without direct measurement of protective immunity or viral challenge. The claim requires functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Despite overall weaker secondary response, individual clones showed remarkable expansion rates comparable to primary immunization in both donors after 18 months and 30 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe heterogeneity in clonal responses. The data are shown in Figure 2A,B and Figure 2\u2014figure supplement 1, demonstrating that while the aggregate response is weaker (C22), individual clones can expand robustly (C23-C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "96% of CD4+ and 88% of CD8+ clones responding to primary immunization were re-identified after booster, suggesting maintenance of nearly all responding repertoire diversity in memory, contrasting with previous reports of only 5-6% preservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 present high re-identification rates from TCR sequencing data. However, the discrepancy with prior work (C31) is attributed to sampling depth (C32), which is speculative but reasonable. The core finding of high persistence is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "CD8+ and CD4+ clones showed different expansion patterns upon booster: the largest CD8+ clones did not expand while rare clones expanded most, whereas CD4+ clones of both high and low frequency expanded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe differential expansion patterns between CD4+ and CD8+ subsets shown in Figure 2\u2014figure supplement 3A,B. The observations are clearly documented in the data, though mechanistic explanations are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Unsupervised clustering of clonal trajectories can identify YF-responding clones without biological replicates, and trajectory similarity can be used to computationally pair alpha and beta chains from bulk sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe methodological advances. The clustering method (C36-C37) is demonstrated in Figure 2\u2014figure supplement 4AB with validation against edgeR. The computational pairing method (C38) is shown in Figure 2\u2014figure supplement 4C with validation using single-cell data (C104-C105).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Memory T-cell subpopulations (EM, EMRA, CM, Tscm) were isolated and sequenced, showing that memory status correlates with CD4/CD8 status, with CD4+ cells predominantly in EM/CM and CD8+ cells in EM/EMRA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 describe the experimental approach and baseline distribution of memory subsets. The methods are standard (C42-C43 cite established definitions), and the distributions (C45-C46) are consistent with previous studies (C44 cites Sathaliyawala et al., 2013; Thome et al., 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "YF-responding CD8+ clones showed significant shift toward EMRA phenotype between days 15 and 45, resulting from EM cell decay and EM-to-EMRA phenotype switching, with nearly all clones in EMRA by 18 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe memory phenotype transitions with statistical support (Figure 3C shows significant shift). The mechanistic interpretation (C49) is supported by data in Figure 3\u2014figure supplement 2B,D, and the long-term outcome (C50) is quantified (41/71 clones in EMRA only).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "No phenotype switching trend was observed for CD4+ T-cells between days 15 and 45, potentially due to CM cell homing to lymphoid organs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 reports negative findings from TCR sequencing data. However, C52 is explicitly labeled as a hypothesis to explain the lack of observed switching, acknowledging that the phenomenon may be masked rather than absent. The explanation is plausible but unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The NS4B214-222 immunodominant epitope elicited strong CD8+ response, with approximately 2100 alpha and 2000 beta TCR sequences obtained, representing 24-60% of total YF-responding CD8+ T-cells at peak response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 quantify the immunodominant response. C53 is well-established (cites 4 previous studies), C54 describes the dataset size, and C55-C56 provide quantitative measurements shown in Figure 4A. C57 notes that NS4B-specific clones cannot be distinguished by dynamics alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "NS4B-specific TCRs showed biased V-gene usage and CDR3 lengths, with TCR alpha enriched for TRAV12-2 (>45% vs 4.5% in bulk) and TCR beta showing clusters with biases toward TRBV9, TRBV15, TRBV6-1/2, and TRBJ2-7 (37%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C61-C62 describe sequence features of NS4B-specific TCRs with quantitative measurements shown in Figure 4D,E. The V-gene enrichments are statistically significant (exact Fisher test, adjusted p<0.001), and the observations are consistent with prior reports (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Single-cell paired TCR sequencing of 3500 cells (164 clonotypes) revealed mostly random alpha-beta pairing with exceptions: TRAV12-2 paired with diverse beta chains but restricted CDR3\u03b2 length (13-14 aa), and TRAV27 preferentially paired with TRBV9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 describe alpha-beta pairing patterns from single-cell data. The dataset size (C63) is clearly stated, and the pairing patterns (C64-C67) are shown in Figure 4G and Figure 4\u2014figure supplement 3A,C with TCRdist clustering validation (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Structural modeling and docking simulations showed TRAV12-2 TCRs form more CDR1\u03b1 contacts and fewer CDR3\u03b1 contacts with peptide than TRAV27 TCRs, with TRAV12-2 CDR3\u03b1 sequences similar to pre-immunization repertoire, suggesting two distinct binding modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C72 combine prior work (C68-C69) with computational modeling (C70-C71) to propose a hypothesis (C72). While the modeling results (C70) are shown in Figure 4\u2014figure supplement 4A and the CDR3\u03b1 similarity observation (C71) is data-supported, the structural models are computational predictions without experimental validation (e.g., crystallography, mutagenesis). The hypothesis is reasonable but requires experimental confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Single-cell RNAseq revealed three sub-phenotypes within EMRA NS4B-specific cells 18 months post-vaccination, with 166 differentially expressed genes defining clusters: cluster 1 with high cytotoxicity genes (GZMB, GNLY, PRF1) and cluster 2 enriched for memory maintenance genes (IL7R, CCR7, TCF7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 describe scRNAseq analysis with clear methodology (Seurat 3.0, MAST algorithm) and results shown in Figure 5A,B. The gene expression patterns are well-documented (Figure 5\u2014figure supplement 1A,B), and interpretations about cytotoxicity (C78) and memory maintenance (C79) are supported by citations to relevant literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Gene expression patterns suggest cluster 2 cells may be precursors of cluster 1, with cluster 2 showing early memory markers (GZMK, ribosomal proteins) and cluster 1 showing terminal differentiation markers (GZMB, GZMH, KLRG1), supported by intermediate cluster 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C86 propose a differentiation trajectory based on gene expression patterns. While the expression data are solid (C83-C85 cite supporting literature) and cluster 3 shows intermediate expression (C86), the precursor-product relationship (C82) is inferred from cross-sectional data without lineage tracing or temporal validation. This is a reasonable hypothesis but lacks direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Clonotype-averaged gene expression analysis confirmed two clusters matching single-cell clusters, with both capable of responding to booster but cluster 1 clonotypes having higher frequencies at day 45 and 18 months, suggesting clonotype-phenotype linkage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 integrate TCR sequencing with scRNAseq data. The clonotype-level analysis (C89) is shown in Figure 5\u2014figure supplement 2A, expansion capability (C90) is demonstrated, frequency differences (C91) are quantified in Figure 5\u2014figure supplement 2B, and the inference about clonotype-phenotype association (C92) is supported by non-random distribution (Figure 5C, \u03c7\u00b2-test p=0.0005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The computational alpha-beta pairing algorithm correctly identified 41/62 (66%) NS4B-specific pairs and 20/26 (77%) CD3+ T-cell pairs from bulk TCRseq data when validated against single-cell data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 provide validation metrics for the computational pairing method described in C38. The success rates are clearly stated and represent reasonable performance for a computational prediction method, though the accuracy varies between epitope-specific (66%) and bulk (77%) samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "YF-responding clonotypes were identified using edgeR with FDR-adjusted p<0.01 and log2FC>5 thresholds, with the fold-change threshold justified to filter background expansions observed in unvaccinated donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 describe the statistical methodology for identifying responding clonotypes. The criteria are clearly stated (C106), and the rationale for the fold-change threshold (C107) is supported by citation to previous work (Pogorelyy et al., 2018) showing background expansions in controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "TCR-pMHC structural modeling was performed for 152 TCRs using RepBuilder and RosettaDock, generating 1000 decoys per TCR with the top 30 used for contact analysis, with filtering to remove non-physiological binding modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 describe computational methods for structural modeling. The approach is standard (cites established tools), sample sizes are stated (C111-C112), and quality control filtering (C114) is appropriate based on prior knowledge about docking artifacts (Pierce and Weng, 2013).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "YFV17D vaccination recruits a diverse T-cell repertoire maintained as memory for years, with epitope-specific cells showing multiple TCR motifs and phenotypes, though the response is strongly focused on a single HLA-A02-restricted epitope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 summarize major findings. C115-C116 are well-supported by the collective data on clonal diversity and persistence. C117 is explicitly speculative about functional significance. C118 about immunodominance is strongly supported by quantitative data (C55-C56). This represents an appropriate summary with clear distinction between findings and speculation.",
+    "result_type": "MAJOR"
+  }
+]

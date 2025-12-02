@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C91",
+      "C95"
+    ],
+    "result": "DC cortical stiffness increases 2-3 fold upon maturation. Immature BMDCs have a Young's modulus of 2.2\u00b11.7 kPa, while mature BMDCs reach 3.3\u00b11.4 kPa. Similar increases are observed in splenic DCs (1.9\u00b10.7 kPa immature to 4.8\u00b11.7 kPa mature), establishing the biologically relevant stiffness range as 2-8 kPa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 provide direct AFM measurements with appropriate controls (CD86-negative cells in LPS-treated populations, C25-C26) demonstrating that stiffness increases are specific to maturation. The measurements are replicated in both BMDCs and ex vivo splenic DCs (C27-C29), strengthening the conclusion. Statistical significance is shown in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The maturation-induced increase in DC stiffness depends on actin polymerization, primarily through WASp-mediated Arp2/3 activation. Actin depolymerizing drugs (cytochalasin-D, latrunculin-B) reduce mature DC stiffness to immature levels but do not affect immature DCs. WASp knockout DCs show reduced stiffness similar to Arp2/3 inhibition by CK666, while fascin and HS1 knockouts show no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C52 provide comprehensive pharmacological and genetic evidence. The drug studies (C32-C35, C40-C43) show actin-dependence with appropriate controls. Genetic studies (C39, C44-C49) identify WASp as the key regulator, with the WASp-KO phenotype mirroring CK666 inhibition (C46-C47). The specificity is demonstrated by negative results with fascin and HS1 knockouts (C39, C44). Statistical significance is reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C102"
+    ],
+    "result": "DC cortical stiffness is a cell-intrinsic property independent of substrate stiffness. BMDCs maintain characteristic stiffness values when plated on substrates ranging from 2 kPa to glass (GPa range).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 report direct experimental measurements showing no effect of substrate compliance on DC stiffness (Figure 1D). The authors note they could detect substrate-dependent changes in control fibroblasts, validating their experimental system. This distinguishes DCs from other cell types and supports the biological relevance of DC stiffness regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C92"
+    ],
+    "result": "Increasing substrate stiffness lowers the threshold dose of pMHC-II needed for CD4+ T cell activation. Over the DC-relevant stiffness range (2-8 kPa), the required TCR signal dose shifts by 1-2 logs for surface marker upregulation (CD25, CD69) and IL-2 production increases ~3-fold at 8 kPa vs 2 kPa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 provide dose-response data across multiple activation readouts (CD25, CD69, IL-2, proliferation) showing graded stiffness responses. The quantitative shift (1-2 logs, C56) is clearly demonstrated in Figures 3-4. The effect is particularly evident at low antigen doses (C62), consistent with a costimulatory mechanism. Multiple independent experiments (N=3) support reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C58",
+      "C59",
+      "C67",
+      "C68",
+      "C71",
+      "C93"
+    ],
+    "result": "CD4+ T cells show much more profound stiffness sensitivity than CD8+ T cells. CD8+ T cells exhibit little to no stiffness sensitivity for early activation markers, only mild stiffness-dependent proliferation, and similar ligand concentration thresholds across stiffness ranges. This difference stems from intrinsic properties of the T cell subsets rather than the specific pMHC/TCR pairs used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C67-C68 provide direct comparative data showing minimal CD8+ responses for surface markers but some IL-2 production sensitivity. Claim C71 addresses a key alternative explanation by showing the difference persists with anti-CD3 stimulation (Figure 5\u2014supplement 1), ruling out antigen-specific effects. The interpretation linking this to differential costimulation dependence (C72-C73) is reasonable but more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "T cells sense substrate stiffness most effectively through direct TCR\u03b1\u03b2 engagement by pMHC rather than through anti-CD3\u03b5 or anti-TCR\u03b2 antibodies. On physiologically relevant stiffness (8 kPa), pMHC stimulation produces robust CD4+ T cell proliferation while anti-CD3\u03b5 yields minimal response. On soft substrates (2-4 kPa), pMHC elicits proliferation while anti-CD3 does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 provide systematic comparison of three stimulation methods across stiffness ranges (Figure 6). The differential responses are clearly demonstrated, with pMHC consistently showing stronger stiffness sensitivity, particularly in the physiologically relevant range. Claim C83's interpretation regarding receptor deformation is reasonable given the data, though the mechanism remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C90"
+    ],
+    "result": "Changes in DC stiffness impact T cell priming efficiency. WASp-KO BMDCs (~20% softer than WT) prime T cells less efficiently at low OVA concentrations, but higher OVA concentrations rescue this defect, indicating that loss of WASp shifts the peptide dose requirement rather than abolishing priming capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide direct evidence linking DC stiffness to priming function using genetic manipulation. The dose-response shift (Figure 7B) parallels the hydrogel findings, supporting the costimulatory model. However, the authors could not test the converse (stiffer DCs) effectively, as CA-WASp overexpression (C88-C89) only increased stiffness to ~5 kPa, insufficient to enhance priming based on hydrogel data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Substrate stiffness affects IL-2-independent events required for CD4+ T cell proliferation. Soft hydrogels (2-4 kPa) induce CD25 upregulation without proliferation, and exogenous IL-2 does not rescue proliferation on soft surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 provide clear experimental evidence (Figure 4C-E) showing dissociation between activation (CD25 upregulation) and proliferation on soft substrates. The IL-2 rescue experiment (C65) directly tests and rules out IL-2 limitation as the sole explanation. Claim C66's conclusion about IL-2-independent events is a reasonable inference from these data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "CD8+ T cells exhibit a binary stiffness response at low peptide doses, with cells on very stiff substrates (25 kPa or plastic) surviving and proliferating while cells on softer substrates are lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 describe an interesting observation from Figure 5C-D showing differential survival/proliferation at low antigen doses. However, the authors note this occurs outside the biologically relevant DC stiffness range (2-8 kPa), limiting its physiological significance. The observation is well-documented but its interpretation and relevance remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "CTL degranulation shows only mild stiffness dependency, with little to no impact within the DC-relevant range (2-8 kPa). Increased degranulation is only observed on very stiff surfaces (12 and 25 kPa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 report direct measurements of CD107a exposure (Figure 5E) showing minimal stiffness effects in the physiologically relevant range. The observation that effects only appear at higher stiffnesses is clearly documented. This contrasts with the robust stiffness sensitivity of na\u00efve T cell priming, supporting the authors' interpretation about differential mechanosensing requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C94",
+      "C105",
+      "C106",
+      "C126"
+    ],
+    "result": "Maturation-associated cytoskeletal changes alter DC biophysical properties, providing mechanical cues that costimulate T cell activation. Stiffening of the DC cortex during maturation provides biophysical cues that work together with canonical costimulatory signals to enhance T cell priming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions synthesizing all experimental findings. The evidence from DC stiffness measurements (C1), actin-dependence (C36), T cell stiffness responses (C2-C4), and WASp-KO priming defects (C90) collectively support this model. The integration with prior work on ligand mobility (C106) strengthens the conceptual framework. The mechanistic details remain somewhat speculative but the overall conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Stiffer substrates have a sensitizing effect on CD4+ T cells similar to classical costimulatory molecules like CD28. The relative lack of stiffness responses in CD8+ T cells fits with their reduced dependence on costimulatory signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 provide an interpretive framework for the differential CD4+/CD8+ responses, supported by citations to established literature on costimulation requirements. While the analogy to CD28 is conceptually appealing and consistent with the dose-shift data, this remains an interpretation rather than a directly tested mechanism. The reasoning is sound but additional experiments would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors propose that stiffer substrates allow T cells to exert more force through TCR interactions, inducing more effective signaling. Direct TCR\u03b1\u03b2 engagement leads to conformational changes transmitted appropriately for efficient signaling, while CD3 engagement induces smaller changes and more limited signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C116, C119-C120) represent proposed mechanisms based on the experimental findings and literature, but are explicitly speculative (\"we propose,\" \"we postulate\"). While consistent with the data showing differential responses to pMHC vs anti-CD3, the conformational change mechanism is not directly tested in this study. Claim C121 about CD4 involvement is also speculative. These are reasonable hypotheses requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Overexpression of constitutively active WASp (CA-WASp) increases mature BMDC stiffness by ~20% but does not enhance T cell priming efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 report clear experimental results (Figure 7A, C). However, the authors appropriately note that the stiffness increase only reaches ~5 kPa, which based on their hydrogel data is insufficient to expect enhanced priming. This negative result is informative but limited by the inability to achieve higher stiffness values. The result is well-documented but its interpretation is constrained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Bufi et al., 2015 reported similar trends for human monocyte-derived DCs with lower absolute Young's modulus values, likely due to different measurement methods that can produce values varying by up to 100-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 appropriately contextualize the current findings with prior literature. The citation to Wu et al., 2018 (C97) supports the explanation for methodological differences. This comparison strengthens confidence in the biological trend (maturation increases stiffness) while acknowledging technical variability in absolute measurements. The reasoning is sound and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The observed increase in cortical stiffness likely results from redistribution of the active Cdc42 pool, as overall levels of active Cdc42 are diminished during DC activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 states established knowledge about Cdc42 levels, but C101 is explicitly speculative (\"it seems likely\"). While the hypothesis is reasonable given that Cdc42 can activate both WASp and formins (C99), the redistribution mechanism is not directly tested. This represents an interesting hypothesis requiring experimental validation through Cdc42 localization studies or activity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C109"
+    ],
+    "result": "The ability of DCs to regulate cortical stiffness as a function of maturation state despite environmental cues reflects the importance of this property for priming appropriate T cell responses. Biophysical properties of the DC cortex may play a role in inducing differentiation of regulatory T cells by tolerogenic DCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C104, C109) are explicitly proposed interpretations (\"we propose\") extending beyond the current data. While C104 draws a reasonable analogy to DC migration behavior (C103), and C109 connects to literature on tolerogenic DCs (C107-C108), neither is directly tested. These represent interesting hypotheses for future work but lack experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "Mechanosensing may be an obligate component of the feedback loop underlying force-dependent TCR triggering, potentially explaining why effector T cells retain stiffness sensitivity despite interacting with diverse target cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C125 is explicitly speculative (\"it is possible\") and attempts to reconcile the observation that effector T cells show some stiffness sensitivity despite needing to function against diverse targets. This is an interesting hypothesis but lacks direct experimental support. The speculation is reasonable but would require additional experiments to validate.",
+    "result_type": "MINOR"
+  }
+]

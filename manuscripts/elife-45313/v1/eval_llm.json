@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "PDA is a lethal cancer with poor prognosis and common genetic alterations. PDA is projected to become the second leading cause of cancer-related deaths by 2030, has a 5-year survival rate of less than 10%, and harbors activating KRAS mutations in ~95% of cases and inactivating mutations in TP53, CDKN2A, and SMAD4 in 50-70% of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-established facts about PDA supported by multiple citations to prior literature. These background claims provide context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "PDA comprises two main molecular subtypes\u2014classical and basal-like\u2014with distinct features and clinical outcomes. Classical PDA is enriched for epithelial differentiation genes, while basal-like PDA is characterized by mesenchymal markers, poorly differentiated histology, and worse prognosis. These subtypes are preserved across multiple experimental models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 summarize well-established prior work on PDA subtypes, supported by multiple citations. These provide essential background but represent prior knowledge rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The Hedgehog pathway plays complex roles in PDA pathogenesis. While Hh ligands (SHH, IHH) are induced during PDA development and SHH restrains cancer growth, GLI transcription factors in the epithelium are required for oncogenesis, as demonstrated by genetic manipulation studies in mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 summarize prior work on Hedgehog signaling in PDA, supported by multiple citations including the authors' previous work. These establish the rationale for investigating GLI proteins but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "PDA cell lines exhibit an inverse correlation between GLI2 and SHH expression. All cell lines express Hh pathway proteins, with GLI2 detectable in 10/14 lines. Cell lines with highest GLI2 levels show lowest SHH expression, and GLI transcriptional activity inversely correlates with SHH and positively correlates with GLI expression, as validated by luciferase reporter assays and knockdown/inhibitor experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 are well-supported by immunoblot data (Figure 1A), luciferase reporter assays (Figure 1B,C), and validation experiments with GLI2 knockdown and GANT61 inhibitor (Figure 1\u2014figure supplement 1C,D). The data clearly demonstrate the inverse relationship between GLI and SHH.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Analysis of TCGA patient data reveals that high GLI2 expression correlates with low SHH/IHH expression and predicts poor survival outcomes. High GLI2 expression is associated with shortened overall and disease-free survival, while high SHH expression correlates with longer disease-free survival. These associations are independent of tumor purity and standard clinical variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by TCGA RNA-seq analysis (Figure 1\u2014figure supplement 1E), tumor purity analysis (C27), and Kaplan-Meier survival curves (Figure 1D,E). The multivariate analysis (Figure 1\u2014figure supplement 2) confirms independence from clinical covariates. The findings are statistically significant and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "GLI expression correlates with EMT status and basal-like subtype in PDA. Most GLI-high/Hh-low cell lines exhibit EMT-high features, and GLI activity positively correlates with published EMT scores while SHH expression correlates negatively. In TCGA samples, GLI2 is enriched in basal-like tumors while SHH/IHH correlate with the classical subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by immunoblot/qRT-PCR data (Figure 2A, Figure 1\u2014figure supplement 1H), correlation analyses with published EMT scores (Figure 2B,C), and TCGA subtype analysis (Figure 2E). The data consistently demonstrate the association between GLI2, EMT, and basal-like subtype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Forced GLI2 expression is sufficient to drive classical-to-basal-like subtype conversion in PDA cells. GLI2 overexpression induces mesenchymal markers (ZEB1, VIM, KRT14), downregulates epithelial markers (E-Cadherin, ESRP1) and classical subtype regulators (GATA6, SHH), causes morphological changes toward mesenchymal phenotype, and activates EMT and basal-like gene programs as demonstrated by RNA-seq and qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 are well-supported by multiple complementary experiments: immunoblots (Figure 3A, Figure 3\u2014figure supplement 1A), morphology changes (Figure 3B, Figure 3\u2014figure supplement 1C), GSEA showing EMT as top enriched program (Figure 3D), and qPCR validation of subtype switching (Figure 3E-G). Both stable and inducible GLI2 systems show consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "GLI2 is necessary for maintaining the basal-like phenotype in PDA cells. GLI2 knockdown or knockout in basal-like cell lines decreases basal-like markers, induces epithelial markers, causes morphological switch to epithelial phenotype, and relocates ESRP1 to the nucleus. While GLI2 knockout shows modest effects on in vitro growth, it significantly impairs in vivo tumor growth and causes subtype switching (decreased S100A2, increased GATA6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by loss-of-function experiments using siRNA, shRNA, and CRISPR knockout in KP4 and Panc0327 cells. Data include immunoblots (Figure 4A, Figure 4\u2014figure supplement 1A), qPCR (Figure 4B,C), morphology (Figure 4D), immunofluorescence (Figure 4E), growth assays (Figure 4F,G), and IHC (Figure 4H). The in vivo data particularly strengthen the functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "KRAS ablation induces GLI2 expression and basal-like subtype switching in PDA cells. In the iKRAS model, Dox withdrawal leads to rapid Kras extinction and reciprocal increase in Gli2/Gli1 expression, accompanied by upregulation of EMT and basal-like genes. Similar effects occur with KRAS knockdown in human cell lines, and GLI inhibition blocks basal-like gene induction upon KRAS ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by qPCR and immunoblot data from iKRAS cells (Figure 5A-C, Figure 5\u2014figure supplement 1A-D) and human cell lines (Figure 5D,E). The GANT61 inhibitor experiment (Figure 5F) provides critical evidence that GLI2 mediates the basal-like switch upon KRAS loss. The temporal dynamics are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "GLI2 enables PDA cells to survive and grow independently of oncogenic KRAS. Ectopic GLI2 expression rescues colony formation and spheroid growth following KRAS ablation in both mouse and human PDA cells. GLI2 is upregulated in 6/7 KRAS-independent 'Escaper' cell lines. GLI2 knockdown does not affect growth with KRAS present but suppresses emergence of resistant colonies upon KRAS withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 are supported by colony formation assays (Figure 5G, Figure 5\u2014figure supplement 2C), spheroid culture experiments (Figure 5H,I, Figure 5\u2014figure supplement 2D,E), analysis of Escaper lines (Figure 5J), and long-term spheroid assays with GLI2 knockdown (Figure 5K-M, Figure 5\u2014figure supplement 2G-I). The data demonstrate GLI2's role in KRAS-independent survival.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "GLI2 directly upregulates SPP1/Osteopontin (OPN) expression in PDA cells. RNA-seq identified SPP1 among top GLI2-induced genes, confirmed by ELISA in multiple cell lines. ChIP demonstrates GLI2 binding to the SPP1 promoter. SPP1 expression increases during KRAS-induced basal-like switching, and basal-like cell lines express highest SPP1/OPN levels along with OPN receptors. GLI2 knockdown decreases SPP1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 are well-supported by RNA-seq (Figure 6A), ELISA (Figure 6B,C, Figure 6\u2014figure supplement 1A), ChIP showing direct binding (Figure 6D), qPCR in multiple contexts (Figure 6E-H, Figure 6\u2014figure supplement 1B-E), and immunoblots (Figure 6F). The ChIP data provides strong evidence for direct transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Exogenous OPN is sufficient to induce basal-like gene expression and can rescue the basal-like phenotype upon GLI2 loss. Treatment of classical subtype cells with recombinant OPN increases basal-like genes and decreases classical genes. OPN co-treatment rescues 12 of 13 basal-like genes suppressed by GLI2 knockdown in basal-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by qPCR experiments showing OPN treatment induces basal-like genes in Capan2 (Figure 6I) and YAPC cells (Figure 6\u2014figure supplement 1F), and rescues basal-like gene expression upon GLI2 knockdown in Panc0327 cells (Figure 6J). The rescue experiment is particularly compelling evidence for OPN acting downstream of GLI2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "OPN is critical for basal-like tumor growth and metastasis in vivo. SPP1 knockout in KP4 cells decreases basal-like markers, increases classical markers, and causes epithelial morphology. While SPP1 knockout shows minimal effect on in vitro growth, it dramatically impairs subcutaneous tumor growth, severely reduces metastatic capacity in tail vein injection experiments, and prolongs survival. High SPP1 expression in basal-like patient tumors correlates with poor survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 are strongly supported by CRISPR knockout experiments with immunoblots (Figure 7A-C), morphology (Figure 7D), in vitro growth (Figure 7E), subcutaneous xenografts (Figure 7F,G), metastasis assays (Figure 7H,I), survival data (Figure 7J), and TCGA patient survival analysis (Figure 7K). The dramatic in vivo phenotypes despite minimal in vitro effects highlight OPN's importance in the tumor microenvironment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The GLI2-OPN axis is a master regulator of PDA subtype plasticity and drives the aggressive basal-like variant. PDA subtypes are not permanently encoded but can interconvert. GLI2 is elevated in basal-like tumors and sufficient to convert classical cells to basal-like. GLI2 upregulates OPN, which is critical for metastasis and KRAS-independent growth. High GLI2 and OPN predict poor patient survival, establishing this circuit as a driver of PDA plasticity and aggressiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 represent the major conclusions synthesized from the collective experimental findings. These are well-supported by the comprehensive data showing: (1) bidirectional subtype switching with GLI2 manipulation, (2) GLI2-OPN regulatory relationship, (3) functional importance in multiple contexts, and (4) clinical relevance. The conclusions are appropriately drawn from the data presented.",
+    "result_type": "MAJOR"
+  }
+]

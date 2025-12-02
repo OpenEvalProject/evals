@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C55",
+      "C82",
+      "C83"
+    ],
+    "result": "The ultra-fast force clamp (UFFC) system enables detection of myosin working strokes occurring within <200 \u03bcs to 5 ms of actin binding, with temporal resolution <100 \u03bcs and sub-nm spatial resolution. This represents the first single-molecule measurements of the delay between myosin attachment and working stroke as a function of applied load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C22-C23, C25-C26, C55, C82-C83 collectively demonstrate the technical capabilities and novel findings enabled by UFFC. The temporal resolution (<100 \u03bcs), spatial resolution (sub-nm), and ability to detect rapid strokes (within 1-5 ms) are directly supported by experimental data in Figures 1-4. The claim of 'first estimates' is supported by comparison to standard techniques (C24, C28-C31) showing 10 ms deadtime vs. 0.5-2.7 ms for UFFC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C27",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C85",
+      "C86"
+    ],
+    "result": "A short-lived actomyosin state capable of bearing loads up to 4.5 pN was resolved, with force-dependent detachment kinetics. Event durations span <1 ms to >1 s and require multi-exponential fits (2-3 components for forces >2.25 pN), with the fastest component (kf) ranging from 1\u00d710\u00b3 to 3-6\u00d710\u00b3 s\u207b\u00b9 and representing 20-40% of interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C27, C32, C34-C38, C85-C86 are well-supported by duration analysis in Figure 2 and statistical fitting using MEMLET. The multi-exponential nature of duration distributions, force-dependence of kf, and load-bearing capacity are directly measured. The asymmetric force dependence of kint (C38) is shown in Figure 2\u2014figure supplement 2. Sample sizes (784-1502 events from 5-8 molecules) are adequate for the statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C51",
+      "C93"
+    ],
+    "result": "Fast-detaching interactions (kf) do not become faster at 1 mM ATP, detach before completing the ATPase cycle, show no working stroke displacement at optimal time resolution (forces >1.5 pN), and likely represent 'weak-binding' states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C48-C49, C51, C93 are supported by ATP concentration experiments (Figure 2\u2014figure supplement 3) showing kf is ATP-independent, and ensemble averaging (Figure 3d) showing suppressed displacement in events <5 ms at forces >1.5 pN. The interpretation as weak-binding states is supported by comparison to literature (C45-C46) and kinetic behavior. The lack of ATP dependence is strong evidence for pre-ATPase cycle detachment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "Individual working strokes of 5-10 nm were observed, with force-dependent amplitudes decreasing linearly with hindering load for events >15 ms. Motor stiffness is estimated at 2.3 pN/nm (68% CI: 2.0-2.7 pN/nm). Stroke rates (kstroke) range from 700-5,250 s\u207b\u00b9, increasing with force from 1.5-3 pN then plateauing. A slower 1-1.5 nm displacement occurs in 50-100 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C50, C52-C54, C56-C57, C61 are supported by displacement analysis in Figure 3. The stiffness estimate (C53) is calculated from linear force-displacement relationship (Figure 3g) with appropriate confidence intervals. Stroke rates (C56-C57) are fitted from ensemble averages (Figure 4c) with 95% confidence intervals. The force-dependent increase in kstroke is counterintuitive but explained by kinetic selection (C58-C60). However, the stiffness calculation assumes compliance is solely within myosin, which may not be fully justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C92",
+      "C94",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C103",
+      "C126"
+    ],
+    "result": "The working stroke precedes phosphate release. This is supported by: (1) stroke timing is unaffected by 10 mM Pi (Figure 4), (2) stroke rate (kstroke) \u2265 fast detachment rate (kf), (3) biochemical Pi release rate (11.6-17 s\u207b\u00b9) is much slower than observed stroke rate (700-5,250 s\u207b\u00b9), and (4) if Pi release preceded stroke, <0.4-4% of molecules would produce strokes, contradicting observed 10-40% completing the cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C70-C73, C92, C94, C97-C98, C100-C101, C103, C126 provide converging evidence for stroke-before-Pi-release. The lack of Pi effect on stroke rate (C5, C70-C71) is strong evidence, as Pi rebinding before stroke would cause observable delay (Figure 4\u2014figure supplement 1). The kinetic argument comparing stroke rate to biochemical Pi release rate (C99-C101) is compelling. Simulations (C97, Figure 5\u2014figure supplement 2) show intermediate processes would need >10,000 s\u207b\u00b9 to match data. The logic is sound and multiple independent lines of evidence converge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C108",
+      "C110",
+      "C111",
+      "C114",
+      "C115",
+      "C127"
+    ],
+    "result": "After Pi release, Pi can rebind enabling working stroke reversal. Evidence includes: (1) 10 mM Pi increases rapid detachments by up to 50% at low forces, (2) individual traces show reversals to pre-stroke level, (3) ensemble averages show larger and more delayed 'dips' with Pi, and (4) Monte Carlo simulations with Pi rebinding recapitulate experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C64-C67, C74-C81, C108, C110-C111, C114-C115, C127 are well-supported by Pi experiments (Figures 2, 5). The increase in Af+Aint with Pi (C65-C67, Figure 2g-h) is quantified. Ensemble averages (Figure 5b-f) objectively show increased dip amplitude and delayed timing with Pi. Monte Carlo simulations (C81, Figure 5g-h, Figure 5\u2014figure supplement 1) successfully reproduce experimental observations, providing mechanistic support. The convergence of individual traces, ensemble averages, and simulations provides strong evidence for reversibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "A mechanistic model is proposed where a short-lived, stereospecific, open-cleft, Pi-bound state leads directly to working stroke with coupled cleft closure, followed by Pi release. The stroke and cleft closure are reversible with force-dependent rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C87-C89, C91, C104-C107, C120-C125 present the integrated mechanistic model. The model is well-supported by: (1) kinetic properties suggesting open-cleft conformation (C88-C89), (2) stereospecific force-bearing (C87), (3) tight coupling of stroke and cleft closure evidenced by lack of displacement in short events (C105-C107), and (4) reversibility shown by kint behavior and Pi effects (C108-C110, C125). The model successfully explains all major experimental observations (C120) and is consistent with previous literature (C104, C128-C132).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C68",
+      "C69"
+    ],
+    "result": "The slowest detachment rate (ks) is 6-8 s\u207b\u00b9 at 1 \u03bcM ATP, increases to 10-70 s\u207b\u00b9 at 1 mM ATP, and decreases ~2-fold with 10 mM Pi. This population represents motors completing the ATPase cycle, with ADP release limiting detachment at saturating ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C68-C69 are supported by rate constant analysis (Figure 2f, Figure 2\u2014figure supplement 3). The ATP concentration dependence (C40-C41) is consistent with ADP release being rate-limiting, supported by citations. The Pi effect (C68-C69) is interpreted as weak competition between Pi and ATP, also supported by citation (Amrute-Nayak et al., 2008). The interpretation is consistent with established myosin biochemistry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "Events <10 ms represent up to 50% of interactions and were not previously observable with standard techniques (10 ms deadtime) but are detectable with UFFC (0.5-2.7 ms deadtime). Lower time-resolution measurements on the same molecules show single exponential kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C33 are supported by comparison of UFFC to standard techniques and non-feedback measurements on the same molecules (Figure 2a, grey/black traces). The quantification of 50% of events <10 ms is directly from data. The deadtime values are measured (C31) or cited (C30). The comparison to non-feedback measurements on the same molecules (C33) is a strong control showing the UFFC reveals kinetic complexity masked by lower resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C95",
+      "C96"
+    ],
+    "result": "The observed stroke rate (kstroke) represents the sum of forward stroke rate (k+5) and reversal rate (k-4). Only events where stroke is faster than detachment contribute to ensemble averages, selecting faster strokes as kf increases. This explains the counterintuitive increase in kstroke with hindering force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C95-C96 provide kinetic interpretation of the force-dependent stroke rate. The reasoning is sound: observed rates are sums of competing processes (C58), measurement selects events where stroke wins the kinetic competition (C59-C60), and slip-bond behavior of kf explains increased kstroke with hindering load (C96). This interpretation is consistent with kinetic theory and explains the otherwise paradoxical observation (C95).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C109",
+      "C112",
+      "C113",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The slower 1-1.5 nm displacement is consistent with ADP release-associated stroke. The kint rate shows asymmetric force dependence consistent with stroke reversal. Modeling suggests the pre-stroke state after reversal has ~1 ms lifetime (longer than initial 300 \u03bcs), possibly indicating incomplete cleft reopening upon Pi rebinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62, C109, C112-C113, C116-C119 involve interpretations with varying support. The ADP-release association (C62) is inferred from comparison to literature. The kint interpretation (C109) is reasonable but indirect. The modeling-derived lifetime difference (C116-C117) is interesting but the speculation about incomplete cleft reopening (C118) is acknowledged as requiring additional studies (C119). These interpretations are plausible but less directly supported than the major findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The proposed model is consistent with previous muscle fiber models (Dantzig et al., 1992; Araujo and Walker, 1996) and recent FRET studies (Muretta et al., 2015; Rohde et al., 2017), providing the most direct evidence for event ordering in cardiac myosin. The data cannot exclude occasional Pi release before stroke if it occurs <20% of the time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C137 contextualize findings within prior literature. The consistency with previous models (C128-C132) is supported by citations. The claim of 'most direct evidence' (C133) is justified given the temporal resolution and direct observation of stroke timing. The acknowledgment of limitations (C136-C137) is appropriate - the 20% threshold is calculated from expected Pi effect on stroke rate. The discussion of alternative interpretations from structural studies (C134-C135) is fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Experimental methods: HMM construct of human \u03b2-cardiac myosin with FLAG tag, expressed in C2C12 cells, attached to nitrocellulose-coated beads. \u03b2-cardiac myosin's slower kinetics facilitated detection. No evidence of simultaneous two-headed binding. UFFC used 0.06-0.08 pN/nm trap stiffness, 4-5.5 pN pretension, 250 kHz digitization. Novel drift and slope correction (DSC) system improved reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21, C140-C146 describe experimental methods and are well-documented. Protein construct details (C16, C140-C141) are specific. Rationale for \u03b2-cardiac myosin (C18-C20) is sound. The observation of no two-headed binding (C21) is stated but detailed evidence is deferred to Discussion. Experimental parameters (C142-C144) are precisely specified. The DSC system (C145-C146) is described in detail in Figure 5\u2014figure supplement 3. Methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C24",
+      "C63",
+      "C90"
+    ],
+    "result": "Background context: Myosin performs mechanical work via the working stroke (lever arm rotation) occurring soon after actin binding and associated with Pi release. Controversy exists regarding the order of force-generating transitions. The mechanochemical steps occur within milliseconds, making them difficult to resolve with standard techniques (>10 ms resolution).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15, C24, C63, C90 provide established background knowledge supported by citations. These are accurate representations of the field's understanding and the experimental challenge being addressed. The controversy (C13) is well-documented in cited literature. The temporal resolution limitation of standard techniques (C15, C24) justifies the need for UFFC. This background appropriately frames the study's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "Other myosin isoforms (e.g., non-muscle myosins V and VI) may have different dynamics or sequences of events. Specific experiments are needed to clarify their mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 appropriately acknowledge limitations in generalizing findings to other myosin isoforms. This is reasonable speculation supported by citations noting different kinetic properties. The call for specific experiments (C139) is appropriate scientific caution. These claims properly scope the conclusions to muscle myosin II.",
+    "result_type": "MINOR"
+  }
+]

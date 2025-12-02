@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Caudate neurons exhibit two distinct response patterns to repetitive visual stimuli: 74% (83/109) show gradual increases in firing (increase-type, peaking at 160\u00b175 ms), while 23% (25/109) show gradual decreases (decrease-type, peaking at 566\u00b1358 ms). Most increase-type neurons (88%) also show saccade-related activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide comprehensive characterization of neuronal response patterns with appropriate sample sizes (n=129 total, 109 stimulus-responsive), statistical descriptions, and temporal measurements. The classification into increase-type and decrease-type neurons is well-documented with specific percentages and timing parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Caudate neuronal activity shows weak directional selectivity, with only 17% of individual neurons showing significant target location dependence, though the population exhibits a modest 5% contralateral bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 provide statistical evidence (Wilcoxon's rank sum test, paired t-test) demonstrating limited directional tuning at the single-neuron level but significant population-level bias. The regression analysis quantifying the 5% bias strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Neuronal activity in the caudate nucleus is 1.7-fold greater during the missing oddball condition (requiring temporal prediction) compared to the deviant condition (color change detection), with peak activity increasing gradually during stimulus repetition while baseline remains stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 demonstrate condition-dependent modulation with strong statistical support (50/84 neurons individually significant, population p<10\u207b\u00b9\u2079). The temporal dynamics analysis (C13) provides mechanistic insight into how the enhancement develops across the trial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Caudate neurons show interval-dependent tuning: 76% are long-tuned (monotonically increasing response with ISI from 100-600 ms) and 24% are short-tuned (preferring 300-400 ms ISIs, with none preferring 100 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 provide detailed quantitative characterization of duration tuning with normalized responses across ISIs. The finding that no neurons prefer 100 ms ISI is verified with alternative analysis parameters (Figure 4 supplement), strengthening the conclusion about temporal processing characteristics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C82"
+    ],
+    "result": "Caudate and cerebellar dentate neurons show opposite response patterns: caudate neurons exhibit transient increases peaking at ~160 ms with constant duration across ISIs, while cerebellar neurons show transient decreases with ISI-dependent recovery times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C82 establish fundamental differences in temporal dynamics between brain regions. The comparison is strengthened by quantitative timing measurements and explicit reference to previously published cerebellar data (Ohmae et al., 2013), providing appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Cerebellar neuronal activity predicts stimulus timing more accurately than caudate activity (mean prediction error 28 ms vs 63 ms), suggesting the cerebellum carries more precise temporal information for periodic events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 provide quantitative comparison with bootstrap confidence intervals supporting the statistical difference. The decoding analysis methodology is clearly described, though the interpretation (C26) appropriately uses cautious language ('may carry') given this is a correlational analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C83"
+    ],
+    "result": "Trial-by-trial variation in saccade latency correlates with neuronal activity at different times in caudate (persisting until -161 ms before saccade) versus cerebellum (disappearing at -428 ms), suggesting distinct roles in motor preparation versus sensory prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34, C83 provide systematic analysis of stochastic variation timing using bootstrap procedures and ANOVA. The differential timing is well-documented, though the functional interpretation (C34) is appropriately presented as speculative ('might be responsible'). The logic connecting timing differences to functional roles is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Electrical stimulation of caudate recording sites specifically facilitates detection of stimulus omission (reducing latency in 48% of sessions, p<10\u207b\u00b9\u00b9) but not stimulus deviation, with stronger effects for ipsiversive saccades in the missing condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 provide comprehensive causal evidence with appropriate statistical controls (Bonferroni correction, two-way ANOVA). The condition-specificity (missing vs deviant) and directional effects are well-documented. However, the stimulation did not evoke immediate saccades, which differs from prior studies and requires explanation (addressed in C58-C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Despite 88% of caudate neurons showing saccade-related activity, electrical stimulation failed to evoke immediate saccades but reduced targeting latencies, suggesting involvement in saccade preparation rather than direct triggering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 address an apparent contradiction between neuronal activity patterns and stimulation effects. The interpretation is reasonable given the data, and alternative explanations (stimulation location, behavioral context) are appropriately considered. The conclusion about preparation vs triggering is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71"
+    ],
+    "result": "Reduced periodic activity in the deviant condition (despite identical stimuli and movements) is attributed to reduced need for temporal prediction rather than reward differences, as reward was equated across conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C70-C71 provide logical analysis ruling out reward as a confound (C70) and offering two plausible interpretations for condition differences. The experimental design appropriately controls for motor and reward variables, strengthening the temporal prediction interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Duration tuning for short ISIs (200-400 ms) exists in caudate but not cerebellar dentate nucleus, suggesting this may be specific to cortico-basal ganglia pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C76 compare current findings with prior cerebellar data (C75), but the conclusion (C76) is appropriately hedged ('might only be common') as alternative explanations are acknowledged. The comparison is limited by different ISI ranges tested and incomplete sampling of cerebellar nuclei, reducing certainty about pathway-specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C81"
+    ],
+    "result": "Caudate neurons show temporally-specific gain modulation (magnitude changes) rather than temporal scaling for different ISIs, suggesting periodic timing differs mechanistically from single-interval timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C81 contrast current findings with temporal scaling literature (C77-C78), providing evidence for distinct mechanisms. The interpretation is reasonable though somewhat speculative (C81 uses 'may be'), as direct comparison experiments between periodic and single-interval timing in the same neurons would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C84",
+      "C85"
+    ],
+    "result": "Temporal prediction in caudate nucleus is represented in the motor domain through periodic motor preparation, consistent with findings in motor cortex and supplementary motor area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64, C84-C85 synthesize current findings with prior literature to propose motor-domain representation. However, the task design does not fully dissociate sensory from motor components (acknowledged in C90), and the interpretation relies heavily on indirect evidence (timing, directionality). The conclusion is plausible but requires more direct testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C99"
+    ],
+    "result": "Striatal neurons represent periodic response preparation while cerebellar neurons encode temporal prediction of periodic events, based on differences in temporal dynamics and trial-by-trial variation timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89, C99 present the main functional interpretation synthesizing multiple lines of evidence. While the data on temporal dynamics and stochastic variation are solid, the functional interpretation involves significant inference. The inability to decode stimulus timing from caudate activity (C88) and earlier cerebellar variation (C89) support the model, but direct causal dissociation of sensory vs motor components is lacking (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The oddball detection paradigm successfully dissociates sensory from motor components of rhythm processing, addressing limitations of previous studies that required rhythmic movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C53 provide appropriate context from prior literature and justify the experimental approach. The task design (C48-C49) does require temporal prediction without rhythmic movement, and prior validation in humans (C50) and cerebellum (C51) supports its utility. However, complete dissociation remains challenging as acknowledged elsewhere (C90).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Experimental methods included recordings from 129 neurons in three monkeys using an oddball detection task with ISIs from 100-600 ms, with appropriate ethical approval and data quality controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 provide standard methodological details with appropriate specificity. Sample sizes, behavioral performance metrics, and data selection criteria are clearly reported. The neuron classification criteria (C95) could be more rigorous, but the approach is reasonable given the recording constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C90"
+    ],
+    "result": "Future studies should examine substantia nigra and putamen neurons, and dissociate sensory from motor components to fully elucidate subcortical contributions to rhythm processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C90 appropriately identify limitations and future directions. The suggestions are logical given the current findings and would address key uncertainties in the functional interpretations. These represent reasonable next steps rather than critical flaws in the current work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Representational drift\u2014continual reconfiguration of neural activity-behavior relationships\u2014has been observed in sensorimotor cortex, PPC, other neocortical areas, and hippocampus during repeated learned tasks without obvious behavioral changes, challenging classical theories of stable engrams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C9 are well-supported by citations to prior experimental work. C2 is a reasonable theoretical interpretation. These claims establish the context and motivation for the current study based on established findings in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "PPC neurons form a continually reconfiguring representation of the learned T-maze task, with neurons activating at specific maze locations each day but losing sequential activity over days to weeks, while different subsets of neurons can tile the maze in later sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are directly supported by data shown in Figure 1b,c. The visualizations clearly demonstrate loss of sequential activity when neuron ordering is fixed, while showing that different subsets maintain spatial tiling. This is a core observational finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Behavioral variables (position, speed, view angle) can be accurately decoded from PPC neural activity using linear models, with mean absolute errors of 47.2\u00b18.8 cm for position, 9.6\u00b12.2 cm/s for speed, and 13.8\u00b14.0\u00b0 for view angle, suggesting downstream areas could extract information via simple weighted sums.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by decoding analysis results shown in Figure 2a,b with quantitative performance metrics. C31 is a reasonable inference about biological plausibility. The linear decoding approach is appropriate and well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Decoding performance saturates at ~30-100 neurons when using optimal subsets, with ~10 neurons sufficient for good single-day decoding, but the identity of optimal neurons changes over days with minimal consistency (\u22641% in top 10%, \u226413% in top 50%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by analyses shown in Figure 2c,d. The extrapolation analysis (C32) uses appropriate GP regression. The optimal subset analysis demonstrates instability in neuron rankings, which is critical for understanding drift dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "60-80% of strongly tuned neurons changed location tuning over 2-4 weeks, and even 'stable' neurons exhibited daily SNR variations, with minimal overlap (<8%) between neurons stable in tuning-peak and those stable in SNR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 cite prior work (Driscoll et al., 2017). C39-C40 present new quantitative analyses of stability that are consistent with the observed drift. These findings establish that no truly stable subset exists for long-term fixed readout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Fixed linear decoders trained on single days degrade when tested on other days, but concatenated decoders optimized across multiple days can recover accurate information despite drift, performing significantly worse than single-day decoders but better than chance, implying a degenerate representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C44-C45 are supported by data in Figure 3a,c showing decoder degradation and concatenated decoder performance with statistical testing. C42-C43, C46 are reasonable inferences about degeneracy. The concatenated decoder analysis is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Concatenated decoders perform substantially better on experimental data than on null models with random drift matched for sparseness and variability, and drift aligns above chance with within-session population variability, indicating drift is systematic and constrained rather than purely random.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by null model comparisons (Figure 3d) and drift alignment analyses (Figure 4c,d). The null model is appropriately designed to match key statistical properties. The alignment analysis provides quantitative evidence for systematic constraints on drift.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Drift projects onto behavior-coding directions at levels small but above chance, consistent with the hypothesis that ongoing compensation is needed for long-term stable readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by drift alignment analysis in Figure 4c,d. While drift aligns more with noise than coding directions, the above-chance alignment with coding directions is statistically demonstrated and motivates the compensation analyses that follow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Modest weight changes per day (12-25% per session) are sufficient to match single-day decoder performance when optimizing decoders across days with weight change penalties, suggesting modest synaptic plasticity could maintain consistent encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by constrained decoder analysis shown in Figure 4a,b. This analysis is independent of specific learning rules and provides a lower bound on required plasticity. The quantitative estimates are clearly presented and the methodology is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Constraining drift to a low-rank subspace (rank 14-26, ~20% of population dimensions) in simulations matched concatenated decoder performance for three of four mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by simulations in Figure 4\u2014figure supplement 1. This analysis provides insight into the dimensionality of drift. The failure for mouse 5 is acknowledged, and the authors appropriately note this could reflect limited data or other factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The biologically plausible LMS learning algorithm achieves error rates comparable to concatenated decoders with inter-day weight changes of 7.6-10.4%, consistent with observed rates of dendritic spine volume changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by LMS simulations shown in Figure 5 and supplements. C56 correctly describes LMS as biologically plausible due to local computation. C57-C58 present quantitative results. C59 appropriately compares to physiological observations, though the comparison is indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C63"
+    ],
+    "result": "LMS struggled to compensate random drift in the null model, requiring 93% weight changes per day to match performance on real data versus 10% for real data, indicating drift is highly structured and facilitates compensation with local learning rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C63 are supported by testing LMS on the null model. The stark contrast (93% vs 10% weight changes) provides strong evidence that real drift is structured. This comparison strengthens the conclusion that drift is systematically constrained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Required plasticity per synapse increases for smaller populations, and extrapolation to a large synthetic population (1238 cells) shows plasticity requirements asymptote at <4% per day, suggesting lower rates for larger populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by analyses in Figure 5\u2014figure supplements 2-3. The scaling analysis addresses an important limitation (small recorded populations) and provides more realistic estimates. The synthetic population approach is reasonable though not equivalent to single-animal recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Representational drift in PPC is systematically constrained above chance but includes components in both coding and non-coding subspaces that degrade fixed readouts; however, biologically achievable plasticity (12-25% weight changes per session, ~10% with LMS) can compensate this drift, providing evidence that drift is compatible with stable behavioral memories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes the major findings (C3-C6, C67-C74). The claims are well-supported by the concatenated decoder, constrained decoder, and LMS analyses. The conclusion that drift is compatible with stable memories is justified by demonstrating both systematic constraints and feasible compensation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Analyses across multiple animals consistently suggest drift will completely reconfigure the neural code over months, with past reliability in single cells providing no guarantee of future stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by the instability analyses (C35-C40) and the degradation of concatenated decoders over time. The conclusion about complete reconfiguration over months is a reasonable extrapolation from the observed rates of change over days to weeks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Theoretical work proposes drift could be confined to null coding spaces through redundancy and low-dimensional dynamics, but the extent of such confinement remains unclear, and evidence suggests some drift affects coding dimensions including cells losing task-relevant representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 accurately cite theoretical proposals. C13 correctly identifies the open question. C14-C16 present relevant considerations and prior findings. These claims appropriately frame the theoretical context and motivate the empirical investigations in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Mice performed a virtual T-maze task with stable behavioral performance and kinematics over time (except slight speed decrease in mouse 4), and PPC has both planning/choice roles and motor-related continuous representations relevant to spatial navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe the experimental paradigm and are supported by methods and Figure 2\u2014figure supplement 1. C20-C22 cite prior work establishing PPC's functional roles. These claims provide necessary experimental context and justify focusing on continuous kinematic decoding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors propose that ongoing plasticity maintains congruent representations across brain circuits, with neural circuits accessing error signals reflecting both internal-external mismatches and inter-circuit prediction mismatches, noting that PPC drift differs from stability in primary sensory/motor cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C78 appropriately cite prior work on connectivity dynamics and regional differences. However, C80-C82 are speculative hypotheses about mechanisms (marked as SPECULATION in evidence_type). While these are reasonable proposals motivated by the findings, they lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study used calcium imaging data from mice performing a 4.5m virtual T-maze task with visual cues, analyzing 101-146 neurons per mouse across 7-10 sessions spanning 7-15 days, with appropriate preprocessing and statistical methods including regularization and Gaussian process regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C93 describe experimental methods, data characteristics, and analysis procedures. These are straightforward methodological descriptions that are adequately documented. The methods appear appropriate for the analyses performed, though some details about reproducibility could be enhanced.",
+    "result_type": "MINOR"
+  }
+]

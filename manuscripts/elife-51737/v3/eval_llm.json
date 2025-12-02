@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors developed a photoisomerizable ligand (amino-tSS) and used in vitro selection to isolate a novel riboswitch (Were-1) that selectively binds the trans isoform. The ligand was designed based on stiff-stilbene scaffold for fast photoswitching, characterized by UV-Vis and NMR spectroscopy, and shown to be stable on relevant timescales. An RNA pool derived from a bacterial SAM-I riboswitch was selected over six rounds to bind amino-tSS, yielding one sequence (Were-1) with markedly increased ligand fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C28 describe the ligand design, characterization, and selection process. The experimental approach is well-documented with appropriate controls (C24, C25) and the selection methodology (C26, C27) follows established protocols. The ligand properties are supported by spectroscopic data (C24, C25), and the selection yielded a specific sequence with enhanced binding (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Structure probing experiments revealed that Were-1 binds amino-tSS approximately 100-times stronger than amino-cSS, with KD values ranging from 0.4 to 4.8 \u00b5M depending on the probing method. The RNA undergoes conformational modulation in both the aptamer domain and expression platform upon ligand binding, with changes mapping primarily to loop regions, suggesting tertiary structure formation rather than secondary structure rearrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29-C41 are supported by multiple orthogonal structure probing methods (T1 nuclease, S1 nuclease, terbium footprinting, SHAPE, in-line probing) with appropriate controls (C34). The KD measurements are consistent across methods (0.4-4.8 \u00b5M for amino-tSS vs 108 \u00b5M for amino-cSS), supporting the ~100-fold selectivity claim. The structural interpretation (C39-C41) is appropriately cautious, noting that changes map to loops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C62",
+      "C63"
+    ],
+    "result": "Mutational analysis identified key structural elements and ligand-binding residues in Were-1. The G69C mutation diminished response to amino-tSS, while the G69C/C84G double mutant showed partial restoration, confirming a helical interaction. Mutations C89G and C91G both decreased ligand sensitivity, indicating these positions are essential for binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51, C62-C63 describe classic compensatory mutation analysis. The loss-of-function in G69C and restoration in G69C/C84G double mutant (C47-C49) supports the predicted base-pairing. The C89G and C91G mutations (C50-C51) show consistent loss of function in multiple assays (toehold binding and in vivo expression, C62-C63), supporting their role in ligand binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C52",
+      "C53"
+    ],
+    "result": "A strand displacement assay using a DNA toehold mimicking the ribosome binding site demonstrated that amino-tSS stabilizes Were-1 in an 'OFF' conformation that prevents toehold binding. PAGE-purified Were-1 bound the toehold readily in the absence of ligand, but binding was inhibited by amino-tSS in a dose-dependent manner (IC50 ~4-6 \u00b5M). Control ligands (amino-cSS, tS, tDHS, tSS) showed no significant effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C53 describe a functional assay with appropriate controls. The dose-response data (C43, C46) are consistent with the KD measurements from structure probing. The specificity controls (C52) strengthen the conclusion that the effect is specific to amino-tSS. The co-transcriptional experiments (C44-C45) demonstrate that the riboswitch can fold and respond to ligand during transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C64"
+    ],
+    "result": "In vitro translation assays demonstrated that Were-1 functions as a translational riboswitch. The Were-1-Fluc construct produced robust luciferase in the absence of amino-tSS, but protein production decreased in a dose-dependent manner when amino-tSS was added. Control experiments confirmed that amino-tSS does not directly inhibit the translation system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C64 demonstrate functional activity in a cell-free system. The dose-dependent response (C55) is consistent with binding affinity measurements. The critical control (C56) rules out non-specific effects of the ligand on translation. The conclusion (C64) is appropriately supported by the combined in vitro data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In vivo expression experiments in E. coli confirmed that Were-1 regulates luciferase expression in a dose-dependent manner in response to amino-tSS (IC50 ~5.3 \u00b5M). Control ligands (amino-cSS, tS, tDHS) showed no effect. An AUG start codon variant showed higher overall expression but retained amino-tSS-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 demonstrate in vivo functionality with appropriate specificity controls (C59). The IC50 value (C58, C118: 5.3 \u00b1 1.1 \u00b5M) is consistent with in vitro measurements. The AUG variant experiment (C60-C61) confirms that the regulatory mechanism is independent of the specific start codon, though the UUG start codon may contribute to lower basal expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Co-transcriptional toehold binding assays demonstrated reversible photoregulation. Irradiation at 342 nm increased toehold fluorescence, while 372 nm light decreased it, with consistent results over multiple cycles. Millisecond light pulses produced detectable changes, suggesting the system can act on timescales faster than individual nucleotide addition during RNA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 demonstrate reversible photoswitching in vitro. The multiple cycles (C67) support reversibility. The kinetic analysis (C68-C69) is appropriately cautious, noting the system 'has the capacity' to act on fast timescales and comparing to known rates of RNA synthesis (C69 cites relevant literature). However, the actual biological relevance of sub-millisecond switching remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "In vitro transcription/translation reactions showed light-dependent regulation. Irradiation at 342 nm increased luminescence, while 372 nm light slightly decreased luciferase production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 demonstrate photoregulation in a cell-free translation system. The effects are in the expected direction based on the ligand photoisomerization properties. However, the magnitude of the effect at 372 nm is described as 'slight' (C71), suggesting incomplete switching or other limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In vivo photoregulation experiments showed that exposing E. coli expressing Were-1-Fluc to 342 nm light resulted in a modest, dose-dependent increase in bioluminescence relative to unexposed controls, with optimal response at 500 \u00b5s exposure. The bell-shaped dose-response curve is explained by incomplete photoisomerization (~40% conversion) of the ligand. Wavelength specificity was confirmed using 500 nm light as a control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 demonstrate in vivo photoactivation with appropriate controls (C78). The mechanistic explanation for the bell-shaped curve (C73-C77) is logical and supported by the NMR data on photostationary state composition (C73, C117). The optimal exposure time (C80) balances photoisomerization efficiency against potential photodamage or other effects. However, the effect is described as 'modest' (C72), indicating limited dynamic range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The UV light exposures used in the experiments were well below lethal doses for E. coli, and cell viability was confirmed. The decrease in protein expression at longer exposures is attributed to an unknown cellular effect of amino-tSS rather than UV damage or riboswitch activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 address potential concerns about UV toxicity. The calculations (C81-C84) are based on literature values and experimental parameters. Cell viability controls (C86) support the conclusion that UV damage is not responsible for the observed effects. However, the explanation for decreased expression at longer exposures (C87) is speculative and represents a limitation of the current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Photoinhibition experiments using amino-cSS demonstrated that exposure to 390 nm light decreased bioluminescence in a dose-dependent manner, with optimal inhibition at 1 ms exposure. Higher amino-cSS concentrations resulted in greater inhibition, consistent with proportional conversion to amino-tSS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 demonstrate bidirectional photoregulation. The dose-dependent response (C89, C91) and optimal exposure time (C92) are consistent with the ligand photoisomerization properties. The explanation for long-exposure effects (C93) acknowledges uncertainty but is consistent with the photostationary state data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Reversible photoregulation in vivo was demonstrated by sequential light exposures. Samples exposed to 342 nm light showed increased luciferase expression compared to unexposed controls, while subsequent 390 nm exposure resulted in gradual decrease in bioluminescence. After 2.5 hours, 342 nm-exposed samples were 5.5-fold more luminescent than unexposed and 1.8-fold more than samples exposed to both wavelengths. The inactive G69C mutant showed no response to light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 demonstrate reversible photoregulation with appropriate controls (C100). The quantitative differences (C98) support the conclusion of reversible regulation (C99, C101). The G69C mutant control (C100) confirms that the effect is mediated by the riboswitch rather than non-specific effects of light or ligand. However, the fold-changes are modest, and the gradual decrease (C97) suggests incomplete switching or slow turnover of existing protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C110",
+      "C111",
+      "C112",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors conclude that Were-1 represents a significant advance in RNA optogenetics as the first synthetic riboswitch that binds only one photoisoform of its ligand and reversibly regulates bacterial protein expression at the RNA level using sub-millisecond light pulses. They speculate about future applications for spatiotemporal control of gene expression and mechanistic studies of translational regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88, C110-C112, C115-C116 represent conclusions and speculations about significance and future applications. While the technical achievements are supported by the data, the claims about 'significant advance' (C88) and being 'the first' (C110) require comparison to prior work that is not fully evaluated here. The speculations about future applications (C111, C112, C115, C116) are reasonable but not directly tested. The modest amplitude of responses noted throughout suggests limitations for some proposed applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors provide background on optogenetics, existing approaches for light-dependent regulation of RNA, and riboswitches. They identify a gap in the field: the need for photoactive molecules that can quickly and reversibly regulate cellular events at the RNA level, noting limitations of existing approaches including photolabile ligands, protein-based systems, and previously identified photoresponsive RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C20, C102-C108 provide literature context and field assessment. These are appropriately supported by citations to prior work. The characterization of limitations in existing approaches (C11, C13, C16) appears accurate based on the cited literature. The identification of a gap (C2, C10, C105) provides appropriate motivation for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors demonstrate that novel riboswitches regulated by synthetic ligands can be evolved from random libraries fused to expression platforms using in vitro selection. They note that the fast timescales achievable with mechanical shutters (~100 \u00b5s) allow triggering on timescales shorter than individual steps in RNA and protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is a methodological conclusion supported by the successful isolation of Were-1. Claims C113-C114 provide technical context about available instrumentation and biological timescales, appropriately supported by citations. These claims establish the potential utility of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Cell density measurements showed no difference among experimental conditions, indicating that neither the ligand nor light pulses affect bacterial growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 report a negative result that serves as an important control. The observation (C94) supports the inference (C95) that the experimental conditions do not cause general toxicity, though this does not rule out more subtle effects on cellular physiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Quantitative characterization revealed that at the photostationary state, the ratio of amino-tSS to amino-cSS is approximately 2:1, and the apparent IC50 values are 3.9 \u00b1 0.2, 2.5 \u00b1 1.0, and 5.3 \u00b1 1.1 \u00b5M for toehold binding, in vitro translation, and in vivo expression, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 provide quantitative parameters that are well-supported by the experimental data. The consistency of IC50 values across different assay systems (C118) strengthens confidence in the measurements. The photostationary state ratio (C117) is important for interpreting the incomplete switching observed in photoregulation experiments.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript reviews established knowledge about hippocampal place cells, replay, and theta rhythm. Place cells fire at specific locations, exhibit global remapping across environments, and show replay during quiescence/sleep. Theta rhythm is important for spatial learning, with medial septum lesions impairing performance but not eliminating place fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 constitute a literature review establishing the scientific context. All claims are supported by appropriate citations to established work (O'Keefe and Dostrovsky 1971, Wilson and McNaughton 1994, etc.). These are well-accepted findings in the field and provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A computational model of recurrently coupled place cells was developed with place-specific inputs, global inhibition, and global remapping between tracks. The model uses a balanced STDP rule and includes short-term synaptic depression to generate spontaneous bursts during simulated quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C36 describe the model architecture and are well-documented in the Methods section. The model design choices are clearly stated and appropriate for studying the research question. The implementation details are sufficiently described for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "During exploration of a novel environment, recurrent connectivity evolves from uncorrelated to structured, with neighboring place cells becoming more strongly connected. Sequential correlation (SC) during bursts shows an abrupt transition from near-zero to elevated values at a critical time, coinciding with emergence of replay-like activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C49 describe key simulation results shown in Figure 2. The transition in burst structure is clearly demonstrated through connectivity snapshots (Fig 2a), SC time courses (Fig 2b), and space-time plots (Fig 2c). The result is robust to heterogeneity in place field tuning (C42, Fig 2-supplement 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The steady increase in SC during theta activity is due to emergence of theta sequences - bursts of place-cell activity that sweep ahead of the animal's position on each theta cycle, coinciding with phase precession.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 explain the gradual SC increase during theta activity (Fig 2b inset). The emergence of theta sequences is demonstrated in Figure 2-supplement 5, with clear evidence of forward sweeps and phase precession. This is supported by citation to Foster and Wilson 2007.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The transition to replay occurs when the even mode of recurrent connectivity reaches a critical value. Theoretical analysis shows an instability to bursts when the even mode times the transfer function gain exceeds a threshold. The odd mode does not determine transition timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 identify the mechanism underlying the transition. Figure 3c demonstrates that transitions occur at a consistent critical value of the even mode across different input strengths, while the odd mode shows no such relationship. The theoretical analysis in Materials and methods provides mathematical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Growth of the even mode depends strongly on modulation frequency, peaking at 2-10 Hz (theta range) and decreasing by orders of magnitude at lower/higher frequencies. This frequency dependence is independent of motion details. The even mode only grows with plasticity rules having dominant potentiation at short latencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 describe critical frequency-dependence results shown in Figure 4. The strong frequency dependence (Fig 4ai), restriction of transitions to 2-10 Hz (Fig 4aii), and requirement for asymmetric potentiation-dominant plasticity (Fig 4b,c) are clearly demonstrated. The independence from motion details is shown by comparing different motion patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The learning rate depends on the product of place-cell autocorrelation and the plasticity window (Equation 5). Growth rate is maximal when activity is modulated on timescales commensurate with the plasticity rule (theta range for realistic parameters). Theta accelerates learning not by changing overall plasticity rate, but by organizing pre-post pairings to bias potentiation between neighboring place cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 present the main theoretical finding. The mathematical derivation (Equations 3-5, Materials and methods) is sound and leads to testable predictions. Figure 5 demonstrates the frequency dependence graphically through the product of autocorrelation and plasticity window. The mechanism is clearly explained and distinguishes between overall plasticity rate (unchanged) and structured connectivity growth (frequency-dependent).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Experimental analysis of hippocampal recordings shows sustained increase in pairwise correlations between neurons with neighboring place fields during exploration of novel environments, but only when theta modulation is present. With muscimol inactivation of medial septum (reduced theta), no SC dynamics are observed, but SC increases after recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C85 present experimental validation. Figure 7 shows clear SC increase during post-muscimol exploration (Fig 7d) but not during muscimol (Fig 7c), with corresponding changes in theta power. The SC increase occurs only during first session on novel track (Fig 7e). Statistical significance is demonstrated (t-tests, p<0.006). The proper vs. shuffled ordering comparison (C84) controls for global correlation changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Prior experimental work shows that pairwise reactivations and ensemble replay improve during exploration and emerge abruptly after sufficient experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 cite established experimental findings (O'Neill et al. 2006, Jackson et al. 2006, Wu and Foster 2014) that are consistent with the model predictions. These are appropriately cited prior results, not new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Well-defined place cells were identified by extracting Fourier mode coefficients and selecting cells with Tuning Index (TI) > 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 describe the data analysis methodology shown in Figure 7-supplements 1-3. The approach is clearly documented and provides objective criteria for cell selection. This is standard methodology appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "With sparse coding (50% of neurons as place cells per environment), the connectivity matrix stores information about multiple past environments. Global input produces replay correlated with the two most recent tracks, while selective input to track-specific place cells produces replay specific to that track.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 describe sparse coding simulations shown in Figure 6. The exponential decay of even mode amplitude with track recency (Fig 6a inset) and differential replay depending on input selectivity (Fig 6b,c) are clearly demonstrated. This extends the model to more realistic conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Selective input may originate from cortical circuits storing environment-specific information as attractor states, and spontaneous switching between cortical representations could engage distinct hippocampal replay patterns for memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 are explicitly speculative proposals about functional mechanisms. While supported by citations to memory models (Hopfield 1982, Tsodyks and Feigel'man 1988), these are hypotheses about how the observed replay mechanism might function in vivo, not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The number of environments that can be simultaneously encoded depends on model details, particularly coding level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 states an observation from simulations with citation to relevant theory (Battaglia and Treves 1998). While the specific simulations are noted as 'not shown', this is a reasonable inference from the sparse coding results and established capacity theory.",
+    "result_type": "MINOR"
+  }
+]

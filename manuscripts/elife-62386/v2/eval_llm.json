@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Laceration injury induces rapid actin polarization and cell migration in zebrafish basal epidermal cells. Within 2 minutes of injury, actin accumulates at wound-facing edges with dynamic ruffling, stabilizing into lamellipodia in cells close to the wound. The response occurs within 15-20 minutes and is stronger than tail transection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 provide converging microscopy evidence (Figure 1B-D) showing temporal dynamics of actin reorganization and cell migration following laceration. The observations are directly visualized and quantified, with reproducible spatiotemporal patterns across multiple larvae.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Calcium waves propagate approximately 5 times faster than cell migration waves (200 vs 40 \u03bcm/min), suggesting calcium does not directly trigger or regulate cell movement but may function as a permissive cue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 present direct GCaMP6f measurements (Figure 1F-H) showing the temporal mismatch between calcium and migration waves. However, C58-C59 are inferences from this observation. While the speed difference is well-documented, the mechanistic interpretation (permissive vs. instructive role) requires additional functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Isosmotic sodium chloride uniquely and strongly inhibits the wound response compared to other isosmotic osmolytes (choline chloride, sodium gluconate, potassium chloride, sorbitol), which show remarkably consistent effects with each other. This difference is statistically significant (p<0.001) by PCA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are well-supported by quantitative motion tracking data (Figure 2A-B) with appropriate statistical analysis (Welch's ANOVA with post-hoc tests). The ion-specific effect is clearly demonstrated and distinguishable from osmotic effects alone. Sample sizes are adequate (N=7-10 larvae per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Sodium chloride specifically inhibits cytoskeletal polarization in response to wounding. While all other isosmotic treatments induce LifeAct intensity increases and actin polarization, isosmotic sodium chloride shows no measurable cytoskeletal response at equivalent positions from the wound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by direct imaging (Figure 2C) and quantitative analysis of LifeAct intensity changes (Figure 2E) using non-rigid deformation to separate cell shape changes from intensity changes. The methodology is sound and the effect is visually striking and quantitatively significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The sodium chloride-specific inhibitory effect is independent of the anesthetic used (Tricaine vs alpha-bungarotoxin) and is due to the chemical identity of the ions rather than small osmolarity differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 address important controls. C71-C72 show similar responses with different anesthetics (Figure 2\u2014supplement 1F), ruling out Tricaine artifacts. C73-C74 demonstrate robustness to 10% osmolarity variations, though the data is mentioned as 'not shown,' which weakens this specific claim slightly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Using a two-chamber device, the wound response is determined by the local ionic environment at the tailfin rather than systemic effects. Isosmotic NaCl applied only to the tailfin produces the same inhibition as whole-larva immersion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by elegant two-chamber experiments (Figure 2F-G) with sodium concentration gradients validated by fluorescent dye. This demonstrates the effect is local rather than systemic, strengthening the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Basal cells swell dramatically (~50% volume increase) in hyposmotic media within 90 seconds post-wounding, while cells in all isosmotic media show minimal swelling (<6% for sodium gluconate, not significant for NaCl and choline chloride).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 present careful 3D volume measurements at 60x magnification (Figure 3A-C) with appropriate statistical analysis (paired t-tests). The methodology accounts for varying cluster sizes through normalization. Effect sizes are reported with confidence intervals, showing clear differences between conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "A linear relationship (r\u00b2=0.95) exists between volume change and migration for varying NaCl concentrations, but cells in non-NaCl isosmotic salts migrate substantially more than predicted by volume change alone, indicating an osmolarity-independent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 provide key evidence (Figure 3F) that cell swelling alone cannot explain the differential wound responses. The linear relationship for NaCl titration is strong, while other salts deviate from this relationship, supporting a dual mechanism (osmotic + ion-specific).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Exogenous electric fields (approximately 1 \u03bcA current) are sufficient to induce actin polarization and direct cell migration toward the cathode in vivo, with cells reversing direction when field polarity is reversed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 demonstrate electric field sufficiency through direct in vivo manipulation (Figure 4C-E). The reversibility upon polarity switching is strong evidence for causality. However, the current density calculations involve assumptions about cross-sectional area (discussed in supplement), introducing some uncertainty in the physiological relevance of the applied field strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Exogenous electric fields can override endogenous wound signals. When an electric field opposing the wound direction is applied after laceration, cells move more slowly and some even migrate away from the wound toward the cathode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 provide compelling evidence (Figure 4F) that electric fields can dominate over wound cues. The observation that cells move away from wounds (never seen in controls) is particularly striking. This demonstrates electric fields are not just sufficient but can be dominant guidance cues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Zebrafish basal epidermal cells detect wounds through two distinct mechanisms: (1) osmotic swelling from fluid mixing, and (2) sodium chloride-specific detection independent of osmolarity and swelling, consistent with sensing changes in transepithelial electrical potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C96-C99 synthesize the major findings. The dual mechanism is well-supported by the ion substitution experiments, volume measurements, and electric field manipulations. However, the electrical mechanism remains somewhat indirect\u2014the authors demonstrate electric fields are sufficient and NaCl has specific effects, but don't directly measure TEP changes during wounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Measured wound currents (5-500 \u03bcA/cm\u00b2) are three orders of magnitude lower than currents that elicit responses in cultured cells, likely because physiological currents are restricted to small intercellular spaces, creating high local current densities that cells sense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C115 address an important paradox but rely heavily on inference. C113 cites literature values, while C114-C115 propose an explanation based on geometry. The authors' own electric field experiments don't directly resolve this discrepancy, and the cross-sectional area calculations (Figure 4\u2014supplement 1B) involve substantial assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "In freshwater fish, sodium and chloride transport maintains osmotic gradients and generates the transepithelial potential (TEP). When skin is breached, the TEP is short-circuited, creating electric fields whose orientation depends on wound position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 establish the physiological context through literature citations. These are well-established facts about fish osmoregulation and TEP. C106 is illustrated in Figure 4A. However, the authors don't directly measure TEP in their zebrafish larvae or demonstrate its disruption upon wounding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The mechanism of electric field sensing in zebrafish is unclear. Teleosts lack the amiloride-sensitive sodium channel found in frogs, the responsible channel is unknown, and KCl treatment argues against transmembrane potential changes as the primary mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 acknowledge limitations in understanding the molecular mechanism. C116-C117 cite literature on the absence of known channels, while C118 presents experimental evidence (Figure 2A) that KCl doesn't produce the same effect as NaCl despite affecting membrane potential. This is honest assessment of mechanistic gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "In culture, fish basal epidermal cells respond to electric fields through electrophoresis of membrane proteins leading to PI3K-dependent cytoskeletal polarization, independent of calcium dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 summarize prior work from the literature on cultured cells. These are well-cited background claims that provide context for the in vivo observations but are not findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "Electric fields provide intrinsically directional wound detection cues that can coordinate cell migration at tissue scales, while osmotic changes lack directional information and require additional spatial cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 present logical conclusions from the experimental results. The directional nature of electric fields vs. non-directional osmotic changes is well-reasoned, though the manuscript doesn't explicitly test whether osmotic cues alone can orient migration with other spatial information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Electric fields may be relevant for human wound healing, as wound currents and TEPs have been measured in human skin. Zebrafish provide an ideal model to study electric field responses in physiological contexts at rapid timescales (5-10 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 cite literature on human wound currents and TEP, suggesting translational relevance. Claims C126-C127 argue for zebrafish as a model system. These are reasonable conclusions but somewhat speculative regarding human relevance, as the manuscript doesn't directly test human cells or tissues.",
+    "result_type": "MINOR"
+  }
+]

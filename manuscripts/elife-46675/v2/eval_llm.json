@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors established a sparse labeling system using Nestin-CreERT2::Confetti mice with tamoxifen administration at E10.5, which labeled approximately 20 M/T cells per OB at P21 and resulted in labeling between none to a single progenitor per fluorescent protein in the OB primordium at E12.5 (n=6 embryos). The authors assume that M/T cells labeled with the same fluorescent protein constitute a single clone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13-C17 describe the experimental system and observations, but C18 reveals a critical assumption that cells with the same fluorescent protein are clonally related. The authors acknowledge they 'cannot unambiguously conclude' whether same-color cells originated from one or two progenitors, yet proceed with this assumption. This uncertainty undermines the clonal interpretation of all subsequent connectivity results, as the fundamental premise that labeled cells are true clones is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Analysis of 28 OBs at E10.5 labeling revealed 14 putative clones containing 310 M/T cells (average 22.14\u00b16.61 cells/clone), compared to 6 neocortex clones containing 556 pyramidal neurons (average 92.67\u00b123.18 cells/clone). Clone size in neocortex was approximately four times larger than in OB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 provide clear quantitative data on clone sizes with appropriate statistical measures. The neocortex results are consistent with prior work (C28), providing validation. However, the interpretation depends on the uncertain assumption from C18 that same-color cells represent true clones. The sample size (n=14 OB clones, n=6 neocortex clones) is modest but reasonable for this type of analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Sister M/T cells were more dispersed (287.47\u00b161.23 \u00b5m) than sister pyramidal neurons (59.56\u00b19.86 \u00b5m). Nearest neighbor distances (NND) between clonally related neurons were significantly shorter than simulated random datasets for both OB and neocortex (p<0.01, two-way ANOVA), indicating that while sister M/T cells are not obviously clustered, their distribution is not random.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide quantitative spatial analysis with appropriate statistical testing. The comparison to random simulations (C32) strengthens the conclusion that distribution is non-random. The interpretation is consistent with prior observations of tangential migration (C31). The statistical approach is sound, though the conclusion still depends on the clonal assumption from C18.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "When all clones were analyzed together, there were no significant preferences in the distribution of M/T cells toward dorsal or ventral domains (p=0.67, t-test), nor toward lateral or medial domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 report negative results with appropriate statistical testing. The lack of bias toward specific OB domains is clearly stated with statistical support. However, the authors note that individual clones sometimes showed domain preferences, suggesting heterogeneity that may warrant further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Labeling at E12.5 produced smaller clones than E10.5 labeling: 8.44\u00b16.37 M/T cells/clone (n=76 cells, 9 clones from 18 OBs) versus 22.14\u00b16.61 at E10.5 for OB, and 22.5\u00b16.47 pyramidal neurons (n=135 cells) versus 92.67\u00b123.18 at E10.5 for neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 demonstrate that later labeling produces smaller clones, consistent with prior work on neocortex (C41). The quantitative data are clear and the pattern is consistent across both brain regions. This temporal relationship strengthens confidence in the labeling approach, though the fundamental clonal assumption remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "TMX injection at E10.5 labeled a small number of M/T cells in the AOB (18 cells in 10 of 28 OBs, 1-3 cells per AOB), suggesting separate progenitors for MOB and AOB M/T cells, consistent with recent work showing AOB M/T cells originate from the diencephalic-telencephalic boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C49 describe AOB labeling observations, but C49 explicitly states the small numbers 'do not allow for a definitive conclusion.' The authors appropriately acknowledge this limitation. While C50 provides supporting evidence from prior work, the current data are insufficient to definitively establish separate progenitor populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C54",
+      "C56",
+      "C61"
+    ],
+    "result": "Sister M/T cells receive synaptic input from different glomeruli. Among 384 labeled M/T cells from 23 putative clones (310 cells from 14 E10.5 clones and 74 cells from 9 E12.5 clones), no two neurons innervating the same glomerulus were observed, even when cell bodies were near each other. This indicates that lineage does not determine the sensory input connectivity of OB projection neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C9, C10, C56, and C61 represent the central conclusion of the manuscript, but this conclusion is critically undermined by the uncertain clonal assumption (C18). The authors cannot definitively establish that same-color cells are clonally related, yet the entire connectivity conclusion depends on this assumption. Additionally, the absence of sister cells innervating the same glomerulus could reflect insufficient sampling rather than a biological principle\u2014the authors acknowledge this possibility (C57). The sample size, while substantial for individual cells, may be inadequate to detect rare events of clonal co-innervation. Without definitive clonal identification (e.g., through single-progenitor labeling or genetic barcoding), the central claim remains unsupported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors propose that M/T cell connectivity depends on mechanisms independent of lineage, including random dendrite targeting and activity-dependent refinement. This model is supported by prior observations that immature M/T cells initially extend multiple dendrites to different glomeruli, then refine to retain typically one dendrite through activity-dependent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C62, and C72-C76 propose mechanisms for M/T connectivity based largely on prior work (C63-C71). While the cited evidence for activity-dependent refinement is compelling, the authors' own data do not directly test these mechanisms. The proposal that connectivity is independent of lineage depends on the unsupported conclusion from C9-C10. The model is plausible and consistent with existing literature, but represents speculation rather than demonstrated findings from this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "In the AOB, no M/T cells whose apical dendrites innervated the same glomerulus were found, similar to observations in the MOB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 extends the MOB findings to the AOB, but the authors explicitly state the small number of labeled AOB M/T cells 'does not allow us to draw any firm conclusions.' Additionally, glomeruli in the AOB are 'less well defined and more difficult to identify' (C59), further limiting confidence in this observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C12",
+      "C19",
+      "C20",
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C46",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The manuscript provides extensive background on olfactory system organization, lineage and connectivity in other systems, M/T cell development, and mechanisms of axon/dendrite targeting, drawing from published literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C8, C12, C19-C20, C34-C36, C39, C46, C50-C53, C55, C63-C65, C67-C68, C70-C71, C77-C86) accurately represent prior work and provide appropriate context. They are supported by citations to published research and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C87"
+    ],
+    "result": "The authors speculate that hardwired clones of M/T cells projecting to the same glomerulus may exist for survival-relevant odors, and that connectivity between OB and olfactory cortex may involve different mechanisms for innate versus learned behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57, C58, and C87 are explicitly speculative. C57 acknowledges that hardwired clones may exist despite not being observed. C87 proposes a dual-mechanism model for OB-cortex connectivity based on prior observations (C86) but without direct experimental support. These represent reasonable hypotheses for future investigation rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

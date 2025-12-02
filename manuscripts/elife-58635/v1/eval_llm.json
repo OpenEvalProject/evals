@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors developed and validated high-resolution imaging methods for tracking nuclear movements during IKNM in zebrafish retina, using both lightsheet and two-photon microscopy with 2-minute temporal resolution and H2B-GFP transgenic lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C90 collectively describe comprehensive methodological details for imaging and tracking nuclei. The methods are well-documented with specific parameters (temporal resolution, microscope types, transgenic lines, embedding protocols, temperature controls). The validation that 2-min vs 20-sec intervals showed no difference (C12) and automated tracking accuracy of ~65% (C15) provide quality control metrics. All ethical approvals are documented (C73).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Daughter nuclei exhibit a brief basalward movement immediately after division, followed by bidirectional stochastic movement with mean speed near zero. An apical clearing of a few microns exists except during mitosis, which is not explained by nuclear size changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 describe nuclear behavior post-division with quantitative measurements. The basalward bias immediately after division (C16) and subsequent bidirectional movement (C17) are supported by Figure 2C data. The apical clearing observation (C18) is validated by nuclear size measurements showing no significant difference between M-phase and other phases (C19: 5.0\u00b10.7 vs 5.3\u00b11.1 \u03bcm, p>0.05), though nuclei are transiently smaller 10 min post-division (C20: 3.9\u00b10.5 \u03bcm) before recovering (C21: 4.8\u00b10.7 \u03bcm).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "There is no correlation between nuclear speeds and the speeds of neighboring nuclei, suggesting minimal direct kinetic energy transfer between nuclei during IKNM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 present experimental analysis of nuclear interactions. Figure 3A shows lack of correlation (C24), and extensive categorization by position, direction, and time delay found no correlations (C25). The conclusion of minimal energy transfer (C26) is consistent with overdamped motion at these length scales. However, the analysis does not rule out indirect mechanical coupling through the tissue, only direct momentum transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C52",
+      "C53"
+    ],
+    "result": "A nuclear concentration gradient exists from apical to basal surfaces, maintained by exclusive apical cell division. When cell division is blocked with HU-AC treatment, the gradient dissipates as nuclei redistribute basally, while control retinas maintain the gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C52-C53 describe the concentration gradient and its experimental manipulation. The gradient existence is confirmed by direct measurement (C52). The HU-AC experiment provides strong evidence: treated retinas show basalward shift and gradient flattening over 160 min (C28, C53), while controls show apicalward shift and gradient maintenance (C29). This supports the hypothesis that apical division maintains the gradient. Figures 4A-C provide visual confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C55",
+      "C61"
+    ],
+    "result": "A lattice-gas based nonlinear diffusion model that incorporates maximum nuclear concentration and apical crowding accurately describes the time evolution of nuclear distribution during IKNM over several hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C55, C61 describe the nonlinear diffusion model. The model incorporates two key features: apical crowding (boundary condition) and maximum packing density (C55). Figure 6 shows excellent fits to experimental data, particularly at later times where the linear model fails. The model accounts for steric interactions between nuclei (C61) and provides quantitative agreement with nuclear distribution evolution (C35). The fitting procedure is well-documented with \u03c7\u00b2 minimization and probability assessments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C41",
+      "C42",
+      "C57",
+      "C62",
+      "C63"
+    ],
+    "result": "Nuclear movements during IKNM cannot be explained by thermal diffusion alone but require active cytoskeletal transport. The estimated forces (1-50 nN) are compatible with multiple molecular motors or cytoskeletal polymerization, and this transport is highly stochastic rather than unidirectional during basal migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C41-C42, C57, C62-C63 present theoretical analysis of forces. The comparison of measured D* (~0.09 \u03bcm\u00b2/min) with thermal diffusion (D_thermal ~4.2 \u03bcm\u00b2/min) and membrane-hindered diffusion (D_tube ~10\u207b\u2076 D_thermal) shows a 3-4 order of magnitude discrepancy (C38), requiring active forces. Force estimates of 1-50 nN (C41) are calculated from the diffusion constant and friction coefficient, compatible with known cytoskeletal forces (C42). The conclusion requires both hindering and driving forces (C57) and stochastic rather than unidirectional transport (C63) is well-reasoned from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C58",
+      "C59",
+      "C64"
+    ],
+    "result": "Stochastic simulations reveal that IKNM requires considering surrounding nuclei explicitly, with cells being sensitive to local nuclear concentration. The stochastic force on nuclei is concentration-dependent, and MSD curves remain linear even with nonlinear underlying dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C58-C59, C64 describe simulation results. Figure 8 shows that only the concentration-dependent stochastic force model matches experimental MSD curves (C45), not models with concentration-dependent external forces or low-concentration models. This supports that IKNM is a tissue-wide phenomenon (C44). The observation that MSD curves are linear despite nonlinear dynamics (C58) is an important theoretical insight about the limitations of MSD analysis (C59). The concentration-dependent forcing (C64) emerges from comparing different model implementations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50",
+      "C65",
+      "C104"
+    ],
+    "result": "Temperature affects both cell cycle length and nuclear mobility during IKNM. At 32\u00b0C, cell cycle length is 205.5 min; at 25\u00b0C, it is 532.78 min. The diffusion constant D changes significantly with temperature (p\u22640.01), while two normal condition datasets show no significant difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C50, C65, C104 describe temperature effects. Cell cycle measurements are direct experimental observations (C47-C48). Statistical testing confirms significant D-value differences between temperature conditions (p\u22640.01) but not between normal replicates (C104), supporting that temperature directly affects nuclear mobility (C50). The interpretation linking this to temperature-dependent cytoskeletal dynamics (C65) is reasonable given the prior conclusion of cytoskeletal transport, though the mechanism is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establish that IKNM is synchronized with the cell cycle, with nuclei dividing apically, migrating basally during G1/S, and returning apically during G2. Prior work showed stochastic movement during G1/S and suggested passive forces may contribute to basalward drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are background knowledge from cited literature. These establish the context for the current work: IKNM synchrony with cell cycle (C1), apical mitosis (C2), basal migration in G1 (C3), apical migration in G2 (C4), actomyosin involvement in zebrafish (C5), effects on differentiation (C6), stochastic nature (C7-C8), basalward drift (C9), and microbead experiments suggesting passive forces (C10). All are appropriately cited and represent accurate summaries of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C54",
+      "C60",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Prior work and literature comparisons establish that DNA replication inhibition affects both G2 migration and G1/S stochastic movements, that microbeads migrate similarly to nuclei, that cytoskeletal components surround nuclei, and that IKNM may be involved in cell fate decisions through signaling gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C54, C60, C66-C72 cite prior literature to support interpretations. HU-AC effects on migration (C22-C23), microbead behavior (C60), cytoskeletal observations (C66-C68), G2 phase duration (C69), and cell fate implications (C71-C72) are all appropriately cited. The agreement of calculated D with literature values (C70) provides validation. These claims accurately represent prior work and are used appropriately to contextualize current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "At high nuclear concentrations near the apical surface, cells may recruit more molecular motors to transport nuclei away faster, leading to concentration-dependent stochastic force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 is explicitly labeled as speculative interpretation. While the concentration-dependent force is supported by model fitting (C45, C64), the specific mechanism of motor recruitment is not tested experimentally. This is a reasonable hypothesis consistent with the data but requires experimental validation through molecular perturbations or direct observation of motor dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "High-density nuclear trajectories can be used to distinguish between physical processes underlying stochastic nuclear movement during IKNM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is a summary statement of the work's contribution. The manuscript demonstrates this through: (1) ruling out direct kinetic energy transfer (C24-C26), (2) confirming apical crowding drives basalward drift (C27-C29), (3) quantifying forces incompatible with thermal diffusion (C38), and (4) identifying concentration-dependent stochastic forcing (C45, C64). The high-density tracking was essential for measuring concentration profiles and testing models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Computational methods for model fitting and stochastic simulations are described, including validation of parameter choices, Euler-Maruyama time discretization, and statistical testing procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C97-C103 describe computational methods. Validation that different numbers of modes yield same D-values (C95) and exclusion width doesn't affect fits (C97) demonstrate robustness. Simulation methods using Euler-Maruyama (C98) with validated time steps (C99), matching experimental birth times (C100), appropriate simulation duration (C101), and sufficient repetitions (C102) are well-documented. Statistical testing using Welch's t-test (C103) is appropriate for comparing datasets with potentially unequal variances.",
+    "result_type": "MINOR"
+  }
+]

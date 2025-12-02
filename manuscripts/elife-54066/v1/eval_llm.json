@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors developed a stochastic breast tumor model using bi-transgenic (TetO-MYC/TetO-Neu) mice where lentiviral delivery of rtTA enables oncogene expression in only transduced cells within mammary acini. This system was validated by demonstrating MYC expression exclusively in transduced cells of bi-transgenic acini versus all cells in tri-transgenic controls, with doxycycline dosages normalized to achieve equivalent oncogene mRNA expression levels between systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 collectively establish the stochastic tumor model system. The model design is well-supported by established Tet-inducible system knowledge (C2, C3), immunofluorescence validation of differential MYC expression (C5), and qPCR normalization of oncogene expression levels (C6). The system successfully creates mixed populations of tumorigenic and non-tumorigenic cells (C4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Immunofluorescence analysis at 96 hours post-induction revealed two distinct phenotypes in bi-transgenic acini: some showed hyperplastic expansion of H2B-GFP marked cells with disrupted polarity, while others showed no expansion of transduced cells despite MYC expression. Tri-transgenic acini uniformly displayed filled lumens and disrupted epithelial polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 describe endpoint immunofluorescence observations that are well-supported by imaging data in Figures 2a and 2b. The key finding that non-expanding transduced cells still express MYC (C12) rules out lack of oncogene expression as the cause of differential expansion, suggesting microenvironmental effects. The observations are consistent and reproducible across multiple acini.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Long-term light-sheet microscopy imaging (up to 4 days, 10-minute intervals) revealed that tri-transgenic acini uniformly developed tumor phenotypes with multi-layered rims and proliferation-associated apoptosis, while bi-transgenic acini showed heterogeneous outcomes: acini with multiple transduced cells in proximity showed clonal expansion, whereas sparsely infected acini did not sustain proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 describe live imaging results that are well-supported by light-sheet microscopy data (Figure 3, Videos 1-3). The consistency between live imaging and endpoint immunofluorescence (C19) validates both approaches and excludes phototoxicity artifacts. The imaging parameters (C13) appear appropriate for long-term non-phototoxic imaging based on the successful 4-day time courses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C57"
+    ],
+    "result": "The authors developed an image analysis pipeline integrating Big Data Processor and CATS plugins for Fiji with Imaris software, enabling nuclear segmentation and single-cell tracking in 3D with 92% segmentation accuracy. This pipeline successfully tracked individual transduced cells over 3 days, revealing differential proliferation and cell fates within single acini.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, and C57 describe the computational analysis pipeline with strong support from Figure 3\u2014figure supplement 3 showing segmentation accuracy assessment. The 0.92 True Positive to Ground Truth ratio (C20) indicates good segmentation performance, though some false merges occurred. The pipeline successfully enabled single-cell tracking as demonstrated in Figure 4a (C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Statistical modeling using logistic regression identified the number of transduced cells within a cluster as the primary predictor of tumor formation, with each additional transduced cell increasing tumor odds by 9-fold (or 6.7-fold in mixed models). Clusters of multiple transduced cells in proximity formed tumors, while isolated single transduced cells did not expand, even within the same acinus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 present the central quantitative finding supported by rigorous statistical analysis (logistic regression with AIC model selection) and imaging data (Figures 4b-c, Figure 4\u2014figure supplements 1-2). The analysis of 20 acini with 150 transduced cells provides reasonable sample size. The finding is internally consistent across multiple analytical approaches (simple logistic regression C22-C23, mixed models C25, and visual examples C26-C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors interpret their findings as indicating that proximity-controlled interactions between transformed cells guide tumor outgrowth, potentially due to repressive effects of intact polarized tissue on single cancerous cells or paracrine signaling between clustered transformed cells. They suggest the 'number of transduced cells within a cluster' parameter captures effects of epithelial integrity disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C33 present mechanistic interpretations of the experimental observations. While the interpretations are reasonable and supported by relevant citations, they remain speculative (C33 explicitly notes this). The data demonstrate correlation between cell clustering and tumor formation but do not directly test the proposed mechanisms. Additional experiments would be needed to distinguish between mechanical disruption, paracrine signaling, or other mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C58"
+    ],
+    "result": "The study demonstrates that differentiated epithelial cells can establish tumorigenic outgrowth upon stochastic oncogene activation, but not all oncogene-expressing cells expand, indicating inhibitory effects from the normal epithelial microenvironment. Specifically, small local clusters of transformed cells form tumors while isolated transformed cells do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, and C58 summarize the main biological conclusions, which are well-supported by the comprehensive experimental data including immunofluorescence (Figures 1-2), live imaging (Figure 3), and quantitative analysis (Figure 4). The finding that not all MYC/Neu-expressing cells expand (C37) is particularly important and well-documented. This represents the key discovery of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "The authors note that studies on polarity proteins as tumor suppressors in breast cancer have yielded conflicting results, with discrepancies potentially arising from the use of tissue-wide transformation models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 accurately represent conflicting findings in the literature regarding polarity proteins as tumor suppressors, supported by appropriate citations. This contextualizes the need for the stochastic model developed in this study. The claims are appropriately cautious about the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors provide background on the clinical relevance of MYC and ERBB2/Neu oncogenes in breast cancer and the characteristics of the transgenic mouse model, including oncogene prevalence in human disease, synergistic tumor acceleration in combined transgenic animals, and tumor regression upon oncogene silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 present established background information about the oncogenes and mouse model, appropriately supported by citations (C38-C40) or established knowledge about the model system (C41-C42). These claims provide important context for the choice of experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The authors describe key methodological details including the 3D acini culture protocol (48-hour growth to ~15 cells) and the specificity of the c-MYC antibody for human transgenic protein versus endogenous mouse protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 describe important methodological details that are clearly stated and appropriate. The antibody specificity (C44) is particularly important for validating that only transduced cells express the transgenic oncogenes. These are standard protocols appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors contextualize their imaging approach by noting that while light-sheet microscopy enables long-term organoid imaging with reduced phototoxicity, tracking fast-dividing tumor cells requires high resolution that limits imaging duration, and longer imaging periods typically require reduced temporal/spatial resolution incompatible with single-cell tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 accurately represent the state of the field regarding organoid imaging challenges, supported by appropriate citations. This effectively motivates the technical advances made in the current study. The claims correctly identify the trade-offs between resolution, duration, and phototoxicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors review hierarchical versus stochastic models of tumor propagation, noting these can be reconciled through cell plasticity and microenvironmental support, but that these concepts have not been tested in the context of stochastic oncogene activation in established epithelial layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 provide appropriate background on tumor propagation models, well-supported by citations. Claim C53 correctly identifies a gap in the literature that the current study addresses. This effectively motivates the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors claim their study presents a novel stochastic breast tumor model, overcomes limitations of tissue-wide transformation studies, and achieves long-term imaging at temporal resolution sufficient for single-cell fate tracking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 accurately summarize the main technical and conceptual advances of the study. The novelty claims are justified: the stochastic model (C54) is indeed new, it does overcome tissue-wide transformation limitations (C55), and the imaging resolution/duration combination (C56) represents a technical advance as demonstrated by the 3-4 day single-cell tracking data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors argue that while organoid cultures have been valuable for studying tumorigenesis, existing models typically allow oncogenic activation in all cells and cannot reproduce localized tumor expansion seen in patients, necessitating models where few tumorigenic cells expand within normal microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 accurately identify limitations of existing organoid models (supported by citations C59) and articulate the need for stochastic models (C61, supported by citation to Tabassum and Polyak, 2015). This effectively motivates the development of the bi-transgenic system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors propose multiple future applications of their system including single-cell RNA sequencing to identify signaling networks, molecular perturbation studies, drug screening on heterogeneous cell populations, and distinguishing cytotoxic versus tumor-specific drugs, claiming this will bridge the gap between model systems and clinical situations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C67 are explicitly speculative statements about future work and potential applications. While the proposed applications are reasonable and the system does enable these approaches, these claims cannot be evaluated as supported or unsupported since they describe work not yet performed. They represent appropriate discussion of future directions.",
+    "result_type": "MINOR"
+  }
+]

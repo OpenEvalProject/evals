@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors selected HEK-293 cells based on PaxDb expression data (65th percentile for C9ORF72), generated CRISPR/Cas9 knockout cell lines, and identified 16 distinct commercial C9ORF72 antibodies (14 commercial + 2 from MRC) for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 describe the initial cell line selection and antibody procurement strategy. The use of PaxDb for cell line selection is reasonable, CRISPR/Cas9 knockout generation is standard methodology, and the antibody identification process is clearly documented in Supplementary file 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Immunoblot screening of 16 C9ORF72 antibodies using parental, heterozygous, and knockout HEK-293 cells identified GTX634482 as the most specific antibody, with ab221137 and GTX632041 also showing specificity but with additional non-specific bands upon longer exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are well-supported by Figure 2 and Figure 2\u2014figure supplement 1, showing clear dose-dependent signal reduction in heterozygous cells and complete loss in KO cells for GTX634482. The validation using mouse brain samples (C18) provides orthogonal confirmation. The observation that some antibodies work in mouse but not human samples (C19) is interesting but adequately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Immunoprecipitation screening revealed that 9 of 16 antibodies can immunoprecipitate endogenous C9ORF72, with GTX632041 showing the most robust enrichment (~70% capture efficiency), while GTX634482 and ab221137 (effective for immunoblot) showed no appreciable immunoprecipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by Figure 3A/B and Figure 3\u2014figure supplement 1. The quantitative assessment of capture efficiency using LI-COR fluorescent detection (C23) provides rigorous quantification. The finding that antibodies effective for immunoblot may not work for immunoprecipitation (C22) highlights the importance of application-specific validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Mass spectrometry analysis of GTX632041 immunoprecipitates identified C9ORF72 and known binding partners SMCR8 and WDR41 at near 1:1:1 stoichiometry, suggesting high selectivity. MMS19 was identified as a potential novel binding partner, while clathrin heavy chain was deemed non-specific based on similar peptide counts in KO samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by Figure 3C/D and Supplementary file 2. The 1:1:1 stoichiometry of the known complex members (C25) provides strong evidence for antibody selectivity. The identification of MMS19 (C26) is appropriately cautious given low peptide counts (5, 1, 2 peptides). The interpretation of clathrin as non-specific (C27) is sound based on similar peptide counts in parental and KO samples, though the authors appropriately note they cannot distinguish between antibody cross-reactivity and other non-specific binding mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Initial immunofluorescence screening in HEK-293 cells failed to identify specific antibodies under multiple fixation conditions. Subsequent screening in U2OS cells (highest C9ORF72 expression among tested lines) identified GTX632041 as the sole antibody showing specific cytosolic/punctate staining that was dramatically reduced in KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 demonstrate a systematic approach to immunofluorescence validation. The failure in HEK-293 cells (C28-C29) followed by success in U2OS cells (C30-C33) highlights the importance of using high-expressing cell lines for immunofluorescence. The mosaic strategy mixing parental and KO cells (Figure 4\u2014figure supplement 3C) is an excellent control to minimize imaging bias. Figure 4A/B clearly shows specific signal with GTX632041.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Immunohistochemistry analysis of mouse brain sections revealed that GTX634482 shows strong specific staining in multiple brain regions (olfactory bulb, basal ganglia, hippocampus, substantia nigra, inferior olive, cerebellar cortex) that is nearly completely ablated in C9ORF72 KO mice. GTX632041 also shows specific staining but less consistently, while ab221137 showed no signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by Figure 5A-C. The use of epitope unmasking (110\u00b0C, pH 9.0) is appropriate for IHC. The regional specificity observed with GTX634482 (C34) is well-documented, though some non-specific signal is acknowledged in certain regions. The differential performance of antibodies across applications (C36: ab221137 works for immunoblot but not IHC) reinforces the need for application-specific validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "C9ORF72 localizes to lysosomes under both basal and starvation conditions, with 82% of LAMP1-positive lysosomes showing C9ORF72 on their periphery. C9ORF72 co-localizes with late endosome/lysosome markers (Rab7a, Rab9) but not early/recycling endosome markers (Rab5a, Rab11a). Biochemical fractionation and lysosomal immunoprecipitation reveal ~15% of C9ORF72 is lysosome-associated while ~85% is cytosolic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C50 provide comprehensive evidence for C9ORF72 lysosomal localization through multiple orthogonal approaches: immunofluorescence (Figure 6A-B), co-localization with Rab GTPases (Figure 6\u2014figure supplement 1), lysosomal immunoprecipitation (Figure 6C), and biochemical fractionation (Figure 6\u2014figure supplement 2C). The quantification is rigorous (82% of lysosomes positive, C43; 3-4 fold enrichment, C46; 75% cytosolic/25% membrane, C49). The finding contradicts a previous study (C39, Amick et al., 2016) that reported diffuse cytoplasmic localization under basal conditions, which the authors attribute to antibody quality issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "C9ORF72 is highly expressed in macrophages (bone marrow-derived and human monocyte-derived) and localizes to phagosomes. Pulse-chase experiments in RAW264.7 cells demonstrate that C9ORF72 accumulates on late phagosomes after F-actin disassembly and before lysosome fusion, remaining present on phagolysosomes. LPS treatment increases C9ORF72 levels ~1.8-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 reveal novel biology of C9ORF72 in macrophages. The high expression in macrophages (C55-C56, Figure 7) is well-documented. The temporal dynamics of C9ORF72 recruitment to phagosomes (C59-C63, Figure 8D) are clearly demonstrated through pulse-chase experiments with appropriate markers (F-actin for early phagosomes, LAMP1 for phagolysosomes). This finding is particularly significant given the autoimmune phenotype of C9ORF72 KO mice and suggests an important role in phagocytosis/autophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The non-specific antibody SC-138763 has been used in 15 published manuscripts that have been cited >3000 times, with first-layer citations exceeding 66,000. This antibody does not recognize C9ORF72 in any human sample or application according to the validation performed in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 highlight a critical problem in the C9ORF72 literature. The validation data clearly show SC-138763 does not recognize C9ORF72 (Figure 2), yet it has been widely used. The bibliometric analysis (C67-C68) quantifies the potential impact of this problem. However, the claim about GTX119776 being used in five papers (C64) appears to be stated incorrectly in the text, which actually discusses SC-138763 being used in 15 papers. This is a minor inconsistency in claim extraction but does not affect the core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors developed an antibody validation pipeline that is easy to implement, scalable, and applicable to any protein target. They recommend GTX634482 for immunoblot and immunohistochemistry, GTX632041 for immunoprecipitation and immunofluorescence, and ab221137 for immunoblot. Individual steps can be used in isolation depending on user needs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C73-C75, C80-C81 describe the methodological contribution and recommendations. The pipeline is well-documented (Figure 1) and the recommendations are based on systematic validation across multiple applications. The claims about ease of implementation and scalability (C70) are reasonable given the use of standard techniques (CRISPR, immunoblot, IP, IF). The generalizability claim (C80) is supported by the logical workflow, though actual demonstration on other targets would strengthen this assertion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background on the antibody reproducibility crisis, citing that over 1 million commercial antibodies exist, up to 90% of landmark preclinical studies suffered from antibody-related flaws, and five validation criteria have been proposed by international working groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide literature context. C1 is based on personal communication, which is not ideal but acceptable for a general market estimate. C2-C4 are supported by appropriate citations. These claims establish the rationale for the study but are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "C9ORF72 hexanucleotide repeat expansion is the most common genetic cause of ALS and FTD, accounting for 11.7-46% of familial cases depending on population. The literature on C9ORF72 localization is conflicting, which the authors hypothesize stems from use of non-specific antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are well-supported by citations to the original discovery papers. C8 is supported by a review citation. C9 is the authors' hypothesis that motivates the study and is ultimately supported by their findings (C38, C72). These claims provide important disease context but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Previous studies have localized C9ORF72 to multiple cellular compartments (nucleus, endosomes, Golgi, stress granules, lysosomes) using commercial antibodies that failed validation criteria in this study. One study using HA-tagged endogenous C9ORF72 reported diffuse cytoplasmic localization under basal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 summarize prior literature. C37 is supported by multiple citations. C38 is a key finding showing that previous localization studies used non-validated antibodies. C39 describes the one study that used epitope tagging rather than antibodies, which reported different results than the current study. This discrepancy is discussed but not fully resolved\u2014it could reflect differences between tagged and endogenous protein or differences in cell types/conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "C9ORF72 KO mice do not develop motor neuron disease but instead develop autoimmune phenotypes including splenomegaly and lymphadenopathy, ultimately dying from autoimmunity complications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by multiple citations to published mouse studies. This provides important context for why the authors examined C9ORF72 expression and function in immune cells, but these are not findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The manuscript cites various technical and biological facts from the literature: PaxDb is a comprehensive proteomic database; antibody performance depends on epitope recognition; LRRK2 (another neurodegenerative disease gene) is highly expressed in immune cells despite low expression in affected brain regions; 4% PFA/Triton X-100 is suitable for most immunofluorescence targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C76-C79 provide technical and contextual information supported by appropriate citations. These are not primary findings but rather support the methodological choices and provide comparative context (e.g., LRRK2 expression pattern parallels C9ORF72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Application of the validation pipeline to C9ORF72 identified high-quality antibodies and revealed that non-specific antibodies have been used in highly cited papers, raising concerns about previously reported C9ORF72 properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are summary statements of the major findings. They are well-supported by the collective evidence from antibody validation (C15-C36) and literature analysis (C64-C68). These represent the two main contributions of the paper: methodological (validation pipeline) and biological (C9ORF72 localization).",
+    "result_type": "MAJOR"
+  }
+]

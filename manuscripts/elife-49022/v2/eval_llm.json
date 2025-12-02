@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The study used 15 rhesus macaques infected with barcoded SIVmac239M virus, with cART initiated at different timepoints (day 4, 10, or 27 post-infection) to establish varying levels of viral dissemination. Different viral inocula were used: 2.2\u00d710^5 IU for day 4 and 27 groups, and 1\u00d710^4 IU for the day 10 group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C59-C61 describe the experimental design clearly and consistently. The methodology is straightforward and well-documented, with appropriate animal numbers and treatment timing specified. This represents standard experimental design for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Animals treated at day 10 had reactivation frequencies of 1.63-2.94/day (mean=2.29), while day 27 treated animals had 0.75-3.10/day (mean=1.33), with no significant difference between these groups (p=0.19). However, both groups showed significantly higher reactivation frequencies than day 4 treated animals (0.40-0.87/day, mean=0.61; p=0.0028).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 present consistent quantitative data with appropriate statistical tests (Mann-Whitney). The sample sizes are small (n=4-6) but the statistical significance is clearly reported. The finding that day 10 and 27 groups are similar but both differ from day 4 is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Later treatment initiation led to higher SIV DNA levels at treatment interruption (ranging from <3.2 to 1000 copies/10^6 PBMC), which correlated with reactivation frequency (slope=0.20, R\u00b2=0.56, p=0.0019). However, a 100-fold increase in SIV DNA was associated with only a 2-fold increase in reactivation frequency, indicating a non-proportional relationship where later treatment was associated with declining reactivation per DNA copy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C19-C22 present the core finding of the study with quantitative data and statistical support. The log-log regression analysis is appropriate, and the slope of 0.20 (rather than 1.0) clearly demonstrates the non-proportional relationship. The 116-fold DNA difference vs 2-fold reactivation difference in day 4 vs day 27 animals provides strong supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C56",
+      "C57"
+    ],
+    "result": "Longer treatment duration showed a trend toward declining reactivation frequency (half-life 216 days, p=0.064) and reactivation frequency appeared to decay at the same or faster rate than DNA levels in PBMC (DNA half-life ~345 days, p=0.53 for comparison).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18, C56-C57 report trends that do not reach statistical significance (p=0.064 and p=0.53). While the half-life estimates are provided, the lack of significance means these findings are suggestive but not conclusive. The small sample sizes and variability likely contribute to the lack of statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Cell-associated SIV RNA levels at treatment interruption were not a significant predictor of post-ATI reactivation frequency (Pearson r=0.37, p=0.18, n=15). Day 4 and day 27 treated animals differed by 84-fold in CA-RNA levels but only 2-fold in reactivation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 present clear statistical evidence (non-significant correlation) and quantitative comparison. The finding parallels the DNA results and is internally consistent. The sample size (n=15) is adequate for correlation analysis, and the p-value clearly indicates lack of significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Animals treated on day 10 showed higher Ki67 expression (4.54%) compared to day 4 (1.12%, p=0.005) and day 27 (1.72%) groups. However, reactivation per SIV DNA copy was negatively correlated with Ki67 expression (Spearman r=-0.56, p=0.034), suggesting cellular activation is not a major driver of reactivation frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 present data with appropriate statistical tests. The negative correlation is counterintuitive but statistically significant, suggesting that immune activation does not drive reactivation as might be expected. The finding is important for understanding mechanisms but the interpretation requires caution given the small sample sizes and potential confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "CD8+ T cell CD107a responses to SIV peptides were negatively correlated with peak viral load during treatment interruption (Spearman r=-0.62, p=0.015, n=15), suggesting CD8+ T cells mediate some immune control of viral rebound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 show a significant negative correlation with adequate sample size (n=15). The interpretation that CD8+ T cells mediate immune control is reasonable given the negative correlation with peak viral load. However, correlation does not prove causation, and alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Near full-length sequencing revealed that 84% of SIV DNA sequences (50/60 from day 10 and 86/101 from day 27 animals) were intact and presumptively replication competent, suggesting differences in reactivation frequency cannot be explained by differences in replication competence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 present clear sequencing data showing high proportions of intact genomes in both groups. The conclusion that replication competence differences cannot explain the reactivation differences is well-supported. However, the claim is limited to the animals sequenced and assumes that intactness equals replication competence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Multiple regression analysis found that peripheral immune and cytokine variables did not significantly predict reactivation frequency. The best predictive model included treatment duration and DNA levels at interruption (adjusted R\u00b2=0.73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 present results from appropriate multivariate analysis. The R\u00b2=0.73 indicates good model fit. However, the manuscript does not provide full details of the regression coefficients, p-values for individual predictors, or model diagnostics, limiting full evaluation of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Mathematical modeling showed that a subset of 0.4% of cells that is 100-fold more susceptible to infection and 500-fold more prone to reactivation could recapitulate the observed dynamics of DNA accumulation and post-ATI reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 presents modeling results that provide a mechanistic explanation for the observed data. The model is described in the methods section with equations. However, the claim notes 'or a variety of combinations of these factors,' indicating parameter non-identifiability. The model demonstrates plausibility but does not prove this mechanism operates in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C34",
+      "C35"
+    ],
+    "result": "The rebound competent reservoir (RCR) can be established soon after infection, and a large fraction of persistent viral DNA that accumulates after early infection makes relatively little contribution to viral rebound. The majority of reactivation events likely derive from a small portion of the total proviral population established extremely early in infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C34-C35 represent the main conclusions of the study, supported by the disproportionate relationship between DNA accumulation and reactivation frequency. The evidence from multiple cohorts with different treatment timing strongly supports early RCR establishment. However, C35 includes speculative language ('seems likely') acknowledging this is an inference rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C46"
+    ],
+    "result": "Peak viral load varied ~350-fold and area under the curve varied >4,000-fold between day 4 and day 27 treated animals. Despite this massive difference in viral exposure and the resulting increase in SIV CA-DNA, the additional exposure was associated with only approximately double the reactivation frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C46 provide quantitative comparisons with confidence intervals that support the dramatic differences in viral exposure. The conclusion that this massive exposure difference leads to minimal reactivation difference is well-supported and represents a key finding. The data are internally consistent across multiple measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "After 6 months of therapy, SIV DNA decays with a half-life of ~345 days while SIV CA-RNA decays faster with a half-life of 86 days (p<0.016).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 present decay kinetics with statistical significance for the RNA decay rate. The analysis used linear mixed effects models as described in methods. The finding that RNA decays faster than DNA is biologically plausible and statistically supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Extremely early treatment (with viral loads <1,000-10,000 copies/ml) may severely restrict RCR establishment, but once plasma viremia passes ~10,000 copies/ml, the subsequent post-ATI reactivation frequency is established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C45 synthesize findings from the current study with cited prior work. However, the specific threshold of 10,000 copies/ml is not directly tested in this study - it is inferred from comparing studies with different designs. The claim is plausible but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Over the first year or two of infection, SIV DNA remains intact at much higher rates than HIV (84% intact in this study vs 2.4% for HIV in chronic infection and 28% for SIVmac251 at 95 weeks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 compare the current findings with cited literature. The comparison is valid and the conclusion that SIV maintains higher intactness than HIV is well-supported. However, the comparison involves different viruses, timepoints, and assays, which limits direct comparability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C58"
+    ],
+    "result": "Recent studies show rebound virus originates from a different pool of cells than circulating provirus. Combined with the current SIV results, most current measures of the HIV reservoir (total CA-HIV or intact proviruses from PBMCs) are not measuring the major contributor to post-ATI rebound viremia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C58 synthesize findings from cited work with the current study to reach a broader conclusion. The logic is sound: if DNA levels poorly predict reactivation and rebound virus differs from circulating provirus, then current measures are inadequate. However, this relies heavily on the cited Lu et al. study and extrapolation from SIV to HIV.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Integration sites and clonal expansion propensity are similar between SIV and HIV, but the initial viral inoculum in this study is several orders of magnitude higher than estimated in HIV, which may disproportionately contribute to early RCR establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 acknowledge important limitations of the SIV model. The authors appropriately note the high inoculum but argue it likely contributes <0.1% of virus by day 4 due to exponential viral growth. This is a reasonable calculation but remains a limitation for translating findings to HIV.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Individuals treated very early during Fiebig stage 1 have only slightly longer time to viral rebound than those treated in chronic infection (median 26 vs 14 days), despite considerably lower HIV DNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 cites the Colby et al. study appropriately and the finding supports the current study's conclusions about early RCR establishment. However, this is prior work being cited, not a finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Previous studies have demonstrated that latency is established very early after SIV infection, consistent with observations that the rebound competent reservoir is established in macaques by day 4 post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 appropriately cites prior work (Whitney et al., Okoye et al.) that supports the current findings. The consistency between prior work and current observations strengthens the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "In humans, HIV DNA and ex vivo inducible HIV both decay with a half-life of >4 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 cites prior human studies appropriately. This provides context for comparing the SIV decay rates observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Current HIV treatment requires lifelong daily cART, as interruptions result in rapid viral recrudescence from periodic activation of latently infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 state established knowledge about HIV treatment and are appropriately cited. These provide background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Different measures of the HIV reservoir vary 100-1000-fold between individuals, are often poorly correlated, and groups of >100 individuals may be required to demonstrate substantial changes in reservoir size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 cite prior work appropriately to establish the rationale for the current study. These background claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C12",
+      "C62"
+    ],
+    "result": "The barcoded SIVmac239M virus contains ~10,000 clonotypes at approximately equal proportions, and the plasma viral load assay has a limit of detection of 15 vRNA copies/mL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C62 describe key methodological tools. The barcoded virus is previously published and the assay limit of detection is a standard technical specification. These are well-documented.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C22",
+      "C23",
+      "C30",
+      "C31"
+    ],
+    "result": "The Drosophila germ plasm contains two distinct types of RNP granules: germ granules and founder granules. Germ granules contain mRNAs like nanos and become enriched in pole cells, while founder granules contain oskar mRNA and Staufen protein but do not become enriched in pole cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C22, C23, C30, and C31 collectively establish the existence and distinct behaviors of two RNP granule types in the germ plasm. The claims are supported by experimental data showing differential localization patterns, molecular composition (oskar/Staufen in founder granules vs. nanos in germ granules), and differential enrichment in pole cells. The evidence includes FISH data, immunofluorescence, and live imaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "oskar mRNA itself is toxic to pole cells independently of Oskar protein production. Untranslatable oskar mRNA (oM1,139R\u2206n) targeted to germ granules causes reduced pole cell formation and migration defects similar to translatable oskar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35, C44-C47 demonstrate oskar mRNA toxicity through experiments with untranslatable oskar constructs. The data show that oM1,139R\u2206n mRNA (with mutated start codons) colocalizes with germ granules, is incorporated into pole cells, and causes pole cell formation and migration defects comparable to translatable oskar, establishing that the mRNA itself is toxic. This is supported by Figure 1 data showing reduced pole cell numbers and migration defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Founder granules exhibit limited motility during pole cell formation, remaining uniformly distributed in the germ plasm rather than clustering around nuclei like germ granules. Despite their proximity to forming pole cells, founder granules can be passively incorporated, suggesting another mechanism limits oskar uptake by pole cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by live imaging and particle tracking data (Figure 2, Video 1) showing founder granules move more slowly with smaller displacements and fewer linear trajectories than germ granules. The quantitative analysis demonstrates founder granules remain uniformly distributed while germ granules cluster around nuclei. The inference that passive incorporation is possible (C59) is reasonable given the spatial distribution data, and the conclusion that another mechanism must limit oskar uptake (C60) follows logically from the observation of low oskar in pole cells despite founder granule proximity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C37"
+    ],
+    "result": "oskar mRNA in founder granules is selectively degraded in the germ plasm beginning at nc7, with 98% reduction by pole cell formation, while germ granule mRNAs like nanos remain stable. Founder granule size decreases during this period while germ granule size remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C61-C66 are well-supported by quantitative FISH data (Figure 3) showing temporal changes in oskar vs. nanos levels and particle sizes. The 98% decrease in oskar (C61) and stability of nanos (C62) are directly measured. The differential behavior of og vs. o\u2206gn constructs (C63-C64) provides additional evidence for granule-specific degradation. The particle size analysis (C65-C66) supports the conclusion that founder granules destabilize while germ granules remain intact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The mRNA degradation machinery, including DCP1, Me31B, and Pacman, is specifically recruited to founder granules containing oskar but not to germ granules. Recruitment begins at nc5 and occurs sequentially, with Pacman recruitment delayed relative to DCP1, dramatically reducing oskar available for pole cell incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 are supported by colocalization data (Figure 4) showing temporal recruitment of degradation factors specifically to oskar-containing founder granules. The quantitative analysis demonstrates increasing DCP1 colocalization with oskar starting at nc5 (C69), absence of DCP1 colocalization with germ granule mRNAs like cyclin B (C70), and sequential recruitment of Me31B (77%, C71) and Pacman (49%, C72). The temporal delay in Pacman recruitment (C73) supports sequential assembly (C74). The specificity for founder granules (C75-C76) is demonstrated by lack of DCP1 colocalization with o\u2206gn in germ granules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "oskar degradation occurs within intact founder granules rather than after granule disassembly. DCP1 associates with founder granules containing both oskar and Staufen, colocalizes with oskar particles of all sizes, and the 5':3' ratio of oskar decreases consistent with 5' to 3' degradation. The temporal sequence shows DCP1 recruitment (nc5), oskar degradation (nc7), particle size decrease (nc9), and Staufen loss (nc11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C92 provide converging evidence that degradation occurs within intact granules. The colocalization data showing DCP1 with both oskar and Staufen (C78-C80), association with particles of all sizes (C81-C82), and decreased 5':3' ratio (C83-C84) all support degradation within granules (C85). The temporal sequence (C86-C92) is internally consistent and supports the model that degradation precedes granule destabilization (C91). The data are well-supported by Figures 4 and 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C41",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Degradation of oskar in the germ plasm is temporally distinct from degradation during the maternal-to-zygotic transition (MZT). Germ plasm oskar degradation begins at nc7, well before pole cell formation at nc10, while bulk cytoplasm oskar degradation begins at nc11, after pole cell formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100, C41, C115-C117 are supported by quantitative FISH data (Figure 6) comparing oskar levels and DCP1 colocalization in germ plasm vs. bulk cytoplasm over time. The temporal separation is clear: germ plasm degradation at nc7 vs. bulk cytoplasm at nc11. This establishes that founder granule-mediated degradation is distinct from and precedes MZT-related degradation. The data directly support the temporal claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C123",
+      "C124",
+      "C42",
+      "C43"
+    ],
+    "result": "oskar degradation in the germ plasm is mechanistically distinct from MZT degradation and requires the Piwi protein Aubergine but not Brain tumor or Pumilio. In aubergine mutants, oskar is partially stabilized, DCP1 does not colocalize with oskar, and founder granule size is maintained. Aubergine appears to function in recruiting DCP1 to founder granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C113, C123-C124, C42-C43 are supported by genetic analysis (Figure 7-8) showing normal oskar degradation in brain tumor and pumilio mutants (C103-C104) but partial stabilization in aubergine mutants (C105). The lack of DCP1 colocalization in aubergine mutants (C109) and rescue by gfp-aub transgene (C110) support Aubergine's role in DCP1 recruitment (C111). The stabilization of founder granule size in aubergine mutants (C112) supports the link between degradation and granule destabilization (C113). The unfertilized egg data (C106-C108) control for developmental arrest effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C114",
+      "C126",
+      "C127"
+    ],
+    "result": "Founder granules mediate compartmentalized degradation of oskar to minimize its inheritance by pole cells. The selectivity of oskar degradation occurs through specific recruitment of decay factors to founder granules, and subsequent degradation causes founder granule destabilization, ultimately limiting oskar uptake by pole cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38-C40, C114, C126-C127 represent the central mechanistic conclusion of the paper. These claims are well-supported by the collective evidence from multiple experiments: (1) oskar toxicity to pole cells (C5, C35, C47), (2) selective degradation of oskar vs. germ granule mRNAs (C36-C37, C61-C66), (3) specific recruitment of degradation machinery to founder granules (C69-C77), (4) degradation within intact granules (C78-C92), (5) temporal precedence over MZT (C97-C100), and (6) Aubergine requirement (C103-C113). The inference that compartmentalization enables selective degradation is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C122",
+      "C125",
+      "C142"
+    ],
+    "result": "Compartmentalization in different RNP granules differentially controls the fates of mRNAs localized within the same cytoplasmic domain. Only oskar is degraded in the germ plasm, while redirecting oskar to germ granules results in its stabilization like nanos. Founder granules protect the germline from inheriting deleterious transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C122, C125, C142 represent the broader conceptual conclusion about RNP granule function. These are well-supported by the experimental data showing: (1) differential stability of oskar vs. nanos in the same domain (C61-C62), (2) stability of o\u2206gn when redirected to germ granules (C64, C125), (3) selective degradation of only oskar (C122), and (4) oskar toxicity necessitating its removal (C5, C35, C47). The inference about protective function (C142) is reasonable given the demonstrated toxicity and selective degradation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C132",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C140"
+    ],
+    "result": "Several speculative mechanisms are proposed for oskar toxicity and degradation: oskar mRNA may titrate germline development factors; Aubergine may act indirectly or transiently; founder granules may concentrate oskar to enhance degradation efficiency and create a hub for degradation machinery; oskar RNA may regulate founder granule properties; founder granules may also sequester retrotransposon mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C132, C134-C138, C140 are explicitly speculative proposals for future investigation. While these hypotheses are reasonable given the data, they lack direct experimental support in this manuscript. C48 proposes factor titration by analogy to oogenesis; C132, C134-C135 propose indirect or transient Aubergine action based on lack of colocalization; C136-C137 propose concentration effects and hub formation based on granule properties; C138 proposes RNA regulation of granule properties by analogy to other systems; C140 proposes retrotransposon sequestration by analogy. These are appropriate speculations for the Discussion but are not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C50",
+      "C51",
+      "C52",
+      "C67",
+      "C68",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C101",
+      "C102",
+      "C119",
+      "C120",
+      "C121",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C139"
+    ],
+    "result": "Background information about Drosophila development, RNP granules, germ plasm, oskar function, mRNA degradation mechanisms, and MZT factors is provided based on established knowledge and previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C29, C50-C52, C67-C68, C93-C96, C101-C102, C119-C121, C128-C131, C139 represent background knowledge and citations to previous work. These are appropriately cited and represent established facts in the field. They provide necessary context for the current work but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C49",
+      "C53",
+      "C141"
+    ],
+    "result": "Previous work and current observations establish that targeting oskar to germ granules impairs germline development, only low levels of oskar are detected in wild-type pole cells, germ granules exhibit directed motility toward nuclei, and germ granules provide pole cells with maternal mRNAs needed for germline development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C49, C53, C141 combine citations to previous work (C32-C34, C53) with current observations (C49) and established knowledge (C141). C32-C34 cite Little et al. 2015 for oskar toxicity effects; C49 shows current data on low oskar in wild-type pole cells; C53 confirms previous observations of germ granule motility; C141 represents established understanding of germ granule function. These are well-supported but represent confirmatory or contextual information rather than novel major findings.",
+    "result_type": "MINOR"
+  }
+]

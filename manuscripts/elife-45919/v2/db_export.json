@@ -1,0 +1,2602 @@
+{
+  "submission": {
+    "id": "4a2464e6-2b65-4c3e-82ef-cd73cd3800a5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:56:39.186342Z",
+    "updated_at": "2025-12-02T10:56:39.186342Z"
+  },
+  "content": [
+    {
+      "id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "submission_id": "4a2464e6-2b65-4c3e-82ef-cd73cd3800a5",
+      "content_type": "manuscript",
+      "content_text": "# PIE-scope, integrated cryo-correlative light and FIB/SEM microscopy\n\n## Authors\n\n- Sergey Gorelick<sup>1</sup>\n- Genevieve Buckley<sup>1</sup>\n- Gediminas Gervinskas<sup>3</sup>\n- Travis K Johnson<sup>4</sup>\n- Ava Handley<sup>5</sup>\n- Monica Pia Caggiano<sup>1</sup>\n- James C Whisstock<sup>1</sup>\n- Roger Pocock<sup>5</sup> ([ORCID: 0000-0002-5515-3608](https://orcid.org/0000-0002-5515-3608))\n- Alex de Marco<sup>1</sup> ([ORCID: 0000-0001-6238-5653](https://orcid.org/0000-0001-6238-5653)) \u2020\n\n### Affiliations\n\n1. ARC Centre of Excellence in Advanced Molecular Imaging Monash University Clayton Australia\n2. Department of Biochemistry and Molecular Biology, Biomedicine Discovery Institute Monash University Clayton Australia\n3. Ramaciotti Center for Cryo-Electron Microscopy Monash University Clayton Australia\n4. School of Biological Sciences Monash University Clayton Australia\n5. Department of Anatomy and Developmental Biology, Biomedicine Discovery Institute Monash University Clayton Australia\n6. University of Warwick Coventry United Kingdom\n7. EMBL Australia Clayton Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nCryo-electron tomography (cryo-ET) is emerging as a revolutionary method for resolving the structure of macromolecular complexes in situ. However, sample preparation for in situ Cryo-ET is labour-intensive and can require both cryo-lamella preparation through cryo-focused ion beam (FIB) milling and correlative light microscopy to ensure that the event of interest is present in the lamella. Here, we present an integrated cryo-FIB and light microscope setup called the Photon Ion Electron microscope (PIE-scope) that enables direct and rapid isolation of cellular regions containing protein complexes of interest. Specifically, we demonstrate the versatility of PIE-scope by preparing targeted cryo-lamellae from subcellular compartments of neurons from transgenic Caenorhabditis elegans and Drosophila melanogaster expressing fluorescent proteins. We designed PIE-scope to enable retrofitting of existing microscopes, which will increase the throughput and accuracy on projects requiring correlative microscopy to target protein complexes. This new approach will make cryo-correlative workflow safer and more accessible.\n\n## Introduction\n\nCryo-electron tomography (cryo-ET) is currently the principal method for investigating the structure of proteins and protein complexes directly in their native environment (Beck and Baumeister, 2016). Here, a cellular sample is vitrified by plunge or high-pressure freezing to instantaneously cease cell activity and prevent crystallisation of water in the sample (Dubochet et al., 1988)\u00a0(Luci\u0107 et al., 2005). Despite the high-resolution potential of cryo-ET, there are two major challenges that limit the applicability of this technique. First, it is not possible to image a cell in regions thicker than 500 nm using a conventional 300 keV transmission electron microscope (Frank, 1996). Second, the cellular environment is extremely heterogeneous and it is impossible to unequivocally identify every visible density\u00a0(F\u00f6rster et al., 2010). To overcome the issue of cell thickness, the most common and successful approach is to use a cryo-focused ion beam microscope (FIB) to thin the sample and produce flat electron-transparent lamellas of approximately 300 nm thick (Marko et al., 2006; Marko et al., 2007)\u00a0(Hsieh et al., 2014; Rigort et al., 2010). Thus, in a single lamella, only a portion of the cell is retained for cryo-ET but it remains unknown as to whether the protein/complex of interest is present. Considering that every step from FIB milling to cryo-ET imaging is time-consuming, it is crucial to accurately target the FIB milling procedure to the region on interest. The solution to this has been correlative light and electron microscopy (CLEM) (Arnold et al., 2016; Sartori et al., 2007), which also offers the opportunity to validate the interpretation of the cryo-ET data by matching the fluorescence data with tomographic densities.\n\nThe most complete cryo-CLEM workflow links light microscopy (live cell imaging and cryo-LM), cryo-FIB and cryo-ET (Figure 1). The goal, in this case, is to image a protein of interest within a living specimen at the highest possible/required resolution (this step is optional but it can be crucial when working on time-sensitive cellular processes). Then, when appropriate, the sample is vitrified though plunge freezing (or high-pressure freezing). At this stage, the sample must be transferred under cryogenic conditions into a cryo-LM (Sartori et al., 2007; Schorb and Briggs, 2014; van Driel et al., 2009) and imaged to obtain a still after cryo-fixation to locate all the regions that will be targeted for cryo-FIB milling. Cryo-LM on the vitrified sample is required (even if fluorescence images have been acquired on the living sample) to ensure that the images recorded during the living specimen experiment can be related to the cryo-LM image as effects due to dynamic cell process, blotting and plunge-freezing could cause the target structure to move position. The sample is then transferred (again under cryogenic conditions) into the cryo-FIB. Once it has been milled, the specimen needs to be either transferred to the cryo-TEM for imaging or back to the cryo-LM to confirm that the FIB milling successfully isolated the region housing the protein of interest (Arnold et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45919/elife-45919-fig1-v2.jpg)\n\n**Figure 1.:** (a) Live cell imaging. (b) Plunge or high-pressure freezing of the sample for cryo-preservation (note, cells can be either cultured on the grid in (a) or in case of suspension be added onto the grid at this stage). (c) Cryo-light fluorescence microscopy in the PIE-scope to identify regions of interest. (d) Simple lateral translation of the sample brings the selected region of interest under the FIB/SEM columns. (e) Once the region of interest is under the FIB, a lamella can be thinned down. The angle between the prepared lamella to the grid plane can be controlled by the stage tilt. (f) Simple translation and tilt of the prepared lamella inside the system allow verification of successful targeting of the region of interest with light microscopy. (g,h) An optional repeat of (e) and (f) for further thinning of the lamella. Since two cryo-transfers are required, the system allows rapid and multiple intermediate verifications of targeting with optical and scanning electron microscopes. The x,y,z-axes shown in c-h correspond to the stage axes of the FIB/SEM. (i) Once the region of interest is successfully targeted and optically verified, the lamella is cryo-transferred into a TEM for high-resolution sample analysis. Distances and dimensions throughout the figure have been adapted for illustrative purposes and are not representative.\n\nThis workflow requires handling of samples across multiple microscopes (Arnold et al., 2016; Rigort et al., 2010). Each transfer must be performed under cryogenic conditions and in a humidity-free environment in order to avoid the formation or deposition of crystalline ice. Also, handling a cryo-EM grid on which multiple lamellas have been prepared is an extremely delicate process. Even though users do not handle a bare grid as in the formative days of this field (Marko et al., 2007; Rigort et al., 2010), but rather a cartridge (which increases the sample stiffness), every manual handling step risks thawing, damaging or contaminating the sample and lowers the overall success of the process (Hsieh et al., 2014). This also means that users are unlikely to confirm whether their lamella preparation was successful via cryo-LM before acquiring the data with a transmission electron microscope (TEM), which may further impact workflow success.\n\nAll the risks associated with cryo-transfers described above can be mitigated using an integrated approach, where a light microscope is integrated into the vacuum chamber of the electron microscope. Such an approach has been successfully implemented for CLEM where the introduction of a light microscope objective in a TEM column permitted switching between TEM and LM imaging, known as the iLEM (Agronskaia et al., 2008). The iLEM has demonstrated its value on both room temperature and cryo-samples (Faas et al., 2013), making navigation seamless and accelerating the data collection process by eliminating the need to image areas not representing the region of interest. The major limitations that iLEM suffers from are that high-resolution LM imaging is impossible, because of the tight geometry of the TEM column, and the need to remove the cryo-box usually protecting the sample, which can lead to long-term contamination. Also, for the specific requirement of targeting the lamella preparation, having a light microscope embedded in the cryo-TEM will not be beneficial.\n\nHere, we report the design and functionality of an integrated cryo-LM and cryo-FIB/SEM which we call the Photon Ion Electron Microscope, or PIE-scope. We demonstrate how the PIE-scope can be used to accurately guide cryo-FIB milling to target cells and tissues using a variety of specimens. We also present an example of software integration to control both the cryo-FIB and the cryo-LM.\n\n## Results and discussion\n\n### The PIE-scope setup\n\nTo ensure that existing FIB/SEM systems in the field can be retrofitted with the solution proposed here, we chose a design that would be applicable to as many systems as possible regardless of the SEM working distance and column shape. For this reason, the LM does not image the sample at the coincidence point but 49 mm away from it along the X axis (Figure 2). Although we developed it to fit on a standard ThermoFisher FIB/SEM chamber, with minor modifications it can be adapted to other systems.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45919/elife-45919-fig2-v2.jpg)\n\n**Figure 2.:** (a) Outside view of the PIE-scope. The atmospheric (external) retrofitted component consisting of one excitation and one emission arms. The camera at the end of the emission arm can be replaced. The excitation arm has been designed to fit an FC/APC fibre-end with a 6 \u00b5m core and a NA\u00a0=\u00a00.06. BS represents the position of the dichroic beam-splitter. (b) A view of the FIB/SEM chamber containing showing the in-vacuum section of the PIE-scope. An objective is mounted on a high-precision motorized stage for sample focusing (LM focus drive). The light from the external arm (cyan arrow) is delivered through a glass flange and directed into the objective by a mirror. (c,d) CAD renderings of the in-vacuum section of the PIE-scope. These renderings are a simplified representation of the chamber and do not include all components visible in (b), but the renderings clarify the geometry of the critical components of PIE-scope. The XYZ axes at the bottom left of panels c and d are aligned with the stage axes.\n\nThe position of the objective relative to the FIB/SEM offers multiple advantages: (i) switching between the LM and FIB/SEM imaging can be performed with a single axis translation (Figure 1); (ii) no rotation is required - only tilt might be needed in some designs (important for cryo-stages where rotation is limited); (iii) if the geometry of the sample holder on the stage allows, objectives with high numerical aperture can be used; (iv) focussing with the LM does not require the sample to be moved.\n\nWhen designing LM assembly, we considered that if not in use, the objective should be retracted to prevent collision with the stage. Furthermore, in order to ensure safety during stage movements when the objective is not retracted, the entire in-vacuum assembly is grounded to the FIB/SEM chamber, therefore allowing for sensing stage collisions. To focus, we use a piezoelectric linear positioner with active feedback and a precision better than 10 nm, which provides fine focus control and high repetitivity. Considering the geometry of the vacuum chamber, in order to convey the beam-path normal to the glass window at the vacuum flange, we had to steer the beam at an angle of 17.2 degrees which imposed the use of a 3 \u00d7 1\u2019 mirror. Here, in order to prevent mechanical distortions of the mirror, the holder was designed to exert an equal pressure across the rim of the mirror. The design allows for use of high NA objectives such as the Olympus MPLAPON 50x/0.95. We tested multiple objectives for vacuum compatibility and found that degassing will occur for an average of 24 hr from the first pumping cycle (see below for details). Although we have not noticed any change in the optical performance of the objectives as a consequence of their permanence under high-vacuum, we expect that the cement used in the assembly of those complex optical elements will degrade over time and the objective will probably need to be replaced (our current experience describe this as\u00a0>12 months).\n\nOutside the vacuum chamber, the LM is composed of an aluminium body that is directly attached to the flange and guides the position of the required optical elements. In front of the glass window on the flange, a rectangular mirror steers the beam and ensures a $n\\frac{\\pi}{2}tilt(wheren\\inZ^{+})$\u00a0relative to the orientation of the objective optical axis. The microscope body has two arms, the one devoted to the illumination contains the fibre-end and the illumination tube-lens; while the detection arm hosts the imaging tube-lens and the camera. The body includes a dichroic selector, which in our case allows for four channel fluorescence (DAPI, GFP, RFP, Far-red) and reflected light illumination. The possibility of having a reflected bright-field illumination image can simplify correlation in cases where there are no fiducial beads or where the fluorescence signal cannot be directly matched to the shape of the sample. The current design allows for wide-field imaging, but Structured-Light-Illumination (SIM) (Gustafsson, 2000) could be implemented by modifying the excitation arm to accommodate the polarising optics and either a transmission grating or a programmable reflective ferroelectric liquid-crystal-on-silicon (LCOS) micro-display (Kner et al., 2009; Shao et al., 2011). The implementation of SIM would add optical sectioning and super-resolution capabilities.\n\nIn order to control all imaging modalities from the same computer and to have an interface designed around the needs of CLEM (Figure 3), we developed a program in Labview and Python. The interface allows for (i) simple image acquisition in all modalities; (ii) seamless navigation between modalities which can bring the same ROI centred relative to each beam and (iii) provides hierarchical data storage to simplify post-processing. This control interface, which we called PIE-scope-commander is freely available from the laboratory resource webpage (https://www.demarco-lab.com/resources).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45919/elife-45919-fig3-v2.jpg)\n\n**Figure 3.:** (a,b) Optical (a) and FIB (b) image of the same sample region, containing a series of pre-milled test patterns (crosses). After the stage translation calibration and targeting steps one can select the target feature using the optical microscope (a), and simply translate the same field of view under the FIB and the (b). (c) The precision of direct, unsupervised ROI targeting by simple sample translation is\u00a0<420 nm for the X-axis (major axis of translation) and\u00a0<300 nm for the orthogonal Y-axis. (d, e, f) The procedure used to quantify the mechanical correlation precision when moving between an optical (a) and FIB (b) images. Fiducial markers were identified in all modalities and the transformation to perform the correlation was calculated. In (f) a scatter plot describing the mean residual for all the measurements (n\u00a0=\u00a086), showing the precision is\u00a0~500 nm (\u00b1\u03c3). For every measurement, we selected beads\u00a0>\u00a0100 beads to eliminate/average out eventual fiducial selection errors.\n\n### Setting up and using the PIE-scope\n\nThe first step, after the LM has been mounted and aligned, is to measure the exact position of the optical axis relative to the coincidence point of the FIB/SEM. This step requires a fiducial that can be recognised in all modalities. We noticed that, due to mechanical tolerances, every time the system is mounted there is a variability of up to 500 \u00b5m in the final position of the light microscope. The calibration is typically performed manually by estimating the shift between the coincident point and the expected position and adjusted by centring the fiducial. The shift values are then inserted in the control software in order to automatically perform direct movements between imaging modalities.\n\nIn the software, we assumed three positions (see Figure 1 and Video 1), which can be customised: (i) LM imaging, where the sample orientation is normal to the optical axis of the LM; (ii) FIB imaging, where the sample orientation is normal to the optical axis of the FIB; (iii) lamella preparation, where the sample is at 15\u201322 degrees from the optical axis of the FIB. Once the imaging positions have been defined it is possible to perform pre-computed relative movements (shifts, tilt, and compucentric rotations) in order to image the same ROI under different modalities. The control software interface allows direct control of the FIB/SEM, a visual comparison between the FIB/SEM and LM images and saving the data in organised sub-directories.\n\n![Video 1.](https://cdn.elifesciences.org/articles/45919/elife-45919-video1.mp4.jpg)\n\n**Video 1.:** This video provides an overview of the capabilities provided by PIE-scope and provides an overview of its capabilities.\n\nIn PIE-scope we implemented a basic correlation procedure, which leads the user to identify the location of the region of interest in the FIB or SEM image. Although using the proposed procedure is optional and specific use-cases might benefit from custom designed image processing, we find that the availability of a general method already present and embedded in the software greatly enhances the usability. The PIE-scope correlation is performed through custom made python scripts that allow selecting multiple points on the LM and FIB/SEM images to calculate the appropriate transformation. 2D correlation is performed simply by applying an affine transformation that includes anisotropic scaling to match the pixel spacing resulting from imaging a sample from different tilts. This procedure is best suited for 2D correlation and, according to previous reports (Kukulski et al., 2011; Schorb and Briggs, 2014), it can lead to correlation precisions which are better than 100 nm. If 3D correlation is required, this can be performed using the algorithm previously described in Arnold et al. (2016), which can be downloaded as Python package from 3DCT (https://github.com/coraxx/3DCT). 3DCT can be used independently or it can be called from PIE-scope by modifying the call-back function of the correlate button in the LabVIEW GUI to interface with the 3DCT package.\n\n### Characterising the system\n\nSince we modified the vacuum system of the FIB/SEM we first ensured that the vacuum system performance was unaffected. This was measured using both the vacuum gauge of the FIB/SEM (HVG), and through the use of a residual gas analyser (from Pfeiffer). Once satisfied that both modified flanges did not present any leak we took advantage of the residual gas analyser to identify the average degassing time for the objective. This redefined the minimum pumping cycle length prior to insertion of cryo-samples to\u00a0>20 hr. After this time, the vacuum in the FIB/SEM chamber is 1e-4 Pa at room temperature and 5e-5 Pa when the system is at cryogenic temperature. The condensation rate on cryo-samples was found to be identical to the rate measured before the installation of the PIE-scope. It is worth to mention\u00a0that the maximum vacuum level obtainable varies from instrument to instrument and that the pumping time is dependent on the components present in the vacuum chamber. Therefore, the evaluation of the vacuum performance (or loss of performance) should be done on each individual instrument (e.g. Thermo Fisher Helios systems in average have better vacuum than Thermo Fisher Scios), and there should be no variation on the maximum vacuum level that can be reached after the PIE-scope installation.\n\nThe addition of an external component to the FIB/SEM leads to the potential introduction of vibrations into the system, which may result in mechanical drift. We measured the drift of the sample at room and cryo temperature with and without the light microscope installed to ensure no significant variation would be detected. With the presented hardware composition (fibre coupled Toptica iChrome-CLE and heated Basler USB3 camera) the drift remained within the specification of the FIB/SEM (<10 nm/min at room temperature and\u00a0<30 nm/min at cryogenic temperature). Further, when imaging at the maximum framerate achievable with the SEM (50 frames/s) we have not detected changes in the vibrations.\n\nSince the system is designed for correlative studies, the first feature to characterise was the repetitivity of the relocation precision between the LM and the coincidence point. As displayed in Figure 4, performing direct unsupervised movement shows that the relocation precision is\u00a0<420 nm along X and\u00a0<220 nm along Y. The relocation precision is a characteristic of the FIB/SEM stage and could vary from instrument to instrument, but most manufacturer's specifications claim a relocation precision better than 2 \u00b5m. Considering that the simplest use-case consists of positioning a 5\u201310 \u00b5m lamella around a target, the above-mentioned stage accuracy is sufficient. The relocation precision was measured by repeatedly moving between the FIB and the LM imaging positions (Figure 4). After each movement, we imaged the sample and calculated the residual error in relocation by calculating the required transformation to match the last image with the previous one (the residuals for each measurement are displayed in Figure 4). As previously shown (Arnold et al., 2016; Schorb and Briggs, 2014), when using fiducial markers, it is possible to improve the correlation accuracy to\u00a0<100 nm despite the diffraction limit of the light microscope equipped with a non-immersion objective will be limited to\u00a0~320 nm in XY and\u00a0~555 nm in Z (assuming a NA of 0.95 and a wavelength of 500 nm). In order to quantify the optical performance of the system, we measured the maximum imaging resolution through the calculation of point-spread-functions. As expected, given the simplicity of the optical design, for all objectives tested we could measure a resolution in line with the theoretical diffraction limit. Through the use of image deconvolution, the LM resolution in all three dimensions could be mildly improved but in order to better resolve the molecular distribution at subcellular level super-resolution imaging would be better suited. The field of cryo-super-resolution fluorescence microscopy is still at its early stages and the most suitable method still needs to be identified but recently multiple approaches have been demonstrated (Moser et al., 2019; Tuijtel et al., 2019; Xu et al., 2018). The PIE-scope design is per se compatible with any type of epi-fluorescence imaging. Accordingly, if super-resolution imaging is required the implementation will be possible and will only require changes on the atmospheric side of the device. Along these lines, the effectiveness and usability of cryo-super-resolution imaging are predominantly limited by the ice contamination that inevitably builds up during long imaging sessions and by drift present in those systems (Briegel et al., 2010; Wolff et al., 2016; Xu et al., 2018). The PIE-scope resolves both these problems since the sample is kept in high vacuum during the entire imaging session and the drift rate is determined by the specifications of the cryo-stage in use, which must be compatible with high-resolution SEM imaging and FIB micromachining.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45919/elife-45919-fig4-v2.jpg)\n\n**Figure 4.:** (a) A scheme of the communication setup. Here the microscope computer controls the FIB/SEM and runs the python control server. On the support computer, we run a python client (ThermoFisher Autoscript) and the custom built PIE-scope commander to control both the FIB/SEM and the LM. (b) The PIE-scope commander interface, all the required imaging positions can be calibrated from the main window, basic imaging parameters can be set, both FIB and LM images are visible side-by-side and data location can be defined for each experiment. File naming will have a user-defined root and appendix describing the imaging parameters (e.g. FIB, SEM, LM, laser line, dwell-time, exposure time).\n\nFinally, one aspect to consider if one wishes to use commercial objectives with an NA\u00a0>0.8 is that the orientation and the position of the sample when mounted on the cryo-stage must allow imaging with sub-mm working distances. Luckily, all available cryo-stages come with inserts that can easily be modified or re-designed according to this specification if required.\n\n### Cryo-CLEM on biological samples\n\nIn order to evaluate our new system on a real-life sample, we prepared targeted cryo-lamellae where the milling position was defined entirely through the fluorescence signal. Here, we used larvae of the nematode Caenorhabditis elegans, where four head neurons (BAGL/R and ASGL/R) express mCherry, to prepare a lamella centred around a neuronal cell body and one of the main dendrites which extend anteriorly towards the mouth of the animal. In Figure 5 we show stills through the milling procedure, from the identification of the ROI, through the controls while thinning, to the final image after polishing. As shown in Figure 5, the fluorescence is maintained after milling, which can be used to confirm that the target structure (a dendrite of a BAGL/R neuron) is effectively contained in the lamella.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45919/elife-45919-fig5-v2.jpg)\n\n**Figure 5.:** (a) Correlation between the SEM (top view) and fluorescence microscopy images. (b) Correlation between the FIB and fluorescence microscopy images. The sample is tilted into the lamella preparation position (22\u00b0 with respect to the grid plane). (c) SEM image of the thinned down lamella overlayed with the fluorescence image from the same region. (d,h) SEM and optical images, respectively, of the initial state of the sample, while the pairs (e, i), (f, j) and (g, k) show SEM and optical images, respectively, of the intermediate steps in the lamella, thinning. Since the optical microscope is integrated within the system, multiple ROI-verifications are possible throughout the workflow without the need for cryo-transfers.\n\nWe further tested the ability of targeted lamella preparation in a bulk cryo-sample. Here a whole brain dissected from a Drosophila melanogaster larva expressing EGFP in interneurons (Engrailed-Gal4, UAS-eGFP) was cryo-fixed and imaged under fluorescence. Based on the fluorescence signal, 1.5 \u00b5m thick lamellas were isolated around the neuronal body (Figure 6). This setup is compatible with emerging techniques such as the cryo-lift-out which will allow selective isolation of lamellae from bulk tissue (Mahamid et al., 2015; Parmenter et al., 2016; Rubino et al., 2012; Zhang et al., 2016). The position of the LM does not interfere with the manipulator, making it compatible with the development of future applications involving cryo-lift-out.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45919/elife-45919-fig6-v2.jpg)\n\n**Figure 6.:** (a, b, c) Initial FIB (a), SEM (b) and LM (c) images. (d) Milling of straight edges in the sample allows improved precision of correlation between images acquired in different modalities. Here, the overlay between LM and FIB images of the pre-milled sample is shown. (d, e, f, g) Pairs of SEM and optical microscopy images of the initial sample state (d), two intermediate verification steps (e and f), and the final result (g). Based on the fluorescence signal, 1.5 \u00b5m thick lamellae were isolated around the neuronal body (g). Inset in (g) shows a magnified image of a lamella ready for a cryo-lift-out.\n\nConsidering the sample size, in both the C. elegans larvae and the D. melanogaster brain the lamellas were kept of thicknesses above 1 \u00b5m. This thickness still allows high-quality fluorescence imaging because the intensity in the lamella and in the uncut tissue have comparable values. When a lamella has a thickness compatible with cryo-TEM, typically the intensity is 30% of the one measured in a focal plane within the uncut tissue. This value is in line with the difference between the average thickness of a lamella (~250 nm) and the depth of focus of the objective we use (~800 nm). Therefore, in the absence of an optical sectioning method such as confocal microscopy, the limited dynamic range of the detectors make imaging of thin lamellas challenging. Nevertheless, in order to show that this is possible, we prepared cryo-TEM compatible lamellas on Yeast a strain stained with a nuclear stain (Nuclear-ID, EnzoLife Sciences). In Figure 7 it is possible to see that fluorescence is detectable in a lamella, and further that the fluorescence signal can be used to target the cryo-ET data collection. In this case, the fluorescence was diffused through the nucleus and we used Cryo-ET analyses (Figure 7e and Video 2) show that LM imaging does not induce de-vitrification of the sample.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/45919/elife-45919-fig7-v2.jpg)\n\n**Figure 7.:** (a\u2013b) S. cerevisiae cells were labelled with nucleolar staining, lamellas were prepared and then imaged using cryo-fluorescence microscopy. (c) Correlated image between the SEM and LM images, the region imaged through cryo-ET is labelled in the yellow square. (d) Cryo-TEM image of the lamella showing that the sample is still vitreous.\n\n![Video 2.](https://cdn.elifesciences.org/articles/45919/elife-45919-video2.mp4.jpg)\n\n**Video 2.:** The region imaged on this tomogram correspond to the one visible in Figure 7d. no de-vitrification is visible as a result of LM imaging.\n\n### Conclusions\n\nWe have presented a novel system to perform cryo-CLEM and targeted cryo-lamella preparation, which simplifies sample handling and reduces the risk of sample contamination by limiting the number of cryo-transfers. Furthermore, having a light microscope within the vacuum chamber provides an opportunity to verify that the target has not been lost while milling. Future developments will likely involve the introduction of optical sectioning and super-resolution imaging. Further, having the light microscope on the same stage as the FIB resolves the current status where each microscope comes with its own image format and no stage information can be directly imported from the LM to the FIB/SEM. This configuration provides the foundation required for automated CLEM to mill targeted cryo-lamellae, which will enable structural studies on rare cellular events.\n\nConsidering future software requirements, it is reasonable to expect setups which include automated segmentation of correlated images to define or guide the definition of the milling parameters with limited user intervention. When using the conventional suite of separated microscopes it is challenging to achieve such a target because each microscope has its own image format and no stage information can be directly imported from the LM to the FIB/SEM. In the PIE-scope, all images are acquired using the same stage and software (Figure 3b), and fluorescence images can be acquired in between milling steps (therefore providing additional information useful for a more precise correlation, such as the milled edges). Through the PIE-scope, it will be therefore possible to implement CLEM automation for targeted lamella preparation.\n\n## Materials and methods\n\n### The PIE-Scope setup\n\nThe illumination source is a four wavelength combiner with a single multimode fibre output (Toptica iCLE-50 405, 488, 561, 640 nm). The choice between a multi-band-pass dichroic (Chroma 89402 m) and a Thorlabs 10/90 (R/T) beam splitter allows for fluorescence or reflected light imaging. The maximum laser power used during imaging corresponded to 0.5 mW out of the fibre, which was further reduced to 0.2 mW at the back-focal plane of the objective, although there might be occasions where more laser power is required for imaging, we noted that these conditions have provided sufficient illumination on all tested samples. Currently, the camera used is a Basler acA1920-155um with USB3.0 interface. This camera is a heated CMOS detector with a quantum efficiency in the visible range of\u00a0~70%, it represents a cost-effective solution which comes with a dark noise of 6.6 e-. The major advantage of this component, beside its price, is that it does not require active cooling, making the system less susceptible to vibrations. If single-molecule imaging is required, or if the fluorescence signal is extremely dim, then cooled CMOS cameras such as the Hamamatsu Flash4.0 V3 should be used. In this case, in order to ensure that no vibration is introduced in the system, the camera cooling lines should be connected to the FIB/SEM water chiller. The feedthrough from the atmosphere to the high-vacuum is realised through a glass window (Thorlabs VPCH42-A). The optical path is steered using three axes mirror holders embedded in the custom build microscope body/flange visible in Figure 2a. The focus drive is a high-vacuum-compatible piezoelectric linear positioner (Smaract SLC-2445HV). The objectives tested were Olympus MPLFNL 10x/0.3, MPLFNL 20x/0.45, UPFLN 20x/0.8 and MPLAPON 50x/0.95.\n\nThe microscope body and the adapters were machined at the Monash University Mechanical and Aerospace Engineering Workshop. All atmosphere parts were made of Aluminium alloy 7075. All vacuum parts were machined from Stainless Steel 316 l. Mounting of the microscope body on the vacuum chamber of the FIB/SEM occurs directly on the middle front GIS port (GIS2 on ThermoFisher instruments). The only strict requirement of this design is that neither a gas injection system (GIS) nor detector can be mounted on the front GIS ports at the FIB side of the chamber, we resolved this issue by repositioning our GISs from the flanges GIS1 and GIS2 to the rear flanges (GIS4 and GIS5). Although this can be a limitation for highly equipped material science microscopes, on systems where biological imaging and lamella cryo-preparation is the major focus this will not result in a problem. Also, with the advent of multi-line-GISs offered by most instrument manufacturers, it is extremely unlikely that all GIS flanges will be required.\n\nAll custom components were designed using Autodesk Inventor Pro 2016 and Siemens NX. Parts were fabricated in the Mechanical and Aerospace engineering mechanical workshop at Monash University. Ray tracing was performed using Zemax OpticsStudio. The control software has been developed using National Instruments LabVIEW 2015, Python three with Numpy 1.15, Scipy 1.1.0 and ThermoFisher AutoScript 4.0. All drawings, latest Bill of Material (matched to the stable software released), a stable software release, list of dependencies and instructions are available at https://www.demarco-lab.com/resources.\n\n### Sample preparation\n\nAll Caenorhabditis elegans strain RJP3088 (Pets-5::mCherry\u00a0+Pelt-2::GFP) (Juozaityte et al., 2017) was maintained at 20\u00b0C on NGM plates seeded with Escherichia coli OP50 bacteria (Porta-de-la-Riva, Fontrodona et al.). Isolation of L1 larvae was performed as previously described (Porta-de-la-Riva et al., 2012). Larvae were deposited on a holey carbon EM-grid and plunge-frozen in liquid ethane. C. elegans samples were kept in M9 medium, concentrated to a density of 3\u20134 worms / \u00b5L. 5 \u00b5L of solution were deposited on a Cu-300-mesh Quantifoil R-2/2 grid which was glow discharged for 30 s using a Pelco EasyGlow. The excess of medium was manually blotted using Whatman filter paper grade 595 (Merck) and vitrified by plunge freezing in liquid ethane.\n\nDrosophila melanogaster used were a cross between Engrailed-Gal4 (BL30564) and UAS-eGFP (BL6874) from the Bloomington Drosophila Stock Center (Indiana). Flies were raised on standard media at 25\u00b0C. Drosophila brains at the third instar larval stage were dissected in cold phosphate buffered saline before being mounted in 20% (w/v) dextran solution prior vitrification. Samples were high-pressure frozen using a Leica EM-PACT2 on 200 \u00b5m deep planchettes. In order to expose the sample to the surface, therefore reducing the milling time required, we performed manual freeze-fracture by scraping the surface with a scalpel under liquid nitrogen. The difference in density between the dextran solution and the sample itself ensures an easy separation.\n\nSaccharomyces cerevisiae cells were cultured at overnight 30\u00b0C in 2 YPD+. Cell growth was monitored through the measurement of the optical density. Cells were harvested when the optical density reached 0.6, washed in PBS and stained using Nuclear-ID (Enzo Life Sciences). 5 \u00b5L were deposited on a Cu-300-mesh Quantifoil R-2/2 grid which was previously glow discharged for 30 s in a Pelco EasyGlow. Grids were manually blotted for 5 s using Whatman 595 blotting pads and plunge-frozen in liquid ethane.\n",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "ed91a98f-9e8b-4d8a-b55c-b8d0f8deff71",
+      "submission_id": "4a2464e6-2b65-4c3e-82ef-cd73cd3800a5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sriram Subramaniam, University of British Columbia Canada\n\nReviewers:\n- J\u00fcrgen M Plitzko, Max Planck Institute of Biochemistry Germany\n\n## Review text\n\nDOI: [10.7554/eLife.45919.015](https://doi.org/10.7554/eLife.45919.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"PIE-scope: integrated cryo-correlative light and FIB/SEM microscopy\" for consideration by eLife. Your article has been reviewed John Kuriyan as the Senior Editor, Sriram Subramaniam as Reviewing Editor, and three reviewers. The following individual involved in review of your submission have agreed to reveal their identity: J\u00fcrgen M Plitzko (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another. You will see that all three reviewers find your work interesting but raise a number of concerns. Since each reviewer's concerns have a somewhat different flavor, we have chosen to send the individual reviews to you below without merging them. Your revised submission must satisfactorily address the major comments and concerns of the reviewers in order for the manuscript to be considered for publication in eLife.\n\nReviewer #1:\n\nThe manuscript \"PIE-scope: integrated cryo-correlative light and FIB/SEM microscopy\" corresponded by Alex de Marco describes a \"triple-beam\" instrument that includes photons, ions and electrons, referred to as a \"PIE-scope\" for the correlation and fabrication of cryo-FIB lamellae from frozen hydrated and high-pressure frozen samples for subsequent analysis by cryo-electron tomography (cryo-ET). The integration eliminates the multiple sample transfers that typically take place in the current cryo-ET workflow, which greatly simplifies its application. As a result, and through its retrofittable design, it can provide a way to make this workflow more accessible to other laboratories while increasing the overall throughput. The authors plausibly document their developments and achievements, and I regard this as important advance in this field. However, while the manuscript is direct and to the point, its writing appears somewhat rushed and misses details. In some places the writing is too technical (or jargon) and therefore it could be definitely improved to make it more accessible.\n\nIt is somewhat disappointing that there is no final TEM analysis showing that after correlation and sample preparation, cryo-ET can be successfully performed on the produced lamella from either of the two samples. The question is: Could this still be performed?\n\nThe paper by Gorelick et al., presents a new design for an integrated fluorescent and dual-beam microscope. This technological advance is a great addition to the correlative tools available for cellular cryo-electron tomography. The implementation described is simple and elegant and seems to work very well. In particular, the ability to target with a precision of ~500 nm is very encouraging.\n\nI find the technology worthy of publishing, but I think that the manuscript requires significant revisions in order to target a wide readership, but more importantly more results need to be included to make sure it will be a useful tool for people interested in this technology. Besides needing many more details in the text, a manuscript like this should contain detailed supplementary data for the expert reader.\n\nReviewer #2:\n\n1) Information necessary to reproduce the setup.a) The authors state that the software is constantly changing and can be made available from the authors. In order for anyone to implement this technology, they have to be sure that the work described here can be implemented outside of the authors' set up. Thus, a stable release of the software, with a detailed description of all the requirements, should be a necessary condition for publication.b) Along these lines, the drawings and all needed equipment for reproducing the set up should be available (can be upon request but needs to be explicitly stated).\n\n2) The imaging is only done in 2D. The authors describe three positions in software: LM imaging, FIB imaging, and lamella preparation.a) How are the transformation of coordinates done for 2-D images between these imaging modes? Specifically, how is the fluorescence signal superimposed onto the tilted (FIB milling) position? Is the rotation simply done by a compression in the direction of the tilt?b) What is the SEM imaging position with respect to the others? A table, figure, or paragraph describing the relative distances and angles should be provided.c) When checking for the fluorescent signal at different stages of milling, is the sample tilted back so that it is orthogonal to the FIB beam, or is the tilted image used? Do the authors routinely use FIB imaging during milling, or is only the SEM used for this task?\n\n3) In describing the sample preparation, the authors are not very explicit. A notable example is the lack of details in the brain sample. Was it high-pressure frozen? If it was plunge frozen, there is no chance that this sample will be vitrified. While the authors may argue that for the purposes of this manuscript this is not relevant, it should then be clearly stated.\n\n4) The biggest gap in the manuscript is the characterization of the quality of the lamellae for cryo-ET. Each of the points are essential for the work to be useful:a) While the authors did not alter the cryo-stage, the authors should test and report on whether there are any alterations to the stability of the system in any way. Are there any new vibration or other issues that were introduced?b) Are there any added contamination rates from the introduction of the fluorescence set up? Without subsequent cryo-TEM images, it is hard to gauge the quality of the finished lamella.c) In fact, the finished lamella seems thick and cracked, and the thickness is not reported. Even if one would consider this work not to be about lamellae production, the detectability of the fluorescent signal for very thin lamellae should be demonstrated.d) A major issue with fluorescence imaging at cryogenic temperatures is the potential for devitrification. If the authors do not think this is a concern due to the low power of the illumination used, they should provide clear arguments. otherwise, they should show the vitrification of the lamella in the TEM after preparation in the PIE scope.\n\n5) In their letter, the authors claim that this is a non-expensive set up ($50K). I think that as part of supplementary data they should provide a list of materials required and their approximate cost, which is customary when describing a new set up. For instance, what is the cost of ThermoFishder Autoscirpt?\n\nReviewer #3:\n\nGeneral assessment:\n\nVery well written. Clearly described what has been reached and how the system provides a significant addition to the set of tools available for cell biological studies that require morphological/structural information of molecular structures in their cellular context.\n\nThe capability to perform the preparation of cryo-lamella using a focused ion beam SEM with an integrated light microscopy is very exciting as it can be used to ensure that the feature of interest is present in the lamella. This approach will improve possibilities to perform cell biological experiments in which targeted cryo electron tomography of fluorescently tagged structures are an essential ingredient.\n\nIt is very exciting that a proof-of-principle is provided on larvae of C. elegans on which the technological solution is evaluated. It is also exciting that the instrumentation is principle retrofittable and the software to make all this work for CLEM operation is open source.\n\nMajor concerns:\n\nA major concern I have with the manuscript is that though it describes overall features and possibilities of the instrumentation with sufficient detail to illustrate the potential of its capabilities with the proof-of-principle, but that it lacks a discussion on some of the remaining technological bottlenecks of 3D CLEM on frozen hydrated specimen. In my view the steps that still need to be taken to meet the requirements to make the system applicable for a more wider audience are not mentioned with sufficient detail.\n\nSubsection \u201cCharacterizing the system\u201d summarizes the specifications of the system very nicely. Bottlenecks are the accurate 2D positioning of the lamella around a target (~200-400 nm, though is claimed that it could be ~~100 nm), the reduction in imaging quality due to drift (optical astigmatism due to drift, how large is the drift and can limitation be solved?) as well as the outlook for 3 D correlation to achieve an accuracy that would be sufficient for targeted FIB-milling (~500 nm, the need for deconvolution to improve the z-resolution can this indeed be improved, and to what accuracy?)\n\nIt would strengthen the paper considerably, if additional discussion/argumentation was giving detailing the possibility of a more accurate performance on next-generation systems.\n",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8437d6b6-a78b-4be7-acc0-325388d2d777",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C1",
+      "claim": "Cryo-electron tomography (cryo-ET) is emerging as a revolutionary method for resolving the structure of macromolecular complexes in situ.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-electron tomography (cryo-ET) is emerging as a revolutionary method for resolving the structure of macromolecular complexes in situ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field supported by established scientific knowledge and the citation Beck and Baumeister, 2016 in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "8c7c93f6-174e-420c-a7e2-c38175e8fe63",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C2",
+      "claim": "Sample preparation for in situ Cryo-ET is labour-intensive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sample preparation for in situ Cryo-ET is labour-intensive and can require both cryo-lamella preparation through cryo-focused ion beam (FIB) milling and correlative light microscopy to ensure that the event of interest is present in the lamella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical challenges of the technique, supported by general knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "1aa5a44c-be8a-4473-901c-81a5f07d2a57",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C3",
+      "claim": "Sample preparation for in situ Cryo-ET can require both cryo-lamella preparation through cryo-focused ion beam (FIB) milling and correlative light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sample preparation for in situ Cryo-ET is labour-intensive and can require both cryo-lamella preparation through cryo-focused ion beam (FIB) milling and correlative light microscopy to ensure that the event of interest is present in the lamella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes standard methodological requirements in the field, supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "c5b2af01-b487-4ef0-bfd4-6e78e83a84a4",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C4",
+      "claim": "PIE-scope is an integrated cryo-FIB and light microscope setup.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present an integrated cryo-FIB and light microscope setup called the Photon Ion Electron microscope (PIE-scope) that enables direct and rapid isolation of cellular regions containing protein complexes of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the system presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "aeebe094-596a-4b35-89f1-7d8fbf33ceb5",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C5",
+      "claim": "PIE-scope enables direct and rapid isolation of cellular regions containing protein complexes of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present an integrated cryo-FIB and light microscope setup called the Photon Ion Electron microscope (PIE-scope) that enables direct and rapid isolation of cellular regions containing protein complexes of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the capability of the system, supported by the experimental demonstrations in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "ff0a4eb7-4c57-493f-931e-4d8a9cf9a4f1",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C6",
+      "claim": "The authors demonstrated the versatility of PIE-scope by preparing targeted cryo-lamellae from subcellular compartments of neurons from transgenic Caenorhabditis elegans expressing fluorescent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we demonstrate the versatility of PIE-scope by preparing targeted cryo-lamellae from subcellular compartments of neurons from transgenic Caenorhabditis elegans and Drosophila melanogaster expressing fluorescent proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "e524b1e3-2b89-44fa-af0d-e77855f6918d",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C7",
+      "claim": "The authors demonstrated the versatility of PIE-scope by preparing targeted cryo-lamellae from subcellular compartments of neurons from transgenic Drosophila melanogaster expressing fluorescent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we demonstrate the versatility of PIE-scope by preparing targeted cryo-lamellae from subcellular compartments of neurons from transgenic Caenorhabditis elegans and Drosophila melanogaster expressing fluorescent proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "bdc0e3a1-a28d-4fe4-81c1-e0eda708dc4c",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C8",
+      "claim": "PIE-scope was designed to enable retrofitting of existing microscopes.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed PIE-scope to enable retrofitting of existing microscopes, which will increase the throughput and accuracy on projects requiring correlative microscopy to target protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design goal stated by the authors and supported by the description of the system architecture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "68500713-ebd1-4fa9-803f-e38ed31f5dd6",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C9",
+      "claim": "PIE-scope will increase the throughput and accuracy on projects requiring correlative microscopy to target protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed PIE-scope to enable retrofitting of existing microscopes, which will increase the throughput and accuracy on projects requiring correlative microscopy to target protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the expected impact of the system, based on inference from the demonstrated capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "457ca642-47ed-45d4-a6a4-163c3038aa25",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C10",
+      "claim": "The new approach will make cryo-correlative workflow safer and more accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "This new approach will make cryo-correlative workflow safer and more accessible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the reduction of cryo-transfers and simplified handling described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "e1223067-7f40-4cbc-8db8-af32271f1ba8",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C11",
+      "claim": "Cryo-electron tomography (cryo-ET) is currently the principal method for investigating the structure of proteins and protein complexes directly in their native environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-electron tomography (cryo-ET) is currently the principal method for investigating the structure of proteins and protein complexes directly in their native environment (Beck and Baumeister, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Beck and Baumeister, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "820602d2-2571-4e61-884a-a56fbfbfe56f",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C12",
+      "claim": "A cellular sample is vitrified by plunge or high-pressure freezing to instantaneously cease cell activity and prevent crystallisation of water in the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, a cellular sample is vitrified by plunge or high-pressure freezing to instantaneously cease cell activity and prevent crystallisation of water in the sample (Dubochet et al., 1988) (Luci\u0107 et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Dubochet et al., 1988 and Luci\u0107 et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "985ac97c-f759-46ae-96ed-cc30fea31f34",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C13",
+      "claim": "It is not possible to image a cell in regions thicker than 500 nm using a conventional 300 keV transmission electron microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it is not possible to image a cell in regions thicker than 500 nm using a conventional 300 keV transmission electron microscope (Frank, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Frank, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "0b594b2f-ceda-4766-a307-3868b0acb34d",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C14",
+      "claim": "The cellular environment is extremely heterogeneous and it is impossible to unequivocally identify every visible density.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the cellular environment is extremely heterogeneous and it is impossible to unequivocally identify every visible density (F\u00f6rster et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to F\u00f6rster et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "7484db3c-fc85-4b43-9d41-75e33b1a507b",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C15",
+      "claim": "The most common and successful approach to overcome the issue of cell thickness is to use a cryo-focused ion beam microscope (FIB) to thin the sample and produce flat electron-transparent lamellas of approximately 300 nm thick.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome the issue of cell thickness, the most common and successful approach is to use a cryo-focused ion beam microscope (FIB) to thin the sample and produce flat electron-transparent lamellas of approximately 300 nm thick (Marko et al., 2006; Marko et al., 2007) (Hsieh et al., 2014; Rigort et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Marko et al., 2006; Marko et al., 2007; Hsieh et al., 2014; Rigort et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "bf8ff38d-11e5-4624-acf2-5e1245c32731",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C16",
+      "claim": "In a single lamella, only a portion of the cell is retained for cryo-ET but it remains unknown as to whether the protein/complex of interest is present.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in a single lamella, only a portion of the cell is retained for cryo-ET but it remains unknown as to whether the protein/complex of interest is present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the fact that only a thin section is retained.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "cf24bca9-d549-4c17-bce6-4367407ac8a0",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C17",
+      "claim": "Every step from FIB milling to cryo-ET imaging is time-consuming.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that every step from FIB milling to cryo-ET imaging is time-consuming, it is crucial to accurately target the FIB milling procedure to the region on interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge of the workflow in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "63f28e57-265b-4c88-91ae-b704825821c6",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C18",
+      "claim": "It is crucial to accurately target the FIB milling procedure to the region of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that every step from FIB milling to cryo-ET imaging is time-consuming, it is crucial to accurately target the FIB milling procedure to the region on interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the time-consuming nature of the workflow.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "a6f89c5a-e7f8-4851-abbd-95b49a37003e",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C19",
+      "claim": "The solution to targeting has been correlative light and electron microscopy (CLEM).",
+      "claim_type": "EXPLICIT",
+      "source": "The solution to this has been correlative light and electron microscopy (CLEM) (Arnold et al., 2016; Sartori et al., 2007), which also offers the opportunity to validate the interpretation of the cryo-ET data by matching the fluorescence data with tomographic densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Arnold et al., 2016 and Sartori et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "47ed8ef8-00e8-4ae7-b670-b5254a02fd1c",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C20",
+      "claim": "CLEM offers the opportunity to validate the interpretation of the cryo-ET data by matching the fluorescence data with tomographic densities.",
+      "claim_type": "EXPLICIT",
+      "source": "The solution to this has been correlative light and electron microscopy (CLEM) (Arnold et al., 2016; Sartori et al., 2007), which also offers the opportunity to validate the interpretation of the cryo-ET data by matching the fluorescence data with tomographic densities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Arnold et al., 2016 and Sartori et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "3ba31102-e43a-4a42-88a8-6258fb0d0312",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C21",
+      "claim": "The most complete cryo-CLEM workflow links light microscopy (live cell imaging and cryo-LM), cryo-FIB and cryo-ET.",
+      "claim_type": "EXPLICIT",
+      "source": "The most complete cryo-CLEM workflow links light microscopy (live cell imaging and cryo-LM), cryo-FIB and cryo-ET (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and represents the standard workflow in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d2eca9d9-ee50-4ec8-912d-b4e12bc57287",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C22",
+      "claim": "The sample must be transferred under cryogenic conditions into a cryo-LM and imaged to obtain a still after cryo-fixation to locate all the regions that will be targeted for cryo-FIB milling.",
+      "claim_type": "EXPLICIT",
+      "source": "At this stage, the sample must be transferred under cryogenic conditions into a cryo-LM (Sartori et al., 2007; Schorb and Briggs, 2014; van Driel et al., 2009) and imaged to obtain a still after cryo-fixation to locate all the regions that will be targeted for cryo-FIB milling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sartori et al., 2007; Schorb and Briggs, 2014; van Driel et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "29d35f08-9ff5-4ae7-bf6b-f7ba36407a9b",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C23",
+      "claim": "Cryo-LM on the vitrified sample is required even if fluorescence images have been acquired on the living sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-LM on the vitrified sample is required (even if fluorescence images have been acquired on the living sample) to ensure that the images recorded during the living specimen experiment can be related to the cryo-LM image as effects due to dynamic cell process, blotting and plunge-freezing could cause the target structure to move position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the potential for structural movement during sample preparation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "551dd7a1-7c36-46f6-864f-0ed3cb93b06f",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C24",
+      "claim": "Effects due to dynamic cell process, blotting and plunge-freezing could cause the target structure to move position.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-LM on the vitrified sample is required (even if fluorescence images have been acquired on the living sample) to ensure that the images recorded during the living specimen experiment can be related to the cryo-LM image as effects due to dynamic cell process, blotting and plunge-freezing could cause the target structure to move position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the sample preparation process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d844e2fe-8fbd-48c6-9e55-ca00f4c211c0",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C25",
+      "claim": "The sample needs to be either transferred to the cryo-TEM for imaging or back to the cryo-LM to confirm that the FIB milling successfully isolated the region housing the protein of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Once it has been milled, the specimen needs to be either transferred to the cryo-TEM for imaging or back to the cryo-LM to confirm that the FIB milling successfully isolated the region housing the protein of interest (Arnold et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Arnold et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "40c3d3c2-3663-405e-be71-f7e75baab535",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C26",
+      "claim": "The conventional workflow requires handling of samples across multiple microscopes.",
+      "claim_type": "EXPLICIT",
+      "source": "This workflow requires handling of samples across multiple microscopes (Arnold et al., 2016; Rigort et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Arnold et al., 2016 and Rigort et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "f755777a-80ab-4836-b365-da33ad712fb9",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C27",
+      "claim": "Each transfer must be performed under cryogenic conditions and in a humidity-free environment in order to avoid the formation or deposition of crystalline ice.",
+      "claim_type": "EXPLICIT",
+      "source": "Each transfer must be performed under cryogenic conditions and in a humidity-free environment in order to avoid the formation or deposition of crystalline ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of cryo-EM sample handling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d32f307a-bbe6-4f0d-a433-8f986f7fad5d",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C28",
+      "claim": "Handling a cryo-EM grid on which multiple lamellas have been prepared is an extremely delicate process.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, handling a cryo-EM grid on which multiple lamellas have been prepared is an extremely delicate process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on practical knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "ef307022-b12b-44a7-a897-bbb4e6f64bb4",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C29",
+      "claim": "Every manual handling step risks thawing, damaging or contaminating the sample and lowers the overall success of the process.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though users do not handle a bare grid as in the formative days of this field (Marko et al., 2007; Rigort et al., 2010), but rather a cartridge (which increases the sample stiffness), every manual handling step risks thawing, damaging or contaminating the sample and lowers the overall success of the process (Hsieh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Marko et al., 2007; Rigort et al., 2010; Hsieh et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "452f6775-50e5-49b6-9a10-df463603efa1",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C30",
+      "claim": "Users are unlikely to confirm whether their lamella preparation was successful via cryo-LM before acquiring the data with a transmission electron microscope (TEM).",
+      "claim_type": "EXPLICIT",
+      "source": "This also means that users are unlikely to confirm whether their lamella preparation was successful via cryo-LM before acquiring the data with a transmission electron microscope (TEM), which may further impact workflow success.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the practical challenges of the workflow.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "2e0811cc-9682-4d8e-aa13-4fc654d53267",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C31",
+      "claim": "All the risks associated with cryo-transfers can be mitigated using an integrated approach, where a light microscope is integrated into the vacuum chamber of the electron microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "All the risks associated with cryo-transfers described above can be mitigated using an integrated approach, where a light microscope is integrated into the vacuum chamber of the electron microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the manuscript, supported by the demonstration of the PIE-scope system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "8ee54292-6d82-4a2a-87bd-10d06ed27572",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C32",
+      "claim": "An integrated approach has been successfully implemented for CLEM where the introduction of a light microscope objective in a TEM column permitted switching between TEM and LM imaging, known as the iLEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an approach has been successfully implemented for CLEM where the introduction of a light microscope objective in a TEM column permitted switching between TEM and LM imaging, known as the iLEM (Agronskaia et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Agronskaia et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "230a4dfb-a6c1-43b3-aa9b-32aed8226071",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C33",
+      "claim": "The iLEM has demonstrated its value on both room temperature and cryo-samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The iLEM has demonstrated its value on both room temperature and cryo-samples (Faas et al., 2013), making navigation seamless and accelerating the data collection process by eliminating the need to image areas not representing the region of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Faas et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "1fcd9055-d750-4e18-9a27-ecc58c01772f",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C34",
+      "claim": "The iLEM makes navigation seamless and accelerates the data collection process by eliminating the need to image areas not representing the region of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "The iLEM has demonstrated its value on both room temperature and cryo-samples (Faas et al., 2013), making navigation seamless and accelerating the data collection process by eliminating the need to image areas not representing the region of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Faas et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "447db9dc-af90-415f-8022-ec9989b813f0",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C35",
+      "claim": "High-resolution LM imaging is impossible in iLEM because of the tight geometry of the TEM column.",
+      "claim_type": "EXPLICIT",
+      "source": "The major limitations that iLEM suffers from are that high-resolution LM imaging is impossible, because of the tight geometry of the TEM column, and the need to remove the cryo-box usually protecting the sample, which can lead to long-term contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the physical constraints of the TEM column geometry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "2adfc4e8-7dbc-4106-8078-2156076bca74",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C36",
+      "claim": "The iLEM requires removal of the cryo-box usually protecting the sample, which can lead to long-term contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "The major limitations that iLEM suffers from are that high-resolution LM imaging is impossible, because of the tight geometry of the TEM column, and the need to remove the cryo-box usually protecting the sample, which can lead to long-term contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the design of the iLEM system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "893ac158-0c87-4a74-b097-a18b3ec54481",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C37",
+      "claim": "For the specific requirement of targeting the lamella preparation, having a light microscope embedded in the cryo-TEM will not be beneficial.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, for the specific requirement of targeting the lamella preparation, having a light microscope embedded in the cryo-TEM will not be beneficial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the workflow requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "300173e4-0355-4389-8530-cece2c863d96",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C38",
+      "claim": "The PIE-scope can be used to accurately guide cryo-FIB milling to target cells and tissues using a variety of specimens.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate how the PIE-scope can be used to accurately guide cryo-FIB milling to target cells and tissues using a variety of specimens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental demonstrations in Figures 5, 6, and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "93d659a7-7b25-4237-9325-3a5649fa0d87",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C39",
+      "claim": "The authors present an example of software integration to control both the cryo-FIB and the cryo-LM.",
+      "claim_type": "EXPLICIT",
+      "source": "We also present an example of software integration to control both the cryo-FIB and the cryo-LM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the description of the PIE-scope-commander software and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "2d316bd8-3ceb-4494-ad26-4e2217d76642",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C40",
+      "claim": "To ensure that existing FIB/SEM systems in the field can be retrofitted with the solution proposed, the authors chose a design that would be applicable to as many systems as possible regardless of the SEM working distance and column shape.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that existing FIB/SEM systems in the field can be retrofitted with the solution proposed here, we chose a design that would be applicable to as many systems as possible regardless of the SEM working distance and column shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design decision stated by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "cf17d303-e1af-4694-b6b4-a253cdb2cbc8",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C41",
+      "claim": "The LM does not image the sample at the coincidence point but 49 mm away from it along the X axis.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, the LM does not image the sample at the coincidence point but 49 mm away from it along the X axis (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific design feature shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "47aab72b-8ef2-4e24-acbf-f2c7ded4c4cc",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C42",
+      "claim": "The PIE-scope was developed to fit on a standard ThermoFisher FIB/SEM chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we developed it to fit on a standard ThermoFisher FIB/SEM chamber, with minor modifications it can be adapted to other systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the specific implementation of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "8b629810-4b04-4c88-9f49-d04f5279af6e",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C43",
+      "claim": "With minor modifications the PIE-scope can be adapted to other systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we developed it to fit on a standard ThermoFisher FIB/SEM chamber, with minor modifications it can be adapted to other systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the design principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "a2b2a91a-fb1a-4ac4-a504-df2c964a4810",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C44",
+      "claim": "Switching between the LM and FIB/SEM imaging can be performed with a single axis translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of the objective relative to the FIB/SEM offers multiple advantages: (i) switching between the LM and FIB/SEM imaging can be performed with a single axis translation (Figure 1);",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a design feature demonstrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "83555215-7782-4853-a380-7774803a47f6",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C45",
+      "claim": "No rotation is required for switching between imaging modalities in PIE-scope, only tilt might be needed in some designs.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) no rotation is required - only tilt might be needed in some designs (important for cryo-stages where rotation is limited);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "23194847-1df4-4417-9f9e-69915f7ed068",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C46",
+      "claim": "If the geometry of the sample holder on the stage allows, objectives with high numerical aperture can be used in PIE-scope.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) if the geometry of the sample holder on the stage allows, objectives with high numerical aperture can be used;",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "35ac6135-408e-4220-a8c5-a6e4de017df1",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C47",
+      "claim": "Focussing with the LM does not require the sample to be moved in PIE-scope.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) focussing with the LM does not require the sample to be moved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature of the system where the objective moves instead of the sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "f24ae7b9-e1a5-4499-bbef-1eb9865379ff",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C48",
+      "claim": "When not in use, the objective should be retracted to prevent collision with the stage.",
+      "claim_type": "EXPLICIT",
+      "source": "When designing LM assembly, we considered that if not in use, the objective should be retracted to prevent collision with the stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design consideration for safety.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "c2494f0b-962b-48bf-abd8-2fafca6d500b",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C49",
+      "claim": "The entire in-vacuum assembly is grounded to the FIB/SEM chamber, allowing for sensing stage collisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in order to ensure safety during stage movements when the objective is not retracted, the entire in-vacuum assembly is grounded to the FIB/SEM chamber, therefore allowing for sensing stage collisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design feature for safety.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "998fd092-3687-4c63-bea8-c71fb79d83d0",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C50",
+      "claim": "A piezoelectric linear positioner with active feedback and a precision better than 10 nm is used for focusing.",
+      "claim_type": "EXPLICIT",
+      "source": "To focus, we use a piezoelectric linear positioner with active feedback and a precision better than 10 nm, which provides fine focus control and high repetitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the hardware used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "b80c7a12-83d8-4b0c-b916-f9dbc82b3869",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C51",
+      "claim": "The beam-path had to be steered at an angle of 17.2 degrees to convey it normal to the glass window at the vacuum flange.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the geometry of the vacuum chamber, in order to convey the beam-path normal to the glass window at the vacuum flange, we had to steer the beam at an angle of 17.2 degrees which imposed the use of a 3 \u00d7 1' mirror.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design constraint based on the geometry of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "abaa1042-b446-4f14-b33d-988caf7d92ca",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C52",
+      "claim": "The design allows for use of high NA objectives such as the Olympus MPLAPON 50x/0.95.",
+      "claim_type": "EXPLICIT",
+      "source": "The design allows for use of high NA objectives such as the Olympus MPLAPON 50x/0.95.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the system capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "924df36e-04ed-4e7a-8b59-fb5e3fee5ece",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C53",
+      "claim": "Multiple objectives were tested for vacuum compatibility and degassing will occur for an average of 24 hr from the first pumping cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested multiple objectives for vacuum compatibility and found that degassing will occur for an average of 24 hr from the first pumping cycle (see below for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from testing the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "dea6350e-b13b-4f22-a50d-90c111ea9153",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C54",
+      "claim": "The authors have not noticed any change in the optical performance of the objectives as a consequence of their permanence under high-vacuum.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we have not noticed any change in the optical performance of the objectives as a consequence of their permanence under high-vacuum, we expect that the cement used in the assembly of those complex optical elements will degrade over time and the objective will probably need to be replaced (our current experience describe this as >12 months).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from using the system over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "770db8fd-395b-4809-8c23-82ae5b6721e0",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C55",
+      "claim": "The cement used in the assembly of objectives will probably degrade over time and the objective will probably need to be replaced after >12 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we have not noticed any change in the optical performance of the objectives as a consequence of their permanence under high-vacuum, we expect that the cement used in the assembly of those complex optical elements will degrade over time and the objective will probably need to be replaced (our current experience describe this as >12 months).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on knowledge of optical component construction and limited experience.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "c9af8e33-b90d-47ff-b83f-cb43956442ba",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C56",
+      "claim": "The dichroic selector allows for four channel fluorescence (DAPI, GFP, RFP, Far-red) and reflected light illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "The body includes a dichroic selector, which in our case allows for four channel fluorescence (DAPI, GFP, RFP, Far-red) and reflected light illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the system capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d7ca8461-a1d5-468d-b378-563daabef503",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C57",
+      "claim": "The possibility of having a reflected bright-field illumination image can simplify correlation in cases where there are no fiducial beads or where the fluorescence signal cannot be directly matched to the shape of the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility of having a reflected bright-field illumination image can simplify correlation in cases where there are no fiducial beads or where the fluorescence signal cannot be directly matched to the shape of the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the utility of the bright-field capability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "649d87ce-acd3-4b3d-b13a-504bfd85675c",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C58",
+      "claim": "The current design allows for wide-field imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The current design allows for wide-field imaging, but Structured-Light-Illumination (SIM) (Gustafsson, 2000) could be implemented by modifying the excitation arm to accommodate the polarising optics and either a transmission grating or a programmable reflective ferroelectric liquid-crystal-on-silicon (LCOS) micro-display (Kner et al., 2009; Shao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current capabilities of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "56b1b6b9-0ca0-4690-b40a-ee2fb639e759",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C59",
+      "claim": "Structured-Light-Illumination (SIM) could be implemented by modifying the excitation arm to accommodate the polarising optics and either a transmission grating or a programmable reflective ferroelectric liquid-crystal-on-silicon (LCOS) micro-display.",
+      "claim_type": "EXPLICIT",
+      "source": "The current design allows for wide-field imaging, but Structured-Light-Illumination (SIM) (Gustafsson, 2000) could be implemented by modifying the excitation arm to accommodate the polarising optics and either a transmission grating or a programmable reflective ferroelectric liquid-crystal-on-silicon (LCOS) micro-display (Kner et al., 2009; Shao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future capabilities, supported by citations to Gustafsson, 2000; Kner et al., 2009; Shao et al., 2011.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "0754bb4e-4c32-485e-944f-b00d44826073",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C60",
+      "claim": "The implementation of SIM would add optical sectioning and super-resolution capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "The implementation of SIM would add optical sectioning and super-resolution capabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of SIM capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d16ef297-9825-4ce6-bae8-bc08268e7d19",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C61",
+      "claim": "The authors developed a program in Labview and Python to control all imaging modalities from the same computer.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to control all imaging modalities from the same computer and to have an interface designed around the needs of CLEM (Figure 3), we developed a program in Labview and Python.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the software development, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "0f9d5118-b671-4729-87ee-c7b0c46e20e9",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C62",
+      "claim": "The interface allows for simple image acquisition in all modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface allows for (i) simple image acquisition in all modalities; (ii) seamless navigation between modalities which can bring the same ROI centred relative to each beam and (iii) provides hierarchical data storage to simplify post-processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the software capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "1106cc4f-5ae4-4d53-a27e-228c8f0780ed",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C63",
+      "claim": "The interface allows for seamless navigation between modalities which can bring the same ROI centred relative to each beam.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface allows for (i) simple image acquisition in all modalities; (ii) seamless navigation between modalities which can bring the same ROI centred relative to each beam and (iii) provides hierarchical data storage to simplify post-processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the software capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "b9fe2bdf-cfcf-4f41-afc3-79ad74db5a17",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C64",
+      "claim": "The interface provides hierarchical data storage to simplify post-processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface allows for (i) simple image acquisition in all modalities; (ii) seamless navigation between modalities which can bring the same ROI centred relative to each beam and (iii) provides hierarchical data storage to simplify post-processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the software capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "30965c96-181f-4573-8128-47ba8dcb9b11",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C65",
+      "claim": "The control interface called PIE-scope-commander is freely available from the laboratory resource webpage.",
+      "claim_type": "EXPLICIT",
+      "source": "This control interface, which we called PIE-scope-commander is freely available from the laboratory resource webpage (https://www.demarco-lab.com/resources).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about software availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "beeb8b9d-b0ca-418f-ac7c-50c227c6ab03",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C66",
+      "claim": "The first step after the LM has been mounted and aligned is to measure the exact position of the optical axis relative to the coincidence point of the FIB/SEM.",
+      "claim_type": "EXPLICIT",
+      "source": "The first step, after the LM has been mounted and aligned, is to measure the exact position of the optical axis relative to the coincidence point of the FIB/SEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the setup procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "0760047c-fb23-4716-9e1f-542881b9a81a",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C67",
+      "claim": "Due to mechanical tolerances, every time the system is mounted there is a variability of up to 500 \u00b5m in the final position of the light microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that, due to mechanical tolerances, every time the system is mounted there is a variability of up to 500 \u00b5m in the final position of the light microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from repeated mounting of the system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "9c90216c-9843-4f60-b52c-3644d9fb8687",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C68",
+      "claim": "The precision of direct, unsupervised ROI targeting by simple sample translation is <420 nm for the X-axis and <300 nm for the orthogonal Y-axis.",
+      "claim_type": "EXPLICIT",
+      "source": "(c) The precision of direct, unsupervised ROI targeting by simple sample translation is <420 nm for the X-axis (major axis of translation) and <300 nm for the orthogonal Y-axis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d80990a8-5428-4b39-9d0f-b89c2738e6b4",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C69",
+      "claim": "The mechanical correlation precision when moving between optical and FIB images is ~500 nm (\u00b1\u03c3).",
+      "claim_type": "EXPLICIT",
+      "source": "In (f) a scatter plot describing the mean residual for all the measurements (n = 86), showing the precision is ~500 nm (\u00b1\u03c3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement shown in Figure 3f based on 86 measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "69d7e493-214d-496b-8f7a-9c19eca4aea2",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C70",
+      "claim": "The authors ensured that the vacuum system performance was unaffected by the modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we modified the vacuum system of the FIB/SEM we first ensured that the vacuum system performance was unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the characterization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "cd58d3c2-70da-430c-bbe9-5ddd1e4cedea",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C71",
+      "claim": "The vacuum in the FIB/SEM chamber is 1e-4 Pa at room temperature after >20 hr pumping time.",
+      "claim_type": "EXPLICIT",
+      "source": "After this time, the vacuum in the FIB/SEM chamber is 1e-4 Pa at room temperature and 5e-5 Pa when the system is at cryogenic temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of the vacuum performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "09c439ec-beee-4f76-8f13-838dd250d839",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C72",
+      "claim": "The vacuum in the FIB/SEM chamber is 5e-5 Pa when the system is at cryogenic temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "After this time, the vacuum in the FIB/SEM chamber is 1e-4 Pa at room temperature and 5e-5 Pa when the system is at cryogenic temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of the vacuum performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "0dee136f-3180-4608-9645-ccb4d1e5df57",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C73",
+      "claim": "The condensation rate on cryo-samples was found to be identical to the rate measured before the installation of the PIE-scope.",
+      "claim_type": "EXPLICIT",
+      "source": "The condensation rate on cryo-samples was found to be identical to the rate measured before the installation of the PIE-scope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement comparing performance before and after installation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "e6d4eff7-1a44-47f5-94a2-3a3fe77d6042",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C74",
+      "claim": "The drift remained within the specification of the FIB/SEM (<10 nm/min at room temperature and <30 nm/min at cryogenic temperature) with the light microscope installed.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the drift of the sample at room and cryo temperature with and without the light microscope installed to ensure no significant variation would be detected. With the presented hardware composition (fibre coupled Toptica iChrome-CLE and heated Basler USB3 camera) the drift remained within the specification of the FIB/SEM (<10 nm/min at room temperature and <30 nm/min at cryogenic temperature).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of the system drift.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "16c1208e-8b27-4eb1-9a40-4d85bb392c6e",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C75",
+      "claim": "When imaging at the maximum framerate achievable with the SEM (50 frames/s) no changes in the vibrations were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, when imaging at the maximum framerate achievable with the SEM (50 frames/s) we have not detected changes in the vibrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of vibration effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "f90850e6-6bfd-4dc1-8bd4-7f239053a02c",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C76",
+      "claim": "For all objectives tested, the resolution measured was in line with the theoretical diffraction limit.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, given the simplicity of the optical design, for all objectives tested we could measure a resolution in line with the theoretical diffraction limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement of the optical performance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "719e1dcc-b37e-48e4-a3d6-9bcec287cc30",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C77",
+      "claim": "Through the use of image deconvolution, the LM resolution in all three dimensions could be mildly improved.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the use of image deconvolution, the LM resolution in all three dimensions could be mildly improved but in order to better resolve the molecular distribution at subcellular level super-resolution imaging would be better suited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about image processing capabilities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "6d17dc68-c26d-4eb3-a884-23913d73cebb",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C78",
+      "claim": "In order to better resolve the molecular distribution at subcellular level super-resolution imaging would be better suited than deconvolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the use of image deconvolution, the LM resolution in all three dimensions could be mildly improved but in order to better resolve the molecular distribution at subcellular level super-resolution imaging would be better suited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of deconvolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "478d36cf-aeda-459d-8199-c77be60a1aa1",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C79",
+      "claim": "The field of cryo-super-resolution fluorescence microscopy is still at its early stages.",
+      "claim_type": "EXPLICIT",
+      "source": "The field of cryo-super-resolution fluorescence microscopy is still at its early stages and the most suitable method still needs to be identified but recently multiple approaches have been demonstrated (Moser et al., 2019; Tuijtel et al., 2019; Xu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "20c8271c-e8b9-4b14-8a31-75e55454f8f7",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C80",
+      "claim": "Recently multiple cryo-super-resolution approaches have been demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "The field of cryo-super-resolution fluorescence microscopy is still at its early stages and the most suitable method still needs to be identified but recently multiple approaches have been demonstrated (Moser et al., 2019; Tuijtel et al., 2019; Xu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Moser et al., 2019; Tuijtel et al., 2019; Xu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "309e916a-ea14-45a1-a25e-d56b0abe393e",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C81",
+      "claim": "The PIE-scope design is compatible with any type of epi-fluorescence imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The PIE-scope design is per se compatible with any type of epi-fluorescence imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the optical design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "e03cee35-5f56-4e93-b8eb-752ebb82d7b2",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C82",
+      "claim": "If super-resolution imaging is required the implementation will be possible and will only require changes on the atmospheric side of the device.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, if super-resolution imaging is required the implementation will be possible and will only require changes on the atmospheric side of the device.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the modular design of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d2bd3fda-d681-4dce-90eb-b98c96a53d13",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C83",
+      "claim": "The effectiveness and usability of cryo-super-resolution imaging are predominantly limited by the ice contamination that inevitably builds up during long imaging sessions and by drift present in those systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, the effectiveness and usability of cryo-super-resolution imaging are predominantly limited by the ice contamination that inevitably builds up during long imaging sessions and by drift present in those systems (Briegel et al., 2010; Wolff et al., 2016; Xu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Briegel et al., 2010; Wolff et al., 2016; Xu et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d32c60ed-830e-483c-9d3d-6d61284031b8",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C84",
+      "claim": "The PIE-scope resolves the problems of ice contamination and drift because the sample is kept in high vacuum during the entire imaging session.",
+      "claim_type": "EXPLICIT",
+      "source": "The PIE-scope resolves both these problems since the sample is kept in high vacuum during the entire imaging session and the drift rate is determined by the specifications of the cryo-stage in use, which must be compatible with high-resolution SEM imaging and FIB micromachining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the design of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "b76188fe-72ba-4dae-a4ba-c4a7e9e5f9ac",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C85",
+      "claim": "The drift rate in PIE-scope is determined by the specifications of the cryo-stage in use, which must be compatible with high-resolution SEM imaging and FIB micromachining.",
+      "claim_type": "EXPLICIT",
+      "source": "The PIE-scope resolves both these problems since the sample is kept in high vacuum during the entire imaging session and the drift rate is determined by the specifications of the cryo-stage in use, which must be compatible with high-resolution SEM imaging and FIB micromachining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the design of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "7d613ac7-f88e-4b5b-8e45-d169a79ec136",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C86",
+      "claim": "The authors used larvae of the nematode Caenorhabditis elegans, where four head neurons (BAGL/R and ASGL/R) express mCherry, to prepare a lamella centred around a neuronal cell body and one of the main dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used larvae of the nematode Caenorhabditis elegans, where four head neurons (BAGL/R and ASGL/R) express mCherry, to prepare a lamella centred around a neuronal cell body and one of the main dendrites which extend anteriorly towards the mouth of the animal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental sample, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d8c0fffa-4cd0-40c0-a8b5-1a4ec95a50c4",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C87",
+      "claim": "The fluorescence is maintained after milling in C. elegans samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5, the fluorescence is maintained after milling, which can be used to confirm that the target structure (a dendrite of a BAGL/R neuron) is effectively contained in the lamella.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "4bfea552-d560-4edb-b06d-09b073438d52",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C88",
+      "claim": "The fluorescence can be used to confirm that the target structure is effectively contained in the lamella.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5, the fluorescence is maintained after milling, which can be used to confirm that the target structure (a dendrite of a BAGL/R neuron) is effectively contained in the lamella.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "1b666e66-6898-4481-be1f-5fa18c86d080",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C89",
+      "claim": "The authors tested the ability of targeted lamella preparation in a bulk cryo-sample using a whole brain dissected from a Drosophila melanogaster larva expressing EGFP in interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We further tested the ability of targeted lamella preparation in a bulk cryo-sample. Here a whole brain dissected from a Drosophila melanogaster larva expressing EGFP in interneurons (Engrailed-Gal4, UAS-eGFP) was cryo-fixed and imaged under fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental sample, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "5fa7b3e3-b897-4067-bc31-a6f3fae4391c",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C90",
+      "claim": "Based on the fluorescence signal, 1.5 \u00b5m thick lamellas were isolated around the neuronal body in Drosophila brain samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the fluorescence signal, 1.5 \u00b5m thick lamellas were isolated around the neuronal body (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "62de9921-55b5-4c1d-9588-5d0da1d0e19f",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C91",
+      "claim": "The PIE-scope setup is compatible with emerging techniques such as the cryo-lift-out.",
+      "claim_type": "EXPLICIT",
+      "source": "This setup is compatible with emerging techniques such as the cryo-lift-out which will allow selective isolation of lamellae from bulk tissue (Mahamid et al., 2015; Parmenter et al., 2016; Rubino et al., 2012; Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Mahamid et al., 2015; Parmenter et al., 2016; Rubino et al., 2012; Zhang et al., 2016.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "040ef910-9e06-42fc-876b-7e5910d18428",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C92",
+      "claim": "The position of the LM does not interfere with the manipulator, making it compatible with the development of future applications involving cryo-lift-out.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of the LM does not interfere with the manipulator, making it compatible with the development of future applications involving cryo-lift-out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the physical layout of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "c5271f78-794c-4158-ab94-75dd8aa4d2e3",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C93",
+      "claim": "When a lamella has a thickness compatible with cryo-TEM, typically the intensity is 30% of the one measured in a focal plane within the uncut tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "When a lamella has a thickness compatible with cryo-TEM, typically the intensity is 30% of the one measured in a focal plane within the uncut tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "66b3a9fd-017d-47be-a685-0527edf7bb0c",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C94",
+      "claim": "The 30% intensity value is in line with the difference between the average thickness of a lamella (~250 nm) and the depth of focus of the objective used (~800 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "This value is in line with the difference between the average thickness of a lamella (~250 nm) and the depth of focus of the objective we use (~800 nm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on optical principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "c1581039-62d7-4959-ab6c-c10b799cca7f",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C95",
+      "claim": "In the absence of an optical sectioning method such as confocal microscopy, the limited dynamic range of the detectors make imaging of thin lamellas challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in the absence of an optical sectioning method such as confocal microscopy, the limited dynamic range of the detectors make imaging of thin lamellas challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the optical characteristics and detector limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "5fc87ece-f628-476d-8eef-fa19311685b8",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C96",
+      "claim": "The authors prepared cryo-TEM compatible lamellas on Yeast strain stained with a nuclear stain (Nuclear-ID, EnzoLife Sciences) to show that fluorescence imaging of thin lamellas is possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, in order to show that this is possible, we prepared cryo-TEM compatible lamellas on Yeast a strain stained with a nuclear stain (Nuclear-ID, EnzoLife Sciences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental sample, shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "3aeac914-5ffb-4f42-898d-611202a818bf",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C97",
+      "claim": "Fluorescence is detectable in a cryo-TEM compatible lamella.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 7 it is possible to see that fluorescence is detectable in a lamella, and further that the fluorescence signal can be used to target the cryo-ET data collection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "dfef8dca-0f3e-4757-af19-4321db9cf0a3",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C98",
+      "claim": "The fluorescence signal can be used to target the cryo-ET data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 7 it is possible to see that fluorescence is detectable in a lamella, and further that the fluorescence signal can be used to target the cryo-ET data collection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "fe3f62f8-126c-4c42-a353-427a0eec93f3",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C99",
+      "claim": "Cryo-ET analyses show that LM imaging does not induce de-vitrification of the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-ET analyses (Figure 7e and Video 2) show that LM imaging does not induce de-vitrification of the sample.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 7e and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "347410e1-b8dc-4296-8209-6c575d19ca4a",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C100",
+      "claim": "The PIE-scope simplifies sample handling and reduces the risk of sample contamination by limiting the number of cryo-transfers.",
+      "claim_type": "EXPLICIT",
+      "source": "We have presented a novel system to perform cryo-CLEM and targeted cryo-lamella preparation, which simplifies sample handling and reduces the risk of sample contamination by limiting the number of cryo-transfers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the integrated design of the system.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "bdb37114-db16-4a97-b152-ba9f5e80e900",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C101",
+      "claim": "Having a light microscope within the vacuum chamber provides an opportunity to verify that the target has not been lost while milling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, having a light microscope within the vacuum chamber provides an opportunity to verify that the target has not been lost while milling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the capability to image during the milling process.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "3505a827-ee3a-4cbc-b6c3-c26ca3217dd5",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C102",
+      "claim": "Future developments will likely involve the introduction of optical sectioning and super-resolution imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Future developments will likely involve the introduction of optical sectioning and super-resolution imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future capabilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "7ae62397-34c5-43e7-b3e6-caaff3d6b2be",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C103",
+      "claim": "Having the light microscope on the same stage as the FIB resolves the current status where each microscope comes with its own image format and no stage information can be directly imported from the LM to the FIB/SEM.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, having the light microscope on the same stage as the FIB resolves the current status where each microscope comes with its own image format and no stage information can be directly imported from the LM to the FIB/SEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the integrated design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "6a3dfc7d-3b0a-42e1-a2cc-bcfe7b841cf8",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C104",
+      "claim": "The PIE-scope configuration provides the foundation required for automated CLEM to mill targeted cryo-lamellae.",
+      "claim_type": "EXPLICIT",
+      "source": "This configuration provides the foundation required for automated CLEM to mill targeted cryo-lamellae, which will enable structural studies on rare cellular events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future capabilities based on the current design.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "8d574b98-8d47-4dd9-a308-b64a2f30edc2",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C105",
+      "claim": "Automated CLEM to mill targeted cryo-lamellae will enable structural studies on rare cellular events.",
+      "claim_type": "EXPLICIT",
+      "source": "This configuration provides the foundation required for automated CLEM to mill targeted cryo-lamellae, which will enable structural studies on rare cellular events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the impact of future automation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "9d93c2b0-c6f2-4190-b509-e131bb224118",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C106",
+      "claim": "It is reasonable to expect setups which include automated segmentation of correlated images to define or guide the definition of the milling parameters with limited user intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering future software requirements, it is reasonable to expect setups which include automated segmentation of correlated images to define or guide the definition of the milling parameters with limited user intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future software development.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "13c643d5-567e-4c38-95cc-c4b905fb2a47",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C107",
+      "claim": "When using the conventional suite of separated microscopes it is challenging to achieve automated segmentation because each microscope has its own image format and no stage information can be directly imported from the LM to the FIB/SEM.",
+      "claim_type": "EXPLICIT",
+      "source": "When using the conventional suite of separated microscopes it is challenging to achieve such a target because each microscope has its own image format and no stage information can be directly imported from the LM to the FIB/SEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of conventional systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "819efa1a-07fa-4ebf-a1ec-ad98de285cae",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C108",
+      "claim": "In the PIE-scope, all images are acquired using the same stage and software.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PIE-scope, all images are acquired using the same stage and software (Figure 3b), and fluorescence images can be acquired in between milling steps (therefore providing additional information useful for a more precise correlation, such as the milled edges).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the system design shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "721ea0d4-6c63-420f-8676-9e294eb09228",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C109",
+      "claim": "Fluorescence images can be acquired in between milling steps in PIE-scope, providing additional information useful for a more precise correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PIE-scope, all images are acquired using the same stage and software (Figure 3b), and fluorescence images can be acquired in between milling steps (therefore providing additional information useful for a more precise correlation, such as the milled edges).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a capability of the system demonstrated in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "2bef6fde-a403-4793-a013-f60868804d93",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C110",
+      "claim": "Through the PIE-scope, it will be possible to implement CLEM automation for targeted lamella preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the PIE-scope, it will be therefore possible to implement CLEM automation for targeted lamella preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future capabilities based on the current design.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "8a55687e-ff33-4184-97b8-c7897ac12488",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C111",
+      "claim": "The illumination source is a four wavelength combiner with a single multimode fibre output (Toptica iCLE-50 405, 488, 561, 640 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "The illumination source is a four wavelength combiner with a single multimode fibre output (Toptica iCLE-50 405, 488, 561, 640 nm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the hardware used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "b266f175-6f17-4603-9245-3aace4b479fd",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C112",
+      "claim": "The maximum laser power used during imaging corresponded to 0.5 mW out of the fibre, which was further reduced to 0.2 mW at the back-focal plane of the objective.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum laser power used during imaging corresponded to 0.5 mW out of the fibre, which was further reduced to 0.2 mW at the back-focal plane of the objective, although there might be occasions where more laser power is required for imaging, we noted that these conditions have provided sufficient illumination on all tested samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the imaging parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "1f386742-e240-436d-b83d-1675572c78ab",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C113",
+      "claim": "The camera used is a Basler acA1920-155um with USB3.0 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, the camera used is a Basler acA1920-155um with USB3.0 interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the hardware used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d236c90f-75f6-4dae-9334-de917faf3a9d",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C114",
+      "claim": "The Basler camera is a heated CMOS detector with a quantum efficiency in the visible range of ~70%.",
+      "claim_type": "EXPLICIT",
+      "source": "This camera is a heated CMOS detector with a quantum efficiency in the visible range of ~70%, it represents a cost-effective solution which comes with a dark noise of 6.6 e-.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the camera characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "0245fa8c-09ac-4553-a474-5d7f14087c37",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C115",
+      "claim": "The Basler camera has a dark noise of 6.6 e-.",
+      "claim_type": "EXPLICIT",
+      "source": "This camera is a heated CMOS detector with a quantum efficiency in the visible range of ~70%, it represents a cost-effective solution which comes with a dark noise of 6.6 e-.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the camera characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "cf00acd6-b8ca-4a55-850d-6c9791fa4f30",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C116",
+      "claim": "The major advantage of the Basler camera is that it does not require active cooling, making the system less susceptible to vibrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The major advantage of this component, beside its price, is that it does not require active cooling, making the system less susceptible to vibrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the benefits of the camera choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "b7cc1dcf-8f5f-43af-a391-7be73a375430",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C117",
+      "claim": "If single-molecule imaging is required, or if the fluorescence signal is extremely dim, then cooled CMOS cameras such as the Hamamatsu Flash4.0 V3 should be used.",
+      "claim_type": "EXPLICIT",
+      "source": "If single-molecule imaging is required, or if the fluorescence signal is extremely dim, then cooled CMOS cameras such as the Hamamatsu Flash4.0 V3 should be used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on imaging requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "a9e5c4ec-8b4f-4926-8ad3-6568dde724d5",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C118",
+      "claim": "If a cooled camera is used, the camera cooling lines should be connected to the FIB/SEM water chiller to ensure that no vibration is introduced in the system.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, in order to ensure that no vibration is introduced in the system, the camera cooling lines should be connected to the FIB/SEM water chiller.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation to prevent vibration issues.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "b316784c-902a-4708-aca7-1dc59cdeee5c",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C119",
+      "claim": "All custom components were designed using Autodesk Inventor Pro 2016 and Siemens NX.",
+      "claim_type": "EXPLICIT",
+      "source": "All custom components were designed using Autodesk Inventor Pro 2016 and Siemens NX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the design tools used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "f12f092d-f074-4dda-81d8-70d64777c92b",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C120",
+      "claim": "Parts were fabricated in the Mechanical and Aerospace engineering mechanical workshop at Monash University.",
+      "claim_type": "EXPLICIT",
+      "source": "Parts were fabricated in the Mechanical and Aerospace engineering mechanical workshop at Monash University.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about where the parts were made.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "bcb8cd9a-5f54-4452-84bb-3f42d3b468e8",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C121",
+      "claim": "Ray tracing was performed using Zemax OpticsStudio.",
+      "claim_type": "EXPLICIT",
+      "source": "Ray tracing was performed using Zemax OpticsStudio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the optical design tool used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "4c3c6174-40c3-4105-b4c1-6f9d3192d553",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C122",
+      "claim": "The control software has been developed using National Instruments LabVIEW 2015, Python three with Numpy 1.15, Scipy 1.1.0 and ThermoFisher AutoScript 4.0.",
+      "claim_type": "EXPLICIT",
+      "source": "The control software has been developed using National Instruments LabVIEW 2015, Python three with Numpy 1.15, Scipy 1.1.0 and ThermoFisher AutoScript 4.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the software tools used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "6bc9df71-02f3-4408-88e9-1cd1eb26574a",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C123",
+      "claim": "All drawings, latest Bill of Material, a stable software release, list of dependencies and instructions are available at https://www.demarco-lab.com/resources.",
+      "claim_type": "EXPLICIT",
+      "source": "All drawings, latest Bill of Material (matched to the stable software released), a stable software release, list of dependencies and instructions are available at https://www.demarco-lab.com/resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information about resource availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "11dccfc8-a876-4ca2-83b6-89e9af80cd2e",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C124",
+      "claim": "Caenorhabditis elegans strain RJP3088 (Pets-5::mCherry +Pelt-2::GFP) was maintained at 20\u00b0C on NGM plates seeded with Escherichia coli OP50 bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "All Caenorhabditis elegans strain RJP3088 (Pets-5::mCherry +Pelt-2::GFP) (Juozaityte et al., 2017) was maintained at 20\u00b0C on NGM plates seeded with Escherichia coli OP50 bacteria (Porta-de-la-Riva, Fontrodona et al.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "cda309aa-accb-4609-b25d-5340f700d31a",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C125",
+      "claim": "C. elegans samples were kept in M9 medium, concentrated to a density of 3\u20134 worms / \u00b5L.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans samples were kept in M9 medium, concentrated to a density of 3\u20134 worms / \u00b5L.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "41c3d7d7-11e1-4353-95da-d70c35fd033f",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C126",
+      "claim": "5 \u00b5L of C. elegans solution were deposited on a Cu-300-mesh Quantifoil R-2/2 grid which was glow discharged for 30 s using a Pelco EasyGlow.",
+      "claim_type": "EXPLICIT",
+      "source": "5 \u00b5L of solution were deposited on a Cu-300-mesh Quantifoil R-2/2 grid which was glow discharged for 30 s using a Pelco EasyGlow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "dbbde153-b18d-4875-8fd5-5585721e50a8",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C127",
+      "claim": "The excess of medium was manually blotted using Whatman filter paper grade 595 and vitrified by plunge freezing in liquid ethane.",
+      "claim_type": "EXPLICIT",
+      "source": "The excess of medium was manually blotted using Whatman filter paper grade 595 (Merck) and vitrified by plunge freezing in liquid ethane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "9ece7aec-0734-4da7-a43a-8f4c03428bea",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C128",
+      "claim": "Drosophila melanogaster used were a cross between Engrailed-Gal4 (BL30564) and UAS-eGFP (BL6874) from the Bloomington Drosophila Stock Center.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila melanogaster used were a cross between Engrailed-Gal4 (BL30564) and UAS-eGFP (BL6874) from the Bloomington Drosophila Stock Center (Indiana).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "596ed03e-cb53-4741-9a03-e284a35a8f94",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C129",
+      "claim": "Drosophila flies were raised on standard media at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies were raised on standard media at 25\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "0e8f87ee-1e39-4443-a658-e15fa6fcf740",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C130",
+      "claim": "Drosophila brains at the third instar larval stage were dissected in cold phosphate buffered saline before being mounted in 20% (w/v) dextran solution prior vitrification.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila brains at the third instar larval stage were dissected in cold phosphate buffered saline before being mounted in 20% (w/v) dextran solution prior vitrification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "f89e1296-35a9-48a1-be9f-561d188459b2",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C131",
+      "claim": "Drosophila samples were high-pressure frozen using a Leica EM-PACT2 on 200 \u00b5m deep planchettes.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples were high-pressure frozen using a Leica EM-PACT2 on 200 \u00b5m deep planchettes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "37f4366a-4eb8-4c36-a03e-c4a7a70d41e0",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C132",
+      "claim": "Manual freeze-fracture was performed by scraping the surface with a scalpel under liquid nitrogen to expose the Drosophila sample to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to expose the sample to the surface, therefore reducing the milling time required, we performed manual freeze-fracture by scraping the surface with a scalpel under liquid nitrogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "f3c9dac9-14a5-4105-8edf-3dac79961d6a",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C133",
+      "claim": "The difference in density between the dextran solution and the Drosophila sample itself ensures an easy separation during freeze-fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in density between the dextran solution and the sample itself ensures an easy separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the sample preparation method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "54be4ada-89ab-4611-affa-9dd817aff072",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C134",
+      "claim": "Saccharomyces cerevisiae cells were cultured overnight at 30\u00b0C in 2 YPD+.",
+      "claim_type": "EXPLICIT",
+      "source": "Saccharomyces cerevisiae cells were cultured at overnight 30\u00b0C in 2 YPD+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "67dea407-924d-4fce-96a4-2e28b58e4a4b",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C135",
+      "claim": "Yeast cells were harvested when the optical density reached 0.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were harvested when the optical density reached 0.6, washed in PBS and stained using Nuclear-ID (Enzo Life Sciences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "3540752d-123b-4000-a287-7339a56900c9",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C136",
+      "claim": "Yeast cells were washed in PBS and stained using Nuclear-ID.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were harvested when the optical density reached 0.6, washed in PBS and stained using Nuclear-ID (Enzo Life Sciences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "358beb09-18f8-4d47-88b6-b760320d7bc7",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C137",
+      "claim": "5 \u00b5L of yeast cells were deposited on a Cu-300-mesh Quantifoil R-2/2 grid which was previously glow discharged for 30 s in a Pelco EasyGlow.",
+      "claim_type": "EXPLICIT",
+      "source": "5 \u00b5L were deposited on a Cu-300-mesh Quantifoil R-2/2 grid which was previously glow discharged for 30 s in a Pelco EasyGlow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "15e1a67f-1382-40fa-841a-187c31752f54",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "claim_id": "C138",
+      "claim": "Yeast grids were manually blotted for 5 s using Whatman 595 blotting pads and plunge-frozen in liquid ethane.",
+      "claim_type": "EXPLICIT",
+      "source": "Grids were manually blotted for 5 s using Whatman 595 blotting pads and plunge-frozen in liquid ethane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample preparation methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the context and challenges of cryo-ET workflows, including the need for cryo-FIB milling to produce thin lamellae (~300 nm), the difficulty of identifying proteins in heterogeneous cellular environments, and the labor-intensive nature of conventional cryo-CLEM workflows that require multiple cryo-transfers between separate microscopes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide well-established background knowledge about cryo-ET and cryo-CLEM workflows, supported by appropriate citations to the literature (Beck and Baumeister 2016, Dubochet et al. 1988, Frank 1996, F\u00f6rster et al. 2010, Marko et al. 2006-2007, Arnold et al. 2016, Sartori et al. 2007, and others). The claims accurately describe the technical challenges and standard practices in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "129aa3ef-d99a-4e0c-88bb-50f6c273079f",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The PIE-scope is an integrated cryo-FIB and light microscope system designed to enable retrofitting of existing FIB/SEM systems, with the light microscope positioned 49 mm away from the coincidence point along the X axis to maximize compatibility with different instrument geometries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The design specifications are clearly described and illustrated in Figure 2. The offset positioning (C41) is a deliberate design choice to enable broad compatibility (C40, C42, C43), which is well-justified and documented. The system architecture is presented with sufficient technical detail.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The PIE-scope design offers multiple operational advantages including single-axis translation between imaging modes, compatibility with high NA objectives, sample-independent focusing, collision detection, and sub-10 nm focusing precision using a piezoelectric positioner. Objectives require ~24 hours degassing and may need replacement after >12 months due to cement degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The design features (C44-C52) are well-documented with specific technical specifications. The degassing observation (C53) is based on experimental testing. However, the objective lifetime claim (C55) is partially speculative, based on limited experience (>12 months), though the authors appropriately qualify this as an expectation rather than a definitive finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "e0c532c1-768c-4347-b5f5-ebfc45481d65",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The PIE-scope optical system supports four-channel fluorescence and reflected light imaging in wide-field mode, with the design compatible with future implementation of super-resolution techniques such as SIM that would require only atmospheric-side modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The current capabilities (C56, C58) are clearly specified. The potential for SIM implementation (C59, C60) is appropriately presented as speculation supported by relevant citations (Gustafsson 2000, Kner et al. 2009, Shao et al. 2011). The modular design rationale for future upgrades (C81, C82) is logical and well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "a8eab72d-6007-4f91-a2fc-45fb8aefe6d3",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A custom control software (PIE-scope-commander) was developed in LabVIEW and Python to control all imaging modalities from a single computer, enabling seamless navigation between modalities, hierarchical data storage, and the ability to acquire fluorescence images between milling steps using the same stage and software.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The software capabilities are clearly described and illustrated in Figures 3 and 4. The integration features (C62-C64, C108, C109) address practical workflow needs. The software is made freely available (C65), supporting reproducibility. The claims are well-supported by the presented interface and functionality descriptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "7c948351-ee02-4aa9-a124-affcb908560f",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The system requires calibration after mounting due to mechanical tolerances (up to 500 \u03bcm variability). Direct ROI targeting precision is <420 nm (X-axis) and <300 nm (Y-axis), with mechanical correlation precision of ~500 nm (\u00b1\u03c3) based on 86 measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The precision measurements are quantitatively reported with appropriate sample sizes (n=86 for C69) and clearly illustrated in Figure 3c and 3f. The variability due to mechanical tolerances (C67) is honestly reported. The precision values are sufficient for the intended application of targeting 5-10 \u03bcm lamellae.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "07118499-dfef-457f-9985-b9153a3388bf",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "System characterization demonstrates that PIE-scope installation does not compromise FIB/SEM performance: vacuum levels reach 1\u00d710\u207b\u2074 Pa (room temperature) and 5\u00d710\u207b\u2075 Pa (cryogenic), condensation rates are unchanged, drift remains within specifications (<10 nm/min room temperature, <30 nm/min cryogenic), and no additional vibrations are detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The characterization is thorough and addresses key performance metrics. Measurements are compared to pre-installation baselines (C73) and manufacturer specifications (C74). The specific hardware configuration is noted (fiber-coupled Toptica iChrome-CLE and heated Basler USB3 camera), acknowledging that results may vary with different components. The data support that the modification does not degrade system performance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "030c512f-69e6-4d67-8e31-cce8214bac96",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Optical performance meets theoretical diffraction limits for all tested objectives. While deconvolution provides mild resolution improvement, super-resolution imaging would be better suited for subcellular molecular distribution. The PIE-scope addresses key limitations of cryo-super-resolution (ice contamination and drift) by maintaining high vacuum and utilizing the stable cryo-stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The optical characterization (C76) confirms expected performance. The assessment of deconvolution limitations (C77, C78) and super-resolution potential (C79, C80, C83) is appropriately supported by citations. The inference that PIE-scope addresses ice contamination and drift issues (C84, C85) is logical given the high-vacuum environment and stable stage, though direct experimental validation of super-resolution performance is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "22a4ac74-e4ea-4b4a-a2d7-0a5e7f829656",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PIE-scope successfully prepared targeted cryo-lamellae from C. elegans neurons expressing mCherry, with fluorescence maintained after milling to confirm that the target dendrite structure is contained in the lamella.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The C. elegans demonstration is well-documented in Figure 5, showing the complete workflow from fluorescence targeting through milling with intermediate verification steps. The maintenance of fluorescence signal after milling (C87) provides direct confirmation of successful targeting (C88). This represents a clear proof-of-concept for the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "fc24855c-32be-4649-a466-9881df04f240",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PIE-scope successfully prepared 1.5 \u03bcm thick targeted lamellae from bulk Drosophila brain tissue expressing EGFP in interneurons. The system is compatible with cryo-lift-out techniques, as the LM position does not interfere with the manipulator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Drosophila brain demonstration (Figure 6) shows successful targeting in bulk tissue, a more challenging application than thin samples. The lamella preparation (C90) is clearly documented. The compatibility with cryo-lift-out (C91, C92) is supported by citations and the physical layout, though actual lift-out experiments are not performed. The freeze-fracture method (C133) is appropriately described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "d1327d92-afa9-4070-9251-ea234c18843a",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Fluorescence imaging of cryo-TEM compatible thin lamellae (~250 nm) is possible but challenging due to reduced signal intensity (~30% of uncut tissue) and limited detector dynamic range. Yeast samples with nuclear staining demonstrate that fluorescence is detectable in thin lamellae and can guide cryo-ET data collection without inducing sample de-vitrification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The intensity reduction (C93) is quantified and explained by optical principles relating lamella thickness to depth of focus (C94). The challenge for thin lamellae (C95) is honestly acknowledged. The yeast demonstration (Figure 7, Video 2) provides proof that thin lamella imaging is feasible (C97, C98) and that LM imaging does not damage the sample (C99), addressing a critical concern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The integrated approach mitigates risks associated with cryo-transfers by eliminating the need to move samples between separate microscopes. Unlike the previous iLEM system (which has limitations in TEM column geometry and requires cryo-box removal), PIE-scope enables in-situ verification during FIB milling and simplifies sample handling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to iLEM (C32-C37) is fair and appropriately cited (Agronskaia et al. 2008, Faas et al. 2013). The advantages of the integrated approach (C31, C100, C101) are logical consequences of the design and are demonstrated through the biological applications (C38). The reduction in cryo-transfers is a clear benefit, though quantitative comparison of success rates versus conventional workflows is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "8c3ed127-46e6-4f43-ba88-b0ddcd48e460",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors claim PIE-scope will increase throughput and accuracy, make workflows safer and more accessible, and provide a foundation for automated CLEM. Future developments may include optical sectioning, super-resolution imaging, and automated segmentation for defining milling parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are primarily forward-looking claims about expected impact and future capabilities. While the technical foundation is demonstrated (C103, C108), the actual improvements in throughput, accuracy, and accessibility (C9, C10) are not quantitatively validated. The automation potential (C104, C106, C110) is logical given the integrated design but remains speculative. The claims about enabling rare cellular event studies (C105) require validation through actual implementation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "168bcb77-9aed-4359-b942-a3218d1d723a",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Detailed technical specifications and methods are provided for the PIE-scope hardware (illumination source, camera, optical components, materials, fabrication) and software (LabVIEW, Python, dependencies), with all designs, bills of materials, and software freely available online.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The technical specifications are comprehensive and specific (C111-C118), supporting reproducibility. The design and fabrication details (C119-C121) are clearly stated. Software specifications (C122) include version numbers. The commitment to open access of designs and software (C123) is commendable and verifiable. These details enable others to reproduce or adapt the system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    },
+    {
+      "id": "b2fedbba-98c5-4377-b69d-d03e0957d18a",
+      "content_id": "84594e71-c9d2-4646-9287-a2bdb5b32724",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Detailed sample preparation protocols are provided for C. elegans (plunge freezing), Drosophila brain (high-pressure freezing with freeze-fracture), and yeast (plunge freezing with nuclear staining), including specific strains, culture conditions, vitrification parameters, and grid preparation methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The sample preparation methods are described in sufficient detail for reproduction, with appropriate citations where relevant (C124). Specific parameters are provided (temperatures, concentrations, timing). The methods are standard for the field and appropriate for the specimens used. The freeze-fracture approach for Drosophila (C132) is well-justified to reduce milling time.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:56:39.186342Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8437d6b6-a78b-4be7-acc0-325388d2d777",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "8c7c93f6-174e-420c-a7e2-c38175e8fe63",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "1aa5a44c-be8a-4473-901c-81a5f07d2a57",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "e1223067-7f40-4cbc-8db8-af32271f1ba8",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "820602d2-2571-4e61-884a-a56fbfbfe56f",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "985ac97c-f759-46ae-96ed-cc30fea31f34",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "0b594b2f-ceda-4766-a307-3868b0acb34d",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "7484db3c-fc85-4b43-9d41-75e33b1a507b",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "bf8ff38d-11e5-4624-acf2-5e1245c32731",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "cf24bca9-d549-4c17-bce6-4367407ac8a0",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "63f28e57-265b-4c88-91ae-b704825821c6",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "a6f89c5a-e7f8-4851-abbd-95b49a37003e",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "47ed8ef8-00e8-4ae7-b670-b5254a02fd1c",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "3ba31102-e43a-4a42-88a8-6258fb0d0312",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "d2eca9d9-ee50-4ec8-912d-b4e12bc57287",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "29d35f08-9ff5-4ae7-bf6b-f7ba36407a9b",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "551dd7a1-7c36-46f6-864f-0ed3cb93b06f",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "d844e2fe-8fbd-48c6-9e55-ca00f4c211c0",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "40c3d3c2-3663-405e-be71-f7e75baab535",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "f755777a-80ab-4836-b365-da33ad712fb9",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "d32f307a-bbe6-4f0d-a433-8f986f7fad5d",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "ef307022-b12b-44a7-a897-bbb4e6f64bb4",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "452f6775-50e5-49b6-9a10-df463603efa1",
+      "result_id": "f9af4217-2b8f-4dc6-9739-a220b0f8bafe"
+    },
+    {
+      "claim_id": "c5b2af01-b487-4ef0-bfd4-6e78e83a84a4",
+      "result_id": "129aa3ef-d99a-4e0c-88bb-50f6c273079f"
+    },
+    {
+      "claim_id": "aeebe094-596a-4b35-89f1-7d8fbf33ceb5",
+      "result_id": "129aa3ef-d99a-4e0c-88bb-50f6c273079f"
+    },
+    {
+      "claim_id": "bdc0e3a1-a28d-4fe4-81c1-e0eda708dc4c",
+      "result_id": "129aa3ef-d99a-4e0c-88bb-50f6c273079f"
+    },
+    {
+      "claim_id": "2d316bd8-3ceb-4494-ad26-4e2217d76642",
+      "result_id": "129aa3ef-d99a-4e0c-88bb-50f6c273079f"
+    },
+    {
+      "claim_id": "cf17d303-e1af-4694-b6b4-a253cdb2cbc8",
+      "result_id": "129aa3ef-d99a-4e0c-88bb-50f6c273079f"
+    },
+    {
+      "claim_id": "47aab72b-8ef2-4e24-acbf-f2c7ded4c4cc",
+      "result_id": "129aa3ef-d99a-4e0c-88bb-50f6c273079f"
+    },
+    {
+      "claim_id": "8b629810-4b04-4c88-9f49-d04f5279af6e",
+      "result_id": "129aa3ef-d99a-4e0c-88bb-50f6c273079f"
+    },
+    {
+      "claim_id": "a2b2a91a-fb1a-4ac4-a504-df2c964a4810",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "83555215-7782-4853-a380-7774803a47f6",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "23194847-1df4-4417-9f9e-69915f7ed068",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "35ac6135-408e-4220-a8c5-a6e4de017df1",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "f24ae7b9-e1a5-4499-bbef-1eb9865379ff",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "c2494f0b-962b-48bf-abd8-2fafca6d500b",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "998fd092-3687-4c63-bea8-c71fb79d83d0",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "b80c7a12-83d8-4b0c-b916-f9dbc82b3869",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "abaa1042-b446-4f14-b33d-988caf7d92ca",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "924df36e-04ed-4e7a-8b59-fb5e3fee5ece",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "dea6350e-b13b-4f22-a50d-90c111ea9153",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "770db8fd-395b-4809-8c23-82ae5b6721e0",
+      "result_id": "7fa4033c-93d4-4ac2-8e78-459bbff61f9c"
+    },
+    {
+      "claim_id": "c9af8e33-b90d-47ff-b83f-cb43956442ba",
+      "result_id": "e0c532c1-768c-4347-b5f5-ebfc45481d65"
+    },
+    {
+      "claim_id": "d7ca8461-a1d5-468d-b378-563daabef503",
+      "result_id": "e0c532c1-768c-4347-b5f5-ebfc45481d65"
+    },
+    {
+      "claim_id": "649d87ce-acd3-4b3d-b13a-504bfd85675c",
+      "result_id": "e0c532c1-768c-4347-b5f5-ebfc45481d65"
+    },
+    {
+      "claim_id": "56b1b6b9-0ca0-4690-b40a-ee2fb639e759",
+      "result_id": "e0c532c1-768c-4347-b5f5-ebfc45481d65"
+    },
+    {
+      "claim_id": "0754bb4e-4c32-485e-944f-b00d44826073",
+      "result_id": "e0c532c1-768c-4347-b5f5-ebfc45481d65"
+    },
+    {
+      "claim_id": "309e916a-ea14-45a1-a25e-d56b0abe393e",
+      "result_id": "e0c532c1-768c-4347-b5f5-ebfc45481d65"
+    },
+    {
+      "claim_id": "e03cee35-5f56-4e93-b8eb-752ebb82d7b2",
+      "result_id": "e0c532c1-768c-4347-b5f5-ebfc45481d65"
+    },
+    {
+      "claim_id": "d16ef297-9825-4ce6-bae8-bc08268e7d19",
+      "result_id": "a8eab72d-6007-4f91-a2fc-45fb8aefe6d3"
+    },
+    {
+      "claim_id": "0f9d5118-b671-4729-87ee-c7b0c46e20e9",
+      "result_id": "a8eab72d-6007-4f91-a2fc-45fb8aefe6d3"
+    },
+    {
+      "claim_id": "1106cc4f-5ae4-4d53-a27e-228c8f0780ed",
+      "result_id": "a8eab72d-6007-4f91-a2fc-45fb8aefe6d3"
+    },
+    {
+      "claim_id": "b9fe2bdf-cfcf-4f41-afc3-79ad74db5a17",
+      "result_id": "a8eab72d-6007-4f91-a2fc-45fb8aefe6d3"
+    },
+    {
+      "claim_id": "30965c96-181f-4573-8128-47ba8dcb9b11",
+      "result_id": "a8eab72d-6007-4f91-a2fc-45fb8aefe6d3"
+    },
+    {
+      "claim_id": "819efa1a-07fa-4ebf-a1ec-ad98de285cae",
+      "result_id": "a8eab72d-6007-4f91-a2fc-45fb8aefe6d3"
+    },
+    {
+      "claim_id": "721ea0d4-6c63-420f-8676-9e294eb09228",
+      "result_id": "a8eab72d-6007-4f91-a2fc-45fb8aefe6d3"
+    },
+    {
+      "claim_id": "beeb8b9d-b0ca-418f-ac7c-50c227c6ab03",
+      "result_id": "7c948351-ee02-4aa9-a124-affcb908560f"
+    },
+    {
+      "claim_id": "0760047c-fb23-4716-9e1f-542881b9a81a",
+      "result_id": "7c948351-ee02-4aa9-a124-affcb908560f"
+    },
+    {
+      "claim_id": "9c90216c-9843-4f60-b52c-3644d9fb8687",
+      "result_id": "7c948351-ee02-4aa9-a124-affcb908560f"
+    },
+    {
+      "claim_id": "d80990a8-5428-4b39-9d0f-b89c2738e6b4",
+      "result_id": "7c948351-ee02-4aa9-a124-affcb908560f"
+    },
+    {
+      "claim_id": "69d7e493-214d-496b-8f7a-9c19eca4aea2",
+      "result_id": "07118499-dfef-457f-9985-b9153a3388bf"
+    },
+    {
+      "claim_id": "cd58d3c2-70da-430c-bbe9-5ddd1e4cedea",
+      "result_id": "07118499-dfef-457f-9985-b9153a3388bf"
+    },
+    {
+      "claim_id": "09c439ec-beee-4f76-8f13-838dd250d839",
+      "result_id": "07118499-dfef-457f-9985-b9153a3388bf"
+    },
+    {
+      "claim_id": "0dee136f-3180-4608-9645-ccb4d1e5df57",
+      "result_id": "07118499-dfef-457f-9985-b9153a3388bf"
+    },
+    {
+      "claim_id": "e6d4eff7-1a44-47f5-94a2-3a3fe77d6042",
+      "result_id": "07118499-dfef-457f-9985-b9153a3388bf"
+    },
+    {
+      "claim_id": "16c1208e-8b27-4eb1-9a40-4d85bb392c6e",
+      "result_id": "07118499-dfef-457f-9985-b9153a3388bf"
+    },
+    {
+      "claim_id": "f90850e6-6bfd-4dc1-8bd4-7f239053a02c",
+      "result_id": "030c512f-69e6-4d67-8e31-cce8214bac96"
+    },
+    {
+      "claim_id": "719e1dcc-b37e-48e4-a3d6-9bcec287cc30",
+      "result_id": "030c512f-69e6-4d67-8e31-cce8214bac96"
+    },
+    {
+      "claim_id": "6d17dc68-c26d-4eb3-a884-23913d73cebb",
+      "result_id": "030c512f-69e6-4d67-8e31-cce8214bac96"
+    },
+    {
+      "claim_id": "478d36cf-aeda-459d-8199-c77be60a1aa1",
+      "result_id": "030c512f-69e6-4d67-8e31-cce8214bac96"
+    },
+    {
+      "claim_id": "20c8271c-e8b9-4b14-8a31-75e55454f8f7",
+      "result_id": "030c512f-69e6-4d67-8e31-cce8214bac96"
+    },
+    {
+      "claim_id": "d2bd3fda-d681-4dce-90eb-b98c96a53d13",
+      "result_id": "030c512f-69e6-4d67-8e31-cce8214bac96"
+    },
+    {
+      "claim_id": "d32c60ed-830e-483c-9d3d-6d61284031b8",
+      "result_id": "030c512f-69e6-4d67-8e31-cce8214bac96"
+    },
+    {
+      "claim_id": "b76188fe-72ba-4dae-a4ba-c4a7e9e5f9ac",
+      "result_id": "030c512f-69e6-4d67-8e31-cce8214bac96"
+    },
+    {
+      "claim_id": "ff0a4eb7-4c57-493f-931e-4d8a9cf9a4f1",
+      "result_id": "22a4ac74-e4ea-4b4a-a2d7-0a5e7f829656"
+    },
+    {
+      "claim_id": "7d613ac7-f88e-4b5b-8e45-d169a79ec136",
+      "result_id": "22a4ac74-e4ea-4b4a-a2d7-0a5e7f829656"
+    },
+    {
+      "claim_id": "d8c0fffa-4cd0-40c0-a8b5-1a4ec95a50c4",
+      "result_id": "22a4ac74-e4ea-4b4a-a2d7-0a5e7f829656"
+    },
+    {
+      "claim_id": "4bfea552-d560-4edb-b06d-09b073438d52",
+      "result_id": "22a4ac74-e4ea-4b4a-a2d7-0a5e7f829656"
+    },
+    {
+      "claim_id": "e524b1e3-2b89-44fa-af0d-e77855f6918d",
+      "result_id": "fc24855c-32be-4649-a466-9881df04f240"
+    },
+    {
+      "claim_id": "1b666e66-6898-4481-be1f-5fa18c86d080",
+      "result_id": "fc24855c-32be-4649-a466-9881df04f240"
+    },
+    {
+      "claim_id": "5fa7b3e3-b897-4067-bc31-a6f3fae4391c",
+      "result_id": "fc24855c-32be-4649-a466-9881df04f240"
+    },
+    {
+      "claim_id": "62de9921-55b5-4c1d-9588-5d0da1d0e19f",
+      "result_id": "fc24855c-32be-4649-a466-9881df04f240"
+    },
+    {
+      "claim_id": "040ef910-9e06-42fc-876b-7e5910d18428",
+      "result_id": "fc24855c-32be-4649-a466-9881df04f240"
+    },
+    {
+      "claim_id": "f3c9dac9-14a5-4105-8edf-3dac79961d6a",
+      "result_id": "fc24855c-32be-4649-a466-9881df04f240"
+    },
+    {
+      "claim_id": "c5271f78-794c-4158-ab94-75dd8aa4d2e3",
+      "result_id": "d1327d92-afa9-4070-9251-ea234c18843a"
+    },
+    {
+      "claim_id": "66b3a9fd-017d-47be-a685-0527edf7bb0c",
+      "result_id": "d1327d92-afa9-4070-9251-ea234c18843a"
+    },
+    {
+      "claim_id": "c1581039-62d7-4959-ab6c-c10b799cca7f",
+      "result_id": "d1327d92-afa9-4070-9251-ea234c18843a"
+    },
+    {
+      "claim_id": "5fc87ece-f628-476d-8eef-fa19311685b8",
+      "result_id": "d1327d92-afa9-4070-9251-ea234c18843a"
+    },
+    {
+      "claim_id": "3aeac914-5ffb-4f42-898d-611202a818bf",
+      "result_id": "d1327d92-afa9-4070-9251-ea234c18843a"
+    },
+    {
+      "claim_id": "dfef8dca-0f3e-4757-af19-4321db9cf0a3",
+      "result_id": "d1327d92-afa9-4070-9251-ea234c18843a"
+    },
+    {
+      "claim_id": "fe3f62f8-126c-4c42-a353-427a0eec93f3",
+      "result_id": "d1327d92-afa9-4070-9251-ea234c18843a"
+    },
+    {
+      "claim_id": "2e0811cc-9682-4d8e-aa13-4fc654d53267",
+      "result_id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699"
+    },
+    {
+      "claim_id": "8ee54292-6d82-4a2a-87bd-10d06ed27572",
+      "result_id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699"
+    },
+    {
+      "claim_id": "230a4dfb-a6c1-43b3-aa9b-32aed8226071",
+      "result_id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699"
+    },
+    {
+      "claim_id": "1fcd9055-d750-4e18-9a27-ecc58c01772f",
+      "result_id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699"
+    },
+    {
+      "claim_id": "447db9dc-af90-415f-8022-ec9989b813f0",
+      "result_id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699"
+    },
+    {
+      "claim_id": "2adfc4e8-7dbc-4106-8078-2156076bca74",
+      "result_id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699"
+    },
+    {
+      "claim_id": "893ac158-0c87-4a74-b097-a18b3ec54481",
+      "result_id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699"
+    },
+    {
+      "claim_id": "300173e4-0355-4389-8530-cece2c863d96",
+      "result_id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699"
+    },
+    {
+      "claim_id": "347410e1-b8dc-4296-8209-6c575d19ca4a",
+      "result_id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699"
+    },
+    {
+      "claim_id": "bdb37114-db16-4a97-b152-ba9f5e80e900",
+      "result_id": "bdc69ce6-e5dc-4e9e-abba-aca3ee178699"
+    },
+    {
+      "claim_id": "68500713-ebd1-4fa9-803f-e38ed31f5dd6",
+      "result_id": "8c3ed127-46e6-4f43-ba88-b0ddcd48e460"
+    },
+    {
+      "claim_id": "457ca642-47ed-45d4-a6a4-163c3038aa25",
+      "result_id": "8c3ed127-46e6-4f43-ba88-b0ddcd48e460"
+    },
+    {
+      "claim_id": "3505a827-ee3a-4cbc-b6c3-c26ca3217dd5",
+      "result_id": "8c3ed127-46e6-4f43-ba88-b0ddcd48e460"
+    },
+    {
+      "claim_id": "7ae62397-34c5-43e7-b3e6-caaff3d6b2be",
+      "result_id": "8c3ed127-46e6-4f43-ba88-b0ddcd48e460"
+    },
+    {
+      "claim_id": "6a3dfc7d-3b0a-42e1-a2cc-bcfe7b841cf8",
+      "result_id": "8c3ed127-46e6-4f43-ba88-b0ddcd48e460"
+    },
+    {
+      "claim_id": "8d574b98-8d47-4dd9-a308-b64a2f30edc2",
+      "result_id": "8c3ed127-46e6-4f43-ba88-b0ddcd48e460"
+    },
+    {
+      "claim_id": "9d93c2b0-c6f2-4190-b509-e131bb224118",
+      "result_id": "8c3ed127-46e6-4f43-ba88-b0ddcd48e460"
+    },
+    {
+      "claim_id": "13c643d5-567e-4c38-95cc-c4b905fb2a47",
+      "result_id": "8c3ed127-46e6-4f43-ba88-b0ddcd48e460"
+    },
+    {
+      "claim_id": "2bef6fde-a403-4793-a013-f60868804d93",
+      "result_id": "8c3ed127-46e6-4f43-ba88-b0ddcd48e460"
+    },
+    {
+      "claim_id": "8a55687e-ff33-4184-97b8-c7897ac12488",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "b266f175-6f17-4603-9245-3aace4b479fd",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "1f386742-e240-436d-b83d-1675572c78ab",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "d236c90f-75f6-4dae-9334-de917faf3a9d",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "0245fa8c-09ac-4553-a474-5d7f14087c37",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "cf00acd6-b8ca-4a55-850d-6c9791fa4f30",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "b7cc1dcf-8f5f-43af-a391-7be73a375430",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "a9e5c4ec-8b4f-4926-8ad3-6568dde724d5",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "b316784c-902a-4708-aca7-1dc59cdeee5c",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "f12f092d-f074-4dda-81d8-70d64777c92b",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "bcb8cd9a-5f54-4452-84bb-3f42d3b468e8",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "4c3c6174-40c3-4105-b4c1-6f9d3192d553",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "6bc9df71-02f3-4408-88e9-1cd1eb26574a",
+      "result_id": "168bcb77-9aed-4359-b942-a3218d1d723a"
+    },
+    {
+      "claim_id": "11dccfc8-a876-4ca2-83b6-89e9af80cd2e",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "cda309aa-accb-4609-b25d-5340f700d31a",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "41c3d7d7-11e1-4353-95da-d70c35fd033f",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "dbbde153-b18d-4875-8fd5-5585721e50a8",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "9ece7aec-0734-4da7-a43a-8f4c03428bea",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "596ed03e-cb53-4741-9a03-e284a35a8f94",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "0e8f87ee-1e39-4443-a658-e15fa6fcf740",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "f89e1296-35a9-48a1-be9f-561d188459b2",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "37f4366a-4eb8-4c36-a03e-c4a7a70d41e0",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "54be4ada-89ab-4611-affa-9dd817aff072",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "67dea407-924d-4fce-96a4-2e28b58e4a4b",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "3540752d-123b-4000-a287-7339a56900c9",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "358beb09-18f8-4d47-88b6-b760320d7bc7",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    },
+    {
+      "claim_id": "15e1a67f-1382-40fa-841a-187c31752f54",
+      "result_id": "b2fedbba-98c5-4377-b69d-d03e0957d18a"
+    }
+  ],
+  "comparisons": []
+}

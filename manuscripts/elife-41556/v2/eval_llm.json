@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C22",
+      "C68"
+    ],
+    "result": "Maturation induces large-scale transcriptomic changes in Platynereis heads, with approximately 17% (8,598 transcripts) of all analyzed transcripts being differentially expressed across maturation stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16, C22, and C68 consistently report that maturation causes the largest transcriptomic changes, with 16.52-17% of transcripts differentially expressed. This is directly supported by RNA-Seq differential expression analysis data presented in the manuscript (Figure 3a).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C38",
+      "C69"
+    ],
+    "result": "Maturation induces large-scale proteomic changes in Platynereis heads, with approximately 66% (693 proteins) of quantifiable proteins being differentially expressed across maturation stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16, C38, and C69 consistently report that maturation causes extensive proteomic changes, with 65.13-66% of quantifiable proteins differentially expressed. This is directly supported by proteomic differential expression analysis data presented in the manuscript (Figure 5a).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C75"
+    ],
+    "result": "The circalunar clock exhibits only minor transcriptomic regulation in Platynereis heads, with only 0.12% (63 transcripts) of analyzed transcripts being differentially expressed between circalunar phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24, and C75 consistently report minimal circalunar transcriptomic regulation (0.12% of transcripts). This is directly supported by RNA-Seq differential expression analysis data. The authors acknowledge potential underestimation due to sampling only two circalunar time points, but the relative difference compared to proteome is considered representative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C17",
+      "C40"
+    ],
+    "result": "The circalunar clock exhibits strong proteomic regulation in Platynereis heads, with 24.53% (261 proteins) of quantifiable proteins being differentially expressed between circalunar phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C17, and C40 consistently report substantial circalunar proteomic regulation (24.53% of proteins). This is supported by proteomic differential expression analysis data (Figure 5a) and validated by an independent second proteomic analysis on immature samples (C51-C53), which confirmed high reproducibility (95.58% of proteins passing quality filters in both analyses).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C78"
+    ],
+    "result": "The circalunar clock has a much stronger impact on the proteome than the transcriptome, suggesting that circalunar reproductive timing mechanisms operate primarily at post-transcriptional, translational, or post-translational levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C78 are supported by the stark contrast between circalunar transcriptomic (0.12%) and proteomic (24.53%) regulation. The authors tested whether this difference could be explained by statistical artifacts due to different input list sizes and found it could not (enrichment factors were similar across maturation, sex, and circalunar comparisons when analyzing top expressed transcripts). The inference about post-transcriptional mechanisms is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C39"
+    ],
+    "result": "Sexual differentiation is characterized by 640 differentially expressed transcripts (1.23%) but only 17 differentially expressed proteins (1.60%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C39 report sex-biased differential expression at both transcriptome and proteome levels. The data are directly supported by differential expression analyses (Figures 3a and 5a). The authors note that the low number of sex-biased proteins may reflect the limitation that quantitative proteomics can only measure the most abundant proteins, while RNA sequencing can quantify most transcript types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C19",
+      "C54",
+      "C55",
+      "C64"
+    ],
+    "result": "Prepro-whitnin/proctolin is a circalunar clock target in Platynereis, expressed in four main regions of the head including the medial forebrain and areas near the anterior eyes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C19, C54, C55, and C64 are supported by differential expression data showing circalunar regulation and in situ hybridization showing specific expression patterns (Figure 7). The phylogenetic analysis confirms whitnin as the mollusc orthologue of insect proctolin (C54), and the connection to spawning in abalone (C55) provides comparative context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C18",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Ependymin-related proteins (ERPs) are circalunar clock targets in Platynereis, with 15 ependymin-like sequences identified in the transcriptome and 7 detected in the proteome, all showing differential abundance between circalunar phases. Two ERPs showed correlated transcript-protein changes and exhibited identical expression patterns in sensory appendages and brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C18, and C56-C63 are well-supported by multiple lines of evidence: phylogenetic analysis identifying 15 Platynereis ERPs (C60, Figure 6a), proteomic data showing all 7 detected ERPs are circalunar-regulated (C61), and in situ hybridization showing specific expression patterns (C63, Figure 6c-e). The background on ERPs (C56-C59) is appropriately cited from literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Maturation, sexual differentiation, and circalunar timing can be clearly distinguished on a molecular level and are likely driven by different biological mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 are supported by multiple lines of evidence: distinct GO-term enrichments for each process (little overlap among 239 enriched GO-terms), distinct soft clustering patterns (Figure 3b, 5b), and different proportions of regulated transcripts/proteins. The inference that these processes are driven by different mechanisms is reasonable given the distinct molecular signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C76"
+    ],
+    "result": "Circadian and circalunar clock effects are likely distinct, with circalunar transcriptome regulation being more than 20-fold less than circadian clock regulation in other animals' brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C76 are supported by comparison of circalunar effects (0.12% transcripts) with published circadian effects in other species (2.8-6.7% in brain/head). The inference that circadian and circalunar mechanisms are distinct is reasonable given the different scales of transcriptomic regulation, though the authors acknowledge this could partly reflect sampling limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "RNA-Seq results generally validated well by qRT-PCR on independent samples, though circalunar candidates appeared more variable and exhibited lower overall expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by qRT-PCR validation data (Figure 4, Figure 4\u2014figure supplement 1). The observation that circalunar candidates are more variable and have lower expression is documented, and the authors appropriately note susceptibility to strain-specific polymorphisms or phase differences, consistent with previous findings (Zantke et al., 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Only 40.12% of maturation differentially expressed transcripts showed similar regulation at the protein level, suggesting transcript-to-protein changes are temporally offset for the majority of transcripts during maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C45 are supported by comparison of transcriptome and proteome clustering data. The observation that only 40.12% of maturation DETs show similar protein-level regulation is directly stated, and the inference about temporal offset is reasonable. This finding is consistent with known post-transcriptional regulation and is within the range observed in other organisms (cited literature shows similar low correlations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The correlation between normalized log10-transformed transcriptome and proteome expression values showed a Pearson correlation coefficient of 0.482, which is consistent with previous transcriptome-proteome comparison studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are supported by the correlation analysis (Figure 5\u2014figure supplement 1) and comparison to literature values from other organisms (Drosophila, C. elegans). The relatively low correlation is appropriately contextualized as typical for transcriptome-proteome comparisons, supporting the validity of the methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C84",
+      "C85"
+    ],
+    "result": "A comprehensive head reference transcriptome was assembled and curated, with the final version (Pdu_HeadRef_TS_v5) containing 52,059 transcripts. Quality assessment showed 85.1% of predicted genes present full length and 93.6% present either full length or partially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, C84, and C85 describe the transcriptome assembly process and quality metrics. The assembly workflow is clearly documented (Figure 2), and quality metrics from CEGMA analysis are appropriate for assessing transcriptome completeness. The systematic curation process (removing contaminations, merging with published sequences) is well-described in methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C37"
+    ],
+    "result": "A total of 2,290 proteins with at least two unique peptides were identified, with 1,064 quantifiable proteins defined for robust comparison between all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C37 describe the proteomic dataset. The stringent filtering criteria (at least 2 unique peptides, detected in at least 2/3 biological replicates) are appropriate for quantitative proteomics. The number of quantifiable proteins (1,064) is comparable to similar studies in other invertebrate head/brain proteomes (e.g., 1,139 in Aedes aegypti).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A second independent proteomic analysis on immature samples yielded 1,671 quantifiable proteins, with 95.58% of proteins from the first analysis passing quality filters again, and 10.35% (173 proteins) differentially expressed between circalunar phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe validation of the proteomic approach through independent replication. The high reproducibility (95.58% overlap) supports the reliability of the methodology. The lower percentage of circalunar DEPs in the second analysis (10.35% vs 24.53%) is expected given that only immature animals were analyzed in the second round, while the first included multiple maturation stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Among differentially expressed transcripts, there is limited overlap between the three biological processes: 23.28% of sex-biased transcripts are also regulated by maturation, 0.94% by circalunar phase; 53.97% of circalunar transcripts are also regulated by maturation; and 4 transcripts are regulated by all three parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 describe overlap between different comparison groups, directly supported by Venn diagram analysis (Figure 3a) and stated in the results. These data support the conclusion that the three processes have largely distinct molecular signatures, though some coordination exists (particularly between maturation and circalunar phase).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Among differentially expressed proteins, there is substantial overlap with maturation: 12 of 17 sex-biased proteins and 177 of 261 (67.82%) circalunar proteins are also regulated during maturation. Six proteins are affected by all three processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe overlap between proteomic comparison groups, directly supported by Venn diagram analysis (Figure 5a). The higher overlap between circalunar and maturation at the protein level (67.82%) compared to transcript level (53.97%) is notable and consistent with the overall finding of stronger circalunar effects on the proteome.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "GO-term enrichment analysis of differentially expressed proteins identified 121 enriched terms out of 2,448 total GO terms, with 75 in maturation DEPs, 17 in sex-biased DEPs, and 46 in circalunar DEPs. There was little overlap between GO-term enrichments across the three processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 describe GO-term enrichment results for the proteome, supported by the data presented in Figure 5c and supplementary figures. The statistical approach (hypergeometric test with conditional algorithm) is appropriate. The finding of little overlap between processes at the GO-term level reinforces the conclusion of distinct molecular mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Circalunar-regulated genes show diverse expression patterns in the head: myohaemerythrin is present in the medial brain and around posterior eyes, while ferritin shows broad expression. This diversity suggests the circalunar clock effect is not confined to specific head or brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by in situ hybridization data (Figure 7). The observation of diverse expression patterns among circalunar candidates is documented, and the inference that circalunar effects are not regionally confined is reasonable given the data, though it is based on a limited sample of genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The maturation process is the biggest driving force for molecular changes as worms approach spawning, and the head is a major source of factors orchestrating this transition, as supported by the observed large-scale transcriptomic and proteomic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 synthesize the maturation findings with prior knowledge. The inference that maturation is the biggest driving force is supported by the data (largest proportion of DETs and DEPs). The role of the head in orchestrating maturation is supported by both the current molecular data and extensive prior literature (C71 cites multiple studies), including recent identification of a brain hormone regulating maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Maturation of Platynereis is accompanied by a significant increase in overall eye volume and a significant increase in transcript abundance of the r-opsin1 gene, a major opsin expressed in adult eye photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C74 connect morphological changes (eye volume increase, cited from Fischer and Br\u00f6kelmann, 1966) with molecular changes (r-opsin1 transcript increase) observed in the current study. The increase in r-opsin1 is consistent with expansion of photoreceptor outer segments that harbor photopigments, providing a mechanistic link between morphology and gene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "The proteomic changes observed between two circalunar time points in Platynereis (24.53% of proteins) are comparable to circadian changes in the nervous system of other animals (13-20% in mouse suprachiasmatic nucleus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 compares circalunar proteomic effects to published circadian proteomic studies. The comparison is appropriate and supports the validity of the circalunar proteomic findings. However, the comparison is limited by differences in tissue specificity (whole head vs. suprachiasmatic nucleus) and the fact that only two circalunar time points were sampled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background context establishes that marine animals synchronize reproduction to lunar cycles, Platynereis has an endogenous circalunar clock entrained by moonlight, and the brain plays a crucial role in integrating information on maturation, sexual differentiation, and circalunar phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C9-C15 provide background context from prior literature. These are appropriately cited and form the rationale for the current study. The claims about the Platynereis brain's role in timing (C11-C13) and integration of multiple processes (C14) are well-supported by extensive prior research and provide justification for focusing on head tissue in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C86"
+    ],
+    "result": "Experimental design and methodology: Animals were housed in 1:1 NSW/ASW, exposed to 16:8 hr light:dark circadian regime with nocturnal illumination for 8 nights every 21 days simulating full moon. Pools of 6 heads per biological replicate were sampled at Zeitgeber time 4. RNA-Seq used 700-1,500 ng total RNA input, and differential expression analysis used 10% FDR threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 and C86 describe key methodological details that are clearly stated in the Materials and methods section. The experimental design is appropriate for studying circalunar effects, with proper controls (NM vs FRFM conditions) and adequate replication. The statistical threshold (10% FDR) is reasonable for exploratory transcriptomic/proteomic studies, though more stringent thresholds are sometimes used.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "All seven strepsirrhine species studied retain a large pseudoautosomal region (PAR) that includes regions corresponding to human PAR1 and strata 4 and 5, indicating no recombination suppression has occurred in strepsirrhines for >65 million years. This was determined using male:female (M:F) sequencing depth ratios across the X chromosome, which showed ratios of ~1 for the PAR and ~0.5 for X-specific regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C42 collectively provide strong evidence through sequencing data (C31-C32), M:F depth ratio analysis (C33-C35, C39), and synteny analysis (C40-C41) that strepsirrhines have maintained a large PAR without recombination suppression. The findings are consistent across all seven species and corroborated by prior cytogenetic data (C34). Some assembly artifacts were identified and appropriately addressed (C36-C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "SNP density analysis was used to detect potential recent evolutionary strata that might be missed by depth ratio analysis. No recent strata were detected in any of the seven strepsirrhine species studied, as M:F SNP density ratios did not show the expected pattern (>1) for recent recombination suppression events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe a complementary analytical approach using SNP density ratios to detect recent strata. The methodology is sound and based on established predictions (C43-C45, Wright et al. 2017). The negative result (C46) strengthens the main finding by ruling out recent recombination suppression events that might have been missed by depth analysis alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C65",
+      "C66"
+    ],
+    "result": "Statistical comparison of strata formation rates between haplorrhines and strepsirrhines shows that haplorrhines formed 3 new strata over 188.52 My (44.23 million generations) while strepsirrhines formed 0 new strata over 321.32 My (158.52 million generations). The difference is marginally significant when comparing rates per million years (p=0.051) but becomes significant when rescaled to rates per million generations (p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C51 and C65-C66 present statistical comparisons, but the marginal significance on a time scale (p=0.051, C50) and the need to rescale to generations to achieve significance (p=0.01, C51) raises concerns. The choice to use generation time rather than absolute time appears post-hoc, and the binomial test may not fully account for phylogenetic non-independence. The small sample size (3 vs 0 events) limits statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Phenotypic analysis shows that strepsirrhines and haplorrhines differ in sexual dimorphism (body mass and canine height) but not in sperm competition (testes size). However, the differences in sexual dimorphism are only significant when phylogenetic relationships are ignored; when phylogenetic inertia is accounted for using Brownian motion models, the differences are no longer statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C52-C53 and C67-C71 present phenotypic comparisons, but the statistical support is weak. The significance disappears when phylogeny is properly accounted for (C68: p=0.66; C70: p=0.39), which is the appropriate analysis given the phylogenetic structure. The authors acknowledge low Pagel's \u03bb values suggesting little phylogenetic signal, but this undermines rather than supports their interpretation. The claim of significant differences (C52) is not robustly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The authors conclude that the PAB has remained unchanged in strepsirrhines while multiple recombination suppression events shortened the PAR in haplorrhines, and interpret this difference as a consequence of differences in sexual dimorphism and sexual conflict between the two groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 accurately summarizes the genomic findings which are well-supported. However, C55's causal interpretation linking PAB evolution to sexual dimorphism is speculative. The phylogenetically-corrected analyses (C68, C70) do not support significant differences in sexual dimorphism, and alternative explanations are not adequately ruled out. The interpretation goes beyond what the data can definitively support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors review evidence from other organisms regarding the relationship between sexual dimorphism and recombination suppression. Evidence from guppies and brown algae supports the sexual antagonism hypothesis, but examples from ruminants and Microbotryum violaceum suggest alternative mechanisms, leading to the conclusion that sexually antagonistic mutations may not universally explain strata formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 appropriately review comparative evidence from other systems with proper citations. The authors correctly note both supporting evidence (C56-C57) and counterexamples (C58-C59), leading to a balanced conclusion (C60) that sexual antagonism is not a universal explanation. This contextualizes their findings appropriately within the broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Despite Eulemur species (including the red-bellied lemur studied here) exhibiting the most pronounced sexual dimorphism among strepsirrhines, particularly sexual dichromatism in pelage coloration, no additional recombination suppression was detected. The authors speculate that sexual dichromatism antagonism may have been resolved through sex-biased expression rather than Y-linkage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 present an important within-group comparison showing that even the most sexually dimorphic strepsirrhine (C61-C62) lacks additional recombination suppression (C63). This strengthens the overall finding. The speculation about sex-biased expression (C64) is appropriately framed as a hypothesis for future work and is supported by relevant citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The introduction establishes background knowledge about human sex chromosome evolution, including their heteromorphic nature, the origin from autosomes ~150 Mya, the formation of evolutionary strata through recombination suppression events, and the timing of strata formation in different primate lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 present well-established background information about sex chromosome evolution, all supported by appropriate citations to primary literature. These claims provide necessary context for the study and accurately represent current knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The sexually antagonistic mutation hypothesis proposes that male-beneficial/female-detrimental mutations in the PAR favor recombination suppression to link these mutations to the Y chromosome. While some evidence supports this hypothesis in guppies, evidence from diverse groups including primates has been lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 accurately present the theoretical framework and state of evidence for the sexually antagonistic mutation hypothesis. The citations are appropriate, and the identification of a knowledge gap in primates (C18) provides clear motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Strepsirrhines exhibit widespread female social dominance, masculinization of females, and virtually absent sexual size dimorphism, contrasting sharply with haplorrhines which show pronounced male-biased sexual dimorphism. Prior to this study, little was known about strepsirrhine sex chromosomes except that strata 4 and 5 are missing in grey mouse lemurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 establish the phenotypic differences between strepsirrhines and haplorrhines that motivate the study's hypothesis. All claims are supported by appropriate citations, and the identification of limited prior knowledge about strepsirrhine sex chromosomes (C25) justifies the research approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The methodological approach relies on the principle that M:F sequencing depth ratios should be 1 for autosomes and PARs (equal copy number in both sexes), 0.5 for X-specific regions (males have one copy, females two), with the boundary between these ratios indicating the pseudoautosomal boundary (PAB).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 describe the fundamental methodological principle underlying the study. This approach is well-established in the literature and is based on sound genetic principles regarding sex chromosome dosage differences between males and females. The logic is clearly explained and appropriate for identifying the PAB.",
+    "result_type": "MINOR"
+  }
+]

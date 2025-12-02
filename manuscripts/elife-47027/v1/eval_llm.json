@@ -1,0 +1,177 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Two competing models of sound localization make opposing predictions about intensity dependence: the labelled-line model predicts intensity-invariant perceived direction, while the hemispheric-difference model predicts medial bias at low sound levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the theoretical framework by describing established models and their predictions. These are well-supported by prior literature and represent accurate characterizations of the two competing theoretical frameworks in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Computational modeling based on reconstructed neural data from avian labelled-line neurons and mammalian inferior colliculus neurons predicts that the labelled-line model shows intensity-invariant lateralization with increased variability at low intensities, while the hemispheric-difference model predicts medial bias at low intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C33 describe model predictions based on reconstructed neural data from two prior studies (Pe\u00f1a et al., 1996; Zwiers et al., 2004). However, the reconstruction methodology involves multiple assumptions and approximations (adding noise to match correlation coefficients, sigmoid transformations of linear regressions) that introduce uncertainty. The cross-species comparison (barn owl vs. rhesus macaque) and the validity of applying these specific neural recordings to predict human behavior requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Behavioral experiment 1 with spectrally flat noise (300-1200 Hz) in 10 normal-hearing listeners shows that perceived laterality increases with ITD and becomes increasingly biased toward midline with decreasing sound intensity, with the NLME model explaining 80.6% of variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C87-C89 describe a well-designed psychophysical experiment with appropriate participant selection, training criteria, and statistical modeling. The NLME model accounts for both fixed effects (ITD, sound intensity) and random effects (individual listeners), and the 80.6% variance explained indicates good model fit. The finding of medial bias at low intensities is clearly demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C55"
+    ],
+    "result": "Behavioral experiment 2 with inverse A-weighted noise confirms the medial bias effect, with the NLME model explaining 80.4% of variance, controlling for potential confounds related to audibility across frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C55 describe a control experiment that addresses a potential confound (unequal audibility across frequencies). The similar results with A-weighted noise strengthen the conclusion that the medial bias is not an artifact of partial inaudibility of the stimulus. The comparable model fit (80.4% vs 80.6%) supports the robustness of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C56",
+      "C82",
+      "C84"
+    ],
+    "result": "The behavioral finding that softer sounds are perceived closer to midline than louder sounds is inconsistent with the labelled-line model and supports rate-coding models, specifically confirming the prediction of subtractive rate-based neuronal readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C56, C82, and C84 represent the main conclusion linking experimental results to model predictions. The behavioral data clearly show medial bias at low intensities, which is consistent with the hemispheric-difference model prediction (C32) but inconsistent with the labelled-line model prediction (C31, C42). However, the strength of this conclusion depends on the validity of the computational modeling (which has uncertainties) and assumes that these are the only two viable models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Visual depth perception based on binocular disparity involves three types of neurons in V1 and V3a cortex (tuned-excitatory, near cells, far cells), with V3a activity predicting behavioral performance on stereoscopic depth tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C57-C64 accurately summarize established knowledge in visual neuroscience, supported by appropriate citations. These claims provide the foundation for the cross-modal comparison between auditory and visual spatial processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Both auditory ITD-sensitive and visual disparity-sensitive neurons have intensity-response functions, and rate-coding predicts ambiguities at low stimulus intensities; visual depth perception shows contrast-dependent effects analogous to the auditory intensity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C72 draw parallels between auditory and visual systems. While the analogy is conceptually interesting, the evidence is mixed: C69 notes effects only in some observers, C70 describes contrast as a distance cue (opposite to the proposed effect), and C71 shows depth shrinkage at low contrast. The relationship between these visual findings and the auditory results is not as clear-cut as presented, and the analogy requires more direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C65",
+      "C66",
+      "C85",
+      "C86"
+    ],
+    "result": "The similar intensity/contrast dependence in auditory localization and visual depth perception suggests the brain uses a canonical computation across sensory modalities: encoding perceived location through population spike rate relative to baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C65, C66, C85, and C86 propose a broad theoretical framework about canonical neural computation across modalities. This is explicitly speculative (C9, C65, C66 are marked as speculation/inference). While the auditory data support rate-coding for sound localization, the visual analogy is less clear (see previous result), and the generalization to a 'canonical computation' across all sensory modalities requires substantially more evidence from multiple sensory systems and species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C41"
+    ],
+    "result": "Prior to this study, it was unknown which model (labelled-line vs. rate-code) better describes human sound localization, and the literature provided insufficient evidence on how ITD-based lateralization varies with sound level near sensation threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, and C41 accurately characterize the state of knowledge in the field and identify the gap that this study addresses. The authors appropriately acknowledge the limitations and contradictions in prior literature (C35, C36).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Most rate-code models rely on subtractive comparisons between hemispheric populations; the mammalian auditory pathway may convert between place- and rate-codes, with rate-coding maintained downstream of the inferior colliculus, and cortical maps likely not playing a role in ITD-based localization at low sound levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 provide important context about the diversity of rate-coding models and the complexity of neural coding in the auditory pathway. These are appropriately supported by citations and acknowledge nuances (e.g., C74 notes divisive models would not predict the observed bias). Claim C78 appropriately qualifies the inference about cortical maps as specific to ITD-based localization at low sound levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The observed localization bias is small in magnitude, demonstrating that the brain can robustly localize based on ITD across a large range of sound intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 appropriately contextualizes the findings by noting that while the bias is statistically significant and theoretically important, it is small in absolute magnitude. This is an important qualification that prevents overinterpretation of the practical significance of the effect.",
+    "result_type": "MINOR"
+  }
+]

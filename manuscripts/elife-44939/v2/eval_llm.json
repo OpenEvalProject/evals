@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study employed two independent fMRI tasks (intertemporal choice with N=20 and risky choice with N=21) where participants made decisions for themselves and others. In the intertemporal task, participants were paired with individuals having dissimilar preferences, while in the risky task, the 'other' was fictional and based on participants' own preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with appropriate sample sizes, exclusion criteria, learning tasks with accuracy thresholds (80%), and careful manipulation of self-other similarity across paradigms. Trial design ensured uncorrelated subjective values between self and other (C11: p>0.1 for both). The methodological rigor is appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Behavioral modeling revealed that participants distinguished between self and dissimilar others in the intertemporal task (two k parameters fit best), but not between self and similar others in the risky task (one \u03b1 parameter fit best). Models with shared \u03b2 parameters across self/other fit best in both tasks, indicating similar choice stochasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model comparison using BIC is appropriate and results are statistically significant (C16, C17: z=2.80, p=0.005). The finding that participants adjusted discounting for dissimilar but not similar others is internally consistent with the experimental manipulation. However, the interpretation relies on the assumption that the fictional 'other' in the risky task was perceived as similar, which was not independently verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Participants made choices based on modeled subjective value rather than individual task parameters (monetary value, delay, or probability) in both tasks. Response times were slower for low relative subjective value trials but did not differ between self and other trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Statistical comparisons strongly support that subjective value guided choices (all p<0.001). The response time findings validate the subjective value construct and suggest similar cognitive effort for self/other decisions. However, the 5-second mandatory delay may have attenuated response time effects, as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In the intertemporal choice task with dissimilar others, Other>Self contrast activated vmPFC, dmPFC, and TPJ (all overlapping with Neurosynth 'social' term). No such activation was observed in the risky choice task with similar others, suggesting dissimilarity drives social brain activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The univariate contrast results are appropriately thresholded (FWE p<0.05) and the Neurosynth overlap provides convergent validity. The absence of effects in the risky task supports the interpretation that preference dissimilarity drives social cognition recruitment. However, this is a reverse inference from Neurosynth and the risky task had a fictional other, confounding similarity with reality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Relative subjective value (chosen minus unchosen) was positively correlated with vmPFC and TPJ activity, and negatively correlated with dmPFC activity, across both self and other trials in both paradigms. These patterns overlapped spatially between tasks and held when controlling for response time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The univariate GLM results are well-controlled (FWE p<0.05, response time as nuisance regressor) and show remarkable consistency across tasks and agents. The only self-other difference was in dmPFC for the risky task (C38: z=2.24, p=0.025). The spatial overlap between paradigms strengthens the claim of task-invariant value coding. Statistical rigor is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Offline relative subjective value (value for the agent not currently being decided for) showed no significant effects in vmPFC or dmPFC ROIs. However, when analyses were structured to match a previous study (Nicolle et al., 2012), offline value was detected in dmPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The null results for offline value (C42: all p>0.35) contrast with the replication attempt (C44: significant clusters). This discrepancy is attributed to different GLM structures (single regressor vs. separate chosen/unchosen regressors), but this raises questions about the robustness of offline value coding. The authors acknowledge this as a control analysis but the interpretation remains ambiguous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Neither vmPFC nor dmPFC showed significant relationships with the absolute subjective value of the chosen option. Effects for absolute value were significantly lower than for relative subjective value, indicating that medial prefrontal cortex encodes value comparisons rather than chosen option value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The direct statistical comparison between relative and absolute value representations is appropriate (Friedman test, all p\u22640.005). This finding is important for distinguishing value comparison from value representation per se. However, the analysis is limited to ROIs and whole-brain results for absolute value are not reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C77"
+    ],
+    "result": "MVPA revealed that dmPFC activity, but not vmPFC or intermediate mPFC, could decode high vs. low relative subjective value across both self and other trials in both paradigms (all p<0.01). Offline value decoding in dmPFC did not reach significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multivariate analysis uses appropriate methods (glmnet with cross-validation, empirical null distribution via permutation). The selective decoding in dmPFC across all conditions is striking and well-controlled. The failure to decode offline value (C50: p=0.107, p=0.057) is consistent with univariate results but leaves this question unresolved. The exception of imPFC in risky self trials (C49: p=0.031) is noted but not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Neither vmPFC nor dmPFC activity detectably encoded the absolute subjective value of the chosen option (all p>0.2). dmPFC classifiers decoded relative subjective value more accurately than chosen value (mostly p<0.05), confirming that dmPFC represents value comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multivariate results parallel the univariate findings (C45-C47) and strengthen the interpretation through convergent methods. The direct comparison between relative and chosen value decoding is appropriate. One exception (Other trials intertemporal p=0.064) is noted as a trend, which is appropriately conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "An anatomically defined dmPFC ROI (based on Neubert et al., 2015) also detectably encoded relative subjective value across all conditions (all p<0.005), demonstrating robustness across ROI definition methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The replication with an independent ROI definition strengthens confidence in the dmPFC findings and addresses potential concerns about circular analysis. The anatomical ROI is based on established connectivity atlases, providing an appropriate alternative to functionally defined ROIs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C78"
+    ],
+    "result": "dmPFC activity patterns for relative subjective value generalized across self and other within each paradigm (all p<0.05), and across paradigms (intertemporal to risky and vice versa, mostly p<0.05), demonstrating a task-invariant and agent-invariant neural code.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-decoding analyses provide strong evidence for shared representations. The within-paradigm agent cross-decoding (C58) and cross-paradigm decoding (C59, C60) both succeed, with only one marginal result (train Self intertemporal test Self risk p=0.055). This is the key finding supporting the common-currency hypothesis and is methodologically sound with appropriate statistical controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C79"
+    ],
+    "result": "A principal component capturing antisocial attitudes (loading positively on psychopathy, negatively on altruism/empathy) correlated positively with agent cross-decoding accuracy in dmPFC (r=0.40, p=0.025) but not vmPFC. This relationship held across individual training/testing splits and both paradigms, suggesting that less differentiated self-other value coding relates to antisocial attitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The correlation is statistically significant and replicated across multiple analyses (C69: train Self test Other r=0.453, p=0.011). However, the interpretation is counterintuitive\u2014greater similarity in self-other coding relates to antisocial rather than prosocial attitudes. The authors acknowledge this and offer a speculative explanation involving mentalizing, but this requires further validation. The sample size for individual paradigms is small (N=20-21), yielding only trends (C71: p=0.070, p=0.056).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C96"
+    ],
+    "result": "The dmPFC emerges as a medial prefrontal node utilizing a task-invariant mechanism for computing relative subjective value for self and other, representing the first evidence for an overlapping neural code across fundamentally different behavioral paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the convergent univariate (C33-C36) and multivariate (C48, C58-C60) findings. The claim of 'first evidence' (C96) is appropriately contextualized against prior literature (C85-C95). However, the study cannot definitively distinguish between value comparison and expected value of control accounts, as the authors acknowledge in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "fMRI data were acquired on a 3T Siemens Prisma scanner, preprocessed using FSL with appropriate parameters (different smoothing for univariate vs. multivariate analyses), and analyzed using standard GLM and MVPA methods with proper statistical thresholding and permutation testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods are clearly described and follow established best practices. Different smoothing kernels for univariate (5mm) vs. multivariate (2mm) analyses are appropriate. The use of empirical null distributions via permutation for MVPA addresses concerns about small sample sizes. Cross-validation procedures prevent training/testing on the same run. Overall, the technical implementation is sound.",
+    "result_type": "MINOR"
+  }
+]

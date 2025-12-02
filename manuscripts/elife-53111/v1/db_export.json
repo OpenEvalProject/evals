@@ -1,0 +1,1615 @@
+{
+  "submission": {
+    "id": "bb3a4116-3f21-4c9d-8a8e-343aac5a0cbc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:05:27.634609Z",
+    "updated_at": "2025-12-02T15:05:27.634609Z"
+  },
+  "content": [
+    {
+      "id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "submission_id": "bb3a4116-3f21-4c9d-8a8e-343aac5a0cbc",
+      "content_type": "manuscript",
+      "content_text": "# A gut bacterial amyloid promotes \u03b1-synuclein aggregation and motor impairment in mice\n\n## Authors\n\n- Timothy R Sampson<sup>1</sup> ([ORCID: 0000-0002-2486-8766](https://orcid.org/0000-0002-2486-8766)) \u2020\n- Collin Challis<sup>1</sup>\n- Neha Jain<sup>2</sup>\n- Anastasiya Moiseyenko<sup>1</sup>\n- Mark S Ladinsky<sup>1</sup>\n- Gauri G Shastri<sup>1</sup>\n- Taren Thron<sup>1</sup>\n- Brittany D Needham<sup>1</sup>\n- Istvan Horvath<sup>3</sup>\n- Justine W Debelius<sup>4</sup>\n- Stefan Janssen<sup>4</sup> ([ORCID: 0000-0003-0955-0589](https://orcid.org/0000-0003-0955-0589))\n- Rob Knight<sup>4</sup>\n- Pernilla Wittung-Stafshede<sup>3</sup> ([ORCID: 0000-0003-1058-1964](https://orcid.org/0000-0003-1058-1964))\n- Viviana Gradinaru<sup>1</sup> ([ORCID: 0000-0001-5868-348X](https://orcid.org/0000-0001-5868-348X))\n- Matthew Chapman<sup>2</sup>\n- Sarkis K Mazmanian<sup>1</sup> ([ORCID: 0000-0003-2713-1513](https://orcid.org/0000-0003-2713-1513)) \u2020\n\n### Affiliations\n\n1. Division of Biology & Biological Engineering California Institute of Technology Pasadena United States\n2. Department of Molecular, Cellular, and Developmental Biology University of Michigan Ann Arbor United States\n3. Department of Biology and Biological Engineering Chalmers University of Technology Gothenburg Sweden\n4. Department of Pediatrics University of California, San Diego San Diego United States\n5. Department of Computer Science and Engineering University of California, San Diego San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAmyloids are a class of protein with unique self-aggregation properties, and their aberrant accumulation can lead to cellular dysfunctions associated with neurodegenerative diseases. While genetic and environmental factors can influence amyloid formation, molecular triggers and/or facilitators are not well defined. Growing evidence suggests that non-identical amyloid proteins may accelerate reciprocal amyloid aggregation in a prion-like fashion. While humans encode ~30 amyloidogenic proteins, the gut microbiome also produces functional amyloids. For example, curli are cell surface amyloid proteins abundantly expressed by certain gut bacteria. In mice overexpressing the human amyloid \u03b1-synuclein (\u03b1Syn), we reveal that colonization with curli-producing Escherichia coli promotes \u03b1Syn pathology in the gut and the brain. Curli expression is required for E. coli to exacerbate \u03b1Syn-induced behavioral deficits, including intestinal and motor impairments. Purified curli subunits accelerate \u03b1Syn aggregation in biochemical assays, while oral treatment of mice with a gut-restricted amyloid inhibitor prevents curli-mediated acceleration of pathology and behavioral abnormalities. We propose that exposure to microbial amyloids in the gastrointestinal tract can accelerate \u03b1Syn aggregation and disease in the gut and the brain.\n\n## Introduction\n\nThe accumulation and aggregation of amyloid proteins occurs during many neurodegenerative diseases. Synucleinopathies are one family of amyloid disease, which includes Parkinson\u2019s disease (PD), Lewy Body disease (LBD), and Multiple System Atrophy (MSA). Central to their pathogenesis is the accumulation of the neuronal protein \u03b1-Synuclein (\u03b1Syn) into insoluble amyloid aggregations, which ultimately leads to inflammation and neuronal dysfunction (Jucker and Walker, 2013; Brettschneider et al., 2015). \u03b1Syn aggregation can contribute to the death of dopaminergic neurons in specific brain regions, resulting in motor symptoms (Poewe et al., 2017). Clinical and epidemiological data suggest that accumulation of \u03b1Syn aggregates may first occur at peripheral sites, such as the olfactory epithelium or gastrointestinal (GI) tract, before spreading to the brain (Braak et al., 2003). Individuals diagnosed with various synucleinopathies often display constipation and other GI dysfunctions years prior to the onset of movement dysfunction (Verbaan et al., 2007; Colosimo, 2011; Engen et al., 2017; Mertsalmi et al., 2017; Sakakibara et al., 2019). Experimental evidence exists for a prion-like spread of \u03b1Syn aggregates (Woerman et al., 2015), including propagation from the gut to the brain via the vagus nerve and/or spinal cord in rodent models (Holmqvist et al., 2014; Uemura et al., 2018; Van Den Berge et al., 2019). In humans, recent epidemiological studies suggest an association between truncal vagotomy and appendectomy with a decreased risk of PD (Svensson et al., 2015; Liu et al., 2017; Killinger et al., 2018), and in increased risk of comorbidity with inflammatory bowel disease (IBD) (Hui et al., 2018; Peter et al., 2018). While a role for protein aggregation and/or inflammation in the gut represents an emerging area of research in synucleinopathies, the GI tract has been implicated in other neurological disorders such as autism spectrum disorder, depression, anxiety and Alzheimer\u2019s disease (Vuong et al., 2017).\n\nThe gut is colonized with a complex microbiome that impacts development and function of the immune, metabolic and nervous systems (Fung et al., 2017). Enterobacteriaceae, highly prevalent within the gut of humans, can produce functional amyloid proteins termed curli (Tursi and T\u00fckel, 2018). Curli fibers are formed by bacterial secretion of an unfolded amyloid, CsgA, that subsequently aggregates extracellularly to form biofilms, mediate adhesion to epithelial cells, and are involved in bacteriophage defense (Tursi and T\u00fckel, 2018; Vidakovic et al., 2018). Exposure to curli not only modulates host inflammatory responses within the intestinal tract and periphery (Gallo et al., 2015; Chen et al., 2016; Tursi and T\u00fckel, 2018), but oral administration of curli-producing bacteria can also increase production and aggregation of the amyloid protein \u03b1Syn in aged rats and nematodes (Chen et al., 2016). Biochemical studies demonstrate that native, bacterial chaperones of curli are capable of transiently interacting with \u03b1Syn and modulating its aggregation (Chorell et al., 2015; Evans et al., 2015). Interestingly, diverse human amyloid proteins including \u03b1Syn, amyloid beta (A\u03b2), cellular prion protein (PrPC), and Tau can accelerate the amyloidogenesis of heterologous mammalian amyloid proteins (Clinton et al., 2010; Brettschneider et al., 2015; Katorcha et al., 2017). Lesions containing mixed human amyloids have been observed in neurodegenerative brains (Rahimi and Kovacs, 2014; Spires-Jones et al., 2017), implicating interactions between different amyloidogenic proteins in resulting pathology. Accordingly, we wondered whether a bacterial amyloid protein can contribute to heterologous aggregation of mammalian \u03b1Syn in the gut and the brain, leading to synucleinopathy-related behaviors.\n\nHerein, we reveal that mono-colonization of \u03b1Syn-overexpressing mice with curli-producing Escherichia coli exacerbates motor impairment and GI dysfunction, and promotes \u03b1Syn aggregation and inflammation in the gut and brain. Enrichment of curli-producing E. coli to mice harboring a healthy human microbiome is sufficient to aggravate \u03b1Syn-dependent pathophysiology. The purified amyloidogenic subunit of curli fibers (CsgA) is sufficient to accelerate \u03b1Syn aggregation during in vitro biochemical assays and pathophysiology in mice following intra-intestinal administration, while variants of CsgA that are unable to form amyloids have no effect on \u03b1Syn aggregation. Oral treatment of mice with a gut-restricted amyloid inhibitor reduces csgA expression in the gut, limits \u03b1Syn aggregation in the brain, and alleviates GI and motor deficits in mice that overexpress \u03b1Syn. These data provide novel insights into a trans-kingdom interaction between the gut microbiome and mammalian amyloids, and suggest the possibility that carriage of particular bacterial taxa may be a factor that can exacerbate neurologic disease.\n\n## Results and discussion\n\n### Mono-colonization with curli-producing gut bacteria enhances \u03b1Syn pathophysiology\n\nWe previously identified that depletion of the microbiome reduces pathophysiology in Thy1-\u03b1Syn mice (alpha-synuclein overexpressing; ASO mice) (Sampson et al., 2016), which overexpress wild-type human \u03b1Syn. Due to accumulation and aggregation of neuronal \u03b1Syn, mice display increased neuroinflammation, GI dysfunction, and progressive motor abnormalities (Rockenstein et al., 2002; Chesselet et al., 2012; Wang et al., 2012) that are relevant in the study of synucleinopathies. Prior findings in germ-free Thy1-\u03b1Syn mice suggest that an unidentified member(s) of the gut microbiome may be pathogenic in this mouse model (Sampson et al., 2016). Interestingly, increased colonization and mucosal association with Enterobacteriaceae, such as E. coli, have been reported in individuals with PD compared to healthy controls (Forsyth et al., 2011), as well as a positive association of Enterobacteriaceae abundance with disease severity (Scheperjans et al., 2015; Li et al., 2017).\n\nTo establish whether E. coli promotes \u03b1Syn-dependent motor dysfunction, we mono-associated germ-free (GF) wild-type and ASO mice with the curli-producing E. coli strain MC4100, or Bacteroides fragilis strain NCTC9343 and segmented filamentous bacteria (SFB), which do not produce curli. E. coli exacerbated the \u03b1Syn-dependent motor defects in ASO animals across a battery of tests, compared to the other taxa (Figure 1A\u2013F and Figure 1\u2014figure supplement 1A\u2013E). To determine the contribution of curli amyloids, we compared mice mono-colonized with wild-type E. coli (WT) to those mono-colonized with an isogenic mutant lacking genes encoding the curli biosynthesis machinery (\u0394csgBAC) (Wang and Chapman, 2008). Evaluation of coordinated motor function revealed that colonization with the curli-deficient strain did not elicit robust motor impairment (Figure 1A\u2013F). We did not observe curli-dependent alterations to colonization levels or mucosal association, despite detecting csgA expression (Figure 1\u2014figure supplement 1F\u2013I). In addition, the curli-deficient mutant did not display alterations to lipopolysaccharide potency or structure (Figure 1\u2014figure supplement 1J,K). Thus, curli-producing bacteria are capable of enhancing motor deficits in ASO mice.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig1-v1.jpg)\n\n**Figure 1.:** Motor function was assessed at 12\u201313 weeks of age by quantifying (A), beam traversal time, (B), pole descent time, (C), nasal adhesive removal time, (D), hindlimb clasping score, (E), wirehang time. (F), Principal component analysis of compiled motor scores from tests in (A\u2013E). Quantification of (G, H) pS129\u03b1Syn and (I) proteinase K\u2013resistant \u03b1Syn by immunofluorescence microscopy in the substantia nigra and midbrain. n\u00a0=\u00a013\u201316 (A\u2013F), n\u00a0=\u00a04.5 (G\u2013I). Points represent individuals, bars represent the mean and standard error. Data analyzed by one-way ANOVA with Tukey post-hoc test (A\u2013E), and two-tailed t-test for (G\u2013I). *p\u22640.05; **p\u22640.01; ***p\u22640.001; ****p\u22640.0001. Motor data are compiled from three independent cohorts.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Motor function assessed by (A) beam crossing time, (B) pole descent time, (C) adhesive removal time, or D) hindlimb reflex score.( E,) PCA analysis of scores in (A\u2013D). (F\u2013N) GF WT and ASO mice were mono-colonized with curli-sufficient E. coli (WT) or curli-deficient E. coli (\u0394csgBAC). (F) Fecal bacterial burden determined by plate culture. (G) Bacterial burden of tissue/mucus fractions and luminal fractions of proximal colon. (H) csgA expression within fecal contents determined by qRT-PCR. (I) Representative TEM of bacterial localization in the proximal colon. 1- Bacteria, 2-mucus layer, 3-glycocalyx. (J) Quantification of endotoxin as determined by LAL assay. (K) Pro-Q Emerald stain (LPS) of SDS-PAGE separated cell lysates, Ldr- ladder, Std- LPS standard, WT- wild-type, \u0394csg- \u0394csgBAC. n\u00a0=\u00a07\u201314 (A\u2013E); n\u00a0=\u00a07\u20139 (F, H); n\u00a0=\u00a03 (G). Points represent individuals, bars represent the mean and standard error. Data analyzed by one-way ANOVA with Tukey post-hoc test (A\u2013D). *p\u22640.05; **p\u22640.01; ***p\u22640.001; ****p\u22640.0001. In (A\u2013D), data are compiled from two independent cohorts for B. fragilis and SFB, compared to E. coli mono-colonized cohorts used in Figure 1.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Total \u03b1Syn in whole brain lysates quantified by ELISA. Quantification of insoluble \u03b1Syn fibrils in the (B) striatum and (C) midbrain by dot blot assay. Midbrain homogenates of ASO animals were (D) fractionated with Triton X-100 and SDS-PAGE, and subsequently probed for alpha-synuclein (\u03b1Syn) via western blot, or (E) left unfractionated and assessed by western blot for phospho-Serine129 \u03b1Syn (pS129). (F\u2013H) Quantification of western blots by integrated density. Representative images from of mono-colonized ASO mice of the (I) midbrain stained for proteinase K-resistant \u03b1Syn (green), (J) substantia nigra stained for tyrosine hydroxylase (TH, green) and pS129 (red), and (K) frontal cortex stained for pS129 (red) and quantified in (L). (M) Representative images of the myenteric plexus within proximal large intestine of mono-colonized ASO animals stained for PGP9.5 (white) and pS129\u03b1Syn (green,), and counts of PGP9.5+ cells bodies per ganglia. (N) Proximal large intestine homogenates of mono-colonized ASO animals were assessed by SDS-PAGE and analyzed by western blot for pS129\u03b1Syn. Quantification of insoluble \u03b1Syn fibrils in the (O) duodenum and (P) proximal large intestine by dot blot assay. (Q) Total striatal dopamine quantified by ELISA. (R) TH expression in the midbrain by qPCR. (S) Quantification of TH+ cells in representative sections of the SN. n\u00a0=\u00a03 (A\u2013H, L), n\u00a0=\u00a04 (O, P), n\u00a0=\u00a07\u20139 (Q), n\u00a0=\u00a03\u20134 (R), n\u00a0=\u00a04\u20135 (S). Full-length immunoblots available in associated Source Data file. Points represent individuals, bars represent the mean and standard error. Data analyzed by one-way ANOVA with Tukey post-hoc test for A-C, Q, or two-tailed t-test for F-H, L, O, P, R, S. *p\u22640.05; **p\u22640.01; ***p\u22640.001; ****p\u22640.0001. Scale bars\u00a0=\u00a0100 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Germ-free (GF) wild-type (WT) or Thy1-\u03b1Syn (ASO) animals were mono-colonized with either wild-type, curli-sufficient E.\u00a0coli (WT) or curli-deficient E. coli (\u0394csgBAC). Quantification of IL-6 and TNF\u03b1 by ELISA from homogenates derived from the (A) midbrain or (B) striatum. (C) CD11b+ cells enriched from total brains and gene expression of il6 and tnfa quantified by qRT-PCR, relative to gapdh. Representative thin sections of (D) substantia nigra and (F) striatum derived from ASO mice stained for Iba1 (microglia). 3D cellular reconstructions of microglia generated and morphological characteristics quantified of (E) substantia nigra- and (G) striatum\u2014resident microglia. Multiplex ELISA performed for cytokines and chemokines derived from (H) homogenates derived from proximal large intestine tissue of indicated animals or (I) serum of ASO animals. Quantification of IL-6 and IL-17 by ELISA from tissue homogenates of the (J) proximal large intestine or (K) duodenum derived from ASO animals. n\u00a0=\u00a06\u20137 (A\u2013C), n\u00a0=\u00a04 (D\u2013G) (averaged from 20 to 40 cells for diameters, or 5\u20137 cells for branching), n\u00a0=\u00a03 (H), n\u00a0=\u00a04\u20135 (J, K). Points represent individuals, bars represent the mean and standard error. Data analyzed by one-way ANOVA with Tukey post-hoc test for A\u2013C), or two-tailed t-test for E, J) and K). *p\u22640.05; **p\u22640.01; ***p\u22640.001; ****p\u22640.0001. Scale bars\u00a0=\u00a0100 \u03bcm.\n\nASO mice colonized with curli-producing bacteria displayed increased \u03b1Syn fibril reactivity and detergent-insoluble \u03b1Syn in the midbrain compared to mice with the \u0394csgBAC strain, despite similar transgene production (Figure 1\u2014figure supplement 2A\u2013D,F,G). Histological and western blot analysis revealed increased phospho-serine129 \u03b1Syn (pS129-\u03b1Syn) deposition in the substantia nigra (SN) of ASO mice, indicative of pathological \u03b1Syn aggregation, (Figure 1G,H, and Figure 1\u2014figure supplement 2E,H,J). Further, mice colonized with WT E. coli show increased proteinase K-resistant \u03b1Syn inclusions in the midbrain (Figure 1I and Figure 1\u2014figure supplement 2I), with little alteration to pS129-\u03b1Syn in the frontal cortex (Figure 1\u2014figure supplement 2K,L). Additionally, we observed increased pS129-\u03b1Syn in the proximal large intestine, and elevated \u03b1Syn fibril reactivity in the duodenum and proximal large intestine of ASO mice mono-colonized with curli-producing E. coli (Figure 1\u2014figure supplement 2M\u2013P). Previous research has shown that synuclein pathology, neuroinflammation, and motor defects occur at early ages in the ASO mouse model without concomitant loss of striatal dopamine, tyrosine hydroxylase positive (TH+) neurons in the midbrain, or loss of neurons in the myenteric plexus (Fleming et al., 2004; Lam et al., 2011; Chesselet et al., 2012; Wang et al., 2012). Consistent with these prior observations, we do not observe decreases in total striatal dopamine, midbrain TH expression, TH+ neurons, nor myenteric PGP9.5+ neurons, under the colonization conditions and ages assessed, suggesting pathology and motor deficits are independent of dopamine or neuron loss (Figure 1, figure supplement S2Q-S).\n\nMono-colonization of ASO mice with curli-producing E. coli resulted in increased expression of the proinflammatory cytokines interleukin 6 (IL-6) and tumor necrosis factor alpha (TNF\u03b1) in brain-derived CD11b+ cells, and increased cytokine production in the midbrain and striatum (Figure 1\u2014figure supplement 3A\u2013C). In addition, Iba+ microglia morphologies indicated reduced activation in ASO mice colonized with the curli-deficient strain (Figure 1\u2014figure supplement 3D\u2013G). Multiplexed ELISA analysis revealed increased cytokine and chemokine production in colonic tissue of mice mono-colonized with curli-producing E. coli, irrespective of genotype (Figure 1\u2014figure supplement 3H,J,K), and no noteworthy changes to serum cytokines of ASO mice based on colonization status (Figure 1\u2014figure supplement 3I). These data reveal that a bacterial amyloid from the gut microbiome can exacerbate pathology and inflammation, in both the gut and brain, in mice that overexpress \u03b1Syn.\n\n### Curli biosynthesis within a complex microbiome contributes to motor and GI deficits\n\nTo explore host-microbiome interactions in a more natural context, we tested whether introduction of curli-producing bacteria to a healthy human microbiota is sufficient to enhance \u03b1Syn-dependent pathophysiology. GF ASO mice were transplanted with fecal microbiota from a human donor predicted to contain low levels of csgA, as indicated by PICRUSt analysis following 16S rRNA sequencing (Figure 2\u2014figure supplement 1A). This single microbiome was supplemented with either WT E. coli or the \u0394csgBAC strain. Both strains reached similar abundances in the feces (Figure 2\u2014figure supplement 1B,C), while csgA expression and amyloid production appeared only in mice colonized with WT bacteria (Figure 2\u2014figure supplement 1C\u2013E). Mice harboring a microbiota containing WT E. coli displayed significantly impaired motor and GI performance compared to animals with a complex microbiota plus the curli-deficient strain (Figure 2A\u2013G). Moreover, enrichment of curli-producing bacteria resulted in increased \u03b1Syn fibril reactivity in the midbrain and elevated pS129-\u03b1Syn deposition in the SN, without changes to the number of TH+ neurons (Figure 2H and Figure 2\u2014figure supplement 1F\u2013J). Morphometric analysis of microglia demonstrated concomitant changes indicative of inflammatory status in the midbrain (Figure 2\u2014figure supplement 1K\u2013N). Therefore, in the context of a complex human microbiota, curli-producing E. coli are sufficient to modulate \u03b1Syn-mediated pathophysiology.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig2-v1.jpg)\n\n**Figure 2.:** Motor function was tested longitudinally at 12, 15, and 20 weeks of age in the (A) beam traversal, (B) pole descent, (C) adhesive removal, (D) hindlimb clasping score, (E) wirehang tests. (F) Principal component analysis of compiled motor scores from tests in (A\u2013E). (G) Fecal output over a 15-min period observed at week 21 of age. Quantification of (H) pS129\u03b1Syn by immunofluorescence microscopy in the substantia nigra. n\u00a0=\u00a012 (A\u2013F), n\u00a0=\u00a06 (G), n\u00a0=\u00a04 (H). Data points represent individuals, bars represent the mean and standard error. Time courses analyzed by two-way ANOVA, with Sidak post-hoc test for between group comparisons indicated above individual time points, and brackets indicating significance between colonization status. Data in (H) analyzed two-tailed t-test. *p\u22640.05; **p\u22640.01; ***p\u22640.001; ****p\u22640.0001. Motor data are compiled from two independent cohorts.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Human samples from previous cohort (ENA Accession: PRJEB17694) were analyzed by PICRUSt to infer abundance of csgA encoded within each population, arrow indicates sample utilized for transplantation.\u00a0Fecal pellets of Thy1-\u03b1Syn (ASO) mice receiving healthy-human derived fecal microbes enriched with either wild-type, curli-sufficient E. coli (WT) or curli-deficient E. coli (\u0394csgBAC) were analyzed by (B) qPCR for rrsA abundance relative to 16 s rRNA present in fecal bacterial DNA and ratios of (C)\u00a0YESCA/blood agar aerobic colony forming units and (D) congo red-positive/blood agar colony forming units calculated. (E) qPCR analysis for csgA expression relative to rrsA in fecal bacterial RNA. (F) Representative images of the substantia nigra in humanized ASO mice stained for TH (green) and pS129 (red) and quantified in (G, H). Quantification of insoluble \u03b1Syn fibrils in the (I) midbrain and (J) striatum by dot blot assay. Representative thin sections of (K) substantia nigra and (M) striatum derived from ASO mice stained for Iba1 (microglia; red). 3D cellular reconstructions of microglia generated and morphological characteristics quantified of (L) substantia nigra- and (N) striatum\u2014resident microglia. n\u00a0=\u00a05 (A), n\u00a0=\u00a08 (B, E), n\u00a0=\u00a04 (C\u2013J), n\u00a0=\u00a03 (K\u2013N) (averaged from 20 to 40 cells for diameters, or 5\u20137 cells for branching) Points represent individuals, bars represent the mean and standard error. Data in (B, E, I) analyzed by two-tailed Mann-Whitney test or t-test in L. *p\u22640.05; ***p\u22640.001. Scale bars\u00a0=\u00a0100 \u03bcm.\n\n### The bacterial amyloid protein, CsgA, accelerates \u03b1Syn fibrilization\n\nEmerging data suggest that non-orthologous amyloid proteins can accelerate heterologous aggregation\u00a0(Clinton et al., 2010; Brettschneider et al., 2015; Katorcha et al., 2017). We therefore tested whether CsgA can directly impact aggregation of \u03b1Syn. Purified monomeric CsgA accelerated production of \u03b1Syn aggregates during in vitro biochemical amyloid assays (Figure 3A\u2013C and Figure 3\u2014figure supplement 1A), even at concentrations below which CsgA self-aggregates (Figure 3D). The \u03b1Syn fibrils purified from these reactions maintained an ability to accelerate \u03b1Syn amyloidogenesis (Figure 3\u2014figure supplement 1B,C), suggesting that CsgA-induced \u03b1Syn aggregates are propagation-competent, similar to other amyloids\u00a0(Spires-Jones et al., 2017). Surprisingly, we could not detect a direct interaction between purified CsgA and \u03b1Syn monomers by surface plasmon resonance (Figure 3\u2014figure supplement 1D), perhaps indicating transient interactions or requirements for prior oligomerization of either or both proteins. Unlike \u03b1Syn, Tau aggregation was not accelerated by CsgA (Figure 3\u2014figure supplement 1E\u2013G). Native amyloid-forming properties of CsgA are required, as a non-amyloidogenic form of CsgA (CsgA:Q49A/N54A/Q139A/N144A; \u2018SlowGo\u2019 Wang and Chapman, 2008) did not augment \u03b1Syn aggregation in vitro (Figure 3\u2014figure supplement 2A\u2013C). To investigate the dependence of these amyloidogenic residues in vivo, we mono-colonized ASO mice with E. coli producing either wild-type CsgA or CsgA:SlowGo proteins (Wang and Chapman, 2008). Motor performance in ASO mice harboring SlowGo-producing E. coli was less severe in comparison to mice colonized with WT bacteria (Figure 3\u2014figure supplement 2D\u2013H), although not to the extent of the \u0394csgBAC strain, qualitatively (see Figure 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig3-v1.jpg)\n\n**Figure 3.:** (A) Aggregation as measured by Thioflavin T fluorescence over time during \u03b1Syn amyloid formation alone or in the presence of CsgA monomers (25:1 molar ratio). Time to reach (B) exponential fibrilization/lag phase and (C) half-maximum from reactions in (A). (D) Representative transmission electron micrographs of \u03b1Syn or CsgA alone, or in combination, at 0 and 60 hr post-aggregation. n\u00a0=\u00a03 (A\u2013C). Bars represent the mean and standard error. Data are analyzed by two-tailed, t-test. **p\u22640.01; ***p\u22640.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Circular dichroism spectroscopic analysis of \u03b1Syn fibrilization alone or in the presence of CsgA at 0, 12.5, and 60 hr post-aggregation. (B) Thioflavin T fluorescence during \u03b1Syn amyloid formation alone or in the presence of 5% seeds previously generated by addition of CsgA monomer to \u03b1Syn (as in Figure 2a) or \u03b1Syn alone. (C) Transmission electron micrograph of fibril structures generated by the addition of above seeds and of seeds themselves. (D) Surface plasmon resonance measurements of surface immobilized \u03b1Syn with additions of either CsgA monomer or seeds, or DOPS-DOPG cholesterol liposomes as positive control. (E) Amyloid aggregation as measured by Thioflavin T fluorescence with Tau alone or in the presence of CsgA monomers (25:1 molar ratio, red). Time to reach (F) exponential fibrilization/lag phase and (G) half-maximum from reactions in (E).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Amyloid aggregation as measured by Thioflavin T fluorescence with \u03b1Syn alone or in the presence of non-amyloidogenic CsgA monomers (SlowGo, 25:1 molar ratio, red).\u00a0Time to reach (B) exponential fibrilization/lag phase and (C) half-maximum from reactions in (A). (D\u2013H) Germ-free Thy1-\u03b1Syn mice (ASO) were mono-colonized with E. coli producing either wild-type CsgA (WT) or SlowGo (SlowGo), and motor function assessed at 12-13\u00a0weeks of age in (D) beam traversal, (E) pole descent, (F) adhesive removal, (G) hindlimb reflexes, and (H) wirehang. Points represent individuals, bars represent the mean and standard error, n\u00a0=\u00a010\u201311 (D\u2013H). Data in (D\u2013H) analyzed by two-tailed Mann-Whitney test. *p\u22640.05; **p\u22640.01.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Conventionally-raised Thy1-\u03b1Syn (ASO) mice were injected intestinally with 30 \u03bcg of synthetic CsgA hexamer (CsgA; N-QYGGNN-C) or non-amyloidgenic peptide (N122A; N-QYGGNA-C).\u00a0Motor function assessed overtime at 0, 7, 21, and 70 days post-injection in the (A) beam traversal, (B) pole descent, (C) adhesive removal, (D) hindlimb clasping score, and (E) wirehang tests. (F) Principal component analysis of compiled motor scores of ASO mice. (G) Fecal output observed at day 70 in ASO mice. (H) Quantification of insoluble \u03b1Syn fibrils in the striatum and ventral midbrain by dot blot assay. n\u00a0=\u00a08 (A\u2013G), n\u00a0=\u00a04 (H). Points represent individuals, bars represent the mean and standard error. Time courses analyzed by two-way ANOVA, with Sidak post-hoc test for between group comparisons indicated above individual time points, and brackets indicating significance between treatments. Data in (H) analyzed by two-tailed Mann-Whitney test. *p\u22640.05; **p\u22640.01; ***p\u22640.001; ****p\u22640.0001.\n\nNext, a peptide spanning the aggregation domain of CsgA or a non-amyloidogenic version (N122A) (T\u00fckel et al., 2009) were injected directly into the intestinal wall of SPF ASO mice. Intra-intestinal delivery of amyloidogenic CsgA peptide, but not the mutant peptide, resulted in progressive motor and GI dysfunction (Figure 3\u2014figure supplement 3A\u2013G). Furthermore, increased \u03b1Syn fibrils were detected in the midbrains of amyloidogenic peptide-injected animals (Figure 3\u2014figure supplement 3H). We conclude that gut exposure to a bacterial amyloid is sufficient to exacerbate motor deficits and \u03b1Syn brain pathology in this mouse model, in a manner dependent on CsgA aggregation.\n\n### Curli-driven pathophysiology in mice requires functional amyloid formation\n\nEpigallocatechin gallate (EGCG) is a plant-derived, dietary polyphenol that physically inhibits amyloid formation, including \u03b1Syn aggregation (Bieschke et al., 2010). EGCG is also capable of blocking CsgA amyloidogenesis and represses csgA transcript expression in E. coli through activation of specific stress response pathways within the bacterial cell (Serra et al., 2016). We reveal here that EGCG treatment did not impair E. coli growth in culture, but significantly reduced biofilm formation, a process dependent on the production and assembly of curli (Figure 4\u2014figure supplement 1A,B)\u00a0(Tursi and T\u00fckel, 2018). Additionally, EGCG also inhibited CsgA-accelerated \u03b1Syn amyloid formation during in vitro biochemical aggregation assays (Figure 4A). Notably, EGCG remains largely gut-restricted in rodents and humans and is not readily bioavailable in circulation or brain tissues following oral administration (Lambert et al., 2003; Lin et al., 2007; Cai et al., 2018). Oral treatment of wild-type E. coli mono-colonized ASO mice with EGCG did not affect fecal E. coli abundance, but resulted in decreased csgA production (Figure 4B and Figure 4\u2014figure supplement 1C). Assessment of motor performance revealed that EGCG improved both motor and GI defects exacerbated by curli-producing E. coli in ASO mice (Figure 4C\u2013I and Figure 4\u2014figure supplement 1D\u2013I). In addition, oral EGCG administration reduced \u03b1Syn aggregation and pS129-\u03b1Syn deposition in both the striatum and midbrain (Figure 4J and Figure 4\u2014figure supplement 1J\u2013M). Furthermore, microglia morphological changes were limited in EGCG-treated mice (Figure 4\u2014figure supplement 1O\u2013R). In addition to its ability to directly inhibit aggregation of bacterial and host-derived amyloids, EGCG has antioxidant and anti-inflammatory activities (Li et al., 2004) that may also contribute to the rescue of CsgA-accelerated, \u03b1Syn-dependent pathophysiology. Collectively, these data reveal that curli is a specific bacterial structure that can accelerate mammalian amyloid aggregation in vitro and in vivo.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig4-v1.jpg)\n\n**Figure 4.:** (A), Representative in vitro \u03b1Syn aggregation measured by Thioflavin T fluorescence during \u03b1Syn amyloid formation alone or in the presence of CsgA (25:1 molar ratio), with and without EGCG (50 \u03bcM) treatment.\u00a0(B\u2013H) Germ-free Thy1-\u03b1Syn mice (ASO) were mono-colonized with WT E. coli at 5\u20136 weeks of age, and given water alone (Vehicle: Veh) or treated with EGCG ad lib in drinking water (+EGCG). (B) RNA was extracted from fecal pellets and csgA expression quantified by qRT-PCR, relative to rrsA. Motor function was assessed at 15\u201316 weeks of age by quantifying (C) beam traversal time, (D) pole descent time, (E) nasal adhesive removal time, (F) hindlimb clasping score, (G) wirehang tests. (H) Principal component analysis of compiled motor scores from tests in (C\u2013G). (I) Fecal output over a 15 min period. (J) Quantification of insoluble \u03b1Syn fibrils in the ventral midbrain by dot blot assay. n\u00a0=\u00a08 (B); n\u00a0=\u00a010\u201311 (C\u2013G); n\u00a0=\u00a04\u20135 (I, J). Points represent individuals, bars represent the mean and standard error. Data analyzed by two-tailed Mann-Whitney for B\u2013G, (J) and two-way ANOVA with Sidek\u2019s post-hoc test for I with between group comparisons indicated above individual time points, and brackets indicating significance between treatment status. *p\u22640.05; **p\u22640.01; ***p\u22640.001; ****p\u22640.0001. Motor data compiled from two independent cohorts.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Wild-type E.\u00a0coli was inoculated into brain-heart infusion broth, containing indicated concentrations of EGCG. Cultures were incubated, with orbital shaking and growth was measured by optical density at 600 nm over time. (B) Crystal violet staining of wild-type E. coli biofilm at 4 days in static culture, with indicated concentrations of epigallocatechin gallate (EGCG); assessed by optical density (OD). (C\u2013R) Germ-free ASO mice were mono-colonized with wild-type E. coli and treated with water alone (Vehicle, Veh) or given EGCG ad lib in drinking water (+EGCG). (C) Fecal pellets were cultured on YESCA agar to determine total viable E. coli. Motor function was assessed at 10, 12, and 15 weeks of age by quantifying (D) beam traversal time, (E) pole descent time, (F) nasal adhesive removal time, (G) hindlimb reflex score, (H) wirehang tests. (I) Principal component analysis of compiled motor scores.\u00a0(J) Quantification of insoluble \u03b1Syn fibrils in the striatum by dot blot assay. (K) Representative images of the substantia nigra in humanized ASO mice stained for TH (green) and pS129 (red) and quantified in (L\u2013N). Representative thin sections of (O) substantia nigra and (Q) striatum were stained for Iba1 (microglia; red) and morphological characteristics of (P) substantia nigra- and (r) striatum-resident microglia quantified. n\u00a0=\u00a03 (A, O\u2013R) (averaged from 20 to 40 cells for diameters, or 5\u20137 cells for branching); n\u00a0=\u00a06\u20137 (B); n\u00a0=\u00a04\u20135 (C, J), n\u00a0=\u00a010\u201311 (D\u2013I); n\u00a0=\u00a03\u20134 (K\u2013N). Points represent individuals, bars represent the mean and standard error. Time courses analyzed by two-way ANOVA, with Sidak post-hoc test for between group comparisons indicated above individual time points, and brackets indicating significance between treatments. Data in (J) analyzed by two-tailed Mann-Whitney test and (L, P, R) analyzed by two-tailed t-test. *p\u22640.05; **p\u22640.01; ****p\u22640.0001.\n\n### Conclusion\n\nThe majority of synucleinopathy incidences are idiopathic, with multifactorial and complex risks that contribute to disease initiation and/or progression (Ritz et al., 2016; Soldner et al., 2016; Johnson et al., 2019). Our findings reveal that the bacterial amyloid CsgA can accelerate \u03b1Syn aggregation and enhance motor abnormalities in mice that are genetically predisposed to \u03b1Syn pathology. Curli production in the gut of non-susceptible mice does not impair motor performance at the timepoints examined, suggesting that this microbial trigger is not sufficient, but rather requires additional predisposing factors to promote disease outcomes. Further, inhibiting amyloid formation in the gut correlates with improvements in curli-induced behaviors and pathology. Our study does not reconcile how curli production within the gastrointestinal tract ultimately manifests \u03b1Syn aggregation in the brain. Experimental evidence exists for a prion-like spread of \u03b1Syn aggregates (Woerman et al., 2015), including propagation from the gut to the midbrain via the vagus nerve and/or spinal cord in rodent models (Uemura et al., 2018; Kim et al., 2019; Van Den Berge et al., 2019), although evidence for sustained propagation from the GI tract to structures outside the brainstem in primates is currently lacking (Manfredsson et al., 2018). Epidemiological studies suggest an association between full truncal vagotomy with a decreased risk of PD (Svensson et al., 2015). Intriguingly, there appears to be a positive correlation between inflammatory bowel disease and neurodegenerative disease (Hui et al., 2018; Peter et al., 2018). In experimental models, induction of GI inflammation, for instance through LPS or dextran sodium sulfate administration, is sufficient to induce \u03b1Syn pathology in the CNS (Choi et al., 2018; Kishimoto et al., 2019; Perez-Pardo et al., 2019). Aggregates of both CsgA and \u03b1Syn are capable of signaling through the innate immune receptor Toll-like receptor 2 (TLR2) leading to increased inflammatory responses (T\u00fckel et al., 2009; Poewe et al., 2017). In fact, inhibiting TLR2 in \u03b1Syn-based mouse models leads to improved pathology and motor outcomes (Kim et al., 2015; Kim et al., 2018). Our data demonstrate curli-dependent increases of inflammatory markers in both the intestine and brain, as well as acceleration of \u03b1Syn pathology, but do not determine which of these may be the primary driver of curli-mediated pathophysiology. Disentangling these complex relationships in future studies will define how pathologic signals from bacterial amyloids are transduced from the gut to the brain, via transneuronal spread of \u03b1Syn aggregates and/or an inflammatory cascade, and mechanisms of gut-to-brain signaling that contribute to motor impairment.\n\nSynucleinopathy is linked to marked changes to the structure of the microbiome. Numerous studies have reported microbiome differences in persons with PD compared to unaffected individuals (Hasegawa et al., 2015; Keshavarzian et al., 2015; Scheperjans et al., 2015; Unger et al., 2016; Bedarf et al., 2017; Hill-Burns et al., 2017; Hopfner et al., 2017; Li et al., 2017; Barichella et al., 2019; Lin et al., 2018); however, examination of the gut microbiome during other synucleinopathies, such as MSA or LBD are still in their infancy (Engen et al., 2017). Some reports have identified the family Enterobacteriaceae as enriched in PD compared to unaffected individuals (Unger et al., 2016; Li et al., 2017; Barichella et al., 2019). In those studies which performed correlation analysis between disease severity and microbiome composition, enrichment of Enterobacteriaceae is observed to be positively associated with worsened motor symptoms (Scheperjans et al., 2015; Li et al., 2017). To our knowledge, no study to date has identified differential abundance of csgA or curli-encoding genes specifically in human incidences, and only a single study to date has utilized metagenomic sequencing of the gut microbiome during PD (Bedarf et al., 2017). Despite recent advances defining microbiome changes in neurodegenerative diseases, a contributing role by gut bacteria to synucleinopathies in humans remains correlative (reviewed in Sampson, 2019). In experimental models, however, transplant of fecal microbiomes from PD patients into ASO mice results in greater motor deficits than microbiomes from healthy controls (Sampson et al., 2016), suggesting functional consequences to changes in gut microbial composition.\n\nAlthough our findings herein are limited to a single transgenic animal mouse model, and similar pathologies are observed in aged rats and nematodes (Chen et al., 2016), it is possible that these observations are model specific. Non-amyloid contributions from diverse gut bacteria are also likely to occur and influence neurodegenerative outcomes. For instance, enrichment of the gut bacterium Proteus mirabilis, or intestinal administration of its purified LPS, impairs the dopaminergic system of mice and increases susceptibility to neurotoxins (Choi et al., 2018). Infection with Gram-negative bacteria, including Citrobacter sp. (a taxonomic relative of E. coli), can trigger a pathological process leading to neurodegenerative immune responses in the brain and loss of midbrain dopamine production in a PD-relevant mouse model (Matheoud et al., 2019). In addition, specific microbiome-derived metabolites promote microglia maturation (Erny et al., 2015) and enhance \u03b1Syn-dependent pathology in germ-free mice (Sampson et al., 2016). Conversely, specific microbial metabolites (Blacher et al., 2019) or fecal microbiome transplants (Sun et al., 2018) may provide protection from neurodegenerative insults.\n\nWhile CsgA is one example of bacterially-produced amyloid, microbial amyloid formation in general may influence physiological processes with outcomes relevant for neurodegenerative disease (Friedland and Chapman, 2017). For example, the Pseudomonas sp. functional amyloid, FapC, may also accelerate \u03b1Syn aggregation in vitro (Christensen et al., 2019), and bacterial chaperones of CsgA modulate \u03b1Syn amyloidogenesis (Evans et al., 2015). More broadly, CsgA is observed to accelerate amyloid \u03b2 aggregation in vitro (Hartman et al., 2013; Perov et al., 2019), as well as the disease-associated amyloids, islet amyloid polypeptide (IAPP) and semen enhancer of viral infection (SEVI) in vitro (Hartman et al., 2013), and serum amyloid A in mice (Lundmark et al., 2005). Emerging evidence in diverse animal models suggests that gut bacteria may modulate amyloid-driven diseases, not only in synucleinopathy as we and others describe, but Alzheimer\u2019s disease (Harach et al., 2017; Dodiya et al., 2019) and amyotrophic lateral sclerosis (ALS) as well (Blacher et al., 2019), providing justification for future human studies and revealing possible new targets for interventions that may prevent, slow, or halt amyloid formation and neurodegenerative disease.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Mus musculus)</td>\n      <td>Thy1- alpha-synuclein (Line 61), BDF1 background</td>\n      <td>Rockenstein et al., 2002</td>\n      <td>ASO (alpha-synuclein over-expressing)</td>\n      <td>With permission, UCSD</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Str. K12, MC4100</td>\n      <td>Zhou et al., 2013</td>\n      <td>WT (wild-type)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Str. K12, MC4100:\u0394csgBAC</td>\n      <td>Zhou et al., 2013</td>\n      <td>\u0394csgBAC</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain (Escherichia coli)</td>\n      <td>Str. K12, MC4100: CsgA:Q49A/N54A/Q139A/N144A</td>\n      <td>Wang and Chapman, 2008</td>\n      <td>SlowGo</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-alpha synuclein, mouse monoclonal</td>\n      <td>BD</td>\n      <td>Cat#: 610787</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-pS129 alpha-synuclein, rabbit monoclonal</td>\n      <td>AbCam</td>\n      <td>Cat#: Ab51253</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-tyrosine hydroxylase, mouse monoclonal</td>\n      <td>Millipore</td>\n      <td>Cat#: MAB318</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Iba1, rabbit</td>\n      <td>Wako</td>\n      <td>Cat#: 019\u201319741</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-aggregated alpha-synuclein, rabbit polyclonal</td>\n      <td>AbCam</td>\n      <td>Cat#: MJFR-14-6-4-2</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IgG-546, goat polyclonal</td>\n      <td>Life Technologies</td>\n      <td>Cat#: A-11003</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit IgG-546, goat polyclonal</td>\n      <td>Life Technologies</td>\n      <td>Cat#: A-11010</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse IgG-488, goat polyclonal</td>\n      <td>Life Technologies</td>\n      <td>Cat#: A-11001</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit IgG-HRP, goat polyclonal</td>\n      <td>Cell Signaling</td>\n      <td>Cat#: 7074</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CsgA (N\u2019-QYGGNN-C\u2019)</td>\n      <td>Bio-Synthesis, Inc; T\u00fckel et al., 2009</td>\n      <td>CsgA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>N122A (N\u2019QYGGNA-C\u2019)</td>\n      <td>Bio-Synthesis, Inc; T\u00fckel et al., 2009</td>\n      <td>N122A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>16S rRNA: 5\u2019-TCCTACGGGAGGCAGCAGT-3\u2019 and 5\u2019-GGACTACCAGGGTATCTAATCCTGTT-3\u2019</td>\n      <td>IDT</td>\n      <td>qPCR primer</td>\n      <td>PrimerBank</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>rrsA: 5\u2019-AGTGATAAACTGGAGGAGGTG-3\u2018 and 5\u2019-GGACTACGACGCACTTTATGAG-3\u2019</td>\n      <td>IDT</td>\n      <td>qPCR primer</td>\n      <td>PrimerBank</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>csgA: 5\u2019-ATGACGGTTAAACAGTTCGG-3\u2019 and 5\u2019-AGGAGTTAGATGCAGTCTGG-3\u2019</td>\n      <td>IDT</td>\n      <td>qPCR primer</td>\n      <td>PrimerBank</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>gapdh: 5\u2019-CATGGCCTTCCGTGTTCCTA-3\u2019 and 5\u2019-CCTGCTTCACCACCTTCTTGAT-3\u2019</td>\n      <td>IDT</td>\n      <td>qPCR primer</td>\n      <td>PrimerBank</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>il6: 5\u2019-TAGTCCTTCCTACCCCAATTTCC-3\u2019 and 5\u2019-TTGGTCCTTAGCCACTCCTTC-3\u2019,</td>\n      <td>IDT</td>\n      <td>qPCR primer</td>\n      <td>PrimerBank</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>TH: 5\u2019-CCAAGGTTCATTGGACGGC-3\u2019 and 5\u2019-CTCTCCTCGAATACCACAGCC-3\u2019</td>\n      <td>IDT</td>\n      <td>qPCR primer</td>\n      <td>PrimerBank</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>tnfa; 5\u2019-CCCTCACACTCAGATCATCTTCT-3\u2019 and 5\u2019-GCTACGACAGTGGGCTACAG-3\u2019</td>\n      <td>IDT</td>\n      <td>qPCR primer</td>\n      <td>PrimerBank</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nMale wild-type and Thy1-\u03b1Syn mice (Line 61, with permission from University of California, San Diego) were generated as described previously (Rockenstein et al., 2002; Chesselet et al., 2012; Sampson et al., 2016), through breeding female BDF1 background Thy1-\u03b1Syn mice to male BDF1 offspring generated via crossing female C57BL/6 with DBA/2 males (Charles River, Hollister, CA), and refreshing breeding pairs\u00a0~\u00a06 months. Germ-free (GF) Thy1-\u03b1Syn breeding pairs were generated via caesarian section and cross-fostered by GF Swiss-Webster dams. Conventionally colonized and mono-colonized animals were housed in autoclaved, ventilated, microisolator caging. GF animals were housed in open-top caging within flexible film isolators and maintained microbiologically sterile, confirmed via 16S rRNA PCR from fecal-derived DNA and culture of fecal pellets on Brucella blood agar or tryptic soy blood agar (Teknova, Hollister, CA) under anaerobic and aerobic conditions, respectively. Mono-colonized animals received\u00a0~108 cfu of the indicated bacterial strains in\u00a0~100 \u03bcL sodium bicarbonate buffer (5% w/v) at 5\u20136 weeks of age. Human microbiome colonized animals received\u00a0~100 \u03bcL 0.1 g/mL fecal extract from previously sampled healthy human donor (ENA Accession: PRJEB17694; Sample #: 10483.donor2.HC; MMA_008 [Sampson et al., 2016], California Institute of Technology\u2019s Institutional Review Board #15\u20130568- exempt), at 5\u20136 weeks of age. For mice mono-colonized with E. coli containing plasmid vectors for CsgA and CsgA:SlowGo, drinking water was supplemented with 50 \u03bcg/mL kanamycin (Sigma Aldrich, St Louis, MO). Human microbiome colonized mice were associated with WT or \u0394csgBAC mutant E. coli at time of microbiota transplant. For epigallocatechin gallate (EGCG) treatment, animals received filter-sterilized EGCG (Sigma Aldrich) at 200 \u03bcg/mL in drinking water ad libitum beginning at 5\u20136 weeks of age. All animals received autoclaved food (LabDiet Laboratory Autoclavable Diet 5010, St Louis, MO) and water ad libitum, were maintained on the same 12 hr light-dark cycle, and housed in the same room of the facility. All animal husbandry and experiments were approved by the California Institute of Technology\u2019s Institutional Animal Care and Use Committee (IACUC), through protocol #1707.\n\n### Motor function assessment\n\nMotor function was assessed similarly to previous studies (Fleming et al., 2004; Sampson et al., 2016), between hours 7 and 9 of the light phase, within a biosafety cabinet. Beam traversal and pole descent were performed first, followed by fecal output measurement. One day later, wirehang, adhesive removal and hindlimb scoring was performed. Beam traversal- A 1 m plexiglass beam consisting of four segments of 0.25 m in length (Stark\u2019s Plastics, Forest Park, OH) was constructed with consecutively thinner widths of 3.5, 2.5, 1.5, and 0.5 cm, with 1 cm overhangs placed 1 cm below the surface of the beam and the narrowest end placed into home cage. Animals were trained for two consecutive days before the first testing. On the first day of training, animals received one trial with the home cage positioned close to the widest segment, where the animal was placed, and guided the animals forward along the narrowing beam. Animals received two more trials with limited or no assistance to encourage forward movement and stability on the beam. On the seccond day of training, animals were given three trials to traverse the beam, with little to no assistance. On the third day, animals were timed over three trials to traverse from the widest segment to the home cage. Time was measured from the placement of the animal\u2019s forelimbs onto the second segment until a forelimb reached the home cage. Score was averaged over three trials. Pole descent- A 0.5 m long pole, 1 cm in diameter, wrapped with non-adhesive shelf liner to facilitate the animals grip, was placed into the home cage, with animals removed and placed into fresh housing. Animals received 2 days of training to descend from the top of the pole and into the home cage. On the first day, animals received three trials to descend the pole. First animals were placed head-down\u00a0~1/3 the distance above the base, the second\u00a0trial from\u00a0~2/3 the height, and on the third trial animals were placed at the top of the pole, head-down. The second day of training, animals were tasked with descending, head-down, from the top of the pole, three times. On the day of testing, animals were placed head-down on the top of the pole and timed beginning when the experimenter released the animal and ended when one hind-limb was placed on the pole base. Score was averaged over three trials. Adhesive removal- \u00bc\u201d round adhesive labels (Avery, Glendale, CA) were placed on the nasal bridge. Animals were placed into their home cage (with cage mates removed into separate cage) and timed to completely remove the sticker. Animals were recorded over two trials, and averaged. Hindlimb clasping reflex scoring- Animals were gently lifted by the mid-section of the tail and observed over\u00a0~5\u201310 s (Zhang et al., 2014). Animals were assigned a score of 0, 1, 2, or 3. 0 was scored to animals that freely moved both their limbs and extended them outwards. A 1 was assigned to animals which clasped one hindlimb inward for the duration of the restraint or if both legs exhibited partial inward clasping. 2 was given if both legs clasped inward for the majority of the observation, but still exhibited some flexibility. A score of 3 was assigned if animals displayed complete rigidity of hindlimbs that immediately clasped inward and exhibited no signs of flexibility. For animals in Figure 3\u2014figure supplement 2G, animals were scored twice on 2 consecutive days and the score averaged, the remainder were scored once. Wirehang- Animals were placed in the center of a 30 cm by 30 cm screen with 1 cm wide mesh. The screen was inverted head-over-tail and placed on supports\u00a0~\u00a040 cm above an open cage with deep bedding. Animals were timed until they released their grip or remained for 60 s, and the score from two trials averaged. Fecal Output- Animals were removed from their home cages and placed into a 12 cm x 25 cm translucent cylinder. Fecal pellets were counted every 5 min, cumulative over 15 min. Principal component analysis- PCA was performed using ClustVis web tool, with default settings and reversed axis for display (Metsalu and Vilo, 2015).\n\n### Bacterial strains, manipulations, and characterizations\n\nEscherichia coli K12 str. MC4100 and the previously characterized isogenic deletion mutant of the csgBAC operon were cultured aerobically in YESCA media at 37\u00b0C (Zhou et al., 2013). Biofilm assays were performed via crystal violet staining of static culture at room temperature in YESCA as described previously\u00a0(Zhou et al., 2013). Congo red staining was performed on YESCA agar following 2\u20133 days growth at room temperature as described previously (Zhou et al., 2013). Fecal bacterial DNA was isolated using QuickDNA Fecal/Soil Microbe Miniprep (Zymo Research, Irvine, CA). Fecal bacterial RNA was isolated using PowerMicrobiome RNA Isolation kit (MoBio, Carlsbad, CA) and cDNA generated via iScript cDNA Synthesis kit (BioRad, Hercules, CA). qPCR was performed with SybrGreen master mix (Applied Biosystems, Foster City, CA) on an AB7900ht instrument using the following primers: 16 s rRNA-5\u2019-TCCTACGGGAGGCAGCAGT-3\u2019 and 5\u2019-GGACTACCAGGGTATCTAATCCTGTT-3\u2019; rrsA-5\u2019-AGTGATAAACTGGAGGAGGTG- \u2018and 5\u2019-GGACTACGACGCACTTTATGAG-3\u2019; csgA- 5\u2019-ATGACGGTTAAACAGTTCGG-3\u2019 and 5\u2019-AGGAGTTAGATGCAGTCTGG-3\u2019. Bacteroides fragilis str. NTCT9343 was cultured anaerobically in brain-heart infusion (BHI) broth at 37\u00b0C, and colonized into GF animals via oral gavage of\u00a0~108 cfu in 100 \u03bcL sodium bicarbonate buffer (5% w/v) at 5\u20136 weeks of age. Segmented filamentous bacteria were colonized via bedding transfer and co-housing within a mono-associated gnotobiotic isolator. Colonization was confirmed by PCR for SFB 16 s RNA. For growth curves, E. coli was first grown aerobically at 37\u00b0C overnight in BHI broth, and subcultured at 1:400 in BHI containing indicated concentrations of EGCG, in a 200 \u03bcL volume in a 96-well plate. Plates were incubated at 37\u00b0C aerobically, with orbital shaking in a BioTek Cytation 5 plate reader, and the optical density at 600 nm measured every hour. Endotoxin content was measured following overnight growth at 37\u00b0C, aerobically in BHI using the Pierce LAL Chromogenic Endotoxin kit (ThermoFisher, Pittsburgh, PA) according to manufacturer\u2019s instructions. LPS was stained from lysates derived from identically grown bacterial cultures following separation on a 4\u201320% SDS-PAGE gel with Pro-Q Emerald 300 LPS stain kit (ThermoFisher), according to manufacturer\u2019s instructions.\n\n### \u03b1-Synuclein aggregation assays\n\nThioflavin T (ThT) assays-Freshly purified CsgA (both wild-type and \u2018SlowGo\u2019) and \u03b1Syn were diluted in 50 mM KPi (pH 7.3) to the molar concentrations indicated in each experiment. Samples were incubated in 96-well, black, flat bottom plates at 37\u00b0C with 20 \u03bcM ThT and 100 mM NaCl under continuous shaking conditions, along with a 1 mm glass bead for homogenous mixing. The ThT fluorescence intensity was recorded in 30 min interval using a Tecan plate reader (excitation: 438 nm; emission: 495 nm; cut-off: 475 nm). TauK18 aggregation assay- 50 \u00b5M of TauK18 fragment with heparin (TauK18:Heparin 4:1) was incubated with or without CsgA (2 \u00b5M) in 14 mM MES buffer pH 6.8 at 37\u00b0C with continuous shaking in 96-well, black, flat bottom plates. 2 mm beads and 20 \u00b5M ThT was added to all the wells. The ThT fluorescence was monitored with previously mentioned parameters after 30 min in FLUOstar omega plate reader (BMG Labtech). Transmission electron microscopy- Aliquots of CsgA and \u03b1Syn reactions were taken at indicated timepoints. Five microliters of sample was applied on glow-discharged carbon-coated grids, incubated for 1 min and washed with MilliQ water before staining with 1% uranyl acetate. Samples were imaged on Jeol electron microscope (JEOL-1400 plus). Circular dichroism spectroscopy- \u03b1Syn alone or with CsgA (in 20 mM KPi pH 7.3) were analyzed using a Jasco J-810 spectropolarimeter from 190 nm to 250 nm at 25\u00b0C immediately after purification and at indicated timepoints.\n\n### Synuclein pathology and inflammatory responses\n\nCD11b enrichment- Animals were sedated with pentobarbital and perfused; whole brains were homogenized in PBS via passage through a 100 \u03bcm mesh filter, myelin debris were removed using magnetic separation with Myelin Removal Beads (Miltenyi Biotec, San Diego, CA), and subsequently CD11b positive enrichment performed similarly, via Microglia Microbeads (Miltenyi Biotec), according to manufacturer\u2019s instructions. Cells were immediately lysed in Trizol and RNA extracted with the DirectZol RNA extraction (Zymo Research). cDNA and qPCR performed as described above with primers- gapdh: 5\u2019-CATGGCCTTCCGTGTTCCTA-3\u2019 and 5\u2019-CCTGCTTCACCACCTTCTTGAT-3\u2019; il6: 5\u2019-TAGTCCTTCCTACCCCAATTTCC-3\u2019 and 5\u2019-TTGGTCCTTAGCCACTCCTTC-3\u2019, tyrosine hydroxylase: 5\u2019-CCAAGGTTCATTGGACGGC-3\u2019 and 5\u2019-CTCTCCTCGAATACCACAGCC-3\u2019; and tnfa; 5\u2019-CCCTCACACTCAGATCATCTTCT-3\u2019 and 5\u2019-gctacgacagtgggctacag-3\u2019. Synuclein imaging- Perfused whole brains were dissected and fixed with 4% (w/v) paraformaldehyde. 50 \u03bcm sections were generated via vibratome. For proteinase-K resistant staining, free-floating sections were treated briefly with 5 \u03bcg/mL proteinase K (NEB, Ipswich, MA) and stained with anti-alpha synuclein (1:1000 mouse; #610787 BD, Franklin Lakes, NJ), pS129-synuclein staining utilized anti-pS129syn (1:1000 rabbit; #ab51253 AbCam, Cambridge, UK) and anti-tyrosine hydroxylase (1:1000 mouse; MAB318, Millipore, Burlington, MA). Sections were stained with secondary anti-mouse IgG-AF488 (1:1000, Life Technologies, Carlsbad, CA), anti-rabbit IgG-546 (1:1000, Life Technologies) and Neurotrace (Life Technologies), mounted with ProFade Diamond DAPI (Life Technologies) and imaged with a 20x objective on a Zeiss LSM800 confocal microscope. Sections corresponding to\u00a0~1500 \u03bcm from midline were counted manually for TH+ cell bodies and pS129syn puncta in ImageJ software. Microglia reconstructions- Microglia were imaged and analyzed as previously described\u00a0(Erny et al., 2015; Sampson et al., 2016). Thin sections prepared as above were stained with anti-Iba1 (1:1000 rabbit, Wako, Richmond, VA) and anti-rabbit IgG-AF546 (1:1000, Life Technologies). Z-stacks were imaged at 1 \u03bcm steps and analyzed using Imaris software. ELISAs- For TNF\u03b1 and IL6 (eBioscience, San Diego, CA), \u03b1Syn (ThermoFisher), and dopamine (Eagle Biosciences, Nashua, NH) tissue homogenates were prepared in RIPA buffer containing protease inhibitor (ThermoFisher), and ELISA performed according to manufacturer\u2019s instructions with 100 \u03bcg of tissue. Multiplexed intestine (100 \u03bcg) and serum cytokine levels were measured on a Bio-Plex 200 using the Bio-Plex Mouse Cytokine 23-plex Assay (Biorad) according to manufacturer\u2019s instructions. Dot blot- Tissue homogenates were spotted onto 0.45 \u03bcm nitrocellulose membranes, in 1 \u03bcg/\u03bcL aliquots. Membranes were blocked with 5% dry skim milk in Tris-buffered saline and stained with anti-aggregated alpha-synuclein antibody (1:1000, MJFR-14-6-4-2, rabbit, AbCam) and anti-rabbit IgG-HRP (1:1000, Cell Signaling Technology, Danvers, MA), and detected with Clarity chemiluminescence substrate (BioRad) on a BioRad GelDoc XR and densitometry performed.\n\n### Intestinal injections\n\nSynthetic hexapeptides of CsgA (Nterm-QYGGNN-Cterm) and the non-amyloidogenic mutant N122A (Nterm-QYGGNA-Cterm) were purchased from Bio-Synthesis Inc (Lewisville, TX). Mice were anesthetized with isoflurane (1\u20134% vol/vol) and kept on a self-regulating heating pad throughout the procedure. A 10 \u00b5l Hamilton syringe fitted with a 36-gauge beveled needle was loaded with 30 \u00b5g of either hexapeptide in saline (9 \u00b5l total). Each animal was injected in three locations (both sides of pyloric antrum and duodenum [0.5 cm past the pyloric sphincter]; 3 \u00b5l each location) by inserting the needle tip bevel facing up into the intestine wall at a 15\u00b0 angle. After injection, the abdominal muscle/peritoneal layer and skin were sutured separately, then mice returned to home cages. Mice were injected subcutaneously with buprenorphine SR (1 mg/kg) and monitored for 3 days for normal food and water consumption.\n\n### Statistics and data availability\n\nData were analyzed in GraphPad Prism, with the analysis indicated in each figure legend. Statistical output and numerical source data presented within the manuscript are available within the supplementary information included with this manuscript.\n",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "a38ce5aa-9c99-4439-b562-c0729f2ece6e",
+      "submission_id": "bb3a4116-3f21-4c9d-8a8e-343aac5a0cbc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Isaac M Chiu, Harvard Medical School United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53111.sa1](https://doi.org/10.7554/eLife.53111.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis is an exciting study demonstrating how gut bacteria and associated curli proteins can promote \u03b1-synuclein aggregation and pathology both in the gut and in the brain that lead to behavioral deficits in mice. There is increasing interest in how the gut microbiome and pathogens can influence the spread and development of synucleinopathies such as Parkinson's disease. This study opens up questions of whether dysregulation of bacterial strains that produce curli or other similar proteins are associated with synucleinopathies in humans. Thank you for contributing your study.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A gut bacterial amyloid promotes \u03b1-synuclein aggregation and motor impairment in mice\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Reviewing Editor and Wendy Garrett as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michel Desjardins (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Sampson et al. present evidence that bacteria in the gut can lead to the emergence of motor impairment in a PD-susceptible mouse model through the action of a bacterial amyloid protein. They examined whether a bacterially produced amyloid protein, curli, could contribute to the aggregation of mammalian \u03b1Syn, leading to PD-related neurological dysfunction. The manuscript is well written and concise. The authors used a \"reductionist\" approach and demonstrated that amyloid-producing bacteria induce PD-like symptoms in \u03b1-synuclein overexpressing mice (ASO). They then went on to show that the curli proteins (bacterial amyloid) has a similar effect when introduced in the gut. These data further support the emerging concept that peripheral events in the gut contributes to the pathophysiological process leading to PD. The study is well focused and built around complimentary sets of experiments with microorganisms and their protein products. Behavioral analyses, as well as characterization of the modification of dopaminergic neurons in the brain are provided. Their data indicates that motor impairment can occur without a significant loss of TH neurons in the substantia nigra but a decrease of dopamine in the striatum (as shown in a recent article by Matheoud et al., 2019). Finally, they used epigallocatechin gallate (EGCG) to block curli's ability to form biofilms and found that it blocked CsgA- accelerated \u03b1Syn formation.\n\nAll reviewers were overall enthusiastic about the findings presented in this study. However, they agree that it would be important for the authors to show that the motor impairment in their model can be reversed by L-DOPA treatment. Better clarity also about presented data (immunoblots, ENS analysis) would strengthen the manuscript.\n\nEssential revisions:\n\n1) If the behavioral findings are due to exacerbation of PD-like motor phenotype as the authors propose, then the authors should be able provide behavioral data showing that L-DOPA alleviates or reduces the behavioral abnormalities.\n\n2) There seems to be a paucity of pathologic \u03b1Syn in TH neurons and the biochemical evidence is weak. It would help if the authors showed their full-length immunoblots of \u03b1Syn from the soluble versus insoluble fractions.\n\n3) For neuropathology in the gut, can there be quantitative analysis of enteric neurons? The myenteric plexus was stained for \u03b1-synuclein and PGP9.5, but the numbers of enteric neurons were not quantified. Is there loss of neurons in the proximal large intestine?\n\n4) A better explanation of how curli exacerbates the motor phenotype would help. Is it through enhancing inflammation, affecting DA metabolism or affecting other areas that express high levels of \u03b1-synuclein in these transgenic mice? Is there a correlation between aggregate burden or inflammation and behavior?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A gut bacterial amyloid promotes \u03b1-synuclein aggregation and motor impairment in mice\" for further consideration by eLife. Your revised article has been evaluated by Wendy Garrett (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nAll reviewers agree that improvements have been made including additional data for quantification of neurons in the gut myenteric plexus, and revisions to the text.\n\nHowever, there is a major point that must be addressed with necessary revisions to the text to tone down the relevance of their animal model and findings in relation to PD given the inability to reverse the phenotype with L-DOPA in this model (Point #1). An additional point is raised concerning the full immunoblot (Point #2).\n\n1) The authors cited prior published work that the behavioral deficits in the Thy1-\u03b1Syn mice are not responsive to L-DOPA and as such argue that this experiment will not provide useful information. While we agree with the authors that in light of these prior published works, L-DOPA experiments are not likely to provide useful information. However, the fact that L-DOPA does not have an effect on the Thy1-\u03b1Syn mice indicates that the authors' claims that behavioral findings are due to exacerbation of PD-like motor phenotypes is specious. Since L-DOPA does not rescue the phenotype, while we understand their arguments, this animal model is not reflective of PD. Yet the authors continue to make statements throughout the revised paper that the motor deficits are consistent with the hallmarks of PD. For instance, the Abstract states \"Escherichia coli exacerbates hallmark disease features such as motor impairment and \u03b1Syn pathology in the gut and brain.\"\n\nThe authors need to therefore take a more balanced approach and present the Thy1-\u03b1Syn mice as a model of \u03b1Syn pathophysiology with accompanying behavior deficits and they should not make claims regarding motor impairment and the link to PD. In other words, the Thy1-\u03b1Syn mice represent a model of \u03b1Syn induced behavioral abnormalities only and claims regarding PD should be removed from the paper.\n\n2) We could not easily find the requested full immunoblot of soluble vs. insoluble \u03b1-synuclein fractionations. It's currently in an embedded tab of an excel file: is there a way to post this on the actual figure instead of as a source data file (Figure 1\u2014figure supplement 2D)?\n",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8f61f111-5549-470c-869f-9daf2d6f180b",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C1",
+      "claim": "Thy1-\u03b1Syn mice overexpress wild-type human \u03b1-synuclein",
+      "claim_type": "EXPLICIT",
+      "source": "In mice overexpressing the human amyloid \u03b1-synuclein (\u03b1Syn), we reveal that colonization with curli-producing Escherichia coli promotes \u03b1Syn pathology in the gut and the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that the mice overexpress human \u03b1-synuclein in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "ae3a6817-facf-439a-a922-5b725560d4ad",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C2",
+      "claim": "Colonization with curli-producing Escherichia coli promotes \u03b1Syn pathology in the gut and brain of Thy1-\u03b1Syn mice",
+      "claim_type": "EXPLICIT",
+      "source": "In mice overexpressing the human amyloid \u03b1-synuclein (\u03b1Syn), we reveal that colonization with curli-producing Escherichia coli promotes \u03b1Syn pathology in the gut and the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "30700cfd-5b1a-4447-9496-d37225157fcd",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C3",
+      "claim": "Curli expression is required for E. coli to exacerbate \u03b1Syn-induced behavioral deficits",
+      "claim_type": "EXPLICIT",
+      "source": "Curli expression is required for E. coli to exacerbate \u03b1Syn-induced behavioral deficits, including intestinal and motor impairments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract and supported by comparison experiments with curli-deficient mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "386a618d-c0b8-4d87-b023-6865534472d3",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C4",
+      "claim": "Purified curli subunits accelerate \u03b1Syn aggregation in biochemical assays",
+      "claim_type": "EXPLICIT",
+      "source": "Purified curli subunits accelerate \u03b1Syn aggregation in biochemical assays, while oral treatment of mice with a gut-restricted amyloid inhibitor prevents curli-mediated acceleration of pathology and behavioral abnormalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by in vitro aggregation assays shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "d5c33082-1d8f-4c6c-9fef-c96fcc2a23f2",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C5",
+      "claim": "Oral treatment with a gut-restricted amyloid inhibitor prevents curli-mediated acceleration of pathology and behavioral abnormalities",
+      "claim_type": "EXPLICIT",
+      "source": "Purified curli subunits accelerate \u03b1Syn aggregation in biochemical assays, while oral treatment of mice with a gut-restricted amyloid inhibitor prevents curli-mediated acceleration of pathology and behavioral abnormalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by EGCG treatment experiments in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "ab0ef323-176a-4668-b85f-a5a433b7a974",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C6",
+      "claim": "Exposure to microbial amyloids in the gastrointestinal tract can accelerate \u03b1Syn aggregation and disease in the gut and brain",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that exposure to microbial amyloids in the gastrointestinal tract can accelerate \u03b1Syn aggregation and disease in the gut and the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion proposed by the authors based on their experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "16d9726c-9e11-4d51-b881-7ac6ab3a283e",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C7",
+      "claim": "Synucleinopathies include Parkinson's disease, Lewy Body disease, and Multiple System Atrophy",
+      "claim_type": "EXPLICIT",
+      "source": "Synucleinopathies are one family of amyloid disease, which includes Parkinson's disease (PD), Lewy Body disease (LBD), and Multiple System Atrophy (MSA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge cited in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "d58ae3a2-16af-4b55-b9b0-6e60762474aa",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C8",
+      "claim": "Accumulation of \u03b1-Synuclein into insoluble amyloid aggregations leads to inflammation and neuronal dysfunction",
+      "claim_type": "EXPLICIT",
+      "source": "Central to their pathogenesis is the accumulation of the neuronal protein \u03b1-Synuclein (\u03b1Syn) into insoluble amyloid aggregations, which ultimately leads to inflammation and neuronal dysfunction (Jucker and Walker, 2013; Brettschneider et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "d36a2629-095b-4ca6-8fb2-febff0527c70",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C9",
+      "claim": "\u03b1Syn aggregation can contribute to the death of dopaminergic neurons in specific brain regions, resulting in motor symptoms",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1Syn aggregation can contribute to the death of dopaminergic neurons in specific brain regions, resulting in motor symptoms (Poewe et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "7fc899d9-4159-4e5e-92b3-f8803f074f92",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C10",
+      "claim": "Accumulation of \u03b1Syn aggregates may first occur at peripheral sites such as the olfactory epithelium or gastrointestinal tract before spreading to the brain",
+      "claim_type": "EXPLICIT",
+      "source": "Clinical and epidemiological data suggest that accumulation of \u03b1Syn aggregates may first occur at peripheral sites, such as the olfactory epithelium or gastrointestinal (GI) tract, before spreading to the brain (Braak et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior clinical and epidemiological data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "14233998-0aeb-4eef-9af0-59228e1e02ef",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C11",
+      "claim": "Individuals with synucleinopathies often display constipation and GI dysfunctions years prior to movement dysfunction onset",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals diagnosed with various synucleinopathies often display constipation and other GI dysfunctions years prior to the onset of movement dysfunction (Verbaan et al., 2007; Colosimo, 2011; Engen et al., 2017; Mertsalmi et al., 2017; Sakakibara et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "26a59434-5c6c-43e2-a8e0-f0ae377be885",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C12",
+      "claim": "Experimental evidence exists for prion-like spread of \u03b1Syn aggregates",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental evidence exists for a prion-like spread of \u03b1Syn aggregates (Woerman et al., 2015), including propagation from the gut to the brain via the vagus nerve and/or spinal cord in rodent models (Holmqvist et al., 2014; Uemura et al., 2018; Van Den Berge et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "81867538-cb19-48db-903b-95e3ee9c60b7",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C13",
+      "claim": "Truncal vagotomy is associated with decreased risk of Parkinson's disease in humans",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, recent epidemiological studies suggest an association between truncal vagotomy and appendectomy with a decreased risk of PD (Svensson et al., 2015; Liu et al., 2017; Killinger et al., 2018), and in increased risk of comorbidity with inflammatory bowel disease (IBD) (Hui et al., 2018; Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to epidemiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "8748a799-7873-4db5-8069-e174b61aa23b",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C14",
+      "claim": "Inflammatory bowel disease is associated with increased risk of Parkinson's disease comorbidity",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, recent epidemiological studies suggest an association between truncal vagotomy and appendectomy with a decreased risk of PD (Svensson et al., 2015; Liu et al., 2017; Killinger et al., 2018), and in increased risk of comorbidity with inflammatory bowel disease (IBD) (Hui et al., 2018; Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to epidemiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "4412fa9b-b6e8-4048-a1b3-2378a29aca4a",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C15",
+      "claim": "The gut microbiome impacts development and function of the immune, metabolic and nervous systems",
+      "claim_type": "EXPLICIT",
+      "source": "The gut is colonized with a complex microbiome that impacts development and function of the immune, metabolic and nervous systems (Fung et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "ed00d4c5-2616-444b-a436-ed86f6c72d18",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C16",
+      "claim": "Enterobacteriaceae can produce functional amyloid proteins termed curli",
+      "claim_type": "EXPLICIT",
+      "source": "Enterobacteriaceae, highly prevalent within the gut of humans, can produce functional amyloid proteins termed curli (Tursi and T\u00fckel, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "6928f339-ec36-4c7e-a508-0c32c6858e3a",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C17",
+      "claim": "Curli fibers are formed by bacterial secretion of unfolded CsgA that aggregates extracellularly",
+      "claim_type": "EXPLICIT",
+      "source": "Curli fibers are formed by bacterial secretion of an unfolded amyloid, CsgA, that subsequently aggregates extracellularly to form biofilms, mediate adhesion to epithelial cells, and are involved in bacteriophage defense (Tursi and T\u00fckel, 2018; Vidakovic et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "61f7098c-e325-4cb4-8646-dc24e54316b5",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C18",
+      "claim": "Exposure to curli modulates host inflammatory responses within the intestinal tract and periphery",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to curli not only modulates host inflammatory responses within the intestinal tract and periphery (Gallo et al., 2015; Chen et al., 2016; Tursi and T\u00fckel, 2018), but oral administration of curli-producing bacteria can also increase production and aggregation of the amyloid protein \u03b1Syn in aged rats and nematodes (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "c029a07b-8493-4a43-94b0-7062039091fe",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C19",
+      "claim": "Oral administration of curli-producing bacteria increases production and aggregation of \u03b1Syn in aged rats and nematodes",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to curli not only modulates host inflammatory responses within the intestinal tract and periphery (Gallo et al., 2015; Chen et al., 2016; Tursi and T\u00fckel, 2018), but oral administration of curli-producing bacteria can also increase production and aggregation of the amyloid protein \u03b1Syn in aged rats and nematodes (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "14ef4db2-4e35-44d2-8e5f-99cf126f2ad5",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C20",
+      "claim": "Native bacterial chaperones of curli can transiently interact with \u03b1Syn and modulate its aggregation",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies demonstrate that native, bacterial chaperones of curli are capable of transiently interacting with \u03b1Syn and modulating its aggregation (Chorell et al., 2015; Evans et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "ab38d5d8-e20a-426e-859b-18a70d70fdf4",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C21",
+      "claim": "Diverse human amyloid proteins including \u03b1Syn, A\u03b2, PrPC, and Tau can accelerate amyloidogenesis of heterologous mammalian amyloid proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, diverse human amyloid proteins including \u03b1Syn, amyloid beta (A\u03b2), cellular prion protein (PrPC), and Tau can accelerate the amyloidogenesis of heterologous mammalian amyloid proteins (Clinton et al., 2010; Brettschneider et al., 2015; Katorcha et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "70fac0fa-bb07-4256-b710-3eaa10efb11c",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C22",
+      "claim": "Lesions containing mixed human amyloids have been observed in neurodegenerative brains",
+      "claim_type": "EXPLICIT",
+      "source": "Lesions containing mixed human amyloids have been observed in neurodegenerative brains (Rahimi and Kovacs, 2014; Spires-Jones et al., 2017), implicating interactions between different amyloidogenic proteins in resulting pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "3efa64f4-6335-452f-aa8e-dd022d052aa8",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C23",
+      "claim": "Depletion of the microbiome reduces pathophysiology in Thy1-\u03b1Syn mice",
+      "claim_type": "EXPLICIT",
+      "source": "We previously identified that depletion of the microbiome reduces pathophysiology in Thy1-\u03b1Syn mice (alpha-synuclein overexpressing; ASO mice) (Sampson et al., 2016), which overexpress wild-type human \u03b1Syn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "9eb0adc1-0468-430d-8d9e-258f764d58c7",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C24",
+      "claim": "Thy1-\u03b1Syn mice display increased neuroinflammation, GI dysfunction, and progressive motor abnormalities due to accumulation and aggregation of neuronal \u03b1Syn",
+      "claim_type": "EXPLICIT",
+      "source": "Due to accumulation and aggregation of neuronal \u03b1Syn, mice display increased neuroinflammation, GI dysfunction, and progressive motor abnormalities (Rockenstein et al., 2002; Chesselet et al., 2012; Wang et al., 2012) that are relevant in the study of synucleinopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior characterizations of the mouse model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "f9bc7009-375c-4b41-a44b-4ca8a8992d77",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C25",
+      "claim": "Increased colonization and mucosal association with Enterobacteriaceae have been reported in individuals with Parkinson's disease compared to healthy controls",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, increased colonization and mucosal association with Enterobacteriaceae, such as E. coli, have been reported in individuals with PD compared to healthy controls (Forsyth et al., 2011), as well as a positive association of Enterobacteriaceae abundance with disease severity (Scheperjans et al., 2015; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "1bf096a8-24bc-4d60-bdc5-0c7c0d7659f1",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C26",
+      "claim": "Enterobacteriaceae abundance is positively associated with Parkinson's disease severity",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, increased colonization and mucosal association with Enterobacteriaceae, such as E. coli, have been reported in individuals with PD compared to healthy controls (Forsyth et al., 2011), as well as a positive association of Enterobacteriaceae abundance with disease severity (Scheperjans et al., 2015; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "0e77da05-4ef0-4225-93cf-9b073cce7a16",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C27",
+      "claim": "E. coli exacerbated \u03b1Syn-dependent motor defects in ASO animals compared to B. fragilis and SFB",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli exacerbated the \u03b1Syn-dependent motor defects in ASO animals across a battery of tests, compared to the other taxa (Figure 1A\u2013F and Figure 1\u2014figure supplement 1A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "e7099b4c-3fd4-4569-addb-10de24449210",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C28",
+      "claim": "Colonization with curli-deficient E. coli did not elicit robust motor impairment in ASO mice",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluation of coordinated motor function revealed that colonization with the curli-deficient strain did not elicit robust motor impairment (Figure 1A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "d960a9bf-1e01-4340-b7fa-61e55d8b5414",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C29",
+      "claim": "The curli-deficient mutant did not display alterations to colonization levels or mucosal association",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe curli-dependent alterations to colonization levels or mucosal association, despite detecting csgA expression (Figure 1\u2014figure supplement 1F\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "66185d55-4fe2-4670-84b8-896c1a0eee1a",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C30",
+      "claim": "The curli-deficient mutant did not display alterations to lipopolysaccharide potency or structure",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the curli-deficient mutant did not display alterations to lipopolysaccharide potency or structure (Figure 1\u2014figure supplement 1J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "f4112195-fbd2-46b3-aef7-85e930575bad",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C31",
+      "claim": "ASO mice colonized with curli-producing bacteria displayed increased \u03b1Syn fibril reactivity and detergent-insoluble \u03b1Syn in the midbrain",
+      "claim_type": "EXPLICIT",
+      "source": "ASO mice colonized with curli-producing bacteria displayed increased \u03b1Syn fibril reactivity and detergent-insoluble \u03b1Syn in the midbrain compared to mice with the \u0394csgBAC strain, despite similar transgene production (Figure 1\u2014figure supplement 2A\u2013D,F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "c98f6f87-11c9-4f53-ac47-27a6da915f18",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C32",
+      "claim": "Mice colonized with WT E. coli show increased proteinase K-resistant \u03b1Syn inclusions in the midbrain",
+      "claim_type": "EXPLICIT",
+      "source": "Further, mice colonized with WT E. coli show increased proteinase K-resistant \u03b1Syn inclusions in the midbrain (Figure 1I and Figure 1\u2014figure supplement 2I), with little alteration to pS129-\u03b1Syn in the frontal cortex (Figure 1\u2014figure supplement 2K,L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1 and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "9ec61a19-5d1c-492b-92c2-0d6552225da6",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C33",
+      "claim": "Increased pS129-\u03b1Syn was observed in the proximal large intestine of ASO mice mono-colonized with curli-producing E. coli",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed increased pS129-\u03b1Syn in the proximal large intestine, and elevated \u03b1Syn fibril reactivity in the duodenum and proximal large intestine of ASO mice mono-colonized with curli-producing E. coli (Figure 1\u2014figure supplement 2M\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "c1eecd76-1b4f-4141-b66c-870ae7d1264e",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C34",
+      "claim": "No decreases in total striatal dopamine, midbrain TH expression, TH+ neurons, or myenteric PGP9.5+ neurons were observed under the colonization conditions and ages assessed",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these prior observations, we do not observe decreases in total striatal dopamine, midbrain TH expression, TH+ neurons, nor myenteric PGP9.5+ neurons, under the colonization conditions and ages assessed, suggesting pathology and motor deficits are independent of dopamine or neuron loss (Figure 1, figure supplement S2Q-S).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "efc3546d-45c9-4941-8e77-8aa71f05aa53",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C35",
+      "claim": "Mono-colonization of ASO mice with curli-producing E. coli resulted in increased expression of IL-6 and TNF\u03b1 in brain-derived CD11b+ cells",
+      "claim_type": "EXPLICIT",
+      "source": "Mono-colonization of ASO mice with curli-producing E. coli resulted in increased expression of the proinflammatory cytokines interleukin 6 (IL-6) and tumor necrosis factor alpha (TNF\u03b1) in brain-derived CD11b+ cells, and increased cytokine production in the midbrain and striatum (Figure 1\u2014figure supplement 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "30772a7a-3ebb-4256-a144-3e0e556dd0d9",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C36",
+      "claim": "Iba+ microglia morphologies indicated reduced activation in ASO mice colonized with the curli-deficient strain",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Iba+ microglia morphologies indicated reduced activation in ASO mice colonized with the curli-deficient strain (Figure 1\u2014figure supplement 3D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "850b1d39-f763-40fa-bbcb-c0c99827a99e",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C37",
+      "claim": "Curli-producing E. coli increased cytokine and chemokine production in colonic tissue irrespective of genotype",
+      "claim_type": "EXPLICIT",
+      "source": "Multiplexed ELISA analysis revealed increased cytokine and chemokine production in colonic tissue of mice mono-colonized with curli-producing E. coli, irrespective of genotype (Figure 1\u2014figure supplement 3H,J,K), and no noteworthy changes to serum cytokines of ASO mice based on colonization status (Figure 1\u2014figure supplement 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "1933a695-5024-4a3b-89eb-2b4998cf37e7",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C38",
+      "claim": "Mice harboring a microbiota containing WT E. coli displayed significantly impaired motor and GI performance compared to animals with a complex microbiota plus the curli-deficient strain",
+      "claim_type": "EXPLICIT",
+      "source": "Mice harboring a microbiota containing WT E. coli displayed significantly impaired motor and GI performance compared to animals with a complex microbiota plus the curli-deficient strain (Figure 2A\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "60673300-2628-4bdc-92d4-443b157ddd9c",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C39",
+      "claim": "Enrichment of curli-producing bacteria resulted in increased \u03b1Syn fibril reactivity in the midbrain and elevated pS129-\u03b1Syn deposition in the substantia nigra",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, enrichment of curli-producing bacteria resulted in increased \u03b1Syn fibril reactivity in the midbrain and elevated pS129-\u03b1Syn deposition in the SN, without changes to the number of TH+ neurons (Figure 2H and Figure 2\u2014figure supplement 1F\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "d507d79d-a520-4b71-8d32-96debc58d8fc",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C40",
+      "claim": "Purified monomeric CsgA accelerated production of \u03b1Syn aggregates during in vitro biochemical amyloid assays",
+      "claim_type": "EXPLICIT",
+      "source": "Purified monomeric CsgA accelerated production of \u03b1Syn aggregates during in vitro biochemical amyloid assays (Figure 3A\u2013C and Figure 3\u2014figure supplement 1A), even at concentrations below which CsgA self-aggregates (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "839eddf6-b06e-45d6-98a5-3e03f32b776e",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C41",
+      "claim": "CsgA accelerates \u03b1Syn aggregation at concentrations below which CsgA self-aggregates",
+      "claim_type": "EXPLICIT",
+      "source": "Purified monomeric CsgA accelerated production of \u03b1Syn aggregates during in vitro biochemical amyloid assays (Figure 3A\u2013C and Figure 3\u2014figure supplement 1A), even at concentrations below which CsgA self-aggregates (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "ee907772-54c9-4991-8fe3-17175dde29bd",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C42",
+      "claim": "\u03b1Syn fibrils purified from CsgA-accelerated reactions maintained an ability to accelerate \u03b1Syn amyloidogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1Syn fibrils purified from these reactions maintained an ability to accelerate \u03b1Syn amyloidogenesis (Figure 3\u2014figure supplement 1B,C), suggesting that CsgA-induced \u03b1Syn aggregates are propagation-competent, similar to other amyloids (Spires-Jones et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "2e2dbbe9-c501-4cf0-8a90-80773da0480b",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C43",
+      "claim": "No direct interaction was detected between purified CsgA and \u03b1Syn monomers by surface plasmon resonance",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we could not detect a direct interaction between purified CsgA and \u03b1Syn monomers by surface plasmon resonance (Figure 3\u2014figure supplement 1D), perhaps indicating transient interactions or requirements for prior oligomerization of either or both proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "a64d9bda-fd0c-4216-a590-e83d30e8bcf9",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C44",
+      "claim": "Tau aggregation was not accelerated by CsgA",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike \u03b1Syn, Tau aggregation was not accelerated by CsgA (Figure 3\u2014figure supplement 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "df74281b-929f-4e57-9b03-71cb71559f31",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C45",
+      "claim": "Non-amyloidogenic CsgA (SlowGo) did not augment \u03b1Syn aggregation in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "Native amyloid-forming properties of CsgA are required, as a non-amyloidogenic form of CsgA (CsgA:Q49A/N54A/Q139A/N144A; 'SlowGo' Wang and Chapman, 2008) did not augment \u03b1Syn aggregation in vitro (Figure 3\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "8dbca45e-45c3-41e0-a659-c808c0940cf5",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C46",
+      "claim": "Motor performance in ASO mice harboring SlowGo-producing E. coli was less severe compared to mice colonized with WT bacteria",
+      "claim_type": "EXPLICIT",
+      "source": "Motor performance in ASO mice harboring SlowGo-producing E. coli was less severe in comparison to mice colonized with WT bacteria (Figure 3\u2014figure supplement 2D\u2013H), although not to the extent of the \u0394csgBAC strain, qualitatively (see Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "ce91ede1-3784-474b-b6a0-d4a77482023c",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C47",
+      "claim": "Intra-intestinal delivery of amyloidogenic CsgA peptide resulted in progressive motor and GI dysfunction in SPF ASO mice",
+      "claim_type": "EXPLICIT",
+      "source": "Intra-intestinal delivery of amyloidogenic CsgA peptide, but not the mutant peptide, resulted in progressive motor and GI dysfunction (Figure 3\u2014figure supplement 3A\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "911d7483-6f9c-47bf-afb6-0969f54eac09",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C48",
+      "claim": "Increased \u03b1Syn fibrils were detected in the midbrains of animals injected with amyloidogenic CsgA peptide",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, increased \u03b1Syn fibrils were detected in the midbrains of amyloidogenic peptide-injected animals (Figure 3\u2014figure supplement 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "f08cbc91-8297-43a4-8c25-eb199e20eb87",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C49",
+      "claim": "EGCG physically inhibits amyloid formation, including \u03b1Syn aggregation",
+      "claim_type": "EXPLICIT",
+      "source": "Epigallocatechin gallate (EGCG) is a plant-derived, dietary polyphenol that physically inhibits amyloid formation, including \u03b1Syn aggregation (Bieschke et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "c9a5ba49-af5e-46cc-b014-b3f4eb8ab418",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C50",
+      "claim": "EGCG blocks CsgA amyloidogenesis and represses csgA transcript expression in E. coli",
+      "claim_type": "EXPLICIT",
+      "source": "EGCG is also capable of blocking CsgA amyloidogenesis and represses csgA transcript expression in E. coli through activation of specific stress response pathways within the bacterial cell (Serra et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "17be0545-92cc-468d-884d-474b4c504eb1",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C51",
+      "claim": "EGCG treatment did not impair E. coli growth in culture but significantly reduced biofilm formation",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal here that EGCG treatment did not impair E. coli growth in culture, but significantly reduced biofilm formation, a process dependent on the production and assembly of curli (Figure 4\u2014figure supplement 1A,B) (Tursi and T\u00fckel, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "da327b06-aa98-47bc-b59a-222e270cb0aa",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C52",
+      "claim": "EGCG inhibited CsgA-accelerated \u03b1Syn amyloid formation during in vitro biochemical aggregation assays",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, EGCG also inhibited CsgA-accelerated \u03b1Syn amyloid formation during in vitro biochemical aggregation assays (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "e8463501-2d06-494a-90d3-cb660015152e",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C53",
+      "claim": "EGCG remains largely gut-restricted in rodents and humans and is not readily bioavailable in circulation or brain tissues following oral administration",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, EGCG remains largely gut-restricted in rodents and humans and is not readily bioavailable in circulation or brain tissues following oral administration (Lambert et al., 2003; Lin et al., 2007; Cai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior pharmacokinetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "a06cca37-48fe-4946-91b8-71a0fb60fcdb",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C54",
+      "claim": "Oral treatment of WT E. coli mono-colonized ASO mice with EGCG did not affect fecal E. coli abundance but resulted in decreased csgA production",
+      "claim_type": "EXPLICIT",
+      "source": "Oral treatment of wild-type E. coli mono-colonized ASO mice with EGCG did not affect fecal E. coli abundance, but resulted in decreased csgA production (Figure 4B and Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "46017695-710c-439a-a208-c78c341af24e",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C55",
+      "claim": "EGCG improved both motor and GI defects exacerbated by curli-producing E. coli in ASO mice",
+      "claim_type": "EXPLICIT",
+      "source": "Assessment of motor performance revealed that EGCG improved both motor and GI defects exacerbated by curli-producing E. coli in ASO mice (Figure 4C\u2013I and Figure 4\u2014figure supplement 1D\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "345a03fd-7911-42f6-b0e2-0b30ddf9457c",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C56",
+      "claim": "Oral EGCG administration reduced \u03b1Syn aggregation and pS129-\u03b1Syn deposition in both the striatum and midbrain",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, oral EGCG administration reduced \u03b1Syn aggregation and pS129-\u03b1Syn deposition in both the striatum and midbrain (Figure 4J and Figure 4\u2014figure supplement 1J\u2013M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "313c1f01-be3f-4a12-88c9-7a0f7960068b",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C57",
+      "claim": "Microglia morphological changes were limited in EGCG-treated mice",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, microglia morphological changes were limited in EGCG-treated mice (Figure 4\u2014figure supplement 1O\u2013R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "42bf44bf-d319-4223-8770-29f011e25873",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C58",
+      "claim": "EGCG has antioxidant and anti-inflammatory activities that may contribute to the rescue of CsgA-accelerated, \u03b1Syn-dependent pathophysiology",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its ability to directly inhibit aggregation of bacterial and host-derived amyloids, EGCG has antioxidant and anti-inflammatory activities (Li et al., 2004) that may also contribute to the rescue of CsgA-accelerated, \u03b1Syn-dependent pathophysiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature and represents speculation about mechanisms.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "9779b6f6-067a-4046-8e38-cbcc2096d23b",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C59",
+      "claim": "Curli production in the gut of non-susceptible mice does not impair motor performance at the timepoints examined",
+      "claim_type": "EXPLICIT",
+      "source": "Curli production in the gut of non-susceptible mice does not impair motor performance at the timepoints examined, suggesting that this microbial trigger is not sufficient, but rather requires additional predisposing factors to promote disease outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "95970670-b952-430a-a36f-c313af9b86c9",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C60",
+      "claim": "Inhibiting amyloid formation in the gut correlates with improvements in curli-induced behaviors and pathology",
+      "claim_type": "EXPLICIT",
+      "source": "Further, inhibiting amyloid formation in the gut correlates with improvements in curli-induced behaviors and pathology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the EGCG treatment experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "346cfc85-eba3-4366-bee2-73717715381a",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C61",
+      "claim": "Aggregates of both CsgA and \u03b1Syn are capable of signaling through Toll-like receptor 2 (TLR2) leading to increased inflammatory responses",
+      "claim_type": "EXPLICIT",
+      "source": "Aggregates of both CsgA and \u03b1Syn are capable of signaling through the innate immune receptor Toll-like receptor 2 (TLR2) leading to increased inflammatory responses (T\u00fckel et al., 2009; Poewe et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "df76346f-f0c9-437f-acfb-333dd9720c6a",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C62",
+      "claim": "Inhibiting TLR2 in \u03b1Syn-based mouse models leads to improved pathology and motor outcomes",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, inhibiting TLR2 in \u03b1Syn-based mouse models leads to improved pathology and motor outcomes (Kim et al., 2015; Kim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "174b6231-8048-4dc3-814c-ea24f674b550",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C63",
+      "claim": "Synucleinopathy is linked to marked changes to the structure of the microbiome",
+      "claim_type": "EXPLICIT",
+      "source": "Synucleinopathy is linked to marked changes to the structure of the microbiome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion and supported by subsequent citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "b27f4101-81b2-4c49-9411-06f9ea9a4955",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C64",
+      "claim": "Numerous studies have reported microbiome differences in persons with Parkinson's disease compared to unaffected individuals",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have reported microbiome differences in persons with PD compared to unaffected individuals (Hasegawa et al., 2015; Keshavarzian et al., 2015; Scheperjans et al., 2015; Unger et al., 2016; Bedarf et al., 2017; Hill-Burns et al., 2017; Hopfner et al., 2017; Li et al., 2017; Barichella et al., 2019; Lin et al., 2018); however, examination of the gut microbiome during other synucleinopathies, such as MSA or LBD are still in their infancy (Engen et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "02e7e269-9e3d-45a6-bbad-43d966ab7626",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C65",
+      "claim": "Some reports have identified the family Enterobacteriaceae as enriched in Parkinson's disease compared to unaffected individuals",
+      "claim_type": "EXPLICIT",
+      "source": "Some reports have identified the family Enterobacteriaceae as enriched in PD compared to unaffected individuals (Unger et al., 2016; Li et al., 2017; Barichella et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "a044e73a-764f-4d81-90cb-4dd063b377c8",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C66",
+      "claim": "Enrichment of Enterobacteriaceae is positively associated with worsened motor symptoms in Parkinson's disease",
+      "claim_type": "EXPLICIT",
+      "source": "In those studies which performed correlation analysis between disease severity and microbiome composition, enrichment of Enterobacteriaceae is observed to be positively associated with worsened motor symptoms (Scheperjans et al., 2015; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "d961703e-2607-495f-b291-7f62051ca496",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C67",
+      "claim": "Transplant of fecal microbiomes from Parkinson's disease patients into ASO mice results in greater motor deficits than microbiomes from healthy controls",
+      "claim_type": "EXPLICIT",
+      "source": "In experimental models, however, transplant of fecal microbiomes from PD patients into ASO mice results in greater motor deficits than microbiomes from healthy controls (Sampson et al., 2016), suggesting functional consequences to changes in gut microbial composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "880731a7-307d-4c23-9b4a-c1d61b924b72",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C68",
+      "claim": "Enrichment of Proteus mirabilis or intestinal administration of its purified LPS impairs the dopaminergic system of mice and increases susceptibility to neurotoxins",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, enrichment of the gut bacterium Proteus mirabilis, or intestinal administration of its purified LPS, impairs the dopaminergic system of mice and increases susceptibility to neurotoxins (Choi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "f738a033-b338-4af5-bf20-8fc88b615228",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C69",
+      "claim": "Infection with Gram-negative bacteria including Citrobacter sp. can trigger pathological processes leading to neurodegenerative immune responses in the brain and loss of midbrain dopamine production",
+      "claim_type": "EXPLICIT",
+      "source": "Infection with Gram-negative bacteria, including Citrobacter sp. (a taxonomic relative of E. coli), can trigger a pathological process leading to neurodegenerative immune responses in the brain and loss of midbrain dopamine production in a PD-relevant mouse model (Matheoud et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "b0db15ca-198e-4a43-b163-1441020e980a",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C70",
+      "claim": "Specific microbiome-derived metabolites promote microglia maturation",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, specific microbiome-derived metabolites promote microglia maturation (Erny et al., 2015) and enhance \u03b1Syn-dependent pathology in germ-free mice (Sampson et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "9bce6b3a-48a7-473d-842c-f432500e8daf",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C71",
+      "claim": "Specific microbial metabolites or fecal microbiome transplants may provide protection from neurodegenerative insults",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, specific microbial metabolites (Blacher et al., 2019) or fecal microbiome transplants (Sun et al., 2018) may provide protection from neurodegenerative insults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "d67ad487-d198-456c-a4a7-1c2cf40210fc",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C72",
+      "claim": "The Pseudomonas sp. functional amyloid FapC may accelerate \u03b1Syn aggregation in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Pseudomonas sp. functional amyloid, FapC, may also accelerate \u03b1Syn aggregation in vitro (Christensen et al., 2019), and bacterial chaperones of CsgA modulate \u03b1Syn amyloidogenesis (Evans et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "a50f167b-2981-443f-b953-4c43f6ebc112",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C73",
+      "claim": "CsgA accelerates amyloid \u03b2 aggregation in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, CsgA is observed to accelerate amyloid \u03b2 aggregation in vitro (Hartman et al., 2013; Perov et al., 2019), as well as the disease-associated amyloids, islet amyloid polypeptide (IAPP) and semen enhancer of viral infection (SEVI) in vitro (Hartman et al., 2013), and serum amyloid A in mice (Lundmark et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "03e1265b-b117-4267-acb5-098e125cf779",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C74",
+      "claim": "CsgA accelerates islet amyloid polypeptide (IAPP) and semen enhancer of viral infection (SEVI) aggregation in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, CsgA is observed to accelerate amyloid \u03b2 aggregation in vitro (Hartman et al., 2013; Perov et al., 2019), as well as the disease-associated amyloids, islet amyloid polypeptide (IAPP) and semen enhancer of viral infection (SEVI) in vitro (Hartman et al., 2013), and serum amyloid A in mice (Lundmark et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "7354644d-68f9-4152-944a-389c451fd2f6",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C75",
+      "claim": "CsgA accelerates serum amyloid A aggregation in mice",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, CsgA is observed to accelerate amyloid \u03b2 aggregation in vitro (Hartman et al., 2013; Perov et al., 2019), as well as the disease-associated amyloids, islet amyloid polypeptide (IAPP) and semen enhancer of viral infection (SEVI) in vitro (Hartman et al., 2013), and serum amyloid A in mice (Lundmark et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "bdddd6fa-8d0a-46e2-b408-f03e9225dd1a",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C76",
+      "claim": "Gut bacteria may modulate amyloid-driven diseases including synucleinopathy, Alzheimer's disease, and amyotrophic lateral sclerosis",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging evidence in diverse animal models suggests that gut bacteria may modulate amyloid-driven diseases, not only in synucleinopathy as we and others describe, but Alzheimer's disease (Harach et al., 2017; Dodiya et al., 2019) and amyotrophic lateral sclerosis (ALS) as well (Blacher et al., 2019), providing justification for future human studies and revealing possible new targets for interventions that may prevent, slow, or halt amyloid formation and neurodegenerative disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and represents a broader conclusion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "440c1490-6ba6-4a33-b543-5accd30a439e",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C77",
+      "claim": "Thy1-\u03b1Syn mice were generated on a BDF1 background through breeding female BDF1 background Thy1-\u03b1Syn mice to male BDF1 offspring",
+      "claim_type": "EXPLICIT",
+      "source": "Male wild-type and Thy1-\u03b1Syn mice (Line 61, with permission from University of California, San Diego) were generated as described previously (Rockenstein et al., 2002; Chesselet et al., 2012; Sampson et al., 2016), through breeding female BDF1 background Thy1-\u03b1Syn mice to male BDF1 offspring generated via crossing female C57BL/6 with DBA/2 males (Charles River, Hollister, CA), and refreshing breeding pairs ~ 6 months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used to generate the mouse model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "9fad783b-deb7-4b67-b46f-07788999e183",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C78",
+      "claim": "Germ-free Thy1-\u03b1Syn breeding pairs were generated via caesarian section and cross-fostered by GF Swiss-Webster dams",
+      "claim_type": "EXPLICIT",
+      "source": "Germ-free (GF) Thy1-\u03b1Syn breeding pairs were generated via caesarian section and cross-fostered by GF Swiss-Webster dams.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used to generate germ-free mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "65bf4a56-6300-4873-843b-2a483f3325a0",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C79",
+      "claim": "Mono-colonized animals received ~10^8 cfu of the indicated bacterial strains at 5-6 weeks of age",
+      "claim_type": "EXPLICIT",
+      "source": "Mono-colonized animals received ~108 cfu of the indicated bacterial strains in ~100 \u03bcL sodium bicarbonate buffer (5% w/v) at 5\u20136 weeks of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for bacterial colonization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "80f4ffb6-0416-4ccc-b699-5518bace53fe",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C80",
+      "claim": "Human microbiome colonized animals received fecal extract from a previously sampled healthy human donor",
+      "claim_type": "EXPLICIT",
+      "source": "Human microbiome colonized animals received ~100 \u03bcL 0.1 g/mL fecal extract from previously sampled healthy human donor (ENA Accession: PRJEB17694; Sample #: 10483.donor2.HC; MMA_008 [Sampson et al., 2016], California Institute of Technology's Institutional Review Board #15\u20130568- exempt), at 5\u20136 weeks of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for human microbiome transplantation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "f710af92-07ca-49bb-ab28-078e27f45a65",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "claim_id": "C81",
+      "claim": "EGCG was administered at 200 \u03bcg/mL in drinking water ad libitum beginning at 5-6 weeks of age",
+      "claim_type": "EXPLICIT",
+      "source": "For epigallocatechin gallate (EGCG) treatment, animals received filter-sterilized EGCG (Sigma Aldrich) at 200 \u03bcg/mL in drinking water ad libitum beginning at 5\u20136 weeks of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for EGCG treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c153810b-4482-4673-b1f7-139f167bfd91",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Thy1-\u03b1Syn mouse model overexpresses wild-type human \u03b1-synuclein and displays increased neuroinflammation, GI dysfunction, and progressive motor abnormalities. Prior work by the authors showed that microbiome depletion reduces pathophysiology in this model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C23, C24, C77, and C78 establish the mouse model used in the study. These claims are supported by citations to prior characterizations of the model and descriptions of the breeding methods. The model is well-established in the literature for studying synucleinopathies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "ab38b549-edda-40a7-9c8b-766e0d479d61",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mono-colonization of Thy1-\u03b1Syn mice with curli-producing E. coli exacerbates motor deficits compared to colonization with curli-deficient E. coli or other bacterial taxa. The curli-deficient mutant did not alter colonization levels, mucosal association, or LPS structure, indicating that curli expression specifically is required for the observed motor impairments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C27, and C28 are directly supported by experimental data in Figure 1, showing significant differences in motor function tests between WT and curli-deficient E. coli colonization. Claims C29 and C30 provide important controls demonstrating that the effect is specific to curli and not due to differences in colonization or LPS. The experimental design appropriately uses isogenic mutants to isolate the effect of curli.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "0ad36550-80db-4559-83e8-503b52c8a466",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Colonization with curli-producing E. coli increases \u03b1-synuclein pathology in both the brain and gut of Thy1-\u03b1Syn mice, including increased fibril reactivity, detergent-insoluble \u03b1Syn, proteinase K-resistant inclusions, and pS129-\u03b1Syn deposition. These pathological changes occur without loss of dopaminergic neurons or striatal dopamine at the ages and conditions assessed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 are supported by multiple complementary assays shown in Figure 1\u2014figure supplement 2, including dot blots, western blots, immunofluorescence, and ELISA. The finding that pathology occurs without neuronal loss (C34) is consistent with prior literature on this model at early ages and strengthens the interpretation that curli accelerates \u03b1Syn aggregation rather than causing direct neurotoxicity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "4845a85c-73fe-458e-8676-b65099c7b514",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Curli-producing E. coli increases inflammatory responses in both the brain and gut of Thy1-\u03b1Syn mice, including elevated IL-6 and TNF\u03b1 in brain CD11b+ cells and increased cytokine production in colonic tissue. Microglia morphology indicates reduced activation in mice colonized with curli-deficient bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by data in Figure 1\u2014figure supplement 3, including ELISA, qPCR, and morphometric analysis of microglia. The inflammatory response is observed in both the gut and brain, suggesting systemic effects. However, the manuscript does not definitively establish whether inflammation is a primary driver or a consequence of \u03b1Syn pathology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "e2a94ec0-3442-4a70-9d1b-19b5d813b9dc",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the context of a complex human microbiota, enrichment with curli-producing E. coli is sufficient to impair motor and GI function and increase \u03b1Syn pathology in Thy1-\u03b1Syn mice compared to enrichment with curli-deficient E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C39 are supported by data in Figure 2, demonstrating that the curli effect persists in a more physiologically relevant context with a complex microbiome. This strengthens the translational relevance of the findings beyond the mono-colonization experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "26cee5d8-8b7f-4244-9b6d-8784786dee12",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Purified CsgA accelerates \u03b1-synuclein aggregation in vitro at concentrations below which CsgA self-aggregates, and the resulting \u03b1Syn fibrils are propagation-competent. CsgA does not accelerate Tau aggregation, and no direct interaction between CsgA and \u03b1Syn monomers was detected by surface plasmon resonance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by in vitro biochemical data in Figure 3 and supplements, including ThT fluorescence assays, TEM, and seeding experiments. The lack of direct interaction (C43) is surprising but the authors appropriately suggest possible explanations (transient interactions or oligomerization requirements). The specificity for \u03b1Syn over Tau (C44) strengthens the conclusion that this is not a general effect on all amyloidogenic proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "c8d8ffb9-b2ee-412a-b75b-7d02a0f5fec8",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The amyloidogenic properties of CsgA are required for its effects on \u03b1Syn aggregation and pathophysiology. Non-amyloidogenic CsgA (SlowGo) does not accelerate \u03b1Syn aggregation in vitro, and mice colonized with SlowGo-producing E. coli show less severe motor deficits. Intra-intestinal injection of amyloidogenic CsgA peptide, but not non-amyloidogenic peptide, causes motor dysfunction and increased brain \u03b1Syn pathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by data in Figure 3\u2014figure supplements 2 and 3. The use of non-amyloidogenic CsgA variants provides strong evidence for the mechanism. However, the SlowGo effect in vivo (C46) is described as qualitatively intermediate between WT and \u0394csgBAC, which introduces some uncertainty about the completeness of the effect. The peptide injection experiments (C47-C48) provide direct evidence that CsgA exposure in the gut is sufficient to cause pathology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "d7e08b8b-17a6-4f61-b674-69a2a8124394",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EGCG is a gut-restricted amyloid inhibitor that blocks both CsgA and \u03b1Syn amyloidogenesis. EGCG treatment reduces E. coli biofilm formation and csgA expression without affecting bacterial growth, and inhibits CsgA-accelerated \u03b1Syn aggregation in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by citations to prior literature (C49, C50, C53) and experimental data in Figure 4 and supplements (C51, C52). The characterization of EGCG as gut-restricted (C53) is important for interpreting the in vivo effects, as it suggests the therapeutic effect occurs in the gut rather than directly in the brain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "f463ee13-9ccd-423d-8baf-1b9159a11052",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Oral EGCG treatment of Thy1-\u03b1Syn mice colonized with curli-producing E. coli reduces csgA expression in the gut, improves motor and GI deficits, reduces \u03b1Syn aggregation and pS129-\u03b1Syn deposition in the brain, and limits microglia activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by data in Figure 4 and supplements, showing improvements across multiple behavioral and pathological measures. This provides strong evidence that inhibiting curli formation in the gut can prevent the downstream effects on brain pathology and behavior. However, as noted in C58, EGCG has multiple mechanisms of action (antioxidant, anti-inflammatory) that may contribute to the effects beyond direct amyloid inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "fffe61f0-f638-4fea-a3c6-1fcbeee1a689",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that curli production requires additional predisposing factors (such as \u03b1Syn overexpression) to promote disease, as curli-producing bacteria do not impair motor function in wild-type mice. Inhibiting amyloid formation in the gut correlates with improvements in pathology and behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 represent interpretations and conclusions from the experimental data. C59 is supported by the observation that wild-type mice colonized with curli-producing E. coli do not show motor deficits (Figure 1). C60 is supported by the EGCG experiments. C58 acknowledges that EGCG has multiple mechanisms, which is an appropriate caveat. These conclusions are reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "00f557fa-a76f-4058-af93-75faf68600d0",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes the background on synucleinopathies, the role of \u03b1Syn aggregation, gut-brain connections in Parkinson's disease, the gut microbiome, bacterial curli amyloids, and cross-seeding between different amyloid proteins. Clinical studies have reported increased Enterobacteriaceae in PD patients, with positive associations to disease severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C26 are all supported by citations to prior literature and represent established knowledge in the field. These claims provide the scientific rationale for the study but do not constitute new findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "abc9a96f-903e-459b-97ff-8eaec095aabe",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The discussion contextualizes the findings within the broader literature on microbiome-brain interactions, TLR2 signaling, microbiome changes in PD, and the potential for bacterial amyloids to influence multiple neurodegenerative diseases. Prior studies have shown that microbiome composition affects disease outcomes in animal models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C76 are supported by citations to prior literature and represent the authors' interpretation of how their findings fit into the broader field. These are appropriate contextualizations but do not constitute new experimental findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "114aeaa2-67f9-44bd-9ed2-5ae8ca4be608",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that exposure to microbial amyloids in the gastrointestinal tract can accelerate \u03b1Syn aggregation and disease in the gut and brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C6 represents the main conclusion of the paper and is supported by the collective evidence from the mono-colonization experiments (C2-C3, C27-C37), complex microbiota experiments (C38-C39), in vitro aggregation assays (C40-C44), mechanistic studies with CsgA variants (C45-C48), and therapeutic intervention with EGCG (C54-C57). The proposal is appropriately cautious, acknowledging that the mechanism of gut-to-brain transmission is not fully resolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    },
+    {
+      "id": "6710e858-4ef7-4a8b-be6f-29a8d3926f2c",
+      "content_id": "78b5d3f2-0de1-4465-8bb2-39c5c6162d45",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The methods describe the experimental protocols for bacterial colonization, human microbiome transplantation, and EGCG treatment in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 describe methodological details that are clearly stated in the Materials and Methods section. These are factual descriptions of the experimental procedures used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:05:27.634609Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8f61f111-5549-470c-869f-9daf2d6f180b",
+      "result_id": "c153810b-4482-4673-b1f7-139f167bfd91"
+    },
+    {
+      "claim_id": "3efa64f4-6335-452f-aa8e-dd022d052aa8",
+      "result_id": "c153810b-4482-4673-b1f7-139f167bfd91"
+    },
+    {
+      "claim_id": "9eb0adc1-0468-430d-8d9e-258f764d58c7",
+      "result_id": "c153810b-4482-4673-b1f7-139f167bfd91"
+    },
+    {
+      "claim_id": "440c1490-6ba6-4a33-b543-5accd30a439e",
+      "result_id": "c153810b-4482-4673-b1f7-139f167bfd91"
+    },
+    {
+      "claim_id": "9fad783b-deb7-4b67-b46f-07788999e183",
+      "result_id": "c153810b-4482-4673-b1f7-139f167bfd91"
+    },
+    {
+      "claim_id": "ae3a6817-facf-439a-a922-5b725560d4ad",
+      "result_id": "ab38b549-edda-40a7-9c8b-766e0d479d61"
+    },
+    {
+      "claim_id": "30700cfd-5b1a-4447-9496-d37225157fcd",
+      "result_id": "ab38b549-edda-40a7-9c8b-766e0d479d61"
+    },
+    {
+      "claim_id": "0e77da05-4ef0-4225-93cf-9b073cce7a16",
+      "result_id": "ab38b549-edda-40a7-9c8b-766e0d479d61"
+    },
+    {
+      "claim_id": "e7099b4c-3fd4-4569-addb-10de24449210",
+      "result_id": "ab38b549-edda-40a7-9c8b-766e0d479d61"
+    },
+    {
+      "claim_id": "d960a9bf-1e01-4340-b7fa-61e55d8b5414",
+      "result_id": "ab38b549-edda-40a7-9c8b-766e0d479d61"
+    },
+    {
+      "claim_id": "66185d55-4fe2-4670-84b8-896c1a0eee1a",
+      "result_id": "ab38b549-edda-40a7-9c8b-766e0d479d61"
+    },
+    {
+      "claim_id": "f4112195-fbd2-46b3-aef7-85e930575bad",
+      "result_id": "0ad36550-80db-4559-83e8-503b52c8a466"
+    },
+    {
+      "claim_id": "c98f6f87-11c9-4f53-ac47-27a6da915f18",
+      "result_id": "0ad36550-80db-4559-83e8-503b52c8a466"
+    },
+    {
+      "claim_id": "9ec61a19-5d1c-492b-92c2-0d6552225da6",
+      "result_id": "0ad36550-80db-4559-83e8-503b52c8a466"
+    },
+    {
+      "claim_id": "c1eecd76-1b4f-4141-b66c-870ae7d1264e",
+      "result_id": "0ad36550-80db-4559-83e8-503b52c8a466"
+    },
+    {
+      "claim_id": "efc3546d-45c9-4941-8e77-8aa71f05aa53",
+      "result_id": "4845a85c-73fe-458e-8676-b65099c7b514"
+    },
+    {
+      "claim_id": "30772a7a-3ebb-4256-a144-3e0e556dd0d9",
+      "result_id": "4845a85c-73fe-458e-8676-b65099c7b514"
+    },
+    {
+      "claim_id": "850b1d39-f763-40fa-bbcb-c0c99827a99e",
+      "result_id": "4845a85c-73fe-458e-8676-b65099c7b514"
+    },
+    {
+      "claim_id": "1933a695-5024-4a3b-89eb-2b4998cf37e7",
+      "result_id": "e2a94ec0-3442-4a70-9d1b-19b5d813b9dc"
+    },
+    {
+      "claim_id": "60673300-2628-4bdc-92d4-443b157ddd9c",
+      "result_id": "e2a94ec0-3442-4a70-9d1b-19b5d813b9dc"
+    },
+    {
+      "claim_id": "d507d79d-a520-4b71-8d32-96debc58d8fc",
+      "result_id": "26cee5d8-8b7f-4244-9b6d-8784786dee12"
+    },
+    {
+      "claim_id": "839eddf6-b06e-45d6-98a5-3e03f32b776e",
+      "result_id": "26cee5d8-8b7f-4244-9b6d-8784786dee12"
+    },
+    {
+      "claim_id": "ee907772-54c9-4991-8fe3-17175dde29bd",
+      "result_id": "26cee5d8-8b7f-4244-9b6d-8784786dee12"
+    },
+    {
+      "claim_id": "2e2dbbe9-c501-4cf0-8a90-80773da0480b",
+      "result_id": "26cee5d8-8b7f-4244-9b6d-8784786dee12"
+    },
+    {
+      "claim_id": "a64d9bda-fd0c-4216-a590-e83d30e8bcf9",
+      "result_id": "26cee5d8-8b7f-4244-9b6d-8784786dee12"
+    },
+    {
+      "claim_id": "df74281b-929f-4e57-9b03-71cb71559f31",
+      "result_id": "c8d8ffb9-b2ee-412a-b75b-7d02a0f5fec8"
+    },
+    {
+      "claim_id": "8dbca45e-45c3-41e0-a659-c808c0940cf5",
+      "result_id": "c8d8ffb9-b2ee-412a-b75b-7d02a0f5fec8"
+    },
+    {
+      "claim_id": "ce91ede1-3784-474b-b6a0-d4a77482023c",
+      "result_id": "c8d8ffb9-b2ee-412a-b75b-7d02a0f5fec8"
+    },
+    {
+      "claim_id": "911d7483-6f9c-47bf-afb6-0969f54eac09",
+      "result_id": "c8d8ffb9-b2ee-412a-b75b-7d02a0f5fec8"
+    },
+    {
+      "claim_id": "f08cbc91-8297-43a4-8c25-eb199e20eb87",
+      "result_id": "d7e08b8b-17a6-4f61-b674-69a2a8124394"
+    },
+    {
+      "claim_id": "c9a5ba49-af5e-46cc-b014-b3f4eb8ab418",
+      "result_id": "d7e08b8b-17a6-4f61-b674-69a2a8124394"
+    },
+    {
+      "claim_id": "17be0545-92cc-468d-884d-474b4c504eb1",
+      "result_id": "d7e08b8b-17a6-4f61-b674-69a2a8124394"
+    },
+    {
+      "claim_id": "da327b06-aa98-47bc-b59a-222e270cb0aa",
+      "result_id": "d7e08b8b-17a6-4f61-b674-69a2a8124394"
+    },
+    {
+      "claim_id": "e8463501-2d06-494a-90d3-cb660015152e",
+      "result_id": "d7e08b8b-17a6-4f61-b674-69a2a8124394"
+    },
+    {
+      "claim_id": "a06cca37-48fe-4946-91b8-71a0fb60fcdb",
+      "result_id": "f463ee13-9ccd-423d-8baf-1b9159a11052"
+    },
+    {
+      "claim_id": "46017695-710c-439a-a208-c78c341af24e",
+      "result_id": "f463ee13-9ccd-423d-8baf-1b9159a11052"
+    },
+    {
+      "claim_id": "345a03fd-7911-42f6-b0e2-0b30ddf9457c",
+      "result_id": "f463ee13-9ccd-423d-8baf-1b9159a11052"
+    },
+    {
+      "claim_id": "313c1f01-be3f-4a12-88c9-7a0f7960068b",
+      "result_id": "f463ee13-9ccd-423d-8baf-1b9159a11052"
+    },
+    {
+      "claim_id": "42bf44bf-d319-4223-8770-29f011e25873",
+      "result_id": "fffe61f0-f638-4fea-a3c6-1fcbeee1a689"
+    },
+    {
+      "claim_id": "9779b6f6-067a-4046-8e38-cbcc2096d23b",
+      "result_id": "fffe61f0-f638-4fea-a3c6-1fcbeee1a689"
+    },
+    {
+      "claim_id": "95970670-b952-430a-a36f-c313af9b86c9",
+      "result_id": "fffe61f0-f638-4fea-a3c6-1fcbeee1a689"
+    },
+    {
+      "claim_id": "16d9726c-9e11-4d51-b881-7ac6ab3a283e",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "d58ae3a2-16af-4b55-b9b0-6e60762474aa",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "d36a2629-095b-4ca6-8fb2-febff0527c70",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "7fc899d9-4159-4e5e-92b3-f8803f074f92",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "14233998-0aeb-4eef-9af0-59228e1e02ef",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "26a59434-5c6c-43e2-a8e0-f0ae377be885",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "81867538-cb19-48db-903b-95e3ee9c60b7",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "8748a799-7873-4db5-8069-e174b61aa23b",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "4412fa9b-b6e8-4048-a1b3-2378a29aca4a",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "ed00d4c5-2616-444b-a436-ed86f6c72d18",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "6928f339-ec36-4c7e-a508-0c32c6858e3a",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "61f7098c-e325-4cb4-8646-dc24e54316b5",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "c029a07b-8493-4a43-94b0-7062039091fe",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "14ef4db2-4e35-44d2-8e5f-99cf126f2ad5",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "ab38d5d8-e20a-426e-859b-18a70d70fdf4",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "70fac0fa-bb07-4256-b710-3eaa10efb11c",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "f9bc7009-375c-4b41-a44b-4ca8a8992d77",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "1bf096a8-24bc-4d60-bdc5-0c7c0d7659f1",
+      "result_id": "00f557fa-a76f-4058-af93-75faf68600d0"
+    },
+    {
+      "claim_id": "346cfc85-eba3-4366-bee2-73717715381a",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "df76346f-f0c9-437f-acfb-333dd9720c6a",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "174b6231-8048-4dc3-814c-ea24f674b550",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "b27f4101-81b2-4c49-9411-06f9ea9a4955",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "02e7e269-9e3d-45a6-bbad-43d966ab7626",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "a044e73a-764f-4d81-90cb-4dd063b377c8",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "d961703e-2607-495f-b291-7f62051ca496",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "880731a7-307d-4c23-9b4a-c1d61b924b72",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "f738a033-b338-4af5-bf20-8fc88b615228",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "b0db15ca-198e-4a43-b163-1441020e980a",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "9bce6b3a-48a7-473d-842c-f432500e8daf",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "d67ad487-d198-456c-a4a7-1c2cf40210fc",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "a50f167b-2981-443f-b953-4c43f6ebc112",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "03e1265b-b117-4267-acb5-098e125cf779",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "7354644d-68f9-4152-944a-389c451fd2f6",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "bdddd6fa-8d0a-46e2-b408-f03e9225dd1a",
+      "result_id": "abc9a96f-903e-459b-97ff-8eaec095aabe"
+    },
+    {
+      "claim_id": "ab0ef323-176a-4668-b85f-a5a433b7a974",
+      "result_id": "114aeaa2-67f9-44bd-9ed2-5ae8ca4be608"
+    },
+    {
+      "claim_id": "65bf4a56-6300-4873-843b-2a483f3325a0",
+      "result_id": "6710e858-4ef7-4a8b-be6f-29a8d3926f2c"
+    },
+    {
+      "claim_id": "80f4ffb6-0416-4ccc-b699-5518bace53fe",
+      "result_id": "6710e858-4ef7-4a8b-be6f-29a8d3926f2c"
+    },
+    {
+      "claim_id": "f710af92-07ca-49bb-ab28-078e27f45a65",
+      "result_id": "6710e858-4ef7-4a8b-be6f-29a8d3926f2c"
+    }
+  ],
+  "comparisons": []
+}

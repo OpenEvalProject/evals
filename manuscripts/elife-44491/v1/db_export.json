@@ -1,0 +1,1795 @@
+{
+  "submission": {
+    "id": "c39f3421-aa30-4e02-bf67-5383438bba14",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:12:47.740861Z",
+    "updated_at": "2025-12-02T08:12:47.740861Z"
+  },
+  "content": [
+    {
+      "id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "submission_id": "c39f3421-aa30-4e02-bf67-5383438bba14",
+      "content_type": "manuscript",
+      "content_text": "# Primed Track, high-fidelity lineage tracing in mouse pre-implantation embryos using primed conversion of photoconvertible proteins\n\n## Authors\n\n- Maaike Welling<sup>1</sup> ([ORCID: 0000-0003-3253-3410](https://orcid.org/0000-0003-3253-3410))\n- Manuel Alexander Mohr<sup>1</sup> ([ORCID: 0000-0002-5189-541X](https://orcid.org/0000-0002-5189-541X))\n- Aaron Ponti<sup>1</sup> ([ORCID: 0000-0003-4406-3508](https://orcid.org/0000-0003-4406-3508))\n- Lluc Rullan Sabater<sup>1</sup>\n- Andrea Boni<sup>4</sup>\n- Yumiko K Kawamura<sup>4</sup>\n- Prisca Liberali<sup>4</sup> ([ORCID: 0000-0003-0695-6081](https://orcid.org/0000-0003-0695-6081))\n- Antoine HFM Peters<sup>4</sup> ([ORCID: 0000-0002-0311-1887](https://orcid.org/0000-0002-0311-1887))\n- Pawel Pelczar<sup>6</sup>\n- Periklis Pantazis<sup>1</sup> ([ORCID: 0000-0002-8367-9332](https://orcid.org/0000-0002-8367-9332)) \u2020\n\n### Affiliations\n\n1. Department for Biosystems Science and Engineering (D-BSSE) ETH Zurich Basel Switzerland\n2. Department of Bioengineering Imperial College London London United Kingdom\n3. Howard Hughes Medical Institute, Janelia Research Campus Ashburn United States\n4. Friedrich Miescher Institute for Biomedical Research (FMI) Basel Switzerland\n5. Faculty of Sciences University of Basel Basel Switzerland\n6. Center for Transgenic Models (CTM) University of Basel Basel Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nAccurate lineage reconstruction of mammalian pre-implantation development is essential for inferring the earliest cell fate decisions. Lineage tracing using global fluorescence labeling techniques is complicated by increasing cell density and rapid embryo rotation, which hampers automatic alignment and accurate cell tracking of obtained four-dimensional imaging data sets. Here, we exploit the advantageous properties of primed convertible fluorescent proteins (pr-pcFPs) to simultaneously visualize the global green and the photoconverted red population in order to minimize tracking uncertainties over prolonged time windows. Confined primed conversion of H2B-pr-mEosFP-labeled nuclei combined with light-sheet imaging greatly facilitates segmentation, classification, and tracking of individual nuclei from the 4-cell stage up to the blastocyst. Using green and red labels as fiducial markers, we computationally correct for rotational and translational drift, reduce overall data size, and accomplish high-fidelity lineage tracing even for increased imaging time intervals \u2013 addressing major concerns in the field of volumetric embryo imaging.\n\n## Introduction\n\nAccurate lineage tracing and precise tracking of single cells in pre-implantation embryos are essential for a mechanistic understanding of the first cell fate decisions during mammalian development (Welling et al., 2016; Pantazis and Bollenbach, 2012). Selective plane illumination microscopy (SPIM) has the potential to play a major role in achieving comprehensive, non-invasive imaging of mammalian pre-implantation development. During these early steps of development, a major fraction of embryos (n\u00a0=\u00a09/19, 45% in this study) exhibit confounding rotational and spatial drift (Videos 1, 2 and 3), which often leads researchers to exclude these embryos from analysis, drastically decreasing efficiency, losing valuable data, and potentially biasing downstream results (Strnad et al., 2016; Motosugi et al., 2005). While high-imaging rates have helped to overcome these challenges for samples like zebrafish embryos, they demand increased data storage capacities. Moreover, higher frame rates increase photodamage from laser overexposure and are hence less applicable for highly sensitive mouse embryos (Strnad et al., 2016; Takenaka et al., 2007).\n\n![Video 1.](https://cdn.elifesciences.org/articles/44491/elife-44491-video1.mp4.jpg)\n\n**Video 1.:** Timelapse video of an example embryo, which shows strong spatial and rotational drift before drift correction. pr-mEosFP fluorescence (green) and primed converted pr-mEosFP fluorescence (red). Scale bars, 15 \u00b5m; framerate: one frame every 15 min.\n\n![Video 2.](https://cdn.elifesciences.org/articles/44491/elife-44491-video2.mp4.jpg)\n\n**Video 2.:** Timelapse video of an example embryo, which shows strong spatial and rotational drift before drift correction. pr-mEosFP fluorescence (green) and primed converted pr-mEosFP fluorescence (red). Scale bars, 10 \u00b5m; framerate: one frame every 7.5 min.\n\n![Video 3.](https://cdn.elifesciences.org/articles/44491/elife-44491-video3.mp4.jpg)\n\n**Video 3.:** Timelapse video of an example embryo, which shows strong spatial and rotational drift before drift correction. pr-mEosFP fluorescence (green) and primed converted pr-mEosFP fluorescence (red). Scale bars, 30 \u00b5m; framerate: one frame every 5 min.\n\nLabeling strategies using green-to-red photoconvertible fluorescent proteins (pcFPs) allow for visualization of both the entire population of cells in green and a selected population in red. This combination of global and sparse labeling yields great potential for facilitating lineage tracing and trophectoderm (TE) and inner-cell-mass (ICM) fate assignments after photoconversion (Kurotaki et al., 2007). However, to our knowledge these sparse labels have not been combined with SPIM - presumably because photoconversion has been limited by the need for axially unconfined, potentially photodamaging, intense violet light (Post et al., 2005). Our recent report of a novel photochemical mechanism called \u201cprimed conversion\u201d overcomes this long-standing problem by using dual-wavelength illumination with blue 488nm and far-red 730nm laser light instead (see Mohr and Pantazis, 2018) for a review). Importantly, primed conversion allows for confined photoconversion of small volumes in three dimensions (3D) by selectively intersecting the two laser beams in a common focal spot, yielding axial confinement unachievable by 405\u00a0nm photoconversion (Dempsey et al., 2015; Mohr et al., 2016). The discovery of the mechanism responsible for primed conversion enabled the rational engineering of primed convertible (\u201cpr-\u201d) variants of most pcFPs (Mohr et al., 2017; Turkowyd et al., 2017) with improved brightness and photostability, essential properties for long-term imaging in a SPIM (Mohr et al., 2017).\n\nHere, we show that primed conversion of single pr-pcFP-labeled cells in early stages of mouse development allows for computational correction of spatial and rotational drift, which minimizes uncertainties in tracking and lineage tracing. Accurate tracking is achievable even for larger imaging intervals further reducing laser exposure to the sensitive specimen.\n\n## Results and discussion\n\n### H2B-pr-mEosFP-labeled cells primed converted at the 4-cell stage can be visualized up to the blastocyst stage\n\nPreviously, we and others found that pr-pcFP variants based on the Eos-family of Anthozoa-derived pcFPs efficiently undergo primed conversion and exhibit high levels of photostability and brightness (Mohr et al., 2017; Turkowyd et al., 2017). In order to assess which protein of the Eos-family is most suitable for long-term cell tracking and lineage tracing experiments in mouse embryos, we directly compared pr-mEos2 and pr-mEosFP. We injected mouse zygotes with mRNAs encoding for the histone fusions H2B-pr-mEos2 or H2B-pr-mEosFP and imaged them at different stages to observe their developmental progression. Embryos injected with mRNA encoding for H2B-pr-mEosFP showed no visible signs of developmental impairment, similar to un-injected control embryos (Figure 1\u2014figure supplement 1a and 1b). In contrast, H2B-pr-mEos2-injected embryos showed partly divided, seemingly connected nuclei and prematurely arrested in development (n=30/30) (Figure 1\u2014figure supplement 1b). This apparent inability to separate the nuclei during cell division is likely due to a residual tendency of mEos2 to oligomerize, as proposed previously (Zhang et al., 2012). As a consequence, we identified primed convertible mEosFP (pr-mEosFP) as the optimal fluorescent protein variant for in vivo primed conversion in the mouse embryo followed by long-term imaging.\n\nNext, we investigated whether a single round of green-to-red photoconversion at the four-cell stage would create a sufficiently large pool of red-converted protein that could be followed throughout development until the blastocyst stage. For this purpose, we performed confined primed conversion in a confocal system as previously described (Mohr et al., 2016) to photoconvert a single nucleus of an H2B-pr-mEosFP expressing embryo at the four-cell stage. Primed converted embryos were then transferred and monitored for 60 hours during early embryo development in a custom built SPIM suitable for long term imaging of mouse embryos (Figure 1a). To compensate for signal dilution of the H2B-pr-mEosFP signal over time primarily due to cell division, the laser power was gradually increased throughout the imaging sessions. Embryos subjected to photoconversion of a single cell developed normally and the red daughter cells of the initially primed converted cell were clearly distinguishable from non-converted green cells up to the blastocyst stage (Figure 1b; Figure 1\u2014figure supplement 2a). In addition, primed conversion itself did not impede the development of photoconverted embryos compared to non-converted control embryos (Figure 1\u2014figure supplement 2b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44491/elife-44491-fig1-v1.jpg)\n\n**Figure 1.:** (a) Experimental setup: Zygotes are injected with H2B-pr-mEosFP mRNA.\u00a0At the 4-cell stage confined primed conversion of a single nucleus is performed using intersecting 488 nm and 730 nm lasers. The embryos are transferred to an inverted SPIM for non-invasive imaging of their development up to the blastocyst stage. Images are taken every 5, 7.5 or 15 min. (b) Embryos injected with mRNA encoding H2B-pr-mEosFP and converted at the four-cell-stage develop normally and maintain visibility of the red label up to the early blastocyst stage. pr-mEosFP fluorescence (green) and primed converted pr-mEosFP fluorescence (magenta). N\u00a0\u2265\u00a0200 embryos out of\u00a0\u226510 independent experiments. Scale bar, 20 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44491/elife-44491-fig1-figsupp1-v1.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44491/elife-44491-fig1-figsupp2-v1.jpg)\n\n### Dual labeling of pre-implantation embryos greatly facilitates automatic segmentation, tracking, and lineage tracing\n\nAs cells converted at the four-cell stage can be visualized up to the blastocyst stage, we wondered whether such sparsely labeled subsets of cells could aid computational reorientation and automated lineage tracing in embryos that exhibit dramatic spatial and rotational drift (Videos 1,\u00a02 and 3). Of note, while we initially imaged our embryos with time intervals of 7.5 or 15 minutes, we found that increased sampling frequency did not recover successful lineage tracing for rotating embryos: the percentage of embryos showing spatial and rotational drift prohibitive of automated lineage tracing in our experiments with 5-minute imaging time intervals (=50%, n=8) was similar to those imaged with larger time intervals (=45% embryos imaged every 7.5 or 15 minutes, n=11). To accomplish accurate tracking, we developed a computational pipeline, referred to as \u201cprimed Track\u201d, for automated segmentation, cell tracking, and lineage tracing. Primed Track uniquely takes advantage of the sparse red cell population to correct for spatial and rotational drift as well as to simplify lineage reconstruction (Figure 2a). In the 5-dimensional (5D, that\u00a0is 3 spatial dimensions, time, color) imaging data, cells were first segmented based on size, shape, and fluorescence taking into account both color channels. The use of increasing laser power to compensate for red signal dilution mainly due cell division resulted however in increasing background fluorescence. To discern red signal from increasing background signal, we took advantage of the dual nuclear labeling that allowed us to identify weaker fluorescent red nuclei at advanced time points by their overlap with the green signal in which lower autofluorescence was detected (Figure 2a, left column). Background signal that was falsely segmented in the green channel due to increased illumination could be excluded by ignoring spots detected outside of a defined radius of the embryo. The ability to select parameters that match the brightness, size, and shape of the embryos combined with fluorescence information of two channels makes the segmentation both robust and flexible for use in different experiments. In addition, the dual color information allowed for cell distinction in instances otherwise rendered ambiguous through high cell density and proximity of nuclei. For instance, we were able to distinguish nuclei that would have been identified as a single nucleus even after manual validation (Figure 2\u2014figure supplement 1a-c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44491/elife-44491-fig2-v1.jpg)\n\n**Figure 2.:** (a) Overview of the pipeline used for reliable automated segmentation, tracking, and lineage tracing of the imaged embryos; (1) Segmentation: low thresholds are used for the spot detection in both the green and red channel to enable detection of dimmer cells at later developmental time points.\u00a0Incorrectly segmented spots are excluded by defined filters: (i) exclusion of spots outside of a defined radius of the embryo, (ii) replacement of incorrectly segmented double spots by one spot per one nucleus, and (ii) exclusion of red spots that do not colocalize with green nuclear spots. (2) Tracking: Spatial drift as well as rapid embryo rotation complicates tracking nuclei over prolonged time windows. The segmented nuclei are used for defining reference frames based on the center of mass of the green nuclei and the orientation of the red nuclei. The alignment of the references frames of each time point compensates the spatial and rotational drifts. (3) Lineage tracing: Automated lineage tree reconstruction can make false connections when cells are dividing. By separating the calculation of the lineage trees in the photoconverted red channel from the green channel, the less complex datasets for each channel result in more consistent lineage tracing. pr-mEosFP fluorescence (green) and primed converted pr-mEosFP fluorescence (magenta) overlaid with segmentation results (green and Magenta spheres); Scale bar, 20 \u00b5m (b) Lineage trees from the same embryo (corresponding to Videos 1 and 4) reconstructed from segmented nuclei before correction for rotational and translational drift (left), after correction for rotational and translational drift for the red channel (second left), after correction for rotational and translational drift for the green channel minus the spots that colocalize with the red spots (second right), and after final manual lineage reconstruction (right). The embryo was imaged every 15 min.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44491/elife-44491-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44491/elife-44491-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44491/elife-44491-fig2-figsupp3-v1.jpg)\n\nIn a second step, the embryo was positioned at its fluorescence center of mass, cropped and rotated, such that the red center of mass was oriented to the same side of the embryo in every time frame to compensate for rotational and spatial drift (Figure 2a, middle column;\u00a0Videos 4,\u00a05 and 6). The resulting high-quality 5D cropped and registered datasets were reduced to only 34\u00b111% of the original size (Figure 2\u2014figure supplement 2). The automatic tracking of a realigned embryo resulted in greatly improved lineage tracing fidelity compared to a na\u00efve state-of-the-art lineage-tracing algorithm that was not able to reconstruct a lineage tree from rotating and spatially drifting embryos imaged with a time interval of 15, 7.5 or 5 minutes (Bitplane Imaris cell lineage package) (Figure 2b; Figure 2\u2014figure supplement 2). Of note, none of the existing state-of-the-art lineage tracing tools such as Ilastik, TrackMate and the TGMM software (Amat et al., 2014) were designed to compensate for heavy rotational and spatial drift and are therefore incapable of calculating lineage trees from these embryos (Figure 2\u2014source data 1). Separating the green and red channels to generate two less complex datasets during lineage reconstruction further increased the fidelity of lineage tracing versus a dataset consisting of the green channel alone (Figure 2a, right column; Figure 2\u2014figure supplement 3). We assessed the power of primed Track by comparing the lineage trees obtained i) without corrections, ii) after embryo realignment with all algorithmic corrections, and iii) after final manual review by calculating the total distance between these lineage trees (see Materials\u00a0and\u00a0methods for more details) (Zhang and Shasha, 1989). We were able to recover all rotating embryos that we acquired using this image analysis pipeline and the resulting lineage trees required a minimal amount of time for manual corrections (0.5-1.5 hours per lineage tree).\n\n### Primed Track allows for decreased sampling frequency\n\nThe observation that the registration of embryos based on the dual labeling with primed Track allows for reliable lineage tracing despite heavy embryo rotation suggests that decreasing the imaging frequency will have limited effect on lineage tracing ability. To test the robustness of primed Track, we removed time points from datasets from both rotating as well as non-rotating embryos to examine lineage tracing capacity at a decreased sampling rate. Naturally, larger imaging time intervals increase embryo displacement in consecutive time points and exacerbate the accurateness of lineage tracing (Figure 3). Using primed Track to correct for spatial and rotational drift results in reliable reconstruction of the lineage trees even at imaging time intervals of 30 minutes for a rotating embryo and 40 minutes for a non-rotating embryo (Figure 3; Figure 3\u2014figure supplement 1). While the registration of non-drifting embryos does not increase lineage tracing accuracy for high 5-minute sampling rates, the gain of fidelity in lineage tree reconstruction of these embryos greatly benefits from our presented approach when the imaging frequency is reduced (Figure 3). However, in general, one should keep in mind that sampling rates above 40 minutes will decrease the possibility to precisely infer cell divisions and assign daughter cells to their correct mother. Still, the opportunity to reduce laser exposure while maintaining accurate tracking and lineage tracing potential offers a great advantage for long-term imaging experiments of sensitive specimen.\n\n### Summary and conclusion\n\nIn summary, primed Track enables fast, automated, high fidelity lineage tracing of mammalian pre-implantation development combined with reduced illumination time and data volume, key considerations for handling and analyzing data by the biological community (Pantazis and Supatto, 2014). A recently published study presents a compelling image analysis framework that enables the long-term tracking of cells during gastrulation and early organogenesis in the post-implantation embryo (McDole et al., 2018). Primed Track complements such efforts by enabling accurate fate mapping of mouse pre-implantation embryos.\n\nThe ability to correct for both spatial and rotational drift overcomes the previous requirement to exclude spinning embryos from the analysis using primed Track. Furthermore, primed conversion of photoconvertible proteins in combination with primed Track enables the experimenter to still achieve reasonable lineage tracing quality with datasets acquired at lower sampling rate.\n\nThe timescales and intensities at which the fluorescent signal of photoconvertible proteins can be observed depend on the expression system (i.e. stable vs. transient expression, promotor choice) as well as the stability of the fusion protein. While we present tracking and lineage tracing of embryos labeled with a relatively highly-expressed and stable H2B-pr-pcFP fusion protein, it is important to take into consideration that low abundant protein fusions may require higher illumination power for visualization, potentially impacting sample integrity. Such cases will in particular benefit from our primed Track pipeline, as it facilitates imaging with longer time intervals while preserving high fidelity in cell tracking and lineage tracing.\n\nIn the future, implementing primed conversion to take place inside a SPIM used for volumetric imaging will allow for repeated manual or automatic primed conversion of nuclei once the red fluorescence signal intensity drops below a user-defined threshold. Such pulse-chase experiments can then be extended even longer, ultimately being only limited by the rate of new green pr-pcFP synthesis. The combination of confined primed conversion of pr-pcFPs with primed Track will allow researchers to get more accurate insight into the dynamic processes responsible for cell fate decisions in the early mammalian embryo.\n\n## Materials and methods\n\n### Molecular cloning and mRNA preparation\n\nThe coding sequences for pr-mEosFP and pCS2+-H2B-pr-EosFP were obtained by PCR amplification from pQE32-pr-mEosFP (Addgene No. 99213) and pRSET-pr-mEos2 (gift from Dominique Bourgeois) and cloned into pCS2+-H2B-Dendra2 using AgeI and SnaBI, hence replacing the Dendra2 coding sequence to obtain pCS2+-H2B-pr-EosFP and pCS2+-H2B-pr-Eos2. mRNA was synthesized using the mMESSAGE mMACHINE kit (ThermoFisher Scientific), followed by poly-A-tailing (ThermoFisher Scientific), and purified using a Qiagen RNAeasy kit according to manufacturer guidelines.\n\n### mRNA microinjection of mouse preimplantation embryos and ex utero culture up to four-cell stage\n\nC57Bl/6 wild-type females (Janvier Labs, France) were superovulated by hormone priming, mated to C57Bl/6 males (RRID:IMSR_JAX:000664), and mated females were euthanized by CO2 asphyxiation. Embryos were recovered by flushing oviducts as described previously (Mohr et al., 2016; Plachta et al., 2011). Embryos were cultured at 37\u00b0C and 5% CO2 in KSOM\u00a0+\u00a0AA medium covered with mineral oil. mRNA constructs were microinjected into the pro-nucleus at 50 ng/\u00b5l or in both cells in two-cell stage embryos, following standard protocols. All these experiments were approved by the veterinary authority of the canton Basel Stadt, Switzerland.\n\n### Confined primed conversion of single nuclei in mouse embryos\n\nConfined primed conversion of single nuclei was performed on mouse embryos at the four-cell stage as previously described in great detail (Mohr et al., 2016).\n\n### Volumetric imaging of mouse pre-implantation embryos\n\nRight after confined primed conversion was performed, the four-cell stage embryos were transferred to a pre-equilibrated, custom built inverted SPIM setup suitable for long term imaging of mouse embryos and continuously cultured/imaged until they reached blastocyst stage. For each embryo, a z-stack consisting of 80 planes, 3 \u03bcm apart, was acquired every 5, 7.5 or 15 min.\n\n### Mouse embryo lineage tracing\n\nTo establish a reference, mouse embryos were lineage traced using the state-of-the-art Imaris lineage tracing package (Bitplane, CH). The automated high-fidelity mouse embryo drift correction and lineage-tracing algorithm described here is explained in detail below.\n\n### Detailed description of primed Track\n\n5D movies of photoconverted mouse embryos were processed with the following pipeline using a custom MATLAB code implemented in Imaris (Bitplane, CH). All codes of primed Track can be downloaded from this code repository:\u00a0https://git.bsse.ethz.ch/scu_public/primed_track (copy archived at https://github.com/elifesciences-publications/primed_track)\u00a0(Ponti, 2018).\n\n#### Cell segmentation\n\n1.Detect green and red cells using the Spot detector in Imaris. Use low threshold to segment all cells even at the cost of including spurious spots. Allow spot radius to be adapted to more accurately fit the volume of the segmented cell. Bright but very small spots can easily be filtered out during segmentation.\n\n#### First validation\n\n#### Embryo alignment (drift and rotational correction)/Cropping\n\n#### Second validation and subsetting\n\n#### Lineage tree reconstruction\n\n### Comparative analysis of lineage trees\n\nTo assess the power of our newly created algorithm, we sought to compare the lineage trees obtained with i) no corrections, ii) after embryo realignment with all algorithmic corrections, and iii) after final manual review. We quantified the effects of the corrections and validations on the quality of the lineage trees by calculating the total distance between the lineage trees using the implementation of the tree Zhang-Shasha edit distance algorithm (Zhang and Shasha, 1989) by Tim Henderson and Steve Johnson (Henderson and Johnson, 2013). The zss algorithm assigns a (user-defined) cost for each node insertion, removal, and update necessary to transform an ordered tree into another, and gives therefore a quantitative measure of dissimilarity of the two trees. Small tracking differences between corrected and uncorrected trees, however, can result in quite large tree distances if the zss algorithm is applied to the complete trees. A correction that relinks one cell to its mother cell in just one time point causes the whole branch to be flagged as incorrect, and the longer the branch, the higher the distance between the trees. In other words, the earlier the tracking error occurs, the larger the distance; yet, only the first time point in the track is incorrect, and its penalty should be the same whether it happens at the beginning of the time series or the end.\n\nTo circumvent these issues, we applied the algorithm to a condensed version of the lineage trees. The condensed tree retains only the branch points of the original lineage tree (i.e. the cell divisions). Also, each branch point stores information about the original number of child nodes in its branches (i.e. the number of time points the daughter cells were tracked until their next cell division). The distance between condensed trees will flag positions where cell divisions were tracked incorrectly and tracks that have different lengths, without causing an explosion in the reported distance.\n\nSince our acquisitions started at the four-cell stage, we aimed to build a tree for each of the original four cells (one containing the progeny of the primed converted cell). The final, manually curated lineage was used as ground truth to quantify the effects of the various algorithmic correction steps. The sets of trees across correction schemes were assigned to each other by minimizing the spatial and temporal distance of their origins. After condensation, their pairwise distances were calculated. All distances were summed to give the total lineage tree difference. In addition, spurious trees that resulted from bad segmentation and tracking were not used for the distance calculation, since they already indirectly affected the difference of the tree from which they were erroneously detached.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44491/elife-44491-fig3-v1.jpg)\n\n**Figure 3.:** (a) time intervals were subsampled to 20 min (b) and 40 min (c) time intervals. Lineage tracing was performed on the non-processed dataset as well as after correction for spatial and rotational drift using the presented approach. The numbers displayed below each lineage tree indicate the distance to the final correct lineage tree.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44491/elife-44491-fig3-figsupp1-v1.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/44491/elife-44491-video4.mp4.jpg)\n\n**Video 4.:** Timelapse video of the example embryo from Video 1 after drift correction. pr-mEosFP fluorescence (green) and primed converted pr-mEosFP fluorescence (red). Corresponding lineage trees are displayed in Figure 2d. Scale bars, 15 \u00b5m; framerate: one frame every 15 min.\n\n![Video 5.](https://cdn.elifesciences.org/articles/44491/elife-44491-video5.mp4.jpg)\n\n**Video 5.:** Timelapse video of the example embryo from Video 2 after drift correction. pr-mEosFP fluorescence (green) and primed converted pr-mEosFP fluorescence (red). Corresponding lineage trees are displayed in Figure 2\u2014source data 1. Scale bars, 10 \u00b5m; framerate: one frame every 7.5 min.\n\n![Video 6.](https://cdn.elifesciences.org/articles/44491/elife-44491-video6.mp4.jpg)\n\n**Video 6.:** Timelapse video of the example embryo from Video 2 after drift correction. pr-mEosFP fluorescence (green) and primed converted pr-mEosFP fluorescence (red). Corresponding lineage trees are displayed in Figure 2\u2014source data 1. Scale bars, 30 \u00b5m; framerate: one frame every 5 min.\n",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "fcdf1c97-0648-4e64-9fc0-19e759ad897d",
+      "submission_id": "c39f3421-aa30-4e02-bf67-5383438bba14",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeremy Nathans, Johns Hopkins University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.44491.021](https://doi.org/10.7554/eLife.44491.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your manuscript \"High fidelity lineage tracing in mouse pre-implantation embryos using primed conversion of photoconvertible proteins\" for consideration by eLife. Your article has been reviewed by three experts and the evaluation has been overseen by a Senior and Reviewing Editor. While the reviewers found the work interesting, the number of substantive questions raised was such that we feel we must reject it. We hope that the reviewer's comments below will be useful to you in revising the manuscript for submission elsewhere. We apologize for not being able to deliver better news, and we hope that you will continue to consider eLife for future submissions.\n\nReviewer #1:\n\nIn their manuscript, Pantazis and colleagues demonstrate a combined optical/computational method for reducing the effects of translational and rotational drift in pre-implantation mouse embryo lineage recordings. Primed conversion is used to introduce a sparse second color (red fluorescent nuclei), which is used as a fiducial to reduce drift and an additional quality check on the derived lineages. Although the authors convincingly demonstrate that their method does reduce the effects of drift and thus computational error in their experiments, I am unconvinced that their method is either necessary or generally important for this particular biological application.\n\nWhile the problem the authors address is a real one, their method does not appear a significant improvement over previous work \u2013 in particular the groundbreaking method of Lars Hufnagel and Jan Ellenberg (Strnad et al., 2016). In that manuscript, Hufnagel and Ellenberg performed similar recordings at higher spatiotemporal resolution than reported here. In particular, the temporal sampling in Hufangel and Ellenberg was performed every 5 minutes, 1.5-3x faster than the 7.5 minute and 15 minute recordings performed by Pantazis. One has to wonder if the increased temporal sampling is in fact the dominant source of error in reconstructing lineages \u2013 if Pantazis et al. had simply recorded faster, would they have encountered the same degree of drift/error? Hufnagel and Ellenberg claimed a 100% tracking accuracy in their manuscript (for the embryos they ultimately select for lineage analysis) \u2013 if this is really the case, I have to wonder why Pantazis et al. did not simply adopt the previous tracking approach. Pantazis et al. compare their computational pipeline to Bitplane Imaris, but the real state-of-the-art comparison is to Hufnagel and Ellenberg. How does the new tracking pipeline presented by Pantazis compare to the coherent point drift method described in this previous work? It is also never explicitly spelled out how many datasets the new method 'rescues', i.e. of the 5/11 embryos that exhibited severe translation/rotational drift, how many were 'recoverable' in the new method? What is the fraction of embryos that are now fully trackable? Because the authors of the current manuscript have failed to put their method into context against previous work, it is difficult to properly assess the impact of their method.\n\nThe authors also assert that their method might allow less dosing of the sample (presumably due to the worsened temporal sampling they report) and that their pipeline results in smaller datasets due to the tighter cropping that results. Neither assertion is particularly compelling \u2013 (i) I am not convinced that in fact lowering the temporal resolution is advantageous as it seems this makes the tracking problem harder; (ii) the original data sizes they report of ~5GB are hardly massive by today's standards. In summary, I am concerned that the authors' paper constitutes a kind of 'straw man', i.e. they are attacking a problem that has been satisfactorily addressed by previous work. A thorough, statistical comparison of their method to Hufnagel and Ellenberg's would go a long way to convincing me of the value of their method.\n\nOther comments:\n\nThe authors are to be commended for comparing H2B-pr-mEosFP to H2B-pr-mEos2. However, I would like to see more evidence for their assertion that their photoconverted embryos develop normally, especially since the primed conversion operation itself intrinsically introduces additional dose. In the previous work by Hufnagel and Ellenberg, 'the tracked embryos had a division timing and number of ICM cells comparable to those of in vitro-cultured embryos\u2026 and healthy pups were born after transfer of the imaged embryos into pseudopregnant females\u2026'. Were similar controls done here? What is the additional dose introduced by the primed conversion on the confocal microscope, relative to the light sheet illumination dose used for imaging? The authors image from 4 cell to blastocyst, yet it seems that in previous work it is possible to image from zygote onwards. Is the 4 cell stage necessary due to the increased light sensitivity at earlier stages?\n\nReviewer #2:\n\nWelling et al. present a combined reverse genetic/optical and computational approach to extract developmental lineages from pre-implantation mouse embryos. The genetic trick relies on photo-convertible proteins that are converted on a confocal set-up and later imaged using light sheet. The computational pipeline extending Imaris achieves proper segmentation, image alignment and uses the total and photo-converted nuclei to improve unsupervised lineaging.\n\nThis work has potential, however, for me, it falls short of being a minimal publishable unit. The photoconversion approach has already been published by the authors. What remains is a useful technique that would however fit better into Materials and methods section of a paper focusing on the biology that can be done with this approach. I see the benefits of being able to use the rotating embryos previously excluded from similar analysis (Strnad et al.). However, that is a very niche problem and the pipeline lacks general applicability. The segmentation enhancement is completely dependent on the precise experiment described here, no new algorithm has been presented. Similarly, the re-orientation of the rotating embryos is done using very basic core functions of Imaris. The authors do show that it benefits the analysis of their specific data, however I doubt it will be generally applicable. The comparison of the performance of the Imaris tracker applied to uncorrected and corrected data is a straw man comparison. The Imaris tracker was not developed for tracking lineages in embryos that are fast rotating and therefore it, of course, fails spectacularly.\n\nIn order to make the paper work as a methods paper, it would have to be significantly expanded. On the hardware side, the photoconversion would need to happen at one microscope (something the authors clearly intend to do). On the software side, the tracker would need to be benchmarked against existing state of the art tracking solutions such as Ilastik, TrackMate and the Keller pipeline. In addition, the authors would need to show that it is also applicable to other lineaging problems.\n\nLast but not least, the submission contains no code. There is insufficient details provided to reproduce the work, even inside such user friendly software as Imaris is. There is a mention of some MATLAB code that is stringing together the Imaris functionality. At least that needs to be put on github to make this work useful for others. In the current form, it has no impact.\n\nReviewer #3:\n\nIn the short paper entitled \"High fidelity lineage tracing in mouse pre-implantation embryos using primed conversion of photoconvertible proteins\" the authors use photoconversion of an EosFP by 'primed conversion' to follow by 3D SPIM imaging the cell lineage. In this very limited example the authors propose a potentially promising way of tracking cell fate. However I believe that it currently has a number of issues that should be addressed.\n\n1) Novelty. The novelty here is only mediocre. The photoconversion of EosFP by a 488\u2192730nm illumination pulse has been reported (Mohr, Argast and Pantazis, 2016). Similarly, lineage tracking has been done before (Kurotaki et al., 2007 and others). The novelty is using SPIM here for longer-term tracking, but unfortunately while the potential was there the illumination for both channels was done with the same objective (see point #2).\n\n2) Implementation. The real power of this method should be to focally limit which cells, or region thereof, is getting photoconverted, by launching the light through objectives situated at 90 degrees. Unfortunately, the authors choose to illuminate/activate the cell through only a single objective and thus lose a potential major benefit of the technique. It would have been really neat, and more powerful, to do the activation at a later stage when it would be otherwise difficult to activate only a single cell. In my opinion, doing the activation by cross-beams and in a condition that would be impossible to achieve by a single beam is essential here, and would improve the novelty. The authors ironically discuss axial confinement of the dual activation yet fail to do so and exploit it in the experiments. This must be done.\n\n3) Robustness of the data. It is unclear how many times this experiment was performed. Only once? To show that the technique is robust, more experiments are needed, with statistics. The authors mention that the photoconverted embryos were healthy, but from how many experiments?\n\n4) Other reporters. The authors should show the technique for other reporters, such as in the cell cytosol, or membrane, to generalize the concept.\n\n5) Ambiguity of assignment. It is unclear how long a single lineage can be tracked. The S/N seemed to be high at the later stages. Can the authors better quantify showing the accuracy of assignment in each stage, with statistics.\n",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d7620bc0-69a5-41f5-a224-fb3010ebad34",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C1",
+      "claim": "Primed convertible fluorescent proteins (pr-pcFPs) can be used to simultaneously visualize global green and photoconverted red cell populations in mouse pre-implantation embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we exploit the advantageous properties of primed convertible fluorescent proteins (pr-pcFPs) to simultaneously visualize the global green and the photoconverted red population in order to minimize tracking uncertainties over prolonged time windows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this capability as a key feature of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "5c839fb0-b1bf-477c-9fee-045f0f981473",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C2",
+      "claim": "Confined primed conversion of H2B-pr-mEosFP-labeled nuclei combined with light-sheet imaging facilitates segmentation, classification, and tracking of individual nuclei from the 4-cell stage up to the blastocyst.",
+      "claim_type": "EXPLICIT",
+      "source": "Confined primed conversion of H2B-pr-mEosFP-labeled nuclei combined with light-sheet imaging greatly facilitates segmentation, classification, and tracking of individual nuclei from the 4-cell stage up to the blastocyst.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this as a main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "348826d0-da58-4cac-9d15-b020e74b71aa",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C3",
+      "claim": "45% of embryos (n = 9/19) exhibit confounding rotational and spatial drift during pre-implantation development.",
+      "claim_type": "EXPLICIT",
+      "source": "During these early steps of development, a major fraction of embryos (n = 9/19, 45% in this study) exhibit confounding rotational and spatial drift (Videos 1, 2 and 3), which often leads researchers to exclude these embryos from analysis, drastically decreasing efficiency, losing valuable data, and potentially biasing downstream results (Strnad et al., 2016; Motosugi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific quantitative data from this study showing the proportion of embryos with drift.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "c09a3fc0-50ba-47b5-a8e0-4a28025a9ff4",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C4",
+      "claim": "Embryo rotation and spatial drift often lead researchers to exclude embryos from analysis, decreasing efficiency and potentially biasing results.",
+      "claim_type": "EXPLICIT",
+      "source": "During these early steps of development, a major fraction of embryos (n = 9/19, 45% in this study) exhibit confounding rotational and spatial drift (Videos 1, 2 and 3), which often leads researchers to exclude these embryos from analysis, drastically decreasing efficiency, losing valuable data, and potentially biasing downstream results (Strnad et al., 2016; Motosugi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by citations to previous work and describes a known problem in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "794d3449-c1e1-467b-8ca6-adf6b8ae38bd",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C5",
+      "claim": "Higher frame rates increase photodamage from laser overexposure and are less applicable for highly sensitive mouse embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, higher frame rates increase photodamage from laser overexposure and are hence less applicable for highly sensitive mouse embryos (Strnad et al., 2016; Takenaka et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "69d60f16-183e-4ef2-8942-d66cb80f4ba5",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C6",
+      "claim": "Primed conversion uses dual-wavelength illumination with blue 488nm and far-red 730nm laser light instead of violet light.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent report of a novel photochemical mechanism called \"primed conversion\" overcomes this long-standing problem by using dual-wavelength illumination with blue 488nm and far-red 730nm laser light instead (see Mohr and Pantazis, 2018) for a review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the technical specifications of primed conversion with a citation to a review.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "49faf5e0-a28d-43ee-907c-7bf5f51de8a6",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C7",
+      "claim": "Primed conversion allows for confined photoconversion of small volumes in three dimensions (3D) by selectively intersecting two laser beams in a common focal spot.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, primed conversion allows for confined photoconversion of small volumes in three dimensions (3D) by selectively intersecting the two laser beams in a common focal spot, yielding axial confinement unachievable by 405 nm photoconversion (Dempsey et al., 2015; Mohr et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous work demonstrating this capability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "a86c58fd-4479-4069-bf32-dbf5c16832ee",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C8",
+      "claim": "Primed conversion yields axial confinement unachievable by 405 nm photoconversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, primed conversion allows for confined photoconversion of small volumes in three dimensions (3D) by selectively intersecting the two laser beams in a common focal spot, yielding axial confinement unachievable by 405 nm photoconversion (Dempsey et al., 2015; Mohr et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparative claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "a1bd1f5b-b48b-4ffb-b492-9fece73552e6",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C9",
+      "claim": "Primed convertible variants of most pcFPs have been rationally engineered with improved brightness and photostability.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of the mechanism responsible for primed conversion enabled the rational engineering of primed convertible (\"pr-\") variants of most pcFPs (Mohr et al., 2017; Turkowyd et al., 2017) with improved brightness and photostability, essential properties for long-term imaging in a SPIM (Mohr et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies describing the engineering of these variants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "2d9f0298-8cde-40d9-8572-d02133c225a2",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C10",
+      "claim": "Embryos injected with mRNA encoding for H2B-pr-mEosFP showed no visible signs of developmental impairment, similar to un-injected control embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos injected with mRNA encoding for H2B-pr-mEosFP showed no visible signs of developmental impairment, similar to un-injected control embryos (Figure 1\u2014figure supplement 1a and 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations and reference to figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "579fce28-ed6a-497e-89c3-21a216e93e78",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C11",
+      "claim": "H2B-pr-mEos2-injected embryos showed partly divided, seemingly connected nuclei and prematurely arrested in development (n=30/30).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, H2B-pr-mEos2-injected embryos showed partly divided, seemingly connected nuclei and prematurely arrested in development (n=30/30) (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim provides specific quantitative data from experiments with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "bd7f5b47-228e-4b4f-bbb2-8bd8b601248f",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C12",
+      "claim": "The inability of H2B-pr-mEos2-injected embryos to separate nuclei during cell division is likely due to a residual tendency of mEos2 to oligomerize.",
+      "claim_type": "EXPLICIT",
+      "source": "This apparent inability to separate the nuclei during cell division is likely due to a residual tendency of mEos2 to oligomerize, as proposed previously (Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on previous literature cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "a70eecf5-6ba0-47c4-9089-fee469c24605",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C13",
+      "claim": "Primed convertible mEosFP (pr-mEosFP) is the optimal fluorescent protein variant for in vivo primed conversion in the mouse embryo followed by long-term imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, we identified primed convertible mEosFP (pr-mEosFP) as the optimal fluorescent protein variant for in vivo primed conversion in the mouse embryo followed by long-term imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on comparative experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "298b7bf7-81da-4a2d-ab7f-d722cf85eec3",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C14",
+      "claim": "Embryos subjected to photoconversion of a single cell developed normally and the red daughter cells of the initially primed converted cell were clearly distinguishable from non-converted green cells up to the blastocyst stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos subjected to photoconversion of a single cell developed normally and the red daughter cells of the initially primed converted cell were clearly distinguishable from non-converted green cells up to the blastocyst stage (Figure 1b; Figure 1\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "842483d9-5634-4e02-9433-a6e3e4298de6",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C15",
+      "claim": "Primed conversion itself did not impede the development of photoconverted embryos compared to non-converted control embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, primed conversion itself did not impede the development of photoconverted embryos compared to non-converted control embryos (Figure 1\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative experimental data with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "5c0cdb92-8de0-448c-8b34-712b88718e6f",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C16",
+      "claim": "The percentage of embryos showing spatial and rotational drift prohibitive of automated lineage tracing in experiments with 5-minute imaging time intervals (50%, n=8) was similar to those imaged with larger time intervals (45% embryos imaged every 7.5 or 15 minutes, n=11).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, while we initially imaged our embryos with time intervals of 7.5 or 15 minutes, we found that increased sampling frequency did not recover successful lineage tracing for rotating embryos: the percentage of embryos showing spatial and rotational drift prohibitive of automated lineage tracing in our experiments with 5-minute imaging time intervals (=50%, n=8) was similar to those imaged with larger time intervals (=45% embryos imaged every 7.5 or 15 minutes, n=11).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides specific quantitative data from experiments comparing different imaging intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "97872a3b-cf36-43fa-a3cd-6f82fe192891",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C17",
+      "claim": "Dual nuclear labeling allows identification of weaker fluorescent red nuclei at advanced time points by their overlap with the green signal in which lower autofluorescence was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "To discern red signal from increasing background signal, we took advantage of the dual nuclear labeling that allowed us to identify weaker fluorescent red nuclei at advanced time points by their overlap with the green signal in which lower autofluorescence was detected (Figure 2a, left column).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes a technical advantage observed in the experimental data with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "579e7a3d-ec44-41cc-8de1-df98d25ea058",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C18",
+      "claim": "Dual color information allows for cell distinction in instances otherwise rendered ambiguous through high cell density and proximity of nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the dual color information allowed for cell distinction in instances otherwise rendered ambiguous through high cell density and proximity of nuclei.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes an advantage of the dual labeling approach based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "045d5c53-8dd2-4ba1-a7b5-3979e1a5cedf",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C19",
+      "claim": "The dual labeling approach enabled distinction of nuclei that would have been identified as a single nucleus even after manual validation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we were able to distinguish nuclei that would have been identified as a single nucleus even after manual validation (Figure 2\u2014figure supplement 1a-c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by specific examples shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "f2c11fe1-06fe-41af-8e81-bead097bf178",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C20",
+      "claim": "The resulting high-quality 5D cropped and registered datasets were reduced to only 34\u00b111% of the original size.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting high-quality 5D cropped and registered datasets were reduced to only 34\u00b111% of the original size (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim provides specific quantitative data about data size reduction with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "eda2803a-2a24-4722-9887-c407597712c3",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C21",
+      "claim": "None of the existing state-of-the-art lineage tracing tools such as Ilastik, TrackMate and the TGMM software were designed to compensate for heavy rotational and spatial drift and are therefore incapable of calculating lineage trees from these embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, none of the existing state-of-the-art lineage tracing tools such as Ilastik, TrackMate and the TGMM software (Amat et al., 2014) were designed to compensate for heavy rotational and spatial drift and are therefore incapable of calculating lineage trees from these embryos (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on testing existing tools and is supported by reference to source data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "e9825622-ec68-4488-ac96-e2ac2e7281aa",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C22",
+      "claim": "Separating the green and red channels to generate two less complex datasets during lineage reconstruction increased the fidelity of lineage tracing versus a dataset consisting of the green channel alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Separating the green and red channels to generate two less complex datasets during lineage reconstruction further increased the fidelity of lineage tracing versus a dataset consisting of the green channel alone (Figure 2a, right column; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparative analysis with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "335e49c5-022d-4eca-92b1-d5ee466ff98a",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C23",
+      "claim": "The resulting lineage trees required a minimal amount of time for manual corrections (0.5-1.5 hours per lineage tree).",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to recover all rotating embryos that we acquired using this image analysis pipeline and the resulting lineage trees required a minimal amount of time for manual corrections (0.5-1.5 hours per lineage tree).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides specific quantitative data about the time required for manual corrections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "664b5af2-d8a7-4f43-96ad-acae3421ea2b",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C24",
+      "claim": "Using primed Track to correct for spatial and rotational drift results in reliable reconstruction of the lineage trees even at imaging time intervals of 30 minutes for a rotating embryo and 40 minutes for a non-rotating embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using primed Track to correct for spatial and rotational drift results in reliable reconstruction of the lineage trees even at imaging time intervals of 30 minutes for a rotating embryo and 40 minutes for a non-rotating embryo (Figure 3; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing lineage tracing at different time intervals with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "c6059b71-adf8-4724-bdbb-e14efeea9bef",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C25",
+      "claim": "The registration of non-drifting embryos does not increase lineage tracing accuracy for high 5-minute sampling rates.",
+      "claim_type": "EXPLICIT",
+      "source": "While the registration of non-drifting embryos does not increase lineage tracing accuracy for high 5-minute sampling rates, the gain of fidelity in lineage tree reconstruction of these embryos greatly benefits from our presented approach when the imaging frequency is reduced (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparative analysis of lineage tracing accuracy at different sampling rates with reference to figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "a2f0d704-796d-4dc6-b4be-4f6f36ba3dde",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C26",
+      "claim": "Sampling rates above 40 minutes will decrease the possibility to precisely infer cell divisions and assign daughter cells to their correct mother.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in general, one should keep in mind that sampling rates above 40 minutes will decrease the possibility to precisely infer cell divisions and assign daughter cells to their correct mother.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement based on the limitations observed in the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "3ce1a0b4-b846-43c6-8341-731cf8e25d7d",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C27",
+      "claim": "Primed Track enables fast, automated, high fidelity lineage tracing of mammalian pre-implantation development combined with reduced illumination time and data volume.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, primed Track enables fast, automated, high fidelity lineage tracing of mammalian pre-implantation development combined with reduced illumination time and data volume, key considerations for handling and analyzing data by the biological community (Pantazis and Supatto, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summary claim is supported by the experimental results presented throughout the manuscript and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "382e41e2-1357-413a-a91c-8e02a8247896",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C28",
+      "claim": "The ability to correct for both spatial and rotational drift overcomes the previous requirement to exclude spinning embryos from the analysis using primed Track.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to correct for both spatial and rotational drift overcomes the previous requirement to exclude spinning embryos from the analysis using primed Track.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes a key advantage of the method based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "1dd06928-bb81-4c79-bcd5-e48bcc87e314",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C29",
+      "claim": "Primed conversion of photoconvertible proteins in combination with primed Track enables the experimenter to still achieve reasonable lineage tracing quality with datasets acquired at lower sampling rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, primed conversion of photoconvertible proteins in combination with primed Track enables the experimenter to still achieve reasonable lineage tracing quality with datasets acquired at lower sampling rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing successful lineage tracing at reduced sampling rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "e5ce909c-3573-4000-a74c-25eaa65f63d6",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C30",
+      "claim": "Low abundant protein fusions may require higher illumination power for visualization, potentially impacting sample integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "While we present tracking and lineage tracing of embryos labeled with a relatively highly-expressed and stable H2B-pr-pcFP fusion protein, it is important to take into consideration that low abundant protein fusions may require higher illumination power for visualization, potentially impacting sample integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement based on general knowledge about fluorescence imaging.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "b500bceb-7ca5-4655-803f-9ae5cf48d875",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C31",
+      "claim": "C57Bl/6 wild-type females were superovulated by hormone priming and mated to C57Bl/6 males.",
+      "claim_type": "EXPLICIT",
+      "source": "C57Bl/6 wild-type females (Janvier Labs, France) were superovulated by hormone priming, mated to C57Bl/6 males (RRID:IMSR_JAX:000664), and mated females were euthanized by CO2 asphyxiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "999367f1-da08-4269-a8d1-eb714e91870d",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C32",
+      "claim": "Embryos were recovered by flushing oviducts as described previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos were recovered by flushing oviducts as described previously (Mohr et al., 2016; Plachta et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a standard method with citations to previous protocols.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "ece34e39-2bac-4f6c-9caf-5d232fee4476",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C33",
+      "claim": "Embryos were cultured at 37\u00b0C and 5% CO2 in KSOM + AA medium covered with mineral oil.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos were cultured at 37\u00b0C and 5% CO2 in KSOM + AA medium covered with mineral oil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental culture conditions used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "710bb0c9-aaf1-44fd-ae5f-989c1e5d6a3f",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C34",
+      "claim": "mRNA constructs were microinjected into the pro-nucleus at 50 ng/\u00b5l or in both cells in two-cell stage embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "mRNA constructs were microinjected into the pro-nucleus at 50 ng/\u00b5l or in both cells in two-cell stage embryos, following standard protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific experimental procedure and concentration used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "54ff297a-eee0-4c47-8166-bddb18fd80fb",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C35",
+      "claim": "All experiments were approved by the veterinary authority of the canton Basel Stadt, Switzerland.",
+      "claim_type": "EXPLICIT",
+      "source": "All these experiments were approved by the veterinary authority of the canton Basel Stadt, Switzerland.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "4704ab10-3958-471e-ab7e-9cd62dff0092",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C36",
+      "claim": "For each embryo, a z-stack consisting of 80 planes, 3 \u03bcm apart, was acquired every 5, 7.5 or 15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "For each embryo, a z-stack consisting of 80 planes, 3 \u03bcm apart, was acquired every 5, 7.5 or 15 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific imaging parameters used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "e16739b2-e358-47d4-85b5-cc0983b0ef21",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C37",
+      "claim": "Primed convertible variants based on the Eos-family of Anthozoa-derived pcFPs efficiently undergo primed conversion and exhibit high levels of photostability and brightness.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we and others found that pr-pcFP variants based on the Eos-family of Anthozoa-derived pcFPs efficiently undergo primed conversion and exhibit high levels of photostability and brightness (Mohr et al., 2017; Turkowyd et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies by the authors and others.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "70e50d08-f9f8-4528-a7b3-ce297d9bcc1d",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C38",
+      "claim": "Photoconversion using global fluorescence labeling techniques is complicated by increasing cell density and rapid embryo rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage tracing using global fluorescence labeling techniques is complicated by increasing cell density and rapid embryo rotation, which hampers automatic alignment and accurate cell tracking of obtained four-dimensional imaging data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known challenge in the field based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "45a8bd57-7f38-426f-8629-2f75b8362e88",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C39",
+      "claim": "Rapid embryo rotation hampers automatic alignment and accurate cell tracking of obtained four-dimensional imaging data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Lineage tracing using global fluorescence labeling techniques is complicated by increasing cell density and rapid embryo rotation, which hampers automatic alignment and accurate cell tracking of obtained four-dimensional imaging data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known problem in the field based on general knowledge and experience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "e573aece-aeb2-4d47-8c95-a0de7806dd44",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C40",
+      "claim": "Green and red labels can be used as fiducial markers to computationally correct for rotational and translational drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Using green and red labels as fiducial markers, we computationally correct for rotational and translational drift, reduce overall data size, and accomplish high-fidelity lineage tracing even for increased imaging time intervals \u2013 addressing major concerns in the field of volumetric embryo imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "408daf9f-3917-43f5-8e6f-8a3bb5bf86f6",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C41",
+      "claim": "The primed Track approach reduces overall data size.",
+      "claim_type": "EXPLICIT",
+      "source": "Using green and red labels as fiducial markers, we computationally correct for rotational and translational drift, reduce overall data size, and accomplish high-fidelity lineage tracing even for increased imaging time intervals \u2013 addressing major concerns in the field of volumetric embryo imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a benefit of the method in the abstract and supported by quantitative data in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "ca875f2d-5728-4d90-8150-3ae73b068913",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C42",
+      "claim": "Primed Track accomplishes high-fidelity lineage tracing even for increased imaging time intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using green and red labels as fiducial markers, we computationally correct for rotational and translational drift, reduce overall data size, and accomplish high-fidelity lineage tracing even for increased imaging time intervals \u2013 addressing major concerns in the field of volumetric embryo imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the abstract and demonstrated in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "0520e4d5-0a40-419b-819d-495b071dda0b",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C43",
+      "claim": "Accurate lineage reconstruction of mammalian pre-implantation development is essential for inferring the earliest cell fate decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Accurate lineage reconstruction of mammalian pre-implantation development is essential for inferring the earliest cell fate decisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the importance of lineage tracing based on general scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "bda7e6d0-68da-4f53-a324-ec1dea3f1719",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C44",
+      "claim": "Accurate tracking of single cells in pre-implantation embryos is essential for a mechanistic understanding of the first cell fate decisions during mammalian development.",
+      "claim_type": "EXPLICIT",
+      "source": "Accurate lineage tracing and precise tracking of single cells in pre-implantation embryos are essential for a mechanistic understanding of the first cell fate decisions during mammalian development (Welling et al., 2016; Pantazis and Bollenbach, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "82833260-1df1-4582-8e02-d60da5f714f7",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C45",
+      "claim": "Selective plane illumination microscopy (SPIM) has the potential to play a major role in achieving comprehensive, non-invasive imaging of mammalian pre-implantation development.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective plane illumination microscopy (SPIM) has the potential to play a major role in achieving comprehensive, non-invasive imaging of mammalian pre-implantation development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential of SPIM technology based on its characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "92253f67-fcd6-41de-81e5-059fb261b154",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C46",
+      "claim": "High-imaging rates demand increased data storage capacities.",
+      "claim_type": "EXPLICIT",
+      "source": "While high-imaging rates have helped to overcome these challenges for samples like zebrafish embryos, they demand increased data storage capacities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the trade-offs of high-frequency imaging based on common knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "d08bd553-dfe3-4138-8562-7317e3b7045a",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C47",
+      "claim": "Photoconversion has been limited by the need for axially unconfined, potentially photodamaging, intense violet light.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to our knowledge these sparse labels have not been combined with SPIM - presumably because photoconversion has been limited by the need for axially unconfined, potentially photodamaging, intense violet light (Post et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of traditional photoconversion methods with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "496fd4f5-26b9-4648-ad39-2b80faa40359",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C48",
+      "claim": "Labeling strategies using green-to-red photoconvertible fluorescent proteins (pcFPs) allow for visualization of both the entire population of cells in green and a selected population in red.",
+      "claim_type": "EXPLICIT",
+      "source": "Labeling strategies using green-to-red photoconvertible fluorescent proteins (pcFPs) allow for visualization of both the entire population of cells in green and a selected population in red.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a known property of photoconvertible fluorescent proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "6ada88f0-7744-4b6c-ae45-65065e2cb783",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C49",
+      "claim": "The combination of global and sparse labeling yields great potential for facilitating lineage tracing and trophectoderm (TE) and inner-cell-mass (ICM) fate assignments after photoconversion.",
+      "claim_type": "EXPLICIT",
+      "source": "This combination of global and sparse labeling yields great potential for facilitating lineage tracing and trophectoderm (TE) and inner-cell-mass (ICM) fate assignments after photoconversion (Kurotaki et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim about the potential of the approach is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "0852333d-c15b-49cf-b0b7-2b4498b37609",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C50",
+      "claim": "Sparse labels from photoconversion have not been combined with SPIM, presumably because photoconversion has been limited by the need for axially unconfined, potentially photodamaging, intense violet light.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to our knowledge these sparse labels have not been combined with SPIM - presumably because photoconversion has been limited by the need for axially unconfined, potentially photodamaging, intense violet light (Post et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about why a combination hasn't been done, supported by citation about photoconversion limitations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "026db72f-b349-40f8-ae8a-c82caa494667",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C51",
+      "claim": "Primed conversion of single pr-pcFP-labeled cells in early stages of mouse development allows for computational correction of spatial and rotational drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that primed conversion of single pr-pcFP-labeled cells in early stages of mouse development allows for computational correction of spatial and rotational drift, which minimizes uncertainties in tracking and lineage tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study stated in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "dd6781e6-c896-4244-993a-4fc096d77bb0",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C52",
+      "claim": "Primed conversion of single pr-pcFP-labeled cells minimizes uncertainties in tracking and lineage tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that primed conversion of single pr-pcFP-labeled cells in early stages of mouse development allows for computational correction of spatial and rotational drift, which minimizes uncertainties in tracking and lineage tracing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study stated in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "f8f36425-f5ea-42ab-8b56-86a90c1b1049",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C53",
+      "claim": "Accurate tracking is achievable even for larger imaging intervals, further reducing laser exposure to the sensitive specimen.",
+      "claim_type": "EXPLICIT",
+      "source": "Accurate tracking is achievable even for larger imaging intervals further reducing laser exposure to the sensitive specimen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the introduction and demonstrated in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "1decc502-1729-47d5-b782-160826702dac",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C54",
+      "claim": "N \u2265 200 embryos out of \u226510 independent experiments were used to demonstrate that embryos injected with mRNA encoding H2B-pr-mEosFP and converted at the four-cell-stage develop normally and maintain visibility of the red label up to the early blastocyst stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos injected with mRNA encoding H2B-pr-mEosFP and converted at the four-cell-stage develop normally and maintain visibility of the red label up to the early blastocyst stage. pr-mEosFP fluorescence (green) and primed converted pr-mEosFP fluorescence (magenta). N \u2265 200 embryos out of \u226510 independent experiments. Scale bar, 20 \u00b5m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This provides the sample size for the experiments shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "143fce6d-5807-46a2-8285-daf32163178a",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C55",
+      "claim": "The laser power was gradually increased throughout the imaging sessions to compensate for signal dilution of the H2B-pr-mEosFP signal over time primarily due to cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "To compensate for signal dilution of the H2B-pr-mEosFP signal over time primarily due to cell division, the laser power was gradually increased throughout the imaging sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental adjustment made during imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "66b91233-f03b-4950-99b9-e128844b8822",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C56",
+      "claim": "The use of increasing laser power to compensate for red signal dilution mainly due to cell division resulted in increasing background fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of increasing laser power to compensate for red signal dilution mainly due cell division resulted however in increasing background fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observed consequence of the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "cca578cd-9ccf-4e62-9dea-c5cab39a41ca",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C57",
+      "claim": "Background signal that was falsely segmented in the green channel due to increased illumination could be excluded by ignoring spots detected outside of a defined radius of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Background signal that was falsely segmented in the green channel due to increased illumination could be excluded by ignoring spots detected outside of a defined radius of the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a computational solution implemented in the analysis pipeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "fd6ddba8-73e7-4c93-bc71-cd9860489f35",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C58",
+      "claim": "The ability to select parameters that match the brightness, size, and shape of the embryos combined with fluorescence information of two channels makes the segmentation both robust and flexible for use in different experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to select parameters that match the brightness, size, and shape of the embryos combined with fluorescence information of two channels makes the segmentation both robust and flexible for use in different experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of the segmentation approach based on its design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "024b614a-a304-4438-a67b-e4ae70ff0948",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C59",
+      "claim": "The automatic tracking of a realigned embryo resulted in greatly improved lineage tracing fidelity compared to a na\u00efve state-of-the-art lineage-tracing algorithm that was not able to reconstruct a lineage tree from rotating and spatially drifting embryos imaged with a time interval of 15, 7.5 or 5 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "The automatic tracking of a realigned embryo resulted in greatly improved lineage tracing fidelity compared to a na\u00efve state-of-the-art lineage-tracing algorithm that was not able to reconstruct a lineage tree from rotating and spatially drifting embryos imaged with a time interval of 15, 7.5 or 5 minutes (Bitplane Imaris cell lineage package) (Figure 2b; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative claim supported by experimental data and reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "05920ea8-6742-438d-aa88-15cd5f44ae9e",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C60",
+      "claim": "The Bitplane Imaris cell lineage package was not able to reconstruct a lineage tree from rotating and spatially drifting embryos imaged with a time interval of 15, 7.5 or 5 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "The automatic tracking of a realigned embryo resulted in greatly improved lineage tracing fidelity compared to a na\u00efve state-of-the-art lineage-tracing algorithm that was not able to reconstruct a lineage tree from rotating and spatially drifting embryos imaged with a time interval of 15, 7.5 or 5 minutes (Bitplane Imaris cell lineage package) (Figure 2b; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the performance of an existing tool tested in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "5a0e7312-4f19-4a2f-882d-43fe369be1e4",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C61",
+      "claim": "All rotating embryos acquired could be recovered using the primed Track image analysis pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to recover all rotating embryos that we acquired using this image analysis pipeline and the resulting lineage trees required a minimal amount of time for manual corrections (0.5-1.5 hours per lineage tree).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key result demonstrating the effectiveness of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "79d143a8-d59f-4faa-9612-70707b052986",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C62",
+      "claim": "Larger imaging time intervals increase embryo displacement in consecutive time points and exacerbate the accurateness of lineage tracing.",
+      "claim_type": "EXPLICIT",
+      "source": "Naturally, larger imaging time intervals increase embryo displacement in consecutive time points and exacerbate the accurateness of lineage tracing (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a general observation about the relationship between sampling rate and tracking accuracy.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "1f36c66e-de9a-447a-aea6-831a282cc55a",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C63",
+      "claim": "The registration of non-drifting embryos greatly benefits from the primed Track approach when the imaging frequency is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "While the registration of non-drifting embryos does not increase lineage tracing accuracy for high 5-minute sampling rates, the gain of fidelity in lineage tree reconstruction of these embryos greatly benefits from our presented approach when the imaging frequency is reduced (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparative analysis at different sampling rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "d7261f65-0d9f-4ae3-8c2f-5044113f99d3",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C64",
+      "claim": "The opportunity to reduce laser exposure while maintaining accurate tracking and lineage tracing potential offers a great advantage for long-term imaging experiments of sensitive specimen.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the opportunity to reduce laser exposure while maintaining accurate tracking and lineage tracing potential offers a great advantage for long-term imaging experiments of sensitive specimen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the practical advantages of the method based on the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "4354286f-28d7-483d-b563-bbb41357bee6",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C65",
+      "claim": "A recently published study presents a compelling image analysis framework that enables the long-term tracking of cells during gastrulation and early organogenesis in the post-implantation embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "A recently published study presents a compelling image analysis framework that enables the long-term tracking of cells during gastrulation and early organogenesis in the post-implantation embryo (McDole et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to related work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "6060e551-a41a-4bf0-8752-3df218578f67",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C66",
+      "claim": "Primed Track complements efforts to enable accurate fate mapping of mouse pre-implantation embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Primed Track complements such efforts by enabling accurate fate mapping of mouse pre-implantation embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This positions the current work in relation to other methods in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "183f74e0-977d-420e-aefb-e3e081e5fa21",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C67",
+      "claim": "Implementing primed conversion to take place inside a SPIM used for volumetric imaging will allow for repeated manual or automatic primed conversion of nuclei once the red fluorescence signal intensity drops below a user-defined threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, implementing primed conversion to take place inside a SPIM used for volumetric imaging will allow for repeated manual or automatic primed conversion of nuclei once the red fluorescence signal intensity drops below a user-defined threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future technical developments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "ac95561a-e567-48b9-89b6-a45d4828b25a",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C68",
+      "claim": "Pulse-chase experiments using repeated primed conversion can be extended even longer, ultimately being only limited by the rate of new green pr-pcFP synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Such pulse-chase experiments can then be extended even longer, ultimately being only limited by the rate of new green pr-pcFP synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential of future experiments.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "9c96da54-cd99-4732-86df-52958dcb86a5",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C69",
+      "claim": "The combination of confined primed conversion of pr-pcFPs with primed Track will allow researchers to get more accurate insight into the dynamic processes responsible for cell fate decisions in the early mammalian embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of confined primed conversion of pr-pcFPs with primed Track will allow researchers to get more accurate insight into the dynamic processes responsible for cell fate decisions in the early mammalian embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the potential impact of the method based on the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "ed941b47-3ac3-4b03-b226-b745cf235382",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C70",
+      "claim": "The coding sequences for pr-mEosFP and pCS2+-H2B-pr-EosFP were obtained by PCR amplification from pQE32-pr-mEosFP and pRSET-pr-mEos2.",
+      "claim_type": "EXPLICIT",
+      "source": "The coding sequences for pr-mEosFP and pCS2+-H2B-pr-EosFP were obtained by PCR amplification from pQE32-pr-mEosFP (Addgene No. 99213) and pRSET-pr-mEos2 (gift from Dominique Bourgeois) and cloned into pCS2+-H2B-Dendra2 using AgeI and SnaBI, hence replacing the Dendra2 coding sequence to obtain pCS2+-H2B-pr-EosFP and pCS2+-H2B-pr-Eos2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular cloning methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "c1674f43-4f19-4519-b93b-7b492693e04a",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C71",
+      "claim": "mRNA was synthesized using the mMESSAGE mMACHINE kit, followed by poly-A-tailing, and purified using a Qiagen RNAeasy kit according to manufacturer guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "mRNA was synthesized using the mMESSAGE mMACHINE kit (ThermoFisher Scientific), followed by poly-A-tailing (ThermoFisher Scientific), and purified using a Qiagen RNAeasy kit according to manufacturer guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mRNA preparation methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "1526ecbf-1b8e-4c03-84fd-924879d8651f",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C72",
+      "claim": "Confined primed conversion of single nuclei was performed on mouse embryos at the four-cell stage as previously described.",
+      "claim_type": "EXPLICIT",
+      "source": "Confined primed conversion of single nuclei was performed on mouse embryos at the four-cell stage as previously described in great detail (Mohr et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a previously published protocol with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "f2389090-d445-4582-b97a-50cb8c874c8d",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C73",
+      "claim": "Right after confined primed conversion was performed, the four-cell stage embryos were transferred to a pre-equilibrated, custom built inverted SPIM setup suitable for long term imaging of mouse embryos and continuously cultured/imaged until they reached blastocyst stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Right after confined primed conversion was performed, the four-cell stage embryos were transferred to a pre-equilibrated, custom built inverted SPIM setup suitable for long term imaging of mouse embryos and continuously cultured/imaged until they reached blastocyst stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental workflow used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "c0a306a1-dacc-4577-93de-715c77e5a6e7",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C74",
+      "claim": "Mouse embryos were lineage traced using the state-of-the-art Imaris lineage tracing package to establish a reference.",
+      "claim_type": "EXPLICIT",
+      "source": "To establish a reference, mouse embryos were lineage traced using the state-of-the-art Imaris lineage tracing package (Bitplane, CH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reference method used for comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "788326ee-0a10-401b-aaf9-bd0454d3d417",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C75",
+      "claim": "All codes of primed Track can be downloaded from a specified code repository.",
+      "claim_type": "EXPLICIT",
+      "source": "All codes of primed Track can be downloaded from this code repository: https://git.bsse.ethz.ch/scu_public/primed_track (copy archived at https://github.com/elifesciences-publications/primed_track) (Ponti, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides information about code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "f09fa465-bb96-40f7-88a6-34d77b22b866",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C76",
+      "claim": "The zss algorithm assigns a user-defined cost for each node insertion, removal, and update necessary to transform an ordered tree into another, and gives a quantitative measure of dissimilarity of the two trees.",
+      "claim_type": "EXPLICIT",
+      "source": "The zss algorithm assigns a (user-defined) cost for each node insertion, removal, and update necessary to transform an ordered tree into another, and gives therefore a quantitative measure of dissimilarity of the two trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the algorithm used for comparing lineage trees.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "77668eac-9f0a-4eb7-80c3-603a3f862714",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C77",
+      "claim": "A correction that relinks one cell to its mother cell in just one time point causes the whole branch to be flagged as incorrect in the zss algorithm, and the longer the branch, the higher the distance between the trees.",
+      "claim_type": "EXPLICIT",
+      "source": "A correction that relinks one cell to its mother cell in just one time point causes the whole branch to be flagged as incorrect, and the longer the branch, the higher the distance between the trees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of applying the zss algorithm to complete lineage trees.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "721e6dcb-49fe-4cd5-8b15-3c07a53d08ac",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C78",
+      "claim": "The condensed tree retains only the branch points of the original lineage tree (i.e. the cell divisions).",
+      "claim_type": "EXPLICIT",
+      "source": "The condensed tree retains only the branch points of the original lineage tree (i.e. the cell divisions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tree condensation approach used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "343704c0-fd69-42b4-8587-5bdbd574d8c9",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C79",
+      "claim": "Each branch point in the condensed tree stores information about the original number of child nodes in its branches (i.e. the number of time points the daughter cells were tracked until their next cell division).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, each branch point stores information about the original number of child nodes in its branches (i.e. the number of time points the daughter cells were tracked until their next cell division).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the information retained in the condensed tree representation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "20d9ee78-c66d-447a-96f2-e834d54cd9db",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C80",
+      "claim": "The distance between condensed trees will flag positions where cell divisions were tracked incorrectly and tracks that have different lengths, without causing an explosion in the reported distance.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance between condensed trees will flag positions where cell divisions were tracked incorrectly and tracks that have different lengths, without causing an explosion in the reported distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantage of using condensed trees for comparison.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "af4bebbf-d1c1-492d-91d3-34744f2371c8",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C81",
+      "claim": "The acquisitions started at the four-cell stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our acquisitions started at the four-cell stage, we aimed to build a tree for each of the original four cells (one containing the progeny of the primed converted cell).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the starting point of the imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "466ea0c7-3ec1-4362-89bf-7ce55ccfaeb6",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C82",
+      "claim": "The final, manually curated lineage was used as ground truth to quantify the effects of the various algorithmic correction steps.",
+      "claim_type": "EXPLICIT",
+      "source": "The final, manually curated lineage was used as ground truth to quantify the effects of the various algorithmic correction steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reference standard used for evaluating the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "0c8b6b40-4bc9-4f03-8c82-9cabcd2bb17f",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "claim_id": "C83",
+      "claim": "Spurious trees that resulted from bad segmentation and tracking were not used for the distance calculation, since they already indirectly affected the difference of the tree from which they were erroneously detached.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, spurious trees that resulted from bad segmentation and tracking were not used for the distance calculation, since they already indirectly affected the difference of the tree from which they were erroneously detached.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological decision in the comparative analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9872b996-6a44-4a92-99ef-833fb3c119dd",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "H2B-pr-mEosFP is identified as the optimal fluorescent protein for long-term imaging of mouse embryos, while H2B-pr-mEos2 causes developmental arrest due to oligomerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 provide direct experimental comparison showing H2B-pr-mEosFP allows normal development (n\u2265200 embryos) while H2B-pr-mEos2 causes nuclear connection defects and developmental arrest (n=30/30). The oligomerization explanation (C12) is supported by prior literature citation. C37 provides background on pr-pcFP properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "42f3823d-f78d-4513-85f4-5b02dce4eb0a",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-cell photoconversion at the 4-cell stage allows tracking of red-labeled daughter cells through normal embryo development to the blastocyst stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 demonstrate that photoconverted embryos develop normally and red labels remain visible to blastocyst stage, with C54 providing robust sample size (N\u2265200 embryos from \u226510 experiments). The combination of developmental normalcy and label persistence is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "d1136dbd-e3a8-4ca2-9d98-4d6ffb696d6f",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A substantial fraction of embryos (45-50%) exhibit rotational and spatial drift that prevents automated lineage tracing, regardless of imaging frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C16 provide quantitative data showing 45% (n=9/19) and 50% (n=8) of embryos exhibit drift at different sampling rates. C4 contextualizes this as a known field problem. The finding that increased sampling frequency doesn't resolve drift (C16) is important for establishing the need for the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "6de79eeb-4937-4d78-b9d5-d289eedf39cf",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dual-channel labeling (green and red) improves segmentation accuracy by enabling identification of weak red signals through green channel overlap and distinguishing closely spaced nuclei.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 demonstrate specific advantages of dual labeling with figure support, while C22 shows quantitative improvement in lineage tracing fidelity. C56-C57 describe the technical challenge (increasing background) and computational solution. The convergent evidence supports the dual-labeling advantage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "d1c1c0ff-597e-4d7f-a55f-5e628c7b1e8a",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The primed Track pipeline uses dual-color labels as fiducial markers to computationally correct spatial and rotational drift, enabling successful lineage tracing of all rotating embryos where existing tools fail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C51-C52 establish the core method, while C59-C61 provide comparative validation showing primed Track succeeds where Bitplane Imaris fails on rotating embryos. C41 documents data reduction. The claim of recovering \"all rotating embryos\" (C61) is strong and well-supported by the comparative analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "08cd53a7-1b39-4276-af9f-6f779fbea373",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The primed Track registration and cropping approach reduces dataset size to 34\u00b111% of the original.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C41 both report the same quantitative data reduction metric with reference to figures. This is a straightforward computational result that is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "dec3fd66-69c0-422f-8ff6-f936a8796a1a",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Existing state-of-the-art lineage tracing tools (Ilastik, TrackMate, TGMM) cannot handle heavy rotational and spatial drift in these embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 is based on direct testing of multiple tools with reference to source data. This comparative assessment establishes the need for the new method and is appropriately scoped to the specific challenge of drift correction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "1e8a68c6-9969-456d-9e49-230308f0762c",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The primed Track pipeline requires minimal manual correction time (0.5-1.5 hours per lineage tree) and successfully recovers all rotating embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C61 provide specific quantitative metrics on manual correction time and success rate. These practical performance metrics are clearly stated, though the sample size for \"all rotating embryos\" is not explicitly provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "688307e2-f48c-4d26-aaf5-ba65049e82f4",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Primed Track enables reliable lineage tracing at reduced sampling frequencies (up to 30-40 minute intervals), with greater benefit for non-drifting embryos at lower frequencies, though accuracy decreases above 40 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 and C62-C63 provide specific time intervals and performance characteristics with figure support. The nuanced finding that registration helps non-drifting embryos more at lower frequencies (C25, C63) and the 40-minute threshold (C26) are well-documented. This addresses a key practical concern about photodamage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "610cb3e3-f492-481b-853e-0bb3f6bea36a",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Primed Track enables fast, automated, high-fidelity lineage tracing with reduced illumination and data volume, overcoming the need to exclude rotating embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C28 and C64 summarize the overall advantages of the method, which are supported by the collective experimental results throughout the manuscript. These are appropriate summary statements of demonstrated capabilities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "042ff5a5-90a8-4071-a566-23c1eee07f51",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Low abundant protein fusions may require higher illumination power, potentially impacting sample integrity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is a reasonable cautionary statement based on general fluorescence imaging principles. The authors appropriately note this limitation of their approach which used highly-expressed H2B fusions. This is a valid inference about generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "7c77a842-a8e6-4725-bd5f-1db071f4ef1d",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Laser power was gradually increased during imaging to compensate for signal dilution from cell division, resulting in increased background fluorescence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 describe an experimental observation and its consequence. This is a straightforward methodological detail that explains a challenge addressed by the dual-labeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "8f122813-5f6b-4040-a8ed-0e71c390c460",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A condensed tree representation was developed to quantify lineage tree quality using the Zhang-Shasha edit distance algorithm, avoiding inflated distance metrics from early tracking errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 describe the analytical approach for tree comparison, with C77 identifying a limitation of standard application and C78-C80 describing the solution. C82-C83 describe validation methodology. This is a sound computational approach to quantifying lineage tracing accuracy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "7e4d4388-2656-4d92-a0e0-8b97d29142c2",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Primed convertible fluorescent proteins enable simultaneous visualization of global green and photoconverted red cell populations, facilitating segmentation, classification, and tracking from 4-cell to blastocyst stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 state the core capability demonstrated in the study, with C48 providing background on pcFP properties. These claims are supported by the experimental results throughout the manuscript showing successful dual-color tracking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "5a27be2d-3db0-40d4-8f26-926f566d66b3",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Primed conversion uses dual-wavelength illumination (488nm and 730nm) to achieve 3D-confined photoconversion with axial confinement superior to 405nm photoconversion, overcoming limitations that previously prevented combining photoconversion with SPIM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 describe the primed conversion technology with appropriate citations to prior work. C47 and C50 explain why traditional photoconversion wasn't combined with SPIM. These are well-supported by citations and represent established prior work being applied in a new context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "88051da7-8c78-48d5-892b-a598f8ed9e6f",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Primed Track complements existing post-implantation tracking methods and will enable more accurate insight into cell fate decisions in early mammalian embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C69 appropriately position the work relative to other methods and make reasonable projections about impact based on demonstrated capabilities. These are appropriate concluding statements supported by the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "523b5533-2bf2-4f38-b00c-2427f55e8a63",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Future implementation of repeated primed conversion within SPIM could extend tracking duration, limited only by new green pr-pcFP synthesis rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C68 are speculative statements about future technical developments. While reasonable extrapolations from current results, these represent proposed future work rather than demonstrated capabilities and should be evaluated as such.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Standard methods were used for embryo preparation, mRNA synthesis, photoconversion, and imaging, with appropriate ethical approval and code availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 and C70-C75 describe standard experimental methods with appropriate citations and details. C35 confirms ethical approval. C75 provides code availability. These methodological claims are appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "36021ca5-00fd-4ea4-b7b7-f2d97a227bd2",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Higher frame rates increase photodamage and data storage demands, making them less suitable for sensitive mouse embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C46 describe known trade-offs in imaging, supported by citations (C5) and general knowledge (C46). These establish the motivation for developing methods that work at lower sampling frequencies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "540f8cbb-cc6c-41fd-9973-cddde62fb71f",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Accurate lineage tracing is essential for understanding early cell fate decisions, and SPIM has potential for comprehensive non-invasive imaging of mammalian pre-implantation development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 provide background motivation supported by citations (C44) and general knowledge about SPIM capabilities. These appropriately establish the biological and technical context for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "0af994c0-73d7-4059-99dc-29c2b399e834",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The segmentation approach is robust and flexible due to adjustable parameters matching embryo characteristics and dual-channel information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is an inference about the segmentation design based on its features. While not directly tested across diverse conditions, this is a reasonable characterization of the method's design principles supported by successful application.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "c2ccfc65-cef3-4be8-8c80-29278267e54e",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Increasing cell density and embryo rotation complicate lineage tracing, but photoconvertible proteins offer potential for facilitating tracking and fate assignments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 describe known challenges in the field, while C49 (with citation) describes the potential of pcFPs. These provide appropriate background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    },
+    {
+      "id": "e2f655f7-384c-4d43-95ca-3f21f3237647",
+      "content_id": "ab8ce00a-26e6-4d63-b625-839608fb2158",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "A recent study by McDole et al. (2018) enables long-term tracking during post-implantation development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is a straightforward citation to related work. This appropriately positions the current work in the context of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:12:47.740861Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2d9f0298-8cde-40d9-8572-d02133c225a2",
+      "result_id": "9872b996-6a44-4a92-99ef-833fb3c119dd"
+    },
+    {
+      "claim_id": "579fce28-ed6a-497e-89c3-21a216e93e78",
+      "result_id": "9872b996-6a44-4a92-99ef-833fb3c119dd"
+    },
+    {
+      "claim_id": "bd7f5b47-228e-4b4f-bbb2-8bd8b601248f",
+      "result_id": "9872b996-6a44-4a92-99ef-833fb3c119dd"
+    },
+    {
+      "claim_id": "a70eecf5-6ba0-47c4-9089-fee469c24605",
+      "result_id": "9872b996-6a44-4a92-99ef-833fb3c119dd"
+    },
+    {
+      "claim_id": "e16739b2-e358-47d4-85b5-cc0983b0ef21",
+      "result_id": "9872b996-6a44-4a92-99ef-833fb3c119dd"
+    },
+    {
+      "claim_id": "298b7bf7-81da-4a2d-ab7f-d722cf85eec3",
+      "result_id": "42f3823d-f78d-4513-85f4-5b02dce4eb0a"
+    },
+    {
+      "claim_id": "842483d9-5634-4e02-9433-a6e3e4298de6",
+      "result_id": "42f3823d-f78d-4513-85f4-5b02dce4eb0a"
+    },
+    {
+      "claim_id": "1decc502-1729-47d5-b782-160826702dac",
+      "result_id": "42f3823d-f78d-4513-85f4-5b02dce4eb0a"
+    },
+    {
+      "claim_id": "348826d0-da58-4cac-9d15-b020e74b71aa",
+      "result_id": "d1136dbd-e3a8-4ca2-9d98-4d6ffb696d6f"
+    },
+    {
+      "claim_id": "c09a3fc0-50ba-47b5-a8e0-4a28025a9ff4",
+      "result_id": "d1136dbd-e3a8-4ca2-9d98-4d6ffb696d6f"
+    },
+    {
+      "claim_id": "5c0cdb92-8de0-448c-8b34-712b88718e6f",
+      "result_id": "d1136dbd-e3a8-4ca2-9d98-4d6ffb696d6f"
+    },
+    {
+      "claim_id": "97872a3b-cf36-43fa-a3cd-6f82fe192891",
+      "result_id": "6de79eeb-4937-4d78-b9d5-d289eedf39cf"
+    },
+    {
+      "claim_id": "579e7a3d-ec44-41cc-8de1-df98d25ea058",
+      "result_id": "6de79eeb-4937-4d78-b9d5-d289eedf39cf"
+    },
+    {
+      "claim_id": "045d5c53-8dd2-4ba1-a7b5-3979e1a5cedf",
+      "result_id": "6de79eeb-4937-4d78-b9d5-d289eedf39cf"
+    },
+    {
+      "claim_id": "e9825622-ec68-4488-ac96-e2ac2e7281aa",
+      "result_id": "6de79eeb-4937-4d78-b9d5-d289eedf39cf"
+    },
+    {
+      "claim_id": "66b91233-f03b-4950-99b9-e128844b8822",
+      "result_id": "6de79eeb-4937-4d78-b9d5-d289eedf39cf"
+    },
+    {
+      "claim_id": "cca578cd-9ccf-4e62-9dea-c5cab39a41ca",
+      "result_id": "6de79eeb-4937-4d78-b9d5-d289eedf39cf"
+    },
+    {
+      "claim_id": "e573aece-aeb2-4d47-8c95-a0de7806dd44",
+      "result_id": "d1c1c0ff-597e-4d7f-a55f-5e628c7b1e8a"
+    },
+    {
+      "claim_id": "408daf9f-3917-43f5-8e6f-8a3bb5bf86f6",
+      "result_id": "d1c1c0ff-597e-4d7f-a55f-5e628c7b1e8a"
+    },
+    {
+      "claim_id": "026db72f-b349-40f8-ae8a-c82caa494667",
+      "result_id": "d1c1c0ff-597e-4d7f-a55f-5e628c7b1e8a"
+    },
+    {
+      "claim_id": "dd6781e6-c896-4244-993a-4fc096d77bb0",
+      "result_id": "d1c1c0ff-597e-4d7f-a55f-5e628c7b1e8a"
+    },
+    {
+      "claim_id": "024b614a-a304-4438-a67b-e4ae70ff0948",
+      "result_id": "d1c1c0ff-597e-4d7f-a55f-5e628c7b1e8a"
+    },
+    {
+      "claim_id": "05920ea8-6742-438d-aa88-15cd5f44ae9e",
+      "result_id": "d1c1c0ff-597e-4d7f-a55f-5e628c7b1e8a"
+    },
+    {
+      "claim_id": "5a0e7312-4f19-4a2f-882d-43fe369be1e4",
+      "result_id": "d1c1c0ff-597e-4d7f-a55f-5e628c7b1e8a"
+    },
+    {
+      "claim_id": "f2c11fe1-06fe-41af-8e81-bead097bf178",
+      "result_id": "08cd53a7-1b39-4276-af9f-6f779fbea373"
+    },
+    {
+      "claim_id": "408daf9f-3917-43f5-8e6f-8a3bb5bf86f6",
+      "result_id": "08cd53a7-1b39-4276-af9f-6f779fbea373"
+    },
+    {
+      "claim_id": "eda2803a-2a24-4722-9887-c407597712c3",
+      "result_id": "dec3fd66-69c0-422f-8ff6-f936a8796a1a"
+    },
+    {
+      "claim_id": "335e49c5-022d-4eca-92b1-d5ee466ff98a",
+      "result_id": "1e8a68c6-9969-456d-9e49-230308f0762c"
+    },
+    {
+      "claim_id": "5a0e7312-4f19-4a2f-882d-43fe369be1e4",
+      "result_id": "1e8a68c6-9969-456d-9e49-230308f0762c"
+    },
+    {
+      "claim_id": "664b5af2-d8a7-4f43-96ad-acae3421ea2b",
+      "result_id": "688307e2-f48c-4d26-aaf5-ba65049e82f4"
+    },
+    {
+      "claim_id": "c6059b71-adf8-4724-bdbb-e14efeea9bef",
+      "result_id": "688307e2-f48c-4d26-aaf5-ba65049e82f4"
+    },
+    {
+      "claim_id": "a2f0d704-796d-4dc6-b4be-4f6f36ba3dde",
+      "result_id": "688307e2-f48c-4d26-aaf5-ba65049e82f4"
+    },
+    {
+      "claim_id": "1dd06928-bb81-4c79-bcd5-e48bcc87e314",
+      "result_id": "688307e2-f48c-4d26-aaf5-ba65049e82f4"
+    },
+    {
+      "claim_id": "ca875f2d-5728-4d90-8150-3ae73b068913",
+      "result_id": "688307e2-f48c-4d26-aaf5-ba65049e82f4"
+    },
+    {
+      "claim_id": "f8f36425-f5ea-42ab-8b56-86a90c1b1049",
+      "result_id": "688307e2-f48c-4d26-aaf5-ba65049e82f4"
+    },
+    {
+      "claim_id": "79d143a8-d59f-4faa-9612-70707b052986",
+      "result_id": "688307e2-f48c-4d26-aaf5-ba65049e82f4"
+    },
+    {
+      "claim_id": "1f36c66e-de9a-447a-aea6-831a282cc55a",
+      "result_id": "688307e2-f48c-4d26-aaf5-ba65049e82f4"
+    },
+    {
+      "claim_id": "3ce1a0b4-b846-43c6-8341-731cf8e25d7d",
+      "result_id": "610cb3e3-f492-481b-853e-0bb3f6bea36a"
+    },
+    {
+      "claim_id": "382e41e2-1357-413a-a91c-8e02a8247896",
+      "result_id": "610cb3e3-f492-481b-853e-0bb3f6bea36a"
+    },
+    {
+      "claim_id": "d7261f65-0d9f-4ae3-8c2f-5044113f99d3",
+      "result_id": "610cb3e3-f492-481b-853e-0bb3f6bea36a"
+    },
+    {
+      "claim_id": "e5ce909c-3573-4000-a74c-25eaa65f63d6",
+      "result_id": "042ff5a5-90a8-4071-a566-23c1eee07f51"
+    },
+    {
+      "claim_id": "143fce6d-5807-46a2-8285-daf32163178a",
+      "result_id": "7c77a842-a8e6-4725-bd5f-1db071f4ef1d"
+    },
+    {
+      "claim_id": "66b91233-f03b-4950-99b9-e128844b8822",
+      "result_id": "7c77a842-a8e6-4725-bd5f-1db071f4ef1d"
+    },
+    {
+      "claim_id": "f09fa465-bb96-40f7-88a6-34d77b22b866",
+      "result_id": "8f122813-5f6b-4040-a8ed-0e71c390c460"
+    },
+    {
+      "claim_id": "77668eac-9f0a-4eb7-80c3-603a3f862714",
+      "result_id": "8f122813-5f6b-4040-a8ed-0e71c390c460"
+    },
+    {
+      "claim_id": "721e6dcb-49fe-4cd5-8b15-3c07a53d08ac",
+      "result_id": "8f122813-5f6b-4040-a8ed-0e71c390c460"
+    },
+    {
+      "claim_id": "343704c0-fd69-42b4-8587-5bdbd574d8c9",
+      "result_id": "8f122813-5f6b-4040-a8ed-0e71c390c460"
+    },
+    {
+      "claim_id": "20d9ee78-c66d-447a-96f2-e834d54cd9db",
+      "result_id": "8f122813-5f6b-4040-a8ed-0e71c390c460"
+    },
+    {
+      "claim_id": "466ea0c7-3ec1-4362-89bf-7ce55ccfaeb6",
+      "result_id": "8f122813-5f6b-4040-a8ed-0e71c390c460"
+    },
+    {
+      "claim_id": "0c8b6b40-4bc9-4f03-8c82-9cabcd2bb17f",
+      "result_id": "8f122813-5f6b-4040-a8ed-0e71c390c460"
+    },
+    {
+      "claim_id": "d7620bc0-69a5-41f5-a224-fb3010ebad34",
+      "result_id": "7e4d4388-2656-4d92-a0e0-8b97d29142c2"
+    },
+    {
+      "claim_id": "5c839fb0-b1bf-477c-9fee-045f0f981473",
+      "result_id": "7e4d4388-2656-4d92-a0e0-8b97d29142c2"
+    },
+    {
+      "claim_id": "496fd4f5-26b9-4648-ad39-2b80faa40359",
+      "result_id": "7e4d4388-2656-4d92-a0e0-8b97d29142c2"
+    },
+    {
+      "claim_id": "69d60f16-183e-4ef2-8942-d66cb80f4ba5",
+      "result_id": "5a27be2d-3db0-40d4-8f26-926f566d66b3"
+    },
+    {
+      "claim_id": "49faf5e0-a28d-43ee-907c-7bf5f51de8a6",
+      "result_id": "5a27be2d-3db0-40d4-8f26-926f566d66b3"
+    },
+    {
+      "claim_id": "a86c58fd-4479-4069-bf32-dbf5c16832ee",
+      "result_id": "5a27be2d-3db0-40d4-8f26-926f566d66b3"
+    },
+    {
+      "claim_id": "a1bd1f5b-b48b-4ffb-b492-9fece73552e6",
+      "result_id": "5a27be2d-3db0-40d4-8f26-926f566d66b3"
+    },
+    {
+      "claim_id": "d08bd553-dfe3-4138-8562-7317e3b7045a",
+      "result_id": "5a27be2d-3db0-40d4-8f26-926f566d66b3"
+    },
+    {
+      "claim_id": "0852333d-c15b-49cf-b0b7-2b4498b37609",
+      "result_id": "5a27be2d-3db0-40d4-8f26-926f566d66b3"
+    },
+    {
+      "claim_id": "6060e551-a41a-4bf0-8752-3df218578f67",
+      "result_id": "88051da7-8c78-48d5-892b-a598f8ed9e6f"
+    },
+    {
+      "claim_id": "9c96da54-cd99-4732-86df-52958dcb86a5",
+      "result_id": "88051da7-8c78-48d5-892b-a598f8ed9e6f"
+    },
+    {
+      "claim_id": "183f74e0-977d-420e-aefb-e3e081e5fa21",
+      "result_id": "523b5533-2bf2-4f38-b00c-2427f55e8a63"
+    },
+    {
+      "claim_id": "ac95561a-e567-48b9-89b6-a45d4828b25a",
+      "result_id": "523b5533-2bf2-4f38-b00c-2427f55e8a63"
+    },
+    {
+      "claim_id": "b500bceb-7ca5-4655-803f-9ae5cf48d875",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "999367f1-da08-4269-a8d1-eb714e91870d",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "ece34e39-2bac-4f6c-9caf-5d232fee4476",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "710bb0c9-aaf1-44fd-ae5f-989c1e5d6a3f",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "54ff297a-eee0-4c47-8166-bddb18fd80fb",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "4704ab10-3958-471e-ab7e-9cd62dff0092",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "ed941b47-3ac3-4b03-b226-b745cf235382",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "c1674f43-4f19-4519-b93b-7b492693e04a",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "1526ecbf-1b8e-4c03-84fd-924879d8651f",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "f2389090-d445-4582-b97a-50cb8c874c8d",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "c0a306a1-dacc-4577-93de-715c77e5a6e7",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "788326ee-0a10-401b-aaf9-bd0454d3d417",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "af4bebbf-d1c1-492d-91d3-34744f2371c8",
+      "result_id": "c114fb8e-2c26-4b4c-bf6e-d8c5b592011d"
+    },
+    {
+      "claim_id": "794d3449-c1e1-467b-8ca6-adf6b8ae38bd",
+      "result_id": "36021ca5-00fd-4ea4-b7b7-f2d97a227bd2"
+    },
+    {
+      "claim_id": "92253f67-fcd6-41de-81e5-059fb261b154",
+      "result_id": "36021ca5-00fd-4ea4-b7b7-f2d97a227bd2"
+    },
+    {
+      "claim_id": "0520e4d5-0a40-419b-819d-495b071dda0b",
+      "result_id": "540f8cbb-cc6c-41fd-9973-cddde62fb71f"
+    },
+    {
+      "claim_id": "bda7e6d0-68da-4f53-a324-ec1dea3f1719",
+      "result_id": "540f8cbb-cc6c-41fd-9973-cddde62fb71f"
+    },
+    {
+      "claim_id": "82833260-1df1-4582-8e02-d60da5f714f7",
+      "result_id": "540f8cbb-cc6c-41fd-9973-cddde62fb71f"
+    },
+    {
+      "claim_id": "fd6ddba8-73e7-4c93-bc71-cd9860489f35",
+      "result_id": "0af994c0-73d7-4059-99dc-29c2b399e834"
+    },
+    {
+      "claim_id": "70e50d08-f9f8-4528-a7b3-ce297d9bcc1d",
+      "result_id": "c2ccfc65-cef3-4be8-8c80-29278267e54e"
+    },
+    {
+      "claim_id": "45a8bd57-7f38-426f-8629-2f75b8362e88",
+      "result_id": "c2ccfc65-cef3-4be8-8c80-29278267e54e"
+    },
+    {
+      "claim_id": "6ada88f0-7744-4b6c-ae45-65065e2cb783",
+      "result_id": "c2ccfc65-cef3-4be8-8c80-29278267e54e"
+    },
+    {
+      "claim_id": "4354286f-28d7-483d-b563-bbb41357bee6",
+      "result_id": "e2f655f7-384c-4d43-95ca-3f21f3237647"
+    }
+  ],
+  "comparisons": []
+}

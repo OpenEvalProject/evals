@@ -1,0 +1,1939 @@
+{
+  "submission": {
+    "id": "07f2ee35-04d5-455b-8a70-b1f140aec7c0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:41:10.148760Z",
+    "updated_at": "2025-12-02T12:41:10.148760Z"
+  },
+  "content": [
+    {
+      "id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "submission_id": "07f2ee35-04d5-455b-8a70-b1f140aec7c0",
+      "content_type": "manuscript",
+      "content_text": "# A neural mechanism for contextualizing fragmented inputs during naturalistic vision\n\n## Authors\n\n- Daniel Kaiser<sup>1</sup> ([ORCID: 0000-0002-9007-3160](https://orcid.org/0000-0002-9007-3160)) \u2020\n- Jacopo Turini<sup>2</sup>\n- Radoslaw M Cichy<sup>2</sup>\n\n### Affiliations\n\n1. Department of Psychology University of York York United Kingdom\n2. Department of Education and Psychology Freie Universit\u00e4t Berlin Berlin Germany\n3. Institute of Psychology Goethe-Universit\u00e4t Frankfurt Frankfurt am Main Germany\n4. Berlin School of Mind and Brain Humboldt-Universit\u00e4t Berlin Berlin Germany\n5. Bernstein Center for Computational Neuroscience Berlin Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nWith every glimpse of our eyes, we sample only a small and incomplete fragment of the visual world, which needs to be contextualized and integrated into a coherent scene representation. Here we show that the visual system achieves this contextualization by exploiting spatial schemata, that is our knowledge about the composition of natural scenes. We measured fMRI and EEG responses to incomplete scene fragments and used representational similarity analysis to reconstruct their cortical representations in space and time. We observed a sorting of representations according to the fragments' place within the scene schema, which occurred during perceptual analysis in the occipital place area and within the first 200 ms of vision. This schema-based coding operates flexibly across visual features (as measured by a deep neural network model) and different types of environments (indoor and outdoor scenes). This flexibility highlights the mechanism's ability to efficiently organize incoming information under dynamic real-world conditions.\n\n## Introduction\n\nDuring natural vision, the brain continuously receives incomplete fragments of information that need to be integrated into meaningful scene representations. Here, we propose that this integration is achieved through contextualization: the brain uses prior knowledge about where information typically appears in a scene to meaningfully sort incoming information.\n\nA format in which such prior knowledge about the world is represented in the brain is provided by schemata. First introduced to philosophy to explain how prior knowledge enables perception of the world (Kant, 1781), schemata were later adapted by psychology (Barlett, 1932; Piaget, 1926) and computer science (Minsky, 1975;\u00a0Rumelhart, 1980)\u00a0as a means to formalize mechanisms enabling natural and artificial intelligence, respectively.\n\nIn the narrower context of natural vision, scene schemata represent knowledge about the typical composition of real-world environments (Mandler, 1984). Scene schemata for example entail knowledge about the distribution of objects across scenes, where objects appear in particular locations across the scene and in particular locations with respect to other objects (Kaiser et al., 2019a; Torralba et al., 2006; V\u00f5 et al., 2019; Wolfe et al., 2011).\n\nThe beneficial role of such scene schemata was first investigated in empirical studies of human memory, where memory performance is boosted when scenes are configured in accordance with the schema (Brewer and Treyens, 1981; Mandler and Johnson, 1976;\u00a0Mandler and Parker, 1976).\n\nRecently however, it has become clear that scene schemata not only organize memory contents, but also the contents of perception. For example, knowledge about the structure of the world can be used to generate predictions about a scene\u2019s content (Bar, 2009; Henderson, 2017), or to efficiently organize the concurrent representation of multiple scene elements (Kaiser et al., 2014; Kaiser et al., 2019b). This position is reinforced by behavioral studies demonstrating a beneficial role of schema-congruent naturalistic stimuli across a variety of perceptual tasks, such as visual detection (Biederman et al., 1982; Davenport and Potter, 2004; Stein et al., 2015) and visual search (Kaiser et al., 2014; Torralba et al., 2006; V\u00f5 et al., 2019).\n\nHere, we put forward a novel function of scene schemata in visual processing: they support the contextualization of fragmented sensory inputs. If sensory inputs are indeed processed in relation to the schema context, scene fragments stemming from similar typical positions within the scene should be processed similarly and fragments stemming from different positions should be processed differently. Therefore, the neural representations of scene fragments should be sorted according to their typical place within the scene.\n\nWe tested two hypotheses about this sorting process. First, we hypothesized that this sorting occurs during perceptual scene analysis, which can be spatiotemporally pinpointed to scene-selective cortex (Baldassano et al., 2016; Epstein, 2014) and the first 250 ms of processing (Cichy et al., 2017; Harel et al., 2016). Second, given that schema-related effects in behavioral studies (Mandler and Parker, 1976) are more robustly observed along the vertical dimension, where the scene structure is more rigid (i.e., the sky is almost always above the ground), we hypothesized that the cortical sorting of information should primarily occur along the vertical dimension.\n\nTo test these hypotheses, we used a novel visual paradigm in which participants were exposed to fragmented visual inputs, and recorded fMRI and EEG data to resolve brain activity in space and time.\n\n## Results\n\nIn our study, we experimentally mimicked the fragmented nature of naturalistic visual inputs by dissecting scene images into position-specific fragments. Six natural scene images (Figure 1a) were each split into six equally-sized fragments (three vertical\u00a0\u00d7\u00a02 horizontal), resulting in 36 conditions (six scenes\u00a0\u00d7\u00a06 fragments). In separate fMRI (n\u00a0=\u00a030) and EEG (n\u00a0=\u00a020) experiments, participants viewed these fragments at central fixation while performing an indoor/outdoor categorization task to ensure engagement with the stimulus (Figure 1b). Critically, this design allowed us to investigate whether the brain sorts the fragments with respect to their place in the schema in the absence of explicit location differences (Figure 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig1-v2.jpg)\n\n**Figure 1.:** (a) The stimulus set consisted of six natural scenes (three indoor, three outdoor). Each scene was split into six rectangular fragments. (b) During the fMRI and EEG recordings, participants performed an indoor/outdoor categorization task on individual fragments. Notably, all fragments were presented at central fixation, removing explicit location information. (c) We hypothesized that the visual system sorts sensory input by spatial schemata, resulting in a cortical organization that is explained by the fragments\u2019 within-scene location, predominantly in the vertical dimension: Fragments stemming from the same part of the scene should be represented similarly. Here we illustrate the hypothesized sorting in a two-dimensional space. A similar organization was observed in multi-dimensional scaling solutions for the fragments\u2019 neural similarities (see Figure 1\u2014figure supplement 1 and Video 1). In subsequent analyses, the spatiotemporal emergence of the schema-based cortical organization was precisely quantified using representational similarity analysis (Figure 2).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a/b) A multi-dimensional scaling (MDS) of the fragments\u2019 neural similarity in OPA (a) and after 200 ms of processing (b) revealed a sorting according to vertical location, which was visible in a two-dimensional solution. This visualization suggests that schemata are a prominent organizing principle for representations in OPA and after 200 ms of vision. A time-resolved MDS for the EEG data can be found in Video 1.\n\n![Video 1.](https://cdn.elifesciences.org/articles/48182/elife-48182-video1.mp4.jpg)\n\n**Video 1.:** To directly visualize the emergence of schematic coding from the neural data, we performed a multi-dimensional scaling (MDS) analysis, where the time-resolved neural RDMs (averaged across participants) were projected onto a two-dimensional space. The RDM time series was smoothed using a sliding averaging window (15 ms width). Computing MDS solutions across time yielded a movie (5 ms resolution), where fragments travel through an arbitrary space, eventually forming a meaningful organization. Notably, around 200 ms, a division into the three vertical locations can be observed.\n\nTo quantify the sorting of fragments during cortical processing we used spatiotemporally resolved representational similarity analysis (Cichy et al., 2014; Kriegeskorte et al., 2008). We first extracted representational dissimilarity matrices (RDMs) from the fMRI and EEG data, which indexed pairwise dissimilarities of the fragments\u2019 neural representations (for details on RDM construction see Figure 2\u2014figure supplement 1). In the fMRI (Figure 2a), we extracted spatially-resolved neural RDMs from scene-selective occipital place area (OPA) and parahippocampal place area (PPA), and from early visual cortex (V1) (for temporal response profiles in these regions see Figure 2\u2014figure supplement 2). In the EEG (Figure 2b), we extracted time-resolved neural RDMs from \u2212200 ms to 800 ms relative to stimulus onset from posterior EEG electrodes (for other electrode groups see Figure 2\u2014figure supplements 3\u20135).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-v2.jpg)\n\n**Figure 2.:** (a) To test where and when the visual system sorts incoming sensory information by spatial schemata, we first extracted spatially (fMRI) and temporally (EEG) resolved neural representational dissimilarity matrices (RDMs). In the fMRI, we extracted pairwise neural dissimilarities of the fragments from response patterns across voxels in the occipital place area (OPA), parahippocampal place area (PPA), and early visual cortex (V1). (b) In the EEG, we extracted pairwise dissimilarities from response patterns across electrodes at every time point from \u2212200 ms to 800 ms with respect to stimulus onset. (c) We modelled the neural RDMs with three predictor matrices, which reflected their vertical and horizontal positions within the full scene, and their category (i.e., their scene or origin). (d) The fMRI data revealed a vertical-location organization in OPA, but not V1 and PPA. Additionally, the fragment\u2019s category predicted responses in both scene-selective regions. (e) The EEG data showed that both vertical location and category predicted cortical responses rapidly, starting from around 100 ms. These results suggest that the fragments\u2019 vertical position within the scene schema determines rapidly emerging representations in scene-selective occipital cortex. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean. In further analysis, we probed the flexibility of this schematic coding mechanism (Figure 3).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Pairwise neural dissimilarity values were into representational dissimilarity matrices (RDMs), so that for every time point one 36 \u00d7 36 matrix containing estimates of neural dissimilarity was available. Here, an example RDM at 200 ms post-stimulus is shown, which exemplifies the ordering of fragment combinations for all RDMs.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Functional MRI data were analyzed in three regions of interest (here shown on the right hemisphere): primary visual cortex (V1), occipital place area (OPA), and parahippocampal place area (PPA). Each of these ROIs showed reliable net responses to the fragments, peaking 3 TRs after stimulus onset. The activation time courses were baseline-corrected by subtracting the activation from the first two TRs. (b), GLM analysis across the response time course. Most prominently after 3 TRs, the neural organization in OPA was explained by the fragments\u2019 vertical location, reflecting a neural coding in accordance with spatial schemata. Additionally, scene category predicted neural organization in OPA and PPA. Error margins reflect standard errors of the mean. Significance markers represent p<0.05 (corrected for multiple comparisons across ROIs).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Based on previous studies on multivariate decoding of visual information, we restricted our main analysis to a group of posterior electrodes (where we expected the strongest effects). For comparison, we also analyzed data in central and anterior electrode groups. The central group consisted of 20 electrodes (C3, TP9, CP5, CP1, TP10, CP6, CP2, Cz, C4, C1, C5, TP7, CP3, CPz, CP4, TP8, (C6, C2, T7, T8) and the anterior group consisted of 26 electrodes (F3, F7, FT9, FC5, FC1, FT10, FC6, FC2, F4, F8, Fp2, AF7, AF3, AFz, F1, F5, FT7, FC3, FCz, FC4, FT8, F6, F2, AF4, AF8, Fpz). RDMs were constructed in an identical fashion to the posterior group used for the main analyses (Figure 2\u2014figure supplement 1). We computed general discriminability of the 36 scene fragments in the three groups by averaging all off-diagonal elements of the RDMs. As expected, the resulting time courses of pair-wise discriminability revealed the strongest overall decoding in the posterior group, followed by the central and anterior groups. RSA results for these electrodes are found in Figure 2\u2014figure supplement 4/5. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a/b) Repeating the main RSAs for the central electrode group yielded a similar pattern as the posterior group, revealing both vertical location information (from 85 ms to 485 ms) and category information (from 100 ms to 705 ms). (c/d) Removing DNN features abolished category information, but not vertical location information, most prominently between 185 ms and 350 ms. This result is consistent with the schematic coding observed for posterior signals. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (a/b) Also responses recorded from the anterior group yielded both vertical location information (from 85 ms to 350 ms) and category information (from 165 ms to 610 ms). (c/d) In contrast to the other electrode groups, removing DNN features rendered location and category information insignificant, suggesting that they are not primarily linked to sources in frontal brain areas. This observation also excludes explanations based on oculomotor confounds. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** We interpret the vertical location organization in the neural data as reflecting prior schematic knowledge about scene structure. Alternatively, however, the vertical location organization could in principle result from learning the composition of the scenes across the experiment. In the latter case, one would predict that vertical location effects should primarily occur late in the experiment (e.g., in the second half), and less so towards the beginning (e.g., in the first half). To test this, we split into halves both the fMRI data (three runs each) and the EEG data (first versus second half of trials) and for each half modeled the neural data as a function of the vertical and horizontal location and category predictors. (a) For the fMRI data, we found significant vertical location information in the OPA for in the first half (t[29]=3.46, p<0.001, pcorr\u00a0<0.05) and a trending effect for the second half (t[29]\u00a0=\u00a02.07, p\u00a0=\u00a00.024, pcorr\u00a0>0.05). No differences between the splits were found in any region (all t<0.90, p>0.37). (b) For the EEG data, we also found very similar results for the two spits, with no significant differences emerging at any time point. Together, these results suggest that the vertical location organization cannot solely be explained by extensive learning over the course of the experiment. Significance markers represent p<0.05 (corrected for multiple comparisons). Empty markers represent p<0.05 (uncorrected). Error margins reflect standard errors of the mean.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** To test whether vertical location information can be observed across all three vertical bins, we modelled the neural data as a function of the fragments\u2019 vertical location, now separately for each pairwise comparison along the vertical axis (i.e., top versus bottom, top versus middle, and middle versus bottom). (a) For the fMRI data, we only found consistent evidence for vertical location information in the OPA: top versus bottom (t[29]=4.10, p<0.001, pcorr\u00a0<0.05), top versus middle (t[29]=2.13, p=0.021, pcorr\u00a0>0.05), middle versus bottom (t[29]=2.06, p=0.024, pcorr\u00a0>0.05). Although the effect was numerically bigger for top versus bottom, we did not find a significant difference between the three pairwise comparisons in OPA (F[2,58]=2.71, p=0.075). (b) For the EEG data, we found significant vertical location information for all three comparisons. Here, the middle-versus-bottom comparison yielded the weakest effect, which was significantly smaller than the effect for top versus bottom from 120 ms and 195 ms and significantly smaller than the effect for top versus middle from 110 ms to 285 ms. Together, these results suggest that schematic coding can be observed consistently across the different comparisons along the vertical axis, although comparisons including the top fragments yielded stronger effects. Significance markers represent p<0.05 (corrected for multiple comparisons). Empty markers represent p<0.05 (uncorrected). Error margins reflect standard errors of the mean.\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** (a) To control for task difficulty effects in the indoor/outdoor classification task, we computed paired t-tests between all pairs of fragments, separately for their associated accuracies and response times. We then constructed two predictor RDMs that contained the t-values of the pairwise tests between the fragments: For each pair of fragments, these t-values corresponded to dissimilarity in task difficulty (e.g., comparing two fragments associated with similarly short categorization response times would yield a low t-value, and thus low dissimilarity). This was done separately for the fMRI and EEG experiments (matrices from the EEG experiment are shown). The accuracy and response time RDMs were mildly correlated with the category RDM (fMRI: accuracy: r\u00a0=\u00a00.10, response time: r\u00a0=\u00a00.15; EEG: accuracy: r\u00a0=\u00a00.17, response time: r\u00a0=\u00a00.16), but not with the vertical location RDM (fMRI: both r\u00a0<\u00a00.01, EEG: both r\u00a0<\u00a00.01). After regressing out the task difficulty RDMs, we found highly similar vertical location and category information as in the previous analyses (Figure 3b/c). (b) In the fMRI, only category information in OPA was significantly reduced when task difficulty was accounted for. (c) In the EEG, towards the end of the epoch \u2013 when participants responded \u2013 location and category information were decreased. This shows that the effects of schematic coding \u2013 emerging around 200 ms after onset \u2013 cannot be explained by differences in task difficulty. The dashed significance markers represent significantly reduced information (compared to the main analyses, Figure 3b/c) at p<0.05 (corrected for multiple comparisons).\n\n![Figure 2\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp9-v2.jpg)\n\n**Figure 2\u2014figure supplement 9.:** We defined our vertical location predictor as categorical, assuming that top, middle, and bottom fragments are coded distinctly in the human brain. An alternative way of constructing the vertical location predictor is in terms of the fragments\u2019 Euclidean distances, where fragments closer together along the vertical axis (e.g., top and middle) are represented more similarly than fragments further apart (e.g., top and bottom). (a) For the fMRI data, we found that the categorical and Euclidean predictors similarly explained the neural data, with no statistical differences between them (all t[29]\u00a0<1.15, p>0.26). (b) For the EEG data, we found that both predictors explained the neural data well. However, the categorical predictor revealed significantly stronger vertical location information from 75 ms to 340 ms, suggesting that, at least in the EEG data, the differentiation along the vertical axis is more categorical in nature. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.\n\nWe then quantified schema effects using separate model RDMs for horizontal and vertical locations (Figure 2c). These location RDMs reflected whether pairs of fragments shared the same location or not. We additionally constructed a category model RDM, which reflected whether pairs of fragments stemmed from the same scene or not.\n\nCritically, if cortical information is indeed sorted with respect to scene schemata, we should observe a neural clustering of fragments that stem from the same within-scene location \u2013 in this case, the location RDM should predict a significant proportion of the representational organization in visual cortex.\n\nTo test this, we modeled neural RDMs as a function of the model RDMs using general linear models, separately for the fMRI and EEG data. The resulting beta weights indicated to which degree location and category information accounted for cortical responses in the three ROIs and across time.\n\nThe key observation was that the fragments\u2019 vertical location predicted neural representations in OPA (t[29]\u00a0=\u00a04.12, p<0.001, pcorr\u00a0<0.05), but not in V1 and PPA (test statistics for all analyses and ROIs are reported in Supplementary file 1) (Figure 2d) and between 55 ms and 685 ms (peak: t[19] =\u00a09.03, p<0.001, pcorr\u00a0<0.05) (Figure 2e). This vertical-location organization was consistent across the first and second half of the experiments (see Figure 2\u2014figure supplement 6) and across all pairwise comparisons along the vertical axis (see Figure 2\u2014figure supplement 7). No effects were observed for horizontal location, consistent with more rigid spatial scene structure in the vertical dimension (Mandler and Parker, 1976). This result provides a first characterization of where and when incoming information is organized in accordance with scene schemata: in OPA and rapidly after stimulus onset, scene fragments are sorted according to their origin within the environment.\n\nThe schema-based organization co-exists with a prominent scene-category organization: In line with previous findings (Lowe et al., 2018; Walther et al., 2009), category was accurately predicted in OPA (t[29]\u00a0=\u00a03.12, p=0.002, pcorr\u00a0<0.05) and PPA (t[29]\u00a0=\u00a04.26, p<0.001, pcorr\u00a0<0.05) (Figure 2d), and from 60 ms to 775 ms (peak: t[19] =\u00a06.39, p<0.001, pcorr\u00a0<0.05) (Figure 2e).\n\nTo efficiently support vision in dynamic natural environments, schematic coding needs to be flexible with respect to visual properties of specific scenes. The absence of vertical location effects in V1 indeed highlights that schematic coding is not tied to the analysis of simple visual features. To more thoroughly probe this flexibility, we additionally conducted three complementary analyses (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig3-v2.jpg)\n\n**Figure 3.:** (a) To determine the role of categorization-related visual features in this schematic organization, we regressed out RDMs obtained from 18 layers along the ResNet50 DNN before repeated the three-predictor general linear model (GLM) analysis (Figure 2c). (b/c) Removing DNN features abolished category information in fMRI and EEG signals, but not vertical location information. (d) To test for generalization across different scene types, we restricted location predictor RDMs to comparisons across indoor and outdoor scenes. Due to this restriction, category could not be modelled. (e/f) In this analysis, vertical location still predicted neural organization in OPA and from 70 ms. (g) Finally, we combined the two analyses: we first regressed out DNN features prior and then modelled the neural RDMs using the restricted predictor RDMs (d). (h) In this analysis, we still found significant vertical location information in OPA. (i) Notably, vertical location information in the EEG signals was delayed to after 180 ms, suggesting that at this stage schematic coding becomes flexible to visual and conceptual attributes. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) In addition to the ResNet50 DNN, we also used the more widely used AlexNet DNN architecture (pretrained on the ImageNet dataset, implemented in the MatConvNet toolbox) as a model for visual categorization. AlexNet consists of 5 convolutional and three fully-connected layers. We created 8 RDMs, separately for each layer of the DNN. (b/c) Removing the AlexNet DNN features rendered category information non-significant in fMRI and EEG signals. However, we still found vertical location information in OPA and from 65 ms to 375 ms. (c\u2013e) When additionally restricting the analysis to comparisons between indoor and outdoor scenes, the fragments\u2019 vertical location still predicted neural activations in OPA and from 95 ms to 375 ms. In sum, these results are highly similar to the results obtained with the ResNet50 model (Figure 3b/c/h/i). Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a/b) Goodness of fit (R2) across ROIs (a) and time (b) of the GLMs used to regress out DNN features, obtained from ResNet50 (left) or AlexNet (right). For the EEG time series, mean R2 across the baseline period were subtracted. Note that GLMs based on the ResNet50 RDMs had more predictor variables, which may contribute to their better fit. Error bars represent standard errors of the mean.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** We used three control models that explicitly account for low-level visual features: a pixel-dissimilarity model, GIST descriptors, and the fragments\u2019 neural dissimilarity in V1. Critically, all three models did not account for the fragments\u2019 vertical location organization. Moreover, unlike the DNN models, the low-level models were also unable to account for the fragments\u2019 categorical organization. (a/b) Results after regressing out the pixel dissimilarity model, which captured the fragments\u2019 pairwise dissimilarity in pixel space (i.e., 1- the correlation of their pixel values). (c/d) Results after regressing out the GIST model, which captured the fragments\u2019 pairwise dissimilarity in GIST descriptors (i.e., in their global spatial envelope). (e/f) Results after regressing out the V1 model, which captured the fragments\u2019 pairwise neural dissimilarity in V1 (i.e., the averaged RDM across participants) and thereby provides a brain-derived measure of low-level feature similarity. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.\n\nFirst, we tested whether schematic coding is tolerant to stimulus features relevant for visual categorization. Categorization-related features were quantified using a deep neural network (DNN; ResNet50), which extracts such features similarly to the brain (Wen et al., 2018). We removed DNN features by regressing out layer-specific RDMs constructed from DNN activations (see Materials and Methods for details) (Figure 3a); subsequently, we re-estimated location and category information.\n\nAfter removing DNN features, category information was rendered non-significant in both fMRI and EEG signals. When directly comparing category information before and after removing the DNN features, we found reduced category information in PPA (t[29]\u00a0=\u00a02.48, p\u00a0=\u00a00.010, pcorr\u00a0<0.05) and OPA (t[29] =\u00a01.86, p\u00a0=\u00a00.036, pcorr\u00a0>0.05), and a strong reduction of category information across time, from 75 ms to 775 ms (peak t[19] =\u00a013.0, p<0.001, pcorr\u00a0<0.05). Together, this demonstrates that categorization-related brain activations are successfully explained by DNN features (Cichy et al., 2016; Cichy et al., 2017; Groen et al., 2018; G\u00fc\u00e7l\u00fc and van Gerven, 2015; Wen et al., 2018), indicating the appropriateness of our DNN for modelling visual brain activations. Despite the suitability of our DNN model for modelling categorical brain responses, vertical location still accounted for the neural organization in OPA (t[29] =\u00a02.37, p\u00a0=\u00a00.012, pcorr\u00a0<0.05) (Figure 3b) and between 75 ms and 335 ms (peak: t[19] =\u00a05.06, p<0.001, pcorr\u00a0<0.05) (Figure 3c). Similar results were obtained using a shallower feed-forward DNN (see Figure 3\u2014figure supplement 1). This result suggests that schematic coding cannot be explained by categorization-related features extracted by DNN models.\n\nDNN features are a useful control for flexibility regarding visual features, because they cover both low-level and high-level features, explaining variance across fMRI regions and across EEG processing time (see Figure 3\u2014figure supplement 2; see also Cichy et al., 2016; G\u00fc\u00e7l\u00fc and van Gerven, 2015). However, to more specifically control for low-level features, we used two commonly employed low-level control models: pixel dissimilarity and GIST descriptors (Oliva and Torralba, 2001). These models neither explained the vertical location organization nor the category organization in the neural data (see Figure 3\u2014figure supplement 3). Finally, as an even stronger control of the low-level features encoded in V1, we used the neural dissimilarity structure in V1 (i.e., the neural RDMs) as a control model, establishing an empirical neural measure of low-level features. With V1 housing precise low-level feature representations, this measure should very well capture the features extracted during the early processing of simple visual features. However, removing the V1 dissimilarity structure did neither abolish the schematic coding effects in the OPA nor in the EEG data (see Figure 3\u2014figure supplement 3). This shows that even if we had control models that approximated V1 representations extremely well \u2013 as well as the V1 representations approximate themselves \u2013 these models could not explain vertical location effects in downstream processing. Together, these results provide converging evidence that low-level feature processing cannot explain the schematic coding effects reported here.\n\nSecond, we asked whether schematic coding operates flexibly across visually diverse situations. To test this explicitly we restricted RDMs to comparisons between indoor and outdoor scenes, which vary substantially in visual characteristics (Torralba and Oliva, 2003) (Figure 3d).\n\nVertical location still predicted cortical organization in OPA (t[29] =\u00a03.05, p\u00a0=\u00a00.002, pcorr\u00a0<0.05) (Figure 3e) and from 70 ms to 385 ms (peak: t[19] =\u00a07.47, p<0.001, pcorr\u00a0<0.05) (Figure 3f). The generalization across indoor and outdoor scenes indicates that schematic coding operates similarly across radically different scenes, suggesting that the mechanism can similarly contextualize information across different real-life situations.\n\nFinally, for a particularly strong test of flexibility, we tested for schematic coding after removing both DNN features and within-category comparisons (Figure 3g). In this analysis, OPA representations were still explained by the fragments\u2019 vertical location (t[29] =\u00a02.38, p\u00a0=\u00a00.012, pcorr\u00a0<0.05) (Figure 3h). Notably, early schema effects were rendered non-significant, while vertical location still predicted representations after 180 ms (peak: t[19] =\u00a04.41, p<0.001, pcorr\u00a0<0.05) (Figure 3i), suggesting a high degree of flexibility emerging at that time. Interestingly, across all analyses, vertical location information was exclusively found in OPA and always peaked shortly after 200 ms (see Supplementary file 2), suggesting that schematic coding occurs during early perceptual analysis of scenes.\n\n## Discussion\n\nTogether, our findings characterize a novel neural mechanism for contextualizing fragmented inputs during naturalistic vision. The mechanism exploits schemata to sort sensory inputs into meaningful representations of the environment. This sorting occurs during perceptual scene analysis in scene-selective OPA and within the first 200 ms of vision, and operates flexibly across changes in visual properties.\n\nThat schema-based coding can be localized to OPA is consistent with the region\u2019s important role in visual scene processing. Transcranial magnetic stimulation studies suggest that OPA activation is crucial for various scene perception tasks, such as scene discrimination (Dilks et al., 2013; Ganaden et al., 2013), navigating through scenes (Julian et al., 2016) and anticipating upcoming scene information (Gandolfo and Downing, 2019). Functional MRI work suggest that computations in the OPA include the analysis of spatial scene layout (Dillon et al., 2018; Henriksson et al., 2019;\u00a0Lowe et al., 2017) and the parsing of local scene elements like objects and local surfaces\u00a0(Kamps et al., 2016). Future studies are needed to clarify which of these computations mediate the schema-based coding described here.\n\nAs the current study is limited to a small set of scenes, more research is needed to explore whether schema-based coding generalizes to more diverse contents. It is conceivable that schema-based coding constitutes a more general coding strategy that may generalize to other visual contents (such as faces; Henriksson et al., 2015) and non-visual processing domains: when sensory information is fragmented and spatial information is unreliable, the brain may use schematic information to contextualize sensory inputs. This view is in line with Bayesian theories of perception where the importance of prior information for perceptual inference grows with the noisiness and ambiguity of the sensory information at hand (Ernst and Banks, 2002; Kersten et al., 2004).\n\nThe schema-based sorting of scene representations provides a mechanism for efficient communication between perceptual and cognitive systems: when scene information is formatted with respect to its role in the environment, it can be efficiently read out by downstream processes. This idea is consistent with the emerging view that cortical representations depend on functional interactions with the environment (Bonner and Epstein, 2017; Groen et al., 2018; Malcolm et al., 2016; Peelen and Downing, 2017). Under this view, formatting perceptual information according to real-world structure may allow cognitive and motor systems to efficiently read out visual information that is needed for different real-world tasks (e.g., immediate action versus future navigation). As the schema-based sorting of scene information happens already during early scene analysis, many high-level processes have access to this information.\n\nLastly, our results have implications for computational modelling of vision. While DNNs trained on categorization accurately capture the representational divide into different scene categories, they cannot explain the schema-based organization observed in the human visual system. Although this does not mean that visual features extracted by DNN models in principle are incapable of explaining schema-based brain representations, our results highlight that current DNN models of categorization do not use real-world structure in similar ways as the human brain. In the future, augmenting DNN training procedures with schematic information (Katti et al., 2019) may improve their performance on real-world tasks and narrow the gap between artificial and biological neural networks.\n\nTo conclude, our findings provide the first spatiotemporal characterization of a neural mechanism for contextualizing fragmented visual inputs. By rapidly organizing visual information according to its typical role in the world, this mechanism may contribute to the optimal use of perceptual information for guiding efficient real-world behaviors, even when sensory inputs are incomplete or dynamically changing.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CoSMoMVPA</td>\n      <td>Oosterhof et al., 2016</td>\n      <td>RRID:SCR_014519</td>\n      <td>For data analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>fieldtrip</td>\n      <td>Oostenveld et al., 2011</td>\n      <td>RRID:SCR_004849</td>\n      <td>For EEG data preprocessing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks Inc.</td>\n      <td>RRID:SCR_001622</td>\n      <td>For stimulus delivery and data analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Psychtoolbox 3</td>\n      <td>Brainard, 1997</td>\n      <td>RRID:SCR_002881</td>\n      <td>For stimulus delivery</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>SPM12</td>\n      <td>www.fil.ion.ucl.ac.uk/spm/software/spm12/</td>\n      <td>RRID:SCR_007037</td>\n      <td>For fMRI data preprocessing</td>\n    </tr>\n  </tbody>\n</table>\n\n### Participants\n\nThirty adults (mean age 23.9 years, SD\u00a0=\u00a04.4; 26 females) completed the fMRI experiment and twenty (mean age 24.0 years, SD\u00a0=\u00a04.3; 15 females) completed the EEG experiment. All participants had normal or corrected-to-normal vision. They all provided informed consent and received monetary reimbursement or course credits for their participation. All procedures were approved by the ethical committee of the Department of Education and Psychology at Freie Universit\u00e4t Berlin (reference 140/2017) and were in accordance with the Declaration of Helsinki.\n\n### Stimuli\n\nThe stimulus set (Figure 1a) consisted of fragments taken from three images of indoor scenes (bakery, classroom, kitchen) and three images of outdoor scenes (alley, house, farm). Each image was split horizontally into two halves, and each of the halves was further split vertically in three parts, so that for each scene six fragments were obtained. Participants were not shown the full scene images prior to the experiment.\n\n### Experimental design\n\nThe fMRI and EEG designs were identical, unless otherwise noted. Stimulus presentation was controlled using the Psychtoolbox (Brainard, 1997; RRID:SCR_002881). In each trial, one of the 36 fragments was presented at central fixation (7\u00b0 horizontal visual angle) for 200 ms (Figure 1b). Participants were instructed to maintain central fixation and categorize each stimulus as an indoor or outdoor scene image by pressing one of two buttons.\n\nIn the fMRI experiment, the inter-trial interval was kept constant at 2,300 ms, irrespective of the participant\u2019s response time. In the EEG experiment, after each response a green or red fixation dot was presented for 300 ms to indicate response correctness; participants were instructed to only blink after the feedback had occurred. Trials were separated by a fixation interval randomly varying between 1500 ms and 2000 ms.\n\nIn the fMRI, participants performed six identical runs. Within each run, each of the 36 scene fragments was shown four times, resulting in 144 trials. Additionally, each run contained 29 fixation trials, where only the central fixation dot was shown. Runs started and ended with brief fixation periods; the total run duration was 7:30 min. In the EEG, each of the 36 fragments was presented 40 times during the experiment, for a total of 1440 trials, divided into 10 runs. Three participants performed a shorter version of the experiment, with only 20 repetitions of each image (720 trials in total).\n\nIn both experiments, participants performed very well in the indoor/outdoor categorization task (fMRI: 94% correct, 658 ms mean response time, EEG: 96%, 606 ms). Differences in task difficulty across fragments were not related to the neural effects of interest (Figure 2\u2014figure supplement 8).\n\n### fMRI recording and preprocessing\n\nMRI data was acquired using a 3T Siemens Tim Trio Scanner equipped with a 12-channel head coil. T2*-weighted gradient-echo echo-planar images were collected as functional volumes (TR\u00a0=\u00a02 s, TE\u00a0=\u00a030 ms, 70\u00b0 flip angle, 3 mm3 voxel size, 37 slices, 20% gap, 192 mm FOV, 64\u00a0\u00d7\u00a064 matrix size, interleaved acquisition). Additionally, a T1-weighted image (MPRAGE; 1 mm3 voxel size) was obtained as a high-resolution anatomical reference. During preprocessing, the functional volumes were realigned and coregistered to the T1 image, using MATLAB (RRID:SCR_014519) and SPM12 (www.fil.ion.ucl.ac.uk/spm/; RRID:SCR_014519).\n\n### fMRI region of interest definition\n\nWe restricted our analyses to three regions of interest (ROIs). We defined scene-selective occipital place area (OPA; Dilks et al., 2013) and parahippocampal place area (PPA; Epstein and Kanwisher, 1998) using a functional group atlas (Julian et al., 2012). As a control region, we defined early visual cortex (V1) using a probabilistic atlas (Wang et al., 2015). All ROIs were defined in standard space and then inverse-normalized into individual-participant space. For each ROI, we concatenated the left- and right-hemispheric masks and performed analyses on the joint ROI.\n\n### EEG recording and preprocessing\n\nThe EEG was recorded using an EASYCAP 64-channel system and a Brainvision actiCHamp amplifier. The electrodes were arranged in accordance with the standard 10\u201310 system. The data was recorded at a sampling rate of 1000 Hz and filtered online between 0.03 Hz and 100 Hz. All electrodes were referenced online to the Fz electrode. Offline preprocessing was performed in MATLAB, using the FieldTrip toolbox (Oostenveld et al., 2011; RRID:SCR_004849). The continuous EEG data were epoched into trials ranging from 200 ms before stimulus onset to 800 ms after stimulus onset, and baseline corrected by subtracting the mean of the pre-stimulus interval for each trial and channel separately. Trials containing movement-related artefacts were automatically identified and removed using the default automatic rejection procedure implemented in Fieldtrip. Channels containing excessive noise were removed based on visual inspection. Blinks and eye movement artifacts were identified and removed using independent components analysis and visual inspection of the resulting components. The epoched data were down-sampled to 200 Hz.\n\n### Representational similarity analysis\n\nTo model the representational structure of the neural activity related to our stimulus set, we used representational similarity analysis (RSA; Kriegeskorte et al., 2008). We first extracted neural RDMs separately for the fMRI and EEG experiments, and then used the same analyses to model their organization. To retrieve the fragments\u2019 position within the original scene, as well their scene category, we used a regression approach, where we modeled neural dissimilarity as a linear combination of multiple predictors (Proklova et al., 2016; Proklova et al., 2019).\n\n#### Constructing neural dissimilarity \u2013 fMRI\n\nFor the fMRI data, we used cross-validated correlations as a measure of pairwise neural dissimilarity. First, patterns for each ROI were extracted from the functional images corresponding to the trials of interest. After shifting the activation time course by 3 TRs (i.e., 6 s, accounting for the hemodynamic delay), we extracted voxel-wise activation values for each trial, from the TR that was closest to the stimulus onset on this trial (for results across 6 TRs with respect to trial onset, see Figure 2\u2014figure supplement 2). To account for activation differences between runs, the mean activation across conditions was subtracted from each voxel\u2019s values, separately for each run. For each ROI, response patterns across voxels were used to perform multivariate analyses using the CoSMoMVPA toolbox (Oosterhof et al., 2016; RRID:SCR_014519). For each TR separately, we performed correlation-based (Haxby et al., 2001) multi-voxel pattern analyses (MVPA) for each pair of fragments. These analyses were cross-validated by repeatedly splitting the data into two equally-sized sets (i.e., half of the runs per set). For this analysis, we correlated the patterns across the two sets, both within-condition (i.e., the patterns stemming from the two same fragments and from different sets) and between-conditions (i.e., the patterns stemming from the two different fragments and from different sets). These correlations were Fisher-transformed. Then, we subtracted the within- and between-correlations to obtain a cross-validated correlation measure, where above-zero values reflect successful discrimination. This procedure was repeated for all possible splits of the six runs. Performing this MVPA for all pairs of fragments yielded a 36\u00a0\u00d7\u00a036 representational dissimilarity matrix (RDM) for each ROI. RDMs\u2019 entries reflected the neural dissimilarity between pairs of fragments (the diagonal remained empty).\n\n#### Constructing neural dissimilarity \u2013 EEG\n\nFor the EEG data, we used cross-validated classification accuracies as a measure of pairwise neural dissimilarity. We thus constructed RDMs across time by performing time-resolved multivariate decoding analyses (Contini et al., 2017). RDMs were built by computing pair-wise decoding accuracy for all possible combinations of the 36 stimuli, using the CoSMoMVPA toolbox (Oosterhof et al., 2016). As we expected the highest classification in sensors over visual cortex (Battistoni et al., 2018; Kaiser et al., 2016), only 17 occipital and posterior sensors (O1, O2, Oz, PO3, PO4, PO7, PO8, POz, P1, P2, P3, P4, P5, P6, P7, P8, Pz) were used in this analysis. We report results for other electrode groups in Figure 2\u2014figure supplements 3\u20135. For each participant, classification was performed separately for each time point across the epoch (i.e., with 5 ms resolution). The analysis was performed in a pair-wise fashion: Linear discriminant analysis classifiers were always trained and tested on data from two conditions (e.g., the middle left part of the alley versus the top right part of the farm), using a leave-one-trial-out partitioning scheme. The training set consisted of all but one trials for each of the two conditions, while one trial for each of the two conditions was held back and used for classifier testing. This procedure was repeated until every trial was left out once. Classifier performance was averaged across these repetitions. The pairwise decoding analysis resulted in a 36-by-36 neural RDM for each time point. A schematic description of the RDM construction can be found in Figure 2\u2014figure supplement 1.\n\n#### Location and category predictors\n\nWe predicted the neural RDMs in a general linear model (GLM; see below) with three different predictor RDMs (36\u00a0\u00d7\u00a036 entries each) (Figure 2c): In the vertical location RDM, each pair of conditions is assigned either a value of 0, if the fragments stem from the same vertical location, or the value 1, if they stem from different vertical locations (for results with an alternative predictor RDM using Euclidean distances see Figure 2\u2014figure supplement 9). In the horizontal location RDM, each pair of conditions is assigned either a value of 0, if the fragments stem from the same horizontal location, or a value of 1, if they stem from different horizontal locations. In the category RDM, each pair of conditions is assigned either a value of 0, if the fragments stem from the same scene, or a value of 1, if they stem from different scenes.\n\nIn an additional analysis, we sought to eliminate properties specific to either the indoor or outdoor scenes, respectively. We therefore constructed RDMs for horizontal and vertical location information which only contained comparisons between the indoor and outdoor scenes. These RDMs were constructed in the same way as explained above, but all comparisons within the same scene type of scene were removed (Figure 3d).\n\n#### Modelling neural dissimilarity\n\nTo reveal correspondences between the neural data and the predictor matrices, we used GLM analyses. Separately for each ROI (fMRI) or time point (EEG), we modelled the neural RDM as a linear function of the vertical location RDM, the horizontal location RDM, and the category RDM. Prior to each regression, the neural RDMs and predictor RDMs were vectorized by selecting all lower off-diagonal elements \u2013 the rest of the entries, including the diagonal, was discarded. Values for the neural RDMs were z-scored. Separately for each subject and each time point, three beta coefficients (i.e., regression weights) were estimated. By averaging across participants, we obtained time-resolved beta estimates for each predictor, showing how well each predictor explains the neural data over time.\n\nFurthermore, we performed an additional GLM analysis with a vertical location predictor and a horizontal location predictor, where comparisons within indoor- and outdoor-scenes were removed (Figure 3d\u2013f); these comparisons were also removed from the regression\u00a0criterion. Using the same procedure as in the previous GLM analysis, we then estimated the beta coefficients for each predictor at each time point, separately for each subject. For this analysis, a category RDM could not be constructed, as all comparisons of fragments from the same scene were eliminated.\n\n#### Controlling for deep neural network features\n\nTo control for similarity in categorization-related visual features, we used a deep neural network (DNN) model. DNNs have recently become the state-of-the-art model of visual categorization, as they tightly mirror the neural organization of object and scene representations (Cichy et al., 2016; Cichy et al., 2017; Cichy and Kaiser, 2019; Groen et al., 2018; G\u00fc\u00e7l\u00fc and van Gerven, 2015; Wen et al., 2018). DNNs are similar to the brain as they are trained using excessive training material while dynamically adjusting the \u2018tuning\u2019 of their connections. Here, we used a DNN (see below)\u00a0that has been trained to categorize objects across a large number of images and categories, therefore providing us with a high-quality model of how visual features are extracted for efficient categorization. By comparing DNNs activations and brain responses to the scene fragments, we could quantify to which extent features routinely extracted for categorization purposes account for schema-based coding in the human visual system.\n\nIn a two-step approach, we re-performed our regression analysis after removing the representational organization emerging from the DNN. First, we used a regression model to remove the contribution of the dissimilarity structure in the DNN model. This model included one predictor for each layer extracted from the DNN (i.e., one RDM for each processing step along the DNN). Estimating this model allowed us to remove the neural organization explained by the DNN while retaining what remains unexplained (in the regression residuals). Second, we re-ran the previous regression analyses (see above), but now the residuals of the DNN regression were used as the regression criterion, so that only the organization that remained unexplained by the DNN was modeled.\n\nAs a DNN model, we used a pre-trained version (trained on image categorization for the ImageNet challenge) of the ResNet50 model (He et al., 2016), as implemented in MatConvNet (Vedaldi and Lenc, 2015). This model\u2019s deeper, residual architecture outperforms shallower models in approximating visual cortex organization (Wen et al., 2018). ResNet50 consists of 16 blocks of residual layer modules, where information both passes through an aggregate of layers within the block, and bypasses the block; then the residual between the processed and the bypassing information is computed. Additionally, ResNet50 has one convolutional input layer, and one fully-connected output layer. Here, to not inflate the number of intercorrelated predictor variables, we only used the final layer of each residual block, and thus 18 layers in total (16 from the residual blocks, and the input and output layers). For each layer, an RDM was built using 1-correlation between the activations of all nodes in the layer, separately for each pair of conditions. For regressing out the DNN RDMs, we added one predictor for each available RDM. In Figure 3\u2014figure supplement 1, we show that an analysis using the AlexNet architecture (Krizhevsky et al., 2012) yields comparable results; in Figure 3\u2014figure supplement 2, we additionally provide information about the DNN model fit across regions and time points.\n\n### Statistical testing\n\nFor the fMRI data, we tested the regression coefficients against zero, using one-tailed, one-sample t-tests (i.e., testing the hypothesis that coefficients were greater than zero). Multiple-comparison correction was based on Bonferroni-corrections across ROIs. A complete report of all tests performed on the fMRI data can be found in Supplementary file 1. For the EEG data, we used a threshold-free cluster enhancement procedure (Smith and Nichols, 2009) to identify significant effects across time. Multiple-comparison correction was based on a sign-permutation test (with null distributions created from 10,000 bootstrapping iterations) as implemented in CoSMoMVPA (Oosterhof et al., 2016). The resulting statistical maps were thresholded at Z\u00a0>\u00a01.64 (i.e., p<0.05, one-tailed against zero). Additionally, we report the results of one-sided t-tests for all peaks effects. To estimate the reliability of onset and peak latencies we performed bootstrapping analyses, which are reported in Supplementary Items 2/3.\n\n### Data availability\n\nData are publicly available on OSF (DOI.ORG/10.17605/OSF.IO/H3G6V).\n",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "f69a75a9-a744-4083-aa0f-b6e642a45b60",
+      "submission_id": "07f2ee35-04d5-455b-8a70-b1f140aec7c0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Huan Luo, Peking University China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.48182.026](https://doi.org/10.7554/eLife.48182.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A neural mechanism for contextualizing fragmented inputs during naturalistic vision\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Joshua Gold as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis work combined fMRI, EEG and deep neural network model to investigate the neural basis of encoding of fragment location information (e.g., vertical, horizontal positions) across different scene categories. It addresses an important question about how the 'abstract' spatial layout that is not explicitly presented in the stimulus itself is represented in neural activities. The paper is clearly written and the approach and results are interesting and novel. However, there are some major issues brought up by the reviewers that need the authors to address and do additional analysis.\n\nFor a revision to be successful, you must address the following major issues:\n\nEssential revisions:\n\n1) The thirty-six figure segments come from only six natural images (3 indoor and 3 outdoor), which means the figure fragments would be repeatedly presented and be learned or memorized gradually. It is therefore hard to distinguish two interpretations \u2013 do the results reflect a true representation of spatial layout knowledge that would be automatically formed and could generalize to any natural images or do they derive from a learning and familiarization process after repeated exposure? A possible way to assess this is to divide the data into various stages and compare the early- and late-stage results. If the spatial layout knowledge is automatically represented regardless of learning, we would expect to see the same results in the early part. On the other hand, if it is indeed learning or memory process that induces the results, we would expect to see the pattern only in the late part but not in the early part.\n\n2) Each scene picture was split into two halves horizontally and three parts vertically. Thus, there are confounding factors with regards to why the effect only occurred for vertical locations but not for horizontal locations. The authors should either collect new data or perform new analysis to address the issue.\n\n3) The authors used DNN regression to confirm that the vertical position effect is not due to category-related information. However, the involvement of low-level features in discriminating vertical locations is still quite possible and could not be completely ruled out from the current analysis. For example, image segments at different vertical locations of natural scenes (upper, middle, lower) seem to be also associated with different low-level features (e.g., low spatial frequency for upper part, such as sky or ceiling, etc.). The authors could add additional analysis to clarify the confounds, for example, by creating a low-level dissimilarity design matrix, which would then predict involvement of V1 for the low-level features but not for vertical location, while the reverse for OPA.\n\n4) It is hard to understand what exactly DNN features were removed. ResNet50 and AlexNet were used widely but these DNN models were trained by a very large set of images, whereas the present study only compares 6 specific images. The specific features to differentiate the 6 specific images may not be the same as the removed DNN features. The authors could show reconstructed images with DNN features removed and it is quite possible that human observes would still differentiate the 6 reconstructed images even when the DNN features are removed.\n\n5) It is difficult to figure out what the authors were arguing was the mechanism or the consequence: Does knowledge/schema help sort incomplete information, or does the brain sort incomplete information so that we can extract knowledge? The paper is motivated by the former (\"\u2026the brain uses prior knowledge about where information typically appears in a scene to meaningfully sort incoming information\") but then ends by stating the latter (\"This mechanism empowers the visual brain to efficiently extract meaning from dynamic real-world environments, where it is confronted with sequences of incomplete visual snapshots\"). Please add clarifications.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A neural mechanism for contextualizing fragmented inputs during naturalistic vision\" for further consideration at eLife.\n\nThe manuscript has been improved but there was still one issue that was misunderstood or not clearly addressed.\n\nIn the original third comment, the reviewer pointed out that the DNN regression analysis cannot convincingly rule out the involvement of low-level properties in vertical position effect and suggested to directly test the DNN features in V1 (\"The authors could add additional analysis to clarify the confounds, for example, by creating a low-level dissimilarity design matrix, which would then predict involvement of V1 for the low-level features but not for vertical location, while the reverse for OPA.\"). The authors have performed additional analysis by using 3 low-level control models, but again just examined whether the vertical position effect existed after regression using these models. The results indeed are not quite convincing and it seems that the regression even could not disrupt category representations as the previous DNN model showed. To explicitly address the concern, as the reviewer originally suggested, the authors should perform a new analysis to show that the DNN model does account for low-level property representation in V1, which would then support the claim that DNN regression could remove the low-level features.\n",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fa209beb-bd29-46f0-aa05-f4995757d698",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C1",
+      "claim": "The visual system contextualizes incomplete scene fragments by exploiting spatial schemata.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the visual system achieves this contextualization by exploiting spatial schemata, that is our knowledge about the composition of natural scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by fMRI and EEG data showing schema-based sorting of scene fragments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "843a4185-f91b-4335-842b-1c0c1c4b86ff",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C2",
+      "claim": "Schema-based sorting of scene fragment representations occurs in the occipital place area (OPA).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a sorting of representations according to the fragments' place within the scene schema, which occurred during perceptual analysis in the occipital place area and within the first 200 ms of vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fMRI data showing vertical location organization in OPA (t[29] = 4.12, p<0.001).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "2cb09867-12c5-4c11-92f3-a08f3d6548c0",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C3",
+      "claim": "Schema-based sorting occurs within the first 200 ms of vision.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a sorting of representations according to the fragments' place within the scene schema, which occurred during perceptual analysis in the occipital place area and within the first 200 ms of vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EEG data showing vertical location effects from 55 ms to 685 ms with peak around 200 ms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "34f71e94-d953-4d52-8c60-c211ea437563",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C4",
+      "claim": "Schema-based coding operates flexibly across visual features as measured by a deep neural network model.",
+      "claim_type": "EXPLICIT",
+      "source": "This schema-based coding operates flexibly across visual features (as measured by a deep neural network model) and different types of environments (indoor and outdoor scenes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Vertical location information persisted in OPA and EEG after regressing out DNN features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "3be2251c-b616-436a-8f9e-8b124ae5228f",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C5",
+      "claim": "Schema-based coding operates flexibly across different types of environments (indoor and outdoor scenes).",
+      "claim_type": "EXPLICIT",
+      "source": "This schema-based coding operates flexibly across visual features (as measured by a deep neural network model) and different types of environments (indoor and outdoor scenes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Vertical location predicted cortical organization when restricted to comparisons between indoor and outdoor scenes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "c82f4d03-8c22-4641-8f2e-e31a2d2a33da",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C6",
+      "claim": "Schemata were first introduced to philosophy by Kant to explain how prior knowledge enables perception of the world.",
+      "claim_type": "EXPLICIT",
+      "source": "First introduced to philosophy to explain how prior knowledge enables perception of the world (Kant, 1781), schemata were later adapted by psychology (Barlett, 1932; Piaget, 1926) and computer science (Minsky, 1975; Rumelhart, 1980) as a means to formalize mechanisms enabling natural and artificial intelligence, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical claim supported by citation to Kant (1781).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "f232dfbd-884f-4182-b336-b3ad5dd8bb8a",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C7",
+      "claim": "Schemata were later adapted by psychology as a means to formalize mechanisms enabling intelligence.",
+      "claim_type": "EXPLICIT",
+      "source": "First introduced to philosophy to explain how prior knowledge enables perception of the world (Kant, 1781), schemata were later adapted by psychology (Barlett, 1932; Piaget, 1926) and computer science (Minsky, 1975; Rumelhart, 1980) as a means to formalize mechanisms enabling natural and artificial intelligence, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barlett (1932) and Piaget (1926).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "726c9c83-bdab-481c-af9e-0e08d1e24df3",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C8",
+      "claim": "Scene schemata represent knowledge about the typical composition of real-world environments.",
+      "claim_type": "EXPLICIT",
+      "source": "In the narrower context of natural vision, scene schemata represent knowledge about the typical composition of real-world environments (Mandler, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional claim supported by citation to Mandler (1984).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "9746de14-6c9c-45df-a986-4bfd1e1da7b0",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C9",
+      "claim": "Scene schemata entail knowledge about the distribution of objects across scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Scene schemata for example entail knowledge about the distribution of objects across scenes, where objects appear in particular locations across the scene and in particular locations with respect to other objects (Kaiser et al., 2019a; Torralba et al., 2006; V\u00f5 et al., 2019; Wolfe et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "281d1cf3-891a-4813-be21-7871e58ebd41",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C10",
+      "claim": "Memory performance is boosted when scenes are configured in accordance with the schema.",
+      "claim_type": "EXPLICIT",
+      "source": "The beneficial role of such scene schemata was first investigated in empirical studies of human memory, where memory performance is boosted when scenes are configured in accordance with the schema (Brewer and Treyens, 1981; Mandler and Johnson, 1976; Mandler and Parker, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to empirical memory studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "03547e76-bea5-46f2-9842-04481e6debaf",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C11",
+      "claim": "Scene schemata not only organize memory contents, but also the contents of perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently however, it has become clear that scene schemata not only organize memory contents, but also the contents of perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by subsequent citations to perceptual studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "6759fff9-dc3f-4c33-a653-58b9841423fa",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C12",
+      "claim": "Knowledge about the structure of the world can be used to generate predictions about a scene's content.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, knowledge about the structure of the world can be used to generate predictions about a scene's content (Bar, 2009; Henderson, 2017), or to efficiently organize the concurrent representation of multiple scene elements (Kaiser et al., 2014; Kaiser et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bar (2009) and Henderson (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "fda3589c-fa89-4a94-b08a-8b7a9f24005d",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C13",
+      "claim": "Schema-congruent naturalistic stimuli have a beneficial role across a variety of perceptual tasks, such as visual detection.",
+      "claim_type": "EXPLICIT",
+      "source": "This position is reinforced by behavioral studies demonstrating a beneficial role of schema-congruent naturalistic stimuli across a variety of perceptual tasks, such as visual detection (Biederman et al., 1982; Davenport and Potter, 2004; Stein et al., 2015) and visual search (Kaiser et al., 2014; Torralba et al., 2006; V\u00f5 et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to behavioral studies on visual detection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "b40e3095-feb1-4b20-af24-5dd65b832ab6",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C14",
+      "claim": "Schema-congruent naturalistic stimuli have a beneficial role in visual search.",
+      "claim_type": "EXPLICIT",
+      "source": "This position is reinforced by behavioral studies demonstrating a beneficial role of schema-congruent naturalistic stimuli across a variety of perceptual tasks, such as visual detection (Biederman et al., 1982; Davenport and Potter, 2004; Stein et al., 2015) and visual search (Kaiser et al., 2014; Torralba et al., 2006; V\u00f5 et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to behavioral studies on visual search.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "e7a7dd28-2275-4d6e-977f-97715404ae94",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C15",
+      "claim": "Scene schemata support the contextualization of fragmented sensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we put forward a novel function of scene schemata in visual processing: they support the contextualization of fragmented sensory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main hypothesis of the study, tested through fMRI and EEG experiments.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "4f7583a3-7730-4685-9109-2de86486c6e0",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C16",
+      "claim": "If sensory inputs are processed in relation to the schema context, scene fragments from similar typical positions should be processed similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "If sensory inputs are indeed processed in relation to the schema context, scene fragments stemming from similar typical positions within the scene should be processed similarly and fragments stemming from different positions should be processed differently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction from the hypothesis, tested in the experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "73206185-df9a-4ad9-ba3e-3fc9570a80bd",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C17",
+      "claim": "Perceptual scene analysis can be spatiotemporally pinpointed to scene-selective cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we hypothesized that this sorting occurs during perceptual scene analysis, which can be spatiotemporally pinpointed to scene-selective cortex (Baldassano et al., 2016; Epstein, 2014) and the first 250 ms of processing (Cichy et al., 2017; Harel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior neuroimaging studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "9ab13686-178c-49a7-8161-5702710b2752",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C18",
+      "claim": "Perceptual scene analysis occurs within the first 250 ms of processing.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we hypothesized that this sorting occurs during perceptual scene analysis, which can be spatiotemporally pinpointed to scene-selective cortex (Baldassano et al., 2016; Epstein, 2014) and the first 250 ms of processing (Cichy et al., 2017; Harel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior EEG/MEG studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "3e4ae30b-1513-425e-ab79-c3bc1bdda1f2",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C19",
+      "claim": "Schema-related effects in behavioral studies are more robustly observed along the vertical dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, given that schema-related effects in behavioral studies (Mandler and Parker, 1976) are more robustly observed along the vertical dimension, where the scene structure is more rigid (i.e., the sky is almost always above the ground), we hypothesized that the cortical sorting of information should primarily occur along the vertical dimension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mandler and Parker (1976) and general knowledge about scene structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "63f1ff73-86b8-4efa-ad22-cbc2a4799c53",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C20",
+      "claim": "The sky is almost always above the ground in natural scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, given that schema-related effects in behavioral studies (Mandler and Parker, 1976) are more robustly observed along the vertical dimension, where the scene structure is more rigid (i.e., the sky is almost always above the ground), we hypothesized that the cortical sorting of information should primarily occur along the vertical dimension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is common knowledge about natural scene structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "4fa44f12-9501-45e8-a9c5-c560165d446a",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C21",
+      "claim": "The stimulus set consisted of six natural scene images (three indoor, three outdoor).",
+      "claim_type": "EXPLICIT",
+      "source": "Six natural scene images (Figure 1a) were each split into six equally-sized fragments (three vertical \u00d7 2 horizontal), resulting in 36 conditions (six scenes \u00d7 6 fragments).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental stimuli, shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "00d109a3-19e4-4dcd-99ea-7355fec3910f",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C22",
+      "claim": "Each scene was split into six equally-sized fragments (three vertical \u00d7 2 horizontal).",
+      "claim_type": "EXPLICIT",
+      "source": "Six natural scene images (Figure 1a) were each split into six equally-sized fragments (three vertical \u00d7 2 horizontal), resulting in 36 conditions (six scenes \u00d7 6 fragments).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental design, shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "100aff3e-7fdf-4a8c-9abc-43f6f45e5d52",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C23",
+      "claim": "Thirty participants completed the fMRI experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In separate fMRI (n = 30) and EEG (n = 20) experiments, participants viewed these fragments at central fixation while performing an indoor/outdoor categorization task to ensure engagement with the stimulus (Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample size for the fMRI experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "aa50aabf-589d-400b-8158-cef81b809ae6",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C24",
+      "claim": "Twenty participants completed the EEG experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "In separate fMRI (n = 30) and EEG (n = 20) experiments, participants viewed these fragments at central fixation while performing an indoor/outdoor categorization task to ensure engagement with the stimulus (Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample size for the EEG experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "3c486796-455d-48eb-9c03-c85a3f90fd89",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C25",
+      "claim": "Participants viewed scene fragments at central fixation while performing an indoor/outdoor categorization task.",
+      "claim_type": "EXPLICIT",
+      "source": "In separate fMRI (n = 30) and EEG (n = 20) experiments, participants viewed these fragments at central fixation while performing an indoor/outdoor categorization task to ensure engagement with the stimulus (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental task, illustrated in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "7f09a489-71e7-4d21-80f1-a07cfc48fee7",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C26",
+      "claim": "All fragments were presented at central fixation, removing explicit location information.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, this design allowed us to investigate whether the brain sorts the fragments with respect to their place in the schema in the absence of explicit location differences (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key design feature of the experiment, illustrated in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "3de6516f-257f-4ffb-a558-c3a1f40d48db",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C27",
+      "claim": "The fragments' vertical location predicted neural representations in OPA (t[29] = 4.12, p<0.001, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The key observation was that the fragments' vertical location predicted neural representations in OPA (t[29] = 4.12, p<0.001, pcorr <0.05), but not in V1 and PPA (test statistics for all analyses and ROIs are reported in Supplementary file 1) (Figure 2d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the fMRI data analysis, shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "65e0b606-46bb-4b88-9f3f-c2f9e8322d00",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C28",
+      "claim": "The fragments' vertical location did not predict neural representations in V1 and PPA.",
+      "claim_type": "EXPLICIT",
+      "source": "The key observation was that the fragments' vertical location predicted neural representations in OPA (t[29] = 4.12, p<0.001, pcorr <0.05), but not in V1 and PPA (test statistics for all analyses and ROIs are reported in Supplementary file 1) (Figure 2d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the fMRI data analysis, shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "92d94a75-cb30-47bd-818b-4db93f77cf47",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C29",
+      "claim": "Vertical location predicted EEG responses between 55 ms and 685 ms (peak: t[19] = 9.03, p<0.001, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The key observation was that the fragments' vertical location predicted neural representations in OPA (t[29] = 4.12, p<0.001, pcorr <0.05), but not in V1 and PPA (test statistics for all analyses and ROIs are reported in Supplementary file 1) (Figure 2d) and between 55 ms and 685 ms (peak: t[19] = 9.03, p<0.001, pcorr <0.05) (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the EEG data analysis, shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "ccf114b1-e794-428e-ba76-96a6f1b65302",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C30",
+      "claim": "No effects were observed for horizontal location.",
+      "claim_type": "EXPLICIT",
+      "source": "No effects were observed for horizontal location, consistent with more rigid spatial scene structure in the vertical dimension (Mandler and Parker, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative finding from both fMRI and EEG analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "b36e8214-15bb-4fdf-8baf-242c12bb5549",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C31",
+      "claim": "The absence of horizontal location effects is consistent with more rigid spatial scene structure in the vertical dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "No effects were observed for horizontal location, consistent with more rigid spatial scene structure in the vertical dimension (Mandler and Parker, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the negative finding, supported by citation to Mandler and Parker (1976).",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "4ccbe7ae-10ef-4cfe-9b75-fc520020db1b",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C32",
+      "claim": "Scene category was accurately predicted in OPA (t[29] = 3.12, p=0.002, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous findings (Lowe et al., 2018; Walther et al., 2009), category was accurately predicted in OPA (t[29] = 3.12, p=0.002, pcorr <0.05) and PPA (t[29] = 4.26, p<0.001, pcorr <0.05) (Figure 2d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the fMRI data analysis, shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "aee2e663-909a-4beb-b6d9-e2fbeb4696e9",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C33",
+      "claim": "Scene category was accurately predicted in PPA (t[29] = 4.26, p<0.001, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous findings (Lowe et al., 2018; Walther et al., 2009), category was accurately predicted in OPA (t[29] = 3.12, p=0.002, pcorr <0.05) and PPA (t[29] = 4.26, p<0.001, pcorr <0.05) (Figure 2d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the fMRI data analysis, shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "3b045417-51b2-413e-b3ad-9c5115cadd04",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C34",
+      "claim": "Category predicted EEG responses from 60 ms to 775 ms (peak: t[19] = 6.39, p<0.001, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous findings (Lowe et al., 2018; Walther et al., 2009), category was accurately predicted in OPA (t[29] = 3.12, p=0.002, pcorr <0.05) and PPA (t[29] = 4.26, p<0.001, pcorr <0.05) (Figure 2d), and from 60 ms to 775 ms (peak: t[19] = 6.39, p<0.001, pcorr <0.05) (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the EEG data analysis, shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "61775abb-6b2c-4b1a-a863-357e0d447efa",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C35",
+      "claim": "The absence of vertical location effects in V1 highlights that schematic coding is not tied to the analysis of simple visual features.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of vertical location effects in V1 indeed highlights that schematic coding is not tied to the analysis of simple visual features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the negative finding in V1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "df534d75-c6e5-4a82-abd1-37d924910b07",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C36",
+      "claim": "Removing DNN features abolished category information in fMRI signals.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing DNN features, category information was rendered non-significant in both fMRI and EEG signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the control analysis removing DNN features, shown in Figure 3b/c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "f0b9e1d3-6615-48dd-9fa6-0fa3a812b331",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C37",
+      "claim": "Removing DNN features abolished category information in EEG signals.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing DNN features, category information was rendered non-significant in both fMRI and EEG signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the control analysis removing DNN features, shown in Figure 3b/c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "29fb0d8d-62e9-4623-95c2-1be4f3e55bc6",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C38",
+      "claim": "After removing DNN features, vertical location still accounted for the neural organization in OPA (t[29] = 2.37, p = 0.012, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the suitability of our DNN model for modelling categorical brain responses, vertical location still accounted for the neural organization in OPA (t[29] = 2.37, p = 0.012, pcorr <0.05) (Figure 3b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding showing that schematic coding persists after controlling for DNN features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "23881814-0326-48f5-8a41-39a565c715e4",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C39",
+      "claim": "After removing DNN features, vertical location predicted EEG responses between 75 ms and 335 ms (peak: t[19] = 5.06, p<0.001, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the suitability of our DNN model for modelling categorical brain responses, vertical location still accounted for the neural organization in OPA (t[29] = 2.37, p = 0.012, pcorr <0.05) (Figure 3b) and between 75 ms and 335 ms (peak: t[19] = 5.06, p<0.001, pcorr <0.05) (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding showing that schematic coding persists after controlling for DNN features.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "57b3631f-8381-4625-a7f9-fcca4ae50943",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C40",
+      "claim": "Schematic coding cannot be explained by categorization-related features extracted by DNN models.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that schematic coding cannot be explained by categorization-related features extracted by DNN models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the finding that vertical location effects persist after removing DNN features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "6326a495-4efd-4caa-b2ef-3d3a9548f87c",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C41",
+      "claim": "Vertical location predicted cortical organization in OPA when restricted to comparisons between indoor and outdoor scenes (t[29] = 3.05, p = 0.002, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Vertical location still predicted cortical organization in OPA (t[29] = 3.05, p = 0.002, pcorr <0.05) (Figure 3e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding demonstrates generalization across scene types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "cb1a3f9d-5758-4d7f-92a2-3b9b4bc15426",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C42",
+      "claim": "Vertical location predicted EEG responses from 70 ms to 385 ms when restricted to comparisons between indoor and outdoor scenes (peak: t[19] = 7.47, p<0.001, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Vertical location still predicted cortical organization in OPA (t[29] = 3.05, p = 0.002, pcorr <0.05) (Figure 3e) and from 70 ms to 385 ms (peak: t[19] = 7.47, p<0.001, pcorr <0.05) (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding demonstrates generalization across scene types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "5a05f2c4-4f3b-444a-afbf-76b2738eb6d3",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C43",
+      "claim": "The generalization across indoor and outdoor scenes indicates that schematic coding operates similarly across radically different scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "The generalization across indoor and outdoor scenes indicates that schematic coding operates similarly across radically different scenes, suggesting that the mechanism can similarly contextualize information across different real-life situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the cross-category generalization finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "c036e9c9-cfcf-4869-9334-9d13430637f3",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C44",
+      "claim": "After removing both DNN features and within-category comparisons, OPA representations were still explained by the fragments' vertical location (t[29] = 2.38, p = 0.012, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In this analysis, OPA representations were still explained by the fragments' vertical location (t[29] = 2.38, p = 0.012, pcorr <0.05) (Figure 3h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the most stringent control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "43ec9259-0ab6-4bbb-b929-672253abedd2",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C45",
+      "claim": "After removing both DNN features and within-category comparisons, vertical location predicted EEG responses after 180 ms (peak: t[19] = 4.41, p<0.001, pcorr <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, early schema effects were rendered non-significant, while vertical location still predicted representations after 180 ms (peak: t[19] = 4.41, p<0.001, pcorr <0.05) (Figure 3i), suggesting a high degree of flexibility emerging at that time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the most stringent control analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "12a5c7a7-df26-4fed-ab25-ed9311022c88",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C46",
+      "claim": "A high degree of flexibility in schematic coding emerges after 180 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, early schema effects were rendered non-significant, while vertical location still predicted representations after 180 ms (peak: t[19] = 4.41, p<0.001, pcorr <0.05) (Figure 3i), suggesting a high degree of flexibility emerging at that time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the temporal pattern in the most stringent control analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "fbb6767d-a488-40c3-8f69-4c5ff2acd9c0",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C47",
+      "claim": "Vertical location information was exclusively found in OPA across all analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, across all analyses, vertical location information was exclusively found in OPA and always peaked shortly after 200 ms (see Supplementary file 2), suggesting that schematic coding occurs during early perceptual analysis of scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the consistent pattern across all fMRI analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "3dc5a9c6-cd09-47e0-961d-4a27c252b8ce",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C48",
+      "claim": "Vertical location information always peaked shortly after 200 ms across all analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, across all analyses, vertical location information was exclusively found in OPA and always peaked shortly after 200 ms (see Supplementary file 2), suggesting that schematic coding occurs during early perceptual analysis of scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the consistent temporal pattern across all EEG analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "362979f4-82e2-4a75-8053-ac08e5b94d13",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C49",
+      "claim": "Schematic coding occurs during early perceptual analysis of scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, across all analyses, vertical location information was exclusively found in OPA and always peaked shortly after 200 ms (see Supplementary file 2), suggesting that schematic coding occurs during early perceptual analysis of scenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the consistent spatiotemporal pattern across analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "b991e64b-5f0a-45bc-b7da-e4eb00349ef8",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C50",
+      "claim": "The findings characterize a novel neural mechanism for contextualizing fragmented inputs during naturalistic vision.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings characterize a novel neural mechanism for contextualizing fragmented inputs during naturalistic vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim of the main contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "da29b8e4-c4df-4c1f-9096-f1ddad2405f5",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C51",
+      "claim": "The mechanism exploits schemata to sort sensory inputs into meaningful representations of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism exploits schemata to sort sensory inputs into meaningful representations of the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "149b0042-d5fb-4d4e-af11-4e138356426d",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C52",
+      "claim": "Schema-based coding operates flexibly across changes in visual properties.",
+      "claim_type": "EXPLICIT",
+      "source": "This sorting occurs during perceptual scene analysis in scene-selective OPA and within the first 200 ms of vision, and operates flexibly across changes in visual properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analyses controlling for DNN features and scene type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "05820465-6435-44ee-ba5d-fecfd49180ee",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C53",
+      "claim": "Schema-based coding in OPA is consistent with the region's important role in visual scene processing.",
+      "claim_type": "EXPLICIT",
+      "source": "That schema-based coding can be localized to OPA is consistent with the region's important role in visual scene processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the findings to prior knowledge about OPA.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "add72b0b-5c8d-4b67-a957-ae0e898b3f81",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C54",
+      "claim": "Transcranial magnetic stimulation studies suggest that OPA activation is crucial for scene discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcranial magnetic stimulation studies suggest that OPA activation is crucial for various scene perception tasks, such as scene discrimination (Dilks et al., 2013; Ganaden et al., 2013), navigating through scenes (Julian et al., 2016) and anticipating upcoming scene information (Gandolfo and Downing, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to TMS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "25c5f364-5061-4b58-a151-b540cc1f702b",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C55",
+      "claim": "OPA activation is crucial for navigating through scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcranial magnetic stimulation studies suggest that OPA activation is crucial for various scene perception tasks, such as scene discrimination (Dilks et al., 2013; Ganaden et al., 2013), navigating through scenes (Julian et al., 2016) and anticipating upcoming scene information (Gandolfo and Downing, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Julian et al. (2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "e4a92045-cd45-445e-9876-42f1160d8fbd",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C56",
+      "claim": "OPA activation is crucial for anticipating upcoming scene information.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcranial magnetic stimulation studies suggest that OPA activation is crucial for various scene perception tasks, such as scene discrimination (Dilks et al., 2013; Ganaden et al., 2013), navigating through scenes (Julian et al., 2016) and anticipating upcoming scene information (Gandolfo and Downing, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gandolfo and Downing (2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "122317ea-641f-4743-bcf7-ea8d532d4717",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C57",
+      "claim": "Computations in the OPA include the analysis of spatial scene layout.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional MRI work suggest that computations in the OPA include the analysis of spatial scene layout (Dillon et al., 2018; Henriksson et al., 2019; Lowe et al., 2017) and the parsing of local scene elements like objects and local surfaces (Kamps et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to fMRI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "6238e962-f03e-4ded-b1d1-69345b720c46",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C58",
+      "claim": "Computations in the OPA include the parsing of local scene elements like objects and local surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional MRI work suggest that computations in the OPA include the analysis of spatial scene layout (Dillon et al., 2018; Henriksson et al., 2019; Lowe et al., 2017) and the parsing of local scene elements like objects and local surfaces (Kamps et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kamps et al. (2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "433441fe-dc1e-4ff1-874e-40a647ebfa7f",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C59",
+      "claim": "The current study is limited to a small set of scenes.",
+      "claim_type": "EXPLICIT",
+      "source": "As the current study is limited to a small set of scenes, more research is needed to explore whether schema-based coding generalizes to more diverse contents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "a76e2421-1030-4727-87c1-fe2f08078773",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C60",
+      "claim": "Schema-based coding may constitute a more general coding strategy that may generalize to other visual contents (such as faces).",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that schema-based coding constitutes a more general coding strategy that may generalize to other visual contents (such as faces; Henriksson et al., 2015) and non-visual processing domains: when sensory information is fragmented and spatial information is unreliable, the brain may use schematic information to contextualize sensory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential generalization, with citation to Henriksson et al. (2015).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "027e22ba-a160-4984-bdcf-1de418d8f988",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C61",
+      "claim": "When sensory information is fragmented and spatial information is unreliable, the brain may use schematic information to contextualize sensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that schema-based coding constitutes a more general coding strategy that may generalize to other visual contents (such as faces; Henriksson et al., 2015) and non-visual processing domains: when sensory information is fragmented and spatial information is unreliable, the brain may use schematic information to contextualize sensory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the general principle.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "6922ce4e-f08a-4795-acb0-8c553e5cf155",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C62",
+      "claim": "This view is in line with Bayesian theories of perception where the importance of prior information for perceptual inference grows with the noisiness and ambiguity of the sensory information at hand.",
+      "claim_type": "EXPLICIT",
+      "source": "This view is in line with Bayesian theories of perception where the importance of prior information for perceptual inference grows with the noisiness and ambiguity of the sensory information at hand (Ernst and Banks, 2002; Kersten et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the findings to Bayesian theories, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "9786718a-313d-4c1b-b686-4b920a698c3e",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C63",
+      "claim": "The schema-based sorting of scene representations provides a mechanism for efficient communication between perceptual and cognitive systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The schema-based sorting of scene representations provides a mechanism for efficient communication between perceptual and cognitive systems: when scene information is formatted with respect to its role in the environment, it can be efficiently read out by downstream processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional significance of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "478682fe-2b46-4aab-b198-d44699baa73e",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C64",
+      "claim": "When scene information is formatted with respect to its role in the environment, it can be efficiently read out by downstream processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The schema-based sorting of scene representations provides a mechanism for efficient communication between perceptual and cognitive systems: when scene information is formatted with respect to its role in the environment, it can be efficiently read out by downstream processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the functional significance of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "c398b766-6a87-4526-b3f1-0186c1506bf3",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C65",
+      "claim": "Cortical representations depend on functional interactions with the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is consistent with the emerging view that cortical representations depend on functional interactions with the environment (Bonner and Epstein, 2017; Groen et al., 2018; Malcolm et al., 2016; Peelen and Downing, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the findings to an emerging theoretical view, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "55a50d80-4836-40d0-8a4f-7bd516850e47",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C66",
+      "claim": "Formatting perceptual information according to real-world structure may allow cognitive and motor systems to efficiently read out visual information that is needed for different real-world tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this view, formatting perceptual information according to real-world structure may allow cognitive and motor systems to efficiently read out visual information that is needed for different real-world tasks (e.g., immediate action versus future navigation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the functional significance.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "cda80bf6-d759-44a4-8aed-79ee72f5afc9",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C67",
+      "claim": "The schema-based sorting of scene information happens already during early scene analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As the schema-based sorting of scene information happens already during early scene analysis, many high-level processes have access to this information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the temporal findings from the EEG data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "099f253e-7c44-433c-8016-5324e8eece14",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C68",
+      "claim": "DNNs trained on categorization accurately capture the representational divide into different scene categories.",
+      "claim_type": "EXPLICIT",
+      "source": "While DNNs trained on categorization accurately capture the representational divide into different scene categories, they cannot explain the schema-based organization observed in the human visual system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the finding that DNN features explain category but not vertical location information.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "c325034d-d687-4ed0-94bb-9e23cffaa00b",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C69",
+      "claim": "DNNs trained on categorization cannot explain the schema-based organization observed in the human visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "While DNNs trained on categorization accurately capture the representational divide into different scene categories, they cannot explain the schema-based organization observed in the human visual system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the finding that vertical location effects persist after removing DNN features.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "dd3b5273-0879-453d-8154-c192fb454da9",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C70",
+      "claim": "Current DNN models of categorization do not use real-world structure in similar ways as the human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this does not mean that visual features extracted by DNN models in principle are incapable of explaining schema-based brain representations, our results highlight that current DNN models of categorization do not use real-world structure in similar ways as the human brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the implications for computational modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "a64b3338-829d-4d20-b463-0737098e2d93",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C71",
+      "claim": "Augmenting DNN training procedures with schematic information may improve their performance on real-world tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, augmenting DNN training procedures with schematic information (Katti et al., 2019) may improve their performance on real-world tasks and narrow the gap between artificial and biological neural networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about future directions, with citation to Katti et al. (2019).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "f42f6006-4818-4e06-b52e-90d4727dd8a2",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C72",
+      "claim": "By rapidly organizing visual information according to its typical role in the world, this mechanism may contribute to the optimal use of perceptual information for guiding efficient real-world behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "By rapidly organizing visual information according to its typical role in the world, this mechanism may contribute to the optimal use of perceptual information for guiding efficient real-world behaviors, even when sensory inputs are incomplete or dynamically changing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the functional significance of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "a7f5c31a-ab9e-481b-88b6-e281513eb22a",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C73",
+      "claim": "Participants performed very well in the indoor/outdoor categorization task (fMRI: 94% correct, 658 ms mean response time, EEG: 96%, 606 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "In both experiments, participants performed very well in the indoor/outdoor categorization task (fMRI: 94% correct, 658 ms mean response time, EEG: 96%, 606 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of behavioral performance in the task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "f111053e-8e49-4dd7-a6d4-988bba3ef355",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C74",
+      "claim": "Differences in task difficulty across fragments were not related to the neural effects of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in task difficulty across fragments were not related to the neural effects of interest (Figure 2\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control analysis shown in Figure 2\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "7c00d6e4-930d-4868-8fff-074f8db6f00c",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C75",
+      "claim": "A multi-dimensional scaling of the fragments' neural similarity in OPA revealed a sorting according to vertical location.",
+      "claim_type": "EXPLICIT",
+      "source": "A multi-dimensional scaling (MDS) of the fragments' neural similarity in OPA (a) and after 200 ms of processing (b) revealed a sorting according to vertical location, which was visible in a two-dimensional solution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "4189b845-f3a0-4dae-aced-b920266474ad",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C76",
+      "claim": "A multi-dimensional scaling of the fragments' neural similarity after 200 ms of processing revealed a sorting according to vertical location.",
+      "claim_type": "EXPLICIT",
+      "source": "A multi-dimensional scaling (MDS) of the fragments' neural similarity in OPA (a) and after 200 ms of processing (b) revealed a sorting according to vertical location, which was visible in a two-dimensional solution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "23317b30-6419-40f3-abf6-4a774f887f16",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C77",
+      "claim": "Schemata are a prominent organizing principle for representations in OPA and after 200 ms of vision.",
+      "claim_type": "EXPLICIT",
+      "source": "This visualization suggests that schemata are a prominent organizing principle for representations in OPA and after 200 ms of vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the MDS visualization in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "bbd7e7bf-ac78-49f3-8cca-191c8c229fea",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C78",
+      "claim": "Around 200 ms, a division into the three vertical locations can be observed in the MDS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, around 200 ms, a division into the three vertical locations can be observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of Video 1 showing time-resolved MDS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "d3da3004-23f2-4bb4-badb-2e6366f88fde",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C79",
+      "claim": "The vertical location organization in the neural data reflects prior schematic knowledge about scene structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret the vertical location organization in the neural data as reflecting prior schematic knowledge about scene structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main interpretation of the vertical location effects, discussed in Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "d3570416-104a-4f80-a758-51161bb36124",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C80",
+      "claim": "The vertical location organization cannot solely be explained by extensive learning over the course of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the vertical location organization cannot solely be explained by extensive learning over the course of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis splitting data into first and second halves, shown in Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "392865f5-5a7d-4a9c-874a-6d13488d9a9f",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C81",
+      "claim": "Schematic coding can be observed consistently across the different comparisons along the vertical axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that schematic coding can be observed consistently across the different comparisons along the vertical axis, although comparisons including the top fragments yielded stronger effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of pairwise comparisons along the vertical axis, shown in Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "a7fe0ac6-75b4-45bb-8952-74ef4477c5c3",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C82",
+      "claim": "Comparisons including the top fragments yielded stronger schematic coding effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that schematic coding can be observed consistently across the different comparisons along the vertical axis, although comparisons including the top fragments yielded stronger effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of pairwise comparisons along the vertical axis, shown in Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "a364976e-4982-4434-b0c6-4c07f05dc488",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C83",
+      "claim": "The effects of schematic coding emerging around 200 ms cannot be explained by differences in task difficulty.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the effects of schematic coding \u2013 emerging around 200 ms after onset \u2013 cannot be explained by differences in task difficulty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the control analysis for task difficulty, shown in Figure 2\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "a460874e-8c0e-4715-a859-dc6603151ae4",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C84",
+      "claim": "The categorical predictor revealed significantly stronger vertical location information from 75 ms to 340 ms compared to the Euclidean predictor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the categorical predictor revealed significantly stronger vertical location information from 75 ms to 340 ms, suggesting that, at least in the EEG data, the differentiation along the vertical axis is more categorical in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the comparison of categorical versus Euclidean predictors, shown in Figure 2\u2014figure supplement 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "03909439-5a21-4fa9-a8c5-eb23c5622afe",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C85",
+      "claim": "The differentiation along the vertical axis is more categorical in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the categorical predictor revealed significantly stronger vertical location information from 75 ms to 340 ms, suggesting that, at least in the EEG data, the differentiation along the vertical axis is more categorical in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the comparison between categorical and Euclidean predictors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "df491401-1299-496f-ad00-8c08bcc400d5",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C86",
+      "claim": "Removing AlexNet DNN features rendered category information non-significant in fMRI and EEG signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing the AlexNet DNN features rendered category information non-significant in fMRI and EEG signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "7525c2a1-3f59-49af-91e6-d67b8f6a85e8",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C87",
+      "claim": "After removing AlexNet DNN features, vertical location information was still found in OPA and from 65 ms to 375 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we still found vertical location information in OPA and from 65 ms to 375 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "cafcbc25-0f5c-488d-85da-2ac2afd73aef",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C88",
+      "claim": "The results obtained with the AlexNet model are highly similar to the results obtained with the ResNet50 model.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, these results are highly similar to the results obtained with the ResNet50 model (Figure 3b/c/h/i).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of results from two different DNN architectures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "781121e2-b4de-4db8-97cf-ddc438e612f6",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C89",
+      "claim": "GLMs based on the ResNet50 RDMs had better fit than those based on AlexNet RDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that GLMs based on the ResNet50 RDMs had more predictor variables, which may contribute to their better fit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "72908b01-4ae9-48ac-99fa-fc4701694a7b",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C90",
+      "claim": "Low-level control models (pixel dissimilarity, GIST, V1) did not account for the fragments' vertical location organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, all three models did not account for the fragments' vertical location organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "b8bec51d-594e-4a24-a401-05041f1f866a",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C91",
+      "claim": "Low-level control models were unable to account for the fragments' categorical organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, unlike the DNN models, the low-level models were also unable to account for the fragments' categorical organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "86ccfaa4-e539-4104-aad8-84d36d69bb25",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C92",
+      "claim": "Even if we had control models that approximated V1 representations extremely well, these models could not explain vertical location effects in downstream processing.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that even if we had control models that approximated V1 representations extremely well \u2013 as well as the V1 representations approximate themselves \u2013 these models could not explain vertical location effects in downstream processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the V1 control analysis in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "630c7dba-a179-4dfb-899d-0af2a222233a",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "claim_id": "C93",
+      "claim": "Low-level feature processing cannot explain the schematic coding effects reported here.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results provide converging evidence that low-level feature processing cannot explain the schematic coding effects reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the low-level control analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "70a71206-105b-44b0-a579-e661ca144a58",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The visual system contextualizes incomplete scene fragments by exploiting spatial schemata, with schema-based sorting occurring specifically in the occipital place area (OPA) and within the first 200 ms of vision. This sorting is based on the fragments' vertical location within the scene schema, with vertical location predicting neural representations in OPA (t[29]=4.12, p<0.001) but not in V1 or PPA, and predicting EEG responses between 55-685 ms (peak t[19]=9.03, p<0.001) with consistent peaks around 200 ms across all analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C27-C29, and C47-C49 provide converging spatiotemporal evidence from both fMRI and EEG data with appropriate statistical testing and multiple comparison corrections. The specificity to OPA (not V1 or PPA) and the consistent temporal profile around 200 ms across analyses strengthen the conclusion. The experimental design appropriately controls for explicit location cues by presenting all fragments at central fixation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "9497458d-187f-4c78-b26d-f4eaa6308223",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Schema-based coding operates flexibly across visual features as measured by deep neural network models. After removing DNN features (ResNet50 and AlexNet), category information was abolished in both fMRI and EEG signals, but vertical location information persisted in OPA (t[29]=2.37, p=0.012) and in EEG responses (75-335 ms, peak t[19]=5.06, p<0.001), demonstrating that schematic coding cannot be explained by categorization-related features extracted by current DNN models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C36-C40, C68-C70, and C86-C88 demonstrate that the schema effect persists after controlling for DNN features, with appropriate statistical tests showing significant effects. The use of two different DNN architectures (ResNet50 and AlexNet) with similar results strengthens the conclusion. The successful removal of category information validates the DNN control approach, while the persistence of vertical location information supports the flexibility claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "a8fe0382-695f-43a9-b10f-0c3f87b8e094",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Schema-based coding operates flexibly across different types of environments (indoor and outdoor scenes). When analyses were restricted to comparisons between indoor and outdoor scenes, vertical location still predicted cortical organization in OPA (t[29]=3.05, p=0.002) and EEG responses (70-385 ms, peak t[19]=7.47, p<0.001), indicating that schematic coding generalizes across radically different scene types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C41-C43 demonstrate generalization across scene categories with appropriate statistical testing. The cross-category analysis is a strong test of flexibility since indoor and outdoor scenes differ substantially in visual characteristics. The persistence of vertical location effects when within-category comparisons are excluded supports the claim of flexible operation across environments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "bd72fc97-e9bd-447e-b198-fd73d036769b",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "After removing both DNN features and within-category comparisons (the most stringent control), vertical location still predicted OPA representations (t[29]=2.38, p=0.012) and EEG responses after 180 ms (peak t[19]=4.41, p<0.001), with early schema effects rendered non-significant. This temporal pattern suggests a high degree of flexibility in schematic coding emerging after 180 ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 show that schema effects persist under the most stringent control conditions, though with altered temporal dynamics. The delayed onset in EEG (after 180 ms vs. earlier effects in less stringent analyses) is appropriately interpreted as reflecting increased flexibility. The statistical tests are appropriate and the interpretation is consistent with the data pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "787c10ff-d3e7-4729-9fff-52a936dd8c02",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "No effects were observed for horizontal location in either fMRI or EEG data, which is consistent with more rigid spatial scene structure in the vertical dimension where the sky is almost always above the ground.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 report a negative finding that is theoretically motivated and consistent with prior work (Mandler and Parker, 1976). The absence of horizontal location effects contrasts with robust vertical location effects, supporting the hypothesis that schema-based coding follows the more rigid vertical structure of natural scenes. This selective effect strengthens the overall interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "a7656155-5299-48d3-bcf7-8ea6ef428319",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Scene category was accurately predicted in both OPA (t[29]=3.12, p=0.002) and PPA (t[29]=4.26, p<0.001) in fMRI data, and from 60-775 ms (peak t[19]=6.39, p<0.001) in EEG data, consistent with previous findings on scene categorization in these regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 demonstrate expected category effects in scene-selective regions with appropriate statistical testing. These findings replicate prior work (Lowe et al., 2018; Walther et al., 2009) and serve as a positive control, validating the experimental approach and analysis methods. The category effects provide important context for interpreting the novel schema-based coding effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "0949d255-e2e1-42d8-bf4b-0b535ebe1c11",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The absence of vertical location effects in V1 and the failure of low-level control models (pixel dissimilarity, GIST, V1 neural dissimilarity) to account for vertical location organization demonstrate that schematic coding is not tied to simple visual features or low-level feature processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C90-C93 provide converging evidence from multiple control analyses that low-level features cannot explain the schema effects. The use of V1 neural dissimilarity as a brain-derived control is particularly strong, as it provides an empirical measure of low-level features. The negative findings in V1 and with low-level models, contrasted with positive findings in OPA, support the interpretation that schematic coding reflects higher-level processing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "8c2de163-6020-4b80-afab-cbc074ec324e",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The vertical location organization in neural data reflects prior schematic knowledge about scene structure rather than learning during the experiment, as vertical location effects were present in both the first half (t[29]=3.46, p<0.001) and second half of the experiment with no significant differences between halves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 address an important alternative explanation through a split-half analysis. The presence of effects in the first half of the experiment and the absence of differences between halves support the interpretation that effects reflect pre-existing schematic knowledge rather than within-experiment learning. This control strengthens the main interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "0bc97b91-43e9-4043-80cf-3506e841cdb5",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Schematic coding can be observed consistently across different pairwise comparisons along the vertical axis (top vs. bottom, top vs. middle, middle vs. bottom), although comparisons including the top fragments yielded stronger effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 demonstrate that the vertical location effect is not driven by a single pairwise comparison but is present across all vertical comparisons. The stronger effects for comparisons including top fragments is consistent with the sky being a particularly distinctive scene element. This analysis provides additional detail about the nature of the schematic organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "454d20af-ac61-4ae6-bcb6-a2a6af3e3d27",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Differences in task difficulty across fragments (measured by accuracy and response time in the indoor/outdoor categorization task) were not related to the neural effects of interest, and schematic coding effects emerging around 200 ms cannot be explained by differences in task difficulty.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74 and C83 address a potential confound through control analyses shown in Figure 2\u2014figure supplement 8. The lack of correlation between task difficulty measures and vertical location effects, and the temporal dissociation (task effects late, schema effects at 200 ms), rule out task difficulty as an explanation for the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "a3e13e9d-749a-415a-867c-a26af2f3368a",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In EEG data, a categorical predictor for vertical location revealed significantly stronger information from 75-340 ms compared to a Euclidean distance predictor, suggesting that the differentiation along the vertical axis is more categorical in nature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 compare two alternative models of vertical location coding and find evidence for categorical rather than graded representation. The statistical comparison between predictors is appropriate, though the finding is specific to EEG data (no difference in fMRI). This provides additional characterization of the nature of schematic coding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "5fbb18ca-9545-4e6d-8a7d-63e6846a9c43",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The experimental design used six natural scenes (three indoor, three outdoor) split into six fragments each (3 vertical \u00d7 2 horizontal), presented at central fixation to remove explicit location information. Thirty participants completed the fMRI experiment and twenty completed the EEG experiment, performing an indoor/outdoor categorization task with high accuracy (fMRI: 94%, EEG: 96%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 and C73 describe the experimental design and behavioral performance. The design is appropriate for testing the hypothesis, with adequate sample sizes (n=30 fMRI, n=20 EEG) and good task performance indicating participant engagement. The central presentation of fragments is a key design feature that removes explicit location cues, allowing isolation of schema-based effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "9d7cb6ed-a010-495c-9584-ec530407ff33",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Multi-dimensional scaling (MDS) of neural similarity in OPA and after 200 ms of processing revealed a sorting according to vertical location visible in a two-dimensional solution, with a division into three vertical locations observable around 200 ms, suggesting that schemata are a prominent organizing principle for representations in OPA and after 200 ms of vision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 describe visualization analyses (MDS) that complement the main statistical analyses. The MDS provides an intuitive illustration of the schema-based organization and is consistent with the regression-based findings. While visualization is useful for interpretation, the main support comes from the statistical analyses in the primary results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "7e961dee-5f25-443b-968c-1f94f481f610",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript provides historical and theoretical context for scene schemata, citing their philosophical origins (Kant, 1781), adaptation by psychology (Barlett, 1932; Piaget, 1926), and their role in representing knowledge about typical scene composition. Prior research demonstrates that scene schemata benefit memory performance and perceptual tasks, with effects more robust along the vertical dimension where scene structure is more rigid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C14 and C17-C20 provide background context supported by appropriate citations to prior literature. These claims establish the theoretical foundation for the study and are consistent with established knowledge in the field. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "f5b3bfd5-308b-4e5c-8fbd-6d641dba1766",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study tests the novel hypothesis that scene schemata support the contextualization of fragmented sensory inputs, predicting that if sensory inputs are processed in relation to schema context, scene fragments from similar typical positions should be processed similarly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 state the main hypothesis of the study, which is clearly articulated and logically leads to testable predictions. The hypothesis is novel and well-motivated by prior work. The experimental results (C1-C5, C27-C29, etc.) provide strong support for this hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "fe3917e2-a9a4-4cbc-a018-a38642944d42",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The findings characterize a novel neural mechanism for contextualizing fragmented inputs during naturalistic vision, where the mechanism exploits schemata to sort sensory inputs into meaningful representations of the environment, operating during perceptual scene analysis in OPA within the first 200 ms and flexibly across changes in visual properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 summarize the main contribution of the study. These summary claims are well-supported by the convergent evidence from multiple analyses (C1-C5, C27-C29, C36-C46) demonstrating spatiotemporal localization, flexibility across visual features, and generalization across scene types. The characterization as a 'novel mechanism' is justified by the new findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "2b6fd30b-3cd2-4532-9653-dce42dc62540",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Schema-based coding in OPA is consistent with the region's important role in visual scene processing, with prior TMS studies showing OPA is crucial for scene discrimination, navigation, and anticipating scene information, and fMRI studies showing OPA computations include spatial layout analysis and parsing of local scene elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 connect the current findings to prior knowledge about OPA function, supported by appropriate citations. The interpretation that schema-based coding fits with OPA's known roles is reasonable, though the claims acknowledge that future studies are needed to clarify which specific computations mediate the observed effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "68de7f75-f1d6-4375-9250-357b7a58ee95",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study acknowledges limitation to a small set of scenes and speculates that schema-based coding may constitute a more general coding strategy that could generalize to other visual contents (such as faces) and non-visual domains, where the brain may use schematic information to contextualize fragmented and unreliable sensory inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C61 appropriately acknowledge a limitation (small stimulus set) and offer speculative extensions. C59 is a factual limitation. C60-C61 are explicitly speculative claims about potential generalization that require future empirical testing. The speculation is reasonable but currently unsupported by data in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "fe0ddf5a-504d-4538-b70a-53c150ff63b6",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The findings are interpreted as consistent with Bayesian theories of perception where prior information becomes more important with noisy/ambiguous sensory input, and as providing a mechanism for efficient communication between perceptual and cognitive systems by formatting scene information according to its environmental role for efficient readout by downstream processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C66 offer theoretical interpretations connecting the findings to broader frameworks (Bayesian perception, functional interactions with environment). While these interpretations are plausible and supported by citations to relevant theories, they remain speculative regarding the specific functional role of the observed schema-based coding. The claims are reasonable interpretations but go beyond what the data directly demonstrate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "136e6cd3-c7db-4502-b2b1-143bbaf08957",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The schema-based sorting of scene information happens during early scene analysis (around 200 ms), making this information accessible to many high-level processes and potentially contributing to optimal use of perceptual information for guiding efficient real-world behaviors even when sensory inputs are incomplete or dynamically changing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C72 draw functional implications from the temporal findings. The early timing (200 ms) is well-established by the data (C3, C29, C48), supporting the claim about accessibility to downstream processes. The speculation about functional benefits for real-world behavior is reasonable given the early timing and flexibility findings, though direct evidence for behavioral benefits is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "b3d5b13b-38c0-426f-a551-88bf3ed5df48",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The manuscript speculates that augmenting DNN training procedures with schematic information may improve their performance on real-world tasks and narrow the gap between artificial and biological neural networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is explicitly speculative about future directions for computational modeling, with a citation to Katti et al. (2019). While the suggestion is reasonable given that current DNNs don't capture schema-based organization (C69-C70), this remains an untested prediction about future work rather than a supported finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    },
+    {
+      "id": "5a0840bc-b060-4af5-bf24-1a8217829c93",
+      "content_id": "2a3dc0c1-4300-49f4-b67a-012856a1f35e",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "GLMs based on ResNet50 RDMs had better fit than those based on AlexNet RDMs, though ResNet50 models had more predictor variables which may contribute to their better fit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 reports a comparison between two DNN architectures with appropriate acknowledgment of a confound (different numbers of predictors). The finding is shown in Figure 3\u2014figure supplement 2. The caveat about predictor number is appropriate, and the similar qualitative results from both architectures (C88) support the main conclusions regardless of this difference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:41:10.148760Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fa209beb-bd29-46f0-aa05-f4995757d698",
+      "result_id": "70a71206-105b-44b0-a579-e661ca144a58"
+    },
+    {
+      "claim_id": "843a4185-f91b-4335-842b-1c0c1c4b86ff",
+      "result_id": "70a71206-105b-44b0-a579-e661ca144a58"
+    },
+    {
+      "claim_id": "2cb09867-12c5-4c11-92f3-a08f3d6548c0",
+      "result_id": "70a71206-105b-44b0-a579-e661ca144a58"
+    },
+    {
+      "claim_id": "3de6516f-257f-4ffb-a558-c3a1f40d48db",
+      "result_id": "70a71206-105b-44b0-a579-e661ca144a58"
+    },
+    {
+      "claim_id": "65e0b606-46bb-4b88-9f3f-c2f9e8322d00",
+      "result_id": "70a71206-105b-44b0-a579-e661ca144a58"
+    },
+    {
+      "claim_id": "92d94a75-cb30-47bd-818b-4db93f77cf47",
+      "result_id": "70a71206-105b-44b0-a579-e661ca144a58"
+    },
+    {
+      "claim_id": "fbb6767d-a488-40c3-8f69-4c5ff2acd9c0",
+      "result_id": "70a71206-105b-44b0-a579-e661ca144a58"
+    },
+    {
+      "claim_id": "3dc5a9c6-cd09-47e0-961d-4a27c252b8ce",
+      "result_id": "70a71206-105b-44b0-a579-e661ca144a58"
+    },
+    {
+      "claim_id": "362979f4-82e2-4a75-8053-ac08e5b94d13",
+      "result_id": "70a71206-105b-44b0-a579-e661ca144a58"
+    },
+    {
+      "claim_id": "34f71e94-d953-4d52-8c60-c211ea437563",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "df534d75-c6e5-4a82-abd1-37d924910b07",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "f0b9e1d3-6615-48dd-9fa6-0fa3a812b331",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "29fb0d8d-62e9-4623-95c2-1be4f3e55bc6",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "23881814-0326-48f5-8a41-39a565c715e4",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "57b3631f-8381-4625-a7f9-fcca4ae50943",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "099f253e-7c44-433c-8016-5324e8eece14",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "c325034d-d687-4ed0-94bb-9e23cffaa00b",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "dd3b5273-0879-453d-8154-c192fb454da9",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "df491401-1299-496f-ad00-8c08bcc400d5",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "7525c2a1-3f59-49af-91e6-d67b8f6a85e8",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "cafcbc25-0f5c-488d-85da-2ac2afd73aef",
+      "result_id": "9497458d-187f-4c78-b26d-f4eaa6308223"
+    },
+    {
+      "claim_id": "3be2251c-b616-436a-8f9e-8b124ae5228f",
+      "result_id": "a8fe0382-695f-43a9-b10f-0c3f87b8e094"
+    },
+    {
+      "claim_id": "6326a495-4efd-4caa-b2ef-3d3a9548f87c",
+      "result_id": "a8fe0382-695f-43a9-b10f-0c3f87b8e094"
+    },
+    {
+      "claim_id": "cb1a3f9d-5758-4d7f-92a2-3b9b4bc15426",
+      "result_id": "a8fe0382-695f-43a9-b10f-0c3f87b8e094"
+    },
+    {
+      "claim_id": "5a05f2c4-4f3b-444a-afbf-76b2738eb6d3",
+      "result_id": "a8fe0382-695f-43a9-b10f-0c3f87b8e094"
+    },
+    {
+      "claim_id": "c036e9c9-cfcf-4869-9334-9d13430637f3",
+      "result_id": "bd72fc97-e9bd-447e-b198-fd73d036769b"
+    },
+    {
+      "claim_id": "43ec9259-0ab6-4bbb-b929-672253abedd2",
+      "result_id": "bd72fc97-e9bd-447e-b198-fd73d036769b"
+    },
+    {
+      "claim_id": "12a5c7a7-df26-4fed-ab25-ed9311022c88",
+      "result_id": "bd72fc97-e9bd-447e-b198-fd73d036769b"
+    },
+    {
+      "claim_id": "ccf114b1-e794-428e-ba76-96a6f1b65302",
+      "result_id": "787c10ff-d3e7-4729-9fff-52a936dd8c02"
+    },
+    {
+      "claim_id": "b36e8214-15bb-4fdf-8baf-242c12bb5549",
+      "result_id": "787c10ff-d3e7-4729-9fff-52a936dd8c02"
+    },
+    {
+      "claim_id": "4ccbe7ae-10ef-4cfe-9b75-fc520020db1b",
+      "result_id": "a7656155-5299-48d3-bcf7-8ea6ef428319"
+    },
+    {
+      "claim_id": "aee2e663-909a-4beb-b6d9-e2fbeb4696e9",
+      "result_id": "a7656155-5299-48d3-bcf7-8ea6ef428319"
+    },
+    {
+      "claim_id": "3b045417-51b2-413e-b3ad-9c5115cadd04",
+      "result_id": "a7656155-5299-48d3-bcf7-8ea6ef428319"
+    },
+    {
+      "claim_id": "61775abb-6b2c-4b1a-a863-357e0d447efa",
+      "result_id": "0949d255-e2e1-42d8-bf4b-0b535ebe1c11"
+    },
+    {
+      "claim_id": "72908b01-4ae9-48ac-99fa-fc4701694a7b",
+      "result_id": "0949d255-e2e1-42d8-bf4b-0b535ebe1c11"
+    },
+    {
+      "claim_id": "b8bec51d-594e-4a24-a401-05041f1f866a",
+      "result_id": "0949d255-e2e1-42d8-bf4b-0b535ebe1c11"
+    },
+    {
+      "claim_id": "86ccfaa4-e539-4104-aad8-84d36d69bb25",
+      "result_id": "0949d255-e2e1-42d8-bf4b-0b535ebe1c11"
+    },
+    {
+      "claim_id": "630c7dba-a179-4dfb-899d-0af2a222233a",
+      "result_id": "0949d255-e2e1-42d8-bf4b-0b535ebe1c11"
+    },
+    {
+      "claim_id": "d3da3004-23f2-4bb4-badb-2e6366f88fde",
+      "result_id": "8c2de163-6020-4b80-afab-cbc074ec324e"
+    },
+    {
+      "claim_id": "d3570416-104a-4f80-a758-51161bb36124",
+      "result_id": "8c2de163-6020-4b80-afab-cbc074ec324e"
+    },
+    {
+      "claim_id": "392865f5-5a7d-4a9c-874a-6d13488d9a9f",
+      "result_id": "0bc97b91-43e9-4043-80cf-3506e841cdb5"
+    },
+    {
+      "claim_id": "a7fe0ac6-75b4-45bb-8952-74ef4477c5c3",
+      "result_id": "0bc97b91-43e9-4043-80cf-3506e841cdb5"
+    },
+    {
+      "claim_id": "f111053e-8e49-4dd7-a6d4-988bba3ef355",
+      "result_id": "454d20af-ac61-4ae6-bcb6-a2a6af3e3d27"
+    },
+    {
+      "claim_id": "a364976e-4982-4434-b0c6-4c07f05dc488",
+      "result_id": "454d20af-ac61-4ae6-bcb6-a2a6af3e3d27"
+    },
+    {
+      "claim_id": "a460874e-8c0e-4715-a859-dc6603151ae4",
+      "result_id": "a3e13e9d-749a-415a-867c-a26af2f3368a"
+    },
+    {
+      "claim_id": "03909439-5a21-4fa9-a8c5-eb23c5622afe",
+      "result_id": "a3e13e9d-749a-415a-867c-a26af2f3368a"
+    },
+    {
+      "claim_id": "4fa44f12-9501-45e8-a9c5-c560165d446a",
+      "result_id": "5fbb18ca-9545-4e6d-8a7d-63e6846a9c43"
+    },
+    {
+      "claim_id": "00d109a3-19e4-4dcd-99ea-7355fec3910f",
+      "result_id": "5fbb18ca-9545-4e6d-8a7d-63e6846a9c43"
+    },
+    {
+      "claim_id": "100aff3e-7fdf-4a8c-9abc-43f6f45e5d52",
+      "result_id": "5fbb18ca-9545-4e6d-8a7d-63e6846a9c43"
+    },
+    {
+      "claim_id": "aa50aabf-589d-400b-8158-cef81b809ae6",
+      "result_id": "5fbb18ca-9545-4e6d-8a7d-63e6846a9c43"
+    },
+    {
+      "claim_id": "3c486796-455d-48eb-9c03-c85a3f90fd89",
+      "result_id": "5fbb18ca-9545-4e6d-8a7d-63e6846a9c43"
+    },
+    {
+      "claim_id": "7f09a489-71e7-4d21-80f1-a07cfc48fee7",
+      "result_id": "5fbb18ca-9545-4e6d-8a7d-63e6846a9c43"
+    },
+    {
+      "claim_id": "a7f5c31a-ab9e-481b-88b6-e281513eb22a",
+      "result_id": "5fbb18ca-9545-4e6d-8a7d-63e6846a9c43"
+    },
+    {
+      "claim_id": "7c00d6e4-930d-4868-8fff-074f8db6f00c",
+      "result_id": "9d7cb6ed-a010-495c-9584-ec530407ff33"
+    },
+    {
+      "claim_id": "4189b845-f3a0-4dae-aced-b920266474ad",
+      "result_id": "9d7cb6ed-a010-495c-9584-ec530407ff33"
+    },
+    {
+      "claim_id": "23317b30-6419-40f3-abf6-4a774f887f16",
+      "result_id": "9d7cb6ed-a010-495c-9584-ec530407ff33"
+    },
+    {
+      "claim_id": "bbd7e7bf-ac78-49f3-8cca-191c8c229fea",
+      "result_id": "9d7cb6ed-a010-495c-9584-ec530407ff33"
+    },
+    {
+      "claim_id": "c82f4d03-8c22-4641-8f2e-e31a2d2a33da",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "f232dfbd-884f-4182-b336-b3ad5dd8bb8a",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "726c9c83-bdab-481c-af9e-0e08d1e24df3",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "9746de14-6c9c-45df-a986-4bfd1e1da7b0",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "281d1cf3-891a-4813-be21-7871e58ebd41",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "03547e76-bea5-46f2-9842-04481e6debaf",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "6759fff9-dc3f-4c33-a653-58b9841423fa",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "fda3589c-fa89-4a94-b08a-8b7a9f24005d",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "b40e3095-feb1-4b20-af24-5dd65b832ab6",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "73206185-df9a-4ad9-ba3e-3fc9570a80bd",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "9ab13686-178c-49a7-8161-5702710b2752",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "3e4ae30b-1513-425e-ab79-c3bc1bdda1f2",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "63f1ff73-86b8-4efa-ad22-cbc2a4799c53",
+      "result_id": "7e961dee-5f25-443b-968c-1f94f481f610"
+    },
+    {
+      "claim_id": "e7a7dd28-2275-4d6e-977f-97715404ae94",
+      "result_id": "f5b3bfd5-308b-4e5c-8fbd-6d641dba1766"
+    },
+    {
+      "claim_id": "4f7583a3-7730-4685-9109-2de86486c6e0",
+      "result_id": "f5b3bfd5-308b-4e5c-8fbd-6d641dba1766"
+    },
+    {
+      "claim_id": "b991e64b-5f0a-45bc-b7da-e4eb00349ef8",
+      "result_id": "fe3917e2-a9a4-4cbc-a018-a38642944d42"
+    },
+    {
+      "claim_id": "da29b8e4-c4df-4c1f-9096-f1ddad2405f5",
+      "result_id": "fe3917e2-a9a4-4cbc-a018-a38642944d42"
+    },
+    {
+      "claim_id": "149b0042-d5fb-4d4e-af11-4e138356426d",
+      "result_id": "fe3917e2-a9a4-4cbc-a018-a38642944d42"
+    },
+    {
+      "claim_id": "05820465-6435-44ee-ba5d-fecfd49180ee",
+      "result_id": "2b6fd30b-3cd2-4532-9653-dce42dc62540"
+    },
+    {
+      "claim_id": "add72b0b-5c8d-4b67-a957-ae0e898b3f81",
+      "result_id": "2b6fd30b-3cd2-4532-9653-dce42dc62540"
+    },
+    {
+      "claim_id": "25c5f364-5061-4b58-a151-b540cc1f702b",
+      "result_id": "2b6fd30b-3cd2-4532-9653-dce42dc62540"
+    },
+    {
+      "claim_id": "e4a92045-cd45-445e-9876-42f1160d8fbd",
+      "result_id": "2b6fd30b-3cd2-4532-9653-dce42dc62540"
+    },
+    {
+      "claim_id": "122317ea-641f-4743-bcf7-ea8d532d4717",
+      "result_id": "2b6fd30b-3cd2-4532-9653-dce42dc62540"
+    },
+    {
+      "claim_id": "6238e962-f03e-4ded-b1d1-69345b720c46",
+      "result_id": "2b6fd30b-3cd2-4532-9653-dce42dc62540"
+    },
+    {
+      "claim_id": "433441fe-dc1e-4ff1-874e-40a647ebfa7f",
+      "result_id": "68de7f75-f1d6-4375-9250-357b7a58ee95"
+    },
+    {
+      "claim_id": "a76e2421-1030-4727-87c1-fe2f08078773",
+      "result_id": "68de7f75-f1d6-4375-9250-357b7a58ee95"
+    },
+    {
+      "claim_id": "027e22ba-a160-4984-bdcf-1de418d8f988",
+      "result_id": "68de7f75-f1d6-4375-9250-357b7a58ee95"
+    },
+    {
+      "claim_id": "6922ce4e-f08a-4795-acb0-8c553e5cf155",
+      "result_id": "fe0ddf5a-504d-4538-b70a-53c150ff63b6"
+    },
+    {
+      "claim_id": "9786718a-313d-4c1b-b686-4b920a698c3e",
+      "result_id": "fe0ddf5a-504d-4538-b70a-53c150ff63b6"
+    },
+    {
+      "claim_id": "478682fe-2b46-4aab-b198-d44699baa73e",
+      "result_id": "fe0ddf5a-504d-4538-b70a-53c150ff63b6"
+    },
+    {
+      "claim_id": "c398b766-6a87-4526-b3f1-0186c1506bf3",
+      "result_id": "fe0ddf5a-504d-4538-b70a-53c150ff63b6"
+    },
+    {
+      "claim_id": "55a50d80-4836-40d0-8a4f-7bd516850e47",
+      "result_id": "fe0ddf5a-504d-4538-b70a-53c150ff63b6"
+    },
+    {
+      "claim_id": "cda80bf6-d759-44a4-8aed-79ee72f5afc9",
+      "result_id": "136e6cd3-c7db-4502-b2b1-143bbaf08957"
+    },
+    {
+      "claim_id": "f42f6006-4818-4e06-b52e-90d4727dd8a2",
+      "result_id": "136e6cd3-c7db-4502-b2b1-143bbaf08957"
+    },
+    {
+      "claim_id": "a64b3338-829d-4d20-b463-0737098e2d93",
+      "result_id": "b3d5b13b-38c0-426f-a551-88bf3ed5df48"
+    },
+    {
+      "claim_id": "781121e2-b4de-4db8-97cf-ddc438e612f6",
+      "result_id": "5a0840bc-b060-4af5-bf24-1a8217829c93"
+    }
+  ],
+  "comparisons": []
+}

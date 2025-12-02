@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript establishes the evolutionary and structural context for voltage-dependent cation channels, noting that mammalian Cavs and Navs have 24TM structures derived from single-domain ancestors, that BacNavs have been extensively characterized and used as tools, and that native prokaryotic Cavs had not been identified prior to this study, representing a missing link in channel evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 are well-supported by established literature (multiple citations to Hille, Catterall, Rahman, Strong, Liebeskind, and others) and provide necessary background context. The claims about the absence of native prokaryotic Cavs (C7-C8) establish the knowledge gap that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors identified a new group of prokaryotic voltage-dependent cation channels called ancestor-like BacNavs (AnclNavs) through BLAST searches and phylogenetic analysis. This group includes CavMr from Meiothermus ruber (with Ca2+ selectivity) and NavPp from Plesiocystis pacifica (with Na+ selectivity and Ca2+-dependent inhibition). AnclNavs are phylogenetically distinct from canonical BacNavs and are widely distributed across bacterial phyla and archaea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C31 describe the discovery and phylogenetic characterization of AnclNavs, supported by BLAST searches, phylogenetic trees (Figure 1b, Figure 1\u2014figure supplement 1-2), and sequence alignments (Figure 1a,c). The phylogenetic analysis methodology is described in Materials and Methods, and the data support the conclusion that AnclNavs form a distinct evolutionary group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "CavMr exhibits voltage-dependent currents that are larger in high-Ca2+ solutions than in high-Na+ solutions, with no obvious outward current at high membrane potentials in Ca2+ solutions. The channel has a V1/2 of \u221251.7 \u00b1 1.1 mV. The selectivity filter sequence of CavMr is similar to mammalian Cav domains I/III, featuring a glycine at position 4 and matching the sequence of human Cav3.1 and 3.2 subdomain I. A G240A mutant provides larger, more stable currents than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C44 are supported by electrophysiological recordings (Figure 2a-f), Boltzmann fitting of activation curves (Figure 2d), and sequence alignments (Figure 1a). The data clearly demonstrate Ca2+ preference and voltage-dependent activation. The mutant characterization (C44) is supported by Figure 2e-f showing enhanced current stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "CavMr demonstrates high Ca2+ selectivity with a PCa/PNa of 218 \u00b1 38, comparable to the artificial channel CavAb. Among various cations (Ca2+, Sr2+, K+, Cs+), Ca2+ has the highest permeability relative to Na+. Reversal potential measurements yielded slopes consistent with Ca2+ selectivity (32.38 \u00b1 4.10 mV/decade for 4-20 mM Ca2+, close to the Nernst prediction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by systematic reversal potential measurements under bi-ionic conditions (Figure 3a-f, Figure 3\u2014figure supplement 1), GHK equation calculations, and comparison with theoretical predictions. The PCa/PNa value is calculated from multiple measurements (n=20) and the methodology is detailed in Materials and Methods. Table 1 provides comprehensive permeability ratios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "CavMr does not permit Na+ permeation under Ca2+-free conditions and does not exhibit the typical anomalous mole fraction effect. Instead, it shows a monotonic current increase with increasing Ca2+ mole fraction relative to Na+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by mole fraction experiments (Figure 4a-d) showing no Na+ current in Ca2+-free conditions and monotonic behavior rather than the anomalous mole fraction effect seen in other channels. This suggests very high Ca2+ affinity and is consistent with the high selectivity demonstrated in other experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "NavPp exhibits Na+-selective currents that increase with bath Na+ concentration and decrease in high Ca2+ solutions. The reversal potential matches the Na+ equilibrium potential. Despite having one more aspartate than CavMr, NavPp shows larger currents in Na+ than Ca2+ solutions, indicating that Ca2+ selectivity is not simply determined by negative charge number. Ca2+ inhibits NavPp gating and permeation. A T232A mutant enables measurement of voltage-dependent activation with V1/2 of \u221217.11 \u00b1 1.8 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C65 are supported by electrophysiological recordings (Figure 5a-f) showing Na+ selectivity, Ca2+-dependent inhibition, and voltage-dependent activation. The comparison with CavMr (C58-C59) is supported by sequence data (Figure 1c) and functional measurements. The T232A mutant characterization addresses a technical limitation (fast deactivation) and is supported by tail current measurements (Figure 5d-f).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "NavPp exhibits a unique low-affinity Ca2+ block not reported in canonical BacNavs. Increasing extracellular Ca2+ raises the reversal potential (indicating Ca2+ permeation) but decreases current amplitude and shifts voltage-dependent activation positively. NavPp has higher selectivity for Na+ than for Ca2+, Sr2+, K+, or Cs+, with PCa/PNa = 0.308 \u00b1 0.028, suggesting greater Ca2+ permeation than canonical BacNavs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 are supported by systematic measurements of Ca2+ effects on NavPp (Figure 6a-e, Figure 6\u2014figure supplement 1). The dual nature of Ca2+ (permeant but inhibitory) is demonstrated by reversal potential shifts and current amplitude changes. Ion selectivity measurements (Figure 6d-e, Table 1) support the modest Na+ selectivity and unusual Ca2+ permeability compared to canonical BacNavs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Despite having a selectivity filter sequence similar to artificial Ca2+-selective BacNav mutants (three negatively charged residues), NavPp exhibits Ca2+ block rather than high Ca2+ permeability. Mutants NavPp-T6S and NavPp-T6A (with filter sequences matching artificial Ca2+-selective channels) also show Ca2+ block rather than Ca2+ selectivity, indicating that NavPp's cation permeation mechanism differs from both canonical BacNavs and CavMr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by sequence comparisons (Figure 1c) and functional characterization of NavPp mutants (Figure 6e). The failure of established Ca2+-selective filter sequences to confer Ca2+ selectivity to NavPp (C78-C80) is a key negative result that supports the conclusion of a distinct permeation mechanism (C81). The observation that H. elongata and T. turnerae channels showed no detectable currents (C82) is noted but not extensively discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Selectivity filter swapping experiments between CavMr and NavPp show that Ca2+ selectivity is transferable from CavMr to NavPp (NavPp-Mr has PCa/PNa = 215 \u00b1 33), but Na+ selectivity is not transferable from NavPp to CavMr (CavMr-Pp becomes non-selective with PCa/PNa = 13.8 \u00b1 2.0). Swapping between CavMr and NavAb failed to produce functional channels, suggesting different structural requirements for selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C91 are supported by ion selectivity measurements of chimeric channels (Figure 7c-d, Table 1, Figure 7\u2014figure supplements 1-2). The asymmetric transferability of selectivity (C89) is a key finding supported by quantitative measurements. The failed NavAb swaps (C90-C91) provide important negative controls suggesting mechanistic differences between CavMr and canonical BacNavs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Single-point mutations at positions 4 and 6 of the selectivity filter reveal that glycine at position 4 is a key determinant of Ca2+ selectivity in both CavMr and NavPp. In CavMr, G4D and V6T mutations decrease Ca2+ selectivity and allow K+/Cs+ permeation, with G4D having the greater effect (PCa/PNa < 10). G4S also reduces Ca2+ selectivity. In NavPp, D4G confers divalent cation selectivity, while T6V does not achieve high Ca2+ selectivity. The glycine at position 4 is conserved in subdomains I and III of all mammalian Cav subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C104 are supported by systematic mutational analysis with ion selectivity measurements (Figure 8a-c, Table 1, Figure 8\u2014figure supplements 1-5). The convergent evidence from both CavMr and NavPp mutants (C103) strongly supports the importance of glycine at position 4. The conservation analysis (C104) is supported by sequence alignments (Figure 1b). The data clearly demonstrate that position 4 has a greater effect than position 6 on Ca2+ selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "CavMr exhibits PCa/PNa > 200, comparable to the artificial channel CavAb, and shows no anomalous mole fraction effects, suggesting very high Ca2+ affinity. The authors propose that CavMr has potential as a genetic tool for upregulating calcium signaling, analogous to how BacNavs are used to manipulate neuronal excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 are supported by ion selectivity measurements (Figure 3e, Table 1) and mole fraction experiments (Figure 4a-b). However, C107 is speculative and based on analogy with BacNavs rather than direct experimental evidence. While the speculation is reasonable given the high Ca2+ selectivity, no experiments testing CavMr as a genetic tool are presented, making this claim uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The high Ca2+ selectivity of CavMr is transferable to NavPp, and mutant pairs with identical selectivity filters show similar cation selectivity patterns, suggesting that the basic architecture of NavPp and CavMr selectivity filters is similar. However, the Ca2+-selectivity mechanism of CavMr differs completely from that of the artificial channel CavAb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 are supported by the swapping experiments (Figure 7c) and comparison of mutant pairs (Figure 8a,c). The similar selectivity patterns of CavMr-G4D/NavPp-T6V and CavMr-V6T/NavPp-D4G (C110) provide strong evidence for architectural similarity (C111). The distinction from CavAb (C112) is supported by the different roles of charged residues and the failed swapping experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Structural and mutational comparisons reveal that CavMr's Ca2+-selectivity mechanism differs fundamentally from CavAb. In CavAb, aspartate mutations introduce negative charges without altering the backbone. In CavMr, two non-charged residues (Gly4 and Val6) are required for high Ca2+ selectivity, while Asp7 is not necessary. The G4D mutation has opposite effects in CavMr versus NavAb/NaChBac. The flexibility and/or small size of glycine at position 4 may be critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 are supported by structural comparisons (Figure 9a-b), mutational analysis (Figures 7d, 8a-b, 4g), and comparison with published data on NavAb/NaChBac mutants. The CavMr-D7M mutant (C117) provides strong evidence that aspartates are not required for Ca2+ selectivity. The opposite effect of G4D mutation (C118) is supported by comparison with cited literature. C120 is appropriately presented as speculation ('might be critical').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Based on the structure of Cav1.1 subdomains I and III (which have similar selectivity filter sequences to CavMr), the authors propose that the glycine at position 4 widens the selectivity filter entrance, facilitating entry of hydrated cations and possibly increasing Ca2+ selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C122 is supported by structural analysis of Cav1.1 (referenced structure). However, C123-C125 are speculative inferences based on structural similarity rather than direct structural data for CavMr. The manuscript appropriately uses cautious language ('facilitating,' 'possibly'), but without CavMr structure or direct experimental validation of the proposed mechanism, these claims remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors discuss the physiological context and potential roles of prokaryotic Cavs. Prokaryotes have Ca2+-binding proteins and regulated Ca2+ concentrations similar to eukaryotes. CavMr's strong exclusion of Na+/K+ suggests its role is Ca2+ intake in response to voltage changes. In some bacteria, Ca2+ regulates flagellar rotation and chemotaxis. M. ruber's hot spring environment likely contains sufficient Ca2+. The authors propose that voltage-Ca2+ coupling exists in early life and might be the evolutionary origin of eukaryotic functions like muscle contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 are supported by citations. C128-C129 are reasonable inferences from the data. C130-C132 are supported by citations. However, C133-C135 are speculative proposals about CavMr's physiological role and evolutionary significance without direct experimental evidence. While the speculation is well-reasoned and appropriately presented as possibilities ('might lead to,' 'might be the origin'), these claims lack experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "NavPp shows modest Na+ selectivity over Ca2+. P. pacifica is a marine myxobacterium requiring NaCl for growth. The authors propose that the basic CavMr/NavPp architecture produces Ca2+ preference, and P. pacifica may have modified this to acquire a Na+ intake pathway, resulting in the remaining low-affinity Ca2+ inhibition feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C136 is supported by ion selectivity data (Figure 6d, Table 1). C137 is supported by citation. However, C138-C139 are speculative evolutionary proposals without direct experimental evidence. While the speculation is reasonable given the phylogenetic relationship and functional properties, it remains an inference rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors discuss examples of flexible cation selectivity tuning in homo-tetrameric channels, including NsvBa from B. alkalophilus (a non-selective channel) and EukCat from diatoms (important for electrical signaling). These examples suggest that homo-tetrameric channel selectivity can be flexibly tuned for species-specific roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 are supported by citations to published work on NsvBa (DeCaen et al., 2014) and EukCat (Helliwell et al., 2019). These examples provide comparative context for the findings on CavMr and NavPp, supporting the broader conclusion about flexible selectivity tuning (C144).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The authors compare Ca2+-selectivity mechanisms across channels. Aspartate residues are generally important for Ca2+ permeation, and NavAb/NaChBac were successfully engineered for Ca2+ selectivity by introducing aspartates. However, CavMr demonstrates that this is not the only mechanism. Mammalian Cavs have fewer aspartates than CavAb (at most two outside position 3, with glutamate rather than aspartate at position 3). CavAb has 12 aspartates versus 4 in CavMr. The net negative charge is 5-7 in mammalian Cavs, 8 in CavMr, and 12 in CavAb. This suggests that Ca2+-selectivity mechanisms require specific backbone structures depending on filter charge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C154 are supported by sequence analysis (comparing CavMr, CavAb, and mammalian Cavs), citations to published work on engineered channels, and the experimental data on CavMr presented in the manuscript. The charge counting (C150-C152) is verifiable from sequences. The conclusion about structure-charge relationships (C154) is a reasonable inference from the comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "AnclNavs are found across diverse bacterial phyla and archaea. M. ruber belongs to the Deinococcus-Thermus phylum, considered relatively close to the universal ancestor of life. NavPp's filter sequence matches the predicted ancestral BacNav sequence. These observations suggest that AnclNavs preserve ancestral BacNav features. Phylogenetic analysis shows all single-domain channel groups are approximately equidistant from eukaryotic 24TM Cav/Nav subdomains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C159 are supported by phylogenetic analysis (Figure 1\u2014figure supplement 1-2), sequence comparisons with predicted ancestral sequences (Liebeskind et al., 2013), and citation regarding the phylogenetic position of Deinococcus-Thermus (Hug et al., 2016). The inference about ancestral features (C158) is reasonable given the phylogenetic position and sequence similarity to predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "CavMr's selectivity filter sequence is very similar to human Cav subdomains I and III (both with glycine at position 4), and identical to Cav3.1 and 3.2 subdomain I. Similar glycine conservation is found in CatSper channels (CatSper3 and CatSper4). The authors propose that the eukaryotic ancestor of 24TM channels might have had a selectivity filter similar to AnclNavs, especially CavMr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C164 are supported by sequence alignments (Figure 9c, Figure 1a) and citations. However, C165 is a speculative evolutionary proposal. While the sequence similarities are striking and the phylogenetic analysis provides context, the claim about the ancestral eukaryotic channel remains an inference rather than a demonstrated result. The manuscript appropriately presents this as a suggestion ('might have been similar').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "The authors propose that future structural studies of homo-tetrameric channels could advance understanding of channel evolution, and that detailed structural investigation of CavMr may elucidate the principles and origins of Ca2+ selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 are appropriate forward-looking statements about future research directions. They are supported by the findings presented in the manuscript, which establish CavMr as an important system for understanding Ca2+ selectivity mechanisms distinct from those in CavAb. These are reasonable proposals for future work rather than claims about current results.",
+    "result_type": "MINOR"
+  }
+]

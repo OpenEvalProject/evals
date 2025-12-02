@@ -1,0 +1,418 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Two-photon calcium imaging in ferret A1 layers 2/3 reveals frequency-sensitive neurons with local heterogeneity in best frequency (BF). Across 3604 neurons in 32 imaging fields, 19.23% were frequency-sensitive. In an example field, 26.5% of neurons were frequency-sensitive with an average BF of 14.7 kHz, but individual BFs ranged from 2.2 to 19.9 kHz, with 9% more than one octave from the mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide consistent quantitative data from two-photon imaging experiments in ferrets, including sample sizes, percentages of frequency-sensitive neurons, and measures of BF variability. The data are internally consistent and supported by appropriate statistical methods (two-way ANOVA). The imaging depth (C38) confirms recordings were in layers 2/3 as intended.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In ferret A1, neurons with single-peaked frequency response areas (FRAs) show less local BF variability (1.34\u00b10.10 octaves) than double-peaked (2.16\u00b10.18 octaves) or complex neurons (3.05\u00b10.24 octaves). Single-peaked neurons also have stronger responses at BF than multi-peaked neurons, but response reliability (Fano Factor) does not differ across FRA classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 present statistically significant differences in BF variability and response strength across FRA classes, with appropriate t-tests and p-values. The Fano Factor analysis (C52) provides important control showing equal reliability across classes, strengthening the interpretation that differences reflect genuine organizational principles rather than measurement artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Microelectrode recordings in ferret A1 layers 2/3 yielded a higher proportion of single-peaked neurons (>80%) compared to two-photon imaging (~43%), with correspondingly fewer double-peaked and complex neurons. Unlike imaging data, microelectrode recordings showed no significant differences in spike rates between FRA classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 demonstrate a clear methodological bias in microelectrode recordings toward single-peaked neurons, supported by likelihood ratio tests with highly significant p-values. The lack of spike rate differences in microelectrode data (C58-C59) contrasts with imaging results but may reflect sampling bias toward more active multi-peaked neurons in the smaller electrophysiology sample.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Signal correlations in ferret A1 differ significantly across FRA classes, with complex neurons showing lower correlations (0.048\u00b10.003) than single-peaked (0.207\u00b10.002) or double-peaked neurons (0.193\u00b10.002). Signal correlations decrease with cortical distance for single- and double-peaked neurons but not for complex neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 provide robust statistical evidence (ANOVA, post-hoc tests, Pearson correlations) for differential signal correlation patterns across FRA classes. The spatial dependence of correlations for simple but not complex neurons (C63-C65) supports the interpretation of distinct organizational principles. Sample sizes are adequate and statistical tests appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Noise correlations in ferret A1 are significantly higher for single-peaked (0.138\u00b10.016) and double-peaked (0.136\u00b10.004) neurons than complex neurons (0.059\u00b10.004), with no difference between single- and double-peaked classes. Noise correlations decrease with distance for all FRA types, and single/double-peaked neurons show higher correlations with each other than with complex neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 demonstrate consistent patterns in noise correlations using appropriate statistical tests (ANOVA, Tukey's HSD). The findings complement the signal correlation results and suggest distinct connectivity patterns for complex neurons. The spatial dependence (C69) and cross-class correlation patterns (C70) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Global tonotopic organization exists in ferret A1 for all FRA classes when neurons are projected onto a common A1 template. Single-peaked neurons show the strongest tonotopic gradient (r=-0.40, p=1.1\u00d710\u207b\u00b9\u00b2), followed by double-peaked (r=0.46, p=5.7\u00d710\u207b\u00b9\u00b3) and complex neurons (r=0.32, p=1.8\u00d710\u207b\u2075). However, BF variability around the tonotopic gradient increases with FRA complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 demonstrate global tonotopic organization across FRA classes with statistically significant correlations and appropriate comparisons of variability. The template-based approach allows pooling across animals, and the progressive increase in variability with FRA complexity is well-documented with t-tests. The methodology for creating the common template is described in C102.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The second frequency peak of double-peaked neurons and the difference between the two peaks show no systematic spatial organization along the tonotopic axis in ferret A1. Neuropil contamination can artificially introduce apparent tonotopic organization to the second peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 show non-significant correlations for second peak organization, contrasting with the significant organization of primary BFs. Claim C81 provides important methodological validation showing that neuropil correction is necessary to avoid false-positive tonotopic organization, supported by supplementary figure data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Mouse A1 shows higher percentage of frequency-sensitive neurons (43.75%) than ferrets (19.23%), with more single-peaked FRAs (60.54% vs 42.71%) and fewer double-peaked and complex FRAs. In mice, single-peaked neurons have broader frequency tuning (0.91\u00b10.03 octaves) than ferrets (0.74\u00b10.03 octaves), but no species differences exist for double-peaked or complex neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 provide direct species comparisons with appropriate statistical tests (likelihood ratio tests, t-tests). The differences in FRA class distributions are highly significant, and the selective difference in tuning bandwidth for single-peaked neurons is well-documented. The lack of differences for multi-peaked neurons (C88) is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "When accounting for species differences in A1 size and hearing range, mice and ferrets show equivalent local heterogeneity in frequency preferences within each FRA class. In both species, complex neurons show greater BF variability than single- or double-peaked neurons, and more complex frequency tuning is associated with greater variance in neighboring neurons' frequency preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 provide the key comparative result using appropriate normalization for species differences. The two-way ANOVA (C92) and post-hoc tests (C93) show no species effect when properly controlled, supporting the conclusion of equivalent organization (C94-C95). This is a major finding reconciling apparent species differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study's main findings are that local variance in frequency preferences is equivalent in ferrets and mice, neurons with multipeaked frequency tuning are less spatially organized than single-frequency neurons in both species, and microelectrode recordings may show smoother tonotopy due to sampling bias toward simple frequency tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4-C6) represent the study's primary conclusions and are well-supported by the detailed experimental results in claims C36-C95. The equivalence between species (C4) is demonstrated by C92-C95, the relationship between FRA complexity and spatial organization (C5) by C48-C49 and C89-C90, and the methodological bias (C6) by C55-C57 and C142-C143.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "GCaMP6m detected a higher percentage of frequency-sensitive neurons (32.29%) than GCaMP6f (10.81%), but both indicators showed similar effects of FRA class on local BF variance, response strength, and response reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide important methodological validation showing that the main findings are consistent across two different calcium indicators despite differences in detection sensitivity. This strengthens confidence that results reflect biological organization rather than indicator-specific artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "In both ferrets and mice, ~90% of single-peaked neurons fall within the expected BF range for their local field, with signal correlations confirming local organization. Double-peaked neurons are less ordered (~60% within expected range), while only ~30% of complex neurons fall within the expected range, with lower and less spatially-dependent signal correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 provide quantitative measures of local organization that account for species differences in tonotopic gradient steepness. The progressive decrease in organization from single to double to complex neurons is consistent across multiple metrics (percentage in range, signal correlations, spatial dependence), providing converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C119"
+    ],
+    "result": "Complex neurons show lower noise correlations than single- and double-peaked neurons, suggesting they may receive inputs from more distant regions of the tonotopic map. By analogy to V1, A1 neurons with simple frequency tuning may have stronger local connections to similarly tuned neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C116 is well-supported by data (also in C67), but C117 and C119 are speculative interpretations about connectivity patterns that are not directly tested. While the speculation is reasonable and draws on analogies to V1 (C118), it requires additional experiments (e.g., connectivity mapping) to be confirmed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Ferret A1 shares the same spatial organization as mouse A1 (global tonotopy with local variability), and the complexity of frequency receptive fields can account for much of the local heterogeneity in both species. This suggests that locally heterogeneous sensory maps may be a consequence of complex stimulus feature extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are well-supported by the comparative data throughout the manuscript (C4, C94-C95, C107-C111). Claim C98 represents a broader interpretation that is reasonable given the data but extends beyond what is directly demonstrated. The conclusion is supported but represents an inference about functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C150",
+      "C151"
+    ],
+    "result": "This is the first two-photon calcium imaging study of auditory cortex in carnivores. The stereotyped position of ferret A1 allowed combining data onto a common template, revealing clear dorsal-to-ventral tonotopic gradients for all FRA classes. Neurons with complex FRAs disrupt strict tonotopic order in ferrets as in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 and C150-C151 establish the novelty and main findings of the ferret work. The claim of being first in carnivores (C101) is verifiable from the literature. The template-based approach (C102) is methodologically sound and described in detail. The findings parallel those in mice, supporting the generalizability of the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C153"
+    ],
+    "result": "Fewer A1 neurons exhibited frequency sensitivity in ferrets (19%) than mice (44%), though most superficial A1 neurons do not respond to pure tones in either species. Cells with complex sensory receptive fields are more common in ferrets than mice and may be important for extracting information from natural environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130 and C153 document clear species differences in the proportion of frequency-sensitive neurons and FRA complexity, supported by statistical tests. Claims C131-C132 provide important context from prior work. The speculation about functional importance (C152, part of C153) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Extracellular microelectrode recordings are more likely to detect neurons with higher firing rates, potentially oversampling single-peaked neurons. Supporting this, >80% of frequency-sensitive neurons recorded with microelectrodes had single-peaked FRAs, approximately double the proportion found with two-photon imaging in the same species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143 provide a clear explanation for methodological differences between electrophysiology and imaging studies. The hypothesis (C142) is supported by prior work and the direct comparison (C143) provides strong evidence. Claim C144 shows similar proportions in marmoset electrophysiology, supporting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Electrophysiological studies report more ordered tonotopy in thalamorecipient layers than superficial layers, though two-photon imaging studies show conflicting evidence. The authors suggest this may arise from a larger proportion of single-peaked neurons in deeper layers, consistent with prior reports of more irregular FRAs in superficial layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C146 accurately summarize conflicting prior literature. Claims C147-C149 offer a reasonable interpretation linking layer differences to FRA complexity, consistent with prior work (C148), but this hypothesis is not directly tested in the current study as the authors only imaged superficial layers. Additional experiments across layers would be needed to confirm this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Issa et al. (2014) reported more homogeneous tonotopy in mouse A1 than other two-photon studies. This difference is unlikely due to anesthesia state but may result from lack of neuropil correction (which can create artifactual smoothness) or use of GCaMP3 (lower sensitivity than GCaMP6, potentially detecting only strongest responses in single-peaked neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 provide a thoughtful analysis of discrepancies in prior literature. The arguments are well-supported: C126 cites evidence that anesthesia doesn't affect BF, C127 is supported by the current study's neuropil analysis (C81), and C128-C129 make a reasonable inference about indicator sensitivity. This represents good scientific practice in reconciling conflicting results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Zeng et al. (2019) reported that BFs are more locally variable in rats than marmosets. The marmoset cortex may contain smoother tonotopic arrangement than other species, or the difference might be explained by species differences in A1 size, FRA complexity, and hearing ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C122 accurately cites prior work. Claims C123-C124 offer alternative interpretations but are speculative. The current study's findings (C4, C94) suggest that when properly controlled for species differences, organization may be more similar than previously thought, but direct comparison with marmoset data would be needed to resolve this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Neurons in ferret and marmoset A1 may be better suited to integrate information across frequency bands or encode complex spectrotemporal features. Neurons with multiple frequency peaks could be useful for identifying sound sources by spectral timbre or providing harmonic templates for pitch perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C136 are speculative interpretations about potential functions of multi-peaked neurons, supported by citations to relevant prior work. While the speculation is reasonable and grounded in the literature, these functional roles are not directly tested in the current study. Additional experiments would be needed to confirm these proposed functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The introduction establishes that primary cortical areas contain sensory feature maps including tonotopy in A1, confirmed by various methods across species. Two-photon imaging in mice revealed local variability alongside global organization. Various methodological and species factors may contribute to differences in reported tonotopy across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 provide comprehensive background from prior literature, appropriately cited throughout. These establish the context and motivation for the current study, documenting both the established principle of tonotopy and the more recent findings of local heterogeneity, as well as potential explanations for discrepancies across studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Ferrets are a popular model in auditory neuroscience due to their gyrencephalic cortex, accessible A1, trainability on behavioral tasks, and hearing range that overlaps well with humans (unlike mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 accurately describe established characteristics of ferrets as an experimental model, supported by appropriate citations. This provides justification for the choice of ferrets as a comparison species to mice in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C99",
+      "C100",
+      "C112"
+    ],
+    "result": "Prior studies have reported multi-peaked neurons in A1 across multiple species (marmosets, cats, rats, mice) and confirmed global tonotopic organization using various methods. Recent work showed that BFs are more locally variable among neurons with poorly-defined frequency tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C99-C100, and C112 accurately summarize relevant prior literature with appropriate citations. These establish that multi-peaked neurons are not a novel finding but their spatial organization has not been systematically investigated, providing motivation for the current study's focus on FRA complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Neurons in layers 2 and 3 differ in morphology, connectivity, and function. Most ferret imaging was in layer 2 while mouse imaging included both layers 2 and 3. Layer 2 neurons have broader frequency tuning than layer 3, which could partially explain broader tuning in the mouse dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137 and C139 accurately cite prior work on layer differences. Claims C138 and C140 acknowledge a potential confound in the species comparison. However, the impact of this difference is uncertain as the authors did not systematically compare layers within species. This represents appropriate acknowledgment of a limitation but the interpretation (C140) remains speculative.",
+    "result_type": "MINOR"
+  }
+]

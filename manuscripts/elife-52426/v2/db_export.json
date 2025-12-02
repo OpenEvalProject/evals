@@ -1,0 +1,2716 @@
+{
+  "submission": {
+    "id": "0f6426fd-aaf8-4875-88b8-07790798f8fe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:41:02.201695Z",
+    "updated_at": "2025-12-02T15:41:02.201695Z"
+  },
+  "content": [
+    {
+      "id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "submission_id": "0f6426fd-aaf8-4875-88b8-07790798f8fe",
+      "content_type": "manuscript",
+      "content_text": "# Reader engagement with medical content on Wikipedia\n\n## Authors\n\n- Lauren A Maggio<sup>1</sup> ([ORCID: 0000-0002-2997-6133](https://orcid.org/0000-0002-2997-6133)) \u2020\n- Ryan M Steinberg<sup>2</sup> ([ORCID: 0000-0003-0101-4490](https://orcid.org/0000-0003-0101-4490))\n- Tiziano Piccardi<sup>3</sup>\n- John M Willinsky<sup>4</sup> ([ORCID: 0000-0001-6192-8687](https://orcid.org/0000-0001-6192-8687))\n\n### Affiliations\n\n1. Department of Medicine, Uniformed Services University of the Health Sciences Bethesda United States\n2. Lane Medical Library, Stanford University School of Medicine Stanford United States\n3. \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n4. Graduate School of Education, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nArticles on Wikipedia about health and medicine are maintained by WikiProject Medicine (WPM), and are widely used by health professionals, students and others. We have compared these articles, and reader engagement with them, to other articles on Wikipedia. We found that WPM articles are longer, possess a greater density of external links, and are visited more often than other articles on Wikipedia. Readers of WPM articles are more likely to hover over and view footnotes than other readers, but are less likely to visit the hyperlinked sources in these footnotes. Our findings suggest that WPM readers appear to use links to external sources to verify and authorize Wikipedia content, rather than to examine the sources themselves.\n\n## Introduction\n\nWikipedia is a freely available online encyclopedia that intends to provide \u201cevery single person on the planet free access to the sum of all human knowledge\u201d (Wikimedia Foundation, 2004). To meet this mission, thousands of volunteer editors have created almost six million English-language Wikipedia pages. Many of these pages include hyperlinked footnotes to the sources used to assemble and verify the content (Redi et al., 2018;\u00a0Wikipedia Foundation, 2019a). These linked references do not only serve as sources of authority for Wikipedia content (Fallis, 2008), but also offer readers a gateway to further learning, with this opportunity enhanced by the growing degree of public access to research literature (Piwowar et al., 2018).\n\nWikipedia is proving to be a leading source of health information (Heilman and West, 2015; Laurent and Vickers, 2009), and reader engagement with a page\u2019s references can provide opportunities to understand a diagnosis or inform a conversation with their physician. Wikipedia\u2019s health-focused pages, which are maintained by WikiProject Medicine (WPM) editors, are thought to meet a high standard of quality and rigor (James, 2016; Maskalyk, 2014; Trevena, 2011). For example, WPM provides a series of resources for its editors, including \u201cguidelines and policies\u201d for reliable sources, and advice on how to avoid conflicts of interest. In its advice for reliable sources, WPM recommends using \u201creview articles (especially systematic reviews) published in reputable medical journals\u201d (Wikipedia Foundation, 2019b). Wikipedia then provides tools to standardize the bibliographic representation and linking to external sources.\n\nThese external sources are particularly relevant for students and practitioners in medicine and other health-related professions, who are active Wikipedia readers (R\u00f6ssler et al., 2015; Scaffidi et al., 2017; Back et al., 2016; Egle et al., 2015; Allahwala et al., 2013). These readers are familiar with the research literature, and expected to engage in evidence-based medicine (Guyatt et al., 2015). To this end, faculty at several health professions schools, such as schools of medicine and pharmacy, teach courses on editing Wikipedia (Azzam et al., 2017;\u00a0Joshi et al., 2019; Apollonio et al., 2018).\n\nIn a previous study, we investigated Wikipedia as a gateway to further reading through external links by tracking referrals from Wikipedia to research article DOIs (Digital Object Identifier) through Crossref, combined with pageview information from Wikimedia (Maggio et al., 2017). However, with the data available at the time, we could not determine if a click to an external reference with a DOI originated from a WPM page.\n\nTo learn more about reader engagement with Wikipedia\u2019s external references, this study leverages Wikimedia\u2019s newly created infrastructure for data collection to compare engagement with external links by readers of WPM pages with that of readers of the rest of Wikipedia. The study is guided by two research questions:\n\n## Methods\n\nWith the approval and support of the Wikimedia Foundation (WMF), we collected the data presented in this study between March 22nd\u00a0\u2013 April 22nd, 2019 from Wikimedia\u2019s Event Logging system and the production MediaWiki database. The data remained within that system, as required by WMF, for a year before being deleted (see Acknowledgements). We anonymized the aggregated data by removing IP addresses, any identifying browser information, and reader-sessions associated with page edits. While this data is not publicly available, data may be available upon request from the WMF research team. To gain access to the data, researchers should review the WMF Research team\u2019s current procedures for data requests (https://www.mediawiki.org/wiki/wikimedia_research/research_and_data). The WMF Research Team will evaluate the request based on Wikimedia\u2019s data access criteria. The code utilized to collect and analyze the data, however, is organized and made publicly available in a collated series of Jupyter notebooks in\u00a0GitHub\u00a0(Steinberg and Picardi, 2019;\u00a0copy\u00a0archived\u00a0here).\n\n### Data collection\n\nThe data is drawn from English Wikipedia pages in the main namespace, a designation that contains the encyclopedia proper. Wikipedia pages or topics were identified as being part of two main groups: WikiProject Medicine pages (WPM) and the rest of Wikipedia (W). To be included in the study, the pages from each group had to have at least one external link in the externallinks table. The categorylinks table was used to define the WPM pages, with each possessing a Talk page bearing the category \u201cAll WikiProject Medicine articles.\u201d Both the externallinks and categorylinks tables were queried twice (April 1st, 2019 and April 20th, 2019) during a 32 day study period (March 22nd\u00a0\u2013 April 22nd, 2019).\n\nFor determining the number of pages, length of pages, the number of external links, and the number of \u201cfreely accessible\u201d links added by editors as sources, a single day\u2019s worth of database and XML dump files were captured from late in the study period (April 20th, 2019). As the database and XML dump files had only 0.5% more external links than on April 1st, 2019, the sample from April 20th was felt to be sufficiently representative to serve as the source for all static data counts. The external link count, which is based on MediaWiki\u2019s externallinks table, does not include interwiki links, representing abbreviated forms of commonly-used internal and external links, which limits the accuracy of external link counts for both WPM and W. The event logging system this study relied on similarly omitted data from interwiki links, meaning the definition of an external link used across this study is consistent.\n\nPageview data was gathered from the wmf.pageview_hourly table. WMF employs methods to identify bot traffic in pageview data, which was excluded in our analysis. In reporting the data collected over a 32 day period (March 22nd\u00a0\u2013 April 22nd, 2019), the raw counts were divided by 32 to create a count approximating a \u201cdaily average\u201d for these counts, in light of this serving as a common measure of internet traffic.\n\nReader engagement with external links was gathered from Wikimedia\u2019s Event Logging system using the CitationUsage schema, instrumented by Wikimedia\u2019s programmers, following a month of piloting and refinement for this study. The CitationUsage schema collected all sessions with reader engagement, except for those involving anonymous Wikipedia editors (21 sessions out of 72,953,065 total, which translated into the removal of 34 citation events out of a total of 113,520,376). For the entire study period (March 22nd\u00a0\u2013 April 22nd, 2019), the CitationUsage schema captured the following types of engagement: (a) clicking an external link; (b) clicking on a reference link listed among a page\u2019s set of references; (c) clicking a footnote link leading to a reference on the page; (d) hovering over a reference link (defined as a reader\u2019s cursor lingering over a link for 1000 milliseconds or more, revealing a rollover label); (e) time from pageview to event (Table 1). Additionally, the CitationUsage schema captured the clicking of links bearing the \u201cfreely accessible\u201d icon.\n\n**Table 1.**\n Types of engagement with external linksDifferent events captured by the CitationUsage Schema that reflect how readers of Wikipedia pages engage with external links.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Engagement type</th>\n      <th>General description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>External click</td>\n      <td>A click on a link located on a Wikipedia page leading to a web page outside of Wikipedia.</td>\n    </tr>\n    <tr>\n      <td>Hover</td>\n      <td>An event that occurs when a reader hovers over a link for at least 1000 milliseconds on a Wikipedia page.</td>\n    </tr>\n    <tr>\n      <td>Footnote click</td>\n      <td>A click of an internal footnote link \u2013 [1] \u2013 that takes the reader to the reference section at the bottom of the Wikipedia page.</td>\n    </tr>\n    <tr>\n      <td>Up click</td>\n      <td>A click of an arrow \u2013 ^ \u2013 that takes the reader from the reference at the bottom of the Wikipedia page back to the citation in the main text.</td>\n    </tr>\n  </tbody>\n</table>\n\n### Analysis\n\nDescriptive statistics were calculated using Excel (Redmond, WA). Inferential statistics were calculated to determine the significance in the difference between engagements in WPM and W using the Python library SciPy. In our analysis, we verified the statistical differences between WPM and W page for the following parameters: (a) time to first engagement with a link, (b) length of the articles, and (c) the number of page loads per event. For parameters (a) and (b) we used a normality test to determine the type of statistical test to apply. In both comparisons, after rejecting the normality hypothesis, we applied Mann-Whitney U-Test, a non-parametric test that does not require normality assumptions on the two distributions. For the third parameter (c), we compared the two groups over all possible combinations of access method and type of engagement with a two-tailed Fisher's exact test. To explore and visualize the data, we used respectively Spark/Pandas and the library Seaborn. The complete analysis is available in the project\u2019s publicly accessible Github repository (Steinberg and Picardi, 2019).\n\n### Stakeholder engagement\n\nThis study was possible through collaboration with the WMF research team beginning in 2018, with our publishing of a research proposal to Wikimedia\u2019s Meta-Wiki (Maggio et al., 2018). Members of the Wikipedia community, including members of WPM, were invited to provide feedback and pose questions. Over several months, we held teleconferences and in-person meetings with the WMF research team to understand Wikimedia\u2019s infrastructure, parameters of data use (e.g., best practices for accessing the data securely; duration of data access), and the expectations of the Wikipedia community. Prior to data collection, a WMF research team member posted to Wikipedia\u2019s Village Pump, a set of Wikipedia pages dedicated to discussing technical issues and policies, an announcement of the data collection (Redi, 2019). The announcement invited the Wikipedia community to post public comments and provided contact information for expressing concerns about the research.\n\n## Results\n\n### Wikipedia pages and external links\n\nThis study compares readers\u2019 engagement with the pages curated by WikiProject Medicine (WPM) to their engagement with the rest of the English edition of Wikipedia (W). At the time of this study, WPM represented 34,324 pages (i.e., subject or topic entries), while the rest of W had 5,839,083 pages (Table 2). WPM pages possessed more than twice as many links to external references and other sites than the rest of Wikipedia. WPM pages were 13,084.9 characters in length on average (SD\u00a0=\u00a019,3780.4; median\u00a0=\u00a06,6280.0; IQR\u00a0=\u00a011,640), which was 70.1% longer than the average page in the rest of Wikipedia at 7,676.4 characters (SD\u00a0=\u00a013,6320.4; median\u00a0=\u00a03,8650.0; IQR\u00a0=\u00a05,789) (Figure 1; Table 6). WPM pages also demonstrated a greater \u201clink density\u201d with an external link appearing on pages with links every 450.3 characters, compared to a link every 657.3 characters for the rest of Wikipedia.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52426/elife-52426-fig1-v2.jpg)\n\n**Figure 1.:** Distribution of page lengths in characters for WikiProject Medicine (WPM) pages and the rest of Wikipedia (W) on April 20th, 2019. The difference between the two distributions is statistically significant according to Mann\u2013Whitney U test (p<0.001, two-tailed).\n\n**Table 2.**\n Factors that distinguish WPM pages from the rest of Wikipedia.Differences between WPM pages and pages in the rest of Wikipedia (W) based on data collected on April 20th, 2019.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>WPM</th>\n      <th>W</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wikipedia pages</td>\n      <td>34,324</td>\n      <td>5,839,083</td>\n    </tr>\n    <tr>\n      <td>Pages with external links</td>\n      <td>32,609</td>\n      <td>5,210,746</td>\n    </tr>\n    <tr>\n      <td>External links</td>\n      <td>945,645</td>\n      <td>60,851,396</td>\n    </tr>\n    <tr>\n      <td>Links per page (with links)</td>\n      <td>29.0</td>\n      <td>11.7</td>\n    </tr>\n    <tr>\n      <td>Page length (characters)</td>\n      <td>13,084.9</td>\n      <td>7,676.4</td>\n    </tr>\n    <tr>\n      <td>Characters per link (pages with links)</td>\n      <td>450.3</td>\n      <td>657.3</td>\n    </tr>\n  </tbody>\n</table>\n\nThe biomedical literature, including research reviews and studies, was a leading source of WPM external links. For example, the most common hostname was \u201cwww.ncbi.nlm.nih.gov,\u201d accounting for 25.2% of the WPM\u2019s external links. This indicates that research papers found through the PubMed database run by the National Institutes of Health (NIH) are likely to be cited. It was followed by the hostnames \u201cwww.worldcat.org\u201d with 2.7%, and \u201cwww.google.com\u201d with 1.2% of the external links. As for the hostnames that prevailed among external links in the rest of Wikipedia, the three leading hostnames were \u201ctools.wmflabs.org\u201d (where Wikimedia hosts tools developed to assist editors) at 3.5%, \u201cwww.google.com\u201d at 2.9% and \u201cbooks.google.com\u201d at 2.0%, while \u201cwww.ncbi.nlm.nih.gov\u201d still accounted for 1.8% of the external links outside of WPM.\n\n### Pageviews and events\n\nReaders viewed 5,875,470.4 WPM pages a day on average, compared to 228,445,128.4 pages for readers of the rest of Wikipedia (Table 3). While the number of WPM pages is 0.6% of W pages, the number of pageviews that WPM received from readers was 2.6% of that for W. This suggests that WPM pages were viewed more than four times as frequently as the rest of Wikipedia. The majority of these views for both WPM and W took place on mobile devices, with WPM readers the heavier users of mobile devices in accessing Wikipedia.\n\n**Table 3.**\n Comparing pageviews between WikiProject Medicine (WPM) and other Wikipedia (W) pages.The average number of pageviews WikiProject Medicine (WPM) and the rest of Wikipedia (W) received per day for different types of devices between March 22nd and April 22nd, 2019.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>WPM\u00a0(%)</th>\n      <th>W (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pageviews on desktop device</td>\n      <td>1,957,821.6 (33.3)</td>\n      <td>97,956,273.1 (42.9)</td>\n    </tr>\n    <tr>\n      <td>Pageviews on mobile device</td>\n      <td>3,917,648.8 (66.7)</td>\n      <td>130,488,855.3 (57.1)</td>\n    </tr>\n    <tr>\n      <td>Total number of pageviews</td>\n      <td>5,875,470.4 (100)</td>\n      <td>228,445,128.4 (100)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe also found that readers spent more time on a page before first clicking an external link after loading a WPM page. The WPM reader\u2019s median time of 47.5 s (SD\u00a0=\u00a01.2; mean\u00a0=\u00a082.5; IQR\u00a0=\u00a0147,306) was 44.8% longer than the median time of 32.8 s (SD\u00a0=\u00a05.6; mean\u00a0=\u00a039.1; IQR\u00a0=\u00a086,424) for W readers (Table 6). The difference between the two distributions is statistically significant according to Mann\u2013Whitney U test (p<0.001, two-tailed).\n\nAmong the four types of events recorded, WPM readers were more likely to hover over a footnote or other link, especially on their desktop devices, and more likely to click on footnote links, compared to W readers (Table 4). On the other hand, W readers were more likely to click on external links than WPM readers, favoring their mobile devices in that regard. The WPM readers are interested, it appears, in seeing what evidence is being drawn upon in making the statements set out on a WPM page rather than trying to view the source compared to readers of the rest of Wikipedia.\n\n**Table 4.**\n Frequency of different types of link engagement per day.The average number of times per day that readers of WPM and W pages engaged with external links using one of the event types captured from March 22nd to April 22nd, 2019.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Event type</th>\n      <th colspan=\"3\">WPM</th>\n      <th colspan=\"3\">W</th>\n    </tr>\n    <tr>\n      <th>Total (%)</th>\n      <th>Desktop (%)</th>\n      <th>Mobile (%)</th>\n      <th>Total (%)</th>\n      <th>Desktop (%)</th>\n      <th>Mobile (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Hover over link</td>\n      <td>48,748.9 (46.9)</td>\n      <td>45,814.8 (60.3)</td>\n      <td>2,934.1 (10.5)</td>\n      <td>1,122,704.0 (32.7)</td>\n      <td>1,057,982.0 (47.2)</td>\n      <td>64,722.0 (5.4)</td>\n    </tr>\n    <tr>\n      <td>Footnote click</td>\n      <td>27,739.4 (26.7)</td>\n      <td>10,948.8 (14.4)</td>\n      <td>16,790.6 (60.3)</td>\n      <td>722,131.0 (21.0)</td>\n      <td>235,245.0 (10.5)</td>\n      <td>486,886.7 (40.7)</td>\n    </tr>\n    <tr>\n      <td>External click</td>\n      <td>25,811.9 (24.9)</td>\n      <td>17,792.3 (23.4)</td>\n      <td>8,019.7 (28.8)</td>\n      <td>1,557,125.0 (45.3)</td>\n      <td>915,445.1 (40.9)</td>\n      <td>641,676.4 (53.6)</td>\n    </tr>\n    <tr>\n      <td>Up click</td>\n      <td>1,539.5 (1.5)</td>\n      <td>1,422.8 (1.9)</td>\n      <td>116.4 (0.4)</td>\n      <td>34,738.0 (1.0)</td>\n      <td>31,230.1 (1.4)</td>\n      <td>3,508.1 (0.3)</td>\n    </tr>\n    <tr>\n      <td>All events</td>\n      <td>103,839.7 (100)</td>\n      <td>75,978.7 (100)</td>\n      <td>27,860.8 (100)</td>\n      <td>3,436,698.0 (100)</td>\n      <td>2,239,902.2 (100)</td>\n      <td>1,196,793.2 (100)</td>\n    </tr>\n  </tbody>\n</table>\n\nAmong the external links in WPM, 22.1% of the research citations drawn from PubMed are labeled as \u201cfreely accessible\u201d, and on desktop devices include a link bearing an open access icon (a green open lock, with the rollover label \u201cfreely accessible\u201d), as shown in Figure 2. However, there was no evidence to suggest that links with these icons were clicked more frequently than other links. This may be, in part, because the typical research citation has three or four links leading to (a) the article on the publisher\u2019s site (DOI link); (b) its PubMed entry (PMID link); and (c) PubMed Central (PMC link and article title link) if the article is open access.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52426/elife-52426-fig2-v2.jpg)\n\n**Figure 2.:** A research study cited on Wikipedia\u2019s \u201cdiabetes\u201d page displayed on desktop device with \u201cfreely accessible\u201d icon for PubMed Central (PMC) link and on a mobile device without the open access icon. There is an \u201cup click\u201d( ^\u00a0)\u00a0in front of the citation on the desktop device, which returns reader back to footnote 46 in the text.\n\nTo further compare event data (i.e. the type of engagement with external links) between WPM and W, the number of pageviews per event was calculated to determine how many pages readers viewed before engaging with an external link (Table 5). Overall, readers of WPM pages were more likely (56.6 pageviews per event) to engage with a link than W readers (66.5 pageviews per event). The differences in engagement were most pronounced with WPM readers hovering over a link on their desktop device. Yet, W readers more frequently clicked external links, with the difference especially notable when on their mobile device, where they were almost twice as likely to click an external link than WPM readers. This suggests that the external links in WPM may not be as mobile-friendly. The up click, in which a reader clicks the link from a footnote back (up) to the text, was not a function that appeared on the iOS and Android mobile devices we tested, as the footnote appears at the bottom of the screen when clicked and disappears on touching the text (Figure 2).\n\n**Table 5.**\n Number of pageviews per engagement event.The frequency of each event per day was divided by the average number of daily pageviews for WPM and W pages from March 22nd to April 22nd, 2019. The lower the number of pageviews per event the greater the event frequency. Difference between each pair of WPM and W distributions is statistically significant as derived from Fisher\u2019s exact test (p<0.001, two-tailed).\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Pageviews/event</th>\n      <th colspan=\"3\">WPM</th>\n      <th colspan=\"3\">W</th>\n    </tr>\n    <tr>\n      <th>Total</th>\n      <th>Desktop</th>\n      <th>Mobile</th>\n      <th>Total</th>\n      <th>Desktop</th>\n      <th>Mobile</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Hover over link</td>\n      <td>120.5</td>\n      <td>42.7</td>\n      <td>1,335.2</td>\n      <td>203.5</td>\n      <td>92.6</td>\n      <td>2,016.1</td>\n    </tr>\n    <tr>\n      <td>Footnote click</td>\n      <td>211.8</td>\n      <td>178.8</td>\n      <td>233.3</td>\n      <td>316.3</td>\n      <td>416.4</td>\n      <td>268.0</td>\n    </tr>\n    <tr>\n      <td>External click</td>\n      <td>227.6</td>\n      <td>110.0</td>\n      <td>488.5</td>\n      <td>146.7</td>\n      <td>107.0</td>\n      <td>203.4</td>\n    </tr>\n    <tr>\n      <td>Up click</td>\n      <td>3,816.6</td>\n      <td>1,376.1</td>\n      <td>33,655.0</td>\n      <td>6,576.2</td>\n      <td>3,136.6</td>\n      <td>37,196.5</td>\n    </tr>\n    <tr>\n      <td>All events</td>\n      <td>56.6</td>\n      <td>25.8</td>\n      <td>140.6</td>\n      <td>66.5</td>\n      <td>43.7</td>\n      <td>109.0</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nThe Wikipedia pages maintained by WPM are longer, possess a greater density of external links (references), and are viewed considerably more often, on average, than the pages on the rest of Wikipedia (Table 6). The popularity of the pages also speaks to the valuable contribution that WPM makes to Wikipedia\u2019s role as a source of health and medical information, as well as the level of trust that WPM readers have in Wikipedia\u2019s coverage of health and medical topics.\n\n**Table 6.**\n Summary of data collected.Summary statistics selected from the tables above, comparing WikiProject Medicine (WPM) pages and readers to the rest of Wikipedia (W) pages and readers. (a) The \u201c4.4 more pageviews\u201d reflects the ratio of WPM to W pages (0.6%) compared to the ratio of WPM to W pageviews/day (2.6%). (b)\u201cWPM readers\u201d and \u201cW readers\u201d refer to the behaviors of those reading a WPM and/or W page during the data collection period.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>WPM pages</th>\n      <th>W pages</th>\n      <th>WPM pages, compared to other W pages,...</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Page length (characters)</td>\n      <td>13,085</td>\n      <td>7676</td>\n      <td>\u2026are 70.5% longer by character count.</td>\n    </tr>\n    <tr>\n      <td>Characters/external link (on pages with links)</td>\n      <td>450.3</td>\n      <td>657.3</td>\n      <td>\u2026possess a 31.5% greater external link density.</td>\n    </tr>\n    <tr>\n      <td>Pageviews/day</td>\n      <td>5,875,470.40</td>\n      <td>228,445,128.40</td>\n      <td>\u2026receive 4.4 more pageviews per day.a</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>WPM readers</td>\n      <td>W readers</td>\n      <td>WPM readers, compared to rest of W readers,...b</td>\n    </tr>\n    <tr>\n      <td>Time before engagement (sec)</td>\n      <td>47.5</td>\n      <td>32.8</td>\n      <td>\u2026take 44.8% longer before engaging in a link activity.</td>\n    </tr>\n    <tr>\n      <td>Pageviews/link engagement</td>\n      <td>56.60</td>\n      <td>66.47</td>\n      <td>\u2026engage 17.5% more often with links per pageview.</td>\n    </tr>\n    <tr>\n      <td>Pageviews/hover</td>\n      <td>120.5</td>\n      <td>203.5</td>\n      <td>\u2026hover over links 68.9% more often per pageview.</td>\n    </tr>\n    <tr>\n      <td>Pageviews/footnote click</td>\n      <td>211.8</td>\n      <td>316.3</td>\n      <td>\u2026click footnote numbers 49.3% more often per pageview.</td>\n    </tr>\n    <tr>\n      <td>Pageviews/external click</td>\n      <td>227.6</td>\n      <td>146.7</td>\n      <td>\u2026click external links 35.5% less often per pageview.</td>\n    </tr>\n  </tbody>\n</table>\n\nIn addition, the readers of WPM pages not only engage more often with external links, but spend longer on the page before engaging with the links, compared to readers of the rest of Wikipedia (Table 6). WPM readers are more likely to hover over references, causing them to appear in a window, and more likely to view the footnotes than other readers. But readers of WPM pages click on external links less often than readers of other parts of Wikipedia.\n\nThis behavior pattern suggests that readers are more interested in validating the external references. This interest may arise from readers who are relatively new to these pages and are in the process of reassuring themselves as to the scientific basis of the content they are consulting. But it may also arise from readers who are trained, or are in the process of being trained, in health professions where they are required to critically appraise and integrate health information into the care of their patients. These evidence-based practitioners are able to judge a lot about the quality of information from the bibliographic reference to the sources, which they view by hovering over or going to the footnote. In addition to being able to see at a glance (or a hover) whether the cited work is a review (which is recommend by Wikipedia as being the \u201cideal source\u201d), readers are able to identify publication date, language, publication venue (i.e., journal name), and availability (via open access) (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52426/elife-52426-fig3-v2.jpg)\n\n**Figure 3.:** (A) An external link on the Hepatitis page, revealed by \u201chovering\u201d over the footnote number, indicating that the source is a systematic review conducted by the Cochrane Collaboration (with a green icon PMC link signaling open access to the source). (B) Hovering over a different footnote number on the same page reveals a different external link for the 19th and relatively recent edition of a medical textbook from a leading publisher.\n\nIn addition, in some instances it is possible to obtain from a citation details on patient populations, medical interventions (e.g., treatments, diagnostic tests), and outcomes involved in the study or whether the source is a standard medical textbook in the field (Figure 3B). The greater attention that WPM readers are paying to citations could well be a function of their educational backgrounds, reflecting the demonstrated use of WPM by health professionals, students and practitioners. Although not the focus of this study, the educational value of internal links, in which terms on a WPM page are hyperlinked to other Wikipedia pages or to VideoWiki, should also be noted as a further strategy for maintaining the comprehensive informational and educational quality of WPM pages.\n\nThis still leaves the question of why WPM readers are less likely to click through to the external source than readers of the rest of Wikipedia. This question is particularly relevant given the interest demonstrated by WPM readers in viewing the citations (by hovering or clicking on footnote numbers), as well as by the studies (cited above) demonstrating that health professionals use WPM pages, which suggests a potential capacity for further learning through the external links. One possibility is that readers are deterred from clicking on external WPM links in light of our finding that only a fifth of the research cited in WPM pages are publicly accessible, with the rest placed by publishers behind a paywall for subscribers or credit card access. Earlier studies have found that it is common for readers, including physicians, who encounter a paywall to be reluctant to explore the literature further (Moorhead et al., 2015; Maggio et al., 2016). It is possible that if all the research literature was available through open access (and this fact was promoted among readers) health professionals may be more likely to pursue the greater educational advantage of the external links. Currently, there are very few links bearing an open access icon, and readers show no additional interest in viewing these links just because they are open. If readers start expecting that external links will be open (and there is some promotion of this fact), then the two studies just cited suggest that the chances of them pursuing an item of interest will become more likely.\n\nAlthough this study does not provide a means of determining why readers hover rather than click on external links, this is something that could be addressed using smaller-scale research strategies like reader questionnaires or think-aloud protocols. Alternatively, design experiments, which experiment with external link format and context, could be conducted involving, (a) WPM pages in which all external links are clearly indicated as open access, (b) tested readers are given prior training in how to learn from cited works, and (c) how different mobile interfaces impact the amount research studies are clicked on for further reading.\n\n## Limitations\n\nOne of the limitations of this study is the way in which the count for \u201chovering\u201d (defined as a reader\u2019s cursor lingering over a link for 1000 milliseconds or more, revealing a rollover label) captures both intentional and unintentional acts. So, while the reported number of hovers is of limited value, there is no reason to believe that the incidental hovers would differ between WPM and W readers. As well, with the pageview data, various strategies were used to exclude pages visited by bots, but the limited effectiveness of these strategies is a known weakness in Wikipedia\u2019s infrastructure. It, again, suggests a tempering of the pageview counts but not the ratios between WPM and W in this regard. This is similarly the case with the exclusion from this study of interwiki links that reduced external link counts, as described in the methods. Lastly, this study focuses only on the English-language version of Wikipedia and therefore our findings are limited to this version of the encyclopedia.\n\n## Conclusion\n\nThe study has identified a number of distinctions that set WPM pages apart from the rest of Wikipedia. These differences, such as page length and link density, reflect the quality of these pages as information sources. This finding was further supported by differences in reader behavior, such as time spent on page, and amount of external link engagement, particularly the rate readers hover or click on footnote numbers to examine the bibliographic information on the sources contained in the links. This suggests that WPM readers are more engaged in assessing the citation of the external link, which assists in validating and building trust in the content that makes up the WPM pages, than by the opportunity to visit the sources as a gateway for further learning. Subsequent studies of readers engagement with Wikipedia\u2019s external links should investigate the role citations play in what readers learn about a topic and whether there is the potential, especially for readers in health professions, to increase the degree and depth of learning.\n\n## Disclaimer\n\nThe views expressed in this article are those of the authors and do not necessarily reflect the official policy or position of the Uniformed Services University of the Health Sciences, the U.S. Department of Defense, or the U.S. Government.\n",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "1f1cdf04-02be-4da3-aa3d-fae853f88d10",
+      "submission_id": "0f6426fd-aaf8-4875-88b8-07790798f8fe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Julia Deathridge, eLife United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52426.sa1](https://doi.org/10.7554/eLife.52426.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Reader engagement with Wikipedia's medical content\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by two members of the eLife Features team (Julia Deathridge and Peter Rodgers). The following individuals involved in review of your submission have agreed to reveal their identity: James Heilman (Reviewer #1); Besnik Fetahu (Reviewer #2); Shani Evenstein (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and we have drafted this decision to help you prepare a revised submission. We hope you will be able to submit the revised version within two months.\n\nSummary:\n\nThis work enriches our understanding of how readers of Wikipedia's medical pages engage with external links compared to readers of standard Wikipedia pages. However, there are a few major comments that need to be addressed.\n\nMajor comments to address:\n\na) The results reveal that in general the readers of the standard Wikipedia pages are more prone to actually clicking the external links. This is interesting given that one would think that the motivation for visiting such pages may reflect more personal reasons, i.e. checking on symptoms of a disease. Yet, the non-WPM pages seem to have better engagement with the external links. One possibility for this could be that the page visits are not normally distributed across all the pages. You have highly important pages in Wikipedia that gather a lot of attention, thus, their external links are more likely to be visited. I assume that normalizing the Wikipedia articles according to their page visits might paint a different picture here with respect to the page visit.\n\nb) In the second research question, the motivation behind visiting such external links is postulated. While personally I agree with the points in the discussion as to why this may happen, there is no actual evidence for this in the current study. The authors should include a sentence or two discussing this limitation and what further work could be done to validate their hypotheses, such as carrying out a questionnaire with a diverse set of WPM readers that investigates their reasoning for clicking/not-clicking on external links.\n\nc) As the article aims to review WPM content as a gateway to further learning and deeper understanding of a given topic, especially as it is used by both students, health professionals and the general public, one thing that was missing from this effort was an acknowledgement of the importance of both internal links and media files as a means of enhancing understanding, not only that of references and footnotes. Even if this research effort chooses to focus only on external links and footnotes, then an explanation is expected as to why specifically this focus. Especially in a world where imagery is so dominant, and videos have become a major means of education, further research is needed regarding how readers engage with media content on WPM articles, compared with the rest of Wikipedia. If the research team has any data related to this, not only to external links and footnotes, it could be of great contribution to mention it as well.\n\nd) While research till 2016 (Heilman & West) showed that Wikipedia was the most popular site for medical content online, more than sites like WHO, NIH etc, WikiProject Medicine Foundation has shown that this has changed in the last couple of years. It seems that Wikipedia's medical content is no longer the most visited site in the world for medical content and is \"losing\" to sites that encourage users to ask different questions on the same topic and have multiple answer pages on that same topic. It would be of interest to the public if the research team considers this and discusses the results in this light. It might offer additional conclusions to the ones already presented.\n",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "06009a46-2dbd-40f3-8966-8d08786decf2",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C1",
+      "claim": "WikiProject Medicine (WPM) maintains articles on Wikipedia about health and medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "Articles on Wikipedia about health and medicine are maintained by WikiProject Medicine (WPM), and are widely used by health professionals, students and others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the abstract of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "2d83f54c-6f22-410c-8d49-51899987de0d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C2",
+      "claim": "WPM articles are widely used by health professionals, students and others.",
+      "claim_type": "EXPLICIT",
+      "source": "Articles on Wikipedia about health and medicine are maintained by WikiProject Medicine (WPM), and are widely used by health professionals, students and others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract without specific data provided in this manuscript, but presented as established fact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "8dd08225-a951-4bdb-a8c6-417dc2720f38",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C3",
+      "claim": "WPM articles are longer than other articles on Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that WPM articles are longer, possess a greater density of external links, and are visited more often than other articles on Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data presented in Table 2 and Figure 1 showing WPM pages average 13,084.9 characters vs 7,676.4 for W pages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "0cf84359-597d-482b-9233-b1170c92cdf3",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C4",
+      "claim": "WPM articles possess a greater density of external links than other articles on Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that WPM articles are longer, possess a greater density of external links, and are visited more often than other articles on Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 2 showing external links appear every 450.3 characters in WPM vs every 657.3 characters in W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "bf3322c3-1ec1-401f-99ae-bfe5d144225d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C5",
+      "claim": "WPM articles are visited more often than other articles on Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that WPM articles are longer, possess a greater density of external links, and are visited more often than other articles on Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 3 showing WPM pages receive 4.4 times more pageviews per page than W pages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "49451c7c-1887-4b8f-80b5-614e4ee72991",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C6",
+      "claim": "Readers of WPM articles are more likely to hover over footnotes than other readers.",
+      "claim_type": "EXPLICIT",
+      "source": "Readers of WPM articles are more likely to hover over and view footnotes than other readers, but are less likely to visit the hyperlinked sources in these footnotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 5 showing 120.5 pageviews per hover event for WPM vs 203.5 for W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "29661feb-a09b-449e-bda1-33c0e4a97b1c",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C7",
+      "claim": "Readers of WPM articles are more likely to view footnotes than other readers.",
+      "claim_type": "EXPLICIT",
+      "source": "Readers of WPM articles are more likely to hover over and view footnotes than other readers, but are less likely to visit the hyperlinked sources in these footnotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 5 showing 211.8 pageviews per footnote click for WPM vs 316.3 for W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "2e37e057-5094-4992-b43d-223f91aff46a",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C8",
+      "claim": "Readers of WPM articles are less likely to visit the hyperlinked sources in footnotes than other readers.",
+      "claim_type": "EXPLICIT",
+      "source": "Readers of WPM articles are more likely to hover over and view footnotes than other readers, but are less likely to visit the hyperlinked sources in these footnotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 5 showing 227.6 pageviews per external click for WPM vs 146.7 for W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "f19736bd-07d4-48df-a4d3-d4dcf23d68d8",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C9",
+      "claim": "WPM readers appear to use links to external sources to verify and authorize Wikipedia content, rather than to examine the sources themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that WPM readers appear to use links to external sources to verify and authorize Wikipedia content, rather than to examine the sources themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the pattern of higher hovering/footnote viewing but lower external clicking observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "bb5d32d2-25ab-430f-ae44-2ec67ee74226",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C10",
+      "claim": "Wikipedia intends to provide every single person on the planet free access to the sum of all human knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "Wikipedia is a freely available online encyclopedia that intends to provide \"every single person on the planet free access to the sum of all human knowledge\" (Wikimedia Foundation, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Wikimedia Foundation, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "db08cdb1-c023-4962-83b6-e97745868a62",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C11",
+      "claim": "Thousands of volunteer editors have created almost six million English-language Wikipedia pages.",
+      "claim_type": "EXPLICIT",
+      "source": "To meet this mission, thousands of volunteer editors have created almost six million English-language Wikipedia pages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about Wikipedia's scale.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "33b2489b-a812-49b2-bb1f-7849ae53ce6c",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C12",
+      "claim": "Many Wikipedia pages include hyperlinked footnotes to the sources used to assemble and verify the content.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these pages include hyperlinked footnotes to the sources used to assemble and verify the content (Redi et al., 2018; Wikipedia Foundation, 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Redi et al., 2018 and Wikipedia Foundation, 2019a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "e0ef36f9-44ca-4890-8499-ab378fdd0888",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C13",
+      "claim": "Linked references on Wikipedia serve as sources of authority for Wikipedia content.",
+      "claim_type": "EXPLICIT",
+      "source": "These linked references do not only serve as sources of authority for Wikipedia content (Fallis, 2008), but also offer readers a gateway to further learning, with this opportunity enhanced by the growing degree of public access to research literature (Piwowar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fallis, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "8c026b26-cf1e-4d69-8e4f-bf7e70b29b68",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C14",
+      "claim": "Linked references on Wikipedia offer readers a gateway to further learning.",
+      "claim_type": "EXPLICIT",
+      "source": "These linked references do not only serve as sources of authority for Wikipedia content (Fallis, 2008), but also offer readers a gateway to further learning, with this opportunity enhanced by the growing degree of public access to research literature (Piwowar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a function of linked references, with enhancement noted by citation to Piwowar et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "c362bf2c-116a-4df7-8057-5baebd53c7f5",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C15",
+      "claim": "There is a growing degree of public access to research literature.",
+      "claim_type": "EXPLICIT",
+      "source": "These linked references do not only serve as sources of authority for Wikipedia content (Fallis, 2008), but also offer readers a gateway to further learning, with this opportunity enhanced by the growing degree of public access to research literature (Piwowar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Piwowar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "d744fd03-a657-45ae-b550-40fe6815d06c",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C16",
+      "claim": "Wikipedia is a leading source of health information.",
+      "claim_type": "EXPLICIT",
+      "source": "Wikipedia is proving to be a leading source of health information (Heilman and West, 2015; Laurent and Vickers, 2009), and reader engagement with a page's references can provide opportunities to understand a diagnosis or inform a conversation with their physician.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Heilman and West, 2015 and Laurent and Vickers, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "f7d83f53-9826-44f3-b8c1-7ffcbd3f6541",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C17",
+      "claim": "Reader engagement with a Wikipedia page's references can provide opportunities to understand a diagnosis or inform a conversation with their physician.",
+      "claim_type": "EXPLICIT",
+      "source": "Wikipedia is proving to be a leading source of health information (Heilman and West, 2015; Laurent and Vickers, 2009), and reader engagement with a page's references can provide opportunities to understand a diagnosis or inform a conversation with their physician.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the potential benefits of reference engagement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "aa2761ab-ed6c-4baa-85a4-bfed1e257d27",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C18",
+      "claim": "Wikipedia's health-focused pages are thought to meet a high standard of quality and rigor.",
+      "claim_type": "EXPLICIT",
+      "source": "Wikipedia's health-focused pages, which are maintained by WikiProject Medicine (WPM) editors, are thought to meet a high standard of quality and rigor (James, 2016; Maskalyk, 2014; Trevena, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to James, 2016; Maskalyk, 2014; Trevena, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "70e7d049-d5dc-452f-9501-bde95f69382f",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C19",
+      "claim": "WPM provides a series of resources for its editors, including guidelines and policies for reliable sources.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, WPM provides a series of resources for its editors, including \"guidelines and policies\" for reliable sources, and advice on how to avoid conflicts of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a fact about WPM's editorial resources.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "be315e9f-154c-4fd7-96c3-4f21f7e120ad",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C20",
+      "claim": "WPM recommends using review articles (especially systematic reviews) published in reputable medical journals.",
+      "claim_type": "EXPLICIT",
+      "source": "In its advice for reliable sources, WPM recommends using \"review articles (especially systematic reviews) published in reputable medical journals\" (Wikipedia Foundation, 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wikipedia Foundation, 2019b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "06f0ee06-bd49-4ec5-ada8-fa888e9acefb",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C21",
+      "claim": "Students and practitioners in medicine and other health-related professions are active Wikipedia readers.",
+      "claim_type": "EXPLICIT",
+      "source": "These external sources are particularly relevant for students and practitioners in medicine and other health-related professions, who are active Wikipedia readers (R\u00f6ssler et al., 2015; Scaffidi et al., 2017; Back et al., 2016; Egle et al., 2015; Allahwala et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to R\u00f6ssler et al., 2015; Scaffidi et al., 2017; Back et al., 2016; Egle et al., 2015; Allahwala et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "41a6ba75-d4e4-472b-91df-04b0b0b48b8b",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C22",
+      "claim": "Medical and health professional students and practitioners are familiar with the research literature.",
+      "claim_type": "EXPLICIT",
+      "source": "These readers are familiar with the research literature, and expected to engage in evidence-based medicine (Guyatt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a characteristic of these readers, with citation to Guyatt et al., 2015 for evidence-based medicine.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "8214c937-f8cf-450d-a725-9e8932916d20",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C23",
+      "claim": "Medical and health professional students and practitioners are expected to engage in evidence-based medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "These readers are familiar with the research literature, and expected to engage in evidence-based medicine (Guyatt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Guyatt et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "f142004e-6807-4862-ab23-1f1e4a9476c8",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C24",
+      "claim": "Faculty at several health professions schools teach courses on editing Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, faculty at several health professions schools, such as schools of medicine and pharmacy, teach courses on editing Wikipedia (Azzam et al., 2017; Joshi et al., 2019; Apollonio et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Azzam et al., 2017; Joshi et al., 2019; Apollonio et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "8f70dfa5-0256-4573-9543-390a355cf77d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C25",
+      "claim": "A previous study investigated Wikipedia as a gateway to further reading through external links by tracking referrals from Wikipedia to research article DOIs through Crossref.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we investigated Wikipedia as a gateway to further reading through external links by tracking referrals from Wikipedia to research article DOIs (Digital Object Identifier) through Crossref, combined with pageview information from Wikimedia (Maggio et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Maggio et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "653b102b-305b-4f6a-be6d-78456c9531d2",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C26",
+      "claim": "Previous data could not determine if a click to an external reference with a DOI originated from a WPM page.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with the data available at the time, we could not determine if a click to an external reference with a DOI originated from a WPM page.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of the previous study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "63d95a9d-9080-4dd1-8649-0f71bcd9fd6e",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C27",
+      "claim": "Data for this study was collected between March 22nd \u2013 April 22nd, 2019 from Wikimedia's Event Logging system and the production MediaWiki database.",
+      "claim_type": "EXPLICIT",
+      "source": "With the approval and support of the Wikimedia Foundation (WMF), we collected the data presented in this study between March 22nd \u2013 April 22nd, 2019 from Wikimedia's Event Logging system and the production MediaWiki database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological fact.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "70f55b91-85d9-47bb-90ae-571bcea78b50",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C28",
+      "claim": "The data remained within Wikimedia's system for a year before being deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "The data remained within that system, as required by WMF, for a year before being deleted (see Acknowledgements).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a data handling requirement.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "e9145d4a-7ec7-4c3c-be2f-821ccade043e",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C29",
+      "claim": "The aggregated data was anonymized by removing IP addresses, any identifying browser information, and reader-sessions associated with page edits.",
+      "claim_type": "EXPLICIT",
+      "source": "We anonymized the aggregated data by removing IP addresses, any identifying browser information, and reader-sessions associated with page edits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "139f1852-3ea3-4572-b480-f33eb4823f97",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C30",
+      "claim": "The data is not publicly available, but may be available upon request from the WMF research team.",
+      "claim_type": "EXPLICIT",
+      "source": "While this data is not publicly available, data may be available upon request from the WMF research team.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a data availability policy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "c531c6c0-8dec-4598-b940-a61f0c36ca7d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C31",
+      "claim": "The code utilized to collect and analyze the data is organized and made publicly available in a collated series of Jupyter notebooks in GitHub.",
+      "claim_type": "EXPLICIT",
+      "source": "The code utilized to collect and analyze the data, however, is organized and made publicly available in a collated series of Jupyter notebooks in GitHub (Steinberg and Picardi, 2019; copy archived here).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a data/code availability fact with citation to Steinberg and Picardi, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "b8113ab4-5359-4670-ab35-03b1f837604e",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C32",
+      "claim": "The data is drawn from English Wikipedia pages in the main namespace.",
+      "claim_type": "EXPLICIT",
+      "source": "The data is drawn from English Wikipedia pages in the main namespace, a designation that contains the encyclopedia proper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "3b35efb0-3c14-4027-8f7e-bd6cae0b2006",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C33",
+      "claim": "Wikipedia pages were identified as being part of two main groups: WikiProject Medicine pages (WPM) and the rest of Wikipedia (W).",
+      "claim_type": "EXPLICIT",
+      "source": "Wikipedia pages or topics were identified as being part of two main groups: WikiProject Medicine pages (WPM) and the rest of Wikipedia (W).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological categorization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "ea345117-e9e5-4108-9e6c-24570dd12e27",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C34",
+      "claim": "To be included in the study, pages from each group had to have at least one external link in the externallinks table.",
+      "claim_type": "EXPLICIT",
+      "source": "To be included in the study, the pages from each group had to have at least one external link in the externallinks table.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inclusion criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "24dabeb9-5bec-43df-8bc2-5dc378b42dec",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C35",
+      "claim": "The categorylinks table was used to define the WPM pages, with each possessing a Talk page bearing the category 'All WikiProject Medicine articles.'",
+      "claim_type": "EXPLICIT",
+      "source": "The categorylinks table was used to define the WPM pages, with each possessing a Talk page bearing the category \"All WikiProject Medicine articles.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological procedure for identifying WPM pages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "1dbdb0d4-b17b-453f-b832-c191fe7705d7",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C36",
+      "claim": "WPM represented 34,324 pages at the time of this study.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of this study, WPM represented 34,324 pages (i.e., subject or topic entries), while the rest of W had 5,839,083 pages (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "1eff7bbe-25e2-4d16-b4ca-7e669599f9dc",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C37",
+      "claim": "The rest of Wikipedia (W) had 5,839,083 pages at the time of this study.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of this study, WPM represented 34,324 pages (i.e., subject or topic entries), while the rest of W had 5,839,083 pages (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data presented in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "4177c6a3-ba21-496b-8711-cd19c8dba5c8",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C38",
+      "claim": "WPM pages possessed more than twice as many links to external references and other sites than the rest of Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "WPM pages possessed more than twice as many links to external references and other sites than the rest of Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 2 showing 29.0 links per page for WPM vs 11.7 for W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "ddf7a8a1-31ac-4ade-9f09-41b35bd9eb00",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C39",
+      "claim": "WPM pages were 13,084.9 characters in length on average (SD = 19,3780.4; median = 6,6280.0; IQR = 11,640).",
+      "claim_type": "EXPLICIT",
+      "source": "WPM pages were 13,084.9 characters in length on average (SD = 19,3780.4; median = 6,6280.0; IQR = 11,640), which was 70.1% longer than the average page in the rest of Wikipedia at 7,676.4 characters (SD = 13,6320.4; median = 3,8650.0; IQR = 5,789) (Figure 1; Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data presented in text and referenced in Figure 1 and Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "cf0a3534-3b47-4bf9-b370-015bc7cdc2eb",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C40",
+      "claim": "The average page in the rest of Wikipedia was 7,676.4 characters (SD = 13,6320.4; median = 3,8650.0; IQR = 5,789).",
+      "claim_type": "EXPLICIT",
+      "source": "WPM pages were 13,084.9 characters in length on average (SD = 19,3780.4; median = 6,6280.0; IQR = 11,640), which was 70.1% longer than the average page in the rest of Wikipedia at 7,676.4 characters (SD = 13,6320.4; median = 3,8650.0; IQR = 5,789) (Figure 1; Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data presented in text and referenced in Figure 1 and Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "781a2ed5-dbf4-4a68-95b2-ed6428327440",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C41",
+      "claim": "WPM pages were 70.1% longer than the average page in the rest of Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "WPM pages were 13,084.9 characters in length on average (SD = 19,3780.4; median = 6,6280.0; IQR = 11,640), which was 70.1% longer than the average page in the rest of Wikipedia at 7,676.4 characters (SD = 13,6320.4; median = 3,8650.0; IQR = 5,789) (Figure 1; Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from the data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "5a8879cb-0404-45df-becf-a7974e736847",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C42",
+      "claim": "The difference between the two page length distributions is statistically significant according to Mann\u2013Whitney U test (p<0.001, two-tailed).",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the two distributions is statistically significant according to Mann\u2013Whitney U test (p<0.001, two-tailed).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Statistical test result reported in Figure 1 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "07d5be48-7101-4945-ac02-84fc03ec205a",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C43",
+      "claim": "WPM pages demonstrated a greater link density with an external link appearing every 450.3 characters.",
+      "claim_type": "EXPLICIT",
+      "source": "WPM pages also demonstrated a greater \"link density\" with an external link appearing on pages with links every 450.3 characters, compared to a link every 657.3 characters for the rest of Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data calculated and presented in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "0390f3a5-ab9e-4105-8942-b31abf3a016d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C44",
+      "claim": "The rest of Wikipedia had an external link appearing every 657.3 characters.",
+      "claim_type": "EXPLICIT",
+      "source": "WPM pages also demonstrated a greater \"link density\" with an external link appearing on pages with links every 450.3 characters, compared to a link every 657.3 characters for the rest of Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data calculated and presented in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "dbcf294c-031a-44bb-b331-36aa51c47872",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C45",
+      "claim": "The most common hostname in WPM external links was 'www.ncbi.nlm.nih.gov,' accounting for 25.2% of the WPM's external links.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the most common hostname was \"www.ncbi.nlm.nih.gov,\" accounting for 25.2% of the WPM's external links.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data analysis result presented in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "3cc425b1-ceac-4ba2-87a3-bb52bcdd9b70",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C46",
+      "claim": "Research papers found through the PubMed database run by the National Institutes of Health (NIH) are likely to be cited in WPM pages.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that research papers found through the PubMed database run by the National Institutes of Health (NIH) are likely to be cited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the high percentage of ncbi.nlm.nih.gov links.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "b9a7cefc-f926-4cba-b7d8-b7ca5c8009d3",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C47",
+      "claim": "The second most common hostname in WPM external links was 'www.worldcat.org' with 2.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "It was followed by the hostnames \"www.worldcat.org\" with 2.7%, and \"www.google.com\" with 1.2% of the external links.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data analysis result presented in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "b914b3eb-6f74-45ff-8334-c735fb8b6d50",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C48",
+      "claim": "The third most common hostname in WPM external links was 'www.google.com' with 1.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "It was followed by the hostnames \"www.worldcat.org\" with 2.7%, and \"www.google.com\" with 1.2% of the external links.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data analysis result presented in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "48b4f8a7-2b4d-4f5a-bbef-dbfaa3bb9053",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C49",
+      "claim": "The three leading hostnames in the rest of Wikipedia were 'tools.wmflabs.org' at 3.5%, 'www.google.com' at 2.9% and 'books.google.com' at 2.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the hostnames that prevailed among external links in the rest of Wikipedia, the three leading hostnames were \"tools.wmflabs.org\" (where Wikimedia hosts tools developed to assist editors) at 3.5%, \"www.google.com\" at 2.9% and \"books.google.com\" at 2.0%, while \"www.ncbi.nlm.nih.gov\" still accounted for 1.8% of the external links outside of WPM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data analysis result presented in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "de78cd97-abb7-4161-998b-21b1e6dfb1b1",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C50",
+      "claim": "'www.ncbi.nlm.nih.gov' accounted for 1.8% of the external links outside of WPM.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the hostnames that prevailed among external links in the rest of Wikipedia, the three leading hostnames were \"tools.wmflabs.org\" (where Wikimedia hosts tools developed to assist editors) at 3.5%, \"www.google.com\" at 2.9% and \"books.google.com\" at 2.0%, while \"www.ncbi.nlm.nih.gov\" still accounted for 1.8% of the external links outside of WPM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data analysis result presented in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "02ea304c-054e-4b15-bc27-c725310277a0",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C51",
+      "claim": "Readers viewed 5,875,470.4 WPM pages a day on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Readers viewed 5,875,470.4 WPM pages a day on average, compared to 228,445,128.4 pages for readers of the rest of Wikipedia (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "c5e7b59c-e885-4077-aae4-ae78ff3966bc",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C52",
+      "claim": "Readers viewed 228,445,128.4 pages of the rest of Wikipedia per day on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Readers viewed 5,875,470.4 WPM pages a day on average, compared to 228,445,128.4 pages for readers of the rest of Wikipedia (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "24cc15fb-9f96-4a6a-ada3-389b294974ad",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C53",
+      "claim": "The number of WPM pages is 0.6% of W pages.",
+      "claim_type": "EXPLICIT",
+      "source": "While the number of WPM pages is 0.6% of W pages, the number of pageviews that WPM received from readers was 2.6% of that for W.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the data (34,324 / 5,839,083).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "d71fbf03-eb3b-493f-93e0-2fdca412cbfd",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C54",
+      "claim": "The number of pageviews that WPM received from readers was 2.6% of that for W.",
+      "claim_type": "EXPLICIT",
+      "source": "While the number of WPM pages is 0.6% of W pages, the number of pageviews that WPM received from readers was 2.6% of that for W.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the data (5,875,470.4 / 228,445,128.4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "8caafef1-8a42-4338-ad89-59dabfa503a2",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C55",
+      "claim": "WPM pages were viewed more than four times as frequently as the rest of Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that WPM pages were viewed more than four times as frequently as the rest of Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the ratio of pageviews to number of pages (2.6% / 0.6% \u2248 4.3).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "18c896c7-b84a-4d52-a4b4-c485959fe86d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C56",
+      "claim": "The majority of pageviews for both WPM and W took place on mobile devices.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these views for both WPM and W took place on mobile devices, with WPM readers the heavier users of mobile devices in accessing Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 3 showing 66.7% mobile for WPM and 57.1% mobile for W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "3443d98c-af69-4892-9b63-8b8f1d29d16c",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C57",
+      "claim": "WPM readers were heavier users of mobile devices in accessing Wikipedia than W readers.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these views for both WPM and W took place on mobile devices, with WPM readers the heavier users of mobile devices in accessing Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 3 showing 66.7% mobile for WPM vs 57.1% for W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "23ae7a6d-ab0f-4764-b247-8fe11ff3213a",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C58",
+      "claim": "Readers spent more time on a page before first clicking an external link after loading a WPM page.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that readers spent more time on a page before first clicking an external link after loading a WPM page.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing median time of 47.5s for WPM vs 32.8s for W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "30d7f26e-9486-41d8-9a29-6c0dccb732b9",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C59",
+      "claim": "The WPM reader's median time before first clicking an external link was 47.5 s (SD = 1.2; mean = 82.5; IQR = 147,306).",
+      "claim_type": "EXPLICIT",
+      "source": "The WPM reader's median time of 47.5 s (SD = 1.2; mean = 82.5; IQR = 147,306) was 44.8% longer than the median time of 32.8 s (SD = 5.6; mean = 39.1; IQR = 86,424) for W readers (Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data presented in text and Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "dc46ba19-a52d-4d9d-98a0-1130849dbc61",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C60",
+      "claim": "The W reader's median time before first clicking an external link was 32.8 s (SD = 5.6; mean = 39.1; IQR = 86,424).",
+      "claim_type": "EXPLICIT",
+      "source": "The WPM reader's median time of 47.5 s (SD = 1.2; mean = 82.5; IQR = 147,306) was 44.8% longer than the median time of 32.8 s (SD = 5.6; mean = 39.1; IQR = 86,424) for W readers (Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data presented in text and Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "0a857b00-a5e4-4dd1-bc1e-fe96b49eb9b3",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C61",
+      "claim": "WPM readers' median time before first clicking an external link was 44.8% longer than W readers.",
+      "claim_type": "EXPLICIT",
+      "source": "The WPM reader's median time of 47.5 s (SD = 1.2; mean = 82.5; IQR = 147,306) was 44.8% longer than the median time of 32.8 s (SD = 5.6; mean = 39.1; IQR = 86,424) for W readers (Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from the data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "60baadbe-bfa5-4017-8052-cd28377f831d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C62",
+      "claim": "The difference between the two time-to-engagement distributions is statistically significant according to Mann\u2013Whitney U test (p<0.001, two-tailed).",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the two distributions is statistically significant according to Mann\u2013Whitney U test (p<0.001, two-tailed).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result reported in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "625b1e7d-de2f-445e-8e26-6908c319a43c",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C63",
+      "claim": "WPM readers were more likely to hover over a footnote or other link, especially on their desktop devices, compared to W readers.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the four types of events recorded, WPM readers were more likely to hover over a footnote or other link, especially on their desktop devices, and more likely to click on footnote links, compared to W readers (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Table 4 and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "bbce124d-fe55-44d0-b040-2a29be3615ee",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C64",
+      "claim": "WPM readers were more likely to click on footnote links compared to W readers.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the four types of events recorded, WPM readers were more likely to hover over a footnote or other link, especially on their desktop devices, and more likely to click on footnote links, compared to W readers (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Table 4 and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "09cf1327-a586-4249-9f68-1374d8599b34",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C65",
+      "claim": "W readers were more likely to click on external links than WPM readers.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, W readers were more likely to click on external links than WPM readers, favoring their mobile devices in that regard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 4 and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "fa60ef41-778d-44ae-a195-a12996e58b34",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C66",
+      "claim": "W readers favored their mobile devices for clicking external links.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, W readers were more likely to click on external links than WPM readers, favoring their mobile devices in that regard.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 4 showing higher mobile percentage for external clicks in W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "7b74b2a5-3ef6-43ae-b746-bf04cab98e16",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C67",
+      "claim": "WPM readers are interested in seeing what evidence is being drawn upon in making the statements set out on a WPM page rather than trying to view the source compared to readers of the rest of Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "The WPM readers are interested, it appears, in seeing what evidence is being drawn upon in making the statements set out on a WPM page rather than trying to view the source compared to readers of the rest of Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed behavior patterns (more hovering/footnote viewing, less external clicking).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "1a90b164-d33f-42eb-a977-7c5aaf236d56",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C68",
+      "claim": "22.1% of the research citations drawn from PubMed in WPM are labeled as 'freely accessible'.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the external links in WPM, 22.1% of the research citations drawn from PubMed are labeled as \"freely accessible\", and on desktop devices include a link bearing an open access icon (a green open lock, with the rollover label \"freely accessible\"), as shown in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data presented in text and illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "659455ae-8686-4cf5-bded-7934883afe16",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C69",
+      "claim": "On desktop devices, freely accessible PubMed citations include a link bearing an open access icon (a green open lock, with the rollover label 'freely accessible').",
+      "claim_type": "EXPLICIT",
+      "source": "Among the external links in WPM, 22.1% of the research citations drawn from PubMed are labeled as \"freely accessible\", and on desktop devices include a link bearing an open access icon (a green open lock, with the rollover label \"freely accessible\"), as shown in Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in text and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "419e22ee-bda0-4145-ad1f-4417ec3a55ef",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C70",
+      "claim": "There was no evidence to suggest that links with open access icons were clicked more frequently than other links.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no evidence to suggest that links with these icons were clicked more frequently than other links.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "505de68f-aca8-44fe-98e5-41a9e23c7bc6",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C71",
+      "claim": "The typical research citation has three or four links leading to (a) the article on the publisher's site (DOI link); (b) its PubMed entry (PMID link); and (c) PubMed Central (PMC link and article title link) if the article is open access.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be, in part, because the typical research citation has three or four links leading to (a) the article on the publisher's site (DOI link); (b) its PubMed entry (PMID link); and (c) PubMed Central (PMC link and article title link) if the article is open access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an explanation for the lack of differential clicking on open access icons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "bd2dfae7-cfc3-466d-85f1-733e4b871509",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C72",
+      "claim": "Overall, readers of WPM pages were more likely (56.6 pageviews per event) to engage with a link than W readers (66.5 pageviews per event).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, readers of WPM pages were more likely (56.6 pageviews per event) to engage with a link than W readers (66.5 pageviews per event).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data presented in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "800b2186-3a7a-4566-b06e-6a002bb442f8",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C73",
+      "claim": "The differences in engagement were most pronounced with WPM readers hovering over a link on their desktop device.",
+      "claim_type": "EXPLICIT",
+      "source": "The differences in engagement were most pronounced with WPM readers hovering over a link on their desktop device.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 5 showing 42.7 pageviews per hover for WPM desktop vs 92.6 for W desktop.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "fdc08cc6-2e5c-49a0-bb73-6a5716012b7e",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C74",
+      "claim": "W readers more frequently clicked external links, with the difference especially notable when on their mobile device, where they were almost twice as likely to click an external link than WPM readers.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, W readers more frequently clicked external links, with the difference especially notable when on their mobile device, where they were almost twice as likely to click an external link than WPM readers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Table 5 showing 488.5 pageviews per external click for WPM mobile vs 203.4 for W mobile.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "a3797f20-7b55-4dc2-8d54-903e10e34c07",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C75",
+      "claim": "The external links in WPM may not be as mobile-friendly.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the external links in WPM may not be as mobile-friendly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the lower external click rate on mobile devices for WPM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "cfbd4e5a-3626-4805-85bf-129cc7eb8dc5",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C76",
+      "claim": "The up click function did not appear on the iOS and Android mobile devices tested.",
+      "claim_type": "EXPLICIT",
+      "source": "The up click, in which a reader clicks the link from a footnote back (up) to the text, was not a function that appeared on the iOS and Android mobile devices we tested, as the footnote appears at the bottom of the screen when clicked and disappears on touching the text (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from testing, illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "c82f7dea-0bc9-4ce2-a046-ac607d896e68",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C77",
+      "claim": "On mobile devices, the footnote appears at the bottom of the screen when clicked and disappears on touching the text.",
+      "claim_type": "EXPLICIT",
+      "source": "The up click, in which a reader clicks the link from a footnote back (up) to the text, was not a function that appeared on the iOS and Android mobile devices we tested, as the footnote appears at the bottom of the screen when clicked and disappears on touching the text (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from testing, illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "50fd4d15-56c7-4ce4-af6d-60de00b2c0f1",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C78",
+      "claim": "Difference between each pair of WPM and W distributions for pageviews per event is statistically significant as derived from Fisher's exact test (p<0.001, two-tailed).",
+      "claim_type": "EXPLICIT",
+      "source": "Difference between each pair of WPM and W distributions is statistically significant as derived from Fisher's exact test (p<0.001, two-tailed).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Statistical test result reported in Table 5 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "4211c747-ca37-4b26-bf8b-b7f2a5ab3cc4",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C79",
+      "claim": "The Wikipedia pages maintained by WPM are longer, possess a greater density of external links (references), and are viewed considerably more often, on average, than the pages on the rest of Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "The Wikipedia pages maintained by WPM are longer, possess a greater density of external links (references), and are viewed considerably more often, on average, than the pages on the rest of Wikipedia (Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of findings presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "cfbb90e8-cc59-4266-ab54-006ce4b5122b",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C80",
+      "claim": "The popularity of WPM pages speaks to the valuable contribution that WPM makes to Wikipedia's role as a source of health and medical information.",
+      "claim_type": "EXPLICIT",
+      "source": "The popularity of the pages also speaks to the valuable contribution that WPM makes to Wikipedia's role as a source of health and medical information, as well as the level of trust that WPM readers have in Wikipedia's coverage of health and medical topics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the pageview data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "e4e13067-3216-4796-8c74-8ae66d7ab210",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C81",
+      "claim": "The popularity of WPM pages speaks to the level of trust that WPM readers have in Wikipedia's coverage of health and medical topics.",
+      "claim_type": "EXPLICIT",
+      "source": "The popularity of the pages also speaks to the valuable contribution that WPM makes to Wikipedia's role as a source of health and medical information, as well as the level of trust that WPM readers have in Wikipedia's coverage of health and medical topics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the pageview data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "07cdef1f-3026-406f-a48c-a505c6abfecc",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C82",
+      "claim": "Readers of WPM pages not only engage more often with external links, but spend longer on the page before engaging with the links, compared to readers of the rest of Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the readers of WPM pages not only engage more often with external links, but spend longer on the page before engaging with the links, compared to readers of the rest of Wikipedia (Table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of findings presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "cd9a0dcc-73e8-43d5-8ab7-ed900424600d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C83",
+      "claim": "WPM readers are more likely to hover over references, causing them to appear in a window, and more likely to view the footnotes than other readers.",
+      "claim_type": "EXPLICIT",
+      "source": "WPM readers are more likely to hover over references, causing them to appear in a window, and more likely to view the footnotes than other readers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Tables 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "06b23a4f-ea54-4556-bd95-43c6a48f36d5",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C84",
+      "claim": "Readers of WPM pages click on external links less often than readers of other parts of Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "But readers of WPM pages click on external links less often than readers of other parts of Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Tables 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "a5a465c5-fcc1-4613-9207-1a5c6cf53efd",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C85",
+      "claim": "This behavior pattern suggests that readers are more interested in validating the external references.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior pattern suggests that readers are more interested in validating the external references.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed behavior patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "4fe282b3-6929-4233-ab8c-96f875a7ac2d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C86",
+      "claim": "This interest may arise from readers who are relatively new to these pages and are in the process of reassuring themselves as to the scientific basis of the content they are consulting.",
+      "claim_type": "EXPLICIT",
+      "source": "This interest may arise from readers who are relatively new to these pages and are in the process of reassuring themselves as to the scientific basis of the content they are consulting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "966b89f6-4e21-4862-8ef5-f490cff0ff6b",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C87",
+      "claim": "This interest may arise from readers who are trained, or are in the process of being trained, in health professions where they are required to critically appraise and integrate health information into the care of their patients.",
+      "claim_type": "EXPLICIT",
+      "source": "But it may also arise from readers who are trained, or are in the process of being trained, in health professions where they are required to critically appraise and integrate health information into the care of their patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "87834283-212a-47da-895e-3c810a581128",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C88",
+      "claim": "Evidence-based practitioners are able to judge a lot about the quality of information from the bibliographic reference to the sources, which they view by hovering over or going to the footnote.",
+      "claim_type": "EXPLICIT",
+      "source": "These evidence-based practitioners are able to judge a lot about the quality of information from the bibliographic reference to the sources, which they view by hovering over or going to the footnote.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the capabilities of evidence-based practitioners.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "90bcf092-85dc-404f-9c71-509e80c69c87",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C89",
+      "claim": "Readers are able to see at a glance (or a hover) whether the cited work is a review.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to being able to see at a glance (or a hover) whether the cited work is a review (which is recommend by Wikipedia as being the \"ideal source\"), readers are able to identify publication date, language, publication venue (i.e., journal name), and availability (via open access) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as information available from hovering, illustrated in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "81ca5cae-0c40-4213-9ae9-c4e4bb6e841e",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C90",
+      "claim": "Wikipedia recommends review articles as being the 'ideal source'.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to being able to see at a glance (or a hover) whether the cited work is a review (which is recommend by Wikipedia as being the \"ideal source\"), readers are able to identify publication date, language, publication venue (i.e., journal name), and availability (via open access) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as Wikipedia's recommendation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "99ee575d-c692-41be-9fbd-47ea3fba9ab5",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C91",
+      "claim": "Readers are able to identify publication date, language, publication venue (i.e., journal name), and availability (via open access) from hovering over or viewing citations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to being able to see at a glance (or a hover) whether the cited work is a review (which is recommend by Wikipedia as being the \"ideal source\"), readers are able to identify publication date, language, publication venue (i.e., journal name), and availability (via open access) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as information available from hovering, illustrated in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "1876fbb4-4e68-4dbd-a268-d41964a996f4",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C92",
+      "claim": "In some instances it is possible to obtain from a citation details on patient populations, medical interventions (e.g., treatments, diagnostic tests), and outcomes involved in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in some instances it is possible to obtain from a citation details on patient populations, medical interventions (e.g., treatments, diagnostic tests), and outcomes involved in the study or whether the source is a standard medical textbook in the field (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as information available from citations, illustrated in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "5ae2553a-be40-42db-8403-bae74d55da57",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C93",
+      "claim": "In some instances it is possible to obtain from a citation whether the source is a standard medical textbook in the field.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in some instances it is possible to obtain from a citation details on patient populations, medical interventions (e.g., treatments, diagnostic tests), and outcomes involved in the study or whether the source is a standard medical textbook in the field (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as information available from citations, illustrated in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "a6c05288-1439-410d-be37-2124f77942d8",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C94",
+      "claim": "The greater attention that WPM readers are paying to citations could well be a function of their educational backgrounds, reflecting the demonstrated use of WPM by health professionals, students and practitioners.",
+      "claim_type": "EXPLICIT",
+      "source": "The greater attention that WPM readers are paying to citations could well be a function of their educational backgrounds, reflecting the demonstrated use of WPM by health professionals, students and practitioners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the observed behavior to the known user demographics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "9f85ed83-f10d-454a-87cb-154bd3dc70c6",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C95",
+      "claim": "The educational value of internal links, in which terms on a WPM page are hyperlinked to other Wikipedia pages or to VideoWiki, should be noted as a further strategy for maintaining the comprehensive informational and educational quality of WPM pages.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not the focus of this study, the educational value of internal links, in which terms on a WPM page are hyperlinked to other Wikipedia pages or to VideoWiki, should also be noted as a further strategy for maintaining the comprehensive informational and educational quality of WPM pages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the educational value of internal links, though not the focus of the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "154f6205-45f4-48d9-9873-481a02a7aaf0",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C96",
+      "claim": "One possibility is that readers are deterred from clicking on external WPM links in light of the finding that only a fifth of the research cited in WPM pages are publicly accessible, with the rest placed by publishers behind a paywall.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that readers are deterred from clicking on external WPM links in light of our finding that only a fifth of the research cited in WPM pages are publicly accessible, with the rest placed by publishers behind a paywall for subscribers or credit card access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the lower external click rate, based on the data about open access availability.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "6808bfc0-df41-466e-9b24-b4a22e0aa4d5",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C97",
+      "claim": "Only a fifth of the research cited in WPM pages are publicly accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that readers are deterred from clicking on external WPM links in light of our finding that only a fifth of the research cited in WPM pages are publicly accessible, with the rest placed by publishers behind a paywall for subscribers or credit card access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is consistent with the earlier finding that 22.1% of PubMed citations are labeled as freely accessible.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "e6ee2f6f-b761-4b35-8068-db69e265d19a",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C98",
+      "claim": "Earlier studies have found that it is common for readers, including physicians, who encounter a paywall to be reluctant to explore the literature further.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier studies have found that it is common for readers, including physicians, who encounter a paywall to be reluctant to explore the literature further (Moorhead et al., 2015; Maggio et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Moorhead et al., 2015 and Maggio et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "f9e180f9-6570-433c-b0c3-c646249982d2",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C99",
+      "claim": "If all the research literature was available through open access (and this fact was promoted among readers) health professionals may be more likely to pursue the greater educational advantage of the external links.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that if all the research literature was available through open access (and this fact was promoted among readers) health professionals may be more likely to pursue the greater educational advantage of the external links.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "e87a2575-a698-440a-b8a8-0f066b19cfeb",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C100",
+      "claim": "Currently, there are very few links bearing an open access icon.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, there are very few links bearing an open access icon, and readers show no additional interest in viewing these links just because they are open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is consistent with the earlier finding that 22.1% of PubMed citations are labeled as freely accessible.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "6228a2f9-0dcc-4487-9710-3e5f2ac0c09c",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C101",
+      "claim": "Readers show no additional interest in viewing links with open access icons just because they are open.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, there are very few links bearing an open access icon, and readers show no additional interest in viewing these links just because they are open.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the earlier finding that there was no evidence of differential clicking on open access links.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "b822e734-cfdf-47e8-b087-567bea547e5d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C102",
+      "claim": "If readers start expecting that external links will be open (and there is some promotion of this fact), then the chances of them pursuing an item of interest will become more likely.",
+      "claim_type": "EXPLICIT",
+      "source": "If readers start expecting that external links will be open (and there is some promotion of this fact), then the two studies just cited suggest that the chances of them pursuing an item of interest will become more likely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from cited studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "d11832e2-cdc6-4527-a08b-7ebc879949ff",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C103",
+      "claim": "This study does not provide a means of determining why readers hover rather than click on external links.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this study does not provide a means of determining why readers hover rather than click on external links, this is something that could be addressed using smaller-scale research strategies like reader questionnaires or think-aloud protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "2b9f79a6-1838-48e0-a765-cb5fa9694b2f",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C104",
+      "claim": "The question of why readers hover rather than click could be addressed using smaller-scale research strategies like reader questionnaires or think-aloud protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this study does not provide a means of determining why readers hover rather than click on external links, this is something that could be addressed using smaller-scale research strategies like reader questionnaires or think-aloud protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "bf9c6160-5d9f-4ee6-9fcc-c6825b080b41",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C105",
+      "claim": "Design experiments could be conducted involving WPM pages in which all external links are clearly indicated as open access, tested readers are given prior training in how to learn from cited works, and how different mobile interfaces impact the amount research studies are clicked on for further reading.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, design experiments, which experiment with external link format and context, could be conducted involving, (a) WPM pages in which all external links are clearly indicated as open access, (b) tested readers are given prior training in how to learn from cited works, and (c) how different mobile interfaces impact the amount research studies are clicked on for further reading.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "09c81ce9-6073-4a55-b322-b718d058f5a0",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C106",
+      "claim": "One of the limitations of this study is the way in which the count for 'hovering' captures both intentional and unintentional acts.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the limitations of this study is the way in which the count for \"hovering\" (defined as a reader's cursor lingering over a link for 1000 milliseconds or more, revealing a rollover label) captures both intentional and unintentional acts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "62c3cc17-b55a-4a5f-a377-e9cdf9edde68",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C107",
+      "claim": "There is no reason to believe that the incidental hovers would differ between WPM and W readers.",
+      "claim_type": "EXPLICIT",
+      "source": "So, while the reported number of hovers is of limited value, there is no reason to believe that the incidental hovers would differ between WPM and W readers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the distribution of unintentional hovers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "cf75e563-aca2-482f-9a49-1d20106d1907",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C108",
+      "claim": "Various strategies were used to exclude pages visited by bots, but the limited effectiveness of these strategies is a known weakness in Wikipedia's infrastructure.",
+      "claim_type": "EXPLICIT",
+      "source": "As well, with the pageview data, various strategies were used to exclude pages visited by bots, but the limited effectiveness of these strategies is a known weakness in Wikipedia's infrastructure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of the data collection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "c51dd224-8cba-4084-b644-c5de7389e770",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C109",
+      "claim": "The exclusion of interwiki links reduced external link counts.",
+      "claim_type": "EXPLICIT",
+      "source": "This is similarly the case with the exclusion from this study of interwiki links that reduced external link counts, as described in the methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological limitation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "d533ad86-9574-46b2-9d4f-1edcdfcff13b",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C110",
+      "claim": "This study focuses only on the English-language version of Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, this study focuses only on the English-language version of Wikipedia and therefore our findings are limited to this version of the encyclopedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of the study scope.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "e663f0dc-5c8e-4359-b8e5-cc11ebdd1b22",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C111",
+      "claim": "The findings of this study are limited to the English-language version of Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, this study focuses only on the English-language version of Wikipedia and therefore our findings are limited to this version of the encyclopedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of the study scope.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "17878023-817d-4d93-80cb-fffddab3ed0e",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C112",
+      "claim": "The study has identified a number of distinctions that set WPM pages apart from the rest of Wikipedia.",
+      "claim_type": "EXPLICIT",
+      "source": "The study has identified a number of distinctions that set WPM pages apart from the rest of Wikipedia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "5cd91563-8cb7-4739-abdf-2769834f23a9",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C113",
+      "claim": "Differences such as page length and link density reflect the quality of WPM pages as information sources.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences, such as page length and link density, reflect the quality of these pages as information sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "24f318b6-49f9-4dc4-9dac-0b0ea8ff5c85",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C114",
+      "claim": "Differences in reader behavior, such as time spent on page and amount of external link engagement, support the finding that WPM pages are higher quality information sources.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding was further supported by differences in reader behavior, such as time spent on page, and amount of external link engagement, particularly the rate readers hover or click on footnote numbers to examine the bibliographic information on the sources contained in the links.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting reader behavior to page quality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "1924a6e7-9da1-4e81-b6b4-386cf4795126",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C115",
+      "claim": "WPM readers are more engaged in assessing the citation of the external link, which assists in validating and building trust in the content that makes up the WPM pages, than by the opportunity to visit the sources as a gateway for further learning.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that WPM readers are more engaged in assessing the citation of the external link, which assists in validating and building trust in the content that makes up the WPM pages, than by the opportunity to visit the sources as a gateway for further learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed behavior patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "eb857b1f-22a0-4f94-9a0e-ab9e2ad1a864",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C116",
+      "claim": "Subsequent studies of readers engagement with Wikipedia's external links should investigate the role citations play in what readers learn about a topic.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies of readers engagement with Wikipedia's external links should investigate the role citations play in what readers learn about a topic and whether there is the potential, especially for readers in health professions, to increase the degree and depth of learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "8e75657e-de92-4dfa-84bb-20d141a31645",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C117",
+      "claim": "Subsequent studies should investigate whether there is the potential, especially for readers in health professions, to increase the degree and depth of learning through Wikipedia's external links.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies of readers engagement with Wikipedia's external links should investigate the role citations play in what readers learn about a topic and whether there is the potential, especially for readers in health professions, to increase the degree and depth of learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "1bec1c6b-2bc6-476d-ad45-59cb18457bc3",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C118",
+      "claim": "WPM pages are 70.5% longer by character count than W pages.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2026are 70.5% longer by character count.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "1ad18de4-1d13-4dcc-8c75-e79152029895",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C119",
+      "claim": "WPM pages possess a 31.5% greater external link density than W pages.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2026possess a 31.5% greater external link density.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "0c28dc5a-fc8a-46ec-90e1-3249503b1529",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C120",
+      "claim": "WPM pages receive 4.4 more pageviews per day than W pages.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2026receive 4.4 more pageviews per day.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "4b7b15c2-0d61-4bbb-82ca-2c4b0ae20334",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C121",
+      "claim": "WPM readers take 44.8% longer before engaging in a link activity than W readers.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2026take 44.8% longer before engaging in a link activity.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "2232d33e-8895-49d1-82e2-f592895066e0",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C122",
+      "claim": "WPM readers engage 17.5% more often with links per pageview than W readers.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2026engage 17.5% more often with links per pageview.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "e50e35be-9734-4233-a241-4ffc1f83e751",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C123",
+      "claim": "WPM readers hover over links 68.9% more often per pageview than W readers.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2026hover over links 68.9% more often per pageview.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "e1c96afe-43d0-4208-b2bd-eec8a84053a4",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C124",
+      "claim": "WPM readers click footnote numbers 49.3% more often per pageview than W readers.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2026click footnote numbers 49.3% more often per pageview.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "40d6ea7f-4dc0-4147-97aa-fa25fd251159",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C125",
+      "claim": "WPM readers click external links 35.5% less often per pageview than W readers.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2026click external links 35.5% less often per pageview.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "Data presented in Table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "28e1c111-3117-4c86-a326-0f52381c9a17",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C126",
+      "claim": "The CitationUsage schema collected all sessions with reader engagement, except for those involving anonymous Wikipedia editors.",
+      "claim_type": "EXPLICIT",
+      "source": "The CitationUsage schema collected all sessions with reader engagement, except for those involving anonymous Wikipedia editors (21 sessions out of 72,953,065 total, which translated into the removal of 34 citation events out of a total of 113,520,376).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "b613ee00-6a0a-4339-85b3-fd38c18023e8",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C127",
+      "claim": "21 sessions out of 72,953,065 total were removed because they involved anonymous Wikipedia editors.",
+      "claim_type": "EXPLICIT",
+      "source": "The CitationUsage schema collected all sessions with reader engagement, except for those involving anonymous Wikipedia editors (21 sessions out of 72,953,065 total, which translated into the removal of 34 citation events out of a total of 113,520,376).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "84337cff-ff21-4aef-a7ca-743c37631266",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C128",
+      "claim": "34 citation events out of a total of 113,520,376 were removed because they involved anonymous Wikipedia editors.",
+      "claim_type": "EXPLICIT",
+      "source": "The CitationUsage schema collected all sessions with reader engagement, except for those involving anonymous Wikipedia editors (21 sessions out of 72,953,065 total, which translated into the removal of 34 citation events out of a total of 113,520,376).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "91ea2e3e-1c55-431b-9af1-93293e7ab5a0",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C129",
+      "claim": "Descriptive statistics were calculated using Excel.",
+      "claim_type": "EXPLICIT",
+      "source": "Descriptive statistics were calculated using Excel (Redmond, WA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "4da25764-f238-4e80-b297-2cbae7628d1a",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C130",
+      "claim": "Inferential statistics were calculated to determine the significance in the difference between engagements in WPM and W using the Python library SciPy.",
+      "claim_type": "EXPLICIT",
+      "source": "Inferential statistics were calculated to determine the significance in the difference between engagements in WPM and W using the Python library SciPy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "0eb7e6fe-37b2-4270-877c-3abe040ec6e6",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C131",
+      "claim": "A normality test was used to determine the type of statistical test to apply for time to first engagement with a link and length of the articles.",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis, we verified the statistical differences between WPM and W page for the following parameters: (a) time to first engagement with a link, (b) length of the articles, and (c) the number of page loads per event. For parameters (a) and (b) we used a normality test to determine the type of statistical test to apply.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "46f3edcf-8f03-43f7-b99f-ea74023bf41e",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C132",
+      "claim": "After rejecting the normality hypothesis, Mann-Whitney U-Test was applied for time to first engagement and article length comparisons.",
+      "claim_type": "EXPLICIT",
+      "source": "In both comparisons, after rejecting the normality hypothesis, we applied Mann-Whitney U-Test, a non-parametric test that does not require normality assumptions on the two distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "37baebef-18cb-4742-81f9-93f5b4f06f40",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C133",
+      "claim": "A two-tailed Fisher's exact test was used to compare the two groups over all possible combinations of access method and type of engagement for the number of page loads per event.",
+      "claim_type": "EXPLICIT",
+      "source": "For the third parameter (c), we compared the two groups over all possible combinations of access method and type of engagement with a two-tailed Fisher's exact test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "3b124113-9bbe-4db2-8c52-643c111abad9",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C134",
+      "claim": "Spark/Pandas was used to explore the data.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore and visualize the data, we used respectively Spark/Pandas and the library Seaborn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "15a25138-bbec-41ef-b5ac-dbe51608dd73",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C135",
+      "claim": "The library Seaborn was used to visualize the data.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore and visualize the data, we used respectively Spark/Pandas and the library Seaborn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a methodological detail.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "f20b71e8-00c9-4f7b-8c54-7c8325200aa1",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C136",
+      "claim": "This study was possible through collaboration with the WMF research team beginning in 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "This study was possible through collaboration with the WMF research team beginning in 2018, with our publishing of a research proposal to Wikimedia's Meta-Wiki (Maggio et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as background information with citation to Maggio et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "c8dbb0e8-4e78-4521-a1b8-4a887e618fd5",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C137",
+      "claim": "Members of the Wikipedia community, including members of WPM, were invited to provide feedback and pose questions.",
+      "claim_type": "EXPLICIT",
+      "source": "Members of the Wikipedia community, including members of WPM, were invited to provide feedback and pose questions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of the stakeholder engagement process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "a755be8f-77b5-415a-93fb-8769470d5825",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C138",
+      "claim": "The researchers held teleconferences and in-person meetings with the WMF research team over several months.",
+      "claim_type": "EXPLICIT",
+      "source": "Over several months, we held teleconferences and in-person meetings with the WMF research team to understand Wikimedia's infrastructure, parameters of data use (e.g., best practices for accessing the data securely; duration of data access), and the expectations of the Wikipedia community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of the stakeholder engagement process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "02087db4-624f-4ed3-ac65-bf7158ece39d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C139",
+      "claim": "Prior to data collection, a WMF research team member posted to Wikipedia's Village Pump an announcement of the data collection.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to data collection, a WMF research team member posted to Wikipedia's Village Pump, a set of Wikipedia pages dedicated to discussing technical issues and policies, an announcement of the data collection (Redi, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of the stakeholder engagement process with citation to Redi, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "3d4cc90b-49c5-4d73-8051-fed262be0f3e",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "claim_id": "C140",
+      "claim": "The announcement invited the Wikipedia community to post public comments and provided contact information for expressing concerns about the research.",
+      "claim_type": "EXPLICIT",
+      "source": "The announcement invited the Wikipedia community to post public comments and provided contact information for expressing concerns about the research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as part of the stakeholder engagement process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2b8b31d6-3597-48dc-b84d-e19d2da83683",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "WikiProject Medicine (WPM) pages are significantly longer and have greater external link density than other Wikipedia (W) pages. WPM pages average 13,084.9 characters (70.1% longer than W pages at 7,676.4 characters) with external links appearing every 450.3 characters compared to every 657.3 characters in W pages. These differences are statistically significant (Mann-Whitney U test, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39-C44, C118-C119 are well-supported by descriptive statistics presented in Tables 2 and 6, and Figure 1. The statistical significance is confirmed by appropriate non-parametric testing (C42, C132). The data collection methodology (C27, C32-C35) is clearly described and the sample sizes are substantial (34,324 WPM pages vs 5,839,083 W pages).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "53be2ee6-5b2e-4ca4-bdcb-a010e1f7bbb4",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "WPM pages receive significantly more pageviews than other Wikipedia pages. WPM pages received an average of 5,875,470.4 pageviews per day compared to 228,445,128.4 for W pages. While WPM represents only 0.6% of Wikipedia pages, it receives 2.6% of pageviews, indicating WPM pages are viewed approximately 4.4 times more frequently per page than W pages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C51-C55, C120 are supported by pageview data presented in Table 3 and summarized in Table 6. The calculation that WPM pages are viewed 4.4 times more frequently is mathematically correct (2.6%/0.6% \u2248 4.3). However, the authors acknowledge limitations regarding bot exclusion effectiveness (C108), which may affect absolute pageview counts but likely not the relative comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "cdbe0930-0d81-4832-a70e-b06e574ffe36",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The majority of pageviews for both WPM and W occurred on mobile devices, with WPM readers showing higher mobile usage (66.7%) compared to W readers (57.1%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are directly supported by data in Table 3 showing device-specific pageview distributions. The difference is substantial (9.6 percentage points) and the sample sizes are large, making this finding reliable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "344ebf22-2d73-4a4e-86a0-2d51362952eb",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "WPM readers spend significantly more time on pages before engaging with external links compared to W readers. The median time before first engagement was 47.5 seconds for WPM readers versus 32.8 seconds for W readers (44.8% longer), a difference that is statistically significant (Mann-Whitney U test, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62, C121 are supported by time-to-engagement data presented in Table 6. The use of Mann-Whitney U test is appropriate given the non-normal distributions (C131-C132). However, the very large IQR values (147,306 for WPM and 86,424 for W) suggest highly skewed distributions with potential outliers, which the authors do not discuss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "bd4186ef-fcc8-4158-ac11-e06f505982de",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "WPM readers engage more frequently with citation information through hovering and footnote clicks compared to W readers. WPM readers hover over links 68.9% more often per pageview (120.5 vs 203.5 pageviews per hover) and click footnote numbers 49.3% more often per pageview (211.8 vs 316.3 pageviews per footnote click). Overall, WPM readers engage with links 17.5% more frequently (56.6 vs 66.5 pageviews per event).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C63-C64, C72-C73, C83, C122-C124 are supported by event data in Tables 4-5 and summarized in Table 6. Statistical significance is confirmed by Fisher's exact test (C78, C133). However, the authors acknowledge that hover counts include both intentional and unintentional acts (C106), which limits interpretation of absolute hover frequencies but likely does not affect relative comparisons (C107).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "8cf105fc-cceb-414d-89a4-ba352d466a9d",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "WPM readers click external links significantly less frequently than W readers. WPM readers click external links 35.5% less often per pageview (227.6 vs 146.7 pageviews per external click). The difference is especially pronounced on mobile devices, where W readers are almost twice as likely to click external links (488.5 vs 203.4 pageviews per external click).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C65, C74, C84, C125 are supported by data in Tables 4-5 and Table 6, with statistical significance confirmed by Fisher's exact test (C78). The mobile-specific finding is particularly striking and well-documented. The authors suggest this may relate to mobile-friendliness of external links (C75), though this remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "56f2196c-7721-45c1-8e5b-c6670082b4df",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The pattern of high hovering/footnote viewing but low external clicking suggests that WPM readers use external links primarily to verify and validate Wikipedia content rather than to examine the sources themselves. This behavior indicates readers are more engaged in assessing citation quality than in pursuing sources as gateways for further learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C67, C85, C115 represent the authors' interpretation of the behavioral patterns documented in the previous results. This interpretation is reasonable and well-supported by the convergent evidence from multiple engagement metrics. However, the authors appropriately acknowledge that the study does not directly determine reader motivations (C103) and suggest follow-up studies with questionnaires or think-aloud protocols (C104).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "bb3bf87f-5874-43e8-ae28-6b900b7a8d81",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Only 22.1% of research citations from PubMed in WPM pages are labeled as 'freely accessible' and display an open access icon on desktop devices. This represents approximately one-fifth of the research cited in WPM pages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69, C97, C100 are supported by data analysis of external links and illustrated in Figure 2. The finding is clearly stated and the percentage is specific. However, the methodology for determining open access status is not fully detailed (e.g., whether this includes only PubMed Central links or other open access sources).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "b42c13be-b018-45de-8e4a-f99084094d75",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "There was no evidence that links with open access icons were clicked more frequently than other links. This may be because typical research citations include multiple links (DOI, PMID, PMC) providing alternative access routes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71, C101 are stated as findings from the data analysis. The lack of differential clicking on open access links is clearly reported (C70), and the explanation about multiple links per citation (C71) is reasonable. However, the authors do not provide detailed statistical analysis of open access vs. non-open access link clicking rates, making this a somewhat weaker finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "062fba5c-932d-4a83-a2ca-7e1e725f41a8",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The most common external link hostname in WPM pages is 'www.ncbi.nlm.nih.gov' (25.2%), indicating heavy reliance on PubMed database citations. In contrast, the rest of Wikipedia shows more diverse link patterns with 'tools.wmflabs.org' (3.5%), 'www.google.com' (2.9%), and 'books.google.com' (2.0%) as top hostnames.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 are supported by hostname analysis of external links. The findings clearly demonstrate the biomedical literature focus of WPM pages (C45-C46) versus the more general reference patterns in W pages (C49). The percentages are specific and the contrast is striking, though the methodology for hostname extraction is not detailed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "c268feb3-0182-4e86-9f76-93ac93a12fa9",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "W readers favor mobile devices for clicking external links, while WPM readers show lower external link engagement on mobile. The 'up click' function (returning from footnote to text) does not appear on iOS and Android mobile devices tested, as footnotes appear at the bottom of the screen and disappear when touching the text.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66, C76-C77 are supported by data in Table 4 and direct observation illustrated in Figure 2. The mobile interface difference is clearly documented. However, claim C75 (suggesting WPM external links may not be mobile-friendly) is speculative and not directly tested. The authors appropriately frame this as a suggestion rather than a definitive finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "b5754816-f584-44ea-b042-cd07ef82a198",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The observed citation validation behavior may arise from two reader populations: (1) readers new to WPM pages seeking reassurance about scientific basis, or (2) health professionals trained in evidence-based medicine who can assess information quality from bibliographic references. The greater attention to citations likely reflects the educational backgrounds of WPM readers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C87 are explicitly speculative (marked with 'may arise') and represent possible explanations for observed behavior without direct evidence. Claim C88 makes assumptions about evidence-based practitioners' capabilities that are reasonable but not tested in this study. Claim C94 connects behavior to user demographics based on prior literature (C21-C24) but without direct verification of reader characteristics in this dataset. These interpretations are plausible but require empirical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "45b4bf5c-d10b-45ae-995e-599923284778",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Readers can assess citation quality by hovering over or viewing footnotes, which reveal whether sources are reviews (Wikipedia's 'ideal source'), publication details (date, language, journal, open access status), and in some cases, study details (patient populations, interventions, outcomes) or whether sources are standard medical textbooks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C93 are supported by the interface examples shown in Figures 3A and 3B. The information available through hovering is clearly documented. Claim C90 (Wikipedia's recommendation for review articles) is stated as established policy. However, the claim that readers actually use this information for quality assessment (implied by C88) is inferred rather than directly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "2c9adee8-a3a0-47fe-a13d-18205ba7761e",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The lower external click rate in WPM may be explained by paywalls limiting access to ~80% of cited research. Prior studies show readers encountering paywalls are reluctant to explore further. If all research were open access and this was promoted, health professionals might be more likely to click through to sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C96 is explicitly speculative ('one possibility') and C99, C102 are conditional statements about potential future behavior. While C98 is supported by citations to prior work (Moorhead et al., 2015; Maggio et al., 2016), the causal connection between paywall presence and lower clicking in this study is not empirically tested. The current study shows no differential clicking on open access links (C70), which somewhat contradicts this explanation. These claims represent reasonable hypotheses requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Data was collected March 22-April 22, 2019 from Wikimedia's Event Logging system and MediaWiki database, with WMF approval. Data was anonymized by removing IP addresses, browser information, and editor-associated sessions. Only 21 sessions (34 events) involving anonymous editors were excluded. Code is publicly available on GitHub, though data is not publicly available but may be requested from WMF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C35, C126-C128 describe the data collection methodology clearly and transparently. The exclusion of editor sessions (C29, C126-C128) is minimal and well-documented. The data availability policy (C30-C31) is clearly stated. The methodology appears sound, though the authors acknowledge limitations regarding bot exclusion (C108) and interwiki link exclusion (C109).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "d4a8394d-9fcc-4cc7-be7a-3b8231334087",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Statistical analysis used appropriate methods: descriptive statistics in Excel, inferential statistics using Python SciPy library, normality testing followed by Mann-Whitney U test for non-normal distributions (page length, time to engagement), and Fisher's exact test for pageviews per event comparisons. Data exploration used Spark/Pandas and visualization used Seaborn.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C129-C135 describe appropriate statistical methods for the data types and distributions. The use of non-parametric tests after rejecting normality (C131-C132) is correct. Fisher's exact test for categorical comparisons (C133) is appropriate. The tools and software are standard and well-documented. The complete analysis is available in the GitHub repository (C31), supporting reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "02d840f5-3675-4780-9ad3-135024b54373",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Study limitations include: (1) hover counts capture both intentional and unintentional acts, though this likely affects both groups equally; (2) bot exclusion strategies have limited effectiveness; (3) interwiki link exclusion reduced external link counts; (4) findings are limited to English Wikipedia only.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C111 appropriately acknowledge study limitations. The authors reasonably argue that measurement issues (C106-C109) likely affect both groups similarly and thus do not invalidate comparisons. The limitation to English Wikipedia (C110-C111) is clearly stated and appropriate. These limitations are honestly reported and do not fundamentally undermine the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "c3d89910-2d48-43f8-894e-d83df15ff8d3",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The study involved extensive stakeholder engagement with the Wikimedia Foundation research team beginning in 2018, including publishing a research proposal on Meta-Wiki, inviting community feedback, holding teleconferences and meetings, and posting a public announcement on Wikipedia's Village Pump prior to data collection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C136-C140 describe the stakeholder engagement process with appropriate citations (C136, C139). This represents good research practice for studies involving Wikipedia data and community. The transparency and community involvement strengthen the study's credibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background context establishes that WikiProject Medicine maintains health/medicine articles on Wikipedia that are widely used by health professionals and students, meet high quality standards, include hyperlinked references serving as authority sources and learning gateways, and that Wikipedia is a leading health information source. A previous study tracked DOI referrals but could not determine WPM origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C26 provide background context supported by appropriate citations to prior literature. These establish the rationale and context for the current study. Claim C26 identifies the gap that motivated this research. All background claims are appropriately cited and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "a6fbbbc4-34f8-4e95-bae9-2876bb8ad398",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Summary findings confirm that WPM pages are longer, have greater link density, and are viewed more often than other Wikipedia pages. These differences reflect page quality and reader trust. WPM readers engage more with links and spend longer on pages before engaging, supporting the quality assessment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79, C82, C112 summarize the main empirical findings that are well-supported by the data. Claims C80-C81, C113-C114 represent interpretations connecting the empirical findings to quality and trust, which are reasonable inferences but go beyond what the data directly demonstrate. The interpretation that popularity indicates trust (C80-C81) is plausible but not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    },
+    {
+      "id": "f0c766a5-0320-424f-ad3a-5316f151380e",
+      "content_id": "72df75f9-61ed-4e95-bbd7-945d66140aa9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Future research recommendations include: investigating internal link educational value, using questionnaires or think-aloud protocols to understand hovering vs. clicking behavior, conducting design experiments with open access labeling and mobile interfaces, and studying how citations affect learning and whether learning depth can be increased for health professionals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95, C103-C105, C116-C117 appropriately suggest future research directions based on study limitations and findings. These recommendations are reasonable and would address gaps in understanding reader behavior and motivations. They represent appropriate scientific practice in identifying next steps.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:41:02.201695Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8dd08225-a951-4bdb-a8c6-417dc2720f38",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "1dbdb0d4-b17b-453f-b832-c191fe7705d7",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "1eff7bbe-25e2-4d16-b4ca-7e669599f9dc",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "4177c6a3-ba21-496b-8711-cd19c8dba5c8",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "ddf7a8a1-31ac-4ade-9f09-41b35bd9eb00",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "cf0a3534-3b47-4bf9-b370-015bc7cdc2eb",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "781a2ed5-dbf4-4a68-95b2-ed6428327440",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "5a8879cb-0404-45df-becf-a7974e736847",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "07d5be48-7101-4945-ac02-84fc03ec205a",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "0390f3a5-ab9e-4105-8942-b31abf3a016d",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "1bec1c6b-2bc6-476d-ad45-59cb18457bc3",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "1ad18de4-1d13-4dcc-8c75-e79152029895",
+      "result_id": "2b8b31d6-3597-48dc-b84d-e19d2da83683"
+    },
+    {
+      "claim_id": "bf3322c3-1ec1-401f-99ae-bfe5d144225d",
+      "result_id": "53be2ee6-5b2e-4ca4-bdcb-a010e1f7bbb4"
+    },
+    {
+      "claim_id": "02ea304c-054e-4b15-bc27-c725310277a0",
+      "result_id": "53be2ee6-5b2e-4ca4-bdcb-a010e1f7bbb4"
+    },
+    {
+      "claim_id": "c5e7b59c-e885-4077-aae4-ae78ff3966bc",
+      "result_id": "53be2ee6-5b2e-4ca4-bdcb-a010e1f7bbb4"
+    },
+    {
+      "claim_id": "24cc15fb-9f96-4a6a-ada3-389b294974ad",
+      "result_id": "53be2ee6-5b2e-4ca4-bdcb-a010e1f7bbb4"
+    },
+    {
+      "claim_id": "d71fbf03-eb3b-493f-93e0-2fdca412cbfd",
+      "result_id": "53be2ee6-5b2e-4ca4-bdcb-a010e1f7bbb4"
+    },
+    {
+      "claim_id": "8caafef1-8a42-4338-ad89-59dabfa503a2",
+      "result_id": "53be2ee6-5b2e-4ca4-bdcb-a010e1f7bbb4"
+    },
+    {
+      "claim_id": "0c28dc5a-fc8a-46ec-90e1-3249503b1529",
+      "result_id": "53be2ee6-5b2e-4ca4-bdcb-a010e1f7bbb4"
+    },
+    {
+      "claim_id": "18c896c7-b84a-4d52-a4b4-c485959fe86d",
+      "result_id": "cdbe0930-0d81-4832-a70e-b06e574ffe36"
+    },
+    {
+      "claim_id": "3443d98c-af69-4892-9b63-8b8f1d29d16c",
+      "result_id": "cdbe0930-0d81-4832-a70e-b06e574ffe36"
+    },
+    {
+      "claim_id": "23ae7a6d-ab0f-4764-b247-8fe11ff3213a",
+      "result_id": "344ebf22-2d73-4a4e-86a0-2d51362952eb"
+    },
+    {
+      "claim_id": "30d7f26e-9486-41d8-9a29-6c0dccb732b9",
+      "result_id": "344ebf22-2d73-4a4e-86a0-2d51362952eb"
+    },
+    {
+      "claim_id": "dc46ba19-a52d-4d9d-98a0-1130849dbc61",
+      "result_id": "344ebf22-2d73-4a4e-86a0-2d51362952eb"
+    },
+    {
+      "claim_id": "0a857b00-a5e4-4dd1-bc1e-fe96b49eb9b3",
+      "result_id": "344ebf22-2d73-4a4e-86a0-2d51362952eb"
+    },
+    {
+      "claim_id": "60baadbe-bfa5-4017-8052-cd28377f831d",
+      "result_id": "344ebf22-2d73-4a4e-86a0-2d51362952eb"
+    },
+    {
+      "claim_id": "4b7b15c2-0d61-4bbb-82ca-2c4b0ae20334",
+      "result_id": "344ebf22-2d73-4a4e-86a0-2d51362952eb"
+    },
+    {
+      "claim_id": "49451c7c-1887-4b8f-80b5-614e4ee72991",
+      "result_id": "bd4186ef-fcc8-4158-ac11-e06f505982de"
+    },
+    {
+      "claim_id": "29661feb-a09b-449e-bda1-33c0e4a97b1c",
+      "result_id": "bd4186ef-fcc8-4158-ac11-e06f505982de"
+    },
+    {
+      "claim_id": "625b1e7d-de2f-445e-8e26-6908c319a43c",
+      "result_id": "bd4186ef-fcc8-4158-ac11-e06f505982de"
+    },
+    {
+      "claim_id": "bbce124d-fe55-44d0-b040-2a29be3615ee",
+      "result_id": "bd4186ef-fcc8-4158-ac11-e06f505982de"
+    },
+    {
+      "claim_id": "bd2dfae7-cfc3-466d-85f1-733e4b871509",
+      "result_id": "bd4186ef-fcc8-4158-ac11-e06f505982de"
+    },
+    {
+      "claim_id": "800b2186-3a7a-4566-b06e-6a002bb442f8",
+      "result_id": "bd4186ef-fcc8-4158-ac11-e06f505982de"
+    },
+    {
+      "claim_id": "cd9a0dcc-73e8-43d5-8ab7-ed900424600d",
+      "result_id": "bd4186ef-fcc8-4158-ac11-e06f505982de"
+    },
+    {
+      "claim_id": "2232d33e-8895-49d1-82e2-f592895066e0",
+      "result_id": "bd4186ef-fcc8-4158-ac11-e06f505982de"
+    },
+    {
+      "claim_id": "e50e35be-9734-4233-a241-4ffc1f83e751",
+      "result_id": "bd4186ef-fcc8-4158-ac11-e06f505982de"
+    },
+    {
+      "claim_id": "e1c96afe-43d0-4208-b2bd-eec8a84053a4",
+      "result_id": "bd4186ef-fcc8-4158-ac11-e06f505982de"
+    },
+    {
+      "claim_id": "2e37e057-5094-4992-b43d-223f91aff46a",
+      "result_id": "8cf105fc-cceb-414d-89a4-ba352d466a9d"
+    },
+    {
+      "claim_id": "09cf1327-a586-4249-9f68-1374d8599b34",
+      "result_id": "8cf105fc-cceb-414d-89a4-ba352d466a9d"
+    },
+    {
+      "claim_id": "fdc08cc6-2e5c-49a0-bb73-6a5716012b7e",
+      "result_id": "8cf105fc-cceb-414d-89a4-ba352d466a9d"
+    },
+    {
+      "claim_id": "06b23a4f-ea54-4556-bd95-43c6a48f36d5",
+      "result_id": "8cf105fc-cceb-414d-89a4-ba352d466a9d"
+    },
+    {
+      "claim_id": "40d6ea7f-4dc0-4147-97aa-fa25fd251159",
+      "result_id": "8cf105fc-cceb-414d-89a4-ba352d466a9d"
+    },
+    {
+      "claim_id": "f19736bd-07d4-48df-a4d3-d4dcf23d68d8",
+      "result_id": "56f2196c-7721-45c1-8e5b-c6670082b4df"
+    },
+    {
+      "claim_id": "7b74b2a5-3ef6-43ae-b746-bf04cab98e16",
+      "result_id": "56f2196c-7721-45c1-8e5b-c6670082b4df"
+    },
+    {
+      "claim_id": "a5a465c5-fcc1-4613-9207-1a5c6cf53efd",
+      "result_id": "56f2196c-7721-45c1-8e5b-c6670082b4df"
+    },
+    {
+      "claim_id": "1924a6e7-9da1-4e81-b6b4-386cf4795126",
+      "result_id": "56f2196c-7721-45c1-8e5b-c6670082b4df"
+    },
+    {
+      "claim_id": "1a90b164-d33f-42eb-a977-7c5aaf236d56",
+      "result_id": "bb3bf87f-5874-43e8-ae28-6b900b7a8d81"
+    },
+    {
+      "claim_id": "659455ae-8686-4cf5-bded-7934883afe16",
+      "result_id": "bb3bf87f-5874-43e8-ae28-6b900b7a8d81"
+    },
+    {
+      "claim_id": "6808bfc0-df41-466e-9b24-b4a22e0aa4d5",
+      "result_id": "bb3bf87f-5874-43e8-ae28-6b900b7a8d81"
+    },
+    {
+      "claim_id": "e87a2575-a698-440a-b8a8-0f066b19cfeb",
+      "result_id": "bb3bf87f-5874-43e8-ae28-6b900b7a8d81"
+    },
+    {
+      "claim_id": "419e22ee-bda0-4145-ad1f-4417ec3a55ef",
+      "result_id": "b42c13be-b018-45de-8e4a-f99084094d75"
+    },
+    {
+      "claim_id": "505de68f-aca8-44fe-98e5-41a9e23c7bc6",
+      "result_id": "b42c13be-b018-45de-8e4a-f99084094d75"
+    },
+    {
+      "claim_id": "6228a2f9-0dcc-4487-9710-3e5f2ac0c09c",
+      "result_id": "b42c13be-b018-45de-8e4a-f99084094d75"
+    },
+    {
+      "claim_id": "dbcf294c-031a-44bb-b331-36aa51c47872",
+      "result_id": "062fba5c-932d-4a83-a2ca-7e1e725f41a8"
+    },
+    {
+      "claim_id": "3cc425b1-ceac-4ba2-87a3-bb52bcdd9b70",
+      "result_id": "062fba5c-932d-4a83-a2ca-7e1e725f41a8"
+    },
+    {
+      "claim_id": "b9a7cefc-f926-4cba-b7d8-b7ca5c8009d3",
+      "result_id": "062fba5c-932d-4a83-a2ca-7e1e725f41a8"
+    },
+    {
+      "claim_id": "b914b3eb-6f74-45ff-8334-c735fb8b6d50",
+      "result_id": "062fba5c-932d-4a83-a2ca-7e1e725f41a8"
+    },
+    {
+      "claim_id": "48b4f8a7-2b4d-4f5a-bbef-dbfaa3bb9053",
+      "result_id": "062fba5c-932d-4a83-a2ca-7e1e725f41a8"
+    },
+    {
+      "claim_id": "de78cd97-abb7-4161-998b-21b1e6dfb1b1",
+      "result_id": "062fba5c-932d-4a83-a2ca-7e1e725f41a8"
+    },
+    {
+      "claim_id": "fa60ef41-778d-44ae-a195-a12996e58b34",
+      "result_id": "c268feb3-0182-4e86-9f76-93ac93a12fa9"
+    },
+    {
+      "claim_id": "a3797f20-7b55-4dc2-8d54-903e10e34c07",
+      "result_id": "c268feb3-0182-4e86-9f76-93ac93a12fa9"
+    },
+    {
+      "claim_id": "cfbd4e5a-3626-4805-85bf-129cc7eb8dc5",
+      "result_id": "c268feb3-0182-4e86-9f76-93ac93a12fa9"
+    },
+    {
+      "claim_id": "c82f7dea-0bc9-4ce2-a046-ac607d896e68",
+      "result_id": "c268feb3-0182-4e86-9f76-93ac93a12fa9"
+    },
+    {
+      "claim_id": "4fe282b3-6929-4233-ab8c-96f875a7ac2d",
+      "result_id": "b5754816-f584-44ea-b042-cd07ef82a198"
+    },
+    {
+      "claim_id": "966b89f6-4e21-4862-8ef5-f490cff0ff6b",
+      "result_id": "b5754816-f584-44ea-b042-cd07ef82a198"
+    },
+    {
+      "claim_id": "87834283-212a-47da-895e-3c810a581128",
+      "result_id": "b5754816-f584-44ea-b042-cd07ef82a198"
+    },
+    {
+      "claim_id": "a6c05288-1439-410d-be37-2124f77942d8",
+      "result_id": "b5754816-f584-44ea-b042-cd07ef82a198"
+    },
+    {
+      "claim_id": "90bcf092-85dc-404f-9c71-509e80c69c87",
+      "result_id": "45b4bf5c-d10b-45ae-995e-599923284778"
+    },
+    {
+      "claim_id": "81ca5cae-0c40-4213-9ae9-c4e4bb6e841e",
+      "result_id": "45b4bf5c-d10b-45ae-995e-599923284778"
+    },
+    {
+      "claim_id": "99ee575d-c692-41be-9fbd-47ea3fba9ab5",
+      "result_id": "45b4bf5c-d10b-45ae-995e-599923284778"
+    },
+    {
+      "claim_id": "1876fbb4-4e68-4dbd-a268-d41964a996f4",
+      "result_id": "45b4bf5c-d10b-45ae-995e-599923284778"
+    },
+    {
+      "claim_id": "5ae2553a-be40-42db-8403-bae74d55da57",
+      "result_id": "45b4bf5c-d10b-45ae-995e-599923284778"
+    },
+    {
+      "claim_id": "154f6205-45f4-48d9-9873-481a02a7aaf0",
+      "result_id": "2c9adee8-a3a0-47fe-a13d-18205ba7761e"
+    },
+    {
+      "claim_id": "e6ee2f6f-b761-4b35-8068-db69e265d19a",
+      "result_id": "2c9adee8-a3a0-47fe-a13d-18205ba7761e"
+    },
+    {
+      "claim_id": "f9e180f9-6570-433c-b0c3-c646249982d2",
+      "result_id": "2c9adee8-a3a0-47fe-a13d-18205ba7761e"
+    },
+    {
+      "claim_id": "b822e734-cfdf-47e8-b087-567bea547e5d",
+      "result_id": "2c9adee8-a3a0-47fe-a13d-18205ba7761e"
+    },
+    {
+      "claim_id": "63d95a9d-9080-4dd1-8649-0f71bcd9fd6e",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "70f55b91-85d9-47bb-90ae-571bcea78b50",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "e9145d4a-7ec7-4c3c-be2f-821ccade043e",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "139f1852-3ea3-4572-b480-f33eb4823f97",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "c531c6c0-8dec-4598-b940-a61f0c36ca7d",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "b8113ab4-5359-4670-ab35-03b1f837604e",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "3b35efb0-3c14-4027-8f7e-bd6cae0b2006",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "ea345117-e9e5-4108-9e6c-24570dd12e27",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "24dabeb9-5bec-43df-8bc2-5dc378b42dec",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "28e1c111-3117-4c86-a326-0f52381c9a17",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "b613ee00-6a0a-4339-85b3-fd38c18023e8",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "84337cff-ff21-4aef-a7ca-743c37631266",
+      "result_id": "7daf888f-c1d9-4b95-93e4-77a7c1b6ab70"
+    },
+    {
+      "claim_id": "91ea2e3e-1c55-431b-9af1-93293e7ab5a0",
+      "result_id": "d4a8394d-9fcc-4cc7-be7a-3b8231334087"
+    },
+    {
+      "claim_id": "4da25764-f238-4e80-b297-2cbae7628d1a",
+      "result_id": "d4a8394d-9fcc-4cc7-be7a-3b8231334087"
+    },
+    {
+      "claim_id": "0eb7e6fe-37b2-4270-877c-3abe040ec6e6",
+      "result_id": "d4a8394d-9fcc-4cc7-be7a-3b8231334087"
+    },
+    {
+      "claim_id": "46f3edcf-8f03-43f7-b99f-ea74023bf41e",
+      "result_id": "d4a8394d-9fcc-4cc7-be7a-3b8231334087"
+    },
+    {
+      "claim_id": "37baebef-18cb-4742-81f9-93f5b4f06f40",
+      "result_id": "d4a8394d-9fcc-4cc7-be7a-3b8231334087"
+    },
+    {
+      "claim_id": "3b124113-9bbe-4db2-8c52-643c111abad9",
+      "result_id": "d4a8394d-9fcc-4cc7-be7a-3b8231334087"
+    },
+    {
+      "claim_id": "15a25138-bbec-41ef-b5ac-dbe51608dd73",
+      "result_id": "d4a8394d-9fcc-4cc7-be7a-3b8231334087"
+    },
+    {
+      "claim_id": "09c81ce9-6073-4a55-b322-b718d058f5a0",
+      "result_id": "02d840f5-3675-4780-9ad3-135024b54373"
+    },
+    {
+      "claim_id": "62c3cc17-b55a-4a5f-a377-e9cdf9edde68",
+      "result_id": "02d840f5-3675-4780-9ad3-135024b54373"
+    },
+    {
+      "claim_id": "cf75e563-aca2-482f-9a49-1d20106d1907",
+      "result_id": "02d840f5-3675-4780-9ad3-135024b54373"
+    },
+    {
+      "claim_id": "c51dd224-8cba-4084-b644-c5de7389e770",
+      "result_id": "02d840f5-3675-4780-9ad3-135024b54373"
+    },
+    {
+      "claim_id": "d533ad86-9574-46b2-9d4f-1edcdfcff13b",
+      "result_id": "02d840f5-3675-4780-9ad3-135024b54373"
+    },
+    {
+      "claim_id": "e663f0dc-5c8e-4359-b8e5-cc11ebdd1b22",
+      "result_id": "02d840f5-3675-4780-9ad3-135024b54373"
+    },
+    {
+      "claim_id": "f20b71e8-00c9-4f7b-8c54-7c8325200aa1",
+      "result_id": "c3d89910-2d48-43f8-894e-d83df15ff8d3"
+    },
+    {
+      "claim_id": "c8dbb0e8-4e78-4521-a1b8-4a887e618fd5",
+      "result_id": "c3d89910-2d48-43f8-894e-d83df15ff8d3"
+    },
+    {
+      "claim_id": "a755be8f-77b5-415a-93fb-8769470d5825",
+      "result_id": "c3d89910-2d48-43f8-894e-d83df15ff8d3"
+    },
+    {
+      "claim_id": "02087db4-624f-4ed3-ac65-bf7158ece39d",
+      "result_id": "c3d89910-2d48-43f8-894e-d83df15ff8d3"
+    },
+    {
+      "claim_id": "3d4cc90b-49c5-4d73-8051-fed262be0f3e",
+      "result_id": "c3d89910-2d48-43f8-894e-d83df15ff8d3"
+    },
+    {
+      "claim_id": "06009a46-2dbd-40f3-8966-8d08786decf2",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "2d83f54c-6f22-410c-8d49-51899987de0d",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "bb5d32d2-25ab-430f-ae44-2ec67ee74226",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "db08cdb1-c023-4962-83b6-e97745868a62",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "33b2489b-a812-49b2-bb1f-7849ae53ce6c",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "e0ef36f9-44ca-4890-8499-ab378fdd0888",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "8c026b26-cf1e-4d69-8e4f-bf7e70b29b68",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "c362bf2c-116a-4df7-8057-5baebd53c7f5",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "d744fd03-a657-45ae-b550-40fe6815d06c",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "f7d83f53-9826-44f3-b8c1-7ffcbd3f6541",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "aa2761ab-ed6c-4baa-85a4-bfed1e257d27",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "70e7d049-d5dc-452f-9501-bde95f69382f",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "be315e9f-154c-4fd7-96c3-4f21f7e120ad",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "06f0ee06-bd49-4ec5-ada8-fa888e9acefb",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "41a6ba75-d4e4-472b-91df-04b0b0b48b8b",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "8214c937-f8cf-450d-a725-9e8932916d20",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "f142004e-6807-4862-ab23-1f1e4a9476c8",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "8f70dfa5-0256-4573-9543-390a355cf77d",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "653b102b-305b-4f6a-be6d-78456c9531d2",
+      "result_id": "78a91b7f-28d0-4790-9c44-ddf2db0bd879"
+    },
+    {
+      "claim_id": "4211c747-ca37-4b26-bf8b-b7f2a5ab3cc4",
+      "result_id": "a6fbbbc4-34f8-4e95-bae9-2876bb8ad398"
+    },
+    {
+      "claim_id": "cfbb90e8-cc59-4266-ab54-006ce4b5122b",
+      "result_id": "a6fbbbc4-34f8-4e95-bae9-2876bb8ad398"
+    },
+    {
+      "claim_id": "e4e13067-3216-4796-8c74-8ae66d7ab210",
+      "result_id": "a6fbbbc4-34f8-4e95-bae9-2876bb8ad398"
+    },
+    {
+      "claim_id": "07cdef1f-3026-406f-a48c-a505c6abfecc",
+      "result_id": "a6fbbbc4-34f8-4e95-bae9-2876bb8ad398"
+    },
+    {
+      "claim_id": "17878023-817d-4d93-80cb-fffddab3ed0e",
+      "result_id": "a6fbbbc4-34f8-4e95-bae9-2876bb8ad398"
+    },
+    {
+      "claim_id": "5cd91563-8cb7-4739-abdf-2769834f23a9",
+      "result_id": "a6fbbbc4-34f8-4e95-bae9-2876bb8ad398"
+    },
+    {
+      "claim_id": "24f318b6-49f9-4dc4-9dac-0b0ea8ff5c85",
+      "result_id": "a6fbbbc4-34f8-4e95-bae9-2876bb8ad398"
+    },
+    {
+      "claim_id": "9f85ed83-f10d-454a-87cb-154bd3dc70c6",
+      "result_id": "f0c766a5-0320-424f-ad3a-5316f151380e"
+    },
+    {
+      "claim_id": "d11832e2-cdc6-4527-a08b-7ebc879949ff",
+      "result_id": "f0c766a5-0320-424f-ad3a-5316f151380e"
+    },
+    {
+      "claim_id": "2b9f79a6-1838-48e0-a765-cb5fa9694b2f",
+      "result_id": "f0c766a5-0320-424f-ad3a-5316f151380e"
+    },
+    {
+      "claim_id": "bf9c6160-5d9f-4ee6-9fcc-c6825b080b41",
+      "result_id": "f0c766a5-0320-424f-ad3a-5316f151380e"
+    },
+    {
+      "claim_id": "eb857b1f-22a0-4f94-9a0e-ab9e2ad1a864",
+      "result_id": "f0c766a5-0320-424f-ad3a-5316f151380e"
+    },
+    {
+      "claim_id": "8e75657e-de92-4dfa-84bb-20d141a31645",
+      "result_id": "f0c766a5-0320-424f-ad3a-5316f151380e"
+    }
+  ],
+  "comparisons": []
+}

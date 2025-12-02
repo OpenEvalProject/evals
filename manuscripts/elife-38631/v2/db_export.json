@@ -1,0 +1,1464 @@
+{
+  "submission": {
+    "id": "05761eef-cbe3-42e3-b10e-346f4f5cbe69",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:31:41.809224Z",
+    "updated_at": "2025-12-02T07:31:41.809224Z"
+  },
+  "content": [
+    {
+      "id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "submission_id": "05761eef-cbe3-42e3-b10e-346f4f5cbe69",
+      "content_type": "manuscript",
+      "content_text": "# A repressor-decay timer for robust temporal patterning in embryonic Drosophila neuroblast lineages\n\n## Authors\n\n- Inna Averbukh<sup>1</sup> ([ORCID: 0000-0003-1863-205X](https://orcid.org/0000-0003-1863-205X))\n- Sen-Lin Lai<sup>2</sup> ([ORCID: 0000-0002-7531-283X](https://orcid.org/0000-0002-7531-283X))\n- Chris Q Doe<sup>2</sup> ([ORCID: 0000-0001-5980-8029](https://orcid.org/0000-0001-5980-8029)) \u2020\n- Naama Barkai<sup>1</sup> ([ORCID: 0000-0002-2444-6061](https://orcid.org/0000-0002-2444-6061)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics Weizmann institute of science Rehovot Israel\n2. Institute of Neuroscience, Institute of Molecular Biology Howard Hughes Medical Institute, University of Oregon Eugene United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBiological timers synchronize patterning processes during embryonic development. In the Drosophila embryo, neural progenitors (neuroblasts; NBs) produce a sequence of unique neurons whose identities depend on the sequential expression of temporal transcription factors (TTFs). The stereotypy and precision of NB lineages indicate reproducible TTF timer progression. We combine theory and experiments to define the timer mechanism. The TTF timer is commonly described as a relay of activators, but its regulatory circuit is also consistent with a repressor-decay timer, where TTF expression begins when its repressor decays. Theory shows that repressor-decay timers are more robust to parameter variations than activator-relay timers. This motivated us to experimentally compare the relative importance of the relay and decay interactions in vivo. Comparing WT and mutant NBs at high temporal resolution, we show that the TTF sequence progresses primarily by repressor-decay. We suggest that need for robust performance shapes the evolutionary-selected designs of biological circuits.\n\n## Introduction\n\nMulticellular organisms shape their body plans during embryonic development through parallel processes that occur at different spatial positions and at different times. Spatial coordination of patterning depends on direct cell-cell communication and on long-range signaling by secreted morphogens. By contrast, temporal coordination is often achieved through cell-autonomous processes that measure time-delays (Pourqui\u00e9, 1998). Molecular circuits implementing biological timers have been described (Murray, 2004; Reppert and Weaver, 2002; Simon et al., 2001), but the basis for their robust functioning is not well understood.\n\nBiological timers play a key role in central nervous system (CNS) development of invertebrates and mammals, where a small pool of progenitors generates a vast amount of neuronal diversity (Grosskortenhaus et al., 2005; Isshiki et al., 2001; Kambadur et al., 1998; Kohwi and Doe, 2013; Kohwi et al., 2011; Li et al., 2013). In Drosophila, NBs delaminate from a ventral neuroectoderm at embryonic stages 9\u201311 to form an orthogonal two-dimensional grid with 30 NBs per hemi-segment. After formation, each NB undergoes asymmetric cell divisions every\u00a0~45 min to produce a series of ganglion mother cells (GMCs), each of which divides into two post-mitotic neurons. The identity of each neuron is determined by the spatial position of the parental NB and by the TTF it inherits from the NB at the time of birth (Doe, 2017; Kohwi and Doe, 2013; Pearson and Doe, 2004). Temporal information is therefore conveyed by the NB cell-intrinsic timer, which drives the sequential expression of four TTFs: Hunchback (Hb), Kr\u00fcppel (Kr), Pdm (Flybase: Nubbin and Pdm2), and Castor (Cas) (Brody and Odenwald, 2000; Isshiki et al., 2001; Kambadur et al., 1998).\n\nThe molecular basis of the NB TTF timer has been characterized: Hb expression is initiated by an external signal, but subsequent dynamics depends on cross-regulation between the TTFs themselves (Cleary and Doe, 2006; Grosskortenhaus et al., 2006; Isshiki et al., 2001; Tran et al., 2010). In addition, the orphan nuclear hormone receptor, Seven-up (Svp), is required to switch off Hb expression, but not for specifying early neuronal fates (Kanai et al., 2005; Kohwi et al., 2011; Mettler et al., 2006; Tran et al., 2010).\n\nThe TTF expression sequence is largely independent of the cell cycle: some NBs undergo just one cell division during the Hb expression window, whereas others undergo two or three divisions (Baumgardt et al., 2009; Doe, 2017; Isshiki et al., 2001) indicating that cell division does not direct this temporal transition within the TTF cascade. Consistent with that, mutations that arrest the cell cycle still allow normal TTF expression from Kr onward. Also, NBs can undergo the entire expression sequence when cultured in isolation in vitro indicating TTF timer progression is independent of overall embryo development (Brody and Odenwald, 2002; Grosskortenhaus et al., 2005; Kambadur et al., 1998). While progression along the transcription cascade is largely independent of the cell cycle, these two processes must remain synchronized in order to ensure reproducible NB lineage. How do embryos limit temporal variations that could desynchronize these two largely independent processes?\n\nWe hypothesize that reliable progression of the TTF cascade derives from the cell-intrinsic ability of the TTF timer to buffer variation (noise) in its molecular parameters. We therefore used mathematical modeling to analyze theoretically the robustness of the timer mechanism. The TTF-timer is commonly described as a relay of activators (Doe, 2017; Rossi et al., 2017). Its regulatory circuit, however, contains also regulations compatible with a repressor-decay timer, in which TTF starts expressing when its repressor decays to a sufficiently low level. The relative contributions of the activator-relay and the repressor-decay interactions to TTF progression depend on unknown molecular parameters\n\nOur computational analysis revealed that the two mechanisms show different sensitivity to variations in their molecular parameters, with the decay-timer being significantly more robust than the relay timer. This finding motivated us to examine experimentally the relative contribution of the relay and decay interactions to the in-vivo progression of TTF expression. This was done by measuring the TTF dynamics in wild-type and mutant embryos at high temporal resolution. Our results show that removing a relay-controlling factor has limited consequences on the time of induction of the controlled TTF compared to the removal of a decay-controlling factor, indicating that the decay-based interactions dominate the progression of the in\u00a0vivo TTF timer. We conclude that NB temporal patterning in Drosophila is driven by a timer whose progression is dominated by repressor decay, while activator relay plays a minor role. We propose that the increased robustness of this decay timer, as suggested by our computational analysis, is critical for ensuring the synchrony of this timer with the parallel, yet independent, progression of the cell division cycles.\n\n## Results\n\n### The TTF regulatory circuit combines activator-relay and repressor-decay interactions\n\nThe sequential expression of TTFs within the dividing NB is commonly described as a relay of activators, in which each activator accumulates until reaching a threshold needed for inducing the next activator in the cascade (Doe, 2017; Rossi et al., 2017). Examining the TTF regulatory circuit, however, we noted that in addition to these activator-relay interactions, the regulatory circuit includes two additional interaction types: backward interactions, whereby a TTF inhibits the expression of a TTF upstream in the cascade, and repressor-decay interactions, whereby an upstream regulator represses the expression of a downstream TTF (Figure 1A\u2013B). Therefore, at least in principle, the TTF timer can progress not only through a relay of activators, but also through decay of repressors, where target genes are induced once a repressor decays below some threshold level.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig1-v2.jpg)\n\n**Figure 1.:** (A) The embryonic neuroblast TTF timer: In the Drosophila embryo, NBs express four TFs in a temporal sequence, as shown.\u00a0We term this sequence the TTF timer. NBs divide asymmetrically to generate GMCs, whose further divisions produce post-mitotic neurons. The identity of both the GMCs and the post-mitotic neurons depends on the TTF expressed at the time of NB division, as shown in panel C, top left. (B) The TTF regulatory circuit: experimentally defined cross-regulation between TTFs include interactions that propagate the cascade through activator relay\u00a0(blue)\u00a0or repressors decay (red), and backward interactions (black). (C) Summary of TTF expression in NB7-1 of wild type, mutant, and misexpression genotypes. TTFs are color-coded as in (A). Developmental stages indicated at the bottom and genotypes on the left. Data from (Grosskortenhaus et al., 2006; Isshiki et al., 2001; Tran et al., 2010). (D) Summary of neuronal identity in the NB7-1 lineage of wild type, mutant, and misexpression genotypes. Data from (Grosskortenhaus et al., 2006; Isshiki et al., 2001). (E) TTF timer model reproduces all reported phenotypes: a model was formulated that includes all regulatory interactions shown in Figure 1B. Shown are the simulated dynamics of TTFs expression for a set of experimentally consistent parameters. Progeny identity was defined by the TTFs whose expression exceeded a constant threshold (dashed line) at the time of division (see Supplementary file 2 for mapping of expressed TTFs to neuronal fates). (F) Mutant (top) and constitutive expression (bottom) models using the same parameter set as in 1E (see Materials\u00a0and\u00a0methods for details). (G\u2013H) Consistent circuits are distributed through the Decay-Relay timer space: over 106 circuits differing by parameters choice were considered. A subset of\u00a0~105 circuits reproduced all experimentally defined phenotypes and are referred to as consistent circuits, or consistent parameter sets. Each consistent circuit was positioned on the Decay-Relay plot (H) based on the changes in Pdm and Cas induction (ind) times following removal of the respective activator-relay or repressor-decay interactions (grey bars, top of G). The density of consistent circuits in the Decay-Relay plot is color-coded. Note the larger density of consistent circuits in the regime of decay-timers. See Materials\u00a0and\u00a0methods for details.\n\nThe activator-relay and repressor-decay regulations could both contribute to the progression of the TTF timer. Alternatively, one timer type could dominate. The relative contribution of the different regulations to the initiation of TTFs expression depends on the in\u00a0vivo parameters, whose values are not known and are difficult to measure. We therefore examined whether the in\u00a0vivo parameters can be distinguished computationally.\n\nWe formulated a model of the TTF timer that includes all experimentally described interactions, capturing their strengths by 17 independent parameters. Main parameters in this model include TTF degradation rates, TTF production rates, and the expression thresholds defining the minimal TTF expression levels required for activating or repressing the controlled TTF and to confer neuronal identities (Supplementary file 1). The model is summarized by four ordinary differential equations (ODEs), whose solution simulates the temporal dynamics of the four TTFs. Note that model dynamics depends on the choice of the kinetics parameters (Supplementary file 1). Further, varying parameters qualitatively changes the regulatory network by varying the relative influence of the different interactions on TTF temporal dynamics. This allows us to capture a wide range of networks, ranging from decay dominant ones, through any mixed models, to relay dominant networks all the while taking into account all experimentally observed TTFs and cross-regulations (Supplementary file 1).\n\nTo define parameters consistent with the in\u00a0vivo dynamics, we compiled phenotypes of mutant embryos, focusing on the best characterized NB7-1 lineage (Figure 1C\u2013D). Available data describes which TTF(s) are expressed by the dividing NB, within the GMCs, and by the post-mitotic neurons (Grosskortenhaus et al., 2006; Isshiki et al., 2001). This data is of low temporal resolution and cannot be used to define the precise durations at which each TTF is expressed. Still, this data provides the basic constraints with which our model should comply: the temporal sequence at which TTFs are expressed in our simulations should be consistent with the temporal sequence for wild type, mutant, and misexpression embryos as emerges from reported data (Figure 1C\u2013D, Supplementary file 2). We therefore define consistent parameter sets as parameter sets for which the solution of model equations meets the above requirements by exhibiting the correct TTF expression sequence in WT and all mutants.\n\nScreening a wide range of parameters, each defining a different circuit, we detected a large number of parameter sets that were consistent with the reported phenotypes (Materials\u00a0and\u00a0methods, Figure 1E\u2013F). To examine if these consistent sets favor an activator-relay or a repressor-decay timer, we focused on the last two TTFs (Pdm and Cas) for which activating and repressing interactions were described (Figure 1B). We examined how their induction time changes when specifically removing either the activator-relay or the repressor-decay interaction (Figure 1G). These values \u2013 the changes in TTFs induction times when removing either the activator-relay or the repressor-decay interactions \u2013 were used to calculate a decay significance and relay significance score for each parameter set (Materials\u00a0and\u00a0methods). Based on these significance scores for the two respective timers, we positioned each consistent circuit within a\u00a0Decay-Relay timer space (Figure 1H). In this analysis, we removed the repression of Cas by its immediate repressor (Kr), but left the repression by Hb intact, reasoning that Hb had already decayed at the time of Cas expression.\n\nWe observed a higher density of consistent circuits in the region of repressor-decay timers. However, a large number of consistent circuits were equally dependent on both the relay and the decay interactions, and some were driven primarily by relay (Figure 1H). We conclude that the available data is not of sufficient resolution to distinguish whether the in\u00a0vivo parameters progress the TTF timer through an activator-relay or a repressor-decay timer.\n\n### A repressor-decay timer is more robust than an activator-relay timer\n\nTo determine whether an activator-relay or repressor-decay timer best explains the observed, we measured the robustness of consistent circuits, namely their sensitivity to variations (noise) in their biochemical parameters. We expected this sensitivity to differ between different circuits, and perhaps also between the timers whose progression is dominated by the activator relay, or repressor-decay interactions. We previously compared the robustness of a one-step timer encoded by an activator accumulation or a decay of a repressor (Rappaport et al., 2005). This comparison was done by considering circuits that (1) have the same decay rate and (2) require the same time transitioning between two given thresholds, thereby controlling for the effects of changing kinetic constants. As we showed, the repressor-decay timer necessarily shows higher robustness under these conditions (Rappaport et al., 2005). The reason for this differential robustness is easily appreciated: the time at which a protein decays between two thresholds is only moderately (logarithmically) sensitive to the values of these thresholds (Figure 2A\u2013C). In contrast, the time to increase protein levels between two thresholds depends at least linearly, and typically significantly stronger, on thresholds values (Figure 2A\u2013C)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C) Robustness of single-step timers: a single-step timer can be implemented by the accumulation of an activator (A) or by the decay of a repressor (B).\u00a0In the accumulation of an activator scenario (A), activator production is initiated at t\u00a0=\u00a00. Once it accedes the threshold Tr, target genes are induced. In the decay of a repressor scenario (B), production of a repressor is stopped at t\u00a0=\u00a00. Once repressor levels have decayed below Tr, target genes would no longer be inhibited. The temporal dynamics of the regulatory proteins are shown in (A\u2013B) for reference parameters (solid line) and following two-fold reduction in regulator production rate (dashed line). Timer output is defined by the time-delay from the onset of the dynamics until the regulator reaches the indicated threshold Tr. The change in this output following two-fold change in production rate is indicated (black double arrow), and is shown in (C) for different threshold values. See also analytical analysis in (Rappaport et al., 2005). (D) Illustration of robustness score calculation. Parameter sets were scored for robustness by measuring timer sensitivity to moderate (20%) variations in production parameters (see Materials\u00a0and\u00a0methods). When testing set robustness, we solved model equations for all combinatorial combinations of adding or subtracting 20% to all the TTFs production rates. For each noise combination, we compared all TTF expression phase durations to those of the original set solution. If a noise combination yielded phase durations which are all within 10% distance of the respective original durations, the noise combination was considered 'close' to the original. A robustness score was then calculated as the percentage of 'close' noise combinations. An example for a specific parameter set: left- production rates color coded by TTF, right \u2013 simulation of Pdm dynamics. Upper: original parameter set, below: two noise combinations:#1 and #N (- sign and lighter shade for reduced production rate, + sign and darker shade for increased production rate). For #1, the perturbed dynamics are 'close' to the original while for #N, a substantial error in phase duration, \u0394$\\Deltat_{N}^{Pdm}$, occurred and dynamics are not 'close'. Formula at the bottom of the panel indicates that the robustness score for the original set is a function of all noise combinations 1,2,\u2026,N and durations of all TTF\u00a0expression phases. (E) Distribution of robust circuits in the Decay-Relay timer space. Consistent circuits were positioned on the Decay-Relay plot based on both Pdm and Cas induction, as is Figure 1H, and their robustness scores (see Materials\u00a0and\u00a0methods), averaged over closely\u00a0positioned circuits, were color-coded. Considering the positioning of all circuits in the Decay-Relay timer space based on Pdm and Cas separately (Figure 2\u2014figure supplement 1) and based on both TTFs combined (Figure 2E), high robustness scores were found in the region of repressor-decay timers.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** All consistent circuits, as described in Figures 1\u20132, were considered. Each consistent circuit was scored by measuring the change in Pdm (A\u2013C) or Cas (D\u2013F) induction times following deletion of decay or relay regulations, as indicated on plots axis labels. These values were used to uniquely position each circuit in the Decay-Relay sensitivity space (see Materials\u00a0and\u00a0methods), per TTF. Parameter sets are color-coded based on their robustness score for the WT circuit (calculated as in Figure 2E), for increasing noise levels from 20% to 40%, as indicated in plot titles.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** All consistent circuits, as described in Figures 1\u20132, were considered. Each consistent circuit was scored by measuring the change in Pdm and Cas induction times following deletion of decay or relay regulations (same as Figures 1H and 2E). These values were used to uniquely position each circuit in the Decay-Relay sensitivity space (see Materials\u00a0and\u00a0methods). Parameter sets are color-coded based on the duration of Pdm (A) and Cas (B) upregulation duration, normalized by the total duration of the simulation. Pdm and Cas upregulation durations are not correlated with location in Decay-Relay space, the consistent parameter sets are therefore comparable in terms of robustness.\n\nWe measured the robustness of each of our consistent circuits identified above by scoring the ability of the circuit to buffer the temporal durations of TTF expression phases against moderate (~20\u201340%) variations in TTF production rates (Figure 2D and E, Figure 2\u2014figure supplement 1) (see Materials\u00a0and\u00a0methods). In our model, introducing fluctuations in TTF production rate captures also fluctuations in thresholds values, as circuit function depends on the ratio of TTF levels to their activation thresholds. Finally, degradation rates were kept constant, as they define the time scale of timer dynamics and equally affect all circuits (Rappaport et al., 2005 and data not shown).\n\nTo rigorously distinguish whether robustness correlates with a specific timer type, we considered again the positioning of all circuits in the Decay-Relay timer space (c.f. Figure 1H). Unlike the simple case of the one-step timer, here we did allow some range of possible dynamics, to account for the low temporal precision of the experimental data. This does not affect our ability to compare the consistent circuits since these differences in dynamics are not correlated with location in Decay-Relay space (Figure 2\u2014figure supplement 2). High robustness scores were found in the region of repressor-decay timers, while activator-relay timers were significantly less robust (Figure 2E, Figure 2\u2014figure supplement 1). We conclude that also in the context of the full TTF cascade model, robustness is improved when progressing through repressor decay rather than activator relay.\n\n### A TTF circuit can be positioned in the Decay-Relay timer space based on TTF-deletion phenotypes\n\nThe difference in the robustness of the activator-relay and the repressor-decay timer designs motivated us to examine which of the respective interactions dominates in defining the in\u00a0vivo timer progression. We therefore searched for experiments that could distinguish properties of the in\u00a0vivo timer.\n\nExperimentally, TTF deletion is an accessible perturbation. As described above, the consequences of such perturbations were previously reported, but at a resolution that was too low to distinguish between the two timer types. Our simulations pointed to one limitation of existing data: for some mutants, the consequence of TTF deletion was defined by measuring the fates of the post-mitotic neurons, and therefore did not provide conclusive data about possible co-expression phases in which two consecutive TTFs are expressed within the NB, but one of them dominates in generating neuronal identity. This significantly limited our ability to precisely deduce the TTF expression timing in either wild-type or mutant embryos, and thereby greatly increased the spectrum of circuits that were scored as consistent with measured phenotypes.\n\nWith this in mind, we examined computationally whether the consequences of TTFs deletions, if analyzed at higher resolution, could distinguish between the repressor-decay and activator-relay timers. First, we examined how Pdm induction time changes following deletion of either Hb (its repressor, allowing Pdm induction only after its levels are sufficiently reduced) or Kr (its activator, allowing Pdm induction only after its levels are sufficiently induced). Specifically, for each of the consistent circuits described in Figures 1H and 2E above, we tested how Pdm induction time changes when simulating the removal of Hb and when simulating the removal of Kr (Figure 3A). These two values uniquely position each consistent circuit (Figure 3B). Once positioned, we color each circuit by its robustness score for the WT circuit (same color as in Figure 2E), which allows us to observe robustness of WT circuits as function of their Pdm induction sensitivity to Hb and Kr deletions (Figure 3B). As can be appreciated, high robustness was found exclusively in circuits for which Pdm induction was dependent only on Hb decay. Analogous analysis of Cas induction time shows a similar, although less pronounced bias (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) TTF deletion phenotypes can distinguish robust circuits: all consistent circuits, as described in Figures 1\u20132 above, were considered.\u00a0Each consistent circuit was scored by measuring the change in Pdm induction times following deletion of Hb (A, left) or deletion of Kr (A, right). These two values define the \u2018Hb deletion\u2019 and \u2018Kr deletion\u2019 sensitivity of Pdm induction respectively, for each parameter set. We then use these two values to define the Hb-Kr deletion sensitivity space, where we uniquely position each consistent circuit (B). Color-coding circuits based on their robustness score for the WT circuit (as in Figure 2E), allows us to observe robustness of WT circuits as function of their Pdm induction sensitivity to Hb and Kr deletions. This analysis shows that robust circuits are only found in a small region in the Kr-Hb sensitivity space, in which Pdm induction time is much more sensitive to Hb than to Kr deletion. (C\u2013F) Sensitivity to TTF deletion (X axis) correlates with the sensitivity to the specific removal of the respective activator-relay or repressor-decay interactions (Y axis): all consistent circuits, as described in Figures 1\u20132 above, were considered. For each consistent circuit, the changes in Pdm or Cas induction times following TTF deletion or removal of regulatory interactions was measured. Correlations between the effects of TTF deletion and removal of the respective regulatory link are shown. Each dot in these correlation figures represent one consistent circuit, color-coded by its robustness score for the WT circuit.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Each consistent circuit was scored by measuring the change in Cas induction time following deletion of Kr or deletion of Pdm. These values were used to uniquely position each circuit in the Kr-Pdm sensitivity space. Color-coding circuits based on their WT robustness score for 30% noise (see Materials\u00a0and\u00a0methods), shows that most\u00a0robust circuits are found\u00a0in the region where Cas induction time is more sensitive to Kr than to Pdm deletion.\n\nDeletion of the TTF which functions as an activator or repressor abolishes the respective relay or decay interactions. However, it may have additional effects that are not directly related to these interactions. We therefore used our simulations to examine whether TTF deletion phenotypes can predict the consequence of specifically abolishing the respective activator-relay or repressor-decay regulation. To this end, we considered again all consistent circuits. For each consistent circuit, we examined how Pdm induction time changes when specifically removing either the activator-relay (Kr-to-Pdm) or the inhibitor-decay (Hb-to-Pdm) interactions. This allowed us to compare, for each consistent circuit, the change in Pdm induction time when an upstream TTF (e.g. Kr) was deleted, or when the respective interaction (e.g. Kr-to-Pdm) was specifically removed (Figure 3C,D). As can be seen, the consequences of these two perturbations were tightly correlated, in particular when comparing the effect of deleting Kr to the removal of Kr-dependent regulation (Figure 3D). In the case of Hb, the correlation was somewhat lower, reflecting the multiple roles of Hb in this circuit. However, for the robust parameter sets, which we predicted to describe the in-vivo circuit, correlation was higher (Figure 3C). A tight correlation was also observed when comparing the change in Cas induction time following the deletion of its activator (Pdm) or the removal of the Pdm-to-Cas activating link only, and when comparing the consequences of deleting the Cas repressor Kr to the specific removal of the Kr-to-Cas repression link (Figure 3E,F). We conclude that following Pdm and Cas expression timing in mutant embryos has the power to inform us not only about the robustness of the in\u00a0vivo timer, but also about the relative contributions of the relay and decay regulations to the TTF progression.\n\n### Timing of Pdm and Cas expression is highly sensitive to deletion of TTF repressors, but less sensitive to deletion of TTF activators\n\nAs described above, our modeling suggests that activator-relay and repressor-decay timers can be distinguished based on the TTF deletion phenotypes, but this would require data on TTF expression levels and timing at a much higher temporal resolution than previously obtained data. To this end, we stained embryos for the TTF of interest, and for the Worniu and Engrailed markers, which allow us to unambiguously identify NB7-1 (Figure 4A). TTF protein intensity levels were quantified using confocal microscopy (Figure 4B). Variability in staining intensities was controlled by normalizing TTF staining to that of Engrailed, which is constantly expressed in NB7-1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig4-v2.jpg)\n\n**Figure 4.:** (A) Confocal image of the neuroblast layer from ventral nerve cord segments T2 and T3 of an early stage 11 embryo (boxed area in illustrated embryo on the left). The NB7-1 was identified by the pan-NB marker Worniu (Wor) and the NB spatial marker Engrailed (En). NB6-1 is the most anterior medial En\u00a0+NB, with the En\u00a0+NB7-1 just posterior and lateral (red arrow), and En\u00a0+NB1-2 completing the diagonal. Genotype: y1 w1. Scale bar: 20 um. (B) Methodology for obtaining transcription factor levels in G1/G2/S-phase of NB7-1. Confocal section stacks (at a 1 um interval) of individual NB nuclei were obtained, and the area and signal intensity of each section were measured and summed to obtain the total intensity of TTFs. (C) Data from the number of NB7-1 indicated in Supplementary file 3 is summarized by box plots of measured log(Pdm/En) staining intensity as a function of time. The 1.96 SEM (95% confidence interval) is shown as a red rectangle with a horizontal red line for the mean, with a blue rectangle marking the limits of one standard deviation above and below the mean. Time duration of the Pdm phase (approximately 180 min) is indicated in red. We do not yet have an explanation for the moderate transient decrease in Pdm levels around 620 min. (D) Confocal image of a NB7-1 lineage marked with GFP (NB7-1-Gal4, UAS-GFP) in an early stage 11 embryo. Arrowheads indicate three consecutive GMCs (Ase+) which are Kr+Pdm- (green), Kr+Pdm+ (pink), and Kr-Pdm+ (orange). Genotype: ac-VP16AD gsb-Gal4DBD UAS-superfoldGFP. Scale bar: 5 um. (E) Data from the number of NB7-1 indicated in Supplementary file 3 is summarized by box plots of measured log(Pdm/En) staining intensity as a function of the number of progeny GMC. The 1.96 SEM (95% confidence interval) is shows in red rectangle with a horizontal red line for the mean, one standard deviation above and below the mean in blue rectangle. Scheme below the X axis shows which neuronal progeny is hypothesized to be derived from the GMC.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The number of Pdm derived neurons does not depend on location in\u00a0Decay-Relay space.\n\nOur data confirmed the sequential expression of Hb, Kr, Pdm, and Cas within the NB7-1 lineage (data not shown). It further revealed that Pdm expression was longer than expected: about 180 min (Figure 4C), a time window that is long enough to generate more than the two previously reported Pdm\u00a0+GMCs (Isshiki et al., 2001). To determine if there were additional Pdm\u00a0+GMCs in the lineage, we used the NB7-1-specific Gal4 driver to drive the expression of membrane-tethered superfold GFP and co-stained for Pdm and the GMC marker Asense (Figure 4D). We found that Pdm was upregulated when NB7-1 was producing the 4th GMC and downregulated after the NB generated the 7th GMC (Figure 4E), indicating that four GMCs are produced within the Pdm expression window. Consistent with this finding, we observed a novel Kr+Pdm+ GMC in the lineage, which was not previously reported (Isshiki et al., 2001). The newly\u00a0discovered GMC may produce an Eve-negative motor neuron, interneuron, or undergo programmed cell death (see Discussion).\n\nThe Pdm expression window is therefore significantly longer than the duration inferred from the previous data used to calibrate our model. This did not affect our analysis, however, since in our original analysis we did allow for solutions of similarly long Pdm windows, accounting for the uncertainty of the experimental data (Figure 4\u2014figure supplement 1). We next used the high temporal resolution expression data to determine whether the relay-timer or decay-timer could best account for Pdm and Cas expression timing in TTF mutant backgrounds. We found that Kr mutants did not alter Pdm induction\u00a0timing, whereas hb mutants advanced Pdm\u00a0induction by about two cell-cycles (Figure 5A\u2013C), showing that Pdm induction is more sensitive to deletion of the upstream repressor Hb. Similarly, pdm mutants did not have as much effect on Cas induction as did Kr mutants, showing that Casinduction is more sensitive to deletion of the upstream repressor Kr rather than the upstream activator Pdm (Figure 5D\u2013F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013C) Pdm levels in NB7-1.\u00a0Pdm levels was quantified in wild-type and mutant embryos. Data from the number of NB7-1 indicated in Supplementary file 3 is summarized by a box-plot, with 95% confidence interval shown in red rectangle, mean in red horizontal line and the one SD above and below the mean in blue. Developmental stages are indicated on the X axis. Stages of Pdm induction are indicated by black arrows. Induction stages were determined by calculating a background Pdm level as the mean of Pdm in the second and third stages (S10E and S10), in WT. The stage of induction was defined as the first stage for which the 1.96 SEM (95% confidence interval- red rectangle) was above background (see Materials\u00a0and\u00a0methods for details). Early transient inductions are indicated by grey arrows. (D\u2013F) Cas levels in NB7-1 wild type and mutant embryos. Data was plotted as described in (A\u2013C). For both Pdm in WT (A) and Cas in the Kr mutant (E), early transient induction of the TTF was detected at stage 9. We attribute this to basal transcription levels which cause protein production until enough repressor is accumulated. Interestingly, for Cas no such transient early induction appears in WT and Hb mutant (E, Figure 5\u2014figure supplement 1). These results suggest the transient early induction is an Hb-related phenomenon which could stem from slow Hb accumulation, compared to Pdm and Cas. (G) Position of the in\u00a0vivo timer in the Pdm Hb-Kr sensitivity space: The measured changes in Pdm induction time following Kr and Hb deletions were used to position the in\u00a0vivo circuit in the Hb-Kr sensitivity space (black diamond), as described for the simulated data Figure 3B. Error bars are based on the experimental temporal resolution (see Materials\u00a0and\u00a0methods for details). (H) Estimating the sensitivity of the in\u00a0vivo timer to removal of delay or relay interactions: The measured changes in Pdm and Cas induction times following TTF deletions were used to position the in\u00a0vivo circuit on the correlation plots from Figure 3C\u2013F by taking the measured range denoted by 1,2 for \u0394Hb and 3,4 for \u0394Kr in Figure 5G and measuring the corresponding ranges for regulation removal. These are denoted by 1\u2019,2\u2019 and 3\u2019, 4\u2019 respectively in Figure 5H upper plots. Similarly, this was done for Cas regulation in Figure 5H lower plots (see Materials\u00a0and\u00a0methods for details). (I) The TTF circuit is positioned in the region of repressor-delay timers: data from A-H above defined the positioning of the TTF circuit on the Decay-Relay timer space. The location of the in\u00a0vivo circuit on the X axis, indicating the significance of the decay network, was defined by the range between points 1\u2019 and 2\u2019: point 1\u2019 is the lower bound on decay significance and point 2\u2019 is the upper bound- based on Pdm. Together with a corresponding analysis for Cas, these points determined the location and error margin for the in\u00a0vivo circuit on the X axis. Similarly, the location on the Y axis, indicating the significance of the relay network, was defined by points 3\u2019,4\u2019 together with the corresponding points for Cas (see text and Materials\u00a0and\u00a0methods). Location of the in\u00a0vivo circuit is indicated by a black diamond, with error margins indicated by dashed error bars. (J) Our analysis indicates that the progress of TTF expression is dominated by repressor-decay, and not activator-accumulation. The NB TTF timer regulatory network is shown again, with dominant decay regulations in bold.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Cas levels were quantified and summarized by a box-plot, with 95% confidence interval shown in red and the 1 SD in blue. Developmental stages are indicated on the X axis. Stage of Cas induction is indicated by black arrow. Induction stages were determined by calculating a background Cas level as the mean of Cas in the second and third stages (S10E and S10), in WT. The stage of induction was defined as the first stage for which the 1.96 SEM (95% confidence interval- red rectangle) was above background (see Materials\u00a0and\u00a0methods for details).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38631/elife-38631-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** For each of the eight regulations in the model, from TTF i to TTF j, the following unit-less quantity was defined: the ratio between total production rate $\\beta_{i}$ of the regulating TTF and degradation rate $\\alpha_{i}$ multiplied by the regulation coefficient $K_{i,j}$ (Supplementary file 1): $R_{i,j}=\\frac{\\beta_{i}}{\\alpha_{i}*K_{i,j}}$. The greater this ratio, the faster TTF i will surpass the appropriate threshold and perform its regulatory role on TTF j. Therefore,\u00a0$R_{i,j}$ can be viewed as the 'strength' of the regulation of TTF j by TTF i. Since absolute parameter values may be rescaled between circuits which will then exhibit similar behavior, this ratio better captures the regulations in the model. We further define three groups of parameter sets (circuits).1.\u00a0Randomized: randomly drawn parameter sets (both consistent and inconsistent, see Materials\u00a0and\u00a0methods, Supplementary file 1,3).2.\u00a0Consistent: all consistent circuits, as described in Figures 1\u20132.3.\u00a0Predicted: consistent circuits which are still consistent with our new measurements (Figure 5A\u2013F) and are robust. These circuits are found in Decay-Relay space at the intersection between the area defined by our measurements and the robust zone (Figure 5I: significance of decay network 65\u201380%, significance of relay network\u00a0<30%).In order to compare the relative strength of two interactions governing TTF j within the circuits (a decay interaction by TTF i and a relay interaction by TTF k), we calculate\u00a0$log\u2061(\\frac{R_{i,j}}{R_{k,j}})$. Note that it is only meaningful to compare interaction governing the same event: the upregulation of TTF j or the downregulation of TTF j. (A-C) We then plot the Probability Density Function (PDF) of $log\u2061(\\frac{R_{i,j}}{R_{k,j}})$\u00a0for each of the three circuit groups described above, subtracting the mean of the Randomized PDF from all 3 PDFs. Values below 0 indicate\u00a0$R_{k,j}$, the relay interaction is 'stronger' while values above 0 indicate\u00a0$R_{i,j}$, the decay interaction is 'stronger'. In all three interaction pairs examined, for consistent and predicted circuits, the PDF is asymmetrical around 0 and is spread out more to the right. This indicates decay dominance for most circuits in these groups. In (A) and (B), this phenomenon is stronger for the predicted PDF than the consistent PDF. Therefore, the predicted circuits are more decay dominated than the consistent circuits. (D-K) On the same plot, normalized histograms of log(Ri,j) (i,j indicated in X axis label), for the three groups of circuits mentioned above, color coded as indicated in the legend of panel D. Consistent parameter sets are a subset of randomized parameter sets; predicted parameter sets further restrict parameter values.\n\nCas induction in Kr mutants was moderate compared to its induction in WT embryos. This moderate induction is sufficient to induce the Cas-positive U5 neuron, produced in Kr mutants (Isshiki et al., 2001), and may result from its earlier induction, at a time when Hb, its second repressor, is still highly expressed. Consistent with the contribution of Hb to Cas repression, Cas induction was advanced in Hb mutants to stage 11, similarly to Kr mutants (Figure 5\u2014figure supplement 1).\n\nOur measurements defined the change in Pdm and Cas induction times following the deletion of their activator or repressor TTFs. Both induction times showed higher sensitivity to repressor deletion than to the deletion of their activator, suggesting that the in-vivo timer progresses primarily through the decay of repressors, with the activator relay playing a minor part.\n\nTo examine this conclusion more rigorously, we have linked the measurements to our theory, by examining which of the consistent circuits, identified previously, are also consistent with the higher resolution data we obtained. As can be seen in Figure 5\u2014figure supplement 2, our higher resolution data indeed largely restricted the range of possible parameters that remained consistent. This allowed us to more precisely position the in\u00a0vivo circuit on the Decay-Relay space (Figure 5G\u2013H, Materials\u00a0and\u00a0methods). As can be seen, the in\u00a0vivo circuit is in the region of robust timers that are dominated by repressor-decay interactions (Figure 5I). We therefore conclude that the timing of TTF expression is driven by a repressor-decay mechanism, rather than an activator-accumulation mechanism (Figure 5j).\n\n## Discussion\n\nOur study suggests that a repressor-decay timer drives the sequential TTF expression to generate stereotyped temporal fate specification in Drosophila embryonic NB lineages (Figure 5J). This finding may appear surprising, as previously this timer was thought to progress through a relay of activators achieved by feed-forward activation combined with feedback repression. A similar activator-relay mechanism was implicated also in driving the TTF cascade in Drosophila optic lobe NB lineages (Bertet et al., 2014; Li et al., 2013). Still, experimentally established cross-regulations between the TTFs are consistent with both activator-relay and repressor-decay mechanisms, and the parameters defining the relative contributions of repressor decay or activator accumulation to the expression timing of each TTF were unknown.\n\nWe provided evidence that the TTF progression is dominated by the repressor-decay interactions by measuring the expression timing of the last two TTFs in the cascade, Pdm and Cas. In both cases, TTF induction time was defined by the reduction in upstream repressor level, but showed little, if any change when upstream activator was deleted. Kr induction was not included in this analysis since we found that Kr was maintained in hb mutant embryos (data not shown (Isshiki et al., 2001)), indicating that Kr is induced by a factor external to the cascade, similarly to Hb. Notably, Kr remained constitutively expressed in embryos which were forced to express constitutive levels of Hb. Therefore, while Hb is an activator of Kr, it affects Kr expression not by determining its induction time but rather by determining shut-off time, allowing Kr decay only when Hb decays below a threshold, again implementing a repressor-decay, rather than an activator-relay timer. Hb is rapidly degraded during early embryogenesis, with an estimated half-life of\u00a0~15 min (Okabe-Oho et al., 2009). While this half-life was not measured directly in NBs, it is likely to be similarly short based on the 1:1 relationship between hb transcriptional activity (detected with an intron probe) and Hb protein levels (detected with an antibody) (Grosskortenhaus et al., 2005). Assuming that Hb mRNA is similarly fast degrading, and that Hb is transcribed for only one cell-cycle, we estimate that Pdm starts expressing when Hb levels reduce to about 1\u201310% of their maximal value.\n\nOur quantification of Pdm levels in wild-type embryos revealed that this phase is longer than previously thought, and led to the identification of a previously unrecognized Kr\u00a0+Pdm\u00a0+ GMC generated during this phase. Six motor neurons have previously been reported for the NB7-1 lineage (Landgraf et al., 1997; Schmid et al., 1999), yet there are only five Eve\u00a0+\u00a0motor neurons in the lineage, raising the possibility that this \u2018new\u2019 GMC may produce an Eve-negative motor neuron. Our analysis also revealed that Pdm is expressed in a burst during the Hb window. This was noted by Isshiki et al. (2001) but neither the functional significance nor the mechanism was discussed. Regarding function, we suggest that this early window of Pdm expression may allow it to be inherited in the first-born GMC, where in at least one lineage (NB4-2) it is required to specify first-born GMC identity, together with Hb (Bhat et al., 1995; Bhat and Schedl, 1994; McDonald et al., 2003; Yang et al., 1993; Yeo et al., 1995). Regarding mechanism, early Pdm and Cas expression is likely to be due to independent transcriptional activation of both genes, followed by repression of pdm transcription by Hb protein (Kambadur et al., 1998). The Pdm protein produced from the initial transcriptional burst, prior to Hb-mediated transcriptional repression, may persist into the new-born GMC. Alternatively, there may be a mechanism for blocking Hb repression of pdm transcription specifically in early-forming NBs.\n\nWe propose that repressor-decay dominating TTF progression was favored in evolution because it better buffers variation (\u2018noise\u2019) in molecular parameters. Robust TTF progression is needed to maintain synchrony with the NB division cycles, a prerequisite for generating a reproducible NB lineage. At first sight, repressor degradation and activator accumulation may appear equivalent for measuring time delays. However, closer examination shows that they are in fact very different (Rappaport et al., 2005). First, activator accumulation requires continuous transcription while repressor degradation occurs following transcription shutdown. Second, activator accumulation approaches some steady state, which limits the possible readout thresholds. Furthermore, most of the dynamics is spent close to this threshold, so that small changes in threshold levels are translated into large changes in the measured delay time. By contrast, there is no such (theoretical) restriction on the readout threshold as a repressor decays to zero expression. Together, these properties lead to different buffering capacities, both when considering a single-step timer, and in the context of the full TTF timer model. In all cases, encoding time-delays by repressor decay greatly promotes robustness.\n\nIn this study, we did not measure robustness experimentally and did not verify experimentally the predicted difference in the robustness of relay- and decay-based timers. Such a comparison can be done by identifying biological circuits that encode these two timers and are equivalent in all other aspects. Alternatively, the respective timers can be engineered using a synthetic biology approach.\n\nTesting experimentally the proposal that robustness acts as a selection pressure may be more difficult. Defining selective pressures that act during evolution is intrinsically complicated by our limited knowledge of species natural history. The hypothesis that robustness serves as an evolutionary-relevant selection pressure proved useful in defining the evolutionary selected circuit designs in multiple studies from our lab and from others (Alon et al., 1999; Barkai and Leibler, 1997; Eldar et al., 2002; Eldar et al., 2003; Gavish et al., 2016; Hart et al., 2014; Haskel-Ittah et al., 2012), and our current study further supports this notion. Still, experimentally, this notion remained untested.\n\nIn conclusion, we propose that the need to maintain robust gene expression timing within a noisy biological environment favored evolution of repressor-decay regulatory circuits controlling developmental patterning. This was previously shown for circuits that coordinate spatial patterning through the establishment of morphogen gradients or the control of direct cell-to-cell communication (Barkai and Shilo, 2009; Eldar et al., 2002; Eldar et al., 2003; Gavish et al., 2016; Rahimi et al., 2016). Our study suggests that robustness also played a major role in the design of developmental timers that function in neuronal differentiation.\n\n## Materials and methods\n\n### Computational methods\n\n#### Mathematical model and numerical screen\n\nRandomized parameter sets (circuits) were generated by randomly drawing values for model parameters out of the ranges indicated in Supplementary file 4, using a log uniform distribution. Parameters were then substituted into model equations (Supplementary file 1) and solved numerically by a standard MATLAB ODE solver. We selected the ranges for model parameters as follows. First, we chose a \u2018reference\u2019 set of parameters, which gave rise to a consistent circuit and are biologically reasonable based on experimental data. The overall time for the simulation was selected based on the duration of the cascade as measured in (Grosskortenhaus et al., 2006; Isshiki et al., 2001), the degradation rates were based on measurements of Hb half-life of\u00a0~15 min (Okabe-Oho et al., 2009) which corresponds to a degradation rate of\u00a0~0.05 [1/min] \u2013 which is the middle of the range we used for degradation rates. While this half-life was not measured directly in NBs, it is likely to be similarly short based on the 1:1 relationship between hb transcriptional activity (detected with an intron probe) and Hb protein levels (detected with an antibody) (Grosskortenhaus et al., 2005). Degradation rates for the other TTFs were selected to be close to this value. Since production rates and thresholds are only significant as a ratio in our model (Supplementary file 1), their units can remain arbitrary as long as biologically reasonable ratios are maintained. Since we estimate that Pdm starts expressing when Hb levels reduce to about 1\u201310% of their maximal value (Grosskortenhaus et al., 2006) and a threshold of 1% was used in our previous analytical analysis (Rappaport et al., 2005) we restricted ourselves to this range of ratios between maximal levels (ratio between production and degradation) and thresholds. Second, for each model parameter, the range of possible values was selected to be wide going over several orders of magnitude around the value used for the reference set in order to capture the systems behavior in a large part of parameter space. We believe these ranges are wide enough to capture biologically reasonable values. The model we solve numerically always includes all the known interactions between the TTFs (both the repressor decay and activator relay interactions). The values of these randomly drawn parameters determine the relative significance of the interactions in driving the cascade. By repeating this process for millions of such circuits, we examine a wide range of network designs spanning from circuits which are driven mainly by decay to circuits driven mainly by relay and combinations of both.\n\n#### Consistency\n\nThe solutions were tested for consistency: a consistent solution is one in which the temporal sequence of \u2018on\u2019 (above threshold) TTFs is according to experimental observations for both WT and all mutants (Figure 1C,D). The durations of phases were not considered here, only their sequence.\n\n#### Robustness and robustness score\n\nConsistent parameter sets were scored for robustness to TTF production rates. When testing set robustness, we solved model equations for all combinatorial combinations of adding or subtracting 20% to all the TTFs production rates. Since the model contains 6 TTF production rate parameters (TTF regulated production for Hb,Kr,Pdm and Cas and basal production for Pdm and Cas- see Supplementary file 1) this yielded 2^6\u00a0=\u00a064 noise combinations. For example, one such noise combination is a parameter set where Hb, Kr,Pdm production rates were each increased by 20% and Cas production and Pdm and Cas basal production were each decreased by 20%. For each noise combination, we compared TTF expression phase durations to those of the original set solution. Only if a noise combination yielded phase durations which are all within 10% distance of the respective original durations, the noise combination was considered \u2018close\u2019 to the original. A robustness score was then calculated as the percentage of \u2018close\u2019 noise combinations. In the example shown in Figure 2D, the two Pdm temporal dynamics plots for the perturbed systems #1 and #N, show Pdm levels in a consistent parameter set (solid line) and in the noise combination (dashed line). The expression phase of Pdm is \u2018close\u2019 to the original in #1 and not \u2018close\u2019 in #N. The overall robustness score for this parameter set was calculated using this and all other noise combinations and expression phases not shows in these plots. The expression phases considered for this purpose were expression/co-expression phases leading to different neuronal fates (Supplementary file 2). For example, a phase of Hb only expression followed by co-expression of Hb and Kr was considered a single phase since both lead to the 1 and 2 neuronal fates rendering the timing of Kr induction irrelevant in terms of NB lineage.\n\n#### Perturbed parameter sets: deletion of TTF and specific regulations in the model\n\nIn order to create perturbed parameter sets, parameter values or terms in model equations were changed accordingly: for TTF deletion the respective production rates were set to 0. For constitutive expression of a TTF, all the terms in model equations regulating this TTFs production were set to 1. For specific regulation removal, the regulation term was set to 1 (see Supplementary file 1 for model equations).\n\n#### Placing parameter sets in Decay-Relay space\n\nFor Figure 1H, Figure 2 and Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2 significance scores of decay and relay for each consistent parameter set were first calculated with respect to Pdm and Cas separately (Figure 2\u2014figure supplement 1) and then a combined score based on both TTFs was calculated (Figure 1H, Figure 2, Figure 2\u2014figure supplement 2). The TTF-specific scores for Pdm and Cas were based on change in Pdm/ Cas induction times caused by removing the decay or relay regulations governing these inductions. For example, for Pdm the decay removal perturbation is removal of Hb--|Pdm, and the relay removal perturbation is the removal of Kr-->Pdm. We then measured Pdm/Cas induction times in the perturbed sets. The difference from WT in induction time for each perturbed set was calculated as $\u0394t^{ind}=\\frac{100*t_{Perturbed}^{ind}-t_{WildType}^{ind}}{t_{WildType}^{ind}}$. The combined decay significance score, based on both Pdm and Cas, was calculated by summing $\u0394t^{ind}$ for Pdm (perturbation: removal of Hb--|Pdm) and $\u0394t^{ind}$ for Cas (perturbation: removal of Kr--|Cas). The relay significance score was calculated similarly, only with relay removal perturbations for both Pdm and Cas. The possible range (in absolute value in minutes) of earlier induction or delay is different between Pdm and Cas. For example, Pdm could potentially be up-regulated at t=0 when its repressor Hb is removed. For Cas, upregulation at t=0 is not possible because even when the repressor Kr is absent, another repressor Hb is still active. Due to this difference, when calculating the combined delay and decay scores a normalization was performed: each TTF-specific relay/decay $\u0394t^{ind}$ was taken as percentage out of the maximal $\u0394t^{ind}$ observed for all sets.\n\n#### Calculating the location of the in\u00a0vivo system in Decay-Relay space\n\nFor Pdm in Figure 5G, the calculation of in\u00a0vivo system location according to its $\u0394t^{ind}$for TTF deletion perturbations was performed by assuming the experimentally observed $t_{WildType}^{ind}$ and $t_{Perturbed}^{ind}$ were the middle of the stage in which induction occurred. The assumed error margin was half that stage duration. These error margins were further increased when translating from $\u0394t^{ind}$ for TTF deletions to $\u0394t^{ind}$ for appropriate regulation removal using the model. This translation was performed by placing the measured $\u0394t^{ind}$ for TTF deletion on the appropriate correlation plot in Figure 5H. This range is shown in Figure 5H upper left plot, by the two points denoted 1,2. Points 1 and 2 represent the upper and lower bound on measured earlier induction of Pdm due to Hb deletion. This range is then translated by the model into the possible range of earlier Pdm induction due to removal of the Hb\u2014| Pdm regulation. This is done using the same correlation plot, by taking the maximal range on the Y axis reached by robust (robustness score>80) sets, within the X axis range of the measured $\u0394t^{ind}$ as defined by points 1,2. This results in the range defined by points 1\u2019 and 2\u2019 which define the range for $\u0394t^{ind}$ caused to Pdm upregulation by Hb--|Pdm removal. Similarly, points 3,4 indicating the lower and upper bound on Pdm $\u0394t^{ind}$ due to Kr deletion were translated to points 3\u2019 and 4\u2019 indicating the lower and upper bound on Pdm $\u0394t^{ind}$ due to the removal of Pdm activation by Kr (Figure 5H upper right plot). A similar analysis was carried out for Cas, in Figure 5H lower plots.\n\nIn Figure 5I, experimentally measured values of the decay-relay significance scores were indicated on Figure 2E by a black diamond shaped marker. These experimental, joint Pdm and Cas, decay and relay significance scores were calculated as previously described for simulated parameter sets: by adding the scores for both Pdm and Cas and then normalizing. Normalization of measured $\u0394t^{ind}$ for Pdm was done by dividing by greatest experimentally observable values: Pdm induction at t=0 which corresponds to $\u0394t^{ind}=100%$\u00a0in the decay case and the middle of the last stage in the experiment (S12) in the relay case. For Cas, there was no need to normalize $\u0394t^{ind}$ for relay removal since Cas induction in this case occurred during the last stage (S12) in the experiment. Cas decay removal $\u0394t^{ind}$ was normalized by greatest $\u0394t^{ind}$ observed in simulated parameter sets since we cannot expect Cas upregulation at t=0 due to inhibition by Hb.\n\n### Experimental methods\n\n#### Data acquisition\n\nThe following flies were used: (1) y1w1 (FBst0001495); (2) hbFB,hbP1/TM3 ftz-lacZ (Isshiki et al., 2001); (3) KrCD,Kr1/CyO wg-lacZ (Isshiki et al., 2001); (4) Df(2L)ED773/CyO wg-lacZ (Grosskortenhaus et al., 2006); (5) ac-VP16AD,gsb-Gal4DBD (Kohwi and Doe, 2013); (6) w1118; 10xUAS-IVS-myr::sfGFP-THS-10xUAS(FRT.stop)myr::smGdP-HA(attP2)(FBst0062127). Embryos were collected and incubated at 25\u02daC until designated stages, and then fixed and stained with antibodies by following published protocols (Grosskortenhaus et al., 2005; Kohwi and Doe, 2013; Tran and Doe, 2008). The primary antibodies used in the studies were: rabbit anti-Ase (Cheng-Yu Lee, University of Michigan), mouse-anti-beta-galactosidase (Promega), rabbit anti-Cas (Mellerick et al., 1992) (Doe lab), rat anti-Dpn (Abcam, Eugene, OR), mouse anti-En 4D9 (Developmental Studies Hybridoma Bank (DHSB), Iowa City, IA), mouse anti-Hb (Abcam, Eugene, OR), guinea pig anti-Kr (Doe lab), rat anti-Pdm2 (Abcam, Eugene, OR), and rabbit anti-Wor (Doe lab). Fluorophore-conjugated secondary antibodies were from Jackson ImmunoResearch. Confocal images were taken by Zeiss LSM710 and protein quantities were measured with open software FIJI (Schindelin et al., 2012).\n\n#### Data analysis\n\nData was processed and plotted in MATLAB. Mean volume and standard deviation (STD) for all wild type NB7-1s were calculated. All NBs whose volume was further than 2 STD from mean volume (above or below) weren\u2019t included in analysis, assuming these are currently dividing or miss identified cells.\n\n#### Determining TTF induction stage in WT and mutants\n\nIn order to determine the stage of Pdm and Cas induction from box plots in Figure 5A\u2013F,a \u2018background\u2019 level for both TTFs was defined as the mean of their mean levels (red line in box plots) in the second and third stages (S10E and S10), for WT. The first stage (S9) was not considered for this purpose due to possible early transient induction which occurs for Pdm. The stage of induction was then defined as the first stage for which the 1.96 SEM (95% confidence interval- red rectangle) was above this calculated background.\n",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "fae6b174-ab10-4501-9b67-7e2f63339c37",
+      "submission_id": "05761eef-cbe3-42e3-b10e-346f4f5cbe69",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenying Shou, Fred Hutchinson Cancer Research Center United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.38631.020](https://doi.org/10.7554/eLife.38631.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A repressor-decay timer for robust temporal patterning in embryonic Drosophila neuroblast lineages\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Wenying Shou as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Aviv Regev as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Lea Goentoro (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe thought that the work is interesting. However, major points need to be revised and the paper needs to be decompressed. In particular, the reviewers highlight the need to better understand whether repressor decay is in theory (per Figure 2A,B) more robust than activator accumulation (as per the reviews below). We chose to provide you with the full reviews, as all the reviewers agreed those reflect the key issues to be addressed.\n\nReviewer #1:\n\nIn the Drosophila embryo, neural progenitors produce a sequence of neurons whose identities depend on the sequential expression of temporal transcription factors (TTF). Although this process is thought to be driven by a relay of activators, Averbukh et al. proposed that a repressor-decay timer is the main player. To evaluate the relative contribution of activator-relay and repressor-decay, they mathematically modeled the TTF timer network, and predicted that with repressor-decay, induction timing of a transcription factor was more robust (changed less) when, for example, activator synthesis rate was reduced. They reasoned that the timer had evolved to be robust, and thus, repressor-decay (which supports higher robustness) should be important. They then did more modeling to design experiments and predict experiment results. Experimental tests supported the repressor-decay mechanism in that the induction timing of Pdm and Cas expression was sensitive to the deletion of the respective repressor and much less so to the deletion of activator. The followings are NOT tested experimentally: repressor-decay timer being more robust than activator-relay timer, and robustness being the selective pressure for evolving repressor-decay timer. However, I do like how the authors use modeling in different ways to gain biological insight and to instruct experiment design. Modeling worked rather well!\n\nThe biggest problem I have with this paper is the argument of repressor-decay causing less perturbation in induction timing than activator-accumulation (Figure 2A-B). Seems that this assertion is sensitive to the line slope (the less steep a line e.g. Figure 2A, the bigger the timing perturbation). The line slope will in turn depend on parameters, and the two mechanisms can have different parameters. The argument on this point is also rather hand-wavy in the Discussion (second paragraph). This needs to be clarified.\n\nI find Figure 3B difficult to follow. If my understanding is correct, then the lower right dot essentially says that for this particular set of parameters, deleting HB (but not Kr) causes dramatic phenotype, meaning that HB (decay timer) is important. With this set of parameters, the original \"wildtype\" network is robust. It took me a couple readings to get this. This needs to be explained better.\n\n\"Robustness score\", a concept key to this article, had no visual aids. Even in the Materials and methods, the explanation of robustness score was not clear (e.g. \"phase duration\"). I recommend adding conceptual illustrations like Figure 2D.\n\nReviewer #2:\n\nI find all the exercise of constraining the model with data quite interesting. I also find the experimental results interesting. That said, I am not entirely convinced by the logic of the reasoning presented. For instance, the experimental results presented in the fourth paragraph of \u201cTiming of Pdm and Cas expression is highly sensitive to deletion of TTF repressors, but less sensitive to deletion of TTF activators\u201d validate the idea that the system is not a relay timer. But do we really need the theoretical study on robustness to get there? In fact, to validate the repressor decay vs. the activator relay model, the only solution is to directly perform those experiments (and maybe other ones to really validate the mechanism). The paper tries very hard to argue that an elaborated theory related to robustness is needed to predict the network topology, but I am rather unconvinced. It could be that the activator relay mechanism is impossible for other reasons that have nothing to do with robustness, so such robustness arguments are in my opinion neither very illuminating nor conclusive.\n\nThe attempt to \"force\" the model to predict experimental results also leads to the strange third paragraph in subsection \u201cTiming of Pdm and Cas expression is highly sensitive to deletion of TTF repressors, but less sensitive to deletion of TTF activators\u201d, where we basically learn that, after experimental verification, all the calibration of the model related to Pdm is incorrect, but that does not matter. It seems to me that in such situation, it would be more reasonable to use this information to redo the theoretical study with the new calibration; one could well learn something new.\n\nOn top of that, I found the paper at times difficult to follow. The paper seems to have been initially written for a journal with a very compressed format, but I believe it would be much better if some details and more explanations were given in the main text (I give some suggestions below but they are not exhaustive).\n\nOther comments (in no particular order):\n\n1) The authors postulate a dichotomy between activator-relay and repressor decay. This seems a bit arbitrary to me. One could well imagine more complex networks, a mix of the two via genes that are not known to be implicated, etc. I understand there is a limit to what one can do on the theory side, but I feel some discussions should be added. For instance is it known that the genes studied in the model are necessary and sufficient for the entire process?\n\n2) I found the introduction of the parameter exploration a bit too concise. It would be good to explain how the parameters were chosen and constrained. For instance are there experimental data that are constraining them like degradation rates? More generally, are the parameters found after optimization consistent with what is known or reasonable?\n\n3) Obviously there are also predictions on the possible ranges of parameters when theory is combined with experimental data. I found this is a potentially very interesting aspect of the paper that is not explored sufficiently. For instance can we get more information on parameters from the experimental constraints shown on Figure 5 G and I?\n\n4) I find statements in the first paragraph of subsection \u201cA TTF circuit can be positioned in the relay-decay timer space based on TTF-deletion phenotypes\u201d on the connections between robustness and evolution too speculative and in my opinion confusing.\n\nReviewer #3:\n\nIn this paper, the authors combined modeling of interactions between four Temporal Transcription Factors (TTFs) with experiments to understand the architecture of the TTF timer in neuroblasts. The authors developed a computational framework to distinguish between relay and decay timers, identified all possible circuits that can reproduce normal and perturbed neuroblast phenotypes, and then showed how delay timers are more robust to parameter variations than relay timers. Lastly, they collected high-resolution data for TTF induction time in WT and knockout fly lines, and concluded that temporal TTF activation is primarily governed by a decay-timer circuit.\n\nThe authors concluded that robustness is not only a feature of spatial patterning, but also temporal patterning in embryos. The work also provides a wonderful insight into the longstanding question of activation vs. repression in biology.\n\nMajor comments:\n\n1) It is unclear why only production rates are being varied for the perturbation analysis, especially since the reasoning for robustness in decay timers (subsection \u201cA repressor-decay timer is more robust than an activator-relay timer\u201d) is based on sensitivity to thresholds Tr. Can the authors provide a rationale? What happens if other parameters are varied as well?\n\n2) Figures 2E, 3B, and Figure 2\u2014figure supplement 2 may appear conflicting. Figure 3B clearly demonstrates that decay timers are more robust than relay timers, with robust circuits concentrated in the bottom right of the perturbation-space. In Figure 2E however, robustness seems to be dependent on the decay interaction, while invariant to the relay-interaction. Finally, in Figure 2\u2014figure supplement 2, robustness shows more complicated dependencies.a) It would be helpful to see Figure 2E and 5I split up into two figures, one for Pdm induction, and one for Cas induction \u2013 possibly as supplemental figures. Combining the two as they are currently in Figure 2E, raise questions if there are some patterns that are missed, especially since Figure 3B and Figure 2\u2014figure supplement 2 look so distinct. Could it be that Pdm, but not Cas, induction is the sensitive step in the network where robustness analysis can distinguish relay vs decay?b) Additionally, the Materials and methods indicate that when estimating the significance of the decay network for Cas induction, only the Kr-Cas interaction is removed, and the Hb-Cas interaction is left intact. Can the authors discuss why the dual-repression of Cas is not needed?\n\n3) Figure 5A-F clearly demonstrate that removing the immediate activators has no effect on Pdm and Cas induction timing, and removing the repressor clearly affects timing of Pdm induction. But we have the most trouble with Figure 5E.a) First, Cas induction is pretty modest in both at st11 and 12. Then, based on the network, Cas represses Pdm, and we see this borne out in WT, where at st12, high Cas correlates with low Pdm. However, in Kruppel mutant, Pdm remains high, which seems to signify that there isn't much Cas induction? Can the authors discuss how they see these data? Is there an independent way to confirm that Cas is induced, and induced earlier?b) For Figure 5A-F: It would be helpful to draw a line indicating the \"background level\" of TTFs, to allow readers to see significance more easily. It would also be helpful to immediately see in the legend the way significant induction is determined. Also, the black arrows are not defined in legend.c) Cas is also repressed by Hb. Can the authors justify why they didn't analyze Cas induction in Hb mutant?\n\n4) It would help to have the Materials and methods be better organized. Perhaps with separate sections, so readers can easily find the relevant information. For instance, we had trouble keeping track of the different ways \u0394tind normalization was performed.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A repressor-decay timer for robust temporal patterning in embryonic Drosophila neuroblast lineages\" for further consideration at eLife. Your revised article has been evaluated by Aviv Regev (Senior Editor), and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe manuscript has been greatly improved but there are some remaining issues that need to be addressed by writing changes before acceptance. In particular, the reviewers requested that certain aspects be written more explicitly and clearly, and in a manner geared toward a general audience. Furthermore, they ask that the evolution aspect should be de-emphasized given the lack of direct data, although raising all such matters in the Discussion section should address this concern.\n\nBecause some of the reviewers have been grappling in their consultation specifically around writing and presentation, we highlight below the key areas and items that need to be addressed, and the specific writing revisions we request.\n\n1) One reviewer still found the paper rather hard to read, and was not really convinced by the articulation between theory and experiments as is. The experiments done directly show some repressions from upstream genes, so as pointed out in the first review, one does not really need a very elaborated theory to predict this since it is a direct verification. The understand the authors argument that theory helps better refining what experiments to do, but believe that the authors should explain this more clearly. The actual experiments potentially related to theory are in Figure 5: they are connected to the correlations between times on Figure 3 C-D. I found the explanations there too short and concise, and unclear. There is too much of handwaving (\"as seen in\") making the arguments difficult to understand. On the one hand there are many mutants, on the other hand each mutant gives essentially one point in parameter space that is then placed in the abstract sensitivity space. There are several layers of reasoning here that could be much better explained (Figure 5H is particularly obscure). The reviewer also felt there could be some intuitive or analytical explanations. The authors allude to some analytical work in their rebuttal letter, is there a simple way to interpret the tight correlations of Figure 3 (it seems the correlation simply comes from the existence of one activation)? Also it seems the only argument for the \"decay\" part is the point 1', but is this really a strong effect?\"\n\nTo address this, the reviewers together suggest:\n\nThe paper should clarify that it presents two parallel arguments for the decay timer:\n\n1) The robustness from modeling analysis.\n\n2) The experiment.\n\n(i.e. rather than a \"linear\" model-predicts-experiment paper). A paragraph in the Introduction to better clarify the logic of the paper could help.\n\n2) One of the reviewers has an ongoing concern with the robustness argument presented as the core of the paper, as hypothetically, there could be many ways to have a more \"robust\" network to noise. The fact that a less complicated network is less robust was not fully convincing in implying that robustness is a good biological criterion to assess the evolutionary origin of the network architecture.\n\nWe suggest that the results and interpretation of the paper should stand independent of this conjecture to focus on the repressor decay mechanism as a better explanation of the experimental results (which would roughly correspond to what is done in Figure 5 and associated theory), and reduce overinterpretation of the evolutionary origin of the network structure. Overall, given that the paper does not show that robustness is the selective pressure for evolving repressor-decay timer, we prefer this emphasis be reduced, for example, by moving this point to the Discussion.\n\n3) The Discussion should also include the responses (from the authors' rebuttal) on work that was not done.\n\n4) Another concern from the initial reviews was the issue of predicting parameter values from the simulations, and the authors' response that they could not really see anything. If the parameters are truly completely random in the region compatible with data, we would ask to show it explicitly. It seems a bit paradoxical that, following the authors' line of thought, one could predict so carefully the existence of extra negative interactions from the study, but nothing on the actual parameters corresponding to those interactions. At the very least the negative interactions should have parameters significantly different from a \"default\" state where they would not contribute. This point should be clarified.\n\n5) While we very much appreciate the extra experiment to address our most important concern about the Cas experiments, we are however, still concerned by the fact that Cas delay-relay space (Figure 2\u2014figure supplement 2B) does not support the robustness argument (third paragraph of subsection \u201cA repressor-decay timer is more robust than an activator-relay timer\u201d). We do see the robustness argument with the Pdm space (Figure 2\u2014figure supplement 2A) and when considering the combined Pdm-Cas space in Figure 2E. This concerns us because it can compromise the overall robustness argument, in several ways:a) Perhaps Figure 2E sets up expectations about the robustness of the decay circuits, only to find out in the supplement that it is more true for Pdm, but not as much for Cas.b) It could also raise doubts on the analysis. E.g., what if Cas is less pronounced because the metric \"decay significance\" vs. \"relay significance\" does not capture the effects comprehensively enough for Cas. For instance, Cas is inhibited by Hb and Kr, but one could also view Hb's inhibition of Pdm is an inhibition of Cas (which is not removed in the analysis).\n\nIn either case, we ask that this be addressed by some re-writing, e.g., for point a, state earlier the difference between Pdm and Cas analysis, so readers are not led to expect more after seeing Figure 2E.\n\nFor point b: Add more explanation to the label \"significance of decay\", perhaps in parentheses, with what is actually being evaluated, e.g., \"removal of Pdm--|Cas interaction\".\n",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "48139dd0-4b04-43c6-8a9f-6770d6d0eddd",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C1",
+      "claim": "In the Drosophila embryo, neural progenitors (neuroblasts; NBs) produce a sequence of unique neurons whose identities depend on the sequential expression of temporal transcription factors (TTFs).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila embryo, neural progenitors (neuroblasts; NBs) produce a sequence of unique neurons whose identities depend on the sequential expression of temporal transcription factors (TTFs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of Drosophila developmental biology, as indicated by the context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "b34d09ed-7f64-4ee8-99bb-bb6f310c1ba4",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C2",
+      "claim": "The TTF timer is commonly described as a relay of activators.",
+      "claim_type": "EXPLICIT",
+      "source": "The TTF timer is commonly described as a relay of activators, but its regulatory circuit is also consistent with a repressor-decay timer, where TTF expression begins when its repressor decays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to existing literature describing the TTF timer mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "b531fa03-a7f4-4ba8-a271-79e50f1daa1b",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C3",
+      "claim": "The TTF regulatory circuit is also consistent with a repressor-decay timer, where TTF expression begins when its repressor decays.",
+      "claim_type": "EXPLICIT",
+      "source": "The TTF timer is commonly described as a relay of activators, but its regulatory circuit is also consistent with a repressor-decay timer, where TTF expression begins when its repressor decays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the regulatory circuit structure and inference from known interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "61ae9d42-f7fa-43af-be20-66483a739a10",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C4",
+      "claim": "Repressor-decay timers are more robust to parameter variations than activator-relay timers.",
+      "claim_type": "EXPLICIT",
+      "source": "Theory shows that repressor-decay timers are more robust to parameter variations than activator-relay timers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by theoretical modeling and computational analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "44d37561-af58-4ac2-823e-748dc78f083a",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C5",
+      "claim": "The TTF sequence progresses primarily by repressor-decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing WT and mutant NBs at high temporal resolution, we show that the TTF sequence progresses primarily by repressor-decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data comparing wild-type and mutant embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "910ee2d2-18fd-4d3b-b835-dcbeafb6327d",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C6",
+      "claim": "Biological timers synchronize patterning processes during embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological timers synchronize patterning processes during embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "a4ae613d-d7f4-4411-b7a7-c8a134ebaa7f",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C7",
+      "claim": "Temporal coordination is often achieved through cell-autonomous processes that measure time-delays.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, temporal coordination is often achieved through cell-autonomous processes that measure time-delays (Pourqui\u00e9, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "fd25bf04-d229-4932-863c-16cb2b6a2110",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C8",
+      "claim": "Biological timers play a key role in central nervous system (CNS) development of invertebrates and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Biological timers play a key role in central nervous system (CNS) development of invertebrates and mammals, where a small pool of progenitors generates a vast amount of neuronal diversity (Grosskortenhaus et al., 2005; Isshiki et al., 2001; Kambadur et al., 1998; Kohwi and Doe, 2013; Kohwi et al., 2011; Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "b0aff837-1ce6-43bb-bd4b-3615bfb937b5",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C9",
+      "claim": "In Drosophila, NBs delaminate from a ventral neuroectoderm at embryonic stages 9\u201311 to form an orthogonal two-dimensional grid with 30 NBs per hemi-segment.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, NBs delaminate from a ventral neuroectoderm at embryonic stages 9\u201311 to form an orthogonal two-dimensional grid with 30 NBs per hemi-segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila neuroblast development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "a5c8bec4-7b8d-43fe-99a4-168a9c837766",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C10",
+      "claim": "Each NB undergoes asymmetric cell divisions every ~45 min to produce a series of ganglion mother cells (GMCs).",
+      "claim_type": "EXPLICIT",
+      "source": "After formation, each NB undergoes asymmetric cell divisions every ~45 min to produce a series of ganglion mother cells (GMCs), each of which divides into two post-mitotic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about NB division timing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "2909b074-b630-4806-aa6d-bfd31f40f891",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C11",
+      "claim": "Each GMC divides into two post-mitotic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "After formation, each NB undergoes asymmetric cell divisions every ~45 min to produce a series of ganglion mother cells (GMCs), each of which divides into two post-mitotic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about GMC division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "d9122c04-fc20-4e8b-a73b-215ea0ccdb23",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C12",
+      "claim": "The identity of each neuron is determined by the spatial position of the parental NB and by the TTF it inherits from the NB at the time of birth.",
+      "claim_type": "EXPLICIT",
+      "source": "The identity of each neuron is determined by the spatial position of the parental NB and by the TTF it inherits from the NB at the time of birth (Doe, 2017; Kohwi and Doe, 2013; Pearson and Doe, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "f6004650-189f-49fa-8339-f348da06641f",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C13",
+      "claim": "Temporal information is conveyed by the NB cell-intrinsic timer, which drives the sequential expression of four TTFs: Hunchback (Hb), Kr\u00fcppel (Kr), Pdm (Flybase: Nubbin and Pdm2), and Castor (Cas).",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal information is therefore conveyed by the NB cell-intrinsic timer, which drives the sequential expression of four TTFs: Hunchback (Hb), Kr\u00fcppel (Kr), Pdm (Flybase: Nubbin and Pdm2), and Castor (Cas) (Brody and Odenwald, 2000; Isshiki et al., 2001; Kambadur et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "36c2c595-9953-4a83-a40c-4681e1dda163",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C14",
+      "claim": "Hb expression is initiated by an external signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb expression is initiated by an external signal, but subsequent dynamics depends on cross-regulation between the TTFs themselves (Cleary and Doe, 2006; Grosskortenhaus et al., 2006; Isshiki et al., 2001; Tran et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "115d40fb-f960-49f6-8a0c-11c9d6acbe58",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C15",
+      "claim": "Subsequent TTF dynamics depends on cross-regulation between the TTFs themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb expression is initiated by an external signal, but subsequent dynamics depends on cross-regulation between the TTFs themselves (Cleary and Doe, 2006; Grosskortenhaus et al., 2006; Isshiki et al., 2001; Tran et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "c7880a90-f085-42f3-a10d-8f721b120772",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C16",
+      "claim": "The orphan nuclear hormone receptor, Seven-up (Svp), is required to switch off Hb expression, but not for specifying early neuronal fates.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the orphan nuclear hormone receptor, Seven-up (Svp), is required to switch off Hb expression, but not for specifying early neuronal fates (Kanai et al., 2005; Kohwi et al., 2011; Mettler et al., 2006; Tran et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "3bcf8af2-c44d-456c-9cbc-eb49339cedfe",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C17",
+      "claim": "The TTF expression sequence is largely independent of the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The TTF expression sequence is largely independent of the cell cycle: some NBs undergo just one cell division during the Hb expression window, whereas others undergo two or three divisions (Baumgardt et al., 2009; Doe, 2017; Isshiki et al., 2001) indicating that cell division does not direct this temporal transition within the TTF cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research and observational data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "60de815a-d038-4849-b55a-704544596b6a",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C18",
+      "claim": "Some NBs undergo just one cell division during the Hb expression window, whereas others undergo two or three divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "The TTF expression sequence is largely independent of the cell cycle: some NBs undergo just one cell division during the Hb expression window, whereas others undergo two or three divisions (Baumgardt et al., 2009; Doe, 2017; Isshiki et al., 2001) indicating that cell division does not direct this temporal transition within the TTF cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "76197492-ce54-4f29-896a-1e0a52b6ed38",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C19",
+      "claim": "Cell division does not direct the temporal transition within the TTF cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "The TTF expression sequence is largely independent of the cell cycle: some NBs undergo just one cell division during the Hb expression window, whereas others undergo two or three divisions (Baumgardt et al., 2009; Doe, 2017; Isshiki et al., 2001) indicating that cell division does not direct this temporal transition within the TTF cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that different numbers of divisions occur during the same TTF expression window.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "c566c78e-a012-431a-8c21-3a4ffdd88e6f",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C20",
+      "claim": "Mutations that arrest the cell cycle still allow normal TTF expression from Kr onward.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with that, mutations that arrest the cell cycle still allow normal TTF expression from Kr onward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations of mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "23fc50e7-7cd9-4629-a186-5ce9aa724fb0",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C21",
+      "claim": "NBs can undergo the entire expression sequence when cultured in isolation in vitro indicating TTF timer progression is independent of overall embryo development.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, NBs can undergo the entire expression sequence when cultured in isolation in vitro indicating TTF timer progression is independent of overall embryo development (Brody and Odenwald, 2002; Grosskortenhaus et al., 2005; Kambadur et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "a381d603-4ab3-4f80-af57-fb641ed4fafb",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C22",
+      "claim": "The TTF regulatory circuit contains backward interactions, whereby a TTF inhibits the expression of a TTF upstream in the cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the TTF regulatory circuit, however, we noted that in addition to these activator-relay interactions, the regulatory circuit includes two additional interaction types: backward interactions, whereby a TTF inhibits the expression of a TTF upstream in the cascade, and repressor-decay interactions, whereby an upstream regulator represses the expression of a downstream TTF (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the regulatory circuit structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "24d7fbda-7514-4758-b565-8ad607daf78c",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C23",
+      "claim": "The TTF regulatory circuit contains repressor-decay interactions, whereby an upstream regulator represses the expression of a downstream TTF.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining the TTF regulatory circuit, however, we noted that in addition to these activator-relay interactions, the regulatory circuit includes two additional interaction types: backward interactions, whereby a TTF inhibits the expression of a TTF upstream in the cascade, and repressor-decay interactions, whereby an upstream regulator represses the expression of a downstream TTF (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the regulatory circuit structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "359a89c8-276f-41d9-aa19-66a4c0f6a57d",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C25",
+      "claim": "A model of the TTF timer that includes all experimentally described interactions can be captured by 17 independent parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We formulated a model of the TTF timer that includes all experimentally described interactions, capturing their strengths by 17 independent parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the computational model developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "deede464-9b31-41d4-bee7-566cf407c0fe",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C26",
+      "claim": "Main parameters in the TTF timer model include TTF degradation rates, TTF production rates, and the expression thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Main parameters in this model include TTF degradation rates, TTF production rates, and the expression thresholds defining the minimal TTF expression levels required for activating or repressing the controlled TTF and to confer neuronal identities (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "c3cdbeab-f365-4ed5-9bbe-16064fd45108",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C27",
+      "claim": "A higher density of consistent circuits was observed in the region of repressor-decay timers.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a higher density of consistent circuits in the region of repressor-decay timers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational screening of parameter space.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "c27d7674-2690-42b5-911f-8746ab72386b",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C28",
+      "claim": "The available data is not of sufficient resolution to distinguish whether the in vivo parameters progress the TTF timer through an activator-relay or a repressor-decay timer.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the available data is not of sufficient resolution to distinguish whether the in vivo parameters progress the TTF timer through an activator-relay or a repressor-decay timer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of existing experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "64a4d4ed-fc11-4276-9a65-c574cefcaf84",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C29",
+      "claim": "The time at which a protein decays between two thresholds is only moderately (logarithmically) sensitive to the values of these thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "As we showed, the repressor-decay timer necessarily shows higher robustness under these conditions (Rappaport et al., 2005). The reason for this differential robustness is easily appreciated: the time at which a protein decays between two thresholds is only moderately (logarithmically) sensitive to the values of these thresholds (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by theoretical analysis and citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "1dd672a7-0f5d-4848-b3d4-1ca04e4950d6",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C30",
+      "claim": "The time to increase protein levels between two thresholds depends at least linearly, and typically significantly stronger, on thresholds values.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the time to increase protein levels between two thresholds depends at least linearly, and typically significantly stronger, on thresholds values (Figure 2A\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on theoretical analysis shown in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "baa1609d-faa8-4492-ba56-bffffcf49711",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C31",
+      "claim": "High robustness scores were found in the region of repressor-decay timers, while activator-relay timers were significantly less robust.",
+      "claim_type": "EXPLICIT",
+      "source": "High robustness scores were found in the region of repressor-decay timers, while activator-relay timers were significantly less robust (Figure 2E, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational analysis of robustness scores shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "178f1a2a-5b48-4be8-83ff-7f8a81328533",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C32",
+      "claim": "Robust circuits are only found in a small region in the Kr-Hb sensitivity space, in which Pdm induction time is much more sensitive to Hb than to Kr deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that robust circuits are only found in a small region in the Kr-Hb sensitivity space, in which Pdm induction time is much more sensitive to Hb than to Kr deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational analysis positioning circuits in sensitivity space.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "efc9d8a8-5274-43c7-9398-345da210cd3e",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C33",
+      "claim": "The consequences of TTF deletion and the removal of the respective interaction were tightly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, the consequences of these two perturbations were tightly correlated, in particular when comparing the effect of deleting Kr to the removal of Kr-dependent regulation (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "28957a2f-9fd3-479f-a510-1b85453e7019",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C34",
+      "claim": "Following Pdm and Cas expression timing in mutant embryos has the power to inform about the robustness of the in vivo timer and about the relative contributions of the relay and decay regulations to the TTF progression.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that following Pdm and Cas expression timing in mutant embryos has the power to inform us not only about the robustness of the in vivo timer, but also about the relative contributions of the relay and decay regulations to the TTF progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the computational analysis of TTF deletion phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "ba7e3eea-3a60-4561-8062-e987a1d0e102",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C35",
+      "claim": "Pdm expression was longer than expected: about 180 min.",
+      "claim_type": "EXPLICIT",
+      "source": "It further revealed that Pdm expression was longer than expected: about 180 min (Figure 4C), a time window that is long enough to generate more than the two previously reported Pdm +GMCs (Isshiki et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental measurements shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "a352f754-2095-4479-8cad-a4c969312c9a",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C36",
+      "claim": "Pdm was upregulated when NB7-1 was producing the 4th GMC and downregulated after the NB generated the 7th GMC.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Pdm was upregulated when NB7-1 was producing the 4th GMC and downregulated after the NB generated the 7th GMC (Figure 4E), indicating that four GMCs are produced within the Pdm expression window.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "56672cb1-9bc7-42a0-82f9-b7ceda4e1272",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C37",
+      "claim": "Four GMCs are produced within the Pdm expression window.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Pdm was upregulated when NB7-1 was producing the 4th GMC and downregulated after the NB generated the 7th GMC (Figure 4E), indicating that four GMCs are produced within the Pdm expression window.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the timing of Pdm expression relative to GMC production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "ee871a19-638e-4381-b840-dab6fe4dcbc6",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C38",
+      "claim": "A novel Kr+Pdm+ GMC was observed in the lineage, which was not previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this finding, we observed a novel Kr+Pdm+ GMC in the lineage, which was not previously reported (Isshiki et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "b424706c-d93a-49b0-98e3-6d27b3faef16",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C39",
+      "claim": "Kr mutants did not alter Pdm induction timing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Kr mutants did not alter Pdm induction timing, whereas hb mutants advanced Pdm induction by about two cell-cycles (Figure 5A\u2013C), showing that Pdm induction is more sensitive to deletion of the upstream repressor Hb.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental measurements shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "1811c55b-162b-498e-91c9-85ebfe1133ff",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C40",
+      "claim": "hb mutants advanced Pdm induction by about two cell-cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Kr mutants did not alter Pdm induction timing, whereas hb mutants advanced Pdm induction by about two cell-cycles (Figure 5A\u2013C), showing that Pdm induction is more sensitive to deletion of the upstream repressor Hb.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental measurements shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "6c4a4de5-f4df-4323-a5be-d91684ee25ad",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C41",
+      "claim": "Pdm induction is more sensitive to deletion of the upstream repressor Hb.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Kr mutants did not alter Pdm induction timing, whereas hb mutants advanced Pdm induction by about two cell-cycles (Figure 5A\u2013C), showing that Pdm induction is more sensitive to deletion of the upstream repressor Hb.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data comparing mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "2a73f6e3-7e0e-403e-b605-8f08eda5e49a",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C42",
+      "claim": "pdm mutants did not have as much effect on Cas induction as did Kr mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, pdm mutants did not have as much effect on Cas induction as did Kr mutants, showing that Casinduction is more sensitive to deletion of the upstream repressor Kr rather than the upstream activator Pdm (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental measurements shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "3ec26e56-520f-453b-9db5-8b840fdd2c7f",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C43",
+      "claim": "Cas induction is more sensitive to deletion of the upstream repressor Kr rather than the upstream activator Pdm.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, pdm mutants did not have as much effect on Cas induction as did Kr mutants, showing that Casinduction is more sensitive to deletion of the upstream repressor Kr rather than the upstream activator Pdm (Figure 5D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data comparing mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "7d9aaefe-333c-4817-8843-9db141c6be52",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C44",
+      "claim": "The in vivo circuit is in the region of robust timers that are dominated by repressor-decay interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, the in vivo circuit is in the region of robust timers that are dominated by repressor-decay interactions (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on positioning the in vivo circuit in the Decay-Relay space using experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "60fd98f9-8eb3-4d78-8138-5fd6bb6b6e74",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C45",
+      "claim": "The timing of TTF expression is driven by a repressor-decay mechanism, rather than an activator-accumulation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that the timing of TTF expression is driven by a repressor-decay mechanism, rather than an activator-accumulation mechanism (Figure 5j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion based on all experimental and computational evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "18b6aa38-33c4-45d8-b071-d6c4049f4941",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C46",
+      "claim": "A repressor-decay timer drives the sequential TTF expression to generate stereotyped temporal fate specification in Drosophila embryonic NB lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests that a repressor-decay timer drives the sequential TTF expression to generate stereotyped temporal fate specification in Drosophila embryonic NB lineages (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the study based on all evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "e3c6932b-9b4c-43c5-8457-9d85648030be",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C47",
+      "claim": "A similar activator-relay mechanism was implicated in driving the TTF cascade in Drosophila optic lobe NB lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar activator-relay mechanism was implicated also in driving the TTF cascade in Drosophila optic lobe NB lineages (Bertet et al., 2014; Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "f510daf8-7087-433b-9841-e343ddd32e8d",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C48",
+      "claim": "Kr induction was not included in the analysis since Kr was maintained in hb mutant embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Kr induction was not included in this analysis since we found that Kr was maintained in hb mutant embryos (data not shown (Isshiki et al., 2001)), indicating that Kr is induced by a factor external to the cascade, similarly to Hb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "35197fa2-7dfd-41ed-974e-01cfbea4f318",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C49",
+      "claim": "Kr is induced by a factor external to the cascade, similarly to Hb.",
+      "claim_type": "EXPLICIT",
+      "source": "Kr induction was not included in this analysis since we found that Kr was maintained in hb mutant embryos (data not shown (Isshiki et al., 2001)), indicating that Kr is induced by a factor external to the cascade, similarly to Hb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Kr is maintained in hb mutants.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "90321a05-e98a-4763-8815-64e7f5107907",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C50",
+      "claim": "Kr remained constitutively expressed in embryos which were forced to express constitutive levels of Hb.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, Kr remained constitutively expressed in embryos which were forced to express constitutive levels of Hb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "1f3c6498-8deb-4c3e-a55a-1077fd7ff208",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C51",
+      "claim": "Hb affects Kr expression by determining shut-off time, allowing Kr decay only when Hb decays below a threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while Hb is an activator of Kr, it affects Kr expression not by determining its induction time but rather by determining shut-off time, allowing Kr decay only when Hb decays below a threshold, again implementing a repressor-decay, rather than an activator-relay timer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations of Kr expression in Hb mutants and constitutive Hb expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "e1624797-ea19-4a6a-be21-1dc12bca3bcd",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C52",
+      "claim": "Hb is rapidly degraded during early embryogenesis, with an estimated half-life of ~15 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb is rapidly degraded during early embryogenesis, with an estimated half-life of ~15 min (Okabe-Oho et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "5d0479f6-d289-4493-8bed-b60faf30b1c1",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C53",
+      "claim": "Hb half-life is likely to be similarly short in NBs based on the 1:1 relationship between hb transcriptional activity and Hb protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "While this half-life was not measured directly in NBs, it is likely to be similarly short based on the 1:1 relationship between hb transcriptional activity (detected with an intron probe) and Hb protein levels (detected with an antibody) (Grosskortenhaus et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from cited experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "13b06f84-5827-4891-9f3b-79b429a71aee",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C54",
+      "claim": "Pdm starts expressing when Hb levels reduce to about 1\u201310% of their maximal value.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that Hb mRNA is similarly fast degrading, and that Hb is transcribed for only one cell-cycle, we estimate that Pdm starts expressing when Hb levels reduce to about 1\u201310% of their maximal value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated based on known degradation rates and timing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "3614c410-e06d-4c48-bf89-a69c523a7cbd",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C55",
+      "claim": "The newly discovered Kr+Pdm+ GMC may produce an Eve-negative motor neuron, interneuron, or undergo programmed cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "The newly discovered GMC may produce an Eve-negative motor neuron, interneuron, or undergo programmed cell death (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the fate of the newly identified GMC.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "853bba3e-8ac5-49db-bb65-bb59e472100f",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C56",
+      "claim": "Six motor neurons have previously been reported for the NB7-1 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Six motor neurons have previously been reported for the NB7-1 lineage (Landgraf et al., 1997; Schmid et al., 1999), yet there are only five Eve + motor neurons in the lineage, raising the possibility that this 'new' GMC may produce an Eve-negative motor neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "29e0d83c-6951-43ae-9bf9-98d4b4126166",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C57",
+      "claim": "There are only five Eve+ motor neurons in the NB7-1 lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Six motor neurons have previously been reported for the NB7-1 lineage (Landgraf et al., 1997; Schmid et al., 1999), yet there are only five Eve + motor neurons in the lineage, raising the possibility that this 'new' GMC may produce an Eve-negative motor neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "1d4f194e-f66b-4f14-a31a-9972ba69adf3",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C58",
+      "claim": "Pdm is expressed in a burst during the Hb window.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis also revealed that Pdm is expressed in a burst during the Hb window. This was noted by Isshiki et al. (2001) but neither the functional significance nor the mechanism was discussed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations in this study and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "b742aea0-c323-4ae9-a8c0-3f488cc9ca66",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C59",
+      "claim": "Early Pdm expression may allow it to be inherited in the first-born GMC, where it is required to specify first-born GMC identity together with Hb.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding function, we suggest that this early window of Pdm expression may allow it to be inherited in the first-born GMC, where in at least one lineage (NB4-2) it is required to specify first-born GMC identity, together with Hb (Bhat et al., 1995; Bhat and Schedl, 1994; McDonald et al., 2003; Yang et al., 1993; Yeo et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to prior research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "5c3ec30e-efe8-4fad-8b2f-9e0b544fd989",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C60",
+      "claim": "Early Pdm and Cas expression is likely to be due to independent transcriptional activation of both genes, followed by repression of pdm transcription by Hb protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding mechanism, early Pdm and Cas expression is likely to be due to independent transcriptional activation of both genes, followed by repression of pdm transcription by Hb protein (Kambadur et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to prior research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "0338f317-c93a-4c8e-a899-55fe0a0b4916",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C61",
+      "claim": "The Pdm protein produced from the initial transcriptional burst may persist into the new-born GMC.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pdm protein produced from the initial transcriptional burst, prior to Hb-mediated transcriptional repression, may persist into the new-born GMC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of Pdm inheritance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "6836c896-bc3c-4841-aa8a-3baef948e5a5",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C62",
+      "claim": "There may be a mechanism for blocking Hb repression of pdm transcription specifically in early-forming NBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, there may be a mechanism for blocking Hb repression of pdm transcription specifically in early-forming NBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about an alternative mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "3f5b544b-11ab-4375-a6c6-521280add766",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C63",
+      "claim": "Repressor-decay dominating TTF progression was favored in evolution because it better buffers variation ('noise') in molecular parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that repressor-decay dominating TTF progression was favored in evolution because it better buffers variation ('noise') in molecular parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about evolutionary selection based on robustness analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "941f8c3c-50c6-4315-8fdd-447f6b92cca2",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C64",
+      "claim": "Robust TTF progression is needed to maintain synchrony with the NB division cycles, a prerequisite for generating a reproducible NB lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Robust TTF progression is needed to maintain synchrony with the NB division cycles, a prerequisite for generating a reproducible NB lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for reproducible lineages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "2206facc-d6aa-4baa-bbec-2963f68db401",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C65",
+      "claim": "Activator accumulation requires continuous transcription while repressor degradation occurs following transcription shutdown.",
+      "claim_type": "EXPLICIT",
+      "source": "First, activator accumulation requires continuous transcription while repressor degradation occurs following transcription shutdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the fundamental properties of the two mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "13041f43-68e0-498d-8a4f-7092eebba076",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C66",
+      "claim": "Activator accumulation approaches some steady state, which limits the possible readout thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, activator accumulation approaches some steady state, which limits the possible readout thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the fundamental properties of accumulation dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "a6fcc1da-cab7-4dbb-b69b-27131093e994",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C67",
+      "claim": "Most of the dynamics of activator accumulation is spent close to the steady-state threshold, so that small changes in threshold levels are translated into large changes in the measured delay time.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, most of the dynamics is spent close to this threshold, so that small changes in threshold levels are translated into large changes in the measured delay time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of accumulation dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "a32b2776-7e91-4b37-8bb6-898466da9303",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C68",
+      "claim": "There is no theoretical restriction on the readout threshold as a repressor decays to zero expression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, there is no such (theoretical) restriction on the readout threshold as a repressor decays to zero expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the fundamental properties of decay dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "1e3350c7-5fb0-45be-9aa8-a7ad488c902d",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C69",
+      "claim": "Encoding time-delays by repressor decay greatly promotes robustness.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these properties lead to different buffering capacities, both when considering a single-step timer, and in the context of the full TTF timer model. In all cases, encoding time-delays by repressor decay greatly promotes robustness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical analysis and computational modeling.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "b07f234e-e8af-4009-a4c2-61bf44ffc3ac",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C70",
+      "claim": "The hypothesis that robustness serves as an evolutionary-relevant selection pressure proved useful in defining the evolutionary selected circuit designs in multiple studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothesis that robustness serves as an evolutionary-relevant selection pressure proved useful in defining the evolutionary selected circuit designs in multiple studies from our lab and from others (Alon et al., 1999; Barkai and Leibler, 1997; Eldar et al., 2002; Eldar et al., 2003; Gavish et al., 2016; Hart et al., 2014; Haskel-Ittah et al., 2012), and our current study further supports this notion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "c22dcae1-8af7-4e0d-8a39-ed659dba3655",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C71",
+      "claim": "The need to maintain robust gene expression timing within a noisy biological environment favored evolution of repressor-decay regulatory circuits controlling developmental patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we propose that the need to maintain robust gene expression timing within a noisy biological environment favored evolution of repressor-decay regulatory circuits controlling developmental patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main proposal of the study based on all evidence.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "db0de629-c443-4633-a57e-b381ea57146c",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C72",
+      "claim": "Robustness played a major role in the design of circuits that coordinate spatial patterning through the establishment of morphogen gradients or the control of direct cell-to-cell communication.",
+      "claim_type": "EXPLICIT",
+      "source": "This was previously shown for circuits that coordinate spatial patterning through the establishment of morphogen gradients or the control of direct cell-to-cell communication (Barkai and Shilo, 2009; Eldar et al., 2002; Eldar et al., 2003; Gavish et al., 2016; Rahimi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "ab94645b-7f27-46c3-964f-8f05b88a2e5c",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "claim_id": "C73",
+      "claim": "Robustness also played a major role in the design of developmental timers that function in neuronal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests that robustness also played a major role in the design of developmental timers that function in neuronal differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02650a78-5886-420a-aa96-dd266131a539",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript describes the established Drosophila neuroblast (NB) system where NBs undergo asymmetric divisions to produce ganglion mother cells (GMCs) that generate neurons, with neuronal identity determined by temporal transcription factors (TTFs: Hb, Kr, Pdm, Cas) expressed sequentially in the NB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C13 describe well-established background knowledge about the Drosophila NB system, supported by multiple citations to prior research. These claims provide the foundational context for the study and are consistently reported in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "78fe9a71-12c2-43df-9b75-2358025bf6be",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The TTF timer operates largely independently of the cell cycle and external developmental signals, with Hb initiated by external signals but subsequent TTF dynamics depending on cross-regulation between TTFs themselves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 are supported by multiple citations to prior experimental work showing that TTF progression is independent of cell division (C17-C20) and can occur in isolated NBs in vitro (C21). The evidence from mutants and in vitro culture experiments strongly supports this independence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "69477de7-07fc-4d98-b71d-737b1dc01e89",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The TTF regulatory circuit contains both activator-relay interactions (commonly described) and repressor-decay interactions, where TTF expression can begin when its repressor decays, in addition to backward inhibitory interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C22-C23 are supported by analysis of the regulatory circuit structure shown in Figure 1B. The identification of repressor-decay interactions alongside the traditionally described activator-relay is based on documented regulatory relationships, though the relative contribution of each mechanism was previously unknown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "9fc28bd0-ee3f-4ea5-a1b6-6e1d091a9c0a",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A computational model with 17 parameters was developed to capture all experimentally described TTF interactions. Screening parameter space revealed that consistent circuits are distributed across both repressor-decay and activator-relay timer regimes, with higher density in the repressor-decay region, but existing low-resolution data cannot distinguish which mechanism dominates in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 describe the computational modeling approach and its results. The model formulation (C25-C26) is clearly described in methods. The finding that consistent circuits span both timer types (C27-C28) is supported by Figure 1H, appropriately acknowledging the limitation that low-resolution data cannot definitively distinguish the mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "5659de93-d3f2-4f6d-9376-fe114f167633",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Theoretical analysis demonstrates that repressor-decay timers are more robust to parameter variations than activator-relay timers because decay time depends logarithmically on thresholds while accumulation time depends at least linearly on thresholds. Computational screening confirmed that robust circuits cluster in the repressor-decay region of parameter space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C29-C32 present the theoretical robustness analysis supported by prior work (Rappaport et al., 2005) and new computational results. The mathematical reasoning for differential robustness (C29-C30) is sound, and the computational analysis (C31-C32, Figure 2E) consistently shows higher robustness scores for repressor-decay timers across multiple noise levels (Figure 2\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "e151fd69-fb4f-4674-b21b-0cec23c47d7c",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Computational analysis revealed that TTF deletion phenotypes are tightly correlated with removal of specific regulatory interactions, particularly for Kr deletion and Kr-to-Pdm regulation, indicating that measuring TTF expression timing in mutants can distinguish between activator-relay and repressor-decay mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by the correlation analysis shown in Figure 3C-F. The tight correlation between TTF deletion and specific interaction removal (especially for Kr, C33) validates that deletion phenotypes can inform about regulatory mechanism contributions. This motivated the high-resolution experimental measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "47457d23-f720-4802-85fb-13daf69f8fbb",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "High-resolution quantification revealed that Pdm expression lasts approximately 180 minutes, longer than previously reported, during which NB7-1 produces four GMCs (4th through 7th), including a previously unreported Kr+Pdm+ GMC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by experimental data in Figures 4C and 4E. The quantification methodology is clearly described, and the identification of the novel Kr+Pdm+ GMC (C38) is consistent with the extended Pdm expression window. The finding revises previous understanding based on higher temporal resolution measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "84894dff-b485-49c1-b642-03f64ffec6b1",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mutant analysis at high temporal resolution showed that Pdm induction timing is insensitive to Kr deletion but advances by ~2 cell cycles in hb mutants, while Cas induction is more sensitive to Kr deletion than pdm deletion, demonstrating that both TTFs are induced primarily by repressor decay rather than activator relay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by experimental measurements in Figure 5A-F. The differential sensitivity to repressor versus activator deletion is clearly demonstrated for both Pdm (C39-C41) and Cas (C42-C43). The methodology for determining induction stages is described in Materials and methods, and the data directly address the central question of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "34fb7df9-fb05-4f70-bdde-adbb27c089e2",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Integration of experimental mutant data with computational modeling positioned the in vivo TTF circuit in the region of robust, repressor-decay-dominated timers in parameter space, leading to the conclusion that TTF progression is driven primarily by repressor-decay rather than activator-relay mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 represent the main conclusion, supported by combining experimental data (C39-C43) with computational predictions (C32). Figure 5G-I shows how experimental measurements position the in vivo circuit in the decay-dominated region. The conclusion is well-supported by converging evidence from theory, computation, and experiment, though the authors appropriately acknowledge limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "76f6cfbc-4c30-4d98-b745-e11446492fa9",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Kr is maintained in hb mutants and remains constitutively expressed under constitutive Hb, indicating that Kr is induced by an external factor and that Hb controls Kr shut-off timing rather than induction, implementing a repressor-decay rather than activator-relay mechanism for the Hb-Kr transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by experimental observations (C48, C50) and logical inference (C49, C51). The finding that Kr persists in hb mutants and under constitutive Hb expression provides strong evidence that Hb functions to terminate rather than initiate Kr expression, consistent with a decay-based mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "f1992643-1655-463f-8cf9-a2270e19ae09",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Based on Hb's rapid degradation (half-life ~15 min in early embryogenesis, likely similar in NBs based on transcription-protein correlation), and assuming Hb transcription for one cell cycle, Pdm expression begins when Hb levels decay to approximately 1-10% of maximum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 combine cited measurements (C52) with reasonable inferences (C53-C54). The half-life estimate is from prior work, the inference about NBs is justified by the 1:1 transcription-protein relationship, and the threshold estimate (C54) is consistent with the timing data and theoretical framework, though it remains an estimate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "bfad09ab-6c52-459f-960b-33a620611425",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The newly discovered Kr+Pdm+ GMC may produce an Eve-negative motor neuron, interneuron, or undergo programmed cell death, potentially accounting for the discrepancy between six reported motor neurons and five Eve+ motor neurons in the NB7-1 lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C57 present speculation (C55) alongside established facts (C56-C57). While the observation of five Eve+ motor neurons (C57) is data-supported, the fate of the newly identified GMC (C55) is explicitly speculative. The discrepancy with prior reports (C56) provides context but doesn't definitively resolve the GMC's fate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "059c7c6a-d1fd-46d8-9396-4f2f61166cee",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Pdm shows an early expression burst during the Hb window, which may allow Pdm inheritance in first-born GMCs where it specifies identity together with Hb. The mechanism likely involves independent transcriptional activation followed by Hb-mediated repression, with Pdm protein persisting into the GMC, or alternatively a mechanism blocking Hb repression in early NBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 is supported by data and prior observations, but C59-C62 are explicitly speculative about function and mechanism. While the speculation is reasonable and supported by citations to related work (C59-C60), these remain hypotheses requiring experimental validation. The alternative mechanisms (C61-C62) are presented appropriately as possibilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "ac357bbf-82cd-4be4-b6c0-1b74ed9f032a",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose that repressor-decay-dominated TTF progression was evolutionarily favored because it provides superior robustness to parameter variations, which is necessary to maintain synchrony between TTF progression and cell division cycles. This robustness advantage stems from fundamental differences in the dynamics of protein decay versus accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69 present the evolutionary interpretation and mechanistic explanation for robustness differences. While the evolutionary claim (C63) is speculative, it is well-supported by the demonstrated robustness advantage (C69) and the requirement for synchrony (C64). The mechanistic explanation (C65-C68) is based on sound theoretical principles about accumulation versus decay dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    },
+    {
+      "id": "019261be-64ca-4e3a-9b13-f3b5549fc301",
+      "content_id": "c32e03a0-9f9c-4bcd-8958-7c8f626885b7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study proposes that robustness serves as an evolutionary selection pressure favoring repressor-decay circuits in developmental patterning, extending previous findings about robustness in spatial patterning circuits to temporal patterning in neuronal differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 place the findings in broader context. The hypothesis that robustness drives circuit design (C70) is supported by multiple prior studies. The main proposal (C71, C73) extends this principle from spatial to temporal patterning, supported by the current findings. While the evolutionary claim remains untested experimentally (as acknowledged), it is well-grounded in the demonstrated robustness differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:31:41.809224Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "48139dd0-4b04-43c6-8a9f-6770d6d0eddd",
+      "result_id": "02650a78-5886-420a-aa96-dd266131a539"
+    },
+    {
+      "claim_id": "b0aff837-1ce6-43bb-bd4b-3615bfb937b5",
+      "result_id": "02650a78-5886-420a-aa96-dd266131a539"
+    },
+    {
+      "claim_id": "a5c8bec4-7b8d-43fe-99a4-168a9c837766",
+      "result_id": "02650a78-5886-420a-aa96-dd266131a539"
+    },
+    {
+      "claim_id": "2909b074-b630-4806-aa6d-bfd31f40f891",
+      "result_id": "02650a78-5886-420a-aa96-dd266131a539"
+    },
+    {
+      "claim_id": "d9122c04-fc20-4e8b-a73b-215ea0ccdb23",
+      "result_id": "02650a78-5886-420a-aa96-dd266131a539"
+    },
+    {
+      "claim_id": "f6004650-189f-49fa-8339-f348da06641f",
+      "result_id": "02650a78-5886-420a-aa96-dd266131a539"
+    },
+    {
+      "claim_id": "36c2c595-9953-4a83-a40c-4681e1dda163",
+      "result_id": "78fe9a71-12c2-43df-9b75-2358025bf6be"
+    },
+    {
+      "claim_id": "115d40fb-f960-49f6-8a0c-11c9d6acbe58",
+      "result_id": "78fe9a71-12c2-43df-9b75-2358025bf6be"
+    },
+    {
+      "claim_id": "c7880a90-f085-42f3-a10d-8f721b120772",
+      "result_id": "78fe9a71-12c2-43df-9b75-2358025bf6be"
+    },
+    {
+      "claim_id": "3bcf8af2-c44d-456c-9cbc-eb49339cedfe",
+      "result_id": "78fe9a71-12c2-43df-9b75-2358025bf6be"
+    },
+    {
+      "claim_id": "60de815a-d038-4849-b55a-704544596b6a",
+      "result_id": "78fe9a71-12c2-43df-9b75-2358025bf6be"
+    },
+    {
+      "claim_id": "76197492-ce54-4f29-896a-1e0a52b6ed38",
+      "result_id": "78fe9a71-12c2-43df-9b75-2358025bf6be"
+    },
+    {
+      "claim_id": "c566c78e-a012-431a-8c21-3a4ffdd88e6f",
+      "result_id": "78fe9a71-12c2-43df-9b75-2358025bf6be"
+    },
+    {
+      "claim_id": "23fc50e7-7cd9-4629-a186-5ce9aa724fb0",
+      "result_id": "78fe9a71-12c2-43df-9b75-2358025bf6be"
+    },
+    {
+      "claim_id": "b34d09ed-7f64-4ee8-99bb-bb6f310c1ba4",
+      "result_id": "69477de7-07fc-4d98-b71d-737b1dc01e89"
+    },
+    {
+      "claim_id": "b531fa03-a7f4-4ba8-a271-79e50f1daa1b",
+      "result_id": "69477de7-07fc-4d98-b71d-737b1dc01e89"
+    },
+    {
+      "claim_id": "a381d603-4ab3-4f80-af57-fb641ed4fafb",
+      "result_id": "69477de7-07fc-4d98-b71d-737b1dc01e89"
+    },
+    {
+      "claim_id": "24d7fbda-7514-4758-b565-8ad607daf78c",
+      "result_id": "69477de7-07fc-4d98-b71d-737b1dc01e89"
+    },
+    {
+      "claim_id": "359a89c8-276f-41d9-aa19-66a4c0f6a57d",
+      "result_id": "9fc28bd0-ee3f-4ea5-a1b6-6e1d091a9c0a"
+    },
+    {
+      "claim_id": "deede464-9b31-41d4-bee7-566cf407c0fe",
+      "result_id": "9fc28bd0-ee3f-4ea5-a1b6-6e1d091a9c0a"
+    },
+    {
+      "claim_id": "c3cdbeab-f365-4ed5-9bbe-16064fd45108",
+      "result_id": "9fc28bd0-ee3f-4ea5-a1b6-6e1d091a9c0a"
+    },
+    {
+      "claim_id": "c27d7674-2690-42b5-911f-8746ab72386b",
+      "result_id": "9fc28bd0-ee3f-4ea5-a1b6-6e1d091a9c0a"
+    },
+    {
+      "claim_id": "61ae9d42-f7fa-43af-be20-66483a739a10",
+      "result_id": "5659de93-d3f2-4f6d-9376-fe114f167633"
+    },
+    {
+      "claim_id": "64a4d4ed-fc11-4276-9a65-c574cefcaf84",
+      "result_id": "5659de93-d3f2-4f6d-9376-fe114f167633"
+    },
+    {
+      "claim_id": "1dd672a7-0f5d-4848-b3d4-1ca04e4950d6",
+      "result_id": "5659de93-d3f2-4f6d-9376-fe114f167633"
+    },
+    {
+      "claim_id": "baa1609d-faa8-4492-ba56-bffffcf49711",
+      "result_id": "5659de93-d3f2-4f6d-9376-fe114f167633"
+    },
+    {
+      "claim_id": "178f1a2a-5b48-4be8-83ff-7f8a81328533",
+      "result_id": "5659de93-d3f2-4f6d-9376-fe114f167633"
+    },
+    {
+      "claim_id": "efc9d8a8-5274-43c7-9398-345da210cd3e",
+      "result_id": "e151fd69-fb4f-4674-b21b-0cec23c47d7c"
+    },
+    {
+      "claim_id": "28957a2f-9fd3-479f-a510-1b85453e7019",
+      "result_id": "e151fd69-fb4f-4674-b21b-0cec23c47d7c"
+    },
+    {
+      "claim_id": "ba7e3eea-3a60-4561-8062-e987a1d0e102",
+      "result_id": "47457d23-f720-4802-85fb-13daf69f8fbb"
+    },
+    {
+      "claim_id": "a352f754-2095-4479-8cad-a4c969312c9a",
+      "result_id": "47457d23-f720-4802-85fb-13daf69f8fbb"
+    },
+    {
+      "claim_id": "56672cb1-9bc7-42a0-82f9-b7ceda4e1272",
+      "result_id": "47457d23-f720-4802-85fb-13daf69f8fbb"
+    },
+    {
+      "claim_id": "ee871a19-638e-4381-b840-dab6fe4dcbc6",
+      "result_id": "47457d23-f720-4802-85fb-13daf69f8fbb"
+    },
+    {
+      "claim_id": "b424706c-d93a-49b0-98e3-6d27b3faef16",
+      "result_id": "84894dff-b485-49c1-b642-03f64ffec6b1"
+    },
+    {
+      "claim_id": "1811c55b-162b-498e-91c9-85ebfe1133ff",
+      "result_id": "84894dff-b485-49c1-b642-03f64ffec6b1"
+    },
+    {
+      "claim_id": "6c4a4de5-f4df-4323-a5be-d91684ee25ad",
+      "result_id": "84894dff-b485-49c1-b642-03f64ffec6b1"
+    },
+    {
+      "claim_id": "2a73f6e3-7e0e-403e-b605-8f08eda5e49a",
+      "result_id": "84894dff-b485-49c1-b642-03f64ffec6b1"
+    },
+    {
+      "claim_id": "3ec26e56-520f-453b-9db5-8b840fdd2c7f",
+      "result_id": "84894dff-b485-49c1-b642-03f64ffec6b1"
+    },
+    {
+      "claim_id": "7d9aaefe-333c-4817-8843-9db141c6be52",
+      "result_id": "34fb7df9-fb05-4f70-bdde-adbb27c089e2"
+    },
+    {
+      "claim_id": "60fd98f9-8eb3-4d78-8138-5fd6bb6b6e74",
+      "result_id": "34fb7df9-fb05-4f70-bdde-adbb27c089e2"
+    },
+    {
+      "claim_id": "18b6aa38-33c4-45d8-b071-d6c4049f4941",
+      "result_id": "34fb7df9-fb05-4f70-bdde-adbb27c089e2"
+    },
+    {
+      "claim_id": "f510daf8-7087-433b-9841-e343ddd32e8d",
+      "result_id": "76f6cfbc-4c30-4d98-b745-e11446492fa9"
+    },
+    {
+      "claim_id": "35197fa2-7dfd-41ed-974e-01cfbea4f318",
+      "result_id": "76f6cfbc-4c30-4d98-b745-e11446492fa9"
+    },
+    {
+      "claim_id": "90321a05-e98a-4763-8815-64e7f5107907",
+      "result_id": "76f6cfbc-4c30-4d98-b745-e11446492fa9"
+    },
+    {
+      "claim_id": "1f3c6498-8deb-4c3e-a55a-1077fd7ff208",
+      "result_id": "76f6cfbc-4c30-4d98-b745-e11446492fa9"
+    },
+    {
+      "claim_id": "e1624797-ea19-4a6a-be21-1dc12bca3bcd",
+      "result_id": "f1992643-1655-463f-8cf9-a2270e19ae09"
+    },
+    {
+      "claim_id": "5d0479f6-d289-4493-8bed-b60faf30b1c1",
+      "result_id": "f1992643-1655-463f-8cf9-a2270e19ae09"
+    },
+    {
+      "claim_id": "13b06f84-5827-4891-9f3b-79b429a71aee",
+      "result_id": "f1992643-1655-463f-8cf9-a2270e19ae09"
+    },
+    {
+      "claim_id": "3614c410-e06d-4c48-bf89-a69c523a7cbd",
+      "result_id": "bfad09ab-6c52-459f-960b-33a620611425"
+    },
+    {
+      "claim_id": "853bba3e-8ac5-49db-bb65-bb59e472100f",
+      "result_id": "bfad09ab-6c52-459f-960b-33a620611425"
+    },
+    {
+      "claim_id": "29e0d83c-6951-43ae-9bf9-98d4b4126166",
+      "result_id": "bfad09ab-6c52-459f-960b-33a620611425"
+    },
+    {
+      "claim_id": "1d4f194e-f66b-4f14-a31a-9972ba69adf3",
+      "result_id": "059c7c6a-d1fd-46d8-9396-4f2f61166cee"
+    },
+    {
+      "claim_id": "b742aea0-c323-4ae9-a8c0-3f488cc9ca66",
+      "result_id": "059c7c6a-d1fd-46d8-9396-4f2f61166cee"
+    },
+    {
+      "claim_id": "5c3ec30e-efe8-4fad-8b2f-9e0b544fd989",
+      "result_id": "059c7c6a-d1fd-46d8-9396-4f2f61166cee"
+    },
+    {
+      "claim_id": "0338f317-c93a-4c8e-a899-55fe0a0b4916",
+      "result_id": "059c7c6a-d1fd-46d8-9396-4f2f61166cee"
+    },
+    {
+      "claim_id": "6836c896-bc3c-4841-aa8a-3baef948e5a5",
+      "result_id": "059c7c6a-d1fd-46d8-9396-4f2f61166cee"
+    },
+    {
+      "claim_id": "3f5b544b-11ab-4375-a6c6-521280add766",
+      "result_id": "ac357bbf-82cd-4be4-b6c0-1b74ed9f032a"
+    },
+    {
+      "claim_id": "941f8c3c-50c6-4315-8fdd-447f6b92cca2",
+      "result_id": "ac357bbf-82cd-4be4-b6c0-1b74ed9f032a"
+    },
+    {
+      "claim_id": "2206facc-d6aa-4baa-bbec-2963f68db401",
+      "result_id": "ac357bbf-82cd-4be4-b6c0-1b74ed9f032a"
+    },
+    {
+      "claim_id": "13041f43-68e0-498d-8a4f-7092eebba076",
+      "result_id": "ac357bbf-82cd-4be4-b6c0-1b74ed9f032a"
+    },
+    {
+      "claim_id": "a6fcc1da-cab7-4dbb-b69b-27131093e994",
+      "result_id": "ac357bbf-82cd-4be4-b6c0-1b74ed9f032a"
+    },
+    {
+      "claim_id": "a32b2776-7e91-4b37-8bb6-898466da9303",
+      "result_id": "ac357bbf-82cd-4be4-b6c0-1b74ed9f032a"
+    },
+    {
+      "claim_id": "1e3350c7-5fb0-45be-9aa8-a7ad488c902d",
+      "result_id": "ac357bbf-82cd-4be4-b6c0-1b74ed9f032a"
+    },
+    {
+      "claim_id": "b07f234e-e8af-4009-a4c2-61bf44ffc3ac",
+      "result_id": "019261be-64ca-4e3a-9b13-f3b5549fc301"
+    },
+    {
+      "claim_id": "c22dcae1-8af7-4e0d-8a39-ed659dba3655",
+      "result_id": "019261be-64ca-4e3a-9b13-f3b5549fc301"
+    },
+    {
+      "claim_id": "db0de629-c443-4633-a57e-b381ea57146c",
+      "result_id": "019261be-64ca-4e3a-9b13-f3b5549fc301"
+    },
+    {
+      "claim_id": "ab94645b-7f27-46c3-964f-8f05b88a2e5c",
+      "result_id": "019261be-64ca-4e3a-9b13-f3b5549fc301"
+    }
+  ],
+  "comparisons": []
+}

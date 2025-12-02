@@ -1,0 +1,2155 @@
+{
+  "submission": {
+    "id": "347928f4-b5e0-4d13-951f-bb8ee423f437",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:17:53.184918Z",
+    "updated_at": "2025-12-02T11:17:53.184918Z"
+  },
+  "content": [
+    {
+      "id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "submission_id": "347928f4-b5e0-4d13-951f-bb8ee423f437",
+      "content_type": "manuscript",
+      "content_text": "# Distinct ipRGC subpopulations mediate light\u2019s acute and circadian effects on body temperature and sleep\n\n## Authors\n\n- Alan C Rupp<sup>1</sup> ([ORCID: 0000-0001-5363-4494](https://orcid.org/0000-0001-5363-4494))\n- Michelle Ren<sup>2</sup>\n- Cara M Altimus<sup>1</sup>\n- Diego C Fernandez<sup>1</sup>\n- Melissa Richardson<sup>1</sup>\n- Fred Turek<sup>2</sup>\n- Samer Hattar<sup>1</sup> ([ORCID: 0000-0002-3124-9525](https://orcid.org/0000-0002-3124-9525))\n- Tiffany M Schmidt<sup>2</sup> ([ORCID: 0000-0002-4791-6775](https://orcid.org/0000-0002-4791-6775)) \u2020\n\n### Affiliations\n\n1. Department of Biology Johns Hopkins University Baltimore United States\n2. Department of Neurobiology Northwestern University Evanston United States\n3. Department of Neuroscience Johns Hopkins University Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe light environment greatly impacts human alertness, mood, and cognition by both acute regulation of physiology and indirect alignment of circadian rhythms. These processes require the melanopsin-expressing intrinsically photosensitive retinal ganglion cells (ipRGCs), but the relevant downstream brain areas involved remain elusive. ipRGCs project widely in the brain, including to the central circadian pacemaker, the suprachiasmatic nucleus (SCN). Here we show that body temperature and sleep responses to acute light exposure are absent after genetic ablation of all ipRGCs except a subpopulation that projects to the SCN. Furthermore, by chemogenetic activation of the ipRGCs that avoid the SCN, we show that these cells are sufficient for acute changes in body temperature. Our results challenge the idea that the SCN is a major relay for the acute effects of light on non-image forming behaviors and identify the sensory cells that initiate light\u2019s profound effects on body temperature and sleep.\n\n## Introduction\n\nMany essential functions are influenced by light both indirectly through alignment of circadian rhythms (photoentrainment) and acutely by a direct mechanism (sometimes referred to as \u2018masking\u2019) (Mrosovsky et al., 1999; Altimus et al., 2008; Lupi et al., 2008; Tsai et al., 2009; LeGates et al., 2012). Dysregulation of the circadian system by abnormal lighting conditions has many negative consequences, which has motivated decades of work to identify the mechanisms of circadian photoentrainment (Golombek and Rosenstein, 2010). In contrast, it has only recently become apparent that light exposure can also acutely influence human alertness, cognition, and physiology (Chellappa et al., 2011). As a result, there is a developing awareness of light quality in everyday life (Lucas et al., 2014). It is therefore essential to human health and society to elucidate the circuitry and coding mechanisms underlying light\u2019s acute effects.\n\nIntriguingly, a single population of retinal projection neurons\u2014intrinsically photosensitive retinal ganglion cells (ipRGCs)\u2014have been implicated in the circadian and acute effects of light on many functions, including activity, sleep, and mood (G\u00f6z et al., 2008; G\u00fcler et al., 2008; Hatori et al., 2008; LeGates et al., 2012; Fernandez et al., 2018). ipRGCs integrate light information from rods, cones, and their endogenous melanopsin phototransduction cascade (Schmidt et al., 2011), and relay that light information to over a dozen central targets (Hattar et al., 2006; Ecker et al., 2010). However, the circuit mechanisms mediating ipRGC-dependent functions are largely unknown.\n\nOne notable exception is the control of circadian photoentrainment. It is accepted that ipRGCs mediate photoentrainment by direct innervation of the master circadian pacemaker, the suprachiasmatic nucleus (SCN) of the hypothalamus (G\u00f6z et al., 2008; G\u00fcler et al., 2008; Hatori et al., 2008; Jones et al., 2015). This is supported by studies demonstrating that genetic ablation of ipRGCs results in mice with normal circadian rhythms that \u2018free-run\u2019 with their endogenous rhythm, independent of the light/dark cycle (G\u00f6z et al., 2008; G\u00fcler et al., 2008; Hatori et al., 2008). Further, mice with genetic ablation of all ipRGCs except those that project to the SCN and intergeniculate leaflet (IGL) display normal circadian photoentrainment (Chen et al., 2011), suggesting that ipRGC projections to the SCN/IGL are sufficient for photoentrainment.\n\nIn comparison, the mechanisms by which ipRGCs mediate acute light responses remain largely a mystery. Genetic ablation of ipRGCs or their melanopsin phototransduction cascade blocks or attenuates the acute effects of light on sleep (Altimus et al., 2008; Lupi et al., 2008; Tsai et al., 2009), wheel-running activity (Mrosovsky and Hattar, 2003; G\u00fcler et al., 2008), and mood (LeGates et al., 2012; Fernandez et al., 2018). This dual role of ipRGCs in circadian and acute light responses suggests they may share a common circuit mechanism. However, whether the circuit basis for ipRGCs in the acute effects of light and circadian functions is through common or divergent pathways has yet to be determined. ipRGCs project broadly in the brain beyond the SCN (Hattar et al., 2002; Hattar et al., 2006; Gooley et al., 2003; Baver et al., 2008). Additionally, ipRGCs are comprised of multiple subpopulations with distinct genetic, morphological, and electrophysiological signatures (Baver et al., 2008; Schmidt and Kofuji, 2009; Ecker et al., 2010; Schmidt et al., 2011) and distinct functions (Chen et al., 2011; Schmidt et al., 2014). Though there are rare exceptions (Chen et al., 2011; Schmidt et al., 2014), the unique roles played by each ipRGC subsystem remain largely unknown.\n\nIt is currently unknown whether distinct ipRGC subpopulations mediate both the acute and circadian effects of light, and two major possibilities exist for how this occurs: (1) ipRGCs mediate both acute and circadian light responses through their innervation of the SCN or (2) ipRGCs mediate circadian photoentrainment through the SCN, but send collateral projections elsewhere in the brain to mediate acute light responses. To date, the predominant understanding has centered on a role for the SCN in both acute and circadian responses to light (Muindi et al., 2014; Morin, 2015; Bedont et al., 2017). However, this model has been controversial due to complications associated with SCN lesions (Redlin and Mrosovsky, 1999) and alternative models proposing a role for direct ipRGC input to other central targets (Redlin and Mrosovsky, 1999; Lupi et al., 2008; Tsai et al., 2009; Hubbard et al., 2013; Muindi et al., 2014). Here, we sought to address the question of how environmental light information\u2014through ipRGCs\u2014mediates both the circadian and acute regulation of physiology. To do so, we investigated the ipRGC subpopulations and coding mechanisms that mediate body temperature and sleep regulation by light. We find that a molecularly distinct subset of ipRGCs is required for the acute, but not circadian, effects of light on thermoregulation and sleep. These findings suggest that, contrary to expectations, functional input to the SCN is not sufficient to drive the acute effects of light on these behaviors. These findings provide new insight into the circuits through which light regulates behavior and physiology.\n\n## Results\n\n### Brn3b-positive ipRGCs are required for light\u2019s acute effects on thermoregulation\n\nTo identify mechanisms of acute thermoregulation, we maintained mice on a 12 hr/12 hr light/dark cycle and then presented a 3 hr light pulse two hours into the night (Zeitgeber time 14, ZT14) while measuring core body temperature (Figure 1A). The nocturnal light pulse paradigm is well-established for studying acute regulation of sleep and wheel-running activity (Mrosovsky et al., 1999; Mrosovsky and Hattar, 2003; Altimus et al., 2008; Lupi et al., 2008). We focused first on body temperature because of its critical role in cognition and alertness (Wright et al., 2002; Darwent et al., 2010), sleep induction and quality (Kr\u00e4uchi et al., 1999), metabolic control (Kooijman et al., 2015), and circadian resetting (Buhr et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig1-v1.jpg)\n\n**Figure 1.:** (A) Paradigm to measure body temperature continuously in a 12:12 light dark cycle with a 3 hr light pulse at ZT14. (B) 48 hr of continuous body temperature monitoring in wildtype male mice (n\u00a0=\u00a013) (C) Relative body temperature in WT during light pulse, compared to baseline (ZT14). p<0.001, paired t-test of mean temperature compared to previous night. (D) Melanopsin-only mice (Gnat1-/-; Gnat2-/-, n\u00a0=\u00a011) and (E) melanopsin knockout (Opn4-/-, n\u00a0=\u00a06) 48 hr diurnal body temperature. (F) Diurnal body temperature amplitude in the three groups. p>0.347 for effect of group by one-way ANOVA. (G) Body temperature in melanopsin-only during light pulse, relative to baseline (ZT14). (H) Paired comparison of mean body temperature during light pulse compared to previous night. p<0.001 by paired t-test. (I) Body temperature in melanopsin knockout during light pulse, relative to baseline (ZT14). (J) Paired comparison of mean body temperature during light pulse compared to previous night. All summarized data are mean\u00a0\u00b1\u00a0standard deviation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Experimental paradigm consisting of a 12 hr/12 hr light/dark cycle with a single 3 hr light pulse starting at Zeitgeber time (ZT) 14 (i.e. 2 hr after lights-off). Each experimental night, a light pulse was given at a specific environmental light intensity ranging from 1 to 1000 lux in log10 increments. (B) Mean body temperature for wildtype mice (n\u00a0=\u00a04) that were administered a light pulse at ZT14 of varying intensity (shown as shades of gray). Robust thermoregulation by light only occurs at bright intensities. Black and white bars on the x axis refer to time of lights-off and lights-on. (C) Quantification of the mean body temperature during the 3 hr light pulse for the wildtype mice in B) (n\u00a0=\u00a04, mean\u00a0\u00b1\u00a0SD) fit with a smooth regression curve (LOESS). There is a statistically significant effect of light intensity on body temperature (p<0.001), as determined by a linear mixed model with fixed effect of light intensity and random effect of mouse.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Relative change from ZT14 in mean body temperature in Wildtype (n\u00a0=\u00a015), Melanopsin-only (Gnat1-/-;Gnat2-/-, n\u00a0=\u00a011) or Melanopsin KO (Opn4-/-, n\u00a0=\u00a06) for the 3 hr during the light pulse (Light) or during the previous control night (Ctrl; ZT14\u201317). Columns and error bars represent mean\u00a0\u00b1\u00a0standard deviation and dots represent individual animals. P values from linear mixed model with fixed effects of genotype and light exposure and a random effect of mouse.\n\nBody temperature photoentrains to the light/dark cycle with peaks during the night and troughs during the day (Figure 1B). Both rodents and humans utilize ocular light detection to acutely adjust body temperature in response to a nocturnal light pulse (Dijk et al., 1991; Cajochen et al., 2005), though how this body temperature change is initiated by the retina and relayed to the brain is unknown. When we presented wildtype mice with a nocturnal light pulse, we observed a decrease in both body temperature and general activity compared to the previous night (Figure 1C). The decrease in body temperature and activity was sustained for the entire 3 hr stimulus, with moderate rundown (Figure 1C).\n\nWe observed that acute body temperature regulation only occurred at relatively bright light intensities (>100 lux) (Figure 1\u2014figure supplement 1). This, in combination with previous reports that body temperature regulation is most sensitive to short-wavelength light (Cajochen et al., 2005), suggested that it might be mediated by the insensitive and blue-shifted melanopsin phototransduction (Lucas et al., 2001; Do et al., 2009). To test this, we measured body temperature in mice lacking either functional rods and cones (melanopsin-only: Gnat1-/-; Gnat2-/-) or lacking melanopsin (melanopsin KO: Opn4-/-). Both genotypes photoentrained their body temperature (Figure 1D,E), with an amplitude indistinguishable from wildtype (Figure 1F). However, we found that acute body temperature decrease to a nocturnal light pulse was present in melanopsin-only mice (Gnat1-/-; Gnat2-/-) (Figure 1G,H and Figure 1\u2014figure supplement 2), but absent from melanopsin knockout mice (Opn4-/-) (Figure 1I,J and Figure 1\u2014figure supplement 2). This indicates that melanopsin is critical for light\u2019s ability to drive acute body temperature decreases, as it is for acute sleep induction (Altimus et al., 2008; Lupi et al., 2008; Tsai et al., 2009). These results suggest that ipRGCs are the only retinal cells that are necessary and sufficient for acute thermoregulation by light.\n\nipRGCs comprise multiple subtypes (M1-M6) with distinct gene expression profiles, light responses, and central projections (Schmidt et al., 2011; Quattrochi et al., 2019), prompting us to ask which subtypes mediate acute thermoregulation. ipRGCs can be molecularly subdivided based on whether they express the transcription factor Brn3b. Brn3b(+) ipRGCs project to many structures including the olivary pretectal nucleus (OPN) and dorsal lateral geniculate nucleus (dLGN), but largely avoid the SCN (Chen et al., 2011; Li and Schmidt, 2018). In contrast, Brn3b(\u2013) ipRGCs project extensively to the SCN and intergeniculate leaflet (IGL), while avoiding the OPN and dLGN (Chen et al., 2011). Non-M1 (i.e. M2-M6) ipRGC subtypes express Brn3b, along with the majority of M1 ipRGCs. Interestingly, just 200 (out of 700\u2013800) M1 ipRGCs lack any Brn3b expression (Chen et al., 2011). Ablation of Brn3b(+) ipRGCs using melanopsin-Cre and a Cre-dependent diphtheria toxin knocked into the Brn3b locus (Brn3b-DTA: Opn4Cre/+;Brn3bzDTA/+) removes virtually all ipRGC input to brain areas aside from the SCN and IGL (Chen et al., 2011; Li and Schmidt, 2018), and these mice lack a pupillary light reflex and show deficits in contrast sensitivity, but retain circadian photoentrainment of wheel-running activity (Chen et al., 2011; Schmidt et al., 2014).\n\nWhen we measured body temperature in Brn3b-DTA mice, we found that their body temperature was photoentrained with a similar amplitude to controls (Figure 2A\u2013C). However, despite the presence of melanopsin in the Brn3b(-) ipRGCs of Brn3b-DTA mice (Opn4Cre/+;Brn3bzDTA/+), they did not acutely decrease body temperature in response to a nocturnal light pulse (Figure 2F,G). Importantly, melanopsin heterozygous littermate controls (Opn4Cre/+) displayed normal acute thermoregulation by light (Figure 2D,E), indicating that halving melanopsin gene dosage is not the cause of the impaired body temperature decrease in Brn3b-DTA mice. Additionally, when we compared the change in body temperature of Control to Brn3b-DTA mice during that light pulse, we found that Control mice showed a significantly larger decrease in body temperature (Figure 2\u2014figure supplement 1). These results demonstrate that Brn3b(+) ipRGCs are required for acute thermoregulation by light but not photoentrainment of body temperature and reveal that light information to the SCN is sufficient for circadian photoentrainment of body temperature, but not its acute regulation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig2-v1.jpg)\n\n**Figure 2.:** (A) Diurnal body temperature in control (Opn4Cre/+, n\u00a0=\u00a09) and (B) Brn3b-DTA (Opn4Cre/+;Brn3bDTA/+, n\u00a0=\u00a07). (C) Diurnal body temperature amplitude in the two groups. p=0.223 by t-test. (D) Body temperature in control during light pulse, relative to baseline (ZT14). (E) Paired comparison of mean body temperature during light pulse compared to previous night. p=0.001 by paired t-test. (F) Body temperature in Brn3b-DTA during light pulse, relative to baseline (ZT14). (G) Paired comparison of mean body temperature during light pulse compared to previous night. p=0.287 by paired t-test. All summarized data are mean \u00b1 standard deviation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Relative change from ZT14 in mean body temperature in Control (Opn4Cre/+, n\u00a0=\u00a09) or Brn3b-DTA mice (Opn4Cre/+;Brn3bzDTA/+, n\u00a0=\u00a07) for the 3 hr during the light pulse (Light) or during the previous control night (Ctrl; ZT14-17). Columns and error\u00a0bars represent mean\u00a0\u00b1\u00a0standard deviation and dots represent individual animals. P values from linear mixed model with fixed effects of genotype and light exposure and a random effect of mouse.\n\n### Brn3b-positive ipRGCs are sufficient for acute thermoregulation\n\nOur data thus far suggest that there are two functionally distinct populations of ipRGCs that regulate thermoregulation: (1) Brn3b(\u2013) ipRGCs that project to the SCN to mediate circadian photoentrainment of body temperature and (2) Brn3b(+) ipRGCs that project elsewhere in the brain and are necessary to mediate acute thermoregulation. If Brn3b(+) ipRGCs are not just necessary, but also sufficient, for acute thermoregulation, then activation of this population at ZT14 should result in a body temperature decrease. To test if Brn3b(+) ipRGCs are sufficient for acute thermoregulation, we expressed a chemogenetic activator in Brn3b(+) RGCs (Figure 3A, Brn3bCre/+ with intravitreal AAV2-hSyn-DIO-hM3Dq-mCherry, we refer to these mice as Brn3b-hM3Dq). As a control, we also injected this virus into Control (Brn3b+/+) littermates. We then injected both genotypes first with PBS at ZT14 on the first night, and CNO at ZT14 on the second night. This technique allowed for statistical within animal comparisons of body temperature changes in response to PBS versus CNO injection. Importantly, CNO did not cause a significant decrease in body temperature in the absence of hM3Dq (Figure 3\u2014figure supplement 1). This technique allowed us to acutely activate the Brn3b(+) RGCs with the DREADD agonist clozapine N-oxide (CNO) (Armbruster et al., 2007). We found that after intravitreal viral delivery, many RGCs were infected, including melanopsin-expressing ipRGCs (Figure 3A and Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig3-v1.jpg)\n\n**Figure 3.:** (A) Diagram of intravitreal delivery of AAV2-hSyn-DIO-hM3Dq-mCherry to Brn3bCre/+ mice, and confirmation of infection of ipRGCs. (B) 54 hr continuous diurnal body temperature recordings in Brn3b-hM3Dq mice, with injections of PBS then CNO on consecutive nights at ZT14. (C) Change in body temperature after PBS injection, relative to baseline (time of injection). (D) Change in body temperature after CNO injection, relative to baseline (time of injection). (E) Paired comparison of the change in body temperature with either PBS or CNO injection, compared to temperature at injection time. p=0.002 by paired t-test. All summarized data are mean\u00a0\u00b1\u00a0standard deviation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) mCherry expression (magenta) from Brn3b-Cre with AAV-DIO-hM3D(Gq)-mCherry injected in to the retina and colocalized with melanopsin (OPN4, green). Scale bar\u00a0=\u00a050 \u00b5m. (B) Quantification of mCherry/OPN4 colocalization (n\u00a0=\u00a03) mice. (C) The same data as in B, expressed as the fraction of OPN4\u00a0+cells that colocalize with mCherry expression (n\u00a0=\u00a03 mice). (D) Relative change in mean body temperature in Control (n\u00a0=\u00a09) or Brn3b-Cre mice (n\u00a0=\u00a08) injected with AAV-DIO-hM3D(Gq)-mCherry for the 6 hr following PBS or CNO injection, compared to temperature at injection time. Columns and error bars represent mean\u00a0\u00b1\u00a0standard deviation and dots represent individual animals. P values from linear mixed model with fixed effects of genotype and light exposure and a random effect of mouse.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Body temperature of wildtype mice (n\u00a0=\u00a09) was monitored continuously and PBS was injected on night one at ZT14, followed by CNO injection (1 mg/kg) on night two at ZT14. (B,C) Normalized body temperature of either (B) PBS or (C) CNO injection, relative to baseline temperature\u00a0prior to injection. Both injections generate a rapid body temperature increase, followed by a dip below the reference value, before returning to normal. (D) Paired comparisons of body temperature changes in response to either PBS or CNO administration, relative to temperature at baseline. All summarized data are mean\u00a0\u00b1\u00a0standard deviation.\n\nThe body temperature of Brn3b-hM3Dq mice photoentrained to a normal light/dark cycle (Figure 3B). Following CNO administration to Brn3b-hM3Dq mice at ZT14 to depolarize Brn3b(+) RGCs, we observed a robust decrease in body temperature that lasted at least 6 hr (Figure 3D). Importantly, PBS administration in Brn3b-hM3Dq mice (Figure 3C) and nocturnal CNO administration in wildtype control mice (Figure 3\u2014figure supplement 2) had no measurable effect on body temperature, while CNO administration significantly decreased body temperature in Brn3b-hM3Dq compared to pre-injection temperature (Figure 3\u2014figure supplement 2). Together, these results demonstrate that Brn3b(+) ipRGCs mediate the acute effects of light on body temperature though extra-SCN projection(s), while Brn3b(\u2013) ipRGCs mediate circadian photoentrainment of body temperature by projections to the SCN and/or IGL.\n\n### Brn3b-positive ipRGCs are required for light\u2019s acute effects on sleep\n\nWe next examined the contribution of Brn3b(+) and Brn3b(-) ipRGCs to sleep. To do this, we used EEG and EMG recordings to compare the sleep behavior of Control (Opn4Cre/+) and Brn3b-DTA mice. We first analyzed the daily sleep patterns and proportion of rapid eye movement (REM) and non-REM (NREM) sleep in Control and littermate Brn3b-DTA animals. We found that Brn3b-DTA mice show normal photoentrainment of sleep and similar percent time of sleep across the 24 hour day, with only one 30 min bin at ZT12 (light offset) showing a significant difference between Control and Brn3b-DTA animals (Figure 4A,B). This is consistent with previous reports of normal circadian photoentrainment of daily activity rhythms in Brn3b-DTA mice (Chen et al., 2011). Control and Brn3b-DTA mice also showed similar total percent time awake or asleep across an entire day (Figure 4C), though Brn3b-DTA mice showed a small, but significant, increase in the proportion of total sleep that was classified as NREM and decrease in the proportion of total sleep that was classified as REM (Figure 4\u2014figure supplement 1A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C) Percent time spent asleep in 1 hr bins across the 24 hr day for (A) Control (black) mice (n\u00a0=\u00a014) and (B) Brn3b-DTA (blue) mice (n\u00a0=\u00a013) lacking Brn3b-positive ipRGCs. Both lines showed normal photoentrainment of sleep, with no main effect of genotype compared to Control by repeated-measures two-way ANOVA (F (1, 25)=1.108, p=0.303). Brn3b-DTA mice showed a significant reduction in sleep only at lights off (ZT 12) by Sidak\u2019s multiple comparisons test (p=0.029). (C) Percent time spent awake and asleep in Control (black) and Brn3b-DTA mice (blue). No differences were observed between genotypes by t-test (p=0.316). (D\u2013G) Percent time spent asleep for (D) Control mice (black) and (F) Brn3b-DTA mice (blue) at baseline (dark line) and during the three hour light pulse (light line). Significant difference from baseline determined by repeated measures two-way ANOVA. Significant effect of treatment for Controls (F (1, 13)=38.09, p<0.001), but not for Brn3b-DTA (F (1, 12)=0.8496, p=0.375). (E) Control mice show significantly more sleep and less wake during a light pulse (paired t-test) while (G) Brn3b-DTA mice showed no change in percent sleep or wake during the same period. Data are mean for ZT14\u201317. All summarized data are mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Percent sleep recorded across the 24 hour day as NREM vs. REM in Control (black) and Brn3b-DTA mice (blue). Brn3b-DTA mice showed a small but significant increase in NREM and decrease in REM sleep compared to Control mice. REM: rapid eye movement, NREM: non-REM. Control: n\u00a0=\u00a014. Brn3b-DTA: n\u00a0=\u00a013. *p=0.011 by t-test. (B, C) Sleep stage quantification during ZT14-17, either baseline night or light pulse. No significant differences were seen in either (B) Control or (C) Brn3b-DTA mice by paired t-test. All summarized data are mean\u00a0\u00b1\u00a0SEM.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Relative change in sleep time in Control (Opn4Cre/+, n\u00a0=\u00a014) or Brn3b-DTA mice (Opn4Cre/+;Brn3bzDTA/+, n\u00a0=\u00a013) for the 3 hr during the light pulse or during the previous control night (ZT14-17). Columns and errorbars represent mean\u00a0\u00b1\u00a0SEM and dots represent individual animals. P values from linear mixed model with fixed effects of genotype and light exposure and a random effect of mouse.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44358/elife-44358-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Control (Opn4Cre/+, n\u00a0=\u00a05) and (B) Brn3b-DTA (Opn4Cre/+;Brn3bDTA/+, n\u00a0=\u00a06) were housed in a 12:12 LD cycle and subjected to a 3 hr light pulse starting at ZT14. (C) Activity counts in 30 min bins for both groups. Wheel revolutions were normalized to the average activity for the 1 hr preceding the light pulse. Shading represents SEM. While both groups display robust wheel-running inhibition in response to the light pulse, Brn3b-DTA mice had a mild deficit compared to Controls (p=0.039 by linear mixed model).\n\nWe hypothesized that this small difference in sleep at lights-off in Brn3b-DTA mice could be due to a defect in their acute response to light for sleep modulation. To test this, we subjected mice to a 3 hr light pulse from ZT14\u201317 (Altimus et al., 2008), when the homeostatic drive for sleep is low and Control and Brn3b-DTA animals display similar amounts of sleep (Figure 4A,B). We found that in Control mice, a light pulse decreased time awake and increased time asleep relative to baseline (previous day) (Figure 4C,D), while in Brn3b-DTA mice a light pulse caused no change in total percent time asleep or awake (Figure 4F,G), but moderately increased sleep in the first 30 min bin (Figure 4F). Importantly, when we compared the time spent asleep during the light pulse between control and Brn3b-DTA animals, the control mice slept significantly more (Figure 4\u2014figure supplement 2). Neither Control nor Brn3b-DTA animals showed any change in proportion of non-REM or REM sleep in response to the light pulse (Figure 4\u2014figure supplement 1B,C). These data show that Brn3b(+) ipRGCs are necessary for the acute light induction of sleep. Consistent with our body temperature data, although Brn3b-DTA mice have apparently normal input to the SCN and show normal circadian photoentrainment of wheel-running activity (Chen et al., 2011), body temperature (Figure 2), and sleep (Figure 4), this ipRGC innervation of the SCN is not sufficient to drive the normal light induction of sleep. These disruptions in light\u2019s acute effects on thermoregulation and sleep are circuit specific effects because Brn3b-DTA mice showed robust inhibition of wheel running behavior to a 3 hr light pulse delivered from ZT14-17 (Figure 4\u2014figure supplement 3).\n\n## Discussion\n\nWe show here that for the same physiological outcome, the acute effects of light are relayed through distinct circuitry from that of circadian photoentrainment, despite both processes requiring ipRGCs. Our results suggest that for thermoregulation and sleep, ipRGCs can be genetically and functionally segregated into Brn3b(+) \u2018acute\u2019 cells, and Brn3b(\u2013) \u2018circadian\u2019 cells. Because Brn3b(+) cells largely avoid the SCN, and Brn3b(\u2013) cells preferentially target the SCN, our results discount a critical role for the SCN in acute light responses in these two behaviors, and instead implicate direct ipRGC projections to other brain areas (Gooley et al., 2003; Hattar et al., 2006). Surprisingly, Brn3b(-) cells are sufficient to drive the acute and circadian effects of light on wheel running activity, demonstrating further divergence in the circuits mediating the acute effects of light on behavior, and suggesting that, unlike for thermoregulation and sleep, acute and circadian regulation of activity is driven via the SCN.\n\nOur results indicate that activation of Brn3b(+) RGCs at ZT14 using the Brn3bCre line in combination with Gq-DREADDs is sufficient to induce a body temperature decrease. Because other (non-ipRGC) RGC types express Brn3b (Badea et al., 2009), this manipulation likely also activated multiple non-ipRGCs in addition to Brn3b(+) ipRGCs. However, our data indicate that melanopsin signaling (Figure 1), and therefore ipRGCs, are required for the acute effects of light on thermoregulation. Moreover, when we ablate Brn3b(+) ipRGCs, this acute effect of light on thermoregulation is also lost (Figure 2), again arguing for a necessity of ipRGCs for this behavior. Therefore, though we are unable to specifically activate only Brn3b(+) ipRGCs using available genetic tools, we think it highly likely that the temperature changes driven by the activation of all Brn3b(+) RGCs is occurring through ipRGCs.\n\nThe specific Brnb(+) ipRGC subtypes that mediate the light\u2019s acute effects on body temperature and sleep remain a mystery. A majority of all known ipRGC subtypes (M1\u2013M6) are lost in Brn3b-DTA mice (Chen et al., 2011), with the exception of a subset of\u00a0~200 M1 ipRGCs. In agreement with this, ipRGC projections to all minor hypothalamic targets are lost in Brn3b-DTA mice, while innervation of the SCN and part of the IGL remains intact (Chen et al., 2011; Li and Schmidt, 2018). This suggests that all non-M1 subtypes and a portion of M1 ipRGCs are Brn3b(+). Each subtype has a distinct reliance on melanopsin versus rod/cone phototransduction for light detection (Schmidt and Kofuji, 2009). The necessity and sufficiency of melanopsin in mediating acute effects of light on body temperature (Figure 1) and sleep (Altimus et al., 2008; Lupi et al., 2008; Tsai et al., 2009) suggests that a subtype with strong melanopsin, but weak rod/cone photodetection is responsible \u2013 possibly either M1 or M2 cells. However, experiments to tease this apart will require novel methods to specifically manipulate ipRGC subtypes that are currently unavailable.\n\nThe brain areas that mediate the acute effects of light on physiology are essentially unknown. There are many candidate areas that both receive direct ipRGC innervation and have been documented to be involved in light\u2019s acute effects on physiology, including the preoptic areas (Muindi et al., 2014), the ventral subparaventricular zone (Kramer et al., 2001), and the pretectum/superior colliculus (Miller et al., 1998). Aside from the SCN, ipRGC projections to the median (MPO) and ventrolateral preoptic (VLPO) areas have been the most widely supported. The preoptic areas are involved in sleep and body temperature regulation (Szymusiak and McGinty, 2008; Nakamura, 2011) and are activated by an acute light pulse (Lupi et al., 2008; Tsai et al., 2009). In support of our behavioral findings, ipRGC projections to each of these areas is lost in Brn3b-DTA animals (Li and Schmidt, 2018). However, ipRGC projections to these areas are sparse (Gooley et al., 2003; Hattar et al., 2006), suggesting their activation by light may be indirect.\n\nIn contrast, the superior colliculus (SC) and pretectum receive robust innervation from ipRGCs (Hattar et al., 2002; Hattar et al., 2006; Gooley et al., 2003; Ecker et al., 2010), their lesioning blocks light\u2019s acute effects on sleep (Miller et al., 1998), and melanopsin knockout mice lose light-induced cFOS expression in the SC (Lupi et al., 2008). However, the SC and pretectum receive robust innervation from many conventional RGCs, making the requirement for melanopsin and ipRGCs in acute sleep and body temperature regulation difficult to reconcile. It is also possible (and perhaps probable), that multiple ipRGC target regions are involved, with distinct areas mediating distinct physiological responses. Future studies silencing each retinorecipient target while activating Brn3b(+) ipRGCs will be necessary to tease apart the downstream circuits mediating light\u2019s acute effects on physiology.\n\nAlternatively, it remains possible that direct ipRGC control of body temperature is the primary and critical step for many acute responses to light that are mediated by ipRGCs. In support of this possibility, changes in body temperature and heat loss can directly influence sleep induction (Kr\u00e4uchi et al., 1999). This change in sleep is in turn presumably causative of at least some of light\u2019s effects on wheel-running and general activity (Mrosovsky et al., 1999). Further, core body temperature can acutely regulate cognition and alertness (Wright et al., 2002; Darwent et al., 2010). It is therefore possible that ipRGCs can have widespread influence on an animal\u2019s basic physiology and cognitive function simply by regulating body temperature.\n\nTogether, our identification of the photopigment and the retinal circuits mediating acute body temperature and sleep induction will facilitate better methods to promote or avoid human alertness and cognition at appropriate times of day (Chellappa et al., 2011). Our results support many recent efforts to capitalize on the specific light-detection properties of melanopsin (Lucas et al., 2014), such as its insensitivity and short-wavelength preference, to promote or avoid its activation at different times of day. However, this approach is problematic because acute activation of melanopsin to promote alertness has the unintended effect of shifting the circadian clock (Provencio et al., 1994), thereby making subsequent sleep difficult. Our identification that the Brn3b(+) ipRGCs specifically mediate light\u2019s acute effects on body temperature provides a cellular basis for developing targeted methods for promoting acute alertness, while minimizing circadian misalignment.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Opn4tauLacZ</td>\n      <td>Hattar et al., 2002</td>\n      <td>Jax: 021153 RRID:MGI:5520170</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Gnat1-/-</td>\n      <td>PMID: 11095744</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Gnat2Cpfl3</td>\n      <td>PMID: 17065522</td>\n      <td>Jax: 006795</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Opn4Cre</td>\n      <td>Ecker et al., 2010</td>\n      <td>RRID:MGI:5285910</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Brn3bzDTA</td>\n      <td>Chen et al., 2011</td>\n      <td>RRID:MGI:5285910</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Mus musculus)</td>\n      <td>Brn3bCre</td>\n      <td>PMID: 24608965</td>\n      <td>RRID:IMSR_JAX:030357</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-OPN4 (rabbit polyclonal)</td>\n      <td>Advanced Targeting Systems</td>\n      <td>AB-N38 (1:1000) RRID:AB_1608077</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>AlexaFluor 488, anti-rabbit (goat polyclonal)</td>\n      <td>Life Technologies</td>\n      <td>A-11008 (1:1000) RRID:AB_143165</td>\n    </tr>\n    <tr>\n      <td>Viral reagent</td>\n      <td>AAV2-hSyn-DIO-hM3Dq-mCherry</td>\n      <td>UNC Vector Core</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Clozpine-N-oxide</td>\n      <td>Sigma</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>R 3.5.2</td>\n      <td>https://cran.r-project.org/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software</td>\n      <td>Graphpad Prism 7.0</td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals (body temperature)\n\nAll procedures were conducted in accordance with NIH guidelines and approved by the Institutional Animal Care and Use Committee of Johns Hopkins University. All mice were maintained on a mixed C57Bl/6J; 129Sv/J background and kept on ad libitum food and water under a 12 hr/12 hr light/dark cycle in group housing until experimentation, with temperature and humidity control. Male and female mice between the ages of 2 and 6 months were used for analysis.\n\n### Body temperature recordings\n\nEach mouse was single-housed at the time of experiment. Surgery was conducted under tribromoethanol (Avertin) anestheshia and a telemetric probe (Starr G2 E-Mitter) was implanted in the peritoneal cavity to monitor core body temperature and general activity. Data were collected in continuous 1- or 2 min bins using VitalVIEW software and analyzed in Microsoft Excel. All experiments were conducted at least 10 days after surgery. Lights were controlled by a programmable timer and all lights were 6500K CFL bulbs illuminated each cage at\u00a0~500 lux. Light intensity (Figure 1\u2014figure supplement 1) was modulated using neutral density filters (Roscolux).\n\nBrn3bCre/+ or Control littermate mice were anesthetized with tribromoethanol (Avertin) and 0.5\u20131 \u00b5l AAV2-hSyn-DIO-hM3Dq-mCherry (UNC Vector Core) was injected intravitreally in one eye using a picospritzer and pulled pipet. At least one week later, animals underwent surgery for implantation of telemetric probes (as above). All experiments were conducted at least 10 days after telemetric probe implantation and at least three weeks after viral injection. After behavior, the eyes of each animal were inspected to ensure that\u00a0>50% infection had been achieved (assessed by fluorescence detectable across more than half of the retina). We routinely saw\u00a0>80% of the retinas were infected as we have described previously (Keenan et al., 2016).\n\nDiurnal amplitude was measured by subtracting the mean body temperature for the light cycle (ZT0-12) from the mean body temperature for the dark cycle (ZT12-24). Mean body temperature during testing used all data from ZT14-17. Comparisons were performed in one of two ways. First, we compared the mean body temperature during this period on the control (dark) night to that on the night where the light pulse was given. Additionally, we compared the change in body temperature between ZT14 (which served as a baseline) and the mean body temperature from ZT14-17 between the control night and the night where the light pulse was given. For CNO experiments, injections were carried out near ZT14, but specific times were recorded for each mouse to align the data to the time of injection. Comparisons of mean body temperature after PBS or CNO utilized the 6 hr following injection.\n\nClozapine-N-oxide (Sigma) was prepared as a 0.1 mg/ml solution in PBS and injected at 1 mg/kg intraperitoneally at ZT14.\n\n### Animals (Sleep)\n\nAll procedures were conducted in accordance with NIH guidelines and approved by the Institutional Animal Care and Use Committee of Northwestern University. Opn4Cre and Brn3bz-dta were maintained on a mixed C57Bl/6J; 129Sv/J background (Hattar et al., 2002; Hattar et al., 2006; Mu et al., 2005). Male and female littermate Opn4Cre/+ and Opn4Cre/+; Brn3bz-dta/+ animals between the ages of 2 and 3 months were used for sleep analysis.\n\n### Sleep recording\n\nMale and female littermate Opn4Cre/+ and Opn4Cre/+; Brn3bz-dta/+ mice were used for sleep recordings. Electroencephalogram (EEG) and electromyogram (EMG) electrode implantation was performed simultaneously at 8 weeks of age. Mice were anesthetized with a ketamine/xylazine (98 and10 mg/kg respectively) and a 2-channel EEG and 1-channel EMG implant (Pinnacle Technology) was affixed to the skull. Mice were transferred to the sleep-recording cage 6 days after surgery, tethered with a preamplifier, and allowed 3 days to acclimate to the new cage and tether. Mice were housed in 12:12 light/dark conditions before and after EEG implantation. EEG and EMG recording began simultaneously at the end of the habituation period, which were displayed on a monitor and stored in a computer for analysis of sleep states. The high pass filter setting for both EEG channels was set at 0.5 Hz and low pass filtering was set at 100 Hz. EMG signals were high pass filtered at 10 Hz and subjected to a 100 Hz low pass cutoff. EEG and EMG recordings were collected in PAL 8200 sleep recording software (Pinnacle Technology) and scored, using a previously described, multiple classifier, automatic sleep scoring system, into 10 s epochs as wakefulness, NREM sleep, or REM sleep on the basis of rodent sleep criteria (Gao et al., 2016). Light source for all sleep experiments was a 3000 Kelvin light source at 500 lux.\n\n### Wheel-running activity and masking experiment\n\nMice were placed in cages with a 4.5-inch running wheel, and their activity was monitored with VitalView software (MiniMitter). Analyses of wheel running activity were calculated with ClockLab (Actimetrics). We used 500 lux light intensity. Mice were initially placed under 12:12 LD masking experiments. Mice were exposed, in their home cage, to a timer-controlled 3 hr light pulse at ZT14-ZT17. Percent activity for each mouse was normalized to its own activity at ZT13 (1 hr before light pulse), and analyzed in 30 min bins.\n\n### Tissue staining and imaging\n\nAnimals were anesthetized with Avertin and euthanized prior to fresh dissection of retinas in PBS. Retinas were fixed in 4% paraformaldehyde (Sigma) for at least 1 hr on ice. Retinas were then washed in PBS before staining overnight in anti-OPN4 antibody (1:1000, Advanced Targeting Systems) and then washed prior to 2 hr in secondary antibody (1:1000 goat anti-rabbit AlexaFluor 488, Life Technologies). Retinas were then flat-mounted on slides and imaged on a Zeiss LSM 710 confocal microscope.\n\n### Statistics\n\nAll statistical tests were performed in Graphpad Prism or R 3.4.4. Specific tests are listed in the text and figure legends. Linear mixed models were performed with the R packages lme4 1.1\u201321 and emmeans 1.3.4.\n\n### Data availability\n\nAll raw data are linked to this manuscript and available online.\n",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "fa7997e6-6012-47dd-8003-27512689652b",
+      "submission_id": "347928f4-b5e0-4d13-951f-bb8ee423f437",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen Liberles, Harvard Medical School United States\n\nReviewers:\n- Stephen Liberles, Harvard Medical School United States\n\n## Review text\n\nDOI: [10.7554/eLife.44358.023](https://doi.org/10.7554/eLife.44358.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Distinct ipRGC subpopulations mediate light's acute and circadian effects on body temperature and sleep\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Stephen Liberles as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Catherine Dulac as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers were generally positive about the submitted work, but also raised important caveats that would need to be addressed prior to publication. In particular, all three reviewers raised concerns about the specificity of gain-of-function experiments involving DREADDs. Furthermore, reviewer #2 raised an important statistical concern questioning the validity of results involving ablation of Brn3b(+) ipRGCs. Some other information about Brn3b expression, and model validation is also requested. Finally, two of the reviewers thought that additional positive insights into brain regions that may mediate observed effects would broaden the impact and appeal of the paper, but after discussion, it was recognized that this would add significant time for additional experiments, so we leave it only as a suggestion to you for improving your paper rather than as an essential revision. I attached the full reviews below in case they are helpful, and also indicate which requests were considered essential.\n\nEssential revisions:\n\n1) Address questions about the gain-of-function DREADD model used. (See reviewer #1 comment #2, reviewer #2 comment #2, and reviewer #3 comment #5).\n\n2) Address statistical concerns (see reviewer #2, comment #1 and reviewer #3, comment #4).\n\n3) Provide additional information about Brn3b(+) ipRGCs. (See reviewer #1 comment #3)\n\nReviewer #1:\n\nThis nice study provides evidence that the acute effects of melanopsin on body temperature and sleep regulation are mediated by ipRGCs that do not target the SCN. The topic would be interesting to the broad readership of eLife, and the data appear generally convincing with experiments well performed. This manuscript relies predominantly on loss-of-function and gain-of-function manipulations of ipRGC subpopulations containing Brn3b, and some further characterization of mouse models is needed to support conclusions. Also, the Brn3b population still seems quite broad, so positive identification of brain regions relevant for observed effects would strengthen the paper.\n\n1) Brn3b(+) ipRGCs project to multiple brain regions; evidence in this paper is largely negative for SCN-projecting ipRGCs, but does not provide positive evidence for other brain regions. It seems tractable to address this using the DREADD-based approach presented in Figure 3. For example, Cre-dependent DREADD-encoding AAVs could be injected into various recipient brain regions of Opn4Cre mice. (One caveat of such an experiment is if individual ipRGCs project to multiple target nuclei, but it would help strengthen the case against SCN involvement).\n\n2) Some validation of the mice used in Figure 3 would be helpful; after AAV injection in Brn3b-Cre mice, are DREADDs expressed in other retinal cell types? Are DREADDs expressed centrally in the brain?\n\n3) Some background information about Brn3b expression would be helpful in the Introduction. What% of all ipRGCs express Brn3b, and what% of those that target the SCN and other key nuclei express Brn3b?\n\nReviewer #2:\n\nIn this study the authors use intersectional transgenic to determine that ipRGCs contribute to acute changes in body temperature and sleep that are triggered by light. Furthermore, they determine that the population of ipRGCs that mediates these acute change in temperature and sleep is distinct from the population that mediates photoentrainment of circadian rhythms-circadian rhythms instead account for the modulation of body temperature and sleep on a circadian (24 hour) timescale. The evidence to support this conclusion is threefold. First, Opn4ko mice lack acute, light-induced changes in body temperature, while mice lacking rod- or cone-mediated phototransduction retain these acute light-induced changes. This indicates that ipRGCs whose light response is dominated by melanopsin are responsible for mediating this effect. Second, mice that lack the ipRGCs that project to non-SCN targets in the brain also lack acute-light-induced changes in body temperature. Note, in this case, the ipRGCs are killed by diptheriatoxin. Third, activation of all Brn3b(+) RGCs (which is most of them), including Brn3b(+) ipRGCs, via DREADDs induced a drop in body temperature. Finally, the authors show that killing Brn3b(+) ipRGCs prevents acute light-induced sleep, though it is not clear whether this is via the same pathway as acute light-induced changes in temperature.\n\nThe observation that different ipRGC-subtypes mediate photoentrainment of circadian rhythm vs. light-induced acute changes in sleep and body temperature through distinct circuits is significant. The data are clearly presented. However, I have a major concern about the primary effect as described in comment #1 below. Comment #2 is also important but more easily addressed.\n\n1) Figure 2G: The authors argue that there is no acute change in body temperature in mice lacking Brn3b(+) ipRGCs. However, 5/7 mice still have a temperature decrease that is comparable in size to the temperature decrease in control mice. Therefore, the correct comparison to make to test their hypothesis is between the change in body temperature in the Opn4Cre/+ Brn3bDTA/+ mice vs. the Opn4Cre/+ (control) mice. This is a major comment that needs to be addressed by the authors.\n\n2) Figure 3: For the DREADD experiment, hM3Dq is expressed in all RGCs that are Brn3b(+). Hence, the induction of temperature changes could be via an entirely different pathway, potentially involving the dLGN. For this reason, it would be important for the authors to state exactly how much transfection they saw and what percent of ipRGCs express the DREAAD. For example, the authors should explain whether their 50% transfection criterion is 50% of ipRGCs or of all RGCs? (subsection \u201cBody temperature recordings\u201d, second paragraph). The authors need to include this caveat in the discussion of this result. In addition, the example image is not large enough for the reader to draw any conclusion about the expression of hM3Dq, except that it is widespread. A larger image and annotations where overlap exists between anti-Opn4 antibody and mCherry would help the interpretation of this figure.\n\nReviewer #3:\n\nThe authors investigate the contribution of melanopsin expressing intrinsically photosensitive ganglion cells to two aspects of photo-regulated behavior- temperature and sleep. They conduct genetic and functional experiments in an attempt to demonstrate that Brn3b(+)melanopsin RGCs are responsible for 'acute' responses to a light pulse. There is much to like about this paper, including the compelling nature of the question. The paper is also well written. However, there are several issues with the manuscript that result in a somewhat lukewarm view of the paper in its current form for eLife. These include the following:\n\n1) Scientific claims of the paper appear overstated. In the Abstract the authors write that \"body temperature and sleep responses to light are absent after genetic ablation of all ipRGC.\" Given this, one would expect dramatically reduced responses to light. Instead, nearly all light induced temperature and sleep responses are intact in each of the mutant genotypes analyzed. The difference that are observed are relatively small and restricted to turning on the lights for 3 hours at night. The title also claims that \"distinct ipRGC subpopulations\" regulate light's acute affect. The Brn3b-DTA model they use ablates nearly all melanopsin (likely upwards of ~90%, Discussion). To call this a distinct subset seems a bit problematic. This leads to issue two:\n\n2) Somewhat incremental advance in the field. The primary news of the manuscript seems to be that melanopsin is not required for the majority of body temperature regulation by light (leaving one wondering what is) but only for 'acute' responses when light is turned on at a specific point in the dark cycle. This finding, while interesting, does not dramatically move the field forward.\n\n3) Sparse data. Overall, the depth of the experiments and statistical rigor leaves some room for improvement. There are many more experiments the authors themselves mention that would greatly improve the quality of the manuscript. Chief among these are data on true melanopsin ipRGC subtypes and their role in these responses. In parallel the authors do not address the role of particular brain regions in these behaviors. While these studies are difficult, they would greatly elevate this paper. But several other simpler experiments would also help. These include: (1) repeating the studies using only wavelengths of light to which only melanopsin responds to rule out effects from other opsins (479nm or blue light); (2) performing tracing experiments to the brain from single ipRGCs; and (3) a more complete study of the 'acute' light responses which could include examining the effects of a shorter light burst.\n\n4) Lack of appropriate statistical comparisons. The key conclusions of the central figures rely on differences between changes in body temperature between control and experimental groups. While the authors statistically compare light and dark temperatures within each group, they do not appear to compare between them in Figures 1, 2, or 3. This would be required to validate the central claims of the figures and includes statistically comparisons of data in Figure 1G and I, Figure 2D and F, and Figure 3D and F.\n\n5) Problematic gain of function experiments. In Figure 3, the authors attempt to show that activation of Brn3b(+) melanopsin+ RGCs induces temperature decreases. However, from the image shown, less than ~10% of OPN4+ ipRGCs are transduced, and even more problematic, ~90% of the transduced RGCs are not OPN4+ ipRGCs. Thus, the main conclusion we can draw is that RGC activation broadly induces a temperature decrease. This experiment would need to be repeated using the OPN4Cre driver that is featured in the other figures.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Distinct ipRGC subpopulations mediate light's acute and circadian effects on body temperature and sleep\" for consideration by eLife. Your article has been reviewed by one peer reviewer (prior reviewer #2), and the evaluation has been overseen by a Reviewing Editor and Catherine Dulac as the Senior Editor. The reviewer has opted to remain anonymous.\n\nThe Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nA major concern of reviewer #2 persists (please see comment #1 below). Perhaps repeating the experiment with a new cohort of mice would clarify. Also, the new supplementary figure (Figure 3\u2014figure supplement 1D) seems to indicate that CNO exerts an effect in control mice (comment #3 below), an issue which needs to be addressed. Finally, please note other comments related to statistical comparisons (points #4,5).\n\nReviewer #2:\n\n1) The primary concern regarding the data in Figure 2 is not fully addressed. The authors present the data as before and it still appears that 5/7 Brn3b-DTA mice had a temperature decrease comparable to that of control mice. Also, two control mice have a temperature difference that is less than that of the Brn3b-DTA mice.\n\nThe authors did add a new supplementary figure (Figure 2\u2014figure supplement 1) that would directly compare the temperature changes across genotypes and resolve our concern. However, if these are the same mice that are plotted in Figure 2, then some mistake has been made or the data are analyzed in a different way that is not clearly explained. What the reader expects is for the changes in body temperature from the dark to light condition portrayed in Figure 2E (Control mice) to be compared to those from Figure 2G (Brn3b-DTA mice) but the body temperature changes in Figure 2\u2014figure supplement 1 appear to originate from a different data set. For example, Figure 2\u2014figure supplement 1 portrays two Control mice with a temperature decrease of more than 1 degree, but there is no Control mouse in Figure 2E that exhibited a -1 degree change in temperature, let alone a -1.5 degree change. The authors need to look at their data closely \u2013 either what is plotted in Figure 2 or what is plotted in Figure 2\u2014figure supplement 1 is incorrect.\n\n2) The authors have provided a quantification of the RGCs that express the DREAADs for the gain-of-function experiment in Figure 3. This is important to provide, and it appears that 50% of all RGCs are expressing the DREAAD. The authors make the argument that the DREAADs expressed in ipRGCs are likely the only impactful ones based on their finding that melanopsin expression by ipRGCs is required for the change in body temperature evoked by a light pulse during subjective night and that ipRGCs are on their own sufficient to evoke the change in body temperature in the absence of rod and cone inputs to the retina. The authors also provide a good discussion of the potential caveats of this approach. Though the experiment is not perfect, making it perfect would require development of new technology. I am satisfied with the current description of results.\n\n3) It appears in Figure 3\u2014figure supplement 1 that CNO evokes a small decrease in body temperature (~0.5 degrees) in mice that do not express the receptor hM3D(Gq) (control mice). This effect is in the same direction and of similar magnitude to the effect of CNO injection in mice that do express the receptor (Brn3b-Cre mice). The authors need to compare these two populations directly rather than compare each population to the PBS control. This will rule out an effect on body temperature coming from off-target effects of CNO.\n\n4) The figure legends should state whether the error shading around the body temperature traces is SEM or SD, starting with Figure 1.\n\n5) In several places, linear mixed models are used in the context of performing statistical comparisons (Figure 1\u2014figure supplement 2, Figure 2\u2014figure supplement 1, etc.). Some details should be provided in the Materials and methods section to describe how these linear models work.\n\nNote, these last two points are both getting at the same point. The authors indicate in their response that the effects are big and reliable. Indeed many of the example traces indicate that is the case. Yet somehow this large, reliable effect is not translating into their summary data, which appears to be highly variable. In addition, there appears to be a distinct temperature change during the light pulse in subjective night in the Opn4 KO mouse (Figure 1), yet the authors describe it as being \"absent\". Either is fine \u2013 large and reliable, or highly variable, but the description of the effect needs to be consistent.\n",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "02e2edf1-32e5-40c6-8e4e-56b53a67e1ec",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C1",
+      "claim": "The light environment greatly impacts human alertness, mood, and cognition by both acute regulation of physiology and indirect alignment of circadian rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "The light environment greatly impacts human alertness, mood, and cognition by both acute regulation of physiology and indirect alignment of circadian rhythms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about light's effects that draws from established scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "508fddc6-ada8-4904-bc25-3b30f77743b5",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C2",
+      "claim": "Light's effects on alertness, mood, and cognition require the melanopsin-expressing intrinsically photosensitive retinal ganglion cells (ipRGCs).",
+      "claim_type": "EXPLICIT",
+      "source": "These processes require the melanopsin-expressing intrinsically photosensitive retinal ganglion cells (ipRGCs), but the relevant downstream brain areas involved remain elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations throughout the manuscript and represents established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "4fdcd2ef-1b9d-41e2-b59b-9e2d228e5892",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C3",
+      "claim": "ipRGCs project widely in the brain, including to the central circadian pacemaker, the suprachiasmatic nucleus (SCN).",
+      "claim_type": "EXPLICIT",
+      "source": "ipRGCs project widely in the brain, including to the central circadian pacemaker, the suprachiasmatic nucleus (SCN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ipRGC projections that is supported by citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "39226ff9-be41-4f1d-833e-c01c637c7d7b",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C4",
+      "claim": "Body temperature and sleep responses to acute light exposure are absent after genetic ablation of all ipRGCs except a subpopulation that projects to the SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that body temperature and sleep responses to acute light exposure are absent after genetic ablation of all ipRGCs except a subpopulation that projects to the SCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "22583f7f-a768-44ec-a3d5-5130ad20c20e",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C5",
+      "claim": "Chemogenetic activation of ipRGCs that avoid the SCN is sufficient for acute changes in body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, by chemogenetic activation of the ipRGCs that avoid the SCN, we show that these cells are sufficient for acute changes in body temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "9d7545c8-09d3-4d8a-93b4-786e6f55007e",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C6",
+      "claim": "The SCN is not a major relay for the acute effects of light on non-image forming behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results challenge the idea that the SCN is a major relay for the acute effects of light on non-image forming behaviors and identify the sensory cells that initiate light's profound effects on body temperature and sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental results showing that ipRGCs projecting to the SCN are not sufficient for acute effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "fc1b80fc-0462-4f93-bec4-90f8eaee3964",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C7",
+      "claim": "Dysregulation of the circadian system by abnormal lighting conditions has many negative consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation of the circadian system by abnormal lighting conditions has many negative consequences, which has motivated decades of work to identify the mechanisms of circadian photoentrainment (Golombek and Rosenstein, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Golombek and Rosenstein, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "b5e4c25f-be2f-434b-9181-a11bb69eb00f",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C8",
+      "claim": "Light exposure can acutely influence human alertness, cognition, and physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, it has only recently become apparent that light exposure can also acutely influence human alertness, cognition, and physiology (Chellappa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Chellappa et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "da652eaa-4bbe-4b08-8152-888d5b72c247",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C9",
+      "claim": "ipRGCs have been implicated in the circadian and acute effects of light on activity, sleep, and mood.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a single population of retinal projection neurons\u2014intrinsically photosensitive retinal ganglion cells (ipRGCs)\u2014have been implicated in the circadian and acute effects of light on many functions, including activity, sleep, and mood (G\u00f6z et al., 2008; G\u00fcler et al., 2008; Hatori et al., 2008; LeGates et al., 2012; Fernandez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "92418344-fba0-45e0-b98a-4054f0daab17",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C10",
+      "claim": "ipRGCs integrate light information from rods, cones, and their endogenous melanopsin phototransduction cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "ipRGCs integrate light information from rods, cones, and their endogenous melanopsin phototransduction cascade (Schmidt et al., 2011), and relay that light information to over a dozen central targets (Hattar et al., 2006; Ecker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Schmidt et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "b18a4c27-c876-4580-9777-929ba151eff2",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C11",
+      "claim": "ipRGCs relay light information to over a dozen central targets.",
+      "claim_type": "EXPLICIT",
+      "source": "ipRGCs integrate light information from rods, cones, and their endogenous melanopsin phototransduction cascade (Schmidt et al., 2011), and relay that light information to over a dozen central targets (Hattar et al., 2006; Ecker et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Hattar et al., 2006 and Ecker et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "95c44caf-1d04-407b-a2e1-f66839d83306",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C12",
+      "claim": "ipRGCs mediate photoentrainment by direct innervation of the suprachiasmatic nucleus (SCN) of the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "It is accepted that ipRGCs mediate photoentrainment by direct innervation of the master circadian pacemaker, the suprachiasmatic nucleus (SCN) of the hypothalamus (G\u00f6z et al., 2008; G\u00fcler et al., 2008; Hatori et al., 2008; Jones et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "c2157527-92b4-4647-b2d3-c1499128797a",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C13",
+      "claim": "Genetic ablation of ipRGCs results in mice with normal circadian rhythms that 'free-run' with their endogenous rhythm, independent of the light/dark cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by studies demonstrating that genetic ablation of ipRGCs results in mice with normal circadian rhythms that 'free-run' with their endogenous rhythm, independent of the light/dark cycle (G\u00f6z et al., 2008; G\u00fcler et al., 2008; Hatori et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "971d7ac9-9272-43c6-81dc-a36a5e721523",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C14",
+      "claim": "Mice with genetic ablation of all ipRGCs except those that project to the SCN and intergeniculate leaflet (IGL) display normal circadian photoentrainment.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, mice with genetic ablation of all ipRGCs except those that project to the SCN and intergeniculate leaflet (IGL) display normal circadian photoentrainment (Chen et al., 2011), suggesting that ipRGC projections to the SCN/IGL are sufficient for photoentrainment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Chen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "afdb1a0e-17c9-414c-912e-b4ed3b12e6fd",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C15",
+      "claim": "ipRGC projections to the SCN/IGL are sufficient for photoentrainment.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, mice with genetic ablation of all ipRGCs except those that project to the SCN and intergeniculate leaflet (IGL) display normal circadian photoentrainment (Chen et al., 2011), suggesting that ipRGC projections to the SCN/IGL are sufficient for photoentrainment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited study by Chen et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "899a95c1-6ae5-4492-8eda-f3d08f48811e",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C16",
+      "claim": "Genetic ablation of ipRGCs or their melanopsin phototransduction cascade blocks or attenuates the acute effects of light on sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic ablation of ipRGCs or their melanopsin phototransduction cascade blocks or attenuates the acute effects of light on sleep (Altimus et al., 2008; Lupi et al., 2008; Tsai et al., 2009), wheel-running activity (Mrosovsky and Hattar, 2003; G\u00fcler et al., 2008), and mood (LeGates et al., 2012; Fernandez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "063d2d64-03b3-4882-b46d-057065eceeb6",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C17",
+      "claim": "Genetic ablation of ipRGCs or their melanopsin phototransduction cascade blocks or attenuates the acute effects of light on wheel-running activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic ablation of ipRGCs or their melanopsin phototransduction cascade blocks or attenuates the acute effects of light on sleep (Altimus et al., 2008; Lupi et al., 2008; Tsai et al., 2009), wheel-running activity (Mrosovsky and Hattar, 2003; G\u00fcler et al., 2008), and mood (LeGates et al., 2012; Fernandez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Mrosovsky and Hattar, 2003 and G\u00fcler et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "9ad7533a-f326-42f7-b328-0b1418adec77",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C18",
+      "claim": "Genetic ablation of ipRGCs or their melanopsin phototransduction cascade blocks or attenuates the acute effects of light on mood.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic ablation of ipRGCs or their melanopsin phototransduction cascade blocks or attenuates the acute effects of light on sleep (Altimus et al., 2008; Lupi et al., 2008; Tsai et al., 2009), wheel-running activity (Mrosovsky and Hattar, 2003; G\u00fcler et al., 2008), and mood (LeGates et al., 2012; Fernandez et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to LeGates et al., 2012 and Fernandez et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "60167465-cc78-46aa-a269-37b3295a7731",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C19",
+      "claim": "ipRGCs are comprised of multiple subpopulations with distinct genetic, morphological, and electrophysiological signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, ipRGCs are comprised of multiple subpopulations with distinct genetic, morphological, and electrophysiological signatures (Baver et al., 2008; Schmidt and Kofuji, 2009; Ecker et al., 2010; Schmidt et al., 2011) and distinct functions (Chen et al., 2011; Schmidt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "16fb1360-152c-4fe1-a48a-10985de921d9",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C20",
+      "claim": "ipRGC subpopulations have distinct functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, ipRGCs are comprised of multiple subpopulations with distinct genetic, morphological, and electrophysiological signatures (Baver et al., 2008; Schmidt and Kofuji, 2009; Ecker et al., 2010; Schmidt et al., 2011) and distinct functions (Chen et al., 2011; Schmidt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Chen et al., 2011 and Schmidt et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "bda9d93b-eda7-49c1-9646-838648a742bb",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C21",
+      "claim": "Body temperature has a critical role in cognition and alertness.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused first on body temperature because of its critical role in cognition and alertness (Wright et al., 2002; Darwent et al., 2010), sleep induction and quality (Kr\u00e4uchi et al., 1999), metabolic control (Kooijman et al., 2015), and circadian resetting (Buhr et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Wright et al., 2002 and Darwent et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "084553d5-709f-4db6-aac2-bff6dcdda207",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C22",
+      "claim": "Body temperature has a critical role in sleep induction and quality.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused first on body temperature because of its critical role in cognition and alertness (Wright et al., 2002; Darwent et al., 2010), sleep induction and quality (Kr\u00e4uchi et al., 1999), metabolic control (Kooijman et al., 2015), and circadian resetting (Buhr et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kr\u00e4uchi et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "e7b0b6be-9dbd-430e-bb4d-78d4d980cddd",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C23",
+      "claim": "Body temperature has a critical role in metabolic control.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused first on body temperature because of its critical role in cognition and alertness (Wright et al., 2002; Darwent et al., 2010), sleep induction and quality (Kr\u00e4uchi et al., 1999), metabolic control (Kooijman et al., 2015), and circadian resetting (Buhr et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kooijman et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "0d86a113-e69d-4aa4-825d-1df868f9f8b4",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C24",
+      "claim": "Body temperature has a critical role in circadian resetting.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused first on body temperature because of its critical role in cognition and alertness (Wright et al., 2002; Darwent et al., 2010), sleep induction and quality (Kr\u00e4uchi et al., 1999), metabolic control (Kooijman et al., 2015), and circadian resetting (Buhr et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Buhr et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "48d2c12e-6572-4b43-a2e7-41f33f44c449",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C25",
+      "claim": "Body temperature photoentrains to the light/dark cycle with peaks during the night and troughs during the day.",
+      "claim_type": "EXPLICIT",
+      "source": "Body temperature photoentrains to the light/dark cycle with peaks during the night and troughs during the day (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "7d7bc758-f964-45a4-8a31-d912569f1f5f",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C26",
+      "claim": "Both rodents and humans utilize ocular light detection to acutely adjust body temperature in response to a nocturnal light pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "Both rodents and humans utilize ocular light detection to acutely adjust body temperature in response to a nocturnal light pulse (Dijk et al., 1991; Cajochen et al., 2005), though how this body temperature change is initiated by the retina and relayed to the brain is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Dijk et al., 1991 and Cajochen et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "99008e64-d1f2-42e1-b814-97214fd54b81",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C27",
+      "claim": "When wildtype mice are presented with a nocturnal light pulse, they show a decrease in both body temperature and general activity compared to the previous night.",
+      "claim_type": "EXPLICIT",
+      "source": "When we presented wildtype mice with a nocturnal light pulse, we observed a decrease in both body temperature and general activity compared to the previous night (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "e9151da9-066f-4126-b9af-c8da78a74414",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C28",
+      "claim": "The decrease in body temperature and activity in response to a nocturnal light pulse is sustained for the entire 3 hr stimulus, with moderate rundown.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in body temperature and activity was sustained for the entire 3 hr stimulus, with moderate rundown (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "0d03da40-c113-4177-88c7-840dbc856849",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C29",
+      "claim": "Acute body temperature regulation only occurs at relatively bright light intensities (>100 lux).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that acute body temperature regulation only occurred at relatively bright light intensities (>100 lux) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "a704b5c5-daa2-4991-b056-e2af2ba7dfb2",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C30",
+      "claim": "Body temperature regulation is most sensitive to short-wavelength light.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in combination with previous reports that body temperature regulation is most sensitive to short-wavelength light (Cajochen et al., 2005), suggested that it might be mediated by the insensitive and blue-shifted melanopsin phototransduction (Lucas et al., 2001; Do et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Cajochen et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "e1f858b6-e141-44be-ace8-9a9077a29bbb",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C31",
+      "claim": "Melanopsin phototransduction is insensitive and blue-shifted.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in combination with previous reports that body temperature regulation is most sensitive to short-wavelength light (Cajochen et al., 2005), suggested that it might be mediated by the insensitive and blue-shifted melanopsin phototransduction (Lucas et al., 2001; Do et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Lucas et al., 2001 and Do et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "1279d193-8a86-410d-a579-9dc7e68a3b20",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C32",
+      "claim": "Melanopsin-only mice (Gnat1-/-; Gnat2-/-) photoentrain their body temperature with an amplitude indistinguishable from wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Both genotypes photoentrained their body temperature (Figure 1D,E), with an amplitude indistinguishable from wildtype (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 1D, 1E, and 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "3313b71e-819e-4358-8140-39ee070e83d9",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C33",
+      "claim": "Melanopsin knockout mice (Opn4-/-) photoentrain their body temperature with an amplitude indistinguishable from wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Both genotypes photoentrained their body temperature (Figure 1D,E), with an amplitude indistinguishable from wildtype (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 1D, 1E, and 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "22e2ef03-8644-4729-b533-acfdf3feb1f4",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C34",
+      "claim": "Acute body temperature decrease to a nocturnal light pulse is present in melanopsin-only mice (Gnat1-/-; Gnat2-/-).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that acute body temperature decrease to a nocturnal light pulse was present in melanopsin-only mice (Gnat1-/-; Gnat2-/-) (Figure 1G,H and Figure 1\u2014figure supplement 2), but absent from melanopsin knockout mice (Opn4-/-) (Figure 1I,J and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 1G, 1H, and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "7448017f-bfdd-4912-8dd3-66cf699c7d24",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C35",
+      "claim": "Acute body temperature decrease to a nocturnal light pulse is absent from melanopsin knockout mice (Opn4-/-).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that acute body temperature decrease to a nocturnal light pulse was present in melanopsin-only mice (Gnat1-/-; Gnat2-/-) (Figure 1G,H and Figure 1\u2014figure supplement 2), but absent from melanopsin knockout mice (Opn4-/-) (Figure 1I,J and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 1I, 1J, and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "286ab695-76c6-4238-999b-6a0e3c6f0e1f",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C36",
+      "claim": "Melanopsin is critical for light's ability to drive acute body temperature decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that melanopsin is critical for light's ability to drive acute body temperature decreases, as it is for acute sleep induction (Altimus et al., 2008; Lupi et al., 2008; Tsai et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing melanopsin-only mice retain the response while melanopsin knockout mice do not.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "831ba2d2-f08e-4aa1-a630-cc7e57f3994f",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C37",
+      "claim": "Melanopsin is critical for acute sleep induction.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that melanopsin is critical for light's ability to drive acute body temperature decreases, as it is for acute sleep induction (Altimus et al., 2008; Lupi et al., 2008; Tsai et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "8598fb97-d924-45ad-a72d-824e3b39e4c8",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C38",
+      "claim": "ipRGCs are the only retinal cells that are necessary and sufficient for acute thermoregulation by light.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ipRGCs are the only retinal cells that are necessary and sufficient for acute thermoregulation by light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing melanopsin is necessary and sufficient.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "4d1d5dac-b7a3-4832-86d4-91b26b2b4f51",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C39",
+      "claim": "ipRGCs comprise multiple subtypes (M1-M6) with distinct gene expression profiles, light responses, and central projections.",
+      "claim_type": "EXPLICIT",
+      "source": "ipRGCs comprise multiple subtypes (M1-M6) with distinct gene expression profiles, light responses, and central projections (Schmidt et al., 2011; Quattrochi et al., 2019), prompting us to ask which subtypes mediate acute thermoregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Schmidt et al., 2011 and Quattrochi et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "d9daed93-b794-49b8-ac41-913afc3404b0",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C40",
+      "claim": "Brn3b(+) ipRGCs project to many structures including the olivary pretectal nucleus (OPN) and dorsal lateral geniculate nucleus (dLGN), but largely avoid the SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Brn3b(+) ipRGCs project to many structures including the olivary pretectal nucleus (OPN) and dorsal lateral geniculate nucleus (dLGN), but largely avoid the SCN (Chen et al., 2011; Li and Schmidt, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Chen et al., 2011 and Li and Schmidt, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "3cb0d8c1-cdb3-4df7-91eb-9936e58dc96e",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C41",
+      "claim": "Brn3b(\u2013) ipRGCs project extensively to the SCN and intergeniculate leaflet (IGL), while avoiding the OPN and dLGN.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Brn3b(\u2013) ipRGCs project extensively to the SCN and intergeniculate leaflet (IGL), while avoiding the OPN and dLGN (Chen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Chen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "5157a344-4223-4c24-bc4c-6f66c789f765",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C42",
+      "claim": "Non-M1 (i.e. M2-M6) ipRGC subtypes express Brn3b, along with the majority of M1 ipRGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-M1 (i.e. M2-M6) ipRGC subtypes express Brn3b, along with the majority of M1 ipRGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ipRGC molecular characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "2af26162-00e8-40c8-bebb-e0f0598f1771",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C43",
+      "claim": "Just 200 (out of 700\u2013800) M1 ipRGCs lack any Brn3b expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, just 200 (out of 700\u2013800) M1 ipRGCs lack any Brn3b expression (Chen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Chen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "da19b608-ec90-4b33-ab13-4bcae02efc4e",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C44",
+      "claim": "Ablation of Brn3b(+) ipRGCs removes virtually all ipRGC input to brain areas aside from the SCN and IGL.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of Brn3b(+) ipRGCs using melanopsin-Cre and a Cre-dependent diphtheria toxin knocked into the Brn3b locus (Brn3b-DTA: Opn4Cre/+;Brn3bzDTA/+) removes virtually all ipRGC input to brain areas aside from the SCN and IGL (Chen et al., 2011; Li and Schmidt, 2018), and these mice lack a pupillary light reflex and show deficits in contrast sensitivity, but retain circadian photoentrainment of wheel-running activity (Chen et al., 2011; Schmidt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Chen et al., 2011 and Li and Schmidt, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "8f5764d2-2d38-47df-acd3-72c3bc8cc1cf",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C45",
+      "claim": "Brn3b-DTA mice lack a pupillary light reflex and show deficits in contrast sensitivity, but retain circadian photoentrainment of wheel-running activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of Brn3b(+) ipRGCs using melanopsin-Cre and a Cre-dependent diphtheria toxin knocked into the Brn3b locus (Brn3b-DTA: Opn4Cre/+;Brn3bzDTA/+) removes virtually all ipRGC input to brain areas aside from the SCN and IGL (Chen et al., 2011; Li and Schmidt, 2018), and these mice lack a pupillary light reflex and show deficits in contrast sensitivity, but retain circadian photoentrainment of wheel-running activity (Chen et al., 2011; Schmidt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Chen et al., 2011 and Schmidt et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "1fafc80c-b2b0-4cb1-a44e-7fa97ed76058",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C46",
+      "claim": "Brn3b-DTA mice have body temperature that is photoentrained with a similar amplitude to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "When we measured body temperature in Brn3b-DTA mice, we found that their body temperature was photoentrained with a similar amplitude to controls (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "f12e0e9b-b26f-4b47-ae4c-92dc5a42bde1",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C47",
+      "claim": "Brn3b-DTA mice do not acutely decrease body temperature in response to a nocturnal light pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite the presence of melanopsin in the Brn3b(-) ipRGCs of Brn3b-DTA mice (Opn4Cre/+;Brn3bzDTA/+), they did not acutely decrease body temperature in response to a nocturnal light pulse (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 2F and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "e19319d9-a2ec-4800-be0f-850f1206b09e",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C48",
+      "claim": "Melanopsin heterozygous littermate controls (Opn4Cre/+) display normal acute thermoregulation by light.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, melanopsin heterozygous littermate controls (Opn4Cre/+) displayed normal acute thermoregulation by light (Figure 2D,E), indicating that halving melanopsin gene dosage is not the cause of the impaired body temperature decrease in Brn3b-DTA mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "64758c67-4404-4c6a-8600-1d4ed0e9511c",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C49",
+      "claim": "Halving melanopsin gene dosage is not the cause of the impaired body temperature decrease in Brn3b-DTA mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, melanopsin heterozygous littermate controls (Opn4Cre/+) displayed normal acute thermoregulation by light (Figure 2D,E), indicating that halving melanopsin gene dosage is not the cause of the impaired body temperature decrease in Brn3b-DTA mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the control experiment showing normal response in heterozygous mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "b133618a-ef04-4f28-8b31-5d9863a75554",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C50",
+      "claim": "Control mice show a significantly larger decrease in body temperature during a light pulse compared to Brn3b-DTA mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, when we compared the change in body temperature of Control to Brn3b-DTA mice during that light pulse, we found that Control mice showed a significantly larger decrease in body temperature (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "ddccfdb2-103a-47ef-8dfc-8d68d82195ff",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C51",
+      "claim": "Brn3b(+) ipRGCs are required for acute thermoregulation by light but not photoentrainment of body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that Brn3b(+) ipRGCs are required for acute thermoregulation by light but not photoentrainment of body temperature and reveal that light information to the SCN is sufficient for circadian photoentrainment of body temperature, but not its acute regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Brn3b-DTA mice retain photoentrainment but lose acute response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "9827c22a-631a-46df-a24b-8d0765bfeb7d",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C52",
+      "claim": "Light information to the SCN is sufficient for circadian photoentrainment of body temperature, but not its acute regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that Brn3b(+) ipRGCs are required for acute thermoregulation by light but not photoentrainment of body temperature and reveal that light information to the SCN is sufficient for circadian photoentrainment of body temperature, but not its acute regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Brn3b-DTA mice (which retain SCN input) have normal photoentrainment but no acute response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "221dd866-8ba0-4141-9b9c-cfaaa4e28ca3",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C53",
+      "claim": "After intravitreal viral delivery of AAV2-hSyn-DIO-hM3Dq-mCherry to Brn3bCre/+ mice, many RGCs were infected, including melanopsin-expressing ipRGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that after intravitreal viral delivery, many RGCs were infected, including melanopsin-expressing ipRGCs (Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "fee0fb12-ec73-42c4-84d4-e5ea56b1e020",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C54",
+      "claim": "CNO administration to Brn3b-hM3Dq mice at ZT14 results in a robust decrease in body temperature that lasts at least 6 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Following CNO administration to Brn3b-hM3Dq mice at ZT14 to depolarize Brn3b(+) RGCs, we observed a robust decrease in body temperature that lasted at least 6 hr (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "1d47e76b-13f8-4ecb-8c65-71a0e0e9be64",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C55",
+      "claim": "PBS administration in Brn3b-hM3Dq mice has no measurable effect on body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, PBS administration in Brn3b-hM3Dq mice (Figure 3C) and nocturnal CNO administration in wildtype control mice (Figure 3\u2014figure supplement 2) had no measurable effect on body temperature, while CNO administration significantly decreased body temperature in Brn3b-hM3Dq compared to pre-injection temperature (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "768eb09d-aecf-4d96-99fa-74948567c47f",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C56",
+      "claim": "Nocturnal CNO administration in wildtype control mice has no measurable effect on body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, PBS administration in Brn3b-hM3Dq mice (Figure 3C) and nocturnal CNO administration in wildtype control mice (Figure 3\u2014figure supplement 2) had no measurable effect on body temperature, while CNO administration significantly decreased body temperature in Brn3b-hM3Dq compared to pre-injection temperature (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "5291ba77-0ae0-4c39-8cce-4900f3c794ba",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C57",
+      "claim": "CNO administration significantly decreases body temperature in Brn3b-hM3Dq mice compared to pre-injection temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, PBS administration in Brn3b-hM3Dq mice (Figure 3C) and nocturnal CNO administration in wildtype control mice (Figure 3\u2014figure supplement 2) had no measurable effect on body temperature, while CNO administration significantly decreased body temperature in Brn3b-hM3Dq compared to pre-injection temperature (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "60362621-7fff-48a1-818b-29487fbb34c6",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C58",
+      "claim": "Brn3b(+) ipRGCs mediate the acute effects of light on body temperature through extra-SCN projection(s).",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that Brn3b(+) ipRGCs mediate the acute effects of light on body temperature though extra-SCN projection(s), while Brn3b(\u2013) ipRGCs mediate circadian photoentrainment of body temperature by projections to the SCN and/or IGL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Brn3b(+) ipRGCs are sufficient for acute effects and project outside the SCN.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "37f12a0a-14b8-46f5-84c5-a7aa0eda30cf",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C59",
+      "claim": "Brn3b(\u2013) ipRGCs mediate circadian photoentrainment of body temperature by projections to the SCN and/or IGL.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that Brn3b(+) ipRGCs mediate the acute effects of light on body temperature though extra-SCN projection(s), while Brn3b(\u2013) ipRGCs mediate circadian photoentrainment of body temperature by projections to the SCN and/or IGL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Brn3b-DTA mice (lacking Brn3b+ cells but retaining Brn3b- cells) maintain photoentrainment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "11a3fc74-1b84-465f-b664-2bf372b58ba4",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C60",
+      "claim": "Brn3b-DTA mice show normal photoentrainment of sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Brn3b-DTA mice show normal photoentrainment of sleep and similar percent time of sleep across the 24 hour day, with only one 30 min bin at ZT12 (light offset) showing a significant difference between Control and Brn3b-DTA animals (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "b0ee530e-fc6f-4fdf-bbca-1f60bb256caf",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C61",
+      "claim": "Brn3b-DTA mice show similar percent time of sleep across the 24 hour day compared to controls, with only one 30 min bin at ZT12 (light offset) showing a significant difference.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Brn3b-DTA mice show normal photoentrainment of sleep and similar percent time of sleep across the 24 hour day, with only one 30 min bin at ZT12 (light offset) showing a significant difference between Control and Brn3b-DTA animals (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "b6556639-4ca0-4b72-8486-47f20446bba4",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C62",
+      "claim": "Brn3b-DTA mice show normal circadian photoentrainment of daily activity rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous reports of normal circadian photoentrainment of daily activity rhythms in Brn3b-DTA mice (Chen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Chen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "e0bfb4f6-709e-46db-9629-6a787ad942aa",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C63",
+      "claim": "Control and Brn3b-DTA mice show similar total percent time awake or asleep across an entire day.",
+      "claim_type": "EXPLICIT",
+      "source": "Control and Brn3b-DTA mice also showed similar total percent time awake or asleep across an entire day (Figure 4C), though Brn3b-DTA mice showed a small, but significant, increase in the proportion of total sleep that was classified as NREM and decrease in the proportion of total sleep that was classified as REM (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "3df79395-1a80-423c-8403-3d55ad379590",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C64",
+      "claim": "Brn3b-DTA mice show a small, but significant, increase in the proportion of total sleep that was classified as NREM and decrease in the proportion of total sleep that was classified as REM.",
+      "claim_type": "EXPLICIT",
+      "source": "Control and Brn3b-DTA mice also showed similar total percent time awake or asleep across an entire day (Figure 4C), though Brn3b-DTA mice showed a small, but significant, increase in the proportion of total sleep that was classified as NREM and decrease in the proportion of total sleep that was classified as REM (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "dcb7e5dd-0576-428a-a2ed-ef56eebf2fe0",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C65",
+      "claim": "In Control mice, a light pulse decreases time awake and increases time asleep relative to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in Control mice, a light pulse decreased time awake and increased time asleep relative to baseline (previous day) (Figure 4C,D), while in Brn3b-DTA mice a light pulse caused no change in total percent time asleep or awake (Figure 4F,G), but moderately increased sleep in the first 30 min bin (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "b841043a-2f7a-4e21-a264-203cd691cf89",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C66",
+      "claim": "In Brn3b-DTA mice, a light pulse causes no change in total percent time asleep or awake.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in Control mice, a light pulse decreased time awake and increased time asleep relative to baseline (previous day) (Figure 4C,D), while in Brn3b-DTA mice a light pulse caused no change in total percent time asleep or awake (Figure 4F,G), but moderately increased sleep in the first 30 min bin (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figures 4F and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "61d46538-7e61-463b-a9a7-0d38e93c5b01",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C67",
+      "claim": "In Brn3b-DTA mice, a light pulse moderately increases sleep in the first 30 min bin.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in Control mice, a light pulse decreased time awake and increased time asleep relative to baseline (previous day) (Figure 4C,D), while in Brn3b-DTA mice a light pulse caused no change in total percent time asleep or awake (Figure 4F,G), but moderately increased sleep in the first 30 min bin (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "d7cfe018-3a04-44ba-a25e-79b2f2a05850",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C68",
+      "claim": "Control mice sleep significantly more during the light pulse compared to Brn3b-DTA animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when we compared the time spent asleep during the light pulse between control and Brn3b-DTA animals, the control mice slept significantly more (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "aa3fa35b-fdcc-4a5f-8438-46cb28c4eda2",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C69",
+      "claim": "Neither Control nor Brn3b-DTA animals show any change in proportion of non-REM or REM sleep in response to the light pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither Control nor Brn3b-DTA animals showed any change in proportion of non-REM or REM sleep in response to the light pulse (Figure 4\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 4\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "39238ebb-510d-4106-adf3-d2476459518a",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C70",
+      "claim": "Brn3b(+) ipRGCs are necessary for the acute light induction of sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that Brn3b(+) ipRGCs are necessary for the acute light induction of sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Brn3b-DTA mice lack acute sleep response to light.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "4c338881-753a-4115-9565-12140349f467",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C71",
+      "claim": "Brn3b-DTA mice have apparently normal input to the SCN and show normal circadian photoentrainment of wheel-running activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our body temperature data, although Brn3b-DTA mice have apparently normal input to the SCN and show normal circadian photoentrainment of wheel-running activity (Chen et al., 2011), body temperature (Figure 2), and sleep (Figure 4), this ipRGC innervation of the SCN is not sufficient to drive the normal light induction of sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Chen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "084a8f10-c148-4be7-98d9-183bf087c047",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C72",
+      "claim": "ipRGC innervation of the SCN is not sufficient to drive the normal light induction of sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our body temperature data, although Brn3b-DTA mice have apparently normal input to the SCN and show normal circadian photoentrainment of wheel-running activity (Chen et al., 2011), body temperature (Figure 2), and sleep (Figure 4), this ipRGC innervation of the SCN is not sufficient to drive the normal light induction of sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Brn3b-DTA mice (which retain SCN input) lack acute sleep response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "3d3469ea-4fd0-474d-9b25-5bb7c1376274",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C73",
+      "claim": "Brn3b-DTA mice show robust inhibition of wheel running behavior to a 3 hr light pulse delivered from ZT14-17.",
+      "claim_type": "EXPLICIT",
+      "source": "These disruptions in light's acute effects on thermoregulation and sleep are circuit specific effects because Brn3b-DTA mice showed robust inhibition of wheel running behavior to a 3 hr light pulse delivered from ZT14-17 (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "1c735e37-9d46-4ad5-bab2-fda2d5e36ee1",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C74",
+      "claim": "For thermoregulation and sleep, the acute effects of light are relayed through distinct circuitry from that of circadian photoentrainment.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that for the same physiological outcome, the acute effects of light are relayed through distinct circuitry from that of circadian photoentrainment, despite both processes requiring ipRGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing different ipRGC populations mediate acute vs. circadian effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "17e4032d-a2fe-4db0-8192-d47a6130fcfe",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C75",
+      "claim": "For thermoregulation and sleep, ipRGCs can be genetically and functionally segregated into Brn3b(+) 'acute' cells, and Brn3b(\u2013) 'circadian' cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that for thermoregulation and sleep, ipRGCs can be genetically and functionally segregated into Brn3b(+) 'acute' cells, and Brn3b(\u2013) 'circadian' cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Brn3b+ cells mediate acute effects while Brn3b- cells mediate circadian effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "7cf0733e-ee53-4df7-8efd-d946e2aca3c8",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C76",
+      "claim": "Brn3b(+) cells largely avoid the SCN, and Brn3b(\u2013) cells preferentially target the SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Brn3b(+) cells largely avoid the SCN, and Brn3b(\u2013) cells preferentially target the SCN, our results discount a critical role for the SCN in acute light responses in these two behaviors, and instead implicate direct ipRGC projections to other brain areas (Gooley et al., 2003; Hattar et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "eeec444f-1a4a-4e0c-9a35-73cf4290726a",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C77",
+      "claim": "The SCN does not have a critical role in acute light responses for thermoregulation and sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Brn3b(+) cells largely avoid the SCN, and Brn3b(\u2013) cells preferentially target the SCN, our results discount a critical role for the SCN in acute light responses in these two behaviors, and instead implicate direct ipRGC projections to other brain areas (Gooley et al., 2003; Hattar et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Brn3b+ cells (which avoid SCN) mediate acute effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "ab966d1c-4b4a-4139-b785-346e70b3f865",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C78",
+      "claim": "Direct ipRGC projections to brain areas other than the SCN mediate acute light responses for thermoregulation and sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Brn3b(+) cells largely avoid the SCN, and Brn3b(\u2013) cells preferentially target the SCN, our results discount a critical role for the SCN in acute light responses in these two behaviors, and instead implicate direct ipRGC projections to other brain areas (Gooley et al., 2003; Hattar et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data and supported by citations to Gooley et al., 2003 and Hattar et al., 2006.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "6f5f52d0-6c41-41f2-b948-d70f2f60f1ef",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C79",
+      "claim": "Brn3b(-) cells are sufficient to drive the acute and circadian effects of light on wheel running activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Brn3b(-) cells are sufficient to drive the acute and circadian effects of light on wheel running activity, demonstrating further divergence in the circuits mediating the acute effects of light on behavior, and suggesting that, unlike for thermoregulation and sleep, acute and circadian regulation of activity is driven via the SCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Brn3b-DTA mice retain wheel running responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "991f5979-ace4-4be1-ad0d-f5640cf2a32b",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C80",
+      "claim": "Unlike for thermoregulation and sleep, acute and circadian regulation of activity is driven via the SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Brn3b(-) cells are sufficient to drive the acute and circadian effects of light on wheel running activity, demonstrating further divergence in the circuits mediating the acute effects of light on behavior, and suggesting that, unlike for thermoregulation and sleep, acute and circadian regulation of activity is driven via the SCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Brn3b-DTA mice (which retain SCN input) maintain wheel running responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "804e1350-7885-4276-b97e-826134b620d6",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C81",
+      "claim": "Other (non-ipRGC) RGC types express Brn3b.",
+      "claim_type": "EXPLICIT",
+      "source": "Because other (non-ipRGC) RGC types express Brn3b (Badea et al., 2009), this manipulation likely also activated multiple non-ipRGCs in addition to Brn3b(+) ipRGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Badea et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "0d281126-e363-420f-98f2-5d9098df1cae",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C82",
+      "claim": "The chemogenetic manipulation using Brn3bCre line likely activated multiple non-ipRGCs in addition to Brn3b(+) ipRGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Because other (non-ipRGC) RGC types express Brn3b (Badea et al., 2009), this manipulation likely also activated multiple non-ipRGCs in addition to Brn3b(+) ipRGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the knowledge that Brn3b is expressed in non-ipRGC cells.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "4dfd2a42-b95b-4d0d-8847-eae1b8323a83",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C83",
+      "claim": "Melanopsin signaling and therefore ipRGCs are required for the acute effects of light on thermoregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data indicate that melanopsin signaling (Figure 1), and therefore ipRGCs, are required for the acute effects of light on thermoregulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is inferred from the experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "37caf8c3-e4eb-4d8f-9f0d-25fd4d1bae07",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C84",
+      "claim": "When Brn3b(+) ipRGCs are ablated, the acute effect of light on thermoregulation is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when we ablate Brn3b(+) ipRGCs, this acute effect of light on thermoregulation is also lost (Figure 2), again arguing for a necessity of ipRGCs for this behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "ba841d91-ab15-4078-97e7-9f1a55a30596",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C85",
+      "claim": "The temperature changes driven by the activation of all Brn3b(+) RGCs is highly likely occurring through ipRGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, though we are unable to specifically activate only Brn3b(+) ipRGCs using available genetic tools, we think it highly likely that the temperature changes driven by the activation of all Brn3b(+) RGCs is occurring through ipRGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the necessity of melanopsin and ipRGCs for the behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "dc2eebcf-631f-4364-8dad-6208fa59eab4",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C86",
+      "claim": "A majority of all known ipRGC subtypes (M1\u2013M6) are lost in Brn3b-DTA mice, with the exception of a subset of ~200 M1 ipRGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "A majority of all known ipRGC subtypes (M1\u2013M6) are lost in Brn3b-DTA mice (Chen et al., 2011), with the exception of a subset of ~200 M1 ipRGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Chen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "6ce17b2b-5169-4ed1-8392-aa69cc87d7b0",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C87",
+      "claim": "ipRGC projections to all minor hypothalamic targets are lost in Brn3b-DTA mice, while innervation of the SCN and part of the IGL remains intact.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this, ipRGC projections to all minor hypothalamic targets are lost in Brn3b-DTA mice, while innervation of the SCN and part of the IGL remains intact (Chen et al., 2011; Li and Schmidt, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Chen et al., 2011 and Li and Schmidt, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "910d4c15-4ae1-406a-97d6-1be93d7547c5",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C88",
+      "claim": "All non-M1 subtypes and a portion of M1 ipRGCs are Brn3b(+).",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that all non-M1 subtypes and a portion of M1 ipRGCs are Brn3b(+).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pattern of cell loss in Brn3b-DTA mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "31156d3f-6ae8-45f1-b16c-386f53a0120c",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C89",
+      "claim": "Each ipRGC subtype has a distinct reliance on melanopsin versus rod/cone phototransduction for light detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subtype has a distinct reliance on melanopsin versus rod/cone phototransduction for light detection (Schmidt and Kofuji, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Schmidt and Kofuji, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "8233db36-a42c-46bd-853c-e5f9491425ee",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C90",
+      "claim": "The necessity and sufficiency of melanopsin in mediating acute effects of light on body temperature and sleep suggests that a subtype with strong melanopsin, but weak rod/cone photodetection is responsible \u2013 possibly either M1 or M2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The necessity and sufficiency of melanopsin in mediating acute effects of light on body temperature (Figure 1) and sleep (Altimus et al., 2008; Lupi et al., 2008; Tsai et al., 2009) suggests that a subtype with strong melanopsin, but weak rod/cone photodetection is responsible \u2013 possibly either M1 or M2 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental data and known properties of ipRGC subtypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "673cad4e-4584-4452-9b65-0b5356cea74d",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C91",
+      "claim": "There are many candidate brain areas that both receive direct ipRGC innervation and have been documented to be involved in light's acute effects on physiology, including the preoptic areas, the ventral subparaventricular zone, and the pretectum/superior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "There are many candidate areas that both receive direct ipRGC innervation and have been documented to be involved in light's acute effects on physiology, including the preoptic areas (Muindi et al., 2014), the ventral subparaventricular zone (Kramer et al., 2001), and the pretectum/superior colliculus (Miller et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "923f6dce-9d1d-4626-aed1-908f477670ed",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C92",
+      "claim": "Aside from the SCN, ipRGC projections to the median (MPO) and ventrolateral preoptic (VLPO) areas have been the most widely supported.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from the SCN, ipRGC projections to the median (MPO) and ventrolateral preoptic (VLPO) areas have been the most widely supported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a summary of the literature on ipRGC projections.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "3edf1ced-bdd5-4b2b-9cbe-b9c1de14ddf6",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C93",
+      "claim": "The preoptic areas are involved in sleep and body temperature regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The preoptic areas are involved in sleep and body temperature regulation (Szymusiak and McGinty, 2008; Nakamura, 2011) and are activated by an acute light pulse (Lupi et al., 2008; Tsai et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "81f18b31-f988-4ce0-8fde-dd49742db91f",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C94",
+      "claim": "The preoptic areas are activated by an acute light pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "The preoptic areas are involved in sleep and body temperature regulation (Szymusiak and McGinty, 2008; Nakamura, 2011) and are activated by an acute light pulse (Lupi et al., 2008; Tsai et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Lupi et al., 2008 and Tsai et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "dfd74da7-5593-411c-89c3-3f338c9f5b8b",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C95",
+      "claim": "ipRGC projections to the median and ventrolateral preoptic areas are lost in Brn3b-DTA animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of our behavioral findings, ipRGC projections to each of these areas is lost in Brn3b-DTA animals (Li and Schmidt, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Li and Schmidt, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "38513771-6311-4d8f-8b1c-9cec572ccdda",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C96",
+      "claim": "ipRGC projections to the preoptic areas are sparse.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ipRGC projections to these areas are sparse (Gooley et al., 2003; Hattar et al., 2006), suggesting their activation by light may be indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Gooley et al., 2003 and Hattar et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "4c8d1643-a9d5-4c01-8dae-eb4427e95909",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C97",
+      "claim": "The activation of preoptic areas by light may be indirect.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ipRGC projections to these areas are sparse (Gooley et al., 2003; Hattar et al., 2006), suggesting their activation by light may be indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the sparse nature of projections.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "3174e9c1-9275-4dd0-b123-c45f24d267ed",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C98",
+      "claim": "The superior colliculus (SC) and pretectum receive robust innervation from ipRGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the superior colliculus (SC) and pretectum receive robust innervation from ipRGCs (Hattar et al., 2002; Hattar et al., 2006; Gooley et al., 2003; Ecker et al., 2010), their lesioning blocks light's acute effects on sleep (Miller et al., 1998), and melanopsin knockout mice lose light-induced cFOS expression in the SC (Lupi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "5fb28964-9046-4bda-8d47-acc2be8e9d76",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C99",
+      "claim": "Lesioning the superior colliculus and pretectum blocks light's acute effects on sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the superior colliculus (SC) and pretectum receive robust innervation from ipRGCs (Hattar et al., 2002; Hattar et al., 2006; Gooley et al., 2003; Ecker et al., 2010), their lesioning blocks light's acute effects on sleep (Miller et al., 1998), and melanopsin knockout mice lose light-induced cFOS expression in the SC (Lupi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Miller et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "13008337-f52c-4886-994c-7c615ff9a072",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C100",
+      "claim": "Melanopsin knockout mice lose light-induced cFOS expression in the superior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the superior colliculus (SC) and pretectum receive robust innervation from ipRGCs (Hattar et al., 2002; Hattar et al., 2006; Gooley et al., 2003; Ecker et al., 2010), their lesioning blocks light's acute effects on sleep (Miller et al., 1998), and melanopsin knockout mice lose light-induced cFOS expression in the SC (Lupi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lupi et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "24448bd3-c89d-40cd-b2a6-790fee5c1e28",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C101",
+      "claim": "The SC and pretectum receive robust innervation from many conventional RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the SC and pretectum receive robust innervation from many conventional RGCs, making the requirement for melanopsin and ipRGCs in acute sleep and body temperature regulation difficult to reconcile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about retinal projections.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "764570ad-bf38-446b-9fb8-92542aa4b1b0",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C102",
+      "claim": "It is possible that multiple ipRGC target regions are involved in acute light responses, with distinct areas mediating distinct physiological responses.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible (and perhaps probable), that multiple ipRGC target regions are involved, with distinct areas mediating distinct physiological responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "629e73ad-2403-41ba-ab9d-0053d79e57d2",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C103",
+      "claim": "Direct ipRGC control of body temperature may be the primary and critical step for many acute responses to light that are mediated by ipRGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it remains possible that direct ipRGC control of body temperature is the primary and critical step for many acute responses to light that are mediated by ipRGCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "ebd5155b-afb4-40b3-bf5a-fb907c5c9106",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C104",
+      "claim": "Changes in body temperature and heat loss can directly influence sleep induction.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this possibility, changes in body temperature and heat loss can directly influence sleep induction (Kr\u00e4uchi et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kr\u00e4uchi et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "508f2045-2d28-48fc-80ad-0f2fdaa09e74",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C105",
+      "claim": "Changes in sleep are presumably causative of at least some of light's effects on wheel-running and general activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This change in sleep is in turn presumably causative of at least some of light's effects on wheel-running and general activity (Mrosovsky et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by a citation to Mrosovsky et al., 1999.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "39ead854-d61d-45e8-bdae-4369210f2419",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C106",
+      "claim": "Core body temperature can acutely regulate cognition and alertness.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, core body temperature can acutely regulate cognition and alertness (Wright et al., 2002; Darwent et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Wright et al., 2002 and Darwent et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "846c7c16-3ba6-47ab-b76b-00b1a36b9092",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C107",
+      "claim": "ipRGCs can have widespread influence on an animal's basic physiology and cognitive function simply by regulating body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore possible that ipRGCs can have widespread influence on an animal's basic physiology and cognitive function simply by regulating body temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the known effects of body temperature.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "f5243f61-1a78-49e1-8a33-d6c4ab7f094a",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C108",
+      "claim": "The identification of the photopigment and retinal circuits mediating acute body temperature and sleep induction will facilitate better methods to promote or avoid human alertness and cognition at appropriate times of day.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our identification of the photopigment and the retinal circuits mediating acute body temperature and sleep induction will facilitate better methods to promote or avoid human alertness and cognition at appropriate times of day (Chellappa et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the implications of the findings, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "1a0bef40-8981-4305-8f5b-e733745733e5",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C109",
+      "claim": "Recent efforts capitalize on the specific light-detection properties of melanopsin, such as its insensitivity and short-wavelength preference, to promote or avoid its activation at different times of day.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support many recent efforts to capitalize on the specific light-detection properties of melanopsin (Lucas et al., 2014), such as its insensitivity and short-wavelength preference, to promote or avoid its activation at different times of day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lucas et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "c697e1af-be48-454b-9694-139b4e6f7aea",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C110",
+      "claim": "Acute activation of melanopsin to promote alertness has the unintended effect of shifting the circadian clock, thereby making subsequent sleep difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach is problematic because acute activation of melanopsin to promote alertness has the unintended effect of shifting the circadian clock (Provencio et al., 1994), thereby making subsequent sleep difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Provencio et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "96f70f1e-a638-4966-9a5e-e366d28a88f3",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "claim_id": "C111",
+      "claim": "The identification that Brn3b(+) ipRGCs specifically mediate light's acute effects on body temperature provides a cellular basis for developing targeted methods for promoting acute alertness, while minimizing circadian misalignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our identification that the Brn3b(+) ipRGCs specifically mediate light's acute effects on body temperature provides a cellular basis for developing targeted methods for promoting acute alertness, while minimizing circadian misalignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f2929b07-e594-437d-8a1c-be8bdf4d3b0f",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Melanopsin is necessary and sufficient for acute body temperature decreases in response to nocturnal light pulses. Wildtype mice show sustained decreases in body temperature during 3-hour light pulses at intensities >100 lux (C27-C29). Melanopsin-only mice (lacking rods and cones) retain this acute response (C34), while melanopsin knockout mice completely lack it (C35), demonstrating that melanopsin is both necessary and sufficient (C36, C38).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29, C34-C36, and C38 provide converging evidence from genetic manipulations showing melanopsin is necessary (KO abolishes response) and sufficient (melanopsin-only mice retain response). The data in Figures 1C, 1G-J support these conclusions with appropriate controls and statistical comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "3029b83d-6195-46ff-b556-6cae86cb62f2",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both melanopsin-only and melanopsin knockout mice show normal circadian photoentrainment of body temperature with amplitudes indistinguishable from wildtype. This demonstrates that melanopsin is not required for circadian photoentrainment of body temperature, in contrast to its requirement for acute thermoregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 and C46 are supported by data in Figures 1D-F and 2A-C showing normal photoentrainment amplitudes across genotypes. This dissociation between acute and circadian effects is a key finding, though the manuscript notes melanopsin KO mice can still photoentrain through residual rod/cone input to ipRGCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "234e258c-8128-4fa7-97a9-4db6e8871ff2",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Brn3b(+) ipRGCs are required for acute thermoregulation but not circadian photoentrainment of body temperature. Brn3b-DTA mice (lacking Brn3b+ ipRGCs but retaining Brn3b- ipRGCs that project to the SCN) show normal photoentrainment amplitude (C46) but completely lack acute body temperature decreases to light pulses (C47, C50). This demonstrates that SCN input alone is sufficient for circadian photoentrainment but not for acute thermoregulation (C51-C52).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 are well-supported by Figures 2A-G and Figure 2\u2014supplement 1. The genetic dissection using Brn3b-DTA mice provides strong evidence for distinct ipRGC populations mediating acute versus circadian effects. Controls (C48-C49) rule out melanopsin haploinsufficiency as an explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "655e1059-3570-4c2b-ae4e-62f1d4d62cae",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chemogenetic activation of Brn3b(+) RGCs is sufficient to induce acute body temperature decreases. CNO administration to Brn3b-hM3Dq mice (expressing hM3Dq in Brn3b+ cells) causes robust, sustained body temperature decreases lasting at least 6 hours (C54, C57), while PBS controls and CNO in wildtype mice have no effect (C55-C56). This demonstrates sufficiency of Brn3b(+) ipRGCs for acute thermoregulation through extra-SCN projections (C58).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C57 are supported by Figure 3 data showing CNO-induced temperature decreases. However, C58's conclusion that this occurs specifically through ipRGCs is uncertain because the Brn3bCre line also labels non-ipRGC RGCs (C81-C82). While the authors argue melanopsin necessity (C83-C84) supports ipRGC involvement, they cannot definitively exclude contributions from co-activated non-ipRGC Brn3b+ cells. The sufficiency claim for ipRGCs specifically requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "c5c49983-69a5-44dc-bc46-fa6572111f79",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Brn3b(+) ipRGCs are necessary for acute light-induced sleep but not for circadian photoentrainment of sleep. Brn3b-DTA mice show normal sleep photoentrainment and total daily sleep amounts (C60-C61, C63), but lack the acute increase in sleep during nocturnal light pulses that control mice exhibit (C65-C66, C68). This demonstrates that SCN innervation is insufficient for acute sleep induction by light (C70, C72).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61, C63, C65-C66, C68, C70, and C72 are supported by EEG/EMG data in Figures 4A-G and supplements. The parallel findings for sleep and body temperature strengthen the conclusion that Brn3b+ ipRGCs mediate acute but not circadian effects. Statistical analyses appropriately use repeated-measures ANOVA and mixed models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "f7ebffbe-cfdd-42d3-8f21-0441631b1680",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For thermoregulation and sleep, ipRGCs can be functionally segregated into Brn3b(+) cells mediating acute effects through extra-SCN projections and Brn3b(-) cells mediating circadian photoentrainment through SCN projections. This challenges the prevailing view that the SCN is a major relay for acute light effects on these behaviors (C74-C78).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 represent the major conceptual conclusion synthesizing results from body temperature and sleep experiments. The functional segregation is well-supported by the combined necessity (Brn3b-DTA) and sufficiency (chemogenetic) experiments. The anatomical basis (C76) is supported by prior literature (Chen et al., 2011; Li and Schmidt, 2018). This represents a significant advance in understanding non-image-forming vision circuits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "87ddf040-21be-4d24-af8f-b1e14e363bcd",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Unlike thermoregulation and sleep, both acute and circadian regulation of wheel-running activity are mediated by Brn3b(-) ipRGCs projecting to the SCN. Brn3b-DTA mice retain robust light-induced suppression of wheel running (C73), suggesting the SCN mediates both acute and circadian effects on locomotor activity (C79-C80).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73, C79-C80 are supported by Figure 4\u2014supplement 3 showing preserved wheel-running responses in Brn3b-DTA mice. This demonstrates behavioral specificity and suggests different circuit mechanisms for different acute light responses. However, the mild deficit noted (p=0.039) suggests some Brn3b+ contribution that warrants further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "3604b63e-866b-4dab-82a7-bd9843084735",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Brn3b-DTA mice show a small but significant increase in NREM sleep proportion and decrease in REM sleep proportion compared to controls during baseline conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by Figure 4\u2014supplement 1A. While statistically significant, the biological significance of this small baseline difference is unclear and may represent a secondary consequence of the genetic manipulation rather than a primary function of Brn3b+ ipRGCs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "97093ebf-b4f7-4518-93ec-59a387d9a30a",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neither control nor Brn3b-DTA mice show changes in the proportion of NREM versus REM sleep in response to acute light pulses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is supported by Figure 4\u2014supplement 1B-C. This indicates that light affects total sleep amount but not sleep architecture, which is an important mechanistic detail about how light regulates sleep.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "7f7fa60b-8921-4256-bccc-39588604f1ab",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Brn3b expression defines anatomically and functionally distinct ipRGC populations. Brn3b(+) ipRGCs project to OPN and dLGN but avoid the SCN, while Brn3b(-) ipRGCs project to SCN/IGL but avoid OPN/dLGN (C40-C41). Brn3b-DTA mice lack pupillary reflexes and contrast sensitivity but retain circadian photoentrainment (C44-C45).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 accurately summarize established findings from Chen et al., 2011 and other cited work. These provide essential background for interpreting the current study's results and are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "8ac19095-d7ef-4c6f-a403-5a2cc7372816",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In Brn3b-DTA mice, most ipRGC subtypes (M2-M6 and majority of M1) are ablated, with only ~200 Brn3b(-) M1 ipRGCs remaining. These remaining cells maintain SCN/IGL innervation while projections to other hypothalamic targets are lost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 accurately describe the cellular and anatomical consequences of the Brn3b-DTA manipulation based on Chen et al., 2011 and Li and Schmidt, 2018. This information is critical for interpreting which ipRGC populations mediate different functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "051e417a-61f8-4156-83cc-d4f22df36f08",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The necessity and sufficiency of melanopsin suggests that M1 or M2 ipRGC subtypes, which have strong melanopsin but weak rod/cone input, are likely responsible for acute thermoregulation and sleep effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 represents reasonable speculation based on known ipRGC subtype properties (Schmidt and Kofuji, 2009) and the melanopsin requirement demonstrated in this study. However, the authors acknowledge this is speculative and that current genetic tools cannot definitively test this hypothesis. Additional experiments targeting specific subtypes would be needed to support this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "5549944c-296a-4452-ac95-c73ff0ca00dd",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Multiple brain regions are candidate targets for Brn3b(+) ipRGC-mediated acute effects, including preoptic areas (MPO/VLPO), superior colliculus, and pretectum. Each has supporting and complicating evidence: preoptic areas are involved in thermoregulation and sleep and lose ipRGC input in Brn3b-DTA mice (C91-C97), while SC/pretectum receive robust ipRGC innervation and their lesions block acute sleep effects, but also receive conventional RGC input (C98-C101).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C101 accurately summarize the literature on potential downstream targets but do not resolve which brain areas actually mediate the observed effects. The authors appropriately acknowledge uncertainty (C97, C102) and note that sparse preoptic projections suggest indirect activation, while dense SC/pretectum innervation from conventional RGCs complicates interpretation of the melanopsin requirement. Future circuit-mapping experiments are needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "74ecfbbb-3add-46d5-824b-77b56ea52b67",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Body temperature regulation may be a primary mechanism through which ipRGCs influence multiple acute light responses. Changes in body temperature can directly affect sleep induction (C104), activity (C105), and cognition/alertness (C106), suggesting ipRGCs may have widespread physiological effects through thermoregulation (C103, C107).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C102-C107 present an interesting mechanistic hypothesis supported by literature showing body temperature affects sleep, activity, and cognition. However, this remains speculative as the current study does not test whether preventing temperature changes blocks other acute light effects, or whether temperature changes are sufficient to explain all observed behavioral effects. The alternative that multiple parallel pathways mediate different responses (C102) is equally plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "10bc98d5-88f5-4559-bf97-3cb187b550b3",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Identifying Brn3b(+) ipRGCs as mediators of acute alertness effects provides a cellular basis for developing targeted light interventions that promote acute alertness while minimizing circadian disruption. Current approaches using melanopsin's spectral properties are problematic because activating melanopsin for alertness also shifts the circadian clock (C108-C111).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C108-C111 represent speculative translational implications. While the identification of distinct ipRGC populations is scientifically sound, the practical feasibility of selectively targeting Brn3b(+) versus Brn3b(-) ipRGCs in humans is unclear. Both populations express melanopsin and have overlapping spectral sensitivities. The claim that this provides a basis for avoiding circadian disruption (C111) requires additional research to determine if and how these populations can be differentially activated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "b740c73e-2de3-4841-a10e-753f51b5b1a3",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Although the chemogenetic experiments using Brn3bCre likely activated non-ipRGC RGCs in addition to Brn3b(+) ipRGCs (C81-C82), the temperature changes are highly likely mediated by ipRGCs because melanopsin is required for acute thermoregulation (C83) and ablating Brn3b(+) ipRGCs eliminates the response (C84-C85).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 appropriately acknowledge a limitation of the chemogenetic approach while providing logical reasoning for why ipRGCs are likely responsible. The necessity experiments (melanopsin KO and Brn3b-DTA) support this interpretation, though definitive proof would require ipRGC-specific activation tools not currently available.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    },
+    {
+      "id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2",
+      "content_id": "c59e338b-1f78-4999-8ede-397098efe23d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims establishing that light affects alertness, mood, and cognition through ipRGCs (C1-C2); that ipRGCs mediate both acute and circadian effects (C9, C16-C18); that ipRGCs comprise multiple subtypes with distinct properties (C19-C20, C39, C89); that ipRGCs mediate circadian photoentrainment through SCN projections (C12-C15); and that body temperature plays critical roles in multiple physiological processes (C21-C24).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C1-C3, C7-C24, C26, C30-C31, C37, C39, C62, C71, C89) are appropriately cited to established literature and provide necessary context for the study. They represent accepted knowledge in the field rather than novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:17:53.184918Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "99008e64-d1f2-42e1-b814-97214fd54b81",
+      "result_id": "f2929b07-e594-437d-8a1c-be8bdf4d3b0f"
+    },
+    {
+      "claim_id": "e9151da9-066f-4126-b9af-c8da78a74414",
+      "result_id": "f2929b07-e594-437d-8a1c-be8bdf4d3b0f"
+    },
+    {
+      "claim_id": "0d03da40-c113-4177-88c7-840dbc856849",
+      "result_id": "f2929b07-e594-437d-8a1c-be8bdf4d3b0f"
+    },
+    {
+      "claim_id": "22e2ef03-8644-4729-b533-acfdf3feb1f4",
+      "result_id": "f2929b07-e594-437d-8a1c-be8bdf4d3b0f"
+    },
+    {
+      "claim_id": "7448017f-bfdd-4912-8dd3-66cf699c7d24",
+      "result_id": "f2929b07-e594-437d-8a1c-be8bdf4d3b0f"
+    },
+    {
+      "claim_id": "286ab695-76c6-4238-999b-6a0e3c6f0e1f",
+      "result_id": "f2929b07-e594-437d-8a1c-be8bdf4d3b0f"
+    },
+    {
+      "claim_id": "8598fb97-d924-45ad-a72d-824e3b39e4c8",
+      "result_id": "f2929b07-e594-437d-8a1c-be8bdf4d3b0f"
+    },
+    {
+      "claim_id": "1279d193-8a86-410d-a579-9dc7e68a3b20",
+      "result_id": "3029b83d-6195-46ff-b556-6cae86cb62f2"
+    },
+    {
+      "claim_id": "3313b71e-819e-4358-8140-39ee070e83d9",
+      "result_id": "3029b83d-6195-46ff-b556-6cae86cb62f2"
+    },
+    {
+      "claim_id": "1fafc80c-b2b0-4cb1-a44e-7fa97ed76058",
+      "result_id": "3029b83d-6195-46ff-b556-6cae86cb62f2"
+    },
+    {
+      "claim_id": "48d2c12e-6572-4b43-a2e7-41f33f44c449",
+      "result_id": "3029b83d-6195-46ff-b556-6cae86cb62f2"
+    },
+    {
+      "claim_id": "f12e0e9b-b26f-4b47-ae4c-92dc5a42bde1",
+      "result_id": "234e258c-8128-4fa7-97a9-4db6e8871ff2"
+    },
+    {
+      "claim_id": "e19319d9-a2ec-4800-be0f-850f1206b09e",
+      "result_id": "234e258c-8128-4fa7-97a9-4db6e8871ff2"
+    },
+    {
+      "claim_id": "64758c67-4404-4c6a-8600-1d4ed0e9511c",
+      "result_id": "234e258c-8128-4fa7-97a9-4db6e8871ff2"
+    },
+    {
+      "claim_id": "b133618a-ef04-4f28-8b31-5d9863a75554",
+      "result_id": "234e258c-8128-4fa7-97a9-4db6e8871ff2"
+    },
+    {
+      "claim_id": "ddccfdb2-103a-47ef-8dfc-8d68d82195ff",
+      "result_id": "234e258c-8128-4fa7-97a9-4db6e8871ff2"
+    },
+    {
+      "claim_id": "9827c22a-631a-46df-a24b-8d0765bfeb7d",
+      "result_id": "234e258c-8128-4fa7-97a9-4db6e8871ff2"
+    },
+    {
+      "claim_id": "221dd866-8ba0-4141-9b9c-cfaaa4e28ca3",
+      "result_id": "655e1059-3570-4c2b-ae4e-62f1d4d62cae"
+    },
+    {
+      "claim_id": "fee0fb12-ec73-42c4-84d4-e5ea56b1e020",
+      "result_id": "655e1059-3570-4c2b-ae4e-62f1d4d62cae"
+    },
+    {
+      "claim_id": "1d47e76b-13f8-4ecb-8c65-71a0e0e9be64",
+      "result_id": "655e1059-3570-4c2b-ae4e-62f1d4d62cae"
+    },
+    {
+      "claim_id": "768eb09d-aecf-4d96-99fa-74948567c47f",
+      "result_id": "655e1059-3570-4c2b-ae4e-62f1d4d62cae"
+    },
+    {
+      "claim_id": "5291ba77-0ae0-4c39-8cce-4900f3c794ba",
+      "result_id": "655e1059-3570-4c2b-ae4e-62f1d4d62cae"
+    },
+    {
+      "claim_id": "60362621-7fff-48a1-818b-29487fbb34c6",
+      "result_id": "655e1059-3570-4c2b-ae4e-62f1d4d62cae"
+    },
+    {
+      "claim_id": "11a3fc74-1b84-465f-b664-2bf372b58ba4",
+      "result_id": "c5c49983-69a5-44dc-bc46-fa6572111f79"
+    },
+    {
+      "claim_id": "b0ee530e-fc6f-4fdf-bbca-1f60bb256caf",
+      "result_id": "c5c49983-69a5-44dc-bc46-fa6572111f79"
+    },
+    {
+      "claim_id": "e0bfb4f6-709e-46db-9629-6a787ad942aa",
+      "result_id": "c5c49983-69a5-44dc-bc46-fa6572111f79"
+    },
+    {
+      "claim_id": "dcb7e5dd-0576-428a-a2ed-ef56eebf2fe0",
+      "result_id": "c5c49983-69a5-44dc-bc46-fa6572111f79"
+    },
+    {
+      "claim_id": "b841043a-2f7a-4e21-a264-203cd691cf89",
+      "result_id": "c5c49983-69a5-44dc-bc46-fa6572111f79"
+    },
+    {
+      "claim_id": "d7cfe018-3a04-44ba-a25e-79b2f2a05850",
+      "result_id": "c5c49983-69a5-44dc-bc46-fa6572111f79"
+    },
+    {
+      "claim_id": "39238ebb-510d-4106-adf3-d2476459518a",
+      "result_id": "c5c49983-69a5-44dc-bc46-fa6572111f79"
+    },
+    {
+      "claim_id": "084a8f10-c148-4be7-98d9-183bf087c047",
+      "result_id": "c5c49983-69a5-44dc-bc46-fa6572111f79"
+    },
+    {
+      "claim_id": "1c735e37-9d46-4ad5-bab2-fda2d5e36ee1",
+      "result_id": "f7ebffbe-cfdd-42d3-8f21-0441631b1680"
+    },
+    {
+      "claim_id": "17e4032d-a2fe-4db0-8192-d47a6130fcfe",
+      "result_id": "f7ebffbe-cfdd-42d3-8f21-0441631b1680"
+    },
+    {
+      "claim_id": "7cf0733e-ee53-4df7-8efd-d946e2aca3c8",
+      "result_id": "f7ebffbe-cfdd-42d3-8f21-0441631b1680"
+    },
+    {
+      "claim_id": "eeec444f-1a4a-4e0c-9a35-73cf4290726a",
+      "result_id": "f7ebffbe-cfdd-42d3-8f21-0441631b1680"
+    },
+    {
+      "claim_id": "ab966d1c-4b4a-4139-b785-346e70b3f865",
+      "result_id": "f7ebffbe-cfdd-42d3-8f21-0441631b1680"
+    },
+    {
+      "claim_id": "3d3469ea-4fd0-474d-9b25-5bb7c1376274",
+      "result_id": "87ddf040-21be-4d24-af8f-b1e14e363bcd"
+    },
+    {
+      "claim_id": "6f5f52d0-6c41-41f2-b948-d70f2f60f1ef",
+      "result_id": "87ddf040-21be-4d24-af8f-b1e14e363bcd"
+    },
+    {
+      "claim_id": "991f5979-ace4-4be1-ad0d-f5640cf2a32b",
+      "result_id": "87ddf040-21be-4d24-af8f-b1e14e363bcd"
+    },
+    {
+      "claim_id": "3df79395-1a80-423c-8403-3d55ad379590",
+      "result_id": "3604b63e-866b-4dab-82a7-bd9843084735"
+    },
+    {
+      "claim_id": "aa3fa35b-fdcc-4a5f-8438-46cb28c4eda2",
+      "result_id": "97093ebf-b4f7-4518-93ec-59a387d9a30a"
+    },
+    {
+      "claim_id": "d9daed93-b794-49b8-ac41-913afc3404b0",
+      "result_id": "7f7fa60b-8921-4256-bccc-39588604f1ab"
+    },
+    {
+      "claim_id": "3cb0d8c1-cdb3-4df7-91eb-9936e58dc96e",
+      "result_id": "7f7fa60b-8921-4256-bccc-39588604f1ab"
+    },
+    {
+      "claim_id": "5157a344-4223-4c24-bc4c-6f66c789f765",
+      "result_id": "7f7fa60b-8921-4256-bccc-39588604f1ab"
+    },
+    {
+      "claim_id": "2af26162-00e8-40c8-bebb-e0f0598f1771",
+      "result_id": "7f7fa60b-8921-4256-bccc-39588604f1ab"
+    },
+    {
+      "claim_id": "da19b608-ec90-4b33-ab13-4bcae02efc4e",
+      "result_id": "7f7fa60b-8921-4256-bccc-39588604f1ab"
+    },
+    {
+      "claim_id": "8f5764d2-2d38-47df-acd3-72c3bc8cc1cf",
+      "result_id": "7f7fa60b-8921-4256-bccc-39588604f1ab"
+    },
+    {
+      "claim_id": "dc2eebcf-631f-4364-8dad-6208fa59eab4",
+      "result_id": "8ac19095-d7ef-4c6f-a403-5a2cc7372816"
+    },
+    {
+      "claim_id": "6ce17b2b-5169-4ed1-8392-aa69cc87d7b0",
+      "result_id": "8ac19095-d7ef-4c6f-a403-5a2cc7372816"
+    },
+    {
+      "claim_id": "910d4c15-4ae1-406a-97d6-1be93d7547c5",
+      "result_id": "8ac19095-d7ef-4c6f-a403-5a2cc7372816"
+    },
+    {
+      "claim_id": "8233db36-a42c-46bd-853c-e5f9491425ee",
+      "result_id": "051e417a-61f8-4156-83cc-d4f22df36f08"
+    },
+    {
+      "claim_id": "673cad4e-4584-4452-9b65-0b5356cea74d",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "923f6dce-9d1d-4626-aed1-908f477670ed",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "3edf1ced-bdd5-4b2b-9cbe-b9c1de14ddf6",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "81f18b31-f988-4ce0-8fde-dd49742db91f",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "dfd74da7-5593-411c-89c3-3f338c9f5b8b",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "38513771-6311-4d8f-8b1c-9cec572ccdda",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "4c8d1643-a9d5-4c01-8dae-eb4427e95909",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "3174e9c1-9275-4dd0-b123-c45f24d267ed",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "5fb28964-9046-4bda-8d47-acc2be8e9d76",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "13008337-f52c-4886-994c-7c615ff9a072",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "24448bd3-c89d-40cd-b2a6-790fee5c1e28",
+      "result_id": "5549944c-296a-4452-ac95-c73ff0ca00dd"
+    },
+    {
+      "claim_id": "764570ad-bf38-446b-9fb8-92542aa4b1b0",
+      "result_id": "74ecfbbb-3add-46d5-824b-77b56ea52b67"
+    },
+    {
+      "claim_id": "629e73ad-2403-41ba-ab9d-0053d79e57d2",
+      "result_id": "74ecfbbb-3add-46d5-824b-77b56ea52b67"
+    },
+    {
+      "claim_id": "ebd5155b-afb4-40b3-bf5a-fb907c5c9106",
+      "result_id": "74ecfbbb-3add-46d5-824b-77b56ea52b67"
+    },
+    {
+      "claim_id": "508f2045-2d28-48fc-80ad-0f2fdaa09e74",
+      "result_id": "74ecfbbb-3add-46d5-824b-77b56ea52b67"
+    },
+    {
+      "claim_id": "39ead854-d61d-45e8-bdae-4369210f2419",
+      "result_id": "74ecfbbb-3add-46d5-824b-77b56ea52b67"
+    },
+    {
+      "claim_id": "846c7c16-3ba6-47ab-b76b-00b1a36b9092",
+      "result_id": "74ecfbbb-3add-46d5-824b-77b56ea52b67"
+    },
+    {
+      "claim_id": "f5243f61-1a78-49e1-8a33-d6c4ab7f094a",
+      "result_id": "10bc98d5-88f5-4559-bf97-3cb187b550b3"
+    },
+    {
+      "claim_id": "1a0bef40-8981-4305-8f5b-e733745733e5",
+      "result_id": "10bc98d5-88f5-4559-bf97-3cb187b550b3"
+    },
+    {
+      "claim_id": "c697e1af-be48-454b-9694-139b4e6f7aea",
+      "result_id": "10bc98d5-88f5-4559-bf97-3cb187b550b3"
+    },
+    {
+      "claim_id": "96f70f1e-a638-4966-9a5e-e366d28a88f3",
+      "result_id": "10bc98d5-88f5-4559-bf97-3cb187b550b3"
+    },
+    {
+      "claim_id": "804e1350-7885-4276-b97e-826134b620d6",
+      "result_id": "b740c73e-2de3-4841-a10e-753f51b5b1a3"
+    },
+    {
+      "claim_id": "0d281126-e363-420f-98f2-5d9098df1cae",
+      "result_id": "b740c73e-2de3-4841-a10e-753f51b5b1a3"
+    },
+    {
+      "claim_id": "4dfd2a42-b95b-4d0d-8847-eae1b8323a83",
+      "result_id": "b740c73e-2de3-4841-a10e-753f51b5b1a3"
+    },
+    {
+      "claim_id": "37caf8c3-e4eb-4d8f-9f0d-25fd4d1bae07",
+      "result_id": "b740c73e-2de3-4841-a10e-753f51b5b1a3"
+    },
+    {
+      "claim_id": "ba841d91-ab15-4078-97e7-9f1a55a30596",
+      "result_id": "b740c73e-2de3-4841-a10e-753f51b5b1a3"
+    },
+    {
+      "claim_id": "02e2edf1-32e5-40c6-8e4e-56b53a67e1ec",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "508fddc6-ada8-4904-bc25-3b30f77743b5",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "4fdcd2ef-1b9d-41e2-b59b-9e2d228e5892",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "fc1b80fc-0462-4f93-bec4-90f8eaee3964",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "b5e4c25f-be2f-434b-9181-a11bb69eb00f",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "da652eaa-4bbe-4b08-8152-888d5b72c247",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "92418344-fba0-45e0-b98a-4054f0daab17",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "b18a4c27-c876-4580-9777-929ba151eff2",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "95c44caf-1d04-407b-a2e1-f66839d83306",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "c2157527-92b4-4647-b2d3-c1499128797a",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "971d7ac9-9272-43c6-81dc-a36a5e721523",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "afdb1a0e-17c9-414c-912e-b4ed3b12e6fd",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "899a95c1-6ae5-4492-8eda-f3d08f48811e",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "063d2d64-03b3-4882-b46d-057065eceeb6",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "9ad7533a-f326-42f7-b328-0b1418adec77",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "60167465-cc78-46aa-a269-37b3295a7731",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "16fb1360-152c-4fe1-a48a-10985de921d9",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "bda9d93b-eda7-49c1-9646-838648a742bb",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "084553d5-709f-4db6-aac2-bff6dcdda207",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "e7b0b6be-9dbd-430e-bb4d-78d4d980cddd",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "0d86a113-e69d-4aa4-825d-1df868f9f8b4",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "7d7bc758-f964-45a4-8a31-d912569f1f5f",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "a704b5c5-daa2-4991-b056-e2af2ba7dfb2",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "e1f858b6-e141-44be-ace8-9a9077a29bbb",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "831ba2d2-f08e-4aa1-a630-cc7e57f3994f",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "4d1d5dac-b7a3-4832-86d4-91b26b2b4f51",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "b6556639-4ca0-4b72-8486-47f20446bba4",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "4c338881-753a-4115-9565-12140349f467",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    },
+    {
+      "claim_id": "31156d3f-6ae8-45f1-b16c-386f53a0120c",
+      "result_id": "9530ee6c-3cdb-42e5-8694-43d52d3690d2"
+    }
+  ],
+  "comparisons": []
+}

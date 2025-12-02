@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C30",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A polysome proteomics pipeline combining sucrose gradient fractionation with quantitative TMT-based mass spectrometry systematically identified proteins associated with collided ribosomes in HCT116 cells. EDF1 was identified as the most enriched protein (7-10 fold) in heavy polysome fractions of emetine-treated samples, with minimal presence in untreated polysomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological approach is well-described with appropriate controls (untreated vs. low-dose emetine). The proteomics data quantified 4288 proteins including 79/80 ribosomal proteins with clear enrichment patterns across gradient fractions. EDF1's dramatic enrichment in collision-induced polysomes is demonstrated through multiple complementary approaches (TMT-MS, immunoblotting) and validated with different collision-inducing agents (emetine, anisomycin, UV).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "EDF1 recruitment to polysomes occurs under physiologically relevant collision-inducing conditions including treatment with anisomycin and UV irradiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by immunoblotting data showing EDF1 accumulation on polysomes following anisomycin treatment (Figure 1J) and UV irradiation (Figure 1K). The UV experiment is particularly important as it represents a more physiological stress condition, and the result is consistent with cited work showing UV-induced pyrimidine dimers cause ribosome collisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Recruitment of EDF1 and several known ribosome-mediated QC factors (GIGYF2, TRIP4, ASCC3, PELO, HBS1L, N4BP2) to collided ribosomes is independent of ZNF598.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The polysome proteomics in \u0394ZNF598 and ZNF598-OE cell lines demonstrates that EDF1 and multiple QC factors accumulate on emetine-treated polysomes regardless of ZNF598 status. This is validated by immunoblotting in \u0394ZNF598 cells (Figure 2F). The enrichment analysis methodology comparing fold-changes between genotypes is appropriate, though the biological interpretation challenges the prevailing model of ZNF598-dependent recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Loss of EDF1 decreases ZNF598-mediated ubiquitylation of ribosomal proteins eS10 and uS10 in response to collision-inducing stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches demonstrate reduced eS10/uS10 ubiquitylation upon EDF1 depletion: siRNA knockdown with immunoblotting (Figure 2G), sucrose gradient fractionation with immunoblotting (Figure 2\u2014figure supplement 2B), UV treatment of \u0394EDF1 clones (Figure 2\u2014figure supplement 2E), and TMT-based quantification of the diGly-modified eS10 peptide (Figure 2H). The consistency across methods and conditions strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "EDF1 modestly facilitates ZNF598 recruitment to polysomes and ZAK\u03b1-mediated p38 phosphorylation in response to ribosomal collisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data show a modest (~10-20%) decrease in ZNF598 recruitment (Figure 2\u2014figure supplement 2G) and reduced phospho-p38 levels (Figure 2\u2014figure supplement 2H) upon EDF1 depletion. While statistically supported, the modest magnitude suggests EDF1 plays a facilitating rather than essential role in these processes, consistent with the authors' interpretation that EDF1 acts upstream to stabilize collision complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "RACK1 is critical for EDF1 recruitment to collided ribosomes, either directly or through stabilizing the collision interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunoblotting data (Figure 2I) clearly shows compromised EDF1 accumulation on polysomes when RACK1 is depleted by siRNA, while polysome profiles remain intact. The interpretation that RACK1 acts either directly or through stabilizing the collision interface is appropriately cautious given that the experiment doesn't distinguish between these mechanisms. The result is consistent with prior work showing RACK1 localizes to the collision interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cryo-EM structures of EDF1 bound to human 80S ribosomes (2.9 \u00c5 resolution) and Mbf1 bound to yeast collided ribosomes (3.2 \u00c5 resolution) reveal conserved binding modes at the 40S subunit near the mRNA entry channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cryo-EM structures are well-resolved with appropriate validation statistics (FSC curves, local resolution maps). The structural data clearly show EDF1/Mbf1 binding at the mRNA entry channel with nearly identical binding modes despite different ribosomal states (non-rotated for EDF1, rotated for Mbf1). The identification of LYAR in the A site of the EDF1 structure is a secondary finding. Model building from Ser-24 to Arg-133 for EDF1 indicates good density quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "EDF1/Mbf1 binding induces conformational changes in the 40S subunit including displacement of rRNA helix 16 by ~5 degrees and displacement of the eS30 C-terminus, with extensive interactions involving h16, h18, h33, uS3, uS4, and eS30.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural data provide detailed molecular interactions with clear density for the protein-RNA and protein-protein interfaces. The displacement of h16 and eS30 C-terminus are well-documented in the figures. The observation that conserved uS3 residues interacting with EDF1/Mbf1 were previously shown to prevent frameshifting (Wang et al., 2018) provides functional validation of the structural findings. The GQNKQ motif mimicking eS30's interaction with h18 is a nice structural detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "EDF1/Mbf1 contains a conserved KKW/KKY motif that directly interacts with mRNA in a 'headlock-like' arrangement, altering the mRNA path compared to ribosomes without Mbf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural data show clear mRNA density in the Mbf1-bound structure with Y48 positioned to interact with mRNA (Figure 4C). The 'headlock' arrangement formed by the KKY motif and following alpha-helix is well-visualized. The altered mRNA path compared to collided ribosomes without Mbf1 (Figure 4D) provides strong evidence for the functional significance of this interaction. The lack of visible mRNA in the mammalian EDF1 structure is a limitation but doesn't undermine the conserved binding mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mbf1 preferentially binds to collided ribosomes in the rotated state, with occupancy on both the first and second collided ribosomes but not the initial stalled ribosome, suggesting recruitment to trailing ribosomes following collision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The particle classification analysis (Figure 4E, Figure 3\u2014figure supplement 2B) provides clear evidence for Mbf1's preferential binding to rotated collided ribosomes. The analysis of neighboring ribosomes showing Mbf1 on both first and second collided ribosomes (with slight preference for the second) is well-documented. The speculation about the N-terminus sensing neighboring ribosomes (C83) is appropriately labeled as speculation and doesn't affect the core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "EDF1 interacts with translational repressors GIGYF2 and EIF4E2, ribosome-mediated QC factors (ZNF598, RQT complex components), and other factors (TCOF1, kinases) as demonstrated by immunoaffinity purification and BioID proximity labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Two complementary approaches (IP-MS and BioID) identify overlapping sets of EDF1-interacting proteins with GIGYF2, EIF4E2, and TCOF1 as top candidates in both datasets. The collision-enhanced interaction with N4BP2 (Figure 5A) is an interesting finding. The identification of kinases (mTOR, CKII, RPS6K) suggests additional regulatory roles. The consistency between independent methods strengthens confidence in the interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Recruitment of GIGYF2 and EIF4E2 to heavy polysomal fractions of emetine-treated samples is strongly dependent on EDF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The polysome proteomics data (Figure 6C) and immunoblotting validation (Figure 6D) clearly demonstrate EDF1-dependent recruitment of GIGYF2/EIF4E2 to heavy polysomes. The absence of GIGYF2 detection in emetine-treated \u0394EDF1 polysomes is particularly striking. The preferential enrichment in heavier polysomes suggests these factors are recruited to mRNAs with longer queues of collided ribosomes, which is a reasonable interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "EDF1-dependent recruitment of GIGYF2\u2022EIF4E2 to collided ribosomes initiates a negative feedback loop preventing translation of defective mRNAs, as demonstrated by increased reporter translation in \u0394EDF1 cells that requires both EDF1 domains for ribosome binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reporter assays using polyA-stalling (Figure 6E) and Xbp1u-stalling (Figure 6\u2014figure supplement 2H) sequences show consistent increases in translation upon loss of EDF1 or GIGYF2\u2022EIF4E2. The epistasis analysis showing minimal additional effect of GIGYF2\u2022EIF4E2 depletion in \u0394EDF1 cells supports the pathway model. The rescue experiments with EDF1 truncations (Figure 6\u2014figure supplement 2A-C) demonstrate domain requirements. The lack of effect on non-stalling reporters (Figure 6\u2014figure supplement 2F-G) confirms specificity. Statistical analysis with appropriate corrections is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Ribosomal collisions trigger an EDF1-dependent transcriptional response with a strong JUN signature, including robust upregulation of JUN, ATF3, DUSP1, EGR1, and other stress-response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data demonstrate collision-induced transcriptional changes with JUN showing striking 4-8 fold upregulation at 30-120 min (Figure 7C-D, F). The correlation between JUN phosphorylation and eS10 ubiquitylation dose-response (Figure 7A) supports the connection to collisions. The volcano plots (Figure 7E-F) clearly identify EDF1-dependent genes. The strong overlap (p<10^-100) between WT and \u0394EDF1 upregulated genes (Figure 7\u2014figure supplement 1C) with attenuated levels in \u0394EDF1 is well-documented. The DESeq2 analysis with interaction terms is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9"
+    ],
+    "result": "Translation of aberrant mRNAs induces ribosomal collisions that trigger quality control pathways, and low doses of elongation inhibitors induce global ribosomal collisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established findings from prior work (extensively cited) that are validated in this manuscript through RNase A digestion experiments showing nuclease-resistant disomes and trisomes with low-dose emetine (Figure 1\u2014figure supplement 1A). These claims provide essential background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Prior work has established the functions of various ribosome-associated proteins (TCOF1, NACA/BTF3, Mbf1, ZNF598, Cue2/N4BP2, RQT complex, GIGYF2/EIF4E2) and EDF1's role as a transcriptional coactivator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior work with appropriate citations. They provide necessary context for interpreting the current findings. The citations appear accurate based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "EDF1 coordinates multiple responses of the ribosome-mediated quality control pathway and provides insights into the intersection of ribosome-mediated QC with transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim is supported by the collective evidence showing EDF1's roles in: (1) facilitating eS10/uS10 ubiquitylation, (2) recruiting GIGYF2\u2022EIF4E2 to initiate translational repression, (3) binding at the collision interface to stabilize mRNA, and (4) regulating collision-induced transcriptional responses. The multifaceted characterization across structural, biochemical, and functional levels supports this integrative conclusion.",
+    "result_type": "MAJOR"
+  }
+]

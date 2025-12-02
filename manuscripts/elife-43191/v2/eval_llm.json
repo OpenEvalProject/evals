@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Optogenetic suppression of APC delay-period activity impaired performance in the DNMS task in VGAT-ChR2 mice. The impairment was delay-duration dependent, with longer delays producing larger deficits, and timing-dependent, with late-delay suppression producing the strongest effects. The effect was specific to the experimental group and not observed in control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C20, C22-C24 provide converging evidence from multiple optogenetic experiments with appropriate controls (C16, C25-C28). The use of VGAT-ChR2 mice with littermate controls, blind design, and statistical validation (mixed-between-within-ANOVA with genotype \u00d7 laser interactions) support the conclusion. The dose-response relationship with delay duration and timing strengthens the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Control experiments demonstrated that optogenetic suppression of APC before odor delivery did not impair performance in three different tasks, excluding the possibility that behavioral deficits were due to impaired sensory perception rather than delay-period information maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe well-designed control experiments that rule out alternative explanations for the main optogenetic findings. The use of three different control tasks (DNMS-baseline, GNG, and NMS-WOD) with intact performance provides strong evidence that the delay-period effects are specific to working memory maintenance rather than sensory or motor processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Formal generalized linear model comparison identified an optimal model containing optogenetic suppression during delay, match/non-match relationship, and delay duration as key parameters. The model demonstrated that optogenetic perturbation had a greater impact than delay duration on task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 describe a rigorous model comparison approach using AIC and r-squared metrics with bootstrap validation. The systematic comparison of seven candidate models and identification of model #6 as optimal provides quantitative support for the importance of APC delay-period activity. However, the manuscript could benefit from more details on model validation and potential overfitting concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Optogenetic suppression of APC delay-period activity impaired performance in the DPA task, which eliminates repetition and recency effects as alternative explanations. Statistical analysis confirmed no outliers in the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 demonstrate that APC is important for working memory even when sensory adaptation cannot explain performance. The DPA task design addresses a key criticism of the DNMS task (C35-C36). Outlier analysis using two methods (C41) strengthens data quality, though the variability across mice noted in the text suggests some heterogeneity in effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In a dual-task paradigm where mice performed a distracting GNG task during the DPA delay period, performance was impaired compared to the simple DPA task (dual-task interference). Optogenetic suppression of APC after the distractor significantly increased false-alarm rates, demonstrating that APC maintains information even with intervening distractors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 provide evidence for active maintenance against distraction, a hallmark of working memory (C43). The dual-task interference effect (C46) is consistent with human and monkey literature. However, the optogenetic effect shows marginal overall performance impact (p=0.07 for genotype-laser interaction mentioned in text) with significant false-alarm rate increase (C48), suggesting the effect may be more subtle than in simpler tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Electrophysiological recordings revealed that APC neurons encode sample odor information during the delay period. Single neurons showed sample-selective activity that was reduced in error trials. Population decoding using SVM demonstrated significant single-trial decoding of sample identity, with greater selectivity in 8s-delay compared to 4s-delay tasks. Cross-temporal decoding analysis showed stable information maintenance throughout the delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 provide comprehensive electrophysiological evidence for information encoding in APC. The combination of single-neuron analysis (C50-C55), population decoding (C56), task-dependent recruitment (C57-C58), and cross-temporal stability (C59) converges on the conclusion that APC actively maintains working memory information. The correlation between neural activity and behavioral performance (C52) strengthens the functional interpretation. The methods appear rigorous with appropriate controls (shuffle tests, bootstrap validation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In the multiple-sample DPA task with six sample odors, APC neurons showed sample-odor information during the delay period as measured by mutual information and SVM decoding. In the dual-task, approximately 30% of neurons coded for both DPA samples and GNG distractors, and decoding accuracy was maintained after the distractor and correlated with behavioral performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 extend the electrophysiological findings to more complex task conditions. The multiple-sample DPA (C62) addresses concerns about strategy bias with limited stimuli (C60). The dual-task recordings (C63-C66) provide neural evidence for active maintenance against distraction, complementing the optogenetic findings. The correlation between decoding accuracy and performance (C66) supports functional relevance, though causality cannot be established from correlation alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Only about 10% of APC neurons carried working memory information during the late delay period, consistent with sparse coding in piriform cortex. Despite constant updating by sensory inputs, APC population activity can maintain information through the delay period even with distracting tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 provide an interpretation of the sparse coding observed in APC. The 10% selectivity (C71) is consistent with prior literature on piriform cortex (C72), though this represents a relatively small fraction of neurons. The conclusion about resistance to overwriting (C73) is supported by the dual-task data, though the mechanisms remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors propose several explanations for the smaller optogenetic effect sizes with shorter delays: focal suppression sparing large APC areas, simpler tasks requiring less APC activity, potential loops with other regions, and partial suppression acting as a damper on recurrent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C78 are speculative explanations (acknowledged as such in the evidence_type) for the variable effect sizes across conditions. While C75 has some support from c-Fos data, the other explanations (C76-C78) are not directly tested. These represent reasonable hypotheses but require additional experiments for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C8"
+    ],
+    "result": "Comparing current results with previous findings, the authors conclude that the functional role of memory maintenance may be partially transferred from mPFC to APC through learning, as mPFC delay-period activity was important during learning but not in well-trained mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88 and C8 propose a learning-dependent transfer of function between brain regions. While C8 is supported by prior work (Liu et al., 2014) and the current study shows APC importance in well-trained mice, the transfer hypothesis (C88) is not directly tested. The current study did not examine APC during learning, making this conclusion speculative. Additional experiments tracking both regions across learning would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The DNMS task was properly designed and validated: mice performed with little licking during delay, showed progressive performance decay with increasing delay duration (a hallmark of working memory), odor residue was cleared below sensory threshold, and appropriate reward contingencies were used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C102-C105 describe methodological validations of the behavioral task. The performance decay with delay (C14) confirms working memory engagement. Odor clearance measurements (C102-C103) rule out residual odor cues. The task design details (C104-C105) are clearly described. These validations are important for interpreting the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The APC is a good candidate for olfactory working memory based on its direct connections with the olfactory bulb, rich recurrent connectivity suitable for reverberating activity, experience-dependent activity patterns, and activation in human olfactory working memory tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 provide the rationale for studying APC in working memory. These are well-supported by citations to anatomical, physiological, and functional imaging literature. This represents appropriate background justification rather than novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The experimental data are consistent with the 'essential theory' prediction that temporal suppression of delay-period activity in a sensory region should produce behavioral deficits if sensory regions are essential for working memory maintenance, addressing an ongoing theoretical debate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C9-C13 frame the study in the context of the essential vs. unessential theory debate. The optogenetic and recording results support the essential theory (C9-C11) over the unessential theory (C12-C13). However, the study is in the olfactory domain, and the debate has focused primarily on visual, somatosensory, and auditory domains (C12), limiting direct comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C82"
+    ],
+    "result": "Despite the highly parallel organization of the olfactory pathway with five parallel brain regions receiving olfactory bulb input, optogenetic perturbation of just the APC impaired working memory performance, suggesting APC's particular importance among parallel olfactory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 highlight the surprising specificity of the APC effect given parallel pathway organization. While C82 accurately describes olfactory anatomy, C83's interpretation assumes that other parallel regions were not affected by APC manipulation and that they cannot compensate. The conclusion would be strengthened by testing other parallel regions, though the current evidence does support APC's importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Control mice showed modest performance impairment with longer laser illumination durations, likely due to visual distraction. A visual mask was applied in later experiments to minimize this confound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 identify and address a potential confound in the optogenetic experiments. The observation of control effects (C106) demonstrates appropriate attention to potential artifacts. The implementation of a visual mask (C107) shows methodological refinement. The statistical approach (ANOVA interaction) appropriately controls for non-specific laser effects.",
+    "result_type": "MINOR"
+  }
+]

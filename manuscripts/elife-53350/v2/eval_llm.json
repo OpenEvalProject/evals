@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C38",
+      "C109",
+      "C110",
+      "C119"
+    ],
+    "result": "The natverse is a suite of interoperable open-source R packages for neuroanatomical data analysis that enables users to read local and remote data, perform analyses including visualization and clustering, and compare morphology and connectivity across many neurons within and across template spaces and imaging modalities. The natverse integrates the vast majority of Drosophila neuroanatomical light microscopy and electron microscopy connectomic datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C18-C23, C32-C35, C38, C109-C110, and C119 collectively describe the natverse as a comprehensive software platform with documented capabilities for data reading, analysis, and integration. The claims are consistent with each other and supported by the manuscript text, figures, and stated availability of code and documentation. The installation process, documentation, and community support are explicitly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "R was chosen as the development platform for the natverse because it is a leading platform for bioinformatics and general data analysis, is free and open source, features a well-defined system for creating and distributing extension packages, and supports reproducible research strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide the rationale for choosing R as the development platform. These are well-established properties of the R programming language and ecosystem, and the claims are consistent with general knowledge about R's capabilities and infrastructure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The natverse is developed using modern software best practices and is organized into separate packages that can be grouped into four main categories. Stable versions are available on CRAN while developmental versions are on GitHub, and the packages have already been used in multiple publications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C39-C42 describe the development practices, organizational structure, and distribution methods for the natverse. These claims are supported by the manuscript text and are verifiable through the cited publications and stated repository locations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The natverse provides functions for morphological and graph-theoretic analyses of neurons, primarily operating with skeleton data represented as neuron objects in standard SWC format. It includes capabilities for analyzing neuronal skeletons with respect to volume objects, calculating volumes, pruning neurons, and inferring connectivity from light-level data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C56 describe the core analytical capabilities of the natverse for neuron morphology analysis. These claims are supported by the manuscript text and figures (particularly Figures 2 and 3) that demonstrate these capabilities with example data and code.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The natverse includes NBLAST, a morphological similarity algorithm, in the nat.nblast package for neuronal cell typing. NBLAST scores can be hierarchically clustered and visualized, and morphological clustering forms a good starting point for cell typing, though it may not exactly agree with manually defined cell types. The natverse includes interactive functions to help identify mis-assignments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C68 describe the cell typing capabilities of the natverse using NBLAST. These claims are supported by the manuscript text, citations to the original NBLAST publication (Costa et al., 2016), and Figure 4 which demonstrates the clustering and visualization capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "It is highly desirable to compare neurons between datasets within a singular template space. For D. melanogaster, separate template brains contain many large and useful but disparate datasets. Two approaches have been taken in specifying template spaces: choosing a single brain or creating an average brain, and quantitative neuroanatomical work requires images to be spatially calibrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 describe the motivation and approaches for template space registration. These claims are supported by the manuscript text, Table 1 which lists the datasets, and citations to relevant work (e.g., Bogovic et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "A simple 180\u00b0 flip about the medio-lateral axis is insufficient to generate a left-right mirror for most neuroanatomical volumes. Non-rigid warping registrations have been constructed for template spaces to fix the mapping from one hemisphere to the other. The mirroring procedure does not introduce systematic errors, as demonstrated by the lack of significant difference in NBLAST similarity scores between same-side and alternate-side comparisons of DL2d projection neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 describe the mirroring registration approach and its validation. The claims are supported by the manuscript text, Figure 5 and Figure 5\u2014figure supplement 1, and statistical testing (Kolmogorov-Smirnov test, D = 0.025, p=0.094) showing no significant difference in score distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Simply rescaling a sample image to match a reference brain fails due to differences in position and rotation. An affine transformation can account for these differences but not for differences in shape. A full non-rigid warping deformation using a mutual information metric is used to correct for shape differences, allowing unsupervised registration that can be parallelized. The entire FlyCircuit dataset was re-registered with high accuracy within a day using a high-performance computational cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 describe the bridging registration approach and its performance. These claims are supported by the manuscript text, Figure 6 and Figure 6\u2014figure supplement 1, and citations to the methods used (Jefferis et al., 2007; Rohlfing and Maurer, 2003; Rueckert et al., 1999).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The creation of bridges between different template spaces facilitates the decomposition of expression patterns into constituent neurons, identification of correspondences between neuroblast clones, and checking innervation across datasets. Bridging the FlyLight and Vienna Tiles libraries enables direct co-visualization for predicting intersectional expression patterns. It is also possible to warp 3D neuropils and neuron skeletons without using landmark pairs using Deformetrica.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 describe applications of bridging registrations. These claims are supported by the manuscript text, Figure 6\u2014figure supplement 2 and Figure 6\u2014figure supplement 3, and citations to relevant work (e.g., Otsuna et al., 2018; B\u00f4ne et al., 2018; Durrleman et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Finding neurons of the same cell type between high-resolution EM datasets and light-level images is essential for identifying neurons and their genetic resources. This can be done by finding corresponding landmarks to build a registration. The R package elmr can be used to select anatomical loci from light-level neurons and generate URLs for FAFB14 CATMAID coordinates. Close matches reveal likely morphology of non-reconstructed branches and can help human annotators reconstruct neurons accurately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 describe the EM-to-LM matching pipeline. These claims are supported by the manuscript text, Figure 7, and citations to relevant work (e.g., Frechter et al., 2019). The capabilities of the elmr package are explicitly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The natverse was combined with automatic segmentation of neurites in FAFB14 using a flood filling approach. The fafbseg package includes functions for improved up-/downstream sampling based on automatic segmentation. Currently, ~500 automatic segments map onto one accurately manually traced neuron, but only ~20 segments constitute the highest Strahler order branches, speeding up discovery of coarse morphologies by ~10x. Twigs and small-calibre branches are more difficult to automatically segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 describe the integration of automatic segmentation with the natverse. These claims are supported by the manuscript text, Figure 8\u2014figure supplement 1, and citations to the automatic segmentation work (Li et al., 2019). The quantitative estimates of segment numbers and speedup are explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "A densely reconstructed connectome with ~35% of synapses connected for just under half of the central fly brain has been made available by the FlyEM team. Neurons from this 'hemibrain' volume can be transformed to the JRC2018F light level template brain via a bridging registration, which has been wrapped within the natverse framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe the integration of the hemibrain connectome with the natverse. These claims are supported by the manuscript text and citations to the hemibrain work (Scheffer and Meinertzhagen, 2019; Shan Xu et al., 2020; Bogovic et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The shape of a neuron is of major functional significance, morphology is driven by and constrains connectivity, and it is the primary means by which neuroscientists have historically identified neuron classes. Three main drivers behind the recent emphasis on quantitative neuroanatomy are: the increasing scale of new approaches for acquiring image data, a drive to formalize descriptions of spatial properties, and a desire to understand organizational principles and correlate them with dynamic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 provide background context for the work. These are well-established principles in neuroscience and are stated as general knowledge in the Discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The natverse is an actively developing project with anticipated future developments including dealing with neurons as volumes, expanding bridging tools to support more species, and expanding the range of neurogeometric analysis algorithms. It will soon be possible to identify split-GAL4 lines, EM reconstructions, and developmental clones for any given neuron in D. melanogaster. The near future will see generation of EM data for multiple whole brains and quality automatic segmentations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111, C114-C118 describe future directions and anticipated capabilities. These are speculative statements about future work rather than current results. While they are reasonable projections based on current progress, they cannot be evaluated as supported or unsupported results since they have not yet been achieved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "High-quality bridging registrations have been created between new template spaces and brains in the hub. Using these resources, it is now possible to co-visualize and analyze more than 23,000 single neuron images, expression patterns of >9500 GAL4 lines, and a near complete set of ~100 adult neuroblast clone lineage data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 describe the bridging registrations created and the datasets that can now be integrated. These claims are supported by the manuscript text, Figure 6\u2014figure supplement 2a, Table 1, and citations to the relevant datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The catmaid package provides API access to the CATMAID web image annotation tool, which is commonly used for manually reconstructing neuron morphologies from EM data. Users can read CATMAID neurons into R including synapses and other tags, leverage CATMAID's semantic annotations for queries, edit CATMAID databases directly, and send authenticated requests to keep data private.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 describe the capabilities of the catmaid package. These claims are supported by the manuscript text in the Materials and methods section and citations to CATMAID (Saalfeld et al., 2009; Schneider-Mizell et al., 2016).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The natverse includes packages for accessing various neuroanatomical data repositories: neuromorphr for NeuroMorpho.org (107,395 neurons, 60 species), insectbrainr for InsectBrainDB.org (139 neurons, 14 species), flycircuit for flycircuit.tw (>23,000 D. melanogaster neurons), vfbr for VirtualFlyBrain.org, fishatlas for FishAtlas.neuro.mpg.de (1,709 larval zebrafish neurons), and mouselightr for the MouseLight project (>1,000 morphologies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 describe the data access packages in the natverse. These claims are supported by the manuscript text in the Materials and methods section and citations to the respective data repositories. The quantitative information about dataset sizes is explicitly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The natverse includes packages for working with different registration tools: nat.ants wraps ANTsRCore for ANTs registrations, deformetricar wraps Deformetrica for non-image based registration without landmark correspondences, nat contains functions for CMTK registrations, nat.templatebrains extends nat to include template space concepts and bridging/mirroring registrations, and nat.flybrains contains mesh data and CMTK deformations for D. melanogaster template spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 describe the registration-related packages in the natverse. These claims are supported by the manuscript text in the Materials and methods section and citations to the respective registration tools (Avants et al., 2009; B\u00f4ne et al., 2018; Durrleman et al., 2014; Rohlfing and Maurer, 2003).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The natverse includes analysis packages: nat.nblast for deploying the NBLAST neuron similarity algorithm, nabor as a wrapper for libnabo k-nearest neighbor library optimized for 3D spaces, and elmr for reading neurons from FAFB CATMAID, transforming them to template spaces for comparison with light-level neurons, and performing interim analyses to improve reconstruction efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141 describe the analysis packages in the natverse. These claims are supported by the manuscript text in the Materials and methods section and citations to the relevant algorithms (Costa et al., 2016; Elseberg et al., 2012) and applications (Dolan et al., 2019; Frechter et al., 2019; Felsenberg et al., 2018; Huoviala et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Full, non-rigid warping registrations were computed using the Computational Morphometry Toolkit (CMTK). An initial rigid affine registration with twelve degrees of freedom was followed by a non-rigid registration allowing different brain regions to move independently subject to a smoothness penalty. Deformations between control points are interpolated using B-splines with image similarity computed through a normalized mutual information metric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 describe the registration methodology. These claims are supported by the Materials and methods section and citations to the relevant methods (Jefferis et al., 2007; Rueckert et al., 1999; Studholme et al., 1999).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "New template spaces were created for the natverse: JFRC2 (spatially calibrated copy of JFRC), FCWB (intersex template from 17 female and 9 male brains), and IBNWB (whole brain extension of IBN template). CMTK's avg_adm tool was used to iteratively produce averaged seed brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C149 describe the construction of new template spaces. These claims are supported by the Materials and methods section, Table 2, and the stated methodology for creating averaged templates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "CMTK provides commands (reformatx and streamxform) for reformatting images and transforming points. The R package nat wraps these commands to transform neuroanatomical data between template spaces. The bridging and mirroring registrations are deposited in version controlled repositories on GitHub with snapshots on Zenodo with permanent DOIs. Spatially calibrated template spaces have been provided in NRRD format, and registrations for the entire FlyCircuit and FlyLight datasets have been generated and deposited at virtualflybrain.org.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C156 describe the data availability and distribution. These claims are supported by the Materials and methods section, Table 2 with DOIs, and explicit statements about data deposition. The availability of code and data is verifiable through the stated repositories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C24"
+    ],
+    "result": "Neuroanatomy has become a large-scale, digital and quantitative discipline with improvements enabling collection of large 3D image volumes. A number of software tools are already available for neuronal data analysis, but most focus on image processing with fairly basic morphological analysis options. Recent technological advances have made acquiring large amounts of neuronal morphology data in whole-brain contexts feasible across phyla. Image data are typically registered against template spaces, which aids cell type classification, but template spaces often differ across studies, hindering data integration. The natverse has been employed for large-scale analysis of zebrafish data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C17, C24 provide background context and motivation for the work. These claims are supported by the Introduction section and citations to relevant work in the field. The statement about zebrafish analysis (C24) is supported by citation to Kunst et al., 2019.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Using the natverse, bridging registrations have been created that transform data from one template to another along with mirroring registrations, and these have been made easily deployable. This unifies all publicly available Drosophila neuroanatomical datasets, including image data for genetic resources and whole brain connectomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 describe a major achievement of the work. These claims are supported by the Abstract, Results section, Figure 6\u2014figure supplement 2a showing the bridging network, and Table 1 listing the datasets that have been integrated.",
+    "result_type": "MAJOR"
+  }
+]

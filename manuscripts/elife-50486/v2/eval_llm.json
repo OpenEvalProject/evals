@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34"
+    ],
+    "result": "The cryo-EM structure of MscS in nanodiscs at 3.1 \u00c5 resolution reveals a novel N-terminal 'anchor' domain that was not resolved in previous crystal structures. This domain extends TM1 by ~3 turns and forms a heptameric ring at the periplasmic face, stabilized by polar and hydrophobic inter-subunit interactions, with conserved W16 positioned deep in a pocket.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26, C28-C31, C33-C34 collectively provide strong structural evidence from cryo-EM data showing the newly resolved anchor domain. The resolution (C26), structural features (C28-C31), functional naming based on W16 position (C33), and comparison with crystal structures (C34) all support this major structural finding with direct experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The membrane bilayer location in MscS-ND is shifted ~14 \u00c5 upward compared to previous consensus placements, placing the anchor domain within the membrane and positioning most of TM3a outside the membrane. This revised placement is supported by computational free energy calculations, membrane placement algorithms, and is consistent across multiple lipid compositions and detergent conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C42-C51 provide converging evidence from cryo-EM density (C3, C42), charge distribution analysis (C44), computational predictions (C45), PMF calculations (C46-C48), and multiple independent structures (C49-C51). The energetic calculations show a clear minimum at the experimentally observed position, and the consistency across conditions strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Seven 'hook' phospholipids are bound at the top of each TM2-TM3 hairpin, threading through inter-subunit openings formed by extended TM1. These lipids are stabilized by R88 and Y27, residues known to produce loss-of-function phenotypes when mutated, and correlate with tryptophan scan data showing LOF hotspots at this location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C60-C62 provide structural evidence from cryo-EM density (C53-C54), specific residue interactions (C55), functional validation from mutagenesis (C56, C60), and supporting evidence from DDM structure and crystal structure re-analysis (C61-C62). The convergence of structural and functional data strongly supports the presence and functional relevance of hook lipids.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C5"
+    ],
+    "result": "A cluster of seven linear densities, modeled as acyl chains (possibly from phospholipids or fatty acids), occupies the permeation pathway above the L105 gate residue. These pore lipids are stabilized by hydrophobic interactions along TM3 and occlude the permeation path.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C57-C59 describe observed density in the pore region, but the interpretation is uncertain. C58 explicitly states this is a hypothesis with no clear headgroup density visible. While the density is observed (C57), the molecular identity (phospholipid vs fatty acid) and exact binding mode remain speculative, making the specific structural interpretation uncertain despite clear functional implications from MD simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Molecular dynamics simulations show that the pore lipids dramatically reduce water permeation through the closed MscS channel. Without bound lipids, ~2 water molecules occupy the L105 region; hook lipids reduce this to ~1 water molecule; both hook and pore lipids together eliminate water permeability entirely, suggesting the pore lipid acts as a low dielectric blocker that may be released upon channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 present systematic MD simulation data showing progressive reduction in water permeation with different lipid occupancy states. The quantitative measurements (C67-C69) support the functional interpretation (C70-C71), though C70-C71 are appropriately framed as inferences and hypotheses based on the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C75",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The anchor domain is essential for MscS mechanosensitivity and highly sensitive to mutagenesis. Deletion of the anchor domain (\u03942-26) renders MscS non-functional despite proper folding and assembly. Restricting anchor domain flexibility with an N-terminal His6 tag abolishes function, which is restored upon proteolytic removal. Alanine scanning shows ~70% of anchor domain residues produce LOF phenotypes, with most mapping to the subunit interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78, C86-C88 provide converging functional evidence from deletion mutants (C76), His-tag experiments (C77-C78), and systematic mutagenesis (C75, C86-C88). The electrophysiology data, downshock assays, and structural mapping collectively demonstrate the anchor domain's critical functional role with multiple independent lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C41"
+    ],
+    "result": "EPR spectroscopy data show that the anchor domain undergoes major conformational changes upon channel opening, with massive reduction in water accessibility suggesting the domain transitions to a deeper location in the outer leaflet and moves away from the permeation pathway, consistent with expanded MscS conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80, C41 integrate previous EPR data (C79) with structural interpretation based on comparison with expanded structures (C80, C41). While the EPR data are from prior work (citation-based), the interpretation is well-supported by the new structural context and comparison with known expanded conformations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The revised membrane placement invalidates previous mechanistic models. TM3b is no longer an interfacial helix (located ~15 \u00c5 from the membrane/water interface), and the lipid-as-ligand mechanism requiring TM2/TM3a cavity accessibility to the bilayer is incompatible with the observed membrane position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 draw logical conclusions from the revised membrane placement (established in other result groups). The structural data directly contradict key assumptions of previous models, making these negative conclusions well-supported. However, these are interpretive claims that depend on the accuracy of the membrane placement determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The MscS-ND structure represents the physiological closed state, as evidenced by the channel being at rest in a lipid bilayer without applied tension. The N-terminal His6 tag forms a stabilizing 'crown' that restricts anchor domain movement and renders the channel mechanically insensitive, with function restored upon thrombin cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 combine structural observations (C37) with functional validation (C39-C40) to support the state assignment (C36, C38). The His-tag experiment provides strong evidence that anchor domain movement is required for opening, supporting the closed state interpretation. The logic is sound and experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C89"
+    ],
+    "result": "The membrane placement is conserved across different conditions: PC:PG nanodiscs with and without His-tag, E. coli polar lipid nanodiscs, and DDM detergent all show similar bilayer/micelle positioning. However, the anchor domain partially unravels in DDM, explaining why this region was unresolved in crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C89 demonstrate reproducibility across multiple experimental conditions, strengthening confidence in the membrane placement. The observation of anchor domain unraveling in DDM (C52) provides a rational explanation for previous structural limitations. Multiple independent structure determinations support the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C63"
+    ],
+    "result": "The current MscS-ND structure does not show explicit lipid density in the TM2-TM3 pockets, though such lipids have been reported in other nanodisc structures. Previous mass spectrometry identified ~5 phospholipids per MscS, but the predicted placement from that work is incompatible with the current EM densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 accurately report the absence of TM pocket lipids in the current structure (C64) while acknowledging other findings (C65) and discrepancies with previous work (C63). This is an honest assessment of what is and is not observed, appropriately noting limitations and disagreements with prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Phylogenetic analysis reveals that the anchor domain structural motif is largely conserved in Enterobacteriales MscS homologs, with conserved residues predominantly located at subunit interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by sequence alignment and phylogenetic analysis data shown in supplementary figures. This provides evolutionary context for the anchor domain's functional importance, though it is a supporting finding rather than a primary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C35"
+    ],
+    "result": "The MscS-ND structure shows a slightly different TM1-TM2 hairpin angle compared to crystal structures, and previous computational models attempting to reconfigure TM2-TM3 interactions are not supported by the current data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C35 report structural comparisons with previous models. C27 describes a minor difference in hairpin angle, while C35 contradicts previous computational reconfigurations. Both are supported by direct structural comparison, though these are relatively minor refinements to existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Methodological details: typical MscS yield is 5-8 mg/L E. coli, MscS-Cryst yield is <0.1 mg/L, and optimized nanodisc reconstitution uses a 7:10:650 molar ratio of MscS:MSP1 E3D1:Lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 report experimental parameters and yields. These are straightforward methodological details that are directly measurable and reproducible, serving as technical documentation rather than scientific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C48"
+    ],
+    "result": "Computational analysis shows that hydrophobic mismatch is the dominant energetic factor determining membrane position, with the free energy minimum from MD simulations matching mean-field calculations at Z distance ~25 \u00c5, corresponding to the experimentally observed position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C90-C91 present computational validation of the membrane placement using two independent methods (MD-PMF and mean-field calculations) that converge on the same result. This provides strong theoretical support for the experimental observation, though it is a supporting analysis rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background context: Prokaryotic MS channels like MscL and MscS sense membrane tension changes and couple force sensing with cellular electrical activity. Membrane stretch alters the trans-bilayer pressure profile, driving conformational changes in membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C9 provide established background knowledge about mechanosensitive channels, supported by multiple citations. These are well-accepted principles in the field that provide context for the current work but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Literature review: Previous MscS structures revealed a homoheptamer with three TM segments and a large cytoplasmic domain, with the narrowest point at L105. The original crystal structure represents a non-conductive state (closed vs inactivated debated). Various gating mechanisms have been proposed, including force-from-lipids models, with most previous high-resolution structures determined in detergent until recently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C25 comprehensively review prior structural and mechanistic work on MscS, all supported by appropriate citations. This provides essential context for interpreting the current findings but represents prior knowledge rather than new results from this study.",
+    "result_type": "MINOR"
+  }
+]

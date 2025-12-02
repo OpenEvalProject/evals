@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Participants successfully adopted differential decision biases in response to experimental instructions. In the liberal condition, participants adopted a significantly lower criterion (c = -0.13, SD 0.4) compared to the conservative condition (c = 0.73, SD 0.36; p=0.001), demonstrating effective manipulation of decision bias through instructions and feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 provide converging evidence that the experimental manipulation successfully induced differential decision biases. The behavioral data show statistically significant differences in criterion between conditions with appropriate statistical testing (permutation test, p=0.001), and the experimental design is clearly described with adequate sample size (16 participants, 3 sessions each).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Substantial inter-individual variability was observed in both the average criterion used across conditions (range c = -0.24 to 0.89) and the magnitude of criterion shift between conditions (range \u0394c = -1.54 to -0.23). Participants' biases in the two conditions were only weakly correlated (rho = 0.24, p=0.36), and bias shifts fluctuated within individuals across experimental blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 document important individual differences in the behavioral data with appropriate descriptive statistics. The weak correlation between conditions and within-subject variability across blocks are well-documented and provide crucial context for the subsequent correlational analyses linking brain measures to bias shifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Perceptual sensitivity (d') varied widely across participants (range 0.26 to 3.97) but remained highly consistent within individuals across bias conditions (rho = 0.97, p<0.001). The bias manipulation did not significantly affect perceptual sensitivity, as evidenced by weak correlation between bias shift and sensitivity shift (rho = 0.44, p=0.09).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 demonstrate that the experimental manipulation selectively affected decision bias without substantially altering perceptual sensitivity. The high within-subject correlation of d' across conditions and weak correlation between bias and sensitivity shifts provide strong evidence for dissociation between these two SDT parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A significant negative correlation cluster was found in mid- and left-frontal electrodes (p=0.015, cluster-corrected) between liberal-conservative shifts in mMSE and criterion. The cluster spanned timescales from ~20 to 164 ms, with most activity after trial initialization. The across-participant correlation was rho = -0.87, indicating that larger liberal bias shifts were associated with greater increases in frontal entropy. No significant main effect of condition was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 present the primary finding of the study with appropriate cluster-based correction for multiple comparisons. The strong negative correlation (rho = -0.87) is well-documented with spatial and temporal specificity. The absence of a main effect (C46) is appropriately reported and later discussed in the context of individual differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Within-participant analysis revealed a significant negative repeated measures correlation between shifts in criterion and mMSE (rrm = -0.19, p=0.046). Split-half reliability analysis showed significant correlations in both odd (rho = -0.77, p=0.001) and even (rho = -0.75, p=0.001) trial halves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide important convergent evidence for the brain-behavior relationship through within-subject analysis and split-half reliability. The repeated measures correlation appropriately accounts for within-subject dependencies, and the split-half analysis demonstrates reliability of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C54",
+      "C55"
+    ],
+    "result": "The correlation between bias shifts and mMSE remained significant when controlling for signal standard deviation (partial rho = -0.82, p<0.0001), all major spectral power bands simultaneously (partial rho = -0.75, p=0.005), and perceptual sensitivity (partial rho = -0.88, p<0.0001). These control analyses demonstrate that neither overall signal variation, spectral power, nor perceptual sensitivity could account for the observed mMSE-bias relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C54-C55 present crucial control analyses demonstrating the unique contribution of mMSE to explaining bias shifts. The partial correlations remain strong and significant after controlling for multiple potential confounds, with appropriate statistical testing. This strengthens the interpretation that entropy captures information not available in traditional EEG measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The results depended on the modified entropy estimation method (mMSE), as the frontal correlation cluster was non-significant (p=0.37) when using conventional MSE with the same sliding window approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 demonstrates the methodological contribution of the modified MSE approach through direct comparison with conventional MSE. The loss of significance with conventional MSE (p=0.37 vs. p=0.015) provides evidence for the importance of the methodological modifications, though the specific reasons for this difference require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "No significant clusters were found when correlating liberal-conservative shifts in bias with spectral power (either raw or percent signal change modulation) using condition-specific or condition-average baseline correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 reports negative findings from spectral power analysis that contrast with the positive mMSE findings. This is appropriately documented and strengthens the argument for the unique contribution of entropy measures. The analysis tested multiple baseline correction approaches, increasing confidence in the negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Event-related potential (ERP) analysis revealed significant condition differences in central/parietal (positive cluster, p=0.001) and midfrontal/central/parietal (negative cluster, p=0.001) electrodes. However, no significant correlation was found between liberal-conservative ERP shifts and criterion shifts. The mMSE-bias correlation remained virtually unchanged after ERP removal (rho = -0.90 vs. -0.87), indicating that ERPs cannot account for the entropy-bias relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 present comprehensive ERP control analyses. The presence of condition differences in ERPs but absence of correlation with bias shifts, combined with the persistence of the mMSE-bias correlation after ERP removal, provides strong evidence that the entropy findings are independent of stimulus-evoked activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "High-pass filtering analysis revealed that the brain-behavior relationship progressively weakened with higher cutoff frequencies, becoming non-significant after 3 Hz filtering. This suggests that low frequencies (1-3 Hz) may contribute to the entropy-behavior relationship, possibly through non-linear interactions between spectral power and phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 present clear empirical findings from systematic high-pass filtering. However, C64's interpretation about power-phase interactions is speculative and not directly tested. The progressive weakening of the correlation with increasing filter cutoffs is well-documented, but the mechanistic interpretation requires additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Entropy quenching analysis revealed lateral occipital mMSE enhancement and focal mid-occipital suppression consistent with quenching. The quenching was strongly correlated with SSVEP-related power at 12.5 and 25 Hz, likely reflecting increased temporal regularity from periodic visual stimulation. A significant positive cluster in midfrontal electrodes showed stronger mMSE increase in the liberal condition. However, no significant correlation was found between mMSE quenching and perceptual sensitivity shifts, and no convincing link between entropy quenching and behavior was established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C73 present a comprehensive analysis of entropy quenching with appropriate statistical testing. The findings are clearly documented, including both positive results (quenching effects, condition differences) and negative results (no correlation with behavior or sensitivity). The interpretation linking quenching to SSVEP regularity (C69) is reasonable given the correlation data, though somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Despite the strong change-change correlation between mMSE and bias, mMSE was not significantly higher on average in the liberal condition (no main effect). This contrasts with previous findings of significant condition differences in alpha and theta power. The shift in mMSE correlated with bias shifts whereas alpha and theta shifts did not, suggesting that inter-individual differences in mMSE may be sensitive to behavioral adjustments even without a group-wise shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 address an important dissociation between main effects and correlations. The absence of a main effect despite strong correlations is well-documented and appropriately discussed. The comparison with previous spectral power findings strengthens the interpretation, though the theoretical explanation for this dissociation (C92) remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors argue that main effects and correlations address divergent research questions that may conflict. Main effects require subjects to respond similarly (small individual differences), while correlations are more likely detected with larger individual differences. Therefore, the presumption that a main effect is prerequisite for detecting behavioral correlations is unfounded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C95 present a theoretical argument about the relationship between main effects and correlations. While the general statistical principles are sound and supported by citation (C93-C94), the strong conclusion in C95 that this presumption is 'unfounded' may be overstated. This remains a matter of interpretation and depends on the specific research context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "When data were baseline-corrected, a significantly stronger mMSE transient increase was observed in the liberal condition (main effect), but the change-change correlation with behavior was weaker using baseline-corrected mMSE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 document the effects of baseline correction on both main effects and correlations. The emergence of a main effect with baseline correction while the correlation weakens is clearly reported, though the implications for interpretation are not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The study's main conclusion is that liberal bias shifts are reflected in boosted entropy (more unconstrained neural regime) in frontal regions, which is suited to detecting unpredictable events. This relationship is independent of overall EEG variation, spectral power, and ERPs, indicating that moment-to-moment neural variability uniquely tracks bias shifts. Neural variability modulation through prefrontal cortex appears instrumental for adaptive bias adjustment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 summarize the study's primary conclusions. C6 and C8-C9 are well-supported by the empirical findings (strong correlations, control analyses). However, C7's interpretation that this regime is 'suited to detection of unpredictable events' is more speculative and not directly tested. C10's conclusion about prefrontal cortex being 'instrumental' is a reasonable inference but goes beyond what the correlational data can definitively establish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study provides first evidence that greater bias shifts are associated with greater shifts in frontal mMSE after stimulus onset. This relationship occurred independent of total brain signal variation, oscillatory dynamics, and ERPs, and was observed at longer timescales where previous estimation methods were biased. The results were exclusively observed with principled extensions of the mMSE algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 accurately summarize the study's main empirical contributions. The independence from other measures (C75) is well-supported by control analyses. The methodological contribution regarding longer timescales (C76-C77) is supported by comparison with conventional MSE, though the claim of 'exclusive' observation with mMSE (C77) should be interpreted cautiously as other methods were not exhaustively tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors argue that entropy provides advantages over spectral power analysis: entropy is sensitive to both magnitude and phase of signal fluctuations (whereas spectral power only reflects amplitude), and entropy is agnostic to waveform shape (whereas spectral analysis assumes sinusoidal waveforms). Therefore, entropy provides a more unrestricted description of neural fluctuations that is highly predictive of bias shifts and taps into information not available in ERPs and spectral power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 present accurate characterizations of the properties of spectral and entropy analyses, supported by appropriate citations. Claims C85-C86 draw reasonable conclusions from the empirical findings, though the interpretation that entropy is 'more unrestricted' (C85) is somewhat subjective. The conclusion that entropy captures unique information (C86) is well-supported by the control analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The authors speculate that many previous EEG studies analyzing ERPs and/or spectral power might have overlooked a crucial property of the EEG signal strongly linked to behavior, and that many brain-behavior links may still be hidden in existing datasets that could be uncovered using mMSE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 are speculative statements about implications for the field. While the current findings support the value of entropy analysis, the claims that previous studies 'structurally overlooked' important information (C87) and that 'many' hidden relationships exist (C88) are not directly tested and represent optimistic extrapolations from a single study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors speculate that noise facilitating cognitive flexibility might translate into modulations of moment-to-moment neural variability measurable in cortical population activity. They propose that heightened frontal entropy results from a more dynamic, irregular neural regime enabling better preparedness to process uncertain, task-relevant information, and that quantifying neural entropy shifts could help elucidate mechanisms of environmental adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 present speculative interpretations of the findings in the context of theoretical models. While these interpretations are reasonable given the data, they represent hypotheses rather than tested conclusions. The link between the observed entropy changes and 'preparedness' for uncertain information (C106) is not directly demonstrated, and the broader implications for survival (C107) are highly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C12"
+    ],
+    "result": "The study addresses the gap in understanding the neural signature of adaptive decision bias shifts. While bias setting involves adjustment of evidence accumulation in sensory regions (from prior work), and adaptive bias shifts are presumed to rely on prefrontal cortex, the spatio-temporal neural signature of within-person bias shifts was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C11-C12 accurately characterize the background and motivation for the study. The general principles about decision biases (C1-C3) are well-established. The citations to prior work (C4, C11) are appropriate, and the identification of the knowledge gap (C5, C12) is accurate and well-motivated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The theoretical background establishes that neural variability has traditionally been considered noise but is increasingly proposed to support cognitive flexibility. Attractor models contain noise components that drive state transitions, which might correspond to empirically observable neural variability modulations. The authors hypothesize that increased neural variability might underlie preparedness for unpredictable events, permitting more liberal bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 accurately summarize theoretical background with appropriate citations. Claims C19-C20 present the study's hypothesis, which is reasonable given the theoretical framework, though speculative. The connection between attractor model noise and empirical neural variability (C19) is a plausible but untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The theoretical background also notes that improved cognitive function has been linked to reduced neural variability and quenching. Quenching has been proposed to reflect attractor settlement into stable states, is stronger during conscious perception, and is associated with higher perceptual sensitivity, consistent with signal detection theory's assumption that internal noise is detrimental for sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 accurately summarize prior work on neural variability quenching with appropriate citations. These claims establish the alternative theoretical perspective that motivates the quenching analysis in the current study. The characterization of signal detection theory (C25) is accurate.",
+    "result_type": "MINOR"
+  }
+]

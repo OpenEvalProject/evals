@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "SIRT6 recruitment to DNA damage sites is independent of known DSB sensors (PARP1, MRE11, Ku80) and upstream of ATM/H2AX signaling. SIRT6 arrives at damage sites even when PARP is inhibited, MRE11 or Ku80 are silenced, or ATM/H2AX are knocked down. SIRT6-KO impairs MRE11 but not Ku80 recruitment, suggesting differential roles in sensor recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C35 are well-supported by multiple independent experimental approaches including PARP inhibition (C24-C25), sensor knockdowns (C26-C30), and ATM/H2AX silencing (C33-C34). The data consistently show SIRT6 recruitment is independent of these factors, with appropriate controls (macro-H2A for PARP dependence). The reciprocal experiments showing MRE11 but not Ku80 dependence on SIRT6 (C29-C30) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "SIRT6 requires actual DNA damage, not just DDR signaling, for recruitment. In a tethering assay where ATM-LacR initiates DDR signaling without DNA damage, SIRT6 is not recruited, while known interactors (SNF2H, Ku80, MRE11, NBS1) successfully recruit SIRT6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by the tethering assay data showing differential recruitment patterns. The control experiments with known interactors (C38-C39) validate the assay system. However, the interpretation that SIRT6 'requires actual DNA damage' (C42) is somewhat circular since the tethering assay tests recruitment via protein-protein interactions, not direct DNA binding. The conclusion is reasonable but could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C113"
+    ],
+    "result": "SIRT6 directly binds DNA with highest affinity for ssDNA (Kd=1.39 \u03bcM), comparable to MRE11 and Ku80. SIRT6 binds ssDNA as a monomer but shows cooperative binding to dsDNA with open ends (Hill slope >1), suggesting dimeric binding with each SIRT6 molecule binding one strand. DNA binding is independent of NAD+ and does not activate catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C61 are well-supported by comprehensive EMSA data with multiple DNA substrates, Kd determinations, Hill coefficient analysis, and complementary IP-qPCR assays (C51, C53). The exonuclease protection assay (C57) provides orthogonal evidence for end-binding. The cooperative binding model (C49-C50, C60-C61) is appropriately inferred from Hill slope analysis. NAD+ independence (C55-C56) is directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "SIRT6 forms dimers/oligomers in solution, with DNA binding stabilizing the protein and reducing aggregation. SEC-MALS and SAXS data suggest tetrameric structures, consistent with dimers at each DNA end. In vivo tethering shows SIRT6-LacR-GFP recruits soluble SIRT6-RFP, supporting dimerization. SAXS reveals DNA-induced compaction suggesting conformational change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C71 present structural data but with significant caveats. The SAXS data (C66) 'presumably' corresponds to a tetramer but doesn't exclude dimers/trimers (C67), indicating uncertainty in oligomeric state determination. SEC-MALS shows DNA reduces aggregation (C63-C64) but the aggregation itself complicates interpretation. The in vivo tethering data (C68-C69) supports dimerization but could also reflect other protein-protein interactions. The conformational change (C71) is inferred but not definitively demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C114",
+      "C115"
+    ],
+    "result": "SIRT6 binds DNA through its core domain (aa 34-274) via a tunnel-like structure that can accommodate ssDNA but not dsDNA. Computational prediction identified amino acids concentrated near this tunnel, and point mutations in these residues (including H133Y) impair DNA binding, except D63Y which maintains binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 are supported by domain deletion experiments showing core domain sufficiency (C72-C73), computational structural prediction (C74), and systematic mutagenesis (C77-C79). The tunnel model (C74-C76, C114-C115) is based on structural analysis and is consistent with the ssDNA binding preference. However, the tunnel structure is inferred from modeling rather than direct structural determination (e.g., co-crystal structure), which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "DNA-binding and catalytic activities of SIRT6 are partially separable. Most tunnel mutants reduce both DNA binding and catalytic activity, but A13W increases catalytic activity while slightly reducing DNA binding, and D63Y eliminates catalytic activity without affecting DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83, C117-C120 are supported by parallel EMSA and Fluor-de-lys assays on the same mutants. The differential effects of A13W and D63Y mutations (C82, C119-C120) provide strong evidence for partial functional separation (C83, C118). This is important for understanding the relationship between DNA binding and catalytic domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C129",
+      "C130"
+    ],
+    "result": "The DNA-binding capacity is conserved among Sirtuins. All mammalian Sirtuins show some capacity to bind broken-ended DNA, though with varying affinities. SIRT7 uniquely binds circular DNA (lacking specificity for breaks), and SIRT2 has poor binding capacity, which would impair their roles as DNA damage sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by comparative DNA-binding assays across Sirtuin family members. The observation that SIRT7 binds circular DNA (C87) and SIRT2 has weak binding (C86) is data-driven. The inference that this 'would impair their roles as DNA damage sensors' (C129-C130) is reasonable but somewhat speculative since it assumes sensor function requires specific broken-end binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C103",
+      "C122",
+      "C123"
+    ],
+    "result": "SIRT6 can initiate DDR independently of its catalytic activity. In tethering assays, both SIRT6-WT and catalytically dead SIRT6-HY activate H2AX phosphorylation comparably to MRE11. This DDR initiation persists even when endogenous SIRT6 is inhibited with nicotinamide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are well-supported by tethering assay data showing SIRT6-HY can initiate DDR (\u03b3H2AX) when tethered to chromatin. The nicotinamide experiment (C92) controls for potential contribution from endogenous SIRT6. However, there's a critical caveat: SIRT6-HY has reduced DNA-binding capacity (C93), so it only initiates DDR when artificially tethered, not when it must bind DNA naturally (C95). This distinction is important for interpreting the biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C124",
+      "C125"
+    ],
+    "result": "SIRT6-HY mutant has 50% reduced DNA-binding capacity and fails to recruit to laser-induced damage sites in SIRT6-KO cells, demonstrating that DNA binding is critical for SIRT6's role in DSB repair. The H133 residue is critical for SIRT6-DSB binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 are supported by EMSA data showing reduced binding (C93) and live-cell imaging showing recruitment failure (C95). The conclusion that DNA binding is critical (C96-C97) is well-supported. The prediction that SIRT6-HY would fail without tethering (C94) was validated experimentally (C95). This result reconciles the apparent paradox from the tethering experiments and demonstrates the importance of DNA binding for natural recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C104",
+      "C126"
+    ],
+    "result": "SIRT6's N- and C-termini are required for DDR activation. The core domain alone (which binds DNA) fails to activate DDR in tethering assays, indicating that DNA binding is necessary but not sufficient for DDR initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by tethering assay data showing Core-LacR-GFP fails to activate DDR despite containing the DNA-binding domain. This demonstrates that additional domains beyond the core are required for signaling (C104). The conclusion that 'binding per se cannot result in DDR signaling' (C127) is well-supported by comparing Core-LacR (binds but doesn't signal) with full-length SIRT6 (binds and signals).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C5"
+    ],
+    "result": "Other Sirtuins (SIRT2, SIRT7) can initiate DDR when tethered to chromatin, but SIRT1 cannot. However, SIRT6 is unique among Sirtuins for having both robust DNA-binding activity and DDR initiation capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are supported by tethering assay data with multiple Sirtuin family members. The conclusion that SIRT6 is unique for having both capacities (C102) is justified by combining the DNA-binding data (C86) with the DDR initiation data (C100-C101). However, the note about SIRT1 lacking N-terminal residues is an important caveat that should be considered when interpreting its inability to initiate DDR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "SIRT6 recruits proteins from both HR (MRE11, NBS1, ATM, BRCA1) and NHEJ (Ku80, Ku70, 53BP1) pathways in tethering assays. Recruitment of 53BP1 and BRCA1 is independent of SIRT6 catalytic activity but depends on downstream kinase signaling (reduced by Wortmannin), while MRE11 and Ku80 recruitment is signaling-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 are supported by comprehensive tethering assays with multiple DDR proteins and appropriate controls (CDT1 negative control, C108). The Wortmannin experiments (C110-C111) distinguish signaling-dependent from protein-protein interaction-based recruitment. The observation that both SIRT6-WT and SIRT6-HY recruit these proteins (C109) confirms catalytic independence. However, the tethering assay has limitations in distinguishing direct from indirect recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C134",
+      "C148"
+    ],
+    "result": "SIRT6 functions as a novel DNA damage sensor that directly recognizes DSBs through a tunnel-like structure, relocates to damage sites independently of known sensors and signaling, and activates downstream DDR signaling for both HR and NHEJ pathways before pathway choice, thereby preventing genomic instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the main conclusion synthesizing multiple lines of evidence: direct DNA binding (C1, supported by C44-C61), independent recruitment (C2, supported by C24-C43), DDR activation (C3, supported by C89-C112), and sensor function (C4, C134, C148). The claim about preventing genomic instability (C6-C7) is inferred from prior knowledge of SIRT6-KO phenotypes rather than directly demonstrated in this study. The evidence collectively supports SIRT6 as a DSB sensor, though some mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C128",
+      "C135",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Several mechanistic aspects of SIRT6 function remain speculative or require further investigation, including: how few bases are sufficient for recognition, potential roles in other cellular compartments, recognition of other DNA lesions, transient DNA probing behavior, conformational changes upon binding, therapeutic implications, relationship with Ku complex, and pathway choice determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116, C128, C135-C146 are explicitly speculative or acknowledge limitations. These represent reasonable hypotheses based on the data (e.g., C137 based on binding assays, C139 based on SAXS compaction) but lack direct experimental validation. C146 explicitly states pathway choice 'still needs to be investigated.' These are appropriate areas for future work but should not be considered established results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C52",
+      "C80",
+      "C84",
+      "C85",
+      "C131",
+      "C132",
+      "C133",
+      "C136",
+      "C147",
+      "C149",
+      "C150"
+    ],
+    "result": "Background knowledge claims about DSB biology, known sensors, SIRT6 properties, and prior findings establish the context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C23, C52, C80, C84-C85, C131-C133, C136, C147, C149-C150 represent established knowledge or prior findings, appropriately cited. These provide necessary context but are not novel results from this study. The citations appear appropriate and the knowledge claims are consistent with the field. C21-C22 cite the authors' own prior work establishing SIRT6's early recruitment, which motivated the current sensor hypothesis.",
+    "result_type": "MINOR"
+  }
+]

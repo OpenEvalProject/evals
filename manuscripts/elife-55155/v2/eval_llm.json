@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors measured dose-response curves for E. coli strains with ciprofloxacin resistance mutations, including the wild type, five single mutants, and eight double-mutant combinations, using optical density measurements every 2-5 minutes and the time shift method to obtain exponential growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C46, C47, and C48 describe the experimental methodology and data collection. The methods are clearly described with appropriate detail about strains, measurement techniques, and analysis methods. Figure 2A provides visual confirmation of the dose-response curves measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C17",
+      "C60"
+    ],
+    "result": "The dose-response curves of E. coli strains exhibit a scaling property where curves can be collapsed onto a single Hill function when normalized by null-fitness and IC50, and this property holds for all commonly used dose-response functions in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C17, and C60 are supported by Figure 2B showing data collapse, citations to similar findings in other studies, and mathematical proof in Materials and methods. The scaling property is both empirically demonstrated and theoretically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Analysis of E. coli data shows that in all cases where significant epistasis occurs between ciprofloxacin resistance mutations, it is negative epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by the data analysis presented in Table 1, which systematically compares observed and expected values for null-fitness and MIC across multiple mutant combinations. The pattern of negative epistasis is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "The fitness landscape is nearly smooth at low and high antibiotic concentrations, but exhibits high ruggedness at intermediate concentrations due to the fitness-resistance tradeoff.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C3 are supported by the mathematical model results shown in Figures 3, 4, and 5. The number of fitness peaks and degree of sign epistasis both reach maxima at intermediate concentrations, demonstrating concentration-dependent ruggedness. The theoretical framework provides mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C32"
+    ],
+    "result": "All fitness maxima in the tradeoff-induced landscapes are evolutionarily accessible from the wild type, with evolutionary paths always existing to any fitness peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26, and C32 are supported by the mathematical proof of the accessibility property presented in Materials and methods. The ordering condition is rigorously derived and shown to guarantee accessibility. Figure 6 illustrates this property clearly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Selection for antibiotic resistance in multiple mutational steps is relatively facile despite the complexity of the underlying landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 follows logically from the proven accessibility property (C4, C26, C32). The conclusion is justified by the mathematical demonstration that all fitness peaks remain accessible despite high ruggedness, distinguishing these landscapes from other rugged landscape models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C30",
+      "C31"
+    ],
+    "result": "The reachability of the fittest peak in tradeoff-induced landscapes is substantially higher than in House-of-Cards and NK models, with the tradeoff-induced landscape showing an order of magnitude higher reachability than HoC and nearly 4 times higher than NK models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by numerical simulations presented in Figure 7. The comparisons are quantitative and show clear differences between model types. The higher accessibility despite comparable ruggedness is a key distinguishing feature of tradeoff-induced landscapes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The model's key results on accessibility require only the absence of positive epistasis, not strict multiplicativity of fitness effects, making the results more general than the specific model assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C36 are supported by mathematical derivations in Materials and methods showing that the ordering condition and accessibility property hold under the weaker condition of no positive epistasis. This generalization strengthens the applicability of the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13"
+    ],
+    "result": "Mutations that increase fitness at high antibiotic concentration often decrease fitness in the absence of antibiotic, representing a fitness-resistance tradeoff, though such tradeoffs are not universal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12, and C13 are well-supported by multiple citations to prior empirical studies. This represents established knowledge in the field that forms the biological motivation for the theoretical model developed in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The fitness landscape of resistance genes depends strongly on antibiotic concentration, which is clinically relevant because antibiotic concentrations vary widely in patients and non-clinical settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C11 are supported by citations to previous studies. This establishes the biological and clinical motivation for studying concentration-dependent fitness landscapes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C39"
+    ],
+    "result": "Ciprofloxacin inhibits DNA replication, and the intersection of dose-response curves defines the minimum selective concentration (MSC) that bounds the mutant selection window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C39 represent established biological and pharmacological knowledge supported by appropriate citations. These definitions are standard in the field and correctly applied in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Topoisomerase IV (parC) is a secondary target for ciprofloxacin with weaker affinity than gyrase, and mutations in parC do not contribute to resistance without gyrA mutations, resulting in positive epistasis for parC-containing combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe known biological mechanisms of ciprofloxacin resistance supported by citation. This explains why parC mutations were excluded from the main analysis and identifies a boundary condition for the model's applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Fitness compensatory mutations do not exhibit adaptational tradeoffs and generally emerge in genetic backgrounds already containing mutations with tradeoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 are supported by citations and represent established knowledge about compensatory evolution. This discussion appropriately identifies a limitation and future direction for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C43"
+    ],
+    "result": "The paper provides historical context on fitness landscapes and epistasis, noting Wright's 1932 introduction of the concept, the recent proliferation of empirical studies on antibiotic resistance landscapes, and key conceptual frameworks like sign epistasis and reciprocal sign epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C43 provide appropriate historical and conceptual background supported by citations. These establish the scientific context for the work and define key terms used throughout.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2198 @@
+{
+  "submission": {
+    "id": "de8d7283-51ec-4e73-af34-210eb4f18c65",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:55:48.492777Z",
+    "updated_at": "2025-12-02T08:55:48.492777Z"
+  },
+  "content": [
+    {
+      "id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "submission_id": "de8d7283-51ec-4e73-af34-210eb4f18c65",
+      "content_type": "manuscript",
+      "content_text": "# Two distinct mechanisms target the autophagy-related E3 complex to the pre-autophagosomal structure\n\n## Authors\n\n- Kumi Harada<sup>1</sup>\n- Tetsuya Kotani<sup>1</sup>\n- Hiromi Kirisako<sup>1</sup>\n- Machiko Sakoh-Nakatogawa<sup>1</sup>\n- Yu Oikawa<sup>2</sup>\n- Yayoi Kimura<sup>3</sup>\n- Hisashi Hirano<sup>3</sup>\n- Hayashi Yamamoto\n- Yoshinori Ohsumi\n- Hitoshi Nakatogawa<sup>1</sup> ([ORCID: 0000-0002-5828-0741](https://orcid.org/0000-0002-5828-0741)) \u2020\n\n### Affiliations\n\n1. School of Life Science and Technology Tokyo Institute of Technology Yokohama Japan\n2. Institute of Innovative Research Tokyo Institute of Technology Yokohama Japan\n3. Advanced Medical Research Center Yokohama City University Yokohama Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn autophagy, Atg proteins organize the pre-autophagosomal structure (PAS) to initiate autophagosome formation. Previous studies in yeast revealed that the autophagy-related E3 complex Atg12-Atg5-Atg16 is recruited to the PAS via Atg16 interaction with Atg21, which binds phosphatidylinositol 3-phosphate (PI3P) produced at the PAS, to stimulate conjugation of the ubiquitin-like protein Atg8 to phosphatidylethanolamine. Here, we discover a novel mechanism for the PAS targeting of Atg12-Atg5-Atg16, which is mediated by the interaction of Atg12 with the Atg1 kinase complex that serves as a scaffold for PAS organization. While autophagy is partially defective without one of these mechanisms, cells lacking both completely lose the PAS localization of Atg12-Atg5-Atg16 and show no autophagic activity. As with the PI3P-dependent mechanism, Atg12-Atg5-Atg16 recruited via the Atg12-dependent mechanism stimulates Atg8 lipidation, but also has the specific function of facilitating PAS scaffold assembly. Thus, this study significantly advances our understanding of the nucleation step in autophagosome formation.\n\n## Introduction\n\nMacroautophagy (hereafter autophagy) is a major route for transport of intracellular material into lysosomes or vacuoles in almost all eukaryotes (Ohsumi, 2014; Yang and Klionsky, 2010). In autophagy, a membrane cisterna called the isolation membrane (or phagophore) is generated, expands, becomes spherical, and closes to form a double membrane vesicle called the autophagosome. During the course of this process, various cytoplasmic components, including proteins, RNA, and organelles, are selectively or non-selectively sequestered into the autophagosome. The autophagosome fuses with the lysosome/vacuole to allow degradation of the contents. An increasing number of studies have suggested that autophagy is involved in the regulation of a wide range of cellular functions, and linked to a variety of human diseases (Bento et al., 2016; Dikic and Elazar, 2018; Mizushima, 2018).\n\nIsolation of autophagy-defective mutants of the budding yeast Saccharomyces cerevisiae and subsequent analysis of these mutants led to the identification of autophagy-related (ATG/Atg) genes/proteins. Among the over 40 Atg proteins that have been identified to date, 19 are directly involved in the biogenesis of the autophagosome induced under starvation (Nakatogawa et al., 2009; Ohsumi, 2014; Yang and Klionsky, 2010). These \u2018core\u2019 Atg proteins constitute six functional units: (i) the Atg1 kinase complex; (ii) Atg9 vesicles; (iii) phosphatidylinositol (PI) 3-kinase (PI3K) complex I; (iv) the Atg2-Atg18 complex; (v) the Atg12 conjugation system; and (vi) the Atg8 conjugation system. In response to starvation, these proteins interact with each other, localize to the site of autophagosome formation in an ordered manner, and organize the pre-autophagosomal structure (PAS) (Nakatogawa et al., 2009; Suzuki et al., 2001; Suzuki and Ohsumi, 2010), in which a precursor of the autophagosomal membrane is generated. The molecular basis of PAS organization, including how Atg proteins are recruited to the PAS, is a key question that needs to be addressed to understand the \u2018nucleation\u2019 step in autophagosome formation.\n\nThe ubiquitin-like protein Atg12 is covalently attached to a lysine residue in Atg5 via ubiquitin-like conjugation reactions, resulting in the Atg12-Atg5 conjugate (Mizushima et al., 1998a; Mizushima et al., 1998b). Atg12-Atg5 non-covalently interacts with Atg16 (Atg16L in mammals) to form the Atg12-Atg5-Atg16/Atg16L complex (hereafter the Atg16/Atg16L complex) (Kuma et al., 2002; Mizushima et al., 2003; Mizushima et al., 1999). The Atg16/Atg16L complex is localized to the PAS (or the site of autophagosome formation) and acts as an E3 enzyme to stimulate the conjugation reaction of ubiquitin-like Atg8/LC3-family proteins to the lipid phosphatidylethanolamine (PE) in autophagosome intermediates (i.e., a still-unknown membrane component of the PAS and the isolation membrane) (Suzuki et al., 2007; Hanada et al., 2007; Ichimura et al., 2000; Fujita et al., 2008; Nakatogawa, 2013). Atg8-PE conjugates promote the expansion of the isolation membrane (Nakatogawa et al., 2007; Xie et al., 2008), and also bind to autophagy receptors that recognize specific degradation targets for their selective sequestration into the autophagosome (Gatica et al., 2018).\n\nIn both yeast and mammals, the recruitment of the Atg16/Atg16L complex to the site of autophagosome formation depends on PI3-phosphate (PI3P) produced by PI3K complex I (Itakura and Mizushima, 2010; Suzuki et al., 2007). A recent study in mammalian cells revealed that the PROPPIN family protein WIPI2b binds both Atg16L1 and PI3P to target the Atg16L1 complex to autophagosome formation sites (Dooley et al., 2014). In S. cerevisiae, Atg21, one of the three WIPI homologs, was shown to mediate this process in a similar manner (Juris et al., 2015). However, knockout of ATG21 did not completely abrogate the PAS localization of the Atg16 complex or the autophagic activity of cells (Meiling-Wesse et al., 2004; Nair et al., 2010; Str\u00f8mhaug et al., 2004), suggesting that there is an unknown mechanism which directs the Atg16 complex to the PAS, in addition to the PI3K complex I-PI3P-Atg21 axis.\n\nIn this study, we identified the Atg1 kinase complex, which forms a scaffold for PAS organization, as a novel interaction partner of the Atg16 complex, and found that this intercomplex interaction collaborates with the PI3P-dependent mechanism to recruit the Atg16 complex to the PAS. In addition to the stimulation of Atg8 lipidation, the Atg16 complex recruited via this newly discovered mechanism has a specific, non-E3 function: the promotion of PAS scaffold assembly.\n\n## Results\n\n### An Atg12-dependent, PI3P-independent mechanism targets the Atg16 complex to the PAS\n\nTo clarify the mechanism that directs the Atg16 complex to the PAS, we carefully analyzed the PAS localization of this complex in cells lacking different Atg proteins (Figure 1). In this analysis, the Atg16 complex was visualized by Atg5-GFP, and the PAS was labeled with the scaffold protein Atg17 fused with mCherry (Suzuki et al., 2007). In the currently accepted model, Atg5 and Atg16 cooperate to target the complex to the PAS, whereas Atg12 is dispensable for this process (Suzuki et al., 2007). It is also believed that PI3P produced by PI3K complex I, which contains Atg14 as a specific subunit, is essential for the localization of the Atg16 complex to the PAS. This PI3P-dependency could, at least in part, be explained by the role of the PI3P-binding protein Atg21 that interacts with Atg16 to recruit the Atg16 complex to the PAS (Nair et al., 2010; Juris et al., 2015). In agreement with this model, the PAS localization of Atg5 was lost by deletion of ATG16 (Figure 1). It was also confirmed that Atg5 localized to the PAS less efficiently in the absence of Atg21. Deletion of ATG14 decreased the PAS localization of Atg5; however, Atg5 still significantly localized to the PAS even without Atg14, to an extent similar to that observed in cells lacking Atg21. In addition, we noticed that the frequency of Atg5 localization to the PAS was decreased in the absence of Atg12, although it abnormally accumulated at the PAS. We found that PAS localization of Atg5 was totally abolished in cells lacking both Atg14 and Atg12 (Figure 1). Disruption of ATG12 also abrogated the residual PAS localization of Atg5 in ATG21 knockout cells. These results suggest that in addition to the previously described PI3P-dependent pathway, there exists an uncharacterized, PI3P-independent mechanism that targets the Atg16 complex to the PAS, which likely involves Atg12.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43088/elife-43088-fig1-v2.jpg)\n\n**Figure 1.:** Cells expressing Atg5-GFP and Atg17-mCherry were treated with rapamycin for 90 min, and analyzed by fluorescence microscopy. DIC, Differential interference contrast microscopy. Bars, 5 \u03bcm. The ratios of Atg17-mCherry puncta positive for Atg5-GFP to total Atg17-mCherry puncta were calculated, and the mean values are shown with standard deviations (n\u00a0=\u00a03). **p<0.01; ***p<0.001 (unpaired two-tailed Student\u2019s t-test).\n\n### The Atg16 complex interacts with the Atg1 complex under autophagy-inducing conditions\n\nWe proceeded to investigate an Atg12-dependent mechanism for PAS-targeting of the Atg16 complex. Yeast cells expressing FLAG-tagged Atg5 (Atg5-FLAG) were treated with rapamycin, which inhibits Tor kinase complex 1 and thereby induces various starvation responses including autophagy even in the presence of nutrients (Noda and Ohsumi, 1998), followed by immunoprecipitation using anti-FLAG antibody. Mass spectrometry of the immunoprecipitates identified a number of proteins as possible interaction partners of the Atg16 complex, and included most components of the Atg1 complex (Figure 2\u2014figure supplement 1A and B). The Atg1 complex is composed of the protein kinase Atg1 and the regulatory and scaffold proteins Atg13, Atg17, Atg29, and Atg31, and triggers autophagosome formation in response to nutrient starvation (Fujioka et al., 2014; Kamada et al., 2000). Atg1, Atg17, and Atg29 could also be detected in Atg5-FLAG immunoprecipitates by immunoblotting (Figure 2A and Figure 2\u2014figure supplement 1C). When ATG12 or ATG16 was deleted, coimmunoprecipitation of Atg17 with Atg5-FLAG was largely decreased (Figure 2A and Figure 2\u2014figure supplement 1B). We also showed that Atg17 was not precipitated with Atg5-FLAG in the absence of Atg10, which is essential for Atg12 conjugation to Atg5 (Mizushima et al., 1998a) (Figure 2A). Immunoprecipitation of FLAG-tagged Atg16 also precipitated Atg17; however, this was lost by knockout of ATG5 or ATG12 (Figure 2B). Thus, the formation of the Atg16 complex is required for its interaction with the Atg1 complex. We also examined this interaction in cells lacking any of the components of the Atg1 kinase complex. In this analysis, coprecipitation of Atg1 with Atg5-FLAG was also examined to evaluate the effect of ATG17 knockout on the association between the two complexes. The results clearly showed that all the components of the Atg1 complex are important for its interaction with the Atg16 complex (Figure 2C). In addition, the F430A mutation in Atg13, which impairs the formation of the Atg1 complex (Yamamoto et al., 2016), reduced Atg17 precipitation with the Atg16 complex (Figure 2D). These results suggest that the formation of the Atg1 complex is a prerequisite for its association with the Atg16 complex. In contrast, ATG14 deletion did not affect Atg17 precipitation with Atg5-FLAG (Figure 2E), consistent with the idea that this novel intercomplex interaction is involved in the PI3P-independent PAS targeting of the Atg16 complex.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43088/elife-43088-fig2-v2.jpg)\n\n**Figure 2.:** (A\u2013C, E) Yeast cells expressing Atg5-FLAG (A, C\u2013E) or Atg16-FLAG (B) from each chromosomal locus were treated with rapamycin for 2 hr, and subjected to immunoprecipitation using anti-FLAG antibody. The immunoprecipitates were analyzed by immunoblotting using antibodies against FLAG (A, B), Atg12 (C, E), Atg17 (A\u2013C, E), and Atg1 (C). (D) atg13\u0394 cells expressing wild-type Atg13, the F375A mutant, or the F430A mutant from centromeric plasmids were treated with rapamycin for 2 hr, subjected to immunoprecipitation using anti-FLAG antibody, and the immunoprecipitates were analyzed by immunoblotting using antibodies against Atg12, Atg13 and Atg17. (F) Yeast cells were treated with or without rapamycin for 2 hr, and coimmunoprecipitation of Atg17 with Atg5-FLAG was examined as described in Figure 2C. (G) Coimmunoprecipitation of Atg17 with Atg5-FLAG was analyzed in cells expressing wild-type Atg1 or the D211A mutant from the original chromosomal locus as described in Figure 2C.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43088/elife-43088-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Yeast cells expressing Atg5-FLAG were converted to spheroplasts, treated with rapamycin for 2 hr, solubilized with 1% DDM, and subjected to immunoprecipitation using anti-FLAG antibody. Immunoprecipitates were analyzed by SDS-PAGE, followed by SYPRO Ruby staining. (B) Immunoprecipitates analyzed in (A) were subjected to mass spectrometry, and the MASCOT scores for Atg proteins identified are shown. Proteins with gray background are components of the Atg1 complex. (C) Immunoprecipitates of Atg5-FLAG were prepared as described in (A), and analyzed by immunoblotting using antibodies against Atg12, Atg1, Atg13, Atg17, Atg29 and Atg31.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43088/elife-43088-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A\u2013C) AH109 cells expressing Atg proteins fused with the Gal4 activation domain (GAD) or Gal4 DNA-binding domain (GBD) as indicated were grown at 30\u00b0C for 3 days on SC agar plates lacking leucine and tryptophan for the maintenance of the GAD and GBD plasmids, respectively (-LW), and additionally either histidine (-LWH) or adenine (-LWA) for the assessment of interactions. Cells carrying pGBD-ATG8\u00a0and pGAD-ATG19\u00a0serve as a positive control.\u00a0pGAD-C1 and pGBD-C1 were used as vector controls. (D) atg1\u0394 atg13\u0394 atg29\u0394 atg31\u0394 cells expressing both ATG17 and ATG12-GFP with the ADH1 promoter (PADH1) were treated with rapamycin for 2 hr, subjected to immunoprecipitation using GFP-binding protein-conjugated beads, and the immunoprecipitates were analyzed by immunoblotting using antibodies against Atg12 and Atg17.\n\nWe found that the Atg16 complex interacts with the Atg1 complex depending on cell treatment with rapamycin (Figure 2F). Consistent with this result, the interaction was not considerably decreased by the absence of Atg11, which binds to the Atg1 complex but is dispensable for starvation-induced autophagy (Kamada et al., 2000; Kim et al., 2001). Upon nutrient starvation, Atg1, Atg13, and the Atg17-Atg29-Atg31 complex form the Atg1 complex, and multiple copies of the complex further associate with each other, leading to activation of Atg1 kinase via intermolecular autophosphorylation (Yamamoto et al., 2016; Yeh et al., 2011; Yeh et al., 2010). This assemblage of the Atg1 complexes serves as a scaffold to recruit downstream Atg proteins for PAS organization. The interaction between the Atg16 complex and the Atg1 complex was lost in the F375A mutant of Atg13 (Figure 2D), which can form the Atg1 complex, but is defective in its higher order assembly (Yamamoto et al., 2016). By contrast, the D211A mutation in Atg1, which abolishes its kinase activity (Matsuura et al., 1997), did not affect the interaction between the Atg16 and Atg1 complexes (Figure 2G). These results suggest that the Atg16 complex associates with the Atg1 complex following its supramolecular assembly in a manner independent of Atg1 kinase activity.\n\nWe also examined which subunits mediate the interaction between the Atg16 and Atg1 complexes. Yeast two-hybrid assay suggested that Atg12 could bind Atg17 and Atg31 (Figure 2\u2014figure supplement 2A). In this assay, the Atg12-Atg17 interaction was still observed in atg13\u0394 atg31\u0394 cells (Figure 2\u2014figure supplement 2B), in which Atg17 should not interact with the remaining subunits Atg1 and Atg29. By contrast, the Atg12-Atg31 interaction was abolished by ATG17 knockout, suggesting that Atg12 interacted with Atg31 via Atg17 (Figure 2\u2014figure supplement 2C). In addition, immunoprecipitation of Atg12 C-terminally fused with GFP, which is not associated with Atg5 and Atg16, coprecipitated Atg17 in cells lacking the other four subunits of the Atg1 complex, when both of Atg12-GFP and Atg17 were overexpressed. These results suggest that the interaction between Atg17 and Atg12 mediates the association of the two complexes.\n\n### The Atg16 complex interacts with the Atg1 complex to localize to the PAS\n\nNext, we examined the significance of the interaction between the Atg16 and Atg1 complexes in autophagosome formation. Atg12 is a ubiquitin-like protein with an approximately 100 amino acid-long extension at the N terminus (Suzuki et al., 2005). A previous study reported that while the ubiquitin-like domain of Atg12 was essential for autophagy, deletion of the N-terminal region caused a partial defect (Hanada and Ohsumi, 2005). The N-terminal region of Atg12 was not required for Atg12 conjugation to Atg5, the E3 activity of the conjugate, or the interaction of the conjugate with Atg16 (Hanada and Ohsumi, 2005) (Figure 3\u2014figure supplement 1). Thus, the role for the Atg12 N-terminal region remained unknown. We found that the Atg1 complex was hardly coimmunoprecipitated with the Atg16 complex that contained Atg12 lacking the N-terminal 56 residues (Atg12\u0394N56) (Figure 3A), suggesting that the Atg12 N-terminal region is involved in the interaction of the Atg16 complex with the Atg1 complex. The results obtained by fluorescence microscopy (Figure 1) suggested that this interaction cooperates with the PI3P-dependent pathway in the recruitment of the Atg16 complex to the PAS. Therefore, we examined the PAS localization of the complex containing Atg12\u0394N56 in the absence of Atg21. While expression of wild-type Atg12 rescued a defect in the PAS localization of Atg5-GFP in atg21\u0394 atg12\u0394 cells, expression of the Atg12\u0394N56 mutant did not (Figure 3B). We also performed an alkaline phosphatase (ALP) assay to assess autophagic activity in the mutant cells. In this assay, a mutant form of the vacuolar phosphatase Pho8 (Pho8\u039460) is expressed in an unprocessed, inactive form in the cytoplasm. This mutant phosphatase is delivered into the vacuole through autophagy. Once inside the vacuole, it is processed into an active form, and its activity can be quantified biochemically (Noda et al., 1995). Consistent with previous results (Hanada and Ohsumi, 2005; Meiling-Wesse et al., 2004; Str\u00f8mhaug et al., 2004), atg12\u0394N56 cells (atg12\u0394 cells carrying the atg12\u0394N56 plasmid) and atg21\u0394 cells (atg21\u0394 atg12\u0394 cells carrying the ATG12WT plasmid) were only partially defective in autophagy (Figure 3C). When these mutations were combined (atg21\u0394 atg12\u0394 cells carrying the atg12\u0394N56 plasmid), the cells showed almost no autophagic activity. These results suggest that the interaction of the Atg16 complex with the Atg1 complex indeed acts to target the Atg16 complex to the PAS, and that defects caused by the absence of this interaction can be partly compensated by the PI3P-dependent mechanism. If both of these mechanisms are simultaneously compromized, cells totally lose their ability to form the autophagosome.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43088/elife-43088-fig3-v2.jpg)\n\n**Figure 3.:** (A) atg12\u0394 cells expressing wild-type Atg12 or Atg12\u0394N56 from centromeric plasmids were treated with rapamycin for 2 hr, and examined for coimmunoprecipitation of Atg17 with Atg5-FLAG as described in Figure 2C. The upper and middle panels were immunoblots obtained using antibodies against Atg5 and FLAG, respectively. Asterisk, non-specific bands. (B) Yeast cells were treated with rapamycin for 2 hr, and the PAS localization of Atg5-GFP was assessed by fluorescence microscopy as described in Figure 1. **p<0.01; ***p<0.001 (unpaired two-tailed Student\u2019s t-test). (C) atg12\u0394 and atg12\u0394 atg21\u0394 cells expressing wild-type Atg12 or Atg12\u0394N56 from centromeric plasmids were grown in nutrient-rich medium (open bars) and then starved in SD-N medium for 4 hr (closed bars), and their autophagic activities were evaluated by ALP assay. The mean values are shown with standard deviations (n\u00a0=\u00a03). *p<0.05; **p<0.01 (unpaired two-tailed Student\u2019s t-test).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43088/elife-43088-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Recombinant proteins and liposomes (20 mol% DOPE, 70 mol% POPC, and 10 mol% yeast PI) were prepared as described previously (Nakatogawa et al., 2007; Sakoh-Nakatogawa et al., 2013). Atg8 (5 \u03bcM), Atg7 (1 \u03bcM), Atg3 (1 \u03bcM), ATP (1 mM), and liposomes (350 \u03bcM lipids) were incubated with wild-type Atg12-Atg5 or Atg12\u0394N70-Atg5 (0.2 \u03bcM) at 30\u00b0C for the indicated time periods, and analyzed by urea-SDS-PAGE and subsequent CBB staining. Protein bands of Atg12-Atg5 are not visible in this analysis due to its low concentration.\n\n### The Atg16 complex recruited via the Atg12-dependent pathway plays two different roles in PAS organization\n\nPrevious studies showed that PI3P-dependent PAS recruitment of the Atg16 complex is important for the production of Atg8-PE (Meiling-Wesse et al., 2004; Str\u00f8mhaug et al., 2004). We asked whether the Atg12-dependent mechanism also contributes to this process. Atg8-PE production is stimulated upon nitrogen starvation (Figure 4A, atg12\u0394/pATG12WT). As reported previously (Meiling-Wesse et al., 2004; Str\u00f8mhaug et al., 2004), ATG21 knockout significantly reduced the level of Atg8-PE, which still gradually increased during nitrogen starvation (atg21\u0394 atg12\u0394/pATG12WT). We found that deletion of the N-terminal region of Atg12 also partially decreased Atg8-PE formation (atg12\u0394/patg12\u0394N56). In addition, starvation-induced Atg8-PE formation was totally abolished in cells lacking both Atg21 and the N-terminal region of Atg12 (atg21\u0394 atg12\u0394/patg12\u0394N56). Of note, the residual amount of Atg8-PE in these mutant cells should represent the conjugates that were produced in the vacuolar membrane depending on the Atg16 complex, which is dispersed throughout the cytoplasm, independent of autophagy (Nakatogawa et al., 2012a). These results demonstrated that the Atg16 complex recruited by the Atg12-dependent mechanism acts as an E3 enzyme and promotes Atg8 lipidation, as was observed with the PI3P-dependent mechanism.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43088/elife-43088-fig4-v2.jpg)\n\n**Figure 4.:** (A) Yeast cells were incubated in nitrogen starvation medium and examined for the production of Atg8-PE by urea-SDS-PAGE and immunoblotting using anti-Atg8 antibodies (see Materials and methods). The ratio of Atg8-PE to total Atg8 was calculated, and the mean values are shown with standard deviations (n\u00a0=\u00a03). *p<0.05; **p<0.01 (unpaired two-tailed Student\u2019s t-test). Pgk1 serves as a loading control. (B and C) Yeast cells expressing Atg17-GFP were treated with rapamycin for 90 min (B) or 2 hr (C), and observed under a fluorescence microscope. The proportion of cells containing Atg17-GFP puncta to total cells was calculated, and the mean values are shown with standard deviations (n\u00a0=\u00a03). **p<0.01 (unpaired two-tailed Student\u2019s t-test).\n\nWe noticed that Atg17-GFP puncta, which represent PAS scaffold assembly (Yamamoto et al., 2016), were decreased by knockout of ATG12, which disrupts the Atg12-dependent mechanism, whereas the puncta were increased by knockout of ATG14 or ATG21, which impairs the PI3P-dependent mechanism (Figure 1). We confirmed this finding using atg11\u0394 cells, in which the starvation-induced assembly of the PAS scaffold can be assessed separately from a similar process that occurs under nutrient-replete conditions for the cytoplasm-to-vacuole targeting (Cvt) pathway (Cheong et al., 2008; Kawamata et al., 2008). The results demonstrated that the formation of Atg17-GFP puncta upon rapamycin treatment was defective in the absence of Atg12, Atg5, or Atg16 (Figure 4B). More importantly, Atg17-GFP puncta were also decreased by deletion of the N-terminal region of Atg12 (Figure 4C). These results suggest that the Atg16 complex recruited via the Atg12-dependent mechanism (i.e., the interaction with the Atg1 complex) facilitates starvation-induced PAS scaffold assembly.\n\n## Discussion\n\nPrevious studies established a model for PAS targeting of the Atg16 complex: Atg16 interacts with Atg21, which binds PI3P produced by PI3K complex I at the PAS (Juris et al., 2015; Nair et al., 2010; Meiling-Wesse et al., 2004; Str\u00f8mhaug et al., 2004) (Figure 5, PI3P-dependent targeting). This model nicely explained the PI3P-dependency of the process. However, disruption of ATG21 or ATG14 did not totally abolish PAS localization of the Atg16 complex, suggesting the existence of another pathway that targets this complex to the PAS in a PI3P-independent manner. In this study, we discovered that the Atg16 complex also interacts with the Atg1 complex via the N-terminal region of Atg12 to localize to the PAS (Figure 5, Atg12-dependent targeting). Thus, the Atg16 complex is recruited to the PAS through two different pathways. Although disrupting either of the pathways caused partial defects, in the absence of both of these pathways, the Atg16 complex hardly localized to the PAS, and autophagy was completely blocked. These results suggested that these pathways function in a partially redundant manner. Consistent with this idea, we showed that these pathways cooperatively act to stimulate Atg8-PE formation in response to starvation (Figure 4A). However, the Atg1 complex serves as a scaffold to initiate PAS organization, whereas Atg21 is recruited at a later step, following the production of PI3P by PI3K complex I (Figure 5), suggesting that there is a functional difference between these pathways. Indeed, we found that the Atg12-dependent pathway, but not the PI3P-dependent pathway, is involved in PAS scaffold assembly. Thus, the Atg16 complex recruited by the Atg12-dependent pathway has a specific, non-E3 role in the initiation of PAS organization. Given the complementary relationship with the PI3P-dependent pathway, it is likely that the Atg16 complex recruited through the association of the Atg1 complex also contributes to Atg8 lipidation at later stages (Figure 5, dashed arrow).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/43088/elife-43088-fig5-v2.jpg)\n\n**Figure 5.:** The Atg16 complex is recruited to the PAS through two different pathways (Atg12-dependent targeting and PI3P-dependent targeting). Upon autophagy induction (starvation or TORC1 inactivation), the Atg1 complex is assembled, and multiple copies of Atg1 complexes further form a higher order assembly. During the process, the Atg16 complex associates with Atg1 complexes via the N-terminal region of Atg12, promoting PAS scaffold assembly. The Atg16 complex recruited at this stage also facilitates lipidation of Atg8 at a later stage in PAS organization (dashed arrow). As reported previously, following the recruitment of PI3K complex I and the production of PI3P by this complex, the Atg16 complex localizes to the PAS via the interaction with the PI3P-binding protein Atg21 to stimulate Atg8 lipidation.\n\nThe interaction between the Atg16 complex and the Atg1 complex required both of the complexes to be intact. In addition, higher order assembly of Atg1 complexes was a prerequisite for the interaction (Figure 2D). We speculate that the Atg16 complex, in which Atg12-Atg5-Atg16 is dimerized by the homodimerization of Atg16 (Fujioka et al., 2010), simultaneously binds to two copies of the Atg1 complexes via the N-terminal regions of Atg12 (Figure 5). This mode of interaction can crosslink the Atg1 complexes, resulting in the facilitation of supramolecular assembly of Atg1 complexes to form the PAS scaffold.\n\nIn this study, we showed that the association between the Atg16 and Atg1 complexes requires the N-terminal region of Atg12. Although there is no sequence similarity between the N-terminal regions of yeast and mammalian Atg12, a recent study revealed that the Atg16L complex also associates with the ULK1 complex (corresponding to the Atg1 complex) in mammalian cells (Nishimura et al., 2013). This intercomplex association was mediated by the interaction between Atg16L and FIP200, which is a mammalian counterpart of yeast Atg17, and important for the localization of the Atg16L complex to the isolation membrane. Thus, although the underlying mechanisms are different, the recruitment of the Atg16/Atg16L complex to autophagosome intermediates through association with the Atg1/ULK1 complex is a common process during autophagosome formation in yeast and mammals. It is still unclear how this process cooperates with the PI3P (WIPI2)-dependent mechanism in mammalian cells. The Atg16L complex may also facilitate supramolecular assembly of ULK complexes in the initiation of autophagosome formation.\n\n## Materials and methods\n\n### Yeast strains and media\n\nS. cerevisiae strains used in this study are listed in Table 1. Gene knockout and tagging were performed as described previously (Janke et al., 2004). Yeast cells were grown at 30\u00b0C in YPD medium (1% yeast extract, 2% peptone, and 2% glucose) for immunoprecipitation analysis or in SD+CA+ATU medium [0.17% yeast nitrogen base without amino acids and ammonium sulfate (YNB w/o aa and as), 0.5% ammonium sulfate, 0.5% casamino acids, and 2% glucose supplemented with 0.002% adenine sulfate, 0.002% tryptophan, and 0.002% uracil] for fluorescence microscopy. Cells carrying pRS316-derived plasmids expressing Atg12, Atg13, and their mutants were cultured in SD+CA+ATU without uracil. To induce autophagy, cells were treated with 0.2 \u03bcg/mL rapamycin or incubated in SD-N medium (0.17% YNB w/o aa and as and 2% glucose).\n\n**Table 1.**\n Yeast strains used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Name</th>\n      <th>Genotype</th>\n      <th>Figures</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>W303-1a</td>\n      <td>MATa ade2-1 ura3-1 his3-11,15 trp1-1 leu2-3,112 can1-100</td>\n      <td>-</td>\n      <td>(Thomas and Rothstein, 1989)</td>\n    </tr>\n    <tr>\n      <td>ScKH146</td>\n      <td>W303-1A, ade2::ADE2 ATG5-EGFP-kanMX6 ATG17-2\u00d7mCherry-hphNT1</td>\n      <td>1A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH153</td>\n      <td>ScKH146 atg16\u0394::natNT2</td>\n      <td>1A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH182</td>\n      <td>ScKH146 atg21\u0394::zeoNT3</td>\n      <td>1A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH151</td>\n      <td>ScKH146 atg14\u0394::natNT2</td>\n      <td>1A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH149</td>\n      <td>ScKH146 atg12\u0394::natNT2</td>\n      <td>1A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH162</td>\n      <td>ScKH146 atg14\u0394::natNT2 atg12\u0394::zeoNT3</td>\n      <td>1A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK623</td>\n      <td>ScKH146 atg21\u0394::natNT2 atg12\u0394::zeoNT3</td>\n      <td>1A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>BJ2168</td>\n      <td>MATa leu2 trp1 ura3-52 prb1-1122 pep4-3 prc1-407 gal2</td>\n      <td>2A-C, 2E, 2F, 2-S1A, 2-S1C</td>\n      <td>(Jones, 1991)</td>\n    </tr>\n    <tr>\n      <td>MAN169</td>\n      <td>BJ2168 ATG5-TEV-3\u00d7FLAG-kanMX4</td>\n      <td>2A, 2C, 2E, 2F, 2-S1A, 2-S1C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH10</td>\n      <td>MAN169 atg16\u0394::natNT2</td>\n      <td>2A, 2E, 2-S1A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH32</td>\n      <td>MAN169 atg12\u0394::natNT2</td>\n      <td>2A, 3A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH96</td>\n      <td>MAN169 atg10\u0394::natNT2</td>\n      <td>2A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH90</td>\n      <td>BJ2168 ATG16-TEV-3\u00d7FLAG-kanMX4</td>\n      <td>2B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH92</td>\n      <td>ScKH90 atg5\u0394::natNT2</td>\n      <td>2B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH93</td>\n      <td>ScKH90 atg12\u0394::natNT2</td>\n      <td>2B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH141</td>\n      <td>MAN169 atg1\u0394::natNT2</td>\n      <td>2C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH99</td>\n      <td>MAN169 atg13\u0394::natNT2</td>\n      <td>2C, 2D</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH216</td>\n      <td>MAN169 atg17\u0394::natNT2</td>\n      <td>2C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH101</td>\n      <td>MAN169 atg29\u0394::natNT2</td>\n      <td>2C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH143</td>\n      <td>MAN169 atg31\u0394::natNT2</td>\n      <td>2C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH98</td>\n      <td>MAN169 atg14\u0394::natNT2</td>\n      <td>2E</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH97</td>\n      <td>MAN169 atg11\u0394::natNT2</td>\n      <td>2F</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScYH3184</td>\n      <td>BJ2168 leu2::LEU2</td>\n      <td>2G</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH66</td>\n      <td>ScHY3184 ATG5-TEV-3\u00d7FLAG-kanMX4</td>\n      <td>2G</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH68</td>\n      <td>ScHY3184 atg1D211A-hphNT1 ATG5-TEV-3\u00d7FLAG-kanMX4</td>\n      <td>2G</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>AH109</td>\n      <td>MATa trp1-901 leu2-3, 112 ura3-52 his3-200 gal4\u0394 gal80\u0394LYS2::GAL1UAS-GAL1TATA-HIS3 MEL1 GAL2UAS-GAL2TATA-ADE2 URA3::MEL1UAS-MEL1TATA-lacZ</td>\n      <td>2-S2A</td>\n      <td>Clontech</td>\n    </tr>\n    <tr>\n      <td>ScTK967</td>\n      <td>AH109 atg13\u0394::natNT2 atg31\u0394::hphNT1</td>\n      <td>2-S2B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK968</td>\n      <td>AH109 atg17\u0394::natNT2</td>\n      <td>2-S2C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK877</td>\n      <td>BJ2168 atg11\u0394::LEU2 atg29\u0394::zeoNT3 atg31\u0394::hphNT1 atg1\u0394::natNT2 atg13\u0394::Klura3 PADH1-ATG17-CgTRP1</td>\n      <td>2-S2D</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK958</td>\n      <td>ScTK877 KlURA3-PADH1-ATG12-EGFP-kanMX4</td>\n      <td>2-S2D</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK649</td>\n      <td>ScTK623 his3-11::pRS303</td>\n      <td>3B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK650</td>\n      <td>ScTK623 his3-11::pRS303-ATG12</td>\n      <td>3B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK651</td>\n      <td>ScTK623 his3-11::pRS303-atg12\u0394N56</td>\n      <td>3B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>BY4741</td>\n      <td>MATa his3\u03941 leu2\u03940 met15\u03940 ura3\u03940</td>\n      <td>-</td>\n      <td>(Brachmann et al., 1998)</td>\n    </tr>\n    <tr>\n      <td>ScTK557</td>\n      <td>BY4741 pho8\u0394::kanMX4- PGPD-pho8\u039460 atg12\u0394::natNT2</td>\n      <td>3C, 4A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK559</td>\n      <td>BY4741 pho8\u0394::kanMX4- PGPD-pho8\u039460 atg21\u0394::zeoNT3 atg12\u0394::natNT2</td>\n      <td>3C, 4A</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH119</td>\n      <td>W303-1A, ade2\u0394::ADE2 ATG17-EGFP-kanMX4 atg11\u0394::zeoNT3</td>\n      <td>4B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH121</td>\n      <td>ScKH119 atg5\u0394::natNT2</td>\n      <td>4B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH123</td>\n      <td>ScKH119 atg12\u0394::natNT2</td>\n      <td>4B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScKH125</td>\n      <td>ScKH119 atg16\u0394::natNT2</td>\n      <td>4B</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK657</td>\n      <td>YKH123 his3-11::pRS303</td>\n      <td>4C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK658</td>\n      <td>YKH123 his3-11::pRS303-ATG12</td>\n      <td>4C</td>\n      <td>This study</td>\n    </tr>\n    <tr>\n      <td>ScTK659</td>\n      <td>YKH123 his3-11::pRS303-atg12\u0394N56</td>\n      <td>4C</td>\n      <td>This study</td>\n    </tr>\n  </tbody>\n</table>\n\n### Plasmids\n\npRS316-based centromeric plasmids for expression of Atg13 mutants were described previously (Yamamoto et al., 2016). Plasmids for Atg12 expression were constructed as follows. pRS424-ATG12 (Hanada and Ohsumi, 2005) was digested by SacI and XhoI, and a DNA fragment encompassing the ATG12 gene was ligated with the pRS316 vector (Sikorski and Hieter, 1989) cut with the same enzymes, resulting in pRS316-ATG12. The nucleotide sequence encoding Ser2 to Gln56 of Atg12 was removed from this plasmid using the QuikChange site-directed mutagenesis kit (Agilent Technologies) to obtain the plasmid expressing Atg12\u0394N56 (pRS316-atg12\u0394N56). DNA fragments excised from these plasmids were ligated with the pRS303 vector (Sikorski and Hieter, 1989) in the same manner to construct pRS303-ATG12 and pRS303-atg12\u0394N56. These plasmids were digested by NheI prior to their introduction into yeast cells for integration at the HIS3 locus. pGAD-ATG1, pGAD-ATG13, pGAD-ATG17, pGAD-ATG19, pGBD-ATG8, and pGBD-ATG12 for yeast two-hybrid assay were described previously (Kabeya et al., 2005; Kamada et al., 2000; Mizushima et al., 1999; Nakatogawa et al., 2012b; Noda et al., 2008). To construct pGAD-ATG29 and pGAD-ATG31, the open reading frames of ATG29 and ATG31 were cloned into the BamHI and PstI sites on pGAD-C1 using the Gibson assembly kit (New England Biolabs).\n\n### Fluorescence microscopy\n\nFluorescence microscopy was performed using an inverted fluorescence microscope (IX83; Olympus) equipped with an electron-multiplying CCD camera (ImagEM C9100-13; Hamamatsu Photonics), and a 150\u00d7\u00a0objective lens (UAPON 150XOTIRF, NA/1.45; Olympus). GFP and mCherry were excited using a 488 nm blue laser (50 mW; Coherent) and a 588 nm yellow laser (50 mW; Coherent), respectively. Fluorescence was filtered with a dichroic mirror reflecting 405 nm, 488 nm, and 588 nm wavelengths (Olympus), separated into two channels using the DV2 multichannel imaging system (Photometrics) equipped with a Di02-R594-25\u00d736 dichroic mirror (Semrock), and further filtered with the TRF59001-EM ET bandpass filter (Chroma) for the GFP channel and the FF01-624/40-25 bandpass filter (Semrock) for the mCherry channel. Images were acquired using MetaMorph software (Molecular Devices) and processed using Fiji (ImageJ) (Schindelin et al., 2012; Schneider et al., 2012).\n\n### Immunoprecipitation\n\nCells expressing FLAG-tagged proteins were grown to mid-log phase and converted to spheroplasts by incubating them in 0.5\u00d7\u00a0YPD or 0.5\u00d7\u00a0SD+CA+ATU medium containing 1 M sorbitol and 0.1 mg/mL zymolyase 100T (Nacalai tesque) at 30\u00b0C for 45 min. These cells were then washed with 20 mM HEPES-KOH (pH7.2) containing 1.2 M sorbitol, and incubated in 0.5\u00d7\u00a0YPD or 0.5\u00d7\u00a0SD+CA+ATU\u00a0medium containing 1 M sorbitol and 0.2 \u03bcg/mL rapamycin at 30\u00b0C for 2 hr. The cells were pelleted and solubilized in IP buffer [50 mM Tris-HCl (pH8.0), 150 mM NaCl, 10% glycerol, 5 mM EDTA, 5 mM EGTA, and\u00a050 mM NaF] containing 2 mM phenylmethylsulfonyl fluoride (PMSF), 2\u00d7\u00a0cOmplete Protease Inhibitor Cocktail (Roche), and 1% n-dodecyl-\u03b2-maltoside (DDM). After removal of cell debris by centrifugation at 15,000 g for 20 min, the resulting supernatants (input) were incubated with NHS FG-beads (Tamagawa Seiki) conjugated with anti-FLAG M2 antibody (F1804; Sigma-Aldrich) or GFP-nanobody (GFP-binding protein) (Kotani et al., 2018) and rotated at 4\u00b0C for 2 hr. The beads were washed three times with IP buffer containing 0.1% DDM, and bound proteins were eluted with SDS sample buffer [50 mM Tris-HCl (pH7.5), 2% SDS, 8% glycerol, and a trace amount of bromophenol blue] at 65\u00b0C for 10 min. Dithiothreitol was added to these samples to a final concentration of 100 mM, and they were incubated at 65\u00b0C for 10 min. The samples were analyzed by immunoblotting using antibodies against FLAG (F1804; Sigma), Atg12, Atg5, Atg1, Atg13, Atg17, Atg29, and Atg31 (Kuma et al., 2002; Matsuura et al., 1997; Kamada et al., 2000; Kawamata et al., 2008).\n\n### Analysis of Atg8 lipidation\n\nYeast cells were grown to mid-log phase, treated with 1 mM PMSF for 10 min, and subjected to starvation in SD-N medium containing 1 mM PMSF. Samples for immunoblotting analysis were prepared as described previously (Kotani et al., 2018), and subjected to urea-SDS-PAGE (Nakatogawa and Ohsumi, 2012) to separate lipidated Atg8 (Atg8-PE) from the unmodified form, followed by immunoblotting using antibodies against Atg8 (anti-Atg8-2) (Nakatogawa et al., 2012a).\n\n### Alkaline phosphatase assay\n\nLysates were prepared from cells before or after starvation for 4 hr in SD-N medium. The ALP assay was carried out as described previously (Noda et al., 1995; Noda and Klionsky, 2008).\n",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "171143f0-3922-4f3a-bca8-adc60e2d530e",
+      "submission_id": "de8d7283-51ec-4e73-af34-210eb4f18c65",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hong Zhang, Institute of Biophysics, Chinese Academy of Sciences China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.43088.013](https://doi.org/10.7554/eLife.43088.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Two distinct mechanisms target the autophagy-related E3 complex to the pre-autophagosomal structure\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Ivan Dikic as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nUpon autophagy induction in yeast, a set of Atg proteins is recruited in a hierarchical order to the PAS. The Atg1 complex acts in the most upstream of the recruitment. Previous studies have shown that the Atg12-Atg5-Atg16 complex, which acts as a E3 for promoting lipidation of Atg8, is targeted to PAS via interaction with Atg21 in a PI(3)P-dependent manner. In this manuscript, the authors revealed a novel mechanism for the PAS targeting of the Atg12-Atg5-Atg16 complex. They demonstrated that this complex can be recruited to the PAS via direct interaction of the N-terminal region of Atg12 with the Atg1 complex. The formation of Atg17 puncta is reduced in the absence of the Atg12-Atg5-Atg16 complex, suggesting a crosstalk between these two complexes. These findings provide novel and useful information for our understanding of the early stage of autophagy process. The experiments are well-designed, the data are with high quality, and the manuscript is well-written. It is suitable for publication in eLife after appropriate revisions.\n\nEssential revisions:\n\n1) Which component(s) in the Atg1 complex interact with the N-terminal 56 amino acids of Atg12?\n\n2) Does the N-terminal part of Atg12 have the ability to localize by themselves to the PAS? The authors should try if proteins (such as GFP) can be directed to the PAS via this domain.\n",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "57316fb6-c4d5-4e4b-9101-e8ebbc3c68b4",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C1",
+      "claim": "The autophagy-related E3 complex Atg12-Atg5-Atg16 is recruited to the PAS via Atg16 interaction with Atg21, which binds phosphatidylinositol 3-phosphate (PI3P) produced at the PAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in yeast revealed that the autophagy-related E3 complex Atg12-Atg5-Atg16 is recruited to the PAS via Atg16 interaction with Atg21, which binds phosphatidylinositol 3-phosphate (PI3P) produced at the PAS, to stimulate conjugation of the ubiquitin-like protein Atg8 to phosphatidylethanolamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "8315a9b0-7061-41e7-ae6d-200261110f7a",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C2",
+      "claim": "The Atg12-Atg5-Atg16 complex stimulates conjugation of the ubiquitin-like protein Atg8 to phosphatidylethanolamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in yeast revealed that the autophagy-related E3 complex Atg12-Atg5-Atg16 is recruited to the PAS via Atg16 interaction with Atg21, which binds phosphatidylinositol 3-phosphate (PI3P) produced at the PAS, to stimulate conjugation of the ubiquitin-like protein Atg8 to phosphatidylethanolamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "3b60f5ce-dc7d-4f29-8f04-2e591c555ad0",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C3",
+      "claim": "A novel mechanism for PAS targeting of Atg12-Atg5-Atg16 is mediated by the interaction of Atg12 with the Atg1 kinase complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we discover a novel mechanism for the PAS targeting of Atg12-Atg5-Atg16, which is mediated by the interaction of Atg12 with the Atg1 kinase complex that serves as a scaffold for PAS organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "cffc9e85-f767-4a7a-ac65-462e6a48a310",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C4",
+      "claim": "The Atg1 kinase complex serves as a scaffold for PAS organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we discover a novel mechanism for the PAS targeting of Atg12-Atg5-Atg16, which is mediated by the interaction of Atg12 with the Atg1 kinase complex that serves as a scaffold for PAS organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "8a4a24f9-4d7f-4773-b049-74e86297bb23",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C5",
+      "claim": "Cells lacking both PI3P-dependent and Atg12-dependent mechanisms completely lose the PAS localization of Atg12-Atg5-Atg16.",
+      "claim_type": "EXPLICIT",
+      "source": "While autophagy is partially defective without one of these mechanisms, cells lacking both completely lose the PAS localization of Atg12-Atg5-Atg16 and show no autophagic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1 and other figures in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "d024cdd4-f21f-47a2-ac25-76beb0e6990e",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C6",
+      "claim": "Cells lacking both PI3P-dependent and Atg12-dependent mechanisms show no autophagic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While autophagy is partially defective without one of these mechanisms, cells lacking both completely lose the PAS localization of Atg12-Atg5-Atg16 and show no autophagic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from ALP assays shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "fcca2300-d984-49aa-aba0-5233e3ea1068",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C7",
+      "claim": "Atg12-Atg5-Atg16 recruited via the Atg12-dependent mechanism stimulates Atg8 lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the PI3P-dependent mechanism, Atg12-Atg5-Atg16 recruited via the Atg12-dependent mechanism stimulates Atg8 lipidation, but also has the specific function of facilitating PAS scaffold assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A demonstrating Atg8-PE production.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "5e01aae5-81b8-46cf-92c7-cb86a82fc1da",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C8",
+      "claim": "Atg12-Atg5-Atg16 recruited via the Atg12-dependent mechanism has the specific function of facilitating PAS scaffold assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the PI3P-dependent mechanism, Atg12-Atg5-Atg16 recruited via the Atg12-dependent mechanism stimulates Atg8 lipidation, but also has the specific function of facilitating PAS scaffold assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4B and 4C demonstrating Atg17-GFP puncta formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "a5bb9def-28bb-4964-907a-612e4d217704",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C9",
+      "claim": "Autophagy is a major route for transport of intracellular material into lysosomes or vacuoles in almost all eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Macroautophagy (hereafter autophagy) is a major route for transport of intracellular material into lysosomes or vacuoles in almost all eukaryotes (Ohsumi, 2014; Yang and Klionsky, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "ac546801-2678-48e9-9bbc-2af274f30108",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C10",
+      "claim": "In autophagy, a membrane cisterna called the isolation membrane is generated, expands, becomes spherical, and closes to form a double membrane vesicle called the autophagosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In autophagy, a membrane cisterna called the isolation membrane (or phagophore) is generated, expands, becomes spherical, and closes to form a double membrane vesicle called the autophagosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the autophagy process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "c259cfe0-7fc4-4c7e-aa9d-d4cc09199455",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C11",
+      "claim": "During autophagosome formation, various cytoplasmic components, including proteins, RNA, and organelles, are selectively or non-selectively sequestered into the autophagosome.",
+      "claim_type": "EXPLICIT",
+      "source": "During the course of this process, various cytoplasmic components, including proteins, RNA, and organelles, are selectively or non-selectively sequestered into the autophagosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about autophagy function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "e6f71d44-42c0-46e2-8807-660f977cc114",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C12",
+      "claim": "The autophagosome fuses with the lysosome/vacuole to allow degradation of the contents.",
+      "claim_type": "EXPLICIT",
+      "source": "The autophagosome fuses with the lysosome/vacuole to allow degradation of the contents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the autophagy pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "d345ded6-3c7e-44b2-8156-8957f4731b9d",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C13",
+      "claim": "Autophagy is involved in the regulation of a wide range of cellular functions and linked to a variety of human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "An increasing number of studies have suggested that autophagy is involved in the regulation of a wide range of cellular functions, and linked to a variety of human diseases (Bento et al., 2016; Dikic and Elazar, 2018; Mizushima, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "12f3e9c6-153d-408f-9116-57b24e5ef1f4",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C14",
+      "claim": "Over 40 Atg proteins have been identified to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the over 40 Atg proteins that have been identified to date, 19 are directly involved in the biogenesis of the autophagosome induced under starvation (Nakatogawa et al., 2009; Ohsumi, 2014; Yang and Klionsky, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "a94804e9-2141-42d5-95a6-50a281abb237",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C15",
+      "claim": "19 core Atg proteins are directly involved in the biogenesis of the autophagosome induced under starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the over 40 Atg proteins that have been identified to date, 19 are directly involved in the biogenesis of the autophagosome induced under starvation (Nakatogawa et al., 2009; Ohsumi, 2014; Yang and Klionsky, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "dd6404c6-33cb-476b-86e4-a6fbe7d0b798",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C16",
+      "claim": "Core Atg proteins constitute six functional units: the Atg1 kinase complex, Atg9 vesicles, PI3K complex I, the Atg2-Atg18 complex, the Atg12 conjugation system, and the Atg8 conjugation system.",
+      "claim_type": "EXPLICIT",
+      "source": "These 'core' Atg proteins constitute six functional units: (i) the Atg1 kinase complex; (ii) Atg9 vesicles; (iii) phosphatidylinositol (PI) 3-kinase (PI3K) complex I; (iv) the Atg2-Atg18 complex; (v) the Atg12 conjugation system; and (vi) the Atg8 conjugation system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "23213f47-c031-4ccd-b90b-956ce6ca9cdd",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C17",
+      "claim": "In response to starvation, Atg proteins interact with each other, localize to the site of autophagosome formation in an ordered manner, and organize the pre-autophagosomal structure (PAS).",
+      "claim_type": "EXPLICIT",
+      "source": "In response to starvation, these proteins interact with each other, localize to the site of autophagosome formation in an ordered manner, and organize the pre-autophagosomal structure (PAS) (Nakatogawa et al., 2009; Suzuki et al., 2001; Suzuki and Ohsumi, 2010), in which a precursor of the autophagosomal membrane is generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "09981ca3-ae60-4ff5-a5fa-191d29b26fed",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C18",
+      "claim": "A precursor of the autophagosomal membrane is generated at the PAS.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to starvation, these proteins interact with each other, localize to the site of autophagosome formation in an ordered manner, and organize the pre-autophagosomal structure (PAS) (Nakatogawa et al., 2009; Suzuki et al., 2001; Suzuki and Ohsumi, 2010), in which a precursor of the autophagosomal membrane is generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "15e9ca01-81a0-47e9-a50d-0a8242608067",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C19",
+      "claim": "Atg12 is covalently attached to a lysine residue in Atg5 via ubiquitin-like conjugation reactions, resulting in the Atg12-Atg5 conjugate.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitin-like protein Atg12 is covalently attached to a lysine residue in Atg5 via ubiquitin-like conjugation reactions, resulting in the Atg12-Atg5 conjugate (Mizushima et al., 1998a; Mizushima et al., 1998b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "2d0528a6-db36-4f95-ad86-3a63a05b700c",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C20",
+      "claim": "Atg12-Atg5 non-covalently interacts with Atg16 to form the Atg12-Atg5-Atg16 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg12-Atg5 non-covalently interacts with Atg16 (Atg16L in mammals) to form the Atg12-Atg5-Atg16/Atg16L complex (hereafter the Atg16/Atg16L complex) (Kuma et al., 2002; Mizushima et al., 2003; Mizushima et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "2f733b27-be70-4bee-9f6d-8a1bf20358f2",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C21",
+      "claim": "The Atg16/Atg16L complex is localized to the PAS and acts as an E3 enzyme to stimulate the conjugation reaction of ubiquitin-like Atg8/LC3-family proteins to the lipid phosphatidylethanolamine (PE) in autophagosome intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "The Atg16/Atg16L complex is localized to the PAS (or the site of autophagosome formation) and acts as an E3 enzyme to stimulate the conjugation reaction of ubiquitin-like Atg8/LC3-family proteins to the lipid phosphatidylethanolamine (PE) in autophagosome intermediates (i.e., a still-unknown membrane component of the PAS and the isolation membrane) (Suzuki et al., 2007; Hanada et al., 2007; Ichimura et al., 2000; Fujita et al., 2008; Nakatogawa, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "6b10b2b3-5cfc-4914-98c4-e004f99d62a9",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C22",
+      "claim": "Atg8-PE conjugates promote the expansion of the isolation membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg8-PE conjugates promote the expansion of the isolation membrane (Nakatogawa et al., 2007; Xie et al., 2008), and also bind to autophagy receptors that recognize specific degradation targets for their selective sequestration into the autophagosome (Gatica et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "a1ef1b57-2ad8-4e25-aa17-320c7cb88c98",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C23",
+      "claim": "Atg8-PE conjugates bind to autophagy receptors that recognize specific degradation targets for their selective sequestration into the autophagosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg8-PE conjugates promote the expansion of the isolation membrane (Nakatogawa et al., 2007; Xie et al., 2008), and also bind to autophagy receptors that recognize specific degradation targets for their selective sequestration into the autophagosome (Gatica et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "a4a7be65-9a96-4125-8e3b-fd5462b68380",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C24",
+      "claim": "In both yeast and mammals, the recruitment of the Atg16/Atg16L complex to the site of autophagosome formation depends on PI3P produced by PI3K complex I.",
+      "claim_type": "EXPLICIT",
+      "source": "In both yeast and mammals, the recruitment of the Atg16/Atg16L complex to the site of autophagosome formation depends on PI3-phosphate (PI3P) produced by PI3K complex I (Itakura and Mizushima, 2010; Suzuki et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "c4dcd80b-0433-4c47-99b4-ada0ff8b98aa",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C25",
+      "claim": "In mammalian cells, WIPI2b binds both Atg16L1 and PI3P to target the Atg16L1 complex to autophagosome formation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study in mammalian cells revealed that the PROPPIN family protein WIPI2b binds both Atg16L1 and PI3P to target the Atg16L1 complex to autophagosome formation sites (Dooley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "32996071-fefc-4bad-a683-457013a7159c",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C26",
+      "claim": "In S. cerevisiae, Atg21 mediates the recruitment of the Atg16 complex to the PAS in a manner similar to WIPI2b in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. cerevisiae, Atg21, one of the three WIPI homologs, was shown to mediate this process in a similar manner (Juris et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "3e169dde-30c2-469c-bdb2-d12fa5674c22",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C27",
+      "claim": "Knockout of ATG21 did not completely abrogate the PAS localization of the Atg16 complex or the autophagic activity of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, knockout of ATG21 did not completely abrogate the PAS localization of the Atg16 complex or the autophagic activity of cells (Meiling-Wesse et al., 2004; Nair et al., 2010; Str\u00f8mhaug et al., 2004), suggesting that there is an unknown mechanism which directs the Atg16 complex to the PAS, in addition to the PI3K complex I-PI3P-Atg21 axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "29e98016-d9f6-4839-a3ac-503f7a0085bc",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C28",
+      "claim": "There is an unknown mechanism which directs the Atg16 complex to the PAS, in addition to the PI3K complex I-PI3P-Atg21 axis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, knockout of ATG21 did not completely abrogate the PAS localization of the Atg16 complex or the autophagic activity of cells (Meiling-Wesse et al., 2004; Nair et al., 2010; Str\u00f8mhaug et al., 2004), suggesting that there is an unknown mechanism which directs the Atg16 complex to the PAS, in addition to the PI3K complex I-PI3P-Atg21 axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on previous experimental observations cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "b245be47-66e8-4a6d-b2cb-6750229b2c74",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C29",
+      "claim": "The PAS localization of Atg5 was lost by deletion of ATG16.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with this model, the PAS localization of Atg5 was lost by deletion of ATG16 (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "4cd15059-6423-486b-ba8e-50bc236a4d94",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C30",
+      "claim": "Atg5 localized to the PAS less efficiently in the absence of Atg21.",
+      "claim_type": "EXPLICIT",
+      "source": "It was also confirmed that Atg5 localized to the PAS less efficiently in the absence of Atg21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "0754c3b3-ea31-49f6-b845-09e790009bfd",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C31",
+      "claim": "Deletion of ATG14 decreased the PAS localization of Atg5.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of ATG14 decreased the PAS localization of Atg5; however, Atg5 still significantly localized to the PAS even without Atg14, to an extent similar to that observed in cells lacking Atg21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "da111e02-cecb-4593-ac5f-5c67e22278ca",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C32",
+      "claim": "Atg5 still significantly localized to the PAS even without Atg14, to an extent similar to that observed in cells lacking Atg21.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of ATG14 decreased the PAS localization of Atg5; however, Atg5 still significantly localized to the PAS even without Atg14, to an extent similar to that observed in cells lacking Atg21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "ddac3e61-a195-4ddb-98c6-21891ca33c87",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C33",
+      "claim": "The frequency of Atg5 localization to the PAS was decreased in the absence of Atg12, although it abnormally accumulated at the PAS.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we noticed that the frequency of Atg5 localization to the PAS was decreased in the absence of Atg12, although it abnormally accumulated at the PAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "1fc5ebb9-9c65-4577-9474-8d407a07e6e4",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C34",
+      "claim": "PAS localization of Atg5 was totally abolished in cells lacking both Atg14 and Atg12.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that PAS localization of Atg5 was totally abolished in cells lacking both Atg14 and Atg12 (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "0ca915bb-e7bf-445e-9c2f-db3448b5308a",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C35",
+      "claim": "Disruption of ATG12 abrogated the residual PAS localization of Atg5 in ATG21 knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of ATG12 also abrogated the residual PAS localization of Atg5 in ATG21 knockout cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "bc91b64c-7cbd-46b9-b649-dfc75caea97e",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C36",
+      "claim": "There exists an uncharacterized, PI3P-independent mechanism that targets the Atg16 complex to the PAS, which likely involves Atg12.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that in addition to the previously described PI3P-dependent pathway, there exists an uncharacterized, PI3P-independent mechanism that targets the Atg16 complex to the PAS, which likely involves Atg12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "eb72f3a1-181d-4014-9859-e43daa9c4a4b",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C37",
+      "claim": "Mass spectrometry of Atg5-FLAG immunoprecipitates identified most components of the Atg1 complex as possible interaction partners of the Atg16 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry of the immunoprecipitates identified a number of proteins as possible interaction partners of the Atg16 complex, and included most components of the Atg1 complex (Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "1faa61bd-f1fc-43e2-8282-65b17d44597a",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C38",
+      "claim": "Atg1, Atg17, and Atg29 could be detected in Atg5-FLAG immunoprecipitates by immunoblotting.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg1, Atg17, and Atg29 could also be detected in Atg5-FLAG immunoprecipitates by immunoblotting (Figure 2A and Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "7d41b1d9-cc51-419d-8d63-fa069e702d10",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C39",
+      "claim": "Coimmunoprecipitation of Atg17 with Atg5-FLAG was largely decreased when ATG12 or ATG16 was deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "When ATG12 or ATG16 was deleted, coimmunoprecipitation of Atg17 with Atg5-FLAG was largely decreased (Figure 2A and Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "caba784f-45d9-454c-aae3-b3bf7c7de1fd",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C40",
+      "claim": "Atg17 was not precipitated with Atg5-FLAG in the absence of Atg10.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that Atg17 was not precipitated with Atg5-FLAG in the absence of Atg10, which is essential for Atg12 conjugation to Atg5 (Mizushima et al., 1998a) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "d3030ffa-5641-440f-a530-9c58cc548560",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C41",
+      "claim": "Atg10 is essential for Atg12 conjugation to Atg5.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that Atg17 was not precipitated with Atg5-FLAG in the absence of Atg10, which is essential for Atg12 conjugation to Atg5 (Mizushima et al., 1998a) (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "23a0fcda-e6d0-48f9-be93-2d5b55c7b653",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C42",
+      "claim": "Immunoprecipitation of FLAG-tagged Atg16 precipitated Atg17, but this was lost by knockout of ATG5 or ATG12.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoprecipitation of FLAG-tagged Atg16 also precipitated Atg17; however, this was lost by knockout of ATG5 or ATG12 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "dedb9502-1bce-4ad6-b63b-ca2620cb61f1",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C43",
+      "claim": "The formation of the Atg16 complex is required for its interaction with the Atg1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the formation of the Atg16 complex is required for its interaction with the Atg1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "6c63dd46-b2b0-4ae3-b42f-e16bda18b428",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C44",
+      "claim": "All the components of the Atg1 complex are important for its interaction with the Atg16 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The results clearly showed that all the components of the Atg1 complex are important for its interaction with the Atg16 complex (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "3ba64bef-0747-45a6-9e3a-ce7ff1397ed5",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C45",
+      "claim": "The F430A mutation in Atg13 reduced Atg17 precipitation with the Atg16 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the F430A mutation in Atg13, which impairs the formation of the Atg1 complex (Yamamoto et al., 2016), reduced Atg17 precipitation with the Atg16 complex (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "4d0ce4ce-ddfa-4725-91b5-98668912a1f2",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C46",
+      "claim": "The F430A mutation in Atg13 impairs the formation of the Atg1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the F430A mutation in Atg13, which impairs the formation of the Atg1 complex (Yamamoto et al., 2016), reduced Atg17 precipitation with the Atg16 complex (Figure 2D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "f91277ec-a4ef-4f54-8a28-c73616db983d",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C47",
+      "claim": "The formation of the Atg1 complex is a prerequisite for its association with the Atg16 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the formation of the Atg1 complex is a prerequisite for its association with the Atg16 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "a5422f0d-e288-42a9-b25b-59425691d1dd",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C48",
+      "claim": "ATG14 deletion did not affect Atg17 precipitation with Atg5-FLAG.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ATG14 deletion did not affect Atg17 precipitation with Atg5-FLAG (Figure 2E), consistent with the idea that this novel intercomplex interaction is involved in the PI3P-independent PAS targeting of the Atg16 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "e55b536b-9620-421e-b3ff-219bfe7e981a",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C49",
+      "claim": "The Atg16 complex interacts with the Atg1 complex depending on cell treatment with rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Atg16 complex interacts with the Atg1 complex depending on cell treatment with rapamycin (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "c3a68a27-9a51-45a1-ba9b-ca1707a29cb4",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C50",
+      "claim": "The interaction between the Atg16 and Atg1 complexes was not considerably decreased by the absence of Atg11.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this result, the interaction was not considerably decreased by the absence of Atg11, which binds to the Atg1 complex but is dispensable for starvation-induced autophagy (Kamada et al., 2000; Kim et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "04fa4e2d-0404-4266-948a-c4259562ff2b",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C51",
+      "claim": "Atg11 binds to the Atg1 complex but is dispensable for starvation-induced autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this result, the interaction was not considerably decreased by the absence of Atg11, which binds to the Atg1 complex but is dispensable for starvation-induced autophagy (Kamada et al., 2000; Kim et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "569755ac-3e40-4661-b8aa-8ba670b4d5e2",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C52",
+      "claim": "Upon nutrient starvation, Atg1, Atg13, and the Atg17-Atg29-Atg31 complex form the Atg1 complex, and multiple copies of the complex further associate with each other, leading to activation of Atg1 kinase via intermolecular autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon nutrient starvation, Atg1, Atg13, and the Atg17-Atg29-Atg31 complex form the Atg1 complex, and multiple copies of the complex further associate with each other, leading to activation of Atg1 kinase via intermolecular autophosphorylation (Yamamoto et al., 2016; Yeh et al., 2011; Yeh et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "1386d862-5590-4454-9a15-6837a8630cfb",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C53",
+      "claim": "The assemblage of the Atg1 complexes serves as a scaffold to recruit downstream Atg proteins for PAS organization.",
+      "claim_type": "EXPLICIT",
+      "source": "This assemblage of the Atg1 complexes serves as a scaffold to recruit downstream Atg proteins for PAS organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge based on previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "3a8ae954-f458-4ccb-9aca-775a775c5fcc",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C54",
+      "claim": "The interaction between the Atg16 complex and the Atg1 complex was lost in the F375A mutant of Atg13.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between the Atg16 complex and the Atg1 complex was lost in the F375A mutant of Atg13 (Figure 2D), which can form the Atg1 complex, but is defective in its higher order assembly (Yamamoto et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "ba70650e-6a0a-44f1-a347-e9b2a43f0451",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C55",
+      "claim": "The F375A mutant of Atg13 can form the Atg1 complex, but is defective in its higher order assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between the Atg16 complex and the Atg1 complex was lost in the F375A mutant of Atg13 (Figure 2D), which can form the Atg1 complex, but is defective in its higher order assembly (Yamamoto et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "c5086175-4545-40df-86e6-0e8589b80db2",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C56",
+      "claim": "The D211A mutation in Atg1, which abolishes its kinase activity, did not affect the interaction between the Atg16 and Atg1 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the D211A mutation in Atg1, which abolishes its kinase activity (Matsuura et al., 1997), did not affect the interaction between the Atg16 and Atg1 complexes (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "08582d42-cc49-4bee-8991-4e388d7f54e4",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C57",
+      "claim": "The D211A mutation in Atg1 abolishes its kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the D211A mutation in Atg1, which abolishes its kinase activity (Matsuura et al., 1997), did not affect the interaction between the Atg16 and Atg1 complexes (Figure 2G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "55ad13b1-0182-47e9-b6e3-b67ec81c9130",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C58",
+      "claim": "The Atg16 complex associates with the Atg1 complex following its supramolecular assembly in a manner independent of Atg1 kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the Atg16 complex associates with the Atg1 complex following its supramolecular assembly in a manner independent of Atg1 kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figures 2D and 2G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "54d7291d-fc41-4b76-9796-3f2c5118577c",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C59",
+      "claim": "Yeast two-hybrid assay suggested that Atg12 could bind Atg17 and Atg31.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast two-hybrid assay suggested that Atg12 could bind Atg17 and Atg31 (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "a595c98b-b2d0-4c02-826c-d6260a402ca8",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C60",
+      "claim": "The Atg12-Atg17 interaction was still observed in atg13\u0394 atg31\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this assay, the Atg12-Atg17 interaction was still observed in atg13\u0394 atg31\u0394 cells (Figure 2\u2014figure supplement 2B), in which Atg17 should not interact with the remaining subunits Atg1 and Atg29.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "ab74bc11-d984-4c46-a395-89cb7940c318",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C61",
+      "claim": "The Atg12-Atg31 interaction was abolished by ATG17 knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the Atg12-Atg31 interaction was abolished by ATG17 knockout, suggesting that Atg12 interacted with Atg31 via Atg17 (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "629ed2da-5676-483b-bce1-5536fb03b190",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C62",
+      "claim": "Atg12 interacted with Atg31 via Atg17.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the Atg12-Atg31 interaction was abolished by ATG17 knockout, suggesting that Atg12 interacted with Atg31 via Atg17 (Figure 2\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "80267e74-8605-4b1b-b7ee-79dd7f91e61c",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C63",
+      "claim": "Immunoprecipitation of Atg12-GFP coprecipitated Atg17 in cells lacking the other four subunits of the Atg1 complex, when both Atg12-GFP and Atg17 were overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, immunoprecipitation of Atg12 C-terminally fused with GFP, which is not associated with Atg5 and Atg16, coprecipitated Atg17 in cells lacking the other four subunits of the Atg1 complex, when both of Atg12-GFP and Atg17 were overexpressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "4b6e8cbc-6295-4ab5-9b65-70d48736fe14",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C64",
+      "claim": "The interaction between Atg17 and Atg12 mediates the association of the two complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the interaction between Atg17 and Atg12 mediates the association of the two complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data from yeast two-hybrid and immunoprecipitation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "9a841670-39b4-4f44-8048-fba47fa4b9bf",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C65",
+      "claim": "A previous study reported that while the ubiquitin-like domain of Atg12 was essential for autophagy, deletion of the N-terminal region caused a partial defect.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study reported that while the ubiquitin-like domain of Atg12 was essential for autophagy, deletion of the N-terminal region caused a partial defect (Hanada and Ohsumi, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "b8dc908c-a7c1-444b-adf5-5a68b6ea29e0",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C66",
+      "claim": "The N-terminal region of Atg12 was not required for Atg12 conjugation to Atg5, the E3 activity of the conjugate, or the interaction of the conjugate with Atg16.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal region of Atg12 was not required for Atg12 conjugation to Atg5, the E3 activity of the conjugate, or the interaction of the conjugate with Atg16 (Hanada and Ohsumi, 2005) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "ebc384ce-8f18-43de-97e8-2d6cbaef6f4a",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C67",
+      "claim": "The Atg1 complex was hardly coimmunoprecipitated with the Atg16 complex that contained Atg12 lacking the N-terminal 56 residues (Atg12\u0394N56).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Atg1 complex was hardly coimmunoprecipitated with the Atg16 complex that contained Atg12 lacking the N-terminal 56 residues (Atg12\u0394N56) (Figure 3A), suggesting that the Atg12 N-terminal region is involved in the interaction of the Atg16 complex with the Atg1 complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "52a9c361-db2f-4640-bf77-f093efe246d6",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C68",
+      "claim": "The Atg12 N-terminal region is involved in the interaction of the Atg16 complex with the Atg1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Atg1 complex was hardly coimmunoprecipitated with the Atg16 complex that contained Atg12 lacking the N-terminal 56 residues (Atg12\u0394N56) (Figure 3A), suggesting that the Atg12 N-terminal region is involved in the interaction of the Atg16 complex with the Atg1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "8d966845-fd38-4462-a3bc-d3d189b0a6ca",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C69",
+      "claim": "Expression of wild-type Atg12 rescued a defect in the PAS localization of Atg5-GFP in atg21\u0394 atg12\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While expression of wild-type Atg12 rescued a defect in the PAS localization of Atg5-GFP in atg21\u0394 atg12\u0394 cells, expression of the Atg12\u0394N56 mutant did not (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "7aa0db69-80e5-4db2-9641-7bfb4b794380",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C70",
+      "claim": "Expression of the Atg12\u0394N56 mutant did not rescue a defect in the PAS localization of Atg5-GFP in atg21\u0394 atg12\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While expression of wild-type Atg12 rescued a defect in the PAS localization of Atg5-GFP in atg21\u0394 atg12\u0394 cells, expression of the Atg12\u0394N56 mutant did not (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "5fa9abdd-372f-4db6-9ec2-f8b7fd85810f",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C71",
+      "claim": "atg12\u0394N56 cells and atg21\u0394 cells were only partially defective in autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous results (Hanada and Ohsumi, 2005; Meiling-Wesse et al., 2004; Str\u00f8mhaug et al., 2004), atg12\u0394N56 cells (atg12\u0394 cells carrying the atg12\u0394N56 plasmid) and atg21\u0394 cells (atg21\u0394 atg12\u0394 cells carrying the ATG12WT plasmid) were only partially defective in autophagy (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "2cc1a89d-175b-4b70-b9d5-4bb95412af3f",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C72",
+      "claim": "When atg12\u0394N56 and atg21\u0394 mutations were combined, the cells showed almost no autophagic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "When these mutations were combined (atg21\u0394 atg12\u0394 cells carrying the atg12\u0394N56 plasmid), the cells showed almost no autophagic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "bcffbea9-0a2c-4c4b-a1cd-99216faa2ea9",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C73",
+      "claim": "The interaction of the Atg16 complex with the Atg1 complex acts to target the Atg16 complex to the PAS.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the interaction of the Atg16 complex with the Atg1 complex indeed acts to target the Atg16 complex to the PAS, and that defects caused by the absence of this interaction can be partly compensated by the PI3P-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "100fde35-3228-4173-864c-44368cbf6e4a",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C74",
+      "claim": "Defects caused by the absence of the Atg12-dependent interaction can be partly compensated by the PI3P-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the interaction of the Atg16 complex with the Atg1 complex indeed acts to target the Atg16 complex to the PAS, and that defects caused by the absence of this interaction can be partly compensated by the PI3P-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "461f018a-9afc-4fc2-b0d1-2b4bd48c5033",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C75",
+      "claim": "If both the Atg12-dependent and PI3P-dependent mechanisms are simultaneously compromised, cells totally lose their ability to form the autophagosome.",
+      "claim_type": "EXPLICIT",
+      "source": "If both of these mechanisms are simultaneously compromized, cells totally lose their ability to form the autophagosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "35f85768-f2df-4531-83b1-0f8a4d29b37e",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C76",
+      "claim": "PI3P-dependent PAS recruitment of the Atg16 complex is important for the production of Atg8-PE.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that PI3P-dependent PAS recruitment of the Atg16 complex is important for the production of Atg8-PE (Meiling-Wesse et al., 2004; Str\u00f8mhaug et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "f0b6d841-d61b-4ba5-812b-5bcc1bbb1540",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C77",
+      "claim": "Atg8-PE production is stimulated upon nitrogen starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg8-PE production is stimulated upon nitrogen starvation (Figure 4A, atg12\u0394/pATG12WT).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "d9a99ff5-0655-4ce7-9f23-174ebcf3a731",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C78",
+      "claim": "ATG21 knockout significantly reduced the level of Atg8-PE, which still gradually increased during nitrogen starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported previously (Meiling-Wesse et al., 2004; Str\u00f8mhaug et al., 2004), ATG21 knockout significantly reduced the level of Atg8-PE, which still gradually increased during nitrogen starvation (atg21\u0394 atg12\u0394/pATG12WT).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "a921db25-5c4f-46f5-8dda-414b5cf853e5",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C79",
+      "claim": "Deletion of the N-terminal region of Atg12 partially decreased Atg8-PE formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that deletion of the N-terminal region of Atg12 also partially decreased Atg8-PE formation (atg12\u0394/patg12\u0394N56).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "05a49c2f-8162-4539-b56f-fdfe125a6940",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C80",
+      "claim": "Starvation-induced Atg8-PE formation was totally abolished in cells lacking both Atg21 and the N-terminal region of Atg12.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, starvation-induced Atg8-PE formation was totally abolished in cells lacking both Atg21 and the N-terminal region of Atg12 (atg21\u0394 atg12\u0394/patg12\u0394N56).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "4cee4448-d669-461b-8f9a-bb2a1e07495f",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C81",
+      "claim": "The residual amount of Atg8-PE in cells lacking both Atg21 and the N-terminal region of Atg12 represents conjugates produced in the vacuolar membrane depending on the Atg16 complex, which is dispersed throughout the cytoplasm, independent of autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the residual amount of Atg8-PE in these mutant cells should represent the conjugates that were produced in the vacuolar membrane depending on the Atg16 complex, which is dispersed throughout the cytoplasm, independent of autophagy (Nakatogawa et al., 2012a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on previous knowledge cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "c9adeec1-bffd-423e-9eb9-eb652ff6c62a",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C82",
+      "claim": "The Atg16 complex recruited by the Atg12-dependent mechanism acts as an E3 enzyme and promotes Atg8 lipidation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that the Atg16 complex recruited by the Atg12-dependent mechanism acts as an E3 enzyme and promotes Atg8 lipidation, as was observed with the PI3P-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "7764e053-a4a6-4915-8d0f-ae16f4852018",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C83",
+      "claim": "Atg17-GFP puncta were decreased by knockout of ATG12.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that Atg17-GFP puncta, which represent PAS scaffold assembly (Yamamoto et al., 2016), were decreased by knockout of ATG12, which disrupts the Atg12-dependent mechanism, whereas the puncta were increased by knockout of ATG14 or ATG21, which impairs the PI3P-dependent mechanism (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "931f57f3-ebd9-430c-b610-261677f69718",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C84",
+      "claim": "Atg17-GFP puncta were increased by knockout of ATG14 or ATG21.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that Atg17-GFP puncta, which represent PAS scaffold assembly (Yamamoto et al., 2016), were decreased by knockout of ATG12, which disrupts the Atg12-dependent mechanism, whereas the puncta were increased by knockout of ATG14 or ATG21, which impairs the PI3P-dependent mechanism (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "8406542b-64a0-4b6f-91cc-cc81ae28d14e",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C85",
+      "claim": "Atg17-GFP puncta represent PAS scaffold assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that Atg17-GFP puncta, which represent PAS scaffold assembly (Yamamoto et al., 2016), were decreased by knockout of ATG12, which disrupts the Atg12-dependent mechanism, whereas the puncta were increased by knockout of ATG14 or ATG21, which impairs the PI3P-dependent mechanism (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "76383d46-0bc5-484f-b594-362f6edff84c",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C86",
+      "claim": "The formation of Atg17-GFP puncta upon rapamycin treatment was defective in the absence of Atg12, Atg5, or Atg16.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated that the formation of Atg17-GFP puncta upon rapamycin treatment was defective in the absence of Atg12, Atg5, or Atg16 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "cb2a73e8-3e57-42cf-b303-bc970c580c09",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C87",
+      "claim": "Atg17-GFP puncta were decreased by deletion of the N-terminal region of Atg12.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, Atg17-GFP puncta were also decreased by deletion of the N-terminal region of Atg12 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "7278b29b-c9c3-4664-9d9d-b619ffe2078b",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C88",
+      "claim": "The Atg16 complex recruited via the Atg12-dependent mechanism facilitates starvation-induced PAS scaffold assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the Atg16 complex recruited via the Atg12-dependent mechanism (i.e., the interaction with the Atg1 complex) facilitates starvation-induced PAS scaffold assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figures 4B and 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "09f4ab91-9079-4440-92d2-d4ed169592ac",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C89",
+      "claim": "Disruption of ATG21 or ATG14 did not totally abolish PAS localization of the Atg16 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, disruption of ATG21 or ATG14 did not totally abolish PAS localization of the Atg16 complex, suggesting the existence of another pathway that targets this complex to the PAS in a PI3P-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge based on previous studies and confirmed by data in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "b4425606-ae60-43fc-9424-492a9729777d",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C90",
+      "claim": "The Atg16 complex is recruited to the PAS through two different pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we discovered that the Atg16 complex also interacts with the Atg1 complex via the N-terminal region of Atg12 to localize to the PAS (Figure 5, Atg12-dependent targeting). Thus, the Atg16 complex is recruited to the PAS through two different pathways.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "236006b3-7864-40a4-94c5-5ab795db64e8",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C91",
+      "claim": "In the absence of both PI3P-dependent and Atg12-dependent pathways, the Atg16 complex hardly localized to the PAS, and autophagy was completely blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Although disrupting either of the pathways caused partial defects, in the absence of both of these pathways, the Atg16 complex hardly localized to the PAS, and autophagy was completely blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1, 3B, and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "511d13bc-10bb-4762-8013-3ef3469aaf16",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C92",
+      "claim": "The PI3P-dependent and Atg12-dependent pathways function in a partially redundant manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggested that these pathways function in a partially redundant manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "41720933-9b4f-4872-a467-a759041d458c",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C93",
+      "claim": "The PI3P-dependent and Atg12-dependent pathways cooperatively act to stimulate Atg8-PE formation in response to starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, we showed that these pathways cooperatively act to stimulate Atg8-PE formation in response to starvation (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "bbb328f2-34c2-468b-adc6-4a2489a91264",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C94",
+      "claim": "The Atg1 complex serves as a scaffold to initiate PAS organization, whereas Atg21 is recruited at a later step, following the production of PI3P by PI3K complex I.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the Atg1 complex serves as a scaffold to initiate PAS organization, whereas Atg21 is recruited at a later step, following the production of PI3P by PI3K complex I (Figure 5), suggesting that there is a functional difference between these pathways.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge and inference based on the temporal order of events.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "46fc409f-d5a6-4ad3-86aa-2c189f69f880",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C95",
+      "claim": "The Atg12-dependent pathway, but not the PI3P-dependent pathway, is involved in PAS scaffold assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that the Atg12-dependent pathway, but not the PI3P-dependent pathway, is involved in PAS scaffold assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "0692f5d7-8c67-41e8-9bc8-88dbbf15c330",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C96",
+      "claim": "The Atg16 complex recruited by the Atg12-dependent pathway has a specific, non-E3 role in the initiation of PAS organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Atg16 complex recruited by the Atg12-dependent pathway has a specific, non-E3 role in the initiation of PAS organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing PAS scaffold assembly function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "d2656634-64aa-4046-941f-440b238864a2",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C97",
+      "claim": "The Atg16 complex recruited through the association of the Atg1 complex likely contributes to Atg8 lipidation at later stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the complementary relationship with the PI3P-dependent pathway, it is likely that the Atg16 complex recruited through the association of the Atg1 complex also contributes to Atg8 lipidation at later stages (Figure 5, dashed arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the complementary nature of the two pathways.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "97ce04ca-bd7a-4471-bd7c-7e90aa9e1f5a",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C98",
+      "claim": "The interaction between the Atg16 complex and the Atg1 complex required both of the complexes to be intact.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between the Atg16 complex and the Atg1 complex required both of the complexes to be intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2A, 2B, and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "0663652c-fda4-4b10-8e2b-a3d6e9403b3f",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C99",
+      "claim": "Higher order assembly of Atg1 complexes was a prerequisite for the interaction with the Atg16 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, higher order assembly of Atg1 complexes was a prerequisite for the interaction (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "692d266c-cd7a-432a-988f-ae2395634774",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C100",
+      "claim": "The Atg16 complex, in which Atg12-Atg5-Atg16 is dimerized by the homodimerization of Atg16, simultaneously binds to two copies of the Atg1 complexes via the N-terminal regions of Atg12.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the Atg16 complex, in which Atg12-Atg5-Atg16 is dimerized by the homodimerization of Atg16 (Fujioka et al., 2010), simultaneously binds to two copies of the Atg1 complexes via the N-terminal regions of Atg12 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the structural properties of the complexes and experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "5227b13a-97d1-4d26-9ee8-4e39bb863e1e",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C101",
+      "claim": "Atg16 homodimerizes.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the Atg16 complex, in which Atg12-Atg5-Atg16 is dimerized by the homodimerization of Atg16 (Fujioka et al., 2010), simultaneously binds to two copies of the Atg1 complexes via the N-terminal regions of Atg12 (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "2de3f571-55cf-4533-b178-dae31ab6615f",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C102",
+      "claim": "The mode of interaction between the Atg16 and Atg1 complexes can crosslink the Atg1 complexes, resulting in the facilitation of supramolecular assembly of Atg1 complexes to form the PAS scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "This mode of interaction can crosslink the Atg1 complexes, resulting in the facilitation of supramolecular assembly of Atg1 complexes to form the PAS scaffold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the proposed model of interaction.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "0f1e1898-45d9-4941-8d5e-6c3b8051f956",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C103",
+      "claim": "The association between the Atg16 and Atg1 complexes requires the N-terminal region of Atg12.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we showed that the association between the Atg16 and Atg1 complexes requires the N-terminal region of Atg12.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "58bdc7a8-85b8-48ce-befd-72848d43bd4f",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C104",
+      "claim": "There is no sequence similarity between the N-terminal regions of yeast and mammalian Atg12.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is no sequence similarity between the N-terminal regions of yeast and mammalian Atg12, a recent study revealed that the Atg16L complex also associates with the ULK1 complex (corresponding to the Atg1 complex) in mammalian cells (Nishimura et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "4fcba314-15b6-483f-986a-e43f803b1b90",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C105",
+      "claim": "The Atg16L complex associates with the ULK1 complex in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is no sequence similarity between the N-terminal regions of yeast and mammalian Atg12, a recent study revealed that the Atg16L complex also associates with the ULK1 complex (corresponding to the Atg1 complex) in mammalian cells (Nishimura et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "446facea-9423-4395-9113-1c2d41955a15",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C106",
+      "claim": "The intercomplex association between Atg16L and ULK1 complexes was mediated by the interaction between Atg16L and FIP200.",
+      "claim_type": "EXPLICIT",
+      "source": "This intercomplex association was mediated by the interaction between Atg16L and FIP200, which is a mammalian counterpart of yeast Atg17, and important for the localization of the Atg16L complex to the isolation membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "854549ff-a1cb-4b76-b6c6-7fc4288e159b",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C107",
+      "claim": "FIP200 is a mammalian counterpart of yeast Atg17.",
+      "claim_type": "EXPLICIT",
+      "source": "This intercomplex association was mediated by the interaction between Atg16L and FIP200, which is a mammalian counterpart of yeast Atg17, and important for the localization of the Atg16L complex to the isolation membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "f470bd5a-0e38-43df-a207-2825e9bb4675",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C108",
+      "claim": "The interaction between Atg16L and FIP200 is important for the localization of the Atg16L complex to the isolation membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This intercomplex association was mediated by the interaction between Atg16L and FIP200, which is a mammalian counterpart of yeast Atg17, and important for the localization of the Atg16L complex to the isolation membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "2b44a6f0-0ee7-47e8-8a3e-e4b82968adf4",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C109",
+      "claim": "The recruitment of the Atg16/Atg16L complex to autophagosome intermediates through association with the Atg1/ULK1 complex is a common process during autophagosome formation in yeast and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although the underlying mechanisms are different, the recruitment of the Atg16/Atg16L complex to autophagosome intermediates through association with the Atg1/ULK1 complex is a common process during autophagosome formation in yeast and mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of yeast and mammalian systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "58f0e706-41f9-4753-8086-001b0a8aac42",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C110",
+      "claim": "It is unclear how the Atg16L-ULK1 association cooperates with the PI3P (WIPI2)-dependent mechanism in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is still unclear how this process cooperates with the PI3P (WIPI2)-dependent mechanism in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "69f1fcfc-008b-4ba5-ae2d-1aaee73527fc",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C111",
+      "claim": "The Atg16L complex may facilitate supramolecular assembly of ULK complexes in the initiation of autophagosome formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Atg16L complex may also facilitate supramolecular assembly of ULK complexes in the initiation of autophagosome formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings in yeast.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "56b552e6-b1f5-4bcf-8269-0da7c5e16ade",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "claim_id": "C112",
+      "claim": "Rapamycin inhibits Tor kinase complex 1 and thereby induces various starvation responses including autophagy even in the presence of nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast cells expressing FLAG-tagged Atg5 (Atg5-FLAG) were treated with rapamycin, which inhibits Tor kinase complex 1 and thereby induces various starvation responses including autophagy even in the presence of nutrients (Noda and Ohsumi, 1998), followed by immunoprecipitation using anti-FLAG antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Atg16 complex interacts with the Atg1 complex via Atg12, and this interaction requires intact Atg16 and Atg1 complexes, higher-order assembly of Atg1 complexes, and is mediated by direct Atg12-Atg17 binding. The interaction is rapamycin-dependent and independent of Atg1 kinase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C64 and C98-C99 provide converging evidence from multiple experimental approaches (mass spectrometry, co-immunoprecipitation, yeast two-hybrid, mutant analysis) demonstrating the Atg16-Atg1 complex interaction. The data consistently show that both complexes must be intact, that higher-order Atg1 assembly is required, and that Atg12 directly binds Atg17 to mediate this interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "16f07341-64a3-4baf-ac6c-85db54b9130a",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The N-terminal region of Atg12 (specifically residues 1-56) is required for the interaction between the Atg16 complex and the Atg1 complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 and C103 are supported by co-immunoprecipitation data (Figure 3A) showing that deletion of the N-terminal 56 residues of Atg12 abolishes interaction with the Atg1 complex. This is consistent with the yeast two-hybrid and overexpression data showing direct Atg12-Atg17 binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "e071478c-4bf6-469f-af5a-1dfab093f3c4",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PAS localization of the Atg16 complex (visualized via Atg5) is abolished when both the PI3P-dependent pathway (via ATG14 or ATG21 deletion) and the Atg12-dependent pathway (via ATG12 deletion or Atg12\u0394N56 mutation) are disrupted, while single pathway disruptions cause partial defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 and C69-C70 are supported by fluorescence microscopy data (Figures 1 and 3B) showing that Atg5-GFP localization to the PAS is completely lost only in double mutants (atg14\u0394 atg12\u0394 or atg21\u0394 atg12\u0394 or atg21\u0394 atg12\u0394N56), while single mutants retain partial localization. The quantitative data and statistical analysis support these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "4eceb9e0-51ab-4283-9947-1884e38a5d58",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cells lacking both the PI3P-dependent and Atg12-dependent mechanisms for Atg16 complex recruitment completely lose PAS localization of the Atg16 complex and show no autophagic activity, while single pathway disruptions cause only partial defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C71-C72, C75, and C91 are supported by ALP assay data (Figure 3C) showing that atg21\u0394 atg12\u0394N56 double mutants have almost no autophagic activity, while single mutants (atg21\u0394 or atg12\u0394N56) retain partial activity. This is consistent with the localization data and demonstrates functional consequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "dc9c4905-b2fc-4ec0-a621-fbcc5b0762fb",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both the PI3P-dependent and Atg12-dependent pathways cooperatively promote Atg8-PE formation during starvation. Disruption of both pathways completely abolishes starvation-induced Atg8-PE formation, while single pathway disruptions cause partial defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80, C82, and C93 are supported by urea-SDS-PAGE analysis (Figure 4A) showing that Atg8-PE levels are significantly reduced in atg21\u0394 or atg12\u0394N56 single mutants and completely abolished in atg21\u0394 atg12\u0394N56 double mutants during nitrogen starvation. The quantitative data with statistical analysis support the cooperative function of both pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "1643aced-c077-45a2-8c0f-44916ac1b959",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Atg12-dependent pathway, but not the PI3P-dependent pathway, is specifically involved in PAS scaffold assembly. Atg17-GFP puncta formation (representing PAS scaffold assembly) is decreased by disruption of the Atg12-dependent mechanism but increased by disruption of the PI3P-dependent mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84, C86-C88, and C95 are supported by fluorescence microscopy data (Figures 1, 4B, 4C) showing that Atg17-GFP puncta are decreased in atg12\u0394, atg5\u0394, atg16\u0394, and atg12\u0394N56 mutants but increased in atg14\u0394 and atg21\u0394 mutants. This demonstrates a specific, non-E3 function for the Atg12-dependent pathway in PAS scaffold assembly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "87765483-4d00-4201-825a-2df0fd3fd6ef",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Atg16 complex is recruited to the PAS through two partially redundant pathways: the PI3P-dependent pathway and the Atg12-dependent pathway. The Atg12-dependent pathway has dual functions: stimulating Atg8 lipidation (E3 activity) and facilitating PAS scaffold assembly (non-E3 activity).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C90, C92, and C96 represent the main conclusions of the study and are supported by the collective evidence from localization, functional, and biochemical assays. The data demonstrate that both pathways contribute to Atg8 lipidation, but only the Atg12-dependent pathway facilitates PAS scaffold assembly, establishing functional differences between the pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "2ae1c07e-e371-4617-a415-84f42a048b8e",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The interaction of the Atg16 complex with the Atg1 complex targets the Atg16 complex to the PAS, and defects caused by absence of this interaction can be partly compensated by the PI3P-dependent mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are inferences supported by the rescue experiments (Figures 3B, 3C) showing that wild-type Atg12 but not Atg12\u0394N56 rescues PAS localization and autophagic activity in atg21\u0394 atg12\u0394 cells. This demonstrates that the Atg12-dependent interaction targets the Atg16 complex to the PAS and that the two pathways can partially compensate for each other.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "9df5f7db-c1ac-49b4-bb91-77e9c92d7acb",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Atg16 complex, which is dimerized via Atg16 homodimerization, simultaneously binds two copies of Atg1 complexes via the N-terminal regions of Atg12, thereby crosslinking Atg1 complexes and facilitating their supramolecular assembly to form the PAS scaffold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100 and C102 are speculative models proposed by the authors based on the structural properties of the complexes and the experimental data. While the model is consistent with the data showing that the Atg16 complex facilitates PAS scaffold assembly, direct evidence for simultaneous binding to two Atg1 complexes or crosslinking is not provided. This remains a plausible but unproven hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "40319e85-ac12-4a04-ad3e-adda05a8f9e5",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Atg16 complex recruited through association with the Atg1 complex likely contributes to Atg8 lipidation at later stages of autophagosome formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C97 is speculation based on the complementary relationship between the two pathways. While the data show that the Atg12-dependent pathway contributes to Atg8 lipidation (C82, C93), the temporal dynamics and whether this occurs at later stages is not directly demonstrated. This is a reasonable inference but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "b74c9bca-5aa3-4e43-a8af-609923b63828",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In mammalian cells, the Atg16L complex associates with the ULK1 complex via Atg16L-FIP200 interaction, which is important for Atg16L complex localization. This represents a conserved process between yeast and mammals, although the molecular mechanisms differ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106, C108-C109 are supported by citations to previous work (Nishimura et al., 2013) and represent established knowledge in the field. The authors correctly note that while the underlying mechanisms differ (Atg12-Atg17 in yeast vs. Atg16L-FIP200 in mammals), the functional principle of Atg16/Atg16L complex recruitment via association with the Atg1/ULK1 complex is conserved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "cafbcc31-6b4f-454b-9d59-8d4736cafd38",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "It is unclear how the Atg16L-ULK1 association cooperates with the PI3P (WIPI2)-dependent mechanism in mammalian cells, but the Atg16L complex may facilitate supramolecular assembly of ULK complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C110-C111 acknowledge gaps in current knowledge and propose speculation about mammalian autophagy based on the yeast findings. C110 correctly identifies an open question in the field, while C111 is speculation without direct experimental support. These represent reasonable hypotheses for future investigation but are not demonstrated in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "598e1282-30c0-49b6-899f-d4da355f2905",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Atg16 complex is recruited to the PAS via the PI3P-dependent pathway involving Atg21 (or WIPI2b in mammals), but knockout of ATG21 does not completely abolish PAS localization, suggesting an additional unknown mechanism exists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C24-C28, C76, and C89 represent established knowledge from prior work and are supported by appropriate citations. The observation that ATG21 knockout does not completely abolish Atg16 complex localization (C27-C28, C89) is confirmed by the data in this study (Figure 1) and motivated the discovery of the Atg12-dependent pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "f9760669-2d1a-4f73-b23e-bd0ea4b17839",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Previous work showed that while the ubiquitin-like domain of Atg12 is essential for autophagy, deletion of the N-terminal region causes only a partial defect. The N-terminal region is not required for Atg12-Atg5 conjugation, E3 activity, or Atg16 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by citations to previous work (Hanada and Ohsumi, 2005) and confirmed by data in Figure 3\u2014figure supplement 1. This established the functional mystery of the Atg12 N-terminal region that this study resolves by showing it mediates interaction with the Atg1 complex.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "764f5a8e-9e9e-488c-8740-6093e874630e",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Autophagy is a conserved cellular process involving formation of autophagosomes that sequester cytoplasmic material for degradation. Core Atg proteins organize the PAS where autophagosome formation initiates, and the Atg12-Atg5-Atg16 complex acts as an E3 enzyme for Atg8-PE conjugation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C23 represent established background knowledge about autophagy and are supported by appropriate citations to review articles and primary literature. These claims provide necessary context for understanding the significance of the novel findings but are not new results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Various established facts about Atg protein functions and properties, including: the Atg1 complex serves as a PAS scaffold; Atg10 is required for Atg12-Atg5 conjugation; specific Atg13 and Atg1 mutations affect complex formation and kinase activity; Atg17-GFP puncta represent PAS scaffold assembly; Atg16 homodimerizes; FIP200 is the mammalian Atg17 counterpart; and rapamycin induces autophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C41, C46, C51-C53, C55, C57, C85, C101, C104, C107, and C112 represent established knowledge from prior work and are supported by appropriate citations. These facts are correctly stated and provide necessary context for interpreting the experimental results, but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "dffd9d13-6418-44fb-81b9-b6034e519ba9",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The residual Atg8-PE in cells lacking both Atg21 and the N-terminal region of Atg12 represents conjugates produced at the vacuolar membrane by dispersed Atg16 complex, independent of autophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is an inference based on previous knowledge (Nakatogawa et al., 2012a) about autophagy-independent Atg8 lipidation at the vacuolar membrane. This interpretation is reasonable and consistent with prior work, explaining the baseline Atg8-PE levels observed in the double mutant (Figure 4A).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    },
+    {
+      "id": "53f29f37-cec3-4ec3-a33d-50dd444fee5b",
+      "content_id": "d9471ae0-89ea-4b0c-9dcb-1c80c84d7fcb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The Atg1 complex serves as a scaffold to initiate PAS organization at an early step, whereas Atg21 is recruited later following PI3P production by PI3K complex I, suggesting functional differences between the two pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is supported by established knowledge about the temporal order of Atg protein recruitment to the PAS and is consistent with the functional data showing that only the Atg12-dependent pathway facilitates PAS scaffold assembly. This temporal distinction helps explain why the two pathways have overlapping but distinct functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:48.492777Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3b60f5ce-dc7d-4f29-8f04-2e591c555ad0",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "bc91b64c-7cbd-46b9-b649-dfc75caea97e",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "eb72f3a1-181d-4014-9859-e43daa9c4a4b",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "1faa61bd-f1fc-43e2-8282-65b17d44597a",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "7d41b1d9-cc51-419d-8d63-fa069e702d10",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "caba784f-45d9-454c-aae3-b3bf7c7de1fd",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "23a0fcda-e6d0-48f9-be93-2d5b55c7b653",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "dedb9502-1bce-4ad6-b63b-ca2620cb61f1",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "6c63dd46-b2b0-4ae3-b42f-e16bda18b428",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "3ba64bef-0747-45a6-9e3a-ce7ff1397ed5",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "f91277ec-a4ef-4f54-8a28-c73616db983d",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "a5422f0d-e288-42a9-b25b-59425691d1dd",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "e55b536b-9620-421e-b3ff-219bfe7e981a",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "c3a68a27-9a51-45a1-ba9b-ca1707a29cb4",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "55ad13b1-0182-47e9-b6e3-b67ec81c9130",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "54d7291d-fc41-4b76-9796-3f2c5118577c",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "a595c98b-b2d0-4c02-826c-d6260a402ca8",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "ab74bc11-d984-4c46-a395-89cb7940c318",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "629ed2da-5676-483b-bce1-5536fb03b190",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "80267e74-8605-4b1b-b7ee-79dd7f91e61c",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "4b6e8cbc-6295-4ab5-9b65-70d48736fe14",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "97ce04ca-bd7a-4471-bd7c-7e90aa9e1f5a",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "0663652c-fda4-4b10-8e2b-a3d6e9403b3f",
+      "result_id": "91ddac51-d2d7-49b3-8c6f-de253b901dd1"
+    },
+    {
+      "claim_id": "ebc384ce-8f18-43de-97e8-2d6cbaef6f4a",
+      "result_id": "16f07341-64a3-4baf-ac6c-85db54b9130a"
+    },
+    {
+      "claim_id": "52a9c361-db2f-4640-bf77-f093efe246d6",
+      "result_id": "16f07341-64a3-4baf-ac6c-85db54b9130a"
+    },
+    {
+      "claim_id": "0f1e1898-45d9-4941-8d5e-6c3b8051f956",
+      "result_id": "16f07341-64a3-4baf-ac6c-85db54b9130a"
+    },
+    {
+      "claim_id": "b245be47-66e8-4a6d-b2cb-6750229b2c74",
+      "result_id": "e071478c-4bf6-469f-af5a-1dfab093f3c4"
+    },
+    {
+      "claim_id": "4cd15059-6423-486b-ba8e-50bc236a4d94",
+      "result_id": "e071478c-4bf6-469f-af5a-1dfab093f3c4"
+    },
+    {
+      "claim_id": "0754c3b3-ea31-49f6-b845-09e790009bfd",
+      "result_id": "e071478c-4bf6-469f-af5a-1dfab093f3c4"
+    },
+    {
+      "claim_id": "da111e02-cecb-4593-ac5f-5c67e22278ca",
+      "result_id": "e071478c-4bf6-469f-af5a-1dfab093f3c4"
+    },
+    {
+      "claim_id": "ddac3e61-a195-4ddb-98c6-21891ca33c87",
+      "result_id": "e071478c-4bf6-469f-af5a-1dfab093f3c4"
+    },
+    {
+      "claim_id": "1fc5ebb9-9c65-4577-9474-8d407a07e6e4",
+      "result_id": "e071478c-4bf6-469f-af5a-1dfab093f3c4"
+    },
+    {
+      "claim_id": "0ca915bb-e7bf-445e-9c2f-db3448b5308a",
+      "result_id": "e071478c-4bf6-469f-af5a-1dfab093f3c4"
+    },
+    {
+      "claim_id": "8d966845-fd38-4462-a3bc-d3d189b0a6ca",
+      "result_id": "e071478c-4bf6-469f-af5a-1dfab093f3c4"
+    },
+    {
+      "claim_id": "7aa0db69-80e5-4db2-9641-7bfb4b794380",
+      "result_id": "e071478c-4bf6-469f-af5a-1dfab093f3c4"
+    },
+    {
+      "claim_id": "8a4a24f9-4d7f-4773-b049-74e86297bb23",
+      "result_id": "4eceb9e0-51ab-4283-9947-1884e38a5d58"
+    },
+    {
+      "claim_id": "d024cdd4-f21f-47a2-ac25-76beb0e6990e",
+      "result_id": "4eceb9e0-51ab-4283-9947-1884e38a5d58"
+    },
+    {
+      "claim_id": "5fa9abdd-372f-4db6-9ec2-f8b7fd85810f",
+      "result_id": "4eceb9e0-51ab-4283-9947-1884e38a5d58"
+    },
+    {
+      "claim_id": "2cc1a89d-175b-4b70-b9d5-4bb95412af3f",
+      "result_id": "4eceb9e0-51ab-4283-9947-1884e38a5d58"
+    },
+    {
+      "claim_id": "461f018a-9afc-4fc2-b0d1-2b4bd48c5033",
+      "result_id": "4eceb9e0-51ab-4283-9947-1884e38a5d58"
+    },
+    {
+      "claim_id": "236006b3-7864-40a4-94c5-5ab795db64e8",
+      "result_id": "4eceb9e0-51ab-4283-9947-1884e38a5d58"
+    },
+    {
+      "claim_id": "f0b6d841-d61b-4ba5-812b-5bcc1bbb1540",
+      "result_id": "dc9c4905-b2fc-4ec0-a621-fbcc5b0762fb"
+    },
+    {
+      "claim_id": "d9a99ff5-0655-4ce7-9f23-174ebcf3a731",
+      "result_id": "dc9c4905-b2fc-4ec0-a621-fbcc5b0762fb"
+    },
+    {
+      "claim_id": "a921db25-5c4f-46f5-8dda-414b5cf853e5",
+      "result_id": "dc9c4905-b2fc-4ec0-a621-fbcc5b0762fb"
+    },
+    {
+      "claim_id": "05a49c2f-8162-4539-b56f-fdfe125a6940",
+      "result_id": "dc9c4905-b2fc-4ec0-a621-fbcc5b0762fb"
+    },
+    {
+      "claim_id": "c9adeec1-bffd-423e-9eb9-eb652ff6c62a",
+      "result_id": "dc9c4905-b2fc-4ec0-a621-fbcc5b0762fb"
+    },
+    {
+      "claim_id": "41720933-9b4f-4872-a467-a759041d458c",
+      "result_id": "dc9c4905-b2fc-4ec0-a621-fbcc5b0762fb"
+    },
+    {
+      "claim_id": "7764e053-a4a6-4915-8d0f-ae16f4852018",
+      "result_id": "1643aced-c077-45a2-8c0f-44916ac1b959"
+    },
+    {
+      "claim_id": "931f57f3-ebd9-430c-b610-261677f69718",
+      "result_id": "1643aced-c077-45a2-8c0f-44916ac1b959"
+    },
+    {
+      "claim_id": "76383d46-0bc5-484f-b594-362f6edff84c",
+      "result_id": "1643aced-c077-45a2-8c0f-44916ac1b959"
+    },
+    {
+      "claim_id": "cb2a73e8-3e57-42cf-b303-bc970c580c09",
+      "result_id": "1643aced-c077-45a2-8c0f-44916ac1b959"
+    },
+    {
+      "claim_id": "7278b29b-c9c3-4664-9d9d-b619ffe2078b",
+      "result_id": "1643aced-c077-45a2-8c0f-44916ac1b959"
+    },
+    {
+      "claim_id": "46fc409f-d5a6-4ad3-86aa-2c189f69f880",
+      "result_id": "1643aced-c077-45a2-8c0f-44916ac1b959"
+    },
+    {
+      "claim_id": "fcca2300-d984-49aa-aba0-5233e3ea1068",
+      "result_id": "87765483-4d00-4201-825a-2df0fd3fd6ef"
+    },
+    {
+      "claim_id": "5e01aae5-81b8-46cf-92c7-cb86a82fc1da",
+      "result_id": "87765483-4d00-4201-825a-2df0fd3fd6ef"
+    },
+    {
+      "claim_id": "b4425606-ae60-43fc-9424-492a9729777d",
+      "result_id": "87765483-4d00-4201-825a-2df0fd3fd6ef"
+    },
+    {
+      "claim_id": "511d13bc-10bb-4762-8013-3ef3469aaf16",
+      "result_id": "87765483-4d00-4201-825a-2df0fd3fd6ef"
+    },
+    {
+      "claim_id": "0692f5d7-8c67-41e8-9bc8-88dbbf15c330",
+      "result_id": "87765483-4d00-4201-825a-2df0fd3fd6ef"
+    },
+    {
+      "claim_id": "bcffbea9-0a2c-4c4b-a1cd-99216faa2ea9",
+      "result_id": "2ae1c07e-e371-4617-a415-84f42a048b8e"
+    },
+    {
+      "claim_id": "100fde35-3228-4173-864c-44368cbf6e4a",
+      "result_id": "2ae1c07e-e371-4617-a415-84f42a048b8e"
+    },
+    {
+      "claim_id": "692d266c-cd7a-432a-988f-ae2395634774",
+      "result_id": "9df5f7db-c1ac-49b4-bb91-77e9c92d7acb"
+    },
+    {
+      "claim_id": "2de3f571-55cf-4533-b178-dae31ab6615f",
+      "result_id": "9df5f7db-c1ac-49b4-bb91-77e9c92d7acb"
+    },
+    {
+      "claim_id": "d2656634-64aa-4046-941f-440b238864a2",
+      "result_id": "40319e85-ac12-4a04-ad3e-adda05a8f9e5"
+    },
+    {
+      "claim_id": "4fcba314-15b6-483f-986a-e43f803b1b90",
+      "result_id": "b74c9bca-5aa3-4e43-a8af-609923b63828"
+    },
+    {
+      "claim_id": "446facea-9423-4395-9113-1c2d41955a15",
+      "result_id": "b74c9bca-5aa3-4e43-a8af-609923b63828"
+    },
+    {
+      "claim_id": "f470bd5a-0e38-43df-a207-2825e9bb4675",
+      "result_id": "b74c9bca-5aa3-4e43-a8af-609923b63828"
+    },
+    {
+      "claim_id": "2b44a6f0-0ee7-47e8-8a3e-e4b82968adf4",
+      "result_id": "b74c9bca-5aa3-4e43-a8af-609923b63828"
+    },
+    {
+      "claim_id": "58f0e706-41f9-4753-8086-001b0a8aac42",
+      "result_id": "cafbcc31-6b4f-454b-9d59-8d4736cafd38"
+    },
+    {
+      "claim_id": "69f1fcfc-008b-4ba5-ae2d-1aaee73527fc",
+      "result_id": "cafbcc31-6b4f-454b-9d59-8d4736cafd38"
+    },
+    {
+      "claim_id": "57316fb6-c4d5-4e4b-9101-e8ebbc3c68b4",
+      "result_id": "598e1282-30c0-49b6-899f-d4da355f2905"
+    },
+    {
+      "claim_id": "8315a9b0-7061-41e7-ae6d-200261110f7a",
+      "result_id": "598e1282-30c0-49b6-899f-d4da355f2905"
+    },
+    {
+      "claim_id": "a4a7be65-9a96-4125-8e3b-fd5462b68380",
+      "result_id": "598e1282-30c0-49b6-899f-d4da355f2905"
+    },
+    {
+      "claim_id": "c4dcd80b-0433-4c47-99b4-ada0ff8b98aa",
+      "result_id": "598e1282-30c0-49b6-899f-d4da355f2905"
+    },
+    {
+      "claim_id": "32996071-fefc-4bad-a683-457013a7159c",
+      "result_id": "598e1282-30c0-49b6-899f-d4da355f2905"
+    },
+    {
+      "claim_id": "3e169dde-30c2-469c-bdb2-d12fa5674c22",
+      "result_id": "598e1282-30c0-49b6-899f-d4da355f2905"
+    },
+    {
+      "claim_id": "29e98016-d9f6-4839-a3ac-503f7a0085bc",
+      "result_id": "598e1282-30c0-49b6-899f-d4da355f2905"
+    },
+    {
+      "claim_id": "35f85768-f2df-4531-83b1-0f8a4d29b37e",
+      "result_id": "598e1282-30c0-49b6-899f-d4da355f2905"
+    },
+    {
+      "claim_id": "09f4ab91-9079-4440-92d2-d4ed169592ac",
+      "result_id": "598e1282-30c0-49b6-899f-d4da355f2905"
+    },
+    {
+      "claim_id": "9a841670-39b4-4f44-8048-fba47fa4b9bf",
+      "result_id": "f9760669-2d1a-4f73-b23e-bd0ea4b17839"
+    },
+    {
+      "claim_id": "b8dc908c-a7c1-444b-adf5-5a68b6ea29e0",
+      "result_id": "f9760669-2d1a-4f73-b23e-bd0ea4b17839"
+    },
+    {
+      "claim_id": "a5bb9def-28bb-4964-907a-612e4d217704",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "ac546801-2678-48e9-9bbc-2af274f30108",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "c259cfe0-7fc4-4c7e-aa9d-d4cc09199455",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "e6f71d44-42c0-46e2-8807-660f977cc114",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "d345ded6-3c7e-44b2-8156-8957f4731b9d",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "12f3e9c6-153d-408f-9116-57b24e5ef1f4",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "a94804e9-2141-42d5-95a6-50a281abb237",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "dd6404c6-33cb-476b-86e4-a6fbe7d0b798",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "23213f47-c031-4ccd-b90b-956ce6ca9cdd",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "09981ca3-ae60-4ff5-a5fa-191d29b26fed",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "15e9ca01-81a0-47e9-a50d-0a8242608067",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "2d0528a6-db36-4f95-ad86-3a63a05b700c",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "2f733b27-be70-4bee-9f6d-8a1bf20358f2",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "6b10b2b3-5cfc-4914-98c4-e004f99d62a9",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "a1ef1b57-2ad8-4e25-aa17-320c7cb88c98",
+      "result_id": "764f5a8e-9e9e-488c-8740-6093e874630e"
+    },
+    {
+      "claim_id": "cffc9e85-f767-4a7a-ac65-462e6a48a310",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "d3030ffa-5641-440f-a530-9c58cc548560",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "4d0ce4ce-ddfa-4725-91b5-98668912a1f2",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "04fa4e2d-0404-4266-948a-c4259562ff2b",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "569755ac-3e40-4661-b8aa-8ba670b4d5e2",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "1386d862-5590-4454-9a15-6837a8630cfb",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "ba70650e-6a0a-44f1-a347-e9b2a43f0451",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "08582d42-cc49-4bee-8991-4e388d7f54e4",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "8406542b-64a0-4b6f-91cc-cc81ae28d14e",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "5227b13a-97d1-4d26-9ee8-4e39bb863e1e",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "58bdc7a8-85b8-48ce-befd-72848d43bd4f",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "854549ff-a1cb-4b76-b6c6-7fc4288e159b",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "56b552e6-b1f5-4bcf-8269-0da7c5e16ade",
+      "result_id": "5edda3b5-ec1d-48d9-91e2-bf2f7a8896b8"
+    },
+    {
+      "claim_id": "4cee4448-d669-461b-8f9a-bb2a1e07495f",
+      "result_id": "dffd9d13-6418-44fb-81b9-b6034e519ba9"
+    },
+    {
+      "claim_id": "bbb328f2-34c2-468b-adc6-4a2489a91264",
+      "result_id": "53f29f37-cec3-4ec3-a33d-50dd444fee5b"
+    }
+  ],
+  "comparisons": []
+}

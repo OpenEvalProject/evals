@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Two rhesus monkeys successfully performed a memory-guided walk-and-reach task with instructed delay in the Reach Cage. Monkey K achieved 77% correct trials (19 sessions) and Monkey L achieved 55% correct trials (10 sessions), with narrow movement time distributions (s.d. \u226476 ms) indicating temporally well-structured behavior. Movement times were significantly longer for far targets requiring walking compared to near targets (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C14, C39-C41 collectively demonstrate successful behavioral training with quantitative performance metrics. The statistical testing (t-tests), specific performance percentages, and temporal precision measurements provide strong evidence for controlled, instructed behavior in unrestrained monkeys. The narrow movement time distributions particularly support the claim of optimized, consistent behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C43",
+      "C44"
+    ],
+    "result": "Video-based motion capture using DeepLabCut revealed highly consistent movement kinematics across trials despite lack of physical restraint. The highest variability was in wrist position during walk-and-reach movements (median 37/46 mm for monkeys K/L), which is small relative to target spacing (130 mm between near targets). Tracking accuracy was high with RMSE of 2.57 pixels (training) and 4.7 pixels (test), and >92% valid data points after outlier rejection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15, C16, C17, C43, C44 provide converging quantitative evidence for low movement variability. The kinematic measurements are well-documented with specific values, cross-validation metrics, and comparison to reference distances. The different behavioral strategies between monkeys (C16, C17) demonstrate the system's ability to capture individual differences while maintaining consistency within subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C60"
+    ],
+    "result": "Wireless recording of 192 broadband channels (30 ksps) from six 32-channel floating microelectrode arrays implanted in M1, PMd, and PRR was successfully achieved during unrestrained walk-and-reach behavior. Data transmission was stable with average loss rate of 3.32% (s.d. 1.7%), and 189 channels on average showed task-responsive activity across sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C20, C46-C49, C60 provide comprehensive technical validation of the wireless recording system. The specific channel counts, data loss rates, anatomical placement details, and proportion of task-responsive channels demonstrate successful implementation. The claim of highest channel count (C50) is stated as authors' knowledge and cannot be independently verified, but the technical achievement itself is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Single and multi-unit activity showed task-related modulation with area-specific patterns. PMd and PRR showed significant decoding accuracy and firing rate modulation during both memory and movement periods for reach and walk-and-reach movements. M1 showed significant modulation only during walk-and-reach movement periods, not during memory periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21-C24 are supported by ANOVA analyses, permutation tests, and example units showing clear task modulation. The differential patterns across brain areas (PMd/PRR vs M1) are statistically validated and consistent across both decoding and firing rate analyses. The convergence of multiple analytical approaches strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C26",
+      "C57"
+    ],
+    "result": "Walk-and-reach targets beyond immediate reach could be decoded from PMd and PRR activity during the memory period (movement planning), but not from M1. This encoding was independent of walking path, as demonstrated by a control experiment with a passage that constrained movement trajectories. This indicates that the frontoparietal network encodes reach goals beyond immediate reach during movement planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C25, C26, C57 form the core neuroscientific finding. The decoding analysis with permutation testing provides statistical support, and the passage control experiment (C25) addresses the critical alternative explanation that decoding reflects walking direction rather than reach goal. The convergence of decoding accuracy and firing rate modulation analyses strengthens the conclusion. However, the interpretation relies on the assumption that the memory period activity reflects planning rather than other cognitive processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors propose that goal-directed behavior may lead to expansion of peripersonal space beyond immediate reach, such that far-located walk-and-reach goals might effectively be within 'near space' and encoded similarly to near-located reach goals in PMd and PRR. This interpretation is supported by prior literature showing peripersonal space can expand with tools and toward reach goals, including the authors' own human study with a similar walk-and-reach task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 are explicitly speculative interpretations (\"might\") offered to explain the far-space encoding findings. While claims C27-C32 provide relevant background from prior literature, the proposed mechanism remains hypothetical. The authors appropriately frame this as a possible explanation rather than a demonstrated result, but no direct evidence for peripersonal space expansion in the monkeys is provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The Reach Cage provides a novel experimental environment enabling systems-level sensorimotor neuroscience with unrestrained monkeys performing spatially and temporally controlled full-body movements. Unlike previous studies with unrestrained monkeys, the Reach Cage allows investigation of instructed, structured goal-directed behavior including movement planning periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C56 are supported by the demonstrated capabilities: controlled task timing, multiple target positions independent of reward location, memory-guided behavior, and simultaneous neural recordings. Claim C33 references a supplementary comparison table. The novelty claim is reasonable given the combination of features, though the comparison to prior work relies on the authors' literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C45"
+    ],
+    "result": "The MaCaQuE system comprises modular MCT units (75 mm diameter, 160 mm length cylinders) containing proximity sensors and RGB LEDs, connected via Ethernet cables to a microcontroller-based interface. The Reach Cage has dimensions of 170\u00d780\u00d785 cm with near targets at 10 cm horizontal/60 cm vertical distance and far targets at 100 cm horizontal distance from starting positions. The protective chamber implant was milled from TECAPEEK to be lightweight (10-14 g) and biocompatible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38, C45 provide detailed technical specifications that are directly stated in the methods. These are factual descriptions of the apparatus design and are well-documented with specific measurements and materials. The technical details are internally consistent and support the experimental implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The 192-channel broadband (30 ksps per channel) wireless recording represents the highest channel count for full broadband intracortical recordings in unrestrained non-human primates to the authors' knowledge. Previous studies achieved 96 channels broadband or higher channel counts with on-headstage spike detection only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 make comparative statements about the field based on authors' knowledge and one citation. While C51 is supported by citation, C50 cannot be independently verified without comprehensive literature review. The technical achievement itself is documented (C3, C19), but the claim of being \"highest\" relies on the authors' survey of the literature which may be incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C61"
+    ],
+    "result": "The study demonstrates relevance for brain-machine interface (BMI) applications by showing that reach goal information can be decoded on a single-trial basis during concurrent locomotion. Prior work showed BMI performance decreases when monkeys perform parallel arm movements, making the stability of reach goal encoding during walking relevant for BMI applications in partially impaired patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by extensive citations to BMI literature. Claim C61 is supported by the successful single-trial decoding analysis (C5, C21). The connection to BMI applications is logical given the demonstrated decoding accuracy, though actual BMI implementation was not tested. The relevance argument is reasonable but somewhat speculative regarding clinical translation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior literature establishes that the frontoparietal reach network (posterior parietal cortex, premotor cortex, motor cortex) has been extensively studied for various aspects of reaching. Neuropsychological and neurophysiological evidence suggests these areas may encode near and far space differently, with visuospatial neglect showing space-specific deficits and bimodal neurons having receptive fields covering space near the body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are background claims supported by extensive citations to prior literature. These establish the scientific context for the current study. The claims are appropriately attributed to cited sources and provide relevant background for understanding the significance of the far-space encoding findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C62"
+    ],
+    "result": "DeepLabCut provides excellent tracking across multiple species including monkeys, and the MaCaQuE system was successfully used in a human study by the same authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C62 are supported by citations to published work (DeepLabCut papers and authors' own human study). These claims establish the broader applicability and validation of the methods used, though they are secondary to the main findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "All experimental procedures were approved by the responsible German regional government office under specified permit numbers and comply with German and European regulations for animal research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is a factual statement about regulatory approval that is directly stated in the ethics section. This is standard reporting for animal research and is assumed to be accurate as stated.",
+    "result_type": "MINOR"
+  }
+]

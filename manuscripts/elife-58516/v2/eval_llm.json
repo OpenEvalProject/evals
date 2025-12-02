@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors used large-scale multi-electrode recordings from macaque retina to characterize complete populations of the four major RGC types (ON/OFF parasol and ON/OFF midget cells) using spike-triggered average analysis and clustering of response properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C75-C82 collectively describe well-established methodology supported by multiple citations to prior work. The experimental procedures, cell type identification, and mosaic organization are clearly documented and consistent with known retinal anatomy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C79",
+      "C83"
+    ],
+    "result": "Natural images from ImageNet were displayed for 100 ms separated by 400 ms gray periods, producing strong initial responses that returned to baseline before the next image. Population responses were quantified as spike counts in a 150 ms window optimized for reconstruction performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C79, and C83 describe the stimulus protocol and response quantification with clear methodological justification. The 150 ms window was explicitly optimized for performance (referenced to Figure 7E), providing empirical support for this choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Linear reconstruction from ON and OFF parasol cells achieved average correlation of 0.76\u00b10.12 across 2250 images from 15 recordings, with high consistency across repeated presentations (SD=0.014) and across different recordings (SD=0.039, \u03c1=0.90\u00b10.06 for reconstructed images). Performance variation correlated with RF size (\u03c1=-0.7), indicating that spatial resolution rather than response variability primarily determined reconstruction quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 present quantitative reconstruction performance with appropriate statistical measures and sample sizes. The inference that spatial resolution drives performance (C14) is well-supported by the correlation with RF size (C13) and consistency across recordings despite response differences (C11-C12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Reconstructed images were more similar to Gaussian-smoothed versions of the original images (\u03c1=0.91\u00b10.06) than to the originals (\u03c1=0.78\u00b10.11), with similar residuals (\u03c1=0.83\u00b10.09), indicating that reconstruction and smoothing captured similar spatial features limited by RGC density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 provide quantitative comparisons with statistical significance (p<0.001) across a large sample (n=2250 images from 15 recordings). The inference about captured features is reasonable given the similarity of residuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Spike latency as a response measure produced less accurate reconstructions than spike counts overall (\u0394\u03c1=-0.10\u00b10.12 for parasol cells, -0.16\u00b10.19 for midget cells, both p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 presents a clear quantitative comparison with statistical significance across large samples (4500 and 3300 images). The result is definitive despite some exceptions noted in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Single-cell reconstruction filters were much broader than RFs (4\u00d7 wider on average), but progressively narrowed as neighboring same-type cells were included, converging to RF-like filters (\u03c1=0.78\u00b10.10 with white noise RFs) when complete populations were used. This can be explained mathematically: single-cell filters are proportional to natural image STAs, while population filters are linear mixtures weighted by correlated activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 present a coherent progression from observation (C18-C20) to mathematical explanation (C21-C23) to validation (C24). The quantitative measurements are well-documented and the mathematical reasoning is sound, though the explanation relies on linear assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Reconstruction filters exhibited horizontal and vertical structure reflecting natural scene statistics and provided more uniform coverage (0.78\u00b10.03) than RFs (0.62\u00b10.06, p<0.001). The filters were not simply scaled RFs but were distorted to fill mosaic gaps, as evidenced by the fact that uniformly scaled RFs would reduce coverage (0.57\u00b10.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 present quantitative coverage analysis with statistical significance across 12 recordings. The inference about gap-filling (C29) is well-supported by the comparison with scaled RFs (C28), which provides a clear control condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Using RFs instead of reconstruction filters reduced performance by 24% (\u0394\u03c1=-0.12\u00b10.09, p<0.001), primarily at low spatial frequencies. The resulting images were less smooth and exhibited mosaic-like artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 provide quantitative performance comparison with statistical significance across 4500 images from 15 recordings, with both quantitative (C30) and qualitative (C31) support from Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "For parasol cells, the spatial structure of reconstruction filters was primarily shaped by same-type neighbors and largely unaffected by other cell types. Including same-type cells substantially reduced filter spatial extent, while including midget cells or opposite-polarity cells had minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 present a systematic analysis of how different cell type combinations affect filter properties, with clear observations (C32-C35) leading to a well-supported summary conclusion (C36). The results are consistent with known correlation structures (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Unlike parasol cells, midget cell filters were significantly affected by same-polarity parasol cells, likely because parasol cells had much stronger responses to natural images. This indicates that interpreting midget cell signals depends somewhat on parasol cell signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 present an asymmetry in cell type interactions with a plausible mechanistic explanation (C38) supported by citations and response magnitude observations. The inference (C39) follows logically from the filter analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Both ON and OFF parasol cells were necessary to reconstruct the full range of image contrasts. Reconstruction with both types (\u03c1=0.76\u00b10.12) outperformed using only ON (\u03c1=0.64\u00b10.16) or OFF (\u03c1=0.67\u00b10.14) cells (all p<0.001). ON cells failed to capture dark regions while OFF cells failed to capture light regions, with only a narrow middle range effectively encoded by both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 present comprehensive quantitative comparisons across 2250 images from 15 recordings with statistical significance. The complementary encoding of contrast ranges (C41-C42) provides mechanistic insight consistent with known RGC nonlinearities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Reconstruction using both parasol and midget cells (\u03c1=0.81\u00b10.10) was more accurate than either alone (parasol: \u03c1=0.77\u00b10.12, midget: \u03c1=0.73\u00b10.13, all p<0.001). Midget cells provided more high-frequency structure but parasol cells had 50% higher signal-to-noise. Parasol cells reached 95% performance faster (80\u00b120 ms) than midget cells (116\u00b119 ms), indicating different temporal contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 present systematic comparisons across 1050 images from seven recordings with clear statistical support. The temporal analysis (C47) reveals distinct functional roles, though the inference about spatiotemporal reconstruction (C48) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In high-fidelity conditions (150 ms or fifteen 10 ms bins), shuffling to remove noise correlations had very small detrimental effects on reconstruction (\u0394\u03c1=-0.0004\u00b10.0017 and -0.0008\u00b10.0019, both p<0.001). Shuffling time bins had larger effects (\u0394\u03c1=-0.02\u00b10.01), indicating temporal autocorrelation is more important than noise correlations across cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 present careful analysis of noise correlations with appropriate controls across 3 recordings with 27 repeats. The comparison with temporal shuffling (C51) provides important context, though the sample size is limited to 3 recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In low-fidelity conditions (one 10 ms window), shuffling produced small but consistent increases in reconstruction performance (\u0394\u03c1=0.0071\u00b10.0076, p<0.001), suggesting noise correlations can partially obscure image structure when signal is limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 present analysis of a low-fidelity condition with quantitative results and statistical significance. The inference (C55) is reasonable given the contrast with high-fidelity conditions, though the effect size is small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Logarithmic transformation of responses made the relationship to pixel values more linear (\u0394 RMSE=-1.9\u00b11.5) and slightly improved reconstruction from single ON or OFF parasol cells (\u0394\u03c1=0.013\u00b10.051 and 0.015\u00b10.035, both p<0.001), but not when both types were combined (\u0394\u03c1=-0.0017\u00b10.032). Using raw responses from both types was more effective than transformed responses from either alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 present systematic testing of nonlinear transformation across 15 recordings with 300 images each. The results show statistically significant but small effects, with clear interpretation that ON and OFF cells together provide approximately linear intensity representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Including interaction terms between neighboring cells produced small increases in reconstruction accuracy (\u0394\u03c1=0.0093\u00b10.023, p<0.001), primarily from ON-OFF pairs (\u0394\u03c1=0.0089\u00b10.019). The ON-OFF interaction filters had oriented structure orthogonal to the line between RF centers, suggesting they capture edges through joint activation of overlapping ON and OFF cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 present analysis of nonlinear interactions across 3 recordings with 300 images each, with statistical significance. The oriented filter structure (C62) is well-documented in figures, though the edge detection interpretation is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Simple linear-nonlinear models captured RGC responses with reasonable accuracy (\u03c1=0.76\u00b10.13 for ON, 0.84\u00b10.09 for OFF parasol cells) and produced similar reconstruction filters (\u03c1=0.84\u00b10.09), reconstructed images (\u03c1=0.93\u00b10.04), and performance (simulated: \u03c1=0.79\u00b10.11, recorded: \u03c1=0.78\u00b10.11). The models replicated oriented ON-OFF interaction filters, but only when response rectification was included, indicating nonlinear encoding is necessary to explain these features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 present comprehensive comparison of simulated and recorded data across 15 recordings with multiple validation metrics. The conclusion about nonlinear encoding (C70) is well-supported by the comparison with purely linear models (C69), though the models are simplified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Spatiotemporal reconstruction filters from dynamic movies were highly correlated with static image filters (\u03c1=0.87\u00b10.07) and approximately space-time separable (explained variance=0.85\u00b10.13), suggesting spatial features of the visual message extend to natural vision. Reconstructed movie frames were similar to static reconstructions (\u03c1=0.72\u00b10.19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 present spatiotemporal analysis across 3 recordings with quantitative validation. The high correlation (C71) and separability (C72) support the inference about natural vision (C73), though the analysis is limited in scope compared to the static image work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Reconstruction performance with half the training data was 95-98% of full performance, and regularization methods (L2-penalty, singular value cutoff) did not improve performance. The ratio of samples to parameters was at least 20:1 in all cases, providing sufficient data for fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 address methodological concerns about overfitting with clear empirical evidence (C84, Figure 12) and negative results for regularization (C85). The sample-to-parameter ratio justification (C86) is appropriate for linear regression.",
+    "result_type": "MINOR"
+  }
+]

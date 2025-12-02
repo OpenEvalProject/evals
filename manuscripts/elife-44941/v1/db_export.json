@@ -1,0 +1,1568 @@
+{
+  "submission": {
+    "id": "8c91060a-8f31-42ac-9ac0-969d6dd55c27",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T13:55:32.074966Z",
+    "updated_at": "2025-12-02T13:55:32.074966Z"
+  },
+  "content": [
+    {
+      "id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "submission_id": "8c91060a-8f31-42ac-9ac0-969d6dd55c27",
+      "content_type": "manuscript",
+      "content_text": "# Linking glycemic dysregulation in diabetes to symptoms, comorbidities, and genetics through EHR data mining\n\n## Authors\n\n- Isa Kristina Kirk<sup>1</sup>\n- Christian Simon<sup>1</sup>\n- Karina Banasik<sup>1</sup>\n- Peter Christoffer Holm<sup>1</sup>\n- Amalie Dahl Haue<sup>1</sup>\n- Peter Bj\u00f8dstrup Jensen<sup>1</sup>\n- Lars Juhl Jensen<sup>1</sup>\n- Cristina Leal Rodr\u00edguez<sup>1</sup>\n- Mette Krogh Pedersen<sup>1</sup>\n- Robert Eriksson<sup>1</sup>\n- Henrik Ullits Andersen<sup>3</sup>\n- Thomas Almdal<sup>3</sup>\n- Jette Bork-Jensen<sup>5</sup>\n- Niels Grarup<sup>5</sup>\n- Knut Borch-Johnsen<sup>6</sup>\n- Oluf Pedersen<sup>3</sup>\n- Flemming Pociot<sup>3</sup>\n- Torben Hansen<sup>3</sup>\n- Regine Bergholdt<sup>3</sup>\n- Peter Rossing<sup>3</sup> \u2020\n- S\u00f8ren Brunak<sup>1</sup> ([ORCID: 0000-0003-0316-5866](https://orcid.org/0000-0003-0316-5866)) \u2020\n\n### Affiliations\n\n1. Novo Nordisk Foundation Center for Protein Research University of Copenhagen Copenhagen Denmark\n2. Odense Patient Data Explorative Network (OPEN) Odense University Hospital Odense Denmark\n3. Steno Diabetes Center Copenhagen Gentofte Denmark\n4. Department of Endocrinology Rigshospitalet Copenhagen Denmark\n5. Novo Nordisk Foundation Center for Basic Metabolic Research University of Copenhagen Copenhagen Denmark\n6. Holb\u00e6k Hospital Holb\u00e6k Denmark\n7. Department of Clinical Medicine Herlev-Gentofte Hospital Herlev Denmark\n8. Department of Clinical Medicine University of Copenhagen Copenhagen Denmark\n9. Center for Biological Sequence Analysis, Department of Bio and Health Informatics Technical University of Denmark Lyngby Denmark\n\n\u2020 Corresponding author\n\n## Abstract\n\nDiabetes is a diverse and complex disease, with considerable variation in phenotypic manifestation and severity. This variation hampers the study of etiological differences and reduces the statistical power of analyses of associations to genetics, treatment outcomes, and complications. We address these issues through deep, fine-grained phenotypic stratification of a diabetes cohort. Text mining the electronic health records of 14,017 patients, we matched two controlled vocabularies (ICD-10 and a custom vocabulary developed at the clinical center Steno Diabetes Center Copenhagen) to clinical narratives spanning a 19 year period. The two matched vocabularies comprise over 20,000 medical terms describing symptoms, other diagnoses, and lifestyle factors. The cohort is genetically homogeneous (Caucasian diabetes patients from Denmark) so the resulting stratification is not driven by ethnic differences, but rather by inherently dissimilar progression patterns and lifestyle related risk factors. Using unsupervised Markov clustering, we defined 71 clusters of at least 50 individuals within the diabetes spectrum. The clusters display both distinct and shared longitudinal glycemic dysregulation patterns, temporal co-occurrences of comorbidities, and associations to single nucleotide polymorphisms in or near genes relevant for diabetes comorbidities.\n\n## Introduction\n\nElectronic Health Records (EHRs) contain patient characteristics from different data layers including text narratives, assigned diagnosis codes, biochemical values, and prescription data. These data types display a high degree of complementarity, providing an excellent basis for deep phenotyping and patient stratification. Recent studies have shown how structured data derived from EHRs can be used to assess phenotypic variability of different disease areas (Li et al., 2015; Dahlem et al., 2015; Doshi-Velez et al., 2014; Kho et al., 2011; Kho et al., 2012). While the use of structured EHR data in many instances resembles traditional registry- or biobank-based research, the inclusion of unstructured data such as clinical narratives allows for the definition of even more fine-grained phenotypes, which could lead to novel subgroup stratifications (Li et al., 2015; Roque et al., 2011; Miotto et al., 2016).\n\nA vast amount of information on symptoms, lifestyle, complications, and comorbidities is available from clinical narratives in unstructured EHR data. Text mining applying natural language processing (NLP) algorithms is one strategy, but simpler approaches have also been shown to be valuable in the context of clinical text, for reviews see Jensen et al.\u00a0(2012)\u00a0and Denny (2012). These methods work across language barriers and have been successfully implemented in for\u00a0example adverse drug reaction detection (Warrer et al., 2012), subgrouping of chronic obstructive pulmonary disease (Fu et al., 2015), cancer\u00a0subgrouping (Chen et al., 2015), and classification of epileptic children (Pereira et al., 2013). Such studies show the possibilities of using and integrating different parts of EHRs for matching phenotypically similar subgroups to biomarker data, which is key to improved treatment and characterizing etiological differences.\n\nSeveral large initiatives have been established for utilizing EHRs, including the Electronic Medical Records and Genomics (eMERGE) consortium of DNA biorepositories that links genetic data with electronic medical records (McCarty et al., 2011; Gottesman et al., 2013), and EMR-driven nonnegative restricted Boltzmann machines (eNRBM) which use unsupervised learning for analyzing EHRs (Tran et al., 2015). Furthermore, other studies have used general approaches for finding direct and inverse comorbidities (Doshi-Velez et al., 2014; Roque et al., 2011; Gligorijevic et al., 2016).\n\nDiabetes Mellitus (DM) is a difficult disease to stratify (American Diabetes Association, 2017). DM covers etiologically different metabolic disorders that exhibit the same phenotype, hyperglycemia, due to either insufficient insulin production relative to insulin demand or insulin resistance. Although DM is classified into different major subtypes, it has\u00a0been\u00a0hypothesized to represent a disease continuum rather than strict distinct disease subtypes (American Diabetes Association, 2017; Flannick et al., 2016). One recent data-driven study used five subgroups of adult-onset diabetes and clustered six parameters from the structured data of the EHR (Ahlqvist et al., 2018). DM is a complex disorder associated with several comorbidities and organ complications. These can be classified as macrovascular complications that\u00a0is cardiovascular disease, and microvascular complications resulting in eye, kidney, and nerve damage. Cardiovascular complications alone are responsible for 50\u201380% of all-cause mortality in diabetes patients (Laakso, 2001). The severity of complications is affected by glycemic dysregulation, that\u00a0is increased or fluctuating blood glucose levels (Stratton et al., 2000; UK Prospective Diabetes Study Group, 1998a; UK Prospective Diabetes Study Group, 1998b; Nathan et al., 1993), and successful reduction and prevention of diabetic complications have been observed when the glycemic dysregulation is reduced or removed (Stratton et al., 2000; UK Prospective Diabetes Study Group, 1998a). Therefore,\u00a0risk factors for glycemic dysregulation are crucial to diabetes progression (Ahlqvist et al., 2015). Known risk factors for complications include age, diabetes duration, polypharmacy, comorbidities (Juarez et al., 2012), increased levels of circulating triglyceride and LDL-cholesterol, and lower levels of HDL-cholesterol (Saudek et al., 2006; Giannini et al., 2011; Bitzur et al., 2009). Finding new risk factors that can help classify poorly regulated versus well-regulated diabetes, such as other biochemical variables or genetic variants, could improve treatment and reduce diabetic complications.\n\nIn this study, we utilized the unstructured data of EHRs and performed a deep phenotypic characterization of a Danish diabetes cohort of 14,017 individuals, aged 18 to 101 at the end of the study, using vocabularies comprising both diagnosis codes and \u2018exposome\u2019 related terms. We used text-mined and assigned diagnosis codes to stratify the cohort and described\u00a0it using both physiological and genetic variation data. The unstructured EHR data enabled us to classify patients based on their level of glycemic dysregulation and to identify potential biochemical and genetic markers associated with dysglycemia.\n\n## Results\n\n### Text mining the EHR corpus\n\nThe general aim of the text mining effort was to obtain a richer phenotypic characterization of each patient. Initially, each patient had in 4.9 assigned codes\u00a0on\u00a0average. Applying text mining with two vocabularies (ICD-10 and SDC-custom) resulted in a 4-fold increase to 18.6 codes per patient. Moreover, the distribution of codes across ICD-10 chapters changed considerably when adding the text-mined codes, with chapters I, VII, XVIII and XIX showing the largest increases (6, 15, 25 and 22-fold increase, respectively) (Figure 1). This illustrates the difference between the assigned diagnosis codes from the structured data and the much more symptom-rich codes detected by text mining.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig1-v1.jpg)\n\n**Figure 1.:** (A) Percentage of diagnosis codes belonging to the different ICD-10 chapters and the relative increase in diagnosis codes from the different chapters when combining the text-mined and assigned codes.\u00a0(B) Age distributions of text-mined and assigned ICD-10 diagnosis codes from the SDCC corpus divided into the 21 ICD-10 chapters.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Number of unique patients who have had a given biochemical test.\u00a0Shows that the majority of biochemical tests were performed on only a few individuals. The red lines mark the 25, 50, and 75% of individuals in the cohort: 26, 41, 64, and 356 biochemical tests were taken in 75%, 50%, 25%, and less than 25% of the cohort, respectively.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Bar plots of unique individuals who have had the test taken (grey bars) and the number of times each individual have had the test taken (red outline bars).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Linear Discriminant Analysis (LDA) was performed on the biochemical tests for the 71 clusters with at least 50 individuals.\u00a0The linear discriminants (LD) 1 and 2 (A) and 1 and 3 (B) for the LDA, are shown using the biochemical test identifiers. Identifiers in blue contributes most to the variance among clusters for LD1, purple identifiers contribute most to the variance from LD2 or LD3, and green colored identifiers are common across LD1 and LD2 or LD1 and LD3.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The three identifiers contributing most to the variance in the LDA (NPU04998, NPU18004, and SDCNOTAT_BTSys) were removed, and a new LDA analysis was performed. A and B display the relationship between LD 1, 2, and 3. Blue colored identifiers contribute the most to the variance between clusters for LD1, purple colored contribute the most to the variance for LD2 and 3, and green colored identifiers are the ones common among LD1 and 2, or LD2 and LD3.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** The vertical line corresponds to the HbA1c threshold used when defining dysregulation.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** The groups are based on numbers of parameters of glycemic dysregulation. A MANOVA test was performed to detect if there were any differences in means among the groups, for each biochemical test (Bonferroni adj. p-value<=0.01). These groups are marked with an asterisk (*). Subsequently a Kolmogorov-Smirnov test was applied to discover whether the distribution of mean biochemical values for each group was significantly higher or lower than the other groups (Bonferroni adj. p-value<=0.01). Blue indicates mean distributions that are significantly higher than the other groups, and red indicates significantly lower distributions. They grey and less clear color indicates that the distribution within this group was not significantly different from the other groups. B\u00a0=\u00a0blood, p=Plasma, S\u00a0=\u00a0serum, U\u00a0=\u00a0urine.\n\n### Comorbidity clustering based on text-mined and assigned diagnosis codes\n\nFor each patient, the assigned and text-mined ICD-10 codes were combined to create a patient-specific diagnosis-vector where the primary diabetes type (E10 or E11) was not included. Contrary to cancer for example, where the ICD-10 diagnoses are quite reliable and highly detailed, the primary codes in a multi-organ disease like diabetes are used in a fuzzier way, as the knowledge on robust diabetes subtypes and their characteristics in the context of comorbidities is quite limited. We do therefore not want the clustering to be driven by the broad, less etiology-relevant primary codes from the endocrinology chapter, but rather by more objectively observed symptoms, other diseases and lifestyle features. Following code-abundance normalization and BM-25 correction the vectors were clustered using MCL producing 172 clusters (mean\u00a0=\u00a065 patients, min\u00a0=\u00a011, max\u00a0=\u00a0979, median\u00a0=\u00a040), in which 11,208 patients (80.47%) were included Figure 2A. The remaining 2720 patients (19.53%) were in clusters with ten or less patients and were therefore omitted from subsequent analyses.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig2-v1.jpg)\n\n**Figure 2.:** The clustering was created with diagnosis vectors of 13,928 patients (with text in the record) comprising both text-mined and assigned ICD-10 codes.\u00a0A total of 172 clusters were created, where 11,208 patients (80.47%) were captured in the clustering (clusters with five or less patients were\u00a0discarded for statistical reasons). (A) Each node represents a patient within the corpus colored by the association to one of the 172 unique clusters. (B) The 71 clusters with at least 50 patients colored with the same palette as in (A).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Density diagram of days an individual has been connected to Steno Diabetes Center Copenhagen (SDCC) divided by each cluster.\u00a0The black line indicates the mean of SDCC connection time for the entire cohort. Some clusters for\u00a0example Cluster1, show two peaks indicating that there are at least two groups of individuals in a cluster; one connected to SDCC more than the average cohort, and one connected less.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Density diagram of days an individual has been connected to Steno Diabetes Center Copenhagen (SDCC) divided by each cluster.\u00a0The black line indicates the mean of SDCC connection time for the entire cohort. Some clusters for\u00a0example Cluster1, show two peaks indicating that there are at least two groups of individuals in a cluster; one connected to SDCC more than the average cohort, and one connected less.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Density diagram of days an individual has been connected to Steno Diabetes Center Copenhagen (SDCC) divided by each cluster.\u00a0The black line indicates the mean of SDCC connection time for the entire cohort. Some clusters for\u00a0example Cluster1, show two peaks indicating that there are at least two groups of individuals in a cluster; one connected to SDCC more than the average cohort, and one connected less.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The diabetes duration distribution for individuals in each cluster. Each bar corresponds to a bin for a given interval of the diabetes duration. The height of the bins is the percentage of individuals in the cluster being in that diabetes age bin. The diabetes duration is calculated as the difference in years between diabetes onset and the date for the latest SDCC data entry.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** To assess the robustness of the clustering, various diluted (points in blue) and shuffled realizations (points in red) of the similarity network were used as input for the MCL algorithm, and the resulting clustering\u2019s were compared to the reference clustering using the Variation of Information (VI) measure.\u00a0The two horizontal lines show the value that the VI would take if we were to randomly assign 10% and 20% of the vertices to different random clusters, respectively.\n\nEven though codes for the primary diabetes type were not part of the diagnosis vectors, specific clusters were significantly enriched for T1D patients (cluster 1: N\u00a0=\u00a0506, adj. p-value=9.3e-51 and cluster 9: N\u00a0=\u00a0101 adj. p-value=1.2e-10). Other clusters had significantly more T2D patients than expected (cluster 3: N\u00a0=\u00a0233, adj. p-value=9.1e-10, cluster 5: N\u00a0=\u00a0170, adj. p-value=3.8e-13 and cluster 6, N\u00a0=\u00a0158 adj. p-value=8.4e-17). In addition, we observed a cluster significantly enriched with the ICD-10 term E13: other diabetes (cluster 25, N\u00a0=\u00a093, adj. p-value=1.8e-142), which includes diabetes due to genetic defects, post-pancreatectomy diabetes and post-procedural diabetes. Several other clusters had a mix of T1D and T2D patients according to the assigned codes. Further characteristics of the laboratory data and prescription data as well as the clusters regarding sex, age, observational time, years with diabetes etc. can be found in Supplementary files 1\u20133 and in Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2, Figure 1\u2014figure supplement 3, Figure 1\u2014figure supplement 4, Figure 2\u2014figure supplement 1, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3, Figure 2\u2014figure supplement 4. The robustness of the clustering was found to be high (see description in Materials\u00a0and\u00a0methods and Figure 2\u2014figure supplement 5). To maintain power in subsequent analyses we focused on clusters with at least 50 patients (71 clusters comprising 8652 patients, Figure 2B).\n\n### Enriched comorbidity and symptom patterns in diabetes patient clusters\n\nThe 71 clusters (Figure 2B) were grouped by hierarchical clustering, using distances obtained from cluster specific symptoms from the ICD-10 chapter XVIII (level 1). Six main groups and an outlier (cluster 70) were found containing 5, 8, 21, 11, 7 and 18 of the original clusters, respectively. The symptom groups are illustrated by the branch colors in Figure 3. The nodes represent the 71 clusters each depicted as a pie chart displaying the comorbidities and symptoms that are significantly enriched (adj. p-value\u22640.05), see Supplementary file 4 for details on the enrichment and p-values.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig3-v1.jpg)\n\n**Figure 3.:** The comorbidities present in a minimum of 10 patients and significantly enriched (adj. p-value<=0.05) in each cluster are shown in the pie charts. The number of significant codes ranges from 1 to 10. Each color corresponds to an ICD-10 code chapter as listed in the legend of Figure 1. Six main groups and an outlier (cluster 70) resulted, and the colors of the dendrogram branches indicate to which hierarchical groups the clusters belong. The size of the pie charts represents the average diabetes duration (years with diabetes) divided into six bins. The 21 clusters where at least 50% of the patients have three or more HbA1c severity parameters are marked with a red line surrounding the pie chart.\n\nThe 71 clusters were defined based on the associated comorbidities, excluding DM without complications, and from the pie charts we observed that distinct diagnoses do indeed characterize the clusters. For example, ICD-10 code N40: Benign prostatic hyperplasia for cluster 56, L40: Psoriasis for cluster 16, F20: Schizophrenia for cluster 47, K29: Functional intestinal disorders for cluster 17, and Z94: Transplanted organ and tissue status for cluster 42. Using Fisher\u2019s exact test, we found that: Symptoms related to skin and subcutaneous tissue (adj. p-value<0.001) characterized symptom group five and Symptoms related to digestive system and abdomen; cognition, perception, emotional state and behavior; and general symptoms and signs (adj. p-value<0.001 for all) characterized symptom group 3. These results correspond well to the enriched codes observed in Figure 3, as was the case for the other enriched codes across the 71 clusters within the six symptom groups.\n\n### Genomic characterization by SNP association of phenotypically determined clusters\n\nWe evaluated the 71 clusters in the six symptom groups, plus the outlier cluster, for SNPs that could characterize the different groups (details on the genetic data can be found in the \u2018Genomic characterization\u2019 section under Materials and methods). The five highest association signals (independent) for each group are shown in Supplementary file 5. Only results from analyses with more than 15 cases and a well-calibrated QQ-plot (visual inspection and a lambda inflation factor\u00a0>0.96) are reported. Accordingly, clusters 1\u20135, 7\u20139, 12, 15\u201318, 21\u201323, 26, 31, 35, 39, 45, 46, and 66, as well as all aggregated symptom groups, met the criteria. The median coverage of the symptom clusters was 31% [range: 10\u201367]. SNPs characterizing the symptom groups were found in several instances and association signals to disease-associated genes were also found for several of the clusters (Figure 3). Most frequently found, unsurprisingly, were genes associated by GWAS to diabetes or diabetes-related cardio-metabolic traits (cluster 3: MYO3B, cluster 4: DAPK1, cluster 5: LPIN2, cluster 7: SAMD4A and FHIT, cluster 8: ERG and PLCB1, cluster 12: MYT1L, cluster 15: UBE2WP1, cluster 16: ADARB2, CDKAL1, and CLIP1, cluster 17: C8orf37-AS1, cluster 21: FHOD3 and MCF2L, cluster 24: MTCL1, cluster 26: NTM, cluster 31: PCDH15, CDH4, and DCTD, cluster 31: KLF12, cluster 39: FHOD3, cluster 45: IGF1R, BCAS3, and TENM4, cluster 46: NRXN3). Cluster eight is characterized by cardiovascular complications, and three of the top ranking genes for this cluster have been associated with LDL peak particle diameter (THBS4; Rudkowska et al., 2015), abdominal aortic aneurysm (ERG; Jones et al., 2017), pulse pressure (ERG; Warren et al., 2017), and diastolic blood pressure (PLCB1; Warren et al., 2017). Cluster 21 is enriched for the ICD-10 diagnosis foot ulcer (L97), and MCF2L, one of the top ranking genes for cluster, has been associated with both end-stage coagulation (Williams et al., 2013) and prothrombin time (Tang et al., 2012). In total, of the top five association signals that were mapped to genes (n\u00a0=\u00a0103) we found five (CDKAL1, DCDC2C, KLF12, LPIN2, TLE1) to be related with diabetes.\n\n### Comorbidity pairs and patterns within symptom related clusters\n\nWe detected codes occurring significantly more or less together within and across the symptom groups (Fischer\u2019s test with Bonferroni adjusted p-values<=0.01) defining distinct comorbidity pairs. If the comorbidity pairs covered more than 100 unique codes (symptom groups 4 and 7) we extracted only the most significant pairs until these pairs consisted of 100 unique codes.\n\nFigure 4A illustrates the comorbidity correlations for the six main symptom groups where each pairwise interaction has a comorbidity score (see Material and methods). To characterize whether a diagnosis occurred significantly more before or after another, we made this analysis in a temporal manner. Figure 4B illustrates the comparison of the first diagnosis (row) to the second diagnosis (column). We found that especially the diagnoses related to diabetes (E13, O24), diabetes with complications (shortened to E10 and E11), obesity (E66), diseases of the pancreas (K86), poly- and proteinuria (R35 and R80), and to some extent hypertension and ischemic heart disease (I10, I20, I21, I25) are observed before other diagnoses (blue indicates that the row diagnosis is observed prior to the column diagnosis more than expected, and red indicates the opposite). Focusing on the different symptom groups, we detected which comorbidity pairs were unique in the different groups, and Figure 4C displays these unique comorbidity interactions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44941/elife-44941-fig4-v1.jpg)\n\n**Figure 4.:** (A) Comorbidity correlations between the combined symptom groups.\u00a0(B) Asymmetric comorbidity matrix for observing row diagnosis codes before column diagnoses. First, we calculated Bonferroni corrected p-values for diagnosis pair directionality, second, we extracted the top 100 unique diagnosis codes pairs with lowest adjusted p-values and lastly, we calculated a comorbidity score (CS) by using the log2 of observing the pair more or less than expected. The heat-map colors reflect the CS quantification. (C) Comorbidity pairs unique for each of the symptom groups. All interactions are observed significantly more (blue) or less (red) than expected (adj. p-value<=0.01). Arrows indicate that the diagnoses are observed in the particular order (Fischer\u2019s exact test with Bonferroni correction p-value<=0.01). Node size indicates in how many symptom groups the diagnosis code is observed in, ranging from one group (the diagnosis is unique for the group, largest nodes) to six groups (all groups have the code, smallest nodes).\n\nIn symptom group two we found that L84: corns and callosities is observed significantly more together within patients with T1D than T2D (CS\u00a0=\u00a01.24, adj. p-value=4.06e-15 and CS\u00a0=\u00a0\u22121.58, adj. p-value=1.25e-03, respectively). Temporal analysis of diagnosis occurrence showed that T1D is observed before L84 (Figure 4B, mean time difference\u00a0=\u00a08.3 years, adj. p-value=1.01e-39). Corns or callosities are unproblematic in healthy people, but in diabetes patients they can cause skin defects that increase the risk for additional complications, for\u00a0example foot ulcers which can lead to amputations (Apelqvist et al., 2000; Hunt, 2011).\n\nAlthough not observed significantly together within any clusters the temporal analysis showed that the time between T2D and elevated blood glucose levels (R73) is significantly shorter in symptom group two than in groups 4, 5 and 6 (mean time\u00a0=\u00a02.2 days; adj. p-value=6.45e-04, 3.29e-06 and 2.73e-06, respectively).\n\nIn symptom group 5, five of the eleven clusters are enriched with ICD-10 codes from chapter XIII: Diseases of the musculoskeletal system and connective tissue, especially dorsopathies, spondylopathies and soft tissue disorders. Further, these diagnoses are observed exclusively in this group and show unique disease co-occurrence patterns, for example M48-M54 (other spondylopathies and dorsalgia, CS\u00a0=\u00a01.01, adj. p-value=1.8e-04) and M43-M47 (deforming dorsopathies and spondylosis, CS\u00a0=\u00a01.54, adj. p-value=1.91e-06). One of the top ranked genetic associations for this cluster (rs76548985, p-value=1.43e-06) is LINC00351, associated with sporadic amyotrophic lateral sclerosis (Xie et al., 2014). It is worth noting that clusters 8, 22, 33, 35, 45 within symptom group five are all enriched for drugs from ATC chapter A10B: blood glucose lowering drugs, excluding insulin (adj. p-value<0.05), and all but cluster eight are associated with glycemic dysregulation.\n\nWithin symptom group 7, we observed two diagnosis pairs less than expected: E11-E13 (CS\u00a0=\u00a0\u22121.46, adj. p-value=1.57e-04), and K86-E78 (CS\u00a0=\u00a0\u22121.24, adj. p-value=5.46e-04). Hence, this group contains patients where T2D and other diabetes as well as diseases of the pancreas and disorders of lipoprotein metabolism are not given together. In contrast, I34: nonrheumatic mitral valve disorder is observed more often than expected together with heart failure (I50, CS\u00a0=\u00a01.83, adj. p-value=0.009) and atrioventricular and left bundle-branch block (I44, CS\u00a0=\u00a01.53, adj. p-value=0.0018). Interestingly, one of the top genetic signals for symptom group seven maps to MIR8052 (rs6590490, p-value=3.14e-07) that has been associated with pulse pressure (Warren et al., 2017). Comparably, among the top genetic signals for symptom group 4, a group where are large proportion of the patients are characterized by hypotension (I95) and vertigo (R42), are ANLN that has been associated with systolic blood pressure (Parmar et al., 2016).\n\n### Glycemic dysregulation\n\nWe evaluated five different parameters associated with glycemic dysregulation (glycemic dysregulation, hyperglycemia, check-point detection of fluctuating HbA1c levels, HbA1c level at diabetes onset and amount of HbA1c observations above diagnosis threshold for T1D and T2D [53 mmol/mol]) and found that 2942 patients did not meet any threshold criterion, 2484 met one, 4647 two, 4057 three, 531 four, and 22 met all five criteria. The distribution of HbA1c measurements for T1D and T2D is shown in Figure 1\u2014figure supplement 5. First, we investigated whether there was any difference in mean values of the 20 different biochemical tests (see Material and methods) and subsequently we applied a Kolmogorov-Smirnov test to assess how these distributions differed. We found that the means of 14 of the different biochemical tests were differently distributed between the six groups (adj. p-value<0.01) of patients with different number of dysregulation parameters, and furthermore observed a distinct difference between the not-or-slightly dysregulated patients (groups 0 to 2) and the middle-or-highly dysregulated patients (groups 3 to 5) (Figure 1\u2014figure supplement 6). The group with five parameters showed no significant difference, due to the low number of patients (N\u00a0=\u00a022). The group with 3\u20135 parameters showed higher levels of triglyceride and HbA1c, and lower levels of sodium, urine creatinine, C-peptide, hemoglobin, diastolic blood pressure and height. Elevated levels of HbA1c, triglyceride, LDL-cholesterol and cholesterol and lower levels of HDL-cholesterol are known biochemical values associated with glycemic dysregulation and thus verified our findings.\n\nThe detection of higher levels of potassium and plasma creatinine as well as the lowered sodium, urine creatinine, hemoglobin levels indicates that these biochemical tests might be used in future prediction of glycemic dysregulation. Glycemic dysregulation is expected to cause renal problems, (identified by elevated plasma creatinine and\u00a0elevated urine albumin) and hypertension, which is treated with RAS blocking agents (ACE inhibitors and angiotensin two receptor blockers) and diuretic agents, which elevate potassium and lower sodium. The treatment profile of this patient group revealed an enrichment of patients treated by RAS blocking agents in most of the clusters. Based on these observations we considered having at least three of the parameters as the best approximation for a definition of potential glycemic dysregulation.\n\nUsing the results from the biochemical analysis, we divided the cohort in two: those with at least three parameters associated with glycemic dysregulation, and those with two or less. In the 71 clusters defined above, 21 had more than 50% patients with at least three parameters (Figure 3, red circles). We found 10 of the 21 clusters in symptom group 3 of which, cluster 5, 24, and 47, were enriched for poor compliance when using the SDC-custom dictionary (adj. p-value=5.9e-03, 1.9e-03 and 2.6e-02, respectively). By further investigating the enrichment of SDC-custom terms (adj. p-values\u22640.05) we found that the majority of the 21 clusters had terms related to cardiovascular complications (e.g. beta blocks, ischemia, diuretics and bypass), kidney complications (e.g. nephropathy, edema and albuminuria), metabolic complications (hypoglycemia and insulin chock) and neurologic related disorders (e.g. neuropathy and loss of memory). Furthermore, all the patients in cluster 47 have schizophrenia (N\u00a0=\u00a076, adj. p-value=8e-141), and behavioral features might therefore account for the glycemic dysregulation. The same could be the case for cluster 24, in which all have epilepsy (N\u00a0=\u00a0108, adj. p-value=7.6e-186).\n\n### Genetic characterization of dysregulated patients\n\nTo assess if glycemic dysregulation is a diabetic complication or evidence of disease etiology, we further tested whether any SNPs were associated with glycemic dysregulation (n\u00a0=\u00a02,120). The five top associating signals map to NCKAP5, CLNK, PSD3, KPNA5, and LINC00333 (Supplementary file 5), although not reaching genome-wide significance. Interestingly, two of the genes associated with schizophrenia (LINC00333\u00a0[Goes et al., 2015] and NCKAP5\u00a0[Draaken et al., 2015]) and PSD3 have also been associated to traits related to urinary and blood metabolite levels, metabolic traits, and triglyceride levels (Raffler et al., 2015; Teslovich et al., 2010; Shin et al., 2014; Rueedi et al., 2014). However, none of the five top ranked genes have been previously linked to glycemic levels or diabetic dysregulation.\n\n## Discussion\n\nPrevious studies using EHRs in diabetes research have focused on improving clinical decision making (O'Connor et al., 2011), clinical prediction (Miotto et al., 2016), patient management (Cebul et al., 2011), mortality risk (Pantalone et al., 2009; Pantalone et al., 2010), genetic risk factors (Kho et al., 2012), and subgroup identification (Li et al., 2015). Only the study by Miotto et al.\u00a0(2016) used the different layers of the EHRs, aimed at predictive measures of clinical outcome. A study from the eMERGE consortium extracted phenotypes from EHR narratives by using NLP-based methods (Kho et al., 2011). They used EHR for phenotypic characterization of five main diseases, but a fine-grained analysis of phenotypic characterization within the diseases was not performed. Further, NLP was included only in the phenotypic determination of three of the diseases, not for diabetes determination.\n\nStratification and subdivision of diabetic cohorts have typically been performed on homogeneous data sets within specific diabetes types such as T1D, T2D, or gestational diabetes (Perry et al., 2012; Ren et al., 2016; Lin et al., 2012; Achenbach et al., 2004). One of the more recent stratification studies of diabetes patients is Li et al. (2015) that identified subtypes of T2Ds of mixed ethnicity using the structured part of EHRs. They detected three distinct subgroups that could be linked to significant SNPs through gene-disease associations in a patient-unspecific manner. Further, elevated HbA1c levels were used to explain one subgroup with microvascular diabetic complications. In contrast to the study by Li et al., we have taken the stratification and characterization several steps further both by investigating a heterogeneous diabetic cohort almost five times as large and obtaining the full comorbidity pattern and symptoms relatedness through mining of the text-narratives using both an \u2018exposure-oriented\u2019 and a diagnosis-based dictionary. In addition, we used the biochemical data to produce a severity classification (the five parameters of glycemic dysregulation) and integrating this with both the text-mined and assigned diagnoses, we were able to determine many different, more homogeneous groups of patients with shared symptoms and comorbidities, as well as different levels for glycemic dysregulation.\n\nAnother recent diabetes stratification study by Ahlqvist et al. (2018) used a data-driven approach and k-means clustering to subgroup adult-onset diabetes and characterize five subgroups showing differing disease progression and risk of diabetes complications. However, this approach concerned only individuals with type 2 diabetes and a characterization based on six parameters (glutamate decarboxylase antibodies, age at diagnosis, BMI, HbA1c, and homoeostatic model assessment 2 estimates of \u03b2-cell function and insulin resistance), and thus clinical narratives, medication, and genetics were not used as we have done in this study.\n\nThe text mining approach used in relation to ICD-10 codes was based on level three rather than the more detailed level four since\u00a0it would increase tremendously the dimensionality of the feature space. While this obviously reflects a less deep phenotyping, for a data set of this size many level four codes would be unique, likely leading to a less stable subsequent clustering and analysis. In fact, our attempt to use the much more fine-grained SNOMED-CT terminology confirmed that a data set needs to be very large for such a fine-grained vocabulary to be useful.\n\nIn this work, we deliberately excluded the primary diabetes types without complications, T1D and T2D, and thereby constructed a stratification of the cohort driven solely by comorbidities, complications, other diseases, and symptoms. However, combining different diabetic subtypes can be problematic, since their etiologies differ and disease progression is different across diabetes types, treatment, compliance and lifestyle (Adeghate et al., 2006). Our focus was not to characterize specific comorbidity-related groups within a certain diabetes type, since extensive epidemiological studies of this kind have been done previously. Instead, we focused on the diabetes continuum with the aim of investigating whether it was possible in an unsupervised manner to detect relevant and meaningful diabetic subgroups by comorbidities, symptoms, or level of glycemic dysregulation. Further, we detected novel biochemical and genetic candidates that might relate these to the different cohort subdivisions, such as shared symptom patterns for phenotypically similar patients and the level of glycemic dysregulation. These biochemical and genetic candidates could be potential risk factors for additional complications, especially concerning glycemic dysregulation, that could be verified by further experimental studies. As the cohort is enriched for sicker patients with diabetes melitus complications the features and the overall grouping described would not necessarily be the same if another cohort dominated by prediabetes individuals would have been analyzed.\n\nDespite our focus on the phenotypic variation among diabetes patients, the stratification is restricted by the limited coverage of the genetic data, which lowers the power considerably. We were able to obtain genetic data for 2337 patients, of whom 2125 remained after quality control and stratification. Hence, only 14% of the patients in our final cohort had descriptive genetic information.\n\nBy adding biochemical, prescription, and genetic data we observed that the clusters were significantly different from each other on parameters other than comorbidities. By including the text narratives of the EHRs we were able to capture diagnoses that in another context would be considered as a primary diagnosis, for\u00a0example epilepsy, schizophrenia and cerebral palsy. These diagnoses are not known comorbidities of diabetes but can influence the treatment and management of the diabetes patient. For instance, we observed that all patients in cluster 47 had schizophrenia, which could influence their compliance since the cluster was associated with glycemic dysregulation. We determined this when assessing the level of glycemic dysregulation and found that this cluster indeed showed a high number of patients with at least three parameters for glycemic dysregulation. However, a more in-depth analysis is required to clarify whether the glycemic dysregulation is due to the behavioral effects of schizophrenia, underlying genetic variants, adverse drug reactions due to polypharmacy, or other variables.\n\nDespite our data from both assigned and text-mined diagnoses, misdiagnoses can occur, and we performed a manual inspection of randomly selected EHRs to establish the validity of the data. Furthermore, we observed some patients assigned with different diabetes types, for\u00a0example first assigned with T1D and later with T2D, and vice versa. Inspecting the biochemical values of GAD65 autoantibodies and comparing them to the primary diagnosis type we found 182 T2D assigned individuals to have GAD65 levels above 10 IU/ml, possibly indicative of T1D or LADA; however, these individuals were not significantly enriched in any cluster. We also observed 621 individuals with GAD65 levels below 10 IU/ml, which is consistent with known late-term effects of T1D (results not shown). An in-depth temporal analysis of these patients with mixed diabetes types could be interesting and integrating biochemical as well as genetic variation data could elucidate which, if any, phenotype might be the most accurate.\n\nIn this study, we have used data from a unique cohort of 14,017 patients with diabetes, of which 12,866 had been diagnosed with either T1D or T2D. Integrating the assigned and text-mined ICD-10 and SDC-custom diagnoses, an MCL clustering was carried out which resulted in 172 unique clusters. Of these, 71 had at least 50 patients, which were subsequently divided into groups with shared symptoms. Investigating the complication enrichment and comorbidity patterns in the clusters and symptom groups we detected clusters described by specific disorders such as hypothyroidism, schizophrenia, and functional intestine disorder as well as unique comorbidity interaction patterns both with and without temporal significance. An interesting approach could be to extend the temporal analysis to investigate how disease progression within and between clusters and symptoms groups develops for multiple diagnoses. This could be done with a trajectory-based approach as done recently by\u00a0Jensen et al. (2014).\n\n## Materials and methods\n\n### EHR data\n\nAll data originate from the Steno Diabetes Center Copenhagen (SDCC), a specialized diabetes hospital in the Capital Region of Denmark. In Denmark patients with type 1 diabetes (T1D) are followed in hospital outpatient clinics such as SDCC, and the T1D patients studied comprise 35% of all adult patients with T1D in the Capital Region of Denmark. Patients with type 2 diabetes (T2D) are referred from primary care for treatment optimization, typically for a period of six to twelve months. When treatment goals are reached, and they have no diabetic complications, they are referred back to general practice. Patients needing intensive control and treatment, because of micro- or macrovascular complications, are offered life-long follow-up at the SDCC. At any time, approximately 2000 patients with complicated T2D are followed at the SDCC. Generally, the patients registered in the SDCC electronic patient records are representative of Danish patients with T1D and the 10% most complicated patients with T2D (J\u00f8rgensen et al., 2016). Moreover, the patient followed at SDCC are comparable to patients followed in all Danish hospital diabetes outpatient clinics in terms of distribution of age and duration of diabetes. The data comprise all communications and contacts recorded at the hospital over a period of 19 years (1993\u20132012) for 14,017 patients. This includes, primary diagnoses, prescriptions and laboratory tests, 1.2M clinical narrative entries, 420 different types of laboratory tests with 4.15M laboratory measurements and a total number of 440,555 drug prescriptions. On average, each patient had 85 clinical narratives with an average length of 34 words (212 characters). In addition, genetic data from several research projects have been linked to the patients and added to the EHRs.\n\n### Text-mining dictionaries, tagging and corpus matches\n\nAn in-house developed framework for mining Danish text was used for the analysis (Roque et al., 2011; Eriksson et al., 2013). The algorithm tags words in the text narratives in a named entity recognition (NER) fashion based on supplied dictionaries. In this study, we used two main dictionaries: The International Classification of Disease version 10 (ICD-10) truncated to level 3 (e.g. E10: Type 1 Diabetes), and a complementary \u2018exposome-oriented\u2019 dictionary (SDC-custom). The latter holds terms related to diabetes specific subtypes (e.g. MODY and LADA), complications (e.g. the different severities of neuropathy, retinopathy and nephropathy), treatments and examinations (e.g. gastric bypass, renography, and beta blockers), lifestyle and lifestyle related disorders (e.g. obesity, exercise level, smoking), and compliance. The SDC-custom dictionary was developed in collaboration with physicians at the SDCC (see Supplementary file 6 for a translated and condensed version). The Danish ICD-10 version currently contains roughly 20,000 unique descriptions of clinical concepts, each with a unique ICD-10 code.\n\nThe NER used for dictionary matching, in addition, performs lemmatization and de-latinization of tagged words, accounts for language negations or subject negations (e.g. \u2018the patient\u2019s mother had retinopathy\u2019), and performs fuzzy matching with a Hamming distance of 1 (e.g. \u2018diabtes\u2019 is transformed to its correct spelling \u2018diabetes\u2019). A thorough explanation of the algorithm is provided (Simon et al., 2019, manuscript in preparation). Other details, for example on \u2018negation scope\u2019, that\u00a0is the position of negations relative to the negated term in Danish, have been published previously (Thomas et al., 2014).\n\nRunning the text-mining algorithm (Simon et al., 2019, manuscript in preparation) on the SDCC corpus with the two dictionaries (ICD-10 and SDC-custom) recognized 1,028,593 entities from the dictionaries in 12,504 patients (80.5% of the entire corpus). None of the remaining patients had any non-trivial match between the dictionaries and EHR narratives. The two dictionaries shared some general terms, for\u00a0example T1D and T2D; these duplicate matches were removed and 941,087 unique code matches remained. Of these, 267,404 were fuzzy matches representing 4181 unique variants. The variants were manually validated, resulting in removal of 10,952 (4.1%) matches. After removal of negated sentences (n\u00a0=\u00a0255,302) 594,600 code-to-text matches in 12,467 patients were left.\n\n### Patient phenotype vectors from assigned and text mined codes\n\nThe structured ICD-10 codes assigned to patients during their contact with SDCC were extracted from the EHRs, along with all ICD-10 codes captured by mining the text parts of the EHRs. The two ICD-10 lists were combined, but to prevent the primary, assigned diabetes types from dominating the patient stratification, diagnosis codes for diabetes without complications (E10 and E109, in total 3740 codes, and E11 and E119, in total 3624 codes) were removed. Approximately 8% of the assigned codes were removed in this way. The list of codes and their frequencies for each patient were transformed using the BM25 weighting scheme (Robertson and Walker, 1994), which scores a code c in patient P, accounting for the code frequency in all patients, frequency of the codes in the patient (document frequency), and number codes in the patient record (document length), see Equation 1.\n\n$$\nScore(p,c)=\\sumi\u22121nIDF(c_{i})\u22c5\\frac{f(c_{i},p)\u22c5(k_{1}+1)}{f(c_{i},p)+k_{1}\u22c5(a\u2212b+b\u22c5\\frac{|p|}{|p_{ave}|})}\n$$\n\nHere, $IDF(c)$\u00a0is the inverse document frequency for the code $c$\u00a0computed as\n\n$$\nIDF(c_{i})=log\u2061\\frac{N\u2212n(c_{i})+0.5}{n(c_{i})+0.5}\n$$\n\nWith\u00a0$N$\u00a0being the total number of patients and $n(c)$\u00a0the number of patients with\u00a0a\u00a0given code\u00a0$c_{i}$ , and the term $f(c_{i},p)$ is the frequency of code $c_{i}$ in patient $p$. The number of codes associated\u00a0with each patient\u00a0vector, $P$, is given by the length of the vector, $|p|$, and the average number of codes in the entire corpus\u00a0is $|p_{ave}|$. Finally, $b$ and $k_{1}$ are free parameters that determine to what extent document length is considered (b) and how much the\u00a0scoring equation resembles a normal TF-IDF ($k_{1}$), respectively. The\u00a0value\u00a0of\u00a0$b$ was set to 0.75 and does not fully account for the document length $(b=1)$ and $k_{1}$ was set to 1.2 giving a low resemblance of TF-IDF ($k_{1}\u2192\u221e$).\n\n### Clustering patients from Cosine similarities\n\nAll patients were clustered using their pairwise cosine similarities calculated from the BM25 transformed code vectors. A cosine similarity\u00a0\u2265\u00a00.5 was set as a cut-off prior to clustering, to minimize the number of edges in the subsequent patient network. To increase the variance of the cosine similarities, these were scaled from the interval 0.5\u20131 to 10\u2013100. We wanted to do a network based clustering and therefore used Markov Clustering (MCL) with the inflation parameter set to 1.2 and rest left as default (Van Dongen, 2000). Different inflation parameters were tested and evaluated based on the efficiency, mass fraction, and area fraction parameters.\n\n### Grouping clusters in symptom related groups\n\nWe organized the clusters into symptom groups based on the frequency of their symptom codes using ICD-10 chapter XVIII level 1, for\u00a0example R50-69: General symptoms and signs. We used a Euclidean distance and applied a hierarchical clustering using Ward.D as the agglomeration method since we wanted to expose the hierarchical relationship amongst the clusters. The entire analysis was performed using R (version 3.2.1).\n\n### Enrichment analysis of diagnosis codes\n\nThe MCL clusters were tested for ICD-10 and SDC-custom codes found more often than expected, using a binominal test while correcting for sex and birth decade. The metadata such as average age, days at SDCC, and diabetes duration (from the date of diabetes diagnosis until the end of the study) were calculated, and further p-values for each cluster were obtained using a Wilcoxon test against the remaining clusters. In both analyses, p-values were adjusted using Benjamini-Hochberg correction for multiple testing, where a p-value\u22640.05 was considered significant.\n\n### Comorbidity patterns for diagnosis pairs\n\nWe performed three independent analyzes without considering the clusters by applying Fischer\u2019s exact tests to obtain p-values for all diagnosis pairs within the SDCC corpus: 1) p-values for observing the codes together, 2) p-values for observing diagnosis A prior to diagnosis B, and 3) p-values for observing diagnosis B prior to diagnosis A. P-values from the three different sets were adjusted using Bonferroni correction for multiple testing, and the pairs were subsequently ranked based on these values. To detect whether the pairs were observed more together than expected we applied a comorbidity score as described in Roque et al.\u00a0(2011). For the temporal pairs, we also applied an ANOVA test to investigate whether any of these pairs were unique for a symptom group. All p-values were corrected for multiple testing, and an adjusted p-value\u22640.05 was considered significant.\n\n### Robustness of the MCL generated clusters\n\nTo assess quantitatively the stability of the clusters generated, we constructed various diluted and shuffled realizations of the similarity network used as input to the MCL algorithm. We used a reference clustering similar to the clustering presented in Figure 2B (either by including the patients in the 71 clusters or all patients). The diluted versions were generated by randomly deleting edges with a probability of \u03b1, whereas the shuffled realizations were created by shuffling edges between nodes (patients) as described earlier (Karrer et al., 2008). The latter produces a network where the number of edges and vertices are unchanged. An \u03b1 of zero leaves the reference network unchanged, while a value of 1 leads to a complete randomization of the similarity network. Each of these randomizations of the input were repeated five times for various values of \u03b1 in the range 0\u201350% and used as input for the MCL algorithm. The resulting clustering\u2019s were then compared to the reference clustering by means of the Variation of Information measure (VI) (Meil\u0103, 2007) and plotted as function of increasing values of \u03b1 (see Figure 2\u2014figure supplement 5). The figure includes two horizontal lines corresponding to the value that the VI would take if we were to randomly assign 10% and 20% of the vertices to different random clusters, respectively. This analysis showed that the clustering is stable in relation to removing edges, which is evidence that the cosine metric-based cutoff used does not change the overall structure of the clustering. The shuffling is a more impactful randomization, however despite this, we can still shuffle around 10% of the edges and still retrieve 90% of the patients in the groups of the 71 reference clusters.\n\n### Quantitative assessment of glycemic dysregulation\n\nGlycemic dysregulation was assessed for each patient by evaluating five different parameters. The first two parameters were obtained using the SDC-custom code for dysregulation (sdcL03) and the ICD-10 codes for hyperglycemia (R73 and E89). The remaining three were found by analyzing longitudinal measurements for glycated hemoglobin (HbA1c). Due to a large variation in both the number of measurements and their frequency, HbA1c values were pre-processed. We divided the HbA1c measurements for each patient into segments containing a minimum of five values, spanning a time interval of at least three months (equivalent to the functional lifetime of red blood cells). In total 10,112 patients had HbA1c measurements that fulfilled the criteria, and the subsequent analyses were performed on this sub-population.\n\nWe performed three analyses on the longitudinal pre-processed HbA1c data for each patient: 1) a Bayesian analysis of change point detection to find potential peaks of HbA1c values in a patient, 2) analysis of mixed effects models to estimate the HbA1c value at diabetes onset, and, 3) analysis of the frequency of values in different HbA1c bins (e.g. general level for diagnosing T1D or T2D, the critical interval for hyperglycemia etc.) to appoint an HbA1c severity score.\n\n### Laboratory test data\n\nThe laboratory tests were longitudinal data such as blood pressure measurements and biochemical analyses of blood and urine samples, and each test was assigned a unique identifier using the NPU-terminology, which is the recommended administration and communication measure of laboratory tests in Denmark (Petersen et al., 2012). In our data, several laboratory tests had an SDC identifier, being from local laboratory facilities at SDCC. Both test IDs, NPU and SDC, were analyzed separately, despite sometimes measuring the same biochemical variables.\n\nIn total, 420 different physiological tests were performed across 14,847 patients from the entire corpus. Measurements within and between tests were unbalanced with no general system in measurement interval, frequency, or number of patients who had a test taken. Due to this lack of systematic coverage, only tests that were performed on at least 75% of the entire corpus (10,788 patients) were analyzed (26 tests). However, the test for C-peptide (NPU18004) was also included as it was available for 74.9% of the cohort and is widely used to distinguish T1D and T2D. Measurements outside the biological reference interval for a given test, that\u00a0is HbA1c measurements below 15 mmol/mol and above 184 mmol/mol, were removed, and for each patient the mean, median and standard deviation for each test with continuous values (20 of the 26 tests) were calculated. If the data was not normally distributed for a test we log-transformed it and normalized all values to mean\u00a0=\u00a00 and SD\u00a0=\u00a01. All analyses after assigning patients to clusters were performed on the 10,788 patients.\n\nWe applied a MANOVA to test if means among the three different patient groups (clusters, symptom groups or patients being dysregulated) were significantly different, and a Kolmogorov\u2013Smirnov test was applied to investigate whether the distribution of the sample means in the patient groups were significantly higher or lower than means in the remaining groups. All p-values were adjusted using Bonferroni correction for multiple testing, and an adjusted p-value\u22640.05 was considered significant.\n\n### Drug prescription data\n\nPrescription data was available for 12,147 patients with a total number of 440,555 drug prescriptions. Drug compounds were identified by the ATC classification system, which is divided into groups at five different levels. In this study, we summarized the data using ATC-codes at level three and four: chemical and pharmacological and therapeutical, respectively.\n\nFrom the initial set of prescriptions, we manually reviewed 104 drugs which did not have an ATC code in the EHR or were mapped to more than one ATC code. In addition to the manual review, pro.medicin (www.pro.medicin.dk, accessed October 2018) was used to map drug names to their corresponding ATC code. The SDCC prescription data and the WHO Collaborating Centre for Drug Statistics Methodology (www.whocc.no, accessed October 2018) were used for crosschecking. We performed Fisher\u2019s exact test to investigate prescription enrichment (3rd level of the ATC classification) in clusters with at least 50 patients. The p-values were adjusted using Benjamini\u2013Hochberg correction for multiple testing, and an adjusted p-value\u22640.05 was considered significant.\n\n### Genomic characterization\n\nA total of 2290 patients with T2D and 1028 patients with T1D from SDCC were genotyped separately using the HumanOmniExpress (24v1) array from Illumina as previously described (Charmet et al., 2018; Steinthorsdottir et al., 2014). Genotypes were called using GenomeStudio, and imputed separately using the Haplotype Reference Consortium (HRC) imputation panel (McCarthy et al., 2016). Prior to imputation, the two datasets were filtered to retain only high-quality samples/SNPs (sample call rate\u00a0\u226598%, no mislabeled sex, no ethnic outliers, heterozygosity within 2 SD from the mean, SNP call rate\u00a0\u226598%, no monomorphic SNPs, no Hardy\u2013Weinberg disequilibrium outliers). After imputation, SNPs with minor allele frequency (MAF)\u00a0<0.01, more than 20% missingness, R square less than 0.30, and duplicate SNPs were removed, and the two datasets were merged retaining only variants common to the two sets. After merging, relatedness between all individuals were calculated and close relatives were excluded. Of the 3318 patients, 2337 had EHR information and could be mapped to clusters. In total 2125 patients passed quality control and were taken forward for genomic characterization. Logistic regression was used to test for genetic differences (PLINK 1.90 beta, https://www.cog-genomics.org/1.9) between the different groups of interest (clusters and symptom groups) and linear regression was used to evaluate the SNPs impact on dysregulation. Cases were defined as all individuals in a given cluster/symptom group, and controls as all individuals not belonging to the respective cluster/symptom group. Glycemic dysregulation was defined as a score ranking from 0 (low) to 5 (high) based on five dysregulation parameters (see section on glycemic dysregulation). All analyses were adjusted for age and sex. The test statistics were adjusted for inflation (population stratification) using the three first principal components estimated using the --pca function in PLINK. Genetic associations were defined based on data derived from the EBI GWAS catalog version 1.0.1 (http://www.ebi.ac.uk/gwas/) unless otherwise stated. A p-value less than 5*10\u20138 was considered genome-wide significant.\n",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "f9eb3b6c-074c-432f-8bb7-d0c7ad54b4f5",
+      "submission_id": "8c91060a-8f31-42ac-9ac0-969d6dd55c27",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alfonso Valencia, Barcelona Supercomputing Center - BSC Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.44941.sa1](https://doi.org/10.7554/eLife.44941.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe paper describes the stratification of a diabetes cohort based on characteristics extracted from the medical records of a rather homogenous population. These characteristics include other diagnoses and lifestyle factors. The clusters of patients, obtained with an unsupervised Markov clustering method, represent characteristic longitudinal glycemic dysregulation patterns that include the temporal order of comorbidities, as well as genetic features, i.e. SNPs close to some of the known diabetes related genes.\n\nThe work opens the doors to the study of the molecular basis of the classical etiological subtypes of diabetes at the light of their relations with the clusters based on comorbidity relationships and symptoms.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Linking glycemic dysregulation in diabetes to symptoms, comorbidities and genetics through EHR data mining\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe biomedical goal of the paper is to identify subgroups of diabetes patients. The study is based on a large set of medical records from patients with T1D or T2D. The methodology produces 6 large clusters (MCL) combining structure information (ICD-10 level 3 codes) and symptoms extracted from the free text. The analysis shows enrichment in clinically relevant groups and relations with other diseases. The paper includes the specific analysis of glycemic deregulation, its relation with comorbidities and with previously identified genes/SNPs.\n\nEssential revisions:\n\nThe topic is relevant and timely. The technical contribution is at the leading front of the analysis of medical records analysing structured and free text information.\n\nOn the critical side there are limitations in clustering analysis, as well as in the use of limited ICD third level data. These serious criticisms have to be addressed completely in a revised version. There are also a number of other issues related with the origin of the data (temporal coverage of the cases) that need to be addressed in detail in the text.\n\nFinally, it is not completely clear what are new results and what is validated (and how). Even, if these are common problems in many large scale studies, it is important to address them clearly in the paper. This point is related with the criticisms on the unclear goal of the paper: technical or medical? The comments of the reviewers reflect that given the situation, you will have to think if you want to prioritise the novelty of the approach instead of making medical claims that might be difficult to sustain.\n\nWe ask you to address the following;\n\nMore details on the key points above:\n\n1) Circularity\n\nThe analysis strategy and reasoning appears to be circular and there are not provided measures of independence between codes, factors, elements, etc. that are introduced or measured at each step. In particular, there are used two vocabularies (which obviously expand the number of \"codes\" assigned to patients, as it should be; first section Results is not novel) that gave approximately 940,000 codes as explained in Materials and methods. However, it is expected that many of these codes are in fact correlated, non-independent, but instead they are all used to generate patient clusters; for example, in several instances it is emphasized that codes from primary diabetes diagnoses are not used in clustering/analyses, but it is well known a priori that many other codes are significantly correlated with the diagnoses (it is therefore not unexpected that patient clusters differentiate diabetes subtypes). Therefore, it would also not be unexpected that clusters differentiate glycemic levels. In fact, the 71 clusters are defined using distances from ICD-10 chapter XVIII symptoms (subsection \u201cEnriched comorbidity and symptom patterns in diabetes patient clusters\u201d, first paragraph), which includes examination of blood parameters. Again, latter the clusters are defined based on comorbidities, which presumably many are linked to the original codes. Another example of this point is the identification of a \"schizophrenia\" cluster (subsection \u201cGlycemic dysregulation\u201d, last paragraph), which is expected if the corresponding codes are included. I agree that an observation of differential glycemic levels in this clusters may be interesting, but then first it should be evaluated the overall correlation among the thousands of codes used in the study, and also then the study is limited to assess co-occurrences of terms/codes.\n\nOne possible way out could be the comparison results of structured vs. structured+unstructured features.\n\n2) Clustering\n\nAs overall conclusion, Discussion section includes the statement that the results show \"many different and homogenous groups of patients\", but it has to be formally demonstrated that the groups are independent, that they are many more than randomly expected by permuting the same cohort, and that they are more homogenous that some value.\n\nAdditionally, questioning the clusters stability, would be necessary to provide a sensitivity analysis on the clusters to illustrate the stability.\n\n3) ICD codes\n\nTruncating the codes to three digits is akin to adding noise by losing information. Please justify your rationale behind truncating the codes. It'll be good if this issue could be addressed in the Discussion or one of the limitations of the work.\n\n4) Data limitations and temporal series\n\nFirst, there might be problems with the time-dependent comorbidities in a given cluster. There are multiple reasons: (1) the length of the observational window before and after considered in a given cluster is not talked about/defined. This can impact the enrichment of symptoms and hence all the downstream analysis; (2) length observational windows is bound to be different in different clusters, which may introduce the bias in computing comorbidities; (3) it is not clear from the analysis if there exist any relation between the observational window and cluster size.\n\nIndeed, it is not clear how temporality is defined. The heatmap presented in Figure 2B does not help either. Specifically, what is the index date, relative to which pre and postcodes were identified? It is quite likely that the index date would vary for patients, therefore, how does that variability was accounted? Please explain this paragraph in more detail and if possible, then provide a schematic diagram representing temporality and how it was considered in this analysis. In addition, in the fourth paragraph of the subsection \u201cComorbidity pairs and patterns within symptom related clusters\u201d, it appears the time window before and after is likely to bias the estimation of T2D and elevated blood glucose level. More clarity on this will be helpful.\n\nIn any case, a better explanation is needed about the length of the observational window before and after used to compute comorbidities. The length of the observational window (before and after in a given cluster) is bound to confound the disease association. Was this length kept similar for all the clusters? If not, then it is very much possible that certain cultures are (just based on cluster size) are likely to be enriched in certain symptoms. Please provide an in-depth analysis on this.\n\n5) Additional data\n\nPlease briefly explain the type of genetic data is included and at what level of omics.\n\nThe candidate genetic and biochemical markers of glucose regulation could be of interest if replicated. However, could these have been discovered without the clustering e.g. using simpler regression methods?\n\nIt is unclear how the clusters segregate in their genetic basis, which could then support the identification of disease subtypes. The question is not as much which genetic variants are associated with a given cluster, but if the effect estimations are statistically different between clusters, which would then favor the existence of subtypes. It is also unclear if the association signals are genome-wide significant in any case.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Linking glycemic dysregulation in diabetes to symptoms, comorbidities and genetics through EHR data mining\" for further consideration at eLife. Your revised article has been favorably evaluated by Naama Barkai as the Senior Editor, a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there is still some confusion about the significance of the resulting clusters, significance of the selected thresholds and the subsequent biological interpretation, as outlined below by the first reviewer. The final version should clarify the exploratory nature of the work and the limits of the statistical reliability, as pointed out by the second reviewer.\n\nReviewer #1:\n\nThe authors have done a perceptible effort trying to answer the major concerns initially raised, and I personally appreciate the clarifications and additional data provided.\n\nHowever, I am still not convinced that the main results are robust enough to support the overall message, in particular regarding the title: \"Linking glycemic dysregulation.\u2026to symptoms, comorbidities and genetics\u2026\".\n\nFirst, the issue of \"circularity\". I might have over-looked the original Discussion that mentioned that primary and secondary diabetes diagnoses were excluded, or my initial comment might have been unclear, but I was referring to the expectation that clusters should obviously identify major known diabetes types; in particular if dozens of diagnosis codes (some of them correlated) and extensive text vocabulary is analyzed. The point is not if the clusters identify what it is already known, but if they identify new etiology/subtypes. Of note, the following example is somewhat inaccurate: \"\u2026 triple negative breast cancer patients share many features with ER-positive patients for example.\" Indeed TNBC and ER+ cases do not share cell-of-origin, prognosis, tissue-metastasis preference, neither therapeutic approaches.\n\nMy reasoning above is then linked to the title issue: the study of glycemic perturbation is presented in one section (\u201cGlycemic dysregulation\u201d) and remains unclear which clusters, symptoms, are robust regarding statistical differences for \"glycemic perturbation\" from the others. The thresholds of 0-2, 3-5 parameters, and then the clusters (21 with 50% patients 3 parameters\u2026) appear to be arbitrary. The use of sentences with the following grammatical constructions may not help to understand the analyses: \"distinct differentiation\u2026dysregulation parameters\". Next, glycemic perturbation is linked to genetic risk in the last Results section, but as initially raised, it is unclear what means \"top association signals\"; are these significant genome-wide, are they statistically different between the clusters/symptoms? Are cluster-risk interactions significant? Honestly, this remains unclear to me and I hope I am not overlooking to any data. I agree with the authors on their final response to the question of \"circularity\": 1) To which extent does it reproduce the classification made by doctors? 2) Does it allow us to make a more specific subgrouping of patients?\n\nI believe that the lack of specific subgroups with statistically defined differences across the three features included in the title is evident from the Abstract, which does not detail any result: it just includes a general message of what the study has found as a last sentence.\n\nReviewer #2:\n\nI am satisfied with the revision of the article. I feel that the questions I raised have been addressed. Limitation in the use of 3-digit ICD9 codes remains, but the response from authors and subsequent changes made in the manuscript are appropriate.\n\nThis study may serve as a starting point for more in-depth analysis in subsequent analysis.\n",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "178f05e9-4c6d-4003-93eb-38bf33c5809f",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C1",
+      "claim": "The study analyzed electronic health records of 14,017 patients from Steno Diabetes Center Copenhagen spanning a 19 year period.",
+      "claim_type": "EXPLICIT",
+      "source": "Text mining the electronic health records of 14,017 patients, we matched two controlled vocabularies (ICD-10 and a custom vocabulary developed at the clinical center Steno Diabetes Center Copenhagen) to clinical narratives spanning a 19 year period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of patients and time period in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "f9f9bbb1-d649-4080-9e03-ca1882422d5f",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C2",
+      "claim": "The two matched vocabularies comprise over 20,000 medical terms describing symptoms, other diagnoses, and lifestyle factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The two matched vocabularies comprise over 20,000 medical terms describing symptoms, other diagnoses, and lifestyle factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states the number and types of medical terms in the vocabularies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "e5b7538a-b4cf-4ec6-a912-7471c9da8a49",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C3",
+      "claim": "The cohort is genetically homogeneous, consisting of Caucasian diabetes patients from Denmark.",
+      "claim_type": "EXPLICIT",
+      "source": "The cohort is genetically homogeneous (Caucasian diabetes patients from Denmark) so the resulting stratification is not driven by ethnic differences, but rather by inherently dissimilar progression patterns and lifestyle related risk factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the genetic homogeneity of the cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "7f17b347-0b2c-4486-bf88-62c2c13a23a1",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C4",
+      "claim": "Using unsupervised Markov clustering, 71 clusters of at least 50 individuals were defined within the diabetes spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Using unsupervised Markov clustering, we defined 71 clusters of at least 50 individuals within the diabetes spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the clustering method and number of clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "fbed41f7-b3a6-4b16-b374-0ac8ab8e629b",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C5",
+      "claim": "The clusters display distinct and shared longitudinal glycemic dysregulation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The clusters display both distinct and shared longitudinal glycemic dysregulation patterns, temporal co-occurrences of comorbidities, and associations to single nucleotide polymorphisms in or near genes relevant for diabetes comorbidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the characteristics of the clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "176d651c-089c-4e2d-8f62-e10a89b3be3c",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C6",
+      "claim": "The clusters show temporal co-occurrences of comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "The clusters display both distinct and shared longitudinal glycemic dysregulation patterns, temporal co-occurrences of comorbidities, and associations to single nucleotide polymorphisms in or near genes relevant for diabetes comorbidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes temporal comorbidity patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "427aeee9-9b94-4178-8c8d-942d8ac4864f",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C7",
+      "claim": "The clusters show associations to single nucleotide polymorphisms in or near genes relevant for diabetes comorbidities.",
+      "claim_type": "EXPLICIT",
+      "source": "The clusters display both distinct and shared longitudinal glycemic dysregulation patterns, temporal co-occurrences of comorbidities, and associations to single nucleotide polymorphisms in or near genes relevant for diabetes comorbidities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes genetic associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "841031b2-0530-4f81-bbe7-d5054eb6e020",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C8",
+      "claim": "Text mining with two vocabularies resulted in a 4-fold increase in codes per patient compared to assigned codes alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, each patient had in 4.9 assigned codes on average. Applying text mining with two vocabularies (ICD-10 and SDC-custom) resulted in a 4-fold increase to 18.6 codes per patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific numbers showing the increase in codes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "48b619ca-a01f-435a-af0a-507c254d69b7",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C9",
+      "claim": "ICD-10 chapters I, VII, XVIII and XIX showed the largest increases in code frequency when adding text-mined codes (6, 15, 25 and 22-fold increase, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the distribution of codes across ICD-10 chapters changed considerably when adding the text-mined codes, with chapters I, VII, XVIII and XIX showing the largest increases (6, 15, 25 and 22-fold increase, respectively) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the fold increases for specific ICD-10 chapters, with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "42910d8d-446b-4fa5-bc76-c6966ec9617d",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C10",
+      "claim": "MCL clustering produced 172 clusters with a mean of 65 patients, minimum of 11, maximum of 979, and median of 40.",
+      "claim_type": "EXPLICIT",
+      "source": "Following code-abundance normalization and BM-25 correction the vectors were clustered using MCL producing 172 clusters (mean = 65 patients, min = 11, max = 979, median = 40), in which 11,208 patients (80.47%) were included Figure 2A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section provides specific statistics about the clustering output.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "b176c299-2b59-4c31-9ca6-2721e305c264",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C11",
+      "claim": "11,208 patients (80.47%) were included in the 172 clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Following code-abundance normalization and BM-25 correction the vectors were clustered using MCL producing 172 clusters (mean = 65 patients, min = 11, max = 979, median = 40), in which 11,208 patients (80.47%) were included Figure 2A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly states the number and percentage of patients included.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "134e7069-559c-44d2-880f-78778061715f",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C12",
+      "claim": "2720 patients (19.53%) were in clusters with ten or less patients and were omitted from subsequent analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 2720 patients (19.53%) were in clusters with ten or less patients and were therefore omitted from subsequent analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the number and percentage of excluded patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "3fedcb54-5a16-4f49-b511-98f3a8e6827e",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C13",
+      "claim": "Cluster 1 was significantly enriched for T1D patients (N = 506, adj. p-value=9.3e-51).",
+      "claim_type": "EXPLICIT",
+      "source": "Even though codes for the primary diabetes type were not part of the diagnosis vectors, specific clusters were significantly enriched for T1D patients (cluster 1: N = 506, adj. p-value=9.3e-51 and cluster 9: N = 101 adj. p-value=1.2e-10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific statistical evidence for T1D enrichment in cluster 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "de6cb75b-b828-4c60-ba00-f5957ba2f0cb",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C14",
+      "claim": "Cluster 9 was significantly enriched for T1D patients (N = 101, adj. p-value=1.2e-10).",
+      "claim_type": "EXPLICIT",
+      "source": "Even though codes for the primary diabetes type were not part of the diagnosis vectors, specific clusters were significantly enriched for T1D patients (cluster 1: N = 506, adj. p-value=9.3e-51 and cluster 9: N = 101 adj. p-value=1.2e-10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific statistical evidence for T1D enrichment in cluster 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "1081fa59-1059-4db2-ae59-7c9b1bca7fbc",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C15",
+      "claim": "Cluster 3 had significantly more T2D patients than expected (N = 233, adj. p-value=9.1e-10).",
+      "claim_type": "EXPLICIT",
+      "source": "Other clusters had significantly more T2D patients than expected (cluster 3: N = 233, adj. p-value=9.1e-10, cluster 5: N = 170, adj. p-value=3.8e-13 and cluster 6, N = 158 adj. p-value=8.4e-17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific statistical evidence for T2D enrichment in cluster 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "66033fbe-4091-43cb-ab53-4f28d2fd7e93",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C16",
+      "claim": "Cluster 5 had significantly more T2D patients than expected (N = 170, adj. p-value=3.8e-13).",
+      "claim_type": "EXPLICIT",
+      "source": "Other clusters had significantly more T2D patients than expected (cluster 3: N = 233, adj. p-value=9.1e-10, cluster 5: N = 170, adj. p-value=3.8e-13 and cluster 6, N = 158 adj. p-value=8.4e-17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific statistical evidence for T2D enrichment in cluster 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "9e0b1cc9-2c24-4328-b3fa-510233651177",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C17",
+      "claim": "Cluster 6 had significantly more T2D patients than expected (N = 158, adj. p-value=8.4e-17).",
+      "claim_type": "EXPLICIT",
+      "source": "Other clusters had significantly more T2D patients than expected (cluster 3: N = 233, adj. p-value=9.1e-10, cluster 5: N = 170, adj. p-value=3.8e-13 and cluster 6, N = 158 adj. p-value=8.4e-17).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific statistical evidence for T2D enrichment in cluster 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "93a6e55e-6bd4-4129-b4c0-2a1922a296a0",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C18",
+      "claim": "Cluster 25 was significantly enriched with the ICD-10 term E13: other diabetes (N = 93, adj. p-value=1.8e-142).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observed a cluster significantly enriched with the ICD-10 term E13: other diabetes (cluster 25, N = 93, adj. p-value=1.8e-142), which includes diabetes due to genetic defects, post-pancreatectomy diabetes and post-procedural diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific statistical evidence for E13 enrichment in cluster 25.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "89866a43-f4ce-4a1d-969b-52106dc4b7d3",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C19",
+      "claim": "The 71 clusters were grouped into six main groups and an outlier (cluster 70) by hierarchical clustering using ICD-10 chapter XVIII level 1 symptoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The 71 clusters (Figure 2B) were grouped by hierarchical clustering, using distances obtained from cluster specific symptoms from the ICD-10 chapter XVIII (level 1). Six main groups and an outlier (cluster 70) were found containing 5, 8, 21, 11, 7 and 18 of the original clusters, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section explicitly describes the hierarchical grouping of clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "b0269f4e-f866-4d6a-aaa5-45c8d2d510d4",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C20",
+      "claim": "Symptoms related to skin and subcutaneous tissue characterized symptom group five (adj. p-value<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Using Fisher's exact test, we found that: Symptoms related to skin and subcutaneous tissue (adj. p-value<0.001) characterized symptom group five and Symptoms related to digestive system and abdomen; cognition, perception, emotional state and behavior; and general symptoms and signs (adj. p-value<0.001 for all) characterized symptom group 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides statistical evidence for symptom group characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "4fc1f5f7-b8fc-4118-b71c-1372e959b264",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C21",
+      "claim": "Symptoms related to digestive system and abdomen; cognition, perception, emotional state and behavior; and general symptoms and signs characterized symptom group 3 (adj. p-value<0.001 for all).",
+      "claim_type": "EXPLICIT",
+      "source": "Using Fisher's exact test, we found that: Symptoms related to skin and subcutaneous tissue (adj. p-value<0.001) characterized symptom group five and Symptoms related to digestive system and abdomen; cognition, perception, emotional state and behavior; and general symptoms and signs (adj. p-value<0.001 for all) characterized symptom group 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides statistical evidence for symptom group 3 characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "5cca3555-9488-436d-a0f4-06628fed3aa6",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C22",
+      "claim": "Cluster eight is characterized by cardiovascular complications.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster eight is characterized by cardiovascular complications, and three of the top ranking genes for this cluster have been associated with LDL peak particle diameter (THBS4; Rudkowska et al., 2015), abdominal aortic aneurysm (ERG; Jones et al., 2017), pulse pressure (ERG; Warren et al., 2017), and diastolic blood pressure (PLCB1; Warren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes cluster eight's characteristics and provides citations for genetic associations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "db8c49f2-8af7-4873-b440-443c462f7306",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C23",
+      "claim": "Three of the top ranking genes for cluster eight have been associated with LDL peak particle diameter (THBS4; Rudkowska et al., 2015), abdominal aortic aneurysm (ERG; Jones et al., 2017), pulse pressure (ERG; Warren et al., 2017), and diastolic blood pressure (PLCB1; Warren et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster eight is characterized by cardiovascular complications, and three of the top ranking genes for this cluster have been associated with LDL peak particle diameter (THBS4; Rudkowska et al., 2015), abdominal aortic aneurysm (ERG; Jones et al., 2017), pulse pressure (ERG; Warren et al., 2017), and diastolic blood pressure (PLCB1; Warren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific genetic associations with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "e5635060-21c6-454e-8ac5-89e3238ff74f",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C24",
+      "claim": "Cluster 21 is enriched for the ICD-10 diagnosis foot ulcer (L97).",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 21 is enriched for the ICD-10 diagnosis foot ulcer (L97), and MCF2L, one of the top ranking genes for cluster, has been associated with both end-stage coagulation (Williams et al., 2013) and prothrombin time (Tang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the enrichment for foot ulcer in cluster 21.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "cd43b356-387a-40fa-940e-ccf76a6a3015",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C25",
+      "claim": "MCF2L, one of the top ranking genes for cluster 21, has been associated with both end-stage coagulation (Williams et al., 2013) and prothrombin time (Tang et al., 2012).",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 21 is enriched for the ICD-10 diagnosis foot ulcer (L97), and MCF2L, one of the top ranking genes for cluster, has been associated with both end-stage coagulation (Williams et al., 2013) and prothrombin time (Tang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific genetic associations with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "472714fa-c913-4cdf-805b-0a3541f58c0a",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C26",
+      "claim": "Of the top five association signals that were mapped to genes (n = 103), five (CDKAL1, DCDC2C, KLF12, LPIN2, TLE1) were found to be related with diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, of the top five association signals that were mapped to genes (n = 103) we found five (CDKAL1, DCDC2C, KLF12, LPIN2, TLE1) to be related with diabetes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the number of diabetes-related genes found.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "00b40a2d-4d69-47cc-9680-4a1731d00a3d",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C27",
+      "claim": "L84: corns and callosities is observed significantly more together within patients with T1D than T2D (CS = 1.24, adj. p-value=4.06e-15 and CS = \u22121.58, adj. p-value=1.25e-03, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "In symptom group two we found that L84: corns and callosities is observed significantly more together within patients with T1D than T2D (CS = 1.24, adj. p-value=4.06e-15 and CS = \u22121.58, adj. p-value=1.25e-03, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific statistical evidence for the association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "4823f103-c9dc-4604-a75f-2d944c204500",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C28",
+      "claim": "T1D is observed before L84 (mean time difference = 8.3 years, adj. p-value=1.01e-39).",
+      "claim_type": "EXPLICIT",
+      "source": "Temporal analysis of diagnosis occurrence showed that T1D is observed before L84 (Figure 4B, mean time difference = 8.3 years, adj. p-value=1.01e-39).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section provides temporal analysis with specific statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "59e89789-7194-4aa5-bccf-f2d561f23621",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C29",
+      "claim": "Corns or callosities are unproblematic in healthy people, but in diabetes patients they can cause skin defects that increase the risk for additional complications, for example foot ulcers which can lead to amputations (Apelqvist et al., 2000; Hunt, 2011).",
+      "claim_type": "EXPLICIT",
+      "source": "Corns or callosities are unproblematic in healthy people, but in diabetes patients they can cause skin defects that increase the risk for additional complications, for example foot ulcers which can lead to amputations (Apelqvist et al., 2000; Hunt, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides clinical context with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "1d98380c-f14f-4556-b18f-7a754739790f",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C30",
+      "claim": "The time between T2D and elevated blood glucose levels (R73) is significantly shorter in symptom group two than in groups 4, 5 and 6 (mean time = 2.2 days; adj. p-value=6.45e-04, 3.29e-06 and 2.73e-06, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Although not observed significantly together within any clusters the temporal analysis showed that the time between T2D and elevated blood glucose levels (R73) is significantly shorter in symptom group two than in groups 4, 5 and 6 (mean time = 2.2 days; adj. p-value=6.45e-04, 3.29e-06 and 2.73e-06, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides temporal analysis with specific statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "acb4c560-d1c0-49b7-a0c8-97aa8e39fa22",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C31",
+      "claim": "In symptom group 5, five of the eleven clusters are enriched with ICD-10 codes from chapter XIII: Diseases of the musculoskeletal system and connective tissue, especially dorsopathies, spondylopathies and soft tissue disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "In symptom group 5, five of the eleven clusters are enriched with ICD-10 codes from chapter XIII: Diseases of the musculoskeletal system and connective tissue, especially dorsopathies, spondylopathies and soft tissue disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes the enrichment pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "0108b1f9-bc2b-4c9f-8221-d0b37559c34a",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C32",
+      "claim": "Clusters 8, 22, 33, 35, 45 within symptom group five are all enriched for drugs from ATC chapter A10B: blood glucose lowering drugs, excluding insulin (adj. p-value<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that clusters 8, 22, 33, 35, 45 within symptom group five are all enriched for drugs from ATC chapter A10B: blood glucose lowering drugs, excluding insulin (adj. p-value<0.05), and all but cluster eight are associated with glycemic dysregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific drug enrichment data with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "00ef6b9e-fa0a-4a44-b1e0-e76384bf369d",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C33",
+      "claim": "All clusters in symptom group five except cluster eight are associated with glycemic dysregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that clusters 8, 22, 33, 35, 45 within symptom group five are all enriched for drugs from ATC chapter A10B: blood glucose lowering drugs, excluding insulin (adj. p-value<0.05), and all but cluster eight are associated with glycemic dysregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the association with glycemic dysregulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "53ba5cd0-f18c-4667-99b8-07a794cc8c6f",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C34",
+      "claim": "Within symptom group 7, E11-E13 (CS = \u22121.46, adj. p-value=1.57e-04) and K86-E78 (CS = \u22121.24, adj. p-value=5.46e-04) were observed less than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "Within symptom group 7, we observed two diagnosis pairs less than expected: E11-E13 (CS = \u22121.46, adj. p-value=1.57e-04), and K86-E78 (CS = \u22121.24, adj. p-value=5.46e-04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific comorbidity statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "5661c971-c842-40b8-acd0-899b89975042",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C35",
+      "claim": "I34: nonrheumatic mitral valve disorder is observed more often than expected together with heart failure (I50, CS = 1.83, adj. p-value=0.009) and atrioventricular and left bundle-branch block (I44, CS = 1.53, adj. p-value=0.0018).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, I34: nonrheumatic mitral valve disorder is observed more often than expected together with heart failure (I50, CS = 1.83, adj. p-value=0.009) and atrioventricular and left bundle-branch block (I44, CS = 1.53, adj. p-value=0.0018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific comorbidity statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "397a4be1-e293-4f8c-884f-6746e88b38c6",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C36",
+      "claim": "One of the top genetic signals for symptom group seven maps to MIR8052 (rs6590490, p-value=3.14e-07) that has been associated with pulse pressure (Warren et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, one of the top genetic signals for symptom group seven maps to MIR8052 (rs6590490, p-value=3.14e-07) that has been associated with pulse pressure (Warren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides genetic association data with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "d63f8aaa-cb1f-4380-bda0-dc97724afbc2",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C37",
+      "claim": "Among the top genetic signals for symptom group 4, ANLN has been associated with systolic blood pressure (Parmar et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparably, among the top genetic signals for symptom group 4, a group where are large proportion of the patients are characterized by hypotension (I95) and vertigo (R42), are ANLN that has been associated with systolic blood pressure (Parmar et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides genetic association data with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "bc348a3e-e0c1-4c5d-96f0-39d3d211d6bd",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C38",
+      "claim": "2942 patients did not meet any glycemic dysregulation threshold criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated five different parameters associated with glycemic dysregulation (glycemic dysregulation, hyperglycemia, check-point detection of fluctuating HbA1c levels, HbA1c level at diabetes onset and amount of HbA1c observations above diagnosis threshold for T1D and T2D [53 mmol/mol]) and found that 2942 patients did not meet any threshold criterion, 2484 met one, 4647 two, 4057 three, 531 four, and 22 met all five criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific patient counts for dysregulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "1cb62d8e-ad67-4679-a25b-42743618b6d0",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C39",
+      "claim": "2484 patients met one glycemic dysregulation criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated five different parameters associated with glycemic dysregulation (glycemic dysregulation, hyperglycemia, check-point detection of fluctuating HbA1c levels, HbA1c level at diabetes onset and amount of HbA1c observations above diagnosis threshold for T1D and T2D [53 mmol/mol]) and found that 2942 patients did not meet any threshold criterion, 2484 met one, 4647 two, 4057 three, 531 four, and 22 met all five criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific patient counts for dysregulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "2d746554-d53d-4db9-897d-1c81373c4ba7",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C40",
+      "claim": "4647 patients met two glycemic dysregulation criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated five different parameters associated with glycemic dysregulation (glycemic dysregulation, hyperglycemia, check-point detection of fluctuating HbA1c levels, HbA1c level at diabetes onset and amount of HbA1c observations above diagnosis threshold for T1D and T2D [53 mmol/mol]) and found that 2942 patients did not meet any threshold criterion, 2484 met one, 4647 two, 4057 three, 531 four, and 22 met all five criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific patient counts for dysregulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "68d23edc-8981-4044-a51d-e626d8a01912",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C41",
+      "claim": "4057 patients met three glycemic dysregulation criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated five different parameters associated with glycemic dysregulation (glycemic dysregulation, hyperglycemia, check-point detection of fluctuating HbA1c levels, HbA1c level at diabetes onset and amount of HbA1c observations above diagnosis threshold for T1D and T2D [53 mmol/mol]) and found that 2942 patients did not meet any threshold criterion, 2484 met one, 4647 two, 4057 three, 531 four, and 22 met all five criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific patient counts for dysregulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "6a6c5c90-6559-47c2-8e94-c1c9593d71ab",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C42",
+      "claim": "531 patients met four glycemic dysregulation criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated five different parameters associated with glycemic dysregulation (glycemic dysregulation, hyperglycemia, check-point detection of fluctuating HbA1c levels, HbA1c level at diabetes onset and amount of HbA1c observations above diagnosis threshold for T1D and T2D [53 mmol/mol]) and found that 2942 patients did not meet any threshold criterion, 2484 met one, 4647 two, 4057 three, 531 four, and 22 met all five criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific patient counts for dysregulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "337c42e4-703e-43c5-bc2c-f443ecee5fbe",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C43",
+      "claim": "22 patients met all five glycemic dysregulation criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated five different parameters associated with glycemic dysregulation (glycemic dysregulation, hyperglycemia, check-point detection of fluctuating HbA1c levels, HbA1c level at diabetes onset and amount of HbA1c observations above diagnosis threshold for T1D and T2D [53 mmol/mol]) and found that 2942 patients did not meet any threshold criterion, 2484 met one, 4647 two, 4057 three, 531 four, and 22 met all five criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific patient counts for dysregulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "113ed7ef-54f8-4e3a-9bad-275e0bfb641d",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C44",
+      "claim": "The means of 14 different biochemical tests were differently distributed between the six groups of patients with different number of dysregulation parameters (adj. p-value<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the means of 14 of the different biochemical tests were differently distributed between the six groups (adj. p-value<0.01) of patients with different number of dysregulation parameters, and furthermore observed a distinct difference between the not-or-slightly dysregulated patients (groups 0 to 2) and the middle-or-highly dysregulated patients (groups 3 to 5) (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section provides statistical analysis of biochemical tests with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "68021a6f-42f5-44fb-9842-00c83481be45",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C45",
+      "claim": "A distinct difference was observed between the not-or-slightly dysregulated patients (groups 0 to 2) and the middle-or-highly dysregulated patients (groups 3 to 5).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the means of 14 of the different biochemical tests were differently distributed between the six groups (adj. p-value<0.01) of patients with different number of dysregulation parameters, and furthermore observed a distinct difference between the not-or-slightly dysregulated patients (groups 0 to 2) and the middle-or-highly dysregulated patients (groups 3 to 5) (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section describes the observed difference between patient groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "17fb330d-fec6-4ea5-9f58-f7d79c97dbb2",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C46",
+      "claim": "The group with 3\u20135 dysregulation parameters showed higher levels of triglyceride and HbA1c.",
+      "claim_type": "EXPLICIT",
+      "source": "The group with 3\u20135 parameters showed higher levels of triglyceride and HbA1c, and lower levels of sodium, urine creatinine, C-peptide, hemoglobin, diastolic blood pressure and height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes biochemical differences in dysregulated patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "5c6424a2-3b39-4cd8-bb18-22b7ebf221fb",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C47",
+      "claim": "The group with 3\u20135 dysregulation parameters showed lower levels of sodium, urine creatinine, C-peptide, hemoglobin, diastolic blood pressure and height.",
+      "claim_type": "EXPLICIT",
+      "source": "The group with 3\u20135 parameters showed higher levels of triglyceride and HbA1c, and lower levels of sodium, urine creatinine, C-peptide, hemoglobin, diastolic blood pressure and height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly describes biochemical differences in dysregulated patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "3526465b-d31b-4088-92e9-1854cdfe380f",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C48",
+      "claim": "Elevated levels of HbA1c, triglyceride, LDL-cholesterol and cholesterol and lower levels of HDL-cholesterol are known biochemical values associated with glycemic dysregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated levels of HbA1c, triglyceride, LDL-cholesterol and cholesterol and lower levels of HDL-cholesterol are known biochemical values associated with glycemic dysregulation and thus verified our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section states these are known associations that verify their findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "42d39aba-8fff-4ad7-b35e-138c839c6885",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C49",
+      "claim": "21 of the 71 clusters had more than 50% patients with at least three dysregulation parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 71 clusters defined above, 21 had more than 50% patients with at least three parameters (Figure 3, red circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The results section provides specific counts with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "4de26c39-bc1d-4bef-a80c-6596caf13678",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C50",
+      "claim": "10 of the 21 dysregulated clusters were found in symptom group 3.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 10 of the 21 clusters in symptom group 3 of which, cluster 5, 24, and 47, were enriched for poor compliance when using the SDC-custom dictionary (adj. p-value=5.9e-03, 1.9e-03 and 2.6e-02, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific counts and statistical evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "104875d2-5166-4aae-8edb-0c6d96b67051",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C51",
+      "claim": "Clusters 5, 24, and 47 were enriched for poor compliance (adj. p-value=5.9e-03, 1.9e-03 and 2.6e-02, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "We found 10 of the 21 clusters in symptom group 3 of which, cluster 5, 24, and 47, were enriched for poor compliance when using the SDC-custom dictionary (adj. p-value=5.9e-03, 1.9e-03 and 2.6e-02, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides statistical evidence for compliance enrichment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "72ab8c67-6068-46ac-9966-59bf9d290ec7",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C52",
+      "claim": "All patients in cluster 47 have schizophrenia (N = 76, adj. p-value=8e-141).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, all the patients in cluster 47 have schizophrenia (N = 76, adj. p-value=8e-141), and behavioral features might therefore account for the glycemic dysregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific statistical evidence for schizophrenia in cluster 47.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "94003cf4-93c3-4954-9875-c5ca20896d98",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C53",
+      "claim": "All patients in cluster 24 have epilepsy (N = 108, adj. p-value=7.6e-186).",
+      "claim_type": "EXPLICIT",
+      "source": "The same could be the case for cluster 24, in which all have epilepsy (N = 108, adj. p-value=7.6e-186).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides specific statistical evidence for epilepsy in cluster 24.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "6c6a0be5-5444-4149-bb8a-327d65b54af5",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C54",
+      "claim": "The five top associating genetic signals for glycemic dysregulation map to NCKAP5, CLNK, PSD3, KPNA5, and LINC00333.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess if glycemic dysregulation is a diabetic complication or evidence of disease etiology, we further tested whether any SNPs were associated with glycemic dysregulation (n = 2,120). The five top associating signals map to NCKAP5, CLNK, PSD3, KPNA5, and LINC00333 (Supplementary file 5), although not reaching genome-wide significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly lists the top genetic associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "3c2f28fb-7ebc-4278-9fdf-c26b73f524fc",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C55",
+      "claim": "Two of the genes associated with glycemic dysregulation are associated with schizophrenia (LINC00333 [Goes et al., 2015] and NCKAP5 [Draaken et al., 2015]).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, two of the genes associated with schizophrenia (LINC00333 [Goes et al., 2015] and NCKAP5 [Draaken et al., 2015]) and PSD3 have also been associated to traits related to urinary and blood metabolite levels, metabolic traits, and triglyceride levels (Raffler et al., 2015; Teslovich et al., 2010; Shin et al., 2014; Rueedi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides genetic associations with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "1d94676e-7a2f-40ff-b116-7ab23b6070b4",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C56",
+      "claim": "PSD3 has been associated to traits related to urinary and blood metabolite levels, metabolic traits, and triglyceride levels (Raffler et al., 2015; Teslovich et al., 2010; Shin et al., 2014; Rueedi et al., 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, two of the genes associated with schizophrenia (LINC00333 [Goes et al., 2015] and NCKAP5 [Draaken et al., 2015]) and PSD3 have also been associated to traits related to urinary and blood metabolite levels, metabolic traits, and triglyceride levels (Raffler et al., 2015; Teslovich et al., 2010; Shin et al., 2014; Rueedi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section provides genetic associations with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "92b89cc6-d7e4-4329-bacb-2fe39cdf7400",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C57",
+      "claim": "None of the five top ranked genes have been previously linked to glycemic levels or diabetic dysregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, none of the five top ranked genes have been previously linked to glycemic levels or diabetic dysregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The results section explicitly states the novelty of these genetic associations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "e9f2bc90-6a6d-4c29-85d8-45396bf3f27b",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C58",
+      "claim": "Cardiovascular complications alone are responsible for 50\u201380% of all-cause mortality in diabetes patients (Laakso, 2001).",
+      "claim_type": "EXPLICIT",
+      "source": "Cardiovascular complications alone are responsible for 50\u201380% of all-cause mortality in diabetes patients (Laakso, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction provides a cited statistic about cardiovascular mortality.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "bff08b07-62cd-4bb7-87bb-6e19e300362e",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C59",
+      "claim": "The severity of complications is affected by glycemic dysregulation, that is increased or fluctuating blood glucose levels (Stratton et al., 2000; UK Prospective Diabetes Study Group, 1998a; UK Prospective Diabetes Study Group, 1998b; Nathan et al., 1993).",
+      "claim_type": "EXPLICIT",
+      "source": "The severity of complications is affected by glycemic dysregulation, that is increased or fluctuating blood glucose levels (Stratton et al., 2000; UK Prospective Diabetes Study Group, 1998a; UK Prospective Diabetes Study Group, 1998b; Nathan et al., 1993), and successful reduction and prevention of diabetic complications have been observed when the glycemic dysregulation is reduced or removed (Stratton et al., 2000; UK Prospective Diabetes Study Group, 1998a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction provides cited evidence about glycemic dysregulation effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "5f294008-23d8-40bc-8702-1f39da961cf4",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C60",
+      "claim": "Successful reduction and prevention of diabetic complications have been observed when the glycemic dysregulation is reduced or removed (Stratton et al., 2000; UK Prospective Diabetes Study Group, 1998a).",
+      "claim_type": "EXPLICIT",
+      "source": "The severity of complications is affected by glycemic dysregulation, that is increased or fluctuating blood glucose levels (Stratton et al., 2000; UK Prospective Diabetes Study Group, 1998a; UK Prospective Diabetes Study Group, 1998b; Nathan et al., 1993), and successful reduction and prevention of diabetic complications have been observed when the glycemic dysregulation is reduced or removed (Stratton et al., 2000; UK Prospective Diabetes Study Group, 1998a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction provides cited evidence about complication prevention.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "c0f12fd0-580d-4ca4-be92-64f686d3d108",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C61",
+      "claim": "Known risk factors for complications include age, diabetes duration, polypharmacy, comorbidities (Juarez et al., 2012), increased levels of circulating triglyceride and LDL-cholesterol, and lower levels of HDL-cholesterol (Saudek et al., 2006; Giannini et al., 2011; Bitzur et al., 2009).",
+      "claim_type": "EXPLICIT",
+      "source": "Known risk factors for complications include age, diabetes duration, polypharmacy, comorbidities (Juarez et al., 2012), increased levels of circulating triglyceride and LDL-cholesterol, and lower levels of HDL-cholesterol (Saudek et al., 2006; Giannini et al., 2011; Bitzur et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The introduction provides cited evidence about known risk factors.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "1dcf2333-1ba7-463b-b826-5ab3183d0049",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C62",
+      "claim": "The data comprise all communications and contacts recorded at the hospital over a period of 19 years (1993\u20132012) for 14,017 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The data comprise all communications and contacts recorded at the hospital over a period of 19 years (1993\u20132012) for 14,017 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section explicitly describes the data scope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "3c9946ac-5a62-4ec8-a16d-0ce83253d1e1",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C63",
+      "claim": "The data includes 1.2M clinical narrative entries, 420 different types of laboratory tests with 4.15M laboratory measurements and a total number of 440,555 drug prescriptions.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes, primary diagnoses, prescriptions and laboratory tests, 1.2M clinical narrative entries, 420 different types of laboratory tests with 4.15M laboratory measurements and a total number of 440,555 drug prescriptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides specific data counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "55b67f6b-82a6-44e3-beb2-8b52748e5bf1",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C64",
+      "claim": "On average, each patient had 85 clinical narratives with an average length of 34 words (212 characters).",
+      "claim_type": "EXPLICIT",
+      "source": "On average, each patient had 85 clinical narratives with an average length of 34 words (212 characters).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides specific statistics about clinical narratives.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "577c6a05-bce7-4ec2-b23c-3312c45c5927",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C65",
+      "claim": "The Danish ICD-10 version currently contains roughly 20,000 unique descriptions of clinical concepts, each with a unique ICD-10 code.",
+      "claim_type": "EXPLICIT",
+      "source": "The Danish ICD-10 version currently contains roughly 20,000 unique descriptions of clinical concepts, each with a unique ICD-10 code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the ICD-10 dictionary size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "b8a2e637-e8c5-4703-9259-e544e7b75843",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C66",
+      "claim": "Running the text-mining algorithm on the SDCC corpus with the two dictionaries recognized 1,028,593 entities from the dictionaries in 12,504 patients (80.5% of the entire corpus).",
+      "claim_type": "EXPLICIT",
+      "source": "Running the text-mining algorithm (Simon et al., 2019, manuscript in preparation) on the SDCC corpus with the two dictionaries (ICD-10 and SDC-custom) recognized 1,028,593 entities from the dictionaries in 12,504 patients (80.5% of the entire corpus).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides specific text mining results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "63ed7660-ebda-4c0f-974e-ba0678965a51",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C67",
+      "claim": "After removal of negated sentences (n = 255,302) 594,600 code-to-text matches in 12,467 patients were left.",
+      "claim_type": "EXPLICIT",
+      "source": "After removal of negated sentences (n = 255,302) 594,600 code-to-text matches in 12,467 patients were left.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides specific counts after data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "5f686ee4-5c16-4785-8f7e-6d528c29c079",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C68",
+      "claim": "In Denmark patients with type 1 diabetes (T1D) are followed in hospital outpatient clinics such as SDCC.",
+      "claim_type": "EXPLICIT",
+      "source": "In Denmark patients with type 1 diabetes (T1D) are followed in hospital outpatient clinics such as SDCC, and the T1D patients studied comprise 35% of all adult patients with T1D in the Capital Region of Denmark.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the Danish healthcare system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "09afcab4-19aa-448e-b38f-bcbc28d7ece0",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C69",
+      "claim": "The T1D patients studied comprise 35% of all adult patients with T1D in the Capital Region of Denmark.",
+      "claim_type": "EXPLICIT",
+      "source": "In Denmark patients with type 1 diabetes (T1D) are followed in hospital outpatient clinics such as SDCC, and the T1D patients studied comprise 35% of all adult patients with T1D in the Capital Region of Denmark.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides specific statistics about cohort representation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "61704e28-d2d4-49a3-8639-44923af7235a",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C70",
+      "claim": "Patients with type 2 diabetes (T2D) are referred from primary care for treatment optimization, typically for a period of six to twelve months.",
+      "claim_type": "EXPLICIT",
+      "source": "Patients with type 2 diabetes (T2D) are referred from primary care for treatment optimization, typically for a period of six to twelve months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes T2D patient care patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "da11959d-13dc-4552-8880-6d0db8e1c4a9",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C71",
+      "claim": "At any time, approximately 2000 patients with complicated T2D are followed at the SDCC.",
+      "claim_type": "EXPLICIT",
+      "source": "At any time, approximately 2000 patients with complicated T2D are followed at the SDCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides specific patient counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "bc82dbd5-b5a5-4180-bf40-c134606b2335",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C72",
+      "claim": "The patients registered in the SDCC electronic patient records are representative of Danish patients with T1D and the 10% most complicated patients with T2D (J\u00f8rgensen et al., 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, the patients registered in the SDCC electronic patient records are representative of Danish patients with T1D and the 10% most complicated patients with T2D (J\u00f8rgensen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes cohort representativeness with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "d5a1278c-641a-4131-8229-1ca5fbfb0759",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C73",
+      "claim": "A total of 2290 patients with T2D and 1028 patients with T1D from SDCC were genotyped separately using the HumanOmniExpress (24v1) array from Illumina.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 2290 patients with T2D and 1028 patients with T1D from SDCC were genotyped separately using the HumanOmniExpress (24v1) array from Illumina as previously described (Charmet et al., 2018; Steinthorsdottir et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides specific genotyping details with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "364d58d4-83b8-4438-a12a-2369076b7353",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C74",
+      "claim": "Of the 3318 patients with genetic data, 2337 had EHR information and could be mapped to clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 3318 patients, 2337 had EHR information and could be mapped to clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides specific counts of patients with both genetic and EHR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "0307b5af-2b77-41b0-8fa3-f2d791cae520",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C75",
+      "claim": "In total 2125 patients passed quality control and were taken forward for genomic characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "In total 2125 patients passed quality control and were taken forward for genomic characterization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides specific counts after quality control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "7ff35804-6033-42d5-bdbb-151760943bdd",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "claim_id": "C76",
+      "claim": "10,112 patients had HbA1c measurements that fulfilled the criteria for glycemic dysregulation analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In total 10,112 patients had HbA1c measurements that fulfilled the criteria, and the subsequent analyses were performed on this sub-population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section provides specific counts for HbA1c analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed electronic health records from 14,017 diabetes patients at Steno Diabetes Center Copenhagen over 19 years (1993-2012), comprising 1.2M clinical narratives, 4.15M laboratory measurements, and 440,555 drug prescriptions. Text mining using ICD-10 and a custom SDC vocabulary (totaling ~20,000 medical terms) recognized 1,028,593 entities in 12,504 patients, which after negation removal yielded 594,600 code-to-text matches in 12,467 patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C62-C67 provide consistent, explicit data about the cohort size, time period, data types, and text mining results. Claims C68-C72 provide important context about cohort representativeness (35% of T1D patients in the Capital Region, 10% most complicated T2D patients). The numbers are internally consistent and the methodology is clearly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "422614fc-9279-4115-a153-3285af035d9d",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Text mining with two vocabularies (ICD-10 and SDC-custom) resulted in a 4-fold increase in codes per patient (from 4.9 to 18.6 codes), with ICD-10 chapters I (circulatory), VII (eye), XVIII (symptoms), and XIX (injury) showing the largest increases (6, 15, 25, and 22-fold respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C9 provide specific quantitative evidence with reference to Figure 1 showing the dramatic enrichment of phenotypic information through text mining. The fold-increases are explicitly stated and the pattern makes clinical sense given that symptoms and complications are more likely documented in narratives than assigned as primary codes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "cf0f070d-8e9e-48b9-bd89-809ede01bae2",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The cohort is genetically homogeneous, consisting of Caucasian diabetes patients from Denmark.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C3 states genetic homogeneity but provides no supporting genetic data or analysis to verify this assertion. While the cohort is geographically restricted to Denmark, genetic homogeneity requires empirical validation through population structure analysis (e.g., principal component analysis), which is not presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "5a821dbe-ec32-49ee-9e73-3885be7499e8",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Markov clustering (MCL) of patient diagnosis vectors produced 172 clusters (mean=65, median=40, range=11-979 patients), capturing 11,208 patients (80.47%). The 71 clusters with \u226550 patients were further organized into six main symptom groups plus one outlier using hierarchical clustering based on ICD-10 chapter XVIII symptoms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C10-C12, C19 provide consistent statistics about the clustering approach and results. The robustness analysis (Figure 2\u2014figure supplement 5) supports the stability of the clustering. The hierarchical grouping into symptom groups is methodologically sound and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "46ba0fbc-ceee-4946-9ce0-17eb51870177",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Despite excluding primary diabetes codes from clustering, specific clusters showed significant enrichment for diabetes subtypes: clusters 1 and 9 for T1D (N=506, p=9.3e-51; N=101, p=1.2e-10), clusters 3, 5, and 6 for T2D (N=233, p=9.1e-10; N=170, p=3.8e-13; N=158, p=8.4e-17), and cluster 25 for E13 'other diabetes' (N=93, p=1.8e-142).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 provide strong statistical evidence (highly significant p-values) that the unsupervised clustering successfully identified diabetes subtype-specific groups based solely on comorbidities and symptoms. This validates the clustering approach and demonstrates that comorbidity patterns differ meaningfully between diabetes subtypes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "3dd65f26-97c3-48e5-a541-d017480f1423",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Symptom group 5 was characterized by symptoms related to skin and subcutaneous tissue (adj. p<0.001), while symptom group 3 was characterized by symptoms related to digestive system/abdomen, cognition/perception/emotional state/behavior, and general symptoms (adj. p<0.001 for all).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 provide statistical evidence for symptom group characterization using Fisher's exact test. The characterizations are clinically meaningful and consistent with the enriched codes shown in Figure 3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "f67f4adb-fb65-4d27-acca-0ac7b64c1551",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Specific clusters showed associations with genes relevant to their clinical phenotypes: cluster 8 (cardiovascular complications) associated with THBS4, ERG, and PLCB1 (linked to LDL, aortic aneurysm, pulse pressure, blood pressure); cluster 21 (foot ulcer) associated with MCF2L (linked to coagulation). Of 103 mapped genes from top associations, five (CDKAL1, DCDC2C, KLF12, LPIN2, TLE1) were diabetes-related.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 provide specific genetic associations with appropriate citations. The associations are biologically plausible given the cluster phenotypes. However, the genetic analysis is limited by small sample size (only 2,125 patients with genetic data, ~15% of cohort) and none reached genome-wide significance, which appropriately tempers the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "f0bef29a-11b5-4349-af83-93573b06291b",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Corns and callosities (L84) were observed significantly more in T1D than T2D patients (CS=1.24, p=4.06e-15 vs CS=-1.58, p=1.25e-03), with T1D diagnosis preceding L84 by mean 8.3 years (p=1.01e-39). This is clinically relevant as corns/callosities can lead to skin defects increasing risk of foot ulcers and amputations in diabetes patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 provide strong statistical evidence for a temporal relationship between T1D and corns/callosities, with appropriate clinical context from citations. The temporal analysis strengthens the finding beyond simple co-occurrence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "21461a2a-7795-48e1-a143-d7d1ed6f468c",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The time between T2D diagnosis and elevated blood glucose (R73) was significantly shorter in symptom group 2 than in groups 4, 5, and 6 (mean=2.2 days; p=6.45e-04, 3.29e-06, 2.73e-06 respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 provides specific temporal analysis with strong statistical significance. The very short time interval (2.2 days) suggests these diagnoses are essentially concurrent in symptom group 2, which is clinically interpretable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "c671870a-ad7b-42d9-8ad7-98cea617c24c",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In symptom group 5, five of eleven clusters were enriched for musculoskeletal diseases (ICD-10 chapter XIII). Clusters 8, 22, 33, 35, 45 in this group were all enriched for blood glucose lowering drugs excluding insulin (ATC A10B, p<0.05), and all except cluster 8 were associated with glycemic dysregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 provide consistent evidence linking musculoskeletal comorbidities with specific medication patterns and glycemic dysregulation. The exception of cluster 8 (cardiovascular-focused) is noted appropriately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "746b6a1e-24eb-4af9-99a3-af49654fdd98",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Symptom group 7 showed specific comorbidity patterns: E11-E13 and K86-E78 pairs observed less than expected (CS=-1.46, p=1.57e-04; CS=-1.24, p=5.46e-04), while I34 (mitral valve disorder) co-occurred more with I50 (heart failure, CS=1.83, p=0.009) and I44 (bundle-branch block, CS=1.53, p=0.0018). Top genetic signals mapped to MIR8052 (associated with pulse pressure) and ANLN (associated with systolic blood pressure).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 provide statistically significant comorbidity patterns with relevant genetic associations. The cardiovascular theme is consistent across the comorbidities and genetic findings, though genetic associations did not reach genome-wide significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "6a3fcdcb-a2e0-4a56-b735-443ed92067ae",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Evaluation of five glycemic dysregulation parameters showed: 2,942 patients met 0 criteria, 2,484 met 1, 4,647 met 2, 4,057 met 3, 531 met 4, and 22 met all 5 criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 provide explicit patient counts for dysregulation classification. The distribution is reasonable with most patients meeting 1-3 criteria and very few meeting all 5, which is expected in a clinical population.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "e8487210-ebe8-4add-8677-74f6da198787",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Fourteen biochemical tests showed significantly different mean distributions across dysregulation groups (p<0.01), with a distinct difference between not-or-slightly dysregulated (groups 0-2) and middle-or-highly dysregulated patients (groups 3-5). The dysregulated group (3-5 parameters) showed higher triglyceride and HbA1c, and lower sodium, urine creatinine, C-peptide, hemoglobin, diastolic blood pressure, and height. Known associations (elevated HbA1c, triglyceride, LDL-cholesterol, cholesterol; lower HDL-cholesterol) verified the findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 provide statistical validation of the dysregulation classification with reference to Figure 1\u2014figure supplement 6. The biochemical patterns are consistent with known diabetes pathophysiology, and the authors appropriately note both confirmatory findings and potentially novel markers (sodium, urine creatinine, C-peptide, hemoglobin).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "55b74ed2-dff3-4cf0-ba89-cdc1b7c67c6f",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Of the 71 clusters, 21 had >50% patients with \u22653 dysregulation parameters, with 10 of these in symptom group 3. Clusters 5, 24, and 47 were enriched for poor compliance (p=5.9e-03, 1.9e-03, 2.6e-02). All patients in cluster 47 had schizophrenia (N=76, p=8e-141) and all in cluster 24 had epilepsy (N=108, p=7.6e-186), suggesting behavioral/neurological factors may contribute to dysregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 provide strong statistical evidence linking specific psychiatric/neurological conditions to glycemic dysregulation. The extremely significant p-values for schizophrenia and epilepsy enrichment, combined with poor compliance enrichment, support a plausible mechanistic hypothesis, though causality cannot be established from this observational data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "453fb7fd-af5f-4595-aa4e-bc12836c3bd1",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The five top genetic signals associated with glycemic dysregulation mapped to NCKAP5, CLNK, PSD3, KPNA5, and LINC00333 (not reaching genome-wide significance). Two genes (LINC00333, NCKAP5) were associated with schizophrenia, and PSD3 with metabolic traits and triglyceride levels. None of these five genes had been previously linked to glycemic levels or diabetic dysregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C57 report novel genetic associations but explicitly note they did not reach genome-wide significance (p<5\u00d710\u207b\u2078). The associations with schizophrenia genes are intriguing given cluster 47 findings, but the lack of genome-wide significance, limited sample size (n=2,120), and absence of replication make these findings preliminary. The claim of novelty (C57) is difficult to verify without comprehensive literature review.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "28d0bc2d-bbd2-4504-956e-dbadbf87ec73",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A total of 3,318 patients were genotyped (2,290 T2D, 1,028 T1D) using Illumina HumanOmniExpress arrays. Of these, 2,337 had EHR information mappable to clusters, and 2,125 passed quality control for genomic characterization. For glycemic dysregulation analysis, 10,112 patients had qualifying HbA1c measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 provide clear accounting of sample sizes through the analysis pipeline with appropriate citations for genotyping methods. The numbers are internally consistent and the quality control steps are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    },
+    {
+      "id": "00f8b6c8-7571-4077-84c1-ff77574cec55",
+      "content_id": "5c4e7805-1d02-4be4-9909-092b42b3702e",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background literature establishes that cardiovascular complications account for 50-80% of diabetes mortality, complication severity is affected by glycemic dysregulation, and successful dysregulation reduction prevents complications. Known risk factors include age, diabetes duration, polypharmacy, comorbidities, and lipid abnormalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 provide appropriate background context with citations to established literature. These are standard knowledge claims that frame the study rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T13:55:32.074966Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "178f05e9-4c6d-4003-93eb-38bf33c5809f",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "f9f9bbb1-d649-4080-9e03-ca1882422d5f",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "1dcf2333-1ba7-463b-b826-5ab3183d0049",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "3c9946ac-5a62-4ec8-a16d-0ce83253d1e1",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "55b67f6b-82a6-44e3-beb2-8b52748e5bf1",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "577c6a05-bce7-4ec2-b23c-3312c45c5927",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "b8a2e637-e8c5-4703-9259-e544e7b75843",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "63ed7660-ebda-4c0f-974e-ba0678965a51",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "5f686ee4-5c16-4785-8f7e-6d528c29c079",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "09afcab4-19aa-448e-b38f-bcbc28d7ece0",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "61704e28-d2d4-49a3-8639-44923af7235a",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "da11959d-13dc-4552-8880-6d0db8e1c4a9",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "bc82dbd5-b5a5-4180-bf40-c134606b2335",
+      "result_id": "ab8b5474-b85a-4b05-8e80-8ac8088c3794"
+    },
+    {
+      "claim_id": "841031b2-0530-4f81-bbe7-d5054eb6e020",
+      "result_id": "422614fc-9279-4115-a153-3285af035d9d"
+    },
+    {
+      "claim_id": "48b619ca-a01f-435a-af0a-507c254d69b7",
+      "result_id": "422614fc-9279-4115-a153-3285af035d9d"
+    },
+    {
+      "claim_id": "e5b7538a-b4cf-4ec6-a912-7471c9da8a49",
+      "result_id": "cf0f070d-8e9e-48b9-bd89-809ede01bae2"
+    },
+    {
+      "claim_id": "7f17b347-0b2c-4486-bf88-62c2c13a23a1",
+      "result_id": "5a821dbe-ec32-49ee-9e73-3885be7499e8"
+    },
+    {
+      "claim_id": "42910d8d-446b-4fa5-bc76-c6966ec9617d",
+      "result_id": "5a821dbe-ec32-49ee-9e73-3885be7499e8"
+    },
+    {
+      "claim_id": "b176c299-2b59-4c31-9ca6-2721e305c264",
+      "result_id": "5a821dbe-ec32-49ee-9e73-3885be7499e8"
+    },
+    {
+      "claim_id": "134e7069-559c-44d2-880f-78778061715f",
+      "result_id": "5a821dbe-ec32-49ee-9e73-3885be7499e8"
+    },
+    {
+      "claim_id": "89866a43-f4ce-4a1d-969b-52106dc4b7d3",
+      "result_id": "5a821dbe-ec32-49ee-9e73-3885be7499e8"
+    },
+    {
+      "claim_id": "3fedcb54-5a16-4f49-b511-98f3a8e6827e",
+      "result_id": "46ba0fbc-ceee-4946-9ce0-17eb51870177"
+    },
+    {
+      "claim_id": "de6cb75b-b828-4c60-ba00-f5957ba2f0cb",
+      "result_id": "46ba0fbc-ceee-4946-9ce0-17eb51870177"
+    },
+    {
+      "claim_id": "1081fa59-1059-4db2-ae59-7c9b1bca7fbc",
+      "result_id": "46ba0fbc-ceee-4946-9ce0-17eb51870177"
+    },
+    {
+      "claim_id": "66033fbe-4091-43cb-ab53-4f28d2fd7e93",
+      "result_id": "46ba0fbc-ceee-4946-9ce0-17eb51870177"
+    },
+    {
+      "claim_id": "9e0b1cc9-2c24-4328-b3fa-510233651177",
+      "result_id": "46ba0fbc-ceee-4946-9ce0-17eb51870177"
+    },
+    {
+      "claim_id": "93a6e55e-6bd4-4129-b4c0-2a1922a296a0",
+      "result_id": "46ba0fbc-ceee-4946-9ce0-17eb51870177"
+    },
+    {
+      "claim_id": "b0269f4e-f866-4d6a-aaa5-45c8d2d510d4",
+      "result_id": "3dd65f26-97c3-48e5-a541-d017480f1423"
+    },
+    {
+      "claim_id": "4fc1f5f7-b8fc-4118-b71c-1372e959b264",
+      "result_id": "3dd65f26-97c3-48e5-a541-d017480f1423"
+    },
+    {
+      "claim_id": "5cca3555-9488-436d-a0f4-06628fed3aa6",
+      "result_id": "f67f4adb-fb65-4d27-acca-0ac7b64c1551"
+    },
+    {
+      "claim_id": "db8c49f2-8af7-4873-b440-443c462f7306",
+      "result_id": "f67f4adb-fb65-4d27-acca-0ac7b64c1551"
+    },
+    {
+      "claim_id": "e5635060-21c6-454e-8ac5-89e3238ff74f",
+      "result_id": "f67f4adb-fb65-4d27-acca-0ac7b64c1551"
+    },
+    {
+      "claim_id": "cd43b356-387a-40fa-940e-ccf76a6a3015",
+      "result_id": "f67f4adb-fb65-4d27-acca-0ac7b64c1551"
+    },
+    {
+      "claim_id": "472714fa-c913-4cdf-805b-0a3541f58c0a",
+      "result_id": "f67f4adb-fb65-4d27-acca-0ac7b64c1551"
+    },
+    {
+      "claim_id": "00b40a2d-4d69-47cc-9680-4a1731d00a3d",
+      "result_id": "f0bef29a-11b5-4349-af83-93573b06291b"
+    },
+    {
+      "claim_id": "4823f103-c9dc-4604-a75f-2d944c204500",
+      "result_id": "f0bef29a-11b5-4349-af83-93573b06291b"
+    },
+    {
+      "claim_id": "59e89789-7194-4aa5-bccf-f2d561f23621",
+      "result_id": "f0bef29a-11b5-4349-af83-93573b06291b"
+    },
+    {
+      "claim_id": "1d98380c-f14f-4556-b18f-7a754739790f",
+      "result_id": "21461a2a-7795-48e1-a143-d7d1ed6f468c"
+    },
+    {
+      "claim_id": "acb4c560-d1c0-49b7-a0c8-97aa8e39fa22",
+      "result_id": "c671870a-ad7b-42d9-8ad7-98cea617c24c"
+    },
+    {
+      "claim_id": "0108b1f9-bc2b-4c9f-8221-d0b37559c34a",
+      "result_id": "c671870a-ad7b-42d9-8ad7-98cea617c24c"
+    },
+    {
+      "claim_id": "00ef6b9e-fa0a-4a44-b1e0-e76384bf369d",
+      "result_id": "c671870a-ad7b-42d9-8ad7-98cea617c24c"
+    },
+    {
+      "claim_id": "53ba5cd0-f18c-4667-99b8-07a794cc8c6f",
+      "result_id": "746b6a1e-24eb-4af9-99a3-af49654fdd98"
+    },
+    {
+      "claim_id": "5661c971-c842-40b8-acd0-899b89975042",
+      "result_id": "746b6a1e-24eb-4af9-99a3-af49654fdd98"
+    },
+    {
+      "claim_id": "397a4be1-e293-4f8c-884f-6746e88b38c6",
+      "result_id": "746b6a1e-24eb-4af9-99a3-af49654fdd98"
+    },
+    {
+      "claim_id": "d63f8aaa-cb1f-4380-bda0-dc97724afbc2",
+      "result_id": "746b6a1e-24eb-4af9-99a3-af49654fdd98"
+    },
+    {
+      "claim_id": "bc348a3e-e0c1-4c5d-96f0-39d3d211d6bd",
+      "result_id": "6a3fcdcb-a2e0-4a56-b735-443ed92067ae"
+    },
+    {
+      "claim_id": "1cb62d8e-ad67-4679-a25b-42743618b6d0",
+      "result_id": "6a3fcdcb-a2e0-4a56-b735-443ed92067ae"
+    },
+    {
+      "claim_id": "2d746554-d53d-4db9-897d-1c81373c4ba7",
+      "result_id": "6a3fcdcb-a2e0-4a56-b735-443ed92067ae"
+    },
+    {
+      "claim_id": "68d23edc-8981-4044-a51d-e626d8a01912",
+      "result_id": "6a3fcdcb-a2e0-4a56-b735-443ed92067ae"
+    },
+    {
+      "claim_id": "6a6c5c90-6559-47c2-8e94-c1c9593d71ab",
+      "result_id": "6a3fcdcb-a2e0-4a56-b735-443ed92067ae"
+    },
+    {
+      "claim_id": "337c42e4-703e-43c5-bc2c-f443ecee5fbe",
+      "result_id": "6a3fcdcb-a2e0-4a56-b735-443ed92067ae"
+    },
+    {
+      "claim_id": "113ed7ef-54f8-4e3a-9bad-275e0bfb641d",
+      "result_id": "e8487210-ebe8-4add-8677-74f6da198787"
+    },
+    {
+      "claim_id": "68021a6f-42f5-44fb-9842-00c83481be45",
+      "result_id": "e8487210-ebe8-4add-8677-74f6da198787"
+    },
+    {
+      "claim_id": "17fb330d-fec6-4ea5-9f58-f7d79c97dbb2",
+      "result_id": "e8487210-ebe8-4add-8677-74f6da198787"
+    },
+    {
+      "claim_id": "5c6424a2-3b39-4cd8-bb18-22b7ebf221fb",
+      "result_id": "e8487210-ebe8-4add-8677-74f6da198787"
+    },
+    {
+      "claim_id": "3526465b-d31b-4088-92e9-1854cdfe380f",
+      "result_id": "e8487210-ebe8-4add-8677-74f6da198787"
+    },
+    {
+      "claim_id": "42d39aba-8fff-4ad7-b35e-138c839c6885",
+      "result_id": "55b74ed2-dff3-4cf0-ba89-cdc1b7c67c6f"
+    },
+    {
+      "claim_id": "4de26c39-bc1d-4bef-a80c-6596caf13678",
+      "result_id": "55b74ed2-dff3-4cf0-ba89-cdc1b7c67c6f"
+    },
+    {
+      "claim_id": "104875d2-5166-4aae-8edb-0c6d96b67051",
+      "result_id": "55b74ed2-dff3-4cf0-ba89-cdc1b7c67c6f"
+    },
+    {
+      "claim_id": "72ab8c67-6068-46ac-9966-59bf9d290ec7",
+      "result_id": "55b74ed2-dff3-4cf0-ba89-cdc1b7c67c6f"
+    },
+    {
+      "claim_id": "94003cf4-93c3-4954-9875-c5ca20896d98",
+      "result_id": "55b74ed2-dff3-4cf0-ba89-cdc1b7c67c6f"
+    },
+    {
+      "claim_id": "6c6a0be5-5444-4149-bb8a-327d65b54af5",
+      "result_id": "453fb7fd-af5f-4595-aa4e-bc12836c3bd1"
+    },
+    {
+      "claim_id": "3c2f28fb-7ebc-4278-9fdf-c26b73f524fc",
+      "result_id": "453fb7fd-af5f-4595-aa4e-bc12836c3bd1"
+    },
+    {
+      "claim_id": "1d94676e-7a2f-40ff-b116-7ab23b6070b4",
+      "result_id": "453fb7fd-af5f-4595-aa4e-bc12836c3bd1"
+    },
+    {
+      "claim_id": "92b89cc6-d7e4-4329-bacb-2fe39cdf7400",
+      "result_id": "453fb7fd-af5f-4595-aa4e-bc12836c3bd1"
+    },
+    {
+      "claim_id": "d5a1278c-641a-4131-8229-1ca5fbfb0759",
+      "result_id": "28d0bc2d-bbd2-4504-956e-dbadbf87ec73"
+    },
+    {
+      "claim_id": "364d58d4-83b8-4438-a12a-2369076b7353",
+      "result_id": "28d0bc2d-bbd2-4504-956e-dbadbf87ec73"
+    },
+    {
+      "claim_id": "0307b5af-2b77-41b0-8fa3-f2d791cae520",
+      "result_id": "28d0bc2d-bbd2-4504-956e-dbadbf87ec73"
+    },
+    {
+      "claim_id": "7ff35804-6033-42d5-bdbb-151760943bdd",
+      "result_id": "28d0bc2d-bbd2-4504-956e-dbadbf87ec73"
+    },
+    {
+      "claim_id": "e9f2bc90-6a6d-4c29-85d8-45396bf3f27b",
+      "result_id": "00f8b6c8-7571-4077-84c1-ff77574cec55"
+    },
+    {
+      "claim_id": "bff08b07-62cd-4bb7-87bb-6e19e300362e",
+      "result_id": "00f8b6c8-7571-4077-84c1-ff77574cec55"
+    },
+    {
+      "claim_id": "5f294008-23d8-40bc-8702-1f39da961cf4",
+      "result_id": "00f8b6c8-7571-4077-84c1-ff77574cec55"
+    },
+    {
+      "claim_id": "c0f12fd0-580d-4ca4-be92-64f686d3d108",
+      "result_id": "00f8b6c8-7571-4077-84c1-ff77574cec55"
+    }
+  ],
+  "comparisons": []
+}

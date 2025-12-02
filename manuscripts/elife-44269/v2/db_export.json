@@ -1,0 +1,1194 @@
+{
+  "submission": {
+    "id": "d9c1250b-8ade-48d6-b5d7-94239414cedd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:32:28.301307Z",
+    "updated_at": "2025-12-02T09:32:28.301307Z"
+  },
+  "content": [
+    {
+      "id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "submission_id": "d9c1250b-8ade-48d6-b5d7-94239414cedd",
+      "content_type": "manuscript",
+      "content_text": "# Evolution of empathetic moral evaluation\n\n## Authors\n\n- Arunas L Radzvilavicius<sup>1</sup> \u2020\n- Alexander J Stewart<sup>2</sup>\n- Joshua B Plotkin<sup>1</sup> ([ORCID: 0000-0003-2349-6304](https://orcid.org/0000-0003-2349-6304)) \u2020\n\n### Affiliations\n\n1. Department of Biology University of Pennsylvania Philadelphia United States\n2. Department of Biology University of Houston Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSocial norms can promote cooperation by assigning reputations to individuals based on their past actions. A good reputation indicates that an individual is likely to reciprocate. A large body of research has established norms of moral assessment that promote cooperation, assuming reputations are objective. But without a centralized institution to provide objective evaluation, opinions about an individual\u2019s reputation may differ across a population. In this setting we study the role of empathy\u2013the capacity to form moral evaluations from another person\u2019s perspective. We show that empathy tends to foster cooperation by reducing the rate of unjustified defection. The norms of moral evaluation previously considered most socially beneficial depend on high levels of empathy, whereas different norms maximize social welfare in populations incapable of empathy. Finally, we show that empathy itself can evolve through social contagion. We conclude that a capacity for empathy is a key component for sustaining cooperation in societies.\n\n## Introduction\n\nWidespread cooperation among unrelated individuals in human societies is puzzling, given strong incentives for exploitative cheating in well-mixed populations (Ohtsuki et al., 2006). Theories of cooperation based on kin selection, multilevel selection, and reciprocal altruism (Nowak, 2006) provide some insight into the forces driving prosocial behavior, but in human societies cultural forces appear to be of much greater importance (Gintis et al., 2003; Buckholtz and Marois, 2012). One possible explanation rooted in cultural norms is that humans condition their behavior on moral reputations: the decision to cooperate depends on the reputation of the recipient, which itself depends on the recipient\u2019s previous actions (Leimar and Hammerstein, 2001; Nowak and Sigmund, 2005). Altruistic behavior, for instance, may improve an individual\u2019s reputation and confer the image of a valuable member of society, which attracts cooperation from others in future interactions (Nowak and Sigmund, 1998).\n\nGame theory has been used to study how reputations might facilitate cooperation in a population engaged in repeated social interactions, such as the Prisoner\u2019s Dilemma or the Donation Game (Rapoport et al., 1965; Nowak and Sigmund, 2005). In the simplest analysis an individual\u2019s reputation is binary, either \u2018good\u2019 or \u2018bad\u2019, and the strategy of a potential donor depends on the recipient\u2019s reputation (Ohtsuki and Iwasa, 2004) \u2013 for example, cooperate with a good recipient and defect against a bad recipient. A third-party observer then updates the reputation of the donor in response to her action towards a recipient. Reputation updates are governed by a set of rules, known as a social norm, which prescribe how an individual\u2019s reputation depends on her actions during social interactions.\n\nA common simplification in models of moral reputations is that all reputations are both publicly known and fully objective (e.g. Nowak and Sigmund, 1998; Pacheco et al., 2006; Ohtsuki et al., 2009; Sasaki et al., 2017). This means that all individuals know the reputations of all members of the society, and personal opinions about each individual\u2019s reputation do not differ. This is a reasonable assumption if there is a central institution that provides objective moral evaluation, or if opinions regarding reputations homogenize rapidly through gossip (Nowak and Sigmund, 2005). But these conditions are rare in human populations, and opinions about reputations typically differ among individuals \u2013 for instance, because observers use different moral evaluation rules, or because of divergent observation histories, or errors. In these cases a single focal individual may have different reputations in the eyes of distinct observers, resulting in much lower rates of sustained cooperation (Okada et al., 2017; Hilbe et al., 2018).\n\nMoral relativity \u2013 that is, when an individual\u2019s reputation depends on the observer \u2013 introduces an interesting and overlooked ambiguity in how an observer should evaluate a donor interacting with a recipient. One approach is to assume that the observer can refer only to her own opinion of the recipient\u2019s reputation, when evaluating a donor. We call this an \u2018egocentric\u2019 judgment, because the observer makes moral evaluations solely from her own perspective (Figure 1a). Alternatively, an observer can perform a moral evaluation that accounts for the recipient\u2019s reputation in the eyes of the donor (Figure 1b). This \u2018empathetic\u2019 case requires that the observer take the perspective of another person, which assumes some capacity for recognizing the relativity of moral status.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44269/elife-44269-fig1-v2.jpg)\n\n**Figure 1.:** An observer updates the reputation of a donor based on the donor\u2019s action towards a recipient and the recipient\u2019s reputation.\u00a0(a) An egocentric observer ($E=0$) forms a moral judgment based on the recipient\u2019s reputation as seen from her own perspective. (b) An empathetic observer makes a judgment based on the recipient\u2019s reputation in the eyes of the donor ($E=1$). (c) More generally the empathy parameter $E$ corresponds to the probability that observer will assess the donor using the donor\u2019s \u2013 not the observer\u2019s \u2013 perspective of the recipient\u2019s reputation.\n\nPsychological studies implicate empathy as potent driver of prosocial and cooperative behavior in human societies (Eisenberg and Fabes, 1990; Batson et al., 1997; Batson and Moran, 1999; Decety et al., 2016). The cognitive capacity to intentionally adopt the subjective perspective of another individual is known as a key component of empathetic behavior (Davis, 1983). This so-called \u2018perspective-taking\u2019 component of empathy is in turn related to the theory of mind, or the ability to attribute mental states to explain and predict the behavior and emotions of other individuals (Premack and Woodruff, 1978; Hughes and Dunn, 1998). Empathetic perspective-taking generally develops between infancy and pre-school years, with at least some components learned from parents (Krevans and Gibbs, 1996; Knafo et al., 2008; Farrant et al., 2012). And yet empathetic behavior is not universal, as even adults often fail to empathize, especially in interactions with unfamiliar social or different cultural groups (Cikara et al., 2014). In the context of social dilemmas, it has been suggested that empathy might play a role in evaluating the \u2018fairness\u2019 of opponents\u2019 actions and predicting their strategies (Singer and Fehr, 2005). However, the role of empathy for moral evaluation of social behavior has not been thoroughly studied. In particular, there is currently no formal way to analyze the role of empathetic perspective-taking in game-theoretic models of human cooperation.\n\nHere we work to resolve the ambiguity of subjective moral judgment by introducing the concept of empathy into game-theoretic analyses of cooperation. We treat empathy $E$ as the probability that an observer will form moral evaluations from the perspective of another person (Figure 1c). First we investigate the effects of empathy on the level of sustained cooperation under simple social norms, while players update their strategies. Next we consider evolution of empathy itself using the formalism of adaptive dynamics; and we determine conditions under which empathy will evolve and remain evolutionarily stable.\n\n## Model\n\n### A model of moral assessment\n\nWe consider a population of individuals who can choose between cooperation or defection in a sequence of pairwise, one-shot donation games. In a given game the donor must choose whether or not to cooperate with the other player. If a donor cooperates she pays the cost of an altruistic act $c$, while the recipient receives the benefit $b>c$; if the donor defects she incurs no cost, and the recipient receives no benefit. The donation game is therefore a special case of the prisoner\u2019s dilemma (Rapoport et al., 1965) characterized by the payoff matrix $(b\u2212c\u2212cb0)$.\n\nThe decision to cooperate or defect depends on the donor\u2019s strategy $S=(p,q)$, which prescribes an action conditioned on the reputation of the recipient. Here $p$ and $q$ denote the probability that the donor will cooperate with a \u2018bad\u2019 or a \u2018good\u2019 recipient, respectively. As is common in the game-theoretic literature with reputations (Sasaki et al., 2017), we assume that both $p$ and $q$ are in ${0,1}$, and so we focus on three strategies: Always Cooperate ALLC, $S=(1,1)$); Always Defect (ALLD, $S=(0,0)$); and Discriminate (DISC, $S=(0,1)$), which cooperates when paired with a recipient with a good reputation and defects against a recipient with a bad reputation. We also relax this assumption and report qualitatively similar results for the continuous strategy space $(p,q)\\in[0,1]^{2}$. (We neglect anti-discriminators $S=(1,0)$, which can never achieve high frequency.)\n\nPlayers\u2019 reputations in the eyes of each member of the society are updated according to a social norm. In general, the update rule prescribed by a social norm can depend on the entire history of donor-recipient interactions, including the reputations of all interacting parties (Santos et al., 2018). Complex rules of moral evaluation, however, require high cognitive ability and effort that seem unrealistic in many real-world social interactions. Moreover, relatively simple \u2018second-order\u2019 norms of moral assessment, which update a donor\u2019s reputation based solely on the donor\u2019s action and the recipient\u2019s reputation, tend to outperform more complex social norms (Santos et al., 2018).\n\nWe consider second-order social norms, which can be encoded by a binary matrix $N_{i\u2062j}$. The row-index $i$ indicates donor\u2019s action, $i=1$ for defect or $i=2$ for cooperate; and the column-index $j$ indicates reputation of the recipient, $j=1$ for bad or $j=2$ for good. We focus on the four second-order norms that are most prominent in the literature: Stern Judging $(GBBG)$, Simple Standing $(GBGG)$, Scoring $(BBGG)$, and Shunning $(BBBG)$. For example, under Stern Judging (SJ) or Simple Standing (SS) an observer will assign a good reputation to a donor who punishes a recipient with a bad reputation, by defection. Whereas under Shunning (SH) or Scoring (SC) an observer will assign a bad reputation to a donor who defects against any recipient, regardless of the recipient\u2019s reputation. Following (Sasaki et al., 2017) we also allow for errors in strategy execution and in observation: a cooperative act is erroneously executed as defection with probability $e_{1}$, while an observer erroneously assigns a bad reputation instead of a good reputation, and vice versa, with probability $e_{2}$.\n\nThe broad consensus in the literature is that Stern Judging is the most efficient norm for promoting cooperation, along with widespread adoption of the discriminator strategy. This result is robust to variation in strategy exploration rates (Santos et al., 2016a), population sizes and error rates (Santos et al., 2016b), and it even extends to the realm of more complex norms of third and fourth order (Santos et al., 2018). Pacheco et al. (2006) have additionally shown that Stern Judging is the norm most likely to evolve in a group-structured population, because it maximizes the collective payoff of the group.\n\nPrior studies of cooperation and moral assessment (Nowak and Sigmund, 1998; Pacheco et al., 2006; Ohtsuki et al., 2009; Sasaki et al., 2017; Santos et al., 2016a; Santos et al., 2016b) have assumed that reputations are objective and common knowledge in the population \u2013 meaning that opinions about reputations do not differ among individuals. Here we relax this assumption and allow individuals to differ in their opinions about one another. This reveals an under-appreciated subtlety in the application of norms for updating reputations. Namely, when an observer updates the reputation of a donor interacting with a recipient, the \u2018reputation of the recipient\u2019 could be considered either from the observer\u2019s own perspective, or from the donor\u2019s perspective. Under a purely egotistical application of a social norm, the \u2018recipient reputation\u2019 means the reputation in the eyes of the observer, who is forming an assessment of the donor. In this case the observer either ignores, or is unaware of, the donor\u2019s view of the recipient. This case corresponds to $E=0$ in our analysis, the no-empathy model of moral assessment. However, we also analyze the possibility of empathetic moral assessment, $E>0$, whereby the observer may account for donor\u2019s view of the recipient\u2019s reputation when assessing the donor. In the extreme case $E=1$, for example, the observer always uses the donor\u2019s view of the recipient\u2019s reputation when applying the social norm to update the donor\u2019s reputation. In general, the parameter $E\\in[0,1]$ determines the probability that an observer uses the donor\u2019s view of the recipient\u2019s reputation, as opposed to her own view, when applying the social norm to update the donor\u2019s reputation (see Figure 1 and Equations 5\u20138 in Materials\u00a0and\u00a0methods).\n\n## Results\n\n### Empathetic moral judgment facilitates cooperation\n\nTo analyze how empathy influences cooperation we first examine strategy evolution with a fixed degree of empathy $0\\leqE\\leq1$. We use the classic replicator-dynamic equations (Taylor and Jonker, 1978; Nowak and Sigmund, 2004) that describe how the frequencies of strategies (ALLD, ALLC, and DISC) evolve over time in an infinite population of players\u2019 strategies reproducing according to their payoffs. To simplify analysis, in the infinite-population model we assume that reputation frequencies reach equilibrium before strategies are updated \u2013 that is, the timescale of reputation updating is faster than that of strategy evolution (see Materials\u00a0and\u00a0methods). For each of the four most common norms we find bi-stable dynamics (Sasaki et al., 2017). That is, depending on the initial conditions the population will evolve to one of two stable equilibria: a monomorphic population of pure defectors, which supports no cooperation, or a population of cooperative (non-ALLD) strategies that supports some degree of cooperation.\n\nHow does empathy influence the prospects for cooperation? Under the Scoring norm, strategic evolution does not depend on the degree of empathy, because this norm ignores the recipient\u2019s reputation when updating a donor\u2019s reputation. For the other norms considered, however, empathy tends to increase cooperation. In particular, the basin of attraction towards the stable equilibrium that supports cooperation (green regions in Figure 2) is always larger when players are more empathetic \u2013 meaning that when $E$ is larger, there is a larger volume of initial conditions in the strategy space that lead to the stable equilibrium supporting cooperation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44269/elife-44269-fig2-v2.jpg)\n\n**Figure 2.:** We analyzed strategy evolution in the donation game under different social norms of moral assessment. Triangles describe the frequencies of three alternative strategies: unconditional defectors (ALLD), unconditional cooperators (ALLC), and discriminators (DISC) who cooperate with good recipients and defect against bad recipients. Red circles indicate the stable (filled) and unstable (open) strategic equilibria under replicator dynamics. The basin of attraction towards a stable equilibrium that supports cooperation (green) is larger as empathy, $E$, increases, for all three social norms shown. Orange curves illustrate sample trajectories towards stable equilibria. Costs and benefits are $c=1.0$, $b=5.0$, and error rates are $e_{1}=e_{2}=0.02$.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44269/elife-44269-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** For Stern Judging (SJ) and Shunning (SH) norms the cooperative equilibrium (when it exists) corresponds to a homogeneous population of DISC players, while for Simple Standing (SS) and Scoring (SC) it consists of a mixture of ALLC and DISC strategists. $b/c=5$, $e_{1}=e_{2}=0.02$.\n\nIn the case of Shunning and Stern judging, the stable equilibrium that supports cooperation consists of a monomorphic population of discriminators (Figure 2). Not only is the basin of attraction towards this equilibrium larger when a population is more empathetic, but so too is the equilibrium frequency of cooperative actions increased by greater degrees of empathy (Figure 2 and Figure 2\u2014figure supplement 1). And so empathy increases the frequency of outcomes that support cooperation, and also increases the frequency of cooperation at these outcomes.\n\nIn the case of Simple Standing the stable equilibrium that supports cooperation consists of a mix of ALLC and DISC strategists. The discriminator frequency at this equilibrium increases with empathy as\n\n$$\nf_{Z}^{\u2217}=\\frac{1}{s^{2}\u2062(1-e_{2})-s+1-\\epsilon}\u2062(1-\\epsilon+\\frac{s\u2062(2-\\epsilon-e_{2})-1}{(1-E)\u2062(\\epsilon-e_{2})})\n$$\n\nwhere $\\epsilon=(1-e_{1})\u2062(1-e_{2})+e_{1}\u2062e_{2}$ and $s=b/c$, until it reaches $f_{Z}^{\u2217}=1$. The rate of cooperative play at this mixed equilibrium shows only a weak dependence on the degree of empathy (Figure 2\u2014figure supplement 1).\n\nAside from the stable equilibria discussed above, for all four norms there is also an unstable equilibrium, with some portion of the population playing ALLD and some portion playing DISC. The frequency of discriminators at this unstable equilibrium is\n\n$$\nf_{Z}=\\frac{c}{b\u2062(\\epsilon-e_{2})}\u2062(1+(1-E)\u2062\\gamma_{Norm}),\n$$\n\nwhere\n\n$$\n\\gamma_{SH}=\\frac{s^{2}(1\u2212e_{2})\u2212s(1+e_{2}(\\epsilon\u2212e_{2}))+e_{2}}{e_{2}(s^{2}\u22121)+E(s^{2}(1\u2212e_{2})\u2212s+e_{2})},\\gamma_{SJ}=\\frac{(s^{2}+1)(1\u2212e_{2})\u2212s\u2212s(1\u2212e_{2})(\\epsilon\u2212e_{2})}{E((s^{2}+1)(1\u2212e_{2})\u2212s)\u22121+e_{2}+s/2},\\gamma_{SS}=\\frac{(s^{2}+1)(1\u2212e_{2})\u2212s\u2212s(\\epsilon\u2212e_{2})(1\u2212e_{2})}{E((s^{2}+1)(1\u2212e_{2})\u2212s)+(s^{2}\u22121)(1\u2212e_{2})}.\n$$\n\nWhen $E=1$ this expression coincides with the expressions found by Sasaki et al. (2017). This result reflects the sense in which previous studies that assumed no variation in personal opinions about reputations are mathematically equivalent to always taking another person\u2019s perspective ($E=1$).\n\n### Social norms that promote cooperation\n\nIn a finite population the frequencies of strategies do not evolve towards a fixed stable equilibrium, but rather continue to fluctuate, irrespective of initial conditions, due to demographic stochasticity. To study the impact of empathy on cooperation in this setting we undertook Monte Carlo simulations. In this model, successful strategies spread through social contagion: a strategy is copied with the probability $1/(1+exp\u2061(-w\u2062[\u03a0_{1}-\u03a0_{0}]))$, where $w$ is the selection strength, and $\u03a0_{1}$ and $\u03a0_{0}$ are payoffs of two randomly selected individuals (Traulsen et al., 2007; Traulsen et al., 2010, see Materials\u00a0and\u00a0methods). In addition to these imitation dynamics, player strategies also change via random exploration at a rate $\\mu$. For the sake of simplicity, we assumed that the timescale at which games are played and payoffs are acquired is much faster than the timescales of imitation, exploration, and reputation dynamics, so that each individual plays many games selection and mutation take place (see Materials\u00a0and\u00a0methods).\n\nEmpathy tends to increase mean levels of cooperation in finite populations under stochastic dynamics (Figure 3), similar to our findings in an infinite population. The effects of empathy are pronounced: the stationary mean frequency of cooperation ranges from near zero to near unity, in response to increasing the value of the empathy parameter $E$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44269/elife-44269-fig3-v2.jpg)\n\n**Figure 3.:** The degree of empathy, $E$, determines which social norms of moral assessment produce the most cooperation and thus the greatest social benefit. (a) The Stern Judging (SJ) norm supports the highest rate of cooperation when empathy is high. But Stern Judging performs poorly under egocentric moral judgment, where Scoring (SC) and Simple Standing (SS) produce greater levels cooperation. The scoring norm (SC) does not depend on reputations, and so it shows cooperation levels that are insensitive to the level of empathy. The Shunning norm (SH) always produces the lowest level of cooperation. (b, c) As the strategy exploration rate $\\mu$ increases, Stern Judging and Simple Standing become less efficient at promoting cooperation under highly empathetic moral evaluation, but they perform better under egocentric evaluation. All panels show ensemble mean cooperation levels in replicate Monte Carlo simulations of $N=100$ individuals. Similar results hold in a continuous strategy space (see Figure 3\u2014figure supplement 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44269/elife-44269-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The figure shows results of Monte Carlo simulations assuming a continuous strategy space $(p,q)\\in[0,1]^{2}$, with mutations sampled uniformly. The qualitative results agree with those reported in Figure 3 for discrete strategies: Stern Judging (SJ) produces the highest rates of cooperation when empathy is high, but it performs poorly under non-empathetic moral evaluation. $b/c=5$, $e_{1}=e_{2}=0.02$, $N=100$.\n\nFor high values of empathy, Stern Judging is the most efficient social norm at promoting cooperation, followed by Simple Standing and Scoring. This rank ordering of social norms is consistent with the prior literature (Santos et al., 2016a; Santos et al., 2016b; Santos et al., 2018). However we find a striking reversal from the established view of social norms when individuals are less empathetic. As $E\u21920$ Scoring promotes the most cooperation, while Stern Judging and Simple Standing engender less cooperation. And so the level of empathy strongly influences the amount of cooperation that evolves, and it even changes the ordering of which social norms are best at promoting cooperation. In particular, Stern judging is the most socially beneficial norm (Pacheco et al., 2006; Santos et al., 2016a; Santos et al., 2016b; Santos et al., 2018) only when individuals account for subjectivity in moral assessment, or when individuals are forced to agree with one another through a centralized institution of moral assessment.\n\n### Evolution of empathy\n\nWe have seen that empathy promotes cooperation in finite populations with reputation-conditional strategies. However, empathy is not inevitable and not universal in humans (Cikara et al., 2014). It remains unclear if empathy itself can evolve to high levels, and whether a population of empathetic individuals can resist invasion from egocentric moral evaluators. In the following analysis we assume that the degree of empathy in moral evaluation can be observed, inferred or learned, and can therefore evolve through social contagion (imitation dynamics) (Cushman et al., 2017), similar to how social norms are learned (Buckholtz and Marois, 2012). Alternatively, an individual\u2019s capacity for empathetic observations may have a genetic component evolving via Darwinian selection.\n\nWe analyze the evolution of empathy using the framework of adaptive dynamics (Geritz et al., 1998). Assuming rare mutations to the continuous empathy trait $E\\in[0,1]$, we calculate the invasion fitness of an invader $E_{I}$ in an infinite resident population with empathy $E_{R}$ by comparing their expected payoffs. We report pairwise-invisibility plots and investigate the evolutionary stability of singular points $E^{\u2217}$, where the gradient of invasion fitness $\\partial\u2061W\u2062(E_{R},E_{I})/\\partial\u2061E_{I}$ (evaluated at $E_{I}=E_{R}$) vanishes. To support our analytic treatment we also perform Monte Carlo simulations in finite populations subject to demographic stochasticity, where empathy evolves through social copying according to individual payoffs, similar to strategy evolution under imitation dynamics (Traulsen et al., 2007).\n\nEvolution can often favor empathy, depending upon the social norm and the initial conditions. To study empathy dynamics, we initially assume that the population is monomorphic for the discriminator strategy. In the case of the Shunning norm, then, there is a single, repulsive singular value of empathy (Figure 4e) at\n\n$$\nE_{SH}^{\u2217}=\\frac{e_{2}}{c/b+e_{2}-1}\u2062(1-\\frac{c/b}{\\epsilon-e_{2}})+\\frac{c/b}{\\epsilon-e_{2}}.\n$$\n\nSuch a population is bistable. If the initial level of empathy exceeds $E_{SH}^{\u2217}$ the population will evolve towards complete empathy ($E=1$) and the discriminator strategy will remain stable; but if the initial level of empathy is less than $E_{SH}^{\u2217}$ the population will evolve towards complete egocentrism ($E=0$), at which point the discriminator strategy is no longer stable (Figure 2g) and the population will be replaced by pure defectors. The singular value $E_{SH}^{\u2217}$ decreases as the benefit of cooperation $b/c$ increases, permitting a larger space of initial conditions that lead to the evolution of complete empathy (Figure 5c). And so, in summary, under the Shunning norm long-term strategy and empathy co-evolution will tend towards a completely empathetic population of discriminators, especially when the benefits to cooperation are high; or, alternatively, evolution will lead to complete population-wide defection.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44269/elife-44269-fig4-v2.jpg)\n\n**Figure 4.:** The figure summarizes analytical predictions for empathy evolution under three different social norms, using adaptive dynamics in a population of discriminators, compared to Monte Carlo simulations in finite populations. (a, c, e) White areas in the pairwise invasibility plots show values of $E$ for which the invader\u2019s expected payoff exceeds the mean payoff of the resident population. Orange arrows indicate the direction of predicted evolution. (b, d, f) Monte Carlo simulations in small populations of 100 individuals with recurring mutations to $E$ reflect the predictions of adaptive-dynamics analysis. For each norm, sample trajectories showing all $E$ values in three independent populations are show in colors (red, blue, yellow), with the population means shown in gray.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44269/elife-44269-fig5-v2.jpg)\n\n**Figure 5.:** Circles indicate evolutionarily stable (solid) and unstable (open) singular values of empathy, $E$, in an infinite population of discriminator strategists. (a) Above a critical benefit-cost ratio $b/c$, increasing the benefit of cooperation promotes the evolution of high levels of empathy under Stern Judging norm. (b) Under Simple Standing there is a single ESS value for empathy. The highest levels of empathy evolve with high benefits and low costs of cooperation. However, in this case the monomorphic discriminator equilibrium is not stable at the ESS value of empathy. (c) In populations governed by the Shunning norm there are no stable internal equilibria for $E$, and empathy will evolve to either one or zero.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44269/elife-44269-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The figure combines the equilibria analysis in the replicator dynamics for strategy evolution given fixed empathy, $f_{Z}\u2062(E)$; and singular-point analysis in pairwise invasibility plots for empathy evolution, $E\u2062(f_{Z})$. We make no assumption about the timescales of the two mutational processes. The only fixed point across the two models is $E=0$.\n\nSimilar dynamics occur under the Stern Judging norm. In this case, starting from a monomorphic population of discriminators, there are two singular values for $E$: an evolutionary repeller $E_{SJ}^{\u2217}<1/2$ and attractor $E_{SJ}^{\u2217}>1/2$ (Figure 4a,b) given by\n\n$$\nE_{SJ}^{\u2217}=\\frac{1}{2}\\pm\\sqrt{\\frac{1}{4}+(\\frac{(1\u2212c/b)(e_{2}+\\epsilon\u22121\u2212c/b)}{(\\epsilon\u2212e_{2})^{2}})}.\n$$\n\nProvided empathy initially exceeds the repulsive value evolution will favor increasing empathy towards the attractive value, and the population of discriminators will remain stable. Increasing $b/c$ again favors the evolution of empathy, as it increases the value of the locally stable $E_{SJ}^{\u2217}>1/2$ and also the range of initial values that that lead to $E_{SJ}^{\u2217}>1/2$ through fixation of small mutations (Figure 5a). However, if empathy starts below the repulsive value, selection will favor evolution toward the attractive singular point at $E_{SJ}^{\u2217}=0$, which no longer supports DISC as a stable equilibrium in strategy space (Figure 2a). And so, in summary, under Stern Judging co-evolution of strategies and empathy will tend towards a highly empathetic population of discriminators, especially when the benefits to cooperation are large; or, alternatively, evolution will lead to all defectors and empathy will thereafter drift neutrally.\n\nThe evolution of empathy is more complicated under Simple Standing. Assuming the population consists of discriminators there is a single evolutionarily stable and globally attractive singular point $E_{SS}^{\u2217}$ (Figure 4c). The value of empathy at this singular point is larger when the benefits of cooperation are larger (Figure 5b). However once this value of empathy is reached, the strategic equilibrium at pure discriminators is no longer stable, and the population will instead be replaced by a mix of DISC and ALLC strategists, under replicator dynamics. This new strategic equilibrium will, in turn, lower the singular value of $E_{SS}^{\u2217}$ under adaptive dynamics, which again changes the equilibrium balance of DISC and ALLC strategists. Long-term strategy-empathy co-evolution will continue in this fashion, with both ALLC and DISC present in\u00a0the population, until the singular value of empathy reaches $E_{SS}^{\u2217}=0$ (see Figure 5\u2014figure supplement 1). The strategic equilibrium at this point lies near the boundary of two basins of attraction (Figure 2d) and is vulnerable to invasion by pure defectors in a finite population. And so, in summary, while the exact dynamics will depend on the time scales of empathy and strategy evolution, Simple Standing cannot sustain empathy over the long term as both these components of personality co-evolve, eventually resulting in a population of pure defectors.\n\n## Discussion\n\nEmpathy has long been associated with prosocial behavior and altruism in humans. Much of the existing literature focuses on the emotional component of empathy \u2013 linkage of emotional states between individuals, emotional contagion (Hatfield et al., 1993) and empathy-induced helping (Cialdini et al., 1997; May, 2011). For instance, there is substantial evidence that the effect of \u2018self-other merging\u2019 provides moral motivation to cooperate (Batson et al., 1997; Batson et al., 1995; Batson and Moran, 1999) and contributes to the resolution of public-goods dilemmas (Batson, 1994). Empathy is not a unitary construct, however, and besides the purely emotional reaction to the states of other individuals there is the cognitive ability to understand another person\u2019s psychological perspective (Davis, 1983; Smith, 2006).\n\nVery little is known about the origins of empathy in relation to cooperative behavior, although some research suggests that the capacity for emotional empathy evolved in the context of parental care (de Waal, 2008). Even less is known about social evolution and selective forces operating on empathy in modern societies. Even if empathy promotes altruistic behavior, why should empathetic perspective-taking itself evolve and be stable against the invasion of morally egocentric individuals?\n\nHere we have studied the role of empathetic perspective-taking in a game-theoretic context of moral evaluation, where individuals make moral judgments from their own subjective perspectives. Studying the impact of empathy in this context is critical to understanding cooperative behavior in modern, highly-connected societies that generally lack a centralized institution of objective moral assessment.\n\nSocial norms specify the rules of moral evaluation. It is well known that moral reputations can sustain high levels of cooperation if individuals discriminate between the \u2018good\u2019 and the \u2018bad\u2019. Social norms themselves likely emerge from individual beliefs of what reputations should be assigned to defectors and cooperators in distinct social situations. While some studies assume that social reputations are absolute \u2013 for instance due to shared information, public monitoring, institutions and gossip \u2013 our study draws attention to the potential for disagreements on reputations that arise from errors or different observation histories. The same individual can have different reputations in the eyes of distinct observers; in other words, moral evaluations are not absolute, and social reputation is relative. When monitoring of social interactions is private, cooperation is much harder to evolve and sustain \u2013 as reflected by the results of two recent studies by Hilbe et al. (2018) and Okada et al. (2017). Both of those studies analyzed models with private, but egocentric, moral evaluation corresponding to $E=0$ in our analysis. Our model of private evaluation makes the additional assumption that each observer evaluates a donor based on a different social interaction, along the lines of Okada et al. (2018).\n\nOur key finding is that high levels of cooperation can be sustained, even with private monitoring of reputations, provided individuals recognize moral relativity and are capable of making moral judgments from another person\u2019s perspective ($E>0$). Egocentric evaluation leads to unjustified or irrational defection, because a person perceived as \u2018bad\u2019 by the observer might actually appear \u2018good\u2019 in the eyes of the donor who\u2019s action is being evaluated, or vice versa. This point is particularly striking in the case of Stern Judging, the norm that assigns a \u2018good\u2019 reputation only to individuals who cooperate with other \u2018good\u2019 players and defect against \u2018bad\u2019 (Kandori, 1992; Pacheco et al., 2006). Despite being the most efficient norm at promoting cooperation in empathetic societies, Stern Judging performs very poorly in egocentric populations. On the other hand, Scoring \u2013 the norm that does not take into account the recipient\u2019s reputation at all \u2013 is immune to the effects of empathy and dominates in societies with egocentric moral evaluation rules.\n\nFinally, we have shown that empathetic perspective-taking can evolve through cultural copying, and remain evolutionarily stable if a society is governed by Stern Judging or Shunning. Once these societies evolve empathy, individuals performing egocentric evaluations of observed social behavior will be rewarded less than their empathetic peers, and this remains true even if strategies are allowed to co-evolve with empathy. However, we have also seen that egocentric and uncooperative societies are nevertheless possible evolutionary outcomes. In populations governed by Stern Judging, Shunning and Scoring this outcome represents an alternative locally (though not globally) attractive stable state in the strategy-empathy phase space. In the case of Simple Standing, the egocentric and uncooperative outcome is the only long-term stable outcome as both empathy and strategies are allowed to evolve.\n\nOur study raises a number of questions to be addressed in future work on empathy, norms, and the evolution of cooperation. Whereas we have studied empathy as a fixed trait, an individual\u2019s tendency for empathetic evaluation might instead depend in a non-linear way on the current make-up of strategies in the population. Another question involves the competition of social norms for moral evaluation \u2013 a topic that has been studied in some contexts, such as when errors do not occur (Uchida et al., 2018), or in the presence of population structure (Masuda, 2012; Pacheco et al., 2006). Perhaps an even more fundamental question is whether and how population-wide social norms can evolve from individual moral beliefs to begin with. It is unclear whether social contagion or individual-level Darwinian selection is sufficient to establish a hierarchy of norms governing how individuals update each others\u2019 reputations in a population. We have shown that the norms that promote the most cooperation change depending on the capacity for empathetic perspective-taking, but should we also expect different norms to evolve under empathetic and egocentric modes of judgment? For instance, populations characterized by fully empathetic moral judgment might be conducive to the evolution of selfish norms that indiscriminately assign \u2018bad\u2019 reputations to evade costly cooperation without being punished, while models with private egocentric evaluation may lead to the evolution of more cooperative norms, such as Scoring or Stern Judging (Yamamoto et al., 2017; Uchida et al., 2018). Such questions about the origin of and competition between moral norms remain outstanding.\n\n## Materials and methods\n\n### Cooperation under empathetic moral evaluation\n\n#### Replicator dynamics\n\nTo analyze the evolutionary dynamics of strategies, we consider replicator dynamics in an infinite population with a fixed social norm and fixed value of the empathy parameter $E$, limiting ourselves to the three strategies: ALLC or $X$, ALLD or $Y$, and DISC or $Z$. Denoting the mean payoff of strategy $s$ as $\u03a0_{s}$, and the frequencies of the three strategies at $f_{s}$, the strategy dynamics can be described as $\\frac{df_{s}}{dt}=f_{s}(\u03a0_{s}\u2212\\sumsf_{s}\u03a0_{s})$. As in Okada et al. (2018), we assume that each observer makes her moral evaluation of a donor\u2019s action based on a different social interaction, that is, each interaction is observed only once.\n\nTo describe image dynamics, we let $g$ denote the frequency of \u2018good\u2019 individuals within the population, that\u00a0is\u00a0$g=f_{X}\u2062g_{X}+f_{Y}\u2062g_{Y}+f_{Z}\u2062g_{Z}$. Furthermore we let $g_{2}$ denote the probability that two randomly selected individuals will see the same recipient as \u2018good\u2019, that\u00a0is\u00a0$g_{2}=f_{X}\u2062g_{X}^{2}+f_{Y}\u2062g_{Y}^{2}+f_{Z}\u2062g_{Z}^{2}$. The probability that two individuals will see the same recipient as \u2018bad\u2019 is then $b_{2}=1-2\u2062g+g_{2}$, and they will disagree on the subjective reputation of the recipient with the probability $d_{2}=g-g_{2}$.\n\nFor the Stern Judging norm, mean frequencies of \u2018good\u2019 individuals within the subpopulations of cooperators, defectors and discriminators are (averaged over the perspectives of all players):\n\n$$\ng_{X}=g\\epsilon+(1\u2212g)(1\u2212\\epsilon);g_{Y}=ge_{2}+(1\u2212g)(1\u2212e_{2});g_{Z}=E(g\\epsilon+(1\u2212g)(1\u2212e_{2}))+(1\u2212E)(g_{2}\\epsilon+d_{2}(e_{2}+1\u2212\\epsilon)+b_{2}(1\u2212e_{2})).\n$$\n\nHere $\\epsilon=(1-e_{1})\u2062(1-e_{2})+e_{1}\u2062e_{2}$ is the probability that an individual with the intention to cooperate is assigned a \u2018good\u2019 reputation. The second term of $g_{Z}$ describes egocentric evaluation, in which the donor and the observer may disagree on the reputation of the recipient. If both see the recipient as \u2018good\u2019, the donor will cooperate under the DISC strategy, and she will be seen as \u2018good\u2019 in the eyes of the observer with the probability $\\epsilon$. If the donor sees the recipient as \u2018good\u2019, but the observer disagrees, the donor will intend to cooperate and will be seen as \u2018good\u2019 only with probability $1-\\epsilon$, that is, if cooperation succeeds but an evaluation error occurs ($(1-e_{1})\u2062e_{2}$) or if cooperation fails and the action is evaluated correctly ($e_{1}\u2062(1-e_{2})$)). In the opposite case, the donor will defect and will be seen as \u2018good\u2019 only if the evaluation error $e_{2}$ happens. Finally, if the donor and the observer both see the recipient as \u2018bad\u2019, the donor will defect and will be seen as good only in the absence of observation error $1-e_{2}$.\n\nExpected payoffs of the three strategies are then:\n\n$$\n\u03a0_{X}=b(f_{X}+f_{Z}g_{X})(1\u2212e_{1})\u2212c(1\u2212e_{1});\u03a0_{Y}=b(f_{X}+f_{Z}g_{Y})(1\u2212e_{1});\u03a0_{Z}=b(f_{X}+f_{Z}g_{Z})(1\u2212e_{1})\u2212cg(1\u2212e_{1});\u03a0=f_{X}\u03a0_{X}+f_{Y}\u03a0_{Y}+f_{Z}\u03a0_{Z}.\n$$\n\nLikewise for Shunning:\n\n$$\ng_{X}=g\\epsilon+(1\u2212g)e_{2};g_{Y}=e_{2};g_{Z}=E(g\\epsilon+(1\u2212g)e_{2})+(1\u2212E)(g_{2}\\epsilon+2d_{2}e_{2}+b_{2}e_{2}).\n$$\n\nFor Simple Standing:\n\n$$\ng_{X}=g\\epsilon+(1\u2212g)(1\u2212e_{2});g_{Y}=ge_{2}+(1\u2212g)(1\u2212e_{2});g_{Z}=E(g\\epsilon+(1\u2212g)(1\u2212e_{2}))+(1\u2212E)(g_{2}\\epsilon+d_{2}+b_{2}(1\u2212e_{2})).\n$$\n\nAnd finally for Scoring norm, empathy $E$ is irrelevant, because the norm does not take into account the reputation of the recipient:\n\n$$\ng_{X}=\\epsilon;g_{Y}=e_{2};g_{Z}=g\\epsilon+(1\u2212g)e_{2}.\n$$\n\n### Stochastic simulations\n\nIn addition to the deterministic replicator-dynamics analysis of strategy evolution, we performed a series of individual-based simulations to measure mean levels of cooperation under continuous influx of mutations in the strategy space (Santos et al., 2016a). We assume that all individuals follow the same social norm and are characterized by the same value of empathy, $E$. The population consists of $N$ individuals, each with its own strategy and its own subjective list of reputations. Each generation, any given individual interacts with all other members of the society in three different roles: once as a donor, once as a recipient, and once as an observer.\n\nFirst, each individual plays a single round of the donation game with all other members of the society according to her strategy $S=(p,q)$ and the subjective reputation of the recipient, also taking into account the implementation error $e_{1}$. Here $p$ and $q$ denote the probabilities that a donor cooperates with a \u2018bad\u2019 (B) and \u2018good\u2019 (G) recipient, respectively. The act of cooperation fails with the probability $e_{1}$ (defection always succeeds). The cumulative payoff is then assigned to each individual, with the benefit of cooperation fixed at $b$ and the cost of a cooperative act $c$.\n\nTo update their list of subjective reputations based on the social norm $N_{i\u2062j}$, each player then chooses to observe a single interaction per donor (that is, with a randomly chosen recipient), again taking into account subjective reputation of the recipient either in the eyes of the donor (probability $E$) or the eyes of the observer (with a probability $1-E$). The newly assigned reputation is reversed with the probability $e_{2}$, representing observation errors. For the sake of simplicity, we assume that all reputations are updated simultaneously after all donor-recipient interactions have taken place.\n\nWe model selection and drift of strategies as a process of social contagion implemented as a pairwise comparison process. Following the reputation-updating step, a random pair of individuals is chosen; the first individual adopts the strategy of the second with the probability $1/(1+exp\u2061(-w\u2062[\u03a0_{1}-\u03a0_{0}]))$, where $w$ is the selection strength, and $\u03a0_{1}$ and $\u03a0_{0}$ are payoffs of the two earned within the last generation. In our simulations of populations with $N=100$ individuals, we used $w=1.0$. Finally, each individual is subject to random strategy exploration, in which a new random strategy is adopted with a small probability $\\mu$ (Santos et al., 2016a).\n\nThe simulation is initialized with random strategies and random lists of subjective reputations. We recorded the mean rate of cooperation averaged over 150,000 generations in 50 replicate populations, which is reported in Figure 3.\n\n### Evolution of empathy\n\nLet $g_{i\u2062j}$ be the frequency of \u2018good\u2019 individuals in the sub-population $i$ as seen by individuals belonging to the sub-population $j$, where $i$ and $j$ correspond either to resident ($i,j=0$) or invader ($i,j=1$) sub-population. Working in the limit of negligible invader frequencies, and assuming that the population consists only of DISC strategists, for Stern Judging norm we have:\n\n$$\ng_{00}=E_{0}(g_{00}\\epsilon+(1\u2212g_{00})(1\u2212e_{2}))+(1\u2212E_{0})(g_{00}^{2}\\epsilon+g_{00}(1\u2212g_{00})(e_{2}+1\u2212\\epsilon)+(1\u2212g_{00})^{2}(1\u2212e_{2}));g_{01}=E_{1}(g_{00}\\epsilon+(1\u2212g_{00})(1\u2212e_{2}))+(1\u2212E_{1})(g_{01}g_{00}\\epsilon+g_{01}(1\u2212g_{00})e_{2}+(1\u2212g_{01})g_{00}(1\u2212\\epsilon)+(1\u2212g_{01})(1\u2212g_{00})(1\u2212e_{2}));g_{10}=E_{0}(g_{01}\\epsilon+(1\u2212g_{01})(1\u2212e_{2}))+(1\u2212E_{0})(g_{01}g_{00}\\epsilon+g_{01}(1\u2212g_{00})e_{2}+(1\u2212g_{01})g_{00}(1\u2212\\epsilon)+(1\u2212g_{01})(1\u2212g_{00})(1\u2212e_{2})).\n$$\n\nHere $\\epsilon=(1-e_{1})\u2062(1-e_{2})+e_{1}\u2062e_{2}$, and $E_{0}$ and $E_{1}$ are empathy values of resident and invader sub-population. For Simple Standing norm, the relative frequencies of good individuals are:\n\n$$\ng_{00}=E_{0}(g_{00}\\epsilon+(1\u2212g_{00})(1\u2212e_{2}))+(1\u2212E_{0})(g_{00}^{2}\\epsilon+g_{00}(1\u2212g_{00})(1\u2212e_{2})+(1\u2212g_{00})g_{00}e_{2}+(1\u2212g_{00})^{2}(1\u2212e_{2}));g_{01}=E_{1}(g_{00}\\epsilon+(1\u2212g_{00})(1\u2212e_{2}))+(1\u2212E_{1})(g_{01}g_{00}\\epsilon+g_{01}(1\u2212g_{00})e_{2}+(1\u2212g_{01})g_{00}(1\u2212e_{2})+(1\u2212g_{01})(1\u2212g_{00})(1\u2212e_{2}));g_{10}=E_{0}(g_{01}\\epsilon+(1\u2212g_{01})(1\u2212e_{2}))+(1\u2212E_{0})(g_{01}g_{00}\\epsilon+g_{01}(1\u2212g_{00})(1\u2212e_{2})+(1\u2212g_{01})g_{00}e_{2}+(1\u2212g_{01})(1\u2212g_{00})(1\u2212e_{2})).\n$$\n\nLikewise, for the Shunning norm:\n\n$$\ng_{00}=E_{0}(g_{00}\\epsilon+(1\u2212g_{00})(e_{2}))+(1\u2212E_{0})(g_{00}^{2}\\epsilon+g_{00}(1\u2212g_{00})e_{2}+(1\u2212g_{00})g_{00}e_{2}+(1\u2212g_{00})^{2}e_{2});g_{01}=E_{1}(g_{00}\\epsilon+(1\u2212g_{00})e_{2})+(1\u2212E_{1})(g_{01}g_{00}\\epsilon+g_{01}(1\u2212g_{00})e_{2}+(1\u2212g_{01})g_{00}e_{2}+(1\u2212g_{01})(1\u2212g_{00})e_{2});g_{10}=E_{0}(g_{01}\\epsilon+(1\u2212g_{01})e_{2})+(1\u2212E_{0})(g_{01}g_{00}\\epsilon+g_{01}(1\u2212g_{00})e_{2}+(1\u2212g_{01})g_{00}e_{2}+(1\u2212g_{01})(1\u2212g_{00})e_{2}).\n$$\n\nUnder Scoring, the frequencies of \u2018good\u2019 individuals do not depend on empathy:\n\n$$\ng=\\frac{e_{2}}{1\u2212\\epsilon+e_{2}}.\n$$\n\nWe then calculate the expected payoffs of individuals in resident and invader sub-populations:\n\n$$\n{\u03a0_{0}=b\u2062(1-e_{1})\u2062g_{00}-c\u2062(1-e_{1})\u2062g_{00};\u03a0_{1}=b\u2062(1-e_{1})\u2062g_{10}-c\u2062(1-e_{1})\u2062g_{01}.\n$$\n\nThese payoffs are used to generate pairwise invasibility plots in Figure 4. Singular points are found by setting $\\frac{\\partial\u2061(\u03a0_{1}-\u03a0_{0})}{\\partial\u2061E_{1}}=0$ and setting $E_{0}=E_{1}$.\n\n### Individual-based simulations of empathy evolution\n\nTo verify the ESS results of the adaptive-dynamics calculations we performed a series of Monte-Carlo simulations in finite populations of $N=100$ individuals. The simulation routine is largely the same as for strategy evolution, except that in this case we fixed the strategy at DISC and allowed $E$ to evolve via constant influx of small mutations. Each generation, empathy of an individual changes via mutation at a rate $\\mu_{E}=0.005$. Since empathy is a continuous parameter, we draw the mutational deviation $\\delta\u2062E$ from a normal distribution centered around $\\delta\u2062E_{0}=0$ with a standard deviation $\\sigma=0.01$. Selection for empathy is modeled by choosing five random pairs of individuals and assuming that in each pair the first individual copies the empathy value $E_{1}$ of the second with the probability $1/(1+exp\u2061(-w\u2062[\u03a0_{1}-\u03a0_{0}]))$, where $\u03a0_{1}$ and $\u03a0_{0}$ are their payoffs.\n",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "637f2a94-9cbc-46a1-82f0-3aa8a447357f",
+      "submission_id": "d9c1250b-8ade-48d6-b5d7-94239414cedd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Doebeli, University of British Columbia Canada\n\nReviewers:\n- Naoki Masuda, University of Bristol United Kingdom\n- Martin A Nowak, Harvard University United States\n\n## Review text\n\nDOI: [10.7554/eLife.44269.014](https://doi.org/10.7554/eLife.44269.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Evolution of empathetic moral evaluation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Diethard Tautz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Naoki Masuda (Reviewer #2); Martin A Nowak (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe paper analyses a mathematical model of reputation-based indirect reciprocity introducing the concept of empathy, which involves assessing the reputation of a recipient from the donor's perspective rather than from the assessors perspective. This is a very interesting and novel addition to the literature on evolutionary game theory in the context of cooperation and social norms. Before the paper can be published, however, we ask you to address a number of issues that the reviewers have pointed out.\n\nReviewer #1:\n\nA few remarks regarding the adaptive dynamics of empathy:\n\nI think the authors should point out that there is a certain degree of degeneracy in their model, which is due to the assumption that payoffs are linear in the empathy E (a common assumption in game theory, of course). This degeneracy is for example reflected in the vertical lines in the pairwise invasibility plots in Figure 4. It implies that there can for example be no evolutionary branching points in their model.\n\nGenerally, speaking, it is easy to imagine that empathy enters in a non-linear way into the model (e.g. when the empathy that an individual displays depends on population level quantities, such as the overall level of cooperation, or the average empathy, or when the empathy of individual is itself a (non-linear) function of some other underlying personal characteristic, etc.). In such cases, it is possible for diversity in empathy to evolve, which would be an interesting and perhaps realistic feature of the model.\n\nNote for example that even in the present model, different levels of empathy can coexist \"ecologically\". For example, it is evident from Figure 4A that empathy levels 0.6 and 0.9 can invade each other, and hence would coexist. (However, if such coexisting strains were allowed to evolve, the would both evolve to the ESS value, and hence diversity would be lost over evolutionary time.)\n\nOverall, I think it would be good if the paper would discuss these issues. Also, please note that in the second paragraph of the section \"Evolution of empathy\", the gradient derivative of the function W has to be evaluated at EI = ER to become the selection gradient.\n\nReviewer #2:\n\nThe authors analysed a mathematical model of reputation-based indirect reciprocity analytically (using replicator dynamics and adaptive dynamics) and numerically. Each player is assumed to be either unconditional cooperator, discriminator, or unconditional defector, and also assigns a binary reputation to other players which is updated in the course of game dynamics. This is a common setting (including the analysis methods) since early 2000s. A new component in this paper is the effect of empathy. The authors' model assumes that different players may have different opinions towards a player. This has been done in some prior modelling, but remarkably, the present authors assumed that an observer uses the donor's view (as opposed to the observer's own view) towards the recipient's reputation with probability E, when judging if the donor's action towards the recipient is good or bad. In this way the authors implemented the effect of empathy. This is realistic and presents an implementation of the theory of mind, thus stretching the implication of the present work to much wider domains such as social psychology and neuroscience, which many of similar studies lack. The authors discovered that empathy generally promotes cooperation. The effect of the empathy depended on the social norm (i.e. reputation assignment rule) employed by the population. Furthermore, the authors studied evolution of the empathy (i.e. value of E) both analytically and numerically.\n\nThe work presents a solid framework for analysing empathy, which is really a salient issue, in the setting of indirect reciprocity and has led to reasonable results. Furthermore, I feel that the work is very complete. Therefore, I recommend publication of this work.\n\nReviewer #3:\n\nThe paper explores the evolution of cooperation in a model of indirect reciprocity with empathy. It assumes that players are repeatedly matched to interact in a social dilemma game. A player's decision whether to cooperate may depend on the recipient's reputation. There are three possible strategies: ALLC players always cooperate, irrespective of the reputation of the recipient. ALLD players always defect. Discriminators cooperate if the co-player has a good reputation and they defect if the co-player has a bad reputation.\n\nTo assign reputations to players, the paper assumes that the entire population applies the same social norm. Four different social norms are considered, Stern Judging, Simple Standing, Scoring, and Shunning. All of these norms assign a good reputation to a donor who cooperates with a good recipient, and they assign a bad reputation to a donor who defects against a good recipient. The norms differ in how they assess interactions with a bad recipient.\n\nAs their main contribution, the authors study the effect of empathy. In traditional models of indirect reciprocity, observers judge the donor's action based on their own perspective of the recipient. In contrast, an empathetic observer judges the donor's action based on the donor's perspective of the recipient. Using a mixture of analytical methods and simulations, the main results are as follows:\n\n1) Empathetic judgment facilitates the evolution of cooperation\n\n2) Empathy itself can evolve for three of the four social norms studied.\n\nI think the questions explored in this paper are extremely interesting for at least two reasons. First, a few recent studies have found that indirect reciprocity has problems to evolve when information is private. This paper proposes an elegant solution to this problem.\n\nSecond, empathy itself is an important characteristic of human behavior that requires an evolutionary explanation. The present paper can serve as an important first step.\n\nThe paper is well motivated, the model is sound, and the figures provide a great illustration of the key results.\n\nHowever, a few questions remain because the Materials and methods section is somewhat unclear. In particular, I was unable to verify whether the payoff formulas are correct, and whether the qualitative findings are robust with respect to minor changes in the model assumptions. If these remaining questions can be resolved, I strongly support publication.\n\n1) It is unclear how the payoffs for the replicator dynamics model have been derived. In fact, the given formulas might be wrong.\n\nSo far it has been difficult to analyze the effects of private information analytically. Most previous models of indirect reciprocity have relied on simulations (such as the two cited papers by Okada et al. and Hilbe et al., [Okada, Sasaki and Nakai, 2017; Hilbe et al., 2018]). Analytical results have only been feasible in rather specific special cases, for example, Okada et al., 2018 \"A solution for private assessment in indirect reciprocity using solitary observation\".\n\nThe difficulties arise because models of private information need to calculate the probability that two randomly chosen discriminators both assign a good reputation to the recipient. This probability is difficult to compute because the opinions of two discriminators will neither be perfectly correlated nor are they completely independent.\n\nGiven these previous difficulties, I was surprised to see that the present paper can give simple expressions for the players' payoffs (Equations 5-9 in the Materials and methods section), which also hold for E=0. Unfortunately Equations 5-9 are not derived in sufficient detail, which makes it impossible to check whether they are correct.\n\nIn these formulas, g is the frequency of good individuals within the population, whereas the authors seem to use g2 for the probability that two individuals both assign a good reputation to a random recipient. This seems to presume complete independence of individual opinions.\n\nI would like to ask the authors to provide a more detailed derivation of the payoff Equations 5-9. In particular, the authors should make clear how they circumvented the problems described in the above mentioned paper of Okada et al., 2018.\n\nThe same comment also applies to the formulas in the Materials and methods section on the evolution of empathy.\n\n2) The paper is based on the assumption that all players in the population employ the same social norm. As the authors note in the last paragraph of their discussion, it is not clear whether cooperation remains stable if mutants were allowed to switch to a self-serving social norm (by assigning a bad reputation to everyone, and then defect against everyone). It appears that such a mutant is a major threat to all social norms studied herein, especially when the empathy probability is high.\n\nI completely agree with the authors that a full analysis of such mutations is beyond the scope of the present paper. However, I would appreciate if the authors could give some basic argument why their results can be expected to be robust.\n\nAs one possibility, the authors could repeat the analysis in Figure 2 or Figure 3. But instead of assuming that ALLD and ALLC players apply the same social norm as the discriminators, they could assume that ALLD players always assign a bad reputation to everyone, whereas ALLC players always assign a good reputation to everyone. This would correspond to a case in which the social norms applied by the unconditional types are consistent with their actions.\n\nIf such an analysis turns out to be infeasible, I suggest the authors explain under which circumstances we can reasonably assume all members of a population to use the same social norm.\n\n3) The results in Figure 3C are either wrong, or they require more explanation.\n\nIn this figure, the authors show that for a rather small mutation rate (\u03bc=0.01), almost all social norms lead to similar cooperation rates and that cooperation rates are largely independent of the empathy parameter. There are two reasons why Figure 3C is somewhat odd:\n\ni) It suggests that empathy can only help for extremely small mutation rates.\n\nii) It suggests that in the case of no empathy E=0, Stern Judging can yield roughly 40% cooperation. This is somewhat surprising, given that previous papers have found that under private information, a Stern Judging norm typically leads to an ALLD population with almost no cooperation at all (e.g. Okada, Sasaki and Nakai, 2017; Hilbe et al., 2018).\n\nOn a similar note, I would appreciate if the authors could be more clear in the main text about the relevant timescales. From reading the Materials and methods section, it seems to me that the authors assume that in the infinite population model, reputations are assumed to reach a steady state before evolutionary updating occurs. In the finite population simulations, evolutionary updating may occur before the players' reputations have reached a steady state, is this correct?\n",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dd3c82c4-9694-4421-9fbc-5670a9dc2fbd",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C1",
+      "claim": "Widespread cooperation among unrelated individuals in human societies is puzzling, given strong incentives for exploitative cheating in well-mixed populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Widespread cooperation among unrelated individuals in human societies is puzzling, given strong incentives for exploitative cheating in well-mixed populations (Ohtsuki et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ohtsuki et al., 2006, which provides scholarly support for this assertion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "caf2030e-0e92-4d3d-8525-9c022c8f9219",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C2",
+      "claim": "In human societies cultural forces appear to be of much greater importance than kin selection, multilevel selection, and reciprocal altruism for driving prosocial behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Theories of cooperation based on kin selection, multilevel selection, and reciprocal altruism (Nowak, 2006) provide some insight into the forces driving prosocial behavior, but in human societies cultural forces appear to be of much greater importance (Gintis et al., 2003; Buckholtz and Marois, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Gintis et al., 2003 and Buckholtz and Marois, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "ac5133be-9d91-4477-bdfe-70cf6d811d0a",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C3",
+      "claim": "Humans condition their behavior on moral reputations, where the decision to cooperate depends on the reputation of the recipient.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible explanation rooted in cultural norms is that humans condition their behavior on moral reputations: the decision to cooperate depends on the reputation of the recipient, which itself depends on the recipient's previous actions (Leimar and Hammerstein, 2001; Nowak and Sigmund, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Leimar and Hammerstein, 2001 and Nowak and Sigmund, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "4a6826cb-635a-4cf5-84a9-00cc912c9e55",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C4",
+      "claim": "Altruistic behavior may improve an individual's reputation and confer the image of a valuable member of society, which attracts cooperation from others in future interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Altruistic behavior, for instance, may improve an individual's reputation and confer the image of a valuable member of society, which attracts cooperation from others in future interactions (Nowak and Sigmund, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nowak and Sigmund, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "eba18e66-0f78-41b3-819a-8037b1a4e981",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C5",
+      "claim": "A common simplification in models of moral reputations is that all reputations are both publicly known and fully objective.",
+      "claim_type": "EXPLICIT",
+      "source": "A common simplification in models of moral reputations is that all reputations are both publicly known and fully objective (e.g. Nowak and Sigmund, 1998; Pacheco et al., 2006; Ohtsuki et al., 2009; Sasaki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "19004856-ca23-4751-93f9-9a8e9cbb05bb",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C6",
+      "claim": "Conditions where reputations are objective (centralized institution or rapid gossip) are rare in human populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a reasonable assumption if there is a central institution that provides objective moral evaluation, or if opinions regarding reputations homogenize rapidly through gossip (Nowak and Sigmund, 2005). But these conditions are rare in human populations, and opinions about reputations typically differ among individuals \u2013 for instance, because observers use different moral evaluation rules, or because of divergent observation histories, or errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation and logical inference about the rarity of these conditions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "a0fa1e41-0cd7-4b1f-9d73-83368bdb86b6",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C7",
+      "claim": "When an individual's reputation depends on the observer (moral relativity), this results in much lower rates of sustained cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases a single focal individual may have different reputations in the eyes of distinct observers, resulting in much lower rates of sustained cooperation (Okada et al., 2017; Hilbe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Okada et al., 2017 and Hilbe et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "f6a155f7-c706-4c4c-88fc-1c4d9b704459",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C8",
+      "claim": "Empathy is a potent driver of prosocial and cooperative behavior in human societies.",
+      "claim_type": "EXPLICIT",
+      "source": "Psychological studies implicate empathy as potent driver of prosocial and cooperative behavior in human societies (Eisenberg and Fabes, 1990; Batson et al., 1997; Batson and Moran, 1999; Decety et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to psychological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "3240dd07-bbd9-47b3-bc87-bc7b04f55899",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C9",
+      "claim": "The cognitive capacity to intentionally adopt the subjective perspective of another individual is a key component of empathetic behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "The cognitive capacity to intentionally adopt the subjective perspective of another individual is known as a key component of empathetic behavior (Davis, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Davis, 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "909cb1f5-3a97-4269-b1c0-111637fcde6d",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C10",
+      "claim": "Perspective-taking component of empathy is related to the theory of mind.",
+      "claim_type": "EXPLICIT",
+      "source": "This so-called 'perspective-taking' component of empathy is in turn related to the theory of mind, or the ability to attribute mental states to explain and predict the behavior and emotions of other individuals (Premack and Woodruff, 1978; Hughes and Dunn, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Premack and Woodruff, 1978 and Hughes and Dunn, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "bc3dd922-b2a1-4187-a901-cfddc14f91d0",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C11",
+      "claim": "Empathetic perspective-taking generally develops between infancy and pre-school years, with at least some components learned from parents.",
+      "claim_type": "EXPLICIT",
+      "source": "Empathetic perspective-taking generally develops between infancy and pre-school years, with at least some components learned from parents (Krevans and Gibbs, 1996; Knafo et al., 2008; Farrant et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to developmental psychology studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "314d44cb-62ad-43cf-89ae-39e80611c0d1",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C12",
+      "claim": "Empathetic behavior is not universal, as even adults often fail to empathize, especially in interactions with unfamiliar social or different cultural groups.",
+      "claim_type": "EXPLICIT",
+      "source": "And yet empathetic behavior is not universal, as even adults often fail to empathize, especially in interactions with unfamiliar social or different cultural groups (Cikara et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cikara et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "bbe938d1-41a6-447f-90a5-5e045badbdfa",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C13",
+      "claim": "Empathy might play a role in evaluating the 'fairness' of opponents' actions and predicting their strategies in social dilemmas.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of social dilemmas, it has been suggested that empathy might play a role in evaluating the 'fairness' of opponents' actions and predicting their strategies (Singer and Fehr, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Singer and Fehr, 2005.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "eaffcfdc-e1aa-4936-8fda-7f747f671338",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C14",
+      "claim": "The role of empathy for moral evaluation of social behavior has not been thoroughly studied.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the role of empathy for moral evaluation of social behavior has not been thoroughly studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature, based on the authors' assessment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "96ba66bb-cf69-4878-a044-8fa87ed3dfba",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C15",
+      "claim": "There is currently no formal way to analyze the role of empathetic perspective-taking in game-theoretic models of human cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, there is currently no formal way to analyze the role of empathetic perspective-taking in game-theoretic models of human cooperation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the literature, based on the authors' assessment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "ecba84ed-cee3-498b-994a-d95e57f2f686",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C16",
+      "claim": "Empathy tends to foster cooperation by reducing the rate of unjustified defection.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that empathy tends to foster cooperation by reducing the rate of unjustified defection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the theoretical models and simulations presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "2da50821-c8ad-4b50-88f7-45ad733c822e",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C17",
+      "claim": "The norms of moral evaluation previously considered most socially beneficial depend on high levels of empathy.",
+      "claim_type": "EXPLICIT",
+      "source": "The norms of moral evaluation previously considered most socially beneficial depend on high levels of empathy, whereas different norms maximize social welfare in populations incapable of empathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the theoretical models and simulations presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "a35a5fc9-10c1-4af8-bec0-56dcbb1f471b",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C18",
+      "claim": "Different norms maximize social welfare in populations incapable of empathy.",
+      "claim_type": "EXPLICIT",
+      "source": "The norms of moral evaluation previously considered most socially beneficial depend on high levels of empathy, whereas different norms maximize social welfare in populations incapable of empathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the theoretical models and simulations presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "7822e5af-598f-4032-86bd-4cf11b18fe22",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C19",
+      "claim": "Empathy itself can evolve through social contagion.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that empathy itself can evolve through social contagion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the adaptive dynamics analysis and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "92460ab2-60f8-4181-8d0e-17e7431d69f8",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C20",
+      "claim": "A capacity for empathy is a key component for sustaining cooperation in societies.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that a capacity for empathy is a key component for sustaining cooperation in societies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on the theoretical and simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "9aa19e47-57af-424c-b5e6-34e74bc04711",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C21",
+      "claim": "Under replicator dynamics, bi-stable dynamics are found for each of the four most common norms.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of the four most common norms we find bi-stable dynamics (Sasaki et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the replicator dynamics analysis, with a citation to similar prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "b5d02df6-8b79-46dc-9f74-3252c8c6ff23",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C22",
+      "claim": "Under the Scoring norm, strategic evolution does not depend on the degree of empathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the Scoring norm, strategic evolution does not depend on the degree of empathy, because this norm ignores the recipient's reputation when updating a donor's reputation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the theoretical analysis, with an explanation based on the properties of the Scoring norm.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "4fb85a19-fdbf-401b-b620-4f97b9b3af0c",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C23",
+      "claim": "For norms other than Scoring, empathy tends to increase cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "For the other norms considered, however, empathy tends to increase cooperation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the theoretical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "82da4eab-dbcf-4812-815c-7671dafc8eeb",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C25",
+      "claim": "In the case of Shunning and Stern judging, the stable equilibrium that supports cooperation consists of a monomorphic population of discriminators.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Shunning and Stern judging, the stable equilibrium that supports cooperation consists of a monomorphic population of discriminators (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the replicator dynamics analysis, illustrated in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "c71e193e-ece4-4214-865e-7c505be12a1e",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C26",
+      "claim": "For Shunning and Stern Judging, empathy increases the equilibrium frequency of cooperative actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only is the basin of attraction towards this equilibrium larger when a population is more empathetic, but so too is the equilibrium frequency of cooperative actions increased by greater degrees of empathy (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the replicator dynamics analysis, illustrated in Figure 2 and its supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "daae1fb4-4f2d-41ee-93a0-3aef699caa90",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C27",
+      "claim": "In the case of Simple Standing the stable equilibrium that supports cooperation consists of a mix of ALLC and DISC strategists.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Simple Standing the stable equilibrium that supports cooperation consists of a mix of ALLC and DISC strategists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the replicator dynamics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "e51d1d2d-627c-41de-8834-3a3c0584f2fd",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C29",
+      "claim": "Under Simple Standing, the rate of cooperative play at the mixed equilibrium shows only a weak dependence on the degree of empathy.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of cooperative play at this mixed equilibrium shows only a weak dependence on the degree of empathy (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the replicator dynamics analysis, illustrated in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "545420da-e0cb-46e5-acd7-b9b85a6539e2",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C30",
+      "claim": "For all four norms there is an unstable equilibrium with some portion of the population playing ALLD and some portion playing DISC.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from the stable equilibria discussed above, for all four norms there is also an unstable equilibrium, with some portion of the population playing ALLD and some portion playing DISC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the replicator dynamics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "b2f05877-b1e2-4efa-8634-782dd07daf7c",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C32",
+      "claim": "Empathy tends to increase mean levels of cooperation in finite populations under stochastic dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Empathy tends to increase mean levels of cooperation in finite populations under stochastic dynamics (Figure 3), similar to our findings in an infinite population.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Monte Carlo simulations, illustrated in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "dcf8e7a9-f738-4cb6-a400-e51305c57c5e",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C34",
+      "claim": "The Stern Judging norm supports the highest rate of cooperation when empathy is high.",
+      "claim_type": "EXPLICIT",
+      "source": "For high values of empathy, Stern Judging is the most efficient social norm at promoting cooperation, followed by Simple Standing and Scoring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Monte Carlo simulations, illustrated in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "1589b943-8c29-4fda-bada-1426a827b0bd",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C36",
+      "claim": "The level of empathy strongly influences the amount of cooperation that evolves and changes the ordering of which social norms are best at promoting cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "And so the level of empathy strongly influences the amount of cooperation that evolves, and it even changes the ordering of which social norms are best at promoting cooperation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "bd57ca1d-87a0-4b4b-81b9-715a227f3366",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C37",
+      "claim": "Stern judging is the most socially beneficial norm only when individuals account for subjectivity in moral assessment or when individuals are forced to agree with one another through a centralized institution.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Stern judging is the most socially beneficial norm (Pacheco et al., 2006; Santos et al., 2016a; Santos et al., 2016b; Santos et al., 2018) only when individuals account for subjectivity in moral assessment, or when individuals are forced to agree with one another through a centralized institution of moral assessment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results, with citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "4911a8de-80ac-449c-82b1-34898b9ac67d",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C42",
+      "claim": "Under Stern Judging, provided empathy initially exceeds the repulsive value, evolution will favor increasing empathy towards the attractive value, and the population of discriminators will remain stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Provided empathy initially exceeds the repulsive value evolution will favor increasing empathy towards the attractive value, and the population of discriminators will remain stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the adaptive dynamics analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "5ebcc95d-260a-4076-bb8e-14a44f593b85",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C45",
+      "claim": "Under Simple Standing, the value of empathy at the singular point is larger when the benefits of cooperation are larger.",
+      "claim_type": "EXPLICIT",
+      "source": "The value of empathy at this singular point is larger when the benefits of cooperation are larger (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the adaptive dynamics analysis, illustrated in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "0a6969e0-1398-4bc6-a3f7-91fc5a393378",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C46",
+      "claim": "Under Simple Standing, once the singular value of empathy is reached, the strategic equilibrium at pure discriminators is no longer stable.",
+      "claim_type": "EXPLICIT",
+      "source": "However once this value of empathy is reached, the strategic equilibrium at pure discriminators is no longer stable, and the population will instead be replaced by a mix of DISC and ALLC strategists, under replicator dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the combined analysis of adaptive dynamics and replicator dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "793ebe94-48a7-4fa3-9431-472f4410eebe",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C48",
+      "claim": "Under Simple Standing, the strategic equilibrium at E=0 is vulnerable to invasion by pure defectors in a finite population.",
+      "claim_type": "EXPLICIT",
+      "source": "The strategic equilibrium at this point lies near the boundary of two basins of attraction (Figure 2d) and is vulnerable to invasion by pure defectors in a finite population.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the position of the equilibrium in the strategy space.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "f45c9524-2b88-4b36-ad55-e8a4519b9b90",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C49",
+      "claim": "Simple Standing cannot sustain empathy over the long term as both empathy and strategy co-evolve, eventually resulting in a population of pure defectors.",
+      "claim_type": "EXPLICIT",
+      "source": "And so, in summary, while the exact dynamics will depend on the time scales of empathy and strategy evolution, Simple Standing cannot sustain empathy over the long term as both these components of personality co-evolve, eventually resulting in a population of pure defectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the adaptive dynamics analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "f3b01eb3-0de7-40a7-9ae1-3385137136aa",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C50",
+      "claim": "Much of the existing literature on empathy focuses on the emotional component of empathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of the existing literature focuses on the emotional component of empathy \u2013 linkage of emotional states between individuals, emotional contagion (Hatfield et al., 1993) and empathy-induced helping (Cialdini et al., 1997; May, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the literature, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "4c65175f-0d16-4ac1-9b04-a92e62137fc9",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C51",
+      "claim": "There is substantial evidence that the effect of 'self-other merging' provides moral motivation to cooperate.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, there is substantial evidence that the effect of 'self-other merging' provides moral motivation to cooperate (Batson et al., 1997; Batson et al., 1995; Batson and Moran, 1999) and contributes to the resolution of public-goods dilemmas (Batson, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "4440f002-6cba-423a-9d66-e01343e73fa9",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C52",
+      "claim": "Some research suggests that the capacity for emotional empathy evolved in the context of parental care.",
+      "claim_type": "EXPLICIT",
+      "source": "Very little is known about the origins of empathy in relation to cooperative behavior, although some research suggests that the capacity for emotional empathy evolved in the context of parental care (de Waal, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to de Waal, 2008.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "d44d9b86-37d4-48ad-86f2-5100754293ce",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C54",
+      "claim": "Egocentric evaluation leads to unjustified or irrational defection.",
+      "claim_type": "EXPLICIT",
+      "source": "Egocentric evaluation leads to unjustified or irrational defection, because a person perceived as 'bad' by the observer might actually appear 'good' in the eyes of the donor who's action is being evaluated, or vice versa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the logic of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "03b3153f-e929-4172-890d-58994bc2bf53",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C55",
+      "claim": "Despite being the most efficient norm at promoting cooperation in empathetic societies, Stern Judging performs very poorly in egocentric populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This point is particularly striking in the case of Stern Judging, the norm that assigns a 'good' reputation only to individuals who cooperate with other 'good' players and defect against 'bad' (Kandori, 1992; Pacheco et al., 2006). Despite being the most efficient norm at promoting cooperation in empathetic societies, Stern Judging performs very poorly in egocentric populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations, with citations to prior work on Stern Judging.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "b8119635-e772-4f0c-8b12-0e137510afe1",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C56",
+      "claim": "Scoring is immune to the effects of empathy and dominates in societies with egocentric moral evaluation rules.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, Scoring \u2013 the norm that does not take into account the recipient's reputation at all \u2013 is immune to the effects of empathy and dominates in societies with egocentric moral evaluation rules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "da8b680e-5de4-439e-98e9-8f65abe39f79",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C57",
+      "claim": "Empathetic perspective-taking can evolve through cultural copying and remain evolutionarily stable if a society is governed by Stern Judging or Shunning.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we have shown that empathetic perspective-taking can evolve through cultural copying, and remain evolutionarily stable if a society is governed by Stern Judging or Shunning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the adaptive dynamics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "ac8e459b-dd8c-4687-aa31-f6908508961a",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C58",
+      "claim": "Once societies governed by Stern Judging or Shunning evolve empathy, individuals performing egocentric evaluations will be rewarded less than their empathetic peers.",
+      "claim_type": "EXPLICIT",
+      "source": "Once these societies evolve empathy, individuals performing egocentric evaluations of observed social behavior will be rewarded less than their empathetic peers, and this remains true even if strategies are allowed to co-evolve with empathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the adaptive dynamics analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "2c761f48-1a7c-40bb-92fb-43eb3ddbdf26",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C59",
+      "claim": "Egocentric and uncooperative societies are possible evolutionary outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we have also seen that egocentric and uncooperative societies are nevertheless possible evolutionary outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the adaptive dynamics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "88ba0457-c7e1-46cb-9865-0a503fabc321",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C60",
+      "claim": "In populations governed by Stern Judging, Shunning and Scoring, the egocentric and uncooperative outcome represents an alternative locally stable state in the strategy-empathy phase space.",
+      "claim_type": "EXPLICIT",
+      "source": "In populations governed by Stern Judging, Shunning and Scoring this outcome represents an alternative locally (though not globally) attractive stable state in the strategy-empathy phase space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the adaptive dynamics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "b0925dcc-055b-46ad-b2c8-9f74957f9b82",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C61",
+      "claim": "In the case of Simple Standing, the egocentric and uncooperative outcome is the only long-term stable outcome as both empathy and strategies are allowed to evolve.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Simple Standing, the egocentric and uncooperative outcome is the only long-term stable outcome as both empathy and strategies are allowed to evolve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the adaptive dynamics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "f98b8857-c900-4ede-a895-0a8932dcca44",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C62",
+      "claim": "Relatively simple 'second-order' norms of moral assessment tend to outperform more complex social norms.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, relatively simple 'second-order' norms of moral assessment, which update a donor's reputation based solely on the donor's action and the recipient's reputation, tend to outperform more complex social norms (Santos et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Santos et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "739eecd3-2537-425c-b153-37b20b19a038",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C63",
+      "claim": "Stern Judging is the norm most likely to evolve in a group-structured population because it maximizes the collective payoff of the group.",
+      "claim_type": "EXPLICIT",
+      "source": "Pacheco et al. (2006) have additionally shown that Stern Judging is the norm most likely to evolve in a group-structured population, because it maximizes the collective payoff of the group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pacheco et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "cbd55a39-7908-4f3a-a69b-32c81b987afc",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C64",
+      "claim": "Prior studies of cooperation and moral assessment have assumed that reputations are objective and common knowledge in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies of cooperation and moral assessment (Nowak and Sigmund, 1998; Pacheco et al., 2006; Ohtsuki et al., 2009; Sasaki et al., 2017; Santos et al., 2016a; Santos et al., 2016b) have assumed that reputations are objective and common knowledge in the population \u2013 meaning that opinions about reputations do not differ among individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the literature, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "5b8996aa-03fe-411d-8533-b6529b7c31b4",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C65",
+      "claim": "The model assumes that each observer makes her moral evaluation of a donor's action based on a different social interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "As in Okada et al. (2018), we assume that each observer makes her moral evaluation of a donor's action based on a different social interaction, that is, each interaction is observed only once.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption, with a citation to similar prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "e8647f0a-1a7d-4b9f-a968-079e1e730335",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C66",
+      "claim": "The model assumes that the timescale of reputation updating is faster than that of strategy evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To simplify analysis, in the infinite-population model we assume that reputation frequencies reach equilibrium before strategies are updated \u2013 that is, the timescale of reputation updating is faster than that of strategy evolution (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption stated explicitly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "8d331840-7473-4925-91ed-13f5b66a7c6d",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C67",
+      "claim": "The model assumes that the timescale at which games are played and payoffs are acquired is much faster than the timescales of imitation, exploration, and reputation dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "For the sake of simplicity, we assumed that the timescale at which games are played and payoffs are acquired is much faster than the timescales of imitation, exploration, and reputation dynamics, so that each individual plays many games selection and mutation take place (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption stated explicitly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "4aa7a5ef-dcac-496d-9bdb-dfdc6ebda23d",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C68",
+      "claim": "An individual's capacity for empathetic observations may have a genetic component evolving via Darwinian selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, an individual's capacity for empathetic observations may have a genetic component evolving via Darwinian selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about an alternative mechanism for empathy evolution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "c1f7887f-f21d-4b58-9703-52a0b3999227",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "claim_id": "C69",
+      "claim": "The degree of empathy in moral evaluation can be observed, inferred or learned, and can therefore evolve through social contagion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the following analysis we assume that the degree of empathy in moral evaluation can be observed, inferred or learned, and can therefore evolve through social contagion (imitation dynamics) (Cushman et al., 2017), similar to how social norms are learned (Buckholtz and Marois, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption, supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bf526eb7-3d80-47b4-95e2-2637ae52ac87",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work establishes that cooperation among unrelated individuals is puzzling and that cultural forces, particularly moral reputations, are important drivers of prosocial behavior. However, the common assumption that reputations are objective and publicly known is unrealistic, and subjective reputations result in lower cooperation rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 accurately summarize established literature on cooperation, reputation-based reciprocity, and the limitations of objective reputation models. All claims are supported by appropriate citations to prior work, and the characterization of the literature appears accurate and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "b45d2054-2f89-47d6-8710-269eff6135e4",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Empathy, particularly perspective-taking, is a key component of prosocial behavior that develops early in life but is not universal. Despite its importance, the role of empathy in moral evaluation has not been thoroughly studied, and there is no formal framework for analyzing empathetic perspective-taking in game-theoretic models of cooperation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 are well-supported by citations to psychological literature. Claims C14-C15 represent the authors' assessment of a gap in the literature, which appears reasonable given the novelty of their approach. The characterization of prior work and identification of the research gap is appropriately justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "b200a519-8959-4772-99ca-17f91876762f",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors conclude that empathy fosters cooperation by reducing unjustified defection and that a capacity for empathy is a key component for sustaining cooperation in societies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These overarching conclusions (C16, C20) are supported by the theoretical models, replicator dynamics analysis, Monte Carlo simulations, and adaptive dynamics presented throughout the manuscript. The claims are consistent with the detailed results reported in subsequent claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "b83a8ec8-012f-489b-8408-5e9f0437115d",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Under replicator dynamics, all four social norms exhibit bi-stable dynamics. Empathy increases cooperation for Stern Judging, Shunning, and Simple Standing by expanding the basin of attraction toward cooperative equilibria and increasing equilibrium cooperation rates, but has no effect on Scoring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C30 describe results from replicator dynamics analysis with explicit mathematical derivations provided in the Methods. The findings are illustrated in Figure 2 and supplements, showing phase diagrams and equilibrium frequencies. The mathematical framework appears sound and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "4dd0651f-0744-4f09-ad8a-0d961efbdb9a",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Monte Carlo simulations in finite populations confirm that empathy increases cooperation, with Stern Judging being most effective at high empathy but performing poorly at low empathy. The level of empathy fundamentally changes which social norms best promote cooperation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 are supported by Monte Carlo simulations (Figure 3) showing cooperation rates across empathy levels for different norms. The reversal in norm rankings between high and low empathy is clearly demonstrated. The simulations appropriately account for stochasticity in finite populations and include multiple exploration rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "c1575f42-81c1-4f7e-b462-e1ebca460813",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The norms previously considered most socially beneficial (particularly Stern Judging) depend on high levels of empathy, whereas different norms (particularly Scoring) maximize social welfare in populations incapable of empathy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 are directly supported by the simulation results in Figure 3, which show that Stern Judging dominates at high empathy but Scoring dominates at low empathy. This represents a key finding that challenges prior literature assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "3094f9eb-e827-484b-b29c-e4cbf643f395",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Under Stern Judging and Shunning norms, empathy can evolve to high levels through cultural copying and remain evolutionarily stable, with empathetic individuals outperforming egocentric evaluators once empathy is established.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C57-C58 are supported by adaptive dynamics analysis (Figure 4a-b, Figure 5a,c) showing attractive singular points for empathy evolution. The pairwise invasibility plots and Monte Carlo simulations confirm evolutionary stability. The mathematical derivations in Methods provide the analytical foundation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "9adbf0ee-8f23-436f-ac7c-d90613e58c07",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Under Simple Standing, empathy initially evolves to an intermediate level but cannot be sustained long-term during strategy-empathy co-evolution, eventually resulting in a population of pure defectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49, C61 describe complex dynamics under Simple Standing supported by adaptive dynamics analysis (Figure 4c-d, Figure 5b) and the interaction between empathy evolution and strategic equilibria. The reasoning about instability at the mixed equilibrium (C48) and long-term collapse (C49) follows logically from the model structure, though the exact dynamics depend on timescale assumptions (C66-C67).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "71e622f1-350c-446b-ac05-f36b3ea519a1",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Empathy itself can evolve through social contagion (imitation dynamics), where the degree of empathy can be observed, inferred, or learned.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C69 are supported by the adaptive dynamics framework and Monte Carlo simulations of empathy evolution (Figure 4). The assumption that empathy is observable and can spread through social learning is reasonable and supported by citation to Cushman et al., 2017. The alternative genetic mechanism (C68) is noted but not explored.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "3aff5805-3dcb-4c07-b8f1-2ab5430a2cbc",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Egocentric and uncooperative societies are possible evolutionary outcomes, representing alternative locally stable states under Stern Judging, Shunning, and Scoring.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by the bi-stability shown in adaptive dynamics analysis (Figure 4, Figure 5). The pairwise invasibility plots clearly show multiple stable states, with the egocentric equilibrium (E=0) being locally but not globally stable for these norms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "cc43978e-33a6-46e5-986b-e9d6daf98c4e",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Egocentric evaluation leads to unjustified defection because observers and donors may disagree on recipient reputations. Stern Judging performs poorly under egocentric evaluation while Scoring is immune to empathy effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 provide mechanistic interpretation of the simulation results. The logic is sound: egocentric evaluation creates misalignment between donor intentions and observer assessments. This is particularly problematic for Stern Judging (which conditions on recipient reputation) but irrelevant for Scoring (which ignores recipient reputation). The explanation is consistent with the mathematical model structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "1fb55321-308a-4fe0-9e18-0fe26a44327b",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior literature has established that simple second-order norms outperform complex norms, that Stern Judging is most likely to evolve in group-structured populations, and that previous studies assumed objective, common-knowledge reputations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 accurately characterize prior literature with appropriate citations (Santos et al., 2018; Pacheco et al., 2006; multiple papers on objective reputations). This contextualizes the current work's contribution in relaxing the objective reputation assumption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "136c3919-1ffb-416c-8607-1321b4c8663f",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model assumes each observer evaluates different interactions, that reputation updating is faster than strategy evolution, and that game-playing is faster than imitation and reputation dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 describe key modeling assumptions that are explicitly stated and justified as simplifications. The timescale separation assumptions (C66-C67) are standard in evolutionary game theory and allow analytical tractability. These assumptions are clearly documented in the Methods section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    },
+    {
+      "id": "ad972ed5-f1c9-45b9-8f1d-009e16eba6ae",
+      "content_id": "3b34ccd9-3227-4f7e-8c33-1c6a65e9772b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Existing empathy literature focuses primarily on emotional components like emotional contagion and self-other merging, with evidence that emotional empathy may have evolved in the context of parental care.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 accurately characterize the empathy literature with appropriate citations. This contextualizes the current work's focus on cognitive perspective-taking rather than emotional empathy. The characterization appears accurate based on the cited sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:32:28.301307Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd3c82c4-9694-4421-9fbc-5670a9dc2fbd",
+      "result_id": "bf526eb7-3d80-47b4-95e2-2637ae52ac87"
+    },
+    {
+      "claim_id": "caf2030e-0e92-4d3d-8525-9c022c8f9219",
+      "result_id": "bf526eb7-3d80-47b4-95e2-2637ae52ac87"
+    },
+    {
+      "claim_id": "ac5133be-9d91-4477-bdfe-70cf6d811d0a",
+      "result_id": "bf526eb7-3d80-47b4-95e2-2637ae52ac87"
+    },
+    {
+      "claim_id": "4a6826cb-635a-4cf5-84a9-00cc912c9e55",
+      "result_id": "bf526eb7-3d80-47b4-95e2-2637ae52ac87"
+    },
+    {
+      "claim_id": "eba18e66-0f78-41b3-819a-8037b1a4e981",
+      "result_id": "bf526eb7-3d80-47b4-95e2-2637ae52ac87"
+    },
+    {
+      "claim_id": "19004856-ca23-4751-93f9-9a8e9cbb05bb",
+      "result_id": "bf526eb7-3d80-47b4-95e2-2637ae52ac87"
+    },
+    {
+      "claim_id": "a0fa1e41-0cd7-4b1f-9d73-83368bdb86b6",
+      "result_id": "bf526eb7-3d80-47b4-95e2-2637ae52ac87"
+    },
+    {
+      "claim_id": "f6a155f7-c706-4c4c-88fc-1c4d9b704459",
+      "result_id": "b45d2054-2f89-47d6-8710-269eff6135e4"
+    },
+    {
+      "claim_id": "3240dd07-bbd9-47b3-bc87-bc7b04f55899",
+      "result_id": "b45d2054-2f89-47d6-8710-269eff6135e4"
+    },
+    {
+      "claim_id": "909cb1f5-3a97-4269-b1c0-111637fcde6d",
+      "result_id": "b45d2054-2f89-47d6-8710-269eff6135e4"
+    },
+    {
+      "claim_id": "bc3dd922-b2a1-4187-a901-cfddc14f91d0",
+      "result_id": "b45d2054-2f89-47d6-8710-269eff6135e4"
+    },
+    {
+      "claim_id": "314d44cb-62ad-43cf-89ae-39e80611c0d1",
+      "result_id": "b45d2054-2f89-47d6-8710-269eff6135e4"
+    },
+    {
+      "claim_id": "bbe938d1-41a6-447f-90a5-5e045badbdfa",
+      "result_id": "b45d2054-2f89-47d6-8710-269eff6135e4"
+    },
+    {
+      "claim_id": "eaffcfdc-e1aa-4936-8fda-7f747f671338",
+      "result_id": "b45d2054-2f89-47d6-8710-269eff6135e4"
+    },
+    {
+      "claim_id": "96ba66bb-cf69-4878-a044-8fa87ed3dfba",
+      "result_id": "b45d2054-2f89-47d6-8710-269eff6135e4"
+    },
+    {
+      "claim_id": "ecba84ed-cee3-498b-994a-d95e57f2f686",
+      "result_id": "b200a519-8959-4772-99ca-17f91876762f"
+    },
+    {
+      "claim_id": "92460ab2-60f8-4181-8d0e-17e7431d69f8",
+      "result_id": "b200a519-8959-4772-99ca-17f91876762f"
+    },
+    {
+      "claim_id": "9aa19e47-57af-424c-b5e6-34e74bc04711",
+      "result_id": "b83a8ec8-012f-489b-8408-5e9f0437115d"
+    },
+    {
+      "claim_id": "b5d02df6-8b79-46dc-9f74-3252c8c6ff23",
+      "result_id": "b83a8ec8-012f-489b-8408-5e9f0437115d"
+    },
+    {
+      "claim_id": "4fb85a19-fdbf-401b-b620-4f97b9b3af0c",
+      "result_id": "b83a8ec8-012f-489b-8408-5e9f0437115d"
+    },
+    {
+      "claim_id": "82da4eab-dbcf-4812-815c-7671dafc8eeb",
+      "result_id": "b83a8ec8-012f-489b-8408-5e9f0437115d"
+    },
+    {
+      "claim_id": "c71e193e-ece4-4214-865e-7c505be12a1e",
+      "result_id": "b83a8ec8-012f-489b-8408-5e9f0437115d"
+    },
+    {
+      "claim_id": "daae1fb4-4f2d-41ee-93a0-3aef699caa90",
+      "result_id": "b83a8ec8-012f-489b-8408-5e9f0437115d"
+    },
+    {
+      "claim_id": "e51d1d2d-627c-41de-8834-3a3c0584f2fd",
+      "result_id": "b83a8ec8-012f-489b-8408-5e9f0437115d"
+    },
+    {
+      "claim_id": "545420da-e0cb-46e5-acd7-b9b85a6539e2",
+      "result_id": "b83a8ec8-012f-489b-8408-5e9f0437115d"
+    },
+    {
+      "claim_id": "b2f05877-b1e2-4efa-8634-782dd07daf7c",
+      "result_id": "4dd0651f-0744-4f09-ad8a-0d961efbdb9a"
+    },
+    {
+      "claim_id": "dcf8e7a9-f738-4cb6-a400-e51305c57c5e",
+      "result_id": "4dd0651f-0744-4f09-ad8a-0d961efbdb9a"
+    },
+    {
+      "claim_id": "1589b943-8c29-4fda-bada-1426a827b0bd",
+      "result_id": "4dd0651f-0744-4f09-ad8a-0d961efbdb9a"
+    },
+    {
+      "claim_id": "bd57ca1d-87a0-4b4b-81b9-715a227f3366",
+      "result_id": "4dd0651f-0744-4f09-ad8a-0d961efbdb9a"
+    },
+    {
+      "claim_id": "2da50821-c8ad-4b50-88f7-45ad733c822e",
+      "result_id": "c1575f42-81c1-4f7e-b462-e1ebca460813"
+    },
+    {
+      "claim_id": "a35a5fc9-10c1-4af8-bec0-56dcbb1f471b",
+      "result_id": "c1575f42-81c1-4f7e-b462-e1ebca460813"
+    },
+    {
+      "claim_id": "4911a8de-80ac-449c-82b1-34898b9ac67d",
+      "result_id": "3094f9eb-e827-484b-b29c-e4cbf643f395"
+    },
+    {
+      "claim_id": "da8b680e-5de4-439e-98e9-8f65abe39f79",
+      "result_id": "3094f9eb-e827-484b-b29c-e4cbf643f395"
+    },
+    {
+      "claim_id": "ac8e459b-dd8c-4687-aa31-f6908508961a",
+      "result_id": "3094f9eb-e827-484b-b29c-e4cbf643f395"
+    },
+    {
+      "claim_id": "5ebcc95d-260a-4076-bb8e-14a44f593b85",
+      "result_id": "9adbf0ee-8f23-436f-ac7c-d90613e58c07"
+    },
+    {
+      "claim_id": "0a6969e0-1398-4bc6-a3f7-91fc5a393378",
+      "result_id": "9adbf0ee-8f23-436f-ac7c-d90613e58c07"
+    },
+    {
+      "claim_id": "793ebe94-48a7-4fa3-9431-472f4410eebe",
+      "result_id": "9adbf0ee-8f23-436f-ac7c-d90613e58c07"
+    },
+    {
+      "claim_id": "f45c9524-2b88-4b36-ad55-e8a4519b9b90",
+      "result_id": "9adbf0ee-8f23-436f-ac7c-d90613e58c07"
+    },
+    {
+      "claim_id": "b0925dcc-055b-46ad-b2c8-9f74957f9b82",
+      "result_id": "9adbf0ee-8f23-436f-ac7c-d90613e58c07"
+    },
+    {
+      "claim_id": "7822e5af-598f-4032-86bd-4cf11b18fe22",
+      "result_id": "71e622f1-350c-446b-ac05-f36b3ea519a1"
+    },
+    {
+      "claim_id": "c1f7887f-f21d-4b58-9703-52a0b3999227",
+      "result_id": "71e622f1-350c-446b-ac05-f36b3ea519a1"
+    },
+    {
+      "claim_id": "2c761f48-1a7c-40bb-92fb-43eb3ddbdf26",
+      "result_id": "3aff5805-3dcb-4c07-b8f1-2ab5430a2cbc"
+    },
+    {
+      "claim_id": "88ba0457-c7e1-46cb-9865-0a503fabc321",
+      "result_id": "3aff5805-3dcb-4c07-b8f1-2ab5430a2cbc"
+    },
+    {
+      "claim_id": "d44d9b86-37d4-48ad-86f2-5100754293ce",
+      "result_id": "cc43978e-33a6-46e5-986b-e9d6daf98c4e"
+    },
+    {
+      "claim_id": "03b3153f-e929-4172-890d-58994bc2bf53",
+      "result_id": "cc43978e-33a6-46e5-986b-e9d6daf98c4e"
+    },
+    {
+      "claim_id": "b8119635-e772-4f0c-8b12-0e137510afe1",
+      "result_id": "cc43978e-33a6-46e5-986b-e9d6daf98c4e"
+    },
+    {
+      "claim_id": "f98b8857-c900-4ede-a895-0a8932dcca44",
+      "result_id": "1fb55321-308a-4fe0-9e18-0fe26a44327b"
+    },
+    {
+      "claim_id": "739eecd3-2537-425c-b153-37b20b19a038",
+      "result_id": "1fb55321-308a-4fe0-9e18-0fe26a44327b"
+    },
+    {
+      "claim_id": "cbd55a39-7908-4f3a-a69b-32c81b987afc",
+      "result_id": "1fb55321-308a-4fe0-9e18-0fe26a44327b"
+    },
+    {
+      "claim_id": "5b8996aa-03fe-411d-8533-b6529b7c31b4",
+      "result_id": "136c3919-1ffb-416c-8607-1321b4c8663f"
+    },
+    {
+      "claim_id": "e8647f0a-1a7d-4b9f-a968-079e1e730335",
+      "result_id": "136c3919-1ffb-416c-8607-1321b4c8663f"
+    },
+    {
+      "claim_id": "8d331840-7473-4925-91ed-13f5b66a7c6d",
+      "result_id": "136c3919-1ffb-416c-8607-1321b4c8663f"
+    },
+    {
+      "claim_id": "f3b01eb3-0de7-40a7-9ae1-3385137136aa",
+      "result_id": "ad972ed5-f1c9-45b9-8f1d-009e16eba6ae"
+    },
+    {
+      "claim_id": "4c65175f-0d16-4ac1-9b04-a92e62137fc9",
+      "result_id": "ad972ed5-f1c9-45b9-8f1d-009e16eba6ae"
+    },
+    {
+      "claim_id": "4440f002-6cba-423a-9d66-e01343e73fa9",
+      "result_id": "ad972ed5-f1c9-45b9-8f1d-009e16eba6ae"
+    }
+  ],
+  "comparisons": []
+}

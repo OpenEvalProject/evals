@@ -1,0 +1,207 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "NGF treatment induces PI3K-dependent increases in both Akt-PH (a PI(3,4)P2/PIP3 reporter) and TRPV1 at the plasma membrane, as measured by TIRF microscopy. The NGF-induced increases were statistically significant compared to vehicle controls and were blocked by the PI3K inhibitor wortmannin. The Akt-PH probe was validated as compatible with NGF signaling, while Btk-PH was not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 provide converging evidence from TIRF microscopy, pharmacological inhibition, and western blot validation. The statistical analyses are appropriate (Wilcoxon rank tests with highly significant p-values), sample sizes are adequate (n=20-122), and proper controls (vehicle, wortmannin, probe validation) are included. The use of Akt-PH as a PI3K activity reporter is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "TRPV1 expression potentiates NGF-induced PI3K activity. Cells expressing TRPV1 showed significantly greater NGF-induced Akt-PH recruitment (mean 1.54\u00b10.08, n=122) compared to control cells without TRPV1 (mean 1.08\u00b10.03, n=75, p=10^-12). This potentiation was not due to altered PI3K expression levels, as p85\u03b1 expression was similar between TRPV1-expressing and control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate a novel finding with strong statistical support and appropriate controls. The western blot analysis ruling out changes in PI3K expression (C52-C53) strengthens the conclusion that TRPV1 functionally potentiates PI3K activity rather than simply increasing enzyme abundance. The large sample sizes and highly significant p-value support the robustness of this observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C7",
+      "C8",
+      "C57"
+    ],
+    "result": "The TRPV1 ankyrin repeat domain (ARD) is sufficient to potentiate NGF-induced PI3K activity. Expression of a soluble TRPV1-ARD fragment produced significant potentiation (mean 1.32\u00b10.02, n=80, p=10^-5 vs control) that was nearly as great as full-length TRPV1 (p=0.08). This suggests the mechanism involves allosteric regulation rather than simple membrane tethering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide strong evidence for the sufficiency of the ARD domain through domain mapping experiments. The statistical analysis is appropriate, and the inference about allosteric regulation (C8, C57) is reasonable given that a soluble fragment can reconstitute the effect. The slightly slower kinetics with ARD (C84) is noted but does not undermine the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TRPV1 potentiation of NGF-induced PI3K activity enhances downstream Akt phosphorylation at both T308 and S473 sites. TRPV1-expressing cells showed significantly increased NGF-induced Akt phosphorylation compared to controls (p=0.02 for T308, p=0.008 for S473) across multiple NGF concentrations and time points. Basal Akt phosphorylation was unchanged, and the effect required TrkA/p75NTR expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 provide orthogonal validation of the TIRF microscopy results using western blotting for Akt phosphorylation. The experimental design includes appropriate controls (multiple NGF concentrations, time points, basal conditions, TrkA/p75NTR requirement). The statistical analyses are appropriate (paired t-tests), though the sample size (n=3 for some comparisons) is modest. The convergence of TIRF and western blot data strengthens the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Potentiation of NGF-induced PI3K activity and trafficking to the plasma membrane in response to NGF are conserved among TRPV channels. TRPV2 and TRPV4 both showed significant NGF-induced trafficking and potentiation of PI3K activity compared to controls (p<0.05), though the effects were smaller than those of TRPV1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C66-C69 extend the findings to other TRPV family members with conserved ARDs. The statistical analyses use appropriate multiple comparison corrections (Holm-Bonferroni), and the observation that effects are smaller than TRPV1 is acknowledged. Sample sizes are adequate (n=29-62). This demonstrates conservation of the reciprocal regulation mechanism across TRPV channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors estimate that the observed TIRF fluorescence changes underestimate the actual changes in membrane-associated fluorescence due to cytosolic contamination. They calculate that approximately 90% of the TIRF signal comes from the cytosol, and that an observed FNGF of 1.54 translates to approximately a 10-fold increase in membrane-associated Akt-PH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C81-C82 present modeling estimates of TIRF signal contributions. While the modeling approach is reasonable and the authors appropriately note this is a \"rough estimate,\" the calculations rely on several assumptions (incident angle, membrane thickness, uniform cytosolic distribution) that are difficult to validate experimentally. The estimate provides useful context but should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The dynamics of NGF-induced PI(3,4)P2/PIP3 generation differ between conditions: in the absence of TRPV1, PI(3,4)P2/PIP3 levels were sustained, while with TRPV1-ARD, the kinetics were slower than with full-length TRPV1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 describe kinetic differences observed in the time-course data. These are descriptive observations supported by the figures, though the mechanistic basis for these differences is not explored. The observations are valid but represent secondary findings that do not affect the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The distribution of NGF-induced responses in F-11 cells is skewed toward larger values, similar to that reported in DRG neurons, indicating the cell model behaves similarly to native neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 validate the F-11 cell expression system by comparing response distributions to published DRG neuron data. This is an appropriate validation of the model system, though it is a supporting methodological point rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C75",
+      "C85"
+    ],
+    "result": "The authors speculate that TRPV1 potentiation of PI3K may be necessary for sufficient PI(3,4)P2/PIP3 production to promote channel trafficking during inflammation, and that reciprocal regulation between TRPV channels and PI3K may play roles in RTK signaling in development, motility, and pathology. They favor a model where direct TRPV1-PI3K interaction mediates the potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71, C75, and C85 are explicitly stated as speculation by the authors. While these are reasonable hypotheses based on the data, they lack direct experimental support in this manuscript. The speculation about necessity (C71) would require loss-of-function experiments decoupling potentiation from channel expression. The broader implications (C75) are plausible but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C26",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The manuscript establishes the prior knowledge context: NGF sensitizes pain neurons through PI3K-dependent TRPV1 trafficking, TRPV1 interacts directly with PI3K via its N-terminal region, and the current study localizes this interaction to the ARD domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C26, C35-C38 establish the background and context from prior work (mostly citations) and the current study's contribution (C38). These are appropriately cited and provide the foundation for the current investigation. C38 represents a refinement of prior domain mapping (C36-C37).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C39",
+      "C65",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The manuscript provides extensive background on inflammatory hyperalgesia, TRPV1 biology, NGF signaling, PI3K structure and function, and the TIRF microscopy technique. This establishes the scientific context and methodological framework for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C34, C39, C65, C70, C72-C80 represent established knowledge from the literature, appropriately cited. These provide necessary background but are not results of the current study. They are accurately presented and properly attributed.",
+    "result_type": "MINOR"
+  }
+]

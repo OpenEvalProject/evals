@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C22",
+      "C24"
+    ],
+    "result": "The study developed an improved automated home cage system for head-fixed mesoscale cortical imaging using Raspberry Pi hardware with a servo-based head fixation mechanism that resulted in significantly higher rates of head fixation compared to previous work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, C22, and C24 collectively demonstrate that the improved system with servo-based head fixation led to significantly higher rates of head fixation than the prior electromagnetic solenoid system (Murphy et al., 2016). The quantitative data in C25-C27 and Table 1 provide strong evidence for this improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C40",
+      "C41",
+      "C42",
+      "C47"
+    ],
+    "result": "Staged partial and probabilistic restraint with gradual tightening over 7-10 days allowed mice to adjust to self-initiated head fixation with approximately 50% participation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C40-C42, and C47 describe a coherent training protocol where loose head fixation was gradually tightened over 7-10 days with probabilistic restraint (50% initially, increasing to 75-90%). The data in C25-C27 showing 23/44 mice (52%) as good performers supports the ~50% participation rate claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The system implements a cue-based behavioral licking task monitored by a capacitive touch-sensor water spout with lick suppression training and auditory feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33, and C56-C59 describe the implementation of a capacitive lick detector (MPR-121) and a training protocol involving lick suppression (0.5-2 s), vibratory cues, and auditory feedback. The system is well-documented with specific hardware components and training parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C79",
+      "C80",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The system acquires spontaneous, movement-triggered, or task-evoked GCaMP6 cortical signals during automatic head fixation with hemodynamic correction using 440 nm reflected light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C79, C80, and C90-C92 demonstrate that the system collects GCaMP6 signals with a hemodynamic correction strategy using 440 nm reflected light captured in the blue RGB channel. The correction signal was typically <20% of the green GCaMP signal amplitude (C92), providing quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mice were trained to suppress licking and wait for cues with a self-timed delay period that was gradually increased from 300 ms to 1100 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C61-C65 describe a coherent training protocol where mice learned to suppress licking for 2 s (\u00b10.5 s), respond to vibratory cues, and delay licking for a self-timed period that was gradually increased. The training outcomes are documented in Figures 5 and 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Correct rewarded go-trials were associated with widespread activation of midline and lateral barrel cortex areas following a vibration cue and delayed frontal and lateral motor cortex activation, with pre-trial brain activity partially attributable to ongoing body movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C99-C101 describe cortical activation patterns during go-trials with quiescence during lick withhold and larger responses during preparation and execution. The finding that eliminating ~40% of trials with high hindlimb activity reduced pre-trial brain activity (C101) provides evidence for movement contributions, consistent with cited work (Musall et al., 2018; Salkoff et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C107",
+      "C108",
+      "C110",
+      "C112",
+      "C113"
+    ],
+    "result": "Cortical GCaMP signals predicted trial success with approximately 80% accuracy using a ridge regression model, with ALM showing the greatest contribution to prediction accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C107-C108, and C110-C113 demonstrate that a ridge regression model achieved ~80% prediction accuracy (C110), with ALM showing the greatest decrease when permuted (p<0.001, C112) and highest accuracy when used alone (p<0.001, C113). The statistical tests are appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31"
+    ],
+    "result": "The study tested 44 male and 8 female GCaMP6 transgenic mice, with good performers (23/44 males) averaging 28\u00b117 head fixations per day and 18\u00b113 min/day head-fixed time, yielding 34,114 total videos of brain activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C25-C27 provide consistent quantitative data on animal numbers and performance metrics. The data in Table 1 and C30-C31 document 34,114 total videos (29,097 task-related) and 5,423 additional sessions from female mice, providing strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Analysis of go-task performance showed that mice had higher success rates while head-fixed than non-head-fixed (RM 2WAY ANOVA, p=0.0026, n=8), with no significant day-night preference in performance (p=0.40, n=21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 report statistically significant findings with appropriate tests (RM 2WAY ANOVA for head-fixed vs. non-head-fixed comparison, t-tests for day-night comparisons). The sample sizes (n=8 and n=21) are clearly stated, and the finding that head fixation improved performance is surprising but well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Mice learned the go detection task within 1-4 days with relatively little early licking, and the proportion of errors decreased after 55-68 days of training even with longer delay periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 describe training outcomes documented in Figure 6, showing rapid learning of the go task and reduction in errors over time. The addition of no-go trials after 14 days initially caused confusion but mice learned to distinguish the stimuli over time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "For the no-go task, only 5 of 10 mice achieved d' > 2, with good performers averaging d'=1.37\u00b10.53 overall and reaching maximal daily d'=2.3\u00b10.52 (range 1.9-3.21), while poor performers averaged d'=0.2\u00b10.54.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 provide quantitative performance metrics for the no-go task with appropriate use of d' as a discrimination measure (C76). The small sample size (n=10) and variable performance are acknowledged, with clear distinction between good and poor performers based on quantitative criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mice head-fixed repeatedly over short intervals (median 5.8\u00b14.1 s), with inter-mouse intervals also showing short repetitions (median 305\u00b1575 s), and 69\u00b111% of head fixes occurred at night in non-random temporal clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 describe temporal patterns of head fixation with quantitative data and statistical testing (Anderson-Darling test showing non-normal distribution). The cluster analysis (C53) and circadian patterns (C54) are well-documented in Figure 4, though the small sample size of cages (n=5) limits statistical power for group dynamics (C52).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Correlation maps between brain GCaMP signals and behavioral ROIs indicated networks around limb and facial cortices extending to frontal motor areas, with trial-associated licking accompanied by large-scale body movements, though mice exhibited variable activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 and C104-C106 describe brain-behavior correlations with appropriate methods (seed-pixel analysis, Pearson correlations). The finding of variable strategies across mice (C105) is consistent with recent work (Gilad et al., 2018), and the correlation with female mice trained differently (C106) provides cross-validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C116",
+      "C117"
+    ],
+    "result": "No-go trials were associated with minimal brain activity and body movements, with most activity during cue processing and little activation during the licking phase, though some mice licked for both trial types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C116-C117 describe no-go trial responses with appropriate caveats about variable performance. The observation that some mice licked for both trial types (C116) and showed initial brain responses but failed to show sustained licking (C117) is documented in Figure 8 supplements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Early response trials (code -4) were associated with brain activity during the period prior to the trial that spilled over into the delay period, with robust early increases in frontal cortical activity associated with tongue motor circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 describe error trial analysis documented in Figure 8 supplements 4C and 5C. The finding of pre-trial brain activity associated with errors and early frontal cortex activation is consistent with the interpretation that ongoing activity contributes to task errors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C32",
+      "C83",
+      "C84"
+    ],
+    "result": "The improved cage uses infrared beam breaks for mouse position detection with circuitry to turn them off during head fixation to prevent interference with behavioral cameras, and synchronizes data streams using master TTL switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C83-C84 describe technical improvements to the system with clear rationale (preventing IR interference with cameras, synchronizing data streams). These are straightforward engineering solutions that are well-documented in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C34",
+      "C219",
+      "C220",
+      "C221",
+      "C222"
+    ],
+    "result": "The study implemented a relational MySQL database to manage more than 7.5 million behavioral events, with Python processing to generate summary information and pipelines for daily monitoring and analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C219-C222 describe the data management infrastructure with specific details about the database implementation, processing pipeline, and data access methods. The scale (>7.5 million events) and availability of data online provide strong support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Home cage mice learned the simple go-trial detection task well but had difficulty suppressing output during no-go trials, attributed to the lack of punishment for incorrect trials in the home cage training paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 provide a coherent interpretation of task performance differences, with the rationale that home cage training lacks strong negative reinforcement (only short time penalties). This is a reasonable interpretation supported by the performance data in C75-C78.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C18",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The Raspberry Pi Camera Module's intrinsically large depth of field (~3 mm) and reduced resolution are not expected to degrade signals for mesoscale imaging, making the system less sensitive to z-axis position changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C164-C166 provide a logical argument based on the requirements of mesoscale imaging (large focal volume, lower resolution) matching the properties of the Raspberry Pi camera. The depth of field measurement (~3 mm) using methods from Lim et al., 2012 provides quantitative support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Short bouts of head fixation led to mice performing 100-200 licking task trials per day (males 24/7: 200 trials/day, females ~7 h/day: 100 trials), which is lower than non-head-fixed tasks but yields 400-800 trials/day per cage with multiple animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 provide quantitative comparisons to prior work (Bollu et al., 2019; Silasi et al., 2018) with appropriate context about trial duration requirements for mesoscale imaging. The argument that multiple animals per cage increase total throughput is logical and supported by Table 1 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The work extends previous automated home cage behavioral analysis and brain imaging approaches, building on prior work in mice (Aoki et al., 2017; Murphy et al., 2016) and rats (Scott et al., 2013) but with improvements for group housing and autonomous mesoscale imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 appropriately cite and compare to prior work, accurately describing limitations of previous approaches (e.g., Aoki et al. lacked autonomous mesoscale imaging and group housing) and positioning the current work as an extension. The comparisons are fair and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Mesoscale widefield imaging maps cortical activation over large fields of view with larger focal volumes and lower spatial resolution than single-cell imaging, and green epifluorescence is sensitive to hemoglobin interference though this is less problematic for newer GCaMPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C87-C89 accurately describe properties of mesoscale imaging and hemodynamic artifacts, with appropriate citations to prior work (Mohajerani et al., 2013; Lim et al., 2012; Ma et al., 2017; Vanni and Murphy, 2014). These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Automated systems are expected to have advantages including less animal stress, lower variance, and removal of handler sex bias, with group housing proven to reduce stress and increase cost-effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C129 make reasonable arguments about anticipated advantages of automation, with C127 citing evidence for handler sex effects (Sorge et al., 2014) and C129 citing evidence for group housing benefits (Bartolomucci et al., 2003). However, these are largely prospective claims about expected benefits rather than demonstrated outcomes in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Future improvements could include discrimination tasks with two rewarded outcomes using dual water spouts or levers, and individualized training criteria for each mouse, which will be implemented in future cages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C144 describe potential future improvements with citations to relevant prior work (Guo et al., 2014; Burgess et al., 2017; Silasi et al., 2018). These are reasonable suggestions but represent speculation about future work rather than current results. The statement that individualized training will be implemented (C144) is a commitment rather than a result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Some mice are not interested in voluntary head fixation, but most mice re-head-fix at short intervals (<30 s) during 45 s trials, with potential for optimization of head-fixed duration and reward sizes based on other work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 describe observed limitations and behaviors with C149 providing quantitative support (<30 s re-fixation intervals). Claims C150-C151 suggest potential optimizations based on Aoki et al., 2017, which are reasonable but speculative. The core observations about voluntary participation are well-supported.",
+    "result_type": "MINOR"
+  }
+]

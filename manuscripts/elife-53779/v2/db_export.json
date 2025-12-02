@@ -1,0 +1,1951 @@
+{
+  "submission": {
+    "id": "2e26fbf7-7bb3-46c2-b114-c8db19bf3560",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:32:09.780855Z",
+    "updated_at": "2025-12-02T15:32:09.780855Z"
+  },
+  "content": [
+    {
+      "id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "submission_id": "2e26fbf7-7bb3-46c2-b114-c8db19bf3560",
+      "content_type": "manuscript",
+      "content_text": "# Structure-based discovery of potent and selective melatonin receptor agonists\n\n## Authors\n\n- Nilkanth Patel<sup>1</sup> ([ORCID: 0000-0002-9856-3041](https://orcid.org/0000-0002-9856-3041))\n- Xi Ping Huang<sup>2</sup> ([ORCID: 0000-0002-2585-653X](https://orcid.org/0000-0002-2585-653X))\n- Jessica M Grandner<sup>1</sup> ([ORCID: 0000-0001-5068-8665](https://orcid.org/0000-0001-5068-8665))\n- Linda C Johansson<sup>1</sup> ([ORCID: 0000-0003-4776-5142](https://orcid.org/0000-0003-4776-5142))\n- Benjamin Stauch<sup>1</sup> ([ORCID: 0000-0001-7626-2021](https://orcid.org/0000-0001-7626-2021))\n- John D McCorvy<sup>2</sup> ([ORCID: 0000-0001-7555-9413](https://orcid.org/0000-0001-7555-9413))\n- Yongfeng Liu<sup>2</sup>\n- Bryan Roth<sup>2</sup>\n- Vsevolod Katritch<sup>1</sup> ([ORCID: 0000-0003-3883-4505](https://orcid.org/0000-0003-3883-4505)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences and Department of Chemistry, Bridge Institute, USC Michelson Center for Convergent Biosciences, University of Southern California Los Angeles United States\n2. Department of Pharmacology, University of North Carolina Chapel Hill Medical School Chapel Hill United States\n3. National Institute of Mental Health Psychoactive Drug Screening Program, Department of Pharmacology, University of North Carolina Chapel Hill Medical School Chapel Hill United States\n4. Division of Chemical Biology and Medicinal Chemistry, University of North Carolina Chapel Hill Medical School Chapel Hill United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMelatonin receptors MT1 and MT2 are involved in synchronizing circadian rhythms and are important targets for treating sleep and mood disorders, type-2 diabetes and cancer. Here, we performed large scale structure-based virtual screening for new ligand chemotypes using recently solved high-resolution 3D crystal structures of agonist-bound MT receptors. Experimental testing of 62 screening candidates yielded the discovery of 10 new agonist chemotypes with sub-micromolar potency at MT receptors, with compound 21 reaching EC50 of 0.36 nM. Six of these molecules displayed selectivity for MT2 over MT1. Moreover, two most potent agonists, including 21 and a close derivative of melatonin, 28, had dramatically reduced arrestin recruitment at MT2, while compound 37 was devoid of Gi signaling at MT1, implying biased signaling. This study validates the suitability of the agonist-bound orthosteric pocket in the MT receptor structures for the structure-based discovery of selective agonists.\n\n## Introduction\n\nThe type 1A and 1B melatonin receptors (MT1 and MT2) are G protein-coupled receptors (GPCRs) that respond to the neurohormone melatonin (N-acetyl-5-methoxytryptamine) (P\u00e9vet, 2016; Reppert et al., 1994). Melatonin is found in all mammals, including humans, where it regulates sleep and helps to synchronize the circadian rhythm with natural light-dark cycles (Brzezinski, 1997;\u00a0Xie et al., 2017). Chemically, melatonin is synthesized from serotonin in the pineal gland of the brain during darkness (Ganguly et al., 2002). Both MT1 and MT2 share canonical helical 7-transmembrane (7-TM) topology (Johansson et al., 2019; Stauch et al., 2019), although they are differentially expressed and implicated in diverse biological functions and pathologies (Dubocovich and Markowska, 2005). While exogenous melatonin has been commonly used for the treatment of insomnia and jetlag, more effective and long-lasting MT agonists such as ramelteon have been approved for primary chronic insomnia treatment, because of their low side-effect profile as compared to other sleeping aids such as benzodiazepines (Hardeland et al., 2011;\u00a0Erman et al., 2006). Other MT agonists such as tasimelteon and agomelatine, are used for non-24-hour sleep-wake disorders in blind individuals and as an atypical anti-depressant for major depressive disorders, respectively (Lavedan et al., 2015;\u00a0de Bodinat et al., 2010). Recent studies also suggest MT receptors play an essential role in learning, memory, and neuroprotection (Liu et al., 2016) and illustrate the potential utility of partial and selective MT2 receptor agonists as antinociceptive drugs (L\u00f3pez-Canul et al., 2015). Moreover, MT2\u00a0single nucleotide polymorphisms (SNPs) are implicated in type-2 diabetes (Karamitri et al., 2018) (T2D), emphasizing the importance of MT receptors in a wide variety of functions relevant to human health and the quality of life (Karamitri and Jockers, 2019).\n\nAlthough MT1 and MT2 receptors have distinctive in vivo functions, most of the currently available drugs non-selectively activate both MT1 and MT2 receptors (Zlotos et al., 2014).Recent studies on melatonin receptors using partially selective MT2 ligands and gene knockout approaches have shed light on difference in the biology of melatonin receptor subtypes. For example, the\u00a0MT2 receptor regulates non-rapid eye movement (NREM) while MT1 mediates rapid eye movement (REM) phases of the vigilance state in sleep architecture (Comai et al., 2013; Fisher and Sugden, 2009; Liu et al., 2016). The discovery of novel and selective MT ligands may, therefore, lead to useful tool compounds for better pharmacological dissection of the melatonin system, and accelerate the development of alternatives to existing drugs (Jockers et al., 2016; Zlotos, 2012).\n\nRecently, the three-dimensional structures of MT1 and MT2 were determined using an X-ray free-electron laser (XFEL), providing atomic-level details of receptor-ligand interactions (Johansson et al., 2019; Stauch et al., 2019). Although both receptors were resolved in complexes with agonists \u2013 agomelatine, 2-phenylmelatonin, 2-iodomelatonin and ramelteon, thermostabilizing mutations that were necessary for crystallization rendered these receptors functionally inactive. Therefore, the accuracy of these agonist-bound inactive structures in reproducing the active-state conformation of the orthosteric pocket, and their utility in the prospective discovery of new agonists requires further validation.\n\nHere, we utilized the MT structural information to perform a large scale virtual ligand screen (VLS) on both MT1 and MT2 receptors, using libraries of 8.4 million available-for-purchase fragment-like and lead-like compounds\u00a0(Sterling and Irwin, 2015). Subsequent experimental testing of 62 compounds selected from the top scoring molecules led to the discovery of ten new agonist chemotypes with sub-micromolar potencies, with one of them, compound 21, displaying sub-nM agonist potency (EC50\u00a0=\u00a00.36 nM) in G-protein assays. Six of these hits, including the most potent one, demonstrated selectivity for MT2, while five hits were partial agonists at MT2. Moreover, the two most potent MT2 compounds, 21 and a close derivative of melatonin, 28, show reduced arrestin signaling, thus resulting in substantial bias towards G-protein signaling. Our results demonstrate that structure-based VLS approach can yield novel, highly potent and selective ligand chemotypes with potential utility as chemical probes with distinct properties and candidate\u00a0leads for the treatment of circadian rhythm related sleep and mood disorders.\n\n## Results\n\n### Benchmarking receptor models\n\nTo evaluate the ability of the structure-based receptor models to recognize high-affinity melatonin receptor ligands, we performed extensive docking of a subset of known ligands of MT1 and MT2 receptors\u00a0(Figure 1\u2014figure supplement 1) into (i) the unmodified 3D structures obtained from X-ray crystallography (MT1_Xtal, MT2_Xtal), as well as (ii) into the receptor models where the ligand-binding pocket was optimized by conformational modeling (MT1_Opt, MT2_Opt). Analysis of the docking poses for the known MT ligands in both crystal structures and optimized MT receptor models showed favorable binding scores with docking poses consistent with the orientation and binding modes of crystallized ligands (Figure 1a\u2013d). The major interactions include aromatic stacking of the heterocyclic core with ECL2 hydrophobic residue F179/192ECL2 (the residue numbers for MT1 and MT2 listed for UniProt (Bateman et al., 2017) ids: P48039 and P49286, respectively, followed by superscripted Ballesteros \u2013 Weinstein numbering scheme Ballesteros and Weinstein, 1995), as well as hydrogen bonding interactions with N162/1754.60 and Q181/194ECL2 (Johansson et al., 2019;\u00a0Stauch et al., 2019) . The performance of each model was then evaluated as the area under the corresponding receiver operator characteristic (ROC) curve (AUC), benchmarking the ability of these models to correctly detect ligands among decoys. The AUC values for the optimized models of MT receptors showed substantial improvement over AUC values for MT crystal structures (MT1_Opt\u00a0=\u00a087 vs. MT1_Xtal\u00a0=\u00a069; and MT2_Opt\u00a0=\u00a082 vs. MT2_Xtal\u00a0=\u00a070) (see Figure 1e). Overall, these results validated the improved VLS performance of the optimized models\u00a0of MT1 and MT2 receptors, which were then used for large-scale prospective VLS.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig1-v2.jpg)\n\n**Figure 1.:** (a) 5-HEAT and (b) S-26131 docked into MT1_Opt model; whereas (c) IIK-7 and (d) 4P-PDOT docked into MT2_Opt model. (e) ROC plots for MT receptor crystal structures and optimized models.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig1-figsupp1-v2.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Side chain heavy atoms displayed as stick representation in purple color for residues G3.29104A (in MT1 receptor) and W6.48251/264F (in MT1/MT2 receptors, respectively).\n\n### Prospective VLS and candidate selection\n\nA library of 8.4 million commercially available compounds was docked into the optimized MT1_Opt and MT2_Opt structural models (see Materials\u00a0and\u00a0methods), and for every compound, docking scores and binding interactions were predicted. The top 5000 scoring compounds were selected from these VLS runs for each receptor, which were further evaluated by redocking into both MT1 and MT2 receptors with increased computational sampling. The initial hit list contained 700 compounds predicted to bind to both receptors. To evaluate these top docking solutions, we created additional models of MT receptors by\u00a0restoring\u00a0thermostabilizing mutations (Figure 1\u2014figure supplement 2) in the proximity of the orthosteric site to wild-type residues (A1043.29G and W2516.48F in MT1; W2646.48F in MT2), and performed further conformational optimizations. We determined that the impact of these mutations on the docking results was negligible. The dock scores for selected MT ligands were better than the standard ICM VLS cutoff \u221232.0 kJ/mol, which is better than or comparable to\u00a0the docking score of melatonin (\u221229.3) and other high affinity MT receptor ligands (Johansson et al., 2019).\n\nTo capture chemotype diversity, we selected the top 500 compounds for each receptor using chemical clustering in combination with docking scores. A final set of 62 compounds (23 from\u00a0only MT1 VLS; 25 from only\u00a0MT2 VLS; 14 from both MT1 and MT2 VLS) were selected for purchase based on a multidimensional composite criterion accounting for compound novelty, chemical diversity, well-defined interaction patterns with binding site residues N162/1754.60 and/or Q181/194ECL2, and interaction similarities with ligands observed in the crystal structures (See Figure 2; Supplementary file 1 Table S1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig2-v2.jpg)\n\n**Figure 2.:** (a) 2-phenylmelatonin in complex with MT1 receptor with the topology of chemical features shown as colored spheres indicating R1 (orange)\u00a0=\u00a05-methoxy, R2 (green)\u00a0=\u00a0alkylamido chain, and R3 (blue)\u00a0=\u00a02-phenyl substitutions, (b) Venn diagram summarizing the topologically equivalent chemical features in selected 62 candidate compounds from MT1 and MT2 VLS.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig2-figsupp1-v2.jpg)\n\nMost of the compounds represented new chemotypes with Tanimoto chemical distance\u00a0values\u00a0>0.22 (Abagyan et al., 2016), separating them from known high-affinity MT ligands available in CHEMBL24 (Gaulton et al., 2017). We also chose a close analog of melatonin \u2013 compound 28 (Tanimoto distance\u00a0=\u00a00.05), which to our knowledge, has not yet been characterized as a ligand for MT receptors (Gaulton et al., 2017;\u00a0Kim et al., 2019). Compound 28 served as an additional positive control, which also helped us to evaluate the effect of a single chemical group substitution in melatonin on the binding and function at the MT receptors.\n\n### Experimental hit identification and validation\n\nThe selected 62 candidate compounds from VLS were tested experimentally for binding and functional profiles in both\u00a0MT receptors. Eleven compounds (Table 1; Figure 3) demonstrated sub-micromolar potencies in Gi/o mediated signaling assays (18% hit rate). Ten of these eleven compounds also showed binding affinities Ki\u00a0<10 \u00b5M in\u00a0a competition binding assay (Figure 3\u2014figure supplement 1). The melatonin derivative 28 identified by VLS was as potent as melatonin itself in MT2 (EC50\u00a0=\u00a00.04 nM) and had the same potency (EC50\u00a0=\u00a00.04 nM) at MT1. The most potent new chemotype, 21, displayed an EC50\u00a0=\u00a00.36 nM for MT2, with a 30-fold selectivity over MT1 receptor (MT1EC50\u00a0=\u00a012 nM). Overall, seven hits had EC50\u00a0<100 nM for at least one of the melatonin receptors. Similar to other low molecular weight MT ligands, most of the hits identified belong to a library of fragment-like compounds with molecular weights less than 250 Da, and have exceptionally high ligand efficiency (LE), far exceeding the\u00a0~0.3 value considered as a standard for a promising lead. For example, compound 21 (Mol. Wt.\u00a0=\u00a0224 Da) had the highest LE values of 0.83 kcal/mol per non-hydrogen atom for MT2 and 0.69 kcal/mol per non-hydrogen atom for MT1 receptors (Hopkins et al., 2004;\u00a0Hopkins et al., 2014). The excellent LE of these molecules allows\u00a0the\u00a0potential for further optimization of their drug-like properties.\n\n**Table 1.**\n Hit compounds from VLS with Gi/o mediated potency EC50\u00a0<1 \u00b5M for at least one MT receptor.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"5\">MT1</th>\n      <th colspan=\"5\">MT2</th>\n      <th colspan=\"2\">MT2/MT1</th>\n    </tr>\n    <tr>\n      <th>Compound</th>\n      <th>pKi\u00a0\u00b1\u00a0SEM*</th>\n      <th>pEC50\u00a0\u00b1\u00a0SEM</th>\n      <th>EC50(nM)</th>\n      <th>Emax\u2020\u00a0\u00b1\u00a0SEM</th>\n      <th>LE\u2021c</th>\n      <th>pKi\u00a0\u00b1\u00a0SEM</th>\n      <th>pEC50\u00a0\u00b1\u00a0SEM</th>\n      <th>EC50(nM)</th>\n      <th>Emax\u00a0\u00b1\u00a0SEM</th>\n      <th>LE</th>\n      <th>Selectivity\u00a7</th>\n      <th>Tanimoto\u00b6</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>21</td>\n      <td>6.31\u00a0\u00b1\u00a00.11</td>\n      <td>7.91\u00a0\u00b1\u00a00.05</td>\n      <td>12.0</td>\n      <td>93.8\u00a0\u00b1\u00a02.5</td>\n      <td>0.69</td>\n      <td>6.91\u00a0\u00b1\u00a00.05</td>\n      <td>9.44\u00a0\u00b1\u00a00.08</td>\n      <td>0.36</td>\n      <td>86.1\u00a0\u00b1\u00a03.2</td>\n      <td>0.83</td>\n      <td>30.6</td>\n      <td>0.50</td>\n    </tr>\n    <tr>\n      <td>23</td>\n      <td>5.42\u00a0\u00b1\u00a00.03</td>\n      <td>7.16\u00a0\u00b1\u00a00.09</td>\n      <td>57.5</td>\n      <td>96.9\u00a0\u00b1\u00a05.3</td>\n      <td>0.56</td>\n      <td>5.56\u00a0\u00b1\u00a00.13</td>\n      <td>7.69\u00a0\u00b1\u00a00.08</td>\n      <td>20.42</td>\n      <td>91.7\u00a0\u00b1\u00a03.0</td>\n      <td>0.60</td>\n      <td>2.7</td>\n      <td>0.22</td>\n    </tr>\n    <tr>\n      <td>28</td>\n      <td>7.78\u00a0\u00b1\u00a00.10</td>\n      <td>10.39\u00a0\u00b1\u00a00.04</td>\n      <td>0.04</td>\n      <td>95.3\u00a0\u00b1\u00a02.6</td>\n      <td>0.86</td>\n      <td>7.63\u00a0\u00b1\u00a00.08</td>\n      <td>10.35\u00a0\u00b1\u00a00.10</td>\n      <td>0.04</td>\n      <td>69.4\u00a0\u00b1\u00a04.0</td>\n      <td>0.85</td>\n      <td>0.7</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td>29</td>\n      <td>5.22\u00a0\u00b1\u00a00.07</td>\n      <td>6.83\u00a0\u00b1\u00a00.06</td>\n      <td>144.5</td>\n      <td>87.5\u00a0\u00b1\u00a04.5</td>\n      <td>0.53</td>\n      <td>5.61\u00a0\u00b1\u00a00.05</td>\n      <td>7.46\u00a0\u00b1\u00a00.10</td>\n      <td>34.67</td>\n      <td>69.4\u00a0\u00b1\u00a08.0</td>\n      <td>0.58</td>\n      <td>3.3</td>\n      <td>0.43</td>\n    </tr>\n    <tr>\n      <td>37</td>\n      <td>5.07\u00a0\u00b1\u00a00.13</td>\n      <td>ND</td>\n      <td>&gt;30000</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>5.45\u00a0\u00b1\u00a00.10</td>\n      <td>6.85\u00a0\u00b1\u00a00.19</td>\n      <td>141.25</td>\n      <td>61.1\u00a0\u00b1\u00a09.1</td>\n      <td>0.53</td>\n      <td>&gt;1000.0</td>\n      <td>0.57</td>\n    </tr>\n    <tr>\n      <td>44</td>\n      <td>4.19\u00a0\u00b1\u00a00.36</td>\n      <td>3.33\u00a0\u00b1\u00a00.36</td>\n      <td>57544.0</td>\n      <td>72.8\u00a0\u00b1\u00a04.7</td>\n      <td>0.33</td>\n      <td>4.95\u00a0\u00b1\u00a00.30</td>\n      <td>6.58\u00a0\u00b1\u00a00.13</td>\n      <td>263.03</td>\n      <td>88.9\u00a0\u00b1\u00a06.3</td>\n      <td>0.51</td>\n      <td>267.2</td>\n      <td>0.59</td>\n    </tr>\n    <tr>\n      <td>45</td>\n      <td>4.54\u00a0\u00b1\u00a00.15</td>\n      <td>5.06\u00a0\u00b1\u00a00.12</td>\n      <td>8709.6</td>\n      <td>90.6\u00a0\u00b1\u00a014.3</td>\n      <td>0.44</td>\n      <td>5.26\u00a0\u00b1\u00a00.19</td>\n      <td>6.37\u00a0\u00b1\u00a00.13</td>\n      <td>426.58</td>\n      <td>75.0\u00a0\u00b1\u00a07.4</td>\n      <td>0.56</td>\n      <td>16.9</td>\n      <td>0.59</td>\n    </tr>\n    <tr>\n      <td>47</td>\n      <td>4.58\u00a0\u00b1\u00a00.07</td>\n      <td>5.25\u00a0\u00b1\u00a00.16</td>\n      <td>2344.2</td>\n      <td>112.4\u00a0\u00b1\u00a05.2</td>\n      <td>0.46</td>\n      <td>5.91\u00a0\u00b1\u00a00.12</td>\n      <td>7.99\u00a0\u00b1\u00a00.10</td>\n      <td>10.23</td>\n      <td>91.7\u00a0\u00b1\u00a03.0</td>\n      <td>0.66</td>\n      <td>186.9</td>\n      <td>0.60</td>\n    </tr>\n    <tr>\n      <td>54</td>\n      <td>5.03\u00a0\u00b1\u00a00.06</td>\n      <td>6.06\u00a0\u00b1\u00a00.07</td>\n      <td>741.3</td>\n      <td>82.8\u00a0\u00b1\u00a04.3</td>\n      <td>0.54</td>\n      <td>5.56\u00a0\u00b1\u00a00.10</td>\n      <td>7.74\u00a0\u00b1\u00a00.10</td>\n      <td>18.20</td>\n      <td>75.0\u00a0\u00b1\u00a03.7</td>\n      <td>0.68</td>\n      <td>36.9</td>\n      <td>0.43</td>\n    </tr>\n    <tr>\n      <td>57</td>\n      <td>4.84\u00a0\u00b1\u00a00.03</td>\n      <td>5.72\u00a0\u00b1\u00a00.11</td>\n      <td>1778.3</td>\n      <td>87.5\u00a0\u00b1\u00a09.1</td>\n      <td>0.47</td>\n      <td>5.37\u00a0\u00b1\u00a00.04</td>\n      <td>6.88\u00a0\u00b1\u00a00.15</td>\n      <td>131.83</td>\n      <td>66.7\u00a0\u00b1\u00a08.3</td>\n      <td>0.57</td>\n      <td>10.3</td>\n      <td>0.53</td>\n    </tr>\n    <tr>\n      <td>62</td>\n      <td>4.32\u00a0\u00b1\u00a00.11</td>\n      <td>4.39\u00a0\u00b1\u00a00.42</td>\n      <td>42658.0</td>\n      <td>54.1\u00a0\u00b1\u00a010.0</td>\n      <td>0.36</td>\n      <td>5.49\u00a0\u00b1\u00a00.33</td>\n      <td>7.28\u00a0\u00b1\u00a00.14</td>\n      <td>52.48</td>\n      <td>58.3\u00a0\u00b1\u00a04.8</td>\n      <td>0.60</td>\n      <td>875.9</td>\n      <td>0.64</td>\n    </tr>\n    <tr>\n      <td>Melatonin</td>\n      <td>9.06\u00a0\u00b1\u00a00.14</td>\n      <td>11.38\u00a0\u00b1\u00a00.06</td>\n      <td>0.004</td>\n      <td>100.0\u00a0\u00b1\u00a05.6</td>\n      <td>0.93</td>\n      <td>9.27\u00a0\u00b1\u00a00.14</td>\n      <td>10.30\u00a0\u00b1\u00a00.14</td>\n      <td>0.05</td>\n      <td>100.0\u00a0\u00b1\u00a05.6</td>\n      <td>0.84</td>\n      <td>0.1</td>\n      <td>0.00</td>\n    </tr>\n  </tbody>\n</table>\n\n_Standard error of the mean, N\u00a0=\u00a03.\u2020 Activation compared to melatonin.\u00a0Ligand efficiency (based on EC50).\u00a7Selectivity in folds (calculated as: Antilog (log(Emax/EC50) MT2- log (Emax/EC50) MT1)). MT1 selectivity is shown as underlined values.\u00b6 Tanimoto distance from\u00a0closest MT receptor ligands in ChEMBL database with pAct\u00a0>6. Hits with EC50\u00a0<100 nM are displayed in bold, and with Emax\u00a0<70% in italic._\n\n![Figure 3.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig3-v2.jpg)\n\n**Figure 3.:** Results were normalized to the Emax value (%) of receptor activation by melatonin.\u00a0These VLS hits showed no activity at control HEK293 T cells without transiently transfected MT1 or MT2 receptors (results not shown).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Results are normalized (mean\u00a0\u00b1\u00a0SEM) from three independent assays, pooled and analyzed in GraphPad Prism 7.0.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Results were normalized to reference Melatonin (100%, mean\u00a0\u00b1\u00a0SEM) from a minimum of three independent assays and pooled for analysis in GraphPad Prism 7.0.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Results were normalized to reference Melatonin (100%, mean \u00b1 SEM) from a minimum of three independent assays and pooled for analysis in GraphPad Prism 7.0.\n\n### Chemical and conformational diversity of hits\n\nMost of the hit compounds, as shown in Chemical structure 1, are novel and display diverse chemotypes distinct from known high-affinity MT ligands (ChEMBL, pAct\u00a0>6.0), with Tanimoto distance exceeding 0.4 for all but two ligands (28 and 23). While the majority of known MT agonists reported in ChEMBL have either substituted indene or naphthalene core, only two of the eleven hits reported here have fused heterocycles and several others have two substituted aromatic rings connected by a flexible chain. Most compounds have diverse substitutions at positions topologically equivalent to the 5-methoxy, acetylamido and C2 position\u00a0of melatonin (Figure 2). Two\u00a0compounds-- 21\u00a0and 29-- have a pyrimidine scaffold, whereas four compounds-- 23, 37, 44, and 57-- have a methoxyphenyl group in place of the 5-methoxy indole scaffold in melatonin. Another interesting core is the cyclopentyl-fused thienopyridine of compound 45. Only 2 compounds, 28 and 54, have substituted indoles similar to melatonin.\n\n![Chemical structure 1.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig8-v2.jpg)\n\nThe predicted binding poses of the selected hit compounds in their docking models of MT receptors are shown in Figure 4. Nine out of eleven hits have methoxy or a similar group predicted to make hydrogen bonding interactions with N162/1754.60, which was found to be a critical residue for receptor activation, despite\u00a0playing a limited role in ligand affinity or structural stability of the receptor (Stauch et al., 2019).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig4-v2.jpg)\n\n**Figure 4.:** (a) 21, (b) 23, (c) 62, (d) 29, (e) 47 and (f) 54 inthe\u00a0MT2receptor (purple).\u00a0The center panel shows a canonical 7-TM receptor structure of MT2 receptor (blue helices; part of TM-V is not displayed for clarity) in complex with 2-phenylmelatonin shown as green spheres (PDB id: 6ME6).\n\nFurthermore, seven of the hits were predicted to form hydrogen bonding interactions with Q181/194ECL2 similar to alkylamide tail of melatonin. Five hits were predicted to occupy a significant space in the pocket flanked by TMs-II, III, and VII forming hydrophobic interactions, especially with residues Y281/2947.38 and Y285/2987.43, as previously found in the MT receptor structures (Johansson et al., 2019; Stauch et al., 2019). These hydrophobic interactions are similar to those formed by the phenyl moiety of 2-phenylmelatonin. Both types of hydrogen bonding and hydrophobic interactions were found to be critical for a ligand\u2019s steric fit into the MT receptor binding pocket and are the primary determinants of ligand affinity.\n\n### Structural basis of subtype selectivity of the hits\n\nSix of the identified hits were found to be at least 30 fold more potent at MT2\u00a0compared to MT1 in the Gi/o-mediated cAMP inhibition assays. Among the hits reported here with novel scaffolds, compound 21 has the highest potency for both MT2 (EC50\u00a0=\u00a00.36 nM) and MT1 (EC50\u00a0=\u00a012 nM). Compound 21 was predicted to bind both the MT receptors in a similar orientation by forming hydrogen bonding interactions with N162/1754.60 and Q181/194ECL2 with its methoxy anchor and acetylamido tail, respectively. These interactions had been reported to be critical for ligand affinity and potency at the MT receptors (Johansson et al., 2019; Stauch et al., 2019).\n\nOther compounds also possess remarkable MT2 selectivity. For example, compound 47 is 187-fold selective towards MT2 (EC50\u00a0=\u00a010 nM for MT2, and 2.34 \u00b5M for MT1, respectively). The pyrrole ring mimics the indole ring of melatonin, the amide group forms hydrogen bonding with N162/1754.60 and the chlorophenyl group forms hydrophobic interactions with ECL2 and TM-II, III, and VII residues (Figure 4). Despite the lack of polar interactions with Q181/194ECL2, the compound displays sub-micromolar potency for MT2. Similarly, compound 45 also lacks a substitution topologically equivalent to acetylamido tail of melatonin (R2 feature) and yet has a sub-micromolar potency and 17-fold selectivity for MT2 (EC50\u00a0=\u00a0427 nM). In contrast, compound 44 was predicted to form interactions with Q181/194ECL2, but it lacks an R3 equivalent substitution, which still makes it 267-fold selective for MT2 (EC50\u00a0=\u00a0263 nM). These findings suggest that either R2 or R3 could be sufficient in maintaining the potency and selectivity at MT2.\n\n### Functional selectivity of the hit ligands\n\nAll the discovered hits show activity as agonists in Gi/o-protein signaling assays at both MT1 and MT2 receptors. At the same time, some compounds show functional profiles notably distinct from full and balanced agonism, especially at MT2. Thus, four of the hits, 28, 29, 57, and 62 had their efficacy (Emax) reduced to less than 70% in MT2, and are\u00a0therefore considered partial agonists (Audinot et al., 2003). The identified hits were also evaluated for their \u03b2-arrestin recruitment (Figure 3\u2014figure supplements 2 and 3), with the comparative analysis of G-protein and \u03b2-arrestin activity shown in Figure 5. In the case of\u00a0the MT1 receptor, there are no significant deviations from the overall balanced G-protein/Arrestin signaling profiles for most compounds (Figure 5a). One exception is compound 37, which completely lacks G-protein signaling, though it still binds to MT1 and displays substantial \u03b2-arrestin activity. In the\u00a0case of MT2, however, there are several compounds that show a marked reduction in \u03b2-arrestin signaling compared to G-protein, especially compounds 21 and 28, which show bias factors of 15.5 and 33.9, respectively (Figure 5b). These results suggest that MT ligands may show rather distinct functional bias profiles in G-protein and \u03b2-arrestin signaling, as observed in many other GPCRs (Kenakin, 2019;\u00a0Roth, 2019), though the biological importance of this bias in MT remains to be investigated (Cecon et al., 2018).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig5-v2.jpg)\n\n**Figure 5.:** The pEC50 values of the ligands in G-Protein and Arrestin-mediated signaling assays are shown. The dashed lines for each receptor trace the melatonin datapoint to the origin, with compounds far above or below the line showing functional selectivity.\n\nTo gain more insights into these variations in ligand activity at MT receptors, we analyzed conformational differences among ligand-receptor pairs for these compounds. As the hit compounds are fragment\u2013like and may attain multiple energetically-favorable poses at the orthosteric site upon docking, the specific conformational features driving partial agonism remain unclear. However, analysis of compounds 28 and 37 with the most pronounced bias to G-protein in MT2 and \u03b2-arrestin in MT1, respectively, suggests possible explanations for these phenomena.\n\nCompound 28 is very similar to melatonin, except the amide is replaced by a urea. This substitution renders compound 28 as a partial agonist at MT2 (Emax\u00a0=\u00a069.4%) while largely maintaining full agonism at MT1 (Emax\u00a0=\u00a095.3%). Docking predictions suggest that compound 28 assumes an orientation in the binding pocket similar to 2-phenylmelatonin with subtle differences, as shown in Figure 6. In MT2 orthosteric site, the urea of compound 28 forms hydrogen bonding interactions with the side chains of polar residues Q194ECL2 and N2686.52 owing to its additional nitrogen. Such interactions, however, are energetically unfavorable in the\u00a0case of MT1 with possible steric clashes (Johansson et al., 2019; Stauch et al., 2019). Instead, the interactions of acetylamido group of melatonin with Q181ECL2 are replaced by a hydrogen bond between Y2817.38 and oxygen from the urea in compound 28. These interactions become favorable in MT1 as the residue Y2817.38 is rotated towards TM-VI placing it 4 \u00c5 away from T178ECL2. In\u00a0the case of MT2, however, residues Y2947.38 \u2013 T191ECL2 are 3 \u00c5 apart forming an intermolecular hydrogen bond with Y2817.38 oriented away from TM-VI allowing favorable orientation of Q194ECL2 to form a hydrogen bond with compound 28.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig6-v2.jpg)\n\n**Figure 6.:** The red dotted lines with arrows indicate a missing hydrogen bond between residues T178 and Y281 in MT1 receptor, while the yellow dots show hydrogen bonding interactions.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Compound 28 (B) and 37 (C) at MT1 wildtype (WT), N162Q, and Y281F mutant receptors.\u00a0Because mutations dramatically changed basal activity compared with MT1 WT receptor (N162Q increased and Y281F reduced), results were normalized individually (basal\u00a0=\u00a00% and maximum activity\u00a0=\u00a0100%), represented means\u00a0\u00b1\u00a0SEM from a minimum of 3 assays, each in triplicate or quadruplicate, and analyzed in Prism 8.0 with the built-in logistic function (variable slope). The resulting values of pEC50 are: Melatonin: WT: pEC50\u00a0=\u00a08.98\u00a0\u00b1\u00a00.04; N162Q: pEC50\u00a0=\u00a07.18\u00a0\u00b1\u00a00.04; Y281F: pEC50\u00a0=\u00a05.85\u00a0\u00b1\u00a00.03 Comp 28: WT: pEC50\u00a0=\u00a07.64\u00a0\u00b1\u00a00.04; N162Q: pEC50\u00a0=\u00a06.33\u00a0\u00b1\u00a00.04; Y281F: pEC50\u00a0=\u00a05.33\u00a0\u00b1\u00a00.02 Comp 37: WT: pEC50\u00a0=\u00a05.38\u00a0\u00b1\u00a00.02; N182Q: pEC50\u00a0=\u00a05.65\u00a0\u00b1\u00a00.05; Y281F: pEC50\u00a0=\u00a04.93\u00a0\u00b1\u00a00.02.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/53779/elife-53779-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The panle includes GPCRs, ion-channels and transporters in radioligand binding assay. Values represent average target inhibition (%) at 10 \u03bcM concentration and corresponding SEM values from 4 replicates. Targets with\u00a0\u226550% inhibition at 10 \u03bcM concentration are labeled in the plots with average affinity (Ki) values from 3 independent assays, each in triplicate. Dashed line indicate 50% inhibition level, and green and orange dots mark MT1 and MT2 receptors\u2019 average inhibition values, respectively.\n\nA similar pattern of ligand-receptor interaction is observed from the docking of the most selective compound 37 into MT receptors. Compound 37 has a distinct and much bulkier substitution with a 3-cyclopropyl-1,2,4-oxadiazol group (R2 feature). In MT1, this oxadiazol group is predicted to form hydrogen bonds with Q181ECL2, T178ECL2 and Y2817.38, while the cyclopropyl group is predicted to fit in the sub pocket formed by ECL2, TM-V, and VII. These interaction pattern changes in MT2, where the prominent hydrogen bonding between side chains of T191ECL2 and Y2947.38 is formed, precluding hydrogen bonding of these residues to compound 37. Moreover, the methoxy group (R1 feature) of the compound, which maintains a hydrogen bond with N1754.60 in MT2 is lost with N1624.60 side chain in MT1, due to a subtle shift of the compound. Indeed, the methoxy \u2013 N1624.60 interaction is found to be critical in receptor activation (Stauch et al., 2019), and loss of this interaction is likely to explain lack of activity of compound 37 in Gi-mediated signaling at MT1. This interaction difference, however, does not seem to affect the \u03b2-arrestin mediated signaling by compound 37 in MT1. This peculiar feature of 37 is supported by our mutational studies, where N162Q mutation in MT1 actually increased potency of 37 slightly (2-fold), while Y281F, as expected, reduced potency by over 10x (Figure 6\u2014figure supplement 1). For comparison, 28 drastically (>100 fold) reduced potency in both MT1 mutants N162Q and Y281F. Taken together, these results support a key role of N162/1754.60 anchoring interactions in Gi-mediated receptor activation, and also suggest a distinct role of residues Y281/2947.38 in governing ligand bias at MT receptors. Further analysis, including mutation and SAR studies of compound 37 derivatives are needed for comprehensive validation of this hypothetical mechanism in future studies.\n\n### Off-target profiling\n\nTo verify the ligand selectivity, the lead compounds 21, 28, and 37, were subjected to binding profiling at a panel of 47 common drug targets (including many GPCRs and neurotransmitter transporters). At a final\u00a0concentration of 10 \u03bcM, they did not show any substantial binding at these targets, except for compound 28 that displayed over 50% inhibition\u00a0at three 5-HT receptors (Figure 6\u2014figure supplement 2), with binding affinity of 851 nM (pKi\u00a0=\u00a06.07\u00a0\u00b1\u00a00.11) for 5-HT1A, 1525 nM (pKi\u00a0=\u00a05.82\u00a0\u00b1\u00a00.02) for 5-HT1D, and 286 nM (pKi\u00a0=\u00a06.54\u00a0\u00b1\u00a00.03) for 5-HT7A. Assessment of functional activity of 28 in Gs-mediated cAMP production shows that it is a weak partial agonist with EC50\u00a0=\u00a01819 nM, as compared to 0.04 nM at both MT1 and MT2 receptors. These results demonstrated that the lead compounds 21, 28, and 37 act specifically at MT receptors and show high selectivity for MT1 or MT2 over many common drug targets.\n\n## Discussion\n\nThe discovery of potent and selective MT ligands with novel chemotypes holds promise for the development of next-generation drugs to treat circadian rhythm and mood disorders, pain, insomnia, type-2 diabetes, and cancer (Karamitri and Jockers, 2019; Liu et al., 2016). Herein, we utilized the recently solved 3D structures of the\u00a0melatonin receptors, in complex with the agonist 2-phenylmelatonin, (Johansson et al., 2019; Stauch et al., 2019) to perform prospective virtual ligand screening of large fragment-like compound libraries. This approach resulted in the discovery of ten new chemotypes of potent agonists, both full and partial, for MT1 and MT2. The number of sub-micromolar hits and potency of the best among them is one\u00a0of\u00a0the highest reported for a\u00a0VLS campaign in class A GPCRs (Lyu et al., 2019) and in-line with another VLS screen for MT receptors, published while this study was in revision (Stein et al., 2020). This is remarkable, considering that most GPCR structures have a limited capacity to distinguish agonists vs. antagonists (Costanzi and Vilar, 2012;\u00a0Weiss et al., 2018) and prospective VLS campaigns often result in antagonists even when an agonist-bound VLS model is used (Lyu et al., 2019; Roth, 2019).\n\nThere are several factors, related to both the VLS procedure and the intrinsic properties of the MT receptors, that likely contributed to the high hit rate and agonistic potency of\u00a0the hits in our study. Thus, the high quality of the initial crystal structure, further improved by ligand-guided optimization of the pocket for VLS, has been critical for the success of our previous VLS campaigns, and likely played a similar role here (Katritch et al., 2010; Lane et al., 2013; Zheng et al., 2017). At the same time, some intrinsic properties of MT receptors also likely facilitated successful VLS for agonists. As we mentioned above, endogenous ligand melatonin itself has unusually high picomolar potency at MT receptors (~4 pM at MT1 and 50 pM at MT2, see Table 1). Melatonin and most other high-potency ligands are small (<250 DA) and\u00a0yet they\u00a0still fully occupy the very small,\u00a0enclosed MT pocket. Chemical space of such size-limited fragment-like libraries is much smaller than the\u00a0usual drug-like space, and can be more exhaustively searched, likely resulting in higher hit rates. Moreover, most known MT receptor ligands show agonist activity, while antagonists of similar potency are notoriously hard to find, suggesting that agonists may be intrinsically preferred ligands for MT receptors (Jockers et al., 2016).\n\nTwo of the hit compounds, 37 and 62, are MT2-selective partial agonists, which may have a desirable profile for eliciting antinociceptive effects mediated by melatonin receptors, and may be potentially useful in developing novel analgesics for pain management with reduced side effects (L\u00f3pez-Canul et al., 2015). Of\u00a0note, while some of the newly discovered hits are selective for MT2, none of the hits in this study had substantial MT1 selectivity. This may be explained by the lack of a bulky chemical group at the R1 position, which are known to confer strong MT1 selectivity, e.g. in bitopic CTL 01\u201305-B-A05 ligand that stretches out of the pocket via narrow side channel (Stauch et al., 2019). Design of such bitopic ligands with MT1 selective chemotypes would need to explore larger compounds (MW\u00a0>500), which were not considered in the current VLS screen.\n\nThis study represents a successful application of structure-based VLS to identify agonists with novel chemotypes, sub-nanomolar potencies, and a high degree of receptor subtype selectivity for a class A GPCR (Lyu et al., 2019; Wang et al., 2017). This study also represents a successful implementation of molecular modeling and structure-based virtual screening, aimed at the melatonin receptors, facilitated by the\u00a0availability of high-quality structures capturing vital ligand-receptor interactions (Alkozi et al., 2018;\u00a0Johansson et al., 2019; Stauch et al., 2019). Prevalence of agonists in the hit set suggests the importance of activated, agonist-bound conformations of the orthosteric pocket models for successful agonist screening. Note that, even though the receptors were thermostabilized by 9 and 8 point mutations (MT1/MT2, respectively) to aid crystallization rendering the receptor conformations inactive on the intracellular side, the agonist-bound orthosteric pockets remain relevant for structure-based drug discovery applications. Our benchmarking also corroborated the important role of ligand guided receptor optimization (LiBERO) (Katritch et al., 2012) in improving the outcomes of a structure-based VLS, similar to some of our previous VLS campaigns (Lane et al., 2013; Zheng et al., 2017). Another critical aspect of this successful VLS is the discovery of novel chemotypes with reliable docking poses. With our screening library assembled to be fragment-like with\u00a0regards\u00a0to molecular weights, our hits are diverse and amenable to\u00a0chemical optimization to improve their pharmacological profiles. Thus, our\u00a0results also illustrate the utility of fragment-like compounds in the early stages of drug discovery.\n\nThe chemical diversity, selectivity, high potency and agonist activities of the identified hits serve as a valuable starting point for the development of tool compounds to explore the biology of melatonin receptors. With the potential\u00a0for\u00a0selective modulation over the melatonin receptor subtype-mediated biology, these novel chemotypes could provide\u00a0new\u00a0leads for the\u00a0development of\u00a0next-generation treatments for insomnia, pain, sleep and mood-related disorders, type\u00a02\u00a0diabetes, and cancer.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HTLA cells (HEKT based)</td>\n      <td>PMID:25895059</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (Homo sapiens)</td>\n      <td>MTNR1A</td>\n      <td>PMID:25895059</td>\n      <td>AddGene #66443</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent, PCR primers</td>\n      <td>MTNR1A N162Q Forward</td>\n      <td>This paper</td>\n      <td></td>\n      <td>CTGCCGTCCTGCCGcaaCTGAGGGCAGGCAC</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent, PCR primers</td>\n      <td>MTNR1A N162Q Reverse</td>\n      <td>This paper</td>\n      <td></td>\n      <td>GTGCCTGCCCTCAGttgCGGCAGGACGGCAG</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent, PCR primers</td>\n      <td>MTNR1A Y281F Forward</td>\n      <td>This paper</td>\n      <td></td>\n      <td>GTTCGTAGCGAGCTtCTACATGGCTTAC</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent, PCR primers</td>\n      <td>MTNR1A Y281F Reverse</td>\n      <td>This paper</td>\n      <td></td>\n      <td>GTAAGCCATGTAGaAGCTCGCTACGAAC</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>BrightGlo Reagent</td>\n      <td>Promega.com</td>\n      <td>Cat # E2610</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hit compounds</td>\n      <td>Enamine, Molport, Chembridge</td>\n      <td></td>\n      <td>See 62 compounds listed in Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ICM-Pro, V3.8\u20137</td>\n      <td>Molsof.com</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>cell line (Homo sapiens)</td>\n      <td>HEK293 T</td>\n      <td>ATCC</td>\n      <td>CRL-11268</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>transfected construct (Homo sapiens)</td>\n      <td>Human MT1</td>\n      <td>PMID:31019306</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Luciferin</td>\n      <td>Goldbio.com</td>\n      <td>Cat#: LUCNA-1G</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Receptor model preparation and optimization\n\nX-ray crystal structures of MT1 (Stauch et al., 2019) and MT2 (Johansson et al., 2019) receptors in complex with 2-phenylmelatonin (PDB IDs Berman et al., 2000: 6ME3, 6ME6) were used to generate virtual screening models. Both structures were converted from PDB coordinates to ICM objects using the object conversion protocol implemented in ICM-Pro (Abagyan et al., 2016). This process includes the addition of hydrogens and assignments of secondary structures, the energetically favorable protonation states to His, Asn and Gln side chains, and of formal charges to the ligand in a complex with the receptor, followed by local minimization of polar hydrogens using energy minimization protocols in ICM-Pro. The orthosteric ligand-binding pocket was further optimized with energy-based global optimization in ICM using Biased Probability Monte-Carlo (BPMC), where the orthosteric ligand and amino acid side chains within 5 \u00c5 radius were kept flexible and co-optimized (Abagyan and Totrov, 1994), as described in LiBERO protocol (Katritch et al., 2012) and its previous applications (Lane et al., 2013; Zheng et al., 2017). To validate the models, a set of 20 known MT receptor ligands were selected from ChEMBL database (Gaulton et al., 2017) along with 780 MT receptor decoys selected for each MT1 and MT2 receptor from GPCR decoy database (GDD) (Gatica and Cavasotto, 2012) and docked into crystal structures, and optimized ligand models of MT receptors. Following the previously described ligand guided receptor binding pocket optimization protocol, the Receiver Operator Characteristic curves (ROC) were plotted based on the True Positive Rates (TPR) and False Positive Rates (FPR) (Katritch et al., 2012) to evaluate the model optimization. The AUC values were calculated as the areas under these ROC curves and used as a model selection criteria for prospective VLS runs. The RMSD values of ligand binding pocket side chain heavy atoms for MT1 and MT2 were 0.51 \u00c5 and 0.76 \u00c5, respectively, compared to their corresponding crystal structures.\n\nTo perform additional evaluation of screening results with the thermostabilizing mutants in the proximity of the orthosteric site, as displayed in Figure 1\u2014figure supplement 2, were restored to wild-type (WT) residues. The Phe residue at F251/2646.48 located 4.3 \u00c5 from the ligand was mutated to Trp, followed by local minimization of side-chain conformations using energy-based sampling and minimization protocols (Abagyan and Totrov, 1994). Similarly, A1043.29, located 5.2 \u00c5 was also restored to Gly in the MT1 receptor model. Docking to this model suggests that these stabilizing mutations do not substantially impact the binding of known ligands and selected hit candidates into the orthosteric pocket.\n\n### Screening library\n\nWe selected a subset of commercially available (in-stock and on-demand) fragment-like compounds from the ZINC database with physicochemical properties similar to already reported melatonin receptor ligands (Gaulton et al., 2017;\u00a0Sterling and Irwin, 2015). We considered compounds with molecular weight\u00a0\u2264250 Da and logP values ranging 1 to 5 based on the logP data of high-affinity MT ligands (Figure 2\u2014figure supplement 1). The initial dataset comprised of\u00a0~10 million compounds was converted from SMILES to 3D format, and formal charges were assigned. This set was further reduced to 8.4 million compounds after applying additional filters for net charges (between \u22121 to 1) and removing compounds with highly reactive functional groups and promiscuous PAINS chemotypes (\u2018molPAINS\u2019 and \u2018bad groups\u2019 in ICM-Pro v.3.8\u20136)\u00a0(Baell and Holloway, 2010).\n\n### Virtual ligand screening\n\nThe VLS of 8.4 million compounds library for MT1 and MT2 models were performed using the VLS protocol in ICM-Pro (Abagyan et al., 1994). The receptor energy potential maps were calculated using a fine potential grid (0.5 \u00c5). Several energy terms, including van der Waals, hydrophobic, electrostatic and hydrogen bonding interactions were considered for map calculations. Full torsional flexibility of ligands was allowed, and their internal conformational strain was considered while the receptor atoms were assigned rigid for docking. The docking was performed using BPMC conformational sampling and energy minimization protocol implemented in ICM-Pro for scoring and finding the best docking solutions at the default effort level 1. These top compounds were further docked into corresponding MT receptor models with an increased sampling effort value of 3. Each VLS run for the 8.4 million compound library used 32,000 CPU core hours on 3 Linux workstations with a total of 192 CPU cores. The chemical similarity of selected compounds was calculated using Tanimoto chemical distance function \u2018Distance(chem1 chem2)', available in Molsoft\u2019s ICM-Pro (Totrov, 2008). The fingerprints in this function use a combination of ECFP and linear fingerprints as described in ICM-Pro manual (http://www.molsoft.com/icm/fingerprints.html).\n\n### Binding and functional assays\n\n#### Radioligand binding assays\n\nAll compounds for in vitro testing were purchased from Enamine, Molport, and Chembridge in stock libraries, with verified identity and guaranteed purity of\u00a0>95% (37 compounds) or\u00a0>90% (25 compounds), see Supplementary file 2 for compound QC data).\n\nThe Radioligand binding assays were conducted by the NIMH Psychoactive Drug Screening Program (PDSP). The NIMH PDSP is directed by Bryan L. Roth, MD, PhD, at the University of North Carolina at Chapel Hill, North Carolina, and Program Officer Jamie Driscoll at NIMH, Bethesda, MD. Binding assay procedures and protocols are also available online at http://pdspdb.unc.edu/pdspWeb/?site=assays. All the radioligand binding assays were performed using membranes prepared from transiently transfected HEK293T cells (purchased from ATCC, CRL-11268, authenticated by the supplier using morphology, growth characteristics, and STR profiling and certified mycoplasma-free) and in standard binding buffer (50 mM Tris, 10 mM MgCl2, 0.1 mM EDTA, 0.1% BSA, 0.01% ascorbic acid, pH 7.4) as recently reported\u00a0(Stauch et al., 2019). [3H]melatonin (PerkinElmer, specific activity\u00a0=\u00a077.4\u201384.7 Ci/mmol) is used as the radioligand. Competitive binding assays were performed with various concentrations of test compounds (100 fM to 10 \u00b5M), [3H]melatonin (0.2\u20131.7 nM), and MT1 or MT2 membranes in a total volume of 150 \u00b5L. Assay plates were sealed and incubated for 4 hr at 37\u00b0C in a humidified incubator until harvesting. Plates were harvested using vacuum filtration onto 0.3% polyethyleneimine pre-soaked 96-well Filtermat A (PerkinElmer) and washed three times with cold wash buffer (50 mM Tris, pH 7.4). Filters were dried and melted with a scintillation cocktail (Meltilex, PerkinElmer). Radioactivity was counted using a Wallac TriLux Microbeta counter (PerkinElmer). Results were analyzed using GraphPad Prism 7.0.\n\n### Signaling assays\n\n#### Gs and Gi/o-cAMP assays\n\nGloSensor cAMP assays were conducted according to the recently published procedure (Stauch et al., 2019) with minor modifications. Briefly, HEK293 T cells (as above) were transiently co-transfected with receptor (MT1 or MT2) and GloSensor cAMP (Promega) plasmids overnight, plated in Poly-L-Lysine coated 384-well white clear bottom plates in DMEM + 1% dialyzed FBS. Cells were used for assays at a minimum of 6 hr after plating. Culture medium was first removed and cells were stimulated with drugs in assay buffer (1x HBSS, 20 mM HEPES, 1 mg/ml BSA, 0.1 mg/ml ascorbic acid, pH 7.4) for 15 min at room temperature (this and all the following steps), followed by addition of a mixture of isoproterenol (final of 100 nM) and luciferin (final of 1 mM) for Gi/o-cAMP production inhibition assays and luciferin (final of 1 mM) for Gs-cAMP production assays. The plates were counted for luminescence after 25 min in a luminescence plate reader. Results were analyzed using GraphPad Prism 7.0.\n\n### Tango assays\n\nTango arrestin recruitment assays were carried out according to the previously published procedure Kroeze et al. (2015). In brief, HTLA cells were transiently transfected with receptor TANGO DNA constructs overnight in DMEM with 10% FBS. Transfected cells were then plated into poly-L-Lys coated 384-well plates using DMEM supplemented with 1% dialyzed FBS. After 6 hr incubation, drug dilutions, prepared in DMEM with 1% dFBS, were added for incubation overnight (16\u201320 hr). Medium and drug solutions were removed, Bright-Glo reagent (20 uL/well) was added for luminescence counting 20 min later. Results were analyzed in GraphPad Prism 7.0.\n\nBias factors were estimated according to the published procedure Kenakin et al. (2012) with modifications. Briefly, normalized and pooled results were analyzed by fitting the Black and Leff operational model in Prism 7.0 to obtain Log(\u03c4/KA) values for each pathway (Tango and Gi-cAMP). Within each signaling pathway, a difference of Log(\u03c4/KA), \u0394Log(\u03c4/KA), between a test compound and selected reference (melatonin in this case) was calculated. For a testing compound, the difference of \u0394Log(\u03c4/KA), \u0394\u0394Log(\u03c4/KA), was then obtained between two pathways. The bias factor is 10\u0394\u0394Log(\u03c4/KA).\n",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "557f8285-9f9c-4ec0-be15-152e59784812",
+      "submission_id": "2e26fbf7-7bb3-46c2-b114-c8db19bf3560",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Ben-Tal, Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.53779.sa1](https://doi.org/10.7554/eLife.53779.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe recently solved high-resolution structures of two melatonin receptors, MT1 and MT2, were used for drug discovery. These two GPCRs regulate the circadian rhythm and are well-known targets for the treatment of sleeping disorders (including temporary ones due to jetlag) and mood disorders. The structures were used for virtual screening of small molecules that could bind the receptors and modulate their activities. The results were validated first retrospectively and then also prospectively. The prospective part is particularly interesting because it included the discovery of new hits, some of which have very high activity and selectivity.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structure-Based Discovery of Potent and Selective Melatonin Receptor Agonists\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Nir Ben-Tal as the Reviewing Editors and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nMelatonin Receptors are GPCRs that regulate the circadian rhythm, and are used as drug targets for the treatment of sleeping disorders (including temporary ones due to jetlag) and mood disorders. Here, two recently solved crystal structures of Type-1 and 2 Melatonin Receptors (MT) were used to inform a search for more selective MT receptor agonists with novel chemotypes. Virtual ligand screening (VLS) of an 8.4 million compound set helped identifying ten new agonist chemotypes with sub-\u03bcM potency, as well as a previously not tested Melatonin derivative. Some of the compounds were selective for one receptor with the most potent new chemotype displaying thirty-fold selectivity for MT2 over MT1. Correlating the docking poses with functional assays helped investigating the structural basis of signaling bias at the receptors.\n\nOpinion:\n\nThis is a carefully conducted and very well timed study that can be published if the issues below are properly handled.\n\nEssential revisions:\n\n1) The docking and functional studies presented are thorough but there are several points that need clarification. \"Our benchmarking also underscored the critical role of structural optimization in improving the outcomes\u2026.\". What was performed is definitely not a \"structural optimization\" (see also claim in Materials and methods subsection \"Receptor Model Preparation and Optimization\u201d) of any kind, but rather structure repair. There was no optimization involved, and the criteria and mode of repair were reasonable, but arbitrary.\n\na) The authors should explain in the main text if/how the changes introduced in the structure constitute an optimization rather than an arbitrary repair and opening of the ligand-binding pocket for docking. Also, the docking score for selected MT ligands appears to be better than -32 kJ/mol \u2013 is that a well-recognized criterion? It seems like an arbitrary number that should be put in the context of, maybe, the docking score of Melatonin.\n\nb) It is quite remarkable that an initial screen yields compounds with such high affinities/potencies: Several compounds were obtained with double-digit nanomolar potencies \u2013 properties usually only achieved after several rounds of optimization. Related to that is also the unusual observation that all ligands appear to be agonists \u2013 a fact which the authors acknowledge. However, the authors should significantly elaborate on why they think their screen was so successful (in terms of initial hits and compound pharmacology), which would be very valuable to the field of structure-based drug discovery in general.\n\n2) The authors use two different functional assays to test compound activity in two different pathways. However, it isn't always clear which assay/pathway is discussed when the authors list potencies in the main text (particularly in the \"Structural basis of Subtype Selectivity of the Hits\" section). Also, the G protein signaling assay does not appear to be receptor selective. While it may not be necessary to show these results, what kinds of controls did the authors use in the assay to make sure their response is MT receptor mediated?\n\n3) The authors also investigate the functional selectivity of e.g. compound 37, which shows no G-protein mediated signaling but activates \u00df-arrestin signaling at MT1. The authors suggest that this observation is due to the absence of a hydrogen-bond with N162(4.60) and further conclude that Y281/294(7.38) plays a key role in arresting signaling. However, these suggestions appear speculative and solely rely on the accuracy of the docking pose and previous crystal structures of non-related chemotypes. Instead, the authors need to test structure-guided mutants (e.g. N162Q, Y281F, and others) to examine their hypotheses.\n\n4) The work represents successful use of VLS in laying the groundwork for more selective and potent agonists for MT1 and MT2. The writing is generally clear and carries the reader through the authors' thoughts and experiments in a logical progression. If anything, the writing is too lean at points. The authors highlight the relevance of the study in the Introduction and Discussion but do not explain the functional differences between MT1 and MT2. A brief explanation of the role each receptor plays in different biological processes would provide a better context for their intended goal. In addition, how the authors intend to use these results to inform future studies is not clear. What aspects of MT biology/pharmacology do the authors plan to explore? The last sentence of the Discussion just seems like a list of everything Melatonin-related.\n\n5) With drug discovery, aggregation of the putative hits is always a concern. Brian Shoichet wrote a lot about that. It is less likely to be an issue here, e.g., because of the specificity of some of the hits, but we never know. The authors should test that, least for the main hit compounds.\n\n6) It is unclear how close the thermostabilizing mutations are to the binding site (G104A and F251W in MT1 or F264W in MT2). The authors should highlight these residues in one of the figures and refer to this figure in the relevant places in the text. Because they affect the docking scores it is important to visualize their location relative to the binding site and discuss this in light of point 1a.\n\n7) \"To our knowledge, this study represents one of the few cases of successful VLS to identify agonists with novel chemotypes,.\u2026.. and a high degree of receptor subtype selectivity for a class A GPCR\". This is a rather complex claim for a first, since it involves a specific combination of approaches that are commonly used. The success of the combination can be pointed out, but as always, priority claims are tedious. This may not diminish the importance of the compounds, but it is hardly a trailblazer or surprise of any kind. This should be modified or eliminated.\n\n8) \"Thus, it also proves the utility of fragment-like compounds in the early stages of drug discovery.\" It is not clear why such \"proof\" was needed, as this is an option in screening because it is considered useful. In any case it can only be a demonstration of successful use, not a proof of anything.\n",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "51e125c5-1f7e-47b0-ad9f-9046b2522053",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C1",
+      "claim": "MT1 and MT2 melatonin receptors are involved in synchronizing circadian rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "Melatonin receptors MT1 and MT2 are involved in synchronizing circadian rhythms and are important targets for treating sleep and mood disorders, type-2 diabetes and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general background claim about MT receptors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "4b609dc2-483f-4ee0-9bf5-f653f448f47a",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C2",
+      "claim": "MT1 and MT2 melatonin receptors are important targets for treating sleep and mood disorders, type-2 diabetes and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Melatonin receptors MT1 and MT2 are involved in synchronizing circadian rhythms and are important targets for treating sleep and mood disorders, type-2 diabetes and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general background claim about MT receptors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "e6129632-9a5d-4489-8e6b-028f186c509b",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C3",
+      "claim": "Large scale structure-based virtual screening was performed using recently solved high-resolution 3D crystal structures of agonist-bound MT receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we performed large scale structure-based virtual screening for new ligand chemotypes using recently solved high-resolution 3D crystal structures of agonist-bound MT receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "338a86f7-8125-45c9-b73c-31ce00391983",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C4",
+      "claim": "Experimental testing of 62 screening candidates yielded the discovery of 10 new agonist chemotypes with sub-micromolar potency at MT receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental testing of 62 screening candidates yielded the discovery of 10 new agonist chemotypes with sub-micromolar potency at MT receptors, with compound 21 reaching EC50 of 0.36 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental work reported in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "d389f42e-3303-42c4-b030-a8a7cf43f5b0",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C5",
+      "claim": "Compound 21 has an EC50 of 0.36 nM at MT receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental testing of 62 screening candidates yielded the discovery of 10 new agonist chemotypes with sub-micromolar potency at MT receptors, with compound 21 reaching EC50 of 0.36 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific experimental result for compound 21.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "1e49271b-efb1-4c4d-a352-589364ff829a",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C6",
+      "claim": "Six of the discovered molecules displayed selectivity for MT2 over MT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Six of these molecules displayed selectivity for MT2 over MT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental characterization of the hits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "2c89989a-bc60-4850-979d-b488cb9e1025",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C7",
+      "claim": "Compounds 21 and 28 had dramatically reduced arrestin recruitment at MT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, two most potent agonists, including 21 and a close derivative of melatonin, 28, had dramatically reduced arrestin recruitment at MT2, while compound 37 was devoid of Gi signaling at MT1, implying biased signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding about the signaling properties of these compounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "a9799ec9-1145-4bb0-8f02-194bcda16571",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C8",
+      "claim": "Compound 37 was devoid of Gi signaling at MT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, two most potent agonists, including 21 and a close derivative of melatonin, 28, had dramatically reduced arrestin recruitment at MT2, while compound 37 was devoid of Gi signaling at MT1, implying biased signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding about the signaling properties of compound 37.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "3220eb31-524c-4ced-a4a9-740e2b391292",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C9",
+      "claim": "The differential signaling profiles of compounds 21, 28, and 37 imply biased signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, two most potent agonists, including 21 and a close derivative of melatonin, 28, had dramatically reduced arrestin recruitment at MT2, while compound 37 was devoid of Gi signaling at MT1, implying biased signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data on differential signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "3b64271c-8f56-492a-8b5d-4928ae340cee",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C10",
+      "claim": "This study validates the suitability of the agonist-bound orthosteric pocket in the MT receptor structures for the structure-based discovery of selective agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "This study validates the suitability of the agonist-bound orthosteric pocket in the MT receptor structures for the structure-based discovery of selective agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the successful discovery of agonists using the crystal structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "7cdb9883-30b8-4d8a-abf1-9a517fa252a1",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C11",
+      "claim": "Melatonin is found in all mammals, including humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Melatonin is found in all mammals, including humans, where it regulates sleep and helps to synchronize the circadian rhythm with natural light-dark cycles (Brzezinski, 1997; Xie et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "c8cac810-0f64-47f1-ac67-df5ad1d866b3",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C12",
+      "claim": "Melatonin regulates sleep and helps to synchronize the circadian rhythm with natural light-dark cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Melatonin is found in all mammals, including humans, where it regulates sleep and helps to synchronize the circadian rhythm with natural light-dark cycles (Brzezinski, 1997; Xie et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "f003e781-0ada-445a-8cbf-a3d5e22c8b08",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C13",
+      "claim": "Melatonin is synthesized from serotonin in the pineal gland of the brain during darkness.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemically, melatonin is synthesized from serotonin in the pineal gland of the brain during darkness (Ganguly et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "d88a9b29-4459-4718-946b-624314374bd6",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C14",
+      "claim": "Both MT1 and MT2 share canonical helical 7-transmembrane (7-TM) topology.",
+      "claim_type": "EXPLICIT",
+      "source": "Both MT1 and MT2 share canonical helical 7-transmembrane (7-TM) topology (Johansson et al., 2019; Stauch et al., 2019), although they are differentially expressed and implicated in diverse biological functions and pathologies (Dubocovich and Markowska, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature including the crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "62aef346-69f1-45a9-acd9-83f224fa8aff",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C15",
+      "claim": "MT1 and MT2 are differentially expressed and implicated in diverse biological functions and pathologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Both MT1 and MT2 share canonical helical 7-transmembrane (7-TM) topology (Johansson et al., 2019; Stauch et al., 2019), although they are differentially expressed and implicated in diverse biological functions and pathologies (Dubocovich and Markowska, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "0e3e543a-641d-454b-83c7-4db0532d379c",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C16",
+      "claim": "Ramelteon has been approved for primary chronic insomnia treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "While exogenous melatonin has been commonly used for the treatment of insomnia and jetlag, more effective and long-lasting MT agonists such as ramelteon have been approved for primary chronic insomnia treatment, because of their low side-effect profile as compared to other sleeping aids such as benzodiazepines (Hardeland et al., 2011; Erman et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "ede6987e-b713-4a20-909d-cfe17b18ee02",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C17",
+      "claim": "Ramelteon has a low side-effect profile compared to other sleeping aids such as benzodiazepines.",
+      "claim_type": "EXPLICIT",
+      "source": "While exogenous melatonin has been commonly used for the treatment of insomnia and jetlag, more effective and long-lasting MT agonists such as ramelteon have been approved for primary chronic insomnia treatment, because of their low side-effect profile as compared to other sleeping aids such as benzodiazepines (Hardeland et al., 2011; Erman et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "7bd0dfad-f475-454a-8579-23d4569479f6",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C18",
+      "claim": "Tasimelteon is used for non-24-hour sleep-wake disorders in blind individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Other MT agonists such as tasimelteon and agomelatine, are used for non-24-hour sleep-wake disorders in blind individuals and as an atypical anti-depressant for major depressive disorders, respectively (Lavedan et al., 2015; de Bodinat et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "3a2de696-409a-4bc5-8a59-2a90f972f288",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C19",
+      "claim": "Agomelatine is used as an atypical anti-depressant for major depressive disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Other MT agonists such as tasimelteon and agomelatine, are used for non-24-hour sleep-wake disorders in blind individuals and as an atypical anti-depressant for major depressive disorders, respectively (Lavedan et al., 2015; de Bodinat et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "ed6aba6c-8284-4bd6-9c14-cda3dab0b5ad",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C20",
+      "claim": "MT receptors play an essential role in learning, memory, and neuroprotection.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies also suggest MT receptors play an essential role in learning, memory, and neuroprotection (Liu et al., 2016) and illustrate the potential utility of partial and selective MT2 receptor agonists as antinociceptive drugs (L\u00f3pez-Canul et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "181c13a3-43a4-4961-9423-8bc2d7b8bae4",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C21",
+      "claim": "Partial and selective MT2 receptor agonists have potential utility as antinociceptive drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies also suggest MT receptors play an essential role in learning, memory, and neuroprotection (Liu et al., 2016) and illustrate the potential utility of partial and selective MT2 receptor agonists as antinociceptive drugs (L\u00f3pez-Canul et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "da5803f5-21b1-482a-bab0-157c2c57d20e",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C22",
+      "claim": "MT2 single nucleotide polymorphisms (SNPs) are implicated in type-2 diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, MT2 single nucleotide polymorphisms (SNPs) are implicated in type-2 diabetes (Karamitri et al., 2018) (T2D), emphasizing the importance of MT receptors in a wide variety of functions relevant to human health and the quality of life (Karamitri and Jockers, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "e38ace8b-4c58-4d18-a71f-3e5297ccc3f9",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C23",
+      "claim": "Most of the currently available drugs non-selectively activate both MT1 and MT2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although MT1 and MT2 receptors have distinctive in vivo functions, most of the currently available drugs non-selectively activate both MT1 and MT2 receptors (Zlotos et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "3d710b1d-50e1-457d-9def-e741377a5a9f",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C24",
+      "claim": "The MT2 receptor regulates non-rapid eye movement (NREM) while MT1 mediates rapid eye movement (REM) phases of the vigilance state in sleep architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the MT2 receptor regulates non-rapid eye movement (NREM) while MT1 mediates rapid eye movement (REM) phases of the vigilance state in sleep architecture (Comai et al., 2013; Fisher and Sugden, 2009; Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "e53d12ba-11fd-44d6-a3eb-1e55fbbf15fd",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C25",
+      "claim": "The three-dimensional structures of MT1 and MT2 were determined using an X-ray free-electron laser (XFEL).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the three-dimensional structures of MT1 and MT2 were determined using an X-ray free-electron laser (XFEL), providing atomic-level details of receptor-ligand interactions (Johansson et al., 2019; Stauch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "97a8e233-8bdf-4b29-b2e9-17ef060982b7",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C26",
+      "claim": "Both MT1 and MT2 receptors were resolved in complexes with agonists \u2013 agomelatine, 2-phenylmelatonin, 2-iodomelatonin and ramelteon.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both receptors were resolved in complexes with agonists \u2013 agomelatine, 2-phenylmelatonin, 2-iodomelatonin and ramelteon, thermostabilizing mutations that were necessary for crystallization rendered these receptors functionally inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ligands co-crystallized with the receptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "276768ba-6e58-4f84-ae2b-cdb20b9afb71",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C27",
+      "claim": "Thermostabilizing mutations that were necessary for crystallization rendered MT1 and MT2 receptors functionally inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both receptors were resolved in complexes with agonists \u2013 agomelatine, 2-phenylmelatonin, 2-iodomelatonin and ramelteon, thermostabilizing mutations that were necessary for crystallization rendered these receptors functionally inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of the crystallized receptors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "69c77038-87a1-49b9-93e2-5585fc2616b4",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C28",
+      "claim": "A library of 8.4 million available-for-purchase fragment-like and lead-like compounds was used for virtual ligand screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we utilized the MT structural information to perform a large scale virtual ligand screen (VLS) on both MT1 and MT2 receptors, using libraries of 8.4 million available-for-purchase fragment-like and lead-like compounds (Sterling and Irwin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the screening library used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "d3a5f6f1-0b2d-44ad-9bed-9a1d0dd72b89",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C29",
+      "claim": "Five hits were partial agonists at MT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Six of these hits, including the most potent one, demonstrated selectivity for MT2, while five hits were partial agonists at MT2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental characterization of the hits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "a566002e-352f-4ea5-a912-498cb8be9bb1",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C30",
+      "claim": "Compound 21 shows substantial bias towards G-protein signaling at MT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the two most potent MT2 compounds, 21 and a close derivative of melatonin, 28, show reduced arrestin signaling, thus resulting in substantial bias towards G-protein signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data on signaling bias.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "60c51728-86ed-4aa9-bb7c-506488c02857",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C31",
+      "claim": "Compound 28 shows substantial bias towards G-protein signaling at MT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the two most potent MT2 compounds, 21 and a close derivative of melatonin, 28, show reduced arrestin signaling, thus resulting in substantial bias towards G-protein signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data on signaling bias.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "e0852526-071b-4683-a066-5498d5673c86",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C32",
+      "claim": "The optimized models of MT receptors showed substantial improvement in AUC values over the crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The AUC values for the optimized models of MT receptors showed substantial improvement over AUC values for MT crystal structures (MT1_Opt = 87 vs. MT1_Xtal = 69; and MT2_Opt = 82 vs. MT2_Xtal = 70) (see Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the benchmarking analysis shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "32b9b7c1-933e-40dd-afe5-e8b4173777ee",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C33",
+      "claim": "The major interactions in MT receptor binding include aromatic stacking of the heterocyclic core with ECL2 hydrophobic residue F179/192ECL2.",
+      "claim_type": "EXPLICIT",
+      "source": "The major interactions include aromatic stacking of the heterocyclic core with ECL2 hydrophobic residue F179/192ECL2 (the residue numbers for MT1 and MT2 listed for UniProt (Bateman et al., 2017) ids: P48039 and P49286, respectively, followed by superscripted Ballesteros \u2013 Weinstein numbering scheme Ballesteros and Weinstein, 1995), as well as hydrogen bonding interactions with N162/1754.60 and Q181/194ECL2 (Johansson et al., 2019; Stauch et al., 2019) .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "d034a827-9d49-4756-aa65-02edc769b510",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C34",
+      "claim": "The major interactions in MT receptor binding include hydrogen bonding interactions with N162/1754.60 and Q181/194ECL2.",
+      "claim_type": "EXPLICIT",
+      "source": "The major interactions include aromatic stacking of the heterocyclic core with ECL2 hydrophobic residue F179/192ECL2 (the residue numbers for MT1 and MT2 listed for UniProt (Bateman et al., 2017) ids: P48039 and P49286, respectively, followed by superscripted Ballesteros \u2013 Weinstein numbering scheme Ballesteros and Weinstein, 1995), as well as hydrogen bonding interactions with N162/1754.60 and Q181/194ECL2 (Johansson et al., 2019; Stauch et al., 2019) .",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the crystal structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "a2fe4b34-20b1-4e0e-b17d-12a5e3a523de",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C35",
+      "claim": "A final set of 62 compounds were selected for purchase based on a multidimensional composite criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "A final set of 62 compounds (23 from only MT1 VLS; 25 from only MT2 VLS; 14 from both MT1 and MT2 VLS) were selected for purchase based on a multidimensional composite criterion accounting for compound novelty, chemical diversity, well-defined interaction patterns with binding site residues N162/1754.60 and/or Q181/194ECL2, and interaction similarities with ligands observed in the crystal structures (See Figure 2; Supplementary file 1 Table S1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection criteria for experimental testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "bb0c740f-ef9b-4dbc-9e44-85bed0771c3a",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C36",
+      "claim": "Most of the compounds represented new chemotypes with Tanimoto chemical distance values >0.22.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the compounds represented new chemotypes with Tanimoto chemical distance values >0.22 (Abagyan et al., 2016), separating them from known high-affinity MT ligands available in CHEMBL24 (Gaulton et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the chemical similarity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "354e3bd2-b2c0-4e40-bf01-a4a100d494c8",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C37",
+      "claim": "Compound 28 is a close analog of melatonin with Tanimoto distance = 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "We also chose a close analog of melatonin \u2013 compound 28 (Tanimoto distance = 0.05), which to our knowledge, has not yet been characterized as a ligand for MT receptors (Gaulton et al., 2017; Kim et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the chemical similarity of compound 28 to melatonin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "a8fc4144-0753-441f-8d66-28519fe61953",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C38",
+      "claim": "Eleven compounds demonstrated sub-micromolar potencies in Gi/o mediated signaling assays (18% hit rate).",
+      "claim_type": "EXPLICIT",
+      "source": "Eleven compounds (Table 1; Figure 3) demonstrated sub-micromolar potencies in Gi/o mediated signaling assays (18% hit rate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary result from the experimental testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "3b5d7dfd-6772-4b1e-9f61-659f53f93eeb",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C39",
+      "claim": "Ten of the eleven active compounds showed binding affinities Ki <10 \u00b5M in a competition binding assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten of these eleven compounds also showed binding affinities Ki <10 \u00b5M in a competition binding assay (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the binding assays shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "a19678ba-6254-45a5-a7ec-ae576c0147a4",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C40",
+      "claim": "Compound 28 was as potent as melatonin itself in MT2 (EC50 = 0.04 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "The melatonin derivative 28 identified by VLS was as potent as melatonin itself in MT2 (EC50 = 0.04 nM) and had the same potency (EC50 = 0.04 nM) at MT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result for compound 28.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "d2e88ae7-eae7-475e-9177-f94dfb0ad1d4",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C41",
+      "claim": "Compound 28 had the same potency (EC50 = 0.04 nM) at MT1 as at MT2.",
+      "claim_type": "EXPLICIT",
+      "source": "The melatonin derivative 28 identified by VLS was as potent as melatonin itself in MT2 (EC50 = 0.04 nM) and had the same potency (EC50 = 0.04 nM) at MT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result for compound 28.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "66ad146f-a03e-4475-b209-9ea7f193658c",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C42",
+      "claim": "Compound 21 displayed an EC50 = 0.36 nM for MT2, with a 30-fold selectivity over MT1 receptor (MT1 EC50 = 12 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "The most potent new chemotype, 21, displayed an EC50 = 0.36 nM for MT2, with a 30-fold selectivity over MT1 receptor (MT1EC50 = 12 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result for compound 21.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "de721038-44f6-42b8-adb3-8175e137c649",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C43",
+      "claim": "Seven hits had EC50 <100 nM for at least one of the melatonin receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, seven hits had EC50 <100 nM for at least one of the melatonin receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "f6e85bb5-b18b-43b6-aa47-3232bad71043",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C44",
+      "claim": "Most of the hits identified belong to a library of fragment-like compounds with molecular weights less than 250 Da.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other low molecular weight MT ligands, most of the hits identified belong to a library of fragment-like compounds with molecular weights less than 250 Da, and have exceptionally high ligand efficiency (LE), far exceeding the ~0.3 value considered as a standard for a promising lead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the properties of the hit compounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "7722769a-16d6-4e23-a860-80417b7b2273",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C45",
+      "claim": "Compound 21 had the highest LE values of 0.83 kcal/mol per non-hydrogen atom for MT2 and 0.69 kcal/mol per non-hydrogen atom for MT1 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, compound 21 (Mol. Wt. = 224 Da) had the highest LE values of 0.83 kcal/mol per non-hydrogen atom for MT2 and 0.69 kcal/mol per non-hydrogen atom for MT1 receptors (Hopkins et al., 2004; Hopkins et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result for compound 21.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "e6195630-8f34-427d-8610-bc35ea9f5cf6",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C46",
+      "claim": "Nine out of eleven hits have methoxy or a similar group predicted to make hydrogen bonding interactions with N162/1754.60.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine out of eleven hits have methoxy or a similar group predicted to make hydrogen bonding interactions with N162/1754.60, which was found to be a critical residue for receptor activation, despite playing a limited role in ligand affinity or structural stability of the receptor (Stauch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the docking analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "0dfdad30-1a99-452b-a61b-43655c910326",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C47",
+      "claim": "N162/1754.60 was found to be a critical residue for receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine out of eleven hits have methoxy or a similar group predicted to make hydrogen bonding interactions with N162/1754.60, which was found to be a critical residue for receptor activation, despite playing a limited role in ligand affinity or structural stability of the receptor (Stauch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "ef4da5db-1213-4061-8003-17e51918b1ac",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C48",
+      "claim": "Seven of the hits were predicted to form hydrogen bonding interactions with Q181/194ECL2 similar to alkylamide tail of melatonin.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, seven of the hits were predicted to form hydrogen bonding interactions with Q181/194ECL2 similar to alkylamide tail of melatonin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the docking analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "da1db4b7-0280-47b3-b927-fa1042866e74",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C49",
+      "claim": "Five hits were predicted to occupy a significant space in the pocket flanked by TMs-II, III, and VII forming hydrophobic interactions, especially with residues Y281/2947.38 and Y285/2987.43.",
+      "claim_type": "EXPLICIT",
+      "source": "Five hits were predicted to occupy a significant space in the pocket flanked by TMs-II, III, and VII forming hydrophobic interactions, especially with residues Y281/2947.38 and Y285/2987.43, as previously found in the MT receptor structures (Johansson et al., 2019; Stauch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the docking analysis supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "b553fe32-0f44-4123-b035-3ef1b9c13232",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C50",
+      "claim": "Six of the identified hits were found to be at least 30 fold more potent at MT2 compared to MT1 in the Gi/o-mediated cAMP inhibition assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Six of the identified hits were found to be at least 30 fold more potent at MT2 compared to MT1 in the Gi/o-mediated cAMP inhibition assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the experimental assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "2a15550b-9142-4025-bd20-88e8b54c2f95",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C51",
+      "claim": "Compound 21 was predicted to bind both the MT receptors in a similar orientation by forming hydrogen bonding interactions with N162/1754.60 and Q181/194ECL2 with its methoxy anchor and acetylamido tail, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Compound 21 was predicted to bind both the MT receptors in a similar orientation by forming hydrogen bonding interactions with N162/1754.60 and Q181/194ECL2 with its methoxy anchor and acetylamido tail, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the docking analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "b2405d4e-70c7-45c6-a3c5-697fe84f6b6e",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C52",
+      "claim": "Compound 47 is 187-fold selective towards MT2 (EC50 = 10 nM for MT2, and 2.34 \u00b5M for MT1, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, compound 47 is 187-fold selective towards MT2 (EC50 = 10 nM for MT2, and 2.34 \u00b5M for MT1, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result for compound 47.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "5fb572d2-f107-4295-a098-6e243b7ac7e8",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C53",
+      "claim": "Compound 45 has a sub-micromolar potency and 17-fold selectivity for MT2 (EC50 = 427 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, compound 45 also lacks a substitution topologically equivalent to acetylamido tail of melatonin (R2 feature) and yet has a sub-micromolar potency and 17-fold selectivity for MT2 (EC50 = 427 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result for compound 45.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "38b6ef7e-d067-4bfd-9dc3-4dfddf96dffa",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C54",
+      "claim": "Compound 44 is 267-fold selective for MT2 (EC50 = 263 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, compound 44 was predicted to form interactions with Q181/194ECL2, but it lacks an R3 equivalent substitution, which still makes it 267-fold selective for MT2 (EC50 = 263 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result for compound 44.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "a56fe741-d242-48d4-9a6d-8edff2adc0c1",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C55",
+      "claim": "Either R2 or R3 could be sufficient in maintaining the potency and selectivity at MT2.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that either R2 or R3 could be sufficient in maintaining the potency and selectivity at MT2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results and docking analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "77a27929-25c6-4ed0-930a-0883ced829c1",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C56",
+      "claim": "All the discovered hits show activity as agonists in Gi/o-protein signaling assays at both MT1 and MT2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "All the discovered hits show activity as agonists in Gi/o-protein signaling assays at both MT1 and MT2 receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "d3028381-fc4f-44bd-9b68-69b2757f8986",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C57",
+      "claim": "Four of the hits, 28, 29, 57, and 62 had their efficacy (Emax) reduced to less than 70% in MT2, and are therefore considered partial agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, four of the hits, 28, 29, 57, and 62 had their efficacy (Emax) reduced to less than 70% in MT2, and are therefore considered partial agonists (Audinot et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the experimental assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "1617ae1e-4e67-4c02-b348-44f65124ca31",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C58",
+      "claim": "Compound 37 completely lacks G-protein signaling at MT1, though it still binds to MT1 and displays substantial \u03b2-arrestin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "One exception is compound 37, which completely lacks G-protein signaling, though it still binds to MT1 and displays substantial \u03b2-arrestin activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the experimental assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "5ddfc184-371e-4bbc-b0bb-0f2b21251059",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C59",
+      "claim": "Compounds 21 and 28 show bias factors of 15.5 and 33.9, respectively, at MT2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of MT2, however, there are several compounds that show a marked reduction in \u03b2-arrestin signaling compared to G-protein, especially compounds 21 and 28, which show bias factors of 15.5 and 33.9, respectively (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the experimental assays shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "e470cf22-51f9-4990-a443-35f4acac1da4",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C60",
+      "claim": "MT ligands may show rather distinct functional bias profiles in G-protein and \u03b2-arrestin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that MT ligands may show rather distinct functional bias profiles in G-protein and \u03b2-arrestin signaling, as observed in many other GPCRs (Kenakin, 2019; Roth, 2019), though the biological importance of this bias in MT remains to be investigated (Cecon et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "41a809cb-f2fc-4075-90ba-7487cb14144d",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C61",
+      "claim": "Compound 28 is very similar to melatonin, except the amide is replaced by a urea.",
+      "claim_type": "EXPLICIT",
+      "source": "Compound 28 is very similar to melatonin, except the amide is replaced by a urea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the chemical structure of compound 28.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "0e8cece6-2341-4b78-a67c-2fb53701e96a",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C62",
+      "claim": "Compound 28 is a partial agonist at MT2 (Emax = 69.4%) while largely maintaining full agonism at MT1 (Emax = 95.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "This substitution renders compound 28 as a partial agonist at MT2 (Emax = 69.4%) while largely maintaining full agonism at MT1 (Emax = 95.3%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental result for compound 28.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "d0f803ce-e634-4eff-a095-d54e0625bdda",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C63",
+      "claim": "In MT2 orthosteric site, the urea of compound 28 forms hydrogen bonding interactions with the side chains of polar residues Q194ECL2 and N2686.52 owing to its additional nitrogen.",
+      "claim_type": "EXPLICIT",
+      "source": "In MT2 orthosteric site, the urea of compound 28 forms hydrogen bonding interactions with the side chains of polar residues Q194ECL2 and N2686.52 owing to its additional nitrogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the docking analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "02d3a74d-ccc8-4771-ad39-12bc23577dfe",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C64",
+      "claim": "The interactions of acetylamido group of melatonin with Q181ECL2 are replaced by a hydrogen bond between Y2817.38 and oxygen from the urea in compound 28 at MT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the interactions of acetylamido group of melatonin with Q181ECL2 are replaced by a hydrogen bond between Y2817.38 and oxygen from the urea in compound 28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the docking analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "73644702-82b0-4bf6-b67b-97f915c7ffcd",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C65",
+      "claim": "The lead compounds 21, 28, and 37 did not show any substantial binding at 47 common drug targets at 10 \u03bcM, except for compound 28 that displayed over 50% inhibition at three 5-HT receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "At a final concentration of 10 \u03bcM, they did not show any substantial binding at these targets, except for compound 28 that displayed over 50% inhibition at three 5-HT receptors (Figure 6\u2014figure supplement 2), with binding affinity of 851 nM (pKi = 6.07 \u00b1 0.11) for 5-HT1A, 1525 nM (pKi = 5.82 \u00b1 0.02) for 5-HT1D, and 286 nM (pKi = 6.54 \u00b1 0.03) for 5-HT7A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the off-target profiling shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "de5d4fb4-9708-46a5-87aa-689e65d6ab8b",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C66",
+      "claim": "Compound 28 has binding affinity of 851 nM (pKi = 6.07 \u00b1 0.11) for 5-HT1A.",
+      "claim_type": "EXPLICIT",
+      "source": "At a final concentration of 10 \u03bcM, they did not show any substantial binding at these targets, except for compound 28 that displayed over 50% inhibition at three 5-HT receptors (Figure 6\u2014figure supplement 2), with binding affinity of 851 nM (pKi = 6.07 \u00b1 0.11) for 5-HT1A, 1525 nM (pKi = 5.82 \u00b1 0.02) for 5-HT1D, and 286 nM (pKi = 6.54 \u00b1 0.03) for 5-HT7A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the off-target profiling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "55fc85ec-3ef2-4839-88fc-b3d62a69a255",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C67",
+      "claim": "Compound 28 has binding affinity of 1525 nM (pKi = 5.82 \u00b1 0.02) for 5-HT1D.",
+      "claim_type": "EXPLICIT",
+      "source": "At a final concentration of 10 \u03bcM, they did not show any substantial binding at these targets, except for compound 28 that displayed over 50% inhibition at three 5-HT receptors (Figure 6\u2014figure supplement 2), with binding affinity of 851 nM (pKi = 6.07 \u00b1 0.11) for 5-HT1A, 1525 nM (pKi = 5.82 \u00b1 0.02) for 5-HT1D, and 286 nM (pKi = 6.54 \u00b1 0.03) for 5-HT7A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the off-target profiling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "ae87821e-447c-49fe-8bed-acb559a2f90f",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C68",
+      "claim": "Compound 28 has binding affinity of 286 nM (pKi = 6.54 \u00b1 0.03) for 5-HT7A.",
+      "claim_type": "EXPLICIT",
+      "source": "At a final concentration of 10 \u03bcM, they did not show any substantial binding at these targets, except for compound 28 that displayed over 50% inhibition at three 5-HT receptors (Figure 6\u2014figure supplement 2), with binding affinity of 851 nM (pKi = 6.07 \u00b1 0.11) for 5-HT1A, 1525 nM (pKi = 5.82 \u00b1 0.02) for 5-HT1D, and 286 nM (pKi = 6.54 \u00b1 0.03) for 5-HT7A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the off-target profiling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "045568d0-7f83-4931-a2b9-81c9c894dc5f",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C69",
+      "claim": "Compound 28 is a weak partial agonist at 5-HT7A with EC50 = 1819 nM, as compared to 0.04 nM at both MT1 and MT2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessment of functional activity of 28 in Gs-mediated cAMP production shows that it is a weak partial agonist with EC50 = 1819 nM, as compared to 0.04 nM at both MT1 and MT2 receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the functional assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "ee05b73e-b30d-4e35-b21b-80b7da91b00b",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C70",
+      "claim": "The lead compounds 21, 28, and 37 act specifically at MT receptors and show high selectivity for MT1 or MT2 over many common drug targets.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that the lead compounds 21, 28, and 37 act specifically at MT receptors and show high selectivity for MT1 or MT2 over many common drug targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the off-target profiling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "f89c40f4-b407-4bf8-9d05-432c3591a09f",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C71",
+      "claim": "The number of sub-micromolar hits and potency of the best among them is one of the highest reported for a VLS campaign in class A GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of sub-micromolar hits and potency of the best among them is one of the highest reported for a VLS campaign in class A GPCRs (Lyu et al., 2019) and in-line with another VLS screen for MT receptors, published while this study was in revision (Stein et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to other VLS campaigns, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "67b1686c-dce4-4da9-8039-994a368a70ec",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C72",
+      "claim": "Most GPCR structures have a limited capacity to distinguish agonists vs. antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "This is remarkable, considering that most GPCR structures have a limited capacity to distinguish agonists vs. antagonists (Costanzi and Vilar, 2012; Weiss et al., 2018) and prospective VLS campaigns often result in antagonists even when an agonist-bound VLS model is used (Lyu et al., 2019; Roth, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "6897e2d2-d95f-4722-adf8-8345f05a4668",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C73",
+      "claim": "Prospective VLS campaigns often result in antagonists even when an agonist-bound VLS model is used.",
+      "claim_type": "EXPLICIT",
+      "source": "This is remarkable, considering that most GPCR structures have a limited capacity to distinguish agonists vs. antagonists (Costanzi and Vilar, 2012; Weiss et al., 2018) and prospective VLS campaigns often result in antagonists even when an agonist-bound VLS model is used (Lyu et al., 2019; Roth, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "b9e8228f-06fe-4a92-9465-9c463a8d4770",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C74",
+      "claim": "The high quality of the initial crystal structure, further improved by ligand-guided optimization of the pocket for VLS, has been critical for the success of previous VLS campaigns.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the high quality of the initial crystal structure, further improved by ligand-guided optimization of the pocket for VLS, has been critical for the success of our previous VLS campaigns, and likely played a similar role here (Katritch et al., 2010; Lane et al., 2013; Zheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "826a3858-54ff-4b83-bd83-d7883e4460ac",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C75",
+      "claim": "Endogenous ligand melatonin has unusually high picomolar potency at MT receptors (~4 pM at MT1 and 50 pM at MT2).",
+      "claim_type": "EXPLICIT",
+      "source": "As we mentioned above, endogenous ligand melatonin itself has unusually high picomolar potency at MT receptors (~4 pM at MT1 and 50 pM at MT2, see Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the experimental assays shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "8d26b1e0-050a-4357-9b1a-91fbbd84066b",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C76",
+      "claim": "Melatonin and most other high-potency ligands are small (<250 DA) and yet they still fully occupy the very small, enclosed MT pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Melatonin and most other high-potency ligands are small (<250 DA) and yet they still fully occupy the very small, enclosed MT pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the properties of MT ligands.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "f10e81b8-83b3-4929-8251-9bb639b7ec07",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C77",
+      "claim": "Chemical space of fragment-like libraries is much smaller than the usual drug-like space, and can be more exhaustively searched, likely resulting in higher hit rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical space of such size-limited fragment-like libraries is much smaller than the usual drug-like space, and can be more exhaustively searched, likely resulting in higher hit rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the properties of fragment-like libraries.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "45b7996b-ee46-4f86-9209-c9974271e461",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C78",
+      "claim": "Most known MT receptor ligands show agonist activity, while antagonists of similar potency are notoriously hard to find.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, most known MT receptor ligands show agonist activity, while antagonists of similar potency are notoriously hard to find, suggesting that agonists may be intrinsically preferred ligands for MT receptors (Jockers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "25b84ab4-e32d-47c0-bfb8-d943b8dcf21c",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C79",
+      "claim": "Agonists may be intrinsically preferred ligands for MT receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, most known MT receptor ligands show agonist activity, while antagonists of similar potency are notoriously hard to find, suggesting that agonists may be intrinsically preferred ligands for MT receptors (Jockers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "ba3f7fcb-ad2b-4da9-bae4-26bfb2502faf",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C80",
+      "claim": "Two of the hit compounds, 37 and 62, are MT2-selective partial agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the hit compounds, 37 and 62, are MT2-selective partial agonists, which may have a desirable profile for eliciting antinociceptive effects mediated by melatonin receptors, and may be potentially useful in developing novel analgesics for pain management with reduced side effects (L\u00f3pez-Canul et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the experimental assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "21f68f38-1447-4e1a-84ce-18f9d320f8bd",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C81",
+      "claim": "MT2-selective partial agonists may have a desirable profile for eliciting antinociceptive effects mediated by melatonin receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of the hit compounds, 37 and 62, are MT2-selective partial agonists, which may have a desirable profile for eliciting antinociceptive effects mediated by melatonin receptors, and may be potentially useful in developing novel analgesics for pain management with reduced side effects (L\u00f3pez-Canul et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "e1f137bc-7fd7-4476-9374-bd6bf1dd96cc",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C82",
+      "claim": "None of the hits in this study had substantial MT1 selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, while some of the newly discovered hits are selective for MT2, none of the hits in this study had substantial MT1 selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "379d6aed-e507-428d-a509-6e70a7f9d98e",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C83",
+      "claim": "The lack of MT1 selectivity may be explained by the lack of a bulky chemical group at the R1 position.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be explained by the lack of a bulky chemical group at the R1 position, which are known to confer strong MT1 selectivity, e.g. in bitopic CTL 01\u201305-B-A05 ligand that stretches out of the pocket via narrow side channel (Stauch et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation to prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "28ba5215-9d83-4f3b-852b-40961143f729",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C84",
+      "claim": "Design of bitopic ligands with MT1 selective chemotypes would need to explore larger compounds (MW >500).",
+      "claim_type": "EXPLICIT",
+      "source": "Design of such bitopic ligands with MT1 selective chemotypes would need to explore larger compounds (MW >500), which were not considered in the current VLS screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "70cf600c-77e9-4429-8a69-f0cfed52183b",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C85",
+      "claim": "Prevalence of agonists in the hit set suggests the importance of activated, agonist-bound conformations of the orthosteric pocket models for successful agonist screening.",
+      "claim_type": "EXPLICIT",
+      "source": "Prevalence of agonists in the hit set suggests the importance of activated, agonist-bound conformations of the orthosteric pocket models for successful agonist screening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "98647caa-28a9-4d27-8282-e112d4498753",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C86",
+      "claim": "Even though the receptors were thermostabilized by 9 and 8 point mutations (MT1/MT2, respectively) to aid crystallization rendering the receptor conformations inactive on the intracellular side, the agonist-bound orthosteric pockets remain relevant for structure-based drug discovery applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that, even though the receptors were thermostabilized by 9 and 8 point mutations (MT1/MT2, respectively) to aid crystallization rendering the receptor conformations inactive on the intracellular side, the agonist-bound orthosteric pockets remain relevant for structure-based drug discovery applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the successful VLS results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "cd82cdd7-0b09-4787-b19a-cd2b46398023",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C87",
+      "claim": "Ligand guided receptor optimization (LiBERO) plays an important role in improving the outcomes of a structure-based VLS.",
+      "claim_type": "EXPLICIT",
+      "source": "Our benchmarking also corroborated the important role of ligand guided receptor optimization (LiBERO) (Katritch et al., 2012) in improving the outcomes of a structure-based VLS, similar to some of our previous VLS campaigns (Lane et al., 2013; Zheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the benchmarking results and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "b02150a9-bdc2-4d18-a2cd-37d891aa1fa6",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C88",
+      "claim": "The chemical diversity, selectivity, high potency and agonist activities of the identified hits serve as a valuable starting point for the development of tool compounds to explore the biology of melatonin receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The chemical diversity, selectivity, high potency and agonist activities of the identified hits serve as a valuable starting point for the development of tool compounds to explore the biology of melatonin receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the potential utility of the hits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "4f96acf6-e34e-4d25-8130-ab4c4ea76a6a",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C89",
+      "claim": "These novel chemotypes could provide new leads for the development of next-generation treatments for insomnia, pain, sleep and mood-related disorders, type 2 diabetes, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "With the potential for selective modulation over the melatonin receptor subtype-mediated biology, these novel chemotypes could provide new leads for the development of next-generation treatments for insomnia, pain, sleep and mood-related disorders, type 2 diabetes, and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential therapeutic applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "c7044090-e56c-4058-86df-0452e445aca1",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C90",
+      "claim": "X-ray crystal structures of MT1 and MT2 receptors in complex with 2-phenylmelatonin (PDB IDs: 6ME3, 6ME6) were used to generate virtual screening models.",
+      "claim_type": "EXPLICIT",
+      "source": "X-ray crystal structures of MT1 (Stauch et al., 2019) and MT2 (Johansson et al., 2019) receptors in complex with 2-phenylmelatonin (PDB IDs Berman et al., 2000: 6ME3, 6ME6) were used to generate virtual screening models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the starting materials for the modeling work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "82f69612-a1b3-4b61-a1c0-e80f4813bee9",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C91",
+      "claim": "The RMSD values of ligand binding pocket side chain heavy atoms for MT1 and MT2 were 0.51 \u00c5 and 0.76 \u00c5, respectively, compared to their corresponding crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The RMSD values of ligand binding pocket side chain heavy atoms for MT1 and MT2 were 0.51 \u00c5 and 0.76 \u00c5, respectively, compared to their corresponding crystal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the receptor model optimization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "661f3667-80c6-46c2-abcb-6d27a4376a3a",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C92",
+      "claim": "A subset of commercially available fragment-like compounds from the ZINC database with physicochemical properties similar to already reported melatonin receptor ligands was selected for screening.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected a subset of commercially available (in-stock and on-demand) fragment-like compounds from the ZINC database with physicochemical properties similar to already reported melatonin receptor ligands (Gaulton et al., 2017; Sterling and Irwin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the screening library selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "eb24893e-c9ea-4f10-88e7-d9fe02a4b934",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C93",
+      "claim": "Compounds with molecular weight \u2264250 Da and logP values ranging 1 to 5 were considered for the screening library.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered compounds with molecular weight \u2264250 Da and logP values ranging 1 to 5 based on the logP data of high-affinity MT ligands (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the screening library selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "fb8bfe85-5bef-4e85-8698-3fcec766cb5c",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C94",
+      "claim": "The initial dataset comprised of ~10 million compounds was converted from SMILES to 3D format, and formal charges were assigned.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial dataset comprised of ~10 million compounds was converted from SMILES to 3D format, and formal charges were assigned.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the library preparation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "efb29f48-3c41-4b6f-9a1a-0ee368c3c8fd",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C95",
+      "claim": "The dataset was reduced to 8.4 million compounds after applying additional filters for net charges (between \u22121 to 1) and removing compounds with highly reactive functional groups and promiscuous PAINS chemotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This set was further reduced to 8.4 million compounds after applying additional filters for net charges (between \u22121 to 1) and removing compounds with highly reactive functional groups and promiscuous PAINS chemotypes ('molPAINS' and 'bad groups' in ICM-Pro v.3.8\u20136) (Baell and Holloway, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the library preparation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "72e33f31-8b73-4db5-9676-bf6890b79928",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C96",
+      "claim": "All compounds for in vitro testing were purchased from Enamine, Molport, and Chembridge in stock libraries, with verified identity and guaranteed purity of >95% (37 compounds) or >90% (25 compounds).",
+      "claim_type": "EXPLICIT",
+      "source": "All compounds for in vitro testing were purchased from Enamine, Molport, and Chembridge in stock libraries, with verified identity and guaranteed purity of >95% (37 compounds) or >90% (25 compounds), see Supplementary file 2 for compound QC data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality of the compounds tested.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "a743babb-5e81-48d2-a08a-5c79169738a5",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C97",
+      "claim": "Radioligand binding assays were conducted by the NIMH Psychoactive Drug Screening Program (PDSP).",
+      "claim_type": "EXPLICIT",
+      "source": "The Radioligand binding assays were conducted by the NIMH Psychoactive Drug Screening Program (PDSP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes who performed the binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "f8c117c4-69db-4448-85c1-019f6257f4c9",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C98",
+      "claim": "[3H]melatonin (PerkinElmer, specific activity = 77.4\u201384.7 Ci/mmol) is used as the radioligand in binding assays.",
+      "claim_type": "EXPLICIT",
+      "source": "[3H]melatonin (PerkinElmer, specific activity = 77.4\u201384.7 Ci/mmol) is used as the radioligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the radioligand used in the binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "0bfed679-d6a0-4e1f-8595-35d7f85b2f7d",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "claim_id": "C99",
+      "claim": "Bias factors were estimated according to the published procedure with modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Bias factors were estimated according to the published procedure Kenakin et al. (2012) with modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for calculating bias factors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b3c6dd4d-16e4-4b6a-84cd-3a3474448e60",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors performed structure-based virtual ligand screening (VLS) using optimized models of MT1 and MT2 receptors derived from crystal structures. An 8.4 million compound library of fragment-like molecules (MW \u2264250 Da, logP 1-5) was screened after filtering for reactive groups and PAINS chemotypes. The optimized receptor models showed substantial improvement in benchmarking performance (AUC values: MT1_Opt=87 vs MT1_Xtal=69; MT2_Opt=82 vs MT2_Xtal=70) with RMSD values of 0.51 \u00c5 and 0.76 \u00c5 for MT1 and MT2, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28, C90-C95 describe a well-documented computational workflow with appropriate benchmarking (C32). The receptor optimization protocol (LiBERO) is validated by prior work (C87) and shows clear improvement over crystal structures. The library preparation and filtering steps are standard and appropriately described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "a21dc9fa-b508-4834-9af7-7847280d9197",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Experimental testing of 62 selected compounds yielded 11 hits with sub-micromolar potency (18% hit rate), including 10 novel chemotypes. Compound 21 showed exceptional potency (EC50=0.36 nM at MT2, 12 nM at MT1) with 30-fold MT2 selectivity. Compound 28, a melatonin derivative, was equipotent to melatonin at both receptors (EC50=0.04 nM). Six compounds showed at least 30-fold MT2 selectivity. Ten of eleven hits showed binding affinities Ki <10 \u00b5M, and seven had EC50 <100 nM at one or both receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C35-C43 present consistent experimental data from multiple orthogonal assays (Gi/o signaling, binding, arrestin recruitment). The hit rate of 18% is exceptionally high for VLS campaigns and is supported by appropriate controls (melatonin reference). Compound purity is documented (C96). The data are internally consistent across assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "c5c55e64-748a-45c3-86b2-0959ee639e5a",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Four compounds (28, 29, 57, 62) were identified as partial agonists at MT2 with Emax <70%. Compound 28 showed differential efficacy between receptors (Emax=69.4% at MT2 vs 95.3% at MT1). Compounds 37 and 62 are MT2-selective partial agonists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C57, C62, C80 describe partial agonism based on standard efficacy criteria (Emax <70%, cited to Audinot et al., 2003). The data are consistent across multiple assays and show clear dose-response relationships in Figure 3. The differential efficacy of compound 28 is particularly well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "be733041-363f-44b7-aaf7-9f516e83c707",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Several compounds displayed biased signaling profiles. Compounds 21 and 28 showed dramatically reduced \u03b2-arrestin recruitment at MT2 with bias factors of 15.5 and 33.9, respectively, indicating substantial G-protein bias. Compound 37 completely lacked Gi signaling at MT1 while maintaining \u03b2-arrestin activity, representing extreme bias toward arrestin signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C30-C31, C58-C60 present bias data calculated using established methods (C99, citing Kenakin et al., 2012). The bias factors are quantified and supported by dose-response curves in Figures 3 and 5. The observation of biased signaling is consistent with GPCR pharmacology literature (cited). However, the biological significance remains to be determined (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "6e2ff24f-9a57-4c2a-896f-3f8a938efe9c",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The hit compounds are predominantly fragment-like with molecular weights <250 Da and exhibit exceptionally high ligand efficiency (LE). Compound 21 showed the highest LE values (0.83 kcal/mol per non-hydrogen atom for MT2, 0.69 for MT1), far exceeding the standard threshold of ~0.3 for promising leads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45, C76 describe ligand efficiency metrics that are appropriately calculated and compared to established standards (citing Hopkins et al., 2004, 2014). The fragment-like nature of hits is consistent with the library design (C92-C93) and the small, enclosed MT binding pocket.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "29579217-61c9-4d31-9f1b-55e178938779",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Docking analysis revealed that nine of eleven hits form hydrogen bonds with N162/175^4.60, a residue critical for receptor activation. Seven hits interact with Q181/194^ECL2 similar to melatonin's alkylamide tail. Five hits occupy space forming hydrophobic interactions with Y281/294^7.38 and Y285/298^7.43. These interactions recapitulate key binding features observed in crystal structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49, C51, C33-C34 describe predicted binding modes consistent with crystal structure interactions (C25-C26). The importance of N162/175^4.60 is supported by prior mutagenesis studies (C47, citing Stauch et al., 2019). However, these are computational predictions that would benefit from experimental validation through mutagenesis or crystallography.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "f35fca9c-04e8-462c-83fb-7f2104a6667e",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Six hits showed at least 30-fold MT2 selectivity. Compound 47 displayed 187-fold selectivity (EC50=10 nM at MT2, 2.34 \u00b5M at MT1), compound 44 showed 267-fold selectivity (EC50=263 nM at MT2), and compound 45 had 17-fold selectivity (EC50=427 nM at MT2). Structure-activity analysis suggests that either the R2 or R3 chemical feature may be sufficient for maintaining MT2 potency and selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 present selectivity data with clear quantification. The SAR inference (C55) is reasonable based on the structural analysis of compounds 44, 45, and 47, though it represents a limited dataset. Additional analogs would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "4104e479-22bd-4096-aa5a-046c31d41bb7",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Compound 28 differs from melatonin by replacement of the amide with a urea, rendering it a partial agonist at MT2 (Emax=69.4%) while maintaining full agonism at MT1 (Emax=95.3%). Docking suggests the urea forms additional hydrogen bonds with Q194^ECL2 and N268^6.52 in MT2, while in MT1 it interacts with Y281^7.38 instead of Q181^ECL2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C64 present an interesting structure-activity relationship with differential efficacy between receptors. The experimental data (C62) are clear, but the mechanistic explanation based on docking (C63-C64) is speculative. The proposed hydrogen bonding patterns could explain the differential efficacy, but require experimental validation through mutagenesis studies. The mutational data in Figure 6\u2014figure supplement 1 provide some support but are limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "13e83bf7-8781-4168-a74a-1c30836a901c",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Off-target profiling of lead compounds 21, 28, and 37 against 47 common drug targets showed high selectivity. Compound 21 and 37 showed no substantial binding at 10 \u00b5M. Compound 28 displayed binding to three 5-HT receptors (5-HT1A: Ki=851 nM; 5-HT1D: Ki=1525 nM; 5-HT7A: Ki=286 nM) but was a weak partial agonist at 5-HT7A (EC50=1819 nM) compared to its picomolar potency at MT receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 present comprehensive off-target profiling data. The selectivity of compounds 21 and 37 is well-demonstrated. For compound 28, the off-target activity at 5-HT receptors is quantified with both binding and functional data, showing >40,000-fold selectivity for MT receptors over 5-HT7A in functional assays. This represents appropriate pharmacological characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "6c57c656-3c82-4829-98f8-2c603045caf3",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "This study validates that agonist-bound orthosteric pockets in thermostabilized MT receptor crystal structures are suitable for structure-based discovery of selective agonists. The prevalence of agonists in the hit set demonstrates the importance of using activated, agonist-bound conformations for agonist screening, despite the receptors being functionally inactive due to thermostabilizing mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C85-C86 present a key methodological conclusion supported by the high hit rate (18%), potency of hits (sub-nanomolar), and prevalence of agonists over antagonists. This is particularly notable given that most GPCR VLS campaigns yield antagonists even with agonist-bound structures (C72-C73). The success validates the approach despite thermostabilizing mutations (C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "938aeabf-cb30-4e10-a9e6-1278285db625",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ligand-guided receptor optimization (LiBERO) substantially improved VLS performance, with optimized models showing AUC values of 87 (MT1) and 82 (MT2) compared to 69 and 70 for crystal structures. This corroborates the important role of receptor optimization in structure-based VLS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C87 present clear benchmarking data showing improvement from receptor optimization. The AUC improvements are substantial (18 and 12 points) and consistent with prior successful VLS campaigns (citing Lane et al., 2013; Zheng et al., 2017). The methodology is well-established and appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "eaf4ff3e-6ac5-4aa0-be27-715cdba2474b",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The VLS campaign achieved one of the highest hit rates and potencies reported for class A GPCRs. Success factors include: (1) high-quality crystal structures with ligand-guided optimization, (2) the small, exhaustively searchable chemical space of fragment-like libraries, and (3) intrinsic preference of MT receptors for agonists over antagonists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C74, C77-C79 provide a reasonable analysis of success factors, supported by citations to prior work and comparison to other VLS campaigns. The fragment library hypothesis (C77) is logical given the small MT pocket (C76). The agonist preference (C78-C79) is supported by literature (citing Jockers et al., 2016). However, these represent post-hoc rationalizations rather than prospectively tested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "e4783b87-7181-4415-a8e0-dd78232cada9",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "None of the hits showed substantial MT1 selectivity, likely due to the lack of bulky R1 substituents required for MT1-selective bitopic ligands. Future design of MT1-selective ligands would require exploring larger compounds (MW >500) not included in the current fragment-like library.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 accurately describe a limitation of the study and provide a reasonable explanation based on prior structural work (C83, citing Stauch et al., 2019). The suggestion for future work (C84) is logical given the library constraints (C92-C93). This represents appropriate acknowledgment of study limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establish that MT1 and MT2 receptors are involved in circadian rhythm regulation and are therapeutic targets for multiple disorders. The receptors share 7-TM topology but are differentially expressed with distinct functions. Recent XFEL crystal structures provide atomic-level details, though thermostabilizing mutations rendered them functionally inactive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C11-C27 present well-established background information supported by appropriate citations to prior literature. These claims provide context for the study but do not represent novel findings. The information is accurately presented and properly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "a3a3bdbb-0f86-4450-a202-e245d6097ca1",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Melatonin exhibits unusually high picomolar potency at MT receptors (~4 pM at MT1 and 50 pM at MT2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 presents experimental data from Table 1 showing melatonin's exceptional potency. The values are consistent with the literature and provide important context for evaluating the hit compounds. The measurement appears reliable based on the dose-response curves shown.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "0ff747ae-fdcb-451a-9688-0df57e3e79c5",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The identified hits provide valuable starting points for developing tool compounds and potential therapeutic leads for treating insomnia, pain, sleep/mood disorders, type 2 diabetes, and cancer through selective modulation of MT receptor subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C89 represent forward-looking statements about potential applications. While the chemical diversity, selectivity, and potency of hits (C88) are well-demonstrated, the therapeutic utility (C89) is speculative. The compounds would require extensive additional development including in vivo studies, pharmacokinetics, and safety assessment before therapeutic potential can be established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    },
+    {
+      "id": "e632fed7-4888-412c-8b8f-e4de0a90febb",
+      "content_id": "58c5edf0-13c4-41ed-912f-766e3297e830",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "MT2-selective partial agonists may have desirable profiles for eliciting antinociceptive effects and developing novel analgesics with reduced side effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C81 is speculative, based on a citation to prior literature (L\u00f3pez-Canul et al., 2015) rather than data from this study. While compounds 37 and 62 are MT2-selective partial agonists (C80), their antinociceptive potential has not been tested. This represents a reasonable hypothesis for future work but is not supported by current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:09.780855Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e6129632-9a5d-4489-8e6b-028f186c509b",
+      "result_id": "b3c6dd4d-16e4-4b6a-84cd-3a3474448e60"
+    },
+    {
+      "claim_id": "69c77038-87a1-49b9-93e2-5585fc2616b4",
+      "result_id": "b3c6dd4d-16e4-4b6a-84cd-3a3474448e60"
+    },
+    {
+      "claim_id": "c7044090-e56c-4058-86df-0452e445aca1",
+      "result_id": "b3c6dd4d-16e4-4b6a-84cd-3a3474448e60"
+    },
+    {
+      "claim_id": "82f69612-a1b3-4b61-a1c0-e80f4813bee9",
+      "result_id": "b3c6dd4d-16e4-4b6a-84cd-3a3474448e60"
+    },
+    {
+      "claim_id": "661f3667-80c6-46c2-abcb-6d27a4376a3a",
+      "result_id": "b3c6dd4d-16e4-4b6a-84cd-3a3474448e60"
+    },
+    {
+      "claim_id": "eb24893e-c9ea-4f10-88e7-d9fe02a4b934",
+      "result_id": "b3c6dd4d-16e4-4b6a-84cd-3a3474448e60"
+    },
+    {
+      "claim_id": "fb8bfe85-5bef-4e85-8698-3fcec766cb5c",
+      "result_id": "b3c6dd4d-16e4-4b6a-84cd-3a3474448e60"
+    },
+    {
+      "claim_id": "efb29f48-3c41-4b6f-9a1a-0ee368c3c8fd",
+      "result_id": "b3c6dd4d-16e4-4b6a-84cd-3a3474448e60"
+    },
+    {
+      "claim_id": "338a86f7-8125-45c9-b73c-31ce00391983",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "d389f42e-3303-42c4-b030-a8a7cf43f5b0",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "1e49271b-efb1-4c4d-a352-589364ff829a",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "a2fe4b34-20b1-4e0e-b17d-12a5e3a523de",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "bb0c740f-ef9b-4dbc-9e44-85bed0771c3a",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "354e3bd2-b2c0-4e40-bf01-a4a100d494c8",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "a8fc4144-0753-441f-8d66-28519fe61953",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "3b5d7dfd-6772-4b1e-9f61-659f53f93eeb",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "a19678ba-6254-45a5-a7ec-ae576c0147a4",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "d2e88ae7-eae7-475e-9177-f94dfb0ad1d4",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "66ad146f-a03e-4475-b209-9ea7f193658c",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "de721038-44f6-42b8-adb3-8175e137c649",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "72e33f31-8b73-4db5-9676-bf6890b79928",
+      "result_id": "a21dc9fa-b508-4834-9af7-7847280d9197"
+    },
+    {
+      "claim_id": "d3a5f6f1-0b2d-44ad-9bed-9a1d0dd72b89",
+      "result_id": "c5c55e64-748a-45c3-86b2-0959ee639e5a"
+    },
+    {
+      "claim_id": "d3028381-fc4f-44bd-9b68-69b2757f8986",
+      "result_id": "c5c55e64-748a-45c3-86b2-0959ee639e5a"
+    },
+    {
+      "claim_id": "0e8cece6-2341-4b78-a67c-2fb53701e96a",
+      "result_id": "c5c55e64-748a-45c3-86b2-0959ee639e5a"
+    },
+    {
+      "claim_id": "ba3f7fcb-ad2b-4da9-bae4-26bfb2502faf",
+      "result_id": "c5c55e64-748a-45c3-86b2-0959ee639e5a"
+    },
+    {
+      "claim_id": "2c89989a-bc60-4850-979d-b488cb9e1025",
+      "result_id": "be733041-363f-44b7-aaf7-9f516e83c707"
+    },
+    {
+      "claim_id": "a9799ec9-1145-4bb0-8f02-194bcda16571",
+      "result_id": "be733041-363f-44b7-aaf7-9f516e83c707"
+    },
+    {
+      "claim_id": "3220eb31-524c-4ced-a4a9-740e2b391292",
+      "result_id": "be733041-363f-44b7-aaf7-9f516e83c707"
+    },
+    {
+      "claim_id": "a566002e-352f-4ea5-a912-498cb8be9bb1",
+      "result_id": "be733041-363f-44b7-aaf7-9f516e83c707"
+    },
+    {
+      "claim_id": "60c51728-86ed-4aa9-bb7c-506488c02857",
+      "result_id": "be733041-363f-44b7-aaf7-9f516e83c707"
+    },
+    {
+      "claim_id": "1617ae1e-4e67-4c02-b348-44f65124ca31",
+      "result_id": "be733041-363f-44b7-aaf7-9f516e83c707"
+    },
+    {
+      "claim_id": "5ddfc184-371e-4bbc-b0bb-0f2b21251059",
+      "result_id": "be733041-363f-44b7-aaf7-9f516e83c707"
+    },
+    {
+      "claim_id": "e470cf22-51f9-4990-a443-35f4acac1da4",
+      "result_id": "be733041-363f-44b7-aaf7-9f516e83c707"
+    },
+    {
+      "claim_id": "f6e85bb5-b18b-43b6-aa47-3232bad71043",
+      "result_id": "6e2ff24f-9a57-4c2a-896f-3f8a938efe9c"
+    },
+    {
+      "claim_id": "7722769a-16d6-4e23-a860-80417b7b2273",
+      "result_id": "6e2ff24f-9a57-4c2a-896f-3f8a938efe9c"
+    },
+    {
+      "claim_id": "8d26b1e0-050a-4357-9b1a-91fbbd84066b",
+      "result_id": "6e2ff24f-9a57-4c2a-896f-3f8a938efe9c"
+    },
+    {
+      "claim_id": "e6195630-8f34-427d-8610-bc35ea9f5cf6",
+      "result_id": "29579217-61c9-4d31-9f1b-55e178938779"
+    },
+    {
+      "claim_id": "0dfdad30-1a99-452b-a61b-43655c910326",
+      "result_id": "29579217-61c9-4d31-9f1b-55e178938779"
+    },
+    {
+      "claim_id": "ef4da5db-1213-4061-8003-17e51918b1ac",
+      "result_id": "29579217-61c9-4d31-9f1b-55e178938779"
+    },
+    {
+      "claim_id": "da1db4b7-0280-47b3-b927-fa1042866e74",
+      "result_id": "29579217-61c9-4d31-9f1b-55e178938779"
+    },
+    {
+      "claim_id": "2a15550b-9142-4025-bd20-88e8b54c2f95",
+      "result_id": "29579217-61c9-4d31-9f1b-55e178938779"
+    },
+    {
+      "claim_id": "32b9b7c1-933e-40dd-afe5-e8b4173777ee",
+      "result_id": "29579217-61c9-4d31-9f1b-55e178938779"
+    },
+    {
+      "claim_id": "d034a827-9d49-4756-aa65-02edc769b510",
+      "result_id": "29579217-61c9-4d31-9f1b-55e178938779"
+    },
+    {
+      "claim_id": "b553fe32-0f44-4123-b035-3ef1b9c13232",
+      "result_id": "f35fca9c-04e8-462c-83fb-7f2104a6667e"
+    },
+    {
+      "claim_id": "b2405d4e-70c7-45c6-a3c5-697fe84f6b6e",
+      "result_id": "f35fca9c-04e8-462c-83fb-7f2104a6667e"
+    },
+    {
+      "claim_id": "5fb572d2-f107-4295-a098-6e243b7ac7e8",
+      "result_id": "f35fca9c-04e8-462c-83fb-7f2104a6667e"
+    },
+    {
+      "claim_id": "38b6ef7e-d067-4bfd-9dc3-4dfddf96dffa",
+      "result_id": "f35fca9c-04e8-462c-83fb-7f2104a6667e"
+    },
+    {
+      "claim_id": "a56fe741-d242-48d4-9a6d-8edff2adc0c1",
+      "result_id": "f35fca9c-04e8-462c-83fb-7f2104a6667e"
+    },
+    {
+      "claim_id": "41a809cb-f2fc-4075-90ba-7487cb14144d",
+      "result_id": "4104e479-22bd-4096-aa5a-046c31d41bb7"
+    },
+    {
+      "claim_id": "0e8cece6-2341-4b78-a67c-2fb53701e96a",
+      "result_id": "4104e479-22bd-4096-aa5a-046c31d41bb7"
+    },
+    {
+      "claim_id": "d0f803ce-e634-4eff-a095-d54e0625bdda",
+      "result_id": "4104e479-22bd-4096-aa5a-046c31d41bb7"
+    },
+    {
+      "claim_id": "02d3a74d-ccc8-4771-ad39-12bc23577dfe",
+      "result_id": "4104e479-22bd-4096-aa5a-046c31d41bb7"
+    },
+    {
+      "claim_id": "73644702-82b0-4bf6-b67b-97f915c7ffcd",
+      "result_id": "13e83bf7-8781-4168-a74a-1c30836a901c"
+    },
+    {
+      "claim_id": "de5d4fb4-9708-46a5-87aa-689e65d6ab8b",
+      "result_id": "13e83bf7-8781-4168-a74a-1c30836a901c"
+    },
+    {
+      "claim_id": "55fc85ec-3ef2-4839-88fc-b3d62a69a255",
+      "result_id": "13e83bf7-8781-4168-a74a-1c30836a901c"
+    },
+    {
+      "claim_id": "ae87821e-447c-49fe-8bed-acb559a2f90f",
+      "result_id": "13e83bf7-8781-4168-a74a-1c30836a901c"
+    },
+    {
+      "claim_id": "045568d0-7f83-4931-a2b9-81c9c894dc5f",
+      "result_id": "13e83bf7-8781-4168-a74a-1c30836a901c"
+    },
+    {
+      "claim_id": "ee05b73e-b30d-4e35-b21b-80b7da91b00b",
+      "result_id": "13e83bf7-8781-4168-a74a-1c30836a901c"
+    },
+    {
+      "claim_id": "3b64271c-8f56-492a-8b5d-4928ae340cee",
+      "result_id": "6c57c656-3c82-4829-98f8-2c603045caf3"
+    },
+    {
+      "claim_id": "70cf600c-77e9-4429-8a69-f0cfed52183b",
+      "result_id": "6c57c656-3c82-4829-98f8-2c603045caf3"
+    },
+    {
+      "claim_id": "98647caa-28a9-4d27-8282-e112d4498753",
+      "result_id": "6c57c656-3c82-4829-98f8-2c603045caf3"
+    },
+    {
+      "claim_id": "e0852526-071b-4683-a066-5498d5673c86",
+      "result_id": "938aeabf-cb30-4e10-a9e6-1278285db625"
+    },
+    {
+      "claim_id": "cd82cdd7-0b09-4787-b19a-cd2b46398023",
+      "result_id": "938aeabf-cb30-4e10-a9e6-1278285db625"
+    },
+    {
+      "claim_id": "f89c40f4-b407-4bf8-9d05-432c3591a09f",
+      "result_id": "eaf4ff3e-6ac5-4aa0-be27-715cdba2474b"
+    },
+    {
+      "claim_id": "b9e8228f-06fe-4a92-9465-9c463a8d4770",
+      "result_id": "eaf4ff3e-6ac5-4aa0-be27-715cdba2474b"
+    },
+    {
+      "claim_id": "f10e81b8-83b3-4929-8251-9bb639b7ec07",
+      "result_id": "eaf4ff3e-6ac5-4aa0-be27-715cdba2474b"
+    },
+    {
+      "claim_id": "45b7996b-ee46-4f86-9209-c9974271e461",
+      "result_id": "eaf4ff3e-6ac5-4aa0-be27-715cdba2474b"
+    },
+    {
+      "claim_id": "25b84ab4-e32d-47c0-bfb8-d943b8dcf21c",
+      "result_id": "eaf4ff3e-6ac5-4aa0-be27-715cdba2474b"
+    },
+    {
+      "claim_id": "e1f137bc-7fd7-4476-9374-bd6bf1dd96cc",
+      "result_id": "e4783b87-7181-4415-a8e0-dd78232cada9"
+    },
+    {
+      "claim_id": "379d6aed-e507-428d-a509-6e70a7f9d98e",
+      "result_id": "e4783b87-7181-4415-a8e0-dd78232cada9"
+    },
+    {
+      "claim_id": "28ba5215-9d83-4f3b-852b-40961143f729",
+      "result_id": "e4783b87-7181-4415-a8e0-dd78232cada9"
+    },
+    {
+      "claim_id": "51e125c5-1f7e-47b0-ad9f-9046b2522053",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "4b609dc2-483f-4ee0-9bf5-f653f448f47a",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "7cdb9883-30b8-4d8a-abf1-9a517fa252a1",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "c8cac810-0f64-47f1-ac67-df5ad1d866b3",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "f003e781-0ada-445a-8cbf-a3d5e22c8b08",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "d88a9b29-4459-4718-946b-624314374bd6",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "62aef346-69f1-45a9-acd9-83f224fa8aff",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "0e3e543a-641d-454b-83c7-4db0532d379c",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "ede6987e-b713-4a20-909d-cfe17b18ee02",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "7bd0dfad-f475-454a-8579-23d4569479f6",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "3a2de696-409a-4bc5-8a59-2a90f972f288",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "ed6aba6c-8284-4bd6-9c14-cda3dab0b5ad",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "181c13a3-43a4-4961-9423-8bc2d7b8bae4",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "da5803f5-21b1-482a-bab0-157c2c57d20e",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "e38ace8b-4c58-4d18-a71f-3e5297ccc3f9",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "3d710b1d-50e1-457d-9def-e741377a5a9f",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "e53d12ba-11fd-44d6-a3eb-1e55fbbf15fd",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "97a8e233-8bdf-4b29-b2e9-17ef060982b7",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "276768ba-6e58-4f84-ae2b-cdb20b9afb71",
+      "result_id": "ac9a6da0-5862-4388-bdcc-6bf9b17a6ce6"
+    },
+    {
+      "claim_id": "826a3858-54ff-4b83-bd83-d7883e4460ac",
+      "result_id": "a3a3bdbb-0f86-4450-a202-e245d6097ca1"
+    },
+    {
+      "claim_id": "b02150a9-bdc2-4d18-a2cd-37d891aa1fa6",
+      "result_id": "0ff747ae-fdcb-451a-9688-0df57e3e79c5"
+    },
+    {
+      "claim_id": "4f96acf6-e34e-4d25-8130-ab4c4ea76a6a",
+      "result_id": "0ff747ae-fdcb-451a-9688-0df57e3e79c5"
+    },
+    {
+      "claim_id": "21f68f38-1447-4e1a-84ce-18f9d320f8bd",
+      "result_id": "e632fed7-4888-412c-8b8f-e4de0a90febb"
+    }
+  ],
+  "comparisons": []
+}

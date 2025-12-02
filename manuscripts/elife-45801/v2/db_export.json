@@ -1,0 +1,1758 @@
+{
+  "submission": {
+    "id": "1bc52036-ab39-4708-8ab7-10b1db08bebd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:46:16.623212Z",
+    "updated_at": "2025-12-02T12:46:16.623212Z"
+  },
+  "content": [
+    {
+      "id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "submission_id": "1bc52036-ab39-4708-8ab7-10b1db08bebd",
+      "content_type": "manuscript",
+      "content_text": "# Near-infrared dual bioluminescence imaging in mouse models of cancer using infraluciferin\n\n## Authors\n\n- Cassandra L Stowe<sup>1</sup>\n- Thomas A Burley<sup>3</sup>\n- Helen Allan<sup>4</sup>\n- Maria Vinci<sup>3</sup>\n- Gabriela Kramer-Marek<sup>3</sup>\n- Daniela M Ciobota<sup>3</sup>\n- Gary N Parkinson<sup>5</sup>\n- Tara L Southworth<sup>6</sup>\n- Giulia Agliardi<sup>1</sup>\n- Alastair Hotblack<sup>1</sup>\n- Mark F Lythgoe<sup>2</sup>\n- Bruce R Branchini<sup>6</sup>\n- Tammy L Kalber<sup>2</sup>\n- James C Anderson<sup>4</sup> ([ORCID: 0000-0001-8120-4125](https://orcid.org/0000-0001-8120-4125)) \u2020\n- Martin A Pule<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Cancer Institute University College London London United Kingdom\n2. Centre for Advanced Biomedical Imaging University College London London United Kingdom\n3. The Institute of Cancer Research London United Kingdom\n4. Department of Chemistry University College London London United Kingdom\n5. School of Pharmacy University College London London United Kingdom\n6. Department of Chemistry Connecticut College New London United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBioluminescence imaging (BLI) is ubiquitous in scientific research for the sensitive tracking of biological processes in small animal models. However, due to the attenuation of visible light by tissue, and the limited set of near-infrared bioluminescent enzymes, BLI is largely restricted to monitoring single processes in vivo. Here we show, that by combining stabilised colour mutants of firefly luciferase (FLuc) with the luciferin (LH2) analogue infraluciferin (iLH2), near-infrared dual BLI can be achieved in vivo. The X-ray crystal structure of FLuc with a high-energy intermediate analogue, 5\u2019-O-[N-(dehydroinfraluciferyl)sulfamoyl] adenosine (iDLSA) provides insight into the FLuc-iLH2 reaction leading to near-infrared light emission. The spectral characterisation and unmixing validation studies reported here established that iLH2 is superior to LH2 for the spectral unmixing of bioluminescent signals in vivo; which led to this novel near-infrared dual BLI system being applied to monitor both tumour burden and CAR T cell therapy within a systemically induced mouse tumour model.\n\n## Introduction\n\nBioluminescence imaging (BLI) is used extensively for the sensitive, longitudinal and high-throughput monitoring of biological processes in vivo (Xu et al., 2016; Paley and Prescher, 2014; Mezzanotte et al., 2017; Yao et al., 2018; Yeh and Ai, 2019). Bioluminescence light emission is produced through the catalysis of a small molecule substrate, most commonly D-luciferin (D-LH2), by a luciferase enzyme. The mutagenesis of bioluminescent enzymes has improved the sensitivity and accuracy of BLI in small animals (Branchini et al., 2010), (Iwano et al., 2018). However, despite its widespread use in scientific research, BLI is still largely restricted to tracking a single parameter in vivo. The ability to discretely monitor two biological parameters (dual-BLI) simultaneously within a single animal is highly desirable (Xu et al., 2016) with potential uses ranging from the monitoring of tumour burden alongside cellular therapy, to the visualisation of dynamic biological processes such as protein-protein interactions (Prescher and Contag, 2010).\n\nPrevious approaches to dual-BLI have been disappointing. The use of multiple bioluminescent proteins which catalyse different substrates is the most frequently used method but suffers from a number of limitations. Sequential substrate administration is normally required, in addition this method commonly employs a combination of a coelenterazine and a D-LH2 utilising luciferase (with the blue emission from the former being heavily absorbed compared to the yellow-green emission from the latter) (Maguire et al., 2013), (Stacer et al., 2013). Differences in biodistribution and reaction kinetics of two substrates can make image co-registration and interpretation difficult. The development of orthogonal luciferase-luciferin pairs has solved some of these limitations but this approach still requires multiple substrate administrations (Rathbun et al., 2017).\n\nAn ideal dual-BLI approach would use two spectrally distinct bioluminescent proteins utilising a single substrate followed by spectral unmixing of the signal. However, this approach is not currently feasible using LH2. Although luciferases can be mutated to alter the colour of their emission, a limit appears to have been reached for mutational colour modulation of firefly and related luciferases. The most red-shifted of these enzymes have maximal peak emissions between 610 and 620 nm (Branchini et al., 2010). This is insufficient for dual BLI in vivo. Due to the differential attenuation of light by biological tissue spectral unmixing of a red-shifted luciferase paired with a standard or green-shifted enzyme is challenging, especially in deeper tissue models (Mezzanotte et al., 2011). Shifting the emission of both enzymes into the near infrared must be achieved to allow adequate unmixing. To further red-shift peak emission we and others have turned to chemical modification of the D-luciferin (LH2) substrate (Adams and Miller, 2014). We recently described the LH2 analogue infraluciferin (iLH2) which has a luciferase dependent red-shifted peak emission of up to 706 nm (Jathoul et al., 2014) (Figure 1a). We hypothesised that combining colour modulation of bioluminescence through mutagenesis of the FLuc protein along with red-shifting bioluminescence by chemical modification of LH2 would allow dual-BLI, an approach that has not been described previously.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig1-v2.jpg)\n\n**Figure 1.:** (a) Chemical structures of native D-Luciferin (LH2) and the LH2 analogue infraluciferin (iLH2).\u00a0(b)\u00a0The crystal structure of Firefly luciferase (FLuc) in complex with the infraluciferyl-adenylate analogue 5\u2019-O-[(N-dehydroinfraluciferyl)-sulfamoyl] adenosine (iDLSA) resolved to a 3.2 \u00c5 resolution (PDB ID: 6HPS). (c)\u00a0The structure of FLuc in complex with the iLH2 analogue iDLSA aligned to the reported structure of FLuc in complex with the LH2 analogue 5\u2019-O-[(N-dehydroluciferyl)-sulfamoyl] adenosine (DLSA) (PDB ID: 4G36) (Sundlov et al., 2012) based on the FLuc N-terminal domain (residues 1\u2013436). The structure of FLuc in complex with iLH2 is shown in red, and the structure of FLuc in complex with LH2 is shown in orange. (d)\u00a0The structure of FLuc in complex with luciferin analogue DLSA (PDB ID: 4G36) (orange) and the infra-luciferin analogue iDLSA (red). Those residues within 4 \u00c5 of the substrate in each structure are highlighted in blue. (e) The table lists all residues within 4 \u00c5 of the both substrates, with those in orange or red only being found within 4 \u00c5 of DLSA and iDLSA respectively. (f)\u00a0Highlights the same seven active site residues for both the aligned structures, with FLuc iLH2 residues in blue and FLuc LH2 residues in green. All analysis performed in PyMOL software (Schrodinger).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig1-figsupp1-v2.jpg)\n\nIn this work, we explored the possible structural interactions in the enzyme that may account for the near infrared emission of iLH2 and its application to dual-BLI in vivo. First, the X-ray crystal structure of FLuc in complex with a high-energy intermediate analogue, 5\u2019-O-[(N-dehydroinfraluciferyl)-sulfamoyl] adenosine (iDLSA) was determined to provide insight into the FLuc-iLH2 light-emitting reaction. Next, we selected a pair of stabilised colour-shifted FLuc mutants, which emit with a 20 nm separation in peak emission wavelength with iLH2 in the near infrared. We demonstrated the ability to spectrally unmix these two biological signals in vivo at depth using iLH2. Finally, we show a proof-of-concept of utility using this novel dual imaging technique to longitudinally monitor both tumour burden and chimeric antigen receptor (CAR) T cell therapy within a single animal model.\n\n## Results\n\n### Crystal structure of firefly luciferase in complex with a iLH2 analogue\n\nTo help understand the red shift in bioluminescence emission from FLuc that is observed in its reaction with iLH2, the X-ray crystal structure of FLuc in complex with iDLSA was resolved and is shown in Figure 1b (PDB ID: 6HPS). Data collection and refinement statistics (molecular replacement); and data collection, phasing and refinement statistics for mad (semet) structures can be found in Figure 1\u2014figure supplement 1. iDLSA captures FLuc in the adenylation step of the light emitting reaction (1H and 13C data spectra synthetic chemical compounds can be found in). The conformation of the iLH2 heterocyclic rings with respect to the alkene, as drawn in Figure 1a, is confirmed to be as predicted by computational studies and is the most likely conformation of the light emitting form (Berraud-Pache and Navizet, 2016). This newly crystallised FLuc structure was aligned with the reported structure of FLuc with 5\u2019-O-[(N-dehydroluciferyl)-sulfamoyl] adenosine (DLSA) (PDB ID: 4G36) (Sundlov et al., 2012). The structures show good alignment to each other, however there is evidence of a more open active site supported by a reduction in root-mean-squared (RMSD) score when aligned based on just the N-terminal domain of FLuc rather than the entire structure (RMSD\u00a0=\u00a00.688 and 0.783 respectively) (Figure 1c).\n\nAll FLuc residues in close proximity (4 \u00c5) to DLSA were also found to be within the same distance to iDLSA, with the exception of Arg437,\u00a0>4 \u00c5 away from iDLSA (Figure 1d and e). We noted that despite differences in the conformation of iDLSA compared to DLSA in both 4G36 and L. cruciata 2D1S (Nakatsu et al., 2006) structures, the positions of the phenolic groups are quite similar (~0.5\u00a0\u00c5). The altered position of the benzothiazole ring and the greater size of iDLSA may be the cause of a series of small active site changes that affect residues Glu311, Arg337, Asn338, Gly339, and Thr343 resulting in a total of six differences in H-bonding interactions. When specific residues implicated in the light emitting reaction (Sundlov et al., 2012) were measured between the two structures differences ranged from 0.7 to 1.6 \u00c5; with the biggest divergence being Lys529 (found in the C-terminal cap) which had a 2.4 \u00c5 difference in the nitrogen residue found in the side chain of the amino acid (Figure 1f). The resulting increase in active site polarity due to the rotation of the C-terminal cap, if maintained during the light emitting conformation, could contribute to the red-shift in light emission (Nakatsu et al., 2006), in addition to the increased \u03c0-conjugation through the chemical structure of the emitter. This X-ray structure will help the future design of more efficient FLuc-iLH2 pairs.\n\n### Spectral unmixing of firefly luciferase mutants in vitro\n\nA range of colour-shifted, thermo- and pH stable FLuc mutants were spectrally characterised in vitro with a comparative selection of LH2 analogues proven to red-shift bioluminescence emission (CycLuc1\u2013 Evans et al., 2014; Aka-Lumine-HCL \u2013\u00a0Kuchimaru et al., 2016; and iLH2\u2013\u00a0Jathoul et al., 2014). Two new luciferins NH2-NpLH2 and OH- NpLH2 have also been shown to have near infrared emissions (Hall et al., 2018) but these were reported too late to include in this study. FLuc mutants were engineered to combine mutations reported to provide superior stability (Jathoul, 2012) and colour-shifting capability (Branchini et al., 2005) (stabilising and colour shifting FLuc mutations are detailed in Materials and methods). The Raji B lymphoma cell line engineered to express a FLuc mutant were spectrally imaged after addition of each substrate. These cell lines were subsequently used for all in vitro and in vivo testing. Both CycLuc1 and Aka-Lumine-HCL showed a consistent red-shift in peak bioluminescence emission wavelength to\u00a0~600 nm and\u00a0~660 nm respectively for all FLuc mutants, making these substrates unsuitable for dual colour BLI (Figure 2\u2014figure supplement 1). The data confirmed that with LH2 both FLuc_natural and FLuc_green have a peak emission of\u00a0~560 nm, whilst FLuc_red has a peak emission of\u00a0~620 nm (Figure 2\u2014figure supplement 1) (Jathoul, 2012), (Branchini et al., 2005). When tested with iLH2 all FLuc mutants were shifted\u00a0>100\u00a0nm into the near infrared but maintained their relative spectral shift [FLuc_green\u00a0~\u00a0680 nm, FLuc_natural\u00a0~\u00a0700 nm and FLuc_red\u00a0~\u00a0720 nm (Figure 2\u2014figure supplement 1)]. From this, we progressed further with two FLuc mutants, FLuc_green and FLuc_red to explore their utility for dual-BLI.\n\nThe ability to spectrally unmix FLuc_green and FLuc_red (Figure 2a) in vitro was investigated by mixing the two FLuc_mutants expressed in the Raji B lymphoma cell line at various ratios followed by spectral imaging and unmixing with both LH2 and iLH2 (Figure 2b). As would be expected from accurate spectral unmixing, the top wells were classified as containing mostly FLuc_green signal, which gradually decreased down the plate in line with the decreasing proportions of FLuc_green expressing cells, with the bottom wells being largely classified as FLuc_red signal for both LH2 and iLH2. The percentage unmixed signal of FLuc_green and FLuc_red was plotted for each ratio of FLuc expressing cells (Figure 2c). Correlation analysis was performed on this data comparing input cellular proportions with unmixed signal, giving R2 values of 0.9983 and 0.9972 for LH2 and iLH2 respectively. Even though all 18 bandpass filters equipped on the IVIS Spectrum were utilised for spectral unmixing in this in vitro testing, we appreciate that not all potential users of this novel dual bioluminescence methodology will have access to machines with such a wide selection of bandpass filters. Therefore, further analysis of our data showed that spectral unmixing could be achieved with high accuracy just using a subset of filters. For LH2, the use of 3 bandpass filters (500\u00a0nm, 660 nm, 820\u00a0nm) gave an R2 value of 0.9958; For iLH2, the use of 3 bandpass filters (600 nm, 700 nm, 800 nm) gave an R2 value of 0.9937. The highest accuracy of spectral unmixing we could achieve using just two filters were R2 values of 0.9776 and 0.9775 for LH2 (500 nm and 720 nm) and iLH2 (600 nm and 720 nm), respectively. Additionally, an experiment was carried out where FLuc_green and FLuc_red have been expressed at different levels in the same cell. Spectral bioluminescence imaging and unmixing has subsequently been performed to successfully reflect these differing expression levels with both LH2 and iLH2 (Figure 2\u2014figure supplement 2). This spectral imaging data show that both LH2 and iLH2 can be used for dual bioluminescence reporting in vitro.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig2-v2.jpg)\n\n**Figure 2.:** (a) Bioluminescence spectral unmixing of cells expressing colour-shifted Firefly luciferase (FLuc) mutants, for both in vitro assays and in vivo animal models, requires spectral bioluminescence imaging through a series of bandpass filters.\u00a0Bioluminescence spectral imaging acquires spectral data, which can then be deconvoluted into its separate components. As depicted, spectral unmixing in vivo is significantly more challenging due to attenuation of bioluminescent signal that does not fall within the bio-optical window. (b) FLuc colour mutants FLuc_green and FLuc_red expressed in the B lymphoma Raji cell line were mixed in various proportions (0\u2013100% of the total population). After addition of either D-luciferin (LH2) or infraluciferin (iLH2) plates were spectrally imaged using the IVIS Spectrum (Perkin Elmer).Unmixed green and unmixed red output images produced from library spectral unmixing using Living Image software (Perkin Elmer) for both substrates. (c) Percentage unmixed signal of FLuc_green and FLuc_red for each ratio of FLuc expressing cells tested when imaged with LH2 and iLH2. Signal adjusted to 100% populations. Mean and standard deviation plotted (n\u00a0=\u00a06 for both LH2 and iLH2).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) LH2, (b) iLH2, (c) CycLuc1 and d) Aka-Lumine-HCL) in vitro, alongside the chemical structure of CycLuc1 and Aka-Lumine-HCL below the corresponding spectra). Spectra normalised to peak emission for each FLuc mutant with each substrate. Each point on the x-axis gives the midpoint of the 20 nm band pass filter used in spectral imaging.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The mammalian B Lymphoma Raji cell line was transduced with FLuc_green and FLuc_red, which was then sorted by flow cytometry using co-expressed marker genes to get cell populations with differing expression levels of the two luciferases enzymes.\u00a0(a) The normalised median fluorescence intensity (MFI) of FLuc_green and FLuc_red for each cellular population (b) Differing combinations of low and high expression levels of FLuc_green and FLuc_red could be detemined using spectral bioluminescence imaging and spectral unmixing with both LH2 and iLH2.\n\n### Spectral characterisation of firefly luciferase mutants with LH2 and iLH2\u00a0in vivo\n\nTo investigate the use of FLuc_green and FLuc_red with LH2 and iLH2 for in vivo dual BLI three NOD scid gamma (NSG) tumour models, representing increasing tissue depth (subcutaneous, systemic and intracranial), were established with the Raji B lymphoma cell line expressing either FLuc_green or FLuc_red (as described for in vitro experiments). All tumour models were then spectrally imaged with both LH2 and iLH2 (Figure 3, Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2) to obtain the normalised spectra and average radiance of each FLuc mutant with both luciferins in all three in vivo models (Figure 4). The normalised bioluminescence spectra for every mouse in each model when imaged with LH2 is shown, with the total radiance for each mouse plotted to the right of the spectral plot (Figure 4a\u2013c). The data show that when imaged with LH2 both FLuc_green and FLuc_red had an average peak emission between 610\u2013630 nm; meaning the peak emission for FLuc_red is maintained as in vitro whereas the peak emission of FLuc_green is red shifted by\u00a0~60 nm in vivo. FLuc_green also exhibited a bimodal spectral distortion, with a minor peak at\u00a0~560 nm. In contrast to LH2, FLuc_green and FLuc_red had a\u00a0~\u00a020 nm separation of average peak emissions in all three animal models with iLH2 (FLuc_green\u00a0~\u00a0700 nm and FLuc_red\u00a0~720 nm) (Figure 4d\u2013f).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig3-v2.jpg)\n\n**Figure 3.:** A representative selection of filter images from mice engrafted with the Raji B lymphoma cell line expressing either Fluc_green or Fluc_red for each of the in vivo tumour models when imaged with iLH2\u00a0(a) subcutaneous (b) systemic and (c) intracranial (bandpass filters not shown are 600 nm, 640 nm, 680 nm, 720 nm, 760 nm, 800 nm).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig3-figsupp2-v2.jpg)\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig4-v2.jpg)\n\n**Figure 4.:** The normalised spectra, and a plot of average radiance, for each FLuc mutant when expressed in the Raji B lymphoma cell line engrafted in each tumour model when imaged with LH2 is shown, (a) subcutaneous (b) systemic and (c) intracranial, and when the same animals were imaged with iLH2 is shown, (d) subcutaneous (e) systemic and (f) intracranial.\u00a0Subcutaneous (n\u00a0=\u00a09), systemic (n\u00a0=\u00a010), intracranial (n\u00a0=\u00a07). T test used to establish statistical significance comparing average radiance values (systemic model when imaged with LH2p=0.0224).\n\nIn addition to the separation of peak emission wavelengths when imaged with iLH2\u00a0in vivo, the relative intensities of FLuc_green and FLuc_red were more comparable when imaged with iLH2 than with LH2; With LH2 FLuc_red had an average radiance that was 42 (subcutaneous), 4.12 (systemic) and 7.28 (intracranial) times brighter than FLuc_green (Figure 4a\u2013c). Whereas, when imaged with iLH2 the average radiance between FLuc_green and FLuc_red was 1.38 (subcutaneous), 1.2 (systemic) and 1.51 (intracranial) times different (Figure 4d\u2013f). No statistically significant difference in relative intensities between FLuc_green and FLuc_red was found in tumour models imaged with iLH2 (p=0.3414, 0.4594 and 0.6153 for the subcutaneous, systemic and intracranial tumour models respectively, T test). This comparability of relative intensities between FLuc_green and FLuc_red with iLH2 means that if used as genetic reporters for dual imaging, the dynamic range of radiance values for both enzymes will be more similar, therefore giving a more accurate comparison of the processes being monitored.\n\n### Spectral unmixing of firefly luciferase mutants in vivo\n\nTo validate the ability to spectrally unmix FLuc_green and FLuc_red in vivo with iLH2 a systemic Raji tumour model was established. Raji cell lines expressing the FLuc mutants were mixed in the following ratios: 90:10, 75:25 and 50:50 for FLuc_green: FLuc_red and vice versa. After spectral BLI with both substrates, animals were sacrificed and the bone marrow was extracted for flow cytometry analysis to confirm the proportions of engrafted Raji FLuc populations (representative examples of flow cytometry plots can be found in Figure 5\u2014figure supplement 1). Spectral unmixing was performed using Living Image (Perkin Elmer) by creating library spectra of FLuc_green and FLuc_red with both LH2 and iLH2, established from the pure expressing populations obtained during in vivo spectral characterisation (Figure 4). Output images with both LH2 (Figure 5a) and iLH2 (Figure 5b) were generated for FLuc_green and FLuc_red, as well as a composite image for each substrate.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig5-v2.jpg)\n\n**Figure 5.:** The Raji B lymphoma cell line expressing either FLuc_green or Fluc_red, were mixed in various proportions and engrafted in a systemic in vivo model.\u00a0Cell mixtures ranged from 90:10 to 10:90 Fluc_green to Fluc_red, and each imaging session included one mouse engrafted with each mixture. Animals were spectrally imaged with D-Luciferin (LH2) and infraluciferin (iLH2) using the IVIS spectrum (Perkin Elmer) in separate imaging sessions. (a)\u00a0An example of the unmixed Fluc_green, umixed Fluc_red and composite output images when imaged with LH2 and (b) iLH2. Percentage of unmixed Fluc_green and Fluc_red signal for each cell mixture when imaged with (c) LH2\u00a0(d) iLH2, and (e) extracted bone marrow samples when analysed by flow cytometry (n\u00a0=\u00a04 per dilution condition).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Representative flow cytometry plots showing gating of extracted bone marrow sample from (a) an FLuc mutant Raji tumour model and from (b) a control mouse.\u00a0(c)\u00a0also\u00a0representative flow cytometry plots from a mouse engrafted with each different mixture of mutant FLuc Raji cells (ratio given is Fluc_green: Fluc_red).\n\nThe percentage signal unmixed as FLuc_green and FLuc_red with both LH2 (Figure 5c) and iLH2 (Figure 5d) was determined and correlated to the percentage population of each FLuc_mutant within the Raji cell population taken from extracted bone marrow samples and analysed using flow cytometry (Figure 5e). A correlation of 0.99 was found with iLH2 (R2 value, SD\u00a0=\u00a00.01). LH2 had a correlation of 0.89 (R2 value, SD\u00a0=\u00a00.06), which was significantly different from the R2 values obtained by flow cytometry (p<0.0001, ONE-Way ANOVA with post hoc Tukey test). No significant difference was found between R2 values determined by flow cytometry and unmixed bioluminescence signal using iLH2. Additionally, significant differences were found between the percentage unmixed signal using LH2 and cellular proportions determined by flow cytometry, with p values of\u00a0<\u00a00.0001, 0.003, 0.0042 and 0.0056 for the 90%, 75%, 50% and 25% FLuc_green conditions respectively. No significant difference was found between percentage unmixed signal using iLH2 and cellular proportions determined by flow cytometry, except for the 90% FLuc_green condition (p=0.0257). Therefore, iLH2 is superior to LH2 for in vivo dual reporting applications.\n\n### Application of dual bioluminescence imaging using infraluciferin\n\nThe characterised and validated in vivo dual BLI system using FLuc mutants in combination with iLH2 was then applied to track tumour burden and CAR T cell therapy within the same animal model. A Raji B lymphoma tumour cell line expressing FLuc_green was used, and healthy human donor T cells were engineered to express CD19 CAR and FLuc_red linked via a 2A peptide. Tumour cells were first systemically engrafted, followed by administration of CAR T cells 8 days later. A control animal received tumour only. Spectral BLI using iLH2 was then performed at 3, 4 and 6 days post CAR T cell administration on the IVIS Spectrum.\n\nOutput images for the unmixed FLuc_green and FLuc_red signal, as well as the composite of the two unmixed images, for day six post CAR T cell administration were generated (Figure 6a). The radiance values from the unmixed FLuc_green and FLuc_red images for both tumour control and treatment (tumour + CAR T cells) at 3, 4 and 6 days post CAR T cell treatment were determined (Figure 6b). As would be expected, the tumour only control showed consistently high levels of FLuc_green signal which increased overtime compared to FLuc_red, which is likely due to the close proximity of Fluc_red photons emitted by the neighbouring treatment mouse. However, the CAR T cell treatment mice initially had a higher proportion of FLuc_green signal, which was then surpassed by FLuc_red by the final imaging. This represents the homing of CAR T cells expressing FLuc_red to the FLuc_green expressing Raji B lymphoma tumour, followed by the expansion of the CAR T cells and the reduction in the tumour growth in the treatment mice.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45801/elife-45801-fig6-v2.jpg)\n\n**Figure 6.:** Mice were engrafted with the Raji B lymphoma tumour cell line expressing Fluc_green, and were subsequently treated with healthy human donor T cells engineered to express CD19 CAR and FLuc_red (except the tumour only control).\u00a0Animals were then spectrally imaged after administration of iLH2 using the IVIS spectrum (Perkin Elmer). (a) The unmixed Fluc_green images, representing tumour burden, and unmixed Fluc_red images, representing CAR T cell homing, and the composite image are shown for day six post CAR T cell treatment. (b)\u00a0The average radiance of signal classified as Fluc_green and Fluc_red is plotted for days 3, 4 and 6 post CAR T cell administration for the tumour only control and treatment (tumour + CAR T cells) animals. Three mice were randomly selected to receive CAR T cell therapy after engraftment was confirmed. Mean and standard deviation plotted. Radiance values from each femur are treated separately (tumour only\u00a0=\u00a02, treatment\u00a0=\u00a06).\n\n## Discussion\n\nSmall animal dual (or multi-parameter) bioluminescence is highly desirable. Currently, most dual BLI has been achieved with two luciferases each utilising a different substrate, one of which is normally the auto luminescent coelenterazine (Maguire et al., 2013). A simpler approach would be to use a single LH2 substrate and two firefly (or related) luciferases which emit at different wavelengths. This in theory has advantages of higher quantum yield and a more favourable substrate. Such an approach has been attempted: for instance Mezzanotte et al tested dual BLI in vivo using LH2 with the green luciferase (CBG99) with the red luciferase (Ppy RE8) (Mezzanotte et al., 2011). However, in deeper tissues the shorter wavelength component of green emitting enzyme emission is heavily attenuated by mammalian tissues leaving an \u2018in vivo spectrum\u2019 which is almost indistinguishable from that of the red luciferase.\n\nTo illustrate this, and as a control for subsequent experiments, we attempted dual BLI using a pair of stabilised firefly luciferases, which are green/red shifted to 546 nm and 610 nm respectively using LH2 as a substrate (Branchini et al., 2007). Whilst in vitro the spectra could be easily distinguished (Figure 2) in vivo the spectral separation between the two FLuc enzymes was lost due to the differential attenuation of the green enzyme by biological tissue (Figure 4). An obvious solution is to red-shift both enzymes into the optic window while maintaining an adequate separation. However, although bioluminescence emission has been successfully red-shifted through mutagenesis of firefly luciferase the structure of the LH2 substrate ultimately limits this approach. Dual BLI with a single substrate in the near-infrared should be better; this has been described using BRET based reporters with an coelenterazine derived substrate (Rumyantsev et al., 2016). To move bioluminescence into the near infrared modification of the LH2 substrate was required. Indeed, red-shifted luciferin analogues have been reported. These include CycLuc1 and Aka-Lumine, however neither permit variation in emission spectra with different Luciferase mutants (Evans et al., 2014), (Kuchimaru et al., 2016; Iwano et al., 2018) (Figure 2). More recently, two Naphthyl luciferins, NH2-NpLH2 and OH-NpLH2, were reported to red shift the in vitro bioluminescence emission of CBR to 664 nm and 758 nm respectively (emission max 614 nm with LH2). Interestingly, NH2-NpLH2 was shown to have an in vitro peak emission of 730 nm with an optimised version of CBR (CBR2). The potential application of CBR and CBR2 with NH2-NpLH2 for dual-BLI in vivo was not explored; and the reported broad emission spectrum of optCBR2 in live cells is likely to make any near-infrared dual BLI with NH2-NpLH2 challenging, however this approach cannot be discounted (Hall et al., 2018).\n\nWe described previously iLH2, which has a near-infrared emission and in contrast to other LH2 analogues maintains the 6\u2019 hydroxyl benzothiazole group of LH2 that preserves the colour-shifts of mutant luciferases (Jathoul et al., 2014). Analysis of the x-ray crystal structure of FLuc in complex with the iLH2 analogue (iDLSA) revealed that the hydrogen-bonding network, thought to be critical in stabilising the phenolate ion of the emitter, is disrupted in the FLuc-iDLSA due to the accommodation of the larger iLH2 substrate (Branchini et al., 2017). This enables full charge delocalization of the phenolate ion, in addition to extended conjugation, resulting in a red-shifted emission as suggested by homology modelling experiments with the recently described near infrared emitting naphthyl analogue (Hall et al., 2018). Evidence for the disruption of the network is the absence of a H-bond between Arg337 and Glu311 that is found in the DLSA structures of FLuc and L. cruciata Luc. This H-bonding interaction has been proposed to be important for stabilising an active site conformation for green light emission (Viviani et al., 2005). In addition, the resulting increase in active site polarity due to the rotation of the C-terminal cap could also contribute to the red-shift in light emission (Nakatsu et al., 2006). It must be noted that the crystal structure reported here has captured FLuc in the adenylation step of the reaction, therefore further computational modelling/crystal structure elucidation would be expected to provide further information on the light-emitting step of the reaction with iLH2 (Nakatsu et al., 2006). Finally, the more open adenylation conformation of FLuc -iDLSA may affect the adenylate significantly, altering light production by decreasing the yield of the electronically excited state emitter and/or the efficiency in which the emitter produces a photon. Moreover, small differences in the binding position of the adenylate seen here, caused by positional changes of key active site residues could have a similar effect.\n\nGiven that iLH2 preserves the colour modulation of mutant luciferases (in addition to the 100 nm red shift), we set about to explore dual-BLI with iLH2. We identified two stabilised FLuc enzymes with colour shifting mutations: FLuc_green (V241I/G246A/F250S) and Fluc_red (S284T). Both exhibit a wide separation in peak emission wavelength, and were also balanced in their relative intensities. We next compared in vitro spectra with in vivo spectra from luciferase expressing cells implanted subcutaneously, systemically and intracranially (to approximate superficial, intermediate and deep light source) with both LH2 and iLH2. The near-infrared emission of the FLuc mutants with iLH2 meant spectral separation was maintained for all animal tumour models. Importantly, the spectra of the two FLuc mutants remained consistent over tissue depth, meaning this dual BLI system could be applied to animal models without prior spectral characterisation. This maintenance of spectral separation, and similarity of relative intensities, between FLuc_green and FLuc_red when imaged with iLH2 meant this near-infrared bioluminescence system was found to be significantly better at spectral unmixing in vivo than using LH2. This was demonstrated when the unmixed bioluminescent signals were correlated with actual cellular populations, determined by flow cytometry, (R2\u00a0=\u00a00.99 and 0.89 for iLH2 and LH2 respectively).\n\nOne potential limitation of this system in its current state is the lower quantum yield of the FLuc-iLH2 reaction when compared to the FLuc-LH2 reaction,~2\u20133 orders of magnitude dimmer. However, in this study, all mice were successfully spectrally imaged with both LH2 and iLH2, which can be attributed to the sensitivity of the photon counting capabilities of the CCD cameras fitted in optical imagers (Cool et al., 2013). The crystal structure reported here will be important for further optimisation of this near-infrared dual BLI system, particularly to increase the brightness of the current enzymes with iLH2, as well as the discovery of novel luciferase colour-mutants which could be used for multi-coloured BLI in the near-infrared. Additionally, the use of this system in combination with luciferases utilising other substrates for multi-coloured BLI could also be explored, as well as its application to monitoring more complex processes in animal models (Kleinovink et al., 2018). This work represents an important step forward in increasing the utility of BLI and opens up the window for multi-coloured BLI in the near-infrared.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Photinus pyralis)</td>\n      <td>FLuc</td>\n      <td>this paper</td>\n      <td>N/A</td>\n      <td>Amino acid changes from ref 21 and 23, codon optimised for mammalian expression for use in this paper</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (mouse, male)</td>\n      <td>NSG</td>\n      <td>Jax mouse strain (Charles River)</td>\n      <td>NOD.Cg-Prkdcscid Il2rgtm1WjI/SzJ</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Cell line (Human, male)</td>\n      <td>Raji B lymphoma</td>\n      <td>ATCC CCL-86</td>\n      <td>N/A</td>\n      <td>Mycoplasma tested by GATC (Eurofins Genomics)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD34-PE</td>\n      <td>Biolegend</td>\n      <td>Clone 581, RRID:\u00a0AB_1731862</td>\n      <td>(1:20)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD271-APC</td>\n      <td>Biolegend</td>\n      <td>Clone ME20.4, RRID:\u00a0AB_10645515</td>\n      <td>(1:20)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, dye</td>\n      <td>Viability APC eFluoro780</td>\n      <td>eBioscience</td>\n      <td>N/A</td>\n      <td>(1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse/human CD11b PerCP/Cy5.5</td>\n      <td>Biolegend</td>\n      <td>Clone M1/70, RRID: AB_893232</td>\n      <td>(1:20)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD19 FITC</td>\n      <td>eBioscience</td>\n      <td>Clone HIB19, RRID: AB_10669461</td>\n      <td>(1:20)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-human CD20 eFLuor 450</td>\n      <td>eBioscience</td>\n      <td>Clone 2H7, RRID: AB_1633384</td>\n      <td>(1:20)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Luciferin</td>\n      <td>Regis technologies</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Living Image</td>\n      <td>Perkin Elmer</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism</td>\n      <td>Graphpad</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Excel</td>\n      <td>Microsoft</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Flow Jo</td>\n      <td>Tree Star Inc (Oregon, USA)</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMOL software</td>\n      <td>Schrodinger</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CrysalisPro</td>\n      <td>Agilent Technologies</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BD FACSDIVA</td>\n      <td>BD biosciences</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>infraluciferin</td>\n      <td>Anderson, J.C.; Grounds, H.; Jathoul, A.P.; Murray, J.A.H.; Pacman, S.J.; Tisi, L. RSC Advances 2017, 7, 3975\u201382</td>\n      <td>N/A</td>\n      <td>Prepared by JC Anderson laboratory</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>iDLSA</td>\n      <td>this paper</td>\n      <td>N/A</td>\n      <td>Prepared by JC Anderson laboratory, seebelow and data set at https://doi.org/10.5061/dryad.3j9kd51cs.</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CycLuc1</td>\n      <td>Merck Millipore</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Aka-Lumine-HCL</td>\n      <td>Wako Pure Chemical Industries</td>\n      <td>N/A</td>\n      <td>N/A</td>\n    </tr>\n  </tbody>\n</table>\n\n### Preparation of 5\u2019-o-[(n-dehydroinfraluciferyl)-sulfamoyl] adenosine dehydroinfraluciferin\n\nAll manipulations were routinely carried out under an inert (Ar or N2) atmosphere. All reagents were used as received unless stated. For the purposes of thin layer chromatography (tlc), Merck silica-aluminium plates were used, with uv light (254 nm) and potassium permanganate or anisaldehyde for visualisation. For column chromatography Merck Geduran Si 60 silica gel was used. Butyl lithium solutions were standardised with diphenyl acetic acid.\n\nMelting points are uncorrected and were recorded on a Griffin melting point machine. Infrared spectra were recorded using a Bruker Alpha ATR spectrometer. All NMR data were collected using a Bruker AMX 300 MHz or Bruker AVANCE III 600 MHz as specified. Reference values for residual solvents were taken as \u03b4\u00a0=\u00a07.27 (CDCl3), 2.51 (DMSO \u2013d6), 3.30 (MeOD- d4) ppm for 1H NMR and \u03b4\u00a0=\u00a077.2 (CDCl3), 39.5 (DMSO \u2013d6), 49.0 (MeOD- d4) ppm for 13C NMR. 19F NMR spectra were measured using a Bruker DX300 spectrometer, referenced to trichlorofluoromethane. Coupling constants (J) are given in Hz and are uncorrected. Where appropriate COSY and DEPT experiments were carried out to aid assignments. Mass spectroscopy data were collected on a Micromass LCT Premier XE (ESI) instrument. Elemental analysis was performed on an Exeter Analytical Inc CE-440 CHN analyser.\n\n6-(\u03b2-Methoxyethoxymethylether)benzothiazole (1), (Muramoto et al., 1999)\n\n6-(\u03b2-Methoxyethoxymethyl ether)\u22122-formylbenzothiazole (2), (Anderson et al., 2017)\n\n1-(4-methoxycarbonylthiazole)methyltriphenylphosphonium chloride (Hermitage et al., 2001; Old, 2008)\n\n2\u2019,3\u2019-O-Isopropylidene-5\u2019-O-sulfamoyladenosine (Heacock et al., 1996) were synthesised using procedures reported in the literature.\n\n6-(\u03b2-Methoxyethoxymethoxy)\u22122-(2-(4-methoxycarbonylthiazol-2-yl)ethenyl) benzothiazole (3).\u00a0A suspension of aldehyde\u00a02\u00a0(200\u00a0mg,\u00a00.748\u00a0mmol) and 1-(4-methoxycarbonylthiazole)methyltriphenylphosphonium chloride (680\u00a0mg,\u00a01.50\u00a0mmol) in DMF (3.5\u00a0mL) was cooled to\u00a00\u00b0C\u00a0and treated with K2CO3\u00a0(348\u00a0mg,\u00a02.52\u00a0mmol). The resultant solution was allowed to warm to rt and stirred for\u00a016\u00a0hr. After this time H2O (40\u00a0mL) was added and the solution extracted using EtOAc (2\u00a0\u00d7\u00a040\u00a0mL). The organics were combined and washed with H2O (40\u00a0mL), separated, dried (MgSO4), filtered and concentrated\u00a0in vacuo. Purification was achieved using flash column chromatography (60%\u00a0Et2O/Hexane) to give\u00a0three\u00a0as a mixture of\u00a0cis\u00a0and\u00a0trans\u00a0isomers (163\u00a0mg,\u00a054%).\n\nCis: Rf\u00a0=\u00a00.52 (60 % EtOAc/Hexane); 1H NMR (600 MHz, CDCl3) \u03b4 3.39 (3H, s, OCH3), 3.58\u20133.59 (2H, m, OCH2CH2O), 3.86\u20133.89 (2H, m, OCH2CH2O), 4.00 (3H, s, OCH3), 5.36 (2H, s, OCH2O), 6.96 (1H, d, J\u00a0=\u00a012.8, CHC(N)S), 7.25\u20137.29 (2H, m, ArH, CHC(N)S), 7.62 (1H, d, J\u00a0=\u00a02.3, ArH), 8.06 (1H, d, J\u00a0=\u00a08.9, ArH), 8.28 (1H, s, CHS). In CDCl3 solution the trans isomer was seen to isomerise to the cis isomer.\n\nTrans: A pure sample of trans was by separated by column chromatography to give three as a yellow solid. m.p. 112\u2013115\u00b0C; Rf\u00a0=\u00a00.48 (60 % EtOAc/Hexane); IR \u03bdmax 3101, 2926 (\u03bdCH), 2889 (\u03bdCH), 2818 (\u03bdCH), 1716 (\u03bdCO), 1629, 1598, 1556, 1495, 1456, 1333, 1318, 1281, 1239, 1222, 1208, 1162, 1089, 1046, 978 cm-1; 1H NMR (600 MHz, CDCl3) \u03b4 3.39 (3H, s, OCH3), 3.58\u20133.59 (2H, m, OCH2CH2O), 3.86\u20133.88 (2H, m, OCH2CH2O), 4.00 (3H, s, OCH3), 5.35 (2H, s, OCH2O), 7.22 (1H, dd, J\u00a0=\u00a08.9, 2.4, ArH), 7.59 (1H, d, J\u00a0=\u00a02.4, ArH), 7.68 (2H, s, CHC(N)S), 7.92 (1H, d, J\u00a0=\u00a08.9, ArH), 8.21 (1H, s, CHS); 13C NMR (150 MHz, CDCl3) \u03b4 52.8 (CH3), 59.2 (CH3), 68.0 (CH2), 71.7 (CH2), 94.0 (CH2), 107.5 (CH), 117.9 (CH), 124.1 (CH), 128.2 (CH), 128.7 (CH), 136.2 (C), 148.1 (C), 148.9 (C), 156.3 (C), 161.7 (C), 162.9 (C), 165.6 (C); m/z (ESI) 407 (100%, M++H); HRMS C18H19N2O5S2 calcd. 407.0735, found 407.0738.\n\n(E)\u22126-(\u03b2-Methoxyethoxymethoxy)\u22122-(2-(4-carboxythiazol-2-yl)ethenyl) benzothiazole (4). A suspension of 3 (20 mg, 0.049 mmol) in THF (0.75 mL) and H2O (0.37 mL) was treated with LiOH.H2O (5.0 mg, 0.12 mmol) and stirred for 15 min. After this time H2O (10 mL) and EtOAc (10 mL) were added and the layers separated. The aqueous layer was acidified with 2 M HCl and extracted using EtOAc (2\u00a0\u00d7\u00a010 mL), organics dried over MgSO4, filtered and concentrated in vacuo to give 4 (19 mg, quant.) as a yellow solid. m.p. 175\u2013178\u00b0C; Rf\u00a0=\u00a00.20 (50 % EtOAc/MeOH); IR \u03bdmax3101 (\u03bdOH), 2917 (\u03bdCH), 1680 (\u03bdCO), 1598, 1554, 1455, 1398, 1320, 1241, 1204, 1160, 1101, 1045, 938 cm-1; 1H NMR (600 MHz, MeOD-d4) \u03b4 3.33 (3H, s, OCH3), 3.57\u20133.58 (2H, m, OCH2CH2O), 3.84\u20133.85 (2H, m, OCH2CH2O), 5.36 (2H, s, OCH2O), 7.25 (1H, dd, J\u00a0=\u00a08.9, 2.4, ArH), 7.69 (1H, d, J\u00a0=\u00a02.4, ArH), 7.71 (1H, dd, J\u00a0=\u00a016.1, 0.6, CHC(N)S), 7.73 (1H, d, J\u00a0=\u00a016.1, CHC(N)S), 7.80 (1H, d, J\u00a0=\u00a08.9, ArH), 8.43 (1H, s, J\u00a0=\u00a07.5, CHS); 13C NMR (150 MHz, MeOD-d4) \u03b4 59.1 (CH3), 69.0 (CH2), 72.8 (CH2), 95.0 (CH2), 108.7 (CH), 119.0 (CH), 124.7 (CH), 128.5 (CH), 129.1 (CH), 130.1 (CH), 137.5 (C), 149.8 (C), 150.0 (C), 157.7 (C), 163.8 (C), 164.6 (C), 166.7 (C); m/z (ESI) 393 (100%, M++H), 300 (9%); HRMS C17H17N2O5S2 calcd. 393.0579, found 393.0581; Anal. Calcd. for C17H16N2O5S2: C, 52.03; H, 4.11; N, 7.14. Found C, 51.85; H, 4.29; N, 6.71%.\n\n6-(\u03b2-Methoxyethoxymethoxy)\u22122-(2-(4-pentafluorophenoxycarbonylthiazol-2-yl)ethenyl) benzothiazole (5). A solution of 4 (30 mg, 0.077 mmol) in pyridine (3.80 mL) was treated with EDC (18 mg, 0.096 mmol) and pentafluorophenol (18 mg, 0.096 mmol) and stirred at rt for 16 hr. The reaction mixture was concentrated in vacuo. Purification was achieved using flash column chromatography (30% Et2O/hexane) to give five as a yellow solid (37 mg, 86%). m.p. 87\u201391\u00b0C; Rf\u00a0=\u00a00.25 (30 % EtOAc/Pet. Ether); IR \u03bdmax 2922, 2887, 2835, 1764 (\u03bdCO), 1599, 1554, 1486, 1470, 1454, 1321, 1290, 1260, 1242, 1211, 1199, 1180, 1137, 1123, 1100, 1060, 1010, 986 cm-1; 1H NMR (600 MHz, CDCl3) \u03b4 3.40 (3H, s, OCH3), 3.59\u20133.60 (2H, m, OCH2CH2O), 3.87\u20133.88 (2H, m, OCH2CH2O), 5.36 (2H, s, OCH2O), 7.23 (1H, dd, J\u00a0=\u00a08.9, 2.4, ArH), 7.60 (1H, d, J\u00a0=\u00a02.4, ArH), 7.72 (1H, dd, J\u00a0=\u00a016.2, 0.6, CHC(N)S), 7.74 (1H, d, J\u00a0=\u00a016.2, CHC(N)S), 7.94 (1H, d, J\u00a0=\u00a09.0, ArH), 8.40 (1H, d, J\u00a0=\u00a00.4, CHS); 13C NMR (150 MHz, CDCl3) \u03b4 59.2 (CH3), 68.0 (CH2), 71.7 (CH2), 94.0 (CH2), 107.5 (CH), 117.9 (CH), 124.3 (CH), 124.9 (C), 127.3 (CH), 129.8 (CH), 131.4 (CH), 136.4 (C), 137.3 (C), 139.0 (C), 140.6 (C), 142.2 (C), 144.7 (C), 149.2 (C), 156.4 (C), 156.8 (C), 162.5 (C), 166.6 (C); 19F NMR (CDCl3, 282) \u03b4 \u2212150.0 (d, J\u00a0=\u00a016.9, ArF), \u2212157.14 (app t, J\u00a0=\u00a019.7, ArF), \u2212161.9 (dd, J\u00a0=\u00a019.7, 16.9, ArF); m/z (ESI) 559 (100%, M++H); HRMS C23H15F5N2O5S2 calcd. 559.0415, found 559.0418.\n\n2\u2019,3\u2019-O-Isopropylidene-5\u2019-O-[N-(6-(\u03b2-methoxyethoxymethoxy)-dehydroinfraluciferyl)-sulfamoyl]adenosine (6). A solution of 2\u2019,3\u2019-O-Isopropylidene-5\u2019-O-sulfamoyladenosine (20 mg, 0.052 mmol) in DMF (1.8 mL) was treated with DBU (11 mg, 0.076 mmol) and stirred at rt for 10 min. A solution of 5 (29 mg, 0.052 mmol) in DMF (0.2 mL) was then added dropwise. The reaction was stirred at rt for 16 hr. After this time pyridine (0.15 mL) was added and the solution stirred for 4 hr. The resultant solution was concentrated in vacuo and purified using flash column chromatography (5% MeOH/DCM) to give 6 (30 mg, 76%) as a yellow solid. m.p. 164\u00b0C, dec.; Rf\u00a0=\u00a00.32 (5 % MeOH/DCM); IR \u03bdmax3290 (\u03bdOH), 2932 (\u03bdCH), 1644 (\u03bdCO), 1598, 1552, 1505, 1457, 1418, 1373, 1291, 1250, 1209, 1150, 1103, 1080, 1048, 985 cm-1; 1H NMR (600 MHz, DMSO-d6) \u03b4 1.34 (3H, s, C(CH3)2), 1.54 (3H, s, C(CH3)2), 3.21 (3H, s, OCH3), 3.46\u20133.49 (2H, m, OCH2CH2O), 3.74\u20133.78 (2H, m, OCH2CH2O), 4.09 (1H, dd, J\u00a0=\u00a011.0, 4.9, CH2OS(O)2), 4.12 (1H, dd, J\u00a0=\u00a011.0, 4.9, CH2OS(O)2), 4.42\u20134.46 (1H, m, OCHCH2), 5.09 (1H, dd, J\u00a0=\u00a06.1, 2.5, CHCHO), 5.36 (2H, s, OCH2O), 5.41 (1H, dd, J\u00a0=\u00a06.1, 2.9, CHCHNO), 6.17 (1H, d, J\u00a0=\u00a02.9, CHCHNO), 7.22 (1H, dd, J\u00a0=\u00a08.9, 2.5, ArH), 7.35 (2H, br, NH2), 7.71 (1H, d, J\u00a0=\u00a016.1, CHC(N)S), 7.79 (1H, d, J\u00a0=\u00a016.0, CHC(N)S), 7.79 (1H, d, J\u00a0=\u00a02.5, ArH), 7.95 (1H, d, J\u00a0=\u00a08.9, ArH), 8.11 (1H, s, CHS), 8.12 (1H, s, NCH(N)), 8.44 (1H, s, NCH(N)); 13C NMR (150 MHz, DMSO-d6) \u03b4 25.2 (CH3), 27.1 (CH3), 58.1 (CH3), 67.3 (CH2), 67.6 (CH2), 71.0 (CH2), 81.6 (CH), 83.5 (CH), 83.9 (CH), 89.3 (CH), 93.3 (CH2), 108.0 (CH), 113.2 (C), 117.4 (CH), 118.8 (C), 123.6 (CH), 125.2 (CH), 126.1 (CH), 128.5 (CH), 136.0 (C), 139.6 (CH), 148.6 (C), 149.0 (C), 152.8 (CH), 155.3 (C), 156.1 (C), 156.8 (C), 162.8 (C), 162.9 (C), 165.0 (C); m/z (ES+) 761 (100%, M++H); HRMS C30H30N8O10S3 calcd. 761.1482, found 761.1486.\n\n6-Hydroxy-2-(4-1E,3E-(4-ethoxycarbonyl-4,5-dihydrothiazol-2-yl)buta-2,4-dienyl)benzothiazole (iDLSA). A solution of 6 (20 mg, 0.026 mmol) in TFA (0.32 mL) was stirred at rt for 2 hr and then H2O (0.1 mL) added and the solution concentrated in vacuo. EtOH (2 mL) added and concentrated in vacuo to give the TFA salt of iDLSA (18 mg, 94%) as an orange solid. m.p. 68\u201370\u00b0C; IR \u03bdmax3102 (\u03bdOH), 1667 (\u03bdCO), 1426, 1132 cm-1; 1H NMR (600 MHz, DMSO-d6) \u03b4 4.20\u20134.25 (2H, m, CHOH, CHOH), 4.53\u20134.59 (3H, m, CHOC, CH2OS(O)2), 5.96 (1H, d, J\u00a0=\u00a05.0, CHCHNO), 7.00 (1H, d, J\u00a0=\u00a02.4, ArH), 7.42 (1H, d, J\u00a0=\u00a02.5, ArH), 7.72 (1H, d, J\u00a0=\u00a015.9, CHC(N)S), 7.84 (1H, d, J\u00a0=\u00a08.8, ArH), 7.95 (1H, d, J\u00a0=\u00a015.8, CHC(N)S), 8.33 (1H, s, CHS), 8.53 (1H, s, NCH(N)), 8.59 (1H, s, NCH(N)). 13C NMR too weak due to poor solubility of compound. MS did not give M+ or meaningful fragment for accurate mass measurement.\n\nCopies of all 1H and 13C NMR have been deposited at https://doi.org/10.5061/dryad.3j9kd51cs.\n\n### Preparation of the p.pyralis luciferase-5\u2019-o-[(n-dehydroinfraluciferyl)-sulfamoyl] adenosine dehydroinfraluciferin (FLuc-iDLSA) complex\n\nApproximately 0.6 mg of iDLSA was suspended in 500 \u00b5L of crystallisation buffer (25 mM Tris-Cl containing 200\u00a0mM AmSO4, 1 mM DTT, 1 mM EDTA) pH 7.85 at 21\u00b0C. The solution was vortexed vigorously and sonicated. Most of the solid was dissolved and the concentration was determined to be\u00a0~1\u00a0mM by UV absorbance (using an extinction coefficient of 8200 at 372 nm for this buffer and pH). A 20 mg/mL solution of P. pyralis luciferase (PpyWT that contains the N-terminal peptide GPLGS-) in the same buffer (500 \u00b5L) was mixed gently with the iDLSA at room temperature and then incubated at 15\u00b0C for 20 min. The concentration of iDLSA in the protein-inhibitor mixture was determined by UV absorbance to be 620 \u00b5M, giving an inhibitor:enzyme ratio of\u00a0~3:1, at this point the bioluminescence activity of the mixture was assayed and the enzyme was 85% inhibited. A small amount of a separate iDLSA solution (available from solubility trials) was added to bring the inhibitor:enzyme ratio to\u00a0~4:1, and based on activity the enzyme was 91% inhibited. Finally, the protein-inhibitor solution was added to\u00a0~0.5 mg of iDLSA and mixed gently and incubated at 15\u00b0C for 15 min. Based on activity, 99% of the enzyme was inhibited and based on UV absorbance the inhibitor:enzyme ratio was 5.6:1 (950 \u00b5M:170 \u00b5M) The protein-inhibitor solution was centrifuged and a very slight amount of inhibitor was evident. The supernatant was frozen in liquid nitrogen in\u00a0~18\u201350 \u00b5L aliquots and stored at \u221280\u00b0C. A single aliquot was thawed and the solution remained clear. The pH of this solution at 6\u00b0C should be 8.3, pH 8.17 at 10\u00b0C, and pH 7.9 at 21\u00b0C.\n\n### Crystallisation and refinement of P. pyralis luciferase/dehydroinfraluciferin DLSA complex\n\nApproximately 0.6 mg of iDLSA was resuspended in 500 \u00b5L of buffer (25 mM Tris-Cl containing 200\u00a0mM (NH4)2SO4, 1 mM DTT, 1 mM EDTA) pH 7.85 at 21\u00b0C to a concentration of 1 mM as determined by UV absorbance (extinction coefficient of 8200 at 372 nm). This solution was mixed with a 20\u00a0mg/mL solution of P. pyralis (inhibitor:enzyme ratio of\u00a0~3:1) at room temperature and then incubated at 15\u00b0C for 20 min. The inhibitor:enzyme solution was centrifuged and the supernatant was frozen in liquid nitrogen in\u00a0~18\u201350 \u00b5L aliquots and stored at \u221280\u00b0C for future crystallisations.\n\nCrystallisations used the hanging drop vapour diffusion method. Drops containing 1\u20132 \u00b5l of inhibitor:enzyme solution were mixed with the same volume of well solution and equilibrated against 500\u00a0\u00b5l of well solution, incubated at 4\u00b0C, with crystals typically appearing within 48 hr. Glycerol was used as a cryoprotectant, in an optimised well solution of 150 mM (NH4)2SO4, 50 mM HEPES pH 7.0, 2% PEG 1000.\n\nData were collected at the Diamond Light Source on beam line IO4-1, at wavelength 0.91587 \u00c5, and 100 K. Processing and data reduction were carried out on site using CrysalisPro (Agilent Technologies), and synchrotron data sets were processed and scaled by using XDS, SCALA and XIA2 programs. Molecular replacement methods were used successfully to determine the relative orientation and position of the two monomers in the asymmetric unit using the PHASER program (McCoy et al., 2007). The starting dehydroinfraluciferin DLSA complex model was derived from the Firefly luciferase apo structure (PDB-ID 3IEP) with all solvent atoms and the luciferin removed. A simple rigid body refinement was sufficient to initiate refinement, with subsequent refinement and model building cycles performed using Refmac5 and Coot (Murshudov et al., 2011; Emsley et al., 2010).\n\nThe X-ray data collection and refinement statistics have been deposited at https://doi.org/10.5061/dryad.3j9kd51cs.\n\n### Firefly luciferase mutants and cell lines\n\nFLuc mutants contained 11 pH and temperature stabilising mutations (F14R/L35Q/A105V/V182K/T214C/I232K/D234G/E354R/D357Y/S420T/F465R) (Jathoul, 2012). FLuc_green contained an additional three mutations (V241I/G246A/F250S), and FLuc_red has the red-shifting mutation S284T, as well as the mutation R354I which is required to maintain the red-shift in this stabilised FLuc backbone (Branchini et al., 2007). All FLuc mutants were codon optimised for mammalian expression and cloned into the MLV-based splicing gamma retroviral vector SFG. The Raji B lymphoma cell line used in all experiments was transduced to express a FLuc mutant, and subsequently flow-sorted for pure FLuc expressing populations using a co-expressed marker gene. For tumour cell lines FLuc.IRES was upstream of the marker gene CD34 or dNGFR as indicated. For T cells FLuc.2A_peptide was upstream of the CAR CD19-4G7_HL-CD8STK-41BBZ.\n\n### Production of retroviral supernatant\n\nHEK-293T packaging cells were plated at a density of 200\u2019000 cells/ml in 100 mm tissue culture dish\u00a0~24 hr prior to transfection. Transfections were performed when cells were 50\u201370% confluent. A bulk transfection mixture was prepared where 30 \u03bcl GeneJuice Transfection Reagent (Merck millipore) was added to 470 \u03bcl of plain RPMI for each supernatant to be produced. Following a 5 min incubation at room temperature, a total volume of 12.5 \u03bcg of DNA was added for each plate to be transfected (for retroviral transfection: 3.125 \u03bcg RDF RD114 env plasmid, 4.6875 \u03bcg PeqPam-env gagpol plasmid, 4.6875 \u03bcg SFG retroviral construct). Following addition of plasmid DNA, the mixture was incubated for a further 15 min at room temperature prior to dropwise addition to the HEK- 293 T cell culture. Plates were gently agitated following transfection. Supernatant harvested at 48 hr was stored at 4\u00b0C, and was then combined with the 72 hr harvest prior to aliquoting and storage at \u221280\u00b0C.\n\n### Transduction of cell lines\n\nThe day prior to transduction Raji B lymphoma cells (atcc ccl-86) (>90% viable) were diluted\u00a0~1 in 10 to ensure exponential growth for transduction; also a well of non-tissue culture treated 24 well plate was coated with 8 \u03bcg/ml retronectin (Lonza) for every plasmid to be transduced and left at 4\u00b0C overnight. The next day retronectin was aspirated and 250 \u03bcl of each retroviral supernatant for transduction was added to a well and incubated for 30 min at room temperature. Whilst incubating, Raji cells were harvested, counted and resuspended at a concentration of 600,000 cells/ml. supernatants were aspirated from wells of retronectin coated plate and 500 \u03bcl of cell suspension was added to each well followed by 1.5 ml of the same retroviral supernatant that was previously incubated in each well. Cells were spin transduced at 1000 RCF for 40 min then returned to incubator for 48 hr before harvest and expression testing.\n\n### Flow cytometry and Fluorescence Activated Cell Sorting\n\nTransduction efficiencies were assessed by flow cytometry, based on marker gene expression as indicated by antibody staining using the BD LSR FortessaX-20. If necessary Fluorescence Activated Cell Sorting (FACS) was performed to obtain pure expressing populations, also based on marker gene expression as indicated by antibody staining, using the BD FACS Aria Fusion. FACS was also use to sort populations of cells expressing differing levels of FLuc_green and FLuc_red within the same cell. Concentration of antibody used was guided by manufacturer\u2019s instructions. Anti-human CD34-PE (clone 581), anti-human CD271-APC (clone ME20.4) and anti-mouse/human CD11B-PerCP/Cy5.5 (clone M1/70) (Biolegend). Anti-humanCD19-FITC (clone HIB19), anti-human CD20-eFluor450 (clone 2H7) and Viability APC-eFluor780 (eBioscience). Data were analysed using Flow Jo software (Tree Star Inc, Oregon, USA).\n\n### Flow cytometry of extracted bone marrow\n\nWhen bone marrow cells were required for flow cytometry analysis. Following animal sacrifice by CO2 narcosis and cervical dislocation, the femurs were removed and transferred to PBS pending cellular harvest. The ends of the femur were snipped off using scissors and the bone was placed in an extraction tube (microfuge tube with holder made from 200 \u03bcl pipette tip inserted). Tubes were centrifuged at 1000 RCF for 60 s. Bone marrow pellet was resuspended in 50 \u03bcl Ammonium-Chloride-Potassium (ACK) lysing buffer (Lonza) and left for 60 s at room temperature before washing with PBS and passing through a 70 \u03bcm filter before pelleting. Samples were blocked 2.4G2 supernatant (rat anti-mouse CD32) supplemented with mouse Ig FcR blocking reagent (Miltenyl Biotec) for 30 min at room temperature. Cells were washed with PBS and pelleted, followed by each sample being transferred to a well of a U-bottomed 96 well plate before proceeding with antibody staining. An antibody master mix containing all antibodies to be used for staining was prepared in PBS to a total volume of 100 \u03bcl per sample. Samples were left to stain at room temperature in the dark for 30 min. Samples were washed once with PBS, pelleted and transferred to FACS tubes. Beckman Coulter Flow-Checkfluorospheres were used as a stopping gate for flow cytometry analysis. Beads are supplied at 1 \u00d7 10e6 beads/ml in an aqueous solution containing preservative surfactant. To prevent toxicity to cellular samples, beads were washed once with PBS prior to addition to samples. Following centrifugation (400 RCF for 5 min), beads were resuspended in an equal volume of PBS with 10\u00a0\u03bcl of beads added to each sample.\n\nAs six fluorophores were used for bone marrow analysis, compensation was performed prior to sample acquisition using OneComp eBeads (eBioscience). Events were kept between 2,000\u20135,000 events/second, with 1000 events being recorded per sample, using flow check beads as a stopping gates (10% each sample). Flow cytometry gating first identified the lymphocyte population (FSC-A vs SSC-A), exclusion of doublet cells (SSC-A vs SSC-W); antibodies detailed in Flow cytometry and Fluorescence Activated Cell Sorting were then used to gate on viable cells, exclude mouse monocyte cells (mCD11b), identify the Raji tumour cell population (CD19 and CD20) and finally co-expressed marker gene (dNGFR and dCD34).\n\n### Preparation of CAR T cells\n\nOn day one peripheral blood mononuclear cells were isolated from a healthy donor blood using Ficoll-paque density gradient media (GE Healthcare). Cells were resuspended at 2 \u00d7 106/ ml and stimulated with 1 mg/ml PHA (Sigma). On day 2 cells were fed with IL-2 at a concentration of 100 U/ml (Genscript). On day 3 cells were transduced as described in transduction of cell lines, with IL-2 at a final concentration of 100 U/ml. On day 6 cells were harvested and resuspended at 1 \u00d7 106/ml with 100 U/ml IL-2 and left to recover for at least 48 hr before in vivo injection. Transduction efficiency was measured using flow cytometry.\n\n### In vitro bioluminescence assays\n\nFor spectrographic testing of FLuc, mutants were stably transduced in the mammalian Raji B-cell lymphoma cell line. For in vitro bioluminescence assays cells were harvested, counted and 1 \u00d7 106 cells/well were resuspended in TEM buffer (1M Tris-acetate, 20 mM EDTA and 100 mM MgSO4 at pH 7.8) and added in triplicate to wells of a black 96-well plate (100 \u03bcl/well). If mixtures of cells were used, total cell number remained the same. For spectral testing the stage temperature of the IVIS Spectrum was set to 37\u00b0C (automatic acquisition mode, FOV 13.2, f/1). iLH2 was synthesised by UCL Chemistry. Other substrates tested include D-luciferin (Regis Technologies), CycLuc1 (Merck Millipore) and Aka-Lumine-HCL (Wako Pure Chemical Industries). Substrates were dispensed into the wells using a multi-channel pipette (at a final concentration of 300 \u03bcM). A 2 min delay was allowed for stabilisation of light output. Images were acquired through all 18 bandpass filters on the IVIS Spectrum (20 nm bandpass, 490 nm to 840 nm). Living image software (Perkin Elmer) was used for ROI analysis of spectral images and spectral unmixing analysis. Image analysis involved placing a ROI over the signal in each well. If a series of spectral images was acquired, the same ROI was placed over the well in every image for each plate. For spectral unmixing analysis, guided spectral unmixing was first used on pure expressing FLuc_green and FLuc_red populations to create a library spectra for each mutant with each substrate. The relevant library spectra was then used to perform spectral unmixing on mixed FLuc_green and FLuc_red populations (or cellular populations expressing both enzymes). Data exported to Excel (Microsoft) and Prism (Graphpad) for further analysis. Spectra was normalised to peak emission for each FLuc mutant with each substrate. Due to the characterisation nature of these in vitro experiments, and the substantial amounts of precious chemicals needed to synthesise iLH2, it was decided to repeat each in vitro experiment twice with three replicates.\n\n### In vivo models\n\nAll animal studies were approved by the University College London Biological Services Ethical Review Committee and licensed under the UK Home Office regulations and the Guidance for the Operation of Animals (Scientific Procedures) Act 1986 (Home Office, London, United Kingdom). All of the in vivo models used the severely immunocompromised NSG (NOD.Cg PrkdcscidIl2rgtm1Wji/SzJ) mouse model (JAX mouse strain, Charles River). Mice were male and aged between 6\u20138 weeks old. Due to the characterisation, or proof of concept, nature of these experiments, and the substantial amounts of precious chemicals needed to synthesise iLH2, it was decided to engraft 4\u20135 mice for every condition in each model to ensure engraftment and survival in a least three animals for each condition. Also, no specific toxicity experiments were performed, but no adverse side effects were observed with iLH2.\n\nFor engraftment of subcutaneous tumours, FLuc expressing Raji cell lines were counted and 2 \u00d7 106 cells were pelleted for each animal to be injected. Cells were washed twice in PBS before being resuspended in plain RPMI 1% HEPES (Sigma-Aldrich) to a concentration of 2 \u00d7 107 cells/ml and were kept on ice ready for injection. Cells were injected subcutaneously (100 \u03bcl bolus) into a shaved area of the flank. Mice were left at least 5 days for tumour development before imaging.\n\nFor engraftment of systemic tumours, FLuc expressing Raji cell lines were counted and 5 \u00d7 105 cells were pelleted for each animal. If mixtures of two different FLuc expressing cell lines were used, total cell number per mouse remained at 5 \u00d7 105 cells. Cells were washed twice in PBS before being resuspended in plain RPMI 1% HEPES to a concentration of 2.5 \u00d7 106 cells/ml and were kept on ice ready for injection. Animals were transferred to a warming chamber set at 39\u201342\u00b0C to facilitate peripheral vasodilation prior to intravenous (IV) injections. Mice were placed in a restraint and cells were injected IV (200 \u03bcl bolus) into the tail vein. Mice were left at least 7 days for tumour development before imaging. For the CAR T cell model 5 \u00d7 106 CAR positive T cells were injected IV (200 \u03bcl bolus) 8 days after Raji cell engraftment.\n\nFor engraftment of intracranial tumours, FLuc expressing Raji cell lines were counted and 2 \u00d7 104 cells were pelleted for each animal. Cells were washed twice in PBS before being resuspended in PBS to a concentration of 1 \u00d7 104 cells/\u03bcl and were kept on ice ready for injection. Intracranial injections were performed using a stereotaxic frame fitted with a hamilton syringe. Cells were injected (2\u00a0\u03bcl bolus) into the right striatum (from bregma 2 mm right, 1 mm anterior, 4 mm down). Mice were left at least 7 days for tumour development before imaging.\n\n### In vivo bioluminescence imaging\n\nFor imaging of in vivo models, LH2 and iLH2 were solubilised in sterile PBS and animals were administered with substrate (2 mg (or 100 mg/kg) of either LH2 or iLH2 in 200 \u03bcl or 400 \u03bcl bolus respectively) via intraperitoneal (IP) injection. Animals were anaesthetised using 2% Isofluorine (flow rate 1\u00a0L/min O2). Spectral imaging was commenced 10 min post IP injection to allow stabilisation of light output. If the same animal was being imaged with both LH2 and iLH2, at least 24 hr was left between imaging to allow for full clearance of substrate. In vivo bioluminescent images were acquired using IVIS Spectrum (FOV 24, f/1, Medium (8)bin, automatic acquisition mode for imaging with LH2, FOV 24, f/1, Medium (8)bin, 120 s acquisition, total imaging time 24 mins for imaging with iLH2). These parameters are calculated to keep the binning, exposure time and f/stop within an optimal range for quantification. Up to five animals could be imaged at once and the stage was heated to 37\u00b0C. Open filter images were acquired prior to and post spectral imaging to confirm the stability of photon emission during spectral acquisition. Spectral imaging acquired images through 14 and 12 of the 20 nm bandpass filters on the IVIS Spectrum depending on substrate used (530\u2013830 nm for LH2 and 590\u2013830 nm for iLH2), starting from the lowest to the highest filter. It was not necessary to acquire images through all filters as the bioluminescent emissions of FLuc mutants did not cover the full spectral range from 490 to 850 nm. Living image software was used for ROI analysis of spectral images and spectral unmixing analysis. Radiance values for bioluminescence are shown using pseudo-colour scales detailed in each image. Image analysis involved placing an ROI over the tumour signal for every animal in each model. If a series if spectral images were acquired, the same ROI was placed over tumour signal in every image for each mouse. For spectral unmixing analysis, guided spectral unmixing was first used on pure expressing FLuc_green and FLuc_red populations from spectral characterisation experiments to create a library spectra for each mutant with each substrate. The relevant library spectra was then used to perform spectral unmixing on mixed FLuc_green and FLuc_red populations. Data exported to Excel (Microsoft) and Prism (Graphpad) for further analysis.\n\n### Statistical analysis\n\nWhere relevant means\u00a0\u00b1\u00a0standard deviation of data given. Statistical tests used include T test and ONE-way ANOVA with post hoc Tukey\u2019s test for multiple column comparison (Prism, Graphpad). Correlation analysis performed using Microsoft excel.\n",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "e042686e-b0ef-4b80-adc1-7618a92b55a0",
+      "submission_id": "1bc52036-ab39-4708-8ab7-10b1db08bebd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael L Dustin, University of Oxford United Kingdom\n\nReviewers:\n- Laura Mezzanotte, Erasmus University Medical Center Netherlands\n\n## Review text\n\nDOI: [10.7554/eLife.45801.021](https://doi.org/10.7554/eLife.45801.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Near-infrared dual bioluminescence imaging in vivo using infraluciferin\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and David Ron as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Laura Mezzanotte (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe work presented here represents an innovative approach and an advance in the field.\n\nEssential revisions:\n\n1) Please address if different ratios of the two enzymes expressed in one cell type be distinguished similarly to in different cells? This might be useful for gene expression studies, but would competition for substrates within a single cell cause problems?\n\n2) Can you better explain the spectral deconvolution, its limits, and address if it\u2019s at all possible to separate the two signals based on a ratio or two single wavelength bands. If possible, what are the limitations of this for users who only have access to systems with band pass filters. In this context, it was felt that Figure 1 could be improved to incorporate such discussion and better clarify the design and goals of the study.\n\n3) Please discuss how some of the best aspects of other published systems might be combined with the systems described here, for example, to do three colour BLI. Along these lines, in the second paragraph of the Discussion, is there a reason the click-beetle luciferase/naphthyl luciferin system wasn't used as benchmark? This system is mentioned in the Discussion and discounted for two-color work because of a broad emission peak. It does indeed have a broad peak, however, given the success of the spectral unmixing achieved in this study, we question whether the emission peak is so broad as to discount its use for multiplexing.\n\n4) The role of the structure in the study is not clear. The authors should better integrate the structural information or remove it to allow more of a focus on relevant information. Currently its stated that it may be valuable to improve the performance of infraluciferin, but was it of any direct use in the current work? This should be clarified.\n\n5) The nature of the green and red mutants needs more description. It is assumed the green is the same as x11 + three additional mutations but it is not clear why this mutant was engineered. It is assumed that red is x11 + S284T + R354I (or is it E?) but it is not clear why this mutant was engineered. It is also a gap in the story that there isn't any biochemical analysis on these mutants (aside from spectra). Were they purified?\n\n6) Its surprising that the very low photon yield from the infraluciferin system can enable collection of a useable signal. Can the authors comment on how the signal for infraluciferin is processed and if any special care was needed regarding substrate concentration/availability, camera settings, exposure time, binning or other strategies to enhance signal to noise. Along these lines, the authors used iLH2 concentration of 100mg/kg for their in vivo experiments. Could you go higher to enhance emission intensities? Is there toxicity data available, or would cost become a limitation?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Near-infrared dual bioluminescence imaging in mouse models of cancer using infraluciferin\" for further consideration at eLife. Your revised article has been favorably evaluated by David Ron as the Senior Editor, a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe paper should be a resource for future potential users to see an exemplar, but also have the nuts and bolts information to for potential users to effectively judge that the method might work for other applications. The comments below are an effort to incorporate the necessary information to achieve this. Please read the comments carefully and work to address them in the spirit of making this a fantastic resource. But all feel it\u2019s moving in the correct direction and this is now a minor revision that will result in a big benefit.\n\nThe reviewers have provided a set of detailed points for you to address in revision (points 1-5, the comments of reviewer 1 and points 2-3 of reviewer 1). I hope you will be able to present a revised manuscript that deals with all seven points.\n\nReviewer #1:\n\nThe authors have addressed the major issues raised in the preview round of review as clearly described in the rebuttal letter. The change in the title confers to the manuscript a clear focus on a specific application. However, the manuscript still require some improvement since some points need to be better clarified.\n\n1) In the last paragraph of the subsection \u201cSpectral characterisation of firefly luciferase mutants with LH2 and iLH2 in vivo\u201d the authors comment that the relative intensities of the luciferases are comparable, thus the dynamic range of radiance values for both enzyme will be more similar giving a more accurate comparison of the process being monitored. The sentence results vague. For example in the case one reporter is used under the control of a constitutive promoter and the second under a control of an inducible and much weaker promoter the fact that the luciferases have similar relative intensities would not help. The authors proved that they could successfully separate in signals in cases where one reporter expression is around 10 times higher than the other (e.g. in the case of 90%/10% mixed population of cells). What happens if the expression is 99% and 1% for example? Will then the process be monitored with accuracy?\n\n2) In the proof of concept experiment using CAR T cells, the authors show that red signal is present in \"green tumor only\" animals, which is probably due to leakage of green signal in the red filters even after unmixing. This demonstrates that for this application accuracy in the separation of signals may be compromised. It would be helpful if the authors explain and comment in the Results and Discussion sections how they discriminate which red signal is representative of CAR T cells and which one is not. Is it maybe just necessary to image a \"green tumor only\" animal together with the CAR T cells treated one? This is important and need to be clarified for making readers able to reproduce the results.\n\n3) In the proof of concept experiments author shows an image at day 6 in which CAR T cells highly proliferate in tumors so red and green signal originate mostly in the same location in the animals. An image at earlier time point in which CAR T cells are in lymph nodes (for example 1-24 hours after injection) will allow the reader to see red and green signals in different locations in the animals. This is a minor point but will better illustrate the power of the dual color technology for cancer immunotherapy studies.\n\n4) In the Materials and methods (subsection \u201cin vivo bioluminescence imaging\u201d) the authors report that imaging acquisition time is 120 sec. How long is the imaging session then using all the filters? More than 20 minutes? And is the emission of the reporters stable during this time? A comment about the length of the imaging session should be added in the Discussion.\n\n5) In Figure 5 the percentage of red or green injected cells should be added to the unmixed images of the animals. The figure will result then clearer and of immediate interpretation.\n\nReviewer #2:\n\nThe authors have done an acceptable (though not ideal) job of revising this manuscript. It is in my opinion suitable for publication as a marginally impactful, yet solid report.\n\n1) The manuscript needs editing from someone versed with the English language. For example, see incomplete sentence in Abstract (third sentence). As another example, though minor, the use of the word \"origins\" is awkward. The origin of luminescence emission is the photons released as a byproduct of the oxidative reaction between a luciferase and a luciferin substrate. The authors should consider an alternative word.\n\n2) The report would benefit greatly if the authors were able to share more information about their substrate formulation, specifically for the in vivo experiments. What is the buffer? Are there any adverse effects from the substrate that the formulation was designed to address? What about solubility? Does it matter what you dissolve substrate in? In its current state I do not believe a reader could reproduce the in vivo experiments.\n\n3) On another technical level, the final compound in the synthetic pathway does not appear to have been fully characterized: no HRMS and NMR spectra are in poor signal/noise ratio. The authors should consider taking advantage of the acidity of the N-acyl sulfomyl moiety, converting the final probe into its tertiary ammonium salt form to improve solubility and subsequently the quality of the NMR spectra.\n",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ba8ecd5e-9914-461b-b7cd-ad431639be0d",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C1",
+      "claim": "Bioluminescence imaging (BLI) is ubiquitous in scientific research for the sensitive tracking of biological processes in small animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Bioluminescence imaging (BLI) is ubiquitous in scientific research for the sensitive tracking of biological processes in small animal models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature establishing the widespread use of BLI.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "58e66676-ef45-4943-939d-65221725045f",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C2",
+      "claim": "Due to the attenuation of visible light by tissue, and the limited set of near-infrared bioluminescent enzymes, BLI is largely restricted to monitoring single processes in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, due to the attenuation of visible light by tissue, and the limited set of near-infrared bioluminescent enzymes, BLI is largely restricted to monitoring single processes in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about light attenuation in tissue and the limitations of available bioluminescent enzymes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "7faffb2c-cb7a-41b6-88eb-88da2d306b32",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C3",
+      "claim": "By combining stabilised colour mutants of firefly luciferase (FLuc) with the luciferin (LH2) analogue infraluciferin (iLH2), near-infrared dual BLI can be achieved in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show, that by combining stabilised colour mutants of firefly luciferase (FLuc) with the luciferin (LH2) analogue infraluciferin (iLH2), near-infrared dual BLI can be achieved in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript demonstrating dual BLI in vivo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "3b0d1454-4780-4a03-a2e9-0e99a5685fd0",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C4",
+      "claim": "The X-ray crystal structure of FLuc with a high-energy intermediate analogue, 5'-O-[N-(dehydroinfraluciferyl)sulfamoyl] adenosine (iDLSA) provides insight into the FLuc-iLH2 reaction leading to near-infrared light emission.",
+      "claim_type": "EXPLICIT",
+      "source": "The X-ray crystal structure of FLuc with a high-energy intermediate analogue, 5'-O-[N-(dehydroinfraluciferyl)sulfamoyl] adenosine (iDLSA) provides insight into the FLuc-iLH2 reaction leading to near-infrared light emission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the crystal structure data presented in the manuscript (PDB ID: 6HPS).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "e4154c28-dd5d-439a-b075-0fdaf600e1a8",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C5",
+      "claim": "iLH2 is superior to LH2 for the spectral unmixing of bioluminescent signals in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectral characterisation and unmixing validation studies reported here established that iLH2 is superior to LH2 for the spectral unmixing of bioluminescent signals in vivo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing spectral unmixing accuracy between LH2 and iLH2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "d37cb41f-cbaa-4fe0-a78a-472536c620f3",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C6",
+      "claim": "This novel near-infrared dual BLI system was applied to monitor both tumour burden and CAR T cell therapy within a systemically induced mouse tumour model.",
+      "claim_type": "EXPLICIT",
+      "source": "which led to this novel near-infrared dual BLI system being applied to monitor both tumour burden and CAR T cell therapy within a systemically induced mouse tumour model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing dual imaging of tumour and CAR T cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "1b4e95ea-547a-4d8d-b743-e43879b38756",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C7",
+      "claim": "Bioluminescence imaging (BLI) is used extensively for the sensitive, longitudinal and high-throughput monitoring of biological processes in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Bioluminescence imaging (BLI) is used extensively for the sensitive, longitudinal and high-throughput monitoring of biological processes in vivo (Xu et al., 2016; Paley and Prescher, 2014; Mezzanotte et al., 2017; Yao et al., 2018; Yeh and Ai, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "56fdc88a-e576-45dd-ab48-8b90ece323a9",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C8",
+      "claim": "Bioluminescence light emission is produced through the catalysis of a small molecule substrate, most commonly D-luciferin (D-LH2), by a luciferase enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Bioluminescence light emission is produced through the catalysis of a small molecule substrate, most commonly D-luciferin (D-LH2), by a luciferase enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established scientific knowledge about bioluminescence mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "f131ced4-6ecd-43e5-8fc2-0d482757a7c7",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C9",
+      "claim": "The mutagenesis of bioluminescent enzymes has improved the sensitivity and accuracy of BLI in small animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutagenesis of bioluminescent enzymes has improved the sensitivity and accuracy of BLI in small animals (Branchini et al., 2010), (Iwano et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "3365d983-27ec-4508-828d-0f406ffd17fd",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C10",
+      "claim": "Despite its widespread use in scientific research, BLI is still largely restricted to tracking a single parameter in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite its widespread use in scientific research, BLI is still largely restricted to tracking a single parameter in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about the limitations of current BLI technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "036b10f0-a150-48d6-96a6-66980b512b35",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C11",
+      "claim": "The ability to discretely monitor two biological parameters (dual-BLI) simultaneously within a single animal is highly desirable.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to discretely monitor two biological parameters (dual-BLI) simultaneously within a single animal is highly desirable (Xu et al., 2016) with potential uses ranging from the monitoring of tumour burden alongside cellular therapy, to the visualisation of dynamic biological processes such as protein-protein interactions (Prescher and Contag, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature discussing the need for dual-BLI.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "aa04520b-e1f4-450c-9cee-c9f5675ebcb8",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C12",
+      "claim": "Previous approaches to dual-BLI have been disappointing.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous approaches to dual-BLI have been disappointing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' assessment of prior work, supported by subsequent discussion of limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "8e6d5b72-a428-42f4-ab99-7dd894e3365a",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C13",
+      "claim": "The use of multiple bioluminescent proteins which catalyse different substrates is the most frequently used method but suffers from a number of limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of multiple bioluminescent proteins which catalyse different substrates is the most frequently used method but suffers from a number of limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of existing dual-BLI approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "4942bec6-a8fc-4f10-a3f3-478a01358703",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C14",
+      "claim": "Sequential substrate administration is normally required for dual-BLI using multiple bioluminescent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequential substrate administration is normally required, in addition this method commonly employs a combination of a coelenterazine and a D-LH2 utilising luciferase (with the blue emission from the former being heavily absorbed compared to the yellow-green emission from the latter) (Maguire et al., 2013), (Stacer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "ea13192d-7802-476d-91b8-0654a0403315",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C15",
+      "claim": "Differences in biodistribution and reaction kinetics of two substrates can make image co-registration and interpretation difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in biodistribution and reaction kinetics of two substrates can make image co-registration and interpretation difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of substrate behavior in vivo.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "6ac583d7-18e3-4e45-b7ff-241bbc99accf",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C16",
+      "claim": "The development of orthogonal luciferase-luciferin pairs has solved some of these limitations but this approach still requires multiple substrate administrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The development of orthogonal luciferase-luciferin pairs has solved some of these limitations but this approach still requires multiple substrate administrations (Rathbun et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "1a80ff37-42ad-4697-99ea-5a9f053c2203",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C17",
+      "claim": "An ideal dual-BLI approach would use two spectrally distinct bioluminescent proteins utilising a single substrate followed by spectral unmixing of the signal.",
+      "claim_type": "EXPLICIT",
+      "source": "An ideal dual-BLI approach would use two spectrally distinct bioluminescent proteins utilising a single substrate followed by spectral unmixing of the signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the authors' reasoning about optimal dual-BLI design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "4124661f-e5e1-43bf-9184-18eb42995bb0",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C18",
+      "claim": "This approach is not currently feasible using LH2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this approach is not currently feasible using LH2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' assessment of current technology limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "4843a49c-c30b-4238-b019-66470b6c98f6",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C19",
+      "claim": "Although luciferases can be mutated to alter the colour of their emission, a limit appears to have been reached for mutational colour modulation of firefly and related luciferases.",
+      "claim_type": "EXPLICIT",
+      "source": "Although luciferases can be mutated to alter the colour of their emission, a limit appears to have been reached for mutational colour modulation of firefly and related luciferases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of existing luciferase engineering efforts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "f814999b-483b-4c0c-8ba5-2ab850d2bdda",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C20",
+      "claim": "The most red-shifted of these enzymes have maximal peak emissions between 610 and 620 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The most red-shifted of these enzymes have maximal peak emissions between 610 and 620 nm (Branchini et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "54c57230-621d-4cdf-8d81-02e2b3134182",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C21",
+      "claim": "This is insufficient for dual BLI in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This is insufficient for dual BLI in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' reasoning about spectral requirements for dual-BLI.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "fe197dfe-76dd-4b29-bdbe-6989aa112914",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C22",
+      "claim": "Due to the differential attenuation of light by biological tissue spectral unmixing of a red-shifted luciferase paired with a standard or green-shifted enzyme is challenging, especially in deeper tissue models.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the differential attenuation of light by biological tissue spectral unmixing of a red-shifted luciferase paired with a standard or green-shifted enzyme is challenging, especially in deeper tissue models (Mezzanotte et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature and knowledge of light attenuation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "d3fbf0b9-da81-43b6-a91b-45fc1b8dcde7",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C23",
+      "claim": "Shifting the emission of both enzymes into the near infrared must be achieved to allow adequate unmixing.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifting the emission of both enzymes into the near infrared must be achieved to allow adequate unmixing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' reasoning about spectral requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "a24103d6-3671-4f41-8619-fb2872e101c3",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C24",
+      "claim": "We recently described the LH2 analogue infraluciferin (iLH2) which has a luciferase dependent red-shifted peak emission of up to 706 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently described the LH2 analogue infraluciferin (iLH2) which has a luciferase dependent red-shifted peak emission of up to 706 nm (Jathoul et al., 2014) (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors and reference to Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "80ec4fbe-b4de-4a3a-b54e-5e7d8535ddb4",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C25",
+      "claim": "Combining colour modulation of bioluminescence through mutagenesis of the FLuc protein along with red-shifting bioluminescence by chemical modification of LH2 would allow dual-BLI.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesised that combining colour modulation of bioluminescence through mutagenesis of the FLuc protein along with red-shifting bioluminescence by chemical modification of LH2 would allow dual-BLI, an approach that has not been described previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the authors' hypothesis, which is then tested experimentally.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "9ef873f0-8825-4ec4-addb-6e64049f8b2d",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C26",
+      "claim": "This approach has not been described previously.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesised that combining colour modulation of bioluminescence through mutagenesis of the FLuc protein along with red-shifting bioluminescence by chemical modification of LH2 would allow dual-BLI, an approach that has not been described previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "a0d57151-fa77-4d1a-8bf7-b3d5e9dd5eb2",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C27",
+      "claim": "The X-ray crystal structure of FLuc in complex with iDLSA was resolved to a 3.2 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of Firefly luciferase (FLuc) in complex with the infraluciferyl-adenylate analogue 5'-O-[(N-dehydroinfraluciferyl)-sulfamoyl] adenosine (iDLSA) resolved to a 3.2 \u00c5 resolution (PDB ID: 6HPS).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the crystal structure data and Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "da223b07-b067-490f-a1f5-80a1b7f563d8",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C28",
+      "claim": "iDLSA captures FLuc in the adenylation step of the light emitting reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "iDLSA captures FLuc in the adenylation step of the light emitting reaction (1H and 13C data spectra synthetic chemical compounds can be found in).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the nature of the iDLSA compound and knowledge of the luciferase reaction mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "3681f330-e7ed-4008-bd33-05cf22ae5fb1",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C29",
+      "claim": "The conformation of the iLH2 heterocyclic rings with respect to the alkene, as drawn in Figure 1a, is confirmed to be as predicted by computational studies and is the most likely conformation of the light emitting form.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformation of the iLH2 heterocyclic rings with respect to the alkene, as drawn in Figure 1a, is confirmed to be as predicted by computational studies and is the most likely conformation of the light emitting form (Berraud-Pache and Navizet, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the crystal structure data and citation to computational studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "b09d634b-cca2-4e74-a0e4-befe604b48fe",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C30",
+      "claim": "The structures show good alignment to each other, however there is evidence of a more open active site supported by a reduction in root-mean-squared (RMSD) score when aligned based on just the N-terminal domain of FLuc rather than the entire structure (RMSD = 0.688 and 0.783 respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The structures show good alignment to each other, however there is evidence of a more open active site supported by a reduction in root-mean-squared (RMSD) score when aligned based on just the N-terminal domain of FLuc rather than the entire structure (RMSD = 0.688 and 0.783 respectively) (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis data and Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "5030437a-d278-4def-ae30-aad477cfaa0e",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C31",
+      "claim": "All FLuc residues in close proximity (4 \u00c5) to DLSA were also found to be within the same distance to iDLSA, with the exception of Arg437, >4 \u00c5 away from iDLSA.",
+      "claim_type": "EXPLICIT",
+      "source": "All FLuc residues in close proximity (4 \u00c5) to DLSA were also found to be within the same distance to iDLSA, with the exception of Arg437, >4 \u00c5 away from iDLSA (Figure 1d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis data and Figures 1d and 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "9e69ed6f-152a-4c1a-a037-61552877b1f9",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C32",
+      "claim": "Despite differences in the conformation of iDLSA compared to DLSA in both 4G36 and L. cruciata 2D1S structures, the positions of the phenolic groups are quite similar (~0.5 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that despite differences in the conformation of iDLSA compared to DLSA in both 4G36 and L. cruciata 2D1S (Nakatsu et al., 2006) structures, the positions of the phenolic groups are quite similar (~0.5 \u00c5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural comparison data and citation to prior structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "56874084-cf7b-494f-8746-97a6d0121722",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C33",
+      "claim": "The altered position of the benzothiazole ring and the greater size of iDLSA may be the cause of a series of small active site changes that affect residues Glu311, Arg337, Asn338, Gly339, and Thr343 resulting in a total of six differences in H-bonding interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The altered position of the benzothiazole ring and the greater size of iDLSA may be the cause of a series of small active site changes that affect residues Glu311, Arg337, Asn338, Gly339, and Thr343 resulting in a total of six differences in H-bonding interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on structural analysis and represents an inference about the cause of observed changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "52b13809-77d2-4209-956b-20bdcf3af51b",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C34",
+      "claim": "When specific residues implicated in the light emitting reaction were measured between the two structures differences ranged from 0.7 to 1.6 \u00c5; with the biggest divergence being Lys529 which had a 2.4 \u00c5 difference in the nitrogen residue found in the side chain of the amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "When specific residues implicated in the light emitting reaction (Sundlov et al., 2012) were measured between the two structures differences ranged from 0.7 to 1.6 \u00c5; with the biggest divergence being Lys529 (found in the C-terminal cap) which had a 2.4 \u00c5 difference in the nitrogen residue found in the side chain of the amino acid (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural measurement data, citation, and Figure 1f.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "60fcd24c-9f6d-4f22-8cac-7b9f4793d007",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C35",
+      "claim": "The resulting increase in active site polarity due to the rotation of the C-terminal cap, if maintained during the light emitting conformation, could contribute to the red-shift in light emission.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting increase in active site polarity due to the rotation of the C-terminal cap, if maintained during the light emitting conformation, could contribute to the red-shift in light emission (Nakatsu et al., 2006), in addition to the increased \u03c0-conjugation through the chemical structure of the emitter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on structural observations and citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "df613a94-6fab-41bc-8c67-aa6846938073",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C36",
+      "claim": "The increased \u03c0-conjugation through the chemical structure of the emitter could contribute to the red-shift in light emission.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting increase in active site polarity due to the rotation of the C-terminal cap, if maintained during the light emitting conformation, could contribute to the red-shift in light emission (Nakatsu et al., 2006), in addition to the increased \u03c0-conjugation through the chemical structure of the emitter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on chemical knowledge about conjugation effects on emission wavelength.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "645888ab-2ace-42dd-a61b-333080fd2fce",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C37",
+      "claim": "This X-ray structure will help the future design of more efficient FLuc-iLH2 pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "This X-ray structure will help the future design of more efficient FLuc-iLH2 pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative about future applications of the structural data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "46913d39-03e7-4d22-80f3-01fe8f1746a6",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C38",
+      "claim": "Both CycLuc1 and Aka-Lumine-HCL showed a consistent red-shift in peak bioluminescence emission wavelength to ~600 nm and ~660 nm respectively for all FLuc mutants, making these substrates unsuitable for dual colour BLI.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CycLuc1 and Aka-Lumine-HCL showed a consistent red-shift in peak bioluminescence emission wavelength to ~600 nm and ~660 nm respectively for all FLuc mutants, making these substrates unsuitable for dual colour BLI (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "ebf39d99-d3a7-4ba2-9fa4-add99eacdc47",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C39",
+      "claim": "With LH2 both FLuc_natural and FLuc_green have a peak emission of ~560 nm, whilst FLuc_red has a peak emission of ~620 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The data confirmed that with LH2 both FLuc_natural and FLuc_green have a peak emission of ~560 nm, whilst FLuc_red has a peak emission of ~620 nm (Figure 2\u2014figure supplement 1) (Jathoul, 2012), (Branchini et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "c0d9c2a0-d58e-4149-bed5-deb9aa5fd6fb",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C40",
+      "claim": "When tested with iLH2 all FLuc mutants were shifted >100 nm into the near infrared but maintained their relative spectral shift [FLuc_green ~ 680 nm, FLuc_natural ~ 700 nm and FLuc_red ~ 720 nm].",
+      "claim_type": "EXPLICIT",
+      "source": "When tested with iLH2 all FLuc mutants were shifted >100 nm into the near infrared but maintained their relative spectral shift [FLuc_green ~ 680 nm, FLuc_natural ~ 700 nm and FLuc_red ~ 720 nm (Figure 2\u2014figure supplement 1)].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "a1629a0d-8ca4-4db6-a5a1-cf25888b46a3",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C41",
+      "claim": "Correlation analysis was performed on this data comparing input cellular proportions with unmixed signal, giving R2 values of 0.9983 and 0.9972 for LH2 and iLH2 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation analysis was performed on this data comparing input cellular proportions with unmixed signal, giving R2 values of 0.9983 and 0.9972 for LH2 and iLH2 respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "d417ccee-7ae9-4deb-95ad-dd4beb9382c5",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C42",
+      "claim": "For LH2, the use of 3 bandpass filters (500 nm, 660 nm, 820 nm) gave an R2 value of 0.9958.",
+      "claim_type": "EXPLICIT",
+      "source": "For LH2, the use of 3 bandpass filters (500 nm, 660 nm, 820 nm) gave an R2 value of 0.9958",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of experimental data with reduced filter sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "b07e847c-3e9f-42ae-924e-3e30c0eb6053",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C43",
+      "claim": "For iLH2, the use of 3 bandpass filters (600 nm, 700 nm, 800 nm) gave an R2 value of 0.9937.",
+      "claim_type": "EXPLICIT",
+      "source": "For iLH2, the use of 3 bandpass filters (600 nm, 700 nm, 800 nm) gave an R2 value of 0.9937.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of experimental data with reduced filter sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "6841cf23-bd85-4842-bd19-fc43bd5faea4",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C44",
+      "claim": "The highest accuracy of spectral unmixing we could achieve using just two filters were R2 values of 0.9776 and 0.9775 for LH2 (500 nm and 720 nm) and iLH2 (600 nm and 720 nm), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest accuracy of spectral unmixing we could achieve using just two filters were R2 values of 0.9776 and 0.9775 for LH2 (500 nm and 720 nm) and iLH2 (600 nm and 720 nm), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of experimental data with minimal filter sets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "c125db4a-fec2-4b45-9b05-e43ae3da4781",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C45",
+      "claim": "Spectral bioluminescence imaging and unmixing has successfully been performed to reflect differing expression levels of FLuc_green and FLuc_red expressed at different levels in the same cell with both LH2 and iLH2.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, an experiment was carried out where FLuc_green and FLuc_red have been expressed at different levels in the same cell. Spectral bioluminescence imaging and unmixing has subsequently been performed to successfully reflect these differing expression levels with both LH2 and iLH2 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "3eeb3483-2323-41a9-ad0e-939638e47f6a",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C46",
+      "claim": "Both LH2 and iLH2 can be used for dual bioluminescence reporting in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "This spectral imaging data show that both LH2 and iLH2 can be used for dual bioluminescence reporting in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the in vitro experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "3ac6c2e3-5432-4f1b-a4b5-7f429642219c",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C47",
+      "claim": "When imaged with LH2 both FLuc_green and FLuc_red had an average peak emission between 610\u2013630 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The data show that when imaged with LH2 both FLuc_green and FLuc_red had an average peak emission between 610\u2013630 nm",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo spectral imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "c00e016b-f991-4114-86a4-b6a6b5d3c8e8",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C48",
+      "claim": "The peak emission for FLuc_red is maintained as in vitro whereas the peak emission of FLuc_green is red shifted by ~60 nm in vivo when imaged with LH2.",
+      "claim_type": "EXPLICIT",
+      "source": "meaning the peak emission for FLuc_red is maintained as in vitro whereas the peak emission of FLuc_green is red shifted by ~60 nm in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of in vitro and in vivo spectral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "cdb6c9ab-25f8-4f73-9b84-f472f8fa584c",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C49",
+      "claim": "FLuc_green exhibited a bimodal spectral distortion, with a minor peak at ~560 nm when imaged with LH2.",
+      "claim_type": "EXPLICIT",
+      "source": "FLuc_green also exhibited a bimodal spectral distortion, with a minor peak at ~560 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo spectral imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "70c3b30a-dd5e-4f81-a9c1-cd86f3f74bdf",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C50",
+      "claim": "In contrast to LH2, FLuc_green and FLuc_red had a ~ 20 nm separation of average peak emissions in all three animal models with iLH2 (FLuc_green ~ 700 nm and FLuc_red ~720 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to LH2, FLuc_green and FLuc_red had a ~ 20 nm separation of average peak emissions in all three animal models with iLH2 (FLuc_green ~ 700 nm and FLuc_red ~720 nm) (Figure 4d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in vivo spectral imaging data shown in Figures 4d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "0638686c-b338-487d-b397-a5b5c96687cd",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C51",
+      "claim": "With LH2 FLuc_red had an average radiance that was 42 (subcutaneous), 4.12 (systemic) and 7.28 (intracranial) times brighter than FLuc_green.",
+      "claim_type": "EXPLICIT",
+      "source": "With LH2 FLuc_red had an average radiance that was 42 (subcutaneous), 4.12 (systemic) and 7.28 (intracranial) times brighter than FLuc_green (Figure 4a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of in vivo imaging data shown in Figures 4a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "31e3eb79-6705-4f57-8e8e-f4dc2dd34518",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C52",
+      "claim": "When imaged with iLH2 the average radiance between FLuc_green and FLuc_red was 1.38 (subcutaneous), 1.2 (systemic) and 1.51 (intracranial) times different.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas, when imaged with iLH2 the average radiance between FLuc_green and FLuc_red was 1.38 (subcutaneous), 1.2 (systemic) and 1.51 (intracranial) times different (Figure 4d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of in vivo imaging data shown in Figures 4d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "b2936506-28ea-4ca0-beec-51d438f81d5e",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C53",
+      "claim": "No statistically significant difference in relative intensities between FLuc_green and FLuc_red was found in tumour models imaged with iLH2 (p=0.3414, 0.4594 and 0.6153 for the subcutaneous, systemic and intracranial tumour models respectively, T test).",
+      "claim_type": "EXPLICIT",
+      "source": "No statistically significant difference in relative intensities between FLuc_green and FLuc_red was found in tumour models imaged with iLH2 (p=0.3414, 0.4594 and 0.6153 for the subcutaneous, systemic and intracranial tumour models respectively, T test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "7bebf474-f700-46c6-a5a9-04528a28efc2",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C54",
+      "claim": "This comparability of relative intensities between FLuc_green and FLuc_red with iLH2 means that if used as genetic reporters for dual imaging, the dynamic range of radiance values for both enzymes will be more similar, therefore giving a more accurate comparison of the processes being monitored.",
+      "claim_type": "EXPLICIT",
+      "source": "This comparability of relative intensities between FLuc_green and FLuc_red with iLH2 means that if used as genetic reporters for dual imaging, the dynamic range of radiance values for both enzymes will be more similar, therefore giving a more accurate comparison of the processes being monitored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental data about relative intensities.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "036aea44-152e-47f4-89c3-864574b171cf",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C55",
+      "claim": "A correlation of 0.99 was found with iLH2 (R2 value, SD = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "A correlation of 0.99 was found with iLH2 (R2 value, SD = 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of spectral unmixing validation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "09be2d53-d809-4285-88fb-b4a13986ac15",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C56",
+      "claim": "LH2 had a correlation of 0.89 (R2 value, SD = 0.06), which was significantly different from the R2 values obtained by flow cytometry (p<0.0001, ONE-Way ANOVA with post hoc Tukey test).",
+      "claim_type": "EXPLICIT",
+      "source": "LH2 had a correlation of 0.89 (R2 value, SD = 0.06), which was significantly different from the R2 values obtained by flow cytometry (p<0.0001, ONE-Way ANOVA with post hoc Tukey test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of spectral unmixing validation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "871dffcb-dfcd-40f3-9271-ef49752244d4",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C57",
+      "claim": "No significant difference was found between R2 values determined by flow cytometry and unmixed bioluminescence signal using iLH2.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference was found between R2 values determined by flow cytometry and unmixed bioluminescence signal using iLH2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of validation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "49f267b4-9da4-4a6a-907c-869827101da1",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C58",
+      "claim": "Significant differences were found between the percentage unmixed signal using LH2 and cellular proportions determined by flow cytometry, with p values of < 0.0001, 0.003, 0.0042 and 0.0056 for the 90%, 75%, 50% and 25% FLuc_green conditions respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, significant differences were found between the percentage unmixed signal using LH2 and cellular proportions determined by flow cytometry, with p values of < 0.0001, 0.003, 0.0042 and 0.0056 for the 90%, 75%, 50% and 25% FLuc_green conditions respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of validation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "928ab4c9-5939-4f94-ad7d-675937a6fd4b",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C59",
+      "claim": "No significant difference was found between percentage unmixed signal using iLH2 and cellular proportions determined by flow cytometry, except for the 90% FLuc_green condition (p=0.0257).",
+      "claim_type": "EXPLICIT",
+      "source": "No significant difference was found between percentage unmixed signal using iLH2 and cellular proportions determined by flow cytometry, except for the 90% FLuc_green condition (p=0.0257).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of validation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "e0b65cfb-9895-47f6-8dba-2da78b316f71",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C60",
+      "claim": "iLH2 is superior to LH2 for in vivo dual reporting applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, iLH2 is superior to LH2 for in vivo dual reporting applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the comparative experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "550c23f2-a148-453f-ae5f-83952778f7bc",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C61",
+      "claim": "The CAR T cell treatment mice initially had a higher proportion of FLuc_green signal, which was then surpassed by FLuc_red by the final imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the CAR T cell treatment mice initially had a higher proportion of FLuc_green signal, which was then surpassed by FLuc_red by the final imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by longitudinal imaging data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "d58f9026-0a4b-4c5c-a975-a0a9974058a3",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C62",
+      "claim": "This represents the homing of CAR T cells expressing FLuc_red to the FLuc_green expressing Raji B lymphoma tumour, followed by the expansion of the CAR T cells and the reduction in the tumour growth in the treatment mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This represents the homing of CAR T cells expressing FLuc_red to the FLuc_green expressing Raji B lymphoma tumour, followed by the expansion of the CAR T cells and the reduction in the tumour growth in the treatment mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an interpretation of the imaging data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "b969d446-1253-4645-8a93-6bcd4d0ec820",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C63",
+      "claim": "Currently, most dual BLI has been achieved with two luciferases each utilising a different substrate, one of which is normally the auto luminescent coelenterazine.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, most dual BLI has been achieved with two luciferases each utilising a different substrate, one of which is normally the auto luminescent coelenterazine (Maguire et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of existing dual-BLI approaches and citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "b3ad0d4a-c57f-4ea1-9568-841205232048",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C64",
+      "claim": "Mezzanotte et al tested dual BLI in vivo using LH2 with the green luciferase (CBG99) with the red luciferase (Ppy RE8).",
+      "claim_type": "EXPLICIT",
+      "source": "for instance Mezzanotte et al tested dual BLI in vivo using LH2 with the green luciferase (CBG99) with the red luciferase (Ppy RE8) (Mezzanotte et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "98f05fa6-522b-4f11-bc11-1f8866329b68",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C65",
+      "claim": "In deeper tissues the shorter wavelength component of green emitting enzyme emission is heavily attenuated by mammalian tissues leaving an 'in vivo spectrum' which is almost indistinguishable from that of the red luciferase.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in deeper tissues the shorter wavelength component of green emitting enzyme emission is heavily attenuated by mammalian tissues leaving an 'in vivo spectrum' which is almost indistinguishable from that of the red luciferase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of light attenuation in tissue and citation to prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "6f7b43f7-6640-4985-baf0-84d0ff30c322",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C66",
+      "claim": "Whilst in vitro the spectra could be easily distinguished in vivo the spectral separation between the two FLuc enzymes was lost due to the differential attenuation of the green enzyme by biological tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst in vitro the spectra could be easily distinguished (Figure 2) in vivo the spectral separation between the two FLuc enzymes was lost due to the differential attenuation of the green enzyme by biological tissue (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "41222661-792a-400e-a9f7-487dda2bb90e",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C67",
+      "claim": "Dual BLI with a single substrate in the near-infrared should be better; this has been described using BRET based reporters with an coelenterazine derived substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual BLI with a single substrate in the near-infrared should be better; this has been described using BRET based reporters with an coelenterazine derived substrate (Rumyantsev et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on reasoning and citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "d523eee5-6ae5-4a20-bf72-c0365e987219",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C68",
+      "claim": "Red-shifted luciferin analogues have been reported, including CycLuc1 and Aka-Lumine, however neither permit variation in emission spectra with different Luciferase mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, red-shifted luciferin analogues have been reported. These include CycLuc1 and Aka-Lumine, however neither permit variation in emission spectra with different Luciferase mutants (Evans et al., 2014), (Kuchimaru et al., 2016; Iwano et al., 2018) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and experimental data shown in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "ecb857aa-2ec0-4c2c-a1ac-140826a1ba61",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C69",
+      "claim": "Two Naphthyl luciferins, NH2-NpLH2 and OH-NpLH2, were reported to red shift the in vitro bioluminescence emission of CBR to 664 nm and 758 nm respectively (emission max 614 nm with LH2).",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, two Naphthyl luciferins, NH2-NpLH2 and OH-NpLH2, were reported to red shift the in vitro bioluminescence emission of CBR to 664 nm and 758 nm respectively (emission max 614 nm with LH2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "beb48295-8888-4f50-b2ee-3862cd6ed27e",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C70",
+      "claim": "NH2-NpLH2 was shown to have an in vitro peak emission of 730 nm with an optimised version of CBR (CBR2).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NH2-NpLH2 was shown to have an in vitro peak emission of 730 nm with an optimised version of CBR (CBR2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "cfd711ad-5677-4951-aff9-7331ad9babe1",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C71",
+      "claim": "The potential application of CBR and CBR2 with NH2-NpLH2 for dual-BLI in vivo was not explored.",
+      "claim_type": "EXPLICIT",
+      "source": "The potential application of CBR and CBR2 with NH2-NpLH2 for dual-BLI in vivo was not explored",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of what was reported in the cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "27323986-1228-4628-b777-2813b881d053",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C72",
+      "claim": "The reported broad emission spectrum of optCBR2 in live cells is likely to make any near-infrared dual BLI with NH2-NpLH2 challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "and the reported broad emission spectrum of optCBR2 in live cells is likely to make any near-infrared dual BLI with NH2-NpLH2 challenging, however this approach cannot be discounted (Hall et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "7fbfa74d-ded6-4162-a908-8051619fe5a8",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C73",
+      "claim": "iLH2 has a near-infrared emission and in contrast to other LH2 analogues maintains the 6' hydroxyl benzothiazole group of LH2 that preserves the colour-shifts of mutant luciferases.",
+      "claim_type": "EXPLICIT",
+      "source": "We described previously iLH2, which has a near-infrared emission and in contrast to other LH2 analogues maintains the 6' hydroxyl benzothiazole group of LH2 that preserves the colour-shifts of mutant luciferases (Jathoul et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "9dcb8629-13b0-4e4b-8d3b-ceb4fd88d41f",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C74",
+      "claim": "Analysis of the x-ray crystal structure of FLuc in complex with the iLH2 analogue (iDLSA) revealed that the hydrogen-bonding network, thought to be critical in stabilising the phenolate ion of the emitter, is disrupted in the FLuc-iDLSA due to the accommodation of the larger iLH2 substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the x-ray crystal structure of FLuc in complex with the iLH2 analogue (iDLSA) revealed that the hydrogen-bonding network, thought to be critical in stabilising the phenolate ion of the emitter, is disrupted in the FLuc-iDLSA due to the accommodation of the larger iLH2 substrate (Branchini et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis data and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "626bc954-b3b9-4e57-9180-0f562d94edac",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C75",
+      "claim": "This enables full charge delocalization of the phenolate ion, in addition to extended conjugation, resulting in a red-shifted emission as suggested by homology modelling experiments with the recently described near infrared emitting naphthyl analogue.",
+      "claim_type": "EXPLICIT",
+      "source": "This enables full charge delocalization of the phenolate ion, in addition to extended conjugation, resulting in a red-shifted emission as suggested by homology modelling experiments with the recently described near infrared emitting naphthyl analogue (Hall et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on structural data and citation to computational work.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "2d6caf59-1a49-4623-98e7-b63d1391747e",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C76",
+      "claim": "Evidence for the disruption of the network is the absence of a H-bond between Arg337 and Glu311 that is found in the DLSA structures of FLuc and L. cruciata Luc.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for the disruption of the network is the absence of a H-bond between Arg337 and Glu311 that is found in the DLSA structures of FLuc and L. cruciata Luc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural comparison data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "20dfca1e-b376-41d5-a4c4-6c8dcb068955",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C77",
+      "claim": "This H-bonding interaction has been proposed to be important for stabilising an active site conformation for green light emission.",
+      "claim_type": "EXPLICIT",
+      "source": "This H-bonding interaction has been proposed to be important for stabilising an active site conformation for green light emission (Viviani et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "70075213-789b-4096-84a5-e02e501b1bd5",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C78",
+      "claim": "The crystal structure reported here has captured FLuc in the adenylation step of the reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "It must be noted that the crystal structure reported here has captured FLuc in the adenylation step of the reaction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the nature of the crystallized complex.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "94967241-7d75-4987-817d-dc8086abec9e",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C79",
+      "claim": "Further computational modelling/crystal structure elucidation would be expected to provide further information on the light-emitting step of the reaction with iLH2.",
+      "claim_type": "EXPLICIT",
+      "source": "therefore further computational modelling/crystal structure elucidation would be expected to provide further information on the light-emitting step of the reaction with iLH2 (Nakatsu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative about future work needed.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "e7c67544-85ce-41e6-b2f9-8e71faa0144e",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C80",
+      "claim": "The more open adenylation conformation of FLuc -iDLSA may affect the adenylate significantly, altering light production by decreasing the yield of the electronically excited state emitter and/or the efficiency in which the emitter produces a photon.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the more open adenylation conformation of FLuc -iDLSA may affect the adenylate significantly, altering light production by decreasing the yield of the electronically excited state emitter and/or the efficiency in which the emitter produces a photon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "6a9d04d9-4eb9-448b-985d-7093acad7980",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C81",
+      "claim": "Small differences in the binding position of the adenylate seen here, caused by positional changes of key active site residues could have a similar effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, small differences in the binding position of the adenylate seen here, caused by positional changes of key active site residues could have a similar effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on structural observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "5d42c22f-73f3-44ba-9b80-ccf16d7f8beb",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C82",
+      "claim": "iLH2 preserves the colour modulation of mutant luciferases (in addition to the 100 nm red shift).",
+      "claim_type": "EXPLICIT",
+      "source": "Given that iLH2 preserves the colour modulation of mutant luciferases (in addition to the 100 nm red shift), we set about to explore dual-BLI with iLH2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on prior experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "9a0f1877-263f-4ac5-a54d-7ffaf2ab8512",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C83",
+      "claim": "FLuc_green (V241I/G246A/F250S) and Fluc_red (S284T) exhibit a wide separation in peak emission wavelength, and were also balanced in their relative intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified two stabilised FLuc enzymes with colour shifting mutations: FLuc_green (V241I/G246A/F250S) and Fluc_red (S284T). Both exhibit a wide separation in peak emission wavelength, and were also balanced in their relative intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental characterization data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "796001ec-5668-49e2-badd-85ed50cfb6d4",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C84",
+      "claim": "The near-infrared emission of the FLuc mutants with iLH2 meant spectral separation was maintained for all animal tumour models.",
+      "claim_type": "EXPLICIT",
+      "source": "The near-infrared emission of the FLuc mutants with iLH2 meant spectral separation was maintained for all animal tumour models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in vivo imaging data across multiple tumor models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "154d7f08-85f4-4766-aa2e-faea7f956f16",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C85",
+      "claim": "The spectra of the two FLuc mutants remained consistent over tissue depth, meaning this dual BLI system could be applied to animal models without prior spectral characterisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the spectra of the two FLuc mutants remained consistent over tissue depth, meaning this dual BLI system could be applied to animal models without prior spectral characterisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the consistency of spectra across different tissue depths.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "6cc14c4a-0f41-4337-bf20-fa481ea436b4",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C86",
+      "claim": "One potential limitation of this system in its current state is the lower quantum yield of the FLuc-iLH2 reaction when compared to the FLuc-LH2 reaction,~2\u20133 orders of magnitude dimmer.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential limitation of this system in its current state is the lower quantum yield of the FLuc-iLH2 reaction when compared to the FLuc-LH2 reaction,~2\u20133 orders of magnitude dimmer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of brightness between the two substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "e6f6a61a-5135-423a-bbce-7d7137e7480b",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C87",
+      "claim": "In this study, all mice were successfully spectrally imaged with both LH2 and iLH2, which can be attributed to the sensitivity of the photon counting capabilities of the CCD cameras fitted in optical imagers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in this study, all mice were successfully spectrally imaged with both LH2 and iLH2, which can be attributed to the sensitivity of the photon counting capabilities of the CCD cameras fitted in optical imagers (Cool et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental success and citation about camera sensitivity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "a50b8c07-cded-421d-a3ce-31755f5a15a7",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C88",
+      "claim": "The crystal structure reported here will be important for further optimisation of this near-infrared dual BLI system, particularly to increase the brightness of the current enzymes with iLH2, as well as the discovery of novel luciferase colour-mutants which could be used for multi-coloured BLI in the near-infrared.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure reported here will be important for further optimisation of this near-infrared dual BLI system, particularly to increase the brightness of the current enzymes with iLH2, as well as the discovery of novel luciferase colour-mutants which could be used for multi-coloured BLI in the near-infrared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative about future applications of the structural data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "f8e44ab9-f202-40e8-a891-e115bde627f1",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C89",
+      "claim": "The use of this system in combination with luciferases utilising other substrates for multi-coloured BLI could also be explored.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the use of this system in combination with luciferases utilising other substrates for multi-coloured BLI could also be explored, as well as its application to monitoring more complex processes in animal models (Kleinovink et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative about future applications.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "09340626-edfb-4120-8416-044ea3169fae",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "claim_id": "C90",
+      "claim": "This work represents an important step forward in increasing the utility of BLI and opens up the window for multi-coloured BLI in the near-infrared.",
+      "claim_type": "EXPLICIT",
+      "source": "This work represents an important step forward in increasing the utility of BLI and opens up the window for multi-coloured BLI in the near-infrared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is the authors' assessment of the significance of their work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "de673254-1da1-40ed-ab32-1b62c9164ac3",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The X-ray crystal structure of FLuc in complex with iDLSA was resolved to 3.2 \u00c5 resolution, capturing the enzyme in the adenylation step. Structural analysis reveals a more open active site compared to the DLSA complex, with disruption of the hydrogen-bonding network (particularly the Arg337-Glu311 H-bond), altered positions of key residues (especially Lys529 with 2.4 \u00c5 shift), and conformational changes that may contribute to the red-shifted emission through increased active site polarity and extended \u03c0-conjugation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C36 and C74-C78 collectively provide strong structural evidence from crystallography (3.2 \u00c5 resolution, PDB 6HPS), detailed comparative analysis with prior structures (DLSA, 2D1S), and mechanistic interpretation linking structural changes to spectral properties. The structural data is well-documented with specific measurements (RMSD values, distance measurements) and supported by citations to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "bf7aaf0d-cb15-4c88-b662-22ce48158e18",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "iLH2 maintains the color modulation properties of FLuc mutants while red-shifting all emissions >100 nm into the near-infrared. With iLH2, FLuc_green, FLuc_natural, and FLuc_red emit at ~680 nm, ~700 nm, and ~720 nm respectively, maintaining their relative spectral separation. In contrast, other luciferin analogues (CycLuc1, Aka-Lumine-HCL) show consistent red-shifts regardless of luciferase mutant, making them unsuitable for dual-color BLI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40, C68, C73, and C82 are supported by in vitro spectral characterization data (Figure 2\u2014figure supplement 1) comparing multiple substrates with multiple FLuc mutants. The preservation of relative spectral shifts with iLH2 is a key finding that distinguishes it from other luciferin analogues and is well-documented experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "7d9b0813-8e8e-4258-b0d1-653aee5b3c30",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both LH2 and iLH2 enable accurate spectral unmixing of FLuc_green and FLuc_red in vitro, with high correlation coefficients (R\u00b2 = 0.9983 for LH2, R\u00b2 = 0.9972 for iLH2) when using all 18 bandpass filters. Spectral unmixing remains highly accurate with reduced filter sets (3 filters: R\u00b2 > 0.99; 2 filters: R\u00b2 > 0.97 for both substrates), and successfully reflects differing expression levels of both luciferases within the same cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 are supported by systematic in vitro experiments with mixed cell populations at defined ratios (Figure 2), statistical analysis showing high correlation coefficients, and demonstration that the system works with reduced filter sets. The data includes appropriate replicates (n=6) and demonstrates technical feasibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "872f3200-501c-44f4-87dd-debb2c86f465",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In vivo spectral characterization across three tumor models (subcutaneous, systemic, intracranial) reveals that with LH2, both FLuc_green and FLuc_red converge to similar peak emissions (610-630 nm) due to tissue attenuation, with FLuc_green showing ~60 nm red-shift and bimodal distortion. In contrast, with iLH2, FLuc_green and FLuc_red maintain ~20 nm spectral separation (700 nm vs 720 nm) across all tissue depths, with more balanced relative intensities (1.2-1.51-fold difference vs 4.12-42-fold with LH2, p>0.05 for iLH2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C54, C66, C84-C85 are strongly supported by comprehensive in vivo spectral imaging data across multiple tumor models with different tissue depths (Figures 3, 4). The maintenance of spectral separation with iLH2 versus loss with LH2 is clearly demonstrated with quantitative measurements and statistical analysis. This represents a key validation of the dual-BLI approach in vivo.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "8397f74b-e423-4566-8aff-4d4a62710ef1",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In vivo spectral unmixing validation using systemic tumor models with mixed FLuc populations shows that iLH2 achieves excellent correlation with flow cytometry measurements (R\u00b2 = 0.99, SD = 0.01) with no significant differences except at 90% FLuc_green (p=0.0257). LH2 shows significantly lower correlation (R\u00b2 = 0.89, SD = 0.06, p<0.0001 vs flow cytometry) with significant differences at multiple mixing ratios, establishing iLH2 as superior for in vivo dual reporting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 are supported by rigorous validation experiments comparing spectral unmixing results to flow cytometry ground truth (Figure 5), with appropriate statistical analysis (ANOVA, t-tests) and multiple mixing ratios (n=4 per condition). The superiority of iLH2 is demonstrated both statistically and practically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "2ca921d7-7493-4cde-8066-272e9eeb8c4f",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The near-infrared dual BLI system was successfully applied to simultaneously monitor tumor burden (FLuc_green-expressing Raji cells) and CAR T cell therapy (FLuc_red-expressing CD19 CAR T cells) in a systemic mouse model. Longitudinal imaging showed initial tumor dominance followed by CAR T cell expansion and tumor reduction in treated mice, representing homing, expansion, and therapeutic effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C61-C62 are supported by proof-of-concept longitudinal imaging data (Figure 6) showing distinct temporal dynamics of tumor and CAR T cells. While this is a limited demonstration (small n, single control), it successfully shows the practical application of the dual-BLI system to monitor a clinically relevant therapeutic scenario.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "29127a5c-6ea5-4d91-8d9c-57b4150e58f9",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FLuc_green (V241I/G246A/F250S) and FLuc_red (S284T) were identified as stabilized FLuc mutants that exhibit wide separation in peak emission wavelength and balanced relative intensities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by the experimental characterization data showing spectral separation and intensity balance. The specific mutations are documented and the selection criteria (spectral separation and intensity balance) are validated by subsequent in vitro and in vivo experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "7039475a-e491-4182-85dd-866fa3a01188",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The FLuc-iLH2 reaction has lower quantum yield compared to FLuc-LH2 (~2-3 orders of magnitude dimmer), but all mice were successfully imaged with both substrates due to the sensitivity of CCD cameras in optical imagers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 acknowledge a limitation (lower brightness) but demonstrate that it does not prevent successful imaging in practice. This is supported by the successful imaging of all animals in the study and citation to camera sensitivity capabilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "80387de3-8cdd-4343-8efb-480f860b70a7",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The crystal structure provides insight into the FLuc-iLH2 reaction mechanism and will be important for future optimization of the dual-BLI system, including increasing brightness and discovering novel color mutants. However, the structure captures the adenylation step rather than the light-emitting step, and further computational modeling or crystallography of the light-emitting conformation is needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C37, C79-C81, C88 mix supported structural findings with speculative statements about future applications and limitations. While the structure does provide mechanistic insights (supported), the claims about future utility are speculative, and the authors acknowledge that capturing the adenylation step rather than light-emitting step limits mechanistic interpretation. The speculative nature of future applications and the acknowledged limitation prevent full support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "e12afafa-ebbc-4a25-88d5-a426cfef31ee",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "BLI is widely used for sensitive monitoring of biological processes in small animals, but is largely restricted to tracking single parameters in vivo due to tissue light attenuation and limited near-infrared bioluminescent enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C10 establish the background and motivation for the work. These are well-supported by multiple citations to prior literature and represent established knowledge in the field about both the utility and limitations of current BLI technology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Previous approaches to dual-BLI have significant limitations including sequential substrate administration, differential biodistribution, spectral overlap due to tissue attenuation, and inability to achieve adequate spectral separation in the near-infrared with existing luciferase mutants and luciferin analogues. An ideal approach would use two spectrally distinct luciferases with a single substrate, but this was not feasible with LH2 due to limits in mutational color modulation (maximal 610-620 nm) and differential tissue attenuation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C23, C63-C65, C67, C69-C72 provide comprehensive background on prior dual-BLI approaches and their limitations. These are well-supported by citations to relevant literature and establish the rationale for the current work. The assessment of prior work limitations is substantiated by both literature citations and the authors' own experimental validation (e.g., Figure 4 showing loss of spectral separation with LH2 in vivo).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "13eac756-92e3-49a6-9102-dc4338259b9c",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors previously described iLH2 with luciferase-dependent red-shifted emission up to 706 nm, and hypothesized that combining color modulation through FLuc mutagenesis with red-shifting through iLH2 would enable dual-BLI, an approach not previously described.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 establish the novelty of the approach and are supported by citation to prior work (C24) and assessment of the literature (C26). The hypothesis (C25) is then tested and validated by the experimental work presented in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    },
+    {
+      "id": "3fbfb84d-431b-4f0e-812f-5be4819d4b6a",
+      "content_id": "bb76b45b-d7b2-40eb-ada6-3428fa690d01",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "By combining stabilized color mutants of FLuc with iLH2, near-infrared dual BLI can be achieved in vivo, with iLH2 being superior to LH2 for spectral unmixing. This work represents an important step forward in increasing the utility of BLI and opens the window for multi-colored BLI in the near-infrared.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C5, C90 represent the main conclusions of the work and are well-supported by the comprehensive experimental validation including in vitro characterization, in vivo spectral characterization across multiple tumor models, quantitative validation against flow cytometry, and proof-of-concept application to CAR T cell therapy monitoring.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:46:16.623212Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a0d57151-fa77-4d1a-8bf7-b3d5e9dd5eb2",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "da223b07-b067-490f-a1f5-80a1b7f563d8",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "3681f330-e7ed-4008-bd33-05cf22ae5fb1",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "b09d634b-cca2-4e74-a0e4-befe604b48fe",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "5030437a-d278-4def-ae30-aad477cfaa0e",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "9e69ed6f-152a-4c1a-a037-61552877b1f9",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "56874084-cf7b-494f-8746-97a6d0121722",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "52b13809-77d2-4209-956b-20bdcf3af51b",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "60fcd24c-9f6d-4f22-8cac-7b9f4793d007",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "df613a94-6fab-41bc-8c67-aa6846938073",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "9dcb8629-13b0-4e4b-8d3b-ceb4fd88d41f",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "626bc954-b3b9-4e57-9180-0f562d94edac",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "2d6caf59-1a49-4623-98e7-b63d1391747e",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "20dfca1e-b376-41d5-a4c4-6c8dcb068955",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "70075213-789b-4096-84a5-e02e501b1bd5",
+      "result_id": "de673254-1da1-40ed-ab32-1b62c9164ac3"
+    },
+    {
+      "claim_id": "46913d39-03e7-4d22-80f3-01fe8f1746a6",
+      "result_id": "bf7aaf0d-cb15-4c88-b662-22ce48158e18"
+    },
+    {
+      "claim_id": "ebf39d99-d3a7-4ba2-9fa4-add99eacdc47",
+      "result_id": "bf7aaf0d-cb15-4c88-b662-22ce48158e18"
+    },
+    {
+      "claim_id": "c0d9c2a0-d58e-4149-bed5-deb9aa5fd6fb",
+      "result_id": "bf7aaf0d-cb15-4c88-b662-22ce48158e18"
+    },
+    {
+      "claim_id": "d523eee5-6ae5-4a20-bf72-c0365e987219",
+      "result_id": "bf7aaf0d-cb15-4c88-b662-22ce48158e18"
+    },
+    {
+      "claim_id": "7fbfa74d-ded6-4162-a908-8051619fe5a8",
+      "result_id": "bf7aaf0d-cb15-4c88-b662-22ce48158e18"
+    },
+    {
+      "claim_id": "5d42c22f-73f3-44ba-9b80-ccf16d7f8beb",
+      "result_id": "bf7aaf0d-cb15-4c88-b662-22ce48158e18"
+    },
+    {
+      "claim_id": "a1629a0d-8ca4-4db6-a5a1-cf25888b46a3",
+      "result_id": "7d9b0813-8e8e-4258-b0d1-653aee5b3c30"
+    },
+    {
+      "claim_id": "d417ccee-7ae9-4deb-95ad-dd4beb9382c5",
+      "result_id": "7d9b0813-8e8e-4258-b0d1-653aee5b3c30"
+    },
+    {
+      "claim_id": "b07e847c-3e9f-42ae-924e-3e30c0eb6053",
+      "result_id": "7d9b0813-8e8e-4258-b0d1-653aee5b3c30"
+    },
+    {
+      "claim_id": "6841cf23-bd85-4842-bd19-fc43bd5faea4",
+      "result_id": "7d9b0813-8e8e-4258-b0d1-653aee5b3c30"
+    },
+    {
+      "claim_id": "c125db4a-fec2-4b45-9b05-e43ae3da4781",
+      "result_id": "7d9b0813-8e8e-4258-b0d1-653aee5b3c30"
+    },
+    {
+      "claim_id": "3eeb3483-2323-41a9-ad0e-939638e47f6a",
+      "result_id": "7d9b0813-8e8e-4258-b0d1-653aee5b3c30"
+    },
+    {
+      "claim_id": "3ac6c2e3-5432-4f1b-a4b5-7f429642219c",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "c00e016b-f991-4114-86a4-b6a6b5d3c8e8",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "cdb6c9ab-25f8-4f73-9b84-f472f8fa584c",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "70c3b30a-dd5e-4f81-a9c1-cd86f3f74bdf",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "0638686c-b338-487d-b397-a5b5c96687cd",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "31e3eb79-6705-4f57-8e8e-f4dc2dd34518",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "b2936506-28ea-4ca0-beec-51d438f81d5e",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "7bebf474-f700-46c6-a5a9-04528a28efc2",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "6f7b43f7-6640-4985-baf0-84d0ff30c322",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "796001ec-5668-49e2-badd-85ed50cfb6d4",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "154d7f08-85f4-4766-aa2e-faea7f956f16",
+      "result_id": "872f3200-501c-44f4-87dd-debb2c86f465"
+    },
+    {
+      "claim_id": "036aea44-152e-47f4-89c3-864574b171cf",
+      "result_id": "8397f74b-e423-4566-8aff-4d4a62710ef1"
+    },
+    {
+      "claim_id": "09be2d53-d809-4285-88fb-b4a13986ac15",
+      "result_id": "8397f74b-e423-4566-8aff-4d4a62710ef1"
+    },
+    {
+      "claim_id": "871dffcb-dfcd-40f3-9271-ef49752244d4",
+      "result_id": "8397f74b-e423-4566-8aff-4d4a62710ef1"
+    },
+    {
+      "claim_id": "49f267b4-9da4-4a6a-907c-869827101da1",
+      "result_id": "8397f74b-e423-4566-8aff-4d4a62710ef1"
+    },
+    {
+      "claim_id": "928ab4c9-5939-4f94-ad7d-675937a6fd4b",
+      "result_id": "8397f74b-e423-4566-8aff-4d4a62710ef1"
+    },
+    {
+      "claim_id": "e0b65cfb-9895-47f6-8dba-2da78b316f71",
+      "result_id": "8397f74b-e423-4566-8aff-4d4a62710ef1"
+    },
+    {
+      "claim_id": "550c23f2-a148-453f-ae5f-83952778f7bc",
+      "result_id": "2ca921d7-7493-4cde-8066-272e9eeb8c4f"
+    },
+    {
+      "claim_id": "d58f9026-0a4b-4c5c-a975-a0a9974058a3",
+      "result_id": "2ca921d7-7493-4cde-8066-272e9eeb8c4f"
+    },
+    {
+      "claim_id": "d37cb41f-cbaa-4fe0-a78a-472536c620f3",
+      "result_id": "2ca921d7-7493-4cde-8066-272e9eeb8c4f"
+    },
+    {
+      "claim_id": "9a0f1877-263f-4ac5-a54d-7ffaf2ab8512",
+      "result_id": "29127a5c-6ea5-4d91-8d9c-57b4150e58f9"
+    },
+    {
+      "claim_id": "6cc14c4a-0f41-4337-bf20-fa481ea436b4",
+      "result_id": "7039475a-e491-4182-85dd-866fa3a01188"
+    },
+    {
+      "claim_id": "e6f6a61a-5135-423a-bbce-7d7137e7480b",
+      "result_id": "7039475a-e491-4182-85dd-866fa3a01188"
+    },
+    {
+      "claim_id": "3b0d1454-4780-4a03-a2e9-0e99a5685fd0",
+      "result_id": "80387de3-8cdd-4343-8efb-480f860b70a7"
+    },
+    {
+      "claim_id": "645888ab-2ace-42dd-a61b-333080fd2fce",
+      "result_id": "80387de3-8cdd-4343-8efb-480f860b70a7"
+    },
+    {
+      "claim_id": "94967241-7d75-4987-817d-dc8086abec9e",
+      "result_id": "80387de3-8cdd-4343-8efb-480f860b70a7"
+    },
+    {
+      "claim_id": "e7c67544-85ce-41e6-b2f9-8e71faa0144e",
+      "result_id": "80387de3-8cdd-4343-8efb-480f860b70a7"
+    },
+    {
+      "claim_id": "6a9d04d9-4eb9-448b-985d-7093acad7980",
+      "result_id": "80387de3-8cdd-4343-8efb-480f860b70a7"
+    },
+    {
+      "claim_id": "a50b8c07-cded-421d-a3ce-31755f5a15a7",
+      "result_id": "80387de3-8cdd-4343-8efb-480f860b70a7"
+    },
+    {
+      "claim_id": "ba8ecd5e-9914-461b-b7cd-ad431639be0d",
+      "result_id": "e12afafa-ebbc-4a25-88d5-a426cfef31ee"
+    },
+    {
+      "claim_id": "58e66676-ef45-4943-939d-65221725045f",
+      "result_id": "e12afafa-ebbc-4a25-88d5-a426cfef31ee"
+    },
+    {
+      "claim_id": "1b4e95ea-547a-4d8d-b743-e43879b38756",
+      "result_id": "e12afafa-ebbc-4a25-88d5-a426cfef31ee"
+    },
+    {
+      "claim_id": "56fdc88a-e576-45dd-ab48-8b90ece323a9",
+      "result_id": "e12afafa-ebbc-4a25-88d5-a426cfef31ee"
+    },
+    {
+      "claim_id": "f131ced4-6ecd-43e5-8fc2-0d482757a7c7",
+      "result_id": "e12afafa-ebbc-4a25-88d5-a426cfef31ee"
+    },
+    {
+      "claim_id": "3365d983-27ec-4508-828d-0f406ffd17fd",
+      "result_id": "e12afafa-ebbc-4a25-88d5-a426cfef31ee"
+    },
+    {
+      "claim_id": "036b10f0-a150-48d6-96a6-66980b512b35",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "aa04520b-e1f4-450c-9cee-c9f5675ebcb8",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "8e6d5b72-a428-42f4-ab99-7dd894e3365a",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "4942bec6-a8fc-4f10-a3f3-478a01358703",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "ea13192d-7802-476d-91b8-0654a0403315",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "6ac583d7-18e3-4e45-b7ff-241bbc99accf",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "1a80ff37-42ad-4697-99ea-5a9f053c2203",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "4124661f-e5e1-43bf-9184-18eb42995bb0",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "4843a49c-c30b-4238-b019-66470b6c98f6",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "f814999b-483b-4c0c-8ba5-2ab850d2bdda",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "54c57230-621d-4cdf-8d81-02e2b3134182",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "fe197dfe-76dd-4b29-bdbe-6989aa112914",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "d3fbf0b9-da81-43b6-a91b-45fc1b8dcde7",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "b969d446-1253-4645-8a93-6bcd4d0ec820",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "b3ad0d4a-c57f-4ea1-9568-841205232048",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "98f05fa6-522b-4f11-bc11-1f8866329b68",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "41222661-792a-400e-a9f7-487dda2bb90e",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "ecb857aa-2ec0-4c2c-a1ac-140826a1ba61",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "beb48295-8888-4f50-b2ee-3862cd6ed27e",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "cfd711ad-5677-4951-aff9-7331ad9babe1",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "27323986-1228-4628-b777-2813b881d053",
+      "result_id": "1feeed18-cd8f-4bba-9d9a-eb1b000de689"
+    },
+    {
+      "claim_id": "a24103d6-3671-4f41-8619-fb2872e101c3",
+      "result_id": "13eac756-92e3-49a6-9102-dc4338259b9c"
+    },
+    {
+      "claim_id": "80ec4fbe-b4de-4a3a-b54e-5e7d8535ddb4",
+      "result_id": "13eac756-92e3-49a6-9102-dc4338259b9c"
+    },
+    {
+      "claim_id": "9ef873f0-8825-4ec4-addb-6e64049f8b2d",
+      "result_id": "13eac756-92e3-49a6-9102-dc4338259b9c"
+    },
+    {
+      "claim_id": "7faffb2c-cb7a-41b6-88eb-88da2d306b32",
+      "result_id": "3fbfb84d-431b-4f0e-812f-5be4819d4b6a"
+    },
+    {
+      "claim_id": "e4154c28-dd5d-439a-b075-0fdaf600e1a8",
+      "result_id": "3fbfb84d-431b-4f0e-812f-5be4819d4b6a"
+    },
+    {
+      "claim_id": "09340626-edfb-4120-8416-044ea3169fae",
+      "result_id": "3fbfb84d-431b-4f0e-812f-5be4819d4b6a"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors applied an adapted CirSeq method to four bacterial species (E. coli, B. subtilis, A. tumefaciens, and M. florum) with three biological replicates each. The method involves enzymatic RNA fragmentation, circularization, rolling-circle reverse transcription to generate tandem repeats, and Bayesian consensus calling to distinguish true transcript errors from technical errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is well-documented with appropriate replicates (C28), and the methodology builds on validated prior work (C23). The error-correction strategy using tandem repeats (C30, C130, C132, C133) provides a sound approach to distinguish transcript errors from technical artifacts. The quality control thresholds are justified based on known error rates of sequencing and reverse transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C25",
+      "C31",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Transcript errors were identified at 9,929 loci across all four species, with error rates 3-4 orders of magnitude higher than corresponding genomic mutation rates. The per-site error rates ranged from 5.80\u00d710\u207b\u2076 to 1.82\u00d710\u207b\u2075, with M. florum showing the highest rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The large number of identified loci (C4, C31) provides statistical power for the analysis. The comparison to mutation rates from mutation-accumulation experiments (C36) is appropriate and well-cited. The transcriptome-wide view (C37, C38) is supported by the data visualization in Figure 1. The magnitude difference between transcript error rates and mutation rates is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Statistical testing revealed that transcript errors are generally randomly distributed across genes, with only 1, 4, 0, and 4 genes showing significantly enriched error rates in E. coli, A. tumefaciens, B. subtilis, and M. florum respectively (Bonferroni-corrected P < 0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical approach is appropriate, using Poisson probability calculations (C41) and Bonferroni correction for multiple testing (C42-C45). The small number of genes with enriched errors relative to the total genes analyzed supports the conclusion of random distribution (C46). The methodology is properly cited (C40).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Transcript error rates were compared between protein-coding and ncRNA regions across species. Error rates were similar in E. coli and A. tumefaciens, but ncRNA error rates were significantly higher in B. subtilis and lower in M. florum compared to protein-coding regions (p<0.05, paired t-test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison is biologically motivated by known differences in RNA processing (C48-C50). Statistical significance is properly reported with p-values and test type (C53, C54). The results are visualized in Figure 2. However, the biological interpretation of these differences could benefit from additional mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Analysis of all twelve substitution types revealed a general transition/transversion bias in transcript errors across all species. This bias persists even after excluding C\u2192U substitutions (P < 0.005, \u03c7\u00b2 test), indicating that bacterial transcriptional machinery has low ability to distinguish rNTPs within the same structural class. C\u2192U substitution rates were consistently high across all four species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comprehensive analysis of substitution types (C58) provides strong evidence for the transition bias (C59). The statistical test excluding C\u2192U substitutions (C62) strengthens the conclusion that the bias is not solely due to cytosine deamination. The inference about rNTP discrimination (C63) is well-supported by cited literature and parallels with replication machinery. Figure 3 provides clear visualization of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "M. florum exhibited an unexpectedly high G\u2192A substitution rate, which the authors interpret as a signature of an error-prone RNA polymerase. This pattern has been observed in yeast and E. coli transcription-machinery mutants with decreased fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the G\u2192A bias in M. florum is clearly demonstrated (C5, C65) and parallels with mutant studies are cited (C66), the inference that M. florum has an error-prone RNA polymerase (C6) is speculative. Alternative explanations (such as differences in rNTP pools or DNA repair, discussed in C104-C106) are not fully excluded. The claim would benefit from direct biochemical characterization of the M. florum RNA polymerase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The majority of transcript errors in protein-coding regions would result in amino acid changes if translated. Observed percentages of synonymous, missense, and nonsense errors were calculated and compared to random expectations. Nonsense errors showed observed percentages close to or significantly lower than random expectations (P < 0.005, \u03c7\u00b2 test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional categorization using SnpEff (C68) is appropriate. The calculation of expected percentages based on substitution rates and codon usage (C69) provides a proper null model. The statistical comparison (C71) is rigorous. Table 1 clearly presents the data. The lower-than-expected nonsense errors suggest quality control mechanisms, which is explored further in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "An increased frequency of nonsense errors toward the 3\u2032 end of mRNAs was observed in all species except A. tumefaciens (where the trend was not statistically significant). The ratio of nonsense errors to all errors also increased toward the 3\u2032 end, excluding the possibility that this results from higher overall error rates at the 3\u2032 end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial distribution analysis (C78) is well-executed with appropriate statistical testing using weighted linear regression. The lack of significance in A. tumefaciens (C79) is explained by lower statistical power due to fewer nonsense errors (C80). The modified analysis using ratios (C81, C82) strengthens the conclusion by controlling for overall error rate variation. Figure 4A and Figure 4\u2014figure supplement 1 provide clear visualization. The pattern is consistent across three of four species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The increased frequency of nonsense errors at the 3\u2032 end of mRNAs suggests a Nonsense-Mediated Decay-like quality-control mechanism in prokaryotes. The authors propose a ribosome-release model where degradation depends on ribosome coverage, with PTCs upstream of the original stop codon leaving unprotected regions susceptible to ribonuclease degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the spatial pattern of nonsense errors (C7, C78) is well-documented, the mechanistic interpretation as NMD-like quality control (C8, C83) is speculative. The ribosome-release model (C85, C87, C88) is plausible but lacks direct experimental validation. The absence of known NMD genes in prokaryotes (C112, C113) is acknowledged, and previous single-gene studies are cited (C114), but the transcriptome-wide pattern alone is insufficient to definitively establish the mechanism. Alternative explanations (e.g., differences in translation efficiency or mRNA stability unrelated to quality control) are not fully excluded. Direct experimental validation would be needed to support this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors propose that the molecular spectrum of transcript errors is influenced by both RNA polymerase fidelity and cellular rNTP concentrations. They suggest that high cellular rATP concentrations contribute to the G\u2192A substitution bias, and that non-Watson-Crick base pairing (dG-rU) may contribute to C\u2192U substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposal that both polymerase fidelity and rNTP pools influence error spectra (C26, C107) is reasonable and supported by a mathematical framework (C108). The cited literature on rATP concentrations (C110) and base pairing (C102) is appropriate. However, the specific contributions of these factors (C101, C103, C111) are speculative and not directly tested. The manuscript does not measure cellular rNTP concentrations in the studied species or experimentally manipulate them to test the hypothesis. These remain plausible but unvalidated mechanistic explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Transcript error rates estimated in this study are approximately one order of magnitude lower than a previous study (Traverse and Ochman, 2016), except for M. florum. The difference is attributed to the use of enzymatic RNA fragmentation in the current study versus metal ion-based fragmentation in the previous work, which minimizes cytosine deamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to previous work (C89, C90) is appropriate and the proposed explanation (C91, C92) is well-supported by cited literature on the benefits of enzymatic fragmentation. This represents a methodological improvement that likely provides more accurate error rate estimates. The acknowledgment of methodological differences strengthens the credibility of the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Besides base substitutions, transcript errors also occur as insertions and deletions, with indel error rates estimated at 0.1 to 0.2 of the corresponding base-substitution error rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of indel errors (C93) and their quantification relative to substitution errors (C94) is clearly reported with reference to supplementary data. This provides a more complete picture of the transcript error landscape.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Only a small portion of ncRNA transcripts (particularly rRNAs and tRNAs) was evaluated due to technical limitations including rRNA depletion, and interference from tRNA secondary structures and modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge the limitations of their study regarding ncRNA coverage (C96). The technical reasons are clearly explained (C97, C98) and are well-known challenges in RNA sequencing. This transparency about study limitations is important for proper interpretation of the ncRNA error rate comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors speculate that unrepaired uracils on the DNA antisense strand may contribute to G\u2192A substitutions. Despite M. florum having a small genome, a uracil-DNA glycosylase (UDG) ortholog exists, though the extent to which unrepaired uracils explain the G\u2192A bias remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposed mechanism involving unrepaired uracils (C104) is speculative. While the presence of UDG in M. florum is documented (C106), the authors acknowledge uncertainty about this mechanism's contribution. No direct measurements of uracil content in DNA or UDG activity are provided. This remains a hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Current mRNA surveillance models focus primarily on stop codon-related errors, which represent only a small portion of total transcript errors. The fate of missense errors, which constitute the majority of transcript errors, remains largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents an important identification of a knowledge gap in the field. The observation that missense errors are the majority (from Table 1) combined with the lack of known degradation mechanisms (C118) highlights an important area for future research. The claim is appropriately framed as identifying unknown territory rather than making unsupported assertions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "Low-frequency genetic mutations can only inflate the calculated transcript error rate by approximately 0.1-1%, based on known mutation rates and approximately 30 generations of culture growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calculation properly accounts for the potential contribution of genetic mutations to the observed signal (C134). The use of published mutation rates and estimated generation numbers provides a reasonable quantitative assessment. This demonstrates that genetic mutations are not a significant confounding factor in the transcript error measurements.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Mouse and human SCLC cells form long cellular protrusions in culture and in vivo. These protrusions are observed in 2D culture, subcutaneous allografts, liver metastases, and patient-derived xenografts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C17-C22 provide converging evidence from multiple experimental systems (mouse cell lines, human cell lines, PDX models, in vivo models) demonstrating protrusion formation. The data are supported by microscopy images in Figures 1 and supplementary figures showing protrusions in diverse contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SCLC protrusions express axonal markers (Tuj1, TAU) but not dendritic markers (MAP2), and axonogenesis genes are upregulated during SCLC progression. These observations indicate the protrusions are axon-like structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C67-C69 demonstrate consistent expression of axonal markers and absence of dendritic markers across multiple cell lines and in vivo models (Figure 2). Single-cell RNA-seq data (C67) shows these programs are not present in normal lung cells, supporting their acquisition during tumorigenesis. The characterization is thorough with appropriate positive and negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "SCLC protrusions are dynamic structures 5-10 times longer than the cell body diameter. SCLC cells with protrusions display increased saltatory migration and velocity compared to cells without protrusions, similar to neuroblast migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C70-C72 are supported by quantitative measurements and time-lapse microscopy (Figure 2C-H, Videos 1-4). The comparison to neuroblast migration is appropriate given the morphological and behavioral similarities, though the analogy is qualitative rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A set of 69 genes associated with axonogenesis and axon guidance are expressed in human SCLC tumors. A focused set of 13 genes encoding proteins involved in axon formation, guidance, and neuronal migration were selected for functional studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C73-C76 describe the gene selection strategy using literature searches, expression data from George et al. 2015, and STRING analysis. The approach is reasonable, though the criteria for selecting 13 genes from 69 candidates could be more explicitly justified. The bioinformatic validation supports the biological relevance of these genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The 13-gene signature correlates with the SCLC-N subtype and high NFIB expression in human tumors, but protrusion formation occurs across SCLC subtypes (both SCLC-A and SCLC-N).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C77-C80 are supported by correlation analyses (Figure 3\u2014figure supplement 1C) and observations across multiple cell lines. The finding that protrusions occur across subtypes is important but based on limited sampling. The lack of correlation with ASCL1/NEUROD1 expression in some cell lines (C79) suggests additional regulatory complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "NFIB knockdown reduces protrusion formation but does not globally downregulate the 13-gene signature. NFIB overexpression is insufficient to induce protrusions or upregulate all 13 genes. The upstream regulators of axonogenesis programs in SCLC remain incompletely characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C81-C83 are supported by knockdown and overexpression experiments (Figure 3\u2014figure supplement 1E-G). The results indicate NFIB is necessary but not sufficient for protrusion formation, suggesting a more complex regulatory network. The conclusion that upstream factors remain uncharacterized (C83) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C88",
+      "C90"
+    ],
+    "result": "Knockdown of 11 of 13 candidate genes significantly reduced protrusion formation and cell migration in 2D Matrigel assays. The reduction in migration correlated with loss of protrusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C88, C90 are supported by systematic knockdown experiments with multiple shRNAs (Figure 3A-D). The correlation between protrusion loss and reduced migration (R\u00b2=0.51, C38) is moderate but significant. The use of multiple shRNAs per gene strengthens confidence, though validation at the protein level is shown for only 2 genes (GAP43, FEZ1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C92"
+    ],
+    "result": "Knockdown of Gap43 and Fez1 reduced SCLC cell migration out of 3D spheroids in Matrigel and reduced protrusion formation in 2D culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C92 are supported by 3D spheroid emigration assays (Figure 3\u2014figure supplement 3F-G) and 2D migration assays (Figure 3). The 3D assay provides additional validation in a more physiologically relevant context. Protein-level knockdown validation is shown for both genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Expression of axonal markers (Tuj1, TAU, GAP43) and axonogenesis genes increases during SCLC progression from early non-metastatic tumors to later-stage tumors and metastases in mouse models and human samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by immunohistochemistry comparing early vs. late tumors (Figure 4\u2014figure supplement 1A-B), human metastases (C42), and RNA-seq data (C43). The temporal progression data strengthen the link between neuronal programs and metastatic potential. Sample sizes are modest but consistent across multiple approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C93"
+    ],
+    "result": "Knockdown of Gap43 or Fez1 significantly reduced liver metastases after intravenous injection without affecting subcutaneous tumor growth. This reduction occurs at the early seeding stage (2 days post-injection), indicating these genes affect metastatic seeding rather than general proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C93 are supported by in vivo metastasis assays with multiple shRNAs in two cell lines (Figure 4). The lack of effect on subcutaneous growth (C45) is critical for interpreting the metastasis results as specific to the metastatic process. The early seeding experiments (C46) provide mechanistic insight. Statistical significance is demonstrated across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C48",
+      "C49",
+      "C9"
+    ],
+    "result": "Axon-like protrusions in SCLC are controlled by neuronal factors involved in axonogenesis and migration. Disruption of these protrusions impairs migration in culture and metastasis in vivo, representing a mechanism by which neuroendocrine-to-neuronal transition promotes SCLC metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C48-C49 represent the main conclusions synthesizing the experimental findings. The evidence from knockdown experiments affecting protrusions (C6), migration (C7), and metastasis (C8) provides strong support. The mechanistic link between neuronal programs and metastasis is well-established through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Doublecortin (Dcx) knockdown strongly inhibits migration but has minimal effect on protrusion formation, suggesting it may promote SCLC migration independently of protrusion formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by data in Figure 3A-B showing differential effects of Dcx knockdown on protrusions vs. migration. This observation suggests additional complexity in how neuronal factors regulate migration. The inference (C54) is reasonable but speculative, as alternative explanations are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "NFIB transcription factor plays a role in upregulating neuronal gene programs in SCLC, but a combination of genetic, epigenetic, and microenvironmental factors likely contributes to protrusion formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 is supported by data from this study and prior publications. However, claims C56-C57 are speculative statements about potential contributing factors without direct experimental evidence in this manuscript. These represent reasonable hypotheses for future investigation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The 13 candidate genes rarely affect SCLC cell proliferation in culture (DepMap data). GAP43 is expressed in ~50% of human primary SCLC tumors. The 13-gene signature is more highly expressed in metastasis-derived N2N1G cells compared to non-metastatic KP22 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 provide supporting evidence for the specificity of these genes to migration/metastasis rather than proliferation. The DepMap analysis (C84) is appropriate for assessing proliferation effects. The IHC data (C85) and comparative expression analysis (C86) support the relevance of these genes in human disease. Claim C87 is a factual statement about cell line origin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "CXCR4 contributes to axon-like protrusion formation in SCLC. A clinical trial showed CXCR4 inhibition was well-tolerated but did not significantly reduce disease progression in SCLC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by knockdown data in Figure 3. Claim C60 accurately reports results from a published clinical trial (Salgia et al., 2017). The juxtaposition suggests that targeting individual factors may be insufficient, though the clinical trial did not specifically assess effects on metastatic seeding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "SCLC is a highly lethal and metastatic cancer accounting for ~15% of lung cancers and >200,000 deaths annually. Over 60% of patients present with disseminated disease including liver, bone, brain, and lung metastases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C13 are background statements supported by established knowledge and appropriate citations. These provide context for the study but are not novel findings. The statistics are accurately reported from cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C50"
+    ],
+    "result": "SCLC cells express neuroendocrine and neuronal gene programs. Higher neuronal marker expression correlates with shorter survival and more metastatic disease. Neuronal gene programs are enriched in SCLC metastases, though their functional role has not been previously characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C15-C16, C50 summarize prior literature establishing the association between neuronal programs and SCLC progression. These are well-supported by multiple citations and provide the rationale for the current study. The novelty is in demonstrating the functional role of these programs (addressed in other results).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C66"
+    ],
+    "result": "Genetically engineered mouse models recapitulate key features of human SCLC including genetics, histology, therapeutic response, and metastatic behavior. SCLC cells classically grow as floating spheres or aggregates in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C66 are factual statements about established model systems, supported by appropriate citations. These justify the use of mouse models and describe the culture assay development. Not novel findings but important methodological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C58",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C94",
+      "C95"
+    ],
+    "result": "Axon-like protrusions may have additional functions beyond liver metastatic seeding. Other tumor types show increased neuronal programs during metastasis. Various cellular transitions (EMT, EET, epithelial-to-neuronal) may contribute to SCLC plasticity and metastasis. Multiple mechanisms likely contribute to successful metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C52, C58, C61-C65, C94-C95 are primarily speculative statements about potential mechanisms, therapeutic strategies, and broader implications. While these are reasonable hypotheses supported by citations to related work, they represent discussion points rather than demonstrated results from this study. Some claims (C52, C64) accurately report findings from other studies.",
+    "result_type": "MINOR"
+  }
+]

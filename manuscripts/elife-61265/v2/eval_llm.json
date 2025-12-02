@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "B2 RNA-regulated stress response genes (B2-SRGs) are significantly enriched in neural tissues and functions, particularly in hippocampal processes including learning, synaptic function, and neural development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 provide converging bioinformatic evidence from tissue enrichment analysis, Gene Ontology analysis, and metagene analysis showing B2-SRGs are enriched in neural compartments and learning-associated genes. The statistical significance (adjusted p-values) and multiple independent analytical approaches strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "During the active neurodegeneration phase (6 months) in APPNL-G-F mice, 72 B2-SRGs are significantly upregulated along with elevated Trp53 levels, while these genes are normally downregulated with age in wild-type controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 present a coherent temporal pattern with appropriate controls (WT mice at multiple ages) and statistical validation (p<0.05, n=3/group). The RNA-seq data is confirmed by RT-qPCR (C36, Figure 2\u2014figure supplement 2), and the age-specific pattern (upregulation at 6m but not 3m or 12m) is internally consistent with the disease progression model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "B2 RNA processing ratio is substantially increased in 6-month-old APP mice compared to age-matched controls, coinciding with elevated Trp53 and B2-SRG levels, and this increase cannot be explained by changes in full-length B2 RNA levels alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 demonstrate increased B2 RNA processing through complementary short-RNA-seq and long-RNA-seq approaches with appropriate normalization (tRNA for short fragments). The temporal specificity (only at 6 months) and statistical significance (p<0.05, n=3/group) support the conclusion, though the small sample size is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Hsf1, a master stress response regulator expressed in hippocampus, shows enriched binding near B2-SRGs and is upregulated in 6-month APP mice, making it a candidate mediator of B2 RNA processing in neural cells rather than Ezh2 which has limited brain expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 provide multiple lines of evidence: expression data from Allen Brain Atlas showing Ezh2 is scarce in brain while Hsf1 is abundant (C47, C52), ChIP-seq data showing Hsf1 enrichment near B2-SRGs (C51), and RNA-seq/RT-qPCR showing Hsf1 upregulation in APP mice (Figure 4A-B). The convergence of expression, localization, and functional data supports Hsf1 as a relevant candidate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Hsf1 protein accelerates B2 RNA processing in vitro in a concentration-dependent manner, producing fragments at the same positions observed in vivo, and this activity requires intact Hsf1 structure and specific B2 RNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 present rigorous in vitro biochemical evidence with appropriate controls (PNK, PolyA polymerase, denatured Hsf1, mutant B2 RNA, no protein controls). The concentration-dependence (C57), time-course data (C56), and specificity controls (C58-C59) demonstrate that the effect is specific to Hsf1-B2 RNA interaction. The matching of in vitro and in vivo processing sites (C55) strengthens biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In HT-22 hippocampal cells, amyloid beta peptide treatment upregulates B2-SRGs including genes associated with apoptosis, and artificial B2 RNA knockdown increases B2-SRG expression in the absence of stress, demonstrating B2 RNA suppressive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 establish an in vitro model that recapitulates key in vivo findings. The use of reverse peptide controls (C61), recovery experiments showing return to baseline (Figure 6D), and negative controls showing no effect on non-B2-SRGs (C68) demonstrate experimental rigor. The LNA knockdown experiment (C66-C67) provides functional validation of B2 RNA's suppressive role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Hsf1 knockdown by LNA prevents amyloid beta-induced increases in B2 RNA processing and B2-SRG expression in HT-22 cells, demonstrating that Hsf1 is necessary for amyloid toxicity-induced B2 RNA processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 present a loss-of-function experiment with appropriate controls (scramble LNA, reverse peptide). The demonstration that Hsf1 knockdown blocks the amyloid beta effect on B2 RNA processing (C71-C72) while having no effect with control peptide establishes necessity. Western blot confirmation of protein-level knockdown (C70) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86"
+    ],
+    "result": "Increased B2 RNA processing represents a novel transcriptome deregulation mechanism in amyloid pathology, mediated by Hsf1 in a non-transcription factor role, leading to constitutive SRG activation, elevated Trp53, and neuronal death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 synthesize the major findings into a coherent mechanistic model supported by the convergent evidence from in vivo (C33-C46), in vitro biochemistry (C54-C60), cell culture (C61-C68), and loss-of-function (C69-C73) experiments. The model is internally consistent and accounts for the observed temporal patterns and molecular changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "High Mir34c levels in amyloid pathology indicate transcriptome-wide deregulation of Trp53 and associated genes, as many SRGs are upstream regulators of Mir34c.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 reference the authors' previous findings and cite Rokavec et al., 2014 for the regulatory network. While this provides context for the current study, the evidence is primarily from prior work rather than new data presented here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The APPNL-G-F mouse model exhibits rapid onset of AD-like symptoms at 6 months, and the observed molecular changes (B2-SRG hyperactivation, Trp53 elevation, B2 RNA processing) at this timepoint constitute a molecular signature of the active neurodegenerative phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 describe the mouse model characteristics (supported by Mehla et al., 2019) and interpret the temporal correlation between molecular changes and disease progression. The inference that these changes constitute a 'molecular signature' (C90) is reasonable given the data but represents interpretation rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The absence of molecular changes in 3-month-old APP mice suggests a protective mechanism against SRG hyperactivation in younger animals, possibly related to increased neuronal plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 are speculative (explicitly noted as 'suggesting' and 'may be attributed'). While the observation of no changes at 3 months is data-supported, the proposed protective mechanism is hypothetical and not directly tested. The citation to Lilja et al., 2013 regarding neuronal plasticity provides context but not direct evidence for this specific mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "B2 RNA processing activation is more connected with the initial cellular response to amyloid toxicity rather than the terminal stage, as the effect is less prominent at 12 months when many cells have died.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 interpret the temporal pattern observed in the data (strongest effect at 6 months, weaker at 12 months). The inference is logical and consistent with the data showing reduced effects in the terminal stage, though the explanation involving cell death is reasonable but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Among 1684 B2-SRGs identified in heat shock, 659 show statistically significant correlation between gene expression and B2 RNA processing ratio in hippocampal cells, with 52.2% showing strong correlation (r\u22650.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 present correlation analysis with clear statistical criteria (p<0.05 for inclusion, r\u22650.5 for strong correlation). The finding that over half of testable B2-SRGs show strong correlation supports the generalizability of the B2 RNA regulatory mechanism beyond the 72 genes identified by differential expression, though correlation does not prove causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Cells treated with reverse peptide and anti-Hsf1 LNA show no Hsf1 reduction, possibly due to compensation during non-stress conditions, while stress conditions deplete available Hsf1 transcripts faster than compensation can occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 presents an observation from the data (Figure 8B), but C103 offers a speculative explanation for this unexpected result. The proposed compensation mechanism is not directly tested and represents post-hoc rationalization. This observation could also indicate technical issues with the LNA approach or other confounding factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "While it remains unknown whether SINE RNAs and Hsf1 play similar roles in human amyloid pathology, human Alu RNAs (B2 RNA counterparts) are self-cleaving and can be destabilized in vitro, making a stress-central role plausible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 explicitly acknowledge uncertainty about human relevance (C104) while noting that Alu RNAs share key properties with B2 RNAs (C106, citing Hernandez et al., 2020). The speculation about human relevance (C105) is appropriately cautious but represents a limitation rather than a supported finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The regulatory role of B2 RNAs may extend from Pol III-transcribed B2 RNAs to B2 RNAs embedded in mRNAs, as both show similar fragment distribution patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 is explicitly speculative ('it cannot be excluded') and based on similarity of distribution patterns (Figure 3\u2014figure supplement 2) rather than direct functional evidence. While the observation is interesting, distinguishing between Pol II and Pol III transcribed B2 RNAs functionally would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "B2 RNA processing is one component of a complex regulatory system involving SRGs, with additional contributions from Hsf1's transcription factor activity, downstream pathway effects, and potentially other B2 RNA processing factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 appropriately acknowledge the complexity of the system and limitations of the current study. These claims recognize that B2 RNA processing is not the sole regulatory mechanism (C108, C111), that Hsf1 has multiple functions (C110, C112), and that other factors may be involved (C113). This represents scientifically appropriate caution rather than overinterpretation.",
+    "result_type": "MINOR"
+  }
+]

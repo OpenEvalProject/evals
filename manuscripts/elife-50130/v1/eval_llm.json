@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Spd-2 is specifically phosphorylated at centrosomes. Western blot analysis of centrosome fractions revealed a slower migrating form of Spd-2 in centrosomal fractions compared to cytosolic fractions (C36, C37). Phosphatase treatment confirmed this mobility shift was due to phosphorylation (C38). Mass spectrometry identified seven Spd-2 peptides consistently phosphorylated in centrosomal but not cytosolic fractions (C40). However, not all centrosomal Spd-2 appears phosphorylated (C39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 provide converging biochemical evidence from western blots, phosphatase treatment, and mass spectrometry that Spd-2 is specifically phosphorylated at centrosomes. The data are internally consistent and use appropriate controls (cytosolic fractions, phosphatase treatment). The presence of both phosphorylated and unphosphorylated forms at centrosomes (C37, C39) is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Spd-2 phosphorylation creates multiple S-S/T(p) motifs that can bind the Polo PBD. Mass spectrometry identified one phosphorylated S-S(p) motif that could recruit Polo (C41), and phospho-proteomic screens revealed 16 additional peptides with potential PBD-binding S-S/T(p) motifs (C46). In vitro, a Spd-2 fragment with 19 S-S/T motifs showed enhanced PBD binding when phosphorylated by Plk1 (C47), and this enhancement was abolished when motifs were mutated to T-S/T (C48), suggesting Plk1 can prime its own binding to Spd-2 (C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vitro co-IP data (C47, C48) directly demonstrate phosphorylation-dependent PBD binding, with appropriate controls (unphosphorylated protein, T-S/T mutant). The mass spectrometry data (C40, C46) identify specific motifs. However, the in vitro self-priming mechanism (C49) may not reflect the in vivo situation where other kinases could be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Mutating seven centrosomally-phosphorylated sites in Spd-2 (Spd-2-11A) only mildly perturbs Spd-2 function. Despite lower expression levels (C42), Spd-2-11A-GFP rescued female sterility (C43) and localized to centrosomes nearly as well as WT (C44), suggesting these seven sites are not critical for basic Spd-2 function (C45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue and localization data (C43, C44) provide functional evidence that the 11A mutation has mild effects. The lower expression (C42) is acknowledged and controlled for by comparing to another low-expressing mutant (Spd-2-11A) that localizes normally. This establishes that more extensive mutations are needed to test the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C64"
+    ],
+    "result": "Spd-2-CONS and Spd-2-ALL mutants (with 16 or 34 S-S/T\u2192T-S/T mutations) partially rescue pronuclear fusion but cause embryonic lethality. Both mutants were expressed at slightly lower levels than WT (C50) but rescued pronuclear fusion defects, allowing embryos to initiate development (C51, C52). However, these embryos died early and almost never hatched (<1/500) (C53), suggesting the mutant centrosomes support pronuclear fusion but not rapid syncytial divisions (C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data show clear phenotypic differences between the 11A mutant (viable) and CONS/ALL mutants (lethal), supporting the importance of these sites. The partial rescue (C51) demonstrates the proteins are not misfolded (C52), while the lethality (C53) indicates functional defects. The conclusion (C64) is well-supported by the developmental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Mutant Spd-2 proteins show reduced centrosomal localization and impaired MT organization. WT Spd-2-GFP localized strongly to centrosomes with robust MT arrays (C57), while mutant proteins were less abundant at centrosomes (C58) with less robust astral MTs (C59) and frequent centrosome detachment from spindles (C60). The reduced localization is unlikely due to lower expression, as Spd-2-11A also had low expression but normal localization (C61). Embryos accumulated progressively severe mitotic defects (C62), more pronounced in Spd-2-ALL than Spd-2-CONS embryos (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The imaging and quantification data (C57-C60) clearly demonstrate defects in mutant embryos. The comparison to Spd-2-11A (C61) provides an important control showing the defects are not simply due to expression levels. The progressive worsening (C62) and dose-dependent severity (C63) support a specific functional requirement for these motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Mutant Spd-2 proteins localize to centrioles but fail to form extended scaffolds, likely due to scaffold absence rather than incorporation defects. 3D-SIM revealed WT Spd-2-GFP at centrioles and in extended scaffolds (C65), while mutants localized to centrioles but showed greatly reduced scaffolds (C66, C67). Both mutants co-assembled with WT Spd-2-mCherry into scaffolds normally (C68, C69), indicating the scaffold absence in mutant-only embryos (C70) and that mutant proteins are not misfolded (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3D-SIM data (C65, C66) clearly show the scaffold defect. The co-assembly experiment (C68) is a critical control demonstrating the mutant proteins can incorporate into scaffolds when WT Spd-2 is present, supporting the conclusion that scaffold assembly, not protein folding, is defective (C70, C71). The FCS data (C73) further supports that proteins are monomeric and properly folded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Spd-2 is monomeric in fly embryos. FCS measurements showed Spd-2 is monomeric in fly embryos (C73), consistent with prior findings in worms (C72), indicating mutant proteins are recruited to centrosomes as monomers (C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FCS data (C73, Figure 5\u2014figure supplement 1) directly demonstrate Spd-2 is monomeric, with appropriate controls (monomeric and dimeric NeonGreen). This supports the interpretation that recruitment defects are not due to oligomerization issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Phosphorylated S-S/T(p) motifs in Spd-2 are required for Polo recruitment to the expanding PCM scaffold but not to centrioles. WT Spd-2-mCherry and Polo-GFP co-localized extensively in scaffolds (C75), while Spd-2-CONS-mCherry and Polo-GFP co-localized at centrioles but neither formed robust scaffolds (C76). This suggests the motifs are not required for centriolar Polo recruitment (C77)\u2014which can occur via other proteins like Sas-4 (C78)\u2014but are required for scaffold recruitment (C79).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3D-SIM data (C75, C76) clearly distinguish between centriolar and scaffold localization of Polo. The observation that Polo remains at centrioles in mutants (C76) but is lost from scaffolds directly supports the conclusion (C79). The citation to Sas-4 (C78) provides a plausible alternative recruitment mechanism at centrioles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cnn scaffold expansion is impaired when Spd-2 cannot recruit Polo. In WT embryos, RFP-Cnn formed robust scaffolds extending beyond Spd-2-GFP (C80, C82), while in Spd-2-CONS embryos only occasional Cnn protrusions were detected (C81) and Cnn/Spd-2 distributions overlapped (C82), indicating Cnn cannot expand beyond the Spd-2 scaffold when Polo recruitment is impaired (C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3D-SIM and radial profiling data (C80-C82) provide clear quantitative evidence for the scaffold expansion defect. The radial profiling (C82, Figure 7D) is particularly compelling, showing the spatial relationship between Spd-2 and Cnn in WT versus mutant. The conclusion (C83) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A Polo/Spd-2/Cnn 'mini-scaffold' assembles around centrioles in mutant embryos but cannot expand. Phosphorylated Cnn was detected around centrioles in Spd-2-CONS embryos (C84), presumably due to centriolar Polo (C85), indicating a mini-scaffold forms but cannot expand outwards (C86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phospho-Cnn staining (C84, Figure 7E,F) demonstrates that Cnn phosphorylation still occurs near centrioles in mutants, consistent with centriolar Polo activity (C85). This supports the model that initial scaffold assembly occurs but expansion fails (C86). The inference about centriolar Polo (C85) is reasonable given the prior data (C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Centrosome maturation fails in Spd-2-CONS embryos, with reduced recruitment of Aurora A and \u03b3-tubulin. Both PCM components showed greatly reduced centrosomal levels in Spd-2-CONS embryos (C87), indicating general centrosome maturation failure (C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The imaging data for Aurora A and \u03b3-tubulin (C87, Figure 7\u2014figure supplement 1) demonstrate that the scaffold defect leads to reduced recruitment of other PCM components. This supports the conclusion of general maturation failure (C88). The use of multiple markers strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Centrosome maturation dynamics are abolished in mutant embryos. WT Spd-2-GFP accumulated at centrosomes during S-phase, peaked before NEB, then declined in mitosis (C89), while Spd-2-CONS-GFP remained at constant low levels throughout the cycle (C90), indicating maturation failure (C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time-lapse imaging data (C89, C90, Figure 8) clearly show the loss of dynamic accumulation in mutants. The regression analysis (Figure 8\u2014figure supplement 3) supports that WT follows an increase-plateau-decrease model while CONS is essentially constant. This directly demonstrates maturation failure (C91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Spd-2 can recruit Polo without CDK1 priming. A conserved potential CDK1 site (T516) was identified (C92), but mutating it and another site (Spd-2-AA) did not perturb Polo-GFP distribution (C93), suggesting CDK1 priming is not required (C94).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mRNA injection experiment (C93, Figure 9\u2014figure supplement 2) provides direct evidence that the conserved CDK1 site is not essential for Polo recruitment. This distinguishes the fly mechanism from worms/vertebrates and supports the conclusion (C94). However, this tests only one potential priming mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Multiple S-S/T(p) motifs in both N- and C-terminal regions of Spd-2 contribute to Polo recruitment. Mutating N-terminal (Spd-2-NT) or C-terminal (Spd-2-CT) motifs both reduced Polo-GFP levels (C95), with NT having the largest but still mild effect compared to ALL (C96), indicating no single motif is essential (C97) and both regions contribute (C98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mRNA injection experiments (C95, C96, Figure 9D,E) demonstrate that partial mutations have intermediate effects, supporting redundancy among motifs. The additive effect of CONS versus ALL mutations (C63, C129) further supports multiple motifs contributing. The conclusion of distributed recruitment sites (C97, C98) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Mutant Spd-2 proteins cannot efficiently recruit Polo even when PCM scaffolds are present. In mRNA injection experiments, Spd-2-CONS-mKate2 was detected in expanded PCM even when Polo recruitment was severely reduced (C99), indicating expanded PCM can exist (presumably with endogenous Spd-2) while mutant Spd-2 fails to recruit Polo (C100, C101).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3D-SIM data from injection experiments (C99, Figure 10) provide critical evidence that the defect is in Polo recruitment, not scaffold formation per se. This addresses a key alternative explanation and strongly supports the main conclusion (C101). The interpretation (C100) is reasonable given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "A positive feedback loop between Spd-2, Polo, and Cnn drives mitotic PCM expansion. The model proposes: (1) In interphase, proteins are at centrioles but inactive/unphosphorylated (C103); (2) In mitosis, Spd-2 is phosphorylated (C104, C105) and forms a scaffold recruiting Polo and Cnn (C106); (3) Polo phosphorylates Cnn, enabling scaffold formation (C107); (4) Cnn stabilizes the Spd-2 scaffold (C108), allowing expansion and recruitment of more Polo and Cnn (C109); (5) This creates a positive feedback loop (C110) where the centriole remains the sole Spd-2 source (C118). In mutants, a mini-scaffold forms (C111, C114) but cannot expand because outward-fluxing Spd-2 cannot recruit Polo (C115), so Cnn cannot be phosphorylated (C116) and the scaffold dissipates (C117).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model (C8, C102-C118) integrates all the experimental findings into a coherent mechanism. The key predictions\u2014that mutants form mini-scaffolds but cannot expand (C86, C114), that Polo is at centrioles but not in expanded scaffolds (C76, C79), that Cnn is phosphorylated near centrioles but scaffolds don't expand (C84, C86)\u2014are all experimentally supported. The model explains the autocatalytic growth while maintaining centriole dependence (C118-C121).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The proposed mechanism explains how PCM growth is autocatalytic yet centriole-dependent, and how centrosomes achieve equal size. The centriole as the sole Spd-2 source (C118) potentially explains autocatalytic growth requiring centrioles (C119), equal-sized centrosomes (C120), and size determination by centriolar Spd-2 supply rather than initial PCM amount (C121).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are theoretical implications of the model (C119-C121) rather than directly tested predictions. While the model is consistent with these phenomena, the claims involve speculation about mechanisms not directly examined in this study. Testing would require additional experiments (e.g., manipulating centriole number/size, measuring PCM size dynamics in different conditions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Spd-2/Cep192 and Cnn/Cep215 may have evolved differential PBD-binding capacity. Spd-2 has >5X more conserved PBD-binding motifs than Cnn in flies (C124) and a similar ratio exists in humans (C125), despite limited sequence identity (C126). This may ensure phosphorylated Spd-2/Cep192 efficiently recruits Polo/Plk1 while Cnn/Cep215 cannot (C127), preventing Cnn from catalyzing its own recruitment (C122, C123).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence analysis (C124, C125, Figure 2\u2014figure supplement 1) clearly shows the differential distribution of PBD-binding motifs. The evolutionary speculation (C127) is reasonable given the conservation pattern, though not directly tested. The functional importance of preventing Cnn self-recruitment (C122, C123) is a logical inference from the model but not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Multiple S-S/T(p) motifs in Spd-2 contribute to Polo recruitment through a multi-site mechanism. The data indicate multiple motifs are involved (C128), with other motifs compensating when conserved ones are mutated (C129). This multi-site mechanism could amplify maturation and establish the feedback loop (C130).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutant analysis (C95-C98, C129) clearly demonstrates redundancy among motifs, supporting multi-site recruitment (C128, C129). The speculation about amplification (C130) is reasonable but not directly tested. The additive effects of CONS versus ALL mutations provide strong evidence for the multi-site model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Spd-2 flux may be species-specific and its role in PCM expansion requires further investigation. Spd-2 flux has only been observed in Drosophila embryos and brain cells (C132), while Cnn flux is embryo-specific and MT-dependent (C133). In C. elegans, SPD-5 does not flux (C134) and recent work found no SPD-2 flux in worms (C135). Whether Spd-2/Cep192 flux occurs in other species and provides the primary mechanism for centriole influence on PCM growth requires further study (C136).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The citations (C132-C135) accurately represent the current state of knowledge about flux in different systems. The acknowledgment of species differences and the call for further investigation (C136) is appropriate. This represents an important caveat about the generalizability of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C148"
+    ],
+    "result": "The proposed mechanism provides an autocatalytic process within a non-liquid-like scaffold framework. The incorporation of Spd-2 only at the centriole surface, coupled with the Spd-2/Polo/Cnn feedback loop, could provide autocatalysis in a non-liquid-like scaffold emanating from the centriole (C148).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C148) integrates the experimental findings with the broader context of PCM assembly mechanisms. The data support a non-liquid-like scaffold (C65, C146, C147) with centriole-localized incorporation (C65, C131) and feedback amplification (C8, C110). The conclusion appropriately synthesizes these observations.",
+    "result_type": "MAJOR"
+  }
+]

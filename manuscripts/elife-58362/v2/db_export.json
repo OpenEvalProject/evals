@@ -1,0 +1,2060 @@
+{
+  "submission": {
+    "id": "14815ba9-ed24-4099-b008-f99432669f52",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:21:41.091715Z",
+    "updated_at": "2025-12-02T19:21:41.091715Z"
+  },
+  "content": [
+    {
+      "id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "submission_id": "14815ba9-ed24-4099-b008-f99432669f52",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis of mitochondrial translation\n\n## Authors\n\n- Shintaro Aibara<sup>1</sup>\n- Vivek Singh<sup>1</sup> ([ORCID: 0000-0003-4656-3362](https://orcid.org/0000-0003-4656-3362))\n- Angelika Modelska<sup>3</sup>\n- Alexey Amunts<sup>1</sup> ([ORCID: 0000-0002-5302-1740](https://orcid.org/0000-0002-5302-1740)) \u2020\n\n### Affiliations\n\n1. Science for Life Laboratory, Department of Biochemistry and Biophysics, Stockholm University Solna Sweden\n2. Department of Medical Biochemistry and Biophysics, Karolinska Institutet Stockholm Sweden\n3. Laboratory of Translational Genomics, Centre for Integrative Biology, University of Trento Trento Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nTranslation of mitochondrial messenger RNA (mt-mRNA) is performed by distinct mitoribosomes comprising at least 36 mitochondria-specific proteins. How these mitoribosomal proteins assist in the binding of mt-mRNA and to what extent they are involved in the translocation of transfer RNA (mt-tRNA) is unclear. To visualize the process of translation in human mitochondria, we report ~3.0 \u00c5 resolution structure of the human mitoribosome, including the L7/L12 stalk, and eight structures of its functional complexes with mt-mRNA, mt-tRNAs, recycling factor and additional trans factors. The study reveals a transacting protein module LRPPRC-SLIRP that delivers mt-mRNA to the mitoribosomal small subunit through a dedicated platform formed by the mitochondria-specific protein mS39. Mitoribosomal proteins of the large subunit mL40, mL48, and mL64 coordinate translocation of mt-tRNA. The comparison between those structures shows dynamic interactions between the mitoribosome and its ligands, suggesting a sequential mechanism of conformational changes.\n\n## Introduction\n\nTranslation in humans takes place in the cytosol and mitochondria. Mitochondrial translation is responsible for the maintenance of the cellular energetic balance through synthesis of proteins involved in oxidative phosphorylation. This is required for adenosine triphosphate (ATP) production and the folding of the cristae. Therefore, impaired mitochondrial translation results in severe combined respiratory chain dysfunction leading to diminished ATP production and consequent cellular energy deficit. This condition is pathogenic in humans, causing myopathies and neurodegenerative diseases (Boczonadi and Horvath, 2014). The defects can happen at any age on any organs. For example, a recent study demonstrated that with age, decreased mitochondrial protein synthesis lead to adult-onset obesity that results in liver steatosis and cardiac hypertrophy (Perks et al., 2017). Therefore, changes in mitochondrial gene expression have long-term consequences on energy metabolism, and surveys suggest that mitochondrial diseases affect 2\u20135 in 10,000 individuals, mostly occurring due to disrupted mitochondrial gene expression (Chinnery, 2014).\n\nTranslation in mitochondria is carried out by specialized mitoribosomes that are structurally distinct with 2-fold reduced mt-rRNA and\u00a0~1 MDa increased protein mass. Specific autosomal recessive mutations associated with these extra proteins cause severe, infantile onset disease with growth retardation, neurological phenotypes and cardiac involvement, and are associated with Perrault syndrome (De Silva et al., 2015; D'Souza and Minczuk, 2018; Boczonadi et al., 2018; Gardeitchik et al., 2018; Bugiardini et al., 2019). Analysis of individuals with variations in mitoribosomal proteins demonstrated that mutations result in Leigh syndrome (Lake et al., 2017). Oxidative phosphorylation enzymology performed in skeletal muscle and liver cell lines from the patients showed deficiency of one or more complexes in which components are synthesized by the mitoribosomes. Further underscoring the importance of mitoribosomes in the regulation of cellular energy metabolism, the expression of its components was also found to be modified in numerous cancers, a trait that has been linked to tumorigenesis and metastasis (Kim et al., 2017). Taken together, these pathomechanisms involve different stages of the mitoribosome activities, which have not been thoroughly investigated. Although advanced approaches to visualize mitochondrial processes have been developed (Wallis et al., 2020), the basic molecular mechanism of how human mitoribosome orchestrates the flow of genetic information from mt-DNA encoded genes to functional proteins is yet to be characterized. Since recent work demonstrates that employment of cell signalling molecules and networks has a potential of targeted therapies for mitochondrial diseases (Ferreira et al., 2019), the basic understanding of the underlying molecular mechanisms is crucial.\n\nOn the mechanistic level, upon transcription and maturation the flow of genetic information in mitochondria requires mt-mRNAs coding for 13 proteins to be delivered to the mitoribosome. Human mt-mRNAs have unusual features, and they lack conventional 5\u2019 and 3\u2019 untranslated regions, Shine-Delgarno sequences and 5\u2019 7-methylguanosine caps. Consequently, specific RNA-binding proteins were identified that complement the unusual features of mt-mRNAs (Rackham et al., 2012). However, despite emerging evidence of the importance of RNA-binding proteins to translation, no mechanism for directly modulating the mitoribosome has been illustrated.\n\nDuring translation on the mitoribosome, mt-tRNAs use anticodons to decode the mt-mRNA, and acceptor terminus (CCA 3') that is esterified to a cognate amino acid. Conventionally, the structural recognition between a tRNA and a ribosome is based on the canonical L-shape of tRNAs, where D- and T-loops interact with each other, giving rise to the elbow-like structure. This is followed by the transit of tRNA through the three distinct sites on the mitoribosome: aminoacyl (A-site), peptide (P-site), and exit (E-site). However, in human mitochondria, the genetic arrangement and the structures of human mt-tRNAs are remarkably diverse, including non-canonical and truncated species with reduced D- and/or T-loops (Helm et al., 2000; Salinas-Gieg\u00e9 et al., 2015). How the rearranged domains of human mt-tRNA are encased by the mitoribosomal elements and which contacts stabilize and translocate mt-tRNAs to perform translation is currently not known.\n\nProgress has been made in obtaining structural data on the mitoribosomes from porcine tissues (Greber et al., 2014; Greber et al., 2015), HEK293S-derived cells (Brown et al., 2014; Amunts et al., 2015; Brown et al., 2017), and initiation complexes have been reconstituted (Kummer et al., 2018;\u00a0Khawaja et al., 2020). While these data yielded the first snapshots, the available structural models are incomplete with key components responsible for mt-mRNA and mt-tRNA binding missing, which reflects the dynamic nature of translation. The structure of human mitoribosome at 3.5 \u00c5 resolution revealed an overall diverged architecture with 36 mitochondria-specific proteins (Amunts et al., 2015), suggesting that it would have functional characteristics distinguishing mitochondrial translation from the counterpart systems. This is further supported by the unique non-ribosomal features of translation in mitochondria, including leaderless mt-mRNAs, unusual structural characteristics of mt-tRNAs and an abundance of auxiliary factors (Ott et al., 2016). Therefore, a high-resolution structure of the actively translating human mitoribosome is needed to discuss the mechanism of action and functional contribution of those factors.\n\nTo provide insight into the cooperation between the mitochondria-specific features, newly identified components and mitoribosomal ligands, as well as to reveal how the protein synthesis function in human mitochondria is modulated by mitoribosomal proteins, we determined eight cryo-EM structures of human mitoribosomes in complex with mt-mRNA, mt-tRNAs and additional factors in different states. These structures report on sequential steps for mt-mRNA binding, mt-tRNA movement, and identify key components for translation in human mitochondria.\n\n## Results\n\n### Structure determination and improved model of human mitoribosome\n\nWe reasoned that a suitable source for structural studies would be mitochondria from dividing cells grown in nutrient-rich expression medium requiring active translation. Mitoribosomal complexes were stalled with antibiotics quinupristin and dalfopristin that bind to the exit tunnel and peptidyl-transferase center, respectively (Harms et al., 2004; Noeske et al., 2014). Cryo-EM imaging of these mitoribosomes resulted in an overall\u00a0~3.0 \u00c5 resolution map from 143,851 particles (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2; Supplementary file 1). This enabled us to build the model of the human mitoribosome, including specific elements responsible for ligand binding, and the L7/L12 stalk (Figure 1; Supplementary file 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig1-v2.jpg)\n\n**Figure 1.:** (A) Overview of the human mitoribosome model. The mitoribosomal proteins are shown in cartoon with transparent surface, rRNA is shown as spheres. Zoomed in regions are indicated. (B) View of the improved model of the N-terminal mitochondrial extension of bL12m (cyan) and its contacts with mL53 (magenta) and uL10m (grey). The protein uL10m is shown with transparent surface colored by hydrophobicity, with red indicating most hydrophobic, revealing a hydrophobic patch involved in bL12m binding. (C) The modeled loop of mL54 (wheat) forms hydrophobic interface with uL11m (grey with transparent surface colored by hydrophobicity). These interactions between mitochondria-specific elements contribute to the stability of the stalk.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** 2D and 3D classes of the mitoribosome represent a variety of orientations. The classification strategy for separating different states is shown, which resulted in eight classes (tRNA blue, mtRRF yellow, involved mitoribosomal elements indicated). For the purposes of clarity, the inset showing the tRNAs have been filtered to 7 \u00c5 resolution.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** FSC plots for the consensus map of the monosome; masked refined maps of the large and small subunits; 8 maps of different states. Resolution is estimated based on the 0.143 FSC cut-off criterion (dashed line).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Map and model of six copies of bL12m-N-terminal domains bound to uL10m C-terminal \u03b1-helix (light grey).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Comparison of maps and corresponding models of mL54 (wheat) in our human mitoribosome structure and porcine mitochondrial initiation complex (PDBID: 6GAW). Equivalent residues are shown in both structures for comparison.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Model and density of mt-RRF (purple) bound to the A- and P-sites on human mitoribosome. (B) mt-RRF modeled in this work is superposed with RRF from E. coli (PDBID: 1EK8) and S. oleracea (PDBID: 6ERI). (C) Comparison of mitochondria-specific N-terminal extension of mt-RRF modeled in our human mitoribosome-mt-RRF complex and the human mitoribosome-mt-RRF complex (blue) (PDBID: 6NU2) published previously.\n\nSix copies of bL12m N-terminal domain, including loops, are resolved in this reconstruction, as well as the improved model for mL54 was assigned on the basis of the new densities (Figure 1B,C, Figure 1\u2014figure supplement 3, Figure 1\u2014figure supplement 4). In addition to the N-terminal extension of uL10 that stabilizes the L7/L12 stalk, our map also reveals N-terminal mitochondrial extension of bL12m (Nouws et al., 2016), linking it to the mitoribosomal core. Sixteen residues could be assigned (0 to \u221215), and contacts with mL53 and uL10m identified, so that Leu-13 protrudes into a hydrophobic patch on uL10m (Figure 1B). In the mitochondria-specific protein mL54, a 19-residue loop Ala72-Ala90 is connected to the hydrophobic pocket of uL11m extension with Ile77 and Tyr78 (Figure 1C). Together, these newly modeled components explain how the functional L7/L12 stalk of the human mitoribosome is stabilized.\n\nSince weak but distinct densities in the tRNA binding sites were observed in the consensus map, we performed 3D classification employing signal subtraction (Scheres, 2016) on those regions in a sequential manner (Figure 1\u2014figure supplement 1). This yielded eight structurally homogeneous classes corresponding to different states of the translation cycle with mt-tRNAs. Mitoribosomes with the complete set of mt-tRNAs occupying A-site, P-site, and E-site are represented by 9% of the particles; A- and P-sites are occupied in 10%; P- and E-sites are occupied in 17%; P-site only is occupied in 5%; E-site only is occupied in 25%. In addition, we were able to depict two intermediate states: 1) intersubunit A/P- and P/E-hybrid state in 3%, wherein mt-tRNA in the A-site is rotated towards the exit tunnel, and mt-tRNA in the P-site is tilted towards the E-site, coupled with subunit rotation; 2) intersubunit P/E-hybrid in 14% (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2). Together, the ensemble of reconstructions includes an an unrotated, rotated and a post-translocation state, indicative of a sequential mt-tRNA movement along translation.\n\nIn a subset of particles, a density was found in the A-site with a recognizable three-helix bundle corresponding to domain I of the native mitochondrial ribosome recycling factor (mt-RRF) (Figure 1\u2014figure supplement 1 bottom-left panel, Figure 1\u2014figure supplement 5). The mitoribosomes in this class adopt a ratcheted state, with the small subunit exhibiting 7.5\u00b0 rotation. The comparison with the recently reconstituted complex of mt-RRF (Koripella et al., 2019) shows that the conformation of the head is different, as well as the interactions with mt-RRF (Figure 1\u2014figure supplement 5). Particularly, the mitochondria-specific N-terminal extension does not adopt a helical conformation as previously suggested (Koripella et al., 2019), and reported interactions with rRNA are not observed in our native complex.\n\n### Mitochondria-specific elements involved in mt-tRNA binding\n\nThe captured mt-tRNAs allowed us to identify key mitochondria-specific elements responsible for their anchoring to each one of the binding sites on the translationally active mitoribosome. In the A-site, in addition to the bacteria-like interactions of uL16m and H89 rRNA, the mitochondria-specific C-terminal helix of uL11m extends towards the mt-tRNA elbow, while the conventional H38 \u2018A-site finger\u2019 is missing, and no bacteria-like interactions of uL27m with A-tRNA are detected (Voorhees et al., 2009). Instead, a specific proteinaceous moiety interacts with the A-tRNA elbow. It is formed by the mitochondria-specific proteins mL40 and mL48 with their N-terminal and C-terminal helices, respectively (Figure 2, Figure 2\u2014figure supplement 1). Both of these proteins are anchored in the central protuberance, through extensive interactions with the structural tRNAVal (CP-tRNA), as well as shared with bL31m and interactions with mitochondria-specific protein mL46 (Figure 2, Figure 2\u2014figure supplement 1). In the tRNA binding site, the N-terminal helix of mL40 with residues Lys66, Lys70, and Gln63 approach the elbow region of the A-tRNA (Figure 2\u2014figure supplement 2A). The C-terminal helix of mL48 does not directly contact mt-tRNA, but supports the N-terminal helix of mL40 via a hydrophobic interface, allowing it to contact mt-tRNA elbow in the A-site (Figure 2\u2014figure supplement 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig2-v2.jpg)\n\n**Figure 2.:** Views of the tRNA binding sites of human mitoribosome showing interactions of mL40 (green) and mL48 (yellow) with A-tRNA (white/aquamarine) and P-tRNA (white/blue). In the central protuberance, mL40 and mL48 interact with mL46 (brown), bL31m (salmon) and CP-tRNA (white/pink). In the right panel, P- and E-tRNA are removed for clarity.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Topology diagrams for the structural domains of mL40 (green) and mL48 (yellow). \u03b2 strands from mL40, mL48 and bL31m form \u03b2-sheet in the central protuberance. CP-tRNA is involved in extensive interactions with mL40 and mL48. N-terminus of mL40 extends to the A- and P-tRNA binding site.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Interactions of mL40 N-terminal helix (green) with A-tRNA (cyan) and P- tRNA (blue). (B) Hydrophobic interface between mL40 N-terminal helix and mL48 C-terminal helix (yellow) displayed in transparent surface colored by hydrophobicity, red indicting most hydrophobic.\n\nThe P-site has been remodeled substantially compared to bacteria as well. Consistent with the previous data, the positively charged C-terminal tail of uS9 (Lys395) approaches the P-site tRNA anticodon stem-loop (Figure 3\u2014figure supplement 1; Selmer et al., 2006; Greber et al., 2015; Kummer et al., 2018). This recognition is crucial for translation fidelity (Arora et al., 2013; Jindal et al., 2019). The N-terminal helix of mL40 that binds A-tRNA also interacts with P-tRNA elbow. A series of positively charged residues, Arg67, Arg70, and Lys77 interact with the phosphate backbone of the P-tRNA elbow (Figure 2\u2014figure supplement 2A). We also observe that the uL27m N-terminal loop is stably associated with the acceptor arm of P-tRNA (Figure 3\u2014figure supplement 2).\n\nIn the E-site, the mt-tRNA elbow is stabilized by the C-terminal helix of mL64, extending from the central protuberance, which was not previously resolved. E-tRNA is further stabilized by uS7m with its C-terminal helix aligned with the major groove of E-tRNA anticodon stem. The residues Lys221 and Lys228 form potential interactions with E-tRNA anti-codon stem backbone phosphates (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2, Video 1). Together, the interactions of the mitochondria-specific proteins with mt-tRNAs suggest the existence of distinct tRNA translocation intermediates, which we have further analyzed below.\n\n![Video 1.](https://cdn.elifesciences.org/articles/58362/elife-58362-video1.mp4.jpg)\n\nThe mitoribosomes bound to A- and P-tRNA also contain additional density associated with the anticodon stem of A-tRNA, stretching from residue 40 down to the backbone phosphate of the last residue of mRNA codon in the A-site. The shape of the elongated 15 \u00c5 long density matches structures of polyamines, which are known to reside in mitochondria (Tassani et al., 1996). Polyamines are linear aliphatic hydrocarbons with at least three amino groups, and since four amino groups fit the density, it could be modeled it as spermine (Figure 3\u2014figure supplement 3). Although we cannot explicitly state that the densities are indicative of the presence of spermine and rule out the possibility that an unidentified protein moiety is involved, the stable association with the A-tRNA containing classes suggests that the binding is consistent and functional, possibly bridging between the translocated mt-tRNAs.\n\n### Conformational trajectory of mt-tRNA movement\n\nWe next examined which conformational changes of the mitoribosome occur by comparing individual structures. We monitor those changes from the perspective of the tRNA moving in a step-wise manner through the mitoribosome from A- to E-site over a distance of\u00a0~50 \u00c5 (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig3-v2.jpg)\n\n**Figure 3.:** (A) Overview of tRNAs bound to the A-, P- and E-site in the rotated and non-rotated mitoribosome. The models were superimposed using the mt-LSU as a reference The classical tRNA binding sites are outlined. (B) Comparison between mt-tRNA in the A-site (outlined) and A/P state (light blue/white). (C) Comparison between mt-tRNA in the A/P state (outlined) and P-site (blue/white). (D) Comparison between mt-tRNA in the P-site (outlined) and P/E state (blue/white). (E) Comparison between mt-tRNA in the P/E state (outlined) and E-site (pink/white).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** uS9m C-terminal tail (brown) interacts with P-site tRNA (blue/white) anticodon stem loop. uS7m (violet) approaches the major groove of E-site tRNA (pink/white) anticodon stem. bL33m (olive) interacts with E-site tRNA acceptor arm. Dashed line represents distances below 4 \u00c5.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Cryo-EM density for the APE occupied state, focusing on proteinacious elements involved tRNA interactions. Front top: mL64, P-site fingers (mL40 and mL48), and uS7m. (B) Schematic representation of proteins involved in tRNA interactions. As the structure obtained in this study represents an average of multiple tRNAs, the sections are represented as areas of elbow (blue), anti-codon stem (green), and acceptor stem (orange). Residues numbers and identities are given with their color representing their chain assignment.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Unmodeled density bound between anticodon stem loops of A-tRNA and P-tRNA is represented as a black mesh.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The figure shows density of L1 stalk in rotated (white) and non-rotated state (purple) along with E-tRNA (pink) and P/E-tRNA (white) and mL64 (magenta), superposed on the large subunit for comparison. All components from the rotated state are shown in white.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** A continuous density of mRNA (purple) is observed in P-site tRNA bound classes (right) but is absent in classes lacking P-site tRNA (left).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A) Large density adjacent to mS39 corresponding to LRPPRC-SLIRP complex is observed in P-site tRNA bound classes (shown state: APE-site tRNA bottom panel). No such density is observed in classes lacking P-site tRNA (shown state: E-site tRNA, top panel). (B) Top panel shows the superhelical spiral shell of mS39 that interacts with the density. Bottom panel the density displays a two-parted volute architecture that is characteristic of PPR proteins. (C) Comparisons of the density from our study and the previously published in situ cryo-tomography reconstructions (blue).\n\nThe binding of mt-tRNA to the A-site is held via interactions of the mt-tRNA elbow with the mitochondria-specific protein mL40. Upon the displacement of the acceptor arm from the A-site to A/P transition state, the mitoribosomal small subunit ratchets 6.5\u00b0 and the head swivels. The following conformational changes, which are related to the formation of the hybrid state, allow accommodation of a rotated mt-tRNA. They involve primarily the N-terminal helix of mL40 that shifts 5 \u00c5 towards the P-site. Therefore, the protein element maintains the contact with mt-tRNA from A-site to A/P state, contributing to the stability of the transition state (Figure 3B). Upon the next transition from A/P state to the P-site, the mL40 N-terminal helix remains in contact with the mt-tRNA elbow through electrostatic interactions (Figure 3C, Figure 2\u2014figure supplement 2A).\n\nThe movement of P-tRNA to the P/E state upon ribosome ratcheting is facilitated by the exchange of protein contacts from mL40 to mL64 (Figure 3D). Therefore, the elbow remains stabilized by the mitochondria-specific protein elements throughout the moving (Figure 3\u2014figure supplement 2, Video 1). Our structures suggest that the released mL40 N-terminal helix plays a role in posing a steric barrier for a back transition to the P-site (Figure 3C).\n\nNext, P/E to E-site movement is facilitated by the rotation-associated 6 \u00c5 conformational change of the mL64 C-terminal helix (Figure 3E, Video 1). While the overall contact is maintained, the specific contact points shift further along the helix towards the C-terminus, sliding the mt-tRNA elbow to the E-site. This suggests an active involvement of mL64 in the mt-tRNA movement. Further, the acceptor arm of the deacetylated mt-tRNA is stabilized by interactions with bL33m during the transition. Also here, the contact point of the \u00df2-\u00df3 loop (Arg36) and the N-terminal backbone amide of Ser65 is shifted to Lys61 in the \u00df4-\u00df5 loop (Figure 3E, Figure 3\u2014figure supplement 1).\n\nIn regard to the L1 stalk, in the density maps we observe its binding to the elbow of the deacetylated tRNA, as the mitoribosome adopts the non-ratcheted state (from P/E to E-site) (Figure 3\u2014figure supplement 4). This movement is defined as outward swinging (Selmer et al., 2006). Finally, the release from the mitoribosome is facilitated by the loss of interactions with E-tRNA upon ratcheting, that includes the conformational change of the mL64 C-terminal helix and the movement of uS7m away from the E-site (Figure 3E). This loss of interactions effectively destabilizes the tRNA on the mitoribosome.\n\n### LRPPRC-SLIRP module delivers mRNA for translation by mitoribosome\n\nThe presence of mt-tRNA in A- or P-site of translating mitoribosomes correlates with a continuous density extending from the mitoribosomal pentatricopeptide repeat (PPR) protein mS39 to the decoding center. Comparison with the structures of the mitoribosome without P-site tRNA suggests that this density represents mt-mRNA (Figure 3\u2014figure supplement 5). Furthermore, particles with bound mt-mRNA also exhibit an additional elongated density upstream of a non-mitoribosomal protein interacting with mS39 (Figure 3\u2014figure supplement 6). This elongated density bound to the solvent side of mS39 embraces the bottom domain of the superhelical spiral shell and tightly interacts with at least ten tandem repeats. The two moieties share a surface area of\u00a0~2000 \u00c52, representing by far the largest protein-protein interface on the mitoribosome. The upper globular domains of the new density and mS39 are separated from each other forming an overall heterodimer-like arrangement with two parted volute architectures pointing away from each other. While the mS39 volute is docked to the head of the small subunit, the new density counterpart extends away from the mitoribosome. Apart from mS39, no other direct interaction between the newly identified density and the mitoribosome is observed in our map. An in situ electron cryo-tomography study suggested presence of a moiety in a similar position (Englmeier et al., 2017), confirming that it is associated with active translation (Figure 3\u2014figure supplement 6).\n\nTo identify the additional factor from the cryo-EM map, we performed focused 3D-refinement in attempt to improve the local resolution in this peripheral region. However, due to the intrinsically dynamic arrangement of the outer bound protein moiety, it was not possible to resolve the secondary structures by cryo-EM. Therefore, we analyzed the highly purified native sample by mass spectrometry. Consistently with the size of the density, the analysis suggested leucine-rich PPR motif-containing protein (LRPPRC) (Supplementary file 3, Supplementary file 4). LRPPRC is conserved from flies to mammals and has a broad and strong RNA binding capacity through multiple PPR motifs (Baggio et al., 2014). Functionally interacting PPR proteins is a common theme in mitochondrial gene expression systems, and PPR heterodimers were previously reported in RNA metabolism systems (Okuda and Shikanai, 2012; Aphasizhev and Aphasizheva, 2013).\n\nAdditional studies also showed that LRPPRC forms a stable complex with an 11 kDa protein named Stem-Loop Interacting RNA binding Protein (SLIRP) (Sp\u00e5hr et al., 2016). In vivo studies on mice liver mitochondria, including knockout, complemented by RNA sequencing of isolated mitoribosomes and the associated mt-mRNA showed that SLIRP is important for the presentation of mt-mRNA to the mitoribosome for efficient translation (Lagouge et al., 2015). Despite the small molecular weight, our mass spectrometry data validated the presence of SLIRP in the purified translating mitoribosomal complex that was used for cryo-EM (Supplementary file 3, Supplementary file 4). The quantified weighted spectra for SLIRP is similar to the mitoribosomal proteins, and 46% of the sequence has been covered through four peptides identified by the mass spectrometry experiment (Supplementary file 4). Furthermore, the shape of this moiety within the density map is consistent with the LRPPRC-SLIRP complex formed in vitro, which was also shown to have an elongated shape, as evident by a modified migration on a native gel (Sp\u00e5hr et al., 2016). Finally, LRPPRC-SLIRP has not been detected in the control experiments with non-translating human mitoribosomes (Amunts et al., 2015). Therefore, translating mitoribosomes with mt-tRNA in the P-site and mt-mRNA are associated with the LRPPRC-SLIRP complex, and the contacts are driven by PPR-mediated interactions viamS39 (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58362/elife-58362-fig4-v2.jpg)\n\n**Figure 4.:** Top left, mt-tRNAs bound to A-, P- and E-site and coordinated by mL40 (green) and mL64 (red), mRNA (purple) and LRPPRC-SLIRP module (blue) bound to mS39 (yellow). Seven structures with bound tRNA are arranged in the order representing tRNA translocation through the translation cycle. The conformational changes of mL40 and mL64 are indicated.\n\n## Discussion\n\nIn this study, the preparation of mitoribosomes from HEK cells led to the isolation of functional complexes with associated trans-acting factors. The structural analysis of translating complexes provided an improved model for the human mitoribosome, including the L7/L12 stalk, and revealed new insights into the functionally important regions involved in mt-tRNA translocation and mt-mRNA binding. Although less stable and short-lived intermediates of partially rotated states that involve minor conformational changes are likely to have escaped detection in our study, we identified populations corresponding to stable classical and hybrid states covering the entire span of mt-tRNA movement on the mitoribosome. The comparison between the states allowed describing a sequence of concerted steps in the mitochondrial translation that have not been previously reported.\n\nThe structural analysis revealed how the diverged mt-tRNAs fit in the protein-rich interface of the two mitoribosomal subunits, and how its trajectory is correlated with mitochondria-specific protein elements. Upon binding to the A-site and the recognition of the anticodon stem-loop, the tRNA elbow is stabilized by the mL40 N-terminal helix, while the mitochondria-specific extension of uL11m restricts a potential backward movement of the elbow. N-terminal helix of mL40 through electrostatic interactions further regulates the subsequent transition to the P-site. In the P-site, the tRNA acceptor arm is primarily in contact with the uL27m N-terminal loop. From the P-site upon peptidyl transfer, the tRNA elbow is handed over to the mL64 C-terminal helix and the deacylated tRNA is moved to the E-site, involving mL64 conformational change. The ratcheting and L1 stalk then facilitate the ejection of tRNA from the E-site.\n\nThrough the different stages of mt-tRNA movement, mL40, mL48 and mL64 undergo specific conformational changes, which support the progress of mt-tRNA from A- to E-site. In the absence of mt-tRNAs, these protein elements involved in translocation are disordered or structurally heterogenous. Therefore, at all three sites protein elements unique to the mitoribosome play roles in the tRNA recognition, particularly the elbow region. The multiple recognition events relying on the tRNA elbow and its specific coordination are likely co-evolved with the structural properties of human mt-tRNA, and they are different from fungi (Naschberger et al., 2020) and alveolates (Tobiasson and Amunts, 2020). This suggests that mitochondria-specific proteins promote effective transit through the mitoribosome by stabilizing the tRNA elbow and favoring the unidirectionality of movement.\n\nThe observation that presence of mt-tRNA and mt-mRNA on the mitoribosome is paired with the functionally associated trans-acting LRPPRC-SLIRP module (Figure 4) suggests a mechanism for delivering mt-transcripts. LRPPRC is a mt-mRNA chaperone that relaxes secondary structures (Siira et al., 2017). Its involvement in coordination of mitochondrial translation has been proposed (Ruzzenente et al., 2012), and mutations were shown to lead to Leigh Syndrome and high mortality due to episodes of severe acidosis (Mootha et al., 2003). The phenotype resembles that of patients with decreased levels of mitochondrial translation (Boczonadi et al., 2018). Therefore, our direct evidence that LRPPRC-SLIRP is engaged in delivering transcripts to the mRNA channel of the human mitoribosome is in line with the biochemical and physiological data.\n\nUnlike in bacteria, most of the human mt-mRNAs are leaderless, and counterparts for the yeast mitochondrial translational activators system are not found (Herrmann et al., 2013; Ott et al., 2016). Therefore, how human mitoribosomes are adapted to receiving a nascent mt-mRNA was not known. In bacteria, ribosomes are directly associated with RNA polymerase, thus regulating the rate of gene expression (Kohler et al., 2017; Demo et al., 2017). In mitochondria, such coupling does not occur because transcription and translation are most likely compartmented. However, the regulation of mitochondrial gene expression is particularly important, as it has to be coordinated with the cytosolic translation responsible for the synthesis of the complementary proteins constituting the oxidative phosphorylation system (Couvillion et al., 2016). Our data suggest that during translation, the PPR mitoribosomal protein mS39 located close to the mRNA channel entry acts as a platform for the binding of LRPPRC-SLIRP (Figure 3\u2014figure supplements 5 and 6). It further rationalizes the previous observations that human mitoribosome dismissed the intrinsic ribosomal protein elements assisting in mRNA unfolding for active translation in bacteria such as uS4, C-terminal uS3m, and OB domains of bS1m (Brown et al., 2014; Amunts et al., 2015). Hence, the human mitoribosome evolved a specialized mechanism involving auxiliary factors and linker PPR protein mS39 for regulation and alignment of the transcripts. Our results suggest how mt-mRNA, which is transcribed at the membrane-associated nucleoid, is delivered to the human mitoribosome.\n\n## Materials and methods\n\n### Cell treatment and isolation of mitochondria\n\nHEK293S-derived cells (line T501, GnTI- stably expressing a transporter under tetracycline-inducible control) were grown in Freestyle 293 Expression Medium containing 5% tetracycline-free FBS in vented shaking flasks at 37\u00b0C, 5% CO2 and 120 rpm. The identity has been authenticated using STR profiling. The cell lines tested negative for mycoplasma contamination. Culture was scaled up sequentially, by inoculating at 1.5 \u00d7 106 cells/mL and subsequently splitting at a cell density of 3.0 \u00d7 106 cells/mL up to a final volume of 2 L of cell culture. The cells were harvested from the 2 L culture when the cell density was 4.2 \u00d7 106 cells/mL by centrifugation at 1000 g for 7 min, 4\u00b0C\u00a0(Aibara et al., 2018). The pellet was washed and resuspended in 200 mL Phosphate Buffered Saline (PBS). The washed cells were pelleted at 1000 g for 10 min at 4\u00b0C. The resulting pellet was resuspended in 120 mL of MIB buffer (50 mM HEPES-KOH, pH 7.5, 10 mM KCl, 1.5 mM MgCl2, 1 mM EDTA, 1 mM EGTA, 1 mM DTT, protease inhibitors) and allowed to swell in the buffer for 15 min in the cold room by gentle stirring. About 45 mL of SM4 buffer (840 mM mannitol, 280 mM sucrose, 50 mM HEPES-KOH, pH 7.5, 10 mM KCl, 1.5 mM MgCl2, 1 mM EDTA, 1 mM EGTA, 1 mM DTT, protease inhibitors) was added to the cells in being stirred in MIB buffer and poured into a N2 cavitation device kept on ice. The cells were subjected to a pressure of 500 psi for 20 min before releasing the nitrogen from the chamber and collecting the lysate. The lysate was clarified by centrifugation at 800 g and 4\u00b0C, for 15 min, to separate the cell debris and nuclei. The supernatant was passed through a cheesecloth into a beaker kept on ice. The pellet was resuspended in half the previous volume of MIBSM buffer (three volumes MIB buffer + 1 vol SM4 buffer) and homogenized with a Teflon/glass Dounce homogenizer. After clarification as described before, the resulting lysate was pooled with the previous batch of the lysate and subjected to centrifugation at 1,000 g, 4\u00b0C for 15 min to ensure complete removal of cell debris. The clarified and filtered supernatant was centrifuged at 10,000 g and 4\u00b0C for 15 min to pellet crude mitochondria. Crude mitochondria were resuspended in 10 mL MIBSM buffer and treated with 200 Units of RNase free DNase for 20 min in the cold room to remove contaminating genomic DNA. Crude mitochondria were again recovered by centrifugation at 10,000 g, 4\u00b0C for 15 min and gently resuspended in 2 mL SEM buffer (250 mM sucrose, 20 mM HEPES-KOH, pH 7.5, 1 mM EDTA). Resuspended mitochondria were subjected to a sucrose density step-gradient (1.5 mL of 60% sucrose; 4 mL of the 32% sucrose; 1.5 mL of 23% sucrose and 1.5 mL of 15% sucrose in 20 mM HEPES-KOH, pH 7.5, 1 mM EDTA) centrifugation in a Beckmann Coulter SW40 rotor at 28,000 rpm for 60 min. Mitochondria seen as a brown band at the interface of 32% and 60% sucrose layers was collected and snap-frozen using liquid nitrogen and transferred to \u221280\u00b0C.\n\n### Purification of mitoribosomes\n\nFrozen mitochondria were transferred on ice and allowed to thaw slowly. Lysis buffer (25 mM HEPES-KOH, pH 7.5, 100 mM KCl, 10 mM MgOAc, 1.7% Polyethylene glycol octylphenyl ether, 2 mM DTT, protease inhibitors) was added to mitochondria and the tube was inverted several times to ensure mixing. A small Teflon/glass Dounce homogenizer was used to homogenize mitochondria for efficient lysis After incubation on ice for 5\u201310 min, the lysate was clarified by centrifugation at 30,000 g for 20 min, 4\u00b0C. The clarified lysate was carefully collected. Centrifugation was repeated to ensure complete clarification. A volume of 1 mL of the mitochondrial lysate was applied on top of 1 M sucrose in a ratio of 2.5:1. Centrifugation was carried out at 73,000 rpm for 45 min in a TLA120.2 rotor at 4\u00b0C. The pellets thus obtained were washed and sequentially resuspended in a total volume of 100 \u00b5l resuspension buffer (20 mM HEPES-KOH, pH 7.5, 100 mM KCl, 10 mM MgOAc, 1% Triton X-100, 2 mM DTT). The sample was clarified twice by centrifugation at 18,000 g for 10 min at 4\u00b0C. The sample was applied on to a linear 15\u201330% sucrose (20 mM HEPES-KOH, pH 7.5, 100 mM KCl, 10 mM MgOAc, 0.05% n-dodecyl-\u03b2-D-maltopyranoside, 2 mM DTT) gradient and centrifuged in a TLS55 rotor at 50,000 rpm for 120 min at 4\u00b0C. The gradient was fractionated into 50 \u03bcL volume aliquots. The absorption for each aliquot at 260 nm was measured and fractions corresponding to the monosome peak were collected. The pooled fractions were subjected to buffer exchange with the resuspension buffer to dilute away sucrose, and incubated with a bacterial antibiotic quinupristin/dalfopristin (Santa Cruz Biotechnology, 126602-89-9) at 2.2 mM for 30 min.\n\n### Mass spectrometry\n\nThe samples for mass spectrometry analysis were prepared to identify the non-ribosomal proteins associated with the translating mitoribosome. The complex was purified exactly as for the cryo-EM analysis. The gradient was fractionated, and the monosome peak was collected. The pooled fractions were subjected to buffer exchange with the resuspension buffer to dilute away sucrose. The purified solution was submitted for mass spectrometry analysis. The data were visualized and analyzed using Scaffold_4.7.5. The proteins identified by mass spectrometry are given in Supplementary file 2. Apart from the mitoribosomal proteins and pyruvate dehydrogenase components, which represent a typical contamination due to the similar molecular weight of the complex, only three additional proteins were found: LRPPRC, SLIRP and mitochondrial transcription factor A. The weighted spectra were quantified, and the values for LRPPRC and SLIRP corresponded to the expected values for mitoribosomal proteins, whereas the value for the transcription factor is substantially lower.\n\n### Electron microscopy and image processing\n\nFor cryo-EM analysis, 3 \u03bcL of\u00a0~120 nM mitoribosomes was applied onto a glow-discharged (20 mA for 30 s) holey-carbon grid (Quantifoil R2/2, copper, mesh 300) coated with continuous carbon (of\u00a0~3 nm thickness) and incubated for 30 s in a controlled environment of 100% humidity and 4\u00b0C temperature. The grids were blotted for 3 s, followed by plunge-freezing in liquid ethane, using a Vitrobot MKIV (FEI/Thermofischer). The data were collected on FEI Titan Krios (FEI/Thermofischer) transmission electron microscope operated at 300 keV, using C2 aperture of 70 \u03bcm; slit width of 15 eV on a GIF quantum energy filter (Gatan). A K2 Summit detector (Gatan) was used at a pixel size of 1.05 \u00c5 (magnification of 130,000X) with a dose of\u00a0~30 electrons/\u00c52 fractionated over 20 frames. A defocus range of 0.8 to 2.8 \u03bcm was used. Detailed parameters are listed in Supplementary file 1.\n\nBeam-induced motion correction and per-frame B-factor weighting were performed for all movies using MotionCorr2 (Zheng et al., 2017). Motion-corrected micrographs were used for contrast transfer function (CTF) estimation with gctf (Zhang, 2016). Unusable micrographs were removed by manual inspection of the micrographs and their respective calculated CTF parameters. From a total of 3481 micrographs selected, 311,655 particles were picked in RELION-2.1 (Kimanius et al., 2016), using reference-free followed by reference-aided particle picking procedures. Reference-free 2D classification was carried out to sort 192,970 useful particles from falsely picked objects, which were then subjected to 3D classification. 3D classes corresponding to unaligned particles and mt-LSU were discarded and 143,851 monosome particles were pooled and used for 3D Auto-refinement yielding a map with an overall resolution of 3.1 \u00c5. Resolution was estimated using a Fourier Shell Correlation cut-off of 0.143 between the two reconstructed half maps. Masked focused refinement was performed on the small subunit and the large subunit to produce maps of 3.0 \u00c5 and 3.1 \u00c5 resolution, respectively (Figure 1A, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).\n\nUsing the consensus 3.1 \u00c5 refined map as reference, the corresponding aligned particles were subjected to 3D classification with fine angle searches which gave distinct unratcheted (100,288 particles) and ratcheted (31,366 particles) states. Partial signal subtraction was carried out using a mask covering the tRNA binding sites. Signal subtracted particles were 3D classified using a mask around A+P-sites. These sites were chosen as they displayed nebulous density, consistent with mixed occupancy. This yielded one class with E-site only occupied (36,165 particles) and three additional classes, class one showing a weak RRF-like density; class two with A-, P-sites occupied and a partial density for E-site tRNA; and class3 with partial densities in P- and E-sites but lacking any density in the A-site. The masked 3D classification was extended to the RRF-like density for class one particles. This gave two sub-classes, based on presence (14,502 particles) or absence of RRF-like density. The sub-class lacking RRF-like density was further classified with a mask covering A- and P-sites to yield two final classes containing: A/P- and P/E state (4906 particles); and P/E state alone (19,968 particles). Class 2 and class three particles were subjected to 3D-classification using a mask around A- and P-sites, yielding four final classes: A-, P- and E-sites occupied (13,350); A- and P-sites occupied (14,475 particles); P- and E-sites occupied (24,491 particles) and P-site only occupied (6692 particles) respectively (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2). Classes containing P-site tRNA showed presence of an additional unassigned density adjacent to mS39. Focused 3D-autorefinement was performed after pooling the particles from classes exhibiting this density, using a mask covering mS39 and the unassigned density. However, the attempts to resolve this density to a quality required for accurate model building were not successful. In the mt-SSU, all 3D classifications with signal subtracted particles were performed using a T-value of 20 and no further image alignment. The maps were subjected to modulation transfer function correction, automatic B-factor sharpening and local resolution filtering using RELION.\n\n### Model building and refinement\n\nHuman mitoribosome structure with PDBID 3J9M (Amunts et al., 2015) was used as a starting template and rigid body fitted into the Cryo-EM maps using UCSF Chimera (Pettersen et al., 2004). Further, real space refinement of the model and building of regions absent in the previous structure were carried out in Coot v0.8.9 (Emsley and Cowtan, 2004; Brown et al., 2015). Models of mt-mRNA and mt-tRNA were built using respective models from PDBID 4V51 (Selmer et al., 2006) as a template and the ribonucleotides were then mutated to non-specific purine (P5P) and pyrimidine (Y5P) ribose monophosphate monomers. Human bL12m sequence information from Uniprot ID P52815 was used to build the human mitochondria-specific N-terminal extension of bL12m in coot v0.8.9. Human mt-RRF was built using PDBID 6ERI (Perez Boerema et al., 2018) as a template. Final models were further subjected to refinement against respective B-factor sharpened and local resolution filtered maps with Phenix.real_space_refinement v1.13_2998 (Afonine et al., 2018), wherein, four macro-cycles of global energy minimization with secondary structure restraints, Ramachandran and rotamer restraints were carried out for each model. Additional restraints for mt-mRNA, mt-tRNA monomers (Y5P; P5P), quinupristin (H8Q) and dalfopristin (DOL) were generated with phenix.readyset. Refined models were validated with MolProbity v.4.3.1 (Chen et al., 2010). Model refinement data are listed in Supplementary file 2.\n\n### Structure analysis and figures\n\nVisualization and analysis of the models and maps was carried out using UCSF Chimera (Pettersen et al., 2004) or PyMOL 1.8 (DeLano, 2002). For model and map comparisons, models were superposed in Coot v0.8.9 (Emsley and Cowtan, 2004; Brown et al., 2015) using the Secondary Structure Matching algorithm and maps downloaded from EMDB were resampled on our maps in UCSF Chimera.\n",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "c351f45f-d3c8-461e-9bff-a774d8fa3888",
+      "submission_id": "14815ba9-ed24-4099-b008-f99432669f52",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Adam Frost, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58362.sa1](https://doi.org/10.7554/eLife.58362.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nAibara et al. illuminate how gene expression within the mitochondrial matrix is governed by the human mitochondrial ribosome. Through analysis of eight new structures of different compositional and conformation mito-ribosome states, their manuscript teaches us how mito-specific ribosomal proteins guide tRNA movements through the mito-ribosome. Their structures also suggest how a novel complex, a heterodimer of the proteins LRPPRC-SLIRP, engages the mRNA entry site in the small ribosomal subunit to facilitate translation, providing a potential explanation for how mutations in LRPPRC causes Leigh syndrome.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural basis of mitochondrial translation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Cynthia Wolberger as the Senior Editor. Three of the reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nAibara et al. report improved resolution updates of the human mitoribosome structure with matching insights into aspects of translation within the mitochondrial matrix. Their cryo-EM reconstructions of mito-ribosomes purified in the presence of antibiotics revealed eight different compositional or conformational states. Analysis of these states suggests new roles for a subset of the 36 mito-specific ribosome proteins in the mechanics of translation-including guiding mt-tRNA movements through the ribosome and the docking of leaderless mt-mRNA to the small subunit. Of particular note, the authors discovered a new density bound to the mitochondria-specific protein mS39 that correlated with well-resolved mRNA density. Mass spectrometry of the purified sample used for cryoEM suggests this density is attributable to a heterodimer of LRPPRC-SLIRP. While the cryo-EM density for this complex is too blurry to interpret, the notion that these proteins \"hand-off\" messages to the small mito-ribosomal subunit is attractive and consistent with prior data showing that these two proteins play roles in transcription-translation coordination and that mutations in LRPPRC are associated with Leigh syndrome. Aibara also present analyses of proteins mL40, mL48, and mL64-plus a density that may correspond with polyamines like spermine-during the translocation of mt-tRNAs. Finally, the authors provide improved models of other functional regions, such as the L7/L12 stalk. Overall, this manuscript is an exciting advance in understanding the structural basis of translation by the highly divergent mitoribosome and tRNAs-but specific outstanding issues should be addressed before acceptance.\n\nEssential revisions:\n\n1) The authors write, \"the structures of human mt-tRNAs are remarkably diverse, including non-canonical and truncated species with reduced D- and/or T-loops.\" From the structural data presented here, though, which must be an average of many different tRNA species, it appears the authors modeled tRNA using generic structures that are indistinguishable, at this resolution, from elbow-shaped cytosolic tRNAs. Please described whether and how the interactions seen between tRNA and mL40 or mL48 depend on structural properties of mito-tRNAs. If so, please support this claim by showing the cryo-EM maps used to support the modeling of the tRNA \"elbow\" regions and contacts with mL40 and mL64.\n\n2) The interpretation of the density between the A-site and P-site tRNAs as a polyamine is reasonable but speculative-it could be protein. The authors acknowledge this in the Results, yet reach too far by highlighting polyamines in the Abstract and Discussion. Was the putative spermine density found bound in a position similar to the first crystal structure of tRNA-Phe? Is the alleged polyamine density present in all the maps or only those containing tRNAs in the P and A sites? Please discuss and mention which other polyamines are present in mitochondria that could, in principle, correspond with the density attributed to spermine here.\n\n3) Given the poor resolution of the mS39-adjacent density (Figure 3\u2014figure supplement 5), the authors should soften their claim to have unambiguously \"identified\" this as LRPPRC-SLIRP. Based on the mass spectrometry and EM data, this is certainly a reasonable hypothesis worthy of discussion. Still, the authors are encouraged to be more cautious in their interpretation of the density, and the figures and text modified accordingly.\n",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "44864ba7-539c-45a2-8190-1ece73bf8367",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C1",
+      "claim": "Human mitoribosomes comprise at least 36 mitochondria-specific proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation of mitochondrial messenger RNA (mt-mRNA) is performed by distinct mitoribosomes comprising at least 36 mitochondria-specific proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known characteristic of mitoribosomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "9489061b-24fd-4399-ba19-aca8dad256a2",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C2",
+      "claim": "The study reports a ~3.0 \u00c5 resolution structure of the human mitoribosome including the L7/L12 stalk.",
+      "claim_type": "EXPLICIT",
+      "source": "To visualize the process of translation in human mitochondria, we report ~3.0 \u00c5 resolution structure of the human mitoribosome, including the L7/L12 stalk, and eight structures of its functional complexes with mt-mRNA, mt-tRNAs, recycling factor and additional trans factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the resolution and components of the structure determined in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "f31a574e-5cf7-4a61-87f5-7489e14fc2c8",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C3",
+      "claim": "Eight structures of functional complexes with mt-mRNA, mt-tRNAs, recycling factor and additional trans factors were determined.",
+      "claim_type": "EXPLICIT",
+      "source": "To visualize the process of translation in human mitochondria, we report ~3.0 \u00c5 resolution structure of the human mitoribosome, including the L7/L12 stalk, and eight structures of its functional complexes with mt-mRNA, mt-tRNAs, recycling factor and additional trans factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number and types of structures determined.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "f63ea67c-465c-44eb-9794-f182b29e470a",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C4",
+      "claim": "A transacting protein module LRPPRC-SLIRP delivers mt-mRNA to the mitoribosomal small subunit through a dedicated platform formed by mS39.",
+      "claim_type": "EXPLICIT",
+      "source": "The study reveals a transacting protein module LRPPRC-SLIRP that delivers mt-mRNA to the mitoribosomal small subunit through a dedicated platform formed by the mitochondria-specific protein mS39.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes this mechanism revealed by the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "e179d11b-f06e-4a1f-bdec-850d1eb93131",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C5",
+      "claim": "Mitoribosomal proteins mL40, mL48, and mL64 coordinate translocation of mt-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitoribosomal proteins of the large subunit mL40, mL48, and mL64 coordinate translocation of mt-tRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the role of these proteins in mt-tRNA translocation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "c65af5d3-64e3-42b9-a41b-f2b6c7bb4a87",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C6",
+      "claim": "Impaired mitochondrial translation results in severe combined respiratory chain dysfunction leading to diminished ATP production.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, impaired mitochondrial translation results in severe combined respiratory chain dysfunction leading to diminished ATP production and consequent cellular energy deficit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about mitochondrial translation defects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "811e3c1a-aa5c-4603-8a92-8c1fafcb8f5a",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C7",
+      "claim": "Impaired mitochondrial translation causes myopathies and neurodegenerative diseases in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This condition is pathogenic in humans, causing myopathies and neurodegenerative diseases (Boczonadi and Horvath, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Boczonadi and Horvath, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "c0bd7c19-2043-4bfe-9eb1-82663bf795aa",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C8",
+      "claim": "Decreased mitochondrial protein synthesis with age leads to adult-onset obesity resulting in liver steatosis and cardiac hypertrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a recent study demonstrated that with age, decreased mitochondrial protein synthesis lead to adult-onset obesity that results in liver steatosis and cardiac hypertrophy (Perks et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Perks et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "a60cff49-7bb6-44ac-a6c3-422e0e89bab2",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C9",
+      "claim": "Mitochondrial diseases affect 2\u20135 in 10,000 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, changes in mitochondrial gene expression have long-term consequences on energy metabolism, and surveys suggest that mitochondrial diseases affect 2\u20135 in 10,000 individuals, mostly occurring due to disrupted mitochondrial gene expression (Chinnery, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prevalence estimate is supported by citation to Chinnery, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "eb900201-997a-4cbf-81aa-88e1419c58d4",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C10",
+      "claim": "Mitoribosomes have 2-fold reduced mt-rRNA compared to bacterial ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation in mitochondria is carried out by specialized mitoribosomes that are structurally distinct with 2-fold reduced mt-rRNA and ~1 MDa increased protein mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known structural characteristic of mitoribosomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "e5f6d18b-ee4e-439b-9788-8afcae515d73",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C11",
+      "claim": "Mitoribosomes have ~1 MDa increased protein mass compared to bacterial ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation in mitochondria is carried out by specialized mitoribosomes that are structurally distinct with 2-fold reduced mt-rRNA and ~1 MDa increased protein mass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known structural characteristic of mitoribosomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "5f734f8b-8474-4137-8c2e-896ce8bba660",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C12",
+      "claim": "Specific autosomal recessive mutations in mitoribosomal proteins cause severe, infantile onset disease with growth retardation, neurological phenotypes and cardiac involvement.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific autosomal recessive mutations associated with these extra proteins cause severe, infantile onset disease with growth retardation, neurological phenotypes and cardiac involvement, and are associated with Perrault syndrome (De Silva et al., 2015; D'Souza and Minczuk, 2018; Boczonadi et al., 2018; Gardeitchik et al., 2018; Bugiardini et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "1a59dffa-9b2c-4d3a-8ccb-9bf22e5c14fe",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C13",
+      "claim": "Mutations in mitoribosomal proteins are associated with Perrault syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific autosomal recessive mutations associated with these extra proteins cause severe, infantile onset disease with growth retardation, neurological phenotypes and cardiac involvement, and are associated with Perrault syndrome (De Silva et al., 2015; D'Souza and Minczuk, 2018; Boczonadi et al., 2018; Gardeitchik et al., 2018; Bugiardini et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This association is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "bd65e62a-bce9-438a-83d1-f8771ba72a5e",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C14",
+      "claim": "Mutations in mitoribosomal proteins result in Leigh syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of individuals with variations in mitoribosomal proteins demonstrated that mutations result in Leigh syndrome (Lake et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lake et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "0708b23c-ab81-44ee-8a53-b9171d391447",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C15",
+      "claim": "Expression of mitoribosomal components is modified in numerous cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Further underscoring the importance of mitoribosomes in the regulation of cellular energy metabolism, the expression of its components was also found to be modified in numerous cancers, a trait that has been linked to tumorigenesis and metastasis (Kim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kim et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "fcc791a8-8d55-4e17-8585-0760552b2057",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C16",
+      "claim": "Modified expression of mitoribosomal components has been linked to tumorigenesis and metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Further underscoring the importance of mitoribosomes in the regulation of cellular energy metabolism, the expression of its components was also found to be modified in numerous cancers, a trait that has been linked to tumorigenesis and metastasis (Kim et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kim et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "1f2eead4-267c-4ad5-bffc-db234e792190",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C17",
+      "claim": "Human mt-mRNAs lack conventional 5' and 3' untranslated regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Human mt-mRNAs have unusual features, and they lack conventional 5' and 3' untranslated regions, Shine-Delgarno sequences and 5' 7-methylguanosine caps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of human mt-mRNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "af5592d8-0965-4d71-9839-0f11158118d2",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C18",
+      "claim": "Human mt-mRNAs lack Shine-Delgarno sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Human mt-mRNAs have unusual features, and they lack conventional 5' and 3' untranslated regions, Shine-Delgarno sequences and 5' 7-methylguanosine caps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of human mt-mRNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "9629779c-797a-45bc-bd76-497467bc22ae",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C19",
+      "claim": "Human mt-mRNAs lack 5' 7-methylguanosine caps.",
+      "claim_type": "EXPLICIT",
+      "source": "Human mt-mRNAs have unusual features, and they lack conventional 5' and 3' untranslated regions, Shine-Delgarno sequences and 5' 7-methylguanosine caps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known characteristic of human mt-mRNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "07ee79ea-5e0f-46f7-9ed1-9a3e19fee474",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C20",
+      "claim": "Specific RNA-binding proteins were identified that complement the unusual features of mt-mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, specific RNA-binding proteins were identified that complement the unusual features of mt-mRNAs (Rackham et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rackham et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "fc11e7c2-37ec-463e-a7ff-0a2a2b5c6ff9",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C21",
+      "claim": "Human mt-tRNAs have remarkably diverse structures, including non-canonical and truncated species with reduced D- and/or T-loops.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in human mitochondria, the genetic arrangement and the structures of human mt-tRNAs are remarkably diverse, including non-canonical and truncated species with reduced D- and/or T-loops (Helm et al., 2000; Salinas-Gieg\u00e9 et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Helm et al., 2000 and Salinas-Gieg\u00e9 et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "42d35e7c-5dd6-4e47-afca-a969647fcdf4",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C22",
+      "claim": "Previous structural data on mitoribosomes from porcine tissues and HEK293S-derived cells had key components responsible for mt-mRNA and mt-tRNA binding missing.",
+      "claim_type": "EXPLICIT",
+      "source": "Progress has been made in obtaining structural data on the mitoribosomes from porcine tissues (Greber et al., 2014; Greber et al., 2015), HEK293S-derived cells (Brown et al., 2014; Amunts et al., 2015; Brown et al., 2017), and initiation complexes have been reconstituted (Kummer et al., 2018; Khawaja et al., 2020). While these data yielded the first snapshots, the available structural models are incomplete with key components responsible for mt-mRNA and mt-tRNA binding missing, which reflects the dynamic nature of translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous structural studies, with multiple citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "a31cbe05-c020-4989-902a-a1c0abaf6dbd",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C23",
+      "claim": "The structure of human mitoribosome at 3.5 \u00c5 resolution revealed an overall diverged architecture with 36 mitochondria-specific proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of human mitoribosome at 3.5 \u00c5 resolution revealed an overall diverged architecture with 36 mitochondria-specific proteins (Amunts et al., 2015), suggesting that it would have functional characteristics distinguishing mitochondrial translation from the counterpart systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim refers to a previous structure determination, supported by citation to Amunts et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "02dd6ab2-0c69-406f-94a9-882e12f0e09e",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C24",
+      "claim": "Mitoribosomal complexes were stalled with antibiotics quinupristin and dalfopristin.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitoribosomal complexes were stalled with antibiotics quinupristin and dalfopristin that bind to the exit tunnel and peptidyl-transferase center, respectively (Harms et al., 2004; Noeske et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "1e602600-b536-4883-9261-a62e2451cd3e",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C25",
+      "claim": "Quinupristin binds to the exit tunnel of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitoribosomal complexes were stalled with antibiotics quinupristin and dalfopristin that bind to the exit tunnel and peptidyl-transferase center, respectively (Harms et al., 2004; Noeske et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Harms et al., 2004 and Noeske et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "a400b5ab-3c21-430d-92d6-f998c45065ee",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C26",
+      "claim": "Dalfopristin binds to the peptidyl-transferase center of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitoribosomal complexes were stalled with antibiotics quinupristin and dalfopristin that bind to the exit tunnel and peptidyl-transferase center, respectively (Harms et al., 2004; Noeske et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Harms et al., 2004 and Noeske et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "a62ec58e-b97f-4428-890e-d3ca4cad3239",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C27",
+      "claim": "Cryo-EM imaging resulted in an overall ~3.0 \u00c5 resolution map from 143,851 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM imaging of these mitoribosomes resulted in an overall ~3.0 \u00c5 resolution map from 143,851 particles (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the resolution and number of particles used in the cryo-EM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "0866e763-fdbb-459a-8c39-8ddfbf082592",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C28",
+      "claim": "Six copies of bL12m N-terminal domain are resolved in the reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Six copies of bL12m N-terminal domain, including loops, are resolved in this reconstruction, as well as the improved model for mL54 was assigned on the basis of the new densities (Figure 1B,C, Figure 1\u2014figure supplement 3, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes structural features resolved in the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "15cb7bca-dd81-4912-844a-5a620c172fbb",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C29",
+      "claim": "Sixteen residues of the N-terminal mitochondrial extension of bL12m could be assigned (0 to \u221215).",
+      "claim_type": "EXPLICIT",
+      "source": "Sixteen residues could be assigned (0 to \u221215), and contacts with mL53 and uL10m identified, so that Leu-13 protrudes into a hydrophobic patch on uL10m (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the modeling of specific residues based on the cryo-EM density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "46d9fc38-d157-41b2-83c2-aa957318ade2",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C30",
+      "claim": "Leu-13 of bL12m protrudes into a hydrophobic patch on uL10m.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixteen residues could be assigned (0 to \u221215), and contacts with mL53 and uL10m identified, so that Leu-13 protrudes into a hydrophobic patch on uL10m (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a specific molecular interaction observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "a8472839-41d4-43ff-9e3b-9a94accee311",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C31",
+      "claim": "A 19-residue loop (Ala72-Ala90) in mL54 is connected to the hydrophobic pocket of uL11m extension with Ile77 and Tyr78.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mitochondria-specific protein mL54, a 19-residue loop Ala72-Ala90 is connected to the hydrophobic pocket of uL11m extension with Ile77 and Tyr78 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a specific molecular interaction observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "fbc34239-459c-45ac-8fcb-220203ed85cf",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C32",
+      "claim": "3D classification yielded eight structurally homogeneous classes corresponding to different states of the translation cycle with mt-tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Since weak but distinct densities in the tRNA binding sites were observed in the consensus map, we performed 3D classification employing signal subtraction (Scheres, 2016) on those regions in a sequential manner (Figure 1\u2014figure supplement 1). This yielded eight structurally homogeneous classes corresponding to different states of the translation cycle with mt-tRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results of 3D classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "92781a11-38b3-453e-a808-267d9fd8f8c8",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C33",
+      "claim": "Mitoribosomes with the complete set of mt-tRNAs occupying A-site, P-site, and E-site are represented by 9% of the particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitoribosomes with the complete set of mt-tRNAs occupying A-site, P-site, and E-site are represented by 9% of the particles; A- and P-sites are occupied in 10%; P- and E-sites are occupied in 17%; P-site only is occupied in 5%; E-site only is occupied in 25%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distribution of particles among different tRNA occupancy states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "49d0a2b5-5526-4675-99de-45dc964cb473",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C34",
+      "claim": "A- and P-sites are occupied in 10% of particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitoribosomes with the complete set of mt-tRNAs occupying A-site, P-site, and E-site are represented by 9% of the particles; A- and P-sites are occupied in 10%; P- and E-sites are occupied in 17%; P-site only is occupied in 5%; E-site only is occupied in 25%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distribution of particles among different tRNA occupancy states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "6a4b9ba9-1d71-408b-b49c-f7ec3c3f67f9",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C35",
+      "claim": "P- and E-sites are occupied in 17% of particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitoribosomes with the complete set of mt-tRNAs occupying A-site, P-site, and E-site are represented by 9% of the particles; A- and P-sites are occupied in 10%; P- and E-sites are occupied in 17%; P-site only is occupied in 5%; E-site only is occupied in 25%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distribution of particles among different tRNA occupancy states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "82eefced-187c-44ef-9d72-14611db85193",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C36",
+      "claim": "P-site only is occupied in 5% of particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitoribosomes with the complete set of mt-tRNAs occupying A-site, P-site, and E-site are represented by 9% of the particles; A- and P-sites are occupied in 10%; P- and E-sites are occupied in 17%; P-site only is occupied in 5%; E-site only is occupied in 25%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distribution of particles among different tRNA occupancy states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "5cfe1c6e-c21d-490b-b4e9-88975d468138",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C37",
+      "claim": "E-site only is occupied in 25% of particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitoribosomes with the complete set of mt-tRNAs occupying A-site, P-site, and E-site are represented by 9% of the particles; A- and P-sites are occupied in 10%; P- and E-sites are occupied in 17%; P-site only is occupied in 5%; E-site only is occupied in 25%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the distribution of particles among different tRNA occupancy states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "bcfc61d0-37fc-4e80-b0ea-9251b5239a10",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C38",
+      "claim": "An intersubunit A/P- and P/E-hybrid state is present in 3% of particles.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we were able to depict two intermediate states: 1) intersubunit A/P- and P/E-hybrid state in 3%, wherein mt-tRNA in the A-site is rotated towards the exit tunnel, and mt-tRNA in the P-site is tilted towards the E-site, coupled with subunit rotation; 2) intersubunit P/E-hybrid in 14% (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the distribution of particles among different tRNA occupancy states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "5593e47a-37f3-4c45-8209-dca9fecaf1d4",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C39",
+      "claim": "An intersubunit P/E-hybrid state is present in 14% of particles.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we were able to depict two intermediate states: 1) intersubunit A/P- and P/E-hybrid state in 3%, wherein mt-tRNA in the A-site is rotated towards the exit tunnel, and mt-tRNA in the P-site is tilted towards the E-site, coupled with subunit rotation; 2) intersubunit P/E-hybrid in 14% (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the distribution of particles among different tRNA occupancy states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "3bed50d6-43ec-4d94-aa4c-3fd24236ac80",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C40",
+      "claim": "In the A/P- and P/E-hybrid state, mt-tRNA in the A-site is rotated towards the exit tunnel.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we were able to depict two intermediate states: 1) intersubunit A/P- and P/E-hybrid state in 3%, wherein mt-tRNA in the A-site is rotated towards the exit tunnel, and mt-tRNA in the P-site is tilted towards the E-site, coupled with subunit rotation; 2) intersubunit P/E-hybrid in 14% (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structural characteristics of the hybrid state.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "9ce0e62f-dc2d-4c3b-8de3-eabab435d5ff",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C41",
+      "claim": "In the A/P- and P/E-hybrid state, mt-tRNA in the P-site is tilted towards the E-site.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we were able to depict two intermediate states: 1) intersubunit A/P- and P/E-hybrid state in 3%, wherein mt-tRNA in the A-site is rotated towards the exit tunnel, and mt-tRNA in the P-site is tilted towards the E-site, coupled with subunit rotation; 2) intersubunit P/E-hybrid in 14% (Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structural characteristics of the hybrid state.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "ee27d8c5-c3f0-4b3b-9f7d-815eed4932d2",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C42",
+      "claim": "A density was found in the A-site corresponding to domain I of the native mitochondrial ribosome recycling factor (mt-RRF).",
+      "claim_type": "EXPLICIT",
+      "source": "In a subset of particles, a density was found in the A-site with a recognizable three-helix bundle corresponding to domain I of the native mitochondrial ribosome recycling factor (mt-RRF) (Figure 1\u2014figure supplement 1 bottom-left panel, Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a structural feature observed in a subset of particles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "ee19c8c4-04df-43b7-8989-c0ce2f269ade",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C43",
+      "claim": "Mitoribosomes with mt-RRF adopt a ratcheted state, with the small subunit exhibiting 7.5\u00b0 rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitoribosomes in this class adopt a ratcheted state, with the small subunit exhibiting 7.5\u00b0 rotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the conformational state of mitoribosomes bound to mt-RRF.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "7638d135-a3e7-4140-89c6-d808dc56fbd1",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C44",
+      "claim": "The mitochondria-specific N-terminal extension of mt-RRF does not adopt a helical conformation as previously suggested.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, the mitochondria-specific N-terminal extension does not adopt a helical conformation as previously suggested (Koripella et al., 2019), and reported interactions with rRNA are not observed in our native complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with a previously published structure, supported by citation to Koripella et al., 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "cf6dd234-ec71-48d5-bf97-d9ea10dd597e",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C45",
+      "claim": "In the A-site, the mitochondria-specific C-terminal helix of uL11m extends towards the mt-tRNA elbow.",
+      "claim_type": "EXPLICIT",
+      "source": "In the A-site, in addition to the bacteria-like interactions of uL16m and H89 rRNA, the mitochondria-specific C-terminal helix of uL11m extends towards the mt-tRNA elbow, while the conventional H38 'A-site finger' is missing, and no bacteria-like interactions of uL27m with A-tRNA are detected (Voorhees et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a structural feature of the A-site tRNA binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "4ffebb87-58c0-4e2b-870b-99ab12e41e9b",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C46",
+      "claim": "The conventional H38 'A-site finger' is missing in the human mitoribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the A-site, in addition to the bacteria-like interactions of uL16m and H89 rRNA, the mitochondria-specific C-terminal helix of uL11m extends towards the mt-tRNA elbow, while the conventional H38 'A-site finger' is missing, and no bacteria-like interactions of uL27m with A-tRNA are detected (Voorhees et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a structural difference from bacterial ribosomes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "e05b6b15-9002-4857-bc1f-bc0be37ef4f1",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C47",
+      "claim": "No bacteria-like interactions of uL27m with A-tRNA are detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In the A-site, in addition to the bacteria-like interactions of uL16m and H89 rRNA, the mitochondria-specific C-terminal helix of uL11m extends towards the mt-tRNA elbow, while the conventional H38 'A-site finger' is missing, and no bacteria-like interactions of uL27m with A-tRNA are detected (Voorhees et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a structural difference from bacterial ribosomes, with citation to Voorhees et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "544a4257-dc10-4b7d-93e4-2aff28d9d65e",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C48",
+      "claim": "A specific proteinaceous moiety formed by mL40 and mL48 interacts with the A-tRNA elbow.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, a specific proteinaceous moiety interacts with the A-tRNA elbow. It is formed by the mitochondria-specific proteins mL40 and mL48 with their N-terminal and C-terminal helices, respectively (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a structural feature unique to the mitoribosome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "0afaac5e-27ef-497e-a0a1-6d9f1587b2f8",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C49",
+      "claim": "mL40 and mL48 are anchored in the central protuberance through extensive interactions with the structural tRNAVal (CP-tRNA).",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these proteins are anchored in the central protuberance, through extensive interactions with the structural tRNAVal (CP-tRNA), as well as shared with bL31m and interactions with mitochondria-specific protein mL46 (Figure 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structural anchoring of mL40 and mL48.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "9e42d38c-613e-419c-a790-428f401d8d4b",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C50",
+      "claim": "The N-terminal helix of mL40 with residues Lys66, Lys70, and Gln63 approach the elbow region of the A-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tRNA binding site, the N-terminal helix of mL40 with residues Lys66, Lys70, and Gln63 approach the elbow region of the A-tRNA (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes specific molecular interactions in the A-site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "6dcd7868-b161-4dae-b6be-4bf2c7563df4",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C51",
+      "claim": "The C-terminal helix of mL48 supports the N-terminal helix of mL40 via a hydrophobic interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal helix of mL48 does not directly contact mt-tRNA, but supports the N-terminal helix of mL40 via a hydrophobic interface, allowing it to contact mt-tRNA elbow in the A-site (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structural relationship between mL48 and mL40.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "244b8bea-4a6f-4f02-bc8d-7498d4701f2d",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C52",
+      "claim": "The positively charged C-terminal tail of uS9 (Lys395) approaches the P-site tRNA anticodon stem-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous data, the positively charged C-terminal tail of uS9 (Lys395) approaches the P-site tRNA anticodon stem-loop (Figure 3\u2014figure supplement 1; Selmer et al., 2006; Greber et al., 2015; Kummer et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a structural feature of the P-site, consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "4ffab199-1a23-4eb0-815f-dd87e3751760",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C53",
+      "claim": "The recognition of P-site tRNA by uS9 is crucial for translation fidelity.",
+      "claim_type": "EXPLICIT",
+      "source": "This recognition is crucial for translation fidelity (Arora et al., 2013; Jindal et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional importance is supported by citations to Arora et al., 2013 and Jindal et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "72ff3947-de39-4c79-bb4d-426459bc59db",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C54",
+      "claim": "A series of positively charged residues (Arg67, Arg70, and Lys77) of mL40 interact with the phosphate backbone of the P-tRNA elbow.",
+      "claim_type": "EXPLICIT",
+      "source": "A series of positively charged residues, Arg67, Arg70, and Lys77 interact with the phosphate backbone of the P-tRNA elbow (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes specific molecular interactions in the P-site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "b3ec7a39-8aeb-4bce-a9d0-2ff004da942b",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C55",
+      "claim": "The uL27m N-terminal loop is stably associated with the acceptor arm of P-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observe that the uL27m N-terminal loop is stably associated with the acceptor arm of P-tRNA (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a structural feature of the P-site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "861004b8-46c2-46fb-a153-631ce759d084",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C56",
+      "claim": "The mt-tRNA elbow in the E-site is stabilized by the C-terminal helix of mL64.",
+      "claim_type": "EXPLICIT",
+      "source": "In the E-site, the mt-tRNA elbow is stabilized by the C-terminal helix of mL64, extending from the central protuberance, which was not previously resolved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a structural feature of the E-site that was newly resolved in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "b408dcfd-9e0c-4a84-9d95-3196f35ffc2f",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C57",
+      "claim": "E-tRNA is stabilized by uS7m with its C-terminal helix aligned with the major groove of E-tRNA anticodon stem.",
+      "claim_type": "EXPLICIT",
+      "source": "E-tRNA is further stabilized by uS7m with its C-terminal helix aligned with the major groove of E-tRNA anticodon stem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a structural feature of the E-site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "2a2713d3-c379-47e0-8db4-c95f740a05cf",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C58",
+      "claim": "Residues Lys221 and Lys228 of uS7m form potential interactions with E-tRNA anti-codon stem backbone phosphates.",
+      "claim_type": "EXPLICIT",
+      "source": "The residues Lys221 and Lys228 form potential interactions with E-tRNA anti-codon stem backbone phosphates (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes specific molecular interactions in the E-site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "ccad99e7-182f-4d3d-973d-fd4d9117e821",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C59",
+      "claim": "Additional density associated with the anticodon stem of A-tRNA stretches from residue 40 down to the backbone phosphate of the last residue of mRNA codon in the A-site.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitoribosomes bound to A- and P-tRNA also contain additional density associated with the anticodon stem of A-tRNA, stretching from residue 40 down to the backbone phosphate of the last residue of mRNA codon in the A-site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an additional structural feature observed in the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "636096fd-0023-44fe-a82b-dfe4acb0c6ab",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C60",
+      "claim": "The shape of the elongated 15 \u00c5 long density matches structures of polyamines.",
+      "claim_type": "EXPLICIT",
+      "source": "The shape of the elongated 15 \u00c5 long density matches structures of polyamines, which are known to reside in mitochondria (Tassani et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the density, with citation to Tassani et al., 1996 for polyamines in mitochondria.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "3a2719f2-4412-455a-8ef9-bd94648dc2bd",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C61",
+      "claim": "The density could be modeled as spermine.",
+      "claim_type": "EXPLICIT",
+      "source": "Polyamines are linear aliphatic hydrocarbons with at least three amino groups, and since four amino groups fit the density, it could be modeled it as spermine (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a tentative modeling of the density based on its shape.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "20c733e5-c820-4119-9554-a05633c24438",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C62",
+      "claim": "Upon the displacement of the acceptor arm from the A-site to A/P transition state, the mitoribosomal small subunit ratchets 6.5\u00b0.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon the displacement of the acceptor arm from the A-site to A/P transition state, the mitoribosomal small subunit ratchets 6.5\u00b0 and the head swivels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a conformational change observed between different states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "21023fb1-073f-41e1-8908-d90888834e65",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C63",
+      "claim": "The N-terminal helix of mL40 shifts 5 \u00c5 towards the P-site during the A/P transition.",
+      "claim_type": "EXPLICIT",
+      "source": "The following conformational changes, which are related to the formation of the hybrid state, allow accommodation of a rotated mt-tRNA. They involve primarily the N-terminal helix of mL40 that shifts 5 \u00c5 towards the P-site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific conformational change during tRNA translocation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "f3d40319-187a-41c2-af51-0ad349f6a62c",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C64",
+      "claim": "The mL40 N-terminal helix maintains contact with mt-tRNA from A-site to A/P state.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the protein element maintains the contact with mt-tRNA from A-site to A/P state, contributing to the stability of the transition state (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the role of mL40 in stabilizing the transition state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "02b1ba29-d938-4ee4-9460-aab20c080df6",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C65",
+      "claim": "The movement of P-tRNA to the P/E state is facilitated by the exchange of protein contacts from mL40 to mL64.",
+      "claim_type": "EXPLICIT",
+      "source": "The movement of P-tRNA to the P/E state upon ribosome ratcheting is facilitated by the exchange of protein contacts from mL40 to mL64 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism of tRNA movement between sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "16d7491a-5298-4c7e-99d3-c1ed2504b738",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C66",
+      "claim": "The released mL40 N-terminal helix plays a role in posing a steric barrier for a back transition to the P-site.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structures suggest that the released mL40 N-terminal helix plays a role in posing a steric barrier for a back transition to the P-site (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the structural data suggesting a functional role.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "2dbcb8af-bcf7-4625-83ae-00555c6a6435",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C67",
+      "claim": "P/E to E-site movement is facilitated by the rotation-associated 6 \u00c5 conformational change of the mL64 C-terminal helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, P/E to E-site movement is facilitated by the rotation-associated 6 \u00c5 conformational change of the mL64 C-terminal helix (Figure 3E, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a conformational change associated with tRNA movement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "272adfb6-25b6-468c-8b81-42d97e56fcb2",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C68",
+      "claim": "The acceptor arm of the deacetylated mt-tRNA is stabilized by interactions with bL33m during the transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the acceptor arm of the deacetylated mt-tRNA is stabilized by interactions with bL33m during the transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a structural feature during tRNA translocation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "819ebf4d-b136-4d59-bfb8-2daf82e84f7d",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C69",
+      "claim": "The L1 stalk binds to the elbow of the deacetylated tRNA as the mitoribosome adopts the non-ratcheted state.",
+      "claim_type": "EXPLICIT",
+      "source": "In regard to the L1 stalk, in the density maps we observe its binding to the elbow of the deacetylated tRNA, as the mitoribosome adopts the non-ratcheted state (from P/E to E-site) (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structural observation of L1 stalk binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "63acefce-7ebb-4b94-aeb3-748e38b21cf9",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C70",
+      "claim": "The release of tRNA from the mitoribosome is facilitated by the loss of interactions with E-tRNA upon ratcheting.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the release from the mitoribosome is facilitated by the loss of interactions with E-tRNA upon ratcheting, that includes the conformational change of the mL64 C-terminal helix and the movement of uS7m away from the E-site (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism of tRNA release from the E-site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "e8adfb0a-2709-4169-bd86-13686b26e557",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C71",
+      "claim": "The presence of mt-tRNA in A- or P-site correlates with a continuous density extending from mS39 to the decoding center representing mt-mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of mt-tRNA in A- or P-site of translating mitoribosomes correlates with a continuous density extending from the mitoribosomal pentatricopeptide repeat (PPR) protein mS39 to the decoding center. Comparison with the structures of the mitoribosome without P-site tRNA suggests that this density represents mt-mRNA (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the identification of mt-mRNA density in the structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "be6ce807-a5ab-4327-888d-7799bf2bf1da",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C72",
+      "claim": "Particles with bound mt-mRNA exhibit an additional elongated density upstream of a non-mitoribosomal protein interacting with mS39.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, particles with bound mt-mRNA also exhibit an additional elongated density upstream of a non-mitoribosomal protein interacting with mS39 (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an additional structural feature observed in particles with mt-mRNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "3b8e3de3-1ec7-437b-a3a2-530e16e3d5c7",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C73",
+      "claim": "The elongated density bound to mS39 embraces the bottom domain of the superhelical spiral shell and tightly interacts with at least ten tandem repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "This elongated density bound to the solvent side of mS39 embraces the bottom domain of the superhelical spiral shell and tightly interacts with at least ten tandem repeats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural characteristics of the additional density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "814fc2ef-361d-4a82-9d57-f598ba1c27e0",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C74",
+      "claim": "The two moieties (mS39 and the additional density) share a surface area of ~2000 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The two moieties share a surface area of ~2000 \u00c52, representing by far the largest protein-protein interface on the mitoribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantifies the interaction surface between mS39 and the additional density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "dcb40eda-119f-43f1-b257-73584c6e8b3b",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C75",
+      "claim": "Apart from mS39, no other direct interaction between the newly identified density and the mitoribosome is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from mS39, no other direct interaction between the newly identified density and the mitoribosome is observed in our map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specificity of the interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "4e58590e-17af-4370-a6c1-bbee5e56adf9",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C76",
+      "claim": "An in situ electron cryo-tomography study suggested presence of a moiety in a similar position.",
+      "claim_type": "EXPLICIT",
+      "source": "An in situ electron cryo-tomography study suggested presence of a moiety in a similar position (Englmeier et al., 2017), confirming that it is associated with active translation (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This cites a previous study that observed a similar feature, supported by citation to Englmeier et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "0f60b98b-6f0a-43ea-a72b-285440fd99f8",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C77",
+      "claim": "Mass spectrometry analysis suggested the additional factor is leucine-rich PPR motif-containing protein (LRPPRC).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we analyzed the highly purified native sample by mass spectrometry. Consistently with the size of the density, the analysis suggested leucine-rich PPR motif-containing protein (LRPPRC) (Supplementary file 3, Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the identification of LRPPRC by mass spectrometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "8ad850d8-d792-4239-ab76-bf24f54df0ef",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C78",
+      "claim": "LRPPRC is conserved from flies to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "LRPPRC is conserved from flies to mammals and has a broad and strong RNA binding capacity through multiple PPR motifs (Baggio et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the conservation of LRPPRC, supported by citation to Baggio et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "3ce3ba9a-dc02-496c-ba85-48d624cc55d0",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C79",
+      "claim": "LRPPRC has a broad and strong RNA binding capacity through multiple PPR motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "LRPPRC is conserved from flies to mammals and has a broad and strong RNA binding capacity through multiple PPR motifs (Baggio et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functional properties of LRPPRC, supported by citation to Baggio et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "8c87dceb-cb9f-441d-9b9c-3d5abe3088e9",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C80",
+      "claim": "LRPPRC forms a stable complex with SLIRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional studies also showed that LRPPRC forms a stable complex with an 11 kDa protein named Stem-Loop Interacting RNA binding Protein (SLIRP) (Sp\u00e5hr et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the interaction between LRPPRC and SLIRP, supported by citation to Sp\u00e5hr et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "356bccd7-80d8-4cdf-8952-7fcdc744af4b",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C81",
+      "claim": "SLIRP is important for the presentation of mt-mRNA to the mitoribosome for efficient translation.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo studies on mice liver mitochondria, including knockout, complemented by RNA sequencing of isolated mitoribosomes and the associated mt-mRNA showed that SLIRP is important for the presentation of mt-mRNA to the mitoribosome for efficient translation (Lagouge et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functional role of SLIRP, supported by citation to Lagouge et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "a9178121-4107-43a8-8409-8c359411e158",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C82",
+      "claim": "Mass spectrometry data validated the presence of SLIRP in the purified translating mitoribosomal complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the small molecular weight, our mass spectrometry data validated the presence of SLIRP in the purified translating mitoribosomal complex that was used for cryo-EM (Supplementary file 3, Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the identification of SLIRP by mass spectrometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "000be72c-4758-4eee-88fb-8497d5b6bf6d",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C83",
+      "claim": "46% of the SLIRP sequence has been covered through four peptides identified by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantified weighted spectra for SLIRP is similar to the mitoribosomal proteins, and 46% of the sequence has been covered through four peptides identified by the mass spectrometry experiment (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantifies the mass spectrometry coverage of SLIRP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "4c89ade8-127d-4405-816f-f648ae2db759",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C84",
+      "claim": "The shape of the density is consistent with the LRPPRC-SLIRP complex formed in vitro, which has an elongated shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the shape of this moiety within the density map is consistent with the LRPPRC-SLIRP complex formed in vitro, which was also shown to have an elongated shape, as evident by a modified migration on a native gel (Sp\u00e5hr et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the observed density with in vitro characterization, supported by citation to Sp\u00e5hr et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "13221cfa-a775-4986-92bb-3695cefd43e0",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C85",
+      "claim": "LRPPRC-SLIRP has not been detected in control experiments with non-translating human mitoribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, LRPPRC-SLIRP has not been detected in the control experiments with non-translating human mitoribosomes (Amunts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specificity of LRPPRC-SLIRP association with translating mitoribosomes, with citation to Amunts et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "ffd40b50-b36d-47ee-a4e4-9bd61aca92eb",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C86",
+      "claim": "Translating mitoribosomes with mt-tRNA in the P-site and mt-mRNA are associated with the LRPPRC-SLIRP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, translating mitoribosomes with mt-tRNA in the P-site and mt-mRNA are associated with the LRPPRC-SLIRP complex, and the contacts are driven by PPR-mediated interactions viamS39 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This summarizes the association of LRPPRC-SLIRP with translating mitoribosomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "37e8e883-3495-451f-a64e-fa5dce9b02e4",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C87",
+      "claim": "The contacts between LRPPRC-SLIRP and the mitoribosome are driven by PPR-mediated interactions via mS39.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, translating mitoribosomes with mt-tRNA in the P-site and mt-mRNA are associated with the LRPPRC-SLIRP complex, and the contacts are driven by PPR-mediated interactions viamS39 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the mechanism of interaction between LRPPRC-SLIRP and the mitoribosome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "5229b321-27f6-4d0b-a943-f5bd7e95bf1c",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C88",
+      "claim": "The structural analysis revealed how diverged mt-tRNAs fit in the protein-rich interface of the two mitoribosomal subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural analysis revealed how the diverged mt-tRNAs fit in the protein-rich interface of the two mitoribosomal subunits, and how its trajectory is correlated with mitochondria-specific protein elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a key finding of the structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "360811bd-30e7-4608-be34-7099c0889c1d",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C89",
+      "claim": "At all three tRNA binding sites, protein elements unique to the mitoribosome play roles in tRNA recognition, particularly the elbow region.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the different stages of mt-tRNA movement, mL40, mL48 and mL64 undergo specific conformational changes, which support the progress of mt-tRNA from A- to E-site. In the absence of mt-tRNAs, these protein elements involved in translocation are disordered or structurally heterogenous. Therefore, at all three sites protein elements unique to the mitoribosome play roles in the tRNA recognition, particularly the elbow region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "cefa3112-5ac6-46b3-8bc2-a8c0f75f9128",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C90",
+      "claim": "The multiple recognition events relying on the tRNA elbow are likely co-evolved with the structural properties of human mt-tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The multiple recognition events relying on the tRNA elbow and its specific coordination are likely co-evolved with the structural properties of human mt-tRNA, and they are different from fungi (Naschberger et al., 2020) and alveolates (Tobiasson and Amunts, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the structural findings in an evolutionary context, with citations to Naschberger et al., 2020 and Tobiasson and Amunts, 2020.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "da04085f-f1a8-4665-8c67-a86948b9666f",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C91",
+      "claim": "Mitochondria-specific proteins promote effective transit through the mitoribosome by stabilizing the tRNA elbow and favoring the unidirectionality of movement.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that mitochondria-specific proteins promote effective transit through the mitoribosome by stabilizing the tRNA elbow and favoring the unidirectionality of movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation of the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "d2fe141f-6dc6-4879-a33d-df20b43bbe3f",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C92",
+      "claim": "LRPPRC is a mt-mRNA chaperone that relaxes secondary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "LRPPRC is a mt-mRNA chaperone that relaxes secondary structures (Siira et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the function of LRPPRC, supported by citation to Siira et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "848ce4af-68c2-4a73-b8e6-5366ce932b2c",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C93",
+      "claim": "Mutations in LRPPRC lead to Leigh Syndrome and high mortality due to episodes of severe acidosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Its involvement in coordination of mitochondrial translation has been proposed (Ruzzenente et al., 2012), and mutations were shown to lead to Leigh Syndrome and high mortality due to episodes of severe acidosis (Mootha et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the clinical consequences of LRPPRC mutations, supported by citations to Ruzzenente et al., 2012 and Mootha et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "7212ec9b-3ec9-4a1b-9f4d-ada501a7eb97",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C94",
+      "claim": "Most human mt-mRNAs are leaderless.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike in bacteria, most of the human mt-mRNAs are leaderless, and counterparts for the yeast mitochondrial translational activators system are not found (Herrmann et al., 2013; Ott et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of human mt-mRNAs, supported by citations to Herrmann et al., 2013 and Ott et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "d1cac735-96ce-40d1-bd70-9982f0b97378",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C95",
+      "claim": "Counterparts for the yeast mitochondrial translational activators system are not found in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike in bacteria, most of the human mt-mRNAs are leaderless, and counterparts for the yeast mitochondrial translational activators system are not found (Herrmann et al., 2013; Ott et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a difference between human and yeast mitochondrial translation systems, supported by citations to Herrmann et al., 2013 and Ott et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "1e330506-f2d8-4dc9-be73-7540fe439c74",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C96",
+      "claim": "In bacteria, ribosomes are directly associated with RNA polymerase, thus regulating the rate of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria, ribosomes are directly associated with RNA polymerase, thus regulating the rate of gene expression (Kohler et al., 2017; Demo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a mechanism in bacteria, supported by citations to Kohler et al., 2017 and Demo et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "f1c4ac41-24ed-49f8-91dc-2911caa21817",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C97",
+      "claim": "In mitochondria, transcription and translation are most likely compartmented.",
+      "claim_type": "EXPLICIT",
+      "source": "In mitochondria, such coupling does not occur because transcription and translation are most likely compartmented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a difference between bacterial and mitochondrial gene expression.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "b1282621-0c3f-47b1-b842-96aba68f66c7",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C98",
+      "claim": "During translation, the PPR mitoribosomal protein mS39 acts as a platform for the binding of LRPPRC-SLIRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that during translation, the PPR mitoribosomal protein mS39 located close to the mRNA channel entry acts as a platform for the binding of LRPPRC-SLIRP (Figure 3\u2014figure supplements 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "aa1a3df0-cfcc-479c-b14d-dc7dd24e7760",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C99",
+      "claim": "The human mitoribosome dismissed intrinsic ribosomal protein elements assisting in mRNA unfolding such as uS4, C-terminal uS3m, and OB domains of bS1m.",
+      "claim_type": "EXPLICIT",
+      "source": "It further rationalizes the previous observations that human mitoribosome dismissed the intrinsic ribosomal protein elements assisting in mRNA unfolding for active translation in bacteria such as uS4, C-terminal uS3m, and OB domains of bS1m (Brown et al., 2014; Amunts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes structural differences from bacterial ribosomes, supported by citations to Brown et al., 2014 and Amunts et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "76b73ca2-8f0b-4342-a820-f70ff99d037d",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C100",
+      "claim": "The human mitoribosome evolved a specialized mechanism involving auxiliary factors and linker PPR protein mS39 for regulation and alignment of transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the human mitoribosome evolved a specialized mechanism involving auxiliary factors and linker PPR protein mS39 for regulation and alignment of the transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the evolutionary adaptation of the human mitoribosome.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "0bb959c0-1ea3-4a30-86f1-48f955a921d3",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C101",
+      "claim": "HEK293S-derived cells were grown in Freestyle 293 Expression Medium containing 5% tetracycline-free FBS.",
+      "claim_type": "EXPLICIT",
+      "source": "HEK293S-derived cells (line T501, GnTI- stably expressing a transporter under tetracycline-inducible control) were grown in Freestyle 293 Expression Medium containing 5% tetracycline-free FBS in vented shaking flasks at 37\u00b0C, 5% CO2 and 120 rpm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell culture conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "32b35410-d53e-4781-baf4-7c31d71efa94",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C102",
+      "claim": "The cell lines tested negative for mycoplasma contamination.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell lines tested negative for mycoplasma contamination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a quality control measure for the cell lines used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "32b3fbda-2e7c-4f66-a931-6cd3205ef92a",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C103",
+      "claim": "Mitochondria were subjected to a sucrose density step-gradient centrifugation.",
+      "claim_type": "EXPLICIT",
+      "source": "Resuspended mitochondria were subjected to a sucrose density step-gradient (1.5 mL of 60% sucrose; 4 mL of the 32% sucrose; 1.5 mL of 23% sucrose and 1.5 mL of 15% sucrose in 20 mM HEPES-KOH, pH 7.5, 1 mM EDTA) centrifugation in a Beckmann Coulter SW40 rotor at 28,000 rpm for 60 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a purification step in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "52e29658-b36f-4440-b22e-9fadda2e6708",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C104",
+      "claim": "Data were collected on FEI Titan Krios transmission electron microscope operated at 300 keV.",
+      "claim_type": "EXPLICIT",
+      "source": "The data were collected on FEI Titan Krios (FEI/Thermofischer) transmission electron microscope operated at 300 keV, using C2 aperture of 70 \u03bcm; slit width of 15 eV on a GIF quantum energy filter (Gatan).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cryo-EM data collection parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "7d030934-5517-4267-9fd9-7c296b811111",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C105",
+      "claim": "A K2 Summit detector was used at a pixel size of 1.05 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "A K2 Summit detector (Gatan) was used at a pixel size of 1.05 \u00c5 (magnification of 130,000X) with a dose of ~30 electrons/\u00c52 fractionated over 20 frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the detector and imaging parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "7f5ab5fb-938e-4286-a29e-997276b8db9b",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C106",
+      "claim": "From a total of 3481 micrographs selected, 311,655 particles were picked.",
+      "claim_type": "EXPLICIT",
+      "source": "From a total of 3481 micrographs selected, 311,655 particles were picked in RELION-2.1 (Kimanius et al., 2016), using reference-free followed by reference-aided particle picking procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the particle picking results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "6a8e8101-58f2-4693-9599-ad67eafa666d",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C107",
+      "claim": "Reference-free 2D classification sorted 192,970 useful particles from falsely picked objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Reference-free 2D classification was carried out to sort 192,970 useful particles from falsely picked objects, which were then subjected to 3D classification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the 2D classification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "bdede7ef-97dd-4d45-a674-b38715a3df65",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C108",
+      "claim": "143,851 monosome particles were pooled and used for 3D Auto-refinement yielding a map with an overall resolution of 3.1 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "3D classes corresponding to unaligned particles and mt-LSU were discarded and 143,851 monosome particles were pooled and used for 3D Auto-refinement yielding a map with an overall resolution of 3.1 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the 3D refinement results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "127f5e52-e21c-42ac-8830-dc098cb94af7",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C109",
+      "claim": "Masked focused refinement on the small subunit produced a map of 3.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Masked focused refinement was performed on the small subunit and the large subunit to produce maps of 3.0 \u00c5 and 3.1 \u00c5 resolution, respectively (Figure 1A, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the focused refinement results for the small subunit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "49c13a1e-7069-48cc-8698-518b9d408762",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "claim_id": "C110",
+      "claim": "Masked focused refinement on the large subunit produced a map of 3.1 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Masked focused refinement was performed on the small subunit and the large subunit to produce maps of 3.0 \u00c5 and 3.1 \u00c5 resolution, respectively (Figure 1A, Figure 1\u2014figure supplement 1, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the focused refinement results for the large subunit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study determined a ~3.0 \u00c5 resolution structure of the human mitoribosome including the L7/L12 stalk from 143,851 particles, resolving previously missing structural elements such as six copies of bL12m N-terminal domain and improved modeling of mL54. 3D classification yielded eight structurally homogeneous classes representing different translation states with varying tRNA occupancies (9% APE, 10% AP, 17% PE, 5% P-only, 25% E-only, 3% A/P-P/E hybrid, 14% P/E hybrid), plus a mt-RRF bound state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C27-C44, C108-C110 collectively provide comprehensive structural data including resolution metrics, particle numbers, newly resolved structural elements, and distribution of functional states. The cryo-EM methodology is well-documented with appropriate controls and validation (FSC curves, focused refinements). The identification of multiple translation states with specific percentages is supported by systematic 3D classification with signal subtraction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "b7d35ec6-59d8-4faf-9a7c-260c15aa1bce",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mitochondria-specific proteins mL40 and mL48 form a novel proteinaceous moiety that interacts with A-tRNA and P-tRNA elbows in the human mitoribosome, replacing the conventional bacterial H38 'A-site finger' and uL27m interactions. The N-terminal helix of mL40 (residues Lys66, Lys70, Gln63 for A-site; Arg67, Arg70, Lys77 for P-site) directly contacts tRNA elbows, while mL48's C-terminal helix provides structural support via hydrophobic interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51, C54-C55 describe specific structural features observed in the high-resolution cryo-EM maps with detailed residue-level interactions. The identification of mitochondria-specific adaptations replacing bacterial elements is well-supported by structural comparisons and citations to bacterial ribosome structures. The molecular interactions are described with specific residues and distances consistent with the reported resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "f7c42580-696a-410c-8b08-aeed3b342021",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The P-site and E-site tRNA binding involves both conserved and mitochondria-specific elements: uS9m C-terminal tail (Lys395) approaches P-site tRNA anticodon stem-loop (crucial for translation fidelity), while the newly resolved mL64 C-terminal helix stabilizes E-site tRNA elbow, and uS7m C-terminal helix (residues Lys221, Lys228) aligns with E-tRNA anticodon stem major groove.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C56-C58 describe tRNA binding features with specific protein-tRNA interactions supported by structural data. The functional importance of uS9 recognition is supported by citations (C53). The newly resolved mL64 element represents a novel finding from this study's improved resolution. The structural details are consistent with the reported ~3.0 \u00c5 resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study reveals a sequential mechanism of mt-tRNA translocation coordinated by mitochondria-specific proteins mL40, mL48, and mL64. During A-to-P transition, the small subunit ratchets 6.5\u00b0 and mL40 N-terminal helix shifts 5 \u00c5 while maintaining tRNA contact. P-to-E movement involves exchange of contacts from mL40 to mL64 (6 \u00c5 conformational change), with mL40 acting as a steric barrier against back-transition. The L1 stalk binds deacetylated tRNA in the non-ratcheted state, and tRNA release is facilitated by loss of interactions upon ratcheting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70, C88-C91 describe a comprehensive mechanism of tRNA translocation based on comparison of multiple structural states. The specific conformational changes (6.5\u00b0 rotation, 5 \u00c5 and 6 \u00c5 shifts) are quantified and supported by structural superpositions. The sequential handoff mechanism between mL40 and mL64 is a novel finding supported by the ensemble of structures. The evolutionary interpretation (C90) is appropriately qualified as 'likely' and supported by comparative citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "9c254085-903f-4b24-bd4c-b4c80127ec5e",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study identifies LRPPRC-SLIRP complex as a mt-mRNA delivery module that binds to translating mitoribosomes via the PPR protein mS39. The complex shares ~2000 \u00c5\u00b2 surface area with mS39 (the largest protein-protein interface on the mitoribosome) and is present only in particles with P-site tRNA and mt-mRNA. Mass spectrometry validated both LRPPRC and SLIRP (46% sequence coverage through four peptides), and the elongated density shape matches in vitro LRPPRC-SLIRP complex morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C77, C82-C87, C98 provide converging evidence for LRPPRC-SLIRP identification: (1) cryo-EM density present only in translating states, (2) mass spectrometry validation with quantified coverage, (3) correlation with prior in situ tomography (C76), (4) absence in non-translating controls (C85), (5) consistency with in vitro complex shape (C84). The large interface area (C74) and specific association with mS39 (C75) support functional significance. While the density could not be resolved to atomic detail, the multiple lines of evidence strongly support the identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "2cdb2617-10cf-4bab-8ba9-a31261f62ab1",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "An elongated 15 \u00c5 density was observed between A-tRNA and P-tRNA anticodon stems, extending from residue 40 to the mRNA codon backbone phosphate. The density shape matches polyamines and was tentatively modeled as spermine based on fitting four amino groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C61 describe an observed density with tentative interpretation. The authors appropriately acknowledge uncertainty ('could be modeled', 'cannot explicitly state', 'rule out the possibility that an unidentified protein moiety is involved'). While the density is consistently observed in A-tRNA containing classes suggesting functional relevance, the molecular identity remains speculative. The polyamine interpretation is reasonable given their presence in mitochondria (C60 citation), but lacks definitive validation such as biochemical confirmation or higher resolution structural detail.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study proposes that the human mitoribosome evolved a specialized mt-mRNA delivery mechanism involving LRPPRC-SLIRP and the PPR protein mS39, replacing bacterial mRNA-handling elements (uS4, C-terminal uS3m, OB domains of bS1m). This adaptation addresses the unique features of human mt-mRNAs (leaderless, lacking 5' caps and Shine-Dalgarno sequences) and the compartmentalization of mitochondrial transcription and translation, unlike the coupled transcription-translation in bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C92-C97, C99-C100 synthesize structural findings with functional and evolutionary context. The structural evidence for LRPPRC-SLIRP binding via mS39 is well-supported (see Result 5). The absence of bacterial mRNA-handling elements is documented by prior work (C99 citations). The unique features of mt-mRNAs (C94-C95) and lack of transcription-translation coupling (C96-C97) are supported by citations. The evolutionary interpretation (C100) is appropriately framed as inference based on structural and functional data. The clinical relevance (C93) is supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "bfc37091-ff30-470c-bf62-53f4ac32da7b",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mitoribosomal complexes were isolated from HEK293S-derived cells grown in nutrient-rich medium and stalled with antibiotics quinupristin (exit tunnel binder) and dalfopristin (peptidyl-transferase center binder). Cryo-EM data were collected on a Titan Krios at 300 keV using a K2 Summit detector at 1.05 \u00c5 pixel size. From 3481 micrographs, 311,655 particles were picked and 192,970 particles were retained after 2D classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26, C101-C107 describe standard and well-documented cryo-EM methodology. The use of antibiotics to stall translation is supported by citations (C25-C26). Cell culture conditions are detailed (C101) with quality control (C102). Data collection parameters are comprehensive and appropriate for high-resolution structure determination. The particle numbers and retention rates are reasonable for this type of study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about human mitoribosomes: they comprise at least 36 mitochondria-specific proteins with 2-fold reduced rRNA and ~1 MDa increased protein mass compared to bacterial ribosomes. Impaired mitochondrial translation causes respiratory chain dysfunction, myopathies, neurodegenerative diseases, and is linked to cancer. Human mt-mRNAs lack conventional UTRs, Shine-Dalgarno sequences, and 5' caps, while mt-tRNAs have diverse non-canonical structures. Previous structural studies were incomplete with key mt-mRNA and mt-tRNA binding components missing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C23 provide established background knowledge supported by appropriate citations throughout. These claims set the context for the study by describing known mitoribosome characteristics, disease associations, and limitations of prior structural work. All claims are either cited to primary literature or represent well-established knowledge in the field. This background appropriately motivates the current study's objectives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    },
+    {
+      "id": "329fa7ca-fb77-463c-aa0b-7a7751d9325d",
+      "content_id": "bd8e766a-7655-41b6-9d9f-75c656453fb7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LRPPRC is conserved from flies to mammals with broad RNA binding capacity through multiple PPR motifs. LRPPRC forms a stable complex with SLIRP (11 kDa), which is important for mt-mRNA presentation to the mitoribosome for efficient translation based on mouse liver mitochondria studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 describe established properties of LRPPRC and SLIRP from prior literature, all supported by appropriate citations (Baggio et al. 2014, Sp\u00e5hr et al. 2016, Lagouge et al. 2015). These claims provide important functional context for interpreting the structural findings but represent prior knowledge rather than new results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:21:41.091715Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9489061b-24fd-4399-ba19-aca8dad256a2",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "f31a574e-5cf7-4a61-87f5-7489e14fc2c8",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "a62ec58e-b97f-4428-890e-d3ca4cad3239",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "0866e763-fdbb-459a-8c39-8ddfbf082592",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "15cb7bca-dd81-4912-844a-5a620c172fbb",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "46d9fc38-d157-41b2-83c2-aa957318ade2",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "a8472839-41d4-43ff-9e3b-9a94accee311",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "fbc34239-459c-45ac-8fcb-220203ed85cf",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "92781a11-38b3-453e-a808-267d9fd8f8c8",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "49d0a2b5-5526-4675-99de-45dc964cb473",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "6a4b9ba9-1d71-408b-b49c-f7ec3c3f67f9",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "82eefced-187c-44ef-9d72-14611db85193",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "5cfe1c6e-c21d-490b-b4e9-88975d468138",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "bcfc61d0-37fc-4e80-b0ea-9251b5239a10",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "5593e47a-37f3-4c45-8209-dca9fecaf1d4",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "3bed50d6-43ec-4d94-aa4c-3fd24236ac80",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "9ce0e62f-dc2d-4c3b-8de3-eabab435d5ff",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "ee27d8c5-c3f0-4b3b-9f7d-815eed4932d2",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "ee19c8c4-04df-43b7-8989-c0ce2f269ade",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "7638d135-a3e7-4140-89c6-d808dc56fbd1",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "bdede7ef-97dd-4d45-a674-b38715a3df65",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "127f5e52-e21c-42ac-8830-dc098cb94af7",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "49c13a1e-7069-48cc-8698-518b9d408762",
+      "result_id": "b1d34cce-afdd-4287-84e0-4750f4d8fb5e"
+    },
+    {
+      "claim_id": "cf6dd234-ec71-48d5-bf97-d9ea10dd597e",
+      "result_id": "b7d35ec6-59d8-4faf-9a7c-260c15aa1bce"
+    },
+    {
+      "claim_id": "4ffebb87-58c0-4e2b-870b-99ab12e41e9b",
+      "result_id": "b7d35ec6-59d8-4faf-9a7c-260c15aa1bce"
+    },
+    {
+      "claim_id": "e05b6b15-9002-4857-bc1f-bc0be37ef4f1",
+      "result_id": "b7d35ec6-59d8-4faf-9a7c-260c15aa1bce"
+    },
+    {
+      "claim_id": "544a4257-dc10-4b7d-93e4-2aff28d9d65e",
+      "result_id": "b7d35ec6-59d8-4faf-9a7c-260c15aa1bce"
+    },
+    {
+      "claim_id": "0afaac5e-27ef-497e-a0a1-6d9f1587b2f8",
+      "result_id": "b7d35ec6-59d8-4faf-9a7c-260c15aa1bce"
+    },
+    {
+      "claim_id": "9e42d38c-613e-419c-a790-428f401d8d4b",
+      "result_id": "b7d35ec6-59d8-4faf-9a7c-260c15aa1bce"
+    },
+    {
+      "claim_id": "6dcd7868-b161-4dae-b6be-4bf2c7563df4",
+      "result_id": "b7d35ec6-59d8-4faf-9a7c-260c15aa1bce"
+    },
+    {
+      "claim_id": "72ff3947-de39-4c79-bb4d-426459bc59db",
+      "result_id": "b7d35ec6-59d8-4faf-9a7c-260c15aa1bce"
+    },
+    {
+      "claim_id": "b3ec7a39-8aeb-4bce-a9d0-2ff004da942b",
+      "result_id": "b7d35ec6-59d8-4faf-9a7c-260c15aa1bce"
+    },
+    {
+      "claim_id": "244b8bea-4a6f-4f02-bc8d-7498d4701f2d",
+      "result_id": "f7c42580-696a-410c-8b08-aeed3b342021"
+    },
+    {
+      "claim_id": "4ffab199-1a23-4eb0-815f-dd87e3751760",
+      "result_id": "f7c42580-696a-410c-8b08-aeed3b342021"
+    },
+    {
+      "claim_id": "861004b8-46c2-46fb-a153-631ce759d084",
+      "result_id": "f7c42580-696a-410c-8b08-aeed3b342021"
+    },
+    {
+      "claim_id": "b408dcfd-9e0c-4a84-9d95-3196f35ffc2f",
+      "result_id": "f7c42580-696a-410c-8b08-aeed3b342021"
+    },
+    {
+      "claim_id": "2a2713d3-c379-47e0-8db4-c95f740a05cf",
+      "result_id": "f7c42580-696a-410c-8b08-aeed3b342021"
+    },
+    {
+      "claim_id": "20c733e5-c820-4119-9554-a05633c24438",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "21023fb1-073f-41e1-8908-d90888834e65",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "f3d40319-187a-41c2-af51-0ad349f6a62c",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "02b1ba29-d938-4ee4-9460-aab20c080df6",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "16d7491a-5298-4c7e-99d3-c1ed2504b738",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "2dbcb8af-bcf7-4625-83ae-00555c6a6435",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "272adfb6-25b6-468c-8b81-42d97e56fcb2",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "819ebf4d-b136-4d59-bfb8-2daf82e84f7d",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "63acefce-7ebb-4b94-aeb3-748e38b21cf9",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "5229b321-27f6-4d0b-a943-f5bd7e95bf1c",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "360811bd-30e7-4608-be34-7099c0889c1d",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "cefa3112-5ac6-46b3-8bc2-a8c0f75f9128",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "da04085f-f1a8-4665-8c67-a86948b9666f",
+      "result_id": "1294310e-4d0b-45a6-a3aa-a7a0a9bbb0eb"
+    },
+    {
+      "claim_id": "e8adfb0a-2709-4169-bd86-13686b26e557",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "be6ce807-a5ab-4327-888d-7799bf2bf1da",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "3b8e3de3-1ec7-437b-a3a2-530e16e3d5c7",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "814fc2ef-361d-4a82-9d57-f598ba1c27e0",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "dcb40eda-119f-43f1-b257-73584c6e8b3b",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "4e58590e-17af-4370-a6c1-bbee5e56adf9",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "0f60b98b-6f0a-43ea-a72b-285440fd99f8",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "a9178121-4107-43a8-8409-8c359411e158",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "000be72c-4758-4eee-88fb-8497d5b6bf6d",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "4c89ade8-127d-4405-816f-f648ae2db759",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "13221cfa-a775-4986-92bb-3695cefd43e0",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "ffd40b50-b36d-47ee-a4e4-9bd61aca92eb",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "37e8e883-3495-451f-a64e-fa5dce9b02e4",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "b1282621-0c3f-47b1-b842-96aba68f66c7",
+      "result_id": "9c254085-903f-4b24-bd4c-b4c80127ec5e"
+    },
+    {
+      "claim_id": "ccad99e7-182f-4d3d-973d-fd4d9117e821",
+      "result_id": "2cdb2617-10cf-4bab-8ba9-a31261f62ab1"
+    },
+    {
+      "claim_id": "636096fd-0023-44fe-a82b-dfe4acb0c6ab",
+      "result_id": "2cdb2617-10cf-4bab-8ba9-a31261f62ab1"
+    },
+    {
+      "claim_id": "3a2719f2-4412-455a-8ef9-bd94648dc2bd",
+      "result_id": "2cdb2617-10cf-4bab-8ba9-a31261f62ab1"
+    },
+    {
+      "claim_id": "f63ea67c-465c-44eb-9794-f182b29e470a",
+      "result_id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d"
+    },
+    {
+      "claim_id": "e179d11b-f06e-4a1f-bdec-850d1eb93131",
+      "result_id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d"
+    },
+    {
+      "claim_id": "d2fe141f-6dc6-4879-a33d-df20b43bbe3f",
+      "result_id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d"
+    },
+    {
+      "claim_id": "848ce4af-68c2-4a73-b8e6-5366ce932b2c",
+      "result_id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d"
+    },
+    {
+      "claim_id": "7212ec9b-3ec9-4a1b-9f4d-ada501a7eb97",
+      "result_id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d"
+    },
+    {
+      "claim_id": "d1cac735-96ce-40d1-bd70-9982f0b97378",
+      "result_id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d"
+    },
+    {
+      "claim_id": "1e330506-f2d8-4dc9-be73-7540fe439c74",
+      "result_id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d"
+    },
+    {
+      "claim_id": "f1c4ac41-24ed-49f8-91dc-2911caa21817",
+      "result_id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d"
+    },
+    {
+      "claim_id": "aa1a3df0-cfcc-479c-b14d-dc7dd24e7760",
+      "result_id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d"
+    },
+    {
+      "claim_id": "76b73ca2-8f0b-4342-a820-f70ff99d037d",
+      "result_id": "4d645db3-5fea-4d32-a20c-ecee42a8a74d"
+    },
+    {
+      "claim_id": "02dd6ab2-0c69-406f-94a9-882e12f0e09e",
+      "result_id": "bfc37091-ff30-470c-bf62-53f4ac32da7b"
+    },
+    {
+      "claim_id": "1e602600-b536-4883-9261-a62e2451cd3e",
+      "result_id": "bfc37091-ff30-470c-bf62-53f4ac32da7b"
+    },
+    {
+      "claim_id": "a400b5ab-3c21-430d-92d6-f998c45065ee",
+      "result_id": "bfc37091-ff30-470c-bf62-53f4ac32da7b"
+    },
+    {
+      "claim_id": "0bb959c0-1ea3-4a30-86f1-48f955a921d3",
+      "result_id": "bfc37091-ff30-470c-bf62-53f4ac32da7b"
+    },
+    {
+      "claim_id": "32b35410-d53e-4781-baf4-7c31d71efa94",
+      "result_id": "bfc37091-ff30-470c-bf62-53f4ac32da7b"
+    },
+    {
+      "claim_id": "32b3fbda-2e7c-4f66-a931-6cd3205ef92a",
+      "result_id": "bfc37091-ff30-470c-bf62-53f4ac32da7b"
+    },
+    {
+      "claim_id": "52e29658-b36f-4440-b22e-9fadda2e6708",
+      "result_id": "bfc37091-ff30-470c-bf62-53f4ac32da7b"
+    },
+    {
+      "claim_id": "7d030934-5517-4267-9fd9-7c296b811111",
+      "result_id": "bfc37091-ff30-470c-bf62-53f4ac32da7b"
+    },
+    {
+      "claim_id": "7f5ab5fb-938e-4286-a29e-997276b8db9b",
+      "result_id": "bfc37091-ff30-470c-bf62-53f4ac32da7b"
+    },
+    {
+      "claim_id": "6a8e8101-58f2-4693-9599-ad67eafa666d",
+      "result_id": "bfc37091-ff30-470c-bf62-53f4ac32da7b"
+    },
+    {
+      "claim_id": "44864ba7-539c-45a2-8190-1ece73bf8367",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "c65af5d3-64e3-42b9-a41b-f2b6c7bb4a87",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "811e3c1a-aa5c-4603-8a92-8c1fafcb8f5a",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "c0bd7c19-2043-4bfe-9eb1-82663bf795aa",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "a60cff49-7bb6-44ac-a6c3-422e0e89bab2",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "eb900201-997a-4cbf-81aa-88e1419c58d4",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "e5f6d18b-ee4e-439b-9788-8afcae515d73",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "5f734f8b-8474-4137-8c2e-896ce8bba660",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "1a59dffa-9b2c-4d3a-8ccb-9bf22e5c14fe",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "bd65e62a-bce9-438a-83d1-f8771ba72a5e",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "0708b23c-ab81-44ee-8a53-b9171d391447",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "fcc791a8-8d55-4e17-8585-0760552b2057",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "1f2eead4-267c-4ad5-bffc-db234e792190",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "af5592d8-0965-4d71-9839-0f11158118d2",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "9629779c-797a-45bc-bd76-497467bc22ae",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "07ee79ea-5e0f-46f7-9ed1-9a3e19fee474",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "fc11e7c2-37ec-463e-a7ff-0a2a2b5c6ff9",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "42d35e7c-5dd6-4e47-afca-a969647fcdf4",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "a31cbe05-c020-4989-902a-a1c0abaf6dbd",
+      "result_id": "e6659c4a-f7bd-4bd7-969d-aeda337ed44d"
+    },
+    {
+      "claim_id": "8ad850d8-d792-4239-ab76-bf24f54df0ef",
+      "result_id": "329fa7ca-fb77-463c-aa0b-7a7751d9325d"
+    },
+    {
+      "claim_id": "3ce3ba9a-dc02-496c-ba85-48d624cc55d0",
+      "result_id": "329fa7ca-fb77-463c-aa0b-7a7751d9325d"
+    },
+    {
+      "claim_id": "8c87dceb-cb9f-441d-9b9c-3d5abe3088e9",
+      "result_id": "329fa7ca-fb77-463c-aa0b-7a7751d9325d"
+    },
+    {
+      "claim_id": "356bccd7-80d8-4cdf-8952-7fcdc744af4b",
+      "result_id": "329fa7ca-fb77-463c-aa0b-7a7751d9325d"
+    }
+  ],
+  "comparisons": []
+}

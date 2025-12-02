@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C31",
+      "C32"
+    ],
+    "result": "POPG preferentially binds to ELIC with higher affinity than neutral phospholipids POPE and POPC, as demonstrated by native mass spectrometry showing concentration-dependent binding and coarse-grained MD simulations showing enrichment of POPG among boundary lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C24-C26, C28-C29, C31-C32 collectively provide strong converging evidence from multiple independent methods (native MS, lipid extraction/tandem MS, and coarse-grained MD simulations) demonstrating preferential POPG binding. The native MS data show concentration-dependent binding with quantified stoichiometry, lipid extraction shows enrichment of PG in purified ELIC, and MD simulations independently confirm POPG enrichment (B>0) at the protein-lipid boundary. The binding model fitting provides quantitative affinity estimates showing ~1.9\u00d7 and 2.8\u00d7 higher affinity for POPG vs POPE and POPC respectively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C87"
+    ],
+    "result": "POPG selectively stabilizes ELIC against thermal denaturation with an EC50 of 52 \u03bcM, while neutral phospholipids POPE and POPC have no stabilizing effect. Approximately 32 bound POPG molecules yield ~82% of maximal thermal stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C35, C87 are well-supported by thermal stability assays (Figure 3A) showing dose-dependent stabilization by POPG but not POPE/POPC. The quantitative relationship between binding stoichiometry and thermal stability (C35, C87) is derived by combining native MS binding data with thermal stability measurements, providing a reasonable approximation despite acknowledged extrapolation beyond measured concentrations. The selectivity for POPG over neutral lipids supports a specific binding interaction rather than non-specific lipid effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "POPG decreases ELIC desensitization in a concentration-dependent manner without affecting EC50 or activation kinetics, as measured by patch-clamp recordings in giant liposomes and stopped-flow flux assays. Increasing POPG from 12% to 40% mole% significantly reduces both the rate and extent of desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C36-C41, C71-C74 are supported by complementary functional assays using two independent methods (patch-clamp and stopped-flow flux). The patch-clamp data (Figure 3B-D, Table 1) show statistically significant dose-dependent effects of POPG on desensitization rate and extent, while activation and EC50 remain unchanged. The stopped-flow data (Figure 3E-F, Table 2) independently confirm >20-fold faster desensitization in POPC vs POPC:POPE:POPG liposomes. The discrepancy in time constants between methods (C72-C74) is reasonably explained by differences in agonist concentration and experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C49",
+      "C50",
+      "C84",
+      "C85"
+    ],
+    "result": "Mutations of five interfacial arginine residues (R117, R123, R286, R299, R301) to glutamine reduce POPG binding. Double mutants with R299Q show 38-41% reduction in average bound POPG, with each arginine contributing approximately equally to binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C49-C50, C84-C85 are supported by native MS data (Figure 4B) showing statistically significant decreases in POPG binding for all double mutants. While single mutants showed non-significant trends (13-18% decrease), the double mutants provide clear evidence with p<0.01. The binomial binding model fitting (C84) suggests reduction from 32 to 18-21 available sites in mutants, consistent with the ~35-45% decrease in bound lipid. The inference that each arginine contributes equally (C50) is reasonable given similar effects across different double mutant combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C55"
+    ],
+    "result": "A subset of arginine mutations that reduce POPG binding also increase ELIC desensitization. Four of five interfacial arginines (R117, R123, R299, R301) when mutated increase desensitization rate and/or extent, with R301Q showing the largest and most significant effect among single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C42-C46, C55 are supported by patch-clamp data (Figure 6, Table 3) showing that mutations reducing POPG binding correlate with increased desensitization. While most single mutant effects were small and statistically insignificant except R301Q (p<0.01), three double mutants showed significant increases in desensitization extent, and two showed significant increases in rate. The correlation between reduced binding (C6) and increased desensitization (C7) across multiple mutants supports a mechanistic link, though the small effects in single mutants and lack of effect for R286Q (C45) indicate complexity in the relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C47",
+      "C48"
+    ],
+    "result": "The L238A mutation, which decreases ELIC desensitization, increases POPG binding by ~1.7-fold compared to wild-type, providing reciprocal evidence that POPG binding correlates inversely with desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C47-C48 are well-supported by complementary data showing L238A markedly decreases desensitization (Figure 7A, Table 3, p<0.01) while significantly increasing POPG binding (Figure 7B, p<0.01). This reciprocal relationship strengthens the mechanistic link between POPG binding and reduced desensitization established by the arginine mutants. The mutation is remote from the lipid interface, suggesting an allosteric mechanism for modulating lipid binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C69",
+      "C79"
+    ],
+    "result": "POPG stabilizes the open state of ELIC relative to the desensitized state through direct binding at specific sites involving interfacial arginine residues R117, R123, R299, and R301 localized around TM4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C69, C79 represent the main mechanistic conclusion integrating all experimental findings. The conclusion is well-supported by converging evidence: (1) direct POPG binding demonstrated by native MS, (2) POPG reduces desensitization in functional assays, (3) mutations that reduce POPG binding increase desensitization, (4) a mutation that increases POPG binding decreases desensitization, and (5) MD simulations localize POPG interactions to specific arginine residues. While the mechanism is inferred rather than directly demonstrated, the multiple lines of correlative evidence from orthogonal approaches provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C80",
+      "C81"
+    ],
+    "result": "Coarse-grained MD simulations show POPG preferentially interacts with ELIC in the inner leaflet and localizes to interfacial residues in TM4 (R299, R301) and at the extracellular interface (R117, R123), with POPG headgroups contacting arginine residues and acyl chains occupying intrasubunit grooves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C80-C81 are supported by coarse-grained MD simulation data (Figure 5, Figure 8B) showing spatial localization of POPG density around specific arginine residues. The simulations provide structural context for the binding sites identified by mutagenesis and are consistent with the experimental findings. The 15 \u03bcs simulation timescale is appropriate for lipid equilibration in coarse-grained models. The asymmetry between leaflets (C51) is consistent with the distribution of arginine residues (3 in inner, 2 in outer leaflet).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Lipid extraction and tandem MS analysis of purified ELIC revealed multiple PE and PG phospholipids with different acyl chains, with higher relative abundance of PG co-purified with ELIC compared to E. coli membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 are supported by tandem MS data (Figure 1\u2014figure supplement 1, Supplementary file 1) showing identification and quantification of co-purified lipids. The higher PG/PE ratio in ELIC samples vs E. coli membranes provides independent evidence for preferential PG binding, complementing the native MS exogenous lipid binding experiments. The methodology (Bligh-Dyer extraction, high-resolution MS/MS) is appropriate for lipid identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background and context claims establishing that pLGICs are essential for synaptic transmission, are modulated by lipids including anionic phospholipids, and that prior studies have shown lipid effects on pLGIC function and structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C21 are background/context claims supported by citations to established literature. These provide the scientific foundation and rationale for the current study. The claims accurately represent prior knowledge in the field based on the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Prior structural and functional studies have identified TM4 as a lipid-sensing structure in pLGICs, with crystal structures showing bound lipids in intrasubunit grooves and mutations in this region affecting desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are background claims supported by citations to prior literature (GLIC structures, mutagenesis studies, photolabeling studies). These establish the context for focusing on TM4 and specific arginine residues in the current study. The claims accurately represent findings from cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C68",
+      "C74",
+      "C78",
+      "C82",
+      "C83",
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "Speculative claims about potential mechanisms, alternative explanations, and future directions including: lipids with polyunsaturated chains may act as competitive antagonists; PG changes could modulate ELIC in bacteria; other anionic phospholipids may modulate eukaryotic pLGICs; and additional POPG binding sites may exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63, C65, C68, C74, C78, C82-C83, C86, C88-C89 are explicitly speculative hypotheses and alternative explanations acknowledged by the authors. These represent reasonable interpretations and future directions based on the data, but are not directly tested in the current study. They are appropriately presented as speculation rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C67",
+      "C70",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Additional context claims about bacterial lipid composition, eukaryotic pLGIC lipid sensitivity, methodological considerations for native MS, and prior findings about ELIC lipid sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C66-C67, C70, C75-C77 provide additional context supported by citations or describe methodological details. C77 makes a reasonable inference about charge-dependence of POPG binding based on the mutagenesis results showing arginine residues are important. These claims appropriately contextualize the findings.",
+    "result_type": "MINOR"
+  }
+]

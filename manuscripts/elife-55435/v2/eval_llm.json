@@ -1,0 +1,602 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C117"
+    ],
+    "result": "Dictyostelium cells complete dedifferentiation within 24 hours, with gene expression returning to the undifferentiated state. This occurs under both liquid medium and bacterial nutrition conditions, with similar trajectories along PC1 and PC2, and most transcriptional changes occurring by 6 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C31-C34, and C117 are supported by PCA analysis of RNAseq timecourse data (Figure 1C) showing convergence to undifferentiated state within 24 hr. The data demonstrate similar trajectories under both nutritional conditions with most changes along PC1 by 6 hr. Multiple independent measurements and replicates support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Gene expression during dedifferentiation is predominantly a reversal of developmental changes, with 60-62% of genes showing direct reversal of their developmental behavior above a two-fold threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37, C43-C45 are supported by hierarchical clustering (Figure 1D) and quantitative analysis showing 62% of up-regulated and 60% of down-regulated genes during dedifferentiation reverse their developmental expression. The statistical threshold (2-fold) is clearly defined and the analysis is systematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41"
+    ],
+    "result": "Expression changes not following the developmental reversal pattern are primarily associated with ribosome biogenesis, with ribosomal proteins showing strong positive PC1 loadings and enrichment for translation and mitochondrial function terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C41 are supported by GO enrichment analysis (Figure 2\u2014figure supplement 1, 4) showing ribosome biogenesis terms dominate genes with negative PC2 loadings, and ribosomal proteins show strong positive PC1 loadings. The functional enrichment analysis is appropriately conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C38",
+      "C118"
+    ],
+    "result": "Dedifferentiation and development trajectories diverge primarily along PC2, with different relative timing of gene expression milestones, indicating the processes are not strict mirror images despite similar start and end points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C38, C118 are supported by PCA analysis (Figure 1C) showing trajectory divergence along PC2 and different timing relationships (4 hr dedifferentiation \u2260 10 hr development). The observation is clearly demonstrated in the data, though the biological significance of timing differences could be explored further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C59",
+      "C60",
+      "C67",
+      "C120"
+    ],
+    "result": "Mutation of genes induced early in dedifferentiation, including six transcription factors and eight insertional mutants, did not strongly perturb gene expression during dedifferentiation, suggesting robustness of the dedifferentiation program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C59-C60, C67, C120 are supported by extensive mutant analysis (Table 1, Figure 3A) showing wild-type or near wild-type gene expression in multiple mutants. The breadth of mutants tested (>40 genes) and multiple assay methods strengthen this conclusion, though the lack of phenotypes raises questions about functional redundancy vs. incomplete perturbation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C88",
+      "C127",
+      "C128"
+    ],
+    "result": "The temporal ordering of cellular and molecular events during dedifferentiation is not absolute, with some cells dividing before act8 induction while most show the opposite order, suggesting flexible program execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C88, C127-C128 are supported by single-cell imaging (Figure 4C) showing variable temporal ordering between act8 induction and division. While the majority follow one order, exceptions demonstrate flexibility. The sample size (160 cells) is adequate for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C110",
+      "C111",
+      "C119"
+    ],
+    "result": "Prestalk and prespore cells rapidly converge on a single gene expression trajectory during dedifferentiation, with trajectory merging beginning around 3 hours after dedifferentiation onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C110-C111, C119 are supported by single-cell RNAseq (Figure 6G-H) showing initial separation in PC3 space followed by convergence by ~3 hr. The timing is corroborated by Northern blot data (Figure 6\u2014figure supplement 1D-E). The analysis appropriately uses higher-order PCs to distinguish cell fates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Dedifferentiation involves distinct temporal phases of gene expression: early 'off' events (fruiting body components), transient inductions (protein degradation, cytoskeletal, ribosome/mitochondrial biogenesis), stable long-term induction (translation/respiration), and biphasic cell cycle gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by hierarchical clustering (Figure 2\u2014figure supplement 5-9) and GO analysis identifying distinct temporal clusters with specific functional enrichments. The phased nature of the response is clearly demonstrated, though mechanistic connections between phases are not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The first mitosis during dedifferentiation occurs at a median of 17.9 hours, considerably delayed compared to cell cycle gene expression onset (5-6 hr) and corresponding to when transcriptional changes are essentially complete, indicating division is not required for most transcript changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by single-cell imaging (Figure 4\u2014figure supplement 1A) showing median division time of 17.9 hr vs. gene expression plateau at 5-6 hr. The inference that division is not required for transcriptional changes is logical given the timing, though direct experimental blocking of division would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "Dedifferentiating cells show heterogeneity in division timing and act8 induction, with strong temporal coupling between first mitosis and act8 onset (correlation shown in Figure 4E), and dividing cells showing higher rates of act8 induction than non-dividing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87, C89 are supported by single-cell imaging data (Figure 4B-F) showing correlation between act8 induction timing and division timing, and differential induction rates. The sample size (354 cells, 4 experiments) is adequate. However, the correlation coefficient for rate vs. timing (r=-0.229) is weak, suggesting the relationship is complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "Cell motility during dedifferentiation shows bimodal heterogeneity with ~70% of cells showing low motility and dividing, while a smaller subpopulation shows high motility and defers division during the 25 hr observation period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94, C96-C97 are supported by single-cell tracking and clustering analysis (Figure 5A-C) showing two distinct motility clusters with differential division behavior. The clustering is validated by silhouette analysis (Figure 5\u2014figure supplement 1A). Sample size (120 tracks) is adequate for identifying these patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Cell heterogeneity in motility and division timing during dedifferentiation arises independently of starting cell fate, as CryS expression (prestalk marker) does not correlate with division probability, division timing, or motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are supported by single-cell imaging with CryS reporter (Figure 6A-C) showing no significant correlations (KS test p=0.134 for division; p=0.46, 0.22 for motility). The statistical tests are appropriate and sample sizes adequate (261-442 cells). This effectively rules out fate-dependent heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Growth-defective mutants (forG- and rasS-) show relatively normal dedifferentiation gene expression despite impaired PCNA induction and reduced clonal recovery (forG-), with other markers (hspE, rpl15) showing normal timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by Northern blot analysis (Figure 3B), PCA of RNAseq (Figure 3C), and clonal recovery assays (Figure 3\u2014figure supplement 1D-E). The data show partial defects in specific markers but overall normal progression. This supports the robustness conclusion, though the PCNA defect warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Macropinocytosis is limited during early dedifferentiation, with only modest fluid uptake detected around 8 hours and reaching only half of undifferentiated levels by 30 hours, suggesting processes other than macropinocytosis drive early nutritional responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by fluid uptake measurements (Figure 3D) showing delayed and incomplete recovery of macropinocytosis. The inference that other processes drive early responses is reasonable given the timing mismatch with gene expression changes, and is supported by rapid AMPK/mTORC1 signaling changes (C73-C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Standard nutrient sensors (AMPK\u03b1 phosphorylation and 4E-BP1 phosphorylation) show rapid responses during early dedifferentiation, with loss of phospho-AMPK\u03b1 and induction of phospho-4E-BP1 occurring before detectable macropinocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by phospho-western blotting (Figure 3E) showing rapid changes in nutrient sensor phosphorylation. The timing precedes macropinocytosis, supporting the inference that these sensors respond to nutrition independently of bulk fluid uptake. Three replicates strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Single-cell RNAseq reveals two major clusters in PC1-PC2 space, with PC1 reflecting developmental time (positive values = early dedifferentiation, negative = closer to undifferentiated), and no clear evidence for multiple trajectories in this space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by PCA of single-cell RNAseq (Figure 6D) and comparison to population data (Figure 6E). The interpretation of PC1 as developmental time is validated by comparing to bulk RNAseq. The lack of multiple trajectories in PC1-PC2 space is clearly shown, though higher-order PCs reveal fate-specific differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Prestalk and prespore fates show clear separation in PC1-PC3 space, with prespore markers rapidly switching off while prestalk expression persists in cells with negative PC1 values during dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 are supported by PCA analysis with cell-type marker overlays (Figure 6G) showing differential behavior of fate markers in PC1-PC3 space. The use of higher-order PCs to reveal fate-specific differences is appropriate. The differential kinetics of marker loss are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The csaA gene and other aggregation-specific genes show transient re-induction during dedifferentiation in bacteria (41% overlap, significantly enriched vs. random), but not in liquid medium (15% overlap), indicating this is not a consistent feature of dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by RNAseq data (Figure 2D) and statistical analysis comparing gene set overlaps to random sampling (10,000 simulations). The condition-specific nature of the phenomenon is clearly demonstrated. The alternative explanation involving cAMP signaling (C53) is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "After the first mitotic division, the second cell cycle duration (median 7.4 hr) is more similar to undifferentiated cycle time (6.1 hr), suggesting near-complete return to undifferentiated state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by single-cell imaging data (Figure 4\u2014figure supplement 1B) showing second cycle duration. The comparison to undifferentiated cycle time is appropriate and supports the interpretation of functional dedifferentiation completion. Sample size (64 cells) is adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "In single-cell RNAseq PCA space, later timepoints (3-6 hr) are relatively bunched while earlier timepoints are scattered, implying most transcriptional changes occur early during dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are supported by visual inspection of PCA plots (Figure 6G-H) showing temporal clustering patterns. The inference that bunching indicates completion of major changes is reasonable and consistent with population RNAseq data. This provides single-cell validation of bulk observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The timescale of trajectory convergence during dedifferentiation (~3 hr) is similar to cell fate separation during forward development, implying no strong resistance to cell state change specific to dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by comparison to published data (Antolovi\u0107 et al., 2019) showing similar timescales. The inference about lack of dedifferentiation-specific resistance is reasonable given the symmetric timescales, though direct mechanistic evidence would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C36",
+      "C39"
+    ],
+    "result": "Cells disaggregated into nutrient-free buffer show a different trajectory that rapidly separates from dedifferentiating cells and shows strong impairment of characteristic dedifferentiation gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C39 are supported by PCA analysis (Figure 1C) and hierarchical clustering (Figure 1D) showing buffer-only cells diverge from dedifferentiation trajectory and fail to activate/repress characteristic genes. This serves as an important negative control demonstrating nutrition requirement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Strong negative loadings for PC1 are enriched for processes related to terminal differentiation, cell adhesion, cAMP signaling, and autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by GO enrichment analysis (Figure 2B, Figure 2\u2014figure supplement 2) showing these functional categories. These represent developmental processes that are down-regulated during dedifferentiation, consistent with the reversal model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Persistence of motility was similar between the two motility clusters identified during dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by analysis of single-cell tracking data (Figure 5\u2014figure supplement 1C). This indicates the clusters differ primarily in speed rather than directional persistence, suggesting different underlying mechanisms than chemotaxis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Both forG- and rasS- mutants have defects in macropinocytosis that impair their growth in liquid medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by stated knowledge about these mutants' phenotypes. This provides context for interpreting their dedifferentiation phenotypes and explains why they were grown on bacteria for experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Dedifferentiation is a critical response to tissue damage that allows stem cell replenishment, has been implicated in cancer progression, is central to IPSC generation strategies, but is not well understood in any system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are background statements supported by appropriate citations (Merrell and Stanger 2016; Friedmann-Morvinski and Verma 2014; Takahashi and Yamanaka 2016). These establish the biological and clinical importance of dedifferentiation and justify the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Previous studies have identified candidate molecular players in dedifferentiation including c-Jun, mTORC1, histidine kinases, and chromatin regulators like CAF-1, though these are isolated with respect to large-scale regulatory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are literature review statements supported by appropriate citations. These establish prior knowledge and the gap in understanding that motivates the current comprehensive study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "A recurring hypothesis in IPSC studies is that dedifferentiation recapitulates developmental intermediates in reverse, but support is based on limited markers rather than formal classification, and there is evidence for multiple trajectories during IPSC derivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are critical assessments of prior literature supported by citations (Pasque et al. 2014; Cacchiarelli et al. 2015; Stuart et al. 2019). This establishes the controversy about trajectory stereotypy that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Many dedifferentiation models are slow (days to weeks), with IPSC generation taking weeks, having low efficiency, and requiring forced expression of four transcription factors including two proto-oncogenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are background statements about IPSC limitations supported by citation (Karagiannis and Yamanaka 2014). These justify the use of Dictyostelium as a more tractable model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Dictyostelium cells can completely reverse differentiation in ~24 hr following starvation-induced development, aggregation into multicellular mounds, and differentiation into stalk and spore cell types, with dedifferentiation induced by disaggregation and nutrient resupply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe established Dictyostelium biology supported by citations (Takeuchi and Sakai 1971; Finney et al. 1987; Katoh et al. 2004). These establish the model system and experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Shortly after dedifferentiation onset, there is a critical 'erasure' phase corresponding to loss of developmental memory, where ability to rapidly re-enter development upon nutrient removal is quickly lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 describe the erasure phenomenon supported by citation (Finney et al. 1979). This establishes an important feature of Dictyostelium dedifferentiation that provides context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Initial microarray studies on Dictyostelium dedifferentiation implied the gene expression program is distinct from development, contrasting with mammalian IPSC studies arguing for developmental recapitulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by citation (Katoh et al. 2004) and establishes prior conflicting findings that the current high-resolution study aims to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Two mutants affect aspects of dedifferentiation: HI4 shows impaired loss of cell-cell adhesivity, and dhkA- shows delayed population growth, though other dedifferentiation features remain unperturbed in both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by citations (Finney et al. 1983; Katoh et al. 2004) and establish prior genetic evidence for dedifferentiation regulation, providing context for the current mutant analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "During development, cells initially increase motility as they become aggregation competent, then show reduced surface motility after aggregation when behavior becomes suited for 3D tissue migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by citation (Varnum et al. 1986) and establishes the developmental context for interpreting motility changes during dedifferentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The heterogeneity in motile behavior during dedifferentiation might represent a bet-hedging response, with cells speculating between staying put to proliferate versus spreading to search for new habitats, reminiscent of bacterial behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is explicitly speculative, drawing an analogy to bacterial behavior (Henrichsen 1972). While the heterogeneity is clearly demonstrated, the functional interpretation as bet-hedging requires additional evidence such as fitness measurements under different environmental conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Genes like csaA and carA may be repressed by strong cAMP signaling in the mound, and disaggregation relieves this repression, triggering re-induction during dedifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is explicitly presented as an alternative explanation with supporting citations about cAMP signaling (Van Haastert et al. 1992; Masaki et al. 2013; Cai et al. 2014; Corrigan and Chubb 2014). While plausible, this mechanism is not directly tested and remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C116",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The efficiency and robustness of Dictyostelium dedifferentiation may be related, arising from the overwhelming complexity of the stimulus (disaggregation plus complex nutritional input), making it unlikely cells can resist and unlikely single molecule perturbations can arrest the process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116, C121-C126 present a speculative model to explain the observed robustness. While the observations of efficiency and robustness are well-supported, the mechanistic explanation about stimulus complexity is not directly tested. This represents a reasonable hypothesis requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The lack of rigid temporal dependencies may explain why mutants show impairment in individual aspects while leaving most responses unperturbed, similar to dhkA mutants that show delayed growth but normal erasure, DNA replication, and clonal recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C131 connect temporal flexibility to mutant phenotypes, with dhkA cited as supporting example (Katoh et al. 2004). While the parallel is reasonable, the causal connection between temporal flexibility and mutant robustness is inferred rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "The re-expression of early developmental markers during dedifferentiation was anecdotal and did not withstand formal analysis, and the apparent lack of coherent developmental intermediates may underlie the speed and efficiency of dedifferentiation in Dictyostelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C133 summarize findings about aggregation gene re-induction and offer a speculative explanation for efficiency. While the lack of consistent re-induction is demonstrated (C49-C52), the causal connection to efficiency is speculative and would require comparative studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "Differences between Dictyostelium dedifferentiation and IPSC generation appear systemic, with Dictyostelium efficiency potentially arising from dedifferentiation being a physiological response while IPSC generation is not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C135 are speculative assessments about translational relevance. While the differences in efficiency are clear, the explanation based on physiological vs. artificial nature is not tested and represents informed speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "During slug migration, cells falling from the rear can re-enter the feeding lifecycle if bacteria are present, representing a dispersal strategy and bet-hedging against proliferative disadvantage in the dormant spore state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C136 is supported by citation (Kuzdzal-Fick et al. 2007), but C137's interpretation as bet-hedging strategy is speculative. While plausible from an evolutionary perspective, this functional interpretation is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "Meaningful parallels between Dictyostelium and mammalian dedifferentiation seem more likely in physiological contexts like tissue damage and metabolic stress responses rather than artificial IPSC generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C138 is a speculative assessment about where findings might be most relevant. This represents informed opinion about translational potential but is not directly tested.",
+    "result_type": "MINOR"
+  }
+]

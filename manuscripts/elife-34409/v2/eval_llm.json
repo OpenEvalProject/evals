@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C148",
+      "C151",
+      "C152",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The Dcp2 C-terminal domain functions as both a negative and positive regulator of mRNA decapping. Deletion of this domain (dcp2-N245) altered expression of over 1500 transcripts, with 616 up-regulated and 914 down-regulated. The C-terminal truncation causes deregulation rather than complete blockage of decapping, leading to both accelerated decapping of non-substrate mRNAs and deficient decapping of normal substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 demonstrate differential expression patterns between dcp2-N245 and catalytically inactive mutants, supported by RNA-Seq data (C44-C47) and northern blots (C63-C67). The dual regulatory role is evidenced by both up- and down-regulated transcripts (C52), with validation showing XRN1-dependent rescue of down-regulated transcripts (C63), confirming accelerated decapping. The interpretation that this represents deregulation rather than complete loss of function is well-supported by correlation analyses (C59-C62) and protein level controls (C57-C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C165",
+      "C166"
+    ],
+    "result": "Pat1, Lsm1, and Dhh1 target specific, partially overlapping subsets of yeast mRNAs rather than functioning as global decapping activators. Pat1 and Lsm1 target nearly identical transcript sets (940 and 955 up-regulated transcripts respectively, with 84% overlap), while Dhh1 targets a distinct set (1098 up-regulated) with only ~50% overlap with Pat1/Lsm1 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-Seq data (C68-C76) demonstrate specific targeting patterns with statistical rigor (Pearson correlation 0.97-0.99 for biological replicates per C45 equivalent). The near-perfect concordance between pat1\u0394 and lsm1\u0394 strains (C77, only 4 differentially expressed transcripts) strongly supports their functional unity. Protein level controls (C82-C85) rule out indirect effects from co-depletion. The partial overlap with Dhh1 targets (C73-C74) is well-documented. This directly challenges the prevailing model (C164) that these are global activators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C99",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Transcripts directly targeted by Pat1, Lsm1, and Dhh1 are bona fide decapping substrates that are generally translated inefficiently. These transcripts were classified into three up-regulated subgroups (Up-o-d: Dhh1-specific; Up-o-pl: Pat1/Lsm1-specific; Up-a-pld: all three factors) based on expression patterns, with 30/34 selected transcripts validated by northern blotting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification into subgroups (C103-C105) is supported by expression patterns across multiple mutant strains (C86-C87, C111-C112). Northern blot validation of 30/34 transcripts (C106-C109) provides strong orthogonal confirmation. The demonstration that these are decapping substrates is robust, shown by increased levels in dcp1\u0394, dcp2\u0394, and catalytically inactive mutants (C111), and by XRN1-dependent accumulation (C112). The link to translation efficiency is addressed separately. The codon protection index data (C101) further supports co-translational decay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Transcripts targeted by Pat1, Lsm1, and Dhh1 exhibit increased mRNA half-lives in the respective deletion strains, demonstrating direct effects on mRNA decay rates rather than indirect transcriptional effects. Representative transcripts from Up-o-d, Up-o-pl, and Up-a-pld subgroups showed 1.5-3 fold increases in half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mRNA decay rate measurements using rpb1-1 temperature-shift experiments (C118-C120) provide direct evidence that steady-state changes reflect altered decay rates. The data show specific half-life increases for transcripts from each subgroup in the appropriate deletion backgrounds (e.g., SDS23 and PYK2 half-lives increased from 8.0 and 12.6 min to 21.0 min in dhh1\u0394 cells). This rules out indirect transcriptional effects and supports the interpretation (C121-C122) that these are direct targets. The methodology is standard and appropriate for measuring mRNA decay rates in yeast.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C174"
+    ],
+    "result": "Transcripts directly targeted by Pat1, Lsm1, and Dhh1 (Up-o-d, Up-o-pl, Up-a-pld subgroups) are translated inefficiently, characterized by low codon optimality scores, high ribosome density, and low protein abundance. In contrast, indirectly controlled transcripts (Down-o-d, Down-a-pld) show efficient translation with opposite characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The translation efficiency analysis integrates three independent datasets: codon optimality scores (C124, C126, C128), ribosome profiling data (C124, C126, C128), and protein abundance from PaxDb (C124, C126, C128). The consistent patterns across all three metrics for both directly and indirectly targeted transcripts (C130-C131) provide strong support. The interpretation linking decapping activator function to translation (C174) is reasonable given these data, though the mechanistic connection remains correlative. The use of published external datasets is appropriate and properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C175"
+    ],
+    "result": "Average codon optimality score is not a reliable predictor of Dhh1 requirement for mRNA decay. While Dhh1-targeted transcripts have generally low codon optimality, the range is broad and many low-optimality transcripts are not Dhh1 targets, suggesting additional decay factors may be involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that Dhh1-targeted transcripts have a broad range of codon optimality scores (C133) challenges a recent model linking Dhh1 function specifically to codon optimality (C132, citing Radhakrishnan et al., 2016). The data show that codon optimality alone cannot predict Dhh1 targeting. The speculation about additional decay factors (C134, C175) is reasonable but remains speculative. This is a well-supported negative result that refines understanding of Dhh1 function, though it doesn't provide a complete alternative model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Pat1, Lsm1, and Dhh1 have distinct, non-overlapping roles from NMD factors in mRNA decapping regulation. Transcripts targeted by Pat1/Lsm1/Dhh1 show minimal overlap with NMD substrates, and hierarchical clustering reveals distinct expression profiles between pat1\u0394/lsm1\u0394/dhh1\u0394 and upf1\u0394/upf2\u0394/upf3\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The minimal overlap between Up-o-d, Up-o-pl, and Up-a-pld subgroups with NMD substrates (C135) is clearly demonstrated. Hierarchical clustering analysis (C136) provides unbiased confirmation of distinct profiles. The enrichment analysis of down-regulated subgroups (C138-C140) using Fisher's exact test provides statistical rigor, showing the Down-o-d subgroup is enriched for NMD substrates (p=7.3\u00d710\u207b\u00b9\u2075) while Down-o-pl is depleted (p=6.2\u00d710\u207b\u2076). This establishes that general decapping activators and NMD factors target largely distinct transcript populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C183"
+    ],
+    "result": "Deletion of DHH1 promotes degradation of a subset of NMD substrates through both NMD-dependent and NMD-independent mechanisms. Five representative NMD substrates showed decreased levels in dhh1\u0394 cells but increased 4-21 fold in dhh1\u0394 upf1\u0394 double mutants, though still accumulating to only 28-81% of upf1\u0394 single mutant levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The northern blot data (C141-C143) clearly demonstrate the paradoxical effect of DHH1 deletion on NMD substrates. The genetic epistasis experiment with dhh1\u0394 upf1\u0394 double mutants (C142-C143) is well-designed to separate NMD-dependent from NMD-independent effects. The interpretation that this reflects competition for limiting decapping enzyme (C146-C147, C183) is reasonable and supported by the observation that Dhh1 forms multiple complexes with the decapping enzyme (C183, with citations). This provides evidence for indirect regulatory interactions between different decapping activator pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C93",
+      "C94",
+      "C95",
+      "C100",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "Deletion of PAT1, LSM1, or DHH1 causes indirect down-regulation of hundreds of transcripts (Down-o-d and Down-a-pld subgroups) that are not direct decapping substrates. These transcripts show concordant down-regulation across all decapping-deficient strains and are characterized by efficient translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The concordant down-regulation pattern across multiple decapping-deficient strains (C93, C115) strongly supports indirect control. The Down-a-pld subgroup shows decreased levels in pat1\u0394, lsm1\u0394, dhh1\u0394, dcp1\u0394, dcp2\u0394, and catalytically inactive mutants (C114-C115), consistent with indirect effects. The translation efficiency characteristics (C126-C127, C182) distinguish these from directly targeted transcripts. However, the mechanistic explanation remains speculative (C184-C187), and the proposed 3' to 5' degradation pathway involvement (C117, C184) lacks direct experimental support beyond the slight increase in xrn1\u0394 cells (C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "RNA-Seq libraries from wild-type and mutant strains showed high technical quality with good read count distribution and high reproducibility between biological replicates (Pearson correlation 0.96-0.99). Catalytically inactive dcp2-E153Q-N245 and dcp2-E198Q-N245 strains showed excellent correlation (r=0.932) and similar numbers of differentially expressed transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quality control metrics (C44-C45) demonstrate robust RNA-Seq data. The high correlation between biological replicates and between the two catalytically inactive mutants (C59-C60) supports data reliability. The overlap with previously characterized decapping substrates and other decapping-deficient strains (C48-C49) provides validation. Protein level controls (C58) rule out expression differences as confounders. These are appropriate quality controls for RNA-Seq experiments and support the validity of downstream analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The dcp2-N245 truncation mutant exhibits a distinct expression profile from catalytically inactive mutants, with modest correlation to decapping-deficient strains (r=0.37-0.42). Northern blot validation of 11 representative down-regulated transcripts confirmed that their decreased accumulation in dcp2-N245 cells is rescued by XRN1 deletion but not by SKI2 or SKI7 deletion, demonstrating accelerated 5' to 3' decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis (C61-C62) clearly distinguishes dcp2-N245 from catalytically inactive mutants. The northern blot validation (C63-C65) provides strong orthogonal confirmation using appropriate genetic controls (xrn1\u0394, ski2\u0394, ski7\u0394). The complete rescue by XRN1 deletion (C63) and lack of effect from 3' to 5' pathway mutations (C64) definitively demonstrate that decreased accumulation results from accelerated decapping followed by 5' to 3' degradation. This provides direct experimental evidence for negative regulation through the C-terminal domain (C66-C67).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Deletions of PAT1, LSM1, or DHH1 do not cause substantial co-depletion of the other factors, with the exception that LSM1 deletion reduces Pat1 levels to 35% of wild-type. This confirms that observed expression patterns reflect specific functions rather than indirect effects of partner depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The western blot analysis using TAP-tagged strains (C82-C85) provides appropriate controls to rule out indirect effects from co-depletion. The observation that LSM1 deletion reduces Pat1 levels (C85) is consistent with previous literature (cited as Bonnerot et al., 2000) and actually strengthens the conclusion that Pat1 and Lsm1 function together, since the overlapping expression patterns persist despite reduced Pat1 levels. This is a well-executed control experiment that validates the interpretation of the RNA-Seq data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C97",
+      "C98"
+    ],
+    "result": "A subset of transcripts targeted by Pat1 and Lsm1 (Up-o-pl and Down-o-pl subgroups) can be degraded by both 5' to 3' and 3' to 5' decay pathways. This is evidenced by marginal XRN1 effects on Up-o-pl transcripts and partial rescue of Down-o-pl transcripts by SKI2 deletion in pat1\u0394 and lsm1\u0394 backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The marginal effect of XRN1 deletion on Up-o-pl transcripts (C87, C90) suggests alternative degradation pathways. The ski2\u0394 genetic experiment (C91-C92) provides direct evidence that some Pat1/Lsm1-targeted transcripts can be degraded by the 3' to 5' pathway when decapping is impaired. However, the data are limited to two transcripts (GTT2 and RPP1A), and the effect is partial rather than complete. The interpretation (C97-C98) is reasonable but somewhat speculative regarding the extent of 3' to 5' degradation when decapping is completely blocked.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Transcripts from directly targeted subgroups (Up-o-d, Up-o-pl, Up-a-pld, Down-o-pl) have median codon protection index values >1, indicating co-translational decay, while indirectly controlled transcripts (Down-o-d, Down-a-pld) have values <1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The codon protection index analysis (C101-C102) uses published 5'P-seq data (Pelechano et al., 2015) to assess co-translational decay. Values >1 indicate ribosome protection of decay intermediates, consistent with co-translational decay. The clear distinction between directly and indirectly targeted subgroups strengthens the classification scheme. However, this is a correlative analysis using external data, and the codon protection index is an indirect measure of co-translational decay. The interpretation is reasonable but would benefit from direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "The authors propose a revised model of decapping regulation where: (a) the main function of decapping activators is substrate specificity rather than global activation, (b) individual activators target specific transcript subsets without overlapping activities, (c) decapping enzyme activation is coupled to substrate recognition, and (d) prior translational repression is not required for decapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This represents a synthesis of the experimental findings into a revised conceptual model. While the data supporting substrate specificity (C195, supported by C5-C6) and distinct targeting (C195, supported by C7) are strong, the claims about activation being coupled to substrate recognition (C196) and translational repression not being required (C197) are more inferential. The evidence for co-translational decay (C198-C199) supports the model but doesn't definitively rule out translational repression as a regulatory step. This is a reasonable interpretation of the data but represents a conceptual framework rather than directly tested hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background and context claims establishing the known roles of decapping enzymes, decapping activators, and the knowledge gaps that motivated the study. These include the structure and function of Dcp1-Dcp2, the roles of various decapping activators, and previous characterization of the dcp2-N245 allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C43) represent established knowledge from the literature, properly cited throughout. They provide necessary context for interpreting the experimental results. The citations appear appropriate and the characterization of knowledge gaps (C3, C24, C31) accurately reflects the state of the field. The previous characterization of dcp2-N245 (C39-C40) is from the authors' own prior work and is appropriately cited. These background claims are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Discussion claims contextualizing the findings within existing models and literature. These include the structure of Dcp2, the focus of previous mechanistic studies on the N-terminal domain, and current models of decapping activator function involving translational repression and enzyme activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion claims (C149-C193) accurately represent the current state of the field and previous models, with appropriate citations. The characterization of the N-terminal domain focus in structural studies (C160) is well-documented by the extensive citations. The description of current models (C189-C193) fairly represents the prevailing views in the field, even though the authors challenge these models. These claims provide appropriate context for interpreting the significance of the new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The authors' previous work proposed that the decapping enzyme is subject to both negative and positive regulation, a model now supported by recent biochemical data. The vast majority of down-regulated transcripts in dcp2-N245 cells were not normal decapping substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model of dual regulation (C153) is from the authors' previous work (He and Jacobson, 2015a) and is supported by recent biochemical data (C154, citing Paquette et al., 2018). The observation that down-regulated transcripts in dcp2-N245 are not normal decapping substrates (C155) is supported by Figure 1\u2014figure supplement 3 showing minimal overlap with up-regulated transcripts in decapping-deficient strains. This provides important context for interpreting the negative regulatory function of the C-terminal domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The authors propose that Pat1 and Lsm1 function as a complex, that decapping is a multi-step process with Pat1/Lsm1/Dhh1 functioning at different steps, and speculate about specific roles (Dhh1 in deadenylation, Pat1/Lsm1 in enzyme recruitment and possibly 5' to 3' digestion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposal that Pat1 and Lsm1 function as a complex (C167) is well-supported by the data and cited literature. The multi-step model (C169-C170) is a reasonable inference from the different requirements for different transcripts, but lacks direct experimental support. The specific mechanistic proposals (C171-C173) are explicitly speculative and based on protein interaction data from the literature rather than direct functional evidence. These are reasonable hypotheses for future testing but remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Analysis of reporter mRNAs (MFA2 and PGK1) previously used to study decapping activator function reveals that MFA2 is regulated by Pat1/Lsm1 but not Dhh1, while PGK1 is not regulated by any of the three factors, challenging models based on these reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that these commonly used reporter mRNAs (C176-C177) show specific rather than general regulation patterns is important for interpreting previous literature. The conclusion that this challenges models based on these reporters (C178) is reasonable, as many previous studies used these reporters to infer general mechanisms. However, this is a relatively minor point that doesn't fundamentally alter the main conclusions of the study. The data are from the RNA-Seq datasets and are presumably reliable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "The regulatory activities of Pat1, Lsm1, and Dhh1 may play an important role in cellular responses to environmental stresses, based on the observation that these factors repress expression of stress-responsive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim (C123) is explicitly speculative, based on the observation that many targeted transcripts are from stress-responsive genes. While this is an interesting observation, no stress response experiments were performed to test this hypothesis. The claim is reasonable as a direction for future research but lacks direct experimental support. The observation that some stress-responsive transcripts couldn't be analyzed in decay rate experiments because their transcription couldn't be inhibited (mentioned in the text) actually provides some indirect support, but this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "Speculative mechanistic proposals for how indirectly controlled transcripts are down-regulated, including possible protection by unknown factors at 3' ends, sequestration of protective factors by stabilized transcripts, and potential for similar effects in other gene expression pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C184-C188) are explicitly speculative and represent hypotheses about mechanisms of indirect control. No direct experimental evidence is provided for these mechanisms. The speculation about 3' to 5' degradation (C184) is based on the observation that these transcripts are not typical decapping substrates, but alternative explanations are possible. The proposal about sequestration of protective factors (C185-C187) is creative but entirely speculative. The generalization to other pathways (C188) is reasonable but untested. These represent interesting hypotheses for future work but lack experimental support.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1399 @@
+{
+  "submission": {
+    "id": "7c322883-1163-4a61-94dc-327d2c579bc4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:36:27.532208Z",
+    "updated_at": "2025-12-02T18:36:27.532208Z"
+  },
+  "content": [
+    {
+      "id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "submission_id": "7c322883-1163-4a61-94dc-327d2c579bc4",
+      "content_type": "manuscript",
+      "content_text": "# Tracking cells in epithelial acini by light sheet microscopy reveals proximity effects in breast cancer initiation\n\n## Authors\n\n- Ashna Alladin<sup>1</sup>\n- Lucas Chaible<sup>1</sup>\n- Lucia Garcia del Valle<sup>1</sup>\n- Reither Sabine<sup>2</sup>\n- Monika Loeschinger<sup>3</sup>\n- Malte Wachsmuth<sup>3</sup>\n- Jean-Karim H\u00e9rich\u00e9<sup>1</sup> ([ORCID: 0000-0001-6867-9425](https://orcid.org/0000-0001-6867-9425))\n- Christian Tischer<sup>4</sup>\n- Martin Jechlinger<sup>1</sup> ([ORCID: 0000-0002-3710-4466](https://orcid.org/0000-0002-3710-4466)) \u2020\n\n### Affiliations\n\n1. Cell Biology and Biophysics Unit, EMBL Heidelberg Germany\n2. Advanced Light Microscopy Facility, EMBL Heidelberg Germany\n3. Luxendo Light-Sheet, Bruker Corporation Heidelberg Germany\n4. Centre for Bioimage Analysis, EMBL Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nCancer clone evolution takes place within tissue ecosystem habitats. But, how exactly tumors arise from a few malignant cells within an intact epithelium is a central, yet unanswered question. This is mainly due to the inaccessibility of this process to longitudinal imaging together with a lack of systems that model the progression of a fraction of transformed cells within a tissue. Here, we developed a new methodology based on primary mouse mammary epithelial acini, where oncogenes can be switched on in single cells within an otherwise normal epithelial cell layer. We combine this stochastic breast tumor induction model with inverted light-sheet imaging to study single-cell behavior for up to four days and analyze cell fates utilizing a newly developed image-data analysis workflow. The power of this integrated approach is illustrated by us finding that small local clusters of transformed cells form tumors while isolated transformed cells do not.\n\n## Introduction\n\nOrganoid cultures grown from cell-lines or primary cells have been successfully employed to study molecular mechanisms during different stages of tumorigenesis (Clevers, 2016; Havas et al., 2017; Simian and Bissell, 2017). However, they are derived from primary material that usually allows oncogenic activation in all cells of the tissue and therefore cannot reproduce the localized expansion at a defined part of the tissue that is seen in the patient situation. To study tumor initiation, models need to be established wherein only a few tumorigenic cells expand in the context of its immediate non-tumor microenvironment (Tabassum and Polyak, 2015) and the interplay of these populations can be visualized.\n\nLong-term imaging of primary organoids has been achieved via light-sheet microscopy (Drost et al., 2015; Serra et al., 2019; Verissimo et al., 2016) and these efforts have benefited from the lower phototoxicity provided by SPIM imaging. However, regarding fast dividing cells in tumor organoids, tracking single-cell dynamics necessitates high resolution imaging which in turn limits the time frame in which organoids can be imaged without phototoxic effects (Held et al., 2018). Conversely, imaging primary organoids for longer time periods requires an offset of temporal and cellular resolution that eventually cannot allow single-cell fate tracking (Dekkers et al., 2016).\n\nTwo models have been used to understand tumor progression and heterogeneity (Plaks et al., 2015); the (i) hierarchical model refers to tumor propagating cells as cancer stem cells (CSCs) (Kreso and Dick, 2014) and the (ii) stochastic model states that every cell within a tumor is equally likely to be the cell of origin and facilitate tumor initiation and progression (Vogelstein et al., 1988; Williams et al., 2007). These models for tumor propagation can be reconciled when considering that the population of oncogene driven cells have the capacity to interconvert between differentiated- and stem-like states (Chaffer and Weinberg, 2015; Gupta et al., 2011; Plaks et al., 2015), a flexibility that is supported by the microenvironment (McGovern et al., 2009; Quail et al., 2012). These concepts, however, have not been probed in the context of tumor initiation upon stochastic oncogene activation in an established cell-layer.\n\nHere we present a novel model of breast tumorigenesis where only single cells express oncogenes within healthy mammary acini and are able to establish localized outgrowth. We thereby overcome the above-mentioned limitations of studying tumorigenesis events in the face of tissue-wide transformation. Furthermore, we perform long-term imaging of these stochastic breast tumor acini for the first time at a temporal resolution that allows us to follow single-cell fates. We also integrate this approach with an image analysis pipeline capable of segmenting cells in their dynamic progression towards tumorigenesis, so they can be tracked individually over time.\n\n## Results\n\nFor modeling tumorigenesis in breast tissue, we use an inducible mouse model of breast cancer (TetO-MYC/TetO-Neu/MMTV-rtTA transgenic mice) (Fry et al., 2016; Moody et al., 2002; Podsypanina et al., 2008) that has been shown to recapitulate hallmarks of human breast disease (Havas et al., 2017; Jechlinger et al., 2009; Figure 1a). In this tractable transgenic mouse model, the activity of two potent oncogenes \u2013 MYC and Neu (the rodent homolog for the human ERBB2 gene used in this mouse model)\u2013 are under the control of a Tet-O promoter that can only be activated in the presence of both the rtTA (reverse tetracycline-controlled transactivator) protein and the doxycycline compound. This three-part inducible system allows for temporal control of oncogenic expression by regulating doxycycline in the medium or animal diet and spatial control by the MMTV promoter that confines expression of the rtTA protein to the cells of the mammary lineage (Bockamp et al., 2002). We modify this tissue wide tumorigenesis model (tri-transgenic (T) model; Figure 1a, upper panels) to generate a stochastic system by retaining only the oncogenic constructs, making them TetO-MYC/TetO-Neu mice (bi-transgenic (B) model; Figure 1a, lower panels). The rtTA inducer gene is then lentivirally delivered to single cells within luminal epithelial acini derived from the bi-transgenic (B) mouse glands, granting only this subset of cells the competence to express transforming oncogenes and thereby preventing tissue wide transformation. Hence, this novel (B) model should allow acini to present with two cell populations \u2013tumorigenic and non-tumorigenic\u2013 and could be used to study the dynamics of early tumorigenesis in an otherwise normal epithelium (Figure 1a, lower right panels).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic representation of the mouse models and the in vitro culture methods used.\u00a0Acini are grown from single cells harvested from the mammary glands of either bi-trangenic (B) or tri-trangenic (T) mice, transduced with lentiviral particles in solution and re-seeded into 3D cultures. Doxycycline is added to the medium to induce the expression of oncogenes in cells expressing rtTA. B mice have the MYC and Neu oncogene constructs in their genome. These oncogenes are activated in single cells infected with the Inducer-reporter (pLenti-rtTA-GFP) lentiviral particles in the presence of doxycycline, modeling stochastic breast tumorigenesis (right panel). T mice have the rtTA transducer construct along with the oncogenes and all cells in T acini can be induced to express oncogenes in 3D culture in the presence of doxycycline. T mice infected with Reporter (pLenti-NULL-GFP) lentiviral particles are used as infection controls (left panel). Both viral particles mark single cells in the acini with H2B-GFP. (b) Representative immunofluorescence staining images of fixed 3D gels with B acini transduced with Inducer-reporter virus or T acini transduced with Reporter virus before induction (top), 24 hr post induction and (middle) and 72 hr post induction (bottom) with doxycycline. GFP expressing transduced cells (green), MYC oncoprotein (magenta), DAPI nuclear stain (blue). Scale bar, 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Fold changes in the mRNA expression of transgenes, MYC and Neu, in transduced mammary epithelial cells of B mice (n\u00a0=\u00a02) infected with Inducer-reporter virus or T mice (n\u00a0=\u00a02) with Reporter virus.\u00a0The doxycycline dosage of 800 ng/ml (T800) is well established in the T cells and was used as control to normalize the gene expression, and to determine the dose for transduced B cells (600 ng/ml). Data represented as mean\u00a0\u00b1\u00a0SEM; *p<0.05.\n\nPrimary mammary epithelial cells derived from transgenic mice were seeded in 3D matrigel as single cells to be grown for 48 hr to form small acini consisting of around 15 cells that arrange around a small lumen. A small number of single cells in these acini were then transduced with lentiviral particles (Figure 1a, middle panel). In the tissue-wide tumorigenesis model(T), acini were transduced with the reporter virus (pLv-pGK-H2B-GFP) that marks a subset of cells with H2B-GFP, while tissue wide rtTA expression is driven in all cells (Figure 1a, left panels). To achieve stochastic tumorigenesis, bi-transgenic (B) acini were transduced with the inducer-reporter virus (pLv-pGK-rtTA-p2A-H2B-GFP) that expresses rtTA and reporter H2B-GFP in only these single cells within the normal epithelium (Figure 1a, right panels). Then, doxycycline was supplemented in the medium to induce tumorigenic growth in rtTA expressing cells. Immunofluorescent staining of 3D matrigel cultures, for both sets of doxycycline-induced transduced acini, was used to validate transgene specific protein expression of the MYC oncogene (human) in only the transduced cells of (B) acini as opposed to all cells of (T) acini (Figure 1b, anti-human MYC specific antibody). We FACS sorted H2B-GFP marked cells from both systems respectively for qPCR analysis of transgene specific MYC and Neu mRNA expression. This way we normalized doxycycline dosage in both systems to obtain the same mRNA expression levels of oncogenes using 800 ng/ml doxycycline in the tissue wide (T) system and 600 ng/ml doxycycline in the stochastic (B) system (Figure 1\u2014figure supplement 1).\n\nTo verify oncogene induction patterns and to understand the impact on epithelial morphology in the acini, 3D matrigel cultures of both doxycycline-induced (T) and (B) transduced acini were analyzed by immunofluorescent staining for polarity marker distribution. Lentivirus-transduced structures from the tissue wide induction system (T) presented with filled lumens that contained both infected (GFP positive) as well as non-infected oncogene-expressing cells. These structures exhibited overall disrupted epithelial polarity and some random microlumen, as reported previously (Jechlinger et al., 2009; Figure 2a). For the stochastic tumor induction system (B), we observed 2 phenotypes after 96 hr of oncogene expression; some of the (B) acini showed exclusively H2B-GFP marked cells in hyperplastic areas that also displayed double cell rim morphology and disturbed epithelial polarity (Figures 2a and 96 hours ON DOX, left panels), while the other (B) acini did not show expansion of the few H2B-GFP positive cells (Figures 2a and 96 hours ON DOX, right panels). Intrigued by these 2 distinct phenotypes, we analyzed transduced (H2B-GFP expression) (B) acini for their oncogenic MYC expression (Figure 2b). We verified that multi layered regions in acini contained mainly H2B-GFP positive cells that expectedly stained for MYC (Figure 2b, middle panels). For normal appearing regions, this analysis showed that the inability of single H2B-GFP positive, transduced cells to expand over 96 hr was not due to the lack of MYC expression (Figure 2b, lower panels).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig2-v1.jpg)\n\n**Figure 2.:** (a) Representative immunofluorescence staining images of fixed 3D gels with T acini transduced with Reporter virus (left panels) and B acini transduced with Inducer-reporter virus (right panels), before induction and 96 hr post induction with doxycycline.\u00a0Polarity markers include alpha-6-Integrin (magenta) and ZO-1 (yellow). Transduced cells are marked with GFP (green) and nucleus is counterstained with DAPI (blue). Scale bar, 20 \u00b5m.(b) Representative immunofluorescence staining images of fixed 3D gels with B acini transduced with Inducer-reporter virus before induction (top panels) and 96 hr post induction (middle and bottom panels) with doxycycline. GFP expressing transduced cells (green), MYC oncoprotein (magenta), DAPI nuclear stain (blue). Scale bar, 50 \u00b5m.\n\nTo follow up these observations in more detail over time, we bred the nuclear reporter H2B-mCherry into the T and B mice to mark all the cells in the acinus for inverted light-sheet microscopy (Luxendo InVi SPIM, Figure 3\u2014figure supplement 1). The InVI SPIM was adjusted for non-phototoxic, long-term imaging (up to 4 days, every 10 min with 1 \u00b5m z-spacing). The T/H2B-mCherry acini transduced with reporter virus proliferated swiftly upon doxycycline addition showing expansion of both the marked and unmarked cells (Figure 3a); a sturdy tumor phenotype developed, manifested by multi-cell-layered rims and pronounced proliferation-associated-apoptosis in all acini (Figure 3\u2014Video 1). In contrast, B/H2B-mCherry acini transduced with inducer-reporter virus, displayed phenotypic variation upon induction of oncogenes in the transduced cells. Some acini showed fast clonal expansion of oncogene-expressing cells that form multilayer clusters in the acinus rim. This proliferative phenotype seems to stem from several transduced cells in vicinity to each other at the start of time-lapse imaging (Figure 3b, upper panel; Figure 3\u2014Video 2). Again, more sparsely infected acini, did not sustain proliferation of the oncogene-expressing cells (Figure 3b, lower panel; Figure 3\u2014Video 3). Taken together, the phenotypes for (B) and (T) acini are consistent with the respective behavior observed with the 96 hr end point immunofluorescent analysis (Figure 2a and b), verifying these prior observations and excluding phototoxic effects due to longitudinal SPIM imaging.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig3-v1.jpg)\n\n**Figure 3.:** (a) or B acini transduced with Inducer-reporter virus (b).\u00a0All cells in the acini express H2B-mCherry (magenta) and only cells transduced with lentiviral particles express H2B-GFP (green). Imaging was started 24 hr after oncogenic induction with doxycycline. In (b) the upper panel shows the proliferative phenotype seen with stochastic transformation, whereas the lower panel shows the non-proliferative phenotype observed in some stochastically transformed acini. (Imaging conditions: H2B-mCherry 594 nm Ex, 610 LP Em; H2B-GFP 488 nm Ex and 497\u2013554 nm Em). Scale bar, 20 \u00b5m. (c) Schematic representation of the big-image data analysis pipeline developed to analyze the light sheet microscopy images. Images are acquired in two channels (H2B-mCherry in magenta and H2B-GFP in green) at 10 min intervals for 3\u20134 days. Big Data Processor Fiji plugin is used to pre-process the raw images and CATS Fiji plugin is used for generation of pixel probability maps (Figure 3\u2014figure supplement 2). Image pixels of the H2B-GFP images are classified into background (black), nucleus center (green), nucleus boundary (blue) classes by manual training. Processed raw images along with the probability maps from the nucleus center channel (green) are exported to Imaris for 3D visualization, nuclear segmentation and single-cell tracking.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The FEP membrane is glued onto the sample holder (a) with the help of a mold and biocompatible glue (b).\u00a0Gel slivers are transferred to the FEP sheet trough in the sample holder (c) and overlaetO-Neu (B). Reporter H2B-mCherry was crossed into the B and T lines using a R26-H2B-mCherry line (Abe and Fujimori, 2013) (RIKEN, CDB0239K). All ten mammary glands were harvested (from virgin female mice between 8\u00a0and\u00a010 weeks old), digested and singularized for establishing acinar cultures. All mice used in this study were housed according to the guidelines of the Federation of European Laboratory Animal Science Associations (FELASA). .\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) The Big Data Processor Fiji plugin was employed for pre-processing light-sheet microscopy images.\u00a0Two-channel raw images were lazily loaded in 2D slice mode for visual inspection. Channel shift correction was performed to align the two channels. Then, the whole dataset was cropped in x,y,z to remove black pixels and empty planes. The cropped dataset was then saved in an 8-bit Imaris format with 3 \u00d7 3 binning applied in x and y. (b) The CATS Fiji plug-in was used to generate pixel probability maps for H2B-GFP images. Left panel shows the manual training done by drawing labels on the dataset to classify pixels into 3 classes: background (grey), nucleus boundary (red) and nucleus center (green). The right panel shows the pixel probability output for all three classes overlaid on the intensity data. Only the pixel probabilities from the nucleus center class were exported from CATS and linked to the Imaris dataset for further segmentation and tracking on Imaris.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Segmentation accuracy was assessed, counting: True Positives (correctly segmented cells, highlighted in green), False Merges (two cells merged as one, highlighted in orange), and False Splits (one cell split in two, highlighted in purple). Unidentified cells are indicated as False Negatives and Ground Truth indicates the actual number of cells at each timepoint. The average True Positive to Ground Truth ratio for the four timepoints is 0.92. Scale bar, 20 \u03bcm.\n\nTo analyze the dual-color light-sheet movies (H2B-mCherry\u2014all cells in the acinus , H2B-GFP\u2014transduced cells within the acinus) on a single-cell level, we developed a big image data compatible image analysis pipeline that allows efficient visualization of longitudinal big image data, nuclear segmentation and single-cell tracking in 3D (Figure 3c, Figure 3\u2014figure supplement 3 and Figure 4\u2014figure supplement 2). The Big Data Tools plugin (Big Data Processor (Tischer, Norlin, and Pepperkok)) for Fiji (Schindelin et al., 2012) was used to visualize the 2D image stacks recorded over time. It uses lazy loading to stream the image files, which can be up to a few terabytes in size per acinus over 3\u20134 days of imaging. It also allows for easy cropping, binning, chromatic shift correction between channels and file format conversion to Imaris compatible formats. Once the raw data have been pre-processed, the CATS plug-in from Fiji (Tischer and Pepperkok) was used for segmenting the cell nuclei in the green channel images. The CATS plug-in uses machine learning algorithms to predict the probabilities of all pixels in the image and classify them into pre-defined classes. Three classes \u2014 background, nucleus, boundary \u2014 were trained manually on the CATS tool and the segmented images were exported to the commercially available Imaris software (Bitplane AG, 2020, Software available at http://bitplane.com) for 3D rendering and tracking. The nucleus class channel from the CATS tool was used for surface rendering and the surfaces in all time points were tracked over the course of the movie. Cell tracking allowed us to follow the clonal evolution for each transduced cell in the acinus over 3 days. Single transduced cells within one acinus show a difference in proliferation and cell fate as indicated in representative tracks (Figure 4a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig4-v1.jpg)\n\n**Figure 4.:** (a) Single-cell tracking results for every cell in a representative B acinus transduced with the Inducer-reporter virus. Top panel shows the acinus at the beginning of the time-lapse (24 hr post induction) with each transduced cell surface rendered with Imaris. The middle panel shows the lineage trees of each individual cell over the time-lapse recording. Lineage trees of single cells are grouped into proliferative (highlighted in red, orange) and non-proliferative (highlighted in blue) cell clusters. The bottom panel shows the acinus at the end of the time-lapse (~76 hr post induction with doxycycline). Color coding of each cell maintained in all panels. Scale bar, 15 \u00b5m. (b) Schematic representation of the 9 features of stochastically transformed cells extracted at the beginning of time-lapse imaging. These features were assessed for their impact on tumor cell proliferation within B acini transduced with the Inducer-reporter virus using logistic regression. Lower right panel: Coefficients (represented as odds ratios) of the three features included in the best logistic regression model, colored horizontal bars represent the 95% confidence interval of the estimate. ** indicates p-value (of having no effect)<0.01, * indicates p-value<0.05. The vertical grey line indicates the position of no effect. (c) Representative B mammary acini stochastically transduced with the Inducer-reporter virus and induced with doxycycline. Left panels show acini 24 hr post induction. Color highlights indicate clusters of transduced cells identified from hierarchical clustering (shown in middle panels) with proliferative clusters highlighted in orange and non-proliferative clusters highlighted in blue. Right panels show the same acini\u00a0~\u00a072\u201376 hr post induction. Scale bar, 20 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Comparison of acinus level features including numbers of cells (all, transduced and normal cells), cell proliferation rate (transduced and normal cells), acinus volume and acinus cell density for B acini grouped by the presence (blue) of at least one proliferative cluster or non-proliferative clusters (orange). (b) Mixed model regression analysis to identify features linked to tumorigenic outcome (using an Odds Ratio), including the three most important fixed effect features (Feature 5, 4 and 9) with random effect for each acinus and interaction terms for the Feature 1 (comparable to acinus size).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Single-cell tracking results are presented for every cell in representative B acini transduced with the Induced-reporter virus starting at 24 hr post doxycycline induction. (a) Acinus with differential outcome for 2 cell clusters \u2013 one with a single transduced cell (red) and the other with 3 transduced cells (blue). The cluster containing 3 cells shows heightened cell proliferation and establishment of a multi-layered neoplastic region, while the single cell fails to substantially expand. This demonstrates differential outgrowth of clusters within the same acinus, similar to the example shown in Figure 3a. (b) Acinus with a non-proliferative phenotype is similar in size to (a) and has 4 single cell clusters. None of these clusters show heightened proliferation of transduced cells, but either display normal cell division rates over 64 hr (turquoise), no proliferation at all (red, purple) or inability to survive following a division (grey). (a,b) Images show selected timepoints (0, 16, 32, 48 and 64 hr) of the time-lapse recording. Each transduced cell surface is rendered with Imaris and color coded according to the lineage. Lineage trees of single cells are grouped into proliferative and non-proliferative cell clusters. Color coding is maintained in all panels. Scale bar, 15 \u03bcm.\n\nTo better understand the parameters that positively affect a transduced cell in the stochastic tumorigenesis model to start proliferating and establishing a tumor within a normal epithelium, we extracted the center of mass coordinates of all cells in the acinus at the start of the imaging and represented them as dots in a 3D space: depicted as magenta for normal cells and green for transduced cells in Figure 4b (upper right panel). Equipped with the tumor formation success of each stochastically transduced acinus, we hypothesized that tumors originate from groups of independently transduced oncogene-expressing cells in closer vicinity within the acinus. To explore this in detail, we defined clusters of cells in the stochastic model as a group of oncogene-expressing cells that are closer to each other than to other oncogene-expressing cells of the same acinus. Notably, these clusters contain both oncogene-expressing cells as well as normal cells of the acinus. The cluster volume was described as the sphere located at the center of mass of a cluster with a diameter equal to the distance between the two farthest oncogene-expressing cells of the cluster. Next, we extracted 9 features that represent reasonable factors that could influence tumor establishment in the epithelium such as size of the acinus (represented by number of cells in the acinus), density of cells in the acinus, infection efficiency (represented by number of infected cells in the acinus), number of cells in a defined cluster volume, number of independently transduced cells in a cluster volume, distances between all cells in a cluster volume, distances between transduced cells in a cluster volume, fraction of transduced cells in the cluster volume and number of cell-cell contacts between transduced cells in a cluster volume (Figure 4b, left panel).\n\nWe analyzed 20 acini and all the transduced cells in these acini (n\u00a0=\u00a0150) at the start of the imaging to ascertain the effect of the immediate non-transformed cell microenvironment on tumor cell proliferation. Since clusters of oncogene-expressing cells could be tracked over time, each cluster was associated with either a tumor outcome, or not. To identify which features were linked to this outcome, we chose a model selection approach, based on information theory. We fitted a logistic regression model for all possible linear combinations of features and selected the best model based on the Akaike information criterion (with correction for small sample sizes) (Calcagno and Mazancourt, 2010). In this model only one feature, the \u2018number of transduced cells in the cluster\u2019, can predict whether a cluster can form a tumor. Each additional transduced cell in a cluster increases the odds of this cluster forming a tumor by 9 (Figure 4b, lower right panel). Since other models within a few information criterion units of the best one can be considered equally good at predicting tumor formation, we also looked at features included in models within 3 information criterion units from the best one. Relative importance of features can be estimated by the sum of the information criterion values of the models in which each feature appears (Buckland et al., 1997). Computing relative importance across the selected models also revealed \u2018number of transduced cells in the cluster\u2019 as the most important feature, followed by \u2018number of cells in a cluster\u2019 and \u2018number of contacts between transduced cells in a cluster\u2019. However, the only feature with significant contribution to tumor formation is \u2018number of transduced cells in the cluster\u2019. It is important to note that this result does not rule out contribution from other factors which more targeted experiments may be able to reveal.\n\nWe also analyzed the effect of whole acinar features at the beginning and end of the imaging period to try and detect acinus-specific advantages, like acinus size, cell density and cell proliferative rate. Acini with transduced cell clusters that displayed a tumor outcome were compared to acini where the cell clusters did not result in tumor outcomes (Figure 4\u2014figure supplement 1a). Acini with tumors only differed significantly from those without tumor on the number and proliferation rate of transduced cells in line with the observation that clusters of transduced cells are the primary indicators of tumor outcome. To account for this and possibly other acinus-specific effects, we also evaluated a logistic regression model including the three most important features identified above plus a random effect for acinus of origin and interaction terms for the starting number of normal cells in the acinus. In this model again, the number of oncogene-expressing cells in the cluster appeared as the main contributing factor to tumorigenesis with an odds ratio of 6.7 (Figure 4\u2014figure supplement 1b).\n\nThat tumors are mainly initiated by clusters of transduced cells is further illustrated by representative acini shown in Figure 4c; proliferating cells that establish tumor foci at the end of the long-term imaging cluster together at the start of the time lapse imaging and the non-proliferative cells are more sparsely located within the acinus. In line, we found examples of similar sized acini bearing the same number of transduced cells that showed differential cluster expansion depending on the \u2018numbers of transduced cells within a cluster\u2019 (Figure 4\u2014figure supplement 2; comparison a to b). Consequently, and again depending on the number of cells within the specific cluster, we observed clusters behaving differently within the same organoid; the organoids shown in Figure 4a, Figure 4c (top and middle panels) and Figure 4\u2014figure supplement 2a, display clusters of single cells that do not expand over time, whereas clusters containing several cells show massive expansion (beyond normal expected cells division rates due to growth of the acinus).\n\n## Discussion\n\nOur results indicate that a proximity-controlled interaction or signaling network between different transformed cells might guide tumor outgrowth in a normal epithelium (Greaves and Maley, 2012; Reid et al., 2010). This might be due to the repressive effect that an intact polarized tissue layer exerts on single early stage cancerous cells (Lee and Vasioukhin, 2008). According to our modeling attempts the simple parameter of \u2018number of transduced cells within a cluster\u2019 is enough to impinge on overall epithelial integrity and most likely already accounts for sub-features like \u2018distances between transduced cells in a cluster volume\u2019 or \u2018number of cell-cell contacts between transduced cells in a cluster volume\u2019, which did not pan out as predictive factors on their own. These observations, however, do not exclude the importance of such traits, which should be explored in more detail for the different situations we report (proliferative versus non proliferative clusters). In addition, the increased probability for tumor outgrowth upon proximity effects of closely located transformed cells, might also be rooted in paracrine effects (e.g. via microRNAs [Kosaka et al., 2012] in the cluster, or hydrogen ion dynamics/pH [Reshkin et al., 2014]). The questions outlined above can now be assessed employing the presented 3D system and longitudinal imaging pipeline together with appropriate fluorescent-tagged reporter proteins.\n\nStudies on loss of important polarity proteins have highlighted their function as non-canonical tumor suppressors in breast tumorigenesis (McCaffrey et al., 2012; Partanen et al., 2012); however, other reports (Macara and McCaffrey, 2013; Xue et al., 2013) cannot confirm these observations which were all obtained from tissue wide transformed model systems, leaving conclusions open for alternative studies. Similarly, it will interesting to trace the effect of prominent tumor factors in breast cancer, such as SCRIBL/MYC (Zhan et al., 2008) or the Hippo pathway (Calses et al., 2019) on overall tissue integrity and promotion of tumor growth in a none tissue wide expression setting. Clearly, to better interrogate the effect of oncogenic drivers on epithelial polarity in more detail, to understand deficiencies in cell-cell interactions towards tumorigenesis and to settle conflicting reports as mentioned above, there is a need for a more detailed analysis, employing a model system that does not show modification of all cells in the tissue.\n\nThe interaction of tumor cells with the immediate microenvironment has been subject of extensive studies with regards to immune cells (Binnewies et al., 2018) and other tumor associated cell types (Tabassum and Polyak, 2015); however, the interaction with the normal neighboring cells has not been explored in real time using an organotypic mammalian model system. Rather, questions of cell competition in heterogenous tissues have mainly been addressed in either 2D culture systems or in the\u00a0Drosophila\u00a0wing (Tamori and Deng, 2011). Alternatively, organ-specific mammalian cell types that self-organize in a manner similar to in vivo can now be studied in specialized 3D culture conditions in vitro (Lancaster and Knoblich, 2014). Furthermore, these cultures can be used to model disease and serve as an alternative system for drug testing that better recapitulate effects as compared to conventional 2D cell culture (Clevers, 2016; Simian and Bissell, 2017).\n\nOur adaptation of such culture systems, to mark and at the same time enable single cells to express regulatable oncogenes, gave rise to the first stochastic breast tumor model using mammary luminal epithelial acini. Together with a newly established imaging and data processing pipeline, we have developed an integrated approach that allows us to follow cell fates and to interrogate cell-cell interactions of a tumor cell with the normal epithelium. We report that cells within a polarized, differentiated epithelial cell layer are able to establish tumorigenic outgrowth upon stochastic activation of strong oncogenic drivers, supporting the concept of interconversion between differentiated- and stem-like states (Chaffer and Weinberg, 2015; Gupta et al., 2011; Plaks et al., 2015) for tumor initiating cells. However, not all cells expressing the very powerful combination of MYC and Neu oncogenes can expand, demonstrating an inhibitory effect that needs to stem from the normal epithelial microenvironment in the presented system. The ability to distinguish marked tumor cells from the normal epithelium will now allow us to perform single-cell RNA sequencing analysis on select sorted cells. This will help delineate the signaling networks within the immediate tumor microenvironment and further clarify the molecular basis of these distinct processes.\n\nThe amenability of 3D multicellular systems to interference with small molecule inhibitors, viral shRNA vectors and genomic editing has the potential to further our understanding of the mechanisms important during tumor initiation. In the future, this will also permit drug screens on the heterogeneous populations of normal and malignant cells, as presented in the described stochastic breast tumor model. The ability to follow tumor regression and establishment of minimal residual disease within a tissue like acinus structure will help distinguish between overall cytotoxic drugs and tumor cell specific inhibitory drugs.\n\nTaken together, we strongly believe that our integration of a true stochastic tumor model with the ability to image single-cell fates will successfully bridge the gap between genetically modified model systems and the clinical situation, helping gain novel insights on breast cancer.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (M. musculus, FVB/NJ strain)</td>\n      <td>TetO-MYC/TetO-Neu/MMTV-rtTA</td>\n      <td>Moody et al., 2002 Havas et al., 2017</td>\n      <td>Tri-transgenic (T) strain</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, FVB/NJ strain)</td>\n      <td>TetO-MYC/TetO-Neu</td>\n      <td>Moody et al., 2002 Havas et al., 2017</td>\n      <td>Bi-transgenic (B) strain</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus, FVB/NJ strain)</td>\n      <td>R26-H2B-mCherry</td>\n      <td>Abe and Fujimori, 2013</td>\n      <td>RIKEN, CDB0239K</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pWPXL plasmid</td>\n      <td>Didier Trono; Addgene</td>\n      <td>RRID:Addgene_12257</td>\n      <td>2nd generation lentiviral transfer plasmid</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pLVPT-GDNF-rtTR-KRAB-2SM2</td>\n      <td>Patrick Aebischer and Didier Trono; Addgene</td>\n      <td>RRID:Addgene_11647</td>\n      <td>Template for pGK promoter</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCMV-VSV-G</td>\n      <td>Bob Weinberg; Addgene</td>\n      <td>RRID:Addgene_8454</td>\n      <td>Envelope protein for producing lentiviral and MuLV retroviral particles</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>psPAX2</td>\n      <td>Didier Trono; Addgene</td>\n      <td>RRID:Addgene_12260</td>\n      <td>2nd generation lentiviral packaging plasmid</td>\n    </tr>\n    <tr>\n      <td>Tranfectedconstruct (M. musculus)</td>\n      <td>pLv-pGK-H2B-GFP</td>\n      <td>This paper</td>\n      <td>Reporter Virus</td>\n      <td>Drives expression of Reporter-GFP</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (M. musculus)</td>\n      <td>pLv-pGK-rtTA-p2A-H2B-GFP</td>\n      <td>This paper</td>\n      <td>Inducer-reporter Virus</td>\n      <td>Drives expression of rtTA and Reporter-GFP</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-c-MYC (D84C12) (Rabbit monoclonal)</td>\n      <td>Cell signalling Technologies</td>\n      <td>Cat. # 5605; RRID:AB_1903938</td>\n      <td>IF dilution (1:900)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-alpha6-integrin (clone NKI-GoH3) (mouse monoclonal)</td>\n      <td>Millipore</td>\n      <td>Cat. # MAB1378; RRID:AB_2128317</td>\n      <td>IF dilution (1:80)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-ZO1 (61\u20137300) (rabbit polyclonal)</td>\n      <td>Life Technologies</td>\n      <td>Cat. # 61\u20137300; RRID:AB_2533938</td>\n      <td>IF dilution (1:500)</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Neu Fw</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CGTTTTGTGGTCATCCAGAACG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Neu Rv</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CTTCAGCGTCTACCAGGTCACC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MYC Fw</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GCGACTCTGAGGAGGAACAAGA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>MYC Rv</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CCAGCAGAAGGTGATCCAGACT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>mCherry Fw</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GAGGCTGAAGCTGAAGGAC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>mCherry Rv</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>GATGGTGTAGTCCTCGTTGTG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PUM11 Fw</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>AATGTGTGGCCGGATCTTGT</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>PUM11 Rv</td>\n      <td>This paper</td>\n      <td>PCR primers</td>\n      <td>CCCACAGTGCCTTATACACCA</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNA PureLink Mini Kit</td>\n      <td>Thermo Fisher</td>\n      <td>Cat. # 12183018A</td>\n      <td>RNA Extraction Kit</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SuperScript VILO cDNA Synthesis Kit</td>\n      <td>Thermo Fisher</td>\n      <td>Cat. # 11754050</td>\n      <td>cDNA Synthesis Kit</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Big Data Processor (plugin)</td>\n      <td>Fiji;\u00a0Tischer et al., 2019a</td>\n      <td>RRID:SCR_018484</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CATS (plugin)</td>\n      <td>Fiji;\u00a0Tischer and Pepperkok, 2019b</td>\n      <td>RRID:SCR_018486</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Imaris</td>\n      <td>Imaris x64</td>\n      <td>Bitplane; RRID:SCR_007370</td>\n      <td>Software available at: http://bitplane.com</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI stain</td>\n      <td>Thermo Fisher</td>\n      <td>Cat# 62248; RRID:AB_2307445</td>\n      <td>(1 mg/mL), (1:1000 dilution)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nThe mouse strains TetO-MYC/MMTV rtTA (D'Cruz et al., 2001) and TetO-Neu/MMTV rtTA (Moody et al., 2002), that have been previously described, were bred in order to establish the tri-transgenic strain TetO-MYC/TetO-Neu/MMTV rtTA (T) or bi-transgenic strain TetO-MYC/TetO-Neu (B). Reporter H2B-mCherry was crossed into the B and T lines using a R26-H2B-mCherry line (Abe and Fujimori, 2013) (RIKEN, CDB0239K). All ten mammary glands were harvested (from virgin female mice between 8\u201310 weeks old), digested and singularized for establishing acinar cultures. All mice used in this study were housed according to the guidelines of the Federation of European Laboratory Animal Science Associations (FELASA).\n\nRational for the use of these oncogenes: ERBB2 is overexpressed in\u00a0~20% of breast cancers (Arteaga et al., 2012), MYC in 15\u201350% of human breast cancer (Blancato et al., 2004). The combination of MYC and ERBB2 is found in highly aggressive human breast cancer\u00a0(Al-Kuraya et al., 2004):and - in fact- Neu (the rodent homolog for the human ERBB2 gene used in this mouse model) and MYC strongly accelerate tumor onset In the combined transgenic animals (average 45 days) as compared to single transgenic animals (MYC 155 days, Neu 99 days), In all cases tumors regress rapidly to non-palpable state following oncogene silencing.\n\n### Lentivirus cloning and production\n\nThe lentivirus design is based on pWPXL backbone, which was a gift from Didier Trono (Addgene #12257). The coding region from the original plasmid was excised using ClaI and NdeI in order to insert a new multiple cloning site (MCS). The pGK promoter was PCR amplified from pLVPT-GDNF-rtTR-KRAB-2SM2, which was a gift from Patrick Aebischer and Didier Trono (Addgene #11647) and cloned using XhoI and EcoRI restriction sites. For the plasmid pLenti-rtTA-GFP the synthetic region rtTA-p2A-H2B-GFP was cloned downstream of the pGK promoter using EcoRI and NheI sites. The plasmid pLenti-Null-GFP is derived from the pLenti-rtTA-GFP by removing the rtTA sequence, using the restriction sites EcoRI and BamHI, and retaining H2B-GFP in the coding region. For production of lentivirus particles, we seeded 1.6 \u00d7 107 HEK-293T cells (Lenti-X - Clontech Cat. # 632180) in 500 cm2 square dishes (Corning Cat. # 431110). After 24 hr, the cells were supplemented with medium containing 25 \u00b5M of chloroquine diphosphate (Sigma-Aldrich Cat. # C6628). After a 5 hr incubation, using 360 \u00b5g of polyethyleneimine (4 \u00b5g for each \u00b5g of plasmid), we transfect the cells with a mixture of endotoxin free plasmids: 20 \u00b5g pCMV-VSV-G (Addgene #8454); 30 \u00b5g psPAX2 (Addgene #12260); 40 \u00b5g transfer plasmids pLenti-rtTA-GFP or pLenti-Null-GFP. We harvested the medium after 48 hr, 72 hr and 96 hr after transfection. Concentration of the lentivirus from the collected medium was performed using an ultracentrifuge (Beckman Sw32 rotor) at 25,000 rpm for 2 hr at 4\u00b0C. The lentivirus pellet was resuspended in 1000 \u00b5l of HBBS buffer, aliquoted and stored at \u221280\u00b0C. The lentivirus titer was measured using FACS analysis as described by Kutner and colleagues (Kutner et al., 2009).\n\n### 3D acinus cultures\n\nMammary glands harvested from mice (see above), were digested in order to prepare a single-cell solution. For this, the tissue was divided in four loosely capped 50 ml falcon, each supplemented with 5 ml serum-free media (DMEM/F12 supplemented with 25 mM HEPES and 1% Pen Strep(100 U/ml Penicillin; 100 \u00b5g/ml Streptomycin; ThermoFisher Cat. # 15140122)) and 750 U of Collagenase Type 3 (Worthington Biochemical Corp Cat. # LS004183), 20 \u00b5g of Liberase (Roche Cat. # 5401020001) and incubated overnight at 37\u00b0C and 5%CO2. The glands were then mechanically disrupted using a 5 ml pipette, and washed in PBS before being pelleted at 1000 rpm for 5 min. The cell pellet was resuspended in 5 ml of 0.25% Trypsin-EDTA and incubated for 45 min at 37\u00b0C and 5%CO2. The enzymatic reaction was then neutralized using 40 ml of serum supplemented medium (DMEM/F12 with 25 mM HEPES, 1% Pen Strep and 10% FBS Tetracycline Free certified (Biowest Cat. # S181T). The cells were pelleted again, resuspended in Mammary Epithelial Cell Basal Medium (PromoCell Cat. # C-21210) and seeded in collagen coated plates (Corning Cat. # 354400) overnight at 37\u00b0C and 5%CO2. This allows for epithelial cells to adhere to the surface of the plates while the other cell types float on top in the medium and can be easily removed by vacuum suction. The epithelial cells were detached from the collagen coated plates by incubating them with 0.25% Trypsin-EDTA for 5\u20137 min at 37\u00b0C and 5%CO2, following inactivation with serum supplemented media. The single-cell solution was pelleted, resuspended in MEBM and counted. We mixed 50,000 cells with 90 \u00b5l of Matrigel Matrix basement Membrane growth factor reduced phenol red free (Corning Cat. # 356231), and seeded this mixture into a 12 well plate (Corning Cat. # 3336) and incubated it for 30\u201340 min until the matrigel solidified. The gels were supplemented with 1.5 ml MEBM and allowed to grow at 37\u00b0C and 5%CO2.\n\nFor transduction, after 3 days of growth, the gels were mechanically disrupted and placed in a 15 ml falcon. Two disrupted gels were placed in one 15 ml falcon with 2 ml of MEBM supplemented with 25U of Collagenase type I and 5 \u00b5g of Liberase. Following incubation in this solution for 2 hr at 37\u00b0C and 5%CO2, when the matrigel was totally digested, the acini were washed 3 times with 15 ml of serum supplemented media and once with 15 ml of serum free media, and pelleted at 1000 rpm for 5 min. We then supplemented the acinus pellet (from two original gels) in 10 \u00b5l of MEBM and added 6 \u00d7 105 lentivirus particles to the solution. We then mixed this solution with 90 \u00b5l matrigel and plated it in 35 mm dishes (Greiner Bio-One Cat. # 627160) and placed in incubator for 30\u201340 min until the matrigel solidified. The gels were supplemented with 3 ml MEBM and incubated for 2 days at 37\u00b0C and 5%CO2 in order to allow for acinus recovery and lentiviral gene expression.\n\nFor induction of oncogenes in the cells of the acini, doxycycline (Sigma Cat. # D9891) was supplemented in the media. 800 ng/ml of doxycycline was used to induce T acini and 600 ng/ml was used for B acini. qPCR analysis was used to standardize the doxycycline dosage for B acini (see below).\n\n### qPCR analysis\n\nThe qPCR technique was performed following the MIQE guidelines, where the total RNA was isolated from the mammary gland acini using RNA PureLink Mini Kit (ThermoFisher Cat. # 12183018A) and 2.5 ug was reverse transcribed to cDNA using SuperScript VILO cDNA Synthesis Kit (ThermoFisher Cat. # 11754050). Using Primer3 software we designed specific primers for DNA intercalating fluorescent dye approach for the transgenes Neu (Forward: CGTTTTGTGGTCATCCAGAACG and Reverse: CTTCAGCGTCTACCAGGTCACC) and c- MYC (Forward: GCGACTCTGAGGAGGAACAAGA and Reverse: CCAGCAGAAGGTGATCCAGACT). As endogenous controls, mCherry (Forward: GAGGCTGAAGCTGAAGGAC and Reverse: GATGGTGTAGTCCTCGTTGTG) and Pum1 (Forward: AATGTGTGGCCGGATCTTGT and Reverse: CCCACAGTGCCTTATACACCA) were used. Primer efficiency was verified and established between 95% and 105% Each sample was analyzed in duplicate and non-template controls were used in each qPCR run. Analyses were carried out using a StepOne device (Applied Biosystems, USA). Analysis of relative gene expression data was performed according to the 2\u2212\u0394\u0394Cq method and the results were expressed as fold change of \u0394\u0394Cq values obtained from the reference T800 acini (Figure 1\u2014figure supplement 1).\n\n### Immunofluorescence staining\n\nMatrigel cultures were grown as described above and plated on Nunc Lab-Tek II (Thermo Cat. # 155382) chambers. At pre-defined timepoints, the gels were fixed using 4% PFA for 2\u20133 min, following 3 washes with PBS. The gels were blocked with 10% goat serum for 2 hr at room temperature, followed by incubation with primary antibodies was done overnight at 4\u00b0C. The remaining immunofluorescence staining was performed as per standard protocol for c-MYC (Cell Signaling Technologies, Cat. # D84C12, 1:900), alpha6-integrin (Millipore Cat. # MAB1378, dilution 1:80) and ZO1 (Life Technologies Cat. # 61\u20137300, dilution 1:500). The nuclei were counter stained with 1:1000 DAPI (ThermoFisher Cat. # 62248, 1 mg/ml, dilution 1:1000) and mounted in anti-fading mounting medium (VECTASHIELD Mounting Medium with DAPI (Vecto Cat. # H1500-10)). Please note that the c-MYC antibody (Cell Signaling Technologies, Cat. # D84C12) recognizes specifically the human protein, which is transgenically expressed and does not recognize endogenous mouse MYC protein.\n\nStained gels were imaged on Leica SP5 confocal microscope using 63x water lens and the LAS AF imaging software.\n\n### Light sheet microscopy\n\n#### Sample holder preparation and mounting\n\nImaging was performed on the InVi SPIM inverted light-sheet microscope (Luxendo Light-Sheet, Bruker Corporation). Sample mounting for the InVi SPIM is suitable for 3D matrigel cultures that are used to grow and transduce mammary acini (see above). The sample holder is made of medical grade plastic (PEEK). A 25 \u03bcm thin membrane (FEP; Luxendo) with a refractive index matching that of water is glued to the upper surface of a groove in the sample holder with a biocompatible silicone glue (Silpuran 4200; Wacker), forming a trough with transparent bottom (Figure 3\u2014figure supplement 1). Matrigel cultures were carefully cut with a scalpel into rectangular slivers and transferred onto the FEP membrane\u2019s trough. Once the gel sliver was aligned in place, 20\u201330 \u00b5l of fresh matrigel drops were poured onto the gel sliver in the sample holder until there was a thin layer of liquid matrigel on top of the gel sliver. The setup was incubated for 20 min at 37\u00b0C in a 5% CO2 incubator to allow the matrigel layer on top to solidify. Once the gel was solidified, 600\u2013800 \u00b5l of MEBM supplemented with/without doxycycline was added to the sample holder\u2019s FEP sheet trough. Preferably, freshly mounted sample gels were allowed to settle overnight in the incubator to prevent any gel drift during imaging, when the holder is placed into the imaging chamber of the microscope. The imaging chamber acts as an incubator with environmental control and it has a reservoir for immersion medium, which is filled with water so that both objective lenses and the bottom of the sample holder are below the water surface (Figure 3\u2014figure supplement 1).\n\n#### Imaging configuration and conditions\n\nThe InVi SPIM is equipped with a Nikon CFI 10x/0.3NA water immersion lens for illumination and a Nikon CFI-75 25x/1.1NA water immersion lens for detection. For excitation of GFP and mCherry, 488 nm and 594 nm laser lines were used, respectively, while emission was selected using a 497\u2013554 nm band pass filter and a 610 nm long pass filter, respectively. 3D image stacks were acquired with a light-sheet thickness of 4 \u00b5m, a final magnification of 62.5x, resulting in 104 nm pixel size. The In-Vi SPIM environmental control was set to 37\u00b0C, 5% CO2 and 95% humidity. A series of optimization experiments, involving different laser powers, exposure times and z-step sizes yielded laser powers of 13 \u00b5W for 488 nm and 36 \u00b5W for 594 nm, 100 millisecond exposure time per frame and 1 \u00b5m z-spacing between frames to be optimal for long-term imaging (96\u2013120 hr) without photo-bleaching or photo-toxic effects on growth.\n\nImages were recorded as 2D planes ranging from 100 to 500 in number, depending on the acinus size. Each 3D stack of planes was recorded in 2 channels - mCherry (all cells) and GFP (transduced cells). Depending on the duration of the time lapse imaging, 450\u2013600 image stacks (equivalent to\u00a0~72\u201396 hr) were recorded per acinus at 10 min intervals.\n\n### Image analysis\n\nBig Data Processor\u00a0(Tischer et al., 2019a), a Fiji plugin for lazy loading of big image data, was used to visualize the images in 2D slicing mode, crop stacks in x, y, z, and t, bin images (3 \u00d7 3\u00d71 in x, y, z), perform chromatic shift correction between channels and convert. h5 files from the InVi SPIM into an Imaris compatible multi-resolution file format (.ims) for further analysis (Figure 3\u2014figure supplement 3).\n\nThe oncogenic cells (H2B-GFP channel) displayed heterogeneous morphologies as well as varying intensity textures, making it difficult to segment them using conventional thresholding approaches. We thus used a trainable segmentation approach to convert the raw intensity values into pixel probability maps, using the Fiji plugin CATS (Tischer and Pepperkok, 2019b) (Context Aware Trainable Segmentation). Using the H2B-GFP channel images as input, we trained three pixel classes: background, nucleus center and nucleus boundary. For training we drew about 20(background), 120(nucleus center), 100(nucleus boundary) labels distributed across the different time-frames of the movie. After feature computation and training of a Random Forest classifier the whole dataset was processed on EMBL\u2019s high performance computer cluster. The segmentation of one dataset -typically 100 timepoints- is distributed across few hundred jobs, each job using 32 GB RAM, 16 cores, and running for about 30 min. The nucleus center probability maps were then exported from CATS and added as an additional channel to the converted intensity data (Figure 3\u2014figure supplement 3).\n\nThe data were then loaded into Imaris (Bitplane AG, 2020, Software available at http://bitplane.com) for 3D visualization and further processing. Using the Imaris\u2019 Surfaces function, we segmented the nucleus center probability maps into objects. To do so, probability maps were manually thresholded, using a surface smoothening parameter of 0.3 \u00b5m; the minimum quality parameter for seed points was set to 0.1, and object splitting was applied for objects larger than 5.5 \u00b5m. Objects with volumes less than 20 \u00b5m3 were excluded. Next, all objects were tracked over time using Imaris\u2019 Lineage tracking algorithm with a maximum distance between objects in subsequent time points limited to 10 \u00b5m and a maximum gap size between identification of the object in a particular track limited to 10 time points. Analysis of segmentation results is shown in Figure 4\u2014figure supplement 1. Most of the errors in the object segmentation were false merges, where two cells were segmented as one. This kind of error is frequently not sustained in the previous or following time points and the maximum gap size parameter of the tracking algorithm thus frequently provides correct tracks nonetheless. The resulting lineage trees of proliferating tumor cells within the acinus were corrected manually within Imaris, for\u00a0example, excluding apoptotic cells and auto-fluorescent debris.\n\nCenter of mass coordinates of each cell were measured and exported from Imaris for subsequent feature analysis (Figure 4b).\n\n### Feature analysis\n\nObservations suggest that tumors in acini originate from clusters of oncogene-expressing cells produced by independent transduction events. To identify these clusters, we computed the pairwise Euclidean distances between all oncogene-expressing cells in an acinus at the start of the experiment and applied hierarchical clustering with complete linkage. Clusters were identified automatically by cutting the branches of the trees using the dynamic tree cut algorithm (Langfelder et al., 2008). This defined a cluster as a group of oncogene-expressing cells that are closer to each other than to other oncogene-expressing cells of the same acinus. Note that a cluster can be composed of a single cell if this cell is comparatively isolated from other transduced cells. For each cluster we identified the following features as possibly linked to tumor formation: (1) number of cells in the acinus (2) cell density expressed as the ratio of number of cells to acinus surface area computed by assuming the acinus is a sphere with diameter equal to the distance between the two most distant cells (3) number of oncogene-expressing cells in the acinus (4) number of cells (including both oncogene-expressing and normal cells) in the cluster volume defined as the sphere centered at the center of mass of the cluster with diameter equal to the distance between the two farthest oncogene-expressing cells of the cluster (5) number of oncogene-expressing cells in the cluster (6) average pairwise distance between all cells in the cluster volume (7) average pairwise distance between oncogene-expressing cells in the cluster (8) fraction of oncogene-expressing cells in the cluster volume (9) number of contacts between oncogene-expressing cells in the cluster. Two cells are presumed in contact if they are less than the average cell diameter + 2 standard deviation apart.\n\nOncogene-expressing cells were tracked over time and a cluster was associated with a tumor outcome if any of its cells lead to tumor formation. Here, \u2018tumor formation\u2019 is defined as the phenotypic observation of increased proliferation rate and disrupted polarity observed in transduced cell clusters upon induction with doxycycline. Regions displaying \u2018tumor formation\u2019 within the acinus often form multi-layer cell clusters with fast-dividing cells and increased apoptosis. To identify which features were linked to this outcome, we took an information-theoretic approach to model selection. We fitted a logistic regression model for all possible linear combinations of features and selected the best model based on the Akaike information criterion (with correction for small sample sizes) (Calcagno and Mazancourt, 2010). This model included the following features: number of oncogene-expressing cells in the cluster, number of oncogene-expressing cells in the acinus, number of cells in the cluster and number of contacts between oncogene-expressing cells in the cluster. Of these features, only the number of oncogene-expressing cells in the cluster contributed significantly to tumor formation with an odds ratio of 8.96 (Figure 4b). Of note, all the models within 3 information criterion units of the best model also included the number of oncogene-expressing cells in the cluster as a significant contributor to tumorigenesis. Relative importance of different features can be estimated by the sum of the information criterion values of the models in which each feature appears (Buckland et al., 1997). Computing relative variable importance across all models also indicated this feature as the most important. To control for acinus of origin, we also evaluated a mixed effect model including the three most important fixed effect features (number of transduced cells in a cluster, number of cells in a cluster and number of contacts between transduced cells in a cluster), a random effect for acinus and interaction terms for the starting number of normal cells. In this case again, the number of oncogene-expressing cells in the cluster appeared as the main contributing factor to tumorigenesis with an odds ratio of 6.73 (Figure 4\u2014figure supplement 2b).\n",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "eac311b6-d09a-4464-a078-a98e671608cf",
+      "submission_id": "7c322883-1163-4a61-94dc-327d2c579bc4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lynne-Marie Postovit, University of Alberta Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54066.sa1](https://doi.org/10.7554/eLife.54066.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper demonstrates a beautiful methodology for tracking tumour formation within 3D acinar structures, with single cell resolution. It also suggests that tumour formation may depend upon local interactions between transformed cells. The method described may be used to better understand the underpinnings of stochastic tumor evolution.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Tracking cells in a novel organoid model by light sheet microscopy reveals proximity effects in breast cancer initiation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard White as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Anne Rios (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript by Jechlinger and colleagues combines a novel transgenic organoid model of breast hyperplasia with light-sheet microscopy in order to demonstrate that hyperplastic outgrowths occur most readily when transformed cells are adjacent to each other. Specifically, the authors compared early progression (hyperplastic growth and depolarization) in organoids wherein all versus only a subset of epithelial cells harbor the Neu and MYC driver mutations. Aided by time lapsed light-sheet microscopy and computational analyses, they surmised that the number of transduced cells in a cluster dictates progression, suggesting that special cues are likely required for cancer progression to occur. This work was reviewed by 2 experts and myself. One of the reviewers was notably an expert in the imaging and characterization of organoids, and thus able to comment on the technical aspects of this study, which given its focus, are the most important.\n\nOverall, the reviewers felt that the paper describes an interesting tool that is accompanied by beautiful images and a fairly compelling analysis. However, in order to better justify the biological conclusions, additional experiments would be needed. These would include an analysis of cells which outgrow (versus those that do not). Such studies may include single cell RNA sequencing to determine how cells in clusters differ from those which are more isolated, as well as a more thorough assessment of polarity and consideration of microenvironmental cues such the concentration of myo-epithelial signals. Hence, the main issues raised by the reviewers related to the claims that a distinct number of initiator cells can explain tumorigenic clone expansion and that a proximity-controlled interaction or signaling network between different transformed cells is required for tumor outgrowth in a normal epithelium. In order to substantiate these claims, a number of experiments would have to be done. I would suggest, rather, that the claims are tempered and that the suggested technical revisions are completed.\n\nEssential revisions:\n\n1) Heterogeneities associated with the growth of organoids in general should be considered with additional controls: The authors cannot claim that you need interaction/cooperation between different transformed cells when the \u201corganoid\u201d with few activated cells clearly show an overall growth slower or even non-existent compare to the one with expansion of tumorigenic clones (organoid size, cell compactness). Differences of growth and growth advantage for some \u201corganoids\u201d while culturing is quite common. The authors should think of a comparison of growth dynamics of untransduced tissue and provide the initial volume in both conditions as well as assess the impact of proliferation differences between different organoids.\n\n2) The idea that the initial cluster size dictates tumor formation should be better supported: If indeed tumor formation is dependent on the initial cluster size, this effect should also be detectable at single organoid level: A single organoid should have clusters formed by several cells that will give rise to a tumor and clusters formed by only 1 cell that will not give rise to a tumor. The authors should define such examples, and fit a model with random effect, where each organoid will be considered as random effect. This could as well exclude the possibility that the results are due to the fact that organoids have a differential growth capacity.\n\n3) The AI approach should be strengthened and/or better articulated: In the logistic regression model used to assess which feature is responsible for the tumor formation, authors should include interaction effects between different features, which is not considered by the linear model used. As indeed the size of the organoids could influence the number of cells per cluster, etc.\n\n4) The conclusions must be either softened or expanded upon (with experiments such as those outlined in the summary): Considering that the conclusion of the authors would be correct and that the tumor formation is solely dependent on the cluster size, please provide an explanation why is it independent of the interactions between cells of the same cluster. It would be logical to assume that cells have to be in close contact to exert an effect on each other.\n\n5) The semantics regarding \"organoids\" should be addressed: The authors call \u201corganoids\u201d, the in vitro 3D culture they use. Not all 3D spheroids culture can be called \u201corganoids\u201d, it is essential first to examine if the 3D structures grown in culture resemble the original breast tissue (e.g. cell composition, geometry). Why not use the well-defined protocol developed for mouse organoid culturing where both main mammary epithelial cell types can be modelled (luminal and myoepithelial) (Jamieson, Dekkers et al., 2016)? The authors should either prove that their cultures can be called organoids or use the right protocol. It is of great importance as they are claiming they use a stochastic model. Looking at shape and polarity, I presume their organoids are luminal-enriched.\n\n6) Studies regarding polarity should be strengthened: 3D z-stack and rendering should have been performed to make conclusive interpretation in Figure 2A about disrupted polarity and random lumen. 2D often lead to a wrong interpretation of architectural phenotypes. Moreover, the authors should expand the polarity analyses by measuring a number of polarity markers (ZO-1, Par3).\n\n7) The authors should refine terminology related to localized transformation and/or perform the experiments that would allow them to suggest that transformation is in fact localized: The authors also claimed a model of localized transformation while what they did is random and low rate transformation using a doxycycline inducible model with lentiviral delivery of rtTA. It is a confusing claim as localized transformation implies you control the location. This can be performed with optogenetic technology. Alternatively, the terminology used should be refined.\n\n8) Please ensure the supplementary figures are uploaded.\n\n9) The authors should not suggest that a big-data analysis was conducted and/or should apply more robust analytical techniques: Authors claim that they do big-data analysis, however only 20 organoids are segmented and tracked. The authors should either provide a more robust analysis or change the semantics that are used in the paper.\n\nReviewer #1:\n\nThis manuscript by Jechlinger and colleagues combines a novel transgenic organoid model of breast hyperplasia with light-sheet microscopy in order to demonstrate that hyperplastic outgrowths occur most readily when transformed cells are adjacent to each other. Specifically, the authors compared early progression (hyperplastic growth and depolarization) in organoids wherein all versus only a subset of epithelial cells harbor the Neu and MYC driver mutations. Aided by time lapsed light-sheet microscopy and computational analyses, they determined that the number of transduced cells in a cluster dictates progression, suggesting that special cues are likely required for cancer progression to occur. Overall, this is an interesting tool, accompanied by beautiful images and a fairly compelling analysis. However, in order to solidify what is still mostly a descriptive finding, an analysis of cells which outgrow (versus those that do not) would be needed.\n\nAs indicated by the authors, single cell RNA sequencing should be done to determine how cells in clusters differ from those which are more isolated. Alternatively, key factors may be analyzed perhaps with IHC, to determine if there are tangible differences.\n\nReviewer #2:\n\nThis is an interesting paper using real time imaging and a retroviral based strategy to induce both the MYC/activated Neu in single cell. The core observation is that clusters of oncogenes expressing mammary epithelial cells go on to form tumors whereas single cell isolates do not. The authors conclude that adjacent normal cells (untransduced cells) negatively inhibit tumor outgrowth. In general, the data presented support the author's conclusions. However, the authors should address the following issues before publication.\n\n1) Although the data indicate that single cell expressing both oncogenes have normal polarity, using a number of polarity markers (ZO-1, Par3) can the authors exclude subtle alterations in polarity program.\n\n2) What impact would co-cultivation of myoepithelial cells have on the observed tumor dynamics.\n\nReviewer #3:\n\nAlladin et al. proposed a stochastic breast tumor doxycycline inducible system using mouse breast 3D cultures to establish lower cell transformation rate. They performed lightsheet time-lapse imaging together with tracking analysis to examine clone expansion overtime after transformation. The authors claimed that distinct number of initiator cells can explain tumorigenic clone expansion. In addition, they suggest that a proximity-controlled interaction or signaling network between different transformed cells is required for tumor outgrowth in a normal epithelium. I have serious concerns about this claim and even if the claim is correct, the paper does not provide any explanation for such a phenomenon. Please see my comments below, I hope it may help improve your manuscript.\n\n\u2013 The authors cannot claim that you need interaction/cooperation between different transformed cells when the \u201corganoid\u201d with few activated cells clearly show an overall growth slower or even inexistent compare to the one with expansion of tumorigenic clones (organoid size, cell compactness). Differences of growth and growth advantage for some \u201corganoids\u201d while culturing is quite common. The authors should think of a comparison of growth dynamics of untransduced tissue and provide the initial volume in both conditions as well as assess the impact of proliferation differences between different organoids.\n\n\u2013 If indeed tumor formation is dependent on the initial cluster size, this effect should also be detectable at single organoid level: A single organoid should have clusters formed by several cells that will give rise to a tumor and clusters formed by only 1 cell that will not give rise to a tumor. The authors should define such examples, and fit a model with random effect, where each organoid will be considered as random effect. This could as well exclude the possibility that the results are due to the fact that organoids have a differential growth capacity.\n\n\u2013 In the logistic regression model used to assess which feature is responsible for the tumor formation, authors should include interaction effects between different features, which is not considered by the linear model used. As indeed the size of the organoids could influence the number of cells per cluster, etc.\n\n\u2013 Considering that the conclusion of the authors would be correct and that the tumor formation is solely dependent on the cluster size, please provide an explanation why is it independent of the interactions between cells of the same cluster. It would be logical to assume that cells have to be in close contact to exert an effect on each other.\n\n\u2013 The author call \u201corganoids\u201d, the in vitro 3D culture they use. Not all 3D spheroids culture can be called \u201corganoids\u201d, it is essential first to examine if the 3D structures grown in culture resemble the original breast tissue (e.g. cell composition, geometry). Why not use the well-defined protocol developed for mouse organoid culturing where both main mammary epithelial cell types can be modelled (luminal and myoepithelial) (Jamieson, Dekkers et al., 2016)? The authors should either prove that their cultures can be called organoids or use the right protocol. It is of great importance as they are claiming they use a stochastic model. Looking at shape and polarity, I presume their organoids are luminal-enriched.\n\n\u2013 3D z-stack and rendering should have been performed to make conclusive interpretation in Figure 2A about disrupted polarity and random lumen. 2D often lead to a wrong interpretation of architectural phenotypes.\n\n\u2013 The authors also claimed a model of localized transformation while what they did is random and low rate transformation using a doxycycline inducible model with lentiviral delivery of rtTA. It is rather confusing claim as localized transformation implies you control the location. This can be performed with optogenetic technology.\n\n\u2013 Important to mention: No supplementary figures were uploaded.\n\n\u2013 Authors claim that they do big-data analysis, however only 20 organoids are segmented and tracked, this is misleading. The authors should either provide a more robust analysis or change the semantics that are used in the paper. Also, few terabytes per organoid imaged\u2026I may advise to consider other imaging technologies such as confocal that will give better images for less data generated.\n",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2275ed0e-fe41-4eca-b023-60b906dca596",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C1",
+      "claim": "The TetO-MYC/TetO-Neu/MMTV-rtTA transgenic mouse model recapitulates hallmarks of human breast disease.",
+      "claim_type": "EXPLICIT",
+      "source": "For modeling tumorigenesis in breast tissue, we use an inducible mouse model of breast cancer (TetO-MYC/TetO-Neu/MMTV-rtTA transgenic mice) (Fry et al., 2016; Moody et al., 2002; Podsypanina et al., 2008) that has been shown to recapitulate hallmarks of human breast disease (Havas et al., 2017; Jechlinger et al., 2009; Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Havas et al., 2017; Jechlinger et al., 2009) that demonstrated this property of the mouse model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "f4711864-89e7-447f-b515-018c9a12e1a1",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C2",
+      "claim": "The activity of MYC and Neu oncogenes is under the control of a Tet-O promoter that can only be activated in the presence of both rtTA protein and doxycycline compound.",
+      "claim_type": "EXPLICIT",
+      "source": "In this tractable transgenic mouse model, the activity of two potent oncogenes \u2013 MYC and Neu (the rodent homolog for the human ERBB2 gene used in this mouse model)\u2013 are under the control of a Tet-O promoter that can only be activated in the presence of both the rtTA (reverse tetracycline-controlled transactivator) protein and the doxycycline compound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the genetic system design, which is established knowledge about Tet-inducible systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "e6590b6b-041e-4724-b6d8-68bc6503b32f",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C3",
+      "claim": "The MMTV promoter confines expression of the rtTA protein to cells of the mammary lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This three-part inducible system allows for temporal control of oncogenic expression by regulating doxycycline in the medium or animal diet and spatial control by the MMTV promoter that confines expression of the rtTA protein to the cells of the mammary lineage (Bockamp et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bockamp et al., 2002, which established this property of the MMTV promoter.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "9596c9bd-6e11-434a-9f8a-86a95707add0",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C4",
+      "claim": "The bi-transgenic model allows acini to present with two cell populations \u2013 tumorigenic and non-tumorigenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, this novel (B) model should allow acini to present with two cell populations \u2013tumorigenic and non-tumorigenic\u2013 and could be used to study the dynamics of early tumorigenesis in an otherwise normal epithelium (Figure 1a, lower right panels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the experimental design where only lentivirally transduced cells express rtTA and can activate oncogenes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "2e3a6dec-2d26-4a9c-bce1-8c79b4328f3a",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C5",
+      "claim": "MYC oncogene protein is expressed in only the transduced cells of bi-transgenic acini as opposed to all cells of tri-transgenic acini.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescent staining of 3D matrigel cultures, for both sets of doxycycline-induced transduced acini, was used to validate transgene specific protein expression of the MYC oncogene (human) in only the transduced cells of (B) acini as opposed to all cells of (T) acini (Figure 1b, anti-human MYC specific antibody).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1b demonstrating differential MYC expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "d4106799-3a6e-4082-ba7a-e8df2f0ff7c3",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C6",
+      "claim": "800 ng/ml doxycycline in the tissue wide system and 600 ng/ml doxycycline in the stochastic system produce the same mRNA expression levels of oncogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "This way we normalized doxycycline dosage in both systems to obtain the same mRNA expression levels of oncogenes using 800 ng/ml doxycycline in the tissue wide (T) system and 600 ng/ml doxycycline in the stochastic (B) system (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 1\u2014figure supplement 1 comparing mRNA expression levels at different doxycycline concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "35969141-1a9c-463a-98cb-84315629d9d0",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C7",
+      "claim": "Lentivirus-transduced structures from the tissue wide induction system presented with filled lumens containing both infected and non-infected oncogene-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lentivirus-transduced structures from the tissue wide induction system (T) presented with filled lumens that contained both infected (GFP positive) as well as non-infected oncogene-expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from immunofluorescent staining experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "fb44d70c-da40-46a7-a758-69e6c2c279ff",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C8",
+      "claim": "Tissue wide induction system structures exhibited overall disrupted epithelial polarity and some random microlumen.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures exhibited overall disrupted epithelial polarity and some random microlumen, as reported previously (Jechlinger et al., 2009; Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by both current observations (Figure 2a) and previous report (Jechlinger et al., 2009).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "5e29cc39-e4ce-4f60-8cc1-72b2775867dc",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C9",
+      "claim": "Some bi-transgenic acini showed exclusively H2B-GFP marked cells in hyperplastic areas that displayed double cell rim morphology and disturbed epithelial polarity after 96 hr of oncogene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For the stochastic tumor induction system (B), we observed 2 phenotypes after 96 hr of oncogene expression; some of the (B) acini showed exclusively H2B-GFP marked cells in hyperplastic areas that also displayed double cell rim morphology and disturbed epithelial polarity (Figures 2a and 96 hours ON DOX, left panels)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence imaging data shown in Figure 2a at 96 hours post-induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "37935333-0eb3-46ba-ac73-49e63fe8ba8a",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C10",
+      "claim": "Some bi-transgenic acini did not show expansion of the few H2B-GFP positive cells after 96 hr of oncogene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "while the other (B) acini did not show expansion of the few H2B-GFP positive cells (Figures 2a and 96 hours ON DOX, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence imaging data shown in Figure 2a at 96 hours post-induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "cf1b9382-277c-400d-a30d-3ae5da561ef3",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C11",
+      "claim": "Multi layered regions in acini contained mainly H2B-GFP positive cells that stained for MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that multi layered regions in acini contained mainly H2B-GFP positive cells that expectedly stained for MYC (Figure 2b, middle panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence staining data shown in Figure 2b middle panels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "ef5dc7ef-177e-48f7-b71a-cacfe5008b85",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C12",
+      "claim": "The inability of single H2B-GFP positive, transduced cells to expand over 96 hr was not due to the lack of MYC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For normal appearing regions, this analysis showed that the inability of single H2B-GFP positive, transduced cells to expand over 96 hr was not due to the lack of MYC expression (Figure 2b, lower panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data in Figure 2b lower panels showing MYC expression in non-expanding cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "c3cb4e3a-7834-454a-984f-eacafa1b891c",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C13",
+      "claim": "The InVI SPIM was adjusted for non-phototoxic, long-term imaging up to 4 days, every 10 min with 1 \u00b5m z-spacing.",
+      "claim_type": "EXPLICIT",
+      "source": "The InVI SPIM was adjusted for non-phototoxic, long-term imaging (up to 4 days, every 10 min with 1 \u00b5m z-spacing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters established for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "020cac49-7b1f-47e6-97d4-27cfd774e4b4",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C14",
+      "claim": "Tri-transgenic acini transduced with reporter virus proliferated swiftly upon doxycycline addition showing expansion of both marked and unmarked cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The T/H2B-mCherry acini transduced with reporter virus proliferated swiftly upon doxycycline addition showing expansion of both the marked and unmarked cells (Figure 3a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by light-sheet microscopy imaging data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "0549c880-d489-4fa7-99a2-bf23592c6403",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C15",
+      "claim": "A sturdy tumor phenotype developed in tri-transgenic acini, manifested by multi-cell-layered rims and pronounced proliferation-associated-apoptosis in all acini.",
+      "claim_type": "EXPLICIT",
+      "source": "a sturdy tumor phenotype developed, manifested by multi-cell-layered rims and pronounced proliferation-associated-apoptosis in all acini (Figure 3\u2014Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse imaging data shown in Figure 3\u2014Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "39f1f928-f4d0-41a7-92b5-892bdc864424",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C16",
+      "claim": "Some bi-transgenic acini showed fast clonal expansion of oncogene-expressing cells that form multilayer clusters in the acinus rim.",
+      "claim_type": "EXPLICIT",
+      "source": "Some acini showed fast clonal expansion of oncogene-expressing cells that form multilayer clusters in the acinus rim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from light-sheet microscopy time-lapse imaging of bi-transgenic acini.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "aea1ea44-7f51-4af3-beef-b005b307b00f",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C17",
+      "claim": "The proliferative phenotype in bi-transgenic acini stems from several transduced cells in vicinity to each other at the start of time-lapse imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "This proliferative phenotype seems to stem from several transduced cells in vicinity to each other at the start of time-lapse imaging (Figure 3b, upper panel; Figure 3\u2014Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by light-sheet microscopy imaging data shown in Figure 3b upper panel and Figure 3\u2014Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "0451e4d8-4d7e-4a22-a80d-7a937b75c1d1",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C18",
+      "claim": "More sparsely infected bi-transgenic acini did not sustain proliferation of the oncogene-expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, more sparsely infected acini, did not sustain proliferation of the oncogene-expressing cells (Figure 3b, lower panel; Figure 3\u2014Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by light-sheet microscopy imaging data shown in Figure 3b lower panel and Figure 3\u2014Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "96acf876-d8d0-45cb-a854-f3facc169458",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C19",
+      "claim": "The phenotypes for bi-transgenic and tri-transgenic acini are consistent with the respective behavior observed with the 96 hr end point immunofluorescent analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the phenotypes for (B) and (T) acini are consistent with the respective behavior observed with the 96 hr end point immunofluorescent analysis (Figure 2a and b), verifying these prior observations and excluding phototoxic effects due to longitudinal SPIM imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between two different experimental approaches (immunofluorescence and live imaging) showing consistent results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "8354b35c-0e95-4d51-a452-24fec4c9aaa6",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C20",
+      "claim": "The average True Positive to Ground Truth ratio for segmentation accuracy is 0.92.",
+      "claim_type": "EXPLICIT",
+      "source": "The average True Positive to Ground Truth ratio for the four timepoints is 0.92.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by segmentation accuracy assessment data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "0e8d2c7c-c4a3-48b9-860c-256773ba9cb6",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C21",
+      "claim": "Single transduced cells within one acinus show a difference in proliferation and cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell tracking allowed us to follow the clonal evolution for each transduced cell in the acinus over 3 days. Single transduced cells within one acinus show a difference in proliferation and cell fate as indicated in representative tracks (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single-cell tracking data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "3f5893b6-6ba5-40c4-bda2-33efc792c71f",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C22",
+      "claim": "The number of transduced cells in the cluster is the most important feature that can predict whether a cluster can form a tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model only one feature, the 'number of transduced cells in the cluster', can predict whether a cluster can form a tumor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by logistic regression model selection analysis based on Akaike information criterion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "c3d422b0-3ebd-43e2-ad22-36f73eedc5a9",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C23",
+      "claim": "Each additional transduced cell in a cluster increases the odds of this cluster forming a tumor by 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Each additional transduced cell in a cluster increases the odds of this cluster forming a tumor by 9 (Figure 4b, lower right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by logistic regression analysis results shown in Figure 4b lower right panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "d8c6fd42-56a5-45c2-a986-91929f145683",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C24",
+      "claim": "Acini with tumors only differed significantly from those without tumor on the number and proliferation rate of transduced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Acini with tumors only differed significantly from those without tumor on the number and proliferation rate of transduced cells in line with the observation that clusters of transduced cells are the primary indicators of tumor outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of acinus-level features shown in Figure 4\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "f16385ba-f77a-404a-90a6-092b1cc63376",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C25",
+      "claim": "In the mixed model regression analysis, the number of oncogene-expressing cells in the cluster appeared as the main contributing factor to tumorigenesis with an odds ratio of 6.7.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model again, the number of oncogene-expressing cells in the cluster appeared as the main contributing factor to tumorigenesis with an odds ratio of 6.7 (Figure 4\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mixed model regression analysis results shown in Figure 4\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "63713090-3cb7-45fd-8ebc-287e2d40cd5f",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C26",
+      "claim": "Tumors are mainly initiated by clusters of transduced cells.",
+      "claim_type": "EXPLICIT",
+      "source": "That tumors are mainly initiated by clusters of transduced cells is further illustrated by representative acini shown in Figure 4c",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data shown in Figure 4c demonstrating cluster-based tumor initiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "0f72f86a-265c-40ba-ac80-68c4233e944f",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C27",
+      "claim": "Proliferating cells that establish tumor foci at the end of the long-term imaging cluster together at the start of the time lapse imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "proliferating cells that establish tumor foci at the end of the long-term imaging cluster together at the start of the time lapse imaging and the non-proliferative cells are more sparsely located within the acinus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by time-lapse imaging analysis comparing initial and final cell positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "fdc199a5-be4c-488d-b3cf-bb83caee17ef",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C28",
+      "claim": "Similar sized acini bearing the same number of transduced cells showed differential cluster expansion depending on the numbers of transduced cells within a cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "In line, we found examples of similar sized acini bearing the same number of transduced cells that showed differential cluster expansion depending on the 'numbers of transduced cells within a cluster' (Figure 4\u2014figure supplement 2; comparison a to b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparative imaging data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "3efb908b-aab5-4d16-9ba4-20567afe25cb",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C29",
+      "claim": "Clusters of single cells do not expand over time, whereas clusters containing several cells show massive expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, and again depending on the number of cells within the specific cluster, we observed clusters behaving differently within the same organoid; the organoids shown in Figure 4a, Figure 4c (top and middle panels) and Figure 4\u2014figure supplement 2a, display clusters of single cells that do not expand over time, whereas clusters containing several cells show massive expansion (beyond normal expected cells division rates due to growth of the acinus).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse imaging data shown in multiple figures (4a, 4c, and Figure 4\u2014figure supplement 2a).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "60ca13fa-0c9b-4085-a49d-c1419500980b",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C30",
+      "claim": "A proximity-controlled interaction or signaling network between different transformed cells might guide tumor outgrowth in a normal epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that a proximity-controlled interaction or signaling network between different transformed cells might guide tumor outgrowth in a normal epithelium (Greaves and Maley, 2012; Reid et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results, supported by citations to related concepts in the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "06fed7c3-169d-4725-bd2b-dea592df56dc",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C31",
+      "claim": "An intact polarized tissue layer exerts a repressive effect on single early stage cancerous cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This might be due to the repressive effect that an intact polarized tissue layer exerts on single early stage cancerous cells (Lee and Vasioukhin, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by citation to Lee and Vasioukhin, 2008.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "7dd4beed-8c15-4a3c-8a6a-75fa17b9f2e0",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C32",
+      "claim": "The simple parameter of 'number of transduced cells within a cluster' is enough to impinge on overall epithelial integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our modeling attempts the simple parameter of 'number of transduced cells within a cluster' is enough to impinge on overall epithelial integrity and most likely already accounts for sub-features like 'distances between transduced cells in a cluster volume' or 'number of cell-cell contacts between transduced cells in a cluster volume', which did not pan out as predictive factors on their own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the statistical modeling results presented earlier in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "984a7ea7-7561-4530-ab0d-eb20890e6d62",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C33",
+      "claim": "The increased probability for tumor outgrowth upon proximity effects of closely located transformed cells might be rooted in paracrine effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the increased probability for tumor outgrowth upon proximity effects of closely located transformed cells, might also be rooted in paracrine effects (e.g. via microRNAs [Kosaka et al., 2012] in the cluster, or hydrogen ion dynamics/pH [Reshkin et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the results, supported by citations to relevant mechanisms in the literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "5c785e4a-da33-49ac-9e4d-43982c3fb074",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C34",
+      "claim": "Loss of important polarity proteins has been highlighted as functioning as non-canonical tumor suppressors in breast tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies on loss of important polarity proteins have highlighted their function as non-canonical tumor suppressors in breast tumorigenesis (McCaffrey et al., 2012; Partanen et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McCaffrey et al., 2012 and Partanen et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "e33a9ce3-1492-4912-9c54-ba1d615c6629",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C35",
+      "claim": "Other reports cannot confirm the observations about polarity proteins as tumor suppressors, which were all obtained from tissue wide transformed model systems.",
+      "claim_type": "EXPLICIT",
+      "source": "however, other reports (Macara and McCaffrey, 2013; Xue et al., 2013) cannot confirm these observations which were all obtained from tissue wide transformed model systems, leaving conclusions open for alternative studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to conflicting reports (Macara and McCaffrey, 2013; Xue et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "5f9214a9-4821-4d88-bf38-3de722065ecd",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C36",
+      "claim": "Cells within a polarized, differentiated epithelial cell layer are able to establish tumorigenic outgrowth upon stochastic activation of strong oncogenic drivers.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that cells within a polarized, differentiated epithelial cell layer are able to establish tumorigenic outgrowth upon stochastic activation of strong oncogenic drivers, supporting the concept of interconversion between differentiated- and stem-like states (Chaffer and Weinberg, 2015; Gupta et al., 2011; Plaks et al., 2015) for tumor initiating cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the experimental data presented in the manuscript and related to concepts in cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "bd3b00d1-9deb-446d-b8ce-299a205de77e",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C37",
+      "claim": "Not all cells expressing the combination of MYC and Neu oncogenes can expand, demonstrating an inhibitory effect that needs to stem from the normal epithelial microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, not all cells expressing the very powerful combination of MYC and Neu oncogenes can expand, demonstrating an inhibitory effect that needs to stem from the normal epithelial microenvironment in the presented system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observations showing differential expansion of oncogene-expressing cells.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "948cad22-c262-401a-9e03-3d1d303c98f4",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C38",
+      "claim": "ERBB2 is overexpressed in approximately 20% of breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "ERBB2 is overexpressed in ~20% of breast cancers (Arteaga et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Arteaga et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "cf5d1469-e26a-4a5d-8a71-255c94027693",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C39",
+      "claim": "MYC is overexpressed in 15-50% of human breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "MYC in 15\u201350% of human breast cancer (Blancato et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Blancato et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "e5ec61ee-7048-4f3a-8e57-a2e66d18c98e",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C40",
+      "claim": "The combination of MYC and ERBB2 is found in highly aggressive human breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of MYC and ERBB2 is found in highly aggressive human breast cancer (Al-Kuraya et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Al-Kuraya et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "f0742e46-a4db-4c62-ad1c-38a93ce10e62",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C41",
+      "claim": "Neu and MYC strongly accelerate tumor onset in combined transgenic animals (average 45 days) as compared to single transgenic animals (MYC 155 days, Neu 99 days).",
+      "claim_type": "EXPLICIT",
+      "source": "and - in fact- Neu (the rodent homolog for the human ERBB2 gene used in this mouse model) and MYC strongly accelerate tumor onset In the combined transgenic animals (average 45 days) as compared to single transgenic animals (MYC 155 days, Neu 99 days)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mouse model being used, likely from previous characterization studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "0155c643-c238-487c-a7a1-8056deb69537",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C42",
+      "claim": "Tumors regress rapidly to non-palpable state following oncogene silencing in the transgenic mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases tumors regress rapidly to non-palpable state following oncogene silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the reversibility of the transgenic mouse model being used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "78b3e6c2-6f97-4c79-92c2-0a8bce9ab73c",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C43",
+      "claim": "Primary mammary epithelial cells were seeded in 3D matrigel as single cells and grown for 48 hr to form small acini consisting of around 15 cells that arrange around a small lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary mammary epithelial cells derived from transgenic mice were seeded in 3D matrigel as single cells to be grown for 48 hr to form small acini consisting of around 15 cells that arrange around a small lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "8f8c567c-8474-44ab-9cd8-264bc765349a",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C44",
+      "claim": "The c-MYC antibody (Cell Signaling Technologies, Cat. # D84C12) recognizes specifically the human protein and does not recognize endogenous mouse MYC protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Please note that the c-MYC antibody (Cell Signaling Technologies, Cat. # D84C12) recognizes specifically the human protein, which is transgenically expressed and does not recognize endogenous mouse MYC protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is technical information about the antibody specificity used in the experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "0bbf58a6-f1c9-4b5e-8b9e-6a916c566f03",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C45",
+      "claim": "Long-term imaging of primary organoids has been achieved via light-sheet microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term imaging of primary organoids has been achieved via light-sheet microscopy (Drost et al., 2015; Serra et al., 2019; Verissimo et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies (Drost et al., 2015; Serra et al., 2019; Verissimo et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "e21b9d99-2daa-455b-ac48-56dbd0d2fff9",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C46",
+      "claim": "Light-sheet microscopy efforts have benefited from the lower phototoxicity provided by SPIM imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "and these efforts have benefited from the lower phototoxicity provided by SPIM imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the advantages of SPIM imaging technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "d4719a0d-f970-44f5-afab-c318a4ca3101",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C47",
+      "claim": "Tracking single-cell dynamics in fast dividing tumor organoid cells necessitates high resolution imaging which limits the time frame in which organoids can be imaged without phototoxic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, regarding fast dividing cells in tumor organoids, tracking single-cell dynamics necessitates high resolution imaging which in turn limits the time frame in which organoids can be imaged without phototoxic effects (Held et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Held et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "93ee51e6-a270-4a59-bda4-f0ff9f577817",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C48",
+      "claim": "Imaging primary organoids for longer time periods requires an offset of temporal and cellular resolution that eventually cannot allow single-cell fate tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, imaging primary organoids for longer time periods requires an offset of temporal and cellular resolution that eventually cannot allow single-cell fate tracking (Dekkers et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dekkers et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "717d0445-b4d4-4afa-acac-dcd55877a144",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C49",
+      "claim": "The hierarchical model refers to tumor propagating cells as cancer stem cells (CSCs).",
+      "claim_type": "EXPLICIT",
+      "source": "Two models have been used to understand tumor progression and heterogeneity (Plaks et al., 2015); the (i) hierarchical model refers to tumor propagating cells as cancer stem cells (CSCs) (Kreso and Dick, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Plaks et al., 2015 and Kreso and Dick, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "461c1828-9937-43aa-9f6f-ea4aa5076241",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C50",
+      "claim": "The stochastic model states that every cell within a tumor is equally likely to be the cell of origin and facilitate tumor initiation and progression.",
+      "claim_type": "EXPLICIT",
+      "source": "and the (ii) stochastic model states that every cell within a tumor is equally likely to be the cell of origin and facilitate tumor initiation and progression (Vogelstein et al., 1988; Williams et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Vogelstein et al., 1988 and Williams et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "c336f5e7-c8cf-4280-9adb-53238cbfa191",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C51",
+      "claim": "Models for tumor propagation can be reconciled when considering that the population of oncogene driven cells have the capacity to interconvert between differentiated- and stem-like states.",
+      "claim_type": "EXPLICIT",
+      "source": "These models for tumor propagation can be reconciled when considering that the population of oncogene driven cells have the capacity to interconvert between differentiated- and stem-like states (Chaffer and Weinberg, 2015; Gupta et al., 2011; Plaks et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chaffer and Weinberg, 2015; Gupta et al., 2011; and Plaks et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "6b21eb37-755b-41af-b20d-900d3bac13a6",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C52",
+      "claim": "The flexibility of cells to interconvert between differentiated- and stem-like states is supported by the microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "a flexibility that is supported by the microenvironment (McGovern et al., 2009; Quail et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McGovern et al., 2009 and Quail et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "dd8ac973-1b79-4b56-84e2-effbd034310d",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C53",
+      "claim": "The concepts of hierarchical and stochastic models have not been probed in the context of tumor initiation upon stochastic oncogene activation in an established cell-layer.",
+      "claim_type": "EXPLICIT",
+      "source": "These concepts, however, have not been probed in the context of tumor initiation upon stochastic oncogene activation in an established cell-layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the literature that the current study addresses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "00000d50-ddc9-47fb-9255-4517aec8dd60",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C54",
+      "claim": "The study presents a novel model of breast tumorigenesis where only single cells express oncogenes within healthy mammary acini and are able to establish localized outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present a novel model of breast tumorigenesis where only single cells express oncogenes within healthy mammary acini and are able to establish localized outgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main contribution of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "c0539041-326b-4bc2-b43b-d6bca999b253",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C55",
+      "claim": "The study overcomes limitations of studying tumorigenesis events in the face of tissue-wide transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We thereby overcome the above-mentioned limitations of studying tumorigenesis events in the face of tissue-wide transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the advantage of the new model system developed in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "4c5dbfa1-6d50-4b8d-95a6-5bf42f55cb25",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C56",
+      "claim": "The study performs long-term imaging of stochastic breast tumor acini for the first time at a temporal resolution that allows following single-cell fates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we perform long-term imaging of these stochastic breast tumor acini for the first time at a temporal resolution that allows us to follow single-cell fates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the imaging approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "e8f706d2-d965-4f85-99eb-a1f3903519f6",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C57",
+      "claim": "The study integrates the imaging approach with an image analysis pipeline capable of segmenting cells in their dynamic progression towards tumorigenesis and tracking them individually over time.",
+      "claim_type": "EXPLICIT",
+      "source": "We also integrate this approach with an image analysis pipeline capable of segmenting cells in their dynamic progression towards tumorigenesis, so they can be tracked individually over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational analysis component developed for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "36e4d506-104a-4bff-a00b-7814c42922fa",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C58",
+      "claim": "Small local clusters of transformed cells form tumors while isolated transformed cells do not.",
+      "claim_type": "EXPLICIT",
+      "source": "The power of this integrated approach is illustrated by us finding that small local clusters of transformed cells form tumors while isolated transformed cells do not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by the experimental data and analysis presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "9e77d289-0f63-410e-a248-5774dd776620",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C59",
+      "claim": "Organoid cultures grown from cell-lines or primary cells have been successfully employed to study molecular mechanisms during different stages of tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Organoid cultures grown from cell-lines or primary cells have been successfully employed to study molecular mechanisms during different stages of tumorigenesis (Clevers, 2016; Havas et al., 2017; Simian and Bissell, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Clevers, 2016; Havas et al., 2017; and Simian and Bissell, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "8daef125-8c5c-488f-a8ed-73db35316dd2",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C60",
+      "claim": "Organoids are derived from primary material that usually allows oncogenic activation in all cells of the tissue and therefore cannot reproduce the localized expansion at a defined part of the tissue that is seen in the patient situation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they are derived from primary material that usually allows oncogenic activation in all cells of the tissue and therefore cannot reproduce the localized expansion at a defined part of the tissue that is seen in the patient situation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a limitation of existing organoid models.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "54495a74-cead-4bfe-a942-dd7d0ac78586",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C61",
+      "claim": "To study tumor initiation, models need to be established wherein only a few tumorigenic cells expand in the context of its immediate non-tumor microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "To study tumor initiation, models need to be established wherein only a few tumorigenic cells expand in the context of its immediate non-tumor microenvironment (Tabassum and Polyak, 2015) and the interplay of these populations can be visualized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what is needed in the field, supported by citation to Tabassum and Polyak, 2015.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "c53c0de7-5017-4f87-be00-37cc909ecda0",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C62",
+      "claim": "The ability to distinguish marked tumor cells from the normal epithelium will allow performing single-cell RNA sequencing analysis on select sorted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to distinguish marked tumor cells from the normal epithelium will now allow us to perform single-cell RNA sequencing analysis on select sorted cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future applications enabled by the model system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "b6919007-6b46-4fbd-a2e1-51b6dbbf6d58",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C63",
+      "claim": "Single-cell RNA sequencing will help delineate the signaling networks within the immediate tumor microenvironment and further clarify the molecular basis of these distinct processes.",
+      "claim_type": "EXPLICIT",
+      "source": "This will help delineate the signaling networks within the immediate tumor microenvironment and further clarify the molecular basis of these distinct processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about what future experiments might reveal.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "6c433f36-993b-44ea-9c60-54753e0759f6",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C64",
+      "claim": "The amenability of 3D multicellular systems to interference with small molecule inhibitors, viral shRNA vectors and genomic editing has the potential to further understanding of mechanisms important during tumor initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The amenability of 3D multicellular systems to interference with small molecule inhibitors, viral shRNA vectors and genomic editing has the potential to further our understanding of the mechanisms important during tumor initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential future applications of the system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "c6f16001-6875-4031-8dad-341546301f0a",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C65",
+      "claim": "The system will permit drug screens on the heterogeneous populations of normal and malignant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, this will also permit drug screens on the heterogeneous populations of normal and malignant cells, as presented in the described stochastic breast tumor model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential future applications of the model system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "710e7b2e-827f-4db9-ba01-6e22dedbc015",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C66",
+      "claim": "The ability to follow tumor regression and establishment of minimal residual disease within a tissue like acinus structure will help distinguish between overall cytotoxic drugs and tumor cell specific inhibitory drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to follow tumor regression and establishment of minimal residual disease within a tissue like acinus structure will help distinguish between overall cytotoxic drugs and tumor cell specific inhibitory drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential future applications of the system for drug testing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "7f3bbddf-4d9e-4285-b17c-c2bd27ec644c",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "claim_id": "C67",
+      "claim": "The integration of a true stochastic tumor model with the ability to image single-cell fates will successfully bridge the gap between genetically modified model systems and the clinical situation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we strongly believe that our integration of a true stochastic tumor model with the ability to image single-cell fates will successfully bridge the gap between genetically modified model systems and the clinical situation, helping gain novel insights on breast cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the significance and potential impact of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8200c4a0-3733-40e5-a8cf-323c5a9e11ee",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a stochastic breast tumor model using bi-transgenic (TetO-MYC/TetO-Neu) mice where lentiviral delivery of rtTA enables oncogene expression in only transduced cells within mammary acini. This system was validated by demonstrating MYC expression exclusively in transduced cells of bi-transgenic acini versus all cells in tri-transgenic controls, with doxycycline dosages normalized to achieve equivalent oncogene mRNA expression levels between systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 collectively establish the stochastic tumor model system. The model design is well-supported by established Tet-inducible system knowledge (C2, C3), immunofluorescence validation of differential MYC expression (C5), and qPCR normalization of oncogene expression levels (C6). The system successfully creates mixed populations of tumorigenic and non-tumorigenic cells (C4).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "66331426-eeaf-45cb-aeff-909ddc790300",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Immunofluorescence analysis at 96 hours post-induction revealed two distinct phenotypes in bi-transgenic acini: some showed hyperplastic expansion of H2B-GFP marked cells with disrupted polarity, while others showed no expansion of transduced cells despite MYC expression. Tri-transgenic acini uniformly displayed filled lumens and disrupted epithelial polarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 describe endpoint immunofluorescence observations that are well-supported by imaging data in Figures 2a and 2b. The key finding that non-expanding transduced cells still express MYC (C12) rules out lack of oncogene expression as the cause of differential expansion, suggesting microenvironmental effects. The observations are consistent and reproducible across multiple acini.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "9bff8c60-41c3-49e0-82e7-469352b2c12a",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Long-term light-sheet microscopy imaging (up to 4 days, 10-minute intervals) revealed that tri-transgenic acini uniformly developed tumor phenotypes with multi-layered rims and proliferation-associated apoptosis, while bi-transgenic acini showed heterogeneous outcomes: acini with multiple transduced cells in proximity showed clonal expansion, whereas sparsely infected acini did not sustain proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C19 describe live imaging results that are well-supported by light-sheet microscopy data (Figure 3, Videos 1-3). The consistency between live imaging and endpoint immunofluorescence (C19) validates both approaches and excludes phototoxicity artifacts. The imaging parameters (C13) appear appropriate for long-term non-phototoxic imaging based on the successful 4-day time courses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "e985dc52-b670-43a1-ab03-2507471d7bb8",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors developed an image analysis pipeline integrating Big Data Processor and CATS plugins for Fiji with Imaris software, enabling nuclear segmentation and single-cell tracking in 3D with 92% segmentation accuracy. This pipeline successfully tracked individual transduced cells over 3 days, revealing differential proliferation and cell fates within single acini.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C21, and C57 describe the computational analysis pipeline with strong support from Figure 3\u2014figure supplement 3 showing segmentation accuracy assessment. The 0.92 True Positive to Ground Truth ratio (C20) indicates good segmentation performance, though some false merges occurred. The pipeline successfully enabled single-cell tracking as demonstrated in Figure 4a (C21).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "daa3237c-0fa1-44a7-83c6-09283665d460",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Statistical modeling using logistic regression identified the number of transduced cells within a cluster as the primary predictor of tumor formation, with each additional transduced cell increasing tumor odds by 9-fold (or 6.7-fold in mixed models). Clusters of multiple transduced cells in proximity formed tumors, while isolated single transduced cells did not expand, even within the same acinus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C29 present the central quantitative finding supported by rigorous statistical analysis (logistic regression with AIC model selection) and imaging data (Figures 4b-c, Figure 4\u2014figure supplements 1-2). The analysis of 20 acini with 150 transduced cells provides reasonable sample size. The finding is internally consistent across multiple analytical approaches (simple logistic regression C22-C23, mixed models C25, and visual examples C26-C29).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "4d4905e6-a225-4472-82a3-f996de2f5c84",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors interpret their findings as indicating that proximity-controlled interactions between transformed cells guide tumor outgrowth, potentially due to repressive effects of intact polarized tissue on single cancerous cells or paracrine signaling between clustered transformed cells. They suggest the 'number of transduced cells within a cluster' parameter captures effects of epithelial integrity disruption.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C33 present mechanistic interpretations of the experimental observations. While the interpretations are reasonable and supported by relevant citations, they remain speculative (C33 explicitly notes this). The data demonstrate correlation between cell clustering and tumor formation but do not directly test the proposed mechanisms. Additional experiments would be needed to distinguish between mechanical disruption, paracrine signaling, or other mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "ac7d945f-eef1-4107-a6a8-1320a3aebc8e",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study demonstrates that differentiated epithelial cells can establish tumorigenic outgrowth upon stochastic oncogene activation, but not all oncogene-expressing cells expand, indicating inhibitory effects from the normal epithelial microenvironment. Specifically, small local clusters of transformed cells form tumors while isolated transformed cells do not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C37, and C58 summarize the main biological conclusions, which are well-supported by the comprehensive experimental data including immunofluorescence (Figures 1-2), live imaging (Figure 3), and quantitative analysis (Figure 4). The finding that not all MYC/Neu-expressing cells expand (C37) is particularly important and well-documented. This represents the key discovery of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "bfd8a6bf-6713-4394-98a4-376b17300085",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors note that studies on polarity proteins as tumor suppressors in breast cancer have yielded conflicting results, with discrepancies potentially arising from the use of tissue-wide transformation models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 accurately represent conflicting findings in the literature regarding polarity proteins as tumor suppressors, supported by appropriate citations. This contextualizes the need for the stochastic model developed in this study. The claims are appropriately cautious about the state of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "9ac3ac56-c46d-4986-9d3c-45d11192ed16",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors provide background on the clinical relevance of MYC and ERBB2/Neu oncogenes in breast cancer and the characteristics of the transgenic mouse model, including oncogene prevalence in human disease, synergistic tumor acceleration in combined transgenic animals, and tumor regression upon oncogene silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 present established background information about the oncogenes and mouse model, appropriately supported by citations (C38-C40) or established knowledge about the model system (C41-C42). These claims provide important context for the choice of experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "2f6f4bd6-8310-4f70-a332-9aa677bd112c",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors describe key methodological details including the 3D acini culture protocol (48-hour growth to ~15 cells) and the specificity of the c-MYC antibody for human transgenic protein versus endogenous mouse protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 describe important methodological details that are clearly stated and appropriate. The antibody specificity (C44) is particularly important for validating that only transduced cells express the transgenic oncogenes. These are standard protocols appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "a743fc66-d251-48c4-be4e-7daeb4fed46f",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors contextualize their imaging approach by noting that while light-sheet microscopy enables long-term organoid imaging with reduced phototoxicity, tracking fast-dividing tumor cells requires high resolution that limits imaging duration, and longer imaging periods typically require reduced temporal/spatial resolution incompatible with single-cell tracking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 accurately represent the state of the field regarding organoid imaging challenges, supported by appropriate citations. This effectively motivates the technical advances made in the current study. The claims correctly identify the trade-offs between resolution, duration, and phototoxicity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "a39bfdc4-f700-4f24-a54a-2886311f115b",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors review hierarchical versus stochastic models of tumor propagation, noting these can be reconciled through cell plasticity and microenvironmental support, but that these concepts have not been tested in the context of stochastic oncogene activation in established epithelial layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 provide appropriate background on tumor propagation models, well-supported by citations. Claim C53 correctly identifies a gap in the literature that the current study addresses. This effectively motivates the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "b62d7048-49d7-45db-bf95-6861c8039d16",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors claim their study presents a novel stochastic breast tumor model, overcomes limitations of tissue-wide transformation studies, and achieves long-term imaging at temporal resolution sufficient for single-cell fate tracking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 accurately summarize the main technical and conceptual advances of the study. The novelty claims are justified: the stochastic model (C54) is indeed new, it does overcome tissue-wide transformation limitations (C55), and the imaging resolution/duration combination (C56) represents a technical advance as demonstrated by the 3-4 day single-cell tracking data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "e965b194-4c7b-4441-af04-15b9b6764bec",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors argue that while organoid cultures have been valuable for studying tumorigenesis, existing models typically allow oncogenic activation in all cells and cannot reproduce localized tumor expansion seen in patients, necessitating models where few tumorigenic cells expand within normal microenvironment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 accurately identify limitations of existing organoid models (supported by citations C59) and articulate the need for stochastic models (C61, supported by citation to Tabassum and Polyak, 2015). This effectively motivates the development of the bi-transgenic system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    },
+    {
+      "id": "9eb2a9f2-d2e0-46ba-b932-bee2bccda6d5",
+      "content_id": "42192acf-afb3-477c-bad2-e14ca87d685e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose multiple future applications of their system including single-cell RNA sequencing to identify signaling networks, molecular perturbation studies, drug screening on heterogeneous cell populations, and distinguishing cytotoxic versus tumor-specific drugs, claiming this will bridge the gap between model systems and clinical situations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C67 are explicitly speculative statements about future work and potential applications. While the proposed applications are reasonable and the system does enable these approaches, these claims cannot be evaluated as supported or unsupported since they describe work not yet performed. They represent appropriate discussion of future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:36:27.532208Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2275ed0e-fe41-4eca-b023-60b906dca596",
+      "result_id": "8200c4a0-3733-40e5-a8cf-323c5a9e11ee"
+    },
+    {
+      "claim_id": "f4711864-89e7-447f-b515-018c9a12e1a1",
+      "result_id": "8200c4a0-3733-40e5-a8cf-323c5a9e11ee"
+    },
+    {
+      "claim_id": "e6590b6b-041e-4724-b6d8-68bc6503b32f",
+      "result_id": "8200c4a0-3733-40e5-a8cf-323c5a9e11ee"
+    },
+    {
+      "claim_id": "9596c9bd-6e11-434a-9f8a-86a95707add0",
+      "result_id": "8200c4a0-3733-40e5-a8cf-323c5a9e11ee"
+    },
+    {
+      "claim_id": "2e3a6dec-2d26-4a9c-bce1-8c79b4328f3a",
+      "result_id": "8200c4a0-3733-40e5-a8cf-323c5a9e11ee"
+    },
+    {
+      "claim_id": "d4106799-3a6e-4082-ba7a-e8df2f0ff7c3",
+      "result_id": "8200c4a0-3733-40e5-a8cf-323c5a9e11ee"
+    },
+    {
+      "claim_id": "35969141-1a9c-463a-98cb-84315629d9d0",
+      "result_id": "66331426-eeaf-45cb-aeff-909ddc790300"
+    },
+    {
+      "claim_id": "fb44d70c-da40-46a7-a758-69e6c2c279ff",
+      "result_id": "66331426-eeaf-45cb-aeff-909ddc790300"
+    },
+    {
+      "claim_id": "5e29cc39-e4ce-4f60-8cc1-72b2775867dc",
+      "result_id": "66331426-eeaf-45cb-aeff-909ddc790300"
+    },
+    {
+      "claim_id": "37935333-0eb3-46ba-ac73-49e63fe8ba8a",
+      "result_id": "66331426-eeaf-45cb-aeff-909ddc790300"
+    },
+    {
+      "claim_id": "cf1b9382-277c-400d-a30d-3ae5da561ef3",
+      "result_id": "66331426-eeaf-45cb-aeff-909ddc790300"
+    },
+    {
+      "claim_id": "ef5dc7ef-177e-48f7-b71a-cacfe5008b85",
+      "result_id": "66331426-eeaf-45cb-aeff-909ddc790300"
+    },
+    {
+      "claim_id": "c3cb4e3a-7834-454a-984f-eacafa1b891c",
+      "result_id": "9bff8c60-41c3-49e0-82e7-469352b2c12a"
+    },
+    {
+      "claim_id": "020cac49-7b1f-47e6-97d4-27cfd774e4b4",
+      "result_id": "9bff8c60-41c3-49e0-82e7-469352b2c12a"
+    },
+    {
+      "claim_id": "0549c880-d489-4fa7-99a2-bf23592c6403",
+      "result_id": "9bff8c60-41c3-49e0-82e7-469352b2c12a"
+    },
+    {
+      "claim_id": "39f1f928-f4d0-41a7-92b5-892bdc864424",
+      "result_id": "9bff8c60-41c3-49e0-82e7-469352b2c12a"
+    },
+    {
+      "claim_id": "aea1ea44-7f51-4af3-beef-b005b307b00f",
+      "result_id": "9bff8c60-41c3-49e0-82e7-469352b2c12a"
+    },
+    {
+      "claim_id": "0451e4d8-4d7e-4a22-a80d-7a937b75c1d1",
+      "result_id": "9bff8c60-41c3-49e0-82e7-469352b2c12a"
+    },
+    {
+      "claim_id": "96acf876-d8d0-45cb-a854-f3facc169458",
+      "result_id": "9bff8c60-41c3-49e0-82e7-469352b2c12a"
+    },
+    {
+      "claim_id": "8354b35c-0e95-4d51-a452-24fec4c9aaa6",
+      "result_id": "e985dc52-b670-43a1-ab03-2507471d7bb8"
+    },
+    {
+      "claim_id": "0e8d2c7c-c4a3-48b9-860c-256773ba9cb6",
+      "result_id": "e985dc52-b670-43a1-ab03-2507471d7bb8"
+    },
+    {
+      "claim_id": "e8f706d2-d965-4f85-99eb-a1f3903519f6",
+      "result_id": "e985dc52-b670-43a1-ab03-2507471d7bb8"
+    },
+    {
+      "claim_id": "3f5893b6-6ba5-40c4-bda2-33efc792c71f",
+      "result_id": "daa3237c-0fa1-44a7-83c6-09283665d460"
+    },
+    {
+      "claim_id": "c3d422b0-3ebd-43e2-ad22-36f73eedc5a9",
+      "result_id": "daa3237c-0fa1-44a7-83c6-09283665d460"
+    },
+    {
+      "claim_id": "d8c6fd42-56a5-45c2-a986-91929f145683",
+      "result_id": "daa3237c-0fa1-44a7-83c6-09283665d460"
+    },
+    {
+      "claim_id": "f16385ba-f77a-404a-90a6-092b1cc63376",
+      "result_id": "daa3237c-0fa1-44a7-83c6-09283665d460"
+    },
+    {
+      "claim_id": "63713090-3cb7-45fd-8ebc-287e2d40cd5f",
+      "result_id": "daa3237c-0fa1-44a7-83c6-09283665d460"
+    },
+    {
+      "claim_id": "0f72f86a-265c-40ba-ac80-68c4233e944f",
+      "result_id": "daa3237c-0fa1-44a7-83c6-09283665d460"
+    },
+    {
+      "claim_id": "fdc199a5-be4c-488d-b3cf-bb83caee17ef",
+      "result_id": "daa3237c-0fa1-44a7-83c6-09283665d460"
+    },
+    {
+      "claim_id": "3efb908b-aab5-4d16-9ba4-20567afe25cb",
+      "result_id": "daa3237c-0fa1-44a7-83c6-09283665d460"
+    },
+    {
+      "claim_id": "60ca13fa-0c9b-4085-a49d-c1419500980b",
+      "result_id": "4d4905e6-a225-4472-82a3-f996de2f5c84"
+    },
+    {
+      "claim_id": "06fed7c3-169d-4725-bd2b-dea592df56dc",
+      "result_id": "4d4905e6-a225-4472-82a3-f996de2f5c84"
+    },
+    {
+      "claim_id": "7dd4beed-8c15-4a3c-8a6a-75fa17b9f2e0",
+      "result_id": "4d4905e6-a225-4472-82a3-f996de2f5c84"
+    },
+    {
+      "claim_id": "984a7ea7-7561-4530-ab0d-eb20890e6d62",
+      "result_id": "4d4905e6-a225-4472-82a3-f996de2f5c84"
+    },
+    {
+      "claim_id": "5f9214a9-4821-4d88-bf38-3de722065ecd",
+      "result_id": "ac7d945f-eef1-4107-a6a8-1320a3aebc8e"
+    },
+    {
+      "claim_id": "bd3b00d1-9deb-446d-b8ce-299a205de77e",
+      "result_id": "ac7d945f-eef1-4107-a6a8-1320a3aebc8e"
+    },
+    {
+      "claim_id": "36e4d506-104a-4bff-a00b-7814c42922fa",
+      "result_id": "ac7d945f-eef1-4107-a6a8-1320a3aebc8e"
+    },
+    {
+      "claim_id": "5c785e4a-da33-49ac-9e4d-43982c3fb074",
+      "result_id": "bfd8a6bf-6713-4394-98a4-376b17300085"
+    },
+    {
+      "claim_id": "e33a9ce3-1492-4912-9c54-ba1d615c6629",
+      "result_id": "bfd8a6bf-6713-4394-98a4-376b17300085"
+    },
+    {
+      "claim_id": "948cad22-c262-401a-9e03-3d1d303c98f4",
+      "result_id": "9ac3ac56-c46d-4986-9d3c-45d11192ed16"
+    },
+    {
+      "claim_id": "cf5d1469-e26a-4a5d-8a71-255c94027693",
+      "result_id": "9ac3ac56-c46d-4986-9d3c-45d11192ed16"
+    },
+    {
+      "claim_id": "e5ec61ee-7048-4f3a-8e57-a2e66d18c98e",
+      "result_id": "9ac3ac56-c46d-4986-9d3c-45d11192ed16"
+    },
+    {
+      "claim_id": "f0742e46-a4db-4c62-ad1c-38a93ce10e62",
+      "result_id": "9ac3ac56-c46d-4986-9d3c-45d11192ed16"
+    },
+    {
+      "claim_id": "0155c643-c238-487c-a7a1-8056deb69537",
+      "result_id": "9ac3ac56-c46d-4986-9d3c-45d11192ed16"
+    },
+    {
+      "claim_id": "78b3e6c2-6f97-4c79-92c2-0a8bce9ab73c",
+      "result_id": "2f6f4bd6-8310-4f70-a332-9aa677bd112c"
+    },
+    {
+      "claim_id": "8f8c567c-8474-44ab-9cd8-264bc765349a",
+      "result_id": "2f6f4bd6-8310-4f70-a332-9aa677bd112c"
+    },
+    {
+      "claim_id": "0bbf58a6-f1c9-4b5e-8b9e-6a916c566f03",
+      "result_id": "a743fc66-d251-48c4-be4e-7daeb4fed46f"
+    },
+    {
+      "claim_id": "e21b9d99-2daa-455b-ac48-56dbd0d2fff9",
+      "result_id": "a743fc66-d251-48c4-be4e-7daeb4fed46f"
+    },
+    {
+      "claim_id": "d4719a0d-f970-44f5-afab-c318a4ca3101",
+      "result_id": "a743fc66-d251-48c4-be4e-7daeb4fed46f"
+    },
+    {
+      "claim_id": "93ee51e6-a270-4a59-bda4-f0ff9f577817",
+      "result_id": "a743fc66-d251-48c4-be4e-7daeb4fed46f"
+    },
+    {
+      "claim_id": "717d0445-b4d4-4afa-acac-dcd55877a144",
+      "result_id": "a39bfdc4-f700-4f24-a54a-2886311f115b"
+    },
+    {
+      "claim_id": "461c1828-9937-43aa-9f6f-ea4aa5076241",
+      "result_id": "a39bfdc4-f700-4f24-a54a-2886311f115b"
+    },
+    {
+      "claim_id": "c336f5e7-c8cf-4280-9adb-53238cbfa191",
+      "result_id": "a39bfdc4-f700-4f24-a54a-2886311f115b"
+    },
+    {
+      "claim_id": "6b21eb37-755b-41af-b20d-900d3bac13a6",
+      "result_id": "a39bfdc4-f700-4f24-a54a-2886311f115b"
+    },
+    {
+      "claim_id": "dd8ac973-1b79-4b56-84e2-effbd034310d",
+      "result_id": "a39bfdc4-f700-4f24-a54a-2886311f115b"
+    },
+    {
+      "claim_id": "00000d50-ddc9-47fb-9255-4517aec8dd60",
+      "result_id": "b62d7048-49d7-45db-bf95-6861c8039d16"
+    },
+    {
+      "claim_id": "c0539041-326b-4bc2-b43b-d6bca999b253",
+      "result_id": "b62d7048-49d7-45db-bf95-6861c8039d16"
+    },
+    {
+      "claim_id": "4c5dbfa1-6d50-4b8d-95a6-5bf42f55cb25",
+      "result_id": "b62d7048-49d7-45db-bf95-6861c8039d16"
+    },
+    {
+      "claim_id": "9e77d289-0f63-410e-a248-5774dd776620",
+      "result_id": "e965b194-4c7b-4441-af04-15b9b6764bec"
+    },
+    {
+      "claim_id": "8daef125-8c5c-488f-a8ed-73db35316dd2",
+      "result_id": "e965b194-4c7b-4441-af04-15b9b6764bec"
+    },
+    {
+      "claim_id": "54495a74-cead-4bfe-a942-dd7d0ac78586",
+      "result_id": "e965b194-4c7b-4441-af04-15b9b6764bec"
+    },
+    {
+      "claim_id": "c53c0de7-5017-4f87-be00-37cc909ecda0",
+      "result_id": "9eb2a9f2-d2e0-46ba-b932-bee2bccda6d5"
+    },
+    {
+      "claim_id": "b6919007-6b46-4fbd-a2e1-51b6dbbf6d58",
+      "result_id": "9eb2a9f2-d2e0-46ba-b932-bee2bccda6d5"
+    },
+    {
+      "claim_id": "6c433f36-993b-44ea-9c60-54753e0759f6",
+      "result_id": "9eb2a9f2-d2e0-46ba-b932-bee2bccda6d5"
+    },
+    {
+      "claim_id": "c6f16001-6875-4031-8dad-341546301f0a",
+      "result_id": "9eb2a9f2-d2e0-46ba-b932-bee2bccda6d5"
+    },
+    {
+      "claim_id": "710e7b2e-827f-4db9-ba01-6e22dedbc015",
+      "result_id": "9eb2a9f2-d2e0-46ba-b932-bee2bccda6d5"
+    },
+    {
+      "claim_id": "7f3bbddf-4d9e-4285-b17c-c2bd27ec644c",
+      "result_id": "9eb2a9f2-d2e0-46ba-b932-bee2bccda6d5"
+    }
+  ],
+  "comparisons": []
+}

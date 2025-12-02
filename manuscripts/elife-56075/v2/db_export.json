@@ -1,0 +1,1940 @@
+{
+  "submission": {
+    "id": "22ee5ac3-4138-498b-9ab3-4c5ae9352c85",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:43:33.001988Z",
+    "updated_at": "2025-12-02T16:43:33.001988Z"
+  },
+  "content": [
+    {
+      "id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "submission_id": "22ee5ac3-4138-498b-9ab3-4c5ae9352c85",
+      "content_type": "manuscript",
+      "content_text": "# Srsf10 and the minor spliceosome control tissue-specific and dynamic SR protein expression\n\n## Authors\n\n- Stefan Meinke<sup>1</sup> ([ORCID: 0000-0001-5083-3383](https://orcid.org/0000-0001-5083-3383))\n- Gesine Goldammer<sup>1</sup>\n- A Ioana Weber<sup>1</sup>\n- Victor Tarabykin<sup>2</sup>\n- Alexander Neumann<sup>1</sup>\n- Marco Preussner<sup>1</sup> ([ORCID: 0000-0001-5155-0844](https://orcid.org/0000-0001-5155-0844)) \u2020\n- Florian Heyd<sup>1</sup> ([ORCID: 0000-0001-9377-9882](https://orcid.org/0000-0001-9377-9882)) \u2020\n\n### Affiliations\n\n1. Freie Universit\u00e4t Berlin, Institute of Chemistry and Biochemistry, Laboratory of RNA Biochemistry Berlin Germany\n2. Institute of Cell Biology and Neurobiology, Charit\u00e9-Universit\u00e4tsmedizin Berlin, corporate member of Freie Universit\u00e4t Berlin, Humboldt-Universit\u00e4t zu Berlin, and Berlin Institute of Health Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nMinor and major spliceosomes control splicing of distinct intron types and are thought to act largely independent of one another. SR proteins are essential splicing regulators mostly connected to the major spliceosome. Here, we show that Srsf10 expression is controlled through an autoregulated minor intron, tightly correlating Srsf10 with minor spliceosome abundance across different tissues and differentiation stages in mammals. Surprisingly, all other SR proteins also correlate with the minor spliceosome and Srsf10, and abolishing Srsf10 autoregulation by Crispr/Cas9-mediated deletion of the autoregulatory exon induces expression of all SR proteins in a human cell line. Our data thus reveal extensive crosstalk and a global impact of the minor spliceosome on major intron splicing.\n\n## Introduction\n\nAlternative splicing (AS) is a major mechanism that controls gene expression (GE) and expands the proteome diversity generated from a limited number of primary transcripts (Nilsen and Graveley, 2010). Splicing is carried out by a multi-megadalton molecular machinery called the spliceosome of which two distinct complexes exist. The more abundant major spliceosome that consists of the U1, U2, U4, U5, U6 small nuclear ribonucleoprotein particles (snRNPs) and multiple non-snRNP splicing factors. Additionally, the cells of most eukaryotes contain the minor spliceosome, which is composed of the minor-specific snRNPs U11, U12, U4atac, U6atac, and the shared U5 snRNP. While the major spliceosome catalyzes splicing of around 99.5% of all introns, mainly so-called U2-type introns with the characteristic GT-AG splice sites, the minor spliceosome recognizes introns of the U12-type containing non-consensus AT-AC splice sites and distinct branch point and polypyrimidine sequences (Jackson, 1991; Turunen et al., 2013). However, despite its low abundance, the minor spliceosome plays a fundamental role in ontogenesis, as deficiencies in minor spliceosome activity or minor intron splicing are lethal or result in developmental defects and disorders (Doggett et al., 2018; Verma et al., 2018).\n\nAS is highly regulated by cis-acting splicing enhancer and silencer elements, which are recognized by various RNA binding proteins, such as SR proteins and heterogeneous nuclear ribonucleoproteins (Hastings et al., 2001). The protein family of SR proteins, with 13 canonical members in humans, is characterized by an arginine and serine rich domain (RS domain) (Manley and Krainer, 2010). Aside from their role in mRNA nuclear export and GE they are essential regulators of AS (Long and Caceres, 2009). Every SR protein contains ultraconserved elements in alternative exons that control the presence of premature translation termination codons (PTC). This allows them to regulate their own abundance through nonsense-mediated decay (NMD) (Lareau et al., 2007). While many SR proteins and RBPs use autoregulation to maintain a stable expression level (M\u00fcller-McNicoll et al., 2019), their expression level changes in a tissue-specific manner (Wang et al., 2008; Olthof et al., 2019). Therefore, mechanisms aside from autoregulation are most likely employed to control SR protein levels under different conditions, for instance in different tissues or during differentiation. However, the mechanisms that coordinately regulate SR protein expression levels remain elusive.\n\nSRSF10 is a unique SR protein, as it activates splicing in its phosphorylated state but becomes a general splicing inhibitor upon dephosphorylation (Feng et al., 2008; Zhou et al., 2014). We used SRSF10 as a case study of how tissue-specific differences in SR protein levels can be achieved by employing an autoregulatory feedback loop. We show that Srsf10 recognizes a highly conserved splicing enhancer element within its own pre-mRNA, which results in the production of a non-protein coding mRNA isoform and thereby the regulation of its own expression level. An additional layer of Srsf10 regulation is added by the presence of competing major and minor splice sites which control this autoregulatory AS event. The minor splice site leads to the formation of the protein-coding mRNA, whereas splicing mediated by the major spliceosome leads to the non-protein-coding mRNA. Consequently, Srsf10 levels correlate with the level of the minor spliceosome in a tissue- and developmental stage-specific manner. Surprisingly, we also found that the expression levels of most other SR proteins correlate with Srsf10 expression. This is directly mediated through the levels of Srsf10 and the competition between major and minor splice sites, as CRISPR/Cas9-mediated removal of the autoregulatory exon 3 of Srsf10 increases not only the expression of Srsf10, but also the expression of the other SR proteins. These data connect the minor spliceosome with Srsf10 and SR protein expression in a tissue- and differentiation state-specific manner. We thus reveal a mechanism that coordinately controls SR protein expression in different cellular conditions and that connects the minor spliceosome with global (alternative) splicing of major introns.\n\n## Results and discussion\n\n### Srsf10 autoregulates its own splicing and expression\n\nAutoregulation has been described for many RBPs including most SR proteins (Lejeune et al., 2001; Sureau, 2001), but not for Srsf10. Srsf10 represents a particularly interesting example as its conserved region contains two competing 5\u2019 splice sites in exon 2 (E2), which are recognized by either the minor or the major spliceosome. The upstream (up) minor splice site is coupled to E4 inclusion and production of a protein coding mRNA, while use of the downstream (dn) major splice site is coupled to E3 inclusion, the presence of a PTC and the use of an alternative polyadenylation site in E3 (Figure 1A). The dn-E3 variant is not a canonical NMD target, as the stop codon in E2 is less than 50 nucleotides upstream of the E2/3 junction (Nagy and Maquat, 1998) and could thus encode for a hypothetical short protein (Srsf10-s, see below). To investigate whether AS of the competing minor and major splice site in exon 2 of Srsf10 depends on an autoregulatory feedback loop, we generated an Srsf10 minigene containing mouse exons 2 to 4 (Figure 1B, top). We transfected this minigene into human HeLa cells and investigated AS after knocking down the endogenous SRSF10. These experiments revealed strong autoregulation, as SRSF10 knockdown decreased the dn-E3 isoform and increased the up-E4 product and retention of intron 2 (IR, Figure 1B, bottom). We confirmed the knockdown of SRSF10 (Figure 1\u2014figure supplement 1A and B) and observed a reduced E3/E4 ratio for endogenous SRSF10 mRNA (Figure 1\u2014figure supplement 1B), consistent with SRSF10 activating E3 inclusion.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of the exon/intron structure of Srsf10.\u00a0Usage of the downstream (dn) major splice site in Srsf10 exon 2 (GT.AG, U2-type) leads to exon 3 inclusion and a non-protein coding isoform, while usage of the upstream minor splice site (AT.AC, U12-type) results in exon 4 inclusion. A minor 5\u2019 splice site in exon 3 is present but not used in the endogenous context (dotted lines). * indicate stop codons. (B) Srsf10 minigene splicing upon siRNA-mediated knockdown of endogenous Srsf10. Top: exon/intron structure of the Srsf10 minigene reporter containing mouse exons 2 to 4 (and complete intervening introns) with indicated primer binding sites (arrows). HeLa cells were transfected with control siRNA (siCtrl) or against human Srsf10 (siSrsf10), incubated for 24 hr followed by minigene transfection. After 48 hr splicing was analyzed with the indicated primers. Bottom: exemplary gel and quantification of the dn-E3 isoform (n\u00a0=\u00a05, mean\u00a0\u00b1\u00a0SD). (C) Knockdown and rescue of SRSF10. Top: Western Blot of SRSF10 after siRNA-mediated knockdown and transfection with overexpression vectors for the different GFP-tagged Srsf10 isoforms. VINCULIN was used as loading control. Middle: Exemplary gel of Srsf10 minigene splicing upon knockdown and rescue. Bottom: Quantification of the dn-E3 isoform (n\u00a0\u2265\u00a03, mean\u00a0\u00b1\u00a0SD). (D) Exon/intron structure of the Srsf10 minigenes used for mutational analysis. Exon and intron sequences were replaced by sequences containing a minor intron from glia maturation factor beta (Gmfb exons 4 to 5 including the minor intron 4, marked in red). Below the sequence of the identified ESE is shown. (E) Quantification of Srsf10 minigene splicing upon knockdown and rescue. HeLa cells were transfected with the mutated minigenes (D) and analyzed as in (B). Splicing of mutants is shown relative to the wt from (B) and for each mutant relative to the Ctrl siRNA (n\u00a0=\u00a05, mean\u00a0\u00b1\u00a0SD). Student\u2019s t test-derived p values *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) Confirmation of the Srsf10 knockdown.\u00a0In (A) SRSF10 protein levels were investigated by Western Blot using an SRSF10-specific antibody. Note that both SRSF10 variants (fl and \u22122) are strongly reduced. The remaining signal for SRSF10-fl could indicate some unspecific detection of a different (SR)-protein. HNRNP L served as a loading control. In (B) confirmation of the Srsf10 knockdown on mRNA level is shown. The expression of the different Srsf10 isoforms is shown relative to Gapdh and control siRNA (n\u00a0\u2265\u00a06, mean\u00a0\u00b1\u00a0SD). Note the reduced dn-E3/up-E4 ratio after knockdown of Srsf10. (C) Overexpression of SRSF10 variants as in Figure 1C. Top: Overexpression of the SRSF10 variants was investigated with an antibody detecting the GFP epitope. SRSF10-s was not detectably expressed. VINCULIN served as a loading control. Bottom: Representative image of splicing analysis of co-transfected minigenes. (D) Dose-dependent Srsf10 autoregulation. HeLa cells were cotransfected with the minigene, decreasing amounts of SRSF10-fl or \u22122 (0.1, 0.05, or 0.025 \u00b5g plasmid) and adjusted amounts of GFP. Expression was confirmed using an antibody against GFP (top). Note the higher expression levels of SRSF10-2. VINCULIN served as a loading control. Bottom: Splicing analysis of cotransfected minigenes (n\u00a0=\u00a02, mean\u00a0\u00b1\u00a0SD). Note that barely detectable amounts of SRSF10 already change splicing with a stronger effect of SRSF10-fl, especially prominent given the lower expression level of this variant.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013D) Analysis of mutated minigene splicing via radioactive RT-PCR in knockdown (siSrsf10) and knockdown-rescue with SRSF10-fl (siSrsf10 +fl) conditions.\u00a0In each panel on top the investigated minigene and the primers used are shown. Below, a representative gel with indicated splicing isoforms. The I3 mutant (A) was investigated as the WT in Figure 1C. After mutation of the polyA site in exon 3, mutants E3 and I2 (B and C) could be investigated with only BGH reverse, amplifying both splicing isoforms. The ESE mutant (D) was investigated with a second reverse primer in exon 3 (E3.2), and is shown in comparison to a transfected WT minigene in duplicates. The asterisk marks a degradation product most likely of dn-E3. Note that SRSF10 dependent generation of up-E4 and IR is abolished in the mutant. We observe less IR in the mutant in control condiitons, indicating that the SRSF10-dependent splicing enhancer sequence has an additional role in controlling splicing.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig1-figsupp3-v2.jpg)\n\nAS of Srsf10 results in three possible protein isoforms: SRSF10-fl (inclusion of exon 7a), SRSF10-2 (inclusion of exon 7b, see Figure 1A), and a hypothetical protein resulting from exon 3 inclusion (stop codon within the dn-E2 sequence, see Figure 1A). To investigate the activity of these protein isoforms in regulating AS, we performed rescue experiments with GFP-tagged Srsf10 mouse variants (not targeted by the human-specific siRNA). A Western blot against Srsf10 shows expression of GFP-Srsf10-fl and GFP-Srsf10-2 close to endogenous levels, while GFP-Srsf10-s was not detectable (Figure 1\u2014figure supplement 1C, top). Consistently, Srsf10-fl and Srsf10-2 clearly rescue exon 3 mis-splicing caused by the knockdown of endogenous SRSF10, while transfecting Srsf10-s has no effect on Srsf10 AS (Figure 1C). We obtained the same result when overexpressing the different Srsf10 variants with no knockdown of the endogenous protein, confirming Srsf10-fl and Srsf10-2 as activators of exon 3 inclusion and Srsf10-s as a barely expressed protein (Figure 1\u2014figure supplement 1C). Since the presence of Srsf10-s is hardly detectable, even with a stabilizing GFP tag, we assume that this protein variant is highly instable and does not have a biological function. To compare the activities of Srsf10-fl and Srsf10-2, we performed titration experiments. This demonstrated highly sensitive Srsf10 autoregulation, with Srsf10-fl, despite its lower expression levels, being a more potent activator of E3 inclusion than Srsf10-2 (Figure 1\u2014figure supplement 1D). These data identify Srsf10 as an activator of the major intron between exons 2 and 3 and suggest that Srsf10 autoregulates its own expression level via a negative feedback loop, as higher Srsf10 levels result in the formation of the non-protein-coding dn-E3 isoform.\n\nTo identify the cis-regulatory element required for autoregulation, we used systematic mutational analysis of the Srsf10 minigene (Figure 1D, Figure 1\u2014figure supplement 2, A\u2013D). First, we replaced sequences downstream of exon 3 by human Gmfb sequences from exons 4 to 5, including a minor intron (mutant I3, see \u2018Material and Methods\u2019 for details). This reflects the endogenous situation, as Srsf10 exon 3 contains a minor 5\u2019 splice site, which, however, is rarely used, since the polyadenylation site in exon 3 appears to be dominant (Figure 1A). The resulting minigene clearly remains responsive to SRSF10 knockdown and overexpression (Figure 1E,\u00a0I3). In contrast, replacing sequences starting from exon 3 (E3) or in intron 2 (I2) by Gmfb sequences results in splicing unresponsive to SRSF10 knockdown and barely responsive to SRSF10 overexpression (Figure 1E; mutants E3 and I2). These data suggest that SRSF10 controls its own splicing via binding to exon 3, which, indeed, contains a GA-rich element representing the previously identified SRSF10 consensus binding site (Shin and Manley, 2002; Zhou et al., 2014). Replacing nucleotides 17 to 60 of exon 3 by GMFB exon \ufeff4 sequence was sufficient to abolish SRSF10-mediated AS (Figure 1D and E, ESE; Figure 1\u2014figure supplement 3), thus identifying this GA-rich element as an SRSF10-dependent exonic splicing enhancer (ESE). Together, these data identify a highly conserved element in Srsf10 exon 3 which is necessary for an autoregulatory feedback loop that controls Srsf10 expression levels.\n\n### The minor spliceosome controls Srsf10 expression\n\nExon 2 of Srsf10 contains two competing 5\u2019 splice sites, which are specifically recognized by either the minor or the major spliceosome. To investigate the relevance of these splice sites for Srsf10 autoregulation, we generated mutated minigenes containing either only major or only minor splice site (Figure 2A) and analyzed AS of the resulting minigenes. Mutated minigenes remained clearly responsive to SRSF10 knockdown and rescue, demonstrating that SRSF10 can regulate AS through both major and minor spliceosomes. However, in the control conditions (siCtrl), we observed that both minor-only or major-only minigenes show a strong increase in the use of exon 4 (Figure 2B). Exon 3 is hardly included at all in any of the two minigenes. Additionally, in the presence of a directly competing upstream splice site in exon 2, the downstream splice site is no longer used (Figure 2B, Figure 2\u2014figure supplement 1). These data indicate that, in vivo, the use of the minor splice site that leads to productive Srsf10 splicing, is reduced through the presence of a competing major splice site. This arrangement could render Srsf10 expression susceptible to dynamic control through alterations in the activity of the minor spliceosome. To directly investigate this hypothesis, we inhibited minor spliceosome activity by performing an siRNA-mediated knockdown of the essential U11/U12 snRNP component RNPC3 (Figure 2C). Indeed, the expression of the coding SRSF10 mRNA (up-E4) was significantly decreased, while the levels of the non-coding dn-E3 mRNA are unaffected or slightly increased (Figure 2C). This result indicates that the abundance of the minor spliceosome directly correlates with Srsf10 GE through controlling productive vs. non-productive AS. Furthermore, regulation through the activity of the minor spliceosome appears to, at least partially, overrule the autoregulatory feedback loop. This suggests a model in which the activity of the minor spliceosome sets the expression level of Srsf10, which is then maintained through autoregulation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of the exon/intron structure of the Srsf10 WT and mutated minigenes harboring only major (GT.AG, blue) or minor (AT.AC, red) splice sites. Mutated splice sites are marked in red. (B) Minigenes from (A) were analyzed as in Figure 1. Quantification of splicing-sensitive RT-PCRs is shown relative to the WT from Figure 1B (n\u00a0=\u00a04, mean +/-\u00a0SD). A representative gel is shown in Figure 2\u2014figure supplement 1. (C) RT-qPCRs confirm siRNA-mediated knockdown of Rnpc3 (left) and changes in Srsf10 expression levels in HEK293. Expression relative to Gapdh and normalized to siCtrl (n\u00a0=\u00a03, mean +/-\u00a0SD). Student\u2019s t test-derived p values *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Minigene splicing of major and minor minigenes described and quantified in Figure 2A and B. Note that in the absence of competition between minor and major splice sites, we observe mainly splicing from the upstream 5\u2019 splice site and the downstream 5\u2019 splice site is rarely used.\n\n### Minor spliceosome and SR protein expression correlate in a tissue-specific manner\n\nTo investigate the relevance of this mechanism in vivo, we analyzed the correlation of Srsf10 GE levels with expression of the minor spliceosome component Rnpc3 across 25 different mouse tissues (Figure 3A). Calculated transcripts per million (tpm) values using Whippet Quant (Sterne-Weiler et al., 2018) revealed clear tissue-specific expression patterns for both Srsf10 and Rnpc3. Both genes show the lowest GE in blood cells and the highest in thymus (Figure 3A). Notably, a linear regression fit revealed an almost perfect correlation of Srsf10 and Rnpc3 expression across the 25 investigated tissues (R\u00b2=0.85, p<0.0001, Figure 3B). Similarly, SRSF10 and RNPC3 GE levels correlate across 31 human tissues (R\u00b2=0.33, p=0.0006, Figure 3\u2014figure supplement 1A). In contrast, the levels of the housekeeping gene Gapdh, which contains no minor intron, do not correlate with Rnpc3 (R\u00b2=0.01, p=0.4071, Figure 3C). Similar correlation coefficients were obtained with gene expression values determined independently using Salmon (Patro et al., 2017; Figure 3\u2014figure supplement 1B and C). Globally, minor intron-containing genes correlate much more strongly with Rnpc3 levels than a randomly chosen group of expression level-matched genes containing only major introns (Figure 3D), indicating that Rnpc3 levels represent an adequate indicator for minor spliceosome activity. Consistently, Rnpc3 levels, and therefore Srsf10 levels, also correlate with the expression levels of two other minor spliceosome components, namely Snrnp25 and Snrp48 (Figure 3\u2014figure supplement 1D and E). These in vivo GE data are consistent with our model that minor spliceosome activity controls Srsf10 levels. As an additional model system, we compared Rnpc3 and Srsf10 levels during neuronal differentiation of mouse embryonic stem cells (ES cells). GE levels correlate significantly (R\u00b2=0.34, p=0.0006, Figure 3\u2014figure supplement 1F), while Gapdh levels do not correlate with Rnpc3 (R\u00b2=0.02, p=0.4365, Figure 3\u2014figure supplement 1G). Again, globally, minor intron-containing genes show a stronger correlation with Rnpc3 levels than genes containing only major introns (Figure 3\u2014figure supplement 1H). The Srsf10/Rnpc3 correlation in ES cell differentiation is less pronounced \u2013 also with Salmon derived tpm values (Figure 3\u2014figure supplement 1I) \u2013 indicating other factors influencing gene expression. Normalization of gene expression using DESeq2 (Love et al., 2014) strongly increases this correlation (Figure 3\u2014figure supplement 1J), which is consistent with a direct role of the minor spliceosome in regulating Srsf10 levels across different tissues and development stages. In summary, together with our minigene and knockdown results, these data indicate that the activity of the minor spliceosome controls productive vs unproductive Srsf10 splicing and expression levels during development and in a tissue-specific manner.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig3-v2.jpg)\n\n**Figure 3.:** (A) Relative GE levels of Srsf10 and Rnpc3 across 25 mouse tissues (x-axis).\u00a0Transcripts per million (tpm) values were calculated using Whippet (Sterne-Weiler et al., 2018) (n\u00a0\u2265\u00a02, mean +/-\u00a0SEM). (B, C) Linear regression fit for comparison of Srsf10 (B) and Gapdh (C) GE/tpm values with Rnpc3 across the 25 different mouse tissues. Goodness of fit is represented by R2 and p-values. (D) Calculated p-values (left) and R2 values (right) of a global correlation analysis of Rnpc3 with minor intron containing genes (n\u00a0=\u00a0587) or randomly chosen expression matched genes, containing only major introns (n\u00a0=\u00a0629). Statistical significance was determined by an unpaired t-test ****p<0.0001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Linear regression analysis of Srsf10 and Rnpc3 expression values (fpkm, fragments per kilobase of exon model per million reads mapped) across 31 human tissues (Uhl\u00e9n et al., 2015). (B, C) Linear regression analysis of Srsf10 or Gapdh and Rnpc3 using Salmon derived tpm values. (D, E) Linear regression analysis of calculated tpm values for minor spliceosome components Snrnp25 (D) and Snrnp48 (E) against Rnpc3 in 25 mouse tissues. (F, G) Correlation analysis of calculated tpm values for Srsf10 (F) and Gapdh (G) against Rnpc3 in differentiating mouse ES cells (Hubbard et al., 2012). (H) Global correlation analysis of Rnpc3 to minor intron containing genes or randomly chosen expression matched genes containing only major introns. Calculated p-values (left) and R2 values (right) are shown. Statistical significance was determined by an unpaired t-test **p<0.01, ****p<0.0001. (I, J) Correlation analysis of calculated tpm values for Srsf10 against Rnpc3 in differentiating mouse ES cells using either Salmon-derived (I), or Salmon-derived and DESeq2-normalized (J) expression levels.\n\n### SRSF10 and the minor spliceosome control tissue-specific and dynamic SR protein expression\n\nTo investigate whether the minor spliceosome exclusively controls Srsf10 expression, we next examined the expression levels of all other SR proteins in a tissue- and developmental stage-specific manner. Surprisingly, we found that the expression of all SR proteins correlates with the minor spliceosome, represented by Rnpc3, in the 25 investigated tissues (R\u00b2>0.42, p<0.0001, Figure 4A and Figure 4\u2014figure supplement 1A). Additionally, we observed a highly similar expression pattern for all SR proteins during neuronal differentiation of mouse ES cells (Figure 4B and Figure 4\u2014figure supplement 1B) and a significant correlation with Rnpc3 (Figure 4\u2014figure supplement 1C). To experimentally confirm these results in vivo, we isolated RNA from mouse cerebral cortices from embryonic days (E) 12.5 and 15.5. RT-qPCR analysis revealed a significant increase of Rnpc3 GE from E 12.5 to E 15.5 and, in parallel, Srsf10 levels also increased (Figure 4C and D). This is consistent with our model that higher minor spliceosome activity (indicated by higher Rnpc3 abundance) results in preferential usage of the Srsf10 up-E4 minor splice site, which leads to an increase in protein coding Srsf10 mRNA. Consistent with SR protein expression patterns from different tissues or stem cell development in RNA-Seq data (Figure 4A and B), all other tested SR proteins are also upregulated during the transition from E 12.5 to E 15.5 (Figure 4D), which, again, indicates a co-regulation of SR proteins, even though Srsf10 is the only SR protein that contains a minor intron. As SR proteins are known to cross-regulate each other (Bradley et al., 2015), we hypothesized that a change in Srsf10 levels could directly influence the levels of other SR proteins. To test this, we generated a CRISPR/Cas9-edited cell line lacking the non-productive SRSF10 exon 3 (Figure 4E, left). Homozygous removal of exon 3 was confirmed by PCRs at the genomic level (Figure 4E, right) and, as expected, we observe increased SRSF10 expression (Figure 4F, see Figure 4\u2014figure supplement 1D for protein expression). Interestingly, we observe a stronger increase in the less active SRSF10-2 isoform (Figure 4\u2014figure supplement 1D), indicating that AS of the last exon could be used to partially compensate for the loss of autoregulation via exon 3. Next, to examine whether manipulation of SRSF10 autoregulation is sufficient to change the overall activity of SRSF10, we analyzed AS of SRSF10 target exons (Zhou et al., 2014; Wei et al., 2015). Consistent with increased SRSF10 expression, the inclusion of alternative exons in BCLAF1, PTBP2 and ZFP207 is promoted in the CRISPR/Cas9-edited cells, and the opposite is observed by knockdown of SRSF10 (Figure 4\u2014figure supplement 1E). Notably, increased SRSF10 in our CRISPR/Cas9-edited cell line was sufficient for subtle upregulation of the mRNA levels of all other SR proteins (Figure 4F). In addition, reduced SRSF10 expression upon RNPC3 knockdown also correlates with slightly decreased expression of most other SR proteins (Figure 4\u2014figure supplement 1F). In summary, these data suggest a model where minor spliceosome activity directly controls SRSF10 levels, which is sufficient to change expression levels of the other SR proteins in a tissue- and differentiation state-specific manner (Figure 4\u2014figure supplement 2). An exciting question that remains is how SRSF10 is able to coordinately regulate the abundance of the other SR proteins. Cross-regulatory mechanisms are known for many RBPs (Kumar and Lopez, 2005; Rossbach et al., 2009) and we therefore speculate that SRSF10 could regulate other SR proteins (and potentially other RBPs) by repressing the formation of NMD-targeted isoforms from their pre-mRNAs. This could be mediated either directly, by binding to the respective pre-mRNAs, or indirectly, through interactions with other SR proteins. Additionally, differences in SR protein abundance could be achieved by changing their activity. Higher mRNA abundance could be the consequence of reduced SR protein activity, resulting in reduced autoregulatory NMD exon inclusion and therefore higher mRNA expression levels (Ni et al., 2007). The activity of SR proteins is, amongst others, controlled by their phosphorylation level (Goldammer et al., 2018), and could be controlled by a direct or indirect effect of SRSF10 on the regulating kinases and phosphatases. While these mechanistic details remain to be investigated, the control of SR protein levels through the minor spliceosome and SRSF10 is of fundamental importance, as SR protein levels will have consequences for the splicing of most major introns. Our data thus reveal a mechanism through which the activity of the minor spliceosome controls major intron splicing in a tissue- and differentiation state-specific manner. This may also be relevant for diseases caused by minor spliceosome deficiencies (Jutzi et al., 2018; Verma et al., 2018), as misregulation of SR proteins and consequently, defects in major intron splicing (Cologne et al., 2019), may contribute to the observed phenotypes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig4-v2.jpg)\n\n**Figure 4.:** (A) Linear regression analysis of calculated tpm values for SR proteins against Rnpc3 in 25 different mouse tissues.\u00a0R2 and p-values are shown on the right. See also Figure 4\u2014figure supplement 1A with all SR proteins colored. Due to generally low expression levels Srsf12 was omitted. (B) Comparison of tpm values of SR proteins during mouse ES cell differentiation (n\u00a0\u2265\u00a03, mean\u00a0\u00b1\u00a0SD). See also Figure 4\u2014figure supplement 1B and C. (C) Rnpc3 GE levels in mouse cortex samples of the developmental stages E 12.5 and E 15.5 (relative to Gapdh, normalized to time point E 12.5) (n\u00a0\u2265\u00a04, mean\u00a0\u00b1\u00a0SD). (D) SR protein expression in mouse cortex samples of the developmental stages E 12.5 and E 15.5. For Srsf10 only the functional up-E4 isoform was analyzed (relative to Gapdh, normalized to time point E 12.5) (n\u00a0\u2265\u00a04, mean\u00a0\u00b1\u00a0SD). (E) Generation of clonal HEK293 cell lines lacking the regulatory Srsf10 exon 3. Left: Schematic of CRISPR/Cas9-mediated deletion of Srsf10 exon 3. Arrows indicate primer binding sites. Right: genotyping PCR on genomic DNA. (F) Relative SR protein expression in WT HEK293 cells or Srsf10\u0394E3 cells. For Srsf10 only the functional up-E4 isoform was analyzed (relative to Gapdh, normalized to WT) (n\u00a0=\u00a03, mean +/-\u00a0SD). Statistical significance was determined by an unpaired t-test *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Linear regression analysis of calculated tpm values for the SR proteins against Rnpc3 in 25 different mouse tissues as shown in Figure 4A with all SR proteins colored.\u00a0(B) Comparison of GE/tpm values of SR proteins during mouse ES cell differentiation as shown in Figure 4B with all SR proteins colored. (C) Linear regression analysis of SR proteins against Rnpc3 in neuronal differentiating mouse ES cells. R2 and p-values are shown on the right. Quantifications are based on Salmon and DESeq2 based expression levels. (D) SRSF10-fl and SRSF10-2 protein levels in CRISPR/Cas9-edited HEK293 cells (\u0394E3) were analyzed by Western Blot and quantified relative to HNRNP L (n\u00a0=\u00a03, mean\u00a0\u00b1\u00a0SD). (E) SRSF10 target gene splicing (top: Bclaf1, middle: Ptbp2, bottom: Zfp207) in WT and CRISPR/Cas9-edited cells (\u0394E3) and after Srsf10 knockdown. Representative gels for radioactive RT-PCRs and quantifications of SRSF10 target gene splicing in \u0394E3 cells and upon siRNA-mediated knockdown, relative to WT or siCtrl, respectively (n\u00a0=\u00a03, mean\u00a0\u00b1\u00a0SD). (F) mRNA expression levels of SR proteins in HEK293 cells upon Rnpc3 knockdown. SR protein expression levels are normalized to siCtrl (n\u00a0=\u00a03, mean +/-\u00a0SD). Student\u2019s t test-derived p values *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56075/elife-56075-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Reduced minor spliceosome activity results in increased formation of an unproductive SRSF10 variant through exon 3 inclusion via the major spliceosome. High minor spliceosome activity results in splicing to exon 4 and formation of protein-coding isoforms. SRSF10 regulates both its own expression level and the expression of other SR proteins.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Mus musculus)</td>\n      <td>Srsf10</td>\n      <td>ncbi</td>\n      <td>GeneID:14105</td>\n      <td>Exons 2\u20134</td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>Gmfb</td>\n      <td>ncbi</td>\n      <td>GeneID:2764</td>\n      <td>Exon 4\u20135</td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens)</td>\n      <td>Srsf10</td>\n      <td>ncbi</td>\n      <td>GeneID:10772</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HeLa</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0030</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293</td>\n      <td>ATCC</td>\n      <td>RRID:CVCL_0045</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293\u0394E3</td>\n      <td>This paper</td>\n      <td></td>\n      <td>CRISPR/Cas9-mediated deletion of Srsf10 exon 3; see Figure 4 and Materials and methods Part</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Mus musculus, NMRI strain)</td>\n      <td>Cortices</td>\n      <td>This paper</td>\n      <td></td>\n      <td>developmental stages E 12.5 and E 15.5; see Figure 4 and Materials and methods Part</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-FUSIP1 (T-18)\u00a0(human, monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>RRID:AB_1123037</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP (B-2)(monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>RRID:AB_627695</td>\n      <td>1:5000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Vinculin (H-300)\u00a0(rabbit, polyclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>RRID:AB_2214507</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-hnRNP L (4D11)\u00a0(human, monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>RRID:AB_627736</td>\n      <td>1:10000</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Mouse Srsf10 minigene</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Figure 1 + with Figure 1\u2014figure supplements 1 and 2; and Materials and methods part</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mouse Srsf10-fl-GFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Figure 1 + with Figure 1\u2014figure supplements 1 and 2; and Materials and methods part</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mouse Srsf10-2-GFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Figure 1 + with Figure 1\u2014figure supplements 1 and 2; and Materials and methods part</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>mouse Srsf10-s-GFP</td>\n      <td>This paper</td>\n      <td></td>\n      <td>See Figure 1 + with Figure 1\u2014figure supplements 1 and 2; and Materials and methods part</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PX459 vector</td>\n      <td>Kindly provided by Stefan Mundlos</td>\n      <td>RRID:Addgene_62988</td>\n      <td>For sgRNA cloning and transfection</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pEGFP-N3</td>\n      <td>Clontech</td>\n      <td></td>\n      <td>SRSF10 expression construct</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pcDNA3.1(+)</td>\n      <td>Invitrogen</td>\n      <td>Catalog no: V79020</td>\n      <td>Minigene cloning</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>siRNA against human Srsf10 (siSrsf10)</td>\n      <td>This paper</td>\n      <td>GCGUGAAUUUGGUUAUdTdT</td>\n      <td>Knockdown of endogenous Srsf10</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>siRNA against human Rnpc3\u00a0(siRnpc3)</td>\n      <td>This paper</td>\n      <td>GAAAGAAGGUCGUAUGAAAdTdT</td>\n      <td>Knockdown of endogenous Rnpc3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Control siRNA (siCtrl)</td>\n      <td>This paper</td>\n      <td>UUUGUAAUCGUCGAUACCCdTdT</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgRNA: SRSF10_E3_3fw</td>\n      <td>Benchling Tool</td>\n      <td>RRID:SCR_013955</td>\n      <td>Sequence: caccgctactttactcggtaagcca; CRISPR/Cas9-mediated deletion of Srsf10 exon 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgRNA: SRSF10_E3_3rv</td>\n      <td>Benchling Tool</td>\n      <td>RRID:SCR_013955</td>\n      <td>Sequence: aaactggcttaccgagtaaagtagc; CRISPR/ Cas9-mediated deletion of Srsf10 exon 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgRNA: SRSF10_E3_5fw</td>\n      <td>Benchling Tool</td>\n      <td>RRID:SCR_013955</td>\n      <td>Sequence: caccgtgagtttcagaagcatgaat; CRISPR/Cas9-mediated deletion of Srsf10 exon 3</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>sgRNA: SRSF10_E3_5rv</td>\n      <td>Benchling Tool</td>\n      <td>RRID:SCR_013955</td>\n      <td>sequence: aaacattcatgcttctgaaactcac; CRISPR/Cas9-mediated deletion of Srsf10 exon 3</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PowerUp SYBR Green Mastermix</td>\n      <td>ThermoFisher Scientific</td>\n      <td>A25742</td>\n      <td>RT-qPCR</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Roti-Fect</td>\n      <td>Carl Roth</td>\n      <td>Order no:P001.1</td>\n      <td>Plasmid vector transfection</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism 7.05</td>\n      <td>GraphPad</td>\n      <td>RRID:SCR_002798</td>\n      <td>Statistical analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageQuant TL</td>\n      <td>GE Life Sciences</td>\n      <td>RRID:SCR_014246</td>\n      <td>quantification</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Whippet v0.11</td>\n      <td>Sterne-Weiler et al., 2018</td>\n      <td>RRID:SCR_018349</td>\n      <td>Tpm calculation</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Salmon v1.2.0</td>\n      <td>Patro et al., 2017</td>\n      <td>RRID:SCR_017036</td>\n      <td>Tpm calculation</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>TxImport v1.14.0</td>\n      <td>Soneson et al., 2015</td>\n      <td>RRID:SCR_016752</td>\n      <td>Import of transcript counts to R for normalization wit DESeq</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>DESeq2 v1.26.0</td>\n      <td>Love et al., 2014</td>\n      <td>RRID:SCR_015687</td>\n      <td>Transcript counts normalization</td>\n    </tr>\n  </tbody>\n</table>\n\n### Tissue cell culture\n\nHEK293 and HeLa cells were cultured in standard conditions. Transfections were done with Rotifect according to the manufacturer\u2019s instructions. For siRNA sequences see Supplementary file 1.\u00a0Minigenes were transfected 24 hr after knockdown and RNAs were isolated 48 hr later. For overexpression and rescue experiments, cells were transfected using 0.4 \u00b5g of minigenes and 0.4 \u00b5g expression vectors for GFP-tagged Srsf10-fl, Srsf10-2 or Srsf10-s (or GFP alone). 48 hr after transfection cells were harvested for protein and/or RNA preparation. We perform monthly test for mycoplasms using PCR. Cell have been tested negative in all tests during the experiments performed for the present study. The cells morphologically appear as expected for Hek293 and HeLa cells respectively. We have used these Hek293 cells in several RNA-Seq experiments and compared gene expression with published Hek293 datasets and found very good correlation.\n\n### Preparation of embryonic mouse cortices for RNA extraction\n\nColonies of wild type mice of the NMRI strain were maintained in the animal facilities of Charit\u00e9-Universit\u00e4tsmedizin Berlin. Tissue collection was performed in compliance with German Animal Welfare Law and regulations imposed by the State Office for Health and Social Affairs Council in Berlin/Landesamt f\u00fcr Gesundheit und Soziales (LAGeSo).\n\nMice were bred for timed pregnancies, and the date of vaginal plug detection was considered embryonic day 0.5. Pregnancies were timed accordingly, and embryos prepared at the indicated embryonic days. Prior to the preparation of embryos, all tools were thoroughly cleaned with RNAse AWAY solution (Thermo Fisher, cat. no. 10328011). The uteri were dissected into DEPC-treated PBS, and the embryonic brains quickly transferred to a solution of 2M NaCl in PBS for RNA stabilization. Cortices were dissected and then snap frozen in liquid nitrogen.\n\n### Molecular cloning\n\nFor cloning of the different Srsf10 overexpression constructs inserts were amplified from mouse cDNA and cloned into pEGFP-N3 (Clontech) using XhoI and BamHI restriction sites introduced through PCR primers. For minigene cloning, mouse genomic DNA was used as template to amplify Srsf10 exons 2 to 4 and the product was cloned into pcDNA3.1(+). See Supplementary file 1 for\u00a0cloning primer sequences. For mutational analysis Srsf10 exons/introns were replaced by sequences from the human GMFB gene: exons 4 to 5, intron 4 is a minor intron. New inserts were amplified by 1-step or 2-step PCR and cloned into pcDNA3.1(+) using BamHI and XhoI or into the WT minigene using internal restrictions sites (BsrGI for exon 3 and XbaI for intron 3). In the I3 mutant 356 nt of Srsf10 exon 3 were maintained, the downstream sequence was replaced by the 5\u2019 splice site of GMFB exon 4 (TCGatatcc\u2026) and downstream sequence. For the E3 mutant sequences downstream of the BsrGI site (+16 in exon 3) were replaced by GMFB exon 4 to 5 sequence starting with (5\u2019-CACCAGA\u2026). For the ESE mutant nucleotids 17 to 60 of exon 3 were replaced by GMFB exon 4 sequence. For the minigene containing only minor splice sites we replaced the major splice sites of Srsf10 intron 2 by minor splice sites of GMFB intron 4 (5\u2019 splice site: 5\u2019-TCGatatcc; 3\u2019 splice site: 5\u2019-ttctttaacttgagaaaaacCTT). In the minigene containing only major splice sites the upstream 5\u2019 splice site of exon 2 and the 3\u2019 splice site of exon 4 were replaced by major splice sites from GMFB intron 5 or 3, respectively (5\u2019 splice site: 5\u2019-TTGgtaagt; 3\u2019 splice site: 5\u2019-gcttttctctgtggtgccagGGC). All constructs were confirmed by sequencing.\n\n### RT-PCR and RT-qPCR\n\nRT-PCRs and RT-qPCRs were performed as previously described (Preu\u00dfner et al., 2017). See Supplementary file 1 for primer sequences.\n\n### Western blot\n\nWestern Blot analyses were done as previously described (Preu\u00dfner et al., 2017). The following antibodies were used: \u03b1SRSF10/FUSIP1 (T-18, Santa Cruz), \u03b1GFP (B-2, Santa Cruz), \u03b1VINCULIN (H-300, Santa Cruz) and \u03b1HNRNPL (4D11, Santa Cruz) antibodies. Western blots were quantified using the ImageQuant TL software.\n\n### RNA-Seq analysis\n\nTranscripts per million (tpm) values were extracted from previously published RNA sequencing data using Whippet version 0.11 (Sterne-Weiler et al., 2018) and mouse reference genome mm10. Data for mouse tissues were obtained from WT control samples from SRA study DRP003641 (Tanikawa et al., 2017), data for neuronal differentiation of mouse ES cells from SRA study SRP017778 (Hubbard et al., 2012). Additionally, skin samples from SRP115206 were analyzed. For comparison, transcript abundances were additionally quantified using salmon version 1.2.0 (Patro et al., 2017). To obtain normalized expression counts, transcripts were imported to R using TxImport version 1.14.0 (Soneson et al., 2015) and count normalization was performed using DESeq2 version 1.26.0 (Love et al., 2014). DESeq2 based normalized expression counts dramatically increased the variance of replicate tissue samples (but not of ES cell differentiation), which is why we chose to analyze only the un-normalized values for the tissue comparisons. To investigate GE levels from different human tissues, fpkm values were directly used from Uhl\u00e9n et al. (2015). Linear regression fits were performed in GraphPad Prism 7.05. A list of minor intron containing genes is based on Olthof et al. (2019). Genes with a comparable distribution of GE levels were randomly chosen from the remaining only major intron containing genes. The GE of each gene was compared to Rnpc3 levels across tissues or development stages. Unexpressed genes were excluded from the analysis. Downstream analyses were performed using standard Python 2 code and GraphPad Prism.\n\n### Generation of CRISPR/Cas9-edited cell lines\n\nFor CRISPR/Cas9-mediated deletion of SRSF10 exon 3 sgRNAs were designed using the Benchling tool (for sequences see Supplementary file 1) and cloned into the PX459 vector. Cells were transfected using Rotifect following the manufacturer's protocol. 48 hr after transfection, transfected cells were selected with 1 \u03bcg/ml puromycin and clonal cell lines were isolated by dilution (Ran et al., 2013). Genomic DNA from clonally expanded lines was extracted and analyzed by PCR.\n",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "2f5ff0b0-3144-4d6e-92f2-c1754a156adf",
+      "submission_id": "22ee5ac3-4138-498b-9ab3-4c5ae9352c85",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, Case Western Reserve University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56075.sa1](https://doi.org/10.7554/eLife.56075.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Srsf10 and the minor spliceosome control tissue-specific and dynamic SR protein expression\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor, Timothy Nilsen, and James Manley as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nAs you will see, the reviewers were quite positive about the work and reviewer 3 was very enthusiastic. The reviewing editor was also enthusiastic about the manuscript. Nevertheless, the reviewers have raised some concerns regarding the data and its interpretation. Please address these points as thoroughly as possible via revision. It is not necessary to delete the impact of Srsf10 expression on other SR proteins.\n\nReviewer #2:\n\nThis paper describes an unusual regulatory feedback process in the alternative splicing of the Srsf10 gene involving competition between major and minor intron splice sites. Several RNA binding proteins self-regulate their protein levels by inclusion of alternative \"poison exons\" that include premature stop codons. Srsf10 appears to have a poison exon 3 who's exclusion requires minor spliceosome activity. This part of the paper seems solid. They then show that there is a general correlation of the expression levels of many SR proteins including Srsf10. This has been described before and similar correlations can be seen in ribosomal protein genes indicating that they are under coordinate regulation. The authors then remove the poison exon from the Srsf10 gene and argue that the results support a key role for Srsf10 and, by extension, the minor spliceosome in controlling the mRNA levels of SR genes in general. The key results shown in Figure 4E do not, to me, support this idea. The authors speculate that alterations in mRNA levels are due to NMD. A direct demonstration would be more convincing. With the data they show, I think they should focus on the Srsf10 case alone rather than pushing for a more global mechanism.\n\nReviewer #3:\n\nIn this work, Meinke et al. demonstrate that alternative splicing of Srsf10 is formed via competition between the major and the minor spliceosome using different splice sites. These in turn lead to functional isoforms that skip exon 3 (minor spliceosome) or inclusion of exon 3 (major spliceosome) in a mostly non functional isoform which encodes a PTC and utilizes an alternative 3' end. The authors show that similar to other Sr proteins Srsf10 regulates its own levels via the inclusion of exon 3 and find a short site in that exon that is sufficient to achieve that regulation. They also perform rescue experiments with SRSF10 mouse variants in human HeLa cells, and a titration experiment with the different isoforms detected (Figure 1). KD of Rnpc3 of the minor spliceosome changes the splicing and expression of Srsf10 as expected (Figure 2). Expression of Srsf10 correlates well with expression of Rnpc3 across diverse mouse tissues, and as expected Rnpc3 levels correlate much better with expression of intron containing genes than matched expression levels of genes with only major introns (Figure 3). When removing exon3 control of Srsf10 levels via CRISPR the expression of Srsf10 increase by ~3.5fold but six other SR genes expression levels rises significantly, and these too correlate well with expression of Rnpc3 (Figure 4). The overall regulatory model is summarized in Figure 4\u2014figure supplement 2.\n\nOverall, we really liked this work. The authors should be congratulated for a thorough line of thoughtful experiments in support of their regulatory model as mentioned above. The manuscript is clearly written and we enjoyed reading it. We have few general comments/suggestions that should be addressed/clarified.\n\n1) Are the changes in Rnpc3 observed in tissues in the same range as done in the titration experiments?\n\n2) Expression computation and correlations: It's not clear how these were computed and whether these were done properly. The authors state TPM were derived by Whippet (Figure 3\u2014figure supplement 1) but Whippet is designed only for splicing changes. It's not clear how Whippet would give full transcripts, and more importantly weighted gene level TPM values. Furthermore, TPM is not a proper measure to compare across many different experiments/conditions (it's not as bad as RPKM but still not great). Between sample normalization should be applied as implemented in DESeq and TMM. See for example https://haroldpimentel.wordpress.com/2014/12/08/in-rna-seq-2-2-between-sample-normalization/\n\n3) Figure 4: We understand where these p-values come from, but we are still worried about possible artifacts in the normalization procedures that might affect the results (also see above). Another way to compute a p-value and address the above concern is to compute an empirical p-value compared to sampling a large set of similarly expressed genes and computing the correlation values for them. True, some may be bona fide targets as well, but presumably this population of targets is rather small and the Sr proteins correlations stand out.\n",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "067fcffd-431b-4499-8afd-5afcbd77b7d7",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C1",
+      "claim": "Minor and major spliceosomes control splicing of distinct intron types and are thought to act largely independent of one another.",
+      "claim_type": "EXPLICIT",
+      "source": "Minor and major spliceosomes control splicing of distinct intron types and are thought to act largely independent of one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific understanding about the relationship between minor and major spliceosomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "99af0289-1f98-4523-9288-6c27e6d0d321",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C2",
+      "claim": "SR proteins are essential splicing regulators mostly connected to the major spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "SR proteins are essential splicing regulators mostly connected to the major spliceosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about SR proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "2d7b0047-9d37-48c4-a919-b9cfd76850f4",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C3",
+      "claim": "Srsf10 expression is controlled through an autoregulated minor intron.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Srsf10 expression is controlled through an autoregulated minor intron, tightly correlating Srsf10 with minor spliceosome abundance across different tissues and differentiation stages in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data demonstrating this mechanism through minigene experiments and knockdown studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "383292e7-1f64-46d9-8c9d-74d4e715f77d",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C4",
+      "claim": "Srsf10 tightly correlates with minor spliceosome abundance across different tissues and differentiation stages in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Srsf10 expression is controlled through an autoregulated minor intron, tightly correlating Srsf10 with minor spliceosome abundance across different tissues and differentiation stages in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents RNA-Seq analysis showing correlation between Srsf10 and Rnpc3 expression across tissues and developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "5d1c3e54-0a07-4357-8e1c-3c3c3d8ce032",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C5",
+      "claim": "All other SR proteins correlate with the minor spliceosome and Srsf10.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, all other SR proteins also correlate with the minor spliceosome and Srsf10, and abolishing Srsf10 autoregulation by Crispr/Cas9-mediated deletion of the autoregulatory exon induces expression of all SR proteins in a human cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents RNA-Seq data showing correlation of SR protein expression with Rnpc3 and Srsf10 across tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "35d29c47-b16a-4da0-8e92-7f9be6a9ad7d",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C6",
+      "claim": "Abolishing Srsf10 autoregulation by Crispr/Cas9-mediated deletion of the autoregulatory exon induces expression of all SR proteins in a human cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, all other SR proteins also correlate with the minor spliceosome and Srsf10, and abolishing Srsf10 autoregulation by Crispr/Cas9-mediated deletion of the autoregulatory exon induces expression of all SR proteins in a human cell line.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents RT-qPCR data from CRISPR/Cas9-edited cell lines showing increased SR protein expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "819cf22d-d72b-4861-8cd0-954058492aa0",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C7",
+      "claim": "There is extensive crosstalk between the minor and major spliceosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data thus reveal extensive crosstalk and a global impact of the minor spliceosome on major intron splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that minor spliceosome activity affects SR protein expression, which in turn affects major intron splicing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "2bfa88d0-3dbb-4c09-b02e-9ed2e584a8cb",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C8",
+      "claim": "The minor spliceosome has a global impact on major intron splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data thus reveal extensive crosstalk and a global impact of the minor spliceosome on major intron splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that minor spliceosome activity controls SR protein expression, which regulates major intron splicing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "8393bd5a-2b16-4bc1-b7fb-ea8dd1621181",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C9",
+      "claim": "Alternative splicing is a major mechanism that controls gene expression and expands the proteome diversity generated from a limited number of primary transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternative splicing (AS) is a major mechanism that controls gene expression (GE) and expands the proteome diversity generated from a limited number of primary transcripts (Nilsen and Graveley, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nilsen and Graveley, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "94d057ea-d403-4b1c-b0d2-fe71f2c661c3",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C10",
+      "claim": "The major spliceosome consists of the U1, U2, U4, U5, U6 small nuclear ribonucleoprotein particles (snRNPs) and multiple non-snRNP splicing factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The more abundant major spliceosome that consists of the U1, U2, U4, U5, U6 small nuclear ribonucleoprotein particles (snRNPs) and multiple non-snRNP splicing factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the composition of the major spliceosome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "d1efa523-db47-44ac-bbbe-97faa626b517",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C11",
+      "claim": "The minor spliceosome is composed of the minor-specific snRNPs U11, U12, U4atac, U6atac, and the shared U5 snRNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the cells of most eukaryotes contain the minor spliceosome, which is composed of the minor-specific snRNPs U11, U12, U4atac, U6atac, and the shared U5 snRNP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the composition of the minor spliceosome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "8ff45fe5-40a3-41f7-8870-1473999656e8",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C12",
+      "claim": "The major spliceosome catalyzes splicing of around 99.5% of all introns.",
+      "claim_type": "EXPLICIT",
+      "source": "While the major spliceosome catalyzes splicing of around 99.5% of all introns, mainly so-called U2-type introns with the characteristic GT-AG splice sites, the minor spliceosome recognizes introns of the U12-type containing non-consensus AT-AC splice sites and distinct branch point and polypyrimidine sequences (Jackson, 1991; Turunen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jackson, 1991 and Turunen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "aa6f739a-9944-4cf8-996e-2002186038d5",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C13",
+      "claim": "The major spliceosome mainly splices U2-type introns with the characteristic GT-AG splice sites.",
+      "claim_type": "EXPLICIT",
+      "source": "While the major spliceosome catalyzes splicing of around 99.5% of all introns, mainly so-called U2-type introns with the characteristic GT-AG splice sites, the minor spliceosome recognizes introns of the U12-type containing non-consensus AT-AC splice sites and distinct branch point and polypyrimidine sequences (Jackson, 1991; Turunen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jackson, 1991 and Turunen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "df5cdca2-59ac-45c0-9509-bbb75bb70ef9",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C14",
+      "claim": "The minor spliceosome recognizes introns of the U12-type containing non-consensus AT-AC splice sites and distinct branch point and polypyrimidine sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "While the major spliceosome catalyzes splicing of around 99.5% of all introns, mainly so-called U2-type introns with the characteristic GT-AG splice sites, the minor spliceosome recognizes introns of the U12-type containing non-consensus AT-AC splice sites and distinct branch point and polypyrimidine sequences (Jackson, 1991; Turunen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jackson, 1991 and Turunen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "8600c016-8d52-408d-b34a-7aec395e13f1",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C15",
+      "claim": "The minor spliceosome plays a fundamental role in ontogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite its low abundance, the minor spliceosome plays a fundamental role in ontogenesis, as deficiencies in minor spliceosome activity or minor intron splicing are lethal or result in developmental defects and disorders (Doggett et al., 2018; Verma et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Doggett et al., 2018 and Verma et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "d97cc7b7-3e3b-49df-a17f-75a1f57413c4",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C16",
+      "claim": "Deficiencies in minor spliceosome activity or minor intron splicing are lethal or result in developmental defects and disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite its low abundance, the minor spliceosome plays a fundamental role in ontogenesis, as deficiencies in minor spliceosome activity or minor intron splicing are lethal or result in developmental defects and disorders (Doggett et al., 2018; Verma et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Doggett et al., 2018 and Verma et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "13481784-5150-46cf-be7b-7821d39632b9",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C17",
+      "claim": "Alternative splicing is highly regulated by cis-acting splicing enhancer and silencer elements, which are recognized by various RNA binding proteins, such as SR proteins and heterogeneous nuclear ribonucleoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "AS is highly regulated by cis-acting splicing enhancer and silencer elements, which are recognized by various RNA binding proteins, such as SR proteins and heterogeneous nuclear ribonucleoproteins (Hastings et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hastings et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "884fcccf-3214-4277-aca2-cf6215a737b1",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C18",
+      "claim": "The protein family of SR proteins has 13 canonical members in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein family of SR proteins, with 13 canonical members in humans, is characterized by an arginine and serine rich domain (RS domain) (Manley and Krainer, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Manley and Krainer, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "2ef15c14-ea03-4684-a9df-c274400a88b2",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C19",
+      "claim": "SR proteins are characterized by an arginine and serine rich domain (RS domain).",
+      "claim_type": "EXPLICIT",
+      "source": "The protein family of SR proteins, with 13 canonical members in humans, is characterized by an arginine and serine rich domain (RS domain) (Manley and Krainer, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Manley and Krainer, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "53619635-ab7a-47a7-ab45-5fd4fb6330f4",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C20",
+      "claim": "SR proteins are essential regulators of alternative splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from their role in mRNA nuclear export and GE they are essential regulators of AS (Long and Caceres, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Long and Caceres, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "78a9a46b-f845-43b4-8109-7fb02951903a",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C21",
+      "claim": "SR proteins have a role in mRNA nuclear export and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from their role in mRNA nuclear export and GE they are essential regulators of AS (Long and Caceres, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Long and Caceres, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "138a4349-1833-4e44-9208-702dfeb36309",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C22",
+      "claim": "Every SR protein contains ultraconserved elements in alternative exons that control the presence of premature translation termination codons (PTC).",
+      "claim_type": "EXPLICIT",
+      "source": "Every SR protein contains ultraconserved elements in alternative exons that control the presence of premature translation termination codons (PTC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the structure of SR protein genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "c7e00602-6d5f-4dea-8223-63b47fda7d51",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C23",
+      "claim": "SR proteins regulate their own abundance through nonsense-mediated decay (NMD).",
+      "claim_type": "EXPLICIT",
+      "source": "This allows them to regulate their own abundance through nonsense-mediated decay (NMD) (Lareau et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lareau et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "8df2ea3a-b037-4f70-8c65-801fc12d76ea",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C24",
+      "claim": "Many SR proteins and RBPs use autoregulation to maintain a stable expression level.",
+      "claim_type": "EXPLICIT",
+      "source": "While many SR proteins and RBPs use autoregulation to maintain a stable expression level (M\u00fcller-McNicoll et al., 2019), their expression level changes in a tissue-specific manner (Wang et al., 2008; Olthof et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to M\u00fcller-McNicoll et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "036349bd-dd36-4afc-a38a-1f460a11b102",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C25",
+      "claim": "SR protein expression levels change in a tissue-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "While many SR proteins and RBPs use autoregulation to maintain a stable expression level (M\u00fcller-McNicoll et al., 2019), their expression level changes in a tissue-specific manner (Wang et al., 2008; Olthof et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang et al., 2008 and Olthof et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "50ec4f4e-eb12-42a4-ac80-1adf9112dedd",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C26",
+      "claim": "Mechanisms aside from autoregulation are most likely employed to control SR protein levels under different conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, mechanisms aside from autoregulation are most likely employed to control SR protein levels under different conditions, for instance in different tissues or during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that SR protein levels change in a tissue-specific manner despite autoregulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "f1549379-1fad-49d2-96b2-bf48506ec20d",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C27",
+      "claim": "The mechanisms that coordinately regulate SR protein expression levels remain elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mechanisms that coordinately regulate SR protein expression levels remain elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "497cc37f-e07a-4ed6-b392-953b291f3ec5",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C28",
+      "claim": "SRSF10 is a unique SR protein, as it activates splicing in its phosphorylated state but becomes a general splicing inhibitor upon dephosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "SRSF10 is a unique SR protein, as it activates splicing in its phosphorylated state but becomes a general splicing inhibitor upon dephosphorylation (Feng et al., 2008; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Feng et al., 2008 and Zhou et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "f90974dc-7cf3-469a-8ce3-0aa352ad8681",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C29",
+      "claim": "SRSF10 knockdown decreased the dn-E3 isoform and increased the up-E4 product and retention of intron 2.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments revealed strong autoregulation, as SRSF10 knockdown decreased the dn-E3 isoform and increased the up-E4 product and retention of intron 2 (IR, Figure 1B, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "2d846dd1-3bae-4fca-9c6b-64f0d29de6a8",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C30",
+      "claim": "SRSF10 activates E3 inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the knockdown of SRSF10 (Figure 1\u2014figure supplement 1A and B) and observed a reduced E3/E4 ratio for endogenous SRSF10 mRNA (Figure 1\u2014figure supplement 1B), consistent with SRSF10 activating E3 inclusion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "fb7fb348-d7d6-47cd-a8cf-146de69b989a",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C31",
+      "claim": "Srsf10-fl and Srsf10-2 rescue exon 3 mis-splicing caused by the knockdown of endogenous SRSF10.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Srsf10-fl and Srsf10-2 clearly rescue exon 3 mis-splicing caused by the knockdown of endogenous SRSF10, while transfecting Srsf10-s has no effect on Srsf10 AS (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "41bda82c-8c9e-4524-a2d8-22d32949ca42",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C32",
+      "claim": "Transfecting Srsf10-s has no effect on Srsf10 AS.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Srsf10-fl and Srsf10-2 clearly rescue exon 3 mis-splicing caused by the knockdown of endogenous SRSF10, while transfecting Srsf10-s has no effect on Srsf10 AS (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "0239d347-a9bc-4acd-b651-3ad472139f20",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C33",
+      "claim": "Srsf10-fl is a more potent activator of E3 inclusion than Srsf10-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrated highly sensitive Srsf10 autoregulation, with Srsf10-fl, despite its lower expression levels, being a more potent activator of E3 inclusion than Srsf10-2 (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "4695b791-d345-4b9a-b2e2-c08d632bc3dd",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C34",
+      "claim": "Srsf10 autoregulates its own expression level via a negative feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "These data identify Srsf10 as an activator of the major intron between exons 2 and 3 and suggest that Srsf10 autoregulates its own expression level via a negative feedback loop, as higher Srsf10 levels result in the formation of the non-protein-coding dn-E3 isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that SRSF10 activates E3 inclusion, which leads to a non-coding isoform.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "5f6fc379-dbe3-4a75-95ee-c165660f08d5",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C35",
+      "claim": "Higher Srsf10 levels result in the formation of the non-protein-coding dn-E3 isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "These data identify Srsf10 as an activator of the major intron between exons 2 and 3 and suggest that Srsf10 autoregulates its own expression level via a negative feedback loop, as higher Srsf10 levels result in the formation of the non-protein-coding dn-E3 isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing that SRSF10 overexpression increases E3 inclusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "de6d7258-570c-4073-80eb-ee184111a2fd",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C36",
+      "claim": "Replacing sequences starting from exon 3 (E3) or in intron 2 (I2) by Gmfb sequences results in splicing unresponsive to SRSF10 knockdown and barely responsive to SRSF10 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, replacing sequences starting from exon 3 (E3) or in intron 2 (I2) by Gmfb sequences results in splicing unresponsive to SRSF10 knockdown and barely responsive to SRSF10 overexpression (Figure 1E; mutants E3 and I2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "9683e071-00c7-4c26-b629-8d2637ca6a7c",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C37",
+      "claim": "SRSF10 controls its own splicing via binding to exon 3.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that SRSF10 controls its own splicing via binding to exon 3, which, indeed, contains a GA-rich element representing the previously identified SRSF10 consensus binding site (Shin and Manley, 2002; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutational analysis data and supported by citations to Shin and Manley, 2002 and Zhou et al., 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "d287ea7c-4759-40eb-b493-01bdc211ba1a",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C38",
+      "claim": "Exon 3 of Srsf10 contains a GA-rich element representing the previously identified SRSF10 consensus binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that SRSF10 controls its own splicing via binding to exon 3, which, indeed, contains a GA-rich element representing the previously identified SRSF10 consensus binding site (Shin and Manley, 2002; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shin and Manley, 2002 and Zhou et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "c27ca6ee-1c22-4c03-844e-abf59769ca2a",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C41",
+      "claim": "A highly conserved element in Srsf10 exon 3 is necessary for an autoregulatory feedback loop that controls Srsf10 expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data identify a highly conserved element in Srsf10 exon 3 which is necessary for an autoregulatory feedback loop that controls Srsf10 expression levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mutational analysis data showing that the ESE in exon 3 is required for SRSF10-mediated autoregulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "c89c5097-e783-46ff-a024-72408d36144e",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C42",
+      "claim": "Exon 2 of Srsf10 contains two competing 5' splice sites, which are specifically recognized by either the minor or the major spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Exon 2 of Srsf10 contains two competing 5' splice sites, which are specifically recognized by either the minor or the major spliceosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the genomic structure of Srsf10.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "acb8b37a-bdac-4c66-900c-9a31838eb08c",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C43",
+      "claim": "Mutated minigenes containing either only major or only minor splice sites remained clearly responsive to SRSF10 knockdown and rescue.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutated minigenes remained clearly responsive to SRSF10 knockdown and rescue, demonstrating that SRSF10 can regulate AS through both major and minor spliceosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from minigene experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "13810794-2137-439d-aaaa-f8f7c8030b8e",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C44",
+      "claim": "SRSF10 can regulate AS through both major and minor spliceosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutated minigenes remained clearly responsive to SRSF10 knockdown and rescue, demonstrating that SRSF10 can regulate AS through both major and minor spliceosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from minigene experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "2cf0f1c6-7128-4d89-bbf5-c4f8a453df96",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C45",
+      "claim": "Both minor-only or major-only minigenes show a strong increase in the use of exon 4 in control conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the control conditions (siCtrl), we observed that both minor-only or major-only minigenes show a strong increase in the use of exon 4 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "58477a45-c97c-4548-b303-0846bf4e7b53",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C46",
+      "claim": "Exon 3 is hardly included at all in either the minor-only or major-only minigenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Exon 3 is hardly included at all in any of the two minigenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from minigene experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "e1170b48-6018-48c0-8642-cb1155d135c0",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C47",
+      "claim": "In the presence of a directly competing upstream splice site in exon 2, the downstream splice site is no longer used.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in the presence of a directly competing upstream splice site in exon 2, the downstream splice site is no longer used (Figure 2B, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "7b4343c1-8143-414f-b434-bda40ea4c7fe",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C48",
+      "claim": "In vivo, the use of the minor splice site that leads to productive Srsf10 splicing is reduced through the presence of a competing major splice site.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that, in vivo, the use of the minor splice site that leads to productive Srsf10 splicing, is reduced through the presence of a competing major splice site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the minigene data showing that removing competition increases minor splice site usage.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "fc7ddd48-1976-4dcd-a54e-c511c8e12fc7",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C49",
+      "claim": "The arrangement of competing splice sites could render Srsf10 expression susceptible to dynamic control through alterations in the activity of the minor spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This arrangement could render Srsf10 expression susceptible to dynamic control through alterations in the activity of the minor spliceosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed competition between splice sites.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "b4d00875-e76a-4fc1-bb36-ca1f4f1ace85",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C50",
+      "claim": "siRNA-mediated knockdown of RNPC3 significantly decreased the expression of the coding SRSF10 mRNA (up-E4).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the expression of the coding SRSF10 mRNA (up-E4) was significantly decreased, while the levels of the non-coding dn-E3 mRNA are unaffected or slightly increased (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "2b971106-6131-4a11-92dc-38ad115c8670",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C51",
+      "claim": "siRNA-mediated knockdown of RNPC3 left the levels of the non-coding dn-E3 mRNA unaffected or slightly increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the expression of the coding SRSF10 mRNA (up-E4) was significantly decreased, while the levels of the non-coding dn-E3 mRNA are unaffected or slightly increased (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "05356e50-8c63-4222-a7a4-0ae9e895771b",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C52",
+      "claim": "The abundance of the minor spliceosome directly correlates with Srsf10 GE through controlling productive vs. non-productive AS.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the abundance of the minor spliceosome directly correlates with Srsf10 GE through controlling productive vs. non-productive AS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNPC3 knockdown data showing that reduced minor spliceosome activity decreases productive Srsf10 splicing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "e57240af-9473-40a2-bbc0-b46fe4915c99",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C53",
+      "claim": "Regulation through the activity of the minor spliceosome appears to, at least partially, overrule the autoregulatory feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, regulation through the activity of the minor spliceosome appears to, at least partially, overrule the autoregulatory feedback loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that minor spliceosome activity affects Srsf10 expression despite autoregulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "91e29a05-6b8a-43e1-9737-765c81480324",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C54",
+      "claim": "The activity of the minor spliceosome sets the expression level of Srsf10, which is then maintained through autoregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a model in which the activity of the minor spliceosome sets the expression level of Srsf10, which is then maintained through autoregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "23bfa7eb-8870-4d6d-aa47-3e44be587227",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C55",
+      "claim": "Srsf10 and Rnpc3 show tissue-specific expression patterns across 25 different mouse tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Calculated transcripts per million (tpm) values using Whippet Quant (Sterne-Weiler et al., 2018) revealed clear tissue-specific expression patterns for both Srsf10 and Rnpc3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-Seq data analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "67184b73-02c1-420b-b668-9479eb221db2",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C56",
+      "claim": "Both Srsf10 and Rnpc3 show the lowest GE in blood cells and the highest in thymus.",
+      "claim_type": "EXPLICIT",
+      "source": "Both genes show the lowest GE in blood cells and the highest in thymus (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-Seq data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "b80c2cae-d006-49d7-add4-d0054a62b378",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C57",
+      "claim": "Srsf10 and Rnpc3 expression show an almost perfect correlation across the 25 investigated tissues (R\u00b2=0.85, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a linear regression fit revealed an almost perfect correlation of Srsf10 and Rnpc3 expression across the 25 investigated tissues (R\u00b2=0.85, p<0.0001, Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of RNA-Seq data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "ec19a716-db36-4f4e-a7e2-c1a4ec3e7118",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C58",
+      "claim": "SRSF10 and RNPC3 GE levels correlate across 31 human tissues (R\u00b2=0.33, p=0.0006).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SRSF10 and RNPC3 GE levels correlate across 31 human tissues (R\u00b2=0.33, p=0.0006, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of RNA-Seq data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "19770f7a-7dde-4df4-9c3c-f4b08b4a5713",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C59",
+      "claim": "The levels of the housekeeping gene Gapdh do not correlate with Rnpc3 (R\u00b2=0.01, p=0.4071).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the levels of the housekeeping gene Gapdh, which contains no minor intron, do not correlate with Rnpc3 (R\u00b2=0.01, p=0.4071, Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of RNA-Seq data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "106cc8a8-67a6-42be-ae9b-2459cedbe671",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C60",
+      "claim": "Minor intron-containing genes correlate much more strongly with Rnpc3 levels than a randomly chosen group of expression level-matched genes containing only major introns.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, minor intron-containing genes correlate much more strongly with Rnpc3 levels than a randomly chosen group of expression level-matched genes containing only major introns (Figure 3D), indicating that Rnpc3 levels represent an adequate indicator for minor spliceosome activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by global correlation analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "f75b2765-7ff8-4977-95fe-6972ea3c3fe6",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C61",
+      "claim": "Rnpc3 levels represent an adequate indicator for minor spliceosome activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, minor intron-containing genes correlate much more strongly with Rnpc3 levels than a randomly chosen group of expression level-matched genes containing only major introns (Figure 3D), indicating that Rnpc3 levels represent an adequate indicator for minor spliceosome activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that minor intron-containing genes correlate more strongly with Rnpc3 than major intron-containing genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "ba9debdc-f1b9-493b-82bb-113aa5fef96e",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C62",
+      "claim": "Rnpc3 levels correlate with the expression levels of two other minor spliceosome components, namely Snrnp25 and Snrp48.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Rnpc3 levels, and therefore Srsf10 levels, also correlate with the expression levels of two other minor spliceosome components, namely Snrnp25 and Snrp48 (Figure 3\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "631292c1-ce5d-4c59-a6d3-378892a2e697",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C63",
+      "claim": "Rnpc3 and Srsf10 levels correlate significantly during neuronal differentiation of mouse embryonic stem cells (R\u00b2=0.34, p=0.0006).",
+      "claim_type": "EXPLICIT",
+      "source": "GE levels correlate significantly (R\u00b2=0.34, p=0.0006, Figure 3\u2014figure supplement 1F), while Gapdh levels do not correlate with Rnpc3 (R\u00b2=0.02, p=0.4365, Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "7e13c05a-2afc-45a4-aef1-95188d8ab781",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C64",
+      "claim": "Gapdh levels do not correlate with Rnpc3 during neuronal differentiation of mouse embryonic stem cells (R\u00b2=0.02, p=0.4365).",
+      "claim_type": "EXPLICIT",
+      "source": "GE levels correlate significantly (R\u00b2=0.34, p=0.0006, Figure 3\u2014figure supplement 1F), while Gapdh levels do not correlate with Rnpc3 (R\u00b2=0.02, p=0.4365, Figure 3\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "04c1bf95-7eb9-4d23-97d5-fe38ec85247b",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C65",
+      "claim": "Minor intron-containing genes show a stronger correlation with Rnpc3 levels than genes containing only major introns during ES cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, globally, minor intron-containing genes show a stronger correlation with Rnpc3 levels than genes containing only major introns (Figure 3\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by global correlation analysis shown in Figure 3\u2014figure supplement 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "94d0f1cd-4845-4e0c-9a9b-d57a1554fe70",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C66",
+      "claim": "Normalization of gene expression using DESeq2 strongly increases the Srsf10/Rnpc3 correlation during ES cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization of gene expression using DESeq2 (Love et al., 2014) strongly increases this correlation (Figure 3\u2014figure supplement 1J), which is consistent with a direct role of the minor spliceosome in regulating Srsf10 levels across different tissues and development stages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3\u2014figure supplement 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "7b2d1f5d-c90f-4ccf-a7df-acb221928fb7",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C67",
+      "claim": "The minor spliceosome has a direct role in regulating Srsf10 levels across different tissues and development stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Normalization of gene expression using DESeq2 (Love et al., 2014) strongly increases this correlation (Figure 3\u2014figure supplement 1J), which is consistent with a direct role of the minor spliceosome in regulating Srsf10 levels across different tissues and development stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation data and supported by the experimental knockdown results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "8dfebb9b-5d2b-49d6-a353-2ea897a5bdfb",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C68",
+      "claim": "The activity of the minor spliceosome controls productive vs unproductive Srsf10 splicing and expression levels during development and in a tissue-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, together with our minigene and knockdown results, these data indicate that the activity of the minor spliceosome controls productive vs unproductive Srsf10 splicing and expression levels during development and in a tissue-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined minigene, knockdown, and RNA-Seq data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "fe5673a4-ef0f-40b1-91b2-38d2fc203819",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C69",
+      "claim": "The expression of all SR proteins correlates with the minor spliceosome, represented by Rnpc3, in the 25 investigated tissues (R\u00b2>0.42, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that the expression of all SR proteins correlates with the minor spliceosome, represented by Rnpc3, in the 25 investigated tissues (R\u00b2>0.42, p<0.0001, Figure 4A and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of RNA-Seq data shown in Figure 4A and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "70d0f6f0-ee9e-45b1-849a-8fe8f4f81844",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C70",
+      "claim": "All SR proteins show a highly similar expression pattern during neuronal differentiation of mouse ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed a highly similar expression pattern for all SR proteins during neuronal differentiation of mouse ES cells (Figure 4B and Figure 4\u2014figure supplement 1B) and a significant correlation with Rnpc3 (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-Seq data shown in Figure 4B and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "138ad170-6bd6-40d4-adad-48f1c5007e3d",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C71",
+      "claim": "All SR proteins show a significant correlation with Rnpc3 during neuronal differentiation of mouse ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we observed a highly similar expression pattern for all SR proteins during neuronal differentiation of mouse ES cells (Figure 4B and Figure 4\u2014figure supplement 1B) and a significant correlation with Rnpc3 (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "567a97f4-cabd-4611-9762-2b484493e2cd",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C72",
+      "claim": "Rnpc3 GE significantly increases from embryonic day 12.5 to 15.5 in mouse cerebral cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR analysis revealed a significant increase of Rnpc3 GE from E 12.5 to E 15.5 and, in parallel, Srsf10 levels also increased (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "84181e05-2767-421d-97bc-e49ed75e7468",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C73",
+      "claim": "Srsf10 levels increase from embryonic day 12.5 to 15.5 in mouse cerebral cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR analysis revealed a significant increase of Rnpc3 GE from E 12.5 to E 15.5 and, in parallel, Srsf10 levels also increased (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "2c444f26-322b-44e8-9312-87db4eaf2fc2",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C74",
+      "claim": "Higher minor spliceosome activity results in preferential usage of the Srsf10 up-E4 minor splice site, which leads to an increase in protein coding Srsf10 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our model that higher minor spliceosome activity (indicated by higher Rnpc3 abundance) results in preferential usage of the Srsf10 up-E4 minor splice site, which leads to an increase in protein coding Srsf10 mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between Rnpc3 and Srsf10 levels during development.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "d55c8148-ddac-4db4-9bdf-e1918cc5790e",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C75",
+      "claim": "All other tested SR proteins are upregulated during the transition from embryonic day 12.5 to 15.5 in mouse cerebral cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with SR protein expression patterns from different tissues or stem cell development in RNA-Seq data (Figure 4A and B), all other tested SR proteins are also upregulated during the transition from E 12.5 to E 15.5 (Figure 4D), which, again, indicates a co-regulation of SR proteins, even though Srsf10 is the only SR protein that contains a minor intron.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "a34fda1b-cb01-4363-9475-5b667f4072b5",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C76",
+      "claim": "Srsf10 is the only SR protein that contains a minor intron.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with SR protein expression patterns from different tissues or stem cell development in RNA-Seq data (Figure 4A and B), all other tested SR proteins are also upregulated during the transition from E 12.5 to E 15.5 (Figure 4D), which, again, indicates a co-regulation of SR proteins, even though Srsf10 is the only SR protein that contains a minor intron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the genomic structure of SR protein genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "7a3e0ec2-9869-43ad-9f46-873f6b5a3681",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C77",
+      "claim": "SR proteins are known to cross-regulate each other.",
+      "claim_type": "EXPLICIT",
+      "source": "As SR proteins are known to cross-regulate each other (Bradley et al., 2015), we hypothesized that a change in Srsf10 levels could directly influence the levels of other SR proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bradley et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "f1ab03fa-0710-4ae8-861e-51ce065df273",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C78",
+      "claim": "A change in Srsf10 levels could directly influence the levels of other SR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As SR proteins are known to cross-regulate each other (Bradley et al., 2015), we hypothesized that a change in Srsf10 levels could directly influence the levels of other SR proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the known cross-regulation of SR proteins.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "b8d31ee1-0eb9-4613-a527-6ed04d043f21",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C79",
+      "claim": "Homozygous removal of exon 3 in SRSF10 results in increased SRSF10 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous removal of exon 3 was confirmed by PCRs at the genomic level (Figure 4E, right) and, as expected, we observe increased SRSF10 expression (Figure 4F, see Figure 4\u2014figure supplement 1D for protein expression).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR and Western blot data shown in Figure 4F and Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "60c1298b-2152-4668-b463-f5797668aa52",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C80",
+      "claim": "A stronger increase in the less active SRSF10-2 isoform is observed after removal of exon 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observe a stronger increase in the less active SRSF10-2 isoform (Figure 4\u2014figure supplement 1D), indicating that AS of the last exon could be used to partially compensate for the loss of autoregulation via exon 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "99960c65-45b7-4493-83aa-687b86f077da",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C81",
+      "claim": "AS of the last exon could be used to partially compensate for the loss of autoregulation via exon 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observe a stronger increase in the less active SRSF10-2 isoform (Figure 4\u2014figure supplement 1D), indicating that AS of the last exon could be used to partially compensate for the loss of autoregulation via exon 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that SRSF10-2 increases more than SRSF10-fl after exon 3 deletion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "34e1a918-ee3d-4be2-96ae-28bbdb9e206b",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C82",
+      "claim": "Increased SRSF10 expression promotes the inclusion of alternative exons in BCLAF1, PTBP2 and ZFP207.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with increased SRSF10 expression, the inclusion of alternative exons in BCLAF1, PTBP2 and ZFP207 is promoted in the CRISPR/Cas9-edited cells, and the opposite is observed by knockdown of SRSF10 (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "8da2da17-405a-4b7b-ac7e-218074a57a7b",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C83",
+      "claim": "Knockdown of SRSF10 reduces the inclusion of alternative exons in BCLAF1, PTBP2 and ZFP207.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with increased SRSF10 expression, the inclusion of alternative exons in BCLAF1, PTBP2 and ZFP207 is promoted in the CRISPR/Cas9-edited cells, and the opposite is observed by knockdown of SRSF10 (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "bd2ad4cc-8f82-4da8-ae4d-4f3f7ae8d9a1",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C84",
+      "claim": "Increased SRSF10 in CRISPR/Cas9-edited cell lines is sufficient for subtle upregulation of the mRNA levels of all other SR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, increased SRSF10 in our CRISPR/Cas9-edited cell line was sufficient for subtle upregulation of the mRNA levels of all other SR proteins (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "6b3a6bde-b0fe-4c2d-9de9-977b3f2b037d",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C85",
+      "claim": "Reduced SRSF10 expression upon RNPC3 knockdown correlates with slightly decreased expression of most other SR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, reduced SRSF10 expression upon RNPC3 knockdown also correlates with slightly decreased expression of most other SR proteins (Figure 4\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 4\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "5da3ddf7-0759-4c62-acd0-5cf6ed983298",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C86",
+      "claim": "Minor spliceosome activity directly controls SRSF10 levels, which is sufficient to change expression levels of the other SR proteins in a tissue- and differentiation state-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a model where minor spliceosome activity directly controls SRSF10 levels, which is sufficient to change expression levels of the other SR proteins in a tissue- and differentiation state-specific manner (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the combined experimental data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "421868e8-39e3-4bd3-afb6-d529157e2784",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C87",
+      "claim": "SRSF10 could regulate other SR proteins by repressing the formation of NMD-targeted isoforms from their pre-mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-regulatory mechanisms are known for many RBPs (Kumar and Lopez, 2005; Rossbach et al., 2009) and we therefore speculate that SRSF10 could regulate other SR proteins (and potentially other RBPs) by repressing the formation of NMD-targeted isoforms from their pre-mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on known cross-regulatory mechanisms and supported by citations to Kumar and Lopez, 2005 and Rossbach et al., 2009.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "cd9e8513-077f-4f20-96ec-26290c670e5b",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C88",
+      "claim": "SRSF10 could regulate other SR proteins directly, by binding to the respective pre-mRNAs, or indirectly, through interactions with other SR proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be mediated either directly, by binding to the respective pre-mRNAs, or indirectly, through interactions with other SR proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about possible mechanisms of SR protein regulation by SRSF10.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "a55fe4dd-3272-43d6-a305-b8baa4ec282e",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C89",
+      "claim": "Differences in SR protein abundance could be achieved by changing their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, differences in SR protein abundance could be achieved by changing their activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about alternative mechanisms for controlling SR protein levels.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "a20b0869-bfd2-4bff-8899-936a49e6896a",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C90",
+      "claim": "Higher mRNA abundance could be the consequence of reduced SR protein activity, resulting in reduced autoregulatory NMD exon inclusion and therefore higher mRNA expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher mRNA abundance could be the consequence of reduced SR protein activity, resulting in reduced autoregulatory NMD exon inclusion and therefore higher mRNA expression levels (Ni et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by a citation to Ni et al., 2007.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "90541f48-194d-4c1c-9540-f849f32c84ab",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C91",
+      "claim": "The activity of SR proteins is controlled by their phosphorylation level.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of SR proteins is, amongst others, controlled by their phosphorylation level (Goldammer et al., 2018), and could be controlled by a direct or indirect effect of SRSF10 on the regulating kinases and phosphatases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Goldammer et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "ab2da6e9-9b4f-4193-aaea-616db7f73ae0",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C92",
+      "claim": "SR protein activity could be controlled by a direct or indirect effect of SRSF10 on the regulating kinases and phosphatases.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of SR proteins is, amongst others, controlled by their phosphorylation level (Goldammer et al., 2018), and could be controlled by a direct or indirect effect of SRSF10 on the regulating kinases and phosphatases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about how SRSF10 might control SR protein activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "2bf4fdd1-635f-4efe-9737-f5b2e52033f0",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C93",
+      "claim": "The control of SR protein levels through the minor spliceosome and SRSF10 is of fundamental importance, as SR protein levels will have consequences for the splicing of most major introns.",
+      "claim_type": "EXPLICIT",
+      "source": "While these mechanistic details remain to be investigated, the control of SR protein levels through the minor spliceosome and SRSF10 is of fundamental importance, as SR protein levels will have consequences for the splicing of most major introns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known role of SR proteins in regulating major intron splicing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "a7143b54-5530-496d-aae7-a97e4fb6e104",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C94",
+      "claim": "The activity of the minor spliceosome controls major intron splicing in a tissue- and differentiation state-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data thus reveal a mechanism through which the activity of the minor spliceosome controls major intron splicing in a tissue- and differentiation state-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined experimental data showing that minor spliceosome activity controls SR protein expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "d3f6a229-ede7-4057-9574-9731f37f8d43",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C95",
+      "claim": "Misregulation of SR proteins and defects in major intron splicing may contribute to phenotypes observed in diseases caused by minor spliceosome deficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "This may also be relevant for diseases caused by minor spliceosome deficiencies (Jutzi et al., 2018; Verma et al., 2018), as misregulation of SR proteins and consequently, defects in major intron splicing (Cologne et al., 2019), may contribute to the observed phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citations to Jutzi et al., 2018, Verma et al., 2018, and Cologne et al., 2019.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "72781ffd-d535-4b28-bfd4-c611fe3b4a71",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C96",
+      "claim": "Usage of the downstream (dn) major splice site in Srsf10 exon 2 leads to exon 3 inclusion and a non-protein coding isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "Usage of the downstream (dn) major splice site in Srsf10 exon 2 (GT.AG, U2-type) leads to exon 3 inclusion and a non-protein coding isoform, while usage of the upstream minor splice site (AT.AC, U12-type) results in exon 4 inclusion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the schematic in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "f79abaa4-db06-4610-be7a-3eca349fa0fb",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C97",
+      "claim": "Usage of the upstream minor splice site in Srsf10 exon 2 results in exon 4 inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Usage of the downstream (dn) major splice site in Srsf10 exon 2 (GT.AG, U2-type) leads to exon 3 inclusion and a non-protein coding isoform, while usage of the upstream minor splice site (AT.AC, U12-type) results in exon 4 inclusion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the schematic in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "7f814cdf-302a-4062-bb4b-675574b2a40a",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C98",
+      "claim": "A minor 5' splice site in exon 3 is present but not used in the endogenous context.",
+      "claim_type": "EXPLICIT",
+      "source": "A minor 5' splice site in exon 3 is present but not used in the endogenous context (dotted lines).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the schematic in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "b5fec45e-53bb-4dd5-82fa-0f3072877d61",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C99",
+      "claim": "The dn-E3 variant is not a canonical NMD target, as the stop codon in E2 is less than 50 nucleotides upstream of the E2/3 junction.",
+      "claim_type": "EXPLICIT",
+      "source": "The dn-E3 variant is not a canonical NMD target, as the stop codon in E2 is less than 50 nucleotides upstream of the E2/3 junction (Nagy and Maquat, 1998) and could thus encode for a hypothetical short protein (Srsf10-s, see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known 50 nucleotide rule for NMD and supported by a citation to Nagy and Maquat, 1998.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "58884eaa-fe3f-4f29-be1e-44505ca15b74",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C100",
+      "claim": "The dn-E3 variant could encode for a hypothetical short protein (Srsf10-s).",
+      "claim_type": "EXPLICIT",
+      "source": "The dn-E3 variant is not a canonical NMD target, as the stop codon in E2 is less than 50 nucleotides upstream of the E2/3 junction (Nagy and Maquat, 1998) and could thus encode for a hypothetical short protein (Srsf10-s, see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the position of the stop codon.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "88d8bfb3-7f23-4d82-bc15-227e45dfd4fe",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C101",
+      "claim": "GFP-Srsf10-s was not detectable by Western blot.",
+      "claim_type": "EXPLICIT",
+      "source": "A Western blot against Srsf10 shows expression of GFP-Srsf10-fl and GFP-Srsf10-2 close to endogenous levels, while GFP-Srsf10-s was not detectable (Figure 1\u2014figure supplement 1C, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Western blot data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "801c7768-593a-43e5-bd39-0aa4a103a251",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C102",
+      "claim": "The presence of Srsf10-s is hardly detectable, even with a stabilizing GFP tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the presence of Srsf10-s is hardly detectable, even with a stabilizing GFP tag, we assume that this protein variant is highly instable and does not have a biological function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the Western blot data showing no detectable Srsf10-s protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "b004bdf1-bd9b-41b8-83c7-acff7733c5c0",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C103",
+      "claim": "Srsf10-s protein variant is highly instable and does not have a biological function.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the presence of Srsf10-s is hardly detectable, even with a stabilizing GFP tag, we assume that this protein variant is highly instable and does not have a biological function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of detectable protein expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "cf88bcc8-ee36-443f-9d32-f3babeb09b30",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C104",
+      "claim": "Srsf10-fl, despite its lower expression levels, is a more potent activator of E3 inclusion than Srsf10-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrated highly sensitive Srsf10 autoregulation, with Srsf10-fl, despite its lower expression levels, being a more potent activator of E3 inclusion than Srsf10-2 (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by titration experiment data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "b600c2d8-ad72-4ad2-bfe8-1468d4af52d5",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C105",
+      "claim": "Srsf10 exon 3 contains a polyadenylation site.",
+      "claim_type": "EXPLICIT",
+      "source": "This reflects the endogenous situation, as Srsf10 exon 3 contains a minor 5' splice site, which, however, is rarely used, since the polyadenylation site in exon 3 appears to be dominant (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the schematic in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "43eb1961-561e-4133-9b51-7d23d5a0a5a0",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C106",
+      "claim": "The polyadenylation site in Srsf10 exon 3 appears to be dominant over the minor 5' splice site.",
+      "claim_type": "EXPLICIT",
+      "source": "This reflects the endogenous situation, as Srsf10 exon 3 contains a minor 5' splice site, which, however, is rarely used, since the polyadenylation site in exon 3 appears to be dominant (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the minor 5' splice site in exon 3 is rarely used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "bc3400e8-ffd6-4c72-8708-d81cbb84cdbc",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C107",
+      "claim": "Exon 3 of Srsf10 contains a GA-rich element.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that SRSF10 controls its own splicing via binding to exon 3, which, indeed, contains a GA-rich element representing the previously identified SRSF10 consensus binding site (Shin and Manley, 2002; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis and supported by citations to Shin and Manley, 2002 and Zhou et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "a885efa4-0086-4335-9a9c-8856f0a6a61a",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "claim_id": "C108",
+      "claim": "The ESE in Srsf10 exon 3 is highly conserved across mammals.",
+      "claim_type": "IMPLICIT",
+      "source": "Together, these data identify a highly conserved element in Srsf10 exon 3 which is necessary for an autoregulatory feedback loop that controls Srsf10 expression levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the sequence alignment shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fee56863-32ed-411d-b8b2-49bb6929ce4e",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SRSF10 autoregulates its own expression through a negative feedback loop. SRSF10 binds to a conserved GA-rich splicing enhancer element in exon 3 of its own pre-mRNA, promoting inclusion of exon 3 via the major spliceosome, which leads to production of a non-protein-coding isoform (dn-E3). In contrast, usage of the upstream minor splice site leads to exon 4 inclusion and production of protein-coding isoforms (up-E4). The SRSF10-fl isoform is more potent at activating E3 inclusion than SRSF10-2, despite lower expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The autoregulatory mechanism is well-supported by multiple lines of experimental evidence including minigene knockdown/rescue experiments (C29-C33), mutational analysis identifying the ESE in exon 3 (C36-C41), and demonstration that the dn-E3 isoform does not produce functional protein (C101-C103). The data consistently show that SRSF10 activates E3 inclusion, creating a negative feedback loop.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The minor spliceosome controls SRSF10 expression through competition between major and minor splice sites in exon 2. Knockdown of the minor spliceosome component RNPC3 significantly decreased coding SRSF10 mRNA (up-E4) while leaving non-coding mRNA (dn-E3) unaffected. Minigene experiments show that when competition is removed, the upstream splice site is preferentially used, indicating that in vivo the competing major splice site reduces productive minor splicing. This suggests minor spliceosome activity sets SRSF10 expression levels, which are then maintained through autoregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mechanism is supported by RNPC3 knockdown experiments showing selective reduction of coding SRSF10 (C50-C51) and minigene experiments demonstrating splice site competition (C45-C47). The model that minor spliceosome activity controls SRSF10 levels is well-supported by the experimental data, though the claim that this regulation 'overrules' autoregulation (C53) is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SRSF10 expression tightly correlates with minor spliceosome abundance (represented by RNPC3) across different mouse tissues (R\u00b2=0.85, p<0.0001) and during ES cell differentiation (R\u00b2=0.34, p=0.0006). This correlation is specific to SRSF10 and minor intron-containing genes, as the housekeeping gene GAPDH shows no correlation with RNPC3. The correlation is observed in both mouse and human tissues and is strengthened by normalization methods, supporting a direct regulatory role of the minor spliceosome in controlling SRSF10 levels in a tissue- and developmental stage-specific manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation between SRSF10 and RNPC3 is robustly demonstrated across multiple datasets (C57-C58, C63) with appropriate statistical analysis. The specificity is confirmed by negative controls (C59, C64) and global analysis showing minor intron-containing genes correlate more strongly with RNPC3 than major intron-only genes (C60, C65). The correlation data combined with the mechanistic experiments provide strong support for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "c13842bb-548a-46ac-89db-ddb0dbefdeba",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All SR proteins correlate with minor spliceosome abundance (RNPC3) across tissues (R\u00b2>0.42, p<0.0001) and during ES cell differentiation, despite SRSF10 being the only SR protein containing a minor intron. CRISPR/Cas9-mediated deletion of the autoregulatory exon 3 in SRSF10 increased SRSF10 expression and was sufficient to cause subtle upregulation of all other SR proteins. Conversely, RNPC3 knockdown reduced SRSF10 and most other SR proteins. This suggests minor spliceosome activity controls SRSF10 levels, which in turn regulates expression of other SR proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The correlation of all SR proteins with RNPC3 is well-documented (C69-C71) and the CRISPR/Cas9 experiment provides direct evidence that manipulating SRSF10 autoregulation affects other SR proteins (C84). The RNPC3 knockdown data (C85) provides additional support. However, the magnitude of effects on other SR proteins is described as 'subtle' (C84) and the mechanistic details of how SRSF10 regulates other SR proteins remain speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "37c113ec-4633-4c70-a6b1-20311a58183a",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The minor spliceosome has extensive crosstalk with and global impact on major intron splicing through control of SR protein expression. By regulating SRSF10 levels, which in turn controls other SR proteins, the minor spliceosome influences splicing of most major introns in a tissue- and differentiation state-specific manner. This mechanism may be relevant for diseases caused by minor spliceosome deficiencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the data support that minor spliceosome activity affects SRSF10 and other SR proteins, the claim of 'extensive crosstalk' and 'global impact' on major intron splicing is largely inferred rather than directly demonstrated. The mechanistic details of how SRSF10 regulates other SR proteins (C87-C92) are speculative. Direct evidence of altered major intron splicing patterns upon minor spliceosome manipulation is limited to a few target genes (C82-C83). The disease relevance (C95) is also speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    },
+    {
+      "id": "a7c06d84-9709-4360-88ce-7d26902d516a",
+      "content_id": "11b15d6f-52f7-4dee-885e-7e75e42d8b6d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Background knowledge about spliceosomes and SR proteins. The manuscript establishes that minor and major spliceosomes were thought to act independently, SR proteins are essential splicing regulators connected to the major spliceosome, and the mechanisms coordinating SR protein expression were previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established scientific knowledge supported by appropriate citations and provide necessary context for the study. They accurately describe the state of the field prior to this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:43:33.001988Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2d7b0047-9d37-48c4-a919-b9cfd76850f4",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "f90974dc-7cf3-469a-8ce3-0aa352ad8681",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "2d846dd1-3bae-4fca-9c6b-64f0d29de6a8",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "fb7fb348-d7d6-47cd-a8cf-146de69b989a",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "41bda82c-8c9e-4524-a2d8-22d32949ca42",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "0239d347-a9bc-4acd-b651-3ad472139f20",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "4695b791-d345-4b9a-b2e2-c08d632bc3dd",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "5f6fc379-dbe3-4a75-95ee-c165660f08d5",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "de6d7258-570c-4073-80eb-ee184111a2fd",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "9683e071-00c7-4c26-b629-8d2637ca6a7c",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "d287ea7c-4759-40eb-b493-01bdc211ba1a",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "c27ca6ee-1c22-4c03-844e-abf59769ca2a",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "72781ffd-d535-4b28-bfd4-c611fe3b4a71",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "f79abaa4-db06-4610-be7a-3eca349fa0fb",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "7f814cdf-302a-4062-bb4b-675574b2a40a",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "b5fec45e-53bb-4dd5-82fa-0f3072877d61",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "58884eaa-fe3f-4f29-be1e-44505ca15b74",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "88d8bfb3-7f23-4d82-bc15-227e45dfd4fe",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "801c7768-593a-43e5-bd39-0aa4a103a251",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "b004bdf1-bd9b-41b8-83c7-acff7733c5c0",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "cf88bcc8-ee36-443f-9d32-f3babeb09b30",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "b600c2d8-ad72-4ad2-bfe8-1468d4af52d5",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "43eb1961-561e-4133-9b51-7d23d5a0a5a0",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "bc3400e8-ffd6-4c72-8708-d81cbb84cdbc",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "a885efa4-0086-4335-9a9c-8856f0a6a61a",
+      "result_id": "fee56863-32ed-411d-b8b2-49bb6929ce4e"
+    },
+    {
+      "claim_id": "c89c5097-e783-46ff-a024-72408d36144e",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "acb8b37a-bdac-4c66-900c-9a31838eb08c",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "13810794-2137-439d-aaaa-f8f7c8030b8e",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "2cf0f1c6-7128-4d89-bbf5-c4f8a453df96",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "58477a45-c97c-4548-b303-0846bf4e7b53",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "e1170b48-6018-48c0-8642-cb1155d135c0",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "7b4343c1-8143-414f-b434-bda40ea4c7fe",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "fc7ddd48-1976-4dcd-a54e-c511c8e12fc7",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "b4d00875-e76a-4fc1-bb36-ca1f4f1ace85",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "2b971106-6131-4a11-92dc-38ad115c8670",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "05356e50-8c63-4222-a7a4-0ae9e895771b",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "e57240af-9473-40a2-bbc0-b46fe4915c99",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "91e29a05-6b8a-43e1-9737-765c81480324",
+      "result_id": "a0527a74-8ee0-47ae-981e-9b1c2bde5baa"
+    },
+    {
+      "claim_id": "383292e7-1f64-46d9-8c9d-74d4e715f77d",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "23bfa7eb-8870-4d6d-aa47-3e44be587227",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "67184b73-02c1-420b-b668-9479eb221db2",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "b80c2cae-d006-49d7-add4-d0054a62b378",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "ec19a716-db36-4f4e-a7e2-c1a4ec3e7118",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "19770f7a-7dde-4df4-9c3c-f4b08b4a5713",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "106cc8a8-67a6-42be-ae9b-2459cedbe671",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "f75b2765-7ff8-4977-95fe-6972ea3c3fe6",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "ba9debdc-f1b9-493b-82bb-113aa5fef96e",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "631292c1-ce5d-4c59-a6d3-378892a2e697",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "7e13c05a-2afc-45a4-aef1-95188d8ab781",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "04c1bf95-7eb9-4d23-97d5-fe38ec85247b",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "94d0f1cd-4845-4e0c-9a9b-d57a1554fe70",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "7b2d1f5d-c90f-4ccf-a7df-acb221928fb7",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "8dfebb9b-5d2b-49d6-a353-2ea897a5bdfb",
+      "result_id": "f74f2b35-84c5-42e8-8c57-d8aaf8263e43"
+    },
+    {
+      "claim_id": "5d1c3e54-0a07-4357-8e1c-3c3c3d8ce032",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "fe5673a4-ef0f-40b1-91b2-38d2fc203819",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "70d0f6f0-ee9e-45b1-849a-8fe8f4f81844",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "138ad170-6bd6-40d4-adad-48f1c5007e3d",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "567a97f4-cabd-4611-9762-2b484493e2cd",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "84181e05-2767-421d-97bc-e49ed75e7468",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "2c444f26-322b-44e8-9312-87db4eaf2fc2",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "d55c8148-ddac-4db4-9bdf-e1918cc5790e",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "a34fda1b-cb01-4363-9475-5b667f4072b5",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "7a3e0ec2-9869-43ad-9f46-873f6b5a3681",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "f1ab03fa-0710-4ae8-861e-51ce065df273",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "b8d31ee1-0eb9-4613-a527-6ed04d043f21",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "60c1298b-2152-4668-b463-f5797668aa52",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "99960c65-45b7-4493-83aa-687b86f077da",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "34e1a918-ee3d-4be2-96ae-28bbdb9e206b",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "8da2da17-405a-4b7b-ac7e-218074a57a7b",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "bd2ad4cc-8f82-4da8-ae4d-4f3f7ae8d9a1",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "6b3a6bde-b0fe-4c2d-9de9-977b3f2b037d",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "5da3ddf7-0759-4c62-acd0-5cf6ed983298",
+      "result_id": "c13842bb-548a-46ac-89db-ddb0dbefdeba"
+    },
+    {
+      "claim_id": "35d29c47-b16a-4da0-8e92-7f9be6a9ad7d",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "819cf22d-d72b-4861-8cd0-954058492aa0",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "2bfa88d0-3dbb-4c09-b02e-9ed2e584a8cb",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "5da3ddf7-0759-4c62-acd0-5cf6ed983298",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "421868e8-39e3-4bd3-afb6-d529157e2784",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "cd9e8513-077f-4f20-96ec-26290c670e5b",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "a55fe4dd-3272-43d6-a305-b8baa4ec282e",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "a20b0869-bfd2-4bff-8899-936a49e6896a",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "90541f48-194d-4c1c-9540-f849f32c84ab",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "ab2da6e9-9b4f-4193-aaea-616db7f73ae0",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "2bf4fdd1-635f-4efe-9737-f5b2e52033f0",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "a7143b54-5530-496d-aae7-a97e4fb6e104",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "d3f6a229-ede7-4057-9574-9731f37f8d43",
+      "result_id": "37c113ec-4633-4c70-a6b1-20311a58183a"
+    },
+    {
+      "claim_id": "067fcffd-431b-4499-8afd-5afcbd77b7d7",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "99af0289-1f98-4523-9288-6c27e6d0d321",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "8393bd5a-2b16-4bc1-b7fb-ea8dd1621181",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "94d057ea-d403-4b1c-b0d2-fe71f2c661c3",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "d1efa523-db47-44ac-bbbe-97faa626b517",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "8ff45fe5-40a3-41f7-8870-1473999656e8",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "aa6f739a-9944-4cf8-996e-2002186038d5",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "df5cdca2-59ac-45c0-9509-bbb75bb70ef9",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "8600c016-8d52-408d-b34a-7aec395e13f1",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "d97cc7b7-3e3b-49df-a17f-75a1f57413c4",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "13481784-5150-46cf-be7b-7821d39632b9",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "884fcccf-3214-4277-aca2-cf6215a737b1",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "2ef15c14-ea03-4684-a9df-c274400a88b2",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "53619635-ab7a-47a7-ab45-5fd4fb6330f4",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "78a9a46b-f845-43b4-8109-7fb02951903a",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "138a4349-1833-4e44-9208-702dfeb36309",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "c7e00602-6d5f-4dea-8223-63b47fda7d51",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "8df2ea3a-b037-4f70-8c65-801fc12d76ea",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "036349bd-dd36-4afc-a38a-1f460a11b102",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "50ec4f4e-eb12-42a4-ac80-1adf9112dedd",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "f1549379-1fad-49d2-96b2-bf48506ec20d",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    },
+    {
+      "claim_id": "497cc37f-e07a-4ed6-b392-953b291f3ec5",
+      "result_id": "a7c06d84-9709-4360-88ce-7d26902d516a"
+    }
+  ],
+  "comparisons": []
+}

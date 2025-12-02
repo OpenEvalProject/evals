@@ -1,0 +1,1772 @@
+{
+  "submission": {
+    "id": "4f706fa2-4e13-4bda-9ca3-5eb07ed04483",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:45:40.890431Z",
+    "updated_at": "2025-12-02T20:45:40.890431Z"
+  },
+  "content": [
+    {
+      "id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "submission_id": "4f706fa2-4e13-4bda-9ca3-5eb07ed04483",
+      "content_type": "manuscript",
+      "content_text": "# Cannabidiol interactions with voltage-gated sodium channels\n\n## Authors\n\n- Lily Goodyer Sait<sup>1</sup> ([ORCID: 0000-0003-4583-8790](https://orcid.org/0000-0003-4583-8790))\n- Altin Sula<sup>1</sup> ([ORCID: 0000-0002-1820-4357](https://orcid.org/0000-0002-1820-4357))\n- Mohammad-Reza Ghovanloo<sup>2</sup> ([ORCID: 0000-0002-2171-0744](https://orcid.org/0000-0002-2171-0744))\n- David Hollingworth<sup>1</sup> ([ORCID: 0000-0001-7490-5310](https://orcid.org/0000-0001-7490-5310))\n- Peter C Ruben<sup>2</sup> ([ORCID: 0000-0002-7877-5178](https://orcid.org/0000-0002-7877-5178))\n- BA Wallace<sup>1</sup> ([ORCID: 0000-0001-9649-5092](https://orcid.org/0000-0001-9649-5092)) \u2020\n\n### Affiliations\n\n1. Institute of Structural and Molecular Biology, Birkbeck College, University of London London United Kingdom\n2. Department of Biomedical Physiology and Kinesiology, Simon Fraser University Burnaby Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nVoltage-gated sodium channels are targets for a range of pharmaceutical drugs developed for the treatment of neurological diseases. Cannabidiol (CBD), the non-psychoactive compound isolated from cannabis plants, was recently approved for treatment of two types of epilepsy associated with sodium channel mutations. This study used high-resolution X-ray crystallography to demonstrate the detailed nature of the interactions between CBD and the NavMs voltage-gated sodium channel, and electrophysiology to show the functional effects of binding CBD to these channels. CBD binds at a novel site at the interface of the fenestrations and the central hydrophobic cavity of the channel. Binding at this site blocks the transmembrane-spanning sodium ion translocation pathway, providing a molecular mechanism for channel inhibition. Modelling studies suggest why the closely-related psychoactive compound tetrahydrocannabinol may not have the same effects on these channels. Finally, comparisons are made with the TRPV2 channel, also recently proposed as a target site for CBD. In summary, this study provides novel insight into a possible mechanism for CBD interactions with sodium channels.\n\n## Introduction\n\nVoltage-gated sodium channels (Navs) specifically enable the passage of sodium ions across cell membranes, contributing to the electrical signalling in cells (Ahern et al., 2016). Nine homologous human\u00a0sodium channel subtypes, designated hNav1.1-hNav1.9 have been identified, which have different functional characteristics and expression profiles within different tissues (Catterall et al., 2005). Mutations in hNavs have been associated with a range of channelopathies, including pain, epilepsy, and heart disorders, making them major targets for drug development (Bagal et al., 2015; Kaplan et al., 2016).\n\nCannabinoids (including cannabidiol (CBD) and \u0394-9-tetrahydrocannabinol (THC)) are hydrophobic compounds produced by the cannabis plant. Whilst THC has been primarily associated with psychoactive drug use (Rosenberg et al., 2015; Pisanti et al., 2017), the non-psychoactive component, CBD, has been shown to have clinical applications as a therapeutic drug for treatment of epileptic conditions (Rosenberg et al., 2017), and was recently approved by the European Medicines Agency and the Federal Drug Administration for use in children for treatment of Dravet Syndrome and Lenox-Gastaut Syndrome (Sarker and Nahar, 2020). Both of these diseases are rare early-onset epilepsies associated with Navs, with Dravet patients often having mutations in the hNav1.1 gene SCN1A (Marini et al., 2011). Despite a significant amount of evidence reporting on the effectiveness of CBD for treating epileptic conditions (Cross et al., 2017; Devinsky et al., 2018), the molecular basis of its target interactions with ion channels and receptors still remains unclear (Watkins, 2019).\n\nFunctional studies have suggested that CBD both blocks the pore and stabilizes the inactivated states of sodium channels. It inhibits the channel activities of human\u00a0Nav1.1-Nav1.7 isoforms, as well as those of the prokaryotic Nav homologue NaChBac, with IC50s ranging from 1.5 to 3.8 \u00b5M, suggesting inhibition occurs at physiologically-relevant concentrations (Patel et al., 2016; Ghovanloo et al., 2018). This preference for the inactivated state is a characteristic of classic pore blockers (Kuo and Bean, 1994). Furthermore the resurgent and persistent sodium currents of hNav1.2 have been shown to be inhibited at CBD concentrations of 1 \u00b5M (Mason and Cummins, 2020). However, to date, the structural basis of the interactions of CBD and Navs\u00a0has\u00a0not been identified on a molecular level.\n\nIn the present study, in order to examine the nature of the interactions of CBD with sodium channels, the high-resolution crystal structure of a complex of CBD with the NavMs voltage-gated sodium channel from M. marinus (Sula et al., 2017) was determined, enabling the binding sites for the CBD molecule to be clearly defined. The NavMs channel has been shown to be an excellent exemplar for hNavs as it exhibits highly similar functional (Bagn\u00e9ris et al., 2014; Ke et al., 2018), conductance (Ulmschneider et al., 2013), and drug-binding (similar IC50 values) characteristics (Bagn\u00e9ris et al., 2014), as well as sequence and structural homologies (Sula et al., 2017; Sula and Wallace, 2017).\n\nThis high-resolution crystallographic study of a sodium channel-CBD complex, combined with functional studies of CBD on this channel, thus provides the means for both understanding the molecular interactions of CBD and Nav targets, and how these may be related to its use for treatment of epilepsy, and possibly other channelopathies.\n\n## Results\n\nThis study utilised the prokaryotic NavMs voltage-gated sodium channel to examine the site of interactions of the naturally-occurring non-psychoactive CBD compound isolated from cannabis plants. NavMs channels are tetramers with each monomer consisting of six transmembrane (TM) helices (4 of which form each of the voltage sensor subdomains and 2 of which form the pore subdomains), whilst all of the hNav channel isoforms are monomers of four similar but not identical domains (each of which also consists of 6 transmembrane helices that are comprised of 4-helical voltage sensor subdomains and 2-helical pore subdomains) plus inter-domain loop regions (which differ considerably between hNavs, but are not involved in the CBD-binding sites).\n\nThe compelling reason for using crystal structures of NavMs in this study is that they provide the, to date, highest resolution (~2.2\u20132.5 \u00c5) views of any sodium channel (Naylor et al., 2016; Sula et al., 2017), especially of the TM and drug-binding regions, thus enabling detailed views of the protein molecular structures with drugs bound to them. This, combined with its strong sequence, structural and functional similarities (Sula et al., 2017; Sula and Wallace, 2017) to hNav1.1 and hNav1.2 channels, enables important comparisons with sodium channels found in human brain tissues. Structure/function/drug-binding studies using some of the other prokaryotic sodium channels have also been used for drug discovery projects (Martin and Corry, 2014; Ouyang et al., 2007), but their structures tend to be of lower resolution than those of NavMs. Furthermore the cryo-EM structures of hNavs available to date generally have overall resolutions of ~4\u20135 \u00c5, with the transmembrane regions having the best resolutions of\u00a0~3 \u00c5 (not sufficient for detailed views of the binding sites), whilst their extra- and intra- membranous regions are less well defined. However, these reasons would not be sufficient to indicate the value of using NavMs for understanding the molecular basis of drug interactions if its functional properties (conductance and drug-binding affinities) were not comparable to those of hNavs, but NavMs and hNav1.1 have been shown to exhibit similar ion flux and other\u00a0conductance properties, as well as very similar binding affinities for a wide range of sodium channel-specific drugs (Bagn\u00e9ris et al., 2014).\n\n### The CBD-binding site in sodium channels\n\nThe CBD-binding site is located and clearly visible (Figure 1 and 2, Figure 2\u2014figure supplement 1) in a well-defined region of the NavMs-CBD structure,\u00a0sited in the hydrophobic pockets present between subunits that run perpendicular to the channel direction (Montini et al., 2018) (such features have been designated \u2018fenestrations\u2019 and are located (horizontally in Figure 1) in the transmembrane region, just below the level of the selectivity filter), and are the features originally proposed by Hille, 1977 as sites for ingress of hydrophobic drugs into the channel interior. CBD is located at the ends of the fenestrations that lie closest to the central pore, and protrudes into (and blocks) the central transmembrane cavity, just below the sodium ion selectivity filter (Figure 1C). There is experimental electron density (Figure 2A, right panel) and enough room (Figure 2A, third panel from left) for four CBD molecules in this region, although one would be sufficient to block sodium ion passage, as seen from the HOLE (Smart et al., 1993) depictions (Figure 2B) and pore radius plots (Figure 2C), which show the size of the transmembrane pathway with and without different numbers of CBD molecules; their blockage clearly provides a mechanism for channel inhibition as well as a basis for understanding the concentration-dependence of the drug effects. Each binding site is comprised of 11 residues from three different subunits in NavMs (shown in detail and in different colours in Figure 1D & E). The corresponding residues in hNavs arise from three different domains of the same polypeptide chain (Figure 3). It should be noted here, that this region of the apo structure also exhibits some electron density (but has a different size and shape), which has been attributed to detergent molecules. The (2Fo-Fc) electron density map of the CBD complex (Figure 2\u2014figure supplement 1) clearly indicates that in these crystals the site is occupied by CBD rather than by detergent.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig1-v2.jpg)\n\n**Figure 1.:** (A) The crystal structure (2.3 \u00c5 resolution) of the NavMs sodium channel (in coral coloured ribbon depiction) with one CBD molecule (in green space-filing depiction), showing its location within the hydrophobic cavity of the channel, located adjacent to the fenestration.\u00a0Three sodium ions are shown as grey spheres in the selectivity filter, for visual reference. The view on the right is rotated 90 degrees from the view on the left. (B) As in (A) but showing 4 CBD molecules in stick depiction. (C) (left) Surface view of space filling structure of NavMs coloured by electrostatics with CBD (in green) present. The orientation is the same as in the left panel of part A. The CBD (in\u00a0green) is only just visible through the exterior end of one of the fenestration holes. (right) As in panel B, but with a slice through the space filling model (and through the middle of the fenestrations). For clarity only 2 CBD molecules are included, showing where the drug lies along the fenestration and blocks the ion pathway. (D) The CBD-binding site: the polypeptide backbone of the NavMs-CBD complex is depicted in ribbon motif. The ribbons are coloured by subunit (regions of the subunits that come in close contact with the one CBD molecule shown, are depicted in red, grey, blue,\u00a0and yellow). The (2Fo-Fc) map (in blue mesh) was calculated at 0.7 sigma and the structure of the CBD molecule present is in stick depiction. (E) Detailed views of the residues that lie within 3.9 \u00c5 of the CBD molecule (which is depicted in green/red stick representation) are shown and coloured by domain (as in part D). The H-bond between CBD and NavMs involves the M175 backbone carbonyl group, which is shown as a dashed black line. The distance between the side chain of T207 and the CBD molecule\u00a0is\u00a03.7 \u00c5, and is\u00a0indicated by a dotted red line. This is the residue that was mutated in the electrophysiology studies. The pink sphere indicates the sodium ion site in the selectivity filter which is furthest from the extra-membranous surface (the one located farthest into the channel). On the right is the same view, rotated by 90 degrees.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig2-v2.jpg)\n\n**Figure 2.:** The NavMs structure (coral) is depicted in ribbon motif. (A) (from the left): For clarity, only a single NavMs monomer with one CDB (green sticks) is shown; the NavMs tetrameric structure with all 4 CBDs bound; top view of NavMs tetramer with all 4 CDBs bound; top view of NavMs tetramer showing the electron density map (blue) demonstrating all 4 CBDs are bound in the tetrameric structure. (B) Pore interior dimensions calculated using the HOLE algorithm (Smart et al., 1993). Progressively from left to right: The apo structure and structures with 1, 2, and 4 CBD molecules present. In this figure the HOLE surface is depicted in blue for pore radii greater than 2.3\u00a0\u00c5, and green for radii less than 2.3 \u00c5. There is no occlusion in the absence of CBD, so hydrated sodium ions could freely pass through the pore. The NavMs structure with 4 CBD molecules present shows a full occlusion in the middle of the channel transmembrane pathway (near the centre of the hydrophobic cavity, so ion transport would be prevented [Naylor et al., 2016]). (C) Accessibility plots of pore radii versus position within the pore, in the absence and presence of different numbers of CBD molecules. The plot for the apo structure is in blue, and the plots for the CBD-containing structures with 1, 2, or 4 CBD molecules are in coral, red and black, respectively. The plots for 2 and 3 CBD molecules were the same, so the latter is not shown. In cases where at least some region of the radius is\u00a0<2.0 \u00c5, sodium ions will not be able to be translocated across the channel (Naylor et al., 2016). This plot thus shows that regardless of whether one or more CBD molecules are present, ion passage will not occur. These figures were produced using VMD software (Humphrey et al., 1996).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) CBD molecule fit into the NavMs-CBD crystal structure (overlaid by the 2Fo-Fc map contoured at 0.75 sigma), indicating the fit of the CBD to the density. (B) Aliphatic (C9H20) part of a lipid (or detergent) molecule (overlaid by the (2Fo-Fc) density (also contoured in blue at 0.75 sigma) in the crystal structure of Apo-NavMs. (C) The C9H20 structure refined into the NavMs-CBD (2Fo-Fc) (blue) map also contoured at 0.75 sigma [but without CBD structure present during refinement]. The green and red meshes (Fo-Fc maps contoured at sigma\u00a0=\u00a03) correspond to unaccounted for positive and negative densities, respectively). This clearly indicates that the density seen in the NavMs-CBD map is not due to bound lipid or detergent. The extra densities seen in the apo-NavMs maps may, however, arise from transient/partial occupancy of the cavity by a lipid, as had been indicated by molecular dynamics simulations (Ulmschneider et al., 2013), but occupancy by a lipid molecule for any significant time period is unlikely as it would inhibit the entry of hydrophobic drugs into the fenestration. In all panels the protein is shown in ribbon depiction (different colours for different polypeptide chains in the tetramer) and the three sodium ions present in the channel selectivity filter are shown as small grey balls, for visual reference.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig3-v2.jpg)\n\n**Figure 3.:** (Centre) Structural alignment of the NavMs-CBD crystal structure (coral) and the hNav1.2 cryo-EM structure (grey). The RMSD of the aligned structures is 3.2 \u00c5. (Top left): equivalent binding residues between domain I and domain II of hNav1.2 found within 4 \u00c5 of the CBD site. (Top right): equivalent binding residues in hNav1.2 between domains II and III located within 4 \u00c5 of the CBD-binding site. (Bottom left): Residues in hNav1.2 between domains III and IV within 4 \u00c5 of the CBD-binding site. (Bottom right): Residues in hNAv1.2 between domains IV and I within 4 \u00c5 of the CBD-binding site. In the surrounding panels the atoms in the protein are coloured by atom type, with carbons represented in grey, oxygen in red, nitrogen in blue, and sulphur in yellow, whilst the carbon atoms of the drug are depicted in green and the oxygens in red.\n\nThe location of the CBD-binding site is very close to the locations of the binding sites that have been identified for analgesic and other hydrophobic compounds in NavMs (Bagn\u00e9ris et al., 2014; Figure 4) as well as in another bacterial sodium channel, NavAb (Gamal El-Din et al., 2018). This is of interest because those other compounds also inhibit hNav functions, and so suggest the importance of this site for drug interactions in humans. All of the interactions seen except one, that of residue M175 (Figure 1E), involve hydrophobic interactions rather than hydrogen-bond formation (but that particular interaction between the main chain carbonyl of residue M175 and the OH group present in CBD, may be important for specificity of binding \u2013 see below).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig4-v2.jpg)\n\n**Figure 4.:** (A) Structural alignment of the NavMs-CBD complex (protein in coral ribbon depiction, CBD in green stick depiction), with the structure of the NavMs pore-PI1 complex (Bagn\u00e9ris et al., 2014) [the protein is in grey ribbon depiction and the PI1 molecule is in blue stick depiction]. PI1 is a highly potent designed analgesic compound, which binds to and inhibits flux through the NavMs channel (Bagn\u00e9ris et al., 2014). Two views of the aligned structural complexes, rotated by 90 degrees, are shown. They show the similarity, but not identity of the binding sites of the two ligands. (B) Detailed view showing the locations of these molecules in the pore/fenestration area. (C) Chemical structure of the PI1 compound.\n\n### CBD inhibition of NavMs function\n\nTo investigate whether CBD functionally inhibits NavMs, whole-cell voltage-clamp\u00a0studies of transiently transfected cells were performed (Figure 5). Previous studies (Ghovanloo et al., 2018) had shown that CBD imparts little selectivity in inhibiting various voltage-dependent sodium channels, including the bacterial sodium channel NaChBac. CBD inhibitions of Nav channels have steep Hill-slopes (~2) from both resting- and inactivated- states, indicating that relatively small magnitude differences in CBD potency are a product of the difference in slope. In the present study it was shown that CBD inhibits NavMs less potently and with a slightly shallower Hill slope than the other Nav channels previously studied (Ghovanloo et al., 2018 Figure 5A). The moderate variation in CBD inhibition potency between human Navs and NavMs is consistent with previous reports using other Nav blockers (Bagn\u00e9ris et al., 2014). Overall, these results show that CBD inhibits NavMs similarly to other Nav channels and, thus supports the proposed interaction inside the pore depicted in the NavMs structure as being functionally relevant.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig5-v2.jpg)\n\n**Figure 5.:** (A) Block was measured after\u00a0~6 min wash and incubation in CBD. The IC50 measurement was from CBD inhibition data obtained from whole-cell voltage-clamp recordings and fit with the Hill-Langmuir equation. The IC50 for CBD inhibition of wild-type NavMs is 17.8\u00a0\u00b1\u00a00.5 \u00b5M with a Hill slope of 1.5\u00a0\u00b1\u00a00.1 (the S.E. values quoted are errors of the fit, n\u00a0=\u00a08 panel-wide). (B) Sample traces of (top) wild-type NavMs without CBD added, (middle) wild-type NavMs before (black) and after (red)10 \u00b5M CBD perfusion (compound effect was measured after\u00a0~6 min of wash/incubation, 1 Hz), and (bottom), as in the middle panel, but using the T207A mutant (in green). (C) Bar graphs showing percentage of peak sodium current remaining over time after control (no CBD) (grey) and with CBD (red, green, as above) perfusions at 10 \u00b5M (n\u00a0=\u00a04\u20136). Statistical comparison against control: WT (p<0.0027) and T207A (p=0.0269).\n\nTo gain further functional insight into the molecular interactions between CBD and the\u00a0NavMs pore, CBD block was measured using the T207A mutant channel. This residue is located in the CBD-binding site (Figure 1E), with its side chain involved in hydrophobic interactions with the drug. This threonine has the closest sidechain (3.7 \u00c5) to the CBD molecule. The mutation of the threonine side chain to a smaller alanine side chain results in a modest reduction in the CBD block (Figure 5B,C), hence correlating its location with a functional effect.\n\n### Comparison of specificity/potential interactions with other hNavs\n\nThe focus of functional effects of CBD on hNavs has primarily been on hNav1.1, due to its association with epilepsy, although there is yet no structure for this isoform. However, due to the strong sequence similarities of hNav1.1, hNav1.2 and NavMs in the region identified as the binding site in NavMs (Figure 6), it has been possible to explore potential interactions using a hNav1.1 homology model based on the hNav1.2 cryo-EM structure (Figure 6\u2014figure supplement 1). It suggests, not surprisingly, that the interactions would be very similar to those of Nav1.2 and NavMs in this region (Figure 6\u2014figure supplement 1). In NavMs, the involvement of the T207 residue is of importance as it is well established as a primary binding site for local anaesthetics (and has been shown to be involved in the electrophysiology studies on NavMs reported herein). Furthermore, when the equivalent residue (F1774) was mutated in hNav1.1 (boxed in Figure 6), the binding affinity of CBD was found to decrease by a factor of ~2.5 (Ghovanloo et al., 2018). The binding site residues (coloured red in Figure 6) include both residues that are identical/homologous in NavMs and hNavs as well as residues that are only found in NavMs and not in human Navs. In most cases the non-cognate residues are also variable between hNavs and would thus appear not to be essential for the interactions. It is notable, however, that the T207 residue that produced the altered electrophysiology results (Figure 5) is at a comparable site to the phenylalanine (F1774 in hNav1.1 \u2013 Figure 6\u2014figure supplement 1) in the local anaesthetic site, which was also found to moderately\u00a0alter the functon in the hNav1.1 orthologue (Ghovanloo et al., 2018).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig6-v2.jpg)\n\n**Figure 6.:** In red are the CBD-binding residues (within 3.9 \u00c5 of the compound) in NavMs and the equivalent residues in hNav1.1 and hNav1.2. The bold black F indicates the site of the NavMs F208L mutant used in these studies. It was changed from F to L in NavMsL because in half of the human Nav domains it is an F and in the other half it is an L (both indicated in bold black in the other sequences). However, as shown in\u00a0Figure 6\u2014figure supplement 2, the residue type present at this site makes essentially no difference in the structure. Residues located in the binding site are found within the P1 pore helix, the selectivity filter loop, and the S6 helix. The residue, which when mutated to alanine in hNav1.1 reduces the binding affinity of CBD (Ghovanloo et al., 2018), is boxed. This corresponds to T207 in NavMs, which is the residue that was mutated to alanine in the electrophysiology characterisations in the present study. The sequence alignment was carried out using Clustal Omega (Sievers et al., 2011) and annotated manually.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The homology model was created in SWISS-MODEL (Waterhouse et al., 2009) using hNav1.2 (PDB code 6J8E) as a template.\u00a0(A) Overall structural alignment. (RMSD\u00a0=\u00a03.34 \u00c5 for the transmembrane regions). (B) Detail of this overlay showing the location of CBD (green and red stick depiction) in the region of NavMs residue T207 (light blue stick representation); this residue corresponds with residue F1774 in hNav1.1, which is a residue that has been identified as being in the local anaesthetic binding site, and was the residue that was mutated in electrophysiology experiments (Ghovanloo et al., 2018), which showed the effects of CBD inhibition on hNav1.2.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** These figures show (left) the close overall similarities of the structures, and (right) the detailed region surrounding mutated residue F208L (which is circled in both panels, and is indicated in bold in the sequence alignment shown in Figure 6).\n\n### Modelling the binding of CBD relative to that of THC\n\nThere are two main phytocannabinoids that can be extracted from cannabis plants, the psychoactive tetrahydrocannabinol (THC) and the non-psychoactive CBD. Electrophysiological studies on hNavs and the bacterial NaChBac have identified CBD (Ghovanloo et al., 2018) as having functional effects that are distinct from those of THC on these channels. CBD and THC have previously been shown to inhibit hNav1.2 with similar potencies, however the THC inhibition slope was less steep than that of CBD (Ghovanloo et al., 2018).\n\nThe chemical structures of CBD and THC are very similar (Figure 7A), differing only by the presence of an additional free hydroxyl group on one of the rings in CBD (in THC the equivalent oxygen forms part of a closed pyran ring). Therefore, the structure of the CBD/NavMs complex was examined to see if it could provide a clue as to the reasons for the different functional effects of the two compounds. As can be seen in Figure 7B, by placing the THC structure into the CBD-binding site with the same orientation as found for CBD, it can be physically and sterically accommodated. However, and crucially, it is missing the one electrostatic interaction seen between CBD and NavMs: the hydrogen bond between the oxygen of the main chain residue M175 and the drug (Figure 7C). This is the consequence of the absence of the additional free hydroxyl group in THC, as noted above. That hydroxyl group is the one which forms the hydrogen bond present in the CBD-protein complex, and provides an additional intermolecular interaction for CBD, which could account for the differences in functional effects (inhibition slopes) of the two compounds on voltage-gated sodium channels.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig7-v2.jpg)\n\n**Figure 7.:** (A)\u00a0Chemical structures of cannabidiol (CBD) (left) and \u0394-9-tetrahydrocannabinol (THC) (right). The difference between the two structures is highlighted in blue background. The formation of a pyran ring in THC removes the hydrogen from the hydroxyl group which is present in CBD. (B) The locations of CBD in the CBD-NavMs crystal structure (left), and THC (right) modelled into this site. The NavMs structure is depicted in grey ribbons, and the three sodium ions sites in the selectively filter are indicated by the pink balls, as a reference point. (C) (left) A detailed overlay of CBD (coral) and THC (blue) shows the additional hydrogen bond between the protein and drug for CBD, by comparison to THC, which, without the corresponding hydroxyl group does not have the potential to form such a hydrogen bond. The view on the right is rotated from the view on the left to clearly visualise the alignment.\n\n### Comparison with binding to the TRPV2 channel\n\nCBD has also been suggested to be a potential activator of the Transient Receptor Potential Cation Channel Subfamily V Member 2 (TRPV2) channel (Qin et al., 2008; Morelli et al., 2013), a channel which facilitates the non-specific movement of both sodium and calcium ions through plasma membranes. According to electrophysiology studies, CBD activates rat TRPV2 with an EC50 of 3.7 \u00b5M (Qin et al., 2008), although the link with epilepsy (Morelli et al., 2013) is much less direct than that for sodium channels. Recently cryo-electron microscopy (cryo-EM) was used to elucidate the structure of TRPV2 in a CBD-bound state at a nominal resolution of 3.2 \u00c5 (Pumroy et al., 2019); that study indicated the presence of CBD in the pore region of the protein, thus supporting the proposal for TRPV2 being a candidate target for CBD\u00a0binding. The general location of the CBD was visible in the structure, although the lower resolution of that structure did not allow detailed analysis of its binding site. However, its interactions appear to involve a number of hydrophobic side chains, whilst requiring a partial refolding of the adjacent region of the protein polypeptide. The binding site found for CBD in the TRPV2 structure is in a similar region to that of CBD in NavMs\u00a0(Figure 8). However, the sodium channel-CBD site is located further into the fenestration than it is in TRPV2, but closer to the ion binding sites, and thus could more effectively modulate effects in the transmembrane passageway for ion conductance, and could account for sodium channels being blocked by CBD, whilst TRPV2 channels appear to be activated by them (Morelli et al., 2013).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/58593/elife-58593-fig8-v2.jpg)\n\n**Figure 8.:** (Left) Overall alignment of the structures. The TRPV2 structure was trimmed to remove the extramembranous regions for clarity. The RMSD of the alignment is 4.2 \u00c5. The CBD in NavMs is shown in green and that in TRPV2 is in blue. The CBD site in NavMs appears to be located further into the fenestration than it is in TRPV2. (Right) Detailed view of the CBD sites, highlighting the similarity and differences in orientation and location in the two channel types.\n\n## Discussion\n\nThis study has demonstrated the nature of the interactions of CBD and a voltage-gated sodium channel, showing that CBD-binding blocks the transmembrane pathway for sodium ion translocation through the membrane (Naylor et al., 2016), and hence provides a potential mechanism for the functioning of CBD in sodium channels. It further suggests a possible molecular basis for the medicinal effects of CBD in the treatment of epilepsies, as sodium channels have been shown to be causally-related to various types of human epilepsy, with disease-related mutations interfering with sodium ion transmembrane flux. The CBD-binding site is a novel site, near to, but not coincident with, known analgesic binding sites in sodium channels. The binding site is located at the pore end of the transmembrane fenestrations which enable the ingress of hydrophobic molecules into the channel lumen, hence this may also provide the pathway for CBD to enter and block the channels.\n\nExamination of the residues involved in the binding site interactions and modelling of the THC into the CBD-binding site have indicated a possible reason for why the closely-related psychoactive phytocannabinoid THC has not been observed to have a similar effect on sodium channel function: THC would be able to physically fit in the CBD site when oriented in the same manner, but it does not have the same hydroxyl moiety that in CBD forms an important hydrogen-bonding interaction with the channel protein.\n\nA recent cryo-EM structural study (at lower resolution) has suggested that the TRPV2 channel may be a CBD-binding target, although that study did not show the relationship of the binding site to epilepsy-based mutations. Functional studies suggest these two channels act by different mechanisms: CBD is a channel blocker in NavMs, whilst in TRPV2 channels it appears to be a channel activator. In addition, NavMs channel and TRPV2 have quite different overall molecular folds: the NavMs channel is rather narrow, enabling sodium ion selectivity, whilst TRPV2 channel is able to act as a conduit for much larger substrates. Nevertheless, it is interesting that the binding sites for CBD in NavMs and TRPV2 (Figure 8) appear to be in a roughly comparable structural feature: near the transmembrane channel and substrates (sodium ions in the case of NavMs) pathways, and adjacent to the fenestration pathways that are proposed to enable drugs to enter into the channels.\n\nIn summary, this study has provided high-resolution structural evidence, along with functional studies, elucidating the molecular basis of the interactions of CBD, a drug recently approved for treatment of epilepsy, with a voltage-gated sodium channel target.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Magnetococcus marinus MC-1)</td>\n      <td>NavMs</td>\n      <td>Uniprot</td>\n      <td>Mmc1_0789</td>\n      <td>A0L5S6_MAGMM</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>Over Express C41 (DE3)</td>\n      <td>Sigma-Aldrich</td>\n      <td>CMC0017</td>\n      <td>Chemically competent E.\u00a0coli for expression of toxic proteins</td>\n    </tr>\n    <tr>\n      <td>Cell line (Cricetulus griseus)</td>\n      <td>CHO-K1</td>\n      <td>CedarLine Laboratories</td>\n      <td>RRID:CVCL_0214</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pET15b plasmid encoding NavMs</td>\n      <td>PMID:28205548</td>\n      <td></td>\n      <td>Plasmid for NavMs and NavMsL expression for structural study</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>His-NavMs</td>\n      <td>addgene.org</td>\n      <td>100004</td>\n      <td>pTracer-CMV2, IRES GFP plasmid encoding NavMs</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>F208L_F</td>\n      <td>This Paper</td>\n      <td>PCR Primer for NavMsL (forward)</td>\n      <td>5'-CTCACCACCCTGA CCGTGCTCAACCTGT TTATTGG-3\u2032</td>\n    </tr>\n    <tr>\n      <td>Squence-based reagent</td>\n      <td>F208L_R</td>\n      <td>This Paper</td>\n      <td>PCR Primer for NavMsL (reverse)</td>\n      <td>5\u2032-GAGCACGGTCAGG GTGGTGAGCATGATG +AACGGGATG-3\u2032</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cannabidiol (CBD)</td>\n      <td>Sigma-Aldrich</td>\n      <td>C7515</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cannabidiol (CBD)</td>\n      <td>Toronto Research Chemicals</td>\n      <td>F175300</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>XDS</td>\n      <td>PMID:20124692</td>\n      <td>RRID:SCR_015652</td>\n      <td>Data Processing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Aimless</td>\n      <td>doi:10.1107/S0907444913000061</td>\n      <td>RRID:SCR_015747</td>\n      <td>Data Processing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CCP4</td>\n      <td>PMID:15299374</td>\n      <td>RRID:SCR_007255</td>\n      <td>Structure Determination/Refinement</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phaser</td>\n      <td>PMID:19461840</td>\n      <td>RRID:SCR_014219</td>\n      <td>Structure Determination/Refinement</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>PMID:20383002</td>\n      <td>RRID:SCR_014222</td>\n      <td>Structure Determination/Refinement</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>REFMAC</td>\n      <td>PMID:21460454</td>\n      <td>RRID:SCR_014225</td>\n      <td>Structure Determination/Refinement</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PROCHECK</td>\n      <td>doi:10.1107/s0021889892009944</td>\n      <td>RRID:SCR_019043</td>\n      <td>Structure Determination/Refinement</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Molprobity</td>\n      <td>PMID:29067766</td>\n      <td>RRID:SCR_014226</td>\n      <td>Structure Determination/Refinement</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>BUSTER</td>\n      <td>PMID:22505257</td>\n      <td>RRID:SCR_015653</td>\n      <td>Structure Determination/Refinement</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CCP4mg</td>\n      <td>PMID:21460457</td>\n      <td>RRID:SCR_019041</td>\n      <td>Structure Presentation</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PatchMaster</td>\n      <td>HEKA Elektronik</td>\n      <td>RRID:SCR_000034</td>\n      <td>Data Acquisition</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FitMaster</td>\n      <td>HEKA Elektronik</td>\n      <td>RRID:SCR_016233</td>\n      <td>Data Analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>IGOR Pro</td>\n      <td>Wavemetrics, Lake Oswego, OR</td>\n      <td>RRID:SCR_000325</td>\n      <td>Data Analysis</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Clustal Omega</td>\n      <td>PMID:24170397</td>\n      <td>RRID:SCR_001591</td>\n      <td>Sequence Alignment</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HOLE</td>\n      <td>PMID:9195488</td>\n      <td>www.holeprogram.org</td>\n      <td>Channel Pore Dimension Analysis</td>\n    </tr>\n  </tbody>\n</table>\n\n### Materials\n\nThrombin was purchased from Novagen Inc (Germany), decanoyl-N-hydroxyethylglucamide (Hega10) was purchased from Anatrace (USA); dimethyl sulfoxide (DMSO), sodium chloride, 2-amino-2-(hydroxymethyl)\u22121,3-propanediol (Tris), and imidazole were purchased from ThermoFisher Scientific (USA). Cannabidiol samples for structural and electrophysiology studies were purchased, respectively, from Sigma and Toronto Research Chemicals. Purification columns were purchased from GE Healthcare (USA). The F208L (NavMsL) (Figure 6\u2014figure supplement 2) mutation for crystallography was introduced by the SLIM site-directed mutagenesis protocol (Chiu et al., 2004), using the forward primer 5\u2032-CTCACCACCCTGACCGTGCTCAACCTGTTTATTGG-3\u2032 and reverse primer 5\u2032-GAGCACGGTCAGGGTGGTGAGCATGATGAACGGGATG-3\u2032. The sequence was verified by Source Bioscience, UK.\n\n### Protein expression and purification\n\nThe NavMs (Uniprot ID A0L5S6) and NavMsL proteins were expressed and purified as previously described (Sula et al., 2017), with the following modifications: the bound protein was eluted in a buffer containing 20 mM Tris, pH 7.5, 300 mM NaCl, 0.5 M imidazole and 0.52% Hega10. The Histag was removed by thrombin cleavage overnight at 4\u00b0 C. The protein sample was loaded onto a Superdex 200 column and eluted with 20 mM Tris, pH 7.5, 300 mM NaCl, and 0.52% Hega10 buffer. Protein samples were pooled and concentrated to 10 mg/ml using a 100 kDa cut-off Amicon concentrator and stored at a concentration of 10 mg/ml at \u221280\u00b0C.\n\n### Crystallisation, data collection and structure determination\n\n1 \u03bcl of cannabidiol (100 mM) in 100% DMSO was added to 50 \u03bcl of the purified protein solution to produce a final protein concentration of\u00a0~10 mg/ml containing 2 mM CBD and 2% v/v DMSO. The best crystals were grown at 4\u00b0C via the sitting drop vapour diffusion method using a 2:1 ratio of the protein and reservoir solutions containing 0.1 M sodium chloride, 0.1M lithium sulphate, 0.1 M HEPES, pH 7, and 30% v/v PEG300. The apo-NavMsL crystals were grown under the same condition as the crystals of the CBD complex, but without the DMSO and drug. Crystals were flash-frozen, with the PEG300 acting as the cryo-protectant. Data were collected on beamline P13 at the Electron Synchrotron (DESY, Germany); on beamline Proxima1 at the Soleil Synchrotron (France), and on beamlines IO3, IO4, and I24 at the Diamond Light Source (UK). Hundreds of crystals were screened and full data sets were collected from more than 40 crystals. Diffraction images were integrated and scaled using XDS (Kabsch, 2010) and then merged with Aimless (Evans and Murshudov, 2013) using the CCP4 suite of programmes (Winn et al., 2011). The structure was determined from the crystals which diffracted to the highest resolution (2.2 \u00c5 for the apo protein, and 2.3 \u00c5 for the CBD complex). Because of the small but significant variations in the unit cell dimensions and resolution between different crystals of the same type produced under the same conditions, as we have seen previously (Naylor et al., 2016; Sula et al., 2017), datasets from different crystals were not merged.\n\nThe structure determinations by molecular replacement were as previously described (Sula et al., 2017) using Phaser (McCoy et al., 2007) with the full-length wildtype NavMs structure (PDB 5HVX) as the search model. Model building was carried out using Coot (Emsley et al., 2010). Refinement was initially done using REFMACS (Murshudov et al., 2011), and then the refinement was continued using Buster (Bricogne et al., 2019). Data collection, processing and refinement statistics for both the apo and CBD complex structures are listed in Supplementary file 1. The structure quality was checked using PROCHECK (Laskowski et al., 1993) and MolProbity (Chen et al., 2010), which indicated that 100% of the residues were in allowed conformations. Figures were created in CCP4mg (McNicholas et al., 2011), unless otherwise noted.\n\n### Electrophysiology\n\nCBD dissolved in 100% DMSO was used to prepare extracellular solutions at different concentrations with no more than 0.5% total DMSO content. Chinese Hamster Ovary (CHOK1) cells were transiently co-transfected with cDNA encoding eGFP, the \u03b21-subunit, and the NavMs \u03b1-subunit (https://www.addgene.org/100004/). Transfection was done according to the PolyFect transfection protocol. After each set of transfections, a minimum of 8 hr incubation was allowed before plating on sterile coverslips. All cells were incubated at 37\u00b0C/5% CO2.\n\nWhole-cell patch-clamp recordings were performed in an extracellular solution containing (in mM): 140 NaCl, 4 KCl, 2 CaCl2, 1 MgCl2, 10 HEPES (pH 7.4). Solutions were adjusted to pH7.4 with CsOH. Pipettes were filled with intracellular solution, containing (in mM): 120 CsF, 20 CsCl, 10 NaCl, 10 HEPES. All recordings were made using an EPC-9 patch-clamp amplifier (HEKA Elektronik, Lambrecht, Germany) digitized at 20 kHz via an ITC-16 interface (Instrutech, Great Neck, NY, USA). Voltage-clamping and data acquisition were controlled using PatchMaster software (HEKA Elektronik, Lambrecht, Germany) running on an Apple iMac. Current was low-pass-filtered at 10 kHz. Leak subtraction was performed automatically by software using a P/N procedure following the test pulse. Gigaohm seals were allowed to stabilize in the on-cell configuration for 1 min prior to establishing the whole-cell configuration. Series resistance was less than 5 M\u03a9 for all recordings. Series resistance compensation up to 80% was used when necessary. All data were acquired at least 1 min after attaining the whole-cell configuration. Before each protocol, the membrane potential was hyperpolarized to \u2212180 mV to ensure complete removal of inactivation. All experiments were conducted at 22 \u00b1 2 \u00b0C. Analysis and graphing were done using FitMaster software (HEKA Elektronik) and Igor Pro (Wavemetrics, Lake Oswego, OR, USA). All data acquisition and analysis programs were run on an Apple iMac (Apple Computer).\n\nContinuous variables are presented as means\u00a0\u00b1\u00a0standard error and had a normal distribution. A T-test was used to compare the responses. A level of significance \u03b1\u00a0=\u00a00.05 was used in all overall tests, and effects with p-values less than 0.05 were considered to be statistically significant.\n",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "3046fdbe-8a13-4165-873b-f9c0b9ad5770",
+      "submission_id": "4f706fa2-4e13-4bda-9ca3-5eb07ed04483",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leon D Islas, Universidad Nacional Aut\u00f3noma de M\u00e9xico Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58593.sa1](https://doi.org/10.7554/eLife.58593.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript presents high-quality X-ray diffraction and functional studies delineating the interaction of cannabidiol (CBD) with the prokaryotic voltage-gated sodium channel. These are important results that will help further our understanding of the effects of CBD on certain neurological diseases and also provide insight into the biophysics of sodium channels.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cannabidiol Interactions with Voltage-Gated Sodium Channels\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Leon D Islas as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nCannabidiol (CBD) has been recently approved for treatment of epilepsy. Some of CBD anti-epileptic properties might be due to CBD inhibition of voltage-gated sodium channels but the molecular mechanism of such inhibition is unknown. Sait et al. studied the molecular bases of CBD inhibition using X-ray crystallography in application to the bacterial sodium channel NavMs. The authors solved NavMs structures in the apo state and in complex with CBD and based on structural comparison, identified CBD-binding sites and proposed the molecular mechanism of sodium channel inhibition by CBD. The crystal structures are of high quality and among the best published structures of sodium channels, and the study is without doubt of high importance. This is a solid manuscript from an experienced group that reports structural insights into cannabidiol interactions with the voltage-gated sodium channel NavM. The manuscript is easy to read, well-executed, and reveals interesting data.\n\nEssential revisions:\n\nThe weakness of this study is the lack of functional data that would greatly complement the excellent structural results. Electrophysiological data showing the interaction of CBD with NavMs should be obtained and presented. This should be a very easy experiment to perform. CBD has been shown to block the NaChBac sodium channel, but there is no record in the literature that shows that CBD also blocks NavMs. This is a fundamental experiment that should be included in a revised version of the paper. It will also be of great interest to test the results of their structure by mutating appropriate sodium channel residues (e.g. in Nav1.1) and measure changes in cannabidiol interaction.\n\nSimilarly, discussion of the different ways CBD and THC bind to NavMs would greatly benefit from a comparison of the physiological effects of these two compounds. Does THC block NavMs and if it does, what is Kd/IC50 for THC compared to CBD? Electron density observed at the CBD site in the apo state structure needs to be shown side by side with the density for CBD in the structure obtained in the presence of CBD (a supplementary figure would suffice). Along these lines, it might be a good idea to add a brief discussion on how physiologically relevant is the apo state density. For example, if this site is always occupied by a lipid in physiological conditions, the channel would never open.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Cannabidiol Interactions with Voltage-Gated Sodium Channels\" for consideration by eLife. Your article has been reviewed by the Reviewing Editor and Olga Boudker as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis manuscript presents high quality X-ray diffraction studies delineating the interaction of cannabidiol (CBD) with the prokaryotic voltage-gated sodium channel. These are important results that will help further our understanding of the effects of CBD on certain neurological diseases and also provide insight into the biophysics of sodium channels.\n\nRevisions:\n\nThe authors have done a superb job at addressing reviewers concerns and the manuscript is much stronger for that. In its present form, the number of principal figures is unnecessarily very large and reading the manuscript is a little \"jumpy\". Our request is that several figures should be combined into single figures with panels that present a more cohesive and consistent story.\n",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "90b8a615-2309-4f7b-8a15-f7a1b166eb1d",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C1",
+      "claim": "Voltage-gated sodium channels are targets for a range of pharmaceutical drugs developed for the treatment of neurological diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-gated sodium channels are targets for a range of pharmaceutical drugs developed for the treatment of neurological diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data from this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "d4c4316a-6583-4608-a505-dcd3e547d88b",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C2",
+      "claim": "Cannabidiol (CBD) was recently approved for treatment of two types of epilepsy associated with sodium channel mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Cannabidiol (CBD), the non-psychoactive compound isolated from cannabis plants, was recently approved for treatment of two types of epilepsy associated with sodium channel mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact in the abstract, referring to regulatory approval.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "c2e596c3-9734-4a39-a9f0-695352c04951",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C3",
+      "claim": "CBD binds at a novel site at the interface of the fenestrations and the central hydrophobic cavity of the NavMs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "CBD binds at a novel site at the interface of the fenestrations and the central hydrophobic cavity of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the crystal structure data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "df0b5564-f5b9-4c93-8667-8f3b1b2ae04e",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C4",
+      "claim": "CBD binding at the fenestration-cavity interface blocks the transmembrane-spanning sodium ion translocation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding at this site blocks the transmembrane-spanning sodium ion translocation pathway, providing a molecular mechanism for channel inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data showing CBD location and HOLE analysis demonstrating pore blockage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "05cb687b-d94e-483f-b124-3c41c47ca66e",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C5",
+      "claim": "Nine homologous human sodium channel subtypes (hNav1.1-hNav1.9) have been identified with different functional characteristics and expression profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine homologous human sodium channel subtypes, designated hNav1.1-hNav1.9 have been identified, which have different functional characteristics and expression profiles within different tissues (Catterall et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature (Catterall et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "3a5ecc6c-caa0-432e-b68b-f8be7e398d68",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C6",
+      "claim": "Mutations in hNavs have been associated with a range of channelopathies, including pain, epilepsy, and heart disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in hNavs have been associated with a range of channelopathies, including pain, epilepsy, and heart disorders, making them major targets for drug development (Bagal et al., 2015; Kaplan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "2328d787-9e48-4b1f-9df9-89df38a94a8b",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C7",
+      "claim": "THC has been primarily associated with psychoactive drug use.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst THC has been primarily associated with psychoactive drug use (Rosenberg et al., 2015; Pisanti et al., 2017), the non-psychoactive component, CBD, has been shown to have clinical applications as a therapeutic drug for treatment of epileptic conditions (Rosenberg et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "e04b1470-12ee-45b0-8b19-9d9a17a84d88",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C8",
+      "claim": "CBD has been shown to have clinical applications as a therapeutic drug for treatment of epileptic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "the non-psychoactive component, CBD, has been shown to have clinical applications as a therapeutic drug for treatment of epileptic conditions (Rosenberg et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "377308ce-5a0f-47ba-8723-30568d0d35cb",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C9",
+      "claim": "CBD was recently approved by the European Medicines Agency and the Federal Drug Administration for use in children for treatment of Dravet Syndrome and Lenox-Gastaut Syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "and was recently approved by the European Medicines Agency and the Federal Drug Administration for use in children for treatment of Dravet Syndrome and Lenox-Gastaut Syndrome (Sarker and Nahar, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature documenting regulatory approval.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "e98fbcab-5315-4694-8638-94504aa0b999",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C10",
+      "claim": "Dravet Syndrome and Lenox-Gastaut Syndrome are rare early-onset epilepsies associated with Navs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both of these diseases are rare early-onset epilepsies associated with Navs, with Dravet patients often having mutations in the hNav1.1 gene SCN1A (Marini et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "38b6af3c-b8f4-419d-ae56-647b3924e3ca",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C11",
+      "claim": "Dravet patients often have mutations in the hNav1.1 gene SCN1A.",
+      "claim_type": "EXPLICIT",
+      "source": "with Dravet patients often having mutations in the hNav1.1 gene SCN1A (Marini et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "1ae4f4a3-5e2b-4c00-9189-2c313c8c0f9e",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C12",
+      "claim": "The molecular basis of CBD's target interactions with ion channels and receptors remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite a significant amount of evidence reporting on the effectiveness of CBD for treating epileptic conditions (Cross et al., 2017; Devinsky et al., 2018), the molecular basis of its target interactions with ion channels and receptors still remains unclear (Watkins, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation indicating a gap in knowledge.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "ec633eed-6c9a-4896-ba1f-8e23ef405ebd",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C13",
+      "claim": "CBD both blocks the pore and stabilizes the inactivated states of sodium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional studies have suggested that CBD both blocks the pore and stabilizes the inactivated states of sodium channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior functional studies referenced in the text.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "e3ccc33d-7891-4d2d-a2cd-61ec8bebc33a",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C14",
+      "claim": "CBD inhibits the channel activities of human Nav1.1-Nav1.7 isoforms and NaChBac with IC50s ranging from 1.5 to 3.8 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "It inhibits the channel activities of human Nav1.1-Nav1.7 isoforms, as well as those of the prokaryotic Nav homologue NaChBac, with IC50s ranging from 1.5 to 3.8 \u00b5M, suggesting inhibition occurs at physiologically-relevant concentrations (Patel et al., 2016; Ghovanloo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "1d4a3d7f-4511-4819-b01f-291dd7717d20",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C15",
+      "claim": "CBD preference for the inactivated state is a characteristic of classic pore blockers.",
+      "claim_type": "EXPLICIT",
+      "source": "This preference for the inactivated state is a characteristic of classic pore blockers (Kuo and Bean, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "b8ddfcba-5c6c-4f35-9ac5-dced9ab5acf4",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C16",
+      "claim": "The resurgent and persistent sodium currents of hNav1.2 have been shown to be inhibited at CBD concentrations of 1 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore the resurgent and persistent sodium currents of hNav1.2 have been shown to be inhibited at CBD concentrations of 1 \u00b5M (Mason and Cummins, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "b70a2e70-265d-4810-be60-37d0ab732799",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C17",
+      "claim": "The structural basis of the interactions of CBD and Navs has not been identified on a molecular level prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to date, the structural basis of the interactions of CBD and Navs has not been identified on a molecular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge that this study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "db7b00e4-03d2-4934-a21c-dfbdeaec58ac",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C18",
+      "claim": "NavMs exhibits highly similar functional characteristics to hNavs.",
+      "claim_type": "EXPLICIT",
+      "source": "The NavMs channel has been shown to be an excellent exemplar for hNavs as it exhibits highly similar functional (Bagn\u00e9ris et al., 2014; Ke et al., 2018), conductance (Ulmschneider et al., 2013), and drug-binding (similar IC50 values) characteristics (Bagn\u00e9ris et al., 2014), as well as sequence and structural homologies (Sula et al., 2017; Sula and Wallace, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "2b3cbca4-c737-4b5b-ade6-7ca1e8f51074",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C19",
+      "claim": "NavMs exhibits highly similar conductance characteristics to hNavs.",
+      "claim_type": "EXPLICIT",
+      "source": "The NavMs channel has been shown to be an excellent exemplar for hNavs as it exhibits highly similar functional (Bagn\u00e9ris et al., 2014; Ke et al., 2018), conductance (Ulmschneider et al., 2013), and drug-binding (similar IC50 values) characteristics (Bagn\u00e9ris et al., 2014), as well as sequence and structural homologies (Sula et al., 2017; Sula and Wallace, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "9d34b26c-f6f8-411a-8250-169f63982a1d",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C20",
+      "claim": "NavMs exhibits similar drug-binding characteristics (similar IC50 values) to hNavs.",
+      "claim_type": "EXPLICIT",
+      "source": "The NavMs channel has been shown to be an excellent exemplar for hNavs as it exhibits highly similar functional (Bagn\u00e9ris et al., 2014; Ke et al., 2018), conductance (Ulmschneider et al., 2013), and drug-binding (similar IC50 values) characteristics (Bagn\u00e9ris et al., 2014), as well as sequence and structural homologies (Sula et al., 2017; Sula and Wallace, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "558b414a-5fff-4b88-9ca7-57c9b39f17d6",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C21",
+      "claim": "NavMs exhibits sequence and structural homologies to hNavs.",
+      "claim_type": "EXPLICIT",
+      "source": "The NavMs channel has been shown to be an excellent exemplar for hNavs as it exhibits highly similar functional (Bagn\u00e9ris et al., 2014; Ke et al., 2018), conductance (Ulmschneider et al., 2013), and drug-binding (similar IC50 values) characteristics (Bagn\u00e9ris et al., 2014), as well as sequence and structural homologies (Sula et al., 2017; Sula and Wallace, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "14352200-be0b-4b42-b708-e7d70c100fac",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C22",
+      "claim": "NavMs channels are tetramers with each monomer consisting of six transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "NavMs channels are tetramers with each monomer consisting of six transmembrane (TM) helices (4 of which form each of the voltage sensor subdomains and 2 of which form the pore subdomains)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about NavMs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "f5f6b2a8-0f50-47a9-9706-372fb2e67853",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C23",
+      "claim": "All hNav channel isoforms are monomers of four similar but not identical domains.",
+      "claim_type": "EXPLICIT",
+      "source": "whilst all of the hNav channel isoforms are monomers of four similar but not identical domains (each of which also consists of 6 transmembrane helices that are comprised of 4-helical voltage sensor subdomains and 2-helical pore subdomains) plus inter-domain loop regions (which differ considerably between hNavs, but are not involved in the CBD-binding sites).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about hNavs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "5f763d43-021c-4aeb-ab65-536efac9d758",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C24",
+      "claim": "Crystal structures of NavMs provide the highest resolution (~2.2\u20132.5 \u00c5) views of any sodium channel to date.",
+      "claim_type": "EXPLICIT",
+      "source": "The compelling reason for using crystal structures of NavMs in this study is that they provide the, to date, highest resolution (~2.2\u20132.5 \u00c5) views of any sodium channel (Naylor et al., 2016; Sula et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "ecd27c80-0984-4e89-92d7-11881fd48007",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C25",
+      "claim": "NavMs has strong sequence, structural and functional similarities to hNav1.1 and hNav1.2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This, combined with its strong sequence, structural and functional similarities (Sula et al., 2017; Sula and Wallace, 2017) to hNav1.1 and hNav1.2 channels, enables important comparisons with sodium channels found in human brain tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "418579ef-7614-4366-b234-db2426c9e058",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C26",
+      "claim": "Cryo-EM structures of hNavs available to date generally have overall resolutions of ~4\u20135 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore the cryo-EM structures of hNavs available to date generally have overall resolutions of ~4\u20135 \u00c5, with the transmembrane regions having the best resolutions of ~3 \u00c5 (not sufficient for detailed views of the binding sites)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as knowledge about the state of hNav structural biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "e9dc703c-57a1-4d58-bf8f-f9e0fe134388",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C27",
+      "claim": "NavMs and hNav1.1 exhibit similar ion flux and other conductance properties.",
+      "claim_type": "EXPLICIT",
+      "source": "but NavMs and hNav1.1 have been shown to exhibit similar ion flux and other conductance properties, as well as very similar binding affinities for a wide range of sodium channel-specific drugs (Bagn\u00e9ris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "4937f2d7-2802-495e-8309-1eba682b8cb8",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C28",
+      "claim": "NavMs and hNav1.1 have very similar binding affinities for a wide range of sodium channel-specific drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "but NavMs and hNav1.1 have been shown to exhibit similar ion flux and other conductance properties, as well as very similar binding affinities for a wide range of sodium channel-specific drugs (Bagn\u00e9ris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "0049b711-d75d-47fb-8beb-e9d81a5dd9e0",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C29",
+      "claim": "The CBD-binding site is located in the hydrophobic pockets present between subunits that run perpendicular to the channel direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The CBD-binding site is located and clearly visible (Figure 1 and 2, Figure 2\u2014figure supplement 1) in a well-defined region of the NavMs-CBD structure, sited in the hydrophobic pockets present between subunits that run perpendicular to the channel direction (Montini et al., 2018)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure data shown in figures and cited literature about fenestrations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "77496127-1ebe-41ac-a8c7-76b9017dee10",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C30",
+      "claim": "Fenestrations are located in the transmembrane region, just below the level of the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "(such features have been designated 'fenestrations' and are located (horizontally in Figure 1) in the transmembrane region, just below the level of the selectivity filter), and are the features originally proposed by Hille, 1977 as sites for ingress of hydrophobic drugs into the channel interior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data and citation to Hille's original proposal.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "3c2ecf91-dfd4-4b19-8279-11d3e011a3ee",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C31",
+      "claim": "Fenestrations were originally proposed by Hille, 1977 as sites for ingress of hydrophobic drugs into the channel interior.",
+      "claim_type": "EXPLICIT",
+      "source": "and are the features originally proposed by Hille, 1977 as sites for ingress of hydrophobic drugs into the channel interior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hille's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "f37912da-1708-4f6e-a392-b398dfcc163a",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C32",
+      "claim": "CBD is located at the ends of the fenestrations that lie closest to the central pore, and protrudes into the central transmembrane cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "CBD is located at the ends of the fenestrations that lie closest to the central pore, and protrudes into (and blocks) the central transmembrane cavity, just below the sodium ion selectivity filter (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "7a5ee051-435b-4d42-84b4-7d4882bdd0bf",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C33",
+      "claim": "There is experimental electron density and enough room for four CBD molecules in the NavMs channel.",
+      "claim_type": "EXPLICIT",
+      "source": "There is experimental electron density (Figure 2A, right panel) and enough room (Figure 2A, third panel from left) for four CBD molecules in this region",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the electron density maps shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "95a9bc8e-dadb-4b44-8b17-e2512d61d0e1",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C34",
+      "claim": "One CBD molecule would be sufficient to block sodium ion passage through NavMs.",
+      "claim_type": "EXPLICIT",
+      "source": "although one would be sufficient to block sodium ion passage, as seen from the HOLE (Smart et al., 1993) depictions (Figure 2B) and pore radius plots (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by HOLE analysis shown in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "e6bccc66-f5fd-40c1-bf54-f966f59d4887",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C35",
+      "claim": "Each CBD binding site is comprised of 11 residues from three different subunits in NavMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Each binding site is comprised of 11 residues from three different subunits in NavMs (shown in detail and in different colours in Figure 1D & E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the structural data shown in Figure 1D & E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "5c303455-a748-4901-8a4c-2b538ab62ef2",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C36",
+      "claim": "The corresponding residues to the NavMs CBD-binding site in hNavs arise from three different domains of the same polypeptide chain.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding residues in hNavs arise from three different domains of the same polypeptide chain (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from structural alignment shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "c2852ca8-d069-47e7-ac75-47e6321d6e24",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C37",
+      "claim": "The apo structure of NavMs also exhibits some electron density in the CBD-binding region, which has been attributed to detergent molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted here, that this region of the apo structure also exhibits some electron density (but has a different size and shape), which has been attributed to detergent molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on interpretation of electron density in the apo structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "d08fed50-0c2f-4f9c-ad11-db7c9c4e024a",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C38",
+      "claim": "The (2Fo-Fc) electron density map of the CBD complex clearly indicates that in these crystals the site is occupied by CBD rather than by detergent.",
+      "claim_type": "EXPLICIT",
+      "source": "The (2Fo-Fc) electron density map of the CBD complex (Figure 2\u2014figure supplement 1) clearly indicates that in these crystals the site is occupied by CBD rather than by detergent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the electron density map shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "36a783a2-f31a-4d6d-84ed-96c4b6d576b6",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C39",
+      "claim": "The location of the CBD-binding site is very close to the locations of the binding sites for analgesic and other hydrophobic compounds in NavMs.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of the CBD-binding site is very close to the locations of the binding sites that have been identified for analgesic and other hydrophobic compounds in NavMs (Bagn\u00e9ris et al., 2014; Figure 4) as well as in another bacterial sodium channel, NavAb (Gamal El-Din et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 4 and citations to prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "352566d2-179d-4969-8441-54988b5471b4",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C40",
+      "claim": "All of the interactions between CBD and NavMs except one involve hydrophobic interactions rather than hydrogen-bond formation.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the interactions seen except one, that of residue M175 (Figure 1E), involve hydrophobic interactions rather than hydrogen-bond formation",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the crystal structure shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "022c8b8e-c14f-4525-8152-d5c2d782f2b2",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C41",
+      "claim": "The interaction between the main chain carbonyl of residue M175 and the OH group present in CBD may be important for specificity of binding.",
+      "claim_type": "EXPLICIT",
+      "source": "(but that particular interaction between the main chain carbonyl of residue M175 and the OH group present in CBD, may be important for specificity of binding \u2013 see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the structural observation and later discussion about THC.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "ea7bdeb3-6134-4eab-a1a5-164a5b6fb8d3",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C42",
+      "claim": "CBD inhibits NavMs less potently than other Nav channels previously studied.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study it was shown that CBD inhibits NavMs less potently and with a slightly shallower Hill slope than the other Nav channels previously studied (Ghovanloo et al., 2018 Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the electrophysiology data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "d336be7e-fb39-438e-b26d-27559beb8949",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C43",
+      "claim": "CBD inhibits NavMs with a slightly shallower Hill slope than other Nav channels previously studied.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study it was shown that CBD inhibits NavMs less potently and with a slightly shallower Hill slope than the other Nav channels previously studied (Ghovanloo et al., 2018 Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the electrophysiology data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "b8191fb3-1177-40b1-b805-8220f95e7f2d",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C44",
+      "claim": "The moderate variation in CBD inhibition potency between human Navs and NavMs is consistent with previous reports using other Nav blockers.",
+      "claim_type": "EXPLICIT",
+      "source": "The moderate variation in CBD inhibition potency between human Navs and NavMs is consistent with previous reports using other Nav blockers (Bagn\u00e9ris et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "20b665bc-a4b3-4b05-a228-75755493cb0d",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C45",
+      "claim": "CBD inhibits NavMs similarly to other Nav channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results show that CBD inhibits NavMs similarly to other Nav channels and, thus supports the proposed interaction inside the pore depicted in the NavMs structure as being functionally relevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the electrophysiology results and comparison with prior studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "9d0e9266-6939-4640-aa73-ece56f60c3ef",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C46",
+      "claim": "The IC50 for CBD inhibition of wild-type NavMs is 17.8 \u00b1 0.5 \u00b5M with a Hill slope of 1.5 \u00b1 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "The IC50 for CBD inhibition of wild-type NavMs is 17.8 \u00b1 0.5 \u00b5M with a Hill slope of 1.5 \u00b1 0.1 (the S.E. values quoted are errors of the fit, n = 8 panel-wide).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from electrophysiology experiments shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "f084f57e-5657-43cb-9084-c13cbbfb69ce",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C47",
+      "claim": "Residue T207 in NavMs is located in the CBD-binding site with its side chain involved in hydrophobic interactions with the drug.",
+      "claim_type": "EXPLICIT",
+      "source": "This residue is located in the CBD-binding site (Figure 1E), with its side chain involved in hydrophobic interactions with the drug.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the crystal structure shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "f1ce4451-fa62-4081-bc0e-e4ef4b93fcc4",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C48",
+      "claim": "Threonine T207 has the closest sidechain (3.7 \u00c5) to the CBD molecule in NavMs.",
+      "claim_type": "EXPLICIT",
+      "source": "This threonine has the closest sidechain (3.7 \u00c5) to the CBD molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "512eeec7-485f-41b6-b2c0-88128b4d9689",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C49",
+      "claim": "The mutation of T207 to alanine results in a modest reduction in CBD block of NavMs.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation of the threonine side chain to a smaller alanine side chain results in a modest reduction in the CBD block (Figure 5B,C), hence correlating its location with a functional effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiology data shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "5f23b75c-178e-4a72-88af-9a16dbd17a43",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C50",
+      "claim": "T207 in NavMs is well established as a primary binding site for local anaesthetics.",
+      "claim_type": "EXPLICIT",
+      "source": "In NavMs, the involvement of the T207 residue is of importance as it is well established as a primary binding site for local anaesthetics (and has been shown to be involved in the electrophysiology studies on NavMs reported herein).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by the electrophysiology data in this study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "f0ee8b5c-a64f-4081-a022-94f7815a6e22",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C51",
+      "claim": "When the equivalent residue (F1774) to T207 was mutated in hNav1.1, the binding affinity of CBD decreased by a factor of ~2.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when the equivalent residue (F1774) was mutated in hNav1.1 (boxed in Figure 6), the binding affinity of CBD was found to decrease by a factor of ~2.5 (Ghovanloo et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to prior experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "55b72486-6319-4506-bdf4-7c7d5e9b2d7c",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C52",
+      "claim": "CBD and THC have previously been shown to inhibit hNav1.2 with similar potencies.",
+      "claim_type": "EXPLICIT",
+      "source": "CBD and THC have previously been shown to inhibit hNav1.2 with similar potencies, however the THC inhibition slope was less steep than that of CBD (Ghovanloo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "3490dfa5-ac10-4381-8088-fb89e2c74d87",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C53",
+      "claim": "The THC inhibition slope on hNav1.2 was less steep than that of CBD.",
+      "claim_type": "EXPLICIT",
+      "source": "CBD and THC have previously been shown to inhibit hNav1.2 with similar potencies, however the THC inhibition slope was less steep than that of CBD (Ghovanloo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "206a90fb-56ed-4796-b942-94e7cf0b61aa",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C54",
+      "claim": "The chemical structures of CBD and THC differ only by the presence of an additional free hydroxyl group on one of the rings in CBD.",
+      "claim_type": "EXPLICIT",
+      "source": "The chemical structures of CBD and THC are very similar (Figure 7A), differing only by the presence of an additional free hydroxyl group on one of the rings in CBD (in THC the equivalent oxygen forms part of a closed pyran ring).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the known chemical structures shown in Figure 7A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "93f4c0b2-8791-44bb-9a52-e42221574bef",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C55",
+      "claim": "THC can be physically and sterically accommodated in the CBD-binding site with the same orientation as CBD.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Figure 7B, by placing the THC structure into the CBD-binding site with the same orientation as found for CBD, it can be physically and sterically accommodated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on molecular modeling shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "d2fd8bd8-3738-4b85-9f22-3a0009676265",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C56",
+      "claim": "THC is missing the hydrogen bond between the oxygen of the main chain residue M175 and the drug that is present in the CBD-NavMs complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, and crucially, it is missing the one electrostatic interaction seen between CBD and NavMs: the hydrogen bond between the oxygen of the main chain residue M175 and the drug (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison and modeling shown in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "979c6710-0751-4061-9cba-b3b8d0bc34f3",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C57",
+      "claim": "The absence of the additional free hydroxyl group in THC accounts for the missing hydrogen bond in the THC-protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the consequence of the absence of the additional free hydroxyl group in THC, as noted above. That hydroxyl group is the one which forms the hydrogen bond present in the CBD-protein complex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and chemical differences between CBD and THC.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "9bf0ce99-fffe-4ea3-b538-54bb375a6035",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C58",
+      "claim": "The additional hydroxyl group in CBD provides an additional intermolecular interaction that could account for the differences in functional effects (inhibition slopes) of CBD and THC on voltage-gated sodium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "and provides an additional intermolecular interaction for CBD, which could account for the differences in functional effects (inhibition slopes) of the two compounds on voltage-gated sodium channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the structural differences and known functional differences.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "51063610-7263-4250-86d1-b36956192a80",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C59",
+      "claim": "CBD has been suggested to be a potential activator of the TRPV2 channel.",
+      "claim_type": "EXPLICIT",
+      "source": "CBD has also been suggested to be a potential activator of the Transient Receptor Potential Cation Channel Subfamily V Member 2 (TRPV2) channel (Qin et al., 2008; Morelli et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "006fbfe7-0541-4cf5-8bdb-1a22d012835e",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C60",
+      "claim": "TRPV2 is a channel which facilitates the non-specific movement of both sodium and calcium ions through plasma membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "a channel which facilitates the non-specific movement of both sodium and calcium ions through plasma membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about TRPV2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "5232a2b8-64c2-418e-b51e-7cb7b38a96b9",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C61",
+      "claim": "CBD activates rat TRPV2 with an EC50 of 3.7 \u00b5M according to electrophysiology studies.",
+      "claim_type": "EXPLICIT",
+      "source": "According to electrophysiology studies, CBD activates rat TRPV2 with an EC50 of 3.7 \u00b5M (Qin et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "36fb4663-8378-4531-961f-301277ba3799",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C62",
+      "claim": "The link between TRPV2 and epilepsy is much less direct than that for sodium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "although the link with epilepsy (Morelli et al., 2013) is much less direct than that for sodium channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assessment based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "8f3958ee-3271-4ebd-a6d9-7044e3515334",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C63",
+      "claim": "Cryo-EM was used to elucidate the structure of TRPV2 in a CBD-bound state at a nominal resolution of 3.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently cryo-electron microscopy (cryo-EM) was used to elucidate the structure of TRPV2 in a CBD-bound state at a nominal resolution of 3.2 \u00c5 (Pumroy et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "2d2fe0f8-e29b-494b-bbd1-faba9c12d512",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C64",
+      "claim": "The TRPV2 cryo-EM study indicated the presence of CBD in the pore region of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "that study indicated the presence of CBD in the pore region of the protein, thus supporting the proposal for TRPV2 being a candidate target for CBD binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cited cryo-EM study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "3e0d2125-f14c-4d98-89c2-2c6fbc004430",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C65",
+      "claim": "The lower resolution of the TRPV2 structure did not allow detailed analysis of the CBD binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The general location of the CBD was visible in the structure, although the lower resolution of that structure did not allow detailed analysis of its binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the limitations of the cited TRPV2 structure.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "5093234f-1279-4eb4-92d1-7247ec795485",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C66",
+      "claim": "CBD interactions in TRPV2 appear to involve a number of hydrophobic side chains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, its interactions appear to involve a number of hydrophobic side chains, whilst requiring a partial refolding of the adjacent region of the protein polypeptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the cited TRPV2 structure.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "7815e383-7aba-4f2e-8548-6a951af8ef02",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C67",
+      "claim": "CBD binding to TRPV2 requires a partial refolding of the adjacent region of the protein polypeptide.",
+      "claim_type": "EXPLICIT",
+      "source": "However, its interactions appear to involve a number of hydrophobic side chains, whilst requiring a partial refolding of the adjacent region of the protein polypeptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the cited TRPV2 structure.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "ac48b6f1-e08a-432a-899f-0368a2f9dcc8",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C68",
+      "claim": "The binding site for CBD in TRPV2 is in a similar region to that of CBD in NavMs.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding site found for CBD in the TRPV2 structure is in a similar region to that of CBD in NavMs (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "a8bf7087-636e-451b-964c-89c6008ea55a",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C69",
+      "claim": "The sodium channel-CBD site is located further into the fenestration than it is in TRPV2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the sodium channel-CBD site is located further into the fenestration than it is in TRPV2, but closer to the ion binding sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "fe1b1056-4829-42db-bc6c-0bde4ee2efbe",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C70",
+      "claim": "The sodium channel-CBD site is closer to the ion binding sites than the TRPV2-CBD site.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the sodium channel-CBD site is located further into the fenestration than it is in TRPV2, but closer to the ion binding sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "2ed45af3-0c01-4ce7-aa0e-70a8c3295344",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C71",
+      "claim": "The location of the CBD-binding site in sodium channels could more effectively modulate effects in the transmembrane passageway for ion conductance compared to TRPV2.",
+      "claim_type": "EXPLICIT",
+      "source": "and thus could more effectively modulate effects in the transmembrane passageway for ion conductance, and could account for sodium channels being blocked by CBD, whilst TRPV2 channels appear to be activated by them (Morelli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the structural differences and known functional differences.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "776b31b9-2040-43d0-abdb-b0cf8cf822e8",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C72",
+      "claim": "Sodium channels are blocked by CBD whilst TRPV2 channels appear to be activated by CBD.",
+      "claim_type": "EXPLICIT",
+      "source": "and could account for sodium channels being blocked by CBD, whilst TRPV2 channels appear to be activated by them (Morelli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior functional studies and the data in this manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "3a9469fa-d24a-4f7e-b36e-fefba4c82136",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C73",
+      "claim": "CBD-binding blocks the transmembrane pathway for sodium ion translocation through the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This study has demonstrated the nature of the interactions of CBD and a voltage-gated sodium channel, showing that CBD-binding blocks the transmembrane pathway for sodium ion translocation through the membrane (Naylor et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data and HOLE analysis in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "db10d4c3-57c3-4e4a-8b16-37e5f9c8cbb8",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C74",
+      "claim": "CBD-binding provides a potential mechanism for the functioning of CBD in sodium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "and hence provides a potential mechanism for the functioning of CBD in sodium channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "8eb0fab5-bffe-41f1-a9f2-96cfdb3c951c",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C75",
+      "claim": "The study suggests a possible molecular basis for the medicinal effects of CBD in the treatment of epilepsies.",
+      "claim_type": "EXPLICIT",
+      "source": "It further suggests a possible molecular basis for the medicinal effects of CBD in the treatment of epilepsies, as sodium channels have been shown to be causally-related to various types of human epilepsy, with disease-related mutations interfering with sodium ion transmembrane flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural findings and known links between sodium channels and epilepsy.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "8411fade-a4ac-4cfc-9217-883da28ca7a3",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C76",
+      "claim": "Sodium channels have been shown to be causally-related to various types of human epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "as sodium channels have been shown to be causally-related to various types of human epilepsy, with disease-related mutations interfering with sodium ion transmembrane flux.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "17413c07-e151-41a3-9a73-12b3895ee547",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C77",
+      "claim": "The CBD-binding site is a novel site, near to, but not coincident with, known analgesic binding sites in sodium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The CBD-binding site is a novel site, near to, but not coincident with, known analgesic binding sites in sodium channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural comparison with known drug binding sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "c8812c35-af24-41da-93ad-0488bef24962",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C78",
+      "claim": "The binding site location at the pore end of the transmembrane fenestrations may provide the pathway for CBD to enter and block the channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding site is located at the pore end of the transmembrane fenestrations which enable the ingress of hydrophobic molecules into the channel lumen, hence this may also provide the pathway for CBD to enter and block the channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural location and known function of fenestrations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "48fb5465-56d6-4f57-a2b6-1f3341dbc1ba",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C79",
+      "claim": "The crystal structure of the NavMs-CBD complex was determined at 2.3 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure (2.3 \u00c5 resolution) of the NavMs sodium channel (in coral coloured ribbon depiction) with one CBD molecule (in green space-filing depiction)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure legend and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "bb82335b-3be1-47a6-990c-fdcc5e964d38",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C80",
+      "claim": "The RMSD of the aligned structures of NavMs-CBD and hNav1.2 is 3.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural alignment of the NavMs-CBD crystal structure (coral) and the hNav1.2 cryo-EM structure (grey). The RMSD of the aligned structures is 3.2 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from structural alignment shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "4e0c63b4-1449-47c5-bd8a-427e641e8eb1",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C81",
+      "claim": "The RMSD of the alignment between NavMs and TRPV2 structures is 4.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The RMSD of the alignment is 4.2 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from structural alignment shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "17de52b6-3102-4f76-a399-bd7bc866ec3d",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C82",
+      "claim": "The best NavMs-CBD crystals were grown at 4\u00b0C via the sitting drop vapour diffusion method.",
+      "claim_type": "EXPLICIT",
+      "source": "The best crystals were grown at 4\u00b0C via the sitting drop vapour diffusion method using a 2:1 ratio of the protein and reservoir solutions containing 0.1 M sodium chloride, 0.1M lithium sulphate, 0.1 M HEPES, pH 7, and 30% v/v PEG300.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "76d0f1bc-5392-4a4f-860f-9d1d584f132b",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C83",
+      "claim": "Data were collected on beamlines at DESY, Soleil Synchrotron, and Diamond Light Source.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were collected on beamline P13 at the Electron Synchrotron (DESY, Germany); on beamline Proxima1 at the Soleil Synchrotron (France), and on beamlines IO3, IO4, and I24 at the Diamond Light Source (UK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "964fe4af-420a-4883-8c67-0bb16a67534a",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C84",
+      "claim": "Hundreds of crystals were screened and full data sets were collected from more than 40 crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "Hundreds of crystals were screened and full data sets were collected from more than 40 crystals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "8dd4f929-1b54-4e78-80dc-6160712d3056",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C85",
+      "claim": "The structure was determined from crystals which diffracted to 2.2 \u00c5 for the apo protein and 2.3 \u00c5 for the CBD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure was determined from the crystals which diffracted to the highest resolution (2.2 \u00c5 for the apo protein, and 2.3 \u00c5 for the CBD complex).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "0d872924-b708-4097-bf05-170e23346787",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "claim_id": "C86",
+      "claim": "100% of the residues in the NavMs-CBD structure were in allowed conformations according to structure quality checks.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure quality was checked using PROCHECK (Laskowski et al., 1993) and MolProbity (Chen et al., 2010), which indicated that 100% of the residues were in allowed conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods section based on validation software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e45cb2c4-454e-424c-8fe2-ef06238905f9",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of NavMs in complex with CBD was determined at 2.3 \u00c5 resolution, revealing that CBD binds at a novel site located at the interface of the fenestrations and the central hydrophobic cavity. The binding site is comprised of 11 residues from three different subunits, with clear electron density supporting CBD occupancy rather than detergent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C29, C30, C32, C33, C35, C38, C79, C85, and C86 collectively provide strong structural evidence for CBD binding. The high-resolution crystal structure (2.3 \u00c5), clear electron density maps (Figure 2A, Figure 2\u2014figure supplement 1), and rigorous structure validation (100% residues in allowed conformations) support the identification of the CBD-binding site at the fenestration-cavity interface.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "72b30914-ea1a-4bfc-9d94-239b41b62011",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CBD binding at the fenestration-cavity interface blocks the transmembrane sodium ion translocation pathway. HOLE analysis demonstrates that even a single CBD molecule is sufficient to occlude the pore and prevent sodium ion passage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C32, C34, and C73 are well-supported by structural data and HOLE analysis (Figure 2B, 2C). The pore radius plots clearly show that CBD binding reduces the pore radius below the threshold required for hydrated sodium ion passage (<2.0 \u00c5), providing a direct structural mechanism for channel inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "f639f90e-b717-43d9-931e-89fb013cdc6f",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CBD inhibits NavMs with an IC50 of 17.8 \u00b1 0.5 \u00b5M and a Hill slope of 1.5 \u00b1 0.1, which is less potent and with a slightly shallower Hill slope than previously studied Nav channels, but demonstrates similar overall inhibition patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C43, C45, and C46 are supported by whole-cell voltage-clamp electrophysiology data (Figure 5A). The IC50 and Hill slope values are directly measured with appropriate error estimates (n=8), and the comparison with prior studies on human Nav channels is appropriately contextualized as consistent with known variations in drug potency across Nav channel types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "ad632308-7ba5-4e18-ac52-b032a9247a51",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Residue T207 in NavMs is located in the CBD-binding site with its side chain (3.7 \u00c5 from CBD) involved in hydrophobic interactions. Mutation of T207 to alanine results in modest reduction in CBD block, and the equivalent residue (F1774) in hNav1.1 also affects CBD binding affinity when mutated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C48, C49, C50, and C51 are supported by structural data (Figure 1E) and functional validation (Figure 5B, 5C). The T207A mutation shows statistically significant reduction in CBD block (p=0.0269), and the correlation with prior mutagenesis studies on hNav1.1 (C51, citing Ghovanloo et al., 2018) strengthens the functional relevance of this residue across species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "7c328aa3-3949-472c-b7d3-5d6c608f4266",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CBD interactions with NavMs are predominantly hydrophobic except for one hydrogen bond between the main chain carbonyl of M175 and the hydroxyl group of CBD. THC, which lacks this hydroxyl group, can be sterically accommodated in the binding site but cannot form this hydrogen bond, potentially explaining functional differences between CBD and THC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C41, C54, C55, C56, C57, and C58 are supported by structural analysis (Figure 1E, Figure 7) and molecular modeling. The identification of the single hydrogen bond is based on crystal structure data, and the THC modeling demonstrates steric compatibility but loss of the key electrostatic interaction. This structural difference provides a plausible molecular explanation for the observed functional differences (C52, C53) between CBD and THC reported in prior studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "ede77b22-88b1-473b-be6e-6db5b67a3093",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The CBD-binding residues in hNavs arise from three different domains of the same polypeptide chain, with structural alignment between NavMs-CBD and hNav1.2 showing an RMSD of 3.2 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36 and C80 are supported by structural alignment data (Figure 3). The RMSD value is directly calculated from the alignment, and the identification of equivalent residues across three domains in hNavs is a reasonable inference from the tetrameric NavMs structure where binding residues come from three different subunits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "293052fb-5778-4c53-8122-aa55a7f21fe5",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The CBD-binding site is a novel site that is near to, but not coincident with, known analgesic binding sites in sodium channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C77 are supported by structural comparison with prior drug-bound structures (Figure 4). The overlay with the PI1-NavMs complex and references to NavAb drug binding sites demonstrate spatial proximity but distinct location, establishing the novelty of the CBD-binding site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "cd61a97f-450e-41fc-91d0-f86f044dc8b8",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The CBD-binding site in NavMs is in a similar region to that in TRPV2 but is located further into the fenestration and closer to ion binding sites. This difference in location may explain why CBD blocks sodium channels but activates TRPV2 channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68, C69, C70, C71, C72, and C81 involve comparison with the TRPV2 structure (RMSD 4.2 \u00c5, Figure 8). While the structural comparison is valid, the mechanistic explanation for opposite functional effects (C71, C72) is speculative. The TRPV2 structure has lower resolution (3.2 \u00c5) and the proposed mechanism linking binding site location to functional outcome lacks direct experimental validation. The claim requires additional functional studies to be fully supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "3e7a4d0f-a09c-46b1-ab89-4e9dac5fb494",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NavMs is an appropriate model system for studying CBD interactions with human Nav channels, exhibiting highly similar functional, conductance, drug-binding characteristics, and sequence/structural homologies to hNavs, particularly hNav1.1 and hNav1.2. NavMs crystal structures provide the highest resolution (~2.2\u20132.5 \u00c5) views of any sodium channel to date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C19, C20, C21, C24, C25, C27, and C28 are well-supported by multiple citations to prior comparative studies. The justification for using NavMs as a model system is appropriately documented with references to functional, structural, and pharmacological similarities. The resolution advantage over cryo-EM structures of hNavs (C26) further supports the choice of NavMs for detailed structural analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "b7a03b6d-69ce-45fa-a92f-cf856c176a51",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study provides a potential molecular mechanism for CBD function in sodium channels and suggests a possible molecular basis for the medicinal effects of CBD in epilepsy treatment. The fenestration location may provide the pathway for CBD entry into the channel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74, C75, and C78 represent broader interpretations and mechanistic proposals. While the structural data (pore blockage) provides a mechanism for channel inhibition, the connection to therapeutic effects in epilepsy (C75) is inferential and based on established knowledge about sodium channel involvement in epilepsy (C76) rather than direct experimental validation. The proposed entry pathway via fenestrations (C78) is plausible but not experimentally demonstrated in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background context establishing that voltage-gated sodium channels are drug targets for neurological diseases, CBD was recently approved for epilepsy treatment, mutations in hNavs are associated with channelopathies including epilepsy, and prior functional studies suggested CBD blocks sodium channels, though the structural basis was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, and C76 provide background context supported by appropriate citations to prior literature. These claims establish the rationale for the study and are appropriately documented as established knowledge or prior work rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "9dab71fb-73c8-4fff-8853-819ae5b83d93",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Structural characteristics of NavMs (tetrameric with six transmembrane helices per monomer) and hNavs (monomeric with four domains) are described, along with the resolution limitations of current cryo-EM structures of hNavs (~4\u20135 \u00c5 overall, ~3 \u00c5 for transmembrane regions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C23, and C26 describe established structural knowledge about sodium channel architecture and current structural biology capabilities. These are appropriately documented as background information to justify the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "6aacc558-9b17-4328-8f80-6cdb2bd2fc35",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Fenestrations are located in the transmembrane region just below the selectivity filter and were originally proposed by Hille (1977) as sites for ingress of hydrophobic drugs into the channel interior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C31 are supported by the structural data (Figure 1) and appropriate citation to Hille's original proposal. The location of fenestrations is clearly demonstrated in the crystal structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "8eb2e6b2-0931-4167-84c0-6ff69511606a",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The apo structure of NavMs exhibits some electron density in the CBD-binding region, which has been attributed to detergent molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by electron density analysis (Figure 2\u2014figure supplement 1). The interpretation that the apo structure contains detergent rather than CBD is reasonable based on the different size and shape of the density, and is further validated by comparison with the CBD-bound structure (C38).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "f562ead4-f3bd-4afe-b542-f7c623f55a79",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The moderate variation in CBD inhibition potency between human Navs and NavMs is consistent with previous reports using other Nav blockers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by citation to prior comparative studies (Bagn\u00e9ris et al., 2014). This contextualizes the observed differences in IC50 values as expected variation rather than a limitation of the model system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "4329c46e-d010-4c51-8373-024ef754e99f",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CBD and THC have previously been shown to inhibit hNav1.2 with similar potencies, but THC inhibition has a less steep slope than CBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C53 are supported by citation to prior experimental work (Ghovanloo et al., 2018). These claims provide context for the structural modeling of THC binding differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "ac69749c-4f87-417a-995c-1138e1b7bc99",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CBD has been suggested as a potential activator of TRPV2 channel with an EC50 of 3.7 \u00b5M. A recent cryo-EM structure at 3.2 \u00c5 resolution indicated CBD presence in the pore region, though the lower resolution limited detailed analysis. The link between TRPV2 and epilepsy is less direct than for sodium channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C60, C61, C62, C63, C64, C65, C66, and C67 appropriately summarize prior work on TRPV2-CBD interactions with appropriate citations. The assessment of resolution limitations and the indirect link to epilepsy are reasonable evaluations of the prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    },
+    {
+      "id": "370f3219-b2fe-4271-92ae-e1fd0e06fa5d",
+      "content_id": "324f1d26-7ce0-4166-84c0-c7a490cbade2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Methodological details of crystal growth and data collection are provided, including crystallization conditions, synchrotron beamlines used, and the extensive screening of hundreds of crystals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82, C83, and C84 describe methodological details that are clearly stated in the Materials and Methods section. These are appropriately documented experimental procedures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:40.890431Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c2e596c3-9734-4a39-a9f0-695352c04951",
+      "result_id": "e45cb2c4-454e-424c-8fe2-ef06238905f9"
+    },
+    {
+      "claim_id": "0049b711-d75d-47fb-8beb-e9d81a5dd9e0",
+      "result_id": "e45cb2c4-454e-424c-8fe2-ef06238905f9"
+    },
+    {
+      "claim_id": "77496127-1ebe-41ac-a8c7-76b9017dee10",
+      "result_id": "e45cb2c4-454e-424c-8fe2-ef06238905f9"
+    },
+    {
+      "claim_id": "f37912da-1708-4f6e-a392-b398dfcc163a",
+      "result_id": "e45cb2c4-454e-424c-8fe2-ef06238905f9"
+    },
+    {
+      "claim_id": "7a5ee051-435b-4d42-84b4-7d4882bdd0bf",
+      "result_id": "e45cb2c4-454e-424c-8fe2-ef06238905f9"
+    },
+    {
+      "claim_id": "e6bccc66-f5fd-40c1-bf54-f966f59d4887",
+      "result_id": "e45cb2c4-454e-424c-8fe2-ef06238905f9"
+    },
+    {
+      "claim_id": "d08fed50-0c2f-4f9c-ad11-db7c9c4e024a",
+      "result_id": "e45cb2c4-454e-424c-8fe2-ef06238905f9"
+    },
+    {
+      "claim_id": "48fb5465-56d6-4f57-a2b6-1f3341dbc1ba",
+      "result_id": "e45cb2c4-454e-424c-8fe2-ef06238905f9"
+    },
+    {
+      "claim_id": "8dd4f929-1b54-4e78-80dc-6160712d3056",
+      "result_id": "e45cb2c4-454e-424c-8fe2-ef06238905f9"
+    },
+    {
+      "claim_id": "0d872924-b708-4097-bf05-170e23346787",
+      "result_id": "e45cb2c4-454e-424c-8fe2-ef06238905f9"
+    },
+    {
+      "claim_id": "df0b5564-f5b9-4c93-8667-8f3b1b2ae04e",
+      "result_id": "72b30914-ea1a-4bfc-9d94-239b41b62011"
+    },
+    {
+      "claim_id": "f37912da-1708-4f6e-a392-b398dfcc163a",
+      "result_id": "72b30914-ea1a-4bfc-9d94-239b41b62011"
+    },
+    {
+      "claim_id": "95a9bc8e-dadb-4b44-8b17-e2512d61d0e1",
+      "result_id": "72b30914-ea1a-4bfc-9d94-239b41b62011"
+    },
+    {
+      "claim_id": "3a9469fa-d24a-4f7e-b36e-fefba4c82136",
+      "result_id": "72b30914-ea1a-4bfc-9d94-239b41b62011"
+    },
+    {
+      "claim_id": "ea7bdeb3-6134-4eab-a1a5-164a5b6fb8d3",
+      "result_id": "f639f90e-b717-43d9-931e-89fb013cdc6f"
+    },
+    {
+      "claim_id": "d336be7e-fb39-438e-b26d-27559beb8949",
+      "result_id": "f639f90e-b717-43d9-931e-89fb013cdc6f"
+    },
+    {
+      "claim_id": "20b665bc-a4b3-4b05-a228-75755493cb0d",
+      "result_id": "f639f90e-b717-43d9-931e-89fb013cdc6f"
+    },
+    {
+      "claim_id": "9d0e9266-6939-4640-aa73-ece56f60c3ef",
+      "result_id": "f639f90e-b717-43d9-931e-89fb013cdc6f"
+    },
+    {
+      "claim_id": "f084f57e-5657-43cb-9084-c13cbbfb69ce",
+      "result_id": "ad632308-7ba5-4e18-ac52-b032a9247a51"
+    },
+    {
+      "claim_id": "f1ce4451-fa62-4081-bc0e-e4ef4b93fcc4",
+      "result_id": "ad632308-7ba5-4e18-ac52-b032a9247a51"
+    },
+    {
+      "claim_id": "512eeec7-485f-41b6-b2c0-88128b4d9689",
+      "result_id": "ad632308-7ba5-4e18-ac52-b032a9247a51"
+    },
+    {
+      "claim_id": "5f23b75c-178e-4a72-88af-9a16dbd17a43",
+      "result_id": "ad632308-7ba5-4e18-ac52-b032a9247a51"
+    },
+    {
+      "claim_id": "f0ee8b5c-a64f-4081-a022-94f7815a6e22",
+      "result_id": "ad632308-7ba5-4e18-ac52-b032a9247a51"
+    },
+    {
+      "claim_id": "352566d2-179d-4969-8441-54988b5471b4",
+      "result_id": "7c328aa3-3949-472c-b7d3-5d6c608f4266"
+    },
+    {
+      "claim_id": "022c8b8e-c14f-4525-8152-d5c2d782f2b2",
+      "result_id": "7c328aa3-3949-472c-b7d3-5d6c608f4266"
+    },
+    {
+      "claim_id": "206a90fb-56ed-4796-b942-94e7cf0b61aa",
+      "result_id": "7c328aa3-3949-472c-b7d3-5d6c608f4266"
+    },
+    {
+      "claim_id": "93f4c0b2-8791-44bb-9a52-e42221574bef",
+      "result_id": "7c328aa3-3949-472c-b7d3-5d6c608f4266"
+    },
+    {
+      "claim_id": "d2fd8bd8-3738-4b85-9f22-3a0009676265",
+      "result_id": "7c328aa3-3949-472c-b7d3-5d6c608f4266"
+    },
+    {
+      "claim_id": "979c6710-0751-4061-9cba-b3b8d0bc34f3",
+      "result_id": "7c328aa3-3949-472c-b7d3-5d6c608f4266"
+    },
+    {
+      "claim_id": "9bf0ce99-fffe-4ea3-b538-54bb375a6035",
+      "result_id": "7c328aa3-3949-472c-b7d3-5d6c608f4266"
+    },
+    {
+      "claim_id": "5c303455-a748-4901-8a4c-2b538ab62ef2",
+      "result_id": "ede77b22-88b1-473b-be6e-6db5b67a3093"
+    },
+    {
+      "claim_id": "bb82335b-3be1-47a6-990c-fdcc5e964d38",
+      "result_id": "ede77b22-88b1-473b-be6e-6db5b67a3093"
+    },
+    {
+      "claim_id": "36a783a2-f31a-4d6d-84ed-96c4b6d576b6",
+      "result_id": "293052fb-5778-4c53-8122-aa55a7f21fe5"
+    },
+    {
+      "claim_id": "17413c07-e151-41a3-9a73-12b3895ee547",
+      "result_id": "293052fb-5778-4c53-8122-aa55a7f21fe5"
+    },
+    {
+      "claim_id": "ac48b6f1-e08a-432a-899f-0368a2f9dcc8",
+      "result_id": "cd61a97f-450e-41fc-91d0-f86f044dc8b8"
+    },
+    {
+      "claim_id": "a8bf7087-636e-451b-964c-89c6008ea55a",
+      "result_id": "cd61a97f-450e-41fc-91d0-f86f044dc8b8"
+    },
+    {
+      "claim_id": "fe1b1056-4829-42db-bc6c-0bde4ee2efbe",
+      "result_id": "cd61a97f-450e-41fc-91d0-f86f044dc8b8"
+    },
+    {
+      "claim_id": "2ed45af3-0c01-4ce7-aa0e-70a8c3295344",
+      "result_id": "cd61a97f-450e-41fc-91d0-f86f044dc8b8"
+    },
+    {
+      "claim_id": "776b31b9-2040-43d0-abdb-b0cf8cf822e8",
+      "result_id": "cd61a97f-450e-41fc-91d0-f86f044dc8b8"
+    },
+    {
+      "claim_id": "4e0c63b4-1449-47c5-bd8a-427e641e8eb1",
+      "result_id": "cd61a97f-450e-41fc-91d0-f86f044dc8b8"
+    },
+    {
+      "claim_id": "db7b00e4-03d2-4934-a21c-dfbdeaec58ac",
+      "result_id": "3e7a4d0f-a09c-46b1-ab89-4e9dac5fb494"
+    },
+    {
+      "claim_id": "2b3cbca4-c737-4b5b-ade6-7ca1e8f51074",
+      "result_id": "3e7a4d0f-a09c-46b1-ab89-4e9dac5fb494"
+    },
+    {
+      "claim_id": "9d34b26c-f6f8-411a-8250-169f63982a1d",
+      "result_id": "3e7a4d0f-a09c-46b1-ab89-4e9dac5fb494"
+    },
+    {
+      "claim_id": "558b414a-5fff-4b88-9ca7-57c9b39f17d6",
+      "result_id": "3e7a4d0f-a09c-46b1-ab89-4e9dac5fb494"
+    },
+    {
+      "claim_id": "5f763d43-021c-4aeb-ab65-536efac9d758",
+      "result_id": "3e7a4d0f-a09c-46b1-ab89-4e9dac5fb494"
+    },
+    {
+      "claim_id": "ecd27c80-0984-4e89-92d7-11881fd48007",
+      "result_id": "3e7a4d0f-a09c-46b1-ab89-4e9dac5fb494"
+    },
+    {
+      "claim_id": "e9dc703c-57a1-4d58-bf8f-f9e0fe134388",
+      "result_id": "3e7a4d0f-a09c-46b1-ab89-4e9dac5fb494"
+    },
+    {
+      "claim_id": "4937f2d7-2802-495e-8309-1eba682b8cb8",
+      "result_id": "3e7a4d0f-a09c-46b1-ab89-4e9dac5fb494"
+    },
+    {
+      "claim_id": "db10d4c3-57c3-4e4a-8b16-37e5f9c8cbb8",
+      "result_id": "b7a03b6d-69ce-45fa-a92f-cf856c176a51"
+    },
+    {
+      "claim_id": "8eb0fab5-bffe-41f1-a9f2-96cfdb3c951c",
+      "result_id": "b7a03b6d-69ce-45fa-a92f-cf856c176a51"
+    },
+    {
+      "claim_id": "c8812c35-af24-41da-93ad-0488bef24962",
+      "result_id": "b7a03b6d-69ce-45fa-a92f-cf856c176a51"
+    },
+    {
+      "claim_id": "90b8a615-2309-4f7b-8a15-f7a1b166eb1d",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "d4c4316a-6583-4608-a505-dcd3e547d88b",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "05cb687b-d94e-483f-b124-3c41c47ca66e",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "3a5ecc6c-caa0-432e-b68b-f8be7e398d68",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "2328d787-9e48-4b1f-9df9-89df38a94a8b",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "e04b1470-12ee-45b0-8b19-9d9a17a84d88",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "377308ce-5a0f-47ba-8723-30568d0d35cb",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "e98fbcab-5315-4694-8638-94504aa0b999",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "38b6af3c-b8f4-419d-ae56-647b3924e3ca",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "1ae4f4a3-5e2b-4c00-9189-2c313c8c0f9e",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "ec633eed-6c9a-4896-ba1f-8e23ef405ebd",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "e3ccc33d-7891-4d2d-a2cd-61ec8bebc33a",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "1d4a3d7f-4511-4819-b01f-291dd7717d20",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "b8ddfcba-5c6c-4f35-9ac5-dced9ab5acf4",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "b70a2e70-265d-4810-be60-37d0ab732799",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "8411fade-a4ac-4cfc-9217-883da28ca7a3",
+      "result_id": "ef1d5ee8-7dd3-4446-89c9-2fc5df2c595c"
+    },
+    {
+      "claim_id": "14352200-be0b-4b42-b708-e7d70c100fac",
+      "result_id": "9dab71fb-73c8-4fff-8853-819ae5b83d93"
+    },
+    {
+      "claim_id": "f5f6b2a8-0f50-47a9-9706-372fb2e67853",
+      "result_id": "9dab71fb-73c8-4fff-8853-819ae5b83d93"
+    },
+    {
+      "claim_id": "418579ef-7614-4366-b234-db2426c9e058",
+      "result_id": "9dab71fb-73c8-4fff-8853-819ae5b83d93"
+    },
+    {
+      "claim_id": "77496127-1ebe-41ac-a8c7-76b9017dee10",
+      "result_id": "6aacc558-9b17-4328-8f80-6cdb2bd2fc35"
+    },
+    {
+      "claim_id": "3c2ecf91-dfd4-4b19-8279-11d3e011a3ee",
+      "result_id": "6aacc558-9b17-4328-8f80-6cdb2bd2fc35"
+    },
+    {
+      "claim_id": "c2852ca8-d069-47e7-ac75-47e6321d6e24",
+      "result_id": "8eb2e6b2-0931-4167-84c0-6ff69511606a"
+    },
+    {
+      "claim_id": "b8191fb3-1177-40b1-b805-8220f95e7f2d",
+      "result_id": "f562ead4-f3bd-4afe-b542-f7c623f55a79"
+    },
+    {
+      "claim_id": "55b72486-6319-4506-bdf4-7c7d5e9b2d7c",
+      "result_id": "4329c46e-d010-4c51-8373-024ef754e99f"
+    },
+    {
+      "claim_id": "3490dfa5-ac10-4381-8088-fb89e2c74d87",
+      "result_id": "4329c46e-d010-4c51-8373-024ef754e99f"
+    },
+    {
+      "claim_id": "51063610-7263-4250-86d1-b36956192a80",
+      "result_id": "ac69749c-4f87-417a-995c-1138e1b7bc99"
+    },
+    {
+      "claim_id": "006fbfe7-0541-4cf5-8bdb-1a22d012835e",
+      "result_id": "ac69749c-4f87-417a-995c-1138e1b7bc99"
+    },
+    {
+      "claim_id": "5232a2b8-64c2-418e-b51e-7cb7b38a96b9",
+      "result_id": "ac69749c-4f87-417a-995c-1138e1b7bc99"
+    },
+    {
+      "claim_id": "36fb4663-8378-4531-961f-301277ba3799",
+      "result_id": "ac69749c-4f87-417a-995c-1138e1b7bc99"
+    },
+    {
+      "claim_id": "8f3958ee-3271-4ebd-a6d9-7044e3515334",
+      "result_id": "ac69749c-4f87-417a-995c-1138e1b7bc99"
+    },
+    {
+      "claim_id": "2d2fe0f8-e29b-494b-bbd1-faba9c12d512",
+      "result_id": "ac69749c-4f87-417a-995c-1138e1b7bc99"
+    },
+    {
+      "claim_id": "3e0d2125-f14c-4d98-89c2-2c6fbc004430",
+      "result_id": "ac69749c-4f87-417a-995c-1138e1b7bc99"
+    },
+    {
+      "claim_id": "5093234f-1279-4eb4-92d1-7247ec795485",
+      "result_id": "ac69749c-4f87-417a-995c-1138e1b7bc99"
+    },
+    {
+      "claim_id": "7815e383-7aba-4f2e-8548-6a951af8ef02",
+      "result_id": "ac69749c-4f87-417a-995c-1138e1b7bc99"
+    },
+    {
+      "claim_id": "17de52b6-3102-4f76-a399-bd7bc866ec3d",
+      "result_id": "370f3219-b2fe-4271-92ae-e1fd0e06fa5d"
+    },
+    {
+      "claim_id": "76d0f1bc-5392-4a4f-860f-9d1d584f132b",
+      "result_id": "370f3219-b2fe-4271-92ae-e1fd0e06fa5d"
+    },
+    {
+      "claim_id": "964fe4af-420a-4883-8c67-0bb16a67534a",
+      "result_id": "370f3219-b2fe-4271-92ae-e1fd0e06fa5d"
+    }
+  ],
+  "comparisons": []
+}

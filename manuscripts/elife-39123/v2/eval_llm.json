@@ -1,0 +1,486 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C95"
+    ],
+    "result": "Tuberculosis is a major global health burden with approximately 1.6 million deaths in 2017, 10 million new cases, and treatment challenges including long regimens (\u22656 months) and multi-drug resistant strains (480,000 cases in 2014 with 46% treatment failure rate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide well-established epidemiological context from WHO reports (C9, C10, C95) and general knowledge about TB treatment challenges (C1, C2, C11). The statistics are properly cited and consistent with public health literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Host-directed therapies (HDTs) represent a conceptual approach to enhance host-mediated bacterial clearance or limit immunopathology rather than directly targeting bacteria, potentially avoiding bacterial resistance mutations, though few have advanced to clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately describe the HDT concept with appropriate citations (C12, C14). The logical advantage regarding resistance (C13) is a reasonable inference from the mechanism of action, though it remains theoretical until clinically validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The zebrafish-M. marinum infection model recapitulates key aspects of TB pathogenesis, with M. marinum sharing conserved virulence loci with Mtb, inducing similar immune responses including granuloma formation, and zebrafish genes associated with disease progression correlating with human TB outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the validity of the zebrafish model with appropriate citations (C15-C20). The model's relevance is supported by genetic conservation, pathological similarity, and translational validation in human studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A whole-animal screen of 1200 FDA-approved drugs using zebrafish larvae infected with fluorescent M. marinum identified 51 initial hits, with 23 confirmed in secondary screening and 9 showing consistent host-directed activity (reducing bacterial burden in vivo but not in broth culture).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screening methodology is clearly described (C21-C23) with appropriate validation of the fluorescence readout (C23). The funnel from 1200\u219251\u219223\u21929 compounds (C24-C30) demonstrates rigorous hit validation. The identification of sulfamethazine (C27-C28) validates the approach's ability to detect in vivo-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Among the eight likely host-directed compounds identified, six were novel for mycobacterial infection, including clemastine (an inexpensive, widely available antihistamine), while desipramine and chlorpromazine had been previously described as potential HDTs acting through acid sphingomyelinase inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of hits is well-supported with appropriate citations for previously known compounds (C32-C33). The novelty claim for six compounds (C34) is appropriately qualified as based on authors' knowledge. Clemastine's properties (C35) are established facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Clemastine consistently reduced mycobacterial growth in vivo in a dose-dependent manner, achieving ~60% reduction in bacterial burden at 5 \u00b5M by 5 days post-infection with fewer and smaller infection foci, while showing no effect on bacterial growth in culture up to 50 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo efficacy is well-documented with dose-response data (C36-C39, Figure 2A-C) and the lack of direct antimicrobial activity is clearly demonstrated (C40, Figure 2D). The conclusion of host-dependent activity (C41) is a valid inference from these complementary experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Clemastine's antimycobacterial activity requires functional macrophages, as demonstrated by its complete ineffectiveness in irf8-deficient zebrafish that lack macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The macrophage dependence is convincingly demonstrated using the well-characterized irf8 mutant (C43-C45, Figure 2E-F). The genetic model is properly cited (C43) and the inference about macrophage requirement (C46) is strongly supported by the loss of drug effect in mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Clemastine treatment for 24 hours reduced the number of bacteria per macrophage by ~30% without altering total macrophage numbers, suggesting enhanced control at the level of individual infected macrophages before granuloma formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-cell analysis (C48, Figure 2G) provides direct evidence for enhanced intracellular control. The control showing no change in macrophage numbers (C50) rules out an indirect effect through macrophage recruitment. The inference about early macrophage-level control (C49) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Live imaging revealed that clemastine-treated animals consistently showed loss of bacterial fluorescence within macrophages while control-treated animals did not, suggesting enhanced microbicidal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The longitudinal imaging (C51, Video 1, Figure 2\u2014figure supplement 1D) provides direct visual evidence of bacterial clearance. The inference of enhanced microbicidal activity (C52) is reasonable, though alternative explanations (e.g., bacterial export) are not explicitly ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Clemastine did not increase the proportion of bacteria inducing the pH-sensitive aprA reporter, indicating it likely does not act through increased phagosome acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of the aprA'::GFP reporter (C54, Figure 2\u2014figure supplement 1E) is an appropriate assay for phagosomal pH. The negative result (C54) with proper citation of the reporter system (C53) supports the conclusion that acidification is not the primary mechanism (C55).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "P2RX7, a ligand-gated cation channel activated by extracellular ATP and highly expressed on immune cells, was previously reported in one cell culture study to be potentiated by clemastine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of P2RX7 (C56-C57) is well-cited from established literature. The prior report of clemastine's effect on P2RX7 (C58) is appropriately cited from N\u00f6renberg et al., 2011, providing a mechanistic hypothesis to test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C125"
+    ],
+    "result": "Two CRISPR/Cas9-generated p2rx7 alleles (p2rx7xt26 and p2rx7xt28) with frameshifts in exon 10 and premature stop codons upstream of the second transmembrane domain are predicted to be functional nulls, with homozygous mutants being viable with no apparent anatomical or fertility defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular characterization of the alleles is clearly documented (C59-C60, Figure 3A-B) with appropriate citation for the structural prediction (C60). The inference that these are functional nulls (C61) is reasonable based on the truncation location. The viability observation (C125) is important for interpreting subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C121"
+    ],
+    "result": "Using a novel transgenic GCaMP6F calcium reporter line and light-sheet microscopy, macrophages in infected zebrafish showed calcium flashes at ~0.1 flashes/minute, which clemastine enhanced more than two-fold specifically in infected cells in a p2rx7-dependent manner, suggesting potentiation rather than direct agonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium imaging approach is novel for vertebrate mycobacterial infection in vivo (C121). The baseline frequency (C62) and clemastine enhancement (C63-C64, Figure 3C, Videos 2-4) are well-documented. The p2rx7 dependence (C64) and specificity for infected cells (C65) strongly support the potentiation model (C66) rather than direct agonism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "While p2rx7 mutants showed no significant differences in baseline bacterial burden, clemastine consistently reduced burden in wildtype animals but completely failed to reduce burden in p2rx7 mutants, demonstrating that both altered calcium dynamics and bacterial burden reduction depend on functional P2rx7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic requirement for p2rx7 is convincingly demonstrated across multiple independent experiments (C68, Figure 4A-B, Figure 4\u2014figure supplement 1A-B). The lack of baseline phenotype (C67) indicates p2rx7 is not essential for infection control but is specifically required for clemastine's effect. The conclusion (C69) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "P2RX7 signaling promotes inflammasome activation, which depends on cytosolic sensing of PAMPs/DAMPs, and pathogenic mycobacteria secrete effector proteins that access the host cytosol via the ESX-1 secretion system, with \u0394RD1 mutants failing to engage cytosol-based responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the mechanistic framework linking P2RX7 to inflammasome activation with appropriate citations (C70-C73). This background is essential for interpreting the subsequent experiments with \u0394RD1 mutants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C122"
+    ],
+    "result": "Clemastine had no effect on \u0394RD1 mutant infections regardless of bacterial load (tested at multiple inocula), while remaining effective against cmaA2 mutants with comparable burden, demonstrating that clemastine efficacy requires ESX-1-dependent cytosolic engagement rather than being merely burden-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The \u0394RD1 experiments (C74, C77-C78, C122, Figure 5A, Figure 5\u2014figure supplement 1A-D) convincingly demonstrate ESX-1 dependence. The cmaA2 control (C75-C76) is critical for ruling out a burden-dependent effect. The use of multiple readouts (fluorescence, 16S rRNA, bacteria per macrophage) strengthens the conclusion (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C126"
+    ],
+    "result": "A TALEN-generated asc/pycard mutant (14 bp deletion causing premature stop) showed no dramatically increased susceptibility to mycobacterial infection, but clemastine was completely ineffective in asc mutants while reducing burden in wildtype/heterozygous controls, suggesting inflammasome activation may be limited during infection but enhancement leads to bacterial killing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The asc mutant is well-characterized (C81, Figure 5\u2014figure supplement 2A) and viable (C126). The lack of baseline phenotype (C82) parallels mouse findings, while the complete loss of clemastine efficacy (C83, Figure 5B) demonstrates inflammasome dependence. The interpretation (C84) is reasonable though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Clemastine treatment did not enhance LC3 decoration of mycobacteria over three days of infection, suggesting autophagy is not the host-directed mechanism for bacterial burden reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LC3 decoration assay (C85, Figure 5\u2014figure supplement 2D) is an appropriate readout for autophagy. The negative result, combined with the lack of increased acidification (C54-C55), supports the conclusion that autophagy is not the primary mechanism (C86).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In a novel granuloma explant model (Myco-GEM), clemastine treatment for 5-7 days resulted in nearly 70% reduction in mycobacterial fluorescence in mature granulomas from established infections (>2 weeks post-infection), demonstrating efficacy in complex granuloma structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The granuloma explant model is appropriately cited (C87) and provides a critical test of clemastine's efficacy in the complex granuloma environment. The substantial reduction in bacterial burden (C88, Figure 6A-B) supports the conclusion about efficacy in established infections (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Clemastine treatment significantly increased the percentage of FLICA-positive cells (indicating caspase-1 activation) in granuloma explants compared to DMSO control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FLICA assay (C90, Figure 6C, Figure 6\u2014figure supplement 2A-C) provides direct evidence of inflammasome activation in the granuloma context, supporting the proposed mechanism. The flow cytometry approach is appropriate and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Using bioluminescent M. marinum, clemastine-treated granulomas showed nearly 10-fold reduction in luminescence after 6 days and ~1.4 log10 (~27-fold) reduction in CFU after one week compared to vehicle controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of multiple readouts (luminescence C91, CFU C92, Figure 6D-E) provides strong convergent evidence for clemastine's efficacy. The CFU data (C92) is the gold standard for bacterial burden and confirms the fluorescence/luminescence results. The control showing clemastine doesn't quench luminescence (Figure 6\u2014figure supplement 3B) is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C124"
+    ],
+    "result": "Clemastine significantly enhanced the effect of moxifloxacin in Myco-GEM granulomas, suggesting it can act as a combination host-directed therapy with antibiotics in complex, established infections where moxifloxacin has reduced effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination therapy experiment (C93, Figure 6F) demonstrates additive/synergistic effects. The prior observation about moxifloxacin's reduced effectiveness in granulomas (C124) provides important context. The inference about combination therapy potential (C94) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The frequency of calcium transients in zebrafish macrophages (~0.1 flashes/minute) is similar to that reported for infected Drosophila macrophages in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comparison (C98) with appropriate citation to Weavers et al., 2016 provides evolutionary context for the calcium signaling observations and suggests conservation of this innate immune response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "P2RX7 activation has been implicated in various inflammatory processes and can result in bacterial killing in cell culture, with polymorphisms associated with TB susceptibility in humans and ATP-dependent enhancement of mycobacterial killing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C99-C102) provide important literature context with appropriate citations, establishing the biological plausibility of P2RX7 as a therapeutic target for mycobacterial infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Direct potentiation of the P2RX7 channel enhances host control of infection, representing a more nuanced approach than constitutive activation that may avoid problems with excessive macrophage activation, with effects localized to infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The demonstration of potentiation enhancing infection control (C103) is well-supported by the data. The speculation about advantages over constitutive activation (C104) is reasonable though not directly tested. The localization to infected cells (C105) is supported by Figure 3\u2014figure supplement 1C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "P2RX7 activation is strongly linked to inflammasome activation, though there is divergent evidence for inflammasome roles in mycobacterial infection, with ESX-1 mutants showing reduced IL-1B production, non-virulent strains showing increased activation, and asc-deficient mice/zebrafish showing no significant burden differences despite other inflammasome genes affecting susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C106-C110) accurately summarize the complex and sometimes contradictory literature on inflammasomes in mycobacterial infection with appropriate citations. This context is important for interpreting the asc mutant results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Clemastine is completely ineffective in inflammasome-deficient animals, supporting a model where inflammasome signaling is host-beneficial and P2rx7 potentiation may enhance mycobacterial killing, potentially by overcoming bacterial inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The complete loss of clemastine efficacy in asc mutants (C111, Figure 5B) strongly supports inflammasome dependence. The mechanistic interpretation (C112) is reasonable though somewhat speculative about overcoming bacterial inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "While excess inflammasome stimulation has been shown to be host-detrimental, there may be differences between nuanced P2RX7 potentiation and general inflammasome enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C113) with appropriate citation to Mishra et al., 2013 provides important context about potential risks of inflammasome activation and suggests why the potentiation approach may be advantageous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "Clemastine recently showed promise in a clinical trial for multiple sclerosis and would be a prime candidate for low-risk/high-reward studies in humans due to its safety profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The citation of the MS trial (C114, Green et al., 2017) provides important translational context and supports the feasibility of repurposing clemastine for TB, given its established safety profile.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Clemastine is effective in both early larval infections and established adult infections, reducing intracellular bacterial burden through P2rx7 potentiation to induce inflammasome activation, suggesting modulation of a P2RX7-inflammasome axis is a promising avenue for host-directed therapies in established disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The efficacy across infection stages (C115) is demonstrated in Figures 2 and 6. The mechanistic model (C116, Figure 7) integrates the P2rx7, calcium signaling, ESX-1, and inflammasome findings. The conclusion about therapeutic promise (C117) is well-supported by the comprehensive data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Clemastine's mechanism is unlikely attributable to antihistamine activity, as only one other antihistamine (trimeprazine) among 41 in the library was a hit, and diphenhydramine (same family as clemastine) had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative results with other antihistamines (C119-C120, Figure 2\u2014figure supplement 1A) effectively rule out antihistamine activity as the mechanism. This is important for establishing the moonlighting activity on P2RX7.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Large drug screens in whole animals would be extremely challenging in other vertebrates, but zebrafish's small size, permeability, and fecundity enable high-throughput chemical screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C96-C97) accurately describe the advantages of the zebrafish platform for drug screening, providing justification for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "The Prestwick Chemical Library contains additional antimycobacterial agents that did not emerge as hits, though some are ineffective in zebrafish larvae at 5 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C123) with appropriate citations acknowledges limitations of the screening concentration and explains why some known antimycobacterials were not detected.",
+    "result_type": "MINOR"
+  }
+]

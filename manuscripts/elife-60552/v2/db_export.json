@@ -1,0 +1,1942 @@
+{
+  "submission": {
+    "id": "275c259f-5af8-4c26-91aa-538552015989",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:29:23.384580Z",
+    "updated_at": "2025-12-02T19:29:23.384580Z"
+  },
+  "content": [
+    {
+      "id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "submission_id": "275c259f-5af8-4c26-91aa-538552015989",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM analysis of PIP2 regulation in mammalian GIRK channels\n\n## Authors\n\n- Yiming Niu<sup>1</sup> ([ORCID: 0000-0002-5683-1781](https://orcid.org/0000-0002-5683-1781))\n- Xiao Tao<sup>1</sup> ([ORCID: 0000-0002-9381-7903](https://orcid.org/0000-0002-9381-7903))\n- Kouki K Touhara<sup>1</sup> ([ORCID: 0000-0003-3167-9784](https://orcid.org/0000-0003-3167-9784))\n- Roderick MacKinnon<sup>1</sup> ([ORCID: 0000-0001-7605-4679](https://orcid.org/0000-0001-7605-4679)) \u2020\n\n### Affiliations\n\n1. Laboratory of Molecular Neurobiology and Biophysics, The Rockefeller University, Howard Hughes Medical Institute New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nG-protein-gated inward rectifier potassium (GIRK) channels are regulated by G proteins and PIP2. Here, using cryo-EM single particle analysis we describe the equilibrium ensemble of structures of neuronal GIRK2 as a function of the C8-PIP2 concentration. We find that PIP2 shifts the equilibrium between two distinguishable structures of neuronal GIRK (GIRK2), extended and docked, towards the docked form. In the docked form the cytoplasmic domain, to which G\u03b2\u03b3 binds, becomes accessible to the cytoplasmic membrane surface where G\u03b2\u03b3 resides. Furthermore, PIP2 binding reshapes the G\u03b2\u03b3 binding surface on the cytoplasmic domain, preparing it to receive G\u03b2\u03b3. We find that cardiac GIRK (GIRK1/4) can also exist in both extended and docked conformations. These findings lead us to conclude that PIP2 influences GIRK channels in a structurally similar manner to Kir2.2 channels. In Kir2.2 channels, the PIP2-induced conformational changes open the pore. In GIRK channels, they prepare the channel for activation by G\u03b2\u03b3.\n\n## Introduction\n\nThe inward rectifier K+ (Kir) channels were originally named for their rectifying current-voltage relationship (Hagiwara et al., 1976; Hagiwara and Takahashi, 1974; Hodgkin and Horowicz, 1959; Noble, 1965). Today, this class of ion channels is defined by characteristic structural features encoded by the Kir family of related genes (Hibino et al., 2010). All Kir channels are tetramers of identical or related subunits that encode a K+ selectivity filter-containing transmembrane pore (TMD for transmembrane domain) and a cytoplasmic domain (CTD) (Tao et al., 2009; Whorton and MacKinnon, 2011). The TMD and CTD are covalently linked by a tether, called here the TMD-CTD linker (Tao et al., 2009; Whorton and MacKinnon, 2011). In eukaryotic cells, Kir channels underlie many physiological processes, including neuronal electrical activity, electrolyte homeostasis in the kidney, insulin secretion, and heart rate control (Hibino et al., 2010).\n\nTo fulfill their many biological roles, different eukaryotic Kir channels respond to unique ligands. However, as far as we know, they all respond to the signaling lipid phosphatidylinositol 4,5-bisphosphate (PIP2) (Hibino et al., 2010; Hilgemann et al., 2001; Huang et al., 1998; Stanfield et al., 2002). In fact, the two features all eukaryotic Kir channels have in common are K+ selectivity and responsiveness to PIP2. A specific mechanism for PIP2 regulation of Kir2.2 has been proposed (Hansen et al., 2011; Tao et al., 2009). As depicted (Figure 1A), in the absence of PIP2 the CTD is disengaged from the TMD, resulting in an \u2018extended\u2019 conformation (Tao et al., 2009). Upon PIP2 binding, the TMD-CTD loop forms a helix and the CTD engages the TMD to form a \u2018docked\u2019 conformation in which the channel opens (Hansen et al., 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig1-v2.jpg)\n\n**Figure 1.:** (A) Conformational changes upon PIP2 binding in the Kir2.2 channel viewed from side with the extracellular side above (Left: the extended conformation without PIP2, PDB: 3JYC. Right: the docked conformation upon PIP2 binding, PDB: 3SPI). Four PIP2 molecules are shown as sticks and colored according to atom type: carbon, yellow; phosphorous, orange; and oxygen, red. The CTD translates towards the TMD by 6 \u00c5 upon PIP2 binding.\u00a0A set of reference atoms (Asp72 and Lys220 \u03b1-carbons) are highlighted as blue spheres in each structure. (B) Side and top views of the cryo-EM structure of the GIRK2 channel in an extended conformation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative cryo-EM image of the GIRK2 channel in the absence of PIP2. (B) Selected 2D-class averages of the GIRK2 channel. The scale bar is 17.5 nm. (C) Cryo-EM data processing workflow. (D) Gold-standard FSC curve after correction for masking effects. The resolution was estimated based on the FSC\u00a0=\u00a00.143 criterion. (E) Cross-validation FSC curves for the GIRK2 channel: blue curve, refined model versus half map one used for refinement (Work); red curve, refined model versus half map two not used for refinement (Free); black curve, refined model versus the combined map (Full). The similarity of the \u2018work\u2019 and \u2018free\u2019 curves suggests no substantial over-fitting. The correlation is above 0.5 up to a resolution of 4.1 \u00c5. (F) Local resolution map calculated using Relion3.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Overall conformational changes viewed from side with the extracellular solution above. The lipid bilayer boundaries are shown as grey bars. A set of reference atoms (Thr80 and Leu229 \u03b1-carbons) are highlighted as blue spheres. The CTD in the crystal structure translates towards the TMD by 6 \u00c5. (B and C) Conformational changes between cryo-EM and X-ray structures of apo GIRK2 in TMD (B) and CTD (C). (D) Crystal packing in the CrystalApo structure. The channel tetramer is colored salmon and symmetry-related tetramers are colored orange. The crystal contact interface is boxed and a zoomed-in view is shown.\n\nG-protein-gated inward rectifier K+ (GIRK) channels are activated by both PIP2 and G\u03b2\u03b3 (Huang et al., 1998; Logothetis et al., 1987; Logothetis and Zhang, 1999; Sui et al., 1998). Detailed mechanistic studies in a reconstituted system using a neuronal isoform of GIRK (GIRK2) showed that both PIP2 and G\u03b2\u03b3 are required to open the pore (Wang et al., 2014). Crystal structures of GIRK2 in the absence and presence of PIP2 (and in the presence of G\u03b2\u03b3) did not show a change in the relationship between the CTD and TMD as was seen in Kir2.2 (Hansen et al., 2011; Tao et al., 2009; Whorton and MacKinnon, 2011; Whorton and MacKinnon, 2013). In this manuscript, we study the structural effects of PIP2 on neuronal GIRK2 and cardiac GIRK1/4 using cryo-electron microscopy (cryo-EM) and correlate these effects with known properties of PIP2 activation.\n\n## Results\n\n### GIRK2 adopts an extended conformation in the absence of PIP2\n\nFigure 1B\u00a0shows the structure of the mouse GIRK2 channel in the absence of PIP2 (CryoEMApo) at a resolution of 3.9 \u00c5 by cryo-EM single particle analysis. The corresponding cryo-EM map is shown in Figure 1\u2014figure supplements 1 and 2. In the absence of PIP2 it is clear that GIRK2 can adopt a conformation in which the CTD is disengaged from the TMD and the TMD-CTD linker has to be extended to account for the separation between the TMD and CTD. Thus, in the absence of PIP2, the global conformation of GIRK2 appears much like the Kir2.2 channel in the absence of PIP2 (i.e. both channels adopt an extended conformation) (Figure 1A and B; Tao et al., 2009).\n\nUsing X-ray crystallography, we had determined a structure of GIRK2 in the absence of PIP2 (CrystalApo) that did not adopt this extended conformation (Figure 1\u2014figure supplement 3A; Whorton and MacKinnon, 2011). Detailed differences in the structures of CryoEMApo and CrystalApo are shown (Figure 1\u2014figure supplement 3B and C). The crystal lattice offers a possible explanation for conformational differences between CryoEMApo and CrystalApo (Figure 1\u2014figure supplement 3D). Symmetry-related tetramers in the crystal contact each other through\u00a0~500 \u00c52 buried surface area on the CTD (PISA server) (Krissinel and Henrick, 2007), as shown in the inset of Figure 1\u2014figure supplement 3D. Because in the extended conformation the CTD and TMD are free to move with respect to each other without hindrance, these two structured regions may have been pushed together when the crystal was formed. Single particle cryo-EM, without the potential interference of lattice contacts, might provide a structure that more accurately portrays a GIRK2 channel in the cell membrane.\n\nGIRK2 and Kir2.2 are structurally similar channels, but differ functionally in an important aspect. PIP2 is necessary and sufficient to open Kir2.2, but must operate in conjunction with G\u03b2\u03b3 to open GIRK2. This important distinction notwithstanding, the difference between CrystalApo and CryoEMApo conformations leads us to ask which conformation better reflects reality in the membrane? To pursue this question further, we used cryo-EM single particle analysis to study the dependence of the GIRK2 conformation as a function of PIP2 concentration.\n\n### GIRK2 conformation as a function of PIP2 concentration\n\nGIRK2 channels were vitrified in the presence of PIP2 (soluble C8-PIP2) concentrations ranging from 0 mM to 1.0 mM. Data were collected and analyzed using the approach applied to the Na+ dependence of the Slo2 K+ channel conformation (Hite and MacKinnon, 2017). Images from all concentrations were merged into a single\u00a0'titration dataset' and 3D refinement was carried out in RELION (Scheres, 2012). Particles were then classified (five classes requested) without refinement of angles or translations. Four classes (1-4) were similar to each other and showed a disengaged CTD (i.e. extended conformation) with an unresolved TMD-CTD linker (Figure 2A). Class 5 showed an engaged CTD (i.e. CTD-docked conformation) and a visible TMD-CTD linker (Figure 2A). The fraction of channels contributing to the CTD-docked conformation (class 5) increased as PIP2 concentration increased (Figure 2B and C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig2-v2.jpg)\n\n**Figure 2.:** (A) Structural titration image analysis workflow. Representative images of GIRK2 channels recorded in the presence of 0, 0.25, 0.5, 0.75, 0.875 or 1 mM C8-PIP2. GIRK2 particles were automatically selected from the images (green circles). The extracted particles from the respective images were combined into a single titration dataset for 3D refinement with C4 symmetry in RELION. Using the angles and translations obtained from the 3D refinement, the particles from the titration dataset were classified into five classes. The extended classes are colored red and the docked class blue. (B) Representative cryo-EM images of GIRK2 in the presence of 0, 0.25, 0.5, 0.75, 0.875 or 1 mM C8-PIP2. Particles marked with a red circle were classified as extended, and those with a blue circle were classified as docked. (C) The fraction of particles classified as the docked conformation of GIRK2 is plotted against the concentration of C8-PIP2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Fraction of particles in the docked class from the titration dataset is plotted as a function of PIP2 concentration for five independent 3D refinement and classification runs. (B) Plot of the fraction of particles classified n times into the docked class during five independent 3D refinement and classification runs.\n\nTo further examine the 3D classification result, we performed classification five times independently and compared the outcome. As shown in Figure 2\u2014figure supplement 1A, the fraction of channels contributing to the docked class at each PIP2 concentration remained fairly constant for the five independent runs, indicating that the classification algorithm yields a reproducible outcome. In addition, of all the channels classified as docked, more than 80% were classified as such four or five times (Figure 2\u2014figure supplement 1B). These data indicate that the population of channels in the docked conformation is positively correlated with the concentration of PIP2.\n\nFigure 2C shows that the fraction of docked channels increased from approximately 0.08 to 0.30 when PIP2 is increased from 0 mM to 1.0 mM. We previously showed that the activity of GIRK2 channels in membranes increases as a function of PIP2 concentration with an activation constant\u00a0~15 \u03bcM (and Hill coefficient\u00a0~3.1) (Wang et al., 2014). The large difference in PIP2 activity between these studies likely originates in the difference between the detergent micelle and the lipid membrane environment. PIP2 partitions into membranes (differently than into detergent micelles) and therefore the local concentrations of PIP2 are unknown.\n\nIt is also notable that a fraction (~0.08) of docked channels exists in the absence of PIP2 (Figure 2C). In functional studies in membranes we found that the open fraction of GIRK2 channels in the absence of PIP2 (but in the presence of G\u03b2\u03b3) is probably less than 0.01 (Wang et al., 2014). Again, there is an uncertainty that precludes direct comparison of these numbers: we do not know what fraction of docked channels are open. In other words, docking may be a necessary but not necessarily a sufficient condition to open the pore.\n\nWe found previously that the presence of 32 mM Na+ substantially increases the open probability of GIRK2 at all concentrations of PIP2 examined (Wang et al., 2014). The experiments behind Figure 2 were carried out in the absence of added Na+. It is possible that addition of Na+ would increase the fraction of docked channels.\n\nPresently, we conclude that formation of the docked channel is positively correlated with increased PIP2 concentration.\n\n### GIRK1/4 channels also form extended and docked conformations\n\nGIRK2 channels predominate in the nervous system while GIRK4 (Kir3.4) and heteromultimeric GIRK1/4 (Kir3.1/Kir3.4) channels function in the cardiovascular system where they regulate heart rate through parasympathetic nervous system control (Corey and Clapham, 1998; Karschin et al., 1996; Krapivinsky et al., 1995; Kubo et al., 1993; Lesage et al., 1994; Lesage et al., 1995). GIRK1/4 channels were expressed as previously described (Touhara et al., 2016) and cryo-EM samples were prepared in the presence of 0.5 mM C8-PIP2. Data were collected and images processed as shown (Figure 3\u2014figure supplement 1). 3D classification revealed both extended (26% particles) and docked (22% particles) conformations (Figure 3 and Figure 3\u2014figure supplement 1). Three remaining classes, accounting for 52% of the data, were insufficiently resolved to determine details of the underlying conformations. The two resolved conformations exhibit features similar to those of GIRK2, with lengths of\u00a0~119 \u00c5 and\u00a0~112 \u00c5 for extended and docked conformations, respectively, a well-resolved linker in the docked conformation but not in the extended conformation, and a 35\u00b0 difference in the rotation of the CTD with respect to the TMD (Figure 3). We conclude that GIRK1/4, like GIRK2, can adopt the extended and docked conformations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig3-v2.jpg)\n\n**Figure 3.:** (A and B) Side views of the cryo-EM density map of the extended (A) and docked (B) conformations of the GIRK1/4 channel. (C) Top view of the CTD regions aligned with respect to the TMD reveals a 35\u00b0 rotation from extended to docked conformations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative cryo-EM image of the GIRK1/4 channel. (B) Selected 2D-class averages of the GIRK1/4 channel. The scale-bar is 17.5 nm. (C) Cryo-EM data processing workflow for the GIRK1/4 channel. (D) Gold-standard FSC curve after correction for masking effects. The resolution was estimated based on the FSC\u00a0=\u00a00.143 criterion.\n\n### Conformational changes in the PIP2 and G\u03b2\u03b3 binding sites on GIRK2\n\nUsing all particles classified as \u2018docked\u2019 in the titration dataset, we reconstructed a best map of the GIRK2 channel with four bound PIP2 molecules (CryoEMPIP2) at a resolution of 3.3 \u00c5 (Figure 4A, Figure 4\u2014figure supplements 1 and 2). The TMD-CTD linker forms a well-resolved helix in contrast to a flexible loop in the CryoEMApo structure. This conformational change positions Lys199 and Lys200, along with Lys194 from the inner helix and Lys90 from the outer helix, to form electrostatic interactions with the PIP2 molecule (Figure 4B). In addition, the 6 \u00c5 translation and 35o rotation of the CTD associated with PIP2 binding brings Lys64 (from the N-terminus) near enough to PIP2 to engage its 4\u2019-phosphate (Figure 4B and C and Figure 4\u2014figure supplement 3). The sidechains of positively\u00a0charged residues that coordinate PIP2 are disordered in the CryoEMApo structure. Thus, PIP2 binding stabilizes the docked conformation through interactions between the 4\u2019,5\u2019-phosphate-substituted inositol head group of PIP2 and Lys64 (with the 4\u2019 phosphate) and Lys194, Lys199, Lys200 (with the 5\u2019 phosphate). An analogous constellation of charge-pair stabilization is observed in the PIP2 bound form of Kir2.2 (Hansen et al., 2011; Tao et al., 2009).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig4-v2.jpg)\n\n**Figure 4.:** (A) Side and top views of the cryo-EM density map of the docked conformation of GIRK2 channel (cyan) with four bound PIP2 molecules (orange). The PIP2 acyl chains were only partially resolved. (B) Close-up view of the PIP2 binding pocket. PIP2 is shown as sticks and colored according to atom type (carbon, yellow; phosphorous, orange; and oxygen, red). The PIP2 interacting residues are also shown as sticks (carbon, cyan and nitrogen, blue). (C) Comparison of the extended (gray, no PIP2) and the docked (cyan, with 4 PIP2 bound) structures. The channel is viewed from the side with the extracellular side above. The lipid bilayer boundaries are shown as grey bars. Four PIP2 molecules are shown as sticks and colored as in panel (B). The PIP2 molecule in a similar orientation as in (B) is outlined by a black box. Upon PIP2 binding, the CTD in the extended structure translates towards the TMD by 6 \u00c5 accompanied by a 35\u00b0 rotation viewed from the extracellular side. (D and E) Local conformational changes at the binding site for G\u03b2\u03b3 in the \u03b2L-\u03b2M loop of GIRK2 CTD are shown by structural superposition. The CTD region of GIRK2 CryoEMApo, CryoEMPIP2 and CrystalGIRK-G\u03b2\u03b3 structures are colored gray, cyan, and blue, respectively. Rearrangement of the \u03b2L-\u03b2M loop is indicated by an arrow.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Cryo-EM data processing workflow for the GIRK2 channel. The 155 K particles correspond to all the particles classified as the docked class (class 5) in Figure 2A. (B) Gold-standard FSC curve after correction for masking effects. The resolution was estimated based on the FSC\u00a0=\u00a00.143 criterion. (C) Cross-validation FSC curves: blue curve, refined model versus half map one used for refinement (Work); red curve, refined model versus half map two not used for refinement (Free); black curve, refined model versus the combined final map (Full). The similarity of the \u2018work\u2019 and \u2018free\u2019 curves suggests no substantial over-fitting. The correlation is above 0.5 up to a resolution of 3.5 \u00c5. (D) Local resolution map calculated using Relion3.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A and B) Comparison of the PIP2 binding site in the CryoEMApo (white, panel (A)) and CryoEMPIP2 (cyan, panel (B)) structures. C\u03b1 atoms of residues involved in PIP2 binding are shown as spheres. Distances between K194 and K64 (C\u03b1 to C\u03b1) are labeled.\n\nAnother conformational change associated with PIP2 binding occurs on the side of the CTD, involving the \u03b2L-\u03b2M loop, as shown (Figure 4D and E). The \u03b2L-\u03b2M loop does not make direct contact with the PIP2 binding site but apparently is allosterically coupled to it. The possible importance of the \u03b2L-\u03b2M loop conformational change is implied through superposition of CryoEMApo CTD and CryoEMPIP2 CTD with the CTD from the crystal structure of GIRK2 in complex with G\u03b2\u03b3 (CrystalGIRK-G\u03b2\u03b3). The \u03b2L-\u03b2M loop is located on the surface to which G\u03b2\u03b3 binds. In CryoEMPIP2, the \u03b2L-\u03b2M loop adopts the position observed in the G\u03b2\u03b3 complex. Thus, it would appear that PIP2 binding to GIRK2 pre-configures the G\u03b2\u03b3 binding surface on the CTD into a receptive conformation.\n\n## Discussion\n\nThe main conclusion of this study is that GIRK channels \u2013 GIRK2 as well as GIRK1/4 \u2013 can adopt extended and docked conformations. With GIRK2 we show that the docked conformation is favored in the presence of PIP2. We think that crystal contacts in the previous CrystalApo structure pushed the CTD and TMD into close proximity (Whorton and MacKinnon, 2011). It seems likely that PIP2 in GIRK channels, as previously proposed for Kir2.2 channels (Hansen et al., 2011; Tao et al., 2009), mediates the docking of the CTD onto the TMD. Electrostatic interactions between the anionic headgroup of PIP2 and cationic amino acid sidechains on the channel serve to tether the CTD to the TMD. Many of these electrostatic interactions are conserved in GIRK and Kir2.2. A secondary conformational change occurs on the side of the CTD corresponding to the G\u03b2\u03b3 binding surface. This change configures the surface ready to bind G\u03b2\u03b3.\n\nThese effects of PIP2 on GIRK2 are summarized in a cartoon (Figure 5A and B). By tethering the CTD to the TMD, PIP2 brings the CTD close to the membrane surface where it can be reached by G\u03b2\u03b3, which is held at the membrane surface by its covalent attachment to a lipid tail. Coincidentally, the binding surface for G\u03b2\u03b3 on the CTD adopts a permissive conformation, allowing G\u03b2\u03b3 to bind. This proposed mechanism is consistent with the demonstration that G\u03b2\u03b3 is unable to open GIRK2 in the absence of PIP2 (Wang et al., 2014): without PIP2, G\u03b2\u03b3 is unable to access its binding site on GIRK2.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60552/elife-60552-fig5-v2.jpg)\n\n**Figure 5.:** (A and B) A cartoon depiction of PIP2 regulation of GIRK channels. The blue shape depicts the GIRK channel. a, b, c, d, and e indicate the selectivity filter, inner helix gate, TMD-CTD linker, the G-loop gate, and the \u03b2L-\u03b2M loop, respectively. Circular arrow indicates the rotation about the pore axis with respect to the TMD and perpendicular arrow indicates CTD translation upon PIP2 binding. The \u2018gg\u2019 label represents the geranylgeranyl lipid modification at the C terminus of G\u03b3. In the absence of PIP2 (A), GIRK2 channel adopts the extended conformation and is not positioned for G\u03b2\u03b3 binding. Upon PIP2 binding (B), the GIRK2 channel transits to the docked conformation, allowing G\u03b2\u03b3 binding to occur. (C) Plot of pore diameter (between van der Waals surfaces, calculated with Hole) for the extended (gray) and docked (cyan) structures. (D and E) Superposition of the channel TMD from the extended (gray) and docked (cyan) structures. Conformational changes at the inner helix gate (D) and G-loop gate (E) are boxed and zoomed-in details are shown. Sidechains of the inner helix gate-forming residue Phe192 are shown as sticks. C\u03b1 atoms of the G-loop gate constriction residue Met313 are shown as spheres.\n\nHow do the PIP2-induced conformational changes help to open the pore? GIRK channels have two gates along their ion conduction pore: an inner helix gate in the TMD and a G-loop gate at the apex of the CTD (Doyle et al., 1998; Jiang et al., 2002; Nishida et al., 2007; Pegan et al., 2005; Whorton and MacKinnon, 2011; Whorton and MacKinnon, 2013). In the absence of PIP2, the inner helix gate of GIRK2 is most tightly constricted at position Phe192 in the inner helix, which lines the pore on the intracellular side of the selectivity filter (Figure 5C and D). PIP2 binding and docking of the CTD onto the TMD is associated with a modest change in the conformation of the inner helix, a repositioning of the sidechain of Phe192, and widening of the pore. The G-loop gate actually constricts when the CTD docks onto the TMD (Figure 5C and E). Thus, it would appear that when four PIP2 molecules bind to GIRK2, the inner helix gate opens, or begins to open, but the pore remains closed owing to a constricted G-loop gate. This interpretation is consistent with functional data showing that PIP2 is unable to open GIRK2 in the absence of G\u03b2\u03b3 (Wang et al., 2014) because the G-loop gate remains closed.\n\nIn summary, it appears that PIP2 in GIRK channels enables G\u03b2\u03b3-mediated opening by bringing the CTD near the intracellular membrane surface and rendering the G\u03b2\u03b3 binding surface permissive for attachment.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Mus musculus GIRK2)</td>\n      <td>GIRK2</td>\n      <td>synthetic</td>\n      <td></td>\n      <td>Synthesized at GeneWiz.</td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens GIRK1)</td>\n      <td>GIRK1</td>\n      <td>synthetic</td>\n      <td></td>\n      <td>Synthesized at GeneWiz.</td>\n    </tr>\n    <tr>\n      <td>Gene (Homo sapiens GIRK4)</td>\n      <td>GIRK4</td>\n      <td>synthetic</td>\n      <td></td>\n      <td>Synthesized at GeneWiz.</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>DH10Bac</td>\n      <td>ThermoFisher</td>\n      <td>10361012</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pPICZ-GIRK2</td>\n      <td>https://doi.org/10.1016/j.cell.2011.07.046</td>\n      <td></td>\n      <td>Maintained at the Mackinnon lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GIRK1-His10-pEG BacMam</td>\n      <td>https://doi.org/10.7554/eLife.15750.001</td>\n      <td></td>\n      <td>Maintained at the Mackinnon lab</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>GIRK4-1D4-pEG BacMam</td>\n      <td>https://doi.org/10.7554/eLife.15750.001</td>\n      <td></td>\n      <td>Maintained at the Mackinnon lab</td>\n    </tr>\n    <tr>\n      <td>Cell line (Pichia pastoris)</td>\n      <td>SMD1163</td>\n      <td>Invitrogen</td>\n      <td>C17500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>Sf9</td>\n      <td>ATCC</td>\n      <td>Cat# CRL-1711</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293S GnTI-</td>\n      <td>ATCC</td>\n      <td>Cat# CRL-3022</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SF-900 II SFM medium</td>\n      <td>GIBCO</td>\n      <td>Cat# 10902\u2013088</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>L-Glutamine (100x)</td>\n      <td>GIBCO</td>\n      <td>Cat# 25030\u2013081</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Pen Strep</td>\n      <td>GIBCO</td>\n      <td>Cat# 15140\u2013122</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Grace\u2019s insect medium</td>\n      <td>GIBCO</td>\n      <td>Cat# 11605\u2013094</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Freestyle 293 medium</td>\n      <td>GIBCO</td>\n      <td>Cat# 12338\u2013018</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fetal bovine serum</td>\n      <td>GIBCO</td>\n      <td>Cat# 16000\u2013044</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cellfectin II reagent</td>\n      <td>Invitrogen</td>\n      <td>Cat# 10362100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cholesteryl hemisuccinate (CHS)</td>\n      <td>Anatrace</td>\n      <td>CH210</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>n-Dodecyl-\u03b2-D-Maltopyranoside (DDM)</td>\n      <td>Anatrace</td>\n      <td>D310S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>n-Decyl-\u03b2-D-Maltopyranoside (DM)</td>\n      <td>Anatrace</td>\n      <td>D322S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1,2-dioctanoyl-sn-glycero-3-phospho-(1'-myo-inositol-4',5'-bisphosphate) (ammonium salt) (C8-PIP2)</td>\n      <td>Avanti Polar Lipids</td>\n      <td>850185P</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>(1H, 1H, 2H, 2H-Perfluorooctyl)phosphocholine (FFC8)</td>\n      <td>Anatrace</td>\n      <td>F300F</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CNBr-activated Sepharose beads</td>\n      <td>GE Healthcare</td>\n      <td>Cat# 17-0430-01</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Superdex 200 Increase 10/300 GL</td>\n      <td>GE Healthcare Life Sciences</td>\n      <td>28990944</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>R1.2/1.3 400 mesh Au holey carbon grids</td>\n      <td>Quantifoil</td>\n      <td>1210627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Superose 6 Increase 10/300 GL</td>\n      <td>GE Healthcare Life Sciences</td>\n      <td>29091596</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION 3.0</td>\n      <td>https://doi.org/10.7554/eLife.42166.001</td>\n      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION 3.1</td>\n      <td>https://doi.org/10.1101/798066</td>\n      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>https://doi.org/10.1038/nmeth.4193</td>\n      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gctf 1.0.6</td>\n      <td>https://doi.org/10.1016/j.jsb.2015.11.003</td>\n      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/Gctf/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CtfFind4.1.8</td>\n      <td>https://doi.org/10.1016/j.jsb.2015.08.008</td>\n      <td>http://grigoriefflab.janelia.org/ctffind4</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Gautomatch</td>\n      <td></td>\n      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>CryoSPARC 2.4.0</td>\n      <td>https://doi.org/10.7554/eLife.46057.001</td>\n      <td>https://cryosparc.com/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Pyem</td>\n      <td></td>\n      <td>https://github.com/asarnow/pyem</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>https://doi.org/10.1107/S0907444910007493</td>\n      <td>http://www2.mrc-lmb.cam.ac.uk/personal/ pemsley/coot</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>https://doi.org/10.1107/S0907444909052925</td>\n      <td>https://www.phenix-online.org</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop version 16.0.0 (for figure preparation)</td>\n      <td>Adobe Systems, Inc</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism version 8.0</td>\n      <td>GraphPad Software</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MacPyMOL: PyMOL v2.0 Enhanced for Mac OS X</td>\n      <td>Schrodinger LLC</td>\n      <td>https://pymol.org/edu/?q=educational/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chimera</td>\n      <td>https://doi.org/10.1002/jcc.20084</td>\n      <td>https://www.cgl.ucsf.edu/chimera/download.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Serial EM</td>\n      <td>https://doi.org/10.1016/j.jsb.2005.07.007</td>\n      <td>http://bio3d.colorado.edu/SerialEM</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>HOLE</td>\n      <td>https://doi.org/10.1016/S0263-7855(97)00009-X</td>\n      <td>http://www.holeprogram.org</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nMouse GIRK2 (residues 52\u2013380) was expressed in Pichia pastoris as previously described (Whorton and MacKinnon, 2011). Frozen cells were lysed in a mixer mill, and resuspended\u00a0in 50 mM HEPES (pH 7.4), 150 mM KCl and protease inhibitor cocktail for 1 hr at 4\u00b0C. The resuspension was adjusted to pH 8.0, then 4% (w/v) n-decyl-\u03b2-D-maltopyranoside (DM) and 0.8% (w/v) cholesterol hemisuccinate (CHS) (or 4% n-dodecyl-\u03b2-D-maltopyranoside (DDM) and 0.8% CHS for the apo GIRK2 sample) were added to extract for 2 hr at 4\u00b0C. The mixture was centrifuged at 37,500 g for 30 min and the supernatant incubated with GFP nanobody-coupled CNBr-activated Sepharose resin (GE Healthcare) for 1\u20132 hr at 4\u00b0C (Kubala et al., 2010). The resin was subsequently washed with 10 column volumes of wash buffer (50 mM HEPES pH 7.4, 150 mM KCl, 0.2% DM and 0.04% CHS for structural titration samples, or 0.05% DDM and 0.01% CHS for apo GIRK2 sample). The washed resin was incubated overnight with PreScission protease at a target protein to protease ratio of 40:1 (w:w) to cleave off GFP and release the protein from the resin. The protein was eluted with wash buffer, concentrated using an Amicon Ultra centrifugal filter (MWCO 100 kDa), and then injected onto a Superdex 200 increase 10/300 GL column (GE Healthcare) equilibrated with SEC buffer (20 mM Tris-HCl pH 7.5, 150 mM KCl, 10 mM DTT, 1 mM EDTA, 0.2% DM and 0.04% CHS for structural titration samples, or 0.05% DDM and 0.01% CHS for apo GIRK2 sample). Peak fractions corresponding to the GIRK2 tetramer were pooled and concentrated to 6\u20137 mg/ml using an Amicon Ultra centrifugal filter (MWCO 100 kDa).\n\nFull-length human GIRK1 and GIRK4 genes were cloned into a pEG BacMam vector, and co-expressed in HEK293S GnTI- (ATCC CRL-3022) cells as previously described (Touhara et al., 2016). Cells were solubilized in 50 mM HEPES (pH 7.4), 150 mM KCl, 1.5% (w/v) DDM, 0.3% (w/v) CHS, and protease inhibitor cocktail. Two hours after solubilization, lysed cells were centrifuged at 37,500 g for 30 min and supernatant was incubated with Talon metal affinity resin (Clontech Laboratories, Inch. Mountain View, CA) for 1 hr at 4\u00b0C with gentle mixing. The resin was washed in batch with five column volumes of buffer A (50 mM HEPES pH 7.0, 150 mM KCl, 0.05% [w/v] DDM, 0.01% [w/v] CHS), then loaded onto a column and further washed with five column volumes of buffer A + 10 mM imidazole. The protein was then eluted with buffer A + 200 mM imidazole. The peak fraction was collected and incubated with the 1D4 affinity resin for 1 hr at 4\u00b0C with gentle mixing. The resin was loaded onto a column and washed with buffer A. Five mM DTT and 1 mM EDTA were added and eGFP and affinity tags were cut with PreScission protease overnight at 4\u00b0C. The cleaved protein was then concentrated to run on a Superose 6 10/300 GL gel filtration column in 20 mM Tris-HCl (pH 7.5), 150 mM KCl, 100 mM NaCl, 0.025% (w/v) DDM, 0.005% (w/v) CHS, 10 mM DTT, and 1 mM EDTA. Protein was finally concentrated to\u00a0~5 mg/ml using an Amicon Ultra centrifugal filter (MWCO 100 kDa).\n\n### Cryo-EM sample preparation and data collection\n\nFor the apo GIRK2 sample, purified GIRK2 at a concentration of 6\u20137 mg/ml was mixed with Fluorinated Fos-Choline-8 (FFC8) (Anatrace) stock at 29 mM to a final concentration of 2.9 mM immediately prior to application of 3.5 \u03bcL of the mixture onto a glow-discharged Quantifoil R1.2/1.3 400 mesh Au grid (Quantifoil), blotted for 4 s at room temperature (RT) with a blotting force of 2\u20134 and plunge-frozen in liquid ethane using a Vitrobot Mark IV (FEI).\n\nFor the structural titration samples, purified GIRK2 at a concentration of 6\u20137 mg/ml was mixed with C8-PIP2 stock at 10 mM to a final concentration of 0, 0.25, 0.5, 0.75, 0.875 or 1 mM. In an earlier study (Wang et al., 2014), we showed that C8-PIP2 activates GIRK2 channels in lipid membranes with an activation constant\u00a0~15 \u03bcM and Hill coefficient n\u00a0~\u00a03. C8-PIP2 partitions into membranes and thus the local concentration near the channel is unknown. We chose the higher concentration range in the structural study because the channels are in detergent micelles, where local concentrations of PIP2, compared to studies with lipid membranes, are expected to be lower. The mixtures were further mixed with FFC8 stock to a final concentration of 2.9 mM, and 3.5 \u03bcL aliquots of the protein were pipetted onto glow-discharged Quantifoil R1.2/1.3 400 mesh Au grids\u00a0and blotted with the same settings as for apo GIRK2 using a Vitrobot Mark IV.\n\nFor GIRK1/4 samples, purified GIRK1/4 at a concentration of\u00a0~5 mg/ml was mixed with C8-PIP2 stock at 10 mM to the final concentration of 0.5 mM. 3.5 \u03bcL aliquots of the protein were then pipetted onto glow-discharged Quantifoil R1.2/1.3 400 mesh Au grids\u00a0and blotted for 1 s at RT with a blotting force of 1 and plunge-frozen in liquid ethane using a Vitrobot Mark IV.\n\nCryo-EM data were collected on a 300-kV Titan Krios electron microscope (Thermo Fisher Scientific) equipped with a K3 Summit (apo GIRK2 sample) or K2 Summit (other samples) direct electron detector in super-resolution mode. After binning over 2 \u00d7 2 pixels, the calibrated pixel size was 0.86 \u00c5, 1 \u00c5 and 1.03 \u00c5 for apo GIRK2, structural titration samples and GIRK1/4, respectively. For the apo GIRK2 sample, exposures of 3 s were dose-fractionated into 80 frames with a dose rate of 25.5 electrons per pixel per second, resulting in a total dose of 103.3 electrons per \u00c52. For structural titration samples and GIRK1/4 samples, exposures of 10 s were dose-fractionated into 50 frames with a dose rate of 8 electrons per pixel per second, resulting in a total dose of 80 (structural titration samples) or 75.4 (GIRK1/4 sample) electrons per \u00c52, respectively. Cryo-EM data collection statistics are summarized in Table 1.\n\n**Table 1.**\n Cryo-EM data collection and refinement statistics, related to Figures 1, 2 and 4.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>GIRK2Extended</th>\n      <th>GIRK2Docked</th>\n      <th>GIRK1/4Extended</th>\n      <th>GIRK1/4Docked</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EMDB ID</td>\n      <td>EMD-22199</td>\n      <td>EMD-22200</td>\n      <td>EMD-22201</td>\n      <td>EMD-22202</td>\n    </tr>\n    <tr>\n      <td>PDB ID</td>\n      <td>6XIS</td>\n      <td>6XIT</td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Data collection</td>\n    </tr>\n    <tr>\n      <td>Microscope</td>\n      <td colspan=\"4\">Titan Krios</td>\n    </tr>\n    <tr>\n      <td>Detector</td>\n      <td>K3 summit</td>\n      <td colspan=\"3\">K2 summit</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td colspan=\"4\">300</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>0.43</td>\n      <td>0.5</td>\n      <td colspan=\"2\">0.515</td>\n    </tr>\n    <tr>\n      <td>Total electron exposure (e-/\u00c52)</td>\n      <td>103.3</td>\n      <td>80.0</td>\n      <td colspan=\"2\">75.4</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td>1.0 to 3.0</td>\n      <td>1.5 to 2.5</td>\n      <td colspan=\"2\">1.5 to 3.5</td>\n    </tr>\n    <tr>\n      <td>Micrographs collected</td>\n      <td>2103</td>\n      <td>11,349</td>\n      <td colspan=\"2\">3415</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Reconstruction</td>\n    </tr>\n    <tr>\n      <td>Final particle images</td>\n      <td>112,517</td>\n      <td>155,128</td>\n      <td>57,644</td>\n      <td>48,757</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td>1.29</td>\n      <td>1</td>\n      <td>1.03</td>\n      <td>1.03</td>\n    </tr>\n    <tr>\n      <td>Box size (pixels)</td>\n      <td>256</td>\n      <td>400</td>\n      <td>256</td>\n      <td>256</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5) (FSC\u00a0=\u00a00.143)</td>\n      <td>3.9</td>\n      <td>3.3</td>\n      <td>7.9</td>\n      <td>4.6</td>\n    </tr>\n    <tr>\n      <td>Map Sharpening B-factor (\u00c52)</td>\n      <td>\u221226</td>\n      <td>\u221212</td>\n      <td>-</td>\n      <td>\u2212192</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Model composition</td>\n    </tr>\n    <tr>\n      <td>Non-hydrogen atoms</td>\n      <td>9460</td>\n      <td>10,252</td>\n      <td rowspan=\"4\" colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>1240</td>\n      <td>13,08</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>0</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Metals</td>\n      <td>0</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Model-to-map CC (mask)</td>\n      <td>0.62</td>\n      <td>0.72</td>\n      <td rowspan=\"2\" colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Model-to-map CC (volume)</td>\n      <td>0.64</td>\n      <td>0.75</td>\n    </tr>\n    <tr>\n      <td>R.m.s deviations</td>\n      <td colspan=\"4\"></td>\n    </tr>\n    <tr>\n      <td>Bond length (\u00c5)</td>\n      <td>0.006</td>\n      <td>0.009</td>\n      <td rowspan=\"2\" colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.3</td>\n      <td>1.3</td>\n    </tr>\n    <tr>\n      <td colspan=\"5\">Validation</td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>2.00</td>\n      <td>1.80</td>\n      <td rowspan=\"2\" colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Clash score</td>\n      <td>8.55</td>\n      <td>9.91</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td colspan=\"4\"></td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0</td>\n      <td>0</td>\n      <td rowspan=\"5\" colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>1.7</td>\n      <td>4.0</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>98.3</td>\n      <td>96.0</td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers (%)</td>\n      <td>1.40</td>\n      <td>0.74</td>\n    </tr>\n    <tr>\n      <td>C-beta deviations (%)</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cryo-EM data processing\n\nImage processing was performed in both CryoSPARC-2.9.0 (Structura Biotechnology) (Punjani et al., 2017) and RELION (Scheres, 2012; Zivanov et al., 2018; Zivanov et al., 2020). All movie frames were corrected with a gain reference collected during the same EM session, and specimen movement was corrected using MotionCorr2 (Zheng et al., 2017) with dose weighting. The contrast transfer function (CTF) parameters were estimated using Gctf-1.0.6 (Zhang, 2016). Images showing substantial ice contamination, abnormal background, thick ice, low contrast or poor Thon rings were discarded.\n\nFor structure determination of the apo GIRK2, 2049 of 2103 micrographs were selected for further processing. Particles were picked with the Laplacian-of-Gaussian auto-picking implemented in RELION-3 without templates. 502,731 auto-picked particles were extracted into 384 \u00d7 384 pixel images. The particle images were binned 1.5 times and subjected to Ab-initio reconstruction in CryoSPARC-2.9.0, specifying four output classes. The best class, including 216,085 particles were selected for homogeneous refinement with C4 symmetry, which yielded a map at 5.6 \u00c5 resolution. The particles were transferred back to RELION-3 using the pyem package (https://github.com/asarnow/pyem), re-extracted into 320 \u00d7 320 pixel images, binned 1.5 times and further refined with C4 symmetry after Bayesian polishing and CTF refinement, generating an improved map at 4.3 \u00c5 resolution. Focused refinement was performed on the CTD region, followed by the focused 3D classification on the TMD region without image alignment similar to a previous report (Lee and MacKinnon, 2018), revealing significant heterogeneity at the TMD region. Finally, 112,571 particles with fine features of TMD were selected and subjected to Non-uniform refinement and local refinement in CryoSPARC-2.9.0, which yielded the final map at 3.9 \u00c5 resolution.\n\nFor the structural titration of the GIRK2 channel, roughly 90\u201395% of micrographs from each PIP2 concentration dataset were selected for further processing. Different views from 2D averages of the apo GIRK2 dataset were selected as templates for particle picking using Gautomatch (https://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch/). Auto-picked particles for each PIP2 concentration were extracted into 384 \u00d7 384 pixel images, binned 1.5 times, and subjected to Ab-initio reconstruction in CryoSPARC-2.9.0, specifying four output classes (Punjani et al., 2017). Non-protein particles were removed, resulting in 99,381, 109,462, 105,388, 123,649, 99,619 and 105,708 particle images for the 0, 0.25, 0.5, 0.75, 0.875 and 1 mM PIP2 datasets, respectively. After manual inspection, all these particles were combined (a total of 643,657) and transferred back to RELION-3. The particles were re-extracted into 320 \u00d7 320 pixel images, binned 1.5 times and subjected to 3D refinement in RELION-3 with the density map of apo GIRK2 as reference (low-pass filtered to 60 \u00c5). Subsequently, the angular and translational parameters determined using 3D auto-refine were fixed throughout 25 cycles of 3D classification, specifying five classes in RELION-3 with the map generated by 3D auto-refine low-pass filtered to 60 \u00c5 serving as the initial model. Manual inspection identified one class with characteristics of the docked class and contributions of all six datasets to this 3D class were determined using identifiers uniquely associated with each particle during particle extraction. To ensure the reproducibility of the 3D classification algorithm, the 643,657 particles were subjected to five independent runs of 3D auto-refine and 3D classification.\n\nFor structure determination of GIRK2 with PIP2 bound, the 155,128 particles corresponding to the docked class in the structural titration dataset was refined applying C4 symmetry using the Non-uniform refinement algorithm in CryoSPARC-2.9., resulting in a map at 4.6 \u00c5 resolution. The refined particles were then transferred back to RELION, followed by CTF refinement and Bayesian polishing, which improved the map to 4.0 \u00c5. Particles were then re-extracted into 400 \u00d7 400 pixel images and subjected to multiple runs of CTF refinement in RELION-3.1 as described (Scheres, 2019; Zivanov et al., 2020). Further 3D refinement with C4 symmetry in RELION-3.1 yielded a final map at 3.3 \u00c5 resolution.\n\nFor the GIRK1/4 channel dataset with 0.5 mM C8-PIP2, 3377 of 3415 micrographs were selected for further processing. Different views of 2D averages from the apo GIRK2 dataset were selected as templates and Gautomatch was used for particle picking. The auto-picked 554,081 particles were extracted into 256 \u00d7 256 pixel images, binned two times and subjected to Ab-initio reconstruction in CryoSPARC-2.9.0, specifying four output classes. The best of the four classes, including 221,633 particles, were selected for homogeneous refinement applying C2 symmetry, which yielded a map at 7.7 \u00c5 resolution. The particles were transferred back to RELION-3 using the pyem package with angular and translational parameters and re-extracted into 256 \u00d7 256 pixel images.\u00a03D classification was performed requesting five classes without image alignment, using the refined map from CryoSPARC low-pass filtered to 60 \u00c5 as the initial model. Two out of five classes showed typical features of docked and extended conformations, accounting for 22% (48,757) and 26% (57,644) of the particles, respectively. These two classes were processed separately using the same approach. Specifically, per-particle Defocus-U and Defocus-V values were first determined in the local-fitting mode of Gctf-1.0.6. 3D refinement with C2 symmetry yielded the final map of the extended class at 7.9 \u00c5. For the docked class, local CTF estimation yielded a map at 6.1 \u00c5 resolution and subsequent Bayesian polishing and CTF refinement with C2 symmetry further improved the map to 4.6 \u00c5 resolution.\n\nWe chose C2 symmetry in the analysis of GIRK1/4 images based on the empirical observation that it yielded a better map than refinement without symmetry. The resolution of the GIRK1/4 data precluded distinction between the GIRK1 and GIRK4 subunits; however, the improved refinement by application of C2 symmetry implies that these subunits might alternate in their positions around the pore\u2019s central axis.\n\n### Model building and refinement\n\nFor the apo GIRK2 structure (extended conformation), models of the CTD and TMD region from the crystal structure of GIRK2 channel monomer without PIP2 (PDB: 3SYO) were placed into the density using UCSF Chimera (Pettersen et al., 2004). Then the two regions were manually connected in Coot and rounds of real-space refinement were performed in Phenix with secondary structure restraints (Adams et al., 2010). The refined channel monomer was then copied and fit into corresponding density of the other three subunits using the Jiggle-fit and chain-refine command of Coot 0.9 in the CCPEM suite (Burnley et al., 2017; Wood et al., 2015) to generate the channel tetramer. Finally, several iterative cycles of refinement using the phenix.real_space_refine in PHENIX with secondary structure and NCS restraints and manual adjustments in COOT yielded the final model for the apo structure of the GIRK2 channel.\n\nFor the structure of GIRK2 with PIP2 (docked conformation), models of channel monomer and the PIP2 molecule (PDB: 3SYA) were placed into density using UCSF Chimera (Pettersen et al., 2004) and several rounds of real-space refinement were performed in Phenix with secondary structure restraints (Adams et al., 2010). The channel tetramer was generated using Coot 0.9 in a similar manner to the apo GIRK2 structure. Finally, iterative refinement cycles using the phenix.real_space_refine in PHENIX with secondary structure and NCS restraints and manual adjustments in COOT yielded the final model for the docked conformation of GIRK2 channel with 4 PIP2 molecules bound.\n\nRefinement statistics are summarized in Table 1. For model validation, the final model for each map was refined against one of the half maps (half map 1). FSC curves were then calculated between the refined model and half map 1 (work), half map 2 (free) as well as the combined full map. Local resolutions were estimated using Relion3 (Zivanov et al., 2018).\n\n### Structural analysis\n\nStructural alignment and figures were made in UCSF Chimera (Pettersen et al., 2004) and PyMOL (www.pymol.org). Pore diameter between van der Waals surfaces for the extended and docked structures of the GIRK2 channel was calculated with Hole (www.holeprogram.org).\n",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "4d1137ea-7b2a-4d2d-b79d-ecca968c1d58",
+      "submission_id": "275c259f-5af8-4c26-91aa-538552015989",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Merritt Maduke, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60552.sa1](https://doi.org/10.7554/eLife.60552.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper presents structural data showing that the signaling lipid PIP2 biases the structure of a G-protein regulated potassium channel (GIRK2) towards a \"docked\" conformation. The authors present a model whereby this PIP2-mediated docking allows binding of the G-protein subunits. The data and model therefore explain why both PIP2 and G-proteins are necessary for the opening of GIRK2 channels.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Cryo-EM analysis of PIP2 regulation in GIRK channels\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Merritt Maduke as the Reviewing Editor and Kenton Swartz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bruce P Bean (Reviewer #1); Sudha Chakrapani (Reviewer #2); Ryan E Hibbs (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis short paper presents cryo-EM data focused on structural elucidation of GIRK activation by PIP2. GIRK channels are unique among inward rectifiers in that they require the binding of both PIP2 and G\u03b2\u03b3 proteins for activation, potentially affecting two gates, the inner gate at helix bundle and the G loop gate, respectively. The Mackinnon group previously determined structures of GIRK2 (in the absence and presence of PIP2) and a GIRK2-G\u03b2\u03b3 complex by X-ray crystallography. While providing high-resolution structural insights into the architecture and G-protein activation, these structures did not reveal conformational changes that may underlie PIP2 regulation. Particularly, the transmembrane domain (TMD) and cytoplasmic domain (CTD) were tightly juxtaposed even in the absence PIP2. In addition, both the G-loop gate and the inner helix gate remained closed in the PIP2-bound structure. These results raised questions because PIP2 binding to GIRK2 did not result in the kind of conformational change observed in another inward rectifying K+ channel, Kir2.2.\n\nHere, the authors report structures of neuronal GIRK2 in the apo and PIP2 bounds forms determined by cryo-EM. C8-PIP2 was titrated into GIRK2 samples, which enabled determination of cryo-EM structures of GIRK2 in docked (CTD and TMD tightly juxtaposed) and extended conformations. The docked conformation is progressively populated with increasing concentration of PIP2. The authors also report broadly similar findings for cardiac GIRK1/4 heteromeric channels.\n\nOverall, the study is clearly written and logical and resolves a mystery for GIRK2- now we know it can adopt an extended conformation in the presence of PIP2. Further, the study demonstrates conservation in mechanism across several Kir members, as the docked vs. undocked conformational changes are similar to those observed with Kir2.2. Finally, the authors present a model whereby this PIP2-mediated docking allows binding of G\u03b2\u03b3 to the channels. The data and model therefore explain why both PIP2 and G\u03b2\u03b3 are necessary for the opening of GIRK channels.\n\nEssential revisions:\n\n1) The GIRK2 extended-conformation map quality is poor in some important regions. This map contains ~no reliable density for a slab between the CTD and TMD, however linkers and loops are modeled here. For example, 314-319 do not fit the map and 197-201 are built into very noisy density. Some regions of this map are quite good, and many are very noisy, consistent with Figure 1\u2014figure supplement 1D showing a drop in FSC to ~0.5 at around 7A resolution. The Materials and methods describe this model being built through docking of earlier structures for the two halves followed by refinement (sounds fine). We ask that the authors clarify regions in which ambiguity is present in the Materials and methods section (or in the main text if they prefer), and describe the basis for modeling of the linkers (314-319 and 197-201) in particular. Please take a look also at 186-196. The helix appears to unwind in a couple of places (and the map is a bit ambiguous), and the important gate-keeping residue Phe 192 is modeled such that it pushes the backbone out of density. Maybe this is correct- it is unclear in the absence of more information.\n\n2) Why were the GIRK1/4 data processed in C2? Is the subunit arrangement defined (understood) such that C2 is appropriate? Were C4 and C1 refinements or classifications attempted? Is pseudosymmetry is a concern? Are there classes with partial PIP2 occupancy?\n\n3) The Materials and methods section doesn't describe how GIRK1/4 particle alignment was done. What structural features differ between 1 and 4 that aid alignment?\n\n4) There are no functional assays shown in the manuscript, particularly to corroborate the shift in equilibrium population for the concentration range seen in cryo-EM. The authors may want to comment on why the docked conformation only constitutes ~30% of the total particles even at 1 mM PIP2. Are there other lipids such as cholesterol required?\n\n5) Subsection \u201cGIRK2 conformation as a function of PIP2 concentration\u201d: How was the range of [C8-PIP2] chosen, and can the results of the titration be related to physiological experiments?\n\n6) An interesting result is that even with no added PIP2, about 8% of the GIRK channels are in the docked conformation. If the authors have any thoughts about this it would probably be of interest to readers. Does this mean that there is a chance that some small fraction of channels could be bound by G\u03b2\u03b3 even in the absence of PIP2? Or is there any chance that there is endogenous PIP2 in the expression system that can be retained during protein purification?\n\n7) The figures for the conformational changes could be better with more detailed labeling (Figures 4 and 5).\n\n8) What is the contour levels for the densities in Figure 1\u2014figure supplement 2 and Figure 4\u2014figure supplement 2?\n\n9) Crystal packing is suggested to be responsible for the absence of obtaining an extended conformation previously. Is the preparation for the cryo-EM structural analysis being in detergent of any concern to the authors? The similarities to what has been seen with Kir2.2 provide some confidence.\n\n10) The GIRK2 docked map and model look fine; PIP2 tails are not well resolved, which is worth mentioning perhaps in the Materials and methods.\n",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "24ef9925-4ea9-44e8-aa4c-e1bc98bdd18f",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C1",
+      "claim": "G-protein-gated inward rectifier potassium (GIRK) channels are regulated by G proteins and PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "G-protein-gated inward rectifier potassium (GIRK) channels are regulated by G proteins and PIP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known property of GIRK channels, supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "8793fff1-e7fd-431d-9db6-b6802e8b1012",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C2",
+      "claim": "PIP2 shifts the equilibrium between two distinguishable structures of neuronal GIRK (GIRK2), extended and docked, towards the docked form.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that PIP2 shifts the equilibrium between two distinguishable structures of neuronal GIRK (GIRK2), extended and docked, towards the docked form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by cryo-EM structural titration data showing increased fraction of docked conformation with increasing PIP2 concentration (Figure 2C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "0b8715df-9c11-41f2-8f6f-c939908e5ca1",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C3",
+      "claim": "In the docked form the cytoplasmic domain, to which G\u03b2\u03b3 binds, becomes accessible to the cytoplasmic membrane surface where G\u03b2\u03b3 resides.",
+      "claim_type": "EXPLICIT",
+      "source": "In the docked form the cytoplasmic domain, to which G\u03b2\u03b3 binds, becomes accessible to the cytoplasmic membrane surface where G\u03b2\u03b3 resides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis showing CTD movement toward the membrane upon docking, as illustrated in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "65fa8b37-9a87-4076-bde5-2d3d245a443f",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C4",
+      "claim": "PIP2 binding reshapes the G\u03b2\u03b3 binding surface on the cytoplasmic domain, preparing it to receive G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, PIP2 binding reshapes the G\u03b2\u03b3 binding surface on the cytoplasmic domain, preparing it to receive G\u03b2\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data showing conformational changes in the \u03b2L-\u03b2M loop upon PIP2 binding (Figure 4D and E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "225bfae0-ed04-4bfd-bf2e-7fb676b27197",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C5",
+      "claim": "Cardiac GIRK (GIRK1/4) can exist in both extended and docked conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that cardiac GIRK (GIRK1/4) can also exist in both extended and docked conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by cryo-EM 3D classification revealing both conformations (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "218b0008-cd20-4989-9ba9-47c9e8263c72",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C6",
+      "claim": "PIP2 influences GIRK channels in a structurally similar manner to Kir2.2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings lead us to conclude that PIP2 influences GIRK channels in a structurally similar manner to Kir2.2 channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on comparison of structural changes observed in GIRK2 with previously reported Kir2.2 structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "7767903a-6244-4e7f-9689-fe438520673c",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C7",
+      "claim": "In Kir2.2 channels, the PIP2-induced conformational changes open the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "In Kir2.2 channels, the PIP2-induced conformational changes open the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from prior studies on Kir2.2.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "29482b7e-0d1e-46f9-ae3b-b8ace55de983",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C8",
+      "claim": "In GIRK channels, PIP2-induced conformational changes prepare the channel for activation by G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "In GIRK channels, they prepare the channel for activation by G\u03b2\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the structural and functional data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "77b0b87f-da34-4c6b-905b-64f589c57589",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C9",
+      "claim": "Inward rectifier K+ (Kir) channels were originally named for their rectifying current-voltage relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "The inward rectifier K+ (Kir) channels were originally named for their rectifying current-voltage relationship (Hagiwara et al., 1976; Hagiwara and Takahashi, 1974; Hodgkin and Horowicz, 1959; Noble, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple historical citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "40a12af9-9d71-473e-8f86-70fd2d2c6d98",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C10",
+      "claim": "All Kir channels are tetramers of identical or related subunits that encode a K+ selectivity filter-containing transmembrane pore (TMD) and a cytoplasmic domain (CTD).",
+      "claim_type": "EXPLICIT",
+      "source": "All Kir channels are tetramers of identical or related subunits that encode a K+ selectivity filter-containing transmembrane pore (TMD for transmembrane domain) and a cytoplasmic domain (CTD) (Tao et al., 2009; Whorton and MacKinnon, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "0b9a4232-ccc9-4938-a13a-619bc6408b07",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C11",
+      "claim": "The TMD and CTD are covalently linked by a tether, called the TMD-CTD linker.",
+      "claim_type": "EXPLICIT",
+      "source": "The TMD and CTD are covalently linked by a tether, called here the TMD-CTD linker (Tao et al., 2009; Whorton and MacKinnon, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "82ed97c5-3087-4f8a-9bf4-7709062613bd",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C12",
+      "claim": "Kir channels underlie many physiological processes, including neuronal electrical activity, electrolyte homeostasis in the kidney, insulin secretion, and heart rate control.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotic cells, Kir channels underlie many physiological processes, including neuronal electrical activity, electrolyte homeostasis in the kidney, insulin secretion, and heart rate control (Hibino et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "7fe48635-7b1d-4b39-b68f-57e339b3bbd8",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C13",
+      "claim": "All eukaryotic Kir channels respond to the signaling lipid phosphatidylinositol 4,5-bisphosphate (PIP2).",
+      "claim_type": "EXPLICIT",
+      "source": "However, as far as we know, they all respond to the signaling lipid phosphatidylinositol 4,5-bisphosphate (PIP2) (Hibino et al., 2010; Hilgemann et al., 2001; Huang et al., 1998; Stanfield et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "b3caca15-a464-4cbe-9e91-83d0fa913d59",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C14",
+      "claim": "The two features all eukaryotic Kir channels have in common are K+ selectivity and responsiveness to PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the two features all eukaryotic Kir channels have in common are K+ selectivity and responsiveness to PIP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "824ea668-29d9-4d07-83ea-18990324d31a",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C15",
+      "claim": "In the absence of PIP2, the CTD of Kir2.2 is disengaged from the TMD, resulting in an 'extended' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "As depicted (Figure 1A), in the absence of PIP2 the CTD is disengaged from the TMD, resulting in an 'extended' conformation (Tao et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "f73f0436-734c-45ec-abf4-7bf52b16435e",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C16",
+      "claim": "Upon PIP2 binding in Kir2.2, the TMD-CTD loop forms a helix and the CTD engages the TMD to form a 'docked' conformation in which the channel opens.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon PIP2 binding, the TMD-CTD loop forms a helix and the CTD engages the TMD to form a 'docked' conformation in which the channel opens (Hansen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "b7d9ef61-8ff0-4549-b672-38d435de61a1",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C17",
+      "claim": "PIP2 is necessary and sufficient to open Kir2.2.",
+      "claim_type": "EXPLICIT",
+      "source": "PIP2 is necessary and sufficient to open Kir2.2, but must operate in conjunction with G\u03b2\u03b3 to open GIRK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established functional knowledge distinguishing Kir2.2 from GIRK2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "f29c351e-4681-424c-9db3-62c17844f380",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C18",
+      "claim": "PIP2 must operate in conjunction with G\u03b2\u03b3 to open GIRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "PIP2 is necessary and sufficient to open Kir2.2, but must operate in conjunction with G\u03b2\u03b3 to open GIRK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established functional knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "19777a64-d5a7-48a0-9962-6263806343ef",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C19",
+      "claim": "G-protein-gated inward rectifier K+ (GIRK) channels are activated by both PIP2 and G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "G-protein-gated inward rectifier K+ (GIRK) channels are activated by both PIP2 and G\u03b2\u03b3 (Huang et al., 1998; Logothetis et al., 1987; Logothetis and Zhang, 1999; Sui et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "d90a9bf2-a371-4f60-9507-cd26bdb1acb1",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C20",
+      "claim": "Both PIP2 and G\u03b2\u03b3 are required to open the pore of GIRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed mechanistic studies in a reconstituted system using a neuronal isoform of GIRK (GIRK2) showed that both PIP2 and G\u03b2\u03b3 are required to open the pore (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "93340e1f-68fd-4d18-a34d-08735e3bb11b",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C21",
+      "claim": "Crystal structures of GIRK2 in the absence and presence of PIP2 (and in the presence of G\u03b2\u03b3) did not show a change in the relationship between the CTD and TMD as was seen in Kir2.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures of GIRK2 in the absence and presence of PIP2 (and in the presence of G\u03b2\u03b3) did not show a change in the relationship between the CTD and TMD as was seen in Kir2.2 (Hansen et al., 2011; Tao et al., 2009; Whorton and MacKinnon, 2011; Whorton and MacKinnon, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous crystallographic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "0b0b61e2-3f97-4418-a4ed-6ab587766a87",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C22",
+      "claim": "The structure of the mouse GIRK2 channel in the absence of PIP2 (CryoEMApo) was determined at a resolution of 3.9 \u00c5 by cryo-EM single particle analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1B shows the structure of the mouse GIRK2 channel in the absence of PIP2 (CryoEMApo) at a resolution of 3.9 \u00c5 by cryo-EM single particle analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the cryo-EM data and Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "4b97cf92-1480-46c6-b8f2-8ea7c567d5db",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C23",
+      "claim": "In the absence of PIP2, GIRK2 adopts a conformation in which the CTD is disengaged from the TMD and the TMD-CTD linker has to be extended to account for the separation between the TMD and CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of PIP2 it is clear that GIRK2 can adopt a conformation in which the CTD is disengaged from the TMD and the TMD-CTD linker has to be extended to account for the separation between the TMD and CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cryo-EM structure shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "bc5add71-9304-414d-9302-7d0c6f47d056",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C24",
+      "claim": "In the absence of PIP2, the global conformation of GIRK2 appears much like the Kir2.2 channel in the absence of PIP2 (i.e. both channels adopt an extended conformation).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the absence of PIP2, the global conformation of GIRK2 appears much like the Kir2.2 channel in the absence of PIP2 (i.e. both channels adopt an extended conformation) (Figure 1A and B; Tao et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of structures shown in Figure 1A and B, and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "579f905f-4292-4102-afd3-e6fcf170e43d",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C25",
+      "claim": "A structure of GIRK2 in the absence of PIP2 (CrystalApo) was determined using X-ray crystallography that did not adopt the extended conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using X-ray crystallography, we had determined a structure of GIRK2 in the absence of PIP2 (CrystalApo) that did not adopt this extended conformation (Figure 1\u2014figure supplement 3A; Whorton and MacKinnon, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "6c0be367-3d71-4063-824f-e5e3d84c3162",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C26",
+      "claim": "The crystal lattice offers a possible explanation for conformational differences between CryoEMApo and CrystalApo.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal lattice offers a possible explanation for conformational differences between CryoEMApo and CrystalApo (Figure 1\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on analysis of crystal packing shown in Figure 1\u2014figure supplement 3D.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "75ac441d-4fa6-491b-bd0a-d3265c578089",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C27",
+      "claim": "Symmetry-related tetramers in the crystal contact each other through ~500 \u00c52 buried surface area on the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Symmetry-related tetramers in the crystal contact each other through ~500 \u00c52 buried surface area on the CTD (PISA server) (Krissinel and Henrick, 2007), as shown in the inset of Figure 1\u2014figure supplement 3D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational analysis using PISA server and shown in Figure 1\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "ebc44048-f52a-4274-93e2-479f3cacfe99",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C28",
+      "claim": "In the extended conformation, the CTD and TMD are free to move with respect to each other without hindrance.",
+      "claim_type": "EXPLICIT",
+      "source": "Because in the extended conformation the CTD and TMD are free to move with respect to each other without hindrance, these two structured regions may have been pushed together when the crystal was formed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the structural properties of the extended conformation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "c43e3588-f868-438b-8a2e-a3eb6fec6092",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C29",
+      "claim": "Single particle cryo-EM, without the potential interference of lattice contacts, might provide a structure that more accurately portrays a GIRK2 channel in the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Single particle cryo-EM, without the potential interference of lattice contacts, might provide a structure that more accurately portrays a GIRK2 channel in the cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the advantages of cryo-EM over crystallography.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "073cd58f-28b3-4697-b606-f9fc6e6d8a62",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C30",
+      "claim": "GIRK2 channels were vitrified in the presence of PIP2 (soluble C8-PIP2) concentrations ranging from 0 mM to 1.0 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "GIRK2 channels were vitrified in the presence of PIP2 (soluble C8-PIP2) concentrations ranging from 0 mM to 1.0 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for the structural titration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "36e20f1b-b43f-4362-aa01-867c54077b17",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C31",
+      "claim": "Four classes (1-4) of GIRK2 particles were similar to each other and showed a disengaged CTD (i.e. extended conformation) with an unresolved TMD-CTD linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Four classes (1-4) were similar to each other and showed a disengaged CTD (i.e. extended conformation) with an unresolved TMD-CTD linker (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by 3D classification results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "f631fd97-b45a-4c69-be13-ce50c2efd7ea",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C32",
+      "claim": "Class 5 of GIRK2 particles showed an engaged CTD (i.e. CTD-docked conformation) and a visible TMD-CTD linker.",
+      "claim_type": "EXPLICIT",
+      "source": "Class 5 showed an engaged CTD (i.e. CTD-docked conformation) and a visible TMD-CTD linker (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by 3D classification results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "463cfa87-0ae4-474e-af7e-2d45d0f612bc",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C33",
+      "claim": "The fraction of channels contributing to the CTD-docked conformation (class 5) increased as PIP2 concentration increased.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of channels contributing to the CTD-docked conformation (class 5) increased as PIP2 concentration increased (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "d12914a5-dace-4db2-b6e1-5e2cff4c3789",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C34",
+      "claim": "The fraction of channels contributing to the docked class at each PIP2 concentration remained fairly constant for five independent runs.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2\u2014figure supplement 1A, the fraction of channels contributing to the docked class at each PIP2 concentration remained fairly constant for the five independent runs, indicating that the classification algorithm yields a reproducible outcome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "85051773-42d3-4b00-a3d2-d96a7188abb8",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C35",
+      "claim": "More than 80% of all the channels classified as docked were classified as such four or five times out of five independent runs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, of all the channels classified as docked, more than 80% were classified as such four or five times (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "3608f669-45e8-4383-ba37-4e1e75785575",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C36",
+      "claim": "The population of channels in the docked conformation is positively correlated with the concentration of PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the population of channels in the docked conformation is positively correlated with the concentration of PIP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the reproducibility data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "ae4bd06d-0854-48aa-8d99-7091ca58fde0",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C37",
+      "claim": "The fraction of docked channels increased from approximately 0.08 to 0.30 when PIP2 is increased from 0 mM to 1.0 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2C shows that the fraction of docked channels increased from approximately 0.08 to 0.30 when PIP2 is increased from 0 mM to 1.0 mM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "b9ba2f34-b6e4-4a69-a39f-4d685a18113a",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C38",
+      "claim": "The activity of GIRK2 channels in membranes increases as a function of PIP2 concentration with an activation constant ~15 \u03bcM (and Hill coefficient ~3.1).",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the activity of GIRK2 channels in membranes increases as a function of PIP2 concentration with an activation constant ~15 \u03bcM (and Hill coefficient ~3.1) (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "0d441702-5f3d-43cf-9ad9-96958e3f52ea",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C39",
+      "claim": "The large difference in PIP2 activity between cryo-EM and membrane studies likely originates in the difference between the detergent micelle and the lipid membrane environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The large difference in PIP2 activity between these studies likely originates in the difference between the detergent micelle and the lipid membrane environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the discrepancy between different experimental conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "ea146f29-3549-4407-9dc3-2f334f160168",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C40",
+      "claim": "PIP2 partitions into membranes differently than into detergent micelles and therefore the local concentrations of PIP2 are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "PIP2 partitions into membranes (differently than into detergent micelles) and therefore the local concentrations of PIP2 are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known properties of lipid partitioning.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "06fb7856-b3f7-4552-9290-423f75997699",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C41",
+      "claim": "A fraction (~0.08) of docked channels exists in the absence of PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also notable that a fraction (~0.08) of docked channels exists in the absence of PIP2 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "e43f7719-5708-44d2-b77e-19ef60ca7b60",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C42",
+      "claim": "The open fraction of GIRK2 channels in the absence of PIP2 (but in the presence of G\u03b2\u03b3) is probably less than 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "In functional studies in membranes we found that the open fraction of GIRK2 channels in the absence of PIP2 (but in the presence of G\u03b2\u03b3) is probably less than 0.01 (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "85853964-c1b8-4c3c-b5b8-64836a7d8592",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C43",
+      "claim": "Docking may be a necessary but not necessarily a sufficient condition to open the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, docking may be a necessary but not necessarily a sufficient condition to open the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the discrepancy between docked fraction and open fraction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "84d6defe-ff03-49a0-a148-e8c323e81112",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C44",
+      "claim": "The presence of 32 mM Na+ substantially increases the open probability of GIRK2 at all concentrations of PIP2 examined.",
+      "claim_type": "EXPLICIT",
+      "source": "We found previously that the presence of 32 mM Na+ substantially increases the open probability of GIRK2 at all concentrations of PIP2 examined (Wang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "6352d923-5c6c-44a2-9cc2-7b0ad69cb4b7",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C45",
+      "claim": "The experiments behind Figure 2 were carried out in the absence of added Na+.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments behind Figure 2 were carried out in the absence of added Na+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "308b5149-6f6a-4e0b-aeb3-0f9afb38705c",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C46",
+      "claim": "Addition of Na+ might increase the fraction of docked channels.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that addition of Na+ would increase the fraction of docked channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on previous functional observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "0cb3f4a6-e8d4-4cda-bf76-ff9110a3857a",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C47",
+      "claim": "Formation of the docked channel is positively correlated with increased PIP2 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Presently, we conclude that formation of the docked channel is positively correlated with increased PIP2 concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the structural titration data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "b02451c3-9049-4920-b93b-a7ef9bfd6aa8",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C48",
+      "claim": "GIRK4 (Kir3.4) and heteromultimeric GIRK1/4 (Kir3.1/Kir3.4) channels function in the cardiovascular system where they regulate heart rate through parasympathetic nervous system control.",
+      "claim_type": "EXPLICIT",
+      "source": "GIRK2 channels predominate in the nervous system while GIRK4 (Kir3.4) and heteromultimeric GIRK1/4 (Kir3.1/Kir3.4) channels function in the cardiovascular system where they regulate heart rate through parasympathetic nervous system control (Corey and Clapham, 1998; Karschin et al., 1996; Krapivinsky et al., 1995; Kubo et al., 1993; Lesage et al., 1994; Lesage et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "a988e0d1-dc5a-4d08-b1b0-98ded84b680f",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C49",
+      "claim": "3D classification of GIRK1/4 revealed both extended (26% particles) and docked (22% particles) conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "3D classification revealed both extended (26% particles) and docked (22% particles) conformations (Figure 3 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM data shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "f88e90f1-4070-416d-8ad1-a1038bfa1d7a",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C50",
+      "claim": "Three remaining classes of GIRK1/4, accounting for 52% of the data, were insufficiently resolved to determine details of the underlying conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Three remaining classes, accounting for 52% of the data, were insufficiently resolved to determine details of the underlying conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the limitations of the cryo-EM classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "c08c1d0b-ecea-4968-a703-1d4a9540856d",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C51",
+      "claim": "The two resolved conformations of GIRK1/4 exhibit features similar to those of GIRK2, with lengths of ~119 \u00c5 and ~112 \u00c5 for extended and docked conformations, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The two resolved conformations exhibit features similar to those of GIRK2, with lengths of ~119 \u00c5 and ~112 \u00c5 for extended and docked conformations, respectively, a well-resolved linker in the docked conformation but not in the extended conformation, and a 35\u00b0 difference in the rotation of the CTD with respect to the TMD (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "51c7c3fd-1615-4028-b0cd-428b9966b3bb",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C52",
+      "claim": "GIRK1/4 exhibits a 35\u00b0 difference in the rotation of the CTD with respect to the TMD between extended and docked conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The two resolved conformations exhibit features similar to those of GIRK2, with lengths of ~119 \u00c5 and ~112 \u00c5 for extended and docked conformations, respectively, a well-resolved linker in the docked conformation but not in the extended conformation, and a 35\u00b0 difference in the rotation of the CTD with respect to the TMD (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "3802a821-2fd4-483e-b2f7-2115665afd6e",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C53",
+      "claim": "GIRK1/4, like GIRK2, can adopt the extended and docked conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that GIRK1/4, like GIRK2, can adopt the extended and docked conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the cryo-EM data on GIRK1/4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "82515139-bc0e-4f82-a248-db62926c7616",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C54",
+      "claim": "A best map of the GIRK2 channel with four bound PIP2 molecules (CryoEMPIP2) was reconstructed at a resolution of 3.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Using all particles classified as 'docked' in the titration dataset, we reconstructed a best map of the GIRK2 channel with four bound PIP2 molecules (CryoEMPIP2) at a resolution of 3.3 \u00c5 (Figure 4A, Figure 4\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM data shown in Figure 4A and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "cb145139-54f1-4b64-a3eb-f71beb8e38d9",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C55",
+      "claim": "The TMD-CTD linker forms a well-resolved helix in the CryoEMPIP2 structure in contrast to a flexible loop in the CryoEMApo structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The TMD-CTD linker forms a well-resolved helix in contrast to a flexible loop in the CryoEMApo structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing the two cryo-EM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "342e8403-a710-45e9-a0b3-7a6fc95eb12a",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C56",
+      "claim": "Lys199 and Lys200, along with Lys194 from the inner helix and Lys90 from the outer helix, form electrostatic interactions with the PIP2 molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "This conformational change positions Lys199 and Lys200, along with Lys194 from the inner helix and Lys90 from the outer helix, to form electrostatic interactions with the PIP2 molecule (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "e0db7bc5-645c-4820-bd42-2ee3ffc3c772",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C57",
+      "claim": "The 6 \u00c5 translation and 35\u00b0 rotation of the CTD associated with PIP2 binding brings Lys64 (from the N-terminus) near enough to PIP2 to engage its 4'-phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the 6 \u00c5 translation and 35o rotation of the CTD associated with PIP2 binding brings Lys64 (from the N-terminus) near enough to PIP2 to engage its 4'-phosphate (Figure 4B and C and Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 4B, C and supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "ffa6da83-3d5b-44a5-9314-1008beedd40b",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C58",
+      "claim": "The sidechains of positively charged residues that coordinate PIP2 are disordered in the CryoEMApo structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The sidechains of positively charged residues that coordinate PIP2 are disordered in the CryoEMApo structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the CryoEMApo structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "6ca277d5-15b5-4253-93c5-9b835a77f3bf",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C59",
+      "claim": "PIP2 binding stabilizes the docked conformation through interactions between the 4',5'-phosphate-substituted inositol head group of PIP2 and Lys64 (with the 4' phosphate) and Lys194, Lys199, Lys200 (with the 5' phosphate).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PIP2 binding stabilizes the docked conformation through interactions between the 4',5'-phosphate-substituted inositol head group of PIP2 and Lys64 (with the 4' phosphate) and Lys194, Lys199, Lys200 (with the 5' phosphate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis of PIP2 binding site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "bf1b0bc5-21d5-4506-b70b-5185b62eb7ae",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C60",
+      "claim": "An analogous constellation of charge-pair stabilization is observed in the PIP2 bound form of Kir2.2.",
+      "claim_type": "EXPLICIT",
+      "source": "An analogous constellation of charge-pair stabilization is observed in the PIP2 bound form of Kir2.2 (Hansen et al., 2011; Tao et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous structural studies on Kir2.2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "8a169d19-13f8-4f48-be13-bbc03a63394a",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C61",
+      "claim": "A conformational change associated with PIP2 binding occurs on the side of the CTD, involving the \u03b2L-\u03b2M loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Another conformational change associated with PIP2 binding occurs on the side of the CTD, involving the \u03b2L-\u03b2M loop, as shown (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "4b7cff8b-8fcd-4c1b-9be7-71778f523a3a",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C62",
+      "claim": "The \u03b2L-\u03b2M loop does not make direct contact with the PIP2 binding site but apparently is allosterically coupled to it.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2L-\u03b2M loop does not make direct contact with the PIP2 binding site but apparently is allosterically coupled to it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis showing conformational change without direct contact.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "f91164f7-63f4-4621-a2f5-a48b044b8ed4",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C63",
+      "claim": "The \u03b2L-\u03b2M loop is located on the surface to which G\u03b2\u03b3 binds.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2L-\u03b2M loop is located on the surface to which G\u03b2\u03b3 binds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with the G\u03b2\u03b3 complex structure.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "16438f7f-ee6a-4e13-b6d8-ddedbc718af4",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C64",
+      "claim": "In CryoEMPIP2, the \u03b2L-\u03b2M loop adopts the position observed in the G\u03b2\u03b3 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In CryoEMPIP2, the \u03b2L-\u03b2M loop adopts the position observed in the G\u03b2\u03b3 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by structural comparison shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "a42dd5a3-6c91-48b1-a6d3-91501631a10b",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C65",
+      "claim": "PIP2 binding to GIRK2 pre-configures the G\u03b2\u03b3 binding surface on the CTD into a receptive conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it would appear that PIP2 binding to GIRK2 pre-configures the G\u03b2\u03b3 binding surface on the CTD into a receptive conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observation that the \u03b2L-\u03b2M loop adopts the G\u03b2\u03b3-bound conformation upon PIP2 binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "8881c88c-406a-452a-ab19-1878e74c5f32",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C66",
+      "claim": "GIRK channels can adopt extended and docked conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The main conclusion of this study is that GIRK channels \u2013 GIRK2 as well as GIRK1/4 \u2013 can adopt extended and docked conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "9b80cc0b-6a72-4bea-bfb9-a93741dbfc8b",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C67",
+      "claim": "The docked conformation of GIRK2 is favored in the presence of PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "With GIRK2 we show that the docked conformation is favored in the presence of PIP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural titration data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "a0db4b72-4213-4747-8a7e-86f409484aca",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C68",
+      "claim": "Crystal contacts in the previous CrystalApo structure pushed the CTD and TMD into close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "We think that crystal contacts in the previous CrystalApo structure pushed the CTD and TMD into close proximity (Whorton and MacKinnon, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on analysis of crystal packing.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "1e108cf3-8f20-406a-893b-3f2b7515e187",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C69",
+      "claim": "PIP2 in GIRK channels mediates the docking of the CTD onto the TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems likely that PIP2 in GIRK channels, as previously proposed for Kir2.2 channels (Hansen et al., 2011; Tao et al., 2009), mediates the docking of the CTD onto the TMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data and comparison with Kir2.2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "cea69ad2-ad8a-4fa5-ba34-404c18870d57",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C70",
+      "claim": "Electrostatic interactions between the anionic headgroup of PIP2 and cationic amino acid sidechains on the channel serve to tether the CTD to the TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrostatic interactions between the anionic headgroup of PIP2 and cationic amino acid sidechains on the channel serve to tether the CTD to the TMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis of PIP2 binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "1e0988f3-3b37-4fc3-b807-99ba5944c8ee",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C71",
+      "claim": "Many of the electrostatic interactions between PIP2 and the channel are conserved in GIRK and Kir2.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these electrostatic interactions are conserved in GIRK and Kir2.2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of structures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "6d768484-c81d-4305-8eea-49d6f63cd448",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C72",
+      "claim": "A secondary conformational change occurs on the side of the CTD corresponding to the G\u03b2\u03b3 binding surface.",
+      "claim_type": "EXPLICIT",
+      "source": "A secondary conformational change occurs on the side of the CTD corresponding to the G\u03b2\u03b3 binding surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "c7f050b9-e717-466f-863c-6a7db687c70e",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C73",
+      "claim": "The secondary conformational change configures the surface ready to bind G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "This change configures the surface ready to bind G\u03b2\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "19ef1021-d1cc-494a-90f2-740a3ff6e020",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C74",
+      "claim": "By tethering the CTD to the TMD, PIP2 brings the CTD close to the membrane surface where it can be reached by G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "By tethering the CTD to the TMD, PIP2 brings the CTD close to the membrane surface where it can be reached by G\u03b2\u03b3, which is held at the membrane surface by its covalent attachment to a lipid tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the proposed mechanism illustrated in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "abdaf785-4063-49dd-b95d-9428cd09eecc",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C75",
+      "claim": "G\u03b2\u03b3 is held at the membrane surface by its covalent attachment to a lipid tail.",
+      "claim_type": "EXPLICIT",
+      "source": "By tethering the CTD to the TMD, PIP2 brings the CTD close to the membrane surface where it can be reached by G\u03b2\u03b3, which is held at the membrane surface by its covalent attachment to a lipid tail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about G\u03b2\u03b3.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "9f73bf1c-d468-48b6-aab2-ac575d683905",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C76",
+      "claim": "The binding surface for G\u03b2\u03b3 on the CTD adopts a permissive conformation when PIP2 binds.",
+      "claim_type": "EXPLICIT",
+      "source": "Coincidentally, the binding surface for G\u03b2\u03b3 on the CTD adopts a permissive conformation, allowing G\u03b2\u03b3 to bind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "c0719aff-0cbb-43e1-ada4-29a7ad3420ee",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C77",
+      "claim": "The proposed mechanism is consistent with the demonstration that G\u03b2\u03b3 is unable to open GIRK2 in the absence of PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "This proposed mechanism is consistent with the demonstration that G\u03b2\u03b3 is unable to open GIRK2 in the absence of PIP2 (Wang et al., 2014): without PIP2, G\u03b2\u03b3 is unable to access its binding site on GIRK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous functional studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "81225fa8-bc69-49ab-8bc2-352853c42826",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C78",
+      "claim": "Without PIP2, G\u03b2\u03b3 is unable to access its binding site on GIRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "This proposed mechanism is consistent with the demonstration that G\u03b2\u03b3 is unable to open GIRK2 in the absence of PIP2 (Wang et al., 2014): without PIP2, G\u03b2\u03b3 is unable to access its binding site on GIRK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the mechanistic interpretation of the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "ea085e6b-7524-4d38-860a-c3b4c2216e1e",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C79",
+      "claim": "GIRK channels have two gates along their ion conduction pore: an inner helix gate in the TMD and a G-loop gate at the apex of the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "GIRK channels have two gates along their ion conduction pore: an inner helix gate in the TMD and a G-loop gate at the apex of the CTD (Doyle et al., 1998; Jiang et al., 2002; Nishida et al., 2007; Pegan et al., 2005; Whorton and MacKinnon, 2011; Whorton and MacKinnon, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "e7a17cc6-3aae-48f5-8bc5-1622c01416aa",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C80",
+      "claim": "In the absence of PIP2, the inner helix gate of GIRK2 is most tightly constricted at position Phe192 in the inner helix.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of PIP2, the inner helix gate of GIRK2 is most tightly constricted at position Phe192 in the inner helix, which lines the pore on the intracellular side of the selectivity filter (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "b3473ddb-430b-4f9b-a1d9-b4958b2cb832",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C81",
+      "claim": "PIP2 binding and docking of the CTD onto the TMD is associated with a modest change in the conformation of the inner helix, a repositioning of the sidechain of Phe192, and widening of the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "PIP2 binding and docking of the CTD onto the TMD is associated with a modest change in the conformation of the inner helix, a repositioning of the sidechain of Phe192, and widening of the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "fdfe47d9-3204-4c6d-b191-6fce84bb7a0c",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C82",
+      "claim": "The G-loop gate constricts when the CTD docks onto the TMD.",
+      "claim_type": "EXPLICIT",
+      "source": "The G-loop gate actually constricts when the CTD docks onto the TMD (Figure 5C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 5C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "a1f1f256-f1b3-4a0b-a1ca-4b68ca71ca98",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C83",
+      "claim": "When four PIP2 molecules bind to GIRK2, the inner helix gate opens, or begins to open, but the pore remains closed owing to a constricted G-loop gate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it would appear that when four PIP2 molecules bind to GIRK2, the inner helix gate opens, or begins to open, but the pore remains closed owing to a constricted G-loop gate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis of the two gates.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "110bb5c9-0d7c-4f82-8a70-b521a93a6176",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C84",
+      "claim": "The interpretation that PIP2 binding opens the inner helix gate but leaves the G-loop gate closed is consistent with functional data showing that PIP2 is unable to open GIRK2 in the absence of G\u03b2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is consistent with functional data showing that PIP2 is unable to open GIRK2 in the absence of G\u03b2\u03b3 (Wang et al., 2014) because the G-loop gate remains closed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous functional studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "fe40fc9d-85d1-4f9c-8165-c05b3ba97b48",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C85",
+      "claim": "PIP2 in GIRK channels enables G\u03b2\u03b3-mediated opening by bringing the CTD near the intracellular membrane surface and rendering the G\u03b2\u03b3 binding surface permissive for attachment.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, it appears that PIP2 in GIRK channels enables G\u03b2\u03b3-mediated opening by bringing the CTD near the intracellular membrane surface and rendering the G\u03b2\u03b3 binding surface permissive for attachment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the overall conclusion summarizing the mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "a55c0216-d56f-4fc2-8907-a802731a7d41",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C86",
+      "claim": "The CTD translates towards the TMD by 6 \u00c5 upon PIP2 binding in Kir2.2.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD translates towards the TMD by 6 \u00c5 upon PIP2 binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A for Kir2.2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "9585d5be-cd0d-4f98-82b4-0b8b5d3c81b1",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C87",
+      "claim": "The GIRK2 channel in the extended conformation has a length of approximately 120 \u00c5.",
+      "claim_type": "IMPLICIT",
+      "source": "Side and top views of the cryo-EM structure of the GIRK2 channel in an extended conformation.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This can be inferred from Figure 1B showing the extended conformation dimensions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "beadab35-232a-4314-8614-de6af584b8ad",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C88",
+      "claim": "The CTD in the crystal structure translates towards the TMD by 6 \u00c5 compared to the cryo-EM structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD in the crystal structure translates towards the TMD by 6 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "4874e3da-f921-40df-a32c-4b704e3ea027",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C89",
+      "claim": "Upon PIP2 binding, the CTD in the extended structure translates towards the TMD by 6 \u00c5 accompanied by a 35\u00b0 rotation viewed from the extracellular side.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon PIP2 binding, the CTD in the extended structure translates towards the TMD by 6 \u00c5 accompanied by a 35\u00b0 rotation viewed from the extracellular side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "11c6ada8-5738-48dc-911d-12519ccc7d98",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C90",
+      "claim": "The distance between K194 and K64 (C\u03b1 to C\u03b1) is 24 \u00c5 in the CryoEMApo structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Distances between K194 and K64 (C\u03b1 to C\u03b1) are labeled.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "b485f570-f998-45c3-a3a7-61a813bfb3d0",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C91",
+      "claim": "The distance between K194 and K64 (C\u03b1 to C\u03b1) is 18 \u00c5 in the CryoEMPIP2 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Distances between K194 and K64 (C\u03b1 to C\u03b1) are labeled.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "35eaa685-b38a-45d6-9d77-76a18710995f",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C92",
+      "claim": "The GIRK1/4 extended conformation has a length of 119 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The two resolved conformations exhibit features similar to those of GIRK2, with lengths of ~119 \u00c5 and ~112 \u00c5 for extended and docked conformations, respectively",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "1087dada-d34a-45e9-af6d-7f5be8806c59",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C93",
+      "claim": "The GIRK1/4 docked conformation has a length of 112 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The two resolved conformations exhibit features similar to those of GIRK2, with lengths of ~119 \u00c5 and ~112 \u00c5 for extended and docked conformations, respectively",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "93fc8569-ade3-429b-8456-7b00a5b24b4b",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C94",
+      "claim": "C2 symmetry was chosen in the analysis of GIRK1/4 images based on the empirical observation that it yielded a better map than refinement without symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose C2 symmetry in the analysis of GIRK1/4 images based on the empirical observation that it yielded a better map than refinement without symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological choice in data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "44bdbf4a-61ad-486f-b0cf-1f575acc0da2",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C95",
+      "claim": "The improved refinement by application of C2 symmetry implies that GIRK1 and GIRK4 subunits might alternate in their positions around the pore's central axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution of the GIRK1/4 data precluded distinction between the GIRK1 and GIRK4 subunits; however, the improved refinement by application of C2 symmetry implies that these subunits might alternate in their positions around the pore's central axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the symmetry analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "caa80765-4f2c-4e29-969e-9af0927ce907",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C96",
+      "claim": "The PIP2 acyl chains were only partially resolved in the CryoEMPIP2 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The PIP2 acyl chains were only partially resolved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is noted in Figure 4A caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "701612ab-baf8-41a0-b208-6ca7a05bf1e0",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C97",
+      "claim": "C8-PIP2 activates GIRK2 channels in lipid membranes with an activation constant ~15 \u03bcM and Hill coefficient n ~ 3.",
+      "claim_type": "EXPLICIT",
+      "source": "In an earlier study (Wang et al., 2014), we showed that C8-PIP2 activates GIRK2 channels in lipid membranes with an activation constant ~15 \u03bcM and Hill coefficient n ~ 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "68b09cbd-cbaa-4662-a9bd-446501fbde5d",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "claim_id": "C98",
+      "claim": "Higher concentration range of C8-PIP2 was chosen in the structural study because the channels are in detergent micelles, where local concentrations of PIP2, compared to studies with lipid membranes, are expected to be lower.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose the higher concentration range in the structural study because the channels are in detergent micelles, where local concentrations of PIP2, compared to studies with lipid membranes, are expected to be lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the experimental design choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "87d0ff60-c4cc-4d18-8b99-3b46dcb9dcef",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GIRK2 adopts an extended conformation in the absence of PIP2, similar to Kir2.2, as determined by cryo-EM at 3.9 \u00c5 resolution. In this conformation, the CTD is disengaged from the TMD with an extended TMD-CTD linker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are well-supported by cryo-EM structural data (Figure 1B) showing the extended conformation at 3.9 \u00c5 resolution. The structural comparison with Kir2.2 is supported by both the current data and prior crystallographic studies. The resolution is adequate for the conclusions drawn about global domain arrangement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "081222bc-1737-4c62-b408-c76c54b7c12d",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The previously determined crystal structure of apo GIRK2 (CrystalApo) did not show the extended conformation observed by cryo-EM, likely due to crystal lattice contacts that pushed the CTD and TMD together through ~500 \u00c5\u00b2 buried surface area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 and C68 provide a reasonable explanation for the discrepancy between crystal and cryo-EM structures. The crystal packing analysis (Figure 1\u2014figure supplement 3D) and PISA calculations support the inference that lattice contacts may have artificially constrained the structure. This is a common crystallographic artifact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "41b1cdbb-2f1a-494a-916f-fafcc5fa16e8",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PIP2 shifts the equilibrium of GIRK2 from extended to docked conformations in a concentration-dependent manner. The fraction of docked channels increased from ~0.08 to ~0.30 as PIP2 concentration increased from 0 to 1.0 mM, as determined by structural titration using cryo-EM 3D classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C37 and C47 are strongly supported by the structural titration data (Figure 2). The reproducibility across five independent classification runs (Figure 2\u2014figure supplement 1) and the consistency of particle assignments (>80% classified as docked 4-5 times) provide robust validation of the PIP2-dependent conformational shift. The methodology is sound and appropriate for this type of analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "44081979-7f0e-4a7b-a682-63171b638eb3",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The PIP2 concentrations required to shift GIRK2 conformation in detergent micelles (mM range) are much higher than those required for functional activation in lipid membranes (~15 \u03bcM), likely due to differences in PIP2 partitioning between these environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 and C98 appropriately acknowledge the discrepancy between structural and functional studies and provide a reasonable explanation based on known differences in lipid partitioning. The comparison to prior functional data (Wang et al., 2014) is properly cited. This is an important caveat for interpreting the structural data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "199a2575-7e22-41e9-adab-8b9290fbae2d",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A small fraction (~0.08) of GIRK2 channels adopt the docked conformation even in the absence of PIP2, but docking may be necessary but not sufficient for channel opening, as the open fraction without PIP2 is <0.01.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are supported by the structural data (Figure 2C) and comparison with functional data from Wang et al., 2014. The inference that docking is necessary but not sufficient for opening is reasonable given the discrepancy between docked fraction and open probability. This represents appropriate caution in interpreting structural data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "48f64300-9aa4-4465-91f2-65838af58eb5",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GIRK1/4 heteromeric channels can adopt both extended (26% particles, 119 \u00c5 length) and docked (22% particles, 112 \u00c5 length) conformations with a 35\u00b0 CTD rotation, similar to GIRK2, though 52% of particles were insufficiently resolved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by cryo-EM data (Figure 3), though the lower resolution (4.6-7.9 \u00c5) and large fraction of unresolved particles (52%) indicate significant heterogeneity. The structural features that could be resolved are consistent with GIRK2. The use of C2 symmetry (C94-C95) is empirically justified but introduces some uncertainty about subunit arrangement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "940dd188-45e9-47ed-841c-a4b92a7fe537",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PIP2 binding stabilizes the docked conformation through electrostatic interactions with Lys64, Lys194, Lys199, and Lys200. The CTD translates 6 \u00c5 and rotates 35\u00b0 upon PIP2 binding, bringing Lys64 within 18 \u00c5 of Lys194 (from 24 \u00c5), and the TMD-CTD linker forms a well-resolved helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 and C89-C91 are well-supported by the 3.3 \u00c5 resolution cryo-EM structure (Figure 4). The specific residue interactions with PIP2 are clearly resolved, and the conformational changes are quantitatively described with distance measurements. The comparison of ordered vs. disordered sidechains between apo and PIP2-bound states is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "ce2f3b58-3e87-4ade-9b5f-55d958be28b7",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PIP2 binding induces an allosteric conformational change in the \u03b2L-\u03b2M loop on the G\u03b2\u03b3 binding surface, positioning it to match the conformation observed in the G\u03b2\u03b3-bound crystal structure, thereby pre-configuring the channel for G\u03b2\u03b3 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 and C4 are supported by structural comparison (Figure 4D-E) showing the \u03b2L-\u03b2M loop adopts the G\u03b2\u03b3-bound conformation upon PIP2 binding. The allosteric coupling is inferred from the lack of direct contact between the loop and PIP2 binding site, which is reasonable. The comparison to Kir2.2 (C60) provides additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PIP2 enables G\u03b2\u03b3-mediated GIRK activation by: (1) shifting equilibrium toward the docked conformation, (2) bringing the CTD close to the membrane surface where G\u03b2\u03b3 resides, and (3) reshaping the G\u03b2\u03b3 binding surface into a permissive conformation. This mechanism is structurally similar to PIP2 regulation of Kir2.2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C66-C67, C69-C71, C74, C76, and C85 represent the main mechanistic conclusions, which are well-supported by the structural data and consistent with prior functional studies. The three-part mechanism is logically derived from the structural observations and explains why both PIP2 and G\u03b2\u03b3 are required for GIRK activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "2613908f-1185-4590-aac7-249b72d0f6b2",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The proposed mechanism is consistent with functional data showing that G\u03b2\u03b3 cannot open GIRK2 in the absence of PIP2, because without PIP2, the CTD remains in the extended conformation where G\u03b2\u03b3 cannot access its binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 and C20 appropriately integrate the structural findings with prior functional data (Wang et al., 2014). The mechanistic interpretation that PIP2 is required to make the G\u03b2\u03b3 binding site accessible is well-supported by the structural data showing the extended vs. docked conformations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "575ad6a5-c767-4128-b33e-35d4eabf0693",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PIP2 binding opens or begins to open the inner helix gate (at Phe192) but constricts the G-loop gate (at Met313), explaining why PIP2 alone cannot open GIRK2. Both gates must open for ion conduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 are supported by structural analysis of pore diameter (Figure 5C-E) comparing extended and docked conformations. The interpretation that PIP2 opens one gate but closes another is consistent with functional data showing PIP2 alone is insufficient for activation. This provides a structural explanation for the requirement of both PIP2 and G\u03b2\u03b3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "b3e0fc7e-47a0-47be-ad62-fab87a5bfb15",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "PIP2 influences GIRK channels in a structurally similar manner to Kir2.2 (CTD docking), but with different functional outcomes: in Kir2.2, PIP2-induced changes open the pore, while in GIRK channels, they prepare the channel for G\u03b2\u03b3 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 represent a key comparative conclusion that is well-supported by the structural data and comparison with prior Kir2.2 structures. The distinction between structural similarity and functional difference is important and appropriately emphasized. This explains the mechanistic basis for differential regulation between Kir2.2 and GIRK channels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "8f5c862c-c527-4e03-aa31-a9c9bfd94f5a",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The structural titration experiments were performed without added Na+, though prior functional studies showed that 32 mM Na+ substantially increases GIRK2 open probability at all PIP2 concentrations. Addition of Na+ might increase the fraction of docked channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C46 acknowledge an experimental limitation and speculate about potential Na+ effects. While the prior functional data (C44) is properly cited, the speculation about Na+ effects on docking (C46) is untested. This represents an important caveat but does not undermine the main conclusions about PIP2-dependent conformational changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "dedd0d0e-7172-4344-913b-1d7225abf838",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims about Kir channel structure, function, and regulation by PIP2, as well as GIRK channel activation by PIP2 and G\u03b2\u03b3, and the existence of two gates in GIRK channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C19, C48, C75, and C79 represent established background knowledge properly supported by citations to prior literature. These provide necessary context for interpreting the new structural findings but are not novel results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "80673b5c-9299-4866-9937-48994571f910",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior crystal structures of GIRK2 in the absence and presence of PIP2 (and G\u03b2\u03b3) did not show CTD-TMD conformational changes like those observed in Kir2.2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 accurately describes prior crystallographic work and provides important context for why the current cryo-EM study was undertaken. This is properly supported by citations and explains the motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "bba8ef1b-648a-4e9f-9e55-c002d3ed9b73",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Single particle cryo-EM might provide a structure that more accurately portrays GIRK2 in the cell membrane compared to crystallography, due to absence of lattice contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 represents reasonable speculation about the advantages of cryo-EM over crystallography, which is supported by the subsequent findings showing conformational differences. This methodological consideration is appropriate and validated by the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    },
+    {
+      "id": "cff2bf33-c8d5-406f-adec-0bc5eaa06c6c",
+      "content_id": "421b6a1e-8b81-4b02-9d1c-349322fa6cc7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Quantitative structural measurements and methodological details including: CTD translation distances, channel lengths, symmetry choices, and resolution of PIP2 acyl chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C97 provide specific quantitative measurements and methodological details that support the main results. These are appropriately documented and support the conclusions, though they represent supporting data rather than primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:29:23.384580Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0b0b61e2-3f97-4418-a4ed-6ab587766a87",
+      "result_id": "87d0ff60-c4cc-4d18-8b99-3b46dcb9dcef"
+    },
+    {
+      "claim_id": "4b97cf92-1480-46c6-b8f2-8ea7c567d5db",
+      "result_id": "87d0ff60-c4cc-4d18-8b99-3b46dcb9dcef"
+    },
+    {
+      "claim_id": "bc5add71-9304-414d-9302-7d0c6f47d056",
+      "result_id": "87d0ff60-c4cc-4d18-8b99-3b46dcb9dcef"
+    },
+    {
+      "claim_id": "579f905f-4292-4102-afd3-e6fcf170e43d",
+      "result_id": "081222bc-1737-4c62-b408-c76c54b7c12d"
+    },
+    {
+      "claim_id": "6c0be367-3d71-4063-824f-e5e3d84c3162",
+      "result_id": "081222bc-1737-4c62-b408-c76c54b7c12d"
+    },
+    {
+      "claim_id": "75ac441d-4fa6-491b-bd0a-d3265c578089",
+      "result_id": "081222bc-1737-4c62-b408-c76c54b7c12d"
+    },
+    {
+      "claim_id": "ebc44048-f52a-4274-93e2-479f3cacfe99",
+      "result_id": "081222bc-1737-4c62-b408-c76c54b7c12d"
+    },
+    {
+      "claim_id": "a0db4b72-4213-4747-8a7e-86f409484aca",
+      "result_id": "081222bc-1737-4c62-b408-c76c54b7c12d"
+    },
+    {
+      "claim_id": "073cd58f-28b3-4697-b606-f9fc6e6d8a62",
+      "result_id": "41b1cdbb-2f1a-494a-916f-fafcc5fa16e8"
+    },
+    {
+      "claim_id": "36e20f1b-b43f-4362-aa01-867c54077b17",
+      "result_id": "41b1cdbb-2f1a-494a-916f-fafcc5fa16e8"
+    },
+    {
+      "claim_id": "f631fd97-b45a-4c69-be13-ce50c2efd7ea",
+      "result_id": "41b1cdbb-2f1a-494a-916f-fafcc5fa16e8"
+    },
+    {
+      "claim_id": "463cfa87-0ae4-474e-af7e-2d45d0f612bc",
+      "result_id": "41b1cdbb-2f1a-494a-916f-fafcc5fa16e8"
+    },
+    {
+      "claim_id": "d12914a5-dace-4db2-b6e1-5e2cff4c3789",
+      "result_id": "41b1cdbb-2f1a-494a-916f-fafcc5fa16e8"
+    },
+    {
+      "claim_id": "85051773-42d3-4b00-a3d2-d96a7188abb8",
+      "result_id": "41b1cdbb-2f1a-494a-916f-fafcc5fa16e8"
+    },
+    {
+      "claim_id": "3608f669-45e8-4383-ba37-4e1e75785575",
+      "result_id": "41b1cdbb-2f1a-494a-916f-fafcc5fa16e8"
+    },
+    {
+      "claim_id": "ae4bd06d-0854-48aa-8d99-7091ca58fde0",
+      "result_id": "41b1cdbb-2f1a-494a-916f-fafcc5fa16e8"
+    },
+    {
+      "claim_id": "0cb3f4a6-e8d4-4cda-bf76-ff9110a3857a",
+      "result_id": "41b1cdbb-2f1a-494a-916f-fafcc5fa16e8"
+    },
+    {
+      "claim_id": "b9ba2f34-b6e4-4a69-a39f-4d685a18113a",
+      "result_id": "44081979-7f0e-4a7b-a682-63171b638eb3"
+    },
+    {
+      "claim_id": "0d441702-5f3d-43cf-9ad9-96958e3f52ea",
+      "result_id": "44081979-7f0e-4a7b-a682-63171b638eb3"
+    },
+    {
+      "claim_id": "ea146f29-3549-4407-9dc3-2f334f160168",
+      "result_id": "44081979-7f0e-4a7b-a682-63171b638eb3"
+    },
+    {
+      "claim_id": "68b09cbd-cbaa-4662-a9bd-446501fbde5d",
+      "result_id": "44081979-7f0e-4a7b-a682-63171b638eb3"
+    },
+    {
+      "claim_id": "06fb7856-b3f7-4552-9290-423f75997699",
+      "result_id": "199a2575-7e22-41e9-adab-8b9290fbae2d"
+    },
+    {
+      "claim_id": "e43f7719-5708-44d2-b77e-19ef60ca7b60",
+      "result_id": "199a2575-7e22-41e9-adab-8b9290fbae2d"
+    },
+    {
+      "claim_id": "85853964-c1b8-4c3c-b5b8-64836a7d8592",
+      "result_id": "199a2575-7e22-41e9-adab-8b9290fbae2d"
+    },
+    {
+      "claim_id": "a988e0d1-dc5a-4d08-b1b0-98ded84b680f",
+      "result_id": "48f64300-9aa4-4465-91f2-65838af58eb5"
+    },
+    {
+      "claim_id": "f88e90f1-4070-416d-8ad1-a1038bfa1d7a",
+      "result_id": "48f64300-9aa4-4465-91f2-65838af58eb5"
+    },
+    {
+      "claim_id": "c08c1d0b-ecea-4968-a703-1d4a9540856d",
+      "result_id": "48f64300-9aa4-4465-91f2-65838af58eb5"
+    },
+    {
+      "claim_id": "51c7c3fd-1615-4028-b0cd-428b9966b3bb",
+      "result_id": "48f64300-9aa4-4465-91f2-65838af58eb5"
+    },
+    {
+      "claim_id": "3802a821-2fd4-483e-b2f7-2115665afd6e",
+      "result_id": "48f64300-9aa4-4465-91f2-65838af58eb5"
+    },
+    {
+      "claim_id": "82515139-bc0e-4f82-a248-db62926c7616",
+      "result_id": "940dd188-45e9-47ed-841c-a4b92a7fe537"
+    },
+    {
+      "claim_id": "cb145139-54f1-4b64-a3eb-f71beb8e38d9",
+      "result_id": "940dd188-45e9-47ed-841c-a4b92a7fe537"
+    },
+    {
+      "claim_id": "342e8403-a710-45e9-a0b3-7a6fc95eb12a",
+      "result_id": "940dd188-45e9-47ed-841c-a4b92a7fe537"
+    },
+    {
+      "claim_id": "e0db7bc5-645c-4820-bd42-2ee3ffc3c772",
+      "result_id": "940dd188-45e9-47ed-841c-a4b92a7fe537"
+    },
+    {
+      "claim_id": "ffa6da83-3d5b-44a5-9314-1008beedd40b",
+      "result_id": "940dd188-45e9-47ed-841c-a4b92a7fe537"
+    },
+    {
+      "claim_id": "6ca277d5-15b5-4253-93c5-9b835a77f3bf",
+      "result_id": "940dd188-45e9-47ed-841c-a4b92a7fe537"
+    },
+    {
+      "claim_id": "4874e3da-f921-40df-a32c-4b704e3ea027",
+      "result_id": "940dd188-45e9-47ed-841c-a4b92a7fe537"
+    },
+    {
+      "claim_id": "11c6ada8-5738-48dc-911d-12519ccc7d98",
+      "result_id": "940dd188-45e9-47ed-841c-a4b92a7fe537"
+    },
+    {
+      "claim_id": "b485f570-f998-45c3-a3a7-61a813bfb3d0",
+      "result_id": "940dd188-45e9-47ed-841c-a4b92a7fe537"
+    },
+    {
+      "claim_id": "bf1b0bc5-21d5-4506-b70b-5185b62eb7ae",
+      "result_id": "ce2f3b58-3e87-4ade-9b5f-55d958be28b7"
+    },
+    {
+      "claim_id": "8a169d19-13f8-4f48-be13-bbc03a63394a",
+      "result_id": "ce2f3b58-3e87-4ade-9b5f-55d958be28b7"
+    },
+    {
+      "claim_id": "4b7cff8b-8fcd-4c1b-9be7-71778f523a3a",
+      "result_id": "ce2f3b58-3e87-4ade-9b5f-55d958be28b7"
+    },
+    {
+      "claim_id": "f91164f7-63f4-4621-a2f5-a48b044b8ed4",
+      "result_id": "ce2f3b58-3e87-4ade-9b5f-55d958be28b7"
+    },
+    {
+      "claim_id": "16438f7f-ee6a-4e13-b6d8-ddedbc718af4",
+      "result_id": "ce2f3b58-3e87-4ade-9b5f-55d958be28b7"
+    },
+    {
+      "claim_id": "a42dd5a3-6c91-48b1-a6d3-91501631a10b",
+      "result_id": "ce2f3b58-3e87-4ade-9b5f-55d958be28b7"
+    },
+    {
+      "claim_id": "65fa8b37-9a87-4076-bde5-2d3d245a443f",
+      "result_id": "ce2f3b58-3e87-4ade-9b5f-55d958be28b7"
+    },
+    {
+      "claim_id": "8793fff1-e7fd-431d-9db6-b6802e8b1012",
+      "result_id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed"
+    },
+    {
+      "claim_id": "0b8715df-9c11-41f2-8f6f-c939908e5ca1",
+      "result_id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed"
+    },
+    {
+      "claim_id": "8881c88c-406a-452a-ab19-1878e74c5f32",
+      "result_id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed"
+    },
+    {
+      "claim_id": "9b80cc0b-6a72-4bea-bfb9-a93741dbfc8b",
+      "result_id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed"
+    },
+    {
+      "claim_id": "1e108cf3-8f20-406a-893b-3f2b7515e187",
+      "result_id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed"
+    },
+    {
+      "claim_id": "cea69ad2-ad8a-4fa5-ba34-404c18870d57",
+      "result_id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed"
+    },
+    {
+      "claim_id": "1e0988f3-3b37-4fc3-b807-99ba5944c8ee",
+      "result_id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed"
+    },
+    {
+      "claim_id": "19ef1021-d1cc-494a-90f2-740a3ff6e020",
+      "result_id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed"
+    },
+    {
+      "claim_id": "9f73bf1c-d468-48b6-aab2-ac575d683905",
+      "result_id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed"
+    },
+    {
+      "claim_id": "fe40fc9d-85d1-4f9c-8165-c05b3ba97b48",
+      "result_id": "b7bd8059-df98-43b6-90dc-d29a76c6f0ed"
+    },
+    {
+      "claim_id": "c0719aff-0cbb-43e1-ada4-29a7ad3420ee",
+      "result_id": "2613908f-1185-4590-aac7-249b72d0f6b2"
+    },
+    {
+      "claim_id": "81225fa8-bc69-49ab-8bc2-352853c42826",
+      "result_id": "2613908f-1185-4590-aac7-249b72d0f6b2"
+    },
+    {
+      "claim_id": "d90a9bf2-a371-4f60-9507-cd26bdb1acb1",
+      "result_id": "2613908f-1185-4590-aac7-249b72d0f6b2"
+    },
+    {
+      "claim_id": "e7a17cc6-3aae-48f5-8bc5-1622c01416aa",
+      "result_id": "575ad6a5-c767-4128-b33e-35d4eabf0693"
+    },
+    {
+      "claim_id": "b3473ddb-430b-4f9b-a1d9-b4958b2cb832",
+      "result_id": "575ad6a5-c767-4128-b33e-35d4eabf0693"
+    },
+    {
+      "claim_id": "fdfe47d9-3204-4c6d-b191-6fce84bb7a0c",
+      "result_id": "575ad6a5-c767-4128-b33e-35d4eabf0693"
+    },
+    {
+      "claim_id": "a1f1f256-f1b3-4a0b-a1ca-4b68ca71ca98",
+      "result_id": "575ad6a5-c767-4128-b33e-35d4eabf0693"
+    },
+    {
+      "claim_id": "110bb5c9-0d7c-4f82-8a70-b521a93a6176",
+      "result_id": "575ad6a5-c767-4128-b33e-35d4eabf0693"
+    },
+    {
+      "claim_id": "218b0008-cd20-4989-9ba9-47c9e8263c72",
+      "result_id": "b3e0fc7e-47a0-47be-ad62-fab87a5bfb15"
+    },
+    {
+      "claim_id": "7767903a-6244-4e7f-9689-fe438520673c",
+      "result_id": "b3e0fc7e-47a0-47be-ad62-fab87a5bfb15"
+    },
+    {
+      "claim_id": "29482b7e-0d1e-46f9-ae3b-b8ace55de983",
+      "result_id": "b3e0fc7e-47a0-47be-ad62-fab87a5bfb15"
+    },
+    {
+      "claim_id": "84d6defe-ff03-49a0-a148-e8c323e81112",
+      "result_id": "8f5c862c-c527-4e03-aa31-a9c9bfd94f5a"
+    },
+    {
+      "claim_id": "6352d923-5c6c-44a2-9cc2-7b0ad69cb4b7",
+      "result_id": "8f5c862c-c527-4e03-aa31-a9c9bfd94f5a"
+    },
+    {
+      "claim_id": "308b5149-6f6a-4e0b-aeb3-0f9afb38705c",
+      "result_id": "8f5c862c-c527-4e03-aa31-a9c9bfd94f5a"
+    },
+    {
+      "claim_id": "24ef9925-4ea9-44e8-aa4c-e1bc98bdd18f",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "77b0b87f-da34-4c6b-905b-64f589c57589",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "40a12af9-9d71-473e-8f86-70fd2d2c6d98",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "0b9a4232-ccc9-4938-a13a-619bc6408b07",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "82ed97c5-3087-4f8a-9bf4-7709062613bd",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "7fe48635-7b1d-4b39-b68f-57e339b3bbd8",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "b3caca15-a464-4cbe-9e91-83d0fa913d59",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "824ea668-29d9-4d07-83ea-18990324d31a",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "f73f0436-734c-45ec-abf4-7bf52b16435e",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "b7d9ef61-8ff0-4549-b672-38d435de61a1",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "f29c351e-4681-424c-9db3-62c17844f380",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "19777a64-d5a7-48a0-9962-6263806343ef",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "b02451c3-9049-4920-b93b-a7ef9bfd6aa8",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "abdaf785-4063-49dd-b95d-9428cd09eecc",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "ea085e6b-7524-4d38-860a-c3b4c2216e1e",
+      "result_id": "dedd0d0e-7172-4344-913b-1d7225abf838"
+    },
+    {
+      "claim_id": "93340e1f-68fd-4d18-a34d-08735e3bb11b",
+      "result_id": "80673b5c-9299-4866-9937-48994571f910"
+    },
+    {
+      "claim_id": "c43e3588-f868-438b-8a2e-a3eb6fec6092",
+      "result_id": "bba8ef1b-648a-4e9f-9e55-c002d3ed9b73"
+    },
+    {
+      "claim_id": "a55c0216-d56f-4fc2-8907-a802731a7d41",
+      "result_id": "cff2bf33-c8d5-406f-adec-0bc5eaa06c6c"
+    },
+    {
+      "claim_id": "9585d5be-cd0d-4f98-82b4-0b8b5d3c81b1",
+      "result_id": "cff2bf33-c8d5-406f-adec-0bc5eaa06c6c"
+    },
+    {
+      "claim_id": "beadab35-232a-4314-8614-de6af584b8ad",
+      "result_id": "cff2bf33-c8d5-406f-adec-0bc5eaa06c6c"
+    },
+    {
+      "claim_id": "35eaa685-b38a-45d6-9d77-76a18710995f",
+      "result_id": "cff2bf33-c8d5-406f-adec-0bc5eaa06c6c"
+    },
+    {
+      "claim_id": "1087dada-d34a-45e9-af6d-7f5be8806c59",
+      "result_id": "cff2bf33-c8d5-406f-adec-0bc5eaa06c6c"
+    },
+    {
+      "claim_id": "93fc8569-ade3-429b-8456-7b00a5b24b4b",
+      "result_id": "cff2bf33-c8d5-406f-adec-0bc5eaa06c6c"
+    },
+    {
+      "claim_id": "44bdbf4a-61ad-486f-b0cf-1f575acc0da2",
+      "result_id": "cff2bf33-c8d5-406f-adec-0bc5eaa06c6c"
+    },
+    {
+      "claim_id": "caa80765-4f2c-4e29-969e-9af0927ce907",
+      "result_id": "cff2bf33-c8d5-406f-adec-0bc5eaa06c6c"
+    },
+    {
+      "claim_id": "701612ab-baf8-41a0-b208-6ca7a05bf1e0",
+      "result_id": "cff2bf33-c8d5-406f-adec-0bc5eaa06c6c"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1230 @@
+{
+  "submission": {
+    "id": "ae0fdd58-b545-4a7e-824c-0d5dbf79f263",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:53:59.136057Z",
+    "updated_at": "2025-12-02T14:53:59.136057Z"
+  },
+  "content": [
+    {
+      "id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "submission_id": "ae0fdd58-b545-4a7e-824c-0d5dbf79f263",
+      "content_type": "manuscript",
+      "content_text": "# Variable prediction accuracy of polygenic scores within an ancestry group\n\n## Authors\n\n- Hakhamanesh Mostafavi<sup>1</sup> ([ORCID: 0000-0002-1060-2844](https://orcid.org/0000-0002-1060-2844)) \u2020\n- Arbel Harpak<sup>1</sup> ([ORCID: 0000-0002-3655-748X](https://orcid.org/0000-0002-3655-748X)) \u2020\n- Ipsita Agarwal<sup>1</sup> ([ORCID: 0000-0001-8537-0008](https://orcid.org/0000-0001-8537-0008))\n- Dalton Conley<sup>2</sup> ([ORCID: 0000-0002-5174-7222](https://orcid.org/0000-0002-5174-7222))\n- Jonathan K Pritchard<sup>4</sup> ([ORCID: 0000-0002-8828-5236](https://orcid.org/0000-0002-8828-5236))\n- Molly Przeworski<sup>1</sup> ([ORCID: 0000-0002-5369-9009](https://orcid.org/0000-0002-5369-9009)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, Columbia University New York United States\n2. Department of Sociology, Princeton University Princeton United States\n3. Office of Population Research, Princeton University Princeton United States\n4. Department of Genetics, Stanford University Stanford United States\n5. Department of Biology, Stanford University Stanford United States\n6. Howard Hughes Medical Institute, Stanford University Stanford United States\n7. Department of Systems Biology, Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nFields as diverse as human genetics and sociology are increasingly using polygenic scores based on genome-wide association studies (GWAS) for phenotypic prediction. However, recent work has shown that polygenic scores have limited portability across groups of different genetic ancestries, restricting the contexts in which they can be used reliably and potentially creating serious inequities in future clinical applications. Using the UK Biobank data, we demonstrate that even within a single ancestry group (i.e., when there are negligible differences in linkage disequilibrium or in causal alleles frequencies), the prediction accuracy of polygenic scores can depend on characteristics such as the socio-economic status, age or sex of the individuals in which the GWAS and the prediction were conducted, as well as on the GWAS design. Our findings highlight both the complexities of interpreting polygenic scores and underappreciated obstacles to their broad use.\n\n## Introduction\n\nGenome-wide association studies (GWAS) have now been conducted for thousands of human complex traits, revealing that the genetic architecture is almost always highly polygenic, that\u00a0is that the bulk of the heritable variation is due to thousands of genetic variants, each with tiny marginal effects (Boyle et al., 2017; Bulik-Sullivan et al., 2015). These findings make it difficult to interpret the molecular basis for variation in a trait, but they lend themselves more immediately to another use: phenotypic prediction. Under the assumption that alleles act additively, a 'polygenic score' (PGS) can be created by summing the effects of the alleles carried by an individual; this score can then be used to predict that individual\u2019s phenotype (Henderson, 1984; Meuwissen et al., 2001; Kathiresan et al., 2008; Lynch and Walsh, 1998). For highly heritable traits, such scores already provide informative predictions in some contexts: for example, prediction accuracies are 24.4% for height (using $R^{2}$\u00a0as a measure) (Yengo et al., 2018) and up to 13% for educational attainment\u00a0(using incremental\u00a0$R^{2}$) (Lee et al., 2018).\n\nThis genomic approach to phenotypic prediction has been rapidly adopted in three distinct fields. In human genetics, PGS have been shown to help identify individuals that are more likely to be at risk of diseases such as breast cancer and cardiovascular disease\u00a0(Khera et al., 2018; Inouye et al., 2018; Mavaddat et al., 2019; Khera et al., 2019). Based on these findings, a number of papers have advocated that PGS be adopted in designing clinical studies, and by clinicians as additional risk factors to consider in treating patients\u00a0(Torkamani et al., 2018; Khera et al., 2018). In human evolutionary genetics, several lines of evidence suggest that adaptation may often take the form of shifts in the optimum of a polygenic phenotype and hence act jointly on the many variants that influence the phenotype\u00a0(Pritchard and Di Rienzo, 2010; Berg and Coop, 2014; H\u00f6llinger et al., 2019; Sella and Barton, 2019). In this context, the goal is to test whether the set of variants\u00a0that influence a trait are rapidly evolving across populations or over time\u00a0(Field et al., 2016; Berg et al., 2019; Uricchio et al., 2019; Edge and Coop, 2019; Racimo et al., 2018; Berg and Coop, 2014). Finally, in various disciplines of the social sciences, PGS are increasingly used to distinguish environmental from genetic sources of variability\u00a0(Conley, 2016), as well as to understand how genetic variation among individuals may cause heterogeneous treatment effects when studying how an environmental influence (e.g., a schooling reform) affects an outcome (such as BMI)\u00a0(Barcellos et al., 2018; Davies et al., 2018). In all these applications, the premise is that PGS will \u2018port\u2019 well across groups\u2014that is that they remain predictive not only in samples very similar to the ones in which the GWAS was conducted, but also in other sets of individuals (henceforth \u2018prediction sets\u2019).\n\nAs recent papers have highlighted, however,\u00a0PGS are not as predictive in individuals whose genetic ancestry differs substantially from the ancestry of individuals in the original GWAS (reviewed in Martin et al., 2019). As one illustration, PGS calculated in the UK Biobank predict phenotypes of individuals sampled in the UK Biobank better than those of individuals sampled in\u00a0the BioBank\u00a0Japan Project:\u00a0for instance, the incremental $R^{2}$\u00a0for height is\u00a0approximately 11% in the UK versus 3% in Japan\u00a0(Martin et al., 2019). Similarly, using PGS based on Europeans and European-Americans, the largest educational attainment GWAS to date ('EA3')\u00a0reported an\u00a0incremental $R^{2}$\u00a0of 10.6% for European-Americans\u00a0but only 1.6% for African-Americans\u00a0(Lee et al., 2018).\n\nTo date, such observations have been discussed mainly in terms of population genetic factors\u00a0that reduce portability (Martin et al., 2017; Kim et al., 2018; Duncan et al., 2018; De La Vega and Bustamante, 2018; Sirugo et al., 2019; Martin et al., 2019). Notably, GWAS does not pinpoint causal variants, but instead implicates a set of possible causal variants that lie in close physical proximity in the genome. The estimated effect of a given SNP depends on the extent of linkage disequilibrium (LD) with the causal sites\u00a0(Pritchard and Przeworski, 2001; Bulik-Sullivan et al., 2015). LD differences between populations that arose from their distinct demographic and recombination histories will lead to variation in the estimated effect sizes and hence to variable phenotypic\u00a0prediction accuracies\u00a0(Rosenberg et al., 2019). Populations will also differ in the allele frequencies of causal variants. This problem is particularly acute for alleles that are rare in the population in which the GWAS was conducted but common in the population in which the trait is being predicted. Such variants are likely to have noisy effect size estimates in the estimation sample or may not be included in the PGS\u00a0at all, and yet they contribute substantially to heritability in the target population.\u00a0Furthermore, causal loci or effect sizes may differ among populations, for instance if the effect of an allele depends on the genetic background on which it arises (e.g.,\u00a0Adhikari et al., 2019). For all these reasons, we should expect PGS to be less predictive across ancestries.\n\nIn practice, given that most individuals (about 80%) included in current GWAS are of European ancestry\u00a0(Popejoy and Fullerton, 2016; Martin et al., 2019), PGS are systematically more predictive in European-ancestry individuals than among other people. As a consequence, the clinical applications and scientific understanding to be gained from PGS will predominantly and unfairly benefit a small subset of humanity. A number of papers have therefore highlighted the importance of expanding GWAS efforts to include more diverse ancestries (Martin et al., 2018; Bien et al., 2019; Wojcik et al., 2019; Martin et al., 2019; Sirugo et al., 2019).\n\nImportantly, factors other than ancestry could also impact the accuracy and portability of PGS. For example, the educational attainment of an individual depends not only on their own genotype, but on the genotypes of their parents, due to nurturing\u00a0effects (Kong et al., 2018), and of their peers, due to social genetic effects\u00a0(Domingue et al., 2018), and of course on non-genetic factors. Also, traits such as height and educational attainment show strong patterns of assortative mating, which can distort effect size estimates in GWAS\u00a0(Domingue et al., 2014; Robinson et al., 2017; Ruby et al., 2018). To what extent these effects remain the same across cultures and environments is unknown, but if they differ, so will the prediction accuracy. More generally, while we still know little about genotype-environment interactions (GxE) in humans, they are well-documented in other species\u2014notably in experimental settings\u2014and would further reduce the portability of PGS across environments\u00a0(Gibson, 2008; Tropf et al., 2017; Mills and Rahal, 2019; Lynch and Walsh, 1998). In addition, the extent of environmental variability could differ between GWAS and prediction groups, which would change the proportion of the variance in the trait explained by a PGS\u00a0(i.e., the prediction accuracy). PGS for some traits\u00a0may also include a component of environmental or cultural confounding with population structure\u00a0(Sohail et al., 2019; Haworth et al., 2019; Lawson et al., 2020; Kerminen et al., 2018; Berg et al., 2019); this source of confounding\u00a0can increase or decrease prediction accuracy, depending on the structure in the prediction samples.\n\nGiven these considerations, it is important to ask to what extent PGS\u00a0are portable among groups within the same ancestry. To explore this question, we stratified the subset of UK Biobank samples designated as \u2018White British\u2019 (WB) according to some\u00a0of the standard\u00a0sample characteristics of GWAS studies: the ages of the individuals, their sex, and socio-economic status. We chose to focus on these particular characteristics\u00a0because they vary among GWAS samples depending on sample ascertainment procedures. Furthermore, these characteristics have been shown to influence heritability for some traits in a study of a subset of the UK Biobank (Ge et al., 2017), raising the possibility that these choices also influence prediction accuracy.\u00a0Indeed, for three example traits, we show that there exist major differences in the prediction accuracy of the PGS\u00a0among these groups, even though they share highly similar genetic ancestries. We further demonstrate for a variety of traits\u00a0that\u00a0prediction accuracy differs markedly depending on whether the GWAS is conducted in unrelated individuals or in pairs of siblings, even when controlling for the precision of the estimates. This finding is again unexpected under standard GWAS assumptions; it\u00a0underscores the importance of\u00a0genetic effects that are included in estimates from some study designs and not others and highlights underappreciated challenges with GWAS-based phenotypic prediction.\n\nAt present, it is difficult to determine the reasons why we see such variable prediction accuracy\u00a0across these strata and study designs. Contributing factors probably include indirect genetic effects from relatives, assortative mating, varying levels of genetic and environmental variance, GxE interaction effects and perhaps undetected confounding. Nonetheless, our results make clear that the prediction accuracy of PGS can be affected in unpredictable ways by known\u2014and presumably unknown\u2014factors in addition to genetic ancestry.\n\n## Results\n\n### Sample characteristics of the GWAS and prediction set can influence prediction accuracy even within a single ancestry\n\nWe examined how\u00a0PGS for a few example traits\u00a0port across samples that are of similar genetic ancestry but differ in terms of some common study characteristics, such as\u00a0the male:female ratio (henceforth \u2018sex ratio\u2019), age distribution, or socio-economic status (SES). To this end, we limited our analysis to\u00a0the largest subset of individuals in the UKB with a relatively homogeneous ancestry: 337,536 unrelated\u00a0individuals\u00a0that were characterized by the UKB, based on self-reported ethnicities\u00a0as well as genetic analysis,\u00a0as \u2018White British\u2019 (WB)\u00a0(Bycroft et al., 2018). In all analyses, we further adjusted for the first 20 principal components of the genotype data, to account for population structure within this set of individuals\u00a0(Materials and methods).\n\nIn all analyses, we randomly selected\u00a0a subset of individuals to be the prediction set; we then conducted GWAS using the remaining individuals and built a\u00a0PGS model\u00a0by LD-based clumping of the associations (Materials and methods). To examine the reliability of the prediction, we considered the incremental $R^{2}$, that\u00a0is the $R^{2}$\u00a0increment\u00a0obtained when adding the PGS to a model with other covariates (referred to as 'prediction accuracy' henceforth). Whether this measure is appropriate depends on how PGS are to be used; it is not always the most obvious choice in human genetics, where the goal is often to identify individuals at high risk of developing a particular disease\u00a0(i.e., in the tail of the polygenic score\u00a0distribution). Nonetheless, because it has been widely reported in discussions of portability across genetic ancestries (e.g., Lee et al., 2018; Martin et al., 2019), we also used it here; later, we also present some results on binary traits using incremental area under the receiver operator curve (AUC).\n\nAs a first case, we considered the prediction accuracy of a PGS for diastolic blood pressure in prediction sets stratified by sex, motivated by reports that variation in this trait may arise for somewhat distinct reasons in the two sexes\u00a0(Reckelhoff, 2001; Zhou et al., 2017). We randomly selected males and females as prediction sets (20K individuals each), and used\u00a0a subset of the rest of the individuals for GWAS, matching the numbers of females and males in the GWAS set (total sample size\u00a0122,774); we refer to this mixed set, somewhat loosely, as the 'diverse\u00a0GWAS.'\u00a0Adjusting for mean sex effects and medication use (see Materials and methods), the prediction accuracy is about\u00a01.15-fold higher for females than for males (Mann-Whitney $p=1.1\u22c510^{-5}$; Figure 1A). Thus, despite equal representation of males and females\u00a0in the GWAS set,\u00a0the\u00a0prediction accuracy varies depending on the sex ratio of prediction samples. To examine this further, we repeated the same analysis but performed the GWAS in only one sex (which we refer to as 'stratified GWAS' using the same sample size as in the diverse\u00a0GWAS). [Note that the diverse GWAS sample is not a merge of the stratified GWAS samples but a mixed-sex sample of equal sample size to that used in the women-only and the men-only GWAS, to allow for direct comparison between GWASs. Results for the merged GWAS (with a much larger sample size) are presented in Appendix 1\u2014figure 1A.]\u00a0When the GWAS is conducted only in females, the prediction accuracy is about 1.35-fold higher for females than for males; in turn, when GWAS was done in only males, the prediction accuracy in both sexes\u00a0is similar, as well as somewhat decreased (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48376/elife-48376-fig1-v2.jpg)\n\n**Figure 1.:** Shown are incremental $R^{2}$ values (i.e., the increment in $R^{2}$\u00a0obtained by adding a polygenic score predictor to a model with covariates alone) in different prediction sets.\u00a0Each box and whiskers plot\u00a0is computed based on 20\u00a0iterations of resampling\u00a0GWAS and prediction sets. Thick horizontal lines denote the medians. The polygenic scores\u00a0were estimated in samples of unrelated WB individuals. Phenotypes were then predicted in distinct samples of unrelated WB individuals, stratified by sex (A), age (B) or Townsend deprivation index, a measure of SES (C). In\u00a0red and green cases, polygenic scores are based on a GWAS in a sample limited to one sex, age or SES group (a 'stratum'). In blue, polygenic scores are based on a GWAS in a diverse\u00a0sample matching the number of individuals in each stratum. GWAS samples sizes are: 122,774 for all three diastolic blood pressure GWAS samples, 72,328 for all three BMI GWAS samples, 73,280 for years of schooling GWAS in the diverse sample and 73,283 for GWAS in the low SES and high SES samples.\n\nWe then considered two other cases, evaluating prediction accuracy in groups stratified by age for BMI\u2014since the UK Biobank participants were enrolled within about a five-year span, differences in age could in principle also be reflective of cohort effects\u2014and by adult SES for years of schooling, using the Townsend deprivation index as a measure; our choices were motivated by prior evidence suggesting that these characteristics of the GWAS influence estimates of SNP-heritability (Branigan et al., 2013; Conley et al., 2015; Belsky et al., 2018; Elks et al., 2012; Ge et al., 2017). We withheld a random set of 10K individuals in each quartile of age and SES for prediction and performed GWAS using a subset of the remaining individuals, matching the sample sizes across quartiles in the GWAS set (total sample sizes of 72,328 and 73,280 for BMI and years of schooling GWAS, respectively). Similar to our observation for diastolic blood pressure, the prediction accuracy varies across prediction sets:\u00a0it is 1.4-fold higher for BMI in the youngest quartile compared to the oldest (Mann-Whitney $p=1.1\u22c510^{-5}$;\u00a0Figure 1B), and\u00a02-fold higher for years of schooling in the lowest SES quartile compared to the highest (Mann-Whitney $p=2.9\u22c510^{-6}$; Figure 1C). Furthermore, the differences across groups are again sensitive to the choice of the GWAS set: the differences are marked when GWAS is restricted to the youngest quartile for BMI and the lowest SES quartile for years of schooling, but diminished when the GWAS is performed in the oldest and the highest SES quartiles for BMI and years of schooling, respectively (Figure 1B, C).\u00a0These results remained qualitatively unchanged when we used $R^{2}$ instead of incremental $R^{2}$ to measure prediction accuracy (Appendix 1\u2014figure 2).\n\nIn these analyses, we used a p-value threshold of 10-4 for inclusion of a SNP in the PGS. The\u00a0choice of how stringent to make the GWAS p-value threshold is important but somewhat arbitrary, with approaches ranging from requiring genome-wide significance to including all SNPs (Weedon et al., 2008; Pharoah et al., 2008; Euesden et al., 2015; Vilhj\u00e1lmsson et al., 2015; Ware et al., 2017; Mostafavi et al., 2017; Speidel et al., 2019). Often, this threshold is chosen to maximize prediction accuracy in an independent validation set. When the goal is to compare prediction performance across different groups, there is no obvious optimal choice of the p-value threshold.\u00a0[The optimal p-value in this context will differ across studies, as it depends not only on the genetic architecture and heritability of the trait, but also on the GWAS sample size, that\u00a0is power (Dudbridge, 2013).] As we show, however, the\u00a0qualitative trends reported in Figure 1 do not depend on the p-value threshold choice (Appendix 1\u2014figure 3);\u00a0moreover, the qualitative trends remain when\u00a0LDpred is used (with a prior probability of 1 on loci being causal; Vilhj\u00e1lmsson et al., 2015) instead of pruning approaches\u00a0(Appendix 1\u2014figure 3).\n\nThese results pertain to\u00a0three exemplar traits and do not speak to the prevalence of this phenomenon. Nonetheless, they demonstrate that the prediction accuracy of a polygenic score can vary markedly depending on sample characteristics of both the original GWAS and the prediction set, even within a single ancestry, and that this variation in prediction accuracy can be substantial\u2014on the same order as reported for different continental ancestries within the UK Biobank (Martin et al., 2019). As one example, the prediction accuracy in East Asian samples, averaged across a number of traits, is about half of that in European samples when GWAS was European-based; when the GWAS is done in the lowest SES group for years of schooling, prediction accuracy in the highest SES group is less than half of that in the lowest SES (Figure 1C). Moreover, whereas for these traits, we had prior information about which characteristics may be relevant, other aspects that vary across sets of individuals are undoubtedly important as well (e.g., smoking behavior and diet may modify genetic effects on lipid traits;\u00a0Bentley et al., 2019; Telkar et al., 2019), and for other traits of interest, much less may be known a priori.\n\n### Possible explanations for the variable prediction accuracy\n\nOur goal in this paper is to highlight that prediction accuracies can vary across groups of highly similar ancestry, rather than to investigate the likely causes for any particular phenotype. Nonetheless, we provide some observations that may cast light on these results. We first note that in these three examples, the prediction accuracies track SNP heritability differences across strata (Figure 2A,B,C). This relationship should be\u00a0expected, given that the estimation noise decreases with heritability (Appendix\u00a01), and potentially underlies the observation that\u00a0prediction accuracies using the diverse GWAS sample are often\u00a0intermediate between those obtained from stratified\u00a0GWAS samples of equal sample size (Figure 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48376/elife-48376-fig2-v2.jpg)\n\n**Figure 2.:** (A,B,C) The x-axes show heritability estimates\u00a0(\u00b1 SE) based on LD\u00a0score regression in each set. The y-axes show incremental $R^{2}$\u00a0values\u00a0obtained using the procedure\u00a0described in Figure 1, with GWAS performed in a pooled sample of all strata and testing in stratified prediction sets (see Materials and methods); points and bars show mean and central 80% range computed based on\u00a020\u00a0iterations of resampling\u00a0GWAS and prediction sets.\u00a0\u2018Q\u2019 denotes quartile\u00a0of age and SES in (B,E) and (C,F), respectively. (D,E,F)\u00a0The x-axes show phenotypic variance estimates (\u00b1 SE) across strata after adjusting for covariates (sex, age and 20 PCs). If the heritability differences across strata are due to differences in environmental variance alone, with genetic variance constant, then heritability should be inversely proportional to phenotypic variance. The best-fitting model for this inverse proportionality (dashed line, simple linear regression) provides a poor fit to the observations.\n\nPerhaps the simplest explanation for these findings would be that heritabilities, and hence prediction accuracies, vary only because of differences in the extent of environmental variance across strata, while the genetic variance is the same. We can test this hypothesis by examining whether\u00a0the heritability decreases\u00a0with increasing phenotypic variance (more precisely whether it is inversely proportional to it), as expected if the genetic variance is fixed across strata. What we find instead is that\u00a0the estimated SNP heritabilities\u00a0for all three traits increase or remain the same with increasing phenotypic variance (Figure 2D,E,F). Thus, for these traits at least, the variable prediction accuracy is not simply the result of differences in the extent of environmental heterogeneity across strata.\n\nAnother possibility\u00a0is that there is an interaction between genetic effects and sample characteristics, for instance that different sets of genetic variants contribute to blood pressure levels in males and females or to BMI across different stages of life.\u00a0[Although such interactions could in some contexts be thought of as reflecting GxE, we use the term \u2018sample characteristic\u2019 rather than \u2018environment\u2019, as environment has different meaning across disciplines, referring in some contexts only to factors that are exogenous to genetics. Viewed in this lens, SES in adulthood cannot be interpreted as exogenous, because it is in part determined by educational achievement, which is itself influenced by genetic factors, and similarly it is questionable whether age or sex are environments.] This explanation is not supported\u00a0by bivariate LD\u00a0score regression, which indicates that the genetic correlations across strata are close to 1 (Appendix 1\u2014table 2; Materials and methods). Yet when we re-estimate individual SNP effects in the prediction sets for SNPs ascertained in the original GWAS, the estimated effects of trait-increasing alleles are larger in the groups with higher prediction accuracy (Appendix 1\u2014figure 4; Materials and methods).\n\nOne simple model that could reconcile these findings is if effect sizes are highly correlated across the groups, but systematically larger in those groups with higher prediction accuracy. This explanation is reminiscent of the \u2018amplification\u2019 model of genetic influences on cognition during development\u00a0(Briley and Tucker-Drob, 2013).\n\nOther factors complicate interpretation, however, and may also contribute to our observations. In particular, for the case of years of schooling, conditioning on adult SES induces a form of range restriction, which could contribute to variable prediction accuracy across strata.\u00a0We note, however, that we see highly variable prediction accuracies across SES strata even when the GWAS is conducted in a diverse sample (i.e., including individuals from all strata) (Figure 1C); in that regard, our approach mimics what happens in practice when polygenic scores are used to predict phenotypes in a sample with a smaller range of SES (e.g., Rimfeld et al., 2018). More generally, although this type of range restriction is artificially amplified in our example, SES differences\u00a0may often be\u00a0a problem for GWAS\u00a0in which the sample is not representative of the population; for instance,\u00a0the most recent major GWAS of educational attainment (Lee et al., 2018) included numerous medical data sets and the 23andMe data set, which are not representative of the national population.\n\nAnother potentially important factor is that the adjustment for PCs may not be a sufficient control for the different ways in which population structure can confound GWAS results (Vilhj\u00e1lmsson and Nordborg, 2013), leading to variable prediction accuracy across strata if they differ in their population structure. To examine this possibility, we repeated the analysis in Figure 1 but using a linear mixed model (LMM) approach (including PCs among other covariates; see Materials and methods), and obtained qualitatively similar results (Appendix 1\u2014figure 5). Although not a perfect fix (Listgarten et al., 2013; Mathieson and McVean, 2013), the fact that we obtain similar results using PCs and LMM suggests that confounding due to population stratification in the UK Biobank alone does not explain the variable prediction accuracies across strata.\n\n### Obstacles to portability explored through a comparison of standard and family-based GWAS\n\nBeyond\u00a0sample characteristics such as age or sex, a number of other factors may shape the portability of scores across groups of similar ancestry. Standard GWAS is done in samples of individuals that deliberately exclude close relatives; as implemented, it\u00a0detects direct effects of the genetic variants, but also any indirect genetic effects of parents, siblings, or peers,\u00a0effects of assortative mating among parents,\u00a0and potentially environmental differences associated with fine-scale population structure\u00a0(Young et al., 2018; Trejo and Benjamin, 2019; Kong et al., 2018; Lee et al., 2018; Berg et al., 2019). Given that many of these effects are likely to be culturally mediated\u00a0(Stulp et al., 2017; Selzam et al., 2019), it seems plausible that they may vary within as well as across groups of individuals with different ancestries. If culturally-contingent effects contribute to GWAS estimates (and hence to PGS), they may lead to differences in the prediction accuracy in samples unlike the original GWAS.\n\nTo demonstrate that these considerations are not just hypothetical, we compared the prediction accuracy when the PGS is trained on \u2018unrelated\u2019 individuals such as those used in a standard GWAS to one obtained from a sibling-based (or \u2018sib-based\u2019) GWAS (Materials and methods). In the latter, genotype differences between sibs, a result of random Mendelian segregation in the parents, are tested for association with the phenotypic differences between them. Because the tests depend on phenotypic differences between siblings who, of course, have the same parents, these tests are conditioned on the parental genotypes and hence\u00a0exclude many of the indirect effects signals\u00a0that may be\u00a0picked up in standard GWAS (Appendix\u00a01). Differences between standard and sib-based GWAS are thus informative about the presence of factors other than direct genetic effects\u00a0(Wood et al., 2014; Trejo and Benjamin, 2019; Lee et al., 2018; Berg et al., 2019; Selzam et al., 2019).\n\nA challenge in this comparison is that the UKB contains only\u00a0~22K sibling pairs,\u00a0~19K of whom are labeled as \u2018White British\u2019 (WB). The siblings are similar to the unrelated individuals in terms of ages, SES distributions and genetic ancestries (Appendix 1\u2014figures 6 and 7) but\u00a0include a higher proportion of females;\u00a0this difference is unlikely to influence our analyses\u00a0(see below). While a large number, 19K pairs is still too few to have adequate power to discover trait-associated SNPs, when compared to a standard GWAS using the much larger sample of unrelated WB individuals (~340K).\n\nTo increase power and enable a direct comparison between the two designs,\u00a0we split the SNP ascertainment and effect estimation steps as follows (Figure 3A): we identified SNPs using a standard GWAS with a large sample size (median\u00a0~270K across the traits considered) (see Materials and methods). We then estimated the effect of each significant SNP using (i) a sib-based association test and (ii) a standard association test. We chose the size of the estimation set in (ii) such that the median standard error of effect estimates in (i) and (ii) is approximately equal. We then compared the prediction accuracy of the two PGS obtained in this way (\u2018standard PGS\u2019 and \u2018sib-based PGS\u2019) in an independent prediction set of unrelated individuals; as we show in Appendix\u00a01, our approach leads to highly similar prediction accuracies of the two approaches under a model with direct effects only\u00a0(see Materials and methods\u00a0for details).\u00a0A further advantage is that the two scores are compared for the same set of SNPs, such that LD patterns and allele frequency differences do not come into play.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48376/elife-48376-fig3-v2.jpg)\n\n**Figure 3.:** (A) After ascertaining SNPs in a large sample of unrelated individuals, we estimated the effects of these SNPs with a standard regression using unrelated individuals and, independently, using sib-regression. We then used the polygenic scores for prediction in a third sample of unrelated individuals. We chose the sample size of the standard PGS estimation set such that median effect estimate SEs are equal in the two designs, thereby ensuring equal prediction accuracy under a vanilla model with no indirect effects or assortative mating. Numbers in parentheses are median sample size in each set across 20 traits (see\u00a0Materials and methods and\u00a0Appendix 1\u2014table 1 for the definition of each trait, and Appendix 1\u2014table 3 for sample sizes for each trait).\u00a0(B) Ratio of prediction accuracy in the two designs across 20 traits. For each trait, we performed 10 resampling iterations of unrelated individuals into three sets for discovery, estimation and prediction (small points). Large points show median values. (C-F) We repeated this procedure with different discovery-set p-value thresholds for including a SNP in the polygenic score. The higher the p-value threshold is, the more SNPs are included. For each p-value threshold, points show 10 iterations as described and large points show median values. Shown are a subset of traits, with traits appearing in (B) but not shown here presented in Appendix 1\u2014figure 12.\n\nWe applied the approach to 20 traits, focusing on traits with relatively high heritability estimates as well as social and behavioral traits that have been the focus of recent attention in social sciences. For the majority of the traits, such as diastolic blood pressure, BMI, and hair color, the prediction accuracies of standard and sib-based PGS\u00a0were similar (Figure 3B), as expected under standard GWAS assumptions and as observed for\u00a0traits\u00a0simulated under these assumptions (Appendix 1\u2014figure 8).\u00a0However, for height and for a range of social and behavioral\u00a0traits, such as years of schooling, pack years of smoking and household income,\u00a0the prediction accuracy of the sib-based PGS was substantially lower than that of the standard PGS (Figure 3B).\u00a0[We\u00a0caution\u00a0that, because the first step of our study design is to identify SNPs that are associated with the trait in a large set of unrelated individuals and we subsequently match the sampling variances of sib- and standard GWAS, rather than identify distinct sets of SNPs separately in the two designs, the ratio of prediction accuracies that we obtain cannot be directly compared to those reported in other studies.]\n\nA number of factors could contribute to the differences between prediction accuracies for PGS based on sibs versus unrelated individuals, including confounding effects of population stratification, indirect genetic effects from parents and assortative mating. The relative importance of each factor will vary across traits\u00a0(Rosenberg et al., 2019; Kong et al., 2018; Haworth et al., 2019; Ruby et al., 2018; Selzam et al., 2019).\u00a0For educational attainment, this gap is likely to reflect at least in part the documented contribution of indirect genetic effects to the standard PGS (Lee et al., 2018; Kong et al., 2018; Young et al., 2018). We show in Appendix\u00a01 that in the presence of indirect genetic effects mediated through parents, standard PGS outperforms sib-based PGS unless direct and indirect effects are strongly anticorrelated (Appendix 1\u2014figure 9), which seems unlikely to be the case for years of schooling. The difference in the performance of sib-based and standard PGS observed for other social and behavioral outcomes, such as household income and age at first sexual intercourse (Figure 3B), may reflect a similar phenomenon. An additional contribution to divergent prediction accuracies could come from indirect effects among siblings, which would also contribute differentially to standard and sibling-based PGS.\u00a0For height, there may be an important contribution of assortative mating to the difference in prediction accuracies (Wood et al., 2014; Robinson et al., 2017; Lee et al., 2018). In Appendix\u00a01, we show that under a simple model of positive assortative mating, the prediction accuracy based on a standard PGS is higher than that of a sib-based PGS (Appendix 1\u2014figure 10).\u00a0We further confirmed that the difference in the sex ratio of the siblings and unrelated individuals,\u00a0mentioned earlier, has a negligible effect on these differences, though it may underlie the slightly lower prediction accuracy of the standard PGS for pulse rate (Appendix 1\u2014figure 11).\n\nThe\u00a0lower prediction accuracies\u00a0for PGS based on sib-based GWAS indicate that complications such as assortative mating or\u00a0indirect effects contribute to the standard GWAS estimates. In the absence of these complications, we ensure that prediction accuracies are comparable by matching the sampling errors of the two approaches (Figure 3A). In the presence of these complications, the\u00a0magnitude of the ratio of prediction accuracies should reflect\u00a0the strength of assortative mating, the relative contribution of indirect genetic effects compared to direct effects, and so forth. However, interpreting the magnitude of the deviation from 1 is far from straightforward: as we show in Appendix 1, the relative difference in prediction accuracies between the two approaches stems in part from the noise-to-signal ratio for the effect estimates in sib-based versus standard GWAS (Appendix\u00a01,\u00a0Appendix 1\u2014figures 9 and 10),\u00a0and as a result also depends on features of the comparison like the sample sizes used and\u00a0the PGS model.\n\nMotivated by these considerations, we examined how the prediction accuracy varies when progressively relaxing the GWAS p-value threshold for inclusion of SNPs, that\u00a0is when including more weakly associated SNPs in the PGS. [In Figure 3B, results are shown for the p-value threshold that maximizes the prediction accuracy of the standard PGS, replicating the practice when comparing populations of different ancestry; Martin et al., 2019.]\u00a0For hair color and diastolic blood pressure, there is little to no difference in prediction accuracy between the two estimation methods, regardless of the number of SNPs included in the score (Figure 3C,D).\u00a0In contrast, for height, standard and sib-based PGS perform similarly when based on the most significantly associated SNPs, but standard PGS progressively outperforms sib-based PGS when more SNPs are included (Figure 3E). Similarly, the difference in prediction accuracy between sib-based and standard PGS changes\u00a0markedly for years of schooling, household income and other social and behavioral traits (Figure 3F and Appendix 1\u2014figure 12). The growing gap in performance with increasing p-value threshold likely reflects a combination of an increasing\u00a0noise-to-signal ratio for the effect estimates in sib-based versus standard GWAS (see Appendix\u00a01) and changes in the relative importance of direct effects versus other factors such as indirect parental effects and assortative mating.\n\nIn summary, the differences between the prediction accuracies of standard and sib-based\u00a0PGS seen for a number of traits (Figure 3B), notably social and behavioral ones,\u00a0demonstrate that\u00a0standard GWAS estimates often include\u00a0a substantial contribution of factors other than direct effects. In these cases, even if the power\u00a0to detect direct effects were comparable, standard GWAS\u00a0would lead to higher prediction accuracy than sib-GWAS. In some contexts that may be a sufficient reason to rely on PGS derived from standard GWAS. However, that gain\u00a0stems from the inclusion of factors such as indirect effects and assortative mating that are likely to be modulated by SES, environment and culture (e.g., Selzam et al., 2019; Stulp et al., 2017). Thus, the increased prediction accuracy likely comes at a cost\u00a0of not always porting well across groups, even of the same ancestry, in ways that may be difficult to anticipate.\n\n## Discussion\n\nAlthough the conversation around the portability of PGS has largely focused on genetic ancestries, our results show that prediction accuracy can also differ, in some cases substantially, across groups of similar ancestry\u2014even due to basic study design differences such as age, sex or SES composition. When due only to increased environmental variance, such decreased accuracy may not pose a problem, at least for certain applications. But as we have shown, differences in the degree of environmental variance are not the primary explanation for the patterns we report (Figure 2), and other factors, including differences in the magnitude of genetic effects among groups, indirect effects and assortative mating, also lead to differences in the prediction accuracy of PGS, in ways that may make applications of phenotypic prediction less reliable, even within a single ancestry group. For some traits, there is prior information about which factors are likely to be important,\u00a0but not always, and even for well-studied traits, it may be difficult to enumerate\u00a0all the influential factors. As an example, we considered\u00a0the accuracy of the polygenic score for years of schooling\u00a0and found that it also varies somewhat depending on whether individuals have no sibling or one sibling in the prediction sets (Materials and methods; Appendix 1\u2014figure 13).\n\nFollowing the discussion of portability across ancestries, we have focused on incremental $R^{2}$ as a measure of portability.\u00a0This measure is less directly informative when the goal is to use PGS\u00a0to reliably identify individuals in the tails of the distribution, that\u00a0is those at elevated risk of developing a disease\u2014the main application of PGS in human genetics, as distinct from social science or evolutionary biology. Nonetheless, the same concerns raised here are likely to apply. To illustrate that point, we considered binary outcomes of the traits considered in Figure 1, 'hypertension' (defined as diastolic blood pressure > 110 mmHG), 'obesity' (defined as BMI > 35 kg/m2), and 'college completion', and evaluated the prediction accuracy as measured by\u00a0incremental AUC\u00a0(Appendix 1\u2014figure 14).The qualitative results are the same as in Figure 1. We also examined how incremental AUC varies by sex for five binary disease traits that we chose because they have relatively high heritability. For three of them, hypothyroidism and two cardiovascular outcomes, prediction accuracy varies depending on both the GWAS and prediction sets (Appendix 1\u2014figure 15).\n\nThus, for both quantitative and binary traits, the question of the domain over which a PGS applies is not just about LD patterns, allele frequencies or GxG effects but also about the extent of environmental and genetic variance, GxE, as well as the contribution of direct effects versus indirect effects, assortative mating and environmental confounding. An important implication is that differences in prediction accuracies among groups with distinct ancestries cannot be interpreted exclusively or even primarily in terms of population genetic parameters when these groups differ dramatically in their SES (Chetty and Hendren, 2018; Conley, 2010; Nuru-Jeter et al., 2018; Reich, 2017)\u00a0and other factors that may affect portability\u2014especially when the relative contribution of these factors to GWAS signals remains unknown\u00a0(Young et al., 2019; Mills and Rahal, 2019). Thus, efforts to conduct GWAS in groups that vary in ancestry and geographic locations will need to be accompanied by a careful examination of variation in portability along other dimensions.\n\nWhile these results raise the question of\u00a0how to best construct a PGS, the answer\u00a0is\u00a0not obvious, and likely depends\u00a0on the specific trait and samples. For example, for the three cases shown in Figure 1, considering a fixed GWAS sample size, the highest prediction accuracy is attained with a GWAS sample limited to some stratum (e.g., women for diastolic blood pressure). Yet a\u00a0much larger merged data set containing the union of strata generates the most predictive PGS (Appendix 1\u2014figure 1). Together, these observations\u00a0suggest a trade-off between the factors that are shared among strata and lead to increased power with sample size and those that differ across strata and underlie the variable prediction accuracy. In principle then, if influential factors were known, the composition of the GWAS sample could be optimized to yield the highest accuracy in a given prediction set, but how much each stratum should be weighted\u00a0will depend on a number of factors such as the genetic and environmental variance in each stratum, genetic correlation across strata, and sample sizes.\u00a0Moreover, factors such as assortative mating and indirect effects are soaked up into the GWAS estimates\u2014and critically also into the SNP heritability estimates. Thus, the choice of a GWAS sample is about more than power; it is implicitly making a choice about all sorts of sample characteristics that may or may not hold true of the prediction set.\n\nIn that regard, it is worth noting that while classical twin studies were often constituted to be representative of a reference population (often national in nature) (Polderman et al., 2015; Branigan et al., 2013), the same is not true of most contemporary human genetic datasets, which are skewed towards medical case-control studies, biobanks that are opt-in (and thus tend to include individuals who are wealthier and better educated than the population average) or direct-to-consumer proprietary genetic databases (which are even more skewed along these dimensions) (Lee et al., 2018). For instance, individuals in UK Biobank have higher SES than the rest of the British population (Fry et al., 2017) and are presumably self-selected for a certain level of interest in biomedical research. These factors alone raise challenges as to the broad portability of PGS derived from them. More generally, it seems plausible that individuals included in a GWAS differ from those that, for myriad reasons, do not end up participating\u00a0(Taylor et al., 2018), in ways that make it difficult to predict the domain over which GWAS-based estimates can be reliably generalized.\n\nOne fruitful way forward may be to study data from related individuals, in which it should be possible to decompose the components of the signals identified in GWAS into direct and indirect effects, the degree of assortative mating and the contribution of residual stratification (Zhang et al., 2015; Young et al., 2018; Kong et al., 2018).\u00a0Not only will this decomposition help us to better interpret the results of GWAS and the resulting PGS, it will make it possible to examine\u00a0under which circumstances, and for which phenotypes, components port more reliably to other sets of individuals, both unrelated and related. Ultimately, we envisage that in order to be broadly applicable, GWAS-based phenotypic prediction models will need to include not only a PGS but some study characteristics, other social and environmental measures and, perhaps crucially, their interactions.\n\n## Materials and methods\n\n### UK biobank\n\nThe UK Biobank (UKB) is a large study of about half a million United Kingdom residents, recruited between years 2006 to 2010\u00a0(Bycroft et al., 2018). In addition to genetic data, hundreds of phenotypes were collected through measurements and questionnaires at assessment centers, and by accessing medical records of the participants.\n\n#### Inclusion criteria\n\nIn this study, we focused on 408,434 participants who passed quality control (QC) measures provided by UKB; specifically, for whom the reported sex (QC parameter \u2018Submitted.Gender\u2019) matched their inferred sex from genotype data (QC parameter \u2018Inferred.Gender\u2019); who were not identified as outliers based on heterozygosity and missing rate (QC parameter \u2018het.missing.outliers\u2019==0); and did not have an excessive number of relatives in the database (QC parameter \u2018excess.relatives\u2019==0). We further selected individuals identified by UKB to be of \u2018White British\u2019 (WB) ancestry (QC parameter \u2018in.white.British.ancestry.subset\u2019==1), which is a label that refers to those who, when given a set of choices, self-reported to be of \u2018White\u2019 and \u2018British\u2019 ethnic backgrounds and, in addition, were tightly clustered in a principal component analysis of the genotype data, as detailed in\u00a0Bycroft et al. (2018). We excluded individuals that had withdrawn from the UK Biobank by the time of the analyses here. For a given trait, we further conditioned on individuals for whom the trait value was reported.\n\n### Phenotype data\n\nWe focused on 25\u00a0traits, including traits with relatively high heritability estimates\u00a0as well as social and behavioral traits that have been the focus of recent attention in social sciences\u00a0(see Appendix 1\u2014table 1 for a complete list of\u00a0phenotype data used in this work, and their corresponding numeric field codes in the UKB data showcase). We calculated the phenotype \u2018years of schooling\u2019 by converting the maximal educational qualification of the participants to years following\u00a0Okbay et al. (2016)\u00a0(Appendix 1\u2014table 4). For diastolic blood pressure, pulse rate, and forced vital capacity, we took the average of the first two rounds of measurement taken during the same examination at UKB assessment centers. We adjusted the diastolic blood pressure levels for blood pressure lowering medication following Evangelou et al. (2018)\u00a0by shifting the values upward by 10 mmHg for individuals taking medication. For hand grip strength, we took the average of the measurements for the two hands. For categorical phenotypes, we assigned integer values to each category (Appendix 1\u2014table 1). For hair color, individuals who reported hair color variable \u2018Other\u2019 were excluded from the analyses. We considered binary traits, \u2018hypertension\u2019 defined as diastolic blood pressure\u00a0>110 mmHG,\u00a0\u2018obesity\u2019 defined as BMI\u00a0>35 kg/m2, and \u2018college completion\u2019 defined based on attainment of a college or a university degree.\u00a0Disease outcomes were ascertained using self-reported information and/or using the hospital inpatient main and secondary diagnoses coded according to the International Classification of Diseases (ICD-9 and ICD-10).\u00a0Hypothyroidism, type 2 diabetes, and rheumatoid arthritis\u00a0were\u00a0ascertained based on ICD-10 codes of E03.X, E11.X and M06.X, respectively. Myocardial infarction was ascertained based on ICD-9 codes of 410.9, 411.9, 412.9, or ICD-10 codes of I21.X, I22.X, I23.X, I24.1, I25.2\u00a0following\u00a0Khera et al. (2018), or\u00a0participants with myocardial infarction outcome data among the UK Biobank\u2019s algorithmically-defined outcomes.\u00a0We also considered the binary outcome of ever being diagnosed to have had a heart attack, angina or stroke. For a subset of individuals, multiple measurements of a phenotype were provided, corresponding to multiple visits to UKB assessment centers; in those cases, we used the measurements during the first visit.\n\n### Genotype data\n\nUKB participants were genotyped on either of two similar genotyping arrays, UK Biobank Axiom and UK BiLEVE arrays, at a total of\u00a0~850K markers. We focused on autosomal bi-allelic SNPs shared between both arrays, and used plink v. 1.90b5\u00a0(Chang et al., 2015) to filter SNPs with calling rate\u00a0>0.95, minor allele frequency\u00a0>10\u22123, and Hardy-Weinberg equilibrium test p-val\u00a0>10\u221210 among the WB samples, resulting in 616,323 SNPs.\n\n### GWAS and trait prediction methods\n\n#### GWAS by sample characteristics\n\nWe focused on a set of 337,488 WB samples that were identified by the UKB to be \u2018unrelated\u2019 (sample QC parameter \u2018used.in.pca.calculation\u2019==1 as provided by UKB), defined such that no pairs of individuals are inferred to be 3rd degree relatives or closer.\u00a0We split the sample into non-overlapping sets of individuals by\u00a0one of the following factors: age at recruitment (in years), sex, and Townsend deprivation index at recruitment (used as a proxy for socio-economic status or SES, specifically we take the negative of the Townsend deprivation index as a measure of SES). For SES and age, we divided the sample into four sets: Q1 [minimum value, first quartile], Q2 (first quartile, second quartile], Q3 (second quartile, third quartile], and Q4 (third quartile, maximum value]. We randomly selected 10K samples in each SES and age group, and 20K of males and 20K of females as held-out prediction sets, and performed GWAS using the remaining samples, matching sample sizes across groups in the GWAS set. We performed nine GWASs: for years of schooling in SES Q1 and SES Q4 (sample size 73,283 for each), and in a diverse\u00a0sample with equal number of individuals from\u00a0all four groups (sample size 73,280); for body mass index (BMI) in Q1, Q4, and in a diverse sample with equal number of individuals from\u00a0all four groups (sample size 72,328 for each); and for diastolic blood pressure in males, females, and in a diverse sample with equal number of males and females (sample size 122,774 for each). We performed all GWASs using plink v. 2.0 (with the\u00a0flag --linear),\u00a0adjusting for sex, age (at recruitment) and first 20 PCs as covariates. PCs are principal components of the genotype data, as provided by UKB, calculated using the entire cohort (not just WB individuals). For a subset of cases (where\u00a0GWAS was performed in samples restricted by characteristics described above), we additionally performed association tests using a linear mixed model (LMM) as implemented in BOLT-LMM v. 2.3.2\u00a0(Loh et al., 2015), using LD scores computed from 1000 Genomes European-ancestry samples, with sex, age and first 20 PCs as covariates. The GWAS summary statistics were used to construct PGS for the samples in the prediction sets.\n\nTo better understand the performance of PGS across the strata (see \u2018Possible explanations for the variable prediction accuracy\u2019), we estimated the mean effect sizes\u00a0of significant SNPs in each of the\u00a0strata. To avoid overfitting, we\u00a0first performed an association test in the pooled sample of all strata excluding individuals in the prediction sets and matching the number of individuals per stratum;\u00a0sample size 293,132 for years of schooling, 272,456 for BMI, and 245,548 for diastolic blood pressure. Then for significantly associated SNPs (LD pruned as described in \u2018Polygenic score construction and trait prediction\u2019), we\u00a0re-estimated\u00a0the effect sizes\u00a0in each of the strata in the prediction sets (see Appendix 1\u2014figure 4). We also used these pooled GWASs to explore the relationship between prediction accuracy and SNP heritability (as shown in Figure 2) and with GWAS sample size (Appendix 1\u2014figure 1). We performed 20 iterations of all above steps.\n\nIn addition to above examples, we explored the prediction accuracy for years of schooling when GWAS and prediction sets are stratified based the participants\u2019 number of full siblings. Specifically,\u00a0we performed GWAS using individuals who had exactly one sibling (sample size 90,417), and evaluated prediction in two independent samples of individuals who\u00a0reported having no siblings or having one sibling (sample size 20K for each) (see Appendix 1\u2014figure 13).\n\nWe also considered five binary disease outcomes stratified by sex. Specifically, we performed GWAS in equally sized samples of males and females for\u00a0hypothyroidism (sample size 135,526), type 2 diabetes (sample size 136,061), rheumatoid\u00a0arthritis (sample size 136,039), myocardial infarction (sample size 136,061) and having been diagnosed with a heart attack or angina or stroke (sample size 135,833), leaving out 20K samples of males and females for prediction\u00a0(see Appendix 1\u2014figures 14 and 15).\u00a0For these traits we used a logistic regression model for GWAS (using plink v. 2.0\u00a0with\u00a0the flag --logistic).\u00a0An important caveat to analyses of disease outcomes recorded during multiple follow-ups is that for \u2018age\u2019, we could only consider the age at recruitment in the GWAS; that approach is not ideal, considering that a fraction of individuals died during the course of the study (about 20K individuals in the full cohort).\n\n#### Standard\u00a0versus sibling-based polygenic\u00a0score\n\nWe used the genetic relatedness information provided by UKB to infer sibling pairs among the WB samples. Following\u00a0Bycroft et al. (2018), we marked pairs with $\\frac{1}{2^{5/2}}<\u03d5<\\frac{1}{2^{3/2}}$ and IBS0 > 0.0012 as siblings, where $\u03d5$ is the estimated kinship coefficient and IBS0 is the fraction of loci at which individuals share no alleles. By this approach, we identified 19,329 sibling pairs including 35,634 individuals across 17,328 families. For a given trait, we included pairs with the property that trait values for both individuals were reported. We then formed two sets of individuals: 'Siblings' set, including the sibling pairs randomly sampled to include only one pair per family, and an 'Unrelateds' set, including the unrelated individuals identified by the UKB (see section 'GWAS by sample characteristics'\u00a0above), but excluding the Siblings and 6,911 individuals that were related to the Siblings (3rd degree or closer).\n\nWe focused on 20 quantitative traits\u00a0(see Figure 3B for the list of traits considered in this analysis) and a number of simulated traits (see below). For each trait, we first downsampled the Unrelateds set to a sample size\u00a0$n^{*}$\u00a0such that the median standard error of effect estimates roughly matched the median standard error in\u00a0the sibling-based regression\u00a0(see 'Estimating\u00a0$n^{*}$'\u00a0below). We then divided the Unrelateds set into three non-overlapping sets: after sampling\u00a0$n^{*}$ individuals (Unrelateds-$n^{*}$ set), we randomly split the rest of the Unrelateds set into an Unrelateds-prediction set (10% of the samples) to be used as a\u00a0sample for trait prediction ('prediction set'), and an Unrelateds-discovery set (90% of the samples) to be used for the discovery of trait associated variants (see Appendix 1\u2014figure 3 for sample sizes in each set). For each trait, we performed standard GWAS in the Unrelateds-discovery set, and ascertained SNPs by thresholding on association p-values. We then estimated the effect sizes for these ascertained SNPs in two ways: by a sibling-based association test in the Siblings set (using plink v. 1.90b5\u2019s QFAM procedure\u00a0with\u00a0the flag --qfam), and by a standard association test in the Unrelateds-$n^{*}$ set (using plink v. 2.0). Subsequently, for each set of ascertained SNPs in the Unrelateds-discovery set, two PGS were constructed for the samples in the Unrelateds-prediction set (see Figure 3A for overview of the pipeline). We performed 10 iterations of the above sampling, ascertainment and estimation steps, except for simulated traits where we performed 30 iterations.\n\n##### Estimating\u00a0n*\n\nIn order to compare the performance of sibling-based and standard GWAS designs, we wanted to match both analyses to have similar prediction accuracy under a vanilla model of no assortative mating, population structure stratification or indirect effects. In Appendix\u00a01, we show that this could be achieved by matching median effect estimate standard errors. For each trait, we therefore calculated $n^{*}$, the sample size of a standard GWAS that yields\u00a0roughly equal standard errors in the\u00a0standard and sibling-based regressions. Specifically, for each trait, we first performed sibling-based GWAS in the Siblings using plink\u2019s QFAM procedure (with the flag --qfam\u00a0mperm=100000 emp-se). We then randomly sampled a range of sample sizes from the set of Unrelateds, from 5K to 20K in 1K increments. Following Wood et al. (2014), for each sample size, we performed a standard GWAS, and investigated the linear relationship between the square root of the sample size and the inverse of the median standard error of the effect size estimates. We then used this linear relationship to estimate the sample size of a standard GWAS that corresponds to the inverse of the median standard error of the effect sizes estimate in the sibling-based GWAS.\n\nAll standard\u00a0association tests were performed using plink v. 2.0 (with the flag --linear), adjusting for sex, age and first 20 PCs as covariates. For sibling-based association tests we first residualized the phenotypic values on age and sex, and then regressed the sibling differences in residuals on sibling genotypic differences using\u00a0plink\u2019s QFAM procedure as described above.\n\nWe also considered a version of the analysis described above, in which we first residualized the phenotypes on covariates in the pooled sample of all WB individuals, and then ran the pipeline on the residuals without further adjustment for covariates in the GWAS or prediction evaluation. As shown in Appendix 1\u2014figure 16, this\u00a0approach produced results that are qualitatively the same to what we present in Figure 3.\n\n##### Simulated traits\n\nWe wanted to check that given the study design described above, sibling-based and standard PGS perform similarly with respect to trait prediction, under the vanilla model of\u00a0no population stratification, assortative mating or indirect genetic effects (Figure 3). To this end, we simulated traits with heritability $h^{2}=$ 0.1 or 0.5 and either\u00a010K\u00a0or 100K causal SNPs. For each set of parameters, we simulated three replicates giving a total of 12 simulated traits.\n\nWe randomly selected the causal SNPs from a set of 10,879,183 imputed SNPs, considering that most causal variants are plausibly not directly genotyped on SNP arrays. We used a set of SNPs that passed quality control procedures by the Neale lab (http://www.nealelab.is/uk-biobank), namely autosomal SNPs, imputed using the haplotype reference consortium (HRC) panel, which have INFO score > 0.8 and have minor allele frequency > 10\u22124; we further limited the SNP set to ones that were bi-allelic in the\u00a0WB sample. As in Martin et al. (2017), we randomly assigned effect sizes to these causal SNPs as $\\beta~N0,\\frac{h^{2}}{m}$, and zero for non-causal SNPs. We then calculated genetic component of the trait, $g$, for all WB samples under an additive model by summing the allelic counts weighted by their effect sizes using plink (with the flag --score). Allelic counts were determined by converting imputation dosages to genotype calls with no hard calling threshold. We also assigned environmental contributions as $\\epsilon~N0,1-h^{2}$, and then constructed the PGS for each individual,\n\n$$\ng=\\sumi=1m\\beta_{i}X_{i},\n$$\n\nwhere $X_{i}$\u00a0is the number of minor alleles at SNP $i$ carried by the individual, and the trait value for the individual is calculated as\u00a0the sum of genetic and environmental contributions:\n\n$$\ny=\\sqrt{h^{2}}\\frac{g-g-}{\\sigma_{g}}+\\sqrt{1-h^{2}}\\frac{\\epsilon-\\epsilon-}{\\sigma_{\\epsilon}}\n$$\n\nwhere bars represent averages, $\\sigma_{g}$\u00a0is the standard deviation of PGS across individuals and $\\sigma_{\\epsilon}$ is the standard deviation of environmental contributions across individuals. These simulated traits were then analyzed using the same pipelines as the other traits (e.g., adjusting for covariates etc.). Importantly, SNP discovery and effect size estimations in GWAS were performed without knowledge of the causal SNPs.\n\n#### Polygenic score construction and trait prediction\n\nFor all GWAS designs described above, we used p-value thresholding followed by clumping to choose sets of roughly independent SNPs to build PGS. We considered a logarithmically-spaced range of p-values: 10\u22128, 10\u22127, 10\u22126, 10\u22125, 10\u22124, 10\u22123, and 10\u22122 (or a subset if no SNP reached that significance level). We then used plink\u2019s clumping procedure (with the flag --clump) with LD threshold $r^{2}$< 0.1 (using 10,000 randomly selected unrelated WB samples as a reference for LD structure) and physical distance threshold of >1MB. The selected SNPs were then used to calculate PGS for individuals in the prediction sets, by summing the allelic counts weighted by their estimated effect sizes (log of the odds ratios in the case of binary traits) using plink (with the flag --score). In a subset of cases, we also calculated polygenic scores using LDpred\u00a0assuming all loci are causal\u00a0(Vilhj\u00e1lmsson et al., 2015). To evaluate prediction accuracy, we calculated the incremental $R^{2}$:\u00a0we first determined $R^{2}$\u00a0in a regression of the phenotype to the covariates, and then calculated the change in\u00a0$R^{2}$ when including the PGS as a predictor. For binary traits, we calculated the incremental area under the receiver operator curve (AUC).\n\n### Estimating heritability and genetic correlation\n\nWe calculated SNP heritability across sex, age and SES groups for diastolic blood pressure, BMI and years of schooling, respectively\u00a0(as described in the section \u2018GWAS by sample characteristics\u2019)\u00a0as well as genetic correlations across pairs of groups: we first performed GWAS using all unrelated WB individuals in each group.\u00a0We then used the GWAS summary statistics to perform LD\u00a0score regression with LD scores computed from the 1000 Genomes European-ancestry samples\u00a0(Bulik-Sullivan et al., 2015).\n",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "6fda71a7-4527-4680-94fe-596e67432caa",
+      "submission_id": "ae0fdd58-b545-4a7e-824c-0d5dbf79f263",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ruth Loos, The Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.48376.sa1](https://doi.org/10.7554/eLife.48376.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nPolygenic scores are being generated for an increasingly large number of traits, and are beginning to be used outside of a narrow research context. However many questions remain about how and when it is appropriate to use them. One oft-discussed concern is whether polygenic scores are \"portable\" between ancestry groups. But this study demonstrates that polygenic scores are often not even portable within ancestry groups when stratified on the basis of common demographic parameters. This and other results discussed in the paper raise important questions about the use of polygenic scores, and should be read and considered carefully by anyone designing, carrying out or applying the results of large-scale human genetic analyses.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Variable prediction accuracy of polygenic scores within an ancestry group\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Mark McCarthy as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Paul O'Reilly (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe manuscript in its current form would not, even with minor revision, be suitable for the journal. However, we would consider an extensively revised manuscript that addresses the following key concerns of the reviewers.\n\n1) The paper will benefit from a clearer focus; while the authors aim was to simply establish the variable of portability between strata, they went quite further from this with the topics of assortative matting, sex balance, parents' effects, etc. Just achieving their main aim would make this paper very worthy as it points to issues that those already thinking in applying PRS in clinical practice right now need to urgently appreciate.\n\n2) In focusing on the main aim, a deeper exploration of the causes that drive the lack of portability would increases the informativeness of the study. It was pointed out that the difference in portability across strata might be due to differences in power, sample size, heritability, phenotypic variance, phenotype distribution, influence of environment, insights in how these and potentially others affect portability would be helpful. This should also include a discussion on how is it that different strata can generate even higher predictive power than using the same stratum (in base and target) and why the PRS based on the full sample size, in the provided examples, always has a better \"predictive ability\" (highest R2), than PRS based on any of the strata.\n\n3) Analysis of disease outcomes, here e.g. (extreme) obesity and hypertension, will be useful to translate findings to more clinical settings, including calculation of ROC-AUC, a standard easy-to-interpret predictive statistic.\n\nReviewer #1:\n\nIn this study, the authors examine the portability of polygenic scores within a homogeneous, generally healthy population of white British unrelated adults, living across the UK. They show that the PGS performance is influenced by age, sex, socio-economic status and study designs. The reduced accuracy of PGS is not (only) caused by environmental influences, the authors show that also the magnitude of the genetic effects among groups, and indirect effects of assortative mating affect the performance of the PGS.\n\nWhile these findings raise important consideration with reference to the use of PGSs, it would have been interesting if they had gone a little deeper with their analyses; e.g. to also identify the features (distribution, prevalence of disease, effects of environment) of outcomes and covariates that impact the prediction performance the most.\n\nIt seems that for all traits, even though there are differences in R2 for sex-specific, age-specific and SES-specific PGSs, the highest R2 (still low) is achieved when the PGS is generated in the full population. Thus, isn't the conclusion then simply that stratification lowers the PGS performance and that a (blunt) PGS, based on the most comprehensive possible population performs best?\n\nThe authors only considered continuous outcomes for \"prediction\"; it would be informative to also include dichotomous/disease outcomes (related to the continuous risk factors), such as (extreme) obesity, hypertension, etc. That would also allow calculation prediction statistics such as AUC-ROC (sensitivity, specificity, PPV, NPV), which are easier to interpret in the context of clinical relevance.\n\nThe PGS was generated based on LD-based clumping, but it seems only one threshold was used; r2<0.1. From experience, it seems that higher LD threshold results in better performance of the PGS. Thus, it might be worth testing higher LD threshold for better performing PGSs.\n\nReviewer #2:\n\nThe manuscript of Mostafavi discusses a timely and important question: how accurate are polygenic risk scores (PRS) derived from GWAS studies and first validated in large, but single cohorts, when predicting risk in populations different to those used in their derivation. Recently GWAS studies have achieved sample sizes of a million subjects. In addition, the UK biobank has released rich datasets close to half a million people genotyped, extensively phenotyped, and followed so far for about 10 years. These resources have spurred the development of PRS for many traits ranging from complex disease onset, quantitative phenotypes, and even to sociological predictions. Furthermore, a number of direct to consumer companies have started to provide their customers PRS for medical traits. Therefore, the urgent question is how reliable are these scores and how well they port to other populations and people around the world.\n\nMostafavi work starts with the recent publications suggesting that PRS port poorly to populations other than European descent (the population object of most of the data available), in particular to African populations. There have been recent calls to expand GWAS and biobank style cohorts to include people from other ancestries around the world. However, Mostafavi analyzes now show that problems with portability are not just evident in different ancestries, but also to different strata from samples from European decent participants. If this is correct, this raises the urgency to hold off implementations of these scores in to healthcare settings until we truly understand how and when these scores can be applied across groups of people.\n\nThe authors provide a meticulous dissection of the situations when the PRS are not portable within people of the same Ancestry. They perform careful QC of the UK Biobank data, use reasonable methods to adjust the sample strata, perform the GWAS, and construct and test the PRS. The authors state that their main goal was to demonstrate how differences in the composition of the GWAS cohorts affect portability for different traits of interest within the same ancestry, and they achieve this. However, they do a good work exploring the possible factors involved in the reduced portability and leave us with important lessons on how our assumptions about GWAS data may be wrong at times. Their data and simulations add important information on how sex ratios, indirect effects, GxE, assortative mating and other factors confound the data and contribute to poor performance in subsets of the UK biobank subjects. The manuscript is well written and extensive details is provided on the methods and simulations. The main text is accompanied by extensive supplemental results of importance, which are referred at appropriate places in the text.\n\nI have a number of questions that I would like the authors consider and when appropriate clarify in their final manuscript:\n\n1) Throughout the manuscript the term \"portability\" is used and metrics that measure the performance of the PRS are used to judge whether portability is feasible or reduced. While this term has been used in prior literature w.r.t to the reduced ability of a PRS developed in cohorts of European descent people when applied to populations of different ancestry, this term is jargon. In statistics and machine learning the term that describes this poor performance is overfitting and the ability of a model, or in this case a PRS, to preform equally well in other samples, is termed generalization. Would it not be \"overfitting\" the term that more accurately describe the lack of \"portability\"?\n\n2) The author's use R2 to measure the reduced generalization of the PRS to the different cohorts' strata, and they concede that is not clear what would be the best metric to use for this analysis. However, many publications use the AUC as a metric to decide the best model and threshold of SNPs to pick and to describe how the PRS augments other predictor bases on covariates or other factors. It is not intuitive how R2 correlates with AUC, and therefore it would be best if the authors try in at least one analysis to compare R2 to AUC.\n\n3) Recent publications have used the LDPred method that uses as input summary statistics rather than genotypes to develop PRS based on UK Biobank data. Some of these have shown generalization to others cohorst. Can the author's comment whether LDpred features distinguished it from the methods used in their analysis conferring an advantage? PRS derived from LDpred also tend to include many more SNPs to achieve a greater AUC. The author's explore P-value cut-offs (and hence number of SNPS) in some analysis, but it was not clear whether this suggested more SNPs increases overfitting. Do the results from the author's suggest that including more SNPs increases overfitting?\n\nReviewer #3:\n\nThe generalisability of polygenic scores is an important issue given the possibility of them being incorporated in to healthcare soon. This paper makes excellent use of the UK Biobank resource to present two sets of interesting results relating to the predictive power of PRS. However, I'm not sure if the way in which the primary results are framed in relation to portability is quite right.\n\nThe first set of results appear to highlight how GWAS are better powered in certain subgroups of the population (eg. GWAS of DBP are better powered in women, BMI in those in middle age, years of schooling in lower SES groups). Years of schooling is better predicted in SES 4 by GWAS on SES 1 than by SES 4 itself \u2013 this shows hyper-portability, not limited portability as discussed throughout the article. This is also true for BMI and DBP (to a lesser extent DBP). The bivariate LD Score results showing genetic correlations close to 1 seems to support this being principally a power (rather than portability) issue, in which there are different relative contributions of genetics and the environment across the groups, making some better-powered to capture \u2013 largely the same \u2013 genetics. Based on the results (inc. those of Figure 2), I'd have thought that this is most likely due to the environment resulting in convergence and genetics resulting in divergence (at least in the case of BMI and education) \u2013 eg. BMI converges to low values in old age, irrespective of genetic predisposition (relatively), while education levels of those in the top SES are forced to be similar due to the qualification requirements of professional jobs. Thus, the highest phenotypic variance, heritability, and thus PRS predictive power for BMI is from the lower age group and schooling from the lowest SES. How specific this pattern of results is to these particular traits is unclear, and certainly there seems to be a somewhat different cause for the DBP results. However, in general I see these results as being analogous to eg. how GWAS on Alzheimer's is perhaps being best-powered to detect common genetic variants when applied to individuals in their 70s, GWAS on blood pressure best-powered when applied to individuals in their 30s, and lung cancer GWAS being optimised when applied to non-smokers.\n\nWhile the downstream impact of variable GWAS power in different sub-groups on PRS prediction is extremely valuable to see here, I think the implications of these results may be missed unless discussed in the context of differential GWAS power in different sub-groups \u2013 eg. in relation to ancestry, the consensus is that portability will be optimised by expanding GWAS sampling to non-European populations, but the analogy is not true here \u2013 the consequence of these results (at least for these traits) is that portability will be optimised if GWAS sampling is restricted to those sub-groups for which heritability is highest (since, otherwise, the portability in fact seems high).\n\nThe second set of results expand on similar analyses by Kong et al., 2018 and Selzam et al., 2019, showing that the indirect effects of familial genetics, and potentially assortative mating, could contribute to standard PRS predictive power. Any impact on portability is not explicitly demonstrated here, but the point is made that differences in culture (family structures etc) could lead to significant differential portability given the strong influence of indirect effects on standard PRS for some traits. These are great results to see, and will add to the literature on the topic of indirect genetic effects nicely.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Variable prediction accuracy of polygenic scores within an ancestry group\" for further consideration by eLife. Your revised article has been evaluated by Mark McCarthy (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved and reviewers were generally satisfied with the changes made. However, while discussing the revisions some remaining issues were noted that need to be addressed before acceptance, as outlined below:\n\n1) As sample size is an important determinant of the accuracy of the association effect sizes and thus also of the prediction accuracy, the sample sizes of each stratum needs to be clearly stated. Currently, the use of \"unstratified\" and \"all\" is misleading as it would suggest it include the data of strata combined. However, this seems not the case; the \"unstratified\" or \"all\" have now been (\"artificially\") reduced to match the sample size of the strata, which is not intuitive. After all, when data for multiple strata is available, one would be better off combining all data, rather than using the strata. We suggest to clearly report sample sizes, and to choose a more precise terminology to describe the \"unstratified\" or \"all\" group. Including an \"all\" group, that combined strata, as before, would seem informative to illustrate that sample size trumps population-specificity.\n\n2) One of the reviewers noted difference between the original Figure 1 and the new Figure 1, and wondered whether the data changed (slightly) compared to their previous version because the results are slightly different (easiest to see by comparing median/boxes of young/old in BMI plot between original and new versions). It would be worth checking that this is just updated UKB data rather than an error. Furthermore, the R2 for DBP in the \"mixed GWAS\" is just less than half than for the \"total GWAS\" (again comparing original Vs new figures), while for education there's a 10-fold difference (ie. doubling GWAS N has led to 10x greater R2).. This can be the case ('inflection points' and all), but it would be worth checking that there's no error here because it seems a little surprising.\n\nReviewer #1:\n\nThe authors have addressed all concerns and the revised version is more focused and conveys a clearer message.\n\nWhile they now present the \"all\" GWAS for the same sample size as for the stratified GWAS, this has not been presented in a very clear way. In the text, L179 they state they use the same sample size, but it would be good to report what this sample size is. Intuitively, one would not expect that an \"all\" GWAS had the same sample size as a stratified GWAS.\n\nI suggest to clarify this in the legends of the figures, and also more clearly in the text.\n\nReviewer #2:\n\nMotafavi et al. have updated their manuscript based on reviewer's feedback and answered all the questions and comments posed during the review process of the first submission.\n\nIn my opinion their rebuttal and responses are satisfactory and their new and improved manuscript reflect their responses to reviewers. The author's maintained the focus of their manuscript in demonstrating that within ancestry there are a number of possible confounders and study design considerations that impact the prediction accuracy of PGS and put in question its immediate implementation in the clinic as some propose. In addition, and without going overboard expanding hugely the manuscript to explore all possible avenues to explain these effects, their perform a number of analyses that reject the simple idea than environment variance among strata is solely responsible for these effects, but in fact more complex phenomena are at play, including indirect effects, assortative mating, etc. These studies would be the starting point for future studies by the authors and others in the field. I thank the authors to indulge us by adding several interesting analyses suggested by reviewers, such as the inclusion of results by LDpred, a method gaining traction, and showing that as more markers are included in the PGS portability may be more difficult. The comprehensiveness of the supplementary material and clarity of explanations are superb.\n\nAfter reading the new material in its entirety (apologies that took some time for me to go over this again), I find it a significant contribution to the field, and I do not have any other significant comments to offer recommending its acceptance for publication.\n\nReviewer #3:\n\nI am satisfied with the revisions that the authors have made and have no further comments to make on the manuscript. Nice work!\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Variable prediction accuracy of polygenic scores within an ancestry group\" for consideration by eLife. Your article has been discussed by Ruth Loos, the Reviewing Editor, and Mark McCarthy as the Senior Editor.\n\nWhile you have been very responsive to the reviewers comments and concerns, we remain concerned that some of the presentation of findings remains counter-intuitive and could lead to mistaken inference. We would like you to consider one final set of revise your paper to include the following:\n\n1) Include strata-combined analyses; i.e. a \"full\" analysis that combines the stratum-specific sample sizes into one large population. The current study shows that the stratum-specific PRSs perform better than strata-combined PRS, but only if the strata-combined (e.g. men+women) PRS is based on GWAS of the same size as the individual strata (e.g. men, women).\n\nIn the very first version of the paper, it was clear that the strata-combined PRS (based on combined stratum-specific data) performs much better than any of the stratum-specific PRS: it seems that the larger sample size overcomes any advantage of stratum-specific analyses (in these examples at least). In response to the reviewers' comments, the authors \"reduced\" the sample size of the strata-combined analyses to the size of that of the individual strata. However, reducing a strata-combined analyses to the same sample size as the stratum-specific sample sizes is not an intuitive comparison (i.e. a combined analyses indicated that samples are merged into a bigger sample), as stratum-specific implies that these are a subset of the strata-combined. The current version does not address this issue: the labeling of the (sub)groups has been changed, but that has the potential to mislead the reader to infer that stratum-specific analyses will provide the best prediction, whereas a strong predictor is also sample size.\n\n2) Discuss the role of sample size in prediction in the Discussion section;\n\ni.e. put the impact of stratum-specificity in prediction in comparison to the impact of sample size in the (this relates to the comment above). It is important that readers understand that both contribute to prediction, and that possibly sample size is even more important than stratum-specificity. It would be good if the authors can speculate on any circumstances in which the strata-combined analysis would not provide better overall prediction than the stratum-specific subsets.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Variable prediction accuracy of polygenic scores within an ancestry group\" for further consideration by eLife. Your revised article has been evaluated by Mark McCarthy (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before we move to final acceptance. These relate to the discussion about the trade-off between sample size and stratum-specific effects on PRS performance that have been the subject of the recent revision requests. Thank you for adding additional information and figures that address this issue. However, as per the last round of revision requests, we do not feel that this question has been adequately addressed in the Discussion, and that some explicit text on this matter forms an essential part of the paper. As you will have seen from the to and fro over the revisions, this is an issue that has exercised several of the editors and reviewers, and I can\u2019t imagine that it will be any less important to the readers of the paper. Put simply, the question is this: based on the data you have generated, are there any real world situations where researchers would be better off splitting a data set into its component strata (eg by gender) and proceeding on the basis of stratum specific risk scores, rather than using the whole data set? The data in the additional figure, suggest not (at least in the models and situations you tested), which is why this is important to place into context.\n",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ef970000-7eb2-4585-942c-0def7503a204",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C1",
+      "claim": "Fields as diverse as human genetics and sociology are increasingly using polygenic scores based on genome-wide association studies (GWAS) for phenotypic prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Fields as diverse as human genetics and sociology are increasingly using polygenic scores based on genome-wide association studies (GWAS) for phenotypic prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about current practice in multiple fields, drawing on established knowledge about the use of polygenic scores.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "ea369c5f-c44e-485c-adae-26675e7ac3d2",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C2",
+      "claim": "Polygenic scores have limited portability across groups of different genetic ancestries.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent work has shown that polygenic scores have limited portability across groups of different genetic ancestries, restricting the contexts in which they can be used reliably and potentially creating serious inequities in future clinical applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to recent work, indicating it draws from prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "d54f2d2a-8fc6-4983-b840-68b1358db736",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C3",
+      "claim": "Within a single ancestry group (White British in UK Biobank), prediction accuracy of polygenic scores can depend on socio-economic status of individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the UK Biobank data, we demonstrate that even within a single ancestry group (i.e., when there are negligible differences in linkage disequilibrium or in causal alleles frequencies), the prediction accuracy of polygenic scores can depend on characteristics such as the socio-economic status, age or sex of the individuals in which the GWAS and the prediction were conducted, as well as on the GWAS design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically the analyses shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "9318405b-bffa-4b24-8255-1083d70cf1a9",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C4",
+      "claim": "Within a single ancestry group (White British in UK Biobank), prediction accuracy of polygenic scores can depend on age of individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the UK Biobank data, we demonstrate that even within a single ancestry group (i.e., when there are negligible differences in linkage disequilibrium or in causal alleles frequencies), the prediction accuracy of polygenic scores can depend on characteristics such as the socio-economic status, age or sex of the individuals in which the GWAS and the prediction were conducted, as well as on the GWAS design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically the analyses shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "aa4e59f2-1885-46b3-a66b-beba7c100b86",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C5",
+      "claim": "Within a single ancestry group (White British in UK Biobank), prediction accuracy of polygenic scores can depend on sex of individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the UK Biobank data, we demonstrate that even within a single ancestry group (i.e., when there are negligible differences in linkage disequilibrium or in causal alleles frequencies), the prediction accuracy of polygenic scores can depend on characteristics such as the socio-economic status, age or sex of the individuals in which the GWAS and the prediction were conducted, as well as on the GWAS design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically the analyses shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "d6076669-2252-4fde-a8fd-41889ac1ff13",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C6",
+      "claim": "Within a single ancestry group, prediction accuracy of polygenic scores can depend on the GWAS design.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the UK Biobank data, we demonstrate that even within a single ancestry group (i.e., when there are negligible differences in linkage disequilibrium or in causal alleles frequencies), the prediction accuracy of polygenic scores can depend on characteristics such as the socio-economic status, age or sex of the individuals in which the GWAS and the prediction were conducted, as well as on the GWAS design.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, specifically the analyses comparing standard and sibling-based GWAS shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "d966f610-9bbd-4739-bae5-1f3356ac7ba5",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C7",
+      "claim": "The genetic architecture of human complex traits is almost always highly polygenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies (GWAS) have now been conducted for thousands of human complex traits, revealing that the genetic architecture is almost always highly polygenic, that is that the bulk of the heritable variation is due to thousands of genetic variants, each with tiny marginal effects (Boyle et al., 2017; Bulik-Sullivan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Boyle et al., 2017; Bulik-Sullivan et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "b3858886-3011-4ef4-a674-e0015b07a220",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C8",
+      "claim": "The bulk of heritable variation in human complex traits is due to thousands of genetic variants, each with tiny marginal effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies (GWAS) have now been conducted for thousands of human complex traits, revealing that the genetic architecture is almost always highly polygenic, that is that the bulk of the heritable variation is due to thousands of genetic variants, each with tiny marginal effects (Boyle et al., 2017; Bulik-Sullivan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Boyle et al., 2017; Bulik-Sullivan et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "9cb63d0b-066a-4b56-9faa-7c708522875e",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C11",
+      "claim": "Polygenic scores have been shown to help identify individuals at higher risk of breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In human genetics, PGS have been shown to help identify individuals that are more likely to be at risk of diseases such as breast cancer and cardiovascular disease (Khera et al., 2018; Inouye et al., 2018; Mavaddat et al., 2019; Khera et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Khera et al., 2018; Inouye et al., 2018; Mavaddat et al., 2019; Khera et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "dfdfe96c-60e3-4870-af57-0f901a5aba7f",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C12",
+      "claim": "Polygenic scores have been shown to help identify individuals at higher risk of cardiovascular disease.",
+      "claim_type": "EXPLICIT",
+      "source": "In human genetics, PGS have been shown to help identify individuals that are more likely to be at risk of diseases such as breast cancer and cardiovascular disease (Khera et al., 2018; Inouye et al., 2018; Mavaddat et al., 2019; Khera et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Khera et al., 2018; Inouye et al., 2018; Mavaddat et al., 2019; Khera et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "b6b49036-46de-4fbb-bd4b-8704a71f893b",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C13",
+      "claim": "Papers have advocated that polygenic scores be adopted in designing clinical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, a number of papers have advocated that PGS be adopted in designing clinical studies, and by clinicians as additional risk factors to consider in treating patients (Torkamani et al., 2018; Khera et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Torkamani et al., 2018; Khera et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "05499cbb-321f-45e9-9012-60dc3341b349",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C14",
+      "claim": "Papers have advocated that polygenic scores be used by clinicians as additional risk factors in treating patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, a number of papers have advocated that PGS be adopted in designing clinical studies, and by clinicians as additional risk factors to consider in treating patients (Torkamani et al., 2018; Khera et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Torkamani et al., 2018; Khera et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "d37161c2-0bf6-4bac-a1ec-600ae794a23b",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C15",
+      "claim": "Adaptation may often take the form of shifts in the optimum of a polygenic phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In human evolutionary genetics, several lines of evidence suggest that adaptation may often take the form of shifts in the optimum of a polygenic phenotype and hence act jointly on the many variants that influence the phenotype (Pritchard and Di Rienzo, 2010; Berg and Coop, 2014; H\u00f6llinger et al., 2019; Sella and Barton, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Pritchard and Di Rienzo, 2010; Berg and Coop, 2014; H\u00f6llinger et al., 2019; Sella and Barton, 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "1a9a300d-a754-4545-bfdc-57f44c129e2e",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C16",
+      "claim": "Polygenic scores are increasingly used in social sciences to distinguish environmental from genetic sources of variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, in various disciplines of the social sciences, PGS are increasingly used to distinguish environmental from genetic sources of variability (Conley, 2016), as well as to understand how genetic variation among individuals may cause heterogeneous treatment effects when studying how an environmental influence (e.g., a schooling reform) affects an outcome (such as BMI) (Barcellos et al., 2018; Davies et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Conley, 2016; Barcellos et al., 2018; Davies et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "474fbe30-4f64-4c3c-b0eb-ffaea647177d",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C20",
+      "claim": "GWAS does not pinpoint causal variants, but instead implicates a set of possible causal variants in close physical proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, GWAS does not pinpoint causal variants, but instead implicates a set of possible causal variants that lie in close physical proximity in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about how GWAS works, supported by citations (Pritchard and Przeworski, 2001; Bulik-Sullivan et al., 2015).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "abc6f110-f5fa-48bf-81d7-96c6ebb56d1b",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C21",
+      "claim": "The estimated effect of a SNP in GWAS depends on the extent of linkage disequilibrium with causal sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated effect of a given SNP depends on the extent of linkage disequilibrium (LD) with the causal sites (Pritchard and Przeworski, 2001; Bulik-Sullivan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Pritchard and Przeworski, 2001; Bulik-Sullivan et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "a7c9606b-2bc9-4294-b0df-d1500485ca94",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C22",
+      "claim": "LD differences between populations lead to variation in estimated effect sizes and variable phenotypic prediction accuracies.",
+      "claim_type": "EXPLICIT",
+      "source": "LD differences between populations that arose from their distinct demographic and recombination histories will lead to variation in the estimated effect sizes and hence to variable phenotypic prediction accuracies (Rosenberg et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Rosenberg et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "464466a3-b8de-4355-b35f-e11571d67c72",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C23",
+      "claim": "About 80% of individuals included in current GWAS are of European ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, given that most individuals (about 80%) included in current GWAS are of European ancestry (Popejoy and Fullerton, 2016; Martin et al., 2019), PGS are systematically more predictive in European-ancestry individuals than among other people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Popejoy and Fullerton, 2016; Martin et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "201b086e-d8a8-4883-aa33-1eceddf88c43",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C24",
+      "claim": "Polygenic scores are systematically more predictive in European-ancestry individuals than among other people.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, given that most individuals (about 80%) included in current GWAS are of European ancestry (Popejoy and Fullerton, 2016; Martin et al., 2019), PGS are systematically more predictive in European-ancestry individuals than among other people.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Popejoy and Fullerton, 2016; Martin et al., 2019) and logical inference from the fact that most GWAS are conducted in European-ancestry populations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "9125feca-fedc-4752-b1ff-766bc6193807",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C25",
+      "claim": "Educational attainment of an individual depends on the genotypes of their parents due to nurturing effects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the educational attainment of an individual depends not only on their own genotype, but on the genotypes of their parents, due to nurturing effects (Kong et al., 2018), and of their peers, due to social genetic effects (Domingue et al., 2018), and of course on non-genetic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kong et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "71e70dbf-2125-460b-abfc-cb2fe16f5a6d",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C26",
+      "claim": "Educational attainment of an individual depends on the genotypes of their peers due to social genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the educational attainment of an individual depends not only on their own genotype, but on the genotypes of their parents, due to nurturing effects (Kong et al., 2018), and of their peers, due to social genetic effects (Domingue et al., 2018), and of course on non-genetic factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Domingue et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "5ce0363a-c3cd-4a85-958d-5e68abfba810",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C27",
+      "claim": "Height shows strong patterns of assortative mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, traits such as height and educational attainment show strong patterns of assortative mating, which can distort effect size estimates in GWAS (Domingue et al., 2014; Robinson et al., 2017; Ruby et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Domingue et al., 2014; Robinson et al., 2017; Ruby et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "5659e74a-0488-4127-a25a-3ab5ef03ba7f",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C28",
+      "claim": "Educational attainment shows strong patterns of assortative mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, traits such as height and educational attainment show strong patterns of assortative mating, which can distort effect size estimates in GWAS (Domingue et al., 2014; Robinson et al., 2017; Ruby et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Domingue et al., 2014; Robinson et al., 2017; Ruby et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "23853711-3ea6-4b23-b089-b968c76c1b27",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C29",
+      "claim": "Assortative mating can distort effect size estimates in GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, traits such as height and educational attainment show strong patterns of assortative mating, which can distort effect size estimates in GWAS (Domingue et al., 2014; Robinson et al., 2017; Ruby et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Domingue et al., 2014; Robinson et al., 2017; Ruby et al., 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "59946487-cdf2-427a-9456-d6f9ddaaddb1",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C30",
+      "claim": "Genotype-environment interactions are well-documented in other species, notably in experimental settings.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, while we still know little about genotype-environment interactions (GxE) in humans, they are well-documented in other species\u2014notably in experimental settings\u2014and would further reduce the portability of PGS across environments (Gibson, 2008; Tropf et al., 2017; Mills and Rahal, 2019; Lynch and Walsh, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Gibson, 2008; Tropf et al., 2017; Mills and Rahal, 2019; Lynch and Walsh, 1998).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "0d136c01-5360-40bd-8b32-e4f259d1708b",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C31",
+      "claim": "Genotype-environment interactions would reduce the portability of polygenic scores across environments.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, while we still know little about genotype-environment interactions (GxE) in humans, they are well-documented in other species\u2014notably in experimental settings\u2014and would further reduce the portability of PGS across environments (Gibson, 2008; Tropf et al., 2017; Mills and Rahal, 2019; Lynch and Walsh, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference from established knowledge about GxE effects, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "fab12bd3-1701-4e3d-9951-d3e31c16013c",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C32",
+      "claim": "Polygenic scores for some traits may include a component of environmental or cultural confounding with population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "PGS for some traits may also include a component of environmental or cultural confounding with population structure (Sohail et al., 2019; Haworth et al., 2019; Lawson et al., 2020; Kerminen et al., 2018; Berg et al., 2019); this source of confounding can increase or decrease prediction accuracy, depending on the structure in the prediction samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Sohail et al., 2019; Haworth et al., 2019; Lawson et al., 2020; Kerminen et al., 2018; Berg et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "091620c5-56f3-4a65-b667-3902055cd926",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C33",
+      "claim": "The analysis focused on 337,536 unrelated individuals characterized as 'White British' in the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we limited our analysis to the largest subset of individuals in the UKB with a relatively homogeneous ancestry: 337,536 unrelated individuals that were characterized by the UKB, based on self-reported ethnicities as well as genetic analysis, as 'White British' (WB) (Bycroft et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "226b35eb-2efd-4f4d-b9ca-4b42891c193d",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C34",
+      "claim": "The first 20 principal components of genotype data were used to adjust for population structure within White British individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In all analyses, we further adjusted for the first 20 principal components of the genotype data, to account for population structure within this set of individuals (Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "31571cd7-a84d-4487-8db9-3241733db287",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C35",
+      "claim": "Variation in diastolic blood pressure may arise for somewhat distinct reasons in males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "As a first case, we considered the prediction accuracy of a PGS for diastolic blood pressure in prediction sets stratified by sex, motivated by reports that variation in this trait may arise for somewhat distinct reasons in the two sexes (Reckelhoff, 2001; Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Reckelhoff, 2001; Zhou et al., 2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "6873002b-2503-4f7a-a795-a6a47f4aaf7a",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C37",
+      "claim": "For diastolic blood pressure, when GWAS is conducted only in females, prediction accuracy is about 1.35-fold higher for females than for males.",
+      "claim_type": "EXPLICIT",
+      "source": "When the GWAS is conducted only in females, the prediction accuracy is about 1.35-fold higher for females than for males; in turn, when GWAS was done in only males, the prediction accuracy in both sexes is similar, as well as somewhat decreased (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "35c8e495-bbf5-4f9b-97fb-225d90ec3df1",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C40",
+      "claim": "The qualitative trends in prediction accuracy differences across strata do not depend on the p-value threshold choice for SNP inclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show, however, the qualitative trends reported in Figure 1 do not depend on the p-value threshold choice (Appendix 1\u2014figure 3); moreover, the qualitative trends remain when LDpred is used (with a prior probability of 1 on loci being causal; Vilhj\u00e1lmsson et al., 2015) instead of pruning approaches (Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by additional analyses presented in Appendix 1\u2014figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "68809d36-ed48-4bac-9e88-9bb91ba517c0",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C41",
+      "claim": "The qualitative trends in prediction accuracy differences remain when LDpred is used instead of pruning approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show, however, the qualitative trends reported in Figure 1 do not depend on the p-value threshold choice (Appendix 1\u2014figure 3); moreover, the qualitative trends remain when LDpred is used (with a prior probability of 1 on loci being causal; Vilhj\u00e1lmsson et al., 2015) instead of pruning approaches (Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by additional analyses presented in Appendix 1\u2014figure 3, using a different methodological approach (LDpred).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "ae95faec-6e4f-4c69-a6ba-e10b79439022",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C42",
+      "claim": "For the three example traits (diastolic blood pressure, BMI, years of schooling), prediction accuracies track SNP heritability differences across strata.",
+      "claim_type": "EXPLICIT",
+      "source": "We first note that in these three examples, the prediction accuracies track SNP heritability differences across strata (Figure 2A,B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2A, B, and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "f07ae0ab-e85a-43c2-98f6-81ccad921885",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C43",
+      "claim": "For diastolic blood pressure, BMI, and years of schooling, estimated SNP heritabilities increase or remain the same with increasing phenotypic variance.",
+      "claim_type": "EXPLICIT",
+      "source": "What we find instead is that the estimated SNP heritabilities for all three traits increase or remain the same with increasing phenotypic variance (Figure 2D,E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 2D, E, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "f4a02ab8-7c49-4765-b696-64ff59c5b77f",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C44",
+      "claim": "For the three traits examined, variable prediction accuracy is not simply the result of differences in environmental heterogeneity across strata.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, for these traits at least, the variable prediction accuracy is not simply the result of differences in the extent of environmental heterogeneity across strata.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the data showing that heritability does not decrease with increasing phenotypic variance as would be expected if only environmental variance differed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "e50357dd-e6d5-4a8b-9a73-07891281a3be",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C45",
+      "claim": "Genetic correlations across strata for the three traits are close to 1 based on bivariate LD score regression.",
+      "claim_type": "EXPLICIT",
+      "source": "This explanation is not supported by bivariate LD score regression, which indicates that the genetic correlations across strata are close to 1 (Appendix 1\u2014table 2; Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from bivariate LD score regression analysis presented in Appendix 1\u2014table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "9ece26b3-d683-454c-8354-8f7bb97fefff",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C46",
+      "claim": "When SNP effects are re-estimated in prediction sets, the estimated effects of trait-increasing alleles are larger in groups with higher prediction accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet when we re-estimate individual SNP effects in the prediction sets for SNPs ascertained in the original GWAS, the estimated effects of trait-increasing alleles are larger in the groups with higher prediction accuracy (Appendix 1\u2014figure 4; Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Appendix 1\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "782e9dcb-9a7f-40ac-b46c-bb006b816e7a",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C47",
+      "claim": "Using a linear mixed model (LMM) approach produces qualitatively similar results to using principal components for adjustment.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine this possibility, we repeated the analysis in Figure 1 but using a linear mixed model (LMM) approach (including PCs among other covariates; see Materials and methods), and obtained qualitatively similar results (Appendix 1\u2014figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by additional analyses presented in Appendix 1\u2014figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "69f0810f-3b29-44f7-9a68-0bc2b5ac1230",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C48",
+      "claim": "Standard GWAS detects direct effects of genetic variants, but also indirect genetic effects of parents, siblings, or peers, effects of assortative mating, and potentially environmental differences associated with fine-scale population structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Standard GWAS is done in samples of individuals that deliberately exclude close relatives; as implemented, it detects direct effects of the genetic variants, but also any indirect genetic effects of parents, siblings, or peers, effects of assortative mating among parents, and potentially environmental differences associated with fine-scale population structure (Young et al., 2018; Trejo and Benjamin, 2019; Kong et al., 2018; Lee et al., 2018; Berg et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Young et al., 2018; Trejo and Benjamin, 2019; Kong et al., 2018; Lee et al., 2018; Berg et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "adfdae0d-e70d-4c4c-9519-c7ee84377cb4",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C49",
+      "claim": "Many effects detected in standard GWAS are likely to be culturally mediated.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that many of these effects are likely to be culturally mediated (Stulp et al., 2017; Selzam et al., 2019), it seems plausible that they may vary within as well as across groups of individuals with different ancestries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research (Stulp et al., 2017; Selzam et al., 2019) and logical inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "d2223a8b-cf28-442b-a91d-b36a37037010",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C50",
+      "claim": "In sibling-based GWAS, genotype differences between siblings are tested for association with phenotypic differences, conditioning on parental genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter, genotype differences between sibs, a result of random Mendelian segregation in the parents, are tested for association with the phenotypic differences between them. Because the tests depend on phenotypic differences between siblings who, of course, have the same parents, these tests are conditioned on the parental genotypes and hence exclude many of the indirect effects signals that may be picked up in standard GWAS (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach of sibling-based GWAS, drawing on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "078df533-d50d-427b-a4ae-d0ad1e14e9c9",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C51",
+      "claim": "Sibling-based GWAS excludes many indirect effects signals that may be picked up in standard GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the tests depend on phenotypic differences between siblings who, of course, have the same parents, these tests are conditioned on the parental genotypes and hence exclude many of the indirect effects signals that may be picked up in standard GWAS (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about how sibling-based GWAS works, with reference to additional explanation in Appendix 1.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "fe96f487-e2b9-472e-a4eb-b591cd70a9cb",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C52",
+      "claim": "The UK Biobank contains approximately 22K sibling pairs, approximately 19K of whom are labeled as 'White British'.",
+      "claim_type": "EXPLICIT",
+      "source": "A challenge in this comparison is that the UKB contains only ~22K sibling pairs, ~19K of whom are labeled as 'White British' (WB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data available in the UK Biobank for sibling-based analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "ebf6c4aa-3960-47f7-8db5-d75da5502a11",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C53",
+      "claim": "For the majority of traits examined, prediction accuracies of standard and sibling-based polygenic scores were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "For the majority of the traits, such as diastolic blood pressure, BMI, and hair color, the prediction accuracies of standard and sib-based PGS were similar (Figure 3B), as expected under standard GWAS assumptions and as observed for traits simulated under these assumptions (Appendix 1\u2014figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3B and simulations in Appendix 1\u2014figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "8e23e3b3-4423-4550-aed8-77515f555e1d",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C54",
+      "claim": "For height and a range of social and behavioral traits, the prediction accuracy of sibling-based polygenic scores was substantially lower than that of standard polygenic scores.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for height and for a range of social and behavioral traits, such as years of schooling, pack years of smoking and household income, the prediction accuracy of the sib-based PGS was substantially lower than that of the standard PGS (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "1d792b3b-e109-4681-8c96-f74379102e66",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C55",
+      "claim": "For height, standard and sibling-based polygenic scores perform similarly when based on the most significantly associated SNPs, but standard PGS progressively outperforms sibling-based PGS when more SNPs are included.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for height, standard and sib-based PGS perform similarly when based on the most significantly associated SNPs, but standard PGS progressively outperforms sib-based PGS when more SNPs are included (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "9d6241ed-a957-4547-ba97-ec92186670a8",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C56",
+      "claim": "For years of schooling, household income and other social and behavioral traits, the difference in prediction accuracy between sibling-based and standard polygenic scores changes markedly with p-value threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the difference in prediction accuracy between sib-based and standard PGS changes markedly for years of schooling, household income and other social and behavioral traits (Figure 3F and Appendix 1\u2014figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3F and Appendix 1\u2014figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "f5ac18fa-9558-439e-b864-2dd9fd9505fa",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C57",
+      "claim": "For hair color and diastolic blood pressure, there is little to no difference in prediction accuracy between standard and sibling-based estimation methods, regardless of the number of SNPs included.",
+      "claim_type": "EXPLICIT",
+      "source": "For hair color and diastolic blood pressure, there is little to no difference in prediction accuracy between the two estimation methods, regardless of the number of SNPs included in the score (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data presented in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "20533178-3fa9-43f0-a4f6-b88e4d27b632",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C58",
+      "claim": "The growing gap in performance between standard and sibling-based PGS with increasing p-value threshold likely reflects a combination of increasing noise-to-signal ratio and changes in the relative importance of direct effects versus other factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The growing gap in performance with increasing p-value threshold likely reflects a combination of an increasing noise-to-signal ratio for the effect estimates in sib-based versus standard GWAS (see Appendix 1) and changes in the relative importance of direct effects versus other factors such as indirect parental effects and assortative mating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed data patterns and theoretical considerations discussed in Appendix 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "2c0da4ee-51b6-4a63-9db4-f161c1fd4e01",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C59",
+      "claim": "Differences between prediction accuracies of standard and sibling-based polygenic scores demonstrate that standard GWAS estimates often include a substantial contribution of factors other than direct effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the differences between the prediction accuracies of standard and sib-based PGS seen for a number of traits (Figure 3B), notably social and behavioral ones, demonstrate that standard GWAS estimates often include a substantial contribution of factors other than direct effects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the data presented in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "8134e542-49a5-459b-8eb2-63026fdb6a0a",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C60",
+      "claim": "When power to detect direct effects is comparable, standard GWAS would lead to higher prediction accuracy than sibling-GWAS for traits where standard GWAS includes substantial contributions from factors other than direct effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, even if the power to detect direct effects were comparable, standard GWAS would lead to higher prediction accuracy than sib-GWAS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference from the observation that standard GWAS captures additional effects beyond direct genetic effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "433a9599-8a8a-42cd-8eaf-9041adaf895a",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C61",
+      "claim": "The increased prediction accuracy from standard GWAS likely comes at a cost of not always porting well across groups, even of the same ancestry.",
+      "claim_type": "EXPLICIT",
+      "source": "However, that gain stems from the inclusion of factors such as indirect effects and assortative mating that are likely to be modulated by SES, environment and culture (e.g., Selzam et al., 2019; Stulp et al., 2017). Thus, the increased prediction accuracy likely comes at a cost of not always porting well across groups, even of the same ancestry, in ways that may be difficult to anticipate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that factors contributing to higher prediction accuracy in standard GWAS are likely to vary across groups, supported by citations (Selzam et al., 2019; Stulp et al., 2017).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "98e159da-658f-47dd-b1d3-c79c64ea4a9f",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C62",
+      "claim": "Individuals in UK Biobank have higher SES than the rest of the British population.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, individuals in UK Biobank have higher SES than the rest of the British population (Fry et al., 2017) and are presumably self-selected for a certain level of interest in biomedical research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Fry et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "707b1e54-074e-4a7c-9b30-bce4f0b836f2",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C63",
+      "claim": "UK Biobank participants are self-selected for a certain level of interest in biomedical research.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, individuals in UK Biobank have higher SES than the rest of the British population (Fry et al., 2017) and are presumably self-selected for a certain level of interest in biomedical research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the nature of opt-in biobank participation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "c16c0396-9f19-4285-a57d-5732195c000a",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C64",
+      "claim": "The UK Biobank is a large study of about half a million United Kingdom residents, recruited between 2006 to 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "The UK Biobank (UKB) is a large study of about half a million United Kingdom residents, recruited between years 2006 to 2010 (Bycroft et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the UK Biobank study, supported by citation to Bycroft et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "34090553-1cbb-48ad-bf9f-7ef01731490b",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C65",
+      "claim": "The UK Biobank collected hundreds of phenotypes through measurements and questionnaires at assessment centers and by accessing medical records.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to genetic data, hundreds of phenotypes were collected through measurements and questionnaires at assessment centers, and by accessing medical records of the participants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the UK Biobank data collection, representing established knowledge about the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "cdb43e23-467e-4f04-8608-de044c5d0e44",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C66",
+      "claim": "The analysis focused on 408,434 participants who passed quality control measures provided by UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we focused on 408,434 participants who passed quality control (QC) measures provided by UKB; specifically, for whom the reported sex (QC parameter 'Submitted.Gender') matched their inferred sex from genotype data (QC parameter 'Inferred.Gender'); who were not identified as outliers based on heterozygosity and missing rate (QC parameter 'het.missing.outliers'==0); and did not have an excessive number of relatives in the database (QC parameter 'excess.relatives'==0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data filtering and quality control procedures used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "a4a6da55-16ed-4738-9728-58e4ede1e5b3",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C67",
+      "claim": "Diastolic blood pressure levels were adjusted for blood pressure lowering medication by shifting values upward by 10 mmHg for individuals taking medication.",
+      "claim_type": "EXPLICIT",
+      "source": "We adjusted the diastolic blood pressure levels for blood pressure lowering medication following Evangelou et al. (2018) by shifting the values upward by 10 mmHg for individuals taking medication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological adjustment used in the study, following a procedure from Evangelou et al. (2018).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "57dd4e2d-5f11-4ad5-9ee0-28081cefe22d",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C68",
+      "claim": "UK Biobank participants were genotyped on either UK Biobank Axiom or UK BiLEVE arrays at a total of approximately 850K markers.",
+      "claim_type": "EXPLICIT",
+      "source": "UKB participants were genotyped on either of two similar genotyping arrays, UK Biobank Axiom and UK BiLEVE arrays, at a total of ~850K markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the genotyping platform used in the UK Biobank study.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "05d7b815-2ffe-4447-8ee3-cffb8529a20c",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C69",
+      "claim": "After filtering, 616,323 SNPs were used in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on autosomal bi-allelic SNPs shared between both arrays, and used plink v. 1.90b5 (Chang et al., 2015) to filter SNPs with calling rate >0.95, minor allele frequency >10\u22123, and Hardy-Weinberg equilibrium test p-val >10\u221210 among the WB samples, resulting in 616,323 SNPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the SNP filtering procedure and resulting dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "c6ae6c87-889a-4000-9ad1-ff1f165b812d",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "claim_id": "C70",
+      "claim": "19,329 sibling pairs including 35,634 individuals across 17,328 families were identified among White British samples.",
+      "claim_type": "EXPLICIT",
+      "source": "By this approach, we identified 19,329 sibling pairs including 35,634 individuals across 17,328 families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sibling pairs identified in the UK Biobank data for sibling-based analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "110822ec-3a13-48ad-9af5-30a39ead1798",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on the current use and limitations of polygenic scores (PGS) across multiple fields including human genetics, evolutionary genetics, and social sciences. These claims establish that PGS are increasingly used for phenotypic prediction but have known limitations in portability across genetic ancestries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C16 are well-supported by citations to prior research and represent established knowledge in the field. These background claims appropriately contextualize the study and are not contested by the authors' new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "e1d6933c-4f32-4c85-99f9-08e753483701",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Within a single ancestry group (White British in UK Biobank), polygenic score prediction accuracy varies significantly by sex, age, and socioeconomic status. For diastolic blood pressure, prediction accuracy is 1.35-fold higher in females than males when GWAS is conducted only in females. These patterns are robust to different methodological choices including p-value thresholds and use of LDpred versus pruning approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C37 are directly supported by empirical data in Figure 1, showing substantial differences in prediction accuracy across demographic strata. Claims C40-C41 demonstrate robustness through sensitivity analyses (Appendix 1\u2014figure 3), strengthening the main findings. The sample sizes are adequate (>70K for GWAS, 10-20K for prediction sets) and statistical comparisons are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "6d9b562b-11b0-434a-a9b1-21a5d45e36f2",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For diastolic blood pressure, BMI, and years of schooling, prediction accuracies track SNP heritability differences across strata, but the variable prediction accuracy is not simply due to differences in environmental heterogeneity. SNP heritabilities increase or remain constant with increasing phenotypic variance, contrary to what would be expected if only environmental variance differed. Genetic correlations across strata are close to 1, yet effect sizes of trait-increasing alleles are systematically larger in groups with higher prediction accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are supported by data in Figure 2 and Appendix analyses. The finding that heritability does not decrease with phenotypic variance (C43-C44) effectively rules out environmental variance as the sole explanation. High genetic correlations (C45) combined with differential effect sizes (C46) suggest a systematic amplification pattern rather than distinct genetic architectures, though the mechanistic interpretation remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prediction accuracy of polygenic scores depends on GWAS design. Comparing standard GWAS to sibling-based GWAS (which conditions on parental genotypes and excludes indirect effects), the authors find that for many social/behavioral traits and height, standard PGS substantially outperforms sibling-based PGS, while for other traits (diastolic blood pressure, BMI, hair color) performance is similar. This demonstrates that standard GWAS estimates include substantial contributions from factors beyond direct genetic effects, such as indirect effects and assortative mating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C48-C61 are supported by empirical comparisons in Figure 3 using a carefully designed study that matches standard errors between approaches. The finding that standard and sibling-based PGS differ substantially for certain traits (C54-C56) while remaining similar for others (C53, C57) is compelling evidence for non-direct genetic effects. The sample size matching approach (C52: ~19K sibling pairs) is appropriate, though power limitations are acknowledged. The interpretation that standard GWAS captures indirect effects and assortative mating (C59) is well-reasoned given prior literature, though alternative explanations cannot be fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "e082c38f-776e-4431-b126-1bc5f09d12c4",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using a linear mixed model (LMM) approach instead of principal component adjustment produces qualitatively similar results to those shown in Figure 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by sensitivity analyses in Appendix 1\u2014figure 5. This robustness check addresses concerns about residual population stratification and strengthens confidence that the main findings are not artifacts of the adjustment method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about factors affecting PGS portability, including linkage disequilibrium patterns, the indirect nature of GWAS associations, ancestry composition of GWAS samples, indirect genetic effects from relatives, assortative mating, genotype-environment interactions, and potential environmental/cultural confounding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C32 are appropriately supported by citations to prior research and represent accurate summaries of established knowledge in the field. These claims provide important context for interpreting the novel findings but are not themselves new contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "011d5831-48c1-4655-8c00-ba95f1537206",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study uses UK Biobank data, focusing on 337,536 unrelated White British individuals, with quality control procedures, phenotype definitions, and genotyping details as described. The analysis adjusts for the first 20 principal components of genotype data and includes specific phenotype adjustments (e.g., medication adjustment for blood pressure).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 and C64-C70 accurately describe the data and methods used in the study. The sample sizes are substantial, quality control procedures are appropriate and well-documented, and the methodological choices (PC adjustment, phenotype definitions) follow established practices. These methodological claims are well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "7cf537e6-dddc-4c7b-af33-7ab65d3f6f66",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior research suggests that variation in diastolic blood pressure may arise for somewhat distinct reasons in males and females.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by citations to Reckelhoff, 2001 and Zhou et al., 2017. This provides appropriate motivation for examining sex-stratified analyses but is not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    },
+    {
+      "id": "a2f00eb2-a81d-41f3-a87e-0d1707a141e8",
+      "content_id": "9293fa4c-e206-4ded-a0d0-be281acfca41",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "UK Biobank participants have higher socioeconomic status than the general British population and are self-selected for interest in biomedical research, which may limit generalizability of findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by citation to Fry et al., 2017, while C63 is a reasonable inference about opt-in biobank participation. These claims appropriately acknowledge limitations in the representativeness of the study sample.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:53:59.136057Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ef970000-7eb2-4585-942c-0def7503a204",
+      "result_id": "110822ec-3a13-48ad-9af5-30a39ead1798"
+    },
+    {
+      "claim_id": "ea369c5f-c44e-485c-adae-26675e7ac3d2",
+      "result_id": "110822ec-3a13-48ad-9af5-30a39ead1798"
+    },
+    {
+      "claim_id": "d966f610-9bbd-4739-bae5-1f3356ac7ba5",
+      "result_id": "110822ec-3a13-48ad-9af5-30a39ead1798"
+    },
+    {
+      "claim_id": "b3858886-3011-4ef4-a674-e0015b07a220",
+      "result_id": "110822ec-3a13-48ad-9af5-30a39ead1798"
+    },
+    {
+      "claim_id": "9cb63d0b-066a-4b56-9faa-7c708522875e",
+      "result_id": "110822ec-3a13-48ad-9af5-30a39ead1798"
+    },
+    {
+      "claim_id": "dfdfe96c-60e3-4870-af57-0f901a5aba7f",
+      "result_id": "110822ec-3a13-48ad-9af5-30a39ead1798"
+    },
+    {
+      "claim_id": "b6b49036-46de-4fbb-bd4b-8704a71f893b",
+      "result_id": "110822ec-3a13-48ad-9af5-30a39ead1798"
+    },
+    {
+      "claim_id": "05499cbb-321f-45e9-9012-60dc3341b349",
+      "result_id": "110822ec-3a13-48ad-9af5-30a39ead1798"
+    },
+    {
+      "claim_id": "d37161c2-0bf6-4bac-a1ec-600ae794a23b",
+      "result_id": "110822ec-3a13-48ad-9af5-30a39ead1798"
+    },
+    {
+      "claim_id": "1a9a300d-a754-4545-bfdc-57f44c129e2e",
+      "result_id": "110822ec-3a13-48ad-9af5-30a39ead1798"
+    },
+    {
+      "claim_id": "d54f2d2a-8fc6-4983-b840-68b1358db736",
+      "result_id": "e1d6933c-4f32-4c85-99f9-08e753483701"
+    },
+    {
+      "claim_id": "9318405b-bffa-4b24-8255-1083d70cf1a9",
+      "result_id": "e1d6933c-4f32-4c85-99f9-08e753483701"
+    },
+    {
+      "claim_id": "aa4e59f2-1885-46b3-a66b-beba7c100b86",
+      "result_id": "e1d6933c-4f32-4c85-99f9-08e753483701"
+    },
+    {
+      "claim_id": "6873002b-2503-4f7a-a795-a6a47f4aaf7a",
+      "result_id": "e1d6933c-4f32-4c85-99f9-08e753483701"
+    },
+    {
+      "claim_id": "35c8e495-bbf5-4f9b-97fb-225d90ec3df1",
+      "result_id": "e1d6933c-4f32-4c85-99f9-08e753483701"
+    },
+    {
+      "claim_id": "68809d36-ed48-4bac-9e88-9bb91ba517c0",
+      "result_id": "e1d6933c-4f32-4c85-99f9-08e753483701"
+    },
+    {
+      "claim_id": "ae95faec-6e4f-4c69-a6ba-e10b79439022",
+      "result_id": "6d9b562b-11b0-434a-a9b1-21a5d45e36f2"
+    },
+    {
+      "claim_id": "f07ae0ab-e85a-43c2-98f6-81ccad921885",
+      "result_id": "6d9b562b-11b0-434a-a9b1-21a5d45e36f2"
+    },
+    {
+      "claim_id": "f4a02ab8-7c49-4765-b696-64ff59c5b77f",
+      "result_id": "6d9b562b-11b0-434a-a9b1-21a5d45e36f2"
+    },
+    {
+      "claim_id": "e50357dd-e6d5-4a8b-9a73-07891281a3be",
+      "result_id": "6d9b562b-11b0-434a-a9b1-21a5d45e36f2"
+    },
+    {
+      "claim_id": "9ece26b3-d683-454c-8354-8f7bb97fefff",
+      "result_id": "6d9b562b-11b0-434a-a9b1-21a5d45e36f2"
+    },
+    {
+      "claim_id": "d6076669-2252-4fde-a8fd-41889ac1ff13",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "69f0810f-3b29-44f7-9a68-0bc2b5ac1230",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "adfdae0d-e70d-4c4c-9519-c7ee84377cb4",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "d2223a8b-cf28-442b-a91d-b36a37037010",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "078df533-d50d-427b-a4ae-d0ad1e14e9c9",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "fe96f487-e2b9-472e-a4eb-b591cd70a9cb",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "ebf6c4aa-3960-47f7-8db5-d75da5502a11",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "8e23e3b3-4423-4550-aed8-77515f555e1d",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "1d792b3b-e109-4681-8c96-f74379102e66",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "9d6241ed-a957-4547-ba97-ec92186670a8",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "f5ac18fa-9558-439e-b864-2dd9fd9505fa",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "20533178-3fa9-43f0-a4f6-b88e4d27b632",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "2c0da4ee-51b6-4a63-9db4-f161c1fd4e01",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "8134e542-49a5-459b-8eb2-63026fdb6a0a",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "433a9599-8a8a-42cd-8eaf-9041adaf895a",
+      "result_id": "69df8eb1-7d0a-4d84-b5ce-afa97a97cfc5"
+    },
+    {
+      "claim_id": "782e9dcb-9a7f-40ac-b46c-bb006b816e7a",
+      "result_id": "e082c38f-776e-4431-b126-1bc5f09d12c4"
+    },
+    {
+      "claim_id": "474fbe30-4f64-4c3c-b0eb-ffaea647177d",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "abc6f110-f5fa-48bf-81d7-96c6ebb56d1b",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "a7c9606b-2bc9-4294-b0df-d1500485ca94",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "464466a3-b8de-4355-b35f-e11571d67c72",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "201b086e-d8a8-4883-aa33-1eceddf88c43",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "9125feca-fedc-4752-b1ff-766bc6193807",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "71e70dbf-2125-460b-abfc-cb2fe16f5a6d",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "5ce0363a-c3cd-4a85-958d-5e68abfba810",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "5659e74a-0488-4127-a25a-3ab5ef03ba7f",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "23853711-3ea6-4b23-b089-b968c76c1b27",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "59946487-cdf2-427a-9456-d6f9ddaaddb1",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "0d136c01-5360-40bd-8b32-e4f259d1708b",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "fab12bd3-1701-4e3d-9951-d3e31c16013c",
+      "result_id": "24e52d35-fdfe-4bcf-91ad-94a249b3d875"
+    },
+    {
+      "claim_id": "091620c5-56f3-4a65-b667-3902055cd926",
+      "result_id": "011d5831-48c1-4655-8c00-ba95f1537206"
+    },
+    {
+      "claim_id": "226b35eb-2efd-4f4d-b9ca-4b42891c193d",
+      "result_id": "011d5831-48c1-4655-8c00-ba95f1537206"
+    },
+    {
+      "claim_id": "c16c0396-9f19-4285-a57d-5732195c000a",
+      "result_id": "011d5831-48c1-4655-8c00-ba95f1537206"
+    },
+    {
+      "claim_id": "34090553-1cbb-48ad-bf9f-7ef01731490b",
+      "result_id": "011d5831-48c1-4655-8c00-ba95f1537206"
+    },
+    {
+      "claim_id": "cdb43e23-467e-4f04-8608-de044c5d0e44",
+      "result_id": "011d5831-48c1-4655-8c00-ba95f1537206"
+    },
+    {
+      "claim_id": "a4a6da55-16ed-4738-9728-58e4ede1e5b3",
+      "result_id": "011d5831-48c1-4655-8c00-ba95f1537206"
+    },
+    {
+      "claim_id": "57dd4e2d-5f11-4ad5-9ee0-28081cefe22d",
+      "result_id": "011d5831-48c1-4655-8c00-ba95f1537206"
+    },
+    {
+      "claim_id": "05d7b815-2ffe-4447-8ee3-cffb8529a20c",
+      "result_id": "011d5831-48c1-4655-8c00-ba95f1537206"
+    },
+    {
+      "claim_id": "c6ae6c87-889a-4000-9ad1-ff1f165b812d",
+      "result_id": "011d5831-48c1-4655-8c00-ba95f1537206"
+    },
+    {
+      "claim_id": "31571cd7-a84d-4487-8db9-3241733db287",
+      "result_id": "7cf537e6-dddc-4c7b-af33-7ab65d3f6f66"
+    },
+    {
+      "claim_id": "98e159da-658f-47dd-b1d3-c79c64ea4a9f",
+      "result_id": "a2f00eb2-a81d-41f3-a87e-0d1707a141e8"
+    },
+    {
+      "claim_id": "707b1e54-074e-4a7c-9b30-bce4f0b836f2",
+      "result_id": "a2f00eb2-a81d-41f3-a87e-0d1707a141e8"
+    }
+  ],
+  "comparisons": []
+}

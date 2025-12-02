@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Hippocampal lamination is disrupted in GlobalLis and EmxLis mice, with pyramidal cell layers fracturing into heterotopic bands, but this disruption is not observed in NkxLis mice. This indicates that Pafah1b1 expression in pyramidal cells, but not MGE-derived interneurons, is essential for proper hippocampal pyramidal cell layer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are well-supported by Figure 1A showing DAPI-stained hippocampal sections across genotypes. The comparison between EmxLis (pyramidal cell-specific mutation) and NkxLis (interneuron-specific mutation) provides clear evidence for the cell-autonomous role of Pafah1b1 in pyramidal cells for proper lamination. The inference in C34 is logically sound based on the differential phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "PV+INT radial migration is disrupted in Pafah1b1 mutants, with reduced density in deep layers (s.o./s.p.) and increased density in superficial layers (s.r./s.l.m.) in GlobalLis, NkxLis, and EmxLis mice. This demonstrates that proper PV+INT migration requires both cell-intrinsic Pafah1b1-dependent mechanisms and non-cell-autonomous cues from pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are supported by quantitative immunohistochemistry data in Figure 1B-D. The finding that both NkxLis (interneuron-specific) and EmxLis (pyramidal cell-specific) mutations disrupt PV+INT positioning provides strong evidence for both cell-autonomous and non-autonomous mechanisms. Statistical analyses are provided (Figure 1C), and the conclusion in C41 is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "TdTomato labeling accurately identifies PV+INTs, with 92-93% of TdT+ cells being PV-immunopositive and 97% of PV+ cells being TdT-labeled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by validation data in Figure 2\u2014figure supplement 1. The high overlap percentages (>90%) demonstrate reliable targeting of PV+INTs using the TdTomato reporter, which is essential for the validity of subsequent electrophysiological recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "WT hippocampal CA1 PV+INTs consist of two physiological subtypes: 80% fast-spiking (FS) cells with stereotypical properties (low input resistance, high rheobase, high firing frequency, narrow action potentials, minimal adaptation) and 20% non-fast-spiking (NFS) cells with distinct properties (higher input resistance, lower rheobase, lower firing frequency, broader action potentials).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C44-C60 are well-supported by electrophysiological recordings and unbiased cluster analysis (Figure 3A-E, Table 1). The PCA analysis with K-means clustering provides objective classification of cell types. The properties of FS and NFS cells are quantified with confidence intervals, and the 80/20 distribution is clearly demonstrated. This represents a novel characterization of PV+INT heterogeneity in WT hippocampus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "WT hippocampal CA1 PV+INTs consist of four morphological subtypes based on axonal arborization: basket cells (BCs), axo-axonic cells (AACs), bistratified cells (BiCs), and a newly identified radiatum-targeting cell (RTC) subtype. These morphological subtypes show layer-specific distributions and correlate with physiological subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C61-C69 are supported by morphological reconstructions in Figure 2A and quantification in Figure 3F-G. The identification of the RTC subtype is novel and well-documented. The correlation between morphology and physiology (e.g., all NFS cells in s.o./s.p. are BCs) is clearly demonstrated. However, the sample sizes for some morphological subtypes appear limited, which could be noted as a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Cell-autonomous Pafah1b1 mutations in GlobalLis mice result in the emergence of a novel 'intermediate spiking' (IS) PV+INT subtype with properties between FS and NFS cells. IS cells comprise 47% of GlobalLis PV+INTs, while FS cells are reduced to 44% (compared to 80% in WT), with IS cells enriched in superficial layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C70-C82 are strongly supported by cluster analysis (Figure 4A-F) and statistical testing (Fisher exact test, p<0.0001). The emergence of the IS subtype is clearly demonstrated by PCA showing three distinct clusters in GlobalLis versus two in WT. The properties of IS cells are well-characterized and fall between FS and NFS cells as claimed. This is a major novel finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Morphological development of GlobalLis PV+INTs is radically disrupted, with cells showing atypical morphologies and altered axonal growth direction (more vertical than horizontal). However, overall axonal and dendritic growth is not inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 are supported by morphological reconstructions (Figure 2B) and polar histogram analysis (Figure 2C). The qualitative observation of disrupted morphology is clear, and the quantitative analysis of axonal orientation provides objective support. The conclusion that overall growth is not inhibited is supported by Sholl analysis (Figure 4\u2014figure supplement 3) showing similar total arbor complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "In EmxLis mutants (pyramidal cell-specific Pafah1b1 mutation), PV+INTs develop into canonical FS and NFS morphophysiological subtypes despite disorganized pyramidal cell layers, indicating that non-autonomous effects do not disrupt PV+INT intrinsic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by cluster analysis (Figure 3\u2014figure supplement 1A-C) and morphological reconstructions (Figure 3\u2014figure supplement 1D). The finding that EmxLis PV+INTs cluster identically to WT when analyzed together provides strong evidence that pyramidal cell disorganization alone does not affect PV+INT development. This is a critical control for interpreting the GlobalLis and NkxLis phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "NkxLis mutants (interneuron-specific Pafah1b1 mutation) show similar disruption to GlobalLis, with emergence of IS cells comprising ~50% of PV+INTs and disrupted morphology, despite normal pyramidal cell lamination. This demonstrates cell-autonomous effects of Pafah1b1 in PV+INT development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by cluster analysis (Figure 4\u2014figure supplement 1A-C) and morphological data (Figure 4\u2014figure supplement 1D). The similarity between NkxLis and GlobalLis phenotypes, despite normal pyramidal cell layers in NkxLis, provides strong evidence for cell-autonomous mechanisms. The combined analysis of NkxLis and GlobalLis datasets (Figure 4\u2014figure supplement 1B) strengthens the clustering accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "FS and IS cells have larger and more complex axonal and dendritic arbors than NFS cells across all genotypes, suggesting that NFS cells may have lower synaptic connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by Sholl analysis (Figure 4\u2014figure supplement 3). The quantitative differences in arbor complexity are clear and statistically significant. However, C101's inference about synaptic connectivity is speculative and appropriately qualified with 'may imply.' Direct connectivity measurements would be needed to confirm this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Action potential half-width is shorter in all Pafah1b1 mutant FS cells compared to WT, but all other intrinsic properties are preserved across genotypes for each physiological subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by data in Table 1 and Figure 4\u2014figure supplement 4. The consistent reduction in AP half-width across all mutant genotypes is notable and statistically significant. The preservation of other properties across genotypes for each cell type strengthens the validity of the physiological classification scheme.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Both cell-autonomous and non-autonomous Pafah1b1 mutations can disrupt PV+INT somatic positioning, but only cell-autonomous mutations within interneurons perturb morphophysiological identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 represent a key conclusion synthesizing data from all three mutant lines. The evidence is strong: EmxLis shows disrupted positioning but normal morphophysiology, while NkxLis shows both disrupted positioning and morphophysiology. This dissociation clearly demonstrates the cell-autonomous requirement for morphophysiological development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "FS cells in both WT and GlobalLis receive higher frequency excitatory input with faster kinetics than NFS and IS cells, suggesting FS cells remain the primary PV+INT targets for excitatory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by sEPSC recordings (Figure 5\u2014figure supplement 1). The differences in sEPSC frequency and kinetics between cell types are clear and statistically significant. The inference in C108 is reasonable but should be interpreted cautiously as it's based on spontaneous activity rather than evoked connectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "PV+INT to pyramidal cell connectivity and unitary synaptic properties vary by cell type. FS cells show higher connection probability and more reliable transmission than NFS cells. GlobalLis FS cells maintain normal connectivity and transmission properties, while IS cells resemble NFS cells with higher failure probability and longer latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C118 are supported by paired recording data (Figure 5C-D, Table 2). The sample sizes are reasonable for paired recordings (challenging experiments), and the differences between cell types are clear. The finding that GlobalLis FS cells maintain normal synaptic properties is important for understanding the functional consequences of the mutation. However, the lack of GlobalLis NFS-PC connections (0/3) limits conclusions about this cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "All PV-PC pairs show synaptic depression during high-frequency stimulation, with FS cells showing less depression than NFS cells. GlobalLis FS-PC connections maintain normal short-term dynamics, while IS-PC synapses resemble NFS cells with greater depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C126 are supported by train stimulation data (Figure 5B, E). The short-term plasticity profiles are clearly different between cell types and are consistent with their unitary properties. The conclusion that IS-PC synapses resemble NFS cells is well-supported and functionally important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C133",
+      "C134",
+      "C135",
+      "C141"
+    ],
+    "result": "IS and NFS cells are highly susceptible to depolarization block with current injection, with 100% of NFS and 92% of IS cells entering block at lower current levels than FS cells (70-77% of which resist block even at 1500 pA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C133-C135, C141 are strongly supported by current injection experiments (Figure 6A-B). The differences between cell types are dramatic and statistically significant. This is a critical finding for understanding the functional consequences of the expanded IS/NFS population in mutants. The experimental design is appropriate and the data are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "In elevated extracellular K+ (8.5 mM), a model of epileptic conditions, IS and NFS cells show increased susceptibility to depolarization block (25-33%) compared to FS cells (0-14%), while pyramidal cells maintain normal firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 are supported by elevated K+ experiments (Figure 6C-D). The differential susceptibility to depolarization block under epileptic-like conditions is functionally important. However, the sample sizes are relatively small (especially for NFS cells: 1/3 in both WT and GlobalLis), which limits statistical power. The finding that pyramidal cells are unaffected is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C131",
+      "C160",
+      "C161"
+    ],
+    "result": "The expansion of IS/NFS cells in Pafah1b1 mutants may compromise inhibitory control and promote seizures due to their lower firing rates, less reliable inhibition, and susceptibility to depolarization block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C131, C160-C161 represent speculative interpretations linking the cellular findings to seizure phenotypes. While the logic is sound and the cellular data are strong, direct evidence linking these cellular changes to seizures is not provided. The claims are appropriately qualified with 'potentially' and 'may,' but actual seizure recordings or threshold measurements in these specific mutants would be needed to confirm the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Single-nucleus RNA-seq analysis shows that the UMAP space and cell recovery numbers for PV+INT subtypes (BC, AAC, BiC) align well between WT and GlobalLis, indicating that Pafah1b1 haploinsufficiency does not cause gross changes in transcriptomic identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 are supported by snRNA-seq data (Figure 7Bi-ii). The alignment of UMAP spaces and similar cell recovery numbers provide evidence that the fundamental transcriptomic identities are preserved. However, this finding seems somewhat at odds with the dramatic morphophysiological changes observed. The authors acknowledge this in the Discussion, suggesting that subtle transcriptomic changes or developmental timing effects may be responsible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "At FDR < 0.01, 376 genes are differentially expressed in GlobalLis PV+INTs (126 common, 250 unique across subtypes), primarily regulating synaptogenesis, neurotransmission, guidance cues, cell adhesion, and extracellular matrix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C148 are supported by differential expression analysis (Figure 7C-D, Supplementary files 1-2). The stringent FDR threshold and pathway analysis provide confidence in the findings. The biological pathways identified are relevant to the observed morphophysiological phenotypes. However, the lack of validation of key DEGs by independent methods (qPCR, protein levels) is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Multiple cell adhesion molecules, guidance cue pathway members, and genes in biochemical complexes with Pafah1b1 are misregulated in GlobalLis PV+INTs, suggesting convergent mechanisms regulating PV+INT morphology in a cell-autonomous manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154 are supported by gene expression data (Figure 7E-F, Supplementary file 3) and literature citations. The identification of specific gene families and their known functions in interneuron development strengthens the mechanistic interpretation. The finding that some DEGs are known Pafah1b1 interactors is particularly compelling. However, functional validation of these genes' roles in the observed phenotypes would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Multiple regulators of PV+INT excitability are misregulated in GlobalLis, including potassium channels, the neurotransmitter release regulator Syt2, and the chloride transporter NKCC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 are supported by gene expression data (Figure 7G, Supplementary file 1). The identification of misregulated ion channels and transporters provides potential molecular mechanisms for the altered excitability properties. However, the link between transcript changes and functional properties is indirect, and protein-level validation would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "Glutamate receptors and auxiliary subunits (Grik1-4, Neto1, Neto2) show altered expression in GlobalLis PV+INTs, which may affect excitatory recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159 are supported by gene expression data (Figure 7H) and literature citations. The changes in glutamate receptor expression could explain the differential sEPSC properties observed between cell types. However, the functional link between these expression changes and the observed physiological properties is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C162"
+    ],
+    "result": "The origin of epilepsy in lissencephaly is not disrupted neuronal migration per se, but rather disruptions to intrinsic developmental programs resulting in emergence of less efficient PV+INT cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C162 represents a major conceptual conclusion challenging the prevailing paradigm. While the EmxLis and NkxLis experiments provide strong evidence that migration disruption alone is insufficient to cause the morphophysiological changes, the direct link to epilepsy is not established in this study. The claim is appropriately framed as a proposal, but would require seizure phenotyping of the different mutant lines to be fully supported.",
+    "result_type": "MAJOR"
+  }
+]

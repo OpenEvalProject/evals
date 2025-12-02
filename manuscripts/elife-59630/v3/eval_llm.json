@@ -1,0 +1,370 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors demonstrate that batch effects are present in their CyTOF dataset of 24 samples (12 CLL and HC samples replicated across two batches). MDS and hierarchical clustering analyses show that samples cluster by both biological condition (CLL vs HC) and by batch, indicating that protein expression is affected by batch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 provide converging evidence from multiple visualization approaches (MDS plot, hierarchical clustering) showing clear batch effects in the dataset. The experimental design with replicated samples across batches (C36) and the consistent observations across different analytical methods (C39-C42) provide strong support for the presence of batch effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Batch effects affect different proteins and samples differently, with the magnitude of batch-to-batch variation in BCL-2 expression from a single sample being comparable to biological variation across six different CLL patients within a single batch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 demonstrate through protein distribution analysis that batch effects are both protein-specific and sample-specific, with quantitative comparison showing batch effects are of similar magnitude to biological differences. This is supported by visual evidence in Figure 2 and supplementary figures. Claim C47 is an inference about the implications, which follows logically from the magnitude of effects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "FlowSOM clustering identified 20 cell clusters using 19 lineage proteins, and t-SNE and linear discriminant analysis reveal that batch effects impact cell subpopulation identification, with clusters showing different distributions across batches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 describe the clustering methodology and results showing batch effects at the cluster level. The use of FlowSOM is well-justified by citation (C48-C49), the clustering parameters are described (C50-C51), and multiple visualization approaches (t-SNE, LDA) consistently show batch-driven separation (C52-C55), supported by Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Within-cluster analysis shows that batch-to-batch variation in BCL-2 median expression from a single CLL sample exceeds variation across patients, and cluster proportions differ significantly between batches, necessitating batch correction for patient heterogeneity assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide cluster-level evidence of batch effects affecting both protein expression within clusters and cluster proportions. The observations are supported by Figure 3 supplements and Figure 3F. The inference that correction is needed (C57) follows logically from the magnitude of effects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CytofRUV adapts the RUV-III method to CyTOF data by using pseudo-replicates defined as cells from clusters shared across batches, with the method assuming at least one cluster is shared across batches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C59-C62 describe the methodological basis and key assumptions of CytofRUV. The adaptation from RUV-III is clearly stated with appropriate citations (C27-C28), the concept of pseudo-replicates is well-defined (C29, C59, C61), and the experimental implementation is described (C62). The assumption about shared clusters (C60) is explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "After CytofRUV normalization, protein distributions become more similar across batches, BCL-2 median expression variation is reduced, and batch effects decrease in t-SNE and LDA visualizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 describe the effects of CytofRUV normalization with visual evidence from multiple figure supplements. The observations are consistent across different analytical approaches (distribution similarity, median expression, dimensionality reduction), providing converging evidence for the effectiveness of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Using Earth Movers Distance (EMD) to quantify batch differences in protein expression distributions, CytofRUV achieved the lowest EMD for all CLL samples and 7 out of 9 HC samples compared to raw data, BatchAdjust, and CytoNorm, demonstrating optimal batch effect reduction for 11 out of 12 samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 present a quantitative comparison using EMD metric with clear results favoring CytofRUV. The metric is appropriately cited (C66), specific numerical comparisons are provided (C67-C68), and the overall summary (C69) is supported by the data in Figure 5A and D. The comparison with CytoNorm vs BatchAdjust (C70) provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Using Hellinger distance to assess cluster proportion consistency across batches, CytofRUV showed the lowest distances for all CLL samples and performed better overall than BatchAdjust and comparably to CytoNorm, which also performed well while BatchAdjust showed distances similar to raw data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 present cluster proportion analysis using Hellinger distance. The metric is defined (C71), specific results are provided for different sample types (C72-C73), and comparative assessments are made (C74-C76). The results are supported by Figure 5B and E, showing CytofRUV and CytoNorm both perform well in this metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Silhouette score analysis shows that CytofRUV with k=5 achieves the best balance of removing batch effects (low sbatch) while preserving or enhancing biological signal (high sbiology) for CLL samples and 8 out of 9 HC samples compared to other methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 describe the Silhouette score metric and its interpretation (C77-C79) and present results showing CytofRUV's superior performance (C80-C81). The metric appropriately assesses both batch removal and biological signal preservation. Results are supported by Figure 5C and F, though some HC samples show higher sbatch for all methods (noted in text).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "On the Schuyler et al. 2019 dataset (12 batches, single donor with stimulated/unstimulated conditions), CytofRUV showed lower EMD and improved Silhouette scores compared to BatchAdjust and CytoNorm, while CytoNorm showed ability to correct cluster proportions in stimulated samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 describe validation on an independent dataset with appropriate citation (C82). The results show consistent performance of CytofRUV (C84-C85) while acknowledging CytoNorm's strengths in specific aspects (C83). Results are supported by Figure 6 supplement 1, providing external validation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "On the Van Gassen et al. 2019 dataset (10 batches, pregnancy immunoprofiling study), CytofRUV with k=5 effectively eliminated batch differences in protein expression and achieved the lowest EMD compared to CytoNorm and BatchAdjust in the second normalization approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 describe validation on a second independent dataset with appropriate citation (C86). The results demonstrate effectiveness of CytofRUV (C87-C88) supported by Figure 6B, D and supplements. The text indicates two different normalization strategies were tested, with the second showing better results, providing nuanced evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C103",
+      "C104"
+    ],
+    "result": "Overall, CytofRUV outperforms BatchAdjust and CytoNorm in removing unwanted variation from protein expression, making distributions more uniform across batches, and enhancing detection of biologically important changes, with batch differences reduced within clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C103-C104 provide summary statements about CytofRUV's performance. These are supported by the detailed quantitative comparisons using multiple metrics (EMD, Hellinger distance, Silhouette scores) across three datasets presented in other claim groups. The claims represent valid synthesis of the presented evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "CytoNorm shows ability to correct cluster proportions and performs well in some analyses, while BatchAdjust has the least ability to remove batch effects across the three datasets, possibly due to its single batch adjustment approach versus the cluster-level approaches of CytoNorm and CytofRUV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 provide comparative assessment of the other methods. CytoNorm's performance is documented in specific analyses (C105-C106), BatchAdjust's limitations are supported by consistent results across metrics (C107), and a mechanistic explanation is offered (C108-C109). The explanation (C108) is appropriately qualified as speculative but logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C91"
+    ],
+    "result": "CytofRUV is implemented as an R package available on GitHub, with an R-Shiny application providing four diagnostic plots (Median Protein Expression, Protein Expression Distributions, Clustering Results, Cluster Proportions) to visualize batch effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C91 describe the software implementation and tools. The availability is clearly stated (C30), the diagnostic plots are described (C31, C91), and Figure 4 demonstrates the R-Shiny interface. This represents appropriate software dissemination for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C123",
+      "C124"
+    ],
+    "result": "CytofRUV has limitations including the requirement for at least one shared cell subpopulation across batches (making it inapplicable when no subpopulations are shared) and the need for replicated reference samples in each batch, with potentially multiple reference sample types needed for comprehensive batch correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 and C123-C124 explicitly state method limitations. These are honest assessments of the method's assumptions and requirements. The limitation about shared clusters (C119-C120) follows from the pseudo-replicate approach, and the requirement for reference samples (C123-C124) is a practical consideration supported by observations in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "CytofRUV is adaptable and flexible, allowing users to select different normalizations (one or several reference samples, specific or all clusters, varying k dimension), with identification of biological subpopulations prior to normalization being an important step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 describe the flexibility of the method. The various options are demonstrated throughout the results section where different values of k are tested and different reference samples are used. The importance of clustering (C102) is evident from the method's reliance on pseudo-replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Batch correction may lead to removal or identification of new clusters, as some clusters could be batch artifacts. The authors observed a B cell cluster appearing in both batches after normalization and recommend examining new clusters post-normalization and exploring different clustering resolutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are appropriately qualified as speculative possibilities. Claim C113 provides a specific example from the data (B cell cluster in Figure 3A vs 3C). Claims C114-C115 provide practical recommendations with appropriate citation (C115). This represents thoughtful consideration of the implications of batch correction on clustering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Differential analysis shows \u0394\u0394 > 0 for most proteins in CLL samples after CytofRUV normalization, indicating reduced batch differences, and the number of clusters with significant abundance differences across batches decreased from 13 to 7 out of 20 clusters after normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 present additional quantitative evidence of batch effect reduction using differential analysis approaches. The \u0394\u0394 metric (C117) is supported by Figure 3 supplement 4, and the cluster abundance analysis (C118) uses the diffcyt method appropriately. These provide complementary evidence to the main metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "CytofRUV can handle larger studies with no memory limitations reached on datasets containing hundreds of samples across several batches with up to 43 million cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C122 states scalability based on testing, but no data or details about these larger datasets are provided in the manuscript. While the statement may be accurate, it cannot be verified from the presented work. The manuscript focuses on datasets with up to 24 samples and 12 batches, so claims about much larger scales lack supporting evidence in this publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Future work will explore using different replicated reference samples present in only some batches, with a 'bridging' set of reference samples potentially enabling effective normalization of large studies without requiring the same reference samples throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C126 describe planned future work and are appropriately speculative. The bridging approach is supported by analogy to metabolomics (C126 with citation), but no data is presented to demonstrate feasibility. These represent reasonable directions for future development but are not evaluated in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C35"
+    ],
+    "result": "The manuscript provides background on CyTOF technology, its capabilities and challenges, existing batch correction methods (control bead normalization, BatchAdjust, CytoNorm), and the RUV family of methods, establishing the context and motivation for developing CytofRUV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 and C35 provide background information appropriately supported by citations to the relevant literature. These establish the technological context (C1-C2, C6), the problem being addressed (C3-C4, C9, C14, C35), existing solutions and their limitations (C10-C22), and the methodological foundation (C23-C26). This background appropriately motivates the development of CytofRUV.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The manuscript describes the experimental methods including sample sources, ethical approvals, PBMC isolation, CyTOF staining protocol, mass cytometry acquisition parameters, and data processing procedures, with data deposited in a public repository.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C142 describe the experimental methods in detail. These are standard methodological descriptions that are appropriately detailed for reproducibility. The ethical approvals are documented (C130-C131), the protocols are described step-by-step (C132-C140), and data availability is stated (C142). These represent appropriate methodological reporting.",
+    "result_type": "MINOR"
+  }
+]

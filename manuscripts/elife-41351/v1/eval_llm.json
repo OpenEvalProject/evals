@@ -1,0 +1,392 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Proliferating non-transformed mouse fibroblasts increase OXPHOS by nearly two-fold and mitochondrial coupling efficiency by ~30% compared to quiescent cells. These increases are quantified through oxygen consumption measurements normalized by both cell number and protein content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C15-C18 provide converging evidence from multiple normalization methods (per cell and per protein) showing consistent increases in OXPHOS and coupling efficiency. The coupling efficiency calculation (C19) is methodologically sound as it is ratio-based and independent of normalization. The data are supported by mitochondrial stress tests shown in Figures 1B-C and Figure 1\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Proliferating fibroblasts exhibit the Warburg effect with increased glucose consumption and lactate excretion. Proliferating cells excrete 47% of glucose as lactate compared to 32% in quiescent cells, while the absolute amount of glucose with a non-lactate fate increased over two-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are well-supported by metabolic flux measurements shown in Figure 1A and source data. The quantitative values are explicitly stated and the measurements are standard for assessing glycolytic activity. This establishes the Warburg phenotype in the model system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Glutamine is the major carbon source fueling the TCA cycle and mitochondrial respiration in proliferating fibroblasts. Proliferating cells increase glutamine consumption two-fold while citrate labeling from glucose and fatty acids decreases, but citrate labeling from glutamine significantly increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 are supported by isotope tracing experiments (Figure 1D, F-H) showing differential labeling patterns from U-13C glucose, palmitate, and glutamine. The conclusion that glutamine is the major energy source (C26) is well-justified by the increased labeling from glutamine despite decreased labeling from other carbon sources. The metabolic flux data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Increased cystine consumption in proliferating cells may drive glutamate export and promote glutamine anaplerosis through the SLC7A11 antiporter, despite unchanged SLC7A11 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C28-C29 are supported by data (Figure 1\u2014figure supplement 2), the mechanistic link proposed in C27 and C30 relies on a cited study (Muir et al., 2017) without direct experimental validation in this system. The authors use 'may' language indicating this is speculative. No direct measurements of glutamate export or intracellular glutamate/\u03b1KG pools are provided to support the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Proliferating fibroblasts do not support elevated OXPHOS by increasing mitochondrial mass or respiratory enzyme expression. The mtDNA/gDNA ratio and ETC subunit protein levels remain unchanged between quiescent and proliferating states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by RT-PCR data (Figure 2A) and immunoblot analysis (Figure 2B). The conclusion (C33) logically follows from the negative results. This is an important finding that rules out mitochondrial biogenesis as the mechanism for increased OXPHOS during the quiescent-to-proliferating transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C3"
+    ],
+    "result": "Mitochondrial fusion supports increased OXPHOS during proliferation. Proliferating cells have elongated mitochondria with increased fusion protein levels (Mfn1, Mfn2, OPA1), and knocking down Mfn2 suppresses mitochondrial elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C3 are well-supported by electron microscopy (Figure 2C-D), fluorescence imaging (Figure 2\u2014figure supplement 1), immunoblot analysis (Figure 2\u2014figure supplement 2), and quantitative mitochondrial length measurements. The causal link between Mfn2 and mitochondrial morphology is demonstrated by knockdown experiments. C34 appropriately cites prior literature establishing the relationship between fusion and respiration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Mfn2 knockdown significantly decreases respiration rate, ATP production, and mitochondrial coupling efficiency in proliferating cells, with minimal effect in quiescent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by mitochondrial stress test data (Figure 2E-F, Figure 2\u2014figure supplement 4). The differential effect between proliferating and quiescent cells is logical given that quiescent cells already have fragmented mitochondria. Statistical significance is reported for the proliferating cell measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Serum starvation induces mitochondrial fragmentation in 3T3-L1 and HCT116 cells, and mitochondrial elongation occurs as early as 3 hours after serum reintroduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by mitochondrial length measurements in serum-starved cells and time-course experiments (Figure 2\u2014figure supplement 5). This extends the findings beyond contact inhibition to another model of quiescence and demonstrates the rapid dynamics of mitochondrial morphology changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C4"
+    ],
+    "result": "Mfn2 knockdown causes a ~30% decrease in proliferation rate compared to scrambled siRNA controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C4 are supported by proliferation assay data (Figure 3A). The quantitative decrease is explicitly stated and statistically significant. This establishes a functional link between mitochondrial fusion and cell proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C5"
+    ],
+    "result": "Re-expressing siRNA-resistant Mfn2 rescues the knockdown phenotype, and overexpressing Mfn2 in wildtype cells increases both mitochondrial respiration and proliferation, suggesting that promoting mitochondrial fusion is sufficient to drive proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 and C5 are supported by rescue experiments (Figure 3\u2014figure supplement 1) and overexpression experiments (Figure 3\u2014figure supplement 2). The rescue experiment is a critical control demonstrating specificity of the Mfn2 knockdown effect. The overexpression data support sufficiency, though the conclusion (C47) should be interpreted cautiously as overexpression may have pleiotropic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mfn2 knockdown alters nutrient utilization, decreasing glucose uptake by 15%, lactate excretion by 10%, glutamine consumption by 40%, and cystine consumption by 40%. Isotope tracing confirms decreased labeling of TCA cycle intermediates from glutamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by nutrient uptake analysis (Figure 3B) and isotope tracing experiments (Figure 3\u2014figure supplement 3). The changes are consistent with decreased OXPHOS and reduced glutamine anaplerosis. The quantitative values are explicitly stated and the isotope tracing data provide mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C6",
+      "C106"
+    ],
+    "result": "Intracellular ATP levels increase in Mfn2 knockdowns despite decreased OXPHOS, suggesting that mitochondrial fusion is not required to support energetic demands during proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C6, and C106 are supported by ATP measurements (Figure 3C). This counterintuitive finding is important as it rules out ATP depletion as the mechanism for reduced proliferation. The conclusion (C106) is well-justified by the data, though the mechanism for ATP increase is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C7",
+      "C107",
+      "C108"
+    ],
+    "result": "Mfn2 knockdown causes cells to switch from excreting aspartate to consuming it, without changing intracellular aspartate pools. Aspartate supplementation partially rescues proliferation, suggesting that increased respiration is needed to support aspartate synthesis rather than ATP production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C7, C107-C108 are supported by aspartate measurements (Figure 3D-E) and rescue experiments (Figure 3F). The switch from excretion to consumption is striking and well-documented. The partial rescue by aspartate supplementation supports the proposed mechanism. C53 appropriately cites prior work (Birsoy et al., 2015; Sullivan et al., 2015) establishing the role of OXPHOS in aspartate synthesis. The conclusion (C107-C108) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "H-Ras transfected fibroblasts assume a transformed morphology, lose contact inhibition, and do not undergo oncogene-induced senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by growth curves (Figure 4B), microscopy (Figure 4C), and senescence staining (Figure 4\u2014figure supplement 1). These data establish the transformed phenotype of the Ras cells and confirm they are proliferating rather than senescent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C8",
+      "C100"
+    ],
+    "result": "Ras-transformed cells have ~73% increase in basal respiration and ~72% increase in ATP production compared to empty vector controls, but no change in mitochondrial coupling efficiency or mitochondrial length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C8, and C100 are supported by mitochondrial stress test data (Figure 4D-E) and mitochondrial length measurements (Figure 4F). The finding that coupling efficiency is unchanged (C61) is consistent with no further mitochondrial elongation (C62), supporting the interpretation that a different mechanism (mitochondrial biogenesis) drives increased OXPHOS in transformed cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C102"
+    ],
+    "result": "Ras transformation induces mitochondrial biogenesis, evidenced by >20-fold increase in PGC1\u03b1 mRNA, increased mtDNA/gDNA ratio, and increased ETC subunit expression. This mitochondrial biogenesis drives increased OXPHOS in Ras cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C102 are supported by RT-PCR (Figure 4G), mtDNA/gDNA measurements (Figure 4H), and immunoblot analysis (Figure 4I). The conclusion that mitochondrial biogenesis drives increased OXPHOS (C66) is well-justified by the converging evidence. C64 appropriately cites literature establishing PGC1\u03b1 as a master regulator of mitochondrial biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Ras transformation does not change protein levels of ERK/AMPK or KSR1 pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by immunoblot data (Figure 4\u2014figure supplement 2). This negative result is important for ruling out specific signaling pathways as mediators of mitochondrial biogenesis in this system, though the authors note these pathways have been implicated in other cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C10",
+      "C105"
+    ],
+    "result": "Mfn2 knockdown significantly attenuates proliferation and OXPHOS in both empty vector and Ras-transformed fibroblasts, as well as in various cancer cell lines (H460, HeLa, BT549, MCF7), demonstrating that mitochondrial fusion is important for proliferation independent of oncogenic transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C10, and C105 are supported by proliferation assays (Figure 4J-K) and OCR measurements (Figure 4\u2014figure supplement 3). The demonstration that Mfn2 knockdown affects both non-transformed and transformed cells, as well as multiple cancer cell lines, strengthens the generality of the findings. The conclusion (C70, C105) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Ras cells consume more glucose, glutamine, and fatty acids than empty vector controls but do not proliferate faster. Ras cells have higher intracellular ATP levels, consistent with energy not being limiting during proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by nutrient uptake data (Figure 4\u2014figure supplement 4A), growth curves (Figure 4B), and ATP measurements (Figure 4\u2014figure supplement 4B). The observation that increased metabolism does not correlate with increased proliferation rate is important for interpreting the role of Ras-induced metabolic changes. C73 appropriately cites prior work (Locasale and Cantley, 2011).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C110",
+      "C111"
+    ],
+    "result": "Elevated OXPHOS in Ras cells leads to increased ROS and DNA damage (phospho-H2A.X). ROS can be buffered by NAC or further induced by BrdU. This suggests Ras activation promotes genomic instability rather than supporting anabolic demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80, C110-C111 are supported by ROS measurements (Figure 4\u2014figure supplement 4C) and DNA damage marker analysis (Figure 4\u2014figure supplement 4D). The ability to modulate ROS with NAC and BrdU supports the interpretation. C79 appropriately cites literature on H2A.X phosphorylation as a DNA damage marker. The conclusion about genomic instability (C111) is reasonable but somewhat speculative as it extrapolates beyond the immediate data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C116",
+      "C117",
+      "C118",
+      "C11"
+    ],
+    "result": "The Warburg effect does not necessitate decreased OXPHOS. In proliferating fibroblasts, both glycolysis and OXPHOS are elevated. The quiescent-to-proliferating transition is supported by mitochondrial fusion without increased mitochondrial mass, and cell proliferation requires increased OXPHOS supported by mitochondrial fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C101, C116-C118, and C11 represent the main conclusions of the study. These are well-supported by the comprehensive data showing simultaneous increases in glycolysis (Figure 1A) and OXPHOS (Figure 1B-C), the role of mitochondrial fusion (Figures 2-3), and the lack of mitochondrial biogenesis in non-transformed proliferating cells (Figure 2A-B). The conclusion challenges conventional assumptions about the Warburg effect and is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Background claims establishing the Warburg effect, its prevalence in proliferating cells, historical context, and the rationale for using 3T3-L1 fibroblasts as a model system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C98 are background/contextual claims that appropriately cite prior literature. C97-C98 establish the 3T3-L1 model system with appropriate citations. These claims provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Similar increases in mitochondrial biogenesis and OXPHOS upon Ras activation have been reported in other cell lines, and various proliferation-regulating pathways (c-Myc, mTOR) activate mitochondrial biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 appropriately cite prior literature to contextualize the findings. These claims support the generality of the observations but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Increasing OXPHOS beyond the level in non-transformed proliferating fibroblasts with H-Ras does not increase proliferation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by comparing OXPHOS data (Figure 4D-E) with proliferation rates (Figure 4B). This observation is important for establishing that there is an optimal level of OXPHOS for proliferation and that excessive OXPHOS may be detrimental.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Background claims about ATP yield from glycolysis versus OXPHOS and hypotheses about why proliferating cells might prefer glycolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are background claims that cite established biochemical knowledge (C112-C113) and prior hypotheses (C114-C115). These provide context for the study's findings but are not novel results.",
+    "result_type": "MINOR"
+  }
+]

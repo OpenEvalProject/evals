@@ -1,0 +1,2144 @@
+{
+  "submission": {
+    "id": "52a93500-2d19-44cd-ab93-c1d7890343bd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:36:43.045902Z",
+    "updated_at": "2025-12-02T10:36:43.045902Z"
+  },
+  "content": [
+    {
+      "id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "submission_id": "52a93500-2d19-44cd-ab93-c1d7890343bd",
+      "content_type": "manuscript",
+      "content_text": "# Wind prevents cliff-breeding birds from accessing nests through loss of flight control\n\n## Authors\n\n- Emily Shepard<sup>1</sup> ([ORCID: 0000-0001-7325-6398](https://orcid.org/0000-0001-7325-6398)) \u2020\n- Emma-Louise Cole<sup>1</sup>\n- Andrew Neate<sup>3</sup>\n- Emmanouil Lempidakis<sup>1</sup>\n- Andrew Ross<sup>4</sup> ([ORCID: 0000-0002-8631-3512](https://orcid.org/0000-0002-8631-3512))\n\n### Affiliations\n\n1. Department of Biosciences Swansea University Swansea United Kingdom\n2. Max Planck Institute for Animal Behaviour Radolfzell Germany\n3. Department of Mathematics Swansea University Swansea United Kingdom\n4. School of Earth and Environment University of Leeds Leeds United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nFor fast-flying birds, the ability to respond to wind during landing is critical, as errors can lead to injury or even death. Nonetheless, landing ability, and its ecological significance, remain unstudied. We show that for auks, 60% of attempts to land at their cliff nests fail in a strong breeze (80% in near-gale winds). This is most likely because wind interferes with the ability to maintain flight control in the last phase of landing. Their extreme flight costs mean that the energetic penalty for multiple landing attempts is high. We propose that exposure, and ability to respond to, such conditions will influence the suitability of breeding habitat. In support of this (i) auk colonies appear to be orientated away from prevailing winds and (ii) landing success within colonies is higher on crowded ledges with more airspace for manoeuvring. More generally, the interplay between wind and flight capacities could impact breeding distributions across species and scales.\n\n## Introduction\n\nThe ability to fly profoundly affects the ecology of volant species: increasing the speed of travel (Schmidt-Nielsen, 1972), enabling animals to cross substantial barriers (Hawkes et al., 2011; Schmaljohann et al., 2007) and giving enhanced access to space across scales (Kranstauber et al., 2015). Indeed, flight underpins the most extensive and rapid annual migrations on the planet (Kranstauber et al., 2015; Egevang et al., 2010). In fact, the freedom that flight affords is such that the question of whether or not animals are able to access a given location within their range, or whether this ability is affected by environmental conditions, is almost never considered. Nonetheless, airflow characteristics can promote, impede or even prevent flight (Shaffer et al., 2006; Ortega-Jimenez et al., 2014; Shepard et al., 2016b; Crall et al., 2017), and this should have implications for an animal\u2019s ability to access key locations, when it comes to both moving through them and landing within them.\n\nIn aircraft, it is well recognised that landing is a period of high workload and relatively high risk. For instance, a Boeing review of worldwide commercial jet accidents between 2007 and 2016 showed that 48% of fatal accidents occurred during the final approach and landing (Boeing, 2017). Even for vehicles that move as fast as commercial jets, disturbed wind fields near runways can have a critical impact on flight control and safety, as highlighted by a European Aviation Safety Agency report (van Es, 2012). Yet in the biological literature, the process of landing has been examined mainly in relation to the sensory processes that guide it (Baird et al., 2013) and the biomechanics of force reduction on impact (Bonser and Rayner, 1996). How either of these may be affected by fluctuations in the wind field that are ubiquitous in the real-world flight environment, and the ecological consequences of this, remain unknown. Indeed, in the only study that seems to have addressed this to date, Chang et al report that bumblebees (Bombus impatiens) landing on flowers shift from a multi-directional landing approach to a unidirectional approach upon the introduction of wind and, furthermore, that bees are unable to perform low-impact landings in windy conditions (Chang et al., 2016).\n\nThe forces of impact, and associated landing risks, will increase with animal mass and flight speed. Landing should therefore become more of a constraint for large animals, which also have lower available power (a factor that may be relevant if it is necessary to manoeuvre above the landing spot). Some of the largest birds, namely swans, overcome this by landing on water, where the impact can be reduced by extending the collision time and where momentum is transferred via the deformation of the water surface. For birds landing on solid substrates, regulation of their groundspeed is crucial during landing, as this will determine their impact with the landing surface. Airspeed, which is linked to lift production, must also be sufficient to remain airborne and maintain flight control. Both components must be modulated with respect to the wind speed. This is likely to be challenging in particular environmental conditions. For instance, it is reported that albatrosses have difficulty landing in low winds and that this can result in crash landings, broken bones and even death (Cone, 1964).\n\nWe quantify how landing ability varies in relation to wind speed at arguably the single most important location of all: the nest. Here, birds must be able to make repeated and safe landings, whatever the weather. We take colonially nesting seabirds as our study system. Cliff-nesting auks, including our study species, the common guillemot (Uria aalge) and razorbill (Alca torda), have among the highest wing loading recorded in birds (Elliott et al., 2013). This adaption for reduced diving costs (Elliott et al., 2013) means they have characteristically high flight speeds and low manoeuvrability. We therefore predict that the success of landing at the breeding cliffs will decline with the wind speed and/or turbulence experienced. We quantify the latter by combining direct observations of landing success and wind speed with outputs from computational fluid dynamics models, which are powerful tools with which to both visualise and estimate airflow characteristics around inaccessible places such as cliffs. We then develop a probabilistic model to assess how the ability to access nest sites, and the energetic costs of doing so, vary in relation to general wind conditions (i.e. a given mean wind speed and variance). Overall, this should provide new insight into the ways in which wind affects birds and other flying organisms, which is becoming increasingly important in light of the changing global wind conditions (Weimerskirch et al., 2012; Young et al., 2011).\n\n## Materials and methods\n\n### Study site and landing observations\n\nData were collected on Skomer Island, Pembrokeshire, UK (51.73611\u00b0N 5.29628\u00b0W). Here guillemots and razorbills form large, sympatric breeding colonies. Colony location and density were defined as follows: a digital elevation model (DEM, 0.5 m resolution, Lle Geo-Portal for Wales) was used to identify coastal cliffs, taken as regions with slopes\u00a0>\u00a020\u00b0. Cliffs were divided into breeding and non-breeding areas by digitising the 2015 Skomer Island breeding bird survey (Stubbings et al., 2015). Colonies were then defined as areas where birds were breeding, separated by distinct, unoccupied regions. The density of each colony was estimated by allocating the bird count to the associated cliff area, where the minimum height of the cliff was taken as 10 m ASL (to account for wave and tidal height [Harris et al., 1997]) extending to 15 m from the top of each cliff (using measurements made for the three largest colonies, E Shepard unpubl. data). We identified the densest colonies using a breakpoint in the density distribution. The mean orientation of each of these colonies was calculated, and a Rayleigh test was used to assess whether they were uniformly distributed. Analyses were conducted in ArcMap 10.5.1.\n\nThe landing attempts of guillemots and razorbills were observed over 26 days (28.4.2016\u20134.5.2017) at five breeding colonies, selected for being readily accessible and situated at different locations around the Island (SI, Table 1). Birds were assumed to be making landing attempts when they approached a cliff, usually ascending to it from below, steadily reducing the distance to the cliff until their ventral surface was orthogonally aligned with the cliff face. A landing was scored as successful if the bird touched down and stopped flying. An aborted attempt would begin in the same way, but birds would falter at the last moment and slip or fly away from the cliff. It was only possible to track the path of an individual over multiple landing attempts at one colony (High Cliff), as the return flight paths were partly obscured at all other observation points. The main dataset of landing attempts therefore refers to the success of focal individuals that were picked at random from all birds flying towards a breeding cliff. As such, our approach assumes that the overall dataset is not biased by a few individuals undertaking a large number of repeated attempts. We consider this reasonable given that landing attempts are short-lived events and that colonies are composed of hundreds of breeding pairs (SI Table 1). A smaller sample of birds was followed at High Cliff to count the number of repeat attempts under a given wind condition.\n\n**Table 1.**\n The output of the best performing model.High frequency wind speed measurements were obtained for 6140 observations and all models of landing success were run using this dataset. Height and ledge were included as factors.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Df</th>\n      <th>Estimate\u00a0\u00b1\u00a0SE</th>\n      <th>p-value</th>\n      <th>F value</th>\n      <th>Deviance explained</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>wind</td>\n      <td>1</td>\n      <td>\u22120.62\u00a0\u00b1\u00a00.22</td>\n      <td>&lt;0.001</td>\n      <td>223.22</td>\n      <td>25.04</td>\n    </tr>\n    <tr>\n      <td>ledge</td>\n      <td>2</td>\n      <td></td>\n      <td>&lt;0.001</td>\n      <td>72.51</td>\n      <td>16.27</td>\n    </tr>\n    <tr>\n      <td>medium ledge</td>\n      <td></td>\n      <td>\u22121.21\u00a0\u00b1\u00a00.12</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>small ledge</td>\n      <td></td>\n      <td>\u22122.48\u00a0\u00b1\u00a00.15</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>turbulence</td>\n      <td>1</td>\n      <td>\u22120.81\u00a0\u00b1\u00a00.43</td>\n      <td>0.467</td>\n      <td>0.53</td>\n      <td>0.05</td>\n    </tr>\n    <tr>\n      <td>species</td>\n      <td>1</td>\n      <td></td>\n      <td>&lt;0.001</td>\n      <td>122.57</td>\n      <td>13.75</td>\n    </tr>\n    <tr>\n      <td>razorbill</td>\n      <td></td>\n      <td>1.10\u00a0\u00b1\u00a00.11</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>height</td>\n      <td>3</td>\n      <td></td>\n      <td>0.008</td>\n      <td>3.93</td>\n      <td>1.32</td>\n    </tr>\n    <tr>\n      <td>lowest height</td>\n      <td></td>\n      <td>\u22120.58\u00a0\u00b1\u00a00.19</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>wind * ledge</td>\n      <td>2</td>\n      <td></td>\n      <td>&lt;0.001</td>\n      <td>14.21</td>\n      <td>3.19</td>\n    </tr>\n    <tr>\n      <td>wind*medium\u00a0ledge</td>\n      <td></td>\n      <td>0.03\u00a0\u00b1\u00a00.04</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>wind*small ledge</td>\n      <td></td>\n      <td>0.22\u00a0\u00b1\u00a00.05</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>turbulence * ledge</td>\n      <td>2</td>\n      <td></td>\n      <td>0.015</td>\n      <td>4.23</td>\n      <td>0.95</td>\n    </tr>\n    <tr>\n      <td>turb*medium\u00a0ledge</td>\n      <td></td>\n      <td>0.95\u00a0\u00b1\u00a00.38</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>turb*small ledge</td>\n      <td></td>\n      <td>0.07\u00a0\u00b1\u00a00.50</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nLanding ledges were grouped into the following categories according to the space available for landing (aligned with the platforms, ledges and niches identified in Harris et al., 1997): (1) relatively large, flat areas that were wider than an individual bird length in both horizontal dimensions, (2) ledges that were wider, but not deeper, than the length of an individual bird, and (3) areas that were less than the length of the bird in both horizontal dimensions. Each breeding cliff was also visually divided into four height bands of roughly 10 m, using landmarks to allow easy categorisation of the landing height.\n\nWind speed was recorded using a Kestrel anemometer positioned near the breeding cliff and the observer (SI, Table 1) at a height of 1.5 m AGL. This near-ground height was selected in order to assess conditions that birds might experience during the final phase of landing. The anemometer was positioned in the same location for all\u00a0data collection sessions at a given colony and set to record once per minute.\n\n### Modelling airflows\n\nA modelling approach was used to (i) assess the extent to which wind speeds measured near observers varied from those on the breeding cliffs (it is logistically exceedingly difficult to measure wind speeds at the cliffs directly), (ii) relate near-ground values to the upwind/at sea condition, and (iii) estimate turbulence levels in relation to breeding colony and wind direction. Islands are particularly well suited to such modelling given that the upstream flow conditions are essentially uninterrupted. Airflows were modelled over Skomer using the open source computational fluid dynamics (CFD) software OpenFOAM (openfoam.org). OpenFOAM has previously been validated and used for other atmospheric boundary flow problems, including the well-known Bolund test case (Bechmann et al., 2011) which involves modelling air flow over a small, steep island (Cavar et al., 2016). Our model domain was 5100\u00d74950\u00d71000 m, with a basic horizontal grid spacing of 25 m and a vertical spacing of 10 m. The height data for the lower boundary were taken from a DEM of the island at 5 m resolution (OS Terrain five dataset sourced from Digimap). The model mesh was fitted over the terrain and refined (2:1 refinement) up to twice near the lower surface using the OpenFOAM SnappyHexMesh tool. This gave the finest resolution near the surface as approximately 6.25 m in the horizontal and 2.5 m in the vertical plane. At the upwind boundary, a logarithmic wind profile was imposed, while outflow boundary conditions were applied at the downwind boundaries. The roughness length was set to 0.1 m. The model uses a k-\u03b5 turbulence closure scheme to find a steady state solution, which therefore provides both mean wind speed, U (m s\u22121), and the turbulent kinetic energy, k (J m\u22123). This is the kinetic energy associated with the turbulence rather than the mean wind, and is defined as:\n\n$$\nk=\\frac{1}{2}\u03c1(u^{\u20322}+v^{\u20322}+w^{\u20322})\n$$\n\nwhere u', v' and w' are the fluctuations about the mean in the three components of wind velocity (in the x, y and z directions) and \u03c1 is the density (kg m\u22123). Assuming u', v' and w' are all similar in magnitude (isotropic turbulence) then a \u2018typical\u2019 velocity perturbation, u, is given by u'2 + v'2 + w'2 = 3 u2. Substituting the equation for k and rearranging it gives:\n\n$$\nu=\\sqrt{((2/3)k/\u03c1)}\n$$\n\nwith u in m s\u22121. In the model \u03c1 is taken as 1 kg m\u22123 and so can be neglected.\n\nThe strength of the turbulence was measured through the non-dimensional turbulence intensity, I:\n\n$$\nI=u/U\n$$\n\nSimulations were run for the following wind directions; N, NE, E, SE, S, SW, W and NW. The upwind wind profile was defined by the reference wind speed of 10 m s\u22121 at a reference height of 20 m above the surface. Values of wind magnitude were normalised by the wind speed at an upwind reference point. For the W wind direction, additional simulations with input speeds of 5, 10 and 20 m s\u22121 confirmed that both the normalised wind values and the turbulence intensities were independent of the input reference wind speed. Data were extracted 2 m normal to ground at the horizontal and vertical centre point of each of the five focal breeding cliffs, as well as at the associated observer positions.\n\n### Statistical analysis\n\nWe used chi-squared tests to establish whether the two species differed in landing height and ledge size. Binomial generalised linear mixed effects models were applied to the landing success data using the R package LME4 and fitted with the bobyqa optimizer (Bates et al., 2014). Given that hypotheses could be developed for interactions between wind speed (as measured near the cliffs), turbulence levels, ledge type and species, an initial model was run with a 4-way interaction between these predictors, in order to identify which interactions featured regularly in the best fitting models. These interactions were included in the global model and model simplification was then performed using AIC values. The global model included two-way interactions between wind speed and ledge, and turbulence and ledge. Wind speed and turbulence values were centred to remove collinearity between the individual and interaction terms (Schielzeth, 2010). A variable combining day and colony was created and fitted as a random intercept in order to account for temporal and spatial autocorrelation in landing success that could occur due to wind direction (which would be altered from the mean condition in a particular way by the topography surrounding each colony). Tests for collinearity (using the CAR package [Fox and Weisberg, 2011]) and over-dispersion were run on the global model. Residual interpretation and goodness of fit tests were performed using the DHARMa package (Hartig, 2017) simulating residuals from 500 runs of the fitted model. Marginal and conditional R2 values were estimated using the MuMIn package (Barton and Barton, 2018). All analyses were conducted in R Studio Version 1.1.456 (R Development Core Team, 2016).\n\n### Probabilistic modelling of landing failure\n\nThe statistical modelling related landing success to the wind speed recorded in that minute, as measured close to ground level. However, when wind speeds are considered over time, for\u00a0example through the breeding season, or between years, it is the mean wind speed that is considered, and these records are made from anemometers stationed on weather buoys or at a greater altitude above ground level. We therefore developed a probabilistic model to (i) predict how landing success varies with mean wind speed, as measured further from the cliff (using the coefficients from the statistical model, as well as the airflow modelling), and (ii) derive the probability of landing in n attempts, which was later used to estimate the metabolic cost of landing.\n\nIn both cases, a bird coming into land at a cliff effectively samples a distribution of wind speeds around a specified mean. We assumed that the instantaneous cliff wind speeds could be modelled as a Log Normal random variable. The probability distribution for the number of attempts taken to land successfully can then be derived from these parameters and the log odds of landing, with the latter taken from the best-fitting statistical model. This was converted to the probability of landing according to the mean wind speed over open water using constants derived from the airflow modelling.\n\nSpecifically, in our model, for a given situation (ledge, height, species) and fixed value of turbulence intensity, the probability of landing p=p(W) is a function of wind speed W of the form\n\n$$\npW=\\frac{a}{a+e^{bW}}\n$$\n\nfor constants a, b determined by the statistical model. If a bird tries to land repeatedly until successful, the instantaneous wind speed at the cliff can be modelled as an independent Log normal random variable $W\u223cLogNormal(m,s^{2})$\u00a0where the parameters $m$\u00a0and $s$\u00a0are chosen so that the random variable W has mean U (mean wind speed at the cliff) and standard deviation u (the root mean square of the turbulent fluctuations). That is, we choose m and s so that,\n\n$$\nU=e^{m+\\frac{s^{2}}{2}}u^{2}=e^{s^{2}}-1e^{2m+s^{2}}\n$$\n\nLet S denote the number of attempts required for a successful landing. Then S has a geometric distribution with parameter P given by the mean of p(W) where W is the instantaneous wind speed at the cliff at the moment of each attempt to land. That is,\n\n$$\nP(S=n)=(1\u2212P)^{n\u22121}P\n$$\n\nwhere,\n\n$$\nP=E(p(W))=\\int_{0}^{\u221e}\\frac{a}{(a+e^{bW})\\sqrt{2\\pis^{2}W^{2}}}e^{\u2212\\frac{(ln\u00a0W\u2212m)^{2}}{2s^{2}}}\u00a0dW\n$$\n\n## Results\n\n### Wind data\n\nWind speeds at observer locations ranged between 0 and 11.6 m s\u22121 during landing attempts. Similar wind speeds were recorded across study colonies, with median speeds ranging from 2.1 to 3.5 m s\u22121 and reasonable maxima between 5.3 and 7.7 m s\u22121.\n\nAirflow models showed that there was a reduction in the wind speed close to the cliffs compared to the at-sea condition, with substantial areas of reduced wind speed in the lee of Skomer Island (Figure 1A) (Figure 1\u2014figure supplement 1). In these downstream areas, the flow field tended to be more variable. Areas of high turbulence intensity also tended to occur in areas of reduced wind (Figure 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig1-v2.jpg)\n\n**Figure 1.:** (A) A horizontal cross section of wind speed (m s\u22121) at 10 m above sea level (which intersects the island, given in grey) shows the reduction in wind strength near the cliffs (see supplement 1). (B) The horizontal wind vectors within the inset in A, modelled at 2 m normal to the surface, and coloured according to the total wind speed (m s\u22121). Wind is funnelled into the canyon on the left of the image (the Wick colony is located along the South side of this canyon), forcing birds to enter this area with a tailwind. (C) The turbulence intensity, TI, (a dimensionless ratio of the RMS of the turbulent wind fluctuations to the mean wind) at a distance of 2 m normal to the surface, within the inset shown in A. Typical values are\u00a0~0.1, so values of\u00a0~1 (red areas), indicate highly variable winds. Note these high values occur in areas with low mean winds (blue colours in B), so actual gust strength is low.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Within each colony, relative wind speeds are shown at different heights (observer locations are marked as top, the vertical mid-point of the cliff is given as middle, and bottom gives conditions at the base of the cliff). At most cliff sites the speed is less than upwind, a pattern that is particularly evident at the base of the cliffs. The only exception to this is at the Mew Stone where flow is channelled between the rock and the main island in westerly/easterly wind directions, leading to higher speeds.\n\nHourly records of at-sea wind speeds from the M5 wave buoy (51.41\u00b0N, \u22126.42 \u00b0W, where values are adjusted from 3.5 to 2 m ASL) showed that the median wind speed during the breeding season (taken as March to August) was 6.1 m s\u22121 (\u00b12.1 IQR) and the reasonable maximum was 13.5 m s\u22121 (actual maximum\u00a0=\u00a025.3 m s\u22121).\n\n### Landing data\n\nOverall, 8623 landing attempts were recorded (guillemots n\u00a0=\u00a06140, razorbills n\u00a0=\u00a02483). Within this sample, birds were most likely to land on long thin ledges (42\u201352% of observations across study colonies) and least likely to land on the smallest ledges (11\u201333% of observations across study colonies).\u00a0However, species differed in the ledges they selected, with razorbills landing on the smallest ledges more often than guillemots (Pearson\u2019s chi-squared test, \u03c72\u00a0=\u00a02639, df\u00a0=\u00a02, p<0.01, n\u00a0=\u00a08623)\u00a0(Figure 3\u2014figure supplement 1) and also landing on higher ledges (\u03c72\u00a0=\u00a0813, df\u00a0=\u00a03, p<0.01, n\u00a0=\u00a08623).\n\nHigh frequency wind speed measurements were obtained for 6140 observations. Statistical models of landing success were therefore run using this smaller dataset (guillemots n\u00a0=\u00a04257, razorbills n\u00a0=\u00a01883). The model with the lowest AIC score was the global model, which included interactions between wind speed and ledge, turbulence and ledge, as well as the main effects of species and height (AIC\u00a0=\u00a04687, conditional R2\u00a0=\u00a00.41, marginal R2\u00a0=\u00a00.36). The difference between the marginal and conditional R2 demonstrates that the effect of site, and how this interacted with the daily wind condition, did not explain a disproportionate amount of variance. The next best approximating model (AIC\u00a0=\u00a04690, delta\u00a0=\u00a03) also included the interaction between wind speed and ledge, but not the interaction between turbulence and ledge, which was dropped from this model (conditional R2\u00a0=\u00a00.47, marginal R2\u00a0=\u00a00.31). There was no evidence for overdispersion in the global model (ratioObsExp\u00a0=\u00a00.941, p=0.999) or collinearity between predictors, and residual plots in DHARMa provided no evidence of heteroscedasticity.\n\nWind speed was the variable that explained the greatest amount of variation in landing success, with the probability of an auk landing on its breeding cliff decreasing with wind speed (estimate\u00a0=\u00a0\u22120.62\u00a0\u00b1\u00a00.05, p<0.01, df\u00a0=\u00a06139, 1, F\u00a0=\u00a0223.22, expl. dev. 25.04%). Landing success was close to 100% in wind-still conditions, decreasing slowly with winds up to\u00a0~4 m s\u22121, before decreasing more rapidly to a predicted success rate of\u00a0<20% in winds of 8 m s\u22121 (Figure 2). The probability of landing decreased with ledge area, being lowest for the smallest ledges (expl. dev. 16.27%, see Table 1 for all parameter estimates and details of model outputs). Species also explained a substantial proportion of variation in landing ability (expl. dev. 13.75%), with razorbills being more likely to land successfully. There were significant interactions between ledge size and wind speed (expl. dev. 3.19%) and ledge and turbulence (expl. dev. 0.95%). Interestingly, the probability of landing did not appear to vary with turbulence levels (as a main effect), which may be in part because turbulence levels were highest in areas with relatively low horizontal wind speeds (Figure 2). Finally, birds were more likely to land successfully on higher ledges, although the explanatory power of landing height was extremely low (expl. dev. 1.32%).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig2-v2.jpg)\n\n**Figure 2.:** (A) The probability of landing (derived from the statistical model), declines to\u00a0~0.1 in winds of 10 m s\u22121. Binned raw data are shown for both species (guillemots as filled circles, razorbills as open circles; data are grouped with n\u00a0\u2265\u00a030 observations per bin). As success also varies with ledge type, both the model output and raw data refer to birds landing on long narrow ledges. (B) The probability of landing according to the mean, at-sea wind speed, as derived from the probabilistic model (also for long narrow ledges and a TI value of 0.2). The difference between the x-axes indicates the increase in wind speed over open water, compared to near the cliffs, as estimated using airflow model outputs averaged across all wind directions. (C) The distribution of at-sea wind speeds across the breeding season (for 2005\u20132018, recorded at the M5 wave buoy and reduced to 2 m ASL).\n\n### Probabilistic models of landing failure\n\nThe relationship between landing success and at-sea wind speeds was qualitatively similar to the statistical model, although the success was higher for any at-sea wind speed due to the reduction in wind speed that occurs close to the cliffs (Figure 2).\n\nThe number of attempts required to land increased with wind speed for both species (Figure 3). All birds were predicted to land within 3\u20138 attempts for low wind speeds (4 m s\u22121), depending on species and ledge size. In winds of 10 m s\u22121, which are close to the reasonable maximum speeds expected during the breeding season (Figure 2C), guillemots may need up to 20 attempts to land, even on the largest landing platforms, whereas razorbills are predicted to land in roughly half the number of attempts.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig3-v2.jpg)\n\n**Figure 3.:** Seasonal wind speeds near the breeding cliffs will vary with wind direction and colony location (Figure 1\u2014figure supplement 1 ). For the prevailing SW wind direction, median wind speeds across the breeding season are predicted to be\u00a0\u22647 m s\u22121 (first two columns). Upper quartile speeds are predicted to be\u00a0\u2264\u00a09 m s\u22121 (third column), and reasonable maxima\u00a0\u2264\u00a016 m s\u22121.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** A long ledge runs roughly half way down the cliff. This has sections where it expands into large platforms and others, such as that to the left of the picture, where it forms a long, narrow ledge.\n\n### Colony orientation\n\nThe cliff area occupied by breeding auks was 76,673 m2, compared to 122,302 m2 of unoccupied cliff. While the 11 densest colonies appeared to be orientated in a range of directions bar those facing the prevailing SW wind, a Rayleigh test failed to reject the null hypothesis that the orientations were not uniformly distributed (Z\u00a0=\u00a00.314, p=0.346, df\u00a0=\u00a010)\u00a0(Figure 4). In contrast, a number of unoccupied sites had a south-westerly orientation (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/43842/elife-43842-fig4-v2.jpg)\n\n**Figure 4.:** (A) Breeding colonies (grey and black regions) appear to be distributed all around Skomer, however, bearings of the 11 densest colonies (marked in black), given in (B), show that while colonies appear uniformly distributed overall (Z\u00a0=\u00a00.314, p=0.346, df\u00a0=\u00a010, Rayleigh test), none are oriented towards the prevailing south-westerly wind direction, despite the availability of cliff habitat (unoccupied sections are indicated with open circles). Study colonies are indicated with stars.\n\n## Discussion\n\nLike many colonially nesting birds, auks coming in to land on their breeding cliffs must moderate their movements in relation to nearby neighbours, a partner already at the nest site and, critically, their egg or chick. The fact that auks manage to land (and breed) on ledges so narrow that their tails hang over the edge (mean density\u00a0=\u00a020 per m2\u00a0[Harris and Birkhead, 1985]), is testament to their flight capacity. However, we show that even moderate winds can upset this delicate balancing act. In our study, the ability to land was significantly impacted by wind speeds on the approach to the breeding cliffs. When translated into the probability of landing in a mean wind condition, birds only landed reliably (p(landing)>0.9) in calm to light air, equivalent to at-sea winds of\u00a0\u22642 m s\u22121. The probability of landing successfully fell to 0.4 in a strong breeze and to 0.2 in near gale conditions (11 and 15 m s\u22121 over open water respectively). Thus, even in conditions that are not sufficiently severe to be categorised as either gales or storms, wind can act as an invisible barrier, affecting the ability of cliff-nesting birds to access their chicks. The outcome is that the need to avoid terrestrial predators (as inferred from their cliff-nesting habit) has driven birds to select places they themselves are unable to access in some conditions. This occurs despite the fact that wind speeds close to the cliffs are lower than those over open water and that birds in our study appear to select breeding cliffs that are oriented away from the prevailing wind direction.\n\nDuring migratory and commuting flights, diverse animals vary when and where they fly in relation to wind conditions, selecting airflows that are beneficial for flight costs or flight control (Kranstauber et al., 2015; Shaffer et al., 2006; Shepard et al., 2016a; Sapir et al., 2014). In stark contrast, decisions about where to breed cannot be changed after the initial investment at the start of a breeding season. Cliff-nesting auks therefore have no choice but to attempt to return to this fixed place, even in difficult conditions, in order to provision their young and relieve their partner. Animals including bees have been shown to vary their landing trajectory in relation to the wind vector (Chang et al., 2016). However, we show that the extent that cliff-nesting birds can vary their approach trajectory with wind direction may be limited by the topography of the surrounding area (Figure 2). For instance, in prevailing SW winds, our airflow modelling shows that birds landing at the largest guillemot colony on our study site (the Wick, Skomer Island Figure 2), are forced to fly parallel to the cliff, with a substantial tailwind component, before making their final approach in a crosswind. Consequently, the ability of cliff-nesting auks to land in these conditions at all is remarkable.\n\nIn high winds, adults can choose to delay foraging, and indeed, there is evidence that a range of auk species do reduce feeding rates in windy conditions (Konarzewski and Taylor, 1989; Birkhead, 1976; Elliott et al., 2014). However, delaying foraging for long periods is a poor option, particularly when provisioning small chicks. The alternative is to perform multiple landing attempts. The energetic cost of an additional landing can be estimated using the median time taken for completion of one landing circuit, as measured at one of our study colonies (34 s, range 11\u201358 s, n\u00a0=\u00a030), and the costs of level flight as measured by Elliott et al. (2013). This gives 4.9 kJ per landing loop. To put this into context, the gross calorific value of one lesser sandeel (Ammodytes marinus) of a size consumed by guillemots (Hislop et al., 1991; Pearson, 1968) would be equivalent to the cost of\u00a0~6 attempts. How often are guillemots likely to have to pay this price? Given that wind speed varies through time, the number of attempts required for a successful landing will vary with both the mean wind speed and the variance around this mean. Our probabilistic model shows that the probability of a guillemot landing in six attempts decreases from one in a gentle to moderate breeze, to 0.4 in near gale conditions (representing the median and routine maximal wind speeds during the breeding season respectively). As guillemots typically perform 3\u20134 provisioning trips per day (Thaxter et al., 2009), the cumulative daily cost of multiple landing attempts per trip could be substantial.\n\nDespite this, adults are still likely to perform multiple attempts rather than risk landing without proper flight control, as the territory size is so small that any error during the parental changeover almost invariably results in the loss of the egg or chick (Kokko et al., 2004). In Br\u00fcnnich's guillemot colonies (Uria lomvia), adult changeovers have also been identified as periods when eggs and young are vulnerable to gull predation (Gilchrist et al., 1998, cf. Ashbrook et al., 2008). The negative effects of high winds could be two-fold for these auks; impeding their own flight capacities, whilst simultaneously promoting the capacity of gulls to fly and manoeuver close to the narrow breeding ledges (Gilchrist and Gaston, 1997).\n\nIn our study, the size of the landing platform was the most important parameter to influence landing success after wind strength. Paradoxically, this is unlikely to be due to the physical area of the platform itself, as large platforms are typically crowded (which can produce further complications as neighbouring birds can reach up to peck incoming individuals, E Shepard, pers. obs). Consequently, the area of rock available for landing may not vary substantially across platform sizes. Larger platforms do, however, have greater available airspace above them, which could be important in allowing birds to manoeuvre in the final phase of landing and therefore achieve greater flight control in stronger winds.\n\nThe ability to land more readily in some locations than others represents an aspect of site quality that has not previously been considered (Harris et al., 1997; Kokko et al., 2004; Birkhead et al., 1985), beyond a study in 1964 (Cone, 1964), suggesting that albatrosses choose to nest on the windward side of islands in order to facilitate landing and take-off. Our data show that within a given colony, guillemots nesting on large ledges will experience benefits beyond the extra protection from aerial predators that is afforded by having a greater number of neighbours (Birkhead, 1977). Quality will also vary between different cliff sites, with those providing greatest protection from the wind presumably offering more reliable conditions to land in. In support of this, our preliminary data suggest that colonies are orientated in most directions bar those that face into the prevailing wind direction. However, more substantial analyses are needed to ascertain which components of the wind field are most important when it comes to site selection. Even then, it may be difficult to disentangle the ultimate drivers of site selection, as shelter from strong winds could also be important in reducing exposure to low temperatures, or the possibility of young being swept off ledges by strong winds or associated wave action (Bonter et al., 2014; H\u00f8yvik Hilde et al., 2016). Furthermore, shelter is likely to improve the ability of fledglings to jump and reach the sea at the end of the season (Gilchrist and Gaston, 1997). Notwithstanding this, the relevance for the present study is that we see surprisingly high rates of landing failure despite the fact that birds appear not to be breeding in the most exposed sites.\n\nHabitat suitability and quality are therefore likely to vary according to the prevailing conditions, how these interact with local topography (which will determine exposure levels and the ability of individuals to adjust the direction of their final approach), and fine-scale ledge characteristics that affect the extent that birds can manoeuvre above the landing spot. Nonetheless, the importance of these factors will also vary with species, with a given area being simultaneously accessible to some species and inaccessible to others. In our study, guillemots were much more susceptible to the effects of wind than razorbills. In fact, in the strongest winds we recorded, the probability of guillemots landing on small ledges in 10 attempts was just 0.55, compared to 0.85 in razorbills. The morphology of guillemots and razorbills is extremely similar, but guillemots are larger and out-compete razorbills for access to the bigger platforms (Linnebjerg et al., 2013). Indeed, in this study, razorbills landed on the smallest ledges more often than expected, with the reverse being true for guillemots. If ledge type were the sole determinant of landing ability, we would therefore expect razorbills to have inferior landing success. The increased manoeuvrability of razorbills (due to their lower wing loading and hence flight speed) is likely to be the reason why the opposite is true, as razorbills should be able to turn more tightly, and hence respond appropriately to wind in the last phase of landing. The chances of wind having a substantial impact on the energetic costs of landing are therefore far greater in guillemots, which could, in turn, influence their motivation to compete for the larger ledges.\n\n### Conclusions\n\nDecisions such as when and where to fly are fundamentally linked to wind conditions, because flight speed and flight costs vary with the wind vector (Hedenstrom and Alerstam, 1995). This affects population processes in a number of ways, influencing the most cost-effective migration routes (Kranstauber et al., 2015), species distributions (Davies et al., 2010) and shift durations in breeding birds (Weimerskirch et al., 2012). Our study provides evidence of an additional mechanism by which wind can affect birds, effectively preventing cliff-nesting auks from landing in high winds. The issue of how to land safely in windy conditions is pertinent for a wide range of species, as the diversity of several seabird groups increases with latitude and wind speed (Davies et al., 2010; Cairns et al., 2008). Low manoeuvrability may represent a constraint in this regard for auks \u2013 and one that is likely to be most critical in Br\u00fcnnich's guillemots, which have a wing loading some 20% higher than common guillemots (Elliott et al., 2013). However, other aspects of flight control, such as stability, could be limiting for species with lower wing loading. This opens up a great many questions on how birds of different morphologies and flight capacities respond to strong and potentially variable airflows during landing, and the extent to which this modulates patterns of space use in the breeding season. Indeed, we expect that inter-specific variation in flight capacities may help explain why there is such clear distinction between the areas that different seabird taxa occupy on offshore islands. In general, we predict that cliff-nesting species with low manoeuvrability should select sheltered sites for breeding. The preference for low wind speeds may also affect the timing of breeding, with birds postponing their return to the breeding cliffs, or their lay date, if these periods coincide with persistent strong winds (cf. Wanless et al., 2009). This highlights the importance of monitoring the timing of strong winds during the breeding season, as well as the frequency. Overall, this is pertinent as wind regimes are changing (Young et al., 2011) and there is a need to establish a comprehensive framework to understand, and ultimately predict, which species are likely to be affected, and how (Lewis et al., 2015).\n",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "2a05331f-a551-4cfa-833d-3027ea2395fc",
+      "submission_id": "52a93500-2d19-44cd-ab93-c1d7890343bd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian Rutz, University of St Andrews United Kingdom\n\nReviewers:\n- Christian Rutz, University of St Andrews United Kingdom\n- Kyle Elliot, McGill University Canada\n- Yuuki Watanabe, National Institute of Polar Research Japan\n- Gil Bohrer\n\n## Review text\n\nDOI: [10.7554/eLife.43842.016](https://doi.org/10.7554/eLife.43842.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Wind prevents cliff-breeding birds from accessing nests through loss of flight control\" for consideration by eLife. Your article has been reviewed by four peer reviewers, including Christian Rutz as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Ian Baldwin as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Kyle Elliot (Reviewer #2); Yuuki Watanabe (Reviewer #3); Gil Bohrer (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study is one of the first to examine the dynamic component of flight in wild birds, and as such represents a notable advance. It brings an exciting topic into focus, through effective combination of field observations and airflow modelling, and will likely inspire future work on a wide range of taxa.\n\nEssential revisions:\n\n1) Presentation: While the reviewers enjoyed the lucid writing style, there was broad agreement that the presentation of the material could be improved. Please use separate Materials and methods, Results and Discussion sections (in that order) to structure the narrative better, and: (a) include sample sizes for all datasets and analyses (number of colonies, birds/landing attempts observed etc.); (b) provide more comprehensive summaries of the underlying data (including landing success/failure data for each species); (c) report results separately throughout for the two study species (guillemots and razorbills); and (d) clarify which analyses, and inferences, are based on observational data and which ones refer to your modelling work.\n\n2) Sampling: Your work is based on two samples of colonies from a single island (Skomer): a set of 19 colonies for assessing orientation patterns, and a subsample of five colonies for observing birds' landing attempts. Please provide more information on how these samples were selected. You say that the 19 colonies were the \"main\" (subsection \u201cData collection\u201d) or \"largest\" colonies (Figure 3 legend). How were these terms defined here (spatial extend or number of nests), what was your size criterion, and why did you not sample across the full range of colony sizes (from small to large), or include all local colonies? This is important, as you use this sample to conduct formal statistical analyses (Figure 3). In fact, given the good availability of suitable data for auks, the reviewers felt it would be important to replicate distribution analyses across different islands, to rule out the possibility that patterns are driven by factors other than wind conditions (such as access to preferred foraging sites). Finally, does your subsample of five colonies (subsection \u201cData collection\u201d, first paragraph; Supplementary file 1) adequately capture the full variation of environmental conditions experienced by birds on Skomer? It would also be useful to know sample sizes \u2013 in terms of sites rather than individuals \u2013 for each wind speed measurement (e.g., did all the data on the windiest day come from a single site?). Finally, if different colonies are at different locations with different ledge sizes, statistical analyses would need to account for this.\n\n3) Modelling: For your wind speed distribution, you use a normally distributed variable. Wind speed is only positive. Wind velocity at each of the 3 spatial components can be negative, but the bird does not care if the wind goes left or right \u2013 that makes it just as hard to land. You assume, correctly, that the birds are affected by the speed of the wind vector, and the speed [sqrt(sum(ui^2)) |i=1:3] is a positive property. Please use log normal distribution for W, which presumably will affect Equation 5.\n",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1f8c47df-151b-415f-a231-02d2c62b6b6c",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C1",
+      "claim": "For auks, 60% of attempts to land at their cliff nests fail in a strong breeze.",
+      "claim_type": "EXPLICIT",
+      "source": "For auks, 60% of attempts to land at their cliff nests fail in a strong breeze (80% in near-gale winds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by observational data collected during the study, as described in the methods and results sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "929105a0-23b3-4ca0-af2e-c5e06b2e33f8",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C2",
+      "claim": "For auks, 80% of attempts to land at their cliff nests fail in near-gale winds.",
+      "claim_type": "EXPLICIT",
+      "source": "For auks, 60% of attempts to land at their cliff nests fail in a strong breeze (80% in near-gale winds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by observational data collected during the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "88ccb182-73ac-4a68-a669-fb98c1249b9e",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C3",
+      "claim": "Wind interferes with the ability of auks to maintain flight control in the last phase of landing.",
+      "claim_type": "EXPLICIT",
+      "source": "This is most likely because wind interferes with the ability to maintain flight control in the last phase of landing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed landing failures in relation to wind conditions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "3f389158-1d80-407e-b6d2-12649dc83563",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C4",
+      "claim": "Auks have extreme flight costs.",
+      "claim_type": "EXPLICIT",
+      "source": "Their extreme flight costs mean that the energetic penalty for multiple landing attempts is high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws from established knowledge about auk physiology and flight characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "ab4b25f6-bede-4e62-82e4-57174f7c941e",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C5",
+      "claim": "The energetic penalty for multiple landing attempts is high for auks.",
+      "claim_type": "EXPLICIT",
+      "source": "Their extreme flight costs mean that the energetic penalty for multiple landing attempts is high.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of extreme flight costs and the need for multiple attempts.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "ff0c278a-b3ce-4f86-8612-b1916269038d",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C6",
+      "claim": "Exposure to wind conditions will influence the suitability of breeding habitat for auks.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that exposure, and ability to respond to, such conditions will influence the suitability of breeding habitat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the observed effects of wind on landing success.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "725771f2-b273-40ee-be48-fa0e32c6bdea",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C7",
+      "claim": "Auk colonies appear to be orientated away from prevailing winds.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this (i) auk colonies appear to be orientated away from prevailing winds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by spatial analysis data presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "2a3edb63-7567-4241-ab8e-995c8a14a10b",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C8",
+      "claim": "Landing success within auk colonies is higher on crowded ledges with more airspace for manoeuvring.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) landing success within colonies is higher on crowded ledges with more airspace for manoeuvring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by observational data on landing success in relation to ledge characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "727ca454-1ba2-417e-91d0-91d9079e9f44",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C9",
+      "claim": "The interplay between wind and flight capacities could impact breeding distributions across species and scales.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the interplay between wind and flight capacities could impact breeding distributions across species and scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization based on the findings for auks.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "cd3ed30b-27c7-4f74-8092-0ed5c92d19d7",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C10",
+      "claim": "Flight increases the speed of travel for volant species.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to fly profoundly affects the ecology of volant species: increasing the speed of travel (Schmidt-Nielsen, 1972)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Schmidt-Nielsen, 1972.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "8c3fa1b2-4fc1-404a-8be5-1a7dff39cec1",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C11",
+      "claim": "Flight enables animals to cross substantial barriers.",
+      "claim_type": "EXPLICIT",
+      "source": "enabling animals to cross substantial barriers (Hawkes et al., 2011; Schmaljohann et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hawkes et al., 2011 and Schmaljohann et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "c9c463bb-caaa-4ce4-ac87-6f512bf020b9",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C12",
+      "claim": "Flight gives enhanced access to space across scales.",
+      "claim_type": "EXPLICIT",
+      "source": "giving enhanced access to space across scales (Kranstauber et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kranstauber et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "d2b4a44c-9f92-4c84-9ce9-ac4afbe766ca",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C13",
+      "claim": "Flight underpins the most extensive and rapid annual migrations on the planet.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, flight underpins the most extensive and rapid annual migrations on the planet (Kranstauber et al., 2015; Egevang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kranstauber et al., 2015 and Egevang et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "69f91f32-b923-4d75-8177-2112fc90eb1c",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C14",
+      "claim": "Airflow characteristics can promote, impede or even prevent flight.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, airflow characteristics can promote, impede or even prevent flight (Shaffer et al., 2006; Ortega-Jimenez et al., 2014; Shepard et al., 2016b; Crall et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on airflow and flight.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "4b12e03a-3243-4f31-928b-9b9482700ed3",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C15",
+      "claim": "48% of fatal accidents in commercial jets occurred during the final approach and landing between 2007 and 2016.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a Boeing review of worldwide commercial jet accidents between 2007 and 2016 showed that 48% of fatal accidents occurred during the final approach and landing (Boeing, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a Boeing report from 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "94091837-c9b5-49fa-a455-44d61421a0a8",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C16",
+      "claim": "Disturbed wind fields near runways can have a critical impact on flight control and safety for commercial jets.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for vehicles that move as fast as commercial jets, disturbed wind fields near runways can have a critical impact on flight control and safety, as highlighted by a European Aviation Safety Agency report (van Es, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a European Aviation Safety Agency report.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "816dc03d-6546-4228-b4a4-fae8ba258431",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C17",
+      "claim": "Bumblebees landing on flowers shift from a multi-directional landing approach to a unidirectional approach upon the introduction of wind.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the only study that seems to have addressed this to date, Chang et al report that bumblebees (Bombus impatiens) landing on flowers shift from a multi-directional landing approach to a unidirectional approach upon the introduction of wind",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "2d5f8ad4-e5c9-485e-bb0b-ad50e3623408",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C18",
+      "claim": "Bumblebees are unable to perform low-impact landings in windy conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "and, furthermore, that bees are unable to perform low-impact landings in windy conditions (Chang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "6c9ec610-3d7f-4325-a192-c064a29b511d",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C19",
+      "claim": "The forces of impact and associated landing risks increase with animal mass and flight speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The forces of impact, and associated landing risks, will increase with animal mass and flight speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established physical principles and biomechanical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "4f244e6d-7fd5-4067-9ba9-530188d18695",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C20",
+      "claim": "Landing should become more of a constraint for large animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Landing should therefore become more of a constraint for large animals, which also have lower available power (a factor that may be relevant if it is necessary to manoeuvre above the landing spot).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between size, power, and landing difficulty.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "a15d274a-0ea3-4abf-b11d-9605d4006791",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C21",
+      "claim": "Swans overcome landing constraints by landing on water.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the largest birds, namely swans, overcome this by landing on water, where the impact can be reduced by extending the collision time and where momentum is transferred via the deformation of the water surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about swan landing behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "652030eb-9cbd-4654-8bd3-85b46ba6361c",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C22",
+      "claim": "Regulation of groundspeed is crucial during landing for birds landing on solid substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "For birds landing on solid substrates, regulation of their groundspeed is crucial during landing, as this will determine their impact with the landing surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on physical principles and biomechanical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "234668c4-dbbd-4277-9961-2f7643accac1",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C23",
+      "claim": "Airspeed must be sufficient to remain airborne and maintain flight control during landing.",
+      "claim_type": "EXPLICIT",
+      "source": "Airspeed, which is linked to lift production, must also be sufficient to remain airborne and maintain flight control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on aerodynamic principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "82c739a8-a35e-4c90-9a02-9402cadf9400",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C24",
+      "claim": "Both groundspeed and airspeed must be modulated with respect to wind speed during landing.",
+      "claim_type": "EXPLICIT",
+      "source": "Both components must be modulated with respect to the wind speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on aerodynamic principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "0986f89b-57b6-4009-bf78-a7ba5280cb33",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C25",
+      "claim": "Albatrosses have difficulty landing in low winds.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, it is reported that albatrosses have difficulty landing in low winds and that this can result in crash landings, broken bones and even death (Cone, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cone, 1964.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "af3f97b4-1e43-48d6-b4e3-36e6192cdda9",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C26",
+      "claim": "Albatross landing difficulties in low winds can result in crash landings, broken bones and even death.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, it is reported that albatrosses have difficulty landing in low winds and that this can result in crash landings, broken bones and even death (Cone, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cone, 1964.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "01c66889-0126-45ff-ac4b-7367ddeda3e9",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C27",
+      "claim": "Common guillemots and razorbills have among the highest wing loading recorded in birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Cliff-nesting auks, including our study species, the common guillemot (Uria aalge) and razorbill (Alca torda), have among the highest wing loading recorded in birds (Elliott et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Elliott et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "4110b70d-dac6-41e1-ad93-e1ca2e8aa812",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C28",
+      "claim": "High wing loading in auks is an adaptation for reduced diving costs.",
+      "claim_type": "EXPLICIT",
+      "source": "This adaption for reduced diving costs (Elliott et al., 2013) means they have characteristically high flight speeds and low manoeuvrability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Elliott et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "76ebce50-a024-4c70-b7ee-075bbecec84f",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C29",
+      "claim": "Auks have characteristically high flight speeds and low manoeuvrability.",
+      "claim_type": "EXPLICIT",
+      "source": "This adaption for reduced diving costs (Elliott et al., 2013) means they have characteristically high flight speeds and low manoeuvrability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on their high wing loading, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "ca881ce2-5f9c-4daa-83be-064899437e06",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C30",
+      "claim": "The success of landing at breeding cliffs will decline with wind speed and/or turbulence experienced by auks.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore predict that the success of landing at the breeding cliffs will decline with the wind speed and/or turbulence experienced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the characteristics of auks and aerodynamic principles.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "e9306857-bf02-4bd7-891e-b4b096635238",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C31",
+      "claim": "Global wind conditions are changing.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this should provide new insight into the ways in which wind affects birds and other flying organisms, which is becoming increasingly important in light of the changing global wind conditions (Weimerskirch et al., 2012; Young et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Weimerskirch et al., 2012 and Young et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "b80854c0-554c-40fd-b92d-b4c440a69f2d",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C32",
+      "claim": "Data were collected on Skomer Island, Pembrokeshire, UK.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were collected on Skomer Island, Pembrokeshire, UK (51.73611\u00b0N 5.29628\u00b0W).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the study location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "6b035e06-7613-40bd-ac57-5a9387118720",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C33",
+      "claim": "Guillemots and razorbills form large, sympatric breeding colonies on Skomer Island.",
+      "claim_type": "EXPLICIT",
+      "source": "Here guillemots and razorbills form large, sympatric breeding colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observational statement about the study site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "4e2d3372-be00-4d2b-8565-517309155d70",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C34",
+      "claim": "Wind speed was the variable that explained the greatest amount of variation in landing success.",
+      "claim_type": "EXPLICIT",
+      "source": "Wind speed was the variable that explained the greatest amount of variation in landing success, with the probability of an auk landing on its breeding cliff decreasing with wind speed (estimate = \u22120.62 \u00b1 0.05, p<0.01, df = 6139, 1, F = 223.22, expl. dev. 25.04%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "955f1457-854b-4e67-93cc-0e139add54c3",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C35",
+      "claim": "The probability of an auk landing on its breeding cliff decreases with wind speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Wind speed was the variable that explained the greatest amount of variation in landing success, with the probability of an auk landing on its breeding cliff decreasing with wind speed (estimate = \u22120.62 \u00b1 0.05, p<0.01, df = 6139, 1, F = 223.22, expl. dev. 25.04%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "adaa1541-7a56-42d9-bc91-df68478000c6",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C36",
+      "claim": "Landing success was close to 100% in wind-still conditions for auks.",
+      "claim_type": "EXPLICIT",
+      "source": "Landing success was close to 100% in wind-still conditions, decreasing slowly with winds up to ~4 m s\u22121, before decreasing more rapidly to a predicted success rate of <20% in winds of 8 m s\u22121 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical modeling of observational data and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "5be8dae1-6416-46d3-bd82-ca5b05bddfbe",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C37",
+      "claim": "Landing success for auks decreases slowly with winds up to ~4 m s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Landing success was close to 100% in wind-still conditions, decreasing slowly with winds up to ~4 m s\u22121, before decreasing more rapidly to a predicted success rate of <20% in winds of 8 m s\u22121 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical modeling of observational data and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "91ec4c49-797d-495f-ae8a-db123b12d624",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C38",
+      "claim": "Landing success for auks decreases to a predicted success rate of <20% in winds of 8 m s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Landing success was close to 100% in wind-still conditions, decreasing slowly with winds up to ~4 m s\u22121, before decreasing more rapidly to a predicted success rate of <20% in winds of 8 m s\u22121 (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical modeling of observational data and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "3d567374-5a47-4110-86a9-76c6abf6b2fd",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C39",
+      "claim": "The probability of landing decreased with ledge area for auks.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of landing decreased with ledge area, being lowest for the smallest ledges (expl. dev. 16.27%, see Table 1 for all parameter estimates and details of model outputs).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "cac85afb-5ab0-41b7-92ff-d1d51ef6dcea",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C40",
+      "claim": "Razorbills are more likely to land successfully than guillemots.",
+      "claim_type": "EXPLICIT",
+      "source": "Species also explained a substantial proportion of variation in landing ability (expl. dev. 13.75%), with razorbills being more likely to land successfully.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "9e2801f0-4770-44f4-9fcb-08d625cb6533",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C41",
+      "claim": "There is a significant interaction between ledge size and wind speed affecting landing success.",
+      "claim_type": "EXPLICIT",
+      "source": "There were significant interactions between ledge size and wind speed (expl. dev. 3.19%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "303150aa-1716-4267-8503-86d2e24fc7b8",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C42",
+      "claim": "There is a significant interaction between ledge and turbulence affecting landing success.",
+      "claim_type": "EXPLICIT",
+      "source": "and ledge and turbulence (expl. dev. 0.95%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "da06dea8-bb38-4b00-9fe5-467c5fd6eb56",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C43",
+      "claim": "Birds were more likely to land successfully on higher ledges.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, birds were more likely to land successfully on higher ledges, although the explanatory power of landing height was extremely low (expl. dev. 1.32%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "31a747a9-7e63-4b1e-968a-0cab8dcf124f",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C44",
+      "claim": "Turbulence levels were highest in areas with relatively low horizontal wind speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the probability of landing did not appear to vary with turbulence levels (as a main effect), which may be in part because turbulence levels were highest in areas with relatively low horizontal wind speeds (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational fluid dynamics modeling shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "d45abfd3-7014-49a9-83d1-9faa8908d882",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C45",
+      "claim": "There was a reduction in wind speed close to the cliffs compared to the at-sea condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Airflow models showed that there was a reduction in the wind speed close to the cliffs compared to the at-sea condition, with substantial areas of reduced wind speed in the lee of Skomer Island (Figure 1A) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational fluid dynamics modeling shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "b90ac805-c497-46b8-86c5-33648ab140b7",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C46",
+      "claim": "Areas of high turbulence intensity tend to occur in areas of reduced wind.",
+      "claim_type": "EXPLICIT",
+      "source": "Areas of high turbulence intensity also tended to occur in areas of reduced wind (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational fluid dynamics modeling shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "f616d1f2-5745-4df3-933b-d4821b1c1c0b",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C47",
+      "claim": "The number of attempts required to land increased with wind speed for both guillemots and razorbills.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of attempts required to land increased with wind speed for both species (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by probabilistic modeling shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "1e346f41-6d95-4b88-9070-15155bd9d44a",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C48",
+      "claim": "All birds were predicted to land within 3\u20138 attempts for low wind speeds (4 m s\u22121), depending on species and ledge size.",
+      "claim_type": "EXPLICIT",
+      "source": "All birds were predicted to land within 3\u20138 attempts for low wind speeds (4 m s\u22121), depending on species and ledge size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by probabilistic modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "87309263-db0a-4362-bbc0-415819b20984",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C49",
+      "claim": "In winds of 10 m s\u22121, guillemots may need up to 20 attempts to land, even on the largest landing platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "In winds of 10 m s\u22121, which are close to the reasonable maximum speeds expected during the breeding season (Figure 2C), guillemots may need up to 20 attempts to land, even on the largest landing platforms",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by probabilistic modeling and wind speed data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "fe31ac7c-35a4-435c-a200-6df78386c24b",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C50",
+      "claim": "Razorbills are predicted to land in roughly half the number of attempts compared to guillemots in winds of 10 m s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas razorbills are predicted to land in roughly half the number of attempts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by probabilistic modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "9ef045ef-7624-48b3-ac18-0175e356974a",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C51",
+      "claim": "The cliff area occupied by breeding auks on Skomer Island was 76,673 m2.",
+      "claim_type": "EXPLICIT",
+      "source": "The cliff area occupied by breeding auks was 76,673 m2, compared to 122,302 m2 of unoccupied cliff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial analysis of the study site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "8931fcc9-1ae2-46f0-a3db-e5a37fa71f54",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C52",
+      "claim": "The unoccupied cliff area on Skomer Island was 122,302 m2.",
+      "claim_type": "EXPLICIT",
+      "source": "The cliff area occupied by breeding auks was 76,673 m2, compared to 122,302 m2 of unoccupied cliff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial analysis of the study site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "df6f8664-7c41-40d0-8dbf-7f2a4c607c02",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C53",
+      "claim": "A Rayleigh test failed to reject the null hypothesis that the orientations of the 11 densest colonies were not uniformly distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "While the 11 densest colonies appeared to be orientated in a range of directions bar those facing the prevailing SW wind, a Rayleigh test failed to reject the null hypothesis that the orientations were not uniformly distributed (Z = 0.314, p=0.346, df = 10) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of colony orientation data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "5dbafc66-7560-48ac-b7dd-0aafd34d8a3a",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C54",
+      "claim": "A number of unoccupied sites on Skomer Island had a south-westerly orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a number of unoccupied sites had a south-westerly orientation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on spatial analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "f9b17faf-6d87-400b-b4e3-6c6888965280",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C55",
+      "claim": "Auks only landed reliably (p(landing)>0.9) in calm to light air, equivalent to at-sea winds of \u22642 m s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "When translated into the probability of landing in a mean wind condition, birds only landed reliably (p(landing)>0.9) in calm to light air, equivalent to at-sea winds of \u22642 m s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on probabilistic modeling of landing success.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "aec36f72-3d0f-447d-b749-ae52a27936b1",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C56",
+      "claim": "The probability of landing successfully for auks fell to 0.4 in a strong breeze (11 m s\u22121 over open water).",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of landing successfully fell to 0.4 in a strong breeze and to 0.2 in near gale conditions (11 and 15 m s\u22121 over open water respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on probabilistic modeling of landing success.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "4803534c-5937-4eb9-8205-a895ec130daa",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C57",
+      "claim": "The probability of landing successfully for auks fell to 0.2 in near gale conditions (15 m s\u22121 over open water).",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of landing successfully fell to 0.4 in a strong breeze and to 0.2 in near gale conditions (11 and 15 m s\u22121 over open water respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on probabilistic modeling of landing success.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "6bcec9d3-a6ab-4b5a-992b-5dc75fb0c621",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C58",
+      "claim": "Wind speeds close to the cliffs are lower than those over open water.",
+      "claim_type": "EXPLICIT",
+      "source": "This occurs despite the fact that wind speeds close to the cliffs are lower than those over open water",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational fluid dynamics modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "74d39b78-c31a-4a7a-973a-8e1c35789785",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C59",
+      "claim": "Birds in the study appear to select breeding cliffs that are oriented away from the prevailing wind direction.",
+      "claim_type": "EXPLICIT",
+      "source": "and that birds in our study appear to select breeding cliffs that are oriented away from the prevailing wind direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by spatial analysis of colony orientation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "f119c5e8-c16b-4992-9f7c-813d6c6ea240",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C60",
+      "claim": "A range of auk species reduce feeding rates in windy conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, delaying foraging for long periods is a poor option, particularly when provisioning small chicks. The alternative is to perform multiple landing attempts. The energetic cost of an additional landing can be estimated using the median time taken for completion of one landing circuit, as measured at one of our study colonies (34 s, range 11\u201358 s, n = 30), and the costs of level flight as measured by Elliott et al. (2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on auk feeding behavior.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "01a977e6-c83d-4331-8f42-279327197bbc",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C61",
+      "claim": "The median time taken for completion of one landing circuit is 34 s (range 11\u201358 s, n = 30).",
+      "claim_type": "EXPLICIT",
+      "source": "The energetic cost of an additional landing can be estimated using the median time taken for completion of one landing circuit, as measured at one of our study colonies (34 s, range 11\u201358 s, n = 30)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observational data collected at one study colony.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "15a13523-90a4-4065-9381-c1efb2ab6125",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C62",
+      "claim": "The energetic cost of one landing loop for auks is 4.9 kJ.",
+      "claim_type": "EXPLICIT",
+      "source": "This gives 4.9 kJ per landing loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from observational data and cited flight cost measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "65a50b44-7840-419b-b1d8-21d71520db9d",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C63",
+      "claim": "The gross calorific value of one lesser sandeel of a size consumed by guillemots would be equivalent to the cost of ~6 landing attempts.",
+      "claim_type": "EXPLICIT",
+      "source": "To put this into context, the gross calorific value of one lesser sandeel (Ammodytes marinus) of a size consumed by guillemots (Hislop et al., 1991; Pearson, 1968) would be equivalent to the cost of ~6 attempts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from energetic data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "34279b10-0bcc-49cb-952e-f82924b21e34",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C64",
+      "claim": "The probability of a guillemot landing in six attempts decreases from one in a gentle to moderate breeze, to 0.4 in near gale conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our probabilistic model shows that the probability of a guillemot landing in six attempts decreases from one in a gentle to moderate breeze, to 0.4 in near gale conditions (representing the median and routine maximal wind speeds during the breeding season respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on probabilistic modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "4012fceb-fb32-4fc8-b3f0-3c029d7af298",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C65",
+      "claim": "Guillemots typically perform 3\u20134 provisioning trips per day.",
+      "claim_type": "EXPLICIT",
+      "source": "As guillemots typically perform 3\u20134 provisioning trips per day (Thaxter et al., 2009), the cumulative daily cost of multiple landing attempts per trip could be substantial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Thaxter et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "3f1c3572-06cb-4c0f-95d1-236cb0e129b9",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C66",
+      "claim": "Any error during the parental changeover in auks almost invariably results in the loss of the egg or chick.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, adults are still likely to perform multiple attempts rather than risk landing without proper flight control, as the territory size is so small that any error during the parental changeover almost invariably results in the loss of the egg or chick (Kokko et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kokko et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "35869c1e-789a-420b-ab55-78158f8a06ad",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C67",
+      "claim": "Adult changeovers in Br\u00fcnnich's guillemot colonies have been identified as periods when eggs and young are vulnerable to gull predation.",
+      "claim_type": "EXPLICIT",
+      "source": "In Br\u00fcnnich's guillemot colonies (Uria lomvia), adult changeovers have also been identified as periods when eggs and young are vulnerable to gull predation (Gilchrist et al., 1998, cf. Ashbrook et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gilchrist et al., 1998 and Ashbrook et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "a9a57b84-c1e4-4520-ad3a-10f9e45a94d5",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C68",
+      "claim": "High winds could impede auk flight capacities whilst simultaneously promoting the capacity of gulls to fly and manoeuvre close to narrow breeding ledges.",
+      "claim_type": "EXPLICIT",
+      "source": "The negative effects of high winds could be two-fold for these auks; impeding their own flight capacities, whilst simultaneously promoting the capacity of gulls to fly and manoeuver close to the narrow breeding ledges (Gilchrist and Gaston, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by a citation to Gilchrist and Gaston, 1997.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "5075dfc0-9000-42b5-9965-5bef372168ac",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C69",
+      "claim": "The size of the landing platform was the most important parameter to influence landing success after wind strength.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, the size of the landing platform was the most important parameter to influence landing success after wind strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "297d60e2-8acd-4764-b352-df9493d72d72",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C70",
+      "claim": "Large platforms are typically crowded in auk colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, this is unlikely to be due to the physical area of the platform itself, as large platforms are typically crowded (which can produce further complications as neighbouring birds can reach up to peck incoming individuals, E Shepard, pers. obs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on personal observations by the author.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "234264e9-c111-4b35-a611-9634df8d5dd2",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C71",
+      "claim": "Larger platforms have greater available airspace above them.",
+      "claim_type": "EXPLICIT",
+      "source": "Larger platforms do, however, have greater available airspace above them, which could be important in allowing birds to manoeuvre in the final phase of landing and therefore achieve greater flight control in stronger winds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on observations and aerodynamic reasoning.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "edfa10b6-fc34-4c86-ac46-c7e362a85835",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C72",
+      "claim": "Guillemots nesting on large ledges will experience benefits beyond the extra protection from aerial predators that is afforded by having a greater number of neighbours.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that within a given colony, guillemots nesting on large ledges will experience benefits beyond the extra protection from aerial predators that is afforded by having a greater number of neighbours (Birkhead, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study data and supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "5a4a2d2f-6609-4118-a4c2-71211f8017cf",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C73",
+      "claim": "Colonies providing greatest protection from the wind presumably offer more reliable conditions to land in.",
+      "claim_type": "EXPLICIT",
+      "source": "Quality will also vary between different cliff sites, with those providing greatest protection from the wind presumably offering more reliable conditions to land in.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "1ac45a03-a082-4224-9613-e4242b0134b0",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C74",
+      "claim": "Shelter from strong winds could be important in reducing exposure to low temperatures for cliff-nesting birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Even then, it may be difficult to disentangle the ultimate drivers of site selection, as shelter from strong winds could also be important in reducing exposure to low temperatures, or the possibility of young being swept off ledges by strong winds or associated wave action (Bonter et al., 2014; H\u00f8yvik Hilde et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "c57ed5a7-a41f-46b2-a9b5-e8140046a24c",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C75",
+      "claim": "Shelter from strong winds could reduce the possibility of young being swept off ledges by strong winds or associated wave action.",
+      "claim_type": "EXPLICIT",
+      "source": "Even then, it may be difficult to disentangle the ultimate drivers of site selection, as shelter from strong winds could also be important in reducing exposure to low temperatures, or the possibility of young being swept off ledges by strong winds or associated wave action (Bonter et al., 2014; H\u00f8yvik Hilde et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "3f8f6428-ec9a-447d-a3ab-bf49ba80d1b5",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C76",
+      "claim": "Shelter is likely to improve the ability of fledglings to jump and reach the sea at the end of the season.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, shelter is likely to improve the ability of fledglings to jump and reach the sea at the end of the season (Gilchrist and Gaston, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "cc8e74f3-edfc-490e-a77f-830faaae8cfc",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C77",
+      "claim": "Birds appear not to be breeding in the most exposed sites on Skomer Island.",
+      "claim_type": "EXPLICIT",
+      "source": "Notwithstanding this, the relevance for the present study is that we see surprisingly high rates of landing failure despite the fact that birds appear not to be breeding in the most exposed sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spatial analysis and observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "fb3aeb97-7574-49b4-891b-ff048077a5d0",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C78",
+      "claim": "Habitat suitability and quality for cliff-nesting birds vary according to the prevailing conditions and how these interact with local topography.",
+      "claim_type": "EXPLICIT",
+      "source": "Habitat suitability and quality are therefore likely to vary according to the prevailing conditions, how these interact with local topography (which will determine exposure levels and the ability of individuals to adjust the direction of their final approach), and fine-scale ledge characteristics that affect the extent that birds can manoeuvre above the landing spot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the study findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "1d886399-82e5-46eb-897b-ddd7758e6b4a",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C79",
+      "claim": "The importance of factors affecting landing ability will vary with species.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the importance of these factors will also vary with species, with a given area being simultaneously accessible to some species and inaccessible to others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed differences between guillemots and razorbills.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "f9cab18e-58c9-4fc4-be62-75a90bfc1dd3",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C80",
+      "claim": "Guillemots were much more susceptible to the effects of wind than razorbills.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, guillemots were much more susceptible to the effects of wind than razorbills.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "a915b6e8-ca8f-492d-8be1-3f42fe9505a1",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C81",
+      "claim": "In the strongest winds recorded, the probability of guillemots landing on small ledges in 10 attempts was just 0.55.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in the strongest winds we recorded, the probability of guillemots landing on small ledges in 10 attempts was just 0.55, compared to 0.85 in razorbills.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on probabilistic modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "14a359b7-bfe0-494f-8a92-02093bdd9b9d",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C82",
+      "claim": "In the strongest winds recorded, the probability of razorbills landing on small ledges in 10 attempts was 0.85.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in the strongest winds we recorded, the probability of guillemots landing on small ledges in 10 attempts was just 0.55, compared to 0.85 in razorbills.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on probabilistic modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "dff3fdde-a933-4e18-a25b-4c64a38d9051",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C83",
+      "claim": "The morphology of guillemots and razorbills is extremely similar.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphology of guillemots and razorbills is extremely similar, but guillemots are larger and out-compete razorbills for access to the bigger platforms (Linnebjerg et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge and supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "e96b33dd-3e1c-470e-bceb-1be22ecc53a7",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C84",
+      "claim": "Guillemots are larger than razorbills and out-compete razorbills for access to the bigger platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphology of guillemots and razorbills is extremely similar, but guillemots are larger and out-compete razorbills for access to the bigger platforms (Linnebjerg et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Linnebjerg et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "a4e23a80-51ec-4502-94be-dc476468089a",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C85",
+      "claim": "Razorbills landed on the smallest ledges more often than expected.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in this study, razorbills landed on the smallest ledges more often than expected, with the reverse being true for guillemots.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "b31601c9-f716-4cf1-82fb-db6e05dbf74b",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C86",
+      "claim": "The increased manoeuvrability of razorbills is likely due to their lower wing loading and hence flight speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased manoeuvrability of razorbills (due to their lower wing loading and hence flight speed) is likely to be the reason why the opposite is true, as razorbills should be able to turn more tightly, and hence respond appropriately to wind in the last phase of landing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on aerodynamic principles and morphological differences.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "b63180a5-99fc-4460-98bf-fa56538a45d3",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C87",
+      "claim": "The chances of wind having a substantial impact on the energetic costs of landing are far greater in guillemots than razorbills.",
+      "claim_type": "EXPLICIT",
+      "source": "The chances of wind having a substantial impact on the energetic costs of landing are therefore far greater in guillemots, which could, in turn, influence their motivation to compete for the larger ledges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differences in landing success between species.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "e4e44c8b-48f0-442f-916f-6170404c23f7",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C88",
+      "claim": "Flight speed and flight costs vary with the wind vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Decisions such as when and where to fly are fundamentally linked to wind conditions, because flight speed and flight costs vary with the wind vector (Hedenstrom and Alerstam, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hedenstrom and Alerstam, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "063038b3-6133-46ec-bf04-e48b14f8fca8",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C89",
+      "claim": "Wind conditions influence the most cost-effective migration routes.",
+      "claim_type": "EXPLICIT",
+      "source": "This affects population processes in a number of ways, influencing the most cost-effective migration routes (Kranstauber et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kranstauber et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "da151cb7-2775-4237-b0cf-bf97f2b88daa",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C90",
+      "claim": "Wind conditions influence species distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "species distributions (Davies et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Davies et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "97532d82-4ab4-4ecb-8c05-4f534bee1aed",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C91",
+      "claim": "Wind conditions influence shift durations in breeding birds.",
+      "claim_type": "EXPLICIT",
+      "source": "and shift durations in breeding birds (Weimerskirch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Weimerskirch et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "9b6f7ac4-94e0-46f0-bbb5-a63a2679d958",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C92",
+      "claim": "The diversity of several seabird groups increases with latitude and wind speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The issue of how to land safely in windy conditions is pertinent for a wide range of species, as the diversity of several seabird groups increases with latitude and wind speed (Davies et al., 2010; Cairns et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Davies et al., 2010 and Cairns et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "4e1fe955-2700-4e39-b55a-722825709e93",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C93",
+      "claim": "Br\u00fcnnich's guillemots have a wing loading some 20% higher than common guillemots.",
+      "claim_type": "EXPLICIT",
+      "source": "Low manoeuvrability may represent a constraint in this regard for auks \u2013 and one that is likely to be most critical in Br\u00fcnnich's guillemots, which have a wing loading some 20% higher than common guillemots (Elliott et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Elliott et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "048bd4c5-123c-4df8-a882-b2c4af741fd7",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C94",
+      "claim": "Cliff-nesting species with low manoeuvrability should select sheltered sites for breeding.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, we predict that cliff-nesting species with low manoeuvrability should select sheltered sites for breeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the study findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "6320204d-884c-46d1-ac5a-087685377f58",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C95",
+      "claim": "The preference for low wind speeds may affect the timing of breeding in cliff-nesting birds.",
+      "claim_type": "EXPLICIT",
+      "source": "The preference for low wind speeds may also affect the timing of breeding, with birds postponing their return to the breeding cliffs, or their lay date, if these periods coincide with persistent strong winds (cf. Wanless et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "bc88eb00-693b-47c1-8fc4-9a06d869521a",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C96",
+      "claim": "Wind regimes are changing.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this is pertinent as wind regimes are changing (Young et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Young et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "52f52e86-a0a1-40a6-9fe0-2182bb1091bd",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C97",
+      "claim": "Overall, 8623 landing attempts were recorded (guillemots n = 6140, razorbills n = 2483).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 8623 landing attempts were recorded (guillemots n = 6140, razorbills n = 2483).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the data collected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "cae3ba99-bca5-4fc3-a331-7bf3a621513b",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C98",
+      "claim": "Birds were most likely to land on long thin ledges (42\u201352% of observations across study colonies).",
+      "claim_type": "EXPLICIT",
+      "source": "Within this sample, birds were most likely to land on long thin ledges (42\u201352% of observations across study colonies)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "604a74f9-ca8a-4e63-8431-871c2add7584",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C99",
+      "claim": "Birds were least likely to land on the smallest ledges (11\u201333% of observations across study colonies).",
+      "claim_type": "EXPLICIT",
+      "source": "and least likely to land on the smallest ledges (11\u201333% of observations across study colonies).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observational data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "a4213058-0eca-4752-b7a9-f125a81f9e5b",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C100",
+      "claim": "Razorbills landed on the smallest ledges more often than guillemots.",
+      "claim_type": "EXPLICIT",
+      "source": "However, species differed in the ledges they selected, with razorbills landing on the smallest ledges more often than guillemots (Pearson's chi-squared test, \u03c72 = 2639, df = 2, p<0.01, n = 8623) (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "524a5950-2b76-40a7-acbc-f60f40e48a77",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C101",
+      "claim": "Razorbills landed on higher ledges than guillemots.",
+      "claim_type": "EXPLICIT",
+      "source": "and also landing on higher ledges (\u03c72 = 813, df = 3, p<0.01, n = 8623).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "e7eb3fb8-c502-48a8-b1ca-22cee3010522",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C102",
+      "claim": "Wind speeds at observer locations ranged between 0 and 11.6 m s\u22121 during landing attempts.",
+      "claim_type": "EXPLICIT",
+      "source": "Wind speeds at observer locations ranged between 0 and 11.6 m s\u22121 during landing attempts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "29d23fea-cccb-4318-99fe-5f40d964a87c",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C103",
+      "claim": "Median wind speeds across study colonies ranged from 2.1 to 3.5 m s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar wind speeds were recorded across study colonies, with median speeds ranging from 2.1 to 3.5 m s\u22121",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "49be552f-4901-4b42-a3b2-9ae1c9ae9387",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C104",
+      "claim": "Reasonable maximum wind speeds across study colonies ranged between 5.3 and 7.7 m s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "and reasonable maxima between 5.3 and 7.7 m s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "fc8fd125-bcbb-4b3f-973b-db71ad1290d4",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C105",
+      "claim": "The median wind speed during the breeding season at the M5 wave buoy was 6.1 m s\u22121 (\u00b12.1 IQR).",
+      "claim_type": "EXPLICIT",
+      "source": "Hourly records of at-sea wind speeds from the M5 wave buoy (51.41\u00b0N, \u22126.42 \u00b0W, where values are adjusted from 3.5 to 2 m ASL) showed that the median wind speed during the breeding season (taken as March to August) was 6.1 m s\u22121 (\u00b12.1 IQR)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on wind speed data from the M5 wave buoy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "be6ac0ca-7d01-46ce-aab2-c26f1ed2c82f",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C106",
+      "claim": "The reasonable maximum wind speed during the breeding season at the M5 wave buoy was 13.5 m s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "and the reasonable maximum was 13.5 m s\u22121 (actual maximum = 25.3 m s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on wind speed data from the M5 wave buoy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "ff128176-95b8-4993-a92d-2916c5bf37f1",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C107",
+      "claim": "The actual maximum wind speed during the breeding season at the M5 wave buoy was 25.3 m s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "and the reasonable maximum was 13.5 m s\u22121 (actual maximum = 25.3 m s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on wind speed data from the M5 wave buoy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "189549f1-a727-4e72-85cc-e49c5a986ba4",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C108",
+      "claim": "Wind prevents cliff-breeding birds from accessing nests through loss of flight control.",
+      "claim_type": "EXPLICIT",
+      "source": "Wind prevents cliff-breeding birds from accessing nests through loss of flight control",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by observational and modeling data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "91de2bbd-4f6c-45c8-90ce-29de70f53cbe",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C109",
+      "claim": "Birds landing at the Wick colony are forced to fly parallel to the cliff with a substantial tailwind component before making their final approach in a crosswind in prevailing SW winds.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in prevailing SW winds, our airflow modelling shows that birds landing at the largest guillemot colony on our study site (the Wick, Skomer Island Figure 2), are forced to fly parallel to the cliff, with a substantial tailwind component, before making their final approach in a crosswind.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational fluid dynamics modeling shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "b30b7960-c0b7-4d02-b385-fe1c90686ce5",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "claim_id": "C110",
+      "claim": "The mean density of auks on breeding ledges is 20 per m2.",
+      "claim_type": "EXPLICIT",
+      "source": "Like many colonially nesting birds, auks coming in to land on their breeding cliffs must moderate their movements in relation to nearby neighbours, a partner already at the nest site and, critically, their egg or chick. The fact that auks manage to land (and breed) on ledges so narrow that their tails hang over the edge (mean density = 20 per m2 [Harris and Birkhead, 1985]), is testament to their flight capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Harris and Birkhead, 1985.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "56d4af6d-644d-4b6b-985e-c3147cd54894",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Wind speed is the primary factor affecting landing success in auks, with landing success declining from nearly 100% in calm conditions to 60% failure in strong breezes (11 m/s) and 80% failure in near-gale conditions (15 m/s). Statistical modeling shows wind speed explained 25% of variation in landing success, with probability decreasing significantly as wind speed increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C34-C38, C55-C57 are well-supported by extensive observational data (8623 landing attempts), statistical modeling (p<0.01, F=223.22), and probabilistic modeling. The relationship between wind speed and landing failure is quantified with appropriate statistical rigor, and the results are consistent across multiple analytical approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "d7a2ae81-436f-4301-ac11-287c188921e9",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Wind interferes with auks' ability to maintain flight control during the final phase of landing, preventing cliff-breeding birds from accessing their nests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C108 are supported by the observational data showing systematic landing failures correlated with wind speed, combined with CFD modeling demonstrating complex airflow patterns near cliffs. The inference that loss of flight control is the mechanism is reasonable given the aerodynamic constraints and observed failure patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "109f1142-a511-47af-91f5-af6843fcea61",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ledge size significantly affects landing success, with smaller ledges associated with lower landing probability (16.27% explained deviance). Larger platforms provide greater airspace for maneuvering, which improves landing success despite being more crowded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C69-C71, and C8 are supported by statistical analysis showing ledge size as the second most important factor after wind speed. The interpretation that airspace rather than physical platform area drives this effect (C71) is a reasonable inference supported by observational data (C70) and aerodynamic principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "ddddef37-f74f-44c2-9a1a-a4127c0d249f",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Razorbills show significantly better landing success than guillemots (13.75% explained deviance), with razorbills having 0.85 probability of landing in 10 attempts versus 0.55 for guillemots in strong winds. This difference is attributed to razorbills' lower wing loading and greater maneuverability despite guillemots being larger and dominating access to larger platforms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C80-C87 are well-supported by statistical analysis and observational data. The species difference is quantified (C40, C80-C82), morphological basis is cited (C83-C84), behavioral patterns are documented (C85, C100-C101), and the mechanistic explanation via wing loading and maneuverability (C86) is a reasonable inference from aerodynamic principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "a0eed145-3f21-4e51-b1fc-329cfe3784a6",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Computational fluid dynamics modeling reveals that wind speeds near cliffs are reduced compared to open water, with areas of high turbulence intensity occurring in regions of reduced wind. At the Wick colony, birds must approach with a tailwind before making a crosswind final approach in prevailing SW winds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46, C58, and C109 are supported by CFD modeling using validated OpenFOAM software. The modeling approach is appropriate for atmospheric boundary flow, and results are visualized in Figures 1-2. The specific finding about approach trajectories at the Wick colony (C109) is directly supported by the airflow modeling outputs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "2531bcaf-b57d-4662-bae5-b94d81328e74",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The number of landing attempts required increases with wind speed, with all birds predicted to land within 3-8 attempts at low wind speeds (4 m/s), but guillemots requiring up to 20 attempts in 10 m/s winds while razorbills need roughly half as many attempts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 are supported by probabilistic modeling that integrates the statistical model results with wind speed distributions. The predictions are quantitative and species-specific, with results shown in Figure 3. The modeling approach appropriately accounts for variability in wind conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "c0bd6042-8c36-47b6-b425-a4b8798a4426",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multiple landing attempts impose substantial energetic costs on auks due to their extreme flight costs. One landing circuit takes 34 seconds and costs 4.9 kJ, equivalent to ~1/6 the energy value of one sandeel. With 3-4 provisioning trips per day, the cumulative cost of multiple attempts could be substantial, especially as landing probability in 6 attempts drops from 1.0 to 0.4 between moderate and near-gale conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C61-C65 are supported by direct measurements (C61), calculations using cited flight cost data (C62-C63), and probabilistic modeling (C64). The energetic context is well-established (C4) and the daily cost implications (C65) are supported by cited provisioning rates. The calculations are transparent and appropriately contextualized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "db261841-a25b-4f77-a00c-f72a366ad595",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Auk colonies appear to be oriented away from prevailing SW winds, with unoccupied sites showing south-westerly orientation. However, a Rayleigh test failed to reject uniform distribution of the 11 densest colonies (Z=0.314, p=0.346), and birds appear not to breed in the most exposed sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C53-C54, C59, and C77 present conflicting evidence. While visual inspection suggests colonies avoid prevailing winds (C7, C54, C59), the statistical test (C53) fails to support non-uniform distribution. The sample size (11 colonies) may be insufficient for detecting the pattern, and the authors acknowledge this as preliminary data requiring more substantial analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "bcd51aa0-5a99-48ff-9012-1386be2d46bc",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Exposure to wind conditions influences breeding habitat suitability for auks, with sheltered sites offering more reliable landing conditions. Habitat quality varies according to prevailing conditions, topography, and ledge characteristics. Cliff-nesting species with low maneuverability should select sheltered sites for breeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C73, C78, and C94 are supported as reasonable inferences from the demonstrated effects of wind on landing success (C1-C2, C34-C38) and the observed patterns of colony orientation (C7, C54, C59). While these are predictive/speculative claims, they follow logically from the empirical findings and represent appropriate scientific extrapolation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "89ee9bfa-1b5a-46f0-af56-52d7be16daad",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Significant interactions exist between ledge size and wind speed (3.19% explained deviance) and between ledge and turbulence (0.95% explained deviance). Birds were more likely to land on higher ledges (1.32% explained deviance). Turbulence as a main effect did not significantly affect landing probability, possibly because turbulence was highest in areas with low horizontal wind speeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 are supported by statistical analysis with appropriate interaction terms in the model. The low explanatory power of some effects (C42-C43) is honestly reported. The interpretation of the turbulence result (C44) is reasonable given the CFD modeling showing turbulence-wind speed relationships, though this remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "d39732c9-7d7c-4bd7-af03-db4189c249a2",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Errors during parental changeover almost invariably result in loss of eggs or chicks in auks. Adult changeovers are periods when eggs and young are vulnerable to gull predation. High winds could impede auk flight while promoting gull maneuverability near breeding ledges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by appropriate citations (Kokko et al. 2004, Gilchrist et al. 1998, Ashbrook et al. 2008, Gilchrist and Gaston 1997). These claims provide important ecological context for understanding why auks persist in multiple landing attempts despite energetic costs. C68 is somewhat speculative but supported by cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "88ecee53-0578-4231-bb47-28f8ba9da79d",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Guillemots on large ledges experience benefits beyond predator protection. Shelter from strong winds could reduce exposure to low temperatures, prevent young from being swept off ledges, and improve fledgling ability to reach the sea.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72, C74-C76 mix supported inferences (C72 based on study data) with speculative alternative explanations (C74-C75). The authors appropriately acknowledge difficulty in disentangling ultimate drivers of site selection. These represent reasonable hypotheses but lack direct empirical support in this study, requiring future work to evaluate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "216ae5da-8bca-4524-bfac-5b7af976a2cf",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The interplay between wind and flight capacities could impact breeding distributions across species and scales. Wind conditions influence migration routes, species distributions, and breeding shift durations. Seabird diversity increases with latitude and wind speed. Preference for low wind speeds may affect breeding timing, and wind regimes are changing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C79, C88-C92, C95-C96 appropriately contextualize the study findings within broader ecological patterns. Most claims are supported by appropriate citations (C88-C92, C96). C9, C79, and C95 are reasonable extrapolations from the study findings, though they represent predictions requiring future validation rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study was conducted on Skomer Island with 8623 landing attempts recorded (6140 guillemots, 2483 razorbills). Wind speeds at observer locations ranged 0-11.6 m/s with median speeds of 2.1-3.5 m/s across colonies. At-sea breeding season median wind speed was 6.1 m/s with reasonable maximum of 13.5 m/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33, C97-C107 provide methodological details and descriptive statistics that are directly stated in the methods and results. These are factual descriptions of the study design, sample sizes, and environmental conditions, appropriately documented and transparent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "cacfa6b1-cbcc-41e1-adad-9a789d6b72ad",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The cliff area occupied by breeding auks was 76,673 m\u00b2 compared to 122,302 m\u00b2 of unoccupied cliff. Mean density of auks on breeding ledges is 20 per m\u00b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 are supported by spatial analysis described in methods. C110 is supported by citation to Harris and Birkhead 1985. These provide important context for understanding colony characteristics and space constraints affecting landing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    },
+    {
+      "id": "d5d5179e-8237-4cd7-b15d-05e6891c2899",
+      "content_id": "90787c47-95ec-43a5-b63c-ab0ce908cd96",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims about flight ecology, landing challenges, and auk morphology establish context for the study. These include general principles about flight benefits and constraints, landing risks in aircraft and other animals, and specific characteristics of auks including high wing loading and low maneuverability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C31, C60, and C93 provide essential background context, primarily supported by appropriate citations to established literature. These claims are not novel findings but rather establish the scientific foundation and rationale for the study. The citations appear appropriate and the general principles are well-established in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:36:43.045902Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1f8c47df-151b-415f-a231-02d2c62b6b6c",
+      "result_id": "56d4af6d-644d-4b6b-985e-c3147cd54894"
+    },
+    {
+      "claim_id": "929105a0-23b3-4ca0-af2e-c5e06b2e33f8",
+      "result_id": "56d4af6d-644d-4b6b-985e-c3147cd54894"
+    },
+    {
+      "claim_id": "4e2d3372-be00-4d2b-8565-517309155d70",
+      "result_id": "56d4af6d-644d-4b6b-985e-c3147cd54894"
+    },
+    {
+      "claim_id": "955f1457-854b-4e67-93cc-0e139add54c3",
+      "result_id": "56d4af6d-644d-4b6b-985e-c3147cd54894"
+    },
+    {
+      "claim_id": "adaa1541-7a56-42d9-bc91-df68478000c6",
+      "result_id": "56d4af6d-644d-4b6b-985e-c3147cd54894"
+    },
+    {
+      "claim_id": "5be8dae1-6416-46d3-bd82-ca5b05bddfbe",
+      "result_id": "56d4af6d-644d-4b6b-985e-c3147cd54894"
+    },
+    {
+      "claim_id": "91ec4c49-797d-495f-ae8a-db123b12d624",
+      "result_id": "56d4af6d-644d-4b6b-985e-c3147cd54894"
+    },
+    {
+      "claim_id": "f9b17faf-6d87-400b-b4e3-6c6888965280",
+      "result_id": "56d4af6d-644d-4b6b-985e-c3147cd54894"
+    },
+    {
+      "claim_id": "aec36f72-3d0f-447d-b749-ae52a27936b1",
+      "result_id": "56d4af6d-644d-4b6b-985e-c3147cd54894"
+    },
+    {
+      "claim_id": "4803534c-5937-4eb9-8205-a895ec130daa",
+      "result_id": "56d4af6d-644d-4b6b-985e-c3147cd54894"
+    },
+    {
+      "claim_id": "88ccb182-73ac-4a68-a669-fb98c1249b9e",
+      "result_id": "d7a2ae81-436f-4301-ac11-287c188921e9"
+    },
+    {
+      "claim_id": "189549f1-a727-4e72-85cc-e49c5a986ba4",
+      "result_id": "d7a2ae81-436f-4301-ac11-287c188921e9"
+    },
+    {
+      "claim_id": "3d567374-5a47-4110-86a9-76c6abf6b2fd",
+      "result_id": "109f1142-a511-47af-91f5-af6843fcea61"
+    },
+    {
+      "claim_id": "5075dfc0-9000-42b5-9965-5bef372168ac",
+      "result_id": "109f1142-a511-47af-91f5-af6843fcea61"
+    },
+    {
+      "claim_id": "297d60e2-8acd-4764-b352-df9493d72d72",
+      "result_id": "109f1142-a511-47af-91f5-af6843fcea61"
+    },
+    {
+      "claim_id": "234264e9-c111-4b35-a611-9634df8d5dd2",
+      "result_id": "109f1142-a511-47af-91f5-af6843fcea61"
+    },
+    {
+      "claim_id": "2a3edb63-7567-4241-ab8e-995c8a14a10b",
+      "result_id": "109f1142-a511-47af-91f5-af6843fcea61"
+    },
+    {
+      "claim_id": "cac85afb-5ab0-41b7-92ff-d1d51ef6dcea",
+      "result_id": "ddddef37-f74f-44c2-9a1a-a4127c0d249f"
+    },
+    {
+      "claim_id": "f9cab18e-58c9-4fc4-be62-75a90bfc1dd3",
+      "result_id": "ddddef37-f74f-44c2-9a1a-a4127c0d249f"
+    },
+    {
+      "claim_id": "a915b6e8-ca8f-492d-8be1-3f42fe9505a1",
+      "result_id": "ddddef37-f74f-44c2-9a1a-a4127c0d249f"
+    },
+    {
+      "claim_id": "14a359b7-bfe0-494f-8a92-02093bdd9b9d",
+      "result_id": "ddddef37-f74f-44c2-9a1a-a4127c0d249f"
+    },
+    {
+      "claim_id": "dff3fdde-a933-4e18-a25b-4c64a38d9051",
+      "result_id": "ddddef37-f74f-44c2-9a1a-a4127c0d249f"
+    },
+    {
+      "claim_id": "e96b33dd-3e1c-470e-bceb-1be22ecc53a7",
+      "result_id": "ddddef37-f74f-44c2-9a1a-a4127c0d249f"
+    },
+    {
+      "claim_id": "a4e23a80-51ec-4502-94be-dc476468089a",
+      "result_id": "ddddef37-f74f-44c2-9a1a-a4127c0d249f"
+    },
+    {
+      "claim_id": "b31601c9-f716-4cf1-82fb-db6e05dbf74b",
+      "result_id": "ddddef37-f74f-44c2-9a1a-a4127c0d249f"
+    },
+    {
+      "claim_id": "b63180a5-99fc-4460-98bf-fa56538a45d3",
+      "result_id": "ddddef37-f74f-44c2-9a1a-a4127c0d249f"
+    },
+    {
+      "claim_id": "d45abfd3-7014-49a9-83d1-9faa8908d882",
+      "result_id": "a0eed145-3f21-4e51-b1fc-329cfe3784a6"
+    },
+    {
+      "claim_id": "b90ac805-c497-46b8-86c5-33648ab140b7",
+      "result_id": "a0eed145-3f21-4e51-b1fc-329cfe3784a6"
+    },
+    {
+      "claim_id": "6bcec9d3-a6ab-4b5a-992b-5dc75fb0c621",
+      "result_id": "a0eed145-3f21-4e51-b1fc-329cfe3784a6"
+    },
+    {
+      "claim_id": "91de2bbd-4f6c-45c8-90ce-29de70f53cbe",
+      "result_id": "a0eed145-3f21-4e51-b1fc-329cfe3784a6"
+    },
+    {
+      "claim_id": "f616d1f2-5745-4df3-933b-d4821b1c1c0b",
+      "result_id": "2531bcaf-b57d-4662-bae5-b94d81328e74"
+    },
+    {
+      "claim_id": "1e346f41-6d95-4b88-9070-15155bd9d44a",
+      "result_id": "2531bcaf-b57d-4662-bae5-b94d81328e74"
+    },
+    {
+      "claim_id": "87309263-db0a-4362-bbc0-415819b20984",
+      "result_id": "2531bcaf-b57d-4662-bae5-b94d81328e74"
+    },
+    {
+      "claim_id": "fe31ac7c-35a4-435c-a200-6df78386c24b",
+      "result_id": "2531bcaf-b57d-4662-bae5-b94d81328e74"
+    },
+    {
+      "claim_id": "3f389158-1d80-407e-b6d2-12649dc83563",
+      "result_id": "c0bd6042-8c36-47b6-b425-a4b8798a4426"
+    },
+    {
+      "claim_id": "ab4b25f6-bede-4e62-82e4-57174f7c941e",
+      "result_id": "c0bd6042-8c36-47b6-b425-a4b8798a4426"
+    },
+    {
+      "claim_id": "01a977e6-c83d-4331-8f42-279327197bbc",
+      "result_id": "c0bd6042-8c36-47b6-b425-a4b8798a4426"
+    },
+    {
+      "claim_id": "15a13523-90a4-4065-9381-c1efb2ab6125",
+      "result_id": "c0bd6042-8c36-47b6-b425-a4b8798a4426"
+    },
+    {
+      "claim_id": "65a50b44-7840-419b-b1d8-21d71520db9d",
+      "result_id": "c0bd6042-8c36-47b6-b425-a4b8798a4426"
+    },
+    {
+      "claim_id": "34279b10-0bcc-49cb-952e-f82924b21e34",
+      "result_id": "c0bd6042-8c36-47b6-b425-a4b8798a4426"
+    },
+    {
+      "claim_id": "4012fceb-fb32-4fc8-b3f0-3c029d7af298",
+      "result_id": "c0bd6042-8c36-47b6-b425-a4b8798a4426"
+    },
+    {
+      "claim_id": "725771f2-b273-40ee-be48-fa0e32c6bdea",
+      "result_id": "db261841-a25b-4f77-a00c-f72a366ad595"
+    },
+    {
+      "claim_id": "df6f8664-7c41-40d0-8dbf-7f2a4c607c02",
+      "result_id": "db261841-a25b-4f77-a00c-f72a366ad595"
+    },
+    {
+      "claim_id": "5dbafc66-7560-48ac-b7dd-0aafd34d8a3a",
+      "result_id": "db261841-a25b-4f77-a00c-f72a366ad595"
+    },
+    {
+      "claim_id": "74d39b78-c31a-4a7a-973a-8e1c35789785",
+      "result_id": "db261841-a25b-4f77-a00c-f72a366ad595"
+    },
+    {
+      "claim_id": "cc8e74f3-edfc-490e-a77f-830faaae8cfc",
+      "result_id": "db261841-a25b-4f77-a00c-f72a366ad595"
+    },
+    {
+      "claim_id": "ff0c278a-b3ce-4f86-8612-b1916269038d",
+      "result_id": "bcd51aa0-5a99-48ff-9012-1386be2d46bc"
+    },
+    {
+      "claim_id": "5a4a2d2f-6609-4118-a4c2-71211f8017cf",
+      "result_id": "bcd51aa0-5a99-48ff-9012-1386be2d46bc"
+    },
+    {
+      "claim_id": "fb3aeb97-7574-49b4-891b-ff048077a5d0",
+      "result_id": "bcd51aa0-5a99-48ff-9012-1386be2d46bc"
+    },
+    {
+      "claim_id": "048bd4c5-123c-4df8-a882-b2c4af741fd7",
+      "result_id": "bcd51aa0-5a99-48ff-9012-1386be2d46bc"
+    },
+    {
+      "claim_id": "9e2801f0-4770-44f4-9fcb-08d625cb6533",
+      "result_id": "89ee9bfa-1b5a-46f0-af56-52d7be16daad"
+    },
+    {
+      "claim_id": "303150aa-1716-4267-8503-86d2e24fc7b8",
+      "result_id": "89ee9bfa-1b5a-46f0-af56-52d7be16daad"
+    },
+    {
+      "claim_id": "da06dea8-bb38-4b00-9fe5-467c5fd6eb56",
+      "result_id": "89ee9bfa-1b5a-46f0-af56-52d7be16daad"
+    },
+    {
+      "claim_id": "31a747a9-7e63-4b1e-968a-0cab8dcf124f",
+      "result_id": "89ee9bfa-1b5a-46f0-af56-52d7be16daad"
+    },
+    {
+      "claim_id": "3f1c3572-06cb-4c0f-95d1-236cb0e129b9",
+      "result_id": "d39732c9-7d7c-4bd7-af03-db4189c249a2"
+    },
+    {
+      "claim_id": "35869c1e-789a-420b-ab55-78158f8a06ad",
+      "result_id": "d39732c9-7d7c-4bd7-af03-db4189c249a2"
+    },
+    {
+      "claim_id": "a9a57b84-c1e4-4520-ad3a-10f9e45a94d5",
+      "result_id": "d39732c9-7d7c-4bd7-af03-db4189c249a2"
+    },
+    {
+      "claim_id": "edfa10b6-fc34-4c86-ac46-c7e362a85835",
+      "result_id": "88ecee53-0578-4231-bb47-28f8ba9da79d"
+    },
+    {
+      "claim_id": "1ac45a03-a082-4224-9613-e4242b0134b0",
+      "result_id": "88ecee53-0578-4231-bb47-28f8ba9da79d"
+    },
+    {
+      "claim_id": "c57ed5a7-a41f-46b2-a9b5-e8140046a24c",
+      "result_id": "88ecee53-0578-4231-bb47-28f8ba9da79d"
+    },
+    {
+      "claim_id": "3f8f6428-ec9a-447d-a3ab-bf49ba80d1b5",
+      "result_id": "88ecee53-0578-4231-bb47-28f8ba9da79d"
+    },
+    {
+      "claim_id": "727ca454-1ba2-417e-91d0-91d9079e9f44",
+      "result_id": "216ae5da-8bca-4524-bfac-5b7af976a2cf"
+    },
+    {
+      "claim_id": "1d886399-82e5-46eb-897b-ddd7758e6b4a",
+      "result_id": "216ae5da-8bca-4524-bfac-5b7af976a2cf"
+    },
+    {
+      "claim_id": "e4e44c8b-48f0-442f-916f-6170404c23f7",
+      "result_id": "216ae5da-8bca-4524-bfac-5b7af976a2cf"
+    },
+    {
+      "claim_id": "063038b3-6133-46ec-bf04-e48b14f8fca8",
+      "result_id": "216ae5da-8bca-4524-bfac-5b7af976a2cf"
+    },
+    {
+      "claim_id": "da151cb7-2775-4237-b0cf-bf97f2b88daa",
+      "result_id": "216ae5da-8bca-4524-bfac-5b7af976a2cf"
+    },
+    {
+      "claim_id": "97532d82-4ab4-4ecb-8c05-4f534bee1aed",
+      "result_id": "216ae5da-8bca-4524-bfac-5b7af976a2cf"
+    },
+    {
+      "claim_id": "9b6f7ac4-94e0-46f0-bbb5-a63a2679d958",
+      "result_id": "216ae5da-8bca-4524-bfac-5b7af976a2cf"
+    },
+    {
+      "claim_id": "6320204d-884c-46d1-ac5a-087685377f58",
+      "result_id": "216ae5da-8bca-4524-bfac-5b7af976a2cf"
+    },
+    {
+      "claim_id": "bc88eb00-693b-47c1-8fc4-9a06d869521a",
+      "result_id": "216ae5da-8bca-4524-bfac-5b7af976a2cf"
+    },
+    {
+      "claim_id": "b80854c0-554c-40fd-b92d-b4c440a69f2d",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "6b035e06-7613-40bd-ac57-5a9387118720",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "52f52e86-a0a1-40a6-9fe0-2182bb1091bd",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "cae3ba99-bca5-4fc3-a331-7bf3a621513b",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "604a74f9-ca8a-4e63-8431-871c2add7584",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "a4213058-0eca-4752-b7a9-f125a81f9e5b",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "524a5950-2b76-40a7-acbc-f60f40e48a77",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "e7eb3fb8-c502-48a8-b1ca-22cee3010522",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "29d23fea-cccb-4318-99fe-5f40d964a87c",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "49be552f-4901-4b42-a3b2-9ae1c9ae9387",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "fc8fd125-bcbb-4b3f-973b-db71ad1290d4",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "be6ac0ca-7d01-46ce-aab2-c26f1ed2c82f",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "ff128176-95b8-4993-a92d-2916c5bf37f1",
+      "result_id": "9e5f69d1-b08a-4a95-8094-e542b376f7ff"
+    },
+    {
+      "claim_id": "9ef045ef-7624-48b3-ac18-0175e356974a",
+      "result_id": "cacfa6b1-cbcc-41e1-adad-9a789d6b72ad"
+    },
+    {
+      "claim_id": "8931fcc9-1ae2-46f0-a3db-e5a37fa71f54",
+      "result_id": "cacfa6b1-cbcc-41e1-adad-9a789d6b72ad"
+    },
+    {
+      "claim_id": "b30b7960-c0b7-4d02-b385-fe1c90686ce5",
+      "result_id": "cacfa6b1-cbcc-41e1-adad-9a789d6b72ad"
+    },
+    {
+      "claim_id": "cd3ed30b-27c7-4f74-8092-0ed5c92d19d7",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "8c3fa1b2-4fc1-404a-8be5-1a7dff39cec1",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "c9c463bb-caaa-4ce4-ac87-6f512bf020b9",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "d2b4a44c-9f92-4c84-9ce9-ac4afbe766ca",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "69f91f32-b923-4d75-8177-2112fc90eb1c",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "4b12e03a-3243-4f31-928b-9b9482700ed3",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "94091837-c9b5-49fa-a455-44d61421a0a8",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "816dc03d-6546-4228-b4a4-fae8ba258431",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "2d5f8ad4-e5c9-485e-bb0b-ad50e3623408",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "6c9ec610-3d7f-4325-a192-c064a29b511d",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "4f244e6d-7fd5-4067-9ba9-530188d18695",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "a15d274a-0ea3-4abf-b11d-9605d4006791",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "652030eb-9cbd-4654-8bd3-85b46ba6361c",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "234668c4-dbbd-4277-9961-2f7643accac1",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "82c739a8-a35e-4c90-9a02-9402cadf9400",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "0986f89b-57b6-4009-bf78-a7ba5280cb33",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "af3f97b4-1e43-48d6-b4e3-36e6192cdda9",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "01c66889-0126-45ff-ac4b-7367ddeda3e9",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "4110b70d-dac6-41e1-ad93-e1ca2e8aa812",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "76ebce50-a024-4c70-b7ee-075bbecec84f",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "ca881ce2-5f9c-4daa-83be-064899437e06",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "e9306857-bf02-4bd7-891e-b4b096635238",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "f119c5e8-c16b-4992-9f7c-813d6c6ea240",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    },
+    {
+      "claim_id": "4e1fe955-2700-4e39-b55a-722825709e93",
+      "result_id": "d5d5179e-8237-4cd7-b15d-05e6891c2899"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors establish the clinical context for GBM immunotherapy, citing that GBM is highly aggressive with poor survival, PD-1 inhibitor trials show limited response (\u22648% long-term responders), and that GBM contains distinct molecular subtypes (MES, PN, CL) with immunosuppressive microenvironments dominated by TAMs. Previous TAM-targeting strategies showed limited clinical success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by appropriate citations to established literature (Stupp et al., 2005; Reardon et al., 2017; Verhaak et al., 2010; Hambardzumyan et al., 2016; Pyonteck et al., 2013). The background establishes the scientific rationale for the study and accurately represents prior work in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Clinical analysis of GBM patients treated with nivolumab (n=9, median 3.5 months treatment) revealed that PD-L1 and CD163 immunohistochemistry staining patterns were not predictive of response. MethylCIBERSORT analysis of 435 glioma samples showed MES patients had high CD14 monocytic/neutrophilic and low CD8+ T-cell methylation signatures, while PN patients showed the opposite pattern. However, these methylation signatures did not distinguish responders from non-responders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data are presented (C19-C24), the small patient cohort (n=9) severely limits statistical power to assess predictive biomarkers. The definition of 'responders' (\u22653 months clinical/radiographic stability) is relatively short and may not capture durable responses. The methylCIBERSORT analysis uses a larger cohort (n=435) but lacks information on treatment response in that cohort. The conclusion that 'current static biomarkers are poor predictors' (C25) is premature given the limited sample size and lack of rigorous statistical testing with appropriate corrections for multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors developed a GBM-on-a-Chip microphysiological system containing 3D brain microvessels (hBMVECs), patient-derived GBM cells, TAMs differentiated from U937 monocytes with PMA and GBM-conditioned media (30% cell volume), and allogeneic CD8+ T-cells in a brain-mimicking HA-rich Matrigel ECM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The system design is clearly described with appropriate methodological details and supporting figures (Figure 2). The 30% TAM composition is justified by citation to Hambardzumyan et al., 2016. The use of established differentiation protocols (Shi et al., 2017) and brain-mimicking ECM (Wang et al., 2019) provides validation. However, the use of allogeneic rather than autologous T-cells is a significant limitation acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In the GBM-on-a-Chip system, PN GBM exhibited significantly higher numbers and migration speeds of allogeneic CD8+ T-cell infiltration compared to CL and MES GBM after 3 days. T-cell motility was free and active in PN GBM, limited in CL GBM, and arrested in MES GBM. In the absence of TAM, CD8+ T-cell extravasation increased to 15 cells/mm\u00b2, suggesting TAMs inhibit T-cell extravasation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by quantitative data in Figure 2G-I showing statistically significant differences (p<0.05) in T-cell infiltration numbers, migration speeds, and trajectories across GBM subtypes. The TAM depletion experiment (Figure 2\u2014figure supplement 3) provides mechanistic insight. However, the study would benefit from reporting effect sizes, confidence intervals, and sample sizes for each measurement. The use of allogeneic T-cells may not fully recapitulate autologous immune responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "IL-2-activated allogeneic CD8+ T-cells showed cytotoxic activity against GBM cells with higher apoptosis ratios compared to conditions without T-cells. T-cells expressed GZMB and CD69 but weak perforin, with lower expression of activation markers in MES GBM. The ratio of activated CD154+CD8+ T-cells was markedly decreased in all GBM subtypes, most significantly in MES GBM, indicating subtype-specific immunosuppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The apoptosis data (Figure 2J) and activation marker analysis (Figure 3B-C, Figure 3\u2014figure supplement 1) support these claims with both immunostaining and qPCR validation. The use of multiple markers (CD154, CD69, GZMB, perforin) provides comprehensive characterization. Statistical significance is demonstrated (p<0.05). However, the weak perforin expression across all conditions raises questions about the full cytotoxic potential of the T-cells in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The MES GBM niche was characterized by highest PD-1 expression on CD8+ T-cells and PD-L1 on GBM cells, significantly more CD163+ M2-TAMs compared to PN and CL subtypes, high CSF-1 secretion, and elevated anti-inflammatory cytokines (TGF-\u03b21, IL-10) relative to pro-inflammatory cytokines (TNF-\u03b1, IFN-\u03b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by multiple complementary assays: immunostaining (Figure 3B, 3D-E), qPCR (Figure 3C, Figure 5C), and ELISA (Figure 3F-G). The data are consistent with patient sample analysis (Figure 1) and show statistically significant differences (p<0.05). The multi-modal validation strengthens confidence in the findings. However, the cytokine data (Figure 3G) show considerable variability across individual patient-derived lines, suggesting heterogeneity within subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The IDH-mutant GBM (patient MGG152) showed similar cellular and cytokine conditions to IDH-wildtype PN GBM in the on-chip study, potentially due to poor in vitro survival of IDH-mutant GBM cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is based on data from a single IDH-mutant patient sample (Figure 3\u2014figure supplement 2). The proposed explanation for similarity to PN GBM (poor in vitro survival) is speculative and not directly tested. IDH-mutant GBMs are known to have distinct biology (C67), so the lack of difference may reflect technical limitations rather than biological reality. Additional IDH-mutant samples and validation of cell viability would be needed to support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C68",
+      "C69"
+    ],
+    "result": "Whole genome DNA methylation analysis revealed that co-culture of GBM cells with macrophages resulted in distinct epigenetic profiles compared to monocultures, with bidirectional effects. Rap1 signaling pathway was upregulated in both co-cultured GBM and macrophage cells. PD-L1 promoter methylation was slightly hypomethylated in both mono- and co-cultured GBM cells, indicating PD-L1 expression was not epigenetically silenced in the absence of TAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DNA methylation analysis (Figure 4) with tSNE visualization demonstrates clear separation between culture conditions. KEGG pathway analysis (Figure 4\u2014figure supplement 1) supports Rap1 signaling upregulation with appropriate citation (Katagiri et al., 2002). PD-L1 promoter analysis (Figure 4\u2014figure supplement 2) directly addresses the epigenetic regulation question. However, the functional significance of these methylation changes is not experimentally validated, and the inference about Rap1 regulating T-cell activation (C68) is speculative without functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "No significant changes in ECM component deposition (HA, laminin, collagen IV, fibronectin) were observed across different GBM subtypes over 3 days of culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This negative result is supported by quantitative analysis presented in Figure 4\u2014figure supplement 3. The authors appropriately acknowledge this may reflect the short culture period (3 days) and predefined ECM composition rather than true biological equivalence. This is an important control showing the ECM scaffold remains relatively stable during the experimental timeframe.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CSF-1R inhibitor BLZ945 suppressed M2 macrophage polarization (CD163 expression) in all GBM subtypes, with greater effect in CL and MES than PN. However, BLZ945 alone did not change PD-L1 expression and did not significantly reverse immunosuppression of CD8+ T-cells (CD154 expression). BLZ945 significantly enhanced CD8+ T-cell extravasation compared to PD-1 blockade alone, while PD-1 inhibition alone enhanced T-cell activation in PN and MES GBM without increasing extravasation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by immunostaining, qPCR (Figure 5B-C, Figure 5\u2014figure supplement 1), and functional assays (Figure 5D-E) with appropriate statistical testing (p<0.05). The data are consistent with previous studies (Pyonteck et al., 2013; Zhu et al., 2014). The finding that BLZ945 monotherapy is insufficient to reverse immunosuppression is an important negative result that motivates the combination therapy approach. Sample sizes appear adequate (n>80 for key measurements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C58",
+      "C60"
+    ],
+    "result": "PD-1 and CSF-1R dual blockade increased CD8+ T-cell extravasation, reversed immunosuppression (increased TNF-\u03b1, decreased TGF-\u03b21), and augmented cytotoxic function with higher GBM apoptosis across all subtypes, with particular efficacy in MES GBM. The authors conclude that co-targeting M2-TAM could serve as a potential combinational therapy strategy for improving anti-PD-1 immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual blockade effects are demonstrated across nine patient-derived GBM lines with multiple readouts: T-cell extravasation (Figure 5D), activation (Figure 5E), cytokine production (Figure 5F, Figure 5\u2014figure supplement 2), and tumor apoptosis (Figure 5G-H, Figure 5\u2014figure supplement 3). Statistical significance is shown (p<0.05) with appropriate controls. The stacked bar chart (Figure 5H) effectively summarizes patient-specific responses. However, the therapeutic conclusion (C58) is based on an ex vivo model with allogeneic T-cells, so clinical translation requires validation in appropriate in vivo models and ultimately clinical trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C63"
+    ],
+    "result": "Microglia in the GBM microenvironment promoted PD-1 expression on allogeneic CD8+ T-cells but did not significantly change GBM cell apoptosis response to dual blockade treatment compared to the macrophage-only system. The authors infer that microglia might have similar immunosuppressive effects as PBMC-derived macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The microglia experiments (Figure 5\u2014figure supplement 4) show increased PD-1 expression (C56) but no difference in apoptosis outcomes (C57). However, these are limited experiments that do not comprehensively characterize microglia function. The inference that microglia have 'similar immunosuppressive effects' (C63) is not well-supported\u2014the data only show similarity in one outcome (apoptosis) while showing a difference in another (PD-1 expression). More extensive characterization of microglia phenotype, cytokine production, and functional effects would be needed to support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors conclude that GBM patients of transcriptionally defined subtypes have distinct epigenetic and immune signatures leading to different immunosuppressive mechanisms, and that TAM-GBM interactions contribute to immunosuppressive microenvironments and therapy resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion integrates findings from clinical samples (C19-C24), on-chip experiments (C30-C42), and epigenetic analysis (C44-C47). The data consistently show subtype-specific differences in immune cell infiltration, TAM phenotype, cytokine profiles, and T-cell function. The correlation between TAM infiltration and tumor progression (C65) is observational but consistent with the mechanistic data. However, the causal claim that TAM-GBM interactions 'contribute to' resistance (C66) is inferential\u2014the study demonstrates correlation and mechanism but does not definitively prove causation in a clinical context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C67"
+    ],
+    "result": "The authors cite that BBB is uniformly disrupted in GBM leading to leaky blood vessels, and that IDH-wildtype GBMs display greater tumor-infiltrating lymphocytes and elevated PD-L1 expression compared to IDH-mutant GBMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriately cited claims from the literature (Sarkaria et al., 2018; Berghoff et al., 2017) used to contextualize the study design and findings. The BBB disruption justifies the simplified vascular model without intact BBB. These represent accurate reporting of prior work.",
+    "result_type": "MINOR"
+  }
+]

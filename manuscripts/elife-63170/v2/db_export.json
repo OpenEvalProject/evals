@@ -1,0 +1,2098 @@
+{
+  "submission": {
+    "id": "f481b7fb-eb83-4bda-83bb-a8fc239cfa2d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:28:37.672831Z",
+    "updated_at": "2025-12-02T21:28:37.672831Z"
+  },
+  "content": [
+    {
+      "id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "submission_id": "f481b7fb-eb83-4bda-83bb-a8fc239cfa2d",
+      "content_type": "manuscript",
+      "content_text": "# Sexual dimorphism in trait variability and its eco-evolutionary and statistical implications\n\n## Authors\n\n- Susanne RK Zajitschek<sup>1</sup> ([ORCID: 0000-0003-4676-9950](https://orcid.org/0000-0003-4676-9950)) \u2020\n- Felix Zajitschek<sup>1</sup> ([ORCID: 0000-0001-6010-6112](https://orcid.org/0000-0001-6010-6112))\n- Russell Bonduriansky<sup>1</sup> ([ORCID: 0000-0002-5786-6951](https://orcid.org/0000-0002-5786-6951))\n- Robert C Brooks<sup>1</sup> ([ORCID: 0000-0001-6926-0781](https://orcid.org/0000-0001-6926-0781))\n- Will Cornwell<sup>1</sup> ([ORCID: 0000-0003-4080-4073](https://orcid.org/0000-0003-4080-4073))\n- Daniel S Falster<sup>1</sup> ([ORCID: 0000-0002-9814-092X](https://orcid.org/0000-0002-9814-092X))\n- Malgorzata Lagisz<sup>1</sup> ([ORCID: 0000-0002-3993-6127](https://orcid.org/0000-0002-3993-6127))\n- Jeremy Mason<sup>3</sup> ([ORCID: 0000-0002-2796-5123](https://orcid.org/0000-0002-2796-5123))\n- Alistair M Senior<sup>4</sup> ([ORCID: 0000-0001-9805-7280](https://orcid.org/0000-0001-9805-7280))\n- Daniel WA Noble<sup>1</sup> ([ORCID: 0000-0001-9460-8743](https://orcid.org/0000-0001-9460-8743))\n- Shinichi Nakagawa<sup>1</sup> ([ORCID: 0000-0002-7765-5182](https://orcid.org/0000-0002-7765-5182)) \u2020\n\n### Affiliations\n\n1. Evolution & Ecology Research Center, School of Biological, Earth, and Environmental Sciences, University of New South Wales Sydney Australia\n2. Liverpool John Moores University, School of Biological and Environmental Sciences Liverpool United Kingdom\n3. European Bioinformatics Institute (EMBL-EBI), European Molecular Biology Laboratory, Wellcome Trust Genome Campus Hinxton United Kingdom\n4. University of Sydney, Charles Perkins Centre, School of Life and Environmental Sciences, School of Mathematics and Statistics Sydney Australia\n5. Division of Ecology and Evolution, Research School of Biology, Australian National University Canberra Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nBiomedical and clinical sciences are experiencing a renewed interest in the fact that males and females differ in many anatomic, physiological, and behavioural traits. Sex differences in trait variability, however, are yet to receive similar recognition. In medical science, mammalian females are assumed to have higher trait variability due to estrous cycles (the \u2018estrus-mediated variability hypothesis\u2019); historically in biomedical research, females have been excluded for this reason. Contrastingly, evolutionary theory and associated data support the \u2018greater male variability hypothesis\u2019. Here, we test these competing hypotheses in 218 traits measured in >26,900 mice, using meta-analysis methods. Neither hypothesis could universally explain patterns in trait variability. Sex bias in variability was trait-dependent. While greater male variability was found in morphological traits, females were much more variable in immunological traits. Sex-specific variability has eco-evolutionary ramifications, including sex-dependent responses to climate change, as well as statistical implications including power analysis considering sex difference in variance.\n\n## Introduction\n\nSex differences arise because selection acts on the two sexes differently, especially on traits associated with mating and reproduction (Darwin, 1871). Therefore, sex differences are widespread, a fact which is unsurprising to any evolutionary biologist. However, scientists in many (bio-)medical fields have not necessarily regarded sex as a biological factor of intrinsic interest (Clayton, 2016; Flanagan, 2014; Karp et al., 2017; Klein et al., 2015; Prendergast et al., 2014; Shansky and Woolley, 2016). Therefore, many (bio-)medical studies have only been conducted with male subjects. Consequently, our knowledge is biased. For example, we know far more about drug efficacy in male compared to female subjects, contributing to a poor understanding of how the sexes respond differently to medical interventions (Nowogrodzki, 2017). This gap in knowledge is predicted to lead to overmedication and adverse drug reactions in women (Zucker and Prendergast, 2020). Only recently have (bio-)medical scientists started considering sex differences in their research (Dorris et al., 2015; Ingvorsen et al., 2017; Robinson et al., 2017; Smarr et al., 2017; Ahmad et al., 2017; Foltin and Evans, 2018; Thompson et al., 2018). Indeed, the National Institutes of Health (NIH) have now implemented new guidelines for animal and human research study designs, requiring that sex be included as a biological variable (Clayton, 2016; Clayton and Collins, 2014; NIH, 2015a).\n\nWhen comparing the sexes, biologists generally focus on mean differences in trait values, placing little or no emphasis on sex differences in trait variability (see Figure 1 for a diagram explaining differences in means and variances). Despite this, two hypotheses exist that explain why trait variability might be expected to differ between the sexes. Interestingly, these two hypotheses make opposing predictions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63170/elife-63170-fig1-v2.jpg)\n\n**Figure 1.:** The orange shading represents females (F), turquoise shading stands for males (M). The solid circle represents a mean trait value within the respective group. Solid lines represent standard deviation, with upper and lower bounds indicated by diamond shapes. Below, we present three types of effect sizes that can be used for comparing two groups, along with the respective formulas and interpretations. Compared to lnVR (the ratio of SD), lnCVR (the ratio of CV or relative variance) provides a more general measure of the difference in variability between two groups (mean-adjusted variability ratio).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63170/elife-63170-fig1-figsupp1-v2.jpg)\n\nFirst, the \u2018estrus-mediated variability hypothesis\u2019 (Figure 2), which emerged in the (bio-)medical research field, assumes that the female estrous cycle (see e.g. Prendergast et al., 2014; Beery and Zucker, 2011) causes higher variability across traits in female subjects. A wide range of labile traits are presumed to co-vary with physiological changes that are induced by reproductive hormones. High variability is, therefore, expected to be particularly prominent when the stage of the estrous cycle is unknown and unaccounted for. This higher trait variability, resulting from females being at different stages of their estrous cycle, is the main reason for why female research subjects are often excluded from biomedical research trials, especially in the fields of neuroscience, physiology and pharmacology (NIH, 2015a). Female exclusion has traditionally been justified based on the grounds that including females in empirical research leads to a loss of statistical power, or that animals must be sampled across the estrous cycle for one to make valid conclusions, requiring more time and resources.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63170/elife-63170-fig2-v2.jpg)\n\n**Figure 2.:** For greater male variability, the within-subject (or within-trait) variation Vwithin could be potentially negligible or is equal in males and females. This is illustrated as the shaded distributions around each individual mean (dashed vertical lines), which are of equal area for the males (turquoise) and females (orange). The greater value of Vtotal is driven by wider distribution of mean trait values in males compared to females (i.e. Vbetween, represented by a thick horizontal bar). The estrus-mediated variability hypothesis, in contrast, assumes that within-subject [or within-trait] variability is much higher in females than in males (broader orange-shaded trait distributions than turquoise distributions), while the variability of the means between individuals stays the same (thick horizontal bars).\n\nSecond, the \u2018greater male variability hypothesis\u2019 suggests males exhibit higher trait variability because of two different mechanisms. The first mechanism is based on males being the heterogametic sex in mammals. Mammalian females possess two X chromosomes, leading to an \u2018averaging\u2019 of trait expression across the genes on each chromosome. In contrast, males exhibit greater variance because expression of genes on a single X chromosome is likely to lead to more extreme trait values (Reinhold and Engqvist, 2013). The second mechanism is based on males being under stronger sexual selection (Pomiankowski and Moller, 1995; Cuervo and M\u00f8ller, 1999; Cuervo and M\u00f8ller, 2001). Empirical evidence supports higher variability of traits that are sexually selected, often harbouring high genetic variance and being condition-dependent, which makes sense as \u2018condition\u2019 as a trait is likely to be based on numerous loci (Rowe and Houle, 1996; Tomkins et al., 2004). Thus, higher genetic and, thus, phenotypic variance resulting from sexual selection is expected to characterise sexually selected traits. In mammals, it is likely that both mechanisms are operating concomitantly. So far, the \u2018greater male variability hypothesis\u2019 has gained some support in the evolutionary and psychological literature (Reinhold and Engqvist, 2013; Lehre et al., 2009).\n\nHere, we conduct the first comprehensive test of the greater male variability and estrus-mediated variability hypotheses in mice (Figure 2; Reinhold and Engqvist, 2013; Johnson et al., 2008; Hedges and Nowell, 1995; Itoh and Arnold, 2015; Becker et al., 2016; Beery, 2018), examining sex differences in variance across 218 traits in 26,916 animals. To this end, we carry out a series of meta-analyses in two steps (Figure 3). First, we quantify the natural logarithm of the male to female coefficients of variation, CV, or relative variance (lnCVR) for each cohort (population) of mice, for different traits, along with the variability ratio of male to female standard deviations, SD, on the log scale (lnVR, following Nakagawa et al., 2015, see Figure 1). Then, we analyse these effect sizes to quantify sex bias in variance for each trait using meta-analytic methods. To better understand our results, and match them to previously reported sex differences in trait means (Karp et al., 2017), we also quantify and analyse the log response ratio (lnRR). Next, we statistically amalgamate the trait-level results to test our hypotheses and to quantify the degree of sex bias in and across nine functional trait groups (for details on the grouping, see below). Our meta-analytic approach allows easy interpretation and comparison with earlier and future studies. Further, the proposed method using lnCVR (and lnVR) is probably the only practical method to compare variability between two sexes within and across studies (Nakagawa et al., 2015; Senior et al., 2020),\u00a0as far as we are aware. Also, the use of a ratio (i.e. lnRR, lnVR, lnCVR) between two groups (males and females) naturally controls for different units (e.g. cm, g, ml) as\u00a0well\u00a0as for changes in traits over time and space.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63170/elife-63170-fig3-v2.jpg)\n\n## Results\n\n### Data characteristics and workflow\n\nWe used a dataset compiled by the International Mouse Phenotyping Consortium (Dickinson et al., 2016) (IMPC, dataset acquired 6/2018). To gain insight into systematic sex differences, we only included data of wildtype-strain adult mice, between 100 and 500 days of age. We removed cases with missing data, and selected measurements that were closest to 100 days of age (young adult) when multiple measurements of the same trait were available. To obtain robust estimates of sex differences, we only used data on traits that were measured in at least two different institutions (see workflow diagram, Figure 3).\n\nOur dataset comprised 218 continuous traits (after initial data cleaning and pre-processing; Figure 3). It contains information from 26,916 mice from nine wildtype strains that were studied across 11 institutions. We combined mouse strain/institution information to create a biological grouping variable (referred to as \u2018population\u2019 in Figure 3B; see also Supplementary file 1, Table 1 for details), and the mean and variance of a trait for each population was quantified. We assigned traits according to related procedures into functionally and/or procedurally related trait groups to enhance interpretability (referred to as \u2018functional groups\u2019 hereafter; see also Figure 3G). Our nine functional trait groups were: behaviour, morphology, metabolism, physiology, immunology, hematology, heart, hearing and eye (for the rationale of these functional groups and related details, see Methods and Supplementary file 1, Table 3).\n\n### Testing the two hypotheses\n\nWe found that some means and variabilities of traits were biased towards males (i.e. \u2018male-biased\u2019, hereafter; turquoise shaded traits, Figure 4), but others towards females (i.e. \u2018female-biased\u2019, hereafter; orange shading, Figure 4) within all functional groups. These sex-specific biases occur in mean trait sizes and also in our measures of trait variability. There were strong positive relationships between mean and variance across traits (r\u00a0>\u00a00.94 on the log scale; Figure 1\u2014figure supplement 1), and therefore, we report the results of lnCVR, which controls for differences in means, in the main text. Results on lnVR are presented as figure\u00a0supplements (Figure 4\u2014figure supplements 1 and 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/63170/elife-63170-fig4-v2.jpg)\n\n**Figure 4.:** Panel (A) shows the numbers of traits that are either male-biased (turquoise) or female-biased (orange) across functional groups. The x-axes in Panel A represents the overall percentages of traits with a given direction of sex\u00a0bias: orange shading when meta-analytic mean < 0 (female-biased), turquoise shading when meta-analytic mean > 0 (male-biased). White numbers inside the turquoise bars represent numbers of traits that show male\u00a0bias within a given group of traits, numbers inside the orange bars represent the number of female-biased traits. Panel (B) shows effect sizes and 95% CI from separate meta-analysis for each functional group (Figure 3H). Traits that are male-biased in Panel B are shifted towards the righthand side of the zero-midline (near the turquoise male symbol), whereas female-biased traits are shifted towards the left (near the orange female symbol).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63170/elife-63170-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Panel B shows effect sizes from separate meta-analysis for each functional group, and Panel C contains results of heterogeneity analyses. All three panels represent results evaluated across all traits.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63170/elife-63170-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Percentages\u00a0and numbers of affected traits, for variance (lnCVR and lnVR) and means (lnRR), where there is a significant difference between the sexes (i.e. CI not overlapping zero), and where the sex bias is greater than 10% difference (regardless of significance). Panel B depicts results for the effect size magnitudes in those traits that differ between the sexes (second-order meta-analysis). Triangles represent sex bias in means (response ratio) and black circles differences in the coefficient of variation ratio (mean-adjusted variability). The orange bars represent trait groups with a female bias, turqouise bars male-biased traits.\n\nThere was no consistent pattern in which sex has more variability (lnCVR) in the examined traits (left panel in Figure 4A). Our meta-analytic results also did not support a consistent pattern of either higher male variability or higher female variability (see Figure 4B, left panel: \u2018All\u2019 indicates that across all traits and functional groups, there was no significant sex bias in variances; lnCVR\u00a0=\u00a00.005, 95% confidence interval, 95% CI = [\u22120.009 to 0.018]). However, there was high heterogeneity among traits (I2\u00a0=\u00a076.5%, Supplementary file 1, Table 4 and see also Table 5), indicating sex differences in variability are trait-dependent, corroborating our general observation that variability in some traits was male-biased but others female-biased (Figure 4A).\n\nAs expected, specific functional trait groups showed significant sex-specific bias in variability (Figure 4B). The variability among\u00a0traits within a functional group was lower than that of all the traits combined (Supplementary file 1, Table 4). For example, males exhibited an 8.05% increase in CV relative to females for morphological traits (lnCVR\u00a0=\u00a00.077; CI = [0.041 to 0.113], I2\u00a0=\u00a067.3%), but CV was female-biased for immunological traits (6.59% higher in females, lnCVR\u00a0=\u00a0\u22120.068, CI =\u00a0[\u22120.098 to 0.038], I2\u00a0=\u00a040.8%) and eye morphology (7.85% higher in females, lnCVR\u00a0=\u00a0\u22120.081, CI =\u00a0[\u22120.147 to (\u22120.016)], I2\u00a0=\u00a049.8%).\n\nThe pattern was similar for overall sexual dimorphism in mean trait values (here, a slight male bias is indicated by larger \u2018turquoise\u2019 than \u2018orange\u2019 areas; Figure 4B, right and Figure 4B, lnRR: \u2018All\u2019, lnRR\u00a0=\u00a00.012, CI = [\u22120.006 to 0.31]). Trait means (lnRR) were 7% larger for males (lnRR\u00a0=\u00a00.067; CI = [0.007 to 0.128]) in morphological traits and 15.3% larger in males for metabolic traits (lnRR\u00a0=\u00a00.142; CI = [0.036 to 0.248]). In contrast, females had 5.59% (lnRR\u00a0=\u00a00.057, CI = [\u22120.107 to (\u22120.007)]) larger means than those of males for immunological traits. We note that these meta-analytic estimates were accompanied by very large between-trait heterogeneity values (morphology I2\u00a0=\u00a099.7%, metabolism I2\u00a0=\u00a099.4%, immunology I2\u00a0=\u00a096.2; see Supplementary file 1, Table 4), indicating that even within the same functional groups, the degree and direction of sex\u00a0bias in the mean was not consistent among traits.\n\n## Discussion\n\nWe tested competing predictions from two hypotheses explaining why sex\u00a0biases in trait variability exist. Neither the \u2018greater male variability\u2019 hypothesis nor the \u2018estrus-mediated variability\u2019 hypothesis explain the observed patterns in sex-biased trait variation on their own. Therefore, our results add further empirical weight to calls that question the basis for the routine exclusion of one sex in biomedical research based on the estrus-mediated variability hypothesis (Flanagan, 2014; Klein et al., 2015; Prendergast et al., 2014; Shansky and Woolley, 2016; Becker et al., 2016). It is important to know that for each trait we estimated the mean effect size (i.e. lnCVR) over strains and locations. As such, our results may not necessarily apply to every group of mice, which may or may not result in stronger support for either of the two hypotheses.\n\n### Greater male variability vs. estrus-mediated variability?\n\nEvolutionary biologists commonly expect greater variability in the heterogametic sex than the homogametic sex. In mammals, males are heterogametic, and hence are expected to exhibit higher trait variability compared to females, which is also consistent with an expectation from sexual selection theory (Reinhold and Engqvist, 2013). Our results provide only partial support for the greater male variability hypothesis, because the expected pattern only manifested for morphological traits (see Figures 4 and 5). This result corroborates a previous analysis across animals, which found that the heterogametic sex was more variable in body size (Reinhold and Engqvist, 2013). However, our data do not support the conclusion that higher variability in males occurs across all traits, including for many other morphological traits.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/63170/elife-63170-fig5-v2.jpg)\n\nThe estrus-mediated variability hypothesis was, at least until recently (Prendergast et al., 2014; Smarr et al., 2017), regularly used as a rationale for including only male subjects in many biomedical studies. So far, we know very little about the relationship between hormonal fluctuations and general trait variability within and among female subjects. Our results are consistent with the estrus-mediated variability hypothesis for immunological traits only. Immune responses can strongly depend on sex hormones (Zuk and McKean, 1996; Grossman, 1989), which may explain higher female variability in these traits. However, if estrus status affects traits through variation in hormone levels, we would expect to also find higher female variability in physiological and hematological traits. This was not the case in our dataset. Interestingly, however, eye morphology (structural traits, which should fluctuate little across the estrous cycle) also appeared to be more variable in females than males, but little is known about sex differences in ocular traits in general (Wagner et al., 2008; Shaqiri et al., 2018). Overall, we find no consistent support for the female estrus-mediated variability hypothesis.\n\nIn line with our findings, recent studies have refuted the prediction of higher female variability (Prendergast et al., 2014; Smarr et al., 2017; Beery and Zucker, 2011; Becker et al., 2016; Beery, 2018). For example, several rodent studies have found that males are more variable than females (Prendergast et al., 2014; Smarr et al., 2017; Becker et al., 2016; Beery, 2018; Fritz et al., 2017; Mogil and Chanda, 2005). Further studies should investigate whether higher female variability in immunological traits is indeed due to the estrous cycle, or generally because of greater between-individual variation (Figure 2).\n\nIn general, we found many traits to be sexually dimorphic (Figure 5) in accordance with the previous study, which used the same database (Karp et al., 2017). Although the original study also provided estimates for sex differences in traits both with and without controlling for weight (we did not control for weight; Nakagawa et al., 2017). More specifically, males are larger than females, while females have higher immunological parameters (see Figure 5). Notably, the\u00a0most sexually dimorphic trait means also show the greatest differences in trait variance (Figures 4 and 5). Indeed, theory predicts that sexually selected traits (e.g. larger body size for males due to male-male competition) are likely more variable, as these traits are often condition-dependent (Rowe and Houle, 1996). Therefore, this sex difference in variability could be more pronounced under natural conditions compared to laboratory settings. This relationship may explain why male-biased morphological traits are larger and more variable.\n\n### Eco-evolutionary implications\n\nWe have used lnCVR values to compare phenotypic variability (CV) between the sexes. When lnCVR is used for fitness-related traits, it can signify sex differences in the \u2018opportunity for selection\u2019 between females and males (Rowe and Houle, 1996). If we assume that phenotypic variation (i.e. variability in traits) has a heritable basis, then large ratios of lnCVR may indicate differences in the evolutionary potential of each sex to respond to selection, at least in the short term (Hansen and Houle, 2008). For example, more variable morphological traits of males could potentially provide them with better capacity than females to adapt morphologically to a\u00a0changing climate. We note, however, that in our study, lnCVR reflects sex differences in trait variability within strains, such that the variability differences we observe between the sexes may be partially the result of phenotypic plasticity.\n\nDemographic parameters, such as age-dependent mortality rate (Lema\u00eetre et al., 2020) can often be different for each sex. For example, a study on European sparrowhawks found that variability in mortality was higher in females compared to males (Colchero et al., 2017). In this species, sex-specific variation affects age-dependent mortality and results in higher average female life expectancy. Therefore, population dynamic models, which make predictions about how populations change in their size over time, should take sex\u00a0differences in variability into account to produce more accurate predictions (Caswell and Weeks, 1986; Lindstr\u00f6m and Kokko, 1998). In our rapidly changing world, better predictions on population dynamics are vital for understanding whether climate change is likely to result in population extinction and lead to further biodiversity loss.\n\n### Statistical and practical implications\n\nIt is now mandatory to include both sexes in biomedical experiments and clinical trials funded by the NIH, unless there exists strong justification against the inclusion of both sexes (NIH, 2015a; NIH, 2015b). In order to conduct meaningful research and make sound clinical recommendations for both male and female patients, it is necessary to understand both\u00a0how trait means\u00a0and\u00a0variances differ between the sexes. If one sex is systematically more variable in a trait of interest than the other, then experiments should be designed to accommodate relative differences in statistical power between the sexes (which has not been considered before, see Flanagan, 2014;\u00a0Klein et al., 2015; Prendergast et al., 2014; Shansky and Woolley, 2016). For example, female immunological traits are generally more variable (i.e. having higher CV and SD). Therefore, in an experiment measuring immunological traits, we would need to include a larger sample (N) of females than males (N[female]\u00a0>\u00a0N[male]; N[total]\u00a0=\u00a0N[female] + N[male]) to achieve the same power as when the experiment only includes males (N[total*]\u00a0=\u00a02N[male]). In other words, in\u00a0an experiment with both sexes we\u00a0would need a larger sample size than the same experiment with males only (N[total]\u00a0>\u00a0N[total*]).\n\nTo help researchers adjust their sex-specific sample size to achieve optimal statistical power, we provide an online tool (ShinyApp; https://bit.ly/sex-difference). This tool may serve as a starting point for checking baseline variability for each sex in mice. The sex bias (indicated by the % difference between the sexes) is provided for separate traits, procedures, and functional groups. These meta-analytic results are based on our analyses of more than 2 million rodent data points, from 26,916 individual mice. We note, however, that\u00a0variability in a trait measured in untreated individuals maintained under carefully standardized environmental conditions, as reported here, may not directly translate into the same variability when measured in experimentally treated individuals, or individuals exposed to a range of environments (i.e. natural populations or human cohorts). Further, these estimates are overall mean differences across strains and locations. Therefore, these may not be particularly informative if one\u2019s experiment only includes one specific strain. Nonetheless, we point out that our estimates may be useful in the light of a recent recommendation of using \u2018heterogenization\u2019 where many different strains are systematically included (i.e. randomized complete block design) to increase the robustness of experimental results (Voelkl et al., 2020). However, note that an experiment with heterogenization might only include a few strains with several animals per strain. Even in such a case, using just a few strains, our tool could provide potentially useful benchmarks. Incidentally, heterogenization would be key to making one\u2019s experimental outcome more generalizable (Webster and Rutz, 2020).\n\nImportantly, when two groups (e.g. males and females) show differences in variability, we violate homogeneity of variance or homoscedasticity assumptions. Such a violation is detrimental because it leads to a higher Type I error rate. Therefore, we should consider incorporating heteroscedasticity (different variances) explicitly or using robust estimators of variance (also known as \u2018the sandwich variance estimator\u2019) to prevent an inflated Type I error rate (Cleasby and Nakagawa, 2011), especially when we compare traits between the sexes.\n\n### Conclusion\n\nWe have shown that sex biases in variability occur in many mouse traits, but that the directions of those biases differ between traits. Neither the \u2018greater male variability\u2019 nor the \u2018estrus-mediated variability\u2019 hypothesis provides a general explanation for sex\u00a0differences in trait variability. Instead, we have found that the direction of the sex bias varies across traits and among trait types (Figures 4 and 5). Our findings have important ecological and evolutionary ramifications. If the differences in variability correspond to the potential of each sex to respond to changes in specific environments, this sex difference needs to be incorporated into demographic and population dynamic modelling. Moreover, in the (bio-)medical field, our results should inform decisions during study design by providing more rigorous power analyses that allow researchers to incorporate sex-specific differences for sample size. We believe that taking sex\u00a0differences in trait variability into account will help avoid misleading conclusions and provide new insights into sex differences across many areas of biological and bio-medical research. Ultimately, such considerations will not only better our knowledge, but also close the current gaps in our biased knowledge (Tannenbaum et al., 2019).\n\n## Materials and methods\n\n### Data selection and process\n\nThe IMPC (International Mouse Phenotyping Consortium) provides a comprehensive catalogue of mammalian gene function for investigating the genetics of health and disease, by systematically collecting phenotypes of knock-out and wildtype mice. To investigate differences in trait variability between the sexes, we only considered the data for wildtype control mice. We retrieved the dataset from the IMPC server in June 2018 and filtered it to contain non-categorical traits for wildtype mice. The initial dataset comprised over 2,500,000 data points for 340 traits. In cases where multiple measurements were taken over time, data cleaning started with selecting single measurements for each individual and trait. In these cases, we selected the measurement closest to \u2018100 days of age\u2019. All data are from unstaged females (with no information about the stage of their estrous cycle). We excluded data for juvenile and unsexed mice (Figure 3A; this dataset and scripts can be found on https://rpubs.com/SusZaj/ESF; https://bit.ly/code-mice-sex-diff; raw data: https://doi.org/10.5281/zenodo.3759701).\n\n### Grouping and effect-size calculation\n\nWe created a grouping variable called \u2018population\u2019 (Figure 3B). A population comprised a group of individuals belonging to a distinct wildtype strain maintained at one particular location (institution); populations were identified for every trait of interest. Our data were derived from 11 different locations/institutions, and a given location/institution could provide data on multiple populations (see Supplementary file 1, Table 1 for details on numbers of strains and institutions). We included only populations that contained data points for at least six individuals, and which had information for members of both sexes; further, populations for a particular trait had to come from at least two institutions to be eligible for inclusion. After this selection process, the dataset contained 2,300,000 data points across 232 traits. Overall, we meta-analysed traits with between 2\u201318 effect sizes (mean\u00a0=\u00a09.09 effects, SD\u00a0=\u00a04.47). However, each meta-analysis contained a total number of individual mice that ranged from 83/91 to 13467/13449 (males/females). While a minimum of N\u00a0=\u00a06 mice were used to create effect sizes for any given group (male or female), in reality samples sizes of male/female groups were much larger (males: mean\u00a0=\u00a0396.66 (SD\u00a0=\u00a0238.23), median\u00a0=\u00a0465.56; females: mean\u00a0=\u00a0407.35 (SD\u00a0=\u00a0240.31), median\u00a0=\u00a0543.89). We used the function escalc in the R package, metafor (Viechtbauer, 2010) to obtain lnCVR, lnVR and lnRR and their corresponding sampling variance for each trait for each population; we worked in the R environment for data cleaning, processing and analyses (R Development Core Team, 2017, version 3.6.0; for the versions of all the software packages used for this article and all the details and code for the statistical analyses, see Source code 1\u00a0 and repositories). As mentioned above, the use of ratio-based effect sizes, such as lnCVR, lnVR and lnRR, controls for baseline changes over time and space, assuming that these changes affect males and females similarly. However, we acknowledge that we could not test this assumption.\n\n### Meta-analyses: overview\n\nWe conducted meta-analyses at two different levels (Figure 3C\u2013J). First, we conducted a meta-analysis for each trait for all three effect-size types (lnRR, lnVR and lnCVR), calculated at the \u2018population\u2019 level (i.e. using population as a unit of analysis). Second, we statistically amalgamated overall effect sizes estimated at each trait (i.e. overall trait means as a unit of analysis) after accounting for dependence among traits. In other words, we conducted second-order meta-analyses (Nakagawa et al., 2019). We used the second-order meta-analyses for three different purposes: (A) estimating overall sex biases in variance (lnCVR and lnVR) and mean (lnRR) in the nine functional groups (for details, see below) and in all these groups combined (the overall estimates); (B) visualizing heterogeneities across populations for the three types of effect size in the nine functional trait groups, which complemented the first set of analyses (Figure 3I, Table 6 in Supplementary file 1); and (C) when traits were found to be significantly sex-biased, grouping such traits into either male-biased and female-biased traits, and then, estimating overall magnitudes of sex bias for both sexes again for the nine functional trait groups. Only the first second-order meta-analysis (A) directly related to the testing of our hypotheses, results of B and C are found in Supplementary file 1 and figures and reported in our freely accessible code.\n\n### Meta-analyses: population as an analysis unit\n\nTo obtain degree of sex bias for each trait mean and variance (Figure 3C), we used the function rma.mv in the R package metafor (Viechtbauer, 2010) by fitting the following multilevel meta-analytic model, an extension of random-effects models (sensu Nakagawa and Santos, 2012):\n\nESi\u00a0~\u00a01 + (1 |\u00a0Strainj) + (1 | Locationk) + (1 | Uniti) + Errori, where \u2018ESi\u2019 is the ith effect size (i.e. lnCVR, lnVR and lnRR) for each of 232 traits, the \u20181\u2019 is the overall intercept (other \u20181\u2019s are random intercepts for the following random effects), \u2018Strainj\u2019 is a random effect for the jth strain of mice (among nine strains), \u2018Locationk\u2019 is a random effect for the kth location (among 11 institutions), \u2018Uniti\u2019 is a residual (or effect-size level or \u2018population-level\u2019 random effect) for the ith effect size, \u2018Errori\u2019 is a random effect of the known sampling error for the ith effect size. Given the model above, meta-analytic results had two components: (1) overall means with standard errors (95% confidence intervals), and (2) total heterogeneity (the sum of the three variance components, which is estimated for the random effects). Note that overall means indicate average (marginalised) effect sizes over different strains and locations, and total heterogeneities reflect variation around overall means due to different strains and locations.\n\nWe excluded traits which did not carry useful information for this study (i.e. fixed traits, such as number of vertebrae, digits, ribs and other traits that were not variable across wildtype mice; note that this may be different for knock-down mutant strains) or where the meta-analytic model for the trait of interest did not converge, most likely due to small sample size from the dataset (14 traits, see SI Appendix, for details: Meta-analyses; 1. Population as analysis unit). We therefore obtained a dataset containing meta-analytic results for 218 traits, at this stage, to use for our second-order meta-analyses (Figure 3D).\n\n### Meta-analyses: accounting for correlated traits\n\nOur dataset of meta-analytic results included a large number of non-independent traits. To account for dependence, we identified 90 out of 218 traits, and organized them into 19 trait sub-groups (containing 2\u201310 correlated traits, see Figure 3E). For example, many measurements (i.e. traits) from hematological and immunological assays were hierarchically clustered or overlapped with each other (e.g. cell type A, B and A+B). We combined the meta-analytic results from 90 traits into 19 meta-analytic results (Figure 3F) using the function robu in the R package robumeta with the assumption of sampling errors being correlated with the default value of r\u00a0=\u00a00.8 (Fisher et al., 2017). Consequently, our final dataset for secondary meta-analyses contained 147 traits (i.e. the newly condensed 19 plus the remaining 128 independent traits, see Figure 3, Supplementary file 1, Table 2), which we assume to be independent of each other.\n\n### Second-order meta-analyses: trait as an analysis unit\n\nWe created our nine overarching functional groups of traits (Figure 3G) by condensing the IMPC\u2019s 26 procedural categories (\u2018procedures\u2019) into related clusters. The categories were based on procedures that were biologically related, in conjunction with measurement techniques and the\u00a0number of\u00a0available traits in each category (see Supplementary file 1, Table 3 for a list of clustered traits, procedures and grouping terms). To test our two hypotheses about how trait variability changes in relation to sex, we estimated overall effect sizes for nine functional groups by aggregating meta-analytic results via \u2018classical\u2019 random-effect models using the function rma.uni in the R package metafor (Viechtbauer, 2010). In other words, we conducted three sets of 10 second-order meta-analyses (i.e. meta-analyzing 3 types of effect size: lnRR, lnVR and lnCVR for nine functional groups and one for all the groups combined, Figure 3H). Although we present the frequencies of male- and female-biased traits in Figure 4A, we did not run inferential statistical tests on these counts because such tests would be considered as vote-counting, which has been severely criticised in the meta-analytic literature (Higgins, 2019).\n",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "9e32f3bc-75d6-47a2-95b2-6301c98c409b",
+      "submission_id": "f481b7fb-eb83-4bda-83bb-a8fc239cfa2d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rosalyn Gloag, University of Sydney Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63170.sa1](https://doi.org/10.7554/eLife.63170.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study makes a valuable contribution to our understanding of sex-differences in trait variability. It applies a meta-analytic approach to mouse datasets to test two hypotheses of sex-specific variability in mammals: that females show greater variability due to estrous, and that males show greater variability due to heterogamy and/or sexual selection. It reveals that, at least for mice, neither hypothesis is universally true for all traits. Rather, variability is greater in females for some traits, and greater in males for others. These interesting results provide new insights into sex bias in variability, that will inform experimental design in diverse biological fields.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Sex and Power: sexual dimorphism in trait variability and its eco-evolutionary and statistical implications\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Rosalyn Gloag as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Irving Zucker (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions, and the individual reviews appended below, we regret to inform you that your work in its current form is not suitable for publication in eLife.\n\nAll reviewers agreed that the topic of the study was an interesting one, and that the issue of sex differences in trait variability is relevant to good experimental design. As you'll see below, however, reviewer #2 felt that the current analytical treatment of this mouse dataset is not appropriate to the question. Of particular concern is that sources of variability other than sex were not adequately considered. We recommend that this issue, and others outlined in the reviews below, are carefully addressed in any revision. Given the interest in the topic, we are prepared to reconsider a thoroughly revised version of the manuscript, if you think you can adequately address the concerns raised, but please note that this does not guarantee formal re-evaluation let alone eventual acceptance.\n\nReviewer #1:\n\nThis study looks at whether there are sex differences in the variability of traits in mice, via a meta-analysis of published datasets. The analyses show that females typically show greater variability in traits categorised as immunological, while males show greater variability in morphological traits. Traits related to the eye were also more variable in females. These findings are interpreted in light of evolutionary theory about greater between-individual variability in males, and greater within-individual variability in female mammals due to estrus. A online tool is provided to allow researchers to consider possible sex-specific variability in traits at the experimental design phase.\n\nI enjoyed the paper and thought the question and conclusions were interesting. The figures are great. I am not an expert in meta-analyses, nor in mice, so my comments mostly relate to the hypotheses and discussion of the results.\n\n1) The paper jumps about quite a bit between talking about sex differences relevant to mammals only and those that might apply to animals more generally. For example, the Introduction begins with reference to biomedical research (mammals) and the estrus hypothesis (mammals) but then introduces the \"male variability\" hypothesis by stating the \"males are often the heterogametic sex\". Given that the subject of your study is the mouse, I think it would be more logical to restrict the Introduction to mammals (i.e. explain the two hypotheses with respect to mammals). You could then include a section in the Discussion on if/why we might expect the same trends in other animals (see below also).\n\n2) I feel that the rationale behind the two hypotheses (female estrus and male variability) could be explained better in the Introduction. i.e. why estrus might produce higher variability in females and why stronger sexual selection or male heterogamety might produce greater male variability. A few extra sentences on each would probably be enough. At the same time, I think it would be worth clarifying a priori the extent to which these hypotheses are expected to apply to different traits. Some predictions are given only in the Discussion (e.g. estrus expected to mostly affect immune response and physiology).\n\n3) The Discussion on eco-evolutionary implications would be greatly strengthened if it included at least one specific example of how sex-specific differences in trait variability might affect the evolutionary trajectory of a population. At present, one very general hypothetical is given, but I did not find it easy to follow (disease/climate change kills more of one sex than the other \u2013> sex ratio of the population is skewed (temporarily?) \u2013> mating system is \"influenced\" \u2013> \"downstream affects on population dynamics\"). It is also stated that \"modelling sex difference in trait variability could lead to different conclusions compared to existing models (cf 44)\". The cited study there is on Eurasian sparrowhawks. I'm not familiar with this sparrowhawk study, but perhaps it is a suitable one to highlight in more detail as a clear example? What sort of different conclusions would be expected? It's great that your paper is aiming to speak to a broad range of biologists, but I think that greater clarity in this section is needed to make ecologists and evolutionary biologists really take notice.\n\nReviewer #2:\n\nSummary\n\nThere are significant methodology and interpretative concerns with this article. The analysis over stretches and does not consider the potential weaknesses. It needs to refocus on the primary question of whether there is a pattern in the sex's impact on the variance for these traits. The analysis then needs to go deeper and remove other sources of variance that could be confounding their findings.\n\nMethodology\n\n1) The methodology is not clear.\n\n2) Meta-analysis is used when you don't have access to the raw data \u2013 why not use mixed effect regression models?\n\n3) The variance summary metric is calculated for an institute and strain for data collected in multiple batches, with potential baseline shifts as the data is collected across many years. This isn't a representative metric of variability for a sex as there are multiple sources of variance impacting this metric.\n\n4) Figure 3B and code: It is very rare for a fixed effect analysis to be justifiable. Why assume that there is no variation between the different traits when testing effect of sex? Normally you would explore sources of heterogeneity by meta regression rather than just assume it is sex differences.\n\n5) \"A previous study found that the heterogametic sex was more variable in body size\". If this holds, would not traits that are correlated with body weight also demonstrate the same finding?\n\n6) \"minimum of 2 different institutes\" is a very low N. Why would this give meaningful analysis? What was the minimum amount of data for a strain*centre for a trait to be included?\n\n7) Consider the recent discussions on phenotypic plasticity and the phenotypic interaction with the environment (https://www.nature.com/articles/s41583-020-0313-3). This suggests a fixed effect model is not appropriate. The results and approach need discussing in this context.\n\nConclusion\n\n1) It isn't made clear that this analysis is trying to assess the role of sex across strains and institutes.\n\n2) There is no discussion of the potential weakness of the analysis.\n\n3) Figure 3A:\n\n\u2013 Why is there no discussion of measures of heterogeneity within the meta-analysis at the population level?\n\n\u2013 Should the differences in classification as male or female biased within functional group not be assessed by a fisher exact test and the p value adjusted for multiple testing before you state an area has a difference?\n\n4) Concern by \"Notably most SD trait means also show the greater difference in trait variance\" \u2013 seems to be an eyeball rather than a statistical analysis.\n\n5) I have concerns on relating these results to power:\n\n\u2013 These estimates are from an analysis across strains, batches and institutes looking at global behaviour in the traits. This absolute variance measure would be very different to that seen in a lab within a classic parallel group design study with one strain.\n\n\u2013 They advocate a factorial design but suggest the powering of the sexes independently. This feeds into the misconception that to study both sexes you have to double your sample size.\n\n6) The authors report that this analysis on mean differences was in accordance with previous studies. Not really. The differences will arise from the different approaches taken and highlights how this summary metric is losing sensitivity. The authors relate many of these changes to a difference in body size. However, the earlier published analysis, adjusted for body weight.\n\n7) Why would the \"difference in variability impact on the potential of each sex to respond to changes in specific environments\"?\n\nReviewer #3:\n\nThis is a comprehensive meta-analysis of empirical literature on sex differences in mammalian trait variability. The authors nicely articulate competing hypotheses: \"estrus-mediated variability\" (which predicts higher trait variability in females because they exhibit cyclic reproductive [estrous] hormone secretion that occurs over multi-day timescales) vs. \"male variability hypothesis\" (which predicts higher trait variability in males because they are the heterogametic sex). Several prior meta-analyses related to this have not provided support for the estrus-mediated variability hypothesis. The analysis performed here differs significantly from prior work in that the subjects were 27,147 mice from the International Mouse Phenotyping Consortium, which generated over 2x106 data points. Unlike other meta-analyses, the subjects of this analysis were therefore more systematically evaluated (9 wildtype strains across 11 labs). A total of 218 continuous traits were evaluated, grouped into 9 functional trait groups. Some traits were biased towards males and others towards females. There was no consistent pattern of greater variability in either sex. The results support a straightforward conclusion that neither hypothesis adequately explains patterns of trait variability. the discussion is a restrained defense of the practice of including females (please clarify that monitoring of estrous cycles was not performed in these studies so the females are classified as as \"unstaged\"); consequently females can be included in research studies without a default assumption that they are any more likely to introduce more variability than including males. The authors also apply their data on widespread differences in trait specific lnCVR values to the potential for phenotypic response to selection due to rapidly changing environmental events. The Discussion is well written with the sections that are each meaningful. The web-based tool is a very helpful contribution. The discussion of statistical implications of the work (e.g., equalizing power and Type I consequences of unequal variance) is of significance to research on mammalian biology.\n\n1) The present work adds important new information to a growing literature (see for example Smarr BL, Rowland NE Zucker I. Male and female mice show equal variability in food intake across 4-day spans that encompass estrous cycles. PLoS One. 2019 Jul 15;14(7):e0218935) indicating that incorporation of unstaged female rodents in biomedical research does not increase variability compared to that generated by males; importantly, it also specifies several circumstances in which specific traits are more variable in one sex than the other.\n\n2) The statement \u201c This higher trait variability, resulting from females being at\n\ndifferent stages of their estrous cycle, is the main reason for why female research subjects are often excluded from biomedical research trials, especially in the neurosciences, physiology and pharmacology\u201d is a strong overgeneralization and should be tempered and/or clarified: \"However, scientists in (bio-)medical fields have not traditionally regarded sex as a biological factor of intrinsic interest (2-7).\" This is an overstatement. The study of sex differences and sexual differentiation in mammals (a class of animals of most direct relevance to biomedical research) has a long history, complete with dedicated journals (e.g. Biology of Sex Differences), learned societies, etc. Such an enduring interest in sex among biologists only makes the present work more interesting and important. This critique may be addressed with a more clear definition of \"(bio-)medical\", here, and throughout the manuscript.\n\n3) Colloquialisms such as \"This is an important step, but we can go much further\" are vague and difficult for this reader to endorse as true, as written and we recommend deletion.\n\n4) In the Introduction, the authors delineate competing hypotheses: \"estrus-mediated variability\" vs. \"male variability hypothesis\". In their elaboration of the former hypothesis, the authors should clarify that the historical concern regarding decreased power and increased variability in females compared to males specifically regarded the inclusion of females that were not synchronized (or \"staged\") so as to be tested/treated on the same day/phase of the estrous cycle. Data from these so-called \u201crandomly cycling\u201d females were predicted to be more variable than data from males. \"Staged\" females were presumed to be less variable, and the interventions and costs associated with the presumed need for staging are viewed as onerous. But a growing literature, including the important new results from the present study, argues that there is no empirical support for the contention that females generally are more variable than males across many traits.\n\n5) Materials and methods: the data analysis pipeline is clear and rigorous. It should be stated that the data used come from unstaged females.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Sexual dimorphism in trait variability and its eco-evolutionary and statistical implications\" for further consideration by eLife. Your revised article has been evaluated by a Senior Editor, a Reviewing Editor, and a reviewer.\n\nThe manuscript has been improved, but three issues were raised in this second round of review that need to be addressed before final acceptance:\n\n1) Please ensure that the proposal for sample heterogenization by Voelkl et al., 2020, is not misrepresented in your discussion. In that review, the authors do recommend heterogenization but not in an uncontrolled fashion, rather a systematic inclusion of variation with a randomised block design. If there is only one replicate per treatment per block then, yes, the variance measured in this manuscript (and hence app) will be a good representation of the variance expected. This type of design is likely to be rare and most researchers will use a RBD with replication within a block and less strains. Please carefully revise your manuscript to avoid suggesting that the recommendation is to mix different strains (as that isn't quite correct).\n\n2) Regarding the powering of studies, you state: \"If we assume that responses to an experimental treatment will be similar between the sexes for this functional trait group, we will require more females to achieve the same statistical power as for the males.\" The wording here implies that the power calculations for a treatment effect are calculated separately for the males and the females. This reinforces the misconception that when you study both sexes you should consider the powering as two independent randomised complete designs (and hence if the variance is equal you would double the sample size). As you are talking about designs which include both sexes (not the selection of one versus the other), there is a need to explicitly state that power in a factorial design is achieved by assessment of the treatment effect from both the males and the females. If the variance is different between the sexes, there is a need to increase the N in the more variable sex to achieve the same final sensitivity.\n\n3) While the Discussion section on \"eco-evolutionary implications\" is improved, this section still lacks clarity, the second paragraph in particular. What are \"population dynamic models\" and why are they important? What \"different conclusions\" are alluded to when you state, \"explicitly modelling sex difference in trait variability could lead to different conclusions compared to traditional modelling approaches\"? There is also no longer any mention of climate change in this paragraph, even though it is mentioned in the Abstract as an example of an \"eco-evolutionary ramification\". These points need strengthening to justify the article's title and capture the attention of a wider range of biologists.\n\nFinally, the editors of eLife have recently decided to adopt the STRANGE framework for animal-behaviour research (https://www.nature.com/articles/d41586-020-01751-5?sf235295265=1) and will shortly update the journal's author guidelines and transparent reporting form. Given the link between STRANGE and the topic of your article, please consider, if possible, in your final revision how your study might engage with this new framework.\n",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b6387438-0e44-478c-9dd1-914be89ddd85",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C1",
+      "claim": "Sex differences arise because selection acts on the two sexes differently, especially on traits associated with mating and reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Sex differences arise because selection acts on the two sexes differently, especially on traits associated with mating and reproduction (Darwin, 1871).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Darwin (1871), referencing established evolutionary theory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "c63e315e-34f8-4164-affe-45a651fa189a",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C2",
+      "claim": "Scientists in many (bio-)medical fields have not necessarily regarded sex as a biological factor of intrinsic interest.",
+      "claim_type": "EXPLICIT",
+      "source": "However, scientists in many (bio-)medical fields have not necessarily regarded sex as a biological factor of intrinsic interest (Clayton, 2016; Flanagan, 2014; Karp et al., 2017; Klein et al., 2015; Prendergast et al., 2014; Shansky and Woolley, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to scholarly work documenting this historical pattern in biomedical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "e1bde3ac-2916-4416-9119-6dcb76ba458d",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C3",
+      "claim": "Many (bio-)medical studies have only been conducted with male subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, many (bio-)medical studies have only been conducted with male subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of not regarding sex as a biological factor, supported by the context and citations in the surrounding text.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "2d124f9f-f75d-42f3-adde-266a2e7b3cd3",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C4",
+      "claim": "We know far more about drug efficacy in male compared to female subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we know far more about drug efficacy in male compared to female subjects, contributing to a poor understanding of how the sexes respond differently to medical interventions (Nowogrodzki, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nowogrodzki (2017) documenting this knowledge gap.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "b603424c-299a-4ff0-9d0e-aa2e294a5cd5",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C5",
+      "claim": "The knowledge gap in sex differences is predicted to lead to overmedication and adverse drug reactions in women.",
+      "claim_type": "EXPLICIT",
+      "source": "This gap in knowledge is predicted to lead to overmedication and adverse drug reactions in women (Zucker and Prendergast, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zucker and Prendergast (2020) making this prediction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "4869fcd4-9bf6-4f04-88db-a54a6634d3a2",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C6",
+      "claim": "The National Institutes of Health (NIH) have implemented new guidelines requiring that sex be included as a biological variable in animal and human research study designs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the National Institutes of Health (NIH) have now implemented new guidelines for animal and human research study designs, requiring that sex be included as a biological variable (Clayton, 2016; Clayton and Collins, 2014; NIH, 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to NIH policy documents and related publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "3f5cf0d1-b8c4-4e45-be7e-986b111cbdee",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C7",
+      "claim": "Biologists generally focus on mean differences in trait values when comparing the sexes, placing little or no emphasis on sex differences in trait variability.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the sexes, biologists generally focus on mean differences in trait values, placing little or no emphasis on sex differences in trait variability (see Figure 1 for a diagram explaining differences in means and variances).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated explicitly and references Figure 1 which illustrates the concept.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "0aa0ab55-7501-4a6a-a13d-1a3435ce1626",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C8",
+      "claim": "The 'estrus-mediated variability hypothesis' assumes that the female estrous cycle causes higher variability across traits in female subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the 'estrus-mediated variability hypothesis' (Figure 2), which emerged in the (bio-)medical research field, assumes that the female estrous cycle (see e.g. Prendergast et al., 2014; Beery and Zucker, 2011) causes higher variability across traits in female subjects.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes a hypothesis with supporting citations and references Figure 2.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "52f89656-15c6-44dd-8efe-6c97f4c3c1a2",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C9",
+      "claim": "A wide range of labile traits are presumed to co-vary with physiological changes that are induced by reproductive hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "A wide range of labile traits are presumed to co-vary with physiological changes that are induced by reproductive hormones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the estrus-mediated variability hypothesis explanation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "c4d2b1d2-2c31-4e16-b2e5-fd5332ebae20",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C10",
+      "claim": "High variability is expected to be particularly prominent when the stage of the estrous cycle is unknown and unaccounted for.",
+      "claim_type": "EXPLICIT",
+      "source": "High variability is, therefore, expected to be particularly prominent when the stage of the estrous cycle is unknown and unaccounted for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical consequence of the estrus-mediated variability hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "f886b0a9-9864-443d-ad6c-430f7721028a",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C11",
+      "claim": "Higher trait variability resulting from females being at different stages of their estrous cycle is the main reason for why female research subjects are often excluded from biomedical research trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This higher trait variability, resulting from females being at different stages of their estrous cycle, is the main reason for why female research subjects are often excluded from biomedical research trials, especially in the fields of neuroscience, physiology and pharmacology (NIH, 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to NIH documentation of this practice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "5bc15f61-2a50-44d5-be12-f171a514876f",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C12",
+      "claim": "Female exclusion has traditionally been justified based on the grounds that including females in empirical research leads to a loss of statistical power.",
+      "claim_type": "EXPLICIT",
+      "source": "Female exclusion has traditionally been justified based on the grounds that including females in empirical research leads to a loss of statistical power, or that animals must be sampled across the estrous cycle for one to make valid conclusions, requiring more time and resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the traditional justification for female exclusion in research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "20dbba8a-544a-4ff9-8c8c-58219abd8e3e",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C13",
+      "claim": "The 'greater male variability hypothesis' suggests males exhibit higher trait variability because of two different mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the 'greater male variability hypothesis' suggests males exhibit higher trait variability because of two different mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This introduces the greater male variability hypothesis and its mechanistic basis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "5863a552-1275-4ec5-9ea1-f928df2de988",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C14",
+      "claim": "Males being the heterogametic sex in mammals leads to greater variance because expression of genes on a single X chromosome is likely to lead to more extreme trait values.",
+      "claim_type": "EXPLICIT",
+      "source": "The first mechanism is based on males being the heterogametic sex in mammals. Mammalian females possess two X chromosomes, leading to an 'averaging' of trait expression across the genes on each chromosome. In contrast, males exhibit greater variance because expression of genes on a single X chromosome is likely to lead to more extreme trait values (Reinhold and Engqvist, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Reinhold and Engqvist (2013) and draws on genetic knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "d65074bc-66ef-48f5-8a61-aadee8221c15",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C15",
+      "claim": "Males are under stronger sexual selection than females.",
+      "claim_type": "EXPLICIT",
+      "source": "The second mechanism is based on males being under stronger sexual selection (Pomiankowski and Moller, 1995; Cuervo and M\u00f8ller, 1999; Cuervo and M\u00f8ller, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to evolutionary biology literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "29cba08d-798f-4fdb-8fde-723b24b8b1cb",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C16",
+      "claim": "Empirical evidence supports higher variability of traits that are sexually selected.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirical evidence supports higher variability of traits that are sexually selected, often harbouring high genetic variance and being condition-dependent, which makes sense as 'condition' as a trait is likely to be based on numerous loci (Rowe and Houle, 1996; Tomkins et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to empirical studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "4f80fa5d-6209-420b-a725-cf9df531bba8",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C17",
+      "claim": "Higher genetic and phenotypic variance resulting from sexual selection is expected to characterise sexually selected traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, higher genetic and, thus, phenotypic variance resulting from sexual selection is expected to characterise sexually selected traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical consequence of sexual selection theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "60c94c58-9ded-487f-837d-317c20e948dd",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C18",
+      "claim": "In mammals, both mechanisms (heterogamety and sexual selection) are likely operating concomitantly.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, it is likely that both mechanisms are operating concomitantly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference about mammalian biology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "caa55878-c29c-44f3-83af-a57e5f776151",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C19",
+      "claim": "The 'greater male variability hypothesis' has gained some support in the evolutionary and psychological literature.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, the 'greater male variability hypothesis' has gained some support in the evolutionary and psychological literature (Reinhold and Engqvist, 2013; Lehre et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "16b449e6-41fb-4104-8841-86eeaee42b01",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C20",
+      "claim": "The study examined sex differences in variance across 218 traits measured in 26,916 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we conduct the first comprehensive test of the greater male variability and estrus-mediated variability hypotheses in mice (Figure 2; Reinhold and Engqvist, 2013; Johnson et al., 2008; Hedges and Nowell, 1995; Itoh and Arnold, 2015; Becker et al., 2016; Beery, 2018), examining sex differences in variance across 218 traits in 26,916 animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the study with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "c2d67943-4484-4934-991f-18f5731c2fa1",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C21",
+      "claim": "The dataset comprised 218 continuous traits from 26,916 mice from nine wildtype strains studied across 11 institutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dataset comprised 218 continuous traits (after initial data cleaning and pre-processing; Figure 3). It contains information from 26,916 mice from nine wildtype strains that were studied across 11 institutions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the dataset characteristics with specific numbers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "124af98b-adef-462f-a2c4-2dfa6b871357",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C22",
+      "claim": "There were strong positive relationships between mean and variance across traits (r > 0.94 on the log scale).",
+      "claim_type": "EXPLICIT",
+      "source": "There were strong positive relationships between mean and variance across traits (r > 0.94 on the log scale; Figure 1\u2014figure supplement 1), and therefore, we report the results of lnCVR, which controls for differences in means, in the main text.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis results and references a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "989397a7-b7dd-4821-9b76-08ab0a0a7058",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C23",
+      "claim": "There was no consistent pattern in which sex has more variability (lnCVR) in the examined traits.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no consistent pattern in which sex has more variability (lnCVR) in the examined traits (left panel in Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data analysis results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "199aa550-a083-4db5-9ca6-a53f0e4cc083",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C24",
+      "claim": "Meta-analytic results did not support a consistent pattern of either higher male variability or higher female variability across all traits and functional groups (lnCVR = 0.005, 95% CI = [\u22120.009 to 0.018]).",
+      "claim_type": "EXPLICIT",
+      "source": "Our meta-analytic results also did not support a consistent pattern of either higher male variability or higher female variability (see Figure 4B, left panel: 'All' indicates that across all traits and functional groups, there was no significant sex bias in variances; lnCVR = 0.005, 95% confidence interval, 95% CI = [\u22120.009 to 0.018]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by meta-analytic results with specific effect sizes and confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "da032244-3a51-404d-8cd1-ae39d44fb276",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C25",
+      "claim": "There was high heterogeneity among traits (I2 = 76.5%), indicating sex differences in variability are trait-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was high heterogeneity among traits (I2 = 76.5%, Supplementary file 1, Table 4 and see also Table 5), indicating sex differences in variability are trait-dependent, corroborating our general observation that variability in some traits was male-biased but others female-biased (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by heterogeneity statistics from the meta-analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "25e17f9e-d026-4dd1-b237-769759ee8249",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C26",
+      "claim": "Males exhibited an 8.05% increase in CV relative to females for morphological traits (lnCVR = 0.077; CI = [0.041 to 0.113], I2 = 67.3%).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, males exhibited an 8.05% increase in CV relative to females for morphological traits (lnCVR = 0.077; CI = [0.041 to 0.113], I2 = 67.3%), but CV was female-biased for immunological traits (6.59% higher in females, lnCVR = \u22120.068, CI = [\u22120.098 to 0.038], I2 = 40.8%) and eye morphology (7.85% higher in females, lnCVR = \u22120.081, CI = [\u22120.147 to (\u22120.016)], I2 = 49.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific meta-analytic results with effect sizes and confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "409dbfbb-df55-49e1-9ac1-e3c1aaaf8325",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C27",
+      "claim": "CV was female-biased for immunological traits (6.59% higher in females, lnCVR = \u22120.068, CI = [\u22120.098 to 0.038], I2 = 40.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, males exhibited an 8.05% increase in CV relative to females for morphological traits (lnCVR = 0.077; CI = [0.041 to 0.113], I2 = 67.3%), but CV was female-biased for immunological traits (6.59% higher in females, lnCVR = \u22120.068, CI = [\u22120.098 to 0.038], I2 = 40.8%) and eye morphology (7.85% higher in females, lnCVR = \u22120.081, CI = [\u22120.147 to (\u22120.016)], I2 = 49.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific meta-analytic results with effect sizes and confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "3412a9ef-355e-49a8-82a6-77c5f7a627e8",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C28",
+      "claim": "CV was female-biased for eye morphology (7.85% higher in females, lnCVR = \u22120.081, CI = [\u22120.147 to (\u22120.016)], I2 = 49.8%).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, males exhibited an 8.05% increase in CV relative to females for morphological traits (lnCVR = 0.077; CI = [0.041 to 0.113], I2 = 67.3%), but CV was female-biased for immunological traits (6.59% higher in females, lnCVR = \u22120.068, CI = [\u22120.098 to 0.038], I2 = 40.8%) and eye morphology (7.85% higher in females, lnCVR = \u22120.081, CI = [\u22120.147 to (\u22120.016)], I2 = 49.8%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific meta-analytic results with effect sizes and confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "7a82e9b3-9e35-4ec5-bba8-86728fa23812",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C29",
+      "claim": "Trait means (lnRR) were 7% larger for males in morphological traits (lnRR = 0.067; CI = [0.007 to 0.128]).",
+      "claim_type": "EXPLICIT",
+      "source": "Trait means (lnRR) were 7% larger for males (lnRR = 0.067; CI = [0.007 to 0.128]) in morphological traits and 15.3% larger in males for metabolic traits (lnRR = 0.142; CI = [0.036 to 0.248]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific meta-analytic results with effect sizes and confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "dfe90495-0e59-4024-a796-e130e8973e91",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C30",
+      "claim": "Trait means were 15.3% larger in males for metabolic traits (lnRR = 0.142; CI = [0.036 to 0.248]).",
+      "claim_type": "EXPLICIT",
+      "source": "Trait means (lnRR) were 7% larger for males (lnRR = 0.067; CI = [0.007 to 0.128]) in morphological traits and 15.3% larger in males for metabolic traits (lnRR = 0.142; CI = [0.036 to 0.248]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific meta-analytic results with effect sizes and confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "69f8ead9-d1db-4353-8968-5234388504b9",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C31",
+      "claim": "Females had 5.59% larger means than males for immunological traits (lnRR = 0.057, CI = [\u22120.107 to (\u22120.007)]).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, females had 5.59% (lnRR = 0.057, CI = [\u22120.107 to (\u22120.007)]) larger means than those of males for immunological traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific meta-analytic results with effect sizes and confidence intervals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "bcbbabad-4fab-42cb-8003-b4da10f6804e",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C32",
+      "claim": "Neither the 'greater male variability' hypothesis nor the 'estrus-mediated variability' hypothesis explain the observed patterns in sex-biased trait variation on their own.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested competing predictions from two hypotheses explaining why sex biases in trait variability exist. Neither the 'greater male variability' hypothesis nor the 'estrus-mediated variability' hypothesis explain the observed patterns in sex-biased trait variation on their own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "c7656bf9-56d4-4f56-9c2c-9790fc4a98ca",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C33",
+      "claim": "The results add empirical weight to calls that question the basis for the routine exclusion of one sex in biomedical research based on the estrus-mediated variability hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our results add further empirical weight to calls that question the basis for the routine exclusion of one sex in biomedical research based on the estrus-mediated variability hypothesis (Flanagan, 2014; Klein et al., 2015; Prendergast et al., 2014; Shansky and Woolley, 2016; Becker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study results, supported by citations to related literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "f1a70bf6-c86e-4602-b8f2-bc14606c44fc",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C34",
+      "claim": "The results provide only partial support for the greater male variability hypothesis, because the expected pattern only manifested for morphological traits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide only partial support for the greater male variability hypothesis, because the expected pattern only manifested for morphological traits (see Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the data analysis shown in the figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "7734084f-26c7-48ff-a6c4-0cf0c88118e9",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C35",
+      "claim": "A previous analysis across animals found that the heterogametic sex was more variable in body size.",
+      "claim_type": "EXPLICIT",
+      "source": "This result corroborates a previous analysis across animals, which found that the heterogametic sex was more variable in body size (Reinhold and Engqvist, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "a94b2e0c-0d29-4a2a-9182-2681cfebaed4",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C36",
+      "claim": "The data do not support the conclusion that higher variability in males occurs across all traits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data do not support the conclusion that higher variability in males occurs across all traits, including for many other morphological traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "bf9fa8d8-224e-479e-ac04-81cd8c410008",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C37",
+      "claim": "The results are consistent with the estrus-mediated variability hypothesis for immunological traits only.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with the estrus-mediated variability hypothesis for immunological traits only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "de1b6e2b-fd4e-4d6f-9240-5597f72cd32b",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C38",
+      "claim": "Immune responses can strongly depend on sex hormones.",
+      "claim_type": "EXPLICIT",
+      "source": "Immune responses can strongly depend on sex hormones (Zuk and McKean, 1996; Grossman, 1989), which may explain higher female variability in these traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "e5127339-13a9-4433-8ccd-c026927457fc",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C39",
+      "claim": "If estrus status affects traits through variation in hormone levels, we would expect to also find higher female variability in physiological and hematological traits.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if estrus status affects traits through variation in hormone levels, we would expect to also find higher female variability in physiological and hematological traits. This was not the case in our dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the estrus-mediated variability hypothesis, followed by a statement about the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "55171bd9-8fad-47b2-b06f-f6d4c855e822",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C40",
+      "claim": "Little is known about sex differences in ocular traits in general.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, eye morphology (structural traits, which should fluctuate little across the estrous cycle) also appeared to be more variable in females than males, but little is known about sex differences in ocular traits in general (Wagner et al., 2008; Shaqiri et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations indicating limited knowledge in this area.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "56ba2007-a65b-42b0-a9ef-01fc6c1f4a33",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C41",
+      "claim": "Overall, the study finds no consistent support for the female estrus-mediated variability hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find no consistent support for the female estrus-mediated variability hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "325775d8-88dc-4562-8790-7210113ff76e",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C42",
+      "claim": "Recent studies have refuted the prediction of higher female variability.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our findings, recent studies have refuted the prediction of higher female variability (Prendergast et al., 2014; Smarr et al., 2017; Beery and Zucker, 2011; Becker et al., 2016; Beery, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "5c3581a4-b200-49b7-91df-ea3d82c236d8",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C43",
+      "claim": "Several rodent studies have found that males are more variable than females.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, several rodent studies have found that males are more variable than females (Prendergast et al., 2014; Smarr et al., 2017; Becker et al., 2016; Beery, 2018; Fritz et al., 2017; Mogil and Chanda, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to rodent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "966fc866-8585-4bdb-a0ba-68d663fe5f92",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C44",
+      "claim": "Many traits were found to be sexually dimorphic in accordance with a previous study using the same database.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, we found many traits to be sexually dimorphic (Figure 5) in accordance with the previous study, which used the same database (Karp et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5 and a citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "3358d710-e5db-497e-a774-aa4b25fbc380",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C45",
+      "claim": "Males are larger than females.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, males are larger than females, while females have higher immunological parameters (see Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "fd456dab-a3cb-4068-98f7-66d6cc57116e",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C46",
+      "claim": "Females have higher immunological parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, males are larger than females, while females have higher immunological parameters (see Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "a891924b-bd41-4795-8a17-a4393c6b8930",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C47",
+      "claim": "The most sexually dimorphic trait means also show the greatest differences in trait variance.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the most sexually dimorphic trait means also show the greatest differences in trait variance (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "92bc2cd2-d97b-4543-a769-1e88327a864c",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C48",
+      "claim": "Theory predicts that sexually selected traits are likely more variable, as these traits are often condition-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, theory predicts that sexually selected traits (e.g. larger body size for males due to male-male competition) are likely more variable, as these traits are often condition-dependent (Rowe and Houle, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "b6350ab3-6f06-4d97-ba7b-08bdb1d2dd45",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C49",
+      "claim": "Sex difference in variability could be more pronounced under natural conditions compared to laboratory settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this sex difference in variability could be more pronounced under natural conditions compared to laboratory settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about how results might differ in natural conditions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "a4b7345a-c468-418d-86b2-6263cdd97c67",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C50",
+      "claim": "When lnCVR is used for fitness-related traits, it can signify sex differences in the 'opportunity for selection' between females and males.",
+      "claim_type": "EXPLICIT",
+      "source": "We have used lnCVR values to compare phenotypic variability (CV) between the sexes. When lnCVR is used for fitness-related traits, it can signify sex differences in the 'opportunity for selection' between females and males (Rowe and Houle, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to relevant theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "18a398ca-55b8-4cda-8ac8-9bda0c55688b",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C51",
+      "claim": "If phenotypic variation has a heritable basis, then large ratios of lnCVR may indicate differences in the evolutionary potential of each sex to respond to selection.",
+      "claim_type": "EXPLICIT",
+      "source": "If we assume that phenotypic variation (i.e. variability in traits) has a heritable basis, then large ratios of lnCVR may indicate differences in the evolutionary potential of each sex to respond to selection, at least in the short term (Hansen and Houle, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as a conditional inference supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "91f86065-29e7-45ff-b65d-1e5eccd1caf7",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C52",
+      "claim": "More variable morphological traits of males could potentially provide them with better capacity than females to adapt morphologically to a changing climate.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, more variable morphological traits of males could potentially provide them with better capacity than females to adapt morphologically to a changing climate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative example of evolutionary implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "d2fc967d-fe6d-43b9-a93f-5b1ad3b97fa3",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C53",
+      "claim": "lnCVR reflects sex differences in trait variability within strains, such that the variability differences observed between the sexes may be partially the result of phenotypic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that in our study, lnCVR reflects sex differences in trait variability within strains, such that the variability differences we observe between the sexes may be partially the result of phenotypic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a caveat about the interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "c4660d3a-e8d1-4c86-84e9-e1de1bfbe31a",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C54",
+      "claim": "A study on European sparrowhawks found that variability in mortality was higher in females compared to males.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a study on European sparrowhawks found that variability in mortality was higher in females compared to males (Colchero et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "b4686b6e-d37d-4ceb-83c4-29271c396828",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C55",
+      "claim": "In European sparrowhawks, sex-specific variation affects age-dependent mortality and results in higher average female life expectancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In this species, sex-specific variation affects age-dependent mortality and results in higher average female life expectancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the sparrowhawk study mentioned in context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "b346c41f-333f-4883-81be-958f1c962ad4",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C56",
+      "claim": "Population dynamic models should take sex differences in variability into account to produce more accurate predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, population dynamic models, which make predictions about how populations change in their size over time, should take sex differences in variability into account to produce more accurate predictions (Caswell and Weeks, 1986; Lindstr\u00f6m and Kokko, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "402808e4-bf5e-425a-a243-8ee8ca29a795",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C57",
+      "claim": "It is now mandatory to include both sexes in biomedical experiments and clinical trials funded by the NIH, unless there exists strong justification against the inclusion of both sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is now mandatory to include both sexes in biomedical experiments and clinical trials funded by the NIH, unless there exists strong justification against the inclusion of both sexes (NIH, 2015a; NIH, 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to NIH policy documents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "105d43d2-82ff-44ac-b890-98624709e1a7",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C58",
+      "claim": "If one sex is systematically more variable in a trait of interest than the other, then experiments should be designed to accommodate relative differences in statistical power between the sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "If one sex is systematically more variable in a trait of interest than the other, then experiments should be designed to accommodate relative differences in statistical power between the sexes (which has not been considered before, see Flanagan, 2014; Klein et al., 2015; Prendergast et al., 2014; Shansky and Woolley, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "932b6899-cbc8-4427-931b-185f17abd9ae",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C59",
+      "claim": "Female immunological traits are generally more variable (i.e. having higher CV and SD).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, female immunological traits are generally more variable (i.e. having higher CV and SD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "905503da-7b12-4387-8b97-11fa3dcfeacc",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C60",
+      "claim": "In an experiment measuring immunological traits, a larger sample of females than males would be needed to achieve the same power as when the experiment only includes males.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in an experiment measuring immunological traits, we would need to include a larger sample (N) of females than males (N[female] > N[male]; N[total] = N[female] + N[male]) to achieve the same power as when the experiment only includes males (N[total*] = 2N[male]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical consequence of higher female variability in immunological traits.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "7f83840a-6f02-4897-8c3d-29bc6a10ae1a",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C61",
+      "claim": "In an experiment with both sexes, a larger sample size would be needed than the same experiment with males only.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, in an experiment with both sexes we would need a larger sample size than the same experiment with males only (N[total] > N[total*]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical consequence of sex differences in variability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "25bc4b45-f42b-4014-ad4c-fab45c594730",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C62",
+      "claim": "The study provides an online tool (ShinyApp) to help researchers adjust their sex-specific sample size to achieve optimal statistical power.",
+      "claim_type": "EXPLICIT",
+      "source": "To help researchers adjust their sex-specific sample size to achieve optimal statistical power, we provide an online tool (ShinyApp; https://bit.ly/sex-difference).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a practical output of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "40066bbe-f4aa-4c69-8e48-fafbbb07b43e",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C63",
+      "claim": "The meta-analytic results are based on analyses of more than 2 million rodent data points, from 26,916 individual mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These meta-analytic results are based on our analyses of more than 2 million rodent data points, from 26,916 individual mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the data analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "acbfe8f8-9c55-419d-8126-2e8d9401b0d2",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C64",
+      "claim": "Variability in a trait measured in untreated individuals maintained under carefully standardized environmental conditions may not directly translate into the same variability when measured in experimentally treated individuals, or individuals exposed to a range of environments.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that variability in a trait measured in untreated individuals maintained under carefully standardized environmental conditions, as reported here, may not directly translate into the same variability when measured in experimentally treated individuals, or individuals exposed to a range of environments (i.e. natural populations or human cohorts).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a caveat about the generalizability of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "38bbd328-10bd-41a4-9acb-889406ca5998",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C65",
+      "claim": "The estimates are overall mean differences across strains and locations and may not be particularly informative if one's experiment only includes one specific strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these estimates are overall mean differences across strains and locations. Therefore, these may not be particularly informative if one's experiment only includes one specific strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the generalizability of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "a8cca4a2-f749-46f7-83ca-5cc6a3c27565",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C66",
+      "claim": "A recent recommendation suggests using 'heterogenization' where many different strains are systematically included to increase the robustness of experimental results.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, we point out that our estimates may be useful in the light of a recent recommendation of using 'heterogenization' where many different strains are systematically included (i.e. randomized complete block design) to increase the robustness of experimental results (Voelkl et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a recent recommendation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "85585434-a725-4627-b2c5-ba911370d8b9",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C67",
+      "claim": "Heterogenization would be key to making one's experimental outcome more generalizable.",
+      "claim_type": "EXPLICIT",
+      "source": "Incidentally, heterogenization would be key to making one's experimental outcome more generalizable (Webster and Rutz, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "9c1b5bd2-94a4-4462-a8f0-dddc1fc42bdf",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C68",
+      "claim": "When two groups show differences in variability, we violate homogeneity of variance or homoscedasticity assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when two groups (e.g. males and females) show differences in variability, we violate homogeneity of variance or homoscedasticity assumptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a statistical fact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "7ddd92c8-9e2e-4669-a730-19cf98abf775",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C69",
+      "claim": "Violation of homoscedasticity is detrimental because it leads to a higher Type I error rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a violation is detrimental because it leads to a higher Type I error rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a statistical consequence.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "33f7d9c7-872d-4acf-a02e-86ac2f57a251",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C70",
+      "claim": "We should consider incorporating heteroscedasticity explicitly or using robust estimators of variance to prevent an inflated Type I error rate when comparing traits between the sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we should consider incorporating heteroscedasticity (different variances) explicitly or using robust estimators of variance (also known as 'the sandwich variance estimator') to prevent an inflated Type I error rate (Cleasby and Nakagawa, 2011), especially when we compare traits between the sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "66d4bdd2-93f0-4006-bd25-fe2b9c18b5ca",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C71",
+      "claim": "Sex biases in variability occur in many mouse traits, but the directions of those biases differ between traits.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that sex biases in variability occur in many mouse traits, but that the directions of those biases differ between traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main conclusion from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "df4bf5ed-b1dc-4261-94c9-eeee8f533a69",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C72",
+      "claim": "The direction of the sex bias varies across traits and among trait types.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we have found that the direction of the sex bias varies across traits and among trait types (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a conclusion supported by data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "6caf057e-1d52-494b-8848-05b13d89d1c6",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C73",
+      "claim": "If the differences in variability correspond to the potential of each sex to respond to changes in specific environments, this sex difference needs to be incorporated into demographic and population dynamic modelling.",
+      "claim_type": "EXPLICIT",
+      "source": "If the differences in variability correspond to the potential of each sex to respond to changes in specific environments, this sex difference needs to be incorporated into demographic and population dynamic modelling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conditional recommendation about modeling implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "c40803eb-a063-44b2-b97f-8891d387d7d9",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C74",
+      "claim": "Taking sex differences in trait variability into account will help avoid misleading conclusions and provide new insights into sex differences across many areas of biological and bio-medical research.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that taking sex differences in trait variability into account will help avoid misleading conclusions and provide new insights into sex differences across many areas of biological and bio-medical research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a belief about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "0c8ad918-dcd7-44c0-91b2-219dab2d1b28",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C75",
+      "claim": "Such considerations will not only better our knowledge, but also close the current gaps in our biased knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, such considerations will not only better our knowledge, but also close the current gaps in our biased knowledge (Tannenbaum et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a prediction about the impact of the findings, supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "2d9f40d1-9f1d-4946-8e9c-931bf38ad728",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C76",
+      "claim": "The IMPC provides a comprehensive catalogue of mammalian gene function for investigating the genetics of health and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The IMPC (International Mouse Phenotyping Consortium) provides a comprehensive catalogue of mammalian gene function for investigating the genetics of health and disease, by systematically collecting phenotypes of knock-out and wildtype mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose and scope of the IMPC database.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "e0953dc3-2d83-494f-974c-a5b615a63fb7",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C77",
+      "claim": "The study only considered data for wildtype control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate differences in trait variability between the sexes, we only considered the data for wildtype control mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "6d1ac42b-4f91-479d-b96c-ccf84d5292ae",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C78",
+      "claim": "The dataset was retrieved from the IMPC server in June 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "We retrieved the dataset from the IMPC server in June 2018 and filtered it to contain non-categorical traits for wildtype mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes when the data were obtained.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "9f9a005d-83e0-4c81-a4e0-fa1002186dd9",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C79",
+      "claim": "The initial dataset comprised over 2,500,000 data points for 340 traits.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial dataset comprised over 2,500,000 data points for 340 traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the initial scope of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "caf27326-09af-48dd-a938-f1eb83599a5d",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C80",
+      "claim": "In cases where multiple measurements were taken over time, the measurement closest to '100 days of age' was selected.",
+      "claim_type": "EXPLICIT",
+      "source": "In cases where multiple measurements were taken over time, data cleaning started with selecting single measurements for each individual and trait. In these cases, we selected the measurement closest to '100 days of age'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological choice in data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "4991bab2-522a-4bc0-8a7f-d5a2cec5adad",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C81",
+      "claim": "All data are from unstaged females (with no information about the stage of their estrous cycle).",
+      "claim_type": "EXPLICIT",
+      "source": "All data are from unstaged females (with no information about the stage of their estrous cycle).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "2a589494-2fed-46f3-b50f-3e506e70d251",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C82",
+      "claim": "Data for juvenile and unsexed mice were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded data for juvenile and unsexed mice (Figure 3A; this dataset and scripts can be found on https://rpubs.com/SusZaj/ESF; https://bit.ly/code-mice-sex-diff; raw data: https://doi.org/10.5281/zenodo.3759701).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a methodological choice in data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "cc004a3a-74ee-454a-a824-d370ebf9b84b",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C83",
+      "claim": "A population comprised a group of individuals belonging to a distinct wildtype strain maintained at one particular location (institution).",
+      "claim_type": "EXPLICIT",
+      "source": "A population comprised a group of individuals belonging to a distinct wildtype strain maintained at one particular location (institution); populations were identified for every trait of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines how 'population' was operationalized in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "e702ecb3-7c70-4b96-9aeb-6ab96509f385",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C84",
+      "claim": "The data were derived from 11 different locations/institutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data were derived from 11 different locations/institutions, and a given location/institution could provide data on multiple populations (see Supplementary file 1, Table 1 for details on numbers of strains and institutions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the data sources.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "2a80b2e9-4adb-499a-9621-73b9cf6c68c1",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C85",
+      "claim": "Only populations that contained data points for at least six individuals and which had information for members of both sexes were included.",
+      "claim_type": "EXPLICIT",
+      "source": "We included only populations that contained data points for at least six individuals, and which had information for members of both sexes; further, populations for a particular trait had to come from at least two institutions to be eligible for inclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes inclusion criteria for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "e4b85457-c942-493a-a972-63989c68ab86",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C86",
+      "claim": "After the selection process, the dataset contained 2,300,000 data points across 232 traits.",
+      "claim_type": "EXPLICIT",
+      "source": "After this selection process, the dataset contained 2,300,000 data points across 232 traits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset after applying inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "2918a544-cfa1-4f32-828f-e9afbe932737",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C87",
+      "claim": "Traits were meta-analysed with between 2\u201318 effect sizes (mean = 9.09 effects, SD = 4.47).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we meta-analysed traits with between 2\u201318 effect sizes (mean = 9.09 effects, SD = 4.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the number of effect sizes per trait in the meta-analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "7431ab48-7b53-45b8-aea8-96d880f96ce1",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C88",
+      "claim": "Each meta-analysis contained a total number of individual mice that ranged from 83/91 to 13467/13449 (males/females).",
+      "claim_type": "EXPLICIT",
+      "source": "However, each meta-analysis contained a total number of individual mice that ranged from 83/91 to 13467/13449 (males/females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample sizes in the meta-analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "4c10ef42-5be4-4518-bf19-9ca029b06fe8",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C89",
+      "claim": "A minimum of N = 6 mice were used to create effect sizes for any given group (male or female).",
+      "claim_type": "EXPLICIT",
+      "source": "While a minimum of N = 6 mice were used to create effect sizes for any given group (male or female), in reality samples sizes of male/female groups were much larger (males: mean = 396.66 (SD = 238.23), median = 465.56; females: mean = 407.35 (SD = 240.31), median = 543.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the minimum and typical sample sizes used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "e52e8280-df16-4357-ad21-28a6eac3f155",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C90",
+      "claim": "The use of ratio-based effect sizes, such as lnCVR, lnVR and lnRR, controls for baseline changes over time and space, assuming that these changes affect males and females similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, the use of ratio-based effect sizes, such as lnCVR, lnVR and lnRR, controls for baseline changes over time and space, assuming that these changes affect males and females similarly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological rationale.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "59195b5b-5555-4280-b457-37d974486e3f",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C91",
+      "claim": "The study could not test the assumption that baseline changes affect males and females similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we acknowledge that we could not test this assumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "a6abdb34-6714-4567-8cc3-4c110b438d48",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C92",
+      "claim": "Meta-analyses were conducted at two different levels: first at the population level for each trait, and second by statistically amalgamating overall effect sizes estimated at each trait.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted meta-analyses at two different levels (Figure 3C\u2013J). First, we conducted a meta-analysis for each trait for all three effect-size types (lnRR, lnVR and lnCVR), calculated at the 'population' level (i.e. using population as a unit of analysis). Second, we statistically amalgamated overall effect sizes estimated at each trait (i.e. overall trait means as a unit of analysis) after accounting for dependence among traits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the analytical approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "ddce9828-1001-4e12-af94-33c18ed44602",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C93",
+      "claim": "Second-order meta-analyses were conducted.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, we conducted second-order meta-analyses (Nakagawa et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the type of meta-analysis conducted, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "2b93ebea-592e-4c95-afbf-b9a40d70eee2",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C94",
+      "claim": "Traits which did not carry useful information for the study or where the meta-analytic model did not converge were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded traits which did not carry useful information for this study (i.e. fixed traits, such as number of vertebrae, digits, ribs and other traits that were not variable across wildtype mice; note that this may be different for knock-down mutant strains) or where the meta-analytic model for the trait of interest did not converge, most likely due to small sample size from the dataset (14 traits, see SI Appendix, for details: Meta-analyses; 1. Population as analysis unit).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes exclusion criteria for traits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "c895b4b0-0862-4686-b09b-9396173e184c",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C95",
+      "claim": "A dataset containing meta-analytic results for 218 traits was obtained for second-order meta-analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore obtained a dataset containing meta-analytic results for 218 traits, at this stage, to use for our second-order meta-analyses (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the dataset used for second-order meta-analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "1c581f03-259a-4e95-b94c-8e59ac116725",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C96",
+      "claim": "90 out of 218 traits were identified as non-independent and organized into 19 trait sub-groups.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for dependence, we identified 90 out of 218 traits, and organized them into 19 trait sub-groups (containing 2\u201310 correlated traits, see Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes how non-independent traits were handled.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "91b94b93-cf31-481c-ac8a-2ea8dbfc90b2",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C97",
+      "claim": "The meta-analytic results from 90 traits were combined into 19 meta-analytic results using the function robu in the R package robumeta.",
+      "claim_type": "EXPLICIT",
+      "source": "We combined the meta-analytic results from 90 traits into 19 meta-analytic results (Figure 3F) using the function robu in the R package robumeta with the assumption of sampling errors being correlated with the default value of r = 0.8 (Fisher et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the statistical method used to combine correlated traits, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "9f2512b3-02c6-43d2-b0f4-c3a9b7ef058f",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C98",
+      "claim": "The final dataset for secondary meta-analyses contained 147 traits (19 condensed plus 128 independent traits).",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, our final dataset for secondary meta-analyses contained 147 traits (i.e. the newly condensed 19 plus the remaining 128 independent traits, see Figure 3, Supplementary file 1, Table 2), which we assume to be independent of each other.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the final dataset composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "ae0587f4-f790-4266-a4ab-a1b164250782",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C99",
+      "claim": "Nine overarching functional groups of traits were created by condensing the IMPC's 26 procedural categories.",
+      "claim_type": "EXPLICIT",
+      "source": "We created our nine overarching functional groups of traits (Figure 3G) by condensing the IMPC's 26 procedural categories ('procedures') into related clusters.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes how functional groups were created.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "7b13a79d-0cdd-4821-a884-5b235f487d38",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C100",
+      "claim": "The categories were based on procedures that were biologically related, in conjunction with measurement techniques and the number of available traits in each category.",
+      "claim_type": "EXPLICIT",
+      "source": "The categories were based on procedures that were biologically related, in conjunction with measurement techniques and the number of available traits in each category (see Supplementary file 1, Table 3 for a list of clustered traits, procedures and grouping terms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for creating functional groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "180a1b88-96e6-448b-bc67-fe3af53004ef",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C101",
+      "claim": "Three sets of 10 second-order meta-analyses were conducted (3 types of effect size: lnRR, lnVR and lnCVR for nine functional groups and one for all the groups combined).",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, we conducted three sets of 10 second-order meta-analyses (i.e. meta-analyzing 3 types of effect size: lnRR, lnVR and lnCVR for nine functional groups and one for all the groups combined, Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the scope of the second-order meta-analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "b0128314-cf73-47af-bf6b-46c576dadf9e",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "claim_id": "C102",
+      "claim": "The study did not run inferential statistical tests on the counts of male- and female-biased traits because such tests would be considered as vote-counting.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we present the frequencies of male- and female-biased traits in Figure 4A, we did not run inferential statistical tests on these counts because such tests would be considered as vote-counting, which has been severely criticised in the meta-analytic literature (Higgins, 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a methodological choice with a citation to meta-analytic literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d4e2b55c-38e9-48c8-aa6c-760118266596",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Across 218 traits measured in 26,916 mice from nine wildtype strains, there was no consistent overall pattern of sex-biased variability (lnCVR = 0.005, 95% CI = [\u22120.009 to 0.018]), with high heterogeneity among traits (I\u00b2 = 76.5%). Neither the 'greater male variability' hypothesis nor the 'estrus-mediated variability' hypothesis universally explains the observed patterns in sex-biased trait variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 and C32 provide converging evidence from a large dataset with appropriate meta-analytic methods. The overall effect size is near zero with confidence intervals overlapping zero, and high heterogeneity (I\u00b2 = 76.5%) supports the conclusion that sex differences in variability are trait-dependent rather than following a universal pattern. The statistical approach is sound and sample sizes are substantial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "aa6445b4-7098-4d2f-adbf-fbe90c2424c0",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Males exhibited 8.05% higher coefficient of variation (CV) than females for morphological traits (lnCVR = 0.077; CI = [0.041 to 0.113]), providing partial support for the greater male variability hypothesis. However, this pattern was limited to morphological traits and did not extend across all trait types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26, C34-C36 demonstrate male-biased variability in morphological traits with statistically significant effect sizes and confidence intervals not overlapping zero. The finding is corroborated by prior work (C35) and appropriately qualified as 'partial support' since the pattern doesn't generalize to all traits. The heterogeneity (I\u00b2 = 67.3%) indicates some within-group variation but the overall pattern is clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "076ea12c-3e01-483f-8a3f-699cf6f02dda",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Female variability was 6.59% higher than males for immunological traits (lnCVR = \u22120.068, CI = [\u22120.098 to 0.038]), consistent with the estrus-mediated variability hypothesis for this trait group only. However, the hypothesis was not supported for physiological and hematological traits where higher female variability would also be expected if estrus status affects traits through hormonal variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C37-C39, and C41 provide evidence for female-biased variability in immunological traits with statistically significant results. The logical inference in C39 that physiological/hematological traits should also show this pattern if the estrus hypothesis were correct, combined with the data showing they do not, appropriately limits support to immunological traits only. The mechanistic explanation via sex hormones (C38) is plausible and cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "b893a394-48ec-43ce-8cb5-f35b68605c63",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Eye morphology traits showed 7.85% higher CV in females (lnCVR = \u22120.081, CI = [\u22120.147 to (\u22120.016)]), but little is known about sex differences in ocular traits generally, making this finding difficult to interpret mechanistically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 provides statistically significant evidence for female-biased variability in eye morphology with confidence intervals not overlapping zero. Claim C40 appropriately acknowledges the limited prior knowledge in this area. The result is well-supported empirically but lacks theoretical context for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "54bc1ae6-69b7-4233-92bd-acf755d80f45",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Males had 7% larger morphological trait means (lnRR = 0.067; CI = [0.007 to 0.128]) and 15.3% larger metabolic trait means (lnRR = 0.142; CI = [0.036 to 0.248]), while females had 5.59% larger immunological trait means (lnRR = 0.057, CI = [\u22120.107 to (\u22120.007)]). These patterns of sexual dimorphism in trait means are consistent with previous findings from the same database.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 and C44-C46 provide statistically significant evidence for sex differences in trait means across multiple functional groups, with confidence intervals supporting the directional claims. The consistency with prior work (C44) using the same database adds credibility. However, very high heterogeneity values (I\u00b2 > 96%) indicate substantial variation within functional groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "5cbde2fe-8bd7-4657-8db0-2e2a1cebb486",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The most sexually dimorphic trait means also showed the greatest differences in trait variance, consistent with theory predicting that sexually selected traits (e.g., larger male body size) are more variable because they are condition-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 link observed patterns to evolutionary theory with appropriate citations. The empirical observation (C47) is supported by data in Figures 4 and 5, and the theoretical explanation (C48) is well-established in the literature. The connection between sexual dimorphism in means and variance is logically coherent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "77bfd92a-9031-450b-a74d-bd3c571a09be",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The results add empirical weight to calls questioning the routine exclusion of females from biomedical research based on the estrus-mediated variability hypothesis, consistent with recent studies that have refuted predictions of higher female variability and found males to be more variable in some contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C42-C43 appropriately contextualize the study's findings within the broader literature. The inference in C33 follows logically from the lack of consistent support for the estrus-mediated variability hypothesis. Multiple citations support that recent work has challenged this hypothesis, strengthening the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "30965756-81ab-48ca-9ef1-2830a6ebc555",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Strong positive relationships between mean and variance across traits (r > 0.94 on the log scale) justified the use of lnCVR (which controls for differences in means) as the primary effect size measure. The use of ratio-based effect sizes controls for baseline changes over time and space, though the assumption that these changes affect males and females similarly could not be tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C90-C91 provide methodological justification for the analytical approach. The strong correlation (r > 0.94) between mean and variance clearly supports using mean-adjusted measures. The acknowledgment in C91 that a key assumption could not be tested is appropriately transparent about limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study used wildtype control mice data from the IMPC database (retrieved June 2018), applying systematic filtering and selection criteria. After data cleaning, the dataset contained 2,300,000 data points across 232 traits from 11 institutions, with measurements taken closest to 100 days of age. All female data were from unstaged females with no information about estrous cycle stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C86 describe the data selection and processing pipeline with specific, verifiable details. The methodological choices are clearly documented and appropriate for the research questions. The fact that females were unstaged (C81) is particularly important for testing the estrus-mediated variability hypothesis and is transparently reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "f99a3304-68f5-4d01-81ce-5490096d114b",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Meta-analyses were conducted at two levels: first at the population level for each trait (with 2-18 effect sizes per trait, mean = 9.09), then second-order meta-analyses amalgamating trait-level results. Sample sizes per meta-analysis ranged from 83-13,467 mice, with typical group sizes much larger than the minimum of N=6 (males: mean = 396.66, females: mean = 407.35). After excluding non-informative or non-converging traits, 218 traits were retained for second-order meta-analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C95 describe the meta-analytic approach with appropriate detail and sample size information. The two-level approach is methodologically sound and well-cited (C93). Sample sizes are substantial, well above the stated minimum, providing adequate statistical power. The exclusion criteria (C94) are reasonable and transparently reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "4588f416-da33-4a42-8721-5819d2371691",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "To account for non-independent traits, 90 of 218 traits were organized into 19 sub-groups and combined using robust variance estimation (r = 0.8), resulting in a final dataset of 147 independent traits (19 condensed + 128 independent). These were organized into nine functional groups based on biological relatedness, measurement techniques, and trait availability, with three sets of 10 second-order meta-analyses conducted for each effect size type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C101 describe appropriate methods for handling non-independence among traits. The use of robust variance estimation with robumeta (C97) is a well-established approach for correlated effect sizes. The creation of functional groups (C99-C100) based on biological knowledge is reasonable and enhances interpretability. The analytical structure is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "bb6afc48-6af3-409b-84db-8c6877f31fd6",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "If one sex is systematically more variable in a trait of interest, experiments should be designed to accommodate differences in statistical power between sexes. For immunological traits where females are more variable, larger female sample sizes would be needed to achieve equivalent power to male-only experiments. The study provides an online tool (ShinyApp) to help researchers adjust sex-specific sample sizes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 provide logical inferences about experimental design implications. The reasoning in C60-C61 about sample size requirements follows directly from basic statistical principles about variance and power. The provision of a practical tool (C62) demonstrates translation of findings to practice. However, the generalizability caveats mentioned elsewhere in the manuscript should be considered.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "734435f8-1a33-4b76-8de9-65023e3f85be",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "When two groups show differences in variability, homogeneity of variance assumptions are violated, leading to higher Type I error rates. Therefore, analyses comparing traits between sexes should incorporate heteroscedasticity explicitly or use robust variance estimators to prevent inflated Type I error rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 correctly identify a statistical consequence of sex differences in variability and provide appropriate recommendations. The relationship between heteroscedasticity and Type I error is well-established (C69), and the suggested solutions (C70) are standard statistical practice, appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "6526b3e5-88d6-4cca-a227-f537b6ffab29",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "For fitness-related traits, lnCVR can signify sex differences in the 'opportunity for selection.' If phenotypic variation has a heritable basis, large lnCVR ratios may indicate differences in evolutionary potential between sexes. However, the observed variability differences may be partially due to phenotypic plasticity rather than genetic variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C53 make evolutionary inferences that depend on untested assumptions. While the theoretical framework (C50-C51) is appropriately cited, the critical caveat in C53 that variability may reflect plasticity rather than heritable variation undermines the evolutionary interpretations. Without heritability estimates, claims about evolutionary potential (C51-C52) remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "fed7a8f7-778a-4707-852a-5a909fc2bce2",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The meta-analytic results are based on over 2 million data points from 26,916 mice. However, variability measured in untreated individuals under standardized laboratory conditions may not translate to experimentally treated individuals or natural populations. The estimates represent overall mean differences across strains and locations and may not apply to single-strain experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 appropriately describe the scope and limitations of the dataset. The large sample size (C63) is a strength, but the caveats about generalizability (C64-C65) are important and honestly reported. These limitations are inherent to the data source and appropriately acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "339b551a-e7bf-4dca-afce-66ac0d7efe39",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Recent recommendations suggest using 'heterogenization' where many different strains are systematically included to increase robustness and generalizability of experimental results. The study's estimates may be useful in this context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 appropriately cite recent methodological recommendations and contextualize how the study's multi-strain estimates could be valuable for heterogenization approaches. The connection between the study design and these recommendations is logical and well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "2f202ffb-f66d-4635-a88e-033a84e840e3",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Sex-specific variation in demographic parameters like mortality can affect population dynamics, as demonstrated in European sparrowhawks where higher female variability in mortality resulted in higher average female life expectancy. Population dynamic models should incorporate sex differences in variability to produce more accurate predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 provide an example from the literature (C54-C55) and draw appropriate inferences about modeling implications (C56). The sparrowhawk example is properly cited and illustrates the potential importance of sex-specific variability. The recommendation for population models (C56) is logical and supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "b0ba4da7-97d0-4680-b07e-dffc47ba3f65",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Sex biases in variability occur in many mouse traits, but the direction varies across traits and trait types. If these differences correspond to sex-specific potential to respond to environmental changes, they should be incorporated into demographic and population dynamic modeling. Taking sex differences in trait variability into account will help avoid misleading conclusions and close gaps in biased knowledge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 summarize the main empirical findings, which are well-supported by the data. Claims C73-C75 draw broader implications that are logical extensions of the findings, though C73 is appropriately conditional ('if'). The claims about improving research quality (C74-C75) are reasonable inferences supported by the demonstrated inadequacy of both competing hypotheses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "53a8fdbb-98f3-460f-8783-e2f387f16d48",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The study did not run inferential statistical tests on counts of male- and female-biased traits because such tests would constitute vote-counting, which has been criticized in meta-analytic literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C102 describes an appropriate methodological decision with proper justification. Vote-counting is indeed problematic in meta-analysis, and the citation to Higgins (2019) supports this position. The decision to present frequencies descriptively while relying on effect size meta-analyses for inference is methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "d3ec099a-ad35-42e0-8ab9-4bafdc055462",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Sex differences arise from differential selection on the sexes, particularly for mating and reproduction traits. Despite this, biomedical scientists have historically not regarded sex as a biological factor of intrinsic interest, leading to male-biased research and knowledge gaps about drug efficacy in females. This has prompted NIH guidelines requiring sex be included as a biological variable. Biologists generally focus on mean differences between sexes rather than variability differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide well-cited background context. The evolutionary basis (C1) and historical patterns in biomedical research (C2-C5) are appropriately documented with multiple citations. The NIH policy change (C6) and focus on means rather than variance (C7) set up the study's rationale. These are established facts rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "3c7ce4ef-7191-45d7-8927-2cb0bec81ae4",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The 'estrus-mediated variability hypothesis' assumes the female estrous cycle causes higher trait variability in females, with labile traits co-varying with hormone-induced physiological changes. This presumed higher variability, especially when estrous cycle stage is unknown, has been the main justification for excluding females from biomedical research trials due to concerns about statistical power and resource requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 accurately describe the estrus-mediated variability hypothesis and its historical use to justify female exclusion. The claims are appropriately cited and represent established positions in the literature that the study aims to test. These provide essential background for understanding the study's motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "ec53762b-e550-4e5f-aee0-e570244422a3",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The 'greater male variability hypothesis' proposes males exhibit higher trait variability through two mechanisms: (1) hemizygosity for X-linked genes in males leads to more extreme trait values, and (2) stronger sexual selection on males increases genetic and phenotypic variance in sexually selected, condition-dependent traits. Both mechanisms likely operate concomitantly in mammals, and the hypothesis has gained some support in evolutionary and psychological literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C19 accurately describe the greater male variability hypothesis with appropriate citations to theoretical and empirical work. The two mechanisms (C14-C17) are well-established in evolutionary biology, and the claim of prior support (C19) is properly cited. These provide the theoretical framework for the study's hypothesis testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    },
+    {
+      "id": "b9c00544-75e8-4bd8-9fe0-05a89cf8dbb1",
+      "content_id": "227797ab-dabb-425b-8757-956fae8da2c4",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The IMPC provides a comprehensive catalogue of mammalian gene function for investigating genetics of health and disease by systematically collecting phenotypes of knock-out and wildtype mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 accurately describes the IMPC database that serves as the data source. This is factual information about a well-established resource and provides necessary context for understanding the data provenance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:28:37.672831Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "16b449e6-41fb-4104-8841-86eeaee42b01",
+      "result_id": "d4e2b55c-38e9-48c8-aa6c-760118266596"
+    },
+    {
+      "claim_id": "c2d67943-4484-4934-991f-18f5731c2fa1",
+      "result_id": "d4e2b55c-38e9-48c8-aa6c-760118266596"
+    },
+    {
+      "claim_id": "989397a7-b7dd-4821-9b76-08ab0a0a7058",
+      "result_id": "d4e2b55c-38e9-48c8-aa6c-760118266596"
+    },
+    {
+      "claim_id": "199aa550-a083-4db5-9ca6-a53f0e4cc083",
+      "result_id": "d4e2b55c-38e9-48c8-aa6c-760118266596"
+    },
+    {
+      "claim_id": "da032244-3a51-404d-8cd1-ae39d44fb276",
+      "result_id": "d4e2b55c-38e9-48c8-aa6c-760118266596"
+    },
+    {
+      "claim_id": "bcbbabad-4fab-42cb-8003-b4da10f6804e",
+      "result_id": "d4e2b55c-38e9-48c8-aa6c-760118266596"
+    },
+    {
+      "claim_id": "25e17f9e-d026-4dd1-b237-769759ee8249",
+      "result_id": "aa6445b4-7098-4d2f-adbf-fbe90c2424c0"
+    },
+    {
+      "claim_id": "f1a70bf6-c86e-4602-b8f2-bc14606c44fc",
+      "result_id": "aa6445b4-7098-4d2f-adbf-fbe90c2424c0"
+    },
+    {
+      "claim_id": "7734084f-26c7-48ff-a6c4-0cf0c88118e9",
+      "result_id": "aa6445b4-7098-4d2f-adbf-fbe90c2424c0"
+    },
+    {
+      "claim_id": "a94b2e0c-0d29-4a2a-9182-2681cfebaed4",
+      "result_id": "aa6445b4-7098-4d2f-adbf-fbe90c2424c0"
+    },
+    {
+      "claim_id": "409dbfbb-df55-49e1-9ac1-e3c1aaaf8325",
+      "result_id": "076ea12c-3e01-483f-8a3f-699cf6f02dda"
+    },
+    {
+      "claim_id": "bf9fa8d8-224e-479e-ac04-81cd8c410008",
+      "result_id": "076ea12c-3e01-483f-8a3f-699cf6f02dda"
+    },
+    {
+      "claim_id": "de1b6e2b-fd4e-4d6f-9240-5597f72cd32b",
+      "result_id": "076ea12c-3e01-483f-8a3f-699cf6f02dda"
+    },
+    {
+      "claim_id": "e5127339-13a9-4433-8ccd-c026927457fc",
+      "result_id": "076ea12c-3e01-483f-8a3f-699cf6f02dda"
+    },
+    {
+      "claim_id": "56ba2007-a65b-42b0-a9ef-01fc6c1f4a33",
+      "result_id": "076ea12c-3e01-483f-8a3f-699cf6f02dda"
+    },
+    {
+      "claim_id": "3412a9ef-355e-49a8-82a6-77c5f7a627e8",
+      "result_id": "b893a394-48ec-43ce-8cb5-f35b68605c63"
+    },
+    {
+      "claim_id": "55171bd9-8fad-47b2-b06f-f6d4c855e822",
+      "result_id": "b893a394-48ec-43ce-8cb5-f35b68605c63"
+    },
+    {
+      "claim_id": "7a82e9b3-9e35-4ec5-bba8-86728fa23812",
+      "result_id": "54bc1ae6-69b7-4233-92bd-acf755d80f45"
+    },
+    {
+      "claim_id": "dfe90495-0e59-4024-a796-e130e8973e91",
+      "result_id": "54bc1ae6-69b7-4233-92bd-acf755d80f45"
+    },
+    {
+      "claim_id": "69f8ead9-d1db-4353-8968-5234388504b9",
+      "result_id": "54bc1ae6-69b7-4233-92bd-acf755d80f45"
+    },
+    {
+      "claim_id": "966fc866-8585-4bdb-a0ba-68d663fe5f92",
+      "result_id": "54bc1ae6-69b7-4233-92bd-acf755d80f45"
+    },
+    {
+      "claim_id": "3358d710-e5db-497e-a774-aa4b25fbc380",
+      "result_id": "54bc1ae6-69b7-4233-92bd-acf755d80f45"
+    },
+    {
+      "claim_id": "fd456dab-a3cb-4068-98f7-66d6cc57116e",
+      "result_id": "54bc1ae6-69b7-4233-92bd-acf755d80f45"
+    },
+    {
+      "claim_id": "a891924b-bd41-4795-8a17-a4393c6b8930",
+      "result_id": "5cbde2fe-8bd7-4657-8db0-2e2a1cebb486"
+    },
+    {
+      "claim_id": "92bc2cd2-d97b-4543-a769-1e88327a864c",
+      "result_id": "5cbde2fe-8bd7-4657-8db0-2e2a1cebb486"
+    },
+    {
+      "claim_id": "c7656bf9-56d4-4f56-9c2c-9790fc4a98ca",
+      "result_id": "77bfd92a-9031-450b-a74d-bd3c571a09be"
+    },
+    {
+      "claim_id": "325775d8-88dc-4562-8790-7210113ff76e",
+      "result_id": "77bfd92a-9031-450b-a74d-bd3c571a09be"
+    },
+    {
+      "claim_id": "5c3581a4-b200-49b7-91df-ea3d82c236d8",
+      "result_id": "77bfd92a-9031-450b-a74d-bd3c571a09be"
+    },
+    {
+      "claim_id": "124af98b-adef-462f-a2c4-2dfa6b871357",
+      "result_id": "30965756-81ab-48ca-9ef1-2830a6ebc555"
+    },
+    {
+      "claim_id": "e52e8280-df16-4357-ad21-28a6eac3f155",
+      "result_id": "30965756-81ab-48ca-9ef1-2830a6ebc555"
+    },
+    {
+      "claim_id": "59195b5b-5555-4280-b457-37d974486e3f",
+      "result_id": "30965756-81ab-48ca-9ef1-2830a6ebc555"
+    },
+    {
+      "claim_id": "e0953dc3-2d83-494f-974c-a5b615a63fb7",
+      "result_id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936"
+    },
+    {
+      "claim_id": "6d1ac42b-4f91-479d-b96c-ccf84d5292ae",
+      "result_id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936"
+    },
+    {
+      "claim_id": "9f9a005d-83e0-4c81-a4e0-fa1002186dd9",
+      "result_id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936"
+    },
+    {
+      "claim_id": "caf27326-09af-48dd-a938-f1eb83599a5d",
+      "result_id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936"
+    },
+    {
+      "claim_id": "4991bab2-522a-4bc0-8a7f-d5a2cec5adad",
+      "result_id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936"
+    },
+    {
+      "claim_id": "2a589494-2fed-46f3-b50f-3e506e70d251",
+      "result_id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936"
+    },
+    {
+      "claim_id": "cc004a3a-74ee-454a-a824-d370ebf9b84b",
+      "result_id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936"
+    },
+    {
+      "claim_id": "e702ecb3-7c70-4b96-9aeb-6ab96509f385",
+      "result_id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936"
+    },
+    {
+      "claim_id": "2a80b2e9-4adb-499a-9621-73b9cf6c68c1",
+      "result_id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936"
+    },
+    {
+      "claim_id": "e4b85457-c942-493a-a972-63989c68ab86",
+      "result_id": "57b2e7ad-7853-4238-9b88-cbb0b80bd936"
+    },
+    {
+      "claim_id": "2918a544-cfa1-4f32-828f-e9afbe932737",
+      "result_id": "f99a3304-68f5-4d01-81ce-5490096d114b"
+    },
+    {
+      "claim_id": "7431ab48-7b53-45b8-aea8-96d880f96ce1",
+      "result_id": "f99a3304-68f5-4d01-81ce-5490096d114b"
+    },
+    {
+      "claim_id": "4c10ef42-5be4-4518-bf19-9ca029b06fe8",
+      "result_id": "f99a3304-68f5-4d01-81ce-5490096d114b"
+    },
+    {
+      "claim_id": "a6abdb34-6714-4567-8cc3-4c110b438d48",
+      "result_id": "f99a3304-68f5-4d01-81ce-5490096d114b"
+    },
+    {
+      "claim_id": "ddce9828-1001-4e12-af94-33c18ed44602",
+      "result_id": "f99a3304-68f5-4d01-81ce-5490096d114b"
+    },
+    {
+      "claim_id": "2b93ebea-592e-4c95-afbf-b9a40d70eee2",
+      "result_id": "f99a3304-68f5-4d01-81ce-5490096d114b"
+    },
+    {
+      "claim_id": "c895b4b0-0862-4686-b09b-9396173e184c",
+      "result_id": "f99a3304-68f5-4d01-81ce-5490096d114b"
+    },
+    {
+      "claim_id": "1c581f03-259a-4e95-b94c-8e59ac116725",
+      "result_id": "4588f416-da33-4a42-8721-5819d2371691"
+    },
+    {
+      "claim_id": "91b94b93-cf31-481c-ac8a-2ea8dbfc90b2",
+      "result_id": "4588f416-da33-4a42-8721-5819d2371691"
+    },
+    {
+      "claim_id": "9f2512b3-02c6-43d2-b0f4-c3a9b7ef058f",
+      "result_id": "4588f416-da33-4a42-8721-5819d2371691"
+    },
+    {
+      "claim_id": "ae0587f4-f790-4266-a4ab-a1b164250782",
+      "result_id": "4588f416-da33-4a42-8721-5819d2371691"
+    },
+    {
+      "claim_id": "7b13a79d-0cdd-4821-a884-5b235f487d38",
+      "result_id": "4588f416-da33-4a42-8721-5819d2371691"
+    },
+    {
+      "claim_id": "180a1b88-96e6-448b-bc67-fe3af53004ef",
+      "result_id": "4588f416-da33-4a42-8721-5819d2371691"
+    },
+    {
+      "claim_id": "105d43d2-82ff-44ac-b890-98624709e1a7",
+      "result_id": "bb6afc48-6af3-409b-84db-8c6877f31fd6"
+    },
+    {
+      "claim_id": "932b6899-cbc8-4427-931b-185f17abd9ae",
+      "result_id": "bb6afc48-6af3-409b-84db-8c6877f31fd6"
+    },
+    {
+      "claim_id": "905503da-7b12-4387-8b97-11fa3dcfeacc",
+      "result_id": "bb6afc48-6af3-409b-84db-8c6877f31fd6"
+    },
+    {
+      "claim_id": "7f83840a-6f02-4897-8c3d-29bc6a10ae1a",
+      "result_id": "bb6afc48-6af3-409b-84db-8c6877f31fd6"
+    },
+    {
+      "claim_id": "25bc4b45-f42b-4014-ad4c-fab45c594730",
+      "result_id": "bb6afc48-6af3-409b-84db-8c6877f31fd6"
+    },
+    {
+      "claim_id": "9c1b5bd2-94a4-4462-a8f0-dddc1fc42bdf",
+      "result_id": "734435f8-1a33-4b76-8de9-65023e3f85be"
+    },
+    {
+      "claim_id": "7ddd92c8-9e2e-4669-a730-19cf98abf775",
+      "result_id": "734435f8-1a33-4b76-8de9-65023e3f85be"
+    },
+    {
+      "claim_id": "33f7d9c7-872d-4acf-a02e-86ac2f57a251",
+      "result_id": "734435f8-1a33-4b76-8de9-65023e3f85be"
+    },
+    {
+      "claim_id": "a4b7345a-c468-418d-86b2-6263cdd97c67",
+      "result_id": "6526b3e5-88d6-4cca-a227-f537b6ffab29"
+    },
+    {
+      "claim_id": "18a398ca-55b8-4cda-8ac8-9bda0c55688b",
+      "result_id": "6526b3e5-88d6-4cca-a227-f537b6ffab29"
+    },
+    {
+      "claim_id": "91f86065-29e7-45ff-b65d-1e5eccd1caf7",
+      "result_id": "6526b3e5-88d6-4cca-a227-f537b6ffab29"
+    },
+    {
+      "claim_id": "d2fc967d-fe6d-43b9-a93f-5b1ad3b97fa3",
+      "result_id": "6526b3e5-88d6-4cca-a227-f537b6ffab29"
+    },
+    {
+      "claim_id": "40066bbe-f4aa-4c69-8e48-fafbbb07b43e",
+      "result_id": "fed7a8f7-778a-4707-852a-5a909fc2bce2"
+    },
+    {
+      "claim_id": "acbfe8f8-9c55-419d-8126-2e8d9401b0d2",
+      "result_id": "fed7a8f7-778a-4707-852a-5a909fc2bce2"
+    },
+    {
+      "claim_id": "38bbd328-10bd-41a4-9acb-889406ca5998",
+      "result_id": "fed7a8f7-778a-4707-852a-5a909fc2bce2"
+    },
+    {
+      "claim_id": "a8cca4a2-f749-46f7-83ca-5cc6a3c27565",
+      "result_id": "339b551a-e7bf-4dca-afce-66ac0d7efe39"
+    },
+    {
+      "claim_id": "85585434-a725-4627-b2c5-ba911370d8b9",
+      "result_id": "339b551a-e7bf-4dca-afce-66ac0d7efe39"
+    },
+    {
+      "claim_id": "c4660d3a-e8d1-4c86-84e9-e1de1bfbe31a",
+      "result_id": "2f202ffb-f66d-4635-a88e-033a84e840e3"
+    },
+    {
+      "claim_id": "b4686b6e-d37d-4ceb-83c4-29271c396828",
+      "result_id": "2f202ffb-f66d-4635-a88e-033a84e840e3"
+    },
+    {
+      "claim_id": "b346c41f-333f-4883-81be-958f1c962ad4",
+      "result_id": "2f202ffb-f66d-4635-a88e-033a84e840e3"
+    },
+    {
+      "claim_id": "66d4bdd2-93f0-4006-bd25-fe2b9c18b5ca",
+      "result_id": "b0ba4da7-97d0-4680-b07e-dffc47ba3f65"
+    },
+    {
+      "claim_id": "df4bf5ed-b1dc-4261-94c9-eeee8f533a69",
+      "result_id": "b0ba4da7-97d0-4680-b07e-dffc47ba3f65"
+    },
+    {
+      "claim_id": "6caf057e-1d52-494b-8848-05b13d89d1c6",
+      "result_id": "b0ba4da7-97d0-4680-b07e-dffc47ba3f65"
+    },
+    {
+      "claim_id": "c40803eb-a063-44b2-b97f-8891d387d7d9",
+      "result_id": "b0ba4da7-97d0-4680-b07e-dffc47ba3f65"
+    },
+    {
+      "claim_id": "0c8ad918-dcd7-44c0-91b2-219dab2d1b28",
+      "result_id": "b0ba4da7-97d0-4680-b07e-dffc47ba3f65"
+    },
+    {
+      "claim_id": "b0128314-cf73-47af-bf6b-46c576dadf9e",
+      "result_id": "53a8fdbb-98f3-460f-8783-e2f387f16d48"
+    },
+    {
+      "claim_id": "b6387438-0e44-478c-9dd1-914be89ddd85",
+      "result_id": "d3ec099a-ad35-42e0-8ab9-4bafdc055462"
+    },
+    {
+      "claim_id": "c63e315e-34f8-4164-affe-45a651fa189a",
+      "result_id": "d3ec099a-ad35-42e0-8ab9-4bafdc055462"
+    },
+    {
+      "claim_id": "e1bde3ac-2916-4416-9119-6dcb76ba458d",
+      "result_id": "d3ec099a-ad35-42e0-8ab9-4bafdc055462"
+    },
+    {
+      "claim_id": "2d124f9f-f75d-42f3-adde-266a2e7b3cd3",
+      "result_id": "d3ec099a-ad35-42e0-8ab9-4bafdc055462"
+    },
+    {
+      "claim_id": "b603424c-299a-4ff0-9d0e-aa2e294a5cd5",
+      "result_id": "d3ec099a-ad35-42e0-8ab9-4bafdc055462"
+    },
+    {
+      "claim_id": "4869fcd4-9bf6-4f04-88db-a54a6634d3a2",
+      "result_id": "d3ec099a-ad35-42e0-8ab9-4bafdc055462"
+    },
+    {
+      "claim_id": "3f5cf0d1-b8c4-4e45-be7e-986b111cbdee",
+      "result_id": "d3ec099a-ad35-42e0-8ab9-4bafdc055462"
+    },
+    {
+      "claim_id": "0aa0ab55-7501-4a6a-a13d-1a3435ce1626",
+      "result_id": "3c7ce4ef-7191-45d7-8927-2cb0bec81ae4"
+    },
+    {
+      "claim_id": "52f89656-15c6-44dd-8efe-6c97f4c3c1a2",
+      "result_id": "3c7ce4ef-7191-45d7-8927-2cb0bec81ae4"
+    },
+    {
+      "claim_id": "c4d2b1d2-2c31-4e16-b2e5-fd5332ebae20",
+      "result_id": "3c7ce4ef-7191-45d7-8927-2cb0bec81ae4"
+    },
+    {
+      "claim_id": "f886b0a9-9864-443d-ad6c-430f7721028a",
+      "result_id": "3c7ce4ef-7191-45d7-8927-2cb0bec81ae4"
+    },
+    {
+      "claim_id": "5bc15f61-2a50-44d5-be12-f171a514876f",
+      "result_id": "3c7ce4ef-7191-45d7-8927-2cb0bec81ae4"
+    },
+    {
+      "claim_id": "20dbba8a-544a-4ff9-8c8c-58219abd8e3e",
+      "result_id": "ec53762b-e550-4e5f-aee0-e570244422a3"
+    },
+    {
+      "claim_id": "5863a552-1275-4ec5-9ea1-f928df2de988",
+      "result_id": "ec53762b-e550-4e5f-aee0-e570244422a3"
+    },
+    {
+      "claim_id": "d65074bc-66ef-48f5-8a61-aadee8221c15",
+      "result_id": "ec53762b-e550-4e5f-aee0-e570244422a3"
+    },
+    {
+      "claim_id": "29cba08d-798f-4fdb-8fde-723b24b8b1cb",
+      "result_id": "ec53762b-e550-4e5f-aee0-e570244422a3"
+    },
+    {
+      "claim_id": "4f80fa5d-6209-420b-a725-cf9df531bba8",
+      "result_id": "ec53762b-e550-4e5f-aee0-e570244422a3"
+    },
+    {
+      "claim_id": "60c94c58-9ded-487f-837d-317c20e948dd",
+      "result_id": "ec53762b-e550-4e5f-aee0-e570244422a3"
+    },
+    {
+      "claim_id": "caa55878-c29c-44f3-83af-a57e5f776151",
+      "result_id": "ec53762b-e550-4e5f-aee0-e570244422a3"
+    },
+    {
+      "claim_id": "2d9f40d1-9f1d-4946-8e9c-931bf38ad728",
+      "result_id": "b9c00544-75e8-4bd8-9fe0-05a89cf8dbb1"
+    }
+  ],
+  "comparisons": []
+}

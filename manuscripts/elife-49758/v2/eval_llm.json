@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C20"
+    ],
+    "result": "Fixed-time decision strategies based on Berg-Purcell averaging cannot achieve accurate anterior-posterior decisions within the short timescales of early nuclear cycles. The authors show through calculations that fixed-time sampling would require approximately 50 minutes near the boundary region to reach standard error levels, far exceeding the ~3 minute experimental timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18, and C20 collectively demonstrate through mathematical modeling (Figure 1c-d) that traditional fixed-time concentration sampling strategies are incompatible with observed embryological timescales. The calculations are based on established Berg-Purcell theory and show quantitative agreement that decision times would exceed 50 minutes near the boundary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C63"
+    ],
+    "result": "On-the-fly decision schemes using Sequential Probability Ratio Test (SPRT) achieve accurate positional decisions in less than 1 minute, well within nuclear cycle 11 duration. The authors identify promoter architectures that satisfy all embryological constraints and reach required precision within a few minutes for a wide range of activation rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36, C37, and C63 are strongly supported by the mathematical modeling framework and optimization results shown in Figures 2-4. The methodology derives from established SPRT theory, and the authors demonstrate through systematic parameter exploration that multiple promoter architectures can achieve sub-3-minute decision times while satisfying biological constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C57",
+      "C58"
+    ],
+    "result": "Fast decision-making architectures display short median DNA-bound times (~0.5s) with non-exponential distributions due to high cooperativity. These short binding times are instrumental in achieving speed-accuracy tradeoffs, with rare long binding events in the distribution tail enabling longer activation periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C57-C58 are supported by Monte Carlo simulations (Figure 4d) showing agreement with experimental measurements from Mir et al. The non-exponential distribution with short median but longer mean bound times provides a mechanistic explanation for how rapid binding/unbinding can coexist with sustained activation events through cooperative binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "Fast decisions require a small number of Bicoid-binding sites (less than three) to be occupied for gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by the optimization analysis shown in Figure 4a, which systematically explores different activation rules (k values). The results demonstrate that k=1, 2, or 3 activation rules achieve the fastest decision times while satisfying biological constraints, with higher k values failing to meet time requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The equality V=D between drift and diffusion coefficients in decision-making space arises from the martingale property of conditional expectations for likelihood ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by mathematical derivation in the text showing that Bayesian updating constrains likelihood variations such that expected changes in probability must vanish, leading to V=D. This is verified through explicit examples in the appendices and represents a novel theoretical contribution to SPRT methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The model predicts that changes in diffusion rates or number of Bicoid-binding sites will shift the hunchback expression boundary along the anterior-posterior axis. Reduced numbers of binding sites cause strong anterior displacement of the expression border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 are supported by model predictions shown in Figure 6e with quantified boundary displacements. These predictions follow logically from the model structure and provide testable hypotheses, though they remain unvalidated experimentally in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Adding extra binding sites through enhancers increases computing power and can reduce decision time to about 60% of the performance of best architectures without enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by the enhancer-promoter model analysis described in the text. The ~6% improvement for single enhancer and ~40% improvement with additional promoter sites are quantified results from the model, though the enhancer model itself is simplified and may not capture full biological complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Equilibrium promoter architectures perform very well and achieve short decision times, while non-equilibrium architectures do not significantly improve performance except for increasing Hill coefficients without adding binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by comparative analysis of equilibrium vs. non-equilibrium architectures throughout the results. The finding that equilibrium architectures suffice for fast decisions is demonstrated through the optimization results in Figure 4, while the Hill coefficient effect of non-equilibrium dynamics is noted as a secondary benefit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The combination of high cooperativity and high temporal variance due to bursty dynamics is a possible recipe for accurate readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by the integration of results showing that optimal architectures display both high cooperativity (Figure 4b) and bursty dynamics (Figure 4c-d). The mechanistic connection between these features and accurate readout is demonstrated through the drift-diffusion analysis and residence time distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "High Hill coefficients in the hunchback response are associated with frequent visits of extreme expression states where binding sites are either all empty or all occupied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by citation to Tran et al. 2018 and illustrated in Figure 4c showing residence time distributions. The architectures with higher Hill coefficient constraints (H>5) show increased occupancy of extreme states (0 and 6 bound sites) compared to unconstrained architectures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C13"
+    ],
+    "result": "Hunchback genes make anterior-posterior developmental decisions in less than 3 minutes by reading out Bicoid morphogen positional information during nuclear cycles 10-13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, and C13 are supported by citations to Lucas et al. 2018 and represent established experimental observations that motivate the theoretical work. These claims provide the empirical foundation and time constraint that the modeling work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The Drosophila early embryo developmental system involves a syncytium of ~6000 nuclei that read out the Bicoid gradient to establish sharp hunchback expression boundaries defining anterior-posterior regions, with positional information near the minimum required for observed precision and subject to information loss through gene cascades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C12 establish the biological context through citations to established literature (O'Farrell et al., N\u00fcsslein-Volhard et al., Houchmandzadeh et al., Gregor et al., Petkova et al., Lucas et al.). These background claims are well-supported by the cited literature and provide essential context for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C25",
+      "C29"
+    ],
+    "result": "The Bicoid concentration decreases exponentially along the AP axis by a factor of five, with a boundary region width of 2% egg length where nuclei convert the graded gradient into sharp hunchback expression through six experimentally identified binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C25, and C29 describe the model system parameters based on experimental measurements and are supported by citations and Figure 1a. These quantitative parameters are well-established in the literature and form the basis for the modeling framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Berg and Purcell derived the seminal tradeoff between integration time and readout accuracy for concentration sensing based on average receptor binding occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 accurately describes the Berg-Purcell 1977 work and is properly cited. This historical context is correctly presented and relevant to understanding why alternative decision strategies are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The model focuses on Bicoid readout through six binding sites in the proximal promoter, excluding Hunchback feedback, other maternal gradients, and enhancers based on timing constraints and experimental evidence that Bicoid is the leading factor in fate determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 describe modeling assumptions that are justified by citations to Perry et al. 2011 and Ochoa-Espinosa et al. 2009. The rationale for these simplifications is reasonable given the goal of demonstrating sufficiency of Bicoid readout alone, though the exclusions represent limitations of the model scope.",
+    "result_type": "MINOR"
+  }
+]

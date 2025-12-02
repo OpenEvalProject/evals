@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript establishes the scientific context and motivation for the study by reviewing prior knowledge about persistent activity in LIP and FEF during delayed oculomotor tasks, theoretical models of persistent activity, and gaps in empirical circuit-level data from primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C15 collectively establish well-documented background knowledge supported by appropriate citations. These claims accurately represent the state of the field regarding persistent activity, theoretical models, and the motivation for circuit-level studies in primates. The citations appear appropriate and the characterizations of prior work are consistent with the neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12"
+    ],
+    "result": "There is a lack of circuit-level data from primates to inform theories of persistent activity mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C12 identify a clear gap in the literature that motivates the current study. This gap is explicitly stated and represents a reasonable characterization of the field at the time of publication, justifying the experimental approach taken.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C86",
+      "C87",
+      "C88",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors collected 967 units from LIP and FEF in two macaques performing a memory-guided saccade task with variable timing and spatial jitter, enabling single-trial analysis of network dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C86-C96 describe the dataset and experimental methods. The sample size (967 units, 160 sessions) is substantial for simultaneous multi-area recordings. The task design with temporal and spatial variability is well-justified for enabling single-trial GLM analysis. The methods are described with appropriate detail and citations to established protocols.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The population GLM approach allows isolation of interneuronal coupling effects while statistically controlling for shared task variables and provides advantages over pairwise correlation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 describe the analytical approach and its advantages. The GLM method is well-established (with appropriate citations) and the advantages over simpler correlation methods are correctly stated. The approach is appropriate for the research question and the claims about what the method can achieve are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C41"
+    ],
+    "result": "Strong and symmetric long-timescale recurrent excitation exists between LIP and FEF, with three temporal components (slow excitation, moderate inhibition, fast excitation) that map onto NMDA, GABA, and AMPA receptor dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16-C17, C31-C36, and C41 describe the core finding of strong reciprocal coupling. The statistical evidence is robust (highly significant p-values from permutation tests, large fractions of significant kernels). The PCA analysis revealing three temporal components is shown in Figure 3b. The mapping to receptor types is appropriately presented as interpretation supported by theoretical models. The symmetry between areas is supported by both data and anatomical citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C23",
+      "C42",
+      "C43",
+      "C49"
+    ],
+    "result": "LIP exhibited stronger local functional connectivity than FEF, and many neurons in LIP had longer network and intrinsic timescales than neurons in FEF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22-C23, C42-C43, and C49 describe unexpected differences between LIP and FEF. The findings are supported by statistical tests (Wilcoxon rank-sum, p<10^-6) and shown in Figures 4 and 5. The predictive index analysis (Figure 4) and time constant analysis (Figure 5c) provide converging evidence. These findings contradict some theoretical predictions (C24, C77), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The spiking activity of most neurons (88.4%) was driven more by spikes from other neurons than by their own recent spike history, with a small subset (11%, predominantly in FEF) showing the opposite pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C44-C46 describe the relative importance of coupling versus spike-history. The quantitative findings (88.4% coupling-dominated, 11% history-dominated) are clearly stated and shown in Figure 4c. This result emphasizes the importance of network interactions and is a key finding supporting the circuit-level mechanisms of persistent activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C35",
+      "C72"
+    ],
+    "result": "Inhibition with moderate timescales was present alongside slow recurrent excitation, potentially serving to stabilize network dynamics and prevent runaway excitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C35, and C72 describe the inhibitory component of coupling. The third principal component (Figure 3b) shows suppressive interactions with intermediate timescales. The interpretation that this inhibition may stabilize the network is reasonable and consistent with theoretical models, though it is appropriately presented as interpretation rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Interneuronal coupling terms did not improve predictions of average responses (PSTHs) but provided 22% more information for predicting single-trial spike trains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 describe an important methodological finding shown in Figures 3d-e. The result that coupling improves single-trial but not average predictions is well-documented in prior GLM studies (with appropriate citations) and emphasizes the importance of analyzing single-trial dynamics. The 22% improvement is quantified in bits-per-spike, an appropriate information-theoretic measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C62"
+    ],
+    "result": "Coupling in visual area MT was considerably weaker than in the LIP-FEF network, consistent with MT's role in visual processing rather than working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C62 provide important context by comparing to another brain area. The comparison to MT (Figure 3\u2014figure supplement 2) shows significantly weaker coupling with large effect sizes. This control strengthens the interpretation that the strong coupling in LIP-FEF is specific to areas involved in persistent activity. The citation to prior work (Yates et al., 2017) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "There was no clear relationship between the classic trial-average measure of persistent activity and estimates of coupling and spike-history effects on single trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 describes a negative result with low correlations (R = -0.12 to -0.07) shown in Figure 4\u2014figure supplement 1. This finding is important because it demonstrates that traditional PSTH-based measures of persistent activity may not reflect the underlying single-trial network dynamics. The result is clearly stated and appropriately interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C75"
+    ],
+    "result": "Most neurons had short time constants, but distributions had heavy right tails with many neurons exhibiting longer timescales (100-300 ms) for both spike-history and coupling, consistent with theoretical requirements for persistent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C50, and C75 describe the time constant distributions shown in Figure 5. The finding of long timescales (100-250 ms) in a subset of neurons is consistent with theoretical models requiring slow dynamics to maintain persistent activity over seconds. The exponential fitting procedure is described in methods, though 48% of history kernels were excluded due to poor fits (noted in methods).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C56"
+    ],
+    "result": "Strong coupling was observed even during fixation, with a subtle yet systematic increase in excitatory coupling from fixation to delay period, most pronounced within LIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C56 describe temporal dynamics across task epochs shown in Figure 6a,c. The finding of strong coupling during fixation is important and supported by statistical tests (p<10^-3 to 10^-9). The systematic increase from fixation to delay is modest but consistent across all interactions, suggesting nuanced changes in network state rather than dramatic reconfiguration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Coupling increased from early to late delay across all area interactions, with LIP showing balanced increases in excitation and inhibition while FEF and between-area coupling showed primarily excitatory shifts. There was little correlation between coupling early and late in the delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C57 describe changes within the delay period shown in Figure 6b,d. The statistical tests show highly significant increases (p<10^-6 to 10^-27). The lack of correlation between early and late delay coupling (Figure 6d) contrasts with the systematic relationship between fixation and delay, suggesting different dynamics at different timescales. The differential patterns in LIP versus FEF are clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Coupling was modestly stronger for pairs of neurons with more similar spatial tuning, most pronounced for neurons within LIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 describes a relationship between tuning similarity and coupling strength shown in Figure 6\u2014figure supplement 1. The effect is modest (R-squared values are low: -0.16 for LIP-LIP) but the pattern is consistent with predictions from bump attractor models. The analysis uses 1D circular Gaussian tuning curves, which is a reasonable simplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68"
+    ],
+    "result": "GLM analysis of synthetic data from a bump attractor network validated the method: coupling estimated by the GLM systematically increased with recurrent connection strength in the network, and the GLM recovered reasonable stimulus, history, and coupling kernels including the fast and slow excitatory components (AMPA and NMDA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C63-C65, C67-C68 describe validation using simulated data from a classic attractor network model. Figure 7c shows the systematic relationship between GLM-estimated coupling and true recurrent strength. Figure 7d-f shows that the GLM recovers the known components of the model. This validation is important for interpreting the real data and is well-executed. The observation that coupling is faster in the model than data (C66) is noted as a potential difference worth exploring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C60",
+      "C69"
+    ],
+    "result": "The differences in coupling between LIP and FEF could be explained by differences in the strength of recurrent connections in attractor networks. LIP appears to exhibit strong attractor dynamics near saturation, while FEF acts as a weak attractor still capable of maintaining persistent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C26, C60, and C69 interpret the data in the context of attractor network models. The comparison to the attractor network simulations (Figure 7c) provides a quantitative framework for interpreting the coupling differences. The inference that LIP is a strong attractor and FEF a weak attractor is supported by the mapping to the model, though this interpretation depends on the specific model parameters used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C61",
+      "C76"
+    ],
+    "result": "Both LIP and FEF could support persistent activity independently, but between-area interactions alone were insufficient to generate persistent activity despite reflecting statistically-significant coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C61, and C76 describe an important finding from the attractor network analysis shown in Figure 7\u2014figure supplement 1. The result that between-area coupling is significant but below the threshold for generating persistent activity independently is clearly demonstrated. This finding has important implications for understanding the distributed nature of the frontoparietal network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C21",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C82",
+      "C83"
+    ],
+    "result": "The results demonstrate core aspects of theoretical models (slow recurrent excitation, balancing inhibition, long intrinsic timescales) while providing quantitative estimates of timescales and magnitudes, thus providing direct empirical support for and constraints on models of persistent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C70-C74, C82-C83 summarize how the findings relate to theoretical models. The mapping of the three temporal components to NMDA, GABA, and AMPA receptors is appropriately presented as interpretation supported by the timescales and theoretical models (with citations). The claim that results provide empirical support and quantitative constraints is justified by the comprehensive characterization of coupling dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C77"
+    ],
+    "result": "The findings that LIP has stronger recurrent connectivity than FEF run contrary to recent theoretical hypotheses about the relative roles of LIP and FEF, but concur with previous empirical findings examining local pairwise correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C77 acknowledge that the results contradict some theoretical predictions (Murray et al., 2017b) but are consistent with prior empirical work (Katsuki et al., 2014). This honest assessment of how the findings relate to prior work is appropriate. The contradiction with theory is clearly stated and discussed, which is important for advancing the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The strong interactions both within and between LIP and FEF support the idea of a tightly linked network that might be better thought of as parts of a single functional unit, possibly acting as a single distributed attractor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 present an interpretation of the overall findings. The proposal that the frontoparietal network acts as a single distributed attractor is a reasonable synthesis of the results showing strong coupling both within and between areas. This interpretation is appropriately presented as a hypothesis rather than a definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The superior colliculus and thalamus are likely critical parts of the frontoparietal circuit, with recent rodent work suggesting the thalamus plays a central role in maintaining persistent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 discuss the broader circuit context with appropriate citations. The acknowledgment that other brain areas (SC, thalamus) are likely involved is important for contextualizing the findings. The note that the thalamic role needs to be tested in primates is appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Relatively little is known about fine-grained retinotopy in LIP, which is a limitation for comparing to bump attractor models that link spatial connectivity to spatial selectivity. The heterogeneity and mixed selectivity in the circuit may result from heavily interconnected networks that are continuously active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 acknowledge limitations and offer speculations about the implications. The acknowledgment that fine-grained retinotopy in LIP is not well-characterized is an important caveat for interpreting the results in the context of bump attractor models. The speculation about heterogeneity and mixed selectivity is appropriately presented with citations to relevant work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Coupling tended to be faster in the attractor network than in the data, which may be an interesting difference worthy of consideration in modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 notes a discrepancy between the model and data. This observation is important for future modeling work and is appropriately presented as a potential area for refinement rather than a fundamental problem with the approach.",
+    "result_type": "MINOR"
+  }
+]

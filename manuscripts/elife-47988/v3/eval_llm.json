@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Inhibition of RAB-A5c function leads to increased CMT and CMF anisotropy in meristematic lateral root cells, with CMT arrays becoming highly transverse within 24 hours of induction, preceding obvious changes in cell geometry. This increase in anisotropy occurs at both outer and inner periclinal faces, and cellulose synthase trajectories follow the transverse CMT pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C50-C56 are well-supported by quantitative microscopy data (Figure 1) showing significant increases in CMT anisotropy (from ~0.08 to ~0.2) and transverse orientation in RAB-A5c[N125I] lines. Time-course experiments demonstrate the temporal sequence, and 3D imaging confirms the effect at multiple cell faces. The inference that CMT orientation leads to increased CMF anisotropy (C56) is supported by cellulose synthase trajectory data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C62",
+      "C63"
+    ],
+    "result": "The effect of RAB-A5c[N125I] on CMT array organization is not mediated through CLASP or GCP2, as both proteins maintain their edge localization when RAB-A5c is inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C62-C63 are supported by confocal microscopy data (Figure 1I-L) showing that CLASP:GFP and GCP2:GFP still localize to cell edges 72 hours after RAB-A5c[N125I] induction. The inference that these proteins do not mediate the CMT reorganization effect (C63) is logically sound given the localization data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C69"
+    ],
+    "result": "Computational modeling predicts that reduction of cell wall stiffness at edges causes cell swelling, while introduction of anisotropy at cell faces counteracts this swelling. Anisotropy at just the outer face is sufficient to reduce edge-mediated cell swelling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67, C69 are supported by 3D finite element modeling results (Figure 2) showing consistent patterns across multiple parameter variations. The model demonstrates that reducing shear moduli at edges increases displacement (swelling), while introducing CMF anisotropy at faces reduces this displacement. The computational approach is well-described with clear parameter definitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Genetic disruption of CMT reorganization in the erh3-3 mutant background enhances the cell swelling phenotype caused by RAB-A5c[N125I], indicating that CMT reorganization counteracts cell swelling caused by inhibition of RAB-A5c function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by quantitative measurements (Figure 3) showing that lateral root diameter increase is significantly greater in erh3-3 background (44%) compared to wild-type (29%) when RAB-A5c is inhibited. The inference that CMT reorganization counteracts swelling (C72) is logically sound given the synergistic phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Pharmacological disruption of CMT arrays using taxol or oryzalin prevents establishment of anisotropic CMT arrays and significantly enhances the cell swelling phenotype in RAB-A5c[N125I] lines, rendering lateral roots hypersensitive to RAB-A5c inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by confocal microscopy and quantitative measurements (Figure 3, Figure 3\u2014figure supplement 1) showing that both taxol and oryzalin prevent CMT reorganization and significantly increase lateral root diameter (49-57%) compared to RAB-A5c[N125I] alone (9-35%). The inference of hypersensitivity (C75) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Disruption of CMT-cellulose synthase coupling in the pom2-4 mutant enhances the RAB-A5c[N125I] phenotype, indicating that the effect of CMTs on CMF orientation, rather than another CMT function, is required to compensate for RAB-A5c inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by quantitative measurements (Figure 3E,F,K) showing significantly larger diameter increase in pom2-4 background (67%) compared to wild-type (37%). The inference that CMT guidance of CMF orientation is the critical function (C77) is logically sound given that pom2-4 specifically disrupts CMT-CSC coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Premature alignment of CMTs into anisotropic arrays in the clasp-1 mutant partially compensates for RAB-A5c[N125I]-related cell swelling, as evidenced by reduced relative increase in lateral root diameter compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by quantitative measurements (Figure 3G,H,L) showing that the relative diameter increase in clasp-1 (22%) is significantly less than in wild-type (30%) when RAB-A5c is inhibited. The inference of partial compensation (C79) is consistent with the data and the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "YFP:RAB-A5c compartments at cell edges are associated with CMTs throughout the cell cycle, with localization restricted to regions where CMTs are present. However, not all CMTs at edges are associated with RAB-A5c, indicating that CMT presence alone is not sufficient for RAB-A5c recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are well-supported by confocal microscopy data (Figure 4A-D, Figure 4\u2014figure supplement 1) showing colocalization of YFP:RAB-A5c with CMTs at edges and dynamic changes during cell cycle progression. The observation that some CMTs lack RAB-A5c association (C86) and the inference about recruitment requirements (C87) are supported by collocalization analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "YFP:RAB-A5c distribution at cell edges is influenced by CMT array organization, with enrichment at longitudinal edges in wild-type and clasp-1, but redistribution to transverse edges in erh3-3 and spr3. This effect is independent of cell geometry changes, indicating that CMTs are necessary but insufficient to explain RAB-A5c distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 are supported by 3D quantitative analysis (Figure 4E-J) showing significant differences in YFP:RAB-A5c localization patterns across mutants. The observation that mutants with similar cell dimensions show opposite RAB-A5c localization patterns (C92) supports the inference that CMT organization, not geometry, drives the effect. The conclusion about CMT necessity but insufficiency (C93) is logically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Meristematic lateral root cells maintain highly anisotropic longitudinal growth despite largely isotropic CMT/CMF arrays at the outer periclinal face, with total volume growth predominantly accounted for by the longitudinal growth vector in both meristematic and elongation zone cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by 3D growth analysis (Figure 5A,B) showing that meristematic cells with low CMT anisotropy (~0.08) still exhibit highly anisotropic growth, with longitudinal growth dominating total volume increase. The quantitative data clearly demonstrate this unexpected finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C97",
+      "C98"
+    ],
+    "result": "Two independent mechanisms contribute to anisotropic growth in young lateral roots: CMT/CMF reorganization and RAB-A5c-mediated edge-directed trafficking. These pathways act at different developmental stages but can partially compensate for each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C97-C98 represent the central conclusion of the manuscript, supported by the combined genetic, pharmacological, and computational evidence. The independence of the mechanisms is demonstrated by the observation that RAB-A5c inhibition causes loss of growth anisotropy despite increased CMT/CMF anisotropy (C7, C50-C56). Partial compensation is demonstrated by genetic and pharmacological experiments (C70-C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C99"
+    ],
+    "result": "RAB-A5c associates with CMTs at cell edges, and CMTs act as an integration point for both mechanisms controlling cellular growth anisotropy in lateral roots: cellulose anisotropy at faces and RAB-A5c activity at cell edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C99 are supported by confocal microscopy data showing RAB-A5c-CMT association (Figure 4) and by the observation that CMT organization affects RAB-A5c localization (C88-C93). The inference that CMTs act as an integration point (C11, C99) is well-supported by the combined evidence, though it remains somewhat speculative regarding the molecular mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "RAB-A5c may act through locally changing cell wall properties at cell edges, as supported by computational modeling showing that reduction of cell wall stiffness at edges causes cell swelling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 is explicitly stated as a hypothesis/speculation, and while C49 is supported by computational modeling (both 2D from previous work and 3D from current work), direct experimental evidence for local cell wall property changes at edges is not provided. The mechanism remains inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background knowledge claims about plant cell growth, cell wall structure, and the CMT/CMF paradigm for directional growth control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C12-C28 represent established knowledge in plant biology, supported by appropriate citations to the literature. These claims provide the necessary context for understanding the novel findings of the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The CMT/CMF paradigm alone is insufficient to explain directional plant growth in various cases, and alternative mechanisms involving pectin modification and microtubule-independent pathways have been proposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by appropriate citations to prior work demonstrating limitations of the CMT/CMF paradigm and alternative mechanisms. These claims establish the rationale for investigating RAB-A5c as an alternative mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "RAB-A5c is a plant-specific small GTPase that specifies a membrane trafficking pathway to cell edges and is required for directional growth control in young lateral roots, as demonstrated by previous work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C35-C38 are supported by citations to previous work (primarily Kirchhelle et al., 2016) establishing the role of RAB-A5c in directional growth. These claims provide essential background for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Cell edges are important organizational domains for CMTs, with proteins like CLASP and GCP2 localizing to edges and influencing CMT organization. Previous work suggested RAB-A5c function at edges may be independent of CLASP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 are supported by appropriate citations to prior work on CMT organization at cell edges. These claims establish the context for investigating the relationship between RAB-A5c and CMT organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "GCP2:GFP localizes to both longitudinal and transverse cell edges in lateral roots, with approximately two-fold enrichment at transverse edges, and partially overlaps with YFP:RAB-A5c.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by confocal microscopy and quantitative analysis (Figure 1\u2014figure supplement 3). The data clearly show GCP2 localization and partial overlap with RAB-A5c, though the functional significance remains unclear.",
+    "result_type": "MINOR"
+  }
+]

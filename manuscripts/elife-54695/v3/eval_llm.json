@@ -1,0 +1,598 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Single-cell RNA sequencing of Col2-Cre labeled bone marrow cells comprehensively captures mesenchymal lineage cells. The Col2:Td model labels all osteocytes, adipocytes, and CFU-F forming cells, and the top 1% Td+ cells from endosteal bone marrow contain essentially all mesenchymal progenitors. Analysis of 7,585 cells identified 9 distinct subpopulations of mesenchymal lineage cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C39 provide strong quantitative evidence that Col2:Td labels all terminal mesenchymal cell types (100% of osteocytes, adipocytes, stromal cells) and 98.7% of CFU-F colonies. The comprehensive labeling pattern, combined with the isolation of 7,585 cells yielding 9 clusters (C40-C41), supports that this approach captures the full mesenchymal lineage. The enzymatic digestion method is appropriately justified for enriching progenitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Pseudotemporal trajectory analysis reveals bifurcated differentiation of mesenchymal progenitors. Cluster 1 cells are positioned at one end of the pseudotime trajectory with osteocytes and adipocytes at opposite divergent ends, suggesting cluster 1 represents ancestral cells that bi-differentiate into osteogenic and adipogenic lineages. This pattern is consistently observed using both Monocle and Slingshot algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 demonstrate convergent computational evidence from two independent trajectory inference methods (Monocle and Slingshot) placing cluster 1 at the root with bifurcated paths to osteocytes and adipocytes. The lineage-specific marker expression (C42-C45) validates cluster identities. However, this is computational inference from cross-sectional data; C217 correctly notes that lineage tracing experiments are needed for definitive validation of differentiation relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C65",
+      "C71"
+    ],
+    "result": "Cluster 1 represents early mesenchymal progenitors (EMPs) expressing stem cell markers. These cells express Sca1, Cd34, and Thy1, are the most primitive cells in the dataset, and are similar to previously described P\u03b1S cells. Among proposed MSC markers, only Sca1 preferentially marks cluster 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide gene expression evidence for stem cell marker expression in cluster 1, supported by their position at the trajectory root. The comprehensive analysis of previously proposed MSC markers (C65-C71) strengthens the characterization by showing most markers are not specific to EMPs. The comparison to P\u03b1S cells (C71-C72) appropriately contextualizes findings within existing literature. The caveat about potential Td- progenitors (C56) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mesenchymal progenitors exist in a hierarchical progression from EMPs through intermediate (IMPs) and late (LMPs) stages to lineage-committed progenitors (LCPs). These populations show progressively increasing expression of osteogenic genes and differential proliferative status, with LMPs, LCPs, and osteoblasts being most proliferative, while EMPs are less proliferative and adipocytes/osteocytes are non-proliferative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 establish the hierarchical nomenclature based on sequential positioning in pseudotime and progressive osteogenic gene expression. The proliferation analysis (C61-C64) using computational cell cycle scoring provides orthogonal validation of the developmental hierarchy, with appropriate positive control (growth plate chondrocytes). The pattern is internally consistent with stem cell biology principles where early progenitors are less proliferative than transit-amplifying cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Adipogenic differentiation requires more transcriptional changes than osteogenic differentiation. Adipogenic differentiation involves many unique transcription factors including master regulators Pparg and Cebpa, while osteogenic differentiation primarily involves Sp7 (but not Runx2, which is expressed from IMPs onward). Pathway analysis reveals distinct features: osteogenic differentiation involves ECM organization and bone development, while adipogenic differentiation involves cytokine signaling, immune processes, and metabolic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C84 present comprehensive transcriptional profiling with appropriate computational analyses (DEG analysis, GO terms, KEGG pathways). The observation about Runx2 (C75-C76) is well-supported by expression data. The finding is corroborated by independent in vitro human MSC data (C77). The pathway analyses (C78-C84) appropriately distinguish shared versus lineage-specific features. The inference about adipocyte regulatory roles (C84) is reasonable given the pathway enrichments, though functional validation would strengthen this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Lineage tracing validates computational predictions of differentiation trajectories. Dmp1-Cre labels cells in the osteogenic lineage (osteoblasts, osteocytes, and few adipocytes), while Acta2-CreER labels late mesenchymal progenitors that give rise to both osteocytes (68.2%) and adipocytes (33.7%), confirming \u03b1SMA marks progenitors before bifurcated differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C94 provide critical experimental validation of computational predictions using two independent Cre lines. The Dmp1:Td labeling pattern (C87-C88) matches the predicted expression in LCPs along the osteogenic route (C86). The Acta2ER:Td fate mapping (C92-C93) demonstrates labeling of both terminal lineages with quantified percentages, validating that \u03b1SMA+ LMPs are bipotential. The consistency with prior literature (C89) and the quantitative cell counting strengthen confidence in these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Single-cell analysis across aging reveals consistent mesenchymal hierarchy. Analysis of 3-month (2,510 cells) and 16-month (7,354 cells) datasets yields similar clustering patterns and markers as 1-month data, with pseudotime trajectories consistently placing EMPs at one end and osteocytes/adipocytes at divergent ends. The IMP cluster is notably absent in 16-month dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C105 demonstrate reproducibility of the mesenchymal hierarchy across ages with appropriate sample sizes and quality metrics. The consistent clustering patterns (C102) and trajectory structures (C104) across three age groups strengthen confidence in the biological validity of identified populations. The absence of IMPs in aged mice (C103) is an interesting observation, though the biological significance requires further investigation. The CFU-F validation (C95-C97) confirms progenitor decline with age.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Aging causes mesenchymal progenitor depletion and adipogenic drift. The mesenchymal progenitor pool shrinks drastically while the adipocyte population expands in 16-month mice. EMPs and LMPs in aged mice shift toward differentiated status, particularly the adipocyte end, with higher expression of adipocyte markers like Cebpa and Lpl. Lepr expression is much higher in 16-month EMPs than 1-month EMPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C115 describe age-related changes with quantitative support from cell proportions and gene expression data. The adipogenic drift (C108-C110) is supported by pseudotime shifts and marker expression changes. The Lepr expression pattern (C111-C112) provides a plausible explanation for age-dependent MSC labeling by Lepr-Cre, reconciling apparently contradictory prior findings. However, the causal relationship between adipogenic drift and progenitor loss (C115) remains speculative without functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "A large cell cluster expresses adipocyte markers but lacks lipid droplet markers. This cluster expresses Pparg, Cebpa, Adipoq, Apoe, and Lpl, but does not express Plin1 and has very low Fabp4 expression, implying absence of lipid droplets. The cluster also expresses novel markers including Lepr, Cxcl12, Il1rn, Serpina3g, Kng1, Kng2, Agt, Esm1, and Gdpd2, which are upregulated during in vitro adipogenic differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C122 identify a novel cell population with an unexpected molecular signature. The gene expression data (C116-C120) is validated by qRT-PCR during in vitro adipogenesis (C121), providing orthogonal support. The inference about lack of lipid droplets (C119) is reasonable based on the known functions of Plin1 and Fabp4, though direct visualization would strengthen this claim. The identification of multiple novel markers provides molecular handles for further characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Adipoq-Cre labels non-lipid-laden cells in bone marrow that are non-proliferative and lack progenitor activity. In 1-month Adipoq:Td mice, Td labels all Perilipin+ adipocytes, CD45- stromal cells, and pericytes, but not osteoblasts or chondrocytes. The majority of Td+ cells (99.8%) lack lipid droplets, none incorporate EdU (0%), and they do not form CFU-F colonies. During culture, Td+ cell percentage decreases progressively, suggesting minimal proliferative capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C131 provide comprehensive characterization of Adipoq:Td labeled cells through multiple complementary assays. The quantitative data is robust with large cell counts (C126: 1,995/2,000 cells; C127: 0/2,060 cells; C128: 0/100 colonies). The EdU incorporation (C127) and CFU-F assays (C128) definitively demonstrate lack of proliferation and progenitor activity. The progressive loss during culture (C130) provides additional evidence for non-proliferative nature. The labeling pattern (C123-C125) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Adipoq:Td+ cells are not mesenchymal progenitors. Freshly sorted Td+ cells from Col2:Td mice form bone with hematopoietic compartment after kidney capsule transplantation, while Td+ cells from Adipoq:Td mice do not form bone-like structures. This is consistent with Adipoq-Cre not labeling adipoprogenitors in peripheral fat depots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 provide definitive functional evidence through transplantation assays with appropriate positive control (Col2:Td+ cells). The lack of bone formation from Adipoq:Td+ cells (C133) combined with absence of CFU-F activity (C128) strongly supports they are not progenitors. The consistency with peripheral fat data (C135-C136) strengthens the interpretation. The experimental design appropriately uses freshly sorted cells to avoid culture artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Non-lipid-laden Adipoq+ cells are adipocyte precursors positioned between mesenchymal progenitors and lipid-laden adipocytes. During in vitro adipogenic differentiation, Td- mesenchymal progenitors become Td+ cells without lipid droplets (days 1-2), then evolve into Td+ cells with lipid accumulation (days 3-5). In vivo fate mapping shows AdipoqER:Td mice with tamoxifen at P6-7 display Perilipin+Td+ adipocytes at 1 month, demonstrating Perilipin-Td+ cells become bone marrow adipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C143 provide compelling evidence for the developmental position of these cells through two complementary approaches. The in vitro time-course (C137-C138) directly visualizes the progression from progenitors through non-lipid-laden to lipid-laden states. The in vivo fate mapping (C139-C142) demonstrates that cells labeled before adipocyte appearance give rise to mature adipocytes, confirming precursor identity. The convergence of in vitro and in vivo evidence strongly supports the conclusion (C143).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The identified adipogenic lineage cells represent a unique bone marrow-specific population. Almost all Td+ cells in Adipoq:Td mice are Lepr+. The adipocyte cluster does not express markers of white (Lep), brown (Ucp1), or beige (Tnfrsf9) adipocytes, and other adipose depot markers are expressed at very low levels or ubiquitously. Bone marrow contains a unique, large population of adipogenic lineage cells without lipid storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 establish the unique identity of these cells through marker expression analysis. The co-expression of Adipoq and Lepr (C144) is well-documented. The systematic analysis of adipose depot markers (C145-C146) with appropriate citations demonstrates these cells differ from known adipocyte subtypes. The conclusion (C147) is justified by the comprehensive molecular characterization, though functional comparisons with peripheral adipocytes would further strengthen uniqueness claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Non-lipid-laden Adipoq+ cells are abundant pericytes in bone marrow. Perilipin-Td+ cells far exceed Perilipin+Td+ adipocytes with ratios of approximately 400:1 in metaphyseal and 1000:1 in diaphyseal bone marrow. Morphologically, they exist as stromal cells and pericytes. Pdgfrb and Lamb1 are expressed at higher levels in the adipocyte cluster, and all pericytes identified by PDGFR\u03b2 or Laminin staining (100%, 850/850 cells) are Td+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C156 provide strong quantitative evidence for the abundance and pericyte identity of these cells. The cell counting (C149-C150) establishes they are the predominant Adipoq+ population. The 100% co-localization of pericyte markers with Td (C155) is definitive with large sample size (850 cells). The gene expression data (C154) supports pericyte identity. The morphological characterization (C151) combined with marker analysis provides convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Adipoq+ cells function as pericytes and express angiogenic factors. In vasculogenic tube assays, most Td+ cells co-localize with newly formed tubes, suggesting pericyte function. The adipocyte cluster expresses many angiogenic factors including Vegfa, Vegfc, Angpt4, and Rspo3, confirmed by qRT-PCR of fractionated Td+ cells. Bone marrow pericytes are unique as Td+ pericytes are not observed in muscle, liver, lung, brain, heart, or kidney.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C162 provide functional validation of pericyte identity through tube formation assays (C157-C158) and molecular characterization through angiogenic factor expression (C159-C160). The qRT-PCR validation (C160) confirms sequencing predictions. The tissue specificity analysis (C161-C162) strengthens the conclusion that bone marrow pericytes are unique, though the mechanism underlying tissue-specific Adipoq expression in pericytes remains unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Adipoq+ cells form a ubiquitous 3D network in bone marrow through extensive cell processes. Td+ cells possess an average of 6.1\u00b10.2 cell processes covered by PDGFR\u03b2 and Connexin 43. These processes form a 3D network making connections among themselves, around endothelial walls, with hematopoietic cells, and with bone surface. In contrast, lipid-laden adipocytes have processes only at a small portion of cell surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C169 describe a striking morphological feature with quantitative support (C164: 6.1\u00b10.2 processes from 52 cells). The 3D imaging with membrane protein staining (C165) validates that processes are genuine cellular extensions. The extensive connectivity (C167) is well-documented through imaging. The contrast with lipid-laden adipocytes (C168) highlights the unique morphology. The inference about communication roles (C169) is reasonable given Connexin 43 expression, though functional studies would strengthen this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Ablation of Adipoq+ cells causes severe vascular pathology in bone marrow. DT treatment of Adipoq:Td:DTR mice reduces Perilipin+Td+ and Perilipin-Td+ cells by 95% and 88%, respectively. Bone marrow vasculature becomes dilated and distorted with 2.3-fold increase in vessel diameter, 1.9-fold increase in vessel area, 36% decrease in vessel density, and 45% decrease in endothelial cells. Td+ pericytes decrease by 90%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C177 demonstrate a critical role in vascular maintenance through cell ablation with robust quantitative data. The efficient cell depletion (C171: 95% and 88%) validates the experimental approach. The vascular changes (C172-C174) are dramatic and well-quantified. The pericyte depletion (C176: 90%) directly links the vascular phenotype to loss of these cells. The conclusion (C177) is well-supported, though the mechanism (direct pericyte function vs. paracrine effects) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Ablation of Adipoq+ cells causes de novo bone formation throughout the marrow cavity. DT treatment results in trabecular bone formation especially in the diaphysis, resembling metaphyseal trabecular bone. Numerous Osterix+ osteoblasts appear in diaphyseal bone marrow, and nearly all are Td-, confirming Adipoq-Cre rarely labels osteoblast progenitors. CFU-F frequency is drastically reduced, suggesting direct or indirect effects on progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C185 demonstrate a bone formation suppression role through cell ablation with strong imaging and quantitative evidence. The ectopic bone formation in diaphysis (C178-C179) is dramatic and well-documented. The appearance of Osterix+ osteoblasts (C180-C181) indicates rapid activation of osteogenesis. The Td- status of osteoblasts (C182-C183) confirms these are not derived from ablated cells. The CFU-F reduction (C184) is intriguing, though the mechanism (C185) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "Cell ablation produces woven bone with altered cortical structure but preserved hematopoiesis. New bone along the endosteal surface is mostly woven bone with misaligned collagen fibrils, resulting in increased cortical thickness and area, reduced endosteal perimeter, and low tissue mineral density. Overall bone marrow cellularity decreases, but hematopoietic components remain largely unaltered, suggesting reduced cellularity is due to smaller marrow cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C190 provide detailed characterization of the bone phenotype with appropriate imaging (second harmonic generation for collagen, C186) and microCT quantification (C187). The preservation of hematopoietic components (C189) despite reduced cellularity (C188) is well-documented through flow cytometry. The inference about cavity size (C190) is logical given the endosteal bone formation, though direct cavity volume measurements would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Cell ablation effects are consistent across skeletal sites. Non-lipid-laden Td+ cells are abundant in vertebrae, and their ablation similarly causes vascular distortion, increased osteogenic cells, and elevated trabecular bone mass. DT injection alone does not alter bone structure in Adipoq:Td mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C195 demonstrate reproducibility of the phenotype across skeletal sites (long bones and vertebrae), strengthening the biological significance. The vertebral analysis (C191-C194) shows consistent vascular and bone formation responses. The control experiment (C195) confirms effects are specific to cell ablation rather than DT toxicity. This extends the findings beyond a single anatomical location.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "Peripheral fat does not mediate the bone phenotype after Adipoq+ cell ablation. While Adipoq-Cre targets peripheral fat and circulating adipokines can regulate bone formation, fat transplantation restores blood glucose but does not affect DT-induced vessel damage or bone formation in diaphysis, suggesting peripheral fat is not involved in the bone marrow changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C201 address an important confounding variable through fat transplantation experiments. The successful restoration of peripheral fat function (C198-C199: normalized blood glucose) validates the experimental approach. The lack of effect on bone marrow phenotypes (C200) despite metabolic rescue provides strong evidence that the effects are due to bone marrow-resident cells rather than systemic factors. This control experiment is critical for interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C10",
+      "C11"
+    ],
+    "result": "The identified cells are named marrow adipogenic lineage precursors (MALPs) and represent a newly identified component of marrow adipose tissue. These Adipoq-Cre labeled, non-lipid-laden cells are critical bone marrow components regulating marrow vasculature and bone formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C202-C203 provide appropriate nomenclature and conceptual framing based on the comprehensive characterization. The name 'marrow adipogenic lineage precursors' (MALPs) accurately reflects their position in adipogenic differentiation (C143), expression of adipocyte markers (C116-C120), and precursor status (C137-C142). The designation as a component of marrow adipose tissue (C11) is justified by their adipogenic identity and abundance. The functional roles (C202) are well-supported by ablation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "The study computationally delineates the entire in vivo mesenchymal differentiation process and defines the mesenchymal lineage hierarchy. The proposed hierarchy with EMPs, IMPs, LMPs, LCPs, and terminal cells is consistent with stem cell biology principles and addresses long-standing uncertainty about mesenchymal progenitor heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C204-C209 appropriately summarize the major conceptual advance of the work. The computational delineation (C204-C205) is supported by the comprehensive single-cell analysis across ages. The consistency with stem cell hierarchy principles (C208-C209) is well-argued. The claim about addressing uncertainty (C207) is justified given the comprehensive marker analysis and trajectory inference. This represents a significant advance in understanding bone marrow mesenchymal biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216"
+    ],
+    "result": "EMPs represent the most primitive mesenchymal progenitors with characteristics consistent with stem cells. EMPs have the least cell number, are situated at the trajectory root, shrink during aging, are less proliferative than other progenitors, do not express lineage master regulators, and express stem cell markers (Ly6a, Cd34, Thy1). These characteristics are consistent with previous P\u03b1S cell studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C210-C216 synthesize multiple lines of evidence supporting EMP identity as primitive progenitors. The quantitative features (C210-C211: smallest cluster, shrinks with age) align with stem cell biology. The proliferation data (C212) and lack of lineage commitment markers (C213) support stemness. The stem cell marker expression (C214) and consistency with prior work (C216) strengthen the characterization. However, C217 correctly notes that definitive proof requires lineage tracing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "Lepr marks a heterogeneous population predominantly consisting of MALPs rather than mesenchymal progenitors. Lepr is a marker for non-proliferative MALPs expressing adipocyte genes, and its expression in EMPs increases with age. Lepr+ cells constitute 0.3% of bone marrow while CFU-F frequency is <0.01%, indicating Lepr labels many more cells than progenitors. The expansion of Lepr+ MALPs in aging contradicts their use as a progenitor marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C218-C226 provide a critical re-interpretation of prior Lepr-Cre lineage tracing studies with strong quantitative reasoning. The identification of Lepr as a MALP marker (C219) is supported by expression data. The age-dependent expression in EMPs (C220-C221) reconciles contradictory prior findings. The quantitative argument (C222-C224) is compelling: if Lepr+ cells are 30-fold more abundant than CFU-Fs, most cannot be progenitors. The aging data (C225) provides additional evidence. This significantly impacts interpretation of prior MSC studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C227",
+      "C228",
+      "C229"
+    ],
+    "result": "Independent single-cell studies support the identification of MALPs. A scRNA-seq study of Lepr-Cre labeled cells identified two large clusters (MgpHigh P1 and LplHigh P2) highly expressing adipogenesis-associated genes. Another study of wild-type bone marrow identified a Lepr-MSC cluster highly expressing known and newly identified MALP markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C227-C229 provide important external validation by reanalyzing published datasets. The identification of similar populations in Lepr-Cre labeled cells (C227) and wild-type bone marrow (C228-C229) from independent studies strengthens confidence that MALPs are a genuine, reproducible population rather than an artifact of the Col2:Td model. This cross-study validation is a strength of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C230",
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236"
+    ],
+    "result": "MALPs expand the concept of marrow adipose tissue (MAT) beyond lipid-laden adipocytes. MAT traditionally refers to MSC-derived adipocytes interspersed at low density in bone marrow, studied mainly in disease and aging contexts. MALPs represent a stable transitional cell type along adipogenic differentiation after progenitors and before lipid-laden adipocytes, analogous to the osteoblast-osteocyte relationship. This expands MAT to include an abundant cell type with regulatory functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C230-C236 appropriately contextualize the findings within the MAT field with proper citations. The trajectory analysis, in vitro differentiation, and fate mapping (referenced in C234) provide strong evidence for the transitional position. The analogy to osteoblasts/osteocytes (C235) is apt and helps conceptualize MALPs. The expansion of the MAT concept (C236) is justified given MALPs' abundance and adipogenic identity. This represents a conceptual advance in understanding MAT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C237",
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242"
+    ],
+    "result": "MALPs are distinct from traditional pre-adipocytes in peripheral fat. In traditional adipose depots, adipogenic differentiation is tightly coupled with lipid accumulation, and single-cell analyses have not identified MALP-like populations. Pre-adipocytes express low Pparg but not Adipoq and express progenitor markers (Sca1, Cd34), while MALPs do not proliferate, lack progenitor markers, and express terminally differentiated adipocyte markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C237-C242 establish MALPs as a novel cell type through systematic comparison with known adipocyte precursors. The molecular differences (C239-C241) are clear: pre-adipocytes are Pparg-low/Adipoq-negative/proliferative while MALPs are Pparg+/Adipoq+/non-proliferative. The absence of MALPs in peripheral fat scRNA-seq studies (C238) supports tissue specificity. The conclusion (C242) is well-justified by the comprehensive comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C243",
+      "C244",
+      "C245",
+      "C246",
+      "C247"
+    ],
+    "result": "MALPs are a stable, abundant population that rarely converts to lipid-laden adipocytes under physiological conditions. MALPs outnumber lipid-laden adipocytes by 100-1000 fold, indicating they are a stable population. Whether MALPs can undergo apoptosis without differentiating into lipid-laden adipocytes requires further investigation, as does the molecular mechanism blocking their progression. MALPs may be poised to accumulate lipid in response to metabolic or other cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C243-C247 draw appropriate conclusions from the abundance data (C243-C244) while acknowledging limitations. The inference about stability (C244) is reasonable given the large MALP:LiLA ratio. The acknowledgment of unknowns (C245-C246) is appropriate scientific caution. The speculation about responsiveness to metabolic cues (C247) is reasonable but clearly identified as speculation. These claims appropriately balance what is known with what requires future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C252",
+      "C253"
+    ],
+    "result": "MALPs are a marrow-specific adipose cell type with unique morphology and regulatory functions. MALPs exist abundantly as stromal cells and pericytes even in young mice, with cell processes forming a 3D network. They play pivotal roles in maintaining marrow vasculature and suppressing osteogenic differentiation, likely through secreted factors. A limitation is the lack of a MALP-specific Cre line, though MALPs' abundance suggests they dominate the observed effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C248-C253 synthesize the key findings about MALP function and uniqueness. The morphological characterization (C251-C252) is well-supported by imaging data. The functional roles (C253) are demonstrated by ablation studies. The acknowledgment of the limitation regarding LiLA contribution (C249-C250) is appropriate, though the reasoning about relative abundance is sound. The conclusion about marrow-specificity (C248) is supported by the tissue survey and molecular distinctiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C254",
+      "C255",
+      "C256",
+      "C257",
+      "C258",
+      "C259",
+      "C260"
+    ],
+    "result": "MALPs likely regulate hematopoiesis through expression of niche factors. Although hematopoietic components were unchanged shortly after MALP ablation, MALPs express Cxcl12 (2nd most expressed gene) and Scf at high levels. Cxcl12-abundant reticular (CAR) cells act as HSC niches, and MALPs likely constitute a significant portion of CAR cells. Scf from Adipoq-CreER or Lepr-Cre labeled cells promotes hematopoietic regeneration after injury. A prolonged ablation period or injury may be required to detect hematopoietic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C254-C260 present a reasonable hypothesis about hematopoietic regulation based on gene expression (C255, C259) and literature (C256, C258), but lack direct functional evidence. The absence of hematopoietic changes in the ablation study (C254) argues against a critical role under homeostatic conditions. The speculation about requiring longer time or injury (C260) is plausible but untested. The inference about CAR cell identity (C257) is reasonable but indirect. This remains an interesting hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C261",
+      "C262",
+      "C263",
+      "C264",
+      "C265",
+      "C266"
+    ],
+    "result": "MALPs challenge the concept that pericytes must be tightly associated with endothelial cells. While many Td+ cells display typical pericytic morphology with extensive endothelial attachment, others have stromal morphology and contact endothelial cells through small portions of cell bodies or extended processes. Many Td+ stromal cells with no cell body contact extend processes to wrap around capillary walls, indicating both pericytes and stromal cells contribute to vessel stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C261-C266 present detailed morphological observations from 3D imaging that expand understanding of pericyte biology. The documentation of morphological heterogeneity (C263-C265) is well-supported by imaging data. The inference about vessel stabilization (C266) is reasonable given the morphology and ablation phenotype. This challenges traditional pericyte definitions (C261-C262) in an appropriate way based on direct observations. The findings suggest a continuum between pericytes and stromal cells in bone marrow.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C267",
+      "C268",
+      "C269",
+      "C270"
+    ],
+    "result": "MALPs represent unconventional adipocytes with functions distinct from traditional adipocytes. Traditional adipocyte functions include lipid storage, thermogenesis, and nutrient homeostasis regulation, while MALPs possess a completely different set of functions. Why mesenchymal progenitors activate adipocyte transcriptome to become marrow environment regulators is an interesting question. Future studies of MALP regulatory mechanisms may identify new osteoporosis treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C267-C270 appropriately highlight the novelty of MALPs and their potential significance. The contrast with traditional adipocyte functions (C267-C268) is well-established by the functional studies. The questions raised (C269) are interesting and appropriate. The speculation about therapeutic potential (C270) is reasonable given the dramatic bone formation after MALP ablation, though clearly identified as future work. These claims appropriately frame the significance and future directions.",
+    "result_type": "MINOR"
+  }
+]

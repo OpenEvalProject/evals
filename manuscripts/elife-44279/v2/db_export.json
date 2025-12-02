@@ -1,0 +1,1538 @@
+{
+  "submission": {
+    "id": "89819477-dfff-48e2-bb3c-d1e8c14132cb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:04:28.354130Z",
+    "updated_at": "2025-12-02T10:04:28.354130Z"
+  },
+  "content": [
+    {
+      "id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "submission_id": "89819477-dfff-48e2-bb3c-d1e8c14132cb",
+      "content_type": "manuscript",
+      "content_text": "# Plant\u2013necrotroph co-transcriptome networks illuminate a metabolic battlefield\n\n## Authors\n\n- Wei Zhang<sup>1</sup> ([ORCID: 0000-0002-5092-643X](https://orcid.org/0000-0002-5092-643X))\n- Jason A Corwin<sup>3</sup>\n- Daniel Harrison Copeland<sup>2</sup> ([ORCID: 0000-0002-2206-9127](https://orcid.org/0000-0002-2206-9127))\n- Julie Feusier<sup>2</sup>\n- Robert Eshbaugh<sup>2</sup>\n- David E Cook<sup>1</sup> ([ORCID: 0000-0002-2719-4701](https://orcid.org/0000-0002-2719-4701))\n- Suzi Atwell<sup>2</sup>\n- Daniel J Kliebenstein<sup>2</sup> ([ORCID: 0000-0001-5759-3175](https://orcid.org/0000-0001-5759-3175)) \u2020\n\n### Affiliations\n\n1. Department of Plant Pathology Kansas State University Manhattan United States\n2. Department of Plant Sciences University of California, Davis Davis United States\n3. Department of Ecology and Evolution Biology University of Colorado Boulder United States\n4. DynaMo Center of Excellence University of Copenhagen Frederiksberg Denmark\n\n\u2020 Corresponding author\n\n## Abstract\n\nA central goal of studying host-pathogen interaction is to understand how host and pathogen manipulate each other to promote their own fitness in a pathosystem. Co-transcriptomic approaches can simultaneously analyze dual transcriptomes during infection and provide a systematic map of the cross-kingdom communication between two species. Here we used the Arabidopsis-B. cinerea pathosystem to test how plant host and fungal pathogen interact at the transcriptomic level. We assessed the impact of genetic diversity in pathogen and host by utilization of a collection of 96 isolates infection on Arabidopsis wild-type and two mutants with jasmonate or salicylic acid compromised immunities. We identified ten B. cinereagene co-expression networks (GCNs) that encode known or novel virulence mechanisms. Construction of a dual interaction network by combining four host- and ten pathogen-GCNs revealed potential connections between the fungal and plant GCNs. These co-transcriptome data shed lights on the potential mechanisms underlying host-pathogen interaction.\n\n## Introduction\n\nHow a host and pathogen manipulate each other within a pathosystem to facilitate their own fitness remains a long-standing question. The difference between the pathogen\u2019s ability to infect and the host\u2019s ability to resist generates the resulting disease symptomology. This interaction forces host-pathogen dynamics to shape the genomes of the two species via adaptive responses to each other (Dangl and Jones, 2001; Bergelson et al., 2001; Benton, 2009; Kanzaki et al., 2012; Karasov et al., 2014). Plants have evolved a sophisticated set of constitutive and inducible immune responses to cope with constant selective pressures from antagonistic microbes (Jones and Dangl, 2006). Reciprocally, plant pathogens have also evolved a variety of different invasion and virulence strategies to disarm or circumvent plant defense strategies (Glazebrook, 2005; Toru\u00f1o et al., 2016). This has resulted in complex relations between plant hosts and fungal pathogens for survival and fitness.\n\nThe plant innate immune system includes several functional layers with overlapping functions to detect and defend against phytopathogens. This multi-layer immune system can be categorized as a signal monitor system to detect invasion, local and systemic signal transduction components to elicit and coordinate responses, and defensive response proteins and metabolites focused on combatting the invading pathogen (Tsuda and Katagiri, 2010; Corwin and Kliebenstein, 2017). These functional layers, as well as the components within them, are highly interconnected and tightly regulated by the host plant to respond appropriately to various phytopathogens (Couto and Zipfel, 2016; Tang et al., 2017). For instance, Arabidopsis utilizes a complex signaling network to regulate the production of indole-derived secondary metabolites, such as camalexin and indole glucosinolates, that contribute to resistance against pathogens (Kliebenstein et al., 2005; Clay et al., 2009; Bednarek et al., 2009; Frerigmann et al., 2016; Xu et al., 2016; Mine et al., 2018). This layered immune system provides pathogens with numerous targets in the plant immune system that the pathogen can utilize, evade or attack. Most biotrophic pathogens, evolved from commensal microbes, attempt to dismantle the plant immune system by injecting effector proteins into host cells or the inter-cellular space (Dangl and Jones, 2001; B\u00fcttner and He, 2009; Stergiopoulos and de Wit, 2009). For example, the biotrophic bacterial pathogen Pseudomonas syringae can utilize the jasmonic acid (JA) signaling pathway through the production of a JA-mimic, coronatine, to enhance its fitness (Mittal and Davis, 1995; Brooks et al., 2005; Cui et al., 2018). Alternatively, necrotrophic pathogens, which often evolved from environmental saprophytic microbes, can utilize toxic secondary metabolites, small secreted proteins, and small RNAs to aggressively attack host defenses while also defending against host-derived toxins (Choquer et al., 2007; Arbelet et al., 2010; Mengiste, 2012; Weiberg et al., 2013; Kubicek et al., 2014; Macheleidt et al., 2016). In addition, pathogens can directly resist downstream defenses as is done by B. cinerea, where it has an ATP-binding cassette (ABC) transporter BcatrB that provides resistance by exporting camalexin from the pathogen cell (Stefanato et al., 2009). This high level of interactivity between the immune system and pathogen virulence mechanisms generates the final level of disease severity. However, a functional description of this combative cross-kingdom communication between a plant host and necrotrophic pathogen remains elusive.\n\nCo-transcriptomic approaches whereby the host and pathogen transcriptomes are simultaneously analyzed provide the ability to systematically map the cross-kingdom communication between plant hosts and their pathogens, both for individual genes and gene co-expression network (GCN) levels (Stuart et al., 2003; Musungu et al., 2016; Zhang et al., 2017; Lanver et al., 2018; McClure et al., 2018). Recent advances have enabled the measurement of pathogen in planta transcriptome. For example, in planta measurements of the pathogens\u2019 transcriptome within the biotrophic Arabidopsis-Pseudomonas syringae pathosystem has enabled the investigation of early effects on Arabidopsis host immunity and the consequent effects on bacterial growth (Nobori et al., 2018). This enabled the identification of a bacterial iron acquisition pathway that is suppressed by multiple plant immune pathways (Nobori et al., 2018). This shows the potential for new hypothesis to be generated by a co-transcriptome approach (Swierzy et al., 2017; Westermann et al., 2017; Lee et al., 2018).\n\nThe Arabidopsis-B. cinerea pathosystem is well suited for exploring plant-pathogen interaction to understand host defenses and necrotrophic virulence in ecological and agricultural settings. B. cinerea is a necrotrophic generalist pathogen that attacks a broad range of diverse plant hosts, including dicots, gymnosperms, and even bryophytes (Williamson et al., 2007). This necrotrophic pathogen is endemic throughout the world and can cause severe pre- and post-harvest losses in many crops. A high level of standing natural genetic variation within B. cinerea population is hypothesized to facilitate the extreme host range of B. cinerea. This genetic variation affects nearly all known B. cinerea virulence strategies, including penetration and establishment, evading detection, and combatting/coping with plant immune responses (Atwell et al., 2015; Walker et al., 2015; Corwin et al., 2016b). For example, a key virulence mechanism is the secretion of phytotoxic secondary metabolites, including the sesquiterpene botrydial (BOT) and the polyketide botcinic acid (BOA) that trigger plant chlorosis and host cell collapse (Deighton et al., 2001; Colmenares et al., 2002; Wang et al., 2009; Rossi et al., 2011; Ascari et al., 2013; Porquier et al., 2016). These metabolites are linked to virulence, but some pathogenic field isolates fail to produce either compounds pointing to additional pathogenic strategies. The combination of a high level of genetic diversity and extensive recombination means that a population of B. cinerea is a mixed collection of virulence strategies that can be used to interrogate by the co-transcriptome.\n\nIn the present study, the Arabidopsis-B. cinerea pathosystem is used to test how the transcriptomes of the two species interact during infection and assess how natural genetic variation in the pathogen impacts disease development. Isolates were inoculated on Arabidopsis Col-0 wild-type (WT) in conjunction with immune-deficient hormone mutants coi1-1 (jasmonate defense signaling) and npr1-1 (salicylic acid defense signaling). A collection of 96 isolates of B. cinerea was used for infection, which harbor a wide scope of natural genetic variation within the species (Atwell et al., 2015; Corwin et al., 2016a; Zhang et al., 2016; Corwin et al., 2016a; Zhang et al., 2017; Soltis et al., 2018; Fordyce et al., 2018). From individual infected leaves, both Arabidopsis and B. cinerea transcripts at 16 hr post-infection (HPI) were simultaneously measured. Arabidopsis transcripts was analyzed previously to identify four host-derived GCNs that are sensitive to natural genetic variation in B. cinerea (Zhang et al., 2017). In present analysis, ten fungal pathogen-derived GCNs were identiftied, which encode either known or novel virulence mechanisms within the species. Some of these B. cinerea GCNs responsible for BOT production, exocytosis regulation and copper transport are highly linked with the host\u2019s defense phytohormone pathways. By combining the plant host- and pathogen-GCNs into a single network, a dual-transcriptomic network was constructed to identify potential interactions between the components of plant host innate immune system and fungal pathogen virulence. These connections highlight potential targets for fungal pathogen phytotoxins and prevailing counter-responses from plant host. Collectively, co-transcriptomic analysis shed lights on the potential mechanisms underlying how the host and pathogen combat each other during infection and illustrate the continued need for advancements of in planta analysis of dual-species interaction.\n\n## Results\n\n### Genetic variation in pathogen and hosts influence B. cinerea transcriptome\n\nTo investigate how genetic variation within a pathogen differentially interacts with plant host immunity at the transcriptomic level, we profiled the in planta transcriptomes of 96 B. cinerea isolates infection across three host genotypes, the Arabidopsis accession Col-0 WT and two immune-signaling mutants coi1-1 and npr1-1 that are respectively compromised in JA or salicylic acid (SA) driven immunity. This previously described collection of 96 isolates represents a broad geographical distribution and contains considerable natural genetic variation that affects a diversity of virulence strategies within B. cinerea (Denby et al., 2004; Rowe and Kliebenstein, 2007; Atwell et al., 2015; Corwin et al., 2016b; Zhang et al., 2016). Four independent biological replicates across two separate experiments per isolate/genotype pair were harvested at 16HPI for transcriptome analysis. A total of 1152 independent RNA samples were generated for library preparation and sequenced on Illumina HiSeq platform (NCBI accession number SRP149815). These libraries were previously used to study Arabidopsis transcriptional responses to natural genetic variation in B. cinerea (Zhang et al., 2017). Mapping the dual-transcriptome reads against the B. cinerea reference genome (B05.10), we identified 9284 predicted gene models with a minimum of either 30 gene counts in one isolate or 300 gene counts across 96 isolates. The total of identified genes corresponds to\u00a0~\u00a079% of the 11,701 predicted encoding genes in B05.10 reference genome (Van Kan et al., 2017). The two different thresholds allowed the identification of pathogen transcripts that express only in a specific isolate.\n\nMeasuring the abundance of individual pathogen transcripts in relation to the host transcripts can be used as a molecular method to estimate fungal biomass (Blanco-Ulate et al., 2014). Given this, we hypothesized that the fraction of total reads that map to B. cinerea might be a biologically relevant indicator of pathogen virulence (Figure 1\u2014source data 1). Comparing B. cinerea transcript abundance at 16HPI to lesion development at 72HPI revealed a significant partial correlation in the WT Col-0 (R2\u00a0=\u00a00.1101, p-value=0.0016, Figure 1). In contrast to WT, the early transcriptomic activities of most B. cinerea isolates were more vigorous in the two Arabidopsis mutants, resulting in a significant curvilinear relationship between total fraction of B. cinerea reads and final lesion area (p-value=3.914e-07, p-value=0.0001, respectively, Figure 1). Interestingly, the total reads fraction was better correlated with final lesion area in coi1-1 (R2\u00a0=\u00a00.2562) than either WT (R2\u00a0=\u00a00.1101) or npr1-1 (R2\u00a0=\u00a00.161). This suggests that early transcriptomic activity from the pathogen can be a partial indicator of pathogen virulence, but also depends on the respective resistance from the plant host.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig1-v2.jpg)\n\n**Figure 1.:** Model-corrected lesion area means were estimated using the linear model on the six replicates data from three Arabidopsis genotypes at 72 hr post-infection with 96 B. cinerea isolates. Estimated biomass of B. cinerea was calculated using the linear model-corrected fraction of B. cinerea mapped reads against total mapped reads to Arabidopsis and B. cinerea reference genomes. RNA-Seq analysis was conducted at 16 hr post-infection for each pathosystem. Three Arabidopsis genotypes are wild-type Col-0 (purple dot), jasmonate insensitive mutant coi1-1 (green triangle), and salicylic acid insensitive mutant npr1-1 (orange diamond). The 90% confidence ellipse intervals are plotted for each Arabidopsis genotype for references. Quadratic regression lines are: Col-0: y\u00a0=\u00a0\u22120.00059\u00d72+0.729 x+10.037, p=0.0016, adjusted R2\u00a0=\u00a00.1101; coi1-1: y\u00a0=\u00a0\u22120.117\u00d72+4.44 x \u2013 0.1585, p=3.914e-07, adjusted R2\u00a0=\u00a00.2562; npr1-1: y\u00a0=\u00a0\u22120.0579\u00d72+2.26 x+1.673, p=0.0001, adjusted R2\u00a0=\u00a00.161.\n\nPlant defense phytohormone networks, like SA and JA, help shape the immune responses of a plant host while also shape the virulence gene expression within bacterial pathogens, such as Pseudomonas syringae (Nobori et al., 2018). To test how variation in host SA/JA-signaling influences the fungal pathogen transcriptome, we applied a generalized linear model linked with negative-binomial function (nbGLM) to each B. cinerea transcript across the experiment. This analysis allowed us to estimate the relative broad-sense heritability (H2) of genetic variation from the pathogen, plant host, or their interaction contributing to each transcript (Figure 2\u2014source data 1\u20133). Of the 9284 detectable B. cinerea transcripts, 8603 and 5244 transcripts were significantly influenced by genetic variation in pathogen and host, respectively (74% and 45% of predicted B. cinerea gene models, respectively) (Figure 2A, Figure 2\u2014source data 3 and 4). While this result shows that the plant phytohormone pathways influence B. cinerea gene expression, the variation in host defense responses (average H2Host = 0.010) has far less influence on B. cinerea gene expression than that of the pathogens\u2019 own natural genetic variation (average H2Isolate = 0.152). The host defense hormones also affected B. cinerea gene expression in a genotype-by-genotype dependent manner on 4541 genes (39% of B. cinerea predicted gene models, average H2Isolate x Host = 0.116) (Figure 2B\u20132I). Illustrating this potential for host x pathogen interactions on pathogen gene expression are the two genes encoding the well-studied polygalacturonase 1 (Bcpg1) and oxaloacetate acetyl hydrolase. The two virulence associated genes showed dramatic expression variation across 96 isolates in different host backgrounds (Figure 3, Figure 3\u2014figure supplement 1, and Figure 2\u2014source data 1). Extending this to 500 genes showing the strongest host x pathogen effect showed that there is a wide range of patterns that differs in the host coi1-1 or npr1-1 background with diverse pathogen strain specific patterns (Figure 4). One potential complication of this analysis is for sequence variation between the reference B05.10 genome and the diverse strains to create artificially low expression estimates. However, very few genes showed consistently low expression within a strain and instead when a gene showed no expression in one host genotype, it was expressed in a different host genotype (Figure 3 and Supplementary file 1). This conditionality argues against a sequencing error as the sequence has not altered. The genes that did show a loss of expression across all host genotypes within a strain (i.e. BOT and BOA genes) were frequently linked to whole gene deletions that abolished their expression (Soltis et al., 2019). Thus, while there are likely some sequence variation associated expression errors, they are not a dominant signature in the data. Thus, within the Arabidopsis/B. cinerea pathosystem the pathogens transcriptional responses are influenced by a blend of the pathogens\u2019 natural variation and its interaction with the host, while there is less evidence for the host\u2019s defense responses to unilaterally affect B. cinerea. Future work will hopefully assess how this extends to other host-pathogen systems.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig2-v2.jpg)\n\n**Figure 2.:** (A) Distribution of broad-sense heritability (H2) of B. cinerea transcripts contributed by genetic variation in the B. cinerea, Arabidopsis genotypes, and the interaction between pathogen and host. Violin plots illustrating the distribution of H2 for transcripts from 96 B. cinerea isolates infecting on Arabidopsis genotypes. Heritability is partitioned across the different sources, 96 pathogen genotypes = \u2018Isolate\u2019, plant genotypes Col-0, coi1-1 and npr1-1 plant genotypes = \u2018Host\u2019, and the corresponding interaction. The transcriptomic analysis was conducted by sequencing mRNA extracted from B. cinerea infected Arabidopsis leaves at 16 hr post-infection. Red lines indicate the average broad-sense heritability values of lesion area caused by isolates, Arabidopsis genotypes, and their interaction. (B) to (E) Expression profiles of B. cinerea transcripts significantly influenced by host genotypes. The model-corrected means (log2) for B. cinerea transcript were used for plotting. The Arabidopsis genotypes, wild-type Col-0 (purple), jasmonate insensitive mutant coi1-1 (green), and salicylic acid mutant npr1-1 (orange), are shown on the x axis. B. cinerea transcripts are: (B) Bcin01g03790.1, class IV chitin synthase; (C) Bcin02g02980.1, Monooxygenase; (D) Bcin10g02260.1, NADH oxidoreductase; (E) Bcin11g05200.1, caffeine-induced death Cid2; (F) to (I) Expression profiles of B. cinerea transcripts significantly influenced by the interaction between pathogen and host genotypes. (F) Bcin02g03810.1, GTP cyclohydrolase; (G) Bcin09g01190.1, Tripeptidyl-peptidase 1; (H) Bcin10g01130.1, in secretory pathway; (I) Bcin14g05090.1, a transcription factor.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig3-v2.jpg)\n\n**Figure 3.:** Rank plot shows the relationship of Bcpg1 expression from 32 diverse B. cinerea isolates (right) across three Arabidopsis genotypes (x axis). Three Arabidopsis genotypes are wild-type Col-0 (purple dot), jasmonate insensitive mutant coi1-1 (green triangle), and salicylic acid mutant npr1-1 (orange diamond). The model-corrected means (log2) for the transcript of Bcpg1 (Bcin14g00850.1) encoding an endopolygalacturonase gene are utilized for plotting. The transcript expression levels from the same isolate across three Arabidopsis genotypes are connected with a colored line. The names of 32 isolates are represented with the same colored lines as induced Bcpg1 expression levels. Black lines indicate the expression levels of Bcpg1 are higher in coi1-1 and npr1-1 than in Col-0. Red lines indicate the higher expression levels of Bcpg1 in coi1-1 but lower in npr1-1. Blue lines indicate the highest expression levels of Bcpg1 are in Col-0. Dark green lines indicate the higher expression levels of Bcpg1 in npr1-1 but lower in coi1-1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Rank plot shows the relationship of Bcoah expression from 32 diverse B. cinerea isolates (right) across three Arabidopsis genotypes (x axis). Three Arabidopsis genotypes are wild-type Col-0 (purple dot), jasmonate insensitive mutant coi1-1 (green triangle), and salicylic acid mutant npr1-1 (orange diamond). The model-corrected means (log2) for the transcript of Bcoah (Bcin12g01020.1) encoding an oxaloacetate hydrolase gene are utilized for plotting. The transcript expression levels from the same isolate across three Arabidopsis genotypes are connected with a colored line. The names of 32 isolates are represented with the same colored lines as induced Bcoah expression levels. Black lines indicate the expression levels of Bcoah are higher in coi1-1 and npr1-1 than in Col-0. Red lines indicate the higher expression levels of Bcoah in coi1-1 but lower in npr1-1. Blue lines indicate the highest expression levels of Bcoah are in Col-0. Dark green lines indicate the higher expression levels of Bcoah in npr1-1 but lower in coi1-1.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig4-v2.jpg)\n\n**Figure 4.:** Hierarchical clustering of relative expression of 500 genes from 96 B. cinerea isolates infection on Arabidopsis mutants coi1-1 (A) or npr1-1 (B) are plotted based on pairwise comparison of pathogen gene expression under Col-0. The 500 B. cinerea genes with highest broad-sense heritability (H2) of host X pathogen were used for analysis. Lesion area induced by 96 isolates are compared under coi1-1 (green bar plot) and npr1-1 (orange bar plot).\n\n### Identification of virulence factors among the early B. cinerea transcripts\n\nThis data set also allows us to test for specific B. cinerea transcripts whose early expression is associated with later lesion development. These genes can serve as potential biomarkers of overall pathogen virulence and may elucidate the functional mechanisms driving early virulence in the interaction. To find individual pathogen transcripts link with lesion development, we conducted a genome-wide false discovery rate-corrected Spearman\u2019s rank correlation analysis between 72HPI lesion area and individual B. cinerea transcripts accumulation at 16HPI. We identified 2521 genes (22% of B. cinerea predicted gene models) with significant positive correlations and 114 genes (1% of B. cinerea predicted gene models) with significant negative correlations to lesion area across three Arabidopsis genotypes, respectively (p-value<0.01, Figure 3\u2014source data 1). The top 20 positively correlated B. cinerea genes contained all seven genes involved in BOT biosynthesis (Deighton et al., 2001; Colmenares et al., 2002; Wang et al., 2009; Rossi et al., 2011; Ascari et al., 2013; Porquier et al., 2016). In addition to phytotoxins, more than 30 genes of the top 100 lesion-correlated genes encode plant cell wall degrading enzymes, that\u00a0is glucosyl hydrolases, carbohydrate esterases, cellobiose dehydrogenases and Bcpg1 (Figure 3 and Figure 3\u2014source data 1) (Gerbi et al., 1996; Zamocky et al., 2006; Cantarel et al., 2009; Van Vu et al., 2012; Igarashi et al., 2014; Morgenstern et al., 2014; Blanco-Ulate et al., 2014; Tan et al., 2015; Courtade et al., 2016; Nelson et al., 2017; P\u00e9rez\u2010Izquierdo et al., 2017). Additionally, 10 of the top 100 lesion-correlated genes were annotated as putative peptidase activities, which are critical for fungal virulence (Movahedi et al., 1991; Poussereau et al., 2001a; Poussereau et al., 2001b; ten Have et al., 2004; ten Have et al., 2010). A final classical virulence gene in the top 100 gene list is Bcoah (Bcin12g01020) encoding oxaloacetate acetyl hydrolase, which is a key enzyme in oxalic acid biosynthesis that positively contributes to virulence (Figure 3\u2014figure supplement 1 and Figure 3\u2014source data 1) (Greenberg et al., 1994; Williamson et al., 2007; Walz et al., 2008; Schumacher et al., 2012; Schumacher et al., 2015; Tayal et al., 2017). In addition, this method identified 37 of the top 100 lesion-correlated genes with no gene ontology (GO) terms, which likely represent unknown virulence mechanisms (Figure 3\u2014source data 1). Thus, this approach readily creates new hypothesis about known and novel pathogen virulence functions.\n\n### In Planta virulence Gene Co-expression Networks (GCNs) in B. cinerea\n\nTo develop a systemic view of fungal pathogen in planta gene expression, we used a co-expression approach to identify B. cinerea networks that associated with growth and virulence in planta. Using solely B. cinerea transcriptome at 16HPI from Arabidopsis Col-0 WT infected leaves, we calculated Spearman\u2019s rank correlations of gene counts across all B. cinerea isolates, filtered gene pairs with correlation greater than 0.8. We then used the filtered gene pairs as input to construct GCNs. We identified ten distinct GCNs containing more than five B. cinerea genes (Figure 5, Supplementary file 1, Figure 5\u2014figure supplement 1 and Figure 5\u2014source data 1). The largest GCN with 242 genes contains members responsible for phospholipid synthesis, eiosome function, and membrane-associated stress signaling pathways (Figure 5-Vesicle/virulence). The biological function of this GCN suggests its role in fungal membrane- and vesicle-localized processes, which are normally involved with general hyphae growth, fungal cell wall deposition, and exudation of fungal toxins to the intercellular space (Figure 5\u2014source data 1). The second largest network contains 128 genes that were entirely associated with translation and protein synthesis (Figure 5-TSL/growth and Figure 5\u2014source data 1). Of the smaller GCNs identified (5\u201320 genes), five networks were identified with genes distributed across B. cinerea 16 chromosomes, suggesting that these GCNs arise from coordinated trans-regulation (Figure 5-Trans-networks and Figure 5\u2014figure supplement 1D, F and H\u2013J). These networks are associated with diverse array of virulence functions, including the regulation of exocytosis, copper transport, the production of peptidases and isoprenoid precursors (IPP), and polyketide secretion.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig5-v2.jpg)\n\n**Figure 5.:** Ten gene co-expression networks (GCNs) with more than five nodes were identified from 96 B. cinerea isolates infecting on Arabidopsis wild-type Col-0. The similarity matrix is computed using Spearman\u2019s rank correlation coefficient. Nodes with different colors represent B. cinerea genes condensed in GCNs with different biological functions. Edges represent the Spearman\u2019s rank correlation coefficients between gene pairs. Trans- and cis-GCNs means GCNs are regulated by trans- and cis-regulatory elements, respectively. GCNs were named after their biological functions, which were determined by hub and bottleneck genes within each network. GCNs are: vesicle/virulence (red), translation/growth (green), exocytosis regulation (pink), cyclic peptide (yellow), peptidase (gray), isopentenyl pyrophosphate (IPP, turquoise), polyketide (violet), botcinic acid (BOA, blue), copper transport (slate blue), botrydial (BOT, purple).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The circle diagrams showed the genome-wide distribution of gene pairs identified by B. cinerea gene co-expression networks (GCNs) under Arabidopsis wild-type Col-0. (A) to (J) Genomic locations of gene pairs identified by GCNs: (A) Vesicle/virulence, (B) translation/growth, (C) botcinic acid (BOA), (D) exocytosis regulation, (E) cyclic peptide, (F) copper transport, (G) botrydial (BOT), (H) peptidase (gray), (I) isopentenyl pyrophosphate (IPP), (G) polyketide. The rings show 18 B. cinerea chromosomes on a Mb scale. Genomic locations of co-expressed gene pairs are connected by the colored lines.\n\nIn contrast to the whole-genome distributed GCNs, three of the smaller GCNs were predominantly comprised of genes tandemly clustered within a single chromosome with no or a few genes on other chromosomes (Figure 5-BOA, -Cyclic Peptide, -BOT, Figure 5\u2014figure supplement 1C, E and G). A functional analysis showed that all of the genes within these networks encoded known or putative biosynthetic enzymes for specialized metabolic pathways. For example, seven genes responsible for BOT biosynthesis cluster on chromosome 12 and form a small GCN with a Zn(II)2Cys6 transcription factor that is specific to the pathway (Figure 6A and B, Figure 5\u2014figure supplement 1G and Figure 5\u2014source data 1) (Siewers et al., 2005; Pinedo et al., 2008; Urlacher and Girhard, 2012; Moraga et al., 2016). Similarly, all 13 genes involved in BOA biosynthesis cluster in Chromosome one and form a highly connected GCN (Figure 5-BOA, Figure 6E, Figure 5\u2014figure supplement 1C and Figure 5\u2014source data 1) (Dalmais et al., 2011; Porquier et al., 2019). In addition to previously characterized secondary metabolic pathways, we identified an uncharacterized set of ten genes that cluster on Chromosome 1 (Figure 5-Cyclic Peptide, Figure 6F, Figure 5\u2014figure supplement 1E and Figure 5\u2014source data 1). These genes share considerable homology with enzymes related to cyclic peptide biosynthesis and may represent a novel secondary metabolic pathway in B. cinerea (Figure 5\u2014source data 1). The expression of these pathways in planta was extremely variable among the isolates and included some apparent natural knockouts in the expression of the entire biosynthetic pathway (Figure 6G and Figure 2\u2014source data 1). Isolate 94.4 was the sole genotype lacking the entire BOT pathway, while 19 isolates and 24 isolates did not transcribe respectively the BOA and the putative cyclic peptide pathways (Figure 6E\u20136G and Figure 2\u2014source data 1). We decomposed the expression of these pathways into expression vectors, referred to as eigengenes, using a principle component analysis and used a linear mixed model to test for a relationship between early expression of secondary metabolic pathways and later lesion area. This showed a significant relationship between the expression of BOT and BOA pathways and lesion area measured at 72HPI (Supplementary file 2). In contrast, the putative cyclic peptide pathway was only associated with lesion development in a BOT-dependent manner, suggesting that it may have a synergism to BOT (Supplementary file 2). Thus, in planta analysis of the fungal transcriptome can identify known and novel potential virulence mechanisms and associate them with the resulting virulence.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig6-v2.jpg)\n\n**Figure 6.:** Expression profiles of genes responsible for botrydial, botcinic acid, cyclic peptide production across 96 isolates under Arabidopsis wild-type Col-0 are shown. (A) Schematic shows the genomic locus of seven botrydial (BOT) biosynthesis genes clustered together. Exons are represented by gray boxes. Introns and intergenic regions are represented by the grey line. Seven BOT genes are: BcBOT1, BcBOT3 and BcBOT4, encoding a cytochrome P450 monooxygenase, respectively; BcBOT2 encoding a sesquiterpene cyclase; BcBOT5 encoding an acetyl transferase; BcBOT6 encoding a Zn(II)2Cys6 transcription factor, BcBOT7 encoding a dehydrogenase reductase. (B) BOT biosynthesis pathway in B. cinerea. (C) Bar plots compare expression variation of BcBOT2 across 96 B. cinerea isolates in responding to Arabidopsis wild-type Col-0 immunity. The model-corrected means (log2) of transcripts were used for plotting. (D) Scatter plot illustrates the positive correlations between lesion area and accumulation of BcBOT2 transcript across the 96 isolates in response to varied Arabidopsis immunities. Model-corrected lesion area means were estimated for three Arabidopsis genotypes at 72 hr post-infection with 96 B. cinerea isolates. The three Arabidopsis genotypes are labeled next to the confidence ellipse curves: wild-type Col-0 (purple dot), jasmonate insensitive mutant coi1-1 (green triangle), and salicylic acid mutant npr1-1 (orange diamond). The 90% confidence ellipse intervals are plotted for each Arabidopsis genotype for reference. Linear regression lines: Col-0: y\u00a0=\u00a03.2532 x+4.4323, p=1.008e-10, Adjusted R2\u00a0=\u00a03.3537; coi1-1: y\u00a0=\u00a07.4802 x+10.3289, p=7.895e-15, adjusted R2\u00a0=\u00a00.4700; npr1-1: y\u00a0=\u00a03.7086 x+7.3487, p=2.425e-11, adjusted R2\u00a0=\u00a00.3726. (E) and (F) Bar plots compare expression variation of BcBOA6 in botcinic acid (BOA) pathway and Bcin01g11460. in cyclic peptide pathway across 96 B. cinerea isolates in response to Arabidopsis wild-type Col-0 immunity. (G) Venn diagram illustrates the number of B. cinerea isolates with the ability to induce BOT, BOA, and cyclic peptide.\n\n### Covariation of fungal virulence networks under differing plant immune responses\n\nThe B. cinerea GCNs measured within Arabidopsis WT provide a reference to investigate how phytohormone-signaling in host innate immunity may shape the pathogen\u2019s transcriptional responses during infection. Comparing the B. cinerea GCN membership and structure across the three Arabidopsis genotypes (WT, coi1-1, and npr1-1) showed that the core membership within networks was largely maintained but the specific linkages within and between GCNs were often variable (Figure 7, Supplementary file 1, Figure 7\u2014figure supplements 1, 2 and 3, and Figure 5\u2014source data 1). For example, the two largest B. cinerea GCNs in WT developed multiple co-expression connections during infection in the JA-compromised coi1-1 host (Figure 7 and Supplementary file 1). In contrast, some GCNs have a highly robust structure across three host genotypes, including three GCNs associated with BOT, BOA and cyclic peptide production, and GCNs associated with exocytosis regulation, copper transport, and peptidase activity (Supplementary file 1, Figure 7\u2014figure supplements 1, 2 and 3, and Figure 5\u2014source data 1). In addition, we also identified additional small GCNs that demonstrated host specificity in coi1-1 (Figure 7\u2014figure supplement 2 and Figure 5\u2014source data 1). In particular, there were four small GCNs that are associated with plant cell wall degradation, siderophores, glycolysis, ROS, and S-adenosylmethionine biosynthesis (Figure 7\u2014figure supplement 2). Thus, the coordinated transcriptional responses of B. cinerea GCNs are at least partially dependent on variation in the host immune response.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig7-v2.jpg)\n\n**Figure 7.:** B. cinerea gene co-expression networks (GCNs) of vesicle/virulence (red) and translation/growth (green) identified under three Arabidopsis genotypes are compared. Three Arabidopsis genotypes are wild-type Col-0, jasmonate insensitive mutant coi1-1, and salicylic acid mutant npr1-1. Nodes marked with red and green colors represent B. cinerea genes condensed in GCNs with different biological functions. The same node condensed in GCNs across three Arabidopsis genotypes was marked with same color. Nodes specificaly condensed in GCNs under two mutants coi1-1 and npr1-1 background are marked with orange color. Edges represent the Spearman\u2019s rank correlation coefficients between gene pairs.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** B. cinerea gene co-expression networks (GCNs) were identified from 96 B. cinerea isolates infecting on Arabidopsis wild-type Col-0. The similarity matrix is computed using Spearman\u2019s rank correlation coefficient. All co-expressed gene pairs with correlation greater than 0.85 were shown. Nodes with different colors represent B. cinerea genes condensed in GCNs with different biological functions. Edges represent the Spearman\u2019s rank correlation coefficients between gene pairs. GCNs were ordered as number of nodes within each network. GCNs were named after their biological functions, which were determined by hub and bottleneck genes within each network: vesicle/virulence (red), translation/growth (green), botcinic acid (BOA, blue), exocytosis regulation (pink), cyclic peptide (yellow), copper transport (slate blue), botrydial (BOT, purple), peptidase (gray), isopentenyl pyrophosphate (IPP, turquoise), polyketide (violet).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** B. cinerea gene co-expression networks (GCNs) were identified from 96 B. cinerea isolates infecting on Arabidopsis jasmonate insensitive mutant coi1-1. The similarity matrix is computed using Spearman\u2019s rank correlation coefficient. All co-expressed gene pairs with correlation greater than 0.8 were shown. Nodes with different colors represent B. cinerea genes condensed in GCNs with different biological functions. Nodes were marked with same color as under Arabidopsis wild-type Col-0 background. Nodes specificaly condenced in GCNs under Arabidopsis mutant coi1-1 background are marked with orange color. Edges represent the Spearman\u2019s rank correlation coefficients between gene pairs. GCNs were ordered as number of nodes within each network. GCNs were named after their biological functions, which were determined by hub and bottleneck genes within each network: vesicle/virulence (red/orange), translation/growth (green/orange), botrydial/isopentenyl pyrophosphate (BOT/IPP, blue/turquoise/orange), botcinic acid (BOA, blue), exocytosis regulation (pink), peptidase (gray/orange), copper transport (slate blue/orange), plant cell wall degradation (orange), cyclic peptide (yellow), peptidase II (red/orange), siderophores (orange), 26S proteasome regulated protein degradation (red/orange), sugar, ROS/NO stress (orange), ATP (orange), polyketide (violet/orange).\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** B. cinerea gene co-expression networks (GCNs) were identified from 96 B. cinerea isolates infecting on Arabidopsis salicylic acid insensitive mutant npr1-1. The similarity matrix is computed using Spearman\u2019s rank correlation coefficient. All co-expressed gene pairs with correlation greater than 0.8 were shown. Nodes with different colors represent B. cinerea genes condensed in GCNs with different biological functions. Nodes were marked with same color as under Arabidopsis wild-type Col-0 background. Nodes specificaly condenced in GCNs under Arabidopsis mutant npr1-1 background are marked with orange color. Edges represent the Spearman\u2019s rank correlation coefficients between gene pairs. GCNs were ordered as number of nodes within each network. GCNs were named after their biological functions, which were determined by hub and bottleneck genes within each network: translation/growth (green/orange), vesicle/virulence (red/orange), peptidase (gray/orange), polyketide (violet/orange), botrydial/isopentenyl pyrophosphate (BOT/IPP, blue/turquoise/orange), botcinic acid (BOA, blue), exocytosis regulation (pink), copper transport (slate blue/orange), cyclic peptide (yellow), unknown (red), sugar (orange), peptidase II (red/orange).\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig7-figsupp4-v2.jpg)\n\n**Figure 7\u2014figure supplement 4.:** Violin plots of (A) to (O) show the expression profiles of B. cinerea genes in response to variation of Arabidopsis immunity. Genes shown are condensed in B. cinerea gene co-expression networks (GCNs). The model-corrected means (log2) for B. cinerea transcript were used for plotting. The Arabidopsis genotypes, wild-type Col-0 (purple), jasmonate insensitive mutant coi1-1 (green), and salicylic acid mutant npr1-1 (orange), are shown on the x axis.\n\nHost immunities showed different impacts on expression profiles of genes condensed in individual B. cinerea GCNs (Figure 7\u2014figure supplement 4). Compared with WT, expression profiles of genes within the largest membrane/vesicle virulence GCN were elevated in the SA- and JA-compromised Arabidopsis mutants on average (Figure 7\u2014figure supplement 4A). Fungal genes associated with copper transport and polyketide production were upregulated under SA-compromised host immunity (Figure 7\u2014figure supplement 4F and J). Whereas, members of GCNs responsible for plant cell wall degradation and siderophore biosynthesis were upregulated under JA-compromised host immunity (Figure 7\u2014figure supplement 4K and L). Finally, GCNs associated with BOT and exocytosis regulation showed robust gene expression profiles across all three Arabidopsis genotypes (Figure 7\u2014figure supplement 4D and G). The above observation indicates host immunity influences the B. cinerea transcriptional response of B. cinerea and suggests that B. cinerea isolates have varied abilities to tailor virulence strategy in response to host immunity.\n\n### Cross-kingdom Co-transcriptomic networks revealed direct Gene-for-gene interaction\n\nTo test the interaction between individual genes from two organisms, we generated Arabidopsis-B. cinerea GCNs using co-transcriptome data under each host genotype. We calculated Spearman\u2019s rank correlation coefficients among 23,898 Arabidopsis transcripts and 9,284 B. cinerea transcripts. This approach identified three cross-kingdom GCNs (CKGCNs) under Arabidopsis WT and JA- or SA-compromised two mutants (Figure 8, Supplementary file 5, and Figure 8\u2014source data 1). Under Arabidopsis WT, a total of 54 hub genes were identified, half from B. cinerea and half from Arabidopsis. Furthermore, CKGCNs contain a majority of genes in the BOT GCN and a small proportion of genes in the vesicle/virulence GCN (Figure 8\u2014figure supplement 1C). For plants, CKGCNs contain a majority of genes from Arabidopsis Defense/camalexin GCN (Figure 8\u2014figure supplement 1B). These CKGCNs also contain genes associated with extensive host defense responses, that is genes encoding membrane-localized leucine-rich repeat receptor kinases (LRR-RKs), stress signal sensing and transduction, tryptophan-derived phytoalexin production, regulation of cell death, cell wall integrity, nutrition transporters, etc. (Figure 8\u2014source data 1). The topological structure and gene content of the CKGCNs shifted across the three Arabidopsis genotypes (Figure 8). These changes illustrate how the host genotype can influence the intercommunication in the host-pathogen interaction.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig8-v2.jpg)\n\n**Figure 8.:** Networks showing the co-expression connectivity between Arabidopsis and B. cinerea genes within three Arabidopsis genotypes are shown. (A) shows connectivity within Arabidopsis wild-type Col-0, (B) shows connectivity within the Arabidopsis jasmonate insensitive mutant coi1-1, and (C) shows connectivity within the Arabidopsis salicylic acid insensitive mutant npr1-1. Within each connectivity plot, orange and green nodes show transcripts from B. cinerea and Arabidopsis, respectively. Nodes with red and violet colors represent the B. cinerea transcripts that were found to be members of the B. cinerea membrane/vesicle virulence network and BOT network, respectively. Node size shows the number of interactions with a specific gene. The connectivity between the nodes was derived using Spearman\u2019s rank correlation analysis.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Venn diagram highlights: (A) the overlap of plant (left) and pathogen (right) genes condensed in Arabidopsis-B. cinerea gene co-expression networks (GCNs) across three Arabidopsis genotypes, (B) the overlap of plant genes in Arabidopsis-B. cinerea GCNs and Arabidopsis GCNs across three genotypes, (C) the overlap of pathogen genes in Arabidopsis-B. cinerea GCNs and B. cinerea GCNs across three genotypes.\n\n### A dual interaction network reveals fungal virulence components targeting host immunity\n\nTo begin assessing how two species influence each other\u2019s gene expression during infection, we constructed a co-transcriptome network using both the host- and pathogen-derived GCNs (Figure 9 and Figure 9\u2014figure supplement 1). We converted the ten B. cinerea GCNs and the four Arabidopsis GCNs into eigengene vectors that capture the variation of the general expression of all genes within a GCN into a single value (Zhang et al., 2017). The Arabidopsis GCNs were defined in response to this same transcriptome but by using solely the host transcripts. Of these four Arabidopsis GCNs, one is largely comprised of genes in Defense/camalexin signaling, two are linked to different aspects of photosynthesis and the fourth is largely comprised of host genes in cell division. We calculated Spearman\u2019s rank coefficients among each GCN eigengene pairs without regard for the species. In this dual transcriptome network, the Arabidopsis/B. cinerea GCN eigengenes are displayed as nodes and positive/negative correlations between the GCNs as edges (Figure 9 and Figure 9\u2014figure supplement 1). Of the host-derived GCNs, the Arabidopsis Defense/camalexin and Photosystem I (PSI) GCNs have a higher degree of centrality than do the Cell Division or Plastid GCNs across all three host genotypes, suggesting that they have the most interactions with B. cinerea GCNs. In contrast, the fungal GCNs\u2019 centrality was more dependent on the host genotype. In WT Col-0, the highest degrees were associated with the exocytosis regulation, BOT, and IPP, whereas they were more peripheral or even not present in the co-transcriptome network in the npr1-1 or coi1-1 host genotypes. Interestingly, in the WT Col-0 host fungal GCNs (Copper transport, Exocytosis regulation, BOT and IPP biosynthesis) that were positively correlated with the host Defense/camalexin GCN showed negative correlations with PSI eigengene. However, the host genotype can change these GCN relationships. In the npr1-1 host, the host Defense/camalexin and PSI GCNs shift to a positive correlation. This may reflect a shift in how the B. cinerea BOT GCN has a positive correlation with the Defense/camalexin GCN in the Col-0 host but a negative correlation in the npr1-1 host genotype. This suggests that there are dynamics in the host-pathogen co-transcriptome that can be interrogated to potentially identify causational relationships.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig9-v2.jpg)\n\n**Figure 9.:** A dual interaction network was constructed using gene co-expression networks (GCNs) from Arabidopsis and B. cinerea co-transcriptome. The first eigenvectors were derived from individual GCNs and used as input to calculate Spearman\u2019s rank correlation coefficiency between GCN pairs. Green dots and orange triangles represent Arabidopsis immune- and B. cinerea virulence-GCNs, respectively. Blue and red lines (edges) represent the positive and negative Spearman\u2019s rank correlation coefficients between GCN pairs, respectively. The thickness of line signifies the correlational strength.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Dual interaction networks were constructed using gene co-expression networks (GCNs) from Arabidopsis and B. cinerea co-transcriptome under JA-insensitive mutant coi1-1 and SA-insensitive mutant npr1-1, respectively. The first eigenvectors were derived from individual GCNs and used as input to calculate Spearman\u2019s rank correlation coefficiency between GCN pairs. Green dots and orange triangles (nodes) represent Arabidopsis immune- and B. cinerea virulence-GCNs, respectively. Blue and red lines (edges) represent the positive and negative Spearman\u2019s rank correlation coefficients between GCN pairs, respectively. The thickness of line signifies the correlational strength.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44279/elife-44279-fig9-figsupp2-v2.jpg)\n\n**Figure 9\u2014figure supplement 2.:** cinerea spore germination time under in vitro condition.\n\nTo test if these connections were dependent upon the host immunity, we used the eigengene values derived from fungal GCNs to conduct mixed linear modelling of how they were linked to variation in the host genotype and/or host GCNs (Supplementary file 3 and 4). Some B. cinerea GCNs (Vesicle/virulence and TSL/growth, etc.) were more affected by variation in the host genotypes while others had less host dependency on their expression (BOT, Copper transport, etc.). Collectively, pathogen virulence and host immunity GCNs showed complex connections within dual interaction network identified from co-transcriptome data, suggesting functional relationships between host defense and pathogen virulence mechanisms for future experimentation.\n\n### Germinations influence on the Co-Transcriptome\n\nOne potential complicating factor that may influence the co-transcriptome is variation in germination of the spores between B. cinerea strains. The lack of universal genomic patterns for host x pathogen interactions in the co-transcriptome argues that germination is not causing global effects on the co-transcriptome (Figures 3 and 4). To begin examining how variation in B. cinerea spore germination may influence the co-transcriptome and our identified link to virulence, we investigated the germination of 19 isolates. This showed that there was some variation in germination with all but a few isolates germinating within the 6\u20137 hr\u2019 time frame at room temperature (Figure 9\u2014figure supplement 2). To extend this to an in planta analysis, we utilized an existing microarray study on B. cinerea germination to develop an eigengene that estimates the relative germination between the strains using the in planta transcriptomic data (Leroch et al., 2013). We then used this in planta estimation of germination to test if our previously identified co-transcriptome to virulence links were altered by controlling for germination. Using linear models, we ran the same test whereby the major B. cinerea GCNs were tested for a link to virulence although this time, we included the germination eigengene as a co-variate. This analysis showed that the in planta estimation of germination significantly associated with virulence. Critically, even with germination taken into account, all the B. cinerea networks remained significantly associated to lesion area. Some GCNs link, that is BOT and BOA, were largely unaffected by the germination estimates (Supplementary file 6), showing that some aspects of virulence are independent of spore germination. In contrast other GCNs like the vesicle linked GCN had their link to virulence decreased but not abolished by including the germination co-variate. Thus, while spore germination plays a role in our measurement of the plant-pathogen interaction, it is only one of multiple factors influencing the co-transcriptome and is not imparting a dominant global influence on the observed patterns.\n\n## Discussion\n\nIn recent decades, improvements in the understanding of the molecular basis of plant-pathogen dynamics have facilitated breeding strategies for disease resistance in a variety of crop species. However, breeding for disease resistance remains difficult for crops susceptible to pathogens that harbor diverse polygenic virulence strategies targeting multiple layers and components of the plant innate immune system (Corwin and Kliebenstein, 2017). In this study, a co-transcriptomic approach was used to investigat the transcriptome profiles of both fungal pathogen B. cinerea and plant host Arabidopsis at an early infection stage. The results showed that the transcriptional virulence strategy employed by B. cinerea is dependent both on fungal genotype and the functional response of the host plant\u2019s immune system. A set of B. cinerea transcripts were identified with earlier expression associated with later lesion development. Furthermore, ten pathogen GCNs were found responsible for mediating virulence in B. cinerea, including a potential specialized metabolic pathway of cyclic peptide virulence factor. Co-transcriptome networks constructed using both plant and pathogen transcriptomic data revealed known and novel fungal virulence components coordinated expressed with plant host GCNs during infection.\n\nThere are some potential limitations on the utility of cross-species GCNs. Predominantly, they are a correlational approach where links are made between host and pathogen transcriptional changes. While this leads to the development of new hypothesis, it will equally require future validation efforts to assess if these are direct or indirect relationships. Additionally, the cross-species GCN approach as implemented in this work does not distinguish between host/pathogen cells that are directly interacting versus those that are having long-distance responses. An important future avenue will be to integrate cell-specific RNA sequencing approaches to better delineate what are the responses within host/pathogen cells that are directly interacting versus the long-distance responses. This would greatly increase the power of elucidating direct versus indirect effects in this system.\n\n### Secondary metabolites may mediate plant and fungus transcriptomic interactions during infection\n\nNecrotrophic pathogen B. cinerea has evolved an arsenal of virulence strategies to establish colonization and enhance infection within the plant host, including production of secondary metabolites. The co-transcriptome approach shows that the expression of fungal specialized pathways early in infection correlates with later lesion development (Supplementary file 3). Three secondary metabolite GCNs are clustered within the fungal genome and two of them identified with pathway-specific transcription factors (Figure 6, Figure 5, Figure 5\u2014figure supplement 1, and Figure 5\u2014source data 1). Further, the expression of these pathways displayed a large range of phenotypic variation across the isolates (Figure 6G and Figure 2\u2014source data 1). However, the topology and memberships of GCNs for the three pathways are largely insensitive to variation in host immunity. Robustness to host immunity suggests that these GCNs are somehow insulated from the host\u2019s immune response, possibly to protect toxin production from a host counter-attack. The co-transcriptome approach showed the ability to identify known and novel secondary metabolic pathways that mediate plant host and fungal pathogen interaction.\n\nImportantly, the dual interaction networks provide hypothesis for pathogen-GCNs responsible for fungal secondary metabolites production link to specific plant host-GCNs (Figure 9 and Figure 9\u2014figure supplement 1). Specifically, the co-transcriptome approach revealed that B. cinerea GCNs responsible for secondary metabolite production are associated with both plant immune responses and primary plant metabolism (Figure 9, Figure 9\u2014figure supplement 1, Supplementary file 3 and 4). For example, in the WT Col-0 host genotype the BOT GCN shows a strong positive correlation with the Arabidopsis Defense/camalexin GCN, suggesting that BOT production may directly induce the host\u2019s defense system. Concurrently, the BOT GCN is negatively linked to the plant\u2019s PSI GCN, suggesting that BOT may repress the plant\u2019s photosynthetic potential. Critically, this relationship changes in the npr1-1 host genotype with the BOT GCN now having a negative correlation to the Arabidopsis Defense/camalexin GCN. Further work is needed to test if these host/pathogen GCN interactions are causal and how the SA pathway in the host may influence these interactions. Collectively, these results strongly implicate the ability of secondary metabolites biosynthesis to mediate the interactions between pathogen virulence and plant host immunity at the transcriptomic level. The co-transcriptome approach showed the potential to enable us to form new hypotheses about how this linkage may occur.\n\n### Fungal virulence components correlated with plant immune response\n\nIn addition to secondary metabolite biosynthesis, the co-transcriptome identified a number of key virulence mechanisms that could be mapped to the two species interaction. One key GCN is enriched for genes involved in exocytosis associated regulation (Figure 5-Exocytosis regulation and Figure 5\u2014source data 1). The exocytosis complex is responsible for delivery of secondary metabolites and proteins to the extra-cellular space and plasma membrane in fungi (Colombo et al., 2014; Rodrigues et al., 2015). Additionally, we found many B. cinerea genes associated with secretory vesicles within the membrane/vesicle virulence GCN that likely serve a similar function during infection (Figure 5-Vesicle/virulence and Figure 5\u2014source data 1). These GCNs also provide support for the role of exocytosis-based spatial segregation of different materials during fungal hyphae growth in planta (Samuel et al., 2015). The dual interaction network suggests that the exocytosis regulation and membrane/vesicle virulence GCNs are differentially linked to the Arabidopsis Defense/camalexin GCN, indicating varied connections between fungal secretory pathways and plant immune responses (Figure 9 and Supplementary file 3 and 4). Another conserved GCN in the B. cinerea species is associated with copper uptake and transport (Figure 5-Copper transport, Figure 7\u2014figure supplements 1, 2 and 3, and Figure 5\u2014source data 1). Although copper is essential for B. cinerea penetration and redox status regulation within plant tissues, further work is required to decipher the precise molecular mechanism involved in acquisition and detoxification of copper. Thus, the co-transcriptome approach can identify both known and unknown mechanisms and links within the host-pathogen interaction.\n\n### Fungal virulence transcriptomic responses are partly shaped by host immunity\n\nIt is largely unknown how plant host immunity contributes to the transcriptomic behavior of the fungus during infection. Even less is known about the role of genetic variation in the pathogen in responding to, or coping with, the inputs coming from the host immune system. In the current study, we found that the host immune system\u2019s effect on pathogen transcripts and GCNs was largely via an interaction with the pathogen genotypes (Figure 2, Figure 7, Figure 7\u2014figure supplement 4, and Figure 2\u2014source data 4). For example, fungal GCNs associated with membrane/vesicle virulence and fungal growth shifted drastically between the WT and coi1-1 or npr1-1 Arabidopsis genotypes (Figure 7). In addition, some GCNs only appeared in specific backgrounds. For example, those linked to siderophores and a polyketide production were only identified during infection of the JA-compromised Arabidopsis mutant (Figure 7\u2014figure supplement 4J and L). However, other fungal GCNs, like those involved in secondary metabolism, were largely insensitive to variation in the host immunity (Figure 7\u2014figure supplements 1, 2 and 3, Supplementary file 1, and Figure 5\u2014source data 1). Critically, the gene membership of these GCNs is largely stable across the collection of pathogen isolates, even while their expression level across the B. cinerea isolates is highly polymorphic (Figure 5-source data 1and Figure 7\u2014figure supplement 4). This suggests that natural variation in the host immunity and pathogen shapes how the co-transcriptome responds to host\u2019s immune system. Further, the natural variation in the pathogen may be focused around these functional GCNs.\n\n### Plant disease development can be predicted by early transcriptome data\n\nPlant disease development is an abstract phenomenon that is the result of a wide set of spatiotemporal biological processes encoded by two interplaying species under a specific environment. In current study, we used late stage lesion area as a quantitative indicator of B. cinerea virulence. We have previously shown that early Arabidopsis transcriptomic response could be linked to later lesion development (Zhang et al., 2017). Here, our findings suggest that the late-stage disease development of a B. cinerea infection is determined during the first few hours of infection by the interaction of plant immune and fungal virulence responses. It was possible to create a link between early transcripts\u2019 accumulation and late disease development using solely the B. cinerea transcriptome (Figure 1 and Figure 3\u2014source data 1). This could be done using either individual pathogen genes, GCNs, or more simply the total fraction of transcripts from the pathogen. As the transcriptomic data were from plant leaf tissue only 16HPI, there is not a significant amount of pathogen biomass and this is more likely an indicator of transcriptional activity in the pathogen during infection. It is possible to develop these methods as possible biomarkers for likely fungal pathogen caused disease progression.\n\n### Conclusion\n\nThe co-transcriptome analysis of a B. cinerea population infection on Arabidopsis identified a number of B. cinerea GCNs that contained a variety of virulence-associated gene modules with different biological functions. The characterization of these GCNs simultaneously identified mechanisms known to enhance B. cinerea virulence and implicated several novel mechanisms not previously described in the Arabidopsis-B. cinerea pathosystem. In addition, the plant-fungus co-transcriptome network revealed the potential interaction between fungal pathogen- and plant host-GCNs. Construction of GCNs within single species, CKGCNs and dual networks shed lights on the biological mechanisms driving quantitative pathogen virulence in B. cinerea and their potential targets in the plant innate immune system.\n\n## Materials and methods\n\n### Collection and maintenance B. cinerea isolates\n\nA collection of 96 B. cinerea isolates were selected in this study based on their phenotypic and genotypic diversity (Denby et al., 2004; Rowe and Kliebenstein, 2007; Corwin et al., 2016a; Zhang et al., 2016; Zhang et al., 2017). This B. cinerea collection was sampled from a large variety of different host origins and contained a set of international isolates obtained from labs across the world, including the well-studied B05.10 isolate. A majority of isolates are natural isolates that isolated from California and can infect a wide range of crops. Isolates are maintained in \u221280\u00b0C freezer stocks as spores in 20% glycerol and were grown on fresh potato dextrose agar (PDA) 10 days prior to infection.\n\n### Plant materials and growth conditions\n\nThe Arabidopsis accession Columbia-0 (Col-0) was the wildtype background of all Arabidopsis mutants used in this study. The three Arabidopsis genotypes used in this study included the WT and two well-characterized immunodeficient mutants, coi1-1 and npr1-1, that abolish the major JA- or SA-defense perception pathways, respectively (Cao et al., 1997; Xie et al., 1998; Xu, 2002; Pieterse and Van Loon, 2004). All plants were grown as described previously (Zhang et al., 2017). Two independent randomized complete block-designed experiments were conducted and a total of 90 plants per genotype were grown in 30 flats for each experiment. Approximately 5 to 6 fully developed leaves were harvested from the five-week old plants and placed on 1% phytoagar in large plastic flats prior to B. cinerea infection.\n\n### Inoculation and sampling\n\nWe infected all 96 isolates onto each of the three Arabidopsis genotypes in a random design with 6-fold replication across the two independent experiments. A total of twelve infected leaves per isolate/genotype pair were generated. For inoculation, all B. cinerea isolates were cultured and inoculated on three Arabidopsis genotypes as described previously (Denby et al., 2004; Corwin et al., 2016b; Zhang et al., 2017). Briefly, frozen glycerol stocks of isolate spores were first used for inoculation on a few slices of canned peaches in petri plates. Spores were collected from one-week-old sporulating peach slices. The spore solution was filterred and the spore pellet was re-suspended in sterilized 0.5x organic grape juice (Santa Cruz Organics, Pescadero, CA). Spore concentrations were determined using a hemacytometer and suspensions were diluted to 10spores/\u03bcL. Detached leaf assays were used for a high-throughput analysis of B. cinerea infection, which has been shown to be consistent with whole plant assay (Govrin and Levine, 2000; Mengiste et al., 2003; Denby et al., 2004; Sharma et al., 2005; Windram et al., 2012). Five-week old leaves were inoculated with 4 \u03bcL of the spore solution. The infected leaf tissues were incubated on 1% phytoagar flats with a humidity dome at room temperature. The inoculation was conducted in a randomized complete block design across the six planting blocks. All inoculations were conducted within one hour of dawn and the light period of the leaves was maintained. Two blocks were harvest at 16HPI for RNA-Seq analysis. The remaining four blocks were incubated at room temperature until 72HPI when they were digitally imaged for lesion size and harvested for chemical analysis as described previously (Zhang et al., 2017).\n\n### RNA-Seq library preparation, Sequencing, Mapping and Statistical Analysis\n\nTwo B. cinerea infected leaf tissues of the six blocks were sampled at 16HPI for transcriptome analysis, which resulted in a total of 1,052 mRNA libraries for Illumina HiSeq sequencing. RNA-Seq libraries were prepared according to a previous method (Kumar et al., 2012) with minor modifications (Zhang et al., 2017). Briefly, infected leaves were immediately frozen in liquid nitrogen and stored at \u221280\u00b0C until processing. RNA extraction was conducted by re-freezing samples in liquid nitrogen and homogenizing by rapid agitation in a bead beater followed by direct mRNA isolation using the Dynabeads oligo-dT kit. First and second strand cDNA was produced from the mRNA using an Invitrogen Superscript III kit. The resulting cDNA was fragmented, end-repaired, A-tailed and barcoded as previously described. Adapter-ligated fragments were enriched by PCR and size-selected for a mean of 300 base pair (bp) prior to sequencing. Barcoded libraries were pooled in batches of 96 and submitted for a single-end, 50 bp sequencing on a single lane per pool using the Illumina HiSeq 2500 platform at the UC Davis Genome Center (DNA Technologies Core, Davis, CA).\u00a0All statistical analysis were conducted within R (R Development Core Team, 2014).\n\n### Transcriptomic data analysis\n\nFastq files from individual HiSeq lanes were separated by adapter index into individual RNA-Seq library samples. The quality of individual libraries was estimated for overall read quality and over-represented sequences using FastQC software (Version 0.11.3, www.bioinformatics.babraham.ac.uk/projects/). We conducted downstream bioinformatic analysis, like reads mapping, normalization and nbGLM model analysis, using a custom script from the Octopus R package (https://github.com/WeiZhang317/octopus;\u00a0Zhang, 2018; copy archived at https://github.com/elifesciences-publications/octopus). The mapping of processed reads against Arabidopsis and B. cinerea reference genomes was conducted by Bowtie 1 (V.1.1.2, http://sourceforge.net/projects/bowtie-bio/files/bowtie/1.1.2/) using minimum phred33 quality scores (Langmead et al., 2009). The first 10 bp of reads was trimmed to remove low quality bases using the fastx toolkit (http://hannonlab.cshl.edu/fastx_toolkit/commandline.html). Total reads for each library were firstly mapped against the Arabidopsis TAIR10.25 cDNA reference genome. The remaining un-mapped reads were then aligned against B. cinerea B05.10 isolate cDNA reference genome (Lamesch et al., 2010; Lamesch et al., 2012; Krishnakumar et al., 2015; Van Kan et al., 2017) and the gene counts for both species were pulled from the resulting SAM files (Li et al., 2009).\n\nFor pathogen gene expression analysis, we first filtered genes with either more than 30 gene counts in one isolate or 300 gene counts across 96 isolates. We normalized B. cinerea gene counts data set using the trimmed mean of M-values method (TMM) from the EdgeR package (V3.12) (Robinson and Smyth, 2008; Bullard et al., 2010; Robinson and Oshlack, 2010). We then ran the following generalized linear model (GLM) with a negative binomial link function from the MASS package for all transcripts using the following equation (Venables and Ripley, 2002):\n\n$$\nY_{egai}=E_{e}+E_{e}(Gf_{g})+E_{e}(Gf_{g}(Af_{a}))+I_{i}+H_{h}+H_{h}\u2217I_{i}\n$$\n\nwhere the main categorical effects E, I, and H are denoted as experiment, isolate genotype, and plant host genotype, respectively. Nested effects of the growing flat (Gf) within the experimental replicates and agar flat (Af) nested within growing flat are also accounted for within the model. Model corrected means and standard errors for each transcript were determined for each isolate/plant genotype pair using the lsmeans package (Lenth, 2016). Raw P-values for F- and Chi Square-test were determined using Type II sums of squares using car package (Fox and Weisberg, 2011). P-values were corrected for multiple testing using a false discovery rate correction (Yoav and Daniel, 2001). Broad-sense heritability (H2) of individual transcripts was estimated as the proportion of variance attributed to B. cinerea genotype, Arabidopsis genotype, or their interaction effects.\n\n### Gene Ontology analysis\n\nGO analysis was conducted for several B. cinerea gene sets that were identified with high heritability, correlated with lesion size, and condensed in network analysis. We first converted sequences of these B. cinerea genes into fasta files using Biostrings and seqRFLP packages in R (Qiong and Jinlong, 2012; Pages et al., 2017). The functional annotation of genes was obtained by blasting the sequences against the NCBI database using Blast2GO to obtain putative GO annotations (Conesa et al., 2005; G\u00f6tz et al., 2008). The GO terms were compared to the official GO annotation from the B. cinerea database (http://fungi.ensembl.org/Botrytis_cinerea/Info/Index) and those obtained by Blast2GO analysis. The official gene annotations for host genes was retrieved from TAIR10.25 (https://apps.araport.org/thalemine/bag.do?subtab=upload).\n\n### B. cinerea Gene Co-expression Network Construction\n\nTo obtain a representative subset of B. cinerea genes co-expressed under in planta conditions, we generated gene co-expression networks (GCNs) among genes in the B. cinerea transcriptome. GCNs were generated using the model-corrected means of 9,284 B. cinerea transcripts from individual isolate infection across three Arabidopsis genotypes. Only genes with average or medium expression greater than zero across all samples were considered. This preselection process kept 6372 genes and those with negative expression values were adjusted to set expression at zero before network construction. Spearman\u2019s rank correlation coefficients for each gene pair was calculated using the cor function in R. Three gene-for-gene correlation similarity matrixes were generated independently for each of the three Arabidopsis genotypes. Considering the cutoff for gene-pair correlation usually generates biases of GCN structure and the candidate gene hit, we utilized several cutoff threshold values at 0.75, 0.8, 0.85, and 0.9 to filter the gene set. Comparing the structure and content of GCNs among those GCN sets using filtered gene set as input, we selected the correlation threshold at 0.8. A total of 600, 700 and 494 B. cinerea candidate genes passed the criterion under Arabidopsis WT, mutants coi1-1 and npr1-1, respectively. To obtain a representative subset of B. cinerea gene candidates across three host genotypes, we selected gene candidates that presented across the above three gene subsets. This process generated a gene set with 323 B. cinerea candidate genes that were common to each of the plant genotype backgrounds and had at least 0.8 significant correlations. Using this gene set as kernel, we extended gene candidate sets under each Arabidopsis genotype. The expanded B. cinerea gene candidate set under individual Arabidopsis genotypes was further used as input for gene co-expression network construction.\n\nGCNs were visualized using Cytoscape V3.2.1 (Java version:1.8.0_60) (Shannon et al., 2003). The nodes and edges within each network represent the B. cinerea genes and the Spearman\u2019s rank correlations between each gene pair. The importance of a given node within each network was determined by common network analysis indices, such as connectivity (degree) and betweenness. Nodes with higher connectivity and betweenness were considered as hub and bottleneck genes, respectively, and the biological functions of each network were determined by the GO terms of hub and bottle neck genes using Blast2GO.\n\n### Cross-kingdom Arabidopsis-B. cinerea Gene Co-expression Network construction\n\nWe used model-corrected means of transcripts from three Arabidopsis host genotypes and 96 B. cinerea isolates to construct the cross-kingdom Arabidopsis-B. cinerea GCNs. Model-corrected means of 23,959 Arabidopsis transcripts and 6,372 B. cinerea transcripts derived from two negative binomial linked generalized linear models were served as input data sets (Zhang et al., 2017). Spearman\u2019s rank correlation coefficient was calculated between genes from Arabidopsis and B. cinerea data sets. The gene pairs with positive correlations greater than 0.74 under each Arabidopsis genotype were considered to construct cross-kingdom GCNs.\n\n### Dual interaction network construction\n\nTo construct a cross-kingdom, dual interaction network of plant-pathogen GCNs, we performed principle component analysis on individual GCNs within each species to obtain eigengene vectors describing the expression of the entire gene network as previously described (Zhang and Horvath, 2005; Langfelder and Horvath, 2008; Okada et al., 2016). From these eigengene vectors, we calculated the Spearman\u2019s rank correlation coefficient between the first eigengene vectors for each network. The resulting similarity matrices were used as input to construct the interaction network and Cytoscape was used to visualize the resulting network.\n\n### Statistical analysis of network components\n\nAll the analyses were conducted using R V3.2.1 statistical environment (R Core Team, 2014). To investigate how secondary metabolite induction in B. cinerea contributes to disease development, we conducted a multi-factor ANOVA on B. cinerea three secondary metabolic pathways upon impacts on host genotypes. The three secondary metabolic pathways included the biosynthetic pathways of two well-known secondary metabolites, BOT and BOA, and a cyclic peptide biosynthetic pathway predicted in this study. We calculated the z-scores for all transcripts involved in BOT pathway, the BOA, and the putative cyclic peptide pathway for each isolate/plant genotype pair. The multi-factor ANOVA model for lesion area was:\n\n$$\ny_{Lesion}=\\mu+T\u2217A\u2217C\u2217G_{h}+\u03f5\n$$\n\nwhere T, A, C, and Gh stand for BOT, BOA, Cyclic peptide, and host genotype, respectively.\n\nIn addition, we used multi-factor ANOVA models to investigate interactions between GCNs within species for impacts upon host genotypes. The ANOVA models contain all GCNs within a species. The first eigengene vector derived from principal component analysis on each network was used in ANOVA models. The ANOVA model for individual B. cinerea GCNs was:\n\n$$\ny_{BcNeti}=\\mu+D\u2217P\u2217C\u2217PSI\u2217G_{h}+\u03f5\n$$\n\nwhere D, P, C, PSI, and Gh stand for Arabidopsis Defense/Camalexin GCN, Arabidopsis Plastid GCN, Arabidopsis Cell/Division GCN, Arabidopsis PSI GCN, and Host genotypes, respectively. Gh stands for HostGenotype, respectively. BcNeti represents one of the ten B. cinerea GCNs identified in this study. The ANOVA model for individual Arabidopsis GCNs was:\n\n$$\ny_{AtNeti}=\\mu+\u03a3BcNeti+G_{h}+\u03f5\n$$\n\nwhere \u2211BcNeti represents the summation of each of the ten B. cinerea GCNs identified in this study: BcVesicle/Viru GCN, BcTSL/Growth GCN, BcBOA GCN, BcExocytoRegu GCN, BcCycPep GCN, BcCopperTran GCN, BcBOT GCN, BcPeptidase GCN, BcIPP GCN, BcPolyketide GCN, while Gh stands for Host genotypes. Interactions among the terms were not tested to avoid the potential for overfitting. AtNeti stands for one of the four Arabidopsis GCNs (e.g. AtDefense/Camalexin GCN, AtPlastid GCN, AtCell/Division GCN, AtPSI GCN). All multi-factor ANOVA models were optimized by trimming to just the terms with a significant P-value (P-value < 0.05).\n\n### Germination assay\n\nTo assess the potential for natural variation in germination time in the isolate collection, 19 B. cinerea isolates were investigated by germination assay. The isolates were grown on PDA. Mature spores were collected in water, filtered and resuspended in 50% grape juice, as previously described, and further diluted to 1000spores/\u03bcL. To prevent germination before the beginning of the assay, spores were continuously kept on ice or in the fridge at 4\u00b0C. During the germination assay, the spores were maintained at 21\u00b0C in 1.5 mL tubes. Every hour, the tubes were mixed by manual inversion and sampled for 25 \u03bcL that were transferred to microscope slides. The spores within the drops were let to set down shortly. Without using slide covers, the spores were observed within the drops at two locations, used as technical replicates. The spores were categorized and counted based on the picture of every microscope observations taken every hour from 2 to 11 hr. Germination was defined as the hyphae emerged out of the spore.\n\nTo assess the contribution of germination to the observed B. cinerea transcriptomic networks involved in lesion development, we generated germination estimates based on gene expression by extracting the first principal component of a publicly available time series microarray data including 101 gemination-associated genes (Leroch et al., 2013). Based on this principal component, we predicted the level of expression of germination-associated genes for the 96 isolates on the three Arabidopsis genotypes at 16HPI. Theses germination predictions for individual isolates were used in a linear ANOVA model to estimate the co-linearity of the germination eigengene vector to virulence. Using linear ANOVA models with and without this germination eigengene vector, we compared how germination influences the 10 B. cinerea transcriptomic networks involved in lesion area in the three host genotypes. The ANOVA models with and without germination eigengene vector were:\n\n$$\nY_{Lesion}=\\mu+Germination+\u03a3BcNeti+G_{h}+\\epsilon\n$$\n\n\n\n$$\nY_{Lesion}=\\mu+\u03a3BcNeti+G_{h}+\\epsilon\n$$\n\nwhere Germination represents the scores of first principal components on expressions of germination associated genes from B. cinerea transcriptomic data in this study, \u2211BcNeti represents the summation of each of the ten B. cinerea GCNs identified in this study: BcVesicle/Viru GCN, BcTSL/Growth GCN, BcBOA GCN, BcExocytoRegu GCN, BcCycPep GCN, BcCopperTran GCN, BcBOT GCN, BcPeptidase GCN, BcIPP GCN, BcPolyketide GCN, while Gh stands for Host genotypes. Interactions among the terms were not tested to avoid the potential for overfitting.\n",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "b75172d1-6a87-409c-9f5f-0935e7fb40e0",
+      "submission_id": "89819477-dfff-48e2-bb3c-d1e8c14132cb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenichi Tsuda, Max Planck Institute for Plant Breeding Research Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.44279.041](https://doi.org/10.7554/eLife.44279.041)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Plant-necrotroph co-transcriptome networks illuminate a metabolic battlefield\" for consideration by eLife. Your article has been evaluated by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Ian Baldwin as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nWe all agree that this work is substantial and of a high quality and provides interesting insights. Co-transcriptome analysis during plant-microbe interaction is very rare in literature, and therefore this work is highly novel. Nevertheless, the reviewers raised three major issues and we discussed those together.\n\nA first issue is the lack of demonstrated causality for newly generated hypotheses. These would strengthen the manuscript and validate the co-transcriptome analyses. After extensive discussion, we, however, concluded that this is not essential for revision and is beyond the scope of the current manuscript.\n\nA second issue is if in planta B. cinerea transcriptomes were determined \"solely\" by B. cinerea germination and developmental timing of different isolates. With 96 isolates, we expect that timing of germination or development of some B. cinerea isolates differ. Thus, some B. cinerea transcriptome responses would be determined by developmental timing of isolates but not virulence mechanisms. If this were the case for all strains, authors' major conclusions are not justified. We concluded that you need to demonstrate that in planta B. cinerea transcriptome patterns are \"not solely\" determined by germination and developmental timing.\n\nA third issue is while you provided summary statistics in the supplement, most readers will not easily understand them. For instance, you showed that host immunity affected B. cinerea transcriptomes in a strain-specific manner as exemplified in Figure 2A and Figure 3. While you described this for some B. cinerea genes, readers would for sure appreciate to know to what extent (and for which B. cinerea genes and biological processes) host immunity affects fungal gene expression in a strain-specific or a similar manner.\n\nThe reviewers also raised some points for improvement of the manuscript. Please consider these points when you prepare your revision. Note that these are not essential for your revision but suggestions.\n\nEssential revisions:\n\n1) You need to provide evidence for that in planta B. cinerea transcriptome patterns are not solely determined by germination and developmental timing of B. cinerea isolates in plants. We request you to test this experimentally. We suggest that you investigate germination and development of 10 (instead of 96) B. cinerea isolates in Col-0 plants, which showed differential transcriptome patterns in plants, by quantifying B. cinerea biomass and staining B. cinerea. Depending on the result, you need to modify some of your conclusions.\n\n2) You need to provide a genome-wide analysis for host X isolate specific interactions that is more accessible to readers. One way the authors can do is to expand Figure 3 analysis to the B. cinerea genome wide. We suggest that the authors standardize each B. cinerea gene (relative expression) so that plant genotype effects can be easily seen. Then, clustering (both column and row directions) followed by visualization in a heat map can be performed using such expression table with y-axis being B. cinerea genes and x-axis being B. cinerea strains in a plant genotype. At the same time, visualizing disease scores (bar graphs?) on top of column would be also informative. Then, these analyses (maybe in part) can be shown as a main content. These analyses would allow readers to see which B. cinerea genes and processes are influenced by the host immune pathways in a strain specific or non-specific manner at the global scale. It might be better to use log fold change (coi1-1 vs. Col and npr1-1 vs. Col). In this case, analyzing coi1-1 vs. Col and npr1-1 vs. Col separately may generate a clearer pattern.\n",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b48b915d-8690-497a-8560-48e444c2d8d5",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C1",
+      "claim": "A collection of 96 B. cinerea isolates was used for infection experiments on Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the impact of genetic diversity in pathogen and host by utilization of a collection of 96 isolates infection on Arabidopsis wild-type and two mutants with jasmonate or salicylic acid compromised immunities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the use of 96 isolates in the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "717db3b6-ea1c-42bb-b30e-25455f8bae55",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C2",
+      "claim": "Ten B. cinerea gene co-expression networks (GCNs) were identified that encode known or novel virulence mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified ten B. cinereagene co-expression networks (GCNs) that encode known or novel virulence mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the identification of ten GCNs from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "be96ac9f-4793-4ebc-940f-3d58377abfcf",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C3",
+      "claim": "A dual interaction network was constructed by combining four host- and ten pathogen-GCNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Construction of a dual interaction network by combining four host- and ten pathogen-GCNs revealed potential connections between the fungal and plant GCNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly describes the construction of a dual interaction network.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "a44deeab-0b48-4e78-849d-db43b1bbfc18",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C4",
+      "claim": "B. cinerea is a necrotrophic generalist pathogen that attacks a broad range of diverse plant hosts, including dicots, gymnosperms, and even bryophytes.",
+      "claim_type": "EXPLICIT",
+      "source": "B. cinerea is a necrotrophic generalist pathogen that attacks a broad range of diverse plant hosts, including dicots, gymnosperms, and even bryophytes (Williamson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is supported by a citation to Williamson et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "641b1855-b1f8-4588-8be4-b390190077b8",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C5",
+      "claim": "B. cinerea can cause severe pre- and post-harvest losses in many crops.",
+      "claim_type": "EXPLICIT",
+      "source": "This necrotrophic pathogen is endemic throughout the world and can cause severe pre- and post-harvest losses in many crops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The statement is based on established knowledge about B. cinerea's agricultural impact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "e4d79bd8-dced-45d4-9b80-dacedaa3f4b3",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C6",
+      "claim": "The Arabidopsis mutant coi1-1 is compromised in jasmonate defense signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolates were inoculated on Arabidopsis Col-0 wild-type (WT) in conjunction with immune-deficient hormone mutants coi1-1 (jasmonate defense signaling) and npr1-1 (salicylic acid defense signaling).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that coi1-1 is compromised in jasmonate defense signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "672b3a23-2fb0-48cb-ad03-cfd6f9073f1c",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C7",
+      "claim": "The Arabidopsis mutant npr1-1 is compromised in salicylic acid defense signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolates were inoculated on Arabidopsis Col-0 wild-type (WT) in conjunction with immune-deficient hormone mutants coi1-1 (jasmonate defense signaling) and npr1-1 (salicylic acid defense signaling).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that npr1-1 is compromised in salicylic acid defense signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "6d0d50ce-51d4-44e6-8586-121095d89297",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C8",
+      "claim": "Transcriptome analysis was conducted at 16 hours post-infection (HPI).",
+      "claim_type": "EXPLICIT",
+      "source": "From individual infected leaves, both Arabidopsis and B. cinerea transcripts at 16 hr post-infection (HPI) were simultaneously measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the time point for transcriptome measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "ccab91ff-1e39-494c-8820-604b4a0d985a",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C9",
+      "claim": "9284 predicted B. cinerea gene models were identified with a minimum of either 30 gene counts in one isolate or 300 gene counts across 96 isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping the dual-transcriptome reads against the B. cinerea reference genome (B05.10), we identified 9284 predicted gene models with a minimum of either 30 gene counts in one isolate or 300 gene counts across 96 isolates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of identified gene models and the thresholds used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "a9ea4705-04d0-413d-9175-cd2087cc44cb",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C10",
+      "claim": "The identified 9284 genes correspond to approximately 79% of the 11,701 predicted encoding genes in B05.10 reference genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The total of identified genes corresponds to ~ 79% of the 11,701 predicted encoding genes in B05.10 reference genome (Van Kan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the percentage and cites the reference genome source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "8c20c7f2-2430-4560-a3cd-6c7a8433deef",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C11",
+      "claim": "The fraction of total reads that map to B. cinerea is a biologically relevant indicator of pathogen virulence.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this, we hypothesized that the fraction of total reads that map to B. cinerea might be a biologically relevant indicator of pathogen virulence (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "9a8a364a-6fc1-43d3-a75f-1130dd417466",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C12",
+      "claim": "B. cinerea transcript abundance at 16HPI showed a significant partial correlation with lesion development at 72HPI in WT Col-0 (R2 = 0.1101, p-value=0.0016).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing B. cinerea transcript abundance at 16HPI to lesion development at 72HPI revealed a significant partial correlation in the WT Col-0 (R2 = 0.1101, p-value=0.0016, Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides statistical values and references Figure 1 showing the correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "7294fc56-8c4a-4d4c-a3d3-9da82ba249c8",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C13",
+      "claim": "In npr1-1 and coi1-1 mutants, early transcriptomic activities of most B. cinerea isolates were more vigorous compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to WT, the early transcriptomic activities of most B. cinerea isolates were more vigorous in the two Arabidopsis mutants, resulting in a significant curvilinear relationship between total fraction of B. cinerea reads and final lesion area (p-value=3.914e-07, p-value=0.0001, respectively, Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states increased transcriptomic activity in mutants with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "def7237b-e6dc-4ffe-84f6-87c1cdac8eb5",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C14",
+      "claim": "The total reads fraction was better correlated with final lesion area in coi1-1 (R2 = 0.2562) than either WT (R2 = 0.1101) or npr1-1 (R2 = 0.161).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the total reads fraction was better correlated with final lesion area in coi1-1 (R2 = 0.2562) than either WT (R2 = 0.1101) or npr1-1 (R2 = 0.161).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides R2 values for comparison across genotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "111e860c-09ee-4195-a720-92e71895ab2f",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C15",
+      "claim": "8603 B. cinerea transcripts were significantly influenced by genetic variation in the pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 9284 detectable B. cinerea transcripts, 8603 and 5244 transcripts were significantly influenced by genetic variation in pathogen and host, respectively (74% and 45% of predicted B. cinerea gene models, respectively) (Figure 2A, Figure 2\u2014source data 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the number of transcripts influenced by pathogen genetic variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "317bb066-d765-4712-8f2f-b2161707fdf8",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C16",
+      "claim": "5244 B. cinerea transcripts were significantly influenced by genetic variation in the host.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 9284 detectable B. cinerea transcripts, 8603 and 5244 transcripts were significantly influenced by genetic variation in pathogen and host, respectively (74% and 45% of predicted B. cinerea gene models, respectively) (Figure 2A, Figure 2\u2014source data 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the number of transcripts influenced by host genetic variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "15639cd9-7880-4d52-bd0e-e2778b309372",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C17",
+      "claim": "The variation in host defense responses (average H2Host = 0.010) has far less influence on B. cinerea gene expression than the pathogen's own natural genetic variation (average H2Isolate = 0.152).",
+      "claim_type": "EXPLICIT",
+      "source": "While this result shows that the plant phytohormone pathways influence B. cinerea gene expression, the variation in host defense responses (average H2Host = 0.010) has far less influence on B. cinerea gene expression than that of the pathogens' own natural genetic variation (average H2Isolate = 0.152).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly provides heritability values comparing host and pathogen effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "926b535f-4739-46b3-9db1-f1a8a7cd25f7",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C18",
+      "claim": "4541 B. cinerea genes showed genotype-by-genotype dependent expression (39% of B. cinerea predicted gene models, average H2Isolate x Host = 0.116).",
+      "claim_type": "EXPLICIT",
+      "source": "The host defense hormones also affected B. cinerea gene expression in a genotype-by-genotype dependent manner on 4541 genes (39% of B. cinerea predicted gene models, average H2Isolate x Host = 0.116) (Figure 2B\u20132I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the number of genes showing interaction effects with heritability values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "21cfca61-9288-45f1-b3d8-eb3970bdc135",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C19",
+      "claim": "Bcpg1 encodes an endopolygalacturonase gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The model-corrected means (log2) for the transcript of Bcpg1 (Bcin14g00850.1) encoding an endopolygalacturonase gene are utilized for plotting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the function of Bcpg1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "2110c22f-ad6c-41d5-abf0-2d0257208550",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C20",
+      "claim": "Bcoah encodes an oxaloacetate hydrolase gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The model-corrected means (log2) for the transcript of Bcoah (Bcin12g01020.1) encoding an oxaloacetate hydrolase gene are utilized for plotting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the function of Bcoah.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "5260e076-c6a3-4a06-bffe-a49e3f63b153",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C21",
+      "claim": "2521 B. cinerea genes (22% of predicted gene models) showed significant positive correlations with lesion area across three Arabidopsis genotypes (p-value<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 2521 genes (22% of B. cinerea predicted gene models) with significant positive correlations and 114 genes (1% of B. cinerea predicted gene models) with significant negative correlations to lesion area across three Arabidopsis genotypes, respectively (p-value<0.01, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of genes with positive correlations to lesion area.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "1cf59086-fbf0-4174-bf44-9be0a39ed8ef",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C22",
+      "claim": "114 B. cinerea genes (1% of predicted gene models) showed significant negative correlations with lesion area across three Arabidopsis genotypes (p-value<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 2521 genes (22% of B. cinerea predicted gene models) with significant positive correlations and 114 genes (1% of B. cinerea predicted gene models) with significant negative correlations to lesion area across three Arabidopsis genotypes, respectively (p-value<0.01, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of genes with negative correlations to lesion area.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "eaf10542-55eb-401a-be09-f1989d93f166",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C23",
+      "claim": "The top 20 positively correlated B. cinerea genes contained all seven genes involved in BOT biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The top 20 positively correlated B. cinerea genes contained all seven genes involved in BOT biosynthesis (Deighton et al., 2001; Colmenares et al., 2002; Wang et al., 2009; Rossi et al., 2011; Ascari et al., 2013; Porquier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "83c5a697-1d0b-4159-af1d-573e800d93f3",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C24",
+      "claim": "More than 30 genes of the top 100 lesion-correlated genes encode plant cell wall degrading enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to phytotoxins, more than 30 genes of the top 100 lesion-correlated genes encode plant cell wall degrading enzymes, that is glucosyl hydrolases, carbohydrate esterases, cellobiose dehydrogenases and Bcpg1 (Figure 3 and Figure 3\u2014source data 1) (Gerbi et al., 1996; Zamocky et al., 2006; Cantarel et al., 2009; Van Vu et al., 2012; Igarashi et al., 2014; Morgenstern et al., 2014; Blanco-Ulate et al., 2014; Tan et al., 2015; Courtade et al., 2016; Nelson et al., 2017; P\u00e9rez\u2010Izquierdo et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "4fdd3442-d694-4c6f-b880-262eac7a6669",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C25",
+      "claim": "10 of the top 100 lesion-correlated genes were annotated as putative peptidase activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, 10 of the top 100 lesion-correlated genes were annotated as putative peptidase activities, which are critical for fungal virulence (Movahedi et al., 1991; Poussereau et al., 2001a; Poussereau et al., 2001b; ten Have et al., 2004; ten Have et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "ea143861-e4b0-4b06-9127-bcc38da3c431",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C26",
+      "claim": "37 of the top 100 lesion-correlated genes have no gene ontology (GO) terms.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, this method identified 37 of the top 100 lesion-correlated genes with no gene ontology (GO) terms, which likely represent unknown virulence mechanisms (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "44607030-9094-4da2-9c35-ca4cf7ff4fdc",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C27",
+      "claim": "Ten distinct B. cinerea GCNs containing more than five genes were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified ten distinct GCNs containing more than five B. cinerea genes (Figure 5, Supplementary file 1, Figure 5\u2014figure supplement 1 and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the identification of ten GCNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "01a5cd17-7344-49cc-a049-7910602788e7",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C28",
+      "claim": "The largest B. cinerea GCN contains 242 genes associated with phospholipid synthesis, eiosome function, and membrane-associated stress signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest GCN with 242 genes contains members responsible for phospholipid synthesis, eiosome function, and membrane-associated stress signaling pathways (Figure 5-Vesicle/virulence).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the largest GCN and its functional associations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "ab4a13b8-1d94-4c81-ac22-d26a692d24e8",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C29",
+      "claim": "The second largest B. cinerea network contains 128 genes entirely associated with translation and protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The second largest network contains 128 genes that were entirely associated with translation and protein synthesis (Figure 5-TSL/growth and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the second largest GCN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "3abcdec8-04d5-4c5d-8f6b-e9be1539306b",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C30",
+      "claim": "Five B. cinerea GCNs were identified with genes distributed across B. cinerea 16 chromosomes, suggesting trans-regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the smaller GCNs identified (5\u201320 genes), five networks were identified with genes distributed across B. cinerea 16 chromosomes, suggesting that these GCNs arise from coordinated trans-regulation (Figure 5-Trans-networks and Figure 5\u2014figure supplement 1D, F and H\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding and provides an inference about trans-regulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "ec364fce-ed26-4666-b021-7cc6767c79d9",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C31",
+      "claim": "Three B. cinerea GCNs were predominantly comprised of genes tandemly clustered within a single chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the whole-genome distributed GCNs, three of the smaller GCNs were predominantly comprised of genes tandemly clustered within a single chromosome with no or a few genes on other chromosomes (Figure 5-BOA, -Cyclic Peptide, -BOT, Figure 5\u2014figure supplement 1C, E and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes these clustered GCNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "121fb97b-682a-48c3-a58d-a685b32d47ba",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C32",
+      "claim": "Seven genes responsible for BOT biosynthesis cluster on chromosome 12 and form a small GCN with a Zn(II)2Cys6 transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, seven genes responsible for BOT biosynthesis cluster on chromosome 12 and form a small GCN with a Zn(II)2Cys6 transcription factor that is specific to the pathway (Figure 6A and B, Figure 5\u2014figure supplement 1G and Figure 5\u2014source data 1) (Siewers et al., 2005; Pinedo et al., 2008; Urlacher and Girhard, 2012; Moraga et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the BOT biosynthesis gene cluster with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "881c516a-8948-477c-ad83-d577af1263e5",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C33",
+      "claim": "All 13 genes involved in BOA biosynthesis cluster in Chromosome one and form a highly connected GCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, all 13 genes involved in BOA biosynthesis cluster in Chromosome one and form a highly connected GCN (Figure 5-BOA, Figure 6E, Figure 5\u2014figure supplement 1C and Figure 5\u2014source data 1) (Dalmais et al., 2011; Porquier et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the BOA biosynthesis gene cluster with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "77d7e9f7-3c8f-4436-9513-a01e3733852c",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C34",
+      "claim": "An uncharacterized set of ten genes cluster on Chromosome 1 and share homology with enzymes related to cyclic peptide biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to previously characterized secondary metabolic pathways, we identified an uncharacterized set of ten genes that cluster on Chromosome 1 (Figure 5-Cyclic Peptide, Figure 6F, Figure 5\u2014figure supplement 1E and Figure 5\u2014source data 1). These genes share considerable homology with enzymes related to cyclic peptide biosynthesis and may represent a novel secondary metabolic pathway in B. cinerea (Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes this novel gene cluster and speculates about its function.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "545e4f81-075f-4e81-8f44-acd447392a49",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C35",
+      "claim": "Isolate 94.4 was the sole genotype lacking the entire BOT pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolate 94.4 was the sole genotype lacking the entire BOT pathway, while 19 isolates and 24 isolates did not transcribe respectively the BOA and the putative cyclic peptide pathways (Figure 6E\u20136G and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "cb4c9bce-615a-40c0-8ea1-d642ea2f59b2",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C36",
+      "claim": "19 isolates did not transcribe the BOA pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolate 94.4 was the sole genotype lacking the entire BOT pathway, while 19 isolates and 24 isolates did not transcribe respectively the BOA and the putative cyclic peptide pathways (Figure 6E\u20136G and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "789a04e1-c271-4a0e-9b50-9aab0471e243",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C37",
+      "claim": "24 isolates did not transcribe the putative cyclic peptide pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolate 94.4 was the sole genotype lacking the entire BOT pathway, while 19 isolates and 24 isolates did not transcribe respectively the BOA and the putative cyclic peptide pathways (Figure 6E\u20136G and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "0e2e3962-39d9-40fa-9ad2-f9254812c559",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C38",
+      "claim": "There is a significant relationship between the expression of BOT and BOA pathways and lesion area measured at 72HPI.",
+      "claim_type": "EXPLICIT",
+      "source": "This showed a significant relationship between the expression of BOT and BOA pathways and lesion area measured at 72HPI (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this statistical finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "f0beb18b-35c5-4e3b-8c26-dfd78805c37d",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C39",
+      "claim": "The putative cyclic peptide pathway was only associated with lesion development in a BOT-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the putative cyclic peptide pathway was only associated with lesion development in a BOT-dependent manner, suggesting that it may have a synergism to BOT (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding and provides an inference about synergism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "cd1655f5-71e9-4828-8681-874e8b4b3f6b",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C40",
+      "claim": "The core membership within B. cinerea GCNs was largely maintained across three Arabidopsis genotypes but specific linkages were often variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the B. cinerea GCN membership and structure across the three Arabidopsis genotypes (WT, coi1-1, and npr1-1) showed that the core membership within networks was largely maintained but the specific linkages within and between GCNs were often variable (Figure 7, Supplementary file 1, Figure 7\u2014figure supplements 1, 2 and 3, and Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the comparison of GCN structure across genotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "7ac2e416-f922-4148-9594-b9bfa1dd8c0f",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C41",
+      "claim": "The two largest B. cinerea GCNs in WT developed multiple co-expression connections during infection in the JA-compromised coi1-1 host.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the two largest B. cinerea GCNs in WT developed multiple co-expression connections during infection in the JA-compromised coi1-1 host (Figure 7 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes this change in GCN structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "14e63283-7ddc-4550-a03a-f326c4228d30",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C42",
+      "claim": "Three cross-kingdom GCNs (CKGCNs) were identified under Arabidopsis WT and JA- or SA-compromised mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach identified three cross-kingdom GCNs (CKGCNs) under Arabidopsis WT and JA- or SA-compromised two mutants (Figure 8, Supplementary file 5, and Figure 8\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states the identification of three CKGCNs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "368fdc2e-86d2-4f5d-8cee-5bfe53c51a16",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C43",
+      "claim": "Under Arabidopsis WT, a total of 54 hub genes were identified in CKGCNs, half from B. cinerea and half from Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Under Arabidopsis WT, a total of 54 hub genes were identified, half from B. cinerea and half from Arabidopsis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number and distribution of hub genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "80c56d9b-95c4-458c-8419-07dde7cb9749",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C44",
+      "claim": "CKGCNs contain a majority of genes from the Arabidopsis Defense/camalexin GCN.",
+      "claim_type": "EXPLICIT",
+      "source": "For plants, CKGCNs contain a majority of genes from Arabidopsis Defense/camalexin GCN (Figure 8\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "6175a32c-03bf-4b80-8c78-858aa71ba808",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C45",
+      "claim": "The Arabidopsis Defense/camalexin and Photosystem I (PSI) GCNs have a higher degree of centrality than the Cell Division or Plastid GCNs across all three host genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the host-derived GCNs, the Arabidopsis Defense/camalexin and Photosystem I (PSI) GCNs have a higher degree of centrality than do the Cell Division or Plastid GCNs across all three host genotypes, suggesting that they have the most interactions with B. cinerea GCNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding and provides an inference about interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "e0f0855f-8149-4068-8069-f736ae477eff",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C46",
+      "claim": "In WT Col-0, fungal GCNs (Copper transport, Exocytosis regulation, BOT and IPP biosynthesis) that were positively correlated with the host Defense/camalexin GCN showed negative correlations with PSI eigengene.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the WT Col-0 host fungal GCNs (Copper transport, Exocytosis regulation, BOT and IPP biosynthesis) that were positively correlated with the host Defense/camalexin GCN showed negative correlations with PSI eigengene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes these correlational relationships.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "c366a199-c3dc-4df7-961c-a81e799d71b8",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C47",
+      "claim": "In the npr1-1 host, the host Defense/camalexin and PSI GCNs shift to a positive correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the host genotype can change these GCN relationships. In the npr1-1 host, the host Defense/camalexin and PSI GCNs shift to a positive correlation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes this shift in correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "ee8291c5-e1c3-4815-b839-8a69b3e4d6a5",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C48",
+      "claim": "The B. cinerea BOT GCN has a positive correlation with the Defense/camalexin GCN in the Col-0 host but a negative correlation in the npr1-1 host genotype.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect a shift in how the B. cinerea BOT GCN has a positive correlation with the Defense/camalexin GCN in the Col-0 host but a negative correlation in the npr1-1 host genotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes this genotype-dependent shift in correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "5166e6d2-d523-4fbc-b9c5-0674cfcb7620",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C49",
+      "claim": "The in planta estimation of germination significantly associated with virulence.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that the in planta estimation of germination significantly associated with virulence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding from the germination analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "b92128b1-603d-4012-8d00-35746561e4b8",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C50",
+      "claim": "Even with germination taken into account, all the B. cinerea networks remained significantly associated to lesion area.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, even with germination taken into account, all the B. cinerea networks remained significantly associated to lesion area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding after controlling for germination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "a1bdb247-ce09-43c8-b87a-baeacc8d2c19",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C51",
+      "claim": "BOT and BOA GCN links to virulence were largely unaffected by germination estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Some GCNs link, that is BOT and BOA, were largely unaffected by the germination estimates (Supplementary file 6), showing that some aspects of virulence are independent of spore germination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding and provides an inference about independence from germination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "be661e0a-1924-44ef-8bd7-ca59e2cc514d",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C52",
+      "claim": "The vesicle linked GCN had its link to virulence decreased but not abolished by including the germination co-variate.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast other GCNs like the vesicle linked GCN had their link to virulence decreased but not abolished by including the germination co-variate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the effect of germination on the vesicle GCN-virulence link.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "e4591d24-7b7c-45ad-9a22-39a1d78a590c",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C53",
+      "claim": "Spore germination plays a role in the measurement of the plant-pathogen interaction but is not a dominant global influence on the observed patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while spore germination plays a role in our measurement of the plant-pathogen interaction, it is only one of multiple factors influencing the co-transcriptome and is not imparting a dominant global influence on the observed patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion about germination's role.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "3ce73520-01bf-4ba2-a9c5-646697fa491c",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C54",
+      "claim": "The transcriptional virulence strategy employed by B. cinerea is dependent both on fungal genotype and the functional response of the host plant's immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the transcriptional virulence strategy employed by B. cinerea is dependent both on fungal genotype and the functional response of the host plant's immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "68b27419-2704-41d3-b847-9b0574c5e705",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C55",
+      "claim": "Co-transcriptome networks revealed known and novel fungal virulence components coordinated expressed with plant host GCNs during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-transcriptome networks constructed using both plant and pathogen transcriptomic data revealed known and novel fungal virulence components coordinated expressed with plant host GCNs during infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding from the co-transcriptome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "1e5d648f-01f1-4a3e-acd9-ae4d76cca051",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C56",
+      "claim": "The BOT GCN shows a strong positive correlation with the Arabidopsis Defense/camalexin GCN in WT Col-0, suggesting that BOT production may directly induce the host's defense system.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the WT Col-0 host genotype the BOT GCN shows a strong positive correlation with the Arabidopsis Defense/camalexin GCN, suggesting that BOT production may directly induce the host's defense system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this correlation and provides a speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "31627708-637e-4064-9947-a9f4914aae98",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C57",
+      "claim": "The BOT GCN is negatively linked to the plant's PSI GCN, suggesting that BOT may repress the plant's photosynthetic potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently, the BOT GCN is negatively linked to the plant's PSI GCN, suggesting that BOT may repress the plant's photosynthetic potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this negative correlation and provides a speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "c69d606b-a3b2-4acc-b3f1-ce1e1a9217e8",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C58",
+      "claim": "The exocytosis complex is responsible for delivery of secondary metabolites and proteins to the extra-cellular space and plasma membrane in fungi.",
+      "claim_type": "EXPLICIT",
+      "source": "The exocytosis complex is responsible for delivery of secondary metabolites and proteins to the extra-cellular space and plasma membrane in fungi (Colombo et al., 2014; Rodrigues et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "d5d2f1bc-85b5-40a9-95f0-bda33e920795",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C59",
+      "claim": "The late-stage disease development of a B. cinerea infection is determined during the first few hours of infection by the interaction of plant immune and fungal virulence responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, our findings suggest that the late-stage disease development of a B. cinerea infection is determined during the first few hours of infection by the interaction of plant immune and fungal virulence responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "3d75ad53-496f-4120-b411-34c60da7dda7",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C60",
+      "claim": "A total of 1152 independent RNA samples were generated for library preparation and sequenced on Illumina HiSeq platform.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1152 independent RNA samples were generated for library preparation and sequenced on Illumina HiSeq platform (NCBI accession number SRP149815).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of samples and sequencing platform.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "8c3b4585-4da0-47bc-a879-cb8cce39a271",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C61",
+      "claim": "Four independent biological replicates across two separate experiments per isolate/genotype pair were harvested at 16HPI for transcriptome analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Four independent biological replicates across two separate experiments per isolate/genotype pair were harvested at 16HPI for transcriptome analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "a17fa3a9-56dd-437f-8d2b-4f490e7895e8",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C62",
+      "claim": "Plants have evolved a sophisticated set of constitutive and inducible immune responses to cope with constant selective pressures from antagonistic microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "Plants have evolved a sophisticated set of constitutive and inducible immune responses to cope with constant selective pressures from antagonistic microbes (Jones and Dangl, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "4926b6bb-8374-4831-bf60-8b35c2b3de5b",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C63",
+      "claim": "Plant pathogens have evolved a variety of different invasion and virulence strategies to disarm or circumvent plant defense strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocally, plant pathogens have also evolved a variety of different invasion and virulence strategies to disarm or circumvent plant defense strategies (Glazebrook, 2005; Toru\u00f1o et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "fd1174ee-7f95-4c1a-9a4e-5a7c9596de8a",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C64",
+      "claim": "Arabidopsis utilizes a complex signaling network to regulate the production of indole-derived secondary metabolites, such as camalexin and indole glucosinolates, that contribute to resistance against pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Arabidopsis utilizes a complex signaling network to regulate the production of indole-derived secondary metabolites, such as camalexin and indole glucosinolates, that contribute to resistance against pathogens (Kliebenstein et al., 2005; Clay et al., 2009; Bednarek et al., 2009; Frerigmann et al., 2016; Xu et al., 2016; Mine et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "4d84768e-8523-429a-8dad-66477d33c146",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C65",
+      "claim": "The biotrophic bacterial pathogen Pseudomonas syringae can utilize the jasmonic acid (JA) signaling pathway through the production of a JA-mimic, coronatine, to enhance its fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the biotrophic bacterial pathogen Pseudomonas syringae can utilize the jasmonic acid (JA) signaling pathway through the production of a JA-mimic, coronatine, to enhance its fitness (Mittal and Davis, 1995; Brooks et al., 2005; Cui et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "f4d10863-aed2-40aa-94b8-ee8e31317a17",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C66",
+      "claim": "B. cinerea has an ATP-binding cassette (ABC) transporter BcatrB that provides resistance by exporting camalexin from the pathogen cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, pathogens can directly resist downstream defenses as is done by B. cinerea, where it has an ATP-binding cassette (ABC) transporter BcatrB that provides resistance by exporting camalexin from the pathogen cell (Stefanato et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "bffc4b65-7a8b-4f92-851f-e64210e95e39",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C67",
+      "claim": "B. cinerea secretes phytotoxic secondary metabolites, including the sesquiterpene botrydial (BOT) and the polyketide botcinic acid (BOA) that trigger plant chlorosis and host cell collapse.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a key virulence mechanism is the secretion of phytotoxic secondary metabolites, including the sesquiterpene botrydial (BOT) and the polyketide botcinic acid (BOA) that trigger plant chlorosis and host cell collapse (Deighton et al., 2001; Colmenares et al., 2002; Wang et al., 2009; Rossi et al., 2011; Ascari et al., 2013; Porquier et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "95f09c22-e031-4298-a307-844582bf1075",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C68",
+      "claim": "Some pathogenic field isolates of B. cinerea fail to produce either BOT or BOA compounds.",
+      "claim_type": "EXPLICIT",
+      "source": "These metabolites are linked to virulence, but some pathogenic field isolates fail to produce either compounds pointing to additional pathogenic strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "ee1ff8ae-d634-461d-bf2a-41c36a24e184",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C69",
+      "claim": "The collection of 96 B. cinerea isolates harbors a wide scope of natural genetic variation within the species.",
+      "claim_type": "EXPLICIT",
+      "source": "A collection of 96 isolates of B. cinerea was used for infection, which harbor a wide scope of natural genetic variation within the species (Atwell et al., 2015; Corwin et al., 2016a; Zhang et al., 2016; Corwin et al., 2016a; Zhang et al., 2017; Soltis et al., 2018; Fordyce et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "25e75f71-7239-4908-bc7c-4cc62bdc24b6",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C70",
+      "claim": "Arabidopsis transcripts were analyzed previously to identify four host-derived GCNs that are sensitive to natural genetic variation in B. cinerea.",
+      "claim_type": "EXPLICIT",
+      "source": "Arabidopsis transcripts was analyzed previously to identify four host-derived GCNs that are sensitive to natural genetic variation in B. cinerea (Zhang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "3260af8e-c157-485c-bd20-7563c3a3e872",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C71",
+      "claim": "Detached leaf assays are consistent with whole plant assays for B. cinerea infection analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Detached leaf assays were used for a high-throughput analysis of B. cinerea infection, which has been shown to be consistent with whole plant assay (Govrin and Levine, 2000; Mengiste et al., 2003; Denby et al., 2004; Sharma et al., 2005; Windram et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "23f043d2-c5f4-4b94-a0f6-ea2949ee2d40",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C72",
+      "claim": "The B. cinerea collection includes the well-studied B05.10 isolate.",
+      "claim_type": "EXPLICIT",
+      "source": "This B. cinerea collection was sampled from a large variety of different host origins and contained a set of international isolates obtained from labs across the world, including the well-studied B05.10 isolate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly mentions the B05.10 isolate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "88573a03-fe24-44eb-ae55-45c3c38539d6",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C73",
+      "claim": "The coi1-1 mutant abolishes the major JA-defense perception pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The three Arabidopsis genotypes used in this study included the WT and two well-characterized immunodeficient mutants, coi1-1 and npr1-1, that abolish the major JA- or SA-defense perception pathways, respectively (Cao et al., 1997; Xie et al., 1998; Xu, 2002; Pieterse and Van Loon, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "ceb22e00-7670-46e2-9955-15616382b892",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "claim_id": "C74",
+      "claim": "The npr1-1 mutant abolishes the major SA-defense perception pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The three Arabidopsis genotypes used in this study included the WT and two well-characterized immunodeficient mutants, coi1-1 and npr1-1, that abolish the major JA- or SA-defense perception pathways, respectively (Cao et al., 1997; Xie et al., 1998; Xu, 2002; Pieterse and Van Loon, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used 96 B. cinerea isolates with natural genetic variation to infect three Arabidopsis genotypes (WT Col-0, coi1-1, and npr1-1) and conducted dual transcriptome analysis at 16 hours post-infection with four biological replicates, generating 1,152 RNA samples sequenced on Illumina HiSeq platform.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C8, C60-C61, and C69-C74 collectively describe a well-designed experimental system with appropriate controls (JA and SA mutants), adequate replication, established methodology (detached leaf assays validated by C71), and a diverse pathogen collection. The experimental design is clearly stated and methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "aa1fe252-2a51-4953-b068-b15cd998cad3",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mapping dual-transcriptome reads against the B. cinerea B05.10 reference genome identified 9,284 predicted gene models (approximately 79% of the 11,701 predicted genes) using thresholds of either 30 gene counts in one isolate or 300 gene counts across 96 isolates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 provide explicit quantitative data on gene detection with clear thresholds. The dual threshold approach (isolate-specific and pan-isolate) is reasonable for capturing both common and isolate-specific expression patterns. The 79% coverage is appropriate for in planta transcriptomics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "d9b92ced-5706-40a3-8756-7dddd4790c9e",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Early B. cinerea transcriptional activity (measured as fraction of B. cinerea reads at 16HPI) correlates with later lesion development at 72HPI, with significant correlations in WT Col-0 (R\u00b2=0.1101, p=0.0016), coi1-1 (R\u00b2=0.2562), and npr1-1 (R\u00b2=0.161), and more vigorous early transcriptomic activity in the two mutants compared to WT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 present a coherent finding with statistical support. The correlations are modest but significant, and the differential responses across genotypes are biologically plausible. The curvilinear relationships in mutants and stronger correlation in coi1-1 suggest complex host-pathogen dynamics. However, the R\u00b2 values indicate that early transcriptional activity explains only 11-26% of lesion variance, suggesting other factors are important.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "14ff9db7-4e5f-4502-97ec-67ef61326e6b",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Genetic variation in the pathogen significantly influenced 8,603 B. cinerea transcripts (74% of gene models, average H\u00b2=0.152), while host genetic variation influenced 5,244 transcripts (45%, average H\u00b2=0.010), and 4,541 genes (39%) showed genotype-by-genotype dependent expression (average H\u00b2=0.116), indicating that pathogen genetic variation has far greater influence on B. cinerea gene expression than host defense responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 provide comprehensive heritability analysis with explicit statistical values. The finding that pathogen variation (H\u00b2=0.152) dominates over host variation (H\u00b2=0.010) is well-supported by the data. The substantial interaction effect (H\u00b2=0.116) on 39% of genes demonstrates complex host-pathogen dynamics. The statistical approach using negative binomial GLM is appropriate for count data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "2045ba5d-7ff4-466f-82b4-36cbb263da98",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Bcpg1 encodes an endopolygalacturonase and Bcoah encodes an oxaloacetate hydrolase, both showing variable expression across isolates and host genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 state established gene functions supported by prior literature. These are used as examples of genes showing host x pathogen interaction effects, which is supported by Figures 3 and 3-supplement 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "c9e49ee1-596b-4ebe-b672-efac777a40e9",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Genome-wide correlation analysis identified 2,521 B. cinerea genes (22%) positively correlated and 114 genes (1%) negatively correlated with lesion area (p<0.01), with the top 100 positively correlated genes including all seven BOT biosynthesis genes, over 30 cell wall degrading enzymes, 10 peptidases, and 37 genes with no GO annotation representing potential novel virulence mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 describe a systematic approach to identify virulence-associated genes with appropriate statistical correction (FDR). The enrichment of known virulence factors (BOT genes, cell wall enzymes, peptidases) in top-correlated genes validates the approach. The identification of 37 unannotated genes provides novel hypotheses. The correlation approach is appropriate though causation cannot be inferred.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "27b47fb5-00c8-4972-a75f-b6b174e366de",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ten distinct B. cinerea gene co-expression networks (GCNs) were identified, including two large trans-regulated networks (242 genes for vesicle/virulence and 128 genes for translation/growth), five smaller trans-regulated networks (5-20 genes distributed across chromosomes), and three cis-regulated networks with genes clustered on single chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 describe the identification and classification of GCNs with clear structural and functional characterization. The distinction between trans- and cis-regulated networks based on chromosomal distribution is logical. The functional annotations (vesicle/virulence, translation/growth) are supported by GO analysis. The correlation threshold (0.8) and network construction methodology are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "50171d8f-bd48-44aa-9dc9-a94d34a1e950",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Three chromosomally clustered secondary metabolite biosynthesis GCNs were identified: BOT (7 genes on chromosome 12 with Zn(II)2Cys6 transcription factor), BOA (13 genes on chromosome 1), and a novel putative cyclic peptide pathway (10 genes on chromosome 1), with variable expression across isolates including complete pathway absence in some isolates (1 isolate lacking BOT, 19 lacking BOA, 24 lacking cyclic peptide).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 identify known (BOT, BOA) and novel (cyclic peptide) secondary metabolite pathways with clear genomic organization and expression patterns. The chromosomal clustering and co-expression support functional relationships. The natural variation in pathway expression (including complete absence) is well-documented and biologically plausible. The novel cyclic peptide pathway identification is supported by homology analysis, though functional validation is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "e69ac4b0-7c44-4e4b-8639-75ea9974507f",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "BOT and BOA pathway expression showed significant relationships with lesion area at 72HPI, while the putative cyclic peptide pathway was only associated with lesion development in a BOT-dependent manner, suggesting potential synergism with BOT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 use eigengene analysis and linear mixed models to link pathway expression to virulence. The BOT-dependent association of the cyclic peptide pathway is an interesting finding suggesting functional interaction. However, the statistical details are in supplementary files, limiting full evaluation. The inference of synergism (C39) is speculative but reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "db9a2f53-403f-49bd-a730-c5c468d7f227",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "B. cinerea GCN core membership was largely maintained across three Arabidopsis genotypes, but specific linkages within and between GCNs were variable, with the two largest GCNs developing multiple new co-expression connections in the JA-compromised coi1-1 host.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 demonstrate that GCN structure is partially host-dependent while maintaining core membership. This is supported by comparative network analysis across genotypes (Figure 7). The finding that JA deficiency alters network connectivity is biologically plausible and suggests host immunity shapes pathogen transcriptional coordination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "b6b4cd33-87ed-4b2e-82fd-08d38d8631bd",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Three cross-kingdom GCNs (CKGCNs) were identified containing 54 hub genes (27 from each species) in WT, with plant genes predominantly from the Defense/camalexin GCN and the Defense/camalexin and Photosystem I GCNs showing higher centrality than Cell Division or Plastid GCNs across all host genotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 describe cross-kingdom network analysis identifying direct gene-gene interactions between species. The equal representation of hub genes from both species and enrichment of defense-related plant genes are biologically meaningful. The centrality analysis provides insights into which host processes most interact with pathogen networks. The methodology using correlation across isolates is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "4a50428d-d807-402a-ac65-d702b0db7ced",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In WT Col-0, fungal GCNs (Copper transport, Exocytosis regulation, BOT, IPP) positively correlated with host Defense/camalexin GCN showed negative correlations with PSI, but in npr1-1, Defense/camalexin and PSI GCNs shifted to positive correlation, reflecting a shift where BOT GCN has positive correlation with Defense/camalexin in Col-0 but negative in npr1-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 reveal complex, genotype-dependent correlational relationships between host and pathogen GCNs. The opposing correlations of pathogen GCNs with Defense/camalexin versus PSI in WT, and the shift in npr1-1, suggest SA pathway involvement in coordinating these responses. However, these are correlations and causation cannot be inferred. The biological interpretation requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "2f65000c-5115-4f8d-9a9d-17eba8911c50",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In planta germination estimates significantly associated with virulence, but all B. cinerea GCNs remained significantly associated with lesion area after controlling for germination, with BOT and BOA GCN links largely unaffected while vesicle GCN link was decreased but not abolished, indicating germination is one of multiple factors influencing the co-transcriptome without dominant global influence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 address an important potential confound (germination variation) using an eigengene approach based on published germination-associated genes. The finding that GCN-virulence associations persist after controlling for germination strengthens the main conclusions. The differential effects on different GCNs (BOT/BOA unaffected, vesicle partially affected) suggest distinct mechanisms. The approach is reasonable though indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "91fca09f-4c6f-4e8d-b2b5-af2d8364c2c4",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The transcriptional virulence strategy of B. cinerea depends on both fungal genotype and host immune system function, with co-transcriptome networks revealing known and novel virulence components coordinated with host GCNs, and late-stage disease development determined during the first few hours of infection by plant immune and fungal virulence response interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55, C59 represent the main conclusions synthesizing multiple lines of evidence: heritability analysis (C15-C18), correlation with lesion area (C21-C26), GCN identification (C27-C41), and cross-kingdom networks (C42-C48). The conclusion that early transcriptional interactions determine late disease is supported by the 16HPI to 72HPI correlations. These are well-supported integrative conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "ec277c04-758f-47fb-b2e2-8387ee10c024",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The BOT GCN shows strong positive correlation with Arabidopsis Defense/camalexin GCN in WT Col-0, suggesting BOT production may directly induce host defense, while BOT GCN is negatively linked to plant PSI GCN, suggesting BOT may repress photosynthetic potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C57 present correlational data with speculative mechanistic interpretations. While the correlations are supported by the data, the causal interpretations ('directly induce', 'repress') are not demonstrated. These are reasonable hypotheses but require experimental validation. The manuscript appropriately uses 'suggesting' to indicate speculation, but the claims remain uncertain without functional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "eb6274d2-b4f0-488f-9eb8-c3604e2a4c87",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background knowledge claims about B. cinerea as a necrotrophic generalist pathogen, plant immune systems, pathogen virulence strategies, and specific mechanisms in Arabidopsis and B. cinerea are established in the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C62-C68 represent established background knowledge supported by appropriate citations. These provide context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    },
+    {
+      "id": "0dc600d4-aa87-4518-8414-0f7af198462f",
+      "content_id": "d1031d97-56da-45d7-9192-e0b31e4fd0b1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The exocytosis complex is responsible for delivery of secondary metabolites and proteins to the extracellular space and plasma membrane in fungi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 states established knowledge about exocytosis function with supporting citations. This provides biological context for interpreting the exocytosis regulation GCN identified in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:04:28.354130Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b48b915d-8690-497a-8560-48e444c2d8d5",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "e4d79bd8-dced-45d4-9b80-dacedaa3f4b3",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "672b3a23-2fb0-48cb-ad03-cfd6f9073f1c",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "6d0d50ce-51d4-44e6-8586-121095d89297",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "3d75ad53-496f-4120-b411-34c60da7dda7",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "8c3b4585-4da0-47bc-a879-cb8cce39a271",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "ee1ff8ae-d634-461d-bf2a-41c36a24e184",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "25e75f71-7239-4908-bc7c-4cc62bdc24b6",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "3260af8e-c157-485c-bd20-7563c3a3e872",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "23f043d2-c5f4-4b94-a0f6-ea2949ee2d40",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "88573a03-fe24-44eb-ae55-45c3c38539d6",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "ceb22e00-7670-46e2-9955-15616382b892",
+      "result_id": "de7c5f91-49f2-49f5-8309-ce93c825c0ab"
+    },
+    {
+      "claim_id": "ccab91ff-1e39-494c-8820-604b4a0d985a",
+      "result_id": "aa1fe252-2a51-4953-b068-b15cd998cad3"
+    },
+    {
+      "claim_id": "a9ea4705-04d0-413d-9175-cd2087cc44cb",
+      "result_id": "aa1fe252-2a51-4953-b068-b15cd998cad3"
+    },
+    {
+      "claim_id": "8c20c7f2-2430-4560-a3cd-6c7a8433deef",
+      "result_id": "d9b92ced-5706-40a3-8756-7dddd4790c9e"
+    },
+    {
+      "claim_id": "9a8a364a-6fc1-43d3-a75f-1130dd417466",
+      "result_id": "d9b92ced-5706-40a3-8756-7dddd4790c9e"
+    },
+    {
+      "claim_id": "7294fc56-8c4a-4d4c-a3d3-9da82ba249c8",
+      "result_id": "d9b92ced-5706-40a3-8756-7dddd4790c9e"
+    },
+    {
+      "claim_id": "def7237b-e6dc-4ffe-84f6-87c1cdac8eb5",
+      "result_id": "d9b92ced-5706-40a3-8756-7dddd4790c9e"
+    },
+    {
+      "claim_id": "111e860c-09ee-4195-a720-92e71895ab2f",
+      "result_id": "14ff9db7-4e5f-4502-97ec-67ef61326e6b"
+    },
+    {
+      "claim_id": "317bb066-d765-4712-8f2f-b2161707fdf8",
+      "result_id": "14ff9db7-4e5f-4502-97ec-67ef61326e6b"
+    },
+    {
+      "claim_id": "15639cd9-7880-4d52-bd0e-e2778b309372",
+      "result_id": "14ff9db7-4e5f-4502-97ec-67ef61326e6b"
+    },
+    {
+      "claim_id": "926b535f-4739-46b3-9db1-f1a8a7cd25f7",
+      "result_id": "14ff9db7-4e5f-4502-97ec-67ef61326e6b"
+    },
+    {
+      "claim_id": "21cfca61-9288-45f1-b3d8-eb3970bdc135",
+      "result_id": "2045ba5d-7ff4-466f-82b4-36cbb263da98"
+    },
+    {
+      "claim_id": "2110c22f-ad6c-41d5-abf0-2d0257208550",
+      "result_id": "2045ba5d-7ff4-466f-82b4-36cbb263da98"
+    },
+    {
+      "claim_id": "5260e076-c6a3-4a06-bffe-a49e3f63b153",
+      "result_id": "c9e49ee1-596b-4ebe-b672-efac777a40e9"
+    },
+    {
+      "claim_id": "1cf59086-fbf0-4174-bf44-9be0a39ed8ef",
+      "result_id": "c9e49ee1-596b-4ebe-b672-efac777a40e9"
+    },
+    {
+      "claim_id": "eaf10542-55eb-401a-be09-f1989d93f166",
+      "result_id": "c9e49ee1-596b-4ebe-b672-efac777a40e9"
+    },
+    {
+      "claim_id": "83c5a697-1d0b-4159-af1d-573e800d93f3",
+      "result_id": "c9e49ee1-596b-4ebe-b672-efac777a40e9"
+    },
+    {
+      "claim_id": "4fdd3442-d694-4c6f-b880-262eac7a6669",
+      "result_id": "c9e49ee1-596b-4ebe-b672-efac777a40e9"
+    },
+    {
+      "claim_id": "ea143861-e4b0-4b06-9127-bcc38da3c431",
+      "result_id": "c9e49ee1-596b-4ebe-b672-efac777a40e9"
+    },
+    {
+      "claim_id": "44607030-9094-4da2-9c35-ca4cf7ff4fdc",
+      "result_id": "27b47fb5-00c8-4972-a75f-b6b174e366de"
+    },
+    {
+      "claim_id": "01a5cd17-7344-49cc-a049-7910602788e7",
+      "result_id": "27b47fb5-00c8-4972-a75f-b6b174e366de"
+    },
+    {
+      "claim_id": "ab4a13b8-1d94-4c81-ac22-d26a692d24e8",
+      "result_id": "27b47fb5-00c8-4972-a75f-b6b174e366de"
+    },
+    {
+      "claim_id": "3abcdec8-04d5-4c5d-8f6b-e9be1539306b",
+      "result_id": "27b47fb5-00c8-4972-a75f-b6b174e366de"
+    },
+    {
+      "claim_id": "ec364fce-ed26-4666-b021-7cc6767c79d9",
+      "result_id": "27b47fb5-00c8-4972-a75f-b6b174e366de"
+    },
+    {
+      "claim_id": "121fb97b-682a-48c3-a58d-a685b32d47ba",
+      "result_id": "50171d8f-bd48-44aa-9dc9-a94d34a1e950"
+    },
+    {
+      "claim_id": "881c516a-8948-477c-ad83-d577af1263e5",
+      "result_id": "50171d8f-bd48-44aa-9dc9-a94d34a1e950"
+    },
+    {
+      "claim_id": "77d7e9f7-3c8f-4436-9513-a01e3733852c",
+      "result_id": "50171d8f-bd48-44aa-9dc9-a94d34a1e950"
+    },
+    {
+      "claim_id": "545e4f81-075f-4e81-8f44-acd447392a49",
+      "result_id": "50171d8f-bd48-44aa-9dc9-a94d34a1e950"
+    },
+    {
+      "claim_id": "cb4c9bce-615a-40c0-8ea1-d642ea2f59b2",
+      "result_id": "50171d8f-bd48-44aa-9dc9-a94d34a1e950"
+    },
+    {
+      "claim_id": "789a04e1-c271-4a0e-9b50-9aab0471e243",
+      "result_id": "50171d8f-bd48-44aa-9dc9-a94d34a1e950"
+    },
+    {
+      "claim_id": "0e2e3962-39d9-40fa-9ad2-f9254812c559",
+      "result_id": "e69ac4b0-7c44-4e4b-8639-75ea9974507f"
+    },
+    {
+      "claim_id": "f0beb18b-35c5-4e3b-8c26-dfd78805c37d",
+      "result_id": "e69ac4b0-7c44-4e4b-8639-75ea9974507f"
+    },
+    {
+      "claim_id": "cd1655f5-71e9-4828-8681-874e8b4b3f6b",
+      "result_id": "db9a2f53-403f-49bd-a730-c5c468d7f227"
+    },
+    {
+      "claim_id": "7ac2e416-f922-4148-9594-b9bfa1dd8c0f",
+      "result_id": "db9a2f53-403f-49bd-a730-c5c468d7f227"
+    },
+    {
+      "claim_id": "14e63283-7ddc-4550-a03a-f326c4228d30",
+      "result_id": "b6b4cd33-87ed-4b2e-82fd-08d38d8631bd"
+    },
+    {
+      "claim_id": "368fdc2e-86d2-4f5d-8cee-5bfe53c51a16",
+      "result_id": "b6b4cd33-87ed-4b2e-82fd-08d38d8631bd"
+    },
+    {
+      "claim_id": "80c56d9b-95c4-458c-8419-07dde7cb9749",
+      "result_id": "b6b4cd33-87ed-4b2e-82fd-08d38d8631bd"
+    },
+    {
+      "claim_id": "6175a32c-03bf-4b80-8c78-858aa71ba808",
+      "result_id": "b6b4cd33-87ed-4b2e-82fd-08d38d8631bd"
+    },
+    {
+      "claim_id": "e0f0855f-8149-4068-8069-f736ae477eff",
+      "result_id": "4a50428d-d807-402a-ac65-d702b0db7ced"
+    },
+    {
+      "claim_id": "c366a199-c3dc-4df7-961c-a81e799d71b8",
+      "result_id": "4a50428d-d807-402a-ac65-d702b0db7ced"
+    },
+    {
+      "claim_id": "ee8291c5-e1c3-4815-b839-8a69b3e4d6a5",
+      "result_id": "4a50428d-d807-402a-ac65-d702b0db7ced"
+    },
+    {
+      "claim_id": "5166e6d2-d523-4fbc-b9c5-0674cfcb7620",
+      "result_id": "2f65000c-5115-4f8d-9a9d-17eba8911c50"
+    },
+    {
+      "claim_id": "b92128b1-603d-4012-8d00-35746561e4b8",
+      "result_id": "2f65000c-5115-4f8d-9a9d-17eba8911c50"
+    },
+    {
+      "claim_id": "a1bdb247-ce09-43c8-b87a-baeacc8d2c19",
+      "result_id": "2f65000c-5115-4f8d-9a9d-17eba8911c50"
+    },
+    {
+      "claim_id": "be661e0a-1924-44ef-8bd7-ca59e2cc514d",
+      "result_id": "2f65000c-5115-4f8d-9a9d-17eba8911c50"
+    },
+    {
+      "claim_id": "e4591d24-7b7c-45ad-9a22-39a1d78a590c",
+      "result_id": "2f65000c-5115-4f8d-9a9d-17eba8911c50"
+    },
+    {
+      "claim_id": "3ce73520-01bf-4ba2-a9c5-646697fa491c",
+      "result_id": "91fca09f-4c6f-4e8d-b2b5-af2d8364c2c4"
+    },
+    {
+      "claim_id": "68b27419-2704-41d3-b847-9b0574c5e705",
+      "result_id": "91fca09f-4c6f-4e8d-b2b5-af2d8364c2c4"
+    },
+    {
+      "claim_id": "d5d2f1bc-85b5-40a9-95f0-bda33e920795",
+      "result_id": "91fca09f-4c6f-4e8d-b2b5-af2d8364c2c4"
+    },
+    {
+      "claim_id": "1e5d648f-01f1-4a3e-acd9-ae4d76cca051",
+      "result_id": "ec277c04-758f-47fb-b2e2-8387ee10c024"
+    },
+    {
+      "claim_id": "31627708-637e-4064-9947-a9f4914aae98",
+      "result_id": "ec277c04-758f-47fb-b2e2-8387ee10c024"
+    },
+    {
+      "claim_id": "a44deeab-0b48-4e78-849d-db43b1bbfc18",
+      "result_id": "eb6274d2-b4f0-488f-9eb8-c3604e2a4c87"
+    },
+    {
+      "claim_id": "641b1855-b1f8-4588-8be4-b390190077b8",
+      "result_id": "eb6274d2-b4f0-488f-9eb8-c3604e2a4c87"
+    },
+    {
+      "claim_id": "a17fa3a9-56dd-437f-8d2b-4f490e7895e8",
+      "result_id": "eb6274d2-b4f0-488f-9eb8-c3604e2a4c87"
+    },
+    {
+      "claim_id": "4926b6bb-8374-4831-bf60-8b35c2b3de5b",
+      "result_id": "eb6274d2-b4f0-488f-9eb8-c3604e2a4c87"
+    },
+    {
+      "claim_id": "fd1174ee-7f95-4c1a-9a4e-5a7c9596de8a",
+      "result_id": "eb6274d2-b4f0-488f-9eb8-c3604e2a4c87"
+    },
+    {
+      "claim_id": "4d84768e-8523-429a-8dad-66477d33c146",
+      "result_id": "eb6274d2-b4f0-488f-9eb8-c3604e2a4c87"
+    },
+    {
+      "claim_id": "f4d10863-aed2-40aa-94b8-ee8e31317a17",
+      "result_id": "eb6274d2-b4f0-488f-9eb8-c3604e2a4c87"
+    },
+    {
+      "claim_id": "bffc4b65-7a8b-4f92-851f-e64210e95e39",
+      "result_id": "eb6274d2-b4f0-488f-9eb8-c3604e2a4c87"
+    },
+    {
+      "claim_id": "95f09c22-e031-4298-a307-844582bf1075",
+      "result_id": "eb6274d2-b4f0-488f-9eb8-c3604e2a4c87"
+    },
+    {
+      "claim_id": "c69d606b-a3b2-4acc-b3f1-ce1e1a9217e8",
+      "result_id": "0dc600d4-aa87-4518-8414-0f7af198462f"
+    }
+  ],
+  "comparisons": []
+}

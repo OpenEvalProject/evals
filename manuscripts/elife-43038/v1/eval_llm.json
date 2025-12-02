@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C54",
+      "C109",
+      "C110"
+    ],
+    "result": "G\u03b1s-coupled GPCRs increase cAMP levels to inhibit mTORC1 activity across multiple cell lines. Overexpression of G\u03b1s-coupled GPCRs (adrenergic, dopamine D1, glucagon receptors) inhibited mTORC1 in HEK293A cells, while non-G\u03b1s GPCRs increased mTORC1 activity. Forskolin (adenylyl cyclase activator) and IBMX (phosphodiesterase inhibitor) dose-dependently inhibited mTORC1 activity within ~30 minutes across 12+ cell lines, decreasing phosphorylation of S6K, 4EBP1, and ULK1, and reducing global protein synthesis by ~50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42-C46, C48-C49, C54 are strongly supported by dose-response data (Figure 1B-C), time-course experiments (Figure 1C), and consistent effects across multiple cell lines (Figure 1E). The GPCR screen (Figure 1A) clearly distinguishes G\u03b1s-coupled from non-G\u03b1s GPCRs. Protein synthesis assays (Figure 1G) and phosphorylation of multiple mTORC1 substrates (Figure 1F) provide functional validation. The breadth of cell lines tested strengthens generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PKA mediates cAMP-induced mTORC1 inhibition. The PKA inhibitor H89 prevented forskolin-induced mTORC1 inhibition in HEK293A and TSC1 KO cells. Overexpression of PKA catalytic subunit \u03b1 strongly blocked mTORC1 activity under normal conditions. Expression of dominant-negative PKA regulatory subunit mutants (I\u03b1 and II\u03b1) prevented forskolin from decreasing mTORC1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by pharmacological inhibition (Figure 2A-B), gain-of-function (Figure 2C), and dominant-negative approaches (Figure 2D). The use of TSC1 KO cells (C60) demonstrates PKA acts independently of TSC. Multiple complementary approaches (chemical inhibitor, overexpression, dominant-negative) strengthen the conclusion that PKA is required for cAMP-mediated mTORC1 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "cAMP/PKA inhibits mTORC1 downstream of TSC and Rag GTPases. Forskolin blocked amino acid-induced mTORC1 activation in both TSC1 WT and KO cells, and in RagA/B WT and KO cells. Constitutively active RagA did not prevent cAMP inhibition of mTORC1. Forskolin inhibited both leucine- and glutamine-induced mTORC1 activation, suggesting cAMP acts downstream of Rag GTPases or Arf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are well-supported by genetic epistasis experiments using TSC1 KO (Figure 3C) and RagA/B KO cells (Figure 3E-F). The constitutively active RagA experiment (C67, Figure 3F) is particularly strong evidence. Testing both leucine and glutamine (C68, Figure 3G) addresses both Rag-dependent and Arf1-dependent amino acid sensing pathways. The logic is sound and the conclusion (C69) appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PKA activation does not block mTORC1 lysosomal localization or lysosomal acidification. Immunofluorescence showed mTOR co-localized with LAMP2-positive lysosomes in response to amino acids regardless of forskolin treatment. Lysosomal pH measured by Lysotracker was unchanged in forskolin-treated cells compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by immunofluorescence microscopy (Figure 4A) with quantification showing no significant difference in mTOR/LAMP2 co-localization with forskolin treatment. Lysotracker experiments (Figure 4B) with bafilomycin as positive control validate the assay. These negative results are important for ruling out upstream mechanisms and are appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PKA directly phosphorylates Raptor on Ser 791. Among mTORC1 components, only Raptor was phosphorylated within the PKA recognition motif after forskolin treatment. Ser 791 is the only Ser/Thr in Raptor within the PKA consensus sequence (RRXS/TY), is highly conserved across species, and resides in the WD40 domain. Mutagenesis showed S791A abolished PKA-dependent phosphorylation while S792A did not. In vitro kinase assays confirmed PKA directly phosphorylates Raptor at S791.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C73-C74, C76-C77, C80-C87 are strongly supported by multiple lines of evidence: immunoprecipitation with phospho-PKA substrate antibody (Figure 5A, 6A-C), site-directed mutagenesis (Figure 6A), endogenous Raptor phosphorylation (Figure 6B), PKA KO cells (Figure 6C), and in vitro kinase assays (Figure 6D). The evolutionary conservation (Figure 5B) and structural location (Figure 5C) add biological plausibility. The combination of cellular and biochemical approaches is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99"
+    ],
+    "result": "Phosphorylation of Raptor Ser 791 contributes to mTORC1 functional inhibition but does not directly affect kinase activity or protein interactions. CRISPR-generated Raptor S791A knock-in cells showed partial rescue of mTORC1 activity after forskolin treatment (~19-50% inhibition vs ~70% in WT). S791A cells showed normal basal mTORC1 signaling but reduced sensitivity to forskolin. In vitro kinase assays showed S791 phosphorylation does not alter mTORC1 catalytic activity or binding to mTORC1 components or Rag GTPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C88-C96, C99 are supported by CRISPR knock-in experiments (Figure 6E-F, Figure 6\u2014supplement 4) showing partial but significant rescue. The quantification (C93-C94) demonstrates incomplete rescue, appropriately acknowledged (C96, C113). In vitro kinase assays (Figure 6\u2014supplement 3A) and co-IP experiments (Figure 6\u2014supplement 2, 3B) rule out direct effects on catalytic activity or complex assembly. The partial rescue suggests additional PKA substrates may contribute (C114), which is reasonable speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "PKA activation and Raptor S791A mutation affect cell proliferation. Forskolin treatment or PKA Cat\u03b1 overexpression significantly decreased cell proliferation. Raptor S791A mutant cells showed increased proliferation compared to WT under both normal and forskolin-treated conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by cell counting experiments (Figure 6F, Figure 6\u2014supplement 5B-C) with statistical significance. The increased proliferation in S791A cells under forskolin treatment is consistent with reduced mTORC1 inhibition. However, the functional link between mTORC1 activity and proliferation, while plausible, is not directly demonstrated (e.g., no rescue with rapamycin).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Physiological activation of G\u03b1s-coupled GPCRs inhibits mTORC1 in cells and in vivo. Epinephrine, isoprenaline, and dobutamine (\u03b2-adrenergic agonists) inhibited mTORC1 in MDA-MB-231 and U20S cells in a PKA-dependent manner. Epinephrine injection decreased mTORC1 activity in mouse brain and liver. Glucagon, epinephrine, and vasopressin decreased mTORC1 activity in primary hepatocytes, which was prevented by PKA inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C108 are supported by experiments with physiological ligands in cell lines (Figure 7A-B), in vivo mouse experiments (Figure 7C-D), and primary hepatocytes (Figure 7E-F). The use of PKA inhibitor H89 and shRNA knockdown demonstrates PKA dependence. The in vivo experiments are particularly important for physiological relevance, though sample sizes and statistical analysis details are not fully provided in the text. Multiple ligands and tissues strengthen generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Forskolin specifically inhibits mTORC1 without affecting mTORC2, ERK, or AMPK signaling. Forskolin treatment did not change phosphorylation of AKT at Ser 473 (mTORC2 substrate), ERK at Thr 202/Tyr 204, AMPK at Thr 172, or ACC at Ser 79 (AMPK substrate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by Western blots (Figure 1\u2014supplement 2B-C) showing no changes in these phosphorylation sites. These negative controls are important for specificity. However, the conclusion about mTORC2 (C56) is based solely on one substrate (pAKT S473); additional mTORC2 substrates would strengthen this claim. The AMPK data addresses potential confounding from prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Short-term forskolin treatment does not affect protein levels of mTORC1 components or upstream regulators. Forskolin did not alter protein levels of mTOR, Raptor, PRAS40, mLST8, Deptor, Rheb, RagA/B/C, or Arf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by Western blots (Figure 1\u2014supplement 1B) showing stable protein levels. This control is important for ruling out transcriptional/translational effects and confirming the mechanism is post-translational. The time frame (short-term) is appropriate for the observed rapid effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Forskolin inhibits mTORC1-mediated processes including phosphorylation of multiple substrates and global protein synthesis. Forskolin decreased phosphorylation of S6K, ULK1, and 4EBP1, which are established mTORC1 substrates that regulate protein synthesis and autophagy. Forskolin reduced global protein synthesis by ~50% as measured by 35S-Met/Cys incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by Western blots (Figure 1F) and metabolic labeling (Figure 1G). The ~50% reduction in protein synthesis is quantified with statistical significance (p=0.0159). Testing multiple mTORC1 substrates (S6K, 4EBP1, ULK1) that regulate different downstream processes strengthens the functional significance. The protein synthesis assay provides direct functional readout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Raptor S791A knock-in cells do not completely block PKA-induced mTORC1 inhibition, suggesting additional PKA substrates may contribute. The incomplete rescue in S791A cells indicates PKA may phosphorylate other substrates besides Raptor S791 to inhibit mTORC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is an observation supported by data (Figure 6E), but C114 is speculation. While the incomplete rescue is real and important, alternative explanations exist: (1) incomplete editing in the knock-in cells, (2) compensatory mechanisms, (3) off-target effects of forskolin, or (4) additional PKA substrates. The authors appropriately acknowledge this limitation but do not provide evidence for additional substrates. Further experiments (e.g., proteomic identification of PKA substrates) would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "WD40 repeats serve as scaffolds for protein-protein interactions, suggesting Raptor S791 phosphorylation may affect protein interactions. The location of S791 in the WD40 domain of Raptor suggests phosphorylation at this site may alter Raptor's interactions with other proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is established knowledge (supported by citation), but C79 is speculation. While the structural location is suggestive, the authors show that S791 phosphorylation does NOT alter Raptor binding to mTORC1 components or Rag GTPases (C88, C90). The mechanism by which S791 phosphorylation inhibits mTORC1 function remains unclear. Additional experiments identifying altered protein interactions would be needed to support this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "Glucagon and epinephrine signaling may promote autophagy through Raptor S791 phosphorylation and mTORC1 inhibition. Historical observations that glucagon and epinephrine promote autophagy may be explained by PKA-mediated phosphorylation of Raptor and subsequent mTORC1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is speculation connecting historical observations (C116-C117) with current findings. While plausible given that mTORC1 inhibits autophagy via ULK1 phosphorylation (C118), the authors do not directly measure autophagy in response to PKA activation or in S791A cells. Autophagy assays (LC3 lipidation, p62 degradation, autophagosome formation) would be needed to support this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C121",
+      "C135"
+    ],
+    "result": "GPCRs paired to G\u03b1s proteins may be potential therapeutic targets for diseases with hyperactivated mTORC1. Because GPCRs are druggable and mTORC1 is hyperactivated in many diseases, targeting G\u03b1s-coupled GPCRs or phosphodiesterases with FDA-approved drugs may be beneficial for inhibiting mTORC1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C121, C135 are speculative therapeutic implications. While the biological findings are solid, no therapeutic efficacy data are presented. The speculation is reasonable given: (1) GPCRs are established drug targets (C30-C31, C120), (2) mTORC1 is hyperactivated in disease (C8, C134), and (3) FDA-approved GPCR agonists and phosphodiesterase inhibitors exist (C122). However, therapeutic benefit would require demonstrating efficacy in disease models, acceptable safety profiles, and consideration of systemic effects of GPCR activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The effect of cAMP on mTORC1 may be context-dependent, though the authors consistently observed inhibition across 12 cell lines. A prior study reported PKA phosphorylates Raptor S791 to activate mTORC1 in adipocytes, contrasting with the current findings. The authors note cAMP can be growth inhibitory or stimulatory depending on cell type, but consistently observed mTORC1 inhibition in their tested cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 acknowledge conflicting literature and context-dependence. The authors appropriately cite the contradictory Liu et al. 2016 study (C124) and note variability in cAMP effects (C125). However, their own data across 12 cell lines (C127, Figures 1E, 7B) consistently show inhibition. The speculation about tissue/cell-type differences (C126) is reasonable but not directly tested. The discrepancy with Liu et al. remains unexplained but is honestly acknowledged.",
+    "result_type": "MINOR"
+  }
+]

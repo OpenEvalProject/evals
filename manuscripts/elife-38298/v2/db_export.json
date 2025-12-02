@@ -1,0 +1,1865 @@
+{
+  "submission": {
+    "id": "b026e75d-ec13-450d-aebe-1c16864eb007",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:55:20.887038Z",
+    "updated_at": "2025-12-02T08:55:20.887038Z"
+  },
+  "content": [
+    {
+      "id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "submission_id": "b026e75d-ec13-450d-aebe-1c16864eb007",
+      "content_type": "manuscript",
+      "content_text": "# Functional instability allows access to DNA in longer transcription Activator-Like effector (TALE) arrays\n\n## Authors\n\n- Kathryn Geiger-Schuller<sup>1</sup> ([ORCID: 0000-0002-6705-0681](https://orcid.org/0000-0002-6705-0681))\n- Jaba Mitra<sup>3</sup>\n- Taekjip Ha<sup>1</sup> ([ORCID: 0000-0003-2195-6258](https://orcid.org/0000-0003-2195-6258))\n- Doug Barrick<sup>1</sup> ([ORCID: 0000-0001-7291-1389](https://orcid.org/0000-0001-7291-1389)) \u2020\n\n### Affiliations\n\n1. T.C. Jenkins Department of Biophysics Johns Hopkins University Baltimore United States\n2. Program in Molecular Biophysics Johns Hopkins University Baltimore United States\n3. Materials Science and Engineering University of Illinois Urbana-Champaign Urbana United States\n4. Department of Physics, Center for the Physics of Living Cells University of Illinois at Urbana Champaign Urbana United States\n5. Institute for Genomic Biology University of Illinois at Urbana Champaign Urbana United States\n6. Department of Biomedical Engineering Johns Hopkins University Baltimore United States\n7. Department of Biophysics and Biophysical Chemistry Johns Hopkins University Baltimore United States\n8. Howard Hughes Medical Institute Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTranscription activator-like effectors (TALEs) bind DNA through an array of tandem 34-residue repeats. How TALE repeat domains wrap around DNA, often extending more than 1.5 helical turns, without using external energy is not well understood. Here, we examine the kinetics of DNA binding of TALE arrays with varying numbers of identical repeats. Single molecule fluorescence analysis and deterministic modeling reveal conformational heterogeneity in both the free- and DNA-bound TALE arrays. Our findings, combined with previously identified partly folded states, indicate a TALE instability that is functionally important for DNA binding. For TALEs forming less than one superhelical turn around DNA, partly folded states inhibit DNA binding. In contrast, for TALEs forming more than one turn, partly folded states facilitate DNA binding, demonstrating a mode of \u2018functional instability\u2019 that facilitates macromolecular assembly. Increasing repeat number slows down interconversion between the various DNA-free and DNA-bound states.\n\n## Introduction\n\nTranscription activator-like effectors (TALEs) are bacterial proteins containing a domain of tandem DNA-binding repeats as well as a eukaryotic transcriptional activation domain (Kay et al., 2007; R\u00f6mer et al., 2007). The repeat domain binds double stranded DNA with a register of one repeat per base pair. Specificity is determined by the sequence identity at positions twelve and thirteen in each TALE repeat, which are referred to as repeat variable diresidues (RVDs) (Boch et al., 2009; Miller et al., 2015; Moscou and Bogdanove, 2009). This specificity code has enabled design of TALE-based tools for transcriptional control (Cong et al., 2012; Geissler et al., 2011; Li et al., 2012; Mahfouz et al., 2012; Morbitzer et al., 2010; Zhang et al., 2011), DNA modifications (Maeder et al., 2013), in-cell microscopy (Ma et al., 2013; Miyanari et al., 2013), and genome editing (TALENs) (Christian et al., 2010; Li et al., 2011).\n\nTALE repeat domains wrap around DNA in a continuous superhelix of 11.5 TALE repeats per turn (Deng et al., 2012; Mak et al., 2012). Because TALEs contain on average 17.5 repeats (Boch and Bonas, 2010), most form over 1.5 full turns around DNA. Many multisubunit proteins that form rings around DNA require energy in the form of ATP to open or close around DNA (reviewed in O'Donnell and Kuriyan, 2006), yet TALEs are capable of wrapping around DNA without energy from nucleotide triphosphate hydrolysis. One possibility is that TALEs bind DNA through an energetically accessible open conformation. Consistent with this possibility, we previously demonstrated that TALE arrays can populate partly folded and broken states (Geiger-Schuller and Barrick, 2016). By measuring the length-dependence of protein stability and employing a statistical mechanics Ising model, we previously described several different TALE partly folded states termed \u2018end-frayed\u2019, \u2018internally unfolded\u2019, and \u2018interfacially fractured\u2019 states. Although the calculated populations of partly folded states in TALE repeat arrays are small, they are many orders of magnitude larger than populations of partly folded states in other previously studied repeat arrays (consensus ankyrin [Aksel et al., 2011]\u00a0and DHR proteins [Geiger-Schuller et al., 2018]) suggesting a potential functional role for the high populations of partially folded states in TALE repeat arrays.\n\nConsensus TALEs (cTALEs) are designed homopolymeric arrays composed of the most commonly observed residue at each of the 34 positions of the repeat (Geiger-Schuller and Barrick, 2016). In addition to simplifying analysis of folding and conformational heterogeneity in this study, the consensus approach simplifies analysis of DNA binding, eliminating contributions from sequence heterogeneity and providing an easy means of site-specific labeling.\n\nHere we characterize DNA binding kinetics of cTALEs using total internal reflection fluorescence single-molecule microscopy. We find that consensus TALE arrays bind to DNA reversibly, with high affinity. Analysis of the dwell-times of the on- and off-states reveals multiphasic binding and unbinding kinetics, suggesting conformational heterogeneity in both the free and DNA bound state. We develop a deterministic optimization analysis that supports such a model, and provides rate constants for conformational changes in the unbound and bound states, and rate constants for binding and dissociation. Comparing the dynamics observed here to previously characterized local unfolding suggests that locally unfolded states inhibit binding of short cTALE arrays (less than one full superhelical turn around DNA), whereas they promote binding of long arrays (more than one full superhelical turn). Whereas local folding of transcription factors upon DNA binding is well documented (Spolar and Record, 1994), local unfolding in the binding process is not. Our results present a new mode of transcription factor binding where the major conformer in the unbound state is fully folded, requiring partial unfolding prior to binding. The critical role of such high energy partly folded states is an exciting example of \u2018functional instability\u2019, in which formation of a functional complex is impeded by the fully folded native state, and is instead facilitated by partial disruption of native structure.\n\n## Results\n\n### cTALE design\n\nConsensus TALE (cTALE) repeat sequence design was described previously (Geiger-Schuller and Barrick, 2016). To avoid self- association of cTALE arrays, we fused arrays to a conserved N-terminal extension of the PthXo1 gene. Although the sequence of this domain shows little similarity to TALE repeat sequences, the structure of this domain closely mimics four TALE repeats (Gao et al., 2012; Mak et al., 2012) and is required for binding and full transcriptional activation (Gao et al., 2012). In this study, all repeat arrays contain this solubilizing N-terminal domain.\n\n### cTALE local instability promotes population of partly folded states\n\nIn a previous study of the folding of a series of cTALE arrays, we used a nearest-neighbor Ising model to determine energies of intrinsic repeat folding and interfacial interaction between repeats. This analysis allows us to quantify the energies of different partly folded states. Figure 1A depicts three types of partly folded states of a generic repeat protein. In the fully folded state, all repeats are folded, and all interfaces are intact. In the end-frayed states, one or more terminal repeats are unfolded but all interfaces (except the interface between the unfolded and adjacent folded repeat), are intact. In the internally unfolded states, a central repeat is unfolded but all interfaces (except the interfaces involving the unfolded repeats) are intact. In the interfacially ruptured state, all repeats are folded but one interface is disrupted due to local structural distortion.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon of different partly folded TALE conformational states. End-frayed states have one (or more) terminal repeats unfolded. Internally unfolded states have a central repeat unfolded. Interfacially fractured states have a disrupted interface between adjacent repeats. (B) Free energies of partly folded states, calculated from previously published measurements and analysis (Geiger-Schuller and Barrick, 2016), relative to the fully folded state, for consensus TALE repeats with the NS repeat-variable diresidue sequence (cTALE(NS), red), consensus TALE repeats with the HD repeat-variable diresidue sequence (cTALE(HD), blue), and consensus ankyrin repeats (cAnk, black).\n\nFigure 1B shows calculated free energy differences between various partly folded states and the fully folded repeat array for two different RVDs (NS and HD) in an otherwise identical consensus sequence background, using the intrinsic and interfacial engeries we determined previously (Geiger-Schuller and Barrick, 2016). The distribution of partly folded states is calculated for different 20-repeat arrays containing two types of TALE arrays (with the NS RVD in red and with the HD RVD in blue) as well as consensus ankyrin arrays (cAnk in black; Materials and methods). For cTALE arrays, end frayed states are within a few kBT of the folded state, internally unfolded states are highest in energy, and interfacially ruptured states fall energetically between end frayed and internally unfolded states.\n\nChanging the RVD sequence affects the distribution of these partly folded states: arrays containing HD repeats are more likely to internally unfold or interfacially rupture than arrays containing NS repeats. However, both types of cTALEs are more likely to populate many of these partly folded states than cAnk is to populate even the lowest energy partly folded state, the end frayed state. Thus, compared to ankyrin repeats, cTALEs are locally unstable, meaning they are likely to form partly folded states. As these states disrupt the superhelix, they may facilitate DNA binding.\n\n### Single-molecule studies of cTALE binding to DNA\n\nTo ask if cTALE local instability is relevant for DNA binding kinetics, DNA binding trajectories were measured using single molecule total internal reflection fluorescence (smTIRF). Figure 2A shows a schematic of the smTIRF experiments performed to measure DNA binding. For site-specific cTALE labeling, R30 is mutated to cysteine in a single repeat. Position 30 is frequently a cysteine in naturally occurring TALEs (in earlier folding studies, arginine was chosen in the consensus sequence to avoid disulfide formation; Geiger-Schuller and Barrick, 2016). This cysteine was Cy3 (FRET donor)-labelled using maleimide chemistry, and the Cy3-lablelled TALE array was attached to biotinylated slides via the C-terminal His6 tag and \u03b1-Penta\u2022His antibodies. At salt concentrations below 300 mM NaCl, cTALEs aggregate. Because DNA binding is weak at high salt concentrations, measuring binding kinetics in bulk at high salt is not possible. However, tethering cTALEs to the quartz slide at high salt prevents self-association, even at the low salt concentrations required to study DNA binding kinetics. A histogram of NcTALE8 (8 NS-type repeats and the N-terminal domain) labeled via a cysteine in the first repeat shows a single peak at zero FRET efficiency, as expected for donor-only constructs (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of single-molecule FRET assay, with donor-labelled cTALE attached to a surface, and acceptor-labelled DNA free in solution. (B\u2013D) Single molecule FRET histograms show the appearance of a peak at a FRET efficiency of 0.45 with increasing labelled DNA, consistent with a DNA-bound cTALE. (E) Schematic of single-molecule FRET competition assay, with donor-labelled cTALE attached to a surface, and acceptor-labelled DNA as well as competitor unlabeled DNA free in solution. (F\u2013H) Single molecule FRET histograms show the disappearance of the peak at 0.45 FRET efficiency with increasing unlabeled competitor DNA. Conditions: 20 mM Tris pH 8.0, 200 mM KCl.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** FRET histograms from experiments where acceptor-labelled DNA are attached to a surface, and donor-labelled cTALEs are free in solution show a peak at a FRET efficiency of 0.5. This is consistent with the FRET efficiency of 0.45 obtained when cTALEs are tethered to the surface and DNA are free in solution. Conditions: 20 mM Tris pH 8.0, 200 mM KCl.\n\nTo test for DNA binding to tethered cTALE constructs, we added 5'-Cy5 (FRET acceptor)-labeled 15 bp-long DNA (Cy5.A15/T15) to tethered NcTALE8. This results in a new peak at a FRET efficiency of 0.45, indicating that DNA binds directly to cTALE arrays. As DNA concentration in solution is increased, the peak at 0.45 FRET efficiency increases in population (Figure 2C\u2013D), suggesting a measurable equilibrium between free and bound DNA rather than saturation or irreversible binding. In support of this, single molecule time trajectories show interconversion between bound and unbound states, providing access to rates of binding and dissociation.\n\nAs expected for reversible complex formation, the peak at 0.45 FRET efficiency can be competed away by adding mixtures of labeled and unlabeled DNA to pre-formed cTALE-labelled DNA complexes (schematic shown in Figure 2E; pre-formed complex shown in Figure 2F, competition data shown in Figure 2G\u2013H). Challenging pre-formed complexes with a mixture of 5 nM unlabeled DNA and 15 nM labeled DNA results in a slight decrease in the population of the peak at 0.45 FRET (compare Figure 2F and G). Challenging with a mixture of 50 nM unlabeled DNA and 15 nM labeled DNA further decreases the peak at 0.45 FRET (Figure 2H).\n\nTo test whether tethering of cTALE arrays impacts DNA binding, we also performed experiments with tethered dsDNA and free Cy3-labeled NcTALE8. Here, we tethered biotinylated, Cy5 (FRET acceptor)-labeled 15 bp-long DNA (Cy5.A15/biotin.T15). Addition of Cy3-labeled NcTALE8 at high salt concentration results in a new peak at a FRET efficiency of 0.5 (Figure 2\u2014figure supplement 1). These FRET distributions are similar to those obtained from tethering cTALEs to the surface and adding free dsDNA, suggesting that the interaction of cTALE arrays with dsDNA is not significantly impacted by surface immobilization. Since cTALEs tend to associate at physiological salt concentration, we used the format where cTALEs were tethered to the slide and incubated with freely diffusing dsDNA for all subsequent experiments.\n\n### cTALE arrays display multiphasic DNA-binding and -unbinding kinetics\n\nIn addition to the short smTIRF movies used to generate smFRET histograms from many molecules, long movies were also collected to examine the extended transitions of individual molecules between the low- and high-FRET (0 and 0.45) (Figure 3A\u2013B). A transition from low to high FRET (0 to 0.45) indicates that the acceptor fluorophore on DNA moved close enough to the donor on the protein for FRET and is likely a binding event. A transition from high to low FRET (0.45 to 0.0) indicates the acceptor fluorophore on DNA moved too far away from the donor on the protein for FRET and is likely an unbinding event. Low-FRET states show low colocalization with signal upon direct excitation of the acceptor, confirming that high-FRET states are DNA-bound states and low-FRET states are DNA-free states (Figure 3\u2014figure supplement 1). These long single molecule traces show both long- and short-lived low- and high-FRET states, indicating that kinetics are multi-phasic (Figure 3A\u2013B). Binding events (transitions from low to high FRET) become more frequent as bulk DNA concentration increases (compare representative traces at 1 nM dsDNA to 15 nM dsDNA; Figure 3A and Figure 3B). Cumulative distributions generated from dwell times in the low FRET state at a given DNA concentration are best-fit by a double-exponential decay, indicating a minimum of two kinetic phases associated with binding events (Figure 3C). Cumulative distributions generated from dwell times in the high FRET state are also best-fit by a double-exponential decay, indicating that there are a minimum of two kinetic phases for unbinding as well (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) Long time trajectories showing transitions between low- and high-FRET states (efficiencies of 0 and 0.45). The top panel shows calculated FRET efficiency in blue and two-state Hidden Markov Model fit in green (McKinney et al., 2006). The bottom panels show Cy3 and Cy5 fluorescence emission in green and red respectively. At low DNA concentration (A), the low FRET state predominates. As DNA concentration is increased (B), more time is spent in the high FRET state, because the dwell times in the low FRET state are shorter. At low DNA concentrations, there appears to be long- and short-lived high-FRET states. Likewise, at near-saturating DNA concentrations, there appear to be long and short-lived low FRET states. (C, D) Cumulative distributions of low- and high-FRET dwell times (blue circles). Fits to single-exponentials (black) show large nonrandom residuals (lower panels), consistent with the heterogeneity noted in (A) and (B). Double-exponentials (red) give smaller, more uniform residuals. (E) Apparent association rate constants as a function of DNA concentration. The apparent rate constant for the fast phase depends on DNA concentration (blue circles), indicating a bimolecular step binding event. The apparent rate constant for the slow phase does not depend on DNA-concentration (blue triangles), suggesting an isomerization event. (F) Apparent dissociation rate constants as a function of DNA concentration (phase one shown in blue circles, and phase two shown in blue triangles). Neither phase shows a DNA concentration dependence, indicating a dissociation and/or isomerization events. 68% confidence intervals are estimated using the conf_interval function of lmfit by performing F-tests (Newville et al., 2014). Conditions: 20 mM Tris pH 8.0, 200 mM KCl.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) Three representative time trajectories. In these trajectories, excitation alternated between red and green with 250 msec at each color. Top panels show detection of red and green light resulting from green laser excitation. High red (and low green) fluorescence result from FRET. Lower panels show detection of red light resulting from red laser excitation. There is strong correlation between periods of high FRET in the upper panels (high red fluorescence, low green fluorescence) and periods of high red fluorescence (from DNA binding) in the lower panel. Conditions: 200 mM KCl, 20 mM Tris pH 8.0.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Apparent association and dissociation rate constants as a function of DNA concentration for an eight repeat cTALE array (NcTALE8) binding to uncapped (blue) and capped (red) DNA, measured by single molecule FRET dwell time analysis. (A) Rate constants for conversion from the low to the high FRET state (FRETL\u2192H). Rate constants for the faster phase increase with DNA concentration (circles), indicating a bimolecular event. The DNA concentration-dependence is stronger (larger slope, k\u00a0=\u00a00.59\u00a0\u00b1\u00a00.08 nM\u22121 sec\u22121) with uncapped DNA than with capped DNA (k\u00a0=\u00a00.09\u00a0\u00b1\u00a00.05 nM\u22121 sec\u22121), which is likely a result of the faster diffusion of small, uncapped DNA (10 kDa) compared to large, capped DNA (320 kDa). Rate constants for the slower phase are not DNA-concentration dependent (triangles). (B) Rate constants for conversion from the high to the low FRET state (FRETH\u2192L). Neither phase shows a DNA concentration dependence, indicating unimolecular steps. Conditions: 200 mM KCl, 20 mM Tris pH 8.0.\n\nThe rate constant for the fast phase in DNA binding shows a linear increase with DNA concentration (Figure 3E), indicating that this step involves an associative binding mechanism. The slope of the rate constant for the fast phase as a function of DNA concentration gives a bimolecular rate constant of 5.9 \u00d7 108 nM\u22121s\u22121, close to the diffusion limit. The rate constant for the slower phase (0.14 s\u22121) is independent of DNA concentration indicating a unimolecular isomerization mechanism (Figure 3E).\n\nIn contrast, neither of the two fitted rate constants for transitions from high to low FRET (0.45 to 0.0; unbinding events) depends on DNA concentration, suggesting that unbinding involves two (or more) unimolecular processes (Figure 3F). The rate constants of these two phases are 1.2 s\u22121 and 0.13 s\u22121 respectively.\n\nTo rule out kinetic contributions of TALEs threading axially onto the ends of short DNAs, binding kinetics were measured with capped double-helical DNA sites. Capped DNA was generated by forming 5\u2019digoxygenin-A5-Cy5-A15 duplexed with 5\u2019-digoxygenin-T26 and adding a three-fold molar excess of anti-Digoxygenin. Low and high FRET dwell time cumulative distributions generated from capped DNA-binding kinetics are bi-phasic, similar to distributions from uncapped DNA (Figure 3\u2014figure supplement 2). The DNA concentration-independent rate constant for binding is roughly the same for capped DNA as for uncapped DNA (compare FRETL\u2192H red and blue triangles in Figure 3\u2014figure supplement 2), as are the dissociation rate constants (compare FRETH\u2192L red and blue triangles in as well as FRETH\u2192L red and blue circles in Figure 3\u2014figure supplement 2). The rate constant for bimolecular binding of capped DNA decreases compared to that for uncapped DNA (compare FRETL\u2192H red and blue circles in Figure 3\u2014figure supplement 2), which is consistent with the expected decrease in the rate of diffusion of the larger capped DNA. To assess the effect of molecular weight increase on diffusion of capped versus uncapped DNA, Sednterp (Laue et al., 1992), a program commonly used to estimate sedimentation and diffusion properties of biomolecules, was used to estimate maximum diffusion coefficients. Including the two antibodies bound on the ends of capped DNA (320 kDa total) gives an estimated diffusion coefficient of 4.7 \u00d7 10\u22127 cm2s\u22121, which is much lower than the estimated diffusion coefficient of the uncapped DNA (1.5 \u00d7 10\u22126 cm2s\u22121). This\u00a0~3.6 fold decrease in the diffusion constant for capped DNA is similar to the 6.7-fold decrease in the bimolecular rate constant for binding of capped DNA (Figure 3\u2014figure supplement 2).\n\n### Modifying the dsDNA sequence to include an anchoring 5\u2019 T impacts unbinding kinetics\n\nThe heterogeneity in the DNA-bound state may either result from conformational heterogeneity of the bound cTALE array, or from heterogeneity in the registry between the cTALE array and the DNA. Because there are three more base pairs than TALE repeats, there are several available binding registers where all TALE repeats are bound to DNA; ignoring end-effects, these registers are expected to have similar energetics. Although variation in registry would not be expected for natural TALE arrays that bind to high-complexity DNA sequences, it is more likely for the simple poly-A sequence here. To test whether bound-state heterogeneity results from a variation in cTALE-DNA registry, we altered the dsDNA sequence to promote a specific bound state. Previous studies indicate that the addition of a 5\u2019 T to the binding sequence, referred to as a T-anchored binding site, greatly enhances TALE binding activity (Boch et al., 2009) depending also on the presence of certain RVDs and degree of mismatch relative to cognate DNA (Schreiber and Bonas, 2014). To monitor kinetics with a T-anchored DNA, we added Cy5-labeled 15 bp-long DNA (Cy5.TA14/T14A) to tethered NcTALE8. Similar to the homopolymeric DNA (Cy5.A15/T15), this results in a peak at a FRET efficiency of 0.55, which increases with increasing DNA concentration (Figure 4A,B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) Long time trajectories showing transitions between low- and high-FRET states (efficiencies of 0 and 0.55). The top and middle panels are as in Figure 3A and B. The bottom panels show FRET histograms generated using calculated FRET values at each time point in traces A and B. (C) Cumulative distributions of low-FRET dwell times (blue circles). A Fit to single-exponential (black) shows large nonrandom residuals (lower panel). (D) Cumulative distributions of high-FRET dwell times (blue circles). A fit to single-exponential (black) shows random residuals (lower panel), implying decreased heterogeneity in the T-anchored bound-state. (E) Apparent association rate constants as a function of DNA concentration for the T-anchored TA14/A14T dsDNA (red) and the original A15/T15 dsDNA (blue). The apparent rate constants for the fast phase depend on DNA concentration (circles), indicating a bimolecular step binding event. The apparent rate constants for the slow phase do not depend on DNA-concentration (triangles), suggesting an isomerization event. (F) Apparent dissociation rate constants as a function of DNA concentration (T-anchored dSDNA, red circles; original A15/T15 dsDNA, blue circles and triangles). 67.4% confidence intervals are estimated using the conf_interval function of lmfit by performing F-tests (Newville et al., 2014). Conditions: 20 mM Tris pH 8.0, 200 mM KCl.\n\nTo examine binding and unbinding kinetics of cTALEs interacting with T-anchored DNA, long movies were recorded to visualize multiple transitions of individual molecules between the low- and high-FRET states (Figure 4A\u2013B). As with A15/T15 DNA, these long single molecule traces show both long- and short-lived low-FRET states, consistent with multiphasic binding kinetics. In contrast, dissociation of T-anchored DNA only shows long-lived high-FRET states, suggesting a single kinetic phase for unbinding (Figure 4A\u2013B) and cumulative distributions generated from dwell times in the high FRET state are well-fitted by a single-exponential decay (Figure 4D).\n\nAs with the binding kinetics measured for the homopolymeric DNA, the rate constant for the fast phase in T-anchored DNA binding shows a linear increase with DNA concentration (Figure 4E). The bimolecular rate constant for this phase (3.9 \u00d7 108 nM\u22121s\u22121) is close to the diffusion limit, as was seen for homopolymeric DNA (5.9 \u00d7 108 nM\u22121s\u22121). The rate constant for the slower phase (0.34 s\u22121) is also similar to the homopolymeric DNA rate constant for the slower phase (0.14 s\u22121, Figure 4E).\n\nAs with the unbinding kinetics measured for the homopolymeric DNA, the fitted rate constant for transition from high to low FRET (0.55 to 0.0; unbinding events) does not depend on DNA concentration (Figure 4F). Compared to the unbinding kinetics measured for the homopolymeric DNA, the anchored unbinding cumulative distributions are well-fitted by a single exponential (although the model with bound-state heterogeneity still fits slightly better, as shown below). There are two possible interpretations of this result. Either the T-anchored DNA impacts the binding mechanism such that unbinding involves one simple unimolecular processes, or the T-anchored DNA shifts the microscopic rate constants such that, although unbinding involves two (or more) unimolecular processes, the amplitudes are very different, or apparent rates are too close to resolve them. Either way, the large effect of T-anchor on unbinding kinetics supports the idea that bound-state heterogeneity results from variation in the the registry between the cTALE array and the DNA.\n\n### Longer cTALEs have slower DNA binding and unbinding kinetics\n\nTo examine how increasing the length of the cTALE array influences DNA binding, we generated Cy3-labelled constructs with 16 and 12 cTALE repeats, and measured binding to a longer Cy5-labelled DNA (A23/T23). We observed a low FRET value near 0.2 for the bound cTALE12 state, indicating that the first cTALE12 repeat is farther from the 5'-DNA-bound acceptor fluorophore than in the A15/T15 DNA complex. Attempts with the 16-repeat cTALE to increase FRET efficiency by moving the position of the mutated cysteine to the fourteenth repeat were unsuccessful. Thus, we used a fluorescence colocalization microscopy protocol to monitor binding of longer cTALE arrays to A23/T23 DNA (Figure 5\u2014figure supplement 1). In this protocol, Cy3 was first imaged for ten camera frames (1017.5 msec total) to identify positions of single TALE molecules. Then a long time series of fluorescence images of Cy5 signal were collected through directly exciting Cy5 on the DNA, and time trajectories of Cy5 signal were generated from the initially identified single TALE positions.\n\nIncreasing the number of cTALE repeats from 8 to 12 and 16 dramatically affects DNA binding kinetics. Long movies collected over a range of DNA concentrations show short- and long-lived Cy5 signal on and off states, indicating a level of kinetic heterogeneity similar to NcTALE8 (Figure 5\u2014figure supplement 1). Single molecule traces were analyzed using a thresholding filter (see Materials and methods and Figure 5\u2014figure supplement 1) to identify states and dwell times. Cumulative distributions were generated from dwell times at low Cy5 signal (unbound states, with lifetimes representing binding kinetics), and at high Cy5 signal (bound states, with dwell times representing unbinding kinetics). As with the eight repeat constructs, unbound cumulative distributions for these longer TALE arrays are best-fit by double exponential decays, particularly at high DNA concentrations (compare the cumulative distribution at low DNA concentration, Figure 5\u2014figure supplement 2A, to cumulative distribution at 5 nM DNA, Figure 5\u2014figure supplement 2B). Bound cumulative distributions for longer TALE arrays are best-fit by double exponential decays (Figure 5\u2014figure supplement 2C\u2013D). All apparent rate constants are much smaller for NcTALE16 and NcTALE12 (green/black circles and triangles, Figure 5A\u2013B) compared to NcTALE8, indicating that binding and unbinding is impeded by increasing the length of the binding surface between cTALEs and their cognate DNA (Figure 5C). To address whether differences in binding kinetics are related to experimental differences between colocalization and FRET assays, alternating laser experiments were performed by switching between FRET and colocalization detection (every five frames) within single molecule trajectories (Figure 3\u2014figure supplement 1). Changes in FRET and colocalization signals occurred simultaneously according to single molecule time traces, showing that differences in binding and unbinding kinetics of short and longer cTALEs are not due to differences in colocalization and FRET assays (Figure 3\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig5-v2.jpg)\n\n**Figure 5.:** (A) Apparent association rate constants as a function of DNA concentration for an eight repeat cTALE (blue) binding to dA15/T15 duplex DNA, and for a 12 repeat cTALE (black) and a 16 repeat cTALE (green) binding to dA23/T23 duplex DNA. eight repeat TALE kinetics are measured by FRET (FRETL\u2192H) while 12 and 16 repeat TALE kinetics are measured by colocalization (EL\u2192H). The apparent rate constants for the fast phase of binding are DNA concentration dependent (blue, black, and green circles), indicating a bimolecular binding event. The DNA concentration-dependence is greatest (larger slope) for the eight repeat cTALE. The apparent rate constants for the slow phase do not depend on DNA-concentration (blue, black, and green triangles), suggesting an isomerization event. (B) Apparent dissociation rate constants as a function of DNA concentration (phase one shown in circles, and phase two shown in triangles). Neither phase shows a DNA concentration dependence, indicating a dissociation and/or isomerization events. Rate constants for all phases are slower for the 12-repeat construct (black) and 16-repeat construct (green) than for the 8-repeat construct (blue), particularly for the bimolecular binding step. (C) Log10 of rate constants for 8 (blue), 12 (black), and 16(green) repeat cTALEs. Units of the bimolecular binding rate constant are nM\u22121s\u22121, other unimolecular rate constants have units s\u22121. 67.4% confidence intervals are estimated using the conf_interval function of lmfit by performing F-tests (Newville et al., 2014). Conditions: 20 mM Tris pH 8.0, 200 mM KCl.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) One representative time trajectory and colocalization analysis for a sixteen repeat TALE, NcTALE16, incubated with 1 nM Cy5-A15/T15. In the colocalization protocol, both the green and red lasers were used in the first ten frames (not shown) to identify single molecule locations. For all subsequent frames, Cy5-labeled DNA was continuously excited with the red laser. Red light emission images (from Cy5) were collected with time steps of 100 msec. (A) Trajectories were generated from sites of red/green colocalization in the first ten frames, and were corrected for background Cy5 emission (red trajectories above). For each trajectory, we set two thresholds for low and high Cy5 emission (B). A molecule is designated to be in the high emission (DNA-bound) state above the high threshold, and in the low emission state below the low threshold. (C) From this state-assignment procedure, dwell-times were determined in the high (bound) and low (unbound) states. Conditions: 200 mM KCl, 20 mM Tris pH 8.0.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A, B) Cumulative distributions of low-FRET dwell times (blue circles) for a 16-repeat construct at low and high DNA concentration. Fits to single-exponentials (black) show large nonrandom residuals (lower panels) which are most pronounced at high DNA concentrations, consistent with the binding heterogeneity observed in eight repeat cTALEs (Figure 3). Double-exponentials (red) give smaller, more uniform residuals. (C, D) Cumulative distributions of high-FRET dwell times (blue circles) for 16- and 12-repeat constructs at high DNA concentration. Fits to single-exponentials (black) show large nonrandom residuals (lower panels), consistent with the dissociation heterogeneity observed in eight repeat cTALEs. Double-exponentials (red) give smaller, more uniform residuals.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The crystal structure of PthXo1 (PDB: 3UGM) (Mak et al., 2012) in complex with DNA (colored by repeat) as a model of donor-acceptor fluorophore distances. (A) The distance from C30 in the first repeat (the site of labelling in NcTALE8) to the 5\u2019 base of the sense strand (light grey) is 38.3 \u00c5; the distance to the 5\u2019 base of the antisense strand (dark grey) is 37.4 \u00c5. (B) The distance from C30 in the fourteenth repeat (the site of labelling in NcTALE16) to the 5\u2019 base of the sense strand (light grey) is 72.9 \u00c5; the distance to the 5\u2019 base of the antisense strand (dark grey) is 25.1 \u00c5. Note that although there is likely to be some variation in these distances since the DNAs used here are longer (15 and 23 bases) than the TALE arrays (8 and 16 repeats, each with a four-repeat N-capping domain), the differences in donor-acceptor distances for the 16 repeat construct (B) are likely to be robust to registry shifts of a few bases.\n\n### A deterministic approach to modeling cTALE-DNA binding kinetics\n\nTo determine how the kinetic changes above are partitioned into underlying kinetic steps in binding, we fitted various kinetic models to the cumulative distributions for binding and unbinding. In addition to providing information about the mechanism of binding, this approach allows us to estimate the underlying microscopic rate constants and compare them for different constructs. This approach is generally applicable to studies of complex single molecule kinetics. Numerical integration was used to calculate the relative population of cTALE states as a function of time (Figure 6A\u2013C and G\u2013I), given a binding mechanism, an associated set of rate laws, and a set of initial conditions. Cumulative distributions of unbound dwell times represent the distribution of times single molecules spent in the unbound state before transitioning into the bound state, allowing us to split the kinetic scheme when fitting to single-molecule dwell times.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig6-v2.jpg)\n\n**Figure 6.:** The model most consistent with data is shown at the top. Unbound TALEs can exist in DNA-binding competent (TALE*) or DNA-binding incompetent (TALE) states. DNA-bound TALEs can exist in short-lived (TALE*~DNA) or long-lived (TALE\u2021~DNA) DNA-bound states. Cumulative distributions of dwell-times (shown as blue points) from eight repeat single-molecule time trajectories (A\u2013F) and 16 repeat single-molecule time trajectories (G\u2013L) were analyzed with the model (best-fit shown in black). (A\u2013C and G\u2013I) Populations of states as a function of time, generated by numerical integration in Matlab. (D\u2013F and J\u2013L) Best-fit microscopic rate constants and 68% confidence intervals are listed in Table 1.\n\nAmong the various models tested, the model that is most consistent with the data has two unbound DNA-free states and two DNA-bound states. This is consistent with alternating laser experiments showing that DNA is only colocalized when cTALEs are in the high FRET state (Figure 3\u2014figure supplement 1). This four-state model includes a TALE isomerization step in the absence of DNA from a DNA-binding incompetent conformation (which we refer to as TALE) to DNA-binding competent conformation (which we refer to as TALE*). The DNA-binding competent TALE* conformer binds and unbinds DNA (called TALE* when DNA free and TALE*~DNA when DNA-bound). Before unbinding, a fraction of TALE*~DNA isomerizes to a longer-lived DNA-bound state called TALE\u2021~DNA.\n\nBased on this mechanism, the rate laws for binding are given in Equations 1a - 1d.\n\n$$\n\\frac{d[TALE]}{dt}=\u2212k_{1}[TALE]+k_{\u22121}[TALE*]\n$$\n\n\n\n$$\n\\frac{d[TALE*]}{dt}=k_{1}[TALE]\u2212k_{\u22121}[TALE*]\u2212k_{2}[TALE*][DNA]\n$$\n\n\n\n$$\n\\frac{d[TALE*~DNA]}{dt}=k_{2}[TALE*][DNA]\n$$\n\n\n\n$$\nK_{eq,DNA\u2212free}=\\frac{k_{1}}{k_{\u22121}}\n$$\n\nSince the single-molecule dwell-time histograms of the unbound states are insensitive to the isomerization after DNA binding, the equation describing the time evolution of the long-lived bound state (TALE\u2021~DNA) is not relevant to our analysis of unbound-state lifetimes.\n\nTo determine microscopic rate constants k1, k-1, and k2, Equations 1a-1c were numerically integrated in Matlab, and the fraction of TALE*~DNA as a function of time was fitted to the low-FRET cumulative distributions (NcTALE8; Figure 6D\u2013E) or to the no colocalization cumulative distributions (NcTALE16; Figure 6J\u2013K). Microscopic rate constants were adjusted to reduce sum of the squared residuals between the concentration of TALE*~DNA (the direct product of binding) as a function of time and single-molecule cumulative distributions. In both cases, cumulative distributions at different bulk DNA concentrations were fitted globally. Initial fractions of TALE and TALE*~DNA were set to zero, and the initial fraction of TALE* was set to one. Confidence intervals (CI) were estimated by bootstrapping (Table 1; mean and 68% CI from 2000 or 8000 bootstrap iterations).\n\n**Table 1.**\n Kinetic parameters obtained from deterministic simulation fits of NcTALEs binding to homopolymeric A/T duplex DNA.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>k1 (sec\u22121)</th>\n      <th>k-1 (sec\u22121)</th>\n      <th>Keq, DNA-free</th>\n      <th>k2(sec\u22121nM\u22121)</th>\n      <th>k-2 (sec\u22121)</th>\n      <th>k3 (sec\u22121)</th>\n      <th>k-3 (sec\u22121)</th>\n      <th>Keq, DNA-bound (nM\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NcTALE8a</td>\n      <td>0.17 [0.16, 0.18]</td>\n      <td>0.13 [0.12, 0.14]</td>\n      <td>1.32 [1.26, 1.39]</td>\n      <td>1.1 [1.08, 1.12]</td>\n      <td>0.66 [0.65, 0.67]</td>\n      <td>0.36 [0.35, 0.37]</td>\n      <td>0.222 [0.218, 0.227]</td>\n      <td>1.62 [1.58, 1.66]</td>\n    </tr>\n    <tr>\n      <td>NcTALE12 b</td>\n      <td>0.135 [0.133, 0.137]</td>\n      <td>1.26 [1.09, 1.34]</td>\n      <td>0.11 [0.10, 0.12]</td>\n      <td>0.31 [0.28, 0.33]</td>\n      <td>0.130 [0.129, 0.131]</td>\n      <td>0.043 [0.042, 0.044]</td>\n      <td>0.0435 [0.0428, 0.0442]</td>\n      <td>0.99 [0.97, 1.00]</td>\n    </tr>\n    <tr>\n      <td>NcTALE16 a</td>\n      <td>0.26 [0.25, 0.27]</td>\n      <td>0.43 [0.39, 0.47]</td>\n      <td>0.61 [0.57, 0.64]</td>\n      <td>0.39 [0.38, 0.41]</td>\n      <td>0.299 [0.298, 0.300]</td>\n      <td>0.074 [0.073, 0.076]</td>\n      <td>0.078 [0.076, 0.079]</td>\n      <td>0.96 [0.95, 0.97]</td>\n    </tr>\n  </tbody>\n</table>\n\n_Parameters for NcTALE8 are for binding to dA15/T15 duplex DNA; those for NcTALE12 and NcTALE16 are for binding to dA23/T23 duplex DNA. 68% confidence intervals shown in brackets are from 2000a and 8000b iterations of bootstrap analysis._\n\nRate laws for dissociation are given in Equations 2a - 2d\n\n$$\n\\frac{d[TALE*~DNA]}{dt}=\u2212k_{\u22122}[TALE*~DNA]\u2212k_{3}[TALE*~DNA]+k_{\u22123}[TALE^{\u2021}~DNA]\n$$\n\n\n\n$$\n\\frac{d[TALE^{\u2021}~DNA]}{dt}=k_{3}[TALE*~DNA]\u2212k_{\u22123}[TALE^{\u2021}~DNA]\n$$\n\n\n\n$$\n\\frac{d[TALE*]}{dt}=k_{\u22122}[TALE*~DNA]\n$$\n\n\n\n$$\nK_{eq,DNA\u2212bound}=\\frac{k_{3}}{k_{\u22123}}\n$$\n\nAs with the system of equations above (1a-d), the equation describing the time evolution of the binding-incompetent free state (TALE) is not relevant to our analysis of bound-state lifetimes.\n\nTo determine microscopic rate constants k-2, k-3, and k3, Equations 2a-2c were numerically integrated in Matlab, and the fraction of TALE* as a function of time was fitted to the high-FRET cumulative distributions (NcTALE8; Figure 6F) or to the low colocalization cumulative distributions (NcTALE16; Figure 6L). Microscopic rate constants were adjusted to reduce sum of the squared residuals between the concentration of TALE* (the direct product of dissociation) as a function of time and single-molecule cumulative distributions. In both cases, cumulative distributions at different bulk DNA concentrations were fitted globally. The initial fraction of TALE*~DNA conformer was set at one; all other initial fractions were set to zero. Confidence intervals were estimated by bootstrapping (Table 1; mean and 68% CI from 2000 iterations).\n\nFitted curves reproduce the experimental cumulative distributions for binding and unbinding (Figure 6), both for the short and long cTALE arrays, with reasonably small residuals, over a range of DNA concentrations. Generally, fitted rate constants have confidence intervals of 10% or smaller (Table 1).\n\nComparison of microscopic rate constants for 8, 12, and 16 repeats show some significant differences. The bimolecular microscopic binding rate constant, k2, is slightly larger for eight repeats than for 12 and 16 repeats (1.1, 0.31, and 0.39 nM\u22121s\u22121 for 8, 12, and 16 repeats respectively). However, microscopic unbinding rate constant, k-2, is higher for eight repeat cTALEs (0.66 s\u22121 for NcTALE8 versus 0.13 s\u22121 for NcTALE12 and 0.299 s\u22121 for NcTALE16).\u00a0Clau\u00df et al. (2017) have also observed TALE dissociation rates that are non-monotonic with repeat number in live cells. In addition, bound state isomerization (interconversion between TALE*~DNA and TALE\u2021~DNA) is 5\u201310 times slower for 16 and 12 repeat cTALEs than eight repeat cTALEs. The value of Keq, DNA-free, which is a measure of the equilibrium proportion of the unbound TALE that is DNA-binding competent (TALE*) to that which is binding-incompetent (TALE), is larger for cTALEs with eight repeats (Keq, DNA-free = 1.32) than for cTALEs with 12 and 16 repeats (Keq, DNA-free = 0.11 and Keq, DNA-free = 0.61, respectively).\n\n## Discussion\n\nBy measuring DNA-binding kinetics of cTALE arrays that form 0.7, 1, and 1.4 superhelical turns, we probe the functional relevance of locally unfolded TALE states. We describe a novel method to glean mechanistic details from complex single molecule kinetics. In our simplified cTALE system, we find conformational heterogeneity in both DNA free and DNA-bound states. We find that association is slowed in arrays containing one full turn of repeats or more. Because most natural and designed TALEs contain more than a full turn of repeats, these findings motivate future studies of TALE nucleases (TALEN) to test whether the placement of destabilized repeats at specific positions can increase binding affinity and possibly enhance activity.\n\n### cTALEs containing NS RVD bind DNA with high affinity\n\nNS is an uncommon RVD in natural TALEs. Previous reports suggest that NS is fairly nonspecific, but may bind with higher affinity than other common RVDs (NG, NI, NN, and HD)\u00a0(Miller et al., 2015). Our fitted rate constants can be used to calculate the apparent Kd (Kapp) calculated as follows:\n\n$$\nK_{app}=\\frac{[TALE\u2212DNA+TALE\u2217\u2212DNA]}{[DNA][TALE+TALE\u2217]}=\\frac{K_{eq,DNA\u2212free}K_{2}+K_{eq,DNA\u2212free}K_{2}K_{eq,DNA\u2212bound}}{1+K_{eq,DNA\u2212free}}=\\frac{\\frac{k_{1}}{k_{\u22121}}\\times\\frac{k_{2}}{k_{\u22122}}(1+\\frac{k_{3}}{k_{\u22123}})}{1+\\frac{k_{1}}{k_{\u22121}}}\n$$\n\nwhere $K_{2}=k_{2}/k_{\u22122}$.\n\nUsing fitted rate constants from Table 1 in the final equality in Equation 3 gives values for Kapp of 2.5 nM for the eight repeat cTALE array, 0.5 nM for the 12 repeat cTALE array, and 1.0 nM for the 16 repeat cTALE array. Increasing the number of repeats from 8 to 12 repeats decreases the apparent Kd modestly, but further increasing from 12 to 16 repeats leaves the Kd unchanged. This affinity increase is small compared to that reported in a previous report studying length dependence on the affinity of designed TALEs (dTALEs) (Rinaldi et al., 2017), although in that study affinity also became insensitive to repeat number for large arrays when KD,app was in the low nM range. Because the KD,app of cTALE8 is already in the low nM regime (2.5 nM), we speculate that this may represent a similar maximum binding affinity observed for the longer arrays in the previous Rinaldi et al. report. Thus, because cTALE8 is near a maximum affinity, the addition of four and eight cTALE repeats has only a modest impact on the apparent binding affinity.\n\nTALEs are believed to read out sequence information from one strand (Boch et al., 2009). Due to the asymmetry of our DNA sequences (poly-dA base-paired with poly-dT), in principle, the FRET efficiency contains information on the binding orientation (and thus strand preference). However, based on the crystal structure of the DNA-bound state of TAL-effector PthXo1 (Mak et al., 2012), we estimate that the distance between the donor site of NcTALE8 (repeat 1) to the 5\u2019 acceptor site on the DNA (Cy5-A15/T15) should be similar for both the dA-sense or dT-sense orientations (Figure 5\u2014figure supplement 3A). Thus, the FRET data does not discriminate between the two modes of binding for the eight-repeat construct. However, for the 16 repeat NS RVD cTALE arrays, the PthXo1 model suggests very different distances (25 \u00c5 versus 73 \u00c5 for the dT-sense or dA-sense respectively, Figure 5\u2014figure supplement 3B) between the donor site (TALE repeat 14) and the acceptor site (5\u2019 Cy5-A23/T23). To restrict the number of binding positions available to longer cTALE arrays, the 23 base pair DNA used for NcTALE16 measurements (as well as DNA depicted in Figure 5\u2014figure supplement 3B) has the same number of additional base pairs as repeats (eight additional repeats and eight additional base pairs) compared to the 15 base pair DNA used for NcTALE8 measurements (as well as DNA depicted in Figure 5\u2014figure supplement 3A). While we limited the number of available binding positions, it may be possible for cTALEs to slide along DNA. However, taking into account the four repeat N-terminal capping domain, there are only three available base pairs in the bound complex. Thus we don\u2019t expect the distance measurements to change by more than 10 \u00c5 (~3 base pairs) if sliding occurs. The observation that there is colocalization but no measurable FRET when NcTALE16 is bound to DNA suggests that cTALEs containing the NS RVD prefer adenine (the dA-sense mode) compared with thymine bases, consistent with previous reports (Boch et al., 2009).\n\n### Conformational heterogeneity in the unbound state may be caused by local unfolding\n\nThe cumulative distributions of dwell-times in Figure 3 provide clear evidence for conformational heterogeneity in both the free and DNA-bound cTALEs. Although the deterministic modeling supports such heterogeneity, puts it in the framework of a molecular model, and provides a means to determine the microscopic rate and equilibrium constants, such analysis provides little information about the structural nature of TALE conformational heterogeneity.\n\nFigure 7 shows a model of cTALE conformational change consistent with DNA binding kinetics. In this model there are four TALE states. DNA-free cTALEs comprise both incompetent and binding competent states. DNA-bound cTALES comprise at least two states that are likely to differ in their registry relative to the DNA. For eight repeat cTALE arrays, the DNA-binding competent state is more highly populated than the DNA-binding incompetent state. In this reaction scheme, the DNA-binding incompetent state can be regarded as an off-pathway conformation that inhibits DNA binding (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig7-v2.jpg)\n\n**Figure 7.:** Single-molecule FRET studies and deterministic modeling support a model where TALEs exist in four states: binding incompetent, binding competent, and bound states in (at least) two distinct registers. In this model, for TALEs that form less than one full superhelical turn (eight repeats, (A), partly folded states are off-pathway and slow down binding. For longer TALEs that form one (12, B) or more (16, C) complete superhelical turns, partial unfolding is required for binding. DNA-bound TALEs populate multiple registers with distinct dissociation kinetics. Dynamics of long (12 and 16-repeat; B\u2013C) TALEs bound to DNA are significantly slower than for the shorter (8-repeat; A) TALEs.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Apparent association rate constants as a function of DNA concentration for an eight repeat cTALE in 0 M urea (blue), 1 M urea (pink), and with destabilizing point mutations (yellow; mutations substitute leucine at position one in the fourth repeat with a glycine). The DNA concentration dependence is strongest (steepest slope) in the absence of urea and destabilizing point substitutions (circles). Rates in the slower phase (triangles) appear unaffected by urea or mutational destabilization. (B) Apparent dissociation rate constants as a function of DNA concentration (phase one shown in circles, and phase two shown in triangles). Rates in the both phases appear unaffected by urea and mutational destabilization. Conditions: 200 mM KCl, 20 mM Tris pH 8.0.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** DNA-bound TALEs can exist in short-lived (TALE*~DNA) or long-lived (TALE\u2021~DNA) DNA-bound states. Cumulative distributions of dwell-times (shown as blue points) from eight repeat single-molecule time trajectories (D\u2013F) were analyzed with the model (best-fit shown in black), and best fit double-exponentials from the original A15/T15 DNA are shown in dashed cyan. (A\u2013C) Populations of states as a function of time, generated by numerical integration in Matlab. Mean microscopic rate constants and 68% confidence intervals determined with 2000 bootstrap iterations are listed in Table 2. This slightly more complex model better describes the data than a single exponential (reduced chi-squared 0.031 versus 0.058 respectively).\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A\u2013B) Long time trajectories showing transitions between low- and high-FRET states (efficiencies of 0 and 0.45). The top panel shows calculated FRET efficiency in blue and two-state Hidden Markov Model fit in green (McKinney et al., 2006). The bottom panels show Cy3 and Cy5 fluorescence emission in green and red respectively. (C) Cumulative distributions of low-FRET dwell times (blue circles). Fits to single-exponentials (black) show large nonrandom residuals (lower panels), consistent with the heterogeneity noted in (A) and (B). (D) Cumulative distributions of high-FRET dwell times (blue circles). Fits to single-exponentials (black) show random residuals (lower panels). (E) Apparent association rate constants as a function of DNA concentration for the 40 mM MgCl2 shown in black and the original 200 mM KCl shown in blue. (F) Apparent dissociation rate constants as a function of DNA concentration (40 mM MgCl2 shown in black circles; original 200 mM KCl phase one shown in blue circles, and phase two shown in blue triangles). 68% confidence intervals are estimated using the conf_interval function of lmfit by performing F-tests (Newville et al., 2014). Conditions: 20 mM Tris pH 8.0, 40 mM MgCl2 and 20 mM Tris pH 8.0, 200 mM KCl as described above.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/38298/elife-38298-fig7-figsupp4-v2.jpg)\n\n**Figure 7\u2014figure supplement 4.:** DNA-bound TALEs can exist in short-lived (TALE*~DNA) or long-lived (TALE\u2021~DNA) DNA-bound states. Cumulative distributions of dwell-times (shown as blue points) from eight repeat single-molecule time trajectories (A\u2013F) were analyzed with the model in the top panel (best-fit shown in black). (A\u2013C) Populations of states as a function of time, generated by numerical integration in Matlab. (D\u2013F) Cumulative distributions are shown in blue circles, best fit lines are shown in black, and best fit lines with the original solution conditions (200 mM KCl) are dotted in cyan. Mean microscopic rate constants and 68% confidence intervals determined with 2000 bootstrap iterations are listed in Table 2. The more complex model (top panel) fits better than a single exponential (reduced chi-squared 0.021 versus 0.06 respectively).\n\nBecause the eight repeat cTALE array does not form multiple turns of a superhelix, unfolding to bind DNA is not required. In the model in Figure 7, the binding competent state is the fully folded conformation, whereas the binding incompetent state includes partly folded conformations. Consistent with this interpretation, increasing populations of partly folded states through addition of 1M urea and through entropy enhancing mutations decreases apparent binding rates of 8 repeat cTALEs (Figure 7\u2014figure supplement 1). This is also consistent with a partly folded DNA-binding incompetent state in shorter cTALE arrays.\n\nFor 12 and 16 repeat cTALE arrays, the DNA-binding incompetent state is more highly populated than the DNA-binding competent state. In the model in Figure 7, the DNA-binding competent state is a high-energy conformation required for DNA binding (Figure 7B\u2013C). Because 12 and 16 repeat cTALEs are expected to form 1 and 1.4 turns (excluding the N-terminal domain), we hypothesize that the binding competent state includes some partly folded states that allow access to DNA. Not all partly folded states open the array to access DNA; therefore, the binding incompetent state includes some nonproductive partly folded states in addition to the fully folded state.\n\nIn arrays containing 12 or more repeats, the binding competent and binding incompetent states likely include mixtures of many specific partly folded states. Because the types of partly folded states are unknown, connecting equilibria between binding competent and binding incompetent states to calculated partly folded equilibria (using folding free energies similar to Figure 1) is challenging. Future work towards understanding the structural characteristics of the binding competent state in TALE arrays of one or more turns would inform which partly folded states to include in the calculation, making this comparison meaningful. A better structural understanding of the DNA binding competent state may also allow an opportunity for precise placement of destabilized repeats in designed TALEN arrays which may enable more efficient gene editing methodologies in both clinical and basic research applications.\n\n### TALE functional instability presents a new mode of transcription factor binding\n\nHere we demonstrate kinetic heterogeneity in DNA-bound and unbound TALE arrays, and we subsequently link the observed heterogeneity to partial unfolding of TALE arrays. We propose a model where binding requires partial unfolding of TALE arrays longer than one superhelical turn providing a functional role for previously observed moderate stability of TALE arrays. The functional instability described is particularly surprising given the small population of partly folded states which we expect to be DNA binding competent (partly folded states similar to internally unfolded and interfacially fractured states depicted in Figure 1A). Discovery of a functional role for the observed conformational heterogeneity is even more surprising, given the sequence identity of each of our repeats. Sequence heterogeneity in naturally occurring TALE arrays may further enable access to partly folded binding-competent states.\n\nWhile it is well understood that many transcription factors sometimes undergo local folding transition upon DNA binding (Spolar and Record, 1994; Tsafou et al., 2018), the findings here indicate that for TALE arrays, the major conformer is fully folded, and must undergo a local unfolding transition in order to bind DNA. Taken together, these findings suggest a new mode of transcription factor binding and provide compelling evidence for functional instability in TALE arrays.\n\n### Conformational heterogeneity in the bound state\n\nPrevious reports show that TALEs have multiple diffusional modes when searching nonspecific DNA (Cuculis et al., 2015). Our work with the homopolymeric DNA sequences suggests that cTALEs have multiple bound states (Figure 7). To gain more insight into conformational heterogeneity in the bound state, we performed binding experiments with T-anchored binding sequences and with divalent magnesium cation (Figure 4 and Figure 7\u2014figure supplementa 2\u20134). The significant changes in unbinding kinetics suggest that the two kinetically distinct bound-states (TALE*-DNA and TALE-DNA in Figure 6) differ in the registry of the TALE-DNA complex. Although we have no structural information on how these two registers differ (for NcTALE8 binding to A15/T15 DNA, the two registers appear to have the same FRET efficiency), our deterministic modeling suggests that the two registers differ in their ability to dissociate. The TALE*-DNA state, which we refer to as \u2018register 1\u2019 in the mechanistic model in Figure 7, can directly dissociate to the unbound state; likewise, it appears to be the direct product of association. In contrast, the TALE\u2021-DNA state, which we refer to as \u2018register 2\u2019 in Figure 7, does not directly dissociate; rather, dissociation from register two involves conversion back to register 1.\n\nTo determine how the observed kinetic changes are partitioned into underlying kinetic steps in unbinding, we fitted various kinetic models to the cumulative distributions for unbinding (binding to T-anchored DNA is shown in Figure 7\u2014figure supplement 2; binding in the presence of 40 mM MgCl2 is shown in Figure 7\u2014figure supplement 4). All unbinding distributions were best-fit by the three-state unbinding model shown in Figure 5, yielding lower chi-squared values than fits to a single-exponential model (Table 2). Distributions of the best-fit parameters obtained after 2000 bootstrap iterations are normally distributed with small confidence intervals (Table 2).\n\n**Table 2.**\n NcTALE8 kinetic unbinding parameters obtained from deterministic fits.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>DNA</th>\n      <th>Salt</th>\n      <th>k-2 (sec\u22121)</th>\n      <th>k3 (sec\u22121)</th>\n      <th>k-3 (sec\u22121)</th>\n      <th>Keq, DNA-bound (nM\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1</td>\n      <td>Cy5-A15/T15 dsDNA</td>\n      <td>200 mM KCl</td>\n      <td>0.66 [0.65, 0.67]</td>\n      <td>0.36 [0.35, 0.37]</td>\n      <td>0.222 [0.218, 0.227]</td>\n      <td>1.62 [1.58, 1.66]</td>\n    </tr>\n    <tr>\n      <td>2</td>\n      <td>Cy5-TA14/T14A dsDNA</td>\n      <td>200 mM KCl</td>\n      <td>0.48 [0.475, 0.483]</td>\n      <td>0.06 [0.054, 0.068]</td>\n      <td>0.31 [0.28, 0.33]</td>\n      <td>0.199 [0.192, 0.205]</td>\n    </tr>\n    <tr>\n      <td>3</td>\n      <td>Cy5-A15/T15 dsDNA</td>\n      <td>40 mM MgCl2</td>\n      <td>1.28 [1.27, 1.30]</td>\n      <td>0.32 [0.28, 0.35]</td>\n      <td>1.40 [1.30, 1.51]</td>\n      <td>0.224 [0.211, 0.237]</td>\n    </tr>\n  </tbody>\n</table>\n\n_Mean and 68% confidence intervals shown in brackets are from 2000 iterations of bootstrap analysis._\n\nComparison of the microscopic rate constants for the homopolymeric DNA and T-anchored DNA show some significant differences. The addition of a T-anchor to the binding DNA sequence substantially decreases the rate constant for conversion from register 1 to register 2 (k3, from 0.36 s\u22121 to 0.06 s\u22121, Figure 7\u2014figure supplement 2 and Table 2), and modestly decreases the rate constant for conversion from register 2 to register 1 (k-3, from 0.22 s\u22121 to 0.31 s\u22121). The T-anchor also modestly decreases the unbinding rate constant (k-2, from 0.66 s\u22121 to 0.48 s\u22121). Taken together, the rate constants from deterministic fits indicate that the addition of T to the binding DNA sequence stabilizes the bound register one state relative to the unbound and register two states.\n\nComparisons of the microscopic rate constants for cTALE binding to A15/T15 DNA in the presence of monovalent K+ and Mg2+ also show some significant differences. With Mg2+, the unbinding rate constant is larger (k-2\u00a0=\u00a01.28 s\u22121 vs. 0.66 s\u22121 with K+), as is the rate constant for conversion from register 2 to register 1 (k-3\u00a0=\u00a01.40 s\u22121 vs. 0.222 s\u22121 with K+); Figure 7\u2014figure supplement 4 and Table 2).\n\nTable 1 shows that microscopic rate constants for transition between the bound register 1 and register two states become much slower in 12 and 16 repeat cTALEs compared with eight repeat cTALEs (k-3 and k3). These rate constants decrease much more than the microscopic unbinding rate constant (the k-2 values are 0.66 s\u22121, 0.13 s\u22121, and 0.30 s\u22121 for NcTALE8, NcTALE12, and NcTALE16 respectively) indicating that the rates of register shifting depend on the number of repeats. Although the model does not provide information on the structure of this conformational change, it is likely that this conformational change involves cTALEs shifting register by 1\u20133 base pairs on the homopolymeric DNA. Overall, the dissociation results demonstrate that TALE-DNA complexes are heterogeneous, and their rates of interconversion and dissociation depend on sequence, repeat number, and solution conditions.\n\n## Materials and methods\n\n### Cloning, expression, purification, and labeling\n\nConsensus TALE repeat constructs were cloned with C-terminal His6 tags via an in-house version of Golden Gate cloning (Cermak et al., 2011). TALE constructs were grown in BL21(T1R) cells at 37\u00b0C to an OD of 0.6\u20130.8 and induced with 1 mM IPTG. Following cell pelleting and lysis, proteins were purified by resuspending the insoluble material in 6M urea, 300 mM NaCl, 0.5 mM TCEP, and 10 mM NaPO4 pH 7.4. Constructs were loaded onto a Ni-NTA column. Protein was eluted using 250 mM imidazole and refolded during buffer exchange into 300 mM NaCl, 30% glycerol, 0.5 mM TCEP, and 10 mM NaPO4 pH 7.4.\n\nLabelling of cTALE arrays followed a previously reported protocol (Rasnik et al., 2004). NcTALE8 and NcTALE12 were labeled at residue R30C in the first repeat, while NcTALE16 was labeled at residue R30C in the fourteenth repeat. 1 mg protein was loaded onto 500 uL NiNTA spin column. The column as washed with 10 column volumes of 300 mM NaCl, 0.5 mM TCEP, and 10 mM NaPO4 pH 7.4. Tenfold molar excess Cy3 maleimide dye was resuspended in 10 \u03bcL DMSO and added to column. The column was rocked at room temperature for 30 min, then at 4\u00b0C overnight. Cy3-labeled protein was eluted with 250 mM imidazole, 300 mM NaCl, 30% glycerol, 0.5 mM TCEP, and 10 mM NaPO4 pH 7.4. Protein was stored in 300 mM NaCl, 30% glycerol, 0.5 mM TCEP, and 10 mM NaPO4 pH 7.4 at \u221280\u00b0C.\n\n### Calculation of partly folded state free energies\n\nFree energies of partly folded cTALE conformations were determined using previously reported TALE intrinsic and interfacial free energies (Geiger-Schuller and Barrick, 2016). Free energies in Figure 1 are difference between the partly and fully folded states (where all 20 repeats are folded with coupled interfaces). Previously determined intrinsic and interfacial free energies were used to calculate probabilities of the fully folded state (all repeats folded), the end-frayed state (the first of twenty repeats unfolded), the internally unfolded state (the tenth of twenty repeats unfolded), and the interfacially fractured state (the interface between repeat ten and eleven disrupted). As an example, to calculate the free energy of end-fraying, the end-frayed state probability is divided by the fully folded state probability to generate the equilibrium constant for end-fraying (Kend-frayed), which is used to calculate the free energy of end-fraying:\n\n$$\n\u0394G_{end\u2212frayed}=\u2212RTlnK_{end\u2212frayed}\n$$\n\nThe conceptual framework and mathematical description of the Ising model and folding free energies are described in Aksel and Barrick (2009).\n\n### Oligonucleotides\n\nSequences used for binding studies were 5\u2019-Cy5-A15-3\u2019 and 5\u2019 T15-3\u2019 duplex (Cy5-A15/T15) as well as 5\u2019-Cy5-A15-3\u2019 and 5\u2019-biotin-T15-3\u2019 duplex (Cy5-A15/biotin-T15) for eight repeat binding studies, and 5\u2019-Cy5-A23-3\u2019 and 5\u2019 T23-3\u2019 duplex (Cy5-A23/T23) for 12 and 16 repeat binding studies. Sequences used for T-anchored binding studies were 5\u2019-Cy5-TA14-3\u2019 and 5\u2019 T14A-3\u2019 duplex (Cy5-TA14/T14A) for eight repeat binding studies. DNA was annealed at 5 \u03bcM concentration with 1.2-fold molar excess unlabeled strand in 10 mM Tris pH 7.0, 30 mM NaCl.\n\n### Single-molecule detection and data analysis\n\nBiotinylated quartz slides and glass coverslips were prepared as previously described (Rasnik et al., 2004). Cy3-labeled cTALEs were immobilized on biotinylated slides taking advantage of neutravidin interaction with biotinylated \u03b1-penta\u2022His antibody which binds the His6 cTALE tag. Slides were pretreated with blocking buffer (5 \u03bcL yeast tRNA, 5 \u03bcL BSA, 40 \u03bcL T50) before addition of 250 pM labeled cTALE. Cy5-labeled duplex DNA was mixed with imaging buffer (20 mM Tris pH 8.0, 200 mM KCl, 0.5 mg mL\u22121 BSA, 1 mg mL\u22121 glucose oxidase, 0.004 mg mL\u22121 catalase, 0.8% dextrose and saturated Trolox\u00a0~1 mg mL\u22121) and molecules were imagined using total internal reflection fluorescence microscopy. The time resolution was 50 msec for NcTALE8 and 100 msec for NcTALE16 and NcTALE12. Collection and analysis was performed as previously described (Roy et al., 2008).\n\n### FRET histograms\n\nA minimum of 20 short movies were collected, and the first five frames (50 msec exposure time) were used to generate smFRET histograms. FRET was calculated as IA/(IA\u00a0+ID) where IA and ID are donor-leakage and background corrected fluorescence emission of acceptor (Cy5) and donor (Cy3) fluorophores. In competition experiments, unlabeled DNA with the same sequence as labeled DNA was mixed at indicated concentrations with labeled DNA prior to imaging.\n\n### Dwell time analysis\n\nLong movies were collected with 50 msec exposure time for NcTALE8 and 100 msec exposure time for NcTALE16 and NcTALE16. At least 20 representative traces at each DNA concentration were selected and dwell times were determined by fitting as previously described using HaMMy (McKinney et al., 2006) for FRET in NcTALE8. Dwell times in NcTALE12 and NcTALE16 colocalization experiments are determined by using a thresholding procedure for Cy5 excitation (Figure 5\u2014figure supplement 1). The algorithm used to identify low and high emission states here is slightly different than previously described thresholding algorithms (Blanco and Walter, 2010). To reduce the number of incorrectly identified transitions arising from increased background and noise at higher Cy5-labeled DNA concentrations, a thresholding algorithm with two limits was implemented (see Figure 5\u2014figure supplement 1). All FRET and colocalization data are well described by models with two distinct states (0.0 FRET and\u00a0~0.45 FRET as well as low colocalization and high colocalization). Dwell times of the same state (low versus high FRET or low versus high colocalization) for all traces at a given DNA concentration are compiled, and cumulative distribution is generated with spacing equal to imaging exposure time.\n\nTo determine apparent rate constants using model-independent analysis, cumulative distributions were fitted with single and double exponential decays (Figures 3 and 4). Observed rates from exponential decay fits were plotted as a function of DNA concentration. Apparent rate constants were calculated as slope of DNA concentration-dependent observed rates or average of DNA concentration-independent observed rates.\n\n### Deterministic modeling\n\nEquations 1a-1c and 2a-2c were numerically integrated using the ODE15s and ODE45 solver in MATLAB. Microscopic rate constants were adjusted to minimize the sum of squared residuals between ODE-determined concentration of bound or free TALE and single molecule cumulative distributions using lsqnonlin in MATLAB. 68% confidence intervals were estimated by performing 2000 or 8000 bootstrap iterations in which residuals from the best fit of the model to the data were randomly re-sampled (with replacement) and re-fitted. All scripts and source data required to run this MATLAB program called Determinstic Modeling for Analysis of complex Single molecule Kinetics (DeMASK) are publicly available on GitHub at https://github.com/kgeigers/DeMASK\u00a0(Geiger-Schuller, 2019; copy archived at https://github.com/elifesciences-publications/DeMASK).\n",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "d9681fa6-44fb-4a58-9e32-de3da0431434",
+      "submission_id": "b026e75d-ec13-450d-aebe-1c16864eb007",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antoine M van Oijen, University of Wollongong Australia\n\nReviewers:\n- Adam J Bogdanove, Cornell University United States\n\n## Review text\n\nDOI: [10.7554/eLife.38298.030](https://doi.org/10.7554/eLife.38298.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Functional instability allows access to DNA in longer Transcription Activator-Like Effector (TALE) arrays\" for consideration by eLife. Your article has been reviewed by John Kuriyan as the Senior Editor, a Reviewing Editor, and two reviewers. The following individual involved in review of your submission has agreed to reveal his identity: Adam J Bogdanove.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. While the reviewers are positive about the relevance of the problem and the potential importance of the results in understanding how partially folded states help TALE binding, they raise a number of significant concerns. Each of these concerns can be addressed by performing additional experiments.\n\nSummary:\n\nIn this manuscript, the authors use a combination of single-molecule FRET experiments and modeling to study the kinetics of DNA binding for TALE constructs containing different length repeat sequences (8, 12, 16 repeats). The main results include evidence of conformational heterogeneity of the DNA-bound state for TALE proteins, together with the development of a kinetic model that explains the role of different interconvertible binding-competent and binding-incompetent states in DNA binding and how the largely fully folded protein must undergo a local unfolding transition to bind DNA. The experimental approach and the modeling are elegant and widely applicable and therefore likely of broad interest.\n\nEssential revisions:\n\n1) By using a homopolymeric cTALE (all NS) and a homopolymeric substrate (all A on one strand and all T on the other), the experimental design provides no anchor for register. As an alternative to the hypothesis presented in Figure 6, it is possible that the partially bound (\"encounter\") state inferred by the authors is due to entry somewhere in the middle of the DNA, resulting in some corresponding C-terminal number of repeats \"hanging off\" the end (or to the side). In such a scenario, couldn't the slower transition of the longer cTALEs to the \"locked\" (fully bound) state (the bound state isomerization, subsection \u201cA deterministic approach to modeling cTALE-DNA binding kinetics\u201d) be the result of the longer time need to slide 5' along the DNA to allow the C-terminal repeats to hop or fold on (or could the \"loose\" end be contributing energy toward dissociation, or some combination)? The authors should repeat the experiments using some type of anchor for register. TALEs have a strong preference for T at position -1 in the binding site, dictated by the N-terminal cryptic repeats, and these repeats provide much of the binding energy. Indeed, they are theorized to nucleate the protein-DNA interaction. Incorporating a T at the beginning of the polyA sequence should do the trick, but for good measure, it wouldn't hurt to also incorporate a few different, specific RVDs and corresponding bases early in the arrays. Based on the available structures, RVDs do not appear to differentially impact the inter-repeat interfaces.\n\nPerhaps related to the potential problem of no anchor, it is surprising that the 16 repeat cTALEs do not have significantly higher affinity than the 8 repeat cTALE and that the relationship between length and the bimolecular microscopic binding and unbinding constants is not linear (subsection \u201cA deterministic approach to modeling cTALE-DNA binding kinetics\u201d). Rinaldi et al., showed that increasing numbers of repeats increases affinity for target DNA but that the gain in affinity with more repeats decays exponentially (they observed that affinity for non-specific DNA increases as well, but with a slower rate of decay of gain). Despite the decrease in the rate of gain, one would still expect to see higher affinity for the 12 and 16 repeat cTALEs relative to the 8. Is it possible that, unanchored, cTALE-DNA interactions that do not span the length of the array are confounding the results observed by the authors? The authors surmise based on the estimated distance between the fluorophores (Figure 4\u2014figure supplement 3) that the absence of FRET using the 16 repeat TALE is due to its binding the 'A' sense strand rather than the 'T' sense strand, and they are correct in observing that NS prefers A to T, but NS can bind T (Miller et al., 2015), so it is unclear whether some population of the protein is wrapped in the other direction, using one of the T's as its position -1. As above, the authors should address this possibility in their discussion or with an anchored setup.\n\n2) Single molecule FRET experiments are performed by surface tethering the C-terminus of the repeat region to a solid surface. A major finding of the paper is the TALEs exhibit conformational heterogeneity during dynamics. With the protein immobilized, there is a concern that the surface tethering affects conformational changes and kinetics during these dynamic processes. A critical control experiment is to have the DNA anchored to the surface and the protein free in solution.\n\n3) Most/all of the experiments reported conditions of monovalent salt. Did the authors include any divalent salt in solution during any of the experiments? It would seem that in vivo conditions would include some amount of divalents. The main point is that all of the kinetic parameters were determined with monovalent salts only.\n\n4) FRET was observed for the Cy3-labeled TALE with an 8-repeat sequence, but not for the 12 and 16-repeat TALEs. Why? This is not clear from the paper. How did the authors decide on the location of dye labeling for the TALE proteins? The structure shown in Figure 4\u2014figure supplement 3 (as best as I can tell) suggests that FRET should be possible for the larger TALE constructs. Second, the 8 and 12 repeat TALEs were labeled at the first repeat, whereas the 16 repeat TALE was labeled at the 14th repeat. What is the rationale for this labeling strategy? Clearly labeling location will affect the absence or presence of FRET, and it is unclear that this was studied in a systematic manner.\n\n5) Only the 8 repeat TALE exhibited FRET, whereas the 12 and 16 repeat TALEs did not. For the 8-repeat TALE, a transition to low FRET is interpreted as \"likely an unbinding event\". However, no FRET is then observed for the 12 and 16 repeat TALEs, so the co-localization method is used. The main point here is that the interpretation of FRET (or acceptor signal) does not seem to be uniform between the different constructs in terms of the actual structural information or dynamics. For example, does this mean that the low FRET state in the 8-repeat TALE is fundamentally different than no FRET in the 12 and 16-repeat sequences? This is related to the next point (6).\n\n6) In drawing schematics such as that shown in Figure 6, and in using the FRET (or localization data) to extract rate constants from the kinetic model, the authors rely on a large amount of speculation about the underlying dynamics and structure (or hypothesis). In this particular case, the behavior in the schematic (Figure 6) does not appear (in my opinion) to be solidly supported by the experimental data presented in the paper. It is largely speculative, and as the authors admit in the Discussion section \"such [experimental/computational] analysis provides little information about the structural nature of TALE conformational heterogeneity\". How can we directly attribute different kinetic states to partially folded (or not) TALE proteins? Bottom line is that the ideas in the schematic are interesting and potentially novel (and significant), but too preliminary to be proposed based on the experimental data.\n\n7) In the Introduction, the authors refer to 'partly folded or broken states' without sufficient explanation. These ideas are drawn heavily upon in the paper, but they need more clear explanation. Moreover, are the concepts in Figure 1 presented as new results and findings for this paper, or are they presented as prior results? In either case, more explanation is needed. How are \u03b4 G values determined?\n",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f596cb7c-b34d-4abe-8c07-b5cf54d26e9c",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C1",
+      "claim": "Transcription activator-like effectors (TALEs) bind DNA through an array of tandem 34-residue repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription activator-like effectors (TALEs) bind DNA through an array of tandem 34-residue repeats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental structural characteristic of TALEs stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "edfeabdf-346d-4949-be97-b022948e9795",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C2",
+      "claim": "TALE repeat domains wrap around DNA in a continuous superhelix of 11.5 TALE repeats per turn.",
+      "claim_type": "EXPLICIT",
+      "source": "TALE repeat domains wrap around DNA in a continuous superhelix of 11.5 TALE repeats per turn (Deng et al., 2012; Mak et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "8d9f4c88-b945-4c59-bc0c-d1549978003b",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C3",
+      "claim": "Most TALEs form over 1.5 full turns around DNA because they contain on average 17.5 repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Because TALEs contain on average 17.5 repeats (Boch and Bonas, 2010), most form over 1.5 full turns around DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on cited data about average repeat number and the known superhelix geometry.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "1861f58d-b0ff-4250-8092-0b3db61a1f34",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C4",
+      "claim": "TALEs are capable of wrapping around DNA without energy from nucleotide triphosphate hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Many multisubunit proteins that form rings around DNA require energy in the form of ATP to open or close around DNA (reviewed in O'Donnell and Kuriyan, 2006), yet TALEs are capable of wrapping around DNA without energy from nucleotide triphosphate hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim contrasts TALEs with other DNA-binding proteins and is supported by citation and the observation that TALEs lack ATPase activity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "c9fcdec5-6cd2-4c83-884c-724ba4712e47",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C5",
+      "claim": "TALE arrays can populate partly folded and broken states.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, we previously demonstrated that TALE arrays can populate partly folded and broken states (Geiger-Schuller and Barrick, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "e50e1c27-aa85-4212-b4fd-6cee19bcb13b",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C6",
+      "claim": "TALE partly folded states include 'end-frayed', 'internally unfolded', and 'interfacially fractured' states.",
+      "claim_type": "EXPLICIT",
+      "source": "By measuring the length-dependence of protein stability and employing a statistical mechanics Ising model, we previously described several different TALE partly folded states termed 'end-frayed', 'internally unfolded', and 'interfacially fractured' states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes specific conformational states identified through modeling in previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "c88d58b0-6f9b-497d-89b7-5c0dd92e05bf",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C7",
+      "claim": "Populations of partly folded states in TALE repeat arrays are many orders of magnitude larger than in other previously studied repeat arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the calculated populations of partly folded states in TALE repeat arrays are small, they are many orders of magnitude larger than populations of partly folded states in other previously studied repeat arrays (consensus ankyrin [Aksel et al., 2011] and DHR proteins [Geiger-Schuller et al., 2018]) suggesting a potential functional role for the high populations of partially folded states in TALE repeat arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim compares TALE arrays to other repeat proteins based on calculations and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "765c180f-d253-48b9-91ca-bcaabe1fd145",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C8",
+      "claim": "Consensus TALEs (cTALEs) are designed homopolymeric arrays composed of the most commonly observed residue at each of the 34 positions of the repeat.",
+      "claim_type": "EXPLICIT",
+      "source": "Consensus TALEs (cTALEs) are designed homopolymeric arrays composed of the most commonly observed residue at each of the 34 positions of the repeat (Geiger-Schuller and Barrick, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design principle for the consensus TALE constructs used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "f7ca2bc8-84d2-4c73-9b95-bae8210522b0",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C9",
+      "claim": "Consensus TALE arrays bind to DNA reversibly with high affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we characterize DNA binding kinetics of cTALEs using total internal reflection fluorescence single-molecule microscopy. We find that consensus TALE arrays bind to DNA reversibly, with high affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the single-molecule experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "a58d0471-a804-4c72-a469-bcbaf4f5a938",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C10",
+      "claim": "Analysis of dwell-times reveals multiphasic binding and unbinding kinetics for cTALE-DNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the dwell-times of the on- and off-states reveals multiphasic binding and unbinding kinetics, suggesting conformational heterogeneity in both the free and DNA bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the kinetic analysis of single-molecule data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "2d5036a2-d0f9-43b8-ac40-6d21f254fc88",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C11",
+      "claim": "cTALE-DNA binding and unbinding kinetics suggest conformational heterogeneity in both the free and DNA-bound states.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the dwell-times of the on- and off-states reveals multiphasic binding and unbinding kinetics, suggesting conformational heterogeneity in both the free and DNA bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the multiphasic kinetics observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "ab42d9af-3895-4d06-a061-90168c009f86",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C12",
+      "claim": "For cTALEs forming less than one superhelical turn around DNA, partly folded states inhibit DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "For TALEs forming less than one superhelical turn around DNA, partly folded states inhibit DNA binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from comparing kinetics of different length TALE arrays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "24ef6198-dd7d-4630-9fd1-9b11047630df",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C13",
+      "claim": "For cTALEs forming more than one turn around DNA, partly folded states facilitate DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for TALEs forming more than one turn, partly folded states facilitate DNA binding, demonstrating a mode of 'functional instability' that facilitates macromolecular assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion from comparing kinetics of different length TALE arrays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "f4ed1101-203d-4ac1-91a2-bccd07b87109",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C14",
+      "claim": "Increasing repeat number slows down interconversion between the various DNA-free and DNA-bound states.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing repeat number slows down interconversion between the various DNA-free and DNA-bound states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from comparing kinetics of 8, 12, and 16 repeat arrays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "6957dc5c-75e5-4949-a104-b8e23c80d91c",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C15",
+      "claim": "TALEs contain a domain of tandem DNA-binding repeats and a eukaryotic transcriptional activation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription activator-like effectors (TALEs) are bacterial proteins containing a domain of tandem DNA-binding repeats as well as a eukaryotic transcriptional activation domain (Kay et al., 2007; R\u00f6mer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the basic structure of TALE proteins and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "25bd38ee-6ee7-4638-9b28-013a612a4fbc",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C16",
+      "claim": "The repeat domain binds double stranded DNA with a register of one repeat per base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "The repeat domain binds double stranded DNA with a register of one repeat per base pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the binding stoichiometry of TALE repeats to DNA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "5ad20e71-d85c-46ee-bf49-5a9fb87d237e",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C17",
+      "claim": "Specificity of TALE-DNA binding is determined by the sequence identity at positions twelve and thirteen in each TALE repeat (RVDs).",
+      "claim_type": "EXPLICIT",
+      "source": "Specificity is determined by the sequence identity at positions twelve and thirteen in each TALE repeat, which are referred to as repeat variable diresidues (RVDs) (Boch et al., 2009; Miller et al., 2015; Moscou and Bogdanove, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular basis for TALE DNA specificity and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "1bbf2496-cf8e-4922-ad93-3de1d59ea0b3",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C18",
+      "claim": "The TALE specificity code has enabled design of TALE-based tools for transcriptional control.",
+      "claim_type": "EXPLICIT",
+      "source": "This specificity code has enabled design of TALE-based tools for transcriptional control (Cong et al., 2012; Geissler et al., 2011; Li et al., 2012; Mahfouz et al., 2012; Morbitzer et al., 2010; Zhang et al., 2011), DNA modifications (Maeder et al., 2013), in-cell microscopy (Ma et al., 2013; Miyanari et al., 2013), and genome editing (TALENs) (Christian et al., 2010; Li et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes applications of TALEs and is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "f5bffb4b-858f-48e9-8bdf-5a7aa4af9cce",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C19",
+      "claim": "The N-terminal extension of the PthXo1 gene closely mimics four TALE repeats structurally.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sequence of this domain shows little similarity to TALE repeat sequences, the structure of this domain closely mimics four TALE repeats (Gao et al., 2012; Mak et al., 2012) and is required for binding and full transcriptional activation (Gao et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural observation is supported by citations to crystal structure studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "e0b86e84-6d19-4474-9cff-1a1199dbdc14",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C20",
+      "claim": "The N-terminal domain is required for TALE binding and full transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the sequence of this domain shows little similarity to TALE repeat sequences, the structure of this domain closely mimics four TALE repeats (Gao et al., 2012; Mak et al., 2012) and is required for binding and full transcriptional activation (Gao et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional requirement is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "738bcab6-e651-4691-af15-0e2d32071bb5",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C21",
+      "claim": "For cTALE arrays, end frayed states are within a few kBT of the folded state.",
+      "claim_type": "EXPLICIT",
+      "source": "For cTALE arrays, end frayed states are within a few kBT of the folded state, internally unfolded states are highest in energy, and interfacially ruptured states fall energetically between end frayed and internally unfolded states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculations using the Ising model and previously determined energetic parameters, as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "cd998daf-69e0-4bfa-872c-6e8d8d265907",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C22",
+      "claim": "For cTALE arrays, internally unfolded states are highest in energy.",
+      "claim_type": "EXPLICIT",
+      "source": "For cTALE arrays, end frayed states are within a few kBT of the folded state, internally unfolded states are highest in energy, and interfacially ruptured states fall energetically between end frayed and internally unfolded states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculations using the Ising model and previously determined energetic parameters, as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "290f080d-1465-48dc-bf71-2252f112ff8c",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C23",
+      "claim": "For cTALE arrays, interfacially ruptured states fall energetically between end frayed and internally unfolded states.",
+      "claim_type": "EXPLICIT",
+      "source": "For cTALE arrays, end frayed states are within a few kBT of the folded state, internally unfolded states are highest in energy, and interfacially ruptured states fall energetically between end frayed and internally unfolded states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculations using the Ising model and previously determined energetic parameters, as shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "f6f70167-ed27-403f-b551-1325e609d752",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C24",
+      "claim": "Arrays containing HD repeats are more likely to internally unfold or interfacially rupture than arrays containing NS repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Changing the RVD sequence affects the distribution of these partly folded states: arrays containing HD repeats are more likely to internally unfold or interfacially rupture than arrays containing NS repeats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculations shown in Figure 1B comparing different RVD sequences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "73122982-ea25-45a8-af3f-8b500e280373",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C25",
+      "claim": "Both types of cTALEs are more likely to populate partly folded states than consensus ankyrin repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both types of cTALEs are more likely to populate many of these partly folded states than cAnk is to populate even the lowest energy partly folded state, the end frayed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is based on calculations shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "0f71df06-b513-4597-a8ac-9873dae5d578",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C26",
+      "claim": "Compared to ankyrin repeats, cTALEs are locally unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, compared to ankyrin repeats, cTALEs are locally unstable, meaning they are likely to form partly folded states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of calculated partly folded state populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "fb56d202-c8b2-467d-a650-316bec6ee7e5",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C27",
+      "claim": "At salt concentrations below 300 mM NaCl, cTALEs aggregate.",
+      "claim_type": "EXPLICIT",
+      "source": "At salt concentrations below 300 mM NaCl, cTALEs aggregate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation that motivated the tethering approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "ee06b119-bb0c-4c7e-99a1-e1afc97f3df2",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C28",
+      "claim": "Tethering cTALEs to the quartz slide at high salt prevents self-association even at low salt concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, tethering cTALEs to the quartz slide at high salt prevents self-association, even at the low salt concentrations required to study DNA binding kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental strategy used to overcome aggregation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "2e57545d-0658-45e1-85c4-5bbd3f873315",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C29",
+      "claim": "NcTALE8 labeled via a cysteine in the first repeat shows a single peak at zero FRET efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "A histogram of NcTALE8 (8 NS-type repeats and the N-terminal domain) labeled via a cysteine in the first repeat shows a single peak at zero FRET efficiency, as expected for donor-only constructs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "40f18144-7a41-4c5c-b4e5-374c328013e1",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C30",
+      "claim": "Addition of Cy5-labeled DNA to tethered NcTALE8 results in a new peak at a FRET efficiency of 0.45.",
+      "claim_type": "EXPLICIT",
+      "source": "To test for DNA binding to tethered cTALE constructs, we added 5'-Cy5 (FRET acceptor)-labeled 15 bp-long DNA (Cy5.A15/T15) to tethered NcTALE8. This results in a new peak at a FRET efficiency of 0.45, indicating that DNA binds directly to cTALE arrays.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 2C-D indicating DNA binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "b54f8596-0da9-4e51-acf9-7d5b44275dc9",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C31",
+      "claim": "The peak at 0.45 FRET efficiency increases in population as DNA concentration in solution is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "As DNA concentration in solution is increased, the peak at 0.45 FRET efficiency increases in population (Figure 2C\u2013D), suggesting a measurable equilibrium between free and bound DNA rather than saturation or irreversible binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "51be50b6-e24d-4024-9ee8-2c90979d3e82",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C32",
+      "claim": "Single molecule time trajectories show interconversion between bound and unbound states.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, single molecule time trajectories show interconversion between bound and unbound states, providing access to rates of binding and dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from single-molecule traces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "4e2dd376-20ff-46ec-b7fb-17ce0366b381",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C33",
+      "claim": "The peak at 0.45 FRET efficiency can be competed away by adding mixtures of labeled and unlabeled DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for reversible complex formation, the peak at 0.45 FRET efficiency can be competed away by adding mixtures of labeled and unlabeled DNA to pre-formed cTALE-labelled DNA complexes (schematic shown in Figure 2E; pre-formed complex shown in Figure 2F, competition data shown in Figure 2G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 2E-H demonstrating reversible binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "9cb0d56f-a33b-4f30-9ab0-4e8a71504ec9",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C34",
+      "claim": "Tethering of cTALE arrays does not significantly impact DNA binding based on comparison with tethered DNA experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These FRET distributions are similar to those obtained from tethering cTALEs to the surface and adding free dsDNA, suggesting that the interaction of cTALE arrays with dsDNA is not significantly impacted by surface immobilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing two experimental configurations shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "0748f21e-7821-4133-8983-3e870dd2a37c",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C35",
+      "claim": "cTALE arrays display both long- and short-lived low- and high-FRET states.",
+      "claim_type": "EXPLICIT",
+      "source": "These long single molecule traces show both long- and short-lived low- and high-FRET states, indicating that kinetics are multi-phasic (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from single-molecule traces shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "e6916fbd-5f12-444d-83bc-d47b653b192f",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C36",
+      "claim": "Binding events become more frequent as bulk DNA concentration increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding events (transitions from low to high FRET) become more frequent as bulk DNA concentration increases (compare representative traces at 1 nM dsDNA to 15 nM dsDNA; Figure 3A and Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from comparing traces at different DNA concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "0f60159f-cb37-4612-9957-63cd929c4b3c",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C37",
+      "claim": "Cumulative distributions of low FRET dwell times are best-fit by a double-exponential decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Cumulative distributions generated from dwell times in the low FRET state at a given DNA concentration are best-fit by a double-exponential decay, indicating a minimum of two kinetic phases associated with binding events (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "d91d1cb5-1cc6-40ea-b2c6-07138bea9183",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C38",
+      "claim": "Cumulative distributions of high FRET dwell times are best-fit by a double-exponential decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Cumulative distributions generated from dwell times in the high FRET state are also best-fit by a double-exponential decay, indicating that there are a minimum of two kinetic phases for unbinding as well (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "a0e19e33-f6d3-49fc-b70f-6149bf95eae4",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C39",
+      "claim": "The apparent rate constant for the fast phase of DNA binding depends on DNA concentration, indicating a bimolecular binding event.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate constant for the fast phase in DNA binding shows a linear increase with DNA concentration (Figure 3E), indicating that this step involves an associative binding mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from kinetic analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "8af39ba7-9411-4b29-bdf7-cab7e212136f",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C40",
+      "claim": "The bimolecular rate constant for the fast phase of NcTALE8 binding is 5.9 \u00d7 10^8 nM^-1s^-1, close to the diffusion limit.",
+      "claim_type": "EXPLICIT",
+      "source": "The slope of the rate constant for the fast phase as a function of DNA concentration gives a bimolecular rate constant of 5.9 \u00d7 108 nM\u22121s\u22121, close to the diffusion limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value from the slope of the data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "2d37ea19-94e3-4be7-8a5d-06e9fd242188",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C41",
+      "claim": "The rate constant for the slower phase of DNA binding (0.14 s^-1) is independent of DNA concentration, indicating a unimolecular isomerization mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate constant for the slower phase (0.14 s\u22121) is independent of DNA concentration indicating a unimolecular isomerization mechanism (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from kinetic analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "dfd224c1-c432-4997-8aba-3ac94cbb2497",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C42",
+      "claim": "Neither of the two fitted rate constants for transitions from high to low FRET depends on DNA concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neither of the two fitted rate constants for transitions from high to low FRET (0.45 to 0.0; unbinding events) depends on DNA concentration, suggesting that unbinding involves two (or more) unimolecular processes (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from kinetic analysis shown in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "77fc7e64-59ce-49e7-9797-027e984ac423",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C43",
+      "claim": "The rate constants of the two unbinding phases are 1.2 s^-1 and 0.13 s^-1 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate constants of these two phases are 1.2 s\u22121 and 0.13 s\u22121 respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are values determined from fitting analysis of unbinding kinetics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "460df360-eb9c-4cc2-a7f1-c4379c1cc8a6",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C44",
+      "claim": "Low and high FRET dwell time cumulative distributions for capped DNA-binding kinetics are bi-phasic, similar to distributions from uncapped DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Low and high FRET dwell time cumulative distributions generated from capped DNA-binding kinetics are bi-phasic, similar to distributions from uncapped DNA (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from experiments with capped DNA shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "b1720b80-59c8-4d57-b043-5e9125f6581e",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C45",
+      "claim": "The DNA concentration-independent rate constant for binding is roughly the same for capped DNA as for uncapped DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA concentration-independent rate constant for binding is roughly the same for capped DNA as for uncapped DNA (compare FRETL\u2192H red and blue triangles in Figure 3\u2014figure supplement 2), as are the dissociation rate constants (compare FRETH\u2192L red and blue triangles in as well as FRETH\u2192L red and blue circles in Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of rate constants from capped and uncapped DNA experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "c4d8b977-23c4-4345-a69d-05534311b24a",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C46",
+      "claim": "The rate constant for bimolecular binding of capped DNA decreases compared to that for uncapped DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate constant for bimolecular binding of capped DNA decreases compared to that for uncapped DNA (compare FRETL\u2192H red and blue circles in Figure 3\u2014figure supplement 2), which is consistent with the expected decrease in the rate of diffusion of the larger capped DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of rate constants from capped and uncapped DNA experiments with an interpretation based on diffusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "5a65655d-4317-4e0a-9784-c75d3c442474",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C47",
+      "claim": "The estimated diffusion coefficient of capped DNA (320 kDa total) is 4.7 \u00d7 10^-7 cm^2s^-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Including the two antibodies bound on the ends of capped DNA (320 kDa total) gives an estimated diffusion coefficient of 4.7 \u00d7 10\u22127 cm2s\u22121, which is much lower than the estimated diffusion coefficient of the uncapped DNA (1.5 \u00d7 10\u22126 cm2s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value using the Sednterp program.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "eba91236-53e4-40b3-9d37-454f35816742",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C48",
+      "claim": "The estimated diffusion coefficient of uncapped DNA is 1.5 \u00d7 10^-6 cm^2s^-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Including the two antibodies bound on the ends of capped DNA (320 kDa total) gives an estimated diffusion coefficient of 4.7 \u00d7 10\u22127 cm2s\u22121, which is much lower than the estimated diffusion coefficient of the uncapped DNA (1.5 \u00d7 10\u22126 cm2s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value using the Sednterp program.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "024c2037-e277-4f6a-9a53-caebc66efd78",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C49",
+      "claim": "The ~3.6 fold decrease in the diffusion constant for capped DNA is similar to the 6.7-fold decrease in the bimolecular rate constant for binding of capped DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This ~3.6 fold decrease in the diffusion constant for capped DNA is similar to the 6.7-fold decrease in the bimolecular rate constant for binding of capped DNA (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of calculated and measured values to support the diffusion-limited binding interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "ac7e054b-d7c6-4584-b588-006efc740b34",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C50",
+      "claim": "The addition of a 5' T to the binding sequence (T-anchored binding site) greatly enhances TALE binding activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies indicate that the addition of a 5' T to the binding sequence, referred to as a T-anchored binding site, greatly enhances TALE binding activity (Boch et al., 2009) depending also on the presence of certain RVDs and degree of mismatch relative to cognate DNA (Schreiber and Bonas, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on previous literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "3f04e46a-0db3-4a48-8b74-d49e092fa32a",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C51",
+      "claim": "T-anchored DNA (Cy5.TA14/T14A) binding to NcTALE8 results in a peak at a FRET efficiency of 0.55.",
+      "claim_type": "EXPLICIT",
+      "source": "To monitor kinetics with a T-anchored DNA, we added Cy5-labeled 15 bp-long DNA (Cy5.TA14/T14A) to tethered NcTALE8. Similar to the homopolymeric DNA (Cy5.A15/T15), this results in a peak at a FRET efficiency of 0.55, which increases with increasing DNA concentration (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "308e462f-ad54-4e85-b2de-0bb9063ee66b",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C52",
+      "claim": "T-anchored DNA binding shows both long- and short-lived low-FRET states, consistent with multiphasic binding kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "As with A15/T15 DNA, these long single molecule traces show both long- and short-lived low-FRET states, consistent with multiphasic binding kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from single-molecule traces with T-anchored DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "fb2e9435-6026-4bd2-838e-2f52e0cb4de7",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C53",
+      "claim": "Dissociation of T-anchored DNA only shows long-lived high-FRET states, suggesting a single kinetic phase for unbinding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, dissociation of T-anchored DNA only shows long-lived high-FRET states, suggesting a single kinetic phase for unbinding (Figure 4A\u2013B) and cumulative distributions generated from dwell times in the high FRET state are well-fitted by a single-exponential decay (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation and fitting result shown in Figure 4A-B and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "e1b600a0-7343-4ec4-a14c-505a72fb4d77",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C54",
+      "claim": "The bimolecular rate constant for T-anchored DNA binding (3.9 \u00d7 10^8 nM^-1s^-1) is close to the diffusion limit.",
+      "claim_type": "EXPLICIT",
+      "source": "The bimolecular rate constant for this phase (3.9 \u00d7 108 nM\u22121s\u22121) is close to the diffusion limit, as was seen for homopolymeric DNA (5.9 \u00d7 108 nM\u22121s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value from the slope of the data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "7eb2ec54-3292-48c0-982a-3558b35b19da",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C55",
+      "claim": "The rate constant for the slower phase of T-anchored DNA binding (0.34 s^-1) is similar to the homopolymeric DNA rate constant (0.14 s^-1).",
+      "claim_type": "EXPLICIT",
+      "source": "The rate constant for the slower phase (0.34 s\u22121) is also similar to the homopolymeric DNA rate constant for the slower phase (0.14 s\u22121, Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of rate constants from different DNA sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "8be0934b-baba-4994-a186-751cbd4babd8",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C56",
+      "claim": "The large effect of T-anchor on unbinding kinetics supports the idea that bound-state heterogeneity results from variation in the registry between the cTALE array and the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Either way, the large effect of T-anchor on unbinding kinetics supports the idea that bound-state heterogeneity results from variation in the the registry between the cTALE array and the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the differences in unbinding kinetics between homopolymeric and T-anchored DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "b4d78ee3-638a-4ba4-9d69-4e019923c857",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C57",
+      "claim": "Increasing the number of cTALE repeats from 8 to 12 and 16 dramatically affects DNA binding kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the number of cTALE repeats from 8 to 12 and 16 dramatically affects DNA binding kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from comparing kinetics of different length arrays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "819cf048-7be2-4927-bc6c-b9385d179f99",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C58",
+      "claim": "Long movies of NcTALE12 and NcTALE16 show short- and long-lived Cy5 signal on and off states, indicating kinetic heterogeneity similar to NcTALE8.",
+      "claim_type": "EXPLICIT",
+      "source": "Long movies collected over a range of DNA concentrations show short- and long-lived Cy5 signal on and off states, indicating a level of kinetic heterogeneity similar to NcTALE8 (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from colocalization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "66c0d0c5-c251-45bd-9109-94ba650ac568",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C59",
+      "claim": "Unbound cumulative distributions for longer TALE arrays are best-fit by double exponential decays, particularly at high DNA concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the eight repeat constructs, unbound cumulative distributions for these longer TALE arrays are best-fit by double exponential decays, particularly at high DNA concentrations (compare the cumulative distribution at low DNA concentration, Figure 5\u2014figure supplement 2A, to cumulative distribution at 5 nM DNA, Figure 5\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting analysis shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "1628b2a2-95d6-4014-a4c2-25537c8051af",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C60",
+      "claim": "Bound cumulative distributions for longer TALE arrays are best-fit by double exponential decays.",
+      "claim_type": "EXPLICIT",
+      "source": "Bound cumulative distributions for longer TALE arrays are best-fit by double exponential decays (Figure 5\u2014figure supplement 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting analysis shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "05423033-3911-4834-97dc-47c7cf5ae88d",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C61",
+      "claim": "All apparent rate constants are much smaller for NcTALE16 and NcTALE12 compared to NcTALE8.",
+      "claim_type": "EXPLICIT",
+      "source": "All apparent rate constants are much smaller for NcTALE16 and NcTALE12 (green/black circles and triangles, Figure 5A\u2013B) compared to NcTALE8, indicating that binding and unbinding is impeded by increasing the length of the binding surface between cTALEs and their cognate DNA (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of rate constants shown in Figure 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "c4db56b0-dd5a-46cc-9ffa-9d1dc061b3bc",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C62",
+      "claim": "Differences in binding kinetics between short and longer cTALEs are not due to differences in colocalization and FRET assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in FRET and colocalization signals occurred simultaneously according to single molecule time traces, showing that differences in binding and unbinding kinetics of short and longer cTALEs are not due to differences in colocalization and FRET assays (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a control experiment shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "35d2219a-fc83-4088-99fe-970c0cda2f3c",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C63",
+      "claim": "The model most consistent with the data has two unbound DNA-free states and two DNA-bound states.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the various models tested, the model that is most consistent with the data has two unbound DNA-free states and two DNA-bound states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from deterministic modeling analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "6c77d77a-1565-4f42-9174-4f61a6762086",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C64",
+      "claim": "The four-state model includes a TALE isomerization step in the absence of DNA from a DNA-binding incompetent conformation (TALE) to DNA-binding competent conformation (TALE*).",
+      "claim_type": "EXPLICIT",
+      "source": "This four-state model includes a TALE isomerization step in the absence of DNA from a DNA-binding incompetent conformation (which we refer to as TALE) to DNA-binding competent conformation (which we refer to as TALE*).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the kinetic model developed from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "836ffc5c-0d00-483f-9f14-c6d2a3df8dd3",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C65",
+      "claim": "Before unbinding, a fraction of TALE*~DNA isomerizes to a longer-lived DNA-bound state called TALE\u2021~DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Before unbinding, a fraction of TALE*~DNA isomerizes to a longer-lived DNA-bound state called TALE\u2021~DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the kinetic model developed from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "a20b907b-4225-4fbc-9961-b9efe255907a",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C66",
+      "claim": "Fitted curves from the deterministic model reproduce the experimental cumulative distributions for binding and unbinding for both short and long cTALE arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitted curves reproduce the experimental cumulative distributions for binding and unbinding (Figure 6), both for the short and long cTALE arrays, with reasonably small residuals, over a range of DNA concentrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the deterministic modeling shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "857854f3-70fa-455e-8cce-2ed61a18a803",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C67",
+      "claim": "The bimolecular microscopic binding rate constant k2 is slightly larger for eight repeats (1.1 nM^-1s^-1) than for 12 and 16 repeats (0.31 and 0.39 nM^-1s^-1).",
+      "claim_type": "EXPLICIT",
+      "source": "The bimolecular microscopic binding rate constant, k2, is slightly larger for eight repeats than for 12 and 16 repeats (1.1, 0.31, and 0.39 nM\u22121s\u22121 for 8, 12, and 16 repeats respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of fitted rate constants from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "7412a979-ff68-4ce9-ac08-58be1b610c59",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C68",
+      "claim": "Microscopic unbinding rate constant k-2 is higher for eight repeat cTALEs (0.66 s^-1) than for 12 and 16 repeat cTALEs (0.13 and 0.299 s^-1).",
+      "claim_type": "EXPLICIT",
+      "source": "However, microscopic unbinding rate constant, k-2, is higher for eight repeat cTALEs (0.66 s\u22121 for NcTALE8 versus 0.13 s\u22121 for NcTALE12 and 0.299 s\u22121 for NcTALE16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of fitted rate constants from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "b6ead895-7e16-4199-a397-dc7692cfccf8",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C69",
+      "claim": "Bound state isomerization is 5\u201310 times slower for 16 and 12 repeat cTALEs than eight repeat cTALEs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, bound state isomerization (interconversion between TALE*~DNA and TALE\u2021~DNA) is 5\u201310 times slower for 16 and 12 repeat cTALEs than eight repeat cTALEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of fitted rate constants from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "fe658175-36d1-4213-93d4-2c09eac150d9",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C70",
+      "claim": "Keq, DNA-free is larger for cTALEs with eight repeats (1.32) than for cTALEs with 12 and 16 repeats (0.11 and 0.61).",
+      "claim_type": "EXPLICIT",
+      "source": "The value of Keq, DNA-free, which is a measure of the equilibrium proportion of the unbound TALE that is DNA-binding competent (TALE*) to that which is binding-incompetent (TALE), is larger for cTALEs with eight repeats (Keq, DNA-free = 1.32) than for cTALEs with 12 and 16 repeats (Keq, DNA-free = 0.11 and Keq, DNA-free = 0.61, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of fitted equilibrium constants from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "316d7a1c-9de7-4c39-8b41-9e1056b169eb",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C71",
+      "claim": "NS is an uncommon RVD in natural TALEs.",
+      "claim_type": "EXPLICIT",
+      "source": "NS is an uncommon RVD in natural TALEs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the natural occurrence of the NS RVD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "d61a45b1-1e17-498d-9763-013beb61c2d7",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C72",
+      "claim": "NS may bind DNA with higher affinity than other common RVDs (NG, NI, NN, and HD).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports suggest that NS is fairly nonspecific, but may bind with higher affinity than other common RVDs (NG, NI, NN, and HD) (Miller et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on previous literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "6bac8d5c-0115-4302-9265-68420c963d36",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C73",
+      "claim": "The apparent Kd for the eight repeat cTALE array is 2.5 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using fitted rate constants from Table 1 in the final equality in Equation 3 gives values for Kapp of 2.5 nM for the eight repeat cTALE array, 0.5 nM for the 12 repeat cTALE array, and 1.0 nM for the 16 repeat cTALE array.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value from fitted rate constants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "bfcc8dbd-135f-4654-bbd8-8c7d7bad6e73",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C74",
+      "claim": "The apparent Kd for the 12 repeat cTALE array is 0.5 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using fitted rate constants from Table 1 in the final equality in Equation 3 gives values for Kapp of 2.5 nM for the eight repeat cTALE array, 0.5 nM for the 12 repeat cTALE array, and 1.0 nM for the 16 repeat cTALE array.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value from fitted rate constants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "c97306ba-9df9-45ff-9dce-e52d1c5c086c",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C75",
+      "claim": "The apparent Kd for the 16 repeat cTALE array is 1.0 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Using fitted rate constants from Table 1 in the final equality in Equation 3 gives values for Kapp of 2.5 nM for the eight repeat cTALE array, 0.5 nM for the 12 repeat cTALE array, and 1.0 nM for the 16 repeat cTALE array.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated value from fitted rate constants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "c28a67e2-cc19-4af1-aed0-34f51bdd890c",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C76",
+      "claim": "Increasing the number of repeats from 8 to 12 repeats decreases the apparent Kd modestly, but further increasing from 12 to 16 repeats leaves the Kd unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the number of repeats from 8 to 12 repeats decreases the apparent Kd modestly, but further increasing from 12 to 16 repeats leaves the Kd unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of calculated Kd values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "4548c925-a54c-4d61-aa47-836e7ee79b93",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C77",
+      "claim": "TALEs are believed to read out sequence information from one strand.",
+      "claim_type": "EXPLICIT",
+      "source": "TALEs are believed to read out sequence information from one strand (Boch et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on previous literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "6c73e921-fcc1-4d91-a47b-248375735667",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C78",
+      "claim": "The observation that there is colocalization but no measurable FRET when NcTALE16 is bound to DNA suggests that cTALEs containing the NS RVD prefer adenine (the dA-sense mode) compared with thymine bases.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that there is colocalization but no measurable FRET when NcTALE16 is bound to DNA suggests that cTALEs containing the NS RVD prefer adenine (the dA-sense mode) compared with thymine bases, consistent with previous reports (Boch et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FRET and colocalization data combined with structural modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "4c0bedf9-ad3c-4163-9cab-5229ed8d34e6",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C79",
+      "claim": "For eight repeat cTALE arrays, the DNA-binding competent state is more highly populated than the DNA-binding incompetent state.",
+      "claim_type": "EXPLICIT",
+      "source": "For eight repeat cTALE arrays, the DNA-binding competent state is more highly populated than the DNA-binding incompetent state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the Keq, DNA-free value of 1.32 for NcTALE8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "18b2a194-20fc-401c-8682-72d9720e8637",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C80",
+      "claim": "For 12 and 16 repeat cTALE arrays, the DNA-binding incompetent state is more highly populated than the DNA-binding competent state.",
+      "claim_type": "EXPLICIT",
+      "source": "For 12 and 16 repeat cTALE arrays, the DNA-binding incompetent state is more highly populated than the DNA-binding competent state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the Keq, DNA-free values of 0.11 and 0.61 for NcTALE12 and NcTALE16.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "2871c67f-7444-4a07-9e63-5c2f58312d01",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C81",
+      "claim": "Increasing populations of partly folded states through addition of 1M urea and through entropy enhancing mutations decreases apparent binding rates of 8 repeat cTALEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this interpretation, increasing populations of partly folded states through addition of 1M urea and through entropy enhancing mutations decreases apparent binding rates of 8 repeat cTALEs (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "5b9a8baf-3bf8-4588-84f0-0268bf9cc071",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C82",
+      "claim": "The addition of a T-anchor to the binding DNA sequence substantially decreases the rate constant for conversion from register 1 to register 2 (k3, from 0.36 s^-1 to 0.06 s^-1).",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of a T-anchor to the binding DNA sequence substantially decreases the rate constant for conversion from register 1 to register 2 (k3, from 0.36 s\u22121 to 0.06 s\u22121, Figure 7\u2014figure supplement 2 and Table 2), and modestly decreases the rate constant for conversion from register 2 to register 1 (k-3, from 0.22 s\u22121 to 0.31 s\u22121).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of fitted rate constants from Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "8b171a3a-c6bf-4f82-b5dc-88f29a57e328",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C83",
+      "claim": "The T-anchor modestly decreases the unbinding rate constant (k-2, from 0.66 s^-1 to 0.48 s^-1).",
+      "claim_type": "EXPLICIT",
+      "source": "The T-anchor also modestly decreases the unbinding rate constant (k-2, from 0.66 s\u22121 to 0.48 s\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of fitted rate constants from Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "4626e011-23fc-4b2d-a427-e18bbe3f6b4b",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C84",
+      "claim": "With Mg2+, the unbinding rate constant is larger (k-2 = 1.28 s^-1 vs. 0.66 s^-1 with K+).",
+      "claim_type": "EXPLICIT",
+      "source": "With Mg2+, the unbinding rate constant is larger (k-2 = 1.28 s\u22121 vs. 0.66 s\u22121 with K+), as is the rate constant for conversion from register 2 to register 1 (k-3 = 1.40 s\u22121 vs. 0.222 s\u22121 with K+); Figure 7\u2014figure supplement 4 and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of fitted rate constants from Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "a251f08b-4fa9-4066-b905-03b66159e0a7",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C85",
+      "claim": "Microscopic rate constants for transition between the bound register 1 and register two states become much slower in 12 and 16 repeat cTALEs compared with eight repeat cTALEs.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1 shows that microscopic rate constants for transition between the bound register 1 and register two states become much slower in 12 and 16 repeat cTALEs compared with eight repeat cTALEs (k-3 and k3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of fitted rate constants from Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "b2f7e293-9d36-4eec-afc7-1daf90e24c23",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C86",
+      "claim": "The findings present a new mode of transcription factor binding where the major conformer in the unbound state is fully folded, requiring partial unfolding prior to binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results present a new mode of transcription factor binding where the major conformer in the unbound state is fully folded, requiring partial unfolding prior to binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "a33da536-7897-49f7-b0c2-feb29ee41ad3",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C87",
+      "claim": "The critical role of high energy partly folded states is an example of 'functional instability', in which formation of a functional complex is facilitated by partial disruption of native structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical role of such high energy partly folded states is an exciting example of 'functional instability', in which formation of a functional complex is impeded by the fully folded native state, and is instead facilitated by partial disruption of native structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the study introducing the concept of functional instability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "766db1fc-48db-4441-8b25-eacb3e16723b",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C88",
+      "claim": "The distance from C30 in the first repeat of NcTALE8 to the 5' base of the sense strand is 38.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance from C30 in the first repeat (the site of labelling in NcTALE8) to the 5' base of the sense strand (light grey) is 38.3 \u00c5; the distance to the 5' base of the antisense strand (dark grey) is 37.4 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the crystal structure model shown in Figure 5\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "98758de7-f220-49eb-9acc-f2e4d3c133ce",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C89",
+      "claim": "The distance from C30 in the first repeat of NcTALE8 to the 5' base of the antisense strand is 37.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance from C30 in the first repeat (the site of labelling in NcTALE8) to the 5' base of the sense strand (light grey) is 38.3 \u00c5; the distance to the 5' base of the antisense strand (dark grey) is 37.4 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the crystal structure model shown in Figure 5\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "0a57fe84-1fc6-4996-a227-7a7a8a674ac7",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C90",
+      "claim": "The distance from C30 in the fourteenth repeat of NcTALE16 to the 5' base of the sense strand is 72.9 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance from C30 in the fourteenth repeat (the site of labelling in NcTALE16) to the 5' base of the sense strand (light grey) is 72.9 \u00c5; the distance to the 5' base of the antisense strand (dark grey) is 25.1 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the crystal structure model shown in Figure 5\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "34da0b16-7426-4e50-b87d-d1e8370d35b5",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C91",
+      "claim": "The distance from C30 in the fourteenth repeat of NcTALE16 to the 5' base of the antisense strand is 25.1 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The distance from C30 in the fourteenth repeat (the site of labelling in NcTALE16) to the 5' base of the sense strand (light grey) is 72.9 \u00c5; the distance to the 5' base of the antisense strand (dark grey) is 25.1 \u00c5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement from the crystal structure model shown in Figure 5\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "00dbfe0d-3457-4095-97bd-90345bb1cef3",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C92",
+      "claim": "Position 30 is frequently a cysteine in naturally occurring TALEs.",
+      "claim_type": "EXPLICIT",
+      "source": "For site-specific cTALE labeling, R30 is mutated to cysteine in a single repeat. Position 30 is frequently a cysteine in naturally occurring TALEs (in earlier folding studies, arginine was chosen in the consensus sequence to avoid disulfide formation; Geiger-Schuller and Barrick, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about natural TALE sequences with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "3aa753f7-84e9-4745-b10d-06c52cc768fc",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "claim_id": "C93",
+      "claim": "Clau\u00df et al. (2017) have observed TALE dissociation rates that are non-monotonic with repeat number in live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Clau\u00df et al. (2017) have also observed TALE dissociation rates that are non-monotonic with repeat number in live cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on previous literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "addeeaea-dbc0-47d2-b503-a40cedb4f9ab",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TALEs are bacterial proteins with tandem DNA-binding repeats that wrap around DNA in a superhelix (11.5 repeats per turn), with most natural TALEs forming >1.5 turns. DNA specificity is determined by repeat variable diresidues (RVDs), and TALEs bind DNA without requiring ATP hydrolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C15-C17 describe well-established structural and functional properties of TALEs supported by multiple citations to prior work. Claim C4 contrasts TALEs with ATP-dependent DNA-binding proteins and is supported by the known absence of ATPase activity in TALEs. These are foundational background claims establishing the context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "ce14a1db-5e1f-440b-a2c4-7b21b96e31f2",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "cTALE arrays populate partly folded states (end-frayed, internally unfolded, and interfacially fractured) at significantly higher levels than other repeat proteins like consensus ankyrin. The energetic distribution of these states depends on RVD sequence, with cTALEs being locally unstable compared to ankyrin repeats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 cite previous work by the authors establishing partly folded states. Claims C21-C26 present calculations using an Ising model with previously determined parameters (Figure 1B), showing energy hierarchies and RVD-dependent distributions. The comparison to ankyrin repeats is quantitatively supported by the modeling, though the functional significance remains to be demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "500e0205-09ed-4c79-b8af-49772004beb2",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Consensus TALEs (cTALEs) are designed homopolymeric arrays with the most common residue at each position. All constructs include an N-terminal domain that structurally mimics four TALE repeats and is required for binding and transcriptional activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C19-C20, and C92 describe the design and composition of the cTALE constructs used in this study. These are supported by citations to previous work establishing the consensus sequence design and the structural/functional importance of the N-terminal domain. The labeling strategy (C92) is justified by natural TALE sequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "7c0008f7-7d55-4001-a774-bc37bae042ca",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single-molecule FRET experiments demonstrate that cTALEs bind DNA reversibly with measurable equilibrium. Tethering cTALEs to the surface prevents aggregation at low salt and does not significantly impact DNA binding, as evidenced by FRET peaks at 0.45 efficiency that increase with DNA concentration and can be competed away.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 describe the experimental setup and initial FRET observations. The data in Figures 2B-H support reversible binding with concentration-dependent FRET changes and competition experiments. The comparison between tethered cTALE and tethered DNA configurations (C34, Figure 2\u2014figure supplement 1) validates that surface immobilization does not significantly alter binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "6c04bc5e-4ec1-432b-8e07-f86b6ee0fd34",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of single-molecule trajectories reveals multiphasic binding and unbinding kinetics for cTALE-DNA interactions. Both low-FRET (unbound) and high-FRET (bound) dwell time distributions are best fit by double-exponential decays, suggesting conformational heterogeneity in both free and DNA-bound states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38, C10-C11 are supported by single-molecule data in Figures 3A-D showing both short- and long-lived states. The double-exponential fits show significantly better residuals than single-exponential fits, providing strong statistical evidence for at least two kinetic phases in both binding and unbinding. The interpretation of conformational heterogeneity is reasonable given the multiphasic kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "01bc0943-6294-4d67-8aeb-d49ff245d6c2",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For NcTALE8 binding to homopolymeric DNA, the fast binding phase is DNA concentration-dependent (bimolecular, k=5.9\u00d710\u2078 nM\u207b\u00b9s\u207b\u00b9, near diffusion limit) while the slow phase is concentration-independent (unimolecular, 0.14 s\u207b\u00b9). Both unbinding phases are concentration-independent (1.2 s\u207b\u00b9 and 0.13 s\u207b\u00b9), indicating unimolecular processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by kinetic analysis in Figures 3E-F. The linear DNA concentration dependence of the fast binding phase clearly indicates a bimolecular step, and the rate constant is indeed near the diffusion limit. The concentration independence of the slow binding phase and both unbinding phases supports unimolecular mechanisms. The rate constants are directly determined from the data with confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "dfe33101-9823-4bea-8946-cabf597211e0",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Capped DNA experiments show similar biphasic kinetics to uncapped DNA, with comparable concentration-independent and dissociation rate constants. The bimolecular binding rate decreases for capped DNA, consistent with the expected ~3.6-fold decrease in diffusion coefficient (calculated using Sednterp) compared to the observed 6.7-fold decrease in binding rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 describe control experiments ruling out end-threading mechanisms (Figure 3\u2014figure supplement 2). The similarity in concentration-independent rates and dissociation rates supports the same binding mechanism. The diffusion coefficient calculations (C47-C48) and comparison to measured rate changes (C49) provide reasonable support that the bimolecular rate decrease is due to slower diffusion, though the ~2-fold discrepancy suggests additional factors may contribute.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "6a2a5b63-fd8a-4cb5-9427-94b035a087e0",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "T-anchored DNA binding shows multiphasic association kinetics similar to homopolymeric DNA (fast phase: 3.9\u00d710\u2078 nM\u207b\u00b9s\u207b\u00b9; slow phase: 0.34 s\u207b\u00b9) but simplified dissociation kinetics with only long-lived high-FRET states. This large effect on unbinding supports that bound-state heterogeneity results from variation in TALE-DNA registry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C56 are supported by data in Figures 4A-F. The T-anchor simplifies unbinding kinetics (single exponential fit in Figure 4D) while maintaining biphasic binding kinetics, strongly supporting the interpretation that bound-state heterogeneity arises from registry variation. The similar binding rate constants between T-anchored and homopolymeric DNA suggest the T-anchor primarily affects the bound state stability and registry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "e96ff6c2-86fb-41a0-89e9-275cb214ff7b",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Increasing cTALE repeat number from 8 to 12 and 16 dramatically slows all apparent rate constants for both binding and unbinding. Longer arrays (12 and 16 repeats) show similar multiphasic kinetics to 8-repeat arrays, but with much slower interconversion between DNA-free and DNA-bound states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 and C14 are supported by colocalization data in Figures 5A-C and Figure 5\u2014figure supplements 1-2. The comparison shows clear length-dependent slowing of all kinetic phases. Control experiments (C62, Figure 3\u2014figure supplement 1) demonstrate that differences are not due to experimental artifacts between FRET and colocalization assays. The data consistently show that increasing repeat number impedes both binding and unbinding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "83972db5-4308-4b00-8e79-aef9b56f3244",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Deterministic modeling identifies a four-state kinetic mechanism as most consistent with the data: two unbound states (DNA-binding incompetent TALE and competent TALE*) and two bound states (short-lived TALE*~DNA and long-lived TALE\u2021~DNA). This model reproduces experimental cumulative distributions for both short and long cTALE arrays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 describe the kinetic model developed from the data. Figure 6 shows that the four-state model fits the experimental cumulative distributions well with small residuals across multiple DNA concentrations for both 8 and 16 repeat arrays. The model is mechanistically reasonable given the observed multiphasic kinetics and provides a framework for extracting microscopic rate constants. However, the claim that this is the \"most consistent\" model is somewhat limited as alternative models are not extensively compared.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "45051c4e-ac59-4181-91a4-f9a5fbccf392",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Microscopic rate constants from deterministic modeling show that the bimolecular binding rate (k\u2082) is slightly larger for 8 repeats (1.1 nM\u207b\u00b9s\u207b\u00b9) than 12/16 repeats (0.31/0.39 nM\u207b\u00b9s\u207b\u00b9), while unbinding (k\u208b\u2082) is faster for 8 repeats (0.66 s\u207b\u00b9) than 12/16 repeats (0.13/0.30 s\u207b\u00b9). Bound-state isomerization and register transitions are 5-10\u00d7 slower in longer arrays. Keq,DNA-free is larger for 8 repeats (1.32) than 12/16 repeats (0.11/0.61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70 and C85 present microscopic rate constants from Table 1 with confidence intervals from bootstrap analysis. The trends are clear and statistically significant: longer arrays have slower kinetics for most transitions. The Keq,DNA-free values indicate that 8-repeat arrays favor the binding-competent state while longer arrays favor the binding-incompetent state, which is a key mechanistic insight. The confidence intervals are generally small (<10%), supporting the reliability of these parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "71afdcdc-0848-48e2-98f0-304a39b9de28",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The apparent Kd values calculated from fitted rate constants are 2.5 nM (8 repeats), 0.5 nM (12 repeats), and 1.0 nM (16 repeats). Increasing from 8 to 12 repeats modestly decreases Kd, but further increase to 16 repeats leaves Kd unchanged. The NS RVD used in cTALEs is uncommon in nature but may bind with higher affinity than other common RVDs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 present calculated Kd values using Equation 3 and fitted rate constants from Table 1. The calculations are mathematically correct and show the non-monotonic relationship between repeat number and affinity. Claims C71-C72 provide context about the NS RVD with citation support. The interpretation that 8-repeat cTALEs are near maximum affinity is reasonable given the modest changes with additional repeats.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "8f62e51e-07e7-49f9-a7de-0f0a6bb55986",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Structural modeling using the PthXo1 crystal structure shows that for NcTALE8, donor-acceptor distances are similar (~38 \u00c5) for both DNA strands, but for NcTALE16, distances differ dramatically (73 \u00c5 vs 25 \u00c5). The observation of colocalization without FRET for NcTALE16 suggests NS-containing cTALEs prefer adenine (dA-sense mode) over thymine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78 and C88-C91 combine structural modeling (Figure 5\u2014figure supplement 3) with experimental FRET observations to infer strand preference. The distance measurements from the crystal structure are straightforward. The interpretation that lack of FRET with NcTALE16 indicates dA-sense binding is logical given the large distance difference (73 \u00c5 would be outside FRET range). This is consistent with prior reports (C77, cited).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "8e55bc77-30ba-4abf-a8ca-512d369e69e3",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "For 8-repeat arrays, the DNA-binding competent state is more populated (Keq,DNA-free=1.32), while for 12/16-repeat arrays, the binding-incompetent state is more populated (Keq,DNA-free=0.11/0.61). Increasing partly folded state populations through urea addition or destabilizing mutations decreases apparent binding rates of 8-repeat cTALEs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 directly follow from the Keq,DNA-free values in Table 1. Claim C81 provides experimental support for the interpretation that partly folded states are binding-incompetent in short arrays (Figure 7\u2014figure supplement 1). The urea and mutation experiments show decreased binding rates when partly folded states are stabilized, supporting the model that these states inhibit binding in 8-repeat arrays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "762829a1-3d32-4b3d-a9f6-563e1fee94c3",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The T-anchor substantially decreases the rate constant for register 1\u21922 conversion (k\u2083: 0.36\u21920.06 s\u207b\u00b9) and modestly decreases unbinding (k\u208b\u2082: 0.66\u21920.48 s\u207b\u00b9). With Mg\u00b2\u207a instead of K\u207a, unbinding is faster (k\u208b\u2082: 1.28 vs 0.66 s\u207b\u00b9) as is register 2\u21921 conversion (k\u208b\u2083: 1.40 vs 0.22 s\u207b\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 present rate constant comparisons from Table 2 for different DNA sequences and salt conditions. The T-anchor effects (Figure 7\u2014figure supplement 2) and Mg\u00b2\u207a effects (Figure 7\u2014figure supplement 4) are supported by deterministic modeling fits. These results provide mechanistic insights into how DNA sequence and ionic conditions affect bound-state dynamics and stability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "bb55cce5-eefc-48e7-81c1-7b1f89e6bf50",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "For cTALEs forming <1 superhelical turn, partly folded states inhibit DNA binding (off-pathway), while for cTALEs forming >1 turn, partly folded states facilitate binding (on-pathway). This represents a new mode of transcription factor binding requiring partial unfolding, termed 'functional instability', where the fully folded state impedes binding and partial disruption facilitates complex formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C12-C13 and C86-C87 present the central mechanistic conclusion of the paper. While the kinetic data clearly show that longer arrays have different equilibrium distributions (C70: Keq,DNA-free favors incompetent state) and that destabilization slows binding in short arrays (C81), the direct demonstration that partly folded states are the binding-competent conformations in long arrays is more inferential. The model is consistent with the data, but structural evidence for which specific partly folded states enable binding is lacking. The concept of 'functional instability' is novel and well-supported conceptually, but the specific structural mechanisms remain to be fully validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    },
+    {
+      "id": "2b396308-2541-45d0-9cf9-c2aa14a415e5",
+      "content_id": "5c8e7aa2-e808-407d-a13c-42c067575431",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The non-monotonic relationship between repeat number and dissociation rates observed here (k\u208b\u2082: 0.66, 0.13, 0.30 s\u207b\u00b9 for 8, 12, 16 repeats) is consistent with observations by Clau\u00df et al. (2017) in live cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93 and C68 note consistency with prior live-cell observations. The non-monotonic trend in k\u208b\u2082 values from Table 1 (12-repeat slowest, 16-repeat intermediate) matches the cited observation, providing independent validation of the findings. This cross-validation between in vitro and in vivo systems strengthens confidence in the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:55:20.887038Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f596cb7c-b34d-4abe-8c07-b5cf54d26e9c",
+      "result_id": "addeeaea-dbc0-47d2-b503-a40cedb4f9ab"
+    },
+    {
+      "claim_id": "edfeabdf-346d-4949-be97-b022948e9795",
+      "result_id": "addeeaea-dbc0-47d2-b503-a40cedb4f9ab"
+    },
+    {
+      "claim_id": "8d9f4c88-b945-4c59-bc0c-d1549978003b",
+      "result_id": "addeeaea-dbc0-47d2-b503-a40cedb4f9ab"
+    },
+    {
+      "claim_id": "6957dc5c-75e5-4949-a104-b8e23c80d91c",
+      "result_id": "addeeaea-dbc0-47d2-b503-a40cedb4f9ab"
+    },
+    {
+      "claim_id": "25bd38ee-6ee7-4638-9b28-013a612a4fbc",
+      "result_id": "addeeaea-dbc0-47d2-b503-a40cedb4f9ab"
+    },
+    {
+      "claim_id": "5ad20e71-d85c-46ee-bf49-5a9fb87d237e",
+      "result_id": "addeeaea-dbc0-47d2-b503-a40cedb4f9ab"
+    },
+    {
+      "claim_id": "1861f58d-b0ff-4250-8092-0b3db61a1f34",
+      "result_id": "addeeaea-dbc0-47d2-b503-a40cedb4f9ab"
+    },
+    {
+      "claim_id": "c9fcdec5-6cd2-4c83-884c-724ba4712e47",
+      "result_id": "ce14a1db-5e1f-440b-a2c4-7b21b96e31f2"
+    },
+    {
+      "claim_id": "e50e1c27-aa85-4212-b4fd-6cee19bcb13b",
+      "result_id": "ce14a1db-5e1f-440b-a2c4-7b21b96e31f2"
+    },
+    {
+      "claim_id": "c88d58b0-6f9b-497d-89b7-5c0dd92e05bf",
+      "result_id": "ce14a1db-5e1f-440b-a2c4-7b21b96e31f2"
+    },
+    {
+      "claim_id": "738bcab6-e651-4691-af15-0e2d32071bb5",
+      "result_id": "ce14a1db-5e1f-440b-a2c4-7b21b96e31f2"
+    },
+    {
+      "claim_id": "cd998daf-69e0-4bfa-872c-6e8d8d265907",
+      "result_id": "ce14a1db-5e1f-440b-a2c4-7b21b96e31f2"
+    },
+    {
+      "claim_id": "290f080d-1465-48dc-bf71-2252f112ff8c",
+      "result_id": "ce14a1db-5e1f-440b-a2c4-7b21b96e31f2"
+    },
+    {
+      "claim_id": "f6f70167-ed27-403f-b551-1325e609d752",
+      "result_id": "ce14a1db-5e1f-440b-a2c4-7b21b96e31f2"
+    },
+    {
+      "claim_id": "73122982-ea25-45a8-af3f-8b500e280373",
+      "result_id": "ce14a1db-5e1f-440b-a2c4-7b21b96e31f2"
+    },
+    {
+      "claim_id": "0f71df06-b513-4597-a8ac-9873dae5d578",
+      "result_id": "ce14a1db-5e1f-440b-a2c4-7b21b96e31f2"
+    },
+    {
+      "claim_id": "765c180f-d253-48b9-91ca-bcaabe1fd145",
+      "result_id": "500e0205-09ed-4c79-b8af-49772004beb2"
+    },
+    {
+      "claim_id": "f5bffb4b-858f-48e9-8bdf-5a7aa4af9cce",
+      "result_id": "500e0205-09ed-4c79-b8af-49772004beb2"
+    },
+    {
+      "claim_id": "e0b86e84-6d19-4474-9cff-1a1199dbdc14",
+      "result_id": "500e0205-09ed-4c79-b8af-49772004beb2"
+    },
+    {
+      "claim_id": "00dbfe0d-3457-4095-97bd-90345bb1cef3",
+      "result_id": "500e0205-09ed-4c79-b8af-49772004beb2"
+    },
+    {
+      "claim_id": "fb56d202-c8b2-467d-a650-316bec6ee7e5",
+      "result_id": "7c0008f7-7d55-4001-a774-bc37bae042ca"
+    },
+    {
+      "claim_id": "ee06b119-bb0c-4c7e-99a1-e1afc97f3df2",
+      "result_id": "7c0008f7-7d55-4001-a774-bc37bae042ca"
+    },
+    {
+      "claim_id": "2e57545d-0658-45e1-85c4-5bbd3f873315",
+      "result_id": "7c0008f7-7d55-4001-a774-bc37bae042ca"
+    },
+    {
+      "claim_id": "40f18144-7a41-4c5c-b4e5-374c328013e1",
+      "result_id": "7c0008f7-7d55-4001-a774-bc37bae042ca"
+    },
+    {
+      "claim_id": "b54f8596-0da9-4e51-acf9-7d5b44275dc9",
+      "result_id": "7c0008f7-7d55-4001-a774-bc37bae042ca"
+    },
+    {
+      "claim_id": "51be50b6-e24d-4024-9ee8-2c90979d3e82",
+      "result_id": "7c0008f7-7d55-4001-a774-bc37bae042ca"
+    },
+    {
+      "claim_id": "4e2dd376-20ff-46ec-b7fb-17ce0366b381",
+      "result_id": "7c0008f7-7d55-4001-a774-bc37bae042ca"
+    },
+    {
+      "claim_id": "9cb0d56f-a33b-4f30-9ab0-4e8a71504ec9",
+      "result_id": "7c0008f7-7d55-4001-a774-bc37bae042ca"
+    },
+    {
+      "claim_id": "0748f21e-7821-4133-8983-3e870dd2a37c",
+      "result_id": "6c04bc5e-4ec1-432b-8e07-f86b6ee0fd34"
+    },
+    {
+      "claim_id": "e6916fbd-5f12-444d-83bc-d47b653b192f",
+      "result_id": "6c04bc5e-4ec1-432b-8e07-f86b6ee0fd34"
+    },
+    {
+      "claim_id": "0f60159f-cb37-4612-9957-63cd929c4b3c",
+      "result_id": "6c04bc5e-4ec1-432b-8e07-f86b6ee0fd34"
+    },
+    {
+      "claim_id": "d91d1cb5-1cc6-40ea-b2c6-07138bea9183",
+      "result_id": "6c04bc5e-4ec1-432b-8e07-f86b6ee0fd34"
+    },
+    {
+      "claim_id": "a58d0471-a804-4c72-a469-bcbaf4f5a938",
+      "result_id": "6c04bc5e-4ec1-432b-8e07-f86b6ee0fd34"
+    },
+    {
+      "claim_id": "2d5036a2-d0f9-43b8-ac40-6d21f254fc88",
+      "result_id": "6c04bc5e-4ec1-432b-8e07-f86b6ee0fd34"
+    },
+    {
+      "claim_id": "a0e19e33-f6d3-49fc-b70f-6149bf95eae4",
+      "result_id": "01bc0943-6294-4d67-8aeb-d49ff245d6c2"
+    },
+    {
+      "claim_id": "8af39ba7-9411-4b29-bdf7-cab7e212136f",
+      "result_id": "01bc0943-6294-4d67-8aeb-d49ff245d6c2"
+    },
+    {
+      "claim_id": "2d37ea19-94e3-4be7-8a5d-06e9fd242188",
+      "result_id": "01bc0943-6294-4d67-8aeb-d49ff245d6c2"
+    },
+    {
+      "claim_id": "dfd224c1-c432-4997-8aba-3ac94cbb2497",
+      "result_id": "01bc0943-6294-4d67-8aeb-d49ff245d6c2"
+    },
+    {
+      "claim_id": "77fc7e64-59ce-49e7-9797-027e984ac423",
+      "result_id": "01bc0943-6294-4d67-8aeb-d49ff245d6c2"
+    },
+    {
+      "claim_id": "460df360-eb9c-4cc2-a7f1-c4379c1cc8a6",
+      "result_id": "dfe33101-9823-4bea-8946-cabf597211e0"
+    },
+    {
+      "claim_id": "b1720b80-59c8-4d57-b043-5e9125f6581e",
+      "result_id": "dfe33101-9823-4bea-8946-cabf597211e0"
+    },
+    {
+      "claim_id": "c4d8b977-23c4-4345-a69d-05534311b24a",
+      "result_id": "dfe33101-9823-4bea-8946-cabf597211e0"
+    },
+    {
+      "claim_id": "5a65655d-4317-4e0a-9784-c75d3c442474",
+      "result_id": "dfe33101-9823-4bea-8946-cabf597211e0"
+    },
+    {
+      "claim_id": "eba91236-53e4-40b3-9d37-454f35816742",
+      "result_id": "dfe33101-9823-4bea-8946-cabf597211e0"
+    },
+    {
+      "claim_id": "024c2037-e277-4f6a-9a53-caebc66efd78",
+      "result_id": "dfe33101-9823-4bea-8946-cabf597211e0"
+    },
+    {
+      "claim_id": "ac7e054b-d7c6-4584-b588-006efc740b34",
+      "result_id": "6a2a5b63-fd8a-4cb5-9427-94b035a087e0"
+    },
+    {
+      "claim_id": "3f04e46a-0db3-4a48-8b74-d49e092fa32a",
+      "result_id": "6a2a5b63-fd8a-4cb5-9427-94b035a087e0"
+    },
+    {
+      "claim_id": "308e462f-ad54-4e85-b2de-0bb9063ee66b",
+      "result_id": "6a2a5b63-fd8a-4cb5-9427-94b035a087e0"
+    },
+    {
+      "claim_id": "fb2e9435-6026-4bd2-838e-2f52e0cb4de7",
+      "result_id": "6a2a5b63-fd8a-4cb5-9427-94b035a087e0"
+    },
+    {
+      "claim_id": "e1b600a0-7343-4ec4-a14c-505a72fb4d77",
+      "result_id": "6a2a5b63-fd8a-4cb5-9427-94b035a087e0"
+    },
+    {
+      "claim_id": "7eb2ec54-3292-48c0-982a-3558b35b19da",
+      "result_id": "6a2a5b63-fd8a-4cb5-9427-94b035a087e0"
+    },
+    {
+      "claim_id": "8be0934b-baba-4994-a186-751cbd4babd8",
+      "result_id": "6a2a5b63-fd8a-4cb5-9427-94b035a087e0"
+    },
+    {
+      "claim_id": "b4d78ee3-638a-4ba4-9d69-4e019923c857",
+      "result_id": "e96ff6c2-86fb-41a0-89e9-275cb214ff7b"
+    },
+    {
+      "claim_id": "819cf048-7be2-4927-bc6c-b9385d179f99",
+      "result_id": "e96ff6c2-86fb-41a0-89e9-275cb214ff7b"
+    },
+    {
+      "claim_id": "66c0d0c5-c251-45bd-9109-94ba650ac568",
+      "result_id": "e96ff6c2-86fb-41a0-89e9-275cb214ff7b"
+    },
+    {
+      "claim_id": "1628b2a2-95d6-4014-a4c2-25537c8051af",
+      "result_id": "e96ff6c2-86fb-41a0-89e9-275cb214ff7b"
+    },
+    {
+      "claim_id": "05423033-3911-4834-97dc-47c7cf5ae88d",
+      "result_id": "e96ff6c2-86fb-41a0-89e9-275cb214ff7b"
+    },
+    {
+      "claim_id": "f4ed1101-203d-4ac1-91a2-bccd07b87109",
+      "result_id": "e96ff6c2-86fb-41a0-89e9-275cb214ff7b"
+    },
+    {
+      "claim_id": "c4db56b0-dd5a-46cc-9ffa-9d1dc061b3bc",
+      "result_id": "e96ff6c2-86fb-41a0-89e9-275cb214ff7b"
+    },
+    {
+      "claim_id": "35d2219a-fc83-4088-99fe-970c0cda2f3c",
+      "result_id": "83972db5-4308-4b00-8e79-aef9b56f3244"
+    },
+    {
+      "claim_id": "6c77d77a-1565-4f42-9174-4f61a6762086",
+      "result_id": "83972db5-4308-4b00-8e79-aef9b56f3244"
+    },
+    {
+      "claim_id": "836ffc5c-0d00-483f-9f14-c6d2a3df8dd3",
+      "result_id": "83972db5-4308-4b00-8e79-aef9b56f3244"
+    },
+    {
+      "claim_id": "a20b907b-4225-4fbc-9961-b9efe255907a",
+      "result_id": "83972db5-4308-4b00-8e79-aef9b56f3244"
+    },
+    {
+      "claim_id": "857854f3-70fa-455e-8cce-2ed61a18a803",
+      "result_id": "45051c4e-ac59-4181-91a4-f9a5fbccf392"
+    },
+    {
+      "claim_id": "7412a979-ff68-4ce9-ac08-58be1b610c59",
+      "result_id": "45051c4e-ac59-4181-91a4-f9a5fbccf392"
+    },
+    {
+      "claim_id": "b6ead895-7e16-4199-a397-dc7692cfccf8",
+      "result_id": "45051c4e-ac59-4181-91a4-f9a5fbccf392"
+    },
+    {
+      "claim_id": "fe658175-36d1-4213-93d4-2c09eac150d9",
+      "result_id": "45051c4e-ac59-4181-91a4-f9a5fbccf392"
+    },
+    {
+      "claim_id": "a251f08b-4fa9-4066-b905-03b66159e0a7",
+      "result_id": "45051c4e-ac59-4181-91a4-f9a5fbccf392"
+    },
+    {
+      "claim_id": "6bac8d5c-0115-4302-9265-68420c963d36",
+      "result_id": "71afdcdc-0848-48e2-98f0-304a39b9de28"
+    },
+    {
+      "claim_id": "bfcc8dbd-135f-4654-bbd8-8c7d7bad6e73",
+      "result_id": "71afdcdc-0848-48e2-98f0-304a39b9de28"
+    },
+    {
+      "claim_id": "c97306ba-9df9-45ff-9dce-e52d1c5c086c",
+      "result_id": "71afdcdc-0848-48e2-98f0-304a39b9de28"
+    },
+    {
+      "claim_id": "c28a67e2-cc19-4af1-aed0-34f51bdd890c",
+      "result_id": "71afdcdc-0848-48e2-98f0-304a39b9de28"
+    },
+    {
+      "claim_id": "316d7a1c-9de7-4c39-8b41-9e1056b169eb",
+      "result_id": "71afdcdc-0848-48e2-98f0-304a39b9de28"
+    },
+    {
+      "claim_id": "d61a45b1-1e17-498d-9763-013beb61c2d7",
+      "result_id": "71afdcdc-0848-48e2-98f0-304a39b9de28"
+    },
+    {
+      "claim_id": "6c73e921-fcc1-4d91-a47b-248375735667",
+      "result_id": "8f62e51e-07e7-49f9-a7de-0f0a6bb55986"
+    },
+    {
+      "claim_id": "766db1fc-48db-4441-8b25-eacb3e16723b",
+      "result_id": "8f62e51e-07e7-49f9-a7de-0f0a6bb55986"
+    },
+    {
+      "claim_id": "98758de7-f220-49eb-9acc-f2e4d3c133ce",
+      "result_id": "8f62e51e-07e7-49f9-a7de-0f0a6bb55986"
+    },
+    {
+      "claim_id": "0a57fe84-1fc6-4996-a227-7a7a8a674ac7",
+      "result_id": "8f62e51e-07e7-49f9-a7de-0f0a6bb55986"
+    },
+    {
+      "claim_id": "34da0b16-7426-4e50-b87d-d1e8370d35b5",
+      "result_id": "8f62e51e-07e7-49f9-a7de-0f0a6bb55986"
+    },
+    {
+      "claim_id": "4548c925-a54c-4d61-aa47-836e7ee79b93",
+      "result_id": "8f62e51e-07e7-49f9-a7de-0f0a6bb55986"
+    },
+    {
+      "claim_id": "4c0bedf9-ad3c-4163-9cab-5229ed8d34e6",
+      "result_id": "8e55bc77-30ba-4abf-a8ca-512d369e69e3"
+    },
+    {
+      "claim_id": "18b2a194-20fc-401c-8682-72d9720e8637",
+      "result_id": "8e55bc77-30ba-4abf-a8ca-512d369e69e3"
+    },
+    {
+      "claim_id": "2871c67f-7444-4a07-9e63-5c2f58312d01",
+      "result_id": "8e55bc77-30ba-4abf-a8ca-512d369e69e3"
+    },
+    {
+      "claim_id": "5b9a8baf-3bf8-4588-84f0-0268bf9cc071",
+      "result_id": "762829a1-3d32-4b3d-a9f6-563e1fee94c3"
+    },
+    {
+      "claim_id": "8b171a3a-c6bf-4f82-b5dc-88f29a57e328",
+      "result_id": "762829a1-3d32-4b3d-a9f6-563e1fee94c3"
+    },
+    {
+      "claim_id": "4626e011-23fc-4b2d-a427-e18bbe3f6b4b",
+      "result_id": "762829a1-3d32-4b3d-a9f6-563e1fee94c3"
+    },
+    {
+      "claim_id": "ab42d9af-3895-4d06-a061-90168c009f86",
+      "result_id": "bb55cce5-eefc-48e7-81c1-7b1f89e6bf50"
+    },
+    {
+      "claim_id": "24ef6198-dd7d-4630-9fd1-9b11047630df",
+      "result_id": "bb55cce5-eefc-48e7-81c1-7b1f89e6bf50"
+    },
+    {
+      "claim_id": "b2f7e293-9d36-4eec-afc7-1daf90e24c23",
+      "result_id": "bb55cce5-eefc-48e7-81c1-7b1f89e6bf50"
+    },
+    {
+      "claim_id": "a33da536-7897-49f7-b0c2-feb29ee41ad3",
+      "result_id": "bb55cce5-eefc-48e7-81c1-7b1f89e6bf50"
+    },
+    {
+      "claim_id": "3aa753f7-84e9-4745-b10d-06c52cc768fc",
+      "result_id": "2b396308-2541-45d0-9cf9-c2aa14a415e5"
+    },
+    {
+      "claim_id": "7412a979-ff68-4ce9-ac08-58be1b610c59",
+      "result_id": "2b396308-2541-45d0-9cf9-c2aa14a415e5"
+    }
+  ],
+  "comparisons": []
+}

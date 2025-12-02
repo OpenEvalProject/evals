@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The E6 protocol generates near-homogeneous Pax6+/Sox2+/N-cadherin+ neuroepithelial cells (NECs) within 5-6 days, with Pax6 expression onset between days 2-3 (0% to 44\u00b115%) and reaching 81\u00b15% by day 5, concurrent with progressive N-cadherin polarization and neural rosette formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 collectively demonstrate the temporal dynamics of NEC differentiation using the E6 protocol. The data in Figure 1 provides quantitative immunostaining evidence for Pax6 expression kinetics and N-cadherin polarization, with co-localization of rosette markers (F-actin, ZO-1, phospho-H3) validating N-cadherin as a surrogate marker. The 5-day timeline is consistently observed across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Neural rosette emergence in micropatterned tissues follows a 5-day paradigm regardless of seeding time point during E6 differentiation, with the highest singular rosette occurrence (30%) at day 5, and appears dependent on Pax6 expression and local cell density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by time-course data in Figure 1F-I showing consistent rosette emergence kinetics across different seeding conditions (D1-D5). All conditions yielded >80% Pax6 expression and at least 2-fold cell density increase, supporting the conclusion that the 5-day paradigm is conserved and linked to Pax6 expression and cell density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C39",
+      "C40"
+    ],
+    "result": "Reducing tissue surface area from 9.6 cm\u00b2 (well plate) to micropatterned dimensions substantially increases singular rosette emergence efficiency, with 200 \u03bcm diameter (0.031 mm\u00b2) circular micropatterns showing optimal efficiency (48.9% automated, 56% manual analysis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are supported by quantitative data in Figure 2 comparing different micropattern geometries and sizes. Both manual and automated analyses show an inverse correlation between tissue surface area and singular rosette emergence probability, with circular micropatterns at 0.031 mm\u00b2 demonstrating highest efficiency. The automated analysis of 1633 tissues provides robust statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "An automated image analysis workflow with machine learning classifier was developed to quantify neural rosette emergence, showing lower efficiency estimates than manual analysis due to false positive errors in rosette identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by comparative analysis data in Figure 2 and error rate tables (S1, S2). The classifier's primary error mode (false positives) is documented and explains the systematic underestimation compared to manual analysis. The workflow successfully analyzed 1633 tissues, demonstrating scalability while maintaining interpretable error characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Seeding hESCs (D-1) versus NECs (D4) on 200 \u03bcm diameter circular micropatterns yields dramatically different singular rosette emergence efficiency (80.0\u00b10.05% vs 38.6\u00b14.7%), correlating with 1.25-fold higher cell density in hESC-derived tissues due to increased proliferative capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by quantitative data in Figure 3 comparing D-1 hESC and D4 NEC-derived tissues. Manual analysis of >100 tissues per condition provides robust statistics, and the cell density measurements (149\u00b123 vs 119\u00b118 cells) directly support the mechanistic link between proliferative capacity and rosette emergence efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "D-1 hESC-derived singular rosettes exhibit wider central N-cadherin rings with apico-basal polarity, while D4 NEC-derived rosettes show tighter N-cadherin rings with apparent tissue contraction from initial boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by morphological observations in Figure 3B,E,F showing distinct N-cadherin ring architectures. The qualitative differences in rosette morphology correlate with the quantitative differences in cell density and area measurements, providing consistent evidence for differential tissue mechanics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A HOX patterning protocol enables derivation of spinal cord NECs via sequential FGF8b/Wnt signaling to generate neuromesodermal progenitors, with optimal micropatterned spinal tissue formation requiring specific timing of seeding density (2.5\u00d710\u2075 cells/cm\u00b2), RA exposure (72 hr), Wnt boost (6 hr, 6.0 \u03bcM), and SHH/PM treatment (96 hr), yielding 86\u00b111% Nkx6.1+/Olig2+ ventral patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by experimental optimization data in Figure 4 and supplementary figures. The combinatorial testing of multiple variables (seeding density, timing of Wnt boost, SHH/PM exposure) with quantitative assessment of ventral markers provides robust evidence for the optimal protocol. qRT-PCR data confirms appropriate HOX patterning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Only ~12% of spinal neuroepithelial tissues on 200 \u03bcm diameter circular micropatterns displayed singular rosette emergence, indicating that optimal forebrain conditions are insufficient for spinal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by quantification data in Figure 4D showing low singular rosette efficiency (12%, n=97) for spinal tissues on micropatterns optimized for forebrain. This establishes the need for region-specific optimization and motivates the subsequent ROCK inhibition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "Optimal micropattern dimensions for singular rosette emergence differ between forebrain (250 \u03bcm, 85% efficiency) and spinal (150 \u03bcm, 73.5% efficiency) tissues, with ROCK inhibition shifting forebrain optimal size leftward (to 180-200 \u03bcm, 87-89% efficiency) while completely abolishing spinal rosette formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 are supported by comprehensive size-series data in Figure 5 comparing forebrain and spinal tissues with/without ROCK inhibition. Manual analysis of 88-100 tissues per condition provides robust statistics. The differential ROCK sensitivity (partial reduction vs complete abolishment) strongly supports distinct biomechanical properties between tissue types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "NEC density within forebrain versus spinal tissues of a given micropattern size does not vary significantly in the presence or absence of ROCK inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by cell density quantification in Figure 5\u2014figure supplement 1 showing no significant differences across conditions. This control demonstrates that the differential rosette emergence is not due to cell density differences but rather to intrinsic biomechanical properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The physical size of emergent neural rosettes is not conserved across tissues of increasing area, indicating that micropatterned tissue morphology restricts tissue area to statistically favor singular rosette emergence rather than instructing rosette morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by observations in Figure 5B,E showing variable rosette sizes independent of tissue dimensions. This inference is logical: if micropatterns instructed rosette size, rosettes would scale with tissue area. The observation that they don't supports a stochastic model where confinement reduces the probability of multiple rosette nucleation events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "NEC biomechanical properties vary by regional patterning, with forebrain NECs exhibiting greater ROCK-mediated contractility than spinal NECs, as evidenced by larger optimal micropattern dimensions (250 \u03bcm vs 150 \u03bcm) and differential ROCK inhibitor sensitivity (partial vs complete rosette formation abolishment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by the differential responses to ROCK inhibition in Figure 5. The mechanistic link between ROCK activity and actomyosin contractility (C66, cited to Amano et al., 2010) provides biological plausibility. The inference that forebrain NECs have higher contractility (C67-C69) logically follows from the larger length scale for polarization and partial ROCK sensitivity. This represents a novel finding about regional NEC biomechanics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "PEG-brushes modified in situ with 10 \u03bcM HBP-DBCO bioconjugate are capable of immobilizing Laminin proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by experimental data in Figure 6\u2014figure supplement 3 showing dose-dependent laminin immobilization on HBP-functionalized surfaces, with saturation at 10 \u03bcM HBP-DBCO. The mechanism is supported by citation to Sarrazin et al., 2011 regarding heparin sulfate proteoglycan binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Following HBP-mediated release from geometric confinement, micropatterned neural tissues expand radially as coherent multilayered structures maintaining a singular Pax6+ neuroepithelium with central cavity, displaying basal laminin deposition and peripheral Tuj1+ neuronal differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by immunostaining data in Figure 6 showing maintained singular rosette architecture during tissue expansion. The presence of basal laminin (C73) and peripheral neurons (C75) demonstrates biomimetic tissue organization. Time-course imaging (Figure 6\u2014figure supplement 4) confirms coordinated radial expansion rather than cell migration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Enforcing 200-250 \u03bcm forebrain and 150 \u03bcm spinal circular tissue morphology optimally induces singular rosette formation with 80-85% and 73.5% efficiency respectively, with biophysical parameters dependent on local cell density, Pax6 expression, and cell-autonomous biomechanical properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 synthesize the major findings from Figures 3 and 5. The efficiency values are directly supported by quantitative data, and the mechanistic factors (cell density, Pax6 expression, contractility) are each individually supported by experimental evidence throughout the manuscript. This represents the core conclusion of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "D90A SOD1 mutant ALS-iPSCs showed optimal singular forebrain rosette emergence at 250 \u03bcm diameter but with lower efficiency (26%), corresponding to non-uniform Pax6+ NEC phenotype, indicating that line-to-line variations in neural induction efficiency must be overcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by data in Figure 5\u2014figure supplement 2 showing reduced efficiency in ALS-iPSCs compared to hESCs. The observation of non-uniform Pax6 expression provides a mechanistic explanation for reduced efficiency. This demonstrates a limitation of the approach that requires consideration for broader application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The singular neural rosette cytoarchitecture can be maintained upon subsequent tissue morphogenesis, suggesting that initial morphology constraint could be a generalizable approach to engineering neural organoids with standardized nascent CNS tissue cytoarchitecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is supported by data in Figure 6 showing maintenance during expansion. However, C83 is explicitly speculative ('could be') and acknowledges that the 2D-to-3D transition may not precisely conserve parameters for 3D aggregates. While the data support proof-of-concept, generalizability to standard organoid protocols requires additional validation not provided in this manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Micropatterned tissues morph from 2-D monolayers into 3-D hemispherical tissues during culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by observations in Figure 6 and confocal Z-stack images in Figure 3F showing multilayered tissue architecture. This is acknowledged as a caveat for translating optimal parameters to suspension organoid culture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The biomechanical properties of dorsal forebrain NECs differ from ventral spinal cord NECs, with forebrain NECs forming singular rosettes in larger tissue dimensions due to increased contractility, potentially correlating with the larger dimensions of forebrain ventricles versus spinal central canal in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by experimental data in Figure 5. Claim C87 is speculative ('would seem to correlate') but represents a reasonable hypothesis connecting in vitro observations to in vivo anatomy. The speculation is appropriately qualified and represents an interesting direction for future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Microarrayed neural tissues become definitively 3-D (>4 cell layers thick) within 4 days and continue to increase in thickness, suggesting that biophysical and electrophysiological benefits of 3-D organoids may apply to these engineered tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by observations in Figures 3 and 6 showing multilayered architecture. Claim C92 is speculative but reasonably supported by citations to Khetan et al., 2013 and Frega et al., 2014. The 3D nature addresses a potential criticism that 2D micropatterning lacks organoid-relevant tissue context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C77",
+      "C89",
+      "C90"
+    ],
+    "result": "Background claims establishing the context of neural organoid technology, developmental biology of neurulation, current limitations of organoid protocols, and prior work on micropatterning and organoid engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C8-C23, C77, C89-C90) provide background context and are supported by appropriate citations to the literature. They establish the scientific rationale for the study by documenting: (1) the promise of organoid technology, (2) the importance of singular neuroepithelial tube formation in development, (3) current limitations with multiple rosette formation, and (4) prior engineering approaches. These are appropriately cited and represent accurate characterizations of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "NECs derived using the E6 protocol pattern to a default Pax6+/Otx2+ dorsal forebrain phenotype in both well plate and micropatterned tissue culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by immunostaining data in Figure 3B showing co-expression of Pax6 and Otx2, markers of dorsal forebrain identity. This is consistent with the cited E6 protocol (Lippmann et al., 2014) and establishes the regional identity of the 'forebrain' tissues used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C88",
+      "C93"
+    ],
+    "result": "The experimental paradigm provides a unique platform for analyzing biochemical-biomechanical interplay in neural rosette formation and enables constant monitoring via confocal microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C93 describe capabilities of the platform. C88 is appropriately qualified as speculative about 'further definitive analysis' while acknowledging current limitations (indirect contractility measurements). C93 is a straightforward technical capability statement. Both are reasonable characterizations of the platform's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Cell lines were obtained from established repositories, authenticated as karyotypically normal, used for \u226415 passages, and tested negative for mycoplasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are methodological statements about cell line sourcing and quality control. These are standard practices and are appropriately documented. The information is important for reproducibility and quality assurance.",
+    "result_type": "MINOR"
+  }
+]

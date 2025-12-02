@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "SARS-CoV-2 has evolved a unique S1/S2 cleavage site insertion (RRARSVAS) that is absent in related coronaviruses including SARS-CoV, Pangolin-CoV, and Bat-CoV RaTG13, and is conserved in 10,956 of 10,967 circulating SARS-CoV-2 strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C20 provide converging evidence from sequence alignments (Figure 1a), database searches (GISAID, VIPR), and comparative genomics showing the unique insertion. The high conservation rate (99.9%) across circulating strains and absence in >13,000 other coronavirus sequences strongly support this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C54",
+      "C55"
+    ],
+    "result": "The SARS-CoV-2 S1/S2 cleavage site peptide (RRARSVAS) is identical to a peptide found exclusively in human ENaC-\u03b1 among 20,350 canonical human proteins, located in the extracellular domain of ENaC-\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C22, C54-C55 demonstrate molecular mimicry through systematic computational analysis of the human proteome. The p-value of 4E-4 and exclusive match to ENaC-\u03b1 (P37088) among >10 million 8-mers, combined with structural localization data (Figure 1b), provide strong evidence for this specific mimicry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "FURIN cleaves both the mouse ENaC-\u03b1 equivalent peptide (RSAR|SASS) and the SARS-CoV-2 S1/S2 site at analogous positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by multiple cited studies (Hughey et al., 2004a/b; Walls et al., 2020) demonstrating FURIN cleavage at equivalent positions in both substrates. This establishes the functional parallel between viral and host protein processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C53",
+      "C56",
+      "C58",
+      "C59"
+    ],
+    "result": "Single-cell RNA-seq analysis of ~1.3 million cells from 66 studies reveals significant overlap in expression of ENaC-\u03b1 and ACE2 in cell types implicated in COVID-19 pathophysiology, including nasal epithelial cells, type II alveolar cells, tongue keratinocytes, and colon enterocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C35-C40, C53, C56, C58-C59 are supported by comprehensive single-cell RNA-seq data across multiple tissues and cell types (Figures 1c, 2, and supplements). The large dataset (~1.05 million ACE2-expressing cells across ~50 tissues and >450 cell types) provides robust evidence for co-expression patterns, though expression percentages vary considerably by cell type (e.g., 50% in alveolar type 2 cells vs. 2.77% in proximal tubule cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49"
+    ],
+    "result": "Multiple PCSK family proteases (PCSK5, PCSK7, PCSK6, PCSK4, PCSK2) show high proteolytic similarity to FURIN (0.94-0.99) and are co-expressed with ACE2 and ENaC-\u03b1 in various tissues including colon, pancreas, lungs, and tongue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44-C46, C48-C49 are supported by computational analysis of 178 protease cleavage signatures using cosine similarity metrics and single-cell RNA-seq co-expression data (Figure 2). The high similarity scores and tissue-specific co-expression patterns provide evidence for proteolytic redundancy, though the functional significance requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C51"
+    ],
+    "result": "Proteolytic degeneracy and redundancy are wired into the SARS-CoV-2 lifecycle through multiple host proteases with similar cleavage specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C51 are supported by the integration of protease similarity analysis (C42) and co-expression data (C44-C49), demonstrating that multiple proteases with high similarity to FURIN are available across different tissues. This provides computational evidence for redundancy in viral activation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C34",
+      "C41"
+    ],
+    "result": "SARS-CoV-2 may have specifically evolved to mimic a human protease substrate and hijack the ENaC-\u03b1 protease network for viral activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23, C34, C41 are speculative hypotheses based on the molecular mimicry findings (C3, C21) and co-expression data (C6). While the sequence identity and co-expression are well-documented, the evolutionary directionality and functional hijacking mechanism require experimental validation. The claims appropriately use cautious language ('may have,' 'suggest') but lack direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "SARS-CoV-2 infection may compromise ENaC activation by exploiting host FURIN, leading to low ENaC activity and compromised fluid reabsorption, contributing to ARDS pathology in COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C32 propose a mechanistic link between viral mimicry and COVID-19 pathology. While C31-C32 are supported by cited literature on ENaC function and ARDS, C30 is speculative ('conceivable,' 'may be compromised') and lacks direct experimental evidence showing that SARS-CoV-2 infection actually impairs ENaC activation or that this contributes to disease pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C52"
+    ],
+    "result": "Evolution of SARS-CoV-2 into a global pandemic may be driven in part by its targeted mimicry of ENaC-\u03b1, providing a new perspective on pandemic evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8 and C52 are highly speculative interpretations that extend beyond the data presented. While the molecular mimicry is well-documented, attributing pandemic success to this specific feature requires epidemiological, evolutionary, and functional evidence that is not provided. The claims are appropriately hedged ('may be driven') but represent conjecture rather than supported conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C57"
+    ],
+    "result": "Genetic alterations of ENaC-\u03b1 cause aldosterone dysregulation in patients, with a frameshift mutation causing S205X truncation leading to Pseudohypoaldosteronism type 1, highlighting that the FURIN site is critical for ENaC activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C57 are supported by cited clinical literature (Welzel et al., 2013) and established knowledge about ENaC mutations. The genetic evidence from human disease provides independent validation that the FURIN cleavage site region is functionally critical for ENaC, supporting the biological significance of the mimicked sequence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "SARS-CoV-2 infection requires proteolytic processing of the S-protein, with S1 engaging ACE2 and proteases catalyzing S1/S2 cleavage at R686/S687, followed by S2' cleavage for membrane fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 describe established mechanisms of SARS-CoV-2 entry supported by multiple citations (Walls et al., 2020; Belouzard et al., 2012; Hoffmann et al., 2020) and structural data (Figure 1a). This provides necessary background context for understanding the significance of the S1/S2 site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C9",
+      "C10"
+    ],
+    "result": "ENaC regulates sodium and water homeostasis, is controlled by aldosterone and RAAS, plays a key role in airway fluid reabsorption, requires proteolytic activation, and its misregulation is associated with respiratory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C9-C10 describe established biological knowledge about ENaC function supported by cited literature (Rossier and Stutts, 2009; Vallet et al., 1997). This background information is well-documented and provides essential context for understanding the potential significance of ENaC mimicry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Molecular mimicry is an evolutionary strategy adopted by viruses to exploit host cellular machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 represents established scientific knowledge about viral evolution strategies. This provides the conceptual framework for interpreting the SARS-CoV-2 findings but is not a novel result of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Furin-like cleavage motifs can be found in other viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by cited literature (Coutard et al., 2020) and provides context that furin cleavage sites are not unique to SARS-CoV-2, though the exact mimicry of ENaC-\u03b1 distinguishes this case.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The protease PLG cleaves the \u03b3-subunit of ENaC (ENaC-\u03b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by cited literature (Passero et al., 2008) and provides additional context about ENaC proteolytic regulation, though it is not central to the main findings about the \u03b1-subunit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Extracellular proteases need not necessarily be expressed in the same cells as ACE2 and ENaC-\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 represents established biological knowledge about extracellular protease function and provides important context for interpreting the co-expression analysis, acknowledging that spatial proximity at the tissue level may be sufficient for protease activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "PCSK5 and PCSK7 are plausible broad-spectrum proteases that may cleave the S1/S2 site based on their broad co-expression with ACE2 and ENaC-\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is a speculative inference based on co-expression data (C46) and proteolytic similarity (C42). While the computational evidence supports the possibility, actual cleavage activity has not been experimentally demonstrated. The claim appropriately uses cautious language ('plausible,' 'may cleave').",
+    "result_type": "MINOR"
+  }
+]

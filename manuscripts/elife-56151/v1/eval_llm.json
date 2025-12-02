@@ -1,0 +1,161 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors validated extended sensory hierarchies for auditory, visual, and somatosensory systems using structural MRI measures (T1w/T2w, cortical thickness) and functional INT measures across three independent datasets. The auditory and somatosensory hierarchies showed significant correlations with INT and gene expression markers, while the visual system showed weaker effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C44 provide convergent evidence from structural MRI, functional INT, and gene expression data across multiple independent samples (HCP N=100, schizophrenia controls N=158, and Allen Brain Atlas). The auditory hierarchy showed strong correlations (rs=0.87 in-sample, rs=0.80 out-of-sample, both p<0.05) and the somatosensory system reached significance in the out-of-sample validation (rs=0.80, p=0.014). All three systems showed significant correlations with layer IV gene expression (all p<0.05). The visual system results were weaker but this limitation is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "INT measurements demonstrated excellent test-retest reliability (ICC=0.94\u00b10.03) and were robust to potential confounds, with head motion effects being comparable across hierarchical levels and no significant effects of age or gender.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 provide statistical evidence for INT reliability and robustness. The ICC values indicate excellent reliability, and while head motion affected INT values (181/188 parcels, p=0.01), these effects were comparable across hierarchical levels (all p>0.05), which is critical for the hierarchical gradient analyses. The lack of age and gender effects (all p>0.174) further supports measurement validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Patients with schizophrenia showed widespread but modest reductions in INT compared to controls (98/188 parcels, p=0.013), with effects comparable across hierarchical levels. Biophysical modeling suggested this could reflect globally reduced excitation-inhibition ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 present exploratory findings with appropriate statistical support (permutation testing p=0.013) and computational modeling interpretation. The finding that INT reductions were comparable across hierarchical levels (all p>0.40) is important for distinguishing diagnosis effects from symptom-specific effects. The biophysical modeling provides a plausible mechanistic interpretation, though this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Hallucinations and delusions showed distinct hierarchical INT alterations in opposite directions in the auditory and somatosensory systems. Hallucinations were associated with compressed INT gradients (increased timescales at lower levels), while delusions were associated with expanded gradients (increased timescales at higher levels). These effects survived family-wise multiple comparison correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C64 constitute the primary hypothesis test with robust statistical support. The omnibus model was significant (F11,41=5.52, p<10\u207b\u2074), and symptom-by-hierarchical-level interactions were significant in auditory (t42=4.59, p=0.001, f\u00b2=1.00) and somatosensory (t42=3.50, p=0.011, f\u00b2=0.41) systems. Individual symptom effects showed opposite directions as predicted. Family-wise permutation testing confirmed results were above chance (set-level p=0.014 for all systems, p=0.043 for auditory alone). The symptoms had sufficient unique variance (1-R\u00b2=0.62) and were uncorrelated with medication dose (both p>0.86), addressing key confounds. The visual system null result is appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The primary symptom findings were robust across different hierarchical orderings tested for each sensory system, with family-wise permutation testing across all 12 orderings confirming results were above chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 demonstrate robustness of the main findings to alternative hierarchy definitions. Testing across four orderings per system (12 total) with family-wise correction showed results remained significant (set-level p=0.002 for all systems, p=0.001 for auditory), particularly in the auditory system where effects were strongest. This addresses concerns about arbitrary hierarchy selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Post-hoc analyses showed some specificity of hierarchical-gradient effects to positive symptoms, with conceptual disorganization showing weaker effects than hallucinations in the auditory system, and positive symptoms showing significantly larger effects than negative symptoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 provide post-hoc specificity analyses with appropriate statistical testing. In the auditory system, conceptual disorganization showed significant effects (t21=-2.80, p=0.036) but weaker than hallucinations (t21=-4.38, p=0.005), and positive symptoms overall showed larger effects than negative symptoms (p=0.043). The authors appropriately note these effects don't need to be unique to hallucinations/delusions under the theoretical model, and acknowledge this as preliminary evidence requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Biophysical modeling recapitulated the observed INT effects through local increases in E/I ratio at different hierarchical levels (level 1 for hallucinations requiring \u0394E/I=21.61%, level 8 for delusions requiring \u0394E/I=4.02%). The model suggested additivity of symptom-specific alterations could explain symptom co-occurrence, with preliminary in vivo support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C79 present computational modeling results that qualitatively match the empirical findings. However, the modeling uses macaque visual system data to model human auditory system effects due to lack of tract-tracing data, limiting quantitative interpretation as the authors acknowledge. The additivity hypothesis is supported by modeling (C75-C76) and has preliminary in vivo support (C77-C79: higher INT in patients with both symptoms, t27=1.84, p=0.038; higher intercept, t257=2.04, p=0.043; no gradient difference, t257=0.65, p=0.519), but the in vivo analysis uses small subgroups (N=11 vs N=18) and requires replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Control analyses examining dorsal versus ventral auditory streams showed that delusion effects were specific to the dorsal stream (including dorsolateral PFC area 46), while hallucination effects showed trends in both streams. This supports the involvement of dorsolateral PFC in delusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 present control analyses with appropriate validation of the ventral auditory hierarchy (correlations with INT and gene expression similar to dorsal stream) and statistical testing of stream differences. The significant symptom-by-hierarchical-level-by-processing-stream interaction (t28=1.75, p=0.005) and specific difference in delusion effects between streams (t28=1.89, p=0.003) support the interpretation, consistent with prior literature (Corlett et al., 2007).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "A data-driven approach using voxels ranked by INT values replicated the main findings, showing significant symptom-by-hierarchical-level interactions (t16=5.19, p=0.003) with opposite effects for hallucinations and delusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 provide an anatomically agnostic replication of the main findings using a data-driven hierarchy definition based on INT rankings. The significant interaction (t16=5.19, p=0.003, f\u00b2=10.12) and individual symptom effects in opposite directions (hallucinations: t16=-2.79, p=0.049; delusions: t16=4.55, p=0.008) support the robustness of findings to hierarchy definition method.",
+    "result_type": "MINOR"
+  }
+]

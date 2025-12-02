@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study utilizes a collection of 292 adaptive yeast mutants from a previous evolution experiment in glucose-limited conditions. These mutants include diploids (some with additional mutations like chromosome amplifications), haploids with mutations in nutrient-response pathways (Ras/PKA and TOR/Sch9), and other adaptive mutations including in the HOG pathway gene SSK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 describe the mutant collection used in this study, all supported by citations to prior work (Levy et al., 2015; Venkataram et al., 2016a) or direct observations. The characterization of these mutants provides the foundation for the current study's analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior experimental evolution studies in both microbes and cancer show that while adaptive mutations are diverse at the sequence level, they converge on a smaller number of affected genes and even fewer functional units such as pathways. This pattern is observed in bacterial evolution (Tenaillon et al., 2012), yeast evolution (Venkataram et al., 2016a), and cancer evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 summarize well-established findings from prior work, all supported by appropriate citations. These claims provide the conceptual framework and motivation for the current study's investigation of phenotypic modularity versus pleiotropy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Theoretical models and empirical evidence present contrasting views on pleiotropy: theoretical models suggest adaptive mutations should affect few phenotypes to avoid deleterious effects, while genome-wide association studies provide evidence of widespread pleiotropy where genes can influence many traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 accurately represent established theoretical frameworks (Fisher, 1930; Orr, 2000) and empirical findings from GWAS studies, all supported by appropriate citations. This tension between theory and observation motivates the study's investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study measured fitness of 292 adaptive mutants across 45 environments (9 evolution condition batches plus 36 other environments). Environments were classified as 'subtle' (16 environments with Z-score <2, similar variation to EC batches) or 'strong' (20 environments with Z-score >2) perturbations based on how much they altered mutant fitness compared to variation across EC batches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 describe the experimental design with appropriate detail. The classification scheme using Z-scores and batch variation as a benchmark is methodologically sound and clearly described. Statistical support (p<1e-5) is provided for the observation that batch effects exceed replicate variation (C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Fitness profiles across environments reveal that mutant fitness rankings are largely preserved across subtle perturbations but show clear genotype-by-environment interactions in strong perturbations. Different mutation types (IRA1 nonsense, GPB2, PDE2, diploids) show distinct patterns of environmental sensitivity, with diploids appearing relatively robust to tradeoffs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C34 describe patterns observed in the fitness data across environments, supported by Figure 2C and the data. The observations of preserved rankings in subtle perturbations versus GxE interactions in strong perturbations are clearly demonstrated. Specific examples (e.g., C29-C31) provide concrete evidence for the general patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Singular value decomposition of fitness profiles across 25 subtle environmental perturbations reveals eight fitness-relevant phenotypic components. The first component explains 95% of variance and represents average fitness effects without GxE interactions. The remaining seven components capture GxE interactions, with the first four of these explaining 87% of the GxE variation. No additional components beyond eight can be distinguished from noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 describe the SVD analysis results with specific quantitative values. The noise model comparison (C41) provides rigorous justification for the eight-component limit. The interpretation that component one captures non-GxE effects while components 2-8 capture GxE interactions is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Bi-cross-validation demonstrates that the eight-component model has strong predictive power, with the one-component model explaining 85% of weighted variance, the five-component model explaining 95.1%, and all eight components explaining 96.2% of variance for test mutants in left-out conditions. The diminishing returns with additional components suggest the smallest components contribute little to fitness near the evolution condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 report bi-cross-validation results that validate the eight-component model. The specific percentages of variance explained are clearly stated, and the interpretation about diminishing contributions of smaller components (C45) is supported by the quantitative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The seven GxE interaction components cluster adaptive mutants by mutation type and gene. Diploids, IRA1 nonsense, GPB2, and PDE2 mutants each form statistically significant distinct clusters (p\u22640.006). Even the three smallest components, which explain little variance in subtle perturbations, show significant clustering by gene for some mutation types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 describe clustering analysis results with appropriate statistical support (p-values from permutation tests). The observation that even minor components show gene-level clustering (C51-C54) is particularly interesting and well-supported by the statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The model reveals cases where mutations in the same gene or pathway do not cluster together, suggesting phenotypic heterogeneity. IRA1 missense mutations don't cluster (p=0.317), nor do IRA2 mutations (p=0.086), TOR/Sch9 pathway mutations (p=0.155), or diploids with additional mutations (p=0.863). However, six high-fitness diploids with no detected coding mutations form a distinct cluster (p=0.0001), suggesting they harbor similar difficult-to-sequence mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 describe important negative results and exceptions to the clustering patterns, all with appropriate statistical support. The speculation about IRA1 missense diversity (C56) and hidden mutations in high-fitness diploids (C61) are reasonable inferences from the data, though C56 is explicitly marked as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The eight-component phenotypic model built from subtle perturbations has substantial predictive power in distant environments, explaining 29-95% of variance in test mutants across strong perturbations. The model successfully predicts fitness even when the one-component model fails (e.g., 72% vs. negative variance in 0.5 M NaCl), captures strong tradeoffs, and generalizes to mutations in genes/pathways not in the training set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 demonstrate the model's predictive power with specific quantitative results. The ability to predict fitness in environments where EC fitness is uncorrelated (C65-C68) is particularly impressive. The generalization to unseen mutation types (C69) strengthens the claim that the model captures causal phenotypic effects (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The three smallest phenotypic components, which together contribute only 1.1% to variance in subtle perturbations, often explain substantial variance in distant environments. This demonstrates that phenotypic components making small contributions to fitness in the evolution condition can contribute substantially in other environments, supporting the fitness-relevant modularity model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 describe a key finding that supports the paper's main thesis about latent phenotypic complexity. The contrast between small contributions in subtle perturbations (1.1%) and substantial contributions in some strong perturbations is clearly demonstrated in Figure 4A and supports the fitness-relevant modularity model over strict modularity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Different phenotypic components show environment-specific importance to fitness. Component 2 adds 36% of variance on average in strong perturbations (vs. 7% in subtle), with contributions ranging from 0.3% to over 90% depending on environment. Components 7 and 8 show similarly variable contributions, with component 7 adding 7.5% in 0.5 M NaCl and component 8 adding over 15% in the 6-Day environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 provide detailed quantitative evidence for environment-specific phenotypic effects, with specific percentages and examples. The data clearly demonstrate that phenotypic components have variable importance across environments, supporting the concept of latent phenotypic complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The smallest phenotypic components show mutant-specific effects in specific environments. Component 7 improves predictions for GPB2, diploids with Chr11 amplifications, and high-fitness diploids by over 4 standard deviations in 0.5 M NaCl. Component 8 improves predictions for diploids with Chr11 amplifications and PDE2 mutants by 11 and 5 standard deviations respectively in the 6-Day environment, suggesting these mutation types share a phenotypic effect captured by component 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 provide specific quantitative evidence for mutant-specific and environment-specific effects of the smallest components, measured in standard deviations of measurement error. The inference that shared improvements indicate shared phenotypic effects (C89) is reasonable and supported by the data in Figure 5B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study concludes that not all mutations affect all phenotypic components equally and not all components contribute substantially to fitness in all environments. This idiosyncrasy suggests directional selection can generate rather than reduce phenotypic diversity when multiple adaptive mutants persist, as mutations affecting similar fitness-relevant phenotypes in the evolution condition may have latent effects on diverse phenotypes revealed when the environment changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 synthesize the study's findings into a coherent conclusion about latent phenotypic complexity. The inference that directional selection can generate diversity (C91) is well-supported by the demonstrated environment-specific effects of latent phenotypic components. This represents the paper's key conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study successfully built a low-dimensional statistical model capturing genotype-phenotype-fitness relationships for hundreds of adaptive mutants. The model enables accurate fitness predictions for unstudied mutants across environments and reveals that adaptation is modular (affecting few phenotypes relevant to fitness in the evolution condition) yet pleiotropic (with distinct side effects mattering in other conditions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 summarize the study's main achievements. The successful model building (C94), predictive accuracy (C95), and insights about modularity vs. pleiotropy (C96-C98) are all well-supported by the results presented throughout the paper. This represents the paper's primary contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The concept of latent phenotypic complexity provides a mechanism by which directional selection generates rather than removes phenotypic diversity. Mutants affecting similar fitness-relevant phenotypes in the evolution condition may have disparate latent effects that don't contribute immediately to fitness but are revealed when the environment changes or subsequent mutations occur. This is similar to cryptic genetic variation but evolves under directional rather than stabilizing selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 develop the theoretical implications of the findings. The concept of latent phenotypic complexity is well-supported by the empirical results. The comparison to cryptic genetic variation (C104-C105) is appropriate and helps contextualize the findings. Citations to supporting studies (C101, C103) strengthen these interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Latent phenotypic complexity depends on multiple mutational solutions to environmental challenges and reflects redundancies in adaptive mechanisms. In this study, the Ras/PKA pathway can be activated by loss-of-function mutations in multiple negative regulators (IRA1, PDE2, GPB2), which may be redundant for fitness in the evolution condition but influence different latent phenotypes. This adds to examples showing redundancies allow evolution to generate diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C116 discuss the mechanistic basis and generality of latent phenotypic complexity. The connection to pathway redundancy (C110-C111) is well-supported by established knowledge of the Ras/PKA pathway. The novel contribution (C115) that redundant mutations for fitness may differ in latent phenotypes is well-supported by the study's results. Citations to prior work on redundancy (C112-C114) appropriately contextualize the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The phenotypic components inferred from fitness measurements are abstract 'fitnotypes' representing causal effects on fitness rather than measurable cellular features. Despite this limitation, fitnotypes have proven useful for understanding adaptive mutation consequences, revealing that mutants in the same gene don't always affect the same fitnotypes (e.g., IRA1 missense vs. nonsense mutations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 acknowledge a key limitation of the approach while defending its utility. The distinction between abstract fitnotypes and measurable phenotypes (C117-C118) is important and honestly stated. The observation about IRA1 missense vs. nonsense differences (C120-C121) demonstrates the method's ability to detect functional distinctions within genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Future work could map traditional phenotypes to fitnotypes using methods like Sparse Canonical Correlation Analysis. The method is generic and applicable to any system where fitness of many mutants can be profiled across multiple environments or genetic backgrounds, which is becoming feasible in many systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 discuss future directions and generalizability. The suggestions are reasonable and appropriately cited (C123, C125). These represent speculative but well-grounded proposals for extending the work rather than claims about current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The concept that diverse genetic changes can have redundant effects in one environment but distinct effects in others has implications for understanding antibiotic resistance and cancer. In cancer, tumors of the same type are genetically diverse but mutations converge on fewer driver genes and pathways. The specific mutational paths might matter when tumors are treated with therapy, consistent with observed heterogeneity in tumor response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 extend the findings to cancer biology, appropriately supported by citations to cancer genomics studies (C127-C128, C130). The speculation about therapy response (C129) is reasonable given the study's findings about latent diversity, though it remains to be directly tested in cancer contexts.",
+    "result_type": "MINOR"
+  }
+]

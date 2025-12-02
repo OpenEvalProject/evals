@@ -1,0 +1,1920 @@
+{
+  "submission": {
+    "id": "945920ad-0f19-4668-bc09-3f268e17a6b6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:22:37.761166Z",
+    "updated_at": "2025-12-02T20:22:37.761166Z"
+  },
+  "content": [
+    {
+      "id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "submission_id": "945920ad-0f19-4668-bc09-3f268e17a6b6",
+      "content_type": "manuscript",
+      "content_text": "# A powerful drug combination strategy targeting glutamine addiction for the treatment of human liver cancer\n\n## Authors\n\n- Haojie Jin<sup>1</sup> ([ORCID: 0000-0001-9295-1951](https://orcid.org/0000-0001-9295-1951))\n- Siying Wang<sup>1</sup>\n- Esther A Zaal<sup>3</sup>\n- Cun Wang<sup>1</sup>\n- Haiqiu Wu<sup>4</sup>\n- Astrid Bosma<sup>2</sup>\n- Fleur Jochems<sup>2</sup>\n- Nikita Isima<sup>2</sup>\n- Guangzhi Jin<sup>5</sup>\n- Cor Lieftink<sup>2</sup>\n- Roderick Beijersbergen<sup>2</sup>\n- Celia R Berkers<sup>3</sup> \u2020\n- Wenxin Qin<sup>1</sup> \u2020\n- Rene Bernards<sup>2</sup> ([ORCID: 0000-0001-8677-3423](https://orcid.org/0000-0001-8677-3423)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Oncogenes and Related Genes, Shanghai Cancer Institute, Renji Hospital, Shanghai Jiao Tong University School of Medicine Shanghai China\n2. Division of Molecular Carcinogenesis, Oncode Institute. The Netherlands Cancer Institute Amsterdam Netherlands\n3. Biomolecular Mass Spectrometry and Proteomics, Bijvoet Center for Biomolecular Research, Utrecht University Utrecht Netherlands\n4. Department of Cell and Chemical Biology, Leiden University Medical Centre Leiden Netherlands\n5. Department of Pathology, Eastern Hepatobiliary Surgery Hospital, Second Military Medical University Shanghai China\n6. Department of Biochemistry and Cell Biology, Faculty of Veterinary Medicine, Utrecht University Utrecht Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe dependency of cancer cells on glutamine may be exploited therapeutically as a new strategy for treating cancers that lack druggable driver genes. Here we found that human liver cancer was dependent on extracellular glutamine. However, targeting glutamine addiction using the glutaminase inhibitor CB-839 as monotherapy had a very limited anticancer effect, even against the most glutamine addicted human liver cancer cells. Using a chemical library, we identified V-9302, a novel inhibitor of glutamine transporter ASCT2, as sensitizing glutamine dependent (GD) cells to CB-839 treatment. Mechanically, a combination of CB-839 and V-9302 depleted glutathione and induced reactive oxygen species (ROS), resulting in apoptosis of GD cells. Moreover, this combination also showed tumor inhibition in HCC xenograft mouse models in vivo. Our findings indicate that dual inhibition of glutamine metabolism by targeting both glutaminase and glutamine transporter ASCT2 represents a potential novel treatment strategy for glutamine addicted liver cancers.\n\n## Introduction\n\nLiver cancer is one of the most common malignant tumors worldwide and ranks as the fourth leading cause of cancer death (Bray et al., 2018). Due to the rapid progress and delayed diagnosis, most liver cancer patients are diagnosed at an advanced stage, which leaves very few treatment options and poor prognosis. Currently approved agents, such as sorafenib and lenvatinib, provide only modest survival benefits to hepatocellular carcinoma (HCC) patients with low response rates (Llovet et al., 2008; Kudo et al., 2018). Therefore, there is an urgent need for novel therapies that target new critical dependencies of liver cancer.\n\nMetabolic reprogramming contributes to tumor development and introduces metabolic liabilities that can be exploited to treat cancer. Despite significant efforts to develop drugs targeting metabolic pathways of cancer, clinical success has been very limited for decades. One particular potential vulnerability of cancer cells is the metabolic reprogramming toward aerobic glycolysis, known as the Warburg effect (Ward and Thompson, 2012). However, the clinical use of one compound known to block glycolysis, 2-deoxyglucose (2-DG), is limited by toxicity and insufficient inhibition of tumor growth at tolerable doses (Raez et al., 2013). Recent studies have highlighted a very prominent contribution of glutaminolysis to energy and macromolecule homeostasis in several types of hematological and solid tumors (Spinelli et al., 2017; Vander Heiden and DeBerardinis, 2017). Glutaminolysis converts glutamine to glutamate, which is catalyzed by mitochondrial glutaminase (GLS), and then further converted into tricarboxylic acid (TCA) cycle metabolites, generating ATP and NADPH. Glutaminolysis is also directly involved in the regulation of reactive oxygen species (ROS) homeostasis by providing not only precursors glutamate and cysteine for glutathione (GSH) synthesis but also promoting the production of NADPH via glutamate dehydrogenase (GLUD; Altman et al., 2016). Many tumor types, such as pancreatic cancer (Son et al., 2013), acute myeloid leukemia (AML; Jacque et al., 2015), breast cancer (Gross et al., 2014), and lung cancer (Wang et al., 2018), are particularly dependent on glutamine for proliferation and survival, as glutamine controls oxidative phosphorylation, nucleotide biosynthesis, and redox homeostasis in these cells, and removal of glutamine leads to apoptosis. Recently, it is reported that GLS1, one major isoform of GLS, regulates the stemness properties of HCC, and targeting GLS1 achieved some therapeutic effect against HCC cells (Li et al., 2019).\n\nCB-839 (also known as telaglenastat) is a potent and noncompetitive allosteric GLS1 inhibitor. It exhibits significant anti-proliferative activity in several types of cancer cell lines and xenografts such as triple-negative breast cancer (Gross et al., 2014), lung adenocarcinoma (Galan-Cobo et al., 2019), chondrosarcoma (Peterse et al., 2018), and lymphoma cancer (Xiang et al., 2015). CB-839 is used increasingly in combination to treat cancer. CB-839 overcomes metabolic adaptation to the mTOR inhibitor MLN128 in xenografts and patient-derived xenografts (PDXs) of lung squamous cell carcinomas (Momcilovic et al., 2018). Moreover, the combination of CB-839 and CDK4/6 inhibitors has shown promising results in human esophageal squamous cell carcinoma (Qie et al., 2019). CB-839 is also under evaluation for the\u00a0treatment of hematological malignancies and solid tumors in several phase I-II clinical trials (Song et al., 2018). However, it is still unclear whether CB-839 has therapeutic potential in liver cancer. Here we show that CB-839 monotherapy is insufficient for the treatment of HCC and identify a novel combination strategy that effectively targets glutamine addiction in liver cancer.\n\n## Results\n\n### Liver cancer is addicted to glutamine\n\nTo determine whether liver cancer is a glutamine (Gln)-dependent tumor type, we cultured a panel of liver cancer cell lines in a\u00a0medium with 4 mM Gln or without Gln. Both long-term colony formation assay (Figure 1a) and short-term IncuCyte assay (Figure 1b) showed that Gln deprivation impaired the proliferation of most liver cancer cell lines (9 out of 11) in vitro. Accordingly, we defined these 9 cell lines, which need exogenous Gln for efficient proliferation, as Gln dependent (GD) cells, and the other two cell lines as Gln independent (GID) cells. To assess Gln dependency of liver cancer in patients, we analyzed Gln metabolism-related genes in The Cancer Genome Atlas (TCGA) named \u2018PENG_GLUTAMINE_DEPRIVATION_DN\u2019, whose expression is considered to be positively correlated with Gln metabolism. The heatmap shows the\u00a0obvious upregulation of these genes in liver cancer tissues as compared to their corresponding non-cancerous liver tissues in TCGA cohort containing 50 paired HCC samples (Figure 1c). Gene set enrichment approach (GSEA) also showed positive enrichment of genes associated with Gln metabolism in both TCGA and Gene Expression Omnibus (GEO) data (Figure 1d and e). Moreover, SurvExpress survival analysis of 381 TCGA samples indicated that the dysregulation of Gln metabolism genes correlated with poor prognosis of human liver cancer patients (Figure 1f). Taken together, these results indicate that the liver cancers of poor prognosis have upregulated glutamine metabolism, which may indicate an increased requirement for Gln in HCC tumors.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig1-v1.jpg)\n\n**Figure 1.:** (a, b) A total of 11 liver cancer cell lines were cultured with 4 mM glutamine (Gln+) or glutamine deprivation (Gln-). Proliferation was assessed by colony formation assay (a) and IncuCyte assay (b), respectively. Liver cancer cell lines were divided into Gln dependent (GD) and Gln independent (GID) subtypes, respectively. (c) Differential expression profiles of Gln metabolism-related genes (Gene Set: PENG_GLUTAMINE_DEPRIVATION_DN) in 50 paired HCC samples in TCGA cohort. Heatmap illustrated the log2 fold-change values of Gln metabolism-related genes between cancerous tissues and their corresponding noncancerous liver tissues. Red color indicates gene upregulation; blue color indicates gene downregulation. Each column indicates a patient; each row indicates a gene. (d, e) Gene set enrichment analysis (GSEA) enrichment of cancerous tissues versus corresponding noncancerous tissues for gene set \u2018PENG_GLUTAMINE_DEPRIVATION_DN\u2019 in TCGA (d) and GSE14520, respectively (e). (f) Expression of Gln metabolism-related genes correlated with poor prognosis of liver cancer patients in TCGA. HR: hazard ratio; CI: confidence interval.\n\n### The glutaminase inhibitor CB-839 monotherapy achieves insufficient anti-tumor effect in liver cancer\n\nThe glutaminase isoenzyme GLS1 is\u00a0a key enzyme in Gln metabolism. We first analyzed the expression levels of GLS1 in the GSE14520 cohort (n\u00a0=\u00a0229), which provides data on gene expression for both paired human non-tumor and HCC tissues. The results indicate that mRNA levels of GLS1 are significantly increased in HCC tissues compared to non-tumor tissues (Figure 2a). Among the 229 paired samples, the\u00a0GLS1 level is increased to more than double in about 55% of\u00a0HCC patients (Figure 2b). Next, we analyzed the association between GLS1 level and prognosis of liver cancer patients. TCGA data indicated that the\u00a0high mRNA level of GLS1 correlated with the\u00a0poor prognosis of human liver cancer patients (Figure 2c). We also analyzed GLS1 expression using a tissue microarray (TMA) containing 377 HCC specimens by IHC analysis. HCC patients were classified into two groups: GLS1low group (n\u00a0=\u00a0175) and GLS1high group (n\u00a0=\u00a0202). The\u00a0Kaplan-Meier analysis indicates that HCC patients with high protein expression of GLS1 exhibit worse overall survival (OS) and disease-free survival (DFS) as compared to patients with low protein expression of GLS1 (Figure 2d,e and f). To explore the therapeutic effect of GLS1 inhibitor CB-839 on liver cancer cells, we treated the panel of 11 liver cancer cell lines with increasing concentrations of CB-839 in long-term colony formation assays and short-term CellTiter-Blue cell viability assays. We found that CB-839 treatment only severely impaired the\u00a0proliferation of three GD cell lines (Figure 2g and h). Other six GD cell lines and two GID cell lines only showed little response to CB-839 treatment in vitro (Figure 2g and h). We also analyzed the correlation between CB-839 sensitivity and expression level of its target and found no correlation between protein level of GLS1 and CB-839 sensitivity (Figure 2g, h and i). In addition, the protein level of GLS1 was not correlated to Gln addiction in vitro (Figures 1a, b and 2i), indicating that Gln addiction to liver cancer cells is not dependent on GLS1 level. These data suggest that targeting glutamine metabolism by GLS1 inhibitor CB-839 alone is insufficient for liver cancer therapy.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig2-v1.jpg)\n\n**Figure 2.:** (a) mRNA levels of GLS1 in the cohort of GSE14520 (n\u00a0=\u00a0229; probe for GLS1: 203159_at; N: nontumor tissues, T: tumor tissues). Data are represented as mean\u00a0\u00b1\u00a0SEM. (b) Log2 fold change of GLS1 mRNA in 229 paired HCC samples in the cohort of GSE14520 (probe for GLS1: 203159_at; N: nontumor tissues, T: tumor tissues). (c) GLS1 expression and Kaplan-Meier OS analysis for patients with HCC in TCGA cohort (n\u00a0=\u00a0364). (d\u2013f) IHC staining analyses of GLS1 were performed in 377 patients with HCC. The patients were divided into two groups: GLS1low group (n\u00a0=\u00a0175) and GLS1high group (n\u00a0=\u00a0202). (d) Typical immunostaining images of GLS1 in GLS1low group and GLS1high group were shown. Scale bars\u00a0=\u00a0100 \u03bcm. The\u00a0Kaplan-Meier analysis for OS (e) and DFS (f) was performed according to GLS1 levels. (g, h) Liver cancer cell lines were treated with increasing concentrations of CB-839. Proliferation and viability were assessed by colony formation assay (g) and CellTiter Blue assay (h), respectively.\u00a0(i) Lysates of liver cancer cell lines were western blotted for two splice variants of GLS1 (KGA and GAC). HSP90 served as a control. ***p<0.001, Student\u2019s t test.\n\n### A compounds screen identifies that ASCT-2 inhibitor V-9302 sensitizes GD liver cancer cells to CB-839 treatment\n\nThe data shown above indicate that a significant number of liver cancer cell lines are glutamine dependent but fail to respond to CB-839 treatment. To study this in more detail, we investigated metabolite profiles of two GD liver cancer cell lines, SNU398 and HepG2. A total of 66 named metabolites were identified and mapped to seven major pathways. We found that CB-839 treatment significantly decreased a number of key downstream metabolites involved in Gln metabolism, such as glutamate (GLU), TCA cycle intermediate (\u03b1-KG), redox metabolite (glutathione, NADPH) in both cell lines (Figure 3a and b and Figure 3\u2014figure supplement 1). These results indicate that CB-839 efficiently blocks Gln utilization and interferes with the dynamic changes of intermediates in Gln metabolism. Therefore, we hypothesized that CB-839 treatment already caused metabolic vulnerability, which could further be exploited for cancer therapy if co-treated with other anti-metabolic drugs. To prove this, we generated a chemical library consisting of 13 compounds inhibiting a variety of tumor metabolism targets, and tested their ability to enhance the anti-tumor effect of CB-839. Notably, we found that V-9302, a novel inhibitor of Gln transporter ASCT2\u00a0(Schulte et al., 2018), is the most potent agent in sensitizing both SNU398 and HepG2 GD liver cancer cells to CB-839 (Figure 3c and d). To study whether this combination has a broad anti-proliferative effect in liver cancer cells, we tested cell viability and proliferation in a panel of liver cancer cell lines after single drug or combination treatment with CB-839 and V-9302 in vitro. Indeed, the combination showed synergistic anti-proliferation effect in GD cell lines, but only showed limited anti-tumor effect in GID cell lines in vitro (Figure 4a,b and c and Figure 4\u2014figure supplement 1). Moreover, similar results were observed in these cell lines when combining V-9302 with another GLS1 inhibitor BPTES (Figure 4\u2014figure supplement 2). These findings suggest that the combination of GLS1 inhibitors and V-9302 could be a novel therapeutic approach for GD liver cancer cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig3-v1.jpg)\n\n**Figure 3.:** (a) Heatmap representation of 66 metabolites between treated and untreated groups. Intracellular metabolite levels measured by LC/MS-MS in SNU398 and HepG2 cells treated with DMSO or CB-839 (SNU398: 4 \u03bcM; HepG2: 8 \u03bcM) for 4 and 24 hr, respectively. These metabolites were mapped to seven major pathways including those of the glycolytic system, TCA cycle, urea cycle, redox reaction, purine and pyrimidine metabolism. Each column represented a metabolite. Deeper red color represents higher content; conversely, deeper green color represents lower content. (b) Graphic representation of glutamate (GLU), \u03b1-ketoglutarate (\u03b1-KG), glutathione (GSH), NADPH were shown in the LC/MS-MS screen in a. Data are represented as mean\u00a0\u00b1\u00a0SEM, n\u00a0=\u00a03 independent experiments. (c) Schematic outline of the compounds screen on the basis of CB-839 treatment: Two GD cell lines, SNU398 and HepG2, were first treated with 4 and 8 \u03bcM CB-839, respectively. Then, 13 compounds inhibiting a variety of druggable tumor metabolism targets were tested at their IC50 concentrations for 4 d. (d) Heatmap represents the enhanced percentage of viability inhibition by 13 compounds in SNU398 and HepG2, respectively. Deeper red color represents higher enhance; conversely, deeper green color represents lower enhance. Statistical significance was assessed using a Student\u2019s t test. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Heatmap representation of 66 metabolites between treated and untreated groups. Intracellular metabolite levels measured by LC/MS-MS in SNU398 and HepG2 cells treated with DMSO or CB-839 (SNU398: 4 \u03bcM; HepG2: 8 \u03bcM) for 4 and 24 hr, respectively.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig4-v1.jpg)\n\n**Figure 4.:** (a-c) Liver cancer cells (four GD cell lines and two GID cell lines) were treated with CB-839, V-9302, or the combination at the indicated concentration. CellTiter Blue viability assays (a), IncuCyte assays (b) and long-term colony formation assays (c) were performed, respectively. Data are represented as mean\u00a0\u00b1\u00a0SEM. Statistical significance was assessed using a Student\u2019s t test. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Liver cancer cell lines (SNU449, SK-Hep1, Huh6, Hep3B, and SNU387) were treated with CB-839, V-9302, or the combination at the indicated concentration. Long-term colony formation assays were performed.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Liver cancer cells (four GD and two GID cell lines) were treated with BPTES, V-9302, or the combination at the indicated concentration. Long-term colony formation assays were performed.\n\n### Combination of CB-839 and V-9302 depletes glutathione and induces lethal ROS level in GD liver cancer cells\n\nThe alanine-serine-cysteine transporter, type-2 (ASCT2, encoded by gene SLC1A5), is a sodium-dependent solute carrier protein responsible for the import of neutral amino acids and is the primary transporter of glutamine in cancer cells. Several studies have attributed glutathione (GSH) synthesis and ROS stress with dysregulation of ASCT2\u00a0(Schulte et al., 2018; Yoo et al., 2020). To investigate whether the\u00a0combination of CB-839 and V-9302 can disrupt the ROS balance in liver cancer, we first analyzed the\u00a0GSH levels after single-drug treatment or combination in SNU398 and HepG2 cells, respectively. The results show that CB-839 or V-9302 alone significantly decreased the level of GSH, while the combination resulted in a further decrease in GSH in both cell lines (Figure 5a). GSH is an important antioxidant that acts as a free radical scavenger upon its reaction with ROS in cells (Bansal and Simon, 2018; Okazaki et al., 2017), raising the possibility that combination of CB-839 and V-9302 may interfere with ROS homeostasis of these liver cancer cells. Analysis of intracellular ROS levels showed that single agent CB-839 or V-9302 only modestly increased the ROS production. However, their combination dramatically increased the already-elevated ROS production, reaching a level that caused severe DNA damage, as evidenced by an increase in \u03b3-H2AX (Figure 5b and c). To determine whether the combination inhibited cell viability and proliferation of liver cancer cells via the excessive ROS production, we treated these cells with the ROS scavenger N-acetyl-l-cysteine (NAC). The results show that NAC treatment rescued the cell viability and proliferation of SNU398 and HepG2 cells in the presence of both CB-839 and V-9302 (Figure 5d and e). Moreover, the strong synergistic induction of apoptosis can be rescued by NAC treatment in both SNU398 and HepG2 cells, as indicated by the IncuCyte caspase-3/7 apoptosis assay (Figure 5f). These results suggest a model explaining the synergistic effect between CB-839 and V-9302 (Figure 5g): GLS1 inhibition by CB-839 reduces mitochondrial Glu level, which decreases TCA-dependent NADPH production, elevating glutathione oxidation. Besides, CB-839 also decreases intracellular Glu that is essential for cystine import by xCT, a cystine/glutamate antiporter, thus cutting down the cysteine conversion that in turn serves as the rate-limiting precursor for GSH biosynthesis. CB-839 treated cells are vulnerable to other perturbations that further deplete glutamine anaplerosis, such as blockage of major Gln transporter ASCT-2 by V-9302. Collectively, these results indicate that the combination of CB-839 and V-9302 achieves a\u00a0synergistic anti-tumor effect in liver cancer via disrupting the GSH/ROS balance.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig5-v1.jpg)\n\n**Figure 5.:** (a) Intracellular GSH levels were\u00a0measured by LC/MS-MS in SNU398 and HepG2 cells treated with indicated drugs for 48 hr, respectively. (b) ROS levels were measured using the\u00a0CellROX Deep Red flow cytometry assay. (c) Western blot analysis was performed for \u03b3H2AX as a DNA damage marker. HSP90 served as a control. (d, e) Long-term colony formation assay and CellTiter-Blue viability assay show rescued proliferation and viability of SNU398 and HepG2 cells after ROS scavenger N-acetyl-cysteine (NAC) treatment. (f) Caspase-3/7 positive percentages of control, NAC, V-9302, CB-839, the combination, or combination plus NAC treated SNU398 and HepG2 cells in the presence of a caspase-3/7 activatable dye. (g) Schematic showing how the combination of CB-839 and V-9302 decreases GSH and induce apoptosis in liver cancer. All the data in this figure are represented as mean\u00a0\u00b1\u00a0SEM. Statistical significance was assessed using a Student\u2019s t test. *p<0.05, **p<0.01, ***p<0.001.\n\n### Combined treatment inhibits xenograft growth and induces apoptosis in vivo\n\nTo assess the effectiveness of the combination of CB-839 and V-9302 in vivo, SNU398 and MHCC97H cells were injected into nude mice to establish tumors. After tumors reached a size of about 100 mm3, animals were treated with vehicle, CB-839, V-9302, or the combination of both drugs. Results showed that the combination elicited a strong growth inhibition in both SNU398 and MHCC97H xenograft models, while single-drug treatment showed modest anti-tumor effects (Figure 6a,b,c and d). We also measured the body weight of mice during the treatment, and no body weight reduction was observed in all the treatment groups (Figure 6\u2014figure supplement 1), indicating good tolerability for this novel drug combination. IHC analyses showed that treatment with the combination of CB-839 and V-9302 resulted in an obvious decrease in Ki67 positive cells (Figure 6e,f,g and j). In addition, the combination also significantly increased caspase-3 positive cells (Figure 6e,f,h and k) and \u03b3H2AX-positive cells (Figure 6e,f,i and l) in tumor tissues, supporting the induction of apoptosis and DNA damage in vivo. Taken together, our xenograft model experiments point out that combination of CB-839 and V-9302 is effective for liver cancer therapy in vivo.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig6-v1.jpg)\n\n**Figure 6.:** SNU398 and MHCC97H cells were grown as tumor xenografts in BALB/c nude mice. Longitudinal tumor volume progression in SNU398 and MHCC97H tumor-bearing mice treated with vehicle (n\u00a0=\u00a06), CB-839 (150 mg/kg, oral gavage, twice per day; n\u00a0=\u00a06), V-9302 (30 mg/kg, intraperitoneal injection; n\u00a0=\u00a06), or combined therapies (n\u00a0=\u00a06) for 20 or 15 d, respectively. Growth curve and endpoint tumor volume of SNU398 (a, b) and MHCC97H (c, d) xenografts. (e, f) Representative images of HE, Ki67, cleaved caspase-3, and \u03b3H2AX in SNU398 (e) and MHCC97H (f) xenograft models. Scale bars\u00a0=\u00a050 \u03bcm. (g\u2013i) Quantification of Ki67 positive cells (g), cleaved caspase-3 positive cells (h), and \u03b3H2AX positive cells (i) in SNU398 xenografts. (j\u2013l) Quantification of Ki67 positive cells (j), cleaved caspase-3 positive cells (k), and \u03b3H2AX positive cells (l) in SNU398 xenografts. Data are represented as mean\u00a0\u00b1\u00a0SEM. Statistical significance was assessed using a Student\u2019s t\u00a0test. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56749/elife-56749-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** SNU398 and MHCC97H tumor-bearing mice treated with vehicle (n\u00a0=\u00a06), CB-839 (150 mg/kg, oral gavage, twice per day; n\u00a0=\u00a06), V-9302 (30 mg/kg, intraperitoneal injection; n\u00a0=\u00a06), or combined therapies (n\u00a0=\u00a06) for 20 or 15 d, respectively. Graph shows mean\u00a0\u00b1\u00a0SEM.\n\n## Discussion\n\nIncreasing interest in the metabolic vulnerabilities of cancer has given rise to the development of multiple metabolism-targeted therapies targeting diverse aspects of nutrient transport and utilization. For example, de novo pyrimidine synthesis was identified as a metabolic vulnerability of triple-negative breast cancer (TNBC), suggesting that inhibition of pyrimidine synthesis could sensitize TNBC to chemotherapy (Brown et al., 2017). Metabolic vulnerabilities of cancer cells can also be exploited to address drug resistance. Cisplatin-resistant cancer cells were found to be strongly dependent on glutamine for nucleotide biosynthesis and therefore became exquisitely sensitive to treatment with antimetabolites that target nucleoside metabolism (Obrist et al., 2018). These findings highlight the possibility of precisely directing the metabolic therapeutics to certain cancer types through identification of their metabolic vulnerabilities.\n\nLiver cancer remains one of the most difficult cancer types to treat due to a paucity of drugs that target critical dependencies and broad-spectrum kinase inhibitors like sorafenib and lenvatinib provide only a\u00a0modest survival benefit to HCC patients (Bray et al., 2018; Lau, 2008). Exploiting metabolic vulnerabilities may represent a promising strategy for the treatment of liver cancer. Liver cancer has a metabolic dependency on glutamine. The\u00a0HGF-MET axis was reported to inhibit pyruvate dehydrogenase complex (PDHC) activity but activate GLS to facilitate glutaminolysis in multiple liver cancer cells (Huang et al., 2019). Another study reported that the\u00a0downregulation of Sirtuin four in liver cancer promoted HCC tumorigenesis via enhancing glutamine metabolism and regulating ADP/AMP levels (Wang et al., 2019). In addition, MYC-induced mouse liver tumors had increased GLS expression and decreased glutamate-ammonia ligase (GLUL) expression relative to surrounding tissues, exhibiting elevated Gln catabolism (Xiang et al., 2015). Consistently, our study showed that the vast majority of liver cancer cell lines was highly addicted to exogenous Gln in vitro, and the majority of Gln metabolism-related genes was upregulated in tumor tissues of HCC patients. A\u00a0previous study showed that targeting GLS could attenuate the\u00a0stemness properties of HCC (Li et al., 2019), indicating the possible application of GLS inhibitors in HCC. However, single-drug treatment of CB-839 only showed a\u00a0very limited anti-tumor effect in most GD liver cancer cells. High-throughput screenings, such as genome-wide CRISPR screen, should be applied to discover the functionally\u00a0important genes responsible for glutamine dependence or CB-839 sensitivity in liver cancer. The\u00a0metabolome analysis revealed that CB-839 treatment already caused strong depletion of several key metabolites involved in Gln metabolism (such as GSH), which did not recover even after 24 hr of drug treatment, indicating a possible persistent metabolic vulnerability in the presence of CB-839. This metabolic vulnerability was further exacerbated by ASCT2 inhibitor V-9302, as a result of a further decrease in GSH levels and a lethal increase in the already-elevated levels of ROS. This synergistic effect may be explained by dual inhibition of Gln metabolism. On the one hand, GLS inhibition by CB-839 prevents glutamate production, a direct precursor of GSH synthesis, as well as cystine/glutamate exchange by xCT, leading to a\u00a0decrease in cystine, another essential precursor for GSH synthesis. On the other hand, pharmacological blockade of the primary transporter of glutamine ASCT2 can decrease the uptake of extracellular glutamine, leading to the shortage of Gln supply and GSH synthesis (Schulte et al., 2018). However, there is still some debate about the target selectivity of V-9302 for ASCT2. Broer et al (Angelika et al., 2018) reported that V-9302 did\u00a0not inhibit ASCT2 and glutamine uptake, but rather blocked sodium-neutral amino acid transporter 2 (SNAT2) and the large neutral amino acid transporter 1 (LAT1). Interestingly, it has been reported that, in addition to ASCT2, both\u00a0SNAT2\u00a0and LAT1 also can mediate glutamine uptake in most cancer cells (Br\u00f6er and Br\u00f6er, 2017). Thus, the depression of glutamine uptake by V-9302 remains to be further investigated. Impressively, we find that the CB-839 induced metabolic vulnerability also can be further enhanced by other several anti-metabolic drugs such as OXPHOS inhibitor IACS-10759, PPP inhibitor DHEA, and PHGDH inhibitor NCT503 (Figure 3d). This observation suggests the possibility of developing other new combination strategies against liver cancer based on CB-839. However, it is worth noting that our in vitro study was performed over physiological glutamine concentrations, occurring at concentrations that may not be experienced in solid tumors.\n\nThe liver clears almost all of the portal vein ammonia, converting it into glutamine and urea, preventing entry into the systemic circulation. Chronic liver disease has impaired liver function and usually leads to dysfunction of ammonia metabolism. For example, there is a general correlation between higher levels of ammonia and more severe encephalopathy in cirrhosis (Olde Damink et al., 2002). As a mitochondrial enzyme, GLS plays important roles in liver ammonia metabolism (Botman et al., 2014). There are two distinct isoforms of GLS, GLS1 and GLS2, which possess discrete tissue distribution, structural properties, and molecular regulation. The GLS1 gene encodes two isoforms, kidney-type glutaminase (KGA, long transcript isoform) and the glutaminase C (GAC, short transcript isoform), which are expressed in kidneys and in a variety of other tissues including cancer cells (Katt et al., 2017). In our study, we found that the\u00a0GLS1 expression level was significantly increased in HCC tissues. The GLS2 gene is strongly expressed and active in periportal hepatocytes, where they generate glutamate and release ammonia for urea synthesis (Katt et al., 2017; Curthoys and Watford, 1995). Interestingly\u00a0enough,\u00a0CB-839 selectively inhibits GLS1 but not GLS2 (Gross et al., 2014). Taken together, although many HCC patients co-exist liver disease and thus usually have impaired ammonia metabolism, GLS inhibition by CB-839 treatment is less likely to pose a problem for these patients.\n\nThe advantage of metabolism-targeted therapies is the ability to non-invasively assess the activity of the metabolic pathway in mouse models and even in the clinic. Recently, a voltage-sensitive, positron emission tomography (PET) radiotracer known as 18F-BnTP was developed to measure mitochondrial membrane potential in non-small-cell lung cancer. It was found that only mouse tumors with a high uptake of 18F-BnTP showed marked growth suppression when treated with oxidative-phosphorylation inhibitor IACS-010759 (Momcilovic et al., 2019). Another example is the widespread use of a radioisotope labeled glucose analog, [18F]fluoro-2-deoxyglucose (18F-FDG), in clinical use for diagnosing and staging cancer (Kelloff et al., 2005; Nair et al., 2012). 18F-FDG undergoes cellular uptake via the same pathway as glucose but becomes trapped intracellularly after phosphorylation by hexokinase, which can be visualized by PET imaging and used to detect glucose uptake in tumors. In our study, we find that the combination of CB-839 and V-9302 only shows synergy in liver tumors that are addicted to Gln. It suggests that measuring Gln uptake or Gln addiction is of potential importance for selecting patients that might benefit from this combination. One way to accomplish this is to test the Gln dependence of tumor cells in vitro, which might\u00a0be consistent with their metabolic dependence in vivo. A more accurate and practical approach is developing a\u00a0Gln-based PET imaging agent. The Gln tracers 5-11C-(2S)-glutamine (11C-Gln) and 18F-(2S,4R)4-fluoroglutamine (18F-(2S,4R)4-FGln) provide useful tools for probing and monitoring in vivo metabolism of Gln (Zhu et al., 2017). Tracer 11C-Gln was shown to visualize glutaminolytic tumors in vivo as a metabolic marker for probing glutamine-addicted tumor (Qu et al., 2012). Similarly, 18F-(2S,4R)4-FGln PET was reported to track cellular Gln pool size in breast cancers with differential GLS activity and applied as a response marker for CB-839 (Zhou et al., 2017). Therefore, the development of isotope-labeled Gln PET imaging may facilitate the translation of the drug combination strategy described here through the\u00a0identification of those patients that are most likely to benefit.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>Hep3B</td>\n      <td>ATCC</td>\n      <td>Cat#:HB-8064</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>Huh7</td>\n      <td>JCRB</td>\n      <td>Cat#:JCRB0403; RRID:CVCL_0336</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HepG2</td>\n      <td>ATCC</td>\n      <td>Cat# HB-8065; RRID:CVCL_0027</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>SNU398</td>\n      <td>ATCC</td>\n      <td>Cat# CRL-2233; RRID:CVCL_0077</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>SNU449</td>\n      <td>ATCC</td>\n      <td>Cat# CRL-2234; RRID:CVCL_0454</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>Huh6</td>\n      <td>RCB</td>\n      <td>Cat# RCB1367; RRID:CVCL_4381</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>SK-Hep1</td>\n      <td>ATCC</td>\n      <td>Cat# HTB-52; RRID:CVCL_0525</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>JHH1</td>\n      <td>JCRB</td>\n      <td>Cat# NIHS0056; RRID:CVCL_2785</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>SNU387</td>\n      <td>ATCC</td>\n      <td>Cat# CRL-2237; RRID:CVCL_0250</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>PLC/PRF5</td>\n      <td>ATCC</td>\n      <td>Cat# CRL-802</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>MHCC97H</td>\n      <td></td>\n      <td>RRID:CVCL_4972</td>\n      <td>Liver Cancer Institute of Zhongshan Hospital (Shanghai, China)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CB-839</td>\n      <td>Selleck Chemicals</td>\n      <td>S7655</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BPTES</td>\n      <td>Selleck Chemicals</td>\n      <td>S7753</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>BAY-876</td>\n      <td>Selleck Chemicals</td>\n      <td>S8452</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>AZD3965</td>\n      <td>Selleck Chemicals</td>\n      <td>S7339</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CPI613</td>\n      <td>Selleck Chemicals</td>\n      <td>S2776</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Compound 3 k</td>\n      <td>Selleck Chemical</td>\n      <td>S8616</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NCT503</td>\n      <td>Selleck Chemical</td>\n      <td>S8619</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>AG221</td>\n      <td>Selleck Chemical</td>\n      <td>S8205</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>NLG-8189</td>\n      <td>Selleck Chemical</td>\n      <td>S7756</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>IACS-10759</td>\n      <td>Selleck Chemical</td>\n      <td>S8731</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dapagliflozin</td>\n      <td>Selleck Chemical</td>\n      <td>S1548</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>2-DG</td>\n      <td>Selleck Chemical</td>\n      <td>S4701</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DHEA</td>\n      <td>Selleck Chemical</td>\n      <td>S2604</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ND-646</td>\n      <td>MedChemExpress</td>\n      <td>HY-101842</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>V-9302</td>\n      <td>Probechem Biochemicals</td>\n      <td>1855871-76-9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>N-acetyl cysteine (NAC)</td>\n      <td>Sigma-Aldrich</td>\n      <td>616-91-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HSP90 (Mouse monoclonal)</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>sc-13119; RRID:AB_675659</td>\n      <td>(WB 1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GLS (Rabbit polyclonal)</td>\n      <td>Proteintech</td>\n      <td>Cat# 12855\u20131-AP, RRID:AB_2110381</td>\n      <td>(WB 1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b3H2AX (Rabbit monoclonal)</td>\n      <td>Cell Signaling Technology</td>\n      <td>Cat# 9718; RRID:AB_2118009</td>\n      <td>(WB 1:1000) (IHC 1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ki67 (Rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat# ab15580; RRID:AB_443209</td>\n      <td>(IHC 1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Cleaved Caspase-3 (Rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab2302</td>\n      <td>(IHC 1:200)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CellROX Deep Red Flow Cytometry Assay Kit</td>\n      <td>Life Technologies</td>\n      <td>C10491</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>javaGSEA desktop application</td>\n      <td>http://software.broadinstitute.org/gsea</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism - Graphpad</td>\n      <td>https://www.graphpad.com/scientific-software/prism/</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell lines\n\nThe human liver cancer cell lines Hep3B, Huh7, HepG2, SNU398, SNU449, Huh6, SK-Hep1, JHH1, SNU387, and PLC/PRF/5 were provided by Erasmus University (Rotterdam, Netherlands). MHCC97H was provided by the Liver Cancer Institute of Zhongshan Hospital (Shanghai, China). The majority of liver cancer cell lines were established from hepatocellular carcinoma (HCC). Among them, SK-Hep1 was established from an endothelial tumor in the liver and Huh6 is a hepatoblastoma cell line. HCC cells were cultured in DMEM with 10% FBS and penicillin/streptomycin (Gibco) at 37\u00b0C/5% CO2. All cell lines were tested negative for mycoplasma contamination. The cell lines were authenticated by applying short tandem-repeat (STR) DNA profiling.\n\n### Compounds and antibodies\n\nCB-839 (S7655), BPTES (S7753), BAY-876 (S8452), AZD3965 (S7339), CPI613 (S2776), Compound 3 k (S8616), NCT503 (S8619), AG221 (S8205), NLG-8189 (S7756), IACS-10759 (S8731), Dapagliflozin (S1548), 2-DG (S4701) and DHEA (S2604) were purchased from Selleck Chemicals. ND-646 (HY-101842) was purchased from MedChemExpress. V-9302 (1855871-76-9) was purchased from Probechem Biochemicals. N-acetyl cysteine (NAC) was purchased from Sigma. Antibody against HSP90 (sc-13119) was purchased from Santa Cruz Biotechnology. Antibody against two different splice forms of GLS, KGA/GAC, (12855\u20131-AP) was purchased from Proteintech. Antibody against \u03b3H2AX (#9718) was purchased from Cell Signaling. Antibodies against Ki67 (ab15580) and Cleaved caspase-3 (ab2303) were from Abcam.\n\n### Protein lysate preparation and immunoblotting\n\nCells were washed with PBS and lysed with RIPA buffer supplemented with Complete Protease Inhibitor (Roche) and Phosphatase Inhibitor Cocktails II and III (Sigma). Protein quantification was performed with the BCA Protein Assay Kit (Pierce). All lysates were freshly prepared and processed with Novex NuPAGE Gel Electrophoresis Systems (Thermo Fisher Scientific) followed by western blotting.\n\n### Long-term colony formation assays\n\nCells were cultured and seeded onto 6-well plates at a density of 2\u201310\u00a0\u00d7\u00a0104 cells per well, depending on the\u00a0growth rate, and were cultured in normal DMEM medium containing 4 mM glutamine (11995073, ThermoFisher), DMEM medium without glutamine (10313021, ThermoFisher), or the indicated drugs for 10\u201314 d (medium was changed twice a week). Cells were then fixed with 4% formaldehyde in PBS and stained with 0.1% crystal violet diluted in water.\n\n### Incucyte cell proliferation assay and apoptosis assay\n\nIndicated cell lines were seeded onto 96-well plates at a density of 1000\u20138000 cells per well, depending on the\u00a0growth rate and design of the experiments. About 12 hr after seeding, cells were cultured in medium with drugs of indicated concentrations using the HP D300 Digital Dispenser (HP) and imaged every 4 hr in Incucyte ZOOM (Essen Bioscience). Phase-contrast images were analyzed to detect cell proliferation based on cell confluence. For cell apoptosis, caspase-3/7 green apoptosis assay reagent was added to the\u00a0culture medium and cell apoptosis was analyzed based on green fluorescent staining of apoptotic cells.\n\n### CellTiter blue viability assays\n\nCell lines were cultured and seeded into 96-well plates (2000\u20135000 cells per well). After about 12 hr after seeding, drugs with the indicated concentrations were added to liver cancer cells. Cell viability was measured with the CellTiter-Blue assay (Roche) after treatment with the\u00a0drug for 72 hr. The relative viability of different cell lines in the presence of drug was normalized against control conditions (untreated cells) after subtraction of the\u00a0background signal.\n\n### ROS detection\n\nThe cells were treated in the absence or presence of drugs for 48 hr. ROS level in cells was detected using CellROX Deep Red Flow Cytometry Assay Kit (C10491, Life Technologies) according to the manufacturer\u2019s instructions.\n\n### Immunohistochemical staining and scoring\n\nHCC specimens were obtained from patients who underwent curative surgery in Eastern Hepatobiliary Hospital of the Second Military Medical University in Shanghai, China. Patients were not subjected to any preoperative anticancer treatment. Ethical approval was obtained from the Eastern Hepatobiliary Hospital Research Ethics Committee and written informed consent was obtained from each patient. Immunohistochemistry (IHC) was performed according to our previous study (Jin et al., 2017). Briefly, formalin-fixed paraffin-embedded samples from HCC patients were probed with the\u00a0GLS1 antibody (12855\u20131-AP, Proteintech). Formalin-fixed paraffin-embedded samples were also obtained from xenograft tumors and probed with antibodies against Ki-67 (sc-23900, Santa Cruz), against \u03b3H2AX (#9718) and cleaved caspase-3 (ab2303, Abcam). Following incubation with the primary antibodies, positive cells were visualized using DAB+ as a chromogen.\n\nSemiquantitative scores were used to analyze the\u00a0immunostaining of each HCC case in tissue microarray. Intensity score of staining was categorized into 0 (-), 1 (+), 2 (++), or 3 (+++), denoting negative, weak, moderate, or strong staining, respectively. Percentage score of immunostaining was categorized into 0 (0\u20135%), 1 (6\u201325%), 2 (26\u201350%), 3 (51\u201375%), or 4 (>76%) based\u00a0on the percentage of positive cells. Three random microscope fields per tissue were calculated. The sum of intensity and percentage of staining was used as the\u00a0final score of expression level and determined by the formula: final score\u00a0=\u00a0intensity score\u00a0\u00d7\u00a0percentage score. The final score of\u00a0\u22644 was defined as a\u00a0low expression of GLS1 and\u00a0>4 as a\u00a0high expression of GLS1.\n\n### Metabolomics\n\nCells were cultured in 6-well plates until 60% confluent. The\u00a0medium was replaced 24 hr before harvesting. Then, cells were treated with DMSO and CB-839 (4 \u03bcM for SNU398 and 8 \u03bcM for HepG2) for 4 hr and 24 hr, respectively. After washing with ice-cold PBS, metabolites were extracted from cells in 0.5 mL lysis buffer containing methanol/acetonitrile/dH2O (2:2:1). Samples were spun at 16,000\u00a0\u00d7\u00a0g for 15 min at 4\u00b0C. Supernatants were collected for LC-MS analysis.\n\nLC-MS analysis was performed on an Exactive mass spectrometer (Thermo Fisher Scientific) coupled to a Dionex Ultimate 3000 autosampler and pump (Thermo Fisher Scientific). The MS operated in polarity-switching mode with spray voltages of 4.5 and \u22123.5 kV. Metabolites were separated using a SeQuant ZIC-pHILIC HPLC Columns (2.1 mm\u00a0\u00d7\u00a0150 mm, 5 \u03bcm, guard column 2.1 mm\u00a0\u00d7\u00a020 mm, 5 \u03bcm; Merck) using a linear gradient of acetonitrile and eluent A [20 mM (NH4)2CO3, 0.1% NH4OH in ULC/MS grade water (Biosolve)]. The\u00a0flow rate was set at 150 \u03bcL/min. Metabolites were identified and quantified using LCQUANTM Quantitative Software (Thermo Fisher Scientific) on the basis of exact mass within 5 ppm and further validated by concordance with retention times of standards. Metabolites were quantified using LCQUANTM Quantitative Software (Thermo Fisher Scientific). Peak intensities were normalized based on median peak intensity.\n\n### Compound screen\n\nSNU398 and HepG2 cells were seeded in 96-well plates, respectively. A total of 13 compounds inhibiting a variety of druggable tumor metabolism targets were independently added into the plates at a certain concentration gradient, and cultured for 4 d. Then IC50 concentrations for each compound were analyzed. Then, SNU398 and HepG2 cells were firstly treated with 4 and 8 \u03bcM CB-839, respectively, and further treated with IC50 concentrations of each compound. For the compound has IC50 \u2265100 \u03bcM, the concentration of 100 \u03bcM was used. For 2-DG, a routine concentration at the mM level was used. The synergistic viability inhibition was analyzed using the following formula: synergistic inhibition = inhibition of combination \u2013\ufeff inhibition of CB-839 \u00d7 (1 + inhibition of candidate compound).\n\n### Xenografts model\n\nAll animals were manipulated according to protocols approved by the Shanghai Medical Experimental Animal Care Commission and the\u00a0Shanghai Cancer Institute. SNU398 cells (8\u00a0\u00d7\u00a0106 cells per mouse) and MHCC97H (6\u00a0\u00d7\u00a0106 cells per mouse) were injected subcutaneously into the right posterior flanks of 6-week-old BALB/c nude mice (six mice per group), respectively. Tumor volume based on caliper measurements was calculated by the modified ellipsoidal formula: tumor volume = \u00bd length \u00d7 width. When tumors reached a volume of approximately 50\u2013100 mm3, mice were randomly assigned to 5 d/week treatment with vehicle, CB-839 (150 mg/kg, oral gavage, twice per day), V-9302 (30 mg/kg, intraperitoneal injection), or a drug combination in which each compound was administered at the same dose and scheduled as single agents.\n\n### Statistics\n\nStatistical significance was calculated by Student\u2019s t test with two tails. All data are expressed as mean\u00a0\u00b1\u00a0SEM. Prism and Microsoft Excel were used to generate graphs and statistical analyses. *p value\u00a0<\u00a00.05, **p value\u00a0<\u00a00.01, ***p value\u00a0<\u00a00.001.\n",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "9961fef5-cde9-4860-8e7e-bfe2454ccdfc",
+      "submission_id": "945920ad-0f19-4668-bc09-3f268e17a6b6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthew G Vander Heiden, Massachusetts Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56749.sa1](https://doi.org/10.7554/eLife.56749.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe authors report that glutaminase inhibitors synergize with inhibitors of the neutral amino acid transporter ASCT2 as a potential treatment for hepatocellular carcinoma. They show that small molecule inhibition of ASCT2 synergizes with glutaminase inhibitors in cell lines that do not respond to glutaminase inhibitor alone. They also show that the combination drug treatment decreases glutathione levels and increases intracellular ROS, suggesting that glutathione depletion is a liability of glutamine starvation in liver cancer cells. The drug combination also slows tumor growth in xenograft models suggesting this drug combination warrants further study as a treatment for hepatocellular carcinoma.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A powerful drug combination strategy targeting glutamine addiction for the treatment of liver cancer\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Matthew G Vander Heiden as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jonathan Cooper as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThe authors report that glutaminase inhibitors synergize with inhibitors of the neutral amino acid transporter ASCT2 as a potential treatment for hepatocellular carcinoma. They show that small molecule inhibition of ASCT2 synergizes with glutaminase inhibitors in cell lines that do not respond to glutaminase inhibitor alone. They also show that the combination drug treatment decreases glutathione levels and increases intracellular ROS, and treatment with the antioxidant N-acetylcysteine provides a partial rescue, suggesting that glutathione depletion is a liability of glutamine starvation in liver cancer cells. Finally, they observe the drug combination results in ~40% lower tumor volume and increased expression of markers of DNA damage and apoptosis in xenograft models.\n\nEssential revisions:\n\nPlease see comments from both reviewers below. Please take all suggestions into consideration, but the following should be addressed with either data or discussion in a revised manuscript if possible:\n\n1) Is any information available on how responder cells differ from non-responder cells? If clues can be gleaned from the Cancer Cell Line Encyclopedia and the Dependency Map (depmap.org) based on mutational status or gene expression please discuss this in the paper. Even in the absence of this, considering whether \u03b2-catenin mutations correlates with response should be considered per reviewer 2.\n\n2) If possible please address how much V-9302 affects amino acid uptake from the media. If this is not possible, a discussion of the Broer et al. Front Pharmacol 2018 paper suggesting V-9302 is not selective for ASCT2 is warranted.\n\n3) Please clarify how the 4 GD cell lines were chosen to test the drug combination chosen and provide data for other cells, including the GID lines, if available.\n\n4) Please comment on expression of the ASCT1 splice variants, and consider whether this tracks with differential sensitivity (see reviewer 2 comment 1).\n\n5) Please discuss potential issues of targeting glutamine metabolism in patients with HCC who also have impaired ammonia metabolism. If possible test ammonia levels in mice treated with the drug combination.\n\n6) Please clarify how the 13 different \"metabolic drugs\" were selected to test for synergy with CB-839.\n\n7) Please reconsider interpretation of Figure 5 per reviewer 2 point 5, as the effects on glutathione seems additive, while the effects on ROS and gH2AX are clearly synergistic. This indicates that there could be other reasons for the ROS, gH2AX effects.\n\n8) Reviewer 2 noted that the NAC effect in Figure 5F is not dramatic, and not dose dependent in HEPG2 cells. If feasible, please repeat this experiment and test the effect of NAC alone to compare with the combination affect.\n\n9) Please address additional points of clarification raised by the reviewers:\n\n\u2013 All metabolites shown in Figure 3A should be more clearly labeled and/or presented in a supplementary figure.\n\n\u2013 Make clear that KGA/GAC represent different splice forms of GLS.\n\n\u2013 Discuss levels of glutamine in media relative to those in blood.\n\n\u2013 Clarify if Figure 3B is a graphic representation of the findings of the MS screen (shown in Figure 3A), or results of an independent set of experiments for verification.\n\n\u2013 Define that xCT = cystine-glutamate antiporter system for a broad audience.\n\nFull reviewer comments for your reference:\n\nReviewer #1:\n\nJin et al. report that the glutaminase inhibitor CB-839 synergizes with the putative ASCT2 inhibitor V-9302 in models of hepatocellular carcinoma. They first confirm a previously observed dependency on glutamine in the media for most liver cancer cell lines to grow in culture, and note that this does not translate into sensitivity to the glutaminase inhibitor CB-839. Through a small molecule screen, they find that V-9302, thought to inhibit the neutral amino acid transporter ASCT2, synergizes with CB-839 in four of the seven glutamine-dependent models that did not respond strongly to CB-839. They show that the combination drug treatment decreases glutathione levels and increases intracellular ROS, and treatment with the antioxidant N-acetylcysteine provides a partial rescue, suggesting that glutathione depletion is a major liability of glutamine starvation in liver cancer cells. Finally, they observe the drug combination results in ~40% lower tumor volume and increased expression of markers of DNA damage and apoptosis in xenograft models.\n\nThe result that liver cancer cells respond heterogeneously to glutaminase inhibition is interesting, and fits with glutamine having other fates, including glutathione, that are independent of glutaminase. This is a nice point as many equate glutaminase and glutamine dependency, and the point could be better discussed. Some additional suggestions include:\n\n1) A major questions raised by this work is what underlies such differential sensitivity to targeting of glutamine metabolism across the cells considered. While they understandably focus on the responders, is there any clue as to how they differ from the non-responders? Perhaps there are clues from the Cancer Cell Line Encyclopedia and the Dependency Map (depmap.org), or based on mutational status or gene expression?\n\n2) Recent work (Broer et al. Front Pharmacol 2018) has suggested that V-9302 is not selective for ASCT2 and instead binds other amino acid transporters such as SNAT2 and LAT1, and that V-9302 could be acting by inhibiting uptake of other amino acids. Are data available as to how much V-9302 reduces glutamine uptake from media?\n\n3) It would be useful as a resource for the field if all metabolites shown in Figure 3A were labeled and/or presented in a supplementary figure.\n\n4) As a minor point, suggesting CB-839 is increasingly used to treat cancer in combination is potentially misleading. It is being tested in many trials, but is not yet proven to be effective consistently in any cancer.\n\n5) How were the 4 GD cell lines to test the combination chosen? If data are available for other cells, including the GID lines, that information should be included.\n\n6) The authors might consider that invoking TCA-cycle dependent NADPH production as an explanation for why ROS is increased with the drug combination is potentially inconsistent with the NAC rescue. NADPH is also required to keep NAC reduced in cells similarly to GSH.\n\nReviewer #2:\n\nFollowing analysis of glutamine metabolism in HCC cell lines, and bioinformatics analysis of human HCC Haojie Jin et al. revealed that combined inhibition of mitochondrial glutaminase (GLS) and the glutamine transporter ASCT2, potently inhibits growth of many human HCC cell lines. Two different inhibitors of ASCT2 were similarly potent in combination with CB-839 \u2013 a GLS inhibitor. The combination increased depleted glutathione levels, increased ROS levels, and increased DNA damage marker levels and apoptosis. The latter were dependent on ROS as NAC treatment abolished the DDR and apoptosis. The same combination was tested in vivo, with seemingly good tolerability, and resulted in a twofold reduction in tumor volume, which was much better than each of the drugs alone.\n\nTumor metabolism is gaining interest lending hope that metabolic interventions will move into the treatment arena. Parenthetically, they are already there for many years as many of the classic chemotherapy drugs are \"metabolic\" molecules, interfering with nucleoside metabolism, lending hope that this is indeed a productive path to follow. HCC incidence is rapidly rising, and there are so far no treatments that really succeed in reducing mortality. Thus, the manuscript brings together two highly important topics and reveal a novel metabolic vulnerability of HCC.\n\n1) Glutamine synthetase is overexpressed in HCC, and catalyzes the reverse reaction from GLS, so there should be sufficient levels of cytoplasmic glutamine. ASCT1 is expressed on both the cell membrane and mitochondrial membrane, using two different splice variants (https://doi.org/10.1016/j.cmet.2019.11.020), which can be discriminated by Western blot. I wonder whether the differential sensitivity of the different cell lines relates to the relative abundance of the two ASCT1 variants. This could strengthen the hypothesis that the drug combination targets mitochondrial glutamine metabolism.\n\n2) GLS1 is a mitochondrial enzyme which is predominantly expressed at the periportal zone of the liver acinus. It plays key roles in ammonia metabolism. This could pose a problem for patients with HCC, in many of which ammonia metabolism is already impaired due to co-existing liver disease. The authors should at least discuss this issue, or possibly test ammonia levels in mice treated with the different drug combinations.\n\n3) \u03b2\u2013catenin is mutated in a significant number of human HCCs and directly regulates hepatocyte glutamine metabolism. Could the authors correlate \u03b2-catenin mutation in the cell line and human cohorts with CB-839 response and glutamine metabolism respectively?\n\n4) The authors tested whether 13 different \"metabolic drugs\" synergized with CB-839. Can they elaborate on how these were selected?\n\n5) In Figure 5 the effects on glutathione seems additive, while the effects on ROS and gH2AX are clearly synergistic. This indicates that there could be other reasons for the ROS, gH2AX effects. While NAC treatment indicates that ROS are causal in gH2AX and apoptosis, it doesn't directly implicate glutathione depletion as the cause for increased ROS. The interpretation of the data should be changed accordingly.\n",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "65fae1eb-46d4-48f1-9d38-c4bc59e867f8",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C1",
+      "claim": "Human liver cancer is dependent on extracellular glutamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we found that human liver cancer was dependent on extracellular glutamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding, which is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "535067a0-796e-4f07-8ad5-e547d764db82",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C2",
+      "claim": "CB-839 as monotherapy has a very limited anticancer effect against glutamine addicted human liver cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, targeting glutamine addiction using the glutaminase inhibitor CB-839 as monotherapy had a very limited anticancer effect, even against the most glutamine addicted human liver cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract and supported by experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "8d8de57d-f5fb-4114-8d4e-68f2cb8be669",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C5",
+      "claim": "The combination of CB-839 and V-9302 depletes glutathione in glutamine dependent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanically, a combination of CB-839 and V-9302 depleted glutathione and induced reactive oxygen species (ROS), resulting in apoptosis of GD cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is stated in the abstract and supported by metabolomics data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "26bba900-50a8-49a6-89a2-3852993954c3",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C6",
+      "claim": "The combination of CB-839 and V-9302 induces reactive oxygen species (ROS) in glutamine dependent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanically, a combination of CB-839 and V-9302 depleted glutathione and induced reactive oxygen species (ROS), resulting in apoptosis of GD cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is stated in the abstract and supported by ROS measurement data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "9344bc34-7d17-4568-991a-63419efdaf77",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C7",
+      "claim": "The combination of CB-839 and V-9302 results in apoptosis of glutamine dependent cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanically, a combination of CB-839 and V-9302 depleted glutathione and induced reactive oxygen species (ROS), resulting in apoptosis of GD cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This outcome is stated in the abstract and supported by apoptosis assay data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "8977f046-ca23-4c91-b0ea-820d85efd500",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C8",
+      "claim": "The combination of CB-839 and V-9302 shows tumor inhibition in HCC xenograft mouse models in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this combination also showed tumor inhibition in HCC xenograft mouse models in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the abstract and supported by xenograft data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "4577a7ab-65a6-4d2e-8c86-84d9e7bb1453",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C9",
+      "claim": "Liver cancer is the fourth leading cause of cancer death.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver cancer is one of the most common malignant tumors worldwide and ranks as the fourth leading cause of cancer death (Bray et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction with a citation to Bray et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "131c9559-bc9a-4e0f-bdf2-eab9721344d3",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C10",
+      "claim": "Most liver cancer patients are diagnosed at an advanced stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the rapid progress and delayed diagnosis, most liver cancer patients are diagnosed at an advanced stage, which leaves very few treatment options and poor prognosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is made in the introduction based on general clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "db4450df-492e-45be-b211-f5585d9b0e12",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C11",
+      "claim": "Sorafenib and lenvatinib provide only modest survival benefits to HCC patients with low response rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently approved agents, such as sorafenib and lenvatinib, provide only modest survival benefits to hepatocellular carcinoma (HCC) patients with low response rates (Llovet et al., 2008; Kudo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction with citations to Llovet et al., 2008 and Kudo et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "fe9783fe-408e-46d5-981a-ded61c4a965c",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C12",
+      "claim": "Nine out of eleven liver cancer cell lines are glutamine dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Both long-term colony formation assay (Figure 1a) and short-term IncuCyte assay (Figure 1b) showed that Gln deprivation impaired the proliferation of most liver cancer cell lines (9 out of 11) in vitro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by data shown in Figure 1a and 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "50fea1dd-bebc-47fe-a8ba-7e9623672451",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C13",
+      "claim": "Glutamine metabolism-related genes are upregulated in liver cancer tissues compared to non-cancerous liver tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The heatmap shows the obvious upregulation of these genes in liver cancer tissues as compared to their corresponding non-cancerous liver tissues in TCGA cohort containing 50 paired HCC samples (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by the heatmap in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "8a50bbfc-7528-427b-9f0c-777f3d2a46ed",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C14",
+      "claim": "Dysregulation of glutamine metabolism genes correlates with poor prognosis of human liver cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, SurvExpress survival analysis of 381 TCGA samples indicated that the dysregulation of Gln metabolism genes correlated with poor prognosis of human liver cancer patients (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by survival analysis shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "165eedf3-e0aa-47e6-94db-a53224bac3ed",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C15",
+      "claim": "GLS1 mRNA levels are significantly increased in HCC tissues compared to non-tumor tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that mRNA levels of GLS1 are significantly increased in HCC tissues compared to non-tumor tissues (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by data in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "cf22588e-229e-4f5f-b96b-7bf24b32a487",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C16",
+      "claim": "GLS1 level is increased to more than double in about 55% of HCC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 229 paired samples, the GLS1 level is increased to more than double in about 55% of HCC patients (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by data in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "97cff167-5d23-4858-a21e-1cb679d46a10",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C17",
+      "claim": "High mRNA level of GLS1 correlates with poor prognosis of human liver cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "TCGA data indicated that the high mRNA level of GLS1 correlated with the poor prognosis of human liver cancer patients (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by survival analysis in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "7c36e77c-1669-4408-9612-4eae85285f17",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C18",
+      "claim": "HCC patients with high protein expression of GLS1 exhibit worse overall survival compared to patients with low protein expression of GLS1.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kaplan-Meier analysis indicates that HCC patients with high protein expression of GLS1 exhibit worse overall survival (OS) and disease-free survival (DFS) as compared to patients with low protein expression of GLS1 (Figure 2d,e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by Kaplan-Meier analysis in Figure 2d, e, and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "62647f3c-7db8-4087-b00d-28c8fba25f39",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C19",
+      "claim": "HCC patients with high protein expression of GLS1 exhibit worse disease-free survival compared to patients with low protein expression of GLS1.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kaplan-Meier analysis indicates that HCC patients with high protein expression of GLS1 exhibit worse overall survival (OS) and disease-free survival (DFS) as compared to patients with low protein expression of GLS1 (Figure 2d,e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by Kaplan-Meier analysis in Figure 2d, e, and f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "fb30d7fe-d07d-4026-9ad2-dc218ed50142",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C20",
+      "claim": "CB-839 treatment severely impairs the proliferation of only three glutamine dependent cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CB-839 treatment only severely impaired the proliferation of three GD cell lines (Figure 2g and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by data in Figure 2g and h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "cd79a624-2c80-44b9-b2ef-b0cc77acd908",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C21",
+      "claim": "There is no correlation between protein level of GLS1 and CB-839 sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also analyzed the correlation between CB-839 sensitivity and expression level of its target and found no correlation between protein level of GLS1 and CB-839 sensitivity (Figure 2g, h and i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by data in Figure 2g, h, and i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "4b87f8f2-d950-4d7d-914c-d0b47c1584a6",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C22",
+      "claim": "The protein level of GLS1 is not correlated to glutamine addiction in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the protein level of GLS1 was not correlated to Gln addiction in vitro (Figures 1a, b and 2i), indicating that Gln addiction to liver cancer cells is not dependent on GLS1 level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by data in Figures 1a, b, and 2i.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "e193c674-8b48-493c-a7d6-273137f8fe8c",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C23",
+      "claim": "Glutamine addiction to liver cancer cells is not dependent on GLS1 level.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the protein level of GLS1 was not correlated to Gln addiction in vitro (Figures 1a, b and 2i), indicating that Gln addiction to liver cancer cells is not dependent on GLS1 level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is stated in the text and inferred from the lack of correlation shown in Figures 1a, b, and 2i.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "234065b7-f947-49fe-a1f0-8f2a68c8267c",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C24",
+      "claim": "CB-839 treatment significantly decreases glutamate levels in SNU398 and HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CB-839 treatment significantly decreased a number of key downstream metabolites involved in Gln metabolism, such as glutamate (GLU), TCA cycle intermediate (\u03b1-KG), redox metabolite (glutathione, NADPH) in both cell lines (Figure 3a and b and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by metabolomics data in Figure 3a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "b17ab176-b7fa-4d19-91ec-e20c84f9a7ee",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C25",
+      "claim": "CB-839 treatment significantly decreases \u03b1-KG levels in SNU398 and HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CB-839 treatment significantly decreased a number of key downstream metabolites involved in Gln metabolism, such as glutamate (GLU), TCA cycle intermediate (\u03b1-KG), redox metabolite (glutathione, NADPH) in both cell lines (Figure 3a and b and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by metabolomics data in Figure 3a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "87edf52b-ace5-403e-a024-885eb0e17a7e",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C26",
+      "claim": "CB-839 treatment significantly decreases glutathione levels in SNU398 and HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CB-839 treatment significantly decreased a number of key downstream metabolites involved in Gln metabolism, such as glutamate (GLU), TCA cycle intermediate (\u03b1-KG), redox metabolite (glutathione, NADPH) in both cell lines (Figure 3a and b and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by metabolomics data in Figure 3a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "24565d1f-d23a-49bf-b86f-a23732869c77",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C27",
+      "claim": "CB-839 treatment significantly decreases NADPH levels in SNU398 and HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CB-839 treatment significantly decreased a number of key downstream metabolites involved in Gln metabolism, such as glutamate (GLU), TCA cycle intermediate (\u03b1-KG), redox metabolite (glutathione, NADPH) in both cell lines (Figure 3a and b and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by metabolomics data in Figure 3a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "61acb1c6-8600-4c8d-9cec-7f76c779dcd1",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C28",
+      "claim": "CB-839 efficiently blocks glutamine utilization and interferes with the dynamic changes of intermediates in glutamine metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that CB-839 efficiently blocks Gln utilization and interferes with the dynamic changes of intermediates in Gln metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is stated in the text and inferred from the metabolomics data showing decreased metabolite levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "d59b4525-97de-46dd-b353-1dff3d27fcf9",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C29",
+      "claim": "The combination of CB-839 and V-9302 shows synergistic anti-proliferation effect in glutamine dependent cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the combination showed synergistic anti-proliferation effect in GD cell lines, but only showed limited anti-tumor effect in GID cell lines in vitro (Figure 4a,b and c and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by data in Figure 4a, b, c, and supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "d70dd345-aadd-4bee-9dfe-8c3b13f30885",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C30",
+      "claim": "The combination of CB-839 and V-9302 shows limited anti-tumor effect in glutamine independent cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the combination showed synergistic anti-proliferation effect in GD cell lines, but only showed limited anti-tumor effect in GID cell lines in vitro (Figure 4a,b and c and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by data in Figure 4a, b, c, and supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "caf84520-d314-479d-8dec-461f7b728166",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C31",
+      "claim": "CB-839 or V-9302 alone significantly decreases the level of GSH in SNU398 and HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that CB-839 or V-9302 alone significantly decreased the level of GSH, while the combination resulted in a further decrease in GSH in both cell lines (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by GSH measurement data in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "f00ef75d-fe37-4d6f-9496-e5f475eddeb3",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C32",
+      "claim": "The combination of CB-839 and V-9302 results in a further decrease in GSH compared to single agents in SNU398 and HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that CB-839 or V-9302 alone significantly decreased the level of GSH, while the combination resulted in a further decrease in GSH in both cell lines (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by GSH measurement data in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "9479c457-9885-474e-97e2-fe0e3cf94a59",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C33",
+      "claim": "Single agent CB-839 or V-9302 only modestly increases ROS production.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of intracellular ROS levels showed that single agent CB-839 or V-9302 only modestly increased the ROS production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the text and supported by ROS measurement data in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "e1f736fd-6648-4469-af43-da61dc5ed78f",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C34",
+      "claim": "The combination of CB-839 and V-9302 dramatically increases ROS production.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their combination dramatically increased the already-elevated ROS production, reaching a level that caused severe DNA damage, as evidenced by an increase in \u03b3-H2AX (Figure 5b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by ROS measurement data in Figure 5b and western blot in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "f4849769-3bc7-4570-904e-dabdecaa75ff",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C35",
+      "claim": "The combination of CB-839 and V-9302 causes severe DNA damage as evidenced by an increase in \u03b3-H2AX.",
+      "claim_type": "EXPLICIT",
+      "source": "However, their combination dramatically increased the already-elevated ROS production, reaching a level that caused severe DNA damage, as evidenced by an increase in \u03b3-H2AX (Figure 5b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by western blot data in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "b091c3bd-ef0d-47ce-badd-242afe45eef2",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C36",
+      "claim": "NAC treatment rescues the cell viability and proliferation of SNU398 and HepG2 cells in the presence of both CB-839 and V-9302.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that NAC treatment rescued the cell viability and proliferation of SNU398 and HepG2 cells in the presence of both CB-839 and V-9302 (Figure 5d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by data in Figure 5d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "1ad6d34e-92c1-49f0-bd5e-d271ad9b5968",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C37",
+      "claim": "The synergistic induction of apoptosis by CB-839 and V-9302 can be rescued by NAC treatment in SNU398 and HepG2 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the strong synergistic induction of apoptosis can be rescued by NAC treatment in both SNU398 and HepG2 cells, as indicated by the IncuCyte caspase-3/7 apoptosis assay (Figure 5f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by apoptosis assay data in Figure 5f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "3270da55-3967-42f6-b830-c224b2b40200",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C38",
+      "claim": "GLS1 inhibition by CB-839 reduces mitochondrial glutamate level.",
+      "claim_type": "EXPLICIT",
+      "source": "GLS1 inhibition by CB-839 reduces mitochondrial Glu level, which decreases TCA-dependent NADPH production, elevating glutathione oxidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is stated in the text as part of the model explaining synergy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "dbc7d8af-b078-4b8f-a93d-d7e72897b132",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C39",
+      "claim": "GLS1 inhibition by CB-839 decreases TCA-dependent NADPH production.",
+      "claim_type": "EXPLICIT",
+      "source": "GLS1 inhibition by CB-839 reduces mitochondrial Glu level, which decreases TCA-dependent NADPH production, elevating glutathione oxidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is stated in the text as part of the model explaining synergy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "0d8f9164-157c-4a23-84f0-7bcfe20be30a",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C40",
+      "claim": "GLS1 inhibition by CB-839 elevates glutathione oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "GLS1 inhibition by CB-839 reduces mitochondrial Glu level, which decreases TCA-dependent NADPH production, elevating glutathione oxidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is stated in the text as part of the model explaining synergy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "8e5b597a-58a6-415a-a22d-db4eddebbd15",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C41",
+      "claim": "CB-839 decreases intracellular glutamate that is essential for cystine import by xCT.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, CB-839 also decreases intracellular Glu that is essential for cystine import by xCT, a cystine/glutamate antiporter, thus cutting down the cysteine conversion that in turn serves as the rate-limiting precursor for GSH biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is stated in the text as part of the model explaining synergy.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "8708b220-5844-41eb-be00-baba8bd3488a",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C42",
+      "claim": "Cysteine serves as the rate-limiting precursor for GSH biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, CB-839 also decreases intracellular Glu that is essential for cystine import by xCT, a cystine/glutamate antiporter, thus cutting down the cysteine conversion that in turn serves as the rate-limiting precursor for GSH biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and represents established biochemical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "03f83271-836b-401b-95b7-6352c665f094",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C43",
+      "claim": "The combination of CB-839 and V-9302 elicits strong growth inhibition in SNU398 xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that the combination elicited a strong growth inhibition in both SNU398 and MHCC97H xenograft models, while single-drug treatment showed modest anti-tumor effects (Figure 6a,b,c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by xenograft data in Figure 6a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "d410686b-af51-4fcf-b1a3-f18f9b34cb51",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C44",
+      "claim": "The combination of CB-839 and V-9302 elicits strong growth inhibition in MHCC97H xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that the combination elicited a strong growth inhibition in both SNU398 and MHCC97H xenograft models, while single-drug treatment showed modest anti-tumor effects (Figure 6a,b,c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by xenograft data in Figure 6c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "f124c2c2-a098-4a0c-b42a-633a21699a89",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C45",
+      "claim": "Single-drug treatment with CB-839 or V-9302 shows modest anti-tumor effects in xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "Results showed that the combination elicited a strong growth inhibition in both SNU398 and MHCC97H xenograft models, while single-drug treatment showed modest anti-tumor effects (Figure 6a,b,c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by xenograft data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "0986dbc3-f6b5-4244-a3e5-22bd97fd9061",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C46",
+      "claim": "No body weight reduction was observed in all treatment groups in xenograft studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured the body weight of mice during the treatment, and no body weight reduction was observed in all the treatment groups (Figure 6\u2014figure supplement 1), indicating good tolerability for this novel drug combination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by body weight data in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "4a460ab5-8484-45ff-a61f-8ac38be7c88d",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C47",
+      "claim": "The combination of CB-839 and V-9302 has good tolerability in xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "We also measured the body weight of mice during the treatment, and no body weight reduction was observed in all the treatment groups (Figure 6\u2014figure supplement 1), indicating good tolerability for this novel drug combination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is stated in the text and inferred from the lack of body weight reduction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "6cc1fc2c-6790-474b-beab-556f51979fb2",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C48",
+      "claim": "Treatment with the combination of CB-839 and V-9302 results in an obvious decrease in Ki67 positive cells in xenograft tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "IHC analyses showed that treatment with the combination of CB-839 and V-9302 resulted in an obvious decrease in Ki67 positive cells (Figure 6e,f,g and j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by IHC data in Figure 6e, f, g, and j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "77b1e0d5-8302-49b5-84fb-2572ed96e6ec",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C49",
+      "claim": "The combination of CB-839 and V-9302 significantly increases caspase-3 positive cells in xenograft tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the combination also significantly increased caspase-3 positive cells (Figure 6e,f,h and k) and \u03b3H2AX-positive cells (Figure 6e,f,i and l) in tumor tissues, supporting the induction of apoptosis and DNA damage in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by IHC data in Figure 6e, f, h, and k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "a97ba1b1-874b-4242-acbb-38455473dd31",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C50",
+      "claim": "The combination of CB-839 and V-9302 significantly increases \u03b3H2AX-positive cells in xenograft tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the combination also significantly increased caspase-3 positive cells (Figure 6e,f,h and k) and \u03b3H2AX-positive cells (Figure 6e,f,i and l) in tumor tissues, supporting the induction of apoptosis and DNA damage in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by IHC data in Figure 6e, f, i, and l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "282006de-892d-4a3d-8e61-f3e9caffdeb9",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C51",
+      "claim": "The combination of CB-839 and V-9302 induces apoptosis in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the combination also significantly increased caspase-3 positive cells (Figure 6e,f,h and k) and \u03b3H2AX-positive cells (Figure 6e,f,i and l) in tumor tissues, supporting the induction of apoptosis and DNA damage in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is stated in the text and supported by IHC data showing increased caspase-3 positive cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "8b35f9c7-1b96-425a-82d2-f117beb37214",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C52",
+      "claim": "The combination of CB-839 and V-9302 induces DNA damage in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the combination also significantly increased caspase-3 positive cells (Figure 6e,f,h and k) and \u03b3H2AX-positive cells (Figure 6e,f,i and l) in tumor tissues, supporting the induction of apoptosis and DNA damage in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is stated in the text and supported by IHC data showing increased \u03b3H2AX-positive cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "becc4b54-7401-41b1-9f3a-b314b68d90f7",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C53",
+      "claim": "CB-839 is a potent and noncompetitive allosteric GLS1 inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "CB-839 (also known as telaglenastat) is a potent and noncompetitive allosteric GLS1 inhibitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established knowledge about CB-839.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "96178123-4681-4767-8c51-20f00175f32b",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C54",
+      "claim": "CB-839 exhibits significant anti-proliferative activity in several types of cancer cell lines and xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "It exhibits significant anti-proliferative activity in several types of cancer cell lines and xenografts such as triple-negative breast cancer (Gross et al., 2014), lung adenocarcinoma (Galan-Cobo et al., 2019), chondrosarcoma (Peterse et al., 2018), and lymphoma cancer (Xiang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "efbb239d-2939-4fe5-a1c5-7fcc6d6d8c15",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C55",
+      "claim": "CB-839 overcomes metabolic adaptation to the mTOR inhibitor MLN128 in xenografts and patient-derived xenografts of lung squamous cell carcinomas.",
+      "claim_type": "EXPLICIT",
+      "source": "CB-839 overcomes metabolic adaptation to the mTOR inhibitor MLN128 in xenografts and patient-derived xenografts (PDXs) of lung squamous cell carcinomas (Momcilovic et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction with a citation to Momcilovic et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "8d64941f-85e9-4800-b8f1-611095a53d09",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C56",
+      "claim": "The combination of CB-839 and CDK4/6 inhibitors has shown promising results in human esophageal squamous cell carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the combination of CB-839 and CDK4/6 inhibitors has shown promising results in human esophageal squamous cell carcinoma (Qie et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction with a citation to Qie et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "a7dee59e-2bc3-4014-be44-9c3157298cee",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C57",
+      "claim": "CB-839 is under evaluation for the treatment of hematological malignancies and solid tumors in several phase I-II clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "CB-839 is also under evaluation for the treatment of hematological malignancies and solid tumors in several phase I-II clinical trials (Song et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction with a citation to Song et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "64a366af-06ba-4698-a728-52d907a47b41",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C58",
+      "claim": "Glutaminolysis converts glutamine to glutamate, which is catalyzed by mitochondrial glutaminase (GLS).",
+      "claim_type": "EXPLICIT",
+      "source": "Glutaminolysis converts glutamine to glutamate, which is catalyzed by mitochondrial glutaminase (GLS), and then further converted into tricarboxylic acid (TCA) cycle metabolites, generating ATP and NADPH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as established biochemical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "ec0a19f8-6b96-468f-8fa1-668636f83551",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C59",
+      "claim": "Glutaminolysis is directly involved in the regulation of reactive oxygen species (ROS) homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutaminolysis is also directly involved in the regulation of reactive oxygen species (ROS) homeostasis by providing not only precursors glutamate and cysteine for glutathione (GSH) synthesis but also promoting the production of NADPH via glutamate dehydrogenase (GLUD; Altman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction with a citation to Altman et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "746e4967-bbf4-4663-8f7a-ccf7dab6c99a",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C60",
+      "claim": "Many tumor types are particularly dependent on glutamine for proliferation and survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Many tumor types, such as pancreatic cancer (Son et al., 2013), acute myeloid leukemia (AML; Jacque et al., 2015), breast cancer (Gross et al., 2014), and lung cancer (Wang et al., 2018), are particularly dependent on glutamine for proliferation and survival, as glutamine controls oxidative phosphorylation, nucleotide biosynthesis, and redox homeostasis in these cells, and removal of glutamine leads to apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "75be3b7e-9139-4316-8c1e-f887b53cb4af",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C61",
+      "claim": "GLS1 regulates the stemness properties of HCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it is reported that GLS1, one major isoform of GLS, regulates the stemness properties of HCC, and targeting GLS1 achieved some therapeutic effect against HCC cells (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction with a citation to Li et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "1d6f8f6b-ad55-45e8-aeae-fcf7ee5ba88f",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C62",
+      "claim": "Targeting GLS1 achieved some therapeutic effect against HCC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, it is reported that GLS1, one major isoform of GLS, regulates the stemness properties of HCC, and targeting GLS1 achieved some therapeutic effect against HCC cells (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the introduction with a citation to Li et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "6a4a9207-5ec3-4774-8e51-4fadd171f53d",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C63",
+      "claim": "ASCT2 is a sodium-dependent solute carrier protein responsible for the import of neutral amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The alanine-serine-cysteine transporter, type-2 (ASCT2, encoded by gene SLC1A5), is a sodium-dependent solute carrier protein responsible for the import of neutral amino acids and is the primary transporter of glutamine in cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as established knowledge about ASCT2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "1c7d9d55-1bff-49bf-ab1f-8b30e7f7c231",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C64",
+      "claim": "ASCT2 is the primary transporter of glutamine in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The alanine-serine-cysteine transporter, type-2 (ASCT2, encoded by gene SLC1A5), is a sodium-dependent solute carrier protein responsible for the import of neutral amino acids and is the primary transporter of glutamine in cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as established knowledge about ASCT2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "bc96c488-1968-460f-8386-ca16de2f5d5e",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C65",
+      "claim": "Several studies have attributed glutathione synthesis and ROS stress with dysregulation of ASCT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have attributed glutathione (GSH) synthesis and ROS stress with dysregulation of ASCT2 (Schulte et al., 2018; Yoo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the results section with citations to Schulte et al., 2018 and Yoo et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "56cdd4cb-0896-4c17-a0e4-1a07ab893046",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C66",
+      "claim": "GSH is an important antioxidant that acts as a free radical scavenger upon its reaction with ROS in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GSH is an important antioxidant that acts as a free radical scavenger upon its reaction with ROS in cells (Bansal and Simon, 2018; Okazaki et al., 2017), raising the possibility that combination of CB-839 and V-9302 may interfere with ROS homeostasis of these liver cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the results section with citations to Bansal and Simon, 2018 and Okazaki et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "ffbb809b-c95a-4a2a-9648-e66e2c7186df",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C67",
+      "claim": "De novo pyrimidine synthesis was identified as a metabolic vulnerability of triple-negative breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, de novo pyrimidine synthesis was identified as a metabolic vulnerability of triple-negative breast cancer (TNBC), suggesting that inhibition of pyrimidine synthesis could sensitize TNBC to chemotherapy (Brown et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Brown et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "aa3443a8-9ab6-4ddc-b783-01b6c58b00b1",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C68",
+      "claim": "Cisplatin-resistant cancer cells are strongly dependent on glutamine for nucleotide biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Cisplatin-resistant cancer cells were found to be strongly dependent on glutamine for nucleotide biosynthesis and therefore became exquisitely sensitive to treatment with antimetabolites that target nucleoside metabolism (Obrist et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Obrist et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "56036a11-324b-4bf5-bd0a-06d1e2ae61cc",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C69",
+      "claim": "The HGF-MET axis inhibits pyruvate dehydrogenase complex (PDHC) activity but activates GLS to facilitate glutaminolysis in multiple liver cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The HGF-MET axis was reported to inhibit pyruvate dehydrogenase complex (PDHC) activity but activate GLS to facilitate glutaminolysis in multiple liver cancer cells (Huang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Huang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "282aec73-99a8-46ea-bef6-c50603eef560",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C70",
+      "claim": "The downregulation of Sirtuin four in liver cancer promotes HCC tumorigenesis via enhancing glutamine metabolism and regulating ADP/AMP levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study reported that the downregulation of Sirtuin four in liver cancer promoted HCC tumorigenesis via enhancing glutamine metabolism and regulating ADP/AMP levels (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Wang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "dd36b8c5-54b4-4579-ab78-bfe35be99eef",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C71",
+      "claim": "MYC-induced mouse liver tumors have increased GLS expression and decreased glutamate-ammonia ligase (GLUL) expression relative to surrounding tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MYC-induced mouse liver tumors had increased GLS expression and decreased glutamate-ammonia ligase (GLUL) expression relative to surrounding tissues, exhibiting elevated Gln catabolism (Xiang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Xiang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "eb29791b-15c0-40a0-83a8-796dbc7c3bef",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C72",
+      "claim": "MYC-induced mouse liver tumors exhibit elevated glutamine catabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MYC-induced mouse liver tumors had increased GLS expression and decreased glutamate-ammonia ligase (GLUL) expression relative to surrounding tissues, exhibiting elevated Gln catabolism (Xiang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Xiang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "05f7b704-b279-4917-85c4-d292f50e6257",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C73",
+      "claim": "There is debate about the target selectivity of V-9302 for ASCT2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is still some debate about the target selectivity of V-9302 for ASCT2. Broer et al (Angelika et al., 2018) reported that V-9302 did not inhibit ASCT2 and glutamine uptake, but rather blocked sodium-neutral amino acid transporter 2 (SNAT2) and the large neutral amino acid transporter 1 (LAT1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Angelika et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "e71dfa02-4bc2-4fa7-a9b1-919da502c021",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C74",
+      "claim": "V-9302 blocks sodium-neutral amino acid transporter 2 (SNAT2) and the large neutral amino acid transporter 1 (LAT1).",
+      "claim_type": "EXPLICIT",
+      "source": "Broer et al (Angelika et al., 2018) reported that V-9302 did not inhibit ASCT2 and glutamine uptake, but rather blocked sodium-neutral amino acid transporter 2 (SNAT2) and the large neutral amino acid transporter 1 (LAT1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Angelika et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "388a2b83-914f-4f5c-ad8c-15ca07924419",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C75",
+      "claim": "Both SNAT2 and LAT1 can mediate glutamine uptake in most cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it has been reported that, in addition to ASCT2, both SNAT2 and LAT1 also can mediate glutamine uptake in most cancer cells (Br\u00f6er and Br\u00f6er, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Br\u00f6er and Br\u00f6er, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "61a8dc56-59e3-49d1-9bf9-40ed9c399187",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C76",
+      "claim": "CB-839 induced metabolic vulnerability can be enhanced by OXPHOS inhibitor IACS-10759, PPP inhibitor DHEA, and PHGDH inhibitor NCT503.",
+      "claim_type": "EXPLICIT",
+      "source": "Impressively, we find that the CB-839 induced metabolic vulnerability also can be further enhanced by other several anti-metabolic drugs such as OXPHOS inhibitor IACS-10759, PPP inhibitor DHEA, and PHGDH inhibitor NCT503 (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the discussion and supported by data in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "468a5ef0-39a6-43f4-8262-5f14b3471916",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C77",
+      "claim": "Chronic liver disease has impaired liver function and usually leads to dysfunction of ammonia metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic liver disease has impaired liver function and usually leads to dysfunction of ammonia metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as established clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "6ef32d0c-9c89-4ca0-a088-8a4b3958150d",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C78",
+      "claim": "There is a general correlation between higher levels of ammonia and more severe encephalopathy in cirrhosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, there is a general correlation between higher levels of ammonia and more severe encephalopathy in cirrhosis (Olde Damink et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Olde Damink et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "dde9f3a2-a07b-4630-989f-5b591518912f",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C79",
+      "claim": "GLS plays important roles in liver ammonia metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "As a mitochondrial enzyme, GLS plays important roles in liver ammonia metabolism (Botman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Botman et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "1bf079f0-c8e5-4620-ad5d-74b2b89c1c5c",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C80",
+      "claim": "There are two distinct isoforms of GLS, GLS1 and GLS2, which possess discrete tissue distribution, structural properties, and molecular regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two distinct isoforms of GLS, GLS1 and GLS2, which possess discrete tissue distribution, structural properties, and molecular regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as established knowledge about GLS isoforms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "39618ffb-e2dd-475e-b817-18d997610f49",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C81",
+      "claim": "The GLS1 gene encodes two isoforms, kidney-type glutaminase (KGA, long transcript isoform) and the glutaminase C (GAC, short transcript isoform).",
+      "claim_type": "EXPLICIT",
+      "source": "The GLS1 gene encodes two isoforms, kidney-type glutaminase (KGA, long transcript isoform) and the glutaminase C (GAC, short transcript isoform), which are expressed in kidneys and in a variety of other tissues including cancer cells (Katt et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Katt et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "5f3b1b6b-9d0a-461c-b110-d38aa2a8425d",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C82",
+      "claim": "GLS2 is strongly expressed and active in periportal hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "The GLS2 gene is strongly expressed and active in periportal hepatocytes, where they generate glutamate and release ammonia for urea synthesis (Katt et al., 2017; Curthoys and Watford, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with citations to Katt et al., 2017 and Curthoys and Watford, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "26969383-7d9d-41a7-99da-81068bae0a94",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C83",
+      "claim": "CB-839 selectively inhibits GLS1 but not GLS2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly enough, CB-839 selectively inhibits GLS1 but not GLS2 (Gross et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Gross et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "3aa35fe1-5bad-4fba-bacf-7aace8994fa6",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C84",
+      "claim": "GLS inhibition by CB-839 treatment is less likely to pose a problem for HCC patients with impaired ammonia metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, although many HCC patients co-exist liver disease and thus usually have impaired ammonia metabolism, GLS inhibition by CB-839 treatment is less likely to pose a problem for these patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is stated in the discussion and inferred from the selective inhibition of GLS1 by CB-839.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "343856c4-f9d2-4e42-8ec7-df76b0dd0ea8",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C85",
+      "claim": "18F-BnTP is a voltage-sensitive, positron emission tomography (PET) radiotracer that measures mitochondrial membrane potential in non-small-cell lung cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a voltage-sensitive, positron emission tomography (PET) radiotracer known as 18F-BnTP was developed to measure mitochondrial membrane potential in non-small-cell lung cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion as an example of metabolism-targeted imaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "7004ce30-5baf-412a-823f-c86de3e0ee60",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C86",
+      "claim": "Only mouse tumors with a high uptake of 18F-BnTP show marked growth suppression when treated with oxidative-phosphorylation inhibitor IACS-010759.",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that only mouse tumors with a high uptake of 18F-BnTP showed marked growth suppression when treated with oxidative-phosphorylation inhibitor IACS-010759 (Momcilovic et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Momcilovic et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "8260e921-30f9-4dfd-bfb1-2a411c43dff5",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C87",
+      "claim": "[18F]fluoro-2-deoxyglucose (18F-FDG) is widely used in clinical use for diagnosing and staging cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is the widespread use of a radioisotope labeled glucose analog, [18F]fluoro-2-deoxyglucose (18F-FDG), in clinical use for diagnosing and staging cancer (Kelloff et al., 2005; Nair et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with citations to Kelloff et al., 2005 and Nair et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "48ae003c-19b7-45a5-a96c-4427fed9d72a",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C88",
+      "claim": "18F-FDG undergoes cellular uptake via the same pathway as glucose but becomes trapped intracellularly after phosphorylation by hexokinase.",
+      "claim_type": "EXPLICIT",
+      "source": "18F-FDG undergoes cellular uptake via the same pathway as glucose but becomes trapped intracellularly after phosphorylation by hexokinase, which can be visualized by PET imaging and used to detect glucose uptake in tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as established knowledge about 18F-FDG.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "86e5a727-9d75-48cc-98a5-27248792afd2",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C89",
+      "claim": "The combination of CB-839 and V-9302 only shows synergy in liver tumors that are addicted to glutamine.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we find that the combination of CB-839 and V-9302 only shows synergy in liver tumors that are addicted to Gln.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is stated in the discussion and supported by experimental data showing differential effects in GD vs GID cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "3df5a737-d8bb-4c34-a662-22e5ec3650b3",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C90",
+      "claim": "Measuring glutamine uptake or glutamine addiction is of potential importance for selecting patients that might benefit from the combination of CB-839 and V-9302.",
+      "claim_type": "EXPLICIT",
+      "source": "It suggests that measuring Gln uptake or Gln addiction is of potential importance for selecting patients that might benefit from this combination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This suggestion is stated in the discussion and inferred from the selective efficacy in GD tumors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "4c17c8eb-c6fa-4ec4-8c9e-7514ba405da0",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C91",
+      "claim": "11C-Gln was shown to visualize glutaminolytic tumors in vivo as a metabolic marker for probing glutamine-addicted tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Tracer 11C-Gln was shown to visualize glutaminolytic tumors in vivo as a metabolic marker for probing glutamine-addicted tumor (Qu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Qu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "04098fe9-4c91-47f4-acf7-ebc0f4176f0d",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C92",
+      "claim": "18F-(2S,4R)4-FGln PET was reported to track cellular glutamine pool size in breast cancers with differential GLS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 18F-(2S,4R)4-FGln PET was reported to track cellular Gln pool size in breast cancers with differential GLS activity and applied as a response marker for CB-839 (Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Zhou et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "b58a608f-0aee-4b8b-b1e3-02fb76762ae9",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C93",
+      "claim": "18F-(2S,4R)4-FGln PET can be applied as a response marker for CB-839.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 18F-(2S,4R)4-FGln PET was reported to track cellular Gln pool size in breast cancers with differential GLS activity and applied as a response marker for CB-839 (Zhou et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the discussion with a citation to Zhou et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "91b6e371-9998-41aa-8369-c311964de6ce",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C94",
+      "claim": "Dual inhibition of glutamine metabolism by targeting both glutaminase and glutamine transporter ASCT2 represents a potential novel treatment strategy for glutamine addicted liver cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicate that dual inhibition of glutamine metabolism by targeting both glutaminase and glutamine transporter ASCT2 represents a potential novel treatment strategy for glutamine addicted liver cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is stated in the abstract and represents the main finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "a1b211da-9cf9-450e-a97f-1adf0c0a9c1d",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C95",
+      "claim": "The combination of CB-839 and V-9302 achieves a synergistic anti-tumor effect in liver cancer via disrupting the GSH/ROS balance.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that the combination of CB-839 and V-9302 achieves a synergistic anti-tumor effect in liver cancer via disrupting the GSH/ROS balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is stated in the results section and supported by GSH and ROS measurement data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "25747a1b-0581-4df1-9a38-3e1e64aac6a5",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C96",
+      "claim": "CB-839 treated cells are vulnerable to other perturbations that further deplete glutamine anaplerosis, such as blockage of major glutamine transporter ASCT-2 by V-9302.",
+      "claim_type": "EXPLICIT",
+      "source": "CB-839 treated cells are vulnerable to other perturbations that further deplete glutamine anaplerosis, such as blockage of major Gln transporter ASCT-2 by V-9302.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is stated in the results section as part of the model explaining synergy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "2a347b63-f3e0-43fe-9282-588c8ecf9155",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C97",
+      "claim": "The combination of BPTES and V-9302 shows similar synergistic effects as CB-839 and V-9302 in liver cancer cell lines.",
+      "claim_type": "IMPLICIT",
+      "source": "Moreover, similar results were observed in these cell lines when combining V-9302 with another GLS1 inhibitor BPTES (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding is stated in the text and supported by data in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "f4cf95f9-c417-4296-906c-bc00a0cfdb31",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "claim_id": "C98",
+      "claim": "xCT is a cystine/glutamate antiporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, CB-839 also decreases intracellular Glu that is essential for cystine import by xCT, a cystine/glutamate antiporter, thus cutting down the cysteine conversion that in turn serves as the rate-limiting precursor for GSH biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text as established knowledge about xCT.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9fcac35a-3cfd-4c84-8817-a573ca9a1574",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Liver cancer cells exhibit glutamine dependence in vitro and glutamine metabolism genes are upregulated in HCC patient tissues, correlating with poor prognosis. Nine out of eleven liver cancer cell lines showed impaired proliferation upon glutamine deprivation, and TCGA analysis revealed upregulation of glutamine metabolism genes in HCC tissues compared to non-cancerous tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12, C13, and C14 are well-supported by multiple experimental approaches including colony formation assays, IncuCyte assays (Figure 1a,b), TCGA heatmap analysis (Figure 1c), GSEA enrichment (Figure 1d,e), and survival analysis (Figure 1f). The convergence of in vitro functional data and clinical bioinformatics provides strong evidence for glutamine dependence in liver cancer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "c4a8e8a9-41c5-4cc3-a677-27d9330e40fe",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GLS1 expression is significantly elevated in HCC tissues and high GLS1 levels correlate with poor patient outcomes. GLS1 mRNA is increased in ~55% of HCC patients, and both mRNA and protein levels of GLS1 correlate with worse overall survival and disease-free survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are supported by GSE14520 cohort analysis (n=229, Figure 2a,b), TCGA survival analysis (Figure 2c), and IHC analysis of 377 HCC specimens with Kaplan-Meier survival curves (Figure 2d-f). The large sample sizes and consistent findings across multiple independent datasets strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "0d769454-02dc-4cf9-af33-c27d5cb7d16b",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CB-839 monotherapy shows limited efficacy in most glutamine-dependent liver cancer cell lines, with only 3 out of 9 GD cell lines responding. GLS1 protein levels do not correlate with either glutamine addiction or CB-839 sensitivity, indicating that glutamine dependence is not determined by GLS1 expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C20-C23 are supported by colony formation and viability assays across 11 cell lines (Figure 2g,h) and western blot analysis (Figure 2i). The lack of correlation between GLS1 levels and both glutamine addiction and CB-839 sensitivity is clearly demonstrated, though the mechanistic basis for this disconnect remains unexplained and warrants further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "29f618cb-c9bd-4ce3-8839-63e842671d41",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CB-839 treatment significantly decreases key glutamine metabolism intermediates including glutamate, \u03b1-KG, glutathione, and NADPH in liver cancer cells. This demonstrates that CB-839 efficiently blocks glutamine utilization and disrupts downstream metabolic pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 are supported by LC-MS/MS metabolomics analysis in SNU398 and HepG2 cells at 4h and 24h timepoints (Figure 3a,b and supplement). The comprehensive metabolite profiling provides strong evidence for CB-839's on-target effects, though the conclusion in C28 is somewhat inferential from the metabolite depletion data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "e12067c6-de54-412f-b91e-f9f4668fa9d5",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The combination of CB-839 and V-9302 shows synergistic anti-proliferation effects specifically in glutamine-dependent cell lines but limited effects in glutamine-independent cell lines. Similar synergy is observed when V-9302 is combined with another GLS1 inhibitor, BPTES.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C30, and C97 are supported by viability assays, IncuCyte assays, and colony formation assays across multiple GD and GID cell lines (Figure 4a-c and supplements). The specificity for GD cells and reproducibility with BPTES strengthen the conclusion that dual inhibition of glutamine metabolism is effective specifically in glutamine-addicted cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "1600b890-c1f3-4629-ae9b-37edffc4c098",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The combination of CB-839 and V-9302 depletes glutathione, induces lethal ROS levels, causes DNA damage, and triggers apoptosis in glutamine-dependent liver cancer cells. This synergistic anti-tumor effect is mediated through disruption of GSH/ROS balance and can be rescued by the ROS scavenger NAC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C31-C37, and C95 are well-supported by GSH measurements (Figure 5a), ROS detection (Figure 5b), \u03b3H2AX western blots (Figure 5c), NAC rescue experiments (Figure 5d-f), and caspase-3/7 apoptosis assays. The NAC rescue experiments provide strong causal evidence linking ROS induction to the observed anti-proliferative effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "6d03ee8b-8af0-4788-af4e-ac377daf7fe3",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The mechanistic model proposes that CB-839 reduces mitochondrial glutamate, decreases TCA-dependent NADPH production, elevates glutathione oxidation, and impairs cystine import via xCT, creating a metabolic vulnerability that is exploited by V-9302.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C41 and C96 represent a proposed mechanistic model (Figure 5g) that is largely inferential. While the metabolomics data support decreased glutamate and NADPH (C24, C27), the specific contributions of TCA-dependent NADPH production versus other sources, and the relative importance of xCT-mediated cystine import versus direct GSH synthesis, are not directly tested. Additional experiments measuring compartmentalized metabolites and xCT activity would strengthen these mechanistic claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "8ca728cb-7a76-4d3a-8f45-a365b243933f",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The combination of CB-839 and V-9302 shows strong tumor growth inhibition in SNU398 and MHCC97H xenograft models with good tolerability, while single-agent treatments show only modest effects. No body weight loss was observed in any treatment group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C43-C47 are supported by xenograft tumor volume measurements (Figure 6a-d) and body weight monitoring (Figure 6 supplement 1). The in vivo efficacy data with n=6 mice per group and clear statistical significance support the therapeutic potential, though longer-term toxicity studies and additional tolerability markers beyond body weight would strengthen the safety assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "25f44e09-ddd7-4178-b04b-067232b14752",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In xenograft tumors, the combination treatment decreases Ki67-positive proliferating cells and increases caspase-3 and \u03b3H2AX-positive cells, indicating reduced proliferation, increased apoptosis, and DNA damage in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 are supported by IHC analysis of xenograft tumor sections (Figure 6e-l). The quantification of multiple markers (Ki67, cleaved caspase-3, \u03b3H2AX) provides convergent evidence for the proposed mechanism of action in vivo, consistent with the in vitro findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "0a914f1c-27a5-4f12-b6ea-2c327ce88040",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CB-839-induced metabolic vulnerability can be enhanced by other anti-metabolic drugs including OXPHOS inhibitor IACS-10759, PPP inhibitor DHEA, and PHGDH inhibitor NCT503.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is supported by the compound screen data (Figure 3d) showing synergistic inhibition with multiple metabolic inhibitors. This suggests broader therapeutic opportunities beyond the CB-839/V-9302 combination, though these alternative combinations require further validation in the same depth as the primary combination.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "9b1e03fc-cf6f-4d10-a90d-ff980e91f44c",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The CB-839 and V-9302 combination shows synergy specifically in glutamine-addicted liver tumors, suggesting that measuring glutamine uptake or addiction could be important for patient selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89 and C90 are supported by the differential effects observed in GD versus GID cell lines (Figure 4). The suggestion for patient stratification is logical but remains prospective, as no clinical validation or biomarker studies are presented. Development of companion diagnostics would be necessary for clinical translation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "d70a4163-5828-488a-84bf-8ebfaa069b4c",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "There is debate about V-9302's target selectivity, with some reports suggesting it inhibits SNAT2 and LAT1 rather than ASCT2, though these transporters can also mediate glutamine uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 accurately represent published controversies about V-9302 specificity, citing Angelika et al., 2018 and Br\u00f6er and Br\u00f6er, 2017. The authors acknowledge this uncertainty, which is appropriate. However, this raises questions about the mechanistic interpretation throughout the paper, as the actual target of V-9302 remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "97c359fd-55f9-4798-9952-8737f9b252ef",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CB-839 selectively inhibits GLS1 but not GLS2, and since GLS2 is the predominant isoform in periportal hepatocytes responsible for ammonia metabolism, CB-839 treatment is unlikely to cause ammonia metabolism problems in HCC patients with liver disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C84 present a logical argument based on cited literature about GLS isoforms and CB-839 selectivity. However, C84 is speculative as no direct evidence is provided regarding ammonia levels in treated patients or animal models. The safety inference relies entirely on the differential expression and selectivity profile without experimental validation in the context of compromised liver function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "55961805-7704-443e-80ba-c1fb4c9d7945",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Dual inhibition of glutamine metabolism by targeting both glutaminase and glutamine transporter ASCT2 represents a potential novel treatment strategy for glutamine-addicted liver cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 represents the main conclusion of the study and is well-supported by the convergence of in vitro mechanistic studies, metabolomics data, and in vivo xenograft experiments (C1-C52). The strategy shows clear therapeutic potential, though clinical validation and resolution of V-9302 target specificity questions remain necessary for translation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "c3393bfb-adbe-4ab1-82f1-e409af848d8f",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Liver cancer is the fourth leading cause of cancer death, most patients are diagnosed at advanced stages, and current therapies like sorafenib and lenvatinib provide only modest survival benefits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 are standard background statements supported by appropriate citations (Bray et al., 2018; Llovet et al., 2008; Kudo et al., 2018). These establish the clinical need for new therapeutic approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "588da100-ac20-46b6-ba93-40e4c082c5dd",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims about CB-839, glutamine metabolism, metabolic vulnerabilities in cancer, and metabolism-targeted imaging approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C72 and C85-C93 represent literature review and established knowledge, appropriately cited. These provide context for the current work but do not constitute novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    },
+    {
+      "id": "210ed6b8-e1eb-4700-8dd0-9664fe3ff35c",
+      "content_id": "c36e66a9-1ca6-4456-b56e-a781fe41dbc8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Cysteine is the rate-limiting precursor for GSH biosynthesis, and xCT is a cystine/glutamate antiporter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C98 represent established biochemical knowledge correctly stated. These are factual statements supporting the mechanistic model but not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:22:37.761166Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "65fae1eb-46d4-48f1-9d38-c4bc59e867f8",
+      "result_id": "9fcac35a-3cfd-4c84-8817-a573ca9a1574"
+    },
+    {
+      "claim_id": "fe9783fe-408e-46d5-981a-ded61c4a965c",
+      "result_id": "9fcac35a-3cfd-4c84-8817-a573ca9a1574"
+    },
+    {
+      "claim_id": "50fea1dd-bebc-47fe-a8ba-7e9623672451",
+      "result_id": "9fcac35a-3cfd-4c84-8817-a573ca9a1574"
+    },
+    {
+      "claim_id": "8a50bbfc-7528-427b-9f0c-777f3d2a46ed",
+      "result_id": "9fcac35a-3cfd-4c84-8817-a573ca9a1574"
+    },
+    {
+      "claim_id": "165eedf3-e0aa-47e6-94db-a53224bac3ed",
+      "result_id": "c4a8e8a9-41c5-4cc3-a677-27d9330e40fe"
+    },
+    {
+      "claim_id": "cf22588e-229e-4f5f-b96b-7bf24b32a487",
+      "result_id": "c4a8e8a9-41c5-4cc3-a677-27d9330e40fe"
+    },
+    {
+      "claim_id": "97cff167-5d23-4858-a21e-1cb679d46a10",
+      "result_id": "c4a8e8a9-41c5-4cc3-a677-27d9330e40fe"
+    },
+    {
+      "claim_id": "7c36e77c-1669-4408-9612-4eae85285f17",
+      "result_id": "c4a8e8a9-41c5-4cc3-a677-27d9330e40fe"
+    },
+    {
+      "claim_id": "62647f3c-7db8-4087-b00d-28c8fba25f39",
+      "result_id": "c4a8e8a9-41c5-4cc3-a677-27d9330e40fe"
+    },
+    {
+      "claim_id": "535067a0-796e-4f07-8ad5-e547d764db82",
+      "result_id": "0d769454-02dc-4cf9-af33-c27d5cb7d16b"
+    },
+    {
+      "claim_id": "fb30d7fe-d07d-4026-9ad2-dc218ed50142",
+      "result_id": "0d769454-02dc-4cf9-af33-c27d5cb7d16b"
+    },
+    {
+      "claim_id": "cd79a624-2c80-44b9-b2ef-b0cc77acd908",
+      "result_id": "0d769454-02dc-4cf9-af33-c27d5cb7d16b"
+    },
+    {
+      "claim_id": "4b87f8f2-d950-4d7d-914c-d0b47c1584a6",
+      "result_id": "0d769454-02dc-4cf9-af33-c27d5cb7d16b"
+    },
+    {
+      "claim_id": "e193c674-8b48-493c-a7d6-273137f8fe8c",
+      "result_id": "0d769454-02dc-4cf9-af33-c27d5cb7d16b"
+    },
+    {
+      "claim_id": "234065b7-f947-49fe-a1f0-8f2a68c8267c",
+      "result_id": "29f618cb-c9bd-4ce3-8839-63e842671d41"
+    },
+    {
+      "claim_id": "b17ab176-b7fa-4d19-91ec-e20c84f9a7ee",
+      "result_id": "29f618cb-c9bd-4ce3-8839-63e842671d41"
+    },
+    {
+      "claim_id": "87edf52b-ace5-403e-a024-885eb0e17a7e",
+      "result_id": "29f618cb-c9bd-4ce3-8839-63e842671d41"
+    },
+    {
+      "claim_id": "24565d1f-d23a-49bf-b86f-a23732869c77",
+      "result_id": "29f618cb-c9bd-4ce3-8839-63e842671d41"
+    },
+    {
+      "claim_id": "61acb1c6-8600-4c8d-9cec-7f76c779dcd1",
+      "result_id": "29f618cb-c9bd-4ce3-8839-63e842671d41"
+    },
+    {
+      "claim_id": "d59b4525-97de-46dd-b353-1dff3d27fcf9",
+      "result_id": "e12067c6-de54-412f-b91e-f9f4668fa9d5"
+    },
+    {
+      "claim_id": "d70dd345-aadd-4bee-9dfe-8c3b13f30885",
+      "result_id": "e12067c6-de54-412f-b91e-f9f4668fa9d5"
+    },
+    {
+      "claim_id": "2a347b63-f3e0-43fe-9282-588c8ecf9155",
+      "result_id": "e12067c6-de54-412f-b91e-f9f4668fa9d5"
+    },
+    {
+      "claim_id": "8d8de57d-f5fb-4114-8d4e-68f2cb8be669",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "26bba900-50a8-49a6-89a2-3852993954c3",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "9344bc34-7d17-4568-991a-63419efdaf77",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "caf84520-d314-479d-8dec-461f7b728166",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "f00ef75d-fe37-4d6f-9496-e5f475eddeb3",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "9479c457-9885-474e-97e2-fe0e3cf94a59",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "e1f736fd-6648-4469-af43-da61dc5ed78f",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "f4849769-3bc7-4570-904e-dabdecaa75ff",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "b091c3bd-ef0d-47ce-badd-242afe45eef2",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "1ad6d34e-92c1-49f0-bd5e-d271ad9b5968",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "a1b211da-9cf9-450e-a97f-1adf0c0a9c1d",
+      "result_id": "1600b890-c1f3-4629-ae9b-37edffc4c098"
+    },
+    {
+      "claim_id": "3270da55-3967-42f6-b830-c224b2b40200",
+      "result_id": "6d03ee8b-8af0-4788-af4e-ac377daf7fe3"
+    },
+    {
+      "claim_id": "dbc7d8af-b078-4b8f-a93d-d7e72897b132",
+      "result_id": "6d03ee8b-8af0-4788-af4e-ac377daf7fe3"
+    },
+    {
+      "claim_id": "0d8f9164-157c-4a23-84f0-7bcfe20be30a",
+      "result_id": "6d03ee8b-8af0-4788-af4e-ac377daf7fe3"
+    },
+    {
+      "claim_id": "8e5b597a-58a6-415a-a22d-db4eddebbd15",
+      "result_id": "6d03ee8b-8af0-4788-af4e-ac377daf7fe3"
+    },
+    {
+      "claim_id": "25747a1b-0581-4df1-9a38-3e1e64aac6a5",
+      "result_id": "6d03ee8b-8af0-4788-af4e-ac377daf7fe3"
+    },
+    {
+      "claim_id": "8977f046-ca23-4c91-b0ea-820d85efd500",
+      "result_id": "8ca728cb-7a76-4d3a-8f45-a365b243933f"
+    },
+    {
+      "claim_id": "03f83271-836b-401b-95b7-6352c665f094",
+      "result_id": "8ca728cb-7a76-4d3a-8f45-a365b243933f"
+    },
+    {
+      "claim_id": "d410686b-af51-4fcf-b1a3-f18f9b34cb51",
+      "result_id": "8ca728cb-7a76-4d3a-8f45-a365b243933f"
+    },
+    {
+      "claim_id": "f124c2c2-a098-4a0c-b42a-633a21699a89",
+      "result_id": "8ca728cb-7a76-4d3a-8f45-a365b243933f"
+    },
+    {
+      "claim_id": "0986dbc3-f6b5-4244-a3e5-22bd97fd9061",
+      "result_id": "8ca728cb-7a76-4d3a-8f45-a365b243933f"
+    },
+    {
+      "claim_id": "4a460ab5-8484-45ff-a61f-8ac38be7c88d",
+      "result_id": "8ca728cb-7a76-4d3a-8f45-a365b243933f"
+    },
+    {
+      "claim_id": "6cc1fc2c-6790-474b-beab-556f51979fb2",
+      "result_id": "25f44e09-ddd7-4178-b04b-067232b14752"
+    },
+    {
+      "claim_id": "77b1e0d5-8302-49b5-84fb-2572ed96e6ec",
+      "result_id": "25f44e09-ddd7-4178-b04b-067232b14752"
+    },
+    {
+      "claim_id": "a97ba1b1-874b-4242-acbb-38455473dd31",
+      "result_id": "25f44e09-ddd7-4178-b04b-067232b14752"
+    },
+    {
+      "claim_id": "282006de-892d-4a3d-8e61-f3e9caffdeb9",
+      "result_id": "25f44e09-ddd7-4178-b04b-067232b14752"
+    },
+    {
+      "claim_id": "8b35f9c7-1b96-425a-82d2-f117beb37214",
+      "result_id": "25f44e09-ddd7-4178-b04b-067232b14752"
+    },
+    {
+      "claim_id": "61a8dc56-59e3-49d1-9bf9-40ed9c399187",
+      "result_id": "0a914f1c-27a5-4f12-b6ea-2c327ce88040"
+    },
+    {
+      "claim_id": "86e5a727-9d75-48cc-98a5-27248792afd2",
+      "result_id": "9b1e03fc-cf6f-4d10-a90d-ff980e91f44c"
+    },
+    {
+      "claim_id": "3df5a737-d8bb-4c34-a662-22e5ec3650b3",
+      "result_id": "9b1e03fc-cf6f-4d10-a90d-ff980e91f44c"
+    },
+    {
+      "claim_id": "05f7b704-b279-4917-85c4-d292f50e6257",
+      "result_id": "d70a4163-5828-488a-84bf-8ebfaa069b4c"
+    },
+    {
+      "claim_id": "e71dfa02-4bc2-4fa7-a9b1-919da502c021",
+      "result_id": "d70a4163-5828-488a-84bf-8ebfaa069b4c"
+    },
+    {
+      "claim_id": "388a2b83-914f-4f5c-ad8c-15ca07924419",
+      "result_id": "d70a4163-5828-488a-84bf-8ebfaa069b4c"
+    },
+    {
+      "claim_id": "468a5ef0-39a6-43f4-8262-5f14b3471916",
+      "result_id": "97c359fd-55f9-4798-9952-8737f9b252ef"
+    },
+    {
+      "claim_id": "6ef32d0c-9c89-4ca0-a088-8a4b3958150d",
+      "result_id": "97c359fd-55f9-4798-9952-8737f9b252ef"
+    },
+    {
+      "claim_id": "dde9f3a2-a07b-4630-989f-5b591518912f",
+      "result_id": "97c359fd-55f9-4798-9952-8737f9b252ef"
+    },
+    {
+      "claim_id": "1bf079f0-c8e5-4620-ad5d-74b2b89c1c5c",
+      "result_id": "97c359fd-55f9-4798-9952-8737f9b252ef"
+    },
+    {
+      "claim_id": "39618ffb-e2dd-475e-b817-18d997610f49",
+      "result_id": "97c359fd-55f9-4798-9952-8737f9b252ef"
+    },
+    {
+      "claim_id": "5f3b1b6b-9d0a-461c-b110-d38aa2a8425d",
+      "result_id": "97c359fd-55f9-4798-9952-8737f9b252ef"
+    },
+    {
+      "claim_id": "26969383-7d9d-41a7-99da-81068bae0a94",
+      "result_id": "97c359fd-55f9-4798-9952-8737f9b252ef"
+    },
+    {
+      "claim_id": "3aa35fe1-5bad-4fba-bacf-7aace8994fa6",
+      "result_id": "97c359fd-55f9-4798-9952-8737f9b252ef"
+    },
+    {
+      "claim_id": "91b6e371-9998-41aa-8369-c311964de6ce",
+      "result_id": "55961805-7704-443e-80ba-c1fb4c9d7945"
+    },
+    {
+      "claim_id": "4577a7ab-65a6-4d2e-8c86-84d9e7bb1453",
+      "result_id": "c3393bfb-adbe-4ab1-82f1-e409af848d8f"
+    },
+    {
+      "claim_id": "131c9559-bc9a-4e0f-bdf2-eab9721344d3",
+      "result_id": "c3393bfb-adbe-4ab1-82f1-e409af848d8f"
+    },
+    {
+      "claim_id": "db4450df-492e-45be-b211-f5585d9b0e12",
+      "result_id": "c3393bfb-adbe-4ab1-82f1-e409af848d8f"
+    },
+    {
+      "claim_id": "becc4b54-7401-41b1-9f3a-b314b68d90f7",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "96178123-4681-4767-8c51-20f00175f32b",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "efbb239d-2939-4fe5-a1c5-7fcc6d6d8c15",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "8d64941f-85e9-4800-b8f1-611095a53d09",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "a7dee59e-2bc3-4014-be44-9c3157298cee",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "64a366af-06ba-4698-a728-52d907a47b41",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "ec0a19f8-6b96-468f-8fa1-668636f83551",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "746e4967-bbf4-4663-8f7a-ccf7dab6c99a",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "75be3b7e-9139-4316-8c1e-f887b53cb4af",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "1d6f8f6b-ad55-45e8-aeae-fcf7ee5ba88f",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "6a4a9207-5ec3-4774-8e51-4fadd171f53d",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "1c7d9d55-1bff-49bf-ab1f-8b30e7f7c231",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "bc96c488-1968-460f-8386-ca16de2f5d5e",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "56cdd4cb-0896-4c17-a0e4-1a07ab893046",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "ffbb809b-c95a-4a2a-9648-e66e2c7186df",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "aa3443a8-9ab6-4ddc-b783-01b6c58b00b1",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "56036a11-324b-4bf5-bd0a-06d1e2ae61cc",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "282aec73-99a8-46ea-bef6-c50603eef560",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "dd36b8c5-54b4-4579-ab78-bfe35be99eef",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "eb29791b-15c0-40a0-83a8-796dbc7c3bef",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "343856c4-f9d2-4e42-8ec7-df76b0dd0ea8",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "7004ce30-5baf-412a-823f-c86de3e0ee60",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "8260e921-30f9-4dfd-bfb1-2a411c43dff5",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "48ae003c-19b7-45a5-a96c-4427fed9d72a",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "4c17c8eb-c6fa-4ec4-8c9e-7514ba405da0",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "04098fe9-4c91-47f4-acf7-ebc0f4176f0d",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "b58a608f-0aee-4b8b-b1e3-02fb76762ae9",
+      "result_id": "588da100-ac20-46b6-ba93-40e4c082c5dd"
+    },
+    {
+      "claim_id": "8708b220-5844-41eb-be00-baba8bd3488a",
+      "result_id": "210ed6b8-e1eb-4700-8dd0-9664fe3ff35c"
+    },
+    {
+      "claim_id": "f4cf95f9-c417-4296-906c-bc00a0cfdb31",
+      "result_id": "210ed6b8-e1eb-4700-8dd0-9664fe3ff35c"
+    }
+  ],
+  "comparisons": []
+}

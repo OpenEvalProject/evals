@@ -1,0 +1,1680 @@
+{
+  "submission": {
+    "id": "a897fd94-9e30-4815-9fb5-9a55ef7484c6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:09:41.152613Z",
+    "updated_at": "2025-12-02T20:09:41.152613Z"
+  },
+  "content": [
+    {
+      "id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "submission_id": "a897fd94-9e30-4815-9fb5-9a55ef7484c6",
+      "content_type": "manuscript",
+      "content_text": "# Bimodal function of chromatin remodeler Hmga1 in neural crest induction and Wnt-dependent emigration\n\n## Authors\n\n- Shashank Gandhi<sup>1</sup> ([ORCID: 0000-0002-4081-4338](https://orcid.org/0000-0002-4081-4338)) \u2020\n- Erica J Hutchins<sup>1</sup> ([ORCID: 0000-0002-4316-0333](https://orcid.org/0000-0002-4316-0333))\n- Krystyna Maruszko<sup>1</sup>\n- Jong H Park<sup>1</sup>\n- Matthew Thomson<sup>1</sup>\n- Marianne E Bronner<sup>1</sup> ([ORCID: 0000-0003-4274-1862](https://orcid.org/0000-0003-4274-1862)) \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring gastrulation, neural crest cells are specified at the neural plate border, as characterized by Pax7 expression. Using single-cell RNA sequencing coupled with high-resolution in situ hybridization to identify novel transcriptional regulators, we show that chromatin remodeler Hmga1 is highly expressed prior to specification and maintained in migrating chick neural crest cells. Temporally controlled CRISPR-Cas9-mediated knockouts uncovered two distinct functions of Hmga1 in neural crest development. At the neural plate border, Hmga1 regulates Pax7-dependent neural crest lineage specification. At premigratory stages, a second role manifests where Hmga1 loss reduces cranial crest emigration from the dorsal neural tube independent of Pax7. Interestingly, this is rescued by stabilized \u00df-catenin, thus implicating Hmga1 as a canonical Wnt activator. Together, our results show that Hmga1 functions in a bimodal manner during neural crest development to regulate specification at the neural plate border, and subsequent emigration from the neural tube via canonical Wnt signaling.\n\n## Introduction\n\nThe neural crest is a vertebrate-specific stem cell population with the capacity to migrate long distances during embryonic development (Bronner and LeDouarin, 2012; Le Douarin, 1980; Sim\u00f5es-Costa and Bronner, 2013). Originating at the neural plate border, these cells occupy the leading edges of the closing neural folds during neurulation. Subsequently, premigratory neural crest cells that initially reside within the dorsal aspect of the developing neural tube undergo an epithelial-to-mesenchymal (EMT) transition in order to delaminate and migrate extensively. Upon reaching their terminal locations within the embryo, neural crest cells differentiate into a plethora of derivatives, including craniofacial cartilage, pigment cells, smooth muscle, and peripheral neurons and glia (reviewed in Gandhi and Bronner, 2018).\n\nA feed-forward gene regulatory network (GRN) underlies the formation of the neural crest, from induction at the neural plate border to final differentiation into a multitude of cell types. This GRN is comprised of transcription factors and signaling pathways, partitioned into developmental modules (Martik and Bronner, 2017; Sim\u00f5es-Costa et al., 2015). Recently, new tools like single-cell RNA sequencing (scRNA-seq) and Assay for Transposase-Accessible Chromatin using sequencing (ATAC-seq) have enabled analysis of the neural crest GRN at a global level, helping to clarify lineage trajectories and elucidate key biological processes therein, ranging from proliferation to differentiation (Williams et al., 2019). These approaches have opened the way to extensive functional analysis of important nodes within the GRN, particularly at early stages of neural crest development, which are less well-studied.\n\nNeural crest formation begins at the gastrula stage, with establishment of the presumptive neural ectoderm bordering the non-neural ectoderm. Quantitative gene expression analysis of gastrula stage chick embryos has revealed a surprisingly high degree of overlap of multiple transcription factors associated with diverse cell types within single cells in the early neural plate border region, ranging from markers characteristic of the neural crest (Pax7), to neural (Sox2) and placodal (Six1) cell types (Roellig et al., 2017). This is consistent with the possibility that cells in the neural plate border are transcriptionally primed toward multiple cell fates, rather than committed to a particular lineage. What then leads to cell lineage commitment and specification toward neural crest rather than alternative fates, and to their subsequent ability to initiate migration from the neural tube? One possibility is that previously unidentified transcriptional and epigenetic regulators play a critical role in these processes.\n\nIn this study, we used scRNA-seq to identify novel transcription factors and chromatin remodelers expressed in neural crest cells of the early chick embryo. We first describe the single-cell transcriptome of early migrating neural crest cells emerging from the hindbrain, with a focus on identifying new transcriptional regulators. One of the genes uncovered in the neural crest cluster was Hmga1, a non-histone chromatin remodeler that has known roles in tumor metastasis (Resar et al., 2018), but has been understudied in development. We first characterized the expression and function of Hmga1 during neural crest development using in situ Hybridization Chain Reaction (HCR) and observed Hmga1 transcripts enriched in the neural crest, with the onset of expression preceding neural crest specification in the neural plate border. To test its functional role in neural crest development, we used plasmid- and protein-based CRISPR-Cas9 strategies to knock out Hmga1 in neural crest progenitors with temporal precision. The results demonstrate an early role for Hmga1 in neural crest lineage specification in a Pax7-dependent manner, resulting in the downregulation of neural crest specifier genes such as Snail2, FoxD3, and Sox10. Interestingly, loss of Hmga1 after completion of neural crest specification revealed a distinct set of defects in cranial neural crest emigration and migration. Using in situ hybridization and a fluorescent protein-based reporter, we show that this is a consequence of reduced canonical Wnt activity mediated by Wnt1, which can be rescued by concomitantly expressing stabilized \u00df-catenin, thus establishing a separate role for Hmga1 in delaminating neural crest cells as a Wnt pathway activator. Taken together, these results identify a dual role for Hmga1 in neural crest development with an early effect on neural crest specification and a later effect on initiation of migration via the canonical Wnt signaling pathway, mechanisms that may be inappropriately redeployed during tumorigenesis.\n\n## Results\n\n### Single-cell RNA-seq of early migrating hindbrain neural crest reveals novel transcriptional regulators\n\nMany RNA-seq datasets have sought to examine genes that are enriched in cranial neural crest cells compared with other tissues (Sim\u00f5es-Costa et al., 2014) or axial levels (Martik et al., 2019). However, here we aimed to identify highly expressed transcription factors and chromatin remodelers that may have been missed due to overlapping expression between neural crest cells and surrounding tissues. To this end, gastrula stage Hamilton Hamburger (HH) four embryos were electroporated with the neural crest enhancer FoxD3-NC2:eGFP and cultured ex ovo until stage HH12 (Hamburger and Hamilton, 1951). The NC2 enhancer labels early migrating neural crest cells (Sim\u00f5es-Costa et al., 2012), thereby facilitating dissection of the region surrounding the rhombomere (r) six migratory neural crest stream for dissociation (Figure 1A\u2013A\u2019). To aid downstream analysis and clustering, we introduced an \u2018outgroup\u2019 of dissected primary heart tube cells into the single-cell suspension and generated barcoded Gel Bead-In-Emulsions (GEMs) on the 10X Genomics platform. The library was sequenced at a depth of 50,000 median reads/cell to profile a total of 1268 cells, out of which 1241 cells passed the quality control filters (Figure 1\u2014figure supplement 1A\u2013C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Schematic diagram illustrating the pipeline for performing scRNA-seq on the 10X Genomics platform. Reporter expression mediated by the FoxD3-NC2 enhancer (A\u2019) was used as reference to dissect the hindbrain of HH12 chick embryos. Barcoded GEMs generated from the single-cell suspension were sequenced at a median depth of 50,000 reads/cell. (B) Dimensional reduction using UMAP identifies six subpopulations (including the spike-in) contained within the dissociated embryonic hindbrain. (C) Subset of B showing cells from hindbrain (Hb), ectoderm (Ect), and neural crest (NC). (D\u2013D\u2019) Feature plots used to visualize the expression of known marker genes as a means of identifying subpopulations in (C) in low-dimensional space. Single-cell expression distribution for marker genes (D\u2019) in each cluster is shown as violin plots. (E) Genes that were associated with the GO terms \u2018DNA binding\u2019, \u2018regulation of transcription,\u2019 or \u2018transcription factor\u2019 were characterized as transcriptional regulators and the relative expression and abundance of a subset of them was visualized as a dot plot. The size of each dot corresponds to the percentage of cells expressing that specific gene in a given cluster, while the color represents the average expression level. (F) Feature plots showing expression of previously uncharacterized transcription factors or chromatin remodelers expressed in neural crest cells. (G\u2013K) Hybridization chain reaction was used to validate the expression of a few factors that were identified in (E). Dorsal view of the hindbrain of HH12 shows migratory neural crest streams at r4 and r6 surrounding the otic. Hb, hindbrain; ot, otic placode; r, rhombomere; nc, neural crest; ect, ectoderm. See also Figure 1\u2014figure supplements 1 and 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Scatter plot shows high correlation between the number of unique genes and the total number of molecules detected in each cell. (B\u2013C) The distribution of total number of molecules (B) and number of unique genes (C) detected per cell across the eight cell types identified within the chick hindbrain. (D) Increasing the resolution parameter in the single-cell analysis pipeline to calculate a cell\u2019s \u2018nearest neighbor\u2019 allowed identification of three subpopulations within the \u2018mesoderm\u2019 cluster displayed in Figure 1B. Based on marker gene expression, these subpopulations were identified as mesoderm (Twist1+), paraxial mesoderm (Prrx1+), and myocardium (Hand2+). (E) The expression of the top 10 most abundant genes from each subcluster was used to plot a heatmap, which also grouped into eight distinct categories, similar to (D). A subset of these abundant genes are labeled along the y-axis.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u00a0Feature plots showing expression of marker genes in low-dimensional space used to identify all eight sub-clusters within the chick hindbrain. (B) Violin plots showing the distribution of expression of these marker genes (A) in surrounding cell types.\u00a0(C) Relative expression of all genes expressed in the neural crest cluster that share the GO terms \u2018DNA binding\u2019, \u2018transcription factor\u2019, and \u2018regulation of transcription\u2019. Several of these genes are transcriptional regulators and/or chromatin remodelers that are ubiquitously expressed in surrounding tissues. The radius of each point reflects the proportion of cells within individual clusters that express a specific gene, whereas the relative expression is reflected by the color of the point (grey \u2013 low/negative expression, blue \u2013 high expression). A subset of these genes are highlighted in Figure 1E.\n\nFollowing mapping and dimensional reduction, the cells split into distinct cellular subtypes (Figure 1B), including five cell types (mesoderm, otic, ectoderm, hindbrain, and neural crest) derived from the dissected tissue, and the spiked-in outgroup (\u2018Heart tube\u2019; Myl2+, Tnnt2+). Known genetic markers that were enriched in each population served to distinguish the neural crest subcluster (Tfap2B+, ItgB3+) from the surrounding tissues (i.e. otic placode (Cldn3+, Gbx2+); hindbrain (Pax6+, Zic2+); ectoderm (Epcam+, Crabp2+); mesoderm (FoxC2+, Col1A1+)) (Figure 1\u2014figure supplement 2A\u2013B). Consistent with the anatomical diversity of the mesoderm, the latter was further subdivided into specific cell types like myocardium (Hand2+) and paraxial mesoderm (Prrx1+) (Figure 1\u2014figure supplement 1D\u2013E). We particularly focused our subsequent analysis on the neural crest cluster in the context of the neighboring tissues of hindbrain and ectoderm (Figure 1C,D,D\u2019).\n\nWe sought to determine all transcription factors and chromatin regulators that were expressed in the neural crest-specific subcluster, regardless of their expression in other cell types. To this end, we shortlisted all genes associated with the gene ontology terms \u2018DNA-binding\u2019, \u2018regulation of transcription\u2019, and \u2018transcription factor\u2019. This revealed several chromatin remodelers and transcription factors with high levels of expression in neural crest cells (Figure 1E; Figure 1\u2014figure supplement 2C). The identified genes fell into two groups, the first of which was comprised of transcription factors enriched in neural crest cells, with little overlap in surrounding cell types. As expected, many of these genes, including Sox10, Ets1, MafB, and Nrip1, are known for their expression in the neural crest (Gandhi et al., 2020; Tani-Matsuhana et al., 2018). Importantly, the second group was comprised of chromatin remodelers and/or transcriptional regulators previously overlooked in bulk transcriptomic datasets, including Hmga1, Dact2, Ssrp1, and Tbxl1x, due to overlapping expression in other tissues. Indeed, their distribution in low-dimensional space confirmed that a high proportion of cells in the hindbrain and/or ectoderm also expressed these genes (Figure 1F). The expression of a subset of the above genes was validated at HH12 (Figure 1G\u2013K)\u00a0by in situ hybridization chain reaction (HCR), which revealed an abundance of transcripts in both r4 and r6 neural crest streams that emerge from the hindbrain. Taken together, the results show that our single-cell gene expression analysis is sufficient to resolve the underlying heterogeneity of the chick hindbrain. We also identified several genes expressed in migrating neural crest cells not highlighted in previous datasets given their broad expression in other tissues.\n\n### Hmga1 is expressed in the neural plate, neural plate border, and neural crest cells\n\nOf the novel transcriptional regulators that were previously overlooked in bulk transcriptomic datasets, we were particularly intrigued by the chromatin remodeler Hmga1, due to its extensively studied role in tumorigenesis. A member of the High Motility Group A (HMGA) superfamily, Hmga1 encodes a small, nonhistone chromatin remodeling protein that binds to the minor groove of DNA, thereby affecting the chromatin landscape and facilitating the binding of other transcription factors in the opposing major groove (Grosschedl et al., 1994). In developing mouse embryos, Hmga1 has been shown to have widespread expression across several tissues, including the brain, where its loss has been correlated with reduced developmental potential of neural precursor cells (Kishi et al., 2012). While well-studied in cancer (Masciullo et al., 2003; Sarhadi et al., 2006), little was known about its developmental function in neural crest cells. Given the parallels between the mechanisms that regulate delamination, migration, proliferation, and survival of neural crest cells and tumor cells (Gallik et al., 2017), we sought to characterize the expression of Hmga1 during neural crest development.\n\nAt HH12, Hmga1 was observed in migrating neural crest streams emanating from rhombomeres 4 and 6 (Figure 1K), and in the cranial mesenchyme, suggesting that its expression is not restricted to the hindbrain neural crest. Therefore, to determine its spatiotemporal pattern at early stages of neural crest development, we performed HCR for Hmga1 at stages ranging from gastrulation (HH4), when neural crest cells are undergoing induction in the neural plate border (Figure 2B\u2019\u2019\u2019), to HH10, when neural crest cells have delaminated from the dorsal neural tube (Figure 2E\u2019\u2019\u2019) and are mid-migration in the cranial region (Figure 2F\u2019\u2019\u2019). As an early marker for the neural plate border and neural crest (Basch et al., 2006), we co-labeled Pax7 transcripts at the aforementioned stages.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0HCR against Hmga1 at HH5 reveals expression in the neural plate and neural plate border. (B\u2013B\u2019) A wild-type HH6 chick embryo double-labeled with Hmga1 (B) and Pax7 (B\u2019) probes. Hmga1 expression overlaps with Pax7 in the neural plate border. (B\u2019\u2019\u2013B\u2019\u2019\u2019) Transverse section through embryo in (B) shows Hmga1 and Pax7 transcripts in the neural plate and neural plate border, respectively, but not the non-neural ectoderm. (C\u2013D\u2019) As the neural folds elevate, Hmga1 expression is retained in the dorsal neural tube. (D\u2019\u2019\u2013D\u2019\u2019\u2019) Transverse section through embryo in (D) shows Hmga1 transcripts in the neural tube. (E\u2013F) As neural crest cells delaminate (E\u2019\u2019\u2019) and migrate laterally from the neural tube (F\u2019\u2019\u2019), Hmga1 is expressed in emigrating (E\u2019\u2019) and migrating neural crest cells (F\u2019\u2019), along with Pax7 (E\u2019 and F\u2019). Arrow points towards delaminating (E\u2019\u2019) and migrating (F\u2019\u2019) cranial neural crest cells. hn, Hensen\u2019s node; npb, neural plate border; np, neural plate; nne, non-neural ectoderm; ect, ectoderm; dNF, dorsal neural folds; nc, notochord; nt, neural tube. See also Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A-H)\u00a0Transverse sections shown in Figure 2 stained with DAPI (A,C,E,G). The expression of Hmga1 and Pax7 overlapped in the neural plate border (B,B\u2019; arrows), dorsal neural folds (D,D\u2019; arrows), premigratory (F,F\u2019; arrows), and migratory neural crest cells (H,H\u2019; arrows).\n\nHmga1 transcripts were first detected in the neural plate and neural plate border, but not in the non-neural ectoderm at HH4+, and preceded the expression of Pax7 in the neural plate border. Hmga1 expression remained high at HH5-6 (Figure 2A\u2013B), overlapping in the neural plate border (Figure 2\u2014figure supplement 1A) with Pax7 transcripts (Figure 2B\u2019), as observed in transverse sections (Figure 2B\u201d, Figure 2\u2014figure supplement 1B\u2013B\u2019). As the neural plate border elevated to form neural folds between HH7 and HH8 (Figure 2D\u2019\u2019\u2019), expression of Hmga1 was retained in the neural tube (Figure 2C\u2013D) and continued to overlap with Pax7 in the dorsal neural folds (Figure 2D\u2019, Figure 2\u2014figure supplement 1C\u2013D\u2019). Between stages HH9 and HH10, when neural crest cells delaminated from the dorsal neural tube (Figure 2E\u2019\u2019\u2019) and started migrating laterally (Figure 2F\u2019\u2019\u2019), Hmga1 expression was retained in delaminating (Figure 2E,E\u2019,E\u2019\u2019, Figure 2\u2014figure supplement 1E\u2013F\u2019) and migrating (Figure 2F,F\u2019,F\u2019\u2019, Figure 2\u2014figure supplement 1G\u2013H\u2019) neural crest cells. Interestingly, transverse sections through a representative HH10 embryo revealed that within the migrating neural crest stream, Hmga1 was expressed in both leader and follower cells, as compared to Pax7, which appeared to be downregulated in the leader cells (Figure 2F\u2019\u2019). Together, these results show that the onset of Hmga1 in the neural crest occurs in precursors at the neural plate border region prior to their specification and is retained in premigratory and migrating neural crest cells.\n\n### Hmga1 is necessary for neural crest specification\n\nGiven that Hmga1 transcripts were enriched in the cranial neural crest, we sought to interrogate its possible role therein. To this end, we designed guide RNA plasmids (gRNAs) targeting the coding sequence of Hmga1 (Figure 3\u2014figure supplement 1A) and electroporated them together with constructs encoding Cas9 and nuclear RFP on the right side of HH4 gastrula stage embryos (Figure 3A). The left side of the embryo was electroporated with Cas9, nuclear RFP, and a control gRNA, chosen for its lack of binding in chick cells (Gandhi et al., 2017). Embryos were cultured ex ovo until stage HH9/9+ (Figure 3B), after which they were processed for immunohistochemistry, in situ hybridization, and HCR.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0The electroporation strategy for knocking out Hmga1 using CRISPR-Cas9 in gastrula stage chick embryos. (B) Electroporated embryos were allowed to develop until HH9+ and screened for the expression of H2B-RFP. (C) Electroporation of Cas9 and Hmga1 gRNAs on the right side resulted in loss of Hmga1 transcripts in the neural crest as confirmed using HCR. (D) Hmga1 expression in the neural crest quantified as corrected total cell fluorescence (CTCF) intensity in wholemount Hmga1-mutant embryos processed for HCR. A significant reduction in expression was observed (p-value<0.05, Wilcoxon rank test) on the experimental compared to the control side. A ratio of 1 (dotted line) corresponds to similar levels of Hmga1 expression on both sides. (E\u2013F) Hmga1 knockout results in reduced Pax7 expression in the neural crest, likely resulting from a significant reduction in Pax7+ cell count (F) on the knockout compared to the control side (****p<0.0001, student\u2019s t-test). (G\u2013H) Transverse section through the hindbrain of a representative knockout embryo (G\u2019) was stained for Pax7 (H) and the neural crest specifier Snail2 (H\u2019). (I) Hmga1 knockout also resulted in a reduction of Pax7 transcripts on the knockout side. (J\u2013L) Hmga1-mutant embryos were processed for in situ hybridization against neural crest specifier genes FoxD3 (J, J\u2019), Tfap2b (K), and Sox10 (L, L\u2019). (M) Transverse section through a representative embryo probed for the expression of Sox10 showed reduced expression of the migratory neural crest marker, HNK1. The expression of Pax7 (M\u2019) was also reduced, while the thickness of the neural tube remained unchanged (M\u2019\u2019). See also Figure 3\u2014figure supplement 1; Figure 3\u2014source data 1, Figure 3\u2014source data 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0The genomic locus of Hmga1 in the chick genome. Two gRNAs, one targeting the splice donor site of exon three and another one targeting the splice donor site of exon four were designed to knock it out using CRISPR-Cas9. The protospacer adjacent motifs for both gRNAs lie in the intronic regions (highlighted in blue). (B) Electroporated embryos were allowed to develop until HH9+ and immunostained for the migratory neural crest marker HNK1. In the absence of Hmga1, neural crest cells failed to migrate properly on the experimental side. (C) Hmga1 knockout results in reduced c-Myc expression in premigratory neural crest. (D\u2013E\u2019\u2019) Transverse section through a representative Hmga1-knockout embryo with FoxD3 mRNA labeled using in situ hybridization. Neural crest cells migrated normally on the control (arrow) compared to the knockout side (asterisk). While the thickness of the neural tube (E) was unaffected on the knockout side, the expression of Pax7 (E\u2019) and HNK1 (E\u2019\u2019) was also reduced.\n\nWe first validated our knockout approach by probing for the expression of Hmga1 itself in knockout embryos using HCR. This revealed a significant reduction in the abundance of Hmga1 transcripts on the knockout side (Figure 3C). We quantified this phenotype in whole-mount embryos and observed a 25% reduction in Hmga1 expression (Figure 3D, Figure 3\u2014source data 1; p<0.05, Wilcoxon rank test). Notably, the loss of Hmga1 transcripts in the neural crest was more dramatic than in the neural tube, due to targeted electroporation of knockout reagents to the presumptive neural plate border region. Next, we investigated the effect of knocking out Hmga1 on Pax7 expression in neural crest cells. We examined Pax7 mRNA expression by HCR in embryos where Hmga1 was knocked out on the right side, relative to the left side which served as an internal control. Consistent with their hierarchical onset of expression, loss of Hmga1 resulted in a notable reduction in Pax7 mRNA levels (Figure 3E). Next, we assessed whether the reduction in Pax7 transcripts would consequently result in a loss of Pax7 protein in the neural crest by immunostaining Hmga1-knockout embryos with a Pax7 antibody. As expected, Pax7 protein levels were dramatically reduced in the migratory cranial neural crest (Figure 3F,H\u2019), with further analysis revealing a significant decrease in the number of Pax7+ cells on the knockout side compared to the control side (Figure 3G, Figure 3\u2014source data 2; p<0.0001, student\u2019s t-test). Moreover, in the absence of Hmga1, cranial neural crest cells failed to migrate properly, as depicted by the expression of the migratory neural crest marker HNK1 (Figure 3\u2014figure supplement 1B). A transverse section through the hindbrain (Figure 3H) of another representative Hmga1-knockout embryo stained for Pax7 (Figure 3H\u2019) revealed a notable reduction in the expression of Pax7 (Figure 3I) as well as the neural crest specifier Snail2 on the knockout side (Figure 3I\u2019). Furthermore, using in situ hybridization, we found that other neural crest specifier genes including FoxD3 (Figure 3J,J\u2019, Figure 3\u2014figure supplement 1D,E\u2019,E\u2019\u2019), Tfap2b (Figure 3K), Sox10 (Figure 3L,L\u2019), and c-Myc (Figure 3\u2014figure supplement 1C) were also downregulated on the knockout side. In transverse sections through Hmga1-knockout embryos labeled for Sox10 expression (Figure 3L), we also detected fewer Pax7+ cells (Figure 3N) and diminished levels of HNK1 expression (Figure 3M). On the other hand, no notable difference in the thickness of the neural tube was observed (Figure 3H,J\u2019,M\u2019\u2019, Figure 3\u2014figure supplement 1E), suggesting that the targeted knockout of Hmga1 in the neural plate border affected the neural folds/dorsal neural tube but not the neural plate itself. Taken together, our results indicate that Hmga1 is important for proper specification of neural crest cells.\n\n### Hmga1 regulates expression of Pax7 in neural crest precursors in the neural plate border\n\nAs the expression of Hmga1 precedes that of Pax7 in the neural plate border, and its loss also causes a reduction of Pax7 levels in neural crest cells (Figure 3F), we next asked if this regulation occurs in the neural crest precursors that reside in the neural plate border. In the preceding experiments, we characterized the expression of neural crest markers following CRISPR-plasmid-mediated loss of Hmga1 at stages corresponding to early stages of neural crest emigration and migration. However, one caveat to our plasmid knockout strategy is that it takes time after electroporation of the CRISPR constructs in gastrula stage embryos for Cas9 to transcribe, translate, and properly fold to form a functional Cas9-gRNA complex. As specification of neural crest cells at the neural plate border is ongoing at HH4, this means that functional Cas9 would not be available until well after initial electroporation. Given that neural crest development occurs in a rostral-to-caudal wave along the body axis (Gandhi and Bronner, 2018), we speculated that effects of plasmid electroporation would be more penetrant in the hindbrain compared to anterior regions of the embryo, such as the midbrain. To test this possibility, we generated transverse sections through the midbrain (Figure 4A) and hindbrain (Figure 4B) of Hmga1-knockout embryos and quantified the number of Pax7+ cells as a ratio of cell count on the experimental versus control sides. Accordingly, we noticed that while this ratio was 0.948\u00a0\u00b1\u00a00.036 (n\u00a0=\u00a05) at the midbrain level, it was significantly reduced in the dorsal hindbrain, with a mean ratio of 0.69\u00a0\u00b1\u00a00.08 (n\u00a0=\u00a05; p<0.05, paired Student\u2019s t-test) (Figure 4C, Figure 4\u2014source data 1). These results supported our assumption that specification may have already occurred at the midbrain level by the time Cas9 was functionally active.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig4-v2.jpg)\n\n**Figure 4.:** (A-B)\u00a0Transverse sections through a representative embryo show a dramatic reduction in the number of Pax7+ cells in the hindbrain (B, asterisk) as compared to the midbrain (A) at HH9/9+. As the hindbrain develops later than the midbrain due to the anterior-posterior progression of neural development, the effect on neural crest specification is more penetrant in the hindbrain (asterisk) due to the time lag between Cas9 plasmid electroporation and its activation in transfected cells. (C) The ratio of Pax7+ cells between the experimental and control sides quantified at the midbrain and hindbrain levels is significantly different (*p<0.05; student\u2019s t-test). A ratio of 1 (dotted line) corresponds to a similar number of Pax7+ cells on both sides. (D) Electroporation strategy for knocking out Hmga1 using Cas9 protein and in vitro-transcribed gRNAs. This strategy was used to immediately reduce the levels of Hmga1 on the knockout side. (E) HCR against Hmga1 in mutant embryos shows dramatic transcriptional reduction on the experimental side (arrowhead). (F) Cas9-protein-mediated loss of Hmga1 resulted in downregulation of Pax7 expression in the neural plate border on the right side (experimental side; arrowhead). (G) Illustration of the neural plate border. (H\u2013I\u2019) Transverse section through embryo shown in F. Electroporation of the control ribonucleoprotein (RNP) complex had no effect on the expression of Pax7 in the neural plate border (H), whereas the knockout side showed an almost complete loss (I, asterisk). No difference in the thickness of the neural plate border was observed between the two sides (H\u2019,I\u2019). (J) Quantification of relative fluorescence intensity for Pax7 signal calculated as corrected total cell fluorescence (C.T.C.F) revealed a statistically significant difference between the control (left) and knockout (right) sides (**p<0.01, paired student\u2019s t-test). (K\u2013P\u2019\u2019) Representative Hmga1-mutant embryos that were processed for HCR against neural plate border genes Tfap2a (K; experimental side - arrowhead) and Msx1 (N; experimental side - arrowhead). While Hmga1 loss resulted in reduction of Pax7 transcripts on the experimental sides (M,P; asterisk) compared to the control sides (L,O), the expression of Tfap2a (L\u2019,M\u2019) and Msx1 (O\u2019,P\u2019) was relatively unchanged. No notable difference was observed in the thickness of the neural plate border (L\u2019\u2019,M\u2019\u2019,O\u2019\u2019,P\u2019\u2019). (Q) Transcriptional response to the loss of Hmga1 was quantified as the ratio of knockout versus control C.T.C.F per unit area. While Pax7 expression was significantly reduced (***p<0.001, paired student\u2019s t-test), no significant difference in Msx1 expression was observed (n.s. p>0.05, paired student\u2019s t-test). Dotted line represents unperturbed ratio. See also Figure 4\u2014figure supplement 1; Figure 4\u2014source data 1, Figure 4\u2014source data 2, Figure 4\u2014source data 3.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Whole mount embryo shown in Figure 4F. Nuclear RFP was electroporated as a transfection control. (B\u2013G\u2019) Adjacent transverse sections through embryo in A immunostained with antibodies against phospho-histone H3 (B,C\u2019,D\u2019) and cleaved-caspase-3 (E,F\u2019,G\u2019) as a readout for cell proliferation and apoptosis, respectively. While the levels of Pax7 protein (C,D,F,G) were downregulated in the absence of Hmga1, no notable difference was observed in the rate of proliferation or cell death between the experimental (right; D\u2019,G\u2019) and control (left; C\u2019,F\u2019) sides. (H) The relative fluorescence intensity for Pax7, cleaved-caspase-3, and phospho-histone H3 was measured as the ratio of corrected total cell fluorescence (C.T.C.F.) between the knockout versus the control side. The Pax7 fluorescence intensity was significantly reduced (**p<0.01, paired Student\u2019s t-test) on the knockout side, whereas the difference between cleaved-caspase-3 and phospho-histone H3 relative intensities was not significant (n.s. p>0.05, paired Student\u2019s t-test). Dotted line represents unperturbed ratio. See also Figure 4\u2014figure supplement 1\u2014source data 1.\n\nTo circumvent this issue and test the earliest effects of knocking out Hmga1 concomitant with its onset of expression, we turned to an alternative CRISPR knockout strategy that enabled the loss of Hmga1 immediately after transfection. To this end, we electroporated recombinant Cas9 protein with in vitro-transcribed Hmga1 or control gRNA as ribonucleoprotein (RNP) complexes on the right and left sides of gastrula stage embryos, respectively (Figure 4D), and cultured embryos ex ovo until HH6. First, to validate the Cas9-protein-mediated knockout strategy, we labeled Hmga1 transcripts in knockout embryos using HCR and observed a very efficient reduction in Hmga1 expression (Figure 4E), especially in the neural plate border, thereby offering precise temporal control over the loss of this gene\u2019s activity. Next, we assayed for the expression of Pax7 in the neural plate border by immunostaining Hmga1-knockout embryos and found that the levels of Pax7 protein in the neural plate border (Figure 4F, Figure 4\u2014figure supplement 1A) were severely downregulated. Transverse sections through the experimental compared with control sides revealed that neural plate border cells no longer expressed Pax7 after the loss of Hmga1 (Figure 4H,I), and that this was not a result of premature apoptosis or aberrant cell proliferation (Figure 4\u2014figure supplement 1B\u2013G\u2019, Figure 4\u2014figure supplement 1\u2014source data 1). In further support of the latter, the thickness of the neural plate border remained unchanged (Figure 4H\u2019,I\u2019). We also quantified the corrected Pax7 total fluorescence intensity (C.T.C.F) in the neural plate border and observed a statistically significant difference between the control and knockout sides (p<0.01, paired student\u2019s t-test), with mean Pax7 intensity on the control side being 89.853\u00a0\u00b1\u00a023.388 a.u. (n\u00a0=\u00a05) as compared to 42.763\u00a0\u00b1\u00a016.079 a.u. (n\u00a0=\u00a05) on the knockout side (Figure 4J, Figure 4\u2014figure supplement 1H, Figure 4\u2014source data 2). Taken together, these results suggest that Hmga1 is required for the expression of Pax7 in neural crest precursors that are induced in the neural plate border.\n\n### Hmga1 is not required for expression of neural plate border genes Msx1 or Tfap2a\n\nThe neural plate border was initially thought to contain discrete domains corresponding to neural, neural crest, placodal, and epidermal precursors. However, recent work has demonstrated that cells in this region co-express genes characteristic of different cell fates and exhibit a broad developmental potential, suggesting they are not restricted to individual cell fates until later in development (Roellig et al., 2017). In chick embryos, Tfap2a and Msx1 are expressed in the neural plate border, with Tfap2a transcripts spanning both the neural plate border and the non-neural ectoderm (de Croz\u00e9 et al., 2011; Luo et al., 2003), whereas Msx1 transcripts are expressed within a subset of Pax7+ cells in the neural plate border region (Khudyakov and Bronner-Fraser, 2009). Given that loss of Hmga1 resulted in a reduction in Pax7 protein levels in the neural plate border, we asked if this was a result of a general neural plate border defect versus a selective effect on Pax7. To test this, we examined the expression of Tfap2a (Figure 4K) and Msx1 (Figure 4N) transcripts together with Pax7 using HCR in Hmga1-knockout embryos developed to neurula stages. Consistent with the loss of Pax7 protein in the neural plate border, Hmga1 knockout caused reduced Pax7 mRNA levels on the experimental (Figure 4M,P) compared to the control (Figure 4L,O) sides. However, the expression of Tfap2a (Figure 4L\u2019,M\u2019) and Msx1 (Figure 4O\u2019,P\u2019) was retained in the absence of Hmga1, together with no noticeable difference in the thickness of the neural plate border (Figure 4L\u2019\u2019,M\u2019\u2019,O\u2019\u2019,P\u2019\u2019). Since Pax7 and Msx1 are specifically expressed in the neural plate border, we quantified the corrected total cell fluorescence intensity per unit area associated with their transcripts and calculated the ratio between the experimental and control sides. Under control conditions, this ratio would be close to 1. However, for Pax7, the mean calculated ratio was 0.552\u00a0\u00b1\u00a00.06 (n\u00a0=\u00a06), with a statistically significant difference between the experimental and control sides (p<0.001, paired Student\u2019s t-test). On the other hand, while the mean calculated ratio for Msx1 was 0.809\u00a0\u00b1\u00a00.098 (n\u00a0=\u00a03), the fluorescence intensities were not significantly different between the two sides (Figure 4Q, Figure 4\u2014source data 3). Taken together, these results show that Hmga1 specifically regulates Pax7 expression at the neural plate border.\n\n### Hmga1 and Pax7 rescue the effects of losing Hmga1 on neural crest specification\n\nGiven that loss of Hmga1 affects neural crest specification, we asked if its overexpression would have the converse effect. To exogenously provide Hmga1, we designed a plasmid construct containing the coding sequence of Hmga1 under the regulation of a ubiquitous enhancer/promoter combination (Figure 5A). This construct also contained the coding sequence for nuclear RFP downstream of an Internal Ribosome Entry Site (IRES), allowing identification of successfully transfected cells. To test the effect of overexpressing Hmga1, we electroporated this construct on the right side of gastrula stage embryos and cultured them ex ovo until HH9+. The left side served as an internal control and was electroporated with an equal concentration of a construct encoding nuclear RFP alone (Figure 5B). The results show that, rather than having the opposite effect to loss of function, overexpression of Hmga1 also resulted in a notable reduction in Pax7 expression on the experimental side (Figure 5C). This suggests that maintaining appropriate levels of Hmga1 is critical for proper neural crest specification.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0Plasmid construct used to rescue Hmga1. An independent ribosome entry site (IRES) controls translation of nuclear RFP in transfected cells. The electroporation strategy for knocking out Hmga1 using CRISPR-Cas9 in gastrula stage chick embryos. (B) Embryos were electroporated with the \u2018rescue\u2019 construct on the right side and a control nuclear RFP plasmid on the left side. (C) Exogenous expression of the Hmga1 coding sequence under the regulation of a ubiquitous enhancer/promoter combination causes cranial neural crest migration defects. (D\u2013G\u2019\u2019\u2019) Overexpression of the coding sequence (G\u2019\u2019\u2019) of Hmga1 compensates for its loss of function, rescuing proper cranial neural crest migration (D), as assayed by number of Pax7-positive neural crest cells (E), and expression of the neural crest specifier gene Sox10 (F) in migratory cranial neural crest (G,G\u2019) and Pax7 in the dorsal neural tube (G\u2019\u2019). Electroporated embryos were allowed to develop until HH9+ and screened for the expression of H2B-RFP. (H\u2013H\u2019) The coding sequence for Pax7 was ectopically expressed in an Hmga1-knockout background. Transverse section through a representative embryo shows the comparison between endogenous (left) and overexpressed (right; arrow) Pax7 transcript levels in the dorsal neural tube. I-K. Ectopic expression of Pax7 rescued neural crest specification defects caused by the loss of Hmga1 as assayed by the expression of neural crest specifier genes Tfap2b (I) and Snai2 (I\u2019) in transverse cross-sections through the hindbrain (J,K). nt, neural tube; nc, notochord. See also Figure 5\u2014source data 1.\n\nThe gold standard to demonstrate specificity for loss-of-function experiments is to perform a rescue. We posited that if modulating the levels of Hmga1 was important for neural crest formation, then exogenous expression of Hmga1 in an Hmga1-knockout background should successfully rescue neural crest cell numbers. Since the Protospacer Adjacent Motifs (PAMs) adjacent to both Hmga1 gRNAs are located in the introns (Figure 3\u2014figure supplement 1A), the coding sequence on the plasmid would be guarded against the endonuclease activity of Cas9. To test our hypothesis, we knocked out Hmga1 using CRISPR plasmids as described above, but co-electroporated the \u2018rescue\u2019 construct on the right side. The left side was electroporated with an equal concentration of a plasmid encoding nuclear RFP. Embryos cultured to HH9+ and immunostained for Pax7 revealed that overexpression of Hmga1 concomitant with knocking out the endogenous gene successfully rescued Pax7 levels in cranial neural crest cells (Figure 5D). To quantify the extent of rescue, we calculated the ratio of the number of Pax7+ cells on the experimental versus control sides in both wholemount \u2018knockout\u2019 (from Figure 3G) and \u2018rescue\u2019 embryos (Figure 5D). In unperturbed embryos, this ratio will be close to 1, reflecting similar numbers of Pax7+ cells on both sides of the embryo. However, in the \u2018knockout\u2019 group, we observed a mean ratio of 0.767\u00a0\u00b1\u00a00.041 (n\u00a0=\u00a011), which was significantly different from the ratio of 0.946\u00a0\u00b1\u00a00.016 (n\u00a0=\u00a08) observed in the \u2018rescue\u2019 group (p<0.001, Welch two-sample t-test) (Figure 5E, Figure 5\u2014source data 1). Next, we probed for the expression of the neural crest specifier gene Sox10 to ask if rescuing the expression of Hmga1 truly restored the process of neural crest specification. To do this, we processed \u2018rescue\u2019 embryos for HCR against Sox10 (Figure 5F) together with Pax7 (Figure 5G). Indeed, restoring the levels of Hmga1 was sufficient to rescue the expression of Sox10 (Figure 5G\u2019) and Pax7 (Figure 5G\u2019\u2019) in early migrating crest, and Pax7 in the premigratory crest residing in the dorsal neural tube, as visualized in transverse sections through the embryo. We also confirmed that the expression of the \u2018rescue\u2019 construct was restricted to the dorsal neural tube (Figure 5G\u2019\u2019\u2019), thereby precluding unintended effects on neural tube development.\n\nFinally, given that the loss of Hmga1 specifically affected Pax7 expression in neural crest precursors, we asked if exogenous expression of Pax7 would be sufficient to rescue the effects of losing Hmga1 on neural crest specification. We tested this by overexpressing the coding sequence of Pax7 (Roellig et al., 2017) on the right side of gastrula stage embryos together with CRISPR plasmids targeting Hmga1 (Figure 5H,H\u2019). Given that the effect of CRISPR-plasmid-mediated loss of Hmga1 was more penetrant posteriorly, we developed \u2018Pax7-rescue\u2019 embryos to HH9+, processed them for HCR against the neural crest specifier genes Tfap2b (Figure 5I) and Snai2 (Figure 5I\u2019), and generated transverse sections through the hindbrain. Tfap2b is expressed in delaminating and migrating neural crest cells (Simoes-Costa and Bronner, 2016), whereas Snai2 is expressed in premigratory neural crest and is eventually downregulated as the cells begin to migrate (Taneyhill et al., 2007). Compared to the Hmga1-knockout embryos in which Tfap2b mRNA (Figure 3K) and Snail2 protein (Figure 3I\u2019) levels were notably downregulated, restoring the levels of Pax7 in an Hmga1 knockout background rescued the expression of both Tfap2b (Figure 5J) and Snai2 (Figure 5K) in the dorsal hindbrain. Together, these results suggest that maintaining the correct levels of Hmga1 is necessary for proper neural crest specification in a Pax7-dependent manner.\n\n### Hmga1 activates Wnt signaling to mediate neural crest emigration\n\nNeural crest induction, specification, and emigration from the neural tube are intricate processes that require an interplay between Wnt, FGF, and BMP signaling pathways (Piacentino and Bronner, 2018; Woda et al., 2003) working reiteratively at different stages of development. For example, at the onset of neural crest emigration, Wnt1 is prominently expressed in the dorsal neural tube, where premigratory neural crest cells reside (Sim\u00f5es-Costa et al., 2015). As a result, these cells turn on Snai2, a critical regulator of EMT (Nieto et al., 1994) known to function downstream of the Wnt signaling pathway.\n\nAfter knocking out Hmga1 using CRISPR plasmids, we noted not only perturbed emigration but also a dramatic reduction in Snail2 levels, even within the subset of Pax7-expressing cells in the dorsal neural folds (Figure 3I\u2019). These results raised the intriguing possibility that this might be due to an effect on Wnt signaling in already-specified premigratory neural crest cells. Accordingly, we hypothesized that Hmga1 may function as a Wnt activator in these cells. If so, its loss would be predicted to result in reduced Wnt signaling in the dorsal neural tube. To test this possibility, we used a reporter construct expressing nuclear GFP under the regulation of six Tcf/Lef binding sites and a minimal promoter as a readout for canonical Wnt signaling (Ferrer-Vaquer et al., 2010; Figure 6A). Plasmids encoding Cas9, gRNAs targeting Hmga1, nuclear RFP, and Tcf/Lef:H2B-GFP were electroporated on the right side of gastrula stage embryos, while the left control side was electroporated with plasmids encoding Cas9, control gRNA, nuclear RFP, and Tcf/Lef:H2B-GFP. As described above, this plasmid-based knockout strategy resulted in the loss of Hmga1 after neural crest specification in the midbrain but well before their emigration. Embryos were allowed to develop until HH9, by which time neural crest cells have started delaminating from the neural tube at the midbrain level (Figure 6B). Consistent with our hypothesis, the results show that Hmga1 knockout caused a notable reduction in canonical Wnt reporter activity on the knockout side compared to the control side (Figure 6C) at the midbrain level. Interestingly, these embryos had a neural crest migration defect (Figure 6\u2014figure supplement 1C\u2013D) but no notable difference in the number of Pax7+ cells between the two sides (Figure 6\u2014figure supplement 1E\u2019), as expected if the Hmga1 knockout occurred after specification was complete; this is consistent with previous work showing that perturbation of canonical Wnt signaling following specification does not affect the number of Pax7+ cells at cranial EMT stages (Hutchins and Bronner, 2018). Quantitation of this effect revealed a significant reduction in reporter activity following the loss of Hmga1 (Figure 6D, Figure 6\u2014source data 1; p<0.01; student\u2019s t-test), as measured by comparing the ratio between the knockout and the control sides of transfected cells (RFP+) that turned on Wnt signaling within the Pax7+ domain, therefore expressing GFP. While this ratio was expected to be one for embryos with unperturbed Wnt signaling on both sides, we observed a mean ratio of 0.325\u00a0\u00b1\u00a00.082 (n\u00a0=\u00a05), suggesting that Wnt activity was disrupted in the absence of Hmga1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0Plasmid construct used as a readout for Wnt activity (after Ferrer-Vaquer et al., 2010). Six TCF/Lef-binding sites together with a minimal promoter regulate the expression of nuclear GFP in transfected cells in response to Wnt signaling. (B) Transverse section through the midbrain of a representative HH9+ embryo immunostained for Pax7, GFP, RFP, and DAPI. (C\u2013C\u2019\u2019) Individual channels of image in B focused on the dorsal neural tube. In the absence of Hmga1, Wnt reporter activity was downregulated, resulting in fewer cells that expressed nuclear GFP (arrowheads) on the right side (C), even though cells were uniformly transfected on both experimental and control sides (C\u2019), and the thickness of the neural tube remained unaffected (C\u2019\u2019). (D) The reduction in Wnt reporter output was quantified as a ratio of number of cells that expressed nuclear GFP, and the number of cells that were successfully transfected and therefore expressed nuclear RFP. The observed difference in GFP+/RFP+ ratio between the knockout and control sides was statistically significant (**p<0.01, student\u2019s t-test). (E\u2013F) In situ hybridization against Wnt1 in an Hmga1-knockout background. Transverse section through the midbrain (E) and hindbrain (F) shows reduced and unchanged levels of Wnt1 ligand in the dorsal neural tube on the experimental (arrow) versus control neural tubes, respectively. (E\u2019\u2013F\u2019) The number of Pax7-positive cells in the midbrain appeared unchanged (E\u2019), while a reduction was observed in the hindbrain (F\u2019). (G\u2013H) Transverse section through a representative embryo where Hmga1 was knocked out using CRISPR plasmids (G), and an embryo where Draxin was ectopically expressed (H) on the right side, immunostained for Laminin. Similar to Draxin overexpression, Hmga1 loss resulted in a failure of basement membrane remodeling due to reduced canonical Wnt signaling in neural crest cells, causing the laminin channel to remain blocked on the experimental side (arrows). (I\u2013J) Expression of stabilized \u00df-catenin (NC1-\u220690\u00df-cat) in delaminating cranial neural crest of Hmga1-knockout embryos was sufficient to rescue the migration defect. (K) Quantification of area covered by cranial neural crest cells on the experimental versus control sides. In the absence of Hmga1, cranial neural crest cells fail to migrate properly, a defect that can be separately rescued in Hmga1-knockout background by overexpression (OE) of stabilized \u00df-catenin in delaminating cranial neural crest, or exogenous expression of Hmga1 coding sequence ectopically (Rescue). nt, neural tube; nc, notochord; KO, knockout; OE, overexpression. See also Figure 6\u2014figure supplement 1, Figure 6\u2014source data 1, Figure 6\u2014source data 2.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A)\u00a0Genomic locus of Wnt1 obtained from the UCSC genome browser (Karolchik et al., 2003). ATAC-seq profile of premigratory cranial neural crest cells (from Williams et al., 2019) shows a putative Wnt1 enhancer upstream of the gene (highlighted in red). (B) Genomic sequence of the putative enhancer identified in (A) contains a predicted AT-rich Hmga1 binding motif (red box). (C) A representative Hmga1-knockout embryo immunostained for Pax7 shows a migration defect on the experimental side (right) compared to the control side (left). (D) The area covered by migratory cranial neural crest cells, marked by the position of the lateral-most leader cell, is reduced following Hmga1 knockout (green \u2013 control; 53.3 a.u.2, magenta \u2013 knockout; 40.5 a.u.2). An overlay of the two areas highlights this reduction. (E) Transverse section through the embryo shown in (C). The number of dorsal neural tube cells positive for canonical Wnt activity, as indicated by the nuclear GFP reporter expression (E), was significantly decreased following the loss of Hmga1 (shown in Figure 6C). However, the number of Pax7+ cells (E\u2019) on either side of the dorsal neural tube were relatively similar, despite the observed migration defect in (C). No difference in the thickness of the neural tube (E\u2019\u2019) was observed (shown in Figure 6C\u2019\u2019).\n\nNext, to investigate the mechanism by which Hmga1 regulates Wnt signaling, we turned to a recently published cranial neural crest chromatin accessibility dataset (Williams et al., 2019) and looked for open chromatin regions surrounding genes that encode for known Wnt ligands. In particular, Wnt1 expression in the dorsal neural tube is known to be necessary for proper delamination of cranial neural crest cells (Sim\u00f5es-Costa et al., 2015). Interestingly, we discovered a putative enhancer downstream of Wnt1 (Figure 6\u2014figure supplement 1A) that contained an AT-rich domain consistent with Hmga1-binding motifs (Figure 6\u2014figure supplement 1B; Reeves and Nissen, 1990). Therefore, we hypothesized that Hmga1 may modulate Wnt signaling by regulating Wnt1 expression. To test this, we knocked out Hmga1 on the right side of gastrula stage embryos using CRISPR plasmids, cultured them ex ovo until HH9, and examined Wnt1 mRNA expression using in situ hybridization. Indeed, the dorsal neural tube expression of Wnt1 was severely downregulated (Figure 6E) in the midbrain. Consistent with the effect of losing Hmga1 after neural crest specification, the number of Pax7+ cells in the dorsal neural tube appeared unchanged (Figure 6E\u2019). In contrast, no change in Wnt1 expression was observed at the hindbrain level (Figure 6F) which, being developmentally \u2018younger,\u2019 instead exhibited a specification defect that resulted in fewer Pax7+ cells in the dorsal neural tube on the experimental side compared to the control side (Figure 6F\u2019). Interestingly, following Hmga1 knockout, we also observed defects in basement membrane remodeling and laminin channel formation at midbrain levels (Figure 6G), another Wnt-dependent process necessary for neural crest EMT; consistent with Wnt inhibition via Draxin overexpression (Hutchins and Bronner, 2019), loss of Hmga1 abrogated laminin remodeling and resulted in physical blockage of the channel through which migrating cranial neural crest cells normally transit (Figure 6H). Together, these data indicate that after neural crest specification, Hmga1 is necessary for the expression of Wnt1 and activation of canonical Wnt signaling in the dorsal neural tube, and by extension, Wnt-dependent neural crest delamination/EMT.\n\nFinally, given that Hmga1 functions as a canonical Wnt pathway activator, we asked if the migration defects caused by the loss of Hmga1 post-specification can be rescued by restoring canonical Wnt signaling in premigratory neural crest cells. To address this, we expressed GFP-tagged, stabilized \u00df-catenin (NC1-\u220690 \u00df-cat) to upregulate canonical Wnt signaling output specifically in premigratory neural crest cells, thus circumventing the critical process of neural crest induction at the neural plate border (Hutchins and Bronner, 2018). If loss of Hmga1 in premigratory neural crest cells resulted in migration defects due to reduced canonical Wnt signaling, expression of a stabilized \u00df-catenin would be predicted to restore those levels, thereby rescuing proper migration. To test this, we knocked out Hmga1 on the right side of gastrula stage embryos using CRISPR plasmids as previously described, but co-electroporated NC1-\u220690\u00df-cat-GFP on the right side. The left side was electroporated with control reagents (Figure 6I). Embryos were cultured ex ovo until HH9+ and processed for immunohistochemistry against Pax7. Consistent with our hypothesis that Hmga1 functions as a Wnt activator in neural crest cells, expression of stabilized \u00df-catenin was sufficient to rescue proper cranial neural crest migration from Hmga1 knockdown (Figure 6J). We also calculated the ratio of the area occupied by migrating cranial neural crest cells between the experimental and control sides (Figure 6K, Figure 6\u2014source data 2). For wildtype embryos, this ratio would be close to 1, reflecting equal neural crest migration on both sides of the embryo. However, after the loss of Hmga1, the ratio of areas on experimental versus control sides was 0.642\u00a0\u00b1\u00a00.028 (n\u00a0=\u00a05). Importantly, co-expression of stabilized \u00df-catenin in premigratory neural crest rescued migration, with an average migration ratio of 1.015\u00a0\u00b1\u00a00.035 (n\u00a0=\u00a04), which was significantly different from the knockout group (p<0.0001, ANOVA and post hoc Tukey HSD). Similarly, ubiquitous expression of the Hmga1 coding sequence also rescued neural crest migration, with an average migration ratio of 0.972\u00a0\u00b1\u00a00.044 (n\u00a0=\u00a05), which was also significantly different from the knockout group (p<0.001, ANOVA and post hoc Tukey HSD). Taken together, our results suggest that Hmga1 mediates the process of EMT by activating canonical Wnt signaling in premigratory neural crest cells, thus enabling them to emigrate from the neural tube.\n\n## Discussion\n\nWhile chromatin modifiers are known to influence gene expression and cell fate decisions at many stages of development (Cai et al., 2014; Laugesen and Helin, 2014; Miller and Hendrich, 2018; O'Shaughnessy-Kirwan et al., 2015), parsing cell-type-specific functions and targets for these proteins is often challenging due to broad expression across multiple tissues and time points. In this study, we have used scRNA-seq to identify a chromatin-remodeling protein, Hmga1, as highly expressed in neural crest cells. Using high-resolution in situ HCR and temporally controlled knockdowns, we present evidence for a dual role of Hmga1 in the formation and migration of neural crest cells. At early stages, we find that the neural plate border gene Pax7 is a downstream target of Hmga1, such that loss of Hmga1 blocks neural crest specification in a manner that can be rescued by restoring Pax7 expression. After neural crest specification is complete in the closing neural tube, Hmga1 plays a second role in modulating canonical Wnt signaling via alterations in the levels of Wnt1 in premigratory neural crest cells. This in turn influences neural crest EMT and delamination from the dorsal neural tube (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/57779/elife-57779-fig7-v2.jpg)\n\n**Figure 7.:** Our data suggest that Hmga1 plays temporally distinct roles in the neural plate border and dorsal neural tube. At the neural plate border, Hmga1 acts upstream of Pax7 and is required for proper neural crest specification. Later, in the dorsal neural tube, Hmga1 regulates the levels of Wnt1, thereby modulating the levels of canonical Wnt signaling to control neural crest delamination and subsequent migration.\n\nThe canonical Wnt signaling pathway is a major input in a complex GRN that activates transcriptional circuits and controls neural crest specification and cell lineage decisions (Martik and Bronner, 2017; Sim\u00f5es-Costa and Bronner, 2015; Williams et al., 2019), influencing multiple aspects of neural crest development from induction at the neural plate border to proliferation, onset of migration via EMT, and differentiation (Milet and Monsoro-Burq, 2012; Rabad\u00e1n et al., 2016; Sim\u00f5es-Costa and Bronner, 2015; Steventon et al., 2009; Wu et al., 2003; Yanfeng et al., 2003). For example, regulation of the levels of canonical Wnt signaling is critical for progressive basement membrane remodeling during neural tube closure and neural crest delamination. Consequently, perturbation of Wnt signaling output at different stages of basement membrane remodeling or delamination causes severe defects in neural crest EMT (Hutchins and Bronner, 2019; Rabad\u00e1n et al., 2016). Interestingly, early inhibition of canonical Wnt signaling in gastrula stage chick embryos has been shown to reduce Pax7 expression (Basch et al., 2006), whereas canonical Wnt inhibition after neural crest specification does not alter Pax7 expression but has a marked effect on EMT (Hutchins and Bronner, 2018). This suggests that there are separable early versus late effects of canonical Wnt signaling during neural crest development.\n\nHmga1 has been shown to upregulate canonical Wnt signaling components and downstream targets in the intestinal stem cell niche, thereby amplifying signaling output (Xian et al., 2017) presumably through increased promotor accessibility. Our results are consistent with a similar role for Hmga1 in the neural crest, where its loss resulted in decreased output from a canonical Wnt reporter (Figure 6) as well as downregulation of the Wnt1 ligand (Figure 6) and the canonical Wnt target Snail2 (Figure 3). However, temporally controlled knockdowns revealed that loss of Hmga1 reduced Wnt1 expression following completion of neural crest specification, but not at earlier stages of neural crest induction. Conversely, Hmga1 knockdown affected Pax7 expression during neural crest induction but not after specification is complete. One possible explanation is that once open/remodeled, the chromatin landscape surrounding the Pax7 regulatory regions form topologically\u00a0associating domains (TADs) that are stable and resistant to repression. Alternatively, other Hmga1-independent cis-elements may influence Pax7 expression following neural crest induction. Given that neural crest cells appear to have highly dynamic chromatin accessibility surrounding spatiotemporally\u00a0regulated enhancer elements (Williams et al., 2019), we would predict the latter, although further investigation is needed to distinguish between these possibilities.\n\nAn intriguing possibility is that Hmga1, in addition to regulating neural crest EMT, is necessary for maintaining the broad developmental potential of neural crest cells. Neural crest cells exhibit stem-cell-like properties, including multipotency and self-renewal. Thus, the early expression of Hmga1 in neural crest precursors, together with its reported role in maintaining stemness and self-renewal properties in various stem cell and cancer systems (Battista et al., 2003; Schuldenfrei et al., 2011; Shah and Resar, 2012), may indicate a role in maintaining neural crest stemness. In the dorsal neural tube, self-renewal within the premigratory neural crest is driven by the transcription factor c-Myc (Kerosuo and Bronner, 2016), which together with its binding partner regulates cell cycle progression. Consistent with this possibility, we found that the mRNA expression of c-Myc is downregulated in the dorsal neural tube following Hmga1 knockout. However, given that canonical Wnt signaling also regulates stem cell self-renewal (Xu et al., 2016), as well as cell cycle progression in neural crest (Burstyn-Cohen et al., 2004), Hmga1 may have additional Wnt-dependent and/or Wnt-independent roles in the maintenance of the neural crest stem cell pool.\n\nHmga1 is a member of the high motility group A (HMGA) family of genes that are characterized by their A/T-hook domains and the ability to transform chromatin architecture to regulate transcription of target genes. To date, two members of the HMGA family, Hmga1 and Hmga2, have been identified in mammals (Reeves et al., 2001), each having distinct roles in oncogenesis (Jun et al., 2015; Meyer et al., 2007; Miyazawa et al., 2004). As both genes share several common targets, they may compensate for each other where they overlap. Indeed, Hmga1/Hmga2 double knockout mice have severe embryonic lethality, compared to less-penetrant effects in individual knockouts (Federico et al., 2014). While both Hmga1 and Hmga2 genes are annotated in the chick genome, our scRNA-seq results show that a significant proportion of neural crest cells express Hmga1 but not Hmga2. Consistent with this, loss of Hmga1 resulted in neural crest-related developmental defects, making it unlikely that there is redundancy and/or compensation by Hmga2 in chick embryos. Interestingly, only the hmga2 paralogue is present in Xenopus laevis embryos (Macr\u00ec et al., 2016), but morpholino-mediated knockdown of hmga2 did not affect the expression of neural plate border gene pax3/7. This contrasts with our results in chick embryos, where the loss of Hmga1 affected both Pax7 transcription and protein levels in the neural plate border. Together with the absence of Hmga2+ cells in our single-cell data, this raises the possibility that individual HMGA family members play discrete roles in neural crest development, similar to their distinct roles in tumorigenesis.\n\nIn addition to Hmga1, other chromatin remodeling proteins serve similar functions in neural crest cell fate decisions. For example, both the ATP-dependent chromatin remodeler CHD7 and the histone demethylase Jumonji D2A (KDM4A/JmjD2A) are necessary for expression of neural crest specifier genes; notably, however, these chromatin modifiers appear to function at later developmental time points than Hmga1, as neither knockdown of KDM4A in chick embryos nor CHD7 in Xenopus embryos affect Pax3/7 expression levels (Bajpai et al., 2010; Strobl-Mazzulla et al., 2010). Furthermore, KDM4A influences Snai2 and Wnt1 levels, raising the possibility that Hmga1 may act in concert with KDM4A or other chromatin remodelers to restructure the accessibility of neural crest GRN circuits at different cell fate checkpoints.\n\nIn summary, our data reveal a dual role for the chromatin remodeler Hmga1 during neural crest development. First, during specification at the neural plate border, Hmga1 regulates the completion of neural crest induction as assayed by readout of Pax7 expression at the neural plate border. Later, following neural crest specification, Hmga1 plays a second role in modulating the levels of the canonical Wnt signaling pathway in the closing dorsal neural tube to influence neural crest EMT and delamination at the onset of their migration. Post-embryonically, neural-crest-derived cells are prone to metastasis and give rise to numerous cancers (Maguire et al., 2015). Furthermore, neural crest and cancer cells often employ similar mechanisms to drive EMT; in particular, the hallmarks of metastasis often involve disruption of the basement membrane which may also be driven by canonical Wnt signaling (Gallik et al., 2017; Powell et al., 2013). Interestingly, high expression levels of Hmga1 have been associated with premature EMT and prolonged stemness in several cancers of the pancreas (Abe et al., 2000), breast (Flohr et al., 2003), lung (Sarhadi et al., 2006), and ovaries (Masciullo et al., 2003). Therefore, it is interesting to note that Hmga1 may play parallel roles in neural crest development and cancer metastasis. Understanding how Hmga1, and chromatin remodeling in general, alters cell fate decisions and EMT through signaling and transcriptional regulation in neural crest cells will undoubtedly have important and broad implications in human development and disease.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Gallus gallus)</td>\n      <td>Hmga1</td>\n      <td>UCSC genome browser</td>\n      <td>NM_204369.1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Gallus gallus)</td>\n      <td>G. gallus</td>\n      <td>Sun State Ranch (Monrovia, CA, USA)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse IgG1 anti-Pax7</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>RRID:AB_528428</td>\n      <td>1:10</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-Laminin</td>\n      <td>Sigma-Aldrich</td>\n      <td>RRID:AB_477163</td>\n      <td>1:1000 on sections</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse IgM anti-HNK1</td>\n      <td>Developmental Studies Hybridoma Bank</td>\n      <td>RRID:AB_2314644</td>\n      <td>1:5</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-RFP</td>\n      <td>MBL</td>\n      <td>RRID:AB_591279</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-Slug (C19G7)</td>\n      <td>Cell Signaling</td>\n      <td>RRID:AB_2239535</td>\n      <td>1:200</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat IgG anti-GFP</td>\n      <td>Rockland</td>\n      <td>RRID:AB_218182</td>\n      <td>1:500</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-cleaved-caspase-3</td>\n      <td>R and D systems</td>\n      <td>RRID:AB_2243952</td>\n      <td>1:500 on sections</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-phospho-histone H3</td>\n      <td>Abcam</td>\n      <td>RRID:AB_443110</td>\n      <td>1:500 on sections</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCI-H2B-RFP (plasmid)</td>\n      <td>Betancur et al., 2010</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>CAG\u00a0&gt;\u00a0nls-Cas9-nls (plasmid)</td>\n      <td>Gandhi et al., 2017</td>\n      <td>RRID:Addgene_99138</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>cU6.3&gt;Ctrl. gRNA.f+e (plasmid)</td>\n      <td>Gandhi et al., 2017</td>\n      <td>RRID:Addgene_99140</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>cU6.3&gt;Hmga1.1. gRNA.f+e (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Detailed in Materials and methods section \u2018CRISPR-Cas9-mediated perturbations\u2019</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>cU6.3&gt;Hmga1.2. gRNA.f+e (plasmid)</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Detailed in Materials and methods section \u2018CRISPR-Cas9-mediated perturbations\u2019</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>FoxD3-NC2:eGFP (plasmid)</td>\n      <td>Sim\u00f5es-Costa et al., 2012</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Tcf/Lef: H2B-GFP (plasmid)</td>\n      <td>Ferrer-Vaquer et al., 2010</td>\n      <td>RRID:Addgene_32610</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>NC1-\u220690\u03b2-cat (plasmid)</td>\n      <td>Hutchins and Bronner, 2018</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pCI-Pax7-IRES-H2B-RFP (plasmid)</td>\n      <td>Roellig et al., 2017</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Hmga1.1. gRNA</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5\u2019-gCAGGAAGAAACCGGAGgta</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Hmga1.2. gRNA</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5\u2019-GCCAGCTCCAAAGGCAGGgt</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>AscI-V5-Fwd</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5\u2019-ggcgcgccaccATGGCTGGTAAGCCTA</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>V5-Hmga1-Fwd</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5\u2019-CTCCTCGGTCTCGATTCTagcgacgccggcgccaagcc</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Hmga1OLP-V5-Rev</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5\u2019-ggcttggcgccggcgtcgctAGAATCGAGACCGAGGAG</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Hmga1-ClaI-Rev</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5\u2019-ttatcgattcactgctcctcctcggatg</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Hmga1.1 short guide oligo</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5\u2019-GCGTAATACGACTCACTATAGGCAGGAAGAAACCGGAGGTAGTTTTAGAGCTAGAAATAGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Hmga1.2 short guide oligo</td>\n      <td>This paper</td>\n      <td>PCR primer</td>\n      <td>5\u2019-GCGTAATACGACTCACTATAGGCCAGCTCCAAAGGCAGGGTGTTTTAGAGCTAGAAATAGC</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Control short guide oligo</td>\n      <td>Hutchins and Bronner, 2018</td>\n      <td>PCR primer</td>\n      <td>Detailed in Materials and methods section \u2018CRISPR-Cas9-mediated perturbations\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>gRNA Primer 1</td>\n      <td>Hutchins and Bronner, 2018</td>\n      <td>PCR primer</td>\n      <td>Detailed in Materials and methods section \u2018CRISPR-Cas9-mediated perturbations\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>gRNA Primer 2</td>\n      <td>Hutchins and Bronner, 2018</td>\n      <td>PCR primer</td>\n      <td>Detailed in Materials and methods section \u2018CRISPR-Cas9-mediated perturbations\u2019</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Guide-constant oligo</td>\n      <td>Hutchins and Bronner, 2018</td>\n      <td>PCR primer</td>\n      <td>Detailed in Materials and methods section \u2018CRISPR-Cas9-mediated perturbations\u2019</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Chromium Single Cell 3\u2019 Library and Gel Bead Kit v2</td>\n      <td>10X Genomics</td>\n      <td>Cat# PN-120267</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Chromium Single Cell A Chip Kit</td>\n      <td>10X Genomics</td>\n      <td>Cat# PN-1000009</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Endofree maxi prep kit</td>\n      <td>Macharey Nagel</td>\n      <td>Cat# 740426.50</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Agencourt AMPure XP beads</td>\n      <td>Beckman Coulter</td>\n      <td>Cat# A63880</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Dynabeads MyOne SILANE</td>\n      <td>10X Genomics</td>\n      <td>Cat# 2000048</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SPRIselect Reagent Kit</td>\n      <td>Beckman Coulter</td>\n      <td>Cat# B23318</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>High Sensitivity DNA Kit</td>\n      <td>Agilent</td>\n      <td>Cat# 5067\u20134626</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Qubit dsDNA HS Assay Kit</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# Q32854</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Fiji</td>\n      <td>Schindelin et al., 2012</td>\n      <td>RRID:SCR_002285</td>\n      <td>https://imagej.net/Fiji</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Seurat</td>\n      <td>Butler et al., 2018</td>\n      <td>RRID:SCR_007322</td>\n      <td>https://satijalab.org/seurat/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Inkscape</td>\n      <td>Inkscape</td>\n      <td>RRID:SCR_014479</td>\n      <td>https://inkscape.org/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cellranger</td>\n      <td>10X Genomics</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>2100 Expert software</td>\n      <td>Agilent</td>\n      <td>RRID:SCR_014466</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Fluoromount-G</td>\n      <td>Southern Biotech</td>\n      <td>Cat# 0100\u201301</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# D1306</td>\n      <td>1:10000 on sections</td>\n    </tr>\n  </tbody>\n</table>\n\n### Electroporations\n\nChicken embryos (Gallus gallus) were commercially obtained from Sun Valley farms (CA), and developed to the specified Hamburger-Hamilton (HH) (Hamburger and Hamilton, 1951) stage in a humidified 37\u00b0C incubator. For ex ovo electroporations, embryos were dissected from eggs at HH4, injected with specified reagents, then electroporated as described previously (Sauka-Spengler and Barembaum, 2008). Following electroporation, embryos were cultured in fresh albumin/1% penicillin-streptomycin at 37\u00b0C and grown to specified HH stages. Once the embryos reached the desired stages, they were screened for transfection efficiency and overall health. Unhealthy and/or poorly transfected embryos were discarded and not included for downstream assays.\n\n### Single-cell suspension\n\nHH4 embryos electroporated with FoxD3-NC2:eGFP were cultured until HH12 ex ovo at 37\u00b0C, following which the hindbrain region spanning rhombomeres 6, 7, and 8 was dissected under a fluorescence microscope. For dissociation, several different conditions were tested (dissociation in a glass dish for 1 hr in Accumax (EMD Millipore), chemical dissociation on a nutator for 15, 30, and 45 min, and chemical dissociation with gentle pipetting for 15, 30, and 45 min). The quality of the single-cell suspension obtained was tested by a trypan blue-based live-dead staining. Accordingly, we pooled dissected tissue washed in chilled 1X DPBS and incubated it in Accumax cell dissociation solution for 15 min at 37\u00b0C with gentle mixing every 5 min. Dissociation was terminated using Hanks Buffered Saline Solution (HBSS) (Corning) supplemented with BSA Fraction V (Sigma; 0.2% w/v). The suspension was centrifuged at 300 g for 4 min to collect cells at the bottom, the supernatant was removed, and the pellet was resuspended in 1 mL HBSS-BSA. To remove cell debris and clumps, the 1 mL suspension was passed through a 20 \u00b5m filter in a clean hood. This suspension was loaded on a 10X Chromium chip A (v2) to generate GEMs. The library was prepared according to the manufacturer\u2019s protocol and sequenced on the Illumina HiSeq platform using the paired end chemistry.\n\n### scRNA-seq data analysis\n\nThe raw fastq files were aligned to the galgal6 (GRCg6a) genome assembly obtained from the ENSEMBL database using the cellranger pipeline downloaded from the 10X Genomics website. For feature counts, a custom galgal6 GTF file, where all annotated 3\u2019 UTRs were extended by 1 kb, was used. This was done to compensate for improper gene annotations in the chick genome. The count matrices were then imported in R for analysis using Seurat (Butler et al., 2018). The initial filtering step discarded all cells with fewer than 200 and more than 10,000 genes per cell. We also filtered out cells expressing more than 5% mitochondrial or less than 20% ribosomal genes. Next, we removed genes corresponding to small RNAs, micro RNAs, mitochondria, and general housekeeping from the count matrix. Following log normalization and Principal Component Analysis, the cells were clustered using the first 15 dimensions (calculated from the elbow plot). Different resolution parameter values were tested, and a value of 0.45 was used to identify subpopulations within the data. Dimensional reductionality was performed using the UMAP (McInnes et al., 2018) algorithm. All plots were created in R, exported in SVG format, and assembled in Inkscape.\n\n### Hybridization chain reaction\n\nHCR v3 was performed using the protocol suggested by Molecular Technologies (Choi et al., 2018) with minor modifications. Briefly, the embryos were fixed in 4% paraformaldehyde (PFA) overnight at 4\u00b0C or 2 hr at room temperature, washed in 0.1% PBS-Tween, dehydrated in a series of 25%, 50%, 75%, and 100% methanol washes, and incubated overnight at \u221220\u00b0C in 100% methanol. The next day, the embryos were rehydrated, treated with proteinase-K for 2\u20132.5 min, and incubated with 10 pmol of probes dissolved in hybridization buffer overnight at 37\u00b0C. The next day, following several washes in \u2018probe wash buffer,\u2019 embryos were incubated in 30 pmol of hairpins H1 and H2 diluted in Amplification buffer at room temperature overnight. The next morning, embryos were washed in 0.1% 5x-SSC-Tween and imaged. All probes were designed and ordered through Molecular Technologies.\n\n### Molecular cloning\n\nThe coding sequence of Hmga1 was obtained from the UCSC genome browser (Karolchik et al., 2003). A V5 tag was cloned in-frame at the N-terminus using overlap PCR (Accuprime). The fusion product was cloned downstream of the CAGG promoter, upstream of the IRES-H2B-RFP segment of pCI-H2B-RFP (Betancur et al., 2010) to clone the final plasmid (CAGG\u00a0>V5-HMGA1-IRES-H2B-RFP). The Cas9 and gRNA constructs (Gandhi et al., 2017), neural crest enhancer FoxD3-NC2:eGFP (Sim\u00f5es-Costa et al., 2012), canonical Wnt reporter TCF/Lef:H2B-GFP (Ferrer-Vaquer et al., 2010), and neural crest-specific stabilized \u00df-catenin NC1-\u220690\u00df-cat (Hutchins and Bronner, 2018) have all been previously described and validated.\n\n### CRISPR-Cas9-mediated perturbations\n\nThe genomic locus for Hmga1 was obtained from the UCSC genome browser (Karolchik et al., 2003). Two gRNAs targeting the coding sequence, the first targeting exon 3 (5\u2019-CCAGGAAGAAACCGGAGgta-3\u2019), and the second targeting exon 4 (5\u2019-GCCAGCTCCAAAGGCAGGgt-3\u2019), were designed using CHOPCHOP (Labun et al., 2019). The protospacers were cloned downstream of the chick U6.3 promoter as described in Gandhi et al., 2017. For control electroporations, the control gRNA described in Gandhi et al., 2017 was used. CAGG\u00a0>nls-Cas9-nls and CAGG\u00a0>H2 B-RFP were electroporated at a concentration of 2 \u00b5g/\u00b5l, together with either 0.75 \u00b5g/\u00b5l per Hmga1 gRNA on the right side or 1.5 \u00b5g/\u00b5l of control gRNA on the left side.\n\nFor Cas9/in vitro-transcribed gRNA RNP experiments, we generated single-guide RNAs (sgRNAs) as described previously (Hutchins and Bronner, 2018), using the following primers:\n\nOf the\u00a0recombinant Cas9 (M0646; New England Biolabs),\u00a02.6\u00a0\u00b5l was mixed with equal volumes of control gRNA or 1.3 \u00b5l each of the two Hmga1 gRNAs, and heated to 37\u00b0C for 15 min. The solution was then incubated at room temperature for 15 min, mixed with 2 \u00b5g/\u00b5l H2B-RFP and 1 \u00b5l of sterilized 2% food dye, and injected in embryos for electroporation.\n\n### In situ hybridization and immunohistochemistry\n\nChromogenic in situ hybridization was performed as described previously for FoxD3, Sox10, and Tfap2b, c-Myc, and Wnt1 (Kerosuo and Bronner, 2016; Simoes-Costa and Bronner, 2016; Sim\u00f5es-Costa et al., 2015).\n\nImmunohistochemistry was performed as described previously (Gandhi et al., 2017). Briefly, embryos were fixed for 20 min at room temperature, blocked in 10% goat or donkey serum in 0.5% PBS-Triton overnight at 4\u00b0C, incubated overnight at 4\u00b0C in primary antibodies diluted in blocking solution, washed at room temperature in 0.5% PBS-Triton, incubated overnight at 4\u00b0C in secondary antibodies diluted in blocking solution, washed at room temperature in 0.5% PBS-Triton, and processed for imaging and/or cryosectioning. The following primary antibodies and concentrations were used: Mouse IgM HNK1 (1:5; Developmental Studies Hybridoma Bank (3H5)); Mouse IgG1 Pax7 (1:10; Developmental Studies Hybridoma Bank (RRID:AB_528428)); Goat GFP (1:500; Rockland Cat# 600-101-215); Rabbit RFP (1:500; MBL Cat# PM005); Rabbit Snail2 (1:200; Cell Signaling Technology (9585)); Rabbit Laminin (1:1000; Sigma-Aldrich (L9393)); Rabbit cleaved-Caspase 3 (1:500; R and D Systems Cat# AF835); Mouse phospho-histone H3 (1:500; Abcam Cat# Ab14955). The following species-specific secondary antibodies labeled with Alexa Fluor dyes (Invitrogen) were used: Goat/Donkey anti-Mouse Alexa Fluor 647 (for Pax7 and pH3; 1:250), Goat/Donkey Goat anti-Mouse IgM Alexa Fluor 350/488 (for HNK1; 1:250), Goat/Donkey anti-Rabbit Alexa Fluor 488 (for Snail2, cleaved-Caspase3, and Laminin; 1:250), Donkey anti-goat Alexa Fluor 488 (for Citrine; 1:500), and Goat/Donkey anti-rabbit Alexa Fluor 568 (for RFP; 1:500).\n\n### Cryosectioning\n\nFollowing whole mount imaging, embryos were washed in 5% and 15% sucrose overnight at 4\u00b0C. The next day, embryos were transferred to molten gelatin for 3\u20135 hr at 37\u00b0C, embedded in molds at room temperature, frozen in liquid nitrogen, and stored at \u221280\u00b0C overnight. Embedded embryos were sectioned on a micron cryostat to obtain 16 \u00b5m sections through immunostained embryos and 20 \u00b5m sections through in situ hybridized embryos. The sections were degelatinized at 42\u00b0C in 1x PBS for 5 min, washed in 1x PBS, soaked in 1x PBS containing 0.1 \u00b5g/mL DAPI for 2 min, washed in 1x PBS and distilled water. Fluoromount mounting medium was used to mount coverslips on slides.\n\n### Microscope image acquisition, analysis, and statistical tests\n\nWhole mount embryos and sections on slides were imaged on a Zeiss Imager M2 with an ApoTome module and/or Zeiss LSM 880 confocal microscope at the Caltech Biological Imaging Facility. Images were post-processed using FIJI imaging software (Schindelin et al., 2012). To calculate corrected total cell fluorescence (CTCF), the following formula was used:\n\n$$\nCTCF=IntegratedDensity-(Selectedarea*Meanbackgroundfluorescence)\n$$\n\nFor cell counts, a median filter was applied to 8-bit images. A Bernsen-based auto local-thresholding method (Bernsen, 1986) followed by watershed segmentation was used to identify cell boundaries. The \u2018Analyze particles\u2019 function was used to count the number of cells. All statistical analyses were performed in R. The Wilcoxon rank test was used in datasets that were not normally distributed. In cases where the underlying distribution was normal, a student\u2019s t-test was used to calculate significance. In cases where multiple samples were compared, Analysis of Variance (ANOVA) test combined with Tukey HSD correction was used. Post hoc power analysis was used to validate sample size and confirm sufficient statistical power (>0.8).\n",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "c78e85be-9b3d-4796-bfaf-9742dd13181a",
+      "submission_id": "a897fd94-9e30-4815-9fb5-9a55ef7484c6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lukas Sommer, University of Zurich Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57779.sa1](https://doi.org/10.7554/eLife.57779.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Bimodal function of chromatin remodeler Hmga1 in neural crest induction and Wnt-dependent emigration\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Lukas Sommer as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Didier Stainier as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Filippo M Rijli (Reviewer #2); Igor Adameyko (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nIn this interesting study, Gandhi et al. used single cell transcriptomics on early migrating neural crest cells to show that the non-histone chromatin remodeler Hmga1 is highly expressed in neural crest cells. Hmga1 has been overlooked in previous bulk sequencing approaches due to its simultaneous expression in other cell types. Using a series of elegant CRISPR-Cas9-based temporally controlled knockdowns (KDs), high resolution in situ hybridization, and rescue experiments in the chick embryo, they convincingly show that Hmga1 has essential and temporally distinct roles in neural crest development.\n\nThis study introduces a new major regulator of neural crest development and represents another example in the literature of a developmental program being re-expressed in carcinogenesis. This is a very interesting, comprehensive and well-done study.\n\nRevisions for this paper:\n\nSpecific points to be experimentally addressed:\n\n1) Part of the phenotype (including the reduction of Pax7 domain) can be caused by the increased apoptosis of KO cells. This needs to be checked. Specifically, cell death at the neural plate border should be evaluated for Hmga1 KD vs. control in embryos electroporated on both sides.\n\n2) HMGA1 is known as a powerful driver of cell cycle progression. The KO phenotype can be partly explained by potentially reduced proliferation. This should be investigated more in depth with EdU labeling and / or other complementary methods.\n\nSpecific points to be addressed either experimentally (optionally) or by text revision:\n\n1) The early role of Hmga1 involves Pax7 regulation already in the neural plate border (Figure 4). Are other neural plate border genes (as previously defined by the Bronner lab) affected as well? If so, do they possibly share putative Hmga1 binding motifs in support of a broader role of Hmga1 in neural crest specification? Or is the phenotype mainly mediated by Hmga1-dependent control of Pax7 and can be rescued by Pax7 overexpression?\n\n2) Gain of function experiments with overexpression of HMGA1/2 might be beneficial.\n\n3) Can the authors speculate on how Hmga1 may function as a Wnt activator? This point should be discussed.\n\n4) The role of HMGA1 in tissue growth and proliferation should be mentioned in the Introduction section.\n\n5) In general, the figure legends should include more details. Specifically, abbreviations should be explained such as for example in Figure 2. Moreover, the structures/cells, arrows and arrowheads point to, should be consistently referred to in the figure legends.\n\n6) In the third paragraph of the subsection \u201cHmga1 regulates expression of Pax7 in neural crest precursors in the neural plate border\u201d, it is stated that the loss of Hmga1 reduces both endogenous Pax7 protein expression and reporter expression, however the representative images in Figure 4J/J' do not clearly show this effect. Rather, the number of cells appear to be reduced.\n\n7) In the third paragraph of the subsection \u201cHmga1 activates Wnt signaling to mediate neural crest emigration\u201d, it is mentioned that Hmga1 knockdown causes defects in basement membrane remodelling and channel formation. However, this is not very obvious from the pictures shown in Supplementary Figure 4D-E. Maybe the authors want to include a positive control here, such as overexpression of draxin that was shown to prevent channel formation, as shown in Hutchins and Bronner, 2019.\n\n8) Wnt pathway activation was rescued by expression of a stabilised \u03b2-catenin (subsection \u201cHmga1 activates Wnt signaling to mediate neural crest emigration\u201d, fourth paragraph), and this resulted in proper neural crest migration in Hmga1 knockouts. The effect on neural crest migration is not very clear in Figure 5F. An image of the area covered by migratory neural crest cells should be included here, as similarly done in Figure 6\u2014figure supplement 1D.\n\nRevisions expected in follow-up work:\n\n1) It would be important to see if the neural crest cells with HMGA1 KO are capable of differentiating into traditional derivatives or not. What happens to these cells at later developmental stages?\n\n2) Since the authors take advantage of a single cell transcriptomics, it might be beneficial to attempt to sequence a KO condition to measure how the reduction of HMGA2 correlates with the cell cycle phases, induction of delamination and migratory phenotype. This is a large experiment, which is not strictly necessary for this revision (given the situation with COVID 19). We would like to mention this approach in case the authors will have the opportunity and resources to tackle this now or later in the follow up projects.\n",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2010db7a-48c0-4b29-bde4-eed837ef22fd",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C1",
+      "claim": "Hmga1 is highly expressed prior to neural crest specification and maintained in migrating chick neural crest cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using single-cell RNA sequencing coupled with high-resolution in situ hybridization to identify novel transcriptional regulators, we show that chromatin remodeler Hmga1 is highly expressed prior to specification and maintained in migrating chick neural crest cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract directly states this finding based on scRNA-seq and in situ hybridization experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "215ffca4-679a-440f-a91b-1ece83edd4d2",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C2",
+      "claim": "At the neural plate border, Hmga1 regulates Pax7-dependent neural crest lineage specification.",
+      "claim_type": "EXPLICIT",
+      "source": "At the neural plate border, Hmga1 regulates Pax7-dependent neural crest lineage specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by CRISPR-Cas9 knockout experiments showing loss of Pax7 expression and rescue experiments with Pax7 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "0755ad3c-a903-45ca-b277-ef373292b986",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C3",
+      "claim": "At premigratory stages, Hmga1 loss reduces cranial crest emigration from the dorsal neural tube independent of Pax7.",
+      "claim_type": "EXPLICIT",
+      "source": "At premigratory stages, a second role manifests where Hmga1 loss reduces cranial crest emigration from the dorsal neural tube independent of Pax7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporally controlled knockouts showed migration defects without affecting Pax7 expression when Hmga1 was lost after specification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "0e45d871-f30e-4d4a-9816-1a6485f8d4c5",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C4",
+      "claim": "Hmga1 emigration defects are rescued by stabilized \u03b2-catenin, implicating Hmga1 as a canonical Wnt activator.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this is rescued by stabilized \u00df-catenin, thus implicating Hmga1 as a canonical Wnt activator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Rescue experiments with stabilized \u03b2-catenin restored migration defects caused by Hmga1 loss.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "2e144f6e-1340-404d-bdec-dbf356ca4691",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C5",
+      "claim": "Neural crest cells originate at the neural plate border.",
+      "claim_type": "EXPLICIT",
+      "source": "Originating at the neural plate border, these cells occupy the leading edges of the closing neural folds during neurulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the neural crest field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "4403832b-41e7-4016-af38-feb257316e5d",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C6",
+      "claim": "Neural crest cells undergo epithelial-to-mesenchymal transition to delaminate and migrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, premigratory neural crest cells that initially reside within the dorsal aspect of the developing neural tube undergo an epithelial-to-mesenchymal (EMT) transition in order to delaminate and migrate extensively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is well-established knowledge about neural crest development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "91f74325-5f51-4251-901a-86eaeb009c2a",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C7",
+      "claim": "Neural crest cells differentiate into craniofacial cartilage, pigment cells, smooth muscle, and peripheral neurons and glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon reaching their terminal locations within the embryo, neural crest cells differentiate into a plethora of derivatives, including craniofacial cartilage, pigment cells, smooth muscle, and peripheral neurons and glia (reviewed in Gandhi and Bronner, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "aa171b43-4c89-4d2f-97fd-1a695fb521a9",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C8",
+      "claim": "A feed-forward gene regulatory network underlies neural crest formation from induction to differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A feed-forward gene regulatory network (GRN) underlies the formation of the neural crest, from induction at the neural plate border to final differentiation into a multitude of cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "f48aeb85-2883-4085-858a-af208f4759c4",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C9",
+      "claim": "The neural crest GRN is comprised of transcription factors and signaling pathways partitioned into developmental modules.",
+      "claim_type": "EXPLICIT",
+      "source": "This GRN is comprised of transcription factors and signaling pathways, partitioned into developmental modules (Martik and Bronner, 2017; Sim\u00f5es-Costa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "86d44ac1-aaba-44dc-a122-dcda05b849dc",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C10",
+      "claim": "Single-cell RNA sequencing and ATAC-seq have enabled analysis of the neural crest GRN at a global level.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, new tools like single-cell RNA sequencing (scRNA-seq) and Assay for Transposase-Accessible Chromatin using sequencing (ATAC-seq) have enabled analysis of the neural crest GRN at a global level, helping to clarify lineage trajectories and elucidate key biological processes therein, ranging from proliferation to differentiation (Williams et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Williams et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "63ed5f5b-6230-42b2-bba2-a6827f185206",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C11",
+      "claim": "Gastrula stage chick embryos show high overlap of multiple transcription factors in single cells in the neural plate border region.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative gene expression analysis of gastrula stage chick embryos has revealed a surprisingly high degree of overlap of multiple transcription factors associated with diverse cell types within single cells in the early neural plate border region, ranging from markers characteristic of the neural crest (Pax7), to neural (Sox2) and placodal (Six1) cell types (Roellig et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Roellig et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "2e0b8453-b928-4a80-bb6e-2bab060200a5",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C12",
+      "claim": "Cells in the neural plate border are transcriptionally primed toward multiple cell fates rather than committed to a particular lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the possibility that cells in the neural plate border are transcriptionally primed toward multiple cell fates, rather than committed to a particular lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of overlapping transcription factor expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "f4386ec8-fe79-49b0-bb76-e0b053ed9c45",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C13",
+      "claim": "Hmga1 is a non-histone chromatin remodeler with known roles in tumor metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the genes uncovered in the neural crest cluster was Hmga1, a non-histone chromatin remodeler that has known roles in tumor metastasis (Resar et al., 2018), but has been understudied in development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Resar et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "2a3cd112-e71c-43fc-a78d-74b543023d84",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C14",
+      "claim": "Hmga1 transcripts are enriched in the neural crest with onset of expression preceding neural crest specification in the neural plate border.",
+      "claim_type": "EXPLICIT",
+      "source": "We first characterized the expression and function of Hmga1 during neural crest development using in situ Hybridization Chain Reaction (HCR) and observed Hmga1 transcripts enriched in the neural crest, with the onset of expression preceding neural crest specification in the neural plate border.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on HCR data shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "2888c22f-5abd-4e72-bbbd-4c8d7b4cca91",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C15",
+      "claim": "Loss of Hmga1 results in downregulation of neural crest specifier genes Snail2, FoxD3, and Sox10.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrate an early role for Hmga1 in neural crest lineage specification in a Pax7-dependent manner, resulting in the downregulation of neural crest specifier genes such as Snail2, FoxD3, and Sox10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in situ hybridization and immunohistochemistry data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "c23752c3-525e-4b13-af6a-42743708427c",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C16",
+      "claim": "Loss of Hmga1 after neural crest specification reveals defects in cranial neural crest emigration and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, loss of Hmga1 after completion of neural crest specification revealed a distinct set of defects in cranial neural crest emigration and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on temporally controlled CRISPR experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "a54a9733-b91c-463e-9db7-0c317f801cdd",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C17",
+      "claim": "Hmga1 regulates canonical Wnt activity mediated by Wnt1 in delaminating neural crest cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using in situ hybridization and a fluorescent protein-based reporter, we show that this is a consequence of reduced canonical Wnt activity mediated by Wnt1, which can be rescued by concomitantly expressing stabilized \u00df-catenin, thus establishing a separate role for Hmga1 in delaminating neural crest cells as a Wnt pathway activator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Wnt reporter assays, in situ hybridization for Wnt1, and rescue experiments with stabilized \u03b2-catenin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "b4715635-b75f-4c4d-81e3-e526546c665e",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C18",
+      "claim": "The single-cell RNA-seq profiled 1268 cells, of which 1241 passed quality control filters.",
+      "claim_type": "EXPLICIT",
+      "source": "The library was sequenced at a depth of 50,000 median reads/cell to profile a total of 1268 cells, out of which 1241 cells passed the quality control filters (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "f66c6e96-5760-4aa9-b363-cae718abda00",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C19",
+      "claim": "Dimensional reduction using UMAP identifies six subpopulations in the dissociated embryonic hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimensional reduction using UMAP identifies six subpopulations (including the spike-in) contained within the dissociated embryonic hindbrain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "d0ce28c3-7f79-40d6-81cc-34c9f964a77c",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C20",
+      "claim": "The neural crest subcluster is distinguished by enrichment of Tfap2B and ItgB3 markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Known genetic markers that were enriched in each population served to distinguish the neural crest subcluster (Tfap2B+, ItgB3+) from the surrounding tissues (i.e. otic placode (Cldn3+, Gbx2+); hindbrain (Pax6+, Zic2+); ectoderm (Epcam+, Crabp2+); mesoderm (FoxC2+, Col1A1+)) (Figure 1\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on marker gene expression analysis in the scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "f01ccab5-fe82-4ac8-92f7-b04751ad1ca9",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C21",
+      "claim": "Hmga1 is a member of the High Motility Group A (HMGA) superfamily that binds to the minor groove of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A member of the High Motility Group A (HMGA) superfamily, Hmga1 encodes a small, nonhistone chromatin remodeling protein that binds to the minor groove of DNA, thereby affecting the chromatin landscape and facilitating the binding of other transcription factors in the opposing major groove (Grosschedl et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "645ae69d-c6a2-49a1-aa6d-27221463557a",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C22",
+      "claim": "In developing mouse embryos, Hmga1 has widespread expression across several tissues including the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In developing mouse embryos, Hmga1 has been shown to have widespread expression across several tissues, including the brain, where its loss has been correlated with reduced developmental potential of neural precursor cells (Kishi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kishi et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "f4d36bc9-645a-4a98-bf2d-df1faf1f9551",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C23",
+      "claim": "Loss of Hmga1 in mouse brain has been correlated with reduced developmental potential of neural precursor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In developing mouse embryos, Hmga1 has been shown to have widespread expression across several tissues, including the brain, where its loss has been correlated with reduced developmental potential of neural precursor cells (Kishi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kishi et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "ab209c35-0a4a-4178-b784-4ac210c6847a",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C24",
+      "claim": "Hmga1 transcripts were first detected in the neural plate and neural plate border at HH4+, preceding Pax7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Hmga1 transcripts were first detected in the neural plate and neural plate border, but not in the non-neural ectoderm at HH4+, and preceded the expression of Pax7 in the neural plate border.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on HCR data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "fc2087ed-bde3-4401-a99a-54e67aa293d0",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C25",
+      "claim": "Hmga1 expression overlaps with Pax7 in the neural plate border at HH5-6.",
+      "claim_type": "EXPLICIT",
+      "source": "Hmga1 expression remained high at HH5-6 (Figure 2A\u2013B), overlapping in the neural plate border (Figure 2\u2014figure supplement 1A) with Pax7 transcripts (Figure 2B'), as observed in transverse sections (Figure 2B\", Figure 2\u2014figure supplement 1B\u2013B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on HCR data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "2eeb63ec-4fd9-4339-9267-9aa2caa97b44",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C26",
+      "claim": "Hmga1 expression is retained in the neural tube as neural folds elevate between HH7 and HH8.",
+      "claim_type": "EXPLICIT",
+      "source": "As the neural plate border elevated to form neural folds between HH7 and HH8 (Figure 2D'''), expression of Hmga1 was retained in the neural tube (Figure 2C\u2013D) and continued to overlap with Pax7 in the dorsal neural folds (Figure 2D', Figure 2\u2014figure supplement 1C\u2013D').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on HCR data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "59b0d14b-634d-49e0-b272-82745fa1f94e",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C27",
+      "claim": "Hmga1 is expressed in both leader and follower cells within the migrating neural crest stream at HH10.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, transverse sections through a representative HH10 embryo revealed that within the migrating neural crest stream, Hmga1 was expressed in both leader and follower cells, as compared to Pax7, which appeared to be downregulated in the leader cells (Figure 2F'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on HCR data shown in Figure 2F''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "c674559c-d890-467a-a134-a20d9621ae4b",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C28",
+      "claim": "Electroporation of Cas9 and Hmga1 gRNAs resulted in loss of Hmga1 transcripts in the neural crest.",
+      "claim_type": "EXPLICIT",
+      "source": "Electroporation of Cas9 and Hmga1 gRNAs on the right side resulted in loss of Hmga1 transcripts in the neural crest as confirmed using HCR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C and quantified in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "a067ed75-ad62-4303-ad6c-863912221ec2",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C29",
+      "claim": "Hmga1 knockout results in a 25% reduction in Hmga1 expression in whole-mount embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified this phenotype in whole-mount embryos and observed a 25% reduction in Hmga1 expression (Figure 3D, Figure 3\u2014source data 1; p<0.05, Wilcoxon rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of HCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "2466f901-9431-41cc-912a-bf72652087fb",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C30",
+      "claim": "Loss of Hmga1 resulted in a notable reduction in Pax7 mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with their hierarchical onset of expression, loss of Hmga1 resulted in a notable reduction in Pax7 mRNA levels (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3E using HCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "fc23cef3-78dd-4fc6-b6c5-2ef4a41858ef",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C31",
+      "claim": "Hmga1 knockout resulted in a significant decrease in the number of Pax7+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Pax7 protein levels were dramatically reduced in the migratory cranial neural crest (Figure 3F,H'), with further analysis revealing a significant decrease in the number of Pax7+ cells on the knockout side compared to the control side (Figure 3G, Figure 3\u2014source data 2; p<0.0001, student's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunostaining and cell counting data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "3c3cf050-b02d-48d0-ab50-daa92e1a8761",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C32",
+      "claim": "In the absence of Hmga1, cranial neural crest cells failed to migrate properly as shown by HNK1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the absence of Hmga1, cranial neural crest cells failed to migrate properly, as depicted by the expression of the migratory neural crest marker HNK1 (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "5677d7bf-1256-4c6a-a1cd-fa702011a793",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C33",
+      "claim": "Neural crest specifier genes FoxD3, Tfap2b, Sox10, and c-Myc were downregulated following Hmga1 knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, using in situ hybridization, we found that other neural crest specifier genes including FoxD3 (Figure 3J,J', Figure 3\u2014figure supplement 1D,E',E''), Tfap2b (Figure 3K), Sox10 (Figure 3L,L'), and c-Myc (Figure 3\u2014figure supplement 1C) were also downregulated on the knockout side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in situ hybridization data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "cbf18362-1ae6-4d9b-8cd7-6c20c1ec31ba",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C34",
+      "claim": "No notable difference in neural tube thickness was observed following Hmga1 knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, no notable difference in the thickness of the neural tube was observed (Figure 3H,J',M'', Figure 3\u2014figure supplement 1E), suggesting that the targeted knockout of Hmga1 in the neural plate border affected the neural folds/dorsal neural tube but not the neural plate itself.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of sections shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "adf39966-1c13-4c23-8e25-fcf511dbb140",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C35",
+      "claim": "The ratio of Pax7+ cells between experimental and control sides is significantly different between midbrain and hindbrain levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we noticed that while this ratio was 0.948 \u00b1 0.036 (n = 5) at the midbrain level, it was significantly reduced in the dorsal hindbrain, with a mean ratio of 0.69 \u00b1 0.08 (n = 5; p<0.05, paired Student's t-test) (Figure 4C, Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of Pax7+ cells in sections.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "2761e52b-de4e-43eb-8ffa-e1c121aa6b04",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C36",
+      "claim": "Cas9-protein-mediated loss of Hmga1 resulted in downregulation of Pax7 expression in the neural plate border.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9-protein-mediated loss of Hmga1 resulted in downregulation of Pax7 expression in the neural plate border on the right side (experimental side; arrowhead).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4F and quantified in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "0bbd3371-dcc5-40b0-909a-f90bb1bd3193",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C37",
+      "claim": "The Pax7 fluorescence intensity was significantly reduced on the Hmga1 knockout side compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "We also quantified the corrected Pax7 total fluorescence intensity (C.T.C.F) in the neural plate border and observed a statistically significant difference between the control and knockout sides (p<0.01, paired student's t-test), with mean Pax7 intensity on the control side being 89.853 \u00b1 23.388 a.u. (n = 5) as compared to 42.763 \u00b1 16.079 a.u. (n = 5) on the knockout side (Figure 4J, Figure 4\u2014figure supplement 1H, Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "77073ffa-eaa9-47d6-9589-28958358bb08",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C38",
+      "claim": "Loss of Hmga1 did not affect the rate of cell proliferation or apoptosis in the neural plate border.",
+      "claim_type": "EXPLICIT",
+      "source": "Transverse sections through the experimental compared with control sides revealed that neural plate border cells no longer expressed Pax7 after the loss of Hmga1 (Figure 4H,I), and that this was not a result of premature apoptosis or aberrant cell proliferation (Figure 4\u2014figure supplement 1B\u2013G', Figure 4\u2014figure supplement 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunostaining for cleaved-caspase-3 and phospho-histone H3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "a0ae682b-3587-420f-ba43-3871db34ac8b",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C39",
+      "claim": "Hmga1 knockout caused reduced Pax7 mRNA levels but retained Tfap2a and Msx1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the loss of Pax7 protein in the neural plate border, Hmga1 knockout caused reduced Pax7 mRNA levels on the experimental (Figure 4M,P) compared to the control (Figure 4L,O) sides. However, the expression of Tfap2a (Figure 4L',M') and Msx1 (Figure 4O',P') was retained in the absence of Hmga1, together with no noticeable difference in the thickness of the neural plate border (Figure 4L'',M'',O'',P'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on HCR data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "25153f17-bcbb-4fb5-99a0-de6b4897fbd5",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C40",
+      "claim": "The mean calculated ratio of Pax7 fluorescence intensity between experimental and control sides was 0.552 \u00b1 0.06, which was statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for Pax7, the mean calculated ratio was 0.552 \u00b1 0.06 (n = 6), with a statistically significant difference between the experimental and control sides (p<0.001, paired Student's t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of HCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "9b126402-e4ed-41f2-bfdc-933074ac7948",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C41",
+      "claim": "The mean calculated ratio of Msx1 fluorescence intensity between experimental and control sides was 0.809 \u00b1 0.098, which was not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, while the mean calculated ratio for Msx1 was 0.809 \u00b1 0.098 (n = 3), the fluorescence intensities were not significantly different between the two sides (Figure 4Q, Figure 4\u2014source data 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of HCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "f6bb2710-e050-45e8-bd2a-9790b57d6f7f",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C42",
+      "claim": "Overexpression of Hmga1 resulted in a notable reduction in Pax7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that, rather than having the opposite effect to loss of function, overexpression of Hmga1 also resulted in a notable reduction in Pax7 expression on the experimental side (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "c2bb45e5-175c-4a92-8e93-06426828fb60",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C43",
+      "claim": "Maintaining appropriate levels of Hmga1 is critical for proper neural crest specification.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that maintaining appropriate levels of Hmga1 is critical for proper neural crest specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that both loss and overexpression of Hmga1 reduce Pax7 expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "e49c0992-a876-4b29-87af-4f2fbdf62846",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C44",
+      "claim": "Overexpression of Hmga1 in an Hmga1-knockout background successfully rescued Pax7 levels in cranial neural crest cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos cultured to HH9+ and immunostained for Pax7 revealed that overexpression of Hmga1 concomitant with knocking out the endogenous gene successfully rescued Pax7 levels in cranial neural crest cells (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5D and quantified in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "fb1c369b-a993-473c-bae2-3066c82b5deb",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C45",
+      "claim": "The mean ratio of Pax7+ cells in the 'knockout' group was 0.767 \u00b1 0.041, significantly different from the 'rescue' group ratio of 0.946 \u00b1 0.016.",
+      "claim_type": "EXPLICIT",
+      "source": "In unperturbed embryos, this ratio will be close to 1, reflecting similar numbers of Pax7+ cells on both sides of the embryo. However, in the 'knockout' group, we observed a mean ratio of 0.767 \u00b1 0.041 (n = 11), which was significantly different from the ratio of 0.946 \u00b1 0.016 (n = 8) observed in the 'rescue' group (p<0.001, Welch two-sample t-test) (Figure 5E, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of Pax7+ cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "fa8cd566-efbd-4f1a-8464-313860d700aa",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C46",
+      "claim": "Restoring Hmga1 levels was sufficient to rescue Sox10 and Pax7 expression in early migrating crest.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, restoring the levels of Hmga1 was sufficient to rescue the expression of Sox10 (Figure 5G') and Pax7 (Figure 5G'') in early migrating crest, and Pax7 in the premigratory crest residing in the dorsal neural tube, as visualized in transverse sections through the embryo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5G using HCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "d4bc9d62-904d-4192-bd31-d48b3049cf98",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C47",
+      "claim": "Exogenous expression of Pax7 rescued the expression of Tfap2b and Snai2 in an Hmga1 knockout background.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the Hmga1-knockout embryos in which Tfap2b mRNA (Figure 3K) and Snail2 protein (Figure 3I') levels were notably downregulated, restoring the levels of Pax7 in an Hmga1 knockout background rescued the expression of both Tfap2b (Figure 5J) and Snai2 (Figure 5K) in the dorsal hindbrain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5J and 5K using HCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "76ac8faf-d103-42a5-a91f-dfba4de8bdcf",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C48",
+      "claim": "Wnt1 is prominently expressed in the dorsal neural tube at the onset of neural crest emigration.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at the onset of neural crest emigration, Wnt1 is prominently expressed in the dorsal neural tube, where premigratory neural crest cells reside (Sim\u00f5es-Costa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sim\u00f5es-Costa et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "25dacce2-4f86-4394-9e00-69453448b82d",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C49",
+      "claim": "Snai2 is a critical regulator of EMT that functions downstream of the Wnt signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, these cells turn on Snai2, a critical regulator of EMT (Nieto et al., 1994) known to function downstream of the Wnt signaling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Nieto et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "51537b94-bbf6-43a6-a354-6cefbf9d05d8",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C50",
+      "claim": "Hmga1 knockout caused a notable reduction in canonical Wnt reporter activity at the midbrain level.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, the results show that Hmga1 knockout caused a notable reduction in canonical Wnt reporter activity on the knockout side compared to the control side (Figure 6C) at the midbrain level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6C using a Tcf/Lef:H2B-GFP reporter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "4884430f-08f4-4ad6-9b89-456e36c7c7ff",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C51",
+      "claim": "Hmga1 knockout embryos had a neural crest migration defect but no notable difference in the number of Pax7+ cells at the midbrain level.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these embryos had a neural crest migration defect (Figure 6\u2014figure supplement 1C\u2013D) but no notable difference in the number of Pax7+ cells between the two sides (Figure 6\u2014figure supplement 1E'), as expected if the Hmga1 knockout occurred after specification was complete; this is consistent with previous work showing that perturbation of canonical Wnt signaling following specification does not affect the number of Pax7+ cells at cranial EMT stages (Hutchins and Bronner, 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 1 and is consistent with cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "7511ce4f-0517-4f99-88b8-286adaec45ee",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C52",
+      "claim": "The mean ratio of Wnt reporter activity between knockout and control sides was 0.325 \u00b1 0.082, indicating disrupted Wnt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "While this ratio was expected to be one for embryos with unperturbed Wnt signaling on both sides, we observed a mean ratio of 0.325 \u00b1 0.082 (n = 5), suggesting that Wnt activity was disrupted in the absence of Hmga1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of Wnt reporter activity shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "fd34543e-897c-4de4-92f4-74efc34e4cd8",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C53",
+      "claim": "A putative Wnt1 enhancer contains an AT-rich domain consistent with Hmga1-binding motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we discovered a putative enhancer downstream of Wnt1 (Figure 6\u2014figure supplement 1A) that contained an AT-rich domain consistent with Hmga1-binding motifs (Figure 6\u2014figure supplement 1B; Reeves and Nissen, 1990).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of ATAC-seq data and sequence analysis, with citation to Reeves and Nissen, 1990.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "df5562b9-532d-4627-bfaf-459d077de080",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C54",
+      "claim": "Dorsal neural tube expression of Wnt1 was severely downregulated in the midbrain following Hmga1 knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the dorsal neural tube expression of Wnt1 was severely downregulated (Figure 6E) in the midbrain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6E using in situ hybridization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "9445b9c7-a977-489d-a8ec-db7d7c28a30d",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C55",
+      "claim": "No change in Wnt1 expression was observed at the hindbrain level following Hmga1 knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no change in Wnt1 expression was observed at the hindbrain level (Figure 6F) which, being developmentally 'younger,' instead exhibited a specification defect that resulted in fewer Pax7+ cells in the dorsal neural tube on the experimental side compared to the control side (Figure 6F').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6F using in situ hybridization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "ef979cfd-43bf-4ae1-ae8e-07a0afafe598",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C56",
+      "claim": "Hmga1 knockout resulted in defects in basement membrane remodeling and laminin channel formation at midbrain levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, following Hmga1 knockout, we also observed defects in basement membrane remodeling and laminin channel formation at midbrain levels (Figure 6G), another Wnt-dependent process necessary for neural crest EMT; consistent with Wnt inhibition via Draxin overexpression (Hutchins and Bronner, 2019), loss of Hmga1 abrogated laminin remodeling and resulted in physical blockage of the channel through which migrating cranial neural crest cells normally transit (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6G-H using laminin immunostaining, with citation to Hutchins and Bronner, 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "dff40688-f426-44b9-a390-aa940d709e9a",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C57",
+      "claim": "Expression of stabilized \u03b2-catenin was sufficient to rescue proper cranial neural crest migration from Hmga1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis that Hmga1 functions as a Wnt activator in neural crest cells, expression of stabilized \u00df-catenin was sufficient to rescue proper cranial neural crest migration from Hmga1 knockdown (Figure 6J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "e1159977-aa34-4c95-be05-6a176de657d9",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C58",
+      "claim": "After Hmga1 loss, the ratio of migration areas on experimental versus control sides was 0.642 \u00b1 0.028.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after the loss of Hmga1, the ratio of areas on experimental versus control sides was 0.642 \u00b1 0.028 (n = 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of migration area shown in Figure 6K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "3feef0e9-d384-43a2-912e-ea6a1de186c7",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C59",
+      "claim": "Co-expression of stabilized \u03b2-catenin in premigratory neural crest rescued migration with an average ratio of 1.015 \u00b1 0.035, significantly different from the knockout group.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, co-expression of stabilized \u00df-catenin in premigratory neural crest rescued migration, with an average migration ratio of 1.015 \u00b1 0.035 (n = 4), which was significantly different from the knockout group (p<0.0001, ANOVA and post hoc Tukey HSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of migration area shown in Figure 6K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "29d50124-c3e0-4999-96d8-b759a0de916c",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C60",
+      "claim": "Ubiquitous expression of Hmga1 coding sequence rescued neural crest migration with an average ratio of 0.972 \u00b1 0.044, significantly different from the knockout group.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, ubiquitous expression of the Hmga1 coding sequence also rescued neural crest migration, with an average migration ratio of 0.972 \u00b1 0.044 (n = 5), which was also significantly different from the knockout group (p<0.001, ANOVA and post hoc Tukey HSD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of migration area shown in Figure 6K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "5e0115e4-2777-4b9a-bbd2-e5750017cc91",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C61",
+      "claim": "Chromatin modifiers influence gene expression and cell fate decisions at many stages of development.",
+      "claim_type": "EXPLICIT",
+      "source": "While chromatin modifiers are known to influence gene expression and cell fate decisions at many stages of development (Cai et al., 2014; Laugesen and Helin, 2014; Miller and Hendrich, 2018; O'Shaughnessy-Kirwan et al., 2015), parsing cell-type-specific functions and targets for these proteins is often challenging due to broad expression across multiple tissues and time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "deff2f82-fcb5-401f-969b-7702d52b4055",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C62",
+      "claim": "Canonical Wnt signaling is a major input in the neural crest GRN that controls specification and cell lineage decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "The canonical Wnt signaling pathway is a major input in a complex GRN that activates transcriptional circuits and controls neural crest specification and cell lineage decisions (Martik and Bronner, 2017; Sim\u00f5es-Costa and Bronner, 2015; Williams et al., 2019), influencing multiple aspects of neural crest development from induction at the neural plate border to proliferation, onset of migration via EMT, and differentiation (Milet and Monsoro-Burq, 2012; Rabad\u00e1n et al., 2016; Sim\u00f5es-Costa and Bronner, 2015; Steventon et al., 2009; Wu et al., 2003; Yanfeng et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "c09741bb-1fe0-492e-8664-35a43681faac",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C63",
+      "claim": "Regulation of canonical Wnt signaling levels is critical for progressive basement membrane remodeling during neural tube closure and neural crest delamination.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, regulation of the levels of canonical Wnt signaling is critical for progressive basement membrane remodeling during neural tube closure and neural crest delamination. Consequently, perturbation of Wnt signaling output at different stages of basement membrane remodeling or delamination causes severe defects in neural crest EMT (Hutchins and Bronner, 2019; Rabad\u00e1n et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hutchins and Bronner, 2019 and Rabad\u00e1n et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "12d7ad2c-59be-4b04-a5fc-3853114c1d4b",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C64",
+      "claim": "Early inhibition of canonical Wnt signaling in gastrula stage chick embryos reduces Pax7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, early inhibition of canonical Wnt signaling in gastrula stage chick embryos has been shown to reduce Pax7 expression (Basch et al., 2006), whereas canonical Wnt inhibition after neural crest specification does not alter Pax7 expression but has a marked effect on EMT (Hutchins and Bronner, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Basch et al., 2006 and Hutchins and Bronner, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "82cd9f71-d340-4670-8094-5361d3de0457",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C65",
+      "claim": "Canonical Wnt inhibition after neural crest specification does not alter Pax7 expression but has a marked effect on EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, early inhibition of canonical Wnt signaling in gastrula stage chick embryos has been shown to reduce Pax7 expression (Basch et al., 2006), whereas canonical Wnt inhibition after neural crest specification does not alter Pax7 expression but has a marked effect on EMT (Hutchins and Bronner, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hutchins and Bronner, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "d46d282e-83cb-494c-bf9c-4aa12d253e20",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C66",
+      "claim": "Hmga1 has been shown to upregulate canonical Wnt signaling components and downstream targets in the intestinal stem cell niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Hmga1 has been shown to upregulate canonical Wnt signaling components and downstream targets in the intestinal stem cell niche, thereby amplifying signaling output (Xian et al., 2017) presumably through increased promotor accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Xian et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "47a36804-5867-440c-9683-95c7b5432e50",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C67",
+      "claim": "Loss of Hmga1 reduced Wnt1 expression following completion of neural crest specification, but not at earlier stages of neural crest induction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, temporally controlled knockdowns revealed that loss of Hmga1 reduced Wnt1 expression following completion of neural crest specification, but not at earlier stages of neural crest induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in situ hybridization data at different developmental stages.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "33d1e881-fb70-49ed-9906-604e914ba47c",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C68",
+      "claim": "Hmga1 knockdown affected Pax7 expression during neural crest induction but not after specification is complete.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Hmga1 knockdown affected Pax7 expression during neural crest induction but not after specification is complete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on temporally controlled knockout experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "c139d57d-fae1-4064-9c0b-a55bbe6e7a78",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C69",
+      "claim": "Neural crest cells exhibit stem-cell-like properties, including multipotency and self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural crest cells exhibit stem-cell-like properties, including multipotency and self-renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about neural crest cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "71103384-d878-46c0-a1a3-00b17dbe68e1",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C70",
+      "claim": "Hmga1 has a reported role in maintaining stemness and self-renewal properties in various stem cell and cancer systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the early expression of Hmga1 in neural crest precursors, together with its reported role in maintaining stemness and self-renewal properties in various stem cell and cancer systems (Battista et al., 2003; Schuldenfrei et al., 2011; Shah and Resar, 2012), may indicate a role in maintaining neural crest stemness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Battista et al., 2003; Schuldenfrei et al., 2011; Shah and Resar, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "d04c263e-915f-4c56-ae46-76335e92dfa7",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C71",
+      "claim": "Self-renewal within the premigratory neural crest is driven by the transcription factor c-Myc.",
+      "claim_type": "EXPLICIT",
+      "source": "In the dorsal neural tube, self-renewal within the premigratory neural crest is driven by the transcription factor c-Myc (Kerosuo and Bronner, 2016), which together with its binding partner regulates cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kerosuo and Bronner, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "7cf3e3ef-0f03-4195-ae34-db3fe9848f48",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C72",
+      "claim": "The mRNA expression of c-Myc is downregulated in the dorsal neural tube following Hmga1 knockout.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, we found that the mRNA expression of c-Myc is downregulated in the dorsal neural tube following Hmga1 knockout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in situ hybridization data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "4a469172-0618-41b3-86e5-87979e73cdc9",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C73",
+      "claim": "Hmga1 is a member of the high motility group A (HMGA) family characterized by A/T-hook domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Hmga1 is a member of the high motility group A (HMGA) family of genes that are characterized by their A/T-hook domains and the ability to transform chromatin architecture to regulate transcription of target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HMGA family proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "4f56c3c3-5234-46d2-a7f5-0362703d8a10",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C74",
+      "claim": "Two members of the HMGA family, Hmga1 and Hmga2, have been identified in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, two members of the HMGA family, Hmga1 and Hmga2, have been identified in mammals (Reeves et al., 2001), each having distinct roles in oncogenesis (Jun et al., 2015; Meyer et al., 2007; Miyazawa et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Reeves et al., 2001; Jun et al., 2015; Meyer et al., 2007; Miyazawa et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "682ada24-666e-45d0-bced-259a193157e1",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C75",
+      "claim": "Hmga1/Hmga2 double knockout mice have severe embryonic lethality, compared to less-penetrant effects in individual knockouts.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Hmga1/Hmga2 double knockout mice have severe embryonic lethality, compared to less-penetrant effects in individual knockouts (Federico et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Federico et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "073c19d2-619d-4763-bec5-0facd33f4ccb",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C76",
+      "claim": "A significant proportion of neural crest cells express Hmga1 but not Hmga2 in chick embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "While both Hmga1 and Hmga2 genes are annotated in the chick genome, our scRNA-seq results show that a significant proportion of neural crest cells express Hmga1 but not Hmga2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on scRNA-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "0199888a-78db-468c-93e9-7c113fbd7bd0",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C77",
+      "claim": "Only the hmga2 paralogue is present in Xenopus laevis embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only the hmga2 paralogue is present in Xenopus laevis embryos (Macr\u00ec et al., 2016), but morpholino-mediated knockdown of hmga2 did not affect the expression of neural plate border gene pax3/7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Macr\u00ec et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "19495de7-1ef7-446d-a317-f0ca7da5b16e",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C78",
+      "claim": "Morpholino-mediated knockdown of hmga2 in Xenopus did not affect the expression of neural plate border gene pax3/7.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only the hmga2 paralogue is present in Xenopus laevis embryos (Macr\u00ec et al., 2016), but morpholino-mediated knockdown of hmga2 did not affect the expression of neural plate border gene pax3/7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Macr\u00ec et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "05835588-74ee-4574-9f30-4f75e1834eeb",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C79",
+      "claim": "CHD7 and KDM4A are chromatin remodeling proteins necessary for expression of neural crest specifier genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both the ATP-dependent chromatin remodeler CHD7 and the histone demethylase Jumonji D2A (KDM4A/JmjD2A) are necessary for expression of neural crest specifier genes; notably, however, these chromatin modifiers appear to function at later developmental time points than Hmga1, as neither knockdown of KDM4A in chick embryos nor CHD7 in Xenopus embryos affect Pax3/7 expression levels (Bajpai et al., 2010; Strobl-Mazzulla et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bajpai et al., 2010 and Strobl-Mazzulla et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "d3e4714e-4add-451b-b0ff-08279baad1e9",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C80",
+      "claim": "Neither knockdown of KDM4A in chick embryos nor CHD7 in Xenopus embryos affect Pax3/7 expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both the ATP-dependent chromatin remodeler CHD7 and the histone demethylase Jumonji D2A (KDM4A/JmjD2A) are necessary for expression of neural crest specifier genes; notably, however, these chromatin modifiers appear to function at later developmental time points than Hmga1, as neither knockdown of KDM4A in chick embryos nor CHD7 in Xenopus embryos affect Pax3/7 expression levels (Bajpai et al., 2010; Strobl-Mazzulla et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bajpai et al., 2010 and Strobl-Mazzulla et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "791d7ed4-9ca8-4eb1-b706-f41ff04a3a64",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C81",
+      "claim": "KDM4A influences Snai2 and Wnt1 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, KDM4A influences Snai2 and Wnt1 levels, raising the possibility that Hmga1 may act in concert with KDM4A or other chromatin remodelers to restructure the accessibility of neural crest GRN circuits at different cell fate checkpoints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and suggests a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "7921a211-4863-41c8-80fc-006f0cde4175",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C82",
+      "claim": "Neural-crest-derived cells are prone to metastasis and give rise to numerous cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-embryonically, neural-crest-derived cells are prone to metastasis and give rise to numerous cancers (Maguire et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Maguire et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "ac989889-c629-43bc-b063-7f8075a00441",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C83",
+      "claim": "Neural crest and cancer cells often employ similar mechanisms to drive EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, neural crest and cancer cells often employ similar mechanisms to drive EMT; in particular, the hallmarks of metastasis often involve disruption of the basement membrane which may also be driven by canonical Wnt signaling (Gallik et al., 2017; Powell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gallik et al., 2017 and Powell et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "3e39a935-16f8-4f2e-ad60-10599c5a4c54",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "claim_id": "C84",
+      "claim": "High expression levels of Hmga1 have been associated with premature EMT and prolonged stemness in several cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, high expression levels of Hmga1 have been associated with premature EMT and prolonged stemness in several cancers of the pancreas (Abe et al., 2000), breast (Flohr et al., 2003), lung (Sarhadi et al., 2006), and ovaries (Masciullo et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Abe et al., 2000; Flohr et al., 2003; Sarhadi et al., 2006; Masciullo et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "98baef5b-91a1-46ac-a135-694637c7bd38",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell RNA-seq of HH12 chick hindbrain identified six subpopulations including neural crest cells, which were distinguished by enrichment of Tfap2B and ItgB3 markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 describe the scRNA-seq methodology and results. The data quality (1241/1268 cells passing QC), UMAP clustering into six populations, and marker-based identification of neural crest cells are well-documented with appropriate figures and methods. The approach is standard for scRNA-seq analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "7b402fff-1f6a-44ef-bf15-47730690d9f1",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Hmga1 is expressed prior to neural crest specification in the neural plate border (preceding Pax7 expression at HH4+) and is maintained through neural fold elevation and in both leader and follower cells of migrating neural crest streams.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C14, C24-C27 collectively establish the spatiotemporal expression pattern of Hmga1 using HCR at multiple developmental stages (HH4+ through HH10). The data show Hmga1 precedes Pax7 expression and is maintained during migration, with appropriate imaging evidence and developmental staging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "7d09c2cf-b83b-444d-a784-8e9381d7f8ef",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CRISPR-Cas9-mediated knockout of Hmga1 results in reduced Pax7 expression, decreased numbers of Pax7+ cells, impaired neural crest migration, and downregulation of neural crest specifier genes (FoxD3, Tfap2b, Sox10, c-Myc) without affecting neural tube thickness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 describe the phenotypic consequences of Hmga1 knockout using plasmid-based CRISPR. The results are supported by multiple complementary assays (HCR, immunostaining, in situ hybridization, cell counting) with appropriate statistical analysis (p<0.0001 for Pax7+ cell reduction). The specificity to neural crest without affecting neural tube thickness strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "9bff222c-1485-4f50-b841-e1493c58e55d",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Temporally controlled Cas9-protein-mediated knockout of Hmga1 at the neural plate border stage shows differential effects along the anterior-posterior axis, with more penetrant Pax7 reduction in hindbrain versus midbrain, and this reduction is not due to altered proliferation or apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 demonstrate temporal specificity using Cas9 protein for immediate knockout. The anterior-posterior difference (midbrain ratio 0.948 vs hindbrain 0.69, p<0.05) is explained by developmental timing. Controls for proliferation (phospho-histone H3) and apoptosis (cleaved-caspase-3) appropriately rule out alternative explanations. Statistical analysis is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "2617f0b4-89d8-40bb-853e-c18e00acb127",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Hmga1 knockout specifically reduces Pax7 expression in the neural plate border while maintaining expression of other neural plate border markers Tfap2a and Msx1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 demonstrate specificity of Hmga1 function using HCR for multiple markers. The quantitative analysis shows significant reduction in Pax7 (ratio 0.552\u00b10.06, p<0.001) but not Msx1 (ratio 0.809\u00b10.098, n.s.), indicating Hmga1 does not cause general neural plate border defects. This specificity is important for mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "63707f94-0379-4ca9-90b6-0d0347ce19d9",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Both overexpression and knockout of Hmga1 reduce Pax7 expression, but exogenous Hmga1 expression rescues the knockout phenotype, restoring Pax7+ cell numbers (ratio from 0.767\u00b10.041 to 0.946\u00b10.016, p<0.001) and Sox10 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 establish dosage sensitivity and specificity through gain-of-function, loss-of-function, and rescue experiments. The observation that both overexpression and knockout reduce Pax7 (C42-C43) suggests tight regulation is required. The rescue experiment (C44-C46) with appropriate quantification and statistics provides strong evidence for specificity of the knockout effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "7a98b216-f44f-4298-b8f4-c9800e310614",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Hmga1 regulates neural crest specification in a Pax7-dependent manner, as exogenous Pax7 expression rescues the expression of neural crest specifier genes Tfap2b and Snai2 in Hmga1 knockout embryos.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C47 establish the hierarchical relationship between Hmga1 and Pax7 through epistasis analysis. The rescue of downstream markers (Tfap2b, Snai2) by Pax7 overexpression in Hmga1 knockout background demonstrates that Pax7 acts downstream of Hmga1. This is supported by HCR data showing restoration of marker expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "092c5517-f359-45b8-b7ba-69448b9bdee9",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Hmga1 knockout after neural crest specification reduces canonical Wnt reporter activity in the dorsal neural tube (ratio 0.325\u00b10.082) and causes migration defects without affecting Pax7+ cell numbers at the midbrain level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 demonstrate a second, temporally distinct role for Hmga1 using a Tcf/Lef:H2B-GFP Wnt reporter. The plasmid-based knockout timing allows specification to complete at midbrain level before Cas9 is active, separating specification from migration functions. The quantification shows significant Wnt reduction with appropriate statistics and controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "3ae41869-47a2-449c-9af3-35013d5a5c8e",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hmga1 regulates Wnt1 expression in a temporally specific manner: Wnt1 is downregulated in the midbrain (post-specification) but not in the developmentally younger hindbrain following Hmga1 knockout, and a putative Wnt1 enhancer contains an AT-rich Hmga1-binding motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 and C67 link Hmga1 to Wnt1 regulation through multiple lines of evidence: identification of a putative enhancer with Hmga1-binding motifs from ATAC-seq data, in situ hybridization showing stage-specific Wnt1 downregulation, and temporal specificity consistent with the anterior-posterior developmental gradient. The mechanistic link is plausible but direct binding is not demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "388b16b9-7080-4f65-8315-f2a611340f24",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Hmga1 knockout results in defects in basement membrane remodeling and laminin channel formation at midbrain levels, consistent with reduced Wnt signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 demonstrates a downstream consequence of reduced Wnt signaling following Hmga1 loss. The laminin immunostaining shows blocked channels similar to Draxin overexpression (a known Wnt inhibitor), providing independent validation of the Wnt signaling defect. The comparison to published work (Hutchins and Bronner, 2019) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "f06a44a9-9bec-4565-a551-dca8bdc686dc",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Hmga1 functions as a canonical Wnt activator in premigratory neural crest cells, as migration defects caused by Hmga1 loss (ratio 0.642\u00b10.028) are rescued by stabilized \u03b2-catenin expression (ratio 1.015\u00b10.035, p<0.0001) or Hmga1 overexpression (ratio 0.972\u00b10.044, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C17, and C57-C60 establish Hmga1 as a Wnt activator through genetic epistasis. The rescue of migration defects by stabilized \u03b2-catenin (bypassing upstream Wnt signaling) demonstrates that Hmga1 acts upstream of \u03b2-catenin. The quantification with ANOVA and post-hoc testing is appropriate for multiple comparisons. Both rescue approaches restore migration to near-normal levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "7217a09e-825a-4a57-a938-61dd4e0dedb7",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Hmga1 has temporally distinct functions: it affects Pax7 expression during neural crest induction but not after specification is complete.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 summarizes the temporal specificity demonstrated through the differential effects at midbrain versus hindbrain levels and the use of immediate (Cas9 protein) versus delayed (plasmid) knockout strategies. This temporal separation of functions is well-supported by the experimental design and results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "9b1412c9-11d4-4ec7-b7f4-ae0d0b37c034",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "c-Myc mRNA expression is downregulated in the dorsal neural tube following Hmga1 knockout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is supported by in situ hybridization data (Figure 3\u2014figure supplement 1C). However, the functional significance of this observation is not explored experimentally. While c-Myc is known to regulate neural crest self-renewal, the connection to Hmga1 function remains correlative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "8f270944-1648-4743-b020-b4eb5d85a616",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In chick embryos, a significant proportion of neural crest cells express Hmga1 but not Hmga2 based on scRNA-seq data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is directly supported by the scRNA-seq data presented. This observation is important for interpreting the specificity of Hmga1 knockout effects and distinguishing chick from other model systems. The lack of Hmga2 expression in neural crest cells suggests no redundancy in this context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    },
+    {
+      "id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a",
+      "content_id": "0eec409d-530b-45c4-9b65-5ad3225dce24",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge and literature context for neural crest development, Hmga1 function, Wnt signaling, and chromatin remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C13, C21-C23, C48-C49, C61-C66, C69-C71, C73-C75, C77-C84 represent established knowledge from the literature, supported by appropriate citations. These provide necessary context for interpreting the novel findings but do not constitute new results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:09:41.152613Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b4715635-b75f-4c4d-81e3-e526546c665e",
+      "result_id": "98baef5b-91a1-46ac-a135-694637c7bd38"
+    },
+    {
+      "claim_id": "f66c6e96-5760-4aa9-b363-cae718abda00",
+      "result_id": "98baef5b-91a1-46ac-a135-694637c7bd38"
+    },
+    {
+      "claim_id": "d0ce28c3-7f79-40d6-81cc-34c9f964a77c",
+      "result_id": "98baef5b-91a1-46ac-a135-694637c7bd38"
+    },
+    {
+      "claim_id": "2010db7a-48c0-4b29-bde4-eed837ef22fd",
+      "result_id": "7b402fff-1f6a-44ef-bf15-47730690d9f1"
+    },
+    {
+      "claim_id": "2a3cd112-e71c-43fc-a78d-74b543023d84",
+      "result_id": "7b402fff-1f6a-44ef-bf15-47730690d9f1"
+    },
+    {
+      "claim_id": "ab209c35-0a4a-4178-b784-4ac210c6847a",
+      "result_id": "7b402fff-1f6a-44ef-bf15-47730690d9f1"
+    },
+    {
+      "claim_id": "fc2087ed-bde3-4401-a99a-54e67aa293d0",
+      "result_id": "7b402fff-1f6a-44ef-bf15-47730690d9f1"
+    },
+    {
+      "claim_id": "2eeb63ec-4fd9-4339-9267-9aa2caa97b44",
+      "result_id": "7b402fff-1f6a-44ef-bf15-47730690d9f1"
+    },
+    {
+      "claim_id": "59b0d14b-634d-49e0-b272-82745fa1f94e",
+      "result_id": "7b402fff-1f6a-44ef-bf15-47730690d9f1"
+    },
+    {
+      "claim_id": "c674559c-d890-467a-a134-a20d9621ae4b",
+      "result_id": "7d09c2cf-b83b-444d-a784-8e9381d7f8ef"
+    },
+    {
+      "claim_id": "a067ed75-ad62-4303-ad6c-863912221ec2",
+      "result_id": "7d09c2cf-b83b-444d-a784-8e9381d7f8ef"
+    },
+    {
+      "claim_id": "2466f901-9431-41cc-912a-bf72652087fb",
+      "result_id": "7d09c2cf-b83b-444d-a784-8e9381d7f8ef"
+    },
+    {
+      "claim_id": "fc23cef3-78dd-4fc6-b6c5-2ef4a41858ef",
+      "result_id": "7d09c2cf-b83b-444d-a784-8e9381d7f8ef"
+    },
+    {
+      "claim_id": "3c3cf050-b02d-48d0-ab50-daa92e1a8761",
+      "result_id": "7d09c2cf-b83b-444d-a784-8e9381d7f8ef"
+    },
+    {
+      "claim_id": "5677d7bf-1256-4c6a-a1cd-fa702011a793",
+      "result_id": "7d09c2cf-b83b-444d-a784-8e9381d7f8ef"
+    },
+    {
+      "claim_id": "cbf18362-1ae6-4d9b-8cd7-6c20c1ec31ba",
+      "result_id": "7d09c2cf-b83b-444d-a784-8e9381d7f8ef"
+    },
+    {
+      "claim_id": "adf39966-1c13-4c23-8e25-fcf511dbb140",
+      "result_id": "9bff222c-1485-4f50-b841-e1493c58e55d"
+    },
+    {
+      "claim_id": "2761e52b-de4e-43eb-8ffa-e1c121aa6b04",
+      "result_id": "9bff222c-1485-4f50-b841-e1493c58e55d"
+    },
+    {
+      "claim_id": "0bbd3371-dcc5-40b0-909a-f90bb1bd3193",
+      "result_id": "9bff222c-1485-4f50-b841-e1493c58e55d"
+    },
+    {
+      "claim_id": "77073ffa-eaa9-47d6-9589-28958358bb08",
+      "result_id": "9bff222c-1485-4f50-b841-e1493c58e55d"
+    },
+    {
+      "claim_id": "a0ae682b-3587-420f-ba43-3871db34ac8b",
+      "result_id": "2617f0b4-89d8-40bb-853e-c18e00acb127"
+    },
+    {
+      "claim_id": "25153f17-bcbb-4fb5-99a0-de6b4897fbd5",
+      "result_id": "2617f0b4-89d8-40bb-853e-c18e00acb127"
+    },
+    {
+      "claim_id": "9b126402-e4ed-41f2-bfdc-933074ac7948",
+      "result_id": "2617f0b4-89d8-40bb-853e-c18e00acb127"
+    },
+    {
+      "claim_id": "f6bb2710-e050-45e8-bd2a-9790b57d6f7f",
+      "result_id": "63707f94-0379-4ca9-90b6-0d0347ce19d9"
+    },
+    {
+      "claim_id": "c2bb45e5-175c-4a92-8e93-06426828fb60",
+      "result_id": "63707f94-0379-4ca9-90b6-0d0347ce19d9"
+    },
+    {
+      "claim_id": "e49c0992-a876-4b29-87af-4f2fbdf62846",
+      "result_id": "63707f94-0379-4ca9-90b6-0d0347ce19d9"
+    },
+    {
+      "claim_id": "fb1c369b-a993-473c-bae2-3066c82b5deb",
+      "result_id": "63707f94-0379-4ca9-90b6-0d0347ce19d9"
+    },
+    {
+      "claim_id": "fa8cd566-efbd-4f1a-8464-313860d700aa",
+      "result_id": "63707f94-0379-4ca9-90b6-0d0347ce19d9"
+    },
+    {
+      "claim_id": "215ffca4-679a-440f-a91b-1ece83edd4d2",
+      "result_id": "7a98b216-f44f-4298-b8f4-c9800e310614"
+    },
+    {
+      "claim_id": "d4bc9d62-904d-4192-bd31-d48b3049cf98",
+      "result_id": "7a98b216-f44f-4298-b8f4-c9800e310614"
+    },
+    {
+      "claim_id": "51537b94-bbf6-43a6-a354-6cefbf9d05d8",
+      "result_id": "092c5517-f359-45b8-b7ba-69448b9bdee9"
+    },
+    {
+      "claim_id": "4884430f-08f4-4ad6-9b89-456e36c7c7ff",
+      "result_id": "092c5517-f359-45b8-b7ba-69448b9bdee9"
+    },
+    {
+      "claim_id": "7511ce4f-0517-4f99-88b8-286adaec45ee",
+      "result_id": "092c5517-f359-45b8-b7ba-69448b9bdee9"
+    },
+    {
+      "claim_id": "fd34543e-897c-4de4-92f4-74efc34e4cd8",
+      "result_id": "3ae41869-47a2-449c-9af3-35013d5a5c8e"
+    },
+    {
+      "claim_id": "df5562b9-532d-4627-bfaf-459d077de080",
+      "result_id": "3ae41869-47a2-449c-9af3-35013d5a5c8e"
+    },
+    {
+      "claim_id": "9445b9c7-a977-489d-a8ec-db7d7c28a30d",
+      "result_id": "3ae41869-47a2-449c-9af3-35013d5a5c8e"
+    },
+    {
+      "claim_id": "47a36804-5867-440c-9683-95c7b5432e50",
+      "result_id": "3ae41869-47a2-449c-9af3-35013d5a5c8e"
+    },
+    {
+      "claim_id": "ef979cfd-43bf-4ae1-ae8e-07a0afafe598",
+      "result_id": "388b16b9-7080-4f65-8315-f2a611340f24"
+    },
+    {
+      "claim_id": "0755ad3c-a903-45ca-b277-ef373292b986",
+      "result_id": "f06a44a9-9bec-4565-a551-dca8bdc686dc"
+    },
+    {
+      "claim_id": "0e45d871-f30e-4d4a-9816-1a6485f8d4c5",
+      "result_id": "f06a44a9-9bec-4565-a551-dca8bdc686dc"
+    },
+    {
+      "claim_id": "a54a9733-b91c-463e-9db7-0c317f801cdd",
+      "result_id": "f06a44a9-9bec-4565-a551-dca8bdc686dc"
+    },
+    {
+      "claim_id": "dff40688-f426-44b9-a390-aa940d709e9a",
+      "result_id": "f06a44a9-9bec-4565-a551-dca8bdc686dc"
+    },
+    {
+      "claim_id": "e1159977-aa34-4c95-be05-6a176de657d9",
+      "result_id": "f06a44a9-9bec-4565-a551-dca8bdc686dc"
+    },
+    {
+      "claim_id": "3feef0e9-d384-43a2-912e-ea6a1de186c7",
+      "result_id": "f06a44a9-9bec-4565-a551-dca8bdc686dc"
+    },
+    {
+      "claim_id": "29d50124-c3e0-4999-96d8-b759a0de916c",
+      "result_id": "f06a44a9-9bec-4565-a551-dca8bdc686dc"
+    },
+    {
+      "claim_id": "33d1e881-fb70-49ed-9906-604e914ba47c",
+      "result_id": "7217a09e-825a-4a57-a938-61dd4e0dedb7"
+    },
+    {
+      "claim_id": "7cf3e3ef-0f03-4195-ae34-db3fe9848f48",
+      "result_id": "9b1412c9-11d4-4ec7-b7f4-ae0d0b37c034"
+    },
+    {
+      "claim_id": "073c19d2-619d-4763-bec5-0facd33f4ccb",
+      "result_id": "8f270944-1648-4743-b020-b4eb5d85a616"
+    },
+    {
+      "claim_id": "2e144f6e-1340-404d-bdec-dbf356ca4691",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "4403832b-41e7-4016-af38-feb257316e5d",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "91f74325-5f51-4251-901a-86eaeb009c2a",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "aa171b43-4c89-4d2f-97fd-1a695fb521a9",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "f48aeb85-2883-4085-858a-af208f4759c4",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "86d44ac1-aaba-44dc-a122-dcda05b849dc",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "63ed5f5b-6230-42b2-bba2-a6827f185206",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "2e0b8453-b928-4a80-bb6e-2bab060200a5",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "f4386ec8-fe79-49b0-bb76-e0b053ed9c45",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "f01ccab5-fe82-4ac8-92f7-b04751ad1ca9",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "645ae69d-c6a2-49a1-aa6d-27221463557a",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "f4d36bc9-645a-4a98-bf2d-df1faf1f9551",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "76ac8faf-d103-42a5-a91f-dfba4de8bdcf",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "25dacce2-4f86-4394-9e00-69453448b82d",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "5e0115e4-2777-4b9a-bbd2-e5750017cc91",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "deff2f82-fcb5-401f-969b-7702d52b4055",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "c09741bb-1fe0-492e-8664-35a43681faac",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "12d7ad2c-59be-4b04-a5fc-3853114c1d4b",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "82cd9f71-d340-4670-8094-5361d3de0457",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "d46d282e-83cb-494c-bf9c-4aa12d253e20",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "c139d57d-fae1-4064-9c0b-a55bbe6e7a78",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "71103384-d878-46c0-a1a3-00b17dbe68e1",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "d04c263e-915f-4c56-ae46-76335e92dfa7",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "4a469172-0618-41b3-86e5-87979e73cdc9",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "4f56c3c3-5234-46d2-a7f5-0362703d8a10",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "682ada24-666e-45d0-bced-259a193157e1",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "0199888a-78db-468c-93e9-7c113fbd7bd0",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "19495de7-1ef7-446d-a317-f0ca7da5b16e",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "05835588-74ee-4574-9f30-4f75e1834eeb",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "d3e4714e-4add-451b-b0ff-08279baad1e9",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "791d7ed4-9ca8-4eb1-b706-f41ff04a3a64",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "7921a211-4863-41c8-80fc-006f0cde4175",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "ac989889-c629-43bc-b063-7f8075a00441",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    },
+    {
+      "claim_id": "3e39a935-16f8-4f2e-ad60-10599c5a4c54",
+      "result_id": "3bc27b2d-2b2c-4390-9b8c-34d8720a089a"
+    }
+  ],
+  "comparisons": []
+}

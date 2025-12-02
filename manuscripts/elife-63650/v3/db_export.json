@@ -1,0 +1,1411 @@
+{
+  "submission": {
+    "id": "9c8d88fa-ce1c-43c2-a5c8-5d87a7bbd4f1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:27:33.329021Z",
+    "updated_at": "2025-12-02T21:27:33.329021Z"
+  },
+  "content": [
+    {
+      "id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "submission_id": "9c8d88fa-ce1c-43c2-a5c8-5d87a7bbd4f1",
+      "content_type": "manuscript",
+      "content_text": "# Evolutionary stasis of the pseudoautosomal boundary in strepsirrhine primates\n\n## Authors\n\n- Rylan Shearn<sup>1</sup>\n- Alison E Wright<sup>2</sup>\n- Sylvain Mousset<sup>1</sup>\n- Corinne R\u00e9gis<sup>1</sup>\n- Simon Penel<sup>1</sup>\n- Jean-Fran\u00e7ois Lemaitre<sup>1</sup>\n- Guillaume Douay<sup>4</sup>\n- Brigitte Crouau-Roy<sup>5</sup>\n- Emilie Lecompte<sup>5</sup> ([ORCID: 0000-0002-5711-7395](https://orcid.org/0000-0002-5711-7395))\n- Gabriel AB Marais<sup>1</sup> ([ORCID: 0000-0003-2134-5967](https://orcid.org/0000-0003-2134-5967)) \u2020\n\n### Affiliations\n\n1. Laboratoire Biom\u00e9trie et Biologie Evolutive, CNRS / Univ. Lyon 1 Villeurbanne France\n2. Department of Animal and Plant Sciences, University of Sheffield Sheffield United Kingdom\n3. Faculty of Mathematics, University of Vienna Vienna Austria\n4. Zoo de Lyon Lyon France\n5. Laboratoire Evolution et Diversit\u00e9 Biologique, CNRS / Univ. Toulouse Toulouse France\n6. LEAF-Linking Landscape, Environment, Agriculture and Food Dept, Instituto Superior de Agronomia, Universidade de Lisboa Lisbon Portugal\n\n\u2020 Corresponding author\n\n## Abstract\n\nSex chromosomes are typically comprised of a non-recombining region and a recombining pseudoautosomal region. Accurately quantifying the relative size of these regions is critical for sex-chromosome biology both from a functional and evolutionary perspective. The evolution of the pseudoautosomal boundary (PAB) is well documented in haplorrhines (apes and monkeys) but not in strepsirrhines (lemurs and lorises). Here, we studied the PAB of seven species representing the main strepsirrhine lineages by sequencing a male and a female genome in each species and using sex differences in coverage to identify the PAB. We found that during primate evolution, the PAB has remained unchanged in strepsirrhines whereas several recombination suppression events moved the PAB and shortened the pseudoautosomal region in haplorrhines. Strepsirrhines are well known to have much lower sexual dimorphism than haplorrhines. We suggest that mutations with antagonistic effects between males and females have driven recombination suppression and PAB evolution in haplorrhines\n\n## Introduction\n\nThe human sex chromosomes are strongly heteromorphic as they exhibit extensive differences in size, gene number, DNA repeat abundance and heterochromatin composition (Skaletsky et al., 2003; Ross et al., 2005). The X chromosome comprises a large X-specific region recombining only in females whereas the Y comprises a male-specific region that does not recombine at all. Both sex chromosomes share two pseudoautosomal regions (PAR1 and 2) that recombine in both males and females. These sex chromosomes originated from a pair of identical autosomes approximately 150 million years ago, prior to the divergence of placentals and marsupials, with the evolution of Sry \u2013 the master male-determining gene in therian mammals \u2013 from Sox3 (Lahn and Page, 1999; Skaletsky et al., 2003; Hughes and Rozen, 2012). Since then, at several moments throughout evolutionary history, vast regions of the Y chromosome have stopped recombining with the X, likely through inversions on the Y (Lahn and Page, 1999; Van Laere et al., 2008; Lemaitre et al., 2009; Pandey et al., 2013). These regions show different levels of X-Y divergence and are called evolutionary strata (Lahn and Page, 1999). Strata 1 and 2 are shared among all therians, and stratum three is shared among all placentals (Lahn and Page, 1999; Cortez et al., 2014). The most recent strata (4 and 5) have originated in the history of Catarrhini (Old World monkeys and apes) respectively,~40 and~25 Mya, and now only a very small PAR continues to recombine between X and Y in those primates (Hughes et al., 2012). In humans, PAR1 is the consequence of that process, while PAR2 is a recent addition (Skaletsky et al., 2003).\n\nThe process of recombination suppression between sex chromosomes, leading to a reduction in the size of the PAR and formation of evolutionary strata, has been documented in several animal and plant lineages (e.g Nicolas et al., 2005; Zhou et al., 2014; White et al., 2015). Why such a process occurred, however, is unclear. It has been proposed that sexually antagonistic mutations may have favoured the suppression of recombination (Bull, 1983; Rice, 1987; Charlesworth et al., 2005). Theoretical models suggest that if there are male-beneficial/female-detrimental mutations in the PAR, there will be selection to halt recombination, through for example an inversion, to genetically link those mutations to the Y chromosome. Some evidence supporting this hypothesis has recently been found in guppies (Wright et al., 2017), but evidence from a wide range of groups, including primates, is lacking. Furthermore, there are alternative theories for why recombination is halted (reviewed in Charlesworth, 2017; Ponnikas et al., 2018) and so the relative importance of sexual antagonism in sex-chromosome evolution remains unclear.\n\nWhile previous work on primate sex chromosomes has focused on Haplorrhini (apes, Old and New World monkeys), we studied representatives of the other main primate lineage, the Strepsirrhini (lemurs and lorises). In strepsirrhines, female social dominance (FSD), in which females dominate males, is widespread and likely ancestral (Kappeler and Fichtel, 2015; Petty and Drea, 2015). FSD is associated with increased testosterone production in females, resulting in the masculinization of females, including aspects of their social behaviour and genitalia (Kappeler and Fichtel, 2015; Petty and Drea, 2015). Some species also have rather egalitarian social systems (Pereira and Kappeler, 1997). In addition, sexual size dimorphism is virtually absent among strepsirrhines (Kappeler and Fichtel, 2015; Petty and Drea, 2015). This is in sharp contrast with haplorrhines, where sexual dimorphism is much more pronounced and male-biased; a phenotype that is probably ancient in this group (e.g. Lindenfors, 2002; Kappeler and van Schaik, 2004; Plavcan, 2004). We therefore hypothesized that if male\u2013female differentiation and sexually antagonistic mutations were associated with the degree of X-Y recombination suppression, strepsirrhines should show evidence of less recombination suppression compared to haplorrhines. However, to date, very little is known about the sex chromosomes of strepsirrhines, except that strata 4 and 5 are missing in grey mouse lemurs (Microcebus murinus, see Glaser et al., 1999) preventing previous tests of this hypothesis.\n\nTo identify the PAB of strepsirrhines, we used an approach relying on sequencing a male and a female at low/moderate depth, mapping the reads to a reference genome and computing the male:female depth ratio (Vicoso and Bachtrog, 2011; Vicoso et al., 2013a; Vicoso et al., 2013b; Zhou et al., 2014). For autosomes, a M:F depth ratio of 1 is expected as males and females have the same copy number of autosomes. On the X chromosome, a ratio of 1 should indicate the PAR that is shared among sexes, a ratio of 0.5 should indicate the X-specific region as males have only one such region and females two, and the boundary between both would indicate the PAB. Using Illumina short-read sequencing technology, we sequenced a male and a female genome in seven species covering the main strepsirrhine lineages representing 65 My of evolution (Pozzi et al., 2014): four Lemuriformes (Daubentonia madagascariensis - aye-ayes, M. murinus\u00a0\u2013 grey mouse lemur, Eulemur rubriventer \u2013 red-bellied lemur, Prolemur simus \u2013 greater bamboo lemur) and three Lorisiformes (Otolemur garnettii \u2013 northern greater galago, Galago senegalensis \u2013 senegal bushbaby, Nyctibebus coucang \u2013 slow loris). The sequencing depth of each sample was between 11.8X and 39.1X (assuming a genome size identical to the human genome) with 78% of the samples being between 20X and 40X, that\u00a0is moderate sequencing depth (Supplementary file 1A). We then mapped the reads onto publicly available reference genomes of two strepsirrhines (using the human X to scaffold the strepsirrhine X chromosomes) and computed a normalised M:F depth ratio to identify the X-specific region and the PAR on the X chromosome (see Materials\u00a0and\u00a0methods).\n\n## Results\n\nFigure 1A\u2013B shows the results for the grey mouse lemur. Using the human X chromosome to order the grey mouse lemur X scaffolds, we found that the scaffolds corresponding to human PAR1 and strata 4 and 5 have a M:F depth ratio around 1 (Figure 1B), indicating that these regions have remained pseudoautosomal in grey mouse lemurs in agreement with older cytogenetic data (Glaser et al., 1999). The rest of the grey mouse lemur X is X-specific with a M:F ratio close to 0.5. However, five regions in the X-specific region show an elevated ratio. Detailed analysis of these five regions showed that they are fragments of autosomes (see Materials\u00a0and\u00a0methods and Supplementary file 1B). It is not clear, however, whether this comes from contamination of the assembly of the X chromosome by autosomal scaffolds or if this has resulted from fusion of autosomal DNA fragments to the PAR during evolution, which are misplaced in the current assembly of the X chromosome. With the fragmented assembly that is available our approach can only reliably identify the PAB, not the size of the PAR. If some autosomal material were translocated to the PAR, and thus enlarging it, it would not be possible to detect it with our approach. Only an improved assembly of the X chromosome in the grey mouse lemur could confirm one of these alternatives. Despite these limitations, it is nonetheless clear that the regions homologous to human PAR1 and strata 4 and 5 are still recombining in grey mouse lemur.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/63650/elife-63650-fig1-v3.jpg)\n\n**Figure 1.:** (A) Synteny plot of the human and grey mouse lemur X chromosomes. The human X was used to order the grey mouse lemur scaffolds (see Materials\u00a0and\u00a0methods). Black dots represent orthologous genes between the human and grey mouse lemur X chromosomes. Human strata number and boundaries follow Skaletsky et al., 2003 and Hughes and Rozen, 2012. Note that old strata have been split into smaller strata in Pandey et al., 2013. Human strata are indicated by different colours. S4 and S5 are in yellow. PARs are in red.(B) M:F read depth ratio along the grey mouse lemur X chromosome. Inferred PAR is shown in red. Regions of elevated M:F coverage ratio (inferred PAR plus other regions in grey) are indicated on panel A plot. (C) M:F read depth ratio for all seven strepsirrhine species. Inferred PARs for both the lemurs and the lorises are shown in red. Details on the PAR and the grey regions of the lorises can be found in Figure 1\u2014figure supplement 1. In all panels, red lines indicate scaffold boundaries. See Materials\u00a0and\u00a0methods and Supplementary file 1B for the detailed analysis of the regions with elevated M:F coverage ratio shown in grey.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/63650/elife-63650-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Synteny plot of the human and northern greater galago X chromosomes. (B) M:F read depth ratio along the northern greater galago X chromosome. See legend of Figure 1 for more details.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/63650/elife-63650-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Combined M:F read depth ratio for northern greater galago (red), senegal bushbaby (green), slow loris (blue). (B) Combined M:F M:F read depth ratio for aye-ayes (red), grey mouse lemur (blue), red-bellied lemur (light blue), greater bamboo lemur (purple). Position of the PABs in lemurs and lorises is the same (see legend of Figure 1 for more details). Positions of the PABs in Mb shown here differ because of differences in the X chromosome assembly between M. murinus and O. garnetti.\n\nWe repeated the same analysis for the other six species (Figure 1C). For the lemurs, we used the grey mouse lemur reference genome for the mapping because it is the only one available, and for the lorises, we used the northern greater galago reference genome for the same reason (see Maerials\u00a0and\u00a0methods and Figure 1\u2014figure supplement 1 for the dot plot with the human X). Some species are quite distantly related to focal species with the reference genome and so mapping was consequently more difficult. This explains why in some cases the M:F depth ratio is more variable. The results of the aye-ayes analyses are especially noisy because of the large phylogenetic distance to the grey mouse lemur (Figure 1C). However, in all seven species studied here, the pattern is very similar (Figure 1C and a zoom on the PABs in Figure 1\u2014figure supplement 2). All studied strepsirrhines harbour a large pseudoautosomal region including the genes that are in PAR1 and strata 4 and 5 in humans (compare Figure 1A and C for lemurs and Figure 1\u2014figure supplement 1 and C for lorises; both lemur and loris PABs correspond to the boundary between human strata 4 and 3). We can therefore conclude that no suppression of recombination between the X and the Y has occurred in strepsirrhines since the origin of the group\u00a0>65 millions years ago (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/63650/elife-63650-fig2-v3.jpg)\n\n**Figure 2.:** Data on strata in haplorrhines are from Lahn and Page, 1999, Skaletsky et al., 2003, Ross et al., 2005, Hughes and Rozen, 2012, Hughes et al., 2012, Cortez et al., 2014. Data on strepsirrhines are from this study. The phylogenetic tree and divergence times are from Horvath et al., 2008, Pozzi et al., 2014. Drawings of primates were prepared by Philippe Faivre.\n\nIt is possible that the M:F read depth approach missed recently evolved strata in strepsirrhines. Recent strata are indeed more difficult to detect with the M:F read depth approach as sex-chromosome divergence can be so low that both X and Y reads map onto the X chromosome and the ratio is close to 1 (Wright et al., 2017). To identify recent strata, we computed the male:female SNP density ratio, which is expected to more effectively detect the PAB when recent strata are present (Vicoso et al., 2013a; Wright et al., 2017). The M:F SNP density ratio is predicted to be one for the PAR,\u00a0<1 for old strata due to haploidy in males and\u00a0>1 for recent strata due to accumulation of fixed X-Y differences (Wright et al., 2017). However, our analyses revealed no recent strata in the seven strepsirrhine species studied here (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/63650/elife-63650-fig3-v3.jpg)\n\n**Figure 3.:** M:F SNP density ratio (ln scale) for all seven strepsirrhine species (see Materials\u00a0and\u00a0methods for details). Dashed lines indicate the mean M:F SNP density across sliding windows of the same size on chromosome 4, the 97.5 and 2.5% quantiles, to show the variation across the autosomes. See legend of Figure 1 for more details.\n\nOur findings are consistent with the hypothesis that recombination suppression between X and Y chromosomes was driven by sexually antagonistic mutations. However, the rate of strata formation is generally low: in primates two strata (4 and 5) were formed in apes and Old World monkeys, one was formed independently in New World monkeys (4\u2019) based on the species studied so far (Hughes et al., 2012; Cortez et al., 2014, and see Figure 2) and our additional data found no new strata formation in strepsirrhines. This observation is consistent with our hypothesis, but could have happened by chance because of a low common rate of strata formation in both suborders. We designed a statistical test to compare the rates of strata formation (expressed in event per My) taking into account the respective divergence times in the haplorrhine and strepsirrhine parts of the phylogenetic tree of the studied species, but this test was only marginally significant (binomial test, p=0.051 see Materials\u00a0and\u00a0methods). Because haplorrhines and strepsirrhines have different generation times, comparing rates on a generation-based timescale might however be more relevant. Rescaling time in generations to compare rates of strata formation (expressed in event per million generations) lead to a significantly higher rate in haplorrhines (binomial test, p=0.01 see Materials\u00a0and\u00a0methods), consistent with our hypothesis.\n\nWe collected phenotypic data from the literature for our set of 13 primate species and confirmed that our sets of strepsirrhine and haplorrhine species differ significantly in sexual dimorphism (teeth and body size, assuming that they reflect the global level of sexual dimorphism in an organism; see Materials\u00a0and\u00a0methods and Table 1) but not in sperm competition (testes size, see Materials\u00a0and\u00a0methods and Table 1).\n\n**Table 1.**\n Measures of sexual dimorphism and other features in the set of studied haplorrhine and strepsirrhine species.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>Male canine height in mm (sexual selection)</th>\n      <th>Female canine height in mm (sexual selection)</th>\n      <th>Refs*</th>\n      <th>Combined testes mass in g (sperm competition)</th>\n      <th>Male body mass in g (sperm competition)</th>\n      <th>Refs*</th>\n      <th>Male body mass in g (sexual selection)</th>\n      <th>Female body mass in g (sexual selection)</th>\n      <th>Refs*</th>\n      <th>Social and mating system</th>\n      <th>Refs*</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Callithrix jacchus</td>\n      <td>5.08</td>\n      <td>4.81</td>\n      <td>[1]</td>\n      <td>1.3</td>\n      <td>320</td>\n      <td>[1]</td>\n      <td>317</td>\n      <td>324</td>\n      <td>[1]</td>\n      <td>Multimale</td>\n      <td>[1]</td>\n    </tr>\n    <tr>\n      <td>D. madagascariensis</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>2621</td>\n      <td>2446</td>\n      <td>[8]</td>\n      <td>Multimale</td>\n      <td>[9]</td>\n    </tr>\n    <tr>\n      <td>E. rubriventer</td>\n      <td>10.49</td>\n      <td>9.98</td>\n      <td>[2]</td>\n      <td>1.76</td>\n      <td>2512</td>\n      <td>[1]</td>\n      <td>1980</td>\n      <td>1940</td>\n      <td>[1]</td>\n      <td>Monogamous</td>\n      <td>[1]</td>\n    </tr>\n    <tr>\n      <td>G. senegalensis</td>\n      <td>4.01</td>\n      <td>3.61</td>\n      <td>[2]</td>\n      <td>1.66</td>\n      <td>210</td>\n      <td>[3]</td>\n      <td>227</td>\n      <td>199</td>\n      <td>[2]</td>\n      <td>Unimale/Polygynous</td>\n      <td>[2]</td>\n    </tr>\n    <tr>\n      <td>Gorilla gorilla</td>\n      <td>30.26</td>\n      <td>17.4</td>\n      <td>[2]</td>\n      <td>29.6</td>\n      <td>169000</td>\n      <td>[1]</td>\n      <td>170400</td>\n      <td>71500</td>\n      <td>[1]</td>\n      <td>Polygynous</td>\n      <td>[1]</td>\n    </tr>\n    <tr>\n      <td>Homo sapiens</td>\n      <td>10.85</td>\n      <td>9.97</td>\n      <td>[2]</td>\n      <td>40.5</td>\n      <td>66825</td>\n      <td>[1]</td>\n      <td>72100</td>\n      <td>62100</td>\n      <td>[1]</td>\n      <td>Monogamous/Unimale/ Polygynous</td>\n      <td>[2]</td>\n    </tr>\n    <tr>\n      <td>Macaca mulatta</td>\n      <td>16.97</td>\n      <td>8.13</td>\n      <td>[2]</td>\n      <td>46</td>\n      <td>9200</td>\n      <td>[4]</td>\n      <td>11000</td>\n      <td>8800</td>\n      <td>[1]</td>\n      <td>Multimale</td>\n      <td>[1]</td>\n    </tr>\n    <tr>\n      <td>M. murinus</td>\n      <td>2.07</td>\n      <td>2.08</td>\n      <td>[2]</td>\n      <td>2.49</td>\n      <td>60</td>\n      <td>[5]</td>\n      <td>59</td>\n      <td>63</td>\n      <td>[2]</td>\n      <td>Unimale/Polygynous***</td>\n      <td>[2]</td>\n    </tr>\n    <tr>\n      <td>N. coucang</td>\n      <td>7.05</td>\n      <td>6.8</td>\n      <td>[2]</td>\n      <td>1.2</td>\n      <td>1058</td>\n      <td>[6]</td>\n      <td>679</td>\n      <td>626</td>\n      <td>[2]</td>\n      <td>Unimale/Polygynous</td>\n      <td>[2]</td>\n    </tr>\n    <tr>\n      <td>O. garnettii</td>\n      <td>6.53</td>\n      <td>6.04</td>\n      <td>[2]</td>\n      <td>8.93</td>\n      <td>320</td>\n      <td>[7]</td>\n      <td>794</td>\n      <td>734</td>\n      <td>[2]</td>\n      <td>Unimale/Polygynous</td>\n      <td>[2]</td>\n    </tr>\n    <tr>\n      <td>Pan troglodytes</td>\n      <td>21.72</td>\n      <td>15.26</td>\n      <td>[2]</td>\n      <td>128.9</td>\n      <td>44670</td>\n      <td>[1]</td>\n      <td>59700</td>\n      <td>45800</td>\n      <td>[1]</td>\n      <td>Multimale</td>\n      <td>[1 , 10]</td>\n    </tr>\n    <tr>\n      <td>Pongo pygmaeus</td>\n      <td>27</td>\n      <td>15.95</td>\n      <td>[2]</td>\n      <td>35.3</td>\n      <td>74640</td>\n      <td>[1]</td>\n      <td>78500</td>\n      <td>35800</td>\n      <td>[1]</td>\n      <td>Unimale/Multimale</td>\n      <td>[2]</td>\n    </tr>\n    <tr>\n      <td>P. simus**</td>\n      <td>5.94</td>\n      <td>5.91</td>\n      <td>[2]</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>NA</td>\n      <td>2532</td>\n      <td>2248</td>\n      <td>[8]</td>\n      <td>Monogamous</td>\n      <td>[2]</td>\n    </tr>\n  </tbody>\n</table>\n\n_*References are [1] L\u00fcpold et al., 2019, [2] Thor\u00e9n et al., 2006, [3] Gomendio et al., 2011,\u00a0[4] Harcourt et al., 1995, [5] L\u00fcpold, 2013, [6] Anderson et al., 1999, [7] Dixson and Anderson, 2004, [8] Taylor and Schwitzer, 2011, [9] Mittermeier et al., 2013, [10] Soulsbury, 2010.**or Hapalemur griseus or H. alaotrensis ***or multimale, see Soulsbury, 2010.\u00a0Male body mass values for sperm competition and sexual selection analyses of the same species may differ because they come from different sources (even when a single reference is mentioned)._\n\n## Discussion\n\nOur work shows that, during primate evolution, the PAB has remained unchanged in strepsirrhines while several X-Y recombination suppression events have shortened the PAR in haplorrhines. We interpreted this as a consequence of differences in sexual dimorphism, and therefore sexual conflict, in both groups. However, strepsirrhines and haplorrhines differ in many ways and it is of course possible that other aspect(s) of their biology drove the pattern that we found. Strata formation may be influenced for example by gene flow (Matsumoto et al., 2017) and meiotic drive (Scott and Otto, 2017) as suggested recently. Previous work has shown that the genetic diversity of strepsirrhines is highly variable (e.g. Perry et al., 2012). It is however unknown whether strepsirrhines and haplorrhines exhibit systematic differences in gene flow rates and meiotic drive dynamics. A limit of this work is the use of a qualitative description of sexual dimorphism and not a quantitative one, which we could have compared to the number of strata. Future work could explore strata formation in more species and gain sufficient statistical power to compare the number of strata to phenotypic data on sexual dimorphism in primates using trait-evolution phylogenetic methods, which requires large datasets.\n\nEvidence for the sexually antagonistic mutations hypothesis has been found in other organisms. In guppies, while the Y chromosome exhibits low levels of divergence from the X (Wright et al., 2017; Bergero et al., 2019; Darolti et al., 2019), populations exhibiting stronger sexual dimorphism seem to have a larger non-recombining region (Wright et al., 2017; Wright et al., 2019; Almeida et al., 2020). In the brown alga Ectocarpus, sexual dimorphism is extremely low and as expected sex chromosomes are homomorphic, with a small non-recombining region, despite being very old (Ahmed et al., 2014). It should be noted, however, that other forces might be driving the process of strata formation in some lineages. In ruminants, the PAR seems to have undergone a process of attrition due to accumulation of DNA repeats (Van Laere et al., 2008; Raudsepp and Chowdhary, 2016). In Microbotryum violaceum, strata are found on the mating-type chromosomes despite the fact that this species only has mating types and not sexes, such that sexual antagonism is absent (Branco et al., 2017). Thus, sexually antagonistic mutation may not be a ubiquitous explanation of strata formation in all organisms.\n\nAlthough sexual dimorphism is generally low in strepsirrhines, there are some differences among species in this lineage, with the genus Eulemur exhibiting the most pronounced sexual dimorphism (Petty and Drea, 2015). In these species, including the red-bellied lemur (E. rubriventer), which was analysed here, males and females exhibit striking sexual dichromatism, that\u00a0is they differ in pelage colouration (Rakotonirina et al., 2017). The red-bellied lemur did not show more evidence for recombination suppression than the other species studied here. Sexual dichromatism may rely on sexually antagonistic mutations. The antagonism might have been solved not through Y-linkage but instead through sex-biased expression for example (Ellegren and Parsch, 2007; Gazda et al., 2020). Future research could focus on sex-biased expression in strepsirrhines to test these ideas.\n\n## Materials and methods\n\n### Research plan\n\nTo test whether recombination suppression is less frequent on strepsirrhine sex chromosomes compared to haplorrhines, we selected strepsirrhine species that would maximise the representation of this group\u2019s diversity, and that were also readily accessible. We then sequenced a male and female of each species and mapped the obtained male and female reads to a reference X chromosome. The male to female depth ratio was then computed along the length of the X chromosome and the PAB was identified as the boundary between zones with a ratio of one (indicative of the PAR) and zones with a ratio of 0.5 (indicative of the non-recombining region).\n\n### Sampling\n\nWe selected seven species covering as much phylogenetic diversity of Strepsirrhini as possible (see Supplementary file 1A). Both infra-orders (Lemuriformes and Lorisiformes) are equally represented. A male and a female individual were sampled for all species (except O. garnettii, the northern greater galago, for which sequence data from a female individual were retrieved from NCBI, see Supplementary file 1A). Blood samples of E. rubriventer (red-bellied lemur) and P. simus (greater bamboo lemur) were collected from living animals at Zoo de Lyon in EDTA blood collection tubes to avoid coagulation. Hair samples (with follicles and roots) of the female Daubentonia madagascarensis (aye-aye) were collected from a living animal at Zoo Frankfurt. Samples of M. murinus belong to the Brunoy laboratory (UMR7179, France; agreement E91-114-1 from the Direction D\u00e9partementale de la Protection des Populations de l\u2019Essonne): the biopsies were obtained from muscle tissues after the animals\u2019 natural death. Tissues samples of a male D. madagascariensis, and samples of G. senegalensis (Senegal bushbaby), Nycticebus coucang (slow loris) and of a male O. garnettii were obtained from the tissues and cryopreserved cell collection of the National Museum of Natural History (MNHN, Paris, see Supplementary file 1A).\n\n### DNA extraction and sequencing\n\nDNA from E. rubriventer, P. simus and female D. madagascariensis were extracted using two different Macherey Nagel kits. Blood samples were treated with NucleoSpin Blood Quickpure kit. Hair samples were treated with NucleoSpin DNA trace kit after a mechanical crushing of hair bulbs. DNA from the tissues and cells samples (for other species) was extracted using the DNeasy Blood and Tissue kit (Qiagen) following the manufacturer\u2019s instructions. DNA was stored at \u221220\u00b0 C and sent on dry ice to the sequencing platform.\n\nA genomic DNA library was constructed for each sample using Illumina kits (TruSeq nano LT for Hiseq 2500 and 3000 sequencing). Paired-end sequencing was conducted using an Illumina Hiseq 2500 (2 \u00d7 125 bp) or 3000 (2 \u00d7 150 bp) with one or two individuals per lane at Genotoul, the INRA sequencing platform in Toulouse. Sequences were all found to be of high quality (using FastQC, https://www.bioinformatics.babraham.ac.uk/projects/fastqc) and without contamination. Consequently, no trimming was done. Sequence data and coverage are shown in Supplementary file 1A.\n\n### Chromosome assembly\n\nReference X chromosomes were not available for any species and genome assemblies were only available for two species that were (1) closely related to, or the same as the species being studied, and (2) assembled to an extent that it would be possible to construct a de novo X chromosome. These were M. murinus (grey mouse lemur, Mmur_2.0 version from NCBI) and O. garnettii (northern greater galago, OtoGar4 version from NCBI).\n\nDe novo X chromosomes were constructed for these species using scaffolds from whole genome assemblies on NCBI, which were selected, ordered and oriented against the human X chromosome. This was achieved using SynMap, an online software pipeline within the CoGe toolkit (Lyons and Freeling, 2008; Lyons et al., 2008) that identified putative homologous genes between potential X scaffolds and the human X chromosome with a blast comparison (Altschul et al., 1990) using the Last algorithm (a variant of Blastz, see Schwartz et al., 2003). An algorithm within the SynMap pipeline then identified a colinear series of homologous genes between potential X scaffolds and the human X chromosome as regions of synteny, and these were arranged in order accordingly. The relative gene order DAGChainer option was used, with a maximum distance of 20 genes between two matches and a minimum of five aligned pairs of genes. The human X chromosome reference was sourced from the GRCh37.p13 Primary Assembly on NCBI (Reference Sequence: NC_000023.10).\n\nAs the results of some of the analyses in this study required normalisation using an autosome from the corresponding species, a reference autosome was constructed using the same process. In this case, the human chromosome four was used to construct a de novo chromosome four for M. murinus and O. garnettii, which was selected for its similar size to the X chromosome.\n\n### Read mapping\n\nMale and female reads for each species were aligned separately to their most closely related de novo X chromosome using Bowtie version 2\u20132.2.7 (Langmead et al., 2009). The reads were then sorted according to their position on the de novo X chromosome using Samtools version 1.3.1 (Li et al., 2009; Li, 2011).\n\n### Coverage analysis\n\nRead depth was calculated for each sex at each position from the mapped reads on the de novo X using Samtools. The coverage for each sex was then normalised by dividing the depth at each position by the mean coverage depth for that species and sex on an autosome (chromosome four). The ratio of normalised male to female coverage was then calculated at each position and the data was summarised as a sliding window average using a window size of 150 kb sliding at increments of 10 kb or larger windows and increments depending on the species. This data manipulation was performed using AWK version 4.1.3.\n\n### Analysis of the regions of the strepsirrhine X chromosomes with unusual male:female coverage ratio\n\nIn Figure 1, both lemur and\u00a0loris\u00a0X chromosomes exhibit regions with male:female coverage ratio close to 1 (shown in grey) in their X-specific parts, where a ratio of 0.5 is expected. The grey mouse lemur has five such regions, the northern greater galago three. The dot plots of the strepsirrhine\u00a0and the human X chromosomes (see Figure 1 and Figure 1\u2014figure supplement 1) clearly show that little or no homologous genes are found in those regions, which suggest that they may be homologous to other human chromosomes. This would be consistent with the male:female coverage ratio of 1, typical of autosomal regions, that we found for these regions. To explore this possibility, we extracted the sequences of those regions and performed a tblastn against all the human proteins (human genome version GRCh38). In case of isoforms, the longest protein was kept so that a human gene was present only once. We then filtered the tblastn results by keeping only hits with\u00a0>80% similarity (based on average nucleotide divergence between lemurs and humans) and e-value\u00a0<10\u20139. From those, we kept human proteins covered by hits to\u00a0>80% using SiLix (Miele et al., 2011). Only proteins matching to no more than one region were kept. The results of the tblastn are shown in the supplementary\u00a0file\u00a01B.\n\nFor all regions except one, most homologs that we identified are from the human autosomes, which confirms our hypothesis. These homologs are mainly a\u00a0few sources: chromosomes 1, 8 and 12 for regions 46.8\u201348, 61.5\u201363.7, 92.7\u201393.7 and 41.6\u201344.1 of the grey mouse lemur X chromosome, and chromosomes 12, 13 and 20 for regions 80\u201384.5, 116\u2013133 and 49.5\u201368.5 of the northern greater galago X chromosome. These results can be interpreted two ways. One possibility is that the assemblies of the lemur\u00a0and\u00a0loris X chromosomes wrongly include autosomal scaffolds. Another possibility is that during the evolution of strepirrhines, some autosomal fragments have been translocated to the PAR, and the assembly failed to order these fragments correctly. Our approach cannot tell apart these possibilities but in all cases, our results suggest that these regions are probably assembly errors.\n\nChanging tblastn outputs filtering did not change qualitatively the results. With lower %identity thresholds, we detected autosomal homologs for region 30.3\u201333.2 (for example, with %identity\u00a0>65, we found two proteins from chrom. 1, one from chrom. 2 and 1 from chrom 19).\n\n### SNP density analysis\n\nTo detect potential regions that may have stopped recombining between strepsirrhine X and Y chromosomes relatively recently, the difference in male to female SNP density was examined for all species. For each sex of each species, SNPs were called from the mapped reads using Samtools mpileup and then converted to profiles using sam2pro version 0.8 from the mlRho package (Haubold et al., 2010). Specifically, sites with coverage\u00a0<5 were excluded from the analysis and SNPs were called when a site had a minor allele frequency of 0.3 times the site coverage. The ratio of male to female SNP density was calculated for 600 kb sliding windows at increments of 10 kb. 0.001 was added to allow for a Log transformation and male to female SNP density was calculated at each window as Log(sum male SNPs) \u2013 Log(sum female SNPs). This calculation was performed using R version 3.3.2. We also calculated SNP density across an autosome (chromosome four) using the same approach and computed mean male to female SNP density and 97.5% and 2.5% quantiles across all windows.\n\n### Statistical test on strata formation\n\nWe partitioned the phylogenetic tree with total branch length \u0394t into two subtrees with branch lengths \u0394t1 and \u0394t2, \u0394t = \u0394t1+\u0394t2. Assuming a constant rate \u03bb for the formation of new evolutionary stratum, the number S of new strata formed during a time interval \u0394t is Poisson-distributed with parameter \u03bb\u0394t\n\n$$\nP(S=k)=\\frac{(\\lambda\u0394t)^{k}e^{\u2212\\lambda\u0394t}}{k!}.\n$$\n\nOn the subtree i, during the time interval \u0394ti we observe the formation of Si new strata. We wanted to contrast the following two hypotheses:\n\nWe used the number S1 of strata formed in the time interval \u0394t1 as the test statistics and compute the conditional probability to observe a larger value given the total number S1 +S2 of strata formed in the time interval \u0394t1+\u0394t2 under the null hypothesis H0:\n\n$$\nP(S_{1}\\geqk_{1}|S_{1}+S_{2}=k_{1}+k_{2},\u0394t_{1},\u0394t_{2})=\\frac{(k_{1}+k_{2})!}{(\\lambda_{0}(\u0394t_{1}+\u0394t_{2}))^{k_{1}+k_{2}}e^{\u2212\\lambda_{0}(\u0394t_{1}+\u0394t_{2})}}\\times\\sumj=k_{1}k_{1}+k_{2}\\frac{\\lambda_{0}^{K_{1}+k_{2}}\u0394t_{1}^{j}\u0394t_{2}^{k_{1}+k_{2}\u2212j}e^{\u2212\\lambda_{0}(\u0394t_{1}+\u0394t_{2})}}{j!(k_{1}+k_{2}\u2212j)!}=\\sumj=k_{1}k_{1}+k_{2}(k_{1}+k_{2}j)(\\frac{\u0394t_{1}}{\u0394t_{1}+\u0394t_{2}})^{j}(\\frac{\u0394t_{2}}{\u0394t_{1}+\u0394t_{2}})^{k_{1}+k_{2}\u2212j},\n$$\n\nwhere we recognized the binomial distribution. Note that this probability is independent of the common rate \u03bb0 of the Poisson process. Applying this test is conceptually equivalent to tossing an unbalanced coin k1+k2 times with a probability p = \u0394t1 / (\u0394t1+\u0394t2) to get a head and computing the probability to obtain at least k1 times a head.\n\nThe phylogenetic relationships and mean divergence times for the included primate species were recovered from a previously published primate phylogeny and divergence dates (Pozzi et al., 2014). Detailed phylogenetic relationships among strepsirrhine lineages (Horvath et al., 2008) were used to infer phylogenetic relationships in the cases when species in our analysis were not included in this reference study. The divergence times are shown in a see Supplementary file 1C. Generation times in the studied primate species are highly variable, and we are mostly interested in comparing per generation rather than per year rates of strata formation. For this purpose, the branch lengths in the phylogenetic tree needed to be rescaled by the generation times. We used the age at first reproduction as a proxy for generation time following the example of Gaillard et al., 2005. Ages at first reproduction for the extant species in the phylogenetic trees were obtained from Ernest, 2003 and maximum-likelihood estimates of this trait were obtained for internal nodes of the phylogenetic tree with the fastAnc method implemented in phytools (Revell, 2012). This method assumes that the age at first reproduction evolves neutrally according to a Brownian motion model (Felsenstein, 1973; Schluter et al., 1997). The branch lengths of the phylogenetic tree were rescaled by the generation times. In order to take into account variable generation time along a branch, we used the following method: We denoted g the time counted in generations and t the time counted in years along a phylogenetic branch. The instantaneous generation time (expressed in years per generation) along a given branch at any time t is \u03b3(t)\u00a0=\u00a0dt\u00a0/ dg. We assume a linear trend for \u03b3(t) between an ancestral node (at t\u00a0=\u00a0ta, for which \u03b3(ta) = \u03b3a) and a descendant node (at t\u00a0=\u00a0td, for which \u03b3(td) = \u03b3d). This assumption raised the following ordinary differential equation:\n\n$$\n\\gamma(t)=\\frac{dt}{dg}=\\gamma_{a}+\\lambda(t\u2212t_{a}),\n$$\n\nwhere \u03bb = (\u03b3d - \u03b3a) / (td - ta). The general form for the solutions of this equation is\n\n$$\ng(t)=\\frac{1}{\\lambda}ln\u2061(\\gamma_{a}+\\lambda(t\u2212t_{a}))+K,\n$$\n\nwhere K is an integration constant. The number of generations elapsed on the branch between times ta and td is thus\n\n$$\ng(t_{d})\u2212g(t_{a})=\\frac{t_{d}\u2212t_{a}}{\\gamma_{d}\u2212\\gamma_{a}}ln\\frac{\\gamma_{d}}{\\gamma_{a}}.\n$$\n\nThe ages at first reproduction for the extant species and their maximum-likelihood estimates as well as the rescaled branch lengths in the primate phylogeny are shown in Supplementary file 1D.\n\nThe haplorrhine lineages in our sample have evolved for \u0394t1\u00a0=\u00a0188.52 My (44.23 million generations) during which S1\u00a0=\u00a03 new strata were formed. The strepsirrhine lineages evolved for \u0394t2\u00a0=\u00a0321.32 My (158.52 million generations) and no new strata was formed (S2\u00a0=\u00a00). Comparing the rates of strata formation expressed in number of events per million year lead to a marginally significant p-value (one-tailed binomial test, p=0.051), this trend became significant when considering the rates expressed in number of events per million generations (one-tailed binomial test, p=0.010).\n\n### Statistical analysis of phenotypic differences among primates\n\nAll statistical analyses were conducted with the R statistical software (R Development Core Team, 2019). Sexual dimorphism based on body mass (SSD, size-based sexual dimorphism) or on canine length (CSD, canine height based sexual dimorphism) was quantified as the logarithm of the ratio of the male to the female values (for instance, SSD\u00a0=\u00a0ln(male body mass/female body mass), Plavcan, 2004). The relative testes mass (RTM) was computed as the residual of the linear regression ln(combinedtestesmass)\u223cln(malebodymass).\n\nIn a first approach, the phylogenetic architecture underlying the data was ignored and we simply compared the average dimorphism value between the two groups (haplorrhines vs strepsirrhines). In a second stage, we accounted for the underlying phylogenetic architecture using phylogenetic contrasts in a classical phylogenetic generalised least square analysis (see Symonds and Blomberg, 2014). Two evolutionary models were investigated: a simple Brownian motion (BM) and the Ornstein-Uhlenbeck model (OU) that includes stabilizing selection. The results based on the latter (OU) model should however be considered cautiously as this analysis is certainly over-parameterized considering the very small sample size (between n\u00a0=\u00a011 and n\u00a0=\u00a013 species). Analyses accounting for phylogenetic architecture in the data used the following specialized R packages:adephylo (Jombart and Dray, 2010), ape (Paradis and Schliep, 2019), geiger (Harmon et al., 2008) and phytools (Revell, 2012).\n\nSexual dimorphism based on body mass (SSD, mean\u00a0\u00b1\u00a0standard error) was 0.378\u00a0\u00b1\u00a00.097 in haplorrhines and 0.062\u00a0\u00b1\u00a00.017 in strepsirrhines. This difference based on n\u00a0=\u00a013 observations was statistically significant only when ignoring phylogenetic inertia (p=0.043) but no longer significant when considering phylogenetic inertia with a Brownian motion model (p=0.66). Analysis involving an OU model would lead to a significant difference between the two groups (p=0.043) but this analysis may either be over-parameterized or suffer from the lack of phylogenetic signal in our data as revealed by the low Pagel\u2019s \u03bb\u00a0<0.001 (not significantly different from 0) estimated in the Brownian motion model. In such a case, non phylogenetically-corrected analyses should be reported (Freckleton, 2009).\n\nSexual dimorphism based on canine height (CSD) showed the same kind of pattern: the mean is 0.385\u00a0\u00b1\u00a00.076 in haplorrhines and 0.045\u00a0\u00b1\u00a00.016 in strepsirrhines. This difference based on n\u00a0=\u00a012 observations is only significant when ignoring the underlying phylogeny (p=0.013) but no longer significant (p=0.39) when phylogeny is accounted for with a Brownian motion model (leading to a non different from 0 estimate of Pagel\u2019s \u03bb). The OU model leads to a significant difference between groups (p=0.013).\n\nBased on our n\u00a0=\u00a011 observations, the average relative testes mass did not significantly differ between haplorrhines (0.18\u00a0\u00b1\u00a00.24) and strepsirrhines (\u22120.21\u00a0\u00b1\u00a00.32). In order to avoid using residuals of a generalised least square model, we also compared testes mass in an analysis of covariance model (see Lema\u00eetre et al., 2009, for an example) including the male body mass as a covariate using the following statistical model in R: ln(combinedtestesmass)\u223cln(malebodymass)+group. The results were however qualitatively unchanged (the p-value associated with the \u2018group\u2019 factor was p=0.4).\n\n### Data and code accessibility\n\nAll the data generated in this study is available at NCBI (project # PRJNA482296). Scripts for the entire coverage analysis pipeline (suitable for compute clusters using Torque job scheduling) are available on GitHub (https://github.com/rylanshearn/sex-read-depth;\u00a0Shearn, 2018; copy archived at swh:1:rev:0e33f6b8158f4e1385af58117afeb762576cc0fb).\n",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "22cc0bb0-3c62-4503-b7ca-b8b2043ed86a",
+      "submission_id": "9c8d88fa-ce1c-43c2-a5c8-5d87a7bbd4f1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Virginie Courtier-Orgogozo, Institut Jacques Monod - CNRS UMR7592 - Universit\u00e9 Paris Diderot\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.63650.sa1](https://doi.org/10.7554/eLife.63650.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\n[Editors' note: This article has been reviewed and recommended by Peer Community in Evolutionary Biology (https://doi.org/10.24072/pci.evolbiol.100108).]\n\nAcceptance summary:\n\nThe Y chromosome tends to diverge rapidly in regions that do not recombine with the X chromosome. Sexually antagonistic selection, when sexes exhibit conflicting reproductive optima, has been hypothesized to increase recombination suppression between sex chromosomes. The authors found that the size of the non-recombining region has remained stable in lemurs and lorises, which display low sexual dimorphism, while it has expanded in the ancestors of apes and monkeys, which exhibit high sexual dimorphism. This elegant work provides empirical support for sexual antagonism shaping sex chromosome evolution.\n",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "118ecbcc-886f-4dab-8265-18168bd1729d",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C1",
+      "claim": "Human sex chromosomes are strongly heteromorphic, exhibiting extensive differences in size, gene number, DNA repeat abundance and heterochromatin composition.",
+      "claim_type": "EXPLICIT",
+      "source": "The human sex chromosomes are strongly heteromorphic as they exhibit extensive differences in size, gene number, DNA repeat abundance and heterochromatin composition (Skaletsky et al., 2003; Ross et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Skaletsky et al., 2003 and Ross et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "6dff5fe2-d1e0-4501-b4bd-03439e3f5cf3",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C2",
+      "claim": "The human X chromosome comprises a large X-specific region recombining only in females.",
+      "claim_type": "EXPLICIT",
+      "source": "The X chromosome comprises a large X-specific region recombining only in females whereas the Y comprises a male-specific region that does not recombine at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about human sex chromosomes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "e6a15aac-89a9-42f1-a1bb-f9492c20a79c",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C3",
+      "claim": "The human Y chromosome comprises a male-specific region that does not recombine at all.",
+      "claim_type": "EXPLICIT",
+      "source": "The X chromosome comprises a large X-specific region recombining only in females whereas the Y comprises a male-specific region that does not recombine at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about human sex chromosomes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "ee942c99-5d8e-453f-8688-353a944e9e4b",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C4",
+      "claim": "Both human sex chromosomes share two pseudoautosomal regions (PAR1 and 2) that recombine in both males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sex chromosomes share two pseudoautosomal regions (PAR1 and 2) that recombine in both males and females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about human sex chromosomes",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "e68f22e7-b517-45da-9954-3ac57bd995c8",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C5",
+      "claim": "Human sex chromosomes originated from a pair of identical autosomes approximately 150 million years ago, prior to the divergence of placentals and marsupials.",
+      "claim_type": "EXPLICIT",
+      "source": "These sex chromosomes originated from a pair of identical autosomes approximately 150 million years ago, prior to the divergence of placentals and marsupials, with the evolution of Sry \u2013 the master male-determining gene in therian mammals \u2013 from Sox3 (Lahn and Page, 1999; Skaletsky et al., 2003; Hughes and Rozen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lahn and Page, 1999; Skaletsky et al., 2003; Hughes and Rozen, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "1eff6d65-0b12-4be4-8947-fce2c8ede72a",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C6",
+      "claim": "The evolution of Sry from Sox3 occurred during the origin of human sex chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These sex chromosomes originated from a pair of identical autosomes approximately 150 million years ago, prior to the divergence of placentals and marsupials, with the evolution of Sry \u2013 the master male-determining gene in therian mammals \u2013 from Sox3 (Lahn and Page, 1999; Skaletsky et al., 2003; Hughes and Rozen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lahn and Page, 1999; Skaletsky et al., 2003; Hughes and Rozen, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "713cceed-7523-4ce1-a788-1240695bdeec",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C7",
+      "claim": "Vast regions of the Y chromosome have stopped recombining with the X at several moments throughout evolutionary history, likely through inversions on the Y.",
+      "claim_type": "EXPLICIT",
+      "source": "Since then, at several moments throughout evolutionary history, vast regions of the Y chromosome have stopped recombining with the X, likely through inversions on the Y (Lahn and Page, 1999; Van Laere et al., 2008; Lemaitre et al., 2009; Pandey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lahn and Page, 1999; Van Laere et al., 2008; Lemaitre et al., 2009; Pandey et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "f6a0ca8b-011c-4fe7-9aae-8add8972630e",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C8",
+      "claim": "Regions of the Y chromosome that stopped recombining show different levels of X-Y divergence and are called evolutionary strata.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions show different levels of X-Y divergence and are called evolutionary strata (Lahn and Page, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lahn and Page, 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "c6034a30-ef1b-4d59-8832-512daa9ac5c5",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C9",
+      "claim": "Strata 1 and 2 are shared among all therians.",
+      "claim_type": "EXPLICIT",
+      "source": "Strata 1 and 2 are shared among all therians, and stratum three is shared among all placentals (Lahn and Page, 1999; Cortez et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lahn and Page, 1999; Cortez et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "e946f021-65b1-44e5-9fcf-feb13ac0bd41",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C10",
+      "claim": "Stratum three is shared among all placentals.",
+      "claim_type": "EXPLICIT",
+      "source": "Strata 1 and 2 are shared among all therians, and stratum three is shared among all placentals (Lahn and Page, 1999; Cortez et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lahn and Page, 1999; Cortez et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "ae518172-913b-42da-969a-90424980d0a0",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C11",
+      "claim": "Strata 4 and 5 originated in the history of Catarrhini approximately 40 and 25 Mya, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The most recent strata (4 and 5) have originated in the history of Catarrhini (Old World monkeys and apes) respectively,~40 and~25 Mya, and now only a very small PAR continues to recombine between X and Y in those primates (Hughes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hughes et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "2322d2e5-6d5c-43fa-8dff-f6386067727b",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C12",
+      "claim": "Only a very small PAR continues to recombine between X and Y in Catarrhini primates.",
+      "claim_type": "EXPLICIT",
+      "source": "The most recent strata (4 and 5) have originated in the history of Catarrhini (Old World monkeys and apes) respectively,~40 and~25 Mya, and now only a very small PAR continues to recombine between X and Y in those primates (Hughes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hughes et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "0269faf2-7b5c-4ea9-9818-82cbc5fe1f4f",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C13",
+      "claim": "In humans, PAR1 is the consequence of recombination suppression, while PAR2 is a recent addition.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, PAR1 is the consequence of that process, while PAR2 is a recent addition (Skaletsky et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Skaletsky et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "74d2164b-6e78-4658-b7ee-9739f32e5971",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C14",
+      "claim": "The process of recombination suppression between sex chromosomes, leading to a reduction in the size of the PAR and formation of evolutionary strata, has been documented in several animal and plant lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of recombination suppression between sex chromosomes, leading to a reduction in the size of the PAR and formation of evolutionary strata, has been documented in several animal and plant lineages (e.g Nicolas et al., 2005; Zhou et al., 2014; White et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nicolas et al., 2005; Zhou et al., 2014; White et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "4e6162a2-b479-43c3-8efc-4b5e5eb06460",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C15",
+      "claim": "It has been proposed that sexually antagonistic mutations may have favoured the suppression of recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that sexually antagonistic mutations may have favoured the suppression of recombination (Bull, 1983; Rice, 1987; Charlesworth et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bull, 1983; Rice, 1987; Charlesworth et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "e370580f-ec93-47f5-85d1-fca9a325b8c8",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C16",
+      "claim": "Theoretical models suggest that if there are male-beneficial/female-detrimental mutations in the PAR, there will be selection to halt recombination through for example an inversion to genetically link those mutations to the Y chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical models suggest that if there are male-beneficial/female-detrimental mutations in the PAR, there will be selection to halt recombination, through for example an inversion, to genetically link those mutations to the Y chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on theoretical models referenced in the context",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "46dd3dad-f1d8-482f-8517-debc8d16a60b",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C17",
+      "claim": "Some evidence supporting the sexually antagonistic mutations hypothesis has recently been found in guppies.",
+      "claim_type": "EXPLICIT",
+      "source": "Some evidence supporting this hypothesis has recently been found in guppies (Wright et al., 2017), but evidence from a wide range of groups, including primates, is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wright et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "5f17a66e-58e2-4cb6-a981-3af2e1fd0762",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C18",
+      "claim": "Evidence from a wide range of groups, including primates, supporting the sexually antagonistic mutations hypothesis is lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Some evidence supporting this hypothesis has recently been found in guppies (Wright et al., 2017), but evidence from a wide range of groups, including primates, is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of evidence in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "efaf3396-8673-4850-9f43-420059dce207",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C19",
+      "claim": "In strepsirrhines, female social dominance (FSD), in which females dominate males, is widespread and likely ancestral.",
+      "claim_type": "EXPLICIT",
+      "source": "In strepsirrhines, female social dominance (FSD), in which females dominate males, is widespread and likely ancestral (Kappeler and Fichtel, 2015; Petty and Drea, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kappeler and Fichtel, 2015; Petty and Drea, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "ad2ea262-caa1-4f73-97b4-df436fac0017",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C20",
+      "claim": "FSD in strepsirrhines is associated with increased testosterone production in females, resulting in the masculinization of females, including aspects of their social behaviour and genitalia.",
+      "claim_type": "EXPLICIT",
+      "source": "FSD is associated with increased testosterone production in females, resulting in the masculinization of females, including aspects of their social behaviour and genitalia (Kappeler and Fichtel, 2015; Petty and Drea, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kappeler and Fichtel, 2015; Petty and Drea, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "41a7cc0d-80cc-4894-bfd5-83bed241c8b7",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C21",
+      "claim": "Some strepsirrhine species have rather egalitarian social systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Some species also have rather egalitarian social systems (Pereira and Kappeler, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pereira and Kappeler, 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "34619522-ff69-4c63-89cd-450e97d4e434",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C22",
+      "claim": "Sexual size dimorphism is virtually absent among strepsirrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, sexual size dimorphism is virtually absent among strepsirrhines (Kappeler and Fichtel, 2015; Petty and Drea, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kappeler and Fichtel, 2015; Petty and Drea, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "59aae776-f2cb-42a0-9cc3-3005f18466d9",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C23",
+      "claim": "Sexual dimorphism is much more pronounced and male-biased in haplorrhines compared to strepsirrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in sharp contrast with haplorrhines, where sexual dimorphism is much more pronounced and male-biased; a phenotype that is probably ancient in this group (e.g. Lindenfors, 2002; Kappeler and van Schaik, 2004; Plavcan, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lindenfors, 2002; Kappeler and van Schaik, 2004; Plavcan, 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "771ad178-bdc6-445e-8735-c58585a70c5d",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C24",
+      "claim": "Male-biased sexual dimorphism is probably ancient in haplorrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in sharp contrast with haplorrhines, where sexual dimorphism is much more pronounced and male-biased; a phenotype that is probably ancient in this group (e.g. Lindenfors, 2002; Kappeler and van Schaik, 2004; Plavcan, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lindenfors, 2002; Kappeler and van Schaik, 2004; Plavcan, 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "0c1eed78-e25e-4620-a2c1-41eddd78acdb",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C25",
+      "claim": "Strata 4 and 5 are missing in grey mouse lemurs (Microcebus murinus).",
+      "claim_type": "EXPLICIT",
+      "source": "However, to date, very little is known about the sex chromosomes of strepsirrhines, except that strata 4 and 5 are missing in grey mouse lemurs (Microcebus murinus, see Glaser et al., 1999) preventing previous tests of this hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glaser et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "e1aca566-2c20-4f65-a61a-f687bb7ba28d",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C26",
+      "claim": "For autosomes, a M:F depth ratio of 1 is expected as males and females have the same copy number of autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For autosomes, a M:F depth ratio of 1 is expected as males and females have the same copy number of autosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genetic principles",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "69b61737-530e-4080-a1e6-3d856753e967",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C27",
+      "claim": "On the X chromosome, a M:F depth ratio of 1 should indicate the PAR that is shared among sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the X chromosome, a ratio of 1 should indicate the PAR that is shared among sexes, a ratio of 0.5 should indicate the X-specific region as males have only one such region and females two, and the boundary between both would indicate the PAB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genetic principles and methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "fa5f7bd8-7aac-40a9-8c77-138d9032ecc6",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C28",
+      "claim": "On the X chromosome, a M:F depth ratio of 0.5 should indicate the X-specific region as males have only one such region and females two.",
+      "claim_type": "EXPLICIT",
+      "source": "On the X chromosome, a ratio of 1 should indicate the PAR that is shared among sexes, a ratio of 0.5 should indicate the X-specific region as males have only one such region and females two, and the boundary between both would indicate the PAB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genetic principles and methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "81a1d998-349b-4c34-b524-4f19958eb6ed",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C29",
+      "claim": "The boundary between M:F depth ratios of 1 and 0.5 on the X chromosome indicates the PAB.",
+      "claim_type": "EXPLICIT",
+      "source": "On the X chromosome, a ratio of 1 should indicate the PAR that is shared among sexes, a ratio of 0.5 should indicate the X-specific region as males have only one such region and females two, and the boundary between both would indicate the PAB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genetic principles and methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "ef7ec1f3-8b1a-471f-8fa3-1412294dce19",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C30",
+      "claim": "Seven species representing the main strepsirrhine lineages representing 65 My of evolution were studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Illumina short-read sequencing technology, we sequenced a male and a female genome in seven species covering the main strepsirrhine lineages representing 65 My of evolution (Pozzi et al., 2014): four Lemuriformes (Daubentonia madagascariensis - aye-ayes, M. murinus \u2013 grey mouse lemur, Eulemur rubriventer \u2013 red-bellied lemur, Prolemur simus \u2013 greater bamboo lemur) and three Lorisiformes (Otolemur garnettii \u2013 northern greater galago, Galago senegalensis \u2013 senegal bushbaby, Nyctibebus coucang \u2013 slow loris).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pozzi et al., 2014 for evolutionary time",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "83d69b9c-a900-4f36-85d9-9d432f5d37c5",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C31",
+      "claim": "The sequencing depth of each sample was between 11.8X and 39.1X.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequencing depth of each sample was between 11.8X and 39.1X (assuming a genome size identical to the human genome) with 78% of the samples being between 20X and 40X, that is moderate sequencing depth (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from sequencing reported in Supplementary file 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "a27cda85-b503-4fa8-b47a-93d71070db15",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C32",
+      "claim": "78% of the samples had sequencing depth between 20X and 40X, representing moderate sequencing depth.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequencing depth of each sample was between 11.8X and 39.1X (assuming a genome size identical to the human genome) with 78% of the samples being between 20X and 40X, that is moderate sequencing depth (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from sequencing reported in Supplementary file 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "d92e699e-4a4f-4be0-b3d6-5506864f5cea",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C33",
+      "claim": "Using the human X chromosome to order the grey mouse lemur X scaffolds, the scaffolds corresponding to human PAR1 and strata 4 and 5 have a M:F depth ratio around 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the human X chromosome to order the grey mouse lemur X scaffolds, we found that the scaffolds corresponding to human PAR1 and strata 4 and 5 have a M:F depth ratio around 1 (Figure 1B), indicating that these regions have remained pseudoautosomal in grey mouse lemurs in agreement with older cytogenetic data (Glaser et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data shown in Figure 1B and supported by citation to Glaser et al., 1999",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "4d68a001-b131-4e92-9251-83e60a74ba86",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C34",
+      "claim": "The regions corresponding to human PAR1 and strata 4 and 5 have remained pseudoautosomal in grey mouse lemurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the human X chromosome to order the grey mouse lemur X scaffolds, we found that the scaffolds corresponding to human PAR1 and strata 4 and 5 have a M:F depth ratio around 1 (Figure 1B), indicating that these regions have remained pseudoautosomal in grey mouse lemurs in agreement with older cytogenetic data (Glaser et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data shown in Figure 1B and supported by citation to Glaser et al., 1999",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "9686ffbf-8af3-477b-9bbb-adcb8c81ec29",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C35",
+      "claim": "The rest of the grey mouse lemur X is X-specific with a M:F ratio close to 0.5.",
+      "claim_type": "EXPLICIT",
+      "source": "The rest of the grey mouse lemur X is X-specific with a M:F ratio close to 0.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "11217b8b-9ebe-4927-8747-2a18173aa97b",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C36",
+      "claim": "Five regions in the X-specific region of grey mouse lemur show an elevated M:F depth ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "However, five regions in the X-specific region show an elevated ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "715c3507-b5eb-4365-a6aa-91bab9b3ecf1",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C37",
+      "claim": "Detailed analysis of the five regions with elevated M:F ratio in grey mouse lemur showed that they are fragments of autosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed analysis of these five regions showed that they are fragments of autosomes (see Materials and methods and Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from detailed analysis reported in Materials and methods and Supplementary file 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "670c78f6-7f42-4e8a-b0b2-0c3f122c2406",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C38",
+      "claim": "The regions homologous to human PAR1 and strata 4 and 5 are still recombining in grey mouse lemur.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these limitations, it is nonetheless clear that the regions homologous to human PAR1 and strata 4 and 5 are still recombining in grey mouse lemur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the M:F depth ratio data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "d2419160-8312-40f9-a90d-a183a182081f",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C39",
+      "claim": "In all seven strepsirrhine species studied, the pattern of M:F depth ratio is very similar.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in all seven species studied here, the pattern is very similar (Figure 1C and a zoom on the PABs in Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data shown in Figure 1C and Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "433f20f3-6245-4390-bcd8-2821f26789e5",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C40",
+      "claim": "All studied strepsirrhines harbour a large pseudoautosomal region including the genes that are in PAR1 and strata 4 and 5 in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "All studied strepsirrhines harbour a large pseudoautosomal region including the genes that are in PAR1 and strata 4 and 5 in humans (compare Figure 1A and C for lemurs and Figure 1\u2014figure supplement 1 and C for lorises; both lemur and loris PABs correspond to the boundary between human strata 4 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data shown in Figure 1A, 1C, and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "8443d260-1240-4914-ba52-e86d86cc3cee",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C41",
+      "claim": "Both lemur and loris PABs correspond to the boundary between human strata 4 and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "All studied strepsirrhines harbour a large pseudoautosomal region including the genes that are in PAR1 and strata 4 and 5 in humans (compare Figure 1A and C for lemurs and Figure 1\u2014figure supplement 1 and C for lorises; both lemur and loris PABs correspond to the boundary between human strata 4 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data shown in Figure 1A, 1C, and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "9e0c0570-cce4-460b-9ea9-ddfb989c12cd",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C42",
+      "claim": "No suppression of recombination between the X and the Y has occurred in strepsirrhines since the origin of the group >65 millions years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "We can therefore conclude that no suppression of recombination between the X and the Y has occurred in strepsirrhines since the origin of the group >65 millions years ago (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from the data shown in Figure 2 and previous analyses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "752c0eb9-69e2-4b8a-a3d3-446347ab8a0a",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C43",
+      "claim": "The M:F SNP density ratio is predicted to be one for the PAR.",
+      "claim_type": "EXPLICIT",
+      "source": "The M:F SNP density ratio is predicted to be one for the PAR, <1 for old strata due to haploidy in males and >1 for recent strata due to accumulation of fixed X-Y differences (Wright et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wright et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "69d0de05-c5d7-488c-9766-60a7450483fe",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C44",
+      "claim": "The M:F SNP density ratio is predicted to be <1 for old strata due to haploidy in males.",
+      "claim_type": "EXPLICIT",
+      "source": "The M:F SNP density ratio is predicted to be one for the PAR, <1 for old strata due to haploidy in males and >1 for recent strata due to accumulation of fixed X-Y differences (Wright et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wright et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "c053ead9-8982-4cc5-9b6b-da23a8e63650",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C45",
+      "claim": "The M:F SNP density ratio is predicted to be >1 for recent strata due to accumulation of fixed X-Y differences.",
+      "claim_type": "EXPLICIT",
+      "source": "The M:F SNP density ratio is predicted to be one for the PAR, <1 for old strata due to haploidy in males and >1 for recent strata due to accumulation of fixed X-Y differences (Wright et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wright et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "851485aa-f650-4da7-8c62-e8043c505572",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C46",
+      "claim": "The analyses revealed no recent strata in the seven strepsirrhine species studied.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our analyses revealed no recent strata in the seven strepsirrhine species studied here (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "f5e9af68-9e53-4d15-b195-98cabddbb83e",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C47",
+      "claim": "In primates, two strata (4 and 5) were formed in apes and Old World monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the rate of strata formation is generally low: in primates two strata (4 and 5) were formed in apes and Old World monkeys, one was formed independently in New World monkeys (4') based on the species studied so far (Hughes et al., 2012; Cortez et al., 2014, and see Figure 2) and our additional data found no new strata formation in strepsirrhines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Hughes et al., 2012; Cortez et al., 2014 and shown in Figure 2",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "6d7672ce-7ad0-4fd7-b3b2-f5e6339f0b74",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C48",
+      "claim": "One stratum was formed independently in New World monkeys (4').",
+      "claim_type": "EXPLICIT",
+      "source": "However, the rate of strata formation is generally low: in primates two strata (4 and 5) were formed in apes and Old World monkeys, one was formed independently in New World monkeys (4') based on the species studied so far (Hughes et al., 2012; Cortez et al., 2014, and see Figure 2) and our additional data found no new strata formation in strepsirrhines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Hughes et al., 2012; Cortez et al., 2014 and shown in Figure 2",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "344ae365-2e78-4796-93d8-dbb6c1a8e3d1",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C49",
+      "claim": "No new strata formation was found in strepsirrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the rate of strata formation is generally low: in primates two strata (4 and 5) were formed in apes and Old World monkeys, one was formed independently in New World monkeys (4') based on the species studied so far (Hughes et al., 2012; Cortez et al., 2014, and see Figure 2) and our additional data found no new strata formation in strepsirrhines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Data from this study shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "e6ba6d41-55f1-40aa-a026-56f29458af38",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C50",
+      "claim": "Comparing rates of strata formation on a time-based scale was only marginally significant (binomial test, p=0.051).",
+      "claim_type": "EXPLICIT",
+      "source": "We designed a statistical test to compare the rates of strata formation (expressed in event per My) taking into account the respective divergence times in the haplorrhine and strepsirrhine parts of the phylogenetic tree of the studied species, but this test was only marginally significant (binomial test, p=0.051 see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test performed on the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "7c2da06e-9c6c-4685-bb6b-e39e9533cb4c",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C51",
+      "claim": "Rescaling time in generations to compare rates of strata formation lead to a significantly higher rate in haplorrhines (binomial test, p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Rescaling time in generations to compare rates of strata formation (expressed in event per million generations) lead to a significantly higher rate in haplorrhines (binomial test, p=0.01 see Materials and methods), consistent with our hypothesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test performed on the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "e006d84a-3bae-42d5-abe1-bbb1d87047e4",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C52",
+      "claim": "The sets of strepsirrhine and haplorrhine species differ significantly in sexual dimorphism (teeth and body size).",
+      "claim_type": "EXPLICIT",
+      "source": "We collected phenotypic data from the literature for our set of 13 primate species and confirmed that our sets of strepsirrhine and haplorrhine species differ significantly in sexual dimorphism (teeth and body size, assuming that they reflect the global level of sexual dimorphism in an organism; see Materials and methods and Table 1) but not in sperm competition (testes size, see Materials and methods and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data collected from literature and analyzed, shown in Table 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "d120f17a-5393-4a67-b6eb-08e066fdb5da",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C53",
+      "claim": "The sets of strepsirrhine and haplorrhine species do not differ significantly in sperm competition (testes size).",
+      "claim_type": "EXPLICIT",
+      "source": "We collected phenotypic data from the literature for our set of 13 primate species and confirmed that our sets of strepsirrhine and haplorrhine species differ significantly in sexual dimorphism (teeth and body size, assuming that they reflect the global level of sexual dimorphism in an organism; see Materials and methods and Table 1) but not in sperm competition (testes size, see Materials and methods and Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data collected from literature and analyzed, shown in Table 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "4dfdbf62-c268-4cd4-9f31-a949353f9270",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C54",
+      "claim": "During primate evolution, the PAB has remained unchanged in strepsirrhines while several X-Y recombination suppression events have shortened the PAR in haplorrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that, during primate evolution, the PAB has remained unchanged in strepsirrhines while several X-Y recombination suppression events have shortened the PAR in haplorrhines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the data from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "0c67c483-d43a-4f1e-ac45-1c97eeb75e1e",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C55",
+      "claim": "The difference in PAB evolution between strepsirrhines and haplorrhines is interpreted as a consequence of differences in sexual dimorphism, and therefore sexual conflict, in both groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpreted this as a consequence of differences in sexual dimorphism, and therefore sexual conflict, in both groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the data by the authors",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "2eb90154-d061-48e5-a59b-a51c1d4e922b",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C56",
+      "claim": "In guppies, populations exhibiting stronger sexual dimorphism seem to have a larger non-recombining region.",
+      "claim_type": "EXPLICIT",
+      "source": "In guppies, while the Y chromosome exhibits low levels of divergence from the X (Wright et al., 2017; Bergero et al., 2019; Darolti et al., 2019), populations exhibiting stronger sexual dimorphism seem to have a larger non-recombining region (Wright et al., 2017; Wright et al., 2019; Almeida et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wright et al., 2017; Wright et al., 2019; Almeida et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "78112553-8830-49b3-b773-2bd7e6c51106",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C57",
+      "claim": "In the brown alga Ectocarpus, sexual dimorphism is extremely low and sex chromosomes are homomorphic, with a small non-recombining region, despite being very old.",
+      "claim_type": "EXPLICIT",
+      "source": "In the brown alga Ectocarpus, sexual dimorphism is extremely low and as expected sex chromosomes are homomorphic, with a small non-recombining region, despite being very old (Ahmed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ahmed et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "2a8f6922-37ac-4ba8-8869-c4fe1b722454",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C58",
+      "claim": "In ruminants, the PAR seems to have undergone a process of attrition due to accumulation of DNA repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "In ruminants, the PAR seems to have undergone a process of attrition due to accumulation of DNA repeats (Van Laere et al., 2008; Raudsepp and Chowdhary, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Van Laere et al., 2008; Raudsepp and Chowdhary, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "2ba04950-93fd-4d11-8b64-4c8afc3e6cfa",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C59",
+      "claim": "In Microbotryum violaceum, strata are found on the mating-type chromosomes despite the fact that this species only has mating types and not sexes, such that sexual antagonism is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "In Microbotryum violaceum, strata are found on the mating-type chromosomes despite the fact that this species only has mating types and not sexes, such that sexual antagonism is absent (Branco et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Branco et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "bb600085-df57-4cdb-9d72-0cb58e8d88d4",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C60",
+      "claim": "Sexually antagonistic mutation may not be a ubiquitous explanation of strata formation in all organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, sexually antagonistic mutation may not be a ubiquitous explanation of strata formation in all organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the examples provided",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "ebe1020d-d9d6-47c9-b5f8-e86f18797982",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C61",
+      "claim": "The genus Eulemur exhibits the most pronounced sexual dimorphism among strepsirrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "Although sexual dimorphism is generally low in strepsirrhines, there are some differences among species in this lineage, with the genus Eulemur exhibiting the most pronounced sexual dimorphism (Petty and Drea, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Petty and Drea, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "d130ba58-5a7d-4344-83ac-26b10e8bddcb",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C62",
+      "claim": "In Eulemur species, including the red-bellied lemur (E. rubriventer), males and females exhibit striking sexual dichromatism in pelage colouration.",
+      "claim_type": "EXPLICIT",
+      "source": "In these species, including the red-bellied lemur (E. rubriventer), which was analysed here, males and females exhibit striking sexual dichromatism, that is they differ in pelage colouration (Rakotonirina et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rakotonirina et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "897845a3-3036-4e37-952e-a03e59d36921",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C63",
+      "claim": "The red-bellied lemur did not show more evidence for recombination suppression than the other strepsirrhine species studied.",
+      "claim_type": "EXPLICIT",
+      "source": "The red-bellied lemur did not show more evidence for recombination suppression than the other species studied here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "b54ccd52-6ff9-4d5e-9c82-ce8287c8308d",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C64",
+      "claim": "Sexual dichromatism antagonism might have been solved through sex-biased expression rather than Y-linkage.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual dichromatism may rely on sexually antagonistic mutations. The antagonism might have been solved not through Y-linkage but instead through sex-biased expression for example (Ellegren and Parsch, 2007; Gazda et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation supported by citations to Ellegren and Parsch, 2007; Gazda et al., 2020",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "902ec157-150b-486c-ace0-19bea108a37e",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C65",
+      "claim": "The haplorrhine lineages in the sample have evolved for 188.52 My (44.23 million generations) during which 3 new strata were formed.",
+      "claim_type": "EXPLICIT",
+      "source": "The haplorrhine lineages in our sample have evolved for \u0394t1 = 188.52 My (44.23 million generations) during which S1 = 3 new strata were formed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from phylogenetic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "023c23ee-35ec-4dd9-b8c0-de1f43092e8f",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C66",
+      "claim": "The strepsirrhine lineages evolved for 321.32 My (158.52 million generations) and no new strata was formed.",
+      "claim_type": "EXPLICIT",
+      "source": "The strepsirrhine lineages evolved for \u0394t2 = 321.32 My (158.52 million generations) and no new strata was formed (S2 = 0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from phylogenetic analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "4dc46c45-fd1c-45aa-be6e-6935b3abddad",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C67",
+      "claim": "Sexual dimorphism based on body mass (SSD) was 0.378 \u00b1 0.097 in haplorrhines and 0.062 \u00b1 0.017 in strepsirrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual dimorphism based on body mass (SSD, mean \u00b1 standard error) was 0.378 \u00b1 0.097 in haplorrhines and 0.062 \u00b1 0.017 in strepsirrhines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "f07e4558-2218-4ac5-a9d3-d18d171677f4",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C68",
+      "claim": "The difference in body mass sexual dimorphism between haplorrhines and strepsirrhines was statistically significant only when ignoring phylogenetic inertia (p=0.043).",
+      "claim_type": "EXPLICIT",
+      "source": "This difference based on n = 13 observations was statistically significant only when ignoring phylogenetic inertia (p=0.043) but no longer significant when considering phylogenetic inertia with a Brownian motion model (p=0.66).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "2d7b0aa1-ec92-45c0-9cea-833cd687c1a5",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C69",
+      "claim": "Sexual dimorphism based on canine height (CSD) was 0.385 \u00b1 0.076 in haplorrhines and 0.045 \u00b1 0.016 in strepsirrhines.",
+      "claim_type": "EXPLICIT",
+      "source": "Sexual dimorphism based on canine height (CSD) showed the same kind of pattern: the mean is 0.385 \u00b1 0.076 in haplorrhines and 0.045 \u00b1 0.016 in strepsirrhines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "f0dc9c1d-68ab-4c8e-a74d-27f439b4e8a9",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C70",
+      "claim": "The difference in canine height sexual dimorphism between haplorrhines and strepsirrhines is only significant when ignoring the underlying phylogeny (p=0.013).",
+      "claim_type": "EXPLICIT",
+      "source": "This difference based on n = 12 observations is only significant when ignoring the underlying phylogeny (p=0.013) but no longer significant (p=0.39) when phylogeny is accounted for with a Brownian motion model (leading to a non different from 0 estimate of Pagel's \u03bb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "ff6f4ccc-8028-439d-8426-5fc142634549",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "claim_id": "C71",
+      "claim": "The average relative testes mass did not significantly differ between haplorrhines (0.18 \u00b1 0.24) and strepsirrhines (\u22120.21 \u00b1 0.32).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our n = 11 observations, the average relative testes mass did not significantly differ between haplorrhines (0.18 \u00b1 0.24) and strepsirrhines (\u22120.21 \u00b1 0.32).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4051db9d-5002-40a2-9082-408ee36b752c",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "All seven strepsirrhine species studied retain a large pseudoautosomal region (PAR) that includes regions corresponding to human PAR1 and strata 4 and 5, indicating no recombination suppression has occurred in strepsirrhines for >65 million years. This was determined using male:female (M:F) sequencing depth ratios across the X chromosome, which showed ratios of ~1 for the PAR and ~0.5 for X-specific regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C42 collectively provide strong evidence through sequencing data (C31-C32), M:F depth ratio analysis (C33-C35, C39), and synteny analysis (C40-C41) that strepsirrhines have maintained a large PAR without recombination suppression. The findings are consistent across all seven species and corroborated by prior cytogenetic data (C34). Some assembly artifacts were identified and appropriately addressed (C36-C37).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "b464e51b-fd2e-4c84-b345-965e476cfe9f",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SNP density analysis was used to detect potential recent evolutionary strata that might be missed by depth ratio analysis. No recent strata were detected in any of the seven strepsirrhine species studied, as M:F SNP density ratios did not show the expected pattern (>1) for recent recombination suppression events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 describe a complementary analytical approach using SNP density ratios to detect recent strata. The methodology is sound and based on established predictions (C43-C45, Wright et al. 2017). The negative result (C46) strengthens the main finding by ruling out recent recombination suppression events that might have been missed by depth analysis alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "ae171ecf-1d56-4e5a-841e-e73a303bff1f",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Statistical comparison of strata formation rates between haplorrhines and strepsirrhines shows that haplorrhines formed 3 new strata over 188.52 My (44.23 million generations) while strepsirrhines formed 0 new strata over 321.32 My (158.52 million generations). The difference is marginally significant when comparing rates per million years (p=0.051) but becomes significant when rescaled to rates per million generations (p=0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C51 and C65-C66 present statistical comparisons, but the marginal significance on a time scale (p=0.051, C50) and the need to rescale to generations to achieve significance (p=0.01, C51) raises concerns. The choice to use generation time rather than absolute time appears post-hoc, and the binomial test may not fully account for phylogenetic non-independence. The small sample size (3 vs 0 events) limits statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "ebfbe8b9-dcb4-4c53-b6f9-fb3320a72020",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Phenotypic analysis shows that strepsirrhines and haplorrhines differ in sexual dimorphism (body mass and canine height) but not in sperm competition (testes size). However, the differences in sexual dimorphism are only significant when phylogenetic relationships are ignored; when phylogenetic inertia is accounted for using Brownian motion models, the differences are no longer statistically significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claims C52-C53 and C67-C71 present phenotypic comparisons, but the statistical support is weak. The significance disappears when phylogeny is properly accounted for (C68: p=0.66; C70: p=0.39), which is the appropriate analysis given the phylogenetic structure. The authors acknowledge low Pagel's \u03bb values suggesting little phylogenetic signal, but this undermines rather than supports their interpretation. The claim of significant differences (C52) is not robustly supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "2c12b307-07a4-4f9b-a14d-4a59ea832e11",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors conclude that the PAB has remained unchanged in strepsirrhines while multiple recombination suppression events shortened the PAR in haplorrhines, and interpret this difference as a consequence of differences in sexual dimorphism and sexual conflict between the two groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C54 accurately summarizes the genomic findings which are well-supported. However, C55's causal interpretation linking PAB evolution to sexual dimorphism is speculative. The phylogenetically-corrected analyses (C68, C70) do not support significant differences in sexual dimorphism, and alternative explanations are not adequately ruled out. The interpretation goes beyond what the data can definitively support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "0d6b4617-287e-4f1d-bbce-41c6539d5908",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors review evidence from other organisms regarding the relationship between sexual dimorphism and recombination suppression. Evidence from guppies and brown algae supports the sexual antagonism hypothesis, but examples from ruminants and Microbotryum violaceum suggest alternative mechanisms, leading to the conclusion that sexually antagonistic mutations may not universally explain strata formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 appropriately review comparative evidence from other systems with proper citations. The authors correctly note both supporting evidence (C56-C57) and counterexamples (C58-C59), leading to a balanced conclusion (C60) that sexual antagonism is not a universal explanation. This contextualizes their findings appropriately within the broader literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "ce3e669f-2e9a-428d-8b0e-91261971c1c5",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Despite Eulemur species (including the red-bellied lemur studied here) exhibiting the most pronounced sexual dimorphism among strepsirrhines, particularly sexual dichromatism in pelage coloration, no additional recombination suppression was detected. The authors speculate that sexual dichromatism antagonism may have been resolved through sex-biased expression rather than Y-linkage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 present an important within-group comparison showing that even the most sexually dimorphic strepsirrhine (C61-C62) lacks additional recombination suppression (C63). This strengthens the overall finding. The speculation about sex-biased expression (C64) is appropriately framed as a hypothesis for future work and is supported by relevant citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "53c24038-664d-4885-9084-4e4b690a1cea",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about human sex chromosome evolution, including their heteromorphic nature, the origin from autosomes ~150 Mya, the formation of evolutionary strata through recombination suppression events, and the timing of strata formation in different primate lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C14 present well-established background information about sex chromosome evolution, all supported by appropriate citations to primary literature. These claims provide necessary context for the study and accurately represent current knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "db69a2ba-1c4c-42ea-80f7-3d43f43633b9",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The sexually antagonistic mutation hypothesis proposes that male-beneficial/female-detrimental mutations in the PAR favor recombination suppression to link these mutations to the Y chromosome. While some evidence supports this hypothesis in guppies, evidence from diverse groups including primates has been lacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 accurately present the theoretical framework and state of evidence for the sexually antagonistic mutation hypothesis. The citations are appropriate, and the identification of a knowledge gap in primates (C18) provides clear motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "4aeb2c91-1b0e-4bac-9757-f3a798ffcca8",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Strepsirrhines exhibit widespread female social dominance, masculinization of females, and virtually absent sexual size dimorphism, contrasting sharply with haplorrhines which show pronounced male-biased sexual dimorphism. Prior to this study, little was known about strepsirrhine sex chromosomes except that strata 4 and 5 are missing in grey mouse lemurs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C25 establish the phenotypic differences between strepsirrhines and haplorrhines that motivate the study's hypothesis. All claims are supported by appropriate citations, and the identification of limited prior knowledge about strepsirrhine sex chromosomes (C25) justifies the research approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    },
+    {
+      "id": "00bcc9aa-5e0a-4672-95ac-10a7536a960b",
+      "content_id": "a6a15144-3739-4e31-bb78-bccdbff0f8af",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The methodological approach relies on the principle that M:F sequencing depth ratios should be 1 for autosomes and PARs (equal copy number in both sexes), 0.5 for X-specific regions (males have one copy, females two), with the boundary between these ratios indicating the pseudoautosomal boundary (PAB).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 describe the fundamental methodological principle underlying the study. This approach is well-established in the literature and is based on sound genetic principles regarding sex chromosome dosage differences between males and females. The logic is clearly explained and appropriate for identifying the PAB.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:27:33.329021Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ef7ec1f3-8b1a-471f-8fa3-1412294dce19",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "83d69b9c-a900-4f36-85d9-9d432f5d37c5",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "a27cda85-b503-4fa8-b47a-93d71070db15",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "d92e699e-4a4f-4be0-b3d6-5506864f5cea",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "4d68a001-b131-4e92-9251-83e60a74ba86",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "9686ffbf-8af3-477b-9bbb-adcb8c81ec29",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "11217b8b-9ebe-4927-8747-2a18173aa97b",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "715c3507-b5eb-4365-a6aa-91bab9b3ecf1",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "670c78f6-7f42-4e8a-b0b2-0c3f122c2406",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "d2419160-8312-40f9-a90d-a183a182081f",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "433f20f3-6245-4390-bcd8-2821f26789e5",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "8443d260-1240-4914-ba52-e86d86cc3cee",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "9e0c0570-cce4-460b-9ea9-ddfb989c12cd",
+      "result_id": "4051db9d-5002-40a2-9082-408ee36b752c"
+    },
+    {
+      "claim_id": "752c0eb9-69e2-4b8a-a3d3-446347ab8a0a",
+      "result_id": "b464e51b-fd2e-4c84-b345-965e476cfe9f"
+    },
+    {
+      "claim_id": "69d0de05-c5d7-488c-9766-60a7450483fe",
+      "result_id": "b464e51b-fd2e-4c84-b345-965e476cfe9f"
+    },
+    {
+      "claim_id": "c053ead9-8982-4cc5-9b6b-da23a8e63650",
+      "result_id": "b464e51b-fd2e-4c84-b345-965e476cfe9f"
+    },
+    {
+      "claim_id": "851485aa-f650-4da7-8c62-e8043c505572",
+      "result_id": "b464e51b-fd2e-4c84-b345-965e476cfe9f"
+    },
+    {
+      "claim_id": "f5e9af68-9e53-4d15-b195-98cabddbb83e",
+      "result_id": "ae171ecf-1d56-4e5a-841e-e73a303bff1f"
+    },
+    {
+      "claim_id": "6d7672ce-7ad0-4fd7-b3b2-f5e6339f0b74",
+      "result_id": "ae171ecf-1d56-4e5a-841e-e73a303bff1f"
+    },
+    {
+      "claim_id": "344ae365-2e78-4796-93d8-dbb6c1a8e3d1",
+      "result_id": "ae171ecf-1d56-4e5a-841e-e73a303bff1f"
+    },
+    {
+      "claim_id": "e6ba6d41-55f1-40aa-a026-56f29458af38",
+      "result_id": "ae171ecf-1d56-4e5a-841e-e73a303bff1f"
+    },
+    {
+      "claim_id": "7c2da06e-9c6c-4685-bb6b-e39e9533cb4c",
+      "result_id": "ae171ecf-1d56-4e5a-841e-e73a303bff1f"
+    },
+    {
+      "claim_id": "902ec157-150b-486c-ace0-19bea108a37e",
+      "result_id": "ae171ecf-1d56-4e5a-841e-e73a303bff1f"
+    },
+    {
+      "claim_id": "023c23ee-35ec-4dd9-b8c0-de1f43092e8f",
+      "result_id": "ae171ecf-1d56-4e5a-841e-e73a303bff1f"
+    },
+    {
+      "claim_id": "e006d84a-3bae-42d5-abe1-bbb1d87047e4",
+      "result_id": "ebfbe8b9-dcb4-4c53-b6f9-fb3320a72020"
+    },
+    {
+      "claim_id": "d120f17a-5393-4a67-b6eb-08e066fdb5da",
+      "result_id": "ebfbe8b9-dcb4-4c53-b6f9-fb3320a72020"
+    },
+    {
+      "claim_id": "4dc46c45-fd1c-45aa-be6e-6935b3abddad",
+      "result_id": "ebfbe8b9-dcb4-4c53-b6f9-fb3320a72020"
+    },
+    {
+      "claim_id": "f07e4558-2218-4ac5-a9d3-d18d171677f4",
+      "result_id": "ebfbe8b9-dcb4-4c53-b6f9-fb3320a72020"
+    },
+    {
+      "claim_id": "2d7b0aa1-ec92-45c0-9cea-833cd687c1a5",
+      "result_id": "ebfbe8b9-dcb4-4c53-b6f9-fb3320a72020"
+    },
+    {
+      "claim_id": "f0dc9c1d-68ab-4c8e-a74d-27f439b4e8a9",
+      "result_id": "ebfbe8b9-dcb4-4c53-b6f9-fb3320a72020"
+    },
+    {
+      "claim_id": "ff6f4ccc-8028-439d-8426-5fc142634549",
+      "result_id": "ebfbe8b9-dcb4-4c53-b6f9-fb3320a72020"
+    },
+    {
+      "claim_id": "4dfdbf62-c268-4cd4-9f31-a949353f9270",
+      "result_id": "2c12b307-07a4-4f9b-a14d-4a59ea832e11"
+    },
+    {
+      "claim_id": "0c67c483-d43a-4f1e-ac45-1c97eeb75e1e",
+      "result_id": "2c12b307-07a4-4f9b-a14d-4a59ea832e11"
+    },
+    {
+      "claim_id": "2eb90154-d061-48e5-a59b-a51c1d4e922b",
+      "result_id": "0d6b4617-287e-4f1d-bbce-41c6539d5908"
+    },
+    {
+      "claim_id": "78112553-8830-49b3-b773-2bd7e6c51106",
+      "result_id": "0d6b4617-287e-4f1d-bbce-41c6539d5908"
+    },
+    {
+      "claim_id": "2a8f6922-37ac-4ba8-8869-c4fe1b722454",
+      "result_id": "0d6b4617-287e-4f1d-bbce-41c6539d5908"
+    },
+    {
+      "claim_id": "2ba04950-93fd-4d11-8b64-4c8afc3e6cfa",
+      "result_id": "0d6b4617-287e-4f1d-bbce-41c6539d5908"
+    },
+    {
+      "claim_id": "bb600085-df57-4cdb-9d72-0cb58e8d88d4",
+      "result_id": "0d6b4617-287e-4f1d-bbce-41c6539d5908"
+    },
+    {
+      "claim_id": "ebe1020d-d9d6-47c9-b5f8-e86f18797982",
+      "result_id": "ce3e669f-2e9a-428d-8b0e-91261971c1c5"
+    },
+    {
+      "claim_id": "d130ba58-5a7d-4344-83ac-26b10e8bddcb",
+      "result_id": "ce3e669f-2e9a-428d-8b0e-91261971c1c5"
+    },
+    {
+      "claim_id": "897845a3-3036-4e37-952e-a03e59d36921",
+      "result_id": "ce3e669f-2e9a-428d-8b0e-91261971c1c5"
+    },
+    {
+      "claim_id": "b54ccd52-6ff9-4d5e-9c82-ce8287c8308d",
+      "result_id": "ce3e669f-2e9a-428d-8b0e-91261971c1c5"
+    },
+    {
+      "claim_id": "118ecbcc-886f-4dab-8265-18168bd1729d",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "6dff5fe2-d1e0-4501-b4bd-03439e3f5cf3",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "e6a15aac-89a9-42f1-a1bb-f9492c20a79c",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "ee942c99-5d8e-453f-8688-353a944e9e4b",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "e68f22e7-b517-45da-9954-3ac57bd995c8",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "1eff6d65-0b12-4be4-8947-fce2c8ede72a",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "713cceed-7523-4ce1-a788-1240695bdeec",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "f6a0ca8b-011c-4fe7-9aae-8add8972630e",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "c6034a30-ef1b-4d59-8832-512daa9ac5c5",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "e946f021-65b1-44e5-9fcf-feb13ac0bd41",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "ae518172-913b-42da-969a-90424980d0a0",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "2322d2e5-6d5c-43fa-8dff-f6386067727b",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "0269faf2-7b5c-4ea9-9818-82cbc5fe1f4f",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "74d2164b-6e78-4658-b7ee-9739f32e5971",
+      "result_id": "53c24038-664d-4885-9084-4e4b690a1cea"
+    },
+    {
+      "claim_id": "4e6162a2-b479-43c3-8efc-4b5e5eb06460",
+      "result_id": "db69a2ba-1c4c-42ea-80f7-3d43f43633b9"
+    },
+    {
+      "claim_id": "e370580f-ec93-47f5-85d1-fca9a325b8c8",
+      "result_id": "db69a2ba-1c4c-42ea-80f7-3d43f43633b9"
+    },
+    {
+      "claim_id": "46dd3dad-f1d8-482f-8517-debc8d16a60b",
+      "result_id": "db69a2ba-1c4c-42ea-80f7-3d43f43633b9"
+    },
+    {
+      "claim_id": "5f17a66e-58e2-4cb6-a981-3af2e1fd0762",
+      "result_id": "db69a2ba-1c4c-42ea-80f7-3d43f43633b9"
+    },
+    {
+      "claim_id": "efaf3396-8673-4850-9f43-420059dce207",
+      "result_id": "4aeb2c91-1b0e-4bac-9757-f3a798ffcca8"
+    },
+    {
+      "claim_id": "ad2ea262-caa1-4f73-97b4-df436fac0017",
+      "result_id": "4aeb2c91-1b0e-4bac-9757-f3a798ffcca8"
+    },
+    {
+      "claim_id": "41a7cc0d-80cc-4894-bfd5-83bed241c8b7",
+      "result_id": "4aeb2c91-1b0e-4bac-9757-f3a798ffcca8"
+    },
+    {
+      "claim_id": "34619522-ff69-4c63-89cd-450e97d4e434",
+      "result_id": "4aeb2c91-1b0e-4bac-9757-f3a798ffcca8"
+    },
+    {
+      "claim_id": "59aae776-f2cb-42a0-9cc3-3005f18466d9",
+      "result_id": "4aeb2c91-1b0e-4bac-9757-f3a798ffcca8"
+    },
+    {
+      "claim_id": "771ad178-bdc6-445e-8735-c58585a70c5d",
+      "result_id": "4aeb2c91-1b0e-4bac-9757-f3a798ffcca8"
+    },
+    {
+      "claim_id": "0c1eed78-e25e-4620-a2c1-41eddd78acdb",
+      "result_id": "4aeb2c91-1b0e-4bac-9757-f3a798ffcca8"
+    },
+    {
+      "claim_id": "e1aca566-2c20-4f65-a61a-f687bb7ba28d",
+      "result_id": "00bcc9aa-5e0a-4672-95ac-10a7536a960b"
+    },
+    {
+      "claim_id": "69b61737-530e-4080-a1e6-3d856753e967",
+      "result_id": "00bcc9aa-5e0a-4672-95ac-10a7536a960b"
+    },
+    {
+      "claim_id": "fa5f7bd8-7aac-40a9-8c77-138d9032ecc6",
+      "result_id": "00bcc9aa-5e0a-4672-95ac-10a7536a960b"
+    },
+    {
+      "claim_id": "81a1d998-349b-4c34-b524-4f19958eb6ed",
+      "result_id": "00bcc9aa-5e0a-4672-95ac-10a7536a960b"
+    }
+  ],
+  "comparisons": []
+}

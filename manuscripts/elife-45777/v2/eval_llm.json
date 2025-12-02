@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "ATG2A is a 1938-residue protein with a conserved rod-shaped structure (20 nm long, 30 \u00c5 wide) containing Chorein_N and ATG2_CAD domains at opposite tips, with WIPI4 bound near the CAD tip. This architecture is evolutionarily conserved across yeast and mammalian ATG2-WIPI complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C7-C9 describe the structural organization of ATG2A based on prior structural characterization (Chowdhury et al., 2018) and comparative analysis across species. The claims are well-supported by cited structural data and cross-species conservation evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "ATG2A binds membranes through recognition of lipid-packing defects, with each tip capable of membrane binding. ATG2A tethers highly curved SUVs (10-20 nm spacing) but binds only weakly to LUVs with lower curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C20 describe membrane binding properties based on prior experimental work (Chowdhury et al., 2018; Kotani et al., 2018). The differential binding to SUVs versus LUVs is well-documented with experimental evidence including vesicle tethering assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The ATG2A-WIPI4 complex can tether PI3P-containing LUVs to each other and to PI3P-free LUVs, presumably through WIPI4 directing the CAD tip to PI3P membranes while the N tip binds other membranes. This supports a model where ATG2-WIPI complexes tether phagophores to the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 describe tethering activities demonstrated in prior work (Chowdhury et al., 2018) and supported by yeast studies (G\u00f3mez-S\u00e1nchez et al., 2018; Kotani et al., 2018). The mechanistic explanation is presented as inference but is consistent with the structural and biochemical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ATG2A contains an ATG_C domain (dispensable for autophagy) and a C-terminal localization region (CLR) with amphipathic helices required for phagophore localization. The CLR is required for yeast Atg2 membrane tethering in vitro but not for ATG2A, where the rod serves as the tethering unit. The C-terminus is flexible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C37 describe C-terminal regions based on prior structural and functional studies (Chowdhury et al., 2018; Kotani et al., 2018; Tamura et al., 2017). The differential requirements between yeast and human proteins are documented, and flexibility is inferred from EM studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "VPS13 family proteins are lipid transfer proteins with hydrophobic cavities that bind ~10 glycerolipids. Homology modeling suggests ATG2A's N-terminus has similar structure to VPS13, potentially creating an elongated hydrophobic cavity capable of accommodating multiple lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C46 describe the VPS13 structure and function (Kumar et al., 2018) and use homology modeling to predict ATG2A structure. The VPS13 data is well-cited, and the homology modeling is appropriately presented as predictive. The cavity hypothesis is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Cryo-EM 2D class averages of ATG2A-WIPI4 visualized an internal cavity extending from the N tip to the CAD tip, though the specimen quality was insufficient for high-resolution structure determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe new cryo-EM data from this study. The authors appropriately acknowledge the limitations of the data quality while reporting the visualization of the predicted cavity, which supports the lipid transfer hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ATG2A can extract NBD-PE from membranes, dissociate with lipids attached, and unload lipids onto other membranes during transient interactions, defining ATG2A as a lipid transfer protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe new experimental results from lipid extraction and unloading assays (Figure 2). The data demonstrate lipid extraction (fluorescent protein in bottom fraction without liposomes) and unloading (fluorescence transfer to acceptor vesicles), supporting the lipid transfer protein designation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "ATG2A facilitates lipid transfer between SUVs in a concentration-dependent manner with a maximum rate of ~0.017 s\u207b\u00b9 per protein molecule, comparable to the Mmm1-Mdm12 complex but much slower than OSBP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 describe quantitative lipid transfer kinetics from new experiments (Figure 3). The concentration dependence and rate measurements are clearly presented, and comparisons to other lipid transfer proteins are appropriately cited. The authors acknowledge potential inaccuracies in the FRET-based method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Lipid transfer rate depends on membrane composition: higher POPS content increases transfer rate (2-fold difference between 25% and 0% POPS). The effect is based on negative charge (replaceable by PI). ATG2A can mediate lipid transfer with near-physiological PO lipid compositions, though more slowly than with DO lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 describe systematic variation of lipid composition in transfer assays (Figure 3). DLS confirms vesicle clustering for all conditions. The charge-dependence is demonstrated by PI substitution experiments. The physiological relevance is appropriately discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The ATG2A12\u00d7D mutant (CLR mutations) shows reduced lipid transfer with DO SUVs (~1/3 of wild-type) but only slightly reduced transfer with PO SUVs, indicating the CLR and non-physiological lipids synergize. The rod region is the core catalytic domain for both tethering and lipid transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 describe mutant analysis (Figure 3G-J) showing differential effects with DO versus PO lipids. The interpretation that CLR contributes less under physiological conditions is reasonable. The conclusion about the rod as the core domain integrates current and prior data (Chowdhury et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "WIPI4 facilitates ATG2A-mediated lipid transfer between PI3P-containing and PI3P-free LUVs in a concentration-dependent manner, saturating at 1:1 stoichiometry. ATG2A alone shows minimal transfer between untethered LUVs. Lipid transfer is facilitated by ATG2A-mediated membrane tethering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 describe key experiments demonstrating WIPI4-dependent lipid transfer (Figure 4A-C). The concentration dependence, stoichiometry, and comparison to ATG2A alone are clearly shown. The conclusion that tethering facilitates transfer integrates current and prior tethering data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "ATG2A-mediated lipid transfer is bidirectional, as demonstrated by reversing the orientation of PI3P-containing donor and acceptor vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 describes experiments with reversed vesicle orientations (Figure 4D-F) showing similar transfer rates in both directions, supporting bidirectional transfer. The experimental design appropriately tests directionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Membrane tethering is required for ATG2A-mediated lipid transfer between membranes with physiological lipid compositions, and lipid-packing defects are crucial for transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 represent major conclusions from experiments with various lipid compositions (Figure 4G-I). The requirement for tethering is demonstrated by poor transfer with PO LUVs (which show reduced tethering) unless acceptors are SUVs. The importance of packing defects is shown throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "WIPI1 can facilitate ATG2A-mediated lipid transfer but only at concentrations below ATG2A. At higher concentrations, WIPI1 (but not WIPI4) clusters PI3P-containing LUVs, sequestering them from acceptors and suppressing transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 describe WIPI1 experiments (Figure 4J-L, Figure 4\u2014supplement 4) showing biphasic concentration dependence. Turbidity assays and EM confirm WIPI1-specific clustering. The mechanistic explanation for suppression at high concentrations is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "WIPI1 does not bind ATG2A in pull-down assays, but both WIPI1 and WIPI4 promote ATG2A recruitment to PI3P-containing membranes through cooperative membrane association, as demonstrated by liposome flotation assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe binding experiments (Figure 5). Pull-down assays show WIPI4 but not WIPI1 binds ATG2A directly. Flotation assays demonstrate both WIPIs recruit ATG2A to PI3P membranes. The cooperative binding mechanism is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In yeast, the Atg2-Atg18 complex directly tethers the phagophore edge to the ER, with Atg18 directing Atg2 orientation. In mammals, ATG2A localizes to the ER-phagophore contact site with WIPI2, likely at the omegasome where WIPI4 also localizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 summarize prior work on cellular localization in yeast (G\u00f3mez-S\u00e1nchez et al., 2018; Kotani et al., 2018; Graef et al., 2013) and mammals (Valverde et al., 2019; Lu et al., 2011; Axe et al., 2008). The citations appropriately support the localization claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "A model where ATG2-WIPI complexes tether the ER to the phagophore edge and transfer lipids explains: (1) maintained ER-phagophore association during expansion, (2) autophagosome membranes resembling ER in thickness but lacking ER proteins, and (3) ER dye staining of phagophores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 present an integrative model (Figure 6A) that explains multiple prior observations (Graef et al., 2013; Suzuki et al., 2013; Arstila and Trump, 1968; Yamamoto et al., 1990; Hirata et al., 2017). The model is consistent with the new lipid transfer data and prior observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The phagophore edge likely has abundant lipid-packing defects (high curvature, ~30 nm diameter) and negative charges (PI3P production). The ER contact sites (ERES in yeast; ERES/ERGIC/ER-mitochondria in mammals) may also have favorable properties, with PI enrichment in the phagophore-contacting ER subdomain. PI could be transferred by ATG2 as a PI3P precursor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C111 discuss membrane properties at contact sites based on prior work (Nguyen et al., 2017; Graef et al., 2013; Ge et al., 2013; Nishimura et al., 2017). While the phagophore properties are reasonably inferred, the ER membrane properties and PI transfer hypothesis (C110-C111) are more speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The measured lipid transfer rate (~0.017 s\u207b\u00b9) appears too slow for autophagosome formation. Unidirectional lipid transport must consume energy and could be accelerated by yet-unidentified proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C114 acknowledge a significant gap: the measured rate seems insufficient for physiological autophagosome formation. The speculation about energy-dependent acceleration (C113-C114) is reasonable but unsupported. This represents an important limitation requiring future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "PI3P dynamics could regulate phagophore expansion by controlling ATG2 recruitment: PI3P levels determine ATG2 number (regulating growth rate), and PI3P reduction releases ATG2, disrupting ER contact and stopping expansion. This is supported by smaller autophagosomes upon PI3P-phosphatase overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 propose a regulatory model based on the demonstrated WIPI-dependent ATG2 recruitment. The model is supported by prior observations of PI3P reduction during autophagosome closure (Axe et al., 2008) and smaller autophagosomes with PI3P-phosphatase overexpression (Taguchi-Atarashi et al., 2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "WIPI1 (and potentially WIPI2 and WIPI3, which also don't interact strongly with ATG2A/B) can facilitate ATG2A recruitment. The high sequence identity (~80%) between WIPI1 and WIPI2 supports WIPI2's potential role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 extend the findings to other WIPI proteins. The demonstration that WIPI1 facilitates ATG2A recruitment despite weak binding is novel. The speculation about WIPI2/3 (C121) is reasonable given the WIPI1 data and sequence similarity (Polson et al., 2010; Bakula et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Atg18 self-oligomerization tubulates membranes, which may lead to omegasome formation. The omegasome has been visualized as a PI3P-positive tubular membrane at the phagophore edge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 connect prior observations of Atg18 tubulation (Scacioc et al., 2017) with omegasome structure (Uemura et al., 2014). The speculation about WIPI-mediated omegasome formation (C125) is reasonable but not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Recent concurrent work by Osawa et al. and Valverde et al. demonstrated that yeast Atg2 transfers lipids between SUVs but poorly between LUVs, and that a short ATG2A N-terminal fragment can mediate lipid transfer in vitro and rescue autophagy. Osawa et al. visualized PE in the Atg2 N-terminal hydrophobic cavity by crystallography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 accurately summarize concurrent publications (Osawa et al., 2019; Valverde et al., 2019) that support and extend the current findings. The authors appropriately acknowledge these complementary studies and discuss how they relate to their own work.",
+    "result_type": "MINOR"
+  }
+]

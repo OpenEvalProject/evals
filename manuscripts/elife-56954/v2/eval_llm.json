@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Electric shocks evoke spatially heterogeneous responses in APL, with strong responses in the V region and weaker responses in other regions, while odor stimulation produces a different spatial pattern. This spatial heterogeneity may arise from differential synaptic inputs from dopaminergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 provide converging evidence from functional imaging (C23, C24) and connectomic analysis (C26) that APL responds heterogeneously to electric shock across different regions. The comparison with odor responses (C24) strengthens the interpretation that this reflects differential synaptic inputs (C25, C26) rather than technical artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "APL expresses lower levels of voltage-gated Na+ and Ca2+ channel mRNA than other mushroom body neurons, consistent with its non-spiking nature, but APL must have significant voltage-gated Ca2+ conductance as demonstrated by histamine-induced reduction of Ca2+ influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 combine RNA-seq data (C27) with functional experiments (C30) to demonstrate that despite low mRNA expression, APL has functional voltage-gated Ca2+ channels. The histamine experiment (C30, C31) provides strong evidence that Ca2+ influx is voltage-dependent, reconciling the apparent contradiction between low mRNA levels and functional Ca2+ conductance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Activating specific subsets of Kenyon cells (\u03b1'\u03b2' or \u03b1\u03b2/\u03b3) activates only the corresponding lobe of APL (\u03b1' or \u03b1), with no response in adjacent lobes despite close proximity (2-3 \u03bcm), likely due to the parallel organization of APL neurites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 demonstrate spatially restricted activity in APL using selective KC activation. The observation that adjacent APL neurites fail to respond (C34) despite close proximity provides strong evidence for compartmentalized activity. The anatomical explanation (C35) is well-supported by connectomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Local stimulation of APL with P2X2+ATP shows that activity attenuates to undetectable levels within 100 \u03bcm, while stimulating Kenyon cells produces different patterns depending on location, with calyx stimulation activating both calyx and lobes but vertical lobe tip stimulation remaining local.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 systematically demonstrate spatially restricted activity in APL using direct stimulation (C36-C38, C41) and compare this with KC-mediated activation (C39-C40). The differential spread patterns provide strong evidence that APL activity is intrinsically localized, with KC activation patterns reflecting their spiking properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Local APL stimulation inhibits Kenyon cells locally but with smaller widespread effects. Inhibition can differ over short distances (60 \u03bcm) within the vertical lobe, suggesting APL can differentially inhibit different mushroom body compartments. Local inhibition in KC dendrites can silence KCs throughout their axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 demonstrate that APL's inhibitory effect is spatially graded, with statistical evidence for differential inhibition over short distances (C43). The control experiments (C45-C46) effectively rule out alternative explanations involving leaky P2X2 expression. The finding that dendritic inhibition silences axons (C47) is well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "APL's inhibitory effect on Kenyon cells is sometimes less localized than APL activity itself, extending beyond regions where APL shows detectable Ca2+ signals. Direct GABA application produces similar spatial patterns to ATP-mediated APL stimulation, confirming that the spatial extent of inhibition accurately reflects GABA release patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 demonstrate that inhibition spreads farther than APL activity (C48-C50), but the GABA control experiments (C51-C54) show this is not due to wider GABA release than detected Ca2+ signals. This suggests the inhibitory effect genuinely extends beyond the zone of strong APL activation, though the mechanism remains unclear. The experimental design with GABA controls is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Connectomic analysis of the hemibrain dataset combined with physiological measurements predicts that individual Kenyon cells inhibit themselves via APL more strongly than they inhibit other individual Kenyon cells, even when comparing only to other KCs of the same subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 present a computational model combining connectomic data (C55-C56) with physiological measurements to predict self-inhibition bias (C57-C59). The model is well-justified and accounts for KC subtypes (C58-C59). However, this is a prediction from modeling rather than direct experimental validation, though it is supported by prior experimental observations (C81-C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study demonstrates that activity in APL is spatially restricted for both sensory-evoked and artificial stimulation, translating into spatially non-uniform inhibition of Kenyon cells. Modeling predicts that Kenyon cells preferentially inhibit themselves compared to other individual Kenyon cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 summarize the main findings of the study. These summary claims are well-supported by the detailed experimental results (C23-C54) and modeling (C55-C59). The integration of physiological and anatomical data to predict circuit function represents a significant advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Comparison with the locust GGN suggests that activity spreads less far in Drosophila APL than in GGN, potentially explained by morphological differences including APL's much thinner neurites (average ~0.5 \u03bcm diameter) compared to GGN's thick processes (up to 20 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C68 compare APL with GGN, but this comparison is complicated by different experimental methods (C64) and reliance on modeling for GGN (C63). The morphological differences (C65-C68) are well-documented, but the functional implications remain speculative. The authors appropriately acknowledge these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The spatial precision of ATP/GABA application is comparable to two-photon optogenetic stimulation (decay to half-strength ~10-25 \u03bcm), but ATP/GABA likely spread farther than the co-ejected red dye indicator due to lower molecular weights, meaning the results likely overestimate rather than underestimate spatial spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 provide a careful assessment of the technical limitations of the pressure ejection method. The reasoning about molecular weight effects (C73) is sound, and the conclusion that results overestimate spread (C74) is appropriately conservative. This strengthens confidence in the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Control experiments show that ATP puffing on control flies does not affect Kenyon cell activity, ruling out artifacts from leaky P2X2 expression. The observation that inhibition can be stronger proximally than distally in KC axons may reflect GABAB receptor-mediated suppression of Ca2+ influx rather than action potential blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 provides important negative control data. However, the mechanistic explanation for proximal-distal inhibition differences (C76-C78) remains speculative (C78 is explicitly labeled as speculation). While GABAB receptors are expressed in KCs (C78), their subcellular localization is unknown, limiting confidence in this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study demonstrates that APL inhibits Kenyon cells' dendrites and axons with spatially localized activity and inhibitory effects, allowing differential inhibition of mushroom body compartments. Connectomic analysis predicts that individual Kenyon cells inhibit themselves more strongly than other Kenyon cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 from the abstract accurately summarize the main experimental findings and predictions. These are well-supported by the detailed results throughout the manuscript (C23-C59). The integration of functional imaging, local stimulation, and connectomic analysis provides strong converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Local inhibition by APL allows a single neuron to function as multiple inhibitory interneurons, potentially modulating different compartment-specific aspects of olfactory learning, given that different compartments have different dopaminergic inputs, output neurons, and learning rules, and APL responds differentially to dopamine and electric shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 present functional implications of the findings. The analogy to amacrine cells (C85) is well-supported by citations. The compartment-specific modulation hypothesis (C86-C88) is a reasonable inference from the data, though it remains to be directly tested. The supporting evidence from prior work (C86-C87) and current data (C88) is solid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "While APL inhibition sparsens and decorrelates Kenyon cell odor responses, decorrelation is theoretically better served by all-to-all lateral inhibition than self-inhibition. However, self-inhibition can help decorrelate population activity by pushing some neurons below spiking threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 discuss the functional implications of self-inhibition for decorrelation. The theoretical analysis (C90-C91, referencing Appendix 1) appropriately qualifies the role of self-inhibition. This provides important context for interpreting the self-inhibition bias predicted by the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript establishes the biological context by reviewing established knowledge about neuronal compartmentalization, the Drosophila olfactory system, mushroom body anatomy, and APL's known properties including its non-spiking nature, widespread innervation, and roles in sparse coding and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C22 provide background knowledge supported by appropriate citations. These establish the context for the current study and are generally well-accepted facts in the field. The citations appear appropriate and the characterizations accurate.",
+    "result_type": "MINOR"
+  }
+]

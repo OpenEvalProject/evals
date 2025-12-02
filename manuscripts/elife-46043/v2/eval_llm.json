@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "c-Cbl, but not Cbl-b, is solely responsible for the rapid degradation of LynA in macrophages. Knockout of c-Cbl profoundly impaired LynA degradation (100% remaining at 1 min vs 60% in controls) and increased steady-state LynA expression 3-fold. Cbl-b knockout showed no impairment of LynA degradation, though compensatory c-Cbl upregulation was observed. siRNA knockdown experiments confirmed these findings without compensatory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C63 are well-supported by convergent evidence from multiple experimental approaches (knockout mice, siRNA knockdown) showing c-Cbl specifically mediates rapid LynA degradation. The data include quantitative immunoblot analysis with appropriate controls and statistical testing. The compensatory upregulation observation (C52) is appropriately qualified as inference. The distinction between rapid c-Cbl-mediated degradation and slower degradation by other E3 ligases is supported by kinetic data and citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Tyrosine 32 (Y32) in the unique region of LynA is required for its rapid degradation by c-Cbl. Substitution of Y32 with alanine or phenylalanine blocked rapid degradation (reducing depletion from 40% to 10% or 8% after 5 min), without affecting membrane localization. Other predicted sites (K40R, T27A) did not affect degradation. Y32 mutants showed 2-3 fold higher steady-state expression than wild-type LynA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C81 are strongly supported by systematic mutagenesis experiments in Jurkat cells showing Y32 is necessary for rapid degradation. The data include quantitative time-course measurements with appropriate controls (LynB, other mutations). Microscopy data (C77) confirms Y32 mutation doesn't affect localization, ruling out an indirect effect. The correlation between degradation kinetics and steady-state expression strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "LynA Y32 is phosphorylated in response to SFK activation in primary macrophages. Quantitative LC-MS/MS showed pY32 was 6-12 fold enriched in nonubiquitinated LynA from 3-IB-PP1-treated BMDMs versus resting cells. Phosphorylated Y32 was 6.0-6.4 fold higher in polyubiquitinated versus nonubiquitinated LynA, suggesting pY32 is a prerequisite for rapid polyubiquitination by c-Cbl.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 are supported by rigorous quantitative mass spectrometry with isotope-labeled internal standards and appropriate controls. The experimental design (using CskASCbl+/- mice and 15s pulse treatment) was optimized to detect transient phosphorylation. Two independent biological replicates showed consistent results. The inference that pY32 precedes polyubiquitination (C90) is reasonable given the enrichment in polyubiquitinated species, though the temporal relationship is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "SFKs themselves, rather than downstream kinases (Syk, FAK/Pyk2) or T-cell SFKs (Lck, Fyn), induce LynA degradation. LynA degradation was unaffected by Syk or FAK/Pyk2 inhibition but abrogated by SFK inhibition. Only catalytically competent LynA was degraded in JCaM1.6 cells; kinase-dead mutants (T410K, Y397F, K275R) were resistant. Activated Lck could not induce LynA degradation in trans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by systematic pharmacological inhibitor studies and kinase-dead mutant experiments. The inhibitor experiments include appropriate controls showing pathway-specific effects (pErk, pPaxillin). The use of multiple kinase-dead mutants (C95, C97) affecting different aspects of catalytic activity strengthens the conclusion. The Lck experiment (C96) provides a negative control showing kinase activity alone is insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "LynA degradation can be induced in trans by specific SFKs. Wild-type LynA, LynAY32A, LynB, and Hck56 (but not Hck59) induced degradation of catalytically-impaired LynAT410K by 20-40% after 5 min. Fgr and Lck could phosphorylate Zap70 and c-Cbl but could not induce LynA degradation, while Hck59 and FynB could only phosphorylate the LynA activation loop. Lyn appears most efficient at inducing degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C109 are supported by extensive cotransfection experiments testing multiple SFKs. The experimental design using catalytically-impaired LynAT410K as substrate is appropriate for detecting trans effects. The data reveal substrate specificity patterns, though the interpretation involves some inference (C103, C107, C109). The conclusion that Lyn is most efficient (C109) is appropriately qualified as potentially due to kinetics or efficiency differences. Expression level differences are acknowledged as a confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C44",
+      "C45",
+      "C110",
+      "C111",
+      "C112",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The LynA checkpoint is cell-specific: mast cells express very little c-Cbl (20% of macrophage levels) but abundant Cbl-b (80% of macrophage levels). Consequently, mast cell LynA is not rapidly degraded upon activation and shows 30% higher steady-state expression than rested macrophages. This results in 3-4x more LynA protein and stronger Erk phosphorylation in mast cells versus macrophages during 3-IB-PP1 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C121 are supported by comparative analysis of mast cells and macrophages using immunoblotting, RNAseq data from ImmGen, and flow cytometry validation of mast cell identity. The quantitative differences in c-Cbl expression, LynA stability, and signaling output are well-documented. The inference that differential c-Cbl expression tunes cell responsiveness (C120, C121) is reasonable given the convergent data, though it remains correlative rather than directly causal in this dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Rapid degradation of LynA in mast cells can be rescued by induced overexpression of c-Cbl. Transfection of c-Cbl-targeting saRNA increased c-Cbl expression 2-fold, leading to 30% LynA degradation after 15 min 3-IB-PP1 treatment (versus undetectable degradation in controls) and complete suppression of Erk1/2 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C125 are supported by saRNA experiments showing gain-of-function rescue of LynA degradation in mast cells. The 2-fold increase in c-Cbl is modest but sufficient to induce measurable effects on both LynA stability and downstream signaling. The complete suppression of Erk phosphorylation (C125) is striking and supports functional significance. However, n=3 for these experiments is relatively small, and the saRNA approach may have off-target effects not fully controlled for.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "LynA is uniquely susceptible to rapid degradation compared to other SFKs. Macrophage Hck, Fgr, LynB, and Fyn are degraded >10 fold more slowly than LynA during 3-IB-PP1 treatment. In Jurkat cells, LynA is rapidly degraded while Lck and Fyn are longer-lived. This suggests cell types lacking Lyn may lack an analogous rapid off-switch for SFK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by comparative degradation kinetics in both macrophages and Jurkat cells. The >10 fold difference (C64) is cited from prior work. The speculation about cells lacking Lyn (C69) is appropriately qualified as a suggestion. The data clearly establish LynA's unique degradation properties among SFKs, though the functional implications for T cells remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "c-Cbl overexpression in Jurkat cells increases LynA degradation rate (30% depletion after 5 min versus no detectable depletion in controls). LynB, lacking the 21 amino-acid unique region insert, is less efficiently degraded (10% vs 40% for LynA after 5 min). The unique susceptibility of LynA to rapid degradation is preserved in the Jurkat model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by transfection experiments in Jurkat cells showing c-Cbl dose-dependence and the importance of the unique region. The comparison with LynB (C72-C73) provides a natural control differing only in the unique region. The data validate that the degradation mechanism operates in a heterologous system, supporting generalizability. However, transient transfection creates cell-to-cell variability in expression levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background and context claims establishing the role of SFKs in ITAM signaling, mechanisms of myeloid cell regulation, the LynA checkpoint from prior work, and the 3-IB-PP1 experimental system. These claims provide the scientific foundation and rationale for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C38 are primarily background knowledge and citations to prior literature, including the authors' previous work. These are appropriately cited and represent established knowledge in the field. The novelty statement (C27, C33) correctly identifies gaps addressed by the current work. The description of the 3-IB-PP1 system (C34-C38) is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C10",
+      "C43",
+      "C47",
+      "C126"
+    ],
+    "result": "Summary claims stating the main findings: c-Cbl targets LynA via phosphorylated Y32, this depresses steady-state LynA expression in macrophages, the mechanism is distinct from slower degradation of other SFKs, and differential c-Cbl expression builds cell specificity into the LynA checkpoint, potentially driving different activation thresholds in mast cells versus macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C126 are high-level summary statements that integrate findings from multiple experiments. These are well-supported by the collective data presented in the manuscript. The mechanistic claims (C4, C5, C43) are directly demonstrated. The functional implications (C10, C47, C126) involve reasonable inference from the data but remain somewhat speculative regarding physiological significance, as the experiments use artificial activation (3-IB-PP1) rather than physiological stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C82"
+    ],
+    "result": "The unique region of LynA contains Y32, previously reported to be phosphorylated in cancer cells, along with predicted phosphorylation and ubiquitination sites at T27 and K40.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C82 are supported by citations to prior literature and computational predictions. These provide context for the mutagenesis experiments. The prior reports of Y32 phosphorylation in cancer cells (C82) support the biological relevance of this site, though its function in hematopoietic cells was previously unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "Syk and FAK are phosphorylated on activating tyrosine residues in CskAS BMDMs treated with 3-IB-PP1, as previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by citation to the authors' prior work. This establishes that the 3-IB-PP1 system activates expected downstream signaling pathways, validating the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Lyn is a key regulator of mast-cell ITAM signaling. CskAS mast cells were validated as homogeneous for mast cell markers Fc\u03b5R1\u03b1 and c-Kit by flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by citation to prior literature (C113) and flow cytometry data (C114). The validation of mast cell identity is important for interpreting the comparative experiments with macrophages.",
+    "result_type": "MINOR"
+  }
+]

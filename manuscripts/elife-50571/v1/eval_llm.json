@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A combinatorial library screening approach using yeast surface display of Sso7d mutants was used to isolate a binding protein (F29) that specifically targets the SH3 domain of Fyn kinase. The screening included stringent negative selection against seven other SFK SH3 domains, and clone F29 showed specific binding to Fyn-SH3 with little to no cross-reactivity with other highly homologous SFKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C42, C60-C63 collectively describe a well-designed screening strategy with appropriate controls. The use of negative selection against multiple SFKs (C61) and demonstration of specificity through FACS analysis (C63, Figure 1C) provide strong evidence for the isolation of a Fyn-specific binder. The methodology is clearly described and supported by supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "F29 retains specific binding to Fyn-SH3 when removed from the yeast cell surface context, with an apparent KD of 60 \u00b1 16 nM. Pulldown experiments using immobilized GST-F29 demonstrated specific binding to Fyn-SH3 but not to Src-SH3 or GST-alone controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C64-C68 are supported by pulldown experiments (Figure 1E-F) with appropriate controls (C66, C67). The KD measurement (C68) is quantified from binding curves with error estimates (n=3), and the specificity is demonstrated through negative controls. The data provide strong biochemical validation of F29 binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "NMR spectroscopy analysis reveals the structural basis for F29 specificity for Fyn-SH3. The structure shows that eight of ten randomized residues and five original Sso7d residues interact with twelve amino acids of Fyn-SH3. A key specificity determinant is the salt bridge between R33 of F29 and D99 of Fyn-SH3, where D99 is unique to Fyn among ubiquitously expressed SFKs. Mutagenesis experiments confirm that R33A and P41A mutations reduce binding, and introducing D99 into Src-SH3 (T99D) enables detectable binding to F29.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47, C69-C82 are strongly supported by comprehensive NMR structural analysis (Figure 2) combined with mutagenesis validation (Figure 2\u2014figure supplement 3). The structural data identify specific interfacial contacts (C71, C72), quantify buried surface area (C73), and the mutagenesis experiments (C76, C78, C80) provide functional validation of key residues. The gain-of-function experiment with Src-SH3 T99D (C80) is particularly compelling evidence for the role of D99 in specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "F29 preferentially binds the active form of Fyn kinase. Pulldown experiments show that a constitutively active (CA) mutant of Fyn is more efficiently pulled down by F29 compared to wild-type Fyn, while GST-alone controls show no significant pulldown. F29 can also bind and pull down endogenous Fyn from cell lysates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by pulldown experiments (Figure 3A-B) with appropriate controls (C84). The preferential binding to CA mutant (C83) provides evidence that F29 recognizes the active conformation, consistent with the design rationale. The ability to pull down endogenous Fyn (C86) demonstrates functionality with native protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "A FRET-based biosensor (FynSensor) was engineered by inserting mCerulean between the unique domain and SH3 domain of full-length Fyn (donor) and fusing mVenus to F29 (acceptor). The labeled constructs express well in cells, are resistant to proteolysis, show expected fluorescence spectra, and the labeled Fyn (mCer-Fyn) retains autocatalytic activity similar to wild-type Fyn with no significant differences in Y-420 autophosphorylation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C87-C94 describe the biosensor design and validation. The data show proper expression (C89), correct fluorescence properties (C90, C91), and critically, that mCerulean insertion does not disrupt kinase activity (C92-C94, Figure 3\u2014figure supplement 2). The quantification of autophosphorylation (C93) with statistical analysis (p=0.4385, n=3) provides strong evidence that the labeled kinase is functionally equivalent to wild-type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Labeled Fyn (mCer-Fyn) is signaling competent and can functionally replace native Fyn. RNA interference-mediated Fyn knockdown significantly attenuates ERK phosphorylation, and expressing either mCer-Fyn or unlabeled wild-type Fyn in Fyn-knockdown cells rescues ERK phosphorylation to the same extent, demonstrating that mCer-Fyn is regulated appropriately and can functionally replace native Fyn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by knockdown-rescue experiments (Figure 3\u2014figure supplement 4-5) with appropriate specificity controls showing Fyn knockdown does not affect Src or Yes (C95). The rescue experiments (C97, C98) with quantification show no significant difference between labeled and unlabeled Fyn (p=0.1585, n=3), providing strong evidence that mCer-Fyn is functionally equivalent to wild-type Fyn.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "FynSensor produces a robust FRET signal in cells that is dependent on F29 binding to active Fyn. Co-expression of mCer-Fyn and mVenus-F29 results in acceptor emission upon donor excitation. The FRET signal increases with increasing mVenus-F29 concentration and saturates, and is abolished by the non-binding P41A mutation. FRET is higher with constitutively active Fyn compared to wild-type Fyn, demonstrating sensitivity to Fyn activation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 demonstrate functional FRET in cells with multiple controls. The saturation behavior (C103) and lack of FRET with P41A mutant (C105) show binding-dependent FRET. The higher FRET with CA Fyn (C106) provides evidence for activation-state sensitivity. The data include appropriate quantification with statistics (Figure 3D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Addition of a myristoylation signal to F29 substantially increases FRET signal, while the myristoylated non-binding P41A mutant shows little or no FRET. This demonstrates that the FRET signal is due to specific binding of F29 to active Fyn and not due to non-specific membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by experiments showing increased FRET with myristoylation (Figure 3E) and appropriate controls with the P41A mutant (C109). The control with myristoylated non-binder is critical for ruling out proximity artifacts, and the data support the conclusion that FRET requires specific binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "FynSensor expression is minimally perturbing to cells. Under imaging conditions (low-to-moderate expression), FynSensor does not significantly affect cellular morphodynamics, Fyn localization, or downstream ERK phosphorylation in U2OS, C2C12, or Fyn-knockdown HEK-293 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, C111-C114 are supported by multiple control experiments across different cell types. Morphodynamics analysis (Figure 3\u2014figure supplement 7) shows no significant changes. ERK phosphorylation assays (Figure 3\u2014figure supplements 10-11) with appropriate statistical analysis demonstrate no perturbation of downstream signaling. The comprehensive controls across multiple cell types strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Acceptor photobleaching (APB) experiments confirm FRET in cells and reveal spatial variation in Fyn activity. APB induces dose-dependent recovery of donor fluorescence that is greater at cell edges, suggesting higher Fyn activity near the cell periphery. The non-binding P41A mutant shows no such recovery, and treatment with SFK inhibitor SU6656 significantly reduces donor fluorescence recovery, indicating that FynSensor FRET is sensitive to kinase inhibition and conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 are supported by APB experiments (Figure 4) with appropriate controls (P41A mutant, C117) and dose-response data (C115). The inhibitor experiment (C119) provides additional validation. The interpretation that inhibitor reduces FRET by stabilizing an inactive conformation (C120) is reasonable and supported by literature (Krishnamurty et al., 2013). The spatial variation in FRET recovery (C116) is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C122",
+      "C123"
+    ],
+    "result": "FynSensor imaging reveals that Fyn activity is spatially localized and temporally modulated, with greater activity closer to the cell edge. Serum-starved, fibronectin-plated cells show intracellular zones of high Fyn activity and spontaneous cell polarization measured through levels of active Fyn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C122, C123 are supported by extensive imaging data (Figures 4-8) showing spatially compartmentalized Fyn activity. Quantitative quadrant analysis (Figure 5A) demonstrates significant differences between high and low FRET zones (p<0.0001, n=37 cells). The patterns are consistent across multiple experiments and cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C124",
+      "C125"
+    ],
+    "result": "Compartmentalized Fyn activity is dependent on integrin signaling. Inhibition of focal adhesion kinase (FAK), a key mediator of integrin signaling, abolishes or greatly attenuates Fyn activity as measured by FynSensor FRET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C124, C125 are supported by FAK inhibitor experiments (Figure 5C) showing dramatic reduction in FRET upon PF-562271 treatment. The time-course data (Figure 5C-II) and quantification (Figure 5C-III) with statistics demonstrate significant attenuation of Fyn activity. Vehicle control (DMSO) shows no effect (Figure 5C-IV), providing appropriate negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Growth factor stimulation enhances Fyn activity preferentially in pre-activated intracellular zones. Despite global PDGF treatment, the increase in Fyn activity is highly localized and dependent on intracellular zones established through integrin signaling. This suggests that localized integrin activation establishes signaling zones with higher Fyn activity that are sensitized to be more responsive to growth factor signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C126-C129 are supported by PDGF stimulation experiments (Figure 8A-B) with quantitative analysis showing greater FRET enhancement in pre-activated zones (p<0.0001, n=18 cells). The spatial localization of the response despite global stimulation (C127) is a striking finding. However, the mechanistic model (C128) involves some speculation about sensitization mechanisms that would benefit from additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C130",
+      "C131"
+    ],
+    "result": "Appropriate integrin signaling is required for growth factor modulation of Fyn activity. Inhibiting FAK activity not only dramatically attenuates Fyn activity in fibronectin-plated, serum-starved cells, but also renders Fyn insensitive to further stimulation through PDGF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C130, C131 are supported by sequential treatment experiments (Figure 8C) showing that FAK inhibition abolishes PDGF response. The quantification (Figure 8C-III) shows no significant enhancement by PDGF after FAKi treatment (p=0.1777), while FAKi alone significantly reduces FRET (p=0.0044). This provides strong evidence for the requirement of integrin signaling for growth factor modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C132",
+      "C136",
+      "C137"
+    ],
+    "result": "FynSensor reveals that Fyn activity is pulsatile, with robust and spontaneous activity pulses observed in multiple cell types even in serum-starved cells plated on fibronectin. These pulses are further modulated by growth factor stimulation and suggest the presence of rapidly activated negative feedback loops that directly modulate Fyn activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C132, C136, C137 are supported by time-lapse imaging data (Figure 7) showing oscillatory FRET signals across multiple cell types. Power spectral density analysis (Figure 7D) reveals a consistent dominant time period of ~3.5 minutes across U2OS, C2C12, and HEK-KD cells. The inference about negative feedback loops (C137) is reasonable based on the pulsatile behavior, though direct evidence for specific feedback mechanisms is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Membrane motility is reduced in regions where Fyn is more active. Analysis suggests that spatially-localized pulsatile activation may cause transient but limited stabilization of signaling clusters, and that Fyn activity may be correlated with a 'poised' membrane state and formation of specific integrin-FAK dependent signaling clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C138 is supported by quantitative analysis (Figure 9) showing inverse correlation between FRET and membrane motility (R\u00b2=0.8509). However, claims C139 and C140 are largely speculative interpretations. While the correlation is clear, the mechanistic explanations about 'poised' membrane states and signaling cluster stabilization require additional experimental validation. The data show correlation but do not establish causation or mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C53",
+      "C54",
+      "C142"
+    ],
+    "result": "FynSensor imaging uncovers spatially organized, sensitized signaling clusters and reveals direct crosstalk between integrin and growth-factor signaling. Fyn activity profiles provide a direct readout of highly localized signaling crosstalk between distinct receptor classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C14, C53, C54, C142 are supported by the combined data from spatial localization (Figure 5), FAK inhibition (Figure 5C), and PDGF stimulation experiments (Figure 8). The demonstration that FAK inhibition abolishes PDGF response (Figure 8C) provides strong evidence for functional crosstalk. The spatial organization of signaling clusters is well-documented through quantitative imaging analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C55",
+      "C128",
+      "C141"
+    ],
+    "result": "Compartmentalized Src-kinase activity may drive cell fate. Spatially compartmentalized activation of key signaling proteins may lead to efficient signal integration and precise control of cell physiology. Context-dependent and spatio-temporally regulated Fyn activity may provide a new perspective on understanding Fyn's roles in regulating diverse cellular functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15, C55, C128, C141 are speculative conclusions about the functional significance of the observed activity patterns. While the spatial and temporal patterns of Fyn activity are well-documented, the direct connection to cell fate determination and the mechanistic basis for how compartmentalized activity drives specific outcomes are not experimentally demonstrated. These claims represent reasonable hypotheses based on the data but require additional functional experiments to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "FynSensor enables direct visualization of active Fyn in live cells, revealing Fyn activation to be spatially compartmentalized, polarized and pulsatile. This is the first reported visualization of activated Fyn in live cells, as suitable antibodies for detecting active Fyn are not currently available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by the comprehensive imaging data throughout the manuscript. The claim of being the first visualization (C51) is reasonable given the stated lack of suitable antibodies (C52) and the absence of prior reports of Fyn-specific activity sensors with this level of spatial and temporal resolution. The biosensor clearly enables visualization of Fyn activity patterns that were previously inaccessible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The results provide a framework for systematic development of intracellular biosensors for specific Src-family and other kinases in general.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by the comprehensive demonstration of the approach: combinatorial library screening for conformation-specific binders, structural characterization of specificity determinants, and validation of a functional FRET biosensor. The identification of specific residues (e.g., D99) that confer specificity provides a roadmap for targeting other SFKs. The generalizability is reasonable given the success with Fyn.",
+    "result_type": "MINOR"
+  }
+]

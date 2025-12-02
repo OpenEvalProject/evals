@@ -1,0 +1,1687 @@
+{
+  "submission": {
+    "id": "e4a7de76-5510-4dad-8613-fce84e0b565b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:06:17.638359Z",
+    "updated_at": "2025-12-02T21:06:17.638359Z"
+  },
+  "content": [
+    {
+      "id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "submission_id": "e4a7de76-5510-4dad-8613-fce84e0b565b",
+      "content_type": "manuscript",
+      "content_text": "# Rapid computations of spectrotemporal prediction error support perception of degraded speech\n\n## Authors\n\n- Ediz Sohoglu<sup>1</sup> ([ORCID: 0000-0002-0755-6445](https://orcid.org/0000-0002-0755-6445)) \u2020\n- Matthew H Davis<sup>2</sup> ([ORCID: 0000-0003-2239-0778](https://orcid.org/0000-0003-2239-0778))\n\n### Affiliations\n\n1. School of Psychology, University of Sussex Brighton United Kingdom\n2. MRC Cognition and Brain Sciences Unit Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman speech perception can be described as Bayesian perceptual inference but how are these Bayesian computations instantiated neurally? We used magnetoencephalographic recordings of brain responses to degraded spoken words and experimentally manipulated signal quality and prior knowledge. We first demonstrate that spectrotemporal modulations in speech are more strongly represented in neural responses than alternative speech representations (e.g. spectrogram or articulatory features). Critically, we found an interaction between speech signal quality and expectations from prior written text on the quality of neural representations; increased signal quality enhanced neural representations of speech that mismatched with prior expectations, but led to greater suppression of speech that matched prior expectations. This interaction is a unique neural signature of prediction error computations and is apparent in neural responses within 100 ms of speech input. Our findings contribute to the detailed specification of a computational model of speech perception based on predictive coding frameworks.\n\n## Introduction\n\nAlthough we understand spoken language rapidly and automatically, speech is an inherently ambiguous acoustic signal, compatible with multiple interpretations. Such ambiguities are evident even for clearly spoken speech: A /t/ consonant will sometimes be confused with /p/, as these are both unvoiced stops with similar acoustic characteristics (Warner et al., 2014). In real-world environments, where the acoustic signal is degraded or heard in the presence of noise or competing speakers, additional uncertainty arises and speech comprehension is further challenged (Mattys et al., 2012; Peelle, 2018).\n\nGiven the uncertainty of the speech signal, listeners must exploit prior knowledge or expectations to constrain perception. For example, ambiguities in perceiving individual speech sounds are more readily resolved if those sounds are heard in the context of a word (Ganong, 1980; Rogers and Davis, 2017). Following probability theory, the optimal strategy for combining prior knowledge with sensory signals is by applying Bayes theorem to compute the posterior probabilities of different interpretations of the input. Indeed, it has been suggested that spoken word recognition is fundamentally a process of Bayesian inference (Norris and McQueen, 2008). This\u00a0work aims to establish how these Bayesian computations might be instantiated neurally.\n\nThere are at least two representational schemes by which the brain could implement Bayesian inference (depicted in Figure 1C; see Aitchison and Lengyel, 2017). One possibility is that neural representations of sensory signals are enhanced or \u2018sharpened\u2019 by prior knowledge (Murray et al., 2004; Friston, 2005; Blank and Davis, 2016; de Lange et al., 2018). Under a sharpening scheme, neural responses directly encode posterior probabilities and hence representations of speech sounds are enhanced in the same way as perceptual outcomes are enhanced by prior knowledge (McClelland and Elman, 1986; McClelland et al., 2014). Alternatively, neural representations of expected speech sounds are subtracted from bottom-up signals, such that only the unexpected parts (i.e. \u2018prediction error\u2019) are passed up the cortical hierarchy to update higher-level representations (Rao and Ballard, 1999). Under this latter representational scheme, higher-level neural representations come to encode posterior probabilities (as required by Bayesian inference) but this is achieved by an intermediate process in which prediction errors are computed (Aitchison and Lengyel, 2017). In many models, both representational schemes are utilized, in separate neural populations (cf. predictive coding, Rao and Ballard, 1999; Spratling, 2008; Bastos et al., 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58077/elife-58077-fig1-v1.jpg)\n\n**Figure 1.:** (A) On each trial, listeners heard and judged the clarity of a degraded spoken word. Listeners\u2019 prior knowledge of speech content was manipulated by presenting matching (\u2018clay\u2019) or mismatching (\u2018fast\u2019) text before spoken words presented with varying levels of sensory detail (3/6/12-channel vocoded), panel reproduced from B, Sohoglu and Davis, 2016. (B) Ratings of speech clarity were enhanced not only by increasing sensory detail but also by prior knowledge from matching text (graph reproduced from Figure 2A, Sohoglu and Davis, 2016). Error bars represent the\u00a0standard error of the mean after removing between-subject variance, suitable for repeated-measures comparisons (Loftus and Masson, 1994). (C) Schematic illustrations of two representational schemes by which prior knowledge and speech input are combined (for details, see Materials\u00a0and\u00a0methods section). For illustrative purposes, we depict degraded speech as visually degraded text. Under a sharpening scheme (left panels), neural representations of degraded sensory signals (bottom) are enhanced by matching prior knowledge (top) in the same way as perceptual outcomes are enhanced by prior knowledge. Under a prediction error scheme (right panels), neural representations of expected speech sounds are subtracted from sensory signals. These two schemes make different predictions for experiments that assess the content of neural representations when sensory detail and prior knowledge of speech are manipulated. (D) Theoretical predictions for sharpened signal (left) and prediction error (right) models. In a sharpened signal model, representations of the heard spoken word (e.g. \u2018clay\u2019; expressed as the squared correlation with a clear [noise-free] \u2018clay\u2019) are most accurately encoded in neural responses when increasing speech sensory detail and matching prior knowledge combine to enhance perception. Conversely, for models that represent prediction error, an interaction between sensory detail and prior knowledge is observed. For speech that mismatches with prior knowledge, increasing sensory detail results in better representation of the heard word \u2018clay\u2019 because bottom-up input remains unexplained. Conversely, for speech that matches prior knowledge, increased sensory detail results in worse encoding of \u2018clay\u2019 because bottom-up input is explained away. Note that while the overall magnitude of prediction error is always the\u00a0smallest when expectations match with speech input (see Figure 1\u2014figure supplement 1), the prediction error representation of matching \u2018clay\u2019 is enhanced for low-clarity speech and diminished for high-clarity speech. For explanation, see the\u00a0Discussion section.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58077/elife-58077-fig1-figsupp1-v1.jpg)\n\nA range of experimental evidence has been used to distinguish sharpened and prediction error representations. An often observed finding is that matching prior knowledge reduces the amplitude of evoked neural responses (Ulanovsky et al., 2003; Grill-Spector et al., 2006; Rabovsky et al., 2018). This observation is commonly attributed to prediction errors since expected stimuli are relatively predictable and therefore should evoke reduced prediction error. However, reduced activity is equally compatible with sharpened responses because, under this representational scheme, neuronal activity encoding competing features (i.e. \u2018noise\u2019) is suppressed (see Figure 1C; Murray et al., 2004; Friston, 2005; Blank and Davis, 2016; Aitchison and Lengyel, 2017; de Lange et al., 2018).\n\nOne way to adjudicate between representations is by manipulating signal quality alongside prior knowledge and measuring the consequences for the pattern (rather than only the mean) of neural responses. Computational simulations reported by Blank and Davis, 2016 demonstrate a unique hallmark of prediction errors which is that neural representations of sensory stimuli show an interaction between signal quality and prior knowledge (see Figure 1D). This interaction arises because sensory signals that match strong prior expectations are explained away more effectively as signal quality increases and hence neural representations are suppressed even as perceptual outcomes improve. Whereas for sensory signals that follow uninformative prior expectations, increased signal quality leads to a corresponding increase in sensory information that remains unexplained (see Figure 1C). This pattern \u2013 opposite effects of signal quality on neural representations depending on whether prior knowledge is informative or uninformative \u2013 highlights an important implication of neural activity that represents prediction errors. Rather than directly signaling perceptual outcomes, these neural signals in the\u00a0sensory cortex serve the intermediary function of updating higher-level (phonological, lexical, or semantic) representations to generate a perceptual interpretation (the posterior, in Bayesian terms) from a prediction (prior). It is these updated perceptual interpretations, and not prediction errors, that should correlate most closely with perceived clarity (Sohoglu and Davis, 2016).\n\nBy contrast, in computational simulations implementing a sharpening scheme, representational patterns are similarly enhanced by increased signal quality and matching prior knowledge (see Figure 1D; Murray et al., 2004; Friston, 2005; Blank and Davis, 2016; Aitchison and Lengyel, 2017; de Lange et al., 2018). Using prior written text to manipulate listeners\u2019 prior knowledge of degraded spoken words, Blank and Davis, 2016 showed that multivoxel representations of speech in the superior temporal gyrus (as measured by fMRI) showed an interaction between signal quality and prior expectations, consistent with prediction error computations. This is despite the observation that the\u00a0mean multivoxel responses to speech were always reduced by matching expectations, no matter the level of sensory detail.\n\nAlthough the study of Blank and Davis, 2016 provides evidence in support of prediction errors, key questions remain. First, it remains unclear at which levels of representation prediction errors are computed. Predictive coding models that utilize prediction errors are hierarchically organized such that predictions are signaled by top-down connections and prediction errors by bottom-up connections. Therefore, in principle, prediction errors will be computed at multiple levels of representation. Previous studies using similar paradigms have suggested either a higher-level phonetic (Di Liberto et al., 2018a) or a lower-level acoustic locus of prediction error representations (Holdgraf et al., 2016). Second, due to the sluggishness of the BOLD signal, the timecourse over which prediction errors are computed is unknown. Therefore, it is unclear whether prediction errors are formed only at late latencies following re-entrant feedback or more rapidly during the initial feedforward sweep of cortical processing (Sohoglu and Davis, 2016; Kok et al., 2017; de Lange et al., 2018; Di Liberto et al., 2018a).\n\nIn this\u00a0study, we reanalyzed MEG recordings of neural activity from a previous experiment in which we simultaneously manipulated signal quality and listeners\u2019 prior knowledge during speech perception (Sohoglu and Davis, 2016). Listeners heard degraded (noise-vocoded) spoken words with varying amounts of sensory detail and hence at different levels of signal quality. Before each spoken word, listeners\u2019 read matching or mismatching text and therefore had accurate or inaccurate prior knowledge of upcoming speech content (Figure 1A). Our previously reported analyses focused on the mean amplitude of evoked responses, which as explained above, cannot adjudicate between sharpened and prediction error representations. We, therefore, used linear regression to test which of several candidate speech features are encoded in MEG responses (Ding and Simon, 2012; Pasley et al., 2012; Crosse et al., 2016; Holdgraf et al., 2017) and further asked how those feature representations are modulated by signal quality and prior knowledge. Following Blank and Davis, 2016, the two-way interaction between sensory detail and prior knowledge is diagnostic of prediction errors (see Figure 1C and D). Because of the temporal resolution of MEG, if we observe such an interaction we can also determine the latency at which it occurs.\n\n## Results\n\n### Behavior\n\nDuring the MEG recordings, listeners completed a clarity rating task in which they judged the subjective clarity of each degraded (noise-vocoded) spoken word (Figure 1A and B). Ratings of speech clarity were enhanced both when sensory detail increased (F (2,40) = 295, $\\mu_{p}^{2}$ =\u00a0.937, p <.001) and when listeners had prior knowledge from matching written text (F (1,20) = 93.2, $\\mu_{p}^{2}$ =\u00a0.823, p <.001). These behavioral results have previously been reported (Sohoglu and Davis, 2016) but we include them here to facilitate interpretation of the present MEG analyses.\n\n### Encoding analysis: Stimulus feature space selection\n\nWe used ridge regression to predict the MEG data from the stimulus features. A model that accurately predicts the MEG data would indicate that the component features in the model are well represented in neural responses. Four feature spaces were obtained from the original clear versions of the spoken stimuli (i.e. before noise-vocoding; see Figure 2 and Materials\u00a0and\u00a0methods for a full description). Constructing the feature spaces from clear speech enabled us to more easily compare model accuracies for speech stimuli presented under different degradation levels: any model accuracy differences as a function of vocoder channels should be attributed to neural encoding rather than inherent acoustic differences in the stimulus. The first two feature spaces (envelope and spectrogram) were simple acoustic representations that captured time-varying sound energy. These were followed by more complex feature spaces with greater abstraction from the sound waveform: one acoustic (spectrotemporal modulations) and one linguistic (phonetic features). In the first stage of our analysis, we examined which of these four feature spaces best predicted the MEG data.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58077/elife-58077-fig2-v1.jpg)\n\n**Figure 2.:** (A) shown as an audio waveform for the original clear recording (i.e.\u00a0before vocoding). (B) Envelope: broadband envelope derived from summing the envelopes across all spectral channels of a 24-channel noise-vocoder. (C) Spectrogram: derived from the envelope in each spectral channel of a 24-channel noise-vocoder. (D) Spectrotemporal modulations: derived from the spectral and temporal decomposition of a spectrogram into 25 spectrotemporal modulation\u00a0channels, illustrated at regular temporal intervals through the spoken word. (E) Phonetic features: derived from segment-based representations of spoken words.\n\nWe averaged model accuracies over conditions and over the 20 sensors with the highest model accuracies (computed separately for each feature space, hemisphere, and participant; shown as black bars in Figure 3A). There was a significant main effect of feature space on model accuracies (F (3,60) = 51.5, $\\mu_{p}^{2}$ =\u00a0.720, p <.001), which did not interact with hemisphere (F (3,60) = 1.56, $\\mu_{p}^{2}$ =\u00a0.072, p =\u00a0.223). Post-hoc t-tests revealed that the spectrotemporal modulation feature space best predicted the MEG data (p-values shown in Figure 3A). Sensor selections (i.e. those sensors with the highest model accuracies; shown in Figure 3B) were similarly distributed over temporal and frontal sites for all feature spaces, consistent with bilateral neural generators in the\u00a0superior temporal cortex.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58077/elife-58077-fig3-v1.jpg)\n\n**Figure 3.:** (A) Mean model accuracies for the four feature spaces (black bars) and the two feature space combinations (white bars). Error bars represent the\u00a0standard error of the mean after removing between-subject variance, suitable for repeated-measures comparisons (Loftus and Masson, 1994). Braces indicate the\u00a0significance of paired t-tests ***p<0.001 (B) Topographic distribution of MEG gradiometer sensors over which model accuracies were averaged. In each hemisphere of each participant, we selected 20 sensors with the highest model accuracies. The topographies show the percentage of participants for which each sensor was selected, consistent with neural sources in the\u00a0superior temporal cortex.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58077/elife-58077-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Performance gain when adding feature spaces to the spectrogram. Green asterisks indicate p-values from one-sample t-tests comparing each feature space combination against the spectrogram alone. Black asterisks and braces indicate p-values from paired t-tests. Error bars represent the\u00a0standard error of the mean. (B) Same as panel A but when adding feature spaces to spectrotemporal modulations.\n\nWe additionally tested more complex combinations of feature spaces that previous work (Daube et al., 2019; Di Liberto et al., 2015) has shown to be good models of neural responses (shown as white bars in Figure 3A). We were particularly interested in how the model performance of the spectrotemporal modulation feature space compared with these more complex feature spaces. Despite having lower dimensionality (25 features), the spectrotemporal modulation feature space remained the model that best predicted neural responses, outperforming Spectrogram+Phonetic features (24+13 = 37 features; F (1,20) = 16.5, $\\mu_{p}^{2}$ =\u00a0.453, p =\u00a0.001) and Spectrogram+Spectral derivative (24+24 = 48 features; F (1,20) = 98.2, $\\mu_{p}^{2}$ =\u00a0.831, p <.001). No effects involving hemisphere were significant (all p\u2019s >.125).\n\nNote that because different feature spaces tend to be correlated with each other, combining different feature spaces does not result in additive increases in model accuracy (Norman-Haignere and McDermott, 2018; Kriegeskorte and Douglas, 2019). For example, the model performance for Spectrogram+Phonetic features does not equal the sum of the model accuracies for the individual Spectrogram and Phonetic features models (Figure 3A). To more clearly identify the unique contributions of the feature spaces, we tested additional combinations of feature spaces and conducted more systematic comparisons.\n\nWe first sought to replicate previous findings by testing whether the addition of Phonetic features or the Spectral derivative could improve model performance beyond the Spectrogram alone (Di Liberto et al., 2015; Daube et al., 2019). Results and p-values are shown in Figure 3\u2014figure supplement 1A, expressed as performance increases over the spectrogram alone. We replicated previous findings in that both the Spectrogram+Phonetic features model and the Spectrogram+Spectral derivative model outperformed the Spectrogram feature space. We also tested whether adding the spectrotemporal modulation model to the spectrogram feature space could improve performance. This resulted in the biggest performance gain, consistent with our earlier findings indicating that spectrotemporal modulations was the feature space that individually predicted MEG responses most accurately.\n\nNext,\u00a0we\u00a0tested whether combining the spectrotemporal modulation model with other feature spaces could improve model accuracy (shown in Figure 3\u2014figure supplement 1B). We found that phonetic features, the spectral derivative and spectrogram all resulted in performance gains beyond spectrotemporal modulations alone. Of these three feature spaces, adding phonetic features resulted in the largest increase in model accuracy. This indicates that although spectrotemporal modulations can explain the largest MEG variance of any feature model individually, other feature spaces (phonetic features in particular) are also represented in MEG responses.\n\nBecause the performance of a spectrogram feature space can be improved by including a compressive non-linearity (Daube et al., 2019), as found in the auditory periphery, we also repeated the above analysis after raising the spectrogram values to the power of 0.3. While this change increased model accuracies for the spectrogram and spectral derivative feature spaces, the overall pattern of results remained the same.\n\n### Acoustic analysis: Stimulus modulation content and effect of vocoding\n\nOur analysis above suggests that a feature space comprised of spectrotemporal modulations is most accurately represented in neural responses. One of the motivations for testing this feature space stems from the noise-vocoding procedure used to degrade our speech stimuli, which removes narrowband spectral modulations while leaving slow temporal modulations intact (Shannon et al., 1995; Roberts et al., 2011). To investigate the acoustic impact of noise-vocoding on our stimuli, we next characterized the spectrotemporal modulations that convey speech content in our stimulus set and how those modulations are affected by noise-vocoding with a wide range of spectral channels, from 1 to 24 channels. As shown in Figure 4A, modulations showed a lowpass profile and were strongest in magnitude for low spectrotemporal frequencies. This is consistent with previous work (Voss and Clarke, 1975; Singh and Theunissen, 2003) demonstrating that modulation power of natural sounds decays with increasing frequency following a 1/f relationship (where f is the frequency). Within this lowpass region, different spectrotemporal modulations relate to distinct types of speech sound (Elliott and Theunissen, 2009). For example, fast temporal and broad spectral modulations reflect transient sounds such as stop consonant release bursts whereas slow temporal and narrowband spectral modulations reflect sounds with a sustained spectral structure such as vowels. More intermediate modulations correspond to formant transitions that cue consonant place and manner of articulation (Liberman et al., 1967).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58077/elife-58077-fig4-v1.jpg)\n\n**Figure 4.:** (A) The magnitude of different spectrotemporal modulations for speech vocoded with different numbers of channels and clear speech (for comparison only; clear speech was not presented to listeners in the experiment). (B) Mean between-word Euclidean distance for different spectrotemporal modulations in speech vocoded with different numbers of channels. (C) Paired t-test showing significant differences in spectrotemporal modulation magnitude for comparison of 958 spoken words vocoded with 24 channels versus one channel (p<0.05 FDR corrected for multiple comparisons across spectrotemporal modulations). (D) Mean difference of between-word Euclidean distances for different spectrotemporal modulations for 24 versus 1 channel vocoded speech.\n\nOver items, increasing the number of vocoder channels resulted in significantly higher signal magnitude specific to intermediate spectral and temporal modulations (1\u20132 cycles per octave and 2\u20134 Hz, all effects shown are FDR corrected for multiple comparisons across spectrotemporal modulations; see Figure 4C). Thus, while low-frequency modulations dominate the speech signal overall (irrespective of the number of vocoder channels), it is the intermediate spectrotemporal modulations that are most strongly affected by noise-vocoding. These intermediate spectrotemporal modulations are known to support speech intelligibility (Elliott and Theunissen, 2009; Venezia et al., 2016; Flinker et al., 2019), consistent with the strong impact of the number of vocoder channels on word report accuracy (e.g. Shannon et al., 1995; Davis and Johnsrude, 2003; Scott et al., 2006; Obleser et al., 2008) and subjective clarity (e.g. Obleser et al., 2008; Sohoglu et al., 2014). The opposite effect (i.e. decreased signal magnitude with an increasing number of vocoder channels) was observed for broadband spectral modulations (0.5 cycles/octave) across all temporal modulation rates (reflecting the increase in envelope co-modulation when fewer spectral channels are available) and for fast temporal modulations (16 Hz) and narrowband (>2 cycles/octave) spectral modulations (reflecting stochastic fluctuations in the noise carrier; Stone et al., 2008).\n\nWe also asked which spectrotemporal modulations were most informative for discriminating between different words. For each spectrotemporal modulation bin, we computed the Euclidean distances between the time\u00a0series of all the words in our stimulus set and averaged the resulting distances (see Figure 4B). Between-word distances resembled the magnitude-based analysis, with the\u00a0greatest distance for low spectrotemporal frequencies. Between-word distances also showed a similar effect of increasing the number of vocoder channels (see Figure 4D).\n\n### Encoding analysis: Condition effects\n\nNext,\u00a0we\u00a0determined between-condition differences in the ability of the spectrotemporal modulation feature space to predict MEG responses. Any such differences would indicate that the neural representation of spectrotemporal modulations is modulated by prior knowledge or speech sensory detail. Model accuracies for different conditions are shown in Figure 5A. There was a significant interaction between prior knowledge and speech sensory detail (F (2,40) = 5.41, $\\mu_{p}^{2}$ =\u00a0.213, p =\u00a0.01), which marginally interacted with hemisphere (F (2,40) = 3.57, $\\mu_{p}^{2}$ =\u00a0.151, p =\u00a0.051). Follow-up tests in the\u00a0left hemisphere sensors again showed a statistical interaction between sensory detail and prior knowledge (F (2,40) = 7.66, $\\mu_{p}^{2}$ =\u00a0.277, p =\u00a0.002). For speech that Mismatched with prior knowledge, model accuracies increased with increasing speech sensory detail (F (2,40) = 4.49, $\\mu_{p}^{2}$ =\u00a0.183, p =\u00a0.021). In the Matching condition, however, model accuracies decreased with increasing sensory detail (F (2,40) = 3.70, $\\mu_{p}^{2}$ =\u00a0.156, p =\u00a0.037). The statistical interaction between sensory detail and prior knowledge can also be characterized by comparing model accuracies for Matching versus Mismatching conditions at each level of sensory detail. While model accuracies were greater for Matching versus Mismatching conditions for low clarity 3 channel speech (t (20) = 2.201, dz =\u00a0.480, p =\u00a0.040), the opposite was true for high clarity 12 channel speech (t (20) = 2.384, dz =\u00a0.520, p =\u00a0.027). Model accuracies did not significantly differ between Matching and Mismatching conditions for 6 channel speech with intermediate clarity (t (20) = 1.085, dz =\u00a0.237, p =\u00a0.291). This interaction is consistent with a prediction error scheme and inconsistent with sharpened representations (compare Figure 5A with Figure 1D). No significant differences were observed in the right hemisphere.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58077/elife-58077-fig5-v1.jpg)\n\n**Figure 5.:** (A) Mean model accuracies for lags between 0 and 250 ms as a function of sensory detail (3/6/12 channel vocoded words), and prior knowledge (speech after mismatching/matching text) in\u00a0the left and right hemisphere sensors. Error bars represent the\u00a0standard error of the mean after removing between-subject variance, suitable for repeated-measures comparisons (Loftus and Masson, 1994). (B) Root Mean Square (RMS) amplitude across all left hemisphere sensors for the Temporal Response Functions (TRFs) averaged over spectrotemporal modulations, conditions, and participants. The gray box at the bottom of the graph indicates the lags used in computing the model accuracy data in panel A.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58077/elife-58077-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Histograms of model accuracies in the\u00a0left hemisphere sensors when fully permuting the feature representation of each spoken word. Histograms show the number of permutations a model accuracy was observed. (B) Model accuracies when z-scoring the observed model accuracies in Figure 5A with respect to the f-shuffled distributions in A. (C) Same as panel A but when permuting the feature representations across trials (i.e. shuffling the words in our stimulus set). Broken vertical lines show the mean observed model accuracies (in the\u00a0left hemisphere sensors) from Figure 5A. (D) Model accuracies when z-scoring with respect to the word-shuffled distributions in C.\n\nWe also conducted a control analysis in which we compared the observed model accuracies to empirical null distributions. This allowed us to test whether neural responses encode spectrotemporal modulations even in the Mismatching three channel and Matching 12 channel conditions, that\u00a0is, when model accuracies were lowest. The null distributions were created by fully permuted each spoken word\u2019s feature representation (spectrotemporal modulation channels and time-bins) and repeating this for each condition and 100 permutations. As can be seen in Figure 5\u2014figure supplement 1A (only the\u00a0left hemisphere sensors shown), this results in near-zero null distributions. Accordingly, observed model accuracies in all six conditions were significantly above chance as defined by the null distributions (all p\u2019s\u00a0<\u00a00.01). Hence, even in the Mismatching three channel and Matching 12 channel conditions, neural responses encode spectrotemporal modulations in speech.\n\nTo test whether the interaction between prior knowledge and sensory detail in the observed data remains after accounting for the empirical null distributions, we z-scored the observed data with respect to the feature-shuffled distributions (shown in Figure 5\u2014figure supplement 1B). As expected, given the near-zero model accuracies in the null distributions, the z-scored data show essentially the same pattern of results as seen previously in Figure 5A (prior knowledge by sensory detail interaction in the\u00a0left hemisphere: F (2,40) = 5.92, $\\mu_{p}^{2}$ =\u00a0.228, p =\u00a0.006).\n\nIn a further control analysis, we created additional null distributions by randomly permuting the feature representations across trials (i.e. shuffling the words in our stimulus set while keeping the component features of the words intact). The resulting null distributions for the\u00a0left hemisphere sensors are shown in Figure 5\u2014figure supplement 1C. Once again, observed model accuracies in all six conditions (shown as broken lines in the figure) were significantly above chance as defined by the null distributions (all p\u2019s\u00a0<\u00a00.01). This confirms that neural responses encode the specific acoustic form of the heard spoken word. To our surprise, however, a prior knowledge by sensory detail interaction is also apparent in the null distributions (see Figure 5\u2014figure supplement 1C). This suggests that a spectrotemporal representation of a generic or randomly chosen word can also predict MEG responses with some degree of accuracy. This is possible because the words used in the experiment have homogeneous acoustic properties, for\u00a0example, they are all monosyllabic words spoken by the same individual. All words therefore share, to some extent, a common spectrotemporal profile.\n\nAs before, we z-scored the observed data with respect to the empirical null distributions (now from word shuffling). As shown in Figure 5\u2014figure supplement 1D, an interaction is still apparent in the z-scored data. Confirming this, repeated measures ANOVA showed a significant interaction between prior knowledge and sensory detail (F (2,40) = 3.41, $\\mu_{p}^{2}$ =\u00a0.146, p =\u00a0.048). Although unlike the original interaction in Figure 5A, this interaction was equally strong in both hemispheres (F (2,40) =\u00a0.324, $\\mu_{p}^{2}$ =\u00a0.016, p =\u00a0.683). In addition, simple effects of speech sensory detail were not significant (Mismatching: F (2,40) = 1.67, $\\mu_{p}^{2}$ =\u00a0.077, p =\u00a0.202; Matching: F (2,40) = 1.69, $\\mu_{p}^{2}$ =\u00a0.078, p =\u00a0.199) although there were marginal changes from 3 to 6 channels for both Mismatching (F (1,20) = 3.33, $\\mu_{p}^{2}$ =\u00a0.143, p =\u00a0.083) and Matching (F (1,20) = 3.32, $\\mu_{p}^{2}$ =\u00a0.142, p =\u00a0.083) speech.\n\nTaken together, the above control analyses confirm that encoding of an acoustic representation of a heard word \u2013 either for the specific word spoken, or from generic acoustic elements shared with other monosyllabic words from the same speaker \u2013 shows an interaction between prior knowledge and sensory detail that is more consistent with a prediction error scheme. We will return to this point in the Discussion.\n\nOur encoding analysis integrates past information in the stimulus (i.e. over multiple lags from 0 to 250 ms) to predict the neural response. Thus, the analysis of model accuracies above does not indicate when encoding occurs within this 250 ms period. One way to determine this is to examine the weights of the encoding model linking stimulus variation to neural responses, that\u00a0is, temporal response functions (TRFs). The TRFs show two peaks at 87.5 and 150 ms (shown in Figure 5B). This indicates that variations in spectrotemporal modulations are linked to the largest changes in MEG responses 87.5 and 150 ms later. These findings are consistent with previous work showing multiple early components in response to ongoing acoustic features in speech that resemble the prominent P1, N1 and P2 components seen when timelocking to speech onset (e.g. Lalor and Foxe, 2010; Ding and Simon, 2012; Di Liberto et al., 2015). Thus, analysis of the TRFs confirms that encoding of spectrotemporal modulations is associated with short-latency neural responses at a relatively early hierarchical stage of speech processing. In a later section (see \u2018Decoding analysis\u2019 below), we address when condition differences emerge.\n\n### Decoding analysis\n\nTo link MEG responses with specific spectrotemporal modulations, we used linear regression for data prediction in the opposite direction: from MEG responses to speech spectrotemporal modulations (i.e. decoding analysis). As shown in Figure 6A, intermediate temporal modulations (2\u20134 Hz) were best decoded from MEG responses. This observation is consistent with previous neurophysiological (Ahissar et al., 2001; Luo and Poeppel, 2007; Peelle et al., 2013; Ding and Simon, 2014; Di Liberto et al., 2015; Park et al., 2015; Obleser and Kayser, 2019) and fMRI (Santoro et al., 2017) data showing that intermediate temporal modulations are well-represented in auditory cortex. These intermediate temporal modulations are also most impacted by noise-vocoding (see Figure 4C and D) and support speech intelligibility (Elliott and Theunissen, 2009; Venezia et al., 2016).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58077/elife-58077-fig6-v1.jpg)\n\n**Figure 6.:** (A) The grid shows model accuracies for specific spectrotemporal modulations averaged over conditions. The\u00a0left bar graph depicts model accuracy for each spectral modulation frequency, averaged over temporal modulations. Bottom bar graph depicts model accuracy for each temporal modulation frequency, averaged over spectral modulations. Braces indicate the\u00a0significance of paired t-tests ***p<0.001 (B) Effect size (model accuracy differences, r) for the interaction contrast: 12\u20133 channels (Mismatch) \u2013 12\u20133 channels (Match). The effect size display has been thresholded so as to only show cells in which the sensory detail by prior knowledge interaction is statistically significant at p<0.05 FDR corrected for multiple comparisons across spectrotemporal modulations. (C) Effect size (model accuracy differences, r) for comparisons between 12 and 3 channels, computed separately for Mismatch and Match conditions. Red shows greater model accuracy for 12 channel than for three channel speech (observed for speech that Mismatches with written text). Blue shows lower model accuracy for 12 channel than for three channel speech (observed for speech that matches written text). ch\u00a0=\u00a0channels. (D) Timecourse of decoding accuracy (single-lag analysis). Black trace shows model accuracy differences (r) attributable to the interaction contrast 12\u20133 channels (Mismatch) \u2013 12\u20133 channels (Match). Red and blue traces show the contrast 12\u20133 channels separately for Mismatch and Match conditions, respectively. Shading around each trace represents the\u00a0standard error of the mean. Horizontal bars at the bottom indicate significant lags for each contrast using the same color scheme as the traces (dark sections indicate p<0.05 FDR corrected across lags and light sections indicate p<0.05 uncorrected). Data have been averaged over the spectrotemporal modulations showing a significant interaction in panel B, indicated also as an inset (top-right).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58077/elife-58077-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Magenta and green traces show model accuracy differences (r) attributable to\u00a0the contrast Match-Mismatch separately for 3 and 12 channel conditions, respectively. For comparison, we also display (as the black trace) the interaction contrast 12\u20133 channels (Mismatch) \u2013 12\u20133 channels (Match), same as shown in Figure 6. Shading around each trace represents the\u00a0standard error of the mean. Horizontal bars at the bottom indicate significant lags for each contrast using the same color scheme as the traces (dark sections indicate p<0.05 FDR corrected across lags and light sections indicate p<0.05 uncorrected). Data have been averaged over the spectrotemporal modulations showing a significant interaction in Figure 6B, indicated also as an inset (top-right).\n\nHaving previously identified a significant interaction between prior knowledge and sensory detail in our encoding analysis, we next conducted a targeted t-test on decoding accuracies using the interaction contrast: 12\u20133 channels (Mismatch) \u2013 12\u20133 channels (Match). This allowed us to identify which spectrotemporal modulations show evidence of the interaction between prior knowledge and sensory detail. As shown in Figure 6B, this interaction was observed at intermediate (2\u20134 Hz) temporal modulations (FDR corrected across spectrotemporal modulations). Visualization of the difference between 12 and 3 channels for Mismatch and Match conditions separately confirmed that this interaction was of the same form observed previously (i.e. increasing sensory detail led to opposite effects on decoding accuracy when prior knowledge mismatched versus matched with speech). Thus, intermediate temporal modulations are well represented in MEG responses and it is these representations that are affected by our manipulations of sensory and prior knowledge.\n\nOur analysis up to this point does not reveal the timecourse of the neural\u00a0interaction between sensory detail and prior knowledge. While the weights of the spectrotemporal encoding model implicate early neural responses (shown in Figure 5B), this evidence is indirect as the weights were averaged over conditions. To examine the timecourse of the critical interaction, we conducted a single-lag decoding analysis (O'Sullivan et al., 2015) in which we decoded spectrotemporal modulations from neural responses at each lag separately from \u221250 to 250 ms relative to speech input. For this analysis, we first averaged over the decoding accuracies in Figure 6B that previously showed the interaction when integrating over lags. As shown in Figure 6D, the interaction contrast 12\u20133 channels (Mismatch) \u2013 12\u20133 channels (Match) emerged rapidly, peaking at around 50 ms. The contrast of 12\u20133 channels separately for Mismatch and Match conditions again confirmed the form of the interaction (i.e. opposite effects of sensory detail on decoding accuracy in Mismatch and Match trials) although these effects were only significant at an uncorrected p<0.05 level. We also directly compared Match and Mismatch trials by computing the contrast Match \u2013 Mismatch for 3 channels and 12 channels separately (shown in Figure 6\u2014figure supplement 1). While we did not observe significant differences for three channel speech (even at an uncorrected p<0.05 level), for 12 channel speech decoding accuracy was lower in Match versus Mismatch trials from 25 to 40 ms and then again from 125 to 150 and 175\u2013200 ms (albeit at uncorrected p<0.05 level).\n\n## Discussion\n\nHere using linear regression and MEG responses to noise-vocoded words, we report four main findings. First, spectrotemporal modulation content in the acoustic signal is well represented in MEG responses, more so than alternative speech features (envelope, spectrogram, and phonetic features). Second, the information content of speech is well characterized by spectrotemporal modulations. Modulations at intermediate temporal (2\u20134 Hz) and spectral scales (1\u20132 cycles/octave) are critical for distinguishing between individual spoken words and these spectrotemporal modulations are affected by noise-vocoding manipulations that impact speech intelligibility. Third, signal quality and prior knowledge have an interactive influence on these modulation-based representations, peaking approximately 50 ms after speech input: when mismatching text precedes degraded speech, neural representations of spectrotemporal modulations are enhanced with increasing sensory detail whereas the opposite effect is observed when text matches speech. Fourth, this interaction is observed specifically for neural representations of intermediate spectrotemporal modulations that convey speech content. This result stands in marked contrast to what would be expected on the basis of a sharpening scheme in which both signal quality and prior knowledge enhance neural representations, just as they enhance perceptual clarity. An interactive influence of signal quality and prior knowledge is, however, fully consistent with prediction error representations in which neurons signal the difference between expected and heard speech (Blank and Davis, 2016).\n\n### Cortical responses encode spectrotemporal modulations in speech\n\nOur finding that MEG responses are driven by spectrotemporal modulations in speech adds to a growing body of evidence implicating spectrotemporal representations as an important component of the neural code by which the cortex represents speech and other sounds. Linguistically relevant features such as formant transitions and speaker fundamental frequency are clearly apparent in these modulations and their removal by filtering has marked consequences for speech intelligibility and speaker discrimination (Elliott and Theunissen, 2009; Flinker et al., 2019). In animal electrophysiology (Chi et al., 2005; Theunissen and Elie, 2014), neurons in auditory cortex are shown to be well-tuned to spectrotemporal features in the modulation domain. These findings complement human intracranial (Pasley et al., 2012; Hullett et al., 2016) and fMRI (Santoro et al., 2014; Santoro et al., 2017) studies demonstrating that the relationship between auditory stimuli and neural responses is best modelled using spectrotemporal modulations.\n\nAnalysis of the acoustic properties of noise-vocoded spoken words show that although low-frequency spectral and temporal modulations dominate the speech signal, only the intermediate modulations (2\u20134 Hz temporally; 1\u20132 cycles per octave spectrally) are degraded by noise-vocoding that severely impairs intelligibility (e.g. Shannon et al., 1995; Davis and Johnsrude, 2003; Scott et al., 2006; Obleser et al., 2008). These intermediate spectrotemporal modulations encode formant transitions that are an important cue to consonant place and manner of articulation (Liberman et al., 1967; Roberts et al., 2011). Notably, our decoding analysis shows that it was the intermediate temporal modulations (2\u20134 Hz) that were preferentially represented in MEG responses. Thus, rather than faithfully encoding the acoustic structure of speech by tracking low-frequency modulations, cortical responses are selectively tuned to acoustic properties (intermediate spectrotemporal modulations) that convey speech information.\n\nOur findings agree with recent work (Di Liberto et al., 2015; Daube et al., 2019) suggesting that cortical responses to speech (as measured with MEG) are not completely invariant to acoustic detail. While our analysis that combined different feature spaces also indicate contributions from acoustically invariant phonetic features (consistent with Di Liberto et al., 2015), the spectrotemporal modulation feature space best predicted MEG responses when considered individually. Despite the lack of full invariance, spectrotemporal modulations are nonetheless a higher-level representation of the acoustic signal than, for example, the spectrogram. Whereas a spectrogram-based representation would faithfully encode any pattern of spectrotemporal stimulation, a modulation-based representation would be selectively tuned to patterns that change at specific spectral scales or temporal rates. Such selectivity is a hallmark of neurons in higher-levels of the auditory system (Rauschecker and Scott, 2009). Our findings are thus consistent with the notion that superior temporal neurons, which are a major source of speech-evoked MEG responses (e.g. Bonte et al., 2006; Sohoglu et al., 2012; Brodbeck et al., 2018), lie at an intermediate stage of the speech processing hierarchy (e.g. Mesgarani et al., 2014; Evans and Davis, 2015; Yi et al., 2019). It should be noted however that in Daube et al., 2019, the best acoustic predictor of MEG responses was based on spectral onsets rather than spectrotemporal modulations. It may be that the use of single words in the current study reduced the importance of spectral onsets, which may be more salient in the syllabic transitions during connected speech as used by Daube et al., 2019.\n\nOur findings may also reflect methodological differences: the encoding/decoding methods employed here have typically been applied to neural recordings from\u00a0>60 min of listening to continuous \u2013 and clear \u2013 speech. By comparison, our stimulus set comprised single degraded words, generating fewer and possibly less varied neural responses, which may limit encoding/decoding accuracy for certain feature spaces. However, we think this is unlikely for two reasons. First, we could replicate several other previous findings from continuous speech studies, for\u00a0example, greater encoding accuracy for spectrogram versus envelope models (Di Liberto et al., 2015) and for the combined spectrogram + phonetic feature model versus spectrogram alone (Di Liberto et al., 2015; Daube et al., 2019). Second, our effect sizes are comparable to those reported in previous work (e.g. Di Liberto et al., 2015) and model comparison results highly reliable, with the spectrotemporal modulation model outperforming the other individual feature spaces in 17 out of 21 participants in the left hemisphere and 18 out of 21 participants in the right hemisphere. Thus, rather than reflecting methodological factors, we suggest that our findings might instead reflect differences in the acoustic, phonetic, and lexical properties of single degraded words and connected speech \u2013 including differences in speech rate, co-articulation, segmentation, and predictability. Future work is needed to examine whether and how these differences are reflected in neural representations.\n\n### Prediction error in speech representations\n\nGoing beyond other studies, however, our work further shows that neural representations of speech sounds reflect a combination of the acoustic properties of speech, and prior knowledge or expectations. Our experimental approach \u2013 combining manipulations of sensory detail and matching or mismatching written text cues \u2013 includes specific conditions from previous behavioral (Sohoglu et al., 2014) and neuroimaging (Sohoglu et al., 2012; Blank and Davis, 2016; Sohoglu and Davis, 2016; Blank et al., 2018) studies that were designed to distinguish different computations for speech perception. In particular, neural representations that show an interaction between sensory detail and prior knowledge provide unambiguous support for prediction error over sharpening coding schemes (Blank and Davis, 2016). This interaction has previously been demonstrated for multivoxel patterns as measured by fMRI (Blank and Davis, 2016). The current study goes beyond this previous fMRI work in establishing the latency at which prediction errors are computed. As prediction errors reflect the outcome of a comparison between top-down and bottom-up signals, it has been unclear whether such a computation occurs only at late latencies and plausibly results from re-entrant feedback connections that modulate late neural responses (Lamme and Roelfsema, 2000; Garrido et al., 2007). However, our decoding analysis suggests that the neural interaction between sensory detail and prior knowledge that we observe is already apparent within 100 ms of speech input. This suggests that prediction errors are computed during early feedforward sweeps of processing and are tightly linked to ongoing changes in speech input.\n\nOne puzzling finding from the current study is that the interaction between prior knowledge and sensory detail on neural representations is also present when randomly shuffling the spectrotemporal modulation features of different words. While an interaction is still present after controlling for contributions from the shuffled data \u2013 albeit only for speech with 3 to 6 channels of sensory detail \u2013 our findings suggest that between-condition differences in model accuracy are also linked to a generic spectrotemporal representation common to all the words in our study. However, it is unclear how differences in encoding accuracy between matching and mismatching conditions could result from a generic representation (since the same words appeared in both conditions). One possibility is that listeners can rapidly detect mismatch and use this to suppress or discard the representation of the written word in mismatch trials. That is, they switch from a high-precision (written text) prior, to a lower precision prior midway through the perception of a mismatching word (see Cope et al., 2017 for evidence consistent with flexible use of priors supported by frontal and motor speech areas). However, the timecourse of when speech can be decoded in the present study appears inconsistent with this explanation since the neural interaction is present already at early time lags. In this analysis, we focussed on neural responses that track the speech signal with shorter or longer delays. Future research to link neural processing with specific moments in the speech signal (e.g. comparing mismatch at word onset versus offset; Sohoglu et al., 2014; Blank et al., 2018) would be valuable and might suggest other ways of assessing when and how priors are dynamically updated during perception.\n\nPrevious electrophysiological work (Holdgraf et al., 2016; Di Liberto et al., 2018b) has also shown that matching prior knowledge, or expectation can affect neural responses to speech and representations of acoustic and phonetic features. However, these findings were observed under a fixed degradation level, close to our lowest-clarity, 3-channel condition (see also Di Liberto et al., 2018a). Thus, it is unclear whether the enhanced neural representations observed in these earlier studies reflect computations of sharpened signals or prediction errors \u2013 both types of representational scheme can accommodate the finding that prior knowledge enhances neural representations for low clarity speech (see Figure 1D). By manipulating degradation level alongside prior knowledge, we could test for the presence of interactive effects that distinguish neural representations of prediction errors from sharpened signals (Blank and Davis, 2016). This has potential implications for studies in other domains. For example, multivariate analysis of fMRI (Kok et al., 2012) and MEG (Kok et al., 2017) signals has shown that visual gratings with expected orientations are better decoded than unexpected orientations. In these previous studies, however, the visual properties and hence perceptual clarity of the decoded gratings was held constant. The current study, along with fMRI results from Blank and Davis, 2016, suggests that assessing the interaction between expectation and perceptual clarity more clearly distinguishes prediction error from sharpened signal accounts.\n\nEnhanced prediction error representations of low-clarity speech when prior expectations are more accurate might seem counterintuitive. In explaining this result, we note that in our study, listeners were able to make strong (i.e. precise) predictions about upcoming speech: Matching and mismatching trials occurred equally frequently and thus upon seeing a written word, there was a. 5 probability of hearing the same word in spoken form. However, in the low-clarity condition, acoustic cues were by definition weak (imprecise). Therefore, in matching trials, listeners would have made predictions for acoustic cues that were absent in the degraded speech input, generating negative prediction errors (shown as dark \u2018clay\u2019 in Figure 1C). Critically, however, these negative prediction errors overlap with the cues that are normally present in clear speech (shown as light \u2018clay\u2019 in Figure 1C). This close correspondence between negative prediction error and degraded speech cues would result in good encoding/decoding accuracy. In mismatching trials, negative prediction errors would also be generated (shown as dark \u2018fast\u2019 in Figure 1C) but would necessarily mismatch with heard speech cues. Thus, while the overall magnitude of prediction error might be highest in this condition (see Figure 1\u2014figure supplement 1), there would be limited overlap between predicted and heard speech cues, resulting in worse model accuracy. In summary then, an important factor in explaining our results is the relative precision of predictions and the sensory input.\n\nOther work has taken a different approach to investigating how prior knowledge affects speech processing. These previous studies capitalized on the fact that in natural speech, certain speech sounds are more or less predictable based on the preceding sequence of phonemes (e.g. upon hearing \u2018capt-\u201d, \u2018-ain\u2019 is more predictable than \u2018-ive\u2019 because \u2018captain\u2019 is a more frequent English word than \u2018captive\u2019). Using this approach, MEG studies demonstrate correlations between the magnitude of neural responses and the magnitude of phoneme prediction error (i.e. phonemic surprisal, Brodbeck et al., 2018; Donhauser and Baillet, 2020). However, this previous work did not test for sharpened representations of speech; leaving open the question of whether expectations are combined with sensory input by computing prediction errors or sharpened signals. Indeed, this question may be hard to address using natural listening paradigms since many measures of predictability are highly correlated (e.g. phonemic surprisal and lexical uncertainty, Brodbeck et al., 2018; Donhauser and Baillet, 2020). Here by experimentally manipulating listeners\u2019 predictions and the quality of sensory input, we could test for the statistical interaction between prior knowledge and sensory detail that most clearly distinguishes prediction errors from sharpened representations. Future work in which this approach is adapted to continuous speech could help to establish the role of predictive computations in supporting natural speech perception and comprehension.\n\nThe challenge of experimental control with natural listening paradigms may also explain why acoustic representations of words during connected speech listening are enhanced when semantically similar to previous words (Broderick et al., 2019). Under the assumption that semantically similar words are also more predictable, this finding might be taken to conflict with the current findings, that\u00a0is, weaker neural representations of expected speech in the high-clarity condition. However, this conflict can be resolved by noting that semantic similarity and word predictability are only weakly correlated and furthermore may be neurally dissociable (see Frank and Willems, 2017, for relevant fMRI evidence). Further studies that monitor how prior expectations modulate representations concurrently at multiple levels (e.g. acoustic, lexical, semantic) would be valuable to understand how predictive processing is coordinated across the cortical hierarchy.\n\nOur evidence for prediction error representations challenges models, such as TRACE (McClelland and Elman, 1986; McClelland et al., 2014), in which bottom-up speech input can only ever be sharpened by prior expectations. Instead, our findings support predictive coding accounts in which prediction errors play an important role in perceptual inference. However, it should be noted that in these predictive coding accounts, prediction errors are not the end goal of the system. Rather, they are used to update and sharpen predictions residing in separate neural populations. It is possible that these sharpened predictions are not apparent in our study because they reside in deeper cortical layers (Bastos et al., 2012) to which the MEG signal is less sensitive (H\u00e4m\u00e4l\u00e4inen et al., 1993) or in higher hierarchical levels (e.g. lexical/semantic versus the acoustic level assessed here). It has also been proposed that prediction errors and predictions are communicated via distinct oscillatory channels (e.g. Arnal et al., 2011; Bastos et al., 2012), raising the possibility that other neural representations could be revealed with time-frequency analysis methods. In future, methodological advances (e.g. in layer-specific imaging; Kok et al., 2016) may help to resolve this issue.\n\nWe also consider how our results relate to the \u2018opposing process\u2019 account recently proposed by Press et al., 2020. According to this account, perception is initially biased by expected information. However, if the stimulus is sufficiently surprising, then later processing is redeployed toward unexpected inputs. Importantly in the context of the current study, this latter process is proposed to operate only when sensory inputs clearly violate expectations, that\u00a0is, when sensory evidence is strong. While this account is formulated primarily at the perceptual level, a possible implication is that our interaction effect results from the conflation of two distinct processes occurring at different latencies: an early component in which neural responses are upweighted for expected input (leading to greater model accuracy for matching versus mismatching trials) and a later component triggered by high-clarity speech whereby neural responses are upweighted for surprising information (leading to greater model accuracy in mismatching trials). However, the timecourse of when high-clarity speech can be decoded is inconsistent with this interpretation: for high-clarity speech, decoding is only ever lower in matching trials, and never in the opposite direction, as would be expected for neural responses that are initially biased for predicted input\u00a0(see Figure 6\u2014figure supplement 1). It may be that the opposing process model is more applicable to neural representations of predictions rather than the prediction errors that are hypothesized to be apparent here. Future research with methods better suited to measuring neural representations of predictions (e.g. time-frequency analysis, as mentioned above) may be needed to provide a more definitive test of the opposing process model.\n\n## Materials and methods\n\n### Participants\n\n21\u00a0(12 female, 9 male) right-handed participants were tested after being informed of the study\u2019s procedure, which was approved by the Cambridge Psychology Research Ethics Committee (reference number CPREC 2009.46). All were native speakers of English, aged between 18 and 40 years (mean\u00a0=\u00a022, SD\u00a0=\u00a02) and had no history of hearing impairment or neurological disease based on self-report.\n\n### Spoken stimuli\n\n468 monosyllabic words were presented to each participant in spoken or written format drawn randomly from a larger set of monosyllabic spoken words. The spoken words were 16-bit, 44.1 kHz recordings of a male speaker of southern British English and their duration ranged from 372 to 903 ms (mean\u00a0=\u00a0591, SD\u00a0=\u00a078). The amount of sensory detail in speech was varied using a noise-vocoding procedure (Shannon et al., 1995), which superimposes the temporal-envelope from separate frequency regions in the speech signal onto white noise filtered into corresponding frequency regions. This allows parametric variation of spectral detail, with increasing numbers of channels associated with increasing intelligibility. Vocoding was performed using a custom Matlab script (The MathWorks Inc), using 3, 6, or 12 spectral channels spaced between 70 and 5000 Hz according to Greenwood\u2019s function (Greenwood, 1990). Envelope signals in each channel were extracted using half-wave rectification and smoothing with a second-order low-pass filter with a cut-off frequency of 30 Hz. The overall RMS amplitude was adjusted to be the same across all audio files.\n\nEach spoken word was presented only once in the experiment so that unique words were heard on all trials. The particular words assigned to each condition were randomized across participants. Before the experiment, participants completed brief practice sessions each lasting approximately 5 min that contained all conditions but with a different corpus of words to those used in the experiment. Stimulus delivery was controlled with E-Prime 2.0 software (Psychology Software Tools, Inc).\n\n### Procedure\n\nParticipants completed a modified version of the clarity rating task previously used in behavioral and MEG studies combined with a manipulation of prior knowledge (Davis et al., 2005; Hervais-Adelman et al., 2008; Sohoglu et al., 2012). Speech was presented with 3, 6, or 12 channels of sensory detail while prior knowledge of speech content was manipulated by presenting mismatching or matching text before speech onset (see Figure 1A). Written text was composed of black lowercase characters presented for 200 ms on a gray background. Mismatching text was obtained by permuting the word list for the spoken words. As a result, each written word in the Mismatching condition was also presented as a spoken word in a previous or subsequent trial and vice versa.\n\nTrials commenced with the presentation of a written word, followed 1050 (\u00b10\u201350) ms later by the presentation of a spoken word (see Figure 1A). Participants were cued to respond by rating the clarity of each spoken word on a scale from 1 (\u2018Not clear\u2019) to 4 (\u2018Very clear\u2019) 1050 (\u00b10\u201350) ms after speech onset. The response cue consisted of a visual display of the rating scale and responses were recorded using a four-button box from the participant\u2019s right hand. Subsequent trials began 850 (\u00b10\u201350) ms after participants responded.\n\nManipulations of sensory detail (3/6/12 channel speech) and prior knowledge of speech content (Mismatching/Matching) were fully crossed, resulting in a 3 \u00d7 2 factorial design with 78 trials in each condition. Trials were randomly ordered during each of three presentation blocks of 156 trials.\n\n### Schematic illustrations of sharpened signal and prediction error models\n\nTo illustrate the experimental predictions for the sharpened signal and prediction error models, we generated synthetic representational patterns of speech (shown in Figure 1C). To facilitate visualization, speech was represented as pixel-based binary patterns (i.e. written text) corresponding to the words \u2018clay\u2019 and \u2018fast\u2019. To simulate our experimental manipulation of sensory detail, we used a two-dimensional filter to average over eight (\u2018low\u2019 sensory detail) or four (\u2018medium\u2019) local pixels in the speech input patterns. To simulate the \u2018high\u2019 sensory detail condition, the input patterns were left unfiltered. Patterns for the speech input and predictions were added to uniformly distributed noise (mean\u00a0=\u00a00, standard deviation\u00a0=\u00a00.5) and normalized to sum to one. Sharpened signal patterns were created by multiplying the input and prediction patterns and normalising to sum to one. The prediction error patterns were created by subtracting the predictions from the input.\n\nTo approximate the model accuracy measure in our MEG analysis, we correlated a clear (noise-free) representation of the speech input (\u2018clay\u2019) with the sharpened signal or prediction error patterns (shown in Figure 1D as the squared Pearson\u2019s correlation R2). In addition to this correlation metric focusing on representational content, we also report the overall magnitude of prediction error by summing the absolute prediction error over pixels (shown in Figure 1\u2014figure supplement 1).\n\n### Data acquisition and pre-processing\n\nMagnetic fields were recorded with a VectorView system (Elekta Neuromag, Helsinki, Finland) containing two orthogonal planar gradiometers at each of 102 positions within a hemispheric array. Data were also acquired by magnetometer and EEG sensors. However, only data from the planar gradiometers were analyzed as these sensors have maximum sensitivity to cortical sources directly under them and therefore are less sensitive to noise artifacts (H\u00e4m\u00e4l\u00e4inen, 1995).\n\nMEG data were processed using the temporal extension of Signal Source Separation (Taulu et al., 2005) in Maxfilter software to suppress noise sources, compensate for motion, and reconstruct any bad sensors. Subsequent processing was done in SPM8 (Wellcome Trust Centre for Neuroimaging, London, UK), FieldTrip (Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen, the Netherlands) and NoiseTools software (http://audition.ens.fr/adc/NoiseTools) implemented in Matlab. The data were subsequently highpass filtered above 1 Hz and downsampled to 80 Hz (with anti-alias lowpass filtering).\n\n### Linear regression\n\nWe used ridge regression to model the relationship between speech features and MEG responses (Pasley et al., 2012; Ding and Simon, 2013; Di Liberto et al., 2015; Holdgraf et al., 2017; Brodbeck et al., 2018). Before model fitting, the MEG data were epoched at matching times as the feature spaces (see below), outlier trials removed and the MEG time-series z-scored such that each time-series on every trial had a mean of zero and standard deviation of 1. We then used the mTRF toolbox (Crosse et al., 2016; https://sourceforge.net/projects/aespa) to fit two types of linear model.\n\nThe first linear model was an encoding model that mapped from the stimulus features to the neural time-series observed at each MEG sensor and at multiple time lags:\n\n$$\ny=Sw+\\epsilon\n$$\n\nwhere y is the neural time-series recorded at each planar gradiometer sensor, S is an Nsamples by Nfeatures matrix defining the stimulus feature space (concatenated over different lags), w is a vector of model weights and \u03b5 is the model error. Model weights for positive and negative lags capture the relationship between the speech feature and the neural response at later and earlier timepoints, respectively. Encoding models were fitted with lags from \u2212100 to 300 ms but for model prediction purposes (see below), we used a narrower range of lags (0 to 250 ms) to avoid possible artefacts at the earliest and latest lags (Crosse et al., 2016).\n\nOur encoding models tested four feature spaces (shown in Figure 2), derived from the original clear versions of the spoken stimuli (i.e. before noise-vocoding):\n\nIn addition to the four feature spaces above, we also tested more complex combinations of feature spaces that previous work has shown to be good predictors of neural responses. The first of these combined the spectrogram feature space above with the phonetic feature space (Di Liberto et al., 2015). The second combined the spectrogram with the half-wave rectified derivative of the spectrogram to capture spectral onsets (Daube et al., 2019).\n\nAll feature spaces were downsampled to 80 Hz to match the MEG sampling rate and the acoustic feature spaces (i.e. 1, 2, 3 above) were z-score transformed such that each time-series on every trial had a mean of zero and standard deviation of 1. For each trial/word, all feature spaces were zero-padded before speech onset to match the duration of the longest negative lag used for model fitting (i.e. 100 ms). Similarly, zero-padding was added after speech offset to match the duration of the longest positive lag (i.e. 300 ms). This enabled information at the beginning and end of each spoken word to inform the model fits for negative and positive lags, respectively.\n\nThe second linear model was a decoding model that mapped in the opposite direction from the neural time-series back to speech spectrotemporal modulations (since analysis of encoding models showed this feature space to be most predictive of neural responses). Before model fitting, to remove redundant dimensions and reduce computation time, the data from the 204 planar gradiometers were transformed into principal components and the first 50 components retained. The model was therefore as follows:\n\n$$\ns=Yw+\\epsilon\n$$\n\nHere s is a vector expressing the time-varying spectrotemporal modulations (one vector for each of the 25 spectrotemporal modulations), Y is an Nsamples by Ncomponents matrix of MEG data (concatenated over different lags), w is a vector of model weights and \u03b5 is the model error. Decoding models were fitted with lags from \u2212100 to 300 ms and from 0 to 250 ms for model prediction purposes. As with the encoding analysis, here model weights for positive and negative lags capture the relationship between the speech feature and the neural response at later and earlier timepoints, respectively. Note that this notation may differ to that used in other work, where instead negative lags are used to denote the post-stimulus period for decoding analyses (see Crosse et al., 2016). The single-lag analysis proceeded similarly except that model prediction was conducted separately for each lag, generating model accuracies for all lags between \u221250 and 250 ms.\n\nTo control for overfitting, we used ridge regression and varied the lambda parameter (over 17 values as follows: 20, 21, 23, \u2026 220) which varies the degree to which strongly positive or negative weights are penalized (Crosse et al., 2016). This lambda parameter was optimized using a leave-one-trial-out cross-validation procedure. For each feature space, sensor, condition, and participant, we fitted the models using data from all but one trial. We then averaged the model weights across trials and used the result to predict the MEG response (for the encoding models) or speech spectrotemporal modulations (for the decoding model) of the left-out trial. We computed model accuracy as the Pearson correlation between the predicted and observed data and repeated this procedure such that model accuracies were obtained for all trials. Before optimizing lambda, model accuracies were averaged across trials, and also across sensors (encoding models) or modulations (decoding model). The optimal lambda value was then selected as the mode of the model accuracy distribution over participants and conditions (Holdgraf et al., 2016). When testing the complex models that combined feature spaces, lambda was optimized for each component feature space independently resulting in a search space of 17 \u00d7 17\u00a0=\u00a0289 lambda values (i.e. 'banded' ridge regression; Nunez-Elizalde et al., 2019). When conducting the single-lag decoding analysis, lambda was optimized for each lag separately.\n\nWhen testing for differences in encoding model accuracies, we averaged model accuracies over trials and over the 20 sensors with the highest model accuracies (in each hemisphere separately). For the decoding analysis, model accuracies were averaged over trials. The resulting data were then entered into repeated measures ANOVAs or t-tests to examine differences in model accuracy between feature spaces or conditions.\n\nWhen testing for above-chance encoding model accuracies, null distributions were created for each condition separately by randomly permuting the feature representations across trials (i.e. shuffling the words in our stimulus set) or within trials (i.e. shuffling the spectrotemporal modulation channels and time-bins for each word). This was repeated for 100 permutations using the same ridge regression lambda that was optimized for the non-shuffled data. For each of the 100 permutations, we then subjected the data to the same analysis pipeline as for the non-permuted data (averaging over trials, selecting 20 left-hemisphere and 20 right-hemisphere sensors with the highest model accuracy and averaging over participants). When z-scoring the observed data with respect to the null distributions, the 20 left-hemisphere and 20 right-hemisphere sensors were selected after z-scoring. This ensured the same sensors were used when combining the observed and permuted data to compute the z-scores. z-scores were obtained by taking the observed model accuracy of each condition and participant, subtracting the mean of the relevant null distribution, and dividing by the null distribution standard deviation.\n\nTo visualize the weights of the spectrotemporal modulation encoding model, or \u2018temporal response functions (TRFs)\u2019, we used denoising source separation (DSS) to transform the TRFs into a set of linear components (spatial filters) ordered by their consistency over trials (de Cheveign\u00e9 and Parra, 2014). The first three DSS components (i.e. the three most consistent components) were retained and projected back into sensor-space. When applying DSS, the covariance matrices were computed by summing the covariances over features and conditions. Following DSS, we averaged the TRFs across trials and computed the root mean square (RMS) amplitude across all left hemisphere sensors.\n",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "a4bc7252-b4ae-46cb-9e23-1eab35c0baaf",
+      "submission_id": "e4a7de76-5510-4dad-8613-fce84e0b565b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Kok, University College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58077.sa1](https://doi.org/10.7554/eLife.58077.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper convincingly demonstrates the importance of prediction errors \u2013 the mismatch between what we predict to hear and what we actually hear \u2013 for processing speech signals. Theoretical proposals on the role of prediction errors in perception abound, but direct empirical evidence is scarce. Furthermore, the authors show that these prediction errors occur very early on, suggesting that predictions play a fundamental role in sensory processing.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Rapid computations of spectrotemporal prediction error support perception of degraded speech\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Peter Kok as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Andrew King as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Clare Press (Reviewer #2); Edmund C Lalor (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThis manuscript by Sohoglu and Davis uses sophisticated analysis of previously published MEG data to adjudicate between two models of how prior information might influence the perception of degraded speech. Based on an interesting interaction effect in the data \u2013 increasing sensory detail leads to better representation with mismatching prior information, but worse representation for matching prior information \u2013 they conclude that the benefits of prior information on degraded speech perception involve neural computations that are consistent with a predictive coding model. They demonstrate that this interaction was present for the first 250 ms of processing. The reviewers found that the manuscript addresses a very interesting question, is well written, and uses a clever design and analyses. The reviewers had questions about the interpretation of the effects that need to be better supported or toned down in a revised manuscript.\n\nRevisions for this paper:\n\n1) Consistency of the data with a predictive coding model. It seems that a predictive coding explanation of the reported interaction between sensory detail and prior knowledge depends on two assumptions, and it would strengthen the manuscript to outline these assumptions \u2013 assuming the authors agree with them. First, predictive accounts assume two unit types: error units and hypothesis units. It seems that this interaction requires assuming that the error units contribute to the signal to a greater extent than the hypothesis units. Second, it rests upon assuming high precision for the prior distributions. e.g., the authors state \"This interaction arises because sensory signals that match prior expectations are explained away more effectively as signal quality increases and hence neural representations are suppressed even as perceptual outcomes improve.\" This is only true if the prior has high precision. If the prior has low precision then the opposite effect seems more likely. Put another way, if the statistics of one's environment dictate that sight of the word \u201cclay\u201d is followed by low clarity audio of clay, then the 3 channel likely matches the prior to a greater extent than the 12 channel. Is anything known about the statistical structure of the environment with respect to visual prediction of the auditory signal for these words that could support the assumption of high precision on priors?\n\n2) Theoretical positions involving sharpening that would also predict this interaction. We agree that this interaction would not be predicted under a simple sharpening account, but the recent \u201copposing process\u201d account cited by the authors \u2013 which includes sharpening \u2013 would make this prediction. This account predicts that sharpening is followed in time by mechanisms that increase the sensory processing of mismatching inputs, but only those generating high KLD. This would only be the case for high quality, not low quality, inputs and therefore would generate this interaction \u2013 even if some other particulars would be assumed different. It is worth discussing that the interaction is also consistent with this account, which involves sharpening, even if less consistent with pure sharpening accounts.\n\n3) Regardless of the specific model used to explain the data, one specific aspect of the main interaction effect \u2013 as schematized in Figure 1D and as shown in the data in Figure 5A \u2013 needs clarification. Why might we expect a bigger response for a low sensory detail stimulus when it is matching rather than non-matching? That is, why are the two leftmost points on the right plot in Figure 1D the way they are? It seems intuitive that the error should be smaller for an imprecise \"clay\" than for an imprecise \"fast\", but the data suggest the opposite is true. We wonder if there would there be any complementary value to trying to predict the MEG based on an acoustic representation of the mismatching text? In other words, if I have a strong prediction of \"fast\" and I hear an imprecise \"clay\" would I get a smaller response (representing the error for \"fast\") than if I had heard a precise \"clay\". We leave it up to the authors to decide whether this analysis is feasible and valuable; in any case, this finding (reduced error for matching vs. mismatching low quality speech), and its interpretation, should be explained more fully.\n\n4) The logic of the study seems to rest upon effects reflecting sensory processing. It seems plausible that higher level regions would also exhibit high model accuracy, especially given that 250 ms will have allowed sensory information to be communicated throughout most of the cortex. It would therefore strengthen the manuscript to increase the evidence that the effect is sensory. This could be achieved through additional analysis e.g., restricting the analysis to a shorter temporal window, if the data allows, or through theoretical reasoning to support the sensory nature of effects, e.g., related to the linear relationship between spectrotemporal modulations and the MEG signal. In any case, given that a lot of (re-entrant) processing occurs in the first 250 ms, the current claims about early processing, especially references to the feedforward sweep and suggestions that re-entrant processing only occurs > 250 ms, should be strongly toned down.\n\n5) The reviewers had a concern about the use of different speech representations with the TRF. First, they thought the analysis of Figure 3 lacked an assessment of a model that combined spectrotemporal modulations and phonetic features. These models both do pretty well on their own, but should also be complementary.\n\n6) A complementary concern was that there may not be enough data \u2013 or enough variability in the specific stimuli \u2013 to conduct a fair test of the various representations. Some representations have more dimensions than others. And it seems the TRFs were fit using data acquired to 468 words (many of which were presented with very low levels of intelligibility). This might not be enough data to get quality fits for some of the representations and, thus, the results in Figure 3 may not be quite fair. We appreciate what the authors are trying to do in terms of finding a representation that gives them the best TRF predictions and, thus, the best SNR for testing their hypothesis. However, this issue should be discussed somewhere in the manuscript \u2013 to make it clear that the results of Figure 3 are based on a fairly limited amount of data and might not necessarily generalize to a larger data set.\n\n7) Broderick et al., 2019 report seemingly opposite effects of prior knowledge to those presented here. In their case prior knowledge results from semantic similarity of preceding spoken words, and they observed enhanced rather than suppressed encoding of matching spoken words. This discrepancy should be discussed.\n\n8) If the speech system preferentially represents inputs that mismatch predictions, how do the authors explain that valid prior knowledge enhances speech intelligibility? This should be discussed.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Rapid computations of spectrotemporal prediction error support perception of degraded speech\" for further consideration by eLife. Your revised article has been evaluated by Andrew King (Senior Editor) and a Reviewing Editor.\n\nThe manuscript has been greatly improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) The new analyses performed in response to point 3 revealed that the main result of the paper, an interaction between match/mismatch and sensory detail, is also present in a null distribution of their data. The authors offer a potential explanation, but admit that they do not fully understand this result. This seems concerning; if the main result of their study is also present in a control analysis with shuffled trial labels, it is unclear how to interpret these effects. Given the impact of this finding on the interpretability of the results, it does not seem appropriate to omit these results from the manuscript. We recommend including these findings in the paper, along with the (admittedly speculative, but plausible) explanation offered by the authors. Note that this refers specifically to the results of the null distribution analysis of the main results, the reviewers agree with the authors that it's fine to omit the more speculative \u201cwritten mismatch\u201d analysis (i.e., using the acoustic representation of a word they didn't actually hear) suggested by the reviewers in the previous round.\n\n2) The authors point out how they think they obtained their results because MEG is more sensitive to error unit than hypothesis unit processing. If this was a general rule, two visual MEG studies by Kok and colleagues (2017 PNAS; 2020 J Neurosci) would be unlikely to have found these sharpening patterns. Could the authors say anything about this discrepancy? Is it perhaps more plausible that these auditory data, in combination with the visual findings, might suggest a difference between visual and auditory systems in the extent to which MEG reflects hypothesis v error processing?\n\n3) Relatedly, the authors have interestingly added a time resolved analysis. Given the interaction is seen very early, they consider this finding less consistent with the opposing process account (Press et al., 2020). However, the opposing process account describes perception, and in terms of neural processing is proposed to be reflected in hypothesis unit processing, not error unit processing. If the authors believe they are seeing the processing in error units only in their study, the data do not in fact speak to the opposing process account. If our understanding of the authors' claims is correct, we would suggest amending the paragraph that mentions this account \u2013 mentioning that it's a theory of perception and more concerned with hypothesis unit processing which is hypothesised not to be reflected in the present data.\n\n4) The authors have increased clarity concerning how the predictive coding account could explain the present dataset \u2013 by clarifying the assumed precision of the priors. However, the reviewers felt the fact that there is greater representation of matching 3 channel than non-matching 3 channel under this account could still be explained more clearly. It was not fully clear how the clarifications provided speak to this particular point. E.g, if assuming a precise gaussian prediction for clay, an imprecise gaussian with the same mean (clay) will overlap with that gaussian more than an imprecise gaussian with a different mean (fast). Higher Kullback Leibler divergence for mismatch still i.e., by prescribing the shape of the prior, they have accounted for why 3 channel can generate more error than 12 channel, but not relative differences between match and non-match in the 3 channel. We think it would help readers if the logic could be further clarified here as our conceptualisation of error processing may deviate from the authors'.\n\n5) With respect to the discussion of the lack of correspondence to the Broderick findings \u2013 this may be due to the fact that the Broderick paper was based on semantic similarity \u2013 which is not the same thing as predictability. Indeed, Frank and Willems (2017) found that semantic similarity and semantic surprisal were not strongly correlated with each other. It may even be that the Broderick results based on semantic similarity map better onto the earlier activity from hypothesis units and do not tap into error unit activity as much (which might be accessible by exploring the top-down role of semantic surprisal).\n\n6) We don't insist on making changes necessarily \u2013 but the transition from the \"Stimulus feature space selection\" subsection to the \"Acoustic analysis\u2026\" subsection (p12 \u2013 13) still seems a little weak. You have just spent a lot of time comparing models and then quite quickly converge on the spectrotemporal one. You attempt to justify it might best match with the vocoded speech \u2013 but might not that actually work against you? The idea is that you are hoping to be sensitive to error, no? So if you have a strong prior and then get a degraded speech input, don't you want to be sensitive to the details of that prior \u2013 and, hence, the error. Again, we don't insist on any major change here. It may suffice that you just wanted to keep the story fairly straightforward and so wanted to pick the single speech representation that performed best.\n",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e55aa585-f226-4a21-ba3c-2bd01fb789c9",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C1",
+      "claim": "21 right-handed participants (12 female, 9 male) were tested in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "21 (12 female, 9 male) right-handed participants were tested after being informed of the study's procedure, which was approved by the Cambridge Psychology Research Ethics Committee (reference number CPREC 2009.46).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the manuscript describing participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "d975e757-518d-48a9-8083-626481015983",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C2",
+      "claim": "All participants were native speakers of English, aged between 18 and 40 years (mean = 22, SD = 2).",
+      "claim_type": "EXPLICIT",
+      "source": "All were native speakers of English, aged between 18 and 40 years (mean = 22, SD = 2) and had no history of hearing impairment or neurological disease based on self-report.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing participant characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "7be33cbb-397e-4cd9-be6d-7e547bf9eb11",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C3",
+      "claim": "Participants had no history of hearing impairment or neurological disease based on self-report.",
+      "claim_type": "EXPLICIT",
+      "source": "All were native speakers of English, aged between 18 and 40 years (mean = 22, SD = 2) and had no history of hearing impairment or neurological disease based on self-report.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about participant inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "188b2479-aa7d-4ff3-baa8-9be993d48f66",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C4",
+      "claim": "468 monosyllabic words were presented to each participant in spoken or written format.",
+      "claim_type": "EXPLICIT",
+      "source": "468 monosyllabic words were presented to each participant in spoken or written format drawn randomly from a larger set of monosyllabic spoken words.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the stimulus set used in the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "4115803a-0cd5-48f2-b850-991c1c817500",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C5",
+      "claim": "The spoken words were 16-bit, 44.1 kHz recordings of a male speaker of southern British English.",
+      "claim_type": "EXPLICIT",
+      "source": "The spoken words were 16-bit, 44.1 kHz recordings of a male speaker of southern British English and their duration ranged from 372 to 903 ms (mean = 591, SD = 78).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the technical specifications of the audio stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "df4748fb-3a0e-47f3-b005-09943a8a90c8",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C6",
+      "claim": "The duration of spoken words ranged from 372 to 903 ms (mean = 591, SD = 78).",
+      "claim_type": "EXPLICIT",
+      "source": "The spoken words were 16-bit, 44.1 kHz recordings of a male speaker of southern British English and their duration ranged from 372 to 903 ms (mean = 591, SD = 78).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement providing measurements of stimulus duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "98d7c2cf-f296-4b19-9048-813840c0eec8",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C7",
+      "claim": "Noise-vocoding allows parametric variation of spectral detail, with increasing numbers of channels associated with increasing intelligibility.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows parametric variation of spectral detail, with increasing numbers of channels associated with increasing intelligibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the properties of the noise-vocoding procedure, supported by citation to Shannon et al., 1995.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "bec41a39-c1a4-4696-ba93-b36e96864784",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C8",
+      "claim": "Vocoding was performed using 3, 6, or 12 spectral channels spaced between 70 and 5000 Hz according to Greenwood's function.",
+      "claim_type": "EXPLICIT",
+      "source": "Vocoding was performed using a custom Matlab script (The MathWorks Inc), using 3, 6, or 12 spectral channels spaced between 70 and 5000 Hz according to Greenwood's function (Greenwood, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the vocoding parameters used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "e5e8f189-bb40-45c8-9721-022c98e4a48b",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C9",
+      "claim": "Envelope signals in each channel were extracted using half-wave rectification and smoothing with a second-order low-pass filter with a cut-off frequency of 30 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Envelope signals in each channel were extracted using half-wave rectification and smoothing with a second-order low-pass filter with a cut-off frequency of 30 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the signal processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "e3ddee10-6bb4-4d16-b3d8-dee8b1be0491",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C10",
+      "claim": "Each spoken word was presented only once in the experiment so that unique words were heard on all trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Each spoken word was presented only once in the experiment so that unique words were heard on all trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "e5517a2a-c673-4818-84c7-fdbd2d86cf50",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C15",
+      "claim": "The spectrotemporal modulation feature space best predicted the MEG data.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-hoc t-tests revealed that the spectrotemporal modulation feature space best predicted the MEG data (p-values shown in Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison results reported in text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "090e12e2-9ab0-4663-a209-191f7f9a7f67",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C16",
+      "claim": "Sensor selections were similarly distributed over temporal and frontal sites for all feature spaces, consistent with bilateral neural generators in the superior temporal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensor selections (i.e. those sensors with the highest model accuracies; shown in Figure 3B) were similarly distributed over temporal and frontal sites for all feature spaces, consistent with bilateral neural generators in the superior temporal cortex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from sensor topography analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "de78a3c5-f9c2-4b17-8a1f-e021ddde9843",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C19",
+      "claim": "Modulations showed a lowpass profile and were strongest in magnitude for low spectrotemporal frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4A, modulations showed a lowpass profile and were strongest in magnitude for low spectrotemporal frequencies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from acoustic analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "e0b4d5ab-1d45-4b79-9a4e-9f299aac87b1",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C20",
+      "claim": "Modulation power of natural sounds decays with increasing frequency following a 1/f relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous work (Voss and Clarke, 1975; Singh and Theunissen, 2003) demonstrating that modulation power of natural sounds decays with increasing frequency following a 1/f relationship (where f is the frequency).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "4beb36ce-bca4-4031-bec2-411fe26309d3",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C21",
+      "claim": "Fast temporal and broad spectral modulations reflect transient sounds such as stop consonant release bursts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, fast temporal and broad spectral modulations reflect transient sounds such as stop consonant release bursts whereas slow temporal and narrowband spectral modulations reflect sounds with a sustained spectral structure such as vowels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about speech acoustics, supported by citation to Elliott and Theunissen, 2009.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "6bb31fba-b950-4f94-b343-3adea89ced84",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C22",
+      "claim": "Slow temporal and narrowband spectral modulations reflect sounds with a sustained spectral structure such as vowels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, fast temporal and broad spectral modulations reflect transient sounds such as stop consonant release bursts whereas slow temporal and narrowband spectral modulations reflect sounds with a sustained spectral structure such as vowels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge about speech acoustics, supported by citation to Elliott and Theunissen, 2009.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "e3ab0eb0-6fe5-4fb4-9406-f9c25d024474",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C23",
+      "claim": "Intermediate modulations correspond to formant transitions that cue consonant place and manner of articulation.",
+      "claim_type": "EXPLICIT",
+      "source": "More intermediate modulations correspond to formant transitions that cue consonant place and manner of articulation (Liberman et al., 1967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Liberman et al., 1967.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "6783f38a-6497-4e46-b64d-af78a79d3d20",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C24",
+      "claim": "Increasing the number of vocoder channels resulted in significantly higher signal magnitude specific to intermediate spectral and temporal modulations (1\u20132 cycles per octave and 2\u20134 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Over items, increasing the number of vocoder channels resulted in significantly higher signal magnitude specific to intermediate spectral and temporal modulations (1\u20132 cycles per octave and 2\u20134 Hz, all effects shown are FDR corrected for multiple comparisons across spectrotemporal modulations; see Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis results shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "cc1a852f-7fc9-43d7-9bad-5ff5baf7d2a5",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C25",
+      "claim": "Intermediate spectrotemporal modulations are known to support speech intelligibility.",
+      "claim_type": "EXPLICIT",
+      "source": "These intermediate spectrotemporal modulations are known to support speech intelligibility (Elliott and Theunissen, 2009; Venezia et al., 2016; Flinker et al., 2019), consistent with the strong impact of the number of vocoder channels on word report accuracy (e.g. Shannon et al., 1995; Davis and Johnsrude, 2003; Scott et al., 2006; Obleser et al., 2008) and subjective clarity (e.g. Obleser et al., 2008; Sohoglu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "489f0d1b-65c0-4b54-8691-1f6ab5090ccf",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C31",
+      "claim": "Model accuracies were greater for Matching versus Mismatching conditions for low clarity 3 channel speech (t (20) = 2.201, dz = .480, p = .040).",
+      "claim_type": "EXPLICIT",
+      "source": "While model accuracies were greater for Matching versus Mismatching conditions for low clarity 3 channel speech (t (20) = 2.201, dz = .480, p = .040), the opposite was true for high clarity 12 channel speech (t (20) = 2.384, dz = .520, p = .027).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "f908bd28-bca8-496c-9a3c-c85943cc7f41",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C32",
+      "claim": "For high clarity 12 channel speech, model accuracies were greater for Mismatching versus Matching conditions (t (20) = 2.384, dz = .520, p = .027).",
+      "claim_type": "EXPLICIT",
+      "source": "While model accuracies were greater for Matching versus Mismatching conditions for low clarity 3 channel speech (t (20) = 2.201, dz = .480, p = .040), the opposite was true for high clarity 12 channel speech (t (20) = 2.384, dz = .520, p = .027).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "3de25b9e-9289-48d8-a21b-182ff9f2061c",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C33",
+      "claim": "Model accuracies did not significantly differ between Matching and Mismatching conditions for 6 channel speech with intermediate clarity (t (20) = 1.085, dz = .237, p = .291).",
+      "claim_type": "EXPLICIT",
+      "source": "Model accuracies did not significantly differ between Matching and Mismatching conditions for 6 channel speech with intermediate clarity (t (20) = 1.085, dz = .237, p = .291).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "0b83ddce-6559-480c-965a-c4297f74f472",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C34",
+      "claim": "The interaction between prior knowledge and sensory detail is consistent with a prediction error scheme and inconsistent with sharpened representations.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction is consistent with a prediction error scheme and inconsistent with sharpened representations (compare Figure 5A with Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Interpretation of the statistical interaction in relation to theoretical models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "d1eba94a-27b2-49f7-bd95-46cf4e7238d5",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C35",
+      "claim": "Observed model accuracies in all six conditions were significantly above chance as defined by the feature-shuffled null distributions (all p's < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen in Figure 5\u2014figure supplement 1A (only the left hemisphere sensors shown), this results in near-zero null distributions. Accordingly, observed model accuracies in all six conditions were significantly above chance as defined by the null distributions (all p's < 0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical comparison against empirical null distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "91e35a13-8037-40ad-a4e9-518e332b897c",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C36",
+      "claim": "Even in the Mismatching three channel and Matching 12 channel conditions, neural responses encode spectrotemporal modulations in speech.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, even in the Mismatching three channel and Matching 12 channel conditions, neural responses encode spectrotemporal modulations in speech.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the control analysis showing above-chance model accuracies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "574c1df1-7802-4eac-935e-59ba623547c1",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C37",
+      "claim": "The TRFs show two peaks at 87.5 and 150 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The TRFs show two peaks at 87.5 and 150 ms (shown in Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from temporal response function analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "378638f9-1c72-4407-b509-9a0b44132a7d",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C38",
+      "claim": "Variations in spectrotemporal modulations are linked to the largest changes in MEG responses 87.5 and 150 ms later.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that variations in spectrotemporal modulations are linked to the largest changes in MEG responses 87.5 and 150 ms later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the TRF peaks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "5aca0467-cb3a-497c-a4ce-14fc4475b359",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C39",
+      "claim": "Encoding of spectrotemporal modulations is associated with short-latency neural responses at a relatively early hierarchical stage of speech processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, analysis of the TRFs confirms that encoding of spectrotemporal modulations is associated with short-latency neural responses at a relatively early hierarchical stage of speech processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the TRF analysis and comparison with previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "c105efe8-553c-4394-84d8-da90a6654874",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C40",
+      "claim": "Intermediate temporal modulations (2\u20134 Hz) were best decoded from MEG responses.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6A, intermediate temporal modulations (2\u20134 Hz) were best decoded from MEG responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from decoding analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "668394c1-7120-44e7-8c57-23daefbba355",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C41",
+      "claim": "Intermediate temporal modulations are well-represented in auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with previous neurophysiological (Ahissar et al., 2001; Luo and Poeppel, 2007; Peelle et al., 2013; Ding and Simon, 2014; Di Liberto et al., 2015; Park et al., 2015; Obleser and Kayser, 2019) and fMRI (Santoro et al., 2017) data showing that intermediate temporal modulations are well-represented in auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "9c6a6fc0-65fb-44f5-aabb-1d1d1bc82c71",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C42",
+      "claim": "The interaction between prior knowledge and sensory detail was observed at intermediate (2\u20134 Hz) temporal modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6B, this interaction was observed at intermediate (2\u20134 Hz) temporal modulations (FDR corrected across spectrotemporal modulations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis results shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "08ca1c1c-e3a2-4eef-90db-230108f603ae",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C43",
+      "claim": "The interaction contrast 12\u20133 channels (Mismatch) \u2013 12\u20133 channels (Match) emerged rapidly, peaking at around 50 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6D, the interaction contrast 12\u20133 channels (Mismatch) \u2013 12\u20133 channels (Match) emerged rapidly, peaking at around 50 ms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from single-lag decoding analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "e8df8b66-ba48-4b5d-9f63-b6a71a7d3226",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C44",
+      "claim": "Spectrotemporal modulation content in the acoustic signal is well represented in MEG responses, more so than alternative speech features (envelope, spectrogram, and phonetic features).",
+      "claim_type": "EXPLICIT",
+      "source": "First, spectrotemporal modulation content in the acoustic signal is well represented in MEG responses, more so than alternative speech features (envelope, spectrogram, and phonetic features).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the first main finding, supported by the encoding analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "9a12dd5c-08e5-4402-afb5-7e461c54d621",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C45",
+      "claim": "Modulations at intermediate temporal (2\u20134 Hz) and spectral scales (1\u20132 cycles/octave) are critical for distinguishing between individual spoken words.",
+      "claim_type": "EXPLICIT",
+      "source": "Modulations at intermediate temporal (2\u20134 Hz) and spectral scales (1\u20132 cycles/octave) are critical for distinguishing between individual spoken words and these spectrotemporal modulations are affected by noise-vocoding manipulations that impact speech intelligibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the second main finding, supported by acoustic analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "c34c7327-9c0b-4176-b25f-f0ea6c562f9f",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C46",
+      "claim": "Signal quality and prior knowledge have an interactive influence on modulation-based representations, peaking approximately 50 ms after speech input.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, signal quality and prior knowledge have an interactive influence on these modulation-based representations, peaking approximately 50 ms after speech input: when mismatching text precedes degraded speech, neural representations of spectrotemporal modulations are enhanced with increasing sensory detail whereas the opposite effect is observed when text matches speech.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the third main finding, supported by encoding and decoding analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "e1a74a15-981c-4fd6-95d3-f7a8186e1def",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C47",
+      "claim": "When mismatching text precedes degraded speech, neural representations of spectrotemporal modulations are enhanced with increasing sensory detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, signal quality and prior knowledge have an interactive influence on these modulation-based representations, peaking approximately 50 ms after speech input: when mismatching text precedes degraded speech, neural representations of spectrotemporal modulations are enhanced with increasing sensory detail whereas the opposite effect is observed when text matches speech.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the third main finding, supported by encoding and decoding analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "b07eae4b-7bbf-4589-924a-a3f89b29d001",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C48",
+      "claim": "When text matches speech, neural representations of spectrotemporal modulations are suppressed with increasing sensory detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, signal quality and prior knowledge have an interactive influence on these modulation-based representations, peaking approximately 50 ms after speech input: when mismatching text precedes degraded speech, neural representations of spectrotemporal modulations are enhanced with increasing sensory detail whereas the opposite effect is observed when text matches speech.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the third main finding, supported by encoding and decoding analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "6cfb8144-e9a6-4114-bf44-ff447f92d1a0",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C49",
+      "claim": "The interaction is observed specifically for neural representations of intermediate spectrotemporal modulations that convey speech content.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourth, this interaction is observed specifically for neural representations of intermediate spectrotemporal modulations that convey speech content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement of the fourth main finding, supported by decoding analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "48f7a939-4fdf-492e-a493-c8199269e977",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C50",
+      "claim": "An interactive influence of signal quality and prior knowledge is fully consistent with prediction error representations in which neurons signal the difference between expected and heard speech.",
+      "claim_type": "EXPLICIT",
+      "source": "An interactive influence of signal quality and prior knowledge is, however, fully consistent with prediction error representations in which neurons signal the difference between expected and heard speech (Blank and Davis, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings in relation to theoretical models, supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "d2d60788-a1cf-4107-b1bc-2fe8a5a50c04",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C51",
+      "claim": "Linguistically relevant features such as formant transitions and speaker fundamental frequency are clearly apparent in spectrotemporal modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Linguistically relevant features such as formant transitions and speaker fundamental frequency are clearly apparent in these modulations and their removal by filtering has marked consequences for speech intelligibility and speaker discrimination (Elliott and Theunissen, 2009; Flinker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "48397767-3aaa-469d-b208-36f38f0755b5",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C52",
+      "claim": "Removal of spectrotemporal modulations by filtering has marked consequences for speech intelligibility and speaker discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Linguistically relevant features such as formant transitions and speaker fundamental frequency are clearly apparent in these modulations and their removal by filtering has marked consequences for speech intelligibility and speaker discrimination (Elliott and Theunissen, 2009; Flinker et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "5c43209d-bedb-4839-a4b4-315f22b0939c",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C53",
+      "claim": "In animal electrophysiology, neurons in auditory cortex are shown to be well-tuned to spectrotemporal features in the modulation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In animal electrophysiology (Chi et al., 2005; Theunissen and Elie, 2014), neurons in auditory cortex are shown to be well-tuned to spectrotemporal features in the modulation domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "404c2299-1062-4547-acec-a15e5abab7be",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C54",
+      "claim": "Human intracranial and fMRI studies demonstrate that the relationship between auditory stimuli and neural responses is best modelled using spectrotemporal modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings complement human intracranial (Pasley et al., 2012; Hullett et al., 2016) and fMRI (Santoro et al., 2014; Santoro et al., 2017) studies demonstrating that the relationship between auditory stimuli and neural responses is best modelled using spectrotemporal modulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "91915606-f046-49d4-86bb-5d6fd026249d",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C55",
+      "claim": "Intermediate spectrotemporal modulations encode formant transitions that are an important cue to consonant place and manner of articulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These intermediate spectrotemporal modulations encode formant transitions that are an important cue to consonant place and manner of articulation (Liberman et al., 1967; Roberts et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "ec5cb9a9-3854-4c15-aebf-78ecc08fce09",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C56",
+      "claim": "Cortical responses are selectively tuned to acoustic properties (intermediate spectrotemporal modulations) that convey speech information.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, rather than faithfully encoding the acoustic structure of speech by tracking low-frequency modulations, cortical responses are selectively tuned to acoustic properties (intermediate spectrotemporal modulations) that convey speech information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the decoding analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "63663630-6558-4817-8cb2-0656d7f271af",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C57",
+      "claim": "Cortical responses to speech (as measured with MEG) are not completely invariant to acoustic detail.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings agree with recent work (Di Liberto et al., 2015; Daube et al., 2019) suggesting that cortical responses to speech (as measured with MEG) are not completely invariant to acoustic detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to previous research and the current findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "bee7efbc-a4f1-4360-9b41-a355ecdde6d0",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C58",
+      "claim": "Spectrotemporal modulations are a higher-level representation of the acoustic signal than the spectrogram.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the lack of full invariance, spectrotemporal modulations are nonetheless a higher-level representation of the acoustic signal than, for example, the spectrogram.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on the properties of spectrotemporal modulations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "a3fb0d6e-ec01-44e6-84af-bf878311ed0f",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C59",
+      "claim": "Superior temporal neurons lie at an intermediate stage of the speech processing hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are thus consistent with the notion that superior temporal neurons, which are a major source of speech-evoked MEG responses (e.g. Bonte et al., 2006; Sohoglu et al., 2012; Brodbeck et al., 2018), lie at an intermediate stage of the speech processing hierarchy (e.g. Mesgarani et al., 2014; Evans and Davis, 2015; Yi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference supported by citations to previous research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "92d29a49-c8c9-4488-afac-32906fe61b27",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C60",
+      "claim": "Neural representations that show an interaction between sensory detail and prior knowledge provide unambiguous support for prediction error over sharpening coding schemes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, neural representations that show an interaction between sensory detail and prior knowledge provide unambiguous support for prediction error over sharpening coding schemes (Blank and Davis, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "d2ee83ee-2899-4fad-9311-536508c0f859",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C61",
+      "claim": "The neural interaction between sensory detail and prior knowledge is already apparent within 100 ms of speech input.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our decoding analysis suggests that the neural interaction between sensory detail and prior knowledge that we observe is already apparent within 100 ms of speech input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the single-lag decoding analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "24f93a2d-7afe-4b35-9beb-c0d9ef274efa",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C62",
+      "claim": "Prediction errors are computed during early feedforward sweeps of processing and are tightly linked to ongoing changes in speech input.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that prediction errors are computed during early feedforward sweeps of processing and are tightly linked to ongoing changes in speech input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the timing of the neural interaction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "7cd7c298-6f1d-4767-a3f7-d843acb9db94",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C63",
+      "claim": "MEG studies demonstrate correlations between the magnitude of neural responses and the magnitude of phoneme prediction error (i.e. phonemic surprisal).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, MEG studies demonstrate correlations between the magnitude of neural responses and the magnitude of phoneme prediction error (i.e. phonemic surprisal, Brodbeck et al., 2018; Donhauser and Baillet, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "edd72ab8-f5a8-4c52-97a9-423b0c8c5cb4",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C64",
+      "claim": "The statistical interaction between prior knowledge and sensory detail most clearly distinguishes prediction errors from sharpened representations.",
+      "claim_type": "EXPLICIT",
+      "source": "Here by experimentally manipulating listeners' predictions and the quality of sensory input, we could test for the statistical interaction between prior knowledge and sensory detail that most clearly distinguishes prediction errors from sharpened representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the methodological approach and its advantages.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "06923522-1673-426f-8e51-8264f34535b8",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C65",
+      "claim": "Acoustic representations of words during connected speech listening are enhanced when semantically similar to previous words.",
+      "claim_type": "EXPLICIT",
+      "source": "The challenge of experimental control with natural listening paradigms may also explain why acoustic representations of words during connected speech listening are enhanced when semantically similar to previous words (Broderick et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "adb447ab-389d-4306-8861-5a976d5430ae",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C66",
+      "claim": "Semantic similarity and word predictability are only weakly correlated and may be neurally dissociable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this conflict can be resolved by noting that semantic similarity and word predictability are only weakly correlated and furthermore may be neurally dissociable (see Frank and Willems, 2017, for relevant fMRI evidence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "79d13f08-827e-4c84-ab71-bfb135b09a6f",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C67",
+      "claim": "The current findings challenge models such as TRACE in which bottom-up speech input can only ever be sharpened by prior expectations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our evidence for prediction error representations challenges models, such as TRACE (McClelland and Elman, 1986; McClelland et al., 2014), in which bottom-up speech input can only ever be sharpened by prior expectations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the implications of the findings for theoretical models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "586a0cf5-29c3-4c0a-b03d-f2f23e3202dc",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C68",
+      "claim": "The current findings support predictive coding accounts in which prediction errors play an important role in perceptual inference.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our findings support predictive coding accounts in which prediction errors play an important role in perceptual inference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about the implications of the findings for theoretical models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "c05a6e73-93ab-43a9-97a5-06f4e545f470",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C69",
+      "claim": "In predictive coding accounts, prediction errors are used to update and sharpen predictions residing in separate neural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that in these predictive coding accounts, prediction errors are not the end goal of the system. Rather, they are used to update and sharpen predictions residing in separate neural populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the theoretical framework of predictive coding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "11686803-adb8-4f06-9396-3c1b2f07cf7b",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C70",
+      "claim": "Sharpened predictions may not be apparent in the current study because they reside in deeper cortical layers to which the MEG signal is less sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that these sharpened predictions are not apparent in our study because they reside in deeper cortical layers (Bastos et al., 2012) to which the MEG signal is less sensitive (H\u00e4m\u00e4l\u00e4inen et al., 1993) or in higher hierarchical levels (e.g. lexical/semantic versus the acoustic level assessed here).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about why sharpened predictions were not observed, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "bc71eea1-4399-49aa-8c20-600afa7913b3",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C71",
+      "claim": "It has been proposed that prediction errors and predictions are communicated via distinct oscillatory channels.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been proposed that prediction errors and predictions are communicated via distinct oscillatory channels (e.g. Arnal et al., 2011; Bastos et al., 2012), raising the possibility that other neural representations could be revealed with time-frequency analysis methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "d1633ee4-3423-4ce1-824f-e6173258ca8c",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C72",
+      "claim": "Magnetic fields were recorded with a VectorView system containing two orthogonal planar gradiometers at each of 102 positions within a hemispheric array.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetic fields were recorded with a VectorView system (Elekta Neuromag, Helsinki, Finland) containing two orthogonal planar gradiometers at each of 102 positions within a hemispheric array.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the MEG recording system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "e0e50dbb-b34f-42af-8cfd-756b58dd1f4d",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C73",
+      "claim": "Only data from the planar gradiometers were analyzed as these sensors have maximum sensitivity to cortical sources directly under them and are less sensitive to noise artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only data from the planar gradiometers were analyzed as these sensors have maximum sensitivity to cortical sources directly under them and therefore are less sensitive to noise artifacts (H\u00e4m\u00e4l\u00e4inen, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the rationale for sensor selection, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "dabc7daa-e6bd-4d67-bcee-c8e7278e249e",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C74",
+      "claim": "MEG data were processed using the temporal extension of Signal Source Separation in Maxfilter software to suppress noise sources, compensate for motion, and reconstruct any bad sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "MEG data were processed using the temporal extension of Signal Source Separation (Taulu et al., 2005) in Maxfilter software to suppress noise sources, compensate for motion, and reconstruct any bad sensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the data preprocessing method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "f52dce00-ba74-40b8-ba96-e1c2a35d8f0a",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C75",
+      "claim": "The data were highpass filtered above 1 Hz and downsampled to 80 Hz (with anti-alias lowpass filtering).",
+      "claim_type": "EXPLICIT",
+      "source": "The data were subsequently highpass filtered above 1 Hz and downsampled to 80 Hz (with anti-alias lowpass filtering).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the data preprocessing steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "528e372c-bba2-4f1a-bbbc-b46e47940194",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C76",
+      "claim": "Ridge regression was used to model the relationship between speech features and MEG responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We used ridge regression to model the relationship between speech features and MEG responses (Pasley et al., 2012; Ding and Simon, 2013; Di Liberto et al., 2015; Holdgraf et al., 2017; Brodbeck et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the analysis method, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "90d44d7c-f48d-45b2-9a9b-8d3a314eccb6",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C77",
+      "claim": "Before model fitting, the MEG data were epoched, outlier trials removed, and the MEG time-series z-scored.",
+      "claim_type": "EXPLICIT",
+      "source": "Before model fitting, the MEG data were epoched at matching times as the feature spaces (see below), outlier trials removed and the MEG time-series z-scored such that each time-series on every trial had a mean of zero and standard deviation of 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the data preprocessing steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "8c5d0bb9-78e8-429a-8d14-8890509ddb99",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C78",
+      "claim": "Encoding models were fitted with lags from \u2212100 to 300 ms but for model prediction purposes, a narrower range of lags (0 to 250 ms) was used.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoding models were fitted with lags from \u2212100 to 300 ms but for model prediction purposes (see below), we used a narrower range of lags (0 to 250 ms) to avoid possible artefacts at the earliest and latest lags (Crosse et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the analysis parameters, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "a537a1d8-8233-42dd-b967-e82352c760a7",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C79",
+      "claim": "All acoustic feature spaces were z-score transformed such that each time-series on every trial had a mean of zero and standard deviation of 1.",
+      "claim_type": "EXPLICIT",
+      "source": "All feature spaces were downsampled to 80 Hz to match the MEG sampling rate and the acoustic feature spaces (i.e. 1, 2, 3 above) were z-score transformed such that each time-series on every trial had a mean of zero and standard deviation of 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the feature preprocessing steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "16a60202-c3c7-46f5-a905-745a0690f922",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C80",
+      "claim": "For each trial/word, all feature spaces were zero-padded before speech onset and after speech offset to enable information at the beginning and end of each spoken word to inform the model fits.",
+      "claim_type": "EXPLICIT",
+      "source": "For each trial/word, all feature spaces were zero-padded before speech onset to match the duration of the longest negative lag used for model fitting (i.e. 100 ms). Similarly, zero-padding was added after speech offset to match the duration of the longest positive lag (i.e. 300 ms). This enabled information at the beginning and end of each spoken word to inform the model fits for negative and positive lags, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the feature preprocessing steps and rationale.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "ccb5a2a8-a47f-481c-a821-45a56e119bb5",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C81",
+      "claim": "Before decoding model fitting, the data from the 204 planar gradiometers were transformed into principal components and the first 50 components retained.",
+      "claim_type": "EXPLICIT",
+      "source": "Before model fitting, to remove redundant dimensions and reduce computation time, the data from the 204 planar gradiometers were transformed into principal components and the first 50 components retained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the data preprocessing for decoding analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "d66a94e8-61a7-44e5-81bd-6b3ba9c76811",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C82",
+      "claim": "To control for overfitting, ridge regression was used and the lambda parameter was varied over 17 values.",
+      "claim_type": "EXPLICIT",
+      "source": "To control for overfitting, we used ridge regression and varied the lambda parameter (over 17 values as follows: 20, 21, 23, \u2026 220) which varies the degree to which strongly positive or negative weights are penalized (Crosse et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the regularization method, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "87ffc420-24e2-4e79-8c14-1167284da61d",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C83",
+      "claim": "The lambda parameter was optimized using a leave-one-trial-out cross-validation procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "This lambda parameter was optimized using a leave-one-trial-out cross-validation procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the model optimization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "36b42391-2a07-458f-ae28-20ef3a87b05d",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C84",
+      "claim": "Model accuracy was computed as the Pearson correlation between the predicted and observed data.",
+      "claim_type": "EXPLICIT",
+      "source": "We computed model accuracy as the Pearson correlation between the predicted and observed data and repeated this procedure such that model accuracies were obtained for all trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the model evaluation metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "5765be03-e83b-46e2-aa96-2e112501bd05",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C85",
+      "claim": "The optimal lambda value was selected as the mode of the model accuracy distribution over participants and conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal lambda value was then selected as the mode of the model accuracy distribution over participants and conditions (Holdgraf et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the lambda selection procedure, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "dd2a5bb1-b877-4867-902f-95265aebddb7",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C86",
+      "claim": "When testing complex models that combined feature spaces, lambda was optimized for each component feature space independently resulting in a search space of 17 \u00d7 17 = 289 lambda values.",
+      "claim_type": "EXPLICIT",
+      "source": "When testing the complex models that combined feature spaces, lambda was optimized for each component feature space independently resulting in a search space of 17 \u00d7 17 = 289 lambda values (i.e. 'banded' ridge regression; Nunez-Elizalde et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the lambda optimization for combined models, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "ccea6805-12c3-48a0-9706-a099cc0371aa",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C87",
+      "claim": "When testing for differences in encoding model accuracies, model accuracies were averaged over trials and over the 20 sensors with the highest model accuracies in each hemisphere separately.",
+      "claim_type": "EXPLICIT",
+      "source": "When testing for differences in encoding model accuracies, we averaged model accuracies over trials and over the 20 sensors with the highest model accuracies (in each hemisphere separately).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the data aggregation procedure for statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "f84daeea-6685-4fc2-8d7e-9cd72d0ebc06",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C88",
+      "claim": "Null distributions for testing above-chance encoding model accuracies were created by randomly permuting the feature representations across trials or within trials.",
+      "claim_type": "EXPLICIT",
+      "source": "When testing for above-chance encoding model accuracies, null distributions were created for each condition separately by randomly permuting the feature representations across trials (i.e. shuffling the words in our stimulus set) or within trials (i.e. shuffling the spectrotemporal modulation channels and time-bins for each word).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the permutation testing procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "af8c2b90-1819-4cba-a3b0-805550177169",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C89",
+      "claim": "Denoising source separation (DSS) was used to transform the TRFs into a set of linear components ordered by their consistency over trials.",
+      "claim_type": "EXPLICIT",
+      "source": "To visualize the weights of the spectrotemporal modulation encoding model, or 'temporal response functions (TRFs)', we used denoising source separation (DSS) to transform the TRFs into a set of linear components (spatial filters) ordered by their consistency over trials (de Cheveign\u00e9 and Parra, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the visualization method, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "f85681dd-4629-44b5-94f6-52ca9d5ad487",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "claim_id": "C90",
+      "claim": "The first three DSS components (i.e. the three most consistent components) were retained and projected back into sensor-space.",
+      "claim_type": "EXPLICIT",
+      "source": "The first three DSS components (i.e. the three most consistent components) were retained and projected back into sensor-space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the DSS component selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "fe541b09-c603-4b3f-bdd1-6614b9952636",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study included 21 right-handed, native English-speaking participants aged 18-40 years (mean=22, SD=2) with no self-reported hearing impairment or neurological disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 provide clear demographic and inclusion criteria for the participant sample. These are standard methodological details that are explicitly stated and internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "6f4c8603-dec5-46b7-93dd-7715e77208c1",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study used 468 monosyllabic words that were noise-vocoded with 3, 6, or 12 spectral channels to parametrically manipulate sensory detail while preserving temporal envelope information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C10 describe the stimulus generation and vocoding procedure in detail. The technical specifications are clearly stated, the vocoding method is well-established (Shannon et al., 1995), and the parameters are appropriate for manipulating speech intelligibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "3d7dc9b8-75a1-469a-bbd8-238ff236377c",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Spectrotemporal modulation features best predicted MEG responses compared to envelope, spectrogram, and phonetic features, with sensor distributions consistent with bilateral superior temporal cortex sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 report the primary encoding model comparison with statistical support (post-hoc t-tests, Figure 3A) and anatomically plausible sensor topography (Figure 3B). The finding is robust and clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "b8f6ad3b-6bbc-482a-a86e-6a2dc77f6582",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Speech spectrotemporal modulations show a lowpass profile following a 1/f relationship, with different modulation frequencies corresponding to distinct phonetic features (fast/broad for consonant bursts, slow/narrow for vowels, intermediate for formant transitions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 characterize the acoustic properties of the stimuli with support from established literature. The 1/f relationship (C20) and phonetic interpretations (C21-C23) are well-documented in prior work and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "86d13904-7892-4327-ba81-943eda415934",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Increasing vocoder channels from 3 to 12 significantly enhanced intermediate spectrotemporal modulations (1-2 cycles/octave, 2-4 Hz) that are known to support speech intelligibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 report FDR-corrected statistical effects (Figure 4C) linking vocoding manipulation to specific acoustic changes. The connection to intelligibility is well-supported by multiple citations and consistent with the behavioral manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "87c2b8bf-cba0-47c0-8273-c53ae79507a9",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Neural encoding of spectrotemporal modulations showed a significant interaction between prior knowledge and sensory detail: matching text enhanced encoding for low-clarity speech but suppressed it for high-clarity speech, consistent with prediction error rather than sharpening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 report the critical interaction effect with appropriate statistics (t-tests with effect sizes) in the left hemisphere. The pattern directly tests the theoretical prediction and is inconsistent with sharpening models (Figure 1D comparison). This is the study's central finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "1d7d6001-f9c2-46d2-9daa-b21e01c22ae5",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Even in conditions with lowest model accuracy (mismatching 3-channel and matching 12-channel), neural responses encoded spectrotemporal modulations significantly above chance as determined by feature-shuffled null distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 report permutation testing results (Figure 5\u2014figure supplement 1A) showing all conditions exceed chance (p<0.01). This control analysis confirms that neural encoding occurs even when the interaction reduces model accuracy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "f385d18d-40e4-4cd5-a841-a227fcc4ef34",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Temporal response functions showed peaks at 87.5 and 150 ms, indicating that spectrotemporal modulation encoding occurs at short latencies consistent with early hierarchical processing stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 report TRF analysis results (Figure 5B) with clear temporal peaks. The interpretation that these short latencies reflect early processing is reasonable and consistent with the MEG literature, though the hierarchical inference is somewhat indirect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "899e6956-7e66-405b-accf-830378e672b8",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Decoding analysis revealed that intermediate temporal modulations (2-4 Hz) were best represented in MEG responses, and the interaction between prior knowledge and sensory detail was specific to these intermediate modulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 report decoding results with FDR correction (Figure 6A-B). The finding that intermediate modulations are preferentially encoded is consistent with prior neurophysiology (multiple citations in C41), and the specificity of the interaction strengthens the main result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "68667fb7-b969-44de-91ff-cc4c6e1227af",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Single-lag decoding analysis showed that the interaction between prior knowledge and sensory detail emerged rapidly, peaking around 50 ms after speech input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 reports the temporal dynamics of the interaction effect (Figure 6D). The 50 ms peak timing is clearly shown in the data, though statistical significance is noted as marginal for some contrasts. This addresses a key question about when prediction errors are computed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "3b36d035-2c8f-4527-9480-be2ba16a3b20",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study demonstrates four main findings: (1) spectrotemporal modulations best predict MEG responses, (2) intermediate modulations (2-4 Hz, 1-2 cycles/octave) distinguish words and are affected by vocoding, (3) prior knowledge and signal quality interactively influence neural representations peaking at ~50 ms, and (4) this interaction is specific to intermediate modulations, consistent with prediction error rather than sharpening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50 summarize the four main findings, each supported by the preceding analyses. The integration of encoding, acoustic, and decoding analyses provides converging evidence. The interpretation favoring prediction error over sharpening is well-justified by the interaction pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "f518193d-4462-4b4b-97bc-b29d156ac202",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Spectrotemporal modulations capture linguistically relevant features (formant transitions, fundamental frequency) and are well-represented in auditory cortex neurons as demonstrated by animal electrophysiology and human neuroimaging studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 contextualize the findings within established literature. All statements are appropriately cited and represent accurate summaries of prior work. This provides theoretical grounding for why spectrotemporal modulations are a meaningful feature space.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "81cccf4a-6cd3-4dc8-8472-79bdc1a08dbe",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Cortical responses are selectively tuned to intermediate spectrotemporal modulations that convey speech information rather than faithfully encoding all acoustic detail, suggesting superior temporal neurons occupy an intermediate hierarchical stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 interpret the selective encoding of intermediate modulations. The inference is well-supported by the decoding results (C40) and consistent with cited literature. The hierarchical interpretation is reasonable given the partial acoustic invariance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "ecae47ce-073d-40a0-a36a-92b2df7d2e2e",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The interaction between sensory detail and prior knowledge provides unambiguous support for prediction error coding, and the rapid emergence within 100 ms indicates prediction errors are computed during early feedforward processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 draw strong theoretical conclusions from the interaction effect and its timing. The logic is sound: the interaction pattern uniquely distinguishes prediction error from sharpening (Blank & Davis 2016), and the early timing rules out late feedback-dependent mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "d412cbe3-e4a3-4c1b-9fc5-f409b5817bc3",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The experimental manipulation approach used here (varying both predictions and sensory quality) more clearly distinguishes prediction error from sharpening compared to natural listening paradigms where predictability measures are correlated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 discuss methodological advantages and relate findings to other approaches. The argument that experimental control enables clearer theoretical tests is valid, and the discussion of semantic similarity vs. predictability (C65-C66) addresses potential conflicts with other studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "ba881696-f93f-4738-aad9-a65e8f41295a",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The findings challenge TRACE-like models where prior knowledge only sharpens input, instead supporting predictive coding frameworks where prediction errors update higher-level representations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 discuss theoretical implications. The challenge to TRACE is justified by the interaction pattern, and the support for predictive coding is appropriate. The caveat (C69) that prediction errors serve to update predictions (not as end representations) shows nuanced understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "b8307799-19f9-4906-9f33-dd54ea33f355",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Sharpened predictions may not be apparent in MEG data because they could reside in deeper cortical layers with lower MEG sensitivity or be communicated via distinct oscillatory channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C71 offer speculative explanations for why sharpened predictions weren't observed. While the hypotheses are plausible and appropriately cited, they remain untested. This is acknowledged as speculation and suggests future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "927173b9-db7c-4747-8712-e1ba92aefa15",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "MEG data were acquired using a 204-channel VectorView system, with analysis restricted to planar gradiometers due to their superior sensitivity to local cortical sources and reduced noise susceptibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 describe MEG acquisition and preprocessing. The sensor selection rationale (C73) is well-justified and cited. Standard preprocessing steps (SSS, filtering, downsampling) are appropriate and clearly described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "2ab54071-5c6b-486a-a833-a8c8acebcd2c",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Ridge regression encoding models mapped speech features to MEG responses using lags from -100 to 300 ms (predictions from 0-250 ms), with z-scored data and zero-padding to handle word boundaries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 detail the encoding analysis methodology. The approach is standard in the field (multiple citations), preprocessing steps are appropriate, and the lag selection rationale (avoiding edge artifacts) is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "c6d3cd3a-60ff-4df0-96e3-cc5a1c62bbbd",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Decoding models used PCA-reduced MEG data (50 components) with ridge regression, optimizing lambda via leave-one-trial-out cross-validation and selecting the mode across participants and conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C86 describe decoding methodology. PCA dimensionality reduction is reasonable for computational efficiency, cross-validation is appropriate, and the lambda optimization strategy (mode selection, banded ridge for combined models) follows established practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    },
+    {
+      "id": "ea4b94db-358e-46f1-be29-5488956230b9",
+      "content_id": "511094eb-0398-4fb9-9557-8334b5421e43",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Statistical testing used sensor selection (top 20 per hemisphere), permutation-based null distributions (feature-shuffled and word-shuffled), and DSS visualization of TRFs retaining the three most consistent components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 describe statistical and visualization methods. Sensor selection is data-driven, permutation testing provides appropriate null distributions, and DSS is a standard method for visualizing TRFs. All approaches are well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:06:17.638359Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e55aa585-f226-4a21-ba3c-2bd01fb789c9",
+      "result_id": "fe541b09-c603-4b3f-bdd1-6614b9952636"
+    },
+    {
+      "claim_id": "d975e757-518d-48a9-8083-626481015983",
+      "result_id": "fe541b09-c603-4b3f-bdd1-6614b9952636"
+    },
+    {
+      "claim_id": "7be33cbb-397e-4cd9-be6d-7e547bf9eb11",
+      "result_id": "fe541b09-c603-4b3f-bdd1-6614b9952636"
+    },
+    {
+      "claim_id": "188b2479-aa7d-4ff3-baa8-9be993d48f66",
+      "result_id": "6f4c8603-dec5-46b7-93dd-7715e77208c1"
+    },
+    {
+      "claim_id": "4115803a-0cd5-48f2-b850-991c1c817500",
+      "result_id": "6f4c8603-dec5-46b7-93dd-7715e77208c1"
+    },
+    {
+      "claim_id": "df4748fb-3a0e-47f3-b005-09943a8a90c8",
+      "result_id": "6f4c8603-dec5-46b7-93dd-7715e77208c1"
+    },
+    {
+      "claim_id": "98d7c2cf-f296-4b19-9048-813840c0eec8",
+      "result_id": "6f4c8603-dec5-46b7-93dd-7715e77208c1"
+    },
+    {
+      "claim_id": "bec41a39-c1a4-4696-ba93-b36e96864784",
+      "result_id": "6f4c8603-dec5-46b7-93dd-7715e77208c1"
+    },
+    {
+      "claim_id": "e5e8f189-bb40-45c8-9721-022c98e4a48b",
+      "result_id": "6f4c8603-dec5-46b7-93dd-7715e77208c1"
+    },
+    {
+      "claim_id": "e3ddee10-6bb4-4d16-b3d8-dee8b1be0491",
+      "result_id": "6f4c8603-dec5-46b7-93dd-7715e77208c1"
+    },
+    {
+      "claim_id": "e5517a2a-c673-4818-84c7-fdbd2d86cf50",
+      "result_id": "3d7dc9b8-75a1-469a-bbd8-238ff236377c"
+    },
+    {
+      "claim_id": "090e12e2-9ab0-4663-a209-191f7f9a7f67",
+      "result_id": "3d7dc9b8-75a1-469a-bbd8-238ff236377c"
+    },
+    {
+      "claim_id": "de78a3c5-f9c2-4b17-8a1f-e021ddde9843",
+      "result_id": "b8f6ad3b-6bbc-482a-a86e-6a2dc77f6582"
+    },
+    {
+      "claim_id": "e0b4d5ab-1d45-4b79-9a4e-9f299aac87b1",
+      "result_id": "b8f6ad3b-6bbc-482a-a86e-6a2dc77f6582"
+    },
+    {
+      "claim_id": "4beb36ce-bca4-4031-bec2-411fe26309d3",
+      "result_id": "b8f6ad3b-6bbc-482a-a86e-6a2dc77f6582"
+    },
+    {
+      "claim_id": "6bb31fba-b950-4f94-b343-3adea89ced84",
+      "result_id": "b8f6ad3b-6bbc-482a-a86e-6a2dc77f6582"
+    },
+    {
+      "claim_id": "e3ab0eb0-6fe5-4fb4-9406-f9c25d024474",
+      "result_id": "b8f6ad3b-6bbc-482a-a86e-6a2dc77f6582"
+    },
+    {
+      "claim_id": "6783f38a-6497-4e46-b64d-af78a79d3d20",
+      "result_id": "86d13904-7892-4327-ba81-943eda415934"
+    },
+    {
+      "claim_id": "cc1a852f-7fc9-43d7-9bad-5ff5baf7d2a5",
+      "result_id": "86d13904-7892-4327-ba81-943eda415934"
+    },
+    {
+      "claim_id": "489f0d1b-65c0-4b54-8691-1f6ab5090ccf",
+      "result_id": "87c2b8bf-cba0-47c0-8273-c53ae79507a9"
+    },
+    {
+      "claim_id": "f908bd28-bca8-496c-9a3c-c85943cc7f41",
+      "result_id": "87c2b8bf-cba0-47c0-8273-c53ae79507a9"
+    },
+    {
+      "claim_id": "3de25b9e-9289-48d8-a21b-182ff9f2061c",
+      "result_id": "87c2b8bf-cba0-47c0-8273-c53ae79507a9"
+    },
+    {
+      "claim_id": "0b83ddce-6559-480c-965a-c4297f74f472",
+      "result_id": "87c2b8bf-cba0-47c0-8273-c53ae79507a9"
+    },
+    {
+      "claim_id": "d1eba94a-27b2-49f7-bd95-46cf4e7238d5",
+      "result_id": "1d7d6001-f9c2-46d2-9daa-b21e01c22ae5"
+    },
+    {
+      "claim_id": "91e35a13-8037-40ad-a4e9-518e332b897c",
+      "result_id": "1d7d6001-f9c2-46d2-9daa-b21e01c22ae5"
+    },
+    {
+      "claim_id": "574c1df1-7802-4eac-935e-59ba623547c1",
+      "result_id": "f385d18d-40e4-4cd5-a841-a227fcc4ef34"
+    },
+    {
+      "claim_id": "378638f9-1c72-4407-b509-9a0b44132a7d",
+      "result_id": "f385d18d-40e4-4cd5-a841-a227fcc4ef34"
+    },
+    {
+      "claim_id": "5aca0467-cb3a-497c-a4ce-14fc4475b359",
+      "result_id": "f385d18d-40e4-4cd5-a841-a227fcc4ef34"
+    },
+    {
+      "claim_id": "c105efe8-553c-4394-84d8-da90a6654874",
+      "result_id": "899e6956-7e66-405b-accf-830378e672b8"
+    },
+    {
+      "claim_id": "668394c1-7120-44e7-8c57-23daefbba355",
+      "result_id": "899e6956-7e66-405b-accf-830378e672b8"
+    },
+    {
+      "claim_id": "9c6a6fc0-65fb-44f5-aabb-1d1d1bc82c71",
+      "result_id": "899e6956-7e66-405b-accf-830378e672b8"
+    },
+    {
+      "claim_id": "08ca1c1c-e3a2-4eef-90db-230108f603ae",
+      "result_id": "68667fb7-b969-44de-91ff-cc4c6e1227af"
+    },
+    {
+      "claim_id": "e8df8b66-ba48-4b5d-9f63-b6a71a7d3226",
+      "result_id": "3b36d035-2c8f-4527-9480-be2ba16a3b20"
+    },
+    {
+      "claim_id": "9a12dd5c-08e5-4402-afb5-7e461c54d621",
+      "result_id": "3b36d035-2c8f-4527-9480-be2ba16a3b20"
+    },
+    {
+      "claim_id": "c34c7327-9c0b-4176-b25f-f0ea6c562f9f",
+      "result_id": "3b36d035-2c8f-4527-9480-be2ba16a3b20"
+    },
+    {
+      "claim_id": "e1a74a15-981c-4fd6-95d3-f7a8186e1def",
+      "result_id": "3b36d035-2c8f-4527-9480-be2ba16a3b20"
+    },
+    {
+      "claim_id": "b07eae4b-7bbf-4589-924a-a3f89b29d001",
+      "result_id": "3b36d035-2c8f-4527-9480-be2ba16a3b20"
+    },
+    {
+      "claim_id": "6cfb8144-e9a6-4114-bf44-ff447f92d1a0",
+      "result_id": "3b36d035-2c8f-4527-9480-be2ba16a3b20"
+    },
+    {
+      "claim_id": "48f7a939-4fdf-492e-a493-c8199269e977",
+      "result_id": "3b36d035-2c8f-4527-9480-be2ba16a3b20"
+    },
+    {
+      "claim_id": "d2d60788-a1cf-4107-b1bc-2fe8a5a50c04",
+      "result_id": "f518193d-4462-4b4b-97bc-b29d156ac202"
+    },
+    {
+      "claim_id": "48397767-3aaa-469d-b208-36f38f0755b5",
+      "result_id": "f518193d-4462-4b4b-97bc-b29d156ac202"
+    },
+    {
+      "claim_id": "5c43209d-bedb-4839-a4b4-315f22b0939c",
+      "result_id": "f518193d-4462-4b4b-97bc-b29d156ac202"
+    },
+    {
+      "claim_id": "404c2299-1062-4547-acec-a15e5abab7be",
+      "result_id": "f518193d-4462-4b4b-97bc-b29d156ac202"
+    },
+    {
+      "claim_id": "91915606-f046-49d4-86bb-5d6fd026249d",
+      "result_id": "f518193d-4462-4b4b-97bc-b29d156ac202"
+    },
+    {
+      "claim_id": "ec5cb9a9-3854-4c15-aebf-78ecc08fce09",
+      "result_id": "81cccf4a-6cd3-4dc8-8472-79bdc1a08dbe"
+    },
+    {
+      "claim_id": "63663630-6558-4817-8cb2-0656d7f271af",
+      "result_id": "81cccf4a-6cd3-4dc8-8472-79bdc1a08dbe"
+    },
+    {
+      "claim_id": "bee7efbc-a4f1-4360-9b41-a355ecdde6d0",
+      "result_id": "81cccf4a-6cd3-4dc8-8472-79bdc1a08dbe"
+    },
+    {
+      "claim_id": "a3fb0d6e-ec01-44e6-84af-bf878311ed0f",
+      "result_id": "81cccf4a-6cd3-4dc8-8472-79bdc1a08dbe"
+    },
+    {
+      "claim_id": "92d29a49-c8c9-4488-afac-32906fe61b27",
+      "result_id": "ecae47ce-073d-40a0-a36a-92b2df7d2e2e"
+    },
+    {
+      "claim_id": "d2ee83ee-2899-4fad-9311-536508c0f859",
+      "result_id": "ecae47ce-073d-40a0-a36a-92b2df7d2e2e"
+    },
+    {
+      "claim_id": "24f93a2d-7afe-4b35-9beb-c0d9ef274efa",
+      "result_id": "ecae47ce-073d-40a0-a36a-92b2df7d2e2e"
+    },
+    {
+      "claim_id": "7cd7c298-6f1d-4767-a3f7-d843acb9db94",
+      "result_id": "d412cbe3-e4a3-4c1b-9fc5-f409b5817bc3"
+    },
+    {
+      "claim_id": "edd72ab8-f5a8-4c52-97a9-423b0c8c5cb4",
+      "result_id": "d412cbe3-e4a3-4c1b-9fc5-f409b5817bc3"
+    },
+    {
+      "claim_id": "06923522-1673-426f-8e51-8264f34535b8",
+      "result_id": "d412cbe3-e4a3-4c1b-9fc5-f409b5817bc3"
+    },
+    {
+      "claim_id": "adb447ab-389d-4306-8861-5a976d5430ae",
+      "result_id": "d412cbe3-e4a3-4c1b-9fc5-f409b5817bc3"
+    },
+    {
+      "claim_id": "79d13f08-827e-4c84-ab71-bfb135b09a6f",
+      "result_id": "ba881696-f93f-4738-aad9-a65e8f41295a"
+    },
+    {
+      "claim_id": "586a0cf5-29c3-4c0a-b03d-f2f23e3202dc",
+      "result_id": "ba881696-f93f-4738-aad9-a65e8f41295a"
+    },
+    {
+      "claim_id": "c05a6e73-93ab-43a9-97a5-06f4e545f470",
+      "result_id": "ba881696-f93f-4738-aad9-a65e8f41295a"
+    },
+    {
+      "claim_id": "11686803-adb8-4f06-9396-3c1b2f07cf7b",
+      "result_id": "b8307799-19f9-4906-9f33-dd54ea33f355"
+    },
+    {
+      "claim_id": "bc71eea1-4399-49aa-8c20-600afa7913b3",
+      "result_id": "b8307799-19f9-4906-9f33-dd54ea33f355"
+    },
+    {
+      "claim_id": "d1633ee4-3423-4ce1-824f-e6173258ca8c",
+      "result_id": "927173b9-db7c-4747-8712-e1ba92aefa15"
+    },
+    {
+      "claim_id": "e0e50dbb-b34f-42af-8cfd-756b58dd1f4d",
+      "result_id": "927173b9-db7c-4747-8712-e1ba92aefa15"
+    },
+    {
+      "claim_id": "dabc7daa-e6bd-4d67-bcee-c8e7278e249e",
+      "result_id": "927173b9-db7c-4747-8712-e1ba92aefa15"
+    },
+    {
+      "claim_id": "f52dce00-ba74-40b8-ba96-e1c2a35d8f0a",
+      "result_id": "927173b9-db7c-4747-8712-e1ba92aefa15"
+    },
+    {
+      "claim_id": "528e372c-bba2-4f1a-bbbc-b46e47940194",
+      "result_id": "2ab54071-5c6b-486a-a833-a8c8acebcd2c"
+    },
+    {
+      "claim_id": "90d44d7c-f48d-45b2-9a9b-8d3a314eccb6",
+      "result_id": "2ab54071-5c6b-486a-a833-a8c8acebcd2c"
+    },
+    {
+      "claim_id": "8c5d0bb9-78e8-429a-8d14-8890509ddb99",
+      "result_id": "2ab54071-5c6b-486a-a833-a8c8acebcd2c"
+    },
+    {
+      "claim_id": "a537a1d8-8233-42dd-b967-e82352c760a7",
+      "result_id": "2ab54071-5c6b-486a-a833-a8c8acebcd2c"
+    },
+    {
+      "claim_id": "16a60202-c3c7-46f5-a905-745a0690f922",
+      "result_id": "2ab54071-5c6b-486a-a833-a8c8acebcd2c"
+    },
+    {
+      "claim_id": "ccb5a2a8-a47f-481c-a821-45a56e119bb5",
+      "result_id": "c6d3cd3a-60ff-4df0-96e3-cc5a1c62bbbd"
+    },
+    {
+      "claim_id": "d66a94e8-61a7-44e5-81bd-6b3ba9c76811",
+      "result_id": "c6d3cd3a-60ff-4df0-96e3-cc5a1c62bbbd"
+    },
+    {
+      "claim_id": "87ffc420-24e2-4e79-8c14-1167284da61d",
+      "result_id": "c6d3cd3a-60ff-4df0-96e3-cc5a1c62bbbd"
+    },
+    {
+      "claim_id": "36b42391-2a07-458f-ae28-20ef3a87b05d",
+      "result_id": "c6d3cd3a-60ff-4df0-96e3-cc5a1c62bbbd"
+    },
+    {
+      "claim_id": "5765be03-e83b-46e2-aa96-2e112501bd05",
+      "result_id": "c6d3cd3a-60ff-4df0-96e3-cc5a1c62bbbd"
+    },
+    {
+      "claim_id": "dd2a5bb1-b877-4867-902f-95265aebddb7",
+      "result_id": "c6d3cd3a-60ff-4df0-96e3-cc5a1c62bbbd"
+    },
+    {
+      "claim_id": "ccea6805-12c3-48a0-9706-a099cc0371aa",
+      "result_id": "ea4b94db-358e-46f1-be29-5488956230b9"
+    },
+    {
+      "claim_id": "f84daeea-6685-4fc2-8d7e-9cd72d0ebc06",
+      "result_id": "ea4b94db-358e-46f1-be29-5488956230b9"
+    },
+    {
+      "claim_id": "af8c2b90-1819-4cba-a3b0-805550177169",
+      "result_id": "ea4b94db-358e-46f1-be29-5488956230b9"
+    },
+    {
+      "claim_id": "f85681dd-4629-44b5-94f6-52ca9d5ad487",
+      "result_id": "ea4b94db-358e-46f1-be29-5488956230b9"
+    }
+  ],
+  "comparisons": []
+}

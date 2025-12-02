@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Foldback inversions are mediated by single-stranded DNA hairpins, with two distinct types identified: small-loop hairpins (median 3-4 nt) suppressed by MRE11, SAE2, SLX1, and YKU80, and large-loop hairpins (median 36 nt) suppressed by YEN1, TEL1, SWR1, and MRC1. The inversion hotspot forms a 15 bp stem hairpin with a 3 nt loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C24-C29, C35-C38, and C53-C55 are well-supported by whole genome sequencing data (Figures 1, 3, 5), showing distinct hairpin loop size distributions between mutants with MRE11/SAE2 defects versus wild-type strains. The structural features of foldback inversions (deletion, duplication, inversion junction) are documented by WGS read depth and discordant read pairs. The hotspot characterization is supported by sequence analysis and MFOLD predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "CRISPR/Cas9-induced DSB experiments demonstrate that long-stem hairpin-forming sequences can form foldback inversions when proximal or distal to the DSB, whereas short-stem hairpin-forming sequences primarily form foldback inversions when proximal (<50 bp) to the DSB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C42-C52 are supported by systematic CRISPR/Cas9 DSB induction experiments at multiple sites (Figure 4, Figure 4\u2014figure supplement 1). The data show position-dependent usage of hairpin-forming sequences, with short-stem hairpins used only when adjacent to DSBs and long-stem hairpins used at distances up to ~4 kb. Statistical analysis of hairpin properties (loop length, stem length) within 50 bp of DSBs supports the proximity requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "sae2 mutations cause ~240-fold increases in foldback inversion rates compared to wild-type, with 92-100% of GCRs being foldback inversions. mre11 mutations cause higher overall GCR rates but a more diverse GCR spectrum with only 30-50% foldback inversions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 and C30-C33 are supported by quantitative GCR rate measurements (Figure 1B-C, Supplementary file 1) and GCR spectrum analysis from whole genome sequencing. The specificity of sae2 mutations for foldback inversions versus the broader spectrum in mre11 mutants is well-documented. Statistical comparisons and confidence intervals are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Deletion of the inversion hotspot in a sae2\u0394 strain does not reduce the overall GCR rate or foldback inversion rate, indicating the hotspot redirects DNA damage rather than inducing it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by GCR rate measurements and spectrum analysis in the sae2\u0394 hotspot\u0394 strain (Figure 1B-C, Figure 3A). The similar GCR rates between sae2\u0394 and sae2\u0394 hotspot\u0394 strains, combined with the use of alternative inversion sites in the hotspot deletion strain, support the interpretation that the hotspot channels rather than induces damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The sae2\u0394 tel1\u0394 double mutant exclusively forms small-loop hairpin-mediated foldback inversions (median 3 nt), demonstrating that the sae2\u0394 mutation dominates the GCR spectrum and that Mre11-Rad50-Xrs2-Sae2 preferentially suppresses small-loop hairpins while large-loop hairpins escape surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C63 are supported by GCR spectrum analysis in tel1\u0394 single mutants (showing large-loop hairpins) versus sae2\u0394 tel1\u0394 double mutants (showing small-loop hairpins) (Figure 6). The epistatic relationship and the absence of hotspot usage in tel1\u0394 mutants (p=5\u00d710\u207b\u2075) support the mechanistic interpretation. However, C63 is speculative about formation frequencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C77",
+      "C78"
+    ],
+    "result": "Exo1 and Sgs1/Dna2 define redundant resection pathways that promote foldback inversion formation. Individual loss of Exo1 or Sgs1 modestly reduces foldback inversion rates in sae2\u0394 mutants (~20% and threefold reduction, respectively), while exo1\u0394 sgs1\u0394 double mutants only form de novo telomere addition GCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 and C77-C78 are supported by GCR rate measurements and spectrum analysis in single and double mutants (Figure 7, Supplementary file 1). The redundancy is demonstrated by the complete absence of foldback inversions in exo1\u0394 sgs1\u0394 double mutants. CRISPR/Cas9 experiments in sae2\u0394 exo1\u0394 mutants confirm that long-range resection still occurs but is reduced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "The Yku70-Yku80 complex suppresses small-loop hairpin formation independently of Sae2, as demonstrated by increased foldback inversions in yku80\u0394 single mutants and synergistic increases in sae2\u0394 yku80\u0394 double mutants (threefold increase over sae2\u0394 alone).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 and C79 are supported by GCR rate measurements and spectrum analysis (Figure 7, Supplementary file 1). The synergistic effect in sae2\u0394 yku80\u0394 double mutants and the presence of short-loop hairpin foldback inversions in yku80\u0394 single mutants support independent suppression mechanisms. The reduction in sae2\u0394 sgs1\u0394 yku80\u0394 triple mutants confirms Sgs1's role in resection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Rad1-Rad10 and Mus81-Mms4 endonucleases process hairpin structures during foldback inversion formation. rad10\u0394 mutations increase imperfect stem usage, while mus81\u0394 mutations reduce foldback inversion proportions in sae2\u0394 mutants, suggesting Mus81-Mms4 processes 3' flaps of ssDNA hairpins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 are supported by GCR spectrum analysis in rad10\u0394 and mus81\u0394 mutants (Figure 8, Supplementary file 1). The increased imperfect stems in sae2\u0394 rad10\u0394 mutants and the reduced foldback inversion proportion in sae2\u0394 mus81\u0394 mutants (p=0.005) are statistically significant. CRISPR/Cas9 experiments confirm the role of Mus81-Mms4 in DSB-induced foldback inversions (p=0.0003).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Slx1-Slx4 and Yen1 flap endonucleases suppress foldback inversion formation through distinct mechanisms. Slx1-Slx4 suppresses small-loop hairpins (threefold increase in sae2\u0394 slx1\u0394), while Yen1 specifically suppresses large-loop hairpins (fivefold increase in yen1\u0394, p=0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 are supported by GCR rate measurements and hairpin loop size analysis (Figure 8, Supplementary file 1). The threefold increase in sae2\u0394 slx1\u0394 mutants (p=7\u00d710\u207b\u2076) and the specific accumulation of large-loop hairpins in yen1\u0394 mutants (p=0.02) support distinct suppression pathways. The sae2\u0394 yen1\u0394 double mutant showing small-loop hairpins confirms pathway specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Foldback inversions are stabilized by Rad52-dependent homologous recombination-mediated secondary rearrangements, including single-strand annealing between ura3-52 and URA3 (53% in sae2\u0394, 75% in mre11\u0394). In sae2\u0394 rad52\u0394 mutants, foldback inversions are resolved by microhomology-mediated translocations and de novo telomere addition instead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C97-C104, C120-C125, and C131-C133 are supported by GCR structure analysis from whole genome sequencing (Figures 6-9, Supplementary file 3). The absence of homology-mediated rearrangements in sae2\u0394 rad52\u0394 mutants and the absence of ura3-52/URA3 products in rad10\u0394 mutants support the SSA mechanism. The Rad1-Rad10 requirement for SSA is well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C134",
+      "C150",
+      "C151"
+    ],
+    "result": "POL32-dependent break-induced replication is not required for foldback inversion formation or resolution. The sae2\u0394 pol32\u0394 double mutant forms foldback inversions resolved by homology-mediated rearrangements with a spectrum statistically indistinguishable from sae2\u0394 single mutants (p=0.19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C105-C111, C134, C150-C151 are supported by GCR rate measurements and spectrum analysis in pol32\u0394 mutants (Figure 9, Supplementary file 1, Supplementary file 3). The similar resolution product spectrum between sae2\u0394 and sae2\u0394 pol32\u0394 mutants, including ura3-52/URA3 products, demonstrates Pol32-independent mechanisms. This contradicts the established view that Pol32 is required for DSB-induced BIR, which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Pif1 is not required for foldback inversion formation but alters secondary resolution events by suppressing de novo telomere addition. The sae2\u0394 pif1\u0394 double mutant shows synergistic GCR rate increases but primarily forms de novo telomere addition GCRs (11 of 12), with the single foldback inversion resolved by de novo telomere addition. Rrm3 has no role in foldback inversion formation or resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 are supported by GCR rate measurements and spectrum analysis in pif1\u0394 and rrm3\u0394 mutants (Figure 9, Supplementary file 1, Supplementary file 3). The 160-fold increase in pif1\u0394 mutants and the shift to de novo telomere addition in sae2\u0394 pif1\u0394 double mutants support Pif1's role in suppressing telomere addition rather than foldback inversion formation. The lack of effect in rrm3\u0394 mutants is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C144",
+      "C145"
+    ],
+    "result": "Summary of foldback inversion suppression mechanisms: (1) Sae2, Mre11-Rad50-Xrs2, Ku, and Slx1-Slx4 prevent small-loop hairpin-mediated foldback inversions; (2) hairpin stems can be as short as 4 bp, with a 15 bp hotspot; (3) resection by Exo1 or Sgs1/Dna2 and hairpin editing by Mus81-Mms4 promote foldback inversion formation; (4) Yen1, Tel1, Mrc1, and Swr1 suppress large-loop hairpin formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130, C135-C139, C144-C145 represent summary conclusions supported by the collective data from multiple experiments. The mechanistic distinctions between small-loop and large-loop hairpin suppression pathways are well-documented. The specificity of Sae2 for hairpin cleavage compared to Mre11 is supported by the different GCR spectra (sae2 mutants: 92-100% foldback inversions; mre11 mutants: 30-50% foldback inversions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C146"
+    ],
+    "result": "Mechanistic speculation: short stems may be unstable and require stabilization by priming DNA synthesis, while long stems are more stable and allow flap processing. DSBs near short hairpin-forming sequences can also induce other GCR types, indicating competing mechanisms. Large loops in yen1\u0394 mutants may result from loss of 5' flap cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C143 and C146 are explicitly speculative interpretations of the observed data. While the observations (short-stem hairpins used only when proximal to DSBs, competing GCR mechanisms, large loops in yen1\u0394 mutants) are supported, the mechanistic explanations are hypotheses that require additional experimental validation. Alternative explanations (RPA binding, Mre11-Rad50-Xrs2 end processing) are mentioned but not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Mechanistic models for foldback inversion extension and secondary rearrangements: (1) SSA between resected TEL05-URA3 fragment and hairpin-extended 3' end; (2) Rad52-dependent mechanisms involving dissociated 3' ends or dicentric chromosome breakage; (3) complex GCRs with multiple inversions or centromere deletions consistent with dicentric intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 and C152-C154 present mechanistic models supported by GCR structure analysis (Figure 10, Supplementary file 3) and genetic data (rad52\u0394, pol32\u0394, rad10\u0394 mutants). The SSA model is supported by the absence of ura3-52/URA3 products in rad10\u0394 mutants and their presence in pol32\u0394 mutants. Complex GCR structures with multiple inversions and centromere deletions are documented and consistent with dicentric intermediates. Prior observations of centromere deletions are cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "General model: Conservative DNA repair requires both repair pathways (HR, damage reversal) and suppression of GCR-promoting pathways. Three pathways sequester 3' overhangs to promote GCRs: de novo telomere addition, small-loop hairpin formation, and large-loop hairpin formation. Wild-type cells contain gene products suppressing each pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 represent a general conceptual framework (Figure 11) supported by the collective experimental data. The identification of three distinct 3' overhang sequestering pathways with specific suppression mechanisms is well-documented throughout the manuscript. This represents a synthesis of the major findings rather than a specific experimental result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Clinical relevance: Foldback inversions are observed in human cancers (pancreatic, ovarian, breast, esophageal) and genetic diseases (autism, birth defects, developmental delay, intellectual disability). Ovarian tumors with increased foldback inversions show inferior survival and oncogene amplification/tumor suppressor deletion. The structural variation signature in cancers matches the GCR structures observed in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C11, C15-C17, and C158-C162 are supported by citations to cancer genomics and genetic disease studies. The comparison between the computationally determined structural variation signature in cancers (Funnell et al., 2019) and the experimental GCR structures is appropriate. These claims establish the clinical relevance of the yeast model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C18",
+      "C23",
+      "C34",
+      "C64",
+      "C122",
+      "C126",
+      "C154"
+    ],
+    "result": "Background knowledge claims: RAD27 encodes a flap endonuclease for Okazaki fragment maturation; RAD52 loads Rad51; PIF1 suppresses de novo telomere addition; engineered palindromic inversions are cleaved by Mre11-Rad50-Xrs2-Sae2; mre11-H125N eliminates nuclease activity; Sae2-Mre11-Rad50-Xrs2 cleaves ssDNA hairpins; Exo1 and Sgs1/Dna2 mediate DSB resection; Rad1-Rad10 promotes SSA; Yku70-Yku80 suppresses extensive resection; focal centromere deletions have been observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C18, C23, C34, C64, C122, C126, and C154 are background knowledge statements supported by appropriate citations to the literature. These establish the context for the experimental work and are not primary findings of this study.",
+    "result_type": "MINOR"
+  }
+]

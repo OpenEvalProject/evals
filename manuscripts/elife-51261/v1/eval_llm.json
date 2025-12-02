@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Between-group principal component analysis (bgPCA) of vestibular shape accurately distinguishes major anthropoid groups (platyrrhines, cercopithecoids, hylobatids, and hominids) with >95% correct classification after cross-validation. The first three bgPCs capture distinct morphological features and display strong phylogenetic signal (Kmult = 1.248, p<0.001), with bgPC1 (68.8% variance) discriminating hylobatids from hominids based on SC thickness and volumetric proportions, bgPC2 (19.6% variance) separating platyrrhines from other anthropoids based on relative canal sizes, and bgPC3 (11.6% variance) distinguishing hylobatids by canal trajectory and relative sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bgPCA results are well-supported by multiple lines of evidence including high classification accuracy (Table 1), strong phylogenetic signal statistics (Table 2), and detailed morphological descriptions linked to specific bgPCs (Figures 2-5). The statistical rigor is appropriate with cross-validation, and the morphological interpretations are grounded in observable anatomical differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The two Australopithecus specimens (StW 573 and StW 578) fall within the range of living great apes and humans in the bgPCA morphospace, with both classified as hominids (p=0.678 and p=0.190 respectively). StW 573 shows more plesiomorphic (chimpanzee-like) morphology and is classified as Pan (p=0.368) or Homo (p=0.264), while StW 578 displays more derived human-like features and is classified as Homo (p=0.727), suggesting both specimens show vestibular similarities with extant humans but differ in their degree of derived features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The placement of Australopithecus specimens is well-supported by bgPCA results (Figure 2), posterior probability analyses (Tables 3-4), and detailed morphological comparisons. The interpretation that both specimens show human-like features while StW 573 retains more plesiomorphic characteristics is consistent with the quantitative data and morphological observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Oreopithecus (BAC 208) displays a mosaic of vestibular features (Pan-like volumetric proportions, small lateral canal, and acute angles between canals) that does not match any extant taxon. Posterior probabilities indicate closest similarities with cercopithecoids, followed by hominids and platyrrhines, though it falls outside the variability of all extant groups (p<0.05). When restricted to hominoid genera, it appears most similar to humans but with significant differences from all genera (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mosaic morphology of Oreopithecus is well-documented through bgPCA positioning (Figure 2), posterior probability analyses (Tables 3-4), and detailed morphological descriptions (Figure 6). The statistical evidence consistently shows it falls outside extant variation while sharing features with multiple groups, supporting the mosaic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Multivariate regression shows significant but limited allometry between vestibular shape and size (R\u00b2=0.192, p<0.001). Bivariate regressions reveal significant correlation only for bgPC1 vs. volume (R\u00b2=0.635, p<0.001), with allometry more marked in hominids (R\u00b2=0.480) than other anthropoids (R\u00b2=0.058). When phylogeny is considered via PGLS, the correlation remains significant but explains less variance (R\u00b2=0.261, p<0.01). Both Australopithecus specimens fall above the hominid regression line while Oreopithecus falls slightly below.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The allometry analyses are methodologically sound, employing both OLS and PGLS regressions to account for phylogenetic non-independence. The results are presented with appropriate statistics (R\u00b2, p-values, slopes) in Table 5 and Figure 7a, and the differential allometric patterns between hominids and other anthropoids are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Bivariate regression between SC volume and length shows significant correlation explaining limited variance (ca. 20-30%). Isometry cannot be rejected for anthropoids as a whole, but negative allometry emerges when hominids and other taxa are analyzed separately. ANCOVA reveals an allometric grade shift between hominids and other anthropoids (significantly different intercepts, F=263.26, p<0.001), indicating hominids possess stouter canals than other anthropoids at equal lengths. All fossil specimens display hominid-like volumetric proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SC volume vs. length analysis is well-supported by regression statistics (Table 5), ANCOVA results, and visual representation (Figure 7b). The identification of an allometric grade shift is statistically robust, and the placement of fossil specimens relative to regression lines provides clear comparative context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Validation analyses demonstrate that the group separation observed in bgPCA is not a methodological artifact. Principal component analysis shows preexisting group structure similar to bgPCA (Figure 8), hierarchical clustering analysis correctly classifies most individuals (Table 6), and comparison between deformation-based and landmark-based 3DGM approaches yields similar results except for hylobatids and Oreopithecus along bgPC1. These differences are attributable to methodological assumptions: landmark-based methods measure spatial trajectory but not volumetric proportions, while deformation-based methods are sensitive to volumetric differences. Both approaches show similar phylogenetic signal affecting entire variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological validation is thorough and addresses potential concerns about bgPCA artifacts. Multiple independent analyses (PCA, HCA, landmark-based 3DGM) converge on similar conclusions, and the explanation for differences between methods is grounded in their underlying assumptions. The phylogenetic signal is consistently strong across both approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Phylomorphospace analysis and ancestral state reconstruction reveal the evolutionary trajectory of vestibular morphology in hominoids. The crown hominoid LCA is characterized by equally developed, slightly inflated SCs with fairly vertically compressed anterior canal. The hylobatid LCA resembles the crown hominoid LCA but with more monkey-like slender canals and hylobatid-specific features. Among hylobatids, Hoolock displays the most primitive morphology while Hylobates and Symphalangus show the most derived features. The crown hominid, hominine, and Pan-Homo clade LCAs are not far from the crown hominoid ancestral condition, with progressive increases in canal stoutness and vertical compression. The Australopithecus-Homo LCA is closer to Homo with stoutest volumetric proportions and intermediate morphology between Pan and Homo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ancestral state reconstructions are based on maximum likelihood methods applied to phylogenetically-informed data (Figure 10, Figure 11). The reconstructed morphologies are visualized and described in detail, showing logical evolutionary transitions. The methodology is appropriate for continuous character evolution, though the authors appropriately note limitations of relying primarily on extant taxa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Among crown hominids, Pan most closely resembles the inferred LCAs of crown hominids and hominoids in moderately inflated and equally developed SCs and degree of anterior canal vertical compression. Pongo occupies the positive end along bgPC1 with extremely stout canals and the most vertically compressed anterior canal. Gorilla and Homo are derived in opposite directions along bgPC2, with Gorilla showing increased lateral canal radius and Homo showing reduction of lateral canal with more developed vertical canals. Australopithecus is closer to humans than any great ape due to large vertical canals and stout volumetric proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative morphology of extant hominids and Australopithecus is well-documented through bgPCA results (Figure 10), morphological observations (Figures 1, 3-5), and ancestral state reconstructions. The characterization of each genus is specific and grounded in observable features, with Australopithecus appropriately positioned relative to extant taxa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C194"
+    ],
+    "result": "Oreopithecus displays mosaic vestibular morphology that is most consistent with stem hominoid status, though it shows some hominid-like features. It appears more plesiomorphic than extant great apes in volumetric proportions (resembling crown hominoid LCA) but is clearly distinct from hylobatids in SC stoutness and shape. The morphology does not overlap with extant hylobatids, particularly differing in canal angles and relative sizes. Plesiomorphic features include flat, posteriorly displaced lateral canal resembling cercopithecoids and platyrrhines. The hominid-like stout volumetric proportions would be homoplastic if Oreopithecus is a stem hominoid, possibly functionally related to slower locomotion. While it resembles australopiths and humans in larger vertical canals, the SCs are clearly distinguishable in volumetric proportions, orientation, and shape, ruling out hominin-like bipedalism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation of Oreopithecus as a stem hominoid with mosaic features is well-supported by multiple lines of evidence: bgPCA positioning, posterior probabilities, detailed morphological comparisons, and phylomorphospace analysis. The authors appropriately identify both derived and plesiomorphic features, discuss alternative interpretations with citations, and acknowledge the possibility of homoplasy. The conclusion is cautious and evidence-based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Main anthropoid groups can be distinguished based on vestibular shape variation, with important differences not only between hylobatids, great apes, and humans, but also among extant great ape genera. A significant phylogenetic signal affects the entire variance of the anthropoid sample, indicating that SC shape is overall informative from a phylogenetic viewpoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result is well-supported by the comprehensive bgPCA analyses (C39-C50), phylogenetic signal quantification (C42, C123), and detailed morphological comparisons across taxa. The conclusion is appropriately supported by citations to both concordant and discordant prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Several potential hominoid synapomorphies are identified, including posteromedially displaced posterior canal, anteromedially situated lateral canal insertion, and vertical compression of the anterior canal. The vertical compression is the most evident character shared by extant apes and humans. The hypothesis that this relates to absence of subarcuate fossa is rejected based on Hylobates (which has both fossa and compression) and cercopithecoids (which lack fossa but have rounded anterior SC). Two potential hylobatid synapomorphies are identified: obtuse angle between anterior and posterior canal planes, and posteriorly-inclined smaller posterior canal. The anterior projection of the anterior canal, previously interpreted as hylobatid synapomorphy, is shown to be variable within both hylobatids and hominids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of synapomorphies is based on ancestral state reconstructions, comparative morphology, and phylogenetic analysis (Table 8, Figure 12). The rejection of the subarcuate fossa hypothesis is well-reasoned with specific counterexamples. The revision of previous interpretations about hylobatid synapomorphies is appropriately cautious and evidence-based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Hominids differ from other anthropoids by derived volumetric proportions (stouter canals relative to length) even when size-scaling is considered, and by more extensive vestibular recesses. Cercopithecoids and hylobatids overlap with slender SCs, while hominids have swollen, relatively shorter SCs. This might relate to locomotor differences: hylobatids and cercopithecoids are swift-moving animals requiring limited duct sensitivity and quick response, while hominids with shorter, thicker ducts require more time to react but are more sensitive to fine movements. This hypothesis is supported by biophysical models, though caution is needed when inferring membranous duct lumen from bony canals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The morphological differences are well-documented through bgPCA, allometry analyses, and comparative descriptions. The functional interpretation is appropriately presented as hypothesis supported by biophysical models (with citations), and the authors appropriately note caveats about inferring soft tissue from bone. The connection between morphology and function is plausible but acknowledged as requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Marked differences exist among hominid genera in vestibular morphology, mainly relating to relative SC sizes, while hylobatid genera are less diverse. Chimpanzees and bonobos have equally developed SCs and moderately short common crus. Orangutans have evenly proportioned SCs distinguished by shorter common crus, more inflated canals, and greater anterior canal vertical compression. Gorillas display largest intrageneric variability. Humans differ from apes in enlarged vertical canals, laterally protruding and inferiorly displaced posterior canal, and moderately smaller lateral canal. Theropithecus also shows relatively enlarged vertical canals, possibly related to bipedal shuffling during foraging causing erect trunk posture. Human morphology has been linked to bipedalism as accelerations during bipedal walking mainly occur along vertical axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative morphology among hominid genera is well-documented through bgPCA results and detailed morphological observations. The functional interpretations for human and Theropithecus morphology are appropriately cited and presented as established hypotheses. The comparison is comprehensive and grounded in observable features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Vestibular variation bears strong phylogenetic signal and has potential for reconstructing hominoid evolutionary history. Hominoids are more variable in vestibular morphology than the taxonomically more diverse cercopithecoids. This higher variation agrees with more diverse and varied locomotor repertoires of hominoids: cercopithecoids are largely pronograde terrestrial quadrupeds differing mainly in arboreality vs. terrestriality, while crown hominoids have derived orthograde body plan enabling very different specialized antipronograde behaviors. Extant hominoid lineages have more significantly diverged in different directions from their LCA with cercopithecoids in terms of positional behavior, explaining why they differ more strongly in vestibular features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The connection between vestibular morphological variation and locomotor diversity is well-reasoned and supported by appropriate citations. The phylogenetic signal quantification is robust (C42, C123), and the comparative analysis of hominoid vs. cercopithecoid diversity is grounded in established knowledge of primate locomotion. The inference linking morphological and behavioral diversity is logical and appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "From the crown hominoid LCA, great apes and humans appear derived toward stout SCs while hylobatids evolved slender SCs in the opposite direction. Hylobatids appear secondarily convergent with cercopithecoids in SC volumetric proportions, though this hypothesis requires testing with extinct stem cercopithecoids and less controversial fossil hominoids. Hoolock retains more primitive morphology than other hominoids for various features. The incipient vertical compression of anterior canal in Hoolock might be plesiomorphic for hylobatids, suggesting marked compression could be hominid synapomorphy with parallel evolution in other hylobatid genera. Gibbons and siamangs might have secondarily converged with cercopithecoids by evolving slenderer SCs, presumably due to similar evolutionary pressures from fast-moving locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The ancestral state reconstructions are based on appropriate methods, but the authors appropriately acknowledge significant uncertainty. The hypothesis of secondary convergence in hylobatids is plausible but explicitly noted as requiring further testing with additional fossil taxa. The interpretation of Hoolock morphology as plesiomorphic is reasonable but presented cautiously. The speculation about parallel evolution and convergence is appropriately qualified and requires additional data for confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Based on reconstructed ancestral morphotypes, bonobos and (to lesser extent) chimpanzees are closer to the LCAs of hominids, hominines, and Pan-Homo clade than either humans or other extant great apes (gorillas and orangutans). Gorillas and orangutans diverged from hominid LCA in markedly different directions in SC configuration and stoutness. Results support the view that not only hominins, but also gorillas and orangutan lineage diverged from ancestors with largely Pan-like vestibular morphology. However, caution is required when interpreting this pattern in locomotor terms, as other selection pressures and/or non-adaptive factors could have played equally or more significant roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ancestral state reconstructions are based on maximum likelihood methods and phylogenetically-informed analyses (Figures 10-11). The conclusion about Pan-like ancestral morphology is well-supported by the data. The authors appropriately caution against over-interpreting the pattern in purely locomotor terms, acknowledging alternative explanations. This balanced interpretation strengthens the evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "Australopithecus displays hominoid synapomorphies, hominid-like volumetric proportions, and human-like features (large anterior and posterior canals), in agreement with habitual bipedal behaviors inferred for StW 573 skeleton. Following ancestral state reconstruction, Australopithecus appears derived in same direction as humans but more closely resembles Australopithecus-Homo clade LCA. Classification as humans with moderately high probability reflects vestibular morphology approximating human condition while maintaining plesiomorphic characters. The two specimens display noticeable differences: StW 578 shows more human-like canals while StW 573 retains more African great ape-like morphology. These differences could relate to diachronic changes within South African Australopithecus or its previously noted heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis of Australopithecus is well-supported by bgPCA results, posterior probabilities, ancestral state reconstructions, and detailed morphological comparisons. The interpretation is consistent with independent evidence from postcranial skeleton (cited). The identification of differences between the two specimens is appropriately cautious, presenting multiple possible explanations. The connection to bipedalism is well-reasoned and appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C195"
+    ],
+    "result": "The study provides new insight into vestibular apparatus evolution in hominoids and confirms potential of SC shape for investigating phylogenetic affinities of fossil apes. Functional considerations must be taken into account as vestibular features are linked with positional behaviors. Characters identified as potentially synapomorphic for crown hominoids or hominids offer prospect of refining phylogenetic placement of controversial fossil apes. However, ancestral state reconstructions relying mainly on living taxa are potentially problematic given Miocene hominoid diversity and homoplasy. The evolutionary history should be treated as working hypotheses requiring further testing with larger fossil samples. Given relationship between vestibular morphology and positional behavior, and mosaic locomotor features in extinct hominoids, vestibular morphology of extinct hominoids may display unique feature combinations. Conclusions should be subjected to further scrutiny through inclusion of additional fossil taxa, emphasizing Miocene hominoids and stem cercopithecoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary and discussion of implications is appropriately balanced, acknowledging both the contributions and limitations of the study. The authors appropriately note the need for functional considerations, the potential for using identified characters in phylogenetic analyses, and the limitations of ancestral state reconstructions based primarily on extant taxa. The call for additional fossil data is reasonable and appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "The study employs rigorous methodology including: 142 \u00b5CT scans of dried anthropoid crania (27 species, 25 genera) plus three fossil specimens; deformation-based 3DGM approach comparing continuous surfaces without a priori landmarks; bgPCA preferred over LDA to avoid overexaggerated separation; phylogenetic signal assessment using Pagel's \u03bb and Blomberg's K on time-calibrated molecular phylogeny; and phylomorphospace approach with maximum likelihood ancestral state reconstruction. Juvenile specimens are included as bony labyrinth ossifies in early prenatal stages. Oreopithecus is placed as stem-hominoid following Nengo et al. (2017) though alternatives are discussed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is comprehensive, well-justified, and appropriately cited. Sample sizes are adequate for the analyses performed. The choice of deformation-based 3DGM is explained and validated through comparison with landmark-based approaches. Statistical methods are appropriate for the data and research questions. Phylogenetic methods are state-of-the-art and properly applied. The justification for including juveniles is appropriately cited. Methodological choices are transparent and well-reasoned.",
+    "result_type": "MINOR"
+  }
+]

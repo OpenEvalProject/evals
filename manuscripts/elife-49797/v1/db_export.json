@@ -1,0 +1,2213 @@
+{
+  "submission": {
+    "id": "57509cda-fb07-44e7-a412-a811c0442dd3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:28:29.191462Z",
+    "updated_at": "2025-12-02T14:28:29.191462Z"
+  },
+  "content": [
+    {
+      "id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "submission_id": "57509cda-fb07-44e7-a412-a811c0442dd3",
+      "content_type": "manuscript",
+      "content_text": "# Biochemical reconstitution of branching microtubule nucleation\n\n## Authors\n\n- Raymundo Alfaro-Aco<sup>1</sup> ([ORCID: 0000-0003-4196-3797](https://orcid.org/0000-0003-4196-3797))\n- Akanksha Thawani<sup>2</sup> ([ORCID: 0000-0003-4168-128X](https://orcid.org/0000-0003-4168-128X))\n- Sabine Petry<sup>1</sup> ([ORCID: 0000-0002-8537-9763](https://orcid.org/0000-0002-8537-9763)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology Princeton University Princeton United States\n2. Department of Chemical and Biological Engineering Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicrotubules are nucleated from specific locations at precise times in the cell cycle. However, the factors that constitute these microtubule nucleation pathways and their mode of action still need to be identified. Using purified Xenopus laevis proteins we biochemically reconstitute branching microtubule nucleation, which is critical for chromosome segregation. We found that besides the microtubule nucleator gamma-tubulin ring complex (\u03b3-TuRC), the branching effectors augmin and TPX2 are required to efficiently nucleate microtubules from pre-existing microtubules. TPX2 has the unexpected capacity to directly recruit \u03b3-TuRC as well as augmin, which in turn targets more \u03b3-TuRC along the microtubule lattice. TPX2 and augmin enable \u03b3-TuRC-dependent microtubule nucleation at preferred branching angles of less than 90 degrees from regularly-spaced patches along microtubules. This work provides a blueprint for other microtubule nucleation pathways and helps explain how microtubules are generated in the spindle.\n\n## Introduction\n\nMicrotubules are nucleated from specific locations in the cell, and several of these microtubule nucleation pathways converge to form a particular cytoskeletal architecture (Kollman et al., 2011; Lin et al., 2015; L\u00fcders and Stearns, 2007). Importantly, microtubules in cells are nucleated by the microtubule nucleator \u03b3-TuRC (Kollman et al., 2011; Zheng et al., 1995) and its co-nucleation factor XMAP215 (Flor-Parra et al., 2018; Gunzelmann et al., 2018; Thawani et al., 2018). At the same time, each microtubule nucleation pathway requires a unique set of nucleation effectors to recruit and regulate \u03b3-TuRC at distinct cellular locations (Lin et al., 2015). The identity of most of these effectors remains elusive, along with a mechanistic understanding of how they constitute the different microtubule nucleation pathways that generate the cytoskeleton.\n\nMicrotubules can nucleate from pre-existing microtubules, termed branching microtubule nucleation (Petry et al., 2013), which amplifies microtubule number while preserving their polarity, as is needed in the mitotic spindle and in axons (Cunha-Ferreira et al., 2018; David et al., 2019; Kamasaki et al., 2013; Petry et al., 2013; S\u00e1nchez-Huertas et al., 2016). The eight-subunit protein complex augmin is required for branching microtubule nucleation in plant, human and Drosophila cells, and meiotic Xenopus egg extract, where its depletion leads to reduced spindle microtubule density, less kinetochore fiber tension, metaphase arrest, and cytokinesis failure (David et al., 2019; Decker et al., 2018; Goshima et al., 2008; Hayward et al., 2014; Ho et al., 2011; Kamasaki et al., 2013; Lawo et al., 2009; Nakaoka et al., 2012; Petry et al., 2011; Uehara et al., 2009). Augmin is necessary to recruit \u03b3-TuRC to spindle microtubules (Goshima et al., 2007), and following the recombinant expression of augmin (Hsia et al., 2014), this activity was confirmed using purified proteins (Song et al., 2018).\n\nIn meiotic Xenopus egg extract, the Ran-regulated protein TPX2 is released near chromatin (Gruss et al., 2001), where it stimulates branching microtubule nucleation (Petry et al., 2013), potentially by activating \u03b3-TuRC via nucleation activator motifs (Alfaro-Aco et al., 2017). Recently, TPX2 was also observed to form a co-condensate with tubulin along the microtubule lattice, which enhances the kinetic efficiency of branching microtubule nucleation (King and Petry, 2019). In meiotic Xenopus egg extract, TPX2 needs to bind to microtubules before augmin/\u03b3-TuRC to result in a successful nucleation event (Thawani et al., 2019). In contrast, in mitotic Drosophila cells TPX2 is not required, and augmin can bind to microtubules before \u03b3-TuRC (Verma and Maresca, 2019). Despite these numerous studies to characterize each individual protein component, exactly how augmin, TPX2 and \u03b3-TuRC together mediate branching microtubule nucleation, and whether they alone constitute a minimal system that nucleates branched microtubules, remains unclear. Here, we use biochemical reconstitution of its purified components to mechanistically dissect branching microtubule nucleation.\n\n## Results and discussion\n\nBranching microtubule nucleation has been studied in Xenopus egg extract, where it is elicited by the constitutively active version of Ran (RanQ69L) (Petry et al., 2013). In order to establish a controlled, minimal assay that furthers our mechanistic insight, we exposed a microtubule tethered to glass to sequential reaction mixtures of decreasing complexity and thereby regulated the availability of proteins necessary to stimulate branching microtubule nucleation. Using multicolor time-lapse total internal reflection (TIRF) microscopy, we first confirmed that an endogenous, pre-existing microtubule can serve as a template for branching microtubule nucleation when exposed to Ran-supplemented extract that releases branching factors (Figure 1A and Figure 1\u2014video 1). This shows that a microtubule formed independent of Ran can serve as the site for binding of branching factors and subsequent nucleation events.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013C) Sequential reactions with Xenopus egg extract. (A) Single microtubules formed on the glass surface in the first extract supplemented with Alexa488 tubulin (green). A second extract supplemented with Alexa568 tubulin (red) and RanQ69L was subsequently introduced. New microtubules (red) nucleated from pre-existing microtubules (green). See Figure 1\u2014video 1. (B) Single microtubules formed on the glass surface in the first extract supplemented with Alexa488 tubulin (green). A second extract supplemented with Alexa568 tubulin (red), RanQ69L and nocodazole was subsequently introduced, followed by a third extract supplemented with Cy5 tubulin (magenta). Branched microtubules (magenta) nucleated from pre-existing microtubules (green) via the branching factors released in the second extract, while no microtubules formed in the presence of nocodazole (red). See Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2A. (C) Similar to (B), except that the first extract was supplemented with Alexa568 tubulin (red), the second extract contained no fluorescent tubulin, and the third extract reaction was substituted for purified Cy5 tubulin (magenta) and XMAP215. Branched microtubules (magenta) nucleated from pre-existing microtubules (red), which had been pre-loaded with branching factors in the second extract. See Figure 1\u2014figure supplement 2B and Figure 1\u2014video 2. For all experiments, images were collected approximately 5 min after the last solution was exchanged. Scale bars, 5 \u03bcm. The experiments were repeated three times with different Xenopus egg extracts.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Branching microtubule nucleation was stimulated in Xenopus egg extract with 10 \u03bcM RanQ69L in the presence of increasing concentrations of nocodazole. microtubules were labeled with Alexa568 tubulin (red) and their plus-ends with EB1-GFP (green). Scale bars, 10 \u03bcm. The experiment was repeated three times with different Xenopus egg extracts.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Single microtubules formed on the glass surface in the first extract supplemented with Alexa488 tubulin (green). A second extract supplemented with Alexa568 tubulin (red) and nocodazole, but lacking RanQ69L, was subsequently introduced, followed by a third extract supplemented with Cy5 tubulin (magenta). Pre-existing microtubules (green) only extended from their plus-ends (magenta) in the third extract reaction because no branching factors were released in the second reaction step, while no microtubules formed in the presence of nocodazole (red). (B) Analogous to (A), except that the second extract was supplemented with RanQ69L, and the third extract reaction was substituted for purified Cy5 tubulin (magenta). Branched microtubules (magenta) nucleated from pre-existing microtubules (green), while no microtubules formed in the presence of nocodazole (red). For all experiments, images were collected approximately 5 min after the last solution was exchanged. Scale bars, 5 \u03bcm. The experiments were repeated three times with different Xenopus egg extracts.\n\nTo gain mechanistic insight, we hypothesized that all necessary Ran-regulated branching factors bind to the pre-existing microtubule prior to microtubule nucleation. To test this, Ran-regulated branching factors were allowed to bind to taxol-stabilized pre-existing microtubules in the presence of nocodazole, which inhibits new microtubule formation (Figure 1B and Figure 1\u2014figure supplement 1). When another extract reaction was subsequently added, new microtubules nucleated almost exclusively from pre-existing microtubules, indicating that Ran-regulated branching factors bind to microtubules independent of their successful nucleation reactions (Figure 1B). Importantly, when RanQ69L was omitted and no branching factors were released in the second extract reaction, pre-existing microtubules simply elongated and branching microtubule nucleation was absent in the third reaction (Figure 1\u2014figure supplement 2A).\n\nTo further test whether these microtubule-bound branching factors are sufficient for generating branches, we reduced the complexity of our assay by introducing only purified tubulin and GTP in the third reaction step. Surprisingly, short branched microtubules nucleated from pre-existing microtubules (Figure 1\u2014figure supplement 2B), showing that upon binding of branching factors and \u03b3-TuRC, tubulin is the only protein required to form new branched microtubules from the localized factors. Further addition of XMAP215 to the final tubulin reaction made the short branches grow longer (Figure 1C). This revealed that branched microtubules retained the polarity of the pre-existing microtubule, and new microtubules do not appear to nucleate from other branched microtubules, suggesting that the branching factors do not relocate between microtubules (Figure 1C and Figure 1\u2014video 2). Thus, solely the deposition of branching factors and \u03b3-TuRC to the pre-existing microtubule determines branching architecture.\n\nBecause the key for branching microtubule nucleation is to target \u03b3-TuRC along the length of a microtubule, we verified as a proof of concept that purified \u03b3-TuRC, when tethered along the microtubule lattice via artificial linkers, can still nucleate microtubules, which indeed was the case (Figure 2\u2014figure supplement 1A\u2013B). Therefore, if all branching factors are known, it should be possible to reconstitute branching microtubule nucleation from a template microtubule using only purified components. To test this, we purified the essential proteins for branching microtubule nucleation in Xenopus egg extract (Petry et al., 2013). The GFP-labeled eight-subunit X. laevis augmin holocomplex was co-expressed in insect cells and co-purified (Song et al., 2018), the native 2.2 MDa \u03b3-TuRC was purified from Xenopus egg extract (Thawani et al., 2018), and GFP-TPX2 was expressed from E. coli and purified (King and Petry, 2019) (Figure 2\u2014figure supplement 2A\u2013C).\n\nFirst, we assessed how the nucleator \u03b3-TuRC gets targeted along the microtubule lattice. Purified TPX2, augmin and \u03b3-TuRC were added in various combinations to surface-bound, GMPCPP-stabilized microtubules and imaged via TIRF microscopy (Figure 2A). \u03b3-TuRC, visualized by a fluorescently-labeled antibody, bound along the length of microtubules in the presence of augmin (Figure 2B\u2013C and Figure 2\u2014source data 1) consistent with previous studies (Song et al., 2018). Unexpectedly, TPX2 alone marginally increased the binding of \u03b3-TuRC to microtubules compared to non-specific \u03b3-TuRC binding. A higher amount of \u03b3-TuRC was recruited all along the microtubule lattice in the presence of both TPX2 and augmin (Figure 2B\u2013C and Figure 2\u2014source data 1). Surprisingly, augmin and TPX2 formed distinct puncta on microtubules, where \u03b3-TuRC was recruited. Using negative stain electron microscopy, we visualized this binding at higher resolution and indeed observed that \u03b3-TuRC is recruited to regularly spaced patches, where it accumulates (Figure 2D). Next, we tested whether the microtubule binding proteins augmin and TPX2 need to bind in a certain sequence. Surprisingly, microtubule-bound TPX2 increased the amount of augmin bound to the microtubule, whereas the presence of augmin did not change the level of bound TPX2 (Figure 2E\u2013F and Figure 2\u2014source data 2). In sum, TPX2 has the unexpected capacity to directly recruit \u03b3-TuRC as well as augmin, which in turn targets more \u03b3-TuRC along the microtubule lattice.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig2-v1.jpg)\n\n**Figure 2.:** (A) Diagram of the experimental set-up. GMPCPP-stabilized microtubules were attached to a PEG-passivated cover glass with biotin-neutravidin links. (B) \u03b3-TuRC (10 nM) visualized using Alexa647-labeled antibodies (red) along microtubules (green), in the absence or presence of GFP-augmin (50 nM) and GFP-TPX2 (50 nM) (cyan). Scale bars, 5 \u03bcm. (C) Boxplot of average \u03b3-TuRC signal relative to the average tubulin signal, where each dot represents one microtubule from the experiment in (B). The number of microtubules (n) was obtained from four replicates using \u03b3-TuRC purified from two different preps. (D) GMPCPP-stabilized microtubules incubated with \u03b3-TuRC (10 nM) only or with augmin (50 nM), TPX2 (50 nM) and \u03b3-TuRC (10 nM), visualized by electron microscopy after uranyl acetate staining. Ring-shaped structures that correspond to \u03b3-TuRCs (arrowheads), and clusters of protein formed on microtubules (arrows) are visible. Scale bars, 100 nm. (E) GFP-augmin (50 nM) (green) and BFP-TPX2 (50 nM) (cyan) visualized along microtubules (red) by themselves or in sequential binding steps. Scale bars, 5 \u03bcm. (F) Boxplot of average BFP-TPX2 signal or GFP-augmin signal relative to the average tubulin signal, where each dot represents one microtubule from the experiment in (E). The number of microtubules (n) was obtained from two replicates. For (C) and (F), the boxes extend from 25th to 75th percentiles, the whiskers extend from minimum to maximum values, and the mean values are plotted as crosses. P-values were calculated from independent T-tests.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Diagram of the experimental set-up. GMPCPP-stabilized microtubules attached non-specifically to a silanized cover glass, and \u03b3-TuRCs (10 nM) attached to the microtubules with biotin-neutravidin links. Nucleation of new microtubules was visualized using Cy5 tubulin. (B) Using the set-up in (A), the formation of artificial microtubule branches (red, arrowheads) from GMPCPP-stabilized microtubules (green) was observed. Scale bar, 5 \u03bcm. Experiment was performed once.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) SDS-PAGE of purified GFP-TPX2 visualized by Coomassie Blue staining. (B) SDS-PAGE of purified GFP-labeled augmin holocomplex visualized by silver staining. (C) SDS-PAGE of purified \u03b3-TuRC visualized by silver staining. (D) Purified \u03b3-TuRC visualized using negative stain electron microscopy. Scale bar, 100 nm.\n\nHaving established that purified TPX2 and augmin recruit \u03b3-TuRC to template microtubules, can they indeed cause branching microtubule nucleation? All three factors were bound to a stabilized microtubule as above, followed by addition of tubulin and GTP in polymerization buffer (Figure 3A). Remarkably, branching microtubule nucleation from a template microtubule occurred using only purified proteins (Figure 3B and Figure 3\u2014video 1). Live microscopy allowed us to accurately distinguish branching microtubule nucleation from microtubules that were spontaneously nucleated before contacting the microtubule template (Figure 3\u2014figure supplement 1). Thus, TPX2, augmin and \u03b3-TuRC are sufficient to specifically nucleate new branched microtubules, which remain attached at the nucleation site on the template microtubule (Figure 3B). Occasionally, enough microtubules branched from a single microtubule template (Figure 3B, bottom) to create structures reminiscent of those created after TPX2, augmin and \u03b3-TuRC were deposited from Xenopus egg extract (Figure 1\u2014figure supplement 2B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig3-v1.jpg)\n\n**Figure 3.:** (A) Diagram of the experimental set-up. GMPCPP-stabilized microtubules were attached to a PEG-passivated cover glass with biotin-neutravidin links. Following the binding of augmin (50 nM), TPX2 (50 nM), and \u03b3-TuRC (10 nM), nucleation of new microtubules was visualized using Cy5 tubulin. (B) Using the set-up in (A), the formation of microtubule branches (red, arrowheads) from GMPCPP-stabilized microtubules (green) was observed. Scale bars, 5 \u03bcm. See Figure 3\u2014figure supplement 1A and Figure 3\u2014video 1. (C) Fractional distance along the template microtubule where microtubule branches formed. The 0-point on the x-axis denotes nucleation at the minus-end of the template microtubule, while the 1-point denotes nucleation at the plus-end. The number of branching events (n) was obtained from twelve replicates using \u03b3-TuRC purified from four different preps. (D) Same as (A), microtubule branches (red) grow from distinct GFP-augmin and GFP-TPX2 puncta (cyan) localized on GMPCPP-stabilized microtubules (green). (E) Number of microtubule branches per field of view after 4 min, normalized to the length of template microtubule available, for all the combinations of branching factors. Values are the mean of four replicates using \u03b3-TuRC purified from one prep, and error bars represent standard error of the mean. (F) Angle of branching for three different combinations of branching factors. The number of branching events (n) was obtained from eight replicates using \u03b3-TuRC purified from two different preps in the case of augmin + \u03b3-TuRC and TPX2 + \u03b3-TuRC, and from twelve replicates using \u03b3-TuRC purified from four different preps in the case of augmin + TPX2 + \u03b3-TuRC. (G) Number of microtubule branches per field of view after 4 min, normalized to the length of template microtubule available, for different binding sequences. Values are the mean of four replicates using \u03b3-TuRC purified from one prep, and error bars represent standard error of the mean.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Time-lapse images from the experiment in Figure 3B showing an example of a microtubule (red, arrowhead) that is spontaneously nucleated in solution and contacts the GMPCPP-stabilized template microtubule (green) afterwards. Scale bar, 5 \u03bcm.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Similar to the experiment in Figure 3A\u2013D, but using an unlabeled version of TPX2. GFP-augmin is present in the observed puncta on template microtubules. (B) Similar to the experiment in Figure 3A\u2013B, but only augmin and \u03b3-TuRC were bound to the GMPCPP-stabilized microtubule. The formation of some microtubule branches (red, arrowheads) from GMPCPP-stabilized microtubules (green) was observed. (C) Same as (B), microtubule branches (red) grow from distinct GFP-augmin puncta (cyan) localized on GMPCPP-stabilized microtubules (green). (D) Similar to the experiment in Figure 3A\u2013B, but only TPX2 and \u03b3-TuRC were bound to the GMPCPP-stabilized microtubule. The formation of some microtubule branches (red, arrowheads) from GMPCPP-stabilized microtubules (green) was also observed. (E) Same as (D), microtubule branches (red) grow from distinct GFP-TPX2 puncta (cyan) localized on GMPCPP-stabilized microtubules (green). Scale bars, 5 \u03bcm.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Quantification of non-branched microtubules from the experiment in Figure 3E. Values are the mean of four replicates using \u03b3-TuRC purified from one prep, and error bars represent standard error of the mean. (B) Microtubule nucleation assay in solution with purified augmin (50 nM) and \u03b3-TuRC (5 nM). (C) Microtubule nucleation assay in solution with purified TPX2 (10 nM) and \u03b3-TuRC (5 nM). (D) Microtubule nucleation assay in solution with purified TPX2 (50 nM) and \u03b3-TuRC (5 nM). Scale bars, 20 \u03bcm.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/49797/elife-49797-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Similar to the experiment in Figure 3B, but comparing the effect of having GFP-XMAP215 in the final solution of Cy5 tubulin. The images correspond to the first frame of the time-lapse collected. The panels on the right (merged only) correspond to the same fields of view 70 s later. Scale bar, 5 \u03bcm. Experiment was performed once.\n\nHow are the nucleation sites spatially organized along the template microtubule? New microtubules nucleate all along the template microtubule without any preference for the template\u2019s plus- or minus-ends (Figure 3C and Figure 3\u2014source data 1), likely because the template microtubule was fully available for simultaneous binding of branching factors in our assay set-up. Thus, there is no signature on the stabilized microtubule lattice that determines where a branch occurs, only that microtubule nucleation events occur from distinct TPX2/augmin puncta distributed along the microtubule lattice (Figure 3D). Multiple microtubules can be generated from the same puncta as resolved by light microscopy (Figure 3D), which presumably nucleate from neighboring \u03b3-TuRCs (Figure 2D). Because both TPX2 and augmin were concurrently tagged with GFP, an unlabeled version of TPX2 was used to confirm that augmin was indeed present in the observed puncta on template microtubules (Figure 3\u2014figure supplement 2A).\n\nWhat does each protein contribute to branching microtubule nucleation? To test this, each purified factor was assessed alone for its nucleation potential from a template microtubule, combined in pairs and ultimately altogether. Notably, \u03b3-TuRC is essential for branching microtubule nucleation (Figure 3E and Figure 3\u2014source data 2). Despite the fact that TPX2 can recruit tubulin (King and Petry, 2019), it alone or together with augmin cannot nucleate branched microtubules. \u03b3-TuRC can infrequently bind to the microtubule lattice on its own (Figure 2D), leading to rare nucleation events without TPX2 and augmin (Figure 3E and Figure 3\u2014source data 2). Not surprisingly, augmin and \u03b3-TuRC can cause branching microtubule nucleation to a limited extent (Figure 3E, Figure 3\u2014figure supplement 2B\u2013C and Figure 3\u2014source data 2), as augmin can directly recruit \u03b3-TuRC to a pre-existing microtubule in vitro (Song et al., 2018). Surprisingly, TPX2 and \u03b3-TuRC can also cause branching microtubule nucleation to a similar extent as augmin and \u03b3-TuRC (Figure 3E, Figure 3\u2014figure supplement 2D\u2013E and Figure 3\u2014source data 2). Although TPX2 only marginally recruits \u03b3-TuRC to the microtubule lattice, its ability to form a co-condensate with tubulin (King and Petry, 2019), and to possibly activate \u03b3-TuRC (Alfaro-Aco et al., 2017), may facilitate \u03b3-TuRC-dependent microtubule nucleation from a pre-existing microtubule.\n\nSimilar to the pattern observed when both TPX2 and augmin are present, augmin or TPX2 alone with \u03b3-TuRC also form distinct puncta along the microtubule lattice, implying that augmin may have a similar mode of binding to the microtubule lattice as TPX2. However, fewer of these puncta actually nucleate branched microtubules (Figure 3E, Figure 3\u2014figure supplement 2C, Figure 3\u2014figure supplement 2E and Figure 3\u2014source data 2). Importantly, only when augmin, TPX2 and \u03b3-TuRC are present, branching microtubule nucleation occurs most often (Figure 3E and Figure 3\u2014source data 2). Branched microtubules are preferentially formed in angles\u00a0<\u00a090 degrees, with 0\u201315 degrees being the most common (Figure 3F and Figure 3\u2014source data 3). This way, most branched microtubules maintain the same polarity as the mother microtubule, a hallmark of branching microtubule nucleation. The angle of microtubule branches did not drastically change when augmin or TPX2 were combined with \u03b3-TuRC, only that augmin/\u03b3-TuRC alone caused a higher proportion of shallow branch angles (Figure 3F and Figure 3\u2014source data 3).\n\nA key question that we next addressed with this system is whether TPX2 and augmin merely act as localizing factors, or whether they indeed activate \u03b3-TuRC at the branching nucleation sites. To test whether branching was specifically stimulated, we counted the number of non-branched microtubules nucleated in the reactions shown in Figure 3E. Reactions where \u03b3-TuRC was present have approximately twice as many non-branched microtubules per field of view compared to the reactions where \u03b3-TuRC was absent. Notably, the addition of TPX2 or augmin does not change the number of non-branched microtubules (Figure 3\u2014figure supplement 3A and Figure 3\u2014source data 4). This suggests that the increase in branching microtubule nucleation by TPX2 and augmin is not just a result of increased microtubule nucleation overall, but specifically occurs from a pre-existing microtubule.\n\nTo more directly assess whether augmin or TPX2 increase the nucleation activity of \u03b3-TuRC, we performed a microtubule nucleation assay in solution. Augmin did not enhance the nucleation activity of purified \u03b3-TuRC in vitro (Figure 3\u2014figure supplement 3B), consistent with previous studies (Song et al., 2018). A low concentration of TPX2 (10 nM) did not enhance the nucleation activity of \u03b3-TuRC either (Figure 3\u2014figure supplement 3C). A higher concentration of TPX2 (50 nM) was also tested, but at this concentration and in the absence of pre-formed microtubules, TPX2 forms co-condensates with tubulin in solution that nucleate microtubules in vitro (Figure 3\u2014figure supplement 3D) (King and Petry, 2019), which precludes the accurate assessment of \u03b3-TuRC-mediated microtubule nucleation at higher concentrations. These nucleation experiments suggest that TPX2 and augmin do not activate \u03b3-TuRC in solution. There remains the possibility that they increase the nucleation activity of \u03b3-TuRC specifically when bound to a microtubule. To evaluate whether the increase in branching microtubule nucleation activity in Figure 3E is larger than the increase in \u03b3-TuRC binding in Figure 2C we calculated the ratio of branching to binding, and normalized it to the \u03b3-TuRC only sample. Although the increase in branching when both TPX2 and augmin are present with \u03b3-TuRC is marginally larger than what is expected from the increase in \u03b3-TuRC localization alone, the difference is not statistically significant based on the current data.\n\nLast, we tested whether branching microtubule nucleation is further enhanced by having XMAP215 present. Indeed, XMAP215 co-localizes to the template microtubule and appears to increase both microtubule nucleation rate and length (Figure 3\u2014figure supplement 4). Exact quantification of this effect was not possible because branched microtubules were already formed before imaging was possible and microtubules quickly grew into each other, preventing the accurate identification of branching microtubule nucleation. Lastly, knowing that the binding sequence of TPX2 and augmin matters for maximum factor recruitment, does this have an effect on nucleation? Indeed, only when TPX2 was bound first and augmin/\u03b3-TuRC second, a higher level of branching microtubule nucleation was measured (Figure 3G and Figure 3\u2014source data 5).\n\nVia an in vitro reconstitution, we demonstrate that the three factors TPX2, augmin and \u03b3-TuRC are sufficient to cause branching microtubule nucleation and defined the roles of each protein. Although microtubule nucleation effectors alone, both as monomers or as phase-separated entities, can generate microtubules in vitro (Roostalu et al., 2015; Woodruff et al., 2017; King and Petry, 2019), \u03b3-TuRC is required for physiological microtubule nucleation (Kollman et al., 2011; Thawani et al., 2018), and this reconstitution highlights the importance of including it when studying microtubule nucleation. Considered a poor nucleator, \u03b3-TuRC that has been hypothesized to require activation (L\u00fcders and Stearns, 2007). In our in vitro system, \u03b3-TuRC\u2019s activity could be tuned via the tubulin concentration and the presence of XMAP215. Assay conditions in which not all nucleation events occur at once were necessary in order to clearly identify and observe branching microtubule nucleation events and to differentiate them from microtubules growing over one another. Based on this, we could investigate the effect of TPX2 and augmin on the activity level of \u03b3-TuRC. The microtubule nucleation capacity of \u03b3-TuRC was not enhanced by TPX2 or augmin in solution, but these factors specifically enable \u03b3-TuRC-dependent microtubule nucleation from a pre-existing microtubule. This can be explained if TPX2 and augmin act as localization factors, but there is also the possibility that they increase the nucleation activity of \u03b3-TuRC specifically when bound to a microtubule. Our results do not conclusively support or rule our either of these models. In the future, single molecule and kinetic measurements along with structural studies are required to determine how exactly TPX2 and augmin interact with \u03b3-TuRC, and whether they increase its activity to stimulate microtubule nucleation from a template microtubule.\n\nAugmin can recruit \u03b3-TuRC to the side of a pre-existing microtubule (Song et al., 2018), which can subsequently nucleate branched microtubules. This may be reflective of cell types where TPX2 is not needed for branching microtubule nucleation, such as mitotic Drosophila cells (Verma and Maresca, 2019). Unexpectedly, TPX2 with \u03b3-TuRC can also cause branching microtubule nucleation to a similar extent as augmin with \u03b3-TuRC. This could be explained by our observation that TPX2 increases \u03b3-TuRC localization to microtubules to a small extent. Additionally, it was recently shown that TPX2 can recruit tubulin to the lattice of a pre-existing microtubule by forming a co-condensate (King and Petry, 2019), potentially making lattice-bound \u03b3-TuRC more likely to nucleate branched microtubules. Finally, TPX2 contains \u03b3-TuRC activator motifs that have been proposed to activate \u03b3-TuRC (Alfaro-Aco et al., 2017). All three of these functions may be the reason why TPX2, which recruited less \u03b3-TuRC than augmin, subsequently caused \u03b3-TuRC-dependent branching microtubule nucleation at a similar level as augmin. Besides operating via these three modes in the full reconstitution, TPX2 additionally recruits more augmin, which in turn can localize more \u03b3-TuRC. Finally, TPX2 alone creates a slightly wider angle distribution of branches, than augmin alone and both factors together. Thus, by bridging the microtubule and \u03b3-TuRC with a defined architecture based on its h-shaped structure (Hsia et al., 2014; Song et al., 2018), augmin may keep the angle variation in a more shallow range, which is critical for creating parallel structures that retain microtubule polarity as is necessary in the spindle and axons.\n\nAlthough TPX2 + \u03b3-TuRC or augmin + \u03b3-TuRC can nucleate microtubules from a pre-existing microtubule in this purified system, both factors are required in Xenopus egg extract for branching microtubule nucleation (Petry et al., 2013). This indicates that microtubule nucleation in a physiological environment is more stringently regulated. Another important difference is that while it is beneficial that TPX2 binds to microtubules before augmin in our in vitro reconstitution, TPX2 binding to microtubules is absolutely necessary for augmin/\u03b3-TuRC binding and subsequent branching microtubule nucleation in Xenopus egg extract (Thawani et al., 2019). This implies that TPX2 directly regulates augmin\u2019s binding to microtubules in Xenopus egg extract, in a manner that still needs to be uncovered.\n\nIn summary, TPX2, augmin and \u03b3-TuRC are required for efficient branching microtubule nucleation in vitro. Surprisingly, TPX2, despite being only a single protein amongst large multi-subunit complexes, lies at the very heart of controlling this reaction, as demonstrated in this purified in vitro system and in Xenopus egg extract (Thawani et al., 2019). Finally, even though TPX2, augmin and \u03b3-TuRC are sufficient to reconstitute the nucleation of branched microtubules in vitro, we cannot eliminate the possibility that other proteins are involved in additional regulation, such as the microtubule and augmin binding protein EML3 (Luo et al., 2019).\n\nMechanistic insight obtained from this work helps explain how microtubules are made within spindles to orchestrate chromosome segregation. It is analogous to the in vitro reconstitution of actin branching (Mullins et al., 1998), which paved the way to explain how the actin cytoskeleton supports cell locomotion. In this biochemical reconstitution, \u03b3-TuRC was localized to a specific location, from which it nucleates a microtubule in vitro as it would occur in the cell. As such, this work serves as a platform to study how microtubule nucleation creates different microtubule architectures that support cell function. This approach presents a pioneering example for the biochemical reconstitution of other microtubule nucleation pathways or microtubule organizing centers. It also serves as a stepping-stone to reconstitute larger structures based on this microtubule nucleation pathway, such as the mitotic spindle.\n\n## Materials and methods\n\n### Cloning, expression and purification of proteins\n\nDH5\u03b1 E. coli cells (New England Biolabs, C2987I) were used for all cloning steps. Rosseta2 (DE3)pLysS cells (Novagen, 714034) were used for all protein expression in E. coli, and cultures were grown in TB Broth (Sigma-Aldrich, T0918), or in LB Broth (Sigma-Aldrich, L3522) for the expression of TPX2. Sf9 cells using the Bac-to-Bac system (Invitrogen) were used in the expression of augmin and XMAP215, and cultures were grown in Sf-900 III SFM (Gibco, 12658027).\n\nHuman RanQ69L with N-terminal Strep-6xHis-BFP, and human EB1 with C-terminal GFP-6xHis were expressed and purified as previously described (Thawani et al., 2019). Full-length Xenopus laevis TPX2 constructs were expressed and purified as previously described (King and Petry, 2019). Briefly, N-terminal Strep-6xHis-GFP TPX2 and Strep-6xHis-BFP TPX2 were cloned into pST50 vectors and expressed in E. coli for 7 hr at 25 \u00baC. Both proteins were affinity purified using Ni-NTA agarose beads (Qiagen, 30250) followed by gel filtration with a Superdex 200 HiLoad 16/600 column (GE Healthcare) in CSF-XB buffer (100 mM KCl, 10 mM K-HEPES, 1 mM MgCl2, 0.1 mM CaCl2, 5 mM EGTA, pH 7.7) + 10% w/v sucrose. Unlabeled TPX2 was generated by cleaving Strep-6xHis-GFP with TEV protease at 100:1 TPX2:TEV protease molar ratio overnight at 4 \u00baC. Full-length Xenopus laevis XMAP215 with C-terminal GFP-7xHis was expressed in Sf9 cells using the Bac-to-Bac system and purified as previously described (Thawani et al., 2018). Briefly, XMAP215 was affinity-purified using a HisTrap HP 5 ml column (GE Healthcare), followed by cation-exchange with a Mono S 10/100 GL column (GE Healthcare). The protein was dialyzed overnight into CSF-XB + 10% w/v sucrose. GFP-tagged Xenopus laevis augmin holocomplex was co-expressed in Sf9 cells using the Bac-to-Bac system and purified as previously described (Song et al., 2018). Briefly 1\u20132 liters of Sf9 cells (1.5\u20132.0\u00a0\u00d7\u00a0106 mL\u22121) were co-infected with different baculoviruses, each carrying a subunit of the augmin complex, at MOIs of 1\u20133. Cells were collected 72 hr after infection. HAUS6 had an N-terminal ZZ-tag and HAUS2 had a C-terminal GFP-6xHis. The remaining six subunits were untagged. Augmin holocomplex was affinity-purified using IgG-Sepharose (GE Healthcare, 17-0969-01) and eluted via cleavage with 100\u2013200 \u00b5g of GST-HRV3C protease. The HRV3C protease was subsequently removed using a GSTrap 5 mL column (GE Healthcare). The sample was further purified and concentrated using Ni-NTA agarose beads. The protein was dialyzed overnight into CSF-XB + 10% w/v sucrose. All recombinant proteins were flash frozen and stored at \u221280 \u00baC. Protein concentrations were determined with Bradford dye (Bio-Rad, 5000205) or using a Coomassie-stained SDS-PAGE gel loaded with known concentrations of BSA (Sigma-Aldrich, B6917).\n\nNative \u03b3-TuRC was purified from Xenopus egg extract with some changes to previously described protocols (Zheng et al., 1995; Thawani et al., 2018). 5 ml of Xenopus egg extract were diluted 10-fold with CSF-XB + 10% w/v sucrose, 1 mM GTP, 1 mM DTT, and 10 \u03bcg ml\u22121 leupeptin, pepstatin and chymostatin. Large particles were removed by spinning at 3000 g for 10 min at 4\u00b0C. The supernatant was further diluted two-fold with buffer and passed through filters of decreasing pore size (1.2 \u00b5m, 0.8 \u00b5m and 0.22 \u00b5m). \u03b3-TuRC was precipitated from the filtered extract by addition of 6.5% w/v polyethylene glycol (PEG) 8000 and incubated on ice for 30 min. After centrifugation for 20 min at 17,000 g at 4\u00b0C, the pellet was resuspended in 15 ml of the initial CSF-XB buffer supplemented with 0.05% NP-40. The resuspended pellet was centrifuged at 136,000 g at 4\u00b0C for 7 min. The supernatant was then precleared with protein A Sepharose beads (GE Healthcare, 45002971) for 20 min at 4\u00b0C. The beads were removed by spinning, 2\u20134 ml \u03b3-tubulin antibody (1 mg ml\u22121) was added to the sample, and the sample was rotated at 4\u00b0C for 2 hr. After this, 1 ml of washed Protein A Sepharose beads was incubated with the sample on the rotator for 2 hr at 4\u00b0C. The beads were collected by spinning, and subsequently transferred to a column with the same buffer used to resuspend the PEG pellet. The beads were washed with the initial CSF-XB buffer supplemented with extra 150 mM KCl, then with CSF-XB buffer supplemented with 1 mM ATP, and finally with CSF-XB buffer to remove the ATP. For biotinylation of \u03b3-TuRC, the beads were incubated with 25 \u00b5M of NHS-PEG4-biotin (Thermo Scientific, A39259) in CSF-XB buffer for 1 hr at 4\u00b0C, and unreacted reagent was washed away with CSF-XB buffer before elution with \u03b3-tubulin peptide. 2 ml \u03b3-tubulin peptide (amino acids 412\u2013451) at 0.5 mg ml\u22121 in CSF-XB buffer was applied to the column and allowed to incubate overnight. The eluted sample was collected the following day, and it was concentrated using a 100 kDa MWCO centrifugal-filter (Amicon, UFC810024). This concentrated sample was loaded onto a 10\u201350% w/w sucrose gradient in the initial CSF-XB buffer, and centrifuged at 200,000 g for 3 hr at 4\u00b0C in a TLS55 rotor (Beckman Coulter). The sucrose gradient was fractionated manually from the top, and the fractions with the highest \u03b3-tubulin signal by Western blotting were combined and concentrated using another 100 kDa MWCO centrifugal-filter. Purified \u03b3-TuRC was always used within two days on ice without freezing.\n\nUnlabeled cycled tubulin purified from bovine brain was obtained from a commercial source (PurSolutions, 032005). Before use, all proteins were pre-cleared of aggregates via centrifugation at 80,000 RPM for 15 min at 4 \u00baC in a TLA100 rotor (Beckman Coulter).\n\n### Tubulin labeling and polymerization of GMPCPP-stabilized microtubules\n\nBovine brain tubulin was labeled following previously described methods (Hyman et al., 1991). Using Cy5-NHS ester (GE Healthcare, PA15101) yielded 54\u201370% labeling. Using Alexa-568 NHS ester (Invitrogen, A20003) yielded 36\u201340% labeling. Labeling efficiency with biotin-PEG4-NHS (Thermo Scientific, A39259) was not calculated.\n\nSingle-cycled GMPCPP-stabilized microtubules were made as previously described (Gell et al., 2010). Briefly, 12 \u03bcM unlabeled tubulin + 1 \u03bcM Alexa-568 tubulin + 1 \u03bcM biotin tubulin was polymerized in BRB80 (80 mM Pipes, 1 mM EGTA, 1 mM MgCl2) in the presence of 1 mM GMPCPP (Jena Bioscience, NU-405L) for 1 hr at 37\u00b0C. For GMPCPP-stabilized microtubules without any labels, 14 \u03bcM unlabeled tubulin was polymerized. For GMPCPP-stabilized microtubules without biotin, 13 \u03bcM unlabeled tubulin + 1 \u03bcM Alexa-568 tubulin was polymerized.\n\n### Preparation of polyethylene glycol (PEG)-functionalized surfaces\n\nCover glasses (Carl Zeiss, 474030-9020-000) were silanized and reacted with PEG as previously described (Bieling et al., 2010), except that hydroxyl-PEG-3000-amine (Rapp Polymere, 103000\u201320) and biotin-PEG-3000-amine (Rapp Polymere, 133000-25-20) were used. Glass slides were passivated with poly(L-lysine)-PEG (SuSoS) (Bieling et al., 2010). Flow chambers for TIRF microscopy were assembled using double-sided tape.\n\n### Attachment of GMPCPP-stabilized microtubules to PEG-functionalized surfaces\n\nThe assay was performed following a previously described protocol with some changes (Roostalu et al., 2015). Flow chambers were incubated with 5% Pluronic F-127 in water (Invitrogen, P6866) for 10 min at room temperature and then washed with assay buffer (80 mM Pipes, 30 mM KCl, 1 mM EGTA, 1 mM MgCl2, 1 mM GTP, 5 mM 2-mercaptoethanol, 0.075% (w/v) methylcellulose (4000 cP; Sigma-Aldrich, M0512), 1% (w/v) glucose, 0.02% (v/v) Brij-35 (Thermo Scientific, 20150)) supplemented with 50 \u03bcg mL\u22121 k-casein (Sigma-Aldrich, C0406) and extra 0.012% (v/v) Brij-35. Flow chambers were then incubated with assay buffer containing 50 \u03bcg mL\u22121 NeutrAvidin (Invitrogen, A2666) for 3 min on a metal block on ice and subsequently washed with BRB80 (80 mM Pipes, 1 mM EGTA, 1 mM MgCl2). Next, flow chambers were incubated for 5 min at room temperature with biotin- and Alexa-568-labeled GMPCPP-stabilized microtubules diluted 1:2000 in BRB80. Unbound microtubules were removed by subsequent BRB80 washes.\n\n### Binding of proteins to GMPCPP-stabilized microtubules\n\nTo test the recruitment of \u03b3-TuRC to a microtubule by augmin and TPX2, a mixture of GFP-TPX2 (50 nM), GFP-augmin (50 nM) and \u03b3-TuRC (10 nM), which was previously incubated for 5 min on ice, was added to a flow chamber that had GMPCPP-stabilized microtubules attached to the surface as described above. This was incubated for 5 min at room temperature. Unbound proteins were removed with additional BRB80 washes. To visualize native \u03b3-TuRC, Alexa-647 (Invitrogen) labeled antibodies against \u03b3-tubulin (XenC antibody, 2 \u03bcg ml\u22121) were added to the flow chamber and incubated for 10 min at room temperature. Unbound antibody was removed with additional BRB80 washes, and the final solution was exchanged to BRB80 + 250 nM glucose oxidase (Crescent Chemical, SE22778.02), 64 nM catalase (Sigma-Aldrich, C40) and 1% (w/v) glucose. The sample was imaged immediately. For experiments where one or two of the proteins in the mixture were omitted, the volume was substituted with CSF-XB buffer. The same set-up was used when imaging the binding of GFP-augmin (50 nM) and GFP-TPX2 (50 nM) to microtubules in the presence of each other. In these cases, \u03b3-TuRC was not included, and instead of adding XenC antibody, BRB80 + oxygen scavengers were added after the last unbound proteins were removed by BRB80 washes. In experiments where two proteins were bound to microtubules sequentially, unbound protein was removed by BRB80 washes before the second protein was added.\n\n### Microtubule nucleation assays on PEG-functionalized surfaces\n\nFor branching microtubule nucleation reactions in vitro, a mixture of TPX2 (50 nM), augmin (50 nM) and \u03b3-TuRC (10 nM), which was previously incubated for 5 min on ice, was added to the chamber containing attached GMPCPP-stabilized microtubules and incubated for 5 min at room temperature. Unbound proteins were removed by additional BRB80 washes. The final assay mixture was flowed into the chambers: 80 mM Pipes, 30 mM KCl, 1 mM EGTA, 1 mM MgCl2, 1 mM GTP, 5 mM 2-mercaptoethanol, 0.075% (w/v) methylcellulose (4000 cP), 1% (w/v) glucose, 0.02% (v/v) Brij-35, 250 nM glucose oxidase, 64 nM catalase, 1 mg ml\u22121 BSA, 19 \u03bcM unlabeled bovine tubulin and 1 \u03bcM Cy5-labeled bovine tubulin. For experiments where XMAP215-GFP was added to this final reaction its concentration was 50 nM.\n\n### Microtubule nucleation from artificially-attached \u03b3-TuRCs to microtubules\n\nCoverslips were coated with dichlorodimethylsilane (Gell et al., 2010). Flow chambers for TIRF microscopy were assembled using double-sided tape and incubated for 5 min at room temperature with biotin- and Alexa-568-labeled GMPCPP-stabilized microtubules diluted 1:2000 in BRB80. A small number of microtubules attached non-specifically to the glass, and the rest were removed with BRB80 washes. The rest of the glass surface was blocked with 1% Pluronic F127, and the chamber was incubated for 3 min at room temperature with 500 \u03bcg mL\u22121 NeutrAvidin diluted in BRB80. Undiluted biotinylated \u03b3-TuRC (10 nM) was incubated in the chamber for 10 min at room temperature, and after washing with BRB80 the final tubulin nucleation mix was added: 80 mM Pipes, 1 mM EGTA, 1 mM MgCl2, 1 mM GTP, 2.5 mM PCA, 25 nM PCD, 2 mM Trolox, 19 \u03bcM unlabeled bovine tubulin and 1 \u03bcM Cy5-labeled bovine tubulin.\n\n### Microtubule nucleation assays in solution\n\nMicrotubule nucleation reactions containing 9.5 \u03bcM unlabeled bovine tubulin, 0.5 \u03bcM Cy5-labeled bovine tubulin and 1.5 mM GTP in BRB80, were mixed with augmin, TPX2 or \u03b3-TuRC. CSF-XB buffer was used when proteins were not added. Augmin was added at 50 nM, TPX2 was added at 10 nM or 50 nM, and \u03b3-TuRC was added at 5 nM. The reactions were incubated at 37\u00b0C for 5 min. The nucleation mixture was then diluted 5-fold with warm BRB80, immediately diluted again 2-fold with 2% glutaraldehyde in BRB80, and left at RT for 5 min. The samples were then diluted 5-fold in BRB80, layered on top of a 5 ml cushion of 20% (vol/vol) glycerol in BRB80 prepared in a 15 ml Corex tube fitted with a custom insert to support a round poly-lysine\u2013treated coverslip. The sample was centrifuged for 45 min at 25,000 g in an HB-6 rotor at 4\u00b0C. After centrifugation, the cushion was removed, and ice-cold methanol was added to the tube. The coverslip was mounted in Prolong Diamond (Invitrogen, P36965).\n\n### Sequential xenopus egg extract reactions\n\nCSF extracts were prepared from Xenopus laevis oocytes as described previously (Murray and Kirschner, 1989; Hannak and Heald, 2006). When working with Xenopus laevis, all relevant ethical regulations were followed, and all procedures were approved by Princeton IACUC. Extract reactions were done in flow chambers prepared between glass slides and 22\u00a0\u00d7\u00a022 mm, 1.5 coverslips (Fisherbrand, 12-541B) using double-sided tape. In all reactions 75% of the total volume was extract, and 25% was a combination of other components or CSF-XB (100 mM KCl, 10 mM K-HEPES, 1 mM MgCl2, 0.1 mM CaCl2, 5 mM EGTA, pH 7.7) + 10% w/v sucrose. All reactions were done in the presence of 0.5 mM sodium orthovanadate (NEB, P0758S) to avoid sliding of microtubules on the glass surface, and with 0.89 \u00b5M fluorescently-labeled tubulin. In reactions where BFP-RanQ69L was added, its concentration was 10 \u00b5M. When EB1-GFP was added its concentration was 85 nM. All proteins and chemicals added to egg extracts were stored or diluted into CSF-XB buffer + 10% w/v sucrose. Reaction mixtures were pipetted into the flow chambers to initiate microtubule formation.\n\nFor sequential extract reactions, individual microtubules were allowed to form on the glass surface from the first extract reaction for 5\u20138 min, and soluble, non-microtubule bound proteins were removed by washing with CSF-XB. For experiments with three sequential reactions, the CSF-XB wash was supplemented with 0.05 mM Taxol (Sigma-Aldrich, T7402). The second extract reaction was then introduced. In the case of Figure 1a the chamber was imaged immediately. For all other experiments, the second extract with 0.033 mM nocodazole (Sigma-Aldrich, M1404) was incubated in the chamber for 5 min, followed by the removal of unbound protein with CSF-XB if the third reaction was extract, or with BRB80 if the third reaction was purified tubulin. The third extract reaction was then introduced and imaged immediately. For experiments where the final reaction was purified tubulin, the final tubulin nucleation mix was added: 80 mM Pipes, 1 mM EGTA, 1 mM MgCl2, 1 mM GTP, 2.5 mM PCA, 25 nM PCD, 2 mM Trolox, 19 \u03bcM unlabeled bovine tubulin and 1 \u03bcM Cy5-labeled bovine tubulin. If XMAP215-GFP was added in this final reaction, its concentration was 25 nM.\n\n### TIRF microscopy and image analysis\n\nTotal internal reflection fluorescence (TIRF) microscopy was performed with a Nikon TiE microscope using a 100 \u00d7 1.49 NA objective. Andor Zyla sCMOS camera was used for acquisition, with a field of view of 165.1\u00a0\u00d7\u00a0139.3 \u00b5m. 2\u00a0\u00d7\u00a02 binned, multi-color images were acquired using NIS-Elements software (Nikon). All adjustable imaging parameters (exposure time, laser intensity, and TIRF angle) were kept the same within experiments. For microtubule nucleation assays in vitro the TIRF objective was warmed to 33\u00b0C using an objective heater (Bioptechs, 150819\u201313). For all time-lapse imaging, multi-color images were collected every 2 s. Brightness and contrast were optimized individually for display, except for images in\u00a0Figure 1\u2014figure supplement 1, Figure 2, Figure 3\u2014figure supplement 3 and Figure 3\u2014figure supplement 4, where images belonging to the same experiment were contrast-matched.\n\nImages used for the quantification of microtubule binding were analyzed using ImageJ (Schindelin et al., 2012). To segment microtubules, the tubulin signal was first thresholded via the Otsu method. Microtubules were isolated from the mask by setting the minimum particle area as 1 or 2 \u03bcm2. Average fluorescent signals per pixel, for the microtubule or bound proteins, were calculated for each microtubule. The average intensity from the reverse mask of the entire field of view was subtracted from the average intensity on each microtubule. For branching microtubule nucleation experiments in vitro, microtubules were counted manually using time-lapse experiments within the first 3.5 min of the reaction. Lengths of microtubules and branching angles were measured using ImageJ.\n\n### Negative stain electron microscopy\n\nUnlabeled GMPCPP-stabilized microtubules diluted 1:500 were incubated for 5 min at room temperature with either \u03b3-TuRC only or with a mixture of TPX2 (50 nM) + augmin (50 nM) + \u03b3-TuRC. The samples were diluted 10-fold with BRB80 to reduce the number of unbound \u03b3-TuRC molecules in the background, and 5 \u00b5l of this diluted sample was immediately applied onto glow-discharged grids (Electron Microscopy Sciences, CF400-Cu). The samples were stained with 2% uranyl acetate. Images were collected with a CM100 TEM (Philips) at 80 keV at a magnification of 64,000. Images were recorded using an ORCA camera.\n\n### Antibodies\n\nPolyclonal XenC antibody was a gift from C. Wiese and was described previously (Wiese and Zheng, 2000). It was used to generate Alexa-647-labeled XenC antibody by first dialyzing antibodies in PBS buffer (50 mM NaPO4, 150 mM NaCl, pH 7.4). The reaction with Alexa-647-NHS-ester was done according to the protocol recommended by the manufacturer. Finally, the removal of unreacted dye was done via gel filtration in Bio-Gel P-30 Gel (Bio-Rad). On average, each XenC antibody was labeled with 2.5 Alexa-647 dye molecules. The polyclonal antibody used to purify \u03b3-TuRC from Xenopus egg extract was generated against a purified \u03b3-tubulin peptide (amino acids 412\u2013451) through a commercial vendor (Genscript). The presence of \u03b3-TuRC during its purification was tracked via Western blotting using the GTU88 (Sigma-Aldrich, T6557) antibody against \u03b3-tubulin.\n",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "41fb4651-0064-4cf0-986e-a29fdd2bf0ea",
+      "submission_id": "57509cda-fb07-44e7-a412-a811c0442dd3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jens L\u00fcders, IRB Barcelona\n\nReviewers:\n- Jens L\u00fcders, IRB Barcelona\n\n## Review text\n\nDOI: [10.7554/eLife.49797.sa1](https://doi.org/10.7554/eLife.49797.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this manuscript, the authors use Xenopus augmin recombinantly produced in insect cells, purified native \u03b3-TuRC from Xenopus egg extract, and recombinant TPX2 purified from E. coli to reconstitute the nucleation of microtubules from the lateral surface of pre-existing microtubules. This process, known as branching microtubule nucleation, is important, for example, for spindle formation and neuronal development. The authors show the same requirements for TPX2, augmin and \u03b3-TuRC that was seen previously in extracts and suggest that these components are sufficient for branching nucleation. The work thus represents a useful step forward in our understanding of multicomponent microtubule nucleation and will be of interest to a broad community of cell biologists and biochemists.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Biochemical reconstitution of branching microtubule nucleation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jens L\u00fcders as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript \"Biochemical reconstitution of branching microtubule nucleation\" by Alfaro-Aco et al. uses Xenopus augmin recombinantly produced in insect cells, purified native \u03b3-TuRC from Xenopus egg extract, and recombinant TPX2 purified from E. coli to reconstitute the nucleation of microtubules from the lateral surface of pre-existing microtubules.\n\nSince the discovery of branching microtubule nucleation and its key player augmin, this nucleation mechanism has been analyzed largely in cell biological studies and a true mechanistic understanding is still lacking.\n\nA set of papers from the Petry lab culminating with this manuscript has explored the contributions of augmin, TPX2 and \u03b3-TuRC to branching microtubule nucleation. This manuscript shows the same requirement for TPX2, augmin and \u03b3-TuRC that was seen previously in extracts and suggests that these components are sufficient for branching nucleation.\n\nEssential revisions:\n\nOverall, this is a well written, timely manuscript that establishes the minimal molecular requirements for branching microtubule nucleation. The reconstitution of the process by purified proteins constitutes an important achievement in the field and provides the basis for further mechanistic investigation.\n\nHowever, the reviewers felt that the study lacks some novelty considering the authors' recently published reconstitution of augmin-dependent recruitment of \u03b3-TuRC using the same purified components (Song et al., 2018). To address this the efficiency of the reconstitution of branching nucleation should be determined. A related issue is the question if and how \u03b3-TuRC is activated in the reconstituted system and what the roles of TPX2 and augmin are in this regard.\n\n1) Validating the success of reconstitution requires knowing the efficiency of the reconstitution. If only a small fraction of the proteins is active, then the reconstitution may be incomplete. Concentrations need to be reported for \u03b3-TuRC with an estimate of the fraction of active \u03b3-TuRCs.\n\n2) Do TPX2 and augmin merely function as recruitment factors or do they activate \u03b3-TuRC at the branching nucleation sites? Figure 3 - video 1: It is evident that in the optimal branching nucleation mix with TPX2, augmin, and \u03b3-TuRC, a large number of microtubules are nucleated spontaneously and not from the lattice of existing microtubules. Unfortunately, only branching events are quantified in Figure 3E. Is branching specifically stimulated or is there an overall increased nucleation activity, which may also explain more branches? \u03b3-TuRC alone is generally considered a weak nucleator, so the obvious question is what activates \u03b3-TuRC in these assays? This could also be tested in a regular nucleation assay (without preformed microtubules).\n\n3) It is hard to believe that TPX2 and \u03b3-TuRC, without augmin, can induce branching nucleation, given that TPX2 has no ability to recruit \u03b3-TuRC to existing microtubules (Figure 2\u2014figure supplement 2). The authors show that the branch angle is slightly different from augmin-dependent nucleation (Figure 3F). Is this the only difference? The authors should investigate this peculiar phenomenon more thoroughly.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Biochemical reconstitution of branching microtubule nucleation\" for further consideration by eLife. Your revised article has been evaluated by Anna Akhmanova (Senior Editor) and a Reviewing Editor.\n\nAll reviewers agree that the revisions have much improved the manuscript, but there are two remaining issues that need to be addressed before acceptance.\n\nIn the manuscript you argue that TPX2 and augmin are activation factors for \u03b3-TuRC and not just localization factors. The evidence is that TPX2 and augmin do not activate \u03b3-TuRC based nucleation away from the MT lattice, but do increase nucleation of branches from the MT lattice. However, this would actually be the definition of a localization factor, to give more nucleation from a specific location, without requiring activation. When comparing Figure 2C and 3E it seems that there is a stronger increase in branches (Figure 3E) than there is an increase in \u03b3-TuRC on the lattice (Figure 2C). Given the size of the error and the spread of the data, is this a significant difference? At the very least it seems to be a small activation. We would like you to address this point more clearly in the paper. Also, if your conclusion is that the activation is indeed very small, you may want to consider changing the Abstract sentence \"TPX2 and augmin do not act as mere localization factors, but enable \u03b3-TuRC-dependent microtubule nucleation at preferred branching angles of less than 90 degrees from regularly-spaced patches along microtubules.\" to \"TPX2 and augmin enable \u03b3-TuRC-dependent microtubule nucleation at preferred branching angles of less than 90 degrees from regularly-spaced patches along microtubules.\"\n\nWe would also like to ask you to include the data shown in your rebuttal letter as part of Figure 3\u2014figure supplement 2 (GFP-augmin, untagged TPX2 and \u03b3-TuRC).\n",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "538f635b-254f-4d9f-a38b-e809867d1ec2",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C1",
+      "claim": "Microtubules are nucleated from specific locations at precise times in the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules are nucleated from specific locations at precise times in the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about microtubule biology presented in the abstract without specific experimental data in this manuscript, but draws on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "adc492f0-0db5-4e9f-95ca-de7e15053b2b",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C2",
+      "claim": "Branching microtubule nucleation is critical for chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using purified Xenopus laevis proteins we biochemically reconstitute branching microtubule nucleation, which is critical for chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge in the abstract without specific experimental support in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "76ac7791-541e-4fd1-a59f-8299cc1f516e",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C3",
+      "claim": "\u03b3-TuRC, augmin, and TPX2 are required to efficiently nucleate microtubules from pre-existing microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that besides the microtubule nucleator gamma-tubulin ring complex (\u03b3-TuRC), the branching effectors augmin and TPX2 are required to efficiently nucleate microtubules from pre-existing microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the reconstitution experiments shown in Figure 3E where all three factors together produce the highest level of branching microtubule nucleation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "a710db56-3f63-4cac-aa0a-623850c39ed6",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C4",
+      "claim": "TPX2 has the capacity to directly recruit \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "TPX2 has the unexpected capacity to directly recruit \u03b3-TuRC as well as augmin, which in turn targets more \u03b3-TuRC along the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the binding experiments shown in Figure 2B-C where TPX2 alone marginally increases \u03b3-TuRC binding to microtubules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "1718cab4-dc2b-49c5-88f1-cd0b143e0787",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C5",
+      "claim": "TPX2 can directly recruit augmin to microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "TPX2 has the unexpected capacity to directly recruit \u03b3-TuRC as well as augmin, which in turn targets more \u03b3-TuRC along the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the sequential binding experiments in Figure 2E-F showing that microtubule-bound TPX2 increases the amount of augmin bound to the microtubule.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "f7c7d079-2b39-4812-ae08-a021c5dc9987",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C6",
+      "claim": "Augmin targets \u03b3-TuRC along the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "TPX2 has the unexpected capacity to directly recruit \u03b3-TuRC as well as augmin, which in turn targets more \u03b3-TuRC along the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Figure 2B-C showing that augmin increases \u03b3-TuRC binding to microtubules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "dba93c60-1ca4-4323-b643-133c4db5c5a0",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C7",
+      "claim": "TPX2 and augmin enable \u03b3-TuRC-dependent microtubule nucleation at preferred branching angles of less than 90 degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "TPX2 and augmin enable \u03b3-TuRC-dependent microtubule nucleation at preferred branching angles of less than 90 degrees from regularly-spaced patches along microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the branching angle measurements shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "90f7156a-696b-4134-ba48-ca76a2039e27",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C8",
+      "claim": "Branching microtubule nucleation occurs from regularly-spaced patches along microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "TPX2 and augmin enable \u03b3-TuRC-dependent microtubule nucleation at preferred branching angles of less than 90 degrees from regularly-spaced patches along microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the electron microscopy images in Figure 2D and fluorescence microscopy in Figure 3D showing distinct puncta along microtubules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "49d0912c-9237-4161-958e-1fda9d7a4bf0",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C9",
+      "claim": "Microtubules in cells are nucleated by \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, microtubules in cells are nucleated by the microtubule nucleator \u03b3-TuRC (Kollman et al., 2011; Zheng et al., 1995) and its co-nucleation factor XMAP215 (Flor-Parra et al., 2018; Gunzelmann et al., 2018; Thawani et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "33a1fcb2-53da-457f-ae0a-03583a7d7c8c",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C10",
+      "claim": "XMAP215 is a co-nucleation factor for \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, microtubules in cells are nucleated by the microtubule nucleator \u03b3-TuRC (Kollman et al., 2011; Zheng et al., 1995) and its co-nucleation factor XMAP215 (Flor-Parra et al., 2018; Gunzelmann et al., 2018; Thawani et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "40cc8f5c-ee66-4a27-9811-522149a9b348",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C11",
+      "claim": "Each microtubule nucleation pathway requires a unique set of nucleation effectors to recruit and regulate \u03b3-TuRC at distinct cellular locations.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, each microtubule nucleation pathway requires a unique set of nucleation effectors to recruit and regulate \u03b3-TuRC at distinct cellular locations (Lin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "9ef0a22c-bbf0-4ee7-a117-3d35099ef202",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C12",
+      "claim": "Branching microtubule nucleation amplifies microtubule number while preserving their polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubules can nucleate from pre-existing microtubules, termed branching microtubule nucleation (Petry et al., 2013), which amplifies microtubule number while preserving their polarity, as is needed in the mitotic spindle and in axons (Cunha-Ferreira et al., 2018; David et al., 2019; Kamasaki et al., 2013; Petry et al., 2013; S\u00e1nchez-Huertas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "b624c39d-5569-4394-8460-1cec6ff99370",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C13",
+      "claim": "Augmin is required for branching microtubule nucleation in plant, human and Drosophila cells, and meiotic Xenopus egg extract.",
+      "claim_type": "EXPLICIT",
+      "source": "The eight-subunit protein complex augmin is required for branching microtubule nucleation in plant, human and Drosophila cells, and meiotic Xenopus egg extract, where its depletion leads to reduced spindle microtubule density, less kinetochore fiber tension, metaphase arrest, and cytokinesis failure (David et al., 2019; Decker et al., 2018; Goshima et al., 2008; Hayward et al., 2014; Ho et al., 2011; Kamasaki et al., 2013; Lawo et al., 2009; Nakaoka et al., 2012; Petry et al., 2011; Uehara et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "96723724-3dcd-4135-bad9-e9d2a92018df",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C14",
+      "claim": "Augmin depletion leads to reduced spindle microtubule density, less kinetochore fiber tension, metaphase arrest, and cytokinesis failure.",
+      "claim_type": "EXPLICIT",
+      "source": "The eight-subunit protein complex augmin is required for branching microtubule nucleation in plant, human and Drosophila cells, and meiotic Xenopus egg extract, where its depletion leads to reduced spindle microtubule density, less kinetochore fiber tension, metaphase arrest, and cytokinesis failure (David et al., 2019; Decker et al., 2018; Goshima et al., 2008; Hayward et al., 2014; Ho et al., 2011; Kamasaki et al., 2013; Lawo et al., 2009; Nakaoka et al., 2012; Petry et al., 2011; Uehara et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "c40e5c0a-2232-490a-9b18-99d0623ddeb7",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C15",
+      "claim": "Augmin is necessary to recruit \u03b3-TuRC to spindle microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Augmin is necessary to recruit \u03b3-TuRC to spindle microtubules (Goshima et al., 2007), and following the recombinant expression of augmin (Hsia et al., 2014), this activity was confirmed using purified proteins (Song et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "edf68ce9-127c-4306-ad82-65a4cfc2e90f",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C16",
+      "claim": "TPX2 is released near chromatin in meiotic Xenopus egg extract.",
+      "claim_type": "EXPLICIT",
+      "source": "In meiotic Xenopus egg extract, the Ran-regulated protein TPX2 is released near chromatin (Gruss et al., 2001), where it stimulates branching microtubule nucleation (Petry et al., 2013), potentially by activating \u03b3-TuRC via nucleation activator motifs (Alfaro-Aco et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "ea414b7d-0df7-4d54-84e8-5cf027be2e51",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C17",
+      "claim": "TPX2 stimulates branching microtubule nucleation near chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "In meiotic Xenopus egg extract, the Ran-regulated protein TPX2 is released near chromatin (Gruss et al., 2001), where it stimulates branching microtubule nucleation (Petry et al., 2013), potentially by activating \u03b3-TuRC via nucleation activator motifs (Alfaro-Aco et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "2d47da08-7e98-4440-a3d5-3cd89e6db046",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C18",
+      "claim": "TPX2 potentially activates \u03b3-TuRC via nucleation activator motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "In meiotic Xenopus egg extract, the Ran-regulated protein TPX2 is released near chromatin (Gruss et al., 2001), where it stimulates branching microtubule nucleation (Petry et al., 2013), potentially by activating \u03b3-TuRC via nucleation activator motifs (Alfaro-Aco et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is presented as a possibility supported by a citation, indicating speculation based on previous work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "81f9072e-2c81-4fad-b00c-5a9b6da38ea6",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C19",
+      "claim": "TPX2 forms a co-condensate with tubulin along the microtubule lattice, which enhances the kinetic efficiency of branching microtubule nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, TPX2 was also observed to form a co-condensate with tubulin along the microtubule lattice, which enhances the kinetic efficiency of branching microtubule nucleation (King and Petry, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "a032be2b-2147-4a47-80fb-be649b629efc",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C20",
+      "claim": "In meiotic Xenopus egg extract, TPX2 needs to bind to microtubules before augmin/\u03b3-TuRC to result in a successful nucleation event.",
+      "claim_type": "EXPLICIT",
+      "source": "In meiotic Xenopus egg extract, TPX2 needs to bind to microtubules before augmin/\u03b3-TuRC to result in a successful nucleation event (Thawani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "6b30f247-7cd9-4b3a-9cd4-a4f85b9373ad",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C21",
+      "claim": "In mitotic Drosophila cells TPX2 is not required, and augmin can bind to microtubules before \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in mitotic Drosophila cells TPX2 is not required, and augmin can bind to microtubules before \u03b3-TuRC (Verma and Maresca, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "125eefb6-5851-4adc-a813-5e51552cfeef",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C22",
+      "claim": "An endogenous, pre-existing microtubule can serve as a template for branching microtubule nucleation when exposed to Ran-supplemented extract.",
+      "claim_type": "EXPLICIT",
+      "source": "Using multicolor time-lapse total internal reflection (TIRF) microscopy, we first confirmed that an endogenous, pre-existing microtubule can serve as a template for branching microtubule nucleation when exposed to Ran-supplemented extract that releases branching factors (Figure 1A and Figure 1\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "35ab979c-ece4-4a8a-a788-98da1da0a46c",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C23",
+      "claim": "A microtubule formed independent of Ran can serve as the site for binding of branching factors and subsequent nucleation events.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that a microtubule formed independent of Ran can serve as the site for binding of branching factors and subsequent nucleation events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "c8c188d4-542d-4cda-bef2-c235014b8094",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C24",
+      "claim": "All necessary Ran-regulated branching factors bind to the pre-existing microtubule prior to microtubule nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain mechanistic insight, we hypothesized that all necessary Ran-regulated branching factors bind to the pre-existing microtubule prior to microtubule nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis that was then tested experimentally.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "8d30b58f-b865-4f9e-8d8b-46bcaa39b449",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C25",
+      "claim": "Ran-regulated branching factors bind to microtubules independent of their successful nucleation reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "When another extract reaction was subsequently added, new microtubules nucleated almost exclusively from pre-existing microtubules, indicating that Ran-regulated branching factors bind to microtubules independent of their successful nucleation reactions (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental results shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "36935ace-bee9-4875-92ae-ff8be6293298",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C26",
+      "claim": "Upon binding of branching factors and \u03b3-TuRC, tubulin is the only protein required to form new branched microtubules from the localized factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, short branched microtubules nucleated from pre-existing microtubules (Figure 1\u2014figure supplement 2B), showing that upon binding of branching factors and \u03b3-TuRC, tubulin is the only protein required to form new branched microtubules from the localized factors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "50e16d13-8631-4d1a-a42a-146b172b7a6b",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C27",
+      "claim": "Branched microtubules retain the polarity of the pre-existing microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that branched microtubules retained the polarity of the pre-existing microtubule, and new microtubules do not appear to nucleate from other branched microtubules, suggesting that the branching factors do not relocate between microtubules (Figure 1C and Figure 1\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "9dd94067-9314-4574-861c-68b6a8aad018",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C28",
+      "claim": "New microtubules do not appear to nucleate from other branched microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that branched microtubules retained the polarity of the pre-existing microtubule, and new microtubules do not appear to nucleate from other branched microtubules, suggesting that the branching factors do not relocate between microtubules (Figure 1C and Figure 1\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "73e344de-bc28-4d3d-9a30-c99a084c2e17",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C29",
+      "claim": "Branching factors do not relocate between microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that branched microtubules retained the polarity of the pre-existing microtubule, and new microtubules do not appear to nucleate from other branched microtubules, suggesting that the branching factors do not relocate between microtubules (Figure 1C and Figure 1\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that new microtubules do not nucleate from other branched microtubules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "aaa4969c-ef72-4175-9e7c-81df00832196",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C30",
+      "claim": "The deposition of branching factors and \u03b3-TuRC to the pre-existing microtubule determines branching architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, solely the deposition of branching factors and \u03b3-TuRC to the pre-existing microtubule determines branching architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "31c96434-321e-4895-a1a1-5a262b21a49e",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C31",
+      "claim": "Purified \u03b3-TuRC, when tethered along the microtubule lattice via artificial linkers, can nucleate microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the key for branching microtubule nucleation is to target \u03b3-TuRC along the length of a microtubule, we verified as a proof of concept that purified \u03b3-TuRC, when tethered along the microtubule lattice via artificial linkers, can still nucleate microtubules, which indeed was the case (Figure 2\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "698bd4d5-1af1-4ce7-80af-955803b94a7e",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C32",
+      "claim": "\u03b3-TuRC binds along the length of microtubules in the presence of augmin.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3-TuRC, visualized by a fluorescently-labeled antibody, bound along the length of microtubules in the presence of augmin (Figure 2B\u2013C and Figure 2\u2014source data 1) consistent with previous studies (Song et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B\u2013C and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "8d06b5e5-e5cf-4af5-a2d9-9369a0246093",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C33",
+      "claim": "TPX2 alone marginally increases the binding of \u03b3-TuRC to microtubules compared to non-specific \u03b3-TuRC binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, TPX2 alone marginally increased the binding of \u03b3-TuRC to microtubules compared to non-specific \u03b3-TuRC binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "a8f5b27e-0718-470c-808b-a9e273fe90ae",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C34",
+      "claim": "A higher amount of \u03b3-TuRC is recruited all along the microtubule lattice in the presence of both TPX2 and augmin.",
+      "claim_type": "EXPLICIT",
+      "source": "A higher amount of \u03b3-TuRC was recruited all along the microtubule lattice in the presence of both TPX2 and augmin (Figure 2B\u2013C and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "83372a32-75f4-4ce9-9fad-05217a9b771c",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C35",
+      "claim": "Augmin and TPX2 form distinct puncta on microtubules, where \u03b3-TuRC is recruited.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, augmin and TPX2 formed distinct puncta on microtubules, where \u03b3-TuRC was recruited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations in Figure 2B and Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "327cbce5-e02d-4334-a2d3-fb46b72f8bb0",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C36",
+      "claim": "\u03b3-TuRC is recruited to regularly spaced patches along microtubules where it accumulates.",
+      "claim_type": "EXPLICIT",
+      "source": "Using negative stain electron microscopy, we visualized this binding at higher resolution and indeed observed that \u03b3-TuRC is recruited to regularly spaced patches, where it accumulates (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "da1ad0c4-cd37-4060-9af3-dbb4824c73c3",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C37",
+      "claim": "Microtubule-bound TPX2 increases the amount of augmin bound to the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, microtubule-bound TPX2 increased the amount of augmin bound to the microtubule, whereas the presence of augmin did not change the level of bound TPX2 (Figure 2E\u2013F and Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "d543544e-15e9-41f1-9cb5-0e21edff4318",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C38",
+      "claim": "The presence of augmin does not change the level of bound TPX2.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, microtubule-bound TPX2 increased the amount of augmin bound to the microtubule, whereas the presence of augmin did not change the level of bound TPX2 (Figure 2E\u2013F and Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "d833783e-aa20-405c-b4b1-a6d1f4fd8944",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C39",
+      "claim": "Branching microtubule nucleation from a template microtubule occurs using only purified TPX2, augmin, and \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, branching microtubule nucleation from a template microtubule occurred using only purified proteins (Figure 3B and Figure 3\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "277f1ecc-5cac-44f8-8f77-43bd6b209f48",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C40",
+      "claim": "TPX2, augmin and \u03b3-TuRC are sufficient to specifically nucleate new branched microtubules, which remain attached at the nucleation site on the template microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TPX2, augmin and \u03b3-TuRC are sufficient to specifically nucleate new branched microtubules, which remain attached at the nucleation site on the template microtubule (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "e1c3ada7-0e67-40ba-a1ca-26cc5865dbc9",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C41",
+      "claim": "New microtubules nucleate all along the template microtubule without any preference for the template's plus- or minus-ends.",
+      "claim_type": "EXPLICIT",
+      "source": "New microtubules nucleate all along the template microtubule without any preference for the template's plus- or minus-ends (Figure 3C and Figure 3\u2014source data 1), likely because the template microtubule was fully available for simultaneous binding of branching factors in our assay set-up.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "dce8fad0-8667-4199-a37d-1ef855cc2ccd",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C42",
+      "claim": "There is no signature on the stabilized microtubule lattice that determines where a branch occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is no signature on the stabilized microtubule lattice that determines where a branch occurs, only that microtubule nucleation events occur from distinct TPX2/augmin puncta distributed along the microtubule lattice (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that branches occur uniformly along the microtubule without preference for ends.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "a96fbbd8-1520-4127-ba1a-86d077a7715e",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C43",
+      "claim": "Microtubule nucleation events occur from distinct TPX2/augmin puncta distributed along the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is no signature on the stabilized microtubule lattice that determines where a branch occurs, only that microtubule nucleation events occur from distinct TPX2/augmin puncta distributed along the microtubule lattice (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "f30f6ed4-4010-4c49-a294-72a023a0866e",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C44",
+      "claim": "Multiple microtubules can be generated from the same puncta as resolved by light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple microtubules can be generated from the same puncta as resolved by light microscopy (Figure 3D), which presumably nucleate from neighboring \u03b3-TuRCs (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "f02c6a03-531c-494b-b3f0-f26a9528ce51",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C45",
+      "claim": "Multiple microtubules from the same puncta presumably nucleate from neighboring \u03b3-TuRCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple microtubules can be generated from the same puncta as resolved by light microscopy (Figure 3D), which presumably nucleate from neighboring \u03b3-TuRCs (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the electron microscopy data showing multiple \u03b3-TuRCs in patches (Figure 2D).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "ad3bbff0-9434-4f4a-956b-ce994242750b",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C46",
+      "claim": "\u03b3-TuRC is essential for branching microtubule nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, \u03b3-TuRC is essential for branching microtubule nucleation (Figure 3E and Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E where no branching occurs without \u03b3-TuRC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "1e3a3541-3dd0-4e1f-a2f4-adeb52ddc90c",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C47",
+      "claim": "TPX2 alone or together with augmin cannot nucleate branched microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that TPX2 can recruit tubulin (King and Petry, 2019), it alone or together with augmin cannot nucleate branched microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "480aad5d-b5e9-463f-921b-c73037896e58",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C48",
+      "claim": "\u03b3-TuRC can infrequently bind to the microtubule lattice on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3-TuRC can infrequently bind to the microtubule lattice on its own (Figure 2D), leading to rare nucleation events without TPX2 and augmin (Figure 3E and Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D and Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "1bc774e7-2f56-40ff-8f85-6764fa768053",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C49",
+      "claim": "Augmin and \u03b3-TuRC can cause branching microtubule nucleation to a limited extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, augmin and \u03b3-TuRC can cause branching microtubule nucleation to a limited extent (Figure 3E, Figure 3\u2014figure supplement 2B\u2013C and Figure 3\u2014source data 2), as augmin can directly recruit \u03b3-TuRC to a pre-existing microtubule in vitro (Song et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E and Figure 3\u2014figure supplement 2B\u2013C, and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "1ccfb894-e7e0-41b7-98cb-cad3788dc6a2",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C50",
+      "claim": "TPX2 and \u03b3-TuRC can cause branching microtubule nucleation to a similar extent as augmin and \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, TPX2 and \u03b3-TuRC can also cause branching microtubule nucleation to a similar extent as augmin and \u03b3-TuRC (Figure 3E, Figure 3\u2014figure supplement 2D\u2013E and Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E and Figure 3\u2014figure supplement 2D\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "abb06f61-ff9d-4740-8d65-4d2c82a7af9e",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C51",
+      "claim": "Only when augmin, TPX2 and \u03b3-TuRC are present, branching microtubule nucleation occurs most often.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, only when augmin, TPX2 and \u03b3-TuRC are present, branching microtubule nucleation occurs most often (Figure 3E and Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "7abc9b69-4e99-4504-a39a-4bc09bad7dbe",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C52",
+      "claim": "Branched microtubules are preferentially formed in angles < 90 degrees, with 0\u201315 degrees being the most common.",
+      "claim_type": "EXPLICIT",
+      "source": "Branched microtubules are preferentially formed in angles < 90 degrees, with 0\u201315 degrees being the most common (Figure 3F and Figure 3\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "10b4448b-957a-44a5-85d9-c447c49360d3",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C53",
+      "claim": "Most branched microtubules maintain the same polarity as the mother microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "This way, most branched microtubules maintain the same polarity as the mother microtubule, a hallmark of branching microtubule nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that most branches form at angles < 90 degrees.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "a2dd058d-e2e1-4ba1-a2d5-3b280fc1f4f5",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C54",
+      "claim": "The angle of microtubule branches did not drastically change when augmin or TPX2 were combined with \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "The angle of microtubule branches did not drastically change when augmin or TPX2 were combined with \u03b3-TuRC, only that augmin/\u03b3-TuRC alone caused a higher proportion of shallow branch angles (Figure 3F and Figure 3\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "1bbb449c-da91-451f-baff-e8010218ad5b",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C55",
+      "claim": "Augmin/\u03b3-TuRC alone causes a higher proportion of shallow branch angles.",
+      "claim_type": "EXPLICIT",
+      "source": "The angle of microtubule branches did not drastically change when augmin or TPX2 were combined with \u03b3-TuRC, only that augmin/\u03b3-TuRC alone caused a higher proportion of shallow branch angles (Figure 3F and Figure 3\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "c9c052c8-1cce-45b6-b576-4ad3775158c8",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C56",
+      "claim": "The addition of TPX2 or augmin does not change the number of non-branched microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Reactions where \u03b3-TuRC was present have approximately twice as many non-branched microtubules per field of view compared to the reactions where \u03b3-TuRC was absent. Notably, the addition of TPX2 or augmin does not change the number of non-branched microtubules (Figure 3\u2014figure supplement 3A and Figure 3\u2014source data 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "18baef13-4801-4b05-b32d-9562d9d6a342",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C57",
+      "claim": "The increase in branching microtubule nucleation by TPX2 and augmin is not just a result of increased microtubule nucleation overall, but specifically occurs from a pre-existing microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the increase in branching microtubule nucleation by TPX2 and augmin is not just a result of increased microtubule nucleation overall, but specifically occurs from a pre-existing microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that TPX2 and augmin do not increase non-branched microtubule nucleation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "312d11ea-b2cb-48ff-9aee-f6cbf29c0fd7",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C58",
+      "claim": "Augmin does not enhance the nucleation activity of purified \u03b3-TuRC in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Augmin did not enhance the nucleation activity of purified \u03b3-TuRC in vitro (Figure 3\u2014figure supplement 3B), consistent with previous studies (Song et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3B and is consistent with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "84eed693-2d4f-4a01-8562-986bf84565d7",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C59",
+      "claim": "A low concentration of TPX2 (10 nM) does not enhance the nucleation activity of \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "A low concentration of TPX2 (10 nM) did not enhance the nucleation activity of \u03b3-TuRC either (Figure 3\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "82bc2b55-62b6-4d0d-90b6-6b822987cdf9",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C60",
+      "claim": "At 50 nM concentration and in the absence of pre-formed microtubules, TPX2 forms co-condensates with tubulin in solution that nucleate microtubules in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "A higher concentration of TPX2 (50 nM) was also tested, but at this concentration and in the absence of pre-formed microtubules, TPX2 forms co-condensates with tubulin in solution that nucleate microtubules in vitro (Figure 3\u2014figure supplement 3D) (King and Petry, 2019), which precludes the accurate assessment of \u03b3-TuRC-mediated microtubule nucleation at higher concentrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 3D and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "a6e5b471-49d3-4a6b-9654-864c5835b1fd",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C61",
+      "claim": "TPX2 and augmin do not activate \u03b3-TuRC in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "These nucleation experiments suggest that TPX2 and augmin do not activate \u03b3-TuRC in solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the nucleation experiments in solution shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "3790e2d9-3c1c-4348-a9a3-92cc2dbf65eb",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C62",
+      "claim": "XMAP215 co-localizes to the template microtubule and appears to increase both microtubule nucleation rate and length.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, XMAP215 co-localizes to the template microtubule and appears to increase both microtubule nucleation rate and length (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "185de65d-20c3-4ff3-bd52-711b84899f57",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C63",
+      "claim": "Only when TPX2 was bound first and augmin/\u03b3-TuRC second, a higher level of branching microtubule nucleation was measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, only when TPX2 was bound first and augmin/\u03b3-TuRC second, a higher level of branching microtubule nucleation was measured (Figure 3G and Figure 3\u2014source data 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "8e6a8bc9-b03b-4a4e-847b-5297784cf2f5",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C64",
+      "claim": "The three factors TPX2, augmin and \u03b3-TuRC are sufficient to cause branching microtubule nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Via an in vitro reconstitution, we demonstrate that the three factors TPX2, augmin and \u03b3-TuRC are sufficient to cause branching microtubule nucleation and defined the roles of each protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the reconstitution experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "ddfcd71b-3333-4c1a-bc7b-c21e6594d81c",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C65",
+      "claim": "\u03b3-TuRC is required for physiological microtubule nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although microtubule nucleation effectors alone, both as monomers or as phase-separated entities, can generate microtubules in vitro (Roostalu et al., 2015; Woodruff et al., 2017; King and Petry, 2019), \u03b3-TuRC is required for physiological microtubule nucleation (Kollman et al., 2011; Thawani et al., 2018), and this reconstitution highlights the importance of including it when studying microtubule nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "5f1410fd-86b3-49c4-a8f4-587eed2a84a7",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C66",
+      "claim": "Microtubule nucleation effectors alone, both as monomers or as phase-separated entities, can generate microtubules in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Although microtubule nucleation effectors alone, both as monomers or as phase-separated entities, can generate microtubules in vitro (Roostalu et al., 2015; Woodruff et al., 2017; King and Petry, 2019), \u03b3-TuRC is required for physiological microtubule nucleation (Kollman et al., 2011; Thawani et al., 2018), and this reconstitution highlights the importance of including it when studying microtubule nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "4ab39706-4aae-4a47-babf-ec5393dadf68",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C67",
+      "claim": "\u03b3-TuRC's activity can be tuned via the tubulin concentration and the presence of XMAP215.",
+      "claim_type": "EXPLICIT",
+      "source": "In our in vitro system, \u03b3-TuRC's activity could be tuned via the tubulin concentration and the presence of XMAP215.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental observations throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "4ead07b0-d762-4b47-91be-8e8df2879534",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C68",
+      "claim": "The microtubule nucleation capacity of \u03b3-TuRC was not enhanced by TPX2 or augmin in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The microtubule nucleation capacity of \u03b3-TuRC was not enhanced by TPX2 or augmin in solution, but these factors specifically enable \u03b3-TuRC-dependent microtubule nucleation from a pre-existing microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from the nucleation assays in solution and on microtubules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "f7bcf9ad-0a9b-4e67-81ba-a3ab1ce0e6b5",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C69",
+      "claim": "TPX2 and augmin specifically enable \u03b3-TuRC-dependent microtubule nucleation from a pre-existing microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "The microtubule nucleation capacity of \u03b3-TuRC was not enhanced by TPX2 or augmin in solution, but these factors specifically enable \u03b3-TuRC-dependent microtubule nucleation from a pre-existing microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from the nucleation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "1d8cfd8d-5c0c-403c-b24c-28e4ca4bf408",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C70",
+      "claim": "TPX2 and augmin may act as localization factors.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be explained if TPX2 and augmin act as localization factors, but there is also the possibility that they increase the nucleation activity of \u03b3-TuRC specifically when bound to a microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possible explanation for the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "d415c51f-9aca-4115-ab4c-ee2a369687f3",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C71",
+      "claim": "TPX2 and augmin may increase the nucleation activity of \u03b3-TuRC specifically when bound to a microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be explained if TPX2 and augmin act as localization factors, but there is also the possibility that they increase the nucleation activity of \u03b3-TuRC specifically when bound to a microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possible explanation for the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "51df3709-13e2-48b6-b029-8190d5e94518",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C72",
+      "claim": "Augmin can recruit \u03b3-TuRC to the side of a pre-existing microtubule, which can subsequently nucleate branched microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Augmin can recruit \u03b3-TuRC to the side of a pre-existing microtubule (Song et al., 2018), which can subsequently nucleate branched microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature and the experimental data in this manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "28792c16-44e2-4d98-bbb8-1eef9f0c2e76",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C73",
+      "claim": "TPX2 increases \u03b3-TuRC localization to microtubules to a small extent.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained by our observation that TPX2 increases \u03b3-TuRC localization to microtubules to a small extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to the experimental observations in Figure 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "2e49f143-dff4-46ee-981d-c14b8921bbe6",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C74",
+      "claim": "TPX2 can recruit tubulin to the lattice of a pre-existing microtubule by forming a co-condensate.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, it was recently shown that TPX2 can recruit tubulin to the lattice of a pre-existing microtubule by forming a co-condensate (King and Petry, 2019), potentially making lattice-bound \u03b3-TuRC more likely to nucleate branched microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "1c2121c8-af7f-4649-99c0-2d150850089a",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C75",
+      "claim": "TPX2 contains \u03b3-TuRC activator motifs that have been proposed to activate \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, TPX2 contains \u03b3-TuRC activator motifs that have been proposed to activate \u03b3-TuRC (Alfaro-Aco et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "ef341db6-1e91-4112-b328-e497aeb8b856",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C76",
+      "claim": "TPX2 additionally recruits more augmin, which in turn can localize more \u03b3-TuRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides operating via these three modes in the full reconstitution, TPX2 additionally recruits more augmin, which in turn can localize more \u03b3-TuRC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data in Figure 2E-F showing TPX2 recruits augmin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "646e5cfc-caf9-4b10-9fcc-ca231c39fbb4",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C77",
+      "claim": "TPX2 alone creates a slightly wider angle distribution of branches than augmin alone and both factors together.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, TPX2 alone creates a slightly wider angle distribution of branches, than augmin alone and both factors together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "82e0a027-9d56-4c7a-b47a-7103bdcd34fe",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C78",
+      "claim": "By bridging the microtubule and \u03b3-TuRC with a defined architecture based on its h-shaped structure, augmin may keep the angle variation in a more shallow range.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by bridging the microtubule and \u03b3-TuRC with a defined architecture based on its h-shaped structure (Hsia et al., 2014; Song et al., 2018), augmin may keep the angle variation in a more shallow range, which is critical for creating parallel structures that retain microtubule polarity as is necessary in the spindle and axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation based on the experimental observations and citations to previous structural studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "d8901c8a-dd11-4633-93dc-5db39e0a1cab",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C79",
+      "claim": "Both TPX2 and augmin are required in Xenopus egg extract for branching microtubule nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although TPX2 + \u03b3-TuRC or augmin + \u03b3-TuRC can nucleate microtubules from a pre-existing microtubule in this purified system, both factors are required in Xenopus egg extract for branching microtubule nucleation (Petry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "3cfa61fd-9033-462d-8e28-48d6f5547363",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C80",
+      "claim": "Microtubule nucleation in a physiological environment is more stringently regulated than in the purified in vitro system.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that microtubule nucleation in a physiological environment is more stringently regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison between the in vitro system and egg extract results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "ec91805d-849f-4ab8-a800-c1b1ee81719f",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C81",
+      "claim": "TPX2 binding to microtubules is absolutely necessary for augmin/\u03b3-TuRC binding and subsequent branching microtubule nucleation in Xenopus egg extract.",
+      "claim_type": "EXPLICIT",
+      "source": "Another important difference is that while it is beneficial that TPX2 binds to microtubules before augmin in our in vitro reconstitution, TPX2 binding to microtubules is absolutely necessary for augmin/\u03b3-TuRC binding and subsequent branching microtubule nucleation in Xenopus egg extract (Thawani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "c790eb47-d34c-4ffe-bec6-9299d06e8414",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C82",
+      "claim": "TPX2 directly regulates augmin's binding to microtubules in Xenopus egg extract.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that TPX2 directly regulates augmin's binding to microtubules in Xenopus egg extract, in a manner that still needs to be uncovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison between the in vitro system and egg extract results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "94d40586-3401-47d1-9ff9-caf86027c28d",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C83",
+      "claim": "TPX2 lies at the very heart of controlling branching microtubule nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, TPX2, despite being only a single protein amongst large multi-subunit complexes, lies at the very heart of controlling this reaction, as demonstrated in this purified in vitro system and in Xenopus egg extract (Thawani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in this manuscript and previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "dbd43619-1a2a-4806-8e67-eebfcef3490e",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C84",
+      "claim": "Other proteins besides TPX2, augmin and \u03b3-TuRC may be involved in additional regulation of branching microtubule nucleation, such as EML3.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, even though TPX2, augmin and \u03b3-TuRC are sufficient to reconstitute the nucleation of branched microtubules in vitro, we cannot eliminate the possibility that other proteins are involved in additional regulation, such as the microtubule and augmin binding protein EML3 (Luo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possibility with a citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "44b7c648-488b-4ef4-aacb-833cda4f40ec",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C85",
+      "claim": "This work is analogous to the in vitro reconstitution of actin branching, which paved the way to explain how the actin cytoskeleton supports cell locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "It is analogous to the in vitro reconstitution of actin branching (Mullins et al., 1998), which paved the way to explain how the actin cytoskeleton supports cell locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous work in the actin field, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "470838da-0ec6-4b47-b545-bbb0a6701a43",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C86",
+      "claim": "In this biochemical reconstitution, \u03b3-TuRC was localized to a specific location, from which it nucleates a microtubule in vitro as it would occur in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In this biochemical reconstitution, \u03b3-TuRC was localized to a specific location, from which it nucleates a microtubule in vitro as it would occur in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental approach and findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "b51d86ca-6cef-45bc-b251-11fe7363ea74",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C87",
+      "claim": "This work serves as a platform to study how microtubule nucleation creates different microtubule architectures that support cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, this work serves as a platform to study how microtubule nucleation creates different microtubule architectures that support cell function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader implications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "1eb046bb-cdd8-46ba-8b31-524cda1d67c9",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C88",
+      "claim": "This approach presents a pioneering example for the biochemical reconstitution of other microtubule nucleation pathways or microtubule organizing centers.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach presents a pioneering example for the biochemical reconstitution of other microtubule nucleation pathways or microtubule organizing centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader implications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "0c23fc70-6243-4f7a-8b5e-857293cc0b14",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C89",
+      "claim": "This work serves as a stepping-stone to reconstitute larger structures based on this microtubule nucleation pathway, such as the mitotic spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "It also serves as a stepping-stone to reconstitute larger structures based on this microtubule nucleation pathway, such as the mitotic spindle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the future potential of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "5b4d8e7c-9a0d-4c84-8cda-98e7cfe428c6",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C90",
+      "claim": "The GFP-labeled eight-subunit X. laevis augmin holocomplex was co-expressed in insect cells and co-purified.",
+      "claim_type": "EXPLICIT",
+      "source": "The GFP-labeled eight-subunit X. laevis augmin holocomplex was co-expressed in insect cells and co-purified (Song et al., 2018), the native 2.2 MDa \u03b3-TuRC was purified from Xenopus egg extract (Thawani et al., 2018), and GFP-TPX2 was expressed from E. coli and purified (King and Petry, 2019) (Figure 2\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methods used to obtain purified proteins, with citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "2de4ea4b-429a-466b-a8c1-ff54abd204ad",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C91",
+      "claim": "The native 2.2 MDa \u03b3-TuRC was purified from Xenopus egg extract.",
+      "claim_type": "EXPLICIT",
+      "source": "The GFP-labeled eight-subunit X. laevis augmin holocomplex was co-expressed in insect cells and co-purified (Song et al., 2018), the native 2.2 MDa \u03b3-TuRC was purified from Xenopus egg extract (Thawani et al., 2018), and GFP-TPX2 was expressed from E. coli and purified (King and Petry, 2019) (Figure 2\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methods used to obtain purified proteins, with citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "2b182bde-4dd6-45bc-bc14-d7b971b70788",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C92",
+      "claim": "GFP-TPX2 was expressed from E. coli and purified.",
+      "claim_type": "EXPLICIT",
+      "source": "The GFP-labeled eight-subunit X. laevis augmin holocomplex was co-expressed in insect cells and co-purified (Song et al., 2018), the native 2.2 MDa \u03b3-TuRC was purified from Xenopus egg extract (Thawani et al., 2018), and GFP-TPX2 was expressed from E. coli and purified (King and Petry, 2019) (Figure 2\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methods used to obtain purified proteins, with citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "72a01753-21ca-401c-a27f-72fce08f9a30",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C93",
+      "claim": "\u03b3-TuRC is visualized by a fluorescently-labeled antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b3-TuRC, visualized by a fluorescently-labeled antibody, bound along the length of microtubules in the presence of augmin (Figure 2B\u2013C and Figure 2\u2014source data 1) consistent with previous studies (Song et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used to visualize \u03b3-TuRC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "0f792a5a-dc35-434d-b361-4d1f6a59dbb4",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C94",
+      "claim": "Ring-shaped structures that correspond to \u03b3-TuRCs are visible in electron microscopy images.",
+      "claim_type": "EXPLICIT",
+      "source": "Ring-shaped structures that correspond to \u03b3-TuRCs (arrowheads), and clusters of protein formed on microtubules (arrows) are visible.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes observations from electron microscopy shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "99c7741f-63ff-46af-80d7-d0d42375a495",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C95",
+      "claim": "Clusters of protein are formed on microtubules when augmin, TPX2 and \u03b3-TuRC are present.",
+      "claim_type": "EXPLICIT",
+      "source": "Ring-shaped structures that correspond to \u03b3-TuRCs (arrowheads), and clusters of protein formed on microtubules (arrows) are visible.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes observations from electron microscopy shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "141c3e01-417c-4e26-b6f5-0712e0bbb317",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C96",
+      "claim": "Branched microtubules remain attached at the nucleation site on the template microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TPX2, augmin and \u03b3-TuRC are sufficient to specifically nucleate new branched microtubules, which remain attached at the nucleation site on the template microtubule (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "c7f86701-5330-443d-ac76-5ce8369a03cc",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C97",
+      "claim": "Augmin was present in the observed puncta on template microtubules when unlabeled TPX2 was used.",
+      "claim_type": "EXPLICIT",
+      "source": "Because both TPX2 and augmin were concurrently tagged with GFP, an unlabeled version of TPX2 was used to confirm that augmin was indeed present in the observed puncta on template microtubules (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a control experiment shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "621695b7-a54b-46ba-978d-37b0bd8bf8b7",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C98",
+      "claim": "Augmin may have a similar mode of binding to the microtubule lattice as TPX2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the pattern observed when both TPX2 and augmin are present, augmin or TPX2 alone with \u03b3-TuRC also form distinct puncta along the microtubule lattice, implying that augmin may have a similar mode of binding to the microtubule lattice as TPX2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that both proteins form puncta.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "1484c3fa-3c57-4aa2-a0db-8b958085ea64",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C99",
+      "claim": "Fewer puncta nucleate branched microtubules when only augmin or TPX2 is present with \u03b3-TuRC compared to when both are present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, fewer of these puncta actually nucleate branched microtubules (Figure 3E, Figure 3\u2014figure supplement 2C, Figure 3\u2014figure supplement 2E and Figure 3\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "981b9484-78fa-4bbb-9896-8ee73ed2587b",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C100",
+      "claim": "The increase in branching when both TPX2 and augmin are present with \u03b3-TuRC is marginally larger than what is expected from the increase in \u03b3-TuRC localization alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the increase in branching when both TPX2 and augmin are present with \u03b3-TuRC is marginally larger than what is expected from the increase in \u03b3-TuRC localization alone, the difference is not statistically significant based on the current data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analysis of the quantitative data comparing branching to binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "1b9720ea-140b-473b-8d9b-1187bbf53e7b",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C101",
+      "claim": "The difference between the increase in branching and the increase in \u03b3-TuRC localization is not statistically significant based on the current data.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the increase in branching when both TPX2 and augmin are present with \u03b3-TuRC is marginally larger than what is expected from the increase in \u03b3-TuRC localization alone, the difference is not statistically significant based on the current data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analysis of the quantitative data comparing branching to binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "82c26d6b-2180-4409-a516-cc4301c2c43e",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C102",
+      "claim": "XMAP215 co-localizes to the template microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, XMAP215 co-localizes to the template microtubule and appears to increase both microtubule nucleation rate and length (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 3\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "ef12e226-9d2a-40f0-a21e-38dd598da8f4",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "claim_id": "C103",
+      "claim": "Exact quantification of XMAP215's effect was not possible because branched microtubules were already formed before imaging was possible and microtubules quickly grew into each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Exact quantification of this effect was not possible because branched microtubules were already formed before imaging was possible and microtubules quickly grew into each other, preventing the accurate identification of branching microtubule nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "54adffed-4c61-473d-a0b7-704de4b3f211",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Pre-existing microtubules can serve as templates for branching microtubule nucleation when exposed to Ran-supplemented extract. Branching factors bind to microtubules independently of successful nucleation, and tubulin alone is sufficient to form branched microtubules once factors are bound. The deposition of branching factors determines branching architecture, with branched microtubules retaining polarity and not nucleating from other branches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C30 are well-supported by sequential extract experiments shown in Figure 1. The experiments demonstrate that pre-existing microtubules can template branching (C22), that branching factors bind independently of nucleation (C25), and that only tubulin is needed after factor binding (C26). The polarity retention and lack of secondary branching (C27-C29) are directly observed in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "752977da-77c2-4b7c-b985-c3e4ea9a48fb",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TPX2, augmin, and \u03b3-TuRC are sufficient to reconstitute branching microtubule nucleation in vitro. \u03b3-TuRC is essential for branching, and the highest level of branching occurs only when all three factors are present together.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39-C40, C46, C51, and C64 are strongly supported by the reconstitution experiments in Figure 3. The data clearly show that purified TPX2, augmin, and \u03b3-TuRC together are sufficient for branching nucleation (C39-C40), that \u03b3-TuRC is essential (C46), and that maximal branching requires all three factors (C51). This represents the core finding of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "a67922a4-f9aa-42dc-b438-263fddccc5a2",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TPX2 has the capacity to directly recruit \u03b3-TuRC to microtubules, though this recruitment is marginal compared to augmin-mediated recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C33, and C73 are supported by the binding experiments in Figure 2B-C showing that TPX2 alone marginally increases \u03b3-TuRC binding to microtubules. While the effect is small, it is consistently observed and represents an unexpected finding about TPX2 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "4ae435d3-7c72-49b8-8772-afbf9fde2996",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TPX2 can directly recruit augmin to microtubules. Microtubule-bound TPX2 increases the amount of augmin bound, while augmin does not affect TPX2 binding levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C37, and C76 are supported by sequential binding experiments in Figure 2E-F demonstrating that pre-bound TPX2 increases augmin recruitment. This asymmetric relationship is clearly shown in the quantitative data and represents an important mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "57b3ba87-783d-4e2a-966f-836d87079cc1",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Augmin targets \u03b3-TuRC along the microtubule lattice. The highest amount of \u03b3-TuRC recruitment occurs when both TPX2 and augmin are present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C32, and C34 are supported by binding data in Figure 2B-C showing augmin recruits \u03b3-TuRC and that TPX2+augmin together recruit more \u03b3-TuRC than either alone. This is consistent with previous literature (C32) and demonstrates the cooperative action of the two factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "ea25754d-8446-4313-91de-4ec94d688621",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TPX2 and augmin enable \u03b3-TuRC-dependent microtubule nucleation at preferred branching angles of less than 90 degrees, with 0-15 degrees being most common. Augmin/\u03b3-TuRC alone produces a higher proportion of shallow angles, while TPX2 creates a slightly wider angle distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C52-C55, and C77 are supported by branching angle measurements in Figure 3F. The data clearly show the preference for angles <90 degrees and the differences between factor combinations. The inference that this maintains polarity (C53) is reasonable given the angle distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "f344cab3-53fa-4346-b4e3-d57972bf71c8",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Branching microtubule nucleation occurs from regularly-spaced patches along microtubules where TPX2, augmin, and \u03b3-TuRC accumulate as distinct puncta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C35-C36, and C43 are supported by both fluorescence microscopy (Figure 3D) and electron microscopy (Figure 2D) showing distinct, regularly-spaced patches of proteins along microtubules. The EM provides high-resolution confirmation of the punctate pattern observed by fluorescence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "3bc6ff74-960f-4c1f-8994-1e18e15a2706",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Augmin+\u03b3-TuRC and TPX2+\u03b3-TuRC can each cause branching microtubule nucleation to a limited and similar extent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by data in Figure 3E and supplementary figures showing that either augmin or TPX2 paired with \u03b3-TuRC produces some branching, at similar levels. This is an important finding showing partial redundancy, though both factors are needed for maximal activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "7b72ea22-91ba-48f8-9256-cce0833809b4",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sequential binding order matters: higher branching nucleation occurs when TPX2 binds first, followed by augmin/\u03b3-TuRC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by experimental data in Figure 3G showing that the TPX2-first binding sequence produces more branching than other sequences. This demonstrates functional significance of the binding order observed in the recruitment experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "90314cfe-19b6-428f-a810-671b5b5aac0b",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "New microtubules nucleate uniformly along the template microtubule without preference for plus- or minus-ends, indicating no intrinsic lattice signature determines branch location.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by data in Figure 3C showing uniform distribution of branching sites. The inference that there is no lattice signature (C42) is reasonable given the uniform distribution, though the authors acknowledge this may be specific to their assay conditions with stabilized microtubules.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "7cbb8d4d-7f60-4e52-b341-17499b91cdc3",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TPX2 and augmin do not increase the number of non-branched microtubules, indicating they specifically stimulate branching from pre-existing microtubules rather than general nucleation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are supported by quantification in Figure 3\u2014figure supplement 3A showing no change in non-branched microtubule numbers with TPX2 or augmin addition. This is an important control demonstrating specificity for branching nucleation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "09e4a2d5-6d80-4c7b-8fc4-ac1e539d8009",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TPX2 and augmin do not enhance \u03b3-TuRC nucleation activity in solution, but specifically enable \u03b3-TuRC-dependent nucleation from pre-existing microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59, C61, and C68 are supported by solution nucleation assays in Figure 3\u2014figure supplement 3B-C showing no enhancement of \u03b3-TuRC activity by augmin or low TPX2 concentrations. This demonstrates that the factors act as localizers or require microtubule binding for their effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "6b7bc06a-645e-4f96-9d3e-cd92151aa185",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "XMAP215 co-localizes to template microtubules and appears to increase both microtubule nucleation rate and length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62 and C102 are based on observations in Figure 3\u2014figure supplement 4, but the authors explicitly state in C103 that exact quantification was not possible due to technical limitations. While XMAP215 co-localization is observed, the functional effects on rate and length cannot be rigorously assessed from the available data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "d1a12093-ccf3-40cc-8ed9-641f1aef51a3",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Purified \u03b3-TuRC, when artificially tethered to microtubules via biotin-neutravidin linkers, can nucleate microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by proof-of-concept data in Figure 2\u2014figure supplement 1A-B. This control experiment validates that \u03b3-TuRC retains nucleation activity when localized to microtubules, supporting the overall experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "8596e84d-294c-4fb6-b6d3-6868655393e5",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Multiple microtubules can be generated from the same puncta, presumably nucleating from neighboring \u03b3-TuRCs within patches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by observations in Figure 3D (light microscopy) and Figure 2D (EM showing multiple \u03b3-TuRCs in patches). The inference that multiple microtubules nucleate from neighboring \u03b3-TuRCs (C45) is reasonable given the EM evidence of clustered \u03b3-TuRCs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "ade8c99a-413b-4fd5-8a94-ea54d6a4e960",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "TPX2 alone or with augmin cannot nucleate branched microtubules despite TPX2's ability to recruit tubulin. \u03b3-TuRC can infrequently bind microtubules on its own, leading to rare nucleation events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by data in Figure 3E showing no branching without \u03b3-TuRC and rare events with \u03b3-TuRC alone. This demonstrates the essential role of \u03b3-TuRC and provides important negative controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "49630f38-ee11-49d6-8d66-a3cb3dc0a5a9",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The presence of augmin does not change the level of bound TPX2 on microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is supported by sequential binding data in Figure 2E-F showing that augmin does not affect TPX2 binding levels. This asymmetric relationship is important for understanding the hierarchy of factor recruitment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "084e97bd-1731-4f6c-9661-597a373831b7",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The increase in branching when both TPX2 and augmin are present is marginally larger than expected from \u03b3-TuRC localization alone, but this difference is not statistically significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C101 represent an honest assessment of the data's limitations. The authors acknowledge observing a trend but correctly note it does not reach statistical significance. This leaves open whether TPX2/augmin activate \u03b3-TuRC or merely localize it.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "905b40f1-b41f-4f39-8d07-4a29c4da1777",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "TPX2 and augmin may act as localization factors, or they may increase \u03b3-TuRC nucleation activity specifically when bound to microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C71 are explicitly presented as speculation about two possible mechanisms. The available data (C100-C101) do not definitively distinguish between these models. Additional experiments would be needed to resolve this question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "16cf259a-0137-4d44-885d-6e76ec58168f",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Augmin may keep branch angle variation in a shallow range by bridging microtubules and \u03b3-TuRC with defined architecture based on its h-shaped structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78 is speculative, combining observations about angle distributions (C54-C55) with structural information from citations. While plausible, this mechanistic explanation is not directly tested and would require structural studies of the assembled complex.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "273ee477-4bc5-4f06-a306-330117f38d20",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "\u03b3-TuRC activity can be tuned via tubulin concentration and the presence of XMAP215 in the in vitro system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is an inference based on experimental observations throughout the manuscript showing that assay conditions affect nucleation efficiency. While not systematically varied, the authors demonstrate control over nucleation levels, which was necessary for their experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "f76ce8e2-d540-429d-baa6-9027c1b09d2c",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "TPX2 lies at the heart of controlling branching microtubule nucleation despite being a single protein among large multi-subunit complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by the cumulative evidence showing TPX2's multiple roles: recruiting both \u03b3-TuRC and augmin (C4-C5), affecting binding order (C63), and being required in egg extract (C79, C81). This represents a major conceptual conclusion about TPX2's central regulatory role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "efdfa65b-787d-4eff-ae7a-2c5a567d454d",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The three key proteins were successfully purified: GFP-augmin from insect cells, native \u03b3-TuRC from Xenopus egg extract, and GFP-TPX2 from E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 describe the protein purification methods with appropriate citations to previous work. The quality of purified proteins is shown in Figure 2\u2014figure supplement 2, and the proteins are functional in all assays, validating the purification approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "2216c7d2-d396-42f1-b542-b07a7dbd08f0",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Augmin may have a similar mode of binding to the microtubule lattice as TPX2, as both form distinct puncta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C98 is an inference from the observation that both proteins form puncta (Figure 3\u2014figure supplement 2). However, forming puncta does not necessarily indicate similar binding modes\u2014the proteins could use different mechanisms to achieve similar spatial patterns. Direct binding studies would be needed to test this.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "8b4cb518-8832-4966-9363-f35e8411140b",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Background context about microtubule nucleation pathways, \u03b3-TuRC, augmin, and TPX2 based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C21 represent established knowledge from prior literature, appropriately cited. These provide necessary context for the current work. C18 is noted as speculative even in prior work. These claims are not results of the current study but rather background information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "ac22dff3-6c49-4b5b-a673-8d8b579830b5",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Comparison of the in vitro reconstitution results with prior findings in egg extract and other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66, C72, C74-C75, C79, and C81 cite prior literature to contextualize the current findings. These comparisons are appropriately supported by citations and help interpret the significance of the reconstitution results, particularly differences between the minimal system and more complex cellular contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "9a7103cc-8b6d-4aca-8fea-815965224498",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Microtubule nucleation in physiological environments is more stringently regulated than in the purified system, and TPX2 may directly regulate augmin binding in egg extract.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80 and C82 are inferences drawn from comparing in vitro results with egg extract data from prior work (C79, C81). While the comparison is reasonable, these claims about physiological regulation are speculative and would require additional experiments to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "e7925884-1acd-49ff-8a40-0393453a7376",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R28",
+      "result_category": "llm",
+      "result": "Broader implications and future directions: other proteins may be involved, the work is analogous to actin branching reconstitution, and serves as a platform for studying microtubule architectures and reconstituting larger structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C89 discuss broader implications and future directions. C84 appropriately acknowledges limitations (other proteins may be involved). C85-C89 are forward-looking statements about the work's significance and potential applications. These are reasonable perspectives but represent speculation about future work rather than current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "5d410c06-311c-4551-9640-c9cfb4444be4",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R29",
+      "result_category": "llm",
+      "result": "At 50 nM TPX2 concentration in the absence of pre-formed microtubules, TPX2 forms co-condensates with tubulin that nucleate microtubules in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by data in Figure 3\u2014figure supplement 3D and citation to prior work. This observation explains why higher TPX2 concentrations could not be tested in solution nucleation assays and is consistent with previous findings about TPX2's condensate-forming properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    },
+    {
+      "id": "d2928ca5-7cbe-4898-ab5b-341abd2bd738",
+      "content_id": "3985affe-41e3-44ea-bafb-fa898c5b5af3",
+      "result_id": "R30",
+      "result_category": "llm",
+      "result": "Technical and methodological details about visualization methods, controls, and experimental limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C97, C99, and C103 describe technical aspects of the experiments including visualization methods, control experiments, and acknowledged limitations. These are appropriately documented and support the rigor of the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:28:29.191462Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "125eefb6-5851-4adc-a813-5e51552cfeef",
+      "result_id": "54adffed-4c61-473d-a0b7-704de4b3f211"
+    },
+    {
+      "claim_id": "35ab979c-ece4-4a8a-a788-98da1da0a46c",
+      "result_id": "54adffed-4c61-473d-a0b7-704de4b3f211"
+    },
+    {
+      "claim_id": "8d30b58f-b865-4f9e-8d8b-46bcaa39b449",
+      "result_id": "54adffed-4c61-473d-a0b7-704de4b3f211"
+    },
+    {
+      "claim_id": "36935ace-bee9-4875-92ae-ff8be6293298",
+      "result_id": "54adffed-4c61-473d-a0b7-704de4b3f211"
+    },
+    {
+      "claim_id": "50e16d13-8631-4d1a-a42a-146b172b7a6b",
+      "result_id": "54adffed-4c61-473d-a0b7-704de4b3f211"
+    },
+    {
+      "claim_id": "9dd94067-9314-4574-861c-68b6a8aad018",
+      "result_id": "54adffed-4c61-473d-a0b7-704de4b3f211"
+    },
+    {
+      "claim_id": "73e344de-bc28-4d3d-9a30-c99a084c2e17",
+      "result_id": "54adffed-4c61-473d-a0b7-704de4b3f211"
+    },
+    {
+      "claim_id": "aaa4969c-ef72-4175-9e7c-81df00832196",
+      "result_id": "54adffed-4c61-473d-a0b7-704de4b3f211"
+    },
+    {
+      "claim_id": "76ac7791-541e-4fd1-a59f-8299cc1f516e",
+      "result_id": "752977da-77c2-4b7c-b985-c3e4ea9a48fb"
+    },
+    {
+      "claim_id": "d833783e-aa20-405c-b4b1-a6d1f4fd8944",
+      "result_id": "752977da-77c2-4b7c-b985-c3e4ea9a48fb"
+    },
+    {
+      "claim_id": "277f1ecc-5cac-44f8-8f77-43bd6b209f48",
+      "result_id": "752977da-77c2-4b7c-b985-c3e4ea9a48fb"
+    },
+    {
+      "claim_id": "ad3bbff0-9434-4f4a-956b-ce994242750b",
+      "result_id": "752977da-77c2-4b7c-b985-c3e4ea9a48fb"
+    },
+    {
+      "claim_id": "abb06f61-ff9d-4740-8d65-4d2c82a7af9e",
+      "result_id": "752977da-77c2-4b7c-b985-c3e4ea9a48fb"
+    },
+    {
+      "claim_id": "8e6a8bc9-b03b-4a4e-847b-5297784cf2f5",
+      "result_id": "752977da-77c2-4b7c-b985-c3e4ea9a48fb"
+    },
+    {
+      "claim_id": "a710db56-3f63-4cac-aa0a-623850c39ed6",
+      "result_id": "a67922a4-f9aa-42dc-b438-263fddccc5a2"
+    },
+    {
+      "claim_id": "8d06b5e5-e5cf-4af5-a2d9-9369a0246093",
+      "result_id": "a67922a4-f9aa-42dc-b438-263fddccc5a2"
+    },
+    {
+      "claim_id": "28792c16-44e2-4d98-bbb8-1eef9f0c2e76",
+      "result_id": "a67922a4-f9aa-42dc-b438-263fddccc5a2"
+    },
+    {
+      "claim_id": "1718cab4-dc2b-49c5-88f1-cd0b143e0787",
+      "result_id": "4ae435d3-7c72-49b8-8772-afbf9fde2996"
+    },
+    {
+      "claim_id": "da1ad0c4-cd37-4060-9af3-dbb4824c73c3",
+      "result_id": "4ae435d3-7c72-49b8-8772-afbf9fde2996"
+    },
+    {
+      "claim_id": "ef341db6-1e91-4112-b328-e497aeb8b856",
+      "result_id": "4ae435d3-7c72-49b8-8772-afbf9fde2996"
+    },
+    {
+      "claim_id": "f7c7d079-2b39-4812-ae08-a021c5dc9987",
+      "result_id": "57b3ba87-783d-4e2a-966f-836d87079cc1"
+    },
+    {
+      "claim_id": "698bd4d5-1af1-4ce7-80af-955803b94a7e",
+      "result_id": "57b3ba87-783d-4e2a-966f-836d87079cc1"
+    },
+    {
+      "claim_id": "a8f5b27e-0718-470c-808b-a9e273fe90ae",
+      "result_id": "57b3ba87-783d-4e2a-966f-836d87079cc1"
+    },
+    {
+      "claim_id": "dba93c60-1ca4-4323-b643-133c4db5c5a0",
+      "result_id": "ea25754d-8446-4313-91de-4ec94d688621"
+    },
+    {
+      "claim_id": "7abc9b69-4e99-4504-a39a-4bc09bad7dbe",
+      "result_id": "ea25754d-8446-4313-91de-4ec94d688621"
+    },
+    {
+      "claim_id": "10b4448b-957a-44a5-85d9-c447c49360d3",
+      "result_id": "ea25754d-8446-4313-91de-4ec94d688621"
+    },
+    {
+      "claim_id": "a2dd058d-e2e1-4ba1-a2d5-3b280fc1f4f5",
+      "result_id": "ea25754d-8446-4313-91de-4ec94d688621"
+    },
+    {
+      "claim_id": "1bbb449c-da91-451f-baff-e8010218ad5b",
+      "result_id": "ea25754d-8446-4313-91de-4ec94d688621"
+    },
+    {
+      "claim_id": "646e5cfc-caf9-4b10-9fcc-ca231c39fbb4",
+      "result_id": "ea25754d-8446-4313-91de-4ec94d688621"
+    },
+    {
+      "claim_id": "90f7156a-696b-4134-ba48-ca76a2039e27",
+      "result_id": "f344cab3-53fa-4346-b4e3-d57972bf71c8"
+    },
+    {
+      "claim_id": "83372a32-75f4-4ce9-9fad-05217a9b771c",
+      "result_id": "f344cab3-53fa-4346-b4e3-d57972bf71c8"
+    },
+    {
+      "claim_id": "327cbce5-e02d-4334-a2d3-fb46b72f8bb0",
+      "result_id": "f344cab3-53fa-4346-b4e3-d57972bf71c8"
+    },
+    {
+      "claim_id": "a96fbbd8-1520-4127-ba1a-86d077a7715e",
+      "result_id": "f344cab3-53fa-4346-b4e3-d57972bf71c8"
+    },
+    {
+      "claim_id": "1bc774e7-2f56-40ff-8f85-6764fa768053",
+      "result_id": "3bc6ff74-960f-4c1f-8994-1e18e15a2706"
+    },
+    {
+      "claim_id": "1ccfb894-e7e0-41b7-98cb-cad3788dc6a2",
+      "result_id": "3bc6ff74-960f-4c1f-8994-1e18e15a2706"
+    },
+    {
+      "claim_id": "185de65d-20c3-4ff3-bd52-711b84899f57",
+      "result_id": "7b72ea22-91ba-48f8-9256-cce0833809b4"
+    },
+    {
+      "claim_id": "e1c3ada7-0e67-40ba-a1ca-26cc5865dbc9",
+      "result_id": "90314cfe-19b6-428f-a810-671b5b5aac0b"
+    },
+    {
+      "claim_id": "dce8fad0-8667-4199-a37d-1ef855cc2ccd",
+      "result_id": "90314cfe-19b6-428f-a810-671b5b5aac0b"
+    },
+    {
+      "claim_id": "c9c052c8-1cce-45b6-b576-4ad3775158c8",
+      "result_id": "7cbb8d4d-7f60-4e52-b341-17499b91cdc3"
+    },
+    {
+      "claim_id": "18baef13-4801-4b05-b32d-9562d9d6a342",
+      "result_id": "7cbb8d4d-7f60-4e52-b341-17499b91cdc3"
+    },
+    {
+      "claim_id": "312d11ea-b2cb-48ff-9aee-f6cbf29c0fd7",
+      "result_id": "09e4a2d5-6d80-4c7b-8fc4-ac1e539d8009"
+    },
+    {
+      "claim_id": "84eed693-2d4f-4a01-8562-986bf84565d7",
+      "result_id": "09e4a2d5-6d80-4c7b-8fc4-ac1e539d8009"
+    },
+    {
+      "claim_id": "a6e5b471-49d3-4a6b-9654-864c5835b1fd",
+      "result_id": "09e4a2d5-6d80-4c7b-8fc4-ac1e539d8009"
+    },
+    {
+      "claim_id": "4ead07b0-d762-4b47-91be-8e8df2879534",
+      "result_id": "09e4a2d5-6d80-4c7b-8fc4-ac1e539d8009"
+    },
+    {
+      "claim_id": "3790e2d9-3c1c-4348-a9a3-92cc2dbf65eb",
+      "result_id": "6b7bc06a-645e-4f96-9d3e-cd92151aa185"
+    },
+    {
+      "claim_id": "82c26d6b-2180-4409-a516-cc4301c2c43e",
+      "result_id": "6b7bc06a-645e-4f96-9d3e-cd92151aa185"
+    },
+    {
+      "claim_id": "31c96434-321e-4895-a1a1-5a262b21a49e",
+      "result_id": "d1a12093-ccf3-40cc-8ed9-641f1aef51a3"
+    },
+    {
+      "claim_id": "f30f6ed4-4010-4c49-a294-72a023a0866e",
+      "result_id": "8596e84d-294c-4fb6-b6d3-6868655393e5"
+    },
+    {
+      "claim_id": "f02c6a03-531c-494b-b3f0-f26a9528ce51",
+      "result_id": "8596e84d-294c-4fb6-b6d3-6868655393e5"
+    },
+    {
+      "claim_id": "1e3a3541-3dd0-4e1f-a2f4-adeb52ddc90c",
+      "result_id": "ade8c99a-413b-4fd5-8a94-ea54d6a4e960"
+    },
+    {
+      "claim_id": "480aad5d-b5e9-463f-921b-c73037896e58",
+      "result_id": "ade8c99a-413b-4fd5-8a94-ea54d6a4e960"
+    },
+    {
+      "claim_id": "d543544e-15e9-41f1-9cb5-0e21edff4318",
+      "result_id": "49630f38-ee11-49d6-8d66-a3cb3dc0a5a9"
+    },
+    {
+      "claim_id": "981b9484-78fa-4bbb-9896-8ee73ed2587b",
+      "result_id": "084e97bd-1731-4f6c-9661-597a373831b7"
+    },
+    {
+      "claim_id": "1b9720ea-140b-473b-8d9b-1187bbf53e7b",
+      "result_id": "084e97bd-1731-4f6c-9661-597a373831b7"
+    },
+    {
+      "claim_id": "1d8cfd8d-5c0c-403c-b24c-28e4ca4bf408",
+      "result_id": "905b40f1-b41f-4f39-8d07-4a29c4da1777"
+    },
+    {
+      "claim_id": "d415c51f-9aca-4115-ab4c-ee2a369687f3",
+      "result_id": "905b40f1-b41f-4f39-8d07-4a29c4da1777"
+    },
+    {
+      "claim_id": "82e0a027-9d56-4c7a-b47a-7103bdcd34fe",
+      "result_id": "16cf259a-0137-4d44-885d-6e76ec58168f"
+    },
+    {
+      "claim_id": "4ab39706-4aae-4a47-babf-ec5393dadf68",
+      "result_id": "273ee477-4bc5-4f06-a306-330117f38d20"
+    },
+    {
+      "claim_id": "94d40586-3401-47d1-9ff9-caf86027c28d",
+      "result_id": "f76ce8e2-d540-429d-baa6-9027c1b09d2c"
+    },
+    {
+      "claim_id": "5b4d8e7c-9a0d-4c84-8cda-98e7cfe428c6",
+      "result_id": "efdfa65b-787d-4eff-ae7a-2c5a567d454d"
+    },
+    {
+      "claim_id": "2de4ea4b-429a-466b-a8c1-ff54abd204ad",
+      "result_id": "efdfa65b-787d-4eff-ae7a-2c5a567d454d"
+    },
+    {
+      "claim_id": "2b182bde-4dd6-45bc-bc14-d7b971b70788",
+      "result_id": "efdfa65b-787d-4eff-ae7a-2c5a567d454d"
+    },
+    {
+      "claim_id": "621695b7-a54b-46ba-978d-37b0bd8bf8b7",
+      "result_id": "2216c7d2-d396-42f1-b542-b07a7dbd08f0"
+    },
+    {
+      "claim_id": "538f635b-254f-4d9f-a38b-e809867d1ec2",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "adc492f0-0db5-4e9f-95ca-de7e15053b2b",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "49d0912c-9237-4161-958e-1fda9d7a4bf0",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "33a1fcb2-53da-457f-ae0a-03583a7d7c8c",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "40cc8f5c-ee66-4a27-9811-522149a9b348",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "9ef0a22c-bbf0-4ee7-a117-3d35099ef202",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "b624c39d-5569-4394-8460-1cec6ff99370",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "96723724-3dcd-4135-bad9-e9d2a92018df",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "c40e5c0a-2232-490a-9b18-99d0623ddeb7",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "edf68ce9-127c-4306-ad82-65a4cfc2e90f",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "ea414b7d-0df7-4d54-84e8-5cf027be2e51",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "2d47da08-7e98-4440-a3d5-3cd89e6db046",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "81f9072e-2c81-4fad-b00c-5a9b6da38ea6",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "a032be2b-2147-4a47-80fb-be649b629efc",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "6b30f247-7cd9-4b3a-9cd4-a4f85b9373ad",
+      "result_id": "8b4cb518-8832-4966-9363-f35e8411140b"
+    },
+    {
+      "claim_id": "ddfcd71b-3333-4c1a-bc7b-c21e6594d81c",
+      "result_id": "ac22dff3-6c49-4b5b-a673-8d8b579830b5"
+    },
+    {
+      "claim_id": "5f1410fd-86b3-49c4-a8f4-587eed2a84a7",
+      "result_id": "ac22dff3-6c49-4b5b-a673-8d8b579830b5"
+    },
+    {
+      "claim_id": "51df3709-13e2-48b6-b029-8190d5e94518",
+      "result_id": "ac22dff3-6c49-4b5b-a673-8d8b579830b5"
+    },
+    {
+      "claim_id": "2e49f143-dff4-46ee-981d-c14b8921bbe6",
+      "result_id": "ac22dff3-6c49-4b5b-a673-8d8b579830b5"
+    },
+    {
+      "claim_id": "1c2121c8-af7f-4649-99c0-2d150850089a",
+      "result_id": "ac22dff3-6c49-4b5b-a673-8d8b579830b5"
+    },
+    {
+      "claim_id": "d8901c8a-dd11-4633-93dc-5db39e0a1cab",
+      "result_id": "ac22dff3-6c49-4b5b-a673-8d8b579830b5"
+    },
+    {
+      "claim_id": "ec91805d-849f-4ab8-a800-c1b1ee81719f",
+      "result_id": "ac22dff3-6c49-4b5b-a673-8d8b579830b5"
+    },
+    {
+      "claim_id": "3cfa61fd-9033-462d-8e28-48d6f5547363",
+      "result_id": "9a7103cc-8b6d-4aca-8fea-815965224498"
+    },
+    {
+      "claim_id": "c790eb47-d34c-4ffe-bec6-9299d06e8414",
+      "result_id": "9a7103cc-8b6d-4aca-8fea-815965224498"
+    },
+    {
+      "claim_id": "dbd43619-1a2a-4806-8e67-eebfcef3490e",
+      "result_id": "e7925884-1acd-49ff-8a40-0393453a7376"
+    },
+    {
+      "claim_id": "44b7c648-488b-4ef4-aacb-833cda4f40ec",
+      "result_id": "e7925884-1acd-49ff-8a40-0393453a7376"
+    },
+    {
+      "claim_id": "470838da-0ec6-4b47-b545-bbb0a6701a43",
+      "result_id": "e7925884-1acd-49ff-8a40-0393453a7376"
+    },
+    {
+      "claim_id": "b51d86ca-6cef-45bc-b251-11fe7363ea74",
+      "result_id": "e7925884-1acd-49ff-8a40-0393453a7376"
+    },
+    {
+      "claim_id": "1eb046bb-cdd8-46ba-8b31-524cda1d67c9",
+      "result_id": "e7925884-1acd-49ff-8a40-0393453a7376"
+    },
+    {
+      "claim_id": "0c23fc70-6243-4f7a-8b5e-857293cc0b14",
+      "result_id": "e7925884-1acd-49ff-8a40-0393453a7376"
+    },
+    {
+      "claim_id": "82bc2b55-62b6-4d0d-90b6-6b822987cdf9",
+      "result_id": "5d410c06-311c-4551-9640-c9cfb4444be4"
+    },
+    {
+      "claim_id": "72a01753-21ca-401c-a27f-72fce08f9a30",
+      "result_id": "d2928ca5-7cbe-4898-ab5b-341abd2bd738"
+    },
+    {
+      "claim_id": "0f792a5a-dc35-434d-b361-4d1f6a59dbb4",
+      "result_id": "d2928ca5-7cbe-4898-ab5b-341abd2bd738"
+    },
+    {
+      "claim_id": "99c7741f-63ff-46af-80d7-d0d42375a495",
+      "result_id": "d2928ca5-7cbe-4898-ab5b-341abd2bd738"
+    },
+    {
+      "claim_id": "141c3e01-417c-4e26-b6f5-0712e0bbb317",
+      "result_id": "d2928ca5-7cbe-4898-ab5b-341abd2bd738"
+    },
+    {
+      "claim_id": "c7f86701-5330-443d-ac76-5ce8369a03cc",
+      "result_id": "d2928ca5-7cbe-4898-ab5b-341abd2bd738"
+    },
+    {
+      "claim_id": "1484c3fa-3c57-4aa2-a0db-8b958085ea64",
+      "result_id": "d2928ca5-7cbe-4898-ab5b-341abd2bd738"
+    },
+    {
+      "claim_id": "ef12e226-9d2a-40f0-a21e-38dd598da8f4",
+      "result_id": "d2928ca5-7cbe-4898-ab5b-341abd2bd738"
+    }
+  ],
+  "comparisons": []
+}

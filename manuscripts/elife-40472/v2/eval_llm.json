@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The model predicts that thin, untwisted MreB filaments energetically favor binding along directions of largest principal curvature, with a preferred circumferential orientation in rod-shaped cells. This arises because the intrinsic curvature of filaments is smaller than characteristic cell radii.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17, C18, and C19 form a coherent theoretical result supported by the mathematical model (Equations 1-2, Figure 2B). The model predictions are based on well-defined physical parameters (Supplementary file 1) and show robust energetic preferences across a range of conditions. The mechanistic explanation (C19) follows logically from the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C7",
+      "C83"
+    ],
+    "result": "Three independent cryo-EM studies demonstrate that membrane-bound MreB filaments are flat, untwisted, and bind to membranes on one face. These studies suggest that inward curvature, not twist, limits filament length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C7, and C83 are well-supported by multiple independent cryo-EM studies (Salje et al., 2011; van den Ent et al., 2014; Hussain et al., 2018) and visual evidence (Figure 1A). The inference about curvature limiting length (C16) is reasonable given the observation that filaments are short on planar bilayers but long in deformable liposomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C14",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C53",
+      "C57",
+      "C58"
+    ],
+    "result": "Processive MreB motion along principal curvature directions results in significant localization to different membrane regions across multiple geometries. The model quantitatively predicts enrichment patterns consistent with experimental observations in spherocylinders, toroids, bulges, and undulating surfaces without requiring intrinsic curvature preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C14, C43-C45, C49-C50, C53, C57-C58 demonstrate strong agreement between model predictions (Equation 3, Figures 3C-G) and experimental data from multiple independent studies. The quantitative consistency without fitting parameters (C50) and agreement across diverse geometries (spherocylinders, toroids, bulges, undulations) provides robust support. However, the model assumes static surfaces and specific parameter values that may not capture all biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C12"
+    ],
+    "result": "The model predicts a standard deviation of approximately 0.2 \u03bcm for axial displacement per hoop of wall material inserted, consistent with experimental measurements of MreB filament dynamics in B. subtilis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C12 show quantitative agreement between model predictions and experimental data (Figure 3B). The comparison is direct and the agreement supports the model's ability to capture translocation noise effects on wall synthesis patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C46"
+    ],
+    "result": "MreB filaments are depleted from hemispherical poles compared to cylindrical bulks in spherocylindrical cells, with approximately two-fold enrichment in bulks. This arises because filaments reorient rapidly in poles and translocate into bulks where motion becomes aligned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by citations to experimental observations (Kawazura et al., 2017; Ursell et al., 2014; Hussain et al., 2018). The model prediction of two-fold enrichment (C44) agrees with E. coli measurements. The mechanistic explanation (C46) is consistent with the model dynamics, though alternative mechanisms are not explicitly ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C51",
+      "C56"
+    ],
+    "result": "The model provides mechanistic explanations for filament enrichment in different geometries: in curved cells, enrichment arises from uniform distribution along hoops with smaller inner arclengths; in bulged cylinders and undulating surfaces, specific regions attract filaments due to reorientation dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C51, and C56 provide mechanistic interpretations of the model results that are logically consistent with the mathematical framework (Equation 3). These explanations are supported by the simulation results and help explain the geometry-dependent localization patterns. However, these are model-based inferences rather than directly tested mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The magnitude of filament localization can be quantitatively predicted by geometric parameters alone, but nonzero processivity is required for localization even in geometries that attract filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C64 are supported by systematic analysis shown in Figure 4 and Appendix 1. The requirement for nonzero processivity (C64) is demonstrated across multiple geometries (Figure 4B, Figure 4\u2014figure supplements 1-2), establishing this as a general principle of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Model predictions remain largely robust across a broad range of filament bending rigidity, twist, and Gaussian curvature-dependent activation parameters, suggesting filament dynamics contribute to localization in different filament systems regardless of specific parameter values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 are supported by systematic parameter exploration in Appendix 1 and Figure 4\u2014figure supplement 4. The robustness analysis strengthens the generalizability of the model, though the extent of parameter space explored and the definition of 'largely robust' could be more precisely quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C27",
+      "C84",
+      "C85"
+    ],
+    "result": "MreB filaments form short structures that move along their lengths in live cells, rotating around the rod width in a motion powered by cell wall synthesis. The orientation of filaments coincides with their direction of motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C27, C84-C85 describe established MreB behavior supported by multiple citations and visual evidence (Figure 1B-C). The angular distributions in confined protoplasts match those in wild-type cells (C85, Figure 1C), supporting the model's assumptions about filament orientation and motion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "MreB's directional and processive motion is driven by cell wall synthesis, with filaments reorienting according to membrane geometry. The hypothesis that filaments translocate along directions of largest curvature is supported by observations in various cell geometries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 establish the biological basis for the model's assumptions. The directional motion driven by cell wall synthesis (C28) is well-supported by citations. The supporting observations (C31-C34) from prior work (Hussain et al., 2018) provide empirical evidence for the curvature-dependent translocation hypothesis (C30), though C30 itself remains a hypothesis to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C37"
+    ],
+    "result": "MreB filament persistence time in E. coli is approximately 5 minutes, and the distribution of filament angles becomes broader as B. subtilis cells become wider.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C37 are supported by citations to experimental measurements (Ursell et al., 2014; Hussain et al., 2018). These observations inform the model parameters and support the assumption that translocation noise may depend on cell geometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C86"
+    ],
+    "result": "In E. coli, MreB filaments are enriched at regions of negative Gaussian curvature or small mean curvature, as observed in cells growing in sinusoidally shaped chambers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C86 are supported by citations to experimental studies (Ursell et al., 2014; Bratton et al., 2018) and visual evidence (Figure 1D). These observations motivate the modeling work and provide experimental benchmarks for model validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "In the undulating geometry used in the model, Gaussian and mean curvatures are positively correlated, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by analysis in Appendix 1 and citation to experimental observations (Ursell et al., 2014). This validates that the model geometry appropriately captures relevant features of experimental systems, though the specific correlation structure may vary in real cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The main contribution is demonstrating that MreB localization patterns observed across many experiments can arise from processivity and principal curvature-dependent motion alone. More broadly, translocating protein filament localization can vary significantly depending on membrane geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C73 accurately summarize the work's contributions. The first claim (C72) is well-supported by the comprehensive modeling and comparison with multiple experimental datasets. The broader claim (C73) is a reasonable generalization from the results, though applicability to other systems remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C13"
+    ],
+    "result": "MreB is an actin homolog essential for bacterial rod shape that binds to curved membranes and translocates along directions of largest principal curvature. Membrane curvature can be both induced by and recruit curvature-sensing proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6, and C13 provide established background knowledge supported by multiple citations. These claims set the biological context for the modeling work and are well-supported by prior literature, including the authors' previous work (Hussain et al., 2018).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C52"
+    ],
+    "result": "MreB rotation and localization at small protrusions in B. subtilis protoplasts preceded rod shape generation. The model dynamics result in localization that contributes to de novo rod shape generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by citation to prior work (Hussain et al., 2018). Claim C52 is a conclusion from the model that is consistent with the bulge enrichment results (C49-C50), though the causal link to rod shape generation is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Large filament bundles or twist have not been observed in MreB filaments in vitro, though other filament systems could exhibit these properties. Twisted filament binding and activation may depend on membrane Gaussian curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by citations to experimental work. Claims C68 and C69 are appropriately qualified as possibilities for other systems, supported by citations (Wang and Wingreen, 2013; Quint et al., 2016). These claims justify the model's focus on untwisted filaments while acknowledging broader applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "FtsZ filaments in bacterial cytokinesis are curved and could orient along largest principal directions through bending, potentially allowing them to drive circumferential peptidoglycan synthesis at the septum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is supported by citations about FtsZ function. However, claims C75 and C76 are speculative applications of the model to FtsZ without direct experimental validation. While the analogy to MreB is reasonable, the specific predictions for FtsZ orientation and function remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Many proteins including septins, BAR-domain proteins, dynamins, and endoproteins exhibit curvature-dependent membrane binding through mechanical deformations. These systems are widespread in pathogenesis, cell division, trafficking, and migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide well-supported background on curvature-sensing proteins, with multiple citations to prior work. These claims establish the broader biological context and potential applicability of the modeling framework to other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The mathematical model requires minimal assumptions about filament binding and translocation and should be widely applicable to systems involving membrane curvature sensing and protein localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 accurately describes the model's generality. However, claim C82 about wide applicability is speculative. While the model's minimal assumptions suggest broad applicability, actual application to other systems would require validation of key assumptions (e.g., that proteins orient along principal curvatures, exhibit processive motion) that may not hold universally.",
+    "result_type": "MINOR"
+  }
+]

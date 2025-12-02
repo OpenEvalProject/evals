@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Pngl deglycosylates Dpp in Drosophila embryos. Western blot analysis of Dpp-GFP in Pngl knockdown embryos shows a band shift consistent with N-glycan retention, which is reversed by PNGase F treatment. Since GFP lacks N-glycosylation consensus sequences, the glycosylation must be on Dpp itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide converging evidence from western blot band shifts (C29), PNGase F rescue (C30), sequence analysis excluding GFP glycosylation (C31), and the authors' interpretation (C32). The experimental design appropriately controls for GFP contribution and uses enzymatic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Genetic removal of three N-glycosylation sites from Dpp (dppHA-3NQ) partially rescues the lethality of Pngl mutant flies. The rescue increases survival from 1.3% to ~21% of expected Mendelian ratio, accounting for most of the BMP-dependent component of lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 present clear survival data showing partial rescue by dppHA-3NQ (C33, C35) compared to dppHA control (C34). The interpretation (C37) is appropriately contextualized by prior work showing BMP signaling accounts for ~30% of Pngl mutant lethality (C36). Statistical analysis and sample sizes are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "One copy of dppHA-3NQ rescues Dpp and pMad expression in Pngl-/- embryos, demonstrating that Pngl regulates BMP signaling by removing N-glycans from Dpp. The N-to-D conversion is not essential for this function, as N-to-Q mutations (which prevent this conversion) are sufficient for rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 provide immunofluorescence evidence showing dppHA-3NQ rescues both Dpp and pMad expression in Pngl-/- embryos (C42), while dppHA does not (C41). The conclusion that N-glycan removal rather than N-to-D conversion is critical (C44) is well-supported by the rescue with Q mutations. The broader pMad domain in 3NQ mutants (C39-C40) suggests enhanced signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Homozygous dppHA-3NQ animals show normal or enhanced BMP signaling during embryogenesis but die by second instar stage. The lethality is not due to loss of embryonic BMP signaling based on normal pMad expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 document that dppHA-3NQ/HA-3NQ embryos have normal or enhanced pMad expression (C45-C46) but die as larvae (C47). The inference that lethality is not due to embryonic BMP loss (C48) is reasonable given the staining data, though the actual cause remains unknown. This represents a limitation but doesn't undermine the main conclusions about embryonic BMP signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "Ngly1-/- mouse embryos show decreased BMP signaling in specific tissues including heart and brain. All five examined Ngly1-/- embryos had ventricular septal defects, reduced myocardial trabeculae with decreased pSMAD1/5, and rudimentary choroid plexus with dramatically reduced pSMAD1/5 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 provide detailed immunofluorescence and histological evidence of tissue-specific BMP signaling defects in Ngly1-/- embryos. The sample size (n=5) is small but all showed consistent phenotypes. Claims C60-C61 appropriately interpret these findings as demonstrating context-specific BMP signaling requirements for NGLY1, with C61 noting the correlation is suggestive but not definitively causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "NGLY1 is essential for BMP4 signal-sending but not signal-receiving in MEFs. Ngly1-/- MEFs fail to induce BMP signaling upon BMP4 transfection but respond normally to exogenous recombinant BMP4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 present a clear experimental design distinguishing signal-sending from signal-receiving. The 12-fold increase in pSMAD1/5 upon BMP4 transfection in control cells (C63) versus no increase in Ngly1-/- cells (C64), combined with normal response to exogenous BMP4 (C65-C66), strongly supports the signal-sending defect interpretation (C67). Statistical analysis and appropriate controls are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Pharmacological inhibition of NGLY1 with Z-VAD-fmk reduces endogenous BMP signaling in 3T3-L1 cells, while the caspase inhibitor Q-VD-OPh (which does not inhibit NGLY1) has no effect on pSMAD1/5 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide appropriate controls to distinguish NGLY1 inhibition from caspase inhibition effects. The dose-dependent reduction in pSMAD1/5 with Z-VAD-fmk (C68) but not Q-VD-OPh (C69) supports NGLY1-specific effects on endogenous BMP4 signaling (C70). This complements the genetic knockout data in MEFs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Loss of NGLY1 results in BMP4 accumulation in the ER and induction of ER stress. BMP4HA-Myc colocalizes with ER markers in Ngly1-/- MEFs, and multiple ER stress markers (GRP78/BiP, pIRE1\u03b1, OS9) are elevated, with further increases upon BMP4 transfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 provide multiple lines of evidence for ER accumulation (C71-C73 via colocalization) and ER stress (C74-C78 via multiple markers). The progressive increase in stress markers from untransfected Ngly1-/- cells to BMP4-transfected Ngly1-/- cells (C76, C78) supports the interpretation that misfolded BMP4 accumulates in the ER (C79). Quantification and statistical analysis are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "BMP4 secretion is impaired in Ngly1-/- MEFs, and BMP4 retains ER-type N-glycans in these cells. The active domain secretion is severely reduced, full-length BMP4 migrates slower in SDS-PAGE, and both PNGase F and Endo H treatment normalize migration. BMP4HA-Myc-4NQ lacking N-glycosylation sites is secreted normally and signals robustly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 provide comprehensive biochemical evidence for impaired BMP4 processing. The Endo H sensitivity (C83-C84) specifically indicates retention of high-mannose ER-type glycans. The rescue by 4NQ mutations (C85) demonstrates that N-glycans themselves are not required for function, supporting the model that their removal by NGLY1 is the critical step (C87). The logic is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "NGLY1 is recruited to the ER upon BMP4-induced ER stress. Without BMP4 transfection, NGLY1 shows minimal ER colocalization, but co-transfection with BMP4 results in significant NGLY1-ER overlap. VCP-binding mutants of NGLY1 (N41P and G79A/F80A) fail to be recruited to the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 present clear immunofluorescence evidence with quantitative colocalization analysis (C92, Figure 5B shows statistical significance). The loss of ER recruitment in VCP-binding mutants (C94) supports the proposed VCP-dependent mechanism (C95). The experimental design appropriately tests the hypothesis with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "ER recruitment of NGLY1 via VCP binding is required for BMP4/Dpp deglycosylation and signaling. Wild-type NGLY1 rescues BMP4 signaling in Ngly1-/- MEFs and Dpp signaling in Pngl-/- flies, but VCP-binding mutants (N41P, G79A/F80A) fail to rescue despite having normal enzymatic activity in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 provide strong evidence across two model systems (mammalian cells and flies) that ER recruitment is functionally required. The key control showing normal enzymatic activity of the mutants in vitro (C101) demonstrates the defect is specifically in localization, not catalytic function. The conservation of critical residues (C98) and rescue patterns supports evolutionary conservation (C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Proteasome inhibition leads to accumulation of deglycosylated BMP4 but does not impair BMP4 signaling. BTZ treatment causes deglycosylated BMP4 to accumulate while pSMAD1/5 expression remains normal, indicating that retrotranslocation rather than proteasomal degradation is the critical NGLY1-dependent step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 present a key mechanistic insight. The accumulation of deglycosylated BMP4 upon proteasome inhibition (C104-C105) demonstrates NGLY1 acts before proteasomal degradation. The maintained signaling despite proteasome inhibition (C106) supports the conclusion that retrotranslocation is the critical step (C107). This challenges the prevailing model and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Misfolded BMP4 accumulates in the ER of Ngly1-/- MEFs and interacts with the ER lectin OS9. Wild-type NGLY1 reduces OS9 levels and BMP4-OS9 interaction, but VCP-binding mutants fail to do so, indicating that NGLY1-VCP interaction is critical for BMP4 retrotranslocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 use co-immunoprecipitation to demonstrate BMP4-OS9 interaction (C109), with appropriate controls (C110-C111). The rescue of OS9 levels by wild-type but not mutant NGLY1 (C113-C114) provides strong evidence for the proposed mechanism. The interpretation that NGLY1-VCP interaction is required for retrotranslocation (C116) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "BMP4 is an ERAD substrate. VCP inhibition with NMS-873 leads to accumulation of glycosylated BMP4 and increased ER stress markers. Combined VCP and proteasome inhibition results in accumulation of both glycosylated and deglycosylated BMP4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C121 provide pharmacological evidence complementing the genetic data. The accumulation of glycosylated BMP4 upon VCP inhibition (C118) and the additive effects with proteasome inhibition (C120) support the ERAD model (C121). The increased GRP78/BiP (C118-C119) confirms ER stress. The experimental design appropriately tests the proposed pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The proteasome bounce-back response requires NGLY1 but not its ER recruitment. BTZ treatment induces proteasomal gene expression in wild-type but not Ngly1-/- MEFs. Both wild-type NGLY1 and VCP-binding mutants rescue this response, indicating the cytosolic pool of NGLY1 is sufficient for NFE2L1 deglycosylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 demonstrate a clear distinction between BMP4 and NFE2L1 as NGLY1 substrates. The loss of bounce-back in Ngly1-/- cells (C126) and rescue by both wild-type and VCP-binding mutants (C127-C128) provides strong evidence that NFE2L1 processing does not require ER-recruited NGLY1 (C129). This important control distinguishes substrate-specific requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The authors propose a model where NGLY1 is recruited to the ER upon misfolded BMP4 accumulation and deglycosylates BMP4 to enable VCP-mediated retrotranslocation. This model is supported by four key observations: ER accumulation in Ngly1-/- cells, VCP-binding mutant phenotypes, VCP inhibitor effects, and maintained signaling despite proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C135 synthesize the major findings into a coherent model. The four supporting observations (C132-C134) are each well-documented in the manuscript. The interpretation that retrotranslocation rather than degradation is the critical step (C135) is particularly well-supported by the proteasome inhibition data (C134). The model represents a significant revision of the prevailing ERAD model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The authors propose that NGLY1 clears misfolded BMP4 monomers from the ER to prevent formation of non-functional heterodimers with properly folded BMP4. This model is supported by the observation that N-glycosylation site mutations eliminate Pngl dependence, and the mutant proteins may use an alternative glycosylation-independent ERAD pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137-C141 present a mechanistic model for how NGLY1 promotes BMP4 signaling, but this is largely speculative (C137-C138 explicitly noted as speculation). While the rescue by N-glycosylation site mutations (C139-C140) is well-documented, the proposed mechanism involving prevention of non-functional dimers and alternative ERAD pathways (C141) lacks direct experimental evidence. Additional experiments would be needed to test these specific mechanistic hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "NGLY1 regulates BMP4 and NFE2L1 through distinct mechanisms. NFE2L1 deglycosylation leads to activation and can be performed by cytosolic NGLY1, while BMP4 deglycosylation promotes degradation and requires ER-recruited NGLY1. For BMP4, N-glycan removal rather than N-to-D editing is critical, contrasting with NFE2L1 where N-to-D editing is key.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C150 systematically compare the two substrates. The differential requirements for ER recruitment (C145-C148, supported by the proteasome bounce-back data) and the distinct roles of N-to-D editing (C149-C150) are well-documented. This comparative analysis strengthens the manuscript by demonstrating substrate-specific mechanisms and providing important controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "The authors suggest that impaired BMP signaling in Ngly1-/- mouse embryos, particularly in the choroid plexus, may contribute to NGLY1 deficiency patient phenotypes. They propose that future work should investigate whether neurological and orthopedic features are caused by altered BMP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C154 appropriately present this as speculation requiring future work (C154 explicitly states this). While the tissue-specific BMP signaling defects are well-documented (C153), the connection to human patient phenotypes remains hypothetical. The authors appropriately frame this as a suggestion rather than a conclusion, acknowledging the need for additional studies.",
+    "result_type": "MINOR"
+  }
+]

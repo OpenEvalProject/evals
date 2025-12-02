@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C76",
+      "C78"
+    ],
+    "result": "The study dataset comprised 74,239 articles from 39 journals published between 2015-2018, of which 5,405 had bioRxiv preprints. Preprints preceded publication by a median of 174 days, and all randomly sampled articles were confirmed to be original research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C76, and C78 provide clear descriptive statistics about the dataset with specific numbers and validation. The dataset composition is well-documented with appropriate quality control checks (manual inspection of 100 articles).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C7",
+      "C39",
+      "C40"
+    ],
+    "result": "Attention Score and citations represent distinct aspects of article impact, showing weak correlation (Spearman r=0.18) within journals. Older articles accumulated more citations but similar Attention Scores compared to newer articles, and fold-changes of the two metrics were also weakly correlated (r=0.19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C7, C39, and C40 collectively demonstrate through correlation analysis and temporal patterns that the two metrics capture different dimensions of impact. The weak correlations and differential temporal patterns provide converging evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "Log-linear regression was selected as the optimal model type based on consistently achieving the lowest mean absolute error and mean absolute percentage error across journals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 describes a model selection procedure with clear performance criteria. The comparison across multiple model types (log-linear, Gamma, negative binomial) with quantitative error metrics provides appropriate justification for the methodological choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C9",
+      "C21",
+      "C22"
+    ],
+    "result": "Articles with preprints had significantly higher Attention Scores (1.49-fold, 95% CI 1.42-1.57, or 49% increase) and more citations (1.36-fold, 95% CI 1.30-1.42, or 36% increase) compared to articles without preprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C8, C9, C21, and C22 present the primary finding with consistent effect sizes, confidence intervals, and statistical support from both regression analysis and meta-analysis. The results are presented with appropriate uncertainty quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The effect sizes for having a preprint were approximately 4 times larger than those for having an author with a U.S. affiliation or at a Nature Index institution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 provides a comparative context for the preprint effect size by relating it to other variables in the model. This comparison is supported by the meta-analysis results in Table 1, which shows coefficients for all variables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The time interval between preprint release and article publication was positively associated with Attention Score but not with citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 describe results from a separate meta-analysis examining temporal effects. The differential association with the two metrics is consistent with their representing different aspects of impact, though the manuscript provides limited detail about effect sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C23"
+    ],
+    "result": "The associations between preprints and both Attention Score and citations were independent of multiple article- and author-level variables including scientific subfield, number of authors, affiliations, and last author publication age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C23 summarize the key inference from the multivariable regression models. The independence claim is supported by the regression framework that controlled for these variables, though the observational design limits causal interpretation (addressed in C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "MeSH term principal components captured meaningful variation in scientific subfield within journals, as evidenced by multiple PCs showing significant associations with outcomes and modest increases in preprint fold-changes when PCs were excluded from models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, and C16 validate the MeSH PC approach for controlling scientific subfield. The statistical significance of PCs and sensitivity analysis results provide evidence that this method captures relevant variation, though the approach is acknowledged as an approximation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C24"
+    ],
+    "result": "Journal-level characteristics including access model, Impact Factor, and percentage of articles with preprints did not explain variation in the preprint-outcome associations across journals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 and C24 report null findings from meta-regression analysis. The lack of associations with journal-level variables is clearly stated with reference to Table 2, suggesting the preprint effect is consistent across different journal types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Meta-analysis revealed that Attention Score and citations were positively associated with number of authors, number of references, U.S. affiliation, and Nature Index affiliation, and slightly negatively associated with last author publication age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 systematically report associations for control variables from Table 1. All associations are supported by meta-analysis with adjusted p-values, confidence intervals, and appropriate statistical methods (Hartung-Knapp-Sidik-Jonkman method).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The observational study design precludes causal conclusions; preprint status could be a marker for research likely to receive attention anyway, potentially mediated by factors like author social media activity or preferential attachment during peer review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 appropriately acknowledge the fundamental limitation of observational data and discuss alternative explanations. This critical self-assessment is essential and well-articulated, distinguishing association from causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study's scope is limited to journals with \u226550 preprinted articles on bioRxiv (excluding multidisciplinary journals), preprint counts may be underestimated due to incomplete detection, and findings may not generalize to other preprint repositories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 clearly delineate the study's boundaries and potential sources of bias. These limitations are appropriately acknowledged and affect the generalizability of findings, though they do not invalidate the results within the defined scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Altmetric Attention Score and citation counts serve as crude proxies for scientific impact, which is inherently difficult to quantify and requires years to assess. The Attention Score aggregates mentions from social media, mainstream media, and policy documents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 acknowledge the limitations of the outcome metrics used. This is an important caveat about what the study actually measures versus true scientific impact, appropriately tempering interpretation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "CrossRef citation data were validated against Web of Science Core Collection for 100 articles, showing high correlation (Spearman r=0.98) and small mean difference (2.5 citations), indicating reliability of the citation data source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 provide validation of a key data source. The high correlation and small systematic difference support the reliability of CrossRef citations, though the validation sample is relatively small (100 articles).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The regression models incorporated U.S. affiliation (the most common country), Nature Index affiliation (as a proxy for high-quality research institutions), and last author publication age (as a proxy for years as principal investigator) as control variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 describe the rationale for specific control variables. The justifications are reasonable, though the proxies are imperfect (e.g., Nature Index as quality proxy, publication age as career stage proxy).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The MeSH term principal component approach for estimating scientific subfield may be useful for other analyses of biomedical literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 suggests broader applicability of the methodological approach. This is a reasonable inference based on the demonstrated utility in this study, though it remains a suggestion for future work rather than a tested conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The heuristic approach for inferring last author publication history from PubMed names and affiliations was accurate but imperfect, with Spearman correlation of 0.88, mean error of 1.74 years, and institutional changes being the most common error source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C70-C72 provide validation of the author disambiguation method. The correlation and error metrics indicate reasonable but imperfect performance, with clear identification of the main error source. The validation is appropriately conducted on a separate sample.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The heuristic author identification approach was necessary due to sparse ORCID coverage in the literature, though recent funding agency requirements may improve identifier coverage and enhance future analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C69 justify the methodological choice and note potential future improvements. This appropriately contextualizes the current limitations and anticipates how the field may evolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The 2019 Nature Index for Life Sciences, which lists the top 100 institutions by fractional article count in Nature Index journals (selected by scientist panels to represent the 'upper echelon' and not limited to Nature Publishing Group), was used to identify high-impact institutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 describe the Nature Index data source with appropriate detail and clarification. The description is accurate and the source is appropriately cited, though the use of this as a proxy for research quality could be debated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Preprints and peer-reviewed articles have distinct DOIs and accumulate Attention Scores and citations independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 clarifies an important methodological detail about how metrics are tracked. This is factually correct and important for understanding that the study measures outcomes for the published article, not the preprint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background context establishes that preprints are becoming more popular in biology but remain a small fraction of publications, some researchers remain reluctant due to concerns about priority and journal policies, and prior studies found positive associations between preprints and citations but with limitations in sample size or scope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C38 provide literature context and study motivation. These background claims are appropriately cited and accurately represent prior work, including limitations of previous studies that justify the current investigation.",
+    "result_type": "MINOR"
+  }
+]

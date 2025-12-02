@@ -1,0 +1,470 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The authors establish the clinical and scientific context for developing a taxonomy of seizure dynamics (TSD), noting that current epilepsy classifications are operational rather than scientifically based, and that seizures are characterized by abrupt EEG changes interpretable as bifurcations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide well-cited background establishing the prevalence of epilepsy, definition of seizures, limitations of current classifications, and the theoretical basis for TSD. All claims are supported by appropriate citations to authoritative sources (WHO, Fisher et al., Lopes da Silva et al.).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The theoretical framework predicts 16 possible seizure dynamotypes based on six bifurcation types (four for onset, four for offset) in two-variable systems, each with characteristic amplitude/frequency scaling laws and DC shift properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C26 describe the mathematical foundation of TSD based on established bifurcation theory. The claims are well-supported by citations to mathematical literature (Izhikevich 2000, Strogatz 2015, Saggio et al. 2017) and Figure 1. The theoretical predictions are mathematically rigorous and properly grounded in dynamical systems theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C12",
+      "C13",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Analysis of over 2000 focal-onset seizures from 120 patients across seven centers identified 12 of the 16 predicted dynamotypes, with SN/SubH onsets (67-78%) and FLC/SH-SNIC offsets (53-54%) being most common. Human reviewers were more reliable than automated algorithms for classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C47 present the core empirical findings with specific percentages and patient numbers. The data are presented systematically with DC-coupled and non-DC recordings analyzed separately. The high inter-rater reliability (only 1/51 seizures without consensus) and validation against computational models strengthen confidence. However, the inability to distinguish certain bifurcation types without DC coupling (SN vs SubH, SH vs SNIC) is appropriately acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Seizure dynamotypes showed correlation with patient age (older patients had more SupH onsets) but no significant correlation with gender, pathology, localization, or prior visual classification systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C163-C166 report negative findings regarding clinical correlations, which are important for understanding the independence of dynamotypes from traditional clinical features. The lack of correlation with pathology is particularly notable and appropriately discussed. The absence of tuberous sclerosis patients (C164) is acknowledged as potentially limiting comparison with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Longitudinal analysis of over 2000 seizures from 13 patients with continuous intracranial EEG recording demonstrated that all patients expressed at least two different dynamotypes over time, establishing that individuals have seizures from different dynamotypes during their lifetime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 present compelling longitudinal evidence from a unique dataset (Cook et al. 2013). The finding that all 13 patients showed multiple dynamotypes is unambiguous and well-illustrated in Figure 3. The conservative analysis approach (only classifying unequivocal cases) strengthens the conclusion, though the authors appropriately note this likely underestimates heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors establish that seizure dynamics can be modeled using minimal dynamical systems (2-3 variables) with fast oscillatory and slow permittivity variables, but the existing Epileptor model accounts for only one dynamotype, necessitating a more comprehensive framework to explain multiple dynamotypes in individual patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C66 provide the theoretical justification for extending beyond the Epileptor model. The reasoning is logical and well-grounded in dynamical systems theory, with appropriate citations (Jirsa et al. 2014, Lopes da Silva et al. 2003a). The predictions (C65-C66) follow naturally from the empirical observation of multiple dynamotypes per patient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The seizure map provides a canonical 2D representation of parameter space where all bifurcations and dynamotypes are organized, with slow variables controlling ictal transitions and ultraslow variables enabling navigation between dynamotypes. The map predicts a hierarchy of dynamotype likelihood that is supported by clinical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C87 describe the seizure map framework with strong mathematical foundations (Dumortier et al. 1991, Golubitsky et al. 2001, Saggio et al. 2017). The map is illustrated in Figure 4 and provides testable predictions about dynamotype hierarchy and transitions. The agreement between predicted and observed dynamotype frequencies (C86-C87, Appendix II.5) provides empirical support for the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The model distinguishes two timescales of fluctuations: slow permittivity changes (minutes-hours) affecting brain state position on the map, and fast perturbations (ms-s) representing physiological noise. The mathematical topology of the seizure map predicts that transitions between nearby dynamotypes are more likely than distant ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C98 describe the multi-timescale dynamics with clear theoretical grounding. The distinction between slow and fast fluctuations is well-motivated, and the prediction about proximity-dependent transitions (C94-C98) follows logically from the map topology. The mathematical rigor is supported by citations to Dumortier et al. 1991 and Baer et al. 2006 (C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The model predicts and reproduces dynamotype pairing during seizures, where continuous parameter changes can cause transitions between bifurcations. Five clinical examples of SupH-to-SH/SNIC transitions were found and reproduced in 10/100 model simulations, consistent with the proximity of these bifurcations on the seizure map.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 demonstrate agreement between model predictions and clinical observations for within-seizure transitions. The finding of 5 clinical examples out of >2000 seizures (C101) and 10/100 simulations (C104) showing the same transition pattern provides quantitative support. The explanation based on bifurcation proximity (C105) is consistent with the map topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Model simulations reproduced status epilepticus when noise overrode the slow variable's drive toward seizure offset, with clear correlation between noise variance and status epilepticus likelihood. The model dynamics matched two clinical cases of non-convulsive status epilepticus showing waxing-and-waning patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C114 demonstrate the model's ability to explain pathological seizure dynamics. The mechanistic explanation (noise overriding slow dynamics, C108-C109) is clear and testable. The correlation with noise variance (C110, Appendix IV) provides quantitative support, and the qualitative match with clinical cases (C111-C114) strengthens the model's explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The seizure map explains unusual seizure dynamics such as accelerating frequency at offset, which occur when trajectories are affected by multiple bifurcations in close proximity, demonstrating the map's broad explanatory value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 show the model can account for atypical seizure patterns. The explanation based on proximity to multiple bifurcations is consistent with the map framework and supported by simulations in Appendix 1-figures 17-19. This demonstrates the model's generality beyond common dynamotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "TSD establishes 16 dynamotypes in an unbiased classification, while the seizure map introduces structural relationships between dynamotypes creating a hierarchy. This structure-function relationship is based on mathematical properties of bifurcation topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C125 articulate the conceptual framework distinguishing TSD (unbiased classification) from the seizure map (hierarchical organization). The structure-function analogy (C125) is appropriate and well-supported by the mathematical foundations (C122-C124). The potential extension to non-planar bifurcations (C119) is appropriately presented as speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The dynamotype classification is complementary to clinical phenotype-based classifications, describing seizure dynamics rather than patient symptoms. TSD uses simple, objective metrics readily available with DC-coupled EEG recordings that are now standard in clinical practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 establish the clinical utility and feasibility of TSD. The complementary nature to existing classifications (C127-C128) is well-argued, and the practical accessibility with modern EEG equipment (C131) supports clinical translation. The high fidelity of visual classification with DC recordings (C130) is demonstrated in the validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The interpretation relies on three key assumptions: (1) seizure onset/offset are bifurcations, (2) timescale separation between spike dynamics and slower control variables, and (3) restriction to planar bifurcations. Violation of these assumptions could affect the ability to identify scaling laws.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 explicitly state the theoretical assumptions underlying TSD. This transparency is scientifically appropriate and allows for critical evaluation. The acknowledgment that violations could affect results (C134) demonstrates appropriate caution. The restriction to planar bifurcations (C135) is noted as a simplification with potential extensions discussed in Appendix II.6.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Seizures are universal across species and may be endogenous brain properties, explaining why diverse pathologies produce a limited set of dynamical behaviors describable by elementary mathematical laws. Current clinical interpretation based on spike frequency/morphology has limited utility for focal seizures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C141 provide broader context for TSD's significance. The universality of seizures (C136) and proposal of endogenous properties (C137) are supported by citation to Jirsa et al. 2014. The inference about limited dynamical behaviors despite diverse pathologies (C138-C139) follows logically from the empirical findings. The critique of current clinical methods (C140-C141) is based on established clinical knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "TSD identifies invariant dynamics that constrain the system, distinguishing essential dynamical features from non-fundamental phenomena like spike-wave complexes. When linked to the seizure map, TSD reveals that certain dynamotypes are more prevalent, with low-voltage fast activity and DC shifts (common dynamotypes) being predictive of seizure focus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C150 articulate TSD's analytical approach and clinical relevance. The distinction between invariant dynamics and other phenomena (C149-C150) is conceptually important and well-explained. The connection to clinically predictive features (C144-C146) provides validation, though the inference about clinical utility could benefit from prospective testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "While biomarkers like preictal spikes and spike-wave complexes are clinically relevant for predicting epileptogenesis and localizing epileptogenic zones, they are not part of the generic onset/offset dynamics in the canonical model, though they can be included with additional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 appropriately acknowledge the clinical importance of features not captured in the minimal model. The citations to Conrad et al. 2020, Chauvi\u00e8re et al. 2012, and Jirsa et al. 2014 support the clinical relevance of these biomarkers. The explanation that they require additional mechanisms beyond the canonical model (C154-C155) is theoretically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C162"
+    ],
+    "result": "The analysis focused on drug-resistant focal epilepsies with intracranial recordings, but the theory likely applies broadly since seizures in non-epileptic networks follow the same rules. The taxonomy is consistent with generalized epilepsy dynamics, with SN(+DC)/FLC and SN/SH being the most common focal dynamotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C162 appropriately scope the study and discuss generalizability. The limitation to drug-resistant epilepsies (C156) is clearly stated, while the argument for broader applicability (C157) is supported by citation to Jirsa et al. 2014. The consistency with generalized epilepsy work (C160) and consistency with prior bifurcation studies (C158) strengthen the framework's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C174"
+    ],
+    "result": "The authors hypothesize that seizure dynamics are determined by the brain's location on the seizure map rather than pathology per se, with seizures depending more on current brain state and acute perturbations than on specific pathological predispositions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C167-C168 and C174 present an important hypothesis about the relationship between pathology and dynamics. While this interpretation is consistent with the lack of pathology correlations (C166) and the finding that diverse pathologies show similar dynamotypes (C173), it remains speculative. The hypothesis is plausible but would benefit from more direct testing, such as tracking how specific pathologies affect map position or examining whether interventions that change pathology alter dynamotype distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Current epilepsy care focuses on phenotype, genotype, and seizure onset location without addressing dynamics. Different biophysical mechanisms can produce the same dynamotype, and 120 patients with diverse focal pathologies displayed almost the entire taxonomy of dynamotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C173 establish the gap TSD fills in current practice and demonstrate the framework's generality. The critique of current standards (C169-C170) is based on established clinical knowledge. The finding that diverse pathologies map to similar dynamotypes (C172-C173) is well-supported by the data, and the claim about different mechanisms producing the same dynamotype (C171) is supported by prior work (Jirsa et al. 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "TSD has potential applications in tracking epileptogenesis progression, personalizing brain network models, and designing bifurcation-specific stimulation strategies. Different dynamotypes have different sensitivities to stimulation (resonators vs integrators), and perturbation methods from other fields could assess proximity to bifurcations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C175-C185 discuss potential applications with varying levels of support. The epileptogenesis application (C175) is supported by published work (Crisp et al. 2020), and the ongoing clinical trial (C176) provides evidence of practical implementation. However, most other applications (C177-C185) are speculative, based on analogies to other systems or theoretical predictions. While these are reasonable hypotheses grounded in dynamical systems theory, they require empirical validation. The claim about stimulation sensitivity (C179-C181) is supported by work on neuronal bursters but needs testing in seizures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "The synchronization properties of coupled bursters are bifurcation-dependent, predicting that seizure propagation ability depends on dynamotype. Since spatiotemporal organization is used in brain network models, choosing the correct dynamotype is critical for successful patient modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C189 make important predictions about seizure propagation and modeling. The bifurcation-dependence of synchronization (C186) is well-supported by citations to Wang et al. 2011, Reimbayev and Belykh 2014, and Belykh et al. 2015. However, the prediction about seizure spread (C187) and the claim about criticality for patient modeling (C189) are inferences that require empirical validation. While theoretically sound, these predictions need testing with actual seizure propagation data and modeling outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "The slow permittivity variable explains how brain state changes affect seizure threshold, with ultraslow (hours-years) and slow (ictal-length) timescales. Neurochemical substances are candidate mechanisms. Both sexes show ultraslow seizure probability modulation, supporting the proposal that patients 'travel the map' during their lifetime, which may enable seizure risk prediction and prevention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C201 develop the important concept of map navigation over multiple timescales. The distinction between timescales (C194) is clear and well-motivated. The evidence for ultraslow modulation in both sexes and species (C195) is well-cited (Baud et al. 2019, Karoly et al. 2017). The proposal that patients travel the map (C196) is a reasonable inference from the longitudinal data. However, the speculation about neurochemical mechanisms (C193) and applications to seizure prediction/prevention (C197, C201) are appropriately presented as hypotheses requiring further work. The supporting evidence for altered features near bifurcations (C198-C200) strengthens the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "TSD provides an organizational principle for seizure dynamics based on onset/offset classification, offering a unique avenue to classify seizures by dynamical features and understand seizure likelihood. The framework likely extends to healthy brain function and stipulates multi-timescale integration as an emergent property of brain processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C208 summarize TSD's contributions and broader implications. The characterization of TSD as an organizational principle (C202-C204) is well-supported by the empirical and theoretical work presented. The speculation about extension to healthy brain function (C205) is appropriately tentative and provides interesting future directions. The claim about multi-timescale integration (C206-C208) is a significant theoretical contribution, though the inference about emergent properties (C208) goes somewhat beyond the direct evidence.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors generated an improved reference genome assembly for turquoise killifish (NFZ v2.0) with substantially improved metrics compared to previous versions, including contig N50 of 7.8 kb, scaffold N50 of 1.5 Mb, 92.2% of bases assigned to linkage groups, 95.20% complete BUSCOs, and 66% repeat content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 provide convergent assembly quality metrics that demonstrate clear improvements over previous genome versions. The metrics are internally consistent (e.g., improved N50 values correlate with improved BUSCO scores), and the methods describe appropriate use of multiple sequencing technologies (10X Genomics, nanopore) and assembly strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C20",
+      "C21"
+    ],
+    "result": "Genetic diversity (\u03b8Watterson and \u03c0) and effective population size (Ne) decrease progressively from wet to intermediate to dry populations, with the dry GNP population showing the lowest values (\u03b8Watterson: 0.0011, \u03c0: 0.0009, Ne: 107,222) compared to intermediate NF414 and wet NF303 populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15, C20-C21 present consistent population genetic metrics calculated using standard methods (PoPoolation). The gradient in genetic diversity correlates with environmental aridity and is supported by multiple independent measures (\u03b8Watterson, \u03c0, Ne). The methods describe appropriate filtering and coverage thresholds, though the pooled sequencing approach may introduce some uncertainty in allele frequency estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Genetic differentiation (FST) between populations ranged from 0.14 to 0.26, with the highest differentiation observed between the geographically distant dry GNP and wet NF303 populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 report FST values calculated using PoPoolation2 with appropriate parameters. The pattern of highest differentiation between the most geographically and ecologically distant populations is biologically plausible and consistent with isolation by distance and environment. Figure 1a provides visual support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C52"
+    ],
+    "result": "Demographic history reconstruction using PSMC reveals that the dry GNP population experienced a strong population decline starting ~150k generations ago, while intermediate NF414 and wet NF303 populations show population expansion until ~50k generations ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C52 describe demographic inferences from PSMC analysis of individual resequencing data. The contrasting demographic trajectories (decline vs. expansion) are consistent with the observed differences in genetic diversity and Ne. However, PSMC has known limitations for recent demographic events and assumes a single panmictic population, which may not fully capture the complexity of fragmented killifish populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "FST outlier analysis did not reveal clear signatures of positive or purifying selection in the four main chromosomal clusters previously associated with lifespan QTL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 reports a negative result from FST outlier analysis at known QTL regions. This is appropriately reported and shown in Figure 2. The absence of selection signatures at QTL regions is an important finding that supports the mutation accumulation hypothesis over antagonistic pleiotropy. However, the authors acknowledge that statistical power or population differences could explain this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Several genes showing high FST differentiation between populations (slc8a1, hibch, lss, ZBTB14) are differentially expressed with age and are involved in processes related to aging, including amino acid metabolism, cholesterol biosynthesis, and proton-mediated aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24-C30 identify genes with both high FST and age-related differential expression. While the statistical tests for allele frequency differences are appropriate (Fisher's exact test, adjusted p<0.001), the connection between sequence divergence and functional aging differences remains correlative. The authors appropriately note that causal involvement in lifespan differences is not established. The lack of enrichment of differentially expressed genes within FST outlier regions (mentioned in text) further weakens the functional connection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C50"
+    ],
+    "result": "Two genomic regions show low genetic differentiation across all population pairs, suggesting strong purifying selection: one on the sex chromosome containing the putative sex-determining gene gdf6 and maternal-effect gene sybu, and another on chromosome 9 containing genes involved in phagocytosis, mRNA degradation, and cell motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C50 identify regions under purifying selection using FST outlier analysis. The conservation of the sex-determining region across populations is biologically plausible and important for species identity. The methods appropriately exclude balancing selection as an alternative explanation by examining pairwise genetic diversity. However, the functional significance of the chromosome 9 region is less clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C49"
+    ],
+    "result": "Synteny analysis reveals that the turquoise killifish sex chromosome evolved through a chromosomal translocation within an ancestral chromosome (corresponding to medaka chr16/platyfish LG3) that repositioned the sex-determining gene gdf6, followed by a fusion event with another chromosome (corresponding to medaka chr8/platyfish LG16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C49 describe the evolutionary origin of the sex chromosome based on synteny analysis with medaka and platyfish. The inference is supported by Figure 3 showing conserved synteny blocks. The proposed sequence of events (translocation then fusion) is parsimonious and could explain recombination suppression around the sex-determining region. However, alternative scenarios are not explicitly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "McDonald-Kreitman \u03b1 analysis reveals limited genome-wide positive selection since divergence from N. orthonotus (\u03b1: -0.21 to -0.01) and N. rachovii (\u03b1: -0.06 to 0.23), with the dry GNP population showing the lowest \u03b1 values across all derived frequency bins, suggesting a higher load of slightly deleterious mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 report McDonald-Kreitman \u03b1 values calculated using appropriate methods (asymptotic MK test accounting for derived allele frequency). The negative \u03b1 values in GNP across frequency bins are consistent with relaxed purifying selection. The use of two independent outgroup species strengthens the inference. However, the interpretation assumes accurate polarization of ancestral/derived states, which could be affected by sequencing errors or incomplete lineage sorting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Distribution of fitness effects (DFE) analysis shows that the dry GNP population has more new mutations in the slightly deleterious category compared to other populations, a pattern confirmed by forward simulations showing that smaller effective population sizes lead to higher proportions of slightly deleterious variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 use polyDFE to infer fitness effects and validate findings with SLiM3 simulations. The convergence between empirical data and simulations strengthens the conclusion. The simulations appropriately model demographic scenarios based on PSMC results. However, DFE inference assumes that synonymous sites are neutral and that the gamma distribution adequately captures the true DFE, which may not hold perfectly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The GNP population has a significantly higher proportion of mutations predicted to cause changes in protein function compared to NF414 and NF303 populations (Chi-square test p<1.87e-119), and these deleterious mutations reach higher frequencies in GNP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 use SnpEFF for variant annotation and report highly significant differences between populations. The statistical test is appropriate for comparing proportions. The pattern is consistent with relaxed purifying selection in GNP. However, the accuracy depends on the quality of gene annotations and the predictive power of SnpEFF, which can have false positives/negatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The dry GNP population has significantly higher mean Consurf scores (indicating mutations at more conserved sites) for non-synonymous mutations in frequency bins from 5-20% to 40-60% compared to NF414 and NF303 populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 uses Consurf scores to assess evolutionary constraint at mutated sites. Higher scores in GNP at intermediate frequencies suggest deleterious mutations persisting due to drift. The analysis is shown in Figure 4\u2014figure supplement 2. However, the text also notes significantly higher Consurf scores at synonymous sites in GNP at low frequencies, which could indicate higher overall mutation rate rather than specifically relaxed selection on protein-coding changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "Direction of selection (DoS) analysis shows that the dry GNP population has significantly more slightly deleterious mutations segregating compared to NF414 and NF303 populations (median DoS: GNP -0.17, NF414 -0.02, NF303 -0.01 using N. orthonotus; Wilcoxon test p<2.21e-105), indicating relaxed purifying selection in GNP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 uses gene-wise DoS to quantify selection relaxation. The highly significant differences between populations using both outgroup species (N. orthonotus and N. rachovii) strengthen the conclusion. The Wilcoxon rank sum test is appropriate for non-normally distributed data. The pattern is consistent with all other lines of evidence for relaxed selection in GNP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C53",
+      "C59"
+    ],
+    "result": "Pathway overrepresentation analysis reveals significant enrichment of genes under relaxed selection (lower 2.5% DoS quantile) in the GNP population for pathways associated with age-related diseases, including gastric cancer, breast cancer, neurodegenerative disease, mTOR signaling, and WNT signaling (q-value <0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C53, C59 use ConsensusPathDB for pathway enrichment analysis with appropriate FDR correction. The enrichment of aging-related pathways in genes under relaxed selection in GNP is biologically meaningful and consistent with the mutation accumulation theory of aging. However, pathway analysis can be sensitive to annotation biases and the choice of background gene set. The authors appropriately use all analyzed genes as background.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "Pathway analysis of genes with high DoS values (upper 2.5% quantile, indicating adaptive evolution) shows significant enrichment for mitochondrial pathways in the wet NF303 population, potentially representing compensatory evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 identifies mitochondrial pathway enrichment in genes under positive selection in NF303. The interpretation as potentially compensatory is supported by citation to Cui et al., 2019. However, the functional significance and whether this represents true adaptation versus neutral evolution in a larger population requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C51",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60"
+    ],
+    "result": "The authors conclude that differences in effective population size among turquoise killifish populations are associated with extensive relaxation of purifying selection affecting genes in age-related pathways, and that neutral accumulation of deleterious mutations (consistent with mutation accumulation theory) rather than positive selection (antagonistic pleiotropy) underlies lifespan differences among populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C51, C54-C57, C60 synthesize multiple lines of evidence: (1) absence of positive selection at QTL regions, (2) negative MK-\u03b1 values, (3) higher proportion of deleterious mutations in small populations, (4) enrichment of aging pathways in genes under relaxed selection, and (5) uncoupling of sexual maturation from lifespan. The convergence of evidence from independent analyses strongly supports the mutation accumulation hypothesis. However, the authors appropriately acknowledge that antagonistic pleiotropy cannot be completely ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The authors hypothesize that small effective population size leads to accumulation of aging-causing mutations that together contribute to the genetic architecture of lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is explicitly stated as a hypothesis and represents a reasonable synthesis of the study's findings. The hypothesis is supported by the empirical data showing correlation between small Ne, high mutation load, and short lifespan. However, as a hypothesis, it requires further experimental validation to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C12",
+      "C22",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The manuscript provides extensive background context on turquoise killifish as a model system, including its status as the shortest-lived vertebrate, population-level lifespan variation, ecological characteristics, and relevant evolutionary theories of aging (mutation accumulation vs. antagonistic pleiotropy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C11-C12, C22, C61-C72 provide background information supported by appropriate citations to published literature. These claims establish the biological context and rationale for the study. The characterization of killifish populations, evolutionary theories, and prior QTL findings are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  }
+]

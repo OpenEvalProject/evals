@@ -1,0 +1,1541 @@
+{
+  "submission": {
+    "id": "5132f8fd-f39f-4af3-852a-ec307f6f4236",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:02:49.905957Z",
+    "updated_at": "2025-12-02T07:02:49.905957Z"
+  },
+  "content": [
+    {
+      "id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "submission_id": "5132f8fd-f39f-4af3-852a-ec307f6f4236",
+      "content_type": "manuscript",
+      "content_text": "# Subunit exchange enhances information retention by CaMKII in dendritic spines\n\n## Authors\n\n- Dilawar Singh<sup>1</sup> ([ORCID: 0000-0002-4645-3211](https://orcid.org/0000-0002-4645-3211))\n- Upinder Singh Bhalla<sup>1</sup> ([ORCID: 0000-0003-1722-5188](https://orcid.org/0000-0003-1722-5188)) \u2020\n\n### Affiliations\n\n1. National Centre for Biological Sciences Tata Institute of Fundamental Research Bangalore India\n\n\u2020 Corresponding author\n\n## Abstract\n\nMolecular bistables are strong candidates for long-term information storage, for example, in synaptic plasticity. Calcium/calmodulin-dependent protein Kinase II (CaMKII) is a highly expressed synaptic protein which has been proposed to form a molecular bistable switch capable of maintaining its state for years despite protein turnover and stochastic noise. It has recently been shown that CaMKII holoenzymes exchange subunits among themselves. Here, we used computational methods to analyze the effect of subunit exchange on the CaMKII pathway in the presence of diffusion in two different micro-environments, the post synaptic density (PSD) and spine cytosol. We show that CaMKII exhibits multiple timescales of activity due to subunit exchange. Further, subunit exchange enhances information retention by CaMKII both by improving the stability of its switching in the PSD, and by slowing the decay of its activity in the spine cytosol. The existence of diverse timescales in the synapse has important theoretical implications for memory storage in networks.\n\n## Introduction\n\nMemories are believed to be stored in synapses, encoded as changes in synaptic strength (Hebb, 2005; Takeuchi et al., 2014; Choi et al., 2018). Long-term potentiation (LTP), an activity-dependent change in synaptic strength, is considered to be the primary post-synaptic memory mechanism (Bliss and Collingridge, 2013; Mayford et al., 2012). Various behavioral experiments strongly suggest a critical role for CaMKII in induction of LTP (Lucchesi et al., 2011; Giese et al., 1998). In the CA1 region of the hippocampus, blocking CaMKII activity blocks the induction of LTP (Chang et al., 2017). After LTP induction, several other pathways including protein synthesis (Aslam et al., 2009), clustering of receptors (Shouval, 2005), receptor translocation (Hayer and Bhalla, 2005) and PKM-$\u03b6$ activation (Sacktor, 2012), have been suggested as mechanisms for long-term maintenance of synaptic state. Recent evidence from behavioral assays suggests that CaMKII may also be involved in long-term maintenance of memory (Rossetti et al., 2017;\u00a0but see Chang et al., 2017).\n\nAny putative molecular mechanism involved in long-term maintenance of memory must be able to maintain its state despite the potent resetting mechanisms of chemical noise and protein turnover. In the small volume of the synapse (\u223c0.02\u00a0\u00b5m3\u00a0[Bartol et al., 2015]), the number of molecules involved in biochemical processes range from single digits to a few hundred, thereby increasing the effect of chemical noise. John Lisman proposed that a kinase and its phosphatase could form a bistable molecular switch able to maintain its state for a very long time despite turnover (Lisman, 1985). It has been shown by various mathematical models that CaMKII and its phosphatase protein phosphatase 1 (PP1) may form a bistable switch (Zhabotinsky, 2000) which can retain its state for years despite stochastic chemical noise and protein turnover (Miller et al., 2005; Hayer and Bhalla, 2005). Although there is experimental evidence that CaMKII/PP1 is bistable in in vitro settings (Bradshaw et al., 2003; Urakubo et al., 2014), experimental evidence for in vivo bistability is lacking. In spine cytosol, CaMKII has been shown not to act like a bistable switch but rather a leaky integrator of calcium activity (Chang et al., 2017). However, CaMKII may be bistable in special micro-environments such as the \u2018core\u2019 PSD where it attaches to the NMDA receptor (Dosemeci et al., 2016; Petersen et al., 2003).\n\nFrom a computational perspective, the CaMKII/PP1 bistable system is an attractive candidate for memory storage (Koch, 2004). Bistability provides a plausible solution to the problem of state maintenance. Previous modeling work has shown that the CaMKII/PP1 system may form a very stable switch despite protein turnover and stochastic noise in the small volume of the synapse. The stability increases exponentially with the number of holoenzymes (Miller et al., 2005). It is important to note that this model exhibits bistable behavior only in a narrow range of PP1 concentrations in the PSD. This strict restriction may be met because phosphorylated CaMKII is protected from phosphatases in PSD except PP1 (Strack et al., 1997a), which is tightly regulated in the PSD (Bollen et al., 2010).\n\nCaMKII has another remarkable property which was hypothesized by Lisman (Lisman, 1994) but discovered only recently, namely, subunit exchange. In this process, two CaMKII holoenzymes can exchange active subunits leading to spread of CaMKII activation (Stratton et al., 2014).\n\nIn this paper, we adapt the Miller and Zhabotinksy (MZ) model (Miller et al., 2005) to include subunit exchange and diffusion, and quantify the effects of subunit exchange on the properties of the CaMKII-PP1 system in two adjacent neuronal micro-environments: PSD and spine cytosol.\n\nIn the PSD, PP1 is tightly regulated and CaMKII is protected from other phosphatases. But in the spine cytosol, CaMKII is accessible to other phosphatases along with PP1. We examined how state switching lifetimes in the PSD are affected by subunit exchange in different contexts of PP1 levels, turnover, and clustering of CaMKII. In the spine cytosol, we show how the integration of calcium stimuli generates two time-courses of CaMKII activity as a result of subunit exchange (Chang et al., 2017).\n\n## Results\n\n### Model validation\n\nThe basic computational units in our model are individual CaMKII subunits, and the CaMKII ring consisting of six or seven CaMKII subunits. We treat the CaMKII ring as a proxy for the CaMKII holoenzyme, which consists of two such rings stacked over each other (Woodgett et al., 1983; Hoelz et al., 2003; Chao et al., 2011). We define Active CaMKII as a holoenzyme (ring of six or seven subunits) in which at least two subunits are phosphorylated at Thr286. In our model, CaMKII exists in 15 possible states compared to two in the MZ model (see Materials\u00a0and\u00a0methods). This leads to many more reactions than the MZ model. We also replaced the Michaelis-Menten approximation in the MZ model by equivalent mass-action kinetics (e.g. Equation 2). Since analytical comparison of the two models was not possible, we first compared numerical results from our model without diffusion and without subunit exchange with the MZ model (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41412/elife-41412-fig1-v2.jpg)\n\n**Figure 1.:** (A) CaMKII/PP1 pathway described in System Biology Graphical Notation (SBGN) \u2013 Process Description (PD) Language (Le Nov\u00e8re et al., 2009). (B) (above) Major chemical reactions in the CaMKII/PP1 pathway. (below) Subunit exchange between two CaMKII holoenzymes. Blue and red balls represent phosphorylated and un-phosphorylated subunits respectively. (C) Basal\u00a0Ca2+ profile in spine and PSD. Basal\u00a0Ca2+ level is 80\u00a0nM with fluctuations every 2\u00a0s, lasting for 2\u00a0s. These fluctuations (represented by symbol $\u03f5$) are sampled from a uniform distribution with median of 120\u00a0nM and range of 40\u00a0nM (see Materials and methods). (D) Without diffusion and subunit exchange, CaMKII in our model is bistable. Two trajectories of CaMKII activity (fraction of total CaMKII holoenzymes with at least two subunits phosphorylated) are shown for different system sizes NCaMKII\u00a0=\u00a015 (top) and NCaMKII\u00a0=\u00a035 (bottom). (E) Switch stability (measured as average residence time in the stable states) increases exponentially with system size NCaMKII. Turnover rate $v_{t}=30h^{\u22121}$. Panels C, D, and E show key properties of our model that are very similar to those of the MZ model.\u00a0Source data are available at\u00a0https://github.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018/tree/master/PaperFigures/elifeFigure1\u00a0(Singh and Bhalla, 2018).\n\nOur model exhibited all the key properties of the MZ model: (1) In the PSD, under basal calcium (Ca2+) stimulus conditions, CaMKII/PP1 formed a bistable switch (Figure 1C,D), (2) The stability of the switch increased exponentially with system size (Figure 1E), (3) Increased number of PP1 molecules (NPP1) shut off the switch (Figure 2), and (4) Bistability was robust to slow turnover of CaMKII (Figure 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41412/elife-41412-fig2-v2.jpg)\n\n**Figure 2.:** (A) Two representative bistable trajectories (NCaMKII\u00a0=\u00a012) are shown with subunit exchange (+SE, blue) and without subunit exchange (-SE, red) respectively (Dsub\u00a0=\u00a00.1\u00a0\u00b5m2\u00a0s\u22121, and DPP1\u00a0= 0.5 \u00b5m2\u00a0s\u22121\u00a0for both blue (+SE) and red (-SE); and NPP1\u00a0=\u00a0168 for blue (+SE) and 72 for red (-SE), respectively). (B) Blue and red solid lines represent the fraction of total time spend by the switch in the ON state with and without subunit exchange, respectively. The lines are fitted with the function $a/(1+e^{k\u2062(x-x_{0})})$. Dotted red and blue lines show the fraction of time that the switch spends in intermediate states ($x_{a}y_{n\u2212a}$, 2\u00a0< a < n-2) with and without subunit exchange, respectively. Due to subunit exchange, the switch tolerated a larger amount of PP1 ($x_{0}$ value 6.35 vs 13.46 that\u00a0is a change of 7.11$\\timesN_{CaMKII}$NCaMKII). The range of PP1 for which switch remained bistable saw a moderate change ($k$, 1.32 vs. 2.3). The fraction of time spent in intermediate states (dashed lines) is much smaller when subunit exchange is enabled (blue dashed line), that is the switching time is shorter. (C) Due to subunit exchange, relaxation time becomes independent of NPP1 (blue vs red). Shaded area represents standard deviation.\u00a0Source data are available at\u00a0https://github.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018/tree/master/PaperFigures/elifeFigure2\u00a0(Singh and Bhalla, 2018).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41412/elife-41412-fig3-v2.jpg)\n\n**Figure 3.:** (A,B) Three sample trajectories are shown for a switch of size NCaMKII =\u00a010 without subunit exchange (-SE,\u00a0red) and with it (+SE,\u00a0blue). We consider three different turnover rates of 1 per\u00a030\u00a0h, 1 per 3\u00a0h, and 1 per 0.5 h. As turnover is increased, the state stability of the ON state of the switch decreases. (C, left) Normalized residence time of the ON state vs. turnover rate for two switches of size 6 and 12. Without subunit exchange, switch stability decreases steeply with turnover rate (red); however, when subunit exchange is enabled, switch stability is not affected by turnover rates as high as 1\u00a0h-1 (blue). (C,\u00a0right) In the bistable regime (solid lines), the number of switching events increases monotonically with turnover rate. Source data are available at\u00a0https://github.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018/tree/master/PaperFigures/elifeFigure3\u00a0(Singh and Bhalla, 2018).\n\nThus, our baseline model exhibited all the key properties that had previously been predicted for the bistable CaMKII switch. However, subunit exchange and diffusion introduced several interesting additional properties, which we examine below.\n\n### Subunit exchange increases the tolerance of the CaMKII switch to PP1 and to turnover\n\nWe first analyzed the switch sensitivity to PP1. In our model as well in the MZ model, the number of PP1 molecules (NPP1) has an upper limit for the switch to exhibit bistability. This constraint arises because PP1 must saturate in the ON state of the switch, that is the maximal enzymatic turnover of PP1 must be smaller than the rate of activation of CaMKII subunits. However, unlike the MZ model where the addition of one extra PP1 molecule changed the residence time of the ON state by roughly 90% (Figure 2C in Miller et al., 2005), we did not find the residence time of the ON state to be this sensitive to PP1. In our model, on average it required half the number of holoenzymes (i.e. 0.5\u00d7 NCaMKII) extra PP1 molecules to cause a similar 90% change in the residence time of the ON state. This number is roughly equal to the maximum number of CaMKII subunits (released from CaMKII holoenzymes during subunit exchange Equation 3) that can exist at any given time in our model. We conjecture that this reduced sensitivity to PP1 is due to the fact that PP1 participates in many more reactions in our model.\n\nWe found that a system consisting of NCaMKII\u00a0=\u00a012 holoenzymes remained bistable for NPP1\u00a0=\u00a03\u00d7 to 8\u00d7\u00a0NCaMKII without subunit exchange, and for NPP1\u00a0=\u00a012\u00d7 to 16\u00d7\u00a0NCaMKII with subunit exchange for Dsub\u00a0=\u00a00.1, and DPP1\u00a0=\u00a00.5\u00a0\u00b5m2\u00a0s\u22121 (Figure 2B). Thus, subunit exchange shifted the middle of the bistable range to higher values of PP1. The width of the range of PP1 over which bistability was present saw a moderate increase in the presence of subunit exchange (blue and red sigmoidal fit in Figure 2B). A similar trend was observed for other values of\u00a0DPP1 and\u00a0Dsub (data not shown).\n\nIn the presence of subunit exchange, the ON state of the switch has a tighter distribution (blue vs. red histogram, Figure 2A), that is, there are fewer holoenzymes that are completely de-phosphorylated by PP1. We interpret this as follows: In the presence of subunit exchange, any subunit in a holoenzyme de-phosphorylated by the PP1 is likely to be rapidly re-phosphorylated. This is because, when the switch is in ON state, most diffusing subunits present in the PSD are in the phosphorylated state. Hence, in addition to auto-phosphorylation, the exchange reactions (Equation 3) turn unphosphorylated holoenzymes to phosphorylated holoenzymes with a significant rate. Taken together, subunit exchange acts as a compensatory mechanism for dephosphorylation by PP1 in the ON state of the switch.\n\nSubunit exchange also had a strong effect on time spent by the switch in transition from one stable state to another (relaxation time). When subunit exchange was enabled, the relaxation time was reduced (red vs. blue dashed line in Figure 2B) and also became independent of NPP1. As mentioned previously, due to subunit exchange, the ON state has a tighter distribution (blue vs. red histogram in Figure 2A). This means that there were fewer ineffective transitions from the ON to the OFF state. As expected, the standard deviation of the relaxation time was also greatly reduced in the presence of subunit exchange (red and blue curve, Figure 2C). Thus, subunit exchange makes the switch\u2019s ON state less noisy and more robust to dephosphorylation by PP1.\n\nParallel results were obtained for the effect of subunit exchange on CaMKII switch robustness in the context of protein turnover. Turnover acts at a constant rate to replace any active CaMKII holoenzyme with an inactive holoenzyme (Equation 6), thus decreasing the stability of the ON state. Without subunit exchange, switch stability as measured by residence time of the ON state decreased exponentially with increasing turnover rate. With subunit exchange, however, residence time of the ON state remained roughly constant upto a $\u223c$10 fold increase in turnover (Figure 3B), after which subunit exchange could not phosphorylate all the inactive holoenzymes produced by turnover. At this point, the switch started to show a similar steep decay of stability as was seen without subunit exchange. As expected, turnover increased the number of switching events in the regime of bistability in both cases.\n\nThus, subunit exchange broadens the zone of bistability of the switch, both with respect to the range of NPP1, and the turnover rate over which the switch remains bistable. It also reduces fluctuations in the ON state of the switch.\n\n### Subunit exchange facilitates the spread of CaMKII activity\n\nAs suggested in Stratton et al., 2014, we found that subunit exchange facilitated the spread of CaMKII activation (Figure 4). When subunits were allowed to diffuse, an active subunit could be picked by a neighboring inactive CaMKII holoenzyme, making it partially phosphorylated. This process overcomes the first slow step of CaMKII phosphorylation (Equation 1), especially when subunit exchange makes many phosphorylated subunits available, thereby facilitating the spread of activation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41412/elife-41412-fig4-v2.jpg)\n\n**Figure 4.:** (A) 18 CaMKII holoenzymes were simulated in a cylindrical arena of volume 0.0275 \u00b5m3, discretized into 18 voxels, each separated by 30\u00a0nm. Red and blue balls represent unphosphorylated and phosphorylated subunits, respectively. (B) Activation profile of CaMKII at mean basal calcium level of 80\u00a0nM+$\u03f5$ ($\u03f5$ is fluctuation in basal\u00a0Ca2+ levels Figure 1A) for various values of Dsub\u00a0with NPP1\u00a0=\u00a015\u00d7\u00a0NCaMKII. For this value of NPP1, we see moderate or no mean activity of CaMKII for various values of Dsub for basal\u00a0Ca2+\u00a0=\u00a080\u00a0nM\u00a0+\u00a0$\u03f5$. This serves as the baseline for comparisons. (C) At a slightly higher level of basal\u00a0Ca2+ (120\u00a0nM+$\u03f5$), subunit exchange has a stronger effect on CaMKII activation. When subunits were modeled with zero or very small diffusion coefficients (Dsub\u00a0=\u00a00 and Dsub\u00a0=\u00a010-8\u00a0\u00b5m2\u00a0s\u22121), the effect of subunit exchange was smaller than when subunits were tested with moderate-to-high diffusion coefficients (Dsub\u00a0=\u00a00.001 and 0.1\u00a0\u00b5m2\u00a0s\u22121), (D) Quantification of the effect of subunit exchange (shown in B and C) as measured by the time taken by CaMKII to rise from 10% to 90% of its maximum value (rise time) in hours vs\u00a0Dsub and basal\u00a0Ca2+ levels. The effect of subunit exchange is greater (i.e. shorter rise times) at higher calcium levels for all values of Dsub. Rise time is also shorter for larger\u00a0Dsub for all values of [Ca2+]. Error bars represents standard deviation (n\u00a0=\u00a040 trajectories). (E) The time to onset of CaMKII activity is independent of Dsub and depends only on [Ca2+]. The time to onset of activity is measured as the time taken by inactive CaMKII to rise from 0 to 10% of its maximum value. Average time for the onset of activity decreased with increasing basal [Ca2+] levels but remained independent of\u00a0Dsub suggesting that subunit exchange does not play a significant role at the beginning of activation of CaMKII by Ca2+. Error bar represents standard deviation (n\u00a0=\u00a040 trajectories). DPP1\u00a0=\u00a00.5\u00a0\u00b5m2\u00a0s\u22121\u00a0for all simulations. Source data are available at\u00a0https://github.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018/tree/master/PaperFigures/elifeFigure4\u00a0(Singh and Bhalla, 2018).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41412/elife-41412-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Sample trajectories of CaMKII activation for basal\u00a0Ca2+ concentration of $100\u2062nM$+$\u03f5$.In all simulations, DPP1 was set to 0.5\u00a0\u00b5m2\u00a0s\u22121 and\u00a0Dsub was varied. Each plot contains 40 trajectories. Dark black trajectory in each plot shows the average trajectory.\n\nWe simulated NCaMKII\u00a0=\u00a018 inactive holoenzymes in a cylindrical arena with a volume of 0.0275\u00a0\u00b5m3 and a length of 540\u00a0nm representing the PSD. The cylinder was divided into 18 voxels (one holoenzyme in each voxel). Each voxel was separated by 30\u00a0nm, which is the average nearest-neighbour distance for CaMKII holoenzymes (Feng et al., 2011). Each voxel was considered to be a well-mixed environment that is diffusion was instantaneous within the voxel. Between voxels, diffusion was implemented as cross-voxel jump reactions (see Materials and methods). We did not try 2D/3D diffusion because of its simulation complexity and because it would be expected to be qualitatively similar (Fange et al., 2010).\n\nWe fixed the diffusion coefficient of PP1 (DPP1) to quantify the effect of varying the diffusion coefficient of subunits (Dsub) and basal calcium levels. We used NPP1\u00a0=\u00a00.5\u00a0\u00b5m2\u00a0s\u22121\u00a0which is the observed value of the diffusion coefficient of Ras, a similar sized protein (Harvey et al., 2008). We ran simulations for 4 h at basal calcium concentration [Ca2+]\u00a0=\u00a080\u00a0nM+$\u03f5$ (where $\u03f5$ is the fluctuation in basal calcium levels, see Figure 1C), and without subunit exchange (i.e. Dsub\u00a0=\u00a00). We set NPP1\u00a0=\u00a015\u00d7\u00a0NCaMKII to make sure the system showed no significant CaMKII activity (Figure 4B, red curve). This served as the baseline to quantify the effect of subunit exchange. When we enabled subunit exchange by setting Dsub to a non-zero value, CaMKII activity rose to a maximum within 4\u00a0h even for a low value of Dsub\u00a0=\u00a00.001\u00a0\u00b5m2\u00a0s\u22121\u00a0(Figure 4C, black curve).\n\nThe first step of CaMKII phosphorylation (Equation 1) is slow since it requires binding of two calcium/calmodulin complex (Ca2+/CaM) simultaneously (at basal [Ca2+]\u00a0=\u00a080\u00a0nM+$\u03f5$ , $v_{1}$\u00a0=\u00a01.27\u00a0\u00d7\u00a010-5\u00a0s-1). However, subunit exchange can also phosphorylate a subunit in a holoenzyme by adding an available phosphorylated subunit to it (Equation 3). Note that a Dsub value as low as 0.001\u00a0\u00b5m2\u00a0s\u22121 is good enough for subunit exchange to be effective. With this value of Dsub, it takes roughly 0.9 s for the subunit to reach another holoenzyme which is, on average, 30\u00a0nm away. Under these conditions, the rate of picking up available active subunits (given in Equation 3) is faster than $v_{1}$. Expectedly, for larger Dsub values (e.g., 0.001 and 0.1\u00a0\u00b5m2\u00a0s\u22121), subunit exchange becomes more effective (compare red and blue with the rest in Figure 4D).\n\nAs expected, at higher basal Ca2+ levels (120\u00a0nM), the system showed higher CaMKII activity for all values of Dsub (Figure 4D). Increasing Dsub increased the effect of subunit exchange, as measured by the decreased rise time of CaMKII activity from 10% to 90% (Figure 4D). However, the time of onset of CaMKII activation as measured by rise time from 0% to 10% was dependent only on basal\u00a0Ca2+\u00a0levels but not on\u00a0Dsub (Figure 4E).\n\nThus, subunit exchange facilitates the spread of kinase activity following CaMKII activation but does not affect the onset of CaMKII activation.\n\n### Subunit exchange synchronizes switching activity of clustered CaMKII\n\nNext, we probed the effect of subunit exchange between spatially separated CaMKII clusters. We considered NCaMKII holoenzymes organized into three clusters of size NCaMKII/3, each separated by a distance d. This configuration corresponds to cases where receptors and CaMKII holoenzymes are clustered at the synapse.\n\nWhen there is no subunit exchange across voxels (Dsub\u00a0=\u00a00), these switches are expected to switch independently like multiple coins flipped together, resulting in a binomial distribution of activity. The clustered system had three relatively stable bistable systems (long residence time, Figure 1E). As expected, without subunit exchange, activity in this system had a binomial distribution (Figure 5B, red plot).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/41412/elife-41412-fig5-v2.jpg)\n\n**Figure 5.:** (A) Three clusters, each of size 6 (i.e., NCaMKII\u00a0=\u00a06) separated by distance $d$ were simulated in a cylindrical arena of volume 0.0275 \u00b5m3 discretized into three voxels. CaMKII subunits are shown as red (unphosphorylated) and blue (phosphorylated) balls. (B) (left) Without subunit exchange, all three switches flipped independently with a low residence time, resulting in a binomial distribution of states (Bar chart on right, in red). (right) With subunit exchange, all switches synchronized their activity that is they acted as a single bistable switch with a longer residence time. (C) Strength of synchronization ($k_{s}$) vs. diffusion constant Dsub for a system consisting of three switches each separated from each other by a distance of 30\u00a0nm. Variable $k_{s}=1-t_{i}$ where $t_{i}$ is the fraction of total time spent by the switches in the intermediate states\u00a0xayn-a; 1\u00a0<\u00a0a\u00a0< n. Synchronization is strong if ks > 0.4. (D) 2-D plot of $k_{s}$ vs. Dsub and $d$. The effect of synchronization $k_{s}$ due to subunit exchange is strong (red region) and robust to changes in Dsub, and effective for inter-cluster distance ($d$) as large as 100\u00a0nm.\u00a0DPP1\u00a0=\u00a00.5\u00a0\u00b5m2\u00a0s\u22121\u00a0for all simulations. Source data are available at\u00a0https://github.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018/tree/master/PaperFigures/elifeFigure5\u00a0(Singh and Bhalla, 2018).\n\nThen we allowed PP1 and CaMKII subunits to undergo linear diffusion. We set DPP1\u00a0=\u00a0$0.5$\u00a0\u00b5m2\u00a0s\u22121\u00a0as before and varied Dsub to quantify effect of subunit exchange. Subunit exchange led to synchronization of switching activity. The population of clustered CaMKII acted as a single bistable switch (Figure 5B, blue plot). This effect was strong and robust to variation in Dsub. Even for a very small value of Dsub\u00a0=\u00a00.01\u00a0\u00b5m2\u00a0s\u22121, we observed strong synchronization (Figure 5D). The synchronization disappeared completely for Dsub less than 0.0001\u00a0\u00b5m2\u00a0s\u22121, and for $d$ greater than 100\u00a0nm (Figure 5D).\n\nThus, for most physiologically plausible values of diffusion coefficient Dsub, subunit exchange causes synchronization of switching activity of clustered CaMKII.\n\n### Subunit exchange may account for the observed dual decay rate of CaMKII phosphorylation\n\nFinally, we asked if subunit exchange might account for the complex time-course of CaMKII dynamics in spine as observed in recent experiments (Chang et al., 2017). We designed a simulation to replicate an experiment where CaMKII was inhibited by a genetically encoded photoactivable inhibitory peptide after activating CaMKII by glutamate uncaging (Murakoshi et al., 2017). In the spine, CaMKII is more accessible to phosphatases than in the PSD, where our previous calculations had been located. To model the increased availability of phosphatases, we increased the concentration of PP1 by an order of magnitude, and increased the volume of the compartment to match the volume of a typical spine head that is 0.02\u00a0\u00b5m3\u00a0(Bartol et al., 2015). We found that CaMKII acted as a leaky integrator of the calcium activity with a typical exponential decay dynamics (Figure 6A). We then enabled the diffusion of CaMKII subunits (Dsub\u00a0=\u00a01\u00a0\u00b5m2\u00a0s\u22121) and PP1 (DPP1\u00a0=\u00a00.5\u00a0\u00b5m2\u00a0s\u22121). These conditions decreased the rate of dephosphorylation roughly by a factor of 5 (41.65\u00a0s vs. 200.82\u00a0s) (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/41412/elife-41412-fig6-v2.jpg)\n\n**Figure 6.:** The clustered CaMKII population decays more slowly than the non-clustered population, due to subunit exchange. Thus, a mixed population of clustered and non-clustered CaMKII can explain observed two time-constants of CaMKII decay (Chang et al., 2017). (A) Trajectories of CaMKII activity (fraction of all CaMKII which are active) when a strong periodic\u00a0Ca2+ pulse of 3\u00a0s duration was applied to the system after every 1000\u00a0s ($\u2193$). After the pulse,\u00a0Ca2+ levels were brought down to 80\u00a0nM. Three trajectories are shown: without subunit exchange (red), with subunit exchange (blue), and a weighed sum of red and blue (74% red\u00a0+24% blue as estimated in [Chang et al., 2017]). (B) Average decay dynamics after the onset of strong\u00a0Ca2+ pulse ($\u2193$). When there was no subunit exchange, CaMKII decayed with a time- course of approximately 41.65\u00a0s (red and dashed yellow [fit]). When subunit exchange was enabled, CaMKII decay had a slower time-constant of 200.82\u00a0s (blue and dashed blue [fit]). (C) Average dynamics of the mixed population (black). This was fit to a double exponential that is $a\u2062e^{-t/\\tau_{1}}+(1-a)\u2062e^{-t/\\tau_{2}}$ for $a=0.74$ (dashed red). For a given $a=0.74$ (estimated in [Chang et al., 2017]), our estimate of time-constants (8.4\u00a0s, 86.2\u00a0s) matched well with experimentally estimated time-constants (6.4\u00a0s\u00a0\u00b1\u00a00.7, 92.6\u00a0s\u00a0\u00b1\u00a050.7). Shaded areas are the standard deviation. Number of voxels Nv\u00a0=\u00a010, Dsub\u00a0=\u00a01\u00a0\u00b5m2\u00a0s\u22121, DPP1\u00a0=\u00a00.5\u00a0\u00b5m2\u00a0s\u22121. Source data are available at\u00a0https://github.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018/tree/master/PaperFigures/elifeFigure6\u00a0(Singh and Bhalla, 2018).\n\nWe expected that subunit exchange should have a strong effect on the time-course of decay of activity of clustered CaMKII in spine cytosol (e.g. CaMKII bound to actin) because the proximity of holoenzymes would lead to rapid exchange. Thus, if there are populations of clustered as well as non-clustered CaMKII in the spine, we expected that they would exhibit long and short time-courses of activity decay, respectively. Therefore a mixed population of clustered and non-clustered CaMKII should decay with two time-constants. Our simulations supported this prediction.\n\nIn Chang et al. (2017), the decay kinetics of CaMKII were obtained by curve fitting of experimental data. It was given by a double-exponential function: $F\u2062(t)=P_{f\u2062a\u2062s\u2062t}\u2062e^{-t/\\tau_{f\u2062a\u2062s\u2062t}}+P_{s\u2062l\u2062o\u2062w}\u2062e^{-t/\\tau_{s\u2062l\u2062o\u2062w}}$ where $P_{fast}=0.74$,\u00a0$P_{slow}=0.26$,\u00a0$\\tau_{fast}=6.4\\pm0.7s$,\u00a0$\\tau_{slow}=92.6\\pm50.7s$ (Figure 6C, magenta). We used their estimate of $P_{f\u2062a\u2062s\u2062t}$ and $P_{s\u2062l\u2062o\u2062w}$ to construct a mixed population of slow and fast decaying CaMKII (Figure 6A, black), and simulated the decay kinetics of CaMKII for this system. We fit the resulting decay curve with a double-exponential function (Figure 6C, dashed red). The time-constants obtained (8.4\u00a0s,\u00a086.2\u00a0s) matched well with experimentally estimated time-constants of (6.4\u00a0s\u00a0\u00b1\u00a00.7, 92.6\u00a0s\u00a0\u00b1\u00a050.7).\n\nThus, we suggest that subunit exchange may be a mechanism that leads to CaMKII$\\alpha$ activity decaying with two time-courses in spine cytosol.\n\n## Discussion\n\nHere, we have shown that subunit exchange strongly affects the properties of the CaMKII/PP1 pathway, both in its role as a bistable switch in the PSD and as a leaky integrator of\u00a0Ca2+ activity in spine cytosol. In the PSD, where the model was tuned to elicit bistable dynamics from clustered CaMKII, subunit exchange improved the stability of the CaMKII/PP1 switch by synchronizing the kinase activity across the PSD (Figure 6). It also improved active CaMKII tolerance of PP1, and of turnover rate (Figure 2 and Figure 3). In the case where CaMKII was uniformly distributed in PSD, subunit exchange facilitated more rapid activation of CaMKII (Figure 4B\u2013D) (Stratton et al., 2014). These simulation results predict that a CaMKII mutant lacking subunit exchange would be deficient in switch stability and slower to be activated by\u00a0Ca2+, thereby resulting in degraded memory retention and deficient learning in memory-related behavioral experiments, respectively.\n\nIn the spine head, subunit exchange facilitated integration by prolonging the decay time-course of kinase activity (Figure 6). The fact that CaMKII dynamics changed from an integrator to bistable switch as we moved from spine cytosol (a phosphatase rich environment) to the PSD (where PP1 is tightly controlled) suggests an interesting sub-compartmentalization of functions in these microdomains. Furthermore, we observed that the clustering of CaMKII had important implications for its sustained activity.\n\nSubunit exchange is unlikely to have any impact on neighbouring spines. The mean escape time of a single CaMKII subunit from a typical spine is between 8\u00a0s to 33\u00a0s\u00a0(Holcman and Schuss, 2011). Any phosphorylated subunit is almost certain to be de-phosphorylated by PP1 during this time. We therefore predict that the effects of synchronization are local to each PSD, where PP1 is known to be tightly controlled. Subunit exchange loses its potency in the phosphatase rich region of the bulk spine head or dendrite. We therefore consider it unlikely that CaMKII subunit exchange plays any role in intra-spine information exchange such as synaptic tagging.\n\nCaMKII is non-uniformly distributed in the PSD where it is mostly concentrated in a small region of 16\u00a0nm to 36\u00a0nm below the synaptic cleft (Petersen et al., 2003). In the PSD, CaMKII may exist in large clusters given that the PSD is rich in CaMKII binding partners. Our study predicts that subunit exchange may lead to synchronization when CaMKII is clustered, or more rapid activation by\u00a0Ca2+ when it is uniformly distributed. Given that CaMKII can form clusters with N-methyl-D-asparate (NMDA) receptors, it would be interesting to study the mixed case where some CaMKII is clustered and the rest is uniformly distributed. This would require a detailed 3D simulation and is beyond the scope of this study.\n\nFinally, we suggest that the existence of diverse time-scales of CaMKII activity \u2013 bistable and highly stable synchronized bistable in PSD, slow and fast decaying leaky integrator in spine head (Table 1) \u2013 has important theoretical implications. A very plastic synapse is good at registering activity dependent changes (learning) but poor at retaining old memories. On the other hand, a rigid synapse is good at retaining old memories but is not efficient at learning. A theoretical meta-model which sought to strike a balance between these two competing demands requires that a diversity of timescales must exist at the synapse (Benna and Fusi, 2016) for optimum performance. In this model, complex synapses with state variables with diverse time-scales are shown to form a memory network in which storage capacity scales linearly with the number of synapses, and memory decay follows $1/\\sqrt{t}$ \u2014 a power-law supported by psychological studies (Wixted and Ebbesen, 1991). This model requires the memory trace to be first stored in a fast variable and then progressively and efficiently transferred to slower variables. Our study suggests a concrete mechanism for such a process. Here, the\u00a0Ca2+ concentration in the PSD can be mapped to the fastest variable. The CaMKII integrator in the cytosol could represent the second slower variable to which the trace is transferred from\u00a0Ca2+. Further, the state information is transferred to the third slower CaMKII bistable switch. The dynamics of CaMKII in the PSD forms an even slower bistable variable for longer retention of the memory trace. It is possible that memory is transferred from here to even slower variables, such as sustained receptor insertion (Hayer and Bhalla, 2005), PKM-$\u03b6$ activation (Sacktor, 2012), or local protein synthesis (Aslam et al., 2009).\n\n**Table 1.**\n Diverse timescales of activity shown by CaMKII\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Type</th>\n      <th>Location</th>\n      <th>Timescale</th>\n      <th>Ref/Notes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Leaky integrator</td>\n      <td>Spine cytosol</td>\n      <td>~10 s</td>\n      <td>Chang et al., 2017, This paper</td>\n    </tr>\n    <tr>\n      <td>Leaky integrator decaying slowly due to subunit exchange</td>\n      <td>Spine cytosol</td>\n      <td>~100 s</td>\n      <td>This paper, Chang et al., 2017</td>\n    </tr>\n    <tr>\n      <td>Small bistable (Size 4 to 10)</td>\n      <td>PSD</td>\n      <td>Few hours to days</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>Large bistable (Size 12 to 20)</td>\n      <td>PSD</td>\n      <td>Few weeks to months</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>Synchronized population of bistables coupled by subunit exchange</td>\n      <td>PSD</td>\n      <td>Years</td>\n      <td>This paper</td>\n    </tr>\n  </tbody>\n</table>\n\n## Materials and methods\n\nWe extended Miller and Zhabotinksy (MZ model;\u00a0Miller et al., 2005) to incorporate subunit exchange and diffusion. We assume that vertical dimers are inserted and released together (Bhattacharyya et al., 2016). We also assume that both subunits of a vertical dimer phosphorylate and de-phosphorylate together. Under this assumption, we can treat the CaMKII ring as the proxy for the CaMKII holoenzyme and the subunit as the proxy for the CaMKII dimer. Without this assumption, the simulation cost of the increased complexity would be very significant.\n\nIn our model, a CaMKII ring with $n$ subunits (n\u00a0=\u00a06 or 7) can exist in 15 different states enumerated as $x_{a}\u2062y_{n-a}$ for $0\\leqa\\leqn$ where $x$ and $y$ represent un-phosphorylated and phosphorylated subunits respectively. We ignore all rotational permutations and kinetically unlikely cases where there are discontiguous phosphorylated subunits in the ring. We assumed that the phosphorylation of neighbouring subunit proceeds clockwise.\n\n### Ca2+ background activity (\u03f5)\n\nWe assumed the resting\u00a0Ca2+ level in spine to be 80\u00a0nM\u00a0(Berridge, 1998). In the MZ model, Miller et al. assumed that\u00a0Ca2+ entry through NMDA receptors can be approximated by a Poisson train with an average rate of 0.5\u00a0Hz. Since, on average, $\u223c$0.5 NMDA receptors open (Nimchinsky et al., 2004) upon pre-synaptic stimulation, we reduced the frequency of NMDA opening events to 0.25\u00a0Hz. We used a periodic pulse with a time-period of 4\u00a0s and duty cycle of 50%. To model NMDA activity in the 2\u00a0s long ON period of our 4\u00a0s long periodic pulse, we sampled from a uniform distribution with median of 120\u00a0nM (50% change, on average) and range of 40\u00a0nM (Figure 1C). This distribution is informed by Figure 2B,C from (Nimchinsky et al., 2004).\n\nWe did not consider decay dynamics of\u00a0Ca2+ influx through the NMDA channel since the timescale of decay (roughly 100\u00a0ms) is much shorter than our simulation runtimes of days, and including this detail would have made the simulations very slow. The effect of ignoring decay dynamics are expected to be negligible given that the time-scale of CaMKII activation is much larger than the time course of\u00a0Ca2+ decay dynamics. Furthermore, we did not consider contributions to background\u00a0Ca2+ fluctuations by other channels. This background activity is represented by $\u03f5$ in the figures and text.\n\n### Phosphorylation and dephosphorylation of CaMKII ring\n\nThe activation of CaMKII in our study follows the same dynamics as in the MZ model (Equation 1). In our paper, by phosphorylation/activation of a CaMKII subunit or a holoenzyme, we mean phosphorylation at Thr286. The first step in CaMKII activation requires simultaneous binding of two (Ca2+/CaM) to the two adjacent subunits of CaMKII. Once a subunit is phosphorylated, it catalyzes phosphorylation of its neighbour (auto-phosphorylation) which requires binding of only one (Ca2+/CaM). Therefore, further phosphorylation proceeds at much faster rate. The phosphorylation of CaMKII is given by Equation 1 (Bradshaw et al., 2003; Miller et al., 2005).\n\n$$\nx_{a}y_{n\u2212a}\u2192v_{1}x_{a\u22121}y_{n\u2212a+1}\u2192v_{2}x_{a\u22122}y_{n\u2212a+2}v_{1}=k_{1}[\\frac{H^{3}}{1+H^{3}}]^{2},v_{2}=k_{1}\\frac{H^{3}}{1+H^{3}},whereH=\\frac{Ca^{2+}}{K_{H1}}\n$$\n\nwhere $n$\u00a0=\u00a06\u00a0or\u00a07 for $1\\leqa\\leqn;k_{1}=1.5s^{\u22121}$\u00a0(Hanson et al., 1994), and $k_{H1}=0.7\u00b5M$\u00a0(De Koninck and Schulman, 1998; Miller et al., 2005). At resting\u00a0Ca2+ concentration of 100\u00a0nM, $v_{1}=1.27\\times10^{\u22125}s^{\u22121}$ and $v_{2}=4.36\\times10^{\u22123}s^{\u22121}$ (i.e., $v_{2}/v_{1}\u2248343$). The rate constant $v_{1}$ above defines the initial rate of phosphorylation. Furthermore, addition of phosphorylated subunits can happen through subunit exchange (Equation 3). We treat these as independent variables. The phosphorylation rates $v_{1}$ and $v_{2}$ are relatively well constrained by the experimental literature. The subunit exchange rates were estimated (Materials and methods) to be in the range of 1\u00a0s-1.\n\nOnce fully phosphorylated, CaMKII moves to the PSD where it binds to the NMDA receptor. Upon binding, it is no longer accessible other phosphatases except PP1.\n\nThe dephosphorylation of the CaMKII ring, and the subunit are given by Equation 2.\n\n$$\nPP1+x_{a}y_{n\u2212a}\u21cck^{\u2212}k^{+}PP1.x_{a}y_{n\u2212a}\u2192k_{2}PP1+x_{a+1}y_{n\u2212a\u22121}PP1+x\u21cck^{\u2212}k^{+}PP1.x\u2192k_{2}PP1+y\n$$\n\nwhere $n$\u00a0=\u00a06\u00a0or\u00a07, and $1\\leqa\\leqn$. Following (Miller et al., 2005), we also assumed $k^{-}=0$. This gave us $k^{+}=\\frac{k_{2}}{k_{M}}$\u00a0=\u00a01/\u00b5M/s. We could not find any experimental estimate of $k_{M}$ in recent literature, therefore we used the same value of $k_{M}$ as in the MZ model (Miller et al., 2005).\n\n### Subunit exchange\n\nSince CaMKII ring consists of either 6 or 7 subunits in our model, any ring with six subunits cannot lose a subunit, and a ring with seven subunits cannot gain a subunit. The reactions which result in either gain or loss of a subunit are given by Equation 3 where $0\\leqa\\leq6or7$.\n\n$$\nx_{a}y_{7\u2212a}+x\u21cck_{x}^{\u2212}k_{x}^{+}x_{a+1}y_{6\u2212a}x_{a}y_{6\u2212a}+y\u21cck_{y}^{\u2212}k_{y}^{+}x_{a}y_{7\u2212a}\n$$\n\nWe were not able to find values for $k_{x}^{+}$, $k_{x}^{-}$, $k_{y}^{+}$, and $k_{y}^{-}$ in the literature. We used the data in Stratton et al. (2014) to estimate the possible timescale of subunit exchange rate. (Bhattacharyya et al., 2016) speculate that upon activation, the hub of the holoenzyme becomes less stable and more likely to open up and lose a subunit that is\u00a0an active holoenzyme loses subunits at a faster rate. Therefore, we maintained the following ratio $k_{x}^{\u2212}\u224810k_{x}^{+}N_{CaMKII}$ and $k_{y}^{\u2212}\u224810k_{y}^{+}N_{CaMKII}$ in all simulations where $N_{CaMKII}$\u00a0is the number of holoenzymes in the system.\n\n#### Estimation of subunit exchange rate\n\nTo estimate reaction rates of Equation 3, we modeled the 'single molecule assay\u2019 used in Stratton et al., 2014. In this assay, two distinct populations of CaMKII labelled by either green or red fluorophores were mixed together. The holoenzymes were not free to move but they could release subunits which could move freely. A green holoenzyme may pick up a red subunit and vice versa thereby giving rise to a mixed colored population. The readout from this assay is the \u2018colocalization\u2019 which is the fraction of total holoenzymes containing subunits of both colors.\n\nIn our model of this assay, a CaMKII holoenzyme is represented by $R_{a}\u2062G_{n-a}$ where $R$ and $G$ represent a red and a green subunit in the holoenzyme respectively, and n\u00a0=\u00a06\u00a0or\u00a07. The green population consists of holoenzymes with only green subunits (i.e., $R_{0}\u2062G_{6}$ and $R_{0}\u2062G_{7}$) and the red population has holoenzymes with all red subunits (i.e., $R_{6}\u2062G_{0}$ or $R_{7}\u2062G_{0}$). We assume that each color population has equal number of dodecameric (n\u00a0=\u00a06\u00a0$\\times$\u00a02) and tetradecameric (n\u00a0=\u00a07\u00a0$\\times$\u00a02) holoenzymes. Upon mixing red and green populations, the following reactions take place.\n\n$$\nR_{a}G_{b}\u21ccr_{g}r_{l}R_{a\u22121}G_{b}+Rforalla>0,b\\geq0s.t.a+b=6R_{a}G_{b}\u21ccr_{g}r_{l}R_{a}G_{b\u22121}+Gforalla\\geq0,b>0s.t.a+b=7\n$$\n\nThe value of colocalization is equal to the percentage of all holoenzymes containing at least one red and one green subunit that is $\\frac{\\sum_{a\\geq1,b\\geq1}[R_{a}\u2062G_{b}]}{\\sum_{a\\geq0,b\\geq0}[R_{a}\u2062G_{b}]}$. The dynamics of colocalization was fit by $100\u2062(1-e^{-t/\\tau})$. We first computed $\\tau$ for experimental data when [CaMKII]\u00a0=\u00a08\u00a0\u00b5M (Figure 7A). This served as the baseline for further analysis.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/41412/elife-41412-fig7-v2.jpg)\n\n**Figure 7.:** (A) Colocalization dynamics as reported in Stratton et al., 2014 (all data scraped from figures) at CaMKII\u00a0=\u00a08\u00a0\u00b5M (blue dots). Solid blue line shows a best fit $100\u2062(1-e^{-t/\\tau})$ with $\\tau$=62.7\u00a0min. (B) Phase plot of $\\tau$ of colocalization trajectories generated for various values of $r_{g}$ and $r_{l}$ (Equation 4). Black dots show values of $r_{g}$ and $r_{l}$ for which $\\tau$\u00a0=\u00a062.7\u00a0\u00b1\u00a020% (S.E.M.). Red $\u2295$ marks show the values of rate constants (Equation 3) used in this study at various volumes and NCaMKII. (C) For the fixed values of $r_{g}$ and $r_{l}$, three trajectories are shown at different CaMKII concentrations. As seen in the experimental data, the rate of colocalization increases with increasing CaMKII concentration. (D) For typical values of exchange rates used in this paper, we plotted simulation results (solid lines) with experimental values (dots) and their best exponential fit (dashed lines). The $d\\tau/d[CaMKII]$ was \u221210.06\u00a0min/\u00b5M (data) and \u221218.54\u00a0min/\u00b5M (simulation). Source data are available at https://github.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018/tree/master/PaperFigures/elifeFigure7\u00a0(Singh and Bhalla, 2018).\n\nNext, we explored the space of $r_{l}$ and $r_{g}$ for which the time constant $\\tau$ of colocalization dynamics matched well with the baseline case (i.e. $\\tau$ for these trajectories were $\\tau$[CaMKII]\u00a0=\u00a08\u00a0\u00b1\u00a020% (Figure 7B, black dots). From these values, we chose a combination of $r_{g}$ and $r_{l}$ which best explained the concentration-dependent changes in the rate of colocalization (Figure 7D). When compared with the data from Stratton et al., 2014), the time scale of colocalization and the concentration-dependent decrease in the rate of colocalization matched reasonably well for $r_{l}$ and $r_{g}$\u00a0that\u00a0is, $\\tau$\u00a0=\u00a049.1\u00a0min (data) vs $\\tau$\u00a0=\u00a021.0\u00a0min (simulation) when [CaMKII]\u00a0=\u00a08\u00a0\u00b5M\u00a0and $\\tau$\u00a0=\u00a0119.0\u00a0min\u00a0(data) vs $\\tau$\u00a0=\u00a0150.0\u00a0min\u00a0(simulation) when [CaMKII] = 1\u00a0\u00b5M, and, $\\frac{d\\tau}{d[CaMKII]}$\u00a0=\u00a0-10.06\u00a0min/\u00b5M (data) vs $\\frac{d\\tau}{d[CaMKII]}$\u00a0=\u00a0-18.05\u00a0min/\u00b5M\u00a0(simulation) (Figure 7D). Note that we do not model the effect of diffusion, labelling efficiency, and experimental errors in the readout mechanism. Our values of $k_{x}^{+},k_{y}^{+},k_{x}^{-},k_{y}^{-}$ used in Equation 3 are close to estimated values of $r_{g}$ and $r_{l}$ (red cross vs. black dots in Figure 7B). Note that $r_{g}$ and $r_{l}$ are proxies for $k_{x}^{+},k_{y}^{+}$ and $k_{x}^{-},k_{y}^{-}$ respectively.\n\nThus, we are confident that rate parameters used in Equation 3 in our model are likely to be within the physiologically relevant range.\n\n### PP1 deactivation\n\nIn the PSD, PP1 is the primary \u2013 and perhaps only \u2013 phosphatase known to dephosphorylate CaMKII (Strack et al., 1997b). We followed the MZ model for Equation 5 where inhibitor-1 (I1) inactivates PP1. Phosphorylated inhibitor-1 (I1P) renders PP1 inactive by forming I1P-PP1 complex (I1P.PP1).\n\n$$\nPP1+I1P\u21cck_{4}k_{3}I1P.PP1I1P=I1\\frac{v_{PKA}}{v_{CaN}}\\frac{1+(\\frac{Ca}{k_{H2}})^{3}}{(\\frac{Ca}{k_{H2}})^{3}}\n$$\n\nwhere k3\u00a0=\u00a0100\u00a0/\u00b5M/s, k4\u00a0=\u00a00.1\u00a0s-1\u00a0(Endo et al., 1996), and $v_{PKA}/v_{CaN}$\u00a0=\u00a01\u00a0(Miller et al., 2005).\n\n### Turnover\n\nThe turnover of CaMKII is a continuous process given by Equation 6 with rate $v_{t}=30\u2062h^{-1}$\u00a0(Ehlers, 2003).\n\n$$\nx_{a}y_{6\u2212a}\u2192v_{t}x_{6}y_{0}for6\\geqa\\geq1x_{a}y_{7\u2212a}\u2192v_{t}x_{7}y_{0}for7\\geqa\\geq1\n$$\n\n### Diffusion and simulation method\n\nDiffusion is implemented as a cross voxel jump reaction. Diffusion of a species X with diffusion-coefficient $D_{X}$ between voxel A and B separated by distance $h$ is modelled as a reaction $X_{A}\u21cckkX_{B}$ where $k=D_{X}/h^{2}$, and $[X_{A}]=[X_{B}]=[X]/2$ (Erban et al., 2007). Based on our own numerical results (Appendix 1\u2014figure 2) and other studies (Isaacson, 2009; Erban and Chapman, 2009), we are confident that $h\\geq10\u2062h_{c\u2062r\u2062i\u2062t}$ where $h_{c\u2062r\u2062i\u2062t}=\\frac{k^{+}}{D_{P\u2062P\u20621}+D_{s\u2062u\u2062b}}$ is a good value. We have hcrit\u00a0\u2264\u00a03.2 nm whenever DPP1 + Dsub \u2265 0.5 \u00b5m2 s\u22121. For all simulations presented in main text, we maintained $h\\geqh_{c\u2062r\u2062i\u2062t}$. For a few illustrative examples where $h$ is smaller than $h_{c\u2062r\u2062i\u2062t}$, see Figure 4\u2014figure supplement 1D,E.\n\nAll simulations were performed using the stochastic solver based on the Gillespie method, in the MOOSE simulator (https://moose.ncbs.res.in, version 3.1.4;\u00a0Ray and Bhalla, 2008). This model is available at https://github.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018 (copy archived at https://github.com/elifesciences-publications/SinghAndBhalla_CaMKII_SubunitExchange_2018).\u00a0The table of parameters is in SI (Table 2).\n\n### Method validation\n\nTo validate our implementation of diffusion, we compared trajectories of two systems: one in a single\u00a0well-mixed cylinder with parameters tuned to elicit bistable behavior (henceforth, we call it the reference bistable), and a spatial system implemented as a discretized cylinder as described above. We expect the later to converge to reference bistable system when the diffusion constants become large such that the molecules are effectively well-mixed.\n\nWe put six CaMKII holoenzymes in a cylinder of length 180\u00a0nm discretized into six voxels, separated by a distance of 30\u00a0nm. The long-term behavior of discretized system was most sensitive to DPP1 (Figure 8B) and almost independent of Dsub (Figure 8A). The discretized system converges to reference bistable for DPP1\u00a0\u2265\u00a00.5\u00b5m2s-1\u00a0(Figure 8C).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/41412/elife-41412-fig8-v2.jpg)\n\n**Figure 8.:** NCaMKII\u00a0=\u00a06 holoenzymes as described in Figure 4 were simulated in a cylindrical arena divided into six voxels separated by 30\u00a0nm. Basal\u00a0Ca2+ was set to 100\u00a0nM+$\u03f5$. (A, above) For a typical value of DPP1\u00a0=\u00a00.5\u00a0\u00b5m2\u00a0s\u22121\u00a0used in our model, varying Dsub did not result in loss of bistability of CaMKII activity. The distribution of state occupancy is shown for the case of Dsub\u00a0=\u00a00.1\u00a0\u00b5m2\u00a0s\u22121\u00a0in bar chart on the right. (A, below) Reference well-mixed system for comparison. Six holoenzyme were simulated in a single well-mixed cylinder of same length and volume, and with same parameter values as above. The distribution of state occupancy is shown on the right. (B) Cumulative histograms of CaMKII activity for various values of DPP1 and Dsub (unit\u00a0\u00b5m2\u00a0s\u22121). The red and blue lines represent spatially discretized and well-mixed reference system (shown in A, black) respectively. The spatially discretized system (red) converges to the well-mixed system (blue) for higher DPP1 values. For fixed value of DPP1, changing Dsub has little or no effect on convergence. For a typical value of DPP1\u00a0=\u00a00.5\u00a0\u00b5m2\u00a0s\u22121\u00a0, the system shows reasonable convergence (second row, also see A). (C) Quantification of convergence to well-mixed case. We used Kullback-Leibler divergence (relative entropy) to quantify the similarity between the state occupancy histograms (e.g. as in panel A) for the spatially extended case, and the reference well-mixed system, respectively. Identical histograms will have zero Kullback-Leibler divergence. The phase plot shows Kullback-Leibler divergence between the histograms for the spatially extended system and the reference bistable system. Black dots represent bistable configurations with at least four transitions observed in a simulation of the spatially discretized system, lasting 20 days. Thus, the spatially extended, discretized system converged to the behavior of the reference bistable system.\u00a0Source data are available at https://github.com/dilawar/SinghAndBhalla_CaMKII_SubunitExchange_2018/tree/master/PaperFigures/elifeFigure8\u00a0(Singh and Bhalla, 2018).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41412/elife-41412-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** CaMKII/PP1 system was simulated in a cylindrical arena discretized into 6 voxels of equal volume separated by distance $h$\u00a0=\u00a030\u00a0nm. (A) (above) For each voxel, the trajectory of active PP1 vs. time is plotted in blue. (below) Cross-correlation matrix of PP1 activity that is the $i\u2062j$ entry of the matrix shows the value of correlation coefficient of PP1 activity inside voxel $i$ and inside voxel $j$ (Pearson product-moment correlation coefficient, using numpy.corrcoef function). (B,C) Same as A but with different value of DPP1\u00a0, 0.001\u00a0\u00b5m2\u00a0s\u22121\u00a0and 0.1\u00a0\u00b5m2\u00a0s\u22121, respectively. PP1 activity reduced in all voxels with increased DPP1. The correlation of PP1 activity among voxels did not improve with increased DPP1 therefore non-uniform distribution of PP1 in voxels is unlikely to be a significant contributor to the observed loss of PP1 potency. (D) PP1 activity decreased with increased\u00a0DPP1\u00a0but remained independent of diffusion coefficient of subunit (Dsub). On the y-axis, PP1 activity is measured as ratio of sum of number of all active PP1 in all voxels during the simulation divided by the simulation time in hours. On top, dashed blue line (labeled blue\u00a0DPP1\u00a0=\u00a00) represents the case where PP1 was not allowed to diffuse. At bottom, dashed blue line (labeled blue1-voxel) shows the case where the cylinder consists only of 1 voxel and diffusion is instantaneous that is it is a well-mixed system. As expected, as DPP1 increased, the six voxels system converged to a well-mixed system of 1 voxel of 6x volume. Note that a similar effect is seen for a range of Dsub, including Dsub\u00a0=\u00a0$5$\u00a0\u00b5m2\u00a0s\u22121, for which $h_{crit}$\u00a0=\u00a00.33\u00a0nm, satisfying the condition $h\u226bh_{c\u2062r\u2062i\u2062t}$\u00a0(Isaacson, 2009; Erban and Chapman, 2009;\u00a0also see Appendix 1\u2014figure 2). Thus, we do not expect that this is a numerical artifact due to our use of cross-voxel jump reactions to approximate diffusion (Isaacson, 2009).\n\n### Table of parameters\n\nTable 2 summarizes the parameters of our model.\n\n**Table 2.**\n Table of parameters used in model.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Symbol</th>\n      <th>Parameter</th>\n      <th>Value</th>\n      <th>Reference/Notes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Vspine</td>\n      <td>Volume of Spine</td>\n      <td>1\u00a0to\u00a05\u00d710-20\u00a0m3</td>\n      <td>(Bartol et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>VPSD</td>\n      <td>Volume of PSD (Thickness 100\u2062nm. Surface area 0.05\u00b5m2)</td>\n      <td>1\u00a0to\u00a05\u00d710-21\u00a0m3</td>\n      <td>Farley, 2015; Bartol et al., 2015</td>\n    </tr>\n    <tr>\n      <td>NCaMKII</td>\n      <td>Total CaMKII holoenzymes in PSD/Spine</td>\n      <td>100\u00a0\u00b1\u00a018</td>\n      <td>Farley, 2015</td>\n    </tr>\n    <tr>\n      <td>NPP1</td>\n      <td>Total PP1 in PSD Total PP1 in Spine</td>\n      <td>4 to 20\u00d7\u00a0NCaMKII 10 to 100\u00d7\u00a0NCaMKII</td>\n      <td>This paper This paper</td>\n    </tr>\n    <tr>\n      <td>I1</td>\n      <td>Concentration of free I1</td>\n      <td>10\u00a0\u00b5M</td>\n      <td>Miller et al., 2005</td>\n    </tr>\n    <tr>\n      <td>VCaN</td>\n      <td>Activity of calcineurin divided by its</td>\n      <td>1</td>\n      <td>Miller et al., 2005</td>\n    </tr>\n    <tr>\n      <td>VCaM</td>\n      <td>Activity of PKA divided by its Michaelis constant</td>\n      <td>1\u00a0s-1</td>\n      <td>Miller et al., 2005</td>\n    </tr>\n    <tr>\n      <td>KM</td>\n      <td>The Michaelis constant of PP1</td>\n      <td>10\u00a0\u00b5M</td>\n      <td>0.4 to 20 \u00b5M (Zhabotinsky, 2000)</td>\n    </tr>\n    <tr>\n      <td>KH1</td>\n      <td>Hill constant of CaMKII (Ca2+ ) activation)</td>\n      <td>0.7\u00a0\u00b5M</td>\n      <td>(De Koninck and Schulman, 1998)</td>\n    </tr>\n    <tr>\n      <td>nH1</td>\n      <td>Hill constant of CaMKII (Ca2+ ) activation)</td>\n      <td>3</td>\n      <td>(Stemmer and Klee, 1994)</td>\n    </tr>\n    <tr>\n      <td>KH2</td>\n      <td>Hill constant of CaMKII (Ca2+ ) activation)</td>\n      <td>0.3\u00a0\u00b5M</td>\n      <td>(Stemmer and Klee, 1994)</td>\n    </tr>\n    <tr>\n      <td>nH2</td>\n      <td>Hill constant of CaMKII (Ca2+ ) activation)</td>\n      <td>3</td>\n      <td>(Stemmer and Klee, 1994)</td>\n    </tr>\n    <tr>\n      <td>k1</td>\n      <td>The catalytic constant of autophospho-rylation</td>\n      <td>1.5\u00a0s-1</td>\n      <td>(Hanson et al., 1994)</td>\n    </tr>\n    <tr>\n      <td>k2</td>\n      <td>The catalytic constant of autophospho-rylation</td>\n      <td>1\u00a0s-1</td>\n      <td>(Bradshaw et al., 2003; Ichikawa et al., 1996)</td>\n    </tr>\n    <tr>\n      <td>k3</td>\n      <td>The association rate constant of PP1.I1P complex</td>\n      <td>100\u00a0\u00b5M-1s-1</td>\n      <td>(Endo et al., 1996; Miller et al., 2005)</td>\n    </tr>\n    <tr>\n      <td>k4</td>\n      <td>The dissociation rate constant of PP1.I1P complex</td>\n      <td>0.1\u00a0s-1</td>\n      <td>(Endo et al., 1996; Miller et al., 2005)</td>\n    </tr>\n    <tr>\n      <td>kx+</td>\n      <td>The rate of adding unphosphorylated subunit x</td>\n      <td>1\u00a0s-1\u00a0per\u00a0NCaMKII</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>ky+</td>\n      <td>The rate of adding phosphorylated sub- unit y</td>\n      <td>1\u00a0s-1\u00a0per\u00a0NCaMKII</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>kx-</td>\n      <td>The rate of losing unphosphorylated subunit x</td>\n      <td>0.1\u00a0s-1</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>ky-</td>\n      <td>The rate of losing phosphorylated sub- unit y</td>\n      <td>0.1\u00a0s-1</td>\n      <td>This paper</td>\n    </tr>\n    <tr>\n      <td>vt</td>\n      <td>Turnover rate of CaMKII</td>\n      <td>30\u00a0h-1</td>\n      <td>(Ehlers, 2003; Miller et al., 2005)</td>\n    </tr>\n    <tr>\n      <td>DPP1</td>\n      <td>Diffusion coefficient of PP1</td>\n      <td>0.5\u00a0\u00b5m2\u00a0s\u22121</td>\n      <td>This paper and (Harvey et al., 2008)</td>\n    </tr>\n    <tr>\n      <td>Dsub</td>\n      <td>Diffusion coefficient of CaMKII subunits</td>\n      <td>10-5\u00a0\u2013\u00a010\u00b5m2\u00a0s\u22121</td>\n      <td>This paper</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "275c6a2e-760b-407a-9055-e7887fa64279",
+      "submission_id": "5132f8fd-f39f-4af3-852a-ec307f6f4236",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leslie C Griffith, Brandeis University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41412.020](https://doi.org/10.7554/eLife.41412.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Subunit exchange enhances information retention by CaMKII in dendritic spines\" for consideration by eLife. Your article has been reviewed by Gary Westbrook as the Senior Editor, a Reviewing Editor, and two reviewers. The reviewers have opted to remain anonymous. The reviewers have discussed the reviews with one another and the Senior Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe main goal of the work is to assess the impact on the stability of CaMKII phosphorylation states (a proposed switch for memory storage) of CaMKII subunit exchange, both between holoenzymes within the postsynaptic density (PSD) and of such exchange between the PSD and the spine itself. The question is a relevant one on an important topic and the simulations appear to be carried out with due care using a reasonable model of the biochemical pathways involved.\n\nEssential revisions:\n\n1) In many places the results are demonstrated by simulation, but little intuition is provided as to why these results occur. For example, any differences in behavior of prior models should be explained in terms of a causal link between which parameters are altered, or which additional reactions are in place, and how they impact the prior models. Some of the results (increased stability) are to be expected, as exchange between holoenzymes allows the majority to rescue the state of any individual that has by chance fluctuated away from the preferred state. Such intuition should be stated clearly.\n\n2) One important, specific criticism is on the discussion of a dual decay rate of the CaMKII activation. Lack of fit to a single exponential does not provide evidence for a dual decay rate process, by which I think you mean a good fit to a double exponential. If you wish to make a positive statement about the type of decay process (rather than the currently justified negative statement-lack of fit to a single exponential) please fit with other functions and show the dual exponential is significantly better than other choices, using a criterion like AIC. Furthermore, in the Discussion section, you relate your non-exponential finding to a fractional power-law decay. However, I believe that both the dual-exponential and the fractional power-law functions decay more rapidly at short time-scales and more slowly at long time-scales than a single exponential. Yet your \"best fit\" exponential shows the error to be in the opposite direction. I think these discussions about power-laws and/or dual decay should be removed or reframed, unless a clear good fit to one of these other functions can be demonstrated.\n\n3) The impact statement is not quite accurate. The authors have not shown, as far as I can see, that subunit exchange generates diverse timescales of information storage (and to be honest, it is unclear what \"diverse timescales of information storage\" really means). First, the decay of activity may not be a dual exponential, and second, it is unclear that subunit exchange is essential to produce the types of decay observed, given the large number of parameters in the system.\n\n4) There were questions regarding the activation state of CaMKII and how some of the authors' parameters are defined. The most surprising result was that there is somehow an increase in \"active\" CaMKII (which one infers to mean Thr286 phosphorylated CaMKII) immediately in the presence of subunit exchange. When previously described, subunit exchange enhanced CaMKII activation at later times but did not affect early time points. To fully understand this, it is necessary for the authors to clearly define the following: (1) What is 'active' CaMKII, (2) what is the rate they are using for CaMKII activation (again assuming this to mean rate of Thr286phosphorylation) (3) What is the relationship between this initial rate of phosphorylation and subunit exchange. Some of this information is in the manuscript, but I think it needs to be more explicitly stated.\n\n5) Figure 1C, where did these values/frequencies arise from?\n\n6) Why was there no CaMKII activity in the absence of exchange (subsection \u201cSubunit exchange facilitates the spread of CaMKII activity\u201d)? Initial CaMKII activation should not be so affected by subunit exchange as this is actually faster than exchange itself.\n\n7) The data in Figure 4B and 4C -> what is the explanation for the discrepancy in the affect on activity at 2 subunit exchange rates between 4B and 4C? (i.e. there is a large effect at 80 nM ca but zero effect at 120 nM ca).\n\n8) Comments on the model: The assumption that both subunits within a vertical dimer are phosphorylated and dephosphorylated together is a large assumption \u2013 meaning that there is no direct evidence for this. I think this is OK to do, but it should be stated in the text as well.\n\n9) Phosphorylation of CaMKII is mentioned many times, but it's never specified that it is Thr286phosphorylation. This should be made clear.\n\n10) It is true that the rate of exchange in the cell is not known (subsection \u201cSubunit exchange\u201d). However, from in vitro experiments in Stratton et al., 2014; at ~4 \u03bcM CaMKII subunit concentration, the half-life of exchange is roughly 15 minutes. The rate was shown to increase at higher concentrations of CaMKII \u2013 so one could potentially extrapolate to the concentrations in the neuron (estimated to be roughly 100 \u03bcM in the spine).\n\n11) Are newly synthesized holoenzymes considered in the model?\n",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ef4482b3-e4c6-4681-bca8-1a050c1f8cdd",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C1",
+      "claim": "Molecular bistables are strong candidates for long-term information storage, for example, in synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular bistables are strong candidates for long-term information storage, for example, in synaptic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about molecular bistables supported by established scientific knowledge in the field of synaptic plasticity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "45114865-b9ff-419a-a3c7-da4fb04c0e09",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C2",
+      "claim": "Calcium/calmodulin-dependent protein Kinase II (CaMKII) is a highly expressed synaptic protein which has been proposed to form a molecular bistable switch capable of maintaining its state for years despite protein turnover and stochastic noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium/calmodulin-dependent protein Kinase II (CaMKII) is a highly expressed synaptic protein which has been proposed to form a molecular bistable switch capable of maintaining its state for years despite protein turnover and stochastic noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior theoretical and modeling work in the field, as indicated by the broader context of the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "8b16e3d5-7d4c-48b6-8777-eb52f57503c6",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C3",
+      "claim": "CaMKII holoenzymes exchange subunits among themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "It has recently been shown that CaMKII holoenzymes exchange subunits among themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recent experimental finding, implicitly referencing prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "1984cce2-ba4f-4298-8f52-b995c5297000",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C4",
+      "claim": "Subunit exchange enhances information retention by CaMKII both by improving the stability of its switching in the PSD, and by slowing the decay of its activity in the spine cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, subunit exchange enhances information retention by CaMKII both by improving the stability of its switching in the PSD, and by slowing the decay of its activity in the spine cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by computational simulations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "c192eb37-2673-488a-9da3-ee80d422b48c",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C5",
+      "claim": "CaMKII exhibits multiple timescales of activity due to subunit exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that CaMKII exhibits multiple timescales of activity due to subunit exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by computational modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "4cb2b1dd-efb6-409a-9bf4-efb41f209711",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C6",
+      "claim": "The existence of diverse timescales in the synapse has important theoretical implications for memory storage in networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of diverse timescales in the synapse has important theoretical implications for memory storage in networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation based on the findings of the study and existing theoretical frameworks.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "b3ffc793-f43f-44fa-8a63-59ba31687738",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C7",
+      "claim": "Memories are believed to be stored in synapses, encoded as changes in synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Memories are believed to be stored in synapses, encoded as changes in synaptic strength (Hebb, 2005; Takeuchi et al., 2014; Choi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature in neuroscience.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "93d205b3-2ef4-4f06-aa92-0df0b506f04d",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C8",
+      "claim": "Long-term potentiation (LTP), an activity-dependent change in synaptic strength, is considered to be the primary post-synaptic memory mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-term potentiation (LTP), an activity-dependent change in synaptic strength, is considered to be the primary post-synaptic memory mechanism (Bliss and Collingridge, 2013; Mayford et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "0cb44558-5835-4406-81cf-bea85da9913f",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C9",
+      "claim": "Various behavioral experiments strongly suggest a critical role for CaMKII in induction of LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Various behavioral experiments strongly suggest a critical role for CaMKII in induction of LTP (Lucchesi et al., 2011; Giese et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "20da4999-df08-4caa-9812-cc300afca030",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C10",
+      "claim": "In the CA1 region of the hippocampus, blocking CaMKII activity blocks the induction of LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CA1 region of the hippocampus, blocking CaMKII activity blocks the induction of LTP (Chang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "8bd8bac8-2e58-41ad-b402-8e388f4ac9c8",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C11",
+      "claim": "Recent evidence from behavioral assays suggests that CaMKII may also be involved in long-term maintenance of memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent evidence from behavioral assays suggests that CaMKII may also be involved in long-term maintenance of memory (Rossetti et al., 2017; but see Chang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent experimental studies, with a note of conflicting evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "83630e5d-2f63-450f-98c4-10963dce13fd",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C12",
+      "claim": "In the small volume of the synapse (\u223c0.02 \u00b5m3), the number of molecules involved in biochemical processes range from single digits to a few hundred, thereby increasing the effect of chemical noise.",
+      "claim_type": "EXPLICIT",
+      "source": "In the small volume of the synapse (\u223c0.02 \u00b5m3 [Bartol et al., 2015]), the number of molecules involved in biochemical processes range from single digits to a few hundred, thereby increasing the effect of chemical noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on synaptic volume and by inference about molecular numbers.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "711dfb8a-4415-470d-b8e9-08c770dbbc16",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C13",
+      "claim": "John Lisman proposed that a kinase and its phosphatase could form a bistable molecular switch able to maintain its state for a very long time despite turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "John Lisman proposed that a kinase and its phosphatase could form a bistable molecular switch able to maintain its state for a very long time despite turnover (Lisman, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lisman's theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "d40fc5c6-5f93-4dcc-b126-3537520826f2",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C14",
+      "claim": "It has been shown by various mathematical models that CaMKII and its phosphatase protein phosphatase 1 (PP1) may form a bistable switch which can retain its state for years despite stochastic chemical noise and protein turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown by various mathematical models that CaMKII and its phosphatase protein phosphatase 1 (PP1) may form a bistable switch (Zhabotinsky, 2000) which can retain its state for years despite stochastic chemical noise and protein turnover (Miller et al., 2005; Hayer and Bhalla, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to mathematical modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "3b488e72-60e5-423b-a525-a9c970adffe3",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C15",
+      "claim": "There is experimental evidence that CaMKII/PP1 is bistable in in vitro settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is experimental evidence that CaMKII/PP1 is bistable in in vitro settings (Bradshaw et al., 2003; Urakubo et al., 2014), experimental evidence for in vivo bistability is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "b12bf38a-b7af-45be-af4b-9b7f4ee9369a",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C16",
+      "claim": "Experimental evidence for in vivo bistability of CaMKII/PP1 is lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is experimental evidence that CaMKII/PP1 is bistable in in vitro settings (Bradshaw et al., 2003; Urakubo et al., 2014), experimental evidence for in vivo bistability is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the experimental literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "f19b80b8-4667-40db-9351-2017f3b58be9",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C17",
+      "claim": "In spine cytosol, CaMKII has been shown not to act like a bistable switch but rather a leaky integrator of calcium activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In spine cytosol, CaMKII has been shown not to act like a bistable switch but rather a leaky integrator of calcium activity (Chang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "95f1ae87-e424-4ae1-9083-12974cb77c4a",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C18",
+      "claim": "CaMKII may be bistable in special micro-environments such as the 'core' PSD where it attaches to the NMDA receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "However, CaMKII may be bistable in special micro-environments such as the 'core' PSD where it attaches to the NMDA receptor (Dosemeci et al., 2016; Petersen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on PSD microenvironments.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "b1dccff6-2504-4db0-96c5-da1aa2e5c93c",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C19",
+      "claim": "Previous modeling work has shown that the CaMKII/PP1 system may form a very stable switch despite protein turnover and stochastic noise in the small volume of the synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous modeling work has shown that the CaMKII/PP1 system may form a very stable switch despite protein turnover and stochastic noise in the small volume of the synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by references to prior modeling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "7dffbe0a-b921-4ee3-9934-79b44481c7b1",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C20",
+      "claim": "The stability of the CaMKII/PP1 switch increases exponentially with the number of holoenzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The stability increases exponentially with the number of holoenzymes (Miller et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a modeling study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "bf8ce289-e1de-4c17-8fd7-96fa04536adf",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C21",
+      "claim": "The CaMKII/PP1 model exhibits bistable behavior only in a narrow range of PP1 concentrations in the PSD.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that this model exhibits bistable behavior only in a narrow range of PP1 concentrations in the PSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the model described in prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "32efad50-e297-4cbd-a3e8-d69876bb8ec0",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C22",
+      "claim": "Phosphorylated CaMKII is protected from phosphatases in PSD except PP1.",
+      "claim_type": "EXPLICIT",
+      "source": "This strict restriction may be met because phosphorylated CaMKII is protected from phosphatases in PSD except PP1 (Strack et al., 1997a), which is tightly regulated in the PSD (Bollen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "d94241dc-e6a0-451f-acb6-01eb27b559b9",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C23",
+      "claim": "PP1 is tightly regulated in the PSD.",
+      "claim_type": "EXPLICIT",
+      "source": "This strict restriction may be met because phosphorylated CaMKII is protected from phosphatases in PSD except PP1 (Strack et al., 1997a), which is tightly regulated in the PSD (Bollen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a study on PP1 regulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "0240581b-8013-4022-9fb2-dfb740af33d8",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C24",
+      "claim": "Subunit exchange was hypothesized by Lisman but discovered only recently.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII has another remarkable property which was hypothesized by Lisman (Lisman, 1994) but discovered only recently, namely, subunit exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lisman's hypothesis and recent experimental discovery.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "cebd3d33-09f4-449b-851a-15c301942a08",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C25",
+      "claim": "In the subunit exchange process, two CaMKII holoenzymes can exchange active subunits leading to spread of CaMKII activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this process, two CaMKII holoenzymes can exchange active subunits leading to spread of CaMKII activation (Stratton et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "2d84ebcd-52a5-4b0b-a8a8-d931802a5872",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C26",
+      "claim": "The model without diffusion and without subunit exchange exhibited bistable behavior for CaMKII.",
+      "claim_type": "EXPLICIT",
+      "source": "Without diffusion and subunit exchange, CaMKII in our model is bistable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "f38ce687-45cf-4b6c-a29e-3a2773ed34a4",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C27",
+      "claim": "Switch stability (measured as average residence time in the stable states) increases exponentially with system size NCaMKII.",
+      "claim_type": "EXPLICIT",
+      "source": "Switch stability (measured as average residence time in the stable states) increases exponentially with system size NCaMKII.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "44d59d9e-fe9c-40de-833c-5887c4292a78",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C29",
+      "claim": "The fraction of time spent in intermediate states is much smaller when subunit exchange is enabled.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of time spent in intermediate states (dashed lines) is much smaller when subunit exchange is enabled (blue dashed line), that is the switching time is shorter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "0e965bd6-61b2-4d94-b117-a1038f197562",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C30",
+      "claim": "Due to subunit exchange, relaxation time becomes independent of NPP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to subunit exchange, relaxation time becomes independent of NPP1 (blue vs red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "be89554c-393e-479b-8376-a581c7d38271",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C31",
+      "claim": "Without subunit exchange, switch stability decreases steeply with turnover rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Without subunit exchange, switch stability decreases steeply with turnover rate (red); however, when subunit exchange is enabled, switch stability is not affected by turnover rates as high as 1 h-1 (blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "be84cae6-19d3-4039-87ca-d96f6beb0de6",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C32",
+      "claim": "When subunit exchange is enabled, switch stability is not affected by turnover rates as high as 1 h-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Without subunit exchange, switch stability decreases steeply with turnover rate (red); however, when subunit exchange is enabled, switch stability is not affected by turnover rates as high as 1 h-1 (blue).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "c67565d1-ab0f-46ba-9e25-ba7e18cf95ad",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C33",
+      "claim": "In the bistable regime, the number of switching events increases monotonically with turnover rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the bistable regime (solid lines), the number of switching events increases monotonically with turnover rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "c04b5921-5a72-4db0-a3f5-fad3179ff499",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C34",
+      "claim": "Subunit exchange facilitated the spread of CaMKII activation.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested in Stratton et al., 2014, we found that subunit exchange facilitated the spread of CaMKII activation (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 4 and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "e06668ad-1b3c-40f3-80aa-75e694869976",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C35",
+      "claim": "The effect of subunit exchange is greater (i.e. shorter rise times) at higher calcium levels for all values of Dsub.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of subunit exchange is greater (i.e. shorter rise times) at higher calcium levels for all values of Dsub.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "494595e7-e1aa-49d8-82d9-2c3a2a1e9259",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C36",
+      "claim": "Rise time is shorter for larger Dsub for all values of [Ca2+].",
+      "claim_type": "EXPLICIT",
+      "source": "Rise time is also shorter for larger Dsub for all values of [Ca2+].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "e478d2bb-2793-4e5a-8179-578c88b5d504",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C37",
+      "claim": "The time to onset of CaMKII activity is independent of Dsub and depends only on [Ca2+].",
+      "claim_type": "EXPLICIT",
+      "source": "The time to onset of CaMKII activity is independent of Dsub and depends only on [Ca2+].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "4c9b8317-6871-43ad-af7a-09e360484781",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C38",
+      "claim": "Subunit exchange does not play a significant role at the beginning of activation of CaMKII by Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Average time for the onset of activity decreased with increasing basal [Ca2+] levels but remained independent of Dsub suggesting that subunit exchange does not play a significant role at the beginning of activation of CaMKII by Ca2+.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from simulation results shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "f79cd43a-8728-4f69-8a59-e2c91c9d03c0",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C40",
+      "claim": "The population of clustered CaMKII acted as a single bistable switch when subunit exchange was enabled.",
+      "claim_type": "EXPLICIT",
+      "source": "The population of clustered CaMKII acted as a single bistable switch (Figure 5B, blue plot).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "e3b226a4-43c3-4869-b742-c3de1fe38cfe",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C41",
+      "claim": "The synchronization effect was strong and robust to variation in Dsub.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was strong and robust to variation in Dsub.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "eb766e4a-738c-4855-9c4d-088b8828b8b6",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C42",
+      "claim": "Even for a very small value of Dsub = 0.01 \u00b5m2 s\u22121, strong synchronization was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for a very small value of Dsub = 0.01 \u00b5m2 s\u22121, we observed strong synchronization (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "1d352901-95a6-4d13-b33e-f734a72863c8",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C44",
+      "claim": "Subunit exchange may account for the observed dual decay rate of CaMKII phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we asked if subunit exchange might account for the complex time-course of CaMKII dynamics in spine as observed in recent experiments (Chang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis tested by simulations and comparison with experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "ed7c6d6a-416c-4d21-a33a-43331792b977",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C45",
+      "claim": "Enabling diffusion of CaMKII subunits and PP1 decreased the rate of dephosphorylation roughly by a factor of 5.",
+      "claim_type": "EXPLICIT",
+      "source": "We then enabled the diffusion of CaMKII subunits (Dsub = 1 \u00b5m2 s\u22121) and PP1 (DPP1 = 0.5 \u00b5m2 s\u22121). These conditions decreased the rate of dephosphorylation roughly by a factor of 5 (41.65 s vs. 200.82 s) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulation results shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "baa66f77-b2b4-4cff-9ab5-f936dbcabb05",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C46",
+      "claim": "A mixed population of clustered and non-clustered CaMKII should decay with two time-constants.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore a mixed population of clustered and non-clustered CaMKII should decay with two time-constants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "e5b3afeb-3524-4ab4-bd98-445140dcee11",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C47",
+      "claim": "The time-constants obtained from simulations (8.4 s, 86.2 s) matched well with experimentally estimated time-constants of (6.4 s \u00b1 0.7, 92.6 s \u00b1 50.7).",
+      "claim_type": "EXPLICIT",
+      "source": "The time-constants obtained (8.4 s, 86.2 s) matched well with experimentally estimated time-constants of (6.4 s \u00b1 0.7, 92.6 s \u00b1 50.7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparison of simulation results with experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "74cf7736-3219-4095-aa15-f32e80e53ef4",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C49",
+      "claim": "Subunit exchange strongly affects the properties of the CaMKII/PP1 pathway, both in its role as a bistable switch in the PSD and as a leaky integrator of Ca2+ activity in spine cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that subunit exchange strongly affects the properties of the CaMKII/PP1 pathway, both in its role as a bistable switch in the PSD and as a leaky integrator of Ca2+ activity in spine cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "468746c4-e461-4055-9b8d-15af6f5b809e",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C50",
+      "claim": "In the PSD, subunit exchange improved the stability of the CaMKII/PP1 switch by synchronizing the kinase activity across the PSD.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PSD, where the model was tuned to elicit bistable dynamics from clustered CaMKII, subunit exchange improved the stability of the CaMKII/PP1 switch by synchronizing the kinase activity across the PSD (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on simulation results shown in Figure 6 (likely referring to Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "022cecf9-e649-4356-86c1-56cbfd0b59a0",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C51",
+      "claim": "Subunit exchange improved active CaMKII tolerance of PP1, and of turnover rate.",
+      "claim_type": "EXPLICIT",
+      "source": "It also improved active CaMKII tolerance of PP1, and of turnover rate (Figure 2 and Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on simulation results shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "c83e7f9f-3579-4b8c-95b1-a560e70d637d",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C52",
+      "claim": "In the case where CaMKII was uniformly distributed in PSD, subunit exchange facilitated more rapid activation of CaMKII.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case where CaMKII was uniformly distributed in PSD, subunit exchange facilitated more rapid activation of CaMKII (Figure 4B\u2013D) (Stratton et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on simulation results shown in Figure 4 and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "d8f1fa2f-0dd8-457b-8414-e5264174fca8",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C53",
+      "claim": "A CaMKII mutant lacking subunit exchange would be deficient in switch stability and slower to be activated by Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulation results predict that a CaMKII mutant lacking subunit exchange would be deficient in switch stability and slower to be activated by Ca2+, thereby resulting in degraded memory retention and deficient learning in memory-related behavioral experiments, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the simulation results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "e643aa06-0689-41f2-96fa-627b55c10498",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C54",
+      "claim": "In the spine head, subunit exchange facilitated integration by prolonging the decay time-course of kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the spine head, subunit exchange facilitated integration by prolonging the decay time-course of kinase activity (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on simulation results shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "30b646c8-563d-4dba-8791-e5befa74a092",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C55",
+      "claim": "CaMKII dynamics changed from an integrator to bistable switch as we moved from spine cytosol to the PSD.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that CaMKII dynamics changed from an integrator to bistable switch as we moved from spine cytosol (a phosphatase rich environment) to the PSD (where PP1 is tightly controlled) suggests an interesting sub-compartmentalization of functions in these microdomains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "b975ce1f-5bed-477f-9423-2c235e418049",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C56",
+      "claim": "Clustering of CaMKII had important implications for its sustained activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we observed that the clustering of CaMKII had important implications for its sustained activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "b1f7fbd8-75ba-41f8-baf8-478c02c98fd7",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C57",
+      "claim": "Subunit exchange is unlikely to have any impact on neighbouring spines.",
+      "claim_type": "EXPLICIT",
+      "source": "Subunit exchange is unlikely to have any impact on neighbouring spines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculations of escape time and dephosphorylation rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "c2e5eb7d-6517-4cce-96dd-d887ee1d96f9",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C58",
+      "claim": "The mean escape time of a single CaMKII subunit from a typical spine is between 8 s to 33 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean escape time of a single CaMKII subunit from a typical spine is between 8 s to 33 s (Holcman and Schuss, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a theoretical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "0441b12f-930b-40a2-9738-8956647c2ceb",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C59",
+      "claim": "Any phosphorylated subunit is almost certain to be de-phosphorylated by PP1 during the escape time from the spine.",
+      "claim_type": "EXPLICIT",
+      "source": "Any phosphorylated subunit is almost certain to be de-phosphorylated by PP1 during this time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the escape time and known dephosphorylation rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "283456d9-4f5b-4dd9-bf58-c73581ea4a99",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C60",
+      "claim": "The effects of synchronization are local to each PSD, where PP1 is known to be tightly controlled.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore predict that the effects of synchronization are local to each PSD, where PP1 is known to be tightly controlled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the simulation results and known properties of the PSD.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "98b90e92-3be4-457d-821f-b55d2d42fa1a",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C61",
+      "claim": "Subunit exchange loses its potency in the phosphatase rich region of the bulk spine head or dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Subunit exchange loses its potency in the phosphatase rich region of the bulk spine head or dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the simulation results and known properties of different cellular compartments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "bf5116cd-9087-4ae7-927a-3416b9b9ba74",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C62",
+      "claim": "CaMKII subunit exchange is unlikely to play any role in intra-spine information exchange such as synaptic tagging.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore consider it unlikely that CaMKII subunit exchange plays any role in intra-spine information exchange such as synaptic tagging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analysis of escape times and dephosphorylation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "3d121a47-6681-43c1-8b58-3f821d7c65fc",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C63",
+      "claim": "CaMKII is non-uniformly distributed in the PSD where it is mostly concentrated in a small region of 16 nm to 36 nm below the synaptic cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "CaMKII is non-uniformly distributed in the PSD where it is mostly concentrated in a small region of 16 nm to 36 nm below the synaptic cleft (Petersen et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to an experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "bd3fc81e-a849-4607-919a-b76e646b1fde",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C64",
+      "claim": "In the PSD, CaMKII may exist in large clusters given that the PSD is rich in CaMKII binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PSD, CaMKII may exist in large clusters given that the PSD is rich in CaMKII binding partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known properties of the PSD.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "983e1189-6add-404a-b14e-6d3e6ee140b2",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C65",
+      "claim": "Subunit exchange may lead to synchronization when CaMKII is clustered, or more rapid activation by Ca2+ when it is uniformly distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study predicts that subunit exchange may lead to synchronization when CaMKII is clustered, or more rapid activation by Ca2+ when it is uniformly distributed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "2671c638-cba1-46db-9119-90fd6c23e0b0",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C66",
+      "claim": "The existence of diverse time-scales of CaMKII activity has important theoretical implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we suggest that the existence of diverse time-scales of CaMKII activity \u2013 bistable and highly stable synchronized bistable in PSD, slow and fast decaying leaky integrator in spine head (Table 1) \u2013 has important theoretical implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "f4adec4d-f418-4bfe-bbcd-250fb8534156",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C67",
+      "claim": "A theoretical meta-model which sought to strike a balance between learning and memory retention requires that a diversity of timescales must exist at the synapse for optimum performance.",
+      "claim_type": "EXPLICIT",
+      "source": "A theoretical meta-model which sought to strike a balance between these two competing demands requires that a diversity of timescales must exist at the synapse (Benna and Fusi, 2016) for optimum performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a theoretical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "9b5a8fe8-7a03-45db-86e6-deacd1c01955",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C69",
+      "claim": "The Benna and Fusi model requires the memory trace to be first stored in a fast variable and then progressively and efficiently transferred to slower variables.",
+      "claim_type": "EXPLICIT",
+      "source": "This model requires the memory trace to be first stored in a fast variable and then progressively and efficiently transferred to slower variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the requirements of the theoretical model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "9f415aea-b581-48aa-b30b-7caa9a7d5505",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C70",
+      "claim": "The study suggests a concrete mechanism for progressive transfer of memory traces from fast to slow variables.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests a concrete mechanism for such a process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation connecting the study's findings to existing theory.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "cd309041-72b2-4347-93f0-cff560154d7d",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C71",
+      "claim": "The Ca2+ concentration in the PSD can be mapped to the fastest variable in the memory storage model.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the Ca2+ concentration in the PSD can be mapped to the fastest variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "b6f2680e-af16-47bb-b88b-e10b70583573",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C72",
+      "claim": "The CaMKII integrator in the cytosol could represent the second slower variable to which the trace is transferred from Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The CaMKII integrator in the cytosol could represent the second slower variable to which the trace is transferred from Ca2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "ef670b61-fd5f-4b8c-b0ae-ebd41d37d8f1",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C73",
+      "claim": "The state information is transferred to the third slower CaMKII bistable switch.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the state information is transferred to the third slower CaMKII bistable switch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "7e9c72f0-3fdf-424b-a537-2528c87e4de6",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C74",
+      "claim": "The dynamics of CaMKII in the PSD forms an even slower bistable variable for longer retention of the memory trace.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamics of CaMKII in the PSD forms an even slower bistable variable for longer retention of the memory trace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "83eaa4e0-5d56-4295-82c0-177c899307cc",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C76",
+      "claim": "The model treats the CaMKII ring as a proxy for the CaMKII holoenzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "We treat the CaMKII ring as a proxy for the CaMKII holoenzyme, which consists of two such rings stacked over each other (Woodgett et al., 1983; Hoelz et al., 2003; Chao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "cdf72173-c71d-4ec3-84b8-c209d9eb5322",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C77",
+      "claim": "Active CaMKII is defined as a holoenzyme (ring of six or seven subunits) in which at least two subunits are phosphorylated at Thr286.",
+      "claim_type": "EXPLICIT",
+      "source": "We define Active CaMKII as a holoenzyme (ring of six or seven subunits) in which at least two subunits are phosphorylated at Thr286.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition used in the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "fae70f47-06ba-4c61-bf56-9edbfc1df727",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C78",
+      "claim": "In the model, CaMKII exists in 15 possible states compared to two in the MZ model.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, CaMKII exists in 15 possible states compared to two in the MZ model (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "9ad1745b-ec9c-415f-832d-284ecce3dc12",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C79",
+      "claim": "The model replaced the Michaelis-Menten approximation in the MZ model by equivalent mass-action kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "We also replaced the Michaelis-Menten approximation in the MZ model by equivalent mass-action kinetics (e.g. Equation 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a modeling choice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "dcc29ab2-0496-49bb-a11f-6fd18ca564d7",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C80",
+      "claim": "The resting Ca2+ level in spine is 80 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "We assumed the resting Ca2+ level in spine to be 80 nM (Berridge, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "da30285c-97cc-454a-81a8-e09b57c772b5",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C82",
+      "claim": "All simulations were performed using the stochastic solver based on the Gillespie method, in the MOOSE simulator.",
+      "claim_type": "EXPLICIT",
+      "source": "All simulations were performed using the stochastic solver based on the Gillespie method, in the MOOSE simulator (https://moose.ncbs.res.in, version 3.1.4; Ray and Bhalla, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "2abf7325-b56b-4b73-9001-f3e388834f92",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C83",
+      "claim": "The discretized system converges to reference bistable for DPP1 \u2265 0.5\u00b5m2s-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The discretized system converges to reference bistable for DPP1 \u2265 0.5\u00b5m2s-1 (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by validation results shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "33044a91-d6a6-4d35-a286-05ce1f6caf80",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "claim_id": "C84",
+      "claim": "The long-term behavior of discretized system was most sensitive to DPP1 and almost independent of Dsub.",
+      "claim_type": "EXPLICIT",
+      "source": "The long-term behavior of discretized system was most sensitive to DPP1 (Figure 8B) and almost independent of Dsub (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by validation results shown in Figures 8A and 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a3940ca0-09d2-45cc-bb84-1147098c37d1",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and validated a computational model of CaMKII/PP1 bistability that extends the Miller-Zhabotinsky (MZ) model by incorporating 15 CaMKII states (vs. 2 in MZ), mass-action kinetics instead of Michaelis-Menten approximations, and explicit subunit-level dynamics. The model reproduces key properties of the MZ model: bistable switching behavior and exponential increase in switch stability with system size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 demonstrate that the baseline model (without subunit exchange or diffusion) exhibits the expected bistable behavior and exponential scaling of stability with NCaMKII, consistent with prior work. The model structure (C76-C80, C82) is clearly described with appropriate assumptions and citations. Validation against the MZ model establishes credibility for subsequent analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "36684cf1-36c7-489e-8622-b7a0436d7702",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Subunit exchange increases the tolerance of the CaMKII bistable switch to PP1 phosphatase levels. With subunit exchange enabled, the switch remains bistable over a broader range of PP1 concentrations (12\u00d7-16\u00d7 NCaMKII vs. 3\u00d7-8\u00d7 NCaMKII without exchange), relaxation time becomes independent of PP1 levels, and time spent in intermediate states is reduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are directly supported by simulation data in Figure 2B-C showing quantitative differences in PP1 tolerance and relaxation dynamics. The mechanism is plausible: subunit exchange provides a compensatory re-phosphorylation pathway that counteracts PP1 dephosphorylation. The results are internally consistent and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "01b6d4a7-7884-4f2a-862f-00349f1d6f03",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Subunit exchange dramatically improves the robustness of the CaMKII bistable switch to protein turnover. Without subunit exchange, switch stability decreases steeply with turnover rate, but with subunit exchange enabled, stability remains constant up to turnover rates of 1 h\u207b\u00b9 (a ~10-fold increase in tolerance).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are supported by simulation results in Figure 3C showing clear quantitative differences in turnover tolerance. The mechanism is consistent with the compensatory role of subunit exchange. However, the model does not explore whether the estimated subunit exchange rates are physiologically realistic at such high turnover rates, which introduces some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "811c850a-afba-4aca-91e7-bad3f4a446f7",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Subunit exchange facilitates the spatial spread of CaMKII activation in the PSD when CaMKII is uniformly distributed. The effect is calcium-dependent and diffusion coefficient-dependent (shorter rise times at higher Ca\u00b2\u207a and larger Dsub), but subunit exchange does not affect the initial onset of activation (0-10% rise time), which depends only on Ca\u00b2\u207a levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by systematic simulations shown in Figure 4 exploring the parameter space of Dsub and [Ca\u00b2\u207a]. The finding that onset time is independent of Dsub (C37-C38) provides an important mechanistic distinction. The results are consistent with the known slow first step of CaMKII phosphorylation requiring simultaneous Ca\u00b2\u207a/CaM binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "db37674b-6085-4906-95f8-3043a9a3010c",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Subunit exchange synchronizes the switching activity of spatially clustered CaMKII populations, causing them to act as a single bistable switch rather than independent switches. This synchronization is robust to variation in Dsub (effective even at Dsub = 0.01 \u03bcm\u00b2 s\u207b\u00b9) and effective for inter-cluster distances up to 100 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by simulations in Figure 5 showing the transition from binomial (independent) to synchronized (single switch) behavior. The robustness analysis (Figure 5D) demonstrates the effect persists over a wide parameter range. This is a novel and important prediction about collective CaMKII dynamics in the PSD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "f89ba69f-ddd6-4ae8-8cbb-2d287c87f5cb",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Subunit exchange can account for the experimentally observed dual-exponential decay of CaMKII activity in dendritic spines. Simulations show that a mixed population of clustered (slow-decaying due to subunit exchange) and non-clustered (fast-decaying) CaMKII produces time constants (8.4 s, 86.2 s) that match experimental measurements (6.4 \u00b1 0.7 s, 92.6 \u00b1 50.7 s) from Chang et al. 2017.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by simulations in Figure 6 that directly model the experimental conditions and show good quantitative agreement with experimental data. The proposed mechanism (mixed populations with different decay rates) is plausible and testable. However, the model assumes the population fractions (74%/26%) from the experimental fit rather than deriving them, which is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "7869be03-f9b5-4dda-a5f7-e58ee05793a1",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Subunit exchange enhances information retention by CaMKII through two mechanisms: improving bistable switch stability in the PSD and slowing activity decay in spine cytosol. This generates multiple timescales of CaMKII activity ranging from seconds to years depending on cellular compartment and clustering state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C49 are high-level summaries supported by the collective evidence from multiple simulation results (Figures 2-6). The dual role of subunit exchange in different compartments is well-established by the preceding results. This represents the central finding of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "081b0522-6cc3-42b3-a99c-8d7598e5a341",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The effects of subunit exchange on CaMKII synchronization are predicted to be local to individual PSDs and unlikely to affect neighboring spines. This is based on calculations showing that the mean escape time of CaMKII subunits from spines (8-33 s) is sufficient for dephosphorylation by PP1, and that subunit exchange loses effectiveness in phosphatase-rich environments outside the PSD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 are supported by theoretical calculations of escape times (C58, citing Holcman and Schuss 2011) and inference from known dephosphorylation rates and phosphatase distributions. The reasoning is sound and consistent with the model's assumptions about compartment-specific PP1 regulation. This addresses an important question about the spatial scale of subunit exchange effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "e02f41cc-c6ca-45c4-b8d2-32aeab51c166",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The diverse timescales of CaMKII activity generated by subunit exchange (fast Ca\u00b2\u207a, intermediate cytosolic integrator, slow PSD bistable, very slow synchronized bistable) provide a concrete molecular mechanism for the theoretical requirement of multiple timescales in synaptic memory storage, as proposed by Benna and Fusi (2016). The authors map these CaMKII states onto the cascade of variables required for optimal memory storage with power-law decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C74 make an interesting theoretical connection between the simulation results and the Benna-Fusi framework. However, this remains speculative (C70 is explicitly labeled as inference). The mapping is conceptual rather than quantitative\u2014the authors do not demonstrate that their CaMKII dynamics actually produce the required transfer kinetics or power-law memory decay. This would require additional modeling to verify.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "fd94591d-984f-4531-9304-5521c74d6556",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model predicts that CaMKII mutants lacking subunit exchange would show deficient switch stability, slower Ca\u00b2\u207a activation, and impaired memory retention and learning in behavioral experiments. The specific effects would depend on whether CaMKII is clustered (synchronization deficits) or uniformly distributed (activation speed deficits) in the PSD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53 and C65 are explicit predictions based on the simulation results. These are testable hypotheses that follow logically from the demonstrated effects of subunit exchange. However, they remain predictions that require experimental validation. The predictions are clearly stated and appropriately qualified as speculative (C53 evidence includes SPECULATION).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "5f6fda4b-ec38-4a21-abfd-6f53158fe2e2",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The discretized spatial model converges to the reference well-mixed bistable system for DPP1 \u2265 0.5 \u03bcm\u00b2 s\u207b\u00b9, validating the implementation of diffusion as cross-voxel jump reactions. The convergence is most sensitive to DPP1 and nearly independent of Dsub.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 are supported by validation simulations in Figure 8 using Kullback-Leibler divergence to quantify convergence. This methodological validation is important for establishing confidence in the spatial simulations. The choice of DPP1 = 0.5 \u03bcm\u00b2 s\u207b\u00b9 for most simulations is justified by this analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "6d72193e-3aea-4441-8747-f03f370d7cbb",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes the biological context for CaMKII as a candidate bistable switch for synaptic memory storage, reviewing prior theoretical and experimental work on CaMKII/PP1 bistability, the role of CaMKII in LTP, the challenges of noise and turnover in small synaptic volumes, and the recent discovery of subunit exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C25 are background claims supported by appropriate citations to established literature. These provide necessary context but do not represent novel findings of this study. The authors accurately represent prior work, including noting conflicting evidence (C11, C16) and gaps in experimental validation (C16).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    },
+    {
+      "id": "21b6759d-1069-4bb9-977b-7db65a651538",
+      "content_id": "75bd4d29-1803-4e13-af44-d408e141642d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CaMKII dynamics transition from leaky integrator behavior in the phosphatase-rich spine cytosol to bistable switch behavior in the PSD where PP1 is tightly controlled, suggesting functional sub-compartmentalization. CaMKII clustering has important implications for sustained activity, and CaMKII is known to be non-uniformly distributed in the PSD (concentrated 16-36 nm below the synaptic cleft).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are interpretations of the simulation results supported by the data showing different behaviors in different compartments. Claims C63-C64 cite experimental evidence (Petersen et al. 2003) and make reasonable inferences about clustering based on known PSD properties. The compartmentalization concept is well-supported and provides important biological context for the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:02:49.905957Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2d84ebcd-52a5-4b0b-a8a8-d931802a5872",
+      "result_id": "a3940ca0-09d2-45cc-bb84-1147098c37d1"
+    },
+    {
+      "claim_id": "f38ce687-45cf-4b6c-a29e-3a2773ed34a4",
+      "result_id": "a3940ca0-09d2-45cc-bb84-1147098c37d1"
+    },
+    {
+      "claim_id": "fae70f47-06ba-4c61-bf56-9edbfc1df727",
+      "result_id": "a3940ca0-09d2-45cc-bb84-1147098c37d1"
+    },
+    {
+      "claim_id": "9ad1745b-ec9c-415f-832d-284ecce3dc12",
+      "result_id": "a3940ca0-09d2-45cc-bb84-1147098c37d1"
+    },
+    {
+      "claim_id": "83eaa4e0-5d56-4295-82c0-177c899307cc",
+      "result_id": "a3940ca0-09d2-45cc-bb84-1147098c37d1"
+    },
+    {
+      "claim_id": "cdf72173-c71d-4ec3-84b8-c209d9eb5322",
+      "result_id": "a3940ca0-09d2-45cc-bb84-1147098c37d1"
+    },
+    {
+      "claim_id": "dcc29ab2-0496-49bb-a11f-6fd18ca564d7",
+      "result_id": "a3940ca0-09d2-45cc-bb84-1147098c37d1"
+    },
+    {
+      "claim_id": "da30285c-97cc-454a-81a8-e09b57c772b5",
+      "result_id": "a3940ca0-09d2-45cc-bb84-1147098c37d1"
+    },
+    {
+      "claim_id": "44d59d9e-fe9c-40de-833c-5887c4292a78",
+      "result_id": "36684cf1-36c7-489e-8622-b7a0436d7702"
+    },
+    {
+      "claim_id": "0e965bd6-61b2-4d94-b117-a1038f197562",
+      "result_id": "36684cf1-36c7-489e-8622-b7a0436d7702"
+    },
+    {
+      "claim_id": "022cecf9-e649-4356-86c1-56cbfd0b59a0",
+      "result_id": "36684cf1-36c7-489e-8622-b7a0436d7702"
+    },
+    {
+      "claim_id": "be89554c-393e-479b-8376-a581c7d38271",
+      "result_id": "01b6d4a7-7884-4f2a-862f-00349f1d6f03"
+    },
+    {
+      "claim_id": "be84cae6-19d3-4039-87ca-d96f6beb0de6",
+      "result_id": "01b6d4a7-7884-4f2a-862f-00349f1d6f03"
+    },
+    {
+      "claim_id": "c67565d1-ab0f-46ba-9e25-ba7e18cf95ad",
+      "result_id": "01b6d4a7-7884-4f2a-862f-00349f1d6f03"
+    },
+    {
+      "claim_id": "022cecf9-e649-4356-86c1-56cbfd0b59a0",
+      "result_id": "01b6d4a7-7884-4f2a-862f-00349f1d6f03"
+    },
+    {
+      "claim_id": "c04b5921-5a72-4db0-a3f5-fad3179ff499",
+      "result_id": "811c850a-afba-4aca-91e7-bad3f4a446f7"
+    },
+    {
+      "claim_id": "e06668ad-1b3c-40f3-80aa-75e694869976",
+      "result_id": "811c850a-afba-4aca-91e7-bad3f4a446f7"
+    },
+    {
+      "claim_id": "494595e7-e1aa-49d8-82d9-2c3a2a1e9259",
+      "result_id": "811c850a-afba-4aca-91e7-bad3f4a446f7"
+    },
+    {
+      "claim_id": "e478d2bb-2793-4e5a-8179-578c88b5d504",
+      "result_id": "811c850a-afba-4aca-91e7-bad3f4a446f7"
+    },
+    {
+      "claim_id": "4c9b8317-6871-43ad-af7a-09e360484781",
+      "result_id": "811c850a-afba-4aca-91e7-bad3f4a446f7"
+    },
+    {
+      "claim_id": "c83e7f9f-3579-4b8c-95b1-a560e70d637d",
+      "result_id": "811c850a-afba-4aca-91e7-bad3f4a446f7"
+    },
+    {
+      "claim_id": "f79cd43a-8728-4f69-8a59-e2c91c9d03c0",
+      "result_id": "db37674b-6085-4906-95f8-3043a9a3010c"
+    },
+    {
+      "claim_id": "e3b226a4-43c3-4869-b742-c3de1fe38cfe",
+      "result_id": "db37674b-6085-4906-95f8-3043a9a3010c"
+    },
+    {
+      "claim_id": "eb766e4a-738c-4855-9c4d-088b8828b8b6",
+      "result_id": "db37674b-6085-4906-95f8-3043a9a3010c"
+    },
+    {
+      "claim_id": "468746c4-e461-4055-9b8d-15af6f5b809e",
+      "result_id": "db37674b-6085-4906-95f8-3043a9a3010c"
+    },
+    {
+      "claim_id": "1d352901-95a6-4d13-b33e-f734a72863c8",
+      "result_id": "f89ba69f-ddd6-4ae8-8cbb-2d287c87f5cb"
+    },
+    {
+      "claim_id": "ed7c6d6a-416c-4d21-a33a-43331792b977",
+      "result_id": "f89ba69f-ddd6-4ae8-8cbb-2d287c87f5cb"
+    },
+    {
+      "claim_id": "baa66f77-b2b4-4cff-9ab5-f936dbcabb05",
+      "result_id": "f89ba69f-ddd6-4ae8-8cbb-2d287c87f5cb"
+    },
+    {
+      "claim_id": "e5b3afeb-3524-4ab4-bd98-445140dcee11",
+      "result_id": "f89ba69f-ddd6-4ae8-8cbb-2d287c87f5cb"
+    },
+    {
+      "claim_id": "e643aa06-0689-41f2-96fa-627b55c10498",
+      "result_id": "f89ba69f-ddd6-4ae8-8cbb-2d287c87f5cb"
+    },
+    {
+      "claim_id": "1984cce2-ba4f-4298-8f52-b995c5297000",
+      "result_id": "7869be03-f9b5-4dda-a5f7-e58ee05793a1"
+    },
+    {
+      "claim_id": "c192eb37-2673-488a-9da3-ee80d422b48c",
+      "result_id": "7869be03-f9b5-4dda-a5f7-e58ee05793a1"
+    },
+    {
+      "claim_id": "74cf7736-3219-4095-aa15-f32e80e53ef4",
+      "result_id": "7869be03-f9b5-4dda-a5f7-e58ee05793a1"
+    },
+    {
+      "claim_id": "b1f7fbd8-75ba-41f8-baf8-478c02c98fd7",
+      "result_id": "081b0522-6cc3-42b3-a99c-8d7598e5a341"
+    },
+    {
+      "claim_id": "c2e5eb7d-6517-4cce-96dd-d887ee1d96f9",
+      "result_id": "081b0522-6cc3-42b3-a99c-8d7598e5a341"
+    },
+    {
+      "claim_id": "0441b12f-930b-40a2-9738-8956647c2ceb",
+      "result_id": "081b0522-6cc3-42b3-a99c-8d7598e5a341"
+    },
+    {
+      "claim_id": "283456d9-4f5b-4dd9-bf58-c73581ea4a99",
+      "result_id": "081b0522-6cc3-42b3-a99c-8d7598e5a341"
+    },
+    {
+      "claim_id": "98b90e92-3be4-457d-821f-b55d2d42fa1a",
+      "result_id": "081b0522-6cc3-42b3-a99c-8d7598e5a341"
+    },
+    {
+      "claim_id": "bf5116cd-9087-4ae7-927a-3416b9b9ba74",
+      "result_id": "081b0522-6cc3-42b3-a99c-8d7598e5a341"
+    },
+    {
+      "claim_id": "4cb2b1dd-efb6-409a-9bf4-efb41f209711",
+      "result_id": "e02f41cc-c6ca-45c4-b8d2-32aeab51c166"
+    },
+    {
+      "claim_id": "2671c638-cba1-46db-9119-90fd6c23e0b0",
+      "result_id": "e02f41cc-c6ca-45c4-b8d2-32aeab51c166"
+    },
+    {
+      "claim_id": "f4adec4d-f418-4bfe-bbcd-250fb8534156",
+      "result_id": "e02f41cc-c6ca-45c4-b8d2-32aeab51c166"
+    },
+    {
+      "claim_id": "9b5a8fe8-7a03-45db-86e6-deacd1c01955",
+      "result_id": "e02f41cc-c6ca-45c4-b8d2-32aeab51c166"
+    },
+    {
+      "claim_id": "9f415aea-b581-48aa-b30b-7caa9a7d5505",
+      "result_id": "e02f41cc-c6ca-45c4-b8d2-32aeab51c166"
+    },
+    {
+      "claim_id": "cd309041-72b2-4347-93f0-cff560154d7d",
+      "result_id": "e02f41cc-c6ca-45c4-b8d2-32aeab51c166"
+    },
+    {
+      "claim_id": "b6f2680e-af16-47bb-b88b-e10b70583573",
+      "result_id": "e02f41cc-c6ca-45c4-b8d2-32aeab51c166"
+    },
+    {
+      "claim_id": "ef670b61-fd5f-4b8c-b0ae-ebd41d37d8f1",
+      "result_id": "e02f41cc-c6ca-45c4-b8d2-32aeab51c166"
+    },
+    {
+      "claim_id": "7e9c72f0-3fdf-424b-a537-2528c87e4de6",
+      "result_id": "e02f41cc-c6ca-45c4-b8d2-32aeab51c166"
+    },
+    {
+      "claim_id": "d8f1fa2f-0dd8-457b-8414-e5264174fca8",
+      "result_id": "fd94591d-984f-4531-9304-5521c74d6556"
+    },
+    {
+      "claim_id": "983e1189-6add-404a-b14e-6d3e6ee140b2",
+      "result_id": "fd94591d-984f-4531-9304-5521c74d6556"
+    },
+    {
+      "claim_id": "2abf7325-b56b-4b73-9001-f3e388834f92",
+      "result_id": "5f6fda4b-ec38-4a21-abfd-6f53158fe2e2"
+    },
+    {
+      "claim_id": "33044a91-d6a6-4d35-a286-05ce1f6caf80",
+      "result_id": "5f6fda4b-ec38-4a21-abfd-6f53158fe2e2"
+    },
+    {
+      "claim_id": "ef4482b3-e4c6-4681-bca8-1a050c1f8cdd",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "45114865-b9ff-419a-a3c7-da4fb04c0e09",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "b3ffc793-f43f-44fa-8a63-59ba31687738",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "93d205b3-2ef4-4f06-aa92-0df0b506f04d",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "0cb44558-5835-4406-81cf-bea85da9913f",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "20da4999-df08-4caa-9812-cc300afca030",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "8bd8bac8-2e58-41ad-b402-8e388f4ac9c8",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "83630e5d-2f63-450f-98c4-10963dce13fd",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "711dfb8a-4415-470d-b8e9-08c770dbbc16",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "d40fc5c6-5f93-4dcc-b126-3537520826f2",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "3b488e72-60e5-423b-a525-a9c970adffe3",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "b12bf38a-b7af-45be-af4b-9b7f4ee9369a",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "f19b80b8-4667-40db-9351-2017f3b58be9",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "95f1ae87-e424-4ae1-9083-12974cb77c4a",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "b1dccff6-2504-4db0-96c5-da1aa2e5c93c",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "7dffbe0a-b921-4ee3-9934-79b44481c7b1",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "bf8ce289-e1de-4c17-8fd7-96fa04536adf",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "32efad50-e297-4cbd-a3e8-d69876bb8ec0",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "d94241dc-e6a0-451f-acb6-01eb27b559b9",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "0240581b-8013-4022-9fb2-dfb740af33d8",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "cebd3d33-09f4-449b-851a-15c301942a08",
+      "result_id": "6d72193e-3aea-4441-8747-f03f370d7cbb"
+    },
+    {
+      "claim_id": "30b646c8-563d-4dba-8791-e5befa74a092",
+      "result_id": "21b6759d-1069-4bb9-977b-7db65a651538"
+    },
+    {
+      "claim_id": "b975ce1f-5bed-477f-9423-2c235e418049",
+      "result_id": "21b6759d-1069-4bb9-977b-7db65a651538"
+    },
+    {
+      "claim_id": "3d121a47-6681-43c1-8b58-3f821d7c65fc",
+      "result_id": "21b6759d-1069-4bb9-977b-7db65a651538"
+    },
+    {
+      "claim_id": "bd3fc81e-a849-4607-919a-b76e646b1fde",
+      "result_id": "21b6759d-1069-4bb9-977b-7db65a651538"
+    }
+  ],
+  "comparisons": []
+}

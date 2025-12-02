@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Fluorescently labeled bMRP1 maintains wild-type ATPase activity, indicating that the FRET labeling strategy does not perturb protein function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 demonstrate that fluorescently labeled bMRP1 hydrolyzed ATP at rates virtually identical to unmodified WT protein (Figure 1B-C), providing strong validation that the labeling strategy preserves native kinetics. This is a critical control for the smFRET experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "MRP1 adopts five distinct FRET states corresponding to different conformational states, with ligand binding (ATP and LTC4) shifting the distribution toward higher FRET values indicative of NBD closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 describe systematic smFRET measurements showing a five-state model best describes MRP1 conformational dynamics (Figure 2A). The model selection is supported by ebFRET analysis (C22), comparison with four-state models (C24), and ligand-dependent shifts in FRET distributions (C18-C21). The data and model fitting are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The E=0.80 FRET state (IF1) corresponds to the LTC4-bound inward-facing conformation, as demonstrated by dose-dependent occupancy with an EC50 matching bulk ATPase measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 establish the structural assignment of the IF1 state through dose-response analysis (Figure 2B). The EC50 of 0.32 \u00b1 0.17 \u00b5M for LTC4 binding matches the EC50 from bulk ATPase assays (0.35 \u00b1 0.09 \u00b5M), providing strong corroboration between single-molecule and ensemble measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The E=0.92 FRET state corresponds to the ATP-bound outward-facing conformation, as evidenced by ATP-dependent occupancy and correlation with the E1454Q mutant structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 assign the OF state through ATP dose-response (C29, Figure 2C) and comparison with the hydrolysis-deficient E1454Q mutant (C30, Figure 2A). The E1454Q mutant predominantly occupies this state under conditions matching prior cryo-EM structural determination, providing strong structural correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "MRP1 exhibits multiple apo inward-facing states (IF2, IF3, IF4) reflecting conformational flexibility in the absence of ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 identify three lower FRET states as ligand-free IF conformations. This interpretation is supported by the broad FRET distribution in apo conditions (C17), literature on ABC transporter flexibility (C33), and prior cryo-EM observations of NBD mobility (C34). The assignment is reasonable though indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In the absence of ATP, MRP1 transitions among multiple IF states with ~1 s lifetimes, with LTC4 increasing IF1 lifetime by ~30% but ATP having no significant effect on IF state lifetimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 characterize IF state dynamics from smFRET trajectories (Figure 3). The measurements show clear transitions among IF states (C35), quantified lifetimes (C36), and differential effects of LTC4 vs ATP (C37-C38). The data support the substrate-bound assignment of IF1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Substrate (LTC4) accelerates the IF-to-OF transition by reducing both the wait time to the first OF state and the composite IF state lifetime, with transitions originating from both IF1 and IF2 states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 demonstrate substrate stimulation of the IF-to-OF transition through perturbation experiments (Figure 4). LTC4 reduces twait (C40) and tIF (C45) by ~2-3 fold, while ATP concentration also affects these parameters (C39, C44). The observation that OF transitions originate from both IF1 and IF2 (C42-C43) indicates IF1 is not obligatory, though this interpretation could benefit from additional kinetic modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ATP stabilizes the OF conformation, increasing OF state lifetime from a few seconds to >20 s, while LTC4 has minimal effect on OF-to-IF kinetics consistent with substrate release prior to hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 characterize OF state stability (Figure 5). The dramatic increase in OF lifetime with ATP (C47-C48) demonstrates ATP-dependent stabilization (C49). The minimal effect of LTC4 on OF kinetics (C50) is consistent with prior structural observations of substrate release (C51), providing mechanistic coherence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Under physiological ATP concentrations, the OF-to-IF transition is much slower than the IF-to-OF transition, suggesting MRP1 spends most time in the OF conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 compare tOF and tIF from Table 1 and Figure 4A, showing tOF >> tIF at saturating ATP. This leads to the reasonable inference that MRP1 predominantly occupies OF states under physiological conditions (C53), though this assumes steady-state conditions and may not account for all fast transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The total cycle time from smFRET (tOF + tIF) is 4-6 times longer than bulk ATPase measurements, potentially due to temperature differences, surface immobilization effects, or limited time resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C57 identify a discrepancy between single-molecule and bulk measurements. While the authors provide plausible explanations (temperature, surface effects, time resolution), these remain speculative (C56-C57). The discrepancy could indicate technical artifacts or genuine differences between conditions, requiring further investigation to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cryo-EM structure of MRP1 under active turnover conditions shows ADP in the consensus site and ATP in the degenerate site, indicating that ATP hydrolysis is fast and NBD dimer dissociation is the rate-limiting step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 present the key cryo-EM result (Figure 6). The observation of ADP in the consensus site of the predominant species under turnover conditions (C61-C62) strongly supports the conclusion that hydrolysis is fast and NBD dissociation is rate-limiting (C63-C64). This is a major mechanistic insight, though the inference assumes the frozen structure represents the steady-state distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The post-hydrolysis structure is essentially identical to the pre-hydrolytic E1454Q structure, demonstrating that ATP hydrolysis per se does not induce conformational changes in MRP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 compare pre- and post-hydrolysis structures (Figure 6A-B), showing they are essentially identical except for ADP vs ATP in the consensus site. This structural similarity strongly supports the conclusion that hydrolysis itself does not drive conformational change (C67), a key mechanistic finding that distinguishes MRP1 from some other ABC transporters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "MRP1 is intrinsically dynamic, spontaneously transitioning among multiple IF conformations and occasionally accessing the OF state even without nucleotides, similar to other ABC transporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 describe the intrinsic dynamics observed in smFRET experiments (Figures 3, 5A). The spontaneous OF transitions without ATP (C69) and multiple IF states (C68) demonstrate conformational flexibility. Comparison with McjD (C70) provides context, though the functional significance of these ground states remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Under physiological conditions with ATP present, the MRP1 transport cycle is a nonequilibrium process where ATP binding accelerates IF-to-OF transitions and substrate (LTC4) stimulates ATPase activity by accelerating the IF-to-OF transition but not hydrolysis or OF-to-IF transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 synthesize the kinetic findings into a mechanistic model. The effects of ATP (C72) and substrate (C73) on specific rate constants are well-supported by the smFRET data (Figures 4-5). This represents a key mechanistic insight into how substrate stimulates ATPase activity through conformational dynamics rather than affecting the hydrolysis step directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The E=0.92 FRET state represents both pre-hydrolytic (ATP/ATP) and post-hydrolytic (ATP/ADP) NBD-dimerized conformations, with ATP hydrolysis being fast followed by slow NBD dissociation as the rate-limiting step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 integrate smFRET and cryo-EM data to explain the kinetic mechanism. The single-exponential decay of OF lifetimes (C75) despite two substates (C74) is explained by fast hydrolysis followed by slow dissociation (C76). The cryo-EM structure showing predominantly post-hydrolytic state (C77) corroborates this model, providing strong convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The finding that OF-to-IF transition is rate-limiting in MRP1 is consistent with recent studies of other ABC transporters including P-glycoprotein, TmrAB, and TM287/288.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 places the MRP1 findings in context with other ABC transporters through literature citations. This comparison strengthens the generalizability of the findings, though the cited studies used different methods and the mechanistic details may differ among transporters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "ATP hydrolysis provides thermodynamic energy for uphill transport and kinetic directionality to the cycle, with k2 >> k-1 ensuring most molecules proceed through hydrolysis rather than reversing to the IF state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 explain the role of ATP hydrolysis despite not causing conformational change. The thermodynamic argument (C80-C81) is sound, and the kinetic directionality argument (C82-C83) is supported by comparison of WT and E1454Q kinetics (Figure 7\u2014figure supplement 1). This provides important mechanistic insight into how hydrolysis couples to transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The E1454Q mutant displays similar IF/OF transition kinetics to WT but takes a reversible pathway (k1 \u2194 k-1) rather than the hydrolysis-driven route, explaining why it cannot power uphill transport despite similar conformational dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 resolve the apparent paradox that E1454Q shows similar IF/OF occupancy to WT (Table 1) through the kinetic model in Figure 7. The explanation that WT takes an irreversible hydrolysis route while E1454Q takes a reversible route (C85) is mechanistically sound and explains why only WT can perform active transport (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Discrepancies between smFRET and cryo-EM (multiple apo states vs. one structure) may reflect differences in sensitivity and temperature, with smFRET potentially more sensitive to sparsely populated states and cryogenic temperatures potentially favoring the lowest energy state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C91 discuss methodological differences between techniques. While the observations are accurate (C88, C90), the explanations remain speculative (C89, C91). The authors appropriately acknowledge these limitations, but the true reasons for discrepancies remain unclear and would require additional experiments to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Comparison with CFTR shows that while the gating/transport cycles are generally similar, the kinetic properties differ markedly, with CFTR having rate-limiting NBD dimerization and slow hydrolysis relative to dissociation, opposite to MRP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 compare MRP1 with the related CFTR channel based on literature (C92, C96-C97). The comparison highlights important mechanistic differences (C98) between an active transporter (MRP1) and a 'broken' ABC transporter functioning as a channel (CFTR). This contextualizes the MRP1 findings, though the functional implications of these kinetic differences remain to be fully explored.",
+    "result_type": "MINOR"
+  }
+]

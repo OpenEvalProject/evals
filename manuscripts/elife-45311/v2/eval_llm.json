@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C55",
+      "C56",
+      "C61"
+    ],
+    "result": "N-terminal PAmCherry-SsrB fusions are functionally active and can activate SPI-2 gene transcription during acid induction, while C-terminal SsrB-PAmCherry fusions are not functionally active. This was demonstrated using \u03b2-galactosidase assays measuring sseI-lacZ transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, C55, C56, and C61 collectively demonstrate through \u03b2-galactosidase assays that N-terminal fusions are functional while C-terminal fusions are not. The data show appropriate controls (\u0394ssrB strain) and consistent results across different linker lengths (4X and 10X GGSG), with N-terminal fusions showing ~1.5-1.6 fold higher activity than wildtype and C-terminal fusions showing activity similar to the deletion mutant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "A C-terminal SsrA-10-PAmCherry fusion is functionally active with higher baseline activity than wildtype but maintains similar pH-dependent fold induction. The fusion shows 4.2-fold and 6.5-fold higher activity than wildtype at acid and neutral pH respectively, but exhibits similar fold-induction (5.1-fold vs 3.4-fold) between pH conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, C58, C59, and C60 provide consistent data showing the SsrA fusion is functional and pH-responsive. The data include appropriate controls (ssrA::tetRA mutant) and demonstrate that while absolute activity is elevated, the relative pH response is preserved, suggesting the fusion does not fundamentally alter pH-sensing mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C115",
+      "C149"
+    ],
+    "result": "Acid pH (5.6) increases SsrB and SsrA protein levels approximately 3-fold compared to neutral pH (7.2), with SsrB levels consistently higher than SsrA (1.7-fold at acid pH). SsrB shows greater cell-to-cell variability than SsrA, as reflected in larger standard deviations (38 vs 17 at pH 5.6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68, C115, and C149 present quantitative PALM data with appropriate statistical analysis (n=92-125 cells per condition, p<0.0001). The measurements are internally consistent and include proper controls. The observation of differential regulation between SsrA and SsrB is consistent with their separate promoters (C118-C119) and supports the uncoupling hypothesis (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PhoP plays a greater role than OmpR in regulating SsrB expression at acid pH. SsrB levels were reduced 5.3-fold in phoP::kan mutants compared to 1.8-fold in ompR::kan mutants. Super-resolution imaging detected SsrB in phoP null backgrounds where Western blotting previously failed, demonstrating superior sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 provide quantitative PALM data comparing mutant and wildtype strains with appropriate complementation controls (C77). The 4-fold signal above background in phoP null (C76) and successful complementation validate the measurements. The comparison to prior Western blot data (C74) appropriately contextualizes the improved sensitivity of PALM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C118",
+      "C119"
+    ],
+    "result": "ssrA and ssrB are transcribed from separate promoters and regulated by different global regulators: OmpR~P stimulates ssrA transcription while PhoP~P activates ssrB transcription in vitro. This demonstrates transcriptional uncoupling of the two-component system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C118, and C119 are supported by in vitro transcription data (Figure 4\u2014figure supplement 3) showing activator-specific transcripts. The data demonstrate direct activation by phosphorylated regulators and include appropriate controls (RNA1). This uncoupling is unusual for two-component systems and is consistent with the differential protein level observations (C62-C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C9"
+    ],
+    "result": "SPI-2 injectisomes are present on only 17% of cells under optimal inducing conditions, reduced to ~5% in \u0394ssrB mutants. However, SsrB levels do not exclusively determine injectisome numbers, as cells with and without injectisomes show substantial overlap in SsrB levels (134 vs 112 molecules/\u03bcm\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 and C9 present immunofluorescence and PALM data showing the disconnect between SsrB levels and injectisome presence. The quantification includes appropriate sample sizes (n=227 cells) and statistical analysis (p<0.05). The significant overlap in SsrB distributions between SseB-positive and SseB-negative populations supports the conclusion that other factors contribute to injectisome heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C104",
+      "C124",
+      "C151"
+    ],
+    "result": "Acid pH significantly increases SsrB binding to DNA in live cells. The bound fraction (F1) increases from 11.3% at neutral pH to 28.1% at acid pH (~60% increase), and the transiently bound population (D2) shows slower diffusion at acid pH (0.14 vs 0.25 \u03bcm\u00b2s\u207b\u00b9), indicating increased DNA affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88, C104, C124, and C151 present Spt-PALM data with appropriate controls (fixed cells, DNA binding mutants). The three-component diffusion model is validated (Figure 6\u2014figure supplement 1), and the threshold for bound molecules is established from fixed cells. The data are internally consistent across multiple experimental approaches (Spt-PALM, AFM, single molecule unzipping).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "AFM imaging demonstrates that acid pH (6.1) dramatically increases SsrB binding and cooperative condensation of DNA compared to neutral pH (6.8). At neutral pH, unphosphorylated SsrB shows minimal binding at 30 nM, while acid pH produces extensive DNA condensation. The K179A DNA binding mutant shows no binding at either pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 present AFM data with appropriate controls (naked DNA, K179A mutant) and quantification (relative height distribution histograms). The extensive condensation at acid pH is consistent with Spt-PALM observations (C86-C88) and supports a pH-dependent conformational change hypothesis (C92). The experiments used physiologically relevant pH values based on prior measurements (C137).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C150"
+    ],
+    "result": "Single molecule unzipping assays demonstrate that acid pH increases SsrB DNA binding affinity 5-fold. The KD decreases from 239 nM at neutral pH (7.4) to 47 nM at acid pH (6.1), confirming that acid pH enhances both SsrB protein levels and DNA binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 and C150 present quantitative binding data from a highly sensitive single molecule assay. The 5-fold change in KD is substantial and consistent with the increased binding observed in live cells (C86-C88) and in vitro (C89-C92). The Hill coefficients (3.15 and 2.14) indicate cooperative binding at both pH values. The assay includes appropriate replication (3-5 tethers per concentration).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C135"
+    ],
+    "result": "Size exclusion chromatography shows that SsrB dimerization is not pH-dependent, with identical elution profiles at acid and neutral pH. This indicates that the pH-dependent increase in DNA binding affinity is not due to changes in oligomerization state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C135 present size exclusion chromatography data (Figure 8\u2014figure supplement 2) showing nearly identical elution profiles at both pH values. This control experiment is important for ruling out pH-dependent oligomerization as the mechanism for increased DNA binding, supporting the conformational change hypothesis (C92, C107).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The D56E 'phosphomimetic' mutant of SsrB fails to bind DNA in live cells and cannot activate sseI transcription, contradicting claims that this substitution produces a constitutively active protein. The authors suggest prior observations may have resulted from plasmid overexpression artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C144, C145, and C146 present Spt-PALM and \u03b2-galactosidase data showing the D56E mutant behaves like the DNA binding mutant K179A (F1=11.1% vs 11.3%) rather than wildtype (F1=28.1%). The chromosomal integration approach avoids overexpression artifacts. However, the speculation about prior work (C146) should be tested directly rather than inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106",
+      "C107",
+      "C128"
+    ],
+    "result": "Acid-dependent DNA binding is specific to SsrB and not a general property of response regulators. PhoP binding does not increase at acid pH (F1 unchanged), while OmpR binding increases only 5% compared to SsrB's 60% increase. This demonstrates that the pH sensitivity is due to SsrB-specific conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C107 and C128 present comparative PALM and Spt-PALM data for three response regulators under identical conditions. The functional validation of PhoP and OmpR fusions (Figure 4\u2014figure supplement 4) ensures the constructs are appropriate for comparison. The dramatic difference in pH response (60% vs 5% vs 0%) strongly supports the specificity of SsrB's pH sensitivity and rules out general mechanisms like DNA relaxation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The nucleoid is more compact at acid pH (0.50 \u03bcm\u00b2) than neutral pH (0.62 \u03bcm\u00b2), with a ratio of 0.81. DRAQ5 fluorescence intensity shows a similar ratio (0.82), indicating DNA content is proportional to area. This rules out DNA relaxation as a mechanism for increased SsrB binding at acid pH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C114 present nucleoid area measurements using DRAQ5 staining with appropriate sample sizes (n=161-182 cells). The consistency between area and intensity ratios (0.81 vs 0.82) validates the measurements. The positive control with novobiocin (20% increase) demonstrates the method can detect relaxation. This effectively refutes the DNA relaxation hypothesis proposed by Quinn et al., 2014.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C33",
+      "C43"
+    ],
+    "result": "The non-phosphorylatable D56A mutant maintains low-level DNA binding above the K179A DNA binding mutant (F1=20.5% vs 11.3% at acid pH), supporting a role for unphosphorylated SsrB in biofilm formation and the carrier state at neutral pH where the SsrA kinase is nearly absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127, C33, and C43 integrate Spt-PALM data with prior work on biofilm regulation. The D56A mutant's intermediate binding level (between K179A and wildtype) is consistent with unphosphorylated SsrB having some DNA binding activity. This supports the dual function model (C34, C121) where SsrB acts differently depending on phosphorylation state and pH.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "SsrB belongs to the NarL/FixJ subfamily and has a pI of 7.34, making it likely the most acid-sensitive member of this subfamily. At the measured intracellular pH of 6.1 during acid stress, SsrB would be positively charged, promoting interaction with negatively charged DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133, C134, C136, C137, and C138 present a mechanistic hypothesis based on protein classification and pI calculations. The comparison across NarL subfamily members (pI range 5.42-7.34) is appropriate, and the inference about charge state at pH 6.1 is chemically sound. However, this remains a hypothesis requiring structural validation (NMR experiments mentioned as in progress).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C37",
+      "C52",
+      "C53",
+      "C54",
+      "C148",
+      "C152"
+    ],
+    "result": "Acid pH is a critical signal for SPI-2 activation. Salmonella's cytoplasm acidifies to pH 5.6 in the macrophage vacuole through OmpR-dependent repression of cadC/BA, and this acidification activates SPI-2 through multiple synergistic mechanisms including increased SsrA/SsrB levels and enhanced SsrB DNA binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C5, C37, C52-C54, C148, and C152 synthesize the major findings into a coherent model. The pH measurement (5.6) is from prior work (C37, C52), and the current study demonstrates the molecular mechanisms. The synergistic effects (increased protein levels + increased binding affinity) provide a compelling explanation for robust SPI-2 activation. This integrates well with the broader understanding of Salmonella pathogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Despite OmpR and PhoP both being members of the OmpR subfamily with winged-helix-turn-helix DNA binding domains, they show different pH sensitivities, demonstrating that structural homology does not determine functional homology. RcsB (pI 6.85) may possess intermediate acid-dependence and shares one DNA contact residue with SsrB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131, C132, C139, C140, and C141 present comparative structural analysis and speculation about RcsB. While the observation about OmpR and PhoP is well-supported by data (C100-C106), the speculation about RcsB (C139) is not tested experimentally. The shared DNA contact residue (C140) is interesting but insufficient to predict pH sensitivity without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C147"
+    ],
+    "result": "Phosphoamino acids have distinct chemical properties (large hydrated shell, greater negative charge) compared to Asp or Glu. A vicinal pair of Glu residues might serve as a better phosphomimetic than a single Glu by generating a local double negative charge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142, C143, and C147 present established biochemical principles about phosphoamino acids with appropriate citations. The suggestion about vicinal Glu residues (C147) is speculative but chemically reasonable. This provides important context for interpreting the D56E mutant results (C144-C145) and cautions against assuming single Glu substitutions are effective phosphomimetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C45",
+      "C122"
+    ],
+    "result": "Background on Salmonella pathogenesis: After phagocytosis, Salmonella resides in an acidic vacuole and uses SPI-1 for invasion and SPI-2 for intracellular survival. SPI-2 effectors modify the vacuole and drive endosomal tubulation. At neutral pH, Salmonella forms biofilms on gallstones, establishing the carrier state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C10-C15, C45, and C122 present established background knowledge with appropriate citations. These claims provide essential context for understanding the significance of the pH-dependent regulation mechanisms discovered in this study. The information is well-established in the field and not controversial.",
+    "result_type": "MINOR"
+  }
+]

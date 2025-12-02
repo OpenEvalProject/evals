@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "fMRI representational similarity analysis (RSA) revealed stimulus-specific information during visual perception in the occipital lobe (pFWE <0.001, Cohen's dz = 1.79), frontal central cluster, and left temporal cluster, and during auditory perception bilaterally in the temporal lobe (pFWE <0.001, Cohen's dz = 0.86-1.20). These findings demonstrate that stimulus-specific information is represented within the cortex during both visual and auditory perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 provide strong statistical evidence for stimulus-specific information representation during perception tasks. The fMRI RSA analysis is appropriately conducted with searchlight methods, statistical thresholds are clearly reported with effect sizes, and the anatomical localization is consistent with known sensory processing regions. The findings are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "During visual memory retrieval, fMRI RSA revealed significant reinstatement of stimulus-specific information in bilateral fusiform gyrus (pFWE <0.001, Cohen's dz = 0.69-1.07), not driven by post-cue video stills. No significant cluster was identified during auditory memory retrieval (pFWE = 0.153), likely due to substantially worse memory performance for auditory stimuli (52.9%) compared to visual stimuli (73.8%; t(20) = 7.13, p<0.001), limiting statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 provide well-documented evidence for visual memory reinstatement with appropriate statistical controls (C42) and a reasonable explanation for the null auditory finding (C44-C46). The behavioral performance difference between modalities is statistically significant and provides a plausible mechanistic explanation for the differential fMRI results. The interpretation is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "EEG analysis revealed significant post-stimulus alpha/beta power decreases during visual perception (p<0.001, Cohen's dz = 0.95) localized to occipital lobe, and during auditory perception (p=0.012, Cohen's dz = 0.53) in parietal and temporal lobes. Memory retrieval showed significant power reductions for recalled versus forgotten pairs (p=0.017, Cohen's dz = 0.56), localized to fusiform gyrus and memory network regions. No regions showed alpha/beta power increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 demonstrate robust EEG findings with appropriate statistical testing (cluster-based permutation tests), clear effect sizes, and anatomically specific localization. The results replicate well-established phenomena in the field and provide quality control for the simultaneous EEG-fMRI acquisition. The spatial specificity of power changes across tasks is consistent with the fMRI findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Combined EEG-fMRI analysis revealed that during visual perception, there was a trending negative correlation between alpha/beta power and stimulus-specific information (p=0.054, Cohen's dz = 0.34). During auditory perception, a significant negative correlation was found (p=0.006, Cohen's dz = 0.56), where reduced alpha/beta power accompanied increased stimulus-specific information. Control regressors (BOLD amplitude, pre-stimulus power) did not correlate with stimulus-specific information, though confidence rating did during auditory perception (p=0.031).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C61 present the central hypothesis test, but the visual perception result is marginal (p=0.054), raising concerns about reproducibility. While the auditory perception result is significant and the retrieval result (addressed separately) is highly significant, the inconsistency in effect strength across tasks weakens confidence. The control analyses (C56, C59) appropriately rule out confounds, but the marginal visual perception finding and the unexpected confidence correlation (C60) during auditory perception require cautious interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "During visual memory retrieval, a significant negative correlation was found between alpha/beta power and stimulus-specific information for remembered trials (p<0.001, Cohen's dz = 0.56), where reduced post-stimulus alpha/beta power accompanied increased stimulus-specific information. Control regressors (BOLD amplitude, confidence rating, pre-stimulus power) did not correlate with stimulus-specific information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 provide strong statistical evidence (p<0.001) for the central hypothesis during memory retrieval with appropriate controls. The effect size is substantial (Cohen's dz = 0.56) and the control analyses rule out alternative explanations. This result, combined with the auditory perception finding, provides robust support for the main hypothesis despite the marginal visual perception result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "EEG RSA found no evidence that alpha/beta power represents stimulus-specific information during visual perception (p=0.548), auditory perception (p=0.773), or visual retrieval (p=0.579). Bayesian one-sample t-tests revealed moderate evidence favoring the null hypothesis (BF10 = 0.230-0.272). These results suggest alpha/beta power decreases are a marker of information fidelity rather than representing information themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C75 appropriately use both frequentist and Bayesian approaches to test whether alpha/beta power carries representational information. The null findings are strengthened by Bayesian analysis showing moderate evidence for the null hypothesis. This is a critical control analysis that distinguishes between alpha/beta power as a marker versus carrier of information, supporting the mechanistic interpretation. The use of a liberal ROI approach (C68) makes the null finding more convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "IRASA analysis revealed that event-related power decreases are a summation of decreases in oscillatory alpha/beta power and changes in the 1/f curve. However, memory-related power changes were only reflected in oscillatory alpha/beta signal. The authors note that the 1/f curve cannot be properly estimated for single-trial, event-related analyses, as short epochs (<5 s) give unreliable estimates, with simulations demonstrating that estimates stabilize only with longer epochs (>20 s) or averaged data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 and C98-C102 present IRASA findings but acknowledge significant methodological limitations. The simulation results (C102) demonstrate that single-trial 1/f estimates are unreliable for the epoch lengths used, undermining confidence in the single-trial IRASA results. While the averaged data analyses (C65-C66) may be valid, the inability to link these measures to stimulus-specific information on a trial-by-trial basis limits the interpretability of these findings for the central hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C31",
+      "C32",
+      "C67",
+      "C76",
+      "C77"
+    ],
+    "result": "The main finding is that post-stimulus alpha/beta power decreases negatively correlate with stimulus-specific information across three tasks (visual perception, auditory perception, visual memory retrieval), indicating that alpha/beta power decreases parametrically track the fidelity of both externally-presented and internally-generated stimulus-specific information. This phenomenon transcends stimulus modality and cognitive task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C8 and C31-C32 summarize the main findings, but the evidence is mixed. While auditory perception (p=0.006) and visual retrieval (p<0.001) show robust effects, visual perception is only trending (p=0.054). The claim that the phenomenon 'transcends' modality and task (C7, C32) is overstated given one of three tests is marginal. The parametric tracking claim (C8, C67) is supported by the correlation approach but would be strengthened by additional analyses (e.g., quartile splits showing dose-response). The generalizability claim requires more consistent evidence across all conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The correlation between alpha/beta power decreases and stimulus-specific information was weakest during visual perception, which may be explained by limited variation in stimulus representation across trials compared to auditory perception (with scanner noise interference) and memory retrieval (with variable memory strength).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 provide a post-hoc explanation for the weak visual perception effect, supported by simulation data (Figure 4\u2014figure supplement 6). However, this explanation is speculative and not directly tested. The simulation demonstrates the principle that low measure variability reduces correlation strength in the presence of noise, but does not empirically verify that visual perception actually had lower variability than the other tasks. This remains an untested hypothesis that could explain the marginal finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The theoretical framework posits that massed synchronised neuronal firing is detrimental to information processing because task-irrelevant neurons firing in unison mask signals from task-critical neurons. This synchronisation contributes to alpha/beta oscillations at the macroscopic level. Reducing neuronal noise correlations, which correlate with local field potential (LFP), can boost signal-to-noise ratios. Task-induced reductions in alpha/beta LFP may mark the reduction of noise correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C17-C25 establish the theoretical foundation based on well-cited prior work on noise correlations, signal-to-noise ratios, and neural synchrony. The logic connecting microscopic noise correlations to macroscopic alpha/beta oscillations is clearly articulated and supported by appropriate citations (C18, C20-C21, C23-C24). The speculation about alpha/beta LFP as a marker of noise correlations (C25) is appropriately qualified and provides a mechanistic hypothesis for the empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "The effect of alpha/beta power decreases tracking stimulus-specific information is not driven by alpha/beta power representing information itself, but rather by providing conditions beneficial for information processing. Mechanistically, these decreases may mark information processing by allowing reduction of neuronal noise correlations, which are detrimental to stimulus processing and more likely to be detected in the LFP for large networks. Alpha/beta power decreases can be viewed as a marker for the potential for information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 and C85 provide a mechanistic interpretation supported by the RSA control analysis (C68-C73) showing alpha/beta power does not carry representational information. The interpretation is consistent with cited literature on noise correlations (C81-C82) and the empirical findings. The distinction between alpha/beta power as a marker versus carrier of information is conceptually clear and empirically supported, though the mechanistic link to noise correlations remains somewhat speculative (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The lack of correlation between pre-stimulus alpha/beta power and stimulus-specific information appears to contradict earlier work showing pre-stimulus alpha power correlates with perceptual performance. However, recent studies using signal detection theory demonstrate that pre-stimulus alpha power links to decision criterion (subjective measures) rather than sensitivity (objective measures). Since stimulus-specific information reflects sensitivity, the lack of correlation with pre-stimulus power is consistent with this literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 address an apparent contradiction with prior literature and provide a well-reasoned resolution based on the sensitivity/decision criterion distinction from signal detection theory. The interpretation is supported by multiple recent citations (C96) and is logically consistent with the current findings. This demonstrates appropriate engagement with prior work and careful consideration of how the current measure (stimulus-specific information) relates to different aspects of perceptual performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Alpha/beta power decreases are hypothesized to be sufficient but not necessary for information processing, as signal-to-noise ratios can also be boosted by increasing signal intensity. This is supported by a TMS study where disrupting alpha/beta power decreases reduced but did not eliminate behavioral performance, suggesting other processes also contribute to information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 provide a nuanced interpretation of the causal role of alpha/beta power decreases, appropriately acknowledging that correlation does not imply necessity. The TMS evidence (C106-C107) from prior work supports this interpretation. This demonstrates appropriate scientific reasoning about the limits of correlational findings and the potential for multiple mechanisms supporting information processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Twenty-one participants (from 33 recruited, with 12 excluded due to technical issues or insufficient trials) completed an associative memory task with simultaneous EEG-fMRI recordings. Participants paired videos/melodies with nouns during encoding and later recalled the associations. RSA on fMRI data provided a data-driven, objective measure of stimulus-specific information on single trials. Participants correctly recalled 63.4% of video-word pairs on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C27-C30, and C113-C115 describe the experimental design and sample. The exclusion criteria are clearly stated and reasonable (C114), resulting in a final sample size (n=21) that approximates prior work using this paradigm. The behavioral performance (C115) indicates the task was appropriately challenging. The RSA approach (C29-C30) is well-established and appropriate for quantifying stimulus-specific information. The methodological description is clear and complete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The cross-validated Mahalanobis (CVM) distance provides an unbiased measure of pattern dissimilarity. However, the cluster-forming threshold used (puncorr <0.001, k=10) may inflate the family-wise error rate from 5% to 7-10%, potentially classifying marginal effects as erroneously significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 appropriately describe the RSA metric and acknowledge a known limitation of the statistical thresholding approach. The authors transparently report this potential inflation of false positives (C117) and note they cross-checked results with a more conservative threshold (referenced in Supplementary file 1). This demonstrates appropriate methodological rigor and transparency about statistical limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "A significant negative correlation was found between alpha/beta power and confidence rating (p=0.033, Cohen's d = 0.48), but this link does not explain the relationship between alpha/beta power and stimulus-specific information, as evidenced by partial correlation analyses reported in the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 address a potential confound (confidence) and demonstrate it does not explain the main findings through partial correlation. This is an appropriate control analysis. The correlation between alpha/beta power and confidence (C118) is interesting in its own right and consistent with the broader literature on alpha power and subjective experience, while the partial correlation (C119) rules out this as a confounding explanation for the main effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "From an information theory perspective, little information can be gathered from highly predictable inputs (correlated neurons) while much can be gathered from unpredictable inputs (uncorrelated neurons). Desynchronisation in alpha/beta bands may reduce neuronal firing predictability and boost information processing abilities. Prior work shows tasks with greater semantic elaboration produce greater alpha/beta power decreases. Alpha/beta power decreases may allow rich representation of stimulus-specific information by reducing predictability of neural firing patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 provide an alternative theoretical framework based on information theory that is complementary to the noise correlation framework. The information theory principles (C86-C87) are well-established, the link to alpha/beta desynchronisation is appropriately cited (C88), and supporting evidence is provided (C89). The speculation (C90) is appropriately qualified and provides a coherent theoretical interpretation consistent with the empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The current information processing account is reconciled with established inhibition accounts of alpha oscillations by viewing them as two sides of the same coin. The current work expands on inhibition accounts by demonstrating that alpha/beta power parametrically tracks the degree to which a network can represent information, rather than reflecting a binary inhibition/disinhibition state. As alpha/beta power gets progressively weaker, networks become progressively disinhibited and more capable of establishing detailed neural representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 appropriately situate the current findings within the established inhibition framework and articulate how the current work extends these accounts. The parametric tracking claim (C93) is supported by the correlation analyses showing graded relationships rather than categorical differences. The interpretation (C94) logically follows from the empirical findings and provides a coherent synthesis of inhibition and information processing accounts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Perception and retrieval typically induce theta and gamma power increases. While not overtly congruent with neuronal decoupling or unpredictability theories, theta/gamma increases could facilitate information processing by increasing signal strength (complementary to alpha/beta decreases reducing noise). The 'communication through coherence' hypothesis proposes gamma synchronicity enhances stimulus representations. Alpha/beta decreases and gamma increases may interact such that the former reduces noise while the latter boosts signal to optimize information processing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C112 provide speculative integration with other frequency bands, appropriately cited and qualified as speculation (C109, C112). However, this remains entirely theoretical as the current study focused on alpha/beta frequencies and did not empirically test theta/gamma relationships with stimulus-specific information. The speculation is reasonable and generates testable hypotheses, but lacks empirical support from the current data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The study recruited 20 participants (11 females, aged 18-25, mean 21.24 years), received ethics approval, and excluded 2 subjects due to excessive head motion, resulting in 18 participants for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide complete methodological information about participant recruitment, ethics approval, and data exclusion criteria. The sample size (n=18 after exclusions) is adequate for MEG studies, and proper ethics procedures were followed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The experimental design used binary auditory sequences with four conditions (frequency-biased, repetition-biased, alternation-biased, fully stochastic) characterized by different transition probabilities, with stimuli presented at 1.4s SOA and occasional prediction tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 describe a well-designed experiment with appropriate controls. The four conditions systematically manipulate transition probabilities to dissociate different statistical learning mechanisms. The design is clearly specified with adequate detail for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "MEG responses revealed four canonical auditory-evoked components: M50, M150, M250, and M3/slow-wave, with topographies consistent with bilateral auditory cortex sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 reports standard auditory-evoked components that are well-established in the literature. The topographies and timing are consistent with prior MEG studies of auditory processing, as indicated by the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Brain responses to global statistics showed that rare items/patterns evoked larger signals than frequent ones in biased conditions, with significant effects in specific time windows, while no differences were found in the fully stochastic condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 report statistically significant effects with appropriate correction for multiple comparisons. The pattern of results (effects in biased conditions but not stochastic) provides strong evidence for sensitivity to global statistics. Time windows and statistical values are clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Violations of repeating streaks (XXXY pattern) evoked significantly larger brain signals than their continuation across multiple conditions, including fully-stochastic, frequency-biased, and repetition-biased conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 report consistent effects of local pattern violations with appropriate statistical tests (paired t-tests with reported degrees of freedom and p-values). The consistency across conditions strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Cross-validated topographical filtering analysis revealed that rare items evoked stronger signals than frequent ones in frequency-biased conditions, rare alternations evoked stronger signals in repetition-biased conditions, and this reversal was statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 report effects using proper cross-validation to avoid circular analysis. The significant ANOVA interaction (C19) provides strong evidence for genuine reversal effects. Statistical reporting is complete with test statistics and p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Bayesian model selection identified different learning models for different time windows: item frequency (IF) model best explained early responses (60-130ms), while transition probability (TP) model best explained mid-latency (160-320ms) and late (460-625ms) responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 report rigorous Bayesian model comparison with high posterior probabilities and exceedance probabilities. The progression from simple (IF) to complex (TP) statistics across time windows is a key finding supported by strong statistical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Bayesian model averaging revealed that integration timescales decreased with response latency: early responses showed global integration (\u03c9=\u221e), mid-latency responses showed local integration (\u03c9=13, half-life ~9 observations), and late responses showed more local integration (\u03c9=6, half-life ~4 observations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 report a systematic relationship between response latency and integration timescale with appropriate statistical testing (linear fit, t17=-3.00, p=0.008). The Bayesian model averaging approach properly accounts for model uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study observed a genuine reversal of brain activity for repetitions vs. alternations depending on which was more frequent, and the violated repeating pattern XXXY consistently elicited strong signals across conditions, with only the TP model predicting all observed effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 report key findings that distinguish the TP model from alternatives. The genuine reversal effect (C57) and consistent XXXY violation effect (C58) are critical for model discrimination. The conclusion that only TP predicts all effects (C59) is supported by the systematic model comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The study proposes that early responses reflect habituation mechanisms (sensitivity to item frequency over long timescales) while later responses reflect predictive coding mechanisms (learning of recent transition probabilities), with mid-latency responses compatible with predictive coding and late responses compatible with conscious pattern search.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 provide a mechanistic interpretation supported by the data and consistent with prior literature. The dissociation between habituation (early) and predictive coding (late) is well-justified by the different statistics learned and timescales identified. However, this remains an interpretation rather than direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "MEG preprocessing included epoching, artifact removal, filtering, downsampling, baseline correction, and cross-validated topographical filtering, with appropriate statistical correction for multiple comparisons using spatiotemporal cluster-based permutation tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 describe standard and appropriate MEG preprocessing and statistical methods. The use of cross-validation (C80-C81) to avoid circular analysis is particularly important and properly implemented. Multiple comparison correction using cluster-based permutation tests is appropriate for MEG data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study designed ideal observer models using Bayesian inference to compute theoretical surprise levels, with different timescales of integration modeled using biologically plausible leaky integrators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 describe a rigorous computational modeling approach. The use of Bayesian ideal observers is appropriate for modeling statistical learning, and leaky integrators are well-established for modeling temporal integration in neural systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The study acknowledges that the timescale of integration confounds elapsed time and number of items, which cannot be separated by the experimental design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 appropriately acknowledges a limitation of the study. This is an honest assessment that does not invalidate the main findings but indicates a direction for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study found that long-term and short-term sequence learning mechanisms coexist in the brain at different processing stages, consistent with prior work suggesting multiple statistical estimates at different timescales, which may allow efficient detection of regularities without hierarchical Bayesian inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 synthesize the main findings and place them in context of prior literature. The interpretation that multiple timescales allow efficient computation is reasonable but remains somewhat speculative. The consistency with prior work strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Model comparison used BIC approximation of marginal likelihood with random-effects Bayesian analysis, with all models having equal numbers of parameters, and hierarchical model selection confirming that the same models underlie all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe appropriate and rigorous model comparison methods. The use of BIC is justified, random-effects analysis is appropriate for group-level inference, and hierarchical model selection provides additional validation. The equal parameter count (C92) ensures fair comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The abstract claims that extracting temporal structure is crucial for cognition, and that successive brain waves reflect different statistical inferences: early waves show sensitivity to item frequency over long timescales, while mid-latency and late waves reflect learning of recent transition probabilities, supporting multiple computational systems for sequence processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 accurately summarize the main findings of the study. The progression from simple to complex statistics across time windows is well-supported by the detailed analyses. The conclusion about multiple computational systems is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The introduction establishes that temporal structure in the environment is important for cognition, that detecting such structure benefits perception and behavior, and that statistical learning of regularities like item frequency and transition probabilities serves as a building block for higher-order representations including language.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 provide appropriate background and motivation for the study, supported by relevant citations. These are well-established principles in the field that justify the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Prior literature shows that the brain is sensitive to item frequency, alternation frequency, and transition probabilities across species and modalities, with sensitivity to recent history and multiple parallel statistical expectations, leading to the authors' hypothesis that these findings result from local transition probability estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 accurately summarize relevant prior work with appropriate citations. The synthesis leading to the authors' hypothesis (C50) is logical and well-motivated by the literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Prior work on oddball paradigms and local regularities showed that rare items evoke stronger signals, that local patterns modulate brain responses (including violations of repeating/alternating streaks), and that rare alternations induce stronger signals than frequent repetitions, though the reverse is rarely observed in continuous sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 accurately describe prior findings with appropriate citations. The observation that reversal effects are rarely seen in continuous sequences (C56) motivates the current study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Prior work on the local-global paradigm showed that late responses (P300) reflect complex sequential dependencies and pattern rarity, with chunks being crucial for sequence processing, leading to the hypothesis that late responses operate over different levels of abstraction within working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 synthesize findings from the local-global paradigm literature to support the interpretation of the current results. The distinction between continuous and chunked sequences is important for understanding the scope of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study speculates that late brain responses observed during the prediction task may not occur without attention, consistent with prior work showing that late responses are absent in impaired consciousness, sleep, or inattention, while early responses may extract statistics automatically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 present reasonable speculation based on prior literature, but C70 explicitly acknowledges this is speculation. The hypothesis about attention-dependence is plausible but not tested in the current study. This represents an important direction for future research rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The study speculates that transition probability learning constitutes a building block for higher-order representations including hierarchical language structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 presents a reasonable speculation about the role of TP learning in language, supported by citations, but this is explicitly acknowledged as speculation beyond the scope of the current modeling effort. This represents a hypothesis for future research rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The study used a prediction task to maximize the likelihood of evoking late responses and enable comparison with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 provides appropriate methodological justification for the task design. The rationale is sound and supported by citation to prior work (Squires et al., 1976).",
+    "result_type": "MINOR"
+  }
+]

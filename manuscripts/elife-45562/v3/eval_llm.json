@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Standard phylogenetic models assume independence between mutation and tree-generating processes, meaning mutations do not affect lineage fitness or survival. Birth-death models can account for this feedback by making fitness depend on lineage type, but multi-type birth-death models have only been applied to single character states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C8-C11 establish the limitations of standard phylogenetic models and the potential of birth-death models. These are well-supported characterizations of prior work based on citations and established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The independence assumption between mutation and tree-generating processes may be valid when mutations are neutral or timescales are separated, but breaks down for rapidly evolving microbes where mutations cause substantial fitness variation on the same timescale as tree generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 provide a logical argument supported by citations (C14, C16, C17) about when the independence assumption is reasonable versus problematic. The reasoning is sound and well-supported by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The MFBD model extends multi-type birth-death models to multiple sites by tracking evolution at each site independently and approximating genotype probabilities from marginal site probabilities, allowing inference of fitness effects without tracking all possible genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 describe the key methodological innovation of the MFBD model. The approach is clearly described with mathematical detail in the Methods section. The approximation and its assumptions (independence of sites) are explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C41"
+    ],
+    "result": "The MFBD approximation error decreases at very high mutation rates when site correlations break down, and tracking fitness transitions in fitness space does not improve approximation of E_n.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 and C41 are supported by the four-genotype model analysis shown in Figures 3 and 4. The data clearly show the described patterns of error as a function of mutation rate and the lack of improvement from tracking fitness transitions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The MFBD model can accurately estimate fitness of lineages and site-specific mutational fitness effects from phylogenies, with accuracy comparable to exact MTBD models. However, accuracy varies across sites and depends on allele frequency, with underestimation at low frequencies and overestimation at high frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C45-C54 are well-supported by simulation results in Figures 5-6. The correlation between estimated and true fitness effects (R\u00b2=0.42 for 2 sites, decreasing with more sites) and the frequency-dependent bias are clearly demonstrated. The comparison with exact MTBD validates the approximation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Analysis of Ebola virus glycoprotein mutations reveals that population-level fitness effects agree in sign with in vitro effects but are much smaller in magnitude. The A82V mutation increases transmissibility by only 5% at the population level versus 2-3 fold in cell culture, and epistatic interactions between mutations affect fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C76 describe the Ebola analysis results supported by Figure 7 and Table 1. The phylogenetic reconstruction, fitness estimates with credible intervals, and comparison with in vitro data (C62, C68) from Urbanowicz et al. 2016 are clearly presented. The geographic control analysis (C72-C74) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "For H3N2 influenza, there is no apparent relationship between estimated population-level fitness effects and in vitro DMS measurements for the 17 most abundant mutations. MCMC convergence failed for several mutations due to strong correlations from shared phylogenetic ancestry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by Figure 8A-B showing lack of correlation and the coancestry matrix. The authors appropriately acknowledge the convergence problems (ESS < 10) and explain the likely cause (shared ancestry creating collinearity). This is an honest assessment of a negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "When H3N2 fitness is informed by DMS data rather than estimated independently, the MFBD model fits substantially better than a neutral model (log likelihood -4184 vs -7510). Population-level fitness grows slowly and linearly with DMS-predicted effects, revealing substantial fitness variation (0.84-1.04) and deleterious mutation load across lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C85-C92 are supported by Figure 9 and the large improvement in log likelihood. The linear relationship between DMS predictions and population fitness is shown in the inset. The fitness range and patterns of persistence are clearly demonstrated in the phylogeny.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The T228A mutation may have helped seasonal H3N2 compete with pandemic H1N1 virus in 2009-2010.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is explicitly stated as speculation ('tempting to speculate') based on the observation that a lineage with this mutation circulated during the H1N1 pandemic. While the observation is supported by data (C91-C92), the causal claim about competitive advantage is not tested and remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The MFBD approximation generally works well except in extreme situations, can estimate fitness effects with accuracy comparable to exact models, and provides a new statistically powerful way to incorporate adaptive evolution into phylodynamics by exploiting phylogenetic information ignored by other methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by the validation analyses (Figures 2-6) showing good approximation except at extreme parameter values, and the successful application to real data. The comparison with exact MTBD (Figure 6E) validates the approach. These are appropriate summary conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Codon-substitution models are the most widely used approach for inferring selection but are insensitive on short timescales. The phylodynamic approach of comparing lineage dynamics provides additional information about molecular evolution not visible from substitution patterns alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 are supported by citations to prior work (C98, C100) and provide a logical argument for the advantages of the phylodynamic approach. The reasoning is sound and well-grounded in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "How fitness measured in vitro translates to population-level fitness is largely unknown. Based on Ebola results, fitness effects likely agree in sign but differ in magnitude across scales. Mutations increasing within-host replication should generally promote transmissibility, but not necessarily linearly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C111 are supported by the Ebola analysis (C63, C76) showing agreement in sign but large differences in magnitude. The reasoning about within-host vs. between-host fitness is logical and supported by citations (C107). The support from Diehl et al. 2016 (C110) strengthens the argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Inference problems for H3N2 stem from mutations occurring once in the same genetic background, creating collinearity-like identifiability problems. Increasing sites increases genetic background complexity and parameter space dimensionality. Spurious correlations may arise from unmodeled fitness variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 provide a logical explanation for the H3N2 inference problems supported by the coancestry matrix (Figure 8B) and the general principle that more sites increase complexity (C47-C48). The analogy to collinearity in regression is appropriate and helps explain the convergence failures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Future extensions should account for unmodeled fitness variation. Despite limitations, the MFBD offers powerful means to explore questions not possible with neutral models, including inferring distributions of fitness effects, comparing fitness across environments, and analyzing any discrete character state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C125 appropriately discuss limitations and future directions. The suggestions are logical extensions of the work. The characterization of the model as generalizable to any discrete character (C124-C125) is supported by the mathematical framework presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Many mutations are neutral, but a smaller significant fraction have substantial fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are standard background knowledge well-supported by the three citations provided (Sanju\u00e1n et al. 2004, Eyre-Walker and Keightley 2007, Visher et al. 2016). This is established knowledge in evolutionary biology.",
+    "result_type": "MINOR"
+  }
+]

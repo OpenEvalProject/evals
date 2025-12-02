@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Zebrafish possess two insulin genes (ins and insb), with ins being the primary functional insulin gene post-embryonically. CRISPR/Cas9-generated ins mutants completely lack insulin protein in pancreatic islets and exhibit severe metabolic defects, while insb mutants are viable and fertile with no observable islet changes. The predominant role of ins distinguishes zebrafish from mice, where Ins1 and Ins2 have redundant metabolic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 collectively establish the differential roles of zebrafish insulin genes through genetic, immunohistochemical, and functional data (Figures 1A-B, supplementary figures). The CRISPR mutations are validated, protein expression is directly visualized, and functional rescue experiments (C16-C17) confirm insb functionality. The comparison to mouse insulin genes is appropriately cited (C19-C20).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "ins mutants exhibit severe diabetic phenotypes including up to 10-fold elevated glucose levels (1-6 dpf), lipid metabolism defects with large unused yolk reserves, lethality by 12 dpf, and proteomic signatures matching mammalian diabetic tissues. These findings establish that ins is crucial for metabolic homeostasis and that its absence causes core features of diabetic metabolism at larval stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C24 are well-supported by multiple data types: glucose measurements (Figure 1C), lipid staining (Figure 1D), survival curves (Figure 1E), and comparative proteomics (Figure 1F, Supplementary file 1). The proteomic comparison to seven published diabetic datasets strengthens the translational relevance. Statistical significance is shown for glucose measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Heterozygous ins+/- animals are normoglycemic as adults but show reduced body size at 50 dpf, consistent with insulin's role in growth control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by glucose measurements (Figure 1\u2014figure supplement 1D) and body length data (Figure 1\u2014figure supplement 1E). The growth phenotype is appropriately contextualized with citation to Nakae et al., 2001. However, statistical details (sample sizes, p-values) are not fully visible in the claim text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "A highly efficient endoderm transplantation technique was developed that rescues ins mutants to adulthood by providing wild-type endodermal tissues while maintaining mutant germline, enabling production of all-mutant progeny through incrossing. Chimeric animals showed near-Mendelian ratios of mutant genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 describe a novel technical achievement supported by imaging (Figure 2, Figure 2\u2014figure supplement 1A-A''), genotyping data (Figure 2C, Figure 2\u2014figure supplement 1B-C), and clear methodology. The efficiency is demonstrated visually and quantitatively. This is a critical enabling technology for the screening platform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Metformin and MLR1023 showed no glucose-lowering effect in ins mutants, revealing their dependence on insulin signaling. This contrasts with metformin's known ability to reduce hepatic gluconeogenesis and its effectiveness in isoprenaline-treated wild-type zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C40 are supported by experimental data (Figure 3A) and appropriate citations (Gut et al., 2013; Ochman et al., 2012). The inference that these drugs require insulin signaling (C32, C38, C40) is logical given their lack of effect in complete insulin absence. This represents an important mechanistic insight about drug action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ins mutants show elevated Pck1 levels suggesting increased gluconeogenesis, which is supported by the drastic glucose reduction observed with the Pck1 inhibitor 3-MPA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by proteomic data (Supplementary file 1) and pharmacological validation (Figure 3A). The inference about increased gluconeogenesis (C34) is reasonable given Pck1's established role and insulin's known inhibitory effect on this pathway. The 3-MPA result provides functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Fraxidin, dapagliflozin, and pioglitazone reduced glucose levels by 5%, 12%, and 11% respectively in ins mutants, indicating partial insulin-independent mechanisms. The modest effects may reflect incomplete recapitulation of adipose and renal function at larval stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are supported by glucose measurements (Figure 3A) with appropriate statistical analysis. The interpretation of insulin-independent action (C44) is reasonable. The caveat about developmental limitations (C45-C47) is appropriately acknowledged with citations, though this somewhat weakens the translational relevance of these specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "A screen of 2233 molecules identified three reproducible hits: flutamide (40% glucose reduction), ODQ (22% reduction), and vorinostat (19% reduction). These compounds are characterized as androgen receptor antagonist, soluble guanylyl cyclase inhibitor, and HDAC inhibitor, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 describe the screening results supported by Figure 3C-D and Figure 3\u2014figure supplement 1D. The methodology is clearly described, hits were validated with independent stocks, and dose-response was confirmed. The characterization of compound mechanisms (C50-C52) is appropriately cited. This represents a successful application of the screening platform.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "ODQ's glucose-lowering effect is consistent with prior reports of increased hepatic glucose uptake. Vorinostat's effect contrasts with clinical hyperglycemia side effects, possibly due to its broad HDAC inhibition affecting zebrafish development. None of the three drugs prolonged survival, likely because glucose reduction alone is insufficient to normalize all dysregulated processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 appropriately contextualize the findings with citations (An et al., 2010; Mann et al., 2007; Richon, 2006; Taniguchi et al., 2006). The speculation about vorinostat (C58) is reasonable but acknowledged as such. The survival observation (C59) is important for understanding the limitations of glucose-lowering alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Multiple lines of evidence support androgen receptor antagonism as the mechanism of flutamide's glucose-lowering effect: dose-dependent response, consistent effects across structurally diverse AR antagonists (steroidal and non-steroidal), and glucose reduction with ar morpholino in ins mutants but not wild-types. This supports a specific role for AR antagonism in hyperglycemic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 provide strong mechanistic validation through dose-response (Figure 4\u2014figure supplement 1A), multiple AR antagonists (Figure 4A), and genetic knockdown (Figure 4B-C). The specificity for hyperglycemic conditions (C66) is demonstrated by the differential effect in mutants vs. wild-types. The varying efficacy (C63) is appropriately attributed to differential antagonist potency with citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Prior literature has proposed multiple mechanisms linking androgen excess to diabetes in women, including neuronal and \u03b2-cell specific AR roles in mice. ar expression is observed in zebrafish central nervous system and liver, supporting potential mechanistic relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 appropriately cite relevant literature (Navarro et al., 2015, 2018; Gorelick et al., 2008) and provide expression data (Figure 4\u2014figure supplement 1B). This contextualizes the findings within existing knowledge about androgen signaling in metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RNA-seq analysis of ins mutants treated with flutamide or cyproterone identified 40 genes regulated in parallel by both AR antagonists, likely representing AR-specific effects. Cross-referencing with ins mutant transcriptomes identified 12 genes differentially expressed upon insulin loss and restored by AR antagonist treatment, including btg2 and insig1, which control hepatic gluconeogenesis and contain androgen response elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by RNA-seq data (Figure 4D-E, Figure 4\u2014figure supplement 1C-D) with appropriate bioinformatic analysis. The identification of btg2 and insig1 is particularly compelling given their known roles in gluconeogenesis (cited to Carobbio et al., 2013; Kim et al., 2014b) and presence of AREs. This provides mechanistic insight into AR antagonist action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Intraperitoneal flutamide injection in hyperglycemic adult zebrafish reduced fasting plasma glucose by 19%, likely through reduced hepatic glucose production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 extend the findings to adult animals (Figure 4F, Figure 4\u2014figure supplement 1E), demonstrating translational relevance beyond larval stages. The inference about hepatic glucose production (C77) is reasonable given the gene expression data (btg2, insig1) but remains somewhat speculative without direct measurement of hepatic glucose output.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The findings corroborate prior clinical observations of improved anthropometric indices with flutamide or metformin+flutamide combination therapy, attributing part of this benefit to flutamide's insulin-independent action through AR antagonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 appropriately connect the findings to clinical literature (Sahin et al., 2004; Gambineri et al., 2004; Amiri et al., 2014). The attribution of insulin-independent action (C80) is a reasonable inference from the ins mutant data, though the clinical studies did not directly test insulin-independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "This study reports the first rapid screening strategy to identify insulin-independent pathways modulating metabolism in vertebrates. The endoderm transplant technique can be combined with various readouts for future studies with larger chemical libraries to unveil mechanisms governing other disease-relevant phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 appropriately position the work's novelty and future potential. The novelty claim (C81) appears justified given the unique combination of genetic model, rescue strategy, and screening platform. Claims C83-C84 are speculative about future applications but reasonable given the demonstrated proof-of-concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background claims establish that insulin plays a central role in glucose homeostasis, that current antidiabetic drugs largely depend on insulin, that insulin-independent mechanisms are therapeutically valuable, and that zebrafish serve as an excellent platform for diabetes research and chemical screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C97 provide appropriate background context, all supported by relevant citations. These establish the rationale for the study and position zebrafish as a suitable model system. All claims are appropriately attributed to prior literature.",
+    "result_type": "MINOR"
+  }
+]

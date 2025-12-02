@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C99"
+    ],
+    "result": "Amphid neurons in C. elegans form a multicellular rosette at the comma stage of embryogenesis. The rosette includes 9 of 12 amphid neurons (labeled by cnd-1p::PH::GFP), sheath and socket glial cells, and transiently five non-amphid neurons. PAR-6 and DYF-7 localize to the rosette center/vertex, which becomes the dendrite tips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C99 are well-supported by phalloidin staining (C1), fluorescent marker imaging with cell lineage tracing (C2, C3), and localization data for PAR-6 and DYF-7 (C4, C5). The imaging data in Figures 1A-D directly demonstrate rosette formation and molecular localization patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C57"
+    ],
+    "result": "Amphid dendrite extension occurs in two distinct steps: first, anterior-directed growth where dendrite tips move anteriorly while cell bodies remain stationary; second, posterior-directed growth concomitant with cell body movement. This constitutes a two-phase retrograde extension mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C57 are supported by time-lapse imaging data shown in Figures 1E-F and Video 1, which clearly demonstrate the biphasic nature of dendrite extension with stationary cell bodies during the first phase and cell body migration during the second phase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C67",
+      "C100"
+    ],
+    "result": "The rosette vertex/dendrite tips are physically attached to the leading edge of the migrating hyp5 epidermal cell. The dendrite tips are situated in an indentation at the hyp5 leading edge, and their anterior movement is correlated with hyp5 migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C67, and C100 are supported by 3D time-lapse imaging using mCherry::PAR-6 and DLG-1::GFP reporters (Figure 2A) and kymograph analysis (Figure 2B) showing spatial and temporal correlation between dendrite tip and hyp5 leading edge movement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C106"
+    ],
+    "result": "Dendrite extension requires anterior migration of the epidermis. In elt-1(RNAi) embryos with varying RNAi efficacy (assessed by lin-26::GFP expression), dendrite extension correlates with epidermal migration: normal epidermis yields normal dendrites, partial migration yields partial extension, and abolished migration abolishes dendrite extension despite normal rosette formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 and C106 are supported by dose-dependent RNAi experiments (Figure 2C-D) showing graded phenotypes correlating epidermal migration with dendrite extension. The observation that rosette formation is unaffected (C17, C106) while dendrite extension is abolished provides strong evidence for the requirement of epidermal migration. However, the inference relies on indirect assessment of epidermal migration in the strongest RNAi cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25"
+    ],
+    "result": "Multiple adhesion molecules localize to dendrite tips and/or epidermis: DYF-7 is expressed in amphid neurons and localizes to dendrite tips; HMR-1 localizes to dendrite tips and epidermal junctions; SAX-7 localizes to epidermal junctions and along amphid dendrites; CRISPR-tagged DLG-1 localizes to both epidermal apical junctions and amphid dendrite tips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 and C25 are supported by imaging data using various fluorescent reporters (Figures 3A-D). The localization patterns are consistent with potential roles in mediating dendrite-epidermis attachment. The discrepancy between the xnIs17 DLG-1 reporter (epidermis only) and CRISPR-tagged DLG-1 (both tissues) is noted and appropriately addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C62",
+      "C63"
+    ],
+    "result": "DYF-7 has differential roles in the two phases of dendrite extension. During the later retrograde phase, dyf-7(m537) causes detachment in 100% of embryos (84/88 reached sensory depression but detached). During anterior extension, the same allele causes defects in only 5% of embryos (4/88), suggesting redundancy with other molecules in this phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C62-C63 are supported by phenotypic analysis of dyf-7(m537) mutants (Figure 3E, Figure 3\u2014figure supplement 1A). The stark difference in penetrance between the two phases (100% vs 5%) provides strong evidence for differential molecular requirements, though the low penetrance in anterior extension could also reflect incomplete loss of function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C64",
+      "C101"
+    ],
+    "result": "DYF-7, SAX-7, and HMR-1 function redundantly in dendrite tip attachment to epidermis during anterior extension. Single mutants (sax-7, hmr-1 RNAi) and double mutants show no defects, but dyf-7;sax-7;hmr-1(RNAi) triple mutants show significantly increased anterior extension defects (16/88 amphids, 18%) compared to dyf-7 alone (4/88, 5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C64, and C101 are supported by systematic genetic interaction analysis with appropriate statistical testing (Fisher's exact test with Bonferroni correction, Figure 3E-F). The genetic redundancy is demonstrated by the lack of enhancement in double mutants but significant enhancement in triple mutants, consistent with classical redundancy. The control that embryos developed normally (reached 1.5-fold stage) indicates epidermal migration was not affected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DLG-1 also functions in dendrite tip attachment to epidermis. In dyf-7;sax-7;dlg-1(RNAi) embryos that developed to 1.5-fold stage, 23% (15/66) showed anterior extension defects, significantly higher than dyf-7 alone (5%, 4/88), though some embryos (6/72) arrested early suggesting epidermal defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by phenotypic analysis with statistical comparison (Figure 3F). The increased penetrance in the triple mutant/RNAi compared to dyf-7 alone supports DLG-1 function in attachment. However, the interpretation is complicated by early arrest in some embryos (C35), suggesting DLG-1 may also affect epidermal development, which could indirectly affect dendrite extension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C102"
+    ],
+    "result": "PAR-6 regulates DYF-7 localization. In par-6(M/Z) embryos, DYF-7 shows more diffuse localization at the rosette center (20% of embryos, 5/25) with significantly increased signal size (2.27\u00b10.41 \u03bcm vs 1.36\u00b10.25 \u03bcm in WT), and spreads along dendrites during extension (7/25 embryos).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C102 are supported by imaging analysis of par-6(M/Z) embryos with quantification and statistical testing (Figure 4A-C). The altered DYF-7 localization in par-6 mutants provides evidence for PAR-6's role in regulating DYF-7. However, the penetrance is incomplete (20-28% of embryos), and the functional significance of the altered localization is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C103"
+    ],
+    "result": "PAR-6 may play a role in dendrite extension and attachment. Among par-6(M/Z) embryos, 17/25 arrested early with 5 showing partial dendrite extension (likely due to epidermal defects), while 8/25 developed to 2-fold stage with 1 showing little dendrite extension despite apparently normal epidermal morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C48 and C103 are based on limited observations in par-6(M/Z) embryos (Figure 4\u2014figure supplement 1). The interpretation is complicated by PAR-6's known role in epidermal junction formation (C43), making it difficult to distinguish direct effects on dendrite-epidermis attachment from indirect effects via epidermal defects. The single embryo (1/8) with dendrite defects but normal epidermal development is suggestive but insufficient evidence. The authors appropriately express uncertainty (C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "DEX-1 functions in both phases of dendrite extension. In dex-1(ns42) mutants, 34/102 embryos showed detachment during posterior-directed extension, and 1/102 showed defects in anterior-directed extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by phenotypic analysis of dex-1(ns42) mutants (Figure 3F). The phenotypes are similar to but weaker than dyf-7, consistent with prior work showing DEX-1 and DYF-7 function together. The low penetrance in anterior extension (1%) limits strong conclusions about this phase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C52",
+      "C104"
+    ],
+    "result": "The amphid rosette-mediated mechanism for collective neurite outgrowth is distinct from the classical pioneer-follower model. Unlike other rosettes that undergo dynamic formation and resolution for cell intercalation, the amphid rosette remains stable and organizes collective dendrite extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C52, and C104 are supported by the experimental observations showing simultaneous, coordinated extension of multiple dendrites from a stable rosette structure, rather than sequential pioneer-follower dynamics. The comparison to other rosette contexts (C50-C51) provides appropriate context, though the mechanistic basis for rosette stability is not determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C80",
+      "C105"
+    ],
+    "result": "The initial extension of amphid dendrites is driven by migrating epidermis through physical attachment, representing a mechanical mechanism where skin provides mechanical cues that shape dendrites by physically coupling neurons to epidermal morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C80, and C105 are supported by the correlation between epidermal migration and dendrite extension (C9-C11), the elt-1(RNAi) experiments showing dendrite extension requires epidermal migration (C14-C18), and the observation that dendrite tips remain coupled even during epidermal retraction (C16). This represents a key conceptual advance in understanding tissue-neuron interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The molecular mechanisms and cellular substrates differ between the two phases of dendrite extension. During anterior extension, dendrite tips attach to hyp5 via redundant adhesion molecules (DYF-7, SAX-7, HMR-1, DLG-1). During the later phase, tips are anchored between hyp2/3 cells primarily via DYF-7. Transition zone proteins localize only after anterior extension is complete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C65-C66, C68-C70 are supported by the differential penetrance of dyf-7 mutations (C62-C63), the redundancy observed only in anterior extension (C64), the different cellular substrates (hyp5 vs hyp2/3), and the timing of transition zone protein localization from cited work. This demonstrates surprising complexity in dendrite extension mechanisms. However, C69 is based on unpublished data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Key structural features of the mature amphid are already seeded in the rosette before dramatic organ morphogenesis starts, suggesting that topological features of an organ can be specified early via short-range interactions before being extended over space through development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by observations that the rosette vertex becomes dendrite tips (C99), PAR-6 and DYF-7 localize to the vertex and remain at tips (C4-C5), and glial cells are engaged in the rosette. This represents an interesting developmental principle, though the generalizability beyond this system is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Electron microscopy studies show tight junctions between developing amphid dendrites and between neurons and sheath glial cells in the mature structure, defining an outward-facing apical surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by citation to prior work (Low et al., 2019). These are established findings from prior work that provide context for interpreting the current results, particularly regarding the potential apical nature of the rosette center.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C12",
+      "C13",
+      "C23",
+      "C24",
+      "C43",
+      "C58",
+      "C59",
+      "C60",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C107"
+    ],
+    "result": "Multiple claims cite prior work to establish context, including: DYF-7 and DEX-1 function in dendrite anchoring; ELT-1 and lin-26 in epidermal specification; SAX-7 and HMR-1 functions in other contexts; PAR-6 in epidermal junctions; amphid anatomy; pioneer-follower model; and roles of surrounding tissues in neuronal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6, C12-C13, C23-C24, C43, C58-C60, C71-C78, C84-C85, C87-C96, C107) appropriately cite prior work to establish context and background. The citations appear accurate based on the references provided, though detailed verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Coordination of neurite morphogenesis with surrounding tissues is crucial to neural circuit establishment, but the underlying cellular and molecular mechanisms remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 represent standard background statements establishing the motivation for the study. These are reasonable assessments of the field based on general knowledge and the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Multicellular rosettes have been found in diverse organisms and developmental contexts, where they are used to orchestrate cell intercalation and collective migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by citations to prior work on rosettes in various contexts. This provides appropriate context for comparing the amphid rosette to other rosette structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The interaction between amphid dendrites and epidermis appears to be a simple physical attachment at a focal point defined by the rosette, though it remains unclear whether SAX-7 acts in neurons, skin, or both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is a reasonable inference from the experimental observations showing focal attachment at the rosette vertex and correlation with epidermal migration. The acknowledgment of uncertainty about SAX-7's site of action is appropriate given the lack of tissue-specific rescue experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C86"
+    ],
+    "result": "In cultured hippocampal neurons, the PAR-6/PAR-3/aPKC complex is enriched at the future axon tip and provides local regulation of actin cytoskeleton. In C. elegans, UNC-33/CRMP localizes to the axon initial segment and has global effects on microtubule organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C86 cite established knowledge from vertebrate and C. elegans neuron polarity studies to provide context for discussing PAR-6's localization to dendrite tips in amphid neurons, which contrasts with its axonal localization in vertebrate neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The GFP tag in the DYF-7 construct labels the extracellular domain, but it is not yet known if DYF-7 cleavage occurs before or after localization to dendrite tips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 appropriately describe the construct design and acknowledge a gap in knowledge about the timing of DYF-7 processing. This is an honest assessment of the limitations in understanding DYF-7 biology.",
+    "result_type": "MINOR"
+  }
+]

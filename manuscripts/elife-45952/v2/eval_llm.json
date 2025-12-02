@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors used site-directed mutagenesis to generate 39 synonymous, 65 nonsynonymous, and 6 nonsense mutations at 34 sites in gtsB, then measured fitness through competitive assays in glucose-limited medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20, and C21 describe the experimental methodology clearly. The approach is standard and well-documented in the Materials and Methods section, with appropriate sample sizes for estimating a distribution of fitness effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Synonymous mutations in gtsB exhibit highly variable fitness effects, both deleterious and beneficial, with a distribution similar to nonsynonymous mutations except for strongly deleterious nonsense mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C27 are supported by Figure 1A and statistical testing (K-S test, p=0.0002). The significant difference is appropriately attributed to nonsense mutations. Visual and statistical evidence converge to support the variability claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29"
+    ],
+    "result": "The distribution of fitness effects for beneficial synonymous mutations is statistically indistinguishable from that of beneficial nonsynonymous mutations, suggesting both can contribute to adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by a bootstrapped K-S test (p=0.59) comparing beneficial mutations. The statistical test is appropriate, though the inference about adaptation (C29) is reasonable but extends beyond the direct data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The combined distribution of beneficial mutations is L-shaped and fits a Weibull distribution (K=-0.37), suggesting a local fitness optimum consistent with theoretical predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by Figure 1B and likelihood ratio test (p=0.0077). The statistical characterization is appropriate and the inference about a fitness optimum is consistent with cited theory, though the optimum itself is not directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "No significant relationship was found between fitness and codon position, CAI, or tAI, and there is no evidence for a translational ramp in gtsB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 report negative results with appropriate statistical tests (p>0.05 for all). The explanation in C37 about CAI being a gene-level metric is logical. These negative findings help rule out codon usage bias as the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "mRNA stability shows a weak relationship with fitness for nonsynonymous mutations but no relationship for synonymous mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 report statistical tests with appropriate p-values. The weak effect for nonsynonymous mutations (R\u00b2=0.11) and absence of effect for synonymous mutations help rule out mRNA stability as the primary mechanism for synonymous mutation effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "YFP fusion experiments demonstrate that synonymous mutations A15A and G38G affect transcription but not translation, while the nonsynonymous mutation A10T shows effects on both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 describe a well-designed experiment using transcriptional vs. translational YFP fusions (Figure 2A). The logic is sound and the data clearly distinguish transcriptional from translational effects. Statistical significance is reported (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "There is a strong positive correlation (R\u00b2=0.691, p=1.46\u00d710\u207b\u2078) between transcript abundance and fitness for 27 synonymous mutations, spanning both beneficial and deleterious effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by Figure 2B showing a clear linear relationship with strong statistical significance. The sample size (n=27) is adequate and the relationship holds across the fitness spectrum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mutations in gtsB cause polar effects, increasing transcription of downstream gene gtsC but not upstream gene gtsA, and co-expression of downstream genes is necessary for fitness increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by Figure 2C with strong statistical significance (p<5.0\u00d710\u207b\u2075 for gtsC, p>0.60 for gtsA). The inference about co-expression necessity (C62) integrates current data with prior work (Bailey et al., 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Computational promoter prediction identifies potential internal promoter sequences at beneficial mutation sites, with a non-significant trend toward positive correlation between promoter strength and fitness/transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C73 describe promoter predictions using BPROM software. While specific promoter sequences are identified (C67, C69), the relationships with fitness and transcription are not statistically significant (p=0.11-0.17, C71-C72). The limitation that BPROM uses E. coli rather than P. fluorescens sequences (C66) weakens confidence. The mechanism (C73) remains suggestive rather than proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "5' RACE mapping identifies transcriptional start sites near predicted promoters and mutation sites, supporting the hypothesis that synonymous mutations strengthen internal promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 describe 5' RACE experiments (Figure 3B) that provide direct evidence for transcriptional start sites. The mapping of start sites near mutations (C76-C78) and the predicted promoter (C76) supports the internal promoter hypothesis. The interpretation (C80) is reasonable given the data, though alternative mechanisms are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C96"
+    ],
+    "result": "The fitness variation among synonymous mutations is caused by changes in transcription linked to the creation or strengthening of internal promoter sites that affect downstream gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C96 synthesize multiple lines of evidence: YFP fusions showing transcriptional effects (C52-C55), correlation between transcription and fitness (C56), polar effects (C58-C60), promoter predictions (C67-C69), and 5' RACE mapping (C76-C80). While the precise mechanism remains somewhat uncertain (C97), the overall evidence strongly supports transcriptional changes as the primary cause.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Phylogenetic analysis of 77 Pseudomonas strains shows a positive correlation between mutation fitness in vitro and prevalence in nature (p=0.0210), with the highest-fitness synonymous mutation arising independently multiple times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 describe phylogenetic analysis (Figure 4) with appropriate statistical significance (p=0.0210). The independent occurrence of the highest-fitness mutation (C86) is particularly compelling. The inference that results are not laboratory artifacts (C87-C88) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C95"
+    ],
+    "result": "Synonymous mutations with non-neutral fitness effects may be commonplace in nature and can contribute to adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C95 represent the main conclusion, integrating the DFE data (C2-C3), mechanistic findings (C4), and phylogenetic evidence (C85-C86). The evidence is compelling within the specific system studied (gtsB under glucose limitation), though generalization to all genes and conditions requires caution.",
+    "result_type": "MAJOR"
+  }
+]

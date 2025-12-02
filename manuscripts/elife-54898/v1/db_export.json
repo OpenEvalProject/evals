@@ -1,0 +1,2403 @@
+{
+  "submission": {
+    "id": "4edae8ff-3562-444d-b9fb-8cd8113b8719",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:30:42.235922Z",
+    "updated_at": "2025-12-02T17:30:42.235922Z"
+  },
+  "content": [
+    {
+      "id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "submission_id": "4edae8ff-3562-444d-b9fb-8cd8113b8719",
+      "content_type": "manuscript",
+      "content_text": "# Universally high transcript error rates in bacteria\n\n## Authors\n\n- Weiyi Li<sup>1</sup> ([ORCID: 0000-0002-1168-7093](https://orcid.org/0000-0002-1168-7093))\n- Michael Lynch<sup>1</sup> ([ORCID: 0000-0002-1653-0642](https://orcid.org/0000-0002-1653-0642)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Indiana University Bloomington United States\n2. Center for Mechanisms of Evolution, The Biodesign Institute, Arizona State University Tempe United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nErrors can occur at any level during the replication and transcription of genetic information. Genetic mutations derived mainly from replication errors have been extensively studied. However, fundamental details of transcript errors, such as their rate, molecular spectrum, and functional effects, remain largely unknown. To globally identify transcript errors, we applied an adapted rolling-circle sequencing approach to Escherichia coli, Bacillus subtilis, Agrobacterium tumefaciens, and Mesoplasma florum, revealing transcript-error rates 3 to 4 orders of magnitude higher than the corresponding genetic mutation rates. The majority of detected errors would result in amino-acid changes, if translated. With errors identified from 9929 loci, the molecular spectrum and distribution of errors were uncovered in great detail. A G\u2192A substitution bias was observed in M. florum, which apparently has an error-prone RNA polymerase. Surprisingly, an increased frequency of nonsense errors towards the 3\u2032 end of mRNAs was observed, suggesting a Nonsense-Mediated Decay-like quality-control mechanism in prokaryotes.\n\n## Introduction\n\nTranscript errors refer to any inconsistencies between RNA transcripts and their corresponding genomic loci. They can occur during ribonucleotide (rNTP) incorporations by RNA polymerases and/or via post-transcriptional modifications. Errors on RNA transcripts may directly cause dysfunctions due to the regulatory roles of small RNAs and the fate determination of mRNAs by RNA structural motifs (Strathern et al., 2012). Such errors can also indirectly induce various effects at the protein level. Transcript errors can inactivate proteins and result in a loss-of-function (Gordon et al., 2013). They can also indirectly give rise to misfolded proteins and induce proteotoxic stress (Gout et al., 2017; Vermulst et al., 2015). Errors on RNA transcripts may be causal factors leading to neuron degenerative diseases (van Leeuwen et al., 1998a; van Leeuwen et al., 1998b) and tumorigenesis (Saxowsky et al., 2008). Therefore, transcript errors represent a significant potential mechanism influencing cellular integrity and fitness.\n\nReporter-construct assays have long been the major approach to evaluating the fidelity of RNA polymerases and identifying transcript errors (Blank et al., 1986; Bubunenko et al., 2017; Nesser et al., 2006; Rosenberger and Foskett, 1981; Rosenberger and Hilton, 1983; Shaw et al., 2002; Springgate and Loeb, 1975; Strathern et al., 2012), but these methods focus only on individual loci and cannot identify errors without phenotypic marker effects. Conventional high-throughput sequencing approaches have been considered to identify transcript errors at a large scale (van Dijk et al., 2015). However, the challenge is to distinguish the real signal of transcript errors from noise produced by technical errors resulting during reverse transcription and sequencing. To circumvent this problem, a rolling-circle amplification-based sequencing (CirSeq) method (Acevedo and Andino, 2014; Acevedo et al., 2014; Lou et al., 2013) was recently proposed and later applied to identify transcript errors in the whole transcriptome of prokaryotes (Traverse and Ochman, 2016). We further modified this protocol to minimize RNA damage potentially introduced during the preparation of sequencing libraries (Gout et al., 2017).\n\nIn this study, we applied an adapted CirSeq approach, which has been demonstrated to identify transcript errors accurately and efficiently at a large scale in eukaryotes (Gout et al., 2017), to prokaryotes for the first time. A large number of transcript errors was detected, and transcript-error rates were revealed to be orders of magnitude higher than corresponding genetic mutation rates. Our results indicate that the bias in molecular spectra of transcript errors can be influenced by both RNA polymerases and cellular rNTP concentrations. Furthermore, the spatial distribution of transcript errors on RNAs provides novel insights into the mechanism of RNA quality-control in prokaryotes.\n\n## Results\n\n### A global view of the transcript error distribution\n\nApplying the adapted CirSeq method (see Materials and methods) to E. coli, B. subtilis, A. tumefaciens, and M. florum, RNA sequencing libraries were made with three biological replicates for each species. Key steps of library preparations involve circularizing RNA fragments and generating cDNAs with tandem repeats by rolling-circle reverse transcription. In this way, transcript errors tend\u00a0to\u00a0appear on all repeats of sequencing reads, while sequencing and reverse transcription errors are nearly always revealed as singletons (Figure 1\u2014figure supplement 1). The number of loci where transcript errors were identified from each species ranges from 2006 to 2942, totaling 9929 loci across all species. M. florum showed a per-site error rate of $1.82\\pm0.01(SEM)\\times10^{-5}$, the highest among the four species ($P=0.009$, Mann-Whitney U test). The error rates in E. coli, B. subtilis, and A. tumefaciens were $5.84\\pm0.10(SEM)\\times10^{-6}$, $5.80\\pm0.14(SEM)\\times10^{-6}$, and $7.26\\pm0.35(SEM)\\times10^{-6}$, respectively. These error rates are 3 to 4 orders of magnitude higher than the corresponding genomic (DNA-level) mutation rates estimated from mutation-accumulation experiments in these species (Lee et al., 2012; Lynch et al., 2016; Sung et al., 2016; Sung et al., 2015; Sung et al., 2012).\n\nWith such a large number of transcript errors identified, a transcriptome-wide view of the error distribution in each species was uncovered. Based on the circular genomes of bacteria (except for A. tumefaciens, which has one circular chromosome, one linear chromosome, and two plasmids [Goodner et al., 2001]), we annotated genomic positions of transcript errors with different potential functional effects and plotted transcript-error rates in 10 kb sliding windows (1 kb for M. florum) (Figure 1). To test whether transcript errors are randomly distributed across different genes, a previously proposed test (Long et al., 2016) was performed to identify genes enriched with transcript errors. For each gene, the expected number of transcript errors was calculated as the product of the average transcriptome-wide error rate per base and the sequencing coverage of the gene. The Poisson probability of observing a number of errors greater than or equal to the observed number was calculated. Out of 607, 495, 586, and 186 genes with detected transcript errors in E. coli, A. tumefaciens, B. subtilis and M. florum, respectively, 1, 4, 0 and 4 genes were revealed to have significantly larger numbers of errors than random expectations (Bonferroni-corrected P values of 0.05, Supplementary file 1, Tables 2-5), suggesting that transcript errors are in general randomly distributed across genes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54898/elife-54898-fig1-v1.jpg)\n\n**Figure 1.:** The first nucleotide of the circular chromosome starts at the 12 o\u2019clock position. For A. tumefaciens, chromosomes and plasmids are arranged from the largest to smallest size in a clockwise orientation. From the outer ring to the inner ring: bacterial chromosomes (dark gray), protein-coding region (grey, black strokes indicate gene densities), synonymous substitutions (blue), missense substitutions (orange), nonsense substitutions (purple) and average transcript-error rates (plots in dark gray) in a 10 kb sliding window with a step size of 1 bp (1 kb windows for M. florum). Windows without sufficient sequencing coverages to detect transcript errors are left blank.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54898/elife-54898-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Total\u00a0RNA transcripts are extracted, rRNA-depleted, and enzymatically fragmented. Afterwards, RNA fragments are circularized and go through rolling-circle reverse transcription. cDNAs with tandem repeats are generated to make sequencing libraries. The black dot indicates a transcript error. Dots in blue and green refer to errors that emerged during reverse transcription. The brown dot denotes a sequencing error. Transcript errors tend\u00a0to\u00a0appear on all repeats of sequencing reads while reverse transcription and sequencing errors are likely to be shown as singletons.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54898/elife-54898-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Different from reads generated by conventional RNA-seq, CirSeq reads may contain multiple tandem repeats and the size of the repeat needs to be inferred first. Afterwards, repeats within one read are merged to a construct consensus sequence. This is the error-correction step where technical errors get corrected and the sequencing quality score is recalculated. To reorganize the consensus sequence, we used a duplicate-based mapping approach and the longest continues mapped region corresponds to the original RNA fragment.\n\nThe whole bacterial transcriptome is synthesized by a single type of RNA polymerase. However, RNA products from protein-coding and noncoding RNA (ncRNA) regions undergo distinct co- and post-transcriptional processes. mRNAs are mature upon transcription and ready for translation, while ncRNAs, such as ribosomal RNAs (rRNA) and transfer RNAs (tRNA), need to be further processed to be functional (Cooper, 2000). To evaluate whether transcript-error rates of these two genomic regions are different, we calculated the error rates of protein-coding and ncRNA transcripts by dividing the number of errors by the number of nucleotides assayed in corresponding regions. Transcript-error rates of these two regions are similar in E. coli and A. tumefaciens, but the error rate of ncRNA transcripts is higher than that of protein-coding transcripts in B. subtilis and lower in M. florum (p<0.05, paired t-test) (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54898/elife-54898-fig2-v1.jpg)\n\n**Figure 2.:** cds includes all protein-coding genes that were sequenced in this study. ncRNA refers to RNAs that are functional but not translated into proteins, for\u00a0example tRNA and rRNA. Transcript-error rates were calculated by dividing the number of errors by the number of nucleotides assayed in corresponding regions. Error bars indicate standard errors. The level of significance difference is indicated by asterisks (*p<0.05, paired t-test).\n\n### The molecular spectra of transcript errors are biased to C\u2192U and G\u2192A substitutions\n\nA transition/transversion bias of genetic mutations has been widely observed in different species, with the molecular spectrum mostly dominated by G:C\u2192A:T substitutions (Hershberg and Petrov, 2010; Hildebrand et al., 2010; Lynch, 2010). However, knowledge on the molecular spectrum of transcript errors in prokaryotes remains limited (Imashimizu et al., 2015; Traverse and Ochman, 2016; Traverse and Ochman, 2018). In this study, we calculated the error rate of all twelve categories of substitutions for each species (Figure 3), revealing a general bias of transitions over transversions. This bias has been thought to be driven solely by C\u2192U substitutions (Traverse and Ochman, 2016), which may mainly result from post-transcriptional cytosine deaminations. However, the transition/transversion bias here even holds after C\u2192U substitutions are excluded (P < 0.005, \u03c72 test, Supplementary file 1, Table 6). This observation indicates that the transcriptional machinery in bacteria, similar to the replication machinery, tends to have a low ability to distinguish rNTPs within the same structural class of nitrogenous bases (Keightley et al., 2009; Kucukyildirim et al., 2016; Lee et al., 2012; Long et al., 2015a; Long et al., 2015b; Lynch, 2007; Lynch, 2010; Lynch et al., 2008; Ossowski et al., 2010; Sung et al., 2015). Of all transitions, the C\u2192U substitution rate is consistently high in all four species. In addition, an unexpectedly high G\u2192A substitution rate is revealed in M. florum, which displayed the highest transcript-error rates among four species in the present study. Intriguingly, this substitution bias was also recently observed in yeast and E. coli transcription-machinery mutants with decreased fidelity (Gout et al., 2017; Imashimizu et al., 2015; Traverse and Ochman, 2018). Thus, the G\u2192A substitution bias may be a signature of error-prone RNA polymerase in both eukaryotes and prokaryotes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54898/elife-54898-fig3-v1.jpg)\n\n**Figure 3.:** The conditional error rates of each type of substitutions were calculated from the number of particular transcript errors, divided by the number of corresponding ribonucleotides assayed. Error bars indicate standard errors.\n\n### Characterization of transcript errors\n\nTo evaluate potential functional effects of transcript errors, we categorized transcript errors within protein-coding regions into synonymous, missense, and nonsense substitutions using SnpEff (Cingolani et al., 2012;\u00a0Table 1). Based on the bias of rNTP substitution rates (Figure 3) and codon usages of each bacterium, we also calculated the expected percentages of each error type under the assumption that transcript errors are randomly generated across the genome without error-correction processes (see Materials and methods, and Supplementary file 1, Table 7). Consistent with observations, the majority of transcript errors are expected to result in amino-acid changes, if translated (Table 1). For nonsense errors, the observed percentages are close to or significantly lower than the random expectation (P < 0.005,\u00a0\u03c72 test, Table 1).\n\n**Table 1.**\n Percentages of transcript errors in mRNAs that are synonymous, missense, or nonsense (other potential types of transcript errors with small percentages, such as start/stop codon loss-errors, are not shown).Observed and expected (in parentheses) percentages are presented. Based on the bias of observed rNTP substitution rates and codon usages of each bacterium, expected percentages are calculated assuming a random generation of errors and an absence of error-correction processes. The level of significant difference is indicated by asterisks (*P < 0.05, ** P < 0.005,\u00a0\u03c72 test).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>Synonymous</th>\n      <th>Missense</th>\n      <th>Nonsense</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>E. coli</td>\n      <td>40.18 (34.35) **</td>\n      <td>56.25 (59.79) *</td>\n      <td>3.57 (5.62) **</td>\n    </tr>\n    <tr>\n      <td>B. subtilis</td>\n      <td>32.76 (31.86)</td>\n      <td>61.69 (61.63)</td>\n      <td>5.15 (6.15)</td>\n    </tr>\n    <tr>\n      <td>A. tumefaciens</td>\n      <td>40.68 (36.76) *</td>\n      <td>56.36 (59.17)</td>\n      <td>2.96 (3.86)</td>\n    </tr>\n    <tr>\n      <td>M. florum</td>\n      <td>17.58 (24.12) **</td>\n      <td>79.27 (70.58) **</td>\n      <td>2.37 (4.85) **</td>\n    </tr>\n  </tbody>\n</table>\n\n### Biased distribution of nonsense errors in RNA transcripts\n\nAs shown in Table 1, nonsense errors represent only a small percentage of all errors. However, they are of particular interest because they will result in the formation of a premature termination codon (PTC) and thus truncated proteins if not degraded. To ameliorate the potential severe fitness effects resulting from such errors, eukaryotes have evolved the Nonsense Mediated Decay (NMD) mechanism (Losson and Lacroute, 1979; Maquat, 1995; Peltz et al., 1993) to facilitate the degradation of RNA transcripts carrying PTCs. A key to the success of NMD is distinguishing a PTC from the original stop codon (Amrani et al., 2004; Le Hir et al., 2001), and the ability of the NMD machinery to identify a PTC is thought to diminish as the PTC approaches the 3\u2032 end of a mRNA (Isken and Maquat, 2007). This hypothesis is supported by yeast transcript-error data that show a marked increase in the frequency of PTCs towards the 3\u2032 end of mRNAs (Gout et al., 2017).\n\nAlthough no analog of the eukaryotic NMD system is known in prokaryotes, a destabilizing effect of PTCs on mRNA stability has been observed in bacteria (Arnold et al., 1998; Braun, 1998; Morse and Yanofsky, 1969; Nilsson et al., 1987). Evaluating the distribution of nonsense errors across the whole length of mRNA transcripts, we observed an increased frequency of nonsense errors at the 3\u2032 end of transcripts, although the trend is not statistically significant in A. tumefaciens (Figure 4A). Compared to other three species, a smaller number of nonsense errors were detected in A. tumefaciens (Supplementary file 1, Table 7), which may result in a low statistical power to reveal a potential pattern for the distribution of nonsense errors. We further modified the analysis by dividing the frequency of nonsense errors by that of all errors. This ratio tends to be higher at the 3\u2032 end of mRNAs (Figure 4\u2014figure supplement 1), excluding the possibility that the enrichment of nonsense errors results mainly from a higher overall transcript-error rate at the 3\u2032 end of mRNAs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54898/elife-54898-fig4-v1.jpg)\n\n**Figure 4.:** (A) Distributions of nonsense errors across mRNA transcripts. The frequency of nonsense errors is calculated in a 100-nt sliding window with a step size of 1 nt for data visualization. Grey intervals represent standard deviations assuming the number of errors at each locus follows\u00a0a binomial distribution. Linear regression between the distance to the original stop codon and the frequency of nonsense errors of each window is indicated in dark grey lines. P values were calculated from weighted linear regressions of individual data points before binning into a window. (B) The ribosome-release model for PTCs degradation in prokaryotes. Compared to a late PTC, an early PTC results in a larger portion of ribonucleotides unprotected by ribosomes, and therefore a higher probability of being digested by cellular ribonuclease.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54898/elife-54898-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The ratio is calculated in a 100-nt sliding window with a step size of 1 nt for data visualization. Grey intervals represent standard deviations. Linear regression between the distance to the original stop codon and the frequency of nonsense errors of each window is indicated in dark grey lines. P values were calculated from weighted linear regressions of individual data points before binning into a window.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/54898/elife-54898-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Compared to Figure 4A, the frequency is further normalized by the number of one-off codons within each sliding window. Grey intervals represent standard deviations. Linear regression between the distance to the original stop codon and the frequency of nonsense errors of each window is indicated in dark grey lines. P values were calculated from weighted linear regressions of individual data points before binning into a window.\n\nOf all types of genetic codons, those with one nucleotide difference from a stop codon (one-off codons) have a higher probability of mutating into PTCs. We further normalized the frequency of nonsense errors by the abundance of one-off codons at corresponding loci. This still revealed an increased frequency of nonsense errors towards 3\u2032 ends of transcripts (Figure 4\u2014figure supplement 2), suggesting the higher frequency of nonsense errors is not caused by more abundant one-off codons at the 3\u2032 end of transcripts.\n\nThe increased frequency of PTCs at the 3\u2032 end of mRNA transcripts suggests the presence of an NMD-like process, albeit by a likely different mechanism than in eukaryotes, which largely rely on the poly-A tail or exon-exon junction complex (Amrani et al., 2004). One speculative model for the degradation of PTCs in eukaryotes, the ribosome-release model (Brogna and Wen, 2009), in which the degradation of RNAs with PTCs depends on the degree of ribosome coverage on RNA molecules, has the potential to hold true in prokaryotes. Ribosomes can load on to nascent transcripts immediately after RNA synthesis. Therefore, a whole transcript with a normal stop codon can be covered by multiple ribosomes towards its 3\u2032 end, with these ribosomes protecting the transcript from degradation by blocking ribonuclease cleavage sites. In contrast, a PTC upstream of the original stop codon will stall the ribosomes, leaving the ribonucleotides between the PTC and the site of the original stop codon unprotected by ribosomes, potentially promoting degradation by cellular ribonucleases (Figure 4B).\n\n## Discussion\n\nA key to accurately identifying bona fide transcript errors is to distinguish them from technical errors and low-frequency genetic mutations. With previous efforts on method development to eliminate sequencing errors (Acevedo and Andino, 2014; Acevedo et al., 2014; Lou et al., 2013) and to evaluate the error rate of the reverse transcriptase (Gout et al., 2013), it is now possible to ensure that contributions from such technical errors are orders of magnitudes lower than true transcript-error rates by the CirSeq approach (See Materials and methods). Except for M. florum, transcript-error rates in bacteria estimated by the current study are about one order of magnitude lower than those from a previous study (Traverse and Ochman, 2016). Specifically in E. coli, our error-rate estimates for each type of substitutions tend to be lower than those from Traverse and Ochman (2016), the most striking difference involving the C\u2192U substitution rate, which could be partly due to the use of a metal ion-based RNA fragmentation approach in the previous work vs. enzymatic RNA fragmentation in the present study. The latter minimizes RNA damage (Gout et al., 2017), in particular cytosine deaminations, introduced during the preparation of the sequencing library.\n\nBesides base-substitution errors, a small portion of transcript errors can occur in other forms such as insertions and deletions. Estimates of transcript insertion/deletion (indel) error rates from species in this study are 0.1 to 0.2 of the corresponding base-substitution error rates (Supplementary file 1, Table 1).\n\nBacterial transcriptomes predominantly consist of ncRNA transcripts, such as rRNAs and tRNAs (Westermann et al., 2012). However, only a small portion of the whole ncRNA transcripts was evaluated in the present study (Supplementary file 1, Table 8) because of technical limitations. The rRNA depletion procedure in the sequencing library preparation protocol removes the majority of rRNAs. Secondary structures and nucleotide modifications of tRNAs interfere the cDNA synthesis and sequencing adapter ligations. In the future, to achieve a better measurement of transcript-error rates of ncRNA transcripts, total RNAs can be mixed with rRNA-depleted RNAs at a certain ratio to increase the abundance of rRNAs in the sequencing library. Demethylase enzymes and thermophilic reversetranscriptase can be used to remove nucleotide modifications of tRNAs and to improve processivity in generating cDNAs from highly structured RNA templates (Schwartz et al., 2018; Zheng et al., 2015).\n\nThe molecular spectrum of transcript errors revealed in our work indicates a general C\u2192U substitution bias, which has been proposed to be due to spontaneous deamination (Imashimizu et al., 2013; Traverse and Ochman, 2016) owing to the chemical instability of cytosine (Alberts et al., 2015). Besides this widely accepted mechanism, non-Watson-Crick base pairing during rNTP incorporations may also contribute to this bias. Because dG and rU can form a base pair (Sugimoto et al., 2000; Sugimoto et al., 1997), mispairing between a template DNA (dG) and an RNA (rU) during rNTP incorporations likely also contributes to the C\u2192U substitution bias.\n\nAnother intriguing observation from the molecular spectra in the present study is the G\u2192A substitution bias in M. florum. One source for this substitution may be unrepaired uracils on the DNA antisense strand, which pair with rATPs during transcription, resulting in a G\u2192A substitution on the RNA transcript. Although M. florum has a diminutive genome (0.79 Mb) and lacks many genes (RefSeq NC_006055.1), a uracil-DNA glycosylase (UDG) ortholog whose product presumably removes uracils (McCullough et al., 1999) does exist in the genome. Therefore, the extent to which mismatches between the unrepaired uracil and rATP can explain the G\u2192A bias remains unclear.\n\nTaking data from previous studies (Gout et al., 2017; Imashimizu et al., 2015; Traverse and Ochman, 2018) and this work together, G\u2192A substitution bias seems to be a general pattern in cells with error-prone transcription machineries. What might be the underlying mechanism? The error spectrum is shaped by two factors. One is the ability of an RNA polymerase to distinguish correct rNTPs from incorrect ones. The other factor, which is sometimes neglected, is the rNTP pool within a cell. The error rate of competitive binding of rNTPs to the template can be expressed as, $(k_{incorrect}\u2219C_{incorrect-rNTPs})/(k_{correct}\u2219C_{correct-rNTPs})$, where $k$ refers to the rNTP incorporation rate and $C$ indicates the concentration of rNTPs. As suggested by this equation, a biased cellular rNTP concentration might present an additional challenge to transcriptional fidelity for certain categories of rNTPs. Based on observations that RNA polymerases have a low ability to distinguish rNTPs with the same structural class of nitrogenous bases and that the cellular concentration of rATPs is the highest among all types of nucleotides in both eukaryotes and prokaryotes (Bennett et al., 2009; Buckstein et al., 2008; Traut, 1994), it is reasonable to speculate that the high cellular concentration of rATPs contribute to the observed bias towards G\u2192A substitutions.\n\nAn additional cellular process influencing transcript errors is RNA quality-control. Because genes involved in NMD, such as up-frameshift (UPF) genes, have not been identified in prokaryotes, evidence for the existence of NMD in prokaryotes is still lacking. However, previous studies based on single gene-reporters (Baker and Mackie, 2003; Braun, 1998; Nilsson et al., 1987) and our transcriptome-wide survey suggest a Nonsense-Mediated Decay-like quality-control mechanism in prokaryotes. A key implication of the increased frequency of nonsense errors at the 3\u2032 end of mRNAs (Figure 4A) is that the degradation of RNAs carrying nonsense errors may simply result from a higher degree of exposure to cellular ribonucleases rather than from a reliance on specific protein-based systems.\n\nCurrent models of mRNA surveillance mechanisms mostly focus on stop codon-related errors (Deutscher, 2006; Richards et al., 2008), which are expected to represent only a small portion of the total transcript errors in a cell. It is largely unknown whether, and if so by which mechanisms the major transcript errors (missense errors) get degraded. To resolve this, future research will be required to evaluate the rate at which transcript errors are degraded after initially being generated during transcription. This might be possible by comparing transcript errors on nascent transcripts bound to RNA polymerases with those on mature transcripts associated with ribosomes.\n\n## Materials and methods\n\n### Bacteria strains and growth conditions\n\nAll bacteria strains were inoculated into liquid culture from single colonies and grew to mid-exponential growth phase upon harvest. E. coli MG1655 and B. subtilis NCIB 3610 were grown at 37\u00b0C in LB liquid medium. M. florum L1 (ATCC #33453) was grown at 30\u00b0C in SNE liquid medium. A. tumefaciens C58 was grown at 28\u00b0C in LB liquid medium.\n\n### RNA extraction\n\nBacteria were harvested from liquid culture media by centrifugation and total RNA was extracted and purified using the FastRNA Blue Kit (MPBiomedicals), RNase-free DNase set (Qiagen), and the RNeasy Mini Kit (Qiagen). rRNA was depleted by the Ribo-Zero rRNA Removal Kit (Bacteria) (Illumina) for the following library preparations.\n\n### Library preparation and sequencing\n\nWe followed a refined protocol of CirSeq (Gout et al., 2017) to prepare libraries for transcript error identifications. Five hundred nanograms of rRNA-depleted RNAs were firstly fragmented with the NEBNext RNase III RNA Fragmentation Module (New England Biolabs) for 90 min at 37\u00b0C. After a clean-up using the Oligo Clean and Concentrator kit (Zymo Research), RNA fragments were circularized with RNA ligase 1 (New England Biolabs) according to the manufactuer\u2019s guidelines. cDNA with tandem repeats was generated by the rolling-circle reverse transcription as described in the refined CirSeq protocol. Synthesis of the second strand of cDNA and sequencing library preparation were performed using the NEBNext Ultra RNA Library Prep Kit and NEBNext Multiplex Oligos for Illumina (New England Biolabs). The size selection and clean-up during sequencing library preparations were performed by Agencourt AMPure XP Beads (Beckman Coulter) according the NEB guideline that is optimized for approximately 200nt RNA inserts. A final gel-based size selection was performed to enrich PCR amplified products that are longer than 300nt. Single-end reads (300nt) were then generated using Illumina HiSeq 2500 System. The sequencing data were deposited in NCBI with the BioProject Number PRJNA592142.\n\n### Genome references and annotation files\n\nThe accession numbers of genome references for E. coli, B. subtilis, and M. florum are NC_000913.3, NZ_CM000488.1, and NC_006055.1. For A. tumefacien, accession numbers are NC_003062.2, NC_003063.2, NC_003064.2 and NC_003065.3. The corresponding genome annotation files are from RefSeq.\n\n### Data analysis\n\nSeveral analysis pipelines already existed to process reads with multiple tandem repeats and call transcript errors, but with their own limitations. The CirSeq_v2 pipeline (Acevedo and Andino, 2014; Acevedo et al., 2014) can only analyze reads with exactly three repeats and reads generated by CirSeq approach can contain more than four repeats if the original RNA template is smaller than 75 nt. Another pipeline described in a recent work in yeast (Gout et al., 2017) cannot generate consensus calls and recalculate the quality score from a site where not all base calls are identical. Therefore, we developed Python scripts following the methods outlined by Lou et al. (2013) (Figure 1\u2014figure supplement 2). The structure of repeats within one read was identified by an autocorrelation-based method, in which the length of one potential repeat $P$ is detected by the maximum fraction of identical base calls that are separated by a distance $P$ within one read. The consensus sequence was constructed and the corresponding new quality score was calculated by a Bayesian approach where an inferred consensus call is taken with the maximum posterior probability given all observed base calls. This approach also allows the processing of varied numbers and types of base calls at one site. To identify the ligation junction of circular templates and to reorganize the consensus sequence, a tandem duplicate of the consensus sequence was constructed and then mapped back to the reference genome by BWA (Li and Durbin, 2009). The longest continuous mapped regions of the duplicated consensus sequences therefore correspond to original RNA fragments. We also excluded the 4 nucleotides at both ends of the reorganized consensus sequence to minimize potential confusions, because mapping can be ambiguous at the two ends of RNA fragments. After mapping of reconstructed consensus sequences, reads uniquely mapped to protein-coding regions and all reads mapped to ncRNA regions were kept. Transcript errors were called if a mismatch between a consensus call and the reference was supported by less than 1% of reads at corresponding loci. To exclude false positives of transcript errors from genetic mutations in multiple copies of ncRNA genes (such as rRNA and tRNA genes), an additional filter was included to exclude an error call that is supported by genetic variations from different copies of ncRNA genes. The transcript error rate of a given region was calculated as the number of transcript errors divided by the total number of rNTPs assayed from the corresponding region. The code for the bioinformatic pipeline can be found at https://github.com/LynchLab/CirSeq4TranscriptErrors\u00a0(Li, 2020; copy archived at https://github.com/elifesciences-publications/CirSeq4TranscriptErrors).\n\n### Strategies to distinguish transcript errors from other types of errors\n\nFirst, reverse transcription and sequencing errors need to be filtered out in the analysis. Because the rate of transcript error is generally 10-6\u00a0\u223c\u00a010-5\u00a0/nt\u00a0, the recalculated probability of an erroneous base call at\u00a010-7\u00a0or lower was required to minimize contaminations from sequencing errors. Because the error rate of the reverse transcriptase used here is\u00a0\u223c10-4\u00a0/nt (Gout et al., 2013), at least two tandem repeats were required in the analysis to minimize false positives from reverse transcription errors.\n\nSecond, genetic mutations (DNA level) can arise during cell culture and low frequency mutations can behave like transcript errors in the sequencing data. The probability of capturing a genetic mutation can be calculated by dividing the expected number of genetic mutations generated during cell propagations by the total transcriptome size at the time point of sample collection,\u00a0$\\frac{\\mu\u22c5g\u22c5T\u22c5n}{T\u22c5n}$, in which \u00b5 is the per site per generation mutation rate, $g$ is the number of generations during cell culture, $T$ is the size of genome regions get transcribed, and $n$ is the average expression level per site. This equation can be further simplified as \u00b5g. Because we know the mutation rate from mutation accumulation experiments (Lee et al., 2012; Lynch et al., 2016; Sung et al., 2016; Sung et al., 2015; Sung et al., 2012) and the number of generations from culture-growth dynamics (~30 generations), Low frequency genetic mutation can only inflate the transcript-error rate we calculated here by ~1\u2030 -1%.\n\n### To calculate the expected percentages of transcript errors with different effects\n\nTake the calculation for synonymous substitution as one example. The percentage can be calculated by summing the probabilities of each codon to have a synonymous change, $P(syn)=\\sumi=164P_{i}\u2219P_{i(syn)}$. $P_{i}$ refers to the probability of having codon $i$ based on the codon usage of a specific genome and there are 64 codons in total. $P_{i(syn)}$ is the probability that codon $i$ has a synonymous substitution and it can be calculated from, $P_{isyn}=\\sumj=19\\mu_{j}\u22191_{jresultsinsyn}$. $\\mu_{j}$ denotes the substitution probability of 1 of the 9 single-base substitutions that can happen in one codon. And it can be calculated by, $\\mu_{j}=\\frac{e_{j}}{\\sumj=19e_{j}},$ in which $e_{j}$ refers to the error rate of 1 of the 9 substitutions in one codon. Estimates of $e_{j}$ are displayed in Figure 3.\n\n### The sliding window analysis and weighted linear regression to evaluate the distribution of nonsense errors on mRNA transcripts\n\nThe sliding window analysis (window size =\u00a0100nt and step size = 1nt) of the distribution of nonsense errors across mRNAs was used for data visualization. To evaluate whether or not the negative correlation between the frequency of nonsense errors and the corresponding distance from a nonsense error to the original stop codon is statistically significant, a weighted linear regression method was used. The weight was calculated as the reciprocal of a variance of a nonsense error frequency. Because the observed number of transcript errors at each locus is expected to follow a binomial distribution, the variance of the nonsense error frequency can be estimated as $\\frac{p(1-p)}{n}$, where $p$ is the estimated frequency of errors and $n$ refers to the read coverage at the corresponding locus.\n",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "a75281bb-0347-4a65-a39f-cfb9468441d8",
+      "submission_id": "4edae8ff-3562-444d-b9fb-8cd8113b8719",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian R Landry, Universit\u00e9 Laval Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54898.sa1](https://doi.org/10.7554/eLife.54898.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nDNA replication errors are one of the engines of evolution. However, how errors accumulate at the different steps of the central dogma of molecular biology has received limited attention. Investigating how errors in transcription and translation affect cell biology first requires that we measure their rates and that we examine how they affect various species. In this study, the authors use a recently developed technology to measure transcription error rates in four species of bacteria. Their results reveal that transcription error rates are higher than mutation rates, that many of these errors lead to amino acid changes if translated and that there may be a mechanism in prokaryotes for the quality control of mRNAs. These results open new research avenues on how cells may control the propagation of errors along the steps of the central dogma and why such error rates may be tolerated by evolution.\n\nDecision letter after peer review:\n\nThank you for submitting your work entitled \"Universally high transcript error rates in bacteria\" for consideration by eLife. Your article has been reviewed by a Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Joanna Masel (Reviewer #3).\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife. But please keep in mind that a substantially changed version could be re-submitted as a new paper.\n\nThe reviewers agree that the questions addressed are interesting and important and consider that it is possible to improve the manuscript so that it meets their criticisms. They found particularly interesting the proposed mechanism based on premature termination but found that it was not fully supported by the analyses and may require actual lab experiments. They also identified several issues with the presentation of the data and some of the analyses. In light of this, we cannot consider the manuscript further under its present form. Their complete comments appear below.\n\nReviewer #1:\n\nThe manuscript submitted by Li and Lynch is interested in transcript error rates in bacteria, which were already known to be orders of magnitude more frequent than replication errors. The authors developed a slightly modified version of the previously published CirSeq approach, which produces tandem copies of transcribed fragments from circularized RNA molecules, to allow a more accurate detection of errors on a genome-wide scale. The authors used this method to quantify mutations in transcripts from four representative bacteria, and showed evidence suggesting that the M. florum RNA polymerase is error-prone, with a strong G to A substitution bias compared to the other bacteria. The authors showed data suggesting that nonsense mutations tend to accumulate at the 3' end of transcripts and proposed a model to explain how transcripts containing a premature termination codon could be recognized and degraded by the cell.\n\nOverall, I found the topic interesting but the results rely on a single type of evidence (CirSeq) and are mostly descriptive. Additional experiments would be required in my opinion to fully support the model proposed by the authors. For example, it would be interesting to introduce a premature termination codon at different positions in a reporter gene such as lacZ and evaluate if such mutated transcripts have a shorter half-life compared to the wild-type. I am still debating whether this is essential for this manuscript or not. I also noted a few suggestions or elements that should be clarified:\n\n- It would be useful for readers to include a more detailed description of CirSeq as the manuscript heavily depends on this technique. The manuscript was mentioning reference work but a short explanation would help.\n\n- The average mutation rate of reverse transcriptase is ~1E-4. Since this rate is relatively high, the authors only considered mutations with at least two tandem repetitions in the CirSeq data. Were the reverse transcription errors observed by Gout et al., (2013) evenly distributed across the transcripts (hotspots), and were certain mutations types more predominant than others? If such biases exist, would it still be possible to confidently discriminate between reverse transcription errors versus transcription errors? Can the authors comment on that?\n\n- In Figure 4 and Figure S1 to Figure S3, how were the replicates processed? Were they combined before the sliding window analysis or after? Would it be relevant to show the error frequency calculated for each replicate to see the inter-replicate variability? The Pearson's correlations coefficients should also be present on the figures, especially for Figure S1 as this comparison is very important for the conclusions. My first impression was that Pearson correlation coefficient from Figure S1 (all transcript errors) would be similar to those reported for Figure 4 (nonsense errors) but the comparison is not possible in this version of the manuscript. Is there a reason to not show the Pearson's correlation coefficient on Figure S1 but show them in Figure 4 and Figure S2- Figure S3? From what I understand in subsection \u201cBiased distribution of nonsense errors in RNA transcripts\u201d, the correlation coefficients calculated on data presented in Figure S1 should not be significant. Is that the case?\n\nReviewer #2:\n\nThe manuscript by Li and Lynch reports the mutational spectrum of transcription in 4 bacterial species. The objective, results and discussion are clear and easy to read. However, I found that the methodological descriptions often lack important technicalities that are needed (at least to me) to fully appreciate what the authors have done exactly. I will first raise few general points and then provide a list of missing methodological pieces of info. I have no expertise in the molecular biology part, so I won't comment on it.\n\n- Subsection \u201cA global view of the transcript error distribution\u201d: If the authors used a Bonferroni correction for multiple testing, they should not observe 5% of false positives, but expect 0.05 false positives, that is well below 1. Typically they should observe 0 positive if H0 is correct. If they really observe 5%-ish (as it is implied in the text), they do have a lot of significant genes for which transcripts are enriched in mutations.\n\n- Subsection \u201cBiased distribution of nonsense errors in RNA transcripts\u201d: the authors report an overrepresentation of non-sense mutations near the 3' of the transcript. This is interpreted as a sign of a potential NMD in bacteria. I indeed think this is indeed a possibility. Alternatively, it could also be the case that simply there are more mutations in the 3' end of transcript in general. What is the pattern for missense and synonymous mutations regarding their localization in the genes?\n\n- Subsection \u201cBiased distribution of nonsense errors in RNA transcripts\u201d: I am not sure of what the added value of this measure of relative gene length. Can you get rid of this paragraph and plot?\n\n- Did the authors attempted to look at indels? I think 'long enough' SSRs will also present SSRs copy number variations.\n\n- for Abstract/Introduction: errors can also accumulate without replication nor transcription (see some recent papers on non-replicative/quiescent errors)\n\nAs mentioned earlier, many methodological pieces of information are missing. Here is a list of some of them. Consider that the readers must have *everything* to understand and eventually redo the experiments. In this current version, most treatments are opaque.\n\n- Subsection \u201cA global view of the transcript error distribution\u201d: how did you normalized to \"the same level\"?\n\n- Subsection \u201cCharacterization of transcript errors\u201d: sure, ~2/3 of mutations are non-synonymous. So this does not come as a surprise.\n\n- Subsection \u201cCharacterization of transcript errors\u201d: \"close to\" means \"close to significance\"?\n\n- Subsection \u201cData analysis\u201d. Can you provide insights on what is the Lou et al., method? What is the autocorrelation method? Where is the python code available, so readers can have a chance to understand what you did? What is the Bayesian approach you mentioned using? What parameters of BWA did you used?\n\n- Subsection \u201cStrategies to distinguish transcript errors from other types of errors\u201d: what is the equation? (you suggested simplifying by \\mu g, but I don't see an equation)?\n\n- Subsection \u201cTo calculate the expected percentages of transcript errors with different effects\u201d: I suspect these are not probabilities but counts turned into frequencies, right? So at best, probabilities estimates. \\mu_i are the relative mutation rates? More generally, I am not sure what did you use this whole calculation (in this paragraph) for?\n\n- Figure 3 legend: what are 'conditional' error rates?\n\n- Table1: How exactly did you compute your p-values? Did you take the spectrum into account?\n\n- Figure 4: Why do you have the x-axis in reverse order? How did you normalize in 0-1.\n\nIn conclusion, I believe this manuscript has potential but should be revised with great care before becoming a decent published article.\n\nReviewer #3:This manuscript measures the single nucleotide transcription error rate and spectrum in four bacterial species. The primary findings are that E. coli errors are an order of magnitude less common than previously reported by Traverse and Ochman, that M. florum has a strikingly high G->A substitution bias, and that nonsense errors are depleted toward the 3' end of mRNA in a manner compatible with previously hypothesized NMD-like quality control in prokaryotes. Overall, a potential obstacle to publication in ELife is the incremental nature of these findings \u2013 the methods are not greatly advanced from earlier work including from the same group, this is not the first evidence for NMD-like quality control, and there is speculation about but not proof for the reasons for the high G->A bias and the discrepancy with previous E. coli measurements. I have a number of concerns, especially about the statistics, but correcting them is unlikely to reverse the major findings.\n\nProbably the biggest issue is the contrast between Figure 4 and Figure S3, used to help infer the mechanism of action of the NMD-like system. Frequencies are a kind of binned data, and it is inappropriate to report correlation coefficients from binned data: see eg https://statmodeling.stat.columbia.edu/2016/06/17/29400/ or https://serialmentor.com/blog/2013/8/18/common-errors-in-statistical-analyses for discussions of this point. It is definitely not appropriate to claim that the Figure 4 model is better than the Figure S3 model (subsection \u201cBiased distribution of nonsense errors in RNA transcripts\u201d) because the correlation coefficients are larger, especially because the binning is clearly different in the two cases, eg. with far more zeros in Figure S3.\n\nFor these and all similar figures, there should be error bars on each dot from sampling error: for a binomial the error is sqrt(p*(1-p)/n). I was unable to figure out what exactly the normalization to scale the y-axis between 0 to 1 entailed \u2013 the fact that no code was made available (despite the ELife reporting form instructions to \"Include code used for data analysis\") meant that I couldn't compensate for thinly described methods. I see in any case no justification for normalization; it would be better to just give the actual numbers on the y-axis, while keeping the \"zoom\" the same for visualization purposes.\n\nThe best statistical approach is generally to work with the raw data, which in this case is a vast dataset of 0s (no error) and 1s (error). The number of (rare) errors meeting given criteria follows a Poisson distribution, and a generalized linear model can be used to model this error function. This is what we did for transcription errors in https://www.biorxiv.org/content/10.1101/554329v1, and it leads to vastly greater power to discern the kinds of trends hypothesized in Figure 4 and Figure S3. I realize that, as well as some conflict in asking for use and thus citation of my own work, there may be concerns citing a preprint, but the manuscript is now accepted pending minor revisions in GBE, and citable as such. I would really like to know eg whether M. florum really does have a different shape to E. coli in Figure 4 as it appears to, and more sophisticated statistical models are required to answer questions of this sort. Our accepted manuscript provides such models, with code fully available on github.\n\nOur preprint re-analyzes the data of Traverse and Ochman, and finds that the (non-C->U) error rate depends on protein abundance. The Discussion section is the only place in the paper that attempts to say why the currently observed non-C->U error rate is an order of magnitude lower than that previously observed by Traverse and Ochman, attributing all the discrepancy, especially but not limited to cytosine deamination, to RNA damage during library preparation by Traverse and Ochman. This is problematic in the light of our finding of systematic differences that are not expected to be caused by library preparation problems. I don't know why the non-C->U error rates are so different between the studies either, but it clearly isn't all cytosine deamination, nor all library preparation, and it would be useful to acknowledge this puzzle and comment on other possibilities, e.g. differences in strain or experimental condition.\n\nNote that the per-gene method to find outliers described in subsection \u201cA global view of the transcript error distribution\u201d is much lower powered than our test for dependence on protein abundance, and so in no way rules out the variation among genes that we discovered. And if the aim is to detect mutations or programmed errors, it is better to do so per-site than per-gene, as we also did to also find that such problems were rare.\n\nIn general, the statistics used in this manuscript assume that sampling error is negligible and that all variance is therefore attributed to biological replication. This underlies the use of t-tests and paired t-tests throughout. However, in tables like Supplementary file 5 and Supplementary file 6, neither error bars nor denominator is given, so I am unable to verify that sqrt(p*(1-p)/n) is negligible. If it is not negligible, then all these t-tests should be weighted rather than the current use of unweighted tests, or better still, a more advanced generalized linear model with a Poisson error term (see above) that simultaneously accounts for all sources of variance should be used instead of t-tests. The problems with the statistical tests used primarily create lower power, and so the positive findings should all hold, but more problematic is that the supplementary data files lack the information needed to allow future reanalysis of the data using better methods.\n\nAnother statistical problem is in calculating expected percentages (subsection \u201cTo calculate the expected percentages of transcript errors with different effects\u201d). The equation used assumes that while the error rates of the 3 sites within the codon might be different, every codon has an equal error rate. The much more logical alternative would be to assume site-specific error rates that do not depend on which codon the site is found in. If our finding that error rates depend on protein abundance is also true, this will contribute to misleading results even after this correction is made. We found that the difference between error rates at synonymous vs. non-synonymous sites was entirely attributable to the dependence of codon bias strength on protein abundance, i.e. that variation in error rate was at the gene level not the codon level.\n\nFigure 2 legend refers to the analysis only of genes with detected transcript errors. This would seem to create a variety of ascertainment biases, inflating the error rate overall as zeros are neglected, and preferentially neglecting potentially large numbers of genes each of low expression.\n\n[Editors\u2019 note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Universally high transcript error rates in bacteria\" for consideration by eLife. Your article has been reviewed by Patricia Wittkopp as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Joanna Masel (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Li and Lynch measure the rate of transcription errors in a few prokaryotes. This is a revised version of a previous manuscript. The reviewers appreciate the importance of the work and the changes that have been made to the initial version. However, there are still some concerns about the statistical analyses and interpretation of the data. The comments are summarized below.\n\nEssential revisions:\n\nData analysis and interpretation:\n\n1) They uncovered almost the full spectrum of transcription errors, but somehow omitting indel errors from their data set. As is, this work will serve as a method reference for people interested in transcription errors. Based on their spectrum analysis, the authors speculate about different mechanisms by which these errors can be made. In order to be complete, the authors should analyze and report indels from their existing data.\n\n2) Concerning the model to explain the biased distribution of nonsense errors in mRNA, they proposed an NMD mechanism no yet characterized in bacteria, but this can easily be explained by transcription polarity described first by Morse and Yanofsky, (1969).\n\n3) In order to make the sequencing method user-friendly, I would strongly suggest that the authors include a flowchart for the analysis of the sequencing data as they have done for the technical concept in Figure 1\u2014figure supplement 1.\n\nStatistical analyses:\n\n4) While claims based on comparing the magnitudes of correlation coefficients of different binned data sets has now been removed, correlation coefficients for data that is not just binned (frequency data), but also non-independent (sliding windows) continue to be reported in Figure 4, Figure S2, and Figure S3. Corresponding regression models on these non-independent sliding window datapoints are inappropriately used to generate p-values. An alternative and somewhat less flawed approach is given only in the response to reviews document and not in the manuscript itself. This is presented as being the method of Meer et al., \"with minor modifications\", although they are not that minor, as they sacrifice the main advantage of that method. A good statistical model should have a good model of the error function. Count data has a binomial error function, well approximated as a Poisson. The advantage of the method of Meer et al., is that it exactly models this Poisson, but the method is dismissed in the response to reviews because it explicitly accounts for the fact that the raw count data depends on the number of reads, as though this were a bad thing. The alternative presented in the response to reviews does avoid the non-independence problem of the sliding window, but it still assumes homoscedasticity with respect to #errors/#reads, an assumption that is violated in practice given many more reads at some sites than others. If the authors want to model Equation (1) instead of Equation (2) (as numbered in the response to reviews), I would find this acceptable if and only if they (a) use a weighted regression to account for the known heteroscedasticity (ie at least model the magnitude of the error even if they don't model its shape), and (b) place this analysis in the manuscript itself as a replacement for doing a regression on the output of non-independent sliding-window-bins. The sliding window is perfectly appropriate and indeed very helpful as a visualization of the data, but inappropriate for the fitting and testing of statistical models.\n\n5) I take issue with the claim in subsection \u201cA global view of the transcript error distribution\u201d that transcript errors are randomly distributed across genes. After a Bonferroni correction for the number of genes, the manuscript has very little power with which to make such a claim of evidence of absence. What is more, Meer et al., showed (using a different E. coli dataset) that the error rate does depend on the strength of selection on the gene in question, as assessed by its protein abundance. This analysis had much higher power than the current study, firstly because there was only one degree of freedom and hence no need for a radical Bonferroni correction, and secondly because explicit modeling of the error function as described above will generally increase power. Given that (uncited) evidence that contradicts the manuscript's claim for randomness has already been published, and the lower power of the current manuscript's basis for making this claim, a claim of randomness should not be made unless the authors are able to apply the same or similarly high-powered method and directly show contradictory results. Should the previously published claim non-randomness be supported, this would have implications for the authors' model of randomly generated transcript error, eg subsection \u201cCharacterization of transcript errors\u201d. In this passage too, the statistics are problematic. Observed and expected \"data\" are compared using a paired t-test, as though the expectations were themselves data with error magnitudes homoscedastic with those of the observed data.\n\n6) I am also confused by the bootstrapped standard deviation in Figure 4, Figure S2, and Figure S3. In Figure 4, why bootstrap rather than use the known formula for a binomial? In Figure S2 and Figure S3, why bootstrap only the numerator and not the denominator of the quantity whose error is being assessed?\n\n7) I still fear that the casual reader will take away from the Discussion section that differences between the two studies in error rates other than C->U are trivial in magnitude, which is not the case.\n",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "671d714b-ed48-42a2-80fe-464801cff925",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C1",
+      "claim": "An adapted rolling-circle sequencing approach was applied to Escherichia coli, Bacillus subtilis, Agrobacterium tumefaciens, and Mesoplasma florum.",
+      "claim_type": "EXPLICIT",
+      "source": "To globally identify transcript errors, we applied an adapted rolling-circle sequencing approach to Escherichia coli, Bacillus subtilis, Agrobacterium tumefaciens, and Mesoplasma florum",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "5f63ae8c-a52c-4a04-9968-9777841d934a",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C2",
+      "claim": "Transcript-error rates are 3 to 4 orders of magnitude higher than the corresponding genetic mutation rates in the studied bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "revealing transcript-error rates 3 to 4 orders of magnitude higher than the corresponding genetic mutation rates",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents comparative data between transcript error rates and mutation rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "a35e9d14-03c9-4658-ae8e-460bdf138f37",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C3",
+      "claim": "The majority of detected transcript errors would result in amino-acid changes if translated.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of detected errors would result in amino-acid changes, if translated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents analysis of error types and their functional consequences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "5d3401de-2886-4f44-aaba-cb189b163a55",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C4",
+      "claim": "Transcript errors were identified from 9929 loci across all species studied.",
+      "claim_type": "EXPLICIT",
+      "source": "With errors identified from 9929 loci, the molecular spectrum and distribution of errors were uncovered in great detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the total number of loci analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "49022a07-c8e3-4e45-b4a6-f3f0475eb890",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C5",
+      "claim": "A G\u2192A substitution bias was observed in M. florum.",
+      "claim_type": "EXPLICIT",
+      "source": "A G\u2192A substitution bias was observed in M. florum, which apparently has an error-prone RNA polymerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents molecular spectrum data showing this bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "565d3d67-f15d-4f67-92fb-9c5674c12af7",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C6",
+      "claim": "M. florum has an error-prone RNA polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "A G\u2192A substitution bias was observed in M. florum, which apparently has an error-prone RNA polymerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the observed error patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "b55329f2-649b-4d09-8cde-fcc66ec5515c",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C7",
+      "claim": "An increased frequency of nonsense errors towards the 3\u2032 end of mRNAs was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, an increased frequency of nonsense errors towards the 3\u2032 end of mRNAs was observed, suggesting a Nonsense-Mediated Decay-like quality-control mechanism in prokaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents spatial distribution analysis of nonsense errors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "f746bf96-cd5b-46df-be09-44a0ed09ea1e",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C8",
+      "claim": "The increased frequency of nonsense errors towards the 3\u2032 end of mRNAs suggests a Nonsense-Mediated Decay-like quality-control mechanism in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, an increased frequency of nonsense errors towards the 3\u2032 end of mRNAs was observed, suggesting a Nonsense-Mediated Decay-like quality-control mechanism in prokaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the observed pattern as evidence for an NMD-like mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "6460898d-42ad-4bef-8c41-7b8783af3b88",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C9",
+      "claim": "Transcript errors can occur during ribonucleotide incorporations by RNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "They can occur during ribonucleotide (rNTP) incorporations by RNA polymerases and/or via post-transcriptional modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes known mechanisms of transcript error generation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "72189e32-dd65-430f-b100-297da87d4909",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C10",
+      "claim": "Transcript errors can occur via post-transcriptional modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "They can occur during ribonucleotide (rNTP) incorporations by RNA polymerases and/or via post-transcriptional modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes known mechanisms of transcript error generation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "c26fb341-9281-4cc0-ac81-5766f011e518",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C11",
+      "claim": "Errors on RNA transcripts may directly cause dysfunctions due to the regulatory roles of small RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Errors on RNA transcripts may directly cause dysfunctions due to the regulatory roles of small RNAs and the fate determination of mRNAs by RNA structural motifs (Strathern et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "4899aee1-a3a1-4167-ab06-4c09029ed383",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C12",
+      "claim": "Errors on RNA transcripts may cause dysfunctions due to the fate determination of mRNAs by RNA structural motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Errors on RNA transcripts may directly cause dysfunctions due to the regulatory roles of small RNAs and the fate determination of mRNAs by RNA structural motifs (Strathern et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "2f0fd824-db8d-4ba7-8dd7-331eba59cbaa",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C13",
+      "claim": "Transcript errors can inactivate proteins and result in a loss-of-function.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcript errors can inactivate proteins and result in a loss-of-function (Gordon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "6a5a3e2d-64b9-4ad2-beca-b912bfd637d9",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C14",
+      "claim": "Transcript errors can indirectly give rise to misfolded proteins and induce proteotoxic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "They can also indirectly give rise to misfolded proteins and induce proteotoxic stress (Gout et al., 2017; Vermulst et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "1a2ceac0-e60b-4eb0-b4b7-33b71885b190",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C15",
+      "claim": "Errors on RNA transcripts may be causal factors leading to neuron degenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Errors on RNA transcripts may be causal factors leading to neuron degenerative diseases (van Leeuwen et al., 1998a; van Leeuwen et al., 1998b) and tumorigenesis (Saxowsky et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "b0316aef-331c-484a-ad7a-9f5363abf1a7",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C16",
+      "claim": "Errors on RNA transcripts may be causal factors leading to tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Errors on RNA transcripts may be causal factors leading to neuron degenerative diseases (van Leeuwen et al., 1998a; van Leeuwen et al., 1998b) and tumorigenesis (Saxowsky et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "9fb91d85-3668-437b-90c2-5eab599fa609",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C17",
+      "claim": "Reporter-construct assays have long been the major approach to evaluating the fidelity of RNA polymerases and identifying transcript errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter-construct assays have long been the major approach to evaluating the fidelity of RNA polymerases and identifying transcript errors (Blank et al., 1986; Bubunenko et al., 2017; Nesser et al., 2006; Rosenberger and Foskett, 1981; Rosenberger and Hilton, 1983; Shaw et al., 2002; Springgate and Loeb, 1975; Strathern et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies using this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "9ff8e857-7c80-42fa-bb6b-d21eda1299f4",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C18",
+      "claim": "Reporter-construct assays focus only on individual loci and cannot identify errors without phenotypic marker effects.",
+      "claim_type": "EXPLICIT",
+      "source": "but these methods focus only on individual loci and cannot identify errors without phenotypic marker effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes limitations of reporter-construct assays based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "66395be3-8fbe-4e6d-bdb2-07779462883d",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C19",
+      "claim": "The challenge in using conventional high-throughput sequencing to identify transcript errors is to distinguish the real signal from noise produced by technical errors during reverse transcription and sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the challenge is to distinguish the real signal of transcript errors from noise produced by technical errors resulting during reverse transcription and sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a known technical challenge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "e4d2fc6c-769b-4925-ac0d-f5af72687249",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C20",
+      "claim": "A rolling-circle amplification-based sequencing (CirSeq) method was proposed to circumvent the problem of distinguishing transcript errors from technical errors.",
+      "claim_type": "EXPLICIT",
+      "source": "To circumvent this problem, a rolling-circle amplification-based sequencing (CirSeq) method (Acevedo and Andino, 2014; Acevedo et al., 2014; Lou et al., 2013) was recently proposed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the development of the CirSeq method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "96abdc16-ca05-4dfb-9e79-22e0aec65d32",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C21",
+      "claim": "CirSeq was applied to identify transcript errors in the whole transcriptome of prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "and later applied to identify transcript errors in the whole transcriptome of prokaryotes (Traverse and Ochman, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous application of CirSeq to prokaryotes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "f0bdf571-7b93-4992-aeb0-ab6227a8ddc0",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C22",
+      "claim": "The CirSeq protocol was modified to minimize RNA damage potentially introduced during the preparation of sequencing libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "We further modified this protocol to minimize RNA damage potentially introduced during the preparation of sequencing libraries (Gout et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes modifications made to the protocol and cites the source.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "acec3c1e-a9de-4908-9f1c-c6cf3a9cbd09",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C23",
+      "claim": "The adapted CirSeq approach has been demonstrated to identify transcript errors accurately and efficiently at a large scale in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we applied an adapted CirSeq approach, which has been demonstrated to identify transcript errors accurately and efficiently at a large scale in eukaryotes (Gout et al., 2017), to prokaryotes for the first time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous validation of the method in eukaryotes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "f507fc95-02bd-4724-b4ec-5fa917a925b0",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C24",
+      "claim": "The adapted CirSeq approach was applied to prokaryotes for the first time in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we applied an adapted CirSeq approach, which has been demonstrated to identify transcript errors accurately and efficiently at a large scale in eukaryotes (Gout et al., 2017), to prokaryotes for the first time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this is the first application to prokaryotes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "a4c38e96-2f88-47d6-a663-326204f2651e",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C25",
+      "claim": "A large number of transcript errors was detected in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "A large number of transcript errors was detected, and transcript-error rates were revealed to be orders of magnitude higher than corresponding genetic mutation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the detection of many errors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "8e832a51-f033-4939-9d1a-9a5b434c2c0e",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C26",
+      "claim": "The bias in molecular spectra of transcript errors can be influenced by both RNA polymerases and cellular rNTP concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the bias in molecular spectra of transcript errors can be influenced by both RNA polymerases and cellular rNTP concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the results to suggest these influences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "96b812f8-a5dd-467f-ba8d-16e121fcb639",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C27",
+      "claim": "The spatial distribution of transcript errors on RNAs provides novel insights into the mechanism of RNA quality-control in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the spatial distribution of transcript errors on RNAs provides novel insights into the mechanism of RNA quality-control in prokaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript claims to provide new insights based on the observed distribution patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "7c5d096b-50e9-40cc-b2c8-610190399646",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C28",
+      "claim": "RNA sequencing libraries were made with three biological replicates for each species.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying the adapted CirSeq method (see Materials and methods) to E. coli, B. subtilis, A. tumefaciens, and M. florum, RNA sequencing libraries were made with three biological replicates for each species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "1271753c-8580-4a46-be11-3c9ccfef7214",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C29",
+      "claim": "Key steps of library preparations involve circularizing RNA fragments and generating cDNAs with tandem repeats by rolling-circle reverse transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Key steps of library preparations involve circularizing RNA fragments and generating cDNAs with tandem repeats by rolling-circle reverse transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "d2e6c7f9-142b-4146-9d1d-a3f526192e8c",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C30",
+      "claim": "Transcript errors tend to appear on all repeats of sequencing reads, while sequencing and reverse transcription errors are nearly always revealed as singletons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, transcript errors tend to appear on all repeats of sequencing reads, while sequencing and reverse transcription errors are nearly always revealed as singletons (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explains the principle of error detection and references a figure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "22a65e35-356d-4941-ae2b-90c46637fbdf",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C31",
+      "claim": "The number of loci where transcript errors were identified from each species ranges from 2006 to 2942.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of loci where transcript errors were identified from each species ranges from 2006 to 2942, totaling 9929 loci across all species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the range of loci identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "8bf0501a-fb66-4ba0-aab3-e5b76ead0612",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C36",
+      "claim": "These error rates are 3 to 4 orders of magnitude higher than the corresponding genomic (DNA-level) mutation rates estimated from mutation-accumulation experiments in these species.",
+      "claim_type": "EXPLICIT",
+      "source": "These error rates are 3 to 4 orders of magnitude higher than the corresponding genomic (DNA-level) mutation rates estimated from mutation-accumulation experiments in these species (Lee et al., 2012; Lynch et al., 2016; Sung et al., 2016; Sung et al., 2015; Sung et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares the measured error rates to published mutation rates.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "30717df4-e60d-42eb-8950-8062bb259bdd",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C37",
+      "claim": "A transcriptome-wide view of the error distribution in each species was uncovered.",
+      "claim_type": "EXPLICIT",
+      "source": "With such a large number of transcript errors identified, a transcriptome-wide view of the error distribution in each species was uncovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the scope of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "23c3cad3-8df5-4d0f-b5eb-30a5703a4794",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C38",
+      "claim": "Genomic positions of transcript errors were annotated with different potential functional effects and plotted in 10 kb sliding windows (1 kb for M. florum).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the circular genomes of bacteria (except for A. tumefaciens, which has one circular chromosome, one linear chromosome, and two plasmids [Goodner et al., 2001]), we annotated genomic positions of transcript errors with different potential functional effects and plotted transcript-error rates in 10 kb sliding windows (1 kb for M. florum) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the analysis method and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "07486bb7-cb98-4351-a9b2-6ab9b174bc22",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C39",
+      "claim": "A. tumefaciens has one circular chromosome, one linear chromosome, and two plasmids.",
+      "claim_type": "EXPLICIT",
+      "source": "except for A. tumefaciens, which has one circular chromosome, one linear chromosome, and two plasmids [Goodner et al., 2001]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the genome structure of A. tumefaciens.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "be0f039a-d3c3-4f1e-a6dc-004a138c0a85",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C40",
+      "claim": "A test was performed to identify genes enriched with transcript errors.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether transcript errors are randomly distributed across different genes, a previously proposed test (Long et al., 2016) was performed to identify genes enriched with transcript errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the statistical test performed.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "2ec5cb40-c359-42d8-abb6-6491014a5f7e",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C41",
+      "claim": "For each gene, the expected number of transcript errors was calculated as the product of the average transcriptome-wide error rate per base and the sequencing coverage of the gene.",
+      "claim_type": "EXPLICIT",
+      "source": "For each gene, the expected number of transcript errors was calculated as the product of the average transcriptome-wide error rate per base and the sequencing coverage of the gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the calculation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "3e37f979-dd18-45f2-ab89-e4a90b82f316",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C42",
+      "claim": "Out of 607 genes with detected transcript errors in E. coli, 1 gene was revealed to have significantly larger numbers of errors than random expectations.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 607, 495, 586, and 186 genes with detected transcript errors in E. coli, A. tumefaciens, B. subtilis and M. florum, respectively, 1, 4, 0 and 4 genes were revealed to have significantly larger numbers of errors than random expectations (Bonferroni-corrected P values of 0.05, Supplementary file 1, Tables 2-5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "2be216f4-a48b-4778-a189-b1eb26a3c893",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C43",
+      "claim": "Out of 495 genes with detected transcript errors in A. tumefaciens, 4 genes were revealed to have significantly larger numbers of errors than random expectations.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 607, 495, 586, and 186 genes with detected transcript errors in E. coli, A. tumefaciens, B. subtilis and M. florum, respectively, 1, 4, 0 and 4 genes were revealed to have significantly larger numbers of errors than random expectations (Bonferroni-corrected P values of 0.05, Supplementary file 1, Tables 2-5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "d0f19774-e0f6-4d1b-a425-57c6b430d692",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C44",
+      "claim": "Out of 586 genes with detected transcript errors in B. subtilis, 0 genes were revealed to have significantly larger numbers of errors than random expectations.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 607, 495, 586, and 186 genes with detected transcript errors in E. coli, A. tumefaciens, B. subtilis and M. florum, respectively, 1, 4, 0 and 4 genes were revealed to have significantly larger numbers of errors than random expectations (Bonferroni-corrected P values of 0.05, Supplementary file 1, Tables 2-5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "71c0c7a3-4107-49c8-ac1f-52e4eda4d696",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C45",
+      "claim": "Out of 186 genes with detected transcript errors in M. florum, 4 genes were revealed to have significantly larger numbers of errors than random expectations.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 607, 495, 586, and 186 genes with detected transcript errors in E. coli, A. tumefaciens, B. subtilis and M. florum, respectively, 1, 4, 0 and 4 genes were revealed to have significantly larger numbers of errors than random expectations (Bonferroni-corrected P values of 0.05, Supplementary file 1, Tables 2-5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "3efde0a8-5cc1-457c-8aa9-8b387e650b8d",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C46",
+      "claim": "Transcript errors are in general randomly distributed across genes.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that transcript errors are in general randomly distributed across genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the statistical results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "985d4bd3-4df4-4972-af2c-9f472c8d21b7",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C47",
+      "claim": "The whole bacterial transcriptome is synthesized by a single type of RNA polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "The whole bacterial transcriptome is synthesized by a single type of RNA polymerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about bacterial transcription.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "d0684a58-47d0-4029-aaab-fbc41a89b61f",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C48",
+      "claim": "RNA products from protein-coding and noncoding RNA regions undergo distinct co- and post-transcriptional processes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, RNA products from protein-coding and noncoding RNA (ncRNA) regions undergo distinct co- and post-transcriptional processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about RNA processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "629bcdbd-e214-45a1-b3d6-1f644c238645",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C49",
+      "claim": "mRNAs are mature upon transcription and ready for translation.",
+      "claim_type": "EXPLICIT",
+      "source": "mRNAs are mature upon transcription and ready for translation, while ncRNAs, such as ribosomal RNAs (rRNA) and transfer RNAs (tRNA), need to be further processed to be functional (Cooper, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge about mRNA maturation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "269db82e-d2db-4097-b47c-6517c8ad787a",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C50",
+      "claim": "ncRNAs, such as ribosomal RNAs and transfer RNAs, need to be further processed to be functional.",
+      "claim_type": "EXPLICIT",
+      "source": "mRNAs are mature upon transcription and ready for translation, while ncRNAs, such as ribosomal RNAs (rRNA) and transfer RNAs (tRNA), need to be further processed to be functional (Cooper, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge about ncRNA processing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "e2cc1b18-1762-4696-b2d1-bea016328a5c",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C51",
+      "claim": "Transcript-error rates of protein-coding and ncRNA transcripts are similar in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcript-error rates of these two regions are similar in E. coli and A. tumefaciens, but the error rate of ncRNA transcripts is higher than that of protein-coding transcripts in B. subtilis and lower in M. florum (p<0.05, paired t-test) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports comparative analysis results and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "5e59a682-d8b7-4513-a9af-7c09c24b22ca",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C52",
+      "claim": "Transcript-error rates of protein-coding and ncRNA transcripts are similar in A. tumefaciens.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcript-error rates of these two regions are similar in E. coli and A. tumefaciens, but the error rate of ncRNA transcripts is higher than that of protein-coding transcripts in B. subtilis and lower in M. florum (p<0.05, paired t-test) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports comparative analysis results and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "d5fec21b-eb27-4101-a7b5-9534ca27d908",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C53",
+      "claim": "The error rate of ncRNA transcripts is higher than that of protein-coding transcripts in B. subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcript-error rates of these two regions are similar in E. coli and A. tumefaciens, but the error rate of ncRNA transcripts is higher than that of protein-coding transcripts in B. subtilis and lower in M. florum (p<0.05, paired t-test) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports comparative analysis results with statistical significance and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "855435be-9800-49a5-8ce2-e9cbb273568e",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C54",
+      "claim": "The error rate of ncRNA transcripts is lower than that of protein-coding transcripts in M. florum.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcript-error rates of these two regions are similar in E. coli and A. tumefaciens, but the error rate of ncRNA transcripts is higher than that of protein-coding transcripts in B. subtilis and lower in M. florum (p<0.05, paired t-test) (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports comparative analysis results with statistical significance and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "77e688f4-99cd-4166-81f1-a463ab264bd8",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C55",
+      "claim": "A transition/transversion bias of genetic mutations has been widely observed in different species.",
+      "claim_type": "EXPLICIT",
+      "source": "A transition/transversion bias of genetic mutations has been widely observed in different species, with the molecular spectrum mostly dominated by G:C\u2192A:T substitutions (Hershberg and Petrov, 2010; Hildebrand et al., 2010; Lynch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on mutation biases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "35232633-33de-499e-8f14-6b692294aa39",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C56",
+      "claim": "The molecular spectrum of genetic mutations is mostly dominated by G:C\u2192A:T substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "A transition/transversion bias of genetic mutations has been widely observed in different species, with the molecular spectrum mostly dominated by G:C\u2192A:T substitutions (Hershberg and Petrov, 2010; Hildebrand et al., 2010; Lynch, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on mutation spectra.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "da70b20b-9567-4f31-9fa5-657d70ad122f",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C57",
+      "claim": "Knowledge on the molecular spectrum of transcript errors in prokaryotes remains limited.",
+      "claim_type": "EXPLICIT",
+      "source": "However, knowledge on the molecular spectrum of transcript errors in prokaryotes remains limited (Imashimizu et al., 2015; Traverse and Ochman, 2016; Traverse and Ochman, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites limited prior work on this topic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "2cb22788-052f-46e2-ba6d-253ea9f6ccf2",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C58",
+      "claim": "The error rate of all twelve categories of substitutions was calculated for each species.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we calculated the error rate of all twelve categories of substitutions for each species (Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the analysis performed and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "62577d32-970e-47fa-9de9-eeefde799c56",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C59",
+      "claim": "A general bias of transitions over transversions was revealed in transcript errors.",
+      "claim_type": "EXPLICIT",
+      "source": "revealing a general bias of transitions over transversions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observed pattern in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "4e5f88cc-fc2e-40dc-831a-d3ec864de9c2",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C60",
+      "claim": "The transition/transversion bias has been thought to be driven solely by C\u2192U substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "This bias has been thought to be driven solely by C\u2192U substitutions (Traverse and Ochman, 2016), which may mainly result from post-transcriptional cytosine deaminations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous interpretation of the bias.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "c8eef687-3a96-4a21-acd6-64c68f0f717f",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C61",
+      "claim": "C\u2192U substitutions may mainly result from post-transcriptional cytosine deaminations.",
+      "claim_type": "EXPLICIT",
+      "source": "This bias has been thought to be driven solely by C\u2192U substitutions (Traverse and Ochman, 2016), which may mainly result from post-transcriptional cytosine deaminations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents a mechanistic explanation based on known chemistry.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "85b6964c-485e-471a-b2eb-823833356e67",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C62",
+      "claim": "The transition/transversion bias holds even after C\u2192U substitutions are excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the transition/transversion bias here even holds after C\u2192U substitutions are excluded (P < 0.005, \u03c72 test, Supplementary file 1, Table 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports statistical analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "120484dd-c603-494d-abba-ec0499a65f49",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C63",
+      "claim": "The transcriptional machinery in bacteria tends to have a low ability to distinguish rNTPs within the same structural class of nitrogenous bases.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that the transcriptional machinery in bacteria, similar to the replication machinery, tends to have a low ability to distinguish rNTPs within the same structural class of nitrogenous bases (Keightley et al., 2009; Kucukyildirim et al., 2016; Lee et al., 2012; Long et al., 2015a; Long et al., 2015b; Lynch, 2007; Lynch, 2010; Lynch et al., 2008; Ossowski et al., 2010; Sung et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the data and cites supporting literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "9781d504-5f56-436b-a10f-c8a2de6aa11f",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C64",
+      "claim": "The C\u2192U substitution rate is consistently high in all four species.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all transitions, the C\u2192U substitution rate is consistently high in all four species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observed pattern across species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "a9c9d552-7935-4c19-869c-4f6ee4bcf756",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C65",
+      "claim": "An unexpectedly high G\u2192A substitution rate is revealed in M. florum.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, an unexpectedly high G\u2192A substitution rate is revealed in M. florum, which displayed the highest transcript-error rates among four species in the present study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observed pattern in M. florum.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "c80ef63e-5bac-4e92-ac78-7f377fb1f6d4",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C66",
+      "claim": "The G\u2192A substitution bias was recently observed in yeast and E. coli transcription-machinery mutants with decreased fidelity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, this substitution bias was also recently observed in yeast and E. coli transcription-machinery mutants with decreased fidelity (Gout et al., 2017; Imashimizu et al., 2015; Traverse and Ochman, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites observations from other studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "d0b88568-a2b5-4956-8a98-06a7af04f78b",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C67",
+      "claim": "The G\u2192A substitution bias may be a signature of error-prone RNA polymerase in both eukaryotes and prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the G\u2192A substitution bias may be a signature of error-prone RNA polymerase in both eukaryotes and prokaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this pattern from the data and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "fdd733e5-938c-49db-958e-4049c3bf65f9",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C68",
+      "claim": "Transcript errors within protein-coding regions were categorized into synonymous, missense, and nonsense substitutions using SnpEff.",
+      "claim_type": "EXPLICIT",
+      "source": "To evaluate potential functional effects of transcript errors, we categorized transcript errors within protein-coding regions into synonymous, missense, and nonsense substitutions using SnpEff (Cingolani et al., 2012; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the analysis method and cites the tool used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "e005a5de-6b1e-4cc0-bacd-1ac3f081d6ba",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C69",
+      "claim": "Expected percentages of each error type were calculated under the assumption that transcript errors are randomly generated across the genome without error-correction processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the bias of rNTP substitution rates (Figure 3) and codon usages of each bacterium, we also calculated the expected percentages of each error type under the assumption that transcript errors are randomly generated across the genome without error-correction processes (see Materials and methods, and Supplementary file 1, Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the calculation method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "86259eb8-eeba-4282-94b8-4f7bc9164291",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C70",
+      "claim": "The majority of transcript errors are expected to result in amino-acid changes if translated.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with observations, the majority of transcript errors are expected to result in amino-acid changes, if translated (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the expected and observed results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "af4b63f4-b24f-4291-8051-2b3d3e7cc62b",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C71",
+      "claim": "For nonsense errors, the observed percentages are close to or significantly lower than the random expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "For nonsense errors, the observed percentages are close to or significantly lower than the random expectation (P < 0.005, \u03c72 test, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports statistical comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "5b5e337b-5766-4c1f-a0aa-8b4d6744b3af",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C72",
+      "claim": "Eukaryotes have evolved the Nonsense Mediated Decay (NMD) mechanism to facilitate the degradation of RNA transcripts carrying PTCs.",
+      "claim_type": "EXPLICIT",
+      "source": "To ameliorate the potential severe fitness effects resulting from such errors, eukaryotes have evolved the Nonsense Mediated Decay (NMD) mechanism (Losson and Lacroute, 1979; Maquat, 1995; Peltz et al., 1993) to facilitate the degradation of RNA transcripts carrying PTCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge about NMD in eukaryotes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "537ad6fd-0b80-40ea-812f-c7fc9735feb8",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C73",
+      "claim": "A key to the success of NMD is distinguishing a PTC from the original stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "A key to the success of NMD is distinguishing a PTC from the original stop codon (Amrani et al., 2004; Le Hir et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on NMD mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "7f915dc4-743e-47de-8549-1e1413d3a45d",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C74",
+      "claim": "The ability of the NMD machinery to identify a PTC is thought to diminish as the PTC approaches the 3\u2032 end of a mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "and the ability of the NMD machinery to identify a PTC is thought to diminish as the PTC approaches the 3\u2032 end of a mRNA (Isken and Maquat, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on NMD mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "268b29a5-482f-4272-a59f-88d10264c400",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C75",
+      "claim": "Yeast transcript-error data show a marked increase in the frequency of PTCs towards the 3\u2032 end of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is supported by yeast transcript-error data that show a marked increase in the frequency of PTCs towards the 3\u2032 end of mRNAs (Gout et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites data from yeast supporting the hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "a56a9094-6a95-42b7-be0d-15d0946d2918",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C76",
+      "claim": "No analog of the eukaryotic NMD system is known in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although no analog of the eukaryotic NMD system is known in prokaryotes, a destabilizing effect of PTCs on mRNA stability has been observed in bacteria (Arnold et al., 1998; Braun, 1998; Morse and Yanofsky, 1969; Nilsson et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states current knowledge about NMD in prokaryotes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "e2d9cfd3-39b3-4832-8202-76b9c84d1f0b",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C77",
+      "claim": "A destabilizing effect of PTCs on mRNA stability has been observed in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Although no analog of the eukaryotic NMD system is known in prokaryotes, a destabilizing effect of PTCs on mRNA stability has been observed in bacteria (Arnold et al., 1998; Braun, 1998; Morse and Yanofsky, 1969; Nilsson et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on PTC effects in bacteria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "a8bc1f86-66aa-454e-bf2b-b3c5f79b5872",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C78",
+      "claim": "An increased frequency of nonsense errors at the 3\u2032 end of transcripts was observed in the distribution of nonsense errors across the whole length of mRNA transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluating the distribution of nonsense errors across the whole length of mRNA transcripts, we observed an increased frequency of nonsense errors at the 3\u2032 end of transcripts, although the trend is not statistically significant in A. tumefaciens (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the observed pattern and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "fe6bfcc6-6064-4922-9689-9fd30625531b",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C79",
+      "claim": "The trend of increased frequency of nonsense errors at the 3\u2032 end is not statistically significant in A. tumefaciens.",
+      "claim_type": "EXPLICIT",
+      "source": "Evaluating the distribution of nonsense errors across the whole length of mRNA transcripts, we observed an increased frequency of nonsense errors at the 3\u2032 end of transcripts, although the trend is not statistically significant in A. tumefaciens (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the statistical analysis result for A. tumefaciens.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "6e35ec52-33d0-4f77-b16a-bfba8f308fb6",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C80",
+      "claim": "A smaller number of nonsense errors were detected in A. tumefaciens compared to other three species.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to other three species, a smaller number of nonsense errors were detected in A. tumefaciens (Supplementary file 1, Table 7), which may result in a low statistical power to reveal a potential pattern for the distribution of nonsense errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observation and provides an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "07223a30-8bca-473b-a4ff-2dd22adee44a",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C81",
+      "claim": "The ratio of nonsense errors to all errors tends to be higher at the 3\u2032 end of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We further modified the analysis by dividing the frequency of nonsense errors by that of all errors. This ratio tends to be higher at the 3\u2032 end of mRNAs (Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the modified analysis result and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "7005d257-883d-46e1-abd7-3c2690a0d000",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C82",
+      "claim": "The enrichment of nonsense errors does not result mainly from a higher overall transcript-error rate at the 3\u2032 end of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "excluding the possibility that the enrichment of nonsense errors results mainly from a higher overall transcript-error rate at the 3\u2032 end of mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the modified analysis result.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "a6b650b5-1cad-4b3e-b3f2-801aa932dabb",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C83",
+      "claim": "The increased frequency of nonsense errors at the 3\u2032 end of mRNA transcripts suggests the presence of an NMD-like process in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased frequency of PTCs at the 3\u2032 end of mRNA transcripts suggests the presence of an NMD-like process, albeit by a likely different mechanism than in eukaryotes, which largely rely on the poly-A tail or exon-exon junction complex (Amrani et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the observed pattern and cites literature on eukaryotic NMD.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "7f90a901-e16b-477f-992c-21d621a61ca7",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C84",
+      "claim": "Eukaryotic NMD largely relies on the poly-A tail or exon-exon junction complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased frequency of PTCs at the 3\u2032 end of mRNA transcripts suggests the presence of an NMD-like process, albeit by a likely different mechanism than in eukaryotes, which largely rely on the poly-A tail or exon-exon junction complex (Amrani et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge about eukaryotic NMD mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "71a04c50-6552-4c50-8bdc-e3ac5618ee20",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C85",
+      "claim": "The ribosome-release model for the degradation of PTCs in eukaryotes has the potential to hold true in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "One speculative model for the degradation of PTCs in eukaryotes, the ribosome-release model (Brogna and Wen, 2009), in which the degradation of RNAs with PTCs depends on the degree of ribosome coverage on RNA molecules, has the potential to hold true in prokaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes a speculative model and cites literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "bf5dbe73-6f4e-49db-8b66-755bddfe4fb7",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C86",
+      "claim": "Ribosomes can load on to nascent transcripts immediately after RNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosomes can load on to nascent transcripts immediately after RNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states established knowledge about prokaryotic translation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "67ffd6a0-cda8-4751-95a0-58e5d7f1d0b6",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C87",
+      "claim": "A whole transcript with a normal stop codon can be covered by multiple ribosomes towards its 3\u2032 end, with these ribosomes protecting the transcript from degradation by blocking ribonuclease cleavage sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a whole transcript with a normal stop codon can be covered by multiple ribosomes towards its 3\u2032 end, with these ribosomes protecting the transcript from degradation by blocking ribonuclease cleavage sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes a mechanistic explanation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "164df153-4f79-47f0-8fa0-75e07ec133ea",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C88",
+      "claim": "A PTC upstream of the original stop codon will stall the ribosomes, leaving the ribonucleotides between the PTC and the site of the original stop codon unprotected by ribosomes, potentially promoting degradation by cellular ribonucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a PTC upstream of the original stop codon will stall the ribosomes, leaving the ribonucleotides between the PTC and the site of the original stop codon unprotected by ribosomes, potentially promoting degradation by cellular ribonucleases (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript proposes a mechanistic explanation and references a figure.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "ab409829-f5f0-42a0-975a-6e07345970dc",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C89",
+      "claim": "Transcript-error rates in bacteria estimated by the current study are about one order of magnitude lower than those from a previous study, except for M. florum.",
+      "claim_type": "EXPLICIT",
+      "source": "Except for M. florum, transcript-error rates in bacteria estimated by the current study are about one order of magnitude lower than those from a previous study (Traverse and Ochman, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares results to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "8f986fbd-dc0f-4080-9648-193854b8c0df",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C90",
+      "claim": "Error-rate estimates for each type of substitutions in E. coli tend to be lower than those from Traverse and Ochman (2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically in E. coli, our error-rate estimates for each type of substitutions tend to be lower than those from Traverse and Ochman (2016), the most striking difference involving the C\u2192U substitution rate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares results to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "3eaa3fc1-a703-4e3f-af09-b3ba1fce94ac",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C91",
+      "claim": "The difference in C\u2192U substitution rate could be partly due to the use of a metal ion-based RNA fragmentation approach in the previous work vs. enzymatic RNA fragmentation in the present study.",
+      "claim_type": "EXPLICIT",
+      "source": "which could be partly due to the use of a metal ion-based RNA fragmentation approach in the previous work vs. enzymatic RNA fragmentation in the present study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes an explanation for the difference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "ccaddb56-bfc8-40ea-a6a4-2dd61161e021",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C92",
+      "claim": "Enzymatic RNA fragmentation minimizes RNA damage, in particular cytosine deaminations, introduced during the preparation of the sequencing library.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter minimizes RNA damage (Gout et al., 2017), in particular cytosine deaminations, introduced during the preparation of the sequencing library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on the benefits of enzymatic fragmentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "fdacaa2e-83da-4fa6-b0ad-7b43793ef265",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C93",
+      "claim": "A small portion of transcript errors can occur in other forms such as insertions and deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides base-substitution errors, a small portion of transcript errors can occur in other forms such as insertions and deletions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes other types of errors observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "5a51ddbf-c05f-418d-ba21-e0c67e9aaab1",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C94",
+      "claim": "Estimates of transcript insertion/deletion error rates from species in this study are 0.1 to 0.2 of the corresponding base-substitution error rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates of transcript insertion/deletion (indel) error rates from species in this study are 0.1 to 0.2 of the corresponding base-substitution error rates (Supplementary file 1, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the relative rates of indel errors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "d4b0c71e-956d-4430-8f22-49e06fb53f60",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C95",
+      "claim": "Bacterial transcriptomes predominantly consist of ncRNA transcripts, such as rRNAs and tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial transcriptomes predominantly consist of ncRNA transcripts, such as rRNAs and tRNAs (Westermann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on bacterial transcriptome composition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "8973ca8d-3343-4a6a-8d7b-9eefdcd0f1dc",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C96",
+      "claim": "Only a small portion of the whole ncRNA transcripts was evaluated in the present study because of technical limitations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only a small portion of the whole ncRNA transcripts was evaluated in the present study (Supplementary file 1, Table 8) because of technical limitations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges a limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "3b8ef7e8-376b-4fa8-bf88-221089368d49",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C97",
+      "claim": "The rRNA depletion procedure in the sequencing library preparation protocol removes the majority of rRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The rRNA depletion procedure in the sequencing library preparation protocol removes the majority of rRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a technical aspect of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "e8d1a1c3-e41d-4511-a1c8-ed48c866c015",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C98",
+      "claim": "Secondary structures and nucleotide modifications of tRNAs interfere with cDNA synthesis and sequencing adapter ligations.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary structures and nucleotide modifications of tRNAs interfere the cDNA synthesis and sequencing adapter ligations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes technical challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "1030f77c-58aa-40a9-a293-7a0d210bcf05",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C99",
+      "claim": "The molecular spectrum of transcript errors revealed in this work indicates a general C\u2192U substitution bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular spectrum of transcript errors revealed in our work indicates a general C\u2192U substitution bias, which has been proposed to be due to spontaneous deamination (Imashimizu et al., 2013; Traverse and Ochman, 2016) owing to the chemical instability of cytosine (Alberts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the observed pattern and cites literature on the mechanism.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "db7ef408-c66c-48bb-89ac-1f824d92c786",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C100",
+      "claim": "The C\u2192U substitution bias has been proposed to be due to spontaneous deamination owing to the chemical instability of cytosine.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular spectrum of transcript errors revealed in our work indicates a general C\u2192U substitution bias, which has been proposed to be due to spontaneous deamination (Imashimizu et al., 2013; Traverse and Ochman, 2016) owing to the chemical instability of cytosine (Alberts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on the mechanism of C\u2192U substitution.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "7759e0ca-908d-415e-80f4-6e9a840b8bb9",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C101",
+      "claim": "Non-Watson-Crick base pairing during rNTP incorporations may also contribute to the C\u2192U substitution bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides this widely accepted mechanism, non-Watson-Crick base pairing during rNTP incorporations may also contribute to this bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes an alternative mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "3c42e861-8ffd-4760-a700-45e1411aa3c4",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C102",
+      "claim": "dG and rU can form a base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Because dG and rU can form a base pair (Sugimoto et al., 2000; Sugimoto et al., 1997), mispairing between a template DNA (dG) and an RNA (rU) during rNTP incorporations likely also contributes to the C\u2192U substitution bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on base pairing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "d1480fb6-341d-48fd-8ef6-0fe865db0c8a",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C103",
+      "claim": "Mispairing between a template DNA (dG) and an RNA (rU) during rNTP incorporations likely contributes to the C\u2192U substitution bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Because dG and rU can form a base pair (Sugimoto et al., 2000; Sugimoto et al., 1997), mispairing between a template DNA (dG) and an RNA (rU) during rNTP incorporations likely also contributes to the C\u2192U substitution bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes a mechanism based on known base pairing.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "bd1d1a49-dc34-4e57-8ff6-2c9ea9dc76b2",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C104",
+      "claim": "One source for the G\u2192A substitution may be unrepaired uracils on the DNA antisense strand, which pair with rATPs during transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "One source for this substitution may be unrepaired uracils on the DNA antisense strand, which pair with rATPs during transcription, resulting in a G\u2192A substitution on the RNA transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes a mechanism for the G\u2192A bias.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "c7bbfbb7-a02e-45dd-aa0b-ebfe73e3bef2",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C105",
+      "claim": "M. florum has a diminutive genome (0.79 Mb) and lacks many genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although M. florum has a diminutive genome (0.79 Mb) and lacks many genes (RefSeq NC_006055.1), a uracil-DNA glycosylase (UDG) ortholog whose product presumably removes uracils (McCullough et al., 1999) does exist in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites genome information.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "81502576-07af-4414-bd7f-3c78de1bc1bd",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C106",
+      "claim": "A uracil-DNA glycosylase (UDG) ortholog exists in the M. florum genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Although M. florum has a diminutive genome (0.79 Mb) and lacks many genes (RefSeq NC_006055.1), a uracil-DNA glycosylase (UDG) ortholog whose product presumably removes uracils (McCullough et al., 1999) does exist in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports genome annotation and cites literature on UDG function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "31393655-d0e6-46be-b350-d4cfb6d437db",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C107",
+      "claim": "The error spectrum is shaped by the ability of an RNA polymerase to distinguish correct rNTPs from incorrect ones and the rNTP pool within a cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The error spectrum is shaped by two factors. One is the ability of an RNA polymerase to distinguish correct rNTPs from incorrect ones. The other factor, which is sometimes neglected, is the rNTP pool within a cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes factors influencing error spectrum.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "155c5f1d-fc0c-4139-895e-542fac5bd01f",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C108",
+      "claim": "A biased cellular rNTP concentration might present an additional challenge to transcriptional fidelity for certain categories of rNTPs.",
+      "claim_type": "EXPLICIT",
+      "source": "As suggested by this equation, a biased cellular rNTP concentration might present an additional challenge to transcriptional fidelity for certain categories of rNTPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from a mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "e4b726fd-3903-4480-a941-e938bd0db7c9",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C109",
+      "claim": "RNA polymerases have a low ability to distinguish rNTPs with the same structural class of nitrogenous bases.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on observations that RNA polymerases have a low ability to distinguish rNTPs with the same structural class of nitrogenous bases and that the cellular concentration of rATPs is the highest among all types of nucleotides in both eukaryotes and prokaryotes (Bennett et al., 2009; Buckstein et al., 2008; Traut, 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states an observation from the data and cites supporting literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "2b9de2fd-7f1d-4962-b043-2a5d8c731ed5",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C110",
+      "claim": "The cellular concentration of rATPs is the highest among all types of nucleotides in both eukaryotes and prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on observations that RNA polymerases have a low ability to distinguish rNTPs with the same structural class of nitrogenous bases and that the cellular concentration of rATPs is the highest among all types of nucleotides in both eukaryotes and prokaryotes (Bennett et al., 2009; Buckstein et al., 2008; Traut, 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on cellular nucleotide concentrations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "8f7e7891-dbef-410e-ae4d-08ae77e889c6",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C111",
+      "claim": "The high cellular concentration of rATPs contributes to the observed bias towards G\u2192A substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "it is reasonable to speculate that the high cellular concentration of rATPs contribute to the observed bias towards G\u2192A substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes a speculative mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "977d37e0-780c-46dd-b5b4-e2becc953064",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C112",
+      "claim": "Genes involved in NMD, such as up-frameshift (UPF) genes, have not been identified in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because genes involved in NMD, such as up-frameshift (UPF) genes, have not been identified in prokaryotes, evidence for the existence of NMD in prokaryotes is still lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states current knowledge about NMD genes in prokaryotes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "e8ef8bed-1cd0-491c-95bf-09422e1b6cd7",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C113",
+      "claim": "Evidence for the existence of NMD in prokaryotes is still lacking.",
+      "claim_type": "EXPLICIT",
+      "source": "Because genes involved in NMD, such as up-frameshift (UPF) genes, have not been identified in prokaryotes, evidence for the existence of NMD in prokaryotes is still lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states current knowledge about NMD in prokaryotes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "d21c4921-765c-442f-9fd2-d7239072fcc7",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C114",
+      "claim": "Previous studies based on single gene-reporters and the transcriptome-wide survey suggest a Nonsense-Mediated Decay-like quality-control mechanism in prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous studies based on single gene-reporters (Baker and Mackie, 2003; Braun, 1998; Nilsson et al., 1987) and our transcriptome-wide survey suggest a Nonsense-Mediated Decay-like quality-control mechanism in prokaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies and the current data to support this claim.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "a3736148-4c6d-429c-b248-708216bcd9c5",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C115",
+      "claim": "The degradation of RNAs carrying nonsense errors may simply result from a higher degree of exposure to cellular ribonucleases rather than from a reliance on specific protein-based systems.",
+      "claim_type": "EXPLICIT",
+      "source": "A key implication of the increased frequency of nonsense errors at the 3\u2032 end of mRNAs (Figure 4A) is that the degradation of RNAs carrying nonsense errors may simply result from a higher degree of exposure to cellular ribonucleases rather than from a reliance on specific protein-based systems.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript interprets the observed pattern.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "9c886d87-db00-4472-92b0-785f2578ad40",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C116",
+      "claim": "Current models of mRNA surveillance mechanisms mostly focus on stop codon-related errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Current models of mRNA surveillance mechanisms mostly focus on stop codon-related errors (Deutscher, 2006; Richards et al., 2008), which are expected to represent only a small portion of the total transcript errors in a cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature on mRNA surveillance.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "c6fe48bf-27f2-42b0-a9c3-e28cfc3ccb79",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C117",
+      "claim": "Stop codon-related errors are expected to represent only a small portion of the total transcript errors in a cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Current models of mRNA surveillance mechanisms mostly focus on stop codon-related errors (Deutscher, 2006; Richards et al., 2008), which are expected to represent only a small portion of the total transcript errors in a cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the data on error types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "71489af6-b6df-4959-a28c-583aaf5fc1a7",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C118",
+      "claim": "It is largely unknown whether, and if so by which mechanisms the major transcript errors (missense errors) get degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "It is largely unknown whether, and if so by which mechanisms the major transcript errors (missense errors) get degraded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "b1980326-c7ae-4df4-888e-e803a3ae5feb",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C119",
+      "claim": "E. coli MG1655 and B. subtilis NCIB 3610 were grown at 37\u00b0C in LB liquid medium.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli MG1655 and B. subtilis NCIB 3610 were grown at 37\u00b0C in LB liquid medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "7f0e89e3-b213-47ce-88f5-4332aef25cd5",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C120",
+      "claim": "M. florum L1 (ATCC #33453) was grown at 30\u00b0C in SNE liquid medium.",
+      "claim_type": "EXPLICIT",
+      "source": "M. florum L1 (ATCC #33453) was grown at 30\u00b0C in SNE liquid medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "bb1ebb6f-d8e3-4396-aa7c-38bd82b0da6c",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C121",
+      "claim": "A. tumefaciens C58 was grown at 28\u00b0C in LB liquid medium.",
+      "claim_type": "EXPLICIT",
+      "source": "A. tumefaciens C58 was grown at 28\u00b0C in LB liquid medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "1d3d9567-7157-4ab6-ad2a-6a1adb044ee8",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C122",
+      "claim": "Total RNA was extracted and purified using the FastRNA Blue Kit, RNase-free DNase set, and the RNeasy Mini Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria were harvested from liquid culture media by centrifugation and total RNA was extracted and purified using the FastRNA Blue Kit (MPBiomedicals), RNase-free DNase set (Qiagen), and the RNeasy Mini Kit (Qiagen).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "a439b80d-ff11-4be4-b9d2-741e6e6ded0d",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C123",
+      "claim": "rRNA was depleted by the Ribo-Zero rRNA Removal Kit (Bacteria) for the following library preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "rRNA was depleted by the Ribo-Zero rRNA Removal Kit (Bacteria) (Illumina) for the following library preparations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "4b3eb46b-3274-459c-8fe7-bef4105912aa",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C124",
+      "claim": "Five hundred nanograms of rRNA-depleted RNAs were fragmented with the NEBNext RNase III RNA Fragmentation Module for 90 min at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Five hundred nanograms of rRNA-depleted RNAs were firstly fragmented with the NEBNext RNase III RNA Fragmentation Module (New England Biolabs) for 90 min at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "c63d2851-7123-4102-9513-224d83a8d905",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C125",
+      "claim": "RNA fragments were circularized with RNA ligase 1 according to the manufacturer's guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "After a clean-up using the Oligo Clean and Concentrator kit (Zymo Research), RNA fragments were circularized with RNA ligase 1 (New England Biolabs) according to the manufactuer's guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "576233c0-8f24-4346-a8cd-ea088d6b7d80",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C126",
+      "claim": "Single-end reads (300nt) were generated using Illumina HiSeq 2500 System.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-end reads (300nt) were then generated using Illumina HiSeq 2500 System.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the sequencing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "839d2018-9399-4134-a6e9-34c6a6b12e27",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C127",
+      "claim": "The sequencing data were deposited in NCBI with the BioProject Number PRJNA592142.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequencing data were deposited in NCBI with the BioProject Number PRJNA592142.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides data availability information.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "c699517b-1cdb-4321-b491-382a92aa0e50",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C128",
+      "claim": "Python scripts were developed following the methods outlined by Lou et al. (2013) for data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we developed Python scripts following the methods outlined by Lou et al. (2013) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes the analysis pipeline and cites the source method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "e971942a-22f8-494c-858f-968cece9016f",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C130",
+      "claim": "The consensus sequence was constructed and the corresponding new quality score was calculated by a Bayesian approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus sequence was constructed and the corresponding new quality score was calculated by a Bayesian approach where an inferred consensus call is taken with the maximum posterior probability given all observed base calls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "8529e2b4-3939-4ac7-9310-479f333feccb",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C131",
+      "claim": "Transcript errors were called if a mismatch between a consensus call and the reference was supported by less than 1% of reads at corresponding loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcript errors were called if a mismatch between a consensus call and the reference was supported by less than 1% of reads at corresponding loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the error calling criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "36ad31da-ff77-43e9-8288-4b15dccedb8c",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C132",
+      "claim": "The recalculated probability of an erroneous base call at 10\u207b\u2077 or lower was required to minimize contaminations from sequencing errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the rate of transcript error is generally 10-6 \u223c 10-5 /nt , the recalculated probability of an erroneous base call at 10-7 or lower was required to minimize contaminations from sequencing errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the quality control criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "3fcbc2f9-77d8-430c-adaa-eb29adaadcc9",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C133",
+      "claim": "At least two tandem repeats were required in the analysis to minimize false positives from reverse transcription errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the error rate of the reverse transcriptase used here is \u223c10-4 /nt (Gout et al., 2013), at least two tandem repeats were required in the analysis to minimize false positives from reverse transcription errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the quality control criteria and cites the error rate of reverse transcriptase.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "824f9b9a-06c3-498d-8b27-78951479877b",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "claim_id": "C134",
+      "claim": "Low frequency genetic mutation can only inflate the transcript-error rate calculated by ~1\u2030 -1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we know the mutation rate from mutation accumulation experiments (Lee et al., 2012; Lynch et al., 2016; Sung et al., 2016; Sung et al., 2015; Sung et al., 2012) and the number of generations from culture-growth dynamics (~30 generations), Low frequency genetic mutation can only inflate the transcript-error rate we calculated here by ~1\u2030 -1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript calculates the potential contribution of genetic mutations and cites mutation rates.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors applied an adapted CirSeq method to four bacterial species (E. coli, B. subtilis, A. tumefaciens, and M. florum) with three biological replicates each. The method involves enzymatic RNA fragmentation, circularization, rolling-circle reverse transcription to generate tandem repeats, and Bayesian consensus calling to distinguish true transcript errors from technical errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental design is well-documented with appropriate replicates (C28), and the methodology builds on validated prior work (C23). The error-correction strategy using tandem repeats (C30, C130, C132, C133) provides a sound approach to distinguish transcript errors from technical artifacts. The quality control thresholds are justified based on known error rates of sequencing and reverse transcription.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "8f2c28b3-cb27-4cbc-bb04-9a41d81a6443",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Transcript errors were identified at 9,929 loci across all four species, with error rates 3-4 orders of magnitude higher than corresponding genomic mutation rates. The per-site error rates ranged from 5.80\u00d710\u207b\u2076 to 1.82\u00d710\u207b\u2075, with M. florum showing the highest rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The large number of identified loci (C4, C31) provides statistical power for the analysis. The comparison to mutation rates from mutation-accumulation experiments (C36) is appropriate and well-cited. The transcriptome-wide view (C37, C38) is supported by the data visualization in Figure 1. The magnitude difference between transcript error rates and mutation rates is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "903befe9-02f3-40ed-9ff9-3fc1af167995",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Statistical testing revealed that transcript errors are generally randomly distributed across genes, with only 1, 4, 0, and 4 genes showing significantly enriched error rates in E. coli, A. tumefaciens, B. subtilis, and M. florum respectively (Bonferroni-corrected P < 0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical approach is appropriate, using Poisson probability calculations (C41) and Bonferroni correction for multiple testing (C42-C45). The small number of genes with enriched errors relative to the total genes analyzed supports the conclusion of random distribution (C46). The methodology is properly cited (C40).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "93533b5f-c148-4861-bbbe-5cd972fa3a0c",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Transcript error rates were compared between protein-coding and ncRNA regions across species. Error rates were similar in E. coli and A. tumefaciens, but ncRNA error rates were significantly higher in B. subtilis and lower in M. florum compared to protein-coding regions (p<0.05, paired t-test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison is biologically motivated by known differences in RNA processing (C48-C50). Statistical significance is properly reported with p-values and test type (C53, C54). The results are visualized in Figure 2. However, the biological interpretation of these differences could benefit from additional mechanistic investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of all twelve substitution types revealed a general transition/transversion bias in transcript errors across all species. This bias persists even after excluding C\u2192U substitutions (P < 0.005, \u03c7\u00b2 test), indicating that bacterial transcriptional machinery has low ability to distinguish rNTPs within the same structural class. C\u2192U substitution rates were consistently high across all four species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comprehensive analysis of substitution types (C58) provides strong evidence for the transition bias (C59). The statistical test excluding C\u2192U substitutions (C62) strengthens the conclusion that the bias is not solely due to cytosine deamination. The inference about rNTP discrimination (C63) is well-supported by cited literature and parallels with replication machinery. Figure 3 provides clear visualization of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "6de2c77e-fe2f-45f4-82b9-c2dc60e7355b",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "M. florum exhibited an unexpectedly high G\u2192A substitution rate, which the authors interpret as a signature of an error-prone RNA polymerase. This pattern has been observed in yeast and E. coli transcription-machinery mutants with decreased fidelity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the G\u2192A bias in M. florum is clearly demonstrated (C5, C65) and parallels with mutant studies are cited (C66), the inference that M. florum has an error-prone RNA polymerase (C6) is speculative. Alternative explanations (such as differences in rNTP pools or DNA repair, discussed in C104-C106) are not fully excluded. The claim would benefit from direct biochemical characterization of the M. florum RNA polymerase.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "4d0662ba-4650-4d71-b97a-1015b8d8241d",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The majority of transcript errors in protein-coding regions would result in amino acid changes if translated. Observed percentages of synonymous, missense, and nonsense errors were calculated and compared to random expectations. Nonsense errors showed observed percentages close to or significantly lower than random expectations (P < 0.005, \u03c7\u00b2 test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional categorization using SnpEff (C68) is appropriate. The calculation of expected percentages based on substitution rates and codon usage (C69) provides a proper null model. The statistical comparison (C71) is rigorous. Table 1 clearly presents the data. The lower-than-expected nonsense errors suggest quality control mechanisms, which is explored further in subsequent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "3e12a1e6-a795-45e9-88da-54e015090058",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "An increased frequency of nonsense errors toward the 3\u2032 end of mRNAs was observed in all species except A. tumefaciens (where the trend was not statistically significant). The ratio of nonsense errors to all errors also increased toward the 3\u2032 end, excluding the possibility that this results from higher overall error rates at the 3\u2032 end.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The spatial distribution analysis (C78) is well-executed with appropriate statistical testing using weighted linear regression. The lack of significance in A. tumefaciens (C79) is explained by lower statistical power due to fewer nonsense errors (C80). The modified analysis using ratios (C81, C82) strengthens the conclusion by controlling for overall error rate variation. Figure 4A and Figure 4\u2014figure supplement 1 provide clear visualization. The pattern is consistent across three of four species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "3630fb19-0580-4eed-bcb5-8d50eff8a346",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The increased frequency of nonsense errors at the 3\u2032 end of mRNAs suggests a Nonsense-Mediated Decay-like quality-control mechanism in prokaryotes. The authors propose a ribosome-release model where degradation depends on ribosome coverage, with PTCs upstream of the original stop codon leaving unprotected regions susceptible to ribonuclease degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the spatial pattern of nonsense errors (C7, C78) is well-documented, the mechanistic interpretation as NMD-like quality control (C8, C83) is speculative. The ribosome-release model (C85, C87, C88) is plausible but lacks direct experimental validation. The absence of known NMD genes in prokaryotes (C112, C113) is acknowledged, and previous single-gene studies are cited (C114), but the transcriptome-wide pattern alone is insufficient to definitively establish the mechanism. Alternative explanations (e.g., differences in translation efficiency or mRNA stability unrelated to quality control) are not fully excluded. Direct experimental validation would be needed to support this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "0a026db6-51d5-48c9-9260-2ca86a18c054",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose that the molecular spectrum of transcript errors is influenced by both RNA polymerase fidelity and cellular rNTP concentrations. They suggest that high cellular rATP concentrations contribute to the G\u2192A substitution bias, and that non-Watson-Crick base pairing (dG-rU) may contribute to C\u2192U substitutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The proposal that both polymerase fidelity and rNTP pools influence error spectra (C26, C107) is reasonable and supported by a mathematical framework (C108). The cited literature on rATP concentrations (C110) and base pairing (C102) is appropriate. However, the specific contributions of these factors (C101, C103, C111) are speculative and not directly tested. The manuscript does not measure cellular rNTP concentrations in the studied species or experimentally manipulate them to test the hypothesis. These remain plausible but unvalidated mechanistic explanations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "bdf75e36-445c-4203-a43a-e864d7da9223",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Transcript error rates estimated in this study are approximately one order of magnitude lower than a previous study (Traverse and Ochman, 2016), except for M. florum. The difference is attributed to the use of enzymatic RNA fragmentation in the current study versus metal ion-based fragmentation in the previous work, which minimizes cytosine deamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to previous work (C89, C90) is appropriate and the proposed explanation (C91, C92) is well-supported by cited literature on the benefits of enzymatic fragmentation. This represents a methodological improvement that likely provides more accurate error rate estimates. The acknowledgment of methodological differences strengthens the credibility of the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "752bef09-a48c-45c0-b6f1-be9bfa0dd9df",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Besides base substitutions, transcript errors also occur as insertions and deletions, with indel error rates estimated at 0.1 to 0.2 of the corresponding base-substitution error rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation of indel errors (C93) and their quantification relative to substitution errors (C94) is clearly reported with reference to supplementary data. This provides a more complete picture of the transcript error landscape.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "725af35c-c4ef-497e-a757-c5596ffc3b74",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Only a small portion of ncRNA transcripts (particularly rRNAs and tRNAs) was evaluated due to technical limitations including rRNA depletion, and interference from tRNA secondary structures and modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The authors appropriately acknowledge the limitations of their study regarding ncRNA coverage (C96). The technical reasons are clearly explained (C97, C98) and are well-known challenges in RNA sequencing. This transparency about study limitations is important for proper interpretation of the ncRNA error rate comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "45e7629e-326c-4374-a83b-48cf1092cde9",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that unrepaired uracils on the DNA antisense strand may contribute to G\u2192A substitutions. Despite M. florum having a small genome, a uracil-DNA glycosylase (UDG) ortholog exists, though the extent to which unrepaired uracils explain the G\u2192A bias remains unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The proposed mechanism involving unrepaired uracils (C104) is speculative. While the presence of UDG in M. florum is documented (C106), the authors acknowledge uncertainty about this mechanism's contribution. No direct measurements of uracil content in DNA or UDG activity are provided. This remains a hypothesis requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "98f649fa-5c86-4171-a295-9b7c604ef995",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Current mRNA surveillance models focus primarily on stop codon-related errors, which represent only a small portion of total transcript errors. The fate of missense errors, which constitute the majority of transcript errors, remains largely unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This represents an important identification of a knowledge gap in the field. The observation that missense errors are the majority (from Table 1) combined with the lack of known degradation mechanisms (C118) highlights an important area for future research. The claim is appropriately framed as identifying unknown territory rather than making unsupported assertions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    },
+    {
+      "id": "02cdc984-e19b-43a0-bc7e-b0b53b555ac8",
+      "content_id": "57761631-4e7e-412f-b01a-86e534ae7e82",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Low-frequency genetic mutations can only inflate the calculated transcript error rate by approximately 0.1-1%, based on known mutation rates and approximately 30 generations of culture growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The calculation properly accounts for the potential contribution of genetic mutations to the observed signal (C134). The use of published mutation rates and estimated generation numbers provides a reasonable quantitative assessment. This demonstrates that genetic mutations are not a significant confounding factor in the transcript error measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:30:42.235922Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "671d714b-ed48-42a2-80fe-464801cff925",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "acec3c1e-a9de-4908-9f1c-c6cf3a9cbd09",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "f507fc95-02bd-4724-b4ec-5fa917a925b0",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "7c5d096b-50e9-40cc-b2c8-610190399646",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "1271753c-8580-4a46-be11-3c9ccfef7214",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "d2e6c7f9-142b-4146-9d1d-a3f526192e8c",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "b1980326-c7ae-4df4-888e-e803a3ae5feb",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "7f0e89e3-b213-47ce-88f5-4332aef25cd5",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "bb1ebb6f-d8e3-4396-aa7c-38bd82b0da6c",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "1d3d9567-7157-4ab6-ad2a-6a1adb044ee8",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "a439b80d-ff11-4be4-b9d2-741e6e6ded0d",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "4b3eb46b-3274-459c-8fe7-bef4105912aa",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "c63d2851-7123-4102-9513-224d83a8d905",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "576233c0-8f24-4346-a8cd-ea088d6b7d80",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "839d2018-9399-4134-a6e9-34c6a6b12e27",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "c699517b-1cdb-4321-b491-382a92aa0e50",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "e971942a-22f8-494c-858f-968cece9016f",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "8529e2b4-3939-4ac7-9310-479f333feccb",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "36ad31da-ff77-43e9-8288-4b15dccedb8c",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "3fcbc2f9-77d8-430c-adaa-eb29adaadcc9",
+      "result_id": "f249afc5-624e-4dd5-8b32-7ad0b3c09ee6"
+    },
+    {
+      "claim_id": "5f63ae8c-a52c-4a04-9968-9777841d934a",
+      "result_id": "8f2c28b3-cb27-4cbc-bb04-9a41d81a6443"
+    },
+    {
+      "claim_id": "5d3401de-2886-4f44-aaba-cb189b163a55",
+      "result_id": "8f2c28b3-cb27-4cbc-bb04-9a41d81a6443"
+    },
+    {
+      "claim_id": "a4c38e96-2f88-47d6-a663-326204f2651e",
+      "result_id": "8f2c28b3-cb27-4cbc-bb04-9a41d81a6443"
+    },
+    {
+      "claim_id": "22a65e35-356d-4941-ae2b-90c46637fbdf",
+      "result_id": "8f2c28b3-cb27-4cbc-bb04-9a41d81a6443"
+    },
+    {
+      "claim_id": "8bf0501a-fb66-4ba0-aab3-e5b76ead0612",
+      "result_id": "8f2c28b3-cb27-4cbc-bb04-9a41d81a6443"
+    },
+    {
+      "claim_id": "30717df4-e60d-42eb-8950-8062bb259bdd",
+      "result_id": "8f2c28b3-cb27-4cbc-bb04-9a41d81a6443"
+    },
+    {
+      "claim_id": "23c3cad3-8df5-4d0f-b5eb-30a5703a4794",
+      "result_id": "8f2c28b3-cb27-4cbc-bb04-9a41d81a6443"
+    },
+    {
+      "claim_id": "be0f039a-d3c3-4f1e-a6dc-004a138c0a85",
+      "result_id": "903befe9-02f3-40ed-9ff9-3fc1af167995"
+    },
+    {
+      "claim_id": "2ec5cb40-c359-42d8-abb6-6491014a5f7e",
+      "result_id": "903befe9-02f3-40ed-9ff9-3fc1af167995"
+    },
+    {
+      "claim_id": "3e37f979-dd18-45f2-ab89-e4a90b82f316",
+      "result_id": "903befe9-02f3-40ed-9ff9-3fc1af167995"
+    },
+    {
+      "claim_id": "2be216f4-a48b-4778-a189-b1eb26a3c893",
+      "result_id": "903befe9-02f3-40ed-9ff9-3fc1af167995"
+    },
+    {
+      "claim_id": "d0f19774-e0f6-4d1b-a425-57c6b430d692",
+      "result_id": "903befe9-02f3-40ed-9ff9-3fc1af167995"
+    },
+    {
+      "claim_id": "71c0c7a3-4107-49c8-ac1f-52e4eda4d696",
+      "result_id": "903befe9-02f3-40ed-9ff9-3fc1af167995"
+    },
+    {
+      "claim_id": "3efde0a8-5cc1-457c-8aa9-8b387e650b8d",
+      "result_id": "903befe9-02f3-40ed-9ff9-3fc1af167995"
+    },
+    {
+      "claim_id": "985d4bd3-4df4-4972-af2c-9f472c8d21b7",
+      "result_id": "93533b5f-c148-4861-bbbe-5cd972fa3a0c"
+    },
+    {
+      "claim_id": "d0684a58-47d0-4029-aaab-fbc41a89b61f",
+      "result_id": "93533b5f-c148-4861-bbbe-5cd972fa3a0c"
+    },
+    {
+      "claim_id": "629bcdbd-e214-45a1-b3d6-1f644c238645",
+      "result_id": "93533b5f-c148-4861-bbbe-5cd972fa3a0c"
+    },
+    {
+      "claim_id": "269db82e-d2db-4097-b47c-6517c8ad787a",
+      "result_id": "93533b5f-c148-4861-bbbe-5cd972fa3a0c"
+    },
+    {
+      "claim_id": "e2cc1b18-1762-4696-b2d1-bea016328a5c",
+      "result_id": "93533b5f-c148-4861-bbbe-5cd972fa3a0c"
+    },
+    {
+      "claim_id": "5e59a682-d8b7-4513-a9af-7c09c24b22ca",
+      "result_id": "93533b5f-c148-4861-bbbe-5cd972fa3a0c"
+    },
+    {
+      "claim_id": "d5fec21b-eb27-4101-a7b5-9534ca27d908",
+      "result_id": "93533b5f-c148-4861-bbbe-5cd972fa3a0c"
+    },
+    {
+      "claim_id": "855435be-9800-49a5-8ce2-e9cbb273568e",
+      "result_id": "93533b5f-c148-4861-bbbe-5cd972fa3a0c"
+    },
+    {
+      "claim_id": "77e688f4-99cd-4166-81f1-a463ab264bd8",
+      "result_id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe"
+    },
+    {
+      "claim_id": "35232633-33de-499e-8f14-6b692294aa39",
+      "result_id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe"
+    },
+    {
+      "claim_id": "da70b20b-9567-4f31-9fa5-657d70ad122f",
+      "result_id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe"
+    },
+    {
+      "claim_id": "2cb22788-052f-46e2-ba6d-253ea9f6ccf2",
+      "result_id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe"
+    },
+    {
+      "claim_id": "62577d32-970e-47fa-9de9-eeefde799c56",
+      "result_id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe"
+    },
+    {
+      "claim_id": "4e5f88cc-fc2e-40dc-831a-d3ec864de9c2",
+      "result_id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe"
+    },
+    {
+      "claim_id": "c8eef687-3a96-4a21-acd6-64c68f0f717f",
+      "result_id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe"
+    },
+    {
+      "claim_id": "85b6964c-485e-471a-b2eb-823833356e67",
+      "result_id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe"
+    },
+    {
+      "claim_id": "120484dd-c603-494d-abba-ec0499a65f49",
+      "result_id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe"
+    },
+    {
+      "claim_id": "9781d504-5f56-436b-a10f-c8a2de6aa11f",
+      "result_id": "dd70f51a-cb93-4c5c-98da-6b16232e0dbe"
+    },
+    {
+      "claim_id": "49022a07-c8e3-4e45-b4a6-f3f0475eb890",
+      "result_id": "6de2c77e-fe2f-45f4-82b9-c2dc60e7355b"
+    },
+    {
+      "claim_id": "565d3d67-f15d-4f67-92fb-9c5674c12af7",
+      "result_id": "6de2c77e-fe2f-45f4-82b9-c2dc60e7355b"
+    },
+    {
+      "claim_id": "a9c9d552-7935-4c19-869c-4f6ee4bcf756",
+      "result_id": "6de2c77e-fe2f-45f4-82b9-c2dc60e7355b"
+    },
+    {
+      "claim_id": "c80ef63e-5bac-4e92-ac78-7f377fb1f6d4",
+      "result_id": "6de2c77e-fe2f-45f4-82b9-c2dc60e7355b"
+    },
+    {
+      "claim_id": "d0b88568-a2b5-4956-8a98-06a7af04f78b",
+      "result_id": "6de2c77e-fe2f-45f4-82b9-c2dc60e7355b"
+    },
+    {
+      "claim_id": "a35e9d14-03c9-4658-ae8e-460bdf138f37",
+      "result_id": "4d0662ba-4650-4d71-b97a-1015b8d8241d"
+    },
+    {
+      "claim_id": "fdd733e5-938c-49db-958e-4049c3bf65f9",
+      "result_id": "4d0662ba-4650-4d71-b97a-1015b8d8241d"
+    },
+    {
+      "claim_id": "e005a5de-6b1e-4cc0-bacd-1ac3f081d6ba",
+      "result_id": "4d0662ba-4650-4d71-b97a-1015b8d8241d"
+    },
+    {
+      "claim_id": "86259eb8-eeba-4282-94b8-4f7bc9164291",
+      "result_id": "4d0662ba-4650-4d71-b97a-1015b8d8241d"
+    },
+    {
+      "claim_id": "af4b63f4-b24f-4291-8051-2b3d3e7cc62b",
+      "result_id": "4d0662ba-4650-4d71-b97a-1015b8d8241d"
+    },
+    {
+      "claim_id": "b55329f2-649b-4d09-8cde-fcc66ec5515c",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "5b5e337b-5766-4c1f-a0aa-8b4d6744b3af",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "537ad6fd-0b80-40ea-812f-c7fc9735feb8",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "7f915dc4-743e-47de-8549-1e1413d3a45d",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "268b29a5-482f-4272-a59f-88d10264c400",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "a56a9094-6a95-42b7-be0d-15d0946d2918",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "e2d9cfd3-39b3-4832-8202-76b9c84d1f0b",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "a8bc1f86-66aa-454e-bf2b-b3c5f79b5872",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "fe6bfcc6-6064-4922-9689-9fd30625531b",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "6e35ec52-33d0-4f77-b16a-bfba8f308fb6",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "07223a30-8bca-473b-a4ff-2dd22adee44a",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "7005d257-883d-46e1-abd7-3c2690a0d000",
+      "result_id": "3e12a1e6-a795-45e9-88da-54e015090058"
+    },
+    {
+      "claim_id": "f746bf96-cd5b-46df-be09-44a0ed09ea1e",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "a6b650b5-1cad-4b3e-b3f2-801aa932dabb",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "7f90a901-e16b-477f-992c-21d621a61ca7",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "71a04c50-6552-4c50-8bdc-e3ac5618ee20",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "bf5dbe73-6f4e-49db-8b66-755bddfe4fb7",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "67ffd6a0-cda8-4751-95a0-58e5d7f1d0b6",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "164df153-4f79-47f0-8fa0-75e07ec133ea",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "977d37e0-780c-46dd-b5b4-e2becc953064",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "e8ef8bed-1cd0-491c-95bf-09422e1b6cd7",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "d21c4921-765c-442f-9fd2-d7239072fcc7",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "a3736148-4c6d-429c-b248-708216bcd9c5",
+      "result_id": "3630fb19-0580-4eed-bcb5-8d50eff8a346"
+    },
+    {
+      "claim_id": "8e832a51-f033-4939-9d1a-9a5b434c2c0e",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "1030f77c-58aa-40a9-a293-7a0d210bcf05",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "db7ef408-c66c-48bb-89ac-1f824d92c786",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "7759e0ca-908d-415e-80f4-6e9a840b8bb9",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "3c42e861-8ffd-4760-a700-45e1411aa3c4",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "d1480fb6-341d-48fd-8ef6-0fe865db0c8a",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "31393655-d0e6-46be-b350-d4cfb6d437db",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "155c5f1d-fc0c-4139-895e-542fac5bd01f",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "e4b726fd-3903-4480-a941-e938bd0db7c9",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "2b9de2fd-7f1d-4962-b043-2a5d8c731ed5",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "8f7e7891-dbef-410e-ae4d-08ae77e889c6",
+      "result_id": "0a026db6-51d5-48c9-9260-2ca86a18c054"
+    },
+    {
+      "claim_id": "ab409829-f5f0-42a0-975a-6e07345970dc",
+      "result_id": "bdf75e36-445c-4203-a43a-e864d7da9223"
+    },
+    {
+      "claim_id": "8f986fbd-dc0f-4080-9648-193854b8c0df",
+      "result_id": "bdf75e36-445c-4203-a43a-e864d7da9223"
+    },
+    {
+      "claim_id": "3eaa3fc1-a703-4e3f-af09-b3ba1fce94ac",
+      "result_id": "bdf75e36-445c-4203-a43a-e864d7da9223"
+    },
+    {
+      "claim_id": "ccaddb56-bfc8-40ea-a6a4-2dd61161e021",
+      "result_id": "bdf75e36-445c-4203-a43a-e864d7da9223"
+    },
+    {
+      "claim_id": "fdacaa2e-83da-4fa6-b0ad-7b43793ef265",
+      "result_id": "752bef09-a48c-45c0-b6f1-be9bfa0dd9df"
+    },
+    {
+      "claim_id": "5a51ddbf-c05f-418d-ba21-e0c67e9aaab1",
+      "result_id": "752bef09-a48c-45c0-b6f1-be9bfa0dd9df"
+    },
+    {
+      "claim_id": "d4b0c71e-956d-4430-8f22-49e06fb53f60",
+      "result_id": "725af35c-c4ef-497e-a757-c5596ffc3b74"
+    },
+    {
+      "claim_id": "8973ca8d-3343-4a6a-8d7b-9eefdcd0f1dc",
+      "result_id": "725af35c-c4ef-497e-a757-c5596ffc3b74"
+    },
+    {
+      "claim_id": "3b8ef7e8-376b-4fa8-bf88-221089368d49",
+      "result_id": "725af35c-c4ef-497e-a757-c5596ffc3b74"
+    },
+    {
+      "claim_id": "e8d1a1c3-e41d-4511-a1c8-ed48c866c015",
+      "result_id": "725af35c-c4ef-497e-a757-c5596ffc3b74"
+    },
+    {
+      "claim_id": "bd1d1a49-dc34-4e57-8ff6-2c9ea9dc76b2",
+      "result_id": "45e7629e-326c-4374-a83b-48cf1092cde9"
+    },
+    {
+      "claim_id": "c7bbfbb7-a02e-45dd-aa0b-ebfe73e3bef2",
+      "result_id": "45e7629e-326c-4374-a83b-48cf1092cde9"
+    },
+    {
+      "claim_id": "81502576-07af-4414-bd7f-3c78de1bc1bd",
+      "result_id": "45e7629e-326c-4374-a83b-48cf1092cde9"
+    },
+    {
+      "claim_id": "9c886d87-db00-4472-92b0-785f2578ad40",
+      "result_id": "98f649fa-5c86-4171-a295-9b7c604ef995"
+    },
+    {
+      "claim_id": "c6fe48bf-27f2-42b0-a9c3-e28cfc3ccb79",
+      "result_id": "98f649fa-5c86-4171-a295-9b7c604ef995"
+    },
+    {
+      "claim_id": "71489af6-b6df-4959-a28c-583aaf5fc1a7",
+      "result_id": "98f649fa-5c86-4171-a295-9b7c604ef995"
+    },
+    {
+      "claim_id": "824f9b9a-06c3-498d-8b27-78951479877b",
+      "result_id": "02cdc984-e19b-43a0-bc7e-b0b53b555ac8"
+    }
+  ],
+  "comparisons": []
+}

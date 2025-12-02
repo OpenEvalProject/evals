@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C46",
+      "C55",
+      "C56"
+    ],
+    "result": "The Cam-CAN dataset used in this study comprises 674 healthy individuals aged 18-88 years (mean 54.2 years) and represents the largest public multimodal neuroimaging resource with MEG, MRI, and fMRI data. While unique and sufficient for machine learning approaches, the dataset is considered small from a machine learning perspective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16, C46, C55, and C56 provide consistent factual descriptions of the dataset characteristics. The sample size, age range, and healthy population composition are clearly documented. The characterization as both 'unique' and 'small' from different perspectives is appropriately contextualized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C64"
+    ],
+    "result": "MEG and EEG share the same neural generators but have complementary biophysical properties: MEG preferentially captures tangential sources, benefits from magnetic transparency of the skull for improved source localization, and has increased signal-to-noise ratio in higher frequencies compared to EEG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 and C64 present well-established biophysical properties of MEG and EEG supported by citations (C5). These are standard knowledge claims in the field that appropriately contextualize the choice of MEG for the study and its relationship to the EEG aging literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior research has established that alpha band (8-12 Hz) peak frequency and power changes are linked to aging-related cognitive slowing, beta band (15-30 Hz) anteriorization is associated with compensatory mechanisms, and age-related variability in fMRI and EEG appears substantially independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 accurately summarize prior literature with appropriate citations. These establish the theoretical foundation for the feature selection and multimodal approach used in the study. The independence of fMRI and EEG variability (C15) is particularly important for justifying the multimodal approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C31",
+      "C10"
+    ],
+    "result": "MEG and fMRI both substantially improved age prediction when combined with anatomical MRI, each reducing prediction error by approximately 1 year compared to anatomy-based prediction alone. The full multimodal model achieved first rank in 71/100 cross-validation folds and performed better than models with fewer modalities in at least 80/100 folds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C31, and C10 are directly supported by the experimental results shown in Figure 2A and Figure 2\u2014figure supplement 1. The quantitative improvements are clearly documented with cross-validation statistics. The ranking stability across folds (C10) provides strong evidence for the systematic nature of the improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C32"
+    ],
+    "result": "Stacking enhances brain-age prediction by extracting information from MEG, fMRI, and MRI while mitigating modality-specific errors. The improvements are due to complementary information that helps predict distinct cases, as evidenced by weak correlation between MEG and fMRI prediction errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C32 are supported by the experimental results in Figure 2B showing weak correlation (r_Spearman=0.139) between MEG and fMRI prediction errors. The partial dependence analysis (Figure 2\u2014figure supplement 2) demonstrates additive patterns. However, the mechanistic interpretation of 'mitigating modality-specific errors' could benefit from more direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C42"
+    ],
+    "result": "MEG and fMRI convey non-redundant information on cognitive functioning and health, including fluid intelligence, memory, sleep quality, cognitive decline, and depression, with each modality contributing additive or unique information to brain-behavior associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C42 are supported by the brain-behavior correlation analysis shown in Figure 3. Different modalities show distinct patterns of associations with neuropsychological measures. However, the strength of evidence is limited by the exploratory nature of the analysis and multiple comparisons without correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C40",
+      "C41"
+    ],
+    "result": "Brain age delta showed associations with 20-25% of neuropsychological measures, with larger values globally associated with elevated depression, higher blood pressure, lower sleep quality, lower fluid intelligence, lower neurological assessment scores, and lower memory performance. This pattern is congruent with brain age literature and supports interpretation as an index of health decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, C40, and C41 are supported by the statistical analysis in Figure 3. The associations are consistent with prior literature (C41 cites Smith et al., 2019). However, effect sizes are modest (below 0.5 SD), and the analysis is exploratory without multiple comparison correction. The healthy population limits the strength of associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C44"
+    ],
+    "result": "Different modalities contributed unique brain-behavior associations: depression associations appeared with fMRI, fluid intelligence and sleep quality associations intensified with MEG, and cardiac measures were exclusively related to fMRI-based models and disappeared when MEG was included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, and C44 describe specific patterns observed in Figure 3. These observations support the complementarity of modalities. However, C44's observation about cardiac measures disappearing with MEG inclusion is intriguing but lacks mechanistic explanation beyond speculation about vascular confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C34"
+    ],
+    "result": "The most informative MEG features for age prediction were ridge regression models based on signal power or Hilbert envelope power concatenated across frequency bands. Source power in beta (15-30 Hz) and alpha (8-15 Hz) bands made noteworthy contributions, as did power-envelope connectivity features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C18, and C34 are directly supported by the variable importance analysis shown in Figure 4B and Table 4. The ranking of features is consistent across multiple importance metrics (Figure 4\u2014figure supplement 2), strengthening confidence in these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C35"
+    ],
+    "result": "Models based on source-level power spectra showed expected errors between 6.5 and 8 years, performing markedly better than sensor-space features. Applying orthogonalization for removing source leakage did not notably improve performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C35 are supported by the MEG model comparison in Figure 4A and Table 4. The lack of improvement from orthogonalization (C35) is an interesting negative result that challenges common assumptions about the importance of leakage correction for prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C48",
+      "C49"
+    ],
+    "result": "The opportunistic stacking model performed equivalently to the restricted model on common subsets of data. Adding cases with incomplete measurements never harmed prediction of cases with complete data, and the approach maintained and extended performance to new cases with incomplete modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C48, and C49 are supported by the opportunistic learning analysis in Figure 5. The results demonstrate practical viability of the missing data handling approach. However, the generalizability depends on the assumption that missing data patterns are not informative of age, which was verified for this dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The fMRI signal in elderly populations might predominantly reflect vascular effects rather than neuronal activity, and the observed complementarity of fMRI and MEG in age prediction might be conservatively explained by age-related increases in the ratio of vascular to neuronal contributions to fMRI signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 cites prior work (Tsvetanov et al., 2015) on the same dataset, but C38 is explicitly speculative ('might be conservatively explained'). While this interpretation is plausible, the current study does not provide direct evidence to distinguish vascular from neuronal contributions. This remains an interesting hypothesis requiring dedicated investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Electrophysiology can make a difference in prediction problems where fast brain rhythms are strongly statistically related to the biomedical outcome of interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is a reasonable generalization from the study findings showing that MEG features, particularly in alpha and beta bands, contributed substantially to age prediction. However, the generalization is limited to the specific context of aging and would require validation in other prediction problems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C47"
+    ],
+    "result": "Predicting biomedical outcomes from multiple modalities may reduce susceptibility to 'modality impurity', and brain age delta might be used as a screening tool for clinical settings with Cam-CAN serving as a normative sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43 and C47 are speculative suggestions about potential applications. C43 references prior literature on modality impurity but doesn't provide direct evidence. C47 is a reasonable suggestion given the results, but clinical utility would require validation in patient populations and demonstration of diagnostic value.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Source power can be approximated by sensor-level power spectra topography computable on any multichannel EEG device. Power spectra represent marginal expectations (main effects) while connectivity represents higher-dimensional bivariate interactions. The findings may generalize to simpler EEG devices, though source localization may be critical for resolving power spectrum geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C54 make reasonable inferences about potential EEG translation based on the MEG findings. The statistical characterization (C51-C52) is sound. However, the generalization to EEG (C53) is speculative and would require empirical validation. The tension between C50 (approximation possible) and C54 (source localization may be critical) reflects genuine uncertainty about translation requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The study faces limitations including: the stacking model might be of limited advantage with much larger datasets (10-100k subjects); lack of equivalent multimodal datasets hinders generalization testing; cross-validated metrics lack statistical independence; and procedures optimizing prediction performance lack support for formal statistical inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 appropriately acknowledge important limitations. C57 is speculative but reasonable. C58-C60 identify genuine methodological constraints. These limitations are honestly reported and appropriately contextualize the findings. The tension between prediction and inference (C60) is a well-recognized issue in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The MEG features used were non-exhaustive, with feature engineering based on aging-specific literature review constrained by biophysical considerations. Non-stationary analyses focusing on transient electrophysiological events may uncover additional clinically relevant information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 acknowledge limitations in feature selection. C61-C62 honestly describe the methodological approach. C63 cites prior work suggesting potential value of alternative approaches not explored here. This appropriately identifies directions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "There is no public dataset equivalent to Cam-CAN that includes EEG or both EEG and MEG alongside MRI and fMRI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is a factual statement about the current state of available datasets. This limitation is important for contextualizing the inability to directly test EEG generalization and the complementarity of MEG and EEG.",
+    "result_type": "MINOR"
+  }
+]

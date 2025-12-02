@@ -1,0 +1,411 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Tuberculosis is the leading cause of death by a single infectious agent, with drug-resistant strains accounting for over 500,000 deaths. Failures in antitubercular drug discovery are attributed to incomplete understanding of bacterial phenotypic diversity in the host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are supported by citations to WHO 2017 and Barry et al., 2009. These are background claims establishing the public health context and rationale for the study, appropriately referenced to authoritative sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C9"
+    ],
+    "result": "M. tuberculosis lacks most bacterial transcriptional factors for nitrogen metabolism, and GlnR performs non-canonical functions regulating ammonia and nitrate uptake. M. smegmatis cannot serve as a model for M. tuberculosis nitrogen metabolism due to evolutionary divergence of GlnR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C8-C9 are supported by Figure 1\u2014figure supplement 1 and citations to Williams et al., 2015 and Amon et al., 2009. The evolutionary argument for why M. smegmatis is inappropriate as a model is logically sound given the phylogenetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "M. smegmatis and M. tuberculosis exhibit significantly different growth kinetics in identical culture medium, including differences in growth rate, lag phase, and final biomass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by growth curve data in Figure 1\u2014figure supplement 2. This provides empirical evidence for species-specific metabolic differences beyond just growth rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Host amino acids L-aspartate and L-asparagine are important nitrogen sources during M. tuberculosis infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by citations to Gouzy et al., 2013 and 2014b. This establishes prior knowledge that motivates the current study's focus on amino acid nitrogen metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "M. tuberculosis can take up all 20 proteinogenic amino acids, with most amino acid pool sizes varying modestly across nitrogen sources. However, specific amino acids (Gly, Ala, Val, Ile, Met, Pro, Phe, Tyr, Trp, Ser, Thr, Arg, His) show increased intracellular pools when provided as sole nitrogen sources. Trp and His are readily stored at high concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 are supported by comprehensive metabolomics data in Figure 2a-f. The experimental design (pre-adaptation followed by amino acid exposure) is appropriate, and the LC-MS methodology is well-described. The data clearly demonstrate differential amino acid uptake and accumulation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "M. tuberculosis does not homeostatically control all amino acid pool sizes, suggesting two groups: homeostatically controlled amino acids and those whose intracellular concentrations reflect extracellular availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are logical inferences from the metabolomics data (C11-C21). The observation that some amino acid pools increase dramatically with external availability while others remain constant supports the conclusion of differential homeostatic control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Pre-culture medium composition significantly affects nitrogen metabolism experiments, and without pre-adaptation, experiments overestimate the potential of nitrogen sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by data in Figure 3\u2014figure supplement 1 showing differential growth based on pre-culture conditions. This is an important methodological finding that validates the experimental design used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Glutamate, glutamine, aspartate, and asparagine are superior nitrogen sources to NH4Cl for M. tuberculosis growth. NH4+ is optimally utilized only up to 4.67 mM, with higher concentrations being toxic. The preferential utilization order is: Glu > Asp > Asn > Gln > NH4+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by comprehensive growth kinetics data in Figure 3b-c. The dose-response curves clearly demonstrate amino acid superiority and NH4+ toxicity at high concentrations. The ranking is empirically derived from final biomass measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "When pre-adapted cultures are grown in medium without added nitrogen, limited growth persists due to trace ferric ammonium citrate. Differential growth patterns after pre-adaptation with different nitrogen sources indicate M. tuberculosis does not store nitrogen to any major extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by data in Figure 3d-f. The experimental design (nitrogen-free medium after pre-adaptation) appropriately tests nitrogen storage capacity. The differential growth patterns provide evidence against significant nitrogen storage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Both nitrogen atoms from glutamine and asparagine are utilized by M. tuberculosis. Position-specific 15N labeling reveals that glutamate synthase converts \u03b415N from Gln to \u03b115N-Glu, direct transamination occurs between Glu and Asp, and NH4+ from asparaginase is assimilated into Gln. No asparagine synthesis occurs via asparagine synthetase; instead, M. tuberculosis uses Asp-tRNAAsn amidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C45 are supported by sophisticated position-specific 15N labeling experiments (Figure 4a-f). The use of \u03b1- and \u03b4/\u03b3-labeled amino acids provides unambiguous evidence for specific metabolic pathways. The conclusion about Asn synthesis is supported by both labeling data and citation to Javid et al., 2014.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The metabolic patterns observed with different nitrogen sources are not secondary effects from carbon metabolism, as key glycolysis and Krebs cycle metabolites show minimal changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by data in Figure 4\u2014figure supplement 2. This control experiment is essential for ruling out confounding effects from carbon metabolism and strengthens the nitrogen-specific conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Kinetic analysis reveals robust 15N incorporation into core nitrogen metabolites from all nitrogen sources (except Asn). Lmax values are similar across nitrogen sources (~100% by 17h), but R values (labeling rates) vary considerably. NH4+ is inefficient compared to amino acids. Alanine shows elevated pool size and labeling with NH4+ or Asn. M. tuberculosis maintains a very small Asn pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 are supported by comprehensive kinetic analysis in Figure 4g-h and Figure 4\u2014figure supplement 1. The exponential fitting to calculate Lmax and R values is appropriate. The data clearly demonstrate differential nitrogen utilization kinetics, with amino acids superior to NH4+.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "M. tuberculosis can simultaneously take up and co-metabolize nitrogen sources (Glu/Gln and Asp/Asn pairs). Mass spectrometry confirms extensive metabolism generating all isotopologues and confirms no Asn synthesis. Alanine labeling derives mainly from Asn rather than Asp, suggesting Asn hydrolysis and Ala as an NH4+ entry point or nitrogen storage. However, co-metabolism does not provide growth advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 are supported by dual nitrogen source labeling experiments (Figure 5) and growth data (Figure 5\u2014figure supplement 1). The isotopologue analysis provides strong evidence for simultaneous utilization. The lack of growth advantage is clearly demonstrated but represents an unexpected finding that contrasts with carbon source co-metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "M. tuberculosis can grow with alanine as sole nitrogen source or in combination with other nitrogen sources, but without growth advantage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by growth data in Figure 6a. This establishes alanine as a viable nitrogen source and sets up subsequent mechanistic investigations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Alanine dehydrogenase (ald) RNA levels are higher in NH4+, Asn, Asp, and Gln compared to nitrogen-free medium, but decreased under nitrogen starvation compared to other nitrogen metabolism genes. This suggests ald-driven nitrogen assimilation is more important under nitrogen-rich conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by qPCR data in Figure 6b. The transcriptional analysis provides evidence for differential regulation of ald. However, C70 is somewhat speculative regarding enzyme requirements based on reaction directionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Genetic disruption of ald completely abolishes growth on alanine as sole nitrogen source, demonstrating alanine dehydrogenase is essential for NH4+ assimilation from Ala. However, ald is not the main route for NH4+ assimilation, as the knockout has no effect on growth in NH4+ or Gln. Growth is diminished with Asp as nitrogen source in the ald knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by genetic knockout experiments (Figure 6c) and labeling studies (Figure 6d). The complementation controls strengthen the conclusions. The data clearly distinguish between ald's essential role for Ala utilization versus its secondary role in NH4+ assimilation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Chemical inhibition studies with bromo-pyruvate (alanine dehydrogenase inhibitor) and methionine sulfoximine (glutamine synthetase inhibitor) confirm that alanine dehydrogenase is essential for Ala utilization but not the main NH4+ assimilation route. NH4+ assimilation is undertaken primarily by glutamine synthetase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by inhibitor studies in Figure 6e-f. The pharmacological approach complements the genetic data (C71-C76). However, C78 acknowledges potential off-target effects of bromo-pyruvate on glutamate dehydrogenase, which is appropriate caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Comparison with E. coli reveals that E. coli utilizes nitrogen from NH4+ 3-26 fold faster than M. tuberculosis (accounting for doubling rate). Labeling from amino acids is up to 10-times faster than from NH4+ in M. tuberculosis, supporting the hypothesis that M. tuberculosis evolved to preferentially utilize host amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by kinetic comparisons with published E. coli data (Yuan et al., 2006). The calculations appropriately account for doubling time differences. The evolutionary interpretation (C84) is a reasonable inference from the kinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Growth kinetics alone are misleading for assessing nitrogen source utilization, as Glu and Asp (single nitrogen) produce greater biomass than Gln and Asn (two nitrogens).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by the growth data (Figure 3) and position-specific labeling experiments (Figure 4). This is an important methodological insight demonstrating the necessity of isotope tracing for understanding nitrogen metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "M. tuberculosis metabolic network is highly evolved to efficiently use multiple nitrogen sources despite being able to biosynthesize all amino acids. All tested nitrogen sources donate nitrogen faster than NH4+. Glu/Gln and Asp/Asn are simultaneously used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 synthesize findings from kinetic analysis (C52-C55) and co-metabolism experiments (C57-C64). The conclusions are well-supported by the comprehensive experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Co-metabolism of nitrogen sources is likely important during growth under low nutrient levels and must lead to more compartmentalized/optimized use of the metabolic network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 are speculative inferences about physiological relevance and metabolic organization. While C90 draws analogy to carbon source co-metabolism (de Carvalho et al., 2010), C91 is purely speculative without direct evidence. The lack of growth advantage in co-metabolism (C64) somewhat undermines these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Alanine is labeled faster than glutamate from multiple nitrogen sources, likely due to reversal of alanine dehydrogenase (reductive amination of pyruvate). Alanine dehydrogenase is absolutely essential for Ala utilization as nitrogen source. Alanine likely represents a quickly accessible nitrogen storage route.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by labeling kinetics (Figure 4), genetic knockout studies (Figure 6c), and inhibitor experiments (Figure 6e). The mechanistic interpretation (C93) is well-supported by the combined genetic and biochemical evidence. C95 is a reasonable inference from the data showing Ala pool increases but ald is not essential for growth in NH4+/Gln.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Large disparities in amino acid and \u03b1-keto acid pool sizes likely impose unidirectional nitrogen flow. Alanine dehydrogenase is not essential for Ala biosynthesis, supporting existence of glutamate/pyruvate transaminase. Ala cannot donate nitrogen to \u03b1-KG to produce Glu. If true for other transaminases, Glu is the nitrogen source for transaminations, made only from glutamate synthase/dehydrogenase. Amino acids lacking alternative deamination systems (e.g., dehydrogenases) likely cannot serve as nitrogen sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 represent sophisticated mechanistic interpretations of the labeling data. C97-C98 are supported by the observation that ald knockout is not an Ala auxotroph. C99 is directly supported by labeling data showing Ala labels faster than Glu. C100-C101 are logical extensions but somewhat speculative ('if this is true for other transaminases'). The overall model is consistent with the data but would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Some metabolic behaviors of M. tuberculosis are unique and likely result from adaptation to humans as the principal reservoir. M. tuberculosis is an 'opportunistic' nutritional generalist, able to synthesize all required molecules but also uptake and metabolize multiple host carbon and nitrogen sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are broad interpretive conclusions synthesizing the entire study. C104 is well-supported by the comprehensive demonstration of amino acid uptake and utilization. C102-C103 are reasonable evolutionary interpretations given the unique metabolic features documented, though they remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "The ability to utilize multiple amino acids as nitrogen sources makes nitrogen uptake an uninviting drug target. However, uptake of amino acids that cannot serve as nitrogen sources and might be toxic could reveal metabolic constraints applicable to drug discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 are speculative translational implications. C105 is a reasonable inference from the demonstrated metabolic flexibility, but 'uninviting' may be overstated\u2014metabolic flexibility doesn't preclude targeting if essential nodes exist. C106 is highly speculative without supporting data on toxic amino acid analogs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Core properties of M. tuberculosis nitrogen metabolism include: lack of homeostatic control of certain amino acid pools, similar utilization rates of different amino acids, improved nitrogen utilization from amino acids versus ammonium, co-metabolism of nitrogen sources, and involvement of alanine dehydrogenase in ammonium assimilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 summarize the major findings of the study. Each is supported by specific experimental results: C108 by Figure 2, C109 by Figure 4h, C110 by Figures 3-4, C111 by Figure 5, and C107 by Figure 6. These represent well-supported core conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Studies using NH4+ as sole nitrogen source are likely not relevant to physiologic conditions in the host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is a strong conclusion supported by the demonstration that amino acids are superior nitrogen sources (C26-C29), utilized faster (C83), and more physiologically relevant given host amino acid availability (C10). This is an important implication for the field.",
+    "result_type": "MAJOR"
+  }
+]

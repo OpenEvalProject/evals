@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Single-cell RNA-seq identified eight transcriptomically distinct subclasses of subiculum pyramidal cells, with nine clusters total (one being CA1). Individual marker genes were sufficient to delineate clusters, with 50\u00b132 genes enriched per cluster on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C21 provide converging evidence from scRNA-seq analysis showing robust clustering with single-gene markers and extensive differential gene expression. The clustering approach, marker gene identification, and quantitative enrichment analysis are well-documented with appropriate statistical thresholds (pADJ <0.05, >3-fold enrichment).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Independent biological replicates (n=5 animals, 847 cells) validated the original clustering, recovering eight of nine clusters with statistically significant marker gene correspondence and no new clusters emerging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 demonstrate robust cross-validation across independent animals. The statistical validation (geometric mean pADJ = 8.7e-40) and absence of novel clusters in replicates strongly support reproducibility. The single missed cluster (Cbln4) was detected but failed to cluster at the predetermined resolution, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C39",
+      "C40"
+    ],
+    "result": "Marker genes for each transcriptomic cluster mapped to continuous, spatially distinct domains in the subiculum, with laminar organization evident in both dorsal and ventral regions showing superficial-to-deep patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C33, C39-C40 are supported by ISH data from the Allen Brain Atlas and custom experiments showing spatial segregation of marker gene expression. The spatial patterns are consistent with the transcriptomic clustering and demonstrate anatomical organization across multiple axes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Two-color ISH experiments demonstrated that transcriptomic subclasses occupy mutually exclusive, abutting spatial domains with 93-99% of cells showing non-overlapping marker expression across five tested marker gene pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide direct experimental validation of discrete spatial boundaries between subclasses. The high percentages of mutual exclusion (93-99%) across multiple marker pairs with adequate sample sizes (457-801 cells per comparison, n=2 mice) strongly support discrete rather than continuous organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "One cluster expressing Myo5b was identified as CA1 pyramidal cells rather than subiculum cells, and no other clusters showed markers of off-target cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 demonstrate appropriate quality control. The identification of CA1 cells is supported by ISH showing expression in densely packed cells near the CA1/subiculum border and validation with previous RNA-seq data. The exclusion of off-target cell types (interneurons, para/pre/postsubiculum) is documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The study validated and extended previous IHC findings showing that ZnT3, Nos, and Pcp4 correspond to proximal laminae while Vglut2 corresponds to distal subiculum, with scRNA-seq data confirming subclass-specific expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 appropriately validate prior work (Ishihara and Fukuda, 2016) using the current scRNA-seq dataset. The correspondence between IHC-defined spatial patterns and transcriptomic subclasses provides cross-modal validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Most transcriptomic clusters (6/8) traversed the full dorsal-ventral axis, with only S100b and Gpc3 clusters restricted to dorsal and ventral halves respectively, indicating that superficial-deep and proximal-distal are the primary axes of variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by systematic analysis of marker gene expression across the dorsal-ventral axis shown in Figure 6. The inference that superficial-deep and proximal-distal are primary axes is logically derived from the observation that most subclasses span the dorsal-ventral axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Immunohistochemistry validated that transcriptomic differences correspond to differential protein expression, including Kv4.3 depletion in distal subiculum, enrichment of synaptotagmin-2 and Vglut2 in distal subiculum, and lamina-specific expression of S100, Glypican 3, Pcp4, and Pamr1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C49-C51, C53-C55 demonstrate protein-level validation of transcriptomic findings through IHC experiments. The correspondence between transcript and protein levels across multiple markers provides strong multi-modal validation, though sample sizes (n\u22652 mice per antibody) are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Slc17a6 expression can be exploited for genetic targeting of distal subiculum cells using Slc17a6-IRES-cre transgenic mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by experiments showing Cre-dependent viral expression restricted to the distal subiculum in Slc17a6-IRES-cre mice (n=4), validating the practical utility of the transcriptomic findings for cell-type-specific manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Projection mapping revealed differential distribution of PFC, NA, and amygdala-projecting cells across transcriptomic clusters, with amygdala projections highly enriched in the Gpc3 cluster (86%) while PFC and NA projections were more diffusely distributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56-C62 demonstrate association between transcriptomic identity and projection targets. The quantitative analysis shows clear differential distribution, particularly for amygdala projections. However, the study only examined three projection targets, leaving many subclasses without identified projections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Two-color ISH combined with retrograde labeling showed 97% mutual exclusion between Tpbg expression and NA projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 provides direct spatial validation of the projection mapping results using combined ISH and retrograde tracing (n=275 cells, n=2 animals), confirming that NA projections avoid Tpbg-expressing subclasses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C70",
+      "C71"
+    ],
+    "result": "The subiculum exhibits a complex organization with proximal and distal subdomains, where proximal subiculum contains multiple discrete laminae while distal subiculum is relatively homogeneous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C70-C71 synthesize findings from scRNA-seq, ISH, and two-color ISH to describe overall organizational principles. This interpretation is well-supported by the spatial mapping data and appropriately acknowledges prior work (Ishihara and Fukuda, 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "At least six discretely separable subclasses of subiculum pyramidal cells exist, based on direct demonstration of five pairwise separations and inference from spatial ordering combined with previous work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is conservatively stated and supported by direct two-color ISH validation of five cluster pairs plus integration with previous work. The authors appropriately acknowledge that not all pairwise separations were directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The eight scRNA-seq subclasses likely represent an approximation and potentially a lower bound on the true number of biological subclasses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is speculative and appropriately presented as such. While methodological limitations (sequencing depth, cell number, clustering resolution) could result in underestimation, the claim lacks direct evidence. The possibility of continuous variation between some clusters is also not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The transcriptomically defined subclasses likely vary in higher-order structure and function based on widespread differential expression of functionally relevant genes and covariation with protein products and projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is an inference supported by multiple lines of evidence: differential expression of genes with known functional roles (C20-C21), protein-level validation (C49-C55), and projection target associations (C56-C62). While direct functional characterization is not provided, the inference is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The scRNA-seq data, analysis scripts, and visualization tools are publicly available through multiple repositories (hipposeq.janelia.org, GEO: GSE113069, and figshare).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 document data and code availability. These are verifiable statements about resource deposition that support reproducibility and reuse of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C67",
+      "C68"
+    ],
+    "result": "Background claims establish the hippocampus and subiculum's roles in memory, navigation, and emotion, and cite emerging evidence for functional heterogeneity within classical hippocampal cell types that may align with transcriptomic identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14, C67-C68 provide appropriate background context supported by citations to established literature. These claims frame the motivation for the study but are not novel findings of the current work.",
+    "result_type": "MINOR"
+  }
+]

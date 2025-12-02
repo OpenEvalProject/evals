@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C53",
+      "C54",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C105",
+      "C106",
+      "C109",
+      "C111"
+    ],
+    "result": "ODELAM is a time-lapse microscopy method that can track 50-1500 CFUs per region of interest (with 80-96 regions per experiment) for 96 hours, enabling rapid quantitative measurement of growth kinetics in as little as 30 hours. Growth curves are fitted to the Gompertz function to extract kinetic parameters (doubling time, lag time, time in exponential phase, number of doublings), with reliable parameter determination requiring ~1.5 times the time for CFUs to exit exponential phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13, C53, C54, C69-C74, C105-C106, C109, and C111 collectively describe ODELAM's technical specifications and capabilities. The 30-hour detection time for H37Rv is supported by experimental data (Figure 2) and computational convergence analysis (Figure 12). The technical specifications (50-1500 CFUs, 80-96 regions, 96-hour tracking) are consistently stated and demonstrated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C75"
+    ],
+    "result": "H37Rv strain exhibits a median lag time of 0.5 hrs, doubling time of 22.9 hrs (IQR 7.8), exponential phase duration of 52.5 hrs (IQR 33.8), and 3.1 doublings (IQR 1.6). These measurements are consistent with bulk laboratory measurements and demonstrate innate heterogeneity in the genetically homogeneous clonal population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 and C75 present baseline growth characteristics of H37Rv supported by experimental data in Table 1 and Figure 1. The consistency with bulk measurements (C19, citing Pe\u00f1uelas-Urquides et al., 2013) validates the method. The observation of heterogeneity in a clonal population is a reasonable interpretation of the IQR values shown in the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C23",
+      "C29",
+      "C58",
+      "C65",
+      "C76",
+      "C78",
+      "C79"
+    ],
+    "result": "H37Rv is sensitive to ofloxacin with MIC of 0.5 \u03bcg/ml. ODELAM reveals that H37Rv initially grows at all OFX concentrations for the first 24 hours, then arrests growth after 2-3 doublings at the MIC (and after the first doubling at high concentrations), without appreciable changes in doubling rate prior to arrest. The primary effect of OFX is to reduce time in exponential phase rather than alter doubling time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C23, C29, C58, C65, C76, C78-C79 describe H37Rv's response to OFX, supported by experimental data in Figures 2 and 4A and Table 1. The MIC determination (Figure 2B), growth kinetics (Figure 2A), and effect size analysis (Figure 4A) consistently show that OFX primarily affects time in exponential phase rather than doubling rate. The 24-hour initial growth period is consistent with OFX's mechanism of action requiring DNA damage accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C66",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "TRS10 contains a D94G gyrase-A mutation conferring OFX resistance with MIC of 16 \u03bcg/ml. Unlike H37Rv, TRS10 slows its doubling time as OFX concentration increases (dramatically from ~30 to ~50 hrs between 2-4 \u03bcg/ml), continues growing at its MIC, and exhibits a broad spread of doubling times. The effect size for doubling time tracks with number of doublings, suggesting different mechanisms of OFX toxicity between strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C30-C31, C66, C80-C83 describe TRS10's distinct response to OFX, supported by experimental data in Figures 3 and 4B and Table 1. The D94G mutation is documented in cited literature (Eilertson et al., 2016; Hooper, 2001). The contrasting phenotypes between H37Rv and TRS10 are well-documented, with TRS10 showing dose-dependent slowing of doubling time rather than growth arrest. The mechanistic interpretation (C31, C83) is reasonable given the known reduced binding affinity of OFX to mutant gyrase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C62",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "ODELAM can detect heteroresistance with sensitivity of approximately 1 in 1000 CFUs in artificially mixed H37Rv/TRS10 populations. ODELAM detected resistant CFUs across dilution series from 50% to 0.04% TRS10, with linear detection from 50% to 0.2%. Standard MIC assays detected shifts in MIC but could not distinguish between monoculture resistance and heteroresistance, yielding inaccurate results for mixed populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37, C62, C86-C94 describe heteroresistance detection in mixed populations, supported by experimental data in Figure 5. The detection of a single resistant CFU from 0.04% mixture (C33) and linear relationship from 50-0.2% (C37) demonstrate sensitivity. The limitation of standard MIC assays (C86-C87, C91-C92) is clearly shown in Figure 5A. The ~1 in 1000 sensitivity claim (C62) is supported by the experimental design observing ~1000 CFUs per region (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C95"
+    ],
+    "result": "ODELAM consistently observed fewer resistant TRS10 CFUs than expected from OD600 measurements used to generate mixtures, likely reflecting variability in using OD600 to predict CFUs between strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C95 acknowledge a systematic discrepancy in the heteroresistance experiments, supported by data in Figure 5B and citation to Pe\u00f1uelas-Urquides et al., 2013 documenting strain-dependent OD600-CFU relationships. This is a reasonable interpretation of the observed bias and demonstrates appropriate acknowledgment of experimental limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Clinical isolate ADB42 exhibits heteroresistance to OFX with MIC of 16 \u03bcg/ml. ODELAM detected two distinct populations based on growth kinetics (segregated by 2-doubling threshold), with ~24% resistant CFUs. RNA-seq revealed 15% D94G gyrase-A SNP frequency. Cloning experiments confirmed 33 of 96 clones were OFX-resistant, all containing the D94G mutation, while sensitive clones lacked this mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47, C96-C102 describe heteroresistance detection in ADB42, supported by multiple converging lines of evidence: ODELAM growth kinetics (Figures 6-7), RNA-seq (Figure 8A), cloning/spot assays (Figure 8B-C), and Sanger sequencing (Table 3). The ~24% resistant CFUs by ODELAM (C43, Table 2) is within 95% confidence interval of 15% RNA-seq frequency (C42) when accounting for binomial sampling. The complete concordance between OFX resistance phenotype and D94G genotype in clones (C46-C47) strongly supports the conclusion of heteroresistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C103",
+      "C104"
+    ],
+    "result": "ODELAM directly observes cell lysis after growth arrest on OFX, detected as reduction in colony area. Lysis frequency increases with OFX concentration (>0.5 \u03bcg/ml) and scales with strain sensitivity: H37Rv showed 95% lysis, ADB42 65%, and TRS10 30%, highlighting the transition from cytostatic to cytolytic drug effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C103-C104 describe lysis observations supported by experimental data in Figure 10. The correlation between lysis frequency and strain sensitivity (C103) is clearly demonstrated, with the most sensitive strain (H37Rv) showing highest lysis and the most resistant (TRS10) showing lowest. This provides additional phenotypic information beyond growth kinetics and represents a unique capability of the microscopy-based approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C67",
+      "C84",
+      "C85",
+      "C108"
+    ],
+    "result": "OFX binds DNA gyrase, trapping the enzyme-DNA complex and leading to accumulation of DNA damage through stalled transcription, blocked replication forks, and double-strand breaks. Time of exposure is directly linked to toxicity. The differential effects between H37Rv and TRS10 reflect differential accumulation of cytotoxic intermediates due to differences in drug binding to wild-type versus mutant gyrase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C55-C57, C59, C67, C84-C85, C108 describe OFX mechanism of action, supported by multiple literature citations (Willmott et al., 1994; Gore et al., 2006; Manjunatha et al., 2002; Hiasa et al., 1996; Wang et al., 2009; Da Re et al., 2009; Maruri et al., 2012). The mechanistic interpretations (C67, C84-C85) linking observed phenotypes to known drug mechanisms are reasonable, though speculative elements (C84-C85) are appropriately qualified. The time-dependent toxicity (C108) is consistent with the accumulation model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C32",
+      "C60",
+      "C61",
+      "C107"
+    ],
+    "result": "Antimicrobial-resistant Mtb causes over 200,000 deaths annually, with existing diagnostic methods having significant limitations: culture-based methods require 1-4 weeks, PCR-based methods miss unknown resistance mechanisms, and bulk assays cannot detect heteroresistant subpopulations. Growth kinetics of Mtb under fluoroquinolone pressure have not been previously reported at this level of detail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C12, C32, C60-C61, C107 establish the clinical context and limitations of existing methods, supported by appropriate citations (WHO 2019; Dorman et al., 2018; Kim, 2005; Lawson et al., 2013; Kontos et al., 2004; Garrig\u00f3 et al., 2007; Shin et al., 2018; Aldridge et al., 2012; Golchin et al., 2012; Wakamoto et al., 2013; Choi et al., 2014; Barr et al., 2016; Sebastian et al., 2017). These claims provide appropriate background and motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C68"
+    ],
+    "result": "ODELAM was originally designed for yeast and can be adapted to any colony-forming microorganism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C68 describe ODELAM's origins and potential broader applicability. C14 is supported by citation to Herricks et al., 2017. C68 is speculative but reasonable given the general nature of the imaging approach. The successful adaptation from yeast to Mtb supports the claim of broader applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "ODELAM's sensitivity is dependent on the number of CFUs observed, and improvements in optics, computation, and media preparation could increase sensitivity by orders of magnitude. The approach could potentially observe rare events leading to drug resistance development, including persistent cells acquiring resistance through mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 are speculative about future capabilities. While C63 is a logical inference about the relationship between sample size and detection sensitivity, the claim of \"orders of magnitude\" improvement lacks supporting data. C64 is highly speculative about observing rare resistance development events, though it cites Cohen et al., 2013 for context. These represent potential future applications rather than demonstrated capabilities.",
+    "result_type": "MINOR"
+  }
+]

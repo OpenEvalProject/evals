@@ -1,0 +1,1677 @@
+{
+  "submission": {
+    "id": "c4e9da18-51c9-4e25-b92d-7bd3a843ecd0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T08:49:06.445288Z",
+    "updated_at": "2025-12-02T08:49:06.445288Z"
+  },
+  "content": [
+    {
+      "id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "submission_id": "c4e9da18-51c9-4e25-b92d-7bd3a843ecd0",
+      "content_type": "manuscript",
+      "content_text": "# The proneural wave in the Drosophila optic lobe is driven by an excitable reaction-diffusion mechanism\n\n## Authors\n\n- David J J\u00f6rg<sup>1</sup> ([ORCID: 0000-0001-5960-0260](https://orcid.org/0000-0001-5960-0260))\n- Elizabeth E Caygill<sup>2</sup>\n- Anna E Hakes<sup>2</sup> ([ORCID: 0000-0002-8664-1014](https://orcid.org/0000-0002-8664-1014))\n- Esteban G Contreras<sup>2</sup> ([ORCID: 0000-0002-0934-741X](https://orcid.org/0000-0002-0934-741X))\n- Andrea H Brand<sup>2</sup> ([ORCID: 0000-0002-2089-6954](https://orcid.org/0000-0002-2089-6954))\n- Benjamin D Simons<sup>1</sup> ([ORCID: 0000-0002-3875-7071](https://orcid.org/0000-0002-3875-7071)) \u2020\n\n### Affiliations\n\n1. Cavendish Laboratory, Department of Physics University of Cambridge Cambridge United Kingdom\n2. The Wellcome Trust/Cancer Research UK Gurdon Institute University of Cambridge Cambridge United Kingdom\n3. Department of Physiology, Development and Neuroscience University of Cambridge Cambridge United Kingdom\n4. The Wellcome Trust/Medical Research Council Stem Cell Institute University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn living organisms, self-organised waves of signalling activity propagate spatiotemporal information within tissues. During the development of the largest component of the visual processing centre of the Drosophila brain, a travelling wave of proneural gene expression initiates neurogenesis in the larval optic lobe primordium and drives the sequential transition of neuroepithelial cells into neuroblasts. Here, we propose that this \u2018proneural wave\u2019 is driven by an excitable reaction-diffusion system involving epidermal growth factor receptor (EGFR) signalling interacting with the proneural gene l\u2019sc. Within this framework, a propagating transition zone emerges from molecular feedback and diffusion. Ectopic activation of EGFR signalling in clones within the neuroepithelium demonstrates that a transition wave can be excited anywhere in the tissue by inducing signalling activity, consistent with a key prediction of the model. Our model illuminates the physical and molecular underpinnings of proneural wave progression and suggests a generic mechanism for regulating the sequential differentiation of tissues.\n\n## Introduction\n\nThe development of multicellular organisms relies on a multitude of transient coordination processes that provide the spatiotemporal cues for cell fate decision-making and thereby ensure that tissues are specified with the correct size, pattern and composition (Perrimon et al., 2012; Oates et al., 2012; Sato et al., 2013). In one strategy, large-scale patterning is engineered by self-organised concentration waves of biomolecular fate determinants that travel across tissues through intercellular exchange and the regulation of gene expression. Such travelling waves, which are viable carriers of spatiotemporal information, are a ubiquitous feature of developmental pattern formation, where they arise through different underlying mechanisms, from coordinated intracellular oscillations (Oates et al., 2012; J\u00f6rg et al., 2015; Hubaud et al., 2017; Verd et al., 2018) to self-organised reaction-diffusion processes (Lubensky et al., 2011; Formosa-Jordan et al., 2012; Fried et al., 2016; Gavish et al., 2016; Corson et al., 2017).\n\nDuring the development of the fruitfly Drosophila melanogaster, a propagating wave of gene expression orchestrates the patterning of the largest component of the visual processing centre: neuroepithelial cells in the optic lobe of the larval brain divide symmetrically, expanding the progenitor pool, and then undergo a sequential transition into asymmetrically dividing neuroblasts, which generate the neurons of the medulla (Figure 1a,b) (Egger et al., 2007; Yasugi et al., 2008; Egger et al., 2010; Yasugi et al., 2010).\u00a0The transition from neuroepithelial cells to neuroblasts occurs at a \u2018transition zone\u2019 that sweeps from one side of the optic lobe to the other and is marked by the expression of the proneural gene lethal of scute (l\u2019sc) (Yasugi et al., 2008).\u00a0This \u2018proneural wave\u2019 is controlled by the coordinated action of different signalling pathways: epidermal growth factor receptor (EGFR) signalling and Delta-Notch signalling (Figure 1c\u2013f) (Yasugi et al., 2010).\u00a0The sequential nature of the transition is crucial to generate populations of cells of different developmental ages that give rise to a diverse array of terminally differentiated medulla neurons (Li et al., 2013; Sato et al., 2013; Suzuki et al., 2013; Erclik et al., 2017).\u00a0The transition zone exhibits localised EGFR signalling as well as expression of l\u2019sc (Figure 1b,c).\u00a0Absence of EGFR signalling leads to loss of the differentiation wave, indicating that EGFR signalling is a key component for proneural wave progression (Yasugi et al., 2010).\u00a0The neuroepithelium exhibits low levels of Notch signalling activity (Egger et al., 2011; Weng et al., 2012). However, Notch activity peaks directly before the transition from neuroepithelial cell to neuroblast, drops during the transition and then is restored upon neuroblast transformation (Figure 1c) (Contreras et al., 2018).\u00a0In addition, coordinating roles are played by the JAK/STAT and Fat-Hippo pathways, which are broadly expressed in the neuroepithelium and prevent premature and ectopic transition of the neuroepithelium (Yasugi et al., 2008; Yasugi et al., 2010; Wang et al., 2011a; Reddy et al., 2010; Kawamori et al., 2011; Weng et al., 2012; Tanaka et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40919/elife-40919-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic depiction of the Drosophila larva at the late 3rd instar stage when the proneural wave is transforming the neuroepithelium into medulla neuroblasts. (b) Optic lobe in a lateral view showing the neuroepithelium (labelled with Notch intracellular domain (NICD), white), the transition zone (L\u2019sc, cyan) and the neuroblasts (Dpn, red). (c) L\u2019sc expression and Notch signalling activity around the transition zone. Top: Magnification of the region outlined in (b), showing neuroblasts (Dpn, red), L\u2019sc expression (cyan) and the neuroepithelium (NICD, white). Middle: Confocal image showing that Notch signalling activity (HLH-mgamma, purple) increases just before the transition zone (marked by L\u2019sc, cyan), drops during the transition and then increases again in neuroblasts. Bottom: The proneural wave, characterised by expression of L\u2019sc as well as EGF receptor (EGFR) and Notch signalling activity, sequentially converts the neuroepithelium into neuroblasts. (d) EGFR signalling in the transition zone activates expression of the transmembrane protein Rhomboid, which in turn cleaves the membrane-tethered form of the EGFR ligand Spitz (mSpi) to generate its active secreted form (sSpi). (The shaded region depicts an individual cell in the neuroepithelium.) sSpi can bind to the EGFR on the same cell and neighbouring cells. (e) Delta-Notch signalling is a contact-dependent signalling pathway active in both the neuroepithelium and the neuroblasts. The Delta ligand binds to Notch receptors on adjacent cells upon which their intracellular domain (NICD) is cleaved. The NICD regulates target genes, which, in turn, affects expression of Delta. (f) Active EGFR signalling promotes the expression of L\u2019sc within the same cell, which is sufficient for the neuroepithelium to neuroblast transition and which in turn downregulates EGFR signalling.\n\nThe question of how the specific functional feedbacks of EGFR signalling and proneural gene expression generate a localised propagating transition zone requires a mechanistic explanation of wave progression based on molecular feedbacks and signalling cascades. Such a description should explain (i) the dynamic nature of the wave, (ii) the emergence of a localised transition zone with spatially confined expression of the proneural gene l\u2019sc and (iii) the specific profiles of gene expression and signalling activity around the transition zone.\u00a0Moreover, the nature and function of the interaction of these components with Delta-Notch signalling, more commonly associated with lateral inhibition of neighbouring cells, is poorly understood, see Appendix 3.\u00a0While a recent effort of a phenomenological description of the proneural wave (Sato et al., 2016) has started to model the coarse-grained aspects of proneural wave progression, the emergence of some major characteristics of the wave (such as spatially confined proneural gene expression in a localised transition zone) has not been addressed.\u00a0Here we propose a model of signalling activity and proneural gene expression that describes the emergence of the proneural wave. Within this framework, the neuroepithelium behaves as an excitable medium in which changes in gene expression at the tissue boundary initiate a spontaneous wave of signalling activity that effects the transition from neuroepithelium to neuroblasts.\n\n## Results\n\n### Travelling front model of EGFR signalling activity\n\nTo develop the model, we first considered interactions between L\u2019sc\u00a0expression and associated signalling pathways within the transition zone. Previously, it was proposed that sequential induction of EGFR signalling is responsible for the progression of the proneural wave (Yasugi et al., 2008). EGFR signalling activates the expression of L\u2019sc (Yasugi et al., 2010), which is sufficient to drive the neuroepithelium to neuroblast (NE to NB) transition (Yasugi et al., 2008; Contreras et al., 2018). The EGFR is activated by binding the secreted form of its ligand, Spitz. Secreted Spitz is generated by cleavage of a membrane-bound precursor by the transmembrane protease, Rhomboid (Kl\u00e4mbt, 2000). EGFR, Rhomboid and secreted Spitz together form an autocrine positive feedback loop (Figure 1d) (Wiley et al., 2003; Sato et al., 2013). In a first step, we noted that the dynamics of EGFR signalling alone has features that are sufficient to enable such a sequential induction and produce a travelling front of EGFR signalling activity; a feature notably absent in recent attempts to model the proneural wave, which also require further components to stabilise the propagating EGFR signalling front (Sato et al., 2016). In a minimal model based on the EGFR/Rhomboid/Spitz positive feedback loop, EGFR signalling activity is represented by a single component \u2018E\u2019 (e.g., the local cellular concentration of the active form of Spitz) that is diffusible between cells and involves the aforementioned positive feedback (Figure 1d and Figure 2a; Appendix 1),\n\n$$\n\\frac{\\partial\u2061\u03d5^{E}}{\\partial\u2061t}=\u03b7\u2062\\nabla^{2}\u2061\u03d5^{E}+\\mu\u2062h\u2062(\u03d5^{E})-k\u2062\u03d5^{E}.\n$$\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40919/elife-40919-fig2-v1.jpg)\n\n**Figure 2.:** (a) Minimal model of EGFR signalling. The dynamics of the EGFR/Rhomboid/Spitz feedback loop is condensed in a single component \u2018E\u2019 (green), which is diffusible between cells and able to self-activate (for details, see Appendix 1). This single component represents a proxy for the activity of the feedback loop shown in Figure 1c,\u00a0for example\u00a0the local concentration of the active form of Spitz. The corresponding reaction-diffusion system, Equation 1, can give rise to a propagating front that leaves behind an elevated signalling state. Plots show the numerical solution of Equation 1 in a one-dimensional representation of tissue (for simplicity) at two time points with initially elevated levels of E at the left-hand side of the domain. Specifying position in units of the diffusion length $\\sqrt{\u03b7/k}$ and time in units of the decay time $k^{-1}$, the remaining chosen parameters are $\\mu=4$ and $n=3$. (b) Model of EGFR signalling interacting with the proneural gene l\u2019sc. EGFR signalling activates L\u2019sc expression (component \u2018L\u2019, blue), which effectively inhibits EGFR signalling by driving the NE to NB transition (for details, see Appendix 2). The corresponding reaction-diffusion system, Equation 2, can give rise to a propagating localised pulse of signalling activity and proneural gene expression corresponding to the transition zone. Parameters for E are the same as in panel a; parameters for L are $\\mu_{L}=0.4$, $k_{L}=0.2$. (c) Schematic depiction of the mechanism giving rise to a localised transition zone, shown in panel b. Diffusion of signalling components (E, green) into the neuroepithelium leads to activation of the positive feedback loop, which locally excites signalling and proneural gene expression (L, blue) (Materials\u00a0and\u00a0methods). The excitation ceases as downregulation of signalling occurs, a consequence of the transition triggered by L\u2019sc expression. (d) Regulatory network of the refined model including Delta-Notch signalling (D and N) and a local variable $\u03a9$ indicating the cell state ($\u03a9=0$ indicates neuroepithelial cells and $\u03a9=1$ indicates neuroblasts; for details, see Appendix 3). Each shaded cell indicates one lattice site corresponding to one cell of the tissue. (e) Simulation of the integrated model of EGFR signalling, L\u2019sc expression, Delta-Notch signalling and the NE to NB transition in a one-dimensional array of cells. The emerging spatial signalling and gene expression profile is characterised by a pulse of EGFR signalling, L\u2019sc and Delta, and a drop in Notch signalling activity within the transition zone. The drop in Notch is preceded by a pulse of Notch signalling activity (pink arrowheads), which is due to a local lateral inhibition effect mediated by Delta-Notch signalling. Parameters are given in Appendix 3\u2014table 1 except for $\u03b7=0.03$.\n\nHere $\u03d5^{E}$ denotes the local strength of E activity, $\u03b7$ is the effective diffusion constant, $\\mu$ is the gain rate in signalling activity due to positive feedback, $k$ is the decay rate, and $h\u2062(\u03d5)=\u03d5^{n}/(1+\u03d5^{n})$ is a Hill function parameterising the nonlinear positive feedback. Generically, reaction-diffusion systems involving diffusion and self-activation are known to support travelling bistable fronts that leave behind an elevated signalling state (Figure 2a; Video 1; Appendix 1) (Muratov and Shvartsman, 2004; Keener and Sneyd, 2009; Graham et al., 2010; Tayar et al., 2015). EGFR signalling is a natural candidate for being a key driver of the proneural wave and experimental evidence has shown that EGFR signalling is both necessary and sufficient for wave progression (Yasugi et al., 2010).\n\n![Video 1.](https://cdn.elifesciences.org/articles/40919/elife-40919-video1.mp4.jpg)\n\n**Video 1.:** The movie shows the simulation of a one-dimensional version of the EGFR signalling model Equation 1 corresponding to the snapshots shown in Figure 2a. All simulation parameters as in Figure 2a.\n\n### Travelling pulse model of EGFR signalling and proneural gene expression\n\nHowever, notably, the EGFR/Rhomboid/Spitz feedback loop does not remain active in the wake of the travelling wave, but remains spatially confined as Rhomboid is expressed only transiently in the travelling transition zone (Yasugi et al., 2010; Sato et al., 2013). Therefore, in a second step, we considered the influence of the proneural gene l\u2019sc, represented by a second component \u2018L\u2019 in our model. Elevated EGFR signalling activates L\u2019sc expression (Yasugi et al., 2010), which is sufficient to drive the NE to NB transition (Yasugi et al., 2008; Contreras et al., 2018). In this minimal model, L\u2019sc downregulates EGFR signalling as a consequence of the transition, leading to an indirect negative feedback (Figure 1f). The corresponding reaction-diffusion system for the local strength of E and L activity, $\u03d5^{E}$ and $\u03d5^{L}$, is given by\n\n$$\n\\frac{\u2202\u03d5^{E}}{\u2202t}=\u03b7\u2207^{2}\u03d5^{E}+\\mu_{E}h(\u03d5^{E})[1\u2212h(\u03d5^{L})]\u2212k_{E}\u03d5^{E}\u00a0,\\frac{\u2202\u03d5^{L}}{\u2202t}=\\mu_{L}h(\u03d5^{E})\u2212k_{L}\u03d5^{L}\u00a0,\n$$\n\nwhere $\\mu_{i}$ (with $i=E,L$) indicate production rates and $k_{i}$ denote decay rates. Simulations of Equation 2 demonstrate that this type of feedback is sufficient to describe a travelling localised pulse of signalling activity and L\u2019sc expression through the tissue (Figure 2b,c; Video 2; Appendix 2). Notably, the dynamics of L\u2019sc (L) alter the bistable signalling behaviour of EGFR signalling (E) into an excitable one: once sufficiently perturbed by diffusion from an adjacent cell with an elevated signalling state, the intracellular reaction dynamics produces a transient expression pulse that downregulates itself as a result of the NE to NB cell fate transition (Appendix 2).\n\n![Video 2.](https://cdn.elifesciences.org/articles/40919/elife-40919-video2.mp4.jpg)\n\n**Video 2.:** The movie shows the simulation of a one-dimensional version of the model of EGFR signalling interacting with the proneural gene l\u2019sc, Equation 2, corresponding to the snapshots shown in main text Figure 2b. All simulation parameters as in Figure 2b.\n\n### Integrated model of the proneural wave to include EGFR-L\u2019sc-Notch interactions\n\nWe next aimed to develop a more refined model that could be challenged by experiment and compared with previously published data. Such a model necessarily includes Delta-Notch signalling, which has been shown to influence how long cells remain in the L\u2019sc expressing state (Yasugi et al., 2010; Wang et al., 2011b; Weng et al., 2012). As a mediator of lateral inhibition, Delta-Notch signalling is often associated with the emergence of \u2018salt-and-pepper\u2019-like patterns of cell fate (Bray, 2006; Shaya and Sprinzak, 2011). However, this pattern is not seen during proneural wave progression and the reasons for this are not clear (Egger et al., 2010; P\u00e9rez-G\u00f3mez et al., 2013; Sato et al., 2016). To address this question, we extended our minimal model to include canonical Delta-Notch interactions (Figure 2d) (Collier et al., 1996; Bray, 2006; Simakov and Pismen, 2013): (i)\u00a0trans-activation of Notch by Delta, (ii) downregulation of Delta by Notch within the same cell and (iii) cis-inhibition (downregulation of Notch by Delta in the same cell).\u00a0The model incorporates interactions between the Delta-Notch signalling pathway, EGFR signalling and L\u2019sc expression, namely, upregulation of Delta through EGFR signalling (Yasugi et al., 2010), upregulation of EGFR signalling through Notch signalling (Yasugi et al., 2010), downregulation of L\u2019sc through Notch signalling (Reddy et al., 2010) and downregulation of Notch expression through L\u2019sc (Egger et al., 2010).\u00a0Despite these complex interactions, the functional \u2018module\u2019 comprising EGFR signalling and L\u2019sc expression still remains the driver of the wave (green box in Figure 2d), while Delta-Notch signalling acts to provide further timing cues for the transition and to prevent premature differentiation (pink box in Figure 2d) (Egger et al., 2010; Reddy et al., 2010; Yasugi et al., 2010).\u00a0The integrated model also includes an explicit representation of the cell state dynamics during the transition between neuroepithelial cell to neuroblast. The NE to NB transition is promoted by L\u2019sc (Yasugi et al., 2008) and downregulation of Notch in the presence of EGFR signalling (Yasugi et al., 2010; Weng et al., 2012). The mathematical details of the refined model are given in Appendix 3.\n\n### Congruence with experimental data\n\nIn addition to the emergence of a propagating transition zone, the integrated model also yielded predictions on the spatial profiles of signalling activity and gene expression (Figure 2e; Figure 4a; Video 3; Video 4; Appendix 4), which were in striking agreement with features observed in prior experiments. First, EGFR signalling, as well as L\u2019sc and Delta expression, was found to be elevated only in the transition zone (Figure 1c) (Egger et al., 2010; Yasugi et al., 2010). Second, a peak of Notch activity is observed slightly in advance of the transition zone (pink arrowheads in Figure 2e) followed by a sharp drop in Notch activity (Figure 1c) (Egger et al., 2011; Orihara-Ono et al., 2011; Weng et al., 2012; Contreras et al., 2018). According to the model, lateral inhibition promotes high-Delta/low-Notch and low-Delta/high-Notch states in adjacent cells, and leads to a travelling \u2018laterally inhibited\u2019 cell state as the wave progresses. By contrast, the drop in Notch levels in transitioning cells arises due to cis-inhibition in our model as a consequence of Delta binding to Notch within the same cell, as has been shown experimentally (Reddy et al., 2010; Weng et al., 2012; Contreras et al., 2018).\n\n![Video 3.](https://cdn.elifesciences.org/articles/40919/elife-40919-video3.mp4.jpg)\n\n**Video 3.:** The movie shows a simulation of the proneural wave model Equations 17\u201319 simulated on a one-dimensional array of cells. All simulation parameters as in Figure 2e.\n\n![Video 4.](https://cdn.elifesciences.org/articles/40919/elife-40919-video4.mp4.jpg)\n\n**Video 4.:** The movie shows a simulation of the proneural wave model Equations 17\u201319 simulated on a hexagonal lattice with circular geometry with a radius of 15 lattice sites. All simulation parameters are given in Appendix 3\u2014table 1.\n\nTo challenge the model further, we checked whether the documented effects of misregulating EGFR signalling, Notch signalling or L\u2019sc expression (Yasugi et al., 2010) could be reproduced. For example, clones in which EGFR signalling has been constitutively activated tend to advance the transition zone within the clone, while the absence of EGFR signalling leads to loss of the proneural wave (Figure 3a,b) (Yasugi et al., 2010). To this end, we simulated the model dynamics on a two-dimensional hexagonal lattice that mimics the topology of the neuroepithelium. Consistent with experiment, the model captured the acceleration, delay or loss of the proneural wavefront within a clone depending upon its genetic makeup (Figure 3a\u2013f; Appendix 6).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40919/elife-40919-fig3-v1.jpg)\n\n**Figure 3.:** (a) Knockout of EGFR signalling ($\\mu_{E}=0$ within the clone), (b) EGFR signalling constitutively active (E signalling always active within the clone), (c) L\u2019sc knockout ($\\mu_{L}=0$ within the clone), (d) L\u2019sc constitutively active (L synthesis always active within the clone), (e) Notch downregulation ($\\beta=0$ within the clone), (f) Notch upregulation (additional N synthesis with rate $\\beta/2$ within the clone).\u00a0In all panels, white arrowheads indicate advancements and retardations of the wavefront as compared to wildtype tissue due to the respective genetic alterations of the clones. The system given by Equations 17\u201319 was numerically simulated on a $20\\times20$ hexagonal lattice with initially localised levels of E in the first three columns at the left boundary of the system so that the wave travels to the right. All other parameters are given in Appendix 3\u2014table 1. All shown simulation snapshots are taken at time $t=25$, except for panel B, which is taken at $t=17.5$. The column \u2018Experiment\u2019 shows sketches of experiments with mutant and transgenic clones and animals and refer to the corresponding original literature.\n\nLow levels of Notch signalling activity are observed both in the neuroepithelium and in neuroblasts but not at the transition zone (Figure 1c). It has been shown experimentally that Notch activity is required to maintain neuroepithelial cell fate and the loss of Notch results in premature transformation into neuroblasts (Egger et al., 2010; Ngo et al., 2010; Reddy et al., 2010; Yasugi et al., 2010; Orihara-Ono et al., 2011; Wang et al., 2011b; P\u00e9rez-G\u00f3mez et al., 2013). Intriguingly, despite the observation of active Notch signalling, there is no evidence of lateral inhibition in the neuroepithelium. Lateral inhibition causes neighbouring cells to acquire complementary cell fates and so results in the emergence of a \u2018salt-and-pepper pattern\u2019 of Notch signalling activity (Bray, 2006; Shaya and Sprinzak, 2011). The reason for the absence of salt-and-pepper Notch signalling in the neuroepithelium is not clear. Notably, our model predicts that the basal level of Notch activity observed in the the neuroepithelium could be the reason for the suppression of lateral inhibition patterns outside the transition zone.\u00a0In our model, basal levels of Notch activity in the neuroepithelium lead to a spatially homogeneous \u2018oversaturation\u2019 that prevents the Delta levels from rising before being activated by EGFR signalling. This is the case even in the presence of biochemical fluctuations (Figure 4a).\u00a0However, if basal Notch levels are lowered to small values compared to the threshold levels for activation and inhibition in our model, we indeed recapitulate the salt-and-pepper patterns that are a consequence of lateral inhibition (Figure 4b).\u00a0An analytical argument for the suppression of lateral inhibitions through basal Notch activity is given in Appendix 5.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40919/elife-40919-fig4-v1.jpg)\n\n**Figure 4.:** The panels show snapshots of the proneural wave model Equation 17\u2013Equation 20 simulated on a hexagonal lattice with circular geometry with a radius of 15 lattice sites. White arrows indicate the direction of wave progression. Transient lateral inhibition patterns can occur if basal Notch levels are low compared to the thresholds for activation and inhibition of the Delta\u2013Notch interactions: (a)\u00a0In the scenario with basal Notch activity, lateral inhibition patterns are suppressed (basal Notch gain rate $\\beta=10$). (b) In the scenario with downregulated basal Notch activity, lateral inhibition patterns appear (basal Notch gain rate $\\beta=1$). Other parameters are given in Appendix 3\u2014table 1; both panels are simulated with biochemical noise strength $\\gamma/\\mu_{E}=0.5$ (see Equation 20). Initial conditions were localised elevated levels of E in those outer boundary cells that have angles between $\\pi/3$ and $5\u2062\\pi/3$ as measured from the center of the circular lattice. (c)\u00a0Downregulation of Notch levels by expressing Notch RNAi in clones does not result in the emergence of a salt-and-pepper expression pattern of Delta (pink). Clone outlines are marked by white dotted lines. (d)\u00a0Expressing Notch RNAi in clones results in the complete loss of detectable Notch (N(intracellular domain, ICD), purple) within the clones. Clone outlines are marked by white dotted lines. (e)\u00a0Phase diagram for the occurrence of lateral inhibition in the two-cell system (for details, see Appendix 5). Here, $\\beta$ denotes the basal production rate and $\\lambda$ denotes the gain rate. (c)\u00a0and (d) are single section confocal images, scale bars represent 20 $\\mu$m.\n\nWe tested this prediction of the model by lowering Notch levels in the neuroepithelium but we did not observe \u2018salt-and-pepper\u2019 patterns of Delta/Notch expression within clones expressing an RNAi against Notch (Figure 4c). However, the absence of the emergence of lateral inhibition is likely due to the complete loss of detectable Notch in cells expressing the RNAi (Figure 4d), while the reduction of Notch levels in the model prediction is more subtle (Figure 4b). Referring to the \u2018phase diagram\u2019 in Figure 4e, it can be seen that both basal and Delta-regulated Notch activity need to be in the appropriate range for lateral inhibition patterns to occur, which is difficult to achieve experimentally. Furthermore, our model entails that Notch downregulation is a necessary (but not generally sufficient) condition for inducing salt-and-pepper patterns.\n\n### Dependence of wave speed and transition zone width on kinetic rate parameters\n\nNext, we asked which aspects of the signalling and gene expression changes in our model have the largest effect on two important features of the system: the speed of the proneural wave and the width of the transition zone.\u00a0To this end, we performed a sensitivity analysis on the kinetic rate parameters, as detailed in Appendix 7.\n\nThis analysis, based on the so-called \u2018Morris method\u2019 (Morris, 1991; Campolongo et al., 2007; Wu et al., 2013), entails a resampling of the parameter space of the model and yields three indices for each probed parameter. These indices indicate the impact of each parameter on the assessed output. The Morris indices $m$ and $m^{*}$ describe the impact of the respective parameter on the output, with $m$ including positive and negative effects (which may cancel each other as the parameter is varied) and $m^{*}$ the overall absolute effect (Campolongo et al., 2007). The third index $\\sigma$ measures the non-linearity of the parameter/output relation and/or interactions with other parameters (Wu et al., 2013). Detailed definitions of the respective indices are given in Appendix 7.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40919/elife-40919-fig5-v1.jpg)\n\n**Figure 5.:** Plots show the Morris indices $m$, $m^{*}$ and $\\sigma$ as described in the main text and Appendix 7, indicating the effect of a parameter on (a) the wave speed and (b) the width of the transition zone. The indices $m$ and $m^{*}$ indicate the influence of a parameter on the respective output with $m$ comprising positive and negative effects and $m^{*}$ measuring the absolute effect, whereas non-zero values of $\\sigma$ indicate a nonlinear influence and/or interactions with other parameters. The $\\mu_{i}$ and $k_{i}$ denote the gain and decay rates for the respective components $i=E,L,D,N$, $\u03b7$ denotes the diffusion constant of the component \u2018E\u2019 and $\\beta$ denotes the basal Notch gain rate (see Equation 17).\n\nHere we probed the effects of the kinetic rate parameters of EGFR signalling, Delta-Notch signalling and L\u2019sc expression on the propagation speed of the proneural wave and the width of the transition zone.\u00a0As expected, this analysis showed that the diffusion, gain and decay rate of EGFR signalling ($\u03b7$, $\\mu_{E}$ and $k_{E}$) are the key regulators of wave speed, since EGFR signalling constitutes the driver of the wave in our model (Figure 5a).\u00a0In contrast, L\u2019sc gene expression (parametrised by $\\mu_{L}$ and $k_{L}$) had almost no effect on wave speed since its dynamics is \u2018pulled\u2019 by the EGFR signalling front.\u00a0Interestingly, the basal gain rate of Notch signalling ($\\beta$) as well as its decay rate ($k_{N}$) play another prominent role in setting the wave speed. This is consistent with experimental data showing that Notch signalling promotes EGFR signalling at the transition zone, leading to a reinforcement of activation as the wave arrives at undifferentiated cells (Yasugi et al., 2010).\u00a0Considering the width of the transition zone (Figure 5b), we found that while all parameters had some effect, L\u2019sc expression clearly had a tightening effect as it promoted differentiation and therefore leads to a faster termination of differentiation.\u00a0In contrast, basal Notch signalling in the epithelium (described by $\\beta$ and $k_{N}$) tended to enlarge the width of the transition zone in our sensitivity analysis. Indeed, a recent study showed that overexpression of Notch at the transition zone extends the width of the L\u2019sc stripe and delays the transformation into neuroblasts (Contreras et al., 2018), providing support for this prediction of the model.\u00a0Subsequently, it follows that a complementary prediction of the model would be that a reduction of Notch at the transition zone would decrease the width of the L\u2019sc stripe. We tested this prediction by knocking down Notch at the transition zone in clones (Figure 6). Within clones expressing Notch RNAi, the proneural wave was not only accelerated (Figure 3), as observed previously in Notch mutant clones (Egger et al., 2010; Reddy et al., 2010; Yasugi et al., 2010), but the width of the transition zone also appeared smaller (yellow arrowheads in Figure 6).\u00a0In summary, this sensitivity analysis suggests that EGFR and Notch signalling are the key regulators of wave speed and width of the transition zone while L\u2019sc expression provides an additional acceleration of the transition of the wave and therefore has a negative influence on the width of the transition zone.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/40919/elife-40919-fig6-v1.jpg)\n\n**Figure 6.:** (a) Expression of Notch RNAi resulted in the downregulation of Notch (N(ICD),\u00a0purple) and accelerated the transformation (which requires L\u2019sc, cyan) of neuroepithelial cells to neuroblasts (Dpn, red) within clones. (b) The downregulation of Notch appears to decrease the width of the transition zone, as assessed by L\u2019sc (cyan) and Delta (pink) expression within Notch RNAi clones. Dotted white lines mark clone boundaries and yellow arrows indicate the position of the transition zone within Notch RNAi clones. Images are single section confocal slices, scale bars represent 20 $\\mu$m.\n\n### Ectopic excitation of the transition in vivo\n\nA signature feature of the model dynamics is that, through interactions between L\u2019sc and EGFR signalling, the neuroepithelium functions as an excitable medium. As such, the model predicts that local induction of EGFR signalling would initiate a circular (target-like) transition wave (Figure 7a; Video 5). To test whether a transition wave in the neuroepithelium could be excited at a position remote from the proneural wave, we induced clones expressing a downstream effector of the EGFR signalling pathway, Pointed P1 (PntP1; Figure 7b,c; Materials and methods). We found upregulation of L\u2019sc at clonal boundaries and expression of Dpn within the clone, suggesting the ectopic generation of neuroblasts within the epithelium, that\u00a0is, a NE to NB transition (Figure 7b,c). Our results agree with previous experiments showing the induction of neuroblasts within the neuroepithelium in response to ectopic EGFR signalling (Yasugi et al., 2010) and are in striking agreement with model simulations based on the same perturbation (Figure 7a; Video 5; Supplementary Text).\n\n![Video 5.](https://cdn.elifesciences.org/articles/40919/elife-40919-video5.mp4.jpg)\n\n**Video 5.:** The movie shows a simulation of the proneural wave model Equations 17\u201319 on the same lattice as in Video 3 but with four single-cell clones with constitutively active EGFR signalling. The movie corresponds to the snapshots shown in Figure 7a.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/40919/elife-40919-fig7-v1.jpg)\n\n**Figure 7.:** The effect of constitutively active EGFR signalling outside the transition zone: Comparison between the model prediction and experiment. (a)\u00a0Snapshots of a model simulation on a two-dimensional hexagonal lattice representing the neuroepithelium with randomly distributed clones derived as target waves centred on the site (cell) in which EGFR signalling has been activated (see Materials and methods and Video 5). Cyan indicates levels of L\u2019sc, red indicates neuroblasts (NB) and the grey grid the neuroepithelium (NE). The third column shows a merged image. (b,c) Ectopic expression of PntP1 within the neuroepithelium induces L\u2019sc expression and a NE to NB transition. Clones expressing PntP1, a downstream effector of the EGFR signalling pathway, are indicated by white outlines or green arrowheads. Clones that merge with the transition zone are marked with white arrowheads. Clones within the neuroepithelium that are clearly separated from the transition zone, are marked by green arrowheads; clones that merge with the transition zone are marked with white arrowheads. L\u2019sc is labelled in cyan; neuroblasts are labelled in red by expression of the Hes family transcription factor Deadpan (Dpn).\n\n## Discussion\n\nOur findings suggest that the proneural wave involves the activation of an excitatory pulse of signalling activity and gene expression, giving rise to a tightly-regulated propagating transition zone. In contrast with Turing-based activator-inhibitor mechanisms (Turing, 1952), which typically comprise fast diffusible inhibitors, the reaction-diffusion system described here is based on strictly local inhibition (Figure 2b,c). The role of sequential patterning by the proneural wave is to ensure the correct timing and composition of the neuroblast population (Bertet et al., 2017). A similar process of sequential patterning occurs during the progression of the morphogenetic furrow in the Drosophila eye (Roignant and Treisman, 2009; Lubensky et al., 2011; Formosa-Jordan et al., 2012; Wartlick et al., 2014; Fried et al., 2016; Gavish et al., 2016).\u00a0However, the progression of the morphogenetic furrow also entails transient growth as well as subsequent photoreceptor patterning and differentiation to generate ommatidia (Sato et al., 2013).\n\nIn our model, which focuses on the driving mechanism behind the proneural wave, we have refrained from considering additional signalling pathways that neither play key roles in driving the proneural wave nor exhibit strong signatures of bidirectional feedbacks (in contrast to EGFR and Delta-Notch signalling).\u00a0These include the JAK/STAT and Hippo pathways, which serve important roles in modulating proneural wave progression but are not actively involved in propagating the transition zone through a reaction-diffusion-like mechanism (Yasugi et al., 2008; Reddy et al., 2010; Yasugi et al., 2010; Kawamori et al., 2011; Wang et al., 2011a; Weng et al., 2012).\n\nOn a mechanistic level, the excitable propagation behaviour illuminated here provides a mechanism to capture the transient and localised activity of the proneural gene l\u2019sc and EGFR signalling, as well as robustness against fluctuating signalling activity and gene expression. In contrast to a recent model (Sato et al., 2016), our model also implies that neither differentiation nor proneural gene expression is required for the transient stabilisation of EGFR signalling activity that is required to advance the wave front.\u00a0In the context of vertebrate somitogenesis, intracellular excitability has recently been suggested to underlie the emergence of genetic oscillations (Hubaud et al., 2017). The appearance here of excitability in the context of a propagating front of gene expression suggests that such a mechanism may serve more widely as a generic and robust strategy to achieve sequential transition waves in developing tissues.\n\n## Materials and methods\n\n### Fly strains\n\nFlies were raised on standard cornmeal medium at 25\u00b0C. Strains used were:\n\nyw, hsFLP; FRT40A, tub-GAL80/CyO, ActGFP; tubP-GAL4,UAS-mCD8-GFP/TM6B\n\nw; FRT40A; UAS-Pnt-P1/TM6B\n\nw; FRT40A/CyO; N RNAi/TM6B (N RNAi lines used were BL33611 and BL33616)\n\nHLH-mgamma-GFP (Almeida and Bray, 2005) was used to report active Notch signalling.\n\n### UAS-Pnt-P1 clones and N RNAi clones\n\nTo generate clones in the developing optic lobe, larvae were collected 48\u201350 hr after egg laying and were heat shocked for 20 min at 37\u00b0C. Larvae were then dissected 50 or 60 hr after clone induction.\n\n### Immunohistochemistry\n\nLarval brains were dissected in PBS and fixed for 20 min at room temperature in 4% formaldehyde and fixation buffer (PBS, 5 mM MgCl2, 0.5 mM EGTA). After fixation, brains were rinsed and washed in 0.3% PBS Triton X100 (PBT). Samples were blocked with 10% normal goat serum (NGS) in 0.3% PBT at room temperature and incubated with the primary antibodies overnight at 4\u00b0C. Brains were then washed in 0.3% PBT and incubated with the secondary antibodies overnight at 4\u00b0C. Brains were washed in 0.3% PBT and mounted in Vectashield (Vector Laboratories, Burlingame, CA, USA). The following primary antibodies and dilutions were used: guinea pig anti-Dpn (1:10,000) and rat anti-L\u2019sc (1:5,000) (Caygill and Brand, 2017), chicken anti-GFP (1:2,000) from Abcam, mouse anti-Delta (1:50, C594.9B) from DSHB and mouse anti-Notch (intracellular domain, ICD) (1:50, C17.9C6) from DSHB. Fluorescently conjugated secondary antibodies Alexa405, Alexa488, Alexa546 and Alexa633 (all 1:200) from Life Technologies.\n\nImages were acquired with a Leica TCS SP8 confocal microscope (Leica Microsystems, Wetzlar, Germany) and analysed with Fiji (Schindelin et al., 2012). Figures and illustrations were assembled using Adobe Photoshop CS3 and Adobe Illustrator CS3 (Adobe Systems, San Jose, CA, USA).\n",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "9d868efc-d01e-47e0-bb00-439797c2e77c",
+      "submission_id": "c4e9da18-51c9-4e25-b92d-7bd3a843ecd0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40919.030](https://doi.org/10.7554/eLife.40919.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The proneural wave in the Drosophila optic lobe is driven by an excitable reaction-diffusion mechanism\" for consideration by eLife. Your article has been reviewed by two reviewers and the evaluation has been overseen by Naama Barkai as the Reviewing and Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIt is uniformly agreed that the system is interesting and the theoretical work valid. There are several issues, however, that will need to be addressed.\n\n1) Motivating the study: given that the system was previously studied (Sato paper), it may be necessary to better define why a new model is 'needed', and what new biological insights it can bring to the table. For example, what are the mysteries that are still not understood and can be better explained by a more in-depth quantitative study? This is discussed in Appendix 3 but should be explained also in the main text.\n\n2) Related to point 1, not all statements in Appendix 3 are supported \u2013 e.g. the statement that the Sato model is not robust. Also, the new model may not be fundamentally different from the Sato model, but rather extends it: models clearly make useful simplifications. The current work may 'open' some 'black-box' and by this provide deeper insights. This does not reduce the significance of the study. Please address that.\n\n3) The analysis of Appendix 5 is interesting and should be part of the main text. The lack of lateral inhibition in this case presents a key biological insight that distinguishes the present study. The experimental test proposed by reviewer #1 below is therefore important.\n\n4) Please explain all assumptions, interactions and parameters, as requested below.\n\nFinally, please address all comments and suggestions in the detailed reviews below.\n\nReviewer #1:\n\nThis paper describes a model to explain the progression of a wave of differentiation that crosses a neuroepithelium to generate a brain structure in the optic lobes of Drosophila. This type of wave has been described (and modeled) quite extensively, in particular the morphogenetic furrow that patterns the Drosophila eye. In this case, we are dealing with the neurogenic wave that transforms epithelial cells into neural stem cells (neuroblasts) and produces one of the optic lobe structures. In fact, a recent paper had also modeled the same wave of differentiation and this paper is discussed here.\n\nThis type of patterning mechanisms is likely to be fairly common in biology and it is thus quite important to understand its fundamental aspects, which means that a comparison with the morphogenetic furrow is important to emphasize the common points and points of divergence. This will therefore be an important paper for physicists and for more theoretically oriented biologists who want to understand the rules of patterning.\n\nThis being said, as a biologist, I do not feel completely qualified to comment on the mathematics of the model. Yet, I think that the authors should have made more efforts to make more accessible the aspects of the model in which a biologist might be interested and might want to use for his/her own research. For example, it is quite difficult to find a clear description in one place of all the interactions (positive and negative) between pathway components that are actually used in the model. Figure 2D comes closest to doing so but, as with other parts of the paper, it refers to an appendix that is disconnected from the main text. The authors should therefore explain in much more precise terms the exact interactions and must justify why each arrow exists, and or why some of them (which have also been described as important for the process) have been excluded.\n\nIn particular:\n\n- What is the evidence to support Notch promotion of EGFR signaling?\n\n- Why isn't proneural promotion of Dl expression included?\n\n- Is Notch repression of cell fate conversion necessary on top of the Notch inhibition of proneural factors?\n\n- The authors do not even mention the data on JAK/STAT and Hippo affecting proneural wave progression. Why do they ignore this?\n\nSome of these justifications have been relegated to appendices and it would make the paper much more important to the biologists if much of Appendix 3 (and similarly for Appendix 5) were to be part of the main text. The authors must do this.\n\nThere are several comparisons with the recent paper from the Sato lab, with assertions that the current model makes more accurate predictions. However, both papers use relatively crude assessments of phenotype: acceleration or retardation of the proneural wave. From the model simulations in Figure 3, the authors show that there are many 'flavors' to proneural acceleration (or retardation), i.e. different parameters can produce similar outcomes. If the authors really want to say their model is more accurate or better, then they should test model predictions appropriately (i.e. look at EGFR activity and Notch and Dl levels, in addition to Dpn and/or L'sc for the experimental conditions detailed in Figure 3. All of this should be quite easy and would add significant validation to the model.\n\nFurthermore, the authors should also explain why their model of proneural wave progression adds to previous similar models of wave progression, in particular the morphogenetic furrow in the eye disc, also in Drosophila. One key feature that is distinct with the proneural wave is the lack of Notch-mediated lateral inhibition. As this was a puzzling question, the explanation that this is due to basal low levels of Notch in the neuroepithelium is very attractive. A prediction of the model (Appendix 5, Figure 1B) is that reducing Notch levels in the neuroepithelium should result in a salt-and-pepper pattern typical of lateral inhibition. This would be a key result that can very easily be tested experimentally by using a neuroepithelial driver to knock down to different extents Notch using RNAi. This would provide a qualitatively different prediction from just acceleration or retardation of the wave and would convince the biologist that the model is useful to address this point.\n\nReviewer #2:\n\nThe presented article proposes a mathematical model for a pro-neural wave in the Drosophila optical lobe as driven by an excitable reaction diffusion mechanism, that explains observed data and predicts a new experiment. The biochemical nature of the wave is due to a complex process, involving interaction of EGFR and Delta-Notch signaling pathways. Their interplay establishes a transition zone, that travels over the tissue and triggers a differentiation wave.\n\nAlthough a phenomenological model of this process exists, the authors propose a new approach. This is justified as it helps to analyze at greater depth how this biochemical process, with interaction between multiple components, results in the wave. As such the article is an example for how mainly model driven approaches may help refining the view on a developmentally relevant, but poorly understood process.\n\nThe structure of the article is well developed. The appendix, in particular for the explanation of traveling front and pulse models, is didactically useful for a readership that has a background in life sciences.\n\nPossible improvements:\n\nIn general, the theory is compared to data at a qualitative level. If possible, it would help to develop a more quantitative interface to experiments. For example, Figure 2E discusses a transient activation of notch signaling that is mentioned to also occur in the optic lobe. The model predicts a striking spatial profile, that may be contrasted to a similar profile of data for a few of the genes involved.\n\nFurther, Figure 3 shows a comparison of model simulations on a 2D lattice to experiment. One of the striking differences is that the simulation is based on an ordered hexagonal lattice, while data looks like a strongly disordered array. Order may be less important in case of strong effects such as shown in panels A,B,D. It remains unclear however, how the underlying lattice order will affect the more subtle effects shown in the cell state variable for panels C,E,F.\n\nIn Appendix 3, the authors explain the concrete realization that H0 is not important to capture the qualitative features of the model. However, in the spirit of the well-developed didactic tone in the preceding appendices, the model might become more transparent to a broader audience, if key features of H0 are further developed. The mathematics is clear, but additional graphics and a brief discussion would help to guide the intuition of this aspect.\n\nThe following Appendix 4 presents a valuable in-depth analysis about robustness against fluctuations. However, it is difficult to find a more detailed discussion about choice of parameters presented in Appendix 3\u2014Table 1. Are these parameters chosen in a physiologically relevant regime? What's the effect of changes to the model? For future experimentalists aiming to test this model, it may be good to provide a range of possible parameter values in which the presented features will be valid. For example, is there a microscopic motivation for the choice of the Hill coefficient n = 3?\n\nThis is an exciting model, and it would be very helpful for future development if the model could provide additional predictions that are potentially difficult to test using current technology. For example, could the model be used to predict what sets the speed of the wave? This point is not essential to support the major conclusions of the article. But in the interest of theory motivating new experiments, such an addition might be helpful.\n",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "60071da2-5097-4bd8-9635-3e9500f0a356",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C1",
+      "claim": "During the development of the Drosophila brain, a travelling wave of proneural gene expression initiates neurogenesis in the larval optic lobe primordium.",
+      "claim_type": "EXPLICIT",
+      "source": "During the development of the largest component of the visual processing centre of the Drosophila brain, a travelling wave of proneural gene expression initiates neurogenesis in the larval optic lobe primordium and drives the sequential transition of neuroepithelial cells into neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known developmental process in Drosophila.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "3778577e-a4a4-4eb0-a64c-fd8b05b12aa2",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C2",
+      "claim": "The proneural wave drives the sequential transition of neuroepithelial cells into neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "During the development of the largest component of the visual processing centre of the Drosophila brain, a travelling wave of proneural gene expression initiates neurogenesis in the larval optic lobe primordium and drives the sequential transition of neuroepithelial cells into neuroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known developmental process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "79d03186-56dc-49ee-8d84-341323fec082",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C3",
+      "claim": "The proneural wave is driven by an excitable reaction-diffusion system involving EGFR signalling interacting with the proneural gene l'sc.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose that this 'proneural wave' is driven by an excitable reaction-diffusion system involving epidermal growth factor receptor (EGFR) signalling interacting with the proneural gene l'sc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main hypothesis proposed by the authors based on their modeling and experimental work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "c2c0768f-8f6c-4f1b-acac-be53ada86a04",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C4",
+      "claim": "A propagating transition zone emerges from molecular feedback and diffusion within the proneural wave framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this framework, a propagating transition zone emerges from molecular feedback and diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction of the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "15ca559b-6302-4d20-bddc-2e3b38160316",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C5",
+      "claim": "Ectopic activation of EGFR signalling in clones within the neuroepithelium demonstrates that a transition wave can be excited anywhere in the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic activation of EGFR signalling in clones within the neuroepithelium demonstrates that a transition wave can be excited anywhere in the tissue by inducing signalling activity, consistent with a key prediction of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "f0b2d4bf-e719-486b-8c98-d1b7ac2e8d0f",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C6",
+      "claim": "Travelling waves are a ubiquitous feature of developmental pattern formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such travelling waves, which are viable carriers of spatiotemporal information, are a ubiquitous feature of developmental pattern formation, where they arise through different underlying mechanisms, from coordinated intracellular oscillations (Oates et al., 2012; J\u00f6rg et al., 2015; Hubaud et al., 2017; Verd et al., 2018) to self-organised reaction-diffusion processes (Lubensky et al., 2011; Formosa-Jordan et al., 2012; Fried et al., 2016; Gavish et al., 2016; Corson et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "836dbefb-3da4-4ff0-b335-3064166fe106",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C7",
+      "claim": "Neuroepithelial cells in the optic lobe divide symmetrically, expanding the progenitor pool.",
+      "claim_type": "EXPLICIT",
+      "source": "neuroepithelial cells in the optic lobe of the larval brain divide symmetrically, expanding the progenitor pool, and then undergo a sequential transition into asymmetrically dividing neuroblasts, which generate the neurons of the medulla (Figure 1a,b) (Egger et al., 2007; Yasugi et al., 2008; Egger et al., 2010; Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by citations and Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "e0e86008-7a5d-4e28-9796-ca8983a719a1",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C8",
+      "claim": "Neuroepithelial cells undergo a sequential transition into asymmetrically dividing neuroblasts, which generate the neurons of the medulla.",
+      "claim_type": "EXPLICIT",
+      "source": "neuroepithelial cells in the optic lobe of the larval brain divide symmetrically, expanding the progenitor pool, and then undergo a sequential transition into asymmetrically dividing neuroblasts, which generate the neurons of the medulla (Figure 1a,b) (Egger et al., 2007; Yasugi et al., 2008; Egger et al., 2010; Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by citations and Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "90646068-7a32-41f4-bdee-6faceeb55c87",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C9",
+      "claim": "The transition from neuroepithelial cells to neuroblasts occurs at a 'transition zone' that sweeps from one side of the optic lobe to the other.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition from neuroepithelial cells to neuroblasts occurs at a 'transition zone' that sweeps from one side of the optic lobe to the other and is marked by the expression of the proneural gene lethal of scute (l'sc) (Yasugi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "2d2cf038-6a68-4243-a72f-17842020cab1",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C10",
+      "claim": "The transition zone is marked by the expression of the proneural gene lethal of scute (l'sc).",
+      "claim_type": "EXPLICIT",
+      "source": "The transition from neuroepithelial cells to neuroblasts occurs at a 'transition zone' that sweeps from one side of the optic lobe to the other and is marked by the expression of the proneural gene lethal of scute (l'sc) (Yasugi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "372c43ed-28fa-40dc-8118-e68816026c6a",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C11",
+      "claim": "The proneural wave is controlled by the coordinated action of EGFR signalling and Delta-Notch signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'proneural wave' is controlled by the coordinated action of different signalling pathways: epidermal growth factor receptor (EGFR) signalling and Delta-Notch signalling (Figure 1c\u2013f) (Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by a citation and Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "88e33805-e625-4a0c-a89d-a888f87c9ec1",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C12",
+      "claim": "The sequential nature of the transition is crucial to generate populations of cells of different developmental ages that give rise to a diverse array of terminally differentiated medulla neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequential nature of the transition is crucial to generate populations of cells of different developmental ages that give rise to a diverse array of terminally differentiated medulla neurons (Li et al., 2013; Sato et al., 2013; Suzuki et al., 2013; Erclik et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "a914b720-e01e-4c50-ad67-5ec66438dce1",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C13",
+      "claim": "The transition zone exhibits localised EGFR signalling as well as expression of l'sc.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition zone exhibits localised EGFR signalling as well as expression of l'sc (Figure 1b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "2dbae14a-11a2-4217-b103-3b96379d4cf5",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C14",
+      "claim": "Absence of EGFR signalling leads to loss of the differentiation wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Absence of EGFR signalling leads to loss of the differentiation wave, indicating that EGFR signalling is a key component for proneural wave progression (Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "6c3b9b9a-2715-4cd0-bb44-6e8711459880",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C15",
+      "claim": "EGFR signalling is a key component for proneural wave progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Absence of EGFR signalling leads to loss of the differentiation wave, indicating that EGFR signalling is a key component for proneural wave progression (Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "c39fbf9d-0433-4d61-8414-58088c8b4571",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C16",
+      "claim": "The neuroepithelium exhibits low levels of Notch signalling activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The neuroepithelium exhibits low levels of Notch signalling activity (Egger et al., 2011; Weng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "f73db7ef-63de-4c48-8d41-763ee7e35cf7",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C17",
+      "claim": "Notch activity peaks directly before the transition from neuroepithelial cell to neuroblast, drops during the transition and then is restored upon neuroblast transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Notch activity peaks directly before the transition from neuroepithelial cell to neuroblast, drops during the transition and then is restored upon neuroblast transformation (Figure 1c) (Contreras et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by a citation and Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "7b6d4ddb-faa5-471c-aa2c-871f876be65a",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C18",
+      "claim": "The JAK/STAT and Fat-Hippo pathways play coordinating roles and prevent premature and ectopic transition of the neuroepithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, coordinating roles are played by the JAK/STAT and Fat-Hippo pathways, which are broadly expressed in the neuroepithelium and prevent premature and ectopic transition of the neuroepithelium (Yasugi et al., 2008; Yasugi et al., 2010; Wang et al., 2011a; Reddy et al., 2010; Kawamori et al., 2011; Weng et al., 2012; Tanaka et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "aed0dd37-fffd-4c8e-b4e6-c8b70d33d6fe",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C19",
+      "claim": "EGFR signalling activates the expression of L'sc.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR signalling activates the expression of L'sc (Yasugi et al., 2010), which is sufficient to drive the neuroepithelium to neuroblast (NE to NB) transition (Yasugi et al., 2008; Contreras et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "0bc2e2e6-96dd-4fb0-956d-a7cd1c2537ea",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C20",
+      "claim": "L'sc expression is sufficient to drive the neuroepithelium to neuroblast (NE to NB) transition.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR signalling activates the expression of L'sc (Yasugi et al., 2010), which is sufficient to drive the neuroepithelium to neuroblast (NE to NB) transition (Yasugi et al., 2008; Contreras et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "7f0aec88-a7a2-42a4-b872-1734dcb9976e",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C21",
+      "claim": "The EGFR is activated by binding the secreted form of its ligand, Spitz.",
+      "claim_type": "EXPLICIT",
+      "source": "The EGFR is activated by binding the secreted form of its ligand, Spitz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "a143aa3c-16c9-4435-810b-cf08ac518064",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C22",
+      "claim": "Secreted Spitz is generated by cleavage of a membrane-bound precursor by the transmembrane protease, Rhomboid.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreted Spitz is generated by cleavage of a membrane-bound precursor by the transmembrane protease, Rhomboid (Kl\u00e4mbt, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "544b1d5a-1987-44f4-b0d3-fc1dd9a27489",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C23",
+      "claim": "EGFR, Rhomboid and secreted Spitz together form an autocrine positive feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR, Rhomboid and secreted Spitz together form an autocrine positive feedback loop (Figure 1d) (Wiley et al., 2003; Sato et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by citations and Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "29eb7873-b6a8-42c2-81ea-f9793e423660",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C24",
+      "claim": "The dynamics of EGFR signalling alone has features that are sufficient to enable sequential induction and produce a travelling front of EGFR signalling activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In a first step, we noted that the dynamics of EGFR signalling alone has features that are sufficient to enable such a sequential induction and produce a travelling front of EGFR signalling activity; a feature notably absent in recent attempts to model the proneural wave, which also require further components to stabilise the propagating EGFR signalling front (Sato et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "2aa3c330-bc7e-421e-b94c-0a7301575e6e",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C25",
+      "claim": "Reaction-diffusion systems involving diffusion and self-activation are known to support travelling bistable fronts that leave behind an elevated signalling state.",
+      "claim_type": "EXPLICIT",
+      "source": "Generically, reaction-diffusion systems involving diffusion and self-activation are known to support travelling bistable fronts that leave behind an elevated signalling state (Figure 2a; Video 1; Appendix 1) (Muratov and Shvartsman, 2004; Keener and Sneyd, 2009; Graham et al., 2010; Tayar et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as established knowledge and supported by citations and Figure 2a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "bae70d25-33cf-481b-b800-5f1f9108c0ec",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C26",
+      "claim": "EGFR signalling is both necessary and sufficient for wave progression.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR signalling is a natural candidate for being a key driver of the proneural wave and experimental evidence has shown that EGFR signalling is both necessary and sufficient for wave progression (Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "f689742c-a957-487f-88f4-01d8e4632df0",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C27",
+      "claim": "The EGFR/Rhomboid/Spitz feedback loop does not remain active in the wake of the travelling wave, but remains spatially confined as Rhomboid is expressed only transiently in the travelling transition zone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, notably, the EGFR/Rhomboid/Spitz feedback loop does not remain active in the wake of the travelling wave, but remains spatially confined as Rhomboid is expressed only transiently in the travelling transition zone (Yasugi et al., 2010; Sato et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "af67d2cf-77b2-4972-9622-d41c9cf4cfbe",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C28",
+      "claim": "Elevated EGFR signalling activates L'sc expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated EGFR signalling activates L'sc expression (Yasugi et al., 2010), which is sufficient to drive the NE to NB transition (Yasugi et al., 2008; Contreras et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "1022407e-becf-407a-a4b8-855bae85b4c0",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C29",
+      "claim": "L'sc downregulates EGFR signalling as a consequence of the NE to NB transition, leading to an indirect negative feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "In this minimal model, L'sc downregulates EGFR signalling as a consequence of the transition, leading to an indirect negative feedback (Figure 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a feature of the model presented in the manuscript and shown in Figure 1f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "ef64beca-a9fd-4c23-978d-c9c62945c6bb",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C30",
+      "claim": "The reaction-diffusion system for EGFR signalling and L'sc expression can give rise to a travelling localised pulse of signalling activity and L'sc expression through the tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of Equation 2 demonstrate that this type of feedback is sufficient to describe a travelling localised pulse of signalling activity and L'sc expression through the tissue (Figure 2b,c; Video 2; Appendix 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by simulations shown in Figure 2b,c and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "61d7ea56-19af-491c-a384-ef17d78c4757",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C31",
+      "claim": "The dynamics of L'sc alter the bistable signalling behaviour of EGFR signalling into an excitable one.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the dynamics of L'sc (L) alter the bistable signalling behaviour of EGFR signalling (E) into an excitable one: once sufficiently perturbed by diffusion from an adjacent cell with an elevated signalling state, the intracellular reaction dynamics produces a transient expression pulse that downregulates itself as a result of the NE to NB cell fate transition (Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "06b9cab4-da07-43a3-976d-9e3aa395f4d9",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C32",
+      "claim": "Delta-Notch signalling influences how long cells remain in the L'sc expressing state.",
+      "claim_type": "EXPLICIT",
+      "source": "We next aimed to develop a more refined model that could be challenged by experiment and compared with previously published data. Such a model necessarily includes Delta-Notch signalling, which has been shown to influence how long cells remain in the L'sc expressing state (Yasugi et al., 2010; Wang et al., 2011b; Weng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "0a08c0f5-f47b-48bb-89dc-b73f0ce73656",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C33",
+      "claim": "Delta-Notch signalling is often associated with the emergence of 'salt-and-pepper'-like patterns of cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "As a mediator of lateral inhibition, Delta-Notch signalling is often associated with the emergence of 'salt-and-pepper'-like patterns of cell fate (Bray, 2006; Shaya and Sprinzak, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "0bd50c6b-1623-4b21-8aa3-1c50e96397a6",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C34",
+      "claim": "The 'salt-and-pepper' pattern is not seen during proneural wave progression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this pattern is not seen during proneural wave progression and the reasons for this are not clear (Egger et al., 2010; P\u00e9rez-G\u00f3mez et al., 2013; Sato et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "2ca0867c-fff3-4fb4-8210-1af4218b29b5",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C35",
+      "claim": "The integrated model includes canonical Delta-Notch interactions: trans-activation of Notch by Delta, downregulation of Delta by Notch within the same cell, and cis-inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this question, we extended our minimal model to include canonical Delta-Notch interactions (Figure 2d) (Collier et al., 1996; Bray, 2006; Simakov and Pismen, 2013): (i) trans-activation of Notch by Delta, (ii) downregulation of Delta by Notch within the same cell and (iii) cis-inhibition (downregulation of Notch by Delta in the same cell).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by citations and Figure 2d.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "70d4f3e6-3da8-4655-ad5a-dd58bef02c57",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C36",
+      "claim": "The model incorporates upregulation of Delta through EGFR signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "The model incorporates interactions between the Delta-Notch signalling pathway, EGFR signalling and L'sc expression, namely, upregulation of Delta through EGFR signalling (Yasugi et al., 2010), upregulation of EGFR signalling through Notch signalling (Yasugi et al., 2010), downregulation of L'sc through Notch signalling (Reddy et al., 2010) and downregulation of Notch expression through L'sc (Egger et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "ee65b757-efde-42c3-b8cc-27fdcede78b2",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C37",
+      "claim": "The model incorporates upregulation of EGFR signalling through Notch signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "The model incorporates interactions between the Delta-Notch signalling pathway, EGFR signalling and L'sc expression, namely, upregulation of Delta through EGFR signalling (Yasugi et al., 2010), upregulation of EGFR signalling through Notch signalling (Yasugi et al., 2010), downregulation of L'sc through Notch signalling (Reddy et al., 2010) and downregulation of Notch expression through L'sc (Egger et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "22ae830d-3e91-4198-8f99-2b76e044b131",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C38",
+      "claim": "The model incorporates downregulation of L'sc through Notch signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "The model incorporates interactions between the Delta-Notch signalling pathway, EGFR signalling and L'sc expression, namely, upregulation of Delta through EGFR signalling (Yasugi et al., 2010), upregulation of EGFR signalling through Notch signalling (Yasugi et al., 2010), downregulation of L'sc through Notch signalling (Reddy et al., 2010) and downregulation of Notch expression through L'sc (Egger et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "85cd80f8-ec44-457f-a230-72c28625fcfd",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C39",
+      "claim": "The model incorporates downregulation of Notch expression through L'sc.",
+      "claim_type": "EXPLICIT",
+      "source": "The model incorporates interactions between the Delta-Notch signalling pathway, EGFR signalling and L'sc expression, namely, upregulation of Delta through EGFR signalling (Yasugi et al., 2010), upregulation of EGFR signalling through Notch signalling (Yasugi et al., 2010), downregulation of L'sc through Notch signalling (Reddy et al., 2010) and downregulation of Notch expression through L'sc (Egger et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "5f1a80c6-f0be-4536-a7db-98e4e6bb2ae3",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C40",
+      "claim": "The functional 'module' comprising EGFR signalling and L'sc expression remains the driver of the wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these complex interactions, the functional 'module' comprising EGFR signalling and L'sc expression still remains the driver of the wave (green box in Figure 2d), while Delta-Notch signalling acts to provide further timing cues for the transition and to prevent premature differentiation (pink box in Figure 2d) (Egger et al., 2010; Reddy et al., 2010; Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by citations and Figure 2d.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "fa4ceeff-bba4-4624-bcd8-22a4b7085332",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C41",
+      "claim": "Delta-Notch signalling acts to provide further timing cues for the transition and to prevent premature differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these complex interactions, the functional 'module' comprising EGFR signalling and L'sc expression still remains the driver of the wave (green box in Figure 2d), while Delta-Notch signalling acts to provide further timing cues for the transition and to prevent premature differentiation (pink box in Figure 2d) (Egger et al., 2010; Reddy et al., 2010; Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by citations and Figure 2d.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "df95d93a-0571-4dcd-b506-d0b3ec233ab0",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C42",
+      "claim": "The NE to NB transition is promoted by L'sc.",
+      "claim_type": "EXPLICIT",
+      "source": "The NE to NB transition is promoted by L'sc (Yasugi et al., 2008) and downregulation of Notch in the presence of EGFR signalling (Yasugi et al., 2010; Weng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "dd79a399-c9fe-4bf2-b83f-c2257aef0824",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C43",
+      "claim": "The NE to NB transition is promoted by downregulation of Notch in the presence of EGFR signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "The NE to NB transition is promoted by L'sc (Yasugi et al., 2008) and downregulation of Notch in the presence of EGFR signalling (Yasugi et al., 2010; Weng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "30f40dba-2c15-41d4-bd11-46f05806b54d",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C44",
+      "claim": "The integrated model yielded predictions on the spatial profiles of signalling activity and gene expression that were in striking agreement with features observed in prior experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the emergence of a propagating transition zone, the integrated model also yielded predictions on the spatial profiles of signalling activity and gene expression (Figure 2e; Figure 4a; Video 3; Video 4; Appendix 4), which were in striking agreement with features observed in prior experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figures 2e and 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "a2534507-e1e2-49dd-a340-b393159b47fe",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C45",
+      "claim": "EGFR signalling, as well as L'sc and Delta expression, is elevated only in the transition zone.",
+      "claim_type": "EXPLICIT",
+      "source": "First, EGFR signalling, as well as L'sc and Delta expression, was found to be elevated only in the transition zone (Figure 1c) (Egger et al., 2010; Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by citations and Figure 1c.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "bad84c2f-3984-47d4-b3c5-014890d3ef45",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C46",
+      "claim": "A peak of Notch activity is observed slightly in advance of the transition zone followed by a sharp drop in Notch activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a peak of Notch activity is observed slightly in advance of the transition zone (pink arrowheads in Figure 2e) followed by a sharp drop in Notch activity (Figure 1c) (Egger et al., 2011; Orihara-Ono et al., 2011; Weng et al., 2012; Contreras et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by citations and Figures 1c and 2e.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "dac557b3-f9bd-4ded-b8c0-71a7af7f6e3a",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C47",
+      "claim": "According to the model, lateral inhibition promotes high-Delta/low-Notch and low-Delta/high-Notch states in adjacent cells, and leads to a travelling 'laterally inhibited' cell state as the wave progresses.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the model, lateral inhibition promotes high-Delta/low-Notch and low-Delta/high-Notch states in adjacent cells, and leads to a travelling 'laterally inhibited' cell state as the wave progresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction of the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "f61c0103-e757-434b-aa3d-c6c3fb855bd0",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C48",
+      "claim": "The drop in Notch levels in transitioning cells arises due to cis-inhibition as a consequence of Delta binding to Notch within the same cell.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the drop in Notch levels in transitioning cells arises due to cis-inhibition in our model as a consequence of Delta binding to Notch within the same cell, as has been shown experimentally (Reddy et al., 2010; Weng et al., 2012; Contreras et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction of the model that is supported by experimental citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "5809c87c-3352-42f0-abfd-221289620487",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C49",
+      "claim": "The model captured the acceleration, delay or loss of the proneural wavefront within a clone depending upon its genetic makeup.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with experiment, the model captured the acceleration, delay or loss of the proneural wavefront within a clone depending upon its genetic makeup (Figure 3a\u2013f; Appendix 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "1752e375-97c6-42eb-b36d-187aed2693f3",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C50",
+      "claim": "Clones in which EGFR signalling has been constitutively activated tend to advance the transition zone within the clone.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, clones in which EGFR signalling has been constitutively activated tend to advance the transition zone within the clone, while the absence of EGFR signalling leads to loss of the proneural wave (Figure 3a,b) (Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by a citation and Figure 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "916bccd8-d47c-4d2b-abfc-bb58312126a5",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C51",
+      "claim": "The absence of EGFR signalling leads to loss of the proneural wave.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, clones in which EGFR signalling has been constitutively activated tend to advance the transition zone within the clone, while the absence of EGFR signalling leads to loss of the proneural wave (Figure 3a,b) (Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by a citation and Figure 3.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "955a5b05-0865-4d38-95b4-ef0448ebda84",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C52",
+      "claim": "Low levels of Notch signalling activity are observed both in the neuroepithelium and in neuroblasts but not at the transition zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Low levels of Notch signalling activity are observed both in the neuroepithelium and in neuroblasts but not at the transition zone (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "c71751fa-5296-49b6-867b-3af6d576482e",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C53",
+      "claim": "Notch activity is required to maintain neuroepithelial cell fate and the loss of Notch results in premature transformation into neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown experimentally that Notch activity is required to maintain neuroepithelial cell fate and the loss of Notch results in premature transformation into neuroblasts (Egger et al., 2010; Ngo et al., 2010; Reddy et al., 2010; Yasugi et al., 2010; Orihara-Ono et al., 2011; Wang et al., 2011b; P\u00e9rez-G\u00f3mez et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "1194e7a0-1f3f-4508-a6ad-16a800e746d1",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C54",
+      "claim": "Despite the observation of active Notch signalling, there is no evidence of lateral inhibition in the neuroepithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, despite the observation of active Notch signalling, there is no evidence of lateral inhibition in the neuroepithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "fdacf752-ee17-43e5-a68c-89856754f641",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C55",
+      "claim": "The model predicts that the basal level of Notch activity observed in the neuroepithelium could be the reason for the suppression of lateral inhibition patterns outside the transition zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our model predicts that the basal level of Notch activity observed in the the neuroepithelium could be the reason for the suppression of lateral inhibition patterns outside the transition zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction of the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "b2f4f7cd-33ae-469d-8b62-f8a26d36ace2",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C56",
+      "claim": "In the model, basal levels of Notch activity in the neuroepithelium lead to a spatially homogeneous 'oversaturation' that prevents the Delta levels from rising before being activated by EGFR signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, basal levels of Notch activity in the neuroepithelium lead to a spatially homogeneous 'oversaturation' that prevents the Delta levels from rising before being activated by EGFR signalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a feature of the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "9b599315-4b1e-4b75-8a40-c937cf4d4efe",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C57",
+      "claim": "If basal Notch levels are lowered to small values compared to the threshold levels for activation and inhibition in the model, salt-and-pepper patterns that are a consequence of lateral inhibition are recapitulated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if basal Notch levels are lowered to small values compared to the threshold levels for activation and inhibition in our model, we indeed recapitulate the salt-and-pepper patterns that are a consequence of lateral inhibition (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction of the model shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "ffeca526-3ab8-41c5-90a7-365f85af9e2a",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C58",
+      "claim": "Downregulation of Notch levels by expressing Notch RNAi in clones does not result in the emergence of a salt-and-pepper expression pattern of Delta.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this prediction of the model by lowering Notch levels in the neuroepithelium but we did not observe 'salt-and-pepper' patterns of Delta/Notch expression within clones expressing an RNAi against Notch (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "7cc944c4-c44c-4607-98be-fb2866b8d48a",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C59",
+      "claim": "The absence of the emergence of lateral inhibition is likely due to the complete loss of detectable Notch in cells expressing the RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the absence of the emergence of lateral inhibition is likely due to the complete loss of detectable Notch in cells expressing the RNAi (Figure 4d), while the reduction of Notch levels in the model prediction is more subtle (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental result shown in Figure 4d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "8ac55f6a-fcf3-4805-ae7f-1de2c6cb364d",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C60",
+      "claim": "Both basal and Delta-regulated Notch activity need to be in the appropriate range for lateral inhibition patterns to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Referring to the 'phase diagram' in Figure 4e, it can be seen that both basal and Delta-regulated Notch activity need to be in the appropriate range for lateral inhibition patterns to occur, which is difficult to achieve experimentally.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction of the model shown in Figure 4e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "005b536a-c7e5-4e2b-bc37-24db70235de9",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C61",
+      "claim": "The model entails that Notch downregulation is a necessary (but not generally sufficient) condition for inducing salt-and-pepper patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our model entails that Notch downregulation is a necessary (but not generally sufficient) condition for inducing salt-and-pepper patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction of the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "7c84d262-30c7-4b49-aa27-9f084e84cd78",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C62",
+      "claim": "The diffusion, gain and decay rate of EGFR signalling are the key regulators of wave speed.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this analysis showed that the diffusion, gain and decay rate of EGFR signalling (\u03b7, \u03bcE and kE) are the key regulators of wave speed, since EGFR signalling constitutes the driver of the wave in our model (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result of the sensitivity analysis shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "73833235-a0d2-41b6-bfee-5648c3bbd6a9",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C63",
+      "claim": "L'sc gene expression had almost no effect on wave speed since its dynamics is 'pulled' by the EGFR signalling front.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, L'sc gene expression (parametrised by \u03bcL and kL) had almost no effect on wave speed since its dynamics is 'pulled' by the EGFR signalling front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result of the sensitivity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "b9c67ab5-66be-41e5-af14-f6d63a6dfd99",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C64",
+      "claim": "The basal gain rate of Notch signalling as well as its decay rate play another prominent role in setting the wave speed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the basal gain rate of Notch signalling (\u03b2) as well as its decay rate (kN) play another prominent role in setting the wave speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result of the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "41ffe7b1-0732-4db7-92ba-6100f9e8f9a8",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C65",
+      "claim": "Notch signalling promotes EGFR signalling at the transition zone, leading to a reinforcement of activation as the wave arrives at undifferentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with experimental data showing that Notch signalling promotes EGFR signalling at the transition zone, leading to a reinforcement of activation as the wave arrives at undifferentiated cells (Yasugi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "f3cb4fa8-2350-47f6-8624-de93dbdc3246",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C66",
+      "claim": "L'sc expression had a tightening effect on the width of the transition zone as it promoted differentiation and therefore leads to a faster termination of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the width of the transition zone (Figure 5b), we found that while all parameters had some effect, L'sc expression clearly had a tightening effect as it promoted differentiation and therefore leads to a faster termination of differentiation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result of the sensitivity analysis shown in Figure 5b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "cda290ef-058f-42fe-a42c-9ab088f14577",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C67",
+      "claim": "Basal Notch signalling in the epithelium tended to enlarge the width of the transition zone in the sensitivity analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, basal Notch signalling in the epithelium (described by \u03b2 and kN) tended to enlarge the width of the transition zone in our sensitivity analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result of the sensitivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "664106c7-5eef-4b1a-aa49-9627632b0b0c",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C68",
+      "claim": "Overexpression of Notch at the transition zone extends the width of the L'sc stripe and delays the transformation into neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent study showed that overexpression of Notch at the transition zone extends the width of the L'sc stripe and delays the transformation into neuroblasts (Contreras et al., 2018), providing support for this prediction of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "66684531-58d4-4c5e-8584-2fda6376ddc1",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C69",
+      "claim": "A complementary prediction of the model is that a reduction of Notch at the transition zone would decrease the width of the L'sc stripe.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, it follows that a complementary prediction of the model would be that a reduction of Notch at the transition zone would decrease the width of the L'sc stripe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction of the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "b7d0cedd-f9df-4986-bb63-ae6ad11ec9d4",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C70",
+      "claim": "Within clones expressing Notch RNAi, the proneural wave was accelerated.",
+      "claim_type": "EXPLICIT",
+      "source": "Within clones expressing Notch RNAi, the proneural wave was not only accelerated (Figure 3), as observed previously in Notch mutant clones (Egger et al., 2010; Reddy et al., 2010; Yasugi et al., 2010), but the width of the transition zone also appeared smaller (yellow arrowheads in Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figures 3 and 6, and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "55d397c2-bdea-4850-9961-7a26de3aab37",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C71",
+      "claim": "Within clones expressing Notch RNAi, the width of the transition zone appeared smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "Within clones expressing Notch RNAi, the proneural wave was not only accelerated (Figure 3), as observed previously in Notch mutant clones (Egger et al., 2010; Reddy et al., 2010; Yasugi et al., 2010), but the width of the transition zone also appeared smaller (yellow arrowheads in Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "cf9a9ae9-f9b9-47e5-91dd-d4088e7ac19c",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C72",
+      "claim": "EGFR and Notch signalling are the key regulators of wave speed and width of the transition zone while L'sc expression provides an additional acceleration of the transition of the wave.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, this sensitivity analysis suggests that EGFR and Notch signalling are the key regulators of wave speed and width of the transition zone while L'sc expression provides an additional acceleration of the transition of the wave and therefore has a negative influence on the width of the transition zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the sensitivity analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "9923b8a6-1c4b-48f2-b697-3360eed5bb4a",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C73",
+      "claim": "Through interactions between L'sc and EGFR signalling, the neuroepithelium functions as an excitable medium.",
+      "claim_type": "EXPLICIT",
+      "source": "A signature feature of the model dynamics is that, through interactions between L'sc and EGFR signalling, the neuroepithelium functions as an excitable medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key feature of the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "26eda9a1-48ae-4775-9b76-a75cadb30d2c",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C74",
+      "claim": "The model predicts that local induction of EGFR signalling would initiate a circular (target-like) transition wave.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the model predicts that local induction of EGFR signalling would initiate a circular (target-like) transition wave (Figure 7a; Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction of the model shown in Figure 7a and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "3606f6fe-d89e-4b4d-ae94-9a0b12d3fe1c",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C75",
+      "claim": "Clones expressing PntP1 showed upregulation of L'sc at clonal boundaries and expression of Dpn within the clone, suggesting the ectopic generation of neuroblasts within the epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "We found upregulation of L'sc at clonal boundaries and expression of Dpn within the clone, suggesting the ectopic generation of neuroblasts within the epithelium, that is, a NE to NB transition (Figure 7b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental result shown in Figure 7b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "4141f884-d372-4134-a57c-415fa875a297",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C76",
+      "claim": "The experimental results agree with previous experiments showing the induction of neuroblasts within the neuroepithelium in response to ectopic EGFR signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results agree with previous experiments showing the induction of neuroblasts within the neuroepithelium in response to ectopic EGFR signalling (Yasugi et al., 2010) and are in striking agreement with model simulations based on the same perturbation (Figure 7a; Video 5; Supplementary Text).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by a citation and Figure 7a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "684c3c23-f55c-4170-9df3-c182b272019b",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C77",
+      "claim": "The proneural wave involves the activation of an excitatory pulse of signalling activity and gene expression, giving rise to a tightly-regulated propagating transition zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that the proneural wave involves the activation of an excitatory pulse of signalling activity and gene expression, giving rise to a tightly-regulated propagating transition zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "11ea88db-ede9-4d14-a37b-e680a0441ef4",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C78",
+      "claim": "The reaction-diffusion system described is based on strictly local inhibition, in contrast with Turing-based activator-inhibitor mechanisms which typically comprise fast diffusible inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with Turing-based activator-inhibitor mechanisms (Turing, 1952), which typically comprise fast diffusible inhibitors, the reaction-diffusion system described here is based on strictly local inhibition (Figure 2b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation and Figure 2b,c.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "025b9b9a-b795-4d74-bd77-323895e001ab",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C79",
+      "claim": "The role of sequential patterning by the proneural wave is to ensure the correct timing and composition of the neuroblast population.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of sequential patterning by the proneural wave is to ensure the correct timing and composition of the neuroblast population (Bertet et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "dee36a08-21fa-41c6-9d58-98230154c165",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C80",
+      "claim": "A similar process of sequential patterning occurs during the progression of the morphogenetic furrow in the Drosophila eye.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar process of sequential patterning occurs during the progression of the morphogenetic furrow in the Drosophila eye (Roignant and Treisman, 2009; Lubensky et al., 2011; Formosa-Jordan et al., 2012; Wartlick et al., 2014; Fried et al., 2016; Gavish et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "1a889f05-ac91-4b7b-b6c8-92fdfcf0300f",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C81",
+      "claim": "The JAK/STAT and Hippo pathways serve important roles in modulating proneural wave progression but are not actively involved in propagating the transition zone through a reaction-diffusion-like mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the JAK/STAT and Hippo pathways, which serve important roles in modulating proneural wave progression but are not actively involved in propagating the transition zone through a reaction-diffusion-like mechanism (Yasugi et al., 2008; Reddy et al., 2010; Yasugi et al., 2010; Kawamori et al., 2011; Wang et al., 2011a; Weng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "4c82a182-f11d-48fb-ac9e-f08e4d853db3",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C82",
+      "claim": "The excitable propagation behaviour provides a mechanism to capture the transient and localised activity of the proneural gene l'sc and EGFR signalling, as well as robustness against fluctuating signalling activity and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "On a mechanistic level, the excitable propagation behaviour illuminated here provides a mechanism to capture the transient and localised activity of the proneural gene l'sc and EGFR signalling, as well as robustness against fluctuating signalling activity and gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "790dc91a-2df4-4633-8a85-a85a7c4c3a33",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C83",
+      "claim": "The model implies that neither differentiation nor proneural gene expression is required for the transient stabilisation of EGFR signalling activity that is required to advance the wave front.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to a recent model (Sato et al., 2016), our model also implies that neither differentiation nor proneural gene expression is required for the transient stabilisation of EGFR signalling activity that is required to advance the wave front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a comparison with a prior model.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "7ec77b2d-1c50-40de-b8f1-d9bc559d8f13",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C84",
+      "claim": "In the context of vertebrate somitogenesis, intracellular excitability has recently been suggested to underlie the emergence of genetic oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of vertebrate somitogenesis, intracellular excitability has recently been suggested to underlie the emergence of genetic oscillations (Hubaud et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "725c6ade-7e58-4fc5-b5b5-74ee3c2b4b96",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "claim_id": "C85",
+      "claim": "The appearance of excitability in the context of a propagating front of gene expression suggests that such a mechanism may serve more widely as a generic and robust strategy to achieve sequential transition waves in developing tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The appearance here of excitability in the context of a propagating front of gene expression suggests that such a mechanism may serve more widely as a generic and robust strategy to achieve sequential transition waves in developing tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a broader implication of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "489f1d82-d7fd-4156-85c1-3cf91ca3e34d",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The proneural wave in the Drosophila optic lobe is a well-characterized developmental process where neuroepithelial cells divide symmetrically, then undergo sequential transition into neuroblasts at a transition zone marked by l'sc expression. This transition zone sweeps across the tissue and is controlled by EGFR and Delta-Notch signalling, generating neuronal diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 describe established background knowledge about the proneural wave, supported by multiple citations to prior work (Egger et al., Yasugi et al., and others) and imaging data in Figure 1. These claims provide the biological context for the study and are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "34be883f-6ed1-473a-8580-59bf43619743",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors propose that the proneural wave is driven by an excitable reaction-diffusion system involving EGFR signalling and l'sc, where a propagating transition zone emerges from molecular feedback and diffusion. The model demonstrates that EGFR-l'sc interactions create excitable dynamics that produce a traveling pulse of signaling activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C24, C30, C31, C73, and C77 present the core theoretical framework supported by mathematical modeling (Equations 1-2, Figure 2a-c, Videos 1-2). The simulations demonstrate that the proposed EGFR-l'sc feedback mechanism can generate traveling wave behavior consistent with experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "46b39d44-964d-45e2-b7fb-25b221af209c",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EGFR signalling forms an autocrine positive feedback loop through Rhomboid and Spitz, activates l'sc expression which drives the NE to NB transition, and is subsequently downregulated by l'sc, creating indirect negative feedback. EGFR signalling is both necessary and sufficient for wave progression but remains spatially confined to the transition zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C29 describe the molecular interactions underlying the model, supported by multiple citations to prior experimental work (Yasugi et al., 2010; Sato et al., 2013; Wiley et al., 2003). These established molecular relationships form the biological basis for the mathematical model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "4ba7673f-6d25-45b4-b278-42e2d107e16e",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The integrated model incorporates Delta-Notch signalling with canonical interactions (trans-activation, cis-inhibition, lateral inhibition) and its crosstalk with EGFR and l'sc. Despite complex interactions, EGFR-l'sc remains the wave driver while Delta-Notch provides timing cues and prevents premature differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C41 describe the extended model incorporating Delta-Notch signalling, supported by citations to prior work and model schematic (Figure 2d). The model structure is based on established Delta-Notch biology and documented interactions with EGFR and l'sc pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "7faa0cbf-d02a-483b-8267-5bbf6b002a13",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The integrated model predictions match experimental observations: EGFR, l'sc, and Delta are elevated only in the transition zone; Notch activity peaks before the transition then drops sharply. The model attributes the Notch drop to cis-inhibition by Delta, consistent with experimental evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 demonstrate agreement between model predictions (Figure 2e) and prior experimental data (Figure 1c, multiple citations). The model successfully recapitulates key spatial expression patterns, providing validation of the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "03960f18-9bbf-46de-873e-dbb39c61c914",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model captures genetic perturbation effects on wave progression: constitutive EGFR activation advances the transition zone within clones, while EGFR loss abolishes the wave, consistent with experimental observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 show the model reproduces documented clone phenotypes (Figure 3a-b, Yasugi et al., 2010). The simulations correctly predict acceleration with EGFR gain-of-function and wave loss with EGFR loss-of-function, validating the model's predictive power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model predicts that basal Notch activity in the neuroepithelium suppresses lateral inhibition patterns outside the transition zone through 'oversaturation'. Experimental testing with Notch RNAi did not produce salt-and-pepper patterns, likely due to complete Notch loss rather than subtle reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C61 present a model prediction (Figure 4b) that was tested experimentally (Figure 4c-d) but not confirmed. The authors attribute the negative result to technical limitations (complete vs. partial Notch knockdown), but the prediction remains unvalidated. The phase diagram (Figure 4e) suggests the prediction requires precise parameter tuning that may be experimentally inaccessible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "cf864339-b28a-4a33-8f5e-dc07ced96224",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sensitivity analysis reveals that EGFR signalling parameters (diffusion, gain, decay) are key regulators of wave speed, while basal Notch signalling also prominently affects speed. L'sc expression has minimal effect on speed but tightens transition zone width, while basal Notch enlarges the width.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67, C72 present results from Morris sensitivity analysis (Figure 5a-b, Appendix 7). The analysis systematically identifies parameter influences on wave properties, with findings consistent with the model structure where EGFR drives propagation and l'sc promotes differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "03dec6c8-e77f-4ca1-a97f-9877e71b2f3f",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model predicts that Notch levels at the transition zone regulate transition zone width: Notch overexpression extends the width (supported by Contreras et al., 2018), while Notch reduction should decrease width. Experimental Notch RNAi clones showed both wave acceleration and reduced transition zone width.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 present a model prediction (C69) that was experimentally validated (C70-C71, Figure 6). The observation that Notch RNAi clones have narrower transition zones confirms the model prediction, with prior work (C68) supporting the converse manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "52d60e81-4388-469e-bb01-44b9dd03c566",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model predicts that local EGFR activation should initiate circular transition waves, demonstrating excitability. Experimental ectopic expression of PntP1 (EGFR effector) in clones induced l'sc upregulation and neuroblast generation, confirming the excitability prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C74-C76 present a key model prediction (excitability allowing wave initiation anywhere) that was experimentally validated (Figure 7). PntP1 clones showed l'sc expression and Dpn+ neuroblasts, matching model simulations and prior observations (Yasugi et al., 2010), providing strong support for the excitable medium hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "81b54e22-27ba-483d-85c0-b64ca8df7fd2",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors contextualize their findings within broader developmental biology: traveling waves are ubiquitous in development, reaction-diffusion systems with self-activation support traveling fronts, and the excitable mechanism may represent a generic strategy for sequential transitions in developing tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C25, C78-C80, C84-C85 place the work in broader context, supported by extensive citations. These claims appropriately connect the specific findings to general principles in developmental pattern formation and suggest wider applicability, though C85 is appropriately speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "53ded7be-62aa-42cb-9ede-53796364f52f",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior experimental work established that EGFR signalling is necessary and sufficient for wave progression, Notch activity shows specific dynamics during the transition, JAK/STAT and Fat-Hippo pathways prevent premature transition, and both l'sc and Notch downregulation promote the NE to NB transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18, C42-C43 summarize established experimental findings from prior work (multiple citations), providing the empirical foundation for model construction. These are well-documented observations that inform the model's biological constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    },
+    {
+      "id": "000cce2c-c419-4df8-90ee-7a35d7b4c5da",
+      "content_id": "d3251ee9-c8ac-4069-b343-94b95601e515",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors discuss that JAK/STAT and Hippo pathways modulate but don't drive wave progression, the excitable mechanism provides robustness, and their model differs from a recent alternative (Sato et al., 2016) in not requiring differentiation for EGFR stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 provide appropriate discussion of model scope and comparison with prior modeling work. C81 is supported by citations, C82 is a reasonable inference from excitable dynamics, and C83 appropriately distinguishes their model from alternatives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T08:49:06.445288Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "60071da2-5097-4bd8-9635-3e9500f0a356",
+      "result_id": "489f1d82-d7fd-4156-85c1-3cf91ca3e34d"
+    },
+    {
+      "claim_id": "3778577e-a4a4-4eb0-a64c-fd8b05b12aa2",
+      "result_id": "489f1d82-d7fd-4156-85c1-3cf91ca3e34d"
+    },
+    {
+      "claim_id": "836dbefb-3da4-4ff0-b335-3064166fe106",
+      "result_id": "489f1d82-d7fd-4156-85c1-3cf91ca3e34d"
+    },
+    {
+      "claim_id": "e0e86008-7a5d-4e28-9796-ca8983a719a1",
+      "result_id": "489f1d82-d7fd-4156-85c1-3cf91ca3e34d"
+    },
+    {
+      "claim_id": "90646068-7a32-41f4-bdee-6faceeb55c87",
+      "result_id": "489f1d82-d7fd-4156-85c1-3cf91ca3e34d"
+    },
+    {
+      "claim_id": "2d2cf038-6a68-4243-a72f-17842020cab1",
+      "result_id": "489f1d82-d7fd-4156-85c1-3cf91ca3e34d"
+    },
+    {
+      "claim_id": "372c43ed-28fa-40dc-8118-e68816026c6a",
+      "result_id": "489f1d82-d7fd-4156-85c1-3cf91ca3e34d"
+    },
+    {
+      "claim_id": "88e33805-e625-4a0c-a89d-a888f87c9ec1",
+      "result_id": "489f1d82-d7fd-4156-85c1-3cf91ca3e34d"
+    },
+    {
+      "claim_id": "a914b720-e01e-4c50-ad67-5ec66438dce1",
+      "result_id": "489f1d82-d7fd-4156-85c1-3cf91ca3e34d"
+    },
+    {
+      "claim_id": "79d03186-56dc-49ee-8d84-341323fec082",
+      "result_id": "34be883f-6ed1-473a-8580-59bf43619743"
+    },
+    {
+      "claim_id": "c2c0768f-8f6c-4f1b-acac-be53ada86a04",
+      "result_id": "34be883f-6ed1-473a-8580-59bf43619743"
+    },
+    {
+      "claim_id": "29eb7873-b6a8-42c2-81ea-f9793e423660",
+      "result_id": "34be883f-6ed1-473a-8580-59bf43619743"
+    },
+    {
+      "claim_id": "ef64beca-a9fd-4c23-978d-c9c62945c6bb",
+      "result_id": "34be883f-6ed1-473a-8580-59bf43619743"
+    },
+    {
+      "claim_id": "61d7ea56-19af-491c-a384-ef17d78c4757",
+      "result_id": "34be883f-6ed1-473a-8580-59bf43619743"
+    },
+    {
+      "claim_id": "9923b8a6-1c4b-48f2-b697-3360eed5bb4a",
+      "result_id": "34be883f-6ed1-473a-8580-59bf43619743"
+    },
+    {
+      "claim_id": "684c3c23-f55c-4170-9df3-c182b272019b",
+      "result_id": "34be883f-6ed1-473a-8580-59bf43619743"
+    },
+    {
+      "claim_id": "aed0dd37-fffd-4c8e-b4e6-c8b70d33d6fe",
+      "result_id": "46b39d44-964d-45e2-b7fb-25b221af209c"
+    },
+    {
+      "claim_id": "0bc2e2e6-96dd-4fb0-956d-a7cd1c2537ea",
+      "result_id": "46b39d44-964d-45e2-b7fb-25b221af209c"
+    },
+    {
+      "claim_id": "7f0aec88-a7a2-42a4-b872-1734dcb9976e",
+      "result_id": "46b39d44-964d-45e2-b7fb-25b221af209c"
+    },
+    {
+      "claim_id": "a143aa3c-16c9-4435-810b-cf08ac518064",
+      "result_id": "46b39d44-964d-45e2-b7fb-25b221af209c"
+    },
+    {
+      "claim_id": "544b1d5a-1987-44f4-b0d3-fc1dd9a27489",
+      "result_id": "46b39d44-964d-45e2-b7fb-25b221af209c"
+    },
+    {
+      "claim_id": "bae70d25-33cf-481b-b800-5f1f9108c0ec",
+      "result_id": "46b39d44-964d-45e2-b7fb-25b221af209c"
+    },
+    {
+      "claim_id": "f689742c-a957-487f-88f4-01d8e4632df0",
+      "result_id": "46b39d44-964d-45e2-b7fb-25b221af209c"
+    },
+    {
+      "claim_id": "af67d2cf-77b2-4972-9622-d41c9cf4cfbe",
+      "result_id": "46b39d44-964d-45e2-b7fb-25b221af209c"
+    },
+    {
+      "claim_id": "1022407e-becf-407a-a4b8-855bae85b4c0",
+      "result_id": "46b39d44-964d-45e2-b7fb-25b221af209c"
+    },
+    {
+      "claim_id": "06b9cab4-da07-43a3-976d-9e3aa395f4d9",
+      "result_id": "4ba7673f-6d25-45b4-b278-42e2d107e16e"
+    },
+    {
+      "claim_id": "0a08c0f5-f47b-48bb-89dc-b73f0ce73656",
+      "result_id": "4ba7673f-6d25-45b4-b278-42e2d107e16e"
+    },
+    {
+      "claim_id": "0bd50c6b-1623-4b21-8aa3-1c50e96397a6",
+      "result_id": "4ba7673f-6d25-45b4-b278-42e2d107e16e"
+    },
+    {
+      "claim_id": "2ca0867c-fff3-4fb4-8210-1af4218b29b5",
+      "result_id": "4ba7673f-6d25-45b4-b278-42e2d107e16e"
+    },
+    {
+      "claim_id": "70d4f3e6-3da8-4655-ad5a-dd58bef02c57",
+      "result_id": "4ba7673f-6d25-45b4-b278-42e2d107e16e"
+    },
+    {
+      "claim_id": "ee65b757-efde-42c3-b8cc-27fdcede78b2",
+      "result_id": "4ba7673f-6d25-45b4-b278-42e2d107e16e"
+    },
+    {
+      "claim_id": "22ae830d-3e91-4198-8f99-2b76e044b131",
+      "result_id": "4ba7673f-6d25-45b4-b278-42e2d107e16e"
+    },
+    {
+      "claim_id": "85cd80f8-ec44-457f-a230-72c28625fcfd",
+      "result_id": "4ba7673f-6d25-45b4-b278-42e2d107e16e"
+    },
+    {
+      "claim_id": "5f1a80c6-f0be-4536-a7db-98e4e6bb2ae3",
+      "result_id": "4ba7673f-6d25-45b4-b278-42e2d107e16e"
+    },
+    {
+      "claim_id": "fa4ceeff-bba4-4624-bcd8-22a4b7085332",
+      "result_id": "4ba7673f-6d25-45b4-b278-42e2d107e16e"
+    },
+    {
+      "claim_id": "30f40dba-2c15-41d4-bd11-46f05806b54d",
+      "result_id": "7faa0cbf-d02a-483b-8267-5bbf6b002a13"
+    },
+    {
+      "claim_id": "a2534507-e1e2-49dd-a340-b393159b47fe",
+      "result_id": "7faa0cbf-d02a-483b-8267-5bbf6b002a13"
+    },
+    {
+      "claim_id": "bad84c2f-3984-47d4-b3c5-014890d3ef45",
+      "result_id": "7faa0cbf-d02a-483b-8267-5bbf6b002a13"
+    },
+    {
+      "claim_id": "dac557b3-f9bd-4ded-b8c0-71a7af7f6e3a",
+      "result_id": "7faa0cbf-d02a-483b-8267-5bbf6b002a13"
+    },
+    {
+      "claim_id": "f61c0103-e757-434b-aa3d-c6c3fb855bd0",
+      "result_id": "7faa0cbf-d02a-483b-8267-5bbf6b002a13"
+    },
+    {
+      "claim_id": "5809c87c-3352-42f0-abfd-221289620487",
+      "result_id": "03960f18-9bbf-46de-873e-dbb39c61c914"
+    },
+    {
+      "claim_id": "1752e375-97c6-42eb-b36d-187aed2693f3",
+      "result_id": "03960f18-9bbf-46de-873e-dbb39c61c914"
+    },
+    {
+      "claim_id": "916bccd8-d47c-4d2b-abfc-bb58312126a5",
+      "result_id": "03960f18-9bbf-46de-873e-dbb39c61c914"
+    },
+    {
+      "claim_id": "955a5b05-0865-4d38-95b4-ef0448ebda84",
+      "result_id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2"
+    },
+    {
+      "claim_id": "c71751fa-5296-49b6-867b-3af6d576482e",
+      "result_id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2"
+    },
+    {
+      "claim_id": "1194e7a0-1f3f-4508-a6ad-16a800e746d1",
+      "result_id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2"
+    },
+    {
+      "claim_id": "fdacf752-ee17-43e5-a68c-89856754f641",
+      "result_id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2"
+    },
+    {
+      "claim_id": "b2f4f7cd-33ae-469d-8b62-f8a26d36ace2",
+      "result_id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2"
+    },
+    {
+      "claim_id": "9b599315-4b1e-4b75-8a40-c937cf4d4efe",
+      "result_id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2"
+    },
+    {
+      "claim_id": "ffeca526-3ab8-41c5-90a7-365f85af9e2a",
+      "result_id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2"
+    },
+    {
+      "claim_id": "7cc944c4-c44c-4607-98be-fb2866b8d48a",
+      "result_id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2"
+    },
+    {
+      "claim_id": "8ac55f6a-fcf3-4805-ae7f-1de2c6cb364d",
+      "result_id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2"
+    },
+    {
+      "claim_id": "005b536a-c7e5-4e2b-bc37-24db70235de9",
+      "result_id": "5f57a6a3-3ac4-481e-bf62-d15bbee3b5b2"
+    },
+    {
+      "claim_id": "7c84d262-30c7-4b49-aa27-9f084e84cd78",
+      "result_id": "cf864339-b28a-4a33-8f5e-dc07ced96224"
+    },
+    {
+      "claim_id": "73833235-a0d2-41b6-bfee-5648c3bbd6a9",
+      "result_id": "cf864339-b28a-4a33-8f5e-dc07ced96224"
+    },
+    {
+      "claim_id": "b9c67ab5-66be-41e5-af14-f6d63a6dfd99",
+      "result_id": "cf864339-b28a-4a33-8f5e-dc07ced96224"
+    },
+    {
+      "claim_id": "41ffe7b1-0732-4db7-92ba-6100f9e8f9a8",
+      "result_id": "cf864339-b28a-4a33-8f5e-dc07ced96224"
+    },
+    {
+      "claim_id": "f3cb4fa8-2350-47f6-8624-de93dbdc3246",
+      "result_id": "cf864339-b28a-4a33-8f5e-dc07ced96224"
+    },
+    {
+      "claim_id": "cda290ef-058f-42fe-a42c-9ab088f14577",
+      "result_id": "cf864339-b28a-4a33-8f5e-dc07ced96224"
+    },
+    {
+      "claim_id": "cf9a9ae9-f9b9-47e5-91dd-d4088e7ac19c",
+      "result_id": "cf864339-b28a-4a33-8f5e-dc07ced96224"
+    },
+    {
+      "claim_id": "664106c7-5eef-4b1a-aa49-9627632b0b0c",
+      "result_id": "03dec6c8-e77f-4ca1-a97f-9877e71b2f3f"
+    },
+    {
+      "claim_id": "66684531-58d4-4c5e-8584-2fda6376ddc1",
+      "result_id": "03dec6c8-e77f-4ca1-a97f-9877e71b2f3f"
+    },
+    {
+      "claim_id": "b7d0cedd-f9df-4986-bb63-ae6ad11ec9d4",
+      "result_id": "03dec6c8-e77f-4ca1-a97f-9877e71b2f3f"
+    },
+    {
+      "claim_id": "55d397c2-bdea-4850-9961-7a26de3aab37",
+      "result_id": "03dec6c8-e77f-4ca1-a97f-9877e71b2f3f"
+    },
+    {
+      "claim_id": "15ca559b-6302-4d20-bddc-2e3b38160316",
+      "result_id": "52d60e81-4388-469e-bb01-44b9dd03c566"
+    },
+    {
+      "claim_id": "26eda9a1-48ae-4775-9b76-a75cadb30d2c",
+      "result_id": "52d60e81-4388-469e-bb01-44b9dd03c566"
+    },
+    {
+      "claim_id": "3606f6fe-d89e-4b4d-ae94-9a0b12d3fe1c",
+      "result_id": "52d60e81-4388-469e-bb01-44b9dd03c566"
+    },
+    {
+      "claim_id": "4141f884-d372-4134-a57c-415fa875a297",
+      "result_id": "52d60e81-4388-469e-bb01-44b9dd03c566"
+    },
+    {
+      "claim_id": "f0b2d4bf-e719-486b-8c98-d1b7ac2e8d0f",
+      "result_id": "81b54e22-27ba-483d-85c0-b64ca8df7fd2"
+    },
+    {
+      "claim_id": "2aa3c330-bc7e-421e-b94c-0a7301575e6e",
+      "result_id": "81b54e22-27ba-483d-85c0-b64ca8df7fd2"
+    },
+    {
+      "claim_id": "11ea88db-ede9-4d14-a37b-e680a0441ef4",
+      "result_id": "81b54e22-27ba-483d-85c0-b64ca8df7fd2"
+    },
+    {
+      "claim_id": "025b9b9a-b795-4d74-bd77-323895e001ab",
+      "result_id": "81b54e22-27ba-483d-85c0-b64ca8df7fd2"
+    },
+    {
+      "claim_id": "dee36a08-21fa-41c6-9d58-98230154c165",
+      "result_id": "81b54e22-27ba-483d-85c0-b64ca8df7fd2"
+    },
+    {
+      "claim_id": "7ec77b2d-1c50-40de-b8f1-d9bc559d8f13",
+      "result_id": "81b54e22-27ba-483d-85c0-b64ca8df7fd2"
+    },
+    {
+      "claim_id": "725c6ade-7e58-4fc5-b5b5-74ee3c2b4b96",
+      "result_id": "81b54e22-27ba-483d-85c0-b64ca8df7fd2"
+    },
+    {
+      "claim_id": "2dbae14a-11a2-4217-b103-3b96379d4cf5",
+      "result_id": "53ded7be-62aa-42cb-9ede-53796364f52f"
+    },
+    {
+      "claim_id": "6c3b9b9a-2715-4cd0-bb44-6e8711459880",
+      "result_id": "53ded7be-62aa-42cb-9ede-53796364f52f"
+    },
+    {
+      "claim_id": "c39fbf9d-0433-4d61-8414-58088c8b4571",
+      "result_id": "53ded7be-62aa-42cb-9ede-53796364f52f"
+    },
+    {
+      "claim_id": "f73db7ef-63de-4c48-8d41-763ee7e35cf7",
+      "result_id": "53ded7be-62aa-42cb-9ede-53796364f52f"
+    },
+    {
+      "claim_id": "7b6d4ddb-faa5-471c-aa2c-871f876be65a",
+      "result_id": "53ded7be-62aa-42cb-9ede-53796364f52f"
+    },
+    {
+      "claim_id": "df95d93a-0571-4dcd-b506-d0b3ec233ab0",
+      "result_id": "53ded7be-62aa-42cb-9ede-53796364f52f"
+    },
+    {
+      "claim_id": "dd79a399-c9fe-4bf2-b83f-c2257aef0824",
+      "result_id": "53ded7be-62aa-42cb-9ede-53796364f52f"
+    },
+    {
+      "claim_id": "1a889f05-ac91-4b7b-b6c8-92fdfcf0300f",
+      "result_id": "000cce2c-c419-4df8-90ee-7a35d7b4c5da"
+    },
+    {
+      "claim_id": "4c82a182-f11d-48fb-ac9e-f08e4d853db3",
+      "result_id": "000cce2c-c419-4df8-90ee-7a35d7b4c5da"
+    },
+    {
+      "claim_id": "790dc91a-2df4-4633-8a85-a85a7c4c3a33",
+      "result_id": "000cce2c-c419-4df8-90ee-7a35d7b4c5da"
+    }
+  ],
+  "comparisons": []
+}

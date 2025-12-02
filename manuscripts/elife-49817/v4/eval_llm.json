@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "PICh analysis of TRF1-depleted telomeres reveals significant proteomic changes, with 119 proteins enriched and 206 proteins depleted. Enriched proteins include DNA damage response factors (MRN complex, 53BP1) and SMC proteins, while depleted proteins include CTC1 and POT1b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 are well-supported by mass spectrometry data (Figure 1D-F) with appropriate statistical cutoffs (log2 fold change >|2|, p-value <0.1). The identification of 53BP1 as a positive control validates the specificity of the approach, as this finding is consistent with prior publications (C35). Western blot confirms TRF1 deletion (C27), and flow cytometry shows minimal cell cycle perturbation (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "TRF1-depleted telomeres recruit ALT-associated factors including BRCA1, PML, SMC5/6, ATRX, and NuRD complex components. ChIP validation confirms enrichment of BAZ1b, BRCA1, MTA1, ZNF827, and CHD4. APB formation increases two-fold in TRF1-/- cells. APH treatment alone does not induce these changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by converging evidence from PICh (Figure 2A), ChIP-dot blot validation (Figure 2B, Figure 2\u2014supplement 1A), and immuno-FISH (Figure 2C). The comparison with APH-treated cells (C39-C40) demonstrates that TRF1 loss has effects beyond general replication stress. Statistical significance is shown for most factors except p66a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "TRF1 deletion increases telomeric sister chromatid exchanges (T-SCEs) from 0.4% to 2.8% at day 7, with single chromatid exchanges (characteristic of BIR) appearing earlier (day 4, 1.6%) than reciprocal exchanges. APH treatment also increases single exchanges but not reciprocal exchanges, indicating BIR but not HR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 are supported by CO-FISH data (Figure 2D, Figure 2\u2014supplement 2) with appropriate time-course analysis resolving previous discrepancies in the literature. The distinction between single and double exchanges is methodologically sound and provides mechanistic insight. The comparison with APH treatment (C47-C48) strengthens the interpretation that TRF1 has specific functions beyond suppressing replication stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "TRF1 deletion causes significant increases in TERRA levels in immortalized MEFs (day 7), primary MEFs, and at earlier timepoints (day 4). TERRAs are high molecular weight and require alkaline treatment for Northern blot detection. APH treatment also increases TERRAs, suggesting replication stress enhances TERRA transcription or stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by multiple complementary techniques: RNA dot-blot, Northern blot (Figure 3A-B, Figure 3\u2014supplement 1), and TERRA-FISH (Figure 3C). The observation that alkaline treatment is required for detection (C54) is a technical detail that adds credibility. The APH experiment (C56) supports the mechanistic interpretation (C57), though causality between replication stress and TERRA levels remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "TRF1-deficient MEFs do not display complete ALT phenotype: they lack telomere length heterogeneity, c-circle formation, and retain telomerase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by appropriate assays: TRF analysis (C58), C-circle assay (C59), and TRAP assay (C60) shown in Figure 3\u2014supplement 2. These negative results are important for defining the boundaries of the ALT-like phenotype and are appropriately controlled (U2OS as positive control for C-circles).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "Human TRF1 depletion in HT1080-ST cells shows modest APB increase and increased single T-SCE exchanges but no double exchanges or TERRA increase. Human TRF1 KO HeLa cells show no TERRA increase even after 15 days and no growth defects, contrasting with mouse cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66, C68-C69 are supported by data in human cell lines (Figure 4, Figure 4\u2014supplement 1). The species differences are appropriately documented, though the mechanistic basis remains speculative. The milder phenotype in human cells (C61) is acknowledged. The lack of TERRA increase in human cells (C64-C65) is a clear negative result that highlights species-specific differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "TRF1-/- MEFs show two-fold increased BrdU incorporation at telomeres in non-S-phase cells and increased telomeric mitotic DNA synthesis (EdU incorporation). Analysis reveals 95% of telomeric mitotic DNA synthesis occurs at single chromatids (vs 72% at non-telomeric sites), indicating BIR mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by BrdU immunofluorescence (Figure 5C) and EdU-FISH on metaphases (Figure 5D-F). The distinction between single and double chromatid labeling is methodologically sound and provides strong evidence for BIR (C74). The high percentage of single chromatid events at telomeres (95%, C73) is striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "POLD3 depletion suppresses mitotic DNA synthesis at TRF1-depleted telomeres, while SMC5 depletion does not, confirming BIR mechanism and showing SMC5 is dispensable for BIR-dependent DNA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by EdU-FISH in double mutants (Figure 6D-E). The differential effects of POLD3 vs SMC5 depletion provide strong genetic evidence for the roles of these factors. The conclusion that BIR is the mechanism (C79) is well-supported by the POLD3 dependence, consistent with prior literature on BIR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Neither POLD3 nor SMC5 depletion affects telomere fragility frequency in TRF1-depleted cells, indicating these factors are not involved in the mechanism generating telomere fragility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by telomere fragility analysis (Figure 6\u2014supplement 2C). This negative result is important for distinguishing between telomere fragility and the recombination/BIR phenotypes. The data show ~20% fragility in all TRF1-depleted conditions regardless of POLD3/SMC5 status.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Both POLD3 and SMC5 are required for APB formation and T-SCEs (both single and double exchanges) in TRF1-depleted cells. However, only POLD3 depletion rescues increased TERRA levels, while SMC5 depletion increases TERRA, suggesting distinct roles in recombination events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 are supported by APB analysis (Figure 7A), T-SCE analysis (Figure 7B, Figure 7\u2014supplement 1), and TERRA measurements (Figure 7C) in double mutants. The differential effects on TERRA (C86-C87) are particularly interesting and suggest mechanistic distinctions. The data support the conclusion of separate roles (C90), though the precise mechanistic relationship remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "TRF1 deletion leads to enrichment of SMC5/6, POLD3, and chromatin remodeling factors at telomeres, along with APB formation, mitotic DNA synthesis, and increased TERRA. SMC5/6 and POLD3 are key regulators of the recombination signature, and TRF1 is central to preserving telomeric chromatin against HR and POLD3-dependent mitotic DNA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C25 represent the main conclusions synthesizing multiple experimental approaches. They are well-supported by the collective data from PICh (C19), multiple phenotypic assays (C20-C22), and genetic epistasis experiments with shRNAs (C23). The central role of TRF1 (C24-C25) is a reasonable inference from the comprehensive dataset, though some mechanistic details remain to be fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Replication stress at TRF1-depleted telomeres recruits ALT signature factors and enables TERRA transcription and recombination in a POLD3/SMC5-dependent manner. Mitotic DNA synthesis is POLD3-dependent but SMC5-independent. TRF1 deletion generates additional responses (APBs, chromatin remodeling, HR) beyond APH treatment, attributed to TRF1's role in stabilizing telomeric chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 synthesize the major findings and are supported by the comprehensive experimental dataset. The comparison with APH treatment (C99-C100) strengthens the interpretation that TRF1 has functions beyond simply preventing replication stress. The proposed mechanism (C101) is a reasonable inference, though it remains somewhat speculative regarding the precise molecular basis of chromatin stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Mouse TRF1 is essential for cell proliferation and suppressing TERRA/HR, while appearing dispensable in human HT1080-ST and HeLa cells. This difference may be explained by distinct chromatin composition between species, with human telomeres having less abundant repressive marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by the comparative data between mouse and human cells. The species difference is well-documented (C102-C103), and the proposed explanation based on chromatin differences (C104-C105) is supported by citations to prior literature. However, this remains somewhat speculative and would benefit from direct experimental testing of the chromatin hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C127",
+      "C130",
+      "C140",
+      "C141"
+    ],
+    "result": "TRF1 is a major suppressor of telomeric replication stress and POLD3-dependent BIR. In TRF1's absence, POLD3-dependent BIR bypasses stalled replication forks during G2/M phase, potentially resolving RNA-DNA hybrids formed by increased TERRAs. TRF1 ensures telomeric chromatin stability and suppresses chromatin remodeler recruitment, APB formation, and HR, while TRF1-dependent replication stress is associated with increased TERRA and POLD3-dependent BIR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123, C127, C130, C140-C141 represent the main mechanistic conclusions. They are well-supported by the comprehensive dataset, though some aspects remain inferential. The proposed model linking TERRA, RNA-DNA hybrids, and POLD3-dependent BIR (C130) is reasonable but not directly demonstrated. The overall conclusions (C140-C141) appropriately synthesize the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C134",
+      "C135"
+    ],
+    "result": "SMC5 acts as an inhibitor of TERRA accumulation, as its absence increases TERRA levels. SMC5 promotes T-SCEs but not MiDAS formation in TRF1-depleted cells, suggesting an exclusive function in HR at replication-stressed telomeres, possibly balancing accumulation and removal of HR-dependent intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132, C134-C135 are supported by the double mutant analysis (Figure 7C for C132, Figure 6E and Figure 7B for C134). The proposed function (C135) is a reasonable inference from the data, though it remains somewhat speculative. The distinction between SMC5's role in T-SCEs vs MiDAS is well-documented and mechanistically interesting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "TRF1-POLD3 double mutant does not show suppression of telomere fragility, indicating key differences in mechanisms generating telomere fragility versus other phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 is supported by data in Figure 6\u2014supplement 2C. This negative result is important for distinguishing between different aspects of telomere dysfunction and suggests that telomere fragility and BIR/recombination are mechanistically separable. The observation contrasts with the role of POLD3 at common fragile sites, as noted in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C26",
+      "C46",
+      "C50",
+      "C67",
+      "C68",
+      "C75",
+      "C76",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C116",
+      "C117",
+      "C118",
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C128",
+      "C129",
+      "C131",
+      "C133",
+      "C136",
+      "C138"
+    ],
+    "result": "Background claims about telomere biology, ALT mechanisms, BIR pathways, and species differences in TERRA origins, all supported by appropriate citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C18, C26, C46, C50, C67-C68, C75-C76, C92-C95, C106-C110, C116-C118, C121-C122, C124-C126, C128-C129, C131, C133, C136, C138) provide essential background context and are appropriately supported by citations to published literature. They establish the foundation for interpreting the experimental results and are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C137"
+    ],
+    "result": "Speculative claims about TERRA triggering BIR homology search, PAR-TERRA regulation, chromatin composition affecting transcription regulation and HR factor accessibility, NuRD-ZNF827 recruitment counteracting shelterin instability, and differences in SMC5 function between ALT maintenance and early events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91, C111, C113-C115, C137 are explicitly speculative (marked as speculation in evidence_type) and represent hypotheses rather than demonstrated findings. While these are reasonable interpretations of the data, they lack direct experimental support and should be tested in future work. They are appropriately presented as speculation in the discussion.",
+    "result_type": "MINOR"
+  }
+]

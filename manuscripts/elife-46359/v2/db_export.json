@@ -1,0 +1,1697 @@
+{
+  "submission": {
+    "id": "1c78051a-bd7f-4590-9de6-fcae0c89d969",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:46:58.172016Z",
+    "updated_at": "2025-12-02T10:46:58.172016Z"
+  },
+  "content": [
+    {
+      "id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "submission_id": "1c78051a-bd7f-4590-9de6-fcae0c89d969",
+      "content_type": "manuscript",
+      "content_text": "# Voluntary and involuntary contributions to perceptually guided saccadic choices resolved with millisecond precision\n\n## Authors\n\n- Emilio Salinas<sup>1</sup> ([ORCID: 0000-0001-7411-5693](https://orcid.org/0000-0001-7411-5693)) \u2020\n- Benjamin R Steinberg<sup>1</sup>\n- Lauren A Sussman<sup>1</sup>\n- Sophia M Fry<sup>1</sup>\n- Christopher K Hauser<sup>1</sup>\n- Denise D Anderson<sup>1</sup>\n- Terrence R Stanford<sup>1</sup>\n\n### Affiliations\n\n1. Department of Neurobiology and Anatomy Wake Forest School of Medicine Winston-Salem United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the antisaccade task, which is considered a sensitive assay of cognitive function, a salient visual cue appears and the participant must look away from it. This requires sensory, motor-planning, and cognitive neural mechanisms, but what are their unique contributions to performance, and when exactly are they engaged? Here, by manipulating task urgency, we generate a psychophysical curve that tracks the evolution of the saccadic choice process with millisecond precision, and resolve the distinct contributions of reflexive (exogenous) and voluntary (endogenous) perceptual mechanisms to antisaccade performance over time. Both progress extremely rapidly, the former driving the eyes toward the cue early on (\u223c100 ms after cue onset) and the latter directing them away from the cue \u223c40 ms later. The behavioral and modeling results provide a detailed, dynamical characterization of attentional and oculomotor capture that is not only qualitatively consistent across participants, but also indicative of their individual perceptual capacities.\n\n## Introduction\n\nNeuroscience aims to explain macroscopic behavior based on the microscopic operation of distinct neural circuits, and this requires carefully designed tasks that expose the relationship between the two. In the case of the antisaccade task (Coe and Munoz, 2017; Munoz and Everling, 2004), in which participants are instructed to withhold responding to a visual cue in favor of programming a saccade to a diametrically opposed location, performance relies heavily on frontal cortical mechanisms associated with cognitive control (Guitton et al., 1985; Everling and Fischer, 1998; Munoz and Everling, 2004; Condy et al., 2007; Luna et al., 2008; Hakvoort Schwerdtfeger et al., 2012), and the paradigm is considered to be a sensitive assay of impulsivity and executive function in general. Indeed, the mean reaction time (RT) and overall error rate in the antisaccade task are frequently used as biomarkers for cognitive development (Klein and Foerster, 2001; Luna et al., 2008; Coe and Munoz, 2017) and, in clinical settings, for mental dysfunction (Everling and Fischer, 1998; Munoz et al., 2003; Hutton and Ettinger, 2006; Antoniades et al., 2015; Wiecki et al., 2016).\n\nThe antisaccade task pits against each other two fundamental processes, one involuntary and the other voluntary. On one hand, the sudden appearance of a salient visual stimulus automatically attracts spatial attention (Theeuwes, 1991; Theeuwes et al., 1998; Ruz and Lupi\u00e1\u00f1ez, 2002; Busse et al., 2008; Theeuwes, 2010; Carrasco, 2011; Aagten-Murphy and Bays, 2017) to produce either a covert shift (\u2018attentional capture\u2019) or an overt saccade (\u2018oculomotor capture\u2019). In either case, the effect is described as bottom-up or exogenous, and is thought to be fast and transient. On the other hand, programming a saccade away from a cue is a top-down or endogenous process that likely summons several mechanisms, such as working memory (Roberts et al., 1994; Lavie and De Fockert, 2005) and endogenous attention (Godijn and Theeuwes, 2002; Theeuwes, 2010; Carrasco, 2011), which are thought to be slower and to require a sustained cognitive effort. Thus, the rationale for the task is sound \u2014 the timing and intensity of the conflict between bottom-up and top-down mechanisms should correlate with behavior, and with the dynamics of the underlying attentional and oculomotor neural circuits.\n\nThere is a problem, however: such conflict must unfold very quickly. First, exogenous attention is thought to be mediated by visually-driven responses in oculomotor areas such as the frontal eye field (FEF) and superior colliculus (SC), which have latencies of at least 50 ms (Gottlieb and Goldberg, 1999; Bisley et al., 2004; Thompson et al., 2005; Ipata et al., 2006; Joiner et al., 2017; White et al., 2017; Chen et al., 2018). And second, spatial attention can be endogenously shifted roughly 150 ms after a relevant cue is provided (Kim and Cave, 1999; Ogawa and Komatsu, 2004; Busse et al., 2008; Theeuwes, 2010; Markowitz et al., 2011). This suggests that the competition between exogenous and endogenous responses evolves in less than 100 ms. The usual behavioral metrics of mean RT and overall accuracy are thus unlikely to yield a clean characterization of this competition, because they can be traded against each other and reflect the end results of numerous operations (perceptual, motor, cognitive) that contribute to a much longer choice process (indeed, below we show that such metrics are severely confounded). How can this problem be overcome?\n\nThe solution is to make the task urgent. The compelled antisaccade task requires subjects, humans in this case, to begin programming a saccade before knowing the direction of the correct response, and to use later arriving information about cue location to appropriately modify the ongoing motor plans. Urgency allows us to generate a special psychometric function, the \u2018tachometric curve,\u2019 which tracks success rate as a function of the perceptually relevant time interval, the raw processing time (rPT, measured between cue presentation and saccade onset). We find that, for the compelled antisaccade task, the tachometric curve takes on a unique shape: within a narrow rPT range, the curve yields a pronounced dip to below-chance performance in which the exogenous capture by the cue is so strong that the success rate approaches 0%; thereafter, however, endogenous control takes over, and the fraction of correct saccades to the \u2018anti\u2019 location increases rapidly. The experimental data were comprehensively replicated by a neurophysiologically\u00a0based model of the saccadic choice process, with the combined results providing a remarkably detailed account of how reflexive and voluntary mechanisms compete over time to determine task performance.\n\n## Results\n\n### Urgent antisaccade behavior is characterized by strong but temporally constrained oculomotor capture\n\nAkin to an athlete anticipating the trajectory of a ball that must be caught or struck, the participant in the compelled antisaccade task must begin programming a movement in advance of the relevant sensory information, and must quickly interpret the later arriving visual cue to modify the developing motor plan(s) on the fly. In the sequence of task events (Figure 1a), the key step is the early offset of the fixation spot, which means \u2018respond now!\u2019 This go signal is given first, before the cue, which is revealed after an unpredictable gap period. The cue appears randomly to the left or right of fixation, and the participant is instructed to make an eye movement away from it, to the diametrically opposite location \u2014 but for this response to be correct, the saccade must be initiated within 450 ms of the go signal. Thus, due to urgency, that\u00a0is, time pressure, the participant must begin planning (and may even execute) a motor response before knowing what the correct choice is. This design, in which motor and perceptual processes are meant to run concurrently, stands in contrast to the easy, non-urgent version of the task (Figure 1b), in which delivery of the cue before the go signal allows more time for the perceptual process to be completed before saccade onset.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig1-v2.jpg)\n\n**Figure 1.:** (a) The compelled antisaccade task. After a fixation period (150, 250, or 350 ms), the central fixation point disappears (Go), instructing the participant to make an eye movement to the left or to the right (\u00b110\u00b0) within 450 ms. The cue is revealed (Cue) after a time gap that varies unpredictably across trials (Gap, 0\u2013350 ms). The correct response is an eye movement (Saccade, white arrow) away from the cue, to the diametrically opposite, or anti, location. (b) The delayed antisaccade task. In this case, the cue is shown before the go signal, during fixation. The interval between cue onset and fixation offset varies across trials (Delay, 100 or 200 ms). In all trials, the reaction time (RT) is measured between the onset of the go signal and the onset of the saccade, whereas the raw processing time (rPT) is measured between cue onset and saccade onset.\n\nAs in other perceptually\u00a0based urgent tasks (Becker and J\u00fcrgens, 1979; Stanford et al., 2010; Salinas and Stanford, 2013; Scerra et al., 2019), the cue viewing time or rPT (computed as RT $-$ gap, or RT +\u00a0delay; Figure 1) is the crucial variable here, because it specifies how much time is available for detecting and analyzing the cue in each trial. With little or no time to see the cue, the success rate cannot rise above chance, but as the viewing time increases, performance is expected to improve. Using multiple gap values (0\u2013350 ms) ensures full coverage of the relevant rPT range. When the probability of making a correct choice is plotted as a function of rPT \u2014 a behavioral metric that we refer to as the tachometric curve \u2014 the result is a millisecond-by-millisecond readout of the evolving perceptual decision (Becker and J\u00fcrgens, 1979; Stanford et al., 2010; Shankar et al., 2011; Salinas and Stanford, 2013; Seideman et al., 2018).\n\nFor the compelled antisaccade task, the tachometric curve exhibits a unique, non-monotonic shape that reflects the interaction between early involuntary and later voluntary processes (Figure 2). For rPTs shorter than 90 ms, participants perform at chance, as expected. Shortly thereafter, the initial influence of the cue manifests as a pronounced drop in performance, as participants erroneously direct a large proportion of their saccades toward the cue. This dip, which we refer to as the \u2018vortex,\u2019 is short-lived (visible for rPTs of 100\u2013140 ms approximately; Figure 2, gray shades), but it is so abrupt and occurs so reliably over a consistent range of rPTs, that it reaches nearly 0% correct even in the data pooled from all six participants (Figure 2, main panel). In trials in which the rPT falls inside this narrow interval, it is almost impossible to avoid looking at the cue.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig2-v2.jpg)\n\n**Figure 2.:** Each panel shows a tachometric curve, that\u00a0is, a plot of the probability of making a correct response as a function of rPT, or cue-viewing time. Colored points are experimental results in overlapping time bins (bin width =\u00a015 ms); light shades indicate \u00b1 1 SE from binomial statistics; black lines are continuous, analytical functions fitted to the data. The vortex is the part of the curve for which saccades are highly likely to be captured and performance drops below chance. It is demarcated by gray shades for individual participants (small panels, P1 \u2013 P6) and for the aggregate data set (large panel, All participants). Results are from trials (between 1366 and 1534 per participant) in which the high-luminance cue (icon) was shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** All data are pooled across participants and sorted by luminance level, high (bright green), medium (grayish green), and low (dark green). Results are shown separately for easy trials (left side), in which the delay between cue and go onset was 100 or 200 ms, and zero-gap trials (right side), in which cue and go onset were simultaneous. (a) Mean fraction correct in easy trials (\u00b1 1 SE, from binomial proportion). (b) Mean RT in easy trials (\u00b1 1 SE across trials). (c) Tachometric curves from easy trials. (d) Processing time distributions in easy trials. Both correct and incorrect responses are included. (e\u2013h) As in (a\u2013d) except for zero-gap trials. In easy trials, essentially all rPTs correspond to asymptotic performance. In zero-gap trials, the late rise in the tachometric curve becomes partially observable, but the majority of rPTs still correspond to asymptotic performance.\n\nAs rPT increases beyond 140 ms, the success rate rises and gradually approaches an asymptote, as participants direct a progressively larger proportion of their saccades to the correct, anti\u00a0location. This rise in performance is remarkable in that it is extremely fast: for the pooled data (Figure 2, main panel) the tachometric curve goes from 0.25 to 0.75 in 18 ms, and from 0.10 to 0.90 in only 37 ms. For some of the participants, the process is faster (Figure 2, P1, P2, P4). The asymptotic fraction of correct responses is close to 1 (the lowest across participants was 0.978), which indicates that the participants understood the instructions and could perform the task almost perfectly \u2014 given enough time. Consistent with this, in easy, non-urgent antisaccade trials (Figure 1b) the fraction correct was also close to 1 (median = 0.992). However, because the processing times it generates are so long, the easy version of the task only provides a glimpse of the capture phenomenon, if anything (Figure 2\u2014figure supplement 1).\n\n### Antisaccade performance varies with cue luminance\n\nThe characteristic shape of the tachometric curve likely results from the interplay between a reflexive and a voluntary mechanism, both of which depend on the cue. If the vortex indeed reflects the strength of low-level sensory representations that are driven by the cue\u2019s salience, then, consistent with previous demonstrations of attentional/oculomotor capture (Theeuwes, 1991; Theeuwes, 1992; Theeuwes, 1994), it should become weaker when the salience of the cue is reduced. To investigate this, our participants performed the compelled antisaccade task with cues of three luminance levels, high (data shown in Figure 2), medium, and low (Materials\u00a0and\u00a0methods). The three cues were the same for all participants and were randomly interleaved during the experiment. Because the faintest cue was chosen to be slightly above the detection threshold, we expected it to yield a much shallower vortex.\n\nThe expectation for the later rise in the tachometric curve was less clear. If the rise is a direct reflexion of the cognitive process that remaps the spatial location of the cue and programs an antisaccade, then its steepness must depend, at least in part, on the speed and the variability of this process. So, if weaker sensory signals are generally processed more slowly or with higher variance, then the tachometric curve should rise more gradually as luminance decreases.\n\nThe experimental results showed that both the timing and depth of the vortex depend strongly on cue luminance. For the data pooled from all participants (Figure 3a), as luminance decreases from high (bright green points) to low (dark green points), the vortex shifts to the right by about 50 ms (the minimum point shifts from rPT $=$ 111 \u00b1\u00a01.3 ms [SE from bootstrap] to rPT $=$ 162 \u00b1\u00a06.0 ms), suggesting that the time needed to detect the cue increases accordingly. The vortex also becomes much less deep (the minimum fraction correct goes from 0.03 \u00b1\u00a00.006 to 0.32 \u00b1 0.026). These findings are consistent with the expected weakening of (involuntary) attentional capture.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig3-v2.jpg)\n\n**Figure 3.:** (a) Tachometric curves for trials in which the cue had high, medium, and low luminance (indicated by bright, grayish, and dark green points, respectively). Results are for the pooled data from all participants. The vortex shifts to the right and becomes less deep as luminance decreases. (b) Tachometric curves from three individual participants at each cue luminance level, high, medium and low, as indicated by the icons. Gray shades demarcate the vortex of each curve. In each panel, colored points are experimental results and black lines are continuous fits to the data.\n\nWe also found that, as luminance decreases, the rise of the tachometric curve becomes significantly less steep (p\u00a0< 0.0001 for all differences in maximum slope between luminance conditions, from bootstrap; see Figure 4\u2014figure supplement 1), consistent with the notion that the voluntary remapping of the cue location proceeds more slowly or less reliably as the cue becomes more dim. Thus, in addition to strongly determining the initial, bottom-up response to the cue, luminance probably also impacts the top-down process at work in the task.\n\nQualitatively similar dependencies on cue luminance were observed in each participant\u2019s data set (Figure 3b), but reliable differences across individuals became evident when the effects were evaluated quantitatively. For any given tachometric curve, quantification was achieved by fitting the empirical data (Figure 3, colored data points) with a continuous analytical function (Figure 3, black traces; Equation 2) and measuring several features from the fitted curve (Materials\u00a0and\u00a0methods). We present results for three such features that were particularly reliable given the size of our samples (for additional features, see Figure 4\u2014figure supplement 1). The first one is the average value of the tachometric curve for rPTs between 0 and 250 ms, which we refer to as the mean perceptual accuracy (Figure 4a). The second feature is the rPT at which the tachometric curve reaches its minimum, which we designate as the vortex time (Figure 4b). And the third feature is the rPT at which the rising part of the tachometric curve is halfway between its minimum and maximum values, which we call the endogenous response centerpoint, or just the centerpoint of the curve, for brevity (Figures 2 and 3b, right border of gray shades; Figure 4c). These quantities are partially related; the centerpoint, which measures how soon the participant can escape the vortex, is independent of the vortex time (partial Spearman correlation $\u03c1$\u00a0=\u00a00.34, p\u00a0=\u00a00.2; Materials\u00a0and\u00a0methods), but is strongly anti-correlated with perceptual accuracy ($\u03c1$\u00a0=\u00a0\u22120.85, p\u00a0=\u00a010-5). Notably, the separation between the \u2018best\u2019 and the \u2018worst\u2019 participant within a given luminance condition is statistically large, particularly for the mean perceptual accuracy and the centerpoint of the curve (Figure 4a,c; note little overlap between 95% confidence intervals for bars of same color). The observed effects of cue luminance are highly consistent across participants (Figure 3b), but the quantitative details reveal idiosyncratic variations that distinguish one individual from another (Figure 4a,c; see below). This is significant because cognitive tasks generally produce robust differences either between experimental conditions/treatments or between individuals, but not both (Borsboom et al., 2009; Hedge et al., 2018).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig4-v2.jpg)\n\n**Figure 4.:** Each panel shows one particular quantity derived from the fitted tachometric curves, with results sorted by participant (x axes) and luminance level, high (bright green), medium (grayish green), and low (dark green). Error\u00a0bars indicate 95% confidence intervals obtained by bootstrapping. (a) Mean perceptual accuracy, calculated as the average value of the fitted tachometric curve for rPTs between 0 and 250 ms. (b) Vortex time, calculated as the rPT at which the minimum of the fitted tachometric curve is found. (c) Endogenous response centerpoint, equal to the rPT at which the rise of the fitted tachometric curve is halfway between its minimum and maximum values.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Each panel shows one particular feature derived from the fitted tachometric curves, with results sorted by participant (x axes) and luminance level, high (bright green), medium (grayish green), and low (dark green). Error\u00a0bars indicate 95% confidence intervals obtained by bootstrapping. Same format as in Figure 4. (a) Maximum slope attained during the rising phase of the tachometric curve. (b) Vortex depth, equal to the minimum fraction correct. Note that, for participants 1, 4, and 6, the depth is zero for the high-luminance cue. (c) Left edge of the vortex, equal to the rPT at which the dip of the tachometric curve is halfway between chance (0.5) and its minimum value. Although these metrics are somewhat noisier than those shown in Figure 4, the effects of luminance are again highly consistent across participants, albeit with significant quantitative differences.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Results were obtained with the exact same analyses as those in Figure 4 (Materials\u00a0and\u00a0methods), except that they were based on simulated trials. The model data were generated using the best-fitting model parameters for each individual participant. Same format as in Figure 4.\n\n### Individual differences in perceptual and overall performance\n\nAntisaccade performance is often quantified using the mean accuracy. This assumes that the overall success rate in the task directly reflects the degree to which voluntary control can override the involuntary urge to look at a salient stimulus. But is this assumption correct? Answering this critical question is generally difficult because doing so requires access to an independent assessment of perceptual performance \u2014 but that is precisely what the tachometric curve affords. To investigate the relationship between traditional antisaccade performance measures and perceptual capacity, we examined their natural variations accross individual participants.\n\nFirst, we computed the correlation between two variables (Materials\u00a0and\u00a0methods), the average perceptual accuracy (mean value of the tachometric curve), and the average observed accuracy (mean fraction of correct choices). We found that, even though both quantites tend to increase with higher luminance, suggesting a positive correlation, they are, in fact, uncorrelated (Figure 5a). The rank of a given participant based on one measure is not predictive of his or her rank based on the other.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig5-v2.jpg)\n\n**Figure 5.:** In each panel, the data from each participant (joined by lines) are shown for trials of high, medium, and low luminance cues (bright, grayish, and dark green points, respectively). Crosses indicate the typical (median) uncertainty (2 SEs) associated with the measurement in each direction. Partial Spearman correlations between values on the x and y axes are indicated, along with significance (Materials\u00a0and\u00a0methods). The partial correlation eliminates the association due exclusively to luminance. (a) Mean observed accuracy versus mean perceptual accuracy. (b) Mean observed accuracy versus mean RT. Average RT data include both correct and incorrect trials. (c) Mean perceptual accuracy versus mean RT.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Same format as in Figure 5, except that the endogenous response centerpoint is plotted instead of the mean perceptual accuracy. (a) Mean observed accuracy as a function of the centerpoint. (b) Mean observed accuracy as a function of mean RT. (c) Centerpoint as a function of mean RT. The centerpoint relates to the mean observed accuracy and the mean RT (this figure) in nearly identical ways as the mean perceptual accuracy (Figure 5), if one takes into account that a lower centerpoint corresponds to better perceptual performance.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** All results are based on data aggregated across participants. Each panel compares results in fast (F) versus slow (S) blocks of trials, which were sorted as follows. First, the 30 blocks of trials performed by each participant were ranked, post hoc, according to mean RT. Then the 10 blocks at the top and the 10 at the bottom were designated as the fast and slow blocks, respectively. Finally, the fast and slow blocks were separately pooled across participants to yield two corresponding groups of trials. (a) Mean RT (\u00b1 1 SE) in compelled antisaccade trials. Bar colors, bright, grayish, and dark green, correspond to cue luminance, high, medium, and low, respectively. (b) Mean observed accuracy, equal to the measured fraction of correct responses (\u00b1 1 SE from binomial proportion), in compelled antisaccade trials. Note that, for a given luminance, the observed accuracy was higher in the slow than in the fast blocks. (c) Mean perceptual accuracy, equal to the mean value of the fitted tachometric curve over the 0\u2013250 ms rPT range (\u00b1 1 SE from bootstrap). Note that perceptual accuracy was slightly lower in the slow than in the fast blocks. (d) Tachometric curves for fast (cyan dots) and slow blocks (gray dots). Each panel shows data for a specific cue luminance level, as indicated by the icons. Vertical lines mark the centerpoints of the fitted curves. In the high- and low-luminance cases, the blue curve is slightly shifted to the left relative to the gray (asterisks indicate p\u00a0<\u00a00.0005 for the difference in centerpoints, from bootstrap). This implies slightly better perceptual performance in the fast than in the slow blocks.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Results were obtained in the exact same way as those in Figure 5, except that they were based on simulated trials. The model data were generated using the best-fitting model parameters for each individual participant. Same format as in Figure 5.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** In each panel, the data from each participant (joined by lines) are shown for trials of high, medium, and low luminance cues (bright, grayish, and dark green points, respectively). Parameter values are as listed in Supplementary file 1. Partial Spearman correlations between values on the x and y axes are indicated, along with significance (Materials\u00a0and\u00a0methods). The partial correlation eliminates the association due to luminance. (a) Mean perceptual accuracy as a function of the mean afferent delay of the cue (parameter $\\mu_{CUE}^{aff}$, or mean cue latency). There seems to be a strong, negative association, but it is all due to mutual dependencies on luminance; within each luminance level, cue latency does not predict perceptual accuracy. This is an example of Simpson\u2019s paradox, a statistical effect whereby a trend between two variables disappears or reverses when the data are conditioned on a third variable. (b) Mean perceptual accuracy as a function of the exogenous acceleration (parameter $a_{EX}$). (c) Mean perceptual accuracy as a function of the endogenous acceleration (parameter $a_{END}$). (d) Correlation between endogenous and exogenous acceleration. The negative relationship indicates that participants whose attention is captured strongly by the cue also tend to endogenously shift their visuospatial attention more slowly. Other model parameters showed weaker relationships to perceptual accuracy.\n\nThis may seem surprising. Logic dictates that better perception should translate into better performance \u2014 but critically, this is contingent on everything else being equal. The paradox arises because the mean RT also varies across participants, and the two accuracy measures relate to it in opposite ways. The average observed accuracy demonstrates a strong speed-accuracy tradeoff, that\u00a0is, slower participants are correct more often (Figure 5b). In contrast, the mean perceptual accuracy demonstrates a weaker opposite trend, that\u00a0is, those participants that exhibit high perceptual ability also tend to respond more quickly (Figure 5c). The results are nearly identical when perceptual performance is quantified with the endogenous response centerpoint (Figure 5\u2014figure supplement 1).\n\nThis stark divergence did not arise because our urgent task produced more or different errors, but rather because, unlike the mean accuracy, the tachometric curve is a true metric of perceptual processing. This curve is highly sensitive to the properties of the visual stimuli that must be judged (such as luminance, in this case), and at the same time, when such properties are fixed, it is largely impervious to manipulations that substantially alter the RT (Stanford et al., 2010; Shankar et al., 2011; Salinas et al., 2014; Scerra et al., 2019; for evidence that is specific to the compelled antisaccade task, see Figure 5\u2014figure supplement 2). In contrast, the mean observed accuracy depends not only on the shape of the tachometric curve, but also on two factors, unrelated to perception, that determine which parts of the curve are sampled during an experiment, the gap values used and the subject\u2019s urgency. For instance, when only a zero gap is used, most rPTs are beyond the vortex range (Figure 2\u2014figure supplement 1g,h), where differences between participants reflect mainly their asymptotic performance levels, that\u00a0is, their lapse rates. But even when a wide range of gaps is used (as in Figure 5), participants that tend to respond quickly (short RTs) will generally produce short rPTs and sample more densely the left side of their curves, whereas participants that tend to respond slowly (long RTs) will generally produce long rPTs and sample more densely the right side of their curves. This is the source of the speed-accuracy tradeoff found here (Figure 5b). As a result, the mean accuracy provides scarcely any information about the ability of an individual to prevent a captured saccade relative to that of others.\n\n### A comprehensive account of antisaccade behavior based on motor competition\n\nWe developed a physiologically feasible model (Materials\u00a0and\u00a0methods) to explore two mechanistic hypotheses about the neural origin of the vortex. This model is a variant of one that replicates both behavioral performance and choice-related neuronal activity (in the FEF) in an urgent, two-alternative, color discrimination task (Stanford et al., 2010; Shankar et al., 2011; Costello et al., 2013; Seideman et al., 2018). As in that case, the current model considers two variables, $r_{L}$ and $r_{R}$, that represent oculomotor responses favoring saccades toward left and right locations (Figure 6, black and red traces). These motor plans compete with each other such that the first one to reach a fixed threshold level (Figure 6, dashed lines) determines the choice: a left saccade if $r_{L}$ reaches threshold first, or a right saccade if $r_{R}$ reaches threshold first. In each trial, after the go signal, $r_{L}$ and $r_{R}$ start increasing with randomly\u00a0drawn build-up rates. The build-up process is likely to end in a random choice (i.e. a guess; Figure 6c) when one of the initial rates is high and/or the gap is long, but otherwise, time permitting, the cue signal modifies the ongoing motor plans (Figure 6a,b). Specifically, once the target has been identified, the plan toward it (correct) is accelerated and the other one, toward the opposite, incorrect location, is decelerated (Figure 6a, note acceleration of black trace and deceleration of red trace after shaded interval). This corresponds to the cue content, interpreted according to task rules, informing the correct choice.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig6-v2.jpg)\n\n**Figure 6.:** Traces show motor plans $r_{L}$ toward the left (red) and $r_{R}$ toward the right (black) as functions of time. Because in these examples the cue is assumed to be on the left, these variables also correspond to motor plans toward the cue (red) and the anti location (black), respectively. After the exogenous response interval (ERI, pink shade), the former (incorrect) plan decelerates and the latter (correct) plan accelerates. A saccade is triggered a short efferent delay after activity reaches threshold (dashed lines). (a) A correct, long-rPT trial; that\u00a0is, an informed choice (RT =\u00a0369 ms, rPT =\u00a0219 ms). (b) An incorrect trial with rPT within the vortex; that\u00a0is, a captured saccade (RT =\u00a0283 ms, rPT =\u00a0133 ms). (c) A correct, short-rPT trial; that\u00a0is, a correct guess (RT =\u00a0206 ms, rPT =\u00a056 ms). In all examples, the gap is 150 ms. The influence of the cue depends on its timing relative to the ongoing motor activity.\n\nTo adapt this \u2018accelerated race-to-threshold\u2019 model to the compelled antisaccade task, we introduced one crucial, task-specific assumption: that the competition is biased in favor of the cue location during a period of time that we refer to as the exogenous response interval, or ERI (Figure 6, pink shades). During the ERI, the cue has already been detected by the circuit but not yet interpreted as \u2018opposite to the target\u2019 (so it cannot yet drive the endogenous acceleration and deceleration described above). We consider two possible mechanisms by which, during the ERI, the detection of the cue may lead to exogenous attentional/oculomotor capture: (1) it could halt or suppress the ongoing plan toward the anti\u00a0location (Figure 6a,b, black traces during pink interval) or (2) it could transiently accelerate the ongoing plan toward the cue location (Figure 6a,b, red traces during pink interval). These alternatives are not mutually exclusive. The former is consistent with evidence that salient, abrupt-onset stimuli reflexively interrupt ongoing saccade plans (Dorris et al., 2007; Bompas and Sumner, 2011; Hafed and Ignashchenkova, 2013; Buonocore et al., 2017; Salinas and Stanford, 2018), whereas the latter is consistent with the short-latency, stimulus-driven activation of visually responsive neurons in oculomotor areas (Gottlieb and Goldberg, 1999; Bisley et al., 2004; Thompson et al., 2005; Ipata et al., 2006; Marino et al., 2015; Joiner et al., 2017; White et al., 2017; Chen et al., 2018).\n\nWe found that, to reproduce the psychophysical data accurately, both mechanisms were necessary. To see why, first note that the tachometric curve, which refers to the proportion of correct choices in each rPT bin, can be expressed as a ratio,\n\n$$\nC\u2062(rPT)=\\frac{f_{C}\u2062(rPT)}{f_{C}\u2062(rPT)+f_{I}\u2062(rPT)}\n$$\n\nwhere $f_{C}\u2062(rPT)$ and $f_{I}\u2062(rPT)$ describe the frequencies of correct and incorrect choices at each rPT, that\u00a0is, they are the rPT distributions for correct and incorrect trials (normalized by the same factor; Materials\u00a0and\u00a0methods). Each of these distributions demonstrates a distinct feature: $f_{C}$ has a dip (green shades in Figure 7, third row), whereas $f_{I}$ has a peak (red shades in Figure 7, bottom row). Both features contribute to the vortex, as dictated by the above expression. The critical mechanistic observation is that acceleration of the motor plan toward the cue during the ERI accounts for the peak in $f_{I}$ (Figure 7a), whereas interruption of the competing motor plan away from the cue produces the dip in $f_{C}$ (Figure 7b). Thus, when the model was implemented with either one of the mechanisms alone, it failed to replicate the experimental feature associated with the other (Figure 7, bottom two rows, compare black traces in a vs. b). However, with the two mechanisms acting simultaneously, in coordination, the model reproduced the full data set in quantitative detail (Figures 7c and 8).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig7-v2.jpg)\n\n**Figure 7.:** Top row: representative single, long-rPT trials from the model. Second row: tachometric curves, simulated (black traces) and experimental (green dots). Third row: rPT distributions for correct trials ($f_{C}$), simulated (black traces) and experimental (green shades). Bottom row: rPT distributions for incorrect trials ($f_{I}$), simulated (black traces) and experimental (red shades). (a) Results from a restricted version of the model in which, during the ERI, the motor plan toward the cue accelerates but the plan toward the anti\u00a0location keeps advancing, unperturbed. (b) Results from another restricted version of the model in which, during the ERI, the motor plan toward the anti\u00a0location halts but that toward the cue keeps advancing, unperturbed. (c) Results from the full-blown model, in which, during the ERI, the cue plan accelerates and the anti\u00a0plan halts. For each model variant, results were obtained with the parameter values that minimized the error between the model and the pooled experimental data in the high luminance condition (Materials\u00a0and\u00a0methods).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig8-v2.jpg)\n\n**Figure 8.:** (a) Tachometric curves for high (left), medium (middle), and low (right) luminance cues. Continuous lines are model results. (b) Processing time distributions for correct (shades) and incorrect trials (red traces) at each luminance level. Overlaid traces (black and dark red) are corresponding model results. (c) RT distributions for correct (shades) and incorrect trials (red traces) at individual gap values (125 and 175 ms) for each luminance level. Overlaid traces (black and dark red) are model results. Dotted vertical lines mark the rPT at which the vortex reaches its minimum point (vortex time). All empirical data are pooled across participants.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (a) Mean fraction of correct choices as a function of gap. Circles are experimental results for high (bright green), medium (grayish green), and low luminance (dark green) conditions; continuous lines are model results. (b) Mean RT as a function of gap. Same conventions as above. All experimental points represent data pooled across participants.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (a) Mean fraction of correct choices (top) and mean RT (bottom) as functions of gap. Circles are experimental results for high (bright green), medium (grayish green), and low luminance (dark green) conditions. Continuous lines are model results. (b\u2013d), Tachometric curves for high (b), medium (c), and low luminance cues (d) are shown in the top panels. Corresponding rPT distributions for correct (shades) and incorrect trials (red traces) are shown in the bottom panels. Black and dark-red continuous lines are model results. For each luminance, the dotted vertical line marks the vortex time.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46359/elife-46359-fig8-figsupp3-v2.jpg)\n\n**Figure 8\u2014figure supplement 3.:** Same format as in Figure 8\u2014figure supplement 2.\n\nFirst, for the data pooled across participants, the model fitted the tachometric curve (Figure 8a) and the rPT distributions for correct and incorrect responses (Figure 8b). Second, for individual gap conditions, the model matched the variations in mean success rate and mean RT (Figure 8\u2014figure supplement 1), but more importantly, it reproduced the shapes of the RT distributions for correct and incorrect choices, which were typically bimodal (Figure 8c). Third, the model accurately captured all the dependencies on luminance (Figure 8, compare results across columns). Importantly, in doing so, the values of the parameters that correspond to pure motor performance (the distribution of initial build-up rates for $r_{L}$ and $r_{R}$, and the distribution of afferent delays associated with the go signal) were the same across luminance conditions (Table 1), in correspondence with the fact that all trials proceeded identically up to cue presentation, and that trials with different gap and cue luminance were interleaved during the experiment. And fourth, the model also fitted the (noisier) data from individual participants, even though they showed large, idiosyncratic variations in motor performance, as well as in the dips and peaks of their rPT distributions (Figure 8\u2014figure supplements 2 and 3). For all comparisons across participants, the empirical (Figures 4 and 5) and simulated results (Figure 4\u2014figure supplement 2; Figure 5\u2014figure supplement 3) were nearly indistinguishable.\n\n**Table 1.**\n Parameters of the race-to-threshold model for the pooled data.Build-up rates are in AU ms-1, times are in ms, and acceleration and deceleration are in AU ms-2.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Lum</th>\n      <th>\u03bcb\u03c3b\u03c1b\u03bcGOaff\u03c3GOaff\u03bcCUEaff\u03c3CUEaff\u03bcERI\u03c3ERIgERI\u0394ERIaEXdENDaEND\u03bb</th>\n      <th>\u03c3b</th>\n      <th>\u03c1b</th>\n      <th>\u03bcGOaff</th>\n      <th>\u03c3GOaff</th>\n      <th>\u03bcCUEaff</th>\n      <th>\u03c3CUEaff</th>\n      <th>\u03bcERI</th>\n      <th>\u03c3ERI</th>\n      <th>gERI</th>\n      <th>\u0394ERI</th>\n      <th>aEX</th>\n      <th>dEND</th>\n      <th>aEND</th>\n      <th>\u03bb</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>High</td>\n      <td>1.4</td>\n      <td>3.74</td>\n      <td>\u22120.95</td>\n      <td>51</td>\n      <td>36</td>\n      <td>76</td>\n      <td>5</td>\n      <td>24</td>\n      <td>4</td>\n      <td>0</td>\n      <td>10</td>\n      <td>0.96</td>\n      <td>\u22120.7</td>\n      <td>0.17</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>Medium</td>\n      <td>1.4</td>\n      <td>3.74</td>\n      <td>\u22120.95</td>\n      <td>51</td>\n      <td>36</td>\n      <td>104</td>\n      <td>13</td>\n      <td>24</td>\n      <td>3</td>\n      <td>0</td>\n      <td>14</td>\n      <td>1.15</td>\n      <td>\u22120.54</td>\n      <td>0.17</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>Low</td>\n      <td>1.4</td>\n      <td>3.74</td>\n      <td>\u22120.95</td>\n      <td>51</td>\n      <td>36</td>\n      <td>126</td>\n      <td>19</td>\n      <td>24</td>\n      <td>10</td>\n      <td>0</td>\n      <td>14</td>\n      <td>0.58</td>\n      <td>\u22120.29</td>\n      <td>0.14</td>\n      <td>0.1</td>\n    </tr>\n  </tbody>\n</table>\n\nMechanistically, the best-fitting parameter values of the model (Table 1) provide further insight about the crucial element that gives rise to the vortex \u2014 the exogenous bias during the ERI (Figure 6, pink shades). Consider the following values based on the pooled data. According to the model, the onset of the ERI, which corresponds to the time at which the cue is detected, is highly sensitive to luminance. For the high, medium, and low conditions, the oculomotor circuitry detects the cue 76 \u00b1\u00a05 ms (mean \u00b1 SD for simulated trials), 104\u00a0\u00b1\u00a013 ms, and 126 \u00b1\u00a019 ms after its presentation. This variation from high to low luminance (50 ms) corresponds closely with the rightward shift of the vortex observed experimentally (51 ms; Figure 3a) and is consistent with the ubiquitous dependence of visual response latency on luminance and contrast (Purushothaman et al., 1998; Bisley et al., 2004; van Rossum et al., 2008; White et al., 2008; Oram, 2010; Marino et al., 2015). Remarkably, the ERI lasts only 24 ms (on average) in all three conditions, and the exogenous acceleration of the plan toward the cue occurs only during the last 14 ms (high luminance), or only during the last 10 ms (medium and low luminance); before that, the plan toward the cue halts just like its counterpart toward the anti\u00a0location (Figure 6a,b, note that red trace is initially flat during shaded interval). The model suggests that the exogenous acceleration favoring the cue location is very brief but very powerful, which explains why the left edge of the vortex can be so steep.\n\nFinally, the parameter values (Supplementary file 1) also point to specific neural mechanisms that likely underlie the individual differences in perceptual capacity. In general, identifying those mechanisms is complicated because their variations across (random) participants and across (controllable) experimental conditions are not necessarily correlated (Borsboom et al., 2009; Hedge et al., 2018). The cue latency discussed above is a perfect example: it demonstrates (via parameter $\\mu_{CUE}^{aff}$) a strong, consistent dependence on luminance in each participant\u2019s data set, and yet, for a given luminance level, it is not predictive of individual perceptual accuracy (Figure 5\u2014figure supplement 4a). By contrast, we hypothesize that the magnitudes of the exogenous and endogenous acceleration (via parameters $a_{EX}$ and $a_{END}$) are major sources of individual variation, because although they have weaker dependencies on luminance, they are reliable predictors of perceptual accuracy (Figure 5\u2014figure supplement 4b\u2013d).\n\n## Discussion\n\nBy making the antisaccade task urgent, focusing on processing time (instead of RT), and developing a mechanistic model that is firmly grounded on the neurophysiology of saccadic choices, we were able to resolve the opposing influences of endogenous and exogenous mechanisms on the oculomotor response with unprecedented sharpness. Our findings suggest that, whether overt or covert, the capture of attention by a salient stimulus corresponds to specific changes in the firing of saccade-related neurons: activity that is spatially congruent with the stimulus is accelerated, whereas activity that is spatially incongruent is halted or suppressed. This fast, reflexive bias is the capture.\n\nThe results make four contributions. First, they identify concrete ways in which endogenous and exogenous mechanisms act on the oculomotor circuitry \u2014 namely, via acceleration, deceleration, and halting of rising firing rates \u2014 together with their unique behavioral signatures (dips and peaks in rPT and RT distributions). Second, they characterize the time scales of those mechanisms (a few tens of ms) as well as their dependencies on luminance. Third, they clearly parse the motor (RT) and perceptual (tachometric curve) contributions to antisaccade performance, thus removing the pervasive confounds caused by the speed-accuracy tradeoff. And fourth, they relate variations in motor, perceptual, and cognitive mechanisms to individual differences in performance. In particular, all participants exhibited a vortex, but different vortices resulted from different combinations of exogenous and endogenous mechanisms (compare rPT distributions for P1 vs. P4 in Figure 8\u2014figure supplements 2 and 3) \u2014 a degeneracy in neural function that is to be expected based on that found in more reduced circuits (Marder et al., 2015).\n\n### Antisaccade performance in relation to cognitive conflict\n\nBy design, the antisaccade task creates a conflict between exogenous and endogenous mechanisms, the former driven by the saliency of the cue and the latter by task instructions followed willfully. Other tasks (e.g. Kim and Cave, 1999), most notably the singleton-distracter task employed by Theeuwes and colleagues (Theeuwes, 1991; Theeuwes, 1992; Theeuwes, 1994; Theeuwes et al., 1998; Theeuwes et al., 1999; Nissens et al., 2017), have also revealed such conflict in the form of attentional or oculomotor capture, but its manifestation in those cases consists primarily of small variations (\u223c tens of ms) in RT around mean values that are much longer (>>\u00a0250 ms) than typical intersaccadic intervals, and the results can only provide a crude estimate of the underlying temporal dynamics (Mulckhuyse et al., 2008; see also Markowitz et al., 2011). Those tasks also require more complex visual displays with multiple items, and a secondary discrimination to serve as a probe of the effect. In principle, a minimalistic task typifying such an essential phenomenon would be extremely useful; it could serve to determine the neural correlates of volitional versus reflexive action, or pinpoint the consequences of disease on specific cognitive abilities, for example.\n\nNumerous studies based on the traditional antisaccade task have, in fact, reported large differences in overall performance between distinct populations of participants (Guitton et al., 1985; Klein and Foerster, 2001; Munoz et al., 2003; Condy et al., 2007; Hakvoort Schwerdtfeger et al., 2012; Antoniades et al., 2015) \u2014 but do those differences relate to the conflict at the heart of the task? This is unclear. While a distinction between fast and slow errors has been drawn based on theoretical considerations (Lo and Wang, 2016), the tachometric curve reveals three types of error: fast, incorrect guesses (rPT $\u2272$\u00a0100 ms), saccades captured by the cue (vortex), and lapses (rPT $\u2273$\u00a0200 ms), which probably depend on distinct cognitive processes or states that vary over long time scales (Harris and Thiele, 2011; Lo and Wang, 2016; Nir et al., 2017). When antisaccade performance is evaluated via the mean accuracy, the most common metric, the three error types are combined in proportions that are unpredictable, because they depend on each participant\u2019s urgency (how quickly they tend to respond; Figure 5b) and on the gap values used in the experiment. In particular, when the cue is presented before or simultaneously with the go signal, most rPTs are sampled in the asymptotic performance range, where most errors are lapses (Figure 2\u2014figure supplement 1). The captured saccades are the essential manifestation of the conflict, but they cannot be reliably quantified unless performance is tracked with high temporal resolution.\n\n### Oculomotor capture as a perceptuo-motor phenomenon\n\nInsight about the visuo-motor interactions that determine the shape of the tachometric curve can be gleaned by realizing that, for each trial, the rPT conveys information not only about how much time was available for perceptual deliberation, but also about the state of the motor build-up at the time when the cue was detected by the oculomotor circuitry. Consider what must happen for a saccade to be triggered at rPT =\u00a0111 ms, when the capture is nearly certain: at the moment that the cue is detected (left edge of pink interval in Figure 6b), the motor activity toward the cue location must be just below threshold, so that the exogenous drive can reliably propel it past threshold. This can happen in many ways, such as when the motor plans build-up slowly and the gap is long, or when the build-up is fast and the gap is short \u2014 but whatever the build-up history, an rPT of 111 ms corresponds to the requisite level of subthreshold activity. The same is true for other parts of the tachometric curve. Short rPTs (guesses) correspond to insufficient perceptual deliberation and to activity that exceeded threshold before the cue was detected (Figure 6c), whereas long rPTs (informed choices) correspond to successful deliberation guiding activity that was still far from threshold at the time of cue detection (Figure 6a). Captured saccades are reliably found within a narrow range of rPTs because their expression requires certain combinations of sensory (cue exposure) and motor (degree of build-up) conditions to be met.\n\nThis explanation simply recounts what the model does, so it is worth discussing how our model is different from previous ones, and why we think it is largely credible. Previous models of antisaccade performance (e.g. Wiecki and Frank, 2013; Lo and Wang, 2016; Aponte et al., 2017) applied to non-urgent conditions, so they provide limited insight about the shape of the tachometric curve. Furthermore, such models were concerned with the neural basis of inhibitory control more generally, so they involve, explicitly or implicitly, multiple brain areas; for example, one for producing motor responses and another for inhibiting the reflexive movement toward the cue. In contrast, our race-to-threshold model is agnostic as to where the relevant perceptual or control signals come from, or how they are computed; it simply deals with their dynamical impact (i.e. acceleration, deceleration, halting) on the developing motor activity that must ultimately communicate the urgent choice. As such, the fast variations of the model firing rates are meant to be directly comparable to those of saccade-related oculomotor neurons (in FEF, and perhaps SC).\n\nIndeed, previous single-neuron studies in monkeys support key elements of our modeling framework. First, the initial level of motor activity contributes as proposed: during urgent saccadic choices, the build-up of activity in FEF starts after the go signal, regardless of when the cue information arrives (Stanford et al., 2010; Costello et al., 2013), and during antisaccade performance, the ongoing activity in FEF and SC is higher before erroneous saccades toward the cue than before correct antisaccades (Everling et al., 1998; Everling and Munoz, 2000). Second, in an urgent color discrimination task, perceptual information does produce acceleration and deceleration of motor activity in an rPT-dependent way (Stanford et al., 2010; Costello et al., 2013). Third, the timing of the vortex and its dependence on luminance parallel those of visual bursts in the oculomotor system (Gottlieb and Goldberg, 1999; Bisley et al., 2004; Thompson et al., 2005; Ipata et al., 2006; Joiner et al., 2017; White et al., 2017; Chen et al., 2018). In particular, the captured saccades in our experiment resemble so-called \u2018express saccades\u2019 in many ways: both result in movements triggered after 100 ms or less of stimulus viewing time; both are more likely with higher luminance; and both are facilitated by the early removal of the fixation requirement, such that a visually\u00a0evoked response is superimposed on advancing motor activity (Par\u00e9 and Munoz, 1996; Dorris et al., 1997; Marino et al., 2015). And fourth, the sudden presentation of a salient distracter stimulus has a robust impact on a developing saccade plan, with the effect depending strongly on their spatial congruence: when the saccade target is diametrically opposite to the stimulus, there is ample evidence (reviewed by Salinas and Stanford, 2018) indicating that the developing plan is transiently halted or suppressed, whereas when the saccade target is near the abrupt-onset stimulus, the developing plan is boosted (Dorris et al., 2007; Edelman and Xu, 2009; White et al., 2013; Marino et al., 2015). These observations are consistent with the exogenous and endogenous mechanisms implemented by the model.\n\n### Coupling between spatial attention and saccade planning\n\nOur results are pertinent to a mechanistic question that is central to the \u2018premotor theory\u2019 of attention: to what degree is the neural substrate of the deployment of spatial attention the same as that of saccade planning? There is strong evidence that the rise in oculomotor activity associated with planning a saccade inevitably implies that attentional resources are at least partially allocated to the intended saccade endpoint (Kowler et al., 1995; Deubel and Schneider, 1996; Moore and Fallah, 2001; Godijn and Theeuwes, 2003; Moore and Armstrong, 2003; Cavanaugh and Wurtz, 2004; Steinmetz and Moore, 2014; Klapetek et al., 2016). The converse relationship \u2014 that\u00a0is, whether the covert deployment of spatial attention must be accompanied by saccade planning \u2014 has been more contentious (Juan et al., 2004; Thompson et al., 2005). It appears, however, that the hypothesized motor plan associated with attentional allocation is just very difficult to observe when fixation must be actively maintained (Belopolsky and Theeuwes, 2012). During fixation, such a plan may manifest only as a subtle increase in baseline activity, rather than via the more typical steady rise in firing rate (Hauser et al., 2018), but it can be uncovered through experimental manipulations (Theeuwes et al., 1998; Theeuwes et al., 1999; Katnani and Gandhi, 2013; Nissens et al., 2017), and is evident in microsaccades (Chen et al., 2015; Lowet et al., 2018).\n\nOur results are consistent with the idea that attentional and oculomotor capture are different behavioral manifestations of the same underlying neuronal dynamics (in, say, the FEF or SC). When a salient cue is detected, a bias favoring a motor plan toward its location is always generated (with the bias consisting of acceleration of the plan toward the cue and halting of any plans away from it). However, the impact of the exogenous biasing signal depends on the current state of the oculomotor circuitry. When the motor activity congruent with the cue location is far from threshold and is competing with other developing motor plans, the bias corresponds to the covert (and transient) deployment of attention to the cue. In contrast, when that activity has already developed to a substantial degree, the bias can quickly propel it past threshold. Then, the exogenous attraction of the cue becomes observable as an overt, captured saccade.\n\nThe detailed mechanistic framework presented here should provide ample opportunity to test these ideas in future experiments.\n\n## Materials and methods\n\n### Subjects and setup\n\nExperimental subjects were six healthy human volunteers, two male and four female, ages 21\u201330. They were recruited from the Wake Forest School of Medicine and Wake Forest University communities. All had normal or corrected-to-normal vision. All participants provided informed written consent before the experiment. All experimental procedures were conducted with the approval of the Institutional Review Board (IRB) of Wake Forest School of Medicine.\n\nThe experiments took place in a semi-dark room. The participants sat on an adjustable chair, with their chin and forehead supported, facing a VIEWPixx LED monitor (VPixx Technologies Inc, Saint Bruno, Quebec, Canada; 1920 \u00d7\u00a01200 screen resolution, 120 Hz refresh rate, 12 bit color) at a distance of 57 cm. Viewing was binocular. Eye position was recorded using an EyeLink 1000 infrared camera and tracking system (SR Research, Ottawa, Canada) with a sampling rate of 1000 Hz. Stimulus presentation and data collection were controlled using the system\u2019s integrated software package (Experiment Builder).\n\n### Behavioral tasks\n\nThe sequence of events in the antisaccade task is described in Figure 1. The inter-trial interval was 1 s. The gap values used were \u2212200, \u2212100, 0, 75, 100, 125, 150, 175, 200, 250, and 350 ms, where negative numbers correspond to delays in the easy antisaccade task (Figure 1b). Thus, compelled and easy, non-urgent trials were interleaved. In each trial, the gap value, cue location (\u221210\u00b0\u00a0or 10\u00b0), and luminance level (see below) were randomly sampled. Auditory feedback was provided at the end of each trial: a beep to indicate that the saccadic response was made within the allowed RT window (450 ms), or no sound if the limit was exceeded. This was independent of the choice. Feedback about the choice itself was unnecessary, as participants easily understood the rules of the task. The task was run in blocks of 150 trials. After 50\u2013150 trials of practice, each participant completed 30 blocks over six experimental sessions (days). Within each session, 2\u20133 min of rest were allowed between blocks.\n\nThe cue was a green circle (0.5\u00b0 diameter) appearing on a black background. Each participant performed the task with cues of three luminance levels, high (17.6 cd m-2), medium (0.35 cd m-2), and low (0.22 cd m-2). Luminance was measured with a spectrophotometer (i1 Pro 2 from X-Rite, Inc, Grand Rapids, MI). The cues were generated in Adobe Illustrator using the 8-bit RGB vectors [15 168 40], [3 28 7], and [1 12 3]. The lowest luminance was chosen to be close to the detection threshold based on detection curves generated previously for two participants.\n\n### Data analysis\n\nAll data analyses were carried out using customized scripts written in Matlab (The MathWorks, Natick, MA). Except where explicitly noted, results are based on the analysis of urgent trials (gap $\\geq$ 0) only; that\u00a0is, easy trials (delay trials with gap < 0) were excluded.\n\nIn each trial, the rPT was computed by subtracting the gap value from the RT value recorded in that trial. We refer to this processing time as \u2018raw\u2019 because it includes any afferent or efferent delays in the circuitry (Stanford et al., 2010). To compute the tachometric curve and rPT distributions, trials were grouped into rPT bins of 15 ms, with bins shifting every 1 ms. Normalized rPT distributions, $f_{C}\u2062(rPT)$ and $f_{I}\u2062(rPT)$, were obtained by counting the numbers of correct and incorrect trials, respectively, in each rPT bin, and dividing both functions by the same factor. The tachometric curve, which gives the proportion of correct trials in each bin, was then computed using Equation 1. For display purposes, the normalization factor used was the maximum value of $f_{C}$ or $f_{I}$, whichever was largest, but the factor has no effect on the tachometric curve.\n\nIn order to quantify perceptual performance, each tachometric curve was fitted with a continuous analytical function, $v\u2062(x)$, which was defined as\n\n$$\nv\u2062(x)=max\u2062(s_{L}\u2062(x),s_{R}\u2062(x),0)\n$$\n\nwhere the maximum function $max\u2062(a,b,c)$ returns $a$, $b$, or $c$, whichever is largest, and $s_{L}$ and $s_{R}$ are two sigmoidal curves. These are given by\n\n$$\ns_{L}(x)=B+\\frac{A_{L}\u2212B}{1+exp\u2061(\\frac{x\u2212C_{L}}{D_{L}})}\n$$\n\n\n\n$$\ns_{R}(x)=B+\\frac{A_{R}\u2212B}{1+exp\u2061(\u2212\\frac{x\u2212C_{R}}{D_{R}})}\n$$\n\nwhere $s_{L}$ tracks the left (decreasing) side of the tachometric curve and $s_{R}$ tracks the right (increasing) side. The asymptotic value on the left side was fixed at $A_{L}=$ 0.5, to enforce the constraint that, for very short processing times, performance must be at chance. For any given empirical tachometric curve, the six remaining parameters defining $v$, the coefficients $B$, $A_{R}$, $C_{L}$, $C_{R}$, $D_{L}$, and $D_{R}$, were adjusted to minimize the mean absolute error between the experimental and fitting functions. The minimization was done using the Matlab function fminsearch.\n\nOnce the best-fitting $v\u2062(rPT)$ function for a given tachometric curve was found, we numerically calculated eight quantities, or features, from it: the asymptotic value (equal to $A_{R}$), the minimum value (vortex depth), the rPT at which the minimum was found (vortex time), the most negative slope, the most positive slope, the rPT for which $v$ is exactly between 0.5 (chance) and the minimum (left edge of the curve), the rPT for which $v$ is exactly between the minimum and the asymptote (the curve\u2019s centerpoint), and the average of the curve for rPTs between 0 and 250 ms (mean perceptual accuracy). In Figures 2 and 3, the gray shades demarcating the vortex correspond to the interval between the left edge and the centerpoint of each tachometric curve. Confidence intervals for all of these quantities were obtained by bootstrapping (Davison and Hinkley, 2006; Hesterberg, 2014); that is, by resampling the data with replacement and recalculating all the quantities many times to generate distributions for them. This was done in five steps: (1) resample the original trials with replacement, keeping the original number of contributing trials, (2) recompute the empirical tachometric curve from the resampled trials, (3) fit the new tachometric curve with a continuous $v$ function, (4) recompute the eight characteristic features from the new $v$ function, and (5) repeat steps 1\u20134 10,000 times to generate distributions for all the features. Reported confidence intervals correspond to the 2.5 and 97.5 percentiles obtained from the bootstrapped distributions.\n\nTo quantify the association between average quantities computed for individual participants, such as the mean RT or mean observed accuracy (Figure 5), we considered three data points per participant, one for each luminance condition. The strength of association and its significance were calculated with three methods. First we computed the partial Pearson correlation coefficient, which is the standard linear correlation between two variables but controlling for the effect of a third one, luminance in this case. This was implemented via the Matlab function partialcorr. We also computed the partial Spearman correlation coefficient, which involves a similar calculation but based on the ranks of the data points. This was using partialcorr too. Finally, using the Matlab function fitlm, we fitted the data to a linear regression model that also included luminance as a variable. The three methods typically produced similar results. We report those obtained with the partial Spearman correlation, which is denoted as $\u03c1$, because they were generally the most conservative.\n\n### The accelerated race-to-threshold model\n\nThe model for the compelled antisaccade task is a straightforward extension of one developed previously for a two-alternative, urgent, color discrimination task (Stanford et al., 2010; Shankar et al., 2011; Costello et al., 2013; Seideman et al., 2018). In that earlier model, both motor plans halt briefly when the relevant cue is detected (i.e. during the ERI); the dynamics are otherwise identical. As explained in the main text, the idea is that two motor plans (in the FEF), represented by firing rate variables $r_{L}$ and $r_{R}$, compete with each other to trigger an eye movement with a saccade vector pointing either to the left or to the right. Because the acceleration, deceleration, and halting of these plans depends on the cue location, it is useful to relabel the two variables as $r_{C}$ and $r_{A}$, where the subscripts now refer to the cue and anti locations (keeping in mind that the $C$ and $A$ labels are randomly assigned to left and right directions in each trial). Note, however, that the following description applies identically if the $A$ and $C$ labels are replaced everywhere by $L$ and $R$, respectively, and we assume that the cue appears on the left side.\n\nOver time, the two motor plans advance toward a fixed threshold (equal to 1000 arbitrary units, or AU). If $r_{C}$ exceeds threshold first, the saccade is incorrect, toward the cue, whereas if $r_{A}$ exceeds threshold first, the saccade is correct, away from the cue. The saccade is considered to be triggered a short efferent delay (equal to 20 ms) after threshold crossing. The fixed threshold is a reasonable approximation of the triggering mechanism for saccades (Hauser et al., 2018).\n\nThe two rate variables evolve as follows\n\n$$\nr_{C}(t+\u0394t)=r_{C}(t)+b_{C}\u0394tr_{A}(t+\u0394t)=r_{A}(t)+b_{A}\u0394t\n$$\n\nwhere $b_{C}$ and $b_{A}$ are their respective build-up rates and the time step $\u0394\u2062t$ is equal to 1 ms. When the build-up rates are constant, the firing rates $r_{C}$ and $r_{A}$ increase linearly over time. Periods during which the activity accelerates or decelerates are those during which the build-up rates themselves change steadily, as described below. Any negative $r_{C}$ and $r_{A}$ values are reset to zero. Each simulated trial can be subdivided into three epochs with different model dynamics.\n\nEpoch 1: before the ERI. Each trial starts with the two activity variables, $r_{C}$ and $r_{A}$, equal to zero. The go signal occurs at $t=0$, but the two motor plans start building up later, after an afferent delay. This afferent delay is drawn from a Gaussian distribution with mean $\\mu_{GO}^{aff}$ and SD $\\sigma_{GO}^{aff}$, where values below 20 ms are excluded. The initial build-up rates, $b_{C}^{0}$ and $b_{A}^{0}$, are drawn from a two-dimensional Gaussian distribution with mean $\\mu_{b}$, SD $\\sigma_{b}$, and correlation coefficient $\u03c1_{b}$. During this epoch, after the initial afferent delay has elapsed, $r_{C}$ and $r_{A}$ evolve according to Equations 5, with $b_{C}=b_{C}^{0}$ and $b_{A}=b_{A}^{0}$. If during this period one of the motor plans exceeds the threshold, a saccade is produced and the trial ends. Otherwise, the trial continues.\n\nEpoch 2: during the ERI. The start of the ERI corresponds to the time point at which the cue is detected by the model circuit (we stress that this is a local event, and make no claims about the participant\u2019s perceptual experience). Cue detection occurs after an afferent delay relative to the time of cue presentation, which is at $t=$ gap. This delay is drawn from a Gaussian distribution with mean $\\mu_{CUE}^{aff}$ and SD $\\sigma_{CUE}^{aff}$, where values below 20 ms are excluded. The duration of the ERI also varies normally across trials. It is drawn from a Gaussian distribution with mean $\\mu_{ERI}$ and SD $\\sigma_{ERI}$, with negative values reset to zero. The two motor plans behave differently during the ERI. For the plan toward the anti location, $r_{A}$, the build-up rate is $b_{A}=g_{ERI}\u2062b_{A}^{0}$, where the constant gain factor $g_{ERI}$ is either zero (i.e. the plan halts) or negative (i.e. the plan is suppressed). This factor was set to zero for the pooled data, but negative values were allowed when fitting the data from individual participants. Whether zero or negative, the build-up rate of the anti plan is the same throughout the whole ERI. In contrast, for the motor plan toward the cue, $r_{C}$, the build-up rate is $b_{C}=g_{ERI}\u2062b_{C}^{0}$ but only during the first $\u0394_{ERI}$ ms of the ERI; thereafter this build-up rate instantly recovers its initial value (so $b_{C}=b_{C}^{0}$) and then increases steadily, such that\n\n$$\nb_{C}\u2062(t+\u0394\u2062t)=b_{C}\u2062(t)+a_{EX}\u2062\u0394\u2062t\n$$\n\nuntil the end of the ERI, where the term $a_{EX}$ is the exogenous acceleration of the cue plan. In this way, the plan toward the cue, $r_{C}$, first halts for $\u0394_{ERI}$ ms and then accelerates. If $r_{C}$ exceeds threshold during the ERI, a saccade toward the cue is triggered. Otherwise, the trial continues.\n\nEpoch 3: after the ERI. During this last period, the plan toward the anti location first recovers its initial value (instantly, so $b_{A}=b_{A}^{0}$) and then accelerates, whereas the plan toward the cue decelerates. That is,\n\n$$\nb_{C}(t+\u0394t)=b_{C}(t)+d_{END}\u0394tb_{A}(t+\u0394t)=b_{A}(t)+a_{END}\u0394t\n$$\n\nwhere the endogenous deceleration $d_{END}$ is negative and the endogenous acceleration $a_{END}$ is positive. The process continues until one of the plans reaches the threshold.\n\nFinally, the model also considers lapses, trials in which errors are made for reasons other than insufficient cue viewing time. Lapses occur with a probability $\\lambda$, and are implemented as trials in which the endogenous acceleration and deceleration are equal to zero. In other words, a lapse corresponds to a trial in which the information about the correct target never reaches the circuit. During lapses, after the ERI (epoch 3), the motor plan toward the anti location continues building up at its initial rate, $b_{A}^{0}$, whereas the plan toward the cue continues advancing at whatever build-up rate it achieved at the end of the ERI.\n\nIn all, the model has 15 parameters that were adjusted to fit the pooled data set or the data from individual participants. Best-fitting values are listed in Table 1 and Supplementary file 1. These were obtained by searching over a multidimensional parameter space, gradually reducing its volume, seeking to minimize the mean absolute error between the simulated and the experimental data. For each parameter vector tested, the error consisted of a sum of terms, each representing one target function to be fitted. These functions were the RT distributions for correct choices at individual gaps, the RT distributions for incorrect choices, also at individual gaps, and the tachometric curve. The search/minimization procedure was repeated multiple times with different initial conditions to ensure that solutions were found near the global optimum.\n",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "85d4ec98-91ef-43a7-8ddf-d3bf06d2be66",
+      "submission_id": "1c78051a-bd7f-4590-9de6-fcae0c89d969",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daeyeol Lee, Yale School of Medicine United States\n\nReviewers:\n- Daeyeol Lee, Yale School of Medicine United States\n\n## Review text\n\nDOI: [10.7554/eLife.46359.027](https://doi.org/10.7554/eLife.46359.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Timescales of exogenous and endogenous attention revealed during urgent antisaccade performance\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Daeyeol Lee as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Timothy Behrens as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors have developed an ingenious task that combined two well-studied previous paradigm, i.e., anti-saccade task and compelled saccade task. A tachometric curve shows that saccades generated prematurely tended to be directed incorrectly towards the cue, rapidly switching to the correct antisaccades. An interesting finding in this paper is that this switch occurs very rapidly, and the so-called attentional vortex lasts only about 40 ms. The authors have extended their previous race model, which accounts for the behavioral data very well, and also identify the individual variability lies mostly with how much the rate variables corresponding to the exogenous and endogenous plans accelerates immediately and some time after the cue onset, respectively.\n\nEssential revisions:\n\n1) The title implies that this is a study of attention and, indeed, the authors are using overt attention as their behavioral metric. However, some reviewers opined that the work primarily gives insight into possible underlying neural mechanisms driven by exogenous and endogenous processes. Whether these are synonymous with attention (whatever attention is) is debatable, as the section in the Discussion implies. Therefore it is suggested that the study should be framed in terms of processes and leave the word attention for tidbit in the Discussion.\n\nThe paper would be clearer (and more accurate) if the writing were more careful in its use of terminology, especially in the Results section. Although it is true that reaction time measurements have often been used as ways to measure \"attention\", this might not be appropriate anymore given the careful distinctions that have been drawn in the literature between effects on sensory processing versus motor preparation versus decision criteria, etc. These distinctions are especially relevant given the framing of this work, which builds on the idea that sensory processing and motor preparation proceed in parallel. To refer to effects on reaction time as due to aspects of \"attention\" or \"perception\" therefore seems inappropriate, since some of these effects might be attributable (and are, in fact, from the perspective taken in the authors' model) to motor preparation, saccade trigger thresholds, and possibly other non-sensory processes.\n\nThe phrase \"attention vortex\" is certainly memorable, but these effects may not all be due to changes in \"attention\" but also involve changes in saccade and fixation control. For example, it is relevant that the timing of the fixation offset is similar to the values that are also associated with the gap effect and express saccades \u2013 these are understood to be due to both the loss of visual drive for maintaining fixation as well as the addition of visual drive for the saccade. It seems likely that these types of motor preparatory factors are also involved here, and they deserve to be mentioned.\n\n2) In various places in the manuscript, the authors describe behavior as resulting from a strong involuntary capture (e.g. subsection \u201cAntisaccade performance varies with cue luminance\u201d, first paragraph) or rates of activity buildup (e.g. subsection \u201cAttentional capture as a perceptuo-motor phenomenon\u201d, first paragraph). This might be questioned. The likely reason for the behavior seen is due to the urgency in the task. It is likely that rPTs that are less than 90 ms or that are in the vortex occur primarily because the gap is really long, not because one or another rate was high in the pre-ERI period. It would be important for the authors to not overly interpret their results. As they know, when the task is not compelled, these results tend not to be seen.\n\n3) The modeling needs a stronger justification. The subdivision of time in the model into epochs with different properties seems ad hoc. The valuable thing about race models is that they provide an explanation for temporal aspects of behavior by defining the rates of hypothetical underlying processes. But this model includes explicit time-related variables (for example, defining the Exogenous Response Interval) to explain the temporal features of your data. It seems the interesting features of the data set are baked in. It's also disappointing that different sets of parameters are needed to explain the effects of the cue luminance manipulation.\n\nIs it possible to define one rate process that would generate pro-saccades (perhaps shorter latency and lower rate), and a second rate process (perhaps longer latency and higher rate) that would generate the anti-saccades, and then allow them to interact so as to explain performance over time? The ERI would then emerge as a byproduct of the difference in latencies and rates between the two processes. Moreover, the rates could be defined as a function of the cue luminance, so that the scaling of the curves across cue luminance conditions might also emerge with one set of parameters. A model with this structure would be more parsimonious.\n\nAlong these same lines, it would be helpful to use the reaction time data from an independent set of pro-saccade trials to help constrain the rate parameters in the model. The parameters that capture the RT distribution for prosaccades might be expected to also explain the timing of the \"dip\" in the tachometric curve in the urgent anti-saccade task. It would be nice corroboration to see that this works on a per subject basis, but not if you switch pro-saccade rates between subject.\n\n4) One of the three summary measurements for the tachometric curves is the \"mean accuracy\", and then several paragraphs are used to explain the seemingly counterintuitive relationship between mean accuracy and other aspects of performance. This aspect of the Results seemed poorly motivated, because I felt that \"mean accuracy\" was itself a bad measurement, because the underlying distribution tends to be bimodal (with modes at 0.5 and 1.0) so reporting the mean is a bad idea to begin with.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Voluntary and involuntary contributions to perceptually guided saccadic choices resolved with millisecond precision\" for further consideration at eLife. Your revised article has been favorably evaluated by Timothy Behrens as the Senior Editor, a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but one of the reviewers still has concerns that you might want to address before acceptance, as outlined below. Please note that there was some disagreement among the reviewers regarding how to best address these issues, but I hope that you would take them in account to finalize the manuscript.\n\n1) Reviewers had additional discussion after they completed their individual reviews, regarding whether the use of the phrase \"attentional vortex\" was entirely appropriate. On the one hand, we all agree that the term \"attention\" might not be ideal, but we are also sympathetic to the reasons why you might prefer this term to an alternative, such as oculomotor capture, which might be technically more appropriate. The following is a comment from one of the reviewers on this issue:\n\nThe authors have been more careful in their use of loaded terms like attention and perception, although they still like to use the term \"attention vortex\". There are a few reasons why I still argue against using this term. First, as the authors say in their Reply: \"the existing term 'oculomotor capture' describes exactly what happens in their task\". What they have very nicely mapped out is the time course of oculomotor capture during the urgent antisaccade task. There is no need to introduce a new term. Second, the measurements here are oculomotor measurements, and the link to attention is only inferred. We do not know if there are also effects on visual perceptual judgments in addition to eye movements (for example, effects on visual discrimination). Third, the term attentional vortex implies that the capture is driven by attention, when really it is due to the interaction between saccade planning and changes in the state of attention (you could have called it \"saccade vortex\" with equal mixed justification). Fourth, isn't the attention field confusing already? You have the opportunity to put forward a clarifying description of how attention-related and saccade-related processes interact. Why ruin it? In short, I strongly recommend replacing \"attention vortex\" and \"vortex\" with \"oculomotor capture\", for the sake of properly and accurately acknowledging how these results fit into the existing literature.\n\n2) Another issue about which the reviewers couldn't reach a completely consensus is whether and how the results related to the \"mean accuracy\" should be improved. While we all agree that you can probably perform additional analyses to clarify this part of the manuscript further, we did not agree on whether this would entirely necessary or not. The following is a comment from one of the reviewers:\n\nThe documentation of the tachometric curves (subsection \u201cAntisaccade performance varies with cue luminance\u201d, last paragraph) still seems to miss the mark for me, especially the section that goes into the problems with \"mean accuracy\". From the author's reply, I appreciate the point they are trying to make, but I think there may be other ways to achieve this goal.\n\nThere are actually two different points to be made. The first point is that the tachometric curves are not the same between subjects, and this presumably is due to differences in the temporal dynamics of the underlying sensory and saccade-related processes. This is an interesting point and backed up the second and third measurements drawn from the tachometric curves.\n\nThe second point is that mean accuracy can be misleading, or is at least incomplete, because it fails to register the separate effects that contribute to the dip in the tachometric curve. This is an important point, but I think you could make it much more directly. Here is my specific suggestion/request. When you refer to other studies using mean accuracy (subsection \u201cIndividual differences in perceptual and overall performance\u201d, first paragraph), I presume you are referring to studies that used particular \"gap\" values, most often 0 milliseconds. With your own data, you could show how the distributions of correct and incorrect responses land on that subject's tachometric curve \u2013 for that one particular gap value \u2013 and what the \"mean accuracy\" would be for that subject if that was the only condition you had run. This would show more directly how the value of \"mean accuracy\" depends on the reaction time of the subject (as well as the gap value chosen), and how the tachometric curves captures these dynamics in ways that get obscured in the \"mean accuracy\" measurement. If this type of demonstration could explain the variation in previous studies using the anti-saccade task, that would be an especially useful addition.\n",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "926b48f4-034d-421e-9d9d-bfa3c492f9df",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C3",
+      "claim": "Mean reaction time and overall error rate in the antisaccade task are frequently used as biomarkers for cognitive development.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the mean reaction time (RT) and overall error rate in the antisaccade task are frequently used as biomarkers for cognitive development (Klein and Foerster, 2001; Luna et al., 2008; Coe and Munoz, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies that use these metrics as biomarkers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "2f90dbc1-140f-468a-8c3d-ed5efc65b35d",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C4",
+      "claim": "Mean reaction time and overall error rate in the antisaccade task are used as biomarkers for mental dysfunction in clinical settings.",
+      "claim_type": "EXPLICIT",
+      "source": "and, in clinical settings, for mental dysfunction (Everling and Fischer, 1998; Munoz et al., 2003; Hutton and Ettinger, 2006; Antoniades et al., 2015; Wiecki et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to clinical studies using these metrics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "579dc73c-8f3d-40c2-856b-84e5905684cf",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C5",
+      "claim": "The sudden appearance of a salient visual stimulus automatically attracts spatial attention.",
+      "claim_type": "EXPLICIT",
+      "source": "On one hand, the sudden appearance of a salient visual stimulus automatically attracts spatial attention (Theeuwes, 1991; Theeuwes et al., 1998; Ruz and Lupi\u00e1\u00f1ez, 2002; Busse et al., 2008; Theeuwes, 2010; Carrasco, 2011; Aagten-Murphy and Bays, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to research on attentional capture.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "d280a9b3-be2d-4510-b5a8-eb5ccff3ea81",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C6",
+      "claim": "Exogenous attention is thought to be fast and transient.",
+      "claim_type": "EXPLICIT",
+      "source": "In either case, the effect is described as bottom-up or exogenous, and is thought to be fast and transient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established characterizations of exogenous attention in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "952b5b3a-ab86-4fcb-8c96-aec05915cdb1",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C7",
+      "claim": "Endogenous attention is thought to be slower and to require sustained cognitive effort.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, programming a saccade away from a cue is a top-down or endogenous process that likely summons several mechanisms, such as working memory (Roberts et al., 1994; Lavie and De Fockert, 2005) and endogenous attention (Godijn and Theeuwes, 2002; Theeuwes, 2010; Carrasco, 2011), which are thought to be slower and to require a sustained cognitive effort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on endogenous attention and working memory.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "58cfb606-afa2-4a0c-a0b2-7809193924a2",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C8",
+      "claim": "Exogenous attention is mediated by visually-driven responses in oculomotor areas such as the frontal eye field (FEF) and superior colliculus (SC), which have latencies of at least 50 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "First, exogenous attention is thought to be mediated by visually-driven responses in oculomotor areas such as the frontal eye field (FEF) and superior colliculus (SC), which have latencies of at least 50 ms (Gottlieb and Goldberg, 1999; Bisley et al., 2004; Thompson et al., 2005; Ipata et al., 2006; Joiner et al., 2017; White et al., 2017; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to neurophysiological studies measuring response latencies in FEF and SC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "77ebfbbc-48d7-4a08-8ca7-4278c0bc5463",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C9",
+      "claim": "Spatial attention can be endogenously shifted roughly 150 ms after a relevant cue is provided.",
+      "claim_type": "EXPLICIT",
+      "source": "And second, spatial attention can be endogenously shifted roughly 150 ms after a relevant cue is provided (Kim and Cave, 1999; Ogawa and Komatsu, 2004; Busse et al., 2008; Theeuwes, 2010; Markowitz et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies measuring the timing of endogenous attention shifts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "dbcbbc16-ff8c-4d3c-9e11-3d79a024f655",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C10",
+      "claim": "The competition between exogenous and endogenous responses evolves in less than 100 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the competition between exogenous and endogenous responses evolves in less than 100 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the timing of exogenous (\u226550 ms) and endogenous (~150 ms) responses mentioned in the preceding sentences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "eb605d37-2ee1-4ba2-b0f0-a33a726f5ad7",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C11",
+      "claim": "The compelled antisaccade task requires subjects to begin programming a saccade before knowing the direction of the correct response.",
+      "claim_type": "EXPLICIT",
+      "source": "The compelled antisaccade task requires subjects, humans in this case, to begin programming a saccade before knowing the direction of the correct response, and to use later arriving information about cue location to appropriately modify the ongoing motor plans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design of the compelled antisaccade task used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "7be282c7-5ead-414a-84b7-9648ca6e7ff1",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C12",
+      "claim": "The tachometric curve tracks success rate as a function of raw processing time (rPT).",
+      "claim_type": "EXPLICIT",
+      "source": "Urgency allows us to generate a special psychometric function, the 'tachometric curve,' which tracks success rate as a function of the perceptually relevant time interval, the raw processing time (rPT, measured between cue presentation and saccade onset).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim defines the tachometric curve as used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "2b1c4ecc-ed04-46a5-8106-85d0d7a9afb9",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C13",
+      "claim": "For the compelled antisaccade task, the tachometric curve yields a pronounced dip to below-chance performance within a narrow rPT range.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that, for the compelled antisaccade task, the tachometric curve takes on a unique shape: within a narrow rPT range, the curve yields a pronounced dip to below-chance performance in which the exogenous capture by the cue is so strong that the success rate approaches 0%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing the characteristic shape of the tachometric curve.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "9008e47d-6cdc-4312-b3ee-dd2b44cf86aa",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C14",
+      "claim": "After the vortex, the fraction of correct saccades to the 'anti' location increases rapidly as rPT increases.",
+      "claim_type": "EXPLICIT",
+      "source": "thereafter, however, endogenous control takes over, and the fraction of correct saccades to the 'anti' location increases rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the observed behavior in the tachometric curve after the vortex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "26d4ac16-cb5e-4fd0-bd59-9c463dbe31ad",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C15",
+      "claim": "For rPTs shorter than 90 ms, participants perform at chance.",
+      "claim_type": "EXPLICIT",
+      "source": "For rPTs shorter than 90 ms, participants perform at chance, as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental tachometric curves shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "54ea4b4c-93e3-44e0-a12b-636cab3112c3",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C16",
+      "claim": "The vortex is visible for rPTs of approximately 100\u2013140 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This dip, which we refer to as the 'vortex,' is short-lived (visible for rPTs of 100\u2013140 ms approximately; Figure 2, gray shades)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "63f56c2b-5176-491e-b8b1-45f2ea4af32a",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C17",
+      "claim": "The vortex reaches nearly 0% correct even in the data pooled from all six participants.",
+      "claim_type": "EXPLICIT",
+      "source": "but it is so abrupt and occurs so reliably over a consistent range of rPTs, that it reaches nearly 0% correct even in the data pooled from all six participants (Figure 2, main panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the pooled data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "36667291-6487-4cca-81ae-560e6b656254",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C18",
+      "claim": "For the pooled data, the tachometric curve goes from 0.25 to 0.75 in 18 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This rise in performance is remarkable in that it is extremely fast: for the pooled data (Figure 2, main panel) the tachometric curve goes from 0.25 to 0.75 in 18 ms, and from 0.10 to 0.90 in only 37 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of the tachometric curve shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "f352939e-763a-4375-bbb8-567acb504f19",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C19",
+      "claim": "For the pooled data, the tachometric curve goes from 0.10 to 0.90 in 37 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "This rise in performance is remarkable in that it is extremely fast: for the pooled data (Figure 2, main panel) the tachometric curve goes from 0.25 to 0.75 in 18 ms, and from 0.10 to 0.90 in only 37 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of the tachometric curve shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "724302a3-0cbe-499a-b8fd-6e6379f653d4",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C20",
+      "claim": "The asymptotic fraction of correct responses is close to 1, with the lowest across participants being 0.978.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymptotic fraction of correct responses is close to 1 (the lowest across participants was 0.978), which indicates that the participants understood the instructions and could perform the task almost perfectly \u2014 given enough time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of the asymptotic performance in the tachometric curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "f6c4fb7b-34a2-499f-9d1f-5800c08fc2c5",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C21",
+      "claim": "In easy, non-urgent antisaccade trials, the fraction correct was close to 1 (median = 0.992).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, in easy, non-urgent antisaccade trials (Figure 1b) the fraction correct was also close to 1 (median = 0.992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the delayed antisaccade task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "f332f500-03a2-4dd2-b33e-5f450a736fdb",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C23",
+      "claim": "As luminance decreases from high to low, the vortex becomes much less deep (minimum fraction correct goes from 0.03 \u00b1 0.006 to 0.32 \u00b1 0.026).",
+      "claim_type": "EXPLICIT",
+      "source": "The vortex also becomes much less deep (the minimum fraction correct goes from 0.03 \u00b1 0.006 to 0.32 \u00b1 0.026).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of tachometric curves at different luminance levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "c2dea9f8-4e77-4e75-8b85-e053c4c24879",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C24",
+      "claim": "The timing and depth of the vortex are consistent with the expected weakening of involuntary attentional capture as luminance decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with the expected weakening of (involuntary) attentional capture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim interprets the observed luminance effects in terms of attentional capture theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "3232de20-e676-48e3-902b-19238f850283",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C25",
+      "claim": "As luminance decreases, the rise of the tachometric curve becomes significantly less steep.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that, as luminance decreases, the rise of the tachometric curve becomes significantly less steep (p < 0.0001 for all differences in maximum slope between luminance conditions, from bootstrap; see Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the tachometric curve slopes at different luminance levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "99edee1e-5ad9-4db1-9e5a-f21bc4e2153e",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C26",
+      "claim": "Luminance impacts the top-down process at work in the antisaccade task.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in addition to strongly determining the initial, bottom-up response to the cue, luminance probably also impacts the top-down process at work in the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observed effect of luminance on the steepness of the tachometric curve rise.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "a7c19d93-8c1f-432d-ba7d-7e980cfb8a3a",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C27",
+      "claim": "Qualitatively similar dependencies on cue luminance were observed in each participant's data set.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitatively similar dependencies on cue luminance were observed in each participant's data set (Figure 3b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by individual participant data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "40da0f45-6c0f-47f0-8624-a35f0d023f19",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C28",
+      "claim": "Reliable differences across individuals became evident when the effects were evaluated quantitatively.",
+      "claim_type": "EXPLICIT",
+      "source": "but reliable differences across individuals became evident when the effects were evaluated quantitatively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of individual differences shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "7d93fb7a-23ba-427e-9dcf-1d827c8f51a3",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C31",
+      "claim": "The separation between the 'best' and the 'worst' participant within a given luminance condition is statistically large, particularly for mean perceptual accuracy and the centerpoint of the curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the separation between the 'best' and the 'worst' participant within a given luminance condition is statistically large, particularly for the mean perceptual accuracy and the centerpoint of the curve (Figure 4a,c; note little overlap between 95% confidence intervals for bars of same color).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the confidence intervals shown in Figure 4a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "78bdcf48-6259-4137-b1f4-a0e36c0def4e",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C32",
+      "claim": "The observed effects of cue luminance are highly consistent across participants.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed effects of cue luminance are highly consistent across participants (Figure 3b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the individual participant data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "1663d372-5f79-4582-8e2e-cbcc133e4137",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C33",
+      "claim": "The quantitative details reveal idiosyncratic variations that distinguish one individual from another.",
+      "claim_type": "EXPLICIT",
+      "source": "but the quantitative details reveal idiosyncratic variations that distinguish one individual from another (Figure 4a,c; see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the individual differences shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "4851aab5-76a5-469c-8555-c923ea00213e",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C34",
+      "claim": "Cognitive tasks generally produce robust differences either between experimental conditions/treatments or between individuals, but not both.",
+      "claim_type": "EXPLICIT",
+      "source": "This is significant because cognitive tasks generally produce robust differences either between experimental conditions/treatments or between individuals, but not both (Borsboom et al., 2009; Hedge et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on individual differences in cognitive tasks.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "43738e62-5efd-44da-a1fe-2d4bb83050ba",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C35",
+      "claim": "The average perceptual accuracy and the average observed accuracy are uncorrelated.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, even though both quantites tend to increase with higher luminance, suggesting a positive correlation, they are, in fact, uncorrelated (Figure 5a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the correlation analysis shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "e6b5872e-c045-4274-90cd-1a1db37ee2cf",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C36",
+      "claim": "The rank of a given participant based on perceptual accuracy is not predictive of their rank based on observed accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "The rank of a given participant based on one measure is not predictive of his or her rank based on the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the lack of correlation between perceptual and observed accuracy.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "48ad01c8-564b-4481-bf04-c5fbb80c7f7d",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C37",
+      "claim": "The average observed accuracy demonstrates a strong speed-accuracy tradeoff, with slower participants being correct more often.",
+      "claim_type": "EXPLICIT",
+      "source": "The average observed accuracy demonstrates a strong speed-accuracy tradeoff, that is, slower participants are correct more often (Figure 5b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the correlation analysis shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "4a453184-2ff0-4f97-be60-c98c2b4c6b8c",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C38",
+      "claim": "The mean perceptual accuracy demonstrates a weaker opposite trend, with participants that exhibit high perceptual ability tending to respond more quickly.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the mean perceptual accuracy demonstrates a weaker opposite trend, that is, those participants that exhibit high perceptual ability also tend to respond more quickly (Figure 5c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the correlation analysis shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "5405769b-0501-4a31-8771-7d730cc6d647",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C39",
+      "claim": "The tachometric curve is highly sensitive to the properties of the visual stimuli that must be judged.",
+      "claim_type": "EXPLICIT",
+      "source": "This curve is highly sensitive to the properties of the visual stimuli that must be judged (such as luminance, in this case)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the observed effects of luminance on the tachometric curve.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "98931f1a-6ff5-459e-8ceb-fb5f25f17fa7",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C40",
+      "claim": "When stimulus properties are fixed, the tachometric curve is largely impervious to manipulations that substantially alter the RT.",
+      "claim_type": "EXPLICIT",
+      "source": "and at the same time, when such properties are fixed, it is largely impervious to manipulations that substantially alter the RT (Stanford et al., 2010; Shankar et al., 2011; Salinas et al., 2014; Scerra et al., 2019; for evidence that is specific to the compelled antisaccade task, see Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work and by data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "e7f5eb7e-f90a-447d-9af2-7b7218e494d6",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C41",
+      "claim": "The mean observed accuracy depends on the shape of the tachometric curve and on two factors unrelated to perception: the gap values used and the subject's urgency.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the mean observed accuracy depends not only on the shape of the tachometric curve, but also on two factors, unrelated to perception, that determine which parts of the curve are sampled during an experiment, the gap values used and the subject's urgency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference about how the mean accuracy is computed from the tachometric curve.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "ad83b770-134b-4311-aef8-5219ee44feaf",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C42",
+      "claim": "The mean accuracy provides scarcely any information about the ability of an individual to prevent a captured saccade relative to that of others.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the mean accuracy provides scarcely any information about the ability of an individual to prevent a captured saccade relative to that of others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the analysis showing that mean accuracy is confounded by speed-accuracy tradeoffs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "52c0445e-eabf-4a54-a507-67ffc90b1d94",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C45",
+      "claim": "During the exogenous response interval (ERI), the cue has been detected but not yet interpreted as 'opposite to the target'.",
+      "claim_type": "EXPLICIT",
+      "source": "During the ERI, the cue has already been detected by the circuit but not yet interpreted as 'opposite to the target' (so it cannot yet drive the endogenous acceleration and deceleration described above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a key assumption of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "b9ea51c8-2ba2-4417-909d-93429619a8af",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C46",
+      "claim": "During the ERI, the cue may halt or suppress the ongoing plan toward the anti location.",
+      "claim_type": "EXPLICIT",
+      "source": "We consider two possible mechanisms by which, during the ERI, the detection of the cue may lead to exogenous attentional/oculomotor capture: (1) it could halt or suppress the ongoing plan toward the anti location (Figure 6a,b, black traces during pink interval)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes one of the mechanisms tested in the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "add0c59a-6ba2-49f2-8292-9edcd6bf7bfb",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C47",
+      "claim": "During the ERI, the cue may transiently accelerate the ongoing plan toward the cue location.",
+      "claim_type": "EXPLICIT",
+      "source": "or (2) it could transiently accelerate the ongoing plan toward the cue location (Figure 6a,b, red traces during pink interval).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the second mechanism tested in the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "5baad440-0b42-45f8-bebc-339b874b5bbc",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C48",
+      "claim": "The mechanism of halting the plan toward the anti location is consistent with evidence that salient, abrupt-onset stimuli reflexively interrupt ongoing saccade plans.",
+      "claim_type": "EXPLICIT",
+      "source": "The former is consistent with evidence that salient, abrupt-onset stimuli reflexively interrupt ongoing saccade plans (Dorris et al., 2007; Bompas and Sumner, 2011; Hafed and Ignashchenkova, 2013; Buonocore et al., 2017; Salinas and Stanford, 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on saccade interruption.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "b2908f12-ef23-4b2e-aa97-aa4ff6196a2f",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C49",
+      "claim": "The mechanism of accelerating the plan toward the cue is consistent with short-latency, stimulus-driven activation of visually responsive neurons in oculomotor areas.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the latter is consistent with the short-latency, stimulus-driven activation of visually responsive neurons in oculomotor areas (Gottlieb and Goldberg, 1999; Bisley et al., 2004; Thompson et al., 2005; Ipata et al., 2006; Marino et al., 2015; Joiner et al., 2017; White et al., 2017; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to neurophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "19f417bc-1c04-40b6-8c4a-62295fc8af65",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C50",
+      "claim": "To reproduce the psychophysical data accurately, both mechanisms (halting the anti plan and accelerating the cue plan) were necessary.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, to reproduce the psychophysical data accurately, both mechanisms were necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model comparison results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "c61cbf13-5062-449b-8560-8f5cc9c883e3",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C53",
+      "claim": "With the two mechanisms acting simultaneously, the model reproduced the full data set in quantitative detail.",
+      "claim_type": "EXPLICIT",
+      "source": "However, with the two mechanisms acting simultaneously, in coordination, the model reproduced the full data set in quantitative detail (Figures 7c and 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model fits shown in Figures 7c and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "e9b819cb-9dd0-403f-baf5-72e425c2b042",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C54",
+      "claim": "For the pooled data, the model fitted the tachometric curve and the rPT distributions for correct and incorrect responses.",
+      "claim_type": "EXPLICIT",
+      "source": "First, for the data pooled across participants, the model fitted the tachometric curve (Figure 8a) and the rPT distributions for correct and incorrect responses (Figure 8b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model fits shown in Figure 8a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "039b5176-5e5c-4fa0-947f-d70e680e26c6",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C55",
+      "claim": "For individual gap conditions, the model matched the variations in mean success rate and mean RT.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, for individual gap conditions, the model matched the variations in mean success rate and mean RT (Figure 8\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model fits shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "ff4ff29e-62e3-425a-861b-40a6b9974572",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C56",
+      "claim": "The model reproduced the shapes of the RT distributions for correct and incorrect choices, which were typically bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "but more importantly, it reproduced the shapes of the RT distributions for correct and incorrect choices, which were typically bimodal (Figure 8c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model fits shown in Figure 8c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "85c5d303-aef9-4b0d-8868-93afd0cb980d",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C57",
+      "claim": "The model accurately captured all the dependencies on luminance.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the model accurately captured all the dependencies on luminance (Figure 8, compare results across columns).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by model fits at different luminance levels shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "d3134c73-7a1a-459f-abeb-1d4185bb784a",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C59",
+      "claim": "The model fitted the data from individual participants, even though they showed large, idiosyncratic variations in motor performance.",
+      "claim_type": "EXPLICIT",
+      "source": "And fourth, the model also fitted the (noisier) data from individual participants, even though they showed large, idiosyncratic variations in motor performance, as well as in the dips and peaks of their rPT distributions (Figure 8\u2014figure supplements 2 and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by individual participant model fits shown in Figure 8\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "2ee38e50-501e-480b-838d-324818a02527",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C60",
+      "claim": "For all comparisons across participants, the empirical and simulated results were nearly indistinguishable.",
+      "claim_type": "EXPLICIT",
+      "source": "For all comparisons across participants, the empirical (Figures 4 and 5) and simulated results (Figure 4\u2014figure supplement 2; Figure 5\u2014figure supplement 3) were nearly indistinguishable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of empirical and model results in Figures 4, 5, and their supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "4713cce2-cbd4-4b3a-87e0-5cecb1436e03",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C61",
+      "claim": "For the high, medium, and low luminance conditions, the oculomotor circuitry detects the cue 76 \u00b1 5 ms, 104 \u00b1 13 ms, and 126 \u00b1 19 ms after its presentation, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For the high, medium, and low conditions, the oculomotor circuitry detects the cue 76 \u00b1 5 ms (mean \u00b1 SD for simulated trials), 104 \u00b1 13 ms, and 126 \u00b1 19 ms after its presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the best-fitting model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "a858db80-32b6-4c77-a0eb-c250a6e2ae55",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C62",
+      "claim": "The variation in cue detection time from high to low luminance (50 ms) corresponds closely with the rightward shift of the vortex observed experimentally (51 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "This variation from high to low luminance (50 ms) corresponds closely with the rightward shift of the vortex observed experimentally (51 ms; Figure 3a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares model predictions with experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "09dcf06f-b895-4235-92a7-9114a99e157e",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C63",
+      "claim": "The variation in cue detection time with luminance is consistent with the ubiquitous dependence of visual response latency on luminance and contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "and is consistent with the ubiquitous dependence of visual response latency on luminance and contrast (Purushothaman et al., 1998; Bisley et al., 2004; van Rossum et al., 2008; White et al., 2008; Oram, 2010; Marino et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on visual response latencies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "9c659515-ae7c-4745-9c8d-00393a619dea",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C64",
+      "claim": "The ERI lasts only 24 ms (on average) in all three luminance conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the ERI lasts only 24 ms (on average) in all three conditions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the best-fitting model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "06f6c91c-f628-47dd-9fe8-746249e35f25",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C65",
+      "claim": "The exogenous acceleration of the plan toward the cue occurs only during the last 14 ms (high luminance) or 10 ms (medium and low luminance) of the ERI.",
+      "claim_type": "EXPLICIT",
+      "source": "and the exogenous acceleration of the plan toward the cue occurs only during the last 14 ms (high luminance), or only during the last 10 ms (medium and low luminance)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the best-fitting model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "aaf659db-d1c9-4b8d-b5c1-2596f796ea27",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C66",
+      "claim": "Before the exogenous acceleration, the plan toward the cue halts just like its counterpart toward the anti location.",
+      "claim_type": "EXPLICIT",
+      "source": "before that, the plan toward the cue halts just like its counterpart toward the anti location (Figure 6a,b, note that red trace is initially flat during shaded interval).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the model dynamics shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "854cf47c-18ef-4d14-9c15-f01be08da9aa",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C67",
+      "claim": "The exogenous acceleration favoring the cue location is very brief but very powerful.",
+      "claim_type": "EXPLICIT",
+      "source": "The model suggests that the exogenous acceleration favoring the cue location is very brief but very powerful, which explains why the left edge of the vortex can be so steep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the model parameters and their relationship to the observed behavior.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "fd345f50-2f21-4901-8443-88b1a9e1331c",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C69",
+      "claim": "The capture of attention by a salient stimulus corresponds to specific changes in the firing of saccade-related neurons: activity that is spatially congruent with the stimulus is accelerated, whereas activity that is spatially incongruent is halted or suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that, whether overt or covert, the capture of attention by a salient stimulus corresponds to specific changes in the firing of saccade-related neurons: activity that is spatially congruent with the stimulus is accelerated, whereas activity that is spatially incongruent is halted or suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the modeling results and their neurophysiological interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "18a78ee5-cd1f-4b72-a46d-1cd8f7de660c",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C70",
+      "claim": "The results identify concrete ways in which endogenous and exogenous mechanisms act on the oculomotor circuitry via acceleration, deceleration, and halting of rising firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "First, they identify concrete ways in which endogenous and exogenous mechanisms act on the oculomotor circuitry \u2014 namely, via acceleration, deceleration, and halting of rising firing rates \u2014 together with their unique behavioral signatures (dips and peaks in rPT and RT distributions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key contribution of the study based on the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "e2fc8ec6-a1d8-4878-994e-daaf5217b72e",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C71",
+      "claim": "The results characterize the time scales of exogenous and endogenous mechanisms (a few tens of ms) as well as their dependencies on luminance.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, they characterize the time scales of those mechanisms (a few tens of ms) as well as their dependencies on luminance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key contribution of the study based on the experimental and modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "f255206d-0397-4bf5-8054-d1b934879e3b",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C72",
+      "claim": "The results clearly parse the motor (RT) and perceptual (tachometric curve) contributions to antisaccade performance, removing confounds caused by the speed-accuracy tradeoff.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, they clearly parse the motor (RT) and perceptual (tachometric curve) contributions to antisaccade performance, thus removing the pervasive confounds caused by the speed-accuracy tradeoff.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key contribution of the study based on the analysis of individual differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "afc2f5a4-2b33-467b-ac2d-36c9f6cfb28e",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C73",
+      "claim": "The results relate variations in motor, perceptual, and cognitive mechanisms to individual differences in performance.",
+      "claim_type": "EXPLICIT",
+      "source": "And fourth, they relate variations in motor, perceptual, and cognitive mechanisms to individual differences in performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key contribution of the study based on the individual participant analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "693d4ba2-dda6-4d5e-b6e6-4bb6825561ff",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C74",
+      "claim": "All participants exhibited a vortex, but different vortices resulted from different combinations of exogenous and endogenous mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, all participants exhibited a vortex, but different vortices resulted from different combinations of exogenous and endogenous mechanisms (compare rPT distributions for P1 vs. P4 in Figure 8\u2014figure supplements 2 and 3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by individual participant data shown in Figure 8\u2014figure supplements 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "1bd3747f-aca3-429c-b40e-08f294fabf3e",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C75",
+      "claim": "The degeneracy in neural function observed in antisaccade performance is to be expected based on that found in more reduced circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "\u2014 a degeneracy in neural function that is to be expected based on that found in more reduced circuits (Marder et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research on degeneracy in neural circuits.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "0646ab23-98d5-487f-811e-3a65b54ea2f4",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C76",
+      "claim": "During urgent saccadic choices, the build-up of activity in FEF starts after the go signal, regardless of when the cue information arrives.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the initial level of motor activity contributes as proposed: during urgent saccadic choices, the build-up of activity in FEF starts after the go signal, regardless of when the cue information arrives (Stanford et al., 2010; Costello et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior neurophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "475f5ff3-0acb-4a67-8e69-3706f55ee92e",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C77",
+      "claim": "During antisaccade performance, the ongoing activity in FEF and SC is higher before erroneous saccades toward the cue than before correct antisaccades.",
+      "claim_type": "EXPLICIT",
+      "source": "and during antisaccade performance, the ongoing activity in FEF and SC is higher before erroneous saccades toward the cue than before correct antisaccades (Everling et al., 1998; Everling and Munoz, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior neurophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "90045570-c79e-4314-ae5a-f1d13a7230cc",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C78",
+      "claim": "In an urgent color discrimination task, perceptual information produces acceleration and deceleration of motor activity in an rPT-dependent way.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, in an urgent color discrimination task, perceptual information does produce acceleration and deceleration of motor activity in an rPT-dependent way (Stanford et al., 2010; Costello et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior neurophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "e5bcdc56-3668-40bd-8759-a7f5ad3ec3b0",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C79",
+      "claim": "The timing of the vortex and its dependence on luminance parallel those of visual bursts in the oculomotor system.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the timing of the vortex and its dependence on luminance parallel those of visual bursts in the oculomotor system (Gottlieb and Goldberg, 1999; Bisley et al., 2004; Thompson et al., 2005; Ipata et al., 2006; Joiner et al., 2017; White et al., 2017; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior neurophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "bc8fd100-8efd-4615-9ba1-c4d5a4f439ee",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C80",
+      "claim": "Captured saccades resemble express saccades in that both result in movements triggered after 100 ms or less of stimulus viewing time.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the captured saccades in our experiment resemble so-called 'express saccades' in many ways: both result in movements triggered after 100 ms or less of stimulus viewing time",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the current results to prior research on express saccades.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "09b8bcc2-bc96-4d30-a0b8-1532db188f89",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C81",
+      "claim": "Both captured saccades and express saccades are more likely with higher luminance.",
+      "claim_type": "EXPLICIT",
+      "source": "both are more likely with higher luminance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the current results to prior research on express saccades.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "eba58ef3-51c1-4653-90c6-f3c8643844cc",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C82",
+      "claim": "Both captured saccades and express saccades are facilitated by the early removal of the fixation requirement.",
+      "claim_type": "EXPLICIT",
+      "source": "and both are facilitated by the early removal of the fixation requirement, such that a visually evoked response is superimposed on advancing motor activity (Par\u00e9 and Munoz, 1996; Dorris et al., 1997; Marino et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on express saccades.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "07dfb1b4-4861-424b-8151-c5a6de5efbf5",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C83",
+      "claim": "When the saccade target is diametrically opposite to a sudden stimulus, the developing plan is transiently halted or suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "And fourth, the sudden presentation of a salient distracter stimulus has a robust impact on a developing saccade plan, with the effect depending strongly on their spatial congruence: when the saccade target is diametrically opposite to the stimulus, there is ample evidence (reviewed by Salinas and Stanford, 2018) indicating that the developing plan is transiently halted or suppressed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a review of prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "259b0909-d8e7-4526-9afb-e859fa84d6f7",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C84",
+      "claim": "When the saccade target is near an abrupt-onset stimulus, the developing plan is boosted.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas when the saccade target is near the abrupt-onset stimulus, the developing plan is boosted (Dorris et al., 2007; Edelman and Xu, 2009; White et al., 2013; Marino et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior neurophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "17bda583-2a48-4ae1-b991-5a5b8da844ae",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C85",
+      "claim": "There is strong evidence that the rise in oculomotor activity associated with planning a saccade inevitably implies that attentional resources are at least partially allocated to the intended saccade endpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "There is strong evidence that the rise in oculomotor activity associated with planning a saccade inevitably implies that attentional resources are at least partially allocated to the intended saccade endpoint (Kowler et al., 1995; Deubel and Schneider, 1996; Moore and Fallah, 2001; Godijn and Theeuwes, 2003; Moore and Armstrong, 2003; Cavanaugh and Wurtz, 2004; Steinmetz and Moore, 2014; Klapetek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on the premotor theory of attention.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "4c1df672-af3f-494e-8c18-a372dd89be47",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C86",
+      "claim": "The motor plan associated with attentional allocation may manifest only as a subtle increase in baseline activity during fixation, rather than via the more typical steady rise in firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "During fixation, such a plan may manifest only as a subtle increase in baseline activity, rather than via the more typical steady rise in firing rate (Hauser et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "6d37f005-a03f-41ed-b674-37bccf5fc262",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C87",
+      "claim": "Attentional and oculomotor capture are different behavioral manifestations of the same underlying neuronal dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with the idea that attentional and oculomotor capture are different behavioral manifestations of the same underlying neuronal dynamics (in, say, the FEF or SC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the modeling results and their interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "73790331-823f-4473-aa34-764dae96fa4f",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C88",
+      "claim": "When a salient cue is detected, a bias favoring a motor plan toward its location is always generated.",
+      "claim_type": "EXPLICIT",
+      "source": "When a salient cue is detected, a bias favoring a motor plan toward its location is always generated (with the bias consisting of acceleration of the plan toward the cue and halting of any plans away from it).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "83c33c82-3157-4888-8919-73e16d731d37",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C89",
+      "claim": "The impact of the exogenous biasing signal depends on the current state of the oculomotor circuitry.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the impact of the exogenous biasing signal depends on the current state of the oculomotor circuitry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "9f99e904-b7e0-4762-9251-6dfbea0d843a",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C90",
+      "claim": "When motor activity congruent with the cue location is far from threshold and competing with other developing motor plans, the bias corresponds to covert deployment of attention to the cue.",
+      "claim_type": "EXPLICIT",
+      "source": "When the motor activity congruent with the cue location is far from threshold and is competing with other developing motor plans, the bias corresponds to the covert (and transient) deployment of attention to the cue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the modeling results and their interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "99fef18f-a79b-4007-bc7e-4adc6aba6448",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C91",
+      "claim": "When motor activity congruent with the cue has already developed to a substantial degree, the exogenous bias can quickly propel it past threshold, resulting in an overt captured saccade.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when that activity has already developed to a substantial degree, the bias can quickly propel it past threshold. Then, the exogenous attraction of the cue becomes observable as an overt, captured saccade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the modeling results and their interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "2cefe598-4ecb-45ca-a0e3-573ac6ca73f6",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C92",
+      "claim": "Six healthy human volunteers participated in the study, two male and four female, ages 21\u201330.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental subjects were six healthy human volunteers, two male and four female, ages 21\u201330.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the participant demographics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "e5eb0cbd-a132-422d-9448-8166c0b2695f",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C93",
+      "claim": "All participants had normal or corrected-to-normal vision.",
+      "claim_type": "EXPLICIT",
+      "source": "All had normal or corrected-to-normal vision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the participant characteristics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "e5844b5e-10b8-4215-bb9a-2c8f0990282b",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C94",
+      "claim": "The correct response in the antisaccade task is an eye movement away from the cue, to the diametrically opposite location, initiated within 450 ms of the go signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The cue appears randomly to the left or right of fixation, and the participant is instructed to make an eye movement away from it, to the diametrically opposite location \u2014 but for this response to be correct, the saccade must be initiated within 450 ms of the go signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the task instructions and timing constraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "6d873b24-7143-4a0a-a9fc-a19a6ea99cf8",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C95",
+      "claim": "The gap values used in the experiment were \u2212200, \u2212100, 0, 75, 100, 125, 150, 175, 200, 250, and 350 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The gap values used were \u2212200, \u2212100, 0, 75, 100, 125, 150, 175, 200, 250, and 350 ms, where negative numbers correspond to delays in the easy antisaccade task (Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "b4c7d37c-368d-408a-b242-9d190102bdba",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C96",
+      "claim": "Each participant completed 30 blocks of 150 trials over six experimental sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "After 50\u2013150 trials of practice, each participant completed 30 blocks over six experimental sessions (days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "3800a0b9-7cca-4353-97e4-4b4914925a88",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C97",
+      "claim": "The cue luminance levels used were high (17.6 cd m-2), medium (0.35 cd m-2), and low (0.22 cd m-2).",
+      "claim_type": "EXPLICIT",
+      "source": "Each participant performed the task with cues of three luminance levels, high (17.6 cd m-2), medium (0.35 cd m-2), and low (0.22 cd m-2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the stimulus parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "f202d3a0-d317-4bd0-a4dc-291e234101fd",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "claim_id": "C98",
+      "claim": "The model is a variant of one that replicates both behavioral performance and choice-related neuronal activity in the FEF in an urgent, two-alternative, color discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is a variant of one that replicates both behavioral performance and choice-related neuronal activity (in the FEF) in an urgent, two-alternative, color discrimination task (Stanford et al., 2010; Shankar et al., 2011; Costello et al., 2013; Seideman et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "acad5b73-9c93-4936-a4f5-7b98b3981c73",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The compelled antisaccade task produces a unique tachometric curve with a pronounced 'vortex' where performance drops to near 0% correct at rPTs of 100-140 ms, followed by an extremely rapid rise in performance (0.25 to 0.75 in 18 ms). Participants perform at chance for rPTs < 90 ms and reach asymptotic performance near 100% correct with sufficient processing time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C21 collectively describe the core behavioral finding with strong empirical support from Figure 2. The tachometric curve shape, timing parameters, and performance metrics are quantitatively documented across individual participants and pooled data. The rapid transition times (18 ms, 37 ms) are precisely measured and the vortex phenomenon is robustly observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "fd2af097-9f81-40fb-a8d5-713cf540191d",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cue luminance systematically affects antisaccade performance: as luminance decreases from high to low, the vortex becomes less deep (minimum correct from 0.03 to 0.32), shifts rightward by ~50 ms, and the tachometric curve rise becomes significantly less steep (p < 0.0001). These effects are qualitatively consistent across participants but reveal quantitatively distinct individual differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C33 are well-supported by data in Figures 3-4 showing systematic luminance effects with statistical quantification. The rightward shift, reduced depth, and decreased steepness are all documented with confidence intervals. Individual differences are demonstrated through non-overlapping confidence intervals (C31), establishing both within-condition variability and between-condition consistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "5b44266c-2a64-43f4-82e5-f05db42a840a",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mean perceptual accuracy (from tachometric curves) and mean observed accuracy (overall fraction correct) are uncorrelated across participants. Mean observed accuracy shows a strong speed-accuracy tradeoff with RT, while mean perceptual accuracy shows a weak opposite trend. The tachometric curve is sensitive to stimulus properties but largely impervious to RT manipulations, whereas mean observed accuracy depends on both perceptual factors and non-perceptual factors (gap values, urgency).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C42 are supported by correlation analyses in Figure 5 showing dissociation between perceptual and observed accuracy metrics. The partial Spearman correlations are reported with p-values, and the interpretation is logically sound given how the metrics are computed. Figure 5\u2014figure supplement 2 provides additional evidence that tachometric curves are stable across RT manipulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A race-to-threshold computational model incorporating two exogenous mechanisms during an Exogenous Response Interval (ERI)\u2014halting of the anti plan and acceleration of the cue plan\u2014accurately reproduces the full experimental dataset. The model fits tachometric curves, rPT distributions, RT distributions (including bimodal shapes), luminance dependencies, and individual participant data in quantitative detail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C60 describe comprehensive model validation supported by Figures 6-8 and supplements. The model successfully captures multiple aspects of behavior: tachometric curves (C54), rPT distributions (C54), bimodal RT distributions (C56), luminance effects (C57), and individual differences (C59-C60). The necessity of both mechanisms is demonstrated by model comparison (Figure 7, C50). The quantitative agreement is extensively documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "742fe124-a4ed-4674-b226-947b205996d3",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Model parameters reveal that cue detection latency increases with decreasing luminance (76\u00b15 ms, 104\u00b113 ms, 126\u00b119 ms for high, medium, low), matching the 51 ms rightward vortex shift. The ERI lasts only ~24 ms across conditions, with exogenous acceleration occurring only in the final 10-14 ms. This brief but powerful acceleration explains the steep left edge of the vortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C67 report model parameter estimates from Table 1 and their interpretation. The correspondence between model-predicted detection latency changes (50 ms) and observed vortex shift (51 ms, C62) provides strong validation. The timing parameters are precisely quantified with standard deviations. The mechanistic interpretation (C67) follows logically from the parameter values and model structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "533fa0ed-fb61-4781-bc66-42b6c6b62296",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The results identify specific mechanisms by which exogenous and endogenous processes act on oculomotor circuitry (acceleration, deceleration, halting), characterize their millisecond-scale timings and luminance dependencies, parse motor and perceptual contributions to performance, and relate mechanistic variations to individual differences. Different participants achieve similar vortex patterns through different combinations of exogenous and endogenous mechanisms, demonstrating degeneracy in neural function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C75 summarize the main contributions of the study, which are well-supported by the preceding results. The mechanistic identification (C70) is supported by modeling results (Figures 6-8). Timing characterization (C71) is documented in model parameters and experimental data. The parsing of motor/perceptual contributions (C72) is demonstrated in Figure 5. Individual differences and degeneracy (C73-C75) are shown in Figure 8 supplements 2-3 and individual parameter fits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "737bcabc-05b8-49ba-bdf6-e90dd8b0cecf",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model's key assumptions are consistent with prior neurophysiological evidence: FEF activity builds up after the go signal regardless of cue timing, is higher before errors than correct antisaccades, shows rPT-dependent acceleration/deceleration, and exhibits timing/luminance dependencies matching visual bursts. Captured saccades resemble express saccades in timing, luminance sensitivity, and facilitation by early fixation removal. Spatial congruence determines whether distracter stimuli halt or boost developing saccade plans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C84 establish consistency between the model and prior neurophysiological literature through extensive citations. Each claim references specific prior studies (e.g., Stanford et al. 2010, Everling & Munoz 2000, Par\u00e9 & Munoz 1996) that support the model assumptions. The comparison to express saccades (C80-C82) is well-grounded in the literature and consistent with the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "d2565486-33cf-4145-8423-84936f55980d",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The results support a unified account where attentional and oculomotor capture are different manifestations of the same neuronal dynamics. When a salient cue is detected, a bias (acceleration toward cue, halting away from cue) is always generated, but its behavioral consequence depends on the current state of the oculomotor circuitry: covert attention when motor activity is far from threshold, overt captured saccade when activity is near threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C91 present a theoretical synthesis supported by the modeling results and prior literature (C85-C86 cite premotor theory evidence). The state-dependent interpretation (C89-C91) follows logically from the model dynamics shown in Figure 6, where the same exogenous bias produces different outcomes depending on the level of pre-existing motor activity. This provides a mechanistic account unifying covert and overt capture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "cbafb539-9539-46ff-ac0f-4f67f4534e21",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Six healthy human volunteers (2 male, 4 female, ages 21-30) with normal/corrected vision completed 30 blocks of 150 trials over six sessions. The task used gap values from -200 to 350 ms and three cue luminance levels (17.6, 0.35, 0.22 cd/m\u00b2). Correct responses required saccades away from the cue within 450 ms of the go signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C97 describe the methods and are straightforward factual statements about the experimental design, participant characteristics, and task parameters. These are adequately documented in the Materials and methods section and are internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "3725d32e-08e4-4bda-9b09-d6c68eb0e9fe",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The computational model is a variant of a previously validated model that replicates both behavioral performance and FEF neuronal activity in urgent color discrimination tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 is supported by citations to prior modeling work (Stanford et al. 2010, Shankar et al. 2011, Costello et al. 2013, Seideman et al. 2018) establishing the model's pedigree and prior validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "2f432ac4-f206-4fb5-a765-430fe08ba33e",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The antisaccade task is used as a biomarker for cognitive development and mental dysfunction based on mean RT and error rate. The task pits exogenous attention (fast, transient, mediated by FEF/SC with \u226550 ms latency) against endogenous attention (slower, ~150 ms, requiring sustained effort). The competition between these mechanisms evolves in less than 100 ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C10 provide background context supported by extensive citations to prior literature. The timing estimates (C8-C9) are well-established in the field, and the inference about competition timescale (C10) follows logically from the cited latencies. These claims establish the rationale for the urgent task design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    },
+    {
+      "id": "6704aba1-f956-40c7-835a-ab6cdd3f57d7",
+      "content_id": "246a3187-58d4-4044-b541-85aec0be48cd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cognitive tasks generally produce robust differences either between experimental conditions or between individuals, but not both.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by citations to Borsboom et al. 2009 and Hedge et al. 2018, which document this general principle about individual differences in cognitive tasks. This contextualizes the significance of finding both types of differences in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.172016Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "eb605d37-2ee1-4ba2-b0f0-a33a726f5ad7",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "7be282c7-5ead-414a-84b7-9648ca6e7ff1",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "2b1c4ecc-ed04-46a5-8106-85d0d7a9afb9",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "9008e47d-6cdc-4312-b3ee-dd2b44cf86aa",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "26d4ac16-cb5e-4fd0-bd59-9c463dbe31ad",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "54ea4b4c-93e3-44e0-a12b-636cab3112c3",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "63f56c2b-5176-491e-b8b1-45f2ea4af32a",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "36667291-6487-4cca-81ae-560e6b656254",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "f352939e-763a-4375-bbb8-567acb504f19",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "724302a3-0cbe-499a-b8fd-6e6379f653d4",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "f6c4fb7b-34a2-499f-9d1f-5800c08fc2c5",
+      "result_id": "acad5b73-9c93-4936-a4f5-7b98b3981c73"
+    },
+    {
+      "claim_id": "f332f500-03a2-4dd2-b33e-5f450a736fdb",
+      "result_id": "fd2af097-9f81-40fb-a8d5-713cf540191d"
+    },
+    {
+      "claim_id": "c2dea9f8-4e77-4e75-8b85-e053c4c24879",
+      "result_id": "fd2af097-9f81-40fb-a8d5-713cf540191d"
+    },
+    {
+      "claim_id": "3232de20-e676-48e3-902b-19238f850283",
+      "result_id": "fd2af097-9f81-40fb-a8d5-713cf540191d"
+    },
+    {
+      "claim_id": "99edee1e-5ad9-4db1-9e5a-f21bc4e2153e",
+      "result_id": "fd2af097-9f81-40fb-a8d5-713cf540191d"
+    },
+    {
+      "claim_id": "a7c19d93-8c1f-432d-ba7d-7e980cfb8a3a",
+      "result_id": "fd2af097-9f81-40fb-a8d5-713cf540191d"
+    },
+    {
+      "claim_id": "40da0f45-6c0f-47f0-8624-a35f0d023f19",
+      "result_id": "fd2af097-9f81-40fb-a8d5-713cf540191d"
+    },
+    {
+      "claim_id": "7d93fb7a-23ba-427e-9dcf-1d827c8f51a3",
+      "result_id": "fd2af097-9f81-40fb-a8d5-713cf540191d"
+    },
+    {
+      "claim_id": "78bdcf48-6259-4137-b1f4-a0e36c0def4e",
+      "result_id": "fd2af097-9f81-40fb-a8d5-713cf540191d"
+    },
+    {
+      "claim_id": "1663d372-5f79-4582-8e2e-cbcc133e4137",
+      "result_id": "fd2af097-9f81-40fb-a8d5-713cf540191d"
+    },
+    {
+      "claim_id": "43738e62-5efd-44da-a1fe-2d4bb83050ba",
+      "result_id": "5b44266c-2a64-43f4-82e5-f05db42a840a"
+    },
+    {
+      "claim_id": "e6b5872e-c045-4274-90cd-1a1db37ee2cf",
+      "result_id": "5b44266c-2a64-43f4-82e5-f05db42a840a"
+    },
+    {
+      "claim_id": "48ad01c8-564b-4481-bf04-c5fbb80c7f7d",
+      "result_id": "5b44266c-2a64-43f4-82e5-f05db42a840a"
+    },
+    {
+      "claim_id": "4a453184-2ff0-4f97-be60-c98c2b4c6b8c",
+      "result_id": "5b44266c-2a64-43f4-82e5-f05db42a840a"
+    },
+    {
+      "claim_id": "5405769b-0501-4a31-8771-7d730cc6d647",
+      "result_id": "5b44266c-2a64-43f4-82e5-f05db42a840a"
+    },
+    {
+      "claim_id": "98931f1a-6ff5-459e-8ceb-fb5f25f17fa7",
+      "result_id": "5b44266c-2a64-43f4-82e5-f05db42a840a"
+    },
+    {
+      "claim_id": "e7f5eb7e-f90a-447d-9af2-7b7218e494d6",
+      "result_id": "5b44266c-2a64-43f4-82e5-f05db42a840a"
+    },
+    {
+      "claim_id": "ad83b770-134b-4311-aef8-5219ee44feaf",
+      "result_id": "5b44266c-2a64-43f4-82e5-f05db42a840a"
+    },
+    {
+      "claim_id": "52c0445e-eabf-4a54-a507-67ffc90b1d94",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "b9ea51c8-2ba2-4417-909d-93429619a8af",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "add0c59a-6ba2-49f2-8292-9edcd6bf7bfb",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "5baad440-0b42-45f8-bebc-339b874b5bbc",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "b2908f12-ef23-4b2e-aa97-aa4ff6196a2f",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "19f417bc-1c04-40b6-8c4a-62295fc8af65",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "c61cbf13-5062-449b-8560-8f5cc9c883e3",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "e9b819cb-9dd0-403f-baf5-72e425c2b042",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "039b5176-5e5c-4fa0-947f-d70e680e26c6",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "ff4ff29e-62e3-425a-861b-40a6b9974572",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "85c5d303-aef9-4b0d-8868-93afd0cb980d",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "d3134c73-7a1a-459f-abeb-1d4185bb784a",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "2ee38e50-501e-480b-838d-324818a02527",
+      "result_id": "b3f52d3f-17bc-417f-95a6-e3f8edff24a0"
+    },
+    {
+      "claim_id": "4713cce2-cbd4-4b3a-87e0-5cecb1436e03",
+      "result_id": "742fe124-a4ed-4674-b226-947b205996d3"
+    },
+    {
+      "claim_id": "a858db80-32b6-4c77-a0eb-c250a6e2ae55",
+      "result_id": "742fe124-a4ed-4674-b226-947b205996d3"
+    },
+    {
+      "claim_id": "09dcf06f-b895-4235-92a7-9114a99e157e",
+      "result_id": "742fe124-a4ed-4674-b226-947b205996d3"
+    },
+    {
+      "claim_id": "9c659515-ae7c-4745-9c8d-00393a619dea",
+      "result_id": "742fe124-a4ed-4674-b226-947b205996d3"
+    },
+    {
+      "claim_id": "06f6c91c-f628-47dd-9fe8-746249e35f25",
+      "result_id": "742fe124-a4ed-4674-b226-947b205996d3"
+    },
+    {
+      "claim_id": "aaf659db-d1c9-4b8d-b5c1-2596f796ea27",
+      "result_id": "742fe124-a4ed-4674-b226-947b205996d3"
+    },
+    {
+      "claim_id": "854cf47c-18ef-4d14-9c15-f01be08da9aa",
+      "result_id": "742fe124-a4ed-4674-b226-947b205996d3"
+    },
+    {
+      "claim_id": "fd345f50-2f21-4901-8443-88b1a9e1331c",
+      "result_id": "533fa0ed-fb61-4781-bc66-42b6c6b62296"
+    },
+    {
+      "claim_id": "18a78ee5-cd1f-4b72-a46d-1cd8f7de660c",
+      "result_id": "533fa0ed-fb61-4781-bc66-42b6c6b62296"
+    },
+    {
+      "claim_id": "e2fc8ec6-a1d8-4878-994e-daaf5217b72e",
+      "result_id": "533fa0ed-fb61-4781-bc66-42b6c6b62296"
+    },
+    {
+      "claim_id": "f255206d-0397-4bf5-8054-d1b934879e3b",
+      "result_id": "533fa0ed-fb61-4781-bc66-42b6c6b62296"
+    },
+    {
+      "claim_id": "afc2f5a4-2b33-467b-ac2d-36c9f6cfb28e",
+      "result_id": "533fa0ed-fb61-4781-bc66-42b6c6b62296"
+    },
+    {
+      "claim_id": "693d4ba2-dda6-4d5e-b6e6-4bb6825561ff",
+      "result_id": "533fa0ed-fb61-4781-bc66-42b6c6b62296"
+    },
+    {
+      "claim_id": "1bd3747f-aca3-429c-b40e-08f294fabf3e",
+      "result_id": "533fa0ed-fb61-4781-bc66-42b6c6b62296"
+    },
+    {
+      "claim_id": "0646ab23-98d5-487f-811e-3a65b54ea2f4",
+      "result_id": "737bcabc-05b8-49ba-bdf6-e90dd8b0cecf"
+    },
+    {
+      "claim_id": "475f5ff3-0acb-4a67-8e69-3706f55ee92e",
+      "result_id": "737bcabc-05b8-49ba-bdf6-e90dd8b0cecf"
+    },
+    {
+      "claim_id": "90045570-c79e-4314-ae5a-f1d13a7230cc",
+      "result_id": "737bcabc-05b8-49ba-bdf6-e90dd8b0cecf"
+    },
+    {
+      "claim_id": "e5bcdc56-3668-40bd-8759-a7f5ad3ec3b0",
+      "result_id": "737bcabc-05b8-49ba-bdf6-e90dd8b0cecf"
+    },
+    {
+      "claim_id": "bc8fd100-8efd-4615-9ba1-c4d5a4f439ee",
+      "result_id": "737bcabc-05b8-49ba-bdf6-e90dd8b0cecf"
+    },
+    {
+      "claim_id": "09b8bcc2-bc96-4d30-a0b8-1532db188f89",
+      "result_id": "737bcabc-05b8-49ba-bdf6-e90dd8b0cecf"
+    },
+    {
+      "claim_id": "eba58ef3-51c1-4653-90c6-f3c8643844cc",
+      "result_id": "737bcabc-05b8-49ba-bdf6-e90dd8b0cecf"
+    },
+    {
+      "claim_id": "07dfb1b4-4861-424b-8151-c5a6de5efbf5",
+      "result_id": "737bcabc-05b8-49ba-bdf6-e90dd8b0cecf"
+    },
+    {
+      "claim_id": "259b0909-d8e7-4526-9afb-e859fa84d6f7",
+      "result_id": "737bcabc-05b8-49ba-bdf6-e90dd8b0cecf"
+    },
+    {
+      "claim_id": "17bda583-2a48-4ae1-b991-5a5b8da844ae",
+      "result_id": "d2565486-33cf-4145-8423-84936f55980d"
+    },
+    {
+      "claim_id": "4c1df672-af3f-494e-8c18-a372dd89be47",
+      "result_id": "d2565486-33cf-4145-8423-84936f55980d"
+    },
+    {
+      "claim_id": "6d37f005-a03f-41ed-b674-37bccf5fc262",
+      "result_id": "d2565486-33cf-4145-8423-84936f55980d"
+    },
+    {
+      "claim_id": "73790331-823f-4473-aa34-764dae96fa4f",
+      "result_id": "d2565486-33cf-4145-8423-84936f55980d"
+    },
+    {
+      "claim_id": "83c33c82-3157-4888-8919-73e16d731d37",
+      "result_id": "d2565486-33cf-4145-8423-84936f55980d"
+    },
+    {
+      "claim_id": "9f99e904-b7e0-4762-9251-6dfbea0d843a",
+      "result_id": "d2565486-33cf-4145-8423-84936f55980d"
+    },
+    {
+      "claim_id": "99fef18f-a79b-4007-bc7e-4adc6aba6448",
+      "result_id": "d2565486-33cf-4145-8423-84936f55980d"
+    },
+    {
+      "claim_id": "2cefe598-4ecb-45ca-a0e3-573ac6ca73f6",
+      "result_id": "cbafb539-9539-46ff-ac0f-4f67f4534e21"
+    },
+    {
+      "claim_id": "e5eb0cbd-a132-422d-9448-8166c0b2695f",
+      "result_id": "cbafb539-9539-46ff-ac0f-4f67f4534e21"
+    },
+    {
+      "claim_id": "e5844b5e-10b8-4215-bb9a-2c8f0990282b",
+      "result_id": "cbafb539-9539-46ff-ac0f-4f67f4534e21"
+    },
+    {
+      "claim_id": "6d873b24-7143-4a0a-a9fc-a19a6ea99cf8",
+      "result_id": "cbafb539-9539-46ff-ac0f-4f67f4534e21"
+    },
+    {
+      "claim_id": "b4c7d37c-368d-408a-b242-9d190102bdba",
+      "result_id": "cbafb539-9539-46ff-ac0f-4f67f4534e21"
+    },
+    {
+      "claim_id": "3800a0b9-7cca-4353-97e4-4b4914925a88",
+      "result_id": "cbafb539-9539-46ff-ac0f-4f67f4534e21"
+    },
+    {
+      "claim_id": "f202d3a0-d317-4bd0-a4dc-291e234101fd",
+      "result_id": "3725d32e-08e4-4bda-9b09-d6c68eb0e9fe"
+    },
+    {
+      "claim_id": "926b48f4-034d-421e-9d9d-bfa3c492f9df",
+      "result_id": "2f432ac4-f206-4fb5-a765-430fe08ba33e"
+    },
+    {
+      "claim_id": "2f90dbc1-140f-468a-8c3d-ed5efc65b35d",
+      "result_id": "2f432ac4-f206-4fb5-a765-430fe08ba33e"
+    },
+    {
+      "claim_id": "579dc73c-8f3d-40c2-856b-84e5905684cf",
+      "result_id": "2f432ac4-f206-4fb5-a765-430fe08ba33e"
+    },
+    {
+      "claim_id": "d280a9b3-be2d-4510-b5a8-eb5ccff3ea81",
+      "result_id": "2f432ac4-f206-4fb5-a765-430fe08ba33e"
+    },
+    {
+      "claim_id": "952b5b3a-ab86-4fcb-8c96-aec05915cdb1",
+      "result_id": "2f432ac4-f206-4fb5-a765-430fe08ba33e"
+    },
+    {
+      "claim_id": "58cfb606-afa2-4a0c-a0b2-7809193924a2",
+      "result_id": "2f432ac4-f206-4fb5-a765-430fe08ba33e"
+    },
+    {
+      "claim_id": "77ebfbbc-48d7-4a08-8ca7-4278c0bc5463",
+      "result_id": "2f432ac4-f206-4fb5-a765-430fe08ba33e"
+    },
+    {
+      "claim_id": "dbcbbc16-ff8c-4d3c-9e11-3d79a024f655",
+      "result_id": "2f432ac4-f206-4fb5-a765-430fe08ba33e"
+    },
+    {
+      "claim_id": "4851aab5-76a5-469c-8555-c923ea00213e",
+      "result_id": "6704aba1-f956-40c7-835a-ab6cdd3f57d7"
+    }
+  ],
+  "comparisons": []
+}

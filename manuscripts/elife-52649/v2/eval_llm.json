@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A3G is a two-domain ssDNA deoxycytidine deaminase that inhibits HIV-1 infectivity through both deamination-dependent and deamination-independent mechanisms. The CTD is enzymatically active but binds ssDNA weakly when isolated, while the NTD lacks deaminase activity but binds ssDNA/RNA with high affinity and is critical for virion packaging and oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 establish the structural and functional characteristics of A3G based on well-cited prior literature. These background claims provide the foundation for understanding A3G's domain architecture, enzymatic function, oligomerization properties, and antiviral mechanisms, all of which are consistently supported by multiple independent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A3G uses facilitated diffusion to search for deamination targets, moving via 1D sliding, 3D diffusion with rebinding, or direct intersegmental transfer. The enzyme exhibits directional processivity (3' to 5'), has a binding site size \u226417 nt, and positions the CTD toward the 5' end during catalysis, creating a ~30 nt 'dead zone' at the 3' end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C38 describe A3G's search mechanisms and binding geometry based on prior biochemical and biophysical studies. These claims are well-supported by multiple citations and provide essential context for interpreting the current optical tweezers measurements. The binding site size inference (C38) is consistent with AFM observations of tetramers on 69 nt substrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "An 8100 nt ssDNA construct was characterized using optical tweezers, yielding force-extension curves that fit the FJC polymer model with parameters L = 0.565 \u00b1 0.003 nm, p = 0.717 \u00b1 0.024 nm, and S = 804 \u00b1 36 pN, consistent with previous measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe the experimental setup and baseline characterization of the ssDNA substrate. The FJC fitting parameters are well-determined (small error bars), consistent with prior literature (Smith et al., 1996), and provide a validated baseline for subsequent A3G binding measurements. The methodology is sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A3G binding reduces ssDNA extension at constant force. WT A3G rapidly oligomerizes and shows no measurable dissociation at low forces (<50 pN) over experimental timescales. The oligomerization-deficient FW mutant retains enzymatic activity and similar binding affinity but remains monomeric and dissociates after free protein removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 establish key differences between WT and FW mutant A3G binding behavior. The observations are directly measured from optical tweezers data (Figure 1B) and are consistent with prior characterization of the FW mutant (Chelico et al., 2010; Morse et al., 2017). The use of the FW mutant as a monomeric control is well-justified and critical for dissecting oligomerization effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The shape of ssDNA-A3G force-extension curves depends on both the force at which A3G binds and the rate of extension change. FECs equilibrated at high force fit the FJC model with increased persistence length (1.4 \u00b1 0.1 nm), while FECs starting at low force cannot be fit by any FJC parameters, indicating force-dependent conformational states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 reveal complex, history-dependent mechanical behavior of the ssDNA-A3G complex. The observations are directly demonstrated in Figure 1C-D with appropriate controls. The doubling of persistence length is consistent with prior observations for A3H (C52), and the inability to fit low-force FECs with FJC parameters provides strong evidence for multiple binding conformations. The analysis is rigorous and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A3G binding and dissociation kinetics follow single exponential behavior. The binding rate decreases exponentially with force (kon(0) = 0.0095 \u00b1 0.0015 s\u207b\u00b9nM\u207b\u00b9, dB = 0.084 \u00b1 0.005 nm), while dissociation rate is force-independent (koff = 0.0139 \u00b1 0.0005 s\u207b\u00b9). The calculated Kd varies between 1-10 nM, indicating >85% saturation even at highest forces. At low forces, oligomerization occurs faster than the experimental timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 provide quantitative kinetic characterization of A3G-ssDNA interactions. The exponential fits are well-justified and shown in Figure 2 with appropriate error analysis (N\u22655 replicates). The force-dependent kon but force-independent koff is mechanistically informative. The saturation calculations (C59-C60) properly account for force-dependent affinity. The inference about oligomerization timescales (C61) logically follows from the WT dissociation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The equilibrated change in ssDNA extension due to A3G binding varies 4-fold with force (from ~0.005 nm/nt at 80 pN to ~0.02 nm/nt at 10 pN). This variation cannot be explained by reduced binding affinity since all experiments achieve >85% saturation, indicating that A3G modifies ssDNA polymer properties in a complex, force-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 identify a key puzzle that motivates the two-state conformational model. The 4-fold variation in extension change is clearly demonstrated in Figure 3A. The saturation correction analysis (Figure 3\u2014figure supplement 1) rigorously rules out affinity changes as an explanation. The inference that complex polymer property modifications must be responsible (C64) is logical and sets up the subsequent mechanistic investigations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "At 10 pN, removing free A3G after initial binding triggers a secondary ssDNA compaction that is slower and larger than the initial compaction. This secondary compaction is not observed at higher forces and occurs with both WT and FW mutant A3G (faster for FW), indicating it results from monomer activity rather than oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 describe an unexpected secondary compaction phenomenon shown in Figure 3B. The observation is reproducible (N\u22655), occurs with both WT and FW mutant, and is force-dependent. The inference that this is a monomer activity (C69) is well-supported by the FW mutant data, which cannot oligomerize. This finding provides key evidence for A3G's ability to form ssDNA loops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "On a 2x ssDNA substrate (force-melted dsDNA), A3G binding causes a 10-fold larger extension change (~0.05 nm/nt) compared to 1x ssDNA at 80 pN. This change matches the predicted difference between one and two parallel ssDNA strands held at 80 pN total tension. Both WT and FW mutant exhibit this behavior, indicating individual A3G monomers can simultaneously bind and couple two ssDNA strands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide strong evidence for A3G's ability to bridge ssDNA strands. The 10-fold difference is clearly shown in Figure 3\u2014figure supplement 2. The quantitative agreement with FJC predictions for parallel strands (C71) is compelling. The observation with FW mutant (C73) definitively demonstrates this is a monomer property. This result directly supports the loop formation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The ssDNA-A3G system is well-represented as a two-state model with non-compacting and compacting conformations. Force-jump experiments show A3G transitions between states on ~1-10 s timescales (much faster than dissociation). The V-shaped force dependence of transition rates fits a Bell model with dC ~0.8 nm and d-C ~0.08 nm. At zero force, the compacted state is favored (~90% occupancy, ~3 kBT energy difference).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 establish the two-state conformational model through force-jump experiments (Figure 4). The transition rates are well-measured (N\u22656) and clearly faster than dissociation (C77), confirming these are conformational changes of bound protein. The Bell model fitting (C81) is appropriate and yields physically reasonable parameters. The 10-fold difference between dC and d-C (C82) suggests short-range interactions. The thermodynamic analysis (C79-C80) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The kinetics of A3G binding are consistent with a binding site size on the order of 15 nt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 provides an independent estimate of binding site size from kinetic analysis (Figure 4\u2014figure supplement 1D). The value of ~15 nt is consistent with the \u226417 nt estimate from AFM tetramer studies (C38) and provides validation for the quantitative modeling. The analysis appropriately tests different binding site sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Using a hybrid dsDNA/ssDNA construct to study A3G binding at low forces where ssDNA secondary structure forms, A3G disrupts secondary structure (increasing extension at 4-8 pN) but forms loops that reduce final extension below fully extended ssDNA. At near-zero force, A3G stabilizes large ssDNA loops that resist disruption up to 20-50 pN and persist after protein removal. This loop formation is independent of oligomerization (observed with FW mutant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 extend the findings to physiologically relevant low-force conditions using a clever hybrid construct design (Figure 5). The observations clearly distinguish A3G's effects on secondary structure versus loop formation. The large, stable loops observed at near-zero force (C87-C88) provide direct evidence for the proposed mechanism. The FW mutant controls (C89-C90) definitively show loop formation is a monomer property. The experiments are well-designed and executed (N\u22655).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Integration of current findings with prior AFM and FRET studies supports a model where A3G's contracting binding conformation is associated with enzymatic activity. The CTD is structurally similar to A3A (low affinity, enzymatically active), while the full A3G protein has high affinity (1-10 nM measured here). Previous studies showed A3G can contract ssDNA segments larger than its minimum binding site, with enhanced contraction in the presence of CCC deamination motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C102 synthesize current optical tweezers data with prior AFM and FRET studies to build a coherent mechanistic model. The integration is logical and well-supported by appropriate citations. The measured affinity (1-10 nM, C94) is a new quantitative contribution. The conclusion that the contracting conformation is enzymatically active (C102) is well-supported by convergent evidence from multiple techniques, though it remains somewhat indirect since enzymatic activity is not directly measured here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Molecular dynamics simulations and AFM imaging reveal A3G exists in globular (~90% free protein) and dumbbell conformations. ssDNA binding stabilizes the dumbbell state, with substrate length affecting the distribution (69 nt favors dumbbell, 25 nt increases globular). The domains can transition between conformations on ~1 s timescales. This supports a model where free A3G (globular) initially binds via one domain, then stabilizes in dumbbell conformation allowing independent CTD binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C111 integrate computational and AFM studies to explain the conformational dynamics observed in optical tweezers experiments. The cited studies (Gorle et al., 2017; Pan et al., 2019) provide independent support for the two-conformation model. The timescales from AFM (~1 s, C108) match well with the optical tweezers measurements (1-10 s, C113). The mechanistic model (C109-C111) logically connects these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Extrapolated to zero force, A3G binds ssDNA at 0.01 s\u207b\u00b9 nM\u207b\u00b9 and dissociates on a ~70 s timescale, while switching between conformational states on ~1-10 s timescales. These rates agree well with prior FRET measurements showing short timescale on/off rates (0.01 s\u207b\u00b9 and 0.23 s\u207b\u00b9) and long binding trajectories (75-110 s). The short off rate likely reflects transient CTD binding controlling conformational sampling, while the long timescale reflects stable NTD binding, allowing the CTD to rebind dozens of times per binding event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 provide quantitative kinetic analysis and excellent agreement with independent FRET measurements (Senavirathne et al., 2012). The correspondence between techniques is striking: binding rates match (C116), conformational switching timescales are consistent, and dissociation timescales agree (C118). The mechanistic interpretation (C117, C119) logically connects the different timescales to NTD versus CTD dynamics. This cross-validation strongly supports the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Salt concentration modulates A3G-ssDNA interactions: reduced salt decreases the range of FRET states per binding event (presumably slowing CTD scanning), while higher salt shows weaker initial NTD-mediated binding (slower kon). Salt also affects oligomerization differently in the presence versus absence of ssDNA. However, WT A3G stably binds ssDNA across a range of salt concentrations, indicating robust oligomerization with slightly altered kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 address salt effects using both current data (Figure 2\u2014figure supplement 1) and prior literature. The observations are consistent with electrostatic screening affecting NTD-ssDNA interactions. The finding that oligomerization is robust across salt conditions (C124) is important for physiological relevance. However, the mechanistic interpretations (C121) are somewhat speculative ('presumably') and could benefit from more direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "High force (>30 pN) destabilizes oligomerization, allowing WT A3G to dissociate at rates equal to the FW mutant, possibly by preventing proper alignment of oligomerization interfaces on straightened ssDNA. At moderate forces, WT and FW mutant contract ssDNA similarly, but as force approaches zero, the FW mutant creates larger loops faster, suggesting inter-protein interactions slow the CTD's ability to repeatedly bind substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C129 characterize how oligomerization affects A3G function across different force regimes. The force-dependent dissociation (C125, Figure 2F) is clearly demonstrated. The mechanistic explanation for force-destabilized oligomerization (C126) is reasonable but somewhat speculative. The differential loop formation kinetics between WT and FW (C128-C129, Figure 3) provide important evidence that oligomerization inhibits CTD dynamics, supporting the model that oligomerization reduces enzymatic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Multiple lines of evidence indicate oligomerization inhibits A3G enzymatic activity: (1) deamination rate increases less than A3G concentration despite increased oligomerization, (2) pre-oligomerized WT A3G shows greatly reduced activity while FW mutant and A3A retain faster rates, (3) high A3G concentrations show biphasic deamination kinetics (fast then slow) while FW mutant maintains speed, and (4) oligomers can break up over 100s timescales via intersegmental binding. Under physiological conditions with limited A3G monomers per kilobase of viral genome, oligomerization would be dynamic, allowing most genome sampling before stable oligomer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C143 synthesize extensive prior literature on oligomerization effects with current findings to resolve the debate about whether oligomerization inhibits enzymatic activity. The evidence from multiple experimental approaches (AFM, biochemical assays, optical tweezers) converges on the conclusion that oligomerization reduces activity. The physiological extrapolations (C142-C143) are reasonable inferences based on the measured kinetics and known virion conditions (7\u00b14 monomers per ~10 kb genome).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "A comprehensive biophysical model of A3G function during HIV-1 replication: Free A3G (globular) rapidly binds ssDNA via the NTD after viral RNA degradation. On ~1 s timescales, the CTD binds (dumbbell conformation), enabling enzymatic activity and CCC motif recognition. The NTD remains bound for ~100 s while the CTD repeatedly samples substrate, allowing processive 5' direction deamination with ~30 nt 3' dead zone. The CTD can bind non-locally forming transient loops, enabling intersegmental transfer to bypass dsDNA/RNA-DNA barriers. With limited monomers (~1 per kb), collisions are rare, but eventual oligomerization inhibits enzymatic activity while creating stable roadblocks that slow reverse transcription, allowing remaining monomeric A3G to continue deamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C162 present an integrated mechanistic model (Figure 6) that synthesizes all experimental findings into a coherent picture of A3G function. The model logically connects: (1) domain-specific binding properties, (2) conformational dynamics and timescales, (3) loop formation and intersegmental transfer, (4) oligomerization effects, and (5) physiological constraints. Each component is supported by experimental evidence from this study and prior work. The model successfully explains how limited A3G molecules can efficiently deaminate a large viral genome through both deamination-dependent and -independent mechanisms. This represents a major conceptual advance.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Two-photon uncaging (TPU) of glutamate at individual GC spines triggers both synchronous and asynchronous GABA release onto MC dendrites. The method is spatially specific to single spines, produces urIPSCs with mean amplitude 12\u00b18 pA, release probability Pr_GABA=0.34\u00b10.11, and variable latencies. Responses are stable over time and include asynchronous events lasting up to 500 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19, C25-C37 provide converging experimental evidence from voltage-clamp recordings, Ca2+ imaging controls, and pharmacological validation (bicuculline blockade) that TPU can trigger reciprocal GABA release. The spatial specificity is demonstrated by Ca2+ imaging showing no signal in adjacent spines (C27), and the quantitative characterization of amplitude, release probability, and kinetics is well-documented with appropriate sample sizes and statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Voltage-gated Na+ channels (Navs) are essential for GABA release from GC spines. TTX (500 nM) reduced urIPSC amplitudes to 0.17\u00b10.34 of control and decreased spontaneous IPSC frequency to 0.24\u00b10.17 of control, while leaving spontaneous IPSC amplitude unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C42 demonstrate through pharmacological blockade with TTX that Navs are required for urIPSCs. The large effect size (Cohen's d=2.54), statistical significance (p<0.005), and selective effect on frequency but not amplitude of spontaneous events support the conclusion. The lack of correlation between TTX effects on spontaneous and evoked activity argues against indirect network effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "High-voltage-activated Ca2+ channels (HVACCs) are required for GABA release from GC spines. Blockade with \u03c9-conotoxin MVIIC (1 \u00b5M) reduced urIPSCs to 0.08\u00b10.14 of control, an effect comparable to TTX blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C45 demonstrate through pharmacological blockade with CTX that HVACCs are essential for release. The very large effect size (Cohen's d=6.6), statistical significance (p<0.005), and similarity to TTX effects support the conclusion. The differential effect on spontaneous IPSC frequency (less than TTX) is consistent with HVACCs acting downstream of Navs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C78"
+    ],
+    "result": "NMDA receptors (NMDARs) are strongly involved in reciprocal GABA release from GC spines. D-APV (25 \u00b5M) reduced urIPSCs to 0.22\u00b10.21 of control and decreased spontaneous IPSC frequency to 0.27\u00b10.23 of control. APV also reduced afterhyperpolarization (AHP) amplitude following single MC action potentials to 0.86\u00b10.11 of control, an effect that occluded with GABAAR blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C46-C50, C78 provide strong evidence for NMDAR involvement through both TPU experiments and physiological MC stimulation. The TPU data show large effect sizes (Cohen's d=3.7) and statistical significance. Critically, the AHP occlusion experiments (C48-C49) provide independent validation that NMDARs contribute to recurrent inhibition without preventing spine spike generation, addressing potential concerns about TPU overstimulation. The convergence of multiple experimental approaches strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C51",
+      "C52",
+      "C81"
+    ],
+    "result": "Computational simulations based on a detailed NEURON model show that NMDAR- and HVACC-mediated Ca2+ currents temporally overlap during the spine spike. The local action potential causes transient boosting of NMDAR Ca2+ current through relief of Mg2+ block, with the NMDAR-mediated Ca2+ spikelet beginning before and overlapping with HVACC current for >1 ms. This overlap is robust to parameter variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C51-C52, C81 present simulation results from a published, validated model (Aghvami et al., 2019) showing temporal overlap of Ca2+ currents. The simulations explain how NMDARs could contribute to release despite previous observations that Nav activation doesn't substantially affect NMDAR-mediated Ca2+ signals (C81). The robustness analysis strengthens confidence in the finding. However, simulations are model-dependent and require experimental validation of the predicted temporal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Immunogold electron microscopy demonstrates NMDAR presence at GABAergic (symmetric) synapses in GC spines. GluN1 and GluN2A/B labeling density at symmetric synapses was significantly higher than at non-synaptic membranes (p<0.0001). Symmetric and asymmetric synaptic profiles were mostly contiguous (44%) or within 100 nm (36%). Radial distribution analysis shows labeling predominantly associated with both presynaptic GABAergic and postsynaptic glutamatergic GC membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C53-C62 provide ultrastructural evidence for presynaptic NMDARs through quantitative immunogold EM. The statistical analysis of labeling densities across membrane compartments is rigorous, with appropriate controls (non-synaptic membrane) and multiple antibodies (GluN1, GluN2A/B). The proximity measurements (C53) support the possibility of Ca2+ microdomain cooperation. The radial distribution analysis (C61-C62) strengthens the localization claims. Sample sizes appear adequate for EM studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "NMDARs play a direct presynaptic role in GABA release from reciprocal spines, cooperating with the spine spike. This cooperation could be mediated by overlapping NMDAR- and HVACC-mediated Ca2+ entry. A consequence is that inhibitory output from GC spines requires the presence of glutamate and synaptic input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 synthesize the physiological (C4-C6), computational (C7), and ultrastructural (C8) evidence into a mechanistic model. The conclusion that NMDARs play a direct presynaptic role is well-supported by the convergence of multiple lines of evidence. The proposed mechanism of overlapping Ca2+ entry (C64) is a reasonable hypothesis based on the simulations and ultrastructure, though direct experimental validation of Ca2+ dynamics would strengthen this. The logical inference about glutamate requirement (C65) follows from the NMDAR dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C72"
+    ],
+    "result": "Under physiological conditions, single GC spine inputs produce small somatic effects (~0.5 mV hyperpolarization) and are unlikely to influence MC firing without coordinated activity. The efficiency of the reciprocal microcircuit is estimated as Preciprocal\u22480.2. GC spines likely release with higher probability during coincident non-local signaling due to increased spine Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C71-C72 provide quantitative estimates of functional impact based on experimental measurements and cited literature values. The calculations are transparent and use reasonable assumptions (e.g., in vivo input resistance from Angelo and Margrie, 2011). The conclusion about coordinated activity requirement is supported by citations (Fukunaga et al., 2014; McIntyre and Cleland, 2016). The prediction about higher release probability during non-local signaling (C72) is a reasonable inference supported by previous work on Ca2+ dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Methodological characterization: DNI (1 mM) increased spontaneous IPSC frequency 1.9\u00b11.2-fold and reduced amplitude to 0.47\u00b10.16 of control. Bicuculline blocked spontaneous activity. Experiments were performed at +10 mV holding potential and physiological Mg2+ (1 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 describe methodological details and control experiments. The DNI effects are well-characterized with appropriate statistics. The choice of +10 mV holding potential is justified by citations to avoid NMDA autoreceptor activation. The use of physiological Mg2+ is important for interpreting NMDAR contributions. These are standard methodological validations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The observed Pr_GABA might represent an upper limit due to potential homeostatic upregulation from DNI-induced disinhibition, and might decrease during development based on prior observations of reduced recurrent inhibition in older animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70 are speculative caveats about potential confounds. While the concerns are reasonable and supported by citations (Rannals and Kapur, 2011; Dietz et al., 2011; Dum\u00e9nieu et al., 2015), they are not directly tested in this study. The authors appropriately present these as limitations rather than established facts. Additional experiments in the absence of DNI or in older animals would be needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The fastest urIPSCs were detected within 2 ms of TPU onset, implying fast coupling between Ca2+ entry and release. Substantial asynchronous release was observed up to 500 ms post-TPU, consistent with prior studies localizing asynchronous signaling to GCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 characterize the temporal properties of release. The fast latencies (C73) are well-documented in Figure 1E. The inference about fast coupling (C74) is reasonable and supported by citations (Isaacson, 2001; Bywalez et al., 2015; Nunes and Kuner, 2018). The asynchronous release observations (C75) are supported by the area analysis (C34) and consistent with prior literature (Schoppa et al., 1998; Chen et al., 2000; Isaacson, 2001).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "Previous work showed that Ca2+ entry via NMDARs occurs independently from the Nav-HVACC pathway, and that TPU resulted in a slightly larger NMDAR component (~65%) than synaptic stimulation (~50%). Earlier studies found no obvious influence of Nav activation on NMDAR-mediated Ca2+ entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C80 summarize prior findings from the authors' previous work (Bywalez et al., 2015; Egger et al., 2005). These are appropriately cited and provide context for the current findings. The apparent discrepancy between no Nav effect on NMDAR Ca2+ signals (C80) and the current finding of NMDAR-Nav cooperation is addressed by the simulations (C81) showing the effect is too small to detect with Ca2+ imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Prior literature supports activity-dependence and NMDAR-dependence of GC-mediated lateral inhibition. NMDAR blockade is routinely used to dissect GC-mediated from glomerular layer inhibition. In vivo studies show subsets of MCs with odor-evoked inhibition not mediated by GCs. Behavioral studies show both GC NMDARs and Navs are important for odor mixture discrimination but not pure odor discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 summarize relevant prior literature with appropriate citations. These claims provide context for interpreting the current findings and support the functional significance of the mechanisms identified. The citations appear accurate and relevant. This is appropriate scholarly contextualization rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors hypothesize that reciprocal spines allow GCs to selectively interact with coactive glomerular columns, potentially enabling efficient binding of dispersed olfactory representations. Reciprocal spines with their unique features (spine spikes, presynaptic NMDARs) may represent a special adaptation to olfactory processing demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 present hypotheses about functional significance based on the experimental findings. While these are reasonable interpretations supported by the requirement for glutamate (C65) and behavioral/in vivo literature (C91-C94), they remain speculative. The authors appropriately present these as hypotheses ('suggest', 'might be') rather than established facts. Direct testing would require in vivo experiments examining odor-evoked activity patterns and their dependence on the identified mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on olfactory bulb circuitry: Reciprocal dendrodendritic synapses between MC dendrites and GC spines are abundant in the olfactory bulb. GC spines have long necks that may electrically isolate synapses. Previous work showed unitary inputs can trigger spine spikes (local Nav activation) that activate HVACCs. Whether unitary activation can trigger reciprocal GABA release was unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C18 provide established background knowledge and identify the gap addressed by the study. These are well-supported by appropriate citations to prior literature, including the authors' previous work (Bywalez et al., 2015). The anatomical and physiological descriptions are consistent with established knowledge of olfactory bulb circuitry. This provides appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Prior literature on presynaptic NMDARs: Presynaptic NMDARs have been implicated in plasticity and modulation of basal transmission, mostly during repetitive release. PV+ cells differ from GCs in having Ca2+-permeable AMPARs and likely absent NMDAR responses. Direct triggering of release via presynaptic NMDARs during unitary transmission has not been previously observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C82-C87 provide context from prior literature on presynaptic NMDARs with appropriate citations to reviews (Bouvier et al., 2015; Banerjee et al., 2016) and primary studies. The claim of novelty (C87) is appropriately qualified ('to our knowledge') and appears reasonable based on the cited literature. This contextualizes the significance of the findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,472 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C27"
+    ],
+    "result": "The model has a very large number of possible steady states that can be predicted using game-theoretical methods adapted from the stable marriage problem based only on ranked competitive abilities of species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, and C27 collectively establish a novel methodological contribution. The enumeration of states (C15) is demonstrated through systematic analysis, the stable marriage correspondence (C27) is detailed in Appendix 3, and the prediction method (C16) is validated through the model results. The mathematical framework appears sound and is supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C57",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Multistability in the model requires microbial species to have different stoichiometries of essential nutrients, with the likelihood of multistability systematically related to the variation in species stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C55, C57, C94, C95, and C96 form a coherent result about the necessity of stoichiometric diversity for multistability. This is supported by numerical simulations (Figure 5), mathematical arguments (Appendix 5), and systematic variation of yield parameters across 4000 model variants. The negative result (C57) strengthens the conclusion by showing multistability is impossible with identical stoichiometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C60",
+      "C104"
+    ],
+    "result": "Balanced nutrient supply (matching average species stoichiometry) promotes multistability, with approximately 15% of nutrient supply combinations showing multiple stable states in the balanced regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C58, C59, C60, and C104 establish that balanced nutrient supply promotes multistability. This is quantitatively demonstrated in Figure 3B through Monte Carlo sampling of 10^6 nutrient supply combinations. The 15% frequency (C59) provides a concrete measure, and the prediction (C60) generalizes the finding appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C78",
+      "C79",
+      "C83",
+      "C107"
+    ],
+    "result": "Balanced nutrient supply makes individual community states less structurally stable, with feasible ranges decreasing exponentially (approximately two-fold per species added) as species richness increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C77, C78, C79, C83, and C107 demonstrate the trade-off between multistability/diversity and structural stability. Figure 4D provides clear quantitative evidence of the negative correlation, and the exponential decay rate is empirically characterized. This result is consistent with previous work (Grilli et al., 2017; Serv\u00e1 et al., 2018) cited in C79.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C49"
+    ],
+    "result": "The model exhibits multistability with overlapping feasible ranges of states, leading to regime shifts characterized by discontinuous and hysteretic changes in species abundances, with dynamically unstable states always accompanying multistable regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C37, C38, C39, C43, C44, and C49 establish the existence and properties of multistability and regime shifts in the model. The results are demonstrated through systematic analysis of overlapping feasible ranges (Figure 2E-F), showing 9 regime shift pairs in the 2C\u00d72N\u00d74S model and 8633 in the 6C\u00d76N\u00d736S model. The connection to established regime shift theory (C39, C43) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C81",
+      "C82",
+      "C105",
+      "C106",
+      "C125"
+    ],
+    "result": "Balanced nutrient supply promotes species diversity, with species richness peaking at around 10.5 species for balanced supply in the 6C\u00d76N\u00d736S model and a sharp peak in the number of distinct community states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C66, C67, C81, C82, C105, C106, and C125 establish that balanced nutrient supply promotes diversity. This is quantitatively demonstrated in Figure 4A and Figure 4\u2014figure supplement 1. The result is consistent with experimental observations (Interlandi and Kilham, 2001) and other consumer-resource models (C126). The three-orders-of-magnitude difference in state numbers (C67) is striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The number of uninvadable states increases exponentially with species richness, but the probability of dynamic instability also increases with diversity, with all states below 10 species being dynamically stable in the 6C\u00d76N\u00d736S model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C73, C74, C75, and C76 establish the relationship between diversity and stability. Figure 4C provides clear evidence of exponential growth in state numbers and the threshold at 10 species. The comparison to May's work (C76) appropriately contextualizes the finding within the broader diversity-stability literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "PCA analysis of microbial abundances shows separation between alternative stable states with five distinct clusters aligned along a quasi-1D manifold with alternating stable and unstable states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C61, C63, and C64 describe the PCA patterns observed in the model. Figure 3C and Figure 3\u2014figure supplement 1 provide visual evidence of the clustering and quasi-1D arrangement. However, C64 is speculative about the interpretation for real ecosystems, which is appropriately acknowledged in the claim's evidence type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Network modularity analysis of the 6C\u00d76N\u00d736S model reveals seven modules, suggesting distinct sets of keystone species drive regime shifts within each module, with additional satellite species that do not affect the bistable switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, C138, C139, and C140 describe the modular structure of the regime shift network. The network analysis (Figure 2F) using established methods (Blondel et al., 2008) provides evidence for the seven modules. However, C51, C138, C139, and C140 involve inferences about keystone species that are not directly validated in the larger model, though they are supported by analysis of the simpler 2C\u00d72N\u00d74S model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The model predicts low likelihood of multistability (~3%) for phytoplankton and mammalian gut microbiomes due to low stoichiometric variation, but higher likelihood (~10%) for soil ecosystems with greater stoichiometric diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C99, C100, C101, C102, and C103 apply the model to predict multistability in real ecosystems. The predictions are based on empirical stoichiometric data from cited studies (Finkel et al., 2016; Reese et al., 2018; Mouginot et al., 2014) combined with the model's relationship between stoichiometric variation and multistability (Figure 5). The approach is sound, though these remain predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C124"
+    ],
+    "result": "The three types of stability (structural, invasion, and dynamic) are largely independent from each other, as demonstrated in the 2C\u00d72N\u00d74S model where 7 of 34 states are uninvadable and only 1 is dynamically unstable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C33, C34, and C124 establish the independence of different stability criteria. Figure 1F provides a classification table showing the independence, and the specific numbers for the 2C\u00d72N\u00d74S model are clearly stated. The log-normal distribution of feasible ranges (C34, Figure 1\u2014figure supplement 1) adds quantitative detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C109"
+    ],
+    "result": "In balanced nutrient environments, the relationship between species competitiveness and prevalence is complex, with even poor competitors occasionally having high prevalence, and all 36 species in the pool present in some environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C69, C70, C71, and C109 describe the complex relationship between competitiveness and prevalence. Figure 4B provides clear visual evidence of this pattern, showing the general trend (C70) but also notable exceptions (C71). The observation that all species are present somewhere (C69) is important for understanding the model's behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C48"
+    ],
+    "result": "When feasible ranges of states share a boundary but do not overlap, transitions between states are smooth and non-hysteretic, with such states sharing the same keystone species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C48 describe continuous transitions between states. Figure 2A and 2C demonstrate this behavior through simulations. The inference about shared keystone species (C48) is supported by analysis of the model structure. This contrasts with the discontinuous regime shifts and provides a complete picture of state transitions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "In the 2C\u00d72N\u00d74S model, all regime shifts are driven by the same bistable switch between two pairs of keystone species, with the dynamically unstable state #7 formed by the union of all four keystone species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 describe the mechanism of regime shifts in the simple model. This is inferred from systematic analysis of the regime shift network (Figure 2E) and the composition of states (Figure 1B). The identification of keystone species and the bistable switch provides mechanistic insight into the model's behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Up to five stable states can be simultaneously feasible for some nutrient supply rates, but the probability of encountering such cases is exponentially small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C54 quantify the extent of multistability. Figure 3A shows the distribution of the number of multistable states, with the Poisson fit indicating exponentially decreasing probability. This provides important context for understanding the typical degree of multistability in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Microbial communities growing on imbalanced nutrient supply have low diversity (about half that of balanced conditions) and a unique uninvadable state where the nutrient in excess has no impact on community composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C110, C111, and C112 describe the behavior in the imbalanced regime. Figure 4A shows the reduced diversity, and the mechanistic explanation follows from Liebig's law as applied in the model. This provides an important contrast to the balanced regime and is consistent with experimental observations (C113).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "Addition of high quantities of one essential nutrient tends to decrease species diversity, consistent with numerous experimental studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 connects the model predictions to experimental observations. The claim is supported by multiple citations to experimental work (Tilman, 1982; Mello et al., 2016). This validation against experimental data strengthens the model's credibility, though the claim itself is about prior work rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "While the overall number of stable states is exponentially large, only very few can be realized for any given set of nutrient supply rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 describe a key property of the model's state space. The exponential growth is demonstrated through enumeration in the 6C\u00d76N\u00d736S model, and Figure 3A shows that typically only 1-2 states are feasible for a given nutrient supply. This highlights the importance of environmental parameters in determining community composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C28",
+      "C35",
+      "C36"
+    ],
+    "result": "Uninvadable and dynamically stable states correspond to natural endpoints of community assembly and persist as long as nutrient supply rates remain within their structural stability range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C35, and C36 provide ecological interpretation of the stable states. These are logical inferences from the definitions of the stability criteria and are consistent with community assembly theory. The interpretation is reasonable but somewhat speculative about real ecological dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C84",
+      "C85",
+      "C108"
+    ],
+    "result": "In balanced environments, many small overlapping feasible ranges lead to frequent state shifts in variable environments, with many dynamically unstable states giving rise to regime shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C84, C85, and C108 synthesize multiple findings about balanced environments. These are inferences from the combined results in Figures 3B, 4C, and 4D. The predictions about frequent shifts (C84, C108) are logical consequences of the small feasible ranges but have not been directly tested through temporal simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The rank order of competitive abilities fully defines the number and invadability of stable states, while multistability depends on the combination of species' nutrient yields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114 and C115 distinguish the roles of different model parameters. C114 is demonstrated through the stable matching approach, and C115 is shown in Figure 5. This separation of parameter roles provides insight into the model's structure and suggests which parameters are most important for different properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The model is the first consumer-resource model capable of multistability between several high-diversity states and extends Tilman's two-species scenario to multiple nutrients of each type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87 and C88 position the model relative to prior work. C87 is a claim about novelty based on literature review, while C88 describes the relationship to Tilman (1982). These claims are appropriately supported by citations, though the novelty claim (C87) is inherently difficult to verify completely.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Common MacArthur model variants with identical yields lack multistability due to a convex Lyapunov function, but variants with different yields can exhibit multistability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C90, and C91 discuss the MacArthur model's properties. These are statements about prior work (C89, C90) and inferences about model variants (C91), all appropriately supported by citations. This contextualizes the current model within the broader consumer-resource modeling literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Tradeoffs between competitive abilities for different nutrients may exist due to limited internal resources, and negative correlations are expected to increase the number of stable states, though this does not lead to multistability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116, C117, and C118 discuss potential tradeoffs and their effects. C117 is supported by citations to previous work, but C116 is speculative about biological mechanisms, and C118 is a prediction by analogy to other models. These claims identify important directions for future work but lack direct validation in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C123"
+    ],
+    "result": "Growth-yield tradeoff, where faster-growing species have lower yields, is expected to increase multistability likelihood in microbial ecosystems compared to macroscopic ecosystems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119, C120, C121, and C123 discuss the growth-yield tradeoff. C119 is established knowledge supported by citations, C121 is an analysis of Tilman's model, but C120 and C123 are predictions that have not been directly tested in the current model. The reasoning is sound but requires validation through simulations incorporating this tradeoff.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The model's findings about balanced nutrients promoting diversity and the relationship between diversity and stability are consistent with other consumer-resource models and May's general trend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C127, and C128 compare the model to prior work. These are appropriately supported by citations (Posfai et al., 2017; Tikhonov and Monasson, 2017; May, 1972; Scheffer and Carpenter, 2003). The consistency with previous findings strengthens confidence in the model while the novel aspects (multistability with high diversity) represent new contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The model can be extended to include generalist species, diauxic shifts, Monod growth kinetics, non-zero death rates, and cross-feeding, with many current results expected to extend to these variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131, C132, C133, C134, C135, and C136 discuss potential model extensions. C133 and C134 are supported by citations and appendix material, but C131, C132, C135, and C136 are speculative proposals for future work. These are reasonable extensions but have not been implemented or validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Regime shift networks can guide selection of environmental trajectories to achieve desired community compositions, with a small number of keystone species driving shifts within network modules alongside satellite species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137, C138, C139, and C140 discuss practical applications and mechanistic insights. C137 is an interpretation of the network's utility, while C138-C140 are inferences from the network structure. These are reasonable interpretations supported by the 2C\u00d72N\u00d74S analysis, though the complexity of the larger model limits detailed validation of the keystone species concept.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7"
+    ],
+    "result": "Microbial communities routinely exhibit multiple possible species compositions for the same environmental parameters, and changes in parameters can trigger regime shifts that significantly alter community function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C6, and C7 establish the empirical motivation for the study. These are statements about observed patterns in real ecosystems, supported by multiple citations to metagenomics and ecosystem studies. This provides important context but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Previous consumer-resource models are primarily based on the MacArthur model with substitutable nutrients, while real ecosystems involve multiple essential nutrients, with prior models accounting for only single metabolites per nutrient type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 review the prior modeling literature and identify the gap addressed by the current study. These are statements about previous work supported by appropriate citations. This establishes the novelty of considering multiple metabolites per essential nutrient type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Each species has exactly one growth-limiting and one non-limiting resource, and the competitive exclusion principle constrains the number of coexisting species to not exceed the total number of nutrients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C26, C141, C142, C143, and C144 describe fundamental properties of the model following from Liebig's law and the competitive exclusion principle. These are logical consequences of the model's assumptions and established ecological principles. They provide important constraints on possible community states.",
+    "result_type": "MINOR"
+  }
+]

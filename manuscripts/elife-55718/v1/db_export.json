@@ -1,0 +1,1087 @@
+{
+  "submission": {
+    "id": "80c1e8d5-5808-4d17-8732-793fc45ad890",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:23:35.117107Z",
+    "updated_at": "2025-12-02T18:23:35.117107Z"
+  },
+  "content": [
+    {
+      "id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "submission_id": "80c1e8d5-5808-4d17-8732-793fc45ad890",
+      "content_type": "manuscript",
+      "content_text": "# Correction: Optogenetically induced low-frequency correlations impair perception\n\n## Authors\n\n- Anirvan S Nandy \u2020\n- Jonathan J Nassi\n- Monika P Jadi\n- John H Reynolds\n\n\u2020 Corresponding author\n\n## Application of the Wilcoxon Signed Rank Test\n\nAfter publication, the authors became aware that the index used to quantify the behavioral effect of laser stimulation (PDMI, perceptual discrimination modulation index) was not normally distributed according to a Lilliefors test of normality ($p<0.05$). We have therefore reanalyzed the data using the appropriate non-parametric hypothesis test -- the Wilcoxon sign-rank test. The experiment was designed to test the hypothesis that low-frequency correlated variability would impair orientation discrimination (corresponding to a median PDMI > 0). A one-tailed Wilcoxon sign-rank test rejected the null hypothesis that the PDMI is not > 0, supporting the conclusion that low-frequency laser stimulation impaired orientation discrimination. Applying the same test to data collected (a) during high-frequency stimulation or (b) when the monkey performed the task on stimuli appearing away from the opsin site, we find no evidence of impairment, supporting our original conclusion that the impairment is limited to low-frequency stimulation and is spatially specific to the retinotopic location of the opsin site.\n\n## Analysis of psychometric fits using a Weibull function\n\nThe p-value from the Wilcoxon sign-rank test ($p=0.048$) was close to our significance threshold ($\\alpha=0.05$). We therefore undertook additional analyses to test the robustness of these conclusions. First, we repeated our analyses using an alternative psychometric function. We applied the Weibull function in place of the logistic function that was used in our initial analyses. The Weibull function is arguably a better choice than the logistic function. It is more widely used in the psychophysical literature due, in part, to the fact that the threshold parameter (alpha) in the Weibull function is decoupled from the other parameters (slope, guessing rate). In other words, the shape of the Weibull depends only on the slope and the guessing rate. Varying the threshold parameter, alpha, shifts the function along the x-axis without changing its shape. This decoupling therefore enables independent estimates of the threshold and slope (Nachmias, 1981). The logistic function, though similar in shape, does not decouple these parameters.\n\nAfter recalculating the PDMI values using Weibull fits we find that the PDMI distribution continues to be non-normal (Lilliefors test) so we again applied the Wilcoxon sign-rank test. As with the PDMI values derived from logistic fits, the Weibull fits show a significant increase in the perceptual threshold for orientation discrimination when introducing low-frequency laser stimulation for stimuli appearing at the retinotopic location of the opsin site (Wilcoxon sign-rank test, $p=0.01$). There was no significant impairment using high-frequency stimulation ($p=0.89$) and no significant impairment for stimuli appearing at the non-opsin site ($p=0.49$) during low-frequency stimulation. Thus, these analyses support the main conclusions of the paper \u2014 that low-frequency stimulation (but not high-frequency stimulation) impairs perception and that this effect is specific to the opsin site.\n\n## Analysis of PDMI within the framework of Estimation Statistics\n\nIn order to provide readers with a deeper understanding of the data, we also reanalyzed the data within the framework of Estimation Statistics (ES). This approach, which has been widely adopted in some scientific disciplines, provides a richer representation of the data than the more commonly used Null-Hypothesis Significance Testing (NHST) approach and is being adopted as a new standard in some neuroscience journals (Bernard, 2019).\n\nAs articulated in the work of Calin-Jageman and Cumming (Calin-Jageman and Cumming, 2019), the Estimation Statistics approach is complementary to the NHST approach, and provides a principled way to measure effect sizes coupled with estimates of uncertainty, yielding interval estimates of effect size.\n\nWe applied this approach as follows. For each orientation change condition $\u0394_{ori}$, we calculated the hit rate as the ratio of the number of trials on which the monkey correctly identified (made a saccade to) the target (i.e., the number of hits) divided by the number of trials on which the target was presented. We defined a false-alarm as a trial on which the monkey made an eye-movement to a non-target stimulus at the cued location, within the same time window, relative to stimulus onset, that was applied to targets when detecting hits.\n\nThere are several possible ways of estimating false alarm (FA) rates in the context of the behavioral task used in this study. To test whether the conclusions of the paper depend on this choice, we carried out the ES analysis for each approach. Estimates of FA rates were computed separately for each session. There was no difference in FA rates across laser and no-laser conditions, so FA rates were averaged across these conditions, below.\n\nFor each of these five approaches, we obtained the maximum likelihood fits to 20 jackknives of the corresponding data (with 5% of trials left out for each jackknife). The threshold value for each experimental condition was taken as the average across the 20 jackknife fits. The results of these five different fitting approaches appear in the Figure below. FA rates were slightly but significantly higher when attention was directed toward the opsin site, so FA rates were computed separately for each attention condition (attend to opsin site [\u2018attend-in\u2019], attend away from opsin site [\u2018attend-away\u2019]). Repeating these analyses by computing FA rates from trials collapsed across attention conditions did not materially change the result.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/55718/elife-55718-fig1-v1.jpg)\n\nPanel A shows fits for three example sessions (the same sessions as the examples in the main text Figure 2B, Figure 2\u2014figure supplement 2B). Blue lines correspond to the low-frequency laser stimulation condition. Black lines correspond to the baseline (no laser stimulation) condition. Solid lines show unconstrained fits (data shown in orange, Panels B-D). Dashed lines show fits constrained to false alarm rates computed by trial (data shown in red, Panels B-D). Dotted lines show fits constrained to guessing rate (data shown in green, Panels B-D). Vertical lines show the corresponding estimates of threshold. Fits for the remaining two estimates of FA rate, not shown, were similar.\n\nLapse rates (defined to be the fraction of targets that went undetected at the largest orientation change, 12o) did not differ between the laser and no-laser conditions, in either attention condition ($p=0.687$, $p=0.69$; two-tailed permutation test). To avoid over-constraining the fits and obtaining erroneous estimates of threshold and slope (Wichmann and Hill, 2001), we left the lapse rate as a free parameter during the fitting procedures.\n\nPDMI values were calculated, for each session, from the estimated thresholds separately for the five different fitting regimes.\n\nWe next analyzed the PDMI values using the estimation statistics framework (https://www.estimationstats.com) to derive confidence intervals on the magnitude of the effect of low-frequency laser stimulation on perceptual threshold. We evaluated the mean difference from zero of the PDMI values when the monkeys performed the task at the opsin site (\u2018attend-in\u2019 condition) and when they performed the same task at a non-opsin site (\u2018attend-away\u2019 condition). These are shown in Panels B and C respectively. The upper part of each panel shows the raw PDMI values for the five fitting procedures described above. The lower part shows the mean difference from zero of these distributions, plotted as bootstrap sampling distributions (Calin-Jageman and Cumming, 2019; Ho et al., 2019), indicating the distribution of effect size that is compatible with the data. 95% confidence intervals are indicated by the black vertical bars. The value below each distribution indicates the percentage of the distribution that is below zero.\n\nLess than 5% of the effect size distribution fell below zero for the attend-in condition for all fitting methods (Panel B), supporting the conclusion that low-frequency laser stimulation causes an impairment in orientation discrimination.\n\nPanel C shows the results of the identical analyses applied to stimuli appearing at the retinotopic location of the non-opsin site. The 95% confidence intervals contain zero for the attend away condition for all fitting methods, providing no indication that low-frequency laser stimulation altered orientation discrimination at the non-opsin site.\n\nFrom these analyses, we conclude that induction of low-frequency correlations at the opsin site impairs orientation discrimination for stimuli appearing at the retinotopic location of the opsin site, and causes no measurable impairment at the non-opsin site. This finding holds across five different approaches to treating FA rates.\n\nTo further assess the spatial selectivity of the impairment, we compared PDMI values across the two attention conditions. Panel D shows the results of the session-wise paired difference in PDMI values across the two attention conditions. 95% or more of the distribution is above zero for four of the analysis. If we constrain the psychometric function by a FA rate estimated as the guessing rate, however, 92.1% of the effect size distribution falls above zero and 7.9% falls below zero. Thus, while we do find compelling evidence for an impairment at the opsin site, the evidence is mixed as to whether this impairment is entirely limited to that site.\n\n## Timing analysis\n\nIn the course of reanalyzing the data, we also examined whether our estimate of false alarm rate could have been influenced by the differential timing of targets and distracters (non-targets). In the task used to estimate orientation discrimination thresholds, target stimuli always occurred after at least one non-target. Since the average time of targets and non-targets differed, a change in the monkey\u2019s strategy over time could differentially affect the likelihood of hits and false alarms. If so, the lower asymptote of the psychometric function, which was fixed by the false alarm rate in some analyses (see red distributions, above figure) could reflect a strategy that was somewhat different from hit rates (the rest of the data used to fit the psychometric function). To examine this, we computed false alarm rates over 500 msec. windows centered on the average onset time of targets (2445 msec. after fixation onset) and non-targets (1531 msec. after fixation onset). False alarm rates did not differ significantly (7.4%, window centered on 2445 msec.; 7.3%, window centered over 1531 msec.; Wilcoxon Signed-Rank test, $p=0.64$).\n",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6f535f87-8e28-410c-ab67-8f4cb6590ce6",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C2",
+      "claim": "A one-tailed Wilcoxon sign-rank test rejected the null hypothesis that the PDMI is not > 0.",
+      "claim_type": "EXPLICIT",
+      "source": "A one-tailed Wilcoxon sign-rank test rejected the null hypothesis that the PDMI is not > 0, supporting the conclusion that low-frequency laser stimulation impaired orientation discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the results of a statistical hypothesis test (Wilcoxon sign-rank test) applied to the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "ad44dbca-823d-4069-8023-aba776f5c5cb",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C3",
+      "claim": "Low-frequency laser stimulation impaired orientation discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "A one-tailed Wilcoxon sign-rank test rejected the null hypothesis that the PDMI is not > 0, supporting the conclusion that low-frequency laser stimulation impaired orientation discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (Wilcoxon sign-rank test) of experimental data showing PDMI > 0.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "a4e7ab44-7d7b-417d-a015-b72916fea6c6",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C4",
+      "claim": "High-frequency stimulation did not impair orientation discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying the same test to data collected (a) during high-frequency stimulation or (b) when the monkey performed the task on stimuli appearing away from the opsin site, we find no evidence of impairment, supporting our original conclusion that the impairment is limited to low-frequency stimulation and is spatially specific to the retinotopic location of the opsin site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Wilcoxon sign-rank test results showing no significant effect during high-frequency stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "fb0cbc9e-1d81-4bf2-8394-a58a6ae35ad5",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C5",
+      "claim": "The impairment is spatially specific to the retinotopic location of the opsin site.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying the same test to data collected (a) during high-frequency stimulation or (b) when the monkey performed the task on stimuli appearing away from the opsin site, we find no evidence of impairment, supporting our original conclusion that the impairment is limited to low-frequency stimulation and is spatially specific to the retinotopic location of the opsin site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical tests showing impairment at the opsin site but not away from it.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "1937ba52-c9df-4fb1-a7fd-2a7aa78f2aad",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C8",
+      "claim": "The Weibull function is more widely used in the psychophysical literature than the logistic function.",
+      "claim_type": "EXPLICIT",
+      "source": "It is more widely used in the psychophysical literature due, in part, to the fact that the threshold parameter (alpha) in the Weibull function is decoupled from the other parameters (slope, guessing rate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about psychophysical methods in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "a4bb0e8e-6212-41f4-945a-e9ef63813073",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C9",
+      "claim": "The threshold parameter (alpha) in the Weibull function is decoupled from the other parameters (slope, guessing rate).",
+      "claim_type": "EXPLICIT",
+      "source": "It is more widely used in the psychophysical literature due, in part, to the fact that the threshold parameter (alpha) in the Weibull function is decoupled from the other parameters (slope, guessing rate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a mathematical property of the Weibull function, which is established knowledge in psychophysics, and is cited to Nachmias, 1981.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "a65248e1-2d79-4c1d-b139-a340353275df",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C10",
+      "claim": "The shape of the Weibull function depends only on the slope and the guessing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the shape of the Weibull depends only on the slope and the guessing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a mathematical property of the Weibull function based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "b774fb9f-9227-4f82-84ff-79956602fbcb",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C11",
+      "claim": "Varying the threshold parameter, alpha, shifts the Weibull function along the x-axis without changing its shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Varying the threshold parameter, alpha, shifts the function along the x-axis without changing its shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a mathematical property of the Weibull function based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "84d97f5e-8956-4701-94f6-2a328d036eb3",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C12",
+      "claim": "The decoupling of parameters in the Weibull function enables independent estimates of the threshold and slope (Nachmias, 1981).",
+      "claim_type": "EXPLICIT",
+      "source": "This decoupling therefore enables independent estimates of the threshold and slope (Nachmias, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nachmias, 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "ad0ac622-09d4-46b8-963d-f26fc69ae422",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C13",
+      "claim": "The logistic function does not decouple threshold and slope parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The logistic function, though similar in shape, does not decouple these parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a mathematical property of the logistic function based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "06e99b01-dc95-4378-a3bf-5b9cabd76b96",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C14",
+      "claim": "The PDMI distribution calculated using Weibull fits is non-normal according to the Lilliefors test.",
+      "claim_type": "EXPLICIT",
+      "source": "After recalculating the PDMI values using Weibull fits we find that the PDMI distribution continues to be non-normal (Lilliefors test) so we again applied the Wilcoxon sign-rank test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical test results (Lilliefors test) performed on the recalculated PDMI data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "d50b3605-2440-445c-abec-fcb706a04ec6",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C18",
+      "claim": "Low-frequency stimulation (but not high-frequency stimulation) impairs perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these analyses support the main conclusions of the paper \u2014 that low-frequency stimulation (but not high-frequency stimulation) impairs perception and that this effect is specific to the opsin site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the statistical analyses showing significant impairment with low-frequency but not high-frequency stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "48d2c172-8405-4537-88f2-5054e709d2e4",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C19",
+      "claim": "The perceptual impairment effect is specific to the opsin site.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these analyses support the main conclusions of the paper \u2014 that low-frequency stimulation (but not high-frequency stimulation) impairs perception and that this effect is specific to the opsin site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the statistical analyses showing impairment at the opsin site but not at the non-opsin site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "2cf5004d-3ed0-4ebe-9d09-b7e7d4df0ef7",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C20",
+      "claim": "The Estimation Statistics approach provides a richer representation of the data than the Null-Hypothesis Significance Testing (NHST) approach.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach, which has been widely adopted in some scientific disciplines, provides a richer representation of the data than the more commonly used Null-Hypothesis Significance Testing (NHST) approach and is being adopted as a new standard in some neuroscience journals (Bernard, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bernard, 2019, and represents established knowledge in statistical methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "4c5ce53d-af6d-410c-93fc-758a1089b4bf",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C21",
+      "claim": "Estimation Statistics is being adopted as a new standard in some neuroscience journals (Bernard, 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "This approach, which has been widely adopted in some scientific disciplines, provides a richer representation of the data than the more commonly used Null-Hypothesis Significance Testing (NHST) approach and is being adopted as a new standard in some neuroscience journals (Bernard, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bernard, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "c6a76a03-5492-44a4-b5fa-7ecc4fce6319",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C22",
+      "claim": "The Estimation Statistics approach is complementary to the NHST approach (Calin-Jageman and Cumming, 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "As articulated in the work of Calin-Jageman and Cumming (Calin-Jageman and Cumming, 2019), the Estimation Statistics approach is complementary to the NHST approach, and provides a principled way to measure effect sizes coupled with estimates of uncertainty, yielding interval estimates of effect size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Calin-Jageman and Cumming, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "9942da12-c08d-4b51-ab1c-1354d5edb9e8",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C23",
+      "claim": "The Estimation Statistics approach provides a principled way to measure effect sizes coupled with estimates of uncertainty, yielding interval estimates of effect size.",
+      "claim_type": "EXPLICIT",
+      "source": "As articulated in the work of Calin-Jageman and Cumming (Calin-Jageman and Cumming, 2019), the Estimation Statistics approach is complementary to the NHST approach, and provides a principled way to measure effect sizes coupled with estimates of uncertainty, yielding interval estimates of effect size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Calin-Jageman and Cumming, 2019, describing the properties of the Estimation Statistics approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "dd2fee2c-8299-427d-913b-59998b4962fe",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C25",
+      "claim": "A false-alarm was defined as a trial on which the monkey made an eye-movement to a non-target stimulus at the cued location, within the same time window, relative to stimulus onset, that was applied to targets when detecting hits.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined a false-alarm as a trial on which the monkey made an eye-movement to a non-target stimulus at the cued location, within the same time window, relative to stimulus onset, that was applied to targets when detecting hits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the operational definition used in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "556ca94a-a0e3-4e9e-bb47-8f229833b24c",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C26",
+      "claim": "There was no difference in FA rates across laser and no-laser conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference in FA rates across laser and no-laser conditions, so FA rates were averaged across these conditions, below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of false alarm rates between experimental conditions in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "ca3e74b0-4d8c-4832-85f6-25db72210dff",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C27",
+      "claim": "Maximum likelihood fits were obtained for 20 jackknives of the data with 5% of trials left out for each jackknife.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of these five approaches, we obtained the maximum likelihood fits to 20 jackknives of the corresponding data (with 5% of trials left out for each jackknife).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical method (jackknife resampling) applied to the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "ad46957b-10e4-4413-8bc9-7419e5ffd534",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C28",
+      "claim": "The threshold value for each experimental condition was taken as the average across the 20 jackknife fits.",
+      "claim_type": "EXPLICIT",
+      "source": "The threshold value for each experimental condition was taken as the average across the 20 jackknife fits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the method used to estimate threshold values from the jackknife analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "94cf4bd9-4385-4efe-a200-ad7e95322f99",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C29",
+      "claim": "FA rates were slightly but significantly higher when attention was directed toward the opsin site.",
+      "claim_type": "EXPLICIT",
+      "source": "FA rates were slightly but significantly higher when attention was directed toward the opsin site, so FA rates were computed separately for each attention condition (attend to opsin site ['attend-in'], attend away from opsin site ['attend-away']).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical comparison of false alarm rates between attention conditions in the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "6fdbce17-e1f9-4ceb-b503-741acf1f830c",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C30",
+      "claim": "Repeating the analyses by computing FA rates from trials collapsed across attention conditions did not materially change the result.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeating these analyses by computing FA rates from trials collapsed across attention conditions did not materially change the result.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of analysis results using different methods of computing FA rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "b9a80c07-6068-4981-aecd-01df07d25f76",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C33",
+      "claim": "Over-constraining the fits can lead to erroneous estimates of threshold and slope (Wichmann and Hill, 2001).",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid over-constraining the fits and obtaining erroneous estimates of threshold and slope (Wichmann and Hill, 2001), we left the lapse rate as a free parameter during the fitting procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wichmann and Hill, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "7b2a3522-3b36-4989-89d3-8b5a418a8337",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C34",
+      "claim": "The lapse rate was left as a free parameter during the fitting procedures.",
+      "claim_type": "EXPLICIT",
+      "source": "To avoid over-constraining the fits and obtaining erroneous estimates of threshold and slope (Wichmann and Hill, 2001), we left the lapse rate as a free parameter during the fitting procedures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a methodological choice made in the data analysis to avoid over-constraining fits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "d0b37d14-a01b-404e-84ef-68f634d5b542",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C35",
+      "claim": "Less than 5% of the effect size distribution fell below zero for the attend-in condition for all fitting methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Less than 5% of the effect size distribution fell below zero for the attend-in condition for all fitting methods (Panel B), supporting the conclusion that low-frequency laser stimulation causes an impairment in orientation discrimination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the bootstrap sampling distributions shown in Panel B of the figure and the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "8d7865bf-ed3b-48df-bfdd-86e48f7fb609",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C36",
+      "claim": "Low-frequency laser stimulation causes an impairment in orientation discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Less than 5% of the effect size distribution fell below zero for the attend-in condition for all fitting methods (Panel B), supporting the conclusion that low-frequency laser stimulation causes an impairment in orientation discrimination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the estimation statistics analysis showing less than 5% of the effect size distribution below zero.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "196cb779-9a18-4ae9-a89c-140c340a9c44",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C37",
+      "claim": "The 95% confidence intervals contain zero for the attend away condition for all fitting methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The 95% confidence intervals contain zero for the attend away condition for all fitting methods, providing no indication that low-frequency laser stimulation altered orientation discrimination at the non-opsin site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the confidence interval analysis shown in Panel C of the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "8976384a-f594-4e8b-9fa6-8ba37695168a",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C38",
+      "claim": "Low-frequency laser stimulation did not alter orientation discrimination at the non-opsin site.",
+      "claim_type": "EXPLICIT",
+      "source": "The 95% confidence intervals contain zero for the attend away condition for all fitting methods, providing no indication that low-frequency laser stimulation altered orientation discrimination at the non-opsin site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the confidence interval analysis showing intervals containing zero for the attend away condition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "fd0dcd58-bff4-4012-9199-2d8c1fd20637",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C39",
+      "claim": "Induction of low-frequency correlations at the opsin site impairs orientation discrimination for stimuli appearing at the retinotopic location of the opsin site.",
+      "claim_type": "EXPLICIT",
+      "source": "From these analyses, we conclude that induction of low-frequency correlations at the opsin site impairs orientation discrimination for stimuli appearing at the retinotopic location of the opsin site, and causes no measurable impairment at the non-opsin site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of the estimation statistics analyses across five different fitting methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "2a2068f6-30e2-4099-bf45-6699d024a690",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C40",
+      "claim": "Induction of low-frequency correlations causes no measurable impairment at the non-opsin site.",
+      "claim_type": "EXPLICIT",
+      "source": "From these analyses, we conclude that induction of low-frequency correlations at the opsin site impairs orientation discrimination for stimuli appearing at the retinotopic location of the opsin site, and causes no measurable impairment at the non-opsin site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of the estimation statistics analyses showing no significant effect at the non-opsin site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "5286a3d1-b46a-432f-b6d1-a3e111a9e659",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C41",
+      "claim": "The finding that low-frequency correlations impair orientation discrimination holds across five different approaches to treating FA rates.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding holds across five different approaches to treating FA rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the consistency of results across five different analytical methods for computing false alarm rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "0af352f9-e014-4b87-bfed-2012b5b0eb11",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C42",
+      "claim": "95% or more of the distribution is above zero for four of the analyses comparing PDMI values across attention conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "95% or more of the distribution is above zero for four of the analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the bootstrap sampling distributions shown in Panel D of the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "4e02fde5-0b10-4c33-8c1b-3e08c6371fd1",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C43",
+      "claim": "When constraining the psychometric function by a FA rate estimated as the guessing rate, 92.1% of the effect size distribution falls above zero and 7.9% falls below zero.",
+      "claim_type": "EXPLICIT",
+      "source": "If we constrain the psychometric function by a FA rate estimated as the guessing rate, however, 92.1% of the effect size distribution falls above zero and 7.9% falls below zero.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the bootstrap sampling distribution for the guessing rate method shown in Panel D of the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "8f148987-a4eb-4428-ba5f-78fe93a46438",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C44",
+      "claim": "There is compelling evidence for an impairment at the opsin site.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while we do find compelling evidence for an impairment at the opsin site, the evidence is mixed as to whether this impairment is entirely limited to that site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined results of the estimation statistics analyses showing consistent impairment at the opsin site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "29e690c9-110c-4337-b059-0ee465e3d0f7",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C45",
+      "claim": "The evidence is mixed as to whether the impairment is entirely limited to the opsin site.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while we do find compelling evidence for an impairment at the opsin site, the evidence is mixed as to whether this impairment is entirely limited to that site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the variability in results across different analytical methods, particularly the guessing rate method showing 7.9% of the distribution below zero.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "2f30b9f1-8700-4208-9666-cc32db47c2df",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C46",
+      "claim": "In the task used to estimate orientation discrimination thresholds, target stimuli always occurred after at least one non-target.",
+      "claim_type": "EXPLICIT",
+      "source": "In the task used to estimate orientation discrimination thresholds, target stimuli always occurred after at least one non-target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design of the behavioral task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "a341d1cf-765c-486a-a47e-035d22821de7",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C47",
+      "claim": "The average time of targets and non-targets differed.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the average time of targets and non-targets differed, a change in the monkey's strategy over time could differentially affect the likelihood of hits and false alarms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the temporal structure of the experimental task design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "7516bcd5-3be8-4a1e-a0e8-65ccc8accb0e",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C48",
+      "claim": "A change in the monkey's strategy over time could differentially affect the likelihood of hits and false alarms.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the average time of targets and non-targets differed, a change in the monkey's strategy over time could differentially affect the likelihood of hits and false alarms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference about potential confounds in the experimental design.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "a3c3ff69-ff32-457a-b694-21d44a584e6c",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C49",
+      "claim": "The average onset time of targets was 2445 msec after fixation onset.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine this, we computed false alarm rates over 500 msec. windows centered on the average onset time of targets (2445 msec. after fixation onset) and non-targets (1531 msec. after fixation onset).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim reports a measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "037844ae-c299-47ec-ab9c-1d04d33050ab",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C50",
+      "claim": "The average onset time of non-targets was 1531 msec after fixation onset.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine this, we computed false alarm rates over 500 msec. windows centered on the average onset time of targets (2445 msec. after fixation onset) and non-targets (1531 msec. after fixation onset).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim reports a measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "071117d0-06fd-439b-83f0-c54a8e53a508",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C52",
+      "claim": "The Weibull function is arguably a better choice than the logistic function for psychometric fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "The Weibull function is arguably a better choice than the logistic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a judgment based on the properties of the Weibull function and its use in the psychophysical literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "fa8e7bfc-f3e6-43d5-840b-25a424976e38",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C53",
+      "claim": "Blue lines in Panel A correspond to the low-frequency laser stimulation condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Blue lines correspond to the low-frequency laser stimulation condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the figure legend for Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "0d8c6768-4dd6-4b4a-bfd6-15bfae6f32f3",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C54",
+      "claim": "Black lines in Panel A correspond to the baseline (no laser stimulation) condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Black lines correspond to the baseline (no laser stimulation) condition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the figure legend for Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "58e374eb-0987-488d-8f33-2d8f10162c31",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C55",
+      "claim": "Solid lines in Panel A show unconstrained fits.",
+      "claim_type": "EXPLICIT",
+      "source": "Solid lines show unconstrained fits (data shown in orange, Panels B-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the figure legend for Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "d8a04910-ba4d-4cd5-acb5-fc21f2afb3fa",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C56",
+      "claim": "Dashed lines in Panel A show fits constrained to false alarm rates computed by trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Dashed lines show fits constrained to false alarm rates computed by trial (data shown in red, Panels B-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the figure legend for Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "0b61492c-20b3-49e2-b525-48442b1fcecc",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C57",
+      "claim": "Dotted lines in Panel A show fits constrained to guessing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Dotted lines show fits constrained to guessing rate (data shown in green, Panels B-D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the figure legend for Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "3e4403a0-9436-4496-b746-45604b99a612",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C58",
+      "claim": "Vertical lines in Panel A show the corresponding estimates of threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Vertical lines show the corresponding estimates of threshold.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the figure legend for Panel A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "ef5bf719-1446-42a0-9d6d-225a6c9c4679",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C59",
+      "claim": "Panel A shows fits for three example sessions (the same sessions as the examples in the main text Figure 2B, Figure 2\u2014figure supplement 2B).",
+      "claim_type": "EXPLICIT",
+      "source": "Panel A shows fits for three example sessions (the same sessions as the examples in the main text Figure 2B, Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes what is shown in Panel A of the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "a96e509e-4a95-47c9-bcb8-0bcb8841202f",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C60",
+      "claim": "The lower part of Panels B and C shows the mean difference from zero of the PDMI distributions, plotted as bootstrap sampling distributions (Calin-Jageman and Cumming, 2019; Ho et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "The lower part shows the mean difference from zero of these distributions, plotted as bootstrap sampling distributions (Calin-Jageman and Cumming, 2019; Ho et al., 2019), indicating the distribution of effect size that is compatible with the data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the figure panels and cites the methods used (Calin-Jageman and Cumming, 2019; Ho et al., 2019).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "94b21ca4-831c-4ce3-bbf1-77f590782cc2",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C61",
+      "claim": "Bootstrap sampling distributions indicate the distribution of effect size that is compatible with the data.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower part shows the mean difference from zero of these distributions, plotted as bootstrap sampling distributions (Calin-Jageman and Cumming, 2019; Ho et al., 2019), indicating the distribution of effect size that is compatible with the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the interpretation of bootstrap sampling distributions based on established statistical methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "22714433-18c7-4fcd-a902-016a49b9ea70",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C62",
+      "claim": "95% confidence intervals are indicated by the black vertical bars in Panels B and C.",
+      "claim_type": "EXPLICIT",
+      "source": "95% confidence intervals are indicated by the black vertical bars.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the figure legend for Panels B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "0bc474bc-e7c8-4068-bf9c-fb72bef95136",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C63",
+      "claim": "The value below each distribution in Panels B and C indicates the percentage of the distribution that is below zero.",
+      "claim_type": "EXPLICIT",
+      "source": "The value below each distribution indicates the percentage of the distribution that is below zero.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the figure legend for Panels B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "1499cc98-e91f-4e73-aeef-5896ae46bbf4",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "claim_id": "C64",
+      "claim": "Panel D shows the results of the session-wise paired difference in PDMI values across the two attention conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Panel D shows the results of the session-wise paired difference in PDMI values across the two attention conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes what is shown in Panel D of the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2096e996-6913-4b51-a4cb-6d0dbfcb3a08",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Low-frequency laser stimulation impairs orientation discrimination at the opsin site but not during high-frequency stimulation or at non-opsin sites. This conclusion is supported by a one-tailed Wilcoxon sign-rank test rejecting the null hypothesis that PDMI \u2264 0 for low-frequency stimulation at the opsin site, while finding no evidence of impairment for high-frequency stimulation or at non-opsin locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 provide converging statistical evidence using appropriate non-parametric tests (Wilcoxon sign-rank) after determining the PDMI distribution is non-normal. The spatial and frequency specificity is demonstrated through control conditions showing no impairment, supporting the main experimental conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "6a838e0a-817d-4f37-864e-9524583a8824",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Reanalysis using Weibull psychometric functions instead of logistic functions confirms that low-frequency stimulation impairs perception specifically at the opsin site. The PDMI distribution remained non-normal with Weibull fits, and Wilcoxon sign-rank tests showed significant impairment at the opsin site (p=0.01) but not with high-frequency stimulation (p=0.89) or at non-opsin sites (p=0.49).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C18, and C19 demonstrate robustness of the main finding across different psychometric fitting approaches. The use of Weibull functions is methodologically sound given their superior parameter decoupling properties (C8-C13), and the consistent results strengthen confidence in the original conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "97531f9b-2fed-4934-b77d-fecf8137cc01",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Weibull function is superior to the logistic function for psychometric fitting because its threshold parameter (alpha) is decoupled from slope and guessing rate parameters, enabling independent parameter estimation. This property makes it more widely used in psychophysical literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 and C52 accurately describe established mathematical properties of the Weibull function supported by appropriate citation (Nachmias, 1981). These are well-established methodological facts in psychophysics, though the claim that Weibull is \"arguably better\" (C52) is somewhat subjective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "94180cc1-54c5-44f5-8de1-f6b33a287899",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Estimation Statistics provides a complementary and richer approach to NHST by measuring effect sizes with uncertainty estimates and yielding interval estimates. This approach is being adopted as a new standard in some neuroscience journals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 accurately describe the Estimation Statistics framework with appropriate citations (Bernard, 2019; Calin-Jageman and Cumming, 2019). These represent established methodological knowledge about modern statistical approaches in neuroscience.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "829208fe-9039-4766-855c-25835da5f33f",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The analysis employed rigorous methodological controls including: operational definition of false alarms, jackknife resampling (20 iterations with 5% data exclusion), attention-specific FA rate computation, and leaving lapse rate as a free parameter to avoid over-constraining fits. FA rates did not differ between laser conditions but were higher when attention was directed toward the opsin site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C34 describe sound methodological choices with appropriate justification (citation to Wichmann and Hill, 2001 for C33). The jackknife approach and attention-specific analyses demonstrate thoroughness, though the manuscript could benefit from reporting the statistical test used to determine FA rate differences in C26.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "d94d1b07-1174-4332-b9e2-8d5ad068d42b",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Estimation Statistics analysis confirms that low-frequency laser stimulation impairs orientation discrimination at the opsin site but not at non-opsin sites. Less than 5% of the effect size distribution fell below zero for the attend-in condition across all five fitting methods, while 95% confidence intervals contained zero for the attend-away condition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41 demonstrate robust findings across multiple analytical approaches (five different FA rate treatments), with consistent results supporting spatial specificity. The convergence of evidence across methods strengthens the conclusions, and the use of bootstrap sampling distributions provides appropriate uncertainty quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "12e47d67-4343-400a-a2b3-252a6e78e261",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "While there is compelling evidence for impairment at the opsin site, the evidence regarding complete spatial specificity is mixed. Four of five analyses showed 95%+ of the distribution above zero for attention condition comparisons, but the guessing rate method showed 92.1% above zero and 7.9% below zero.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 appropriately acknowledge uncertainty in the spatial specificity conclusion. The authors transparently report that one of five methods (guessing rate constraint) shows weaker evidence for complete spatial restriction, demonstrating scientific integrity. This nuanced interpretation is appropriate given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "bef59552-4cd7-4f7a-87f4-bc8ed6d7320d",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The experimental design had targets always appearing after at least one non-target, with different average onset times (targets: 2445 ms, non-targets: 1531 ms after fixation). This temporal structure could potentially allow strategy changes to differentially affect hit and false alarm rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C46-C50 identify a potential confound in the experimental design. While C46, C47, C49, and C50 are factual descriptions, C48 is speculative about potential strategy effects. The manuscript addresses this concern with a timing analysis (showing no FA rate difference, p=0.64), but this analysis is mentioned in text without being formally included in the claims, making full evaluation difficult.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    },
+    {
+      "id": "64f54d22-fec8-42b3-9916-e5f67739da21",
+      "content_id": "a131d82d-9789-4431-acf3-a55641180bdc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Figure 1 presents psychometric fits and estimation statistics analyses across multiple fitting approaches. Panel A shows example sessions with different constraint methods, Panels B-C show bootstrap sampling distributions for attend-in and attend-away conditions, and Panel D shows paired differences across attention conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C64 accurately describe the figure components and their interpretation. The figure effectively visualizes the data and statistical analyses, with appropriate use of bootstrap sampling distributions (C60-C61) and confidence intervals (C62). These descriptive claims are well-supported by the figure itself.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:23:35.117107Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6f535f87-8e28-410c-ab67-8f4cb6590ce6",
+      "result_id": "2096e996-6913-4b51-a4cb-6d0dbfcb3a08"
+    },
+    {
+      "claim_id": "ad44dbca-823d-4069-8023-aba776f5c5cb",
+      "result_id": "2096e996-6913-4b51-a4cb-6d0dbfcb3a08"
+    },
+    {
+      "claim_id": "a4e7ab44-7d7b-417d-a015-b72916fea6c6",
+      "result_id": "2096e996-6913-4b51-a4cb-6d0dbfcb3a08"
+    },
+    {
+      "claim_id": "fb0cbc9e-1d81-4bf2-8394-a58a6ae35ad5",
+      "result_id": "2096e996-6913-4b51-a4cb-6d0dbfcb3a08"
+    },
+    {
+      "claim_id": "06e99b01-dc95-4378-a3bf-5b9cabd76b96",
+      "result_id": "6a838e0a-817d-4f37-864e-9524583a8824"
+    },
+    {
+      "claim_id": "d50b3605-2440-445c-abec-fcb706a04ec6",
+      "result_id": "6a838e0a-817d-4f37-864e-9524583a8824"
+    },
+    {
+      "claim_id": "48d2c172-8405-4537-88f2-5054e709d2e4",
+      "result_id": "6a838e0a-817d-4f37-864e-9524583a8824"
+    },
+    {
+      "claim_id": "1937ba52-c9df-4fb1-a7fd-2a7aa78f2aad",
+      "result_id": "97531f9b-2fed-4934-b77d-fecf8137cc01"
+    },
+    {
+      "claim_id": "a4bb0e8e-6212-41f4-945a-e9ef63813073",
+      "result_id": "97531f9b-2fed-4934-b77d-fecf8137cc01"
+    },
+    {
+      "claim_id": "a65248e1-2d79-4c1d-b139-a340353275df",
+      "result_id": "97531f9b-2fed-4934-b77d-fecf8137cc01"
+    },
+    {
+      "claim_id": "b774fb9f-9227-4f82-84ff-79956602fbcb",
+      "result_id": "97531f9b-2fed-4934-b77d-fecf8137cc01"
+    },
+    {
+      "claim_id": "84d97f5e-8956-4701-94f6-2a328d036eb3",
+      "result_id": "97531f9b-2fed-4934-b77d-fecf8137cc01"
+    },
+    {
+      "claim_id": "ad0ac622-09d4-46b8-963d-f26fc69ae422",
+      "result_id": "97531f9b-2fed-4934-b77d-fecf8137cc01"
+    },
+    {
+      "claim_id": "071117d0-06fd-439b-83f0-c54a8e53a508",
+      "result_id": "97531f9b-2fed-4934-b77d-fecf8137cc01"
+    },
+    {
+      "claim_id": "2cf5004d-3ed0-4ebe-9d09-b7e7d4df0ef7",
+      "result_id": "94180cc1-54c5-44f5-8de1-f6b33a287899"
+    },
+    {
+      "claim_id": "4c5ce53d-af6d-410c-93fc-758a1089b4bf",
+      "result_id": "94180cc1-54c5-44f5-8de1-f6b33a287899"
+    },
+    {
+      "claim_id": "c6a76a03-5492-44a4-b5fa-7ecc4fce6319",
+      "result_id": "94180cc1-54c5-44f5-8de1-f6b33a287899"
+    },
+    {
+      "claim_id": "9942da12-c08d-4b51-ab1c-1354d5edb9e8",
+      "result_id": "94180cc1-54c5-44f5-8de1-f6b33a287899"
+    },
+    {
+      "claim_id": "dd2fee2c-8299-427d-913b-59998b4962fe",
+      "result_id": "829208fe-9039-4766-855c-25835da5f33f"
+    },
+    {
+      "claim_id": "556ca94a-a0e3-4e9e-bb47-8f229833b24c",
+      "result_id": "829208fe-9039-4766-855c-25835da5f33f"
+    },
+    {
+      "claim_id": "ca3e74b0-4d8c-4832-85f6-25db72210dff",
+      "result_id": "829208fe-9039-4766-855c-25835da5f33f"
+    },
+    {
+      "claim_id": "ad46957b-10e4-4413-8bc9-7419e5ffd534",
+      "result_id": "829208fe-9039-4766-855c-25835da5f33f"
+    },
+    {
+      "claim_id": "94cf4bd9-4385-4efe-a200-ad7e95322f99",
+      "result_id": "829208fe-9039-4766-855c-25835da5f33f"
+    },
+    {
+      "claim_id": "6fdbce17-e1f9-4ceb-b503-741acf1f830c",
+      "result_id": "829208fe-9039-4766-855c-25835da5f33f"
+    },
+    {
+      "claim_id": "b9a80c07-6068-4981-aecd-01df07d25f76",
+      "result_id": "829208fe-9039-4766-855c-25835da5f33f"
+    },
+    {
+      "claim_id": "7b2a3522-3b36-4989-89d3-8b5a418a8337",
+      "result_id": "829208fe-9039-4766-855c-25835da5f33f"
+    },
+    {
+      "claim_id": "d0b37d14-a01b-404e-84ef-68f634d5b542",
+      "result_id": "d94d1b07-1174-4332-b9e2-8d5ad068d42b"
+    },
+    {
+      "claim_id": "8d7865bf-ed3b-48df-bfdd-86e48f7fb609",
+      "result_id": "d94d1b07-1174-4332-b9e2-8d5ad068d42b"
+    },
+    {
+      "claim_id": "196cb779-9a18-4ae9-a89c-140c340a9c44",
+      "result_id": "d94d1b07-1174-4332-b9e2-8d5ad068d42b"
+    },
+    {
+      "claim_id": "8976384a-f594-4e8b-9fa6-8ba37695168a",
+      "result_id": "d94d1b07-1174-4332-b9e2-8d5ad068d42b"
+    },
+    {
+      "claim_id": "fd0dcd58-bff4-4012-9199-2d8c1fd20637",
+      "result_id": "d94d1b07-1174-4332-b9e2-8d5ad068d42b"
+    },
+    {
+      "claim_id": "2a2068f6-30e2-4099-bf45-6699d024a690",
+      "result_id": "d94d1b07-1174-4332-b9e2-8d5ad068d42b"
+    },
+    {
+      "claim_id": "5286a3d1-b46a-432f-b6d1-a3e111a9e659",
+      "result_id": "d94d1b07-1174-4332-b9e2-8d5ad068d42b"
+    },
+    {
+      "claim_id": "0af352f9-e014-4b87-bfed-2012b5b0eb11",
+      "result_id": "12e47d67-4343-400a-a2b3-252a6e78e261"
+    },
+    {
+      "claim_id": "4e02fde5-0b10-4c33-8c1b-3e08c6371fd1",
+      "result_id": "12e47d67-4343-400a-a2b3-252a6e78e261"
+    },
+    {
+      "claim_id": "8f148987-a4eb-4428-ba5f-78fe93a46438",
+      "result_id": "12e47d67-4343-400a-a2b3-252a6e78e261"
+    },
+    {
+      "claim_id": "29e690c9-110c-4337-b059-0ee465e3d0f7",
+      "result_id": "12e47d67-4343-400a-a2b3-252a6e78e261"
+    },
+    {
+      "claim_id": "2f30b9f1-8700-4208-9666-cc32db47c2df",
+      "result_id": "bef59552-4cd7-4f7a-87f4-bc8ed6d7320d"
+    },
+    {
+      "claim_id": "a341d1cf-765c-486a-a47e-035d22821de7",
+      "result_id": "bef59552-4cd7-4f7a-87f4-bc8ed6d7320d"
+    },
+    {
+      "claim_id": "7516bcd5-3be8-4a1e-a0e8-65ccc8accb0e",
+      "result_id": "bef59552-4cd7-4f7a-87f4-bc8ed6d7320d"
+    },
+    {
+      "claim_id": "a3c3ff69-ff32-457a-b694-21d44a584e6c",
+      "result_id": "bef59552-4cd7-4f7a-87f4-bc8ed6d7320d"
+    },
+    {
+      "claim_id": "037844ae-c299-47ec-ab9c-1d04d33050ab",
+      "result_id": "bef59552-4cd7-4f7a-87f4-bc8ed6d7320d"
+    },
+    {
+      "claim_id": "fa8e7bfc-f3e6-43d5-840b-25a424976e38",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "0d8c6768-4dd6-4b4a-bfd6-15bfae6f32f3",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "58e374eb-0987-488d-8f33-2d8f10162c31",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "d8a04910-ba4d-4cd5-acb5-fc21f2afb3fa",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "0b61492c-20b3-49e2-b525-48442b1fcecc",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "3e4403a0-9436-4496-b746-45604b99a612",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "ef5bf719-1446-42a0-9d6d-225a6c9c4679",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "a96e509e-4a95-47c9-bcb8-0bcb8841202f",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "94b21ca4-831c-4ce3-bbf1-77f590782cc2",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "22714433-18c7-4fcd-a902-016a49b9ea70",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "0bc474bc-e7c8-4068-bf9c-fb72bef95136",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    },
+    {
+      "claim_id": "1499cc98-e91f-4e73-aeef-5896ae46bbf4",
+      "result_id": "64f54d22-fec8-42b3-9916-e5f67739da21"
+    }
+  ],
+  "comparisons": []
+}

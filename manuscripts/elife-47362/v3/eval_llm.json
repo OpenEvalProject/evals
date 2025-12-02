@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C41",
+      "C43",
+      "C49",
+      "C140"
+    ],
+    "result": "A genome-scale CRISPR-Cas9 screen in K562 leukemia cells co-cultured with NK-92 cells identified critical components of the tumor-immune synapse and the IFN\u03b3 signaling pathway as modulators of NK-mediated killing. ICAM1 disruption was the top-ranked NK evasion mechanism, and sgRNAs targeting IFN\u03b3 pathway components (STAT1, JAK1, IFNGR2, JAK2, IFNGR1) dominated the top 10 NK evasion hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C41, C43, C49, and C140 are well-supported by the screening data presented in Figure 1C-D. The MAGeCK analysis clearly identifies ICAM1 as the top hit and IFN\u03b3 pathway components as prominent evasion mechanisms. The screen design (C2) is appropriate with adequate library coverage and controls, and the results are consistent with known biology of NK-tumor interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C142"
+    ],
+    "result": "The NK-92 screen identified negative regulators of the interferon response as NK-sensitizing factors. PTPN2 and PTPN1 disruption ranked #2 and #5 as NK-92 sensitizing mechanisms, respectively, and are proposed to suppress IFN\u03b3-induced immunomodulation by dephosphorylating STAT and JAK proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C142 are supported by the screening data (Figure 1C) and validation experiments (Figure 3). The mechanistic explanation (C53) is appropriately presented as an inference supported by prior literature. The competitive co-culture assays confirm PTPN2 disruption enhances NK sensitivity across multiple cell types and with primary NK cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "DCAF15, an uncharacterized substrate adaptor for CRL4 ubiquitin E3 ligases, was identified as the top-ranked mechanism for promoting NK-92 mediated clearance in the screen. DCAF15 is a member of the DCAF family that provides substrate specificity to CRL4 complexes, but its normal client repertoire is undefined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 accurately describe the screening results and the known biology of DCAF15. The identification of DCAF15 as the top NK-sensitizing hit is clearly shown in the screening data (Figure 1C). The characterization of DCAF15 function (C55-C59) is appropriately presented as established knowledge with proper citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Disruption of cohesin-related genes STAG2 (#26) and HDAC8 (#19) scored as NK-92 sensitization factors. Cohesin is involved in chromatin replication, organization and repair, and in leukemic cells, cohesin mutations are thought to enforce stem cell programs by altering chromatin organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by the screening data and appropriately cite literature for the biological functions of cohesin. The identification of STAG2 and HDAC8 as hits is notable given their later connection to DCAF15 substrates. The functional descriptions (C62-C66) are properly attributed to published work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "A phenotypic CRISPR screen based on IFN\u03b3-induced MHC-I upregulation identified components of the IFN\u03b3-JAK-STAT pathway and antigen processing machinery. Rank-rank comparison between the NK and MHC-I screens highlighted DCAF15, STAG2, and HDAC8 as genes whose disruption causes both NK sensitization and exaggerated MHC-I response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 are well-supported by the MHC-I screen data (Figure 2). The screen design is appropriate, using flow cytometry to sort cells by MHC-I expression after IFN\u03b3 treatment. The rank-rank comparison (Figure 2E) effectively identifies genes with overlapping phenotypes. The validation experiments (C67-C69) confirm the IFN\u03b3-induced MHC-I upregulation is STAT1-dependent and enhanced by PTPN2 disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C33",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C139"
+    ],
+    "result": "DCAF15 disruption strongly sensitized cancer cells to NK-mediated clearance. DCAF15 KO K562 cells displayed 2.45-fold higher MHC-I levels after IFN\u03b3 exposure but showed no differences in STAT1 phosphorylation, appeared healthy, and proliferated normally. This sensitization was observed across multiple cancer cell types with both NK-92 and primary NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C33, C76-C79, and C139 are supported by competitive co-culture assays (Figure 3) and biochemical characterization (Figure 4). The data show DCAF15 KO increases NK sensitivity without grossly dysregulating IFN\u03b3 signaling, distinguishing it from PTPN2 KO. Multiple independent sgRNAs and rescue experiments (C95) strengthen the conclusion. However, the magnitude of sensitization is modest compared to ICAM1 disruption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C143",
+      "C144"
+    ],
+    "result": "PTPN2 KO cells showed higher STAT1 phosphorylation after IFN\u03b3 exposure and reduced proliferation with IFN\u03b3 treatment. PTPN2 KO cells were transcriptionally distinct from control or DCAF15 KO cells, enriched for inflammation/interferon terms basally, and showed exaggerated interferon responses and apoptotic gene enrichment after cytokine exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86, C143-C144 are well-supported by western blot, cell growth, and RNA-seq data (Figure 4). The transcriptional profiling clearly distinguishes PTPN2 KO from DCAF15 KO phenotypes. The inference that growth suppression is 'likely through induction of apoptosis' (C144) is reasonable given the GO enrichment data but could be strengthened with direct apoptosis measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C87",
+      "C88",
+      "C89",
+      "C147"
+    ],
+    "result": "DCAF15 KO cells did not show substantial differences in their transcriptional response to IFN\u03b3 but were enriched for GO terms associated with NK-mediated cytotoxicity, antigen presentation, and cell adhesion. CD80 was one of the most significantly upregulated genes in DCAF15 KO cells. DCAF15 KO cells scored in the MHC-I screen due to higher unstimulated MHC-I levels rather than dysregulated IFN\u03b3 response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C87-C89, and C147 are supported by RNA-seq data (Figure 4D-F). The principal component analysis clearly shows DCAF15 KO cells cluster with controls rather than PTPN2 KO cells. The differential expression analysis identifying CD80 as highly upregulated (Q=3.7e-23) is statistically robust. The GO enrichment is consistent with the observed immunophenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C148"
+    ],
+    "result": "DCAF15 KO cells displayed an APC-like immunophenotype with increased expression of CD80 (2.23-fold), CD40 (2.01-fold), MHC-I (1.44-fold), and MHC-II (1.22-fold), but not CD83. These changes could be rescued by constitutive expression of sgRNA-resistant DCAF15. Higher CD80 levels were especially important for increasing NK-92 cell triggering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 and C148 are well-supported by flow cytometry data (Figure 5A) and rescue experiments (Figure 5\u2014figure supplement 1B-D). The rescue experiment is critical for establishing that the phenotype is specifically due to DCAF15 loss. The CD80 blocking experiments (C104-C106) demonstrate that CD80 upregulation accounts for a substantial portion of the increased NK-92 triggering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "CD80 overexpression was sufficient to increase K562 sensitivity to NK-92 killing, while a CD28-binding-deficient CD80 mutant had no effect. DCAF15 KO cells showed 17\u00b18% increased NK-92 triggering and were approximately twice as sensitive to CD80 antagonism compared to controls. After CD80 blocking, DCAF15 KO cells triggered degranulation similar to untreated controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 and C104-C106 are supported by competitive co-culture (Figure 5C) and degranulation assays (Figure 5E-F). The CD80 mutant control (C101) is important for establishing CD28-dependence. The CD80 blocking experiments demonstrate that CD80 upregulation is a major contributor to the DCAF15 KO phenotype. However, the magnitude of effects is modest and variability is present.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C124",
+      "C125",
+      "C126",
+      "C129",
+      "C130",
+      "C131",
+      "C136"
+    ],
+    "result": "Proteomic analysis using DCAF15-BioID proximity ligation identified cohesin complex members SMC1A and SMC3 as differentially biotinylated proteins. The interaction was confirmed by streptavidin pulldown and western blotting. Ubiquitination assays showed DCAF15 promotes poly-ubiquitination of SMC1A, supporting that cohesin proteins are bona fide client ubiquitination substrates for DCAF15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34, C124-C126, C129-C131, and C136 are supported by orthogonal proteomic and biochemical approaches (Figure 7). The BioID-mass spectrometry clearly identifies SMC1A and SMC3 as DCAF15-proximal proteins. The ubiquitination assay (Figure 7F) provides direct evidence for DCAF15-mediated ubiquitination of SMC1A. The DCAF16 control (C132) demonstrates specificity. However, the functional consequences of cohesin ubiquitination remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C35",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C155",
+      "C156"
+    ],
+    "result": "Low-dose indisulam (100 nM) treatment phenocopied DCAF15 genetic disruption, recapitulating increased CD80 expression (2.14-fold) and modestly increasing MHC-I (1.36-fold) and CD40 (1.27-fold) expression, while minimally affecting cell viability and proliferation. Indisulam did not further upregulate CD80 in DCAF15 KO cells, suggesting CD80 modulation is entirely DCAF15-mediated. Biochemically, indisulam impaired recruitment of endogenous client proteins to CRL4-DCAF15 and reduced SMC ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C35, C111-C112, C114-C116, C118-C119, C155-C156 are well-supported by dose-response, flow cytometry, and biochemical data (Figure 6, Figure 7E-F). The dose-finding experiments establish conditions where RBM39 degradation is limited but immunomodulatory effects are observed. The lack of additional CD80 upregulation in DCAF15 KO cells (C118) is strong evidence for on-target effects. The BioID and ubiquitination data support the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C122",
+      "C123",
+      "C157"
+    ],
+    "result": "In both adult (TCGA) and pediatric (TARGET) AML cohorts, lower DCAF15 mRNA expression was associated with increased median overall survival time. The improved survival of DCAF15-low patients was not driven by correlation with more aggressive AML subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C122-C123, and C157 are supported by Kaplan-Meier analysis of public datasets (Figure 6H-I). The survival differences are statistically significant (p=0.018 for TCGA, p=0.034 for TARGET). The analysis of AML subtypes (Figure 6\u2014figure supplement 1F-G) addresses a potential confounding variable. However, these are correlative observations from retrospective data and do not establish causality. Additional clinical validation would strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C137"
+    ],
+    "result": "DCAF16-BioID, another CRL4 substrate adaptor, accumulated similarly to DCAF15-BioID and interacted with DDB1 but did not biotinylate SMC proteins, demonstrating specificity. Indisulam treatment led to substantial RBM39 biotinylation and reduced recovery of biotinylated SMC proteins, showing that indisulam impairs DCAF15-cohesin interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 and C137 are supported by western blot data (Figure 7E). The DCAF16 control is important for establishing that SMC interaction is specific to DCAF15 rather than a general property of CRL4 complexes. The indisulam-induced shift from SMC to RBM39 biotinylation demonstrates the drug's mechanism of redirecting DCAF15 substrate specificity while also impairing normal substrate interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C120",
+      "C121"
+    ],
+    "result": "Across a panel of 16 hematological cancer cell lines, there was a positive relationship between DCAF15 mRNA expression and indisulam sensitivity (R\u00b2=0.33, p=0.02). Low-dose indisulam upregulated CD80 in Daudi (2.45-fold) and KU812 (1.71-fold) cells but could not induce de novo CD80 expression in CD80-negative cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C120-C121 are supported by dose-response and flow cytometry data (Figure 6\u2014figure supplement 1A, Figure 6G). The correlation between DCAF15 expression and indisulam sensitivity confirms prior reports. The observation that indisulam cannot induce de novo CD80 expression (C121) is important for understanding the limitations of this approach and suggests DCAF15 regulates CD80 levels post-transcriptionally or in cells with basal CD80 expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "NK-92 cells are CD28-positive, whereas CD28 could not be detected on peripheral CD3- CD56+ NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by flow cytometry data (Figure 5\u2014figure supplement 1E-F). This observation is important for interpreting the CD80-CD28 interaction results and explains why the CD80 effect may be more pronounced with NK-92 cells than primary NK cells. The data are clear and appropriately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "ICAM1 KO cells triggered 52\u00b112% less NK-92 degranulation than control cells and were not significantly affected by CD80 antagonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by CD107 flow cytometry data (Figure 5E). These results serve as important controls demonstrating that CD80 blocking specifically affects the CD80-dependent component of NK activation. The lack of CD80 effect on ICAM1 KO cells makes sense given their already severely impaired ability to form immune synapses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "In ubiquitination assays, co-expression of DCAF15 (but not GFP) led to recovery of poly-ubiquitinated SMC1A. Treatment with indisulam reduced the amount of ubiquitinated SMC1A recovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 are supported by nickel affinity chromatography and western blot data (Figure 7F). The GFP control is appropriate, and the indisulam effect is consistent with the drug redirecting DCAF15 activity. However, these are overexpression experiments in 293T cells, which may not fully reflect endogenous regulation. The results would be strengthened by demonstrating changes in endogenous SMC1A ubiquitination in K562 cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C32",
+      "C158"
+    ],
+    "result": "The findings suggest that DCAF15 inhibition may have useful immunomodulatory properties in the treatment of myeloid neoplasms, achieved through judicious dosing of existing anti-cancer sulfonamides or development of pure DCAF15 inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C32, and C158 are speculative conclusions about therapeutic potential. While the in vitro data and patient correlations are supportive, these claims require in vivo validation, assessment of therapeutic window, and demonstration of clinical benefit. The speculation is reasonable given the data but remains unproven. The manuscript appropriately presents these as suggestions rather than established facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The surface factors upregulated by DCAF15 disruption are proposed to represent events secondary to altered turnover of normal DCAF15 client proteins rather than being direct substrates. A speculative model proposes that CRL4-DCAF15 complexes ubiquitinate cohesin at specific genomic sites to regulate chromatin topology or repair, and disruption of STAG2, HDAC8, or DCAF15 impairs cohesin function with overlapping phenotypic consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C153 are appropriately presented as speculative models. While the data support that cohesin is a DCAF15 substrate and that DCAF15, STAG2, and HDAC8 have similar screening phenotypes, the mechanistic connection between cohesin dysregulation and the APC-like immunophenotype is not established. The model is plausible but requires additional experiments, such as chromatin immunoprecipitation, to demonstrate site-specific cohesin ubiquitination and functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "Targeting PTPN2 may be a generalizable strategy to sensitize tumor cells to multiple arms of the immune system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C146 is a speculative conclusion based on the current data showing PTPN2 disruption enhances NK sensitivity and cited literature showing effects on T cells. While the data are supportive, the claim of 'generalizable strategy' requires broader validation across tumor types, immune cell types, and in vivo models. The growth-suppressive effects of PTPN2 KO with IFN\u03b3 (C144) also complicate the therapeutic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C141"
+    ],
+    "result": "Performing additional genetic screens on diverse cancer cell lines and natural killer subtypes will enable a more complete understanding of the relative importance of various aNKRs and iNKRs and should identify novel immunotherapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C141 is a reasonable statement about future research directions based on the current findings. The current screens were performed in a single cell line (K562) with NK-92 cells, which have limited iNKR expression. The statement appropriately acknowledges the limitations and suggests logical next steps. This is properly presented as a forward-looking statement rather than a claim about current results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C99"
+    ],
+    "result": "Human CtIP is a tetrameric protein with a dumbbell architecture consisting of polar globular domains connected by a ~30 nm central rod formed by coiled-coil domains. This structure was characterized by SEC-MALS (391 \u00b1 23 kDa), negative stain EM, and AFM, revealing five particle classes with the largest (Class V) consistent with a tetramer (~380 kDa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C50-C60, and C99 provide converging evidence from multiple orthogonal techniques (SEC-MALS, EM, AFM) demonstrating the tetrameric state and dumbbell architecture. The molecular weight measurements are consistent with a tetramer, and direct visualization confirms the predicted structure. The L27E mutant data (C58-C59) provides additional validation by showing loss of Class V particles when tetramerization is disrupted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C71",
+      "C72",
+      "C73",
+      "C111"
+    ],
+    "result": "Each CtIP tetramer binds two DNA fork molecules with high affinity. Fluorescence anisotropy experiments with dephosphorylated CtIP yielded a stoichiometry of 0.56-0.58 CtIP tetramers per DNA fork (Kd = 1.5 nM), equivalent to two DNA molecules per tetramer at saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C71-C73, and C111 are well-supported by quantitative fluorescence anisotropy measurements using tight-binding conditions with multiple DNA concentrations. The stoichiometry determination is rigorous, employing global fitting to equation 5. The caveat that this assumes 100% active protein is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C105"
+    ],
+    "result": "CtIP bridges DNA molecules both intra- and inter-molecularly in trans. AFM experiments showed CtIP-dependent increase in DNA molecules with contour lengths equal to multiples of single DNA length (from 4% in controls to ~30% with CtIP, with ~7% at exact expected lengths). Dephosphorylated CtIP showed enhanced bridging, while L27E and R839A mutants were severely defective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C88-C98 provide direct AFM visualization evidence for DNA bridging activity. The quantification shows clear CtIP-dependent effects, with appropriate controls (no protein, BSA). The observation of protein mass at bridging interfaces (C94) and various bridging configurations (C93) strengthen the conclusion. Mutant analysis (C95-C96) confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "DNA binding by CtIP is potentiated >10-fold by dephosphorylation. Dephosphorylated CtIP (Kd = 1.5 nM) binds forked DNA with >10-fold higher affinity than hyperphosphorylated CtIP (Kd = 16 nM), while retaining tetrameric structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C67-C70 are supported by quantitative fluorescence anisotropy and EMSA data. Mass spectrometry confirms hyperphosphorylation of the as-prepared protein (C68). The effect is time-resolved (Figure 4\u2014supplement 1), ruling out artifacts from buffer conditions. However, the specific phosphorylation sites responsible remain unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CtIP does not bind preferentially to DNA ends per se. Competition assays showed IC50 values were independent of DNA topology (circular, linear, or fragmented) and similar for single- and double-stranded DNA in terms of nucleotide concentration, demonstrating no preference for DNA ends over internal sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C77-C79 are well-supported by systematic competition unbinding assays comparing DNA substrates with different topologies and end densities. The independence of IC50 from DNA end concentration (C78-C79) provides strong evidence against end-specific binding. This is a surprising but well-documented finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "CtIP affinity for DNA is increased by forked ssDNA overhangs at termini. Forked DNA (IC50 = 55 nM) binds ~7-fold better than duplex DNA (IC50 = 392 nM), requiring both 3' and 5' ssDNA overhangs (Y-junction), as neither polarity alone improved binding relative to duplex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C61-C63, C74-C76 are supported by both EMSA and quantitative competition assays. The requirement for both 3' and 5' overhangs (C76) is a specific structural requirement that strengthens the conclusion. The data consistently show preference for forked structures across multiple assay formats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "CtIP affinity for DNA is dramatically increased by nucleoprotein conjugates (biotin:streptavidin blocks) at DNA termini. Duplex DNA IC50 decreased from 392 nM to 80 nM with blocks at both ends. This effect required biotin at DNA ends (not internal positions) and was independent of strand polarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C81-C86 provide systematic evidence for enhanced binding with terminal protein blocks. Controls show biotin alone has no effect (C81), streptavidin without biotin has no effect (C85), and internal biotin weakens binding (C86). The effect is specific to terminal conjugates and independent of polarity (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C100",
+      "C103"
+    ],
+    "result": "The R839A mutation in the C-terminal RHR motif severely impairs DNA binding (Kd = 160 nM vs 16 nM for WT) without affecting tetrameric structure, indicating a major DNA binding locus resides in the C-terminal domains. The L27E mutation prevents tetramerization, DNA binding (Kd = 230 nM), and DNA bridging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C100, C103 are supported by SEC-MALS showing R839A retains tetrameric structure (C57) while losing DNA binding affinity (~10-fold reduction). L27E loses both tetramerization (C58-C59) and DNA binding. The separation of oligomerization and DNA binding defects in R839A provides strong evidence for C-terminal DNA binding domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The L27E mutation's inability to bind DNA implies that mutations in the N-terminal coiled coils affect the distal C-terminal DNA binding domains, suggesting long-range structural communication or architectural requirements for DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is an inference from the L27E data. While the observation that L27E loses both tetramerization and DNA binding is clear, the mechanism is uncertain. The authors acknowledge they see no cooperativity in binding and suggest the effect may be due to global architectural disruption rather than specific communication between domains. Alternative explanations are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "CtIP binding to single-stranded DNA is length-dependent and very poor on substrates shorter than ~30 nucleotides, as shown by competition assays with oligonucleotides of varying length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by systematic competition assays with oligonucleotides of different lengths (Figure 5\u2014supplement 3). This provides a minimum binding site size estimate, though the exact threshold and whether this reflects a single binding site or multiple contacts is not fully characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The NHEJ factor Ku shows opposite behavior to CtIP: Ku binding to DNA is severely inhibited by biotin:streptavidin end blocks, contrasting with CtIP's enhanced binding under the same conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by control experiments (Figure 5\u2014supplement 4) showing that Ku, a known end-binding protein, is inhibited by terminal blocks. This validates the experimental approach and highlights the unusual properties of CtIP compared to conventional end-binding proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors propose a 'slide and capture' mechanism where CtIP initially binds internal DNA sites and slides until captured at complex DNA ends (forks or nucleoprotein blocks) that prevent dissociation. This model explains the preferential binding to modified ends without requiring direct recognition of end structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C108 represent a speculative mechanistic model. While the model is consistent with the data (no end preference per se, but enhanced binding with terminal modifications), it is not directly tested. Alternative mechanisms (e.g., conformational changes upon encountering blocks) are not rigorously excluded. The authors appropriately present this as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C112"
+    ],
+    "result": "The 2:4 stoichiometry of DNA to CtIP monomers and globular C-terminal structure implies a dimeric arrangement of DNA binding domains, with two DNA molecules potentially binding at opposing ends of the tetramer where C-terminal domains dimerize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101 and C112 are inferences from stoichiometry and structural data. While the 2:1 DNA:tetramer ratio is well-established, the precise arrangement of DNA binding sites is speculative. The dumbbell architecture supports the model of binding at opposing ends, but high-resolution structural data of DNA-bound complexes would be needed for confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors speculate that CtIP's architecture and bridging activity may coordinate repair of two DSBs, tether homology donor DNA, and serve as a platform for recruiting signaling factors and assembling a 'resectosome' complex, facilitated by flexibility in the connecting rod observed by AFM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C116 are speculative functional interpretations. While the structural and biochemical data (bridging, 2:1 stoichiometry, flexibility) are consistent with these roles, direct evidence for these functions in vivo is not provided. These represent reasonable hypotheses for future work but are not demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The Introduction provides established background on DSB repair pathways, CtIP's role in HR and end resection, MRN-CtIP cooperation, controversy over CtIP nuclease activity, and limited prior structural information on CtIP N-terminal regions from yeast and human studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C49 represent background knowledge and literature citations that provide context for the study. These are appropriately cited and represent established knowledge in the field. The citations appear accurate based on the references provided, though detailed verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The equilibrium dissociation constant (Kd) for hyperphosphorylated CtIP binding to HEX-labeled DNA fork is 16 nM, as determined by fluorescence anisotropy fitted to a hyperbolic binding curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by direct fluorescence anisotropy measurements (Figure 3D). The Kd value is determined under standard binding conditions and represents the affinity of the as-prepared (hyperphosphorylated) protein. This serves as a baseline for comparison with dephosphorylated protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The C-terminal region of CtIP does not obviously resemble any known DNA binding domain despite containing the RHR motif, based on sequence analysis and comparison to known DNA binding domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by sequence analysis (implicit in the statement). The lack of recognizable DNA binding motifs makes the structural characterization of this region particularly important for future work, as noted by the authors. This is a knowledge-based claim that appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "The authors speculate that CtIP localization at DSBs in vivo is likely mediated by protein interactions (BRCA1-BARD1, MRN) and post-translational modifications, in addition to the DNA binding properties characterized in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is a reasonable speculation based on established knowledge of CtIP's many interaction partners. The in vitro DNA binding properties alone may not fully explain in vivo localization, and the authors appropriately acknowledge the likely contribution of protein-protein interactions and PTMs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Regulation of DSB repair factors by downregulation of DNA binding via post-translational modification is not unprecedented, as demonstrated for other repair factors in cited studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is supported by citations to studies of other DSB repair factors (Blanco et al., 2014; Honda et al., 2011; Lee et al., 2016). This provides context for the counterintuitive finding that dephosphorylation enhances CtIP DNA binding despite phosphorylation being required for activation in vivo.",
+    "result_type": "MINOR"
+  }
+]

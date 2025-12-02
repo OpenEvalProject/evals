@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "A CRISPR-generated bnl:gfpendo allele produces functional Bnl:GFP that forms a long-range exponential gradient (~100-120 \u03bcm) specifically in the recipient ASP tissue, with gradient shape dynamically adapting to ASP growth and morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bnl:gfpendo allele is well-validated (C15, C18, C19), showing normal viability and morphology. Multiple independent measurements demonstrate exponential gradient formation (C6, C8, C10) with strong correlation between gradient slope and ASP length (C11, R\u00b2=0.95). The asymmetric, ASP-specific distribution (C16, C17) and developmental coordination (C9, C10) are documented with quantitative imaging across multiple samples and time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26"
+    ],
+    "result": "A CRISPR-generated btl:cherryendo allele shows that FGFR (Btl:Cherry) forms a gradient coinciding with the Bnl:GFP gradient, with all Bnl:GFP puncta colocalizing with Btl:Cherry, predominantly in endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The btl:cherryendo allele demonstrates complete colocalization of receptor and ligand (C23), with ~90% of puncta in late endosomes (Figure 2E). The receptor gradient matches ligand distribution (C21), consistent with previous reports of btl transcriptional activation by Bnl (C22). A small population of basal puncta not in endosomes (C25) is appropriately interpreted as pre-endocytic complexes (C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Extracellular immunofluorescence (EIF) assays reveal that externalized Bnl (both tagged and native) is asymmetrically distributed on ASP and source cell surfaces, not randomly dispersed, indicating target-specific polarized transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EIF methodology successfully distinguishes extracellular from intracellular Bnl (C27-C29). Both Bnl:GFP (C30) and native Bnl (C40-C42) show identical asymmetric distribution patterns on ASP surfaces, contrasting with random secGFP dispersion (Figure 3B). The convergent evidence from tagged and untagged protein (C43) strengthens the conclusion of target-specific transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C1",
+      "C34",
+      "C37",
+      "C38",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "FGF (Bnl) is transported from source to ASP via receptor-containing cytonemes through direct contact-dependent exchange, with Bnl enriched at cytoneme-source contact sites and transported along cytoneme surfaces in receptor-bound form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches demonstrate cytoneme-mediated transport: super-resolution imaging shows Bnl nanopuncta on cytoneme surfaces (C37, C38), both tagged and native Bnl colocalize with Btl on cytonemes (C44-C47), syb-GRASP reveals contact sites (C49), and contacting cytonemes receive significantly more Bnl than non-contacting ones (C50, p<0.0001, N=14). Enrichment at contact sites (C53, C54) and distribution along cytoneme shafts (C56) support the transport model, consistent with previous Dpp findings (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Cytonemes are essential for Bnl gradient formation: knockdown of cytoneme regulators reduces Bnl uptake cell-autonomously, btl loss-of-function reduces surface Bnl consistent with cytoneme-dependent (not diffusion-based) transport, and btl gain-of-function induces cytonemes that increase Bnl uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Clonal analysis with three independent cytoneme regulators (dia, nrg, sn) shows significant cell-autonomous reduction in Bnl:GFP uptake (C58-C59, p<0.05-0.001). The btl LOF distribution pattern (C61, C62) matches predictions for cytoneme-dependent but not diffusion-based transport (Figure 4F-G). The btl GOF experiment (C63-C65) provides direct evidence that inducing cytonemes increases Bnl uptake, with both total and externalized Bnl elevated in mutant clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C69",
+      "C70",
+      "C71",
+      "C143",
+      "C144",
+      "C146"
+    ],
+    "result": "ASP cells extend a graded number of cytonemes that decreases with distance from the Bnl source, with cells proximal to the source having more long oriented cytonemes and higher contact frequency, generating a recipient-specific gradient through differential signal uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Quantitative analysis of cytoneme numbers and orientations from different ASP regions (Figure 5A-D'') demonstrates a clear gradient, with distal tip cells extending significantly more long oriented cytonemes than proximal stalk cells (C143-C144, p<0.05-0.01). Clonal syb-GRASP shows contact frequency correlates with position (C70, p<0.01, N=14 ASP). The integration of contact-dependent Bnl reception (C146) with graded cytoneme formation provides a mechanistic explanation for tissue-specific gradient shapes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C92"
+    ],
+    "result": "Bnl acts as a morphogen, inducing concentration-dependent gene expression: sty at highest levels (1st-3rd cells), pntP1 at high-moderate levels (1st-7th cells), and cut/yan at low levels (7th-14th cells), with overexpression expanding high-level gene domains and suppressing low-level domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Spatial correlation of Bnl:GFP levels with target gene expression is well-documented (C72-C76, Figure 6A-E), with quantitative data from multiple samples (Figure 6\u2014supplement 1A, 2A-H). Bnl overexpression experiments show dose-dependent effects: expanded pntP1 domain and retracted cut/yan domains (C80-C81), and ectopic Bnl clones non-autonomously induce sty/pntP1 and suppress cut (C82, N=35). The pattern resembles vertebrate FGF8 morphogen activity (C78), supporting the morphogen interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "PntP1 and Cut reciprocally inhibit each other's expression and differentially regulate cytoneme formation: Cut (induced by low Bnl) suppresses oriented cytonemes and Btl synthesis, while Yan shows similar inhibitory effects, establishing negative feedback on Bnl signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reciprocal inhibition between PntP1 and Cut is demonstrated through GOF/LOF clonal analysis (C85-C88, Figure 6M-P). Cut GOF significantly reduces long oriented cytonemes in tip cells (C93, comparison with Figure 5 controls) and Bnl:GFP uptake (C94, N=6, p-value from t-test), while stalk cells remain unaffected (C95), indicating position-specific regulation. Cut's known role in btl suppression (C97, cited) combined with current cytoneme data (C98) establishes dual negative feedback. Yan shows similar effects (C99, Figure 7\u2014supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "PntP1 (induced by high Bnl) positively regulates cytoneme formation and Btl synthesis: pntP1 GOF induces long oriented cytonemes and increases Bnl uptake, pntP1 LOF suppresses cytonemes and reduces Bnl uptake, and PntP1 induces polarized Btl:Cherry gradients within clones, establishing positive feedback that, together with Cut/Yan antagonism, generates a self-sustaining gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PntP1 GOF in stalk cells induces significantly more long oriented cytonemes than controls (C101, N=5 proximal, N=8 distal, comparison with Figure 5), while pntP1 LOF in tip cells suppresses cytonemes (C102, N=11 tip, N=6 stalk). These changes correlate with Bnl:GFP uptake (C103-C104, N=4-5, statistical tests provided). EIF assays show Bnl:GFPex enrichment on induced cytonemes (C105). PntP1's induction of Btl (C106, cited; C107-C108, Figure 7I) establishes positive feedback. The reciprocal inhibition with Cut/Yan (C110) and proposed ratio-dependent regulation (C111-C113) provide a coherent model for self-sustaining gradient formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "This study demonstrates the first example of a directly visualized inductive morphogen gradient for branching morphogenesis, showing that FGF gradient shapes are dynamic, adaptable, receptor-bound, and self-generated through cytoneme-mediated transport regulation, challenging traditional diffusion-based models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim of novelty (C116) is supported by the comprehensive characterization of Bnl gradient formation, which contrasts with previous models proposing diffusion-based FGF10/VEGF gradients (C114-C115). The demonstration that gradients are dynamic (Figure 1F), receptor-bound (Figures 2-3), and self-generated through feedback regulation (Figures 6-7) represents a significant conceptual advance (C117-C118). The identification of morphogen (not just chemoattractant) function (C121-C122) shifts understanding of branching morphogenesis. Comparison with Cxcl12a (C120) suggests potential generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C132"
+    ],
+    "result": "In contrast to previous diffusion-based or mRNA decay models for FGF gradient formation, genetic and imaging evidence demonstrates that the Bnl gradient forms through cytoneme-mediated direct transport, with receptor-bound ligand moving along cytoneme surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study explicitly contrasts findings with previous diffusion-based (C123) and mRNA decay (C124) models for FGF8. Multiple lines of evidence support cytoneme-mediated transport (C125): previous demonstration of contact-dependent signaling (C126), current generation of physiological-level tagged constructs and EIF assays (C127), documentation of direct membrane contacts (C128-C129), and demonstration of receptor-bound surface transport (C132). The convergent evidence from genetic manipulation and direct imaging provides strong support for the cytoneme-dependent mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The counteracting activities of PntP1 (positive feedback) and Cut/Yan (negative feedback), expressed from opposite poles in response to Bnl levels and reciprocally inhibiting each other, establish a cell-autonomous regulatory loop that generates robust, tissue-specific, self-sustaining gradient contours adaptable to any recipient morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of all findings into a coherent model (C147-C150, Figure 8) is well-supported by the experimental data. The cell-autonomous nature of transcription factor effects (C89, C152) combined with their regulation of cytonemes creates a mechanism that can adapt to any tissue shape (C152, Figure 1F). The requirement for initial contact (C154) and cell competence to respond regardless of position (C155) are logical inferences. The prediction of neo-branch formation from ectopic sources (C156) is consistent with known Bnl function (C157). The model provides a framework for understanding morphological diversity (C158-C159).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Several mechanistic questions remain unresolved, including how Bnl is selectively released at contact sites, the mechanism of receptor-bound transport along cytonemes, the nature of Bnl nanopuncta, how cytonemes find sources, and whether source cytonemes contribute to guidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge gaps in understanding (C130, C137, C141) and propose future directions (C131, C142). Speculative mechanistic proposals (C133, C139) are clearly identified as such. The observation of nanopuncta (C134) suggests novel mechanisms but requires further investigation (C135). The discussion of potential guidance mechanisms (C138-C140) appropriately cites relevant literature while acknowledging technical limitations. This honest assessment of uncertainties strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "The proposed mechanism differs from current expander-contractor models that involve two diffusible molecules emanating from opposite poles with non-autonomous global feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with expander-contractor models (C151, citing Barkai and Shilo, 2009; Ben-Zvi et al., 2011; Restrepo and Basler, 2011; Shilo and Barkai, 2017) appropriately contextualizes the findings. While both models involve opposing activities from tissue poles, the current mechanism differs fundamentally in using cell-autonomous transcription factors regulating cytoneme formation rather than diffusible molecules with non-autonomous effects. This distinction is important for understanding gradient formation mechanisms.",
+    "result_type": "MINOR"
+  }
+]

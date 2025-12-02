@@ -1,0 +1,455 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Guenons are a diverse African primate radiation (25\u201338 species, diverged ~11.5 mya) characterized by high sympatry, polyspecific groups, colorful and unique face patterns, and rare hybridization. Previous computational work has shown that guenon faces can be reliably classified by species, exhibit character displacement, and that specific facial components (nose spots, eyebrow patches) are informative for species discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1\u2013C12 establish the biological and evolutionary context for guenons based on extensive citations to prior published work. These background claims about guenon taxonomy, phylogeny, behavior, facial diversity, and prior computational analyses are well-supported by appropriate references and provide the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Eigenface decomposition, originally developed for human face recognition, is applicable to animal signal discrimination tasks and has biological validity through correlates in mammalian visual processing systems. This method has been previously applied to quantify guenon facial variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13\u2013C16 establish the methodological foundation for the computational approach through appropriate citations. The biological relevance of eigenface-based face spaces is supported by neuroscience literature (C16), lending credibility to the computational method used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Looking time experiments are established methods for assessing visual attention and perceptual biases in human infants and non-human animals. Primates reliably show greater looking time toward conspecific versus heterospecific faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17\u2013C18 establish the methodological foundation for the behavioral experiments through citations to review articles and multiple empirical studies. The reliability of conspecific visual bias in primates is well-documented across multiple species, providing a strong basis for the experimental predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C112",
+      "C113"
+    ],
+    "result": "Using eigenface decomposition on 599 images of 133 individuals representing 15 guenon species, the machine classifier achieved 99.31% accuracy for average subject images and 93.03% accuracy for distinct images. All 654 correctly classified images were used for the occlude-reclassify analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19\u2013C20, C112\u2013C113 report the baseline classification performance and dataset characteristics. The high classification accuracy validates the eigenface approach for guenon species discrimination and provides a solid foundation for the occlude-reclassify analysis. Sample sizes are clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C56",
+      "C57"
+    ],
+    "result": "The occlude-reclassify analysis identified critical face regions for species classification in all 15 guenon species, with these regions differing in both location and spatial extent across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C56\u2013C57 describe the primary computational finding that critical facial regions vary across species. This is supported by the heatmap visualizations in Figure 2 and quantitative metrics in Figure 3. The variation in both location and spread of critical regions is clearly demonstrated across the species analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C58",
+      "C59",
+      "C121"
+    ],
+    "result": "For putty nosed monkeys, the white nose spot is the only essential facial feature for species classification. The putty nosed monkey had the highest mean error rate when critical regions were occluded, and classification failed exclusively when the nose spot was occluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22\u2013C23, C58\u2013C59, C121 describe the computational results for putty nosed monkeys showing exclusive reliance on the nose spot. This is supported by the heatmap data in Figure 2 and the quantitative position in Figure 3 showing high mean classification error and low proportion of face misclassified, indicating a concentrated, highly critical feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C63"
+    ],
+    "result": "For all guenon species except putty nosed monkeys, the classifier identified multiple face regions critical for species discrimination. In mona monkeys, disparate regions including cheeks, eyebrows, and ear tufts all influence correct classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C63 describe the computational results for species other than putty nosed monkeys. The heatmaps in Figure 2 clearly show multiple critical regions for most species, with mona monkeys exemplifying distributed critical features. This contrasts with the single-feature reliance in putty nosed monkeys.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "In M. talapoin, the absence of distinctive traits along the sides of the face (negative space) appears important for species classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C25 interprets the computational results for M. talapoin as showing importance of negative space. While this interpretation is plausible given the heatmap pattern, the claim is explicitly inferential and the evidence for negative space being critical (rather than other facial features) is not directly demonstrated. The interpretation requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Subset analyses using only sympatric species produced results similar to the full dataset. For putty nosed monkeys, the nose spot remained the only essential feature. For mona monkeys, broader face regions including eyebrow patches remained important despite some differences between left and right hemi-face analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122\u2013C124 report that subset analyses confirmed the main findings. The consistency between full and subset analyses strengthens the biological relevance of the results, as the subset analyses represent more realistic discrimination tasks. The supplementary figures (Figure 2\u2014figure supplements 4\u201311) provide supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Looking time experiments were conducted at CERCOPAN sanctuary in Nigeria with 18 adult putty nosed monkeys and 16 adult mona monkeys. Subjects were socially housed and had visual exposure to multiple heterospecific guenon species. Mean looking times were 3.89\u00b11.98s for putty nosed monkeys and 4.58\u00b12.52s for mona monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26\u2013C27, C114\u2013C118 describe the experimental setup, subjects, and basic behavioral data. Sample sizes, housing conditions, and exposure to heterospecifics are clearly reported. The looking time data provide baseline information for the experimental analyses. Methodological details are appropriate for this type of study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Video coding reliability was assessed on ~10% of trials, with 94.46% frame-by-frame agreement between coders (Cohen's kappa = 0.883), which is within acceptable ranges for this type of data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119\u2013C120 report inter-rater reliability for the behavioral coding. The kappa value of 0.883 indicates excellent agreement, and the comparison to published standards (via citations) confirms this is acceptable. This validates the behavioral measurement approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "In trials with natural conspecifics and heterospecifics lacking the focal facial trait, both putty nosed monkeys and mona monkeys exhibited significant conspecific biases in looking time (putty nosed: p<0.001, OR=1.66; mona: p<0.001, OR=1.41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28\u2013C31 report the baseline experimental finding that both species show conspecific preference when facial traits are not confounded. Statistical tests are appropriate (chi-square tests, z-tests with odds ratios), p-values are highly significant, and effect sizes are reported. This confirms the expected primate visual bias pattern in these species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Across all trials, putty nosed monkey looking behavior was significantly influenced by facial trait (nose spot presence, p<0.001, OR=1.14) and image location (right bias, p<0.001, OR=1.17), but not by species (p=0.081). Putty nosed monkeys looked longer at faces with nose spots regardless of species identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32\u2013C36 report the unified analysis for putty nosed monkeys showing trait-driven rather than species-driven attention. The statistical approach (GLMMs with model comparisons) is appropriate. The finding that trait presence drives attention while species does not (when traits are manipulated) is a key result supported by appropriate statistics and effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Across all trials, mona monkey looking behavior was significantly influenced by species (p<0.001, OR=1.84), facial trait (eyebrow patches, p<0.001, OR=1.36), and their interaction (p=0.004). Mona monkeys looked longer at conspecifics and at faces without eyebrow patches, with an interaction showing longer looks at heterospecific faces with eyebrow patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37\u2013C42 report the unified analysis for mona monkeys showing both species-driven and trait-influenced attention. The statistical approach is appropriate and the significant interaction term (C39, C42) indicates complex processing. The pattern differs from putty nosed monkeys, suggesting different discrimination strategies. Statistics and effect sizes are properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Putty nosed monkey visual attention was driven wholly by nose spot presence. Including stimuli with heterospecifics bearing nose spots and conspecifics without nose spots completely obscured the conspecific bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60\u2013C61 interpret the experimental results for putty nosed monkeys, showing that trait manipulation eliminated species preference. This is supported by C34 (no species effect across all trials) contrasted with C28\u2013C30 (species effect in baseline trials). The convergence of computational and experimental results strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Mona monkeys exhibited a conspecific bias across all trials regardless of single trait manipulations. Eyebrow patches alone do not appear to be the sole driver of visual attention in mona monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64\u2013C65 interpret the experimental results for mona monkeys, showing maintained species preference despite trait manipulation. This is supported by C37 (significant species effect across all trials) and C38 (additional trait effect). The inference that eyebrow patches are not solely responsible is reasonable given both species and trait effects are significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "Machine classifier results identified critical face regions for species classification, and behavioral experiments with two species provided results consistent with computational predictions. Guenons vary across species in the specific traits and processes involved in species discrimination, with nose spots and eyebrow patches influencing attention differently in putty nosed versus mona monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43\u2013C44, C70, C72\u2013C73 synthesize the convergence of computational and experimental results. The consistency between methods (single-feature reliance in putty nosed monkeys, multi-feature processing in mona monkeys) validates both approaches. The inference that computational results may generalize across the radiation (C73) is reasonable but appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Putty nosed monkeys are the only species in the analyses for which the classifier identified only one critical face region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by comparison of results across all species shown in Figure 2 and Figure 3. The putty nosed monkey heatmap shows concentrated critical regions exclusively on the nose, while all other species show multiple or more distributed critical regions. This uniqueness is important for interpreting the broader pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "In mona monkeys, species discrimination may be based on broader face information, and perceptual processes could be similar to generalized holistic face processing mechanisms observed in other primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66\u2013C67 are explicitly speculative interpretations of the mona monkey results. While the inference is reasonable given the multi-feature computational results and maintained species bias in experiments, the claim about holistic processing (C67) goes beyond what the data directly demonstrate. Additional experiments would be needed to test holistic versus featural processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Results from mona monkeys suggest that redundant face regions more likely represent enhancement (increased response to combined signal) rather than equivalence (same response to components or combination) of signal components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 interprets the mona monkey results in terms of signal redundancy theory. While the inference is plausible given that single trait manipulation didn't eliminate species preference, the study did not directly test enhancement versus equivalence by comparing responses to single versus combined features. This interpretation requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The observed differences in looking time, while small, are similar in magnitude to those reported in human and non-human primate studies where increased gaze has been associated with attractiveness judgments and mating interest. This suggests the differences observed are biologically meaningful and may influence guenon decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74\u2013C78 contextualize the effect sizes by comparison to other studies. While the comparisons to published work (C74\u2013C77) are appropriately cited, the inference that these differences are biologically meaningful and influence decision making (C78) is speculative. The link between looking time and actual mating decisions in guenons has not been directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Visual attention in guenons is influenced by variation in face pattern components. No sex differences in visual biases were found for either species, suggesting similar selective pressures on species discrimination signaling and visual preference traits between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is directly supported by the experimental data showing trait effects. Claims C80\u2013C81 report the absence of sex effects in the statistical models. While the inference about similar selective pressures (C81) is reasonable, the study was not specifically designed to test sex differences (unbalanced sex ratios, limited power), so this negative result should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Guenons live in polygynous mating systems with minimal paternal care, but experience seasonal male influxes during mating season. Group males often cannot exclude attractive extra-group males. This suggests engagement with heterospecific partners is costly in both sexes, as males in mixed-species groups could gain fitness advantages by preferentially mate-guarding conspecifics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82\u2013C86 describe established aspects of guenon mating systems with appropriate citations. However, claims C87\u2013C89 are speculative inferences about fitness costs and optimal male strategies. While these inferences are logical given the mating system characteristics, they are not directly tested in this study and represent hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The rarity of hybrids in polyspecific guenon groups despite potential for hybridization indicates pre-mating barriers. Combined with previous work, the results support the hypothesis that guenon face patterns play a role in mate choice and reproductive isolation, as increased eye gaze is associated with mating interest in primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90\u2013C91 establish the context of rare hybridization with appropriate citations. Claims C92\u2013C93 cite the link between gaze and mating interest in other species. However, claims C94\u2013C95 make speculative inferences about mate choice and reproductive isolation in guenons. While the results are consistent with this hypothesis, the study measured looking time, not actual mating preferences or reproductive outcomes. The link is plausible but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "It remains possible that selection pressure for species discrimination traits in guenons arises partially or entirely from other functions like foraging decisions where behavioral coordination or avoidance between species is advantageous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 appropriately acknowledges alternative hypotheses for the function of facial diversity. This caveat is important given that the study demonstrates discrimination ability and visual attention but does not directly test the functional context (mating versus foraging versus other social interactions). The acknowledgment of alternatives is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The occlude-reclassify approach is a novel method for identifying information distribution in complex signals, applicable to any discrimination problem analyzed via machine classification. The method has broad utility in sensory ecology, particularly for studying species with different sensory systems, and combining it with biologically realistic encoding schemes increases biological validity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97\u2013C103 describe the methodological contribution and its potential applications. The novelty of applying systematic occlusion to animal signal analysis is valid (C97), though the underlying computer vision technique is established (cited as Zeiler and Fergus, 2014). The claims about broad applicability (C98\u2013C100) and advantages (C101\u2013C102) are reasonable inferences. The validation through behavioral experiments in this study supports the method's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Guenon behavioral repertoires like nose-to-nose touching reflect the importance of facial traits. Primates preferentially attend to facial information, making face patterns particularly suited to influencing behavior and decision-making in con- and heterospecifics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 provides observational support for the relevance of facial features through behavioral examples with appropriate citations. Claims C105\u2013C106 establish the general importance of faces in primate cognition through citations to neuroscience and behavioral studies. The inference that face patterns are well-suited for influencing behavior (C106) is reasonable given primate face-processing capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Multiple other primate groups show rapid speciation, high sympatry, and diverse facial appearances. Comparative analyses have linked face pattern complexity to sympatric congenerics in primates, suggesting selection for species discrimination may be a key driver of primate diversity. This work linking signal appearance to visual attention in guenons highlights how such evolutionary processes can generate animal phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107\u2013C109 place the guenon results in broader comparative context with appropriate citations. The inference that species discrimination drives diversity (C109) is supported by the cited comparative work. Claims C110\u2013C111 summarize the contribution of the current study to understanding these evolutionary processes. The synthesis is appropriate and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Character displacement, where signal distinctiveness increases with sympatry, has been observed across diverse animal groups. Species-specific signals that differ between sympatric heterospecifics can maintain reproductive isolation and are predicted to be salient and distinctive. Such signals should elicit increased interest from conspecifics. Young radiations may be at particular risk of costly hybridization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45\u2013C55 establish the theoretical framework for the study through appropriate citations to evolutionary biology and behavioral ecology literature. These claims about character displacement, signal evolution, and reproductive isolation provide the conceptual foundation for interpreting the guenon results. All claims are well-supported by citations to relevant theory and empirical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Both putty nosed monkey nose spots and mona monkey eyebrow patches are sufficiently informative to allow discrimination between species that share these features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by citation to previous computational work (Allen and Higham, 2015) showing that these features can discriminate among species possessing them. This prior finding contextualizes the current results showing different roles of these features in visual attention between the two species.",
+    "result_type": "MINOR"
+  }
+]

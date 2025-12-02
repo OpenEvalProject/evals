@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Participants showed above-chance recollection performance and demonstrated a response bias toward emotional faces during recognition, but after correcting for this bias, emotional faces were better recollected than neutral faces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 collectively demonstrate that participants performed above chance (C13), showed no difference in recognition hit rates between emotional and neutral faces (C14), but exhibited more false alarms for emotional faces (C15) and a recognition bias (C16). After bias correction, emotional recollection was superior to neutral (C17), supported by appropriate statistical tests and bias correction methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Salivary alpha-amylase (sAA), a marker of sympathetic nervous system activity, increased during consolidation relative to encoding and showed a trend-level positive association with emotional memory performance, while sAA negatively correlated with parasympathetic activity (rMSSD) across task stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by linear mixed effects models showing increased \u0394sAA during consolidation (C18, p=0.033), correlation analysis showing trend-level association with memory (C19, p=0.059), and repeated measures correlation showing negative relationship with rMSSD (C20, p=0.018). The trend-level finding in C19 is appropriately qualified and does not undermine the overall pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "LC activity, identified via ICA, showed negative correlation with parasympathetic activity (rMSSD) across task stages, but no correlation with sAA, and this relationship was specific to the LC compared to a control region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 demonstrate LC identification via ICA (C21), negative correlation between LC variance and rMSSD (C22, p=0.008), absence of correlation in control region (C23), and no correlation with sAA (C24). The specificity to LC (C23) and reproducibility across preprocessing pipelines strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "LC-HRV coherence varied across memory stages, with greater coherence during baseline and recollection compared to consolidation, and LC-HRV median coherence negatively correlated with sAA, a relationship specific to the LC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by linear mixed effects models showing stage-specific coherence patterns (C25, multiple comparisons p<0.001), repeated measures correlation between LC-HRV coherence and sAA (C26, p=0.021), and absence of this relationship in the reference component (C27). The frequency-specific analysis and control comparisons strengthen the specificity of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "During encoding, successful learning activated hippocampus, amygdala, and entorhinal cortex, while arousal-related LC activation was observed during high arousal events, particularly during successful encoding of emotional stimuli, and this LC activity correlated with better memory performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 demonstrate MTL activation during successful encoding (C28), bilateral LC activation during high arousal (C29, peak z=3.3), LC activation during successful encoding under high arousal (C30, peak z=5.2), and correlation between LC activity and memory performance (C31, r=0.506, p=0.019). However, the lack of cluster correction and small LC size raise concerns about false positives, though the authors acknowledge this limitation and provide reproducibility evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C60"
+    ],
+    "result": "During recollection, successful retrieval was associated with left CA1 and subiculum activation, but no arousal-related LC activity was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C60 are supported by GLM analysis showing CA1/subiculum activation during successful recollection and absence of arousal-related LC activity. The findings are consistent with the hypothesis that LC's role transitions across memory stages, though the absence of LC activation during recollection contrasts with encoding findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Functional connectivity between LC and MTL regions changed across task stages, with decreased LC-MTL connectivity during consolidation compared to baseline, increased hippocampus-amygdala coherence during encoding, and greater amygdala-entorhinal coherence during encoding associated with better memory performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 demonstrate decreased LC-MTL functional connectivity during consolidation (C33), increased HIP-AMY coherence during encoding with phase reversal during recollection (C34, p<0.001), and association between AMY-EC coherence and memory performance (C35, p=0.038). The spectral coherence analyses and partial coherence controls strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "LC structural properties, measured by TFL intensity, positively correlated with emotional memory performance (particularly in medial and caudal LC), and caudal LC intensity specifically correlated with sAA during consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 show positive correlation between normalized LC TFL intensity and emotional recollection (C36, r=0.56, p=0.004), regional specificity to medial and caudal LC (C37), positive relationship between TFL intensity and sAA during consolidation (C38, r=0.602, p=0.008), and specificity of this relationship to caudal LC (C39, r=0.79, p<0.001). The regional specificity aligns with known LC topography.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The LC's role in emotional memory processing is dynamic across memory stages: during encoding, arousal-related LC activation follows amygdala engagement; during consolidation, LC-MTL connectivity transitions; and during recollection, hippocampal activity predominates, with LC activation requiring amygdala interactions for adaptive memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C74-C77 represent the main conclusions synthesizing the study's findings. These are supported by the convergent evidence from behavioral, autonomic, functional, and structural data across multiple claims (C13-C39). The dynamic nature of LC involvement is demonstrated through stage-specific activation patterns, connectivity changes, and coherence analyses, though some interpretations involve inference beyond direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Greater LC BOLD signal variability was associated with lower parasympathetic activity (rMSSD), which in turn was associated with greater sympathetic modulation (sAA) and better memory performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 summarize the relationships between LC activity, autonomic measures, and memory performance demonstrated in C20, C22, and C19. These relationships are supported by repeated measures correlations and are consistent across the task, though the causal chain implied requires careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Structural properties of the middle LC section related to better emotional memory performance, and greater caudal LC intensity related to greater NE, consistent with known topographic projections where rostral/middle LC projects to associative regions and caudal LC projects to autonomic nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 integrate structural findings (C36-C39) with established anatomical knowledge. The correlations between LC structure and function are supported by data, and the interpretation is consistent with cited literature on LC topography (Sara, 2009; Samuels and Szabadi, 2008a), though the anatomical claims rely on prior work rather than direct demonstration in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "During consolidation, increases in sAA correlated positively with emotional performance, potentially reflecting arousal-related NE-synaptic consolidation processes, which represent the initial phase after learning where mnemonic representations change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 interpret the consolidation findings (C18-C19, C33) in the context of synaptic consolidation theory. The correlation between sAA and performance (C19) and the LC-MTL connectivity changes (C33) support this interpretation, though the mechanistic claim about LTP (C54) involves speculation beyond the data, appropriately qualified by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "During encoding, LC was activated during successful acquisition of information associated with elevated arousal, while amygdala and hippocampal activation was only detected for successful learning independent of arousal valence, but arousal-related LC activation with amygdala-entorhinal co-activation was associated with memory enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 synthesize the encoding findings from C28-C31. The pattern of LC activation during arousal (C29-C30), MTL activation during successful learning (C28), and the association with memory enhancement (C31) support these conclusions, though the inference about co-activation requires integration across analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The LC's connectivity role switches from receiving input (particularly from amygdala) during encoding to a leading role during recollection, consistent with anatomical descriptions of LC-amygdala projections and their functional roles in salience processing and memory enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 interpret the phase lag findings (C34) in the context of established anatomy and function. The phase switch is supported by data (C34), and the anatomical claims are supported by appropriate citations (Bergado et al., 2007; Phelps and LeDoux, 2005; Roozendaal et al., 1996; Chen and Sara, 2007; Bouret et al., 2003), though the functional interpretation involves inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C82",
+      "C83",
+      "C98",
+      "C99"
+    ],
+    "result": "The study included 27 young adults (13 female, 20-30 years) who underwent 7T MRI scanning with a face-name association task involving 90 encoding trials and 135 recollection trials, with three datasets excluded due to technical issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C82-C83, C98-C99 describe the study design and sample. These are straightforward methodological details directly stated in the manuscript and supported by the experimental procedure description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Salivary alpha-amylase (sAA) is a sensitive marker for sympathetic nervous system activity that correlates with plasma norepinephrine, and rMSSD is a measure of parasympathetic activity that is relatively free of respiratory influences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 describe the physiological measures used in the study. These are supported by appropriate citations (Rohleder and Nater, 2009; Kleiger et al., 2005) and represent established knowledge about these biomarkers, appropriately applied in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C90"
+    ],
+    "result": "The locus coeruleus (LC) is a small brainstem structure that is the major source of norepinephrine (NE) to the brain, with widespread efferents that can modulate cognition, behavior, and autonomic tone via adrenoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C90 describe established neuroanatomical and neurophysiological knowledge about the LC. These are supported by appropriate citations (Sara, 2009; Sara and Bouret, 2012; Samuels and Szabadi, 2008a) and provide necessary background for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Rodent studies demonstrate that blocking \u03b2-adrenergic receptors in the BLA after learning impairs memory while NE or agonist infusion enhances consolidation, LC stimulation modulates BLA activity and hippocampal synaptic plasticity, but blocking \u03b2-adrenoreceptors before learning has no effect on 24-hour retrieval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 summarize prior rodent research on NE-LC function in memory. These are supported by appropriate citations (Roozendaal et al., 2008; Power et al., 2002; Lemon et al., 2009; Wagatsuma et al., 2018; Khakpour-Taleghani et al., 2008) and provide important context for the current study's hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Human studies show that propranolol administration before encoding attenuates amygdala responses and eliminates hippocampal responses during retrieval, impairs memory accuracy for emotional events, and that NE-tone increases during encoding (but not retrieval) modulate memory performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 summarize prior human research on \u03b2-adrenergic modulation of emotional memory. These are supported by appropriate citations (Strange and Dolan, 2004; Hermans et al., 2014; McIntyre et al., 2003; Cahill et al., 1994; Rimmele et al., 2016) and establish the rationale for examining LC dynamics across memory stages in humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Blocking \u03b2-adrenergic receptors increases HRV, autonomic fluctuations due to emotional stimuli can alter HRV frequencies in concert with LC BOLD responses, and greater LC-parasympathetic coupling during baseline and recollection is associated with better cognitive performance, while lower HF-HRV is associated with higher arousal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 provide physiological context for interpreting the LC-HRV coherence findings. These are supported by appropriate citations (Bittiner and Smith, 1986; Akselrod et al., 1981; Lane et al., 2009; Thayer et al., 2012) and represent established knowledge about autonomic-brain interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Prior research establishes that recollection is more likely to elicit hippocampal activity than recognition, the amygdala is a critical target of the LC for emotional memory, the LC is involved in consolidation within a critical time window, NE release optimizes signal-to-noise ratio and selectively reinforces brain activity when coupled to arousal, leading to hippocampal synaptic plasticity and neural network reorganization, though arousal-induced dynamic changes in LC activity during task performance have not been examined in animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C91-C97 provide theoretical and empirical background from prior research. These are supported by appropriate citations (Rugg and Vilberg, 2013; Hermans et al., 2014; Phelps and LeDoux, 2005; McIntyre et al., 2003; Khakpour-Taleghani et al., 2008; Sara, 2009; Sara and Bouret, 2012; Mather et al., 2016; Lemon et al., 2009; Hansen and Manahan-Vaughan, 2015; Bouret and Sara, 2005; Zerbi et al., 2019) and establish the knowledge gap addressed by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Activation of \u03b2-adrenoreceptors in the CA1 during consolidation is required for later retention of the memory task, but not for the aversive component of the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 cites prior research (Mello-Carpes and Izquierdo, 2013; Chen et al., 1992) to support the interpretation of the current study's findings about CA1 involvement during consolidation. This is appropriately used as supporting context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "According to active inference theory, NE responses from the LC can be considered prediction errors during learning from the amygdala, while LC signals to amygdala and cortex guide information transfer and model updating, with the amygdala maintaining allostasis through central amygdala control of arousal responses and BLA involvement in uncertainty processing, and NE increases accuracy of episodic memories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C73 present theoretical interpretations of the findings in the context of active inference theory. While these are supported by citations (Friston et al., 2015; Sales et al., 2019; Barsegyan et al., 2014), the authors appropriately note that their study was not designed to test this theory. The theoretical framework provides a plausible interpretation but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Forming adaptive memories in response to arousing events was predominantly associated with NE-activity, with stimuli eliciting arousal-related autonomic changes associated with LC activity following amygdala activation during successful learning, and the LC's role gradually changing from arousal-driven during consolidation to maintenance/updating during recollection with hippocampal involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 summarize the main findings in the discussion. These are supported by the convergent evidence from multiple results (C18-C31, C33-C35, C40-C43) and represent appropriate synthesis of the study's findings, though some aspects involve interpretation beyond direct observation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,1802 @@
+{
+  "submission": {
+    "id": "c8724464-6a44-4a99-a88c-6dfad0a6a500",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:20:27.281435Z",
+    "updated_at": "2025-12-02T12:20:27.281435Z"
+  },
+  "content": [
+    {
+      "id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "submission_id": "c8724464-6a44-4a99-a88c-6dfad0a6a500",
+      "content_type": "manuscript",
+      "content_text": "# The NKCC1 antagonist bumetanide mitigates interneuronopathy associated with ethanol exposure in utero\n\n## Authors\n\n- Alexander GJ Skorput<sup>1</sup>\n- Stephanie M Lee<sup>1</sup> ([ORCID: 0000-0001-6597-7144](https://orcid.org/0000-0001-6597-7144))\n- Pamela WL Yeh<sup>1</sup>\n- Hermes H Yeh<sup>1</sup> ([ORCID: 0000-0001-6733-3692](https://orcid.org/0000-0001-6733-3692)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Systems Biology Geisel School of Medicine at Dartmouth Hanover United States\n2. Department of Neuroscience, School of Medicine University of Minnesota Twin Cities Minneapolis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrenatal exposure to ethanol induces aberrant tangential migration of corticopetal GABAergic interneurons, and long-term alterations in the form and function of the prefrontal cortex. We have hypothesized that interneuronopathy contributes significantly to the pathoetiology of fetal alcohol spectrum disorders (FASD). Activity-dependent tangential migration of GABAergic cortical neurons is driven by depolarizing responses to ambient GABA present in the cortical enclave. We found that ethanol exposure potentiates the depolarizing action of GABA in GABAergic cortical interneurons of the embryonic mouse brain. Pharmacological antagonism of the cotransporter NKCC1 mitigated ethanol-induced potentiation of GABA depolarization and prevented aberrant patterns of tangential migration induced by ethanol in vitro. In a model of FASD, maternal bumetanide treatment prevented interneuronopathy in the prefrontal cortex of ethanol exposed offspring, including deficits in behavioral flexibility. These findings position interneuronopathy as a mechanism of FASD symptomatology, and posit NKCC1 as a pharmacological target for the management of FASD.\n\n## Introduction\n\nBinge-type exposure of the embryonic mouse brain to a moderate level of ethanol leads to interneuronopathy, hallmarked by aberrant tangential migration of corticopetal GABAergic interneurons derived from the medial ganglionic eminence (MGE) (Skorput et al., 2015). Interneuronopathies are widely implicated in neurodevelopmental disorders (Catterall, 2018; Kato and Dobyns, 2005; Katsarou et al., 2017), including Fetal Alcohol Spectrum Disorders (FASD) (Skorput et al., 2015; Skorput and Yeh, 2016). Data from the Behavioral Risk Factor Surveillance System for the years 2015\u20132017 show self-reported rates of current drinking, and binge drinking (>4 drinks) within the past 30 days to be 11.5% and 3.9%, respectively, among pregnant woman aged 18\u201344 years. Pregnant binge drinkers averaged 4.5 binge episodes in the past 30 days with an average binge intensity of 6.0 drinks (Denny et al., 2019). As a result of such binge drinking episodes, FASD remains a major public health concern in the United States, and a recent assessment of first-graders in 4 US communities conservatively estimated the prevalence rates of FASD to range from 1.1% to 5.0% (May et al., 2018). The global prevalence rate of FASD is estimated at 7.7 per 1000 children, and is as high as 111.1 per 1000 children among some populations (Lange et al., 2017). Despite this prevalence, our understanding of the embryonic pathoetiology of FASD is incomplete, hampering development of targeted medication and broadly applicable treatment strategies.\n\nThe more efficacious current treatments for FASD rely primarily on postnatal behavioral therapy (Nash et al., 2017), or pharmaceutics aimed to treat the symptoms, rather than the etiology, of this neurodevelopmental disorder (Peadon et al., 2009; Rowles and Findling, 2010). Indeed, there is a societal need to uncover the cellular and subcellular underpinnings by which ethanol adversely affects neurodevelopmental processes (Ismail et al., 2010; Kodituwakku, 2010; Pruett et al., 2013). Here, we report on pharmacologic mitigation of ethanol-induced interneuronopathy and associated executive function deficits in a preclinical model of FASD.\n\nGABAergic neuroblasts arising in the MGE are fated to become parvalbumin (PV+) or somatostatin expressing inhibitory interneurons in the cortex. Approximately 50% of this MGE-derived population will mature to become PV+ fast-spiking basket cells which are electrically coupled across the deep layers of the neocortex and pace oscillatory gamma rhythms, which are required for higher cognition (Batista-Brito and Fishell, 2009; Xu et al., 2008). Thus, the corticopetal tangential migration and maturation of MGE-derived GABAergic interneurons is critical to the establishment of inhibitory/excitatory balance in intracortical circuits, and proper cortical functioning (Batista-Brito and Fishell, 2009; Catterall, 2018).\n\nBuilding on our previous work (Cuzon et al., 2008; Cuzon et al., 2006), we hypothesized that ethanol\u2019s positive allosteric modulation of GABAA receptors (GABAAR) expressed on migrating neuroblasts is the mechanism by which in\u00a0utero ethanol exposure causes enduring interneuronopathy in models of FASD (Skorput et al., 2015; Skorput and Yeh, 2016). In these immature neurons, GABAAR activation results in membrane depolarization (Ben-Ari, 2014; Ben-Ari, 2002; Owens and Kriegstein, 2002). This paradoxical depolarizing action has been postulated to drive the corticopetal tangential migration of GABAergic interneurons during corticogenesis (Behar et al., 1996; Ben-Ari, 2002; Ben-Ari et al., 2012; Cuzon et al., 2006; Wang and Kriegstein, 2009). To test the influence of GABAergic depolarization on ethanol-induced interneuronopathy, we sought to normalize ethanol\u2019s potentiation of GABAergic depolarization by reducing the driving force of GABA-induced membrane depolarization via a decrease in the intracellular concentration of the GABAAR permeable anion Cl- ([Cl-]i).\n\nTo this end, we targeted the chloride importing Na+-K+\u22122Cl- isoform one cotransporter (NKCC1) because it is expressed at high levels in the embryonic brain when its activity predominates over that of the chloride exporting K+-Cl- co-transporter (KCC2). This differential activity results in a net higher [Cl-]i compared to [Cl-]o. As such, the reversal potential for chloride, and that of GABA-activated responses (EGABA), is set at a membrane potential that is depolarized relative to the resting membrane potential. Thus, GABAAR activation causes chloride extrusion and membrane depolarization in these migrating neuroblasts (Ben-Ari, 2014; Ben-Ari, 2002; Owens and Kriegstein, 2002). The loop diuretic bumetanide is an NKCC1 antagonist that shifts the EGABA of embryonic neuroblasts to a more negative membrane potential when administered maternally (Wang and Kriegstein, 2011). Given these considerations, we tested the hypothesis that in\u00a0utero treatment with bumetanide during the period of prenatal ethanol exposure will mitigate manifestation of prenatal ethanol-induced aberrant tangential migration, and prevent deficits in behavioral flexibility.\n\nThe timing of gestational exposure to ethanol is a key determinant of the diagnostic outcome of FASD (May et al., 2013; Pruett et al., 2013). Corticogenesis occurs in earnest during the mid-first trimester when the developing brain is highly vulnerable to insult by ethanol (Ayoola et al., 2009; Clancy et al., 2001; May et al., 2014). We established a mouse model that simulates an early gestational, mid-first trimester human equivalent, exposure to binge-type maternal ethanol consumption from embryonic day (E) 13.5 - E16.5 (Clancy et al., 2001; Skorput et al., 2015). Using this model, we demonstrated enhanced entry of MGE-derived GABAergic interneurons into the prefrontal cortex (PFC), a persistent increase in the number of PV+ interneurons in the young adult PFC, and impairment in the PFC-dependent behavioral flexibility of offspring (Skorput et al., 2015).\n\nIn the present study, we used this mouse model to assess whether the NKCC1 cotransporter is a tractable pharmacological target for normalizing in\u00a0utero ethanol exposure-induced escalation of tangential migration to the prefrontal cortex. We report here that ethanol induces a shift in EGABA toward a more depolarized potential, accounting at least in part for ethanol\u2019s potentiation of GABA-induced depolarizing responses in embryonic MGE-derived GABAergic interneurons. In the short term, antagonizing NKCC1 with bumetanide mitigated ethanol-induced aberrant tangential migration. In the long\u00a0term, bumetanide treatment in vivo prevented prenatal ethanol exposure-induced interneuronopathy in the prefrontal cortex, and the associated deficits in PFC-dependent behavioral flexibility. Our findings support the feasibility of a pharmacological strategy to target NKCC1 for the management of FASD.\n\n## Results\n\n### Ethanol induces a depolarizing shift in the GABA reversal potential of embryonic MGE-derived GABAergic cortical interneurons that is normalized by the NKCC1 inhibitor bumetanide\n\nNkx2.1+ embryonic MGE-derived GABAergic cortical interneurons were identified by tdTomato fluorescence and targeted for perforated patch clamp recording in acute (200 \u03bcm) telencephalic slices obtained from E14.5\u201316.5 Nkx2.1Cre/Ai14 mouse brain (Figure 1a). GABA (50 \u03bcM), ethanol (6.5 mM) and aCSF were loaded into separate barrels of a multi-barrel drug pipette and focally applied by regulated pressure either individually, or in combination, in the immediate vicinity of the cell under study (Figure 1a). Since GABA-induced membrane depolarization is prevalent in many types of immature neurons early in brain development and has been postulated to promote the tangential migration of GABAergic cortical interneurons (Behar et al., 1996; Ben-Ari, 2002; Ben-Ari et al., 2012; Cuzon et al., 2006; Wang and Kriegstein, 2009), we asked whether exogenously\u00a0applied GABA depolarized embryonic Nkx2.1+ cortical interneurons. In Figure 1b, the representative sets of digitized raw traces display current responses to 500 ms pressure applications of 50 \u03bcM GABA monitored at varying holding potentials before (black traces) and during ethanol exposure (red traces). The polarity and peak amplitude of each GABA response were plotted as a function of the corresponding holding potential, and the intercept of the current-voltage plot along the abscissa was used to estimate EGABA. Figure 1c shows linear regression of the group mean data. The control mean EGABA (dotted black line in Figure 1c) was \u221223.18\u00a0\u00b1\u00a01.45 mV, which was significantly more depolarized than the mean resting membrane potential, estimated in whole-cell mode (dotted blue line in Figure 1c; \u221241.9\u00a0\u00b1\u00a02.3 mV; unpaired t-test, p<0.01). Importantly, Figure 1c illustrates that ethanol exposure shifted EGABA rightward relative to that assessed during the control epoch (dotted red line) and subsequent washout of ethanol with aCSF shifted EGABA back to the control level (dotted gray line). Figure 1d illustrates the mean change in EGABA for each litter before and during ethanol exposure, indicating that the mean EGABA of control cells was shifted to significantly more depolarized membrane potentials with exposure to 6.5 mM ethanol (Figure 1d; \u221216.52\u00a0\u00b1\u00a00.93 mV; p\u00a0=\u00a00.0077) and shifted back to the control level following washout of ethanol with aCSF (gray dots; \u221221.57\u00a0\u00b1\u00a02.51 mV; p\u00a0=\u00a00.81; effect size \u03c92\u00a0=\u00a00.17). The finding that ethanol exposure results in a depolarizing shift in EGABA suggests that it increases [Cl-]i and thus, chloride drive. Exposure to 50 mM ethanol, the concentration used to treat organotypic slice cultures (Figure 3), also exerted a depolarizing shift in EGABA (Figure 1\u2014figure supplement 1; aCSF; \u221237.36\u00a0\u00b1\u00a01.5 mV; EtOH; \u221222.15\u00a0\u00b1\u00a01.1 mV; n\u00a0=\u00a06 litters, 21 cells total; p\u00a0=\u00a00.0003; effect size d\u00a0=\u00a04.58).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48648/elife-48648-fig1-v2.jpg)\n\n**Figure 1.:** (a) Hoffman modulated contrast image of acute telencephalic slice of E14.5 mouse brain showing patch clamp electrode (green outline) holding a tdTomato fluorescent Nkx2.1+ MGE-derived GABAergic interneuron in the perforated-patch voltage clamp configuration, with a multi-barrel drug pipette (red outline) positioned in the vicinity. (b) EGABA was empirically determined by focal application of GABA (black bars, 50 \u00b5M) at varying holding potentials under control (black traces), and ethanol exposure (6.5 mM EtOH, red traces), conditions. Dotted lines indicate EGABA for each condition, scale bar vertical\u00a0=\u00a010 pA; horizontal\u00a0=\u00a0500 ms. (c) I/V plot of peak GABA-induced current over holding potential defines EGABA as the x-intercept under control (black), ethanol exposure (red), and aCSF wash (gray) conditions. Dotted blue line denotes mean resting membrane potential. (d) EGABA of neurons under control conditions (aCSF), during ethanol exposure (EtOH+aCSF), and aCSF wash (Wash). **\u00a0= p < 0.01 one-way ANOVA with Dunnett post-test. (e) Group-wise comparison of EGABA in Nkx2.1+ neurons without and with bumetanide pretreatment (Bumet, 20 \u00b5M) and during exposure to EtOH with bumetanide pretreatment (EtOH+Bumet). Numbers below scatter denote number of litters and number of cells recorded in (). *, **\u00a0= p < 0.05, p\u00a0<\u00a00.01 compared to aCSF, one-way ANOVA with Dunnett post-test. (f) Magnitude of change in EGABA induced by 6.5 mM ethanol without and with bumetanide pretreatment (p\u00a0>\u00a00.05, unpaired t-test).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48648/elife-48648-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) I/V plot of peak GABA-induced current over holding potential defines EGABA as the x-intercept under control (aCSF; black) and ethanol exposure (EtOH; red) conditions. Dotted blue line denotes mean resting membrane potential. (b) EGABA of neurons under control conditions (aCSF; black dots) and during ethanol exposure (EtOH; red dots). Numbers above x-axis denote number of litters and number of cells recorded in (). *** = p < 0.001, paired t-test.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48648/elife-48648-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** I/V plot of peak GABA induced current over holding potential defines EGABA as the x-intercept under bumetanide control (Bumet; black) and 6.5 mM ethanol exposure (EtOH; red) conditions. Dotted blue line denotes mean resting membrane potential.\n\nFollowing a 30 min pretreatment of acute E14.5\u201316.5 telencephalic slices with the NKCC1 antagonist bumetanide (20 \u00b5M), ethanol still shifted EGABA rightward relative to control (Figure 1\u2014figure supplement 2). However, bumetanide pretreatment normalized the ethanol-induced depolarization of EGABA to control levels (Figure 1e; EtOH+Bumet; \u221224.82\u00a0\u00b1\u00a02.52 mV; n\u00a0=\u00a05 litters, 13 cells total; p\u00a0=\u00a00.56; effect size \u03c92\u00a0=\u00a00.55). The basis of this normalization is likely a functional antagonism as bumetanide pretreatment significantly hyperpolarized EGABA in Nkx2.1+ GABAergic interneurons compared to controls (Figure 1e; Bumet; \u221234.17 4.02 mV; n\u00a0=\u00a05 litters, 13 cells total; p\u00a0=\u00a00.004), and the magnitude of the depolarizing shift in EGABA induced by exposure to 6.5 mM ethanol was not effected by bumetanide pretreatment (Figure 1f; Control; 27.08\u00a0\u00b1\u00a05.61 mV; Bumet pretreatment; \u221225.38\u00a0\u00b1\u00a06.41 mV; p\u00a0=\u00a00.37; effect size d\u00a0=\u00a00.11). These results prompted us to ask whether bumetanide treatment may restrict the enhanced chloride driving force caused by ethanol-induced increases in [Cl-]i to thus mitigate ethanol\u2019s potentiation of depolarizing GABAAR activity in embryonic GABAergic interneurons.\n\n### Bumetanide attenuates ethanol-induced potentiation of depolarizing GABA responses in embryonic MGE-derived GABAergic cortical interneurons\n\nIn perforated patch-clamp recordings, we analyzed current response amplitudes of GABAergic cortical interneurons held at \u221260 mV to 500 ms applications of 50 \u03bcM GABA before and during 6.5 mM ethanol exposure in E14.5-E16.5 telencephalic slices (Figure 2a, inset). Figure 2a illustrates that, relative to baseline conditions, the mean GABA response amplitude during ethanol exposure is significantly greater (aCSF; 10.02\u00a0\u00b1\u00a00.99 pA; EtOH+aCSF; 16.89\u00a0\u00b1\u00a02.39 pA; n\u00a0=\u00a08 litters, 17 cells total; p\u00a0=\u00a00.0039; effect size \u03c92\u00a0=\u00a00.058) and the subsequent washout of ethanol with aCSF reverses the effect of ethanol on GABA response amplitude (Washout; 12.60\u00a0\u00b1\u00a01.99 pA; p\u00a0=\u00a00.16). The mean GABA response amplitude during 50 mM ethanol exposure was also significantly greater than that of control (Figure 2\u2014figure supplement 1; aCSF; 7.77\u00a0\u00b1\u00a01.09 pA; EtOH; 17.28\u00a0\u00b1\u00a03.21 pA; n\u00a0=\u00a06 litters, 21 cells total; p\u00a0=0.01). The mean amplitude of the GABA-activated current responses of GABAergic interneurons in the bumetanide pretreated slices was 10.53\u00a0\u00b1\u00a00.62 pA before ethanol exposure, and was significantly increased to 13.45\u00a0\u00b1\u00a01.31 pA during ethanol exposure (Figure 2b; n\u00a0=\u00a05 litters, recorded from 11 cells; p\u00a0=\u00a00.019; effect size d\u00a0=\u00a01.71). Bumetanide pretreatment alone did not alter the GABA response amplitude compared to aCSF control (Figure 2\u2014figure supplement 2; p\u00a0=\u00a00.71). However, ethanol exposure potentiated the amplitude of GABA responses by 59.37 \u00b1 8.83% under control conditions, and by 26.46 \u00b1 6.26% in the bumetanide pretreatment group, demonstrating the ability of bumetanide to significantly decrease the mean ethanol-induced change in GABA response (Figure 2c; p\u00a0=\u00a00.011; effect size d\u00a0=\u00a01.63). Taken together with our earlier finding that GABA-activated current responses in embryonic MGE-derived GABAergic interneurons are mediated by GABAA receptors (Cuzon Carlson and Yeh, 2011; Cuzon et al., 2008), these results indicate that NKCC1 antagonism attenuates ethanol-induced potentiation of depolarizing GABAAR-activated responses in migrating GABAergic cortical interneurons.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48648/elife-48648-fig2-v2.jpg)\n\n**Figure 2.:** (a) Peak current amplitude recorded from Nkx2.1+ MGE-derived GABAergic interneurons in slices of E14.5 mouse telencephalon in response to focal application of GABA (50 \u00b5M) under control (aCSF; inset: black trace), ethanol exposure (EtOH, 6.5 mM; inset: red trace), or aCSF wash (Wash), scale bar vertical\u00a0=\u00a010 pA; horizontal\u00a0=\u00a0500 ms. **\u00a0= p < 0.01 one-way ANOVA with Dunnett post-test. (b) Peak current amplitude in response to focal application of GABA (50 \u00b5M) in the presence of bumetanide (Bumet) or ethanol and bumetanide (EtOH+Bumet). *\u00a0= p < 0.01 paired t-test. (c) Percent change in peak GABA response induced by ethanol exposure at baseline (aCSF) and in the presence of bumetanide (Bumet). *\u00a0= p < 0.05 unpaired t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48648/elife-48648-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Peak current amplitude recorded from Nkx2.1+ MGE-derived GABAergic interneurons in slices of E14.5 mouse telencephalon in response to focal application of GABA (50 \u00b5M) under control (aCSF; black) and ethanol exposure (EtOH; red). Numbers above x-axis denote number of litters and number of cells recorded in (). *\u00a0= p < 0.05 paired t-test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48648/elife-48648-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The mean GABA response amplitude in control (aCSF) and bumetanide pre-treated (Bumet) cells. Numbers above x-axis denote number of litters and number of cells recorded in (). Unpaired t-test.\n\n### Co-treatment with bumetanide prevents ethanol\u2019s enhancement of tangential migration in vitro\n\nWe then asked whether NKCC1 antagonism inhibits ethanol-induced escalation of tangential migration among cortical GABAergic interneurons (Cuzon et al., 2008; Skorput et al., 2015; Skorput and Yeh, 2016). To this end, organotypic slice cultures containing the embryonic PFC were prepared from E14.5 Nkx2.1Cre/Ai14 brains, incubated in control or ethanol-containing medium without or with bumetanide, and tangential migration of MGE-derived interneurons was assessed following 24 hr in culture (Figure 3). Nkx2.1+ GABAergic interneurons were counted in consecutive bins 100 \u00b5m in width arranged ventro-dorsally and beginning at the cortico-striate junction (Figure 3a). Relative to controls, organotypic telencephalic slices cultured in media containing 50 mM ethanol had more Nkx2.1+ GABAergic interneurons per 100 \u03bcm cortical bin in the embryonic PFC (Figure 3a and b; Control $x-$\u00a0= 61.3 \u00b1 2.8 cells, 12 cultures; EtOH $x-$\u00a0= 78.5 \u00b1 3.5 cells, 10 cultures; P = 0.00166; effect size \u03c92\u00a0=\u00a00.31). The addition of bumetanide (20\u03bcM) to the culture medium prevented the ethanol-induced escalation of Nkx2.1+ interneuron migration into the cortex with no significant difference observed compared to control (Figure 3a and b; EtOH+Bumet $x-$\u00a0= 61.1 \u00b1 2.4 cells, 10 cultures; P >\u00a00.999; effect size \u03c92 for treatment = 0.23). Bumetanide alone (20 \u00b5M) did not affect Nkx2.1+ interneuron entry into the cortex compared to controls (Figure 3a and b; Bumet $x-$\u00a0= 60.3 \u00b1 3.7 cells, 9 cultures; P >\u00a00.999). When analyzed in terms of the number of Nkx2.1+ cells per cortical bin, the largest increase in Nkx2.1+ cell number was in the cortical region most proximal to the corticostriate juncture (Figure 3c; effect size \u03c92 for bin = 0.23). These results are consistent with aberrant tangential migration being a primary effect of ethanol exposure in the fetal brain. In addition, these data demonstrate that bumetanide can inhibit the ethanol-induced supranormal corticopetal migration of GABAergic interneurons at concentrations that did not affect their normal pattern of migration.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48648/elife-48648-fig3-v2.jpg)\n\n**Figure 3.:** (a) Fluorescent images of organotypic E14.5 Nkx2.1-Cre/Ai14 mouse telencephalic brain slices treated with vehicle, ethanol (50 mM) + vehicle (EtOH + Vehicle), ethanol + bumetanide (EtOH+Bumet, 20 \u00b5M), or bumetanide alone (Bumet, 20 \u00b5M), and counterstained with DAPI (blue). The corticostriate junction is marked by the dashed line, and numbered counting bins are denoted by dotted lines in the vehicle panel. Scale bars\u00a0=\u00a0100 \u00b5m. (b) Mean number of tdTomato flourecent Nkx2.1+ cells per 100 \u00b5m bin. **\u00a0= p < 0.01 one-way ANOVA with Bonferroni post-test. Each dot represents one organotypic culture. (c) Number of tdTomato fluorescent Nkx2.1+ cells in each 100 \u00b5m bin. **, ***, ****\u00a0= P < 0.01, 0.001, 0.0001 compared to control, #\u00a0= p < 0.05 compared to EtOH+Bumet two-way ANOVA with Bonferroni post-test.\n\n### Maternal bumetanide treatment prevents ethanol-induced escalation of tangential migration in vivo\n\nTo assess the short term interaction between binge ethanol exposure and bumetanide treatment in\u00a0vivo, we co-treated binge-type ethanol-consuming (5% EtOH w/w) pregnant dams harboring Nkx2.1Cre/Ai14 embryos daily with bumetanide (i.p.; 0.15mg/kg dissolved in DMSO) from E13.5 \u2013 16.5 and analyzed the density of Nkx2.1+ profiles in the embryonic PFC at E16.5 (Figure 4a). Ethanol exposure alone significantly increased the number of Nxk2.1+ neurons in the dorsomedial telencephalon (Figure 4b; Control $x-$\u00a0= 1.78x10-3 \u00b1 5.90x10\u22125 cells/\u03bcm2, 10 brains from 3 litters; EtOH $x-$\u00a0= 2.61x10-3 \u00b1 1.39x10\u22124 cells/\u03bcm2, 10 brains from 4 litters; P = 1.13x10\u22125; effect size \u03c92=\u00a00.65). Maternal treatment over the course of binge-type ethanol exposure with bumetanide significantly attenuated the ethanol-induced increase in MGE-derived GABAergic interneuron density in the embryonic PFC (Figure 4b; EtOH+Bumet DMSO i.p. $x-$\u00a0= 1.99x10-3 \u00b1 8.79x10\u22125 cells/\u03bcm2, 8 brains from 3 litters; P = 0.00357). In addition, bumetanide co-treatment completely normalized the ethanol-induced effect, returning MGE-derived interneuron density to control levels (Figure 4b; P >0.999). As a negative control, given that bumetanide is relatively insoluble in aqueous solutions, treatment with normal saline to which bumetanide (0.015 mg/ml) was added failed to decrease the ethanol induced enhancement of tangential migration when injected i.p. (Figure 4b; EtOH+Bumet NS $x-$\u00a0= 2.49x10-3 \u00b1 1.45x10\u22125 cells/\u03bcm2, 5 brains from 2 litters; P >0.999), and a significant increase in Nkx2.1+ cell density persisted in the E16.5 PFC compared to controls (Figure 4b; P = 0.00481).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48648/elife-48648-fig4-v2.jpg)\n\n**Figure 4.:** Nkx2.1+ cells were identified by tdTomato fluorescence and quantified in the dorso-medial telencephalon of E16.5 embryonic brain. (a) Fluorescent images counterstained with DAPI following control, binge-type maternal ethanol consumption from E13.3 - E16.5 (EtOH), or ethanol exposure in combination with maternal bumetanide treatment administered i.p. 0.15 mg/kg/day (E13.5 - E16.5) dissolved in DMSO (EtOH+Bumet). Scale bars\u00a0=\u00a0100 \u00b5m. (b) Quantification of Nkx2.1+ cells in the dorso-medial telencephalon after ethanol exposure in combination with maternal bumetanide treatment administered i.p. 0.15 mg/kg/day (E13.5 - E16.5) dissolved in normal saline (EtOH+Bumet NS) or DMSO (EtOH+Bumet DMSO), or maternal bumetanide treatment administered in the ethanol containing liquid diet (EtOH+Bumet salt; 1.3, 13, 130, 320 mg/kg food), or control conditions under which dams consumed equicaloric liquid food from E13.5-E16.5 (control). Dotted line highlights mean of control group. Numbers above x-axis denote number of brains and number of litters in (). **,****\u00a0= p < 0.01, 0.0001 compared to control; ##, ####\u00a0= p < 0.01, 0.0001 compared to EtOH; one-way ANOVA with Bonferroni post-test. Control and EtOH groups are reproduced from Skorput et al. (2015).\n\nWe next sought to simulate a more clinically relevant route of bumetanide administration. We asked whether bumetanide, administered orally in the course of ad\u00a0lib feeding, can prevent the in vivo effects of binge-type ethanol exposure on the entry of MGE-derived interneurons to the embryonic PFC. To this end, a Na+ bumetanide salt (320, 130, 13, 1.3 mg/kg food) was dissolved in the 5% w/w ethanol containing liquid diet fed to binge ethanol-consuming dams.\n\nE16.5 embryos from dams ingesting ethanol-containing liquid food with 320 mg bumetanide salt /kg food had a significantly lower density of Nkx2.1+ cells in the PFC compared to ethanol exposure alone (Fig 4b; EtOH+Bumet 320mg/kg food $x-$\u00a0= 1.40x10-3 \u00b1 7.96x10\u22125 cells/\u03bcm2, 7 brains from 2 litters; P = 1.38x10\u22128) with complete normalization relative to the control cohort (Figure 4b; P = 0.483). At a concentration of 130 mg bumetanide salt/kg food, no significant difference in Nkx2.1+ cell density was found in the E16.5 PFC compared to control or binge ethanol exposure alone (Figure 4; EtOH+Bumet 130mg/kg food $x-$\u00a0= 2.15x10-3 \u00b1 4.07x10\u22125 cells/\u03bcm2, 4 brains from 2 litters; P > 0.999, P = 0.465 respectively). Embryos born to dams that consumed a liquid diet containing both 5% w/w ethanol and the lowest concentrations of bumetanide tested (1.3 or 13mg bumetanide salt /kg food) showed significantly higher densities of MGE-derived GABAergic interneurons in the PFC compared to controls (Figure 4b; EtOH+Bumet 1.3mg/kg food $x-$\u00a0= 2.78x10-3 \u00b1 1.55x10\u22124 cells/\u03bcm2, 5 brains from 2 litters; EtOH+Bumet 13mg/kg food $x-$\u00a0= 2.50x10-3 \u00b1 1.81\u00a0x\u00a010\u22124 cells/\u03bcm2, 6 brains from 2 litters; P = 1.65x10\u22125, P = 0.00152, respectively) and Nkx2.1+ cell densities were not significantly decreased compared to EtOH exposure alone (Figure 4b; P >\u00a00.999). DMSO alone administered i.p. was not performed as a control for this analysis since bumetanide administration via a different vehicle (bumetanide salt in food) produced similar results. In addition, bumetanide in normal saline delivered i.p. controlled for the i.p. route of administration. Bumetanide alone had no effect in vitro (Figure 3) or in vivo (Figure 5) of altering the number of MGE-derived cortical interneurons. These considerations led us to conclude that the DMSO and bumetanide alone control groups could be omitted without compromising our ability to determine whether maternal bumetanide treatment dose-dependently mitigates binge-type ethanol-induced aberrant tangential migration.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48648/elife-48648-fig5-v2.jpg)\n\n**Figure 5.:** (a) Histological sections of young adult mouse prefrontal cortex processed for parvalbumin immunofluorescence, counterstained with DAPI, and binned by functional region and layer using DAPI cytoarchitecture. Scale bar\u00a0=\u00a0100 \u00b5m. (b) Quantification of PV+ MGE-derived GABAergic cortical interneurons in mice without (control), and with (EtOH) binge-type ethanol exposure (E13.5 - E16.5), as well as mice with ethanol exposure born to dams treated with bumetanide (0.15 mg/kg/day i.p. in DMSO; EtOH+Bumet), or mice born to dams that consumed control diet and received bumetanide treatment (Bumet). ****\u00a0= p < 0.0001 compared to control; ##, ####\u00a0= p < 0.01, 0.0001 compared to EtOH; two-way ANOVA with Bonferroni post-test analyzed per region, and stratified by treatment and cortical layer. ACC\u00a0=\u00a0anterior cingulate cortex, PL\u00a0=\u00a0prelimbic, IL\u00a0=\u00a0infralimbic. The EtOH group, and a portion of the Control group are reproduced from Skorput et al. (2015).\n\n### Treatment of binge ethanol consuming dams with bumetanide prevents interneuronopathy in the PFC of young adult offspring\n\nTo determine the long-term effect of NKCC1 antagonism on ethanol-induced interneuronopathy, we quantified the distribution of PV+ interneurons in the PFC of young adult mice that had been exposed prenatally to binge-type ethanol without or with bumetanide co-treatment (daily maternal i.p. injection, 0.15mg/kg, E13.5 - E16.5). The PFC was divided into subregions (anterior cingulate cortex (ACC), prelimbic (PL), infralimbic (IL)), and subdivided by cortical layer, based on the cytoarchitecture as revealed by DAPI counterstaining. Previously, we reported a layer V-specific increase in PV+ interneurons in the young adult mPFC following binge-type ethanol exposure in utero (Skorput et al., 2015). In comparison, the number of PV+ interneurons in the PFC of binge-type ethanol-exposed offspring treated in utero with bumetanide was significantly lower in layer V of the ACC (Figure 5a and b; EtOH $x-$\u00a0= 47.7 \u00b1 3.5, 9 brains from 4 litters; EtOH+Bumet $x-$\u00a0= 37.3 \u00b1 2.0, 4 brains from 2 litters; P = 0.00429; effect size \u03c92 for layer = 0.79; effect size \u03c92 for treatment = 0.02) and the PL region (Figure 5a and c; EtOH $x-$\u00a0= 30.9 \u00b1 3.0, 9 brains from 4 litters; EtOH+Bumet $x-$\u00a0= 19.1 \u00b1 1.5, 4 brains from 2 litters; P = 3.27x10-5; effect size \u03c92 for layer = 0.62; effect size \u03c92 for treatment = 0.08). The increase in PV+ interneurons of the ACC induced by in utero ethanol exposure was completely prevented by bumetanide co-treatment; there was no significant difference in the number of PV+ interneurons in layer V of the ACC between offspring exposed to ethanol in utero that received maternal bumetanide treatment and controls (Figure 5a and b; Control $x-$\u00a0= 31.8 \u00b1 2.0, 11 brains from 4 litters; P = 0.384). Maternal bumetanide treatment also completely prevented the ethanol-induced effect in layer V of the PL region (Figure 5a and c; Control $x-$\u00a0= 19.7 \u00b1 1.9, 11 brains from 4 litters; P >\u00a00.999). The effect of bumetanide treatment on preventing in\u00a0utero ethanol-induced interneuronopathy extended throughout layer V of the PFC, with no significant difference in the number of PV+ interneurons in the IL region compared to controls (Figure 5a and d; Control $x-$\u00a0= 8.4 \u00b1 0.7, 11 brains from 4 litters; EtOH+Bumet $x-$\u00a0= 10.4 \u00b1 2.1, 4 brains from 2 litters; P = 0.228; effect size \u03c92 for layer = 0.65; effect size \u03c92 for treatment = 0.07). Additionally, maternal treatment with bumetanide (0.15 mg/kg i.p. daily, E14.5 - E16.5) in the absence of in utero binge-type ethanol exposure (control liquid diet) did not alter the number of PV+ interneurons in any of the PFC regional layers analyzed in young adult offspring (Figure 5a - b; Bumet, 3 brains from 2 litters; P >\u00a00.247).\n\n### Maternal bumetanide treatment prevents the deficits in behavioral flexibility seen with ethanol exposure in utero\n\nTo determine if the observed normalizing effect of maternal bumetanide treatment on tangential migration also mitigates deficits in PFC-dependent behavioral flexibility, we compared the performance of offspring exposed in\u00a0utero to binge-type ethanol without and with maternal bumetanide treatment (0.15 mg/kg i.p, dissolved in DMSO) on the modified Barnes maze (Figure 6). Young adult offspring exposed to binge-type ethanol in\u00a0utero and treated maternally with bumetanide exhibited no significant difference in the number of errors committed during the training and testing phases compared with ethanol-exposed, and control, offspring (Figure 6a; Control 14 offspring from four litters; EtOH 19 offspring from four litters; EtOH+Bumet 8 offspring from two litters; p>0.427).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48648/elife-48648-fig6-v2.jpg)\n\n**Figure 6.:** (a) Mean number of errors committed in the modified Barnes maze by young adult mice born to control, ethanol consuming (EtOH) and ethanol consuming plus bumetanide treated (EtOH+Bumet) dams across training testing and reversal phases of testing. ***\u00a0= p < 0.001 compared to control, #\u00a0= p < 0.05 compared to EtOH; two-way ANOVA with Bonferroni post-test. (b) Mean number of errors committed during the first reversal day stratified by quadrant relative to the escape hole. Increased errors in the opposite quadrant denotes perseverative behavior ***\u00a0= p < 0.001 compared to control; two-way ANOVA with Bonferroni post-test. The Control and EtOH groups are reproduced from Skorput et al. (2015).\n\nAs previously reported (Skorput et al., 2015), the errors committed by ethanol-exposed offspring increased on day one of the reversal phase (Figure 6a; Control $x-$\u00a0= 2.68 \u00b1 0.37 errors; EtOH $x-$\u00a0= 4.78 \u00b1 0.41 errors; P = 0.00192; effect size \u03c92 for trial = 0.18; effect size \u03c92 for treatment = 0.14). Offspring born to ethanol consuming dams treated with bumetanide, however, showed no significant increase in errors compared to controls (Figure 6a; EtOH+Bumet i.p. $x-$\u00a0= 3.28 \u00b1 0.51 errors; P >0.999), and was significantly lower than those committed by ethanol-exposed offspring not treated maternally with bumetanide (Figure 6b; P = 0.0433; effect size \u03c92 for quadrant = 0.11; effect size \u03c92 for treatment = 0.10). Further analysis revealed that the increase in errors exhibited by ethanol exposed offspring on day one of the reversal phase were committed in the opposite quadrant (Figure 6b; Control $x-$\u00a0= 0.92 \u00b1 0.23 errors; EtOH $x-$\u00a0= 1.88 \u00b1 0.15 errors; P = 0.00036). In contrast, the number of these perseverative errors committed by ethanol exposed offspring maternally treated with bumetanide was not significantly different from controls (Figure 6b; EtOH+Bumet $x-$\u00a0= 1.21 \u00b1 0.31 errors; P = 0.0745). Thus, maternal bumetanide treatment prevented perseverative behaviors, which are indicative of reduced behavioral flexibility, in offspring exposed to ethanol in\u00a0utero.\n\n## Discussion\n\nThe results reported here advance our understanding of depolarizing GABAergic influence on tangential migration, and demonstrate that treatment of ethanol consuming dams with bumetanide can prevent persistent interneuronopathy in ethanol-exposed offspring. These results offer insights into the developmental pathophysiology of FASD, and posit therapeutic avenues for novel treatments.\n\nAs shown by our electrophysiological studies, ethanol-induced depolarizing shifts in EGABA of similar magnitude without and with bumetanide pretreatment, suggesting that the depolarizing shift of EGABA induced by ethanol occurs independent of NKCC1 function. Further, since NKCC1 antagonism alone significantly shifted EGABA to more hyperpolarized values, it is likely that bumetanide does not directly inhibit the ethanol-induced depolarizing shift in EGABA, but rather normalizes it via a mechanism separate from NKCC1. Future studies examining the mechanism underlying the ethanol-induced shift in EGABA will be informative. It is plausible that ethanol shifts EGABA by enhancing the function of Cl- importers other than NKCC1, such as the sodium-independent anion exchange protein AE3. AE3 is expressed in the brain by E11 and augments the electrochemical gradient of chloride and bicarbonate in neurons, both of which are permeable through the GABAAR (reviewed in H\u00fcbner and Holthoff, 2013). Importantly, this is likely an age-dependent phenomenon since GABA is depolarizing only during early development.\n\nIn this study, the normalization of [Cl-]i, and thus the chloride driving force, had the predicted effect of attenuating GABA induced depolarizing currents in migrating cortical interneurons. Previous work by Cuzon et al. (2006)\u00a0and Cuzon et al. (2008) investigating the cell intrinsic and extrinsic factors that contribute to GABA\u2019s influence on tangential migration argue strongly for GABAAR-activated membrane depolarization influencing both prototypical migration of GABAergic interneurons and their abnormal migration induced by ethanol exposure (Cuzon et al., 2008; Cuzon et al., 2006). The importance of GABAAR signaling in tangential migration is consistent with work by others describing the dependence of interneuron migration on depolarization induced calcium signaling (Behar et al., 1996). Future investigations will need to address whether the binge paradigm used here alters extrinsic GABA influences, such as ambient GABA levels, and whether ethanol-induced potentiation of depolarizing GABA responses triggers activation of voltage-gated calcium channels and/or intracellular signaling cascades to induce aberrant migration of GABAergic interneurons.\n\nThe concept of a GABA-induced depolarization is not without controversy, as a number of studies suggest that this may be due to artifacts associated with in vitro experimental preparations that result in cellular injury and/or altered energy metabolism. Nonetheless, many other studies support the notion that GABA is depolarizing during development, and this controversy has been extensively reviewed (Zilberter, 2016). Overall, the results of our gramicidin perforated patch clamp experiments show that GABA exerts a depolarizing response in migrating MGE-derived GABAergic interneurons at embryonic ages, and that ethanol potentiates this response.\n\nThe ability of bumetanide to prevent aberrant tangential migration following in\u00a0utero binge-type exposure to ethanol at the height of interneuron migration sheds light on the mechanistic basis of ethanol\u2019s enhancement of tangential migration. Maternal injection with a similar dose of bumetanide has been shown to shift the reversal potential of GABA mediated currents in neonatal cortical neurons, suggesting that maternally administered bumetanide reaches the embryonic brain (Wang and Kriegstein, 2011). With the doses of bumetanide used here, we did not see a reduction in tangential migration below levels seen in control animals, suggesting the existence of a therapeutic window in which bumetanide treatment can inhibit the aberrant migration induced by ethanol exposure in\u00a0utero while not significantly effecting endogenous migration. Despite not impacting tangential migration in vitro, bumetanide at 20 \u00b5M did significantly shift the EGABA of migrating interneurons to more hyperpolarized values (Figure 1e). This discrepancy may be due to the limited magnitude of the shift in EGABA, and/or a difference in the acute vs persistent effects of bumetanide on EGABA in MGE-derived GABAergic cortical interneurons. Further mechanistic investigations are warranted regarding the interactions of ethanol and bumetanide in augmenting EGABA in both acute, and chronic settings across a range of concentrations.\n\nOur experiments testing the long-term outcome of bumetanide treatment during binge-type ethanol exposure at the height of interneuron migration offer insights into the role of interneuronopathy in the pathophysiology of FASD, and the potential for bumetanide as a preventative treatment. The prevention of in\u00a0utero ethanol exposure-induced changes in interneuron migration and final positioning remain correlative with the observed normalization of behavioral flexibility. However, this work strongly implicates interneuronopathy in the etiology and symptomatology of FASD. Parvalbumin-expressing GABAergic interneurons in the mPFC pace gamma rhythms required for higher cognitive processing (Kim et al., 2016). These rhythms are disrupted by either subnormal or supernormal parvalbumin interneuron function (Carl\u00e9n et al., 2012; Sohal et al., 2009).\u00a0Thus, cognitive behavioral deficits resulting from I/E imbalance within intracortical circuits can become manifest regardless of the directionality of this skewing, for review see Ferguson and Gao (2018a). To this end, it has been demonstrated that increased excitability among mPFC PV neurons results in increased perseverative behaviors (Ferguson and Gao, 2018b), consistent with the increased perseverative behavior reported here in mice with increased numbers of parvalbumin-expressing interneurons in the mPFC following prenatal ethanol exposure. It is unlikely that aberrant tangential migration is the only effect of ethanol that contributes to the imbalance of synaptic inhibition and excitation in FASD (Kroener et al., 2012; Skorput et al., 2015). However, bumetanide\u2019s ability to prevent this migratory defect in vivo suggests that such treatment may prevent ethanol-induced teratogenic effects on other cell populations that occur via potentiation of GABAAR activation. GABAergic interneuron migration appears to be sensitive to concentrations of ethanol that do not induce the widespread neuronal loss most commonly seen in the setting of high level exposure at a developmental time equivalent to late human gestation (Farber et al., 2010). Therefore, interneuronopathy may be an underlying etiology in a significantly larger population of FASD patients than is neurodegeneration. Dams treated with bumetanide and/or ethanol for the limited duration modeled here did not exhibit significant deviation of body weight or physical condition compared to controls. However, the influence of maternal bumetanide effects on the endpoints measured here in offspring warrant future investigation. A potential caveat of this work is that the behavioral studies lacked the DMSO alone and bumetanide alone treatment groups. These groups were included in subsequent experiments that quantified interneuronopathy (Figures 3 and 5), and the results confirmed that DMSO or bumetanide, by themselves, have no effect on the ethanol-induced enhancement of interneuronal migration. The concentration of DMSO injected i.p. was 0.075%; the final concentration in vivo would have been expected to have been significantly lower. Future experiments investigating the therapeutic window of maternal bumetanide treatment would be enhanced by including these control groups. We have demonstrated a reduction in the perseverative behavior of mice exposed to ethanol in\u00a0utero. However, other FASD cognitive phenotypes remain to be examined. In this light, future investigations should also assess other FASD-related behaviors and the cellular underpinnings in the associated cortical regions.\n\nPreliminary studies report changes in fMRI activation and improvement in executive functioning with behavioral therapy (Nash et al., 2017). However, no treatments are currently available to ameliorate the developmental etiology of prenatal alcohol exposure. The work presented here offers antagonism of NKCC1 as a mechanism by which the short-term effects of binge-type ethanol exposure are mitigated, leading to prevention of a previously demonstrated ethanol-induced cognitive deficit. Indeed, developmental bumetanide exposure has been proposed for the treatment of neonatal epilepsy, and possible adverse effects have been reviewed (Ben-Ari, 2012; Ben-Ari and Tyzio, 2011). Our work shows that bumetanide has a biological effect on ethanol-enhanced tangential migration when administered maternally via both intraperitoneal and oral routes. While the co-administration of ethanol and bumetanide employed here served to assess mechanistic questions regarding GABAergic interneuron migration and the implications of interneuronopathy in FASD, the more likely clinical scenario would be administration of bumetanide after ethanol exposure (e.g. a patient learns she is 6 weeks pregnant, and reports binge drinking within that period of time). Therefore, the next step for this work is clearly to assess bumetanide\u2019s ability to prevent or mitigate the long-term deleterious effects of in\u00a0utero ethanol exposure when administered at times after ethanol exposure.\n\nWhile it is likely that some enhancement of tangential migration has occurred initially, it is possible that bumetanide treatment will slow migration of subsequent interneurons to the cortex. Alternatively, it may be that bumetanide treatment later in development, when cortical neurons have already reached their final location, may allow changes in synaptic integration to prevent consolidation of what would otherwise be an imbalanced circuit. Physiological maturation of PV+ cortical interneurons closes the critical period of synaptic plasticity during corticogenesis (van Versendaal and Levelt, 2016). This maturation is driven by depolarizing GABAergic activity, and thus, is sensitive to the activity level of NKCC1 (Deidda et al., 2015; van Versendaal and Levelt, 2016). Indeed, work in the visual cortex demonstrates the ability for bumetanide treatment to exert lasting effects on intracortical circuit formation by extending the critical period of synaptic plasticity via a delay in the physiological maturation of PV+ interneurons (Deidda et al., 2015). NKCC1 antagonist treatment may therefore be beneficial for mitigating interneuronopathy directly via a delay of MGE-derived interneurons, and/or indirectly by mitigating the deleterious effects of interneuronopathy on consolidation of intracortical circuits.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Nkx2.1-Cre</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX:\u00a000861 MGI:\u00a0J:131144</td>\n      <td>PMID: 17990269</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Ai14</td>\n      <td>The Jackson Laboratory</td>\n      <td>JAX:\u00a0007914 MGI:\u00a0J:155793</td>\n      <td>PMID: 20023653</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-parvalbumin (mouse polyclonal)</td>\n      <td>Millipore Sigma</td>\n      <td>Cat#: MAB 1572</td>\n      <td>1:1000</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>GABA</td>\n      <td>Millipore Sigma</td>\n      <td>Cat#: A2129</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bumetanide</td>\n      <td>Millipore Sigma</td>\n      <td>Cat#: B-3023</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>NIH</td>\n      <td>https://imagej.nih.gov/ij/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Adobe Photoshop</td>\n      <td>Adobe Systems, San Jose, CA</td>\n      <td>http://www.adobe.com/products/photoshop.html</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Graphpad Prism</td>\n      <td>Graphpad Software, Inc, La Jolla, CA</td>\n      <td>http://www.graphpad.com/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>G*Power 3.1</td>\n      <td>Heinrich Heine University D\u00fcsseldorf</td>\n      <td>RRID:\u00a0SCR_013726</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nAll procedures were performed in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and approved by the Dartmouth Institutional Animal Care and Use Committee. The Nkx2.1-Cre transgenic mouse line (originally obtained from Dr. Stewart Anderson; (Xu et al., 2008) was crossed with the Ai14 Cre-reporter mouse line (Jackson laboratories, Bar Harbor, ME) to yield Nkx2.1Cre/Ai14 mice harboring tdTomato-fluorescent (Nkx2.1+) MGE-derived GABAergic interneurons (Skorput et al., 2015). For time-pregnant mating, pairs of male and female mice were housed overnight, with the following day designated as E0.5, and the day of birth designated as postnatal day (P) 0. Embryonic day 13.5\u201316.5 embryos and P58-85 young adult mice of either sex were included in this study as available. No difference in the ratio of male to female offspring was noted between treatment groups. Embryonic day 13.5\u201316.5 and P58 - 85 were operationally defined to be within the age range equivalent to mid-first trimester (Clancy et al., 2001) and young adulthood (Varlinskaya and Spear, 2004), respectively in humans.\n\n### Perforated patch clamp recording and drug application in acute embryonic telencephalic slices\n\n#### Acute slice preparation\n\nOn E14.5\u2013E16.5, dams were asphyxiated with CO2 and fetuses were removed by caesarian section. Nkx2.1Cre/Ai14 embryos were phenotyped by the presence of tdTomato fluorescence over the cortical region of the dissected brains, which is readily visualized using UV goggles. The brains expressing tdTomato fluorescence were isolated and immersed in ice-cold oxygenated artificial cerebral spinal fluid (aCSF) containing (in mM): NaCl 124; KCl 5.0; MgCl2 2.0; CaCl2 2.0; glycine 0.01; NaH2PO4 1.25; NaHCO3 26; glucose 10. The brains were then embedded in 3.5% low-melting point agarose (Invitrogen, Carlsbad, CA), and coronal telencephalic slices (250 \u00b5m) were sectioned on a vibratome (Electron Microscopy Services, Hatfield, PA). The slices were stored immersed in a reservoir of aCSF at room temperature for approximately 1 hr prior to use for electrophysiological experiments. For consistency, we used only slices in which the MGE and LGE were clearly demarcated by the ganglionic sulcus.\n\n#### Perforated patch clamp recording\n\nGramicidin perforated patch clamp recording was used in order to preserve the intracellular chloride (Cl-) concentration (Ebihara et al., 1995). An acute 200 \u00b5m telencephalic slice obtained from E14.5-E16.5 Nkx2.1Cre/Ai14 brain was transferred to a recording chamber, stabilized by an overlaying platinum ring strung with plastic threads, and maintained at 32\u201334\u00b0 C on a heated stage fit onto a fixed-stage upright microscope (BX51WI, Olympus, Melville, NY). The slices were perfused at a rate of 0.5\u20131.0 ml/min with oxygenated aCSF containing (in mM): 125 NaCl, 2.5 KCl, 1 MgCl2, 1.25 NaH2PO4, 2 CaCl2\u00b72H2O, 25 NaHCO3, 25 D-glucose, pH 7.4 (adjusted with 1N NaOH). Under fluorescence illumination and Hoffman Modulation Optics (Modulation Optics, Greenvale, NY), tdTomato fluorescent cells (Nkx2.1+) were identified using a 40X water immersion objective (3 mm working distance; Olympus; Figure 1a). Real-time images were captured using an analog video camera attached to a video frame grabber (Integral Technologies, Indianapolis, IN) and displayed on a computer monitor, which also aided the navigation and placement of the recording and drug pipettes.\n\nPerforated patch-clamp recording pipettes were pulled from borosilicate glass capillaries (1.5 mm outer diameter, 0.86 mm inner diameter; Sutter Instrument Co., Novato, CA). They were first front-loaded with a K-gluconate-based internal solution containing (in mM): 100 K-gluconate, 2 MgCl2, 1 CaCl2, 11 EGTA, 10 HEPES, 30 KCl, 3 Mg+2 ATP, 3 Na+ GTP (adjusted to pH 7.3 with 1N KOH) and then back-filled with the same solution supplemented with 10 \u03bcg/ml gramicidin. When filled with recording solution, the patch pipettes had resistances of 8\u201310 M\u2126. Series resistance, monitored periodically throughout the recording, typically dropped within 10 min and stabilized for a sufficient length of time (~15 min) for the perforated patch recording experiments. The stability of the zero current baseline was also monitored continuously, and cells with unstable recordings were excluded from analysis. Recordings were made using an AxoPatch 700B amplifier (Molecular Devices Inc, Sunnyvale, CA). Membrane currents were digitized at 20 kHz (Digidata 1320A; Molecular Devices), recorded with low-pass filtering at 10 kHz (Digidata1320A; Molecular Devices Inc) and analyzed offline using GraphPad Prism software (Version 7.0).\n\n#### Drug application\n\nGABA (MilliporeSigma, Burlington, MA) was dissolved in aCSF, stored as frozen stock and diluted to a working concentration of 50 \u03bcM with aCSF immediately prior to each recording session. Ethanol was prepared fresh by diluting 95% ethanol with aCSF to 6.5 mM. We used this low concentration of ethanol for the electrophysiological studies because it approximates the blood alcohol concentration (30 mg/dL) attained in a mouse model of a moderate to low level of chronic ethanol consumption used previously to investigate cortical development and function following prenatal ethanol exposure (Cuzon et al., 2008; Skorput and Yeh, 2016). Bumetanide (MilliporeSigma) was made into a salt to increase its solubility in water. A solution of sodium hydroxide was added to a suspension of bumetanide, the resultant suspension was heated to 70\u201380\u00b0C with stirring until a clear homogenate solution was obtained, which was then concentrated and dried to yield a white solid bumetanide sodium salt (3-butylamino-4-phenoxy-5-sulfamoyl-benzoic acid + Na; courtesy of Dr. Alex Pletnev, Department of Chemistry, Dartmouth College) that increased the solubility of bumetanide in water to 9 mg/ml. This bumetanide salt (MW\u00a0=\u00a0362.42 g/mol) was dissolved either in aCSF for the experiments involving perforated patch recording (20 \u00b5M) or in liquid food in experiments that called for bumetanide being administered via the oral route to pregnant dams.\n\nDrug solutions were loaded into separate barrels of a six-barrel drug pipette assembly that was navigated to within 10 \u03bcm of the soma of the cell under study and applied using regulated pulses of pressure (\u22643 p.s.i.; Picospritzer, General Valve Corporation, Fairfield, NJ) (Figure 1a). The timing and the duration of the pressure pulses were controlled by a digital multi-channel timing unit and pulse generator (Pulsemaster A300, WPI, Sarasota, FL). One of the barrels of the multi-barrel assembly was routinely filled with aCSF, which was applied between drug applications to clear drugs from the vicinity of the cell and to control for mechanical artifacts that can occur occasionally due to bulk flow.\n\n### Organotypic embryonic slice cultures\n\nTime-pregnant female mice were sacrificed by carbon dioxide asphyxiation at E14.5. Embryos were removed, and the brains were harvested and processed as described previously (Cuzon et al., 2008). Briefly, the embryos were decapitated, the brains were isolated with aid of a dissecting microscope, and immersed in ice-cold slicing medium (1:1 F12:DMEM) oxygenated by bubbling with 95% O25% CO2. Brains were then embedded in 3.5% low melting point agarose in 1:1 F12:DMEM. Using a vibrating microtome (Electron Microscopy Sciences), coronal slices (200 \u00b5m) were collected into ice-cold slicing media saturated with 95% O2/5% CO2.\n\nThe embryonic organotypic slices were maintained on a fine nylon mesh supported on a mid-gauged U-shaped platinum wire in a 35 mm round Petri dish. A small volume of sterile filtered culture media (0.8 ml) (1:1 F12/DMEM, 1% penicillin/streptomycin, 1.2% 6 mg/ml glucose in DMEM, 10% fetal bovine serum, and 1% L-glutamine) was added to achieve air-liquid interface. Slice cultures were placed in a humidified incubator (37\u00b0C, 5% CO2) for 1 hr, after which the following culture media were prepared and used to replenish sister slice cultures every 6 hr over the next 24 hr: (1) 50 mM EtOH; (2) 20 \u03bcM bumetanide; (3) 50 mM EtOH + 20 \u03bcM bumetanide; (4) vehicle (DMSO, 7.5 \u00d7 10\u22124%). The concentration of ethanol (50 mM) was relatively high but well within the conventional range of concentrations (up to 100 mM) employed in studies involving ethanol exposure in vitro (Kumada et al., 2006; Larsen et al., 2016; Xiang et al., 2015; Zou et al., 1993). As detailed in the Results section, 50 mM ethanol yielded similar outcomes in terms of ethanol\u2019s effect on migration, shift in EGABA and potentiation of responses to GABA.\n\nFollowing 24 hr in culture, the slice cultures were washed in PBS and immerse-fixed overnight in 4% PFA/0.1 M PBS at 4\u00b0C. Following cryoprotection in 30% sucrose/0.1M PBS, the slice cultures were resectioned at 30 \u03bcm using a sliding microtome, collected in PBS, mounted on charged slides, counterstained with DAPI and coverslipped with FluorSave Reagent (Calbiochem, La Jolla, CA).\n\n### Binge-type maternal ethanol consumption and in vivo bumetanide administration\n\nIn the in vivo experiments, ethanol exposure in\u00a0utero was begun on E13.5 and terminated on E16.5 in order to be within the timeframe when tangential migration of MGE-derived cortical interneuron is at its peak in mouse (Anderson et al., 2001; Batista-Brito and Fishell, 2009; Gelman et al., 2009; Hladnik et al., 2014; Jim\u00e9nez et al., 2002; Mar\u00edn and Rubenstein, 2001; Parnavelas, 2000). Pregnant dams were individually housed and assigned to one of two groups: ethanol-fed, or control-fed. Mice were maintained under normal 12/12 hr light/dark cycle on a liquid diet (Research Diets, New Brunswick, NJ) supplemented with ethanol (5% w/w; ethanol-fed group) or an isocaloric control diet containing maltose (control-fed group); water was available ad\u00a0libitum. The liquid food was replenished daily between 3:00 and 5:00 PM, when the amount consumed was measured and the dams weighed. Mice were maintained on their respective diets from E13.5 until E16.5, after which they were returned to standard chow. Dam blood alcohol level (BAL; 80\u00a0\u00b1\u00a021 mg/dl) was assessed using an Analox Instruments GM7 series analyzer (Lunenburg, MA), with blood collected via the tail vein at 11:30 PM on E15.5. Dams subjected to our regimen of binge-type gestational ethanol consumption carried their offspring to full term, litter size was unaffected (7.50\u00a0\u00b1\u00a00.62 for Control pups; 7.67\u00a0\u00b1\u00a00.76 for EtOH-exposed pups; unpaired t-test p>0.05), and offspring in all control and experimental cohorts developed normally to young adulthood for behavioral testing (Skorput et al., 2015).\n\nBumetanide solution for intraperitoneal (i.p.) injection was prepared fresh from powder at the start of each binge epoch by adding bumetanide to normal saline at 0.015 mg/ml or by dissolving bumetanide in DMSO at 20 mg/ml stock concentration that was diluted to 0.015 mg/ml in normal saline for daily i.p. injections. Bumetanide was injected into binge ethanol-consuming dams at 10 ml/kg, yielding a dose of 0.15 mg/kg/day over the 3-day binge period. Normal saline or bumetanide i.p. injections did not alter the amount of liquid food consumed (one-way ANOVA; p\u00a0=\u00a00.62) or the BAL (one-way ANOVA; p\u00a0=\u00a00.99) of dams fed with ethanol. Bumetanide delivery via liquid food was accomplished by dissolving the bumetanide sodium salt in the water used to make 5% ethanol-containing liquid food at; 1.3, 13, 130, 320 mg of bumetanide salt per kg of food.\n\n### Imaging and analysis of immunofluorescence and Nkx2.1+ MGE-derived GABAergic interneurons in the prefrontal cortex\n\nTime-pregnant dams were euthanized by CO2 asphyxiation on E16.5. The embryos were quickly removed, their brains dissected, immerse-fixed overnight at 4\u00b0C in PBS containing 4% paraformaldehyde (PFA)/0.1M phosphate buffered saline (PBS), and then cryoprotected in 30% sucrose/0.1M PBS. Cryosections (30 \u03bcm) were cut with a sliding microtome, mounted on glass slides, DAPI counterstained and cover slipped with FluorSave Reagent (Calbiochem, La Jolla, CA). The embryonic prefrontal cortex (PFC) was delineated as part of the dorsomedial telencephalon based on DAPI counterstaining of the same sections used for counting and analyzing cells. For each embryonic brain, 10 consecutive sections of the embryonic PFC beginning at equivalent rostral-caudal levels were analyzed for counts of Nkx2.1+ cells.\n\nYoung adult mice were perfused trans-cardially with cold PBS and then with 4% PFA/0.1 M PBS. Brains were removed and immerse fixed in 4% PFA/0.1M PBS overnight at 4\u00b0C. Following cryoprotection in 30% sucrose, 30 \u03bcm coronal sections were made on a sliding microtome, and collected into PBS. Young adult tissue sections were blocked for 1 hr at room temperature in PBS containing 10% NGS and 0.05% Triton X-100. Then incubated overnight at 4\u00b0 C with mouse anti-parvalbumin primary antibody (Millipore) at a dilution of 1:1000 in PBS containing 1% NGS and 0.01% Triton X-100. Following 3X washing in PBS, sections were incubated overnight with a 1:1000 dilution of Alexa Fluor 555 conjugated goat-anti-mouse secondary antibody (Invitrogen, Grand Island, NY) in PBS containing 1% NGS and 0.01% Triton X-100. Negative control with primary antibody omitted was routinely processed in parallel. For each young adult brain, sections were defined as containing the PFC beginning with the rostral most section in which all five layers of the PFC were visible, and extending caudally to the decussation of the corpus callosum. Within this operationally defined region of the PFC, images were captured from ten consecutive sections per animal beginning at equivalent rostral-caudal levels. Parvalbumin-immunopositive cells were manually counted per subdivision and per layer by trained experimenters blinded to the treatment conditions using Image J software.\n\nFluorescent images were captured digitally using a CCD camera (Hamamatsu, Hamamatsu city, Japan) fitted onto a spinning disk confocal microscope (BX61WI; Olympus, Melville, NY) and controlled by IPLab 4.0 software (BD Biosciences, San Jose, CA). Images were stitched using Fiji image J (Preibisch et al., 2009) to yield a full view of the region of interest. For in vivo experiments, counting of PV+ or Nkx2.1+ MGE-derived GABAergic interneurons in the embryonic or young adult PFC was automated using Fiji\u2019s auto segmentation algorithm (RenyiEntropy) within the manually defined region of interest. For in vitro experiments, histological sections of organotypic slice cultures were imaged at 4X and the images were montaged to allow visualization of the cortex from the corticostriate junction to the dorsal apex. One hundred micron consecutive bins spanning the thickness of the cortex were organized along the ventral to dorsal extent of the cortex, with the starting point of the first bin aligned at the corticostriate juncture (Cuzon et al., 2006). The Nkx2.1+ MGE-derived GABAergic interneurons within these bins were quantified by trained experimenters blinded to the experimental condition using Fiji\u2019s cell counting tool.\n\n### Modified Barnes maze\n\nYoung adult mice (P58-70) were tested behaviorally using a modified Barnes maze as previously reported (Koopmans et al., 2003; Skorput et al., 2015). Briefly, the maze consisted of twelve equally-spaced holes around a circular wall (d\u00a0=\u00a095 cm), with spatial cues (large red letters) placed between the holes along the interior surface of the circular wall. Each mouse was randomly assigned an escape hole within a quadrant. All other holes were plugged. Mice were trained to find the escape hole with four 4 min trials per day for 4 consecutive days. Each trial ended when the mouse entered the escape hole. The mouse was then returned to its home cage (escape reinforcement). Following the training phase, the mice were rested for 2 days, and then tested for their ability to recall the position of the escape hole on the next 2 days, with four 4 min trials per day (testing phase). After 2 days of testing, the location of the escape hole was switched to the hole directly opposite its initial position (reversal phase). Mice were then tested for their ability to find the reversed escape hole with four 4 min trials per day over the subsequent 2 days.\n\nAt the beginning of each trial, the mouse was placed in the center of the maze and covered with a start box; time began when the box was removed. Latency to enter escape hole, time per quadrant; Home (H), Clockwise (CW), Opposite (Opp.), Counter Clockwise (CCW) (clock directions are relative to escape quadrant), and distance per quadrant measurements were made via video tracking software running an overhead camera hung at a set distance from the surface of the maze. During a trial, errors made (nose pokes in non-escape hole) and their locations, were recorded manually by observers on opposite sides of the arena.\n\n### Statistics\n\nAll young adult histological data were acquired from the defined subregions and layers within the PFC. All groups consisted of data acquired from ten 30 \u03bcm tissue sections per animal (n\u00a0=\u00a01: 1 animal =\u00a010 sections) from a minimum three individual animals of multiple litters. For electrophysiological data, n refers to the number of litters used in order to minimize litter effects, and the total number of cells recorded for each experiment is noted in results. As the variability (standard deviation) of histological and behavioral end points was larger between individual offspring than that between data averaged per litter, we reported the mean data per individual offspring \u00b1 standard error. Reporting the more variable unit of determination is more representative of the true biological variability (Brien et al., 2006). All groups consisted of data acquired from a minimum three individual offspring from multiple litters. Power calculations were performed using the G*Power 3.1 software depending on whether the data were analyzed using t-test or ANOVA. Variance and expected differences were estimated by using group means and standard deviations from preliminary data or past experience in similar studies and reviews of related use in the literature. Group means were compared by unpaired t-test, one-way ANOVA or two-way ANOVA with appropriate post-hoc test as indicated, and reported in figure legends, and reported as mean ($x-$) \u00b1 standard error in the results section. Reported exact p values are multiplicity adjusted for ANOVA testing of multiple comparisons. The effect sizes reported (Cohen\u2019s d for t-tests and \u03c92 for ANOVAs) were calculated using the Graphpad Prism software and formulas from Lakens (2013). We note that previously published counts of prenatal and postnatal cortical interneurons and behavioral data obtained from control, and prenatal binge ethanol-exposed young adult mice (Skorput et al., 2015) were included for comparison with the bumetanide-treated cohort in the present study. This was justified as, in practice, the experiments involving all three cohorts were conducted in parallel, and reporting of the bumetanide data required the subsequent mechanistic studies reported here, specific instances of reproduction are outlined in the relevant figure legends.\n",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "8326313c-2b78-4854-a7d8-d5e8f314098f",
+      "submission_id": "c8724464-6a44-4a99-a88c-6dfad0a6a500",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Joseph G Gleeson, Howard Hughes Medical Institute, The Rockefeller University United States\n\nReviewers:\n- C Fernando Valenzuela\n\n## Review text\n\nDOI: [10.7554/eLife.48648.014](https://doi.org/10.7554/eLife.48648.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The NKCC1 antagonist bumetanide mitigates interneuronopathy associated with ethanol exposure In utero\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Joseph Gleeson as the Reviewing Editor and Huda Zoghbi as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: C Fernando Valenzuela (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe study of Skorput et al. investigated the effect of pharmacological antagonism of NKCC1 (with bumetanide) on ethanol-induced alterations of tangential interneuronal migration in the prefrontal cortex. This manuscript represents an extension of prior work from the same laboratory and other laboratories that showed that prenatal ethanol exposure increases migration of interneurons from the medial ganglionic eminence (MGE) likely through increased ambient GABA concentration and enhanced embryonic GABAergic signaling (Cuzon et al., 2008). In addition the Yeh laboratory has shown in prior work that gestational ethanol exposure caused (1) an enduring increase in the number of Parvalbumin+ interneurons in the medial prefrontal cortex, (2) increased spontaneous and evoked GABA-ergic synaptic transmission on layer V pyramidal neurons and (3) altered reversal behavior in a Barnes maze test (Skorput et al., 2015).\n\nIn this study, Skorput et al. confirm that EtOH potentiates the depolarizing actions of GABA on migrating (Nkx2.1+) interneurons in the mouse model of E13.5-16.5 binge-type ethanol exposure. The authors then show that bumetanide, an inhibitor of the NKCC1 chloride transporter, could counteract the effects ethanol's potentiation of GABAergic depolarization. Bumetanide was able block ethanol's enhancement of interneuron migration from the MGE both in slice preparation and in vivo. In addition bumetanide protected gestational ethanol \u2013 exposed embryos from a behavioral deficit in reversal behavior in the Barnes maze test. From this the authors argue that bumetanide may be potential therapeutic approach to ameliorating FASD. The significance of this study is twofold.\n\n1) This study demonstrates that enhancement of depolarizing action of GABA is necessary for fetal ethanol-induced aberrant migration and the excess of interneurons in PFC, because abrogating the enhanced depolarizing action of GABA prevents the aberrant migration and the excess of interneurons in PFC by the ethanol exposure.\n\n2) This study posits NKCC1 as a pharmacological target for the management of FASD.\n\nWhile two of the reviewers were positive, one reviewer commented since many of the findings have been reported earlier, the significance of the work rests largely on the bumetanide reversal of the ethanol effect. While potentially interesting, the potential neuroprotective effects of bumetanide are documented in only one behavioral test and in one type of neurons in one area of cortex. Whether bumetanide is broadly protective for fetal alcohol exposure is unknown and thus the finding seems somewhat narrow for publication in eLife.\n\nEssential revisions:\n\n- For the studies with organotypic slice cultures, a substantially higher ethanol concentration was used (50 mM vs. 6.5 mM for the acute slice studies vs. 80 mg/dl (17 mM) for the in vivo studies) and the reason for doing this was not provided. Ethanol is known to exert dose-dependent effects that could be non-linear (inverted U shaped). Have the investigators tested if 50 mM affects EGABA and GABAA responses in the same direction as lower ethanol concentrations?\n\n- In Figures 4-6, it is critical to measure the effect of bumetanide on blood ethanol concentrations in the dams. Bumetanide is a loop diuretic that could affect liquid diet or water consumption in the dams. The effects of bumetanide should be confirmed with a different approach (manipulation of NKCC1 expression?). In addition, the definition of the unit of determination for these studies was arbitrarily changed to an animal. Justification for doing this should be provided.\n\n- Several important controls are missing in Figures 4 and 6. DMSO alone, bumetanide alone, etc. Please include these controls or explain why they were not performed.\n\n- Discrepancy of the bumetanide effects on the control between the reversal potential EGABA (Figure 1E, rightmost) and interneuron migration (Figure 3B, rightmost). This reviewer agrees with the authors' view, but is wondering if the authors have data on the GABA response amplitude (peak current amplitude) comparing aCSF and aCSF + bumetanide conditions, in the Figure 2 experiments.\n\n- Relationship between the increased number of interneurons in PFC and the impaired behavioral flexibility requires clarification. In their previous paper (Skorput et al., 2015), the authors referred to the work by Cho et al. (2015, Neuron, 85:1332-1343). But the latter mouse showed reduced number of interneurons in the prefrontal cortex. To prove that the interneuronopathy of this type (increase in the number of interneurons) is the etiology of impaired behavioral flexibility, an additional experiment that increases the number of interneurons in the PFC by other means than ethanol, or previous reports on mutant mice with similar increase in the number of interneurons, should be considered, either discussed or performed. If not presented then greater caution should be exercised with regard to the proposed mechanism.\n",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e57575f6-1565-4027-83d2-cdc11560f7b1",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C1",
+      "claim": "Prenatal exposure to ethanol induces aberrant tangential migration of corticopetal GABAergic interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Prenatal exposure to ethanol induces aberrant tangential migration of corticopetal GABAergic interneurons, and long-term alterations in the form and function of the prefrontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a primary finding of the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "c3f91fc4-92cc-4173-8da1-296aaf59c019",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C2",
+      "claim": "Prenatal exposure to ethanol causes long-term alterations in the form and function of the prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Prenatal exposure to ethanol induces aberrant tangential migration of corticopetal GABAergic interneurons, and long-term alterations in the form and function of the prefrontal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a primary finding of the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "b770ffeb-f045-4b31-9fc7-c7779d9b16ce",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C3",
+      "claim": "Interneuronopathy contributes significantly to the pathoetiology of fetal alcohol spectrum disorders (FASD).",
+      "claim_type": "EXPLICIT",
+      "source": "We have hypothesized that interneuronopathy contributes significantly to the pathoetiology of fetal alcohol spectrum disorders (FASD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis in the abstract.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "3060b205-9c09-429d-a5f8-00bd2e774ba6",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C4",
+      "claim": "Activity-dependent tangential migration of GABAergic cortical neurons is driven by depolarizing responses to ambient GABA present in the cortical enclave.",
+      "claim_type": "EXPLICIT",
+      "source": "Activity-dependent tangential migration of GABAergic cortical neurons is driven by depolarizing responses to ambient GABA present in the cortical enclave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "cd5ed9cc-2bf3-4c65-8470-7568555a0f8c",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C5",
+      "claim": "Ethanol exposure potentiates the depolarizing action of GABA in GABAergic cortical interneurons of the embryonic mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ethanol exposure potentiates the depolarizing action of GABA in GABAergic cortical interneurons of the embryonic mouse brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "2d85e7be-7cdc-46fd-a03b-81ca80a04515",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C6",
+      "claim": "Pharmacological antagonism of the cotransporter NKCC1 mitigated ethanol-induced potentiation of GABA depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological antagonism of the cotransporter NKCC1 mitigated ethanol-induced potentiation of GABA depolarization and prevented aberrant patterns of tangential migration induced by ethanol in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "bb684b2c-a948-4ea1-ae9e-4df08468c6b1",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C7",
+      "claim": "Pharmacological antagonism of NKCC1 prevented aberrant patterns of tangential migration induced by ethanol in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological antagonism of the cotransporter NKCC1 mitigated ethanol-induced potentiation of GABA depolarization and prevented aberrant patterns of tangential migration induced by ethanol in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "f84a865a-f568-4a92-9816-a32448ecc825",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C8",
+      "claim": "Maternal bumetanide treatment prevented interneuronopathy in the prefrontal cortex of ethanol exposed offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "In a model of FASD, maternal bumetanide treatment prevented interneuronopathy in the prefrontal cortex of ethanol exposed offspring, including deficits in behavioral flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "f7e51639-91d3-4e84-b813-cd8692d6721f",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C9",
+      "claim": "Maternal bumetanide treatment prevented deficits in behavioral flexibility in ethanol exposed offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "In a model of FASD, maternal bumetanide treatment prevented interneuronopathy in the prefrontal cortex of ethanol exposed offspring, including deficits in behavioral flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "aa3c3f6f-5d57-493c-b13f-795bd3506a29",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C10",
+      "claim": "NKCC1 is a pharmacological target for the management of FASD.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings position interneuronopathy as a mechanism of FASD symptomatology, and posit NKCC1 as a pharmacological target for the management of FASD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a conclusion from the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "881acc44-86a8-4a99-9b36-2efa6f97dc53",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C11",
+      "claim": "Binge-type exposure of the embryonic mouse brain to a moderate level of ethanol leads to interneuronopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Binge-type exposure of the embryonic mouse brain to a moderate level of ethanol leads to interneuronopathy, hallmarked by aberrant tangential migration of corticopetal GABAergic interneurons derived from the medial ganglionic eminence (MGE) (Skorput et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "887f3c3a-545d-43c6-b641-350ef79a7f3a",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C12",
+      "claim": "Interneuronopathy is hallmarked by aberrant tangential migration of corticopetal GABAergic interneurons derived from the medial ganglionic eminence (MGE).",
+      "claim_type": "EXPLICIT",
+      "source": "Binge-type exposure of the embryonic mouse brain to a moderate level of ethanol leads to interneuronopathy, hallmarked by aberrant tangential migration of corticopetal GABAergic interneurons derived from the medial ganglionic eminence (MGE) (Skorput et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "c0ba4690-5793-4d84-a3a0-0f4f55501466",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C13",
+      "claim": "Interneuronopathies are widely implicated in neurodevelopmental disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Interneuronopathies are widely implicated in neurodevelopmental disorders (Catterall, 2018; Kato and Dobyns, 2005; Katsarou et al., 2017), including Fetal Alcohol Spectrum Disorders (FASD) (Skorput et al., 2015; Skorput and Yeh, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "93806a08-6888-4f23-99af-5ca3a7f326e4",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C14",
+      "claim": "Self-reported rates of current drinking among pregnant women aged 18-44 years was 11.5% for the years 2015-2017.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from the Behavioral Risk Factor Surveillance System for the years 2015\u20132017 show self-reported rates of current drinking, and binge drinking (>4 drinks) within the past 30 days to be 11.5% and 3.9%, respectively, among pregnant woman aged 18\u201344 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction citing data from the Behavioral Risk Factor Surveillance System.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "05799a32-554e-42e2-acaa-e0865e4bc513",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C15",
+      "claim": "Self-reported rates of binge drinking within the past 30 days among pregnant women aged 18-44 years was 3.9% for the years 2015-2017.",
+      "claim_type": "EXPLICIT",
+      "source": "Data from the Behavioral Risk Factor Surveillance System for the years 2015\u20132017 show self-reported rates of current drinking, and binge drinking (>4 drinks) within the past 30 days to be 11.5% and 3.9%, respectively, among pregnant woman aged 18\u201344 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction citing data from the Behavioral Risk Factor Surveillance System.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "3a038296-1045-49bd-8273-0da1342b74e0",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C16",
+      "claim": "Pregnant binge drinkers averaged 4.5 binge episodes in the past 30 days with an average binge intensity of 6.0 drinks.",
+      "claim_type": "EXPLICIT",
+      "source": "Pregnant binge drinkers averaged 4.5 binge episodes in the past 30 days with an average binge intensity of 6.0 drinks (Denny et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "e148f134-17b3-485b-8df2-f13d7f91a77b",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C17",
+      "claim": "The prevalence rates of FASD among first-graders in 4 US communities range from 1.1% to 5.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of such binge drinking episodes, FASD remains a major public health concern in the United States, and a recent assessment of first-graders in 4 US communities conservatively estimated the prevalence rates of FASD to range from 1.1% to 5.0% (May et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "9924e910-5dc3-4ce5-9785-4bebe4a8618d",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C18",
+      "claim": "The global prevalence rate of FASD is estimated at 7.7 per 1000 children.",
+      "claim_type": "EXPLICIT",
+      "source": "The global prevalence rate of FASD is estimated at 7.7 per 1000 children, and is as high as 111.1 per 1000 children among some populations (Lange et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "fa02305a-b3a6-457f-9e3a-401c9a1fd84e",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C19",
+      "claim": "The prevalence rate of FASD is as high as 111.1 per 1000 children among some populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The global prevalence rate of FASD is estimated at 7.7 per 1000 children, and is as high as 111.1 per 1000 children among some populations (Lange et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "7a44a12c-ef10-478f-a227-7d791ffb66c2",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C20",
+      "claim": "The more efficacious current treatments for FASD rely primarily on postnatal behavioral therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "The more efficacious current treatments for FASD rely primarily on postnatal behavioral therapy (Nash et al., 2017), or pharmaceutics aimed to treat the symptoms, rather than the etiology, of this neurodevelopmental disorder (Peadon et al., 2009; Rowles and Findling, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "6bdfec78-4f83-4990-8c74-edc310fbe950",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C21",
+      "claim": "Current treatments for FASD include pharmaceutics aimed to treat the symptoms, rather than the etiology, of this neurodevelopmental disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "The more efficacious current treatments for FASD rely primarily on postnatal behavioral therapy (Nash et al., 2017), or pharmaceutics aimed to treat the symptoms, rather than the etiology, of this neurodevelopmental disorder (Peadon et al., 2009; Rowles and Findling, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "4b143e5b-3410-498d-ac87-5e4c5f8a2d8e",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C22",
+      "claim": "GABAergic neuroblasts arising in the MGE are fated to become parvalbumin (PV+) or somatostatin expressing inhibitory interneurons in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAergic neuroblasts arising in the MGE are fated to become parvalbumin (PV+) or somatostatin expressing inhibitory interneurons in the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "b038370a-58f3-438e-8cc4-2dd91813380d",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C23",
+      "claim": "Approximately 50% of MGE-derived population will mature to become PV+ fast-spiking basket cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 50% of this MGE-derived population will mature to become PV+ fast-spiking basket cells which are electrically coupled across the deep layers of the neocortex and pace oscillatory gamma rhythms, which are required for higher cognition (Batista-Brito and Fishell, 2009; Xu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "4ddbfbfb-89fd-485b-b435-b4929845541c",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C24",
+      "claim": "PV+ fast-spiking basket cells are electrically coupled across the deep layers of the neocortex and pace oscillatory gamma rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 50% of this MGE-derived population will mature to become PV+ fast-spiking basket cells which are electrically coupled across the deep layers of the neocortex and pace oscillatory gamma rhythms, which are required for higher cognition (Batista-Brito and Fishell, 2009; Xu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "33add653-d8ee-47f4-98fb-7a35b3705aa4",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C25",
+      "claim": "Oscillatory gamma rhythms are required for higher cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 50% of this MGE-derived population will mature to become PV+ fast-spiking basket cells which are electrically coupled across the deep layers of the neocortex and pace oscillatory gamma rhythms, which are required for higher cognition (Batista-Brito and Fishell, 2009; Xu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "6e0731c3-da0b-4bdf-8d02-331763cac61e",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C26",
+      "claim": "Ethanol's positive allosteric modulation of GABAA receptors expressed on migrating neuroblasts is the mechanism by which in utero ethanol exposure causes enduring interneuronopathy in models of FASD.",
+      "claim_type": "EXPLICIT",
+      "source": "Building on our previous work (Cuzon et al., 2008; Cuzon et al., 2006), we hypothesized that ethanol's positive allosteric modulation of GABAA receptors (GABAAR) expressed on migrating neuroblasts is the mechanism by which in utero ethanol exposure causes enduring interneuronopathy in models of FASD (Skorput et al., 2015; Skorput and Yeh, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis in the introduction with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "0a0cc2e5-6b4f-46a6-8687-da4b97f638cc",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C27",
+      "claim": "In immature neurons, GABAA receptor activation results in membrane depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "In these immature neurons, GABAAR activation results in membrane depolarization (Ben-Ari, 2014; Ben-Ari, 2002; Owens and Kriegstein, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "a5e1553b-cba0-4047-9f3d-8d97b5e24265",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C28",
+      "claim": "Depolarizing GABAergic action has been postulated to drive the corticopetal tangential migration of GABAergic interneurons during corticogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This paradoxical depolarizing action has been postulated to drive the corticopetal tangential migration of GABAergic interneurons during corticogenesis (Behar et al., 1996; Ben-Ari, 2002; Ben-Ari et al., 2012; Cuzon et al., 2006; Wang and Kriegstein, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "b401bfe1-bdd1-4bc9-948b-d1fd52368bae",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C29",
+      "claim": "NKCC1 is expressed at high levels in the embryonic brain when its activity predominates over that of the chloride exporting K+-Cl- co-transporter (KCC2).",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we targeted the chloride importing Na+-K+\u22122Cl- isoform one cotransporter (NKCC1) because it is expressed at high levels in the embryonic brain when its activity predominates over that of the chloride exporting K+-Cl- co-transporter (KCC2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "214668bc-e7b8-4383-9312-c84e05398482",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C30",
+      "claim": "The differential activity of NKCC1 and KCC2 results in a net higher [Cl-]i compared to [Cl-]o.",
+      "claim_type": "EXPLICIT",
+      "source": "This differential activity results in a net higher [Cl-]i compared to [Cl-]o.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "d7d83678-31d6-42a6-a62e-f16c5c09eadb",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C31",
+      "claim": "The reversal potential for chloride (EGABA) is set at a membrane potential that is depolarized relative to the resting membrane potential in embryonic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the reversal potential for chloride, and that of GABA-activated responses (EGABA), is set at a membrane potential that is depolarized relative to the resting membrane potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "c631aa9b-beba-4840-8987-c063b042522c",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C32",
+      "claim": "GABAA receptor activation causes chloride extrusion and membrane depolarization in migrating neuroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, GABAAR activation causes chloride extrusion and membrane depolarization in these migrating neuroblasts (Ben-Ari, 2014; Ben-Ari, 2002; Owens and Kriegstein, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "96a92624-1689-4d27-9827-9cad99d6dbc9",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C33",
+      "claim": "Bumetanide is an NKCC1 antagonist that shifts the EGABA of embryonic neuroblasts to a more negative membrane potential when administered maternally.",
+      "claim_type": "EXPLICIT",
+      "source": "The loop diuretic bumetanide is an NKCC1 antagonist that shifts the EGABA of embryonic neuroblasts to a more negative membrane potential when administered maternally (Wang and Kriegstein, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "16556934-a057-4161-9fed-54c5373ab8eb",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C34",
+      "claim": "The timing of gestational exposure to ethanol is a key determinant of the diagnostic outcome of FASD.",
+      "claim_type": "EXPLICIT",
+      "source": "The timing of gestational exposure to ethanol is a key determinant of the diagnostic outcome of FASD (May et al., 2013; Pruett et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "ee1ed494-eb01-455e-ae2c-74320731e31f",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C35",
+      "claim": "Corticogenesis occurs in earnest during the mid-first trimester when the developing brain is highly vulnerable to insult by ethanol.",
+      "claim_type": "EXPLICIT",
+      "source": "Corticogenesis occurs in earnest during the mid-first trimester when the developing brain is highly vulnerable to insult by ethanol (Ayoola et al., 2009; Clancy et al., 2001; May et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "f22c26dd-2e30-41f1-9819-481e16fefaf5",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C36",
+      "claim": "Binge-type ethanol exposure from E13.5-E16.5 leads to enhanced entry of MGE-derived GABAergic interneurons into the prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this model, we demonstrated enhanced entry of MGE-derived GABAergic interneurons into the prefrontal cortex (PFC), a persistent increase in the number of PV+ interneurons in the young adult PFC, and impairment in the PFC-dependent behavioral flexibility of offspring (Skorput et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "89cb30ed-87c6-422d-844e-151089f4e37a",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C37",
+      "claim": "Binge-type ethanol exposure from E13.5-E16.5 leads to a persistent increase in the number of PV+ interneurons in the young adult PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this model, we demonstrated enhanced entry of MGE-derived GABAergic interneurons into the prefrontal cortex (PFC), a persistent increase in the number of PV+ interneurons in the young adult PFC, and impairment in the PFC-dependent behavioral flexibility of offspring (Skorput et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "e3156bb4-7e62-435e-a453-37ea7dea224c",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C38",
+      "claim": "Binge-type ethanol exposure from E13.5-E16.5 leads to impairment in the PFC-dependent behavioral flexibility of offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this model, we demonstrated enhanced entry of MGE-derived GABAergic interneurons into the prefrontal cortex (PFC), a persistent increase in the number of PV+ interneurons in the young adult PFC, and impairment in the PFC-dependent behavioral flexibility of offspring (Skorput et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "076228d0-3df4-4456-8774-6304db67d749",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C39",
+      "claim": "The control mean EGABA was \u221223.18 \u00b1 1.45 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The control mean EGABA (dotted black line in Figure 1c) was \u221223.18 \u00b1 1.45 mV, which was significantly more depolarized than the mean resting membrane potential, estimated in whole-cell mode (dotted blue line in Figure 1c; \u221241.9 \u00b1 2.3 mV; unpaired t-test, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "35e15713-e851-44be-bb8c-b5662a75dade",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C40",
+      "claim": "The mean resting membrane potential of Nkx2.1+ neurons was \u221241.9 \u00b1 2.3 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "The control mean EGABA (dotted black line in Figure 1c) was \u221223.18 \u00b1 1.45 mV, which was significantly more depolarized than the mean resting membrane potential, estimated in whole-cell mode (dotted blue line in Figure 1c; \u221241.9 \u00b1 2.3 mV; unpaired t-test, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "15cebba9-c0a8-4c6c-b367-a80fe69c52af",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C41",
+      "claim": "The control mean EGABA was significantly more depolarized than the mean resting membrane potential (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "The control mean EGABA (dotted black line in Figure 1c) was \u221223.18 \u00b1 1.45 mV, which was significantly more depolarized than the mean resting membrane potential, estimated in whole-cell mode (dotted blue line in Figure 1c; \u221241.9 \u00b1 2.3 mV; unpaired t-test, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "72d31eaa-8283-423d-a80d-33989eb9815b",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C42",
+      "claim": "Ethanol exposure shifted EGABA to \u221216.52 \u00b1 0.93 mV, which is significantly more depolarized than control (p = 0.0077).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1d illustrates the mean change in EGABA for each litter before and during ethanol exposure, indicating that the mean EGABA of control cells was shifted to significantly more depolarized membrane potentials with exposure to 6.5 mM ethanol (Figure 1d; \u221216.52 \u00b1 0.93 mV; p = 0.0077) and shifted back to the control level following washout of ethanol with aCSF (gray dots; \u221221.57 \u00b1 2.51 mV; p = 0.81; effect size \u03c92 = 0.17).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "4628d66a-7ad1-4e29-b4ae-75e355657761",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C43",
+      "claim": "Washout of ethanol with aCSF shifted EGABA back to control level (\u221221.57 \u00b1 2.51 mV; p = 0.81).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1d illustrates the mean change in EGABA for each litter before and during ethanol exposure, indicating that the mean EGABA of control cells was shifted to significantly more depolarized membrane potentials with exposure to 6.5 mM ethanol (Figure 1d; \u221216.52 \u00b1 0.93 mV; p = 0.0077) and shifted back to the control level following washout of ethanol with aCSF (gray dots; \u221221.57 \u00b1 2.51 mV; p = 0.81; effect size \u03c92 = 0.17).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "6a01c075-9d56-41b0-a8ab-e50b1fdcd769",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C44",
+      "claim": "Ethanol exposure results in a depolarizing shift in EGABA suggesting that it increases [Cl-]i and thus, chloride drive.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that ethanol exposure results in a depolarizing shift in EGABA suggests that it increases [Cl-]i and thus, chloride drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "3182f632-6078-4b6f-9140-b9bedb6e018c",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C45",
+      "claim": "Exposure to 50 mM ethanol exerted a depolarizing shift in EGABA (aCSF; \u221237.36 \u00b1 1.5 mV; EtOH; \u221222.15 \u00b1 1.1 mV; p = 0.0003).",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure to 50 mM ethanol, the concentration used to treat organotypic slice cultures (Figure 3), also exerted a depolarizing shift in EGABA (Figure 1\u2014figure supplement 1; aCSF; \u221237.36 \u00b1 1.5 mV; EtOH; \u221222.15 \u00b1 1.1 mV; n = 6 litters, 21 cells total; p = 0.0003; effect size d = 4.58).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "324975e1-c5cf-4251-b47b-889da5f737cf",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C46",
+      "claim": "Bumetanide pretreatment normalized the ethanol-induced depolarization of EGABA to control levels (EtOH+Bumet; \u221224.82 \u00b1 2.52 mV; p = 0.56).",
+      "claim_type": "EXPLICIT",
+      "source": "However, bumetanide pretreatment normalized the ethanol-induced depolarization of EGABA to control levels (Figure 1e; EtOH+Bumet; \u221224.82 \u00b1 2.52 mV; n = 5 litters, 13 cells total; p = 0.56; effect size \u03c92 = 0.55).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "28bc7e75-a106-431e-ab06-b9d416784a2a",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C47",
+      "claim": "Bumetanide pretreatment significantly hyperpolarized EGABA in Nkx2.1+ GABAergic interneurons compared to controls (Bumet; \u221234.17 \u00b1 4.02 mV; p = 0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "The basis of this normalization is likely a functional antagonism as bumetanide pretreatment significantly hyperpolarized EGABA in Nkx2.1+ GABAergic interneurons compared to controls (Figure 1e; Bumet; \u221234.17 4.02 mV; n = 5 litters, 13 cells total; p = 0.004), and the magnitude of the depolarizing shift in EGABA induced by exposure to 6.5 mM ethanol was not effected by bumetanide pretreatment (Figure 1f; Control; 27.08 \u00b1 5.61 mV; Bumet pretreatment; \u221225.38 \u00b1 6.41 mV; p = 0.37; effect size d = 0.11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "bdc4cd2e-dd10-4bf8-b067-23e84d47ab4d",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C48",
+      "claim": "The magnitude of the depolarizing shift in EGABA induced by exposure to 6.5 mM ethanol was not affected by bumetanide pretreatment (p = 0.37).",
+      "claim_type": "EXPLICIT",
+      "source": "The basis of this normalization is likely a functional antagonism as bumetanide pretreatment significantly hyperpolarized EGABA in Nkx2.1+ GABAergic interneurons compared to controls (Figure 1e; Bumet; \u221234.17 4.02 mV; n = 5 litters, 13 cells total; p = 0.004), and the magnitude of the depolarizing shift in EGABA induced by exposure to 6.5 mM ethanol was not effected by bumetanide pretreatment (Figure 1f; Control; 27.08 \u00b1 5.61 mV; Bumet pretreatment; \u221225.38 \u00b1 6.41 mV; p = 0.37; effect size d = 0.11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "a298e32a-833c-4be2-b2ca-59da68c012c4",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C49",
+      "claim": "The mean GABA response amplitude during ethanol exposure is significantly greater than baseline (aCSF; 10.02 \u00b1 0.99 pA; EtOH+aCSF; 16.89 \u00b1 2.39 pA; p = 0.0039).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2a illustrates that, relative to baseline conditions, the mean GABA response amplitude during ethanol exposure is significantly greater (aCSF; 10.02 \u00b1 0.99 pA; EtOH+aCSF; 16.89 \u00b1 2.39 pA; n = 8 litters, 17 cells total; p = 0.0039; effect size \u03c92 = 0.058) and the subsequent washout of ethanol with aCSF reverses the effect of ethanol on GABA response amplitude (Washout; 12.60 \u00b1 1.99 pA; p = 0.16).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "a0abc992-bf43-4e28-86f5-15ebe4f7ea96",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C50",
+      "claim": "Washout of ethanol with aCSF reverses the effect of ethanol on GABA response amplitude (Washout; 12.60 \u00b1 1.99 pA; p = 0.16).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2a illustrates that, relative to baseline conditions, the mean GABA response amplitude during ethanol exposure is significantly greater (aCSF; 10.02 \u00b1 0.99 pA; EtOH+aCSF; 16.89 \u00b1 2.39 pA; n = 8 litters, 17 cells total; p = 0.0039; effect size \u03c92 = 0.058) and the subsequent washout of ethanol with aCSF reverses the effect of ethanol on GABA response amplitude (Washout; 12.60 \u00b1 1.99 pA; p = 0.16).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "849b56e9-9414-4eb5-ab57-31ce82e30f14",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C51",
+      "claim": "The mean GABA response amplitude during 50 mM ethanol exposure was significantly greater than that of control (aCSF; 7.77 \u00b1 1.09 pA; EtOH; 17.28 \u00b1 3.21 pA; p =0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean GABA response amplitude during 50 mM ethanol exposure was also significantly greater than that of control (Figure 2\u2014figure supplement 1; aCSF; 7.77 \u00b1 1.09 pA; EtOH; 17.28 \u00b1 3.21 pA; n = 6 litters, 21 cells total; p =0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "5f7290ea-7f27-431c-b8e1-5209ad935c16",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C52",
+      "claim": "The mean amplitude of GABA-activated current responses was significantly increased during ethanol exposure in bumetanide pretreated slices (before: 10.53 \u00b1 0.62 pA; during: 13.45 \u00b1 1.31 pA; p = 0.019).",
+      "claim_type": "EXPLICIT",
+      "source": "The mean amplitude of the GABA-activated current responses of GABAergic interneurons in the bumetanide pretreated slices was 10.53 \u00b1 0.62 pA before ethanol exposure, and was significantly increased to 13.45 \u00b1 1.31 pA during ethanol exposure (Figure 2b; n = 5 litters, recorded from 11 cells; p = 0.019; effect size d = 1.71).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "60826d3d-df64-46e2-8d13-d5895f7c4b4c",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C53",
+      "claim": "Bumetanide pretreatment alone did not alter the GABA response amplitude compared to aCSF control (p = 0.71).",
+      "claim_type": "EXPLICIT",
+      "source": "Bumetanide pretreatment alone did not alter the GABA response amplitude compared to aCSF control (Figure 2\u2014figure supplement 2; p = 0.71).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "807198cc-8e8a-49e1-b737-e80a4c5495a1",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C54",
+      "claim": "Ethanol exposure potentiated the amplitude of GABA responses by 59.37 \u00b1 8.83% under control conditions, and by 26.46 \u00b1 6.26% in the bumetanide pretreatment group (p = 0.011).",
+      "claim_type": "EXPLICIT",
+      "source": "However, ethanol exposure potentiated the amplitude of GABA responses by 59.37 \u00b1 8.83% under control conditions, and by 26.46 \u00b1 6.26% in the bumetanide pretreatment group, demonstrating the ability of bumetanide to significantly decrease the mean ethanol-induced change in GABA response (Figure 2c; p = 0.011; effect size d = 1.63).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "3898e273-7791-4e07-bc2c-36d314e3c4e7",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C55",
+      "claim": "NKCC1 antagonism attenuates ethanol-induced potentiation of depolarizing GABAA receptor-activated responses in migrating GABAergic cortical interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with our earlier finding that GABA-activated current responses in embryonic MGE-derived GABAergic interneurons are mediated by GABAA receptors (Cuzon Carlson and Yeh, 2011; Cuzon et al., 2008), these results indicate that NKCC1 antagonism attenuates ethanol-induced potentiation of depolarizing GABAAR-activated responses in migrating GABAergic cortical interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the data with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "a7af24fe-4a4e-4121-a27c-8dd2e52f1497",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C59",
+      "claim": "Bumetanide can inhibit the ethanol-induced supranormal corticopetal migration of GABAergic interneurons at concentrations that did not affect their normal pattern of migration.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these data demonstrate that bumetanide can inhibit the ethanol-induced supranormal corticopetal migration of GABAergic interneurons at concentrations that did not affect their normal pattern of migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "ee075e9e-365d-4c77-8065-cbdb7b7dd89d",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C62",
+      "claim": "Bumetanide co-treatment completely normalized the ethanol-induced effect, returning MGE-derived interneuron density to control levels (P >0.999).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, bumetanide co-treatment completely normalized the ethanol-induced effect, returning MGE-derived interneuron density to control levels (Figure 4b; P >0.999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "c7434fd9-8198-449c-b746-14d706d8d954",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C67",
+      "claim": "Maternal bumetanide treatment dose-dependently mitigates binge-type ethanol-induced aberrant tangential migration.",
+      "claim_type": "IMPLICIT",
+      "source": "These considerations led us to conclude that the DMSO and bumetanide alone control groups could be omitted without compromising our ability to determine whether maternal bumetanide treatment dose-dependently mitigates binge-type ethanol-induced aberrant tangential migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion in the results section based on the dose-response data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "0d0cd0ea-bbd0-40c4-91cd-f9f78b20ff09",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C73",
+      "claim": "Maternal treatment with bumetanide (0.15 mg/kg i.p. daily, E14.5 - E16.5) in the absence of in utero binge-type ethanol exposure did not alter the number of PV+ interneurons in any of the PFC regional layers analyzed in young adult offspring (Bumet: P > 0.247).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, maternal treatment with bumetanide (0.15 mg/kg i.p. daily, E14.5 - E16.5) in the absence of in utero binge-type ethanol exposure (control liquid diet) did not alter the number of PV+ interneurons in any of the PFC regional layers analyzed in young adult offspring (Figure 5a - b; Bumet, 3 brains from 2 litters; P > 0.247).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 5a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "3b7ce355-6d67-4446-a7dc-9d2aa7458700",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C74",
+      "claim": "Young adult offspring exposed to binge-type ethanol in utero and treated maternally with bumetanide exhibited no significant difference in the number of errors committed during the training and testing phases compared with ethanol-exposed, and control, offspring (p>0.427).",
+      "claim_type": "EXPLICIT",
+      "source": "Young adult offspring exposed to binge-type ethanol in utero and treated maternally with bumetanide exhibited no significant difference in the number of errors committed during the training and testing phases compared with ethanol-exposed, and control, offspring (Figure 6a; Control 14 offspring from four litters; EtOH 19 offspring from four litters; EtOH+Bumet 8 offspring from two litters; p>0.427).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section with statistical test and shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "e15ccdf6-b859-4a2a-8689-65ec184a697d",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C80",
+      "claim": "Maternal bumetanide treatment prevented perseverative behaviors, which are indicative of reduced behavioral flexibility, in offspring exposed to ethanol in utero.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, maternal bumetanide treatment prevented perseverative behaviors, which are indicative of reduced behavioral flexibility, in offspring exposed to ethanol in utero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "c84993d6-f670-4172-80e0-790b5a04ee35",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C81",
+      "claim": "Treatment of ethanol consuming dams with bumetanide can prevent persistent interneuronopathy in ethanol-exposed offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "The results reported here advance our understanding of depolarizing GABAergic influence on tangential migration, and demonstrate that treatment of ethanol consuming dams with bumetanide can prevent persistent interneuronopathy in ethanol-exposed offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "fb75ccdc-6e46-4d5d-9f5d-e314029ab01b",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C82",
+      "claim": "Ethanol-induced depolarizing shifts in EGABA of similar magnitude without and with bumetanide pretreatment suggests that the depolarizing shift of EGABA induced by ethanol occurs independent of NKCC1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown by our electrophysiological studies, ethanol-induced depolarizing shifts in EGABA of similar magnitude without and with bumetanide pretreatment, suggesting that the depolarizing shift of EGABA induced by ethanol occurs independent of NKCC1 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an interpretation of the electrophysiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "17b7b9da-c81e-4e3a-a78d-ef7c9d80cf08",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C83",
+      "claim": "NKCC1 antagonism alone significantly shifted EGABA to more hyperpolarized values, suggesting that bumetanide does not directly inhibit the ethanol-induced depolarizing shift in EGABA, but rather normalizes it via a mechanism separate from NKCC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, since NKCC1 antagonism alone significantly shifted EGABA to more hyperpolarized values, it is likely that bumetanide does not directly inhibit the ethanol-induced depolarizing shift in EGABA, but rather normalizes it via a mechanism separate from NKCC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an interpretation of the electrophysiological data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "d29135f5-6d01-4f34-99fc-0f43b89ae10d",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C84",
+      "claim": "It is plausible that ethanol shifts EGABA by enhancing the function of Cl- importers other than NKCC1, such as the sodium-independent anion exchange protein AE3.",
+      "claim_type": "EXPLICIT",
+      "source": "It is plausible that ethanol shifts EGABA by enhancing the function of Cl- importers other than NKCC1, such as the sodium-independent anion exchange protein AE3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "9a43fca2-b6eb-4c66-8742-b0d7c61bd64e",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C85",
+      "claim": "AE3 is expressed in the brain by E11 and augments the electrochemical gradient of chloride and bicarbonate in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "AE3 is expressed in the brain by E11 and augments the electrochemical gradient of chloride and bicarbonate in neurons, both of which are permeable through the GABAAR (reviewed in H\u00fcbner and Holthoff, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "9db3ba5b-b72f-4f6c-b3b6-cd7ef29a391a",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C86",
+      "claim": "The normalization of [Cl-]i, and thus the chloride driving force, had the predicted effect of attenuating GABA induced depolarizing currents in migrating cortical interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, the normalization of [Cl-]i, and thus the chloride driving force, had the predicted effect of attenuating GABA induced depolarizing currents in migrating cortical interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "8f873040-739b-4479-bd00-50b24037d3e6",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C87",
+      "claim": "Previous work argues strongly for GABAA receptor-activated membrane depolarization influencing both prototypical migration of GABAergic interneurons and their abnormal migration induced by ethanol exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work by Cuzon et al. (2006) and Cuzon et al. (2008) investigating the cell intrinsic and extrinsic factors that contribute to GABA's influence on tangential migration argue strongly for GABAAR-activated membrane depolarization influencing both prototypical migration of GABAergic interneurons and their abnormal migration induced by ethanol exposure (Cuzon et al., 2008; Cuzon et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "b937eb58-e478-495a-8524-0470a7efd43f",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C88",
+      "claim": "The importance of GABAA receptor signaling in tangential migration is consistent with work by others describing the dependence of interneuron migration on depolarization induced calcium signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of GABAAR signaling in tangential migration is consistent with work by others describing the dependence of interneuron migration on depolarization induced calcium signaling (Behar et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "61dc2451-acbb-4920-883e-48e0d388eb15",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C89",
+      "claim": "The ability of bumetanide to prevent aberrant tangential migration following in utero binge-type exposure to ethanol at the height of interneuron migration sheds light on the mechanistic basis of ethanol's enhancement of tangential migration.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of bumetanide to prevent aberrant tangential migration following in utero binge-type exposure to ethanol at the height of interneuron migration sheds light on the mechanistic basis of ethanol's enhancement of tangential migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "c7aaed10-b582-46b7-b2ad-dd58e7335712",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C90",
+      "claim": "Maternal injection with a similar dose of bumetanide has been shown to shift the reversal potential of GABA mediated currents in neonatal cortical neurons, suggesting that maternally administered bumetanide reaches the embryonic brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal injection with a similar dose of bumetanide has been shown to shift the reversal potential of GABA mediated currents in neonatal cortical neurons, suggesting that maternally administered bumetanide reaches the embryonic brain (Wang and Kriegstein, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "d00c9908-1a9f-4fb5-8dc9-037b9cf00dcb",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C91",
+      "claim": "With the doses of bumetanide used, there was no reduction in tangential migration below levels seen in control animals, suggesting the existence of a therapeutic window in which bumetanide treatment can inhibit the aberrant migration induced by ethanol exposure in utero while not significantly effecting endogenous migration.",
+      "claim_type": "EXPLICIT",
+      "source": "With the doses of bumetanide used here, we did not see a reduction in tangential migration below levels seen in control animals, suggesting the existence of a therapeutic window in which bumetanide treatment can inhibit the aberrant migration induced by ethanol exposure in utero while not significantly effecting endogenous migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "1d411cb6-793b-41f9-b680-29179408b0ed",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C92",
+      "claim": "The prevention of in utero ethanol exposure-induced changes in interneuron migration and final positioning remain correlative with the observed normalization of behavioral flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevention of in utero ethanol exposure-induced changes in interneuron migration and final positioning remain correlative with the observed normalization of behavioral flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a limitation of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "a0d9162c-d572-44b1-89f0-5197557b67e3",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C93",
+      "claim": "This work strongly implicates interneuronopathy in the etiology and symptomatology of FASD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this work strongly implicates interneuronopathy in the etiology and symptomatology of FASD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a conclusion from the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "570338be-cd87-4f19-a110-dbcc0cdc78a8",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C94",
+      "claim": "Parvalbumin-expressing GABAergic interneurons in the mPFC pace gamma rhythms required for higher cognitive processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Parvalbumin-expressing GABAergic interneurons in the mPFC pace gamma rhythms required for higher cognitive processing (Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "bc60a3ca-e888-468b-9e00-9387405b6ddb",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C96",
+      "claim": "Cognitive behavioral deficits resulting from I/E imbalance within intracortical circuits can become manifest regardless of the directionality of this skewing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cognitive behavioral deficits resulting from I/E imbalance within intracortical circuits can become manifest regardless of the directionality of this skewing, for review see Ferguson and Gao (2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "9445056e-9dc9-4ad3-8322-c4069959764c",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C97",
+      "claim": "Increased excitability among mPFC PV neurons results in increased perseverative behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, it has been demonstrated that increased excitability among mPFC PV neurons results in increased perseverative behaviors (Ferguson and Gao, 2018b), consistent with the increased perseverative behavior reported here in mice with increased numbers of parvalbumin-expressing interneurons in the mPFC following prenatal ethanol exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "501173d0-2a38-41c8-98fb-a5cfadfe0d49",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C98",
+      "claim": "It is unlikely that aberrant tangential migration is the only effect of ethanol that contributes to the imbalance of synaptic inhibition and excitation in FASD.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unlikely that aberrant tangential migration is the only effect of ethanol that contributes to the imbalance of synaptic inhibition and excitation in FASD (Kroener et al., 2012; Skorput et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "251ae84f-e5ae-4869-b719-b89f301787cc",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C99",
+      "claim": "Bumetanide's ability to prevent migratory defect in vivo suggests that such treatment may prevent ethanol-induced teratogenic effects on other cell populations that occur via potentiation of GABAA receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, bumetanide's ability to prevent this migratory defect in vivo suggests that such treatment may prevent ethanol-induced teratogenic effects on other cell populations that occur via potentiation of GABAAR activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation based on the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "593c9c97-ad61-45a3-962c-54720c90cec6",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C100",
+      "claim": "GABAergic interneuron migration appears to be sensitive to concentrations of ethanol that do not induce the widespread neuronal loss most commonly seen in the setting of high level exposure at a developmental time equivalent to late human gestation.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAergic interneuron migration appears to be sensitive to concentrations of ethanol that do not induce the widespread neuronal loss most commonly seen in the setting of high level exposure at a developmental time equivalent to late human gestation (Farber et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "e3f1080c-85c1-439f-b75d-2f2bc634c2b8",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C101",
+      "claim": "Interneuronopathy may be an underlying etiology in a significantly larger population of FASD patients than is neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, interneuronopathy may be an underlying etiology in a significantly larger population of FASD patients than is neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an inference from the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "41b4f32b-2a06-42ca-9a21-dc263c1888cd",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C102",
+      "claim": "Dams treated with bumetanide and/or ethanol for the limited duration modeled did not exhibit significant deviation of body weight or physical condition compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Dams treated with bumetanide and/or ethanol for the limited duration modeled here did not exhibit significant deviation of body weight or physical condition compared to controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "4b4eb43a-fe7c-43cb-88a8-09c72e138803",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C103",
+      "claim": "Preliminary studies report changes in fMRI activation and improvement in executive functioning with behavioral therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Preliminary studies report changes in fMRI activation and improvement in executive functioning with behavioral therapy (Nash et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "ca47631a-9e70-4e7d-b237-23c40bce157f",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C104",
+      "claim": "No treatments are currently available to ameliorate the developmental etiology of prenatal alcohol exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no treatments are currently available to ameliorate the developmental etiology of prenatal alcohol exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "63d3d84a-e913-4c6b-8315-3d652c93d2bd",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C105",
+      "claim": "Developmental bumetanide exposure has been proposed for the treatment of neonatal epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, developmental bumetanide exposure has been proposed for the treatment of neonatal epilepsy, and possible adverse effects have been reviewed (Ben-Ari, 2012; Ben-Ari and Tyzio, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "3cf3d863-8d36-424c-8879-4801bee2ddcf",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C106",
+      "claim": "Bumetanide has a biological effect on ethanol-enhanced tangential migration when administered maternally via both intraperitoneal and oral routes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work shows that bumetanide has a biological effect on ethanol-enhanced tangential migration when administered maternally via both intraperitoneal and oral routes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "b786a906-3ada-4e73-a4f9-3aa4dfcc583e",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C107",
+      "claim": "Physiological maturation of PV+ cortical interneurons closes the critical period of synaptic plasticity during corticogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiological maturation of PV+ cortical interneurons closes the critical period of synaptic plasticity during corticogenesis (van Versendaal and Levelt, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "c803c1be-3084-47cd-a489-4e91353d571c",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C108",
+      "claim": "Maturation of PV+ cortical interneurons is driven by depolarizing GABAergic activity, and thus, is sensitive to the activity level of NKCC1.",
+      "claim_type": "EXPLICIT",
+      "source": "This maturation is driven by depolarizing GABAergic activity, and thus, is sensitive to the activity level of NKCC1 (Deidda et al., 2015; van Versendaal and Levelt, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "83edbe80-82c5-4ab8-b125-9b3d8f852bca",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C109",
+      "claim": "Work in the visual cortex demonstrates the ability for bumetanide treatment to exert lasting effects on intracortical circuit formation by extending the critical period of synaptic plasticity via a delay in the physiological maturation of PV+ interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, work in the visual cortex demonstrates the ability for bumetanide treatment to exert lasting effects on intracortical circuit formation by extending the critical period of synaptic plasticity via a delay in the physiological maturation of PV+ interneurons (Deidda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "6ccf4961-bdd9-4a0f-ae34-87ea8db2fbfb",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "claim_id": "C110",
+      "claim": "NKCC1 antagonist treatment may be beneficial for mitigating interneuronopathy directly via a delay of MGE-derived interneurons, and/or indirectly by mitigating the deleterious effects of interneuronopathy on consolidation of intracortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "NKCC1 antagonist treatment may therefore be beneficial for mitigating interneuronopathy directly via a delay of MGE-derived interneurons, and/or indirectly by mitigating the deleterious effects of interneuronopathy on consolidation of intracortical circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as speculation about the mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "879e5e59-0de2-4cd5-819a-3e2240877f68",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ethanol exposure induces a depolarizing shift in EGABA in embryonic MGE-derived GABAergic interneurons. The control mean EGABA was -23.18 \u00b1 1.45 mV, significantly more depolarized than the resting membrane potential (-41.9 \u00b1 2.3 mV, p<0.01). Ethanol (6.5 mM) shifted EGABA to -16.52 \u00b1 0.93 mV (p=0.0077), which was reversible upon washout. Higher ethanol concentrations (50 mM) produced similar depolarizing shifts (p=0.0003).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C45 provide converging electrophysiological evidence with appropriate statistical tests showing ethanol-induced depolarization of EGABA. The use of gramicidin perforated patch clamp preserves intracellular chloride, strengthening the validity. Sample sizes (8 litters, 16 cells for 6.5 mM; 6 litters, 21 cells for 50 mM) appear adequate, and the reversibility upon washout supports causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "cac677dd-7f7f-450d-b49b-c1b99ef17ae7",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bumetanide pretreatment normalized ethanol-induced EGABA depolarization through functional antagonism rather than direct inhibition. Bumetanide alone hyperpolarized EGABA to -34.17 \u00b1 4.02 mV (p=0.004), and when combined with ethanol, EGABA was -24.82 \u00b1 2.52 mV (p=0.56 vs control). The magnitude of ethanol-induced shift was similar with or without bumetanide pretreatment (p=0.37), suggesting ethanol acts independently of NKCC1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 and C82-C83 demonstrate that bumetanide normalizes ethanol effects via functional antagonism. The key observation that bumetanide doesn't alter the magnitude of ethanol's shift (C48) but normalizes the final EGABA (C46) is internally consistent and supports the proposed mechanism. Sample sizes (5 litters, 13 cells) are adequate for electrophysiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "2414db07-ea8d-440f-9e36-86cdd76fe635",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ethanol potentiates GABA-activated depolarizing current responses in embryonic GABAergic interneurons, and bumetanide attenuates this potentiation. Ethanol (6.5 mM) increased GABA response amplitude from 10.02 \u00b1 0.99 pA to 16.89 \u00b1 2.39 pA (p=0.0039), reversible upon washout. With bumetanide pretreatment, ethanol potentiation was reduced from 59.37 \u00b1 8.83% to 26.46 \u00b1 6.26% (p=0.011).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52, C54, and C86 provide consistent evidence across multiple experimental conditions. The dose-response is demonstrated with both 6.5 mM and 50 mM ethanol. Statistical tests are appropriate (paired and unpaired t-tests, ANOVA), and the reversibility upon washout strengthens causality. Sample sizes (8 litters/17 cells for control; 5 litters/11 cells for bumetanide) are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "f2f3c4e4-209d-4885-a5f0-62a44fe873d8",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bumetanide pretreatment alone did not alter GABA response amplitude compared to control (p=0.71).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 provides an important negative control showing bumetanide alone doesn't affect baseline GABA responses, supporting specificity of the ethanol-bumetanide interaction. The statistical test is appropriate and the result is clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "2476a5f0-1a41-4a79-90e6-7d9cc654c699",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NKCC1 antagonism attenuates ethanol-induced potentiation of depolarizing GABAA receptor responses and can inhibit ethanol-induced supranormal migration at concentrations that don't affect normal migration patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C59 synthesize the electrophysiological findings (C39-C54) with prior work on GABAA receptors. The conclusions are appropriately cautious and supported by the data presented. The claim about migration selectivity (C59) is supported by the organotypic culture data showing bumetanide alone doesn't affect migration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "6fb6611f-c5fc-40de-a288-42d3eb480f39",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Maternal bumetanide treatment prevents ethanol-induced aberrant tangential migration in vivo in a dose-dependent manner. Bumetanide co-treatment (0.15 mg/kg i.p.) completely normalized ethanol-induced increases in MGE-derived interneuron density to control levels (P>0.999). Higher oral doses (320 mg/kg food) also normalized migration, while lower doses were ineffective, suggesting a therapeutic window.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C67, C81, C89, and C91 demonstrate dose-dependent prevention of ethanol effects in vivo. The use of multiple administration routes (i.p. and oral) strengthens translational relevance. Sample sizes appear adequate (multiple litters, 4-10 brains per group). The dose-response relationship and identification of a therapeutic window are well-supported. However, the lack of DMSO-alone and bumetanide-alone controls in some experiments is a limitation acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "db677fd4-2234-4a4a-ab1e-71665b52c752",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Maternal bumetanide treatment alone (0.15 mg/kg i.p. daily, E14.5-E16.5) did not alter PV+ interneuron numbers in any PFC layer in young adult offspring (P>0.247).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 provides an important negative control showing bumetanide alone doesn't affect long-term interneuron development. The sample size is small (3 brains from 2 litters) but adequate for a negative control. Statistical testing is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "9736bcba-f3c7-42f2-8d71-958cbfafda0c",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Maternal bumetanide treatment prevented ethanol-induced deficits in behavioral flexibility, specifically perseverative behaviors in the modified Barnes maze. Ethanol-exposed offspring with bumetanide treatment showed no significant difference in errors during training/testing compared to controls (p>0.427), and perseverative errors were normalized. However, the relationship between migration changes and behavioral outcomes remains correlative.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C80, C92, and C93 demonstrate behavioral rescue with bumetanide treatment. Sample sizes are adequate (14 control, 19 EtOH, 8 EtOH+Bumet offspring from multiple litters). The authors appropriately acknowledge the correlative nature of the migration-behavior relationship (C92). The lack of bumetanide-alone behavioral controls is a limitation but doesn't invalidate the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "d7d1cca5-7045-438c-b4e9-5aa3188935c5",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors speculate that ethanol may shift EGABA through mechanisms involving chloride importers other than NKCC1 (such as AE3), and that NKCC1 antagonism may have broader therapeutic benefits beyond direct effects on migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84, C85, C99, and C110 are explicitly speculative (evidence_type includes SPECULATION). While AE3 is cited as being expressed at the relevant developmental stage (C85), no direct experimental evidence is provided for its involvement. These remain plausible hypotheses requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "9507b569-62c0-4e70-b8af-963b34963d03",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prenatal ethanol exposure induces aberrant tangential migration of MGE-derived GABAergic interneurons, leading to persistent increases in PV+ interneurons in the young adult PFC and impairment in PFC-dependent behavioral flexibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C11, C12, C36, C37, and C38 establish the FASD model used in this study, citing prior work (Skorput et al., 2015). These findings provide the foundation for the current mechanistic investigations. The claims are well-supported by citations and consistent with the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "6487ba74-9469-4ec3-9ac4-949aed2ef1ee",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors hypothesize that interneuronopathy contributes significantly to FASD pathology and position NKCC1 as a pharmacological target for FASD management. They propose interneuronopathy may affect a larger FASD population than neurodegeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C10, C26, C93, and C101 represent the central hypothesis and conclusions of the study. The experimental data (electrophysiology, migration, behavior) provide strong support for interneuronopathy as a mechanism and NKCC1 as a target. The claim about population prevalence (C101) is more speculative but reasonably inferred from the sensitivity to moderate ethanol concentrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "bc2fadb7-8b99-4f9c-bc47-a822d300e729",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Activity-dependent tangential migration of GABAergic interneurons is driven by depolarizing GABA responses, which result from high NKCC1 activity in embryonic neurons setting EGABA depolarized relative to resting potential. Bumetanide antagonizes NKCC1 and shifts EGABA to more negative potentials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C27-C33 establish the mechanistic framework based on prior literature. These are well-established principles in developmental neuroscience, appropriately cited, and form the rationale for the experimental approach. The authors' own data (C39-C48) confirm these principles in their system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "e5036a5b-c191-4327-89eb-b8f21f62dc97",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FASD is a significant public health problem with prevalence rates of 1.1-5.0% in US communities and 7.7 per 1000 globally. Current treatments focus on symptoms rather than etiology. The timing of gestational ethanol exposure is critical, with mid-first trimester being particularly vulnerable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C21 and C34-C35 provide epidemiological and clinical context from cited literature. The prevalence data are from appropriate sources (CDC surveillance, peer-reviewed studies). These background claims establish the significance and unmet need addressed by the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "6245c87a-02ee-4d49-87e1-ad9f7aaa09ee",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "MGE-derived GABAergic interneurons mature into PV+ fast-spiking basket cells that pace gamma rhythms required for cognition. Disruption of inhibitory/excitatory balance, regardless of directionality, can cause cognitive deficits. Increased PV neuron excitability correlates with perseverative behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25, C94, C96, and C97 provide neuroscience background on interneuron function and circuit balance, well-supported by citations. These establish why interneuronopathy would be expected to cause the observed behavioral phenotypes. The link between PV neuron function and perseveration (C97) directly supports the behavioral findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "85f18132-eff1-406d-92d6-58db353b378f",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work supports GABAA receptor-mediated depolarization influencing interneuron migration, including ethanol-induced abnormal migration. Maternal bumetanide reaches the embryonic brain and shifts GABA reversal potentials. GABAergic interneuron migration is sensitive to ethanol concentrations that don't cause widespread neurodegeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87, C88, C90, and C100 cite relevant prior work that supports the current study's approach and interpretation. The citations are appropriate and the claims are consistent with the literature. C90 specifically validates that maternal bumetanide administration can affect embryonic neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "e46906f2-3ea5-4d46-863e-6b07a09b51d5",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors acknowledge that aberrant migration is likely not the only ethanol effect contributing to FASD, but demonstrate bumetanide has biological effects via both i.p. and oral routes. Maternal health was not affected by the treatment regimen. Current FASD treatments don't address developmental etiology, though bumetanide has been proposed for neonatal epilepsy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98, C102-C106 provide important caveats, context, and practical considerations. C98 appropriately acknowledges limitations. C102 addresses safety concerns. C103-C105 provide clinical context. C106 summarizes a key practical finding about administration routes. These are well-supported by data or appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    },
+    {
+      "id": "13a0c524-8520-4541-b188-bb28ae7b4248",
+      "content_id": "c4f633cf-859a-4fd4-abb4-8dacbabfeafa",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "PV+ interneuron maturation closes critical periods of synaptic plasticity and is driven by depolarizing GABAergic activity sensitive to NKCC1 levels. Bumetanide can extend critical periods by delaying PV+ interneuron maturation, potentially affecting circuit consolidation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 cite relevant work on critical periods and provide a mechanistic framework for potential indirect effects of bumetanide treatment. The citations are appropriate and the logic is sound, though these represent potential mechanisms requiring future investigation rather than findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:20:27.281435Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "076228d0-3df4-4456-8774-6304db67d749",
+      "result_id": "879e5e59-0de2-4cd5-819a-3e2240877f68"
+    },
+    {
+      "claim_id": "35e15713-e851-44be-bb8c-b5662a75dade",
+      "result_id": "879e5e59-0de2-4cd5-819a-3e2240877f68"
+    },
+    {
+      "claim_id": "15cebba9-c0a8-4c6c-b367-a80fe69c52af",
+      "result_id": "879e5e59-0de2-4cd5-819a-3e2240877f68"
+    },
+    {
+      "claim_id": "72d31eaa-8283-423d-a80d-33989eb9815b",
+      "result_id": "879e5e59-0de2-4cd5-819a-3e2240877f68"
+    },
+    {
+      "claim_id": "4628d66a-7ad1-4e29-b4ae-75e355657761",
+      "result_id": "879e5e59-0de2-4cd5-819a-3e2240877f68"
+    },
+    {
+      "claim_id": "6a01c075-9d56-41b0-a8ab-e50b1fdcd769",
+      "result_id": "879e5e59-0de2-4cd5-819a-3e2240877f68"
+    },
+    {
+      "claim_id": "3182f632-6078-4b6f-9140-b9bedb6e018c",
+      "result_id": "879e5e59-0de2-4cd5-819a-3e2240877f68"
+    },
+    {
+      "claim_id": "324975e1-c5cf-4251-b47b-889da5f737cf",
+      "result_id": "cac677dd-7f7f-450d-b49b-c1b99ef17ae7"
+    },
+    {
+      "claim_id": "28bc7e75-a106-431e-ab06-b9d416784a2a",
+      "result_id": "cac677dd-7f7f-450d-b49b-c1b99ef17ae7"
+    },
+    {
+      "claim_id": "bdc4cd2e-dd10-4bf8-b067-23e84d47ab4d",
+      "result_id": "cac677dd-7f7f-450d-b49b-c1b99ef17ae7"
+    },
+    {
+      "claim_id": "fb75ccdc-6e46-4d5d-9f5d-e314029ab01b",
+      "result_id": "cac677dd-7f7f-450d-b49b-c1b99ef17ae7"
+    },
+    {
+      "claim_id": "17b7b9da-c81e-4e3a-a78d-ef7c9d80cf08",
+      "result_id": "cac677dd-7f7f-450d-b49b-c1b99ef17ae7"
+    },
+    {
+      "claim_id": "a298e32a-833c-4be2-b2ca-59da68c012c4",
+      "result_id": "2414db07-ea8d-440f-9e36-86cdd76fe635"
+    },
+    {
+      "claim_id": "a0abc992-bf43-4e28-86f5-15ebe4f7ea96",
+      "result_id": "2414db07-ea8d-440f-9e36-86cdd76fe635"
+    },
+    {
+      "claim_id": "849b56e9-9414-4eb5-ab57-31ce82e30f14",
+      "result_id": "2414db07-ea8d-440f-9e36-86cdd76fe635"
+    },
+    {
+      "claim_id": "5f7290ea-7f27-431c-b8e1-5209ad935c16",
+      "result_id": "2414db07-ea8d-440f-9e36-86cdd76fe635"
+    },
+    {
+      "claim_id": "807198cc-8e8a-49e1-b737-e80a4c5495a1",
+      "result_id": "2414db07-ea8d-440f-9e36-86cdd76fe635"
+    },
+    {
+      "claim_id": "9db3ba5b-b72f-4f6c-b3b6-cd7ef29a391a",
+      "result_id": "2414db07-ea8d-440f-9e36-86cdd76fe635"
+    },
+    {
+      "claim_id": "60826d3d-df64-46e2-8d13-d5895f7c4b4c",
+      "result_id": "f2f3c4e4-209d-4885-a5f0-62a44fe873d8"
+    },
+    {
+      "claim_id": "3898e273-7791-4e07-bc2c-36d314e3c4e7",
+      "result_id": "2476a5f0-1a41-4a79-90e6-7d9cc654c699"
+    },
+    {
+      "claim_id": "a7af24fe-4a4e-4121-a27c-8dd2e52f1497",
+      "result_id": "2476a5f0-1a41-4a79-90e6-7d9cc654c699"
+    },
+    {
+      "claim_id": "ee075e9e-365d-4c77-8065-cbdb7b7dd89d",
+      "result_id": "6fb6611f-c5fc-40de-a288-42d3eb480f39"
+    },
+    {
+      "claim_id": "c7434fd9-8198-449c-b746-14d706d8d954",
+      "result_id": "6fb6611f-c5fc-40de-a288-42d3eb480f39"
+    },
+    {
+      "claim_id": "c84993d6-f670-4172-80e0-790b5a04ee35",
+      "result_id": "6fb6611f-c5fc-40de-a288-42d3eb480f39"
+    },
+    {
+      "claim_id": "61dc2451-acbb-4920-883e-48e0d388eb15",
+      "result_id": "6fb6611f-c5fc-40de-a288-42d3eb480f39"
+    },
+    {
+      "claim_id": "d00c9908-1a9f-4fb5-8dc9-037b9cf00dcb",
+      "result_id": "6fb6611f-c5fc-40de-a288-42d3eb480f39"
+    },
+    {
+      "claim_id": "0d0cd0ea-bbd0-40c4-91cd-f9f78b20ff09",
+      "result_id": "db677fd4-2234-4a4a-ab1e-71665b52c752"
+    },
+    {
+      "claim_id": "3b7ce355-6d67-4446-a7dc-9d2aa7458700",
+      "result_id": "9736bcba-f3c7-42f2-8d71-958cbfafda0c"
+    },
+    {
+      "claim_id": "e15ccdf6-b859-4a2a-8689-65ec184a697d",
+      "result_id": "9736bcba-f3c7-42f2-8d71-958cbfafda0c"
+    },
+    {
+      "claim_id": "1d411cb6-793b-41f9-b680-29179408b0ed",
+      "result_id": "9736bcba-f3c7-42f2-8d71-958cbfafda0c"
+    },
+    {
+      "claim_id": "a0d9162c-d572-44b1-89f0-5197557b67e3",
+      "result_id": "9736bcba-f3c7-42f2-8d71-958cbfafda0c"
+    },
+    {
+      "claim_id": "d29135f5-6d01-4f34-99fc-0f43b89ae10d",
+      "result_id": "d7d1cca5-7045-438c-b4e9-5aa3188935c5"
+    },
+    {
+      "claim_id": "9a43fca2-b6eb-4c66-8742-b0d7c61bd64e",
+      "result_id": "d7d1cca5-7045-438c-b4e9-5aa3188935c5"
+    },
+    {
+      "claim_id": "251ae84f-e5ae-4869-b719-b89f301787cc",
+      "result_id": "d7d1cca5-7045-438c-b4e9-5aa3188935c5"
+    },
+    {
+      "claim_id": "6ccf4961-bdd9-4a0f-ae34-87ea8db2fbfb",
+      "result_id": "d7d1cca5-7045-438c-b4e9-5aa3188935c5"
+    },
+    {
+      "claim_id": "e57575f6-1565-4027-83d2-cdc11560f7b1",
+      "result_id": "9507b569-62c0-4e70-b8af-963b34963d03"
+    },
+    {
+      "claim_id": "c3f91fc4-92cc-4173-8da1-296aaf59c019",
+      "result_id": "9507b569-62c0-4e70-b8af-963b34963d03"
+    },
+    {
+      "claim_id": "881acc44-86a8-4a99-9b36-2efa6f97dc53",
+      "result_id": "9507b569-62c0-4e70-b8af-963b34963d03"
+    },
+    {
+      "claim_id": "887f3c3a-545d-43c6-b641-350ef79a7f3a",
+      "result_id": "9507b569-62c0-4e70-b8af-963b34963d03"
+    },
+    {
+      "claim_id": "f22c26dd-2e30-41f1-9819-481e16fefaf5",
+      "result_id": "9507b569-62c0-4e70-b8af-963b34963d03"
+    },
+    {
+      "claim_id": "89cb30ed-87c6-422d-844e-151089f4e37a",
+      "result_id": "9507b569-62c0-4e70-b8af-963b34963d03"
+    },
+    {
+      "claim_id": "e3156bb4-7e62-435e-a453-37ea7dea224c",
+      "result_id": "9507b569-62c0-4e70-b8af-963b34963d03"
+    },
+    {
+      "claim_id": "b770ffeb-f045-4b31-9fc7-c7779d9b16ce",
+      "result_id": "6487ba74-9469-4ec3-9ac4-949aed2ef1ee"
+    },
+    {
+      "claim_id": "aa3c3f6f-5d57-493c-b13f-795bd3506a29",
+      "result_id": "6487ba74-9469-4ec3-9ac4-949aed2ef1ee"
+    },
+    {
+      "claim_id": "6e0731c3-da0b-4bdf-8d02-331763cac61e",
+      "result_id": "6487ba74-9469-4ec3-9ac4-949aed2ef1ee"
+    },
+    {
+      "claim_id": "a0d9162c-d572-44b1-89f0-5197557b67e3",
+      "result_id": "6487ba74-9469-4ec3-9ac4-949aed2ef1ee"
+    },
+    {
+      "claim_id": "e3f1080c-85c1-439f-b75d-2f2bc634c2b8",
+      "result_id": "6487ba74-9469-4ec3-9ac4-949aed2ef1ee"
+    },
+    {
+      "claim_id": "3060b205-9c09-429d-a5f8-00bd2e774ba6",
+      "result_id": "bc2fadb7-8b99-4f9c-bc47-a822d300e729"
+    },
+    {
+      "claim_id": "0a0cc2e5-6b4f-46a6-8687-da4b97f638cc",
+      "result_id": "bc2fadb7-8b99-4f9c-bc47-a822d300e729"
+    },
+    {
+      "claim_id": "a5e1553b-cba0-4047-9f3d-8d97b5e24265",
+      "result_id": "bc2fadb7-8b99-4f9c-bc47-a822d300e729"
+    },
+    {
+      "claim_id": "b401bfe1-bdd1-4bc9-948b-d1fd52368bae",
+      "result_id": "bc2fadb7-8b99-4f9c-bc47-a822d300e729"
+    },
+    {
+      "claim_id": "214668bc-e7b8-4383-9312-c84e05398482",
+      "result_id": "bc2fadb7-8b99-4f9c-bc47-a822d300e729"
+    },
+    {
+      "claim_id": "d7d83678-31d6-42a6-a62e-f16c5c09eadb",
+      "result_id": "bc2fadb7-8b99-4f9c-bc47-a822d300e729"
+    },
+    {
+      "claim_id": "c631aa9b-beba-4840-8987-c063b042522c",
+      "result_id": "bc2fadb7-8b99-4f9c-bc47-a822d300e729"
+    },
+    {
+      "claim_id": "96a92624-1689-4d27-9827-9cad99d6dbc9",
+      "result_id": "bc2fadb7-8b99-4f9c-bc47-a822d300e729"
+    },
+    {
+      "claim_id": "c0ba4690-5793-4d84-a3a0-0f4f55501466",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "93806a08-6888-4f23-99af-5ca3a7f326e4",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "05799a32-554e-42e2-acaa-e0865e4bc513",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "3a038296-1045-49bd-8273-0da1342b74e0",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "e148f134-17b3-485b-8df2-f13d7f91a77b",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "9924e910-5dc3-4ce5-9785-4bebe4a8618d",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "fa02305a-b3a6-457f-9e3a-401c9a1fd84e",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "7a44a12c-ef10-478f-a227-7d791ffb66c2",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "6bdfec78-4f83-4990-8c74-edc310fbe950",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "16556934-a057-4161-9fed-54c5373ab8eb",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "ee1ed494-eb01-455e-ae2c-74320731e31f",
+      "result_id": "e5036a5b-c191-4327-89eb-b8f21f62dc97"
+    },
+    {
+      "claim_id": "4b143e5b-3410-498d-ac87-5e4c5f8a2d8e",
+      "result_id": "6245c87a-02ee-4d49-87e1-ad9f7aaa09ee"
+    },
+    {
+      "claim_id": "b038370a-58f3-438e-8cc4-2dd91813380d",
+      "result_id": "6245c87a-02ee-4d49-87e1-ad9f7aaa09ee"
+    },
+    {
+      "claim_id": "4ddbfbfb-89fd-485b-b435-b4929845541c",
+      "result_id": "6245c87a-02ee-4d49-87e1-ad9f7aaa09ee"
+    },
+    {
+      "claim_id": "33add653-d8ee-47f4-98fb-7a35b3705aa4",
+      "result_id": "6245c87a-02ee-4d49-87e1-ad9f7aaa09ee"
+    },
+    {
+      "claim_id": "570338be-cd87-4f19-a110-dbcc0cdc78a8",
+      "result_id": "6245c87a-02ee-4d49-87e1-ad9f7aaa09ee"
+    },
+    {
+      "claim_id": "bc60a3ca-e888-468b-9e00-9387405b6ddb",
+      "result_id": "6245c87a-02ee-4d49-87e1-ad9f7aaa09ee"
+    },
+    {
+      "claim_id": "9445056e-9dc9-4ad3-8322-c4069959764c",
+      "result_id": "6245c87a-02ee-4d49-87e1-ad9f7aaa09ee"
+    },
+    {
+      "claim_id": "8f873040-739b-4479-bd00-50b24037d3e6",
+      "result_id": "85f18132-eff1-406d-92d6-58db353b378f"
+    },
+    {
+      "claim_id": "b937eb58-e478-495a-8524-0470a7efd43f",
+      "result_id": "85f18132-eff1-406d-92d6-58db353b378f"
+    },
+    {
+      "claim_id": "c7aaed10-b582-46b7-b2ad-dd58e7335712",
+      "result_id": "85f18132-eff1-406d-92d6-58db353b378f"
+    },
+    {
+      "claim_id": "593c9c97-ad61-45a3-962c-54720c90cec6",
+      "result_id": "85f18132-eff1-406d-92d6-58db353b378f"
+    },
+    {
+      "claim_id": "501173d0-2a38-41c8-98fb-a5cfadfe0d49",
+      "result_id": "e46906f2-3ea5-4d46-863e-6b07a09b51d5"
+    },
+    {
+      "claim_id": "41b4f32b-2a06-42ca-9a21-dc263c1888cd",
+      "result_id": "e46906f2-3ea5-4d46-863e-6b07a09b51d5"
+    },
+    {
+      "claim_id": "4b4eb43a-fe7c-43cb-88a8-09c72e138803",
+      "result_id": "e46906f2-3ea5-4d46-863e-6b07a09b51d5"
+    },
+    {
+      "claim_id": "ca47631a-9e70-4e7d-b237-23c40bce157f",
+      "result_id": "e46906f2-3ea5-4d46-863e-6b07a09b51d5"
+    },
+    {
+      "claim_id": "63d3d84a-e913-4c6b-8315-3d652c93d2bd",
+      "result_id": "e46906f2-3ea5-4d46-863e-6b07a09b51d5"
+    },
+    {
+      "claim_id": "3cf3d863-8d36-424c-8879-4801bee2ddcf",
+      "result_id": "e46906f2-3ea5-4d46-863e-6b07a09b51d5"
+    },
+    {
+      "claim_id": "b786a906-3ada-4e73-a4f9-3aa4dfcc583e",
+      "result_id": "13a0c524-8520-4541-b188-bb28ae7b4248"
+    },
+    {
+      "claim_id": "c803c1be-3084-47cd-a489-4e91353d571c",
+      "result_id": "13a0c524-8520-4541-b188-bb28ae7b4248"
+    },
+    {
+      "claim_id": "83edbe80-82c5-4ab8-b125-9b3d8f852bca",
+      "result_id": "13a0c524-8520-4541-b188-bb28ae7b4248"
+    }
+  ],
+  "comparisons": []
+}

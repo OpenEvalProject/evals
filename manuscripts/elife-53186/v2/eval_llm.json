@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Independent component analysis (ICA) revealed distinct functional network architectures for persistent versus slow wave activity states. During persistent activity, compartmentalized networks including default mode, auditory, and insular components were identified in most animals (14/15, 11/15, and 9/15 respectively). In contrast, slow wave activity was characterized by a cortex-wide component present in all animals, with widespread connectivity among networks compared to the high specificity observed during persistent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ICA results are well-documented with specific quantification of component occurrence across animals (C40-C42) and supported by visual evidence in Figure 1. The contrast between compartmentalized persistent activity networks and the cortex-wide slow wave component is demonstrated through both ICA maps and connectivity matrices (C44, C82-C84). The findings are consistent with prior literature on resting-state networks (C39, C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Functional connectivity analysis using 96 cortical ROIs demonstrated significantly different connectivity patterns between brain states. Slow wave activity showed significantly higher cumulative distribution function (CDF) values (t(14)=6.01, p<0.001) and more correlated pairs (t(14)=6.502, p<0.001) than persistent activity. Additionally, slow wave activity exhibited stronger distance-dependency of connectivity (t(14)=5.43, p<0.001), indicating less compartmentalization compared to persistent activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical comparisons are appropriately conducted using paired t-tests with adequate sample size (n=15). The findings are supported by multiple complementary analyses including CDF analysis (C46), correlation pair counting (C47), and distance-dependency assessment (C51). The conclusions about different connectivity patterns (C48, C52) and compartmentalization (C49, C53) are well-justified by the convergent evidence from these analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C93",
+      "C94"
+    ],
+    "result": "Graph theory analysis revealed that persistent activity networks exhibit small-world characteristics with significantly higher modularity (t(14)=4.01, p=0.001), local efficiency (t(14)=5.869, p<0.001), and clustering coefficient (t(14)=3.789, p=0.002) compared to slow wave activity. In contrast, slow wave activity networks showed characteristics of highly interconnected random networks, with no significant differences in global efficiency or characteristic path length between states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The graph theory metrics are appropriately selected and statistically analyzed with paired t-tests. The pattern of results (high modularity, local efficiency, and clustering with similar global efficiency and path length) is consistent with small-world network properties for persistent activity (C93). The interpretation that slow wave activity exhibits random network characteristics (C59, C62, C94) is supported by the specific pattern of metric differences. The findings align with prior work cited for both sedated rats and awake humans (C93, C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C85",
+      "C86",
+      "C95",
+      "C96"
+    ],
+    "result": "Low-dose isoflurane (0.5-0.7%) induced persistent activity that was significantly more similar to medetomidine-induced persistent activity than to high-dose isoflurane-induced slow wave activity, as demonstrated by matrix similarity analysis (t(5)=5.19, p=0.003). Network configurations under low isoflurane and medetomidine were significantly more stable over time than under high isoflurane. This demonstrates that the activity state, rather than the specific anesthetic agent, determines functional connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The low isoflurane experiments provide critical control data demonstrating that connectivity patterns are state-dependent rather than drug-specific (C85, C86). The matrix similarity analysis (C64) and dynamic connectivity analysis (C65) both support this conclusion with appropriate statistical testing. The fiber photometry recordings (C63) provide direct neural evidence for the similarity of population dynamics. However, the sample size for this analysis is smaller (n=6) than the main experiments, which should be noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C104",
+      "C105"
+    ],
+    "result": "Using the cortex-wide ICA component as a covariate in connectivity analysis significantly reduced connectivity values during slow wave activity, with higher CDF values (t(14)=4.96, p<0.001) and fewer correlated pairs (t(14)=5.435, p<0.001) compared to control analysis. This suggests a relationship between slow wave-related down-up transitions and the strength of cortical functional connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The covariate analysis is methodologically sound, using the cortex-wide component (which represents local slow wave activity per C105) to test its contribution to connectivity. The significant reduction in connectivity when this component is regressed out (C67, C68, C104) provides evidence for the relationship between slow waves and connectivity (C69). The use of the inverted signal as a control strengthens the interpretation. This analysis sets up the more direct test of the hypothesis in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C4",
+      "C5"
+    ],
+    "result": "Combined fMRI and fiber photometry recordings revealed a significant positive correlation between the number of down-up transitions in local neural populations and the strength of BOLD functional connectivity in 5 of 6 animals (p<0.001). Permutation testing confirmed these correlations were significant, and repeated measures correlation across all animals yielded r(196)=0.534, p<10e-15. These findings demonstrate that down-up transitions of neuronal excitability drive cortex-wide functional connectivity during slow wave activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between down-up transitions and connectivity strength is rigorously tested using multiple approaches: individual animal correlations (C70), permutation testing to rule out spurious correlations (C71), and repeated measures correlation to account for within-subject dependencies (C72). The convergence of evidence from the covariate analysis (previous result) and these direct neural measurements strongly supports the causal interpretation (C73, C5). The use of 3-minute windows with 1-minute gaps is justified by prior work on dynamic connectivity (cited in methods). The finding that 5/6 animals showed significant correlations is strong, though the one non-significant animal warrants mention.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C87"
+    ],
+    "result": "Dual-cortical calcium photometry recordings between somatosensory (S1) and visual (V1) cortex during slow wave activity showed significant cross-correlation with a delay matching wave propagation speed (51.2\u00b18.1 mm/s). Band-stop filtering that removed slow wave frequencies (0.01-0.4 Hz, 0.2-0.6 Hz, 0.3-0.7 Hz) significantly reduced cross-correlation values (p=0.008, p<0.001, p<0.001 respectively), confirming that down-up transitions are the main contributor to increased cortical functional connectivity during slow wave activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual-fiber photometry experiment provides direct neural evidence for the role of slow waves in connectivity at the population level. The cross-correlation analysis (C76) demonstrates propagating waves with physiologically plausible propagation speeds. The frequency-specific filtering approach (C77-C79) is elegant and directly tests whether slow wave frequencies drive the correlation. The significant reduction in correlation when slow wave frequencies are filtered out strongly supports the conclusion (C80). This complements the BOLD-based findings with direct neural measurements, strengthening the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C65",
+      "C66"
+    ],
+    "result": "Dynamic connectivity analysis revealed that persistent activity (induced by either medetomidine or low isoflurane) showed temporally stable connectivity patterns, while slow wave activity exhibited fast and temporally irregular transitions. This suggests that individual slow wave events drive state-specific network signatures, potentially due to frequent changes in the rate of down-up transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dynamic connectivity analysis using moving windows demonstrates clear differences in temporal stability between states (C98, C99, C65). The interpretation that slow wave events drive dynamic network signatures (C100, C66) is reasonable given the correlation between slow wave rate and connectivity strength demonstrated in other results. However, the claim about 'individual specific events' (C100) is somewhat speculative and would benefit from more direct analysis of event-triggered connectivity changes. The caveat about anesthesia depth affecting slow wave regularity (C101) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C6",
+      "C109",
+      "C120",
+      "C121",
+      "C129"
+    ],
+    "result": "The study demonstrates that different brain activity states (persistent vs. slow wave) fundamentally modify properties of the functional connectome. During persistent activity, compartmentalized patterns are detected, while during slow wave activity, connectivity depends on the rate of slow waves. These findings suggest that distinct spatio-temporal dynamics of cortical excitability drive functional connectivity and may explain discrepancies in prior resting-state fMRI studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the convergent evidence from ICA, connectivity analysis, graph theory, and direct neural recordings. The claim that brain states modify the connectome (C81) is substantiated by multiple complementary analyses. The mechanistic interpretation linking cortical excitability dynamics to connectivity (C109) is supported by the down-up transition experiments. The suggestion that this explains prior discrepancies in the literature (C120) is reasonable given the demonstrated state-dependence, though direct comparison with those studies would strengthen this claim. The practical implication for considering activity states in fMRI experiments (C129) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C74",
+      "C75"
+    ],
+    "result": "Slow waves are characterized by a low-frequency component at 0.2-1 Hz reflecting alternating down-up states, with down-up transitions having an average duration of 2 seconds. These can be detected using fiber photometry with calcium indicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of slow wave frequency (C22) and down-up state dynamics (C23) is well-established in the cited literature. The measurement of 2-second average duration (C75) is supported by experimental data in Figure 7C. The methodological claim about fiber photometry detection (C74) is supported by appropriate citations and demonstrated in the experimental results. These are well-established findings that provide necessary context for the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C27",
+      "C28",
+      "C105"
+    ],
+    "result": "Prior work by the authors and others established that: (1) BOLD responses are directly related to slow calcium waves revealing cortex-wide correlates of local neuronal activity; (2) two distinct activity states occur under different anesthesia conditions; (3) ICA during persistent activity reveals canonical resting-state networks; and (4) the cortex-wide component represents a direct correlate of local slow wave activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior work by the authors (C1, C17, C27, C105) and others (C28) as evidenced by appropriate citations. These findings provide the foundation for the current study's hypotheses and methods. The claims are supported by citation evidence and are consistent with the broader literature on resting-state fMRI and slow wave activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C89",
+      "C97",
+      "C102",
+      "C106",
+      "C107",
+      "C108",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C122",
+      "C124"
+    ],
+    "result": "The manuscript provides extensive background on resting-state networks, brain activity states, functional connectivity methods, and prior findings on anesthesia effects, all supported by appropriate citations to the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims constitute a comprehensive literature review that accurately represents prior work in the field. Each claim is supported by appropriate citations. The review establishes the context for the current study, identifies gaps in knowledge (C35, C37, C103), and provides theoretical framework for interpreting the results. While these are not novel findings, they are accurately presented and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The distance-dependency analysis demonstrates that persistent activity is dominated by specific compartmentalized network nodes that are not necessarily spatially close (like the default mode network), while slow wave activity shows strong distance dependency consistent with propagating waves that switch cortical areas from down to up states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation of distance-dependency results is well-reasoned and supported by the data (C51) and theoretical framework from prior work (C89). The inference about compartmentalized networks during persistent activity (C88, C90) logically follows from the lower distance-dependency. The interpretation of slow wave propagation (C91) is consistent with the observed strong distance-dependency. However, the mechanistic claim about down-up state switching (C92) is somewhat speculative, though it is appropriately supported by citations and qualified with 'might'.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The discussion speculates that global signal removal might remove down-up transition signals that explain connectivity, that activity states may not be uniform across the cortex in awake animals, that humans may transition between states during experiments, and that animals may react differently to anesthesia or shift states during experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims (C123, C125-C128) that extend beyond the experimental data. While they are reasonable hypotheses based on the findings and are appropriately qualified as speculation, they lack direct experimental support in this study. The claim about global signal removal (C123) is particularly interesting and could be tested, but remains speculative here. These represent important considerations for future work but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C35",
+      "C37",
+      "C103"
+    ],
+    "result": "The study addresses a gap in knowledge regarding how neurophysiologically defined brain states impact BOLD functional connectivity, and the authors propose that understanding these dynamics will reduce variability and increase translational value of rodent resting-state fMRI studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The identification of a knowledge gap (C35, C37, C103) is well-justified by the literature review. However, the claim about future impact (C110) is speculative and represents a hoped-for outcome rather than a demonstrated result. While the findings certainly provide important insights that could improve future studies, whether they will actually 'reduce variability' and 'increase translational value' remains to be demonstrated through future work. This is an appropriate discussion point but not a supported result of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study used 25 adult female Lewis rats: 15 for fMRI measurements, 6 for combined fiber photometry/fMRI, and 4 for bench optical recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are straightforward methodological claims that describe the experimental subjects. The numbers are clearly stated and consistent throughout the manuscript. The use of female rats only is a limitation that could affect generalizability, though this is not discussed. The sample sizes are adequate for the statistical analyses performed, particularly for the main fMRI experiments (n=15).",
+    "result_type": "MINOR"
+  }
+]

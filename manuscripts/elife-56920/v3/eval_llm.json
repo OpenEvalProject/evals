@@ -1,0 +1,437 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C45",
+      "C94"
+    ],
+    "result": "Dopamine depletion via 6-OHDA lesion significantly decreases the spontaneous firing rate of striatal cholinergic interneurons (ChIs) from 2.6 \u00b1 0.2 Hz in sham controls to 1.7 \u00b1 0.2 Hz (p=0.0002). This decrease in firing rate is accompanied by reduced excitability and increased irregularity of firing patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25, C45, and C94 are well-supported by cell-attached recordings from 81 neurons/29 mice in the 6-OHDA group compared to 83 neurons/26 mice in sham controls, with statistically significant differences (p=0.0002). The data are consistent across multiple measures including spontaneous firing frequency, evoked action potentials, and coefficient of variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C48",
+      "C104"
+    ],
+    "result": "Chronic L-DOPA treatment of dopamine-lesioned mice increases baseline ChI firing rates to 3.5 \u00b1 0.2 Hz, significantly higher than both 6-OHDA alone (1.7 \u00b1 0.2 Hz, p<0.0001) and sham controls (2.6 \u00b1 0.2 Hz, p=0.0029). This represents a hyperactive state beyond normal ChI activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26, C48, and C104 are strongly supported by recordings from 87 neurons/25 mice in the chronic-LD group with robust statistical significance. The finding that chronic L-DOPA not only reverses the 6-OHDA-induced decrease but overshoots normal activity is a key novel observation with appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C67",
+      "C68",
+      "C76"
+    ],
+    "result": "Dopamine depletion decreases HCN channel activity in ChIs, as evidenced by reduced voltage sag amplitude (\u221213.4 \u00b1 0.9 mV vs. \u221216.6 \u00b1 0.8 mV in sham, p=0.0266) and decreased Ih current density (\u22120.59 \u00b1 0.10 pA/pF vs. \u22120.94 \u00b1 0.09 pA/pF in sham, p=0.0464). This decreased HCN function contributes to the reduced firing rate observed in 6-OHDA mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C67, C68, and C76 are supported by voltage-clamp measurements from 12 neurons/6 mice in the 6-OHDA group showing significant decreases in both voltage sag and Ih density. The causal link between decreased HCN function and reduced firing is further validated by pharmacological experiments (C5, C85-C87) showing that HCN blockade mimics the 6-OHDA phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C69",
+      "C77"
+    ],
+    "result": "Chronic L-DOPA treatment restores HCN channel activity to sham levels (voltage sag: \u221217.9 \u00b1 1.3 mV, p=0.6781 vs. sham; Ih density: \u22121.01 \u00b1 0.15 pA/pF, p=0.9078 vs. sham), but this normalization of HCN activity alone cannot account for the elevated firing rate in chronic-LD mice, which exceeds sham levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C69, and C77 are well-supported by voltage-clamp data from 13 neurons/7 mice showing complete restoration of HCN parameters. The inference that HCN normalization alone is insufficient to explain the firing overshoot (C77) is logically sound given that HCN returns to baseline while firing exceeds baseline, pointing to additional mechanisms (SK channel changes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "SK channel activity is significantly decreased in ChIs from both 6-OHDA (0.12 \u00b1 0.03 pA/pF, p=0.0206) and chronic-LD (0.13 \u00b1 0.04 pA/pF, p=0.0381) groups compared to sham (0.25 \u00b1 0.03 pA/pF). This persistent reduction in SK current is not mediated by transcriptional changes in SK channel isoforms (Kcnn1-3), as mRNA levels remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by apamin-sensitive current measurements from 14 neurons/4 mice per group and RT-qPCR data from 4-6 samples per condition. The statistical significance is robust (p<0.05 for both lesioned groups vs. sham), and the lack of mRNA changes suggests post-transcriptional regulation. However, the mechanism underlying SK current reduction remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Pharmacological blockade of HCN and SK channels mimics the firing changes observed in disease states: combined partial blockade (1 \u03bcM ZD7288 + 1 nM apamin) decreases firing rate and increases irregularity (mimicking 6-OHDA), while partial SK blockade alone (1 nM apamin) increases firing rate without affecting regularity (mimicking chronic-LD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C85-C90 are supported by pharmacological experiments in control slices (8-10 neurons/3 mice per condition) showing that titrated channel blockade recapitulates the key features of both disease states. The dose-response curves (C5B,C) establish IC50 values for both blockers, and the paired recordings demonstrate significant effects (p<0.05). This provides strong causal evidence linking channel dysfunction to firing changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C120"
+    ],
+    "result": "TRIP8b (Pex5l) mRNA levels are significantly reduced in ChIs from 6-OHDA mice (0.053 \u00b1 0.003 vs. 0.066 \u00b1 0.003 in sham, p=0.0474) and restored by chronic L-DOPA (0.060 \u00b1 0.003, p=0.6087 vs. sham). This suggests that dopamine may regulate HCN channel trafficking and function through TRIP8b expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C75, and C120 are supported by RT-qPCR data from Chat-Cre:Rpl22HA mice (4-6 samples/17-22 mice per condition). The statistical significance is marginal (p=0.0474) but meets the threshold. The mechanistic link between TRIP8b reduction and decreased HCN function (C75) is speculative but reasonable given established roles of TRIP8b in HCN trafficking. The claim about L-DOPA maintaining HCN activity via TRIP8b (C120) is appropriately qualified as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C47",
+      "C105"
+    ],
+    "result": "Chronic L-DOPA treatment restores firing regularity in ChIs, as measured by coefficient of variation (CV) of inter-spike intervals. The CV increases from 0.36 \u00b1 0.03 in sham to 0.57 \u00b1 0.05 in 6-OHDA (p=0.0004) and is normalized to 0.36 \u00b1 0.04 in chronic-LD mice (p=0.8126 vs. sham).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C47, and C105 are well-supported by analysis of firing patterns from 80-87 neurons per group. The restoration of CV to sham levels despite elevated firing frequency suggests that chronic L-DOPA selectively normalizes certain aspects of ChI physiology while leaving others altered. The statistical analysis is appropriate using non-parametric tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C111"
+    ],
+    "result": "Changes in spontaneous ChI firing persist in the presence of synaptic blockers (CNQX, APV, picrotoxin), indicating that altered firing is driven by cell-intrinsic mechanisms rather than changes in synaptic input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, and C111 are supported by recordings performed with synaptic blockers (11-13 neurons/3 mice per group) showing persistent differences in firing rates. This is a critical control experiment that strengthens the conclusion that the observed changes reflect intrinsic neuronal properties. The inference that changes are intrinsic (C28, C111) is well-justified by the persistence of effects during synaptic blockade.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Dopaminergic lesion induces dendritic remodeling in ChIs, with both 6-OHDA and chronic-LD groups showing increased Sholl intersections (372 \u00b1 46 and 420 \u00b1 72 vs. 217 \u00b1 18 in sham, p<0.05) and greater total neurite length (6450 \u00b1 844 \u03bcm and 7515 \u00b1 1421 \u03bcm vs. 3639 \u00b1 327 \u03bcm in sham, p<0.05). This remodeling is not reversed by chronic L-DOPA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, and C57 are supported by Sholl analysis of biocytin-filled neurons (13-28 neurons/7-14 mice per group). The morphological changes are statistically significant and consistent across multiple measures. The conclusion that L-DOPA does not reverse dendritic remodeling (C57) is appropriately inferred from the similar increases in both lesioned groups. However, the functional significance of this remodeling remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C62"
+    ],
+    "result": "Chronic L-DOPA treatment increases spontaneous inhibitory postsynaptic current (sIPSC) frequency in ChIs (5.5 \u00b1 0.9 Hz vs. 2.4 \u00b1 0.6 Hz in sham, p=0.0202) without affecting amplitude (p=0.1824), suggesting increased GABAergic synaptic connectivity onto ChIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, and C62 are supported by voltage-clamp recordings from 7-12 neurons/3-6 mice per group. The selective increase in frequency without amplitude change is consistent with increased presynaptic release or synapse number. The inference about increased connectivity (C62) is reasonable but could reflect other mechanisms such as increased release probability. The study acknowledges this is likely compensatory remodeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Neither frequency nor amplitude of spontaneous excitatory postsynaptic currents (sEPSCs) was significantly changed by dopamine depletion or chronic L-DOPA treatment (amplitude p=0.7949; frequency p=0.2276), though the study may be underpowered to detect changes due to the rarity of spontaneous excitatory events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60 and C61 present negative results with appropriate statistical analysis (8-16 neurons/4-7 mice per group). However, the authors acknowledge potential statistical power limitations (C61), which is appropriate given the low frequency of sEPSCs. The lack of significant findings could reflect either true absence of changes or insufficient power to detect them. Additional experiments with evoked EPSCs or larger sample sizes would be needed for definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The 6-OHDA lesion model produces severe and consistent motor deficits, with all lesioned mice showing <10% stepping with the impaired paw (p<0.0001 vs. 50% expected) and no difference between 6-OHDA and chronic-LD groups (p=0.547). All lesioned mice develop L-DOPA-induced dyskinesia (LID) with similar total scores, but chronic L-DOPA treatment shifts LID onset to earlier time points (first 10 min: 13.4 \u00b1 1.2 vs. 6.0 \u00b1 0.7 for first dose, p=0.0002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 are supported by behavioral data from 21-30 mice per group. The stepping task confirms lesion severity and equivalence between groups. The LID assessment shows appropriate controls (first dose vs. chronic) and demonstrates sensitization to L-DOPA with chronic treatment. The statistical analyses are appropriate, though the biological significance of shifted onset with similar total scores is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C46"
+    ],
+    "result": "Bath application of dopamine (30 \u03bcM) increases spontaneous ChI firing rate only in brain slices from dopamine-depleted mice (6-OHDA: +2.4 \u00b1 0.4 Hz, p=0.0012; chronic-LD: +1.7 \u00b1 0.4 Hz, p=0.0026) but not in sham controls (+0.6 \u00b1 0.3 Hz, p=0.056), indicating that dopamine's effect is biased toward excitation following dopamine depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, and C46 are supported by perforated-patch recordings from 7-10 neurons/2-3 mice per group. The differential response to dopamine between groups is statistically significant and suggests altered dopamine receptor signaling in lesioned mice. However, the sample size is relatively small (n=7 for 6-OHDA from only 2 mice), which raises concerns about biological replication. The inference about bias toward excitation (C44) is reasonable but could benefit from additional mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The voltage-dependence of HCN channel activation is shifted to more negative potentials in 6-OHDA mice (V50: \u221295.6 \u00b1 2.5 mV) compared to sham (\u221288.8 \u00b1 0.9 mV, p=0.0287) and chronic-LD (\u221291.0 \u00b1 1.4 mV), suggesting altered gating properties or HCN isoform expression that is restored by chronic L-DOPA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 are supported by Boltzmann analysis of HCN currents from 11-13 neurons/6-7 mice per group. The shift in V50 is statistically significant and physiologically meaningful. The inference about altered gating or isoform expression (C71) is reasonable and supported by citations to prior literature, though direct evidence for isoform changes is lacking (C73 shows no mRNA differences). The restoration by L-DOPA is consistent with TRIP8b normalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Basic electrophysiological properties of ChIs (voltage-current dependence, resting membrane potential, input resistance, membrane capacitance, rheobase) and most action potential waveform parameters are unchanged between experimental groups, with minor exceptions: sAP threshold is more positive in chronic-LD vs. 6-OHDA, and evoked AP rise time is longer in 6-OHDA vs. sham.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by whole-cell recordings from 11-34 neurons/4-11 mice per group. The lack of changes in basic properties strengthens the conclusion that firing rate differences are due to specific channel alterations (HCN and SK) rather than global changes in membrane properties. The minor differences noted (C51, C52) are statistically significant but of unclear functional significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Dopamine depletion decreases the number of bursts and pauses in ChI firing, while chronic L-DOPA increases burst number and restores pause number. Burst duration is unchanged, but pause duration is longer in 6-OHDA and shorter in chronic-LD. When normalized to total action potentials, burst and pause numbers are similar across groups, suggesting these irregularities scale with firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by burst-pause analysis using the Robust Gaussian Surprise method on recordings from 80-87 neurons per group. The analysis is sophisticated and appropriate. The key finding that normalized burst/pause numbers are similar (C37) and the inference that irregularities scale with firing rate (C38) are well-supported and provide important context for interpreting the firing pattern changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Evoked action potential firing during current injection steps is reduced in 6-OHDA mice (26.1 \u00b1 1.2 Hz at 300 pA) compared to sham (35.8 \u00b1 0.8 Hz, p=0.0003), indicating decreased excitability. Chronic L-DOPA restores excitability to sham levels (33.4 \u00b1 1.6 Hz, p=0.4173 vs. sham).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by current-clamp recordings from 11-18 neurons/4-5 mice per group with appropriate two-way ANOVA analysis. The restoration of excitability by L-DOPA (C41) contrasts with the overshoot in spontaneous firing, suggesting different mechanisms regulate evoked vs. spontaneous activity. This dissociation is important but not fully explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Hcn2 is the most abundantly expressed HCN isoform in ChIs, but there are no statistically significant differences in mRNA levels of Hcn1-4 between experimental groups, despite functional changes in HCN current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C73 are supported by RT-qPCR data from Chat-Cre:Rpl22HA mice (4-6 samples/17-22 mice per condition). The lack of transcriptional changes in HCN isoforms (C73) despite functional alterations points to post-transcriptional regulation, consistent with the TRIP8b findings (C74). This negative result is important for understanding the mechanism of HCN regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Total Ba\u00b2\u207a-sensitive potassium currents (both peak and late components) are unchanged in ChIs from 6-OHDA and chronic-LD mice compared to sham (peak p=0.0873; late p=0.0756), suggesting that overall potassium channel activity is preserved despite specific SK channel changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by voltage-clamp recordings from 9-10 neurons/3 mice per group. The lack of change in total Ba\u00b2\u207a-sensitive current despite decreased SK current suggests compensatory changes in other potassium channels or that SK channels contribute a relatively small fraction of total K\u207a current. The p-values approach but do not reach significance, which is appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C130",
+      "C140"
+    ],
+    "result": "In 6-OHDA mice, the decrease in firing rate from HCN current loss cannot be overcome by the expected increase from SK current reduction, indicating that HCN effects dominate. The slower depolarization rate caused by HCN inhibition overrides the smaller afterhyperpolarization from reduced SK activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130 and C140 are inferred from the combined observations that both HCN and SK currents are reduced in 6-OHDA mice, yet firing decreases rather than increases. The pharmacological experiments (C85-C87) support this by showing that combined HCN+SK blockade decreases firing. The inference is logically sound and supported by the data, though direct quantitative modeling of the relative contributions would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establishing the scientific context: ChIs are thought to contribute to PD pathophysiology and LID; they constitute ~5% of striatal neurons but have widespread effects; prior studies show conflicting results on ChI activity changes after DA depletion; and the basis of ChI changes with chronic L-DOPA has not been identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C19 provide essential background and are supported by appropriate citations to prior literature. These establish the rationale for the study and acknowledge conflicting prior results (C18), which is scientifically appropriate. The claim that the basis of chronic L-DOPA effects was unknown (C19) justifies the novelty of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Discussion claims contextualizing results: anticholinergic drugs are effective for PD; prior studies show conflicting results on ChI activity changes; acetylcholine levels in PD patients are unchanged but this doesn't capture synaptic activity; loss of pause responses and increased firing variability may cause aberrant striatal plasticity; and altered acetylcholine receptor binding occurs in PD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C103 provide important context from prior literature and are appropriately cited. The speculation about pause response loss causing aberrant plasticity (C102) is clearly marked as speculative. These claims help interpret the current findings within the broader literature, though some are tangential to the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C112",
+      "C113",
+      "C120",
+      "C127",
+      "C132",
+      "C141",
+      "C142",
+      "C145"
+    ],
+    "result": "Speculative claims about mechanisms and therapeutic implications: increased ChI firing may underlie hypercholinergic state in PD patients on L-DOPA; exaggerated DA receptor responses underlie adaptations; dendritic remodeling may be compensatory; synaptic adaptations may be important in vivo; DA may regulate HCN via TRIP8b; altered HCN trafficking may affect dendritic excitability; SK reduction may reflect Cav2.2 dysregulation; and HCN/SK channels could be therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C145 are appropriately qualified as speculative or requiring future investigation. They represent reasonable hypotheses based on the data but lack direct experimental support. The therapeutic implications (C141, C142, C145) are particularly speculative as no behavioral rescue experiments were performed. These claims are valuable for guiding future research but should not be considered established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C78",
+      "C79",
+      "C109",
+      "C110",
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128",
+      "C129",
+      "C131",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Established knowledge claims about HCN and SK channel function: HCN channels are essential for ChI firing and depolarize neurons toward threshold; SK channels mediate afterhyperpolarization and determine firing rate; TRIP8b regulates HCN trafficking; HCN channels have different effects depending on subcellular localization; SK channels are coupled to Cav2.2 channels; and various details about channel properties in different neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C137 represent established knowledge from prior literature and are appropriately cited. These provide essential background for interpreting the experimental findings. The citations appear accurate and relevant, though detailed verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "SK3 channels are the most abundantly expressed SK subtype in ChIs and likely regulate tonic firing rate, similar to their role in dopaminergic neurons. Partial SK blockade with IC50 apamin concentration increases firing without increasing burstiness, mimicking chronic L-DOPA effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138 and C139 are supported by mRNA expression data (Figure 4E) and pharmacological experiments (Figure 5D,E). The inference about SK3's role (C138) is reasonable based on expression levels and comparison with dopaminergic neurons, though direct evidence from SK3-specific manipulations would be stronger. The pharmacological mimicry (C139) is well-demonstrated experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C121",
+      "C143",
+      "C144"
+    ],
+    "result": "The effects of chronic L-DOPA on ChI physiology persist beyond the pharmacokinetic availability of L-DOPA (recordings performed \u226520 hours after last dose), reflecting long-term adaptations rather than acute drug effects. Only some changes caused by DA depletion are restored by chronic L-DOPA (HCN normalized, SK remains depressed).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121, C143, and C144 are supported by the experimental design and data. The 20-hour washout period is appropriate for distinguishing chronic adaptations from acute effects, supported by citation to L-DOPA pharmacokinetics (Abercrombie et al., 1990). The differential restoration of HCN vs. SK (C144) is a key finding that is well-documented in the results.",
+    "result_type": "MAJOR"
+  }
+]

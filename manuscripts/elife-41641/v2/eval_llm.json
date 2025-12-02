@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Elevated IFN\u03b3 levels in SLE patients correlate with expansion of T-bethi DN2 pre-ASC cells. The authors demonstrate significant positive correlations between plasma IFN\u03b3 (as well as IFN\u03b3-induced cytokines CXCL10, IL-6, and TNF\u03b1) and the frequency of T-bethi DN2 cells in SLE patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C41-C44 are supported by correlation analyses shown in Figure 1h-i. The statistical significance is demonstrated with appropriate correlation tests (Spearman correlation), and the data show consistent positive correlations between IFN\u03b3/IFN\u03b3-induced cytokines and DN2 cell frequency. The correlation with anti-Smith autoAb titers (C40) provides additional support for the biological relevance of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Na\u00efve B cells stimulated with IFN\u03b3-producing Th1 cells form T-bethi pre-ASCs and generate more ASCs than Th2-stimulated cells. The authors show that ~50% of B cells co-cultured with Th1 cells express T-bet and acquire DN2-like phenotype (CD19hiCD27negCD11c+FcRL5+CD23neg), while Be1 cultures consistently produce 5-10 fold more ASCs than Be2 cultures across multiple experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C45-C51 are well-supported by flow cytometry data (Figures 2b-g) and proliferation analysis (Figure 2\u2014figure supplement 3). The experiments use appropriate paired controls (Be1 vs Be2) from multiple independent donor pairs, demonstrating reproducibility. The mechanistic insight that increased ASC formation is due to enhanced commitment per division rather than proliferation rate differences strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In vitro generated T-bethi BDN cells from Be1 cultures are transcriptionally similar to SLE patient DN2 cells and exhibit pre-ASC characteristics. RNA-seq analysis identified 427 DEGs between Be1 and Be2 BDN cells, with Be1 cells showing enrichment for genes upregulated in SLE DN2 cells and ASCs, as well as IRF4 target genes. These cells express intermediate IRF4 levels and can rapidly differentiate into ASCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are supported by comprehensive RNA-seq analysis (Figure 3b-h) with appropriate statistical thresholds (FDR < 0.05) and GSEA showing significant enrichment (nominal p-values provided). The transcriptional similarity to SLE DN2 cells and ASC gene signatures is demonstrated through multiple independent comparisons. Flow cytometry validation of IRF4 expression and functional differentiation assays provide orthogonal support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "IFN\u03b3 is obligate for in vitro generation of T-bethiIRF4int pre-ASC population from na\u00efve B cells. IPA analysis predicted IFN\u03b3, IL-2, IL-21, and TLR7/9 as upstream regulators. Experimental validation showed >95% of cells stimulated with complete cocktail (anti-Ig, IFN\u03b3, IL-2, IL-21, BAFF, R848) became T-bethiIRF4int, while >80% remained T-betneg/lo without IFN\u03b3 and failed to upregulate IRF4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 are supported by IPA analysis (Figure 4a) and systematic 'all minus one' experiments (Figure 4c-g). The requirement for IFN\u03b3 is clearly demonstrated through loss-of-function experiments showing failure to generate pre-ASCs without IFN\u03b3. The experimental design appropriately tests individual component requirements, though the IPA predictions are computational and require experimental validation (which is provided).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ASC development from pre-ASCs requires transient BCR signals, IFN\u03b3, R848, and IL-21. While pre-ASC formation requires IFN\u03b3, ASC accumulation requires transient (not continuous) anti-Ig stimulation during days 0-3, along with IFN\u03b3, R848, and IL-21 throughout the culture period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by temporal manipulation experiments (Figure 4h-l) showing differential requirements for pre-ASC formation versus ASC differentiation. The data demonstrate that continuous BCR stimulation blocks ASC formation while transient early stimulation is optimal. The requirement for IL-21, R848, and IFN\u03b3 is clearly shown through elimination experiments with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Early IFN\u03b3 signals (days 0-3) are required for pre-ASC and ASC development, while R848 plays both early and late roles, and IL-21 is required late (days 3-6). Temporal experiments show ASCs are undetectable without early IFN\u03b3, cells proliferate less without early IFN\u03b3, and early IFN\u03b3 alone is sufficient for pre-ASC formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 are supported by systematic temporal manipulation experiments (Figure 5) with CTV-labeled cells allowing proliferation tracking. The experimental design appropriately tests timing requirements by adding/removing factors at different phases. Data show clear temporal separation of requirements: IFN\u03b3 early, IL-21 late, R848 throughout. Statistical analysis with multiple donors (n=3) supports reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "IFN\u03b3 synergizes with subthreshold TLR7/8 ligand and IL-2 to promote B cell proliferation and ASC formation. IFN\u03b3-primed cells respond to 100-fold lower R848 concentrations, and combined IFN\u03b3+IL-2 priming produces significantly more ASCs than either alone. IFN\u03b3 priming enhances IL-21R signaling as measured by phospho-STAT3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C93 are supported by dose-response experiments (Figure 6a-d) and combinatorial stimulation experiments (Figure 6e-k). The synergy is demonstrated through multiple independent measurements: proliferation, ASC frequency, total ASC recovery, and phospho-STAT3 levels. The 10-fold increase in ASC frequency with low-dose R848+IFN\u03b3 versus no IFN\u03b3 is clearly shown. Statistical significance is demonstrated across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C129",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "IFN\u03b3 synergizes with IL-2 and TLR7/8 ligands to induce genome-wide epigenetic reprogramming, resulting in increased chromatin accessibility at IRF4, BLIMP1, T-bet, NF-\u03baB, and STAT5 binding sites, and epigenetic remodeling of IL21R and PRDM1 loci. ATAC-seq shows Be.\u03b32 cells (IFN\u03b3+IL-2) have the greatest number of accessible regions and highest enrichment at key transcription factor binding sites. DARs at IL21R and PRDM1 loci are also found in SLE patient DN2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C94-C105 are supported by comprehensive ATAC-seq analysis (Figure 7) with appropriate statistical thresholds (FDR < 0.05). The data show clear synergy between IFN\u03b3 and IL-2 in chromatin remodeling, with Be.\u03b32 cells showing the most extensive changes. Motif enrichment analysis is statistically significant (Supplementary file 4). The conservation of DARs between in vitro and patient-derived cells (Figure 7j-k) validates biological relevance. IL-21R expression data (Figure 7l-m) provides functional validation of epigenetic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C135"
+    ],
+    "result": "IFN\u03b3 signals poise B cells to differentiate by increasing their responsiveness to IL-21. This is mediated through increased IL-21R expression (5.5-6 fold by day 6) and enhanced STAT3 phosphorylation in response to IL-21 in IFN\u03b3-primed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C135 are supported by multiple lines of evidence: ATAC-seq showing DARs at IL21R locus (Figure 7k), flow cytometry showing increased IL-21R expression (Figure 7l-m), and phospho-STAT3 assays showing enhanced IL-21 signaling (Figure 6k). The mechanistic link between epigenetic changes and functional outcomes is well-established through these complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "SLE patient-derived na\u00efve B cells can be induced to form T-bethi DN2 cells in vitro, and patient-derived DN2 cells can rapidly differentiate into ASCs without additional BCR stimulation. ASC recovery from DN2 cells is 50-fold higher than from na\u00efve B cells and only 2-3 times less than memory B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 are supported by experiments using SLE patient cells (Figure 8). The data show that patient BN cells respond similarly to healthy donor cells in vitro, and that patient DN2 cells have enhanced differentiation capacity. ELISPOT data (Figure 8e) clearly demonstrate the quantitative differences in ASC formation between cell types. The requirement for transient BCR stimulation in BN but not DN2 cultures is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C152",
+      "C153"
+    ],
+    "result": "In vitro generated T-bethiIRF4int BDN cells are similar to SLE patient DN2 cells in phenotype, transcriptome, and function. IFN\u03b3-directed chromatin accessibility changes at IL21R and PRDM1 loci are conserved between in vitro and patient-derived cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 and C152-C153 are supported by comprehensive comparison of in vitro and patient-derived cells across multiple modalities: phenotyping (Figures 2-4, 8), RNA-seq (Figure 3), ATAC-seq (Figure 7j-k), and functional assays (Figures 3, 8). The conservation of epigenetic changes between in vitro and patient cells provides strong validation of the model system's relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "A subset of SLE patients present with expanded BDN cells that can be subdivided into DN2 (CD11c+CXCR5neg, T-bethi) and DN1 (CD11cnegCXCR5+, T-betlo) cells. T-bethi BDN cells express intermediate Blimp1 and IRF4 levels and correlate with anti-Smith autoAb titers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by flow cytometry analysis of SLE patient samples (Figure 1a-g) with appropriate gating strategies. The phenotypic characterization is consistent with prior published work (Jenks et al., 2018). The correlation with anti-Smith autoAb titers provides clinical relevance. Sample size (n=40 SLE patients) is adequate for correlation analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "Deletion of T-bet in B lineage cells prevents autoAb responses in a mouse model of TLR7-dependent SLE. Bone marrow chimera experiments show that B-YFT mice (lacking T-bet in all B cells) have reduced ANAs, improved kidney function, and better survival compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 is supported by mouse bone marrow chimera experiments (Figure 1\u2014figure supplement 1) showing reduced ANAs, lower UACR, and improved survival in B-YFT versus control chimeras. The experimental design appropriately controls for T-bet expression in non-B cells. Statistical significance is demonstrated for key outcomes. This provides important validation of B cell-intrinsic T-bet requirement in autoimmunity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C154"
+    ],
+    "result": "B cell intrinsic IFN\u03b3 signaling induces a TLR7/8 hyperresponsive state, allowing cells to respond to 100-fold lower concentrations of TLR7/8 ligands than normally required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 and C154 are supported by dose-response experiments (Figure 6a-d, Figure 6\u2014figure supplement 1) showing that IFN\u03b3-primed cells respond to subthreshold R848 concentrations. The 100-fold difference is clearly demonstrated through systematic titration. This finding has important implications for understanding B cell responses in inflammatory conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "SLE patients with higher systemic IFN\u03b3 levels have more T-bethi DN2 cells and higher autoAb titers. The size of the T-bethi DN2 population correlates with disease activity, particularly in African-American SLE patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 are supported by correlation data (Figure 1) and citations to prior work (Wang et al., 2018; Jenks et al., 2018). The correlation between IFN\u03b3, DN2 cells, and autoAb titers is clearly demonstrated. The specific association with African-American patients is supported by cited literature rather than data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background claims about SLE pathogenesis, B cell populations, and prior literature on IFN\u03b3, T-bet, and DN2 cells in SLE and other conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C35 are background/literature review claims supported by appropriate citations to published work. These establish the context and rationale for the current study. The citations appear appropriate and the claims accurately represent the cited literature based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C130",
+      "C136",
+      "C137",
+      "C138",
+      "C145",
+      "C148",
+      "C155",
+      "C157",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Literature-based claims about TLR signaling, IFN\u03b3 effects on B cells, prior mouse studies, and clinical trial results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C65, C115-C118, C123-C127, C130, C136-C138, C145, C148, C155, C157, C160-C162) are supported by appropriate citations to published literature. They provide important context for interpreting the current findings and are accurately represented based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C122",
+      "C128",
+      "C142",
+      "C143",
+      "C146",
+      "C149",
+      "C150",
+      "C151",
+      "C158",
+      "C159",
+      "C163"
+    ],
+    "result": "Speculative claims about potential roles of IFN\u03b3 in human B cell responses, therapeutic implications, and future research directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114, C122, C128, C142-C143, C146, C149-C151, C158-C159, and C163 are explicitly speculative (using terms like 'could', 'likely', 'may', 'predict', 'propose'). While these are reasonable extrapolations from the data, they represent hypotheses rather than demonstrated findings. The speculation is appropriately qualified in the text, but these claims cannot be evaluated as supported or unsupported since they are predictions for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Human B cells can differentiate without IFN\u03b3, but IFN\u03b3 significantly enhances ASC differentiation, with 5-10 fold more ASCs recovered in cultures containing IFN\u03b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by experimental data showing ASC formation in both presence and absence of IFN\u03b3, with quantitative measurements showing 5-10 fold enhancement with IFN\u03b3 (Figures 2, 4-6). This addresses an important question about whether IFN\u03b3 is required versus enhancing for human B cell differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C147"
+    ],
+    "result": "Vaccine-specific T-bethi CD27neg DN2 cells are found in healthy individuals immunized with inactivated influenza virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C147 is stated as 'data not shown', meaning the evidence is not presented in the manuscript. While this may be true, it cannot be evaluated without seeing the actual data. This represents unpublished observations that should either be included or removed from the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C156"
+    ],
+    "result": "SLE patient DN2 pre-ASCs and in vitro generated T-bethi BDN cells can differentiate without additional BCR stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 is supported by functional data in Figures 3 and 8 showing that sorted DN2/BDN cells can differentiate into ASCs without anti-Ig stimulation, unlike na\u00efve B cells which require BCR signals. This demonstrates an important functional property distinguishing pre-ASCs from na\u00efve cells.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "RecBCD and its subunits RecB and RecD generate high forces (RecBCD: 43\u00b12 pN, RecB: 40\u00b13 pN, RecD: 29\u00b13 pN) without significant velocity reduction at forces below these maxima. RecD alone generates ~30% less force than RecBCD or RecB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C17 are directly supported by force-velocity measurements in Figure 2a-c showing force generation capabilities. The experimental design using optical tweezers with asymmetric DNA constructs allows independent measurement of each subunit's force generation within the intact complex. Error estimates are provided and the data clearly shows RecD's reduced force capacity compared to the full complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Isolated RecD is a fast translocase but a weak helicase with poor processivity (~50 bp). When RecD is in complex with RecB/RecC, it can unwind DNA at ~430 bp/s, but isolated RecD is practically unable to unwind DNA at zero force. The presence of RecC and/or RecB is necessary for RecD to efficiently and processively unwind DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21, C23-C25 are well-supported by experimental data comparing RecD in complex (Figure 2b) versus isolated RecD (Figure 3). The zero-force extrapolation shows a dramatic difference (~430 bp/s vs ~0 bp/s, Figure 3d), and processivity measurements (~50 bp isolated vs ~30,000 bp for RecBCD) clearly demonstrate RecD's dependence on other subunits. The experimental designs appropriately test the two conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C29"
+    ],
+    "result": "RecD operates as a Brownian ratchet mechanism rectified by ATP binding, with a step size of ~3 bp. The presence of RecB/RecC shifts the ratchet equilibrium toward the post-translocation state by approximately 200-fold, without greatly affecting other microscopic rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C26, C29 are supported by global fitting of kinetic models to force-velocity data across multiple ATP concentrations (Figure 4, Figure 5). The Brownian ratchet before ATP binding model provided the best fit (R\u00b2=0.76 for in-complex, R\u00b2=0.78 for isolated). The 200-fold shift in equilibrium constant (Figure 5e) is derived from fitting parameters. However, the model selection relies on goodness-of-fit comparisons and alternative models cannot be definitively excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C44",
+      "C45"
+    ],
+    "result": "Both RecB and RecD subunits unwind DNA at ~400 bp/s at low forces when measured individually in the complex, but the whole complex shows ~1100 bp/s, significantly higher than the sum of individual rates. This 1.4-fold increase suggests synergy from direct allosteric interactions between subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C44-C45 are supported by velocity measurements using symmetric and asymmetric constructs. The observation that the combined rate (1100 bp/s) exceeds the sum of individual rates (2\u00d7400=800 bp/s) demonstrates synergy. The interpretation of allosteric interactions (C45) is reasonable given the experimental design where subunits unwind different DNA tracks, though the mechanism remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The measured forces (25-40 pN) provide a mechanical basis for RecBCD's ability to overcome DNA-bound protein roadblocks, consistent with forces required to evict proteins like RNA polymerase (20-30 pN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 appropriately connects the measured forces (C1, C14-C16) with literature values for protein displacement (C8). The comparison with prior observations of RecBCD displacing proteins without pausing (C6, C7) is logically consistent. However, this is an inference connecting current measurements with prior observations rather than direct experimental validation of protein displacement in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Control experiments with RecBK29QCD mutant (deficient in RecB ATPase) show indistinguishable force-velocity curves from wild-type when probing RecD, and RecBC alone sustains only ~9 pN, confirming that the asymmetric constructs specifically probe RecB and RecD activities without contribution from RecB's secondary translocase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by control experiments (Figure 2\u2014figure supplement 1a,b). The RecBK29QCD mutant control validates that RecB's secondary translocase doesn't contribute to the measured RecD activity. The low force tolerance of RecBC (~9 pN) further confirms the secondary translocase is inactive at higher forces. These controls strengthen the interpretation that the assay specifically measures individual subunit activities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The discrepancy between current measurements (25-40 pN) and previous reports (~8 pN) may be explained by differences in ATP concentration or loop formation in different experimental geometries. At low ATP, the enzyme spends more time in force-sensitive pre/post-translocation states, while higher ATP allows minimizing time in these states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C56 are largely speculative explanations for the discrepancy with prior work (C9). While the mechanistic reasoning about ATP-dependent state occupancy (C53-C55) is consistent with the Brownian ratchet model, and the loop formation hypothesis (C56) is plausible, these remain untested hypotheses. The manuscript appropriately presents these as speculation, but they lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The helicase subunits function by division of labor: they pull DNA but play a minor role in fork destabilization. The effect may be mediated by RecC's pin domain and RecB's arm domain, consistent with structural models where melting occurs as translocases pull DNA against a protein wedge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by the low destabilization energy measured for RecD (~0.6 kBT) and the 200-fold shift in translocation equilibrium when in complex. Claims C61-C62, C64-C66 appropriately cite structural studies to propose mechanisms. However, the specific structural basis (C61, C64) remains speculative as the current study doesn't directly test these structural elements. The division of labor model is well-supported by the data, but the structural mechanism is inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Previously observed conformational dynamics of RecBCD-DNA complex may represent fluctuations of RecD between pre- and post-translocation states, consistent with the Brownian ratchet mechanism and the ~3-4 bp step size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C49 accurately cite prior work. Claim C50 is explicitly speculative, connecting previous observations with current findings. While the connection between the ~4 bp dynamics observed previously and the ~3.3 bp step size measured here is suggestive, this remains an untested hypothesis. The manuscript appropriately presents this as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The assay has limitations: structural elements cannot simultaneously destabilize both DNA segments in the asymmetric geometry. However, the functional force-velocity relationships remain valid, and velocity underestimation (if present) only strengthens the conclusion about RecD's dependence on other subunits for fork destabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C80 provide a thorough discussion of experimental limitations and their impact on interpretation. The authors acknowledge that the assay may underestimate velocities (C75-C76) but correctly argue this doesn't affect force-response conclusions (C77-C79). The logic that underestimation strengthens the RecD dependence conclusion (C80) is sound. The discussion of alternative explanations (C73-C74) is appropriately speculative. This represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The observed unwinding trace lengths (490\u00b113 bp for RecBCD, 116\u00b116 bp for RecD, 380\u00b143 bp for RecB) do not represent true processivity because traces are terminated by force-induced dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is explicitly stated and represents an important caveat about data interpretation. The reasoning is sound: in the passive mode where force increases during unwinding, dissociation is force-induced rather than reflecting intrinsic processivity. This is an appropriate limitation to acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Auxiliary ATP-binding sites previously identified may help overcome force effects by providing a parallel ATP binding pathway, potentially explaining RecBCD's ability to maintain activity under force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C83 cite prior work by the authors. Claims C84-C85 are explicitly speculative connections between auxiliary sites and force response. While the hypothesis is mechanistically reasonable given the Brownian ratchet model, it lacks direct experimental support in this study. The manuscript appropriately presents this as speculation for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background information on RecBCD structure, function, and properties from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 represent established knowledge and prior work appropriately cited. These provide necessary context but are not novel findings of this study. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C22",
+      "C63",
+      "C68"
+    ],
+    "result": "Background information on RecBCD mechanism and properties from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C10-C13, C22, C63, C68 represent established knowledge from prior studies, appropriately cited. These provide necessary background but are not novel findings. The citations appear accurate.",
+    "result_type": "MINOR"
+  }
+]

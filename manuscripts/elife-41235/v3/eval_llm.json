@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The experimental setup involved 34 flies tracked in a circular arena (3.2 cm radius) with a central odor-zone (1.2 cm radius, actual 1.5 cm), with locomotion recorded for 3 minutes before and 3 minutes during apple cider vinegar (ACV) exposure at 30 fps. The arena minimized non-olfactory directional cues with low air speeds (0.07-0.11 m/s), and flies were 3-5 days post-eclosion and starved for 14-18 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C72-C75, and C126-C131 provide comprehensive experimental details that are internally consistent and appropriately documented. The methods are clearly described with specific measurements, and control experiments (C75) validate the minimal influence of wind. The data preprocessing steps (C130-C131) are standard and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "A Hierarchical Hidden Markov Model (HHMM) with 10 high-level (HL) states and 5 low-level (LL) states per HL state successfully classified >80% of data points with >85% confidence (median 81%), significantly outperforming both standard HMM (68% at same confidence) and demonstrating that a single HHMM fits all flies, suggesting flies use similar behavioral components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 demonstrate clear superiority of HHMM over HMM through multiple metrics: classification confidence (C7 vs C8), Bayesian model comparison (C10-C11, p<0.0001), and universal fit across all flies (C9). The statistical evidence is strong and the model architecture is well-justified. The comparison is fair as HHMMs have fewer parameters than equivalent HMMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The HHMM revealed structured locomotion with sparse transitions between HL states (47/81 non-zero transitions, mostly to 2-3 neighboring states). The 10 HL states represent distinct locomotor features: slow locomotion (states 1-3 including meandering, stop-start, and sharp turns), medium-speed walking (states 4-7), and high-speed states with directional turning (states 8-10, with mirror-symmetric left/right turns). Flies spend 60% of time in locomotor features >300ms and >10% in features >3s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C25 provide a coherent characterization of locomotor states supported by the transition probability matrix structure (C12-C13) and detailed behavioral descriptions (C14-C23). The state duration statistics (C24-C25) support the existence of persistent locomotor features. The descriptions are consistent with the model architecture and observables used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Odors modulate locomotion by altering the frequency of existing locomotor features rather than creating new ones. In the absence of ACV, flies spend 30% of time in state 2 with roughly equal time in other states. ACV exposure causes flies to spend more time in slow states (1 and 3) inside the odor-zone at the expense of high-speed states (7-10), while outside the odor-zone flies increase high-speed states (8-10) and decrease stopping (state 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 demonstrate odor effects through changes in state occupancy with opposing effects inside vs outside the odor-zone (C27-C28). The conclusion that odors modulate frequency rather than create new features (C29) is well-supported by the observation that the same HHMM fits both pre- and post-odor data. Statistical significance is reported in the manuscript with appropriate corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C102",
+      "C103"
+    ],
+    "result": "Odor effects on locomotion exhibit fine-grained spatial structure: state 1 probability increases dramatically only at the odor-zone edge, state 2 increases in an annular region just inside, and state 3 increases at the arena center. Outside the odor-zone, state 8 increases uniformly while states 9-10 increase near the odor-zone. The spatial analysis successfully recovered arena structure, though temporal averaging over 3 minutes may miss some spatiotemporal details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 and C76-C79, C102-C103 demonstrate spatially structured odor responses that go beyond simple inside/outside distinctions. The ability to recover arena structure from HL state distributions (C102) validates the model's accuracy. The authors appropriately acknowledge limitations from temporal averaging (C103) and note that behavior differs in the first 10s after odor encounter (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Population-level decoding of odor presence from HL states failed, and HL states performed no better than raw observables for population decoding. Euclidean distances between empirical flies are much larger than between synthetic flies generated from the average (p<10^-131), rejecting the hypothesis that flies represent variations around an average. X-means clustering identified 3-4 clusters of flies in each condition, with synthetic flies from these clusters showing distances similar to empirical flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 provide strong statistical evidence against the average fly model through multiple approaches: failed population decoding (C36-C37), extreme statistical significance of inter-fly distances (C39, p<10^-131), and successful clustering with validation controls (C42). The consistency of cluster numbers across conditions (C41) and similarity of synthetic cluster distances to empirical distances (C43) support the clustering validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Four distinct locomotor strategies were identified: cluster 2 flies move slowly spending >60% time in state 2 (stopped); cluster 1 flies alternate between medium and slow speeds using states 5 and 7 for radial forays; cluster 3 shows similar behavior but uses slower medium-speed states (4-5); cluster 4 flies traverse in concentric circles using high-speed states (8-10). Cluster assignments are stable within the experimental timeframe, with 1 second sufficient for better-than-chance clustering and 30 seconds for >85% accurate classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 provide detailed characterization of behavioral clusters with clear distinctions in state usage patterns. The temporal stability analysis (C50-C52) demonstrates that clusters represent persistent strategies rather than transient variations. The rapid classification from short data segments supports the robustness of cluster differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Behavior before odor onset is only weakly predictive of behavior during odor presence, as shown by weak correlations between Euclidean distances in before vs during periods. However, individualized logistic regression successfully decoded odor presence at better-than-chance levels for every fly, and HL states performed significantly better than raw observables (p<0.0028 inside, p<0.0089 outside).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 explain why population-level decoding failed while individual-level decoding succeeded. The weak correlation between before/during periods (C54) supports the poor predictability claim (C53). The success of individualized approaches (C55) and superiority of HL states over observables (C56) with appropriate statistical tests validates the model's utility for individual-level analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Odor responses cluster into distinct strategies: X-means identified 5 clusters inside and 4 outside the odor-zone. Inside, cluster 5 slows down like the average fly; cluster 3 shows similar slowing but in medium-speed states; cluster 2 decreases state 2 in favor of states 1, 3, and 4; cluster 1 shows no dramatic change. Different clusters show opposing effects on state 2 occupancy (large decrease in cluster 2 vs increases in clusters 3 and 5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 demonstrate heterogeneity in odor responses with clear distinctions between clusters. The opposing effects on state 2 (C63) provide strong evidence for qualitatively different strategies rather than quantitative variations. The reconfiguration of clusters to ensure better-than-chance logistic regression for each fly (C58) validates the biological relevance of the clustering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Outside the odor-zone, cluster 1 decreases slow-states (1-2) and increases fast states (8-10) resembling average fly behavior; cluster 2 shows large decrease in state 2 with increase in medium-speed states (4-6); cluster 3 shows no dramatic change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 characterize odor response strategies outside the odor-zone, showing diversity similar to inside responses. The descriptions are consistent with the inside clustering patterns and support the overall conclusion of multiple response strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C94",
+      "C95",
+      "C108",
+      "C109"
+    ],
+    "result": "Fly locomotion is well-structured and HHMM provides an elegant, simple, and intuitive description of both locomotion and odor effects. Different flies employ different strategies both before odor onset and in response to odors. The data are inconsistent with flies representing variations around an average fly, but consistent with flies employing 3-5 different strategies. All flies use the same locomotor building blocks, with differences quantified as changes in usage frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71, C94-C95, C108-C109 synthesize the major findings with strong support from the clustering analyses, failed population decoding, and successful individual decoding. The conclusion that flies use the same building blocks but in different proportions (C94-C95, C108) reconciles the universal HHMM fit with the observed heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The model is acknowledged as 'a model' not 'the model' of locomotion, with the choice of observables and model strongly influencing discovered structure. The current model reveals structure in velocity space with state durations <3s, which cannot capture longer timescale structure (>3s) visible to human observers. A deeper-layered architecture would likely uncover structure on longer timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C89 provide appropriate acknowledgment of model limitations. The recognition that modeling choices influence results (C82) and that longer timescale structure exists but is not captured (C86-C88) demonstrates scientific rigor. The suggestion for deeper architectures (C89) is reasonable speculation based on the hierarchical structure observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The HHMM states may not reflect actual neural states, and there is ongoing debate about discrete states vs continuum representations of behavior. However, the presence of long-lasting states employed repeatedly by all flies implies either discrete state transitions or fixed points/peaks of a dynamical system around which animals spend most time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 appropriately acknowledge uncertainty about neural implementation while providing reasonable interpretation of the behavioral data. The citation of Berman 2018 (C93) shows engagement with alternative theoretical frameworks. The interpretation is cautious and acknowledges multiple possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C80",
+      "C104",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Several important questions remain for future research: whether locomotor features are fixed or flexible; whether there are discrete locomotor-types or a continuum (X-means underestimates cluster numbers); whether spatiotemporal patterns differ among flies (requiring larger datasets); and whether fly behavior persists over longer timeframes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C80, C104, C110-C112 appropriately identify limitations and future directions. The acknowledgment that X-means underestimates clusters (C110) and that only 34 flies were studied shows awareness of statistical limitations. These are reasonable research directions based on the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The study develops a statistical framework to study complex behaviors and provides a framework for testing whether description based on an average fly is appropriate, with methods to proceed if such an approach is inadequate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 accurately describe methodological contributions. The HHMM framework and the approach for testing average vs individual models represent genuine methodological advances applicable beyond this specific study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The diversity of odor responses is consistent with moth studies but contrasts with recent Drosophila work reporting stereotypical motor patterns. The difference may be due to strong directional wind cues in narrow arenas suppressing behavioral diversity. Fly odor responses are strongly context-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C118 compare results to prior work, but the explanation for differences (C117) is speculative. While context-dependence is well-established (C118 with citation), the specific hypothesis about wind suppressing diversity lacks direct experimental support. The contrast with Bell and Wilson 2016 is noted but not definitively resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Behavioral variability, while seemingly suboptimal for individuals, may represent bet-hedging for population-level adaptation to fluctuating environments. Having diverse phenotypes ensures some individuals thrive in any condition, making variability a feature not a bug. Individual-level analysis is essential for understanding neural mechanisms, as the average fly aggregates different clusters with distinct odor responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C125 provide evolutionary context for behavioral variability with appropriate citation of bet-hedging theory (C121). The argument for individual-level analysis (C123, C125) is well-supported by the demonstrated failure of population-level approaches and success of individual approaches. The interpretation of the average fly as an aggregate (C124) is directly supported by the clustering results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Individuality is observed even in single-cell organisms and simple nervous systems, with larger nervous systems likely displaying greater individuality. The nature and extent of individuality is harder to assess in complex behaviors due to difficulty distinguishing different instantiations of the same behavior from fundamental behavioral differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 provide appropriate context from prior work with citations. The discussion of challenges in assessing individuality (C107) frames the contribution of the current study. The inference about larger nervous systems (C106) is reasonable and supported by a citation on fly handedness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "In nature, animals encounter odors in cluttered, dynamic environments requiring flexible deployment of multiple motor programs. Laboratory studies necessarily focus on subsets of this complexity. The current experiments explore fly behavior in a small, dark circular arena, contrasting with other studies modeling behavior with strong directional cues from wind and vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 appropriately contextualize the experimental design within the broader landscape of odor-guided navigation studies. The acknowledgment of laboratory limitations (C99) and clear description of the specific conditions studied (C101) demonstrate scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C132",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Data analysis methods included defining speed and curvature as in previous studies, post-processing to remove likely noise-induced short transitions (<170ms returns to initial state, single-frame states), and the final HHMM model having 600 parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132, C134-C137 describe standard and appropriate data processing steps. The post-processing corrections (C135-C137) are justified as removing noise rather than real transitions, which is reasonable given the timescales involved. The parameter count (C134) is correctly calculated and demonstrates model complexity.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Memory B cells in mice can be divided into CD80hi and CD80lo subpopulations with distinct phenotypic characteristics. CD80hi Bmem cells preferentially differentiate into plasma cells during recall, while CD80lo Bmem cells become germinal center B cells. These subsets differ in expression of PD-L2, CD73, CD62L, and FAS markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C12-C19 collectively establish the phenotypic and functional characterization of CD80hi and CD80lo Bmem cell subsets. The data from Figure 1a,b provide flow cytometry evidence for marker expression patterns, and the functional differentiation is demonstrated through in vitro culture experiments. The characterization is consistent with prior literature (C69-C75) and well-supported by experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C97"
+    ],
+    "result": "The distinct differentiation responses of CD80hi and CD80lo Bmem cells are B-cell-intrinsic and essentially independent of BCR isotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C97 are supported by in vitro culture experiments (Figure 1b) showing that sorted CD80hi and CD80lo Bmem cells maintain their distinct differentiation fates regardless of IgG1+ or IgG1- status. The antigen-free culture system demonstrates cell-intrinsic programming independent of BCR specificity or isotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C20",
+      "C21",
+      "C98"
+    ],
+    "result": "The development of CD80hi Bmem cells requires follicular helper T cells and the germinal center environment, while CD80lo Bmem cell development does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C20-C21, and C98 are supported by experiments using CD4+ T-cell-specific BCL6-deficient mice (Figure 1c,d) that lack TFH cells and GCs. The ~10-fold reduction in CD80hi Bmem cells with unchanged CD80lo Bmem cells provides strong evidence for differential TFH cell dependence. However, the mechanism could involve factors beyond TFH cells present in the GC environment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Strong CD40 signaling, mediated by high CD40L expression on TFH cells, is required for CD80hi Bmem cell development but not for CD80lo Bmem cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C22-C28 are well-supported by multiple complementary experiments: TFH cells express higher CD40L (C22, Figure 2a), CD40 stimulation induces CD80 (C23), CD40L blockade preferentially reduces CD80hi Bmem cells (C25, Figure 2c,d), agonistic anti-CD40 increases CD80hi Bmem cells (C26, Figure 2e,f), and CD40L knockdown in T cells reduces CD80hi Bmem frequency (C28, Figure 2g-i). The convergent evidence from gain-of-function and loss-of-function experiments strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C100"
+    ],
+    "result": "High-affinity BCR on B cells promotes CD80hi Bmem cell development, likely through enhanced antigen presentation leading to greater CD40L induction on cognate T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C44-C48, C100 are supported by experiments using B1-8hi ki (high affinity) versus B1-8 ki (lower affinity) mice (Figure 5e,f) and NPmed staining to distinguish affinity (Figure 5g-j). The T-B co-culture experiments (Figure 5b,c) demonstrate dose-dependent CD40L induction correlating with antigen presentation. The mechanistic link between BCR affinity, antigen presentation, CD40L induction, and CD80hi Bmem development is well-established through multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "CD80lo Bmem cell development does not require follicular helper T cells, strong CD40 signal, or high-affinity BCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is supported by the converse observations from experiments testing TFH cell dependence (C21, Figure 1c,d), CD40L blocking (C25, Figure 2c,d), and BCR affinity (C47-C48, Figure 5). CD80lo Bmem cells are consistently less affected by manipulations that reduce CD80hi Bmem cells, indicating lower requirements for these factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C99"
+    ],
+    "result": "Quantitative differences in CD40 stimulation strength in vitro are sufficient to recapitulate distinct Bmem cell fate decisions, with strong CD40 signaling directing cells toward CD80hi phenotype and weak signaling toward CD80lo phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C29, C32-C35, and C99 are strongly supported by the 40LB feeder cell system with varying CD40L expression (Figure 3). B cells cultured on 40LB-hi, -mid, or -lo feeders generate iMB-hi, -mid, or -lo cells respectively, with corresponding phenotypic markers (PD-L2, CD73, FAS). The commitment occurs within 1-2 days (C99, Figure 3\u2014figure supplement 1e-g), demonstrating that CD40 signal quantity directly programs cell fate independent of other variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The bifurcated Bmem cell fate is not determined by different levels of cell proliferation, though duration of CD40 signaling may affect CD80hi Bmem cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by experiments using day 2 iGB cells with similar proliferation levels (Figure 3\u2014figure supplement 1e,f) that still generate distinct iMB subsets. However, longer culture periods increase CD80hi frequency (C38), suggesting duration also matters. The data adequately address the proliferation confound while identifying duration as an additional factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "IL-21 does not affect the frequencies of CD80hi iMB cells derived from iGB-hi or iGB-lo cells in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by experiments showing IL-21 addition to iGB cultures does not change CD80hi iMB frequencies (Figure 3\u2014figure supplement 1h,i). This negative result helps rule out IL-21 as a major determinant of Bmem subset fate, though it doesn't exclude IL-21's role in other aspects of B cell differentiation (e.g., PC formation as discussed in C83-C85).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "iMB-lo cells preferentially differentiate toward GC B cells while iMB-hi cells preferentially differentiate into plasmablasts/PCs both in vitro and in vivo upon antigen challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by in vitro culture experiments (Figure 4a,b) and in vivo adoptive transfer experiments (Figure 4c-f). The in vivo data showing iMB-hi cells become plasmablasts at day 4 while iMB-lo cells become GC B and Bmem cells at day 10 provides strong functional validation. This demonstrates that the in vitro-generated iMB subsets recapitulate the behavior of physiological CD80hi and CD80lo Bmem cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C101",
+      "C102"
+    ],
+    "result": "The quantity of CD40 signaling is translated into NF-\u03baB activation (specifically c-Rel and RelA), which mediates CD80 expression and CD80hi Bmem cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C49-C55, C101-C102 are well-supported by multiple experiments: CA-IKK\u03b2 upregulates CD80 (C49, Figure 6a), high-dose CD40 induces nuclear translocation of c-Rel and RelA (C52, Figure 6b), knockdown of Rel/Rela reduces CD80 expression (C53, Figure 6c,d) and CD80hi iMB/Bmem cell generation (C54-C55, Figure 6e-h). The convergent evidence from overexpression, knockdown, and pharmacological inhibition strongly supports the NF-\u03baB pathway's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "NF-\u03baB activation leads to BATF upregulation, which forms a heterodimer with IRF4 to promote CD80 expression and CD80hi Bmem cell differentiation from GC B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C56-C65, C103-C105 are supported by experiments showing: high CD40 selectively upregulates BATF (C58, Figure 7a,b), BATF activation upregulates CD80 (C59, Figure 7c), BATF requires IRF4 binding (C62, Figure 7d), IKK\u03b2 inhibitor suppresses BATF/IRF4 (C63, Figure 7e), pre-Bmem cells express high BATF/CD80 (C64, Figure 7f,g), and BATF overexpression increases CD80hi iMB cells (C65, Figure 7i,j). The mechanistic pathway from CD40\u2192NF-\u03baB\u2192BATF/IRF4\u2192CD80hi Bmem is well-established through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prior work has shown that mIgG contains motifs recruiting signaling molecules required for enhanced BCR signaling and PC formation, though na\u00efve B cells expressing mIgG1 behave similarly to IgM+ na\u00efve B cells upon primary immunization, and human Bmem cells differentiate into PCs better than na\u00efve B cells in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 accurately summarize prior literature (citations provided) that establishes context for the current work. These claims are supported by the cited references and help frame the question of whether BCR isotype alone determines Bmem cell function, which the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Prior work has characterized Bmem cell subsets based on CD80 and PD-L2 expression, with CD80+ PD-L2+ cells prone to PC differentiation and CD80- PD-L2- cells prone to GC formation, correlating with BCR affinity and timing of generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C79 accurately summarize prior literature (primarily Zuccarino-Catania et al., 2014 and related studies) that established the phenotypic and functional characterization of Bmem subsets. These claims provide essential context for the current study's investigation of the mechanisms determining these subset fates. The citations support these characterizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Prior work has established various aspects of CD40 signaling, NF-\u03baB function, GC B cell survival, T cell memory differentiation, and transcriptional regulation relevant to understanding Bmem cell subset generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C96 accurately summarize relevant prior literature with appropriate citations. These claims establish the scientific context for the current study's mechanistic investigations, including NF-\u03baB binding to Cd80 (C80), GC B cell differentiation and survival (C81-C82, C87-C88), IL-21 function (C83-C85), T cell memory parallels (C89-C92), and transcriptional regulation (C93-C96). The citations support these background claims.",
+    "result_type": "MINOR"
+  }
+]

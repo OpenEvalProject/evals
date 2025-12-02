@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The nucleolar volume distribution follows a power law p(V)\u223cV^-1 throughout the cell cycle, which is unaccounted for by current theories. This scale-free distribution suggests nucleoli of any size can coalesce without a preferred size threshold, and the distribution remains unchanged during cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C93 provide direct experimental measurements showing the V^-1 distribution persists throughout the cell cycle (Figure 2F). Claims C90-C92 provide reasonable interpretations of this finding. The power law fit has R\u00b2>0.98 with confidence intervals provided, and measurements span multiple synchronized time points, providing strong statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Nucleolar pairs exhibit two distinct types of dynamics: non-fusing nucleoli move randomly with uncorrelated velocities, while nucleoli approaching fusion move slower (~30% reduction) and show strong linear correlation in their velocities (\u03c1=0.88), enabling prediction of fusion events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are directly supported by quantitative data in Figure 5 showing velocity distributions, correlation analysis, and statistical significance (p=4\u00d710^-4). The linear fit (v_max = 1.74v_min) and Pearson correlation coefficient provide strong evidence. Claim C101 is a reasonable inference from this data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "As the cell cycle progresses, nucleolar number decreases while average nucleolar area increases, with this trend persisting beyond 3 hours, contradicting the previous hypothesis that nucleolar fusion is limited to the first two hours of the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is directly supported by measurements shown in Figure 2E across multiple synchronized time points. Claim C41 provides a valid inference that contradicts prior work (Savino et al., 2001), supported by the persistence of the trend beyond 3 hours. The measurements include adequate sample sizes (>40 cells per time point).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C50",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Dense fibrillar components (DFCs) behave as monodisperse solid-like colloidal particles with well-defined dimensions (semi-major axis 210\u00b150 nm, semi-minor axis 180\u00b140 nm, aspect ratio 1.22\u00b10.17) that do not aggregate during nucleolar coalescence. DFCs comprise ~10% of nucleolar volume, significantly lower than in frog oocytes (~25%), suggesting the rRNA-rich GC phase provides liquid-like properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C107, and C112 are supported by quantitative measurements from 1035 DFCs across 114 nucleoli (Figure 3). The monodisperse nature is confirmed by sharp peak in volume distribution (Figure 3\u2014figure supplement 1C). The linear relationship between nucleolar area and DFC number (Figure 3C) supports non-aggregation. Claim C114 is a reasonable inference from the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C72",
+      "C115",
+      "C117"
+    ],
+    "result": "The nucleolus-nucleoplasm interface is maintained by ATP-dependent processes. Upon ATP depletion, nucleoli lose their spherical shape and exhibit irregular morphology with increased surface roughness, indicating reduced surface tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C115 are directly supported by experimental observations in Figure 6B and quantitative measurements of surface roughness parameters (f_neg increased ~15%, N_neg increased ~24%, Table 1). Claim C117 provides a physically sound interpretation linking roughness to surface tension. The ATP depletion experiments include appropriate controls and adequate sample sizes (345 nucleoli).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C119",
+      "C120"
+    ],
+    "result": "The nucleolus-nucleoplasm interface is highly sensitive to chromatin transcription and packing state. Transcription inhibitors (\u03b1-amanitin, flavopiridol) increase nucleolar surface roughness by 40-50%, while chromatin decondensation (trichostatin A) decreases roughness by 20-25%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119 is directly supported by quantitative measurements in Figure 7B and Table 1, showing statistically significant changes in f_neg and N_neg with p-values <0.05. The opposing effects of transcription inhibition versus chromatin decondensation provide internal consistency. Claim C120 is a reasonable inference from these findings. Sample sizes are adequate (>260 nucleoli per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "Cytoskeletal forces exerted on the nucleus from the cytoplasm do not contribute to nucleolar surface roughness or impact nucleolar size and shape, as demonstrated by perturbations with blebbistatin, latrunculin A, and nocodazole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by measurements in Figure 7B and Table 1 showing no significant changes in surface roughness parameters (f_neg, N_neg) for blebbistatin and nocodazole (p>0.4). The latrunculin A effect on A_N/A_Nuc is explained by nuclear rounding rather than nucleolar changes. Sample sizes are adequate (>300 nucleoli per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "Nucleoli are only moderately sensitive to protein synthesis inhibition at timescales from 30 minutes to 6.5 hours, showing slight increases in surface roughness (~15-21%) but no changes in size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim is supported by measurements in Figure 7B and Table 1 showing modest increases in f_neg and N_neg at both time points, with no significant change in A_N/A_Nuc. The characterization as 'moderate' is appropriate given the smaller magnitude compared to transcription perturbations. Sample sizes are adequate (>290 nucleoli per condition).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C135",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors speculate that active chromatin fluctuations might bring nucleoli together to facilitate fusion, analogous to phase separation in active-passive colloidal mixtures, where the nucleolus acts as a passive droplet in an active chromatin polymer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C105, C135, C138-C140) are explicitly speculative and not directly tested. While the speculation is informed by the observed correlated motion of fusing nucleoli (C103) and prior work on active matter (C136-C137), no experiments directly test the proposed mechanism. The hypothesis is plausible but requires future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C121",
+      "C126",
+      "C127",
+      "C131",
+      "C132",
+      "C133",
+      "C142",
+      "C143"
+    ],
+    "result": "Background knowledge and prior work establishing nucleolar structure, function, LLPS behavior, and disease relevance, including comparisons between human cells and other model organisms (X. laevis, C. elegans, D. melanogaster).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge and prior findings that are appropriately cited and provide necessary context for the current study. They are not novel results of this work but are accurately reported background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C116",
+      "C122",
+      "C130",
+      "C134",
+      "C141",
+      "C144"
+    ],
+    "result": "Interpretive claims about mechanisms and implications, including that nucleoplasm plays a major role in nucleolar dynamics, that perinucleolar chromatin packing may require active remodeling, and that the nucleolus could serve as a diagnostic marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent interpretations and implications that extend beyond the direct experimental evidence. While they are reasonable inferences from the data, they require additional validation. For example, C144 (nucleolus as diagnostic marker) is based on correlative disease associations rather than direct demonstration of diagnostic utility.",
+    "result_type": "MINOR"
+  }
+]

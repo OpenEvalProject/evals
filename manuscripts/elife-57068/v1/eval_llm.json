@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The zebrafish genome contains single orthologues of MondoA, ChREBP, and Mlx that show high sequence conservation with mammalian homologs, particularly in functional domains (glucose-sensing module and DNA binding domains), suggesting conserved function across vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 provide direct genomic and phylogenetic evidence from Figure 1A-B showing single orthologues with high sequence conservation in critical functional domains. C22's inference about conserved function is reasonable given the high sequence conservation in functional domains, though functional conservation requires experimental validation (addressed in subsequent claims).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The Mondo pathway is functionally conserved in zebrafish PAC2 cells, as demonstrated by glucose-responsive activation of a ChoRE reporter that is enhanced by MondoA/Mlx overexpression and abolished by mondoa knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C36 present a comprehensive set of cell culture experiments with appropriate controls (constitutive reporter, unrelated reporter, mismatch MO) showing dose-dependent glucose response, synergistic effects of MondoA/Mlx co-expression, and MO-mediated loss of function. The data in Figure 1C-F with statistical significance support functional conservation of the Mondo pathway in zebrafish cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Mondo pathway genes (mondoa, chrebp, mlx) are maternally deposited and expressed throughout zebrafish embryonic development with ubiquitous spatial distribution at early stages including 50% epiboly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by reanalysis of published transcriptome data (Figure 1G-I) and WISH experiments (Figure 1J-K, supplements) showing both temporal expression patterns and spatial distribution. The use of multiple probes per gene (C39-C40) strengthens confidence in the expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Glucose treatment induces expression of known Mondo pathway target genes (hk2, fasn, txnipa) in early zebrafish embryos in a MondoA-dependent manner, and activates a ChoRE reporter, demonstrating functional Mondo pathway glucose sensing at the sphere stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 present RT-qPCR data (Figure 1L-O) and reporter assays (Figure 1P) with appropriate controls (ef1a, MO knockdown). The significant induction of multiple target genes (p<0.001-0.01) and MondoA-dependence of txnipa induction (C46-C47) provide strong evidence for functional glucose sensing. Statistical tests are appropriate and p-values are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Morpholino-mediated knockdown of mondoa causes severe, dose-dependent epiboly defects in zebrafish embryos, while chrebp knockdown has no effect. The phenotype is specific to mondoa (confirmed by multiple controls) and mlx knockdown produces similar defects, consistent with MondoA:Mlx heterodimer function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C60 present comprehensive loss-of-function data with multiple controls: dose-response (C52), MO specificity via GFP reporter (C53), p53-independence (C54-C55), mlx knockdown phenocopy (C56), and partial mRNA rescue (C58). The phenotype is well-documented with quantification (Figure 2A-D) and video evidence. The inference about heterodimer function (C57) is reasonable given the similar mlx phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The epiboly defect in mondoa morphants is not due to impaired energy metabolism or cell proliferation defects, as energy charge is normal, cell numbers are similar to controls, and individual cell migration speed is unaffected. Instead, cells show increased density due to impaired vegetal movement while continuing to divide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 systematically rule out alternative explanations using metabolite measurements (C61, Figure 3\u2014supplement 1A), automated cell counting via DSLM (C62, Figure 3A), cell density analysis (C63, Figure 3B-C), and cell tracking (C66-C67, Figure 3\u2014supplement 1E). The use of advanced imaging and automated quantification strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79"
+    ],
+    "result": "Loss of mondoa function specifically affects YSL epiboly while EVL epiboly continues normally. YSL-specific mondoa knockdown is sufficient to cause epiboly defects, and YSL nuclei show abnormal distribution and organization in morphants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C79 use confocal microscopy and tissue-specific MO injection (C76, Figure 4D) to demonstrate that the epiboly defect is YSL-specific. EVL integrity (C69, phalloidin staining) and progression (C68, Video 7) are maintained, while YSL shows clear abnormalities (C73-C74, Figure 4B). Controls for endocytosis and patterning (C78-C79) rule out other mechanisms. The YSL-specific injection is a strong experiment demonstrating tissue autonomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "RNA-seq analysis reveals that nsdhl, encoding a cholesterol biosynthesis enzyme, is the most downregulated gene upon mondoa knockdown, and both the sterol biosynthesis and upstream terpenoid backbone biosynthesis pathways are coordinately downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by RNA-seq data (Figure 5A, Supplementary file 2) with appropriate replication (n=3) and validation by RT-qPCR (Figure 5\u2014supplement 1D-E). Gene set enrichment analysis shows coordinated pathway downregulation. The RNA-seq quality metrics (PCA, heatmaps in Figure 5\u2014supplement 1A-B) indicate good data quality and reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "nsdhl expression is regulated by the Mondo pathway in a glucose-dependent manner, as shown by significant induction upon 2-DG treatment and MondoA/Mlx overexpression, with synergistic effects when combined, thereby linking glucose sensing to cholesterol synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 present RT-qPCR data (Figure 5C-D) showing significant nsdhl induction by glucose analog (p\u22640.05), MondoA/Mlx overexpression (p\u22640.001), and synergistic effects (p\u22640.001), with appropriate negative control (ef1a). The inference linking glucose sensing to cholesterol synthesis (C87-C88) is well-supported by the combined data. Statistical tests are appropriate with n=9 replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "nsdhl knockdown phenocopies mondoa knockdown, causing epiboly arrest at 50% epiboly. YSL-specific nsdhl knockdown is sufficient to cause epiboly defects, demonstrating that Nsdhl function in cholesterol biosynthesis in the YSL is essential for epiboly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 show that nsdhl loss-of-function produces the same phenotype as mondoa knockdown (Figure 5E-F), with ubiquitous expression including YSL (C90, Figure 5\u2014supplement 1F-G). YSL-specific injection (C91, Figure 5G) demonstrates tissue autonomy. The phenocopy and tissue-specific effects strongly support nsdhl as a key mediator of MondoA function in epiboly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Pregnenolone treatment partially rescues epiboly defects in both mondoa and nsdhl morphants at levels comparable to mondoa mRNA rescue, confirming pregnenolone functions downstream of the MondoA/Nsdhl pathway and acts via microtubule stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 present rescue experiments (Figure 5H-I) showing partial restoration of epiboly by pregnenolone treatment in both morphant types, with quantification via ntl WISH. The rescue level is comparable to mRNA rescue, supporting specificity. C96 cites prior literature establishing pregnenolone's role in microtubule stability during epiboly, providing mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "mondoa morphants show disrupted YSL microtubule organization with shortened microtubules forming stellar MTOC structures instead of normal root-like bundles. Pregnenolone treatment restores normal microtubule organization, demonstrating that MondoA functions in epiboly via pregnenolone-mediated stabilization of yolk microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 use \u03b1-tubulin immunostaining (Figure 6) to show clear microtubule defects in morphants (14/16 embryos affected, C100) and restoration by pregnenolone (6/9 embryos, C102). The imaging provides direct visualization of the cellular defect and its rescue. The conclusion (C104) integrating the pathway from MondoA through cholesterol/pregnenolone to microtubules is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A CRISPR-generated mondoa deletion mutant shows low penetrance epiboly defects in maternal-zygotic (MZ) embryos (5.09% affected) compared to zygotic mutants (0.71%) or wild-type (0.10%). MZ mutants are resistant to mondoa-mo, confirming MO specificity and indicating strong compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 present genetic validation with clear molecular characterization (C105, Figure 7A), quantified penetrance across multiple crosses (C108), and MO resistance experiments (C109-C110, Figure 7D). The low penetrance with MO resistance strongly suggests genetic compensation. The large sample sizes (n=5119 MZ embryos) provide statistical power for the penetrance estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "RNA-seq of MZmondoa mutants reveals that nsdhl expression and the sterol biosynthesis pathway are compensated to wild-type levels in both affected and unaffected mutants. However, only unaffected mutants show coordinated upregulation of the terpenoid backbone biosynthesis pathway (p=0.012), which is absent in affected mutants (p=0.178), identifying this as the critical compensation response for normal epiboly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 use RNA-seq with appropriate replication (n=3, 8-10 embryos each) to identify differential compensation between affected and unaffected MZ mutants. Gene set enrichment analysis (Figure 7F-G, Figure 7\u2014supplement 1) shows the key difference is terpenoid pathway upregulation. The statistical significance and pathway-level analysis support the conclusion that coordinated terpenoid pathway upregulation is specifically required for phenotype rescue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Steroid hormone biosynthesis genes show coordinated upregulation in both unaffected (p=0.033) and affected (p=0.017) MZ mutants, with even higher levels in affected mutants (p=0.049 vs unaffected). However, this upregulation is insufficient to rescue epiboly in the absence of terpenoid pathway compensation, indicating that affected mutants show inadequate rather than absent compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 demonstrate that steroid pathway upregulation occurs in both mutant phenotypes but is insufficient alone (Figure 7F, Figure 7\u2014supplement 1C). The comparison between affected and unaffected mutants with statistical testing supports the conclusion that compensation fails not due to absence but inadequacy. This nuanced interpretation is well-supported by the pathway-level gene expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Combined MO-mediated and genetic loss-of-function studies establish MondoA as a key developmental regulator of epiboly progression through regulation of cholesterol/steroidogenesis pathway genes important for yolk cell microtubule function, representing the first demonstration of conserved Mondo signaling in zebrafish and its link to early vertebrate embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 appropriately synthesize the major findings from both morpholino and genetic approaches. The novelty claims (C130-C131) are reasonable given the literature review showing prior Mondo pathway research focused on adult animals (C6) and non-vertebrate developmental studies (C132-C133). The integration of glucose sensing, cholesterol metabolism, and developmental morphogenesis represents a significant advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The role of MondoA in cholesterol/steroid metabolism may be conserved across vertebrates, as suggested by studies showing sterol biosynthesis gene upregulation in MondoA-deficient HeLa cells and ChREBP knockout mice, though these were under disease conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C137 appropriately cite relevant mammalian studies (Wilde et al., 2019; Zhang et al., 2017) but acknowledge these were under specific disease conditions (acidosis, high fructose diet). C134 and C137 are explicitly speculative. While the zebrafish data are strong, direct evidence for conserved developmental function in mammals is lacking. The speculation is reasonable but requires experimental validation in mammalian development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The genetic compensation observed in MZmondoa mutants may involve nonsense-mediated decay triggering transcriptional upregulation, requires concerted changes across the entire cholesterol/steroid biosynthesis pathway, and could be influenced by random variation in maternal deposition or protein expression. Understanding these mechanisms may inform therapeutic approaches for incomplete penetrance in human genetic diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C142 discuss potential mechanisms of compensation with appropriate citations (El-Brolosy et al., 2019; Cooper et al., 2013). However, C138's mechanism is not directly tested, C139 is an inference from the data, and C140 is speculation. C141-C142 appropriately contextualize the findings for human disease but are speculative about therapeutic applications. These represent reasonable hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Potential conservation of MondoA developmental functions across vertebrates is suggested by analogies between zebrafish YSL and mammalian placental trophoblast cells, including expression of steroidogenic enzymes in both tissues and similar requirements for factors like Slc3a2 in epiboly and trophoblast function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C147 draw interesting parallels between zebrafish and mammalian extraembryonic tissues with appropriate citations (Hsu et al., 2006, 2009; Arensburg et al., 1999; Kane and Adams, 2002; Takesono et al., 2012; Kabir-Salmani et al., 2008; Kudo et al., 2003). However, C144 and C147 are explicitly speculative. While the analogies are compelling, direct evidence for MondoA function in mammalian placental development is lacking and would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Human NSDHL mutations cause CHILD syndrome (lethal in males), and mouse Nsdhl mutations cause embryonic lethality or placental defects. Given the analogous functions of YSL and placenta, Nsdhl may contribute to mammalian placental development through microtubule regulation, as microtubule stability plays a role in trophoblast differentiation and implantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148-C153 appropriately cite human and mouse genetic studies (Herman, 2000; Bornholdt et al., 2005; Caldas et al., 2005; Liu et al., 1999; Cunningham et al., 2010) establishing Nsdhl's importance in mammalian development. C154 is explicitly speculative about the mechanism, and C155 cites in vitro studies (Bates and Kidder, 1984; Douglas and King, 1993) supporting a role for microtubules. While the speculation is well-reasoned, direct evidence for Nsdhl regulating placental microtubules is lacking.",
+    "result_type": "MINOR"
+  }
+]

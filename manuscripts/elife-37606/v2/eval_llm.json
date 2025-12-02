@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Flagella ablation significantly reduced the proportion of moths that took off and fed from the flower, but this behavior was restored to control levels following flagella reattachment. In bright light, 60% of ablated moths still approached and fed, while only 36% did so in dim light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are directly supported by data in Table 1 and statistical analysis in Supplementary file 1. The experimental design includes appropriate controls (intact, ablated, reattached) and the statistical analysis accounts for repeated measures using multinomial regression with individual identity as a random factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Moths with ablated flagella showed significantly larger positional jitter (both thoracic and abdominal) during stationary hovering, particularly at frequencies between 0.7-11 Hz. Reattachment of flagella restored flight performance close to control levels, with no significant differences between control and reattached conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C56 are well-supported by data in Figure 2 and statistical analyses in Supplementary files 2-3. The frequency-specific impairments in ablated moths and restoration in reattached moths provide strong evidence for the role of antennal mechanosensation in hovering stability. The use of linear mixed-effects models with appropriate controls strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "During flower tracking with the sum-of-sines stimulus, ablated moths showed significantly increased tracking errors at frequencies above 2 Hz, with overshooting and phase lag. Below 2 Hz, all antennal conditions tracked similarly, suggesting vision provides sufficient feedback for slower maneuvers while antennal mechanosensation is crucial for fast turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C83 are supported by data in Figure 3 and statistical analysis in Supplementary file 4. The frequency-dependent impairment specifically at higher frequencies (>2 Hz) in ablated moths, with preserved performance at lower frequencies, provides strong evidence for complementary roles of vision and mechanosensation. However, the authors acknowledge limitations in statistical testing of complex-valued tracking error data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "With the chirp stimulus, ablated moths aborted flower tracking at a median frequency of 4.4 Hz, significantly lower than control and reattached moths (which tracked until maximum frequency). This frequency corresponds to the range where tracking errors were greatest with the sum-of-sines stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 are supported by data in Figure 3C-D and statistical analysis in Supplementary file 5. The consistency between the chirp abortion frequency and sum-of-sines tracking error frequency range strengthens the conclusion that antennal feedback is crucial for fast maneuvers. The use of Friedman tests for non-parametric paired data is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Dim light (30 lux) caused larger tracking errors at high frequencies for all antennal conditions, but there was no specific interaction between light intensity and antennal condition. Visual feedback did not compensate for the loss of antennal mechanosensory feedback even under bright conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 are supported by data in Figure 4 showing similar light intensity effects across all antennal conditions. The lack of interaction between light intensity and antennal condition (Supplementary files 6-8) provides evidence against compensatory mechanisms. However, some claims (C91, C92) involve functional inferences that, while reasonable, go beyond direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C135",
+      "C139",
+      "C140",
+      "C141",
+      "C143"
+    ],
+    "result": "Flagellar reattachment improved flight performance by reloading Johnston's organs, but did not fully restore performance to control levels. Reattached flagella dried out and lost >50% of their weight, and mechanosensors along the flagellum remained inactive after nerve severing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C143 are supported by experimental data showing partial restoration of function and measurements of flagellar weight loss (C109). The incomplete restoration is evident in statistical differences between reattached and control conditions in some experiments (C68, C139). However, C141 and C143 involve speculation about mechanisms that were not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C132",
+      "C133"
+    ],
+    "result": "In M. stellatarum, antennal mechanosensory feedback is required for fast flight maneuvers and rapid deviations from hovering position, while vision drives control of slower maneuvers. This shows striking similarity to the interaction between halteres and vision in Dipteran flight control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102, C132-C133 represent the main conclusions of the study, synthesizing results from multiple experiments. These are well-supported by the collective experimental evidence showing frequency-dependent roles of mechanosensation and vision. The comparison to Dipteran flight control (C102) is supported by citations and the parallel findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Control moths showed remarkably fast tracking responses (30-35 ms delays at 6.5-8.9 Hz), faster than expected for purely visual responses. While proboscis mechanoreception or mechanical coupling might contribute, the sensorimotor component is evident from changes across antennal conditions and light intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C121 involve complex interpretation of response latencies. While the phase lag data (C112-C113) is supported by Figure 3 supplements, the interpretation that responses are too fast for vision alone (C115) relies on comparisons to other species (C114). Alternative explanations involving proboscis mechanoreception (C116-C117) or mechanical coupling (C118) are discussed but not definitively resolved. The conclusion (C121) is reasonable but involves inference beyond direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Antennal mechanosensory feedback specifically mediates fast flight maneuvers but not slow ones, and there are no compensatory interactions between antennal and visual feedback in M. stellatarum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 represent key findings directly supported by the experimental data showing frequency-dependent effects (Figures 2-3) and lack of interaction between light intensity and antennal condition (Figure 4). These claims synthesize multiple lines of evidence from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study used wild-caught M. stellatarum from France, with a within-subjects design testing all individuals in three antennal conditions (control, ablated, reattached). Flagella ablation retained 5-10 annuli to leave Johnston's organs intact but unloaded. Morphometric measurements showed flagella weight loss upon drying and body mass averages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C111 describe methodological details that are clearly documented in the Materials and Methods section. The within-subjects design (C105-C106) is appropriate for controlling individual variation. Morphometric data (C109-C111) are supported by measurements with appropriate statistical tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "The introduction establishes background knowledge about insect flight control, including the roles of vision and mechanosensation, the function of halteres in Diptera, visual adaptations in sphingids, and previous work on antennal mechanosensation in hawkmoths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 represent background information supported by appropriate citations to established literature. These claims provide context for the current study and are generally well-supported by the cited references. However, these are not novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C136",
+      "C137",
+      "C138",
+      "C147"
+    ],
+    "result": "The findings parallel observations in Dipteran flight control where vision and haltere mechanosensation operate in complementary frequency ranges without compensation. Similar multimodal integration has been observed in other insect groups including honeybees and other hawkmoth species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C147 place the current findings in the context of prior work on other insect species. These comparisons are supported by appropriate citations and strengthen the interpretation of the results. However, these are contextual claims rather than novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The lack of compensation between visual and mechanosensory systems could be explained by shared descending pathways operating in different frequency ranges, with visual input being too slow to compensate for loss of antennal feedback. This is consistent with physiological data showing Johnston's organs respond up to 100 Hz while visual neurons cease responding above 20 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C130 propose mechanistic explanations for the lack of compensation, supported by citations to physiological studies (C96-C99). The hypothesis (C129-C130) is reasonable given the experimental findings and physiological constraints, though it represents inference rather than direct experimental evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63"
+    ],
+    "result": "Two movement stimuli were used: a sum-of-sines stimulus (0.5-8.9 Hz with amplitude-adjusted constant velocity) that moths could track completely, and a chirp stimulus (0-7.3 Hz with constant amplitude and increasing velocity) designed to test maneuverability limits. Control moth performance was consistent with previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 describe the experimental stimuli and validation of the approach. The stimulus design is clearly documented and appropriate for the research questions. The consistency with previous studies (C63) validates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C145",
+      "C146"
+    ],
+    "result": "Hovering is dynamically unstable and requires continual sensory feedback. At slower movement frequencies, all antennal conditions performed similarly, suggesting other sensory modalities (particularly vision) can provide sufficient feedback. At frequencies above 2 Hz, ablated moths performed significantly worse, indicating antennal feedback becomes crucial for faster maneuvers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C146 synthesize findings about the frequency-dependent roles of different sensory modalities. These are supported by the experimental data showing preserved low-frequency performance but impaired high-frequency performance in ablated moths. The inferences about sensory modality contributions (C85, C145) are reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C134"
+    ],
+    "result": "Antennal mechanosensation represents one strategy for flying insects to obtain rapid sensory feedback about self-motion changes crucial for flight control. These findings may be representative for many other non-Dipteran insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131 and C134 represent broader conclusions about the generality of the findings. C131 is well-supported by the experimental evidence. C134 involves speculation about applicability to other insects, which is reasonable given the phylogenetic distribution of Johnston's organs but goes beyond the direct evidence from M. stellatarum.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C142"
+    ],
+    "result": "There are mechanosensors along the length of the flagellum which may be important for flight control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C142 states established anatomical knowledge about flagellar mechanosensors. While this is accurate background information, it was not directly investigated in this study and represents a potential confounding factor in the reattachment experiments.",
+    "result_type": "MINOR"
+  }
+]

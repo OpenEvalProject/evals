@@ -1,0 +1,416 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C7",
+      "C8",
+      "C50",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62",
+      "C63"
+    ],
+    "result": "H3K9me3 methyltransferases SET-25 and SET-32 are required for heritable silencing of the foreign gene gfp but are dispensable for silencing of the endogenous gene oma-1, demonstrating gene-specific requirements for H3K9me3 in RNAi inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide experimental evidence with statistical significance (p<0.01) showing differential inheritance patterns in methyltransferase mutants for gfp versus oma-1. The data in Figure 1 demonstrates that met-2;set-25;set-32 triple mutants and set-32 single mutants inherit anti-oma-1 RNAi but show defective anti-gfp RNAi inheritance. Multiple independent assays and mutant backgrounds converge on this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "RNAi-induced H3K9me3 levels are similarly reduced on both gfp and oma-1 loci in met-2;set-25;set-32 triple mutants, indicating that differential H3K9me3 induction cannot explain the gene-specific requirements for methyltransferases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by ChIP-qPCR data in Figure 2A with statistical significance (p<0.001). The fold-change in RNAi-induced H3K9me3 is comparable between gfp and oma-1, ruling out differential H3K9me3 deposition as the explanation for differential inheritance requirements. However, baseline H3K9me3 levels differ between genes (C65-C66), which may be relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "SET-32 acts upstream of MET-2 and SET-25 in promoting RNAi inheritance, as met-2;set-32 double mutants show defective gfp silencing comparable to set-32 single mutants, unlike met-2;set-25 double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by genetic epistasis data in Figure 1\u2014figure supplement 2A showing that met-2;set-32 mutants phenocopy set-32 single mutants rather than showing compensation. This epistatic relationship, combined with C74's citation to independent work on SET-32's role in establishment, supports the hierarchical model. The inference about upstream action (C73) is reasonable given the genetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C80",
+      "C84",
+      "C85"
+    ],
+    "result": "RNAi silencing of endogenous genes sup-35 and fog-2 is not inherited transgenerationally beyond F1, leaving oma-1 as the only available endogenous gene target for studying transgenerational RNAi inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C84, and C85 are supported by experimental data in Figure 1\u2014figure supplement 3A-B showing lack of inheritance beyond F1 for both sup-35 and fog-2. The conclusion that oma-1 remains the only transgenerational endogenous target is appropriately cautious, acknowledging the limitations of available tools rather than claiming exhaustive testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C51",
+      "C91",
+      "C92",
+      "C96",
+      "C99",
+      "C112"
+    ],
+    "result": "Genome-wide analysis reveals that endo-siRNAs dependent on SET-25 and SET-32 target protein-coding genes that are highly marked by H3K9me3, with 151 genes losing endo-siRNAs in set-25 mutants and 337 genes in set-32 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 and C96 are supported by RNA-seq data with appropriate statistical thresholds (adj.p<0.1 for SET-25, fold-change>2 for SET-32) and integration with published H3K9me3 ChIP-seq data. Figure 3A-B shows clear correlation between endo-siRNA loss and H3K9me3 marking. The inference that methyltransferases support endo-siRNA biogenesis (C99, C112) is reasonable but remains correlative rather than mechanistic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C104",
+      "C107",
+      "C108"
+    ],
+    "result": "SET-25- and SET-32-dependent endo-siRNAs show modest germline enrichment and are strongly enriched for association with HRDE-1, WAGO-1, and ERGO-1 argonautes, but depleted for CSR-1-associated small RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 and C104-C108 are supported by enrichment analyses shown in Figures 3C-D with statistical significance. The enrichment for silencing-associated argonautes (HRDE-1, WAGO-1, ERGO-1) and depletion for expression-supporting CSR-1 is consistent across both SET-25 and SET-32 datasets. The modest germline enrichment (C100) is appropriately characterized as significant but not exclusive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Genes targeted by SET-25- and SET-32-dependent endo-siRNAs exhibit moderately reduced PATC density (~9-13%) compared to all protein-coding genes, but this feature is unlikely sufficient to distinguish between oma-1 and gfp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114 and C116 are supported by statistical analysis of PATC density in Figure 4A (p<0.003). The modest magnitude of the difference is appropriately acknowledged. Claim C117's inference that PATC density is insufficient to explain oma-1/gfp differences is supported by data showing oma-1 has very low PATC density (Figure 4\u2014figure supplement 1B), yet doesn't require SET-25/32 for silencing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C131",
+      "C132",
+      "C133",
+      "C135",
+      "C138",
+      "C139"
+    ],
+    "result": "Genes targeted by SET-25- and SET-32-dependent endo-siRNAs are significantly enriched for newly evolved genes (2.57-fold, p<0.0001) that lack orthologs outside C. elegans, and this enrichment persists even after excluding genes targeted by other endo-siRNA pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by enrichment analysis in Figure 4B with strong statistical significance (p<0.0001). The definition of newly evolved genes (C132) is clear and appropriate. Critically, C138 shows the enrichment remains significant even after excluding overlap with HRDE-1, ERGO-1, WAGO-1, and Mutator pathways (fold enrichment 2.97 and 1.89, p<0.001), supporting C139's conclusion that this is not simply due to general pathway preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C130"
+    ],
+    "result": "Genes targeted by SET-25-dependent (but not SET-32-dependent) endo-siRNAs have fewer introns and show endo-siRNA changes that mirror those in rnp-2 splicing factor mutants, suggesting splicing may contribute to distinguishing SET-25 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 are supported by data in Figures 4C-D showing significant correlation between SET-25 (but not SET-32) targets and rnp-2 mutant changes, and fewer introns in SET-25 targets (p=0.0047). The difference doesn't derive from gene length (C126, p=0.8673). The inference (C130) is appropriately cautious, stating splicing \"may be one of the factors\" rather than claiming it's the sole determinant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Newly evolved genes are marked by higher H3K9me3 levels genome-wide, and gfp (a foreign gene) has higher baseline H3K9me3 than the conserved oma-1 gene, suggesting H3K9me3 may serve as a mark distinguishing 'new' or 'foreign' genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C141 are supported by H3K9me3 ChIP-seq analysis in Figures 4\u2014figure supplement 3 and Figure 2B (p<0.004). The connection between genome-wide patterns and the specific gfp/oma-1 example (C142) is logical. However, C143's inference about H3K9me3 as a 'mark' for distinguishing new genes is reasonable but remains correlative\u2014the mechanism by which genes are initially marked is not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C134",
+      "C135"
+    ],
+    "result": "SET-25-dependent and SET-32-dependent endo-siRNAs target largely non-overlapping gene sets (only 25 of 465 genes overlap), yet the characteristics of targeted genes are very similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C135 are supported by Venn diagram analysis showing minimal overlap between the two gene sets, while both show similar enrichment for newly evolved genes with low PATC density. This observation is important for understanding that SET-25 and SET-32 act on different targets but recognize similar gene features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The authors successfully replicated Kalinava et al.'s finding that met-2;set-25;set-32 triple mutants inherit anti-oma-1 RNAi responses using a different inheritance assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by experimental data in Figure 1A-B showing successful replication using a temperature-sensitive oma-1 allele assay rather than qPCR. This replication with an independent method strengthens confidence in the finding and validates the authors' experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Weak anti-gfp RNAi inheritance responses lasting until F3 can be detected in met-2;set-25;set-32 and set-32 mutants despite strong defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by data in Figure 1\u2014figure supplement 1 with statistical significance (p<0.0001 in F3). This observation is important because it shows that H3K9me3 methyltransferases enhance but are not absolutely required for inheritance, consistent with the nuanced view that these factors modulate rather than determine inheritance capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "met-2;set-25 double mutants display a modest but robust H3K9me3 footprint following RNAi, unlike set-25 single mutants, leading to the hypothesis that an additional methyltransferase compensates for SET-25 absence in the met-2 background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 are supported by citations to prior work. However, C70 is explicitly labeled as a hypothesis and is speculative. While the hypothesis is reasonable given the genetic data, no direct evidence for the identity or activation of a compensatory methyltransferase is provided. The subsequent epistasis experiments with SET-32 (C71-C73) suggest SET-32 may be this factor, but this connection is not explicitly made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "SET-25-dependent endo-siRNA targets show significant enrichment for genes upregulated at the mRNA level in set-25 mutants (1.93-fold, p=0.006), suggesting these endo-siRNAs actively silence their target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by integration of RNA-seq data with statistical significance. The inference (C95) that endo-siRNAs silence targets is reasonable given the correlation between loss of endo-siRNAs and increased mRNA levels. However, this remains correlative evidence rather than direct demonstration of silencing activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Genes with reduced endo-siRNA levels in set-32 mutants show correspondingly lower H3K9me3 levels in set-32 mutants, while genes with increased endo-siRNA levels are not significantly marked by H3K9me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by H3K9me3 ChIP-seq analysis in Figure 3\u2014figure supplement 1A-B. This bidirectional correlation (reduced siRNAs correlate with reduced H3K9me3, increased siRNAs correlate with low H3K9me3) strengthens the argument for a functional relationship between the methyltransferases and endo-siRNA maintenance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Genes targeted by SET-25- and SET-32-dependent endo-siRNAs are enriched for intron-targeting small RNA targets, but no small RNAs align to gfp introns and no significant differences in splicing motif divergence scores were found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129 are supported by enrichment analysis (Figure 4\u2014figure supplement 2C-D) and examination of gfp-specific data (Figure 4\u2014figure supplement 2E). The negative results (C128-C129) are important for ruling out certain mechanisms and appropriately reported. This suggests intron targeting may be relevant for some but not all SET-25/32-dependent genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Some targets of HRDE-1-bound endo-siRNAs are expressed in the germline, explaining the concurrent enrichment for both germline-expressed genes and HRDE-1 targets among SET-25/32-dependent endo-siRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by Venn diagram analysis in Figure 3\u2014figure supplement 2A showing overlap between HRDE-1 targets and germline-expressed genes. This observation resolves an apparent paradox (HRDE-1 typically silences foreign elements, yet targets include germline genes) and provides context for the enrichment patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "No significant enrichment for genes whose introns are bound by the helicase EMB-4 was detected among SET-25- or SET-32-dependent endo-siRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by enrichment analysis with reported statistics (fold change=1.07 and 0.79, p=0.26 and 0.002). This negative result is important because EMB-4 preferentially binds introns of CSR-1 targets, and the lack of enrichment is consistent with the depletion of CSR-1 targets among SET-25/32-dependent endo-siRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The enrichment of newly evolved genes among SET-25- and SET-32-dependent endo-siRNAs is not simply due to general preferences of endo-siRNA pathways, as it persists after excluding genes targeted by other pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 are supported by sequential enrichment analyses in Figure 4\u2014figure supplement 3 and the main text. The observation that ERGO-1 and HRDE-1 pathways generally target newly evolved genes (C137) could confound the interpretation, but C138 shows the enrichment remains significant even after excluding these overlaps, supporting C139's conclusion about specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C52",
+      "C53",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C87",
+      "C102",
+      "C103",
+      "C105",
+      "C109",
+      "C110",
+      "C113",
+      "C119",
+      "C120",
+      "C121",
+      "C146",
+      "C147",
+      "C148",
+      "C150"
+    ],
+    "result": "Background context on RNAi inheritance, H3K9me3 methyltransferases, small RNA pathways, and prior findings in C. elegans and other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C11-C48, C52-C53, C75-C82, C87, C102-C103, C105, C109-C110, C113, C119-C121, C146-C148, C150) provide essential background and context, all supported by appropriate citations to prior work. They establish the foundation for understanding the current study's contributions and are accurately represented based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C86"
+    ],
+    "result": "SET-25 and SET-32 are the main H3K9me3 methyltransferases in C. elegans, and many endo-siRNAs targeting endogenous genes are inherited transgenerationally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C86 are supported by citations to established work (Kalinava et al., 2017; Spracklin et al., 2017; Towbin et al., 2012) and represent well-accepted knowledge in the field. These facts are foundational for the experimental design and interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C16",
+      "C49",
+      "C88",
+      "C136",
+      "C144",
+      "C152",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Speculative claims about adaptive functions, mechanisms, and future directions regarding how H3K9me3 and small RNAs distinguish foreign from endogenous genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C16, C49, C88, C136, C144, C152, C154-C156) are explicitly speculative or hypothetical, involving reasoning about adaptive functions, unknown mechanisms, or potential explanations. While they are reasonable interpretations of the data, they represent hypotheses rather than demonstrated findings. The authors appropriately use cautious language (\"may,\" \"could,\" \"hypothesized\") for these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C149"
+    ],
+    "result": "When screening for genes affecting transgenerational inheritance, researchers must acknowledge that heritable silencing of different targets requires different chromatin modifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C149 is a methodological recommendation based on the demonstrated gene-specific requirements for methyltransferases (C50, C63). This is a valid inference from the experimental results and represents an important practical implication for future studies in the field.",
+    "result_type": "MINOR"
+  }
+]

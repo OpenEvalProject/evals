@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "A diallel panel of 3025 viable yeast hybrids was generated from pairwise crosses between 55 genetically diverse, diploid, homozygous natural isolates from varied ecological and geographical origins. The panel was phenotyped across 49 growth conditions, yielding 148,225 hybrid/trait combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 describe the experimental design and panel construction with clear methodological details. The viability of all hybrids (C2), the diversity criteria (C5), and the phenotyping scope (C3-C4) are well-documented. The selection criteria and origins (C6-C7) are supported by referenced figures and supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C94"
+    ],
+    "result": "Heritability analysis using Griffing's diallel model revealed that additive effects explain on average 55% of phenotypic variance (h\u00b2=0.55), while non-additive effects account for approximately one-third (mean H\u00b2-h\u00b2=0.29). Broad-sense heritability ranged from 0.64 to 0.98, and narrow-sense heritability from 0.12 to 0.86 across conditions. The model showed near-perfect correlation (r=0.995) between expected and observed values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C20 and C94 collectively demonstrate robust heritability estimates using an established diallel model. The near-perfect model fit (C94) validates the approach. The reported ranges and means for H\u00b2 and h\u00b2 are internally consistent, and the correlation between broad- and narrow-sense heritability (C16) is statistically significant. The interpretation about additive effects (C19-C20) is appropriately supported by citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Mode of inheritance analysis revealed that 32 of 49 conditions showed predominantly additive effects, while 17 conditions displayed non-additive patterns including dominance. Overdominance (11.6%) and underdominance (10.1%) were more common than previously reported. Dominance was identified as a major driver of non-additive effects, though epistasis may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C32 describe a systematic classification of inheritance modes with clear quantitative results. The methodology accounts for phenotypic separation limitations (C21-C22), and the frequencies of different modes are well-documented (C23-C30). The conclusion about dominance (C31) is directly supported by the data, while the speculation about epistasis (C32) is appropriately qualified as uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "GWAS on a subset of 595 hybrids from 34 unrelated isolates identified 1,723 significantly associated SNPs across 31,632 polymorphic sites. Notably, 16.3% of significant SNPs were low-frequency variants (MAF<0.05) in the original population, with the diallel design increasing their MAF to detectable levels (up to 0.32). This enrichment was consistent across both additive and overdominant models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 describe the GWAS methodology and key findings. The subset selection to avoid population structure (C33) is methodologically sound. The enrichment of low-frequency variants among significant SNPs (C39-C41) is a key finding supported by clear quantitative data. The conclusion that low-frequency variants play a significant role (C42) is justified by the 4-fold enrichment (4% input vs 16.3% significant).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Detected SNPs explained 15-32% of phenotypic variance (median 20%). Low-frequency variants explained similar proportions of variance (median 20.2%) as common variants (median 19.6%), and had comparable effect sizes (mean 0.23 sd vs 0.25 sd). Rare variants explained higher variance on average than other detected SNPs, a trend robust across both encoding models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 quantify the contribution of variants to phenotypic variance. The similar variance explained and effect sizes between low-frequency and common variants (C44, C47) is a key finding. However, the interpretation requires caution: variance explained depends on allele frequency in the studied population (the diallel panel), not the original population, which the authors acknowledge in the Discussion. The data support the claims within the diallel context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The 1,723 associated SNPs were distributed across 546 genes, with 62.5% in coding regions. These genes showed significant enrichment for 'response to stimulus' and 'response to stress' (p=5.39\u00d710\u207b\u2075). Overlap with previously identified QTGs was modest: 19 genes matched a curated list of 145 QTGs, and 22 overlapped with a recent large-scale survey.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 characterize the biological relevance of associated SNPs. The proportion in coding regions (C48) is slightly lower than the genome-wide coding proportion (C49), suggesting no strong bias. The GO enrichment (C53) is statistically significant and biologically coherent with the tested conditions. The modest overlap with known QTGs (C51-C52) is honestly reported and may reflect the focus on low-frequency variants or different genetic backgrounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A low-frequency variant in SGD1 (MAF 2.5% in population, 9% in diallel) was validated using CRISPR-Cas9 allele replacement. The minor allele, containing a synonymous and a non-synonymous mutation (Glu\u2192Lys), conferred a significant phenotypic advantage of 0.2 growth ratio units in 6-azauracil compared to the major allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 describe experimental validation of a specific low-frequency variant. The GWAS detection (C54), allele frequency increase in the diallel (C55), and molecular characterization (C58) are well-documented. The CRISPR validation (C60-C61) provides strong causal evidence for the phenotypic effect. The use of both mating types strengthens the validation. This is a clear example of a functional low-frequency variant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C67",
+      "C68",
+      "C74",
+      "C78"
+    ],
+    "result": "The study demonstrates that low-frequency variants play a decisive role in phenotypic variation at population scale. While individual low-frequency variants have effect sizes similar to common variants, they are enriched among significantly associated SNPs (16.3% vs 4% input), and collectively may explain substantial phenotypic variance despite low individual contributions in large populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68, C74, and C78 synthesize the main conclusions. The enrichment of low-frequency variants (C63, C74) is well-supported. The interpretation about effect sizes and variance explained (C64, C67) correctly distinguishes between individual and collective contributions. The speculation that low-frequency variants collectively may explain more variance than common variants (C68) is appropriately qualified as uncertain and represents a hypothesis for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The findings are contextualized within the broader literature on missing heritability. Previous studies in humans and yeast have shown that low-frequency variants contribute to complex traits, though prior yeast QTN mapping used closely related genetic backgrounds (30% laboratory, 41% wine cluster) which may have introduced ascertainment bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C69-C73, C80-C83 appropriately cite and interpret prior work. The citations to human height studies (C65-C66, C81-C82) and yeast QTN studies (C70-C73) are relevant. The acknowledgment of ascertainment bias in prior yeast studies (C73) and the limited genetic diversity of previous mapping populations (C72) appropriately contextualizes the current work's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The diallel design provides intrinsic power to evaluate additive versus non-additive genetic components. Dominance at the single-locus level was shown to contribute to phenotypic variation, though more complex inter-loci interactions (epistasis) may also be involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 discuss the advantages and limitations of the diallel approach. The power to partition additive and non-additive effects (C75) is a well-established property of diallel designs. The conclusion about dominance (C76) is supported by the mode of inheritance analysis. The acknowledgment that epistasis may be involved (C77) is appropriately cautious given that the mode of inheritance classification reflects net phenotypic outcomes rather than locus-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Background context establishes that low-frequency variants (MAF<0.05) are prevalent in populations, known to affect Mendelian and complex traits, but difficult to detect in GWAS due to statistical limitations. S. cerevisiae is an appropriate model with high genetic diversity (\u03c0=3\u00d710\u207b\u00b3), 1,011 sequenced isolates, and prior GWAS showing that CNVs and SNPs together explain only ~17% of phenotypic variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 provide background knowledge and cite appropriate literature. The definition of low-frequency variants (C84), their role in disease (C85-C86), and GWAS limitations (C87) are standard knowledge appropriately cited. The characterization of S. cerevisiae diversity (C88-C89) and prior GWAS findings (C90-C93) correctly cite the Peter et al. 2018 study and establish the motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Mating type effects were assessed by comparing MATa and MAT\u03b1 parental strains across all conditions. The overall correlation was 0.967 (p<1e-324), with an average per-strain correlation of 0.976, indicating no significant mating type-specific fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 document an important control experiment. The high correlation between mating types (C95-C96) and the conclusion of no mating type specificity (C97) are well-supported by the data. This validates that observed phenotypic differences are due to genetic background rather than mating type, which is essential for interpreting the diallel results.",
+    "result_type": "MINOR"
+  }
+]

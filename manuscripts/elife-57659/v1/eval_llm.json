@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "De novo designed trimers were computationally generated using the RPX docking method to match viral glycoprotein C-termini, with 23 designs selected for characterization. Nine of 22 soluble designs formed correct trimers by SEC-MALS, and two designs (1na0C3_2 and 3ltjC3_1v2) were crystallographically validated with backbone r.m.s.d. values of 1.4 \u00c5 and 0.8 \u00c5, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 and C58-C63 provide comprehensive computational and experimental validation of the trimer design approach. The crystallographic structures with sub-angstrom to ~1.4 \u00c5 r.m.s.d. values (C17, C18) demonstrate high accuracy of the computational design, and SEC-MALS data (C15, C16) confirms correct oligomerization states. The success rate (9/22 forming correct trimers) is reasonable for de novo protein design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C64",
+      "C65"
+    ],
+    "result": "Two-component nanoparticles with tetrahedral, octahedral, and icosahedral symmetries were designed by incorporating validated trimers. Of 53 designs, 24 showed co-assembly by SDS-PAGE, and 5 designs (T33_dn2, T33_dn5, T33_dn10, O43_dn18, I53_dn5) were validated as monodisperse particles by SEC-MALS with SAXS profiles matching computational models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 demonstrate successful nanoparticle design with appropriate experimental validation. The SAXS agreement with design models (C23) provides strong structural validation. The success rate (5/53 fully validated) is modest but acceptable for complex multi-component assemblies. The inclusion of natural pentamers (C64) to increase icosahedral success is a reasonable design strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "NS-EM and cryo-EM structural characterization confirmed that all five nanoparticle designs assemble as predicted. Cryo-EM structures of T33_dn10, O43_dn18, and I53_dn5 were determined at 3.9, 4.5, and 5.3 \u00c5 resolution with backbone r.m.s.d. values of 0.65, 0.98, and 1.3 \u00c5, respectively, showing excellent agreement with design models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 and C68-C72 provide robust structural validation through multiple EM techniques. The cryo-EM resolutions are appropriate for the particle sizes, and the low r.m.s.d. values (0.65-1.3 \u00c5) demonstrate high design accuracy. The observation of some heterogeneity in I53_dn5 (C29, C69) is appropriately noted and does not undermine the overall structural validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C66",
+      "C67"
+    ],
+    "result": "The I53_dn5 nanoparticle components can be separately produced and assembled in vitro, with assembly completing within minutes after equimolar mixing. This capability provides manufacturing flexibility and compositional control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 demonstrate in vitro assembly capability with SEC data showing rapid assembly. The selection rationale (C66) based on high valency and yield is appropriate. The cited advantage for compositional control (C67) is supported by a reference to parallel work, though direct demonstration in this manuscript would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C73",
+      "C74"
+    ],
+    "result": "BG505 SOSIP-displaying nanoparticles (T33_dn2, T33_dn10, I53_dn5) were characterized by NS-EM, showing antigenically intact trimers in predicted geometries. The nanoparticle cores remained structurally unchanged upon antigen fusion, though some flexibility was observed between antigens and scaffolds, and I53_dn5 showed evidence of partial disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 and C73-C74 demonstrate successful antigen display with appropriate caveats about flexibility and stability. The NS-EM data supports structural integrity of the cores (C33, C74), while honestly reporting limitations (C32, C34). The citation to a parallel stability study (C35) appropriately acknowledges the I53_dn5 stability issues without overstating the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "DS-Cav1\u2013I53_dn5 nanoparticles bind RSV F-specific antibodies (D25, Motavizumab, AM14) similarly to soluble DS-Cav1 trimer, indicating proper prefusion conformation presentation on the nanoparticle surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 demonstrate antigenic integrity through ELISA with conformation-specific antibodies. The use of multiple antibodies targeting different epitopes (C78-C80) provides comprehensive validation. The conclusion that F protein is in prefusion conformation (C37) is well-supported by the antibody binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C76",
+      "C77",
+      "C81"
+    ],
+    "result": "HA\u2013I53_dn5 nanoparticles and trimers present head and stem regions with wild-type-like antigenicity as demonstrated by biolayer interferometry. The absence of an engineered linker in HA\u2013I53_dn5 resulted in more clearly defined spike density compared to DS-Cav1\u2013I53_dn5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C81 demonstrate proper HA antigenicity through biolayer interferometry with head- and stem-specific antibodies. The comparison of linker effects (C76-C77) provides useful design insights, though the interpretation about linker flexibility (C75) is somewhat speculative. Overall, the antigenic validation is solid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "SPR experiments comparing BG505 SOSIP\u2013T33_dn2 (tetrahedral, 4 trimers) and BG505 SOSIP\u2013I53-50 (icosahedral, 20 trimers) showed that apical epitopes were equally accessible on both scaffolds, while base-proximate epitopes (VRC34, PGT151) showed ~3-fold higher accessibility on T33_dn2. The most base-proximal epitope (12N) was completely inaccessible on T33_dn2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 and C82-C86 provide systematic epitope accessibility analysis with appropriate controls (C83). The geometric rationale (C41) is sound, and the quantitative SPR data (C42-C45, C84) clearly demonstrates differential accessibility. The interpretation of steric hindrance (C86) is well-supported by the data and geometric considerations. This represents a key finding for rational vaccine design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C51",
+      "C52"
+    ],
+    "result": "Antigen epitope accessibility can be finely tuned through nanoparticle presentation geometry, with steric crowding on nanoparticle surfaces identified as a key determinant of antigenicity based on differential epitope accessibility between T33_dn2 and I53-50 scaffolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C51-C52 draw appropriate conclusions from the epitope accessibility experiments. The demonstration that geometry affects accessibility (C46) is well-supported by the comparative SPR data. The identification of steric crowding as a determinant (C52) is a logical inference from the data, though additional experiments (e.g., with intermediate geometries) would further strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C48"
+    ],
+    "result": "Multivalent antigen presentation substantially increases antibody elicitation through B cell receptor cross-linking and modulation of immunogen trafficking, with effects potentially reaching orders of magnitude enhancement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C7, and C48 are well-established principles from cited literature. These provide appropriate background and motivation for the study. However, these are not novel findings from this work but rather established knowledge that contextualizes the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C39",
+      "C49",
+      "C50"
+    ],
+    "result": "Prior work has established challenges in presenting complex antigens on non-protein scaffolds, advantages of self-assembling protein scaffolds, and limitations of HIV-1 Env presentation on nanoparticles including modest immunogenicity enhancement and epitope inaccessibility due to crowding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C39, C49-C50 accurately summarize prior work with appropriate citations. These provide important context for the current study's contributions. The characterization of prior limitations (C49-C50) appropriately motivates the need for the tailored design approach presented here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C87",
+      "C88"
+    ],
+    "result": "A close geometric match between antigen C-termini and nanoparticle component N-termini would enable multivalent presentation without structural distortion. Previous computationally designed nanoparticles were generated without initial consideration of geometric compatibility for antigen presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C87-C88 provide clear design rationale and distinguish this work from prior approaches. The geometric matching strategy (C12) is logical and well-motivated. The acknowledgment of limitations in prior work (C88) appropriately positions the current contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C90",
+      "C91"
+    ],
+    "result": "This work demonstrates that antigen-displaying protein nanoparticles can be designed from scratch and provides a systematic way to investigate the influence of antigen presentation geometry on immune response to vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C90-C91 appropriately summarize the main contributions. The demonstration of de novo design capability (C90) is well-supported by the structural validation data. The claim about providing a systematic approach (C91) is justified by the panel of geometrically diverse, validated nanoparticles, though actual immunogenicity studies would be needed to fully validate the utility for investigating immune responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The availability of multiple antigen-displaying nanoparticles enables potential strategies including using different scaffolds in prime-boost immunizations to limit anti-scaffold responses, tuning presentation geometry to investigate B cell activation effects, and potentially overcoming low germline BCR affinity for viral glycoproteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C56 propose potential applications but are speculative (evidence_type: SPECULATION). While these are reasonable hypotheses based on the demonstrated design capabilities, they require experimental validation through immunization studies. The manuscript does not present immunogenicity data to support these proposed benefits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The design approach yields nanoparticles presenting 4, 8, or 20 copies of viral glycoproteins in defined geometries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 accurately describes the valencies achieved (tetrahedral=4, octahedral=8, icosahedral=20 trimers). This is directly supported by the design models and structural characterization data presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The GG linker connecting DS-Cav1 to I53_dn5 likely accounts for observed flexibility and suboptimal definition of the glycoprotein trimer in 2D class averages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C75 proposes a mechanistic explanation for observed flexibility, but this is an inference without direct experimental validation. While the correlation between linker presence and flexibility is suggestive (comparing to HA\u2013I53_dn5 without linker in C76-C77), definitive testing would require systematic linker variation experiments.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Reg-Seq is a scalable RNA-Seq-based method that produces base-pair resolution regulatory dissection of 113 E. coli promoters across 12 growth conditions. The method uses mutual information to identify transcription factor binding sites and recapitulates known regulatory information in 11 of 15 gold standard cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C29 collectively demonstrate that Reg-Seq successfully scales Sort-Seq methodology using RNA-Seq readout. The validation against 15 gold standard genes (C21-C22) with 73% full recovery rate provides strong evidence for method accuracy. The experimental design (C26-C29) and scope (C17-C18, C20) are clearly documented with supporting data in Tables 1-2 and Figures 2-3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55"
+    ],
+    "result": "Reg-Seq identified regulatory architectures for more than 80 previously uncharacterized promoters, discovering new binding sites for transcription factors including the first known binding sites for YciT. Simple repression (0,1) is the most common regulatory motif among regulated promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C52, and C55 are directly supported by quantitative data in Tables 1-2 and Figure 6. The YciT discovery (C48-C49) is validated by mass spectrometry (Figure 5B). The ykgE case study (C44-C47) demonstrates the complete experimental pipeline from information footprint to transcription factor identification. The distribution of regulatory architectures is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Five newly discovered GlpR-regulated operons more than double the known GlpR regulon. These operons contain single GlpR binding sites and show glucose-dependent regulation, with GlpR functioning as an indirect glucose sensor through the CRP-GpsA-G3P pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C71 present a coherent mechanistic story supported by multiple lines of evidence: information footprints showing glucose-dependent binding (C60, Figure 7A), knockout validation (Figure 7A), mass spectrometry (C57, Figure 7B), and sequence logo consistency (Figure 7C). The mechanistic explanation (C62-C66) is well-reasoned based on known biochemistry (C63-C65) and observed regulatory patterns. The comparison to previously known GlpR operons (C67-C69) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Six new FNR-regulated promoters were discovered despite FNR being well-studied with 151 known binding sites. FNR binding is observed only in low oxygen conditions, consistent with its known oxygen-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are well-supported by data in Figure 8. The discovery of new sites for a well-characterized regulator (C72-C74) demonstrates method sensitivity. The oxygen-dependent binding pattern (C76-C77) is consistent with established FNR biochemistry and validates the biological relevance of discoveries. The sequence logos (Figure 8B) show consistency with known FNR binding preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "FNR regulates fdhE both directly and indirectly through activation of ArcA. The fdoGHI-fdhE operon has internal regulation with a secondary TSS that transcribes only fdhE, allowing anaerobic conditions to alter protein stoichiometry within the operon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 demonstrate multi-level regulation supported by Figure 9. The direct and indirect regulation by FNR (C78) is shown through binding to both arcA and fdhE promoters. The intra-operon regulation (C81-C85) is clearly documented with information footprints showing two TSSs. The mechanistic interpretation about stoichiometry changes (C85) is a logical inference from the TSS architecture, though direct protein measurements would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C101",
+      "C103"
+    ],
+    "result": "Current Reg-Seq implementation has limitations including manual curation requirements, low-throughput transcription factor identification, difficulty detecting weak binding sites in complex architectures, and inability to detect regulatory action at a distance beyond the 160 bp mutagenized window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C103 honestly acknowledge method limitations. The manual curation requirement (C92-C93) is addressed by developing automated algorithms (C94-C95). The mass spectrometry bottleneck (C96) is documented by only 13 of many putative sites being validated. The difficulty with weak sites (C97) is illustrated by the marRAB example. The 160 bp window limitation (C101, C103) is a clear experimental design constraint. These limitations are appropriately discussed with proposed solutions (C98).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "An interactive online resource was developed to enable exploration of over 1000 information footprints (113 promoters \u00d7 12 growth conditions), facilitating identification of condition-dependent regulation and secondary RNAP sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 describe the data resource and its utility. The calculation of >1000 footprints (C86) is straightforward arithmetic. The online resource (C87) is documented with a URL. The utility claims (C88-C89) are supported by the GlpR case study where growth condition comparison was essential for discovery. This represents good scientific practice in data sharing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The experimental design involved 113 promoters with 160 bp regions (115 bp upstream, 45 bp downstream of TSS), mutagenized at 10% per base, generating ~2200 unique sequences per promoter with ~5 barcodes per variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C112 describe the experimental design with specific quantitative parameters. These are methodological details that are clearly stated and internally consistent. The library complexity (C109) is adequate for the mutual information calculations. The barcode redundancy (C112) provides technical replicates. These design choices are appropriate for the MPRA approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119"
+    ],
+    "result": "Energy matrices are inferred by maximizing mutual information between predicted binding strength and gene expression using MCMC. Transcription factors are identified by DNA-affinity chromatography with SILAC mass spectrometry, requiring p<0.01 enrichment with multiple testing correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 describe the computational and experimental methods for transcription factor identification. The mutual information maximization approach (C113-C114) is mathematically sound for this application. The mass spectrometry protocol (C115-C116) follows established methods. The statistical threshold (C119) with multiple testing correction is appropriate. The limitation to 13 validated factors (C118) is honestly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C19",
+      "C90",
+      "C91"
+    ],
+    "result": "Approximately 65% of E. coli promoters and 35% of E. coli genes lack known regulatory information or experimental evidence of function, representing major gaps in understanding even this well-studied organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, C19, C90-C91 establish the motivation for the study. The 65% figure for unknown promoter regulation (C2, C14) is supported by citations to RegulonDB and prior work. The 35% figure for genes lacking functional evidence (C90) is supported by citation to Ghatak et al., 2019. The inference that other organisms are worse (C91) is reasonable speculation. These claims effectively establish the knowledge gap the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C99",
+      "C100"
+    ],
+    "result": "Eighteen genes showed no RNAP-binding site, likely due to inappropriate growth conditions or TSS locations outside the mutagenized window. While TSS information exists for 2500 of 2600 E. coli operons, this doesn't guarantee high transcription in tested conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C99-C100 acknowledge experimental limitations. The 18 inactive genes (C53) are documented in Table 1. The explanations (C54) are reasonable given the experimental constraints. The TSS database information (C99) provides context. The caveat about transcription levels (C99-C100) is an important limitation. These claims appropriately qualify the negative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Automated binding site identification uses a Pearson correlation threshold of 0.45 for RNAP sites and disqualifies sites with \u22643 high-information base pairs during manual curation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 describe specific algorithmic parameters. The correlation threshold (C122) is reasonable for pattern matching. The 3 bp cutoff (C123) is justified by the logic that very weak sites may only show activity upon gain-of-function mutations. These parameters represent practical choices for balancing sensitivity and specificity, though the specific values appear somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C25"
+    ],
+    "result": "Prior work established RNA-Seq (2008) and MPRAs as tools for studying gene expression. Sort-Seq (Kinney et al., 2010) provided base-pair resolution of promoter function, and Belliveau et al., 2018 added transcription factor identification, but was limited to single genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13, C25 accurately summarize prior work with appropriate citations. The RNA-Seq history (C7) cites three foundational 2008 papers. The MPRA applications (C8-C9) are well-documented. The Sort-Seq description (C10-C11) and its extension (C12) are accurate. The limitation of Belliveau et al., 2018 (C13) correctly identifies the motivation for the current work. These claims provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C41",
+      "C42"
+    ],
+    "result": "Information footprints use color coding where blue indicates activating sequences (mutation decreases expression) and red indicates repressing sequences (mutation increases expression). Energy matrices encode quantitative binding predictions with similar color coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C41-C42 describe visualization conventions used throughout the manuscript. The color coding is consistently applied in all figures. The interpretation that energy matrices provide quantitative predictions (C42) is supported by the linear binding model. These are methodological conventions that enhance data interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36",
+      "C38",
+      "C40"
+    ],
+    "result": "Gold standard promoters include dgoRKADT (activated by CRP, repressed by DgoR), relBE (repressed by RelBE), and marRAB (repressed by MarR with a site overlapping the RBS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34, C36, C38, C40 describe known regulatory architectures used for validation. These are established facts from the literature used as positive controls. The marRAB RBS overlap (C40) is noted as complicating detection. Figure 3 shows good agreement between Sort-Seq and Reg-Seq for these cases, validating the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Gene selection used proteomic data from Schmidt et al., 2016, targeting genes with high expression variability across growth conditions based on the reasoning that differential expression implies regulatory control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 describe the gene selection strategy. The use of proteomic data (C23) is appropriately cited. The reasoning (C24) that variable expression implies regulation is logical, though not all variable expression is transcriptionally regulated. This selection strategy is reasonable for enriching the dataset with regulated promoters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C76"
+    ],
+    "result": "Known biochemical facts support the mechanistic interpretations: gpsA is activated by CRP, GpsA synthesizes G3P which binds GlpR to disable repression, and FNR converts from dimer to monomer in the presence of O2 with reduced DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C76 cite established biochemical knowledge that supports mechanistic interpretations. These are appropriately cited facts from the literature (Seoh and Tai, 1999; Larson et al., 1987; Myers et al., 2013) that provide the biochemical basis for understanding the observed regulatory patterns. These claims demonstrate integration of new findings with existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Knockout strains were obtained from the Keio collection for validation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 describes the source of knockout strains with appropriate citation. This is a straightforward methodological detail. The Keio collection is a standard resource for E. coli genetics. The use of knockouts for validation is appropriate.",
+    "result_type": "MINOR"
+  }
+]

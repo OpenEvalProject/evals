@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C87",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Microcell-mediated chromosome transfer (MMCT) frequently induces chromosomal rearrangements specifically on the transferred chromosome. In HCT116-derived cell lines, 201 CNAs were detected, with 176 unique to aneuploid lines. 41% of unique CNAs affected only the transferred chromosome, which were significantly larger (median 15.8 Mb vs 3.3 Mb) than CNAs on other chromosomes. 97.3% of CNAs specifically affected the transferred chromosome, and 97.7% of breakpoint junctions were exclusive to aneuploid lines, not present in donor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by multiple lines of evidence including SNP array data (C9), statistical analysis of CNA distribution (C11, C12), BAF analysis (C13), and PCR validation (C14, C15, C92). The data consistently demonstrate that rearrangements occur specifically on the transferred chromosome during MMCT and are not present in donor cells, with appropriate statistical tests (t-test p=1.3E-14 for size difference).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C88",
+      "C93"
+    ],
+    "result": "Chromosomal rearrangements during MMCT arise through both chromosome shattering followed by DNA repair and replication-dependent mechanisms. Breakpoint junction analysis revealed all four orientation types (tail-head, head-tail, tail-tail, head-head), predominance of microhomologous repair, and short templated sequences (63-162 bp), indicating both chromothripsis-like shattering and replication-based mechanisms such as serial template switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic claims are supported by detailed breakpoint junction sequencing data (C18, C19, C20) showing signatures of both mechanisms. The presence of all four orientation types, microhomology patterns, and templated insertions are well-established hallmarks of these distinct rearrangement mechanisms, appropriately cited to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C69",
+      "C70"
+    ],
+    "result": "Micronuclei formed during MMCT frequently lack lamin B1 but retain lamin A/C. Immunofluorescence analysis showed that 42% of micronuclei after mitotic slippage lacked lamin B1 staining, while lamin B1 was present in all primary nuclei. Lamin A/C was present in nearly all primary nuclei and micronuclei. The isolation procedure did not affect lamin B1 localization (49% lacking after isolation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by quantitative immunofluorescence data (C27, C69, C70) with appropriate controls comparing before and after isolation (C28). The differential localization of lamin B1 versus lamin A/C is clearly demonstrated with sufficient sample sizes across multiple independent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C75"
+    ],
+    "result": "Micronuclei lacking lamin B1 are prone to nuclear envelope rupture. Colocalization of nuclear (NLS) and cytoplasmic (CLS) markers was observed in 14% of isolated micronuclei, indicating envelope rupture. DAPI signal intensity was 3.6 times lower in micronuclei with both NLS and CLS signals colocalized compared to other micronuclei, suggesting DNA loss through damaged envelope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The envelope rupture is demonstrated by the colocalization assay (C25) and corroborated by reduced DAPI intensity (C26), which provides quantitative evidence for DNA loss. The correlation between lamin B1 absence and CLS localization (C75) further supports the causal relationship between lamin B1 deficiency and envelope integrity loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Envelope rupture in micronuclei leads to DNA damage. 49.3% of isolated micronuclei showed comet structures, while colchicine-treated cells showed low damage. TUNEL assays showed significantly increased DNA damage in isolated micronuclei. Nearly 80% of lamin B1-negative micronuclei showed TUNEL signal versus 20% of lamin B1-positive. Similarly, 50% of lamin B1-negative micronuclei showed \u03b3-H2A.x signal versus 22.5% of lamin B1-positive. DNA damage decreased 60% when microcells were isolated at 4\u00b0C, suggesting enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent DNA damage assays (comet, TUNEL, \u03b3-H2A.x) consistently demonstrate elevated damage in micronuclei, particularly those lacking lamin B1 (C31, C32, C35, C36). The temperature-dependence experiment (C33, C34) provides mechanistic insight. Statistical significance is reported (p<0.005 for TUNEL, p=0.0036 for \u03b3-H2A.x with CLS). The correlation between envelope rupture markers and DNA damage (C37, C38) strengthens the causal link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C29",
+      "C30",
+      "C71",
+      "C72"
+    ],
+    "result": "The presence of lamin B1 in micronuclei correlates with micronuclei size. Lamin B1-positive micronuclei had an average diameter of 2.7 \u03bcm while lamin B1-negative had 1.9 \u03bcm (Mann Whitney test, p=0.00012). This correlation was also observed in spontaneously arising micronuclei in RPE1 cells (p<0.0001). Micronuclei size correlates with the number of encapsulated chromosomes, but micronuclei lacking lamin B were consistently smaller regardless of chromosomal content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The size-lamin B1 correlation is supported by quantitative measurements with appropriate statistical tests in both A9 cells (C29) and RPE1 cells (C30), demonstrating generalizability. The observation that lamin B-negative micronuclei are smaller regardless of chromosome number (C72) strengthens the finding. However, the directionality of causation remains unclear from these correlative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C61",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors propose that proper assembly of nuclear envelope might be sensitive to membrane curvature, potentially explaining why smaller micronuclei lack lamin B1. They hypothesize that higher curvature in micronuclei may negatively affect lamina assembly, similar to observations in primary nuclei. Alternatively, lack of lamin B may render micronuclei prone to size reduction due to DNA damage and loss, or small micronuclei may fail to incorporate lamin B efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative mechanistic explanations (C7, C61, C74) for the observed correlation between size and lamin B1 presence. While the correlation is well-established, the proposed mechanisms are hypotheses supported by analogy to prior work (C61 cites Denais et al., 2016) rather than direct experimental evidence. The bidirectional possibilities (C73, C74) indicate the causal relationship remains unresolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C40",
+      "C63"
+    ],
+    "result": "Chromosomal rearrangements in trisomic cells provide growth advantage compared to cells without rearrangements. Cell lines with rearranged chromosomes formed colonies in soft agar more readily than cell lines with intact extra chromosomes. This is the first demonstration that chromothripsis provides growth advantage in near-diploid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The growth advantage is demonstrated by soft agar colony formation assays (C40) comparing isogenic cell lines differing only in the presence of rearrangements. The claim of novelty (C63) is appropriately contextualized by noting prior work was in tetraploid backgrounds. The functional consequence is a major finding linking chromothripsis to cellular fitness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C44",
+      "C65"
+    ],
+    "result": "Increased genomic instability negatively affects proliferation of trisomic cells. The accumulation of anaphase bridges and micronuclei negatively correlates with colony formation (Spearman correlation rs=-0.8667, p=0.0045). The occurrence of anaphase bridges also correlated with the amount of additional genomic material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative correlation between genomic instability markers (anaphase bridges, micronuclei) and colony formation is supported by appropriate statistical analysis (C41). The correlation with additional genomic material (C44) provides mechanistic context. However, correlation does not establish causation, and the inference that instability \"impairs\" proliferation (C42) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C64"
+    ],
+    "result": "Chromosomal rearrangements reduce the negative effects of chromosome gain by reducing the amount of extra DNA. The less extra DNA cells contain, the more colonies they form (Spearman correlation rs=-0.7275, p=0.0032).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between extra DNA amount and colony formation is statistically significant (C43). The mechanistic interpretation (C64) that rearrangements reduce negative effects by eliminating extra DNA is a reasonable inference supported by the data, though alternative explanations (e.g., specific gene effects) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Trisomic cell lines derived from non-transformed RPE1 carry markedly fewer de novo rearrangements than HCT116-derived lines. 66% of HCT116-derived trisomic cell lines showed more than one rearrangement on the transferred chromosome. The authors suggest this difference may be because non-transformed cells with functional checkpoints are less tolerant to DNA damage and aneuploidy than cancerous cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The difference in rearrangement frequency between HCT116 and RPE1 cell lines is supported by comparative CNA data (C57, C58). The mechanistic explanation (C59) is a reasonable inference based on known differences in checkpoint function between transformed and non-transformed cells, though it remains speculative without direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The transferred chromosome was incorporated into the primary nucleus 48-72 hours after fusion, documented by chromosome painting. Replication of micronuclei was often asynchronous with the primary nucleus, supporting dysfunctional replication in micronuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by direct experimental evidence: chromosome painting for incorporation timing (C55) and EdU incorporation for asynchronous replication (C56). These observations provide important temporal and functional context for understanding when rearrangements may occur.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C76",
+      "C77",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose that micronuclei arising from mitotic slippage in the absence of microtubules fail to properly localize lamin B1 to the nuclear envelope. Mechanical forces during isolation may facilitate micronuclei rupture. DNA damage or replication-dependent rearrangements can occur after fusion to acceptor cells. The MMCT procedure involves mitotic slippage without chromosome separation, reducing interference of microtubules with nuclear envelope assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proposed mechanism (C60) is supported by the experimental observations of lamin B1 deficiency and is distinguished from alternative mechanisms involving Aurora B kinase or microtubule interference. The role of mechanical forces (C76) is supported by comparison of DNA damage with and without centrifugation (C39). The timing possibilities (C77) are reasonable inferences from the data. The procedural details (C80, C81) are factually accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Specific example of gene-level consequences: Htr13-03 lost extra copies of COL4A2 and COL4A1, while Htr13-02 carries three copies of each. These genes encode type IV collagen alpha proteins that upon cleavage form Arresten and Canstatin, which inhibit angiogenesis, proliferation and tumor formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The copy number differences between cell lines are supported by data (C66). The gene functions (C67, C68) are established knowledge appropriately cited. This provides a specific example of how rearrangements might affect proliferation through loss of anti-proliferative factors, though causality is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "MMCT may serve as a model system for analyzing mechanisms of chromothripsis of specific chromosomes and their consequences. The authors claim MMCT is the only model system allowing targeted generation of chromothripsis of any chromosome in human cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The utility of MMCT as a model system (C85) is supported by the comprehensive characterization of rearrangements and their consequences presented in the manuscript. The claim of uniqueness (C86) is stated as the authors' knowledge and is reasonable given the targeted nature of the approach, though the qualifier \"to our knowledge\" appropriately acknowledges potential limitations in their awareness of all existing systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Trisomic and tetrasomic cells propagate despite chromothripsis, as evidenced by successful establishment and maintenance of cell lines with chromothripsis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ability to establish and maintain stable cell lines with chromothripsis (C89) is demonstrated by the existence of the characterized cell lines themselves. This is an important observation showing that chromothripsis is compatible with continued cell proliferation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The authors propose that removal of unnecessary genetic material is a previously unappreciated effect of chromosomal rearrangements and may be an important factor shaping cancer genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a novel interpretation (C94) and speculative proposal (C95) based on the observed correlation between reduced DNA content and improved proliferation. While the data support that rearrangements can reduce extra DNA and improve fitness, the broader claim about cancer genome evolution is extrapolation beyond the experimental evidence. The proposal is interesting but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C62",
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Background claims about micronuclei, chromothripsis, and aneuploidy from prior literature, including: micronuclei facilitate genomic aberrations; lamin B is lacking in 30-50% of micronuclei; micronuclei lack nuclear pores; chromosomes in micronuclei are underreplicated; chromothripsis is frequent in cancer; chromothripsis shows microhomology at breakpoints; micronuclei are a route to chromothripsis; MMCT is used to study chromosome gain; chromosome gain impairs proliferation; and various mechanistic proposals about nuclear envelope assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriately cited claims from prior literature that provide context for the current work. The citations appear accurate and relevant. These background claims are not novel findings of this manuscript but establish the scientific foundation for the study.",
+    "result_type": "MINOR"
+  }
+]

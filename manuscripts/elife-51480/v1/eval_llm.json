@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the clinical and biological importance of copy number alterations (CNAs) in breast cancer, noting their role in genome evolution, clinical utility for prognosis and therapy, and association with disease relapse and therapeutic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C17 collectively establish the background knowledge about CNAs in breast cancer. These claims are well-supported by multiple citations to prior research and represent established knowledge in the field. The claims appropriately contextualize the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study employed single-cell sequencing to analyze copy number alterations in 16 breast cancer patients, sequencing a mean of 116 single-nuclei per tumor for a total of 2086 single-cell genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C21 describe the study design and scale. The methodology is clearly described in the Methods section, and the sample size and sequencing depth are explicitly stated. This provides adequate documentation of the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Single-cell sequencing detected and quantified tumor-infiltrating immune cells, including T-cells (detected in almost all samples with ~80% sensitivity) and B-cells (limited to subset of tumors with ~50% sensitivity), based on characteristic deletions at TCR and immunoglobulin loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 describe the detection of immune cells via single-cell copy number analysis. The approach is validated using purified T-cell and B-cell populations (C26-C27), and the findings are supported by Figure 1 and consistent with prior research (C28-C29). The detection sensitivities are empirically derived from control experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "TCR\u03b1 deletion breakpoint analysis revealed that tumor-infiltrating T-cells are non-clonally derived and genetically distinct, in contrast to T-cell leukemia where all cells shared identical breakpoints (p<10\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 describe breakpoint heterogeneity analysis with appropriate controls (T-cell leukemia as positive control for clonal expansion). The statistical analysis (C34) provides strong evidence for the non-clonal nature of tumor-infiltrating T-cells. The quantitative breakpoint distance metric adds rigor to the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "X-chromosome loss was observed in a subset of tumor-infiltrating T-cells, occurring significantly more frequently in ER- tumors compared to ER+ tumors (p=0.0047), with potential connection to BRCA1 biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 describe X-loss in T-cells with statistical support (p=0.0047). The association with ER- status is data-driven. Claims C39-C40 provide biological context through citation to prior work on BRCA1 and X-inactivation. The statistical test is appropriate for the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Pseudo-diploid cells carrying non-clonal, heterogeneous CNAs were observed across all four PAM50 subtypes, with some carrying prototypical breast cancer CNAs (1q gain, 16p loss), but these cells do not appear to be precursors to the clonal cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C43 extend prior observations to all PAM50 subtypes with data support. However, C45-C46 involve interpretations about precursor relationships and genomic instability that are speculative. The authors acknowledge (C46) that further analysis with SNV information is needed for definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Analysis of large-scale CNAs in cancer cells revealed variable levels of sub-clonal heterogeneity across tumors, ranging from low (<5% of genome) to significant (>40% of genome), with tumor P5 showing 56% of its genome as sub-clonal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe the quantification of CNA heterogeneity using a stringent threshold (10% of cells). The methodology is clearly described, and the data are presented in Figure 2. The classification into low, moderate, and significant heterogeneity provides a useful framework for characterizing tumors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Sub-clonal CNAs affect genomically and clinically important regions, including recurrently altered regions, therapeutic target genes (ESR1, CYP19A, CDK6, PD-L1), genes recurrently mutated by SNVs (PIK3R1, PDGFRA, RUNX1), and metastasis-associated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 identify biologically important regions affected by sub-clonal CNAs. The findings are supported by Figure 2C-F and validated by DNA-FISH (Figure 2\u2014figure supplement 2B). The integration with known cancer biology and therapeutic targets is well-documented through citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Some sub-clonal CNAs exist at three or more distinct copy number states, and high-level 1q/8q gains in ER+/HER2- patients are associated with worse distant relapse-free survival and enrichment in the high-risk IC9 subgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 demonstrates dosage heterogeneity with data from Figure 2G. Claims C56-C57 link dosage to clinical outcome using METABRIC data with survival analysis. The association is statistically supported, though the authors note in supplementary data that 1q/8q ratio was not independently significant in multivariate Cox models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Amplicon mosaicism was observed in 37% (6/16) of tumors, with amplicons present in some subpopulations but absent in others. In tumor P22, VEGFA and CCNE1 amplicons were mutually exclusive (p=0.003) and segregated with geographically distinct subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 describe amplicon heterogeneity with statistical support (C61: p=0.003 for mutual exclusivity) and validation by DNA-FISH and hierarchical clustering (C63). The quantification of 37% prevalence (C66) provides important context. The findings are well-supported by Figure 3 and supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Amplicon dosage heterogeneity was observed in tumor P6, where SKIL and MYC amplicons varied from <30 to >60 copies across different cells, confirmed by DNA-FISH fluorescence intensity analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 describe dosage heterogeneity in amplicons with orthogonal validation by DNA-FISH (C70). The observation extends to ERBB2 in another HER2+ tumor (C71). The use of fluorescence intensity to validate copy number variation adds rigor to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Homozygous deletions affecting known breast cancer genes (MLLT4, MAP2K2, NCoR1) were observed, but no heterogeneity was detected in this class of CNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 identifies homozygous deletions with data support. However, C73 states no heterogeneity was observed, but the authors acknowledge this may be due to resolution limitations since homozygous deletions are typically smaller than amplifications. The negative result should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Multi-region sampling of 9 tumors revealed that 65% (35/54) of alterations found differentially between spatially resolved biopsies were also detected as sub-clonal variation in single-cell data, with some variation unique to each approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 compare multi-region bulk sequencing with single-cell analysis. The quantification (C77: 65% overlap) demonstrates complementarity between approaches. The finding that some variation is unique to each method (C78) is important for understanding the value of both approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CNA heterogeneity is significantly associated with polyploidy (p=0.0164) and ER- status (p=0.0229). In ER+ tumors (excluding TP53-mutant P5), tumor size and CNA heterogeneity are inversely correlated (p=0.02793), with the largest tumors showing least heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 report statistically significant associations using appropriate Wilcoxon rank order tests. Claims C82-C83 describe an inverse correlation in ER+ tumors with statistical support. The identification of P5 as an outlier ER+/TP53-mutant tumor (C81) with Sanger sequencing validation strengthens the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Tumors conform to three clonal composition classes: homogenous with single clone (only in ER+ tumors), heterogeneous with one dominant clone (across subtypes), and heterogeneous with many clones and none dominant (mainly in ER- tumors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe clonal composition patterns based on analysis shown in Figure 5E-F. The classification is data-driven and provides a useful framework for understanding tumor heterogeneity. The association of different patterns with ER status is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The Discussion synthesizes key findings including: associations between ER- tumors and X-loss T-cells; pseudo-diploid cells across subtypes; profound CNA heterogeneity affecting important genes; dosage heterogeneity associated with clinical outcome; and amplicon mosaicism with clinical implications for targeted therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C97 summarize the major findings from the Results section. These are appropriately supported by the data presented earlier. Claims C96-C97 include some speculation about mechanisms (extra-chromosomal instability) but are appropriately cited and qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The Discussion further notes that single-cell and multi-region approaches provide complementary information; large ER+ tumors may require extensive spatial sampling; CNA heterogeneity associates with poor prognostic factors; and some tumors show multiple sub-clones without dominance, raising questions about clonal cooperation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 provide interpretations and implications of the findings. Most are well-supported by the data, though C102 and C105 involve some speculation about future research needs and biological mechanisms. The inferences are reasonable given the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors conclude that most novel observations would not have been possible without single-cell resolution, as bulk genomic analysis would have obscured findings such as T-cell X-loss, pseudo-diploid cells, multiple copy number states, and amplicon mosaicism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 assess the unique value of single-cell sequencing. These are reasonable inferences based on the demonstrated findings that required single-cell resolution to detect. The comparison with limitations of bulk sequencing is well-justified by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Single-cell DNA sequencing methods have emerged as powerful tools for studying intra-tumoral heterogeneity in breast and other cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is well-supported by multiple citations to prior research demonstrating the utility of single-cell sequencing in various cancer types. This represents established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

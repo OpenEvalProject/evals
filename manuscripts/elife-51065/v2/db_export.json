@@ -1,0 +1,1848 @@
+{
+  "submission": {
+    "id": "8ca6e38b-69b6-4ac2-bf97-7d11951bdcbd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:32:03.678545Z",
+    "updated_at": "2025-12-02T15:32:03.678545Z"
+  },
+  "content": [
+    {
+      "id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "submission_id": "8ca6e38b-69b6-4ac2-bf97-7d11951bdcbd",
+      "content_type": "manuscript",
+      "content_text": "# A protein quality control pathway at the mitochondrial outer membrane\n\n## Authors\n\n- Meredith B Metzger<sup>1</sup> ([ORCID: 0000-0002-6248-0009](https://orcid.org/0000-0002-6248-0009)) \u2020\n- Jessica L Scales<sup>1</sup>\n- Mitchell F Dunklebarger<sup>1</sup>\n- Jadranka Loncarek<sup>1</sup>\n- Allan M Weissman<sup>1</sup> ([ORCID: 0000-0002-7865-7702](https://orcid.org/0000-0002-7865-7702)) \u2020\n\n### Affiliations\n\n1. Laboratory of Protein Dynamics and Signaling, Center for Cancer Research, National Cancer Institute at Frederick Frederick United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMaintaining the essential functions of mitochondria requires mechanisms to recognize and remove misfolded proteins. However, quality control (QC) pathways for misfolded mitochondrial proteins remain poorly defined. Here, we establish temperature-sensitive (ts-) peripheral mitochondrial outer membrane (MOM) proteins as novel model QC substrates in Saccharomyces cerevisiae. The ts- proteins sen2-1HAts and sam35-2HAts are degraded from the MOM by the ubiquitin-proteasome system. Ubiquitination of sen2-1HAts is mediated by the ubiquitin ligase (E3) Ubr1, while sam35-2HAts is ubiquitinated primarily by San1. Mitochondria-associated degradation (MAD) of both substrates requires the SSA family of Hsp70s and the Hsp40 Sis1, providing the first evidence for chaperone involvement in MAD. In addition to a role for the Cdc48-Npl4-Ufd1 AAA-ATPase complex, Doa1 and a mitochondrial pool of the transmembrane Cdc48 adaptor, Ubx2, are implicated in their degradation. This study reveals a unique QC pathway comprised of a combination of cytosolic and mitochondrial factors that distinguish it from other cellular QC pathways.\n\n## Introduction\n\nProper protein folding is essential for organelle and cell homeostasis. Proteins may fail to achieve or retain their functional conformations due to genetic or environmental insults and cells have evolved elaborate protein quality control (QC) mechanisms to combat misfolding. QC systems recognize and refold misfolded proteins and, when not possible, sequester or degrade them to prevent their often deleterious accumulation (Kevei et al., 2017). Such degradation frequently occurs via the ubiquitin-proteasome system (UPS), where substrates are modified with ubiquitin leading to their destruction by the 26S proteasome (Metzger et al., 2012). Ubiquitin modification requires the action of ubiquitin-activating enzyme (E1), followed by either sequential or concerted activity of ubiquitin-conjugating enzymes (E2) and substrate-specific ubiquitin ligases (E3). Multiple rounds of ubiquitination result in polyubiquitin chains, which can serve as targeting signals for recognition and degradation by 26S proteasomes (Akutsu et al., 2016; Thrower et al., 2000). Other classes of factors play critical roles in substrate recognition and in their extraction from associated proteins or membranes post-ubiquitination, as well as in shuttling to proteasomes (Buchberger et al., 2015; Ye et al., 2017; Zientara-Rytter and Subramani, 2019).\n\nDistinct, yet overlapping UPS machinery found at different subcellular locations mediates localized QC of misfolded proteins (Sontag et al., 2017). The degradation of misfolded proteins at the ribosome, endoplasmic reticulum (ER), nucleus, inner nuclear envelope, and cytosol is mediated by dedicated UPS machinery (Boban and Foisner, 2016; Brandman and Hegde, 2016; Comyn et al., 2014; Gamerdinger, 2016; Jones and Gardner, 2016; Zattas and Hochstrasser, 2015). Much of what is known about these subcellular QC pathways was uncovered in yeast using model misfolded substrates (Bays et al., 2001; Gardner et al., 2005; Huyer et al., 2004; Stolz and Wolf, 2012; Vashist and Ng, 2004) and has served as the basis for characterizing mammalian degradation pathways. The most extensively studied organelle-based QC pathway is ER-associated degradation (ERAD). Early steps in ERAD pathways, such as substrate recognition and ubiquitination, are distinct for different substrates and defined (at least in yeast) by the location of the misfolded domain (Carvalho et al., 2006; Huyer et al., 2004; Preston and Brodsky, 2017; Ruggiano et al., 2014). Generally, pathways converge post-ubiquitination, where the Cdc48-Npl4-Ufd1 AAA-ATPase complex and its associated co-factors facilitate unfolding and/or extraction of substrates from their natural environments prior to targeting to 26S proteasomes for degradation (Olszewski et al., 2019; Wolf and Stolz, 2012).\n\nMitochondrial proteins are subject to ongoing oxidative insults that can result in damage, misfolding, and dysfunction. Mitochondria require mechanisms to eliminate these proteins to maintain organellar integrity and essential functions (Voos et al., 2016). In mammalian cells, the well-characterized Parkin and PINK1 ubiquitin-dependent mitophagy pathway removes portions of, or entire, damaged mitochondria (McWilliams and Muqit, 2017; Pickles et al., 2018). In yeast, however, mitophagy appears to function primarily to adapt to metabolic changes, rather than in protein QC (Fukuda and Kanki, 2018; Kanki et al., 2015). Furthermore, there is little evidence indicating that mitophagy is ubiquitin-dependent, in accordance with the absence of obvious yeast orthologues of Parkin or PINK1 (Belgareh-Touz\u00e9 et al., 2017; Tan et al., 2016).\n\nIn contrast to mitophagy, mitochondria-associated degradation (MAD) pathways for individual misfolded or damaged mitochondrial proteins are not as well-established in mammals or yeast. Proteases resident to the mitochondrial matrix, inner membrane (IM), and intermembrane space (IMS) can act on damaged or aggregated proteins in these compartments (Bohovych et al., 2015). While there is no evidence for proteasomes inside mitochondria, the mitochondrial outer membrane (MOM) is fully accessible to cytosolic proteasomes. In fact, the UPS is known to play a critical role in mitochondrial morphology, dynamics, inheritance, and in the degradation of import-deficient mitochondrial IMS proteins and mitochondria-mislocalized tail-anchored proteins (Altmann and Westermann, 2005; Bragoszewski et al., 2017; Cohen et al., 2008; Fisk and Yaffe, 1999; Goodrum et al., 2019; Matsumoto et al., 2019; Rinaldi et al., 2008). A limited number of MOM proteins have also been identified as specific UPS targets in yeast: Fzo1, Mdm12, Mdm34, Msp1, and Tom70 (Belgareh-Touz\u00e9 et al., 2017; Cohen et al., 2008; Fritz et al., 2003; Ota et al., 2008; Wu et al., 2016). All of these are native (i.e. non-misfolded) proteins, whose ubiquitination and/or degradation may be critical for homeostasis and not obviously related to QC. Of these, only Fzo1 has been examined in detail. The regulated recognition\u00a0and\u00a0ubiquitination of this mitofusin by SCFMdm30 (Skp1-Cullin-F-box E3 with F-box protein Mdm30) and its subsequent proteasomal degradation are integral to the process of MOM fusion (Cohen et al., 2011; Cohen et al., 2008; Escobar-Henriques et al., 2006). However, for the few other MOM proteins where ubiquitination has been analyzed, the E3 Rsp5 has been implicated (Belgareh-Touz\u00e9 et al., 2017; Goodrum et al., 2019; Kowalski et al., 2018; Wu et al., 2016). The involvement of Cdc48 co-factors, Vms1 and Doa1, has also been both reported and disputed for particular MOM proteins (Chowdhury et al., 2018; Esaki and Ogura, 2012; Heo et al., 2010; Wu et al., 2016). The degradation of tail-anchored proteins mislocalized to the MOM uniquely requires the AAA-ATPase Msp1 for extraction from the MOM prior to transfer to the ER where they are degraded by ERAD machinery (Matsumoto et al., 2019; Okreglak and Walter, 2014; Wohlever et al., 2017). Thus, a universal MAD pathway for MOM proteins has not been described and many steps in substrate degradation remain unexamined. Similarly, UPS components acting on misfolded MOM proteins have yet to be investigated.\n\nIn this study, we establish temperature-sensitive (ts-) peripheral MOM proteins (sam35-2HAts and sen2-1HAts) as QC substrates. The ts- nature of these substrates, coupled with their tight association with the MOM, enabled study of their mitochondrial degradation without concerns of mislocalization to the cytosol or elsewhere. We utilize these substrates to define a MAD pathway for non-native proteins. The proteasomal degradation of these MAD QC substrates occurs at the MOM and requires specific cytosolic and mitochondrial UPS components, most of which are conserved in higher eukaryotes. Our results reveal a requirement for factors not previously implicated in the degradation of native MAD substrates and the combination of components identified defines a distinct QC pathway.\n\n## Results\n\n### Identification of novel thermosensitive substrates for mitochondrial quality control\n\nOur knowledge of protein QC in the ER, cytosol, and nucleus derives in part from the study of proteins that undergo temperature-dependent misfolding and degradation (Biederer et al., 1996; Gardner et al., 2005; Khosrow-Khavar et al., 2012; Ravid et al., 2006; Wang and Prelich, 2009). To elucidate how misfolded mitochondrial proteins are targeted for destruction, we exploited two previously-identified yeast ts- alleles, sam35-2 and sen2-1 (Li et al., 2011; Milenkovic et al., 2004; Winey and Culbertson, 1988), whose degradation has not been assessed. Sam35 and Sen2 are essential MOM proteins. Sam35 is the substrate receptor of the MOM-embedded multiprotein sorting and assembly machinery (SAM) complex required for assembly of \u03b2-barrel proteins into the MOM (Chan and Lithgow, 2008; Kozjak et al., 2003; Kutik et al., 2008; Milenkovic et al., 2004). Although Sam35 contains no apparent membrane spans, it is tightly embedded at the MOM via the Sam50 protein (Kutik et al., 2008). Sen2 provides endonuclease activity for the multi-subunit tRNA splicing endonuclease complex and also cleaves a mitochondria-targeted non-stop mRNA (Ho et al., 1990; Tsuboi et al., 2015; Winey and Culbertson, 1988). The tRNA splicing complex resides on the MOM in yeast, with Sen2 potentially anchoring it to the membrane via a hydrophobic segment (Trotta et al., 1997; Yoshihisa et al., 2003).\n\nWe first determined that sam35-2ts and sen2-1ts encoded full-length proteins. Each contained multiple missense mutations (Figure 1\u2014figure supplement 1A) that likely account for the phenotypes reported (Li et al., 2011; Milenkovic et al., 2004; Winey and Culbertson, 1988). To facilitate detection, sequence encoding an HA tag was added to the C-terminus of each to generate sam35-2HAts and sen2-1HAts. Genome-integrated versions of sam35-2HAts and sen2-1HAts support cell viability at the permissive (25\u00b0C) but not non-permissive temperature (37\u00b0C; Figure 1A), consistent with the previously-described untagged versions (Li et al., 2011; Milenkovic et al., 2004; Winey and Culbertson, 1988).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig1-v2.jpg)\n\n**Figure 1.:** (A) Spot growth assay of cells expressing chromosomal SAM35HA, sam35-2HAts, SEN2HA, or sen2-1HAts (yMM36, 37, 40, and 41, respectively) at permissive (25\u00b0) or non-permissive (37\u00b0) temperatures. (B) Wild type (WT; WCG4a) yeast were treated with cycloheximide (CHX) at 25\u00b0C or 37\u00b0C and analyzed at the indicated times to assess the degradation of centromeric (CEN) plasmid-expressed SAM35HA, sam35-2HAts, SEN2HA, or sen2-1HAts (pMM158, 157, 159, 160, respectively). The ts- proteins were detected by immunoblotting with HA antibody. Phosphoglycerate kinase (PGK) served as a protein loading control. Graphed below is the mean and standard deviation (SD) of the PGK-normalized HA signal at each time point for three biological replicates. (C) Live-cell microscopy analysis of agarose-embedded WT cells (WCG4a) co-expressing a mitochondrial-matrix targeted RFP (mtRFP; pMD12) and either sam35-2GFPts (pMD1) or sen2-1GFPts (pMD4) at the indicated times after temperature shift to 37\u00b0C. CHX was also added at 0 min, although CHX diffusion through agarose is likely problematic. \u2018Merge\u2019 of GFP (green) and RFP (magenta) channels and differential interference contrast (DIC) are shown; Scale bar\u00a0=\u00a010 \u03bcm. (D) Lysates of spheroplasted yeast from the strains used in B were fractionated at 12,000xg\u00a0at 37\u00b0C into mitochondrial pellet (P) and post-mitochondrial supernatant (S). Fractions were subject to immunoblotting with antibodies to HA, PGK (cytosolic protein control), and PORIN (mitochondrial protein control).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Amino acid substitutions in the sam35-2ts and sen2-1ts proteins compared to the WT proteins. (B) Cells with chromosomal SAM35HA, sam35-2HAts, SEN2HA, or sen2-1HAts (yMM36, 37, 40, and 41, respectively) were treated with cycloheximide (CHX) at 25\u00b0C or 37\u00b0C and analyzed at the indicated times to assess the degradation of genomic SAM35HA, sam35-2HAts, SEN2HA, or sen2-1HAts. Ts- proteins were detected by immunoblotting with HA antibody. Phosphoglycerate kinase (PGK) served as a protein loading control. Percentage of each ts- substrate remaining is labeled for each time point under blots. (C) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2GFPts or sen2-1GFPts (pMD1 or 4, respectively) in WT yeast cells (WCG4a). (D) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in WT (WCG4a) cells. (E) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in spheroplasts generated from WT (WCG4a) and pre1-1 pre2-2 (WCG4-11/21a) yeast cells. (F) Lysates from strains expressing genomic sam35-2HAts or sen2-1HAts (yMM37 and 41, respectively) were fractionated at 12,000xg at 37\u00b0C into mitochondrial pellets (P) and post-mitochondrial supernatants (S). Fractions were subject to immunoblotting with antibodies to HA, PGK, and PORIN.\n\nTo determine whether their ts- phenotypes are indicative of protein misfolding that may lead to instability, we assessed sam35-2HAts and sen2-1HAts turnover by cycloheximide (CHX) chase when expressed from centromeric (CEN) yeast plasmids. Cells were grown at 25\u00b0C until the addition of CHX at time \u2018zero\u2019, when the temperature was either maintained at 25\u00b0C or raised to 37\u00b0C. The addition of CHX prior to raising the temperature minimizes the contribution of newly synthesized ts- proteins that may misfold prior to reaching the mitochondria. We find that increasing the temperature to 37\u00b0C results in dramatic destabilization of the ts- proteins relative to the WT proteins (Figure 1B). Chromosomal versions behaved similarly (Figure 1\u2014figure supplement 1B). Thus, the ts- nature of these alleles is likely attributable to misfolding leading to destabilization at the non-permissive temperature.\n\nNext, agarose-embedded cells expressing GFP-tagged sam35-2ts and sen2-1ts were used to assess whether these non-transmembrane MOM proteins remain mitochondrially-associated following the increase to the non-permissive temperature. For this, the temperature was raised to 37\u00b0C for 5 min (sen2-1GFPts) or 15 min (sam35-2GFPts), times at which sam35-2GFPts and sen2-1GFPts were already destabilized by CHX chase (Figure 1\u2014figure supplement 1C). Co-expression of sam35-2GFPts and sen2-1GFPts with a mitochondrial marker (mtRFP) demonstrated that the ts- proteins remain mitochondrial after the temperature increase (Figure 1C).\n\nTo bypass difficulties associated with imaging these low abundance ts- proteins, we isolated mitochondria by subcellular fractionation and assessed the localization of destabilized sam35-2HAts and sen2-1HAts. Using the same conditions as for microscopy, we found that the HA-tagged ts- proteins are destabilized upon the addition of CHX (Figure 1\u2014figure supplement 1D) and that protein turnover was still evident in the spheroplasted yeast used for fractionation (WT; Figure 1\u2014figure supplement 1E). Consistent with our microscopy, sam35-2HAts and sen2-1HAts fractionated almost exclusively to the mitochondrial pellet at 37\u00b0C (P; Figure 1D). A similar fractionation pattern was observed with chromosomal HA-tagged ts- alleles (Figure 1\u2014figure supplement 1F). Therefore, sam35-2HAts and sen2-1HAts are destabilized at the non-permissive temperature yet remain mitochondrially-localized, validating their use as model MAD QC substrates.\n\n### The degradation of MAD QC substrates requires the ubiquitin-proteasome system\n\nSince proteasomes have broad roles in mitochondrial homeostasis and morphology, we assessed whether the degradation of these MOM ts- proteins was dependent on proteasome function. The turnover of sam35-2HAts and sen2-1HAts was assessed at the non-permissive temperature in strains containing conditional mutations in the 20S core (pre1-1 pre2-2; Figure 2A) or the 19S cap (cim3-1; Figure 2B) of the 26S proteasome. Both ts- proteins were substantially stabilized in these mutants relative to isogenic WT strains. In contrast, vacuolar or mitochondrial resident proteases were not required for sam35-2HAts or sen2-1HAts turnover (Figure 2\u2014figure supplement 1A and B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in WT (WCG4a) and pre1-1 pre2-2 proteasome mutant (WCG4-11/21a) cells (A) or WT (CIM) and cim3-1 proteasome mutant cells (B). Proteins were detected by immunoblotting. Graphed below is the mean and SD of the PGK-normalized HA signal at each time point for three biological replicates. (C) Lysates from the strains used in A were fractionated at 12,000xg into mitochondrial pellets (P) and post-mitochondrial supernatants (S) after incubation at 37\u00b0C for the indicated times. Fractions were subject to immunoblotting with antibodies to HA, PGK, and PORIN. (D) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in a uba1-204 strain relative to its isogenic WT strain. (E) Ubiquitination of sam35-2HAts and sen2-1HAts was assessed by immunoprecipitation (IP) from lysates of the strains used in A with anti-HA agarose, followed by immunoblotting with ubiquitin antibodies. 1% of IP input lysate was reserved and also analyzed by immunoblotting. (F) Ubiquitination of sam35-2HAts and sen2-1HAts was assessed by IP from lysates of the strains used in A using tandem ubiquitin-binding entities (TUBE) agarose, followed by immunoblotting with HA antibody. 2.5% of the TUBE input lysate was reserved and analyzed by immunoblotting.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in WT (BY4741) and pep4\u0394 (A) or yme1\u0394, afg3\u0394, yta12\u0394, oma1\u0394, or pim1\u0394 (B) cells. Proteins were detected by immunoblotting. Percentage of each ts- substrate remaining is labeled for each time point under blots. (C) Sodium carbonate (Na2CO3) extraction of sam35-2HAts or sen2-1HAts (pMM157 and 160, respectively) from the 12,000xg mitochondrial pellet of pre1-1 pre2-2 (WCG4-11/21a) cells. Control treatments of sodium chloride (NaCl) and buffer are shown for comparison. Proteins were detected with immunoblotting for HA, PORIN, and Sam35 (in analysis of sen2-1HAts only). (D) Total lysate from pre1-1 pre2-2 (WCG4-11/21a) cells expressing sam35-2HAts (pMM157) were fractionated at 37\u00b0C into mitochondrial pellets (P12,000xg) and post-mitochondrial supernatants (S12,000xg). Fractions were subject to immunoblotting with antibodies to Cue1, PGK, and PORIN. The Cue1 signal in each fraction was quantified and the mean plus standard deviation (SD) of the percentage of the total Cue1 signal is graphed below (N\u00a0=\u00a03). (E) P12,000xg mitochondrial fractions (\u2018crude\u2019) isolated from pre1-1 pre2-2 (WCG4-11/21a) cells expressing sam35-2HAts or sen2-1HAts (pMM157 and 160, respectively) were further purified by sucrose gradient fractionation (\u2018purified\u2019). The HA (sam35-2HAts or sen2-1HAts) and Cue1 signals in crude and purified mitochondrial fractions were quantified and normalized to the PORIN signal. The crude mitochondrial signal was set to 100% and the mean plus SD of the percentage in purified mitochondria relative to crude is graphed (N\u00a0=\u00a03). (F) Negative control experiment for Figure 2E. Cell lysates from pre1-1 pre2-2 (WCG4-11/21a) cells expressing sam35-2HAts, sen2-1HAts, or empty vector (EV; pMM157, pMM160, or pRS315, respectively) were precipitated with unconjugated TUBE control agarose (containing no ubiquitin-binding domains), followed by immunoblotting with HA antibody. (G) Ubiquitination was assessed by IP with anti-HA agarose from lysates of WT (BY4741) cells expressing empty vector (EV; pRS315), SEN2HA (pMM159), sen2-1HAts (pMM160), SAM35HA (pMM158), or sam35-2HAts (pMM157), followed by immunoblotting with ubiquitin antibody. 1% of the IP was reserved and analyzed by immunoblotting for the unmodified proteins. (H) Ubiquitination in the 12,000xg mitochondrial pellet (P12,000xg) or post-mitochondrial supernatant (S12,000xg) was assessed by IP from each fraction with anti-HA agarose from WT (WCG4a) and pre1-1 pre2-2 (WCG4-11/21a) cells expressing myc-Ub (pSM3666) and either empty vector (EV; pRS315), sam35-2HAts (pMM157), or sen2-1HA (pMM160), followed by immunoblotting with c-myc antibody. 1% of IP input lysate was reserved and analyzed by immunoblotting.\n\nAfter establishing that the stabilization of the ts- proteins in pre1-1 pre2-2 spheroplasts mirrors that observed in intact cells (Figure 1\u2014figure supplement 1E), we assessed whether sam35-2HAts and sen2-1HAts remain mitochondrial when proteasome function is impaired. Even after 40 min at the non-permissive temperature, the majority of both sam35-2HAts and sen2-1HAts accumulated in the 12,000xg mitochondrial pellet (Figure 2C). Extraction of both proteins from this pellet fraction by sodium carbonate excluded the possibility that this represents aggregated protein (Figure 2\u2014figure supplement 1C). This crude mitochondrial pellet also contains\u00a0~20% of total ER as assessed by measuring levels of the integral ER membrane protein Cue1 (Figure 2\u2014figure supplement 1D). For this reason, we wished to exclude the possibility that these substrates were being translocated to the ER for degradation. Such a pathway has recently been described for tail-anchored proteins that are mislocalized to mitochondria (Matsumoto et al., 2019). Further purification of the crude 12,000xg mitochondrial pellet isolated from pre1-1 pre2-2 cells via sucrose gradient ultracentrifugation removes\u00a0~90% of contaminating ER, leaving only\u00a0~2% of total ER in these purified mitochondria (Cue1; Figure 2\u2014figure supplement 1E). On the other hand, this purified mitochondrial fraction retains\u00a0~70% of the ts- proteins. As peripheral membrane proteins could dissociate from mitochondria during manipulation, 70% may be an underrepresentation of the mitochondria-associated pool in vivo. Thus, these data indicate that sam35-2HAts and sen2-1HAts primarily accumulate at the mitochondria when their proteasomal degradation is blocked.\n\nConsistent with being UPS substrates, stabilization of both sam35-2HAts and sen2-1HAts was observed in a ts- mutant of the ubiquitin-activating enzyme (uba1-204; Figure 2D;\u00a0Ghaboosi and Deshaies, 2007), indicating that ubiquitination is required for their degradation. Moreover, ubiquitin-modified forms of sam35-2HAts and sen2-1HAts were evident when proteasome function was inhibited (Figure 2E and F and see Figure 2\u2014figure supplement 1F for an additional control), as indicated by characteristic higher molecular weight bands and a smear representing highly ubiquitinated species (Emmerich and Cohen, 2015). By comparison, ubiquitinated forms of WT SAM35HA and SEN2HA are much less prevalent (Figure 2\u2014figure supplement 1G). We further assessed whether ubiquitin-modified forms of the ts- proteins were localized to mitochondria under conditions of proteasome impairment. Ubiquitinated sam35-2HAts and sen2-1HAts both accumulated largely in the mitochondrial pellet fraction (P12,000xg; Figure 2\u2014figure supplement 1H) and to a lesser extent in the soluble fraction, correlating with the relative distributions of unmodified species. Taken together, these data establish roles for ubiquitination and proteasomal degradation in the turnover of sam35-2HAts and sen2-1HAts at the MOM.\n\n### Distinct E3 ubiquitin ligases act on sam35-2HAts and sen2-1HAts\n\nTo date, the only ubiquitin ligases known to act on mitochondrial proteins in yeast are SCFMdm30 and Rsp5 (Belgareh-Touz\u00e9 et al., 2017; Cohen et al., 2008; Escobar-Henriques et al., 2006; Kowalski et al., 2018; Wu et al., 2016). However, the known mitochondrial substrates for these E3s are native proteins. We assessed whether these E3s also play a role in MAD of QC substrates and found that strains lacking either Mdm30 or Rsp5 function did not affect sam35-2HAts or sen2-1HAts stability (Figure 3\u2014figure supplement 1A and B). To identify factors involved in targeting these ts- MAD substrates, we screened a yeast deletion library consisting of non-essential known or putative UPS components (Ravid and Hochstrasser, 2007) by CHX chase. Interestingly, we found that san1\u0394 impaired turnover of sam35-2HAts (Figure 3A, middle panel), while ubr1\u0394 impaired turnover of sen2-1HAts (Figure 3B, middle panel). San1 has been implicated in QC of cytosolic and nuclear proteins (Gardner et al., 2005; Heck et al., 2010). Ubr1 is the E3 that ubiquitinates N-end rule substrates, but also plays a prominent role in the turnover of cytosolic proteins and, in some instances, may also degrade ER proteins (Bartel et al., 1990; Comyn et al., 2016; Eisele and Wolf, 2008; Heck et al., 2010; Khosrow-Khavar et al., 2012; Rao et al., 2001; Scazzari et al., 2015; Stolz et al., 2013; Summers et al., 2013). Since there are examples where these two E3s functionally interact, we assessed turnover in a san1\u0394 ubr1\u0394 double deletion strain. While ubr1\u0394 alone did not affect sam35-2HAts turnover (Figure 3\u2014figure supplement 1C), loss of Ubr1 in conjunction with san1\u0394 led to greater stabilization than loss of San1 alone (Figure 3A, lower panel), indicating that Ubr1 can target sam35-2HAts in the absence of San1. Loss of San1, alone or in conjunction with ubr1\u0394, did not affect the stability of sen2-1HAts (Figure 3\u2014figure supplement 1D and Figure 3B, lower panel). Notably, the polyubiquitination of sam35-2HAts (Figure 3C) and sen2-1HAts (Figure 3D) was greatly reduced when San1 or Ubr1, respectively, were deleted. Neither ts- protein was entirely stabilized by san1\u0394 ubr1\u0394, suggesting that other E3s, perhaps with overlapping specificity or essential functions, may also act on these substrates. Likewise, loss of any single E2 did not stabilize sam35-2HAts (data not shown). Loss of Ubc4, an E2 known to function with Ubr1 for select substrates, stabilized sen2-1HAts to a similar degree as ubr1\u0394 (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig3-v2.jpg)\n\n**Figure 3.:** (A) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts (pMM157) in WT (BY4741), san1\u0394, and san1\u0394 ubr1\u0394 (SM5770) cells. Proteins were detected by immunoblotting. Graphed below is the mean and SD of the PGK-normalized HA signal at each time point for three biological replicates. (B) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sen2-1HAts (pMM160) in WT (BY4741), ubr1\u0394 (yMM149), and san1\u0394 ubr1\u0394 (SM5770) cells, as in A. (C) Ubiquitination of sam35-2HAts was assessed by IP with anti-HA agarose of lysates from WT (BY4741) and san1\u0394 cells expressing myc-Ub (pSM3666) and either empty vector (EV; pRS315) or sam35-2HAts (pMM157), followed by immunoblotting with c-myc antibody. 1% of IP input lysate was reserved and analyzed for sam35-2HAts by immunoblotting. (D) Ubiquitination of sen2-1HAts was assessed by IP of lysates from WT and ubr1\u0394 strains expressing either EV (pRS315) or sen2-1HAts (pMM160) using TUBE agarose, followed by immunoblotting with HA antibody. 2.5% of the TUBE input lysate was reserved and analyzed by immunoblotting for sen2-1HAts. (E) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sen2-1HAts (pMM160) in ubc4\u0394 cells compared to isogenic WT (BY4741). (F) Lysates from the WT and san1\u0394 strains used in A expressing sam35-2HAts (pMM157) were fractionated at 12,000xg at 37\u00b0C into mitochondrial pellets (P) and post-mitochondrial supernatants (S). Fractions were subject to immunoblotting with antibodies to HA, PGK, and PORIN. (G) Lysates from the WT and ubr1\u0394 strains used in B expressing sen2-1HAts (pMM160) were fractionated at 12,000xg at 37\u00b0C into mitochondrial pellets (P) and post-mitochondrial supernatants (S). Fractions were subject to immunoblotting with antibodies to HA, PGK, and PORIN.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in mdm30\u0394 (A); rsp5-1 and rsp5-3 (B); ubr1\u0394 (yMM149; C); or san1\u0394 (D) strains relative to isogenic WT strains. Proteins were detected by immunoblotting. Percentage of each ts- substrate remaining is labeled for each time point under blots.\n\nTo confirm that Ubr1 and San1 can act on ts- proteins at the MOM, we examined the localization of sam35-2HAts and sen2-1HAts by fractionation in san1\u0394 and ubr1\u0394, respectively. In these strains, both ts- proteins still accumulated almost exclusively in the pellet fraction (Figure 3F and G). These results establish that San1 and Ubr1 can function as components of the MAD machinery for proteasome-mediated degradation of sam35-2HAts and sen2-1HAts, respectively.\n\n### Cytosolic chaperones are required for MAD QC substrate degradation\n\nThe cytosolic SSA family of Hsp70 chaperones (Ssa1, Ssa2, Ssa3, and Ssa4) is broadly involved in protein folding and refolding, but also plays a role in the degradation of several San1 and Ubr1 QC substrates (Guerriero et al., 2013; Heck et al., 2010; Prasad et al., 2010; Stolz et al., 2013). During protein QC, these chaperones appear to prevent protein aggregation and facilitate ubiquitination (Huyer et al., 2004; Metzger et al., 2008; O'Donnell et al., 2017; Park et al., 2007; Scazzari et al., 2015; Stolz et al., 2013). However, they have not been implicated in MAD. Interestingly, both sam35-2HAts and sen2-1HAts were strongly stabilized in a conditional yeast strain where three SSA family members are deleted and the fourth (SSA1) is ts- (ssa1-45ts; ssa1-45ts ssa2\u0394 ssa3\u0394 ssa4\u0394) relative to the control strain (SSA1; SSA1 ssa2\u0394 ssa3\u0394 ssa4\u0394; Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig4-v2.jpg)\n\n**Figure 4.:** (A) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts (pMM231) and sen2-1HAts (pMM234) in WT (SSA1) and ssa1-45ts cells. Proteins were detected by immunoblotting. Graphed below is the mean and SD of the PGK-normalized HA signal at each time point for three biological replicates. (B) Lysates from WT and ssa1-45ts strains expressing sam35-2HAts (pMM231) or sen2-1HAts (pMM234) were fractionated at 12,000xg at 37\u00b0C into mitochondrial pellets (P) and post-mitochondrial supernatants (S). Fractions were subject to immunoblotting with antibodies to HA, PGK, and PORIN. (C) Ubiquitination of sam35-2HAts and sen2-1HAts was assessed by IP with anti-HA agarose from lysates from WT and ssa1-45ts cells expressing either empty vector (EV; pRS316), sam35-2HAts (pMM231), or sen2-1HAts (pMM234), followed by immunoblotting with either ubiquitin or c-myc antibody. 1% of IP input lysate was reserved and analyzed by immunoblotting. (D) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts (pMM157) and sen2-1HAts (pMM160) in WT (yTHC) and Sis1-DAmP cells treated with 10 \u03bcg/mL doxycycline for 18 hr at 25\u00b0C to decrease Sis1 mRNA abundance prior to the addition of CHX.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Sodium carbonate (Na2CO3) extraction of sam35-2HAts or sen2-1HAts (pMM157 and 160, respectively) from the 12,000xg mitochondrial pellet of ssa1-45 cells. Control treatments of sodium chloride (NaCl) and buffer are shown for comparison. Proteins were detected with immunoblotting with HA and PORIN antibodies. (B) CHX chase for the indicated times at 37\u00b0C assessing the turnover of Fzo1HA (pADH1-Fzo1pHA) in SSA1 WT and ssa1-45 mutant strains. Proteins were detected by immunoblotting. Percentage of each ts- substrate remaining is labeled for each time point under blots. (C) Sis1 protein levels in WT (yTHC) and Sis1-DAmP cells treated with 10 \u03bcg/mL doxycycline for 18 hr at 25\u00b0C were quantified and normalized to PGK levels. The mean and SD were graphed (N\u00a0=\u00a03). (D) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in ydj1\u0394 and hlj1\u0394. (E, F) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in sse1\u0394 (E) or chaperone mutant strains (hsc82\u0394 hsp82-G313N, sti1\u0394, hsp104\u0394, dsk2\u0394; F), relative to their isogenic WT strains.\n\nSSA Hsp70 chaperones can play a role in the sorting of mitochondrial proteins to and into mitochondria (Deshaies et al., 1988; Eliyahu et al., 2012; Young et al., 2003). To rule out the possibility that the stabilization of mitochondrial ts- alleles in the ssa1-45ts strain is reflective of a defect in mitochondrial targeting, mitochondrial fractionation was performed. Both sam35-2HAts and sen2-1HAts were localized to the pellet fraction (Figure 4B), where they were extractable by sodium carbonate (Figure 4\u2014figure supplement 1A). Notably, the SSA1 chaperone was also required for ubiquitination: despite the accumulation of unmodified sam35-2HAts and sen2-1HAts, ubiquitin-modified forms are dramatically reduced when SSA1 is inactivated (Figure 4C). This is consistent with the established QC function for SSA chaperones in engaging substrates prior to their ubiquitination (Shiber and Ravid, 2014). In contrast to the ts- proteins, degradation of the native MOM UPS substrate, Fzo1HA, was largely unaffected by loss SSA function (Figure 4\u2014figure supplement 1B). This is consistent with a dichotomy in chaperone requirements between native and non-native MAD substrates.\n\nHsp40 co-chaperones (J-proteins) stimulate the ATPase activity of Hsp70, which is required for substrate interactions. In particular, Sis1 and Ydj1 play roles in SSA-dependent protein QC throughout the cell (Heck et al., 2010; Lu and Cyr, 1998; Prasad et al., 2018; Shiber and Ravid, 2014; Summers et al., 2013). Depletion of\u00a0~90% of Sis1 protein using Sis1 DAmP cells (Figure 4\u2014figure supplement 1C) slowed the turnover of both sam35-2HAts and sen2-1HAts (Figure 4D), while loss of Ydj1 or its ortholog, Hlj1, did not (Figure 4\u2014figure supplement 1D). Recent studies indicate that the degradation of many San1 and Ubr1 cytosolic substrates occurs following nuclear import that is dependent both on Ydj1 and the Hsp70 nucleotide exchange factor (Hsp110) Sse1 (Prasad et al., 2018; Samant et al., 2018). We did not detect a role for Sse1 in the degradation of sam35-2HAts and sen2-1HAts (Figure 4\u2014figure supplement 1E). Loss of other factors implicated in San1 and Ubr1 nuclear import-dependent QC, including Hsc82/Hsp82, Sti1, Hsp104, and Dsk2 were also without effect on the degradation of sam35-2HAts and sen2-1HAts (Figure 4\u2014figure supplement 1F). These results establish that the degradation of the mitochondrial QC substrates is dependent on both Hsp70 and Hsp40 chaperones, but independent of nuclear import.\n\n### The Cdc48-Npl4-Ufd1 complex is required for degradation of MAD QC substrates\n\nThe AAA-ATPase Cdc48 plays a broad role in many QC pathways, generally functioning as a protein \u2018unfoldase\u2019 or \u2018segregase,\u2019 while also maintaining protein solubility prior to proteasomal degradation (Neal et al., 2017; Ye et al., 2017). Cdc48 and its co-factors Npl4 and Ufd1 have been implicated in the UPS-mediated turnover of several yeast MOM proteins (Cohen et al., 2008; Heo et al., 2010; Wu et al., 2016). Both sam35-2HAts and sen2-1HAts were stabilized in conditional Cdc48, Npl4, and Ufd1 strains (Figure 5A). In contrast, loss of Msp1, another AAA-ATPase that localizes to mitochondria and dislocates mislocalized tail-anchored proteins from the MOM (Chen et al., 2014; Okreglak and Walter, 2014; Wohlever et al., 2017), stabilized neither sam35-2HAts nor sen2-1HAts (Figure 5\u2014figure supplement 1A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig5-v2.jpg)\n\n**Figure 5.:** (A) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts (pMM157) or sen2-1HAts (pMM160) in cdc48-3, npl4-1, and ufd1-1 mutant strains compared to isogenic WT strains. Proteins were detected by immunoblotting. Graphed below is the mean and SD of the PGK-normalized HA signal at each time point for three biological replicates. (B) Lysates from the strains used in A expressing sam35-2HAts (pMM157) or sen2-1HAts (pMM160) were fractionated at 12,000xg\u00a0at 37\u00b0C into mitochondrial pellets (P) and post-mitochondrial supernatants (S). Fractions were subject to immunoblotting with antibodies to HA, PGK, and PORIN. (C) Ubiquitination of sam35-2HAts and sen2-1HAts was assessed by IP from lysates of the ufd1-1 mutant and isogenic WT strain used in A using TUBE agarose, followed by immunoblotting with HA antibody. 2.5% of the TUBE input lysate was reserved and analyzed by immunoblotting.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in WT (BY4741) and msp1\u0394 cells. Proteins were detected by immunoblotting. Percentage of each ts- substrate remaining is labeled for each time point under blots. (B, C) Ubiquitination of sam35-2HAts and sen2-1HAts was assessed by immunoprecipitation (IP) using tandem ubiquitin-binding entities (TUBE) agarose from cdc48-3 (B) and npl4-1 (C) mutant and isogenic WT lysates expressing EV (pRS315), sam35-2HAts (pMM157), or sen2-1HAts (pMM160), followed by immunoblotting with HA antibody. 2.5% of the TUBE input lysate was reserved and analyzed by immunoblotting. Asterisk indicates a cross-reactive band seen in some exposures. (D) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in WT (BY4741), dsk2\u0394 rad23\u0394 (SM5186), or ddi1\u0394 cells.\n\nGiven the role of the Cdc48-Npl4-Ufd1 complex as a segregase, we examined whether the ts- proteins accumulated at mitochondria when activity of the complex is compromised, as might be predicted. For both cdc48-3 and its isogenic WT parental strain, interpretation of fractionation results was clouded by some baseline protein detected in the post-mitochondrial supernatant (Figure 5B, left panels). For npl4-1 and ufd1-1, however, both substrates remain primarily mitochondrial (Figure 5B, middle and right panels). This indicates that in the absence of a functional Cdc48-Npl4-Ufd1 complex sam35-2HAts and sen2-1HAts largely retain their mitochondrial localization.\n\nThe Cdc48-Npl4-Ufd1 complex generally binds to ubiquitinated proteins (Bodnar et al., 2018; Park et al., 2005; Tsuchiya et al., 2017), acting downstream of E3-mediated ubiquitination. Accordingly, we detected a relative increase in ubiquitinated sam35-2HAts and sen2-1HAts in Cdc48-Npl4-Ufd1 complex mutants (Figure 5C and Figure 5\u2014figure supplement 1B and C). In ERAD, the UBL- and UBA-containing proteins Rad23 and Dsk2 have been implicated as factors that shuttle ubiquitinated substrates from the Cdc48 complex to proteasomes. Deletion of these or another proteasome shuttling factor, Ddi1, did not affect the degradation of sam35-2HAts or sen2-1HAts (Figure 5\u2014figure supplement 1D), further distinguishing MAD from ERAD. All together, these results indicate that ubiquitinated mitochondrial QC substrates require the Cdc48-Npl4-Ufd1 complex for efficient proteasomal degradation.\n\n### The Cdc48 complex co-factors Ubx2 and Doa1 are implicated\u00a0in MAD\n\nThe Cdc48-Npl4-Ufd1 complex can be recruited to substrates via Cdc48\u2019s interaction with co-factors (Buchberger et al., 2001; Buchberger et al., 2015; Wu et al., 2016). Vms1 and Doa1 are two cytosolic Cdc48 co-factors implicated in mitochondrial homeostasis (Heo et al., 2010; Izawa et al., 2017; Nielson et al., 2017; Wu et al., 2016), although their reported involvement in mitochondrial protein turnover, particularly with respect to Fzo1, has been inconsistent (Chowdhury et al., 2018; Esaki and Ogura, 2012; Wu et al., 2016). Loss of Vms1 had no effect on the degradation of sam35-2HAts and sen2-1HAts (Figure 6\u2014figure supplement 1A), while loss of Doa1 had a small, but significant effect (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig6-v2.jpg)\n\n**Figure 6.:** (A) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts (pMM157) and sen2-1HAts (pMM160) in WT (BY4741) and doa1\u0394 cells (yJS208). Proteins were detected by immunoblotting. Graphed below is the mean and SD of the PGK-normalized HA signal at each time point for three biological replicates. (B) CHX chase as in A for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts (pMM157) and sen2-1HAts (pMM160) in WT (BY4741) and ubx2\u0394 cells (yJS155). (C) CHX chase as in A for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts (pMM157) and sen2-1HAts (pMM160) in WT (BY4741) and ubx2\u0394 (yJS155) cells co-expressing either empty vector (EV; pRS315) or CEN Ubx2-FLAG (pMM242). (D) CHX chase as in A for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts (pMM231) or sen2-1HAts (pMM234) in WT (BY4741) cells or ubx2\u0394 (yJS155) cells expressing either EV (pRS315) or Doa1-FLAG (pMM254) from a high copy 2\u03bc plasmid. (E) Ubiquitination of sam35-2HAts and sen2-1HAts was assessed by IP using TUBE agarose or anti-HA agarose from ubx2\u0394 (yJS155) and WT (BY4741) lysates expressing EV (pRS315), sam35-2HAts (pMM157), or sen2-1HAts (pMM160), followed by immunoblotting with HA or c-myc antibody. 2.5% or 1% of the IP input lysate was reserved and analyzed by immunoblotting. (F) Co-IP of Ubx2-FLAG (pMM242) with sam35-2HAts or sen2-1HAts (pMM231 and 234, respectively) from pre1-1 pre2-2 (WCG4-11/21a) cells was assessed by immunoblotting with the indicated antibodies. IP of Ubx2-FLAG from cells co-expressing EV (pRS316) in place of HA-tagged substrates and 0.5% of the input lysate are shown for comparison. (G) Lysate (\u2018Total\u2019) and increasing amounts of mitochondria purified by 12,000xg and sucrose gradient fractionation (\u2018Mitos\u2019) from Ubx2-TAP-expressing cells were examined by immunoblotting with the indicated antibodies. (H) Lysates from WT (BY4741) and ubx2\u0394 (yJS155) cells expressing sam35-2HAts or sen2-1HAts (pMM157 and 160, respectively) were fractionated at 12,000xg at 37\u00b0C into mitochondrial pellets (P) and post-mitochondrial supernatants (S). Fractions were subject to immunoblotting with antibodies to HA, PGK, and PORIN.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in vms1\u0394 compared to isogenic WT (BY4741). Proteins were detected by immunoblotting. Percentage of each ts- substrate remaining is labeled for each time point under blots. (B) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in the indicated UBX protein deletion strains compared to isogenic WT (BY4741). (C) CHX chase for the indicated times at 37\u00b0C assessing the turnover of SAM35HA or SEN2HA (pMM158 or 159, respectively) in ubx2\u0394 (yJS155) compared to isogenic WT (BY4741). (D) Co-IP of Ubx2-FLAG (pMM242) with SAM35HA, sam35-2HAts, SEN2HA, or sen2-1HAts (pMM232, pMM231, pMM233, and 234, respectively) from pre1-1 pre2-2 (WCG4-11/21a) cells was assessed by immunoblotting with the indicated antibodies. IP of Ubx2-FLAG from cells co-expressing EV (pRS316) in place of HA-tagged substrates and 0.5% of the input lysate are shown for comparison. (E) CHX chase for the indicated times at 30\u00b0C assessing the turnover of Fzo1HA (pADH1-Fzo1pHA) in WT (BY4741) and doa1\u0394 (yJS208) strains. (F) CHX chase for the indicated times at 30\u00b0C assessing the turnover of Fzo1HA (pADH1-Fzo1pHA) in WT (BY4741) and ubx2\u0394 (yJS155) cells co-expressing either EV (pRS315) or Ubx2-FLAG (pMM242). (G) Co-IP of Ubx2-FLAG (pMM242) with Fzo1HA (pADH1-Fzo1pHA) from pre1-1 pre2-2 (WCG4-11/21a) cells was assessed by immunoblotting with the indicated antibodies. Negative control of IP of Ubx2-FLAG from cells co-expressing empty vector (pRS316) in place of HA-tagged substrates is shown, as is 0.5% of the input lysate. (H) Ubiquitination of Fzo1HA was assessed by IP using TUBE agarose from ubx2\u0394 (yJS155) and WT (BY4741) lysates expressing EV (pRS316) or Fzo1HA (pADH1-Fzo1pHA) followed by immunoblotting with HA antibody. 2.5% of the TUBE input lysate was reserved and analyzed by immunoblotting. (I) Microscopy analysis of immobilized Ubx2-GFP cells co-expressing either mtRFP (pMD12) to label mitochondria or SEC63-RFP (pSM1959) to label the ER. Some regions of co-localization are highlighted with yellow arrows. \u2018Merge\u2019 of GFP (green) and RFP (magenta) channels and differential interference contrast (DIC) are shown; scale bar\u00a0=\u00a010 um. (J) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in WT (BY4741) and mmm1\u0394, mdm12\u0394, mdm34\u0394, and mdm10\u0394 strains. (K, L) CHX chase for the indicated times at 37\u00b0C assessing the turnover of sam35-2HAts or sen2-1HAts (pMM157 or 160, respectively) in a ubc6\u0394ubc7\u0394 (K; SM5364) or doa10\u0394hrd1\u0394 (L, SM5360) strains relative to their isogenic WT strain (BY4741). (M) CHX chase for the indicated times at 30\u00b0C assessing the turnover of Fzo1HA (pADH1-Fzo1pHA) in WT (BY4741) and mmm1\u0394, mdm12\u0394, mdm34\u0394, and mdm10\u0394 strains. (N) Lysates from WT (BY4741) and ubx2\u0394 (yJS155) cells expressing Fzo1HA (pMM190) were fractionated at 12,000xg at 37\u00b0C into mitochondrial pellets (P) and post-mitochondrial supernatants (S). Fractions were subject to immunoblotting with antibodies to HA, PGK, and PORIN.\n\nWe next examined deletions of each of the UBX (Ubiquitin-regulatory X) proteins, a family of Cdc48 binding co-factors containing a C-terminal Ub fold (UBX) domain (Schuberth and Buchberger, 2008; Schuberth et al., 2004). Notably, only the loss of Ubx2 significantly stabilized sam35-2HAts and sen2-1HAts (Figure 6B and Figure 6\u2014figure supplement 1B). Ubx2 (as well as its mammalian ortholog, UbxD8) is well-characterized as an ER membrane protein with roles in ERAD and lipid droplet homeostasis (Kolawa et al., 2013; Neuber et al., 2005; Schuberth and Buchberger, 2005; Wang and Lee, 2012). We confirmed Ubx2\u2019s role in degradation of the mitochondrial ts- proteins by complementation with FLAG-tagged Ubx2 in the ubx2\u0394 strain (Figure 6C). Furthermore, redundant functions for Ubx2 and Doa1 were ruled out by a failure of Doa1 overexpression to restore sam35-2HAts or sen2-1HAts degradation in ubx2\u0394 cells (Figure 6D).\n\nAs might be predicted given the role of Ubx2 in linking ubiquitinated proteins to the Cdc48 complex, ubiquitinated forms of the ts- substrates accumulated in the absence of Ubx2 (Figure 6E). We also detected a physical association between Ubx2-FLAG and the ts- proteins as assessed by co-immunoprecipitation (Figure 6F). We see no evidence that loss of Ubx2 affects the already slow turnover of either SAM35HA or SEN2HA (Figure 6\u2014figure supplement 1C), and an association between these WT proteins and Ubx2 was also not as pronounced relative to their abundance (Figure 6\u2014figure supplement 1D). However, in agreement with recent reports (Chowdhury et al., 2018; Nahar et al., 2020; Wu et al., 2016), we find that loss of Ubx2 and, to a lesser extent, Doa1, stabilizes Fzo1HA, which is a native MOM UPS substrate (Figure 6\u2014figure supplement 1E and F). Importantly, we also establish that Fzo1HA physically interacts with Ubx2, accompanied by an increase in ubiquitinated forms (Figure 6\u2014figure supplement 1G and H). Our findings are consistent with Ubx2 interacting with UPS-targeted native and misfolded substrates downstream of their ubiquitination to facilitate degradation.\n\nAlthough Ubx2 is an ER transmembrane protein, one study suggested it may also localize to mitochondria (Wang and Lee, 2012), which was recently corroborated (M\u00e5rtensson et al., 2019). We also confirmed this by co-localization of Ubx2-GFP with both ER (Sec63-RFP) and mitochondrial (mtRFP) markers by microscopy (Figure 6\u2014figure supplement 1I). The mitochondrial localization of a portion of Ubx2 was further verified biochemically by isolation of mitochondria largely devoid of co-purifying cytosolic (PGK), ER luminal (CPY), or ER membrane (Cue1) proteins (Figure 6G).\n\nAs the ER and mitochondria are in close apposition at ER-mitochondrial contact sites, it is possible that ER-localized Ubx2 facilitates mitochondrial protein degradation. Recent studies have also characterized a pathway for degradation of tail-anchored proteins mislocalized to mitochondria that entails Msp1-mediated extraction and subsequent degradation at the ER by ERAD machinery (Dederer et al., 2019; Matsumoto et al., 2019). To exclude a potential role for the ER in sam35-2HAts and sen2-1HAts degradation, we assessed their turnover in mutants of the well-characterized ER-mitochondrial encounter structure (ERMES) complex. Loss of individual ERMES subunits reduces ER-mitochondrial tethering by greater than 70% and partially disrupts ion and lipid exchange between the organelles (Kornmann and Walter, 2010; Lahiri et al., 2014; Murley and Nunnari, 2016). The turnover of sam35-2HAts and sen2-1HAts was unaffected in strains mutant for each of the four ERMES components (Figure 6\u2014figure supplement 1J), indicating that significant reductions in ER-mitochondrial contact do not impair their degradation. Furthermore, ts- protein degradation is unaffected by combined loss of the major ERAD E2s, Ubc6 and Ubc7, or E3s, Doa10 and Hrd1 (Figure 6\u2014figure supplement 1K and L), with which Ubx2 functionally and physically interacts at the ER (Neuber et al., 2005; Schuberth and Buchberger, 2005). Ubc6, Ubc7, and Doa10 have also been implicated in the degradation of mislocalized tail-anchored proteins subsequent to Msp1-dependent removal from mitochondria (Dederer et al., 2019; Matsumoto et al., 2019). Degradation of sam35-2HAts and sen2-1HAtsis independent of Msp1 (Figure 5\u2014figure supplement 1A). Finally, as only\u00a0~20% of the ER is found in the mitochondrial pellet fraction at 12,000xg (Figure 2\u2014figure supplement 1D), the ts- substrates would be expected to accumulate predominantly in the post-mitochondrial supernatant (S) if they were being degraded from the ER. However, fractionation data in the proteasome mutant strain (Figure 2C and Figure 2\u2014figure supplement 1E) strongly suggests that ts- protein degradation occurs from the mitochondria. Sam35-2HAts and sen2-1HAts also largely accumulate in the mitochondrial pellet in ubx2\u0394 cells (Figure 6H). Similar to the ts- proteins, degradation of Fzo1HA, which is a substrate for the cytosolic E3 SCFMDM30 and its cognate E2 Cdc34 (Cohen et al., 2008), is unaffected by loss of ERMES components (Figure 6\u2014figure supplement 1M). Fzo1 also accumulates predominantly in the mitochondrial pellet when Ubx2 is absent (Figure 6\u2014figure supplement 1N). Thus, our data indicate that the mitochondrial population of Ubx2 interacts with UPS-targeted MAD substrates post-ubiquitination to facilitate their degradation from the MOM.\n\n## Discussion\n\nMitochondria are essential to cellular bioenergetics and metabolism. It is therefore vital that QC mechanisms dispose of damaged proteins that can compromise function. In mammalian cells, this is accomplished at the macroscopic level through mitophagy (Pickles et al., 2018). Here, we define a UPS-mediated pathway for the degradation of individual dysfunctional yeast MOM proteins using two newly-established model QC substrates, sam35-2HAts and sen2-1HAts (schematized in Figure 7). While previous mitochondrial UPS substrates have consisted primarily of native proteins (Belgareh-Touz\u00e9 et al., 2017; Cohen et al., 2008; Heo et al., 2010; Wu et al., 2016), sam35-2HAts and sen2-1HAts contain mutations that render them unstable at the non-permissive temperature, and thus mimic damaged, misfolded proteins. These new mitochondrial model substrates have revealed a tightly-coupled degradation pathway at the MOM that requires both cytosolic and mitochondrial machinery.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/51065/elife-51065-fig7-v2.jpg)\n\n**Figure 7.:** When the temperature is increased to 37\u00b0C, the peripheral MOM ts- proteins sam35-2HAts and sen2-1HAts become non-functional (denoted by a star) yet remain at the mitochondrial outer membrane (step 1). They are recognized as quality control substrates and ubiquitinated (step 2), which requires cytosolic chaperones (Ssa1 and Sis1) and the ubiquitin ligase San1 (for sam35-2HAts) or Ubr1 and the ubiquitin conjugating enzyme Ubc4 (for sen2-1HAts). Once ubiquitinated, the Cdc48-Npl4-Ufd1 unfoldase, along with its co-factor Doa1 and a mitochondria-localized pool of its co-factor Ubx2 (step 3), act to direct them to the 26S proteasome for degradation (step 4).\n\nThis MAD QC pathway utilizes factors that have not been previously linked to mitochondria or implicated in MAD of native MOM proteins. It is also not identical to any other cellular QC pathway, although there are points of intersection. All of these degradation pathways, unsurprisingly, require 26S proteasome activity. In many cases, the involvement of the Cdc48-Npl4-Ufd1 AAA-ATPase complex represents another point of convergence (Benischke et al., 2014; Cohen et al., 2008; Gallagher et al., 2014; Heo et al., 2010; Jarosch et al., 2002; Tanaka et al., 2010; Wu et al., 2016; Xu et al., 2011). However, tail-anchored proteins mistargeted to mitochondria and unimported mitochondrial precursors that accumulate at the mitochondrial surface following mitochondrial import stress also require the AAA-ATPase Msp1 for their recognition and extraction from mitochondria (Chen et al., 2014; Matsumoto et al., 2019; Okreglak and Walter, 2014; Weidberg and Amon, 2018; Wohlever et al., 2017). We found Msp1 to be dispensable for the degradation of mitochondrial ts- substrates. It was recently determined that the degradation of these mislocalized tail-anchored proteins involves their re-localization to the ER following Msp1 extraction, where they are then ubiquitinated by ERAD machinery (Dederer et al., 2019; Matsumoto et al., 2019). The MAD QC pathway characterized here is distinct from this pathway: ts- substrates remain mitochondrial and are degraded independently of ERAD E2s or E3s. The molecular determinants, spatial restrictions, and co-factors that underlie ubiquitination and degradation at the mitochondria versus Msp1-dependent ER re-targeting will be of particular interest to elucidate going forward.\n\nThe Cdc48-Npl4-Ufd1 complex plays a role in both of these pathways and utilizes unique substrate recruitment co-factors. Of these co-factors, Vms1 is recruited to mitochondria from the cytosol in response to translational or oxidative stress (Izawa et al., 2017; Nielson et al., 2017) and cytosolic Doa1 is implicated in the turn-over of native MOM proteins (Wu et al., 2016). Only loss of Doa1 had an effect on mitochondrial ts- protein degradation. However, we found another Cdc48 complex co-factor, Ubx2, to have a substantially greater role in degradation of the two ts- substrates. Ubx2 is well-known as an ER transmembrane protein with a role in ERAD. Here, we provide strong evidence for a discrete, functional, mitochondrial pool of Ubx2. Interestingly, we find that Ubx2 also interacts with Fzo1 at mitochondria and is required for its degradation. This raises the interesting possibility that Ubx2, as well as its mammalian ortholog UbxD8, will have a broad role in MAD and mitochondrial homeostasis in addition to its role in ERAD. Consistent with this, while this manuscript was in preparation, a role for Ubx2 in the turnover of mitochondrial precursor proteins arrested in the Tom40 translocon was reported (M\u00e5rtensson et al., 2019).\n\nWith regard to ubiquitination, we find no evidence for the involvement of Rsp5 or SCFMdm30 ubiquitin ligases, which are both implicated in ubiquitination of native MOM proteins and/or maintenance of mitochondrial integrity (Belgareh-Touz\u00e9 et al., 2017; Cohen et al., 2008; Escobar-Henriques et al., 2006; Fritz et al., 2003; Wu et al., 2016). Instead, San1 and Ubr1, which have broad roles as quality control E3s for misfolded cytosolic and nuclear proteins (Amm et al., 2016; Amm and Wolf, 2016; Eisele and Wolf, 2008; Gardner et al., 2005; Guerriero et al., 2013; Heck et al., 2010; Khosrow-Khavar et al., 2012; Lewis and Pelham, 2009; Nillegoda et al., 2010; Prasad et al., 2012; Prasad et al., 2018; Samant et al., 2018; Summers et al., 2013), are required to degrade mitochondrial ts- substrates. Recent studies suggest that the degradation of many cytosolic San1 and Ubr1 substrates requires prior nuclear import (Prasad et al., 2018; Samant et al., 2018). Sam35-2HAts and sen2-1HAts, however, remain mitochondrial when degradation is blocked and specific factors implicated in nuclear import were found to be dispensable. While there have also been reports of Ubr1 contributing to ERAD (Stolz et al., 2013), as noted above, MAD QC appears to be distinct from ERAD.\n\nFor ubiquitination of QC substrates to occur, they must first be recognized as being improperly folded. In most QC systems, this recognition requires chaperones. Here, the involvement of the SSA family of Hsp70s in mitochondrial ts- protein degradation reflects commonality with cytosolic QC pathways and ERAD pathways for cytosolic misfolded domains (ERAD-C). The SSA family of chaperones is required for co-translational folding or import of at least some mitochondrial proteins (Ben-Menachem et al., 2018; Deshaies et al., 1988; Sass et al., 2003; Young et al., 2003), positioning them to play a role in recognizing misfolded mitochondrial proteins and targeting them to the UPS. On the other hand, we have found that the degradation of a native MOM protein, Fzo1, largely does not require Hsp70 chaperones, extending to mitochondria a distinction between misfolded substrates and those whose ubiquitination occurs in a regulated manner.\n\nWhether there are other, yet to be identified, factors involved in the degradation of MOM proteins remains to be seen. Several mitochondrial inner membrane and IMS proteins have also been identified as proteasome substrates (Bragoszewski et al., 2013; Margineantu et al., 2007; Pearce and Sherman, 1997; Radke et al., 2008). It now becomes of interest to ascertain how their degradation overlaps with and diverges from the QC pathway defined herein. Finally, it will also be important to determine how our findings extend to mammalian mitochondrial protein turnover and mitochondrial homeostasis as a whole.\n\n## Materials and methods\n\n### Yeast strains, plasmids, and growth conditions\n\nSaccharomyces cerevisiae strains expressing ts- alleles were cultured at 25\u00b0C in minimal media supplemented with 2% glucose and the appropriate amino acids, unless otherwise indicated. For spot growth assays, 10-fold serial dilutions beginning with 0.1 OD600 units of cells were spotted to YPD and incubated at 25\u00b0C for 3 days or 37\u00b0C for 2 days.\n\nStrains used in this study can be found in the Supplementary file 1: Key Resources Table. Deletion collection strains were confirmed by PCR using a KanMX-specific oligo (oMM19; see Supplementary file 1: Key Resources Table for oligo sequences) paired with ORF-specific primers annealing 500 bp upstream of the start codon. A strain expressing genomic sam35-2HAts (yMM37) was constructed by a one-step PCR-mediated HA tagging using pFA6a-3HA-His3M\u00d76 (Longtine et al., 1998) as a PCR template with oligos oMM84 and oMM85 and integration into a sam35-2ts strain (Li et al., 2011). Deletion strains yMM149 (ubr1::KanMX) and yJS155 (ubx2::KanMX) were constructed by PCR-mediated gene disruption using yeast deletion collection strains (GE Dharmacon) as PCR templates with oligos oMM236 and oMM237, followed by integration into strain WCG4a (for yMM149) or oligos oJS18 and oJS20 with integration into BY4741 (for yJS155). Strain yJS208 (doa1::KanMX) was constructed by PCR-mediated gene disruption using pFA6a-KanMX6 (Longtine et al., 1998) as a PCR template with oligos oMM257 and oMM258 and integration in strain WCG4a.\n\nPlasmids used in this study can be found in the Supplementary file 1: Key Resources Table. Plasmid pMM157 was constructed by PCR amplification of sam35-2HAts with adjacent promoter and terminator sequence from yMM37 using oligos oMM128 and oMM129 containing flanking XhoI and XbaI restriction sites, respectively, and ligation of this insert into the XhoI and XbaI sites in pRS315 (Sikorski and Hieter, 1989). Plasmid pMM160 was constructed by PCR amplification of sen2-1HAts with adjacent promoter and terminator sequence from yMM41 using oligos oMM129 and oMM130 containing flanking XbaI and XhoI restriction sites, respectively, and ligation of this insert into the XhoI and XbaI sites in pRS315. Plasmids pMM231 and 234 were constructed by subcloning the Xho1/XbaI flanked insert from pMM157 and 160, respectively, into pRS316 (Sikorski and Hieter, 1989). Plasmids pMD1 and pMD4 were constructed by digestion of pMM157 and pMM160, respectively, with BamHI/AscI to replace the HA tag with GFP from pFA6a-GFP cut with the same sites.\n\nPlasmid pMM242 was generated in two steps. First, pUBX2-UBX2-TAP with flanking XhoI and AscI sites was PCR amplified using a Ubx2-TAP strain (GE Dharmacon) as a template with oligos oJS18 and oJS19 and ligated into pRS315. The TAP tag was then dropped out by restriction digest with BamHI/AscI and replaced with annealed oligos oMM240 and oMM241 encoding a 3x FLAG epitope with overhang compatible for ligation into BamHI/AscI. pMM254 was generated by PCR amplifying the Doa1 promoter and ORF from the genome of BY4741 with oligos containing flanking XhoI (oMM267) and AscI/3xFLAG epitope (oMM268) and ligation into pRS426 (Christianson et al., 1992) digested at the same sites.\n\n### Antibodies\n\nRabbit polyclonal anti-Sam35 (Chan and Lithgow, 2008) was a generous gift from Trevor Lithgow. Rabbit polyclonal anti-Sis1 (Yan and Craig, 1999) was a generous gift from Elizabeth Craig. Rabbit polyclonal anti-Cue1 and anti-ubiquitin were described previously (Kostova et al., 2009). Commercial antibodies used were: mouse monoclonal PORIN (MTCO1; abcam); rabbit polyclonal Prc1 (CPY; abcam); mouse monoclonal GFP (Santa Cruz Biotechnology); mouse monoclonal phosphoglycerate kinase 1 (PGK; Life Technologies); rat monoclonal peroxidase-conjugated anti-HA (3F10; Roche); mouse monoclonal anti-FLAG (M2; Sigma-Aldrich); rabbit polyclonal anti-FLAG (Sigma-Aldrich); and rabbit polyclonal anti-c-myc (Abcam).\n\n### Cycloheximide chase and immunoblotting\n\nCycloheximide (CHX) chase analyses were performed as described previously Metzger et al. (2013) at 25\u00b0C or 37\u00b0C. For chases at 37\u00b0C, cells were cultured at the permissive temperature of 25\u00b0C until the addition of 100 \u03bcg/mL CHX, after which the temperature was increased to 37\u00b0C to accelerate the turnover of the ts- proteins. Maintaining cells at 25\u00b0C until the addition of CHX may be insufficient to fully inactivate ts- conditional yeast strains prior to the CHX chases, resulting in an underestimation of the role of the inactivated protein in degradation of substrates. Cells were then lysed in 1% \u03b2-mercaptoethanol (\u03b2me)/250 mM NaOH and proteins were precipitated in 5% trichloroacetic acid (TCA). Protein pellets were resuspended in TCA sample buffer (3.5% SDS, 0.5 M DTT, 80 mM Tris pH8.8, 8 mM EDTA, 15% glycerol, 0.1 mg/mL bromophenol blue). Samples were analyzed by SDS-PAGE and immunoblotting with the indicated antibodies according to standard procedures. Proteins were detected using SuperSignal West Pico Luminol Enhancer Solution (Thermo Scientific) or Amersham ECL Select (GE Healthcare) and a G:box (Syngene) or c280 Imager (Azure). Each CHX chase was repeated at least three times; shown in each figure is a representative blot. The percent of substrate remaining was calculated by quantification of anti-HA signal using ImageJ (National Institutes of Health, Bethesda, MD), followed by normalization of this signal to the anti-PGK signal at the same time point. The \u20180\u2019 time points were set to 100% and the mean and standard deviation (SD) at each time point for three independent biological replicates were graphed using GraphPad Prism 8 and fitted with one phase decay curves. Time points appearing to not have error bars have SD smaller than the size of the symbol.\n\n### Mitochondrial fractionation and sodium carbonate extraction\n\nMitochondria were isolated as described previously Gregg et al. (2009), with the following changes for the analysis of ts- proteins. Cultures were grown in minimal media containing the appropriate amino acids at 25\u00b0C. Cells were incubated in DTT Buffer (Gregg et al., 2009) for 30 min at 25\u00b0C and in Zymolyase Buffer (Gregg et al., 2009) with Zymolyase-100T (MP Biomedicals) for 45 min at 25\u00b0C, after which time the resulting spheroplasts were washed and resuspended in an equal volume of Zymolyase Buffer without Zymolyase-100T, either at 25\u00b0C or prewarmed to 37\u00b0C, as indicated. CHX (100 \u03bcg/mL) was added and spheroplasts were incubated without shaking at 25\u00b0C or 37\u00b0C for 5 min (sen2-1HAts) or 15 min (sam35-2HAts). Spheroplasts were then homogenized using a glass homogenizer and the resulting cleared lysate was fractionated at 12,000xg into a post-mitochondrial supernatant fraction (S) and mitochondrial pellet (P). Both fractions were precipitated in 10% TCA and washed in 2% TCA prior to resuspension in TCA sample buffer. Equivalent proportions of S and P were analyzed by SDS-PAGE and immunoblotting.\n\nFor the isolation of purified mitochondria devoid of other organelles, mitochondrial pellets isolated as above were resuspended in 3 mL SEM buffer (10 mM Tris-HCl pH 7.4, 0.6 M sorbitol, 1 mM EDTA, 0.2% BSA) and overlaid on a sucrose gradient layered top to bottom with 6 mL\u00a015% (weight/volume) sucrose/6 mL 23% sucrose/16 mL 32% sucrose/6 mL 60% sucrose and spun in a swinging-bucket rotor at 134,000xg for 1 hr at 4\u00b0C. The intact mitochondria residing at the 60%/32% sucrose interface were recovered and gently resuspended in SEM buffer and spun in a swinging-bucket rotor at 10,000xg for 30 min at 4\u00b0C. The pure mitochondrial pellet was precipitated in 10% TCA and washed in 2% TCA prior to resuspension in TCA sample buffer.\n\nFor sodium carbonate (Na2CO3) extraction of peripheral mitochondrial proteins, crude mitochondria isolated as above were treated with 0.2 M Na2CO3 or NaCl as described previously Boldogh and Pon\u00a0(2007) and analyzed by immunoblotting.\n\n### Ubiquitin immunoblotting and tandem ubiquitin-binding entities (TUBE) isolation of ubiquitinated proteins\n\nFor ubiquitin visualization using anti-ubiquitin immunoblotting, 10\u201330 OD600 units of mid log phase (OD600\u00a0=\u00a00.8\u20131) cells were grown at 25\u00b0C and incubated at 37\u00b0C for 30 min prior to protein preparation using \u03b2me/NaOH/TCA, as described above. Protein pellets resuspended in TCA sample buffer were diluted in Dilution buffer (50 mM Tris-HCl pH 7.5, 100 mM NaCl, 5 mM EDTA, 5% glycerol, 1% Triton X-100, 1x Complete Protease Inhibitor Cocktail (Roche), 1 mM NEM) and HA-tagged substrates were isolated by immunoprecipitation (IP) for 18 hr at 4\u00b0C using mouse monoclonal anti-HA affinity matrix (Sigma). Immunoprecipitated proteins were eluted with SDS-PAGE sample buffer and analyzed by SDS-PAGE. Ubiquitinated species were visualized by immunoblotting with ubiquitin antibodies. Unmodified substrates were detected by immunoblotting with HA antibodies.\n\nFor ubiquitin visualization using anti-myc immunoblotting, 10\u201330 OD600 units of early log phase (OD600 =\u00a0~0.4) cells were grown at 25\u00b0C, treated with 0.1 mM CuSO4 for 4 hr to induce expression of myc-ubiquitin, then incubated at 37\u00b0C for 30 min. Proteins were prepared as above. Mouse monoclonal anti-HA affinity matrix was pre-blocked with 1% ovalbumin and protein lysate was pre-cleared with Glutathione Sepharose 4-B (GE Healthcare Life Sciences) overnight at for 18 hr at 4\u00b0C, prior to IP of cleared protein lysate with the pre-blocked anti-HA affinity matrix for 4 hr at 4\u00b0C. Ubiquitinated species were visualized by immunoblotting with rabbit anti-c-myc antibodies. Unmodified substrates were detected by immunoblotting with HA antibodies.\n\nFor TUBE isolation of ubiquitinated proteins, 30\u2013100 OD600 units of mid log phase cell were grown at 25\u00b0C and incubated at 37\u00b0C for 30 min, at which time they were frozen at \u221280\u00b0C. Cell lysis was performed using glass beads in Lysis buffer (50 mM Tris-HCl pH 7.5, 200 mM NaCl, 1% Triton X-100, 1x Complete Protease Inhibitor Cocktail, 1 mM NEM). Lysates were cleared by centrifugation at 13,000xg for 20 min, then centrifugation at 13,000xg for 5 min. An aliquot of input lysate was precipitated in 10% TCA and protein pellets were resuspended in TCA sample buffer. The remainder of the lysate was incubated with TUBE-1 agarose (Life Sensors) for 18 hr at 4\u00b0C; ubiquitinated proteins were eluted from the TUBE-1 agarose with SDS-PAGE sample buffer. HA-tagged substrates in the input and TUBE-bound species were analyzed by SDS-PAGE and immunoblotting with HA antibodies.\n\nFor analysis of ubiquitination from 12,000xg mitochondria and post-mitochondrial supernatant fractions, cells were grown at 25\u00b0C and treated with 0.1 mM CuSO4 for 2 hr to induce expression of myc-ubiquitin prior to crude mitochondrial fractionation as described in the previous section. S and P fractions were then subject to protein preparation and IP as described above for ubiquitin visualization using anti-myc immunoblotting.\n\n### Co-immunoprecipitation\n\nFor co-IP, 10\u201330 OD600 units of mid log phase (OD600\u00a0=\u00a00.8\u20131) cells expressing Ubx2-FLAG were grown at 25\u00b0C and incubated at 37\u00b0C for 1 hr prior to glass bead lysis in Lysis Buffer (50 mM Tris-HCl pH7.5, 100 mM NaCl, 5% glycerol, 1 mM DTT, 1 mM PMSF, 1x Complete Protease Inhibitor Cocktail, 1 mM NEM). Cleared lysate was added to anti-HA affinity matrix and immunoprecipitated for 18 hr at 4\u00b0C; bound proteins were eluted with SDS-PAGE sample buffer and analyzed by immunoblotting.\n\n### Microscopy\n\nFor imaging Ubx2-GFP, logarithmically-growing yeast cells were immobilized on coverslips coated with concanavalin A and imaged using a Nikon Eclipse Ti inverted microscope, equipped with a 64 \u00b5m pixel CoolSNAP HQ2 camera (Photometrics), Intensilight C-HGFIE illuminator, and 100x NA 1.42 Plan Apo objective. For live-cell analysis of ts- proteins, logarithmically growing cells were embedded in agarose and treated with 100 \u03bcg/mL CHX at 25\u00b0C (time\u00a0=\u00a00) and then incubated at 37\u00b0C for the indicated times before imaging using a Nikon Eclipse Ti inverted microscope u60x NA 1.45 Plan Apo objective, Yokogawa spinning disc, 488 and 561 nm excitation lasers (Agilent technology MCL-400), back-illuminated EMCCD camera (Andor, DU888), and a 2x relay lens. A Nikon DS-U3 camera was used to record DIC images. 200 nm thick Z-sections spanning entire cell (~6 \u03bcm), were acquired. ImageJ (National Institutes of Health) was used to assemble the figures.\n",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "076dcdce-9381-4ff9-8cb8-a41e1d97ea3c",
+      "submission_id": "8ca6e38b-69b6-4ac2-bf97-7d11951bdcbd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Agnieszka Chacinska, University of Warsaw Poland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51065.sa1](https://doi.org/10.7554/eLife.51065.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe mitochondria-associated degradation (MAD) pathway mediates ubiquitination and removal of mitochondrial outer membrane (MOM) proteins, and targets them for degradation by the proteasome. So far, the components and the mechanism of this process have been poorly described. In this paper, the authors report the identification of components of this degradation pathway and uncover mechanisms in actions, providing an important contribution to the understanding of protein quality control pathways operating in the cell.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A protein quality control pathway at the mitochondrial outer membrane\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and David Ron as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Sonya Neal (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe study reveals a new pathway of quality control for mitochondrial outer membrane proteins that involves E ligases, other key and adaptor proteins as well as cytosolic chaperones. The pathway serves to remove temperature-destabilized variants of mitochondrial proteins.\n\nThe reviewers agree that the study is interesting and in principle well done. The findings are an important contribution to the field. However, several additions and controls are needed to bring this interesting story to eLife's standards.\n\nThe data concerning the involvement of E3 ligases, Cdc48, Sis1 and Doa1 should be strengthened. The efforts in this direction should involve an appropriate statistics of repetitions, and should include a clear explanation concerning high molecular weight bands (hardly entering the gel). Furthermore, in order to validate that ubiquitination is dependent on a substrate being misfolded, the ubiquitination status of wild type versions of Sam35 and Sen2 should be assessed as well for comparison to their mutant allele counterparts.\n\nAlong the similar lines of testing wild-type proteins and their accessibility for this quality control pathway, it would be good to know whether Sam35 and Sen2 bind to Ubx2 as well or whether this interaction is specific for misfolded proteins.\n\nSecond, it is important to consider and address a possibility of substrates transfer to the ER membrane, published recently by the Endo lab. The analyses should include a systematic estimation of ER contaminations in the fractionations, or look at a putative relocation by some other means, i.e. microscopy, especially under conditions of degradation block/inhibition.\n\nThird, to provide important mechanistic facts, the authors should determine the localization of the ubiquitinated molecules (and not only the non-modified species \u2013 Figure 3F and G). Are the Ub molecules enriched in the soluble fraction or still remain associated with mitochondria?\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A protein quality control pathway at the mitochondrial outer membrane\" for further consideration by eLife. Your revised article has been evaluated by David Ron as the Senior Editor, a Reviewing Editor and three peer reviewers.\n\nThe manuscript has been improved but there is one remaining issue that needs to be addressed before acceptance. In new Figure 6\u2014figure supplement 1D upper panel, the HA-antibody recognizes a prominent band in the absence of HA-tagged Sam35 (upper panel, lane 1); please comment on the nature of this band.\n",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d8c36118-c356-4100-b58e-e39dd3e67f96",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C1",
+      "claim": "sam35-2 and sen2-1 are temperature-sensitive alleles in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "To elucidate how misfolded mitochondrial proteins are targeted for destruction, we exploited two previously-identified yeast ts- alleles, sam35-2 and sen2-1 (Li et al., 2011; Milenkovic et al., 2004; Winey and Culbertson, 1988), whose degradation has not been assessed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites previous studies that identified these alleles as temperature-sensitive.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "1a52f740-2165-4cf0-a41a-fef2b016a332",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C2",
+      "claim": "Sam35 is an essential MOM protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Sam35 and Sen2 are essential MOM proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text directly states that Sam35 is an essential mitochondrial outer membrane protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "4b1cede1-e122-4c39-8f81-2863094d84c9",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C3",
+      "claim": "Sen2 is an essential MOM protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Sam35 and Sen2 are essential MOM proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text directly states that Sen2 is an essential mitochondrial outer membrane protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "3de9df09-3b37-48d5-bcc7-70962e26fe86",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C4",
+      "claim": "Sam35 is the substrate receptor of the MOM-embedded multiprotein sorting and assembly machinery (SAM) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Sam35 is the substrate receptor of the MOM-embedded multiprotein sorting and assembly machinery (SAM) complex required for assembly of \u03b2-barrel proteins into the MOM (Chan and Lithgow, 2008; Kozjak et al., 2003; Kutik et al., 2008; Milenkovic et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies establishing Sam35's role as the substrate receptor of the SAM complex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "0bdefb64-a321-4d1d-b195-911fb2ecbdaf",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C5",
+      "claim": "Sam35 is tightly embedded at the MOM via the Sam50 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Sam35 contains no apparent membrane spans, it is tightly embedded at the MOM via the Sam50 protein (Kutik et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a study showing Sam35's association with the MOM through Sam50.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "3ea8c2b1-01a9-4c68-840a-b16f2c0988f6",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C6",
+      "claim": "Sen2 provides endonuclease activity for the multi-subunit tRNA splicing endonuclease complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Sen2 provides endonuclease activity for the multi-subunit tRNA splicing endonuclease complex and also cleaves a mitochondria-targeted non-stop mRNA (Ho et al., 1990; Tsuboi et al., 2015; Winey and Culbertson, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies establishing Sen2's endonuclease function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "499b7e07-db19-48fb-8c95-f9e175c518a2",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C7",
+      "claim": "Sen2 cleaves a mitochondria-targeted non-stop mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Sen2 provides endonuclease activity for the multi-subunit tRNA splicing endonuclease complex and also cleaves a mitochondria-targeted non-stop mRNA (Ho et al., 1990; Tsuboi et al., 2015; Winey and Culbertson, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies showing Sen2's role in cleaving non-stop mRNA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "c08c1fe5-00d0-4db3-93f5-c8dbf5872746",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C8",
+      "claim": "The tRNA splicing complex resides on the MOM in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The tRNA splicing complex resides on the MOM in yeast, with Sen2 potentially anchoring it to the membrane via a hydrophobic segment (Trotta et al., 1997; Yoshihisa et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies showing the localization of the tRNA splicing complex to the MOM.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "555b3cef-39e2-4f44-9c18-bacb92730c97",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C9",
+      "claim": "sam35-2ts and sen2-1ts encode full-length proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We first determined that sam35-2ts and sen2-1ts encoded full-length proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this was determined experimentally.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "03a881e1-8efe-40c1-a3d1-a9f5661783f1",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C10",
+      "claim": "sam35-2ts and sen2-1ts contain multiple missense mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Each contained multiple missense mutations (Figure 1\u2014figure supplement 1A) that likely account for the phenotypes reported (Li et al., 2011; Milenkovic et al., 2004; Winey and Culbertson, 1988).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text refers to Figure 1\u2014figure supplement 1A showing the mutations and cites previous studies on the phenotypes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "71994f4a-f364-4972-b5ee-955324c54ea8",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C11",
+      "claim": "Genome-integrated versions of sam35-2HAts and sen2-1HAts support cell viability at 25\u00b0C but not 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-integrated versions of sam35-2HAts and sen2-1HAts support cell viability at the permissive (25\u00b0C) but not non-permissive temperature (37\u00b0C; Figure 1A), consistent with the previously-described untagged versions (Li et al., 2011; Milenkovic et al., 2004; Winey and Culbertson, 1988).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 1A and cites previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "390b8c89-c3a4-40eb-9c6f-c73b04ec1982",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C12",
+      "claim": "Increasing the temperature to 37\u00b0C results in dramatic destabilization of sam35-2HAts and sen2-1HAts relative to WT proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that increasing the temperature to 37\u00b0C results in dramatic destabilization of the ts- proteins relative to the WT proteins (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "cd19960e-03e6-48bc-9852-75db763fb0cd",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C13",
+      "claim": "sam35-2GFPts and sen2-1GFPts remain mitochondrially-associated after temperature increase to 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of sam35-2GFPts and sen2-1GFPts with a mitochondrial marker (mtRFP) demonstrated that the ts- proteins remain mitochondrial after the temperature increase (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes microscopy results shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "84a61937-16e7-4eae-bb8e-4288cb8865ce",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C14",
+      "claim": "sam35-2HAts and sen2-1HAts fractionate almost exclusively to the mitochondrial pellet at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our microscopy, sam35-2HAts and sen2-1HAts fractionated almost exclusively to the mitochondrial pellet at 37\u00b0C (P; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes fractionation results shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "4acdfef7-5e7a-40ac-b0c5-3726995a9205",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C15",
+      "claim": "sam35-2HAts and sen2-1HAts are destabilized at the non-permissive temperature yet remain mitochondrially-localized.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, sam35-2HAts and sen2-1HAts are destabilized at the non-permissive temperature yet remain mitochondrially-localized, validating their use as model MAD QC substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text summarizes experimental findings from multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "89467cec-2588-4d3a-9e76-4f657a635623",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C16",
+      "claim": "sam35-2HAts and sen2-1HAts are substantially stabilized in pre1-1 pre2-2 proteasome mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The turnover of sam35-2HAts and sen2-1HAts was assessed at the non-permissive temperature in strains containing conditional mutations in the 20S core (pre1-1 pre2-2; Figure 2A) or the 19S cap (cim3-1; Figure 2B) of the 26S proteasome. Both ts- proteins were substantially stabilized in these mutants relative to isogenic WT strains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "c162c443-4fca-4917-a550-22d9ccfb1bee",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C17",
+      "claim": "sam35-2HAts and sen2-1HAts are substantially stabilized in cim3-1 proteasome mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The turnover of sam35-2HAts and sen2-1HAts was assessed at the non-permissive temperature in strains containing conditional mutations in the 20S core (pre1-1 pre2-2; Figure 2A) or the 19S cap (cim3-1; Figure 2B) of the 26S proteasome. Both ts- proteins were substantially stabilized in these mutants relative to isogenic WT strains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "03269c9d-cdda-4491-89a3-64b95ab21506",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C18",
+      "claim": "Vacuolar proteases are not required for sam35-2HAts or sen2-1HAts turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, vacuolar or mitochondrial resident proteases were not required for sam35-2HAts or sen2-1HAts turnover (Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 2\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "8c95fe3c-9e10-40f9-91f8-9068b9b71730",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C19",
+      "claim": "Mitochondrial resident proteases are not required for sam35-2HAts or sen2-1HAts turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, vacuolar or mitochondrial resident proteases were not required for sam35-2HAts or sen2-1HAts turnover (Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 2\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "78a277fa-aeac-4060-ae80-7b73b990169e",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C20",
+      "claim": "sam35-2HAts and sen2-1HAts primarily accumulate at the mitochondria when their proteasomal degradation is blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "Even after 40 min at the non-permissive temperature, the majority of both sam35-2HAts and sen2-1HAts accumulated in the 12,000xg mitochondrial pellet (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes fractionation results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "dcb6135d-d14d-4b13-9ed8-b5ec07b39f26",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C21",
+      "claim": "sam35-2HAts and sen2-1HAts are peripheral membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Extraction of both proteins from this pellet fraction by sodium carbonate excluded the possibility that this represents aggregated protein (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes sodium carbonate extraction results shown in Figure 2\u2014figure supplement 1C, which is a standard method to distinguish peripheral from integral membrane proteins.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "f4536a4b-3ce9-4371-9941-0a11b5463c89",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C22",
+      "claim": "Purified mitochondrial fraction retains ~70% of sam35-2HAts and sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, this purified mitochondrial fraction retains ~70% of the ts- proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes quantification of fractionation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "c72600d7-acc4-4807-9a91-3525b4308fc4",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C23",
+      "claim": "sam35-2HAts and sen2-1HAts are stabilized in uba1-204 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with being UPS substrates, stabilization of both sam35-2HAts and sen2-1HAts was observed in a ts- mutant of the ubiquitin-activating enzyme (uba1-204; Figure 2D; Ghaboosi and Deshaies, 2007), indicating that ubiquitination is required for their degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 2D and cites a study on the uba1-204 mutant.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "0e9d2ee2-caa4-446b-91e0-9234b6eb4bcc",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C24",
+      "claim": "Ubiquitin-modified forms of sam35-2HAts and sen2-1HAts are evident when proteasome function is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, ubiquitin-modified forms of sam35-2HAts and sen2-1HAts were evident when proteasome function was inhibited (Figure 2E and F and see Figure 2\u2014figure supplement 1F for an additional control), as indicated by characteristic higher molecular weight bands and a smear representing highly ubiquitinated species (Emmerich and Cohen, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figures 2E and F and cites a study on ubiquitin visualization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "5c63bfaf-d6ca-4986-adb8-1ef139a1bcc3",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C25",
+      "claim": "Ubiquitinated forms of WT SAM35HA and SEN2HA are much less prevalent than the ts- versions.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, ubiquitinated forms of WT SAM35HA and SEN2HA are much less prevalent (Figure 2\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 2\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "f7878b25-029f-4e2f-8f53-cf8b94473fe8",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C26",
+      "claim": "Ubiquitinated sam35-2HAts and sen2-1HAts both accumulated largely in the mitochondrial pellet fraction under conditions of proteasome impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitinated sam35-2HAts and sen2-1HAts both accumulated largely in the mitochondrial pellet fraction (P12,000xg; Figure 2\u2014figure supplement 1H) and to a lesser extent in the soluble fraction, correlating with the relative distributions of unmodified species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes fractionation results shown in Figure 2\u2014figure supplement 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "de2c59aa-91b8-4f0d-bb4d-65f9c507d19c",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C27",
+      "claim": "Ubiquitination and proteasomal degradation are required for the turnover of sam35-2HAts and sen2-1HAts at the MOM.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data establish roles for ubiquitination and proteasomal degradation in the turnover of sam35-2HAts and sen2-1HAts at the MOM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text summarizes experimental findings from multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "5939fd2d-b86a-46e3-809c-b4229d714c06",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C28",
+      "claim": "SCFMdm30 and Rsp5 are the only ubiquitin ligases known to act on mitochondrial proteins in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, the only ubiquitin ligases known to act on mitochondrial proteins in yeast are SCFMdm30 and Rsp5 (Belgareh-Touz\u00e9 et al., 2017; Cohen et al., 2008; Escobar-Henriques et al., 2006; Kowalski et al., 2018; Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies establishing these E3s as acting on mitochondrial proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "26bb3a07-25db-463d-a92f-b152847fc860",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C29",
+      "claim": "Mdm30 and Rsp5 do not affect sam35-2HAts or sen2-1HAts stability.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed whether these E3s also play a role in MAD of QC substrates and found that strains lacking either Mdm30 or Rsp5 function did not affect sam35-2HAts or sen2-1HAts stability (Figure 3\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 3\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "903d6605-0845-4523-b268-aa6a4b1ac5d1",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C30",
+      "claim": "san1\u0394 impairs turnover of sam35-2HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that san1\u0394 impaired turnover of sam35-2HAts (Figure 3A, middle panel), while ubr1\u0394 impaired turnover of sen2-1HAts (Figure 3B, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "55543daf-1a22-4819-bc7c-94b0e6fe4af3",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C31",
+      "claim": "ubr1\u0394 impairs turnover of sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that san1\u0394 impaired turnover of sam35-2HAts (Figure 3A, middle panel), while ubr1\u0394 impaired turnover of sen2-1HAts (Figure 3B, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "c8a9751d-7aaf-4176-aa61-ea9f9cd468e5",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C32",
+      "claim": "San1 has been implicated in QC of cytosolic and nuclear proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "San1 has been implicated in QC of cytosolic and nuclear proteins (Gardner et al., 2005; Heck et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies establishing San1's role in QC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "2e439f98-b233-4f09-ab70-8d03ae1e3b5c",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C33",
+      "claim": "Ubr1 is the E3 that ubiquitinates N-end rule substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubr1 is the E3 that ubiquitinates N-end rule substrates, but also plays a prominent role in the turnover of cytosolic proteins and, in some instances, may also degrade ER proteins (Bartel et al., 1990; Comyn et al., 2016; Eisele and Wolf, 2008; Heck et al., 2010; Khosrow-Khavar et al., 2012; Rao et al., 2001; Scazzari et al., 2015; Stolz et al., 2013; Summers et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies establishing Ubr1's roles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "440d2618-ac4d-44e1-b599-d61dc5cb8ab9",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C34",
+      "claim": "Loss of Ubr1 in conjunction with san1\u0394 leads to greater stabilization of sam35-2HAts than loss of San1 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "While ubr1\u0394 alone did not affect sam35-2HAts turnover (Figure 3\u2014figure supplement 1C), loss of Ubr1 in conjunction with san1\u0394 led to greater stabilization than loss of San1 alone (Figure 3A, lower panel), indicating that Ubr1 can target sam35-2HAts in the absence of San1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 3A and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "b8bc6ad6-c984-4014-8a66-ddb0573fda8c",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C35",
+      "claim": "Loss of San1, alone or in conjunction with ubr1\u0394, does not affect the stability of sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of San1, alone or in conjunction with ubr1\u0394, did not affect the stability of sen2-1HAts (Figure 3\u2014figure supplement 1D and Figure 3B, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 3B and Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "aa36c9bf-215e-4ab2-9b60-25c5793fde35",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C36",
+      "claim": "The polyubiquitination of sam35-2HAts is greatly reduced when San1 is deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the polyubiquitination of sam35-2HAts (Figure 3C) and sen2-1HAts (Figure 3D) was greatly reduced when San1 or Ubr1, respectively, were deleted.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "2e685ae6-3335-484a-a4aa-9b5888766f8e",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C37",
+      "claim": "The polyubiquitination of sen2-1HAts is greatly reduced when Ubr1 is deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the polyubiquitination of sam35-2HAts (Figure 3C) and sen2-1HAts (Figure 3D) was greatly reduced when San1 or Ubr1, respectively, were deleted.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "ff802878-6016-48a1-9fe5-a2da9cc6e6b4",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C38",
+      "claim": "Loss of Ubc4 stabilizes sen2-1HAts to a similar degree as ubr1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Ubc4, an E2 known to function with Ubr1 for select substrates, stabilized sen2-1HAts to a similar degree as ubr1\u0394 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "73500d65-4565-4d9f-a47e-4725b37b88f7",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C39",
+      "claim": "sam35-2HAts and sen2-1HAts still accumulate almost exclusively in the pellet fraction in san1\u0394 and ubr1\u0394, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that Ubr1 and San1 can act on ts- proteins at the MOM, we examined the localization of sam35-2HAts and sen2-1HAts by fractionation in san1\u0394 and ubr1\u0394, respectively. In these strains, both ts- proteins still accumulated almost exclusively in the pellet fraction (Figure 3F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes fractionation results shown in Figures 3F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "a053f4e7-386e-41ff-b54c-edf69e1e6062",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C40",
+      "claim": "San1 and Ubr1 function as components of the MAD machinery for proteasome-mediated degradation of sam35-2HAts and sen2-1HAts, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "These results establish that San1 and Ubr1 can function as components of the MAD machinery for proteasome-mediated degradation of sam35-2HAts and sen2-1HAts, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text summarizes experimental findings from multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "bc49057d-8eb8-4e3a-a002-30273256a5b4",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C41",
+      "claim": "The cytosolic SSA family of Hsp70 chaperones is broadly involved in protein folding and refolding.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytosolic SSA family of Hsp70 chaperones (Ssa1, Ssa2, Ssa3, and Ssa4) is broadly involved in protein folding and refolding, but also plays a role in the degradation of several San1 and Ubr1 QC substrates (Guerriero et al., 2013; Heck et al., 2010; Prasad et al., 2010; Stolz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies establishing SSA chaperones' roles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "f822d087-3f60-416e-b60a-ef4295d112ab",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C42",
+      "claim": "SSA chaperones play a role in the degradation of several San1 and Ubr1 QC substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The cytosolic SSA family of Hsp70 chaperones (Ssa1, Ssa2, Ssa3, and Ssa4) is broadly involved in protein folding and refolding, but also plays a role in the degradation of several San1 and Ubr1 QC substrates (Guerriero et al., 2013; Heck et al., 2010; Prasad et al., 2010; Stolz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies establishing SSA chaperones' roles in QC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "6c5d9151-9deb-4389-9915-30932c9d2093",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C43",
+      "claim": "SSA chaperones have not been implicated in MAD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they have not been implicated in MAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this as a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "e1eb61d7-37d0-482d-afc1-d4959dfe1533",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C44",
+      "claim": "Both sam35-2HAts and sen2-1HAts are strongly stabilized in ssa1-45ts mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both sam35-2HAts and sen2-1HAts were strongly stabilized in a conditional yeast strain where three SSA family members are deleted and the fourth (SSA1) is ts- (ssa1-45ts; ssa1-45ts ssa2\u0394 ssa3\u0394 ssa4\u0394) relative to the control strain (SSA1; SSA1 ssa2\u0394 ssa3\u0394 ssa4\u0394; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "a553a83f-ef31-421c-9819-d81beb953fe2",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C45",
+      "claim": "Both sam35-2HAts and sen2-1HAts are localized to the pellet fraction in ssa1-45ts mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sam35-2HAts and sen2-1HAts were localized to the pellet fraction (Figure 4B), where they were extractable by sodium carbonate (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes fractionation results shown in Figure 4B and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "bb10c9d4-489b-48a0-bd20-6007481271f2",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C46",
+      "claim": "SSA1 chaperone is required for ubiquitination of sam35-2HAts and sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the SSA1 chaperone was also required for ubiquitination: despite the accumulation of unmodified sam35-2HAts and sen2-1HAts, ubiquitin-modified forms are dramatically reduced when SSA1 is inactivated (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "569142e2-c57f-41a5-ae9d-ad6a0050b1a4",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C47",
+      "claim": "Degradation of Fzo1HA is largely unaffected by loss of SSA function.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the ts- proteins, degradation of the native MOM UPS substrate, Fzo1HA, was largely unaffected by loss SSA function (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "dcb4dbbf-46a9-4dfc-bfc8-8907dd26285c",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C48",
+      "claim": "Depletion of ~90% of Sis1 protein slows the turnover of both sam35-2HAts and sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of ~90% of Sis1 protein using Sis1 DAmP cells (Figure 4\u2014figure supplement 1C) slowed the turnover of both sam35-2HAts and sen2-1HAts (Figure 4D), while loss of Ydj1 or its ortholog, Hlj1, did not (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 4D and Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "f37080c9-2f65-4ca8-86db-575ea68e1493",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C49",
+      "claim": "Loss of Ydj1 or Hlj1 does not affect turnover of sam35-2HAts and sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of ~90% of Sis1 protein using Sis1 DAmP cells (Figure 4\u2014figure supplement 1C) slowed the turnover of both sam35-2HAts and sen2-1HAts (Figure 4D), while loss of Ydj1 or its ortholog, Hlj1, did not (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "62c78371-565d-418b-821e-8cbe3223466e",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C50",
+      "claim": "Sse1 is not required for the degradation of sam35-2HAts and sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect a role for Sse1 in the degradation of sam35-2HAts and sen2-1HAts (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "fb08f4a9-ecf4-450a-88cf-65de70959640",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C51",
+      "claim": "Hsc82/Hsp82, Sti1, Hsp104, and Dsk2 are not required for the degradation of sam35-2HAts and sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of other factors implicated in San1 and Ubr1 nuclear import-dependent QC, including Hsc82/Hsp82, Sti1, Hsp104, and Dsk2 were also without effect on the degradation of sam35-2HAts and sen2-1HAts (Figure 4\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 4\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "8bc48b0b-38d8-4612-81fa-a252e7979bfb",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C52",
+      "claim": "The degradation of mitochondrial QC substrates is dependent on both Hsp70 and Hsp40 chaperones, but independent of nuclear import.",
+      "claim_type": "EXPLICIT",
+      "source": "These results establish that the degradation of the mitochondrial QC substrates is dependent on both Hsp70 and Hsp40 chaperones, but independent of nuclear import.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text summarizes experimental findings from multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "210c9b57-3003-4a31-876f-6c714ff380c9",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C53",
+      "claim": "Cdc48 plays a broad role in many QC pathways, generally functioning as a protein 'unfoldase' or 'segregase'.",
+      "claim_type": "EXPLICIT",
+      "source": "The AAA-ATPase Cdc48 plays a broad role in many QC pathways, generally functioning as a protein 'unfoldase' or 'segregase,' while also maintaining protein solubility prior to proteasomal degradation (Neal et al., 2017; Ye et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies establishing Cdc48's roles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "c9525b88-cb15-4e94-9624-a9ad95df6f2e",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C54",
+      "claim": "Cdc48 and its co-factors Npl4 and Ufd1 have been implicated in the UPS-mediated turnover of several yeast MOM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdc48 and its co-factors Npl4 and Ufd1 have been implicated in the UPS-mediated turnover of several yeast MOM proteins (Cohen et al., 2008; Heo et al., 2010; Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies establishing Cdc48-Npl4-Ufd1's roles in MOM protein turnover.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "8ca546fc-4585-4d80-94a6-52716014e1a7",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C55",
+      "claim": "Both sam35-2HAts and sen2-1HAts are stabilized in conditional Cdc48, Npl4, and Ufd1 strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sam35-2HAts and sen2-1HAts were stabilized in conditional Cdc48, Npl4, and Ufd1 strains (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "649f3a19-812a-41bb-8e35-4031d2ff6542",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C56",
+      "claim": "Loss of Msp1 does not stabilize sam35-2HAts or sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, loss of Msp1, another AAA-ATPase that localizes to mitochondria and dislocates mislocalized tail-anchored proteins from the MOM (Chen et al., 2014; Okreglak and Walter, 2014; Wohlever et al., 2017), stabilized neither sam35-2HAts nor sen2-1HAts (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 5\u2014figure supplement 1A and cites studies on Msp1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "96f19727-560b-4e66-9e80-496794900455",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C57",
+      "claim": "sam35-2HAts and sen2-1HAts remain primarily mitochondrial in npl4-1 and ufd1-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "For npl4-1 and ufd1-1, however, both substrates remain primarily mitochondrial (Figure 5B, middle and right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes fractionation results shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "0a645147-21c7-4eaa-9d8b-cb14b7f81b0a",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C58",
+      "claim": "Ubiquitinated sam35-2HAts and sen2-1HAts increase in Cdc48-Npl4-Ufd1 complex mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we detected a relative increase in ubiquitinated sam35-2HAts and sen2-1HAts in Cdc48-Npl4-Ufd1 complex mutants (Figure 5C and Figure 5\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 5C and Figure 5\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "5e3d4e20-68f9-4796-918f-d5d98330f482",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C59",
+      "claim": "Deletion of Rad23, Dsk2, or Ddi1 does not affect the degradation of sam35-2HAts or sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of these or another proteasome shuttling factor, Ddi1, did not affect the degradation of sam35-2HAts or sen2-1HAts (Figure 5\u2014figure supplement 1D), further distinguishing MAD from ERAD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "86bf560d-2926-4c85-a69c-d87e82a808b3",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C60",
+      "claim": "Ubiquitinated mitochondrial QC substrates require the Cdc48-Npl4-Ufd1 complex for efficient proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "All together, these results indicate that ubiquitinated mitochondrial QC substrates require the Cdc48-Npl4-Ufd1 complex for efficient proteasomal degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text summarizes experimental findings from multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "c22e6673-504c-4a6d-b5cb-4853642de125",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C61",
+      "claim": "Loss of Vms1 has no effect on the degradation of sam35-2HAts and sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Vms1 had no effect on the degradation of sam35-2HAts and sen2-1HAts (Figure 6\u2014figure supplement 1A), while loss of Doa1 had a small, but significant effect (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "65729cd3-3e82-4dc2-b0bd-b8029b004e63",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C62",
+      "claim": "Loss of Doa1 has a small, but significant effect on the degradation of sam35-2HAts and sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Vms1 had no effect on the degradation of sam35-2HAts and sen2-1HAts (Figure 6\u2014figure supplement 1A), while loss of Doa1 had a small, but significant effect (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "bb5bad5b-c54f-4b1b-a1c7-78f0e37d3cbb",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C63",
+      "claim": "Loss of Ubx2 significantly stabilizes sam35-2HAts and sen2-1HAts.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only the loss of Ubx2 significantly stabilized sam35-2HAts and sen2-1HAts (Figure 6B and Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6B and Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "4fcd2e27-23c6-4121-b9a5-d6c20059af90",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C64",
+      "claim": "Ubx2 is well-characterized as an ER membrane protein with roles in ERAD and lipid droplet homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubx2 (as well as its mammalian ortholog, UbxD8) is well-characterized as an ER membrane protein with roles in ERAD and lipid droplet homeostasis (Kolawa et al., 2013; Neuber et al., 2005; Schuberth and Buchberger, 2005; Wang and Lee, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies establishing Ubx2's roles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "1698e9ba-5037-465b-a379-89fba5634707",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C65",
+      "claim": "FLAG-tagged Ubx2 complements the degradation defect in ubx2\u0394 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed Ubx2's role in degradation of the mitochondrial ts- proteins by complementation with FLAG-tagged Ubx2 in the ubx2\u0394 strain (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "f10df07f-2bc3-4602-b946-abf240497f16",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C66",
+      "claim": "Doa1 overexpression fails to restore sam35-2HAts or sen2-1HAts degradation in ubx2\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, redundant functions for Ubx2 and Doa1 were ruled out by a failure of Doa1 overexpression to restore sam35-2HAts or sen2-1HAts degradation in ubx2\u0394 cells (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "7f69f907-c740-4da4-b585-4bbf101c638b",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C67",
+      "claim": "Ubiquitinated forms of ts- substrates accumulate in the absence of Ubx2.",
+      "claim_type": "EXPLICIT",
+      "source": "As might be predicted given the role of Ubx2 in linking ubiquitinated proteins to the Cdc48 complex, ubiquitinated forms of the ts- substrates accumulated in the absence of Ubx2 (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "cbdf463b-f2b7-41fa-9b8d-c3700d390f2f",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C68",
+      "claim": "A physical association between Ubx2-FLAG and the ts- proteins was detected by co-immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected a physical association between Ubx2-FLAG and the ts- proteins as assessed by co-immunoprecipitation (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "429a859d-bc1e-428a-94e8-a82681799fd8",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C69",
+      "claim": "Loss of Ubx2 does not affect the turnover of SAM35HA or SEN2HA.",
+      "claim_type": "EXPLICIT",
+      "source": "We see no evidence that loss of Ubx2 affects the already slow turnover of either SAM35HA or SEN2HA (Figure 6\u2014figure supplement 1C), and an association between these WT proteins and Ubx2 was also not as pronounced relative to their abundance (Figure 6\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6\u2014figure supplement 1C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "de8fa9e0-b157-4fb5-82d3-6b1e644563b1",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C70",
+      "claim": "Loss of Ubx2 and Doa1 stabilizes Fzo1HA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in agreement with recent reports (Chowdhury et al., 2018; Nahar et al., 2020; Wu et al., 2016), we find that loss of Ubx2 and, to a lesser extent, Doa1, stabilizes Fzo1HA, which is a native MOM UPS substrate (Figure 6\u2014figure supplement 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6\u2014figure supplement 1E and F and cites recent studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "1671882d-6d4d-4824-af94-abf0713030aa",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C71",
+      "claim": "Fzo1HA physically interacts with Ubx2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we also establish that Fzo1HA physically interacts with Ubx2, accompanied by an increase in ubiquitinated forms (Figure 6\u2014figure supplement 1G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6\u2014figure supplement 1G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "118399f6-918f-4a10-81ea-a4d9be2cb5dd",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C72",
+      "claim": "Ubx2 may also localize to mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Ubx2 is an ER transmembrane protein, one study suggested it may also localize to mitochondria (Wang and Lee, 2012), which was recently corroborated (M\u00e5rtensson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies suggesting Ubx2 localization to mitochondria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "6ce90d3e-680c-4cdf-833a-bd00f8629bf0",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C73",
+      "claim": "Ubx2-GFP co-localizes with both ER and mitochondrial markers by microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed this by co-localization of Ubx2-GFP with both ER (Sec63-RFP) and mitochondrial (mtRFP) markers by microscopy (Figure 6\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes microscopy results shown in Figure 6\u2014figure supplement 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "aaa0f455-5cb3-4bf1-8121-274e6964e453",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C74",
+      "claim": "A portion of Ubx2 localizes to mitochondria as verified biochemically by isolation of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitochondrial localization of a portion of Ubx2 was further verified biochemically by isolation of mitochondria largely devoid of co-purifying cytosolic (PGK), ER luminal (CPY), or ER membrane (Cue1) proteins (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes fractionation results shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "4eb2a822-b4bf-4e05-bc70-4da3fcf1c6ca",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C75",
+      "claim": "The turnover of sam35-2HAts and sen2-1HAts is unaffected in strains mutant for each of the four ERMES components.",
+      "claim_type": "EXPLICIT",
+      "source": "The turnover of sam35-2HAts and sen2-1HAts was unaffected in strains mutant for each of the four ERMES components (Figure 6\u2014figure supplement 1J), indicating that significant reductions in ER-mitochondrial contact do not impair their degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6\u2014figure supplement 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "73c8365f-cc80-49dc-8930-54bc1edd07a7",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C76",
+      "claim": "ts- protein degradation is unaffected by combined loss of the major ERAD E2s, Ubc6 and Ubc7.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ts- protein degradation is unaffected by combined loss of the major ERAD E2s, Ubc6 and Ubc7, or E3s, Doa10 and Hrd1 (Figure 6\u2014figure supplement 1K and L), with which Ubx2 functionally and physically interacts at the ER (Neuber et al., 2005; Schuberth and Buchberger, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6\u2014figure supplement 1K and L and cites studies on Ubx2 interactions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "e19c562c-4ee9-4ed8-8b28-34634e81a9fc",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C77",
+      "claim": "ts- protein degradation is unaffected by combined loss of the major ERAD E3s, Doa10 and Hrd1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ts- protein degradation is unaffected by combined loss of the major ERAD E2s, Ubc6 and Ubc7, or E3s, Doa10 and Hrd1 (Figure 6\u2014figure supplement 1K and L), with which Ubx2 functionally and physically interacts at the ER (Neuber et al., 2005; Schuberth and Buchberger, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6\u2014figure supplement 1K and L and cites studies on Ubx2 interactions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "92ec8a0f-1d8e-436c-9d21-871d8290ca1e",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C78",
+      "claim": "Degradation of sam35-2HAts and sen2-1HAts is independent of Msp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Degradation of sam35-2HAts and sen2-1HAtsis independent of Msp1 (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "b45d97f1-730d-4742-b8d3-af971d7e125d",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C79",
+      "claim": "Sam35-2HAts and sen2-1HAts largely accumulate in the mitochondrial pellet in ubx2\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Sam35-2HAts and sen2-1HAts also largely accumulate in the mitochondrial pellet in ubx2\u0394 cells (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes fractionation results shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "4258f418-b360-462e-99a1-f9627e0a4e8a",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C80",
+      "claim": "Degradation of Fzo1HA is unaffected by loss of ERMES components.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the ts- proteins, degradation of Fzo1HA, which is a substrate for the cytosolic E3 SCFMDM30 and its cognate E2 Cdc34 (Cohen et al., 2008), is unaffected by loss of ERMES components (Figure 6\u2014figure supplement 1M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes experimental results shown in Figure 6\u2014figure supplement 1M and cites a study on Fzo1HA.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "59222e70-5256-473c-8475-b0a2a62d387d",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C81",
+      "claim": "Fzo1 accumulates predominantly in the mitochondrial pellet when Ubx2 is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Fzo1 also accumulates predominantly in the mitochondrial pellet when Ubx2 is absent (Figure 6\u2014figure supplement 1N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text describes fractionation results shown in Figure 6\u2014figure supplement 1N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "8bb66e27-3e6f-4b50-aef2-0c8b8eed3f98",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C82",
+      "claim": "The mitochondrial population of Ubx2 interacts with UPS-targeted MAD substrates post-ubiquitination to facilitate their degradation from the MOM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data indicate that the mitochondrial population of Ubx2 interacts with UPS-targeted MAD substrates post-ubiquitination to facilitate their degradation from the MOM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text summarizes experimental findings from multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "b50bb8f2-8540-411d-a86d-9e198d3213ee",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C83",
+      "claim": "This study defines a UPS-mediated pathway for the degradation of individual dysfunctional yeast MOM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we define a UPS-mediated pathway for the degradation of individual dysfunctional yeast MOM proteins using two newly-established model QC substrates, sam35-2HAts and sen2-1HAts (schematized in Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text summarizes the study's findings and refers to Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "e6ce8b5d-37a8-44bf-a73d-ff75db72e23d",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C84",
+      "claim": "Previous mitochondrial UPS substrates have consisted primarily of native proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "While previous mitochondrial UPS substrates have consisted primarily of native proteins (Belgareh-Touz\u00e9 et al., 2017; Cohen et al., 2008; Heo et al., 2010; Wu et al., 2016), sam35-2HAts and sen2-1HAts contain mutations that render them unstable at the non-permissive temperature, and thus mimic damaged, misfolded proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies on previous mitochondrial UPS substrates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "e3f7cde3-c978-4e06-bf67-fa2976e6ac41",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C85",
+      "claim": "This MAD QC pathway utilizes factors that have not been previously linked to mitochondria or implicated in MAD of native MOM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This MAD QC pathway utilizes factors that have not been previously linked to mitochondria or implicated in MAD of native MOM proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text summarizes the novelty of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "34bdc3b8-8c54-4d10-bd2f-f55aeba35e71",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C86",
+      "claim": "The Cdc48-Npl4-Ufd1 AAA-ATPase complex is involved in many degradation pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases, the involvement of the Cdc48-Npl4-Ufd1 AAA-ATPase complex represents another point of convergence (Benischke et al., 2014; Cohen et al., 2008; Gallagher et al., 2014; Heo et al., 2010; Jarosch et al., 2002; Tanaka et al., 2010; Wu et al., 2016; Xu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies establishing the Cdc48-Npl4-Ufd1 complex's role in various pathways.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "47783d76-8d1d-40ee-896b-a4f4e4cf2e48",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C87",
+      "claim": "Tail-anchored proteins mistargeted to mitochondria require the AAA-ATPase Msp1 for their recognition and extraction from mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, tail-anchored proteins mistargeted to mitochondria and unimported mitochondrial precursors that accumulate at the mitochondrial surface following mitochondrial import stress also require the AAA-ATPase Msp1 for their recognition and extraction from mitochondria (Chen et al., 2014; Matsumoto et al., 2019; Okreglak and Walter, 2014; Weidberg and Amon, 2018; Wohlever et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies establishing Msp1's role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "745fb3f2-dd1a-4d99-8a23-819ca52929f5",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C88",
+      "claim": "The degradation of mislocalized tail-anchored proteins involves their re-localization to the ER following Msp1 extraction, where they are then ubiquitinated by ERAD machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "It was recently determined that the degradation of these mislocalized tail-anchored proteins involves their re-localization to the ER following Msp1 extraction, where they are then ubiquitinated by ERAD machinery (Dederer et al., 2019; Matsumoto et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites recent studies establishing this pathway.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "f624c7b9-695d-45a2-b6f7-5d7fca935ae1",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C89",
+      "claim": "The MAD QC pathway characterized in this study is distinct from the Msp1-dependent ER re-targeting pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "The MAD QC pathway characterized here is distinct from this pathway: ts- substrates remain mitochondrial and are degraded independently of ERAD E2s or E3s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text summarizes experimental findings distinguishing the pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "c3c65032-9ea3-4ef6-8d5a-e6573438ca96",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C90",
+      "claim": "Vms1 is recruited to mitochondria from the cytosol in response to translational or oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these co-factors, Vms1 is recruited to mitochondria from the cytosol in response to translational or oxidative stress (Izawa et al., 2017; Nielson et al., 2017) and cytosolic Doa1 is implicated in the turn-over of native MOM proteins (Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies establishing Vms1's recruitment to mitochondria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "a769d4c6-aad6-45bb-8102-0b75bbaa2b9d",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C91",
+      "claim": "Cytosolic Doa1 is implicated in the turn-over of native MOM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these co-factors, Vms1 is recruited to mitochondria from the cytosol in response to translational or oxidative stress (Izawa et al., 2017; Nielson et al., 2017) and cytosolic Doa1 is implicated in the turn-over of native MOM proteins (Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a study establishing Doa1's role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "1ca22144-9876-4de0-8308-31a0be35b534",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C92",
+      "claim": "Ubx2 has a role in the turnover of mitochondrial precursor proteins arrested in the Tom40 translocon.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, while this manuscript was in preparation, a role for Ubx2 in the turnover of mitochondrial precursor proteins arrested in the Tom40 translocon was reported (M\u00e5rtensson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a recent study on Ubx2's role.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "faca0469-63f4-45b9-b053-b04fedf3c75f",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C93",
+      "claim": "Rsp5 and SCFMdm30 ubiquitin ligases are implicated in ubiquitination of native MOM proteins and/or maintenance of mitochondrial integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to ubiquitination, we find no evidence for the involvement of Rsp5 or SCFMdm30 ubiquitin ligases, which are both implicated in ubiquitination of native MOM proteins and/or maintenance of mitochondrial integrity (Belgareh-Touz\u00e9 et al., 2017; Cohen et al., 2008; Escobar-Henriques et al., 2006; Fritz et al., 2003; Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies establishing these E3s' roles.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "b85a5dce-276d-4c4f-a2d4-6a11ad297524",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C94",
+      "claim": "San1 and Ubr1 have broad roles as quality control E3s for misfolded cytosolic and nuclear proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, San1 and Ubr1, which have broad roles as quality control E3s for misfolded cytosolic and nuclear proteins (Amm et al., 2016; Amm and Wolf, 2016; Eisele and Wolf, 2008; Gardner et al., 2005; Guerriero et al., 2013; Heck et al., 2010; Khosrow-Khavar et al., 2012; Lewis and Pelham, 2009; Nillegoda et al., 2010; Prasad et al., 2012; Prasad et al., 2018; Samant et al., 2018; Summers et al., 2013), are required to degrade mitochondrial ts- substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites multiple studies establishing San1 and Ubr1's roles in QC.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "751679f9-9982-4fbc-b950-0ddde7dc9493",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C95",
+      "claim": "The degradation of many cytosolic San1 and Ubr1 substrates requires prior nuclear import.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggest that the degradation of many cytosolic San1 and Ubr1 substrates requires prior nuclear import (Prasad et al., 2018; Samant et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites recent studies on nuclear import requirement.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "e1118b9e-8cb3-4ec7-94c8-9824c10887f2",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C96",
+      "claim": "There have been reports of Ubr1 contributing to ERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "While there have also been reports of Ubr1 contributing to ERAD (Stolz et al., 2013), as noted above, MAD QC appears to be distinct from ERAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites a study on Ubr1's role in ERAD.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "5230fee8-4aaf-4193-a767-2d8a61617c61",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C97",
+      "claim": "The involvement of the SSA family of Hsp70s in mitochondrial ts- protein degradation reflects commonality with cytosolic QC pathways and ERAD pathways for cytosolic misfolded domains (ERAD-C).",
+      "claim_type": "EXPLICIT",
+      "source": "For ubiquitination of QC substrates to occur, they must first be recognized as being improperly folded. In most QC systems, this recognition requires chaperones. Here, the involvement of the SSA family of Hsp70s in mitochondrial ts- protein degradation reflects commonality with cytosolic QC pathways and ERAD pathways for cytosolic misfolded domains (ERAD-C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text draws on established knowledge about chaperone roles in QC and infers commonality.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "9e9d8a9e-f828-4899-829c-8016bf5d9fc9",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C98",
+      "claim": "The SSA family of chaperones is required for co-translational folding or import of at least some mitochondrial proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The SSA family of chaperones is required for co-translational folding or import of at least some mitochondrial proteins (Ben-Menachem et al., 2018; Deshaies et al., 1988; Sass et al., 2003; Young et al., 2003), positioning them to play a role in recognizing misfolded mitochondrial proteins and targeting them to the UPS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies establishing SSA chaperones' roles in mitochondrial protein folding/import.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "879f22c2-1957-4edf-ae51-069a504426e1",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C99",
+      "claim": "The degradation of Fzo1, a native MOM protein, largely does not require Hsp70 chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, we have found that the degradation of a native MOM protein, Fzo1, largely does not require Hsp70 chaperones, extending to mitochondria a distinction between misfolded substrates and those whose ubiquitination occurs in a regulated manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes experimental findings and draws a conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "845e3cc0-fea0-4b5f-a779-a8633e1f158d",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "claim_id": "C100",
+      "claim": "Several mitochondrial inner membrane and IMS proteins have been identified as proteasome substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Several mitochondrial inner membrane and IMS proteins have also been identified as proteasome substrates (Bragoszewski et al., 2013; Margineantu et al., 2007; Pearce and Sherman, 1997; Radke et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text cites studies identifying these proteins as proteasome substrates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "sam35-2HAts and sen2-1HAts are temperature-sensitive peripheral MOM proteins that become destabilized at 37\u00b0C yet remain mitochondrially-localized, validating their use as model MAD QC substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 collectively establish the characterization of these ts- alleles. The experimental data (C9-C14) demonstrate temperature-dependent destabilization (C12) and mitochondrial localization (C13-C14) at the non-permissive temperature. The background information (C1-C8) from prior literature provides appropriate context. The conclusion (C15) is well-supported by the convergent evidence from multiple experimental approaches (CHX chase, microscopy, fractionation).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "8f6a1c8f-7d13-4091-a645-83f2d269a223",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The degradation of sam35-2HAts and sen2-1HAts requires the ubiquitin-proteasome system, as demonstrated by stabilization in proteasome mutants, requirement for ubiquitination, and accumulation of ubiquitinated forms at mitochondria when proteasome function is blocked.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C27 provide strong converging evidence for UPS-mediated degradation. Stabilization in multiple proteasome mutants (C16-C17), requirement for ubiquitin-activating enzyme (C23), detection of ubiquitinated forms (C24-C26), and exclusion of alternative proteolytic pathways (C18-C19) collectively support the conclusion (C27). The fractionation data (C20-C22) confirm mitochondrial localization during degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "4b58dfaa-87cb-48c4-84d5-575beff20e99",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "San1 and Ubr1 function as E3 ubiquitin ligases for sam35-2HAts and sen2-1HAts, respectively, with San1 primarily targeting sam35-2HAts (with Ubr1 as backup) and Ubr1 (with E2 Ubc4) targeting sen2-1HAts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C40 demonstrate substrate-specific E3 requirements through genetic deletion studies (C30-C31, C34-C35), reduced polyubiquitination in E3 deletion strains (C36-C37), and maintained mitochondrial localization (C39). The data show clear differential requirements for the two substrates. The exclusion of previously known mitochondrial E3s (C28-C29) strengthens the novelty. The E2 requirement (C38) further supports the Ubr1 pathway for sen2-1HAts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The degradation of mitochondrial QC substrates sam35-2HAts and sen2-1HAts requires cytosolic Hsp70 (SSA family) and Hsp40 (Sis1) chaperones for ubiquitination, but is independent of nuclear import factors, distinguishing this pathway from cytosolic San1/Ubr1 QC pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C52 establish chaperone requirements through genetic studies showing stabilization in SSA1 and Sis1 mutants (C44, C48), maintained mitochondrial localization (C45), and requirement for ubiquitination (C46). The distinction from native MOM protein degradation (C47) and exclusion of nuclear import factors (C50-C51) are well-documented. The conclusion (C52) appropriately synthesizes these findings. The prior knowledge claims (C41-C43) provide necessary context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "fd23146c-0b15-41eb-b489-ddcad2f74352",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Cdc48-Npl4-Ufd1 AAA-ATPase complex is required for efficient proteasomal degradation of ubiquitinated mitochondrial QC substrates, acting downstream of ubiquitination, while the AAA-ATPase Msp1 and proteasome shuttling factors are dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 demonstrate Cdc48-Npl4-Ufd1 requirement through stabilization in conditional mutants (C55), maintained mitochondrial localization (C57), and accumulation of ubiquitinated forms (C58). The exclusion of Msp1 (C56) and shuttling factors (C59) distinguishes this pathway from other characterized pathways. The background information (C53-C54) provides appropriate context. The conclusion (C60) is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "04ddb231-f7c8-4149-9581-72da3d1e513c",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ubx2, a Cdc48 co-factor that localizes to both ER and mitochondria, is required for degradation of both ts- MAD QC substrates and the native MOM protein Fzo1HA, acting post-ubiquitination at mitochondria independently of ERAD machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C82 provide extensive evidence for Ubx2's role through genetic deletion (C63), complementation (C65), accumulation of ubiquitinated substrates (C67), physical interaction (C68), and mitochondrial localization by multiple methods (C73-C74). The distinction from ERAD (C75-C77) and Msp1-dependent pathways (C78) is well-established. Extension to native substrate Fzo1HA (C70-C71, C80-C81) strengthens the generality. The minor role of Doa1 (C62) and exclusion of Vms1 (C61) complete the co-factor analysis. The conclusion (C82) appropriately synthesizes the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    },
+    {
+      "id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2",
+      "content_id": "8c0a21b1-43c3-4e4f-be77-ac530a7e90f4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "This study defines a novel UPS-mediated MAD QC pathway for misfolded MOM proteins that is distinct from previously characterized pathways for native MOM proteins, mislocalized tail-anchored proteins, and ERAD, utilizing a unique combination of cytosolic QC factors (San1/Ubr1, SSA chaperones) and mitochondrial factors (Ubx2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C100 synthesize the study's findings and place them in context of prior work. The distinction from native MOM protein degradation (C84, C93, C99), Msp1-dependent pathways (C87-C89), and ERAD (C89, C96) is well-established through the experimental data presented in earlier result groups. The novelty claims (C85) are supported by the identification of previously uncharacterized factors in MAD. The discussion appropriately acknowledges related recent work (C92) and identifies future directions (C100). The synthesis (C83) accurately reflects the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:03.678545Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d8c36118-c356-4100-b58e-e39dd3e67f96",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "1a52f740-2165-4cf0-a41a-fef2b016a332",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "4b1cede1-e122-4c39-8f81-2863094d84c9",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "3de9df09-3b37-48d5-bcc7-70962e26fe86",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "0bdefb64-a321-4d1d-b195-911fb2ecbdaf",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "3ea8c2b1-01a9-4c68-840a-b16f2c0988f6",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "499b7e07-db19-48fb-8c95-f9e175c518a2",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "c08c1fe5-00d0-4db3-93f5-c8dbf5872746",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "555b3cef-39e2-4f44-9c18-bacb92730c97",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "03a881e1-8efe-40c1-a3d1-a9f5661783f1",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "71994f4a-f364-4972-b5ee-955324c54ea8",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "390b8c89-c3a4-40eb-9c6f-c73b04ec1982",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "cd19960e-03e6-48bc-9852-75db763fb0cd",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "84a61937-16e7-4eae-bb8e-4288cb8865ce",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "4acdfef7-5e7a-40ac-b0c5-3726995a9205",
+      "result_id": "f4f65180-1cd6-428a-b474-0c5bfc16de2d"
+    },
+    {
+      "claim_id": "89467cec-2588-4d3a-9e76-4f657a635623",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "c162c443-4fca-4917-a550-22d9ccfb1bee",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "03269c9d-cdda-4491-89a3-64b95ab21506",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "8c95fe3c-9e10-40f9-91f8-9068b9b71730",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "78a277fa-aeac-4060-ae80-7b73b990169e",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "dcb6135d-d14d-4b13-9ed8-b5ec07b39f26",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "f4536a4b-3ce9-4371-9941-0a11b5463c89",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "c72600d7-acc4-4807-9a91-3525b4308fc4",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "0e9d2ee2-caa4-446b-91e0-9234b6eb4bcc",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "5c63bfaf-d6ca-4986-adb8-1ef139a1bcc3",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "f7878b25-029f-4e2f-8f53-cf8b94473fe8",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "de2c59aa-91b8-4f0d-bb4d-65f9c507d19c",
+      "result_id": "8f6a1c8f-7d13-4091-a645-83f2d269a223"
+    },
+    {
+      "claim_id": "5939fd2d-b86a-46e3-809c-b4229d714c06",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "26bb3a07-25db-463d-a92f-b152847fc860",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "903d6605-0845-4523-b268-aa6a4b1ac5d1",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "55543daf-1a22-4819-bc7c-94b0e6fe4af3",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "c8a9751d-7aaf-4176-aa61-ea9f9cd468e5",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "2e439f98-b233-4f09-ab70-8d03ae1e3b5c",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "440d2618-ac4d-44e1-b599-d61dc5cb8ab9",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "b8bc6ad6-c984-4014-8a66-ddb0573fda8c",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "aa36c9bf-215e-4ab2-9b60-25c5793fde35",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "2e685ae6-3335-484a-a4aa-9b5888766f8e",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "ff802878-6016-48a1-9fe5-a2da9cc6e6b4",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "73500d65-4565-4d9f-a47e-4725b37b88f7",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "a053f4e7-386e-41ff-b54c-edf69e1e6062",
+      "result_id": "4b58dfaa-87cb-48c4-84d5-575beff20e99"
+    },
+    {
+      "claim_id": "bc49057d-8eb8-4e3a-a002-30273256a5b4",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "f822d087-3f60-416e-b60a-ef4295d112ab",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "6c5d9151-9deb-4389-9915-30932c9d2093",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "e1eb61d7-37d0-482d-afc1-d4959dfe1533",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "a553a83f-ef31-421c-9819-d81beb953fe2",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "bb10c9d4-489b-48a0-bd20-6007481271f2",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "569142e2-c57f-41a5-ae9d-ad6a0050b1a4",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "dcb4dbbf-46a9-4dfc-bfc8-8907dd26285c",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "f37080c9-2f65-4ca8-86db-575ea68e1493",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "62c78371-565d-418b-821e-8cbe3223466e",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "fb08f4a9-ecf4-450a-88cf-65de70959640",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "8bc48b0b-38d8-4612-81fa-a252e7979bfb",
+      "result_id": "99c9f0d2-f80a-45cd-b3ac-c81c07c9db5b"
+    },
+    {
+      "claim_id": "210c9b57-3003-4a31-876f-6c714ff380c9",
+      "result_id": "fd23146c-0b15-41eb-b489-ddcad2f74352"
+    },
+    {
+      "claim_id": "c9525b88-cb15-4e94-9624-a9ad95df6f2e",
+      "result_id": "fd23146c-0b15-41eb-b489-ddcad2f74352"
+    },
+    {
+      "claim_id": "8ca546fc-4585-4d80-94a6-52716014e1a7",
+      "result_id": "fd23146c-0b15-41eb-b489-ddcad2f74352"
+    },
+    {
+      "claim_id": "649f3a19-812a-41bb-8e35-4031d2ff6542",
+      "result_id": "fd23146c-0b15-41eb-b489-ddcad2f74352"
+    },
+    {
+      "claim_id": "96f19727-560b-4e66-9e80-496794900455",
+      "result_id": "fd23146c-0b15-41eb-b489-ddcad2f74352"
+    },
+    {
+      "claim_id": "0a645147-21c7-4eaa-9d8b-cb14b7f81b0a",
+      "result_id": "fd23146c-0b15-41eb-b489-ddcad2f74352"
+    },
+    {
+      "claim_id": "5e3d4e20-68f9-4796-918f-d5d98330f482",
+      "result_id": "fd23146c-0b15-41eb-b489-ddcad2f74352"
+    },
+    {
+      "claim_id": "86bf560d-2926-4c85-a69c-d87e82a808b3",
+      "result_id": "fd23146c-0b15-41eb-b489-ddcad2f74352"
+    },
+    {
+      "claim_id": "c22e6673-504c-4a6d-b5cb-4853642de125",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "65729cd3-3e82-4dc2-b0bd-b8029b004e63",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "bb5bad5b-c54f-4b1b-a1c7-78f0e37d3cbb",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "4fcd2e27-23c6-4121-b9a5-d6c20059af90",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "1698e9ba-5037-465b-a379-89fba5634707",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "f10df07f-2bc3-4602-b946-abf240497f16",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "7f69f907-c740-4da4-b585-4bbf101c638b",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "cbdf463b-f2b7-41fa-9b8d-c3700d390f2f",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "429a859d-bc1e-428a-94e8-a82681799fd8",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "de8fa9e0-b157-4fb5-82d3-6b1e644563b1",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "1671882d-6d4d-4824-af94-abf0713030aa",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "118399f6-918f-4a10-81ea-a4d9be2cb5dd",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "6ce90d3e-680c-4cdf-833a-bd00f8629bf0",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "aaa0f455-5cb3-4bf1-8121-274e6964e453",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "4eb2a822-b4bf-4e05-bc70-4da3fcf1c6ca",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "73c8365f-cc80-49dc-8930-54bc1edd07a7",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "e19c562c-4ee9-4ed8-8b28-34634e81a9fc",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "92ec8a0f-1d8e-436c-9d21-871d8290ca1e",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "b45d97f1-730d-4742-b8d3-af971d7e125d",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "4258f418-b360-462e-99a1-f9627e0a4e8a",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "59222e70-5256-473c-8475-b0a2a62d387d",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "8bb66e27-3e6f-4b50-aef2-0c8b8eed3f98",
+      "result_id": "04ddb231-f7c8-4149-9581-72da3d1e513c"
+    },
+    {
+      "claim_id": "b50bb8f2-8540-411d-a86d-9e198d3213ee",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "e6ce8b5d-37a8-44bf-a73d-ff75db72e23d",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "e3f7cde3-c978-4e06-bf67-fa2976e6ac41",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "34bdc3b8-8c54-4d10-bd2f-f55aeba35e71",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "47783d76-8d1d-40ee-896b-a4f4e4cf2e48",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "745fb3f2-dd1a-4d99-8a23-819ca52929f5",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "f624c7b9-695d-45a2-b6f7-5d7fca935ae1",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "c3c65032-9ea3-4ef6-8d5a-e6573438ca96",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "a769d4c6-aad6-45bb-8102-0b75bbaa2b9d",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "1ca22144-9876-4de0-8308-31a0be35b534",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "faca0469-63f4-45b9-b053-b04fedf3c75f",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "b85a5dce-276d-4c4f-a2d4-6a11ad297524",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "751679f9-9982-4fbc-b950-0ddde7dc9493",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "e1118b9e-8cb3-4ec7-94c8-9824c10887f2",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "5230fee8-4aaf-4193-a767-2d8a61617c61",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "9e9d8a9e-f828-4899-829c-8016bf5d9fc9",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "879f22c2-1957-4edf-ae51-069a504426e1",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    },
+    {
+      "claim_id": "845e3cc0-fea0-4b5f-a779-a8633e1f158d",
+      "result_id": "d1ce7a28-2f4d-46ad-bdad-d7f5d94415e2"
+    }
+  ],
+  "comparisons": []
+}

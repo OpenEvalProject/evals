@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The Breath Detection Task (BDT) demonstrated above-chance performance in both fMRI samples with good reliability. In the first sample, accuracy was 82.1\u00b114.7% and d'=2.2\u00b11.1, both significantly above chance (p<0.001). In the second sample, accuracy was 74.9\u00b19.6% and d'=1.6\u00b10.6, also significantly above chance (p<0.001). Split-half reliability ranged from 0.68-0.86 across samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 provide consistent behavioral evidence that participants could perform the BDT significantly above chance in both samples with large effect sizes (Cohen's d = 2.0-2.67). The reliability measures (C40-C43) demonstrate acceptable to good internal consistency (0.68-0.86), supporting the task's psychometric validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The BDT (interoceptive task) was more difficult than the DDT (exteroceptive task), with lower accuracy and discrimination sensitivity in most comparisons. Participants showed slower reaction times in the first sample and less response bias in both samples during the BDT compared to DDT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 demonstrate consistent patterns showing the BDT was more challenging than DDT, with significant differences in accuracy (C32), d' (C33, C35), and response bias (C38, C39). The reaction time difference was only significant in the first sample (C36), which is acknowledged. These findings support that the tasks differ in difficulty as intended.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In the first fMRI sample, relative interoceptive accuracy was negatively correlated with subjective task difficulty (r=-0.43, p=0.02, BF=10.38) but showed no significant correlations with body awareness questionnaires or measures of anxiety, depression, or positive affect after correction for multiple comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 shows a significant correlation with appropriate Bayes Factor support (BF=10.38), while C45-C48 appropriately report null findings with Bayes Factors indicating evidence for the null hypothesis (BF<1). The pattern suggests the BDT measures a specific aspect of interoceptive attention distinct from general body awareness or emotional traits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Whole-brain fMRI analysis revealed that interoceptive attention (BDT vs DDT) activated the cognitive control network including bilateral AIC, dorsal ACC, SMA, and parietal cortices, while deactivating default mode network regions. An interaction effect showed the AIC was specifically engaged during interoceptive processing, with greater activation during delayed feedback trials only in the BDT condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 describe a coherent pattern of brain activation supported by whole-brain analysis with appropriate statistical thresholding (GRF correction, p<0.05). The interaction effect (C52-C55) is particularly important as it demonstrates task-specific AIC engagement beyond general task difficulty, addressing potential confounds mentioned in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Individual differences in interoceptive accuracy were predicted by the magnitude of the AIC interaction effect. Voxel-wise regression analysis controlling for exteroceptive accuracy showed that higher interoceptive accuracy was associated with greater bilateral AIC activation during the interaction contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 demonstrate a brain-behavior relationship using appropriate statistical controls (covarying for DDT performance). This provides convergent evidence that AIC activation specifically relates to interoceptive processing ability rather than general task performance, strengthening the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Psychophysiological interaction (PPI) analysis revealed that interoceptive attention modulated AIC connectivity, showing increased coupling with somatosensory regions (SMA/ACC, FEF, IFG, PoCG) and decreased coupling with visual cortices during the BDT compared to DDT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 describe PPI results showing differential connectivity patterns that are anatomically and functionally coherent. The increased connectivity with somatosensory areas and decreased connectivity with visual areas during interoceptive attention makes theoretical sense and is supported by appropriate statistical thresholding (GRF correction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Dynamic causal modeling (DCM) identified a winning model (exceedance probability 29.84%) showing that interoceptive and exteroceptive attention modulate top-down connectivity from AIC to sensory cortices. Bayesian model averaging confirmed significant modulation of AIC\u2192PoCG connectivity by interoceptive attention (p<0.001, Bonferroni corrected) and AIC\u2192V2/3 connectivity by exteroceptive attention (p=0.03, uncorrected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the DCM analysis (C62-C66) provides mechanistic insights, the winning model has a relatively low exceedance probability (29.84%), suggesting substantial model uncertainty. The exteroceptive modulation effect (C65) only reached significance without correction, weakening the symmetry of the proposed mechanism. The intrinsic connection finding (C66) is well-supported with Bonferroni correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The second fMRI sample replicated the interaction effect in bilateral AIC (left: p=0.020; right: p=0.022) and the correlation between AIC activation and interoceptive accuracy (left: r=0.32, p=0.050; right: r=0.42, p=0.014). The main effect of attentional focus was significant only in right AIC (p=0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 provide crucial replication evidence in an independent sample with physiological noise correction. The interaction effects and brain-behavior correlations replicate the first sample's findings, though with one-tailed tests (C71-C72) which is justified given the directional hypothesis from sample 1. The laterality difference (C68-C69) is an interesting observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Analysis of respiratory volume in the second sample showed that while breathing effort differed between BDT and DDT (F(1,27)=15.88, p<0.001), this difference was eliminated in the interaction contrast (F<1), demonstrating that the AIC interaction effect was not confounded by differential breathing effort between tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 address an important potential confound. The statistical demonstration that respiratory differences cancel out in the interaction contrast (C74) provides strong evidence that the AIC findings reflect cognitive/attentional processes rather than mere differences in breathing effort. This is a critical control analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Lesion study results showed a significant group\u00d7task interaction for both accuracy (F(2,21)=5.19, p=0.015) and d' (F(2,21)=4.77, p=0.023). AIC lesion patients had significantly impaired BDT performance compared to both normal controls (accuracy: p<0.001, BF=14.71; d': p<0.001, BF=13.78) and brain-damaged controls (accuracy: p=0.009, BF=3.95; d': p=0.013, BF=3.40), with no differences between NC and BDC groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 provide strong causal evidence for AIC's role in interoceptive attention. The significant interaction with appropriate controls (BDC group), large Bayes Factors supporting the alternative hypothesis, and lack of difference between control groups (C83-C84) demonstrate specificity. The use of non-parametric tests is appropriate given small sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "AIC lesion patients showed no significant deficits on the exteroceptive task (DDT) compared to either control group (all p>0.10, BF<1), and there was no interaction effect on response bias (F<1, p=0.65). This demonstrates selective impairment in interoceptive but not exteroceptive attention following AIC lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 demonstrate the critical specificity of the lesion effect. The lack of DDT deficits with Bayes Factors supporting the null hypothesis (BF<1) shows that AIC lesions selectively impair interoceptive attention rather than causing general attentional or perceptual deficits. This double dissociation strengthens causal claims about AIC's specific role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior work established that the AIC is involved in interoceptive attention based on correlational neuroimaging, but the necessity of the AIC had not been demonstrated. The ubiquitous activation of AIC across diverse tasks and the correlational nature of fMRI studies left the causal role of AIC in interoceptive attention uncertain, motivating the current lesion study approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C13-C16 accurately characterize the state of prior literature and identify a genuine gap. The citations support that while AIC involvement was suspected, causal evidence was lacking. The methodological critique (C15) correctly identifies limitations of correlational approaches, and the rationale for lesion studies (C16) is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The authors developed a novel breath detection task (BDT) to measure interoceptive attention, addressing limitations of existing tasks (particularly heartbeat detection) that fail to meet criteria for clear perceptibility. Breathing was chosen because it is perceivable, controllable, and measurable, though the task may not represent pure interoception as respiratory processes can be tracked via multiple sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C139-C145 provide strong methodological justification for the task design. The critique of existing tasks is supported by appropriate citations (C17-C18, C139), and the advantages of using breathing are clearly articulated (C19-C22, C140-C141). The authors appropriately acknowledge limitations (C144) and describe their control strategy (C145). The validation evidence (C142) supports task validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The study included two fMRI samples (n=44 and n=28) and a lesion study with 6 AIC patients, 6 brain-damaged controls, and 12 normal controls. Groups were well-matched on demographic variables, chronicity, cognitive function (MMSE), and mood (BDI), with all lesions resulting from surgical removal of low-grade gliomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C181 provide comprehensive demographic and clinical characterization with appropriate statistical comparisons showing no significant group differences on key variables. The sample sizes are reasonable for fMRI (n=44, n=28) but small for the lesion study (n=6 AIC patients), which is acknowledged as a limitation inherent to lesion research. The matching statistics support valid group comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C23",
+      "C91",
+      "C8",
+      "C107",
+      "C120"
+    ],
+    "result": "The study tested and confirmed the hypothesis that the AIC is critical for interoceptive attention by integrating homeostatic and environmental information. Converging evidence from fMRI showing AIC activation and connectivity patterns, along with causal evidence from lesion patients showing selective interoceptive deficits, demonstrates the AIC plays a critical role in interoceptive attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C91, C8, C107, and C120 represent the core hypothesis and main conclusions. The hypothesis (C23, C91) is clearly stated and based on prior evidence. The conclusions (C8, C107, C120) are well-supported by the convergent evidence from multiple methodological approaches (fMRI activation, connectivity, lesion studies) demonstrating both involvement and necessity of the AIC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The findings are interpreted within a predictive coding framework where the AIC serves as a key node for computing interoceptive predictions. The results extend previous work on AIC's role in predictive coding from cardiac to respiratory interoception, consistent with theories that the AIC integrates bodily signals with contextual information to generate interoceptive awareness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C105 appropriately contextualize findings within established theoretical frameworks (predictive coding, interoceptive awareness theories) with proper citations. The extension to respiratory interoception (C105) is a valid contribution. However, while the findings are consistent with predictive coding, the study does not directly test predictive coding mechanisms (e.g., prediction errors), so this remains an interpretive framework rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The behavioral deficits in AIC lesion patients are interpreted as resulting from disrupted integration of somatic/visceral inputs with abstract representations of internal states. This interpretation is consistent with most prior lesion studies showing interoceptive deficits, though one case study showed preserved interoceptive processing, possibly due to compensation by other brain structures or differences in task demands (subjective awareness vs. objective discrimination).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C119 provide a mechanistic interpretation of lesion effects that is consistent with the data and prior literature. The discussion of discrepant findings (C116-C118) is balanced and offers plausible explanations for differences (compensation, task differences). The interpretation (C112-C113) is reasonable though somewhat speculative about the specific computational deficit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The AIC is proposed to coordinate interoceptive attention by integrating sensory signals from somatosensory (PoCG) and visual (V2/3) cortices and sending top-down modulatory signals. DCM results suggest interoceptive attention is achieved by modulating AIC\u2192PoCG connectivity, while exteroceptive attention modulates AIC\u2192V2/3 connectivity, with the AIC dynamically adjusting connectivity to sensory cortices based on attentional focus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C138 present a mechanistic model of AIC function that is partially supported by the data. The PPI results (C125-C126) clearly support differential connectivity patterns. However, the DCM evidence (C136-C137) is weaker due to low model exceedance probability and uncorrected significance for exteroceptive modulation. The proposed mechanism (C138) is plausible but somewhat speculative, extending beyond what the data directly demonstrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The study discusses broader implications including the categorization of attention types, methodological advantages of the BDT, and potential applications to meditation research. The authors note that breathing's unique properties enable more reliable measurement of interoceptive attention and speculate about the AIC's role in meditation practices that focus on breath awareness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C146-C160 include a mix of methodological details (C146-C147), conceptual frameworks (C148-C152), and speculative applications (C153-C160). The methodological advantages are well-supported (C151-C152), but the meditation-related claims (C153-C160) are largely speculative. While the speculation is reasonable and supported by citations (C157-C158), it extends well beyond the current data and represents future research directions rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The authors conclude that the BDT extends interoceptive research into the respiratory domain with demonstrated validity and reliability, and may have applications for studying interoceptive attention in neuropsychiatric disorders including anxiety, autism, and substance use disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C161 is well-supported by the reliability data (C40-C43) and validation evidence (C44, C142). Claims C162-C163 about potential applications are appropriately framed as possibilities rather than established facts, with relevant citations to support the rationale for these applications. These represent reasonable extensions of the work rather than overstatements.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,421 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "MiDAC is a chromatin-associated complex in mESCs composed of DNTTIP1, ELMSAN1, and HDAC1, but not HDAC2. CRISPR/Cas9 knockout of Dnttip1 or Elmsan1 results in destabilization of the complex, with loss of ELMSAN1 protein in Dnttip1 KO cells and reduced DNTTIP1 protein in Elmsan1 KO cells. Immunoprecipitation experiments confirm the interaction between DNTTIP1, ELMSAN1, and HDAC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C46 provide converging evidence from multiple experimental approaches (Western blot, IP, qRT-PCR) demonstrating MiDAC complex composition and stability in mESCs. The data show consistent protein-protein interactions and the interdependence of complex subunits. The absence of HDAC2 interaction is clearly documented, establishing the specific composition of MiDAC in this cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C61",
+      "C62"
+    ],
+    "result": "MiDAC regulates a neurodevelopmental gene expression program in mESCs. RNA-seq analysis reveals 493 downregulated and 368 upregulated genes in Dnttip1 KO, and 467 downregulated and 306 upregulated genes in Elmsan1 KO, with high correlation (R\u00b2=0.88) between the two knockouts. A common set of 224 downregulated and 114 upregulated genes is co-regulated by both DNTTIP1 and ELMSAN1. Pathway analysis shows enrichment for axon guidance signaling and neural development genes among downregulated genes, while upregulated genes are enriched for pathways associated with repression of neuronal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C62 are well-supported by RNA-seq data from two independent knockout lines with biological replicates. The high correlation between Dnttip1 and Elmsan1 knockouts strengthens the conclusion that these proteins function together. Pathway analysis provides functional context for the gene expression changes. Statistical thresholds (FC >1.5, p<0.01) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Loss of MiDAC function does not affect mESC self-renewal, pluripotency, proliferation, or cell cycle distribution. Expression of pluripotency factors (Sox2, Pou5f1, Nanog), alkaline phosphatase staining, proliferation rates, cell cycle profiles, and cell cycle-related genes (Ccna2, Cdkn1a, Cdkn1b) remain unchanged in Dnttip1 KO and Elmsan1 KO mESCs compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by multiple complementary assays (qRT-PCR, RNA-seq, AP staining, proliferation assays, flow cytometry). The data consistently show no significant differences between WT and knockout cells across multiple measures of pluripotency and cell cycle. This establishes that MiDAC's role is context-dependent, contrasting with reported effects in cancer cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Loss of MiDAC function does not affect the initiation of neural differentiation. At day 8 of differentiation, no significant differences in neural progenitor cell (NPC) markers (Nes, Pax6, PAX6, MASH1) or cell cycle distribution of PAX6-positive cells are observed between WT and Dnttip1 KO or Elmsan1 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by qRT-PCR, Western blot, and flow cytometry data showing no differences in early NPC markers or cell cycle profiles at day 8. This establishes that MiDAC's role is specific to later stages of neuronal differentiation rather than the initiation of the neural lineage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Loss of MiDAC function impairs neuronal maturation and neurite outgrowth without affecting neuronal differentiation per se. At day 12 of differentiation, Dnttip1 KO and Elmsan1 KO neurons show significantly shorter neurites, reduced expression of neuronal markers (Tubb3, Map2), decreased average neurite length and number of neurites per neuron, but unchanged percentage of neurons in the population. Gene expression analysis shows decreased expression of positive regulators of neuronal development (Slit3, Ntn1, Ncam1) and increased expression of repressors (Spry4, Id1, Pacsin1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 are well-supported by multiple complementary approaches including immunofluorescence imaging, quantitative neurite tracing (200 neurons per genotype), qRT-PCR, and statistical analysis. The data consistently show specific defects in neurite outgrowth and maturation without affecting the proportion of neurons, establishing a specific role for MiDAC in later stages of neuronal development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "DNTTIP1 binds genome-wide to both promoters and enhancers in mESCs. ChIP-seq identifies 61,505 DNTTIP1-specific peaks, with 22% at promoters (\u00b11 kb of TSS) and 78% at promoter-distal regions. DNTTIP1 binding sites overlap significantly with active histone marks (H3K4me1, H3K27ac, H3K4me3), while low DNTTIP1 binding correlates with the repressive mark H3K27me3. Non-TSS DNTTIP1 sites are enriched for enhancer marks (H3K4me1, H3K27ac).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by ChIP-seq data with two biological replicates and appropriate controls. The genome-wide distribution analysis and overlap with histone marks are clearly documented. The data establish that MiDAC localizes to both active promoters and enhancers, consistent with a role in transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The majority of differentially expressed genes in Dnttip1 KO mESCs are direct targets of DNTTIP1. Of 493 downregulated genes, 358 (73%) are bound by DNTTIP1, and of 368 upregulated genes, 314 (85%) are bound by DNTTIP1. An even higher proportion of differentially expressed neurodevelopmental genes (92% downregulated, 96% upregulated) are bound by DNTTIP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by integration of ChIP-seq and RNA-seq data. The high percentage of DEGs bound by DNTTIP1 provides strong evidence for direct regulation. The statistical significance of the overlap is stated, and the even higher proportion for neurodevelopmental genes strengthens the conclusion about MiDAC's specific role in neurogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "DNTTIP1 binding sites are enriched for transcription factor motifs implicated in neurogenesis. Motif analysis reveals enrichment for RBFOX2 motifs (associated with upregulated genes) and ELK1 motifs (associated with downregulated genes) at DNTTIP1-bound sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by de novo motif analysis of ChIP-seq data. The selective enrichment of different TF motifs at sites associated with up- versus downregulated genes suggests potential mechanisms for MiDAC recruitment and function. However, the functional significance of these motifs requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "DNTTIP1 chromatin binding is strongly reduced but not completely abolished in Elmsan1 KO mESCs. ChIP-seq shows no DNTTIP1 binding in Dnttip1 KO cells (as expected), but residual DNTTIP1 enrichment persists in Elmsan1 KO cells, suggesting DNTTIP1 retains some ability to bind chromatin when ELMSAN1 is depleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by ChIP-seq heatmaps comparing WT, Dnttip1 KO, and Elmsan1 KO cells. The residual DNTTIP1 binding in Elmsan1 KO is clearly visible in the data. The interpretation that DNTTIP1 retains some chromatin-binding ability is reasonable, though the mechanism (e.g., alternative complex formation with TRERF1) remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "MiDAC occupies a significant fraction of HDAC1-bound loci. ChIP-seq analysis shows that 58% of DNTTIP1-bound regions also show HDAC1 enrichment, and 40% of all HDAC1 peaks colocalize with DNTTIP1. Given that HDAC1 exists in multiple complexes (SIN3, NuRD, CoREST, MiDAC), this suggests a significant number of HDAC1-occupied loci are bound by MiDAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by comparison of DNTTIP1 and HDAC1 ChIP-seq data. The substantial overlap (40-58% depending on perspective) is clearly documented. The inference that MiDAC accounts for a significant fraction of HDAC1 binding is reasonable given the known existence of multiple HDAC1 complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MiDAC directly binds to and regulates key neurodevelopmental genes. DNTTIP1 and HDAC1 co-occupy promoters and enhancers of genes positively regulated by MiDAC (Slit3, Ntn1) and genes negatively regulated by MiDAC (Spry4, Id1). RNA-seq shows decreased expression of Slit3 and Ntn1 and increased expression of Spry4 and Id1 in Dnttip1 KO and Elmsan1 KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 are supported by integration of ChIP-seq and RNA-seq data for specific target genes. The co-occupancy of DNTTIP1 and HDAC1 at these loci, combined with the gene expression changes in knockout cells, provides strong evidence for direct regulation. The functional roles of these genes in neurite outgrowth are supported by literature citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "H4K20ac is consistently increased in Dnttip1 KO and Elmsan1 KO mESCs, suggesting it is a major MiDAC substrate. H4K20ac has been described as a repressive histone mark, which may explain the greater number of downregulated versus upregulated genes in MiDAC knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is supported by Western blot data showing increased H4K20ac in both knockout lines. However, claims C103 and C105 are speculative. The relationship between H4K20ac and MiDAC is correlative, not causative. Direct evidence that H4K20ac is a substrate of MiDAC (e.g., in vitro deacetylation assays) is lacking. The explanation for the asymmetry in gene expression changes (C105) is plausible but not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "MiDAC differentially regulates H3K27ac and H4K20ac on neurodevelopmental genes during neurogenesis. Manual ChIP-qPCR in differentiated neurons shows that MiDAC components (DNTTIP1, ELMSAN1, HDAC1) occupy promoters and enhancers of Slit3, Ntn1, Spry4, and Id1. Genes positively regulated by MiDAC (Slit3, Ntn1) show increased H4K20ac in knockout cells without major changes in H3K27ac. Genes negatively regulated by MiDAC (Spry4, Id1) show increased H3K27ac without changes in H4K20ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 are supported by manual ChIP-qPCR data from differentiated neurons at day 12. The differential changes in H4K20ac versus H3K27ac at different target genes provide mechanistic insight into how MiDAC achieves both activation and repression. The data are consistent with the model that MiDAC removes H4K20ac from pro-neural genes and H3K27ac from anti-neural genes. Statistical significance is indicated (**, p\u22640.01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Conditioned medium from WT neurons partially rescues neurite outgrowth defects in MiDAC knockout neurons. Treatment with WT CM restores average neurite length and number of neurites per neuron in Dnttip1 KO and Elmsan1 KO neurons. Interestingly, only longer neurites (\u226550 \u00b5m) are significantly affected and rescued. Co-culture experiments with granule neuron progenitors (GNPs) show that neuronal network formation is impaired when GNPs are cultured with Dnttip1 KO or Elmsan1 KO NE, suggesting loss of secreted factors required for neurite outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 are supported by rescue experiments with conditioned medium and co-culture assays. The partial rescue with WT CM provides evidence that secreted factors are involved. The selective effect on longer neurites (C114) is an interesting observation, though the interpretation (C115) that MiDAC regulates later stages of neurite outgrowth is speculative. The co-culture data (C117-C118) provide independent support for the role of secreted factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Loss of MiDAC function results in reduced SLIT3 and NTN1 protein levels and signaling. Western blot analysis shows strong reductions in SLIT3 and NTN1 in both cell lysates and conditioned medium from Dnttip1 KO NE compared to WT, while receptor levels (ROBO3, UNC5B) are unaffected. Downstream signaling effectors (phospho-DAB1, phospho-FAK) are also reduced in Dnttip1 KO NE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by Western blot data showing reduced ligand levels and downstream signaling. The data establish that the transcriptional changes in Slit3 and Ntn1 result in reduced protein levels and impaired signaling. The specificity for ligands versus receptors strengthens the conclusion that MiDAC's primary effect is on ligand expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Recombinant SLIT3 and/or NTN1 largely rescue neurite outgrowth defects in MiDAC knockout neurons through ROBO3 and UNC5B receptors. Addition of recombinant SLIT3, NTN1, or both to Dnttip1 KO neurons restores neurite length and number. The rescue is blocked by neutralizing antibodies against ROBO3 and/or UNC5B, demonstrating that the effect is mediated through these receptors. Similar results are obtained in GNP co-culture assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 are strongly supported by rescue experiments with recombinant ligands and blocking antibodies. The data provide compelling evidence that reduced SLIT3/NTN1 signaling accounts for the majority of neurite outgrowth defects in MiDAC knockout neurons. The blocking experiments (C125, C127) establish receptor specificity. Statistical significance is clearly indicated (p\u22640.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "MiDAC is a chromatin-associated HDAC complex that regulates a neurodevelopmental gene expression program controlling neurite outgrowth. In mESCs, DNTTIP1, ELMSAN1, and HDAC1 form MiDAC, which is enriched at promoters and enhancers genome-wide and functions as both an activator and repressor of transcription. MiDAC positively regulates pro-neural genes (Slit3, Ntn1) by H4K20 deacetylation while repressing negative regulators of neurogenesis (Spry4, Id1) by removing H3K27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C134 represent the main conclusions of the study, summarizing findings from multiple experimental approaches (IP, ChIP-seq, RNA-seq, rescue experiments). The model is well-supported by the data, though the mechanism of H4K20ac removal (C133) is based on correlative evidence rather than direct biochemical demonstration. The dual role in activation and repression is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "MiDAC has a cell-type or context-specific role in cell cycle regulation. In mESCs, loss of MiDAC function does not affect cell proliferation, cell cycle distribution, or expression of cell cycle-related genes (Ccna2, Cdkn1a, Cdkn1b), contrasting with reported effects in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 are supported by proliferation assays, flow cytometry, and gene expression data in mESCs. The lack of cell cycle effects in mESCs, contrasted with published effects in cancer cells (C136), supports the conclusion of context-dependence. This is an important negative result that helps define MiDAC's specific role in mESCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "DNTTIP1 binds to promoter-proximal and -distal elements in mESCs, but no clear consensus binding motif was identified. Significant enrichment of several transcription factor motifs was detected at DNTTIP1-bound sites, suggesting MiDAC is recruited to chromatin by transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 are supported by ChIP-seq data and motif analysis. The absence of a clear DNTTIP1 consensus motif (C141) is a negative finding that is clearly stated. The enrichment of TF motifs (C142) is documented. However, the interpretation that MiDAC is recruited by TFs (C143) is speculative and requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "MiDAC may upregulate genes through ELK1 and downregulate genes through RBFOX2, both transcription factors implicated in neurogenesis. However, whether these TFs affect MiDAC recruitment and/or function remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C145 are speculative, based solely on motif enrichment analysis. No functional experiments (e.g., knockdown of ELK1 or RBFOX2, ChIP for these TFs) are provided to test these hypotheses. Claim C146 appropriately acknowledges this limitation. This represents a hypothesis for future work rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C147",
+      "C149",
+      "C150"
+    ],
+    "result": "Residual DNTTIP1 in Elmsan1 KO mESCs might form an alternative MiDAC complex with TRERF1. Some DNTTIP1 recruitment to chromatin is observed in Elmsan1 KO cells, and TRERF1 expression is detected in mESCs, suggesting DNTTIP1 may interact with TRERF1 in the absence of ELMSAN1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C147 is supported by ChIP-seq data showing residual DNTTIP1 binding. Claim C149 is supported by expression data. However, claim C150 is speculative. No direct evidence (e.g., IP of DNTTIP1 in Elmsan1 KO cells to test for TRERF1 interaction) is provided to support the formation of an alternative complex. This is a reasonable hypothesis but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C154"
+    ],
+    "result": "MiDAC has a direct role in both transcriptional activation and repression. A high percentage of DNTTIP1-bound loci are associated with both downregulated (73%) and upregulated (85%) genes in Dnttip1 KO versus WT mESCs and neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 is supported by integration of ChIP-seq and RNA-seq data. The high percentage of DEGs that are directly bound by DNTTIP1 provides strong evidence for direct regulation. The dual role in activation and repression is a key finding that distinguishes MiDAC from the traditional view of HDAC complexes as purely repressive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "MiDAC may control gene activation and repression by deacetylating histones. MiDAC might function as a repressor of genes marked by H3K27ac and as an activator on repressed genes by mediating deacetylation of H4K20ac. However, the relationship between H4K20ac and MiDAC is currently only correlative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C158 represent a mechanistic model based on correlative evidence from ChIP experiments. The differential changes in H3K27ac and H4K20ac at different target genes are clearly documented. However, claim C159 appropriately acknowledges that direct evidence for H4K20ac as a MiDAC substrate is lacking. In vitro deacetylation assays or other biochemical approaches would be needed to definitively establish this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "MiDAC might exert its function by deacetylating transcription factors or histone acetyltransferases (HATs), which could explain changes in histone acetylation at target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C161 are purely speculative. No experimental evidence is provided to test whether MiDAC deacetylates TFs or HATs. This represents an alternative mechanistic hypothesis that could explain the data, but it remains untested. Future work would be needed to evaluate this possibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C165",
+      "C166"
+    ],
+    "result": "MiDAC directly controls a neurodevelopmental gene expression program targeting enhancers and promoters of regulators involved in neurite outgrowth. This neurodevelopmental program constitutes only a fraction of the MiDAC-regulated transcriptome, pointing to other biological roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C165 is well-supported by the combined ChIP-seq, RNA-seq, and functional data. Claim C166 is a reasonable inference from the breadth of gene expression changes observed (861 DEGs total, with neurodevelopmental genes being a subset). This appropriately acknowledges that MiDAC likely has additional functions beyond neurogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "MiDAC directly activates SLIT3 and NTN1 while repressing SPRY4 and ID1. Recombinant SLIT3 and NTN1 rescue neurite outgrowth defects in MiDAC knockout neurons. Blocking either ROBO3 or UNC5B is sufficient to inhibit rescue by combined SLIT3/NTN1, suggesting a heteromeric ROBO3/UNC5B receptor axis is required for efficient signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C170 are strongly supported by integration of ChIP-seq, RNA-seq, protein data, and rescue experiments. Claim C171 is an interesting observation from the blocking experiments, suggesting cooperative signaling through ROBO3 and UNC5B. However, the interpretation of a \"heteromeric axis\" is somewhat speculative and would benefit from additional mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "MiDAC may play an important role in neurodevelopmental disorders. The study implicates MiDAC as an essential regulator of neurite outgrowth, and recent reports of noncoding mutations in MiDAC components in autism patients support a potential role in neurodevelopmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C178 is speculative, extrapolating from the in vitro findings to human disease. Claim C179 cites published genetic evidence linking MiDAC to autism, which provides some support. However, claim C180 is purely speculative about future research. The connection to human disease is plausible but not directly demonstrated in this study. This represents an important direction for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

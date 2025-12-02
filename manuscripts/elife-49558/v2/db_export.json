@@ -1,0 +1,2121 @@
+{
+  "submission": {
+    "id": "0d3da79f-77dd-4207-8e34-c24128f22bd0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:56:11.838679Z",
+    "updated_at": "2025-12-02T15:56:11.838679Z"
+  },
+  "content": [
+    {
+      "id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "submission_id": "0d3da79f-77dd-4207-8e34-c24128f22bd0",
+      "content_type": "manuscript",
+      "content_text": "# Long non-coding RNA GRASLND enhances chondrogenesis via suppression of the interferon type II signaling pathway\n\n## Authors\n\n- Nguyen PT Huynh<sup>1</sup> ([ORCID: 0000-0002-7254-1645](https://orcid.org/0000-0002-7254-1645))\n- Catherine C Gloss<sup>1</sup>\n- Jeremiah Lorentz<sup>1</sup>\n- Ruhang Tang<sup>1</sup>\n- Jonathan M Brunger<sup>5</sup>\n- Audrey McAlinden<sup>1</sup>\n- Bo Zhang<sup>4</sup>\n- Farshid Guilak<sup>1</sup> ([ORCID: 0000-0001-7380-0330](https://orcid.org/0000-0001-7380-0330)) \u2020\n\n### Affiliations\n\n1. Department of Orthopaedic Surgery, Washington University St Louis United States\n2. Shriners Hospitals for Children St. Louis United States\n3. Department of Cell Biology, Duke University Durham United States\n4. Center of Regenerative Medicine, Washington University St Louis United States\n5. Department of Biomedical Engineering, Vanderbilt University Nashville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe roles of long noncoding RNAs (lncRNAs) in musculoskeletal development, disease, and regeneration remain poorly understood. Here, we identified the novel lncRNA GRASLND (originally named RNF144A-AS1) as a regulator of mesenchymal stem cell (MSC) chondrogenesis. GRASLND, a primate-specific lncRNA, is upregulated during MSC chondrogenesis and appears to act directly downstream of SOX9, but not TGF-\u03b23. We showed that the silencing of GRASLND resulted in lower accumulation of cartilage-like extracellular matrix in a pellet assay, while GRASLND overexpression \u2013 either via transgene ectopic expression or by endogenous activation via CRISPR-dCas9-VP64 \u2013 significantly enhanced cartilage matrix production. GRASLND acts to inhibit IFN-\u03b3 by binding to EIF2AK2, and we further demonstrated that GRASLND exhibits a protective effect in engineered cartilage against interferon type II. Our results indicate an important role of GRASLND in regulating stem cell chondrogenesis, as well as its therapeutic potential in the treatment of cartilage-related diseases, such as osteoarthritis.\n\n## Introduction\n\nArticular cartilage is an aneural, avascular tissue and has little or no capacity for intrinsic repair (Sophia Fox et al., 2009), and there are currently no effective procedures that result in long-term cartilage restoration. Furthermore, focal cartilage or osteochondral lesions generally progress to osteoarthritis (OA), a progressive degenerative disease characterized by changes in the articular cartilage and remodeling of other joint tissues such as the synovium and subchondral bone. Thus, there remains an important need for regenerative therapies that can enhance cartilage repair through tissue engineering or cell therapy approaches (Huynh et al., 2018a; Glass et al., 2014; Brunger et al., 2017a; Brunger et al., 2017b; Brunger et al., 2014; Adkar et al., 2017; Bhumiratana et al., 2014).\n\nIn this regard, adult stem cells such as bone marrow-derived mesenchymal stem cells (MSCs) or adipose-derived stem cells (ASCs) provide a readily accessible source of multipotent cells that show significant promise for regenerative medicine (Gimble and Guilak, 2003; Erickson et al., 2002; Awad et al., 2004; Caplan, 1991). Under defined culture conditions supplemented with Transforming Growth Factor Beta 3 (TGF-\u03b23), MSCs produce a cartilaginous matrix that is rich in glycosaminoglycans (GAGs) and collagen type II (COL2) (Mackay et al., 1998; Johnstone et al., 1998). However, the complete pathway involved in MSC chondrogenesis has not been fully deciphered. A detailed understanding of the gene regulatory networks that control this process could provide new insights that accelerate and improve cartilage regeneration from endogenous stem cells or exogenously implanted MSCs.\n\nIncreasing evidence suggests that the gene regulatory pathways involved in stem cell differentiation may rely not only on protein-coding RNAs, but also on non-coding RNAs (ncRNAs).\u00a0ncRNAs were initially difficult to identify because they did\u00a0not\u00a0possess open reading frames and were not\u00a0evolutionarily highly conserved (Lander et al., 2001). In one of the first landmark studies, chromatin-state mapping was used to identify transcriptional units of functional large intervening non-coding RNAs (lincRNAs) that were actively transcribed in regions flanking protein-coding loci (Guttman et al., 2009), and follow-up loss-of-function studies indicated that these lincRNAs were indeed crucial for the maintenance of pluripotency in embryonic stem cells (Guttman et al., 2011). There is a growing understanding of long non-coding RNA (lncRNA) function in a multitude of tissues and cellular processes. For example, detailed mechanistic studies on the role of lncRNAs in X chromosome inactivation (Lee and Bartolomei, 2013) or in\u00a0nervous system development and functions (Ng et al., 2012; Briggs et al., 2015) have been reported\u00a0previously. However, knowledge of their roles in the musculoskeletal system, particularly in chondrogenesis, remains limited. Only a handful of functional studies have been carried out in this regard. For example, lncRNA-HIT (HOXA Transcript Induced by TGF\u03b2) (Carlson et al., 2015) has been shown to play a role in epigenetic regulation during early limb development. Other studies have implicated a specific lncRNA, ROCR (Regulator of Chondrogenesis RNA) (Barter et al., 2017)\u00a0in\u00a0activity upstream of SRY-Box 9 (SOX9) and in the regulation of chondrocyte differentiation (Huynh et al., 2017).\n\nAs one of their many modes of actions, lncRNAs are also known to regulate and modulate various signaling cascades involved in the control of gene regulatory networks. Therefore, there may exist a connection between lncRNA candidates and signaling pathways previously known to play a role in the development of the musculoskeletal system. More specifically, there is growing evidence for the role of interferon (IFN) in skeletal tissue development and homeostasis (Dieudonne et al., 2013; Rostovskaya et al., 2018; Takayanagi et al., 2002a; Takayanagi et al., 2002b; Li, 2013; Sahni et al., 1999; Jang and Baik, 2013; Xiao et al., 2004; Sahni et al., 2001). There are two main types of IFN. Type I IFN\u00a0includes mainly IFN alpha (IFN-\u03b1) and IFN beta (IFN-\u03b2),\u00a0which\u00a0form complexes with Interferon Alpha and Beta Receptors (IFNARs), activating the Janus Kinase/Signal Transducers and Activators of Transcription (JAK/STAT) pathway by phosphorylation of STAT1 (Signal Transducer and Activator of Transcription 1) and STAT2 (Signal Transducer and Activator of Transcription 2). Phosphorylated STAT1/STAT2 then form complexes with IRF9 (IFN Regulatory Factor 9) and translocate into the nucleus to activate downstream targets via the interferon-stimulated responsible element (ISRE) DNA-binding motif. Type II\u00a0IFN, on the other hand, relies on activation of the JAK/STAT pathway following the binding of IFN gamma (IFN-\u03b3) to Interferon Gamma Receptors (IFNGRs). This process subsequently results in the phosphorylation and dimerization of STAT1,\u00a0which translocates into the nucleus and induces downstream targets via the gamma activated sequence (GAS) DNA-binding element (Brierley and Fish, 2002; Hertzog et al., 1994; Hu and Ivashkiv, 2009). Although IFN are widely known for their antiviral response, they can also act in other aspects of cellular regulation (Hertzog et al., 1994). Interestingly, IFN-\u03b3 has been implicated in non-viral processes, most notably due\u00a0to\u00a0its priming effect in auto-immune diseases such as lupus nephritis, multiple sclerosis, or rheumatoid arthritis (Green et al., 2017). An additional goal of this study was to elucidate the link between IFN-\u03b3 and our lncRNA candidate, and how this interaction could potentially play a role in MSC chondrogenesis and cartilage tissue engineering.\n\nIn a recent publication, we used high-depth RNA sequencing to map the transcriptomic trajectory of MSC chondrogenesis (Huynh et al., 2018b). This dataset provides a unique opportunity to identify candidate genes for subsequent functional characterization as regulators of chondrogenesis. Here, we used bioinformatic approaches to integrate our RNA-seq data with other publicly available datasets, applying a rational and systematic data-mining method to define a manageable list of final candidates for follow-up experiments. As a result, we identified RNF144A-AS1 as a crucial regulator of chondrogenesis and propose the name Glycosaminoglycan Regulatory ASsociated Long Non-coDing RNA (GRASLND). We showed that GRASLND enhances chondrogenesis by acting to suppress the IFN-\u03b3 signaling pathway, and that\u00a0this effect was prevalent across different adult stem cell types and conditions. Together, these results highlight novel roles of GRASLND and its modulation of IFN in stem cell chondrogenesis, as well as its therapeutic potential to enhance cartilage regeneration.\n\n## Results\n\n### GRASLND is crucial to and specifically upregulated in chondrogenesis\n\nFirst, we utilized our published database on MSC chondrogenesis (GSE109503) (Huynh et al., 2018b) to identify lncRNA candidates. We investigated the expression patterns of MSC markers (ALCAM, ENG, VCAM1), chondrogenic markers (ACAN, COL2A1, COMP), and SOX transcription factors (SOX5, SOX6, SOX9) (Figure 1\u2014figure supplement 1A). Pearson correlation analysis revealed 141 lncRNAs whose expression was highly correlated to those of MSC markers, 40 lncRNAs to chondrogenic markers, and 17 lncRNAs to SOX transcription factors (Figure 1\u2014figure supplement 1B,C). Among those, LOXL1-AS1 and MIR4435-1HG were downregulated and RP11-366L20.2 and GRASLND were upregulated upon ectopic SOX9 overexpression (Table 1 and Supplementary file 1) (GSE69110; Ohba et al., 2015). To validate the functions of these lncRNAs in chondrogenesis, we systematically designed small hairpin RNAs (shRNAs) targeting each candidate and assessed the\u00a0knockdown effect after 21 days of chondrogenic induction. We successfully designed two target shRNAs for LOXL1-AS1, MIR4435-1HG, and GRASLND, and one target shRNA for RP11-366L20.2 (Figure 1B, Figure 1\u2014figure supplement 2A\u2013C, Figure 1\u2014source data 1). We showed that knockdown of two out of three MSC-related lncRNAs did not influence the production of glycosaminoglycans (GAG),\u00a0an important extracellular matrix component in cartilage (Figure 1\u2014figure supplement 2A\u2013C). Although these lncRNAs may have other regulatory functions in MSCs, their roles in chondrogenesis appeared to be minimal. Moreover, we found that lower levels of MSC-correlated lncRNAs did not prime the MSCs toward chondrogenesis. However, knockdown of GRASLND (alias RNF144A-AS1 [RNF144A Antisense RNA 1]) resulted in decreased expression of chondrogenic markers (COL2A1, ACAN) and in\u00a0upregulation of apoptotic (CASP3) and cellular senescence (TP53) markers (Figure 1A,B). This effect was not due to nonspecific cytotoxicity of the\u00a0examined shRNAs, as released levels of lactase dehydrogenase (LDH) were similar among control and shRNA-expressing cells (Figure 1\u2014figure supplement 2D; Riss et al., 2004). In addition, biochemical assays indicated a reduction in both\u00a0GAG deposition (p<0.0001) and DNA and GAG/DNA levels (p<0.001) (Figure 1C\u2013E). Histologically, we observed the same phenotypic loss of GAG and collagen type II in the extracellular matrices (ECM) of pellet samples with GRASLND targeted shRNAs, while the scrambled controls displayed explicit staining of these proteins (Figure 1F). Taken together, these data indicate that GRASLND may be required for both cellular proliferation and cartilage-like matrix production.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig1-v2.jpg)\n\n**Figure 1.:** (A) Expression pattern of GRASLND in chondrogenesis (GSE109503; Huynh et al., 2018b). Log2TPM: log transformed value of transcripts per million (TPM). (B) Effect of GRASLND knockdown on chondrogenic, apoptotic, and cell-cycle-inhibition markers (n\u00a0=\u00a05). (C\u2013E) Effect of GRASLND knockdown on pellet matrix synthesis (n\u00a0=\u00a05). (F) Representative histological images of day 21 MSC pellets. Scale bar\u00a0=\u00a0200 \u00b5m. SafO-FG, SafraninO-Fast Green staining; COLII IHC,\u00a0collagen type II immunohistochemistry; hOC, human osteochondral control. (G\u2013I) qRT-PCR analysis of MSC samples cultured in (G) the\u00a0adipogenic condition (n\u00a0=\u00a06), (H) the\u00a0osteogenic condition (n\u00a0=\u00a06), and\u00a0(I)\u00a0the chondrogenic condition (n\u00a0=\u00a03\u20134). One-way ANOVA followed by Tukey post-hoc test (\u03b1\u00a0=\u00a00.05). Groups of different letters are statistically different from one another.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** LncRNAs whose expression patterns are correlated to crucial markers are of interest. (A) Expression patterns of previously identified MSC markers (left), chondrogenic markers (middle), and SOX transcription factors (right). Data retrieved from: GSE109503. (B) Expression patterns of correlated genes or lncRNAs (Pearson correlation\u00a0>0.9) to MSC markers (left), chondrogenic markers (middle), and SOX transcription factors (right). Lower boundary, 25th percentile; upper boundary, 75th percentile; blue line, median of correlated gene set. (C) Number of correlated genes and correlated lncRNAs.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Left: expression pattern of candidates during chondrogenesis (GSE109503). Log2TPM, log-transformed value of transcripts per million (TPM). Middle: efficiency of designed target shRNAs. Individual graphs indicate that\u00a0experiments on target number one and target number two were performed separately (n\u00a0=\u00a03). Welch\u2019s t-test on log-transformed fold changes was\u00a0used\u00a0for panels\u00a0(A,\u00a0B);\u00a0one-way ANOVA with Tukey post-hoc test was\u00a0used\u00a0for panel\u00a0(C) (\u03b1\u00a0=\u00a00.05). Groups of different letters are statistically different.\u00a0Right: Quantitative analysis of synthesized GAG matrix normalized to DNA amount. In\u00a0panel\u00a0(A) LOXL1-AS1 (n\u00a0= 4\u20135), a one-way ANOVA with Tukey post-hoc test\u00a0was\u00a0used. Groups of different letters are statistically different;\u00a0in\u00a0panel (B) RP11-366L20.2 (n\u00a0=\u00a03\u20135),\u00a0Welch\u2019s t-test was used; and in panel (C) MIR4435-1HG (n\u00a0=\u00a03\u20134), one- way ANOVA with Tukey post-hoc test\u00a0was\u00a0used. Groups of different letters are statistically different. (D) Cytotoxicity assay of target shRNAs for GRASLND. Cytotoxicity level was measured indirectly by the amount of released LDH (n\u00a0=\u00a04). One-way ANOVA followed by Tukey post-hoc test (\u03b1\u00a0= 0.05) was used. Groups of different letters are statistically different from one another.\n\n**Table 1.**\n Long non-coding RNA candidates shortlist.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene symbol</th>\n      <th>Gene name</th>\n      <th>ENSEMBL gene ID</th>\n      <th>Relationship to MSC chondrogenesis</th>\n      <th>Relationship to SOX9</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LOXL1-AS1</td>\n      <td>LOXL1 antisense RNA 1</td>\n      <td>ENSG00000261801</td>\n      <td>Correlated with MSC marker expression</td>\n      <td>Downregulated upon SOX9 overexpression</td>\n    </tr>\n    <tr>\n      <td>MIR4435-2HG gene synonym: MIR4435-1HG</td>\n      <td>MIR4435-2 host gene</td>\n      <td>ENSG00000172965</td>\n      <td>Correlated with MSC marker expression</td>\n      <td>Downregulated upon SOX9 overexpression</td>\n    </tr>\n    <tr>\n      <td>HMGA2-AS1 gene synonym: RP11-366L20.2</td>\n      <td>HMGA2 antisense RNA 1</td>\n      <td>ENSG00000197301</td>\n      <td>Correlated with MSC marker expression</td>\n      <td>Upregulated upon SOX9 overexpression</td>\n    </tr>\n    <tr>\n      <td>RNF144A-AS1 Referred to as GRASLND in this manuscript</td>\n      <td>RNF144A antisense RNA 1</td>\n      <td>ENSG00000228203</td>\n      <td>Correlated with chondrogenic marker expression</td>\n      <td>Upregulated upon SOX9 overexpression</td>\n    </tr>\n  </tbody>\n</table>\n\nTo establish whether GRASLND expression is specific to chondrogenesis or involved in other differentiation pathways, MSCs were induced towards adipogenic, osteogenic, or chondrogenic lineages, and GRASLND expression was measured at various timepoints throughout these processes. Successful differentiation was observed with an increase in lineage-specific markers: PPARG (Peroxisome Proliferator Activated Receptor Gamma) and ADIPOQ (Adiponectin, C1Q And Collagen Domain Containing) for adipogenesis, COL1A1 (Collagen Type I Alpha 1 Chain) and COL10A1 (Collagen Type X Alpha Chain 1) for osteogenesis, and ACAN (Aggrecan), SOX9 (SRY-Box 9) and COL2A1 (Collagen Type II Alpha Chain 1) for chondrogenesis (Figure 1G\u2013I). We found that GRASLND expression was particularly enriched as chondrogenesis progressed (Figure 1I). By contrast, GRASLND peaked at earlier timepoints during adipogenesis but decreased at later time points (Figure 1G), and downregulated when MSCs underwent osteogenic induction (Figure 1H), indicating that GRASLND is specifically upregulated in chondrogenesis. Furthermore, we speculate that GRASLND may display inhibitory effects on osteogenesis and adipogenesis, being downregulated during these processes.\n\nTo validate these gene expression findings, we performed RNA fluorescence in situ hybridization (FISH) throughout the time course of MSC chondrogenesis. Pellets exhibited GRASLND FISH signals at later time points during chondrogenic differentiation, consistent with the\u00a0RNA-seq data (Figure 2A). Next, to confirm the\u00a0subcellular location\u00a0of\u00a0GRASLND, we performed qRT-PCR on isolated nuclear and cytoplasmic fractions of day 21 MSC pellets (Figure 2B). We compared the subcellular expression patterns of GRASLND to those\u00a0of\u00a0NEAT1 (Nuclear Paraspeckle Assembly Transcript 1) and GAPDH (Glyceraldehyde 3-Phosphate Dehydrogenase). NEAT1 is a lncRNA previously characterized as\u00a0localizing\u00a0at the nucleus (Clemson et al., 2009; Sasaki et al., 2009), and GAPDH is an mRNA and thus should be exported to the cytoplasm for protein synthesis. Consistent with previous findings, NEAT1 displayed lower expression in the cytoplasmic fraction\u00a0compared to the nuclear fraction, in contrast to GAPDH. GRASLND exhibited higher expression in the cytoplasm, indicating a cytoplasmic subcellular location. Our finding was recapitulated by RNA in situ hybridization followed by confocal microscopy (Figure 2C). Interestingly, as GRASLND showed punctate labeling, we speculate that this lncRNA may function in the form of an RNA\u2013protein complex.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig2-v2.jpg)\n\n**Figure 2.:** (A) RNA in situ hybridization of MSC-derived pellets at different time points during chondrogenesis. GAPDH and GRASLND probes were hybridized on separate slides. Top three panels, scale bar\u00a0=\u00a020 \u00b5m; bottom panel, scale bar\u00a0=\u00a010 \u00b5m. (B) qRT-PCR of the\u00a0nuclear versus cytoplasmic fraction of day 21 MSC pellets (n\u00a0=\u00a04). NEAT1, Nuclear Paraspeckle Assembly Transcript 1. One-way ANOVA followed by Tukey post-hoc test (\u03b1\u00a0= 0.05) was used. Groups of different letters are statistically different from one another. (C) Confocal microscopy on MSC-derived pellets. Scale bar\u00a0=\u00a05 \u00b5m.\n\n### Characterization of GRASLND\n\nWe examined the characteristics of GRASLND by first exploring its evolutionary conservation. Except for exon 1, the genomic region of GRASLND (displayed as RNF144A-AS1 in the UCSC Genome Browser) is highly conserved in primates (Homo sapiens, Pan troglodytes, and Rhesus macaque) whose common ancestor can\u00a0be\u00a0traced back to 25 million years ago (Gibbs et al., 2007), while sequences are less conserved in other mammals (Figure 3A). This suggests that GRASLND may belong to a group of previously identified primate-specific lncRNAs (Derrien et al., 2012; Necsulea et al., 2014).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig3-v2.jpg)\n\n**Figure 3.:** (A) GRASLND genomic location and conservation across different species. Data were\u00a0retrieved from UCSC Genome Browser. (B) Knockdown of GRASLND and expression of RNF144A (n\u00a0=\u00a04). (C) Overexpression GRASLND and expression of RNF144A (n\u00a0=\u00a04). Welch\u2019s t-test. (D) Protein amount of RNF144A by western blot in variation of GRASLND levels. Lanes indicate biological replicates. Full bands are shown in Figure 3\u2014figure supplement 1. (E) GRASLND level in GFP- or SOX9-transduced MSCs under different doses of TGF-\u03b23 (n\u00a0=\u00a06). Two-way ANOVA followed by Tukey post-hoc test (\u03b1\u00a0=\u00a00.05) was carried out on the effect of SOX9 overexpression (p<0.0001) and doses of TGF-\u03b23 (p>0.05). The interaction between two tested factors (SOX9 overexpression and TGF-\u03b23 doses) was not significant (p>0.05). Groups of different letters are statistically different. ns,\u00a0not significant.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Lanes indicate biological replicates.\n\nPer GENCODE categorization, the AS (antisense) suffix indicates a group of lncRNAs that are positioned on the opposite strand, with overlapping sequences to their juxtaposed protein-coding genes. Often, these lncRNAs play a role in regulating the expression of their protein-coding counterparts (Huynh et al., 2017). Therefore, we set out to examine whether this is also the case for GRASLND (alias RNF144A-AS1) (Figure 3B\u2013C). Neither knockdown nor overexpression of GRASLND affected RNF144A transcript levels in MSCs cultured with or without TGF-\u03b23. Moreover, RNF144A protein levels also remained unaffected by variations of GRASLND levels, as indicated by western blot (Figure 3D and Figure 3\u2014figure supplement 1). These results indicate that GRASLND is not involved in the regulation of RNF144A. For these reasons, we proposed that GRASLND should be used to refer to the lncRNA in place of RNF144A-AS1.\n\nNext, we explored the signaling axis of GRASLND. Data mining and computational analysis on earlier published data suggested that GRASLND was a downstream effector of SOX9 (GSE69110) (Ohba et al., 2015). When SOX9 was overexpressed in fibroblasts, GRASLND expression was increased (~2 fold). We further confirmed this by utilizing SOX9 transgene overexpression in our MSCs culture (Figure 3E). Interestingly, although TGF-\u03b23 has been demonstrated to act upstream of SOX9, exogenous addition of this growth factor alone did not result in enhanced GRASLND expression. It is notable that SOX9 levels in GFP controls were indistinguishable between TGF-\u03b23 conditions at the time of investigation (1 week in monolayer culture), consistent with our previous finding that SOX9 was not upregulated until later timepoints in MSC chondrogenesis (Huynh et al., 2018b). Therefore, TGF-\u03b23, despite being a potent growth factor, is not sufficient to elevate GRASLND expression. Instead, GRASLND appeared to be a downstream target of SOX9.\n\n### Enhanced chondrogenesis for cartilage tissue engineering with GRASLND\n\nAs knockdown of GRASLND inhibited GAG and collagen deposition, we investigated whether overexpression of GRASLND would enhance chondrogenesis. We assessed this question by both transgene ectopic expression and by CRISPR-dCas9 (Clustered regularly interspaced short palindromic repeats \u2013 catalytically dead Cas9) mediated in-locus activation.\n\nWe designed our lentiviral transfer vector to carry a BGH-pA (Bovine Growth Hormone Polyadenylation) termination signal downstream of GRASLND to allow for its correct processing (Figure 4\u2014figure supplement 1A). In\u00a0addition, GRASLND was also driven under a doxycycline-inducible promoter, enabling the temporal control of its expression. We utilized this feature to induce GRASLND only during chondrogenic culture (Figure 4A). This experimental design focused solely on the role of GRASLND during chondrogenesis, while successfully eliminating its effect in MSC maintenance and expansion from our analysis. As control, a vector encoding the Discosoma sp. red fluorescent protein (dsRed) coding sequence in place of GRASLND was utilized. As doxycycline was most potent at 1 \u00b5g/mL (Figure 4\u2014figure supplement 1B,C), this dose was used for all of\u00a0the\u00a0following experiments.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig4-v2.jpg)\n\n**Figure 4.:** (A) Experimental timeline. (B,\u00a0C) Biochemical analyses of day 21 MSC pellets (n\u00a0=\u00a04). Welch\u2019s t-test. (D,\u00a0E) qRT-PCR analyses of day 21 MSC pellets (n\u00a0=\u00a05 in panel\u00a0[D]; n\u00a0=\u00a06 in panel\u00a0[E]). Welch\u2019s t-test. (F) Representative histological images of day 21 MSC pellets. COLII IHC, collagen type II immunohistochemistry; hOC, human osteochondral control. Scale bar\u00a0=\u00a0100 \u00b5m. (B,\u00a0D,\u00a0F) Transgene ectopic expression of GRASLND. (C,\u00a0E,\u00a0F) CRISPR-dCas9-VP64-induced activation of GRASLND. ns, not significant (p>0.05).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Overview of designed lentiviral backbone. GRASLND is driven under a doxycycline-inducible promoter, and poly-adenylated with BGHpA signal. (B,\u00a0C) Relative expression of GRASLND under different doses of doxycycline (Dox). Dox is most potent at 1 \u03bcg/mL under both conditions of TGF-\u03b23 (n\u00a0=\u00a04). One-way ANOVA with Tukey post-hoc test (\u03b1\u00a0= 0.05) were used. Groups of different letters are statistically different. (D\u2013F) Biochemical analyses of MSC pellets cultured under chondrogenic condition with different doses of TGF-\u03b23 (n\u00a0= 3\u20134): 0.1 ng/mL (D), 1ng/mL (E) and 10 ng/L (F). Welch\u2019s t-test\u00a0was\u00a0used. No bracket indicates that\u00a0the comparison is not significant. LTR, long terminal repeat; BGHpA, bovine growth hormone polyadenylation signal; TRE/CMV, Tet responsible element fused with the minimal cytomegalovirus promoter; rtTA2, reverse tetracycline-controlled transactivator 2; IRES,\u00a0internal ribosome entry site; PuroR, puromycin N-acetyl-transferase; SIN: Self inactivating.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Dunnett\u2019s test compared to \u2018No Guide\u2019 control. ns, not significant. **,\u00a0p<0.01; ***,\u00a0p<0.001.\n\nTo determine whether GRASLND would improve chondrogenesis at lower doses of growth factor or at earlier time points, we compared DNA and GAG levels from pellets cultured under different TGF-\u03b23 concentrations on day 7, day 14, and day 21 (Figure 4\u2014figure supplement 1D\u2013F). In agreement with our knockdown data, DNA content was unaffected. On the other hand, increases in GAG were observed at higher doses and at later time points, especially at 10 ng/mL of TGF-\u03b23. It appears that an elevated level of GRASLND alone was not sufficient to enhance GAG deposition when\u00a0lower levels of TGF-\u03b23 were used (0.1 ng/mL and 1 ng/mL) or at earlier time points (day 7 and day 14), and that\u00a0GRASLND\u00a0may act in concert with other downstream effectors, which were not present at lower doses of TGF-\u03b23 or at earlier time points in the process.\n\nWhen chondrogenesis was induced with 10 ng/mL of TGF-\u03b23 and assessed at 21 days post induction, overexpression of GRASLND resulted in higher amounts of GAG deposition (p<0.001) (Figure 4B), consistent with our data on the gene expression level (Figure 4D). We observed a slight increase in chondrogenic markers (COL2A1, ACAN), and a slight decrease in the apoptotic marker CASP3, whereas cellular senescence was not different between the two groups (TP53) (Figure 4D). Histologically, pellets derived from dsRed-transduced MSCs exhibited normal GAG and collagen type II staining, indicating successful chondrogenesis. The control pellets were indistinguishable from those derived from GRASLND-transduced MSCs (Figure 4F), albeit macroscopically smaller at the time of harvest.\n\nThese findings were further confirmed using CRISPR-dCas9-VP64-mediated activation of endogenous GRASLND. This system had been previously utilized to upregulate various transcription factors that efficiently induce embryonic fibroblasts into neurons (Black et al., 2016; Perez-Pinera et al., 2013). After screening eleven synthetic gRNAs, we selected the one with the\u00a0highest activation level (Figure 4\u2014figure supplement 2). When GRASLND was transcriptionally activated with CRISPR-dCas9, chondrogenesis was enhanced as evidenced by an\u00a0elevated amount of GAG deposition (p<0.01); DNA amount may also be slightly increased, albeit not to\u00a0a\u00a0statistically significant\u00a0level (Figure 4C). Similar trends were detected by qRT-PCR (Figure 4E) and histology (Figure 4F). It is worth noting that CRISPR-dCas9-mediated activation only resulted in a moderate upregulation of GRASLND expression\u00a0relative to transgene ectopic expression (2-fold vs 100-fold). However, the functional outcome was more pronounced with CRISPR-dCas9. We observed an\u00a0approximately 50% increase in the level of GAG produced when normalized to DNA (9.4\u00a0\u00b1\u00a02.19 mg/mg vs 16.3\u00a0\u00b1\u00a02.08 mg/mg), compared to 30% detected with ectopic expression (10.5\u00a0\u00b1\u00a00.84 mg/mg vs 13.9\u00a0\u00b1\u00a00.52 mg/mg).\n\n### GRASLND inhibits type II interferon signaling potentially by binding to EIF2AK2 and protects engineered cartilage from interferon\n\nTo decipher the potential signaling pathways involved, we chondrogenically induced MSCs in the presence or absence of GRASLND, and then utilized RNA-seq to compare the global transcriptomic changes between two conditions. As expected, GRASLND depletion resulted in impaired expression of chondrocyte-associated genes such as TRPV4 and COL9A2 (top 20 downregulated genes ranked by adjusted p-values) (Figure 5A). Skeletal system development and extracellular matrix organization were among the pathways most affected by the knockdown (Figure 5B). Surprisingly, pathways pertaining to interferon response were highly enriched in the upregulated gene list upon silencing of GRASLND. The top 20 upregulated genes involved many IFN downstream targets (MX2, IFI44, IFI44L, IFITM1, IFI6, IFIT1, STAT1, MX1, IFIT3, OAS3, OAS2), with both type I (IFN-\u03b1, IFN-\u03b2) and type II (IFN-\u03b3) found to be enriched in our gene ontology analysis (Figure 5B). Furthermore, upregulated genes were also found to exhibit DNA-binding motifs for transcription factors of the IFN pathways: STAT1, STAT2, IRF1, and\u00a0IRF2 (Table 2). A full list of differentially expressed genes is provided in Supplementary file 2. Further bioinformatic analyses created a network of potential transcription regulators as well as gene ontology terms for the upregulated gene cohort as a result of GRASLND silencing (Figure 5C). Taken together, GRASLND may act to suppress the activities of these transcription factors, and\u00a0as a result could\u00a0affect IFN signaling pathways during chondrogenesis.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig5-v2.jpg)\n\n**Figure 5.:** (A) Top 20 up- and down-regulated genes in GRASLND KD pellets compared to scrambled controls. (B) Gene ontology analysis of affected pathways. (C) Upregulated targets and related gene ontology terms and potential transcription factors. (D,E) Luciferase reporter assays on MSCs transduced with: (D) ISRE promoter element (n\u00a0=\u00a03), or (E) GAS promoter element (n\u00a0=\u00a03). Two-way ANOVA followed by Tukey post-hoc test (\u03b1\u00a0=\u00a00.05). Groups of different letters are statistically different. (F) RNA pull-down followed by western blot (full bands are shown in Figure 5\u2014figure supplement 2).\u00a0(G) RNA immunoprecipitation confirmed EIF2AK2 as the binding partner of GRASLND (n\u00a0=\u00a02). (H) Biochemical assays on MSC-derived pellets cultured under 100 ng/mL of IFN-\u03b2 (n\u00a0=\u00a04). (I) Biochemical assays on MSC-derived pellets cultured under 5 ng/mL of IFN-\u03b3 (n\u00a0=\u00a06). Welch\u2019s t-test. ns, not significant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) (B) IFN signal was upregulated in OA patients. Samples are indicated as disease state followed by patients\u2019 age (GSE57218). (C) IFN was upregulated while GRASLND was downregulated in damaged cartilage. Samples are named\u00a0by cartilage site followed by patients\u2019 age (EMTAB-4304). (C) Inverse correlation between GRASLND and IFN-related genes (EMTAB-4304).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig5-figsupp2-v2.jpg)\n\n**Table 2.**\n Top 5 enriched Cis-BP motifs and associated transcription factors for upregulated genes upon GRASLND knockdown.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Transcription factor</th>\n      <th>Cis-BP motif*</th>\n      <th>Number of genes with enriched motifs/number of upregulated genes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>STAT2</td>\n      <td></td>\n      <td>212/817</td>\n    </tr>\n    <tr>\n      <td>IRF2</td>\n      <td></td>\n      <td>189/817</td>\n    </tr>\n    <tr>\n      <td>IRF1</td>\n      <td></td>\n      <td>220/817</td>\n    </tr>\n    <tr>\n      <td>IRF1</td>\n      <td></td>\n      <td>153/817</td>\n    </tr>\n    <tr>\n      <td>STAT1</td>\n      <td></td>\n      <td>262/817</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Cis-BP: Catalogue of Inferred Sequence Preferences of DNA-Binding Proteins (Weirauch et al., 2014). Curated position weight matrices were retrieved from http://motifcollections.aertslab.org._\n\nTo further confirm this relationship, we performed luciferase reporter assays for interferon signaling upon GRASLND knockdown. Utilizing specific reporter constructs, we were able to determine whether GRASLND acted on type I or type II IFN. Our results indicated that a\u00a0decreased level of GRASLND led to a\u00a0heightened type II (IFN-\u03b3) (Figure 5E) response but not to a heightened type I (IFN-\u03b2) response\u00a0(Figure 5D). Importantly, luminescence activities between scrambled control and GRASLND knockdown were indistinguishable from each other in basal, IFN-free conditions. This indicates that at the\u00a0basal level, the two groups responded similarly to lentiviral transduction, and that\u00a0the observed difference in IFN signal was a consequence of GRASLND downregulation.\n\nSince GRASLND was expressed in the cytoplasm (Figure 2C), we hypothesized that it is part of an RNA\u2013protein complex. To test this, we performed an RNA pull-down assay, followed by mass spectrometry. Here, streptavidin beads were used as control, or conjugated to sense or antisense strands of GRASLND. Naked or conjugated beads were then incubated with lysates from day 21 pellets, from which bound proteins were eluted for further analyses. We found that Interferon-Induced Double-Stranded RNA-Activated Protein Kinase (EIF2AK2) peptides were detected at elevated levels in sense samples as compared to antisense controls (p<0.05); peptides were undetected in naked bead controls. Subsequent RNA pull-down followed by western blot confirmed EIF2AK2 as a binding partner of GRASLND (Figure 5F). We detected an increased level of EIF2AK2 bound to the sense strand of GRASLND relative to the antisense strand\u00a0or the pellet lysate control. Similarly, GRASLND was found to be associated with endogenous EIF2AK2 by RNA immunoprecipitation (RIP) (Figure 5G). On the basis of these findings, we speculate that this association of GRASLND RNA to EIF2AK2 could potentially result in downregulation of IFN-\u03b3 signaling.\n\nInterestingly, by mining a published microarray database (GSE57218) (Ramos et al., 2014), we found that IFN-related genes (STAT1, IFNGR2, NCAM1, MID1)\u00a0were highly elevated in the\u00a0cartilage tissues of osteoarthritis patients (Figure 5\u2014figure supplement 1A). As the microarray did not contain probes for GRASLND, no information on its expression could be extracted. In addition, we identified another independent study that reported changes in the transcriptomes of intact and damaged cartilage tissues (E-MTAB-4304) (Dunn et al., 2016). Similarly, a cohort of IFN-related genes was also upregulated in damaged cartilage, especially STAT1 and IFNGR1 (Figure 5\u2014figure supplement 1B). Interestingly, we identified a negative correlation between GRASLND and a few IFN related genes (IFNGR1, ICAM1) in damaged cartilage (Figure 5\u2014figure supplement 1C). Therefore, we proposed that GRASLND may possess some therapeutic potential through suppression of IFN signaling in osteoarthritis. To evaluate this possibility, we implemented the use of the GRASLND transgene in engineered cartilage cultured under IFN addition (100 ng/mL of IFN-\u03b2 or 5 ng/mL of IFN-\u03b3). We determined doses of IFN-\u03b2 and IFN-\u03b3 by selecting the lowest concentration at which day 21 pellets exhibited GAG loss when\u00a0compared to no IFN control. Consistent with luciferase reporter assays, the protective effect of GRASLND was observed upon IFN-\u03b3 challenge but not upon\u00a0IFN-\u03b2\u00a0challenge (Figure 5H,I). However, we observed a reduced level of GAG production compared to normal conditions, suggesting that GRASLND can protect the ECM from degradation, but not completely to control levels.\n\n### GRASLND enhanced the chondrogenesis of adipose-derived stem cells\n\nTo determine whether the function of GRASLND is unique to MSCs or present in other adult stem cells, we addressed whether modulating GRASLND expression could also improve chondrogenesis of adipose stem cells (ASCs). We observed an increase in GAG production when GRASLND was overexpressed in ASCs compared to control (p<0.0001) (Figure 6A), although ACAN levels were not significantly increased. Importantly, COL2A1 expression was significantly elevated (~5 fold) with overexpression of GRASLND (Figure 6B). On the basis of these data, it appears that GRASLND uses the same mechanism across these two cell types, asserting a pan effect on potentiating their chondrogenic capabilities. It is worth noting that histologic examination of the engineered cartilage showed a similar level of collagen type II in pellets with GRASLND overexpression compared to the dsRed control (Figure 6C), suggesting that\u00a0the influence of GRASLND could be variable in different target cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49558/elife-49558-fig6-v2.jpg)\n\n**Figure 6.:** (A) Biochemical analyses (n\u00a0=\u00a05). (B) qRT-PCR analyses (n\u00a0=\u00a06). (C) Representative histological images of day 21 ASC pellets. COLII IHC, Collagen type II immunohistochemistry; hOC, Human osteochondral control. Scale bar\u00a0=\u00a0100 \u00b5m. Welch\u2019s t-test. ns, not significant.\n\n## Discussion\n\nHere, we identified and demonstrated the first functional study of lncRNA GRASLND, which acts to enhance stem cell chondrogenesis. Knockdown of GRASLND via shRNA\u00a0inhibited chondrogenesis, whereas ectopic transgene or CRISPR-based overexpression of GRASLND enhanced chondrogenesis of MSCs and ASCs. Pathway analysis revealed a link between GRASLND and the\u00a0IFN-\u03b3 signaling pathway in this process, which was confirmed by the identification of EIF2AK2 as a GRASLND\u00a0binding partner. Unfortunately, lack of a known murine homolog makes it difficult to study GRASLND in vivo, and thus future studies may require GRASLND transgenic models in primate species.\n\nIn the context of the musculoskeletal system, IFN is mostly recognized for its role in bone development and homeostasis (Dieudonne et al., 2013; Rostovskaya et al., 2018; Takayanagi et al., 2002a; Takayanagi et al., 2002b; Li, 2013; Xiao et al., 2004)\u00a0and\u00a0myogenesis (Jang and Baik, 2013; Cheng et al., 2008; Londhe and Davie, 2011), as well as\u00a0for its crosstalk with TGF-\u03b2 in wound healing (Ishida et al., 2004). Notably, IFN-\u03b3 has been suggested to inhibit collagen synthesis in dermal fibroblasts, myofibroblasts, and articular chondrocytes (Ishida et al., 2004; Yufit et al., 1995; Harrop et al., 1995; Granstein et al., 1990; Amento et al., 1985). Furthermore, the JAK/STAT pathway, which involves IFN downstream effectors, has also been shown to inhibit chondrocyte proliferation and differentiation (Sahni et al., 1999; Sahni et al., 2001). Here, we found that GRASLND acts to suppress the IFN mechanism. In addition, we also present evidence that\u00a0indicates an interaction between GRASLND and EIF2AK2 (also referred to as PKR). Canonically, a crucial player in protein synthesis, EIF2AK2, has also been reported to control STAT signaling by directly binding to and preventing its association with DNA for gene activation (Wang et al., 2006; Wong et al., 1997). In\u00a0addition, several studies have suggested that highly structured, single-stranded RNA can also activate PKR EIF2AK2 via its double-stranded RNA-binding domains (dsDRBs) (Osman et al., 1999; Ben-Asouli et al., 2002; Cohen-Chalamish et al., 2009; Nallagatla et al., 2007; Mayo and Cole, 2017). Our RNA-seq data suggested that upon GRASLND knockdown, a cohort of downstream targets of STATs were upregulated. On the basis of the presence of DNA-binding motifs in\u00a0the investigated targets, we identified both STAT1 and STAT2 as potential regulators of genes that\u00a0are\u00a0disrupted by GRASLND knockdown. However, our luciferase reporter assays pointed towards a mechanism in IFN type II (gene activation by STAT1 homodimer) pathways\u00a0rather than type I (gene activation by STAT1/STAT2 heterodimer)\u00a0pathways. Thus, we hypothesized that GRASLND could form a secondary structure to bind and activate EIF2AK2, which in turn inhibits STAT1-related transcriptional function. This mechanism supports the hypothesis that modulation of IFN-\u03b3 via the JAK/STAT pathway, achieved by the GRASLND\u2013EIF2AK2 RNA\u2013protein complex, is important for cellular proliferation and differentiation during chondrogenesis.\n\nUpregulation of IFN has also been implicated in arthritis by several studies (Boissier et al., 1995; Cooper et al., 1988; Westacott et al., 1990; Kahle et al., 1992). Publicly available databases provide evidence corroborating similar patterns of IFN in degenerated cartilage (Ramos et al., 2014). As GRASLND inhibits IFN, utilization of this lncRNA offers potential in both MSC cartilage tissue engineering and OA treatment. As a proof of concept, we showed that GRASLND could enhance matrix deposition across cell types of origin, with and without interferon challenge in vitro. Future studies may wish to investigate whether GRASLND can protect cartilage from degradation in a milieu of pro-inflammatory cytokines in vivo.\n\nSince lentivirus was used to manipulate the expression of GRASLND, it is possible that\u00a0our observations were confounded by the cellular response to viral infection. However, our luciferase reporter assays demonstrated that basal luminescence levels (with no interferon supplementation) in the scrambled controls and the shRNA treatments were indistinguishable. This finding suggests that altered levels of interferon signaling can be attributed to experimentally varied levels of GRASLND and not to the presence of lentivirus. Our data indicate that GRASLND acts through type II rather than type I IFN. We found that 5 ng/mL of IFN-\u03b3 was still more detrimental to chondrogenic constructs than 100 ng/mL of IFN-\u03b2. One potential explanation for this phenomenon may be the skewed distribution of available surface receptors between type I and type II IFN\u00a0(IFNAR vs IFNGR). Indeed, MSCs express a much lower level of IFNAR2 than\u00a0of IFNAR1, IFNGR1, or IFNGR2 (both in GSE109503 [Huynh et al., 2018b] and in GSE129985 [this manuscript]). As these receptors function as heterodimers (Brierley and Fish, 2002; Hu and Ivashkiv, 2009), response to type I may be stunted due to IFNAR2 deficiency.\n\nFurthermore, we showed that a modified CRISPR-dCas9 system could be used successfully\u00a0for endogenous transcriptional activation of lncRNA. This system had been previously used in other cell types to regulate the\u00a0expression of both protein-coding and non-coding genes (Black et al., 2016; Perez-Pinera et al., 2013; Bester et al., 2018; Liu et al., 2017). We showed that CRISPR may be more effective than transgene expression, as indicated by a larger increase in GAG production, despite lower levels of overall gene activation. As GRASLND does not regulate RNF144A, it is evident that GRASLND acts in trans. However, we speculate that\u00a0the CRISPR-dCas9 system could also be useful for gain-of-function studies to investigate lncRNAs acting in cis, as well as for studies of lncRNAs that are difficult to obtain via molecular cloning because\u00a0of\u00a0their secondary structures, highly repeated sequence or GC-rich content.\n\nIn conclusion, we have identified GRASLND as an important regulator of MSC chondrogenesis. GRASLND acts downstream of SOX9 and enhances cartilage-like matrix deposition in stem cell-derived constructs. Moreover, GRASLND functions to suppress IFN via EIF2AK2, and as a result induces adult stem cells towards a more chondrocyte-like lineage. It is likely that the GRASLND\u2013EIF2AK2 RNA\u2013protein complex inhibits STAT1 transcriptional activity. These findings suggest that GRASLND has potential utility in enhancing stem cell chondrogenesis for therapeutic applications such as cartilage tissue engineering or for the treatment of OA.\n\n## Materials and methods\n\n### Cell culture\n\nBone marrow was obtained from discarded and de-identified waste tissue from adult bone marrow transplant donors in accordance with the Institutional Review Board of Duke University Medical Center. Adherent cells were expanded and maintained in expansion medium: DMEM-low glucose (Gibco), 1% penicillin/streptomycin (Gibco), 10% fetal bovine serum (FBS) (ThermoFisher), and 1 ng/mL basic fibroblast growth factor (Roche) (Hagmann et al., 2013).\n\nAdipose-derived stem cells (ASCs) were purchased from ATCC (SCRC-4000) and cultured in complete growth medium: mesenchymal stem cells basal medium (ATCC PCS-500\u2013030), mesenchymal stem cell growth kit (ATCC PCS-500\u2013040) (2% FBS, 5 ng/mL basic recombinant human FGF, 5 ng/mL acidic recombinant human FGF, 5 ng/mL recombinant human EGF, 2.4 nM L-alanyl-L-glutamine), and\u00a00.2 mg/mL G418.\n\n### Plasmid construction\n\n#### shRNA\n\nShort hairpin RNA (shRNA) sequences for specific genes of interest were designed with the Broad Institute GPP Web Portal (Moffat et al., 2006). For each gene, six different sequences were selected for screening, after which the two most effective were chosen for downstream experiments in chondrogenic assays. Selected shRNAs were cloned into a modified lentiviral vector (Addgene #12247) using MluI and ClaI restriction sites, as described previously (Diekman et al., 2015). A complete list of effective shRNA sequences is presented in Figure 1\u2014source data 1.\n\n### Transgene overexpression of GRASLND\n\nA derivative vector from modified TMPrtTA (Glass et al., 2014; Barde et al., 2006) was created with NEBuilder HiFi DNA Assembly Master Mix (New England Biolabs). Backbone was digested with EcoRV-HF (New England Biolabs) and PspXI (New England Biolabs). The following resultant fragments were amplified by polymerase chain reaction and assembled into the digested plasmid: Tetracycline-responsive element and minimal CMV promoter (TRE/CMV), firefly luciferase, bGH poly(A) termination signal (BGHpA). Primers and plasmids for cloning are provided in Figure 2\u2014source data 1.\n\nThe full sequence of GRASLND transcript variant 1 (RefSeq NR_033997.1) was synthesized by Integrated DNA Technologies, Inc. GRASLND or the Discosoma sp. red fluorescent protein\u00a0coding sequence (dsRed) were cloned into the above derivative tetracycline-inducible plasmid with NEBuilder HiFi DNA Assembly Master Mix (New England Biolabs) at NheI and MluI restriction sites (pLVD-GRASLND and pLVD-dsRed). Amplifying primers are listed in Figure 2\u2014source data 1.\n\n### CRISPR-dCas9 activation of GRASLND\n\nGuide RNA sequences were designed using the UCSC genome browser (http://genome.ucsc.edu/) (Kent et al., 2002), integrated with the MIT specificity score calculated by CRISPOR and the Doench efficiency score (Doench et al., 2016; Haeussler et al., 2016). Oligonucleotides (Integrated DNA Technologies, Inc) were phosphorylated, annealed, and ligated into the pLV-hUbC-dCas9-VP64 lentiviral transfer vector (Addgene #53192) previously digested at BsmBI restriction sites (Kabadi et al., 2014). Eleven potential guide RNA sequences were selected and screened for their efficacy, and the gRNA with the highest activation potential was chosen for further experiments (Figure 4\u2014figure supplement 2). The synthetic gRNA used in all CRISPR-dCas9 activation experiments has the following sequence: 5\u2032-CCACTGGGGATAGTTCCCTG-3\u2032.\n\n### Lentivirus production\n\nHEK 293T producer cells were maintained in 293T medium: DMEM-high glucose (Gibco), 10% heat inactivated FBS (Atlas),\u00a0and 1% penicillin/streptomycin (Gibco). To produce lentivirus for pellet studies, HEK 293T cells were plated at 3.8 \u00d7 106 cells per 10 cm dish (Corning) or at 8.3 \u00d7 106 cells per 15 cm dish (Falcon) in 293T medium. The following day, cells were co-transfected by calcium phosphate precipitation with the appropriate transfer vector (20 \u00b5g for 10 cm dish; 60 \u00b5g for 15 cm dish), the second-generation packaging plasmid psPAX2 (Addgene #12260) (15 \u00b5g for 10 cm dish; 45 \u00b5g for 15 cm dish), and the envelope plasmid pMD2.g (Addgene #12259) (6 \u00b5g for 10 cm dish; 18 \u00b5g for 15 cm dish). Cells were incubated at 37\u00b0C overnight. The following day, fresh medium consisting of DMEM-high glucose (Gibco), 10% heat-inactivated FBS (Atlas),\u00a01% penicillin/streptomycin (Gibco), and\u00a04 mM caffeine (Sigma-Aldrich) was exchanged (12 mL for 10 cm dish; 36 mL for 15 cm dish). Lentivirus was harvested 24 hr post medium change (harvest 1), when fresh medium was exchanged again. 48 hr post medium change, harvest two was collected. Harvest one and harvest two supernatants were pooled, filtered through 0.45 \u00b5m cellulose acetate filters (Corning), concentrated, aliquoted, and stored at \u221280\u00b0C for future use.\n\nTo produce lentivirus for shRNA and gRNA screening, HEK 293T cells were plated at 1.5\u20132 \u00d7 106 cells per well in a 6-well plate in DMEM-high glucose (Gibco), and\u00a010% heat inactivated FBS (Atlas). The following day, cells were co-transfected with 2 \u00b5g of the appropriate transfer vector, 1.5 \u00b5g of the packaging plasmid psPAX2 (Addgene #12260), and 0.6 \u00b5g of the envelope plasmid (Addgene #12259) with Lipofectamine 2000 (ThermoFisher) following manufacturer\u2019s protocol. Harvest and storage were performed as described above.\n\nFor knockdown experiments, lentivirus was titered by determining the number of antibiotic-resistant colonies after puromycin treatment. For overexpression experiments, lentivirus was titered by measuring integrated lentiviral copy number in host DNA with qRT-PCR as previously described (Sastry et al., 2002). Control and tested groups were targeted at similar MOIs.\n\n### Lentivirus transduction\n\nCells were plated at 4500 cells/ cm2 for one day and then transduced with appropriate lentivirus in expansion medium supplemented with 4 \u00b5g/mL polybrene (Sigma-Aldrich). Twenty-four hours post transduction, cells were rinsed once in phosphate buffered saline (PBS). Cells were cultured with fresh medium exchange every three days.\n\n### Cytotoxicity assay\n\nSeven days post viral transduction, medium was collected and the amount of lactose dehydrogenase (LDH) was measured as indirect output for cellular toxicity. Assays were performed following manufacturer\u2019s protocol (Promega). Absorbance signal was recorded at 490 nm with the Cytation 5 instrument (BioTek).\n\n### RNA-seq library preparation\n\nIsolated RNAs were stored at \u221280\u00b0C and submitted to the Genome Technology Access Center at Washington University in St Louis for library preparation and sequencing on a HiSeq 2500 (2 \u00d7 101 bp). Libraries were prepared using TruSeq Stranded Total RNA with Ribo-Zero Gold kit (Illumina).\n\n### RNA pull-down and mass spectrometry\n\nThe full sequence of GRASLND transcript variant 1 (RefSeq NR_033997.1) was synthesized by Integrated DNA Technologies, Inc, and cloned into the pGEM-T Easy Vector System (Promega) using the EcoRV site. This served as a template for subsequent in vitro transcription using the Riboprobe Combination Systems Kit (Promega), with spiked-in biotin RNA labeling mix (Roche). Resulted biotinylated sense and control antisense transcripts of GRASLND were stored at \u221280\u00b0C until further processing. Cell lysates from day 21 pellets were homogenized in mRIPA buffer (Cell Signaling) and centrifuged at 14,000 rpm for 15 min. The protein concentration of cell lysates was measured and adjusted to 2 mg/mL. 500 \u03bcL of total protein (1 mg) were incubated with either 1.5 \u00b5g of GRASLND-sense or\u00a0-antisense RNA transcripts tagged with biotin-16-UTP overnight (12 hr). Following incubation, the RNA\u2013protein mixtures and cell lysates (control) were incubated with 100 \u03bcL of prewashed streptavidin beads for 3 hr at 4\u00b0C (Pierce MS-Compatible Magnetic IP Kit, Streptavidin). The streptavidin beads were then washed five times in 800 \u00b5l of ice cold PBS. Beads were eluted twice, each with 30 \u03bcL of SDS elution buffer containing 100 mM Tris/HCl (pH 8), 4% SDS, and\u00a050 mM DTT. The elution was used either\u00a0for mass spectroscopy (Proteomics Core Facility, Washington University School of Medicine) or for Western blot (RayBiotech).\n\n### RNA immunoprecipitation (RIP)\n\nDay 21 pellets were harvested and stored at \u221280\u00b0C until further processing. Lysate was obtained by homogenizing day 21 pellets in 1.1 mL of complete RIP lysis buffer (1X RIP lysis buffer, 200X protease inhibitor cocktail, 400X RNase inhibitor) (Millipore) with a bead beater (BioSpec Products) at 2500 oscillations per minute for 3 min for a total of five times. The lysate was subsequently transferred to a new microcentrifuge tube, incubated on ice for 5 min to allow for cell swelling by the hypotonic RIP buffer, then stored at \u221280\u00b0C overnight.\n\nRIP assay was performed using the EZ-Magna RIP Kit (Millipore) with the rabbit anti-PKR (alias for EIF2AK2) antibodies (Abcam) following manufacturer\u2019s protocol. Separation of beads during the procedure was carried out using the MiniMACS separator (Miltenyi Biotec). Briefly, magnetic beads were washed and prepared by incubating with 5 \u03bcg of rabbit anti-PKR antibodies or 5 \u03bcg of normal rabbit IgG (negative control) per RIP reaction with rotation. Once the beads were ready, 900 \u03bcL of fresh complete RIP immunoprecipitation buffer (1X RIP wash buffer, 0.5 M EDTA, 200X RNase inhibitor) was added to the magnetic beads, followed by 100 \u03bcL of pellet lysate per reaction. Tubes were incubated with rotation at 200 rpm overnight at 4\u00b0C (Benchmark Orbi-Sharker Jr). The next day, tubes were centrifuged briefly, and magnetic beads were washed with cold RIP wash buffer for a total of six times. Proteins were subsequently degraded from resulting pull-down with proteinase K (1X RIP wash buffer, 10% SDS, 8.3X proteinase K) at 55\u00b0C for 30 min. After the incubation, tubes were centrifuged briefly and beads were separated. Supernatant was transferred into a new microcentrifuge tube, to which 250 \u03bcL of buffer RL was added (Norgen Biotek). RNA was isolated as described below using the Norgen Total RNA Isolation Plus Micro Kit (Norgen Biotek) following the\u00a0manufacturer\u2019s protocol. An\u00a0equal amount of eluted RNA was subsequently used for reverse transcription, followed by qRT-PCR as described below.\n\n### Bulk RNA-seq analysis\n\n#### Alignment and read assignment\n\nDemultiplexed raw sequencing files were generated by the Genome Technology Access Center at Washington University in St Louis. Reads were processed with trimmomatic-0.36 (Bolger et al., 2014), aligned with STAR-2.6.0 (Dobin et al., 2013)\u00a0and counted with featureCounts/Subread-1.6.1\u00a0(Liao et al., 2014).\n\n#### Differential expression analysis\n\nDownstream differential expression analysis was performed using DESeq2-1.16.1\u00a0(Love et al., 2014) (abs[log2 fold change]>1 and adjusted p-values<0.05).\n\n#### Gene ontology analysis\n\nGene ontology analysis of dysregulated genes was performed with enrichR-1.0\u00a0(Chen et al., 2013; Kuleshov et al., 2016).\n\n#### Transcription factor identification\n\nPotential transcription factors were identified on the basis of the presence of annotated DNA-binding motifs with RcisTarget-1.0.2\u00a0(Aibar et al., 2017). Annotation databases for the motifs in human transcription factors were previously compiled and can be downloaded at https://resources.aertslab.org/cistarget/. Cis-BP motifs were ranked by normalized enrichment score (NES), and the top five were reported in this paper.\n\n#### Identification of lncRNA candidates\n\nGSE109503 is the dataset that profiles transcriptomic changes of MSC chondrogenesis, composed of six time points (day 0, day 1, day 3, day 7, day 14, and\u00a0day 21) and three biological replicates. Raw sequencing files were downloaded from the GEO Omnibus, and processed as described above. Candidates were first restricted to those differentially expressed per day pair-wise (abs[log2 fold change]>1 and adjusted p-values<0.05) and of detectable abundance (TPM\u00a0>1 in more than six samples across the dataset). lncRNAs whose transcripts were not analyzed for transcript support level (ENSEMBL TSL) were also excluded. For the surviving genes, Pearson correlation analysis was then performed on mean expression per day. Candidates were identified as those with Pearson correlation values\u00a0>0.9 to all three investigated markers (ALCAM, VCAM1, ENG for MSC markers; COL2A1, ACAN, COMP for chondrogenic markers; SOX5, SOX6, SOX9 for SOX transcription factors). GSE69110 depicts the transcriptomic changes of fibroblasts in response to SOX9 expression levels (Supplementary file 1). Raw sequencing files were downloaded from the GEO Omnibus, and processed similarly. Genes\u00a0that\u00a0were expressed\u00a0differentially\u00a0between two conditions (SOX9 overexpression versus GFP control) were then identified (abs[log2 fold change]>1 and adjusted p-values<0.1). The shortlist of lncRNAs are the intersecting candidates between genes emerging from the above Pearson correlation analysis and dysregulated genes from this dataset.\n\n### Microarray analysis\n\nMicroarray processed data was downloaded from the GEO Omnibus and differential expression analysis was performed with limma-3.34.6\u00a0(Ritchie et al., 2015).\n\n### Mass spectrometry analysis\n\nScaffold-4.8.4 (Proteome Software Inc) was used to validate MS/MS-based peptide and protein identifications. Peptide identifications were accepted if they could be established as\u00a0having\u00a0a greater than 66.0% probability of\u00a0achieving\u00a0an FDR less than 1.0% by the Scaffold Local FDR algorithm. Protein identification was accepted if they could be established at a greater than\u00a095.0% probability and contained at least one identified peptide. Protein probabilities were assigned by the Protein Prophet algorithm (Nesvizhskii et al., 2003). Proteins that contain similar peptides and could not be differentiated on the basis of MS/MS analysis alone were grouped to satisfy the principles of parsimony. To identify differentially bound proteins, one-tailed t-test was performed on sense samples compared to naked beads, and sense samples were\u00a0compared to antisense samples.\n\n### Chondrogenesis assay\n\nMSCs or ASCs were digested in 0.05% trypsin-EDTA (Gibco), and trypsin was inactivated with 1.5X volume of expansion medium. Dissociated cells were centrifuged at 200 x g for 5 min, and supernatant was aspirated. Subsequently, cells were washed in pre-warmed DMEM-high glucose (Gibco) three times, and resuspended at 5 \u00d7 105 cells/mL in complete chondrogenic medium: DMEM-high glucose (Gibco), 1% penicillin/streptomycin (Gibco), 1% ITS+ (Corning), 100 nM dexamethasone (Sigma-Aldrich), 50 \u00b5g/mL ascorbic acid (Sigma-Aldrich), 40 \u00b5g/mL L-proline (Sigma-Aldrich), and\u00a010 ng/mL rhTGF-\u03b23 (R and D Systems). 500 \u00b5L of the above cell mixture was dispensed into 15 mL conical tubes and centrifuged at 200 x g for 5 min. Pellets were cultured at 37\u00b0C\u00a0in 5% CO2 for 21 days with medium exchange every three days.\n\n### Osteogenesis and adipogenesis assays\n\nMSCs were plated at 2 \u00d7 104 cells/well in 6-well plates (Corning) and cultured for 4 days in MSC expansion medium, followed by induction medium for 7 days. Osteogenic induction medium includes: DMEM-high glucose (Gibco), 10% FBS, 1% penicillin/streptomycin (Gibco), 10 nM dexamethasone (Sigma-Aldrich), 50 \u00b5g/mL ascorbic acid (Sigma-Aldrich), 40 \u00b5g/mL L-proline (Sigma-Aldrich), 10 mM \u03b2-glycerol phosphate (Chem-Impex International), and\u00a0100 ng/mL rh-BMP2 (ThermoFisher). Adipogenic induction medium includes: DMEM-high glucose (Gibco), 10% FBS (ThermoFisher), 1% penicillin/streptomycin (Gibco), 1% ITS+ (Corning), 100 nM dexamethasone (Sigma-Aldrich), 450 \u00b5M 3-isobutyl-1-methylxanthine (Sigma-Aldrich), and\u00a0200 \u00b5M indomethacin (Sigma-Aldrich).\n\n### Biochemical assays\n\nHarvested pellets were stored at \u221220\u00b0C until further processing. Collected samples were digested in 125 \u00b5g/mL papain at 60\u00b0C overnight. A\u00a0DMMB assay was performed as previously described to measure GAG production (Farndale et al., 1986). PicoGreen assay (ThermoFisher) was performed to measure DNA content following manufacture\u2019s protocol.\n\n### Immunohistochemistry and histology\n\nHarvested pellets were fixed in 4% paraformaldehyde for 48 hr, and processed for paraffin embedding. Samples were sectioned at 10 \u00b5m thickness, and subjected to either Safranin O \u2013 Fast Green standard staining (Estes et al., 2010) or to immunohistochemistry of collagen type II (Developmental Studies Hybridoma Bank, University of Iowa). Human osteochondral sections were stained simultaneously to serve as a\u00a0positive control. Sections with no primary antibodies were used as negative control for immunohistochemistry.\n\n### Single-molecule RNA fluorescence in situ hybridization (RNA FISH)\n\nHarvested pellets were snap frozen in Tissue-Plus O.C.T. Compound (Fisher HealthCare) and stored at \u221280\u00b0C until further processing. Samples were sectioned at 5 \u00b5m thickness and slides were stored at \u221280\u00b0C until staining. Probe sets for RNA FISH were conjugated with Quasar 670 dye and were synthesized by LGC Biosearch Technologies to detect signal from a congregation of multiple probes binding to target DNA. GAPDH probe set was pre-designed by the manufacturer. Probe sets are listed in Figure 2\u2014source data 2. Staining was carried out according to the\u00a0manufacturer\u2019s protocol for frozen tissues. Slides were mounted with Prolong Gold anti-fade mountant with DAPI (ThermoFisher) and imaged with the Virtual Slide Microscope VS120 (Olympus) at lower magnification. Confocal microscopy (Zeiss LSM 880) was used to capture images at higher magnification with the Plan-Apochromat 63x/1.40 Oil DIC M27 objective. Fluorescence signal from target RNA FISH probes was captured using a 633 nm excitation wavelength coupled with the Airyscan detector (Zeiss) to achieve the best resolution with improved signal-to-noise ratio (Weisshart, 2014). Hoechst signal was captured on the PMT detector utilizing a 405 nm excitation wavelength.\n\n### RNA isolation and quantitative RT-PCR\n\nNorgen Total RNA Isolation Plus Micro Kits (Norgen Biotek) were used to extract RNA from pellet samples, and Norgen Total RNA Isolation Plus Kits (Norgen Biotek) were used for all other RNA isolation. For monolayers, cells were lysed in buffer RL and stored at \u221220\u00b0C until further processing. For pellets, harvested samples were snap frozen in liquid nitrogen and stored at \u221280\u00b0C until further processing. On the\u00a0day of RNA isolation, pellets were homogenized in buffer RL using a bead beater (BioSpec Products) at 2500 oscillations per minute for 20 s for a total of three times. Subsequent steps were performed following the\u00a0manufacturer\u2019s protocol.\n\nNuclear and cytoplasmic fractions from day 21 MSC pellets were separated with the NE-PER Nuclear and Cytoplasmic Extraction Reagents (ThermoFisher) following the\u00a0manufacturer\u2019s protocol. The\u00a0resulting extracts were immediately subjected to RNA isolation using Norgen Total RNA Isolation Plus Micro Kits (Norgen Biotek) by adding 2.5 parts of buffer RL to 1 part of extract. Subsequent steps were carried out following the\u00a0manufacturer\u2019s protocol.\n\nReverse transcription by Superscript VILO cDNA master mix (Invitrogen) was performed immediately following RNA isolation. cDNA was stored at \u221220\u00b0C until further processing. qRT-PCR was carried out using Fast SyBR Green master mix (Applied Biosystems) following the\u00a0manufacturer\u2019s protocol. A complete list of primer pairs (synthesized by Integrated DNA Technologies, Inc) is reported in Figure 1\u2014source data 2.\n\n### Luminescence assay\n\nMSCs were plated at 8.5 \u00d7 104 cells per well in 24-well plates (Corning). Lentivirus carrying the response elements for type I (ISRE) or type II (GAS) upstream of firefly luciferase was purchased from Qiagen. 24 hours post plating, cells were co-transduced with virus in the following groups: ISRE with scrambled shRNA, ISRE with GRASLND shRNA, GAS with scrambled shRNA, and\u00a0GAS with GRASLND shRNA. 24 hours post-transduction, cells were rinsed once in PBS and fresh medium was exchanged. Three days later, medium was switched to expansion medium with 100 ng/mL IFN-\u03b2 (PeproTech) for wells with ISRE or with 5 ng/mL IFN-\u03b3 (PeproTech) for wells with GAS. MSCs were cultured for another 22 hr, and then harvested for luminescence assay using Bright-Glo Luciferase Assay System (Promega). Luminescence signals were measured using the Cytation 5 Plate reader (BioTek).\n\n### Western blot\n\nOn the\u00a0day of harvest, cells were homogenized with complete lysis buffer in ice cold PBS: 10X RIPA buffer (Cell Signaling Technology), 100X phosphatase inhibitor cocktail A (Santa Cruz Biotechnology), and\u00a0100X Halt protease inhibitor cocktails (ThermoScientific). Lysates were subsequently centrifuged at 14,000 x g for 15 min at 4\u00b0C, and supernatants were collected and stored at \u221220\u00b0C until further processing. Western blot was serviced by RayBiotech with the following antibodies: primary anti-\u03b2-actin (RayBiotech), primary anti-RNF144A (Abcam), primary anti-PKR (alias anti-EIF2AK2) (RayBiotech) and secondary anti-rabbit-HRP (horse radish peroxidase) (RayBiotech).\n\n### Statistical analyses\n\nAll statistical analyses were performed using R (R Development Core Team, 2018). Results from biochemical assays are depicted as mean\u00a0\u00b1\u00a0SD. Results from qRT-PCR are depicted as fold-change with error bars calculated per Applied Biosystems manual instruction.\n",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "64d0e51b-fa26-4c88-826e-5bd0c8800668",
+      "submission_id": "0d3da79f-77dd-4207-8e34-c24128f22bd0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Clifford J Rosen, Maine Medical Center Research Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49558.sa1](https://doi.org/10.7554/eLife.49558.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour work breaks new ground in understanding lncRNAs in bone and cartilage biology and provides a novel mechanism vis a vis interferon type II. Your overexpression of GRASLAND model that demonstrates augmentation of both mesenchymal stem cell and adipose derived stem cell chondrogenesis provides a promising approach to enhancing stem cell chondrogenesis and cartilage regeneration.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Long non-coding RNA GRASLND enhances chondrogenesis via suppression of interferon type II signaling pathway\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Harry Dietz as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: James Dennis (Reviewer #2); Elizabeth G. Loboa (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe BRE and all three reviewers were enthusiastic about your manuscript because of its novelty and new insights. The experiments are well done and demonstrate that \"GRASLND\" regulates chondrogenesis in MSCs. Notwithstanding, each of the reviewers had comments that appear addressable within a relatively short period of time. But since the conclusion of the paper is that EIF2AK2 binding by GRASLND facilitates chondrogenesis by regulating the IFN pathway, it is essential that validation of an interaction b/w endogenous EIF2AK2 and endogenous GRASLND is occurring during the differentiation of the MSCs or ASCs into cartilage, we suggest an antibody to pull down endogenous EIF2AK2 followed by qRTPCR of the endogenous transcript that comes with it.\n\nThere were several other comments that warrant your attention:\n\nReviewer #1:\n\n1) The authors switch between GRASLND and RN144-AS1 throughout the manuscript referring to their newly designated name, GRASLND, in the text of the Results section only to use RNF144-AS1 in the Figures. I would suggest using the original name and add the change to GRASLND in the Discussion.\n\nA couple of sections of the paper are very vague. For example, \"We successfully designed two target shRNAs for each of the three candidates, and one target for the other candidate (Figure 1\u2014figure supplement 2). Please change the text stating the gene names, this simplifies what was done, the genes that were evaluated, and more importantly, helps the reader interpret the overall approach and findings.\n\nSimilarly, the first paragraph of the subsection \u201cRNF144A-AS1 is crucial to and specifically upregulated in chondrogenesis\u201d. Among those, two were downregulated and two were upregulated upon ectopic Sox9 overexpression. Adding the gene names here removes ambiguity and helps the reader.\n\nReviewer #2:\n\nThere are a few items that could be clarified and some issues that this reviewer would like to see addressed.\n\n1) I may have missed it somewhere, but it appeared that RP11-366L20.2 had a similar effect on GAG expression. Was there a particular reason this lncRNA was not examined in more detail?\n\n2) One important issue not addressed in this study is what is the impact of GRASLND expression on actual chondrocytes. This is an important issue because chondrocytes are a likely target of therapeutic interventions.\n\n3) To this reviewer, the in situ hybridization results (Figure 2) don't appear to match the results in Figure 1G where RNF144A-AS1 expression is much higher at day 7 than at day 1. The images in Figure 2A don't seem to match that. Is that because of the overall cell numbers in day 1 vs. 7?\n\n4) From the IHC results on type II collagen expression in adipose-derived stem cells, it appears that the impact of GRASLND overexpression is actually quite minimal. The authors should bring that to readers attention since it means the effects might vary with other target cells, such as chondrocytes.\n\n5) In the discussion of RNF144A-AS1 effects on chondrogenesis (subsection \u201cRNF144A-AS1 is crucial to and specifically upregulated in chondrogenesis\u201d, second paragraph) it seems that the authors have a chicken or the egg comment. Is RNF144A-AS1 affecting osteogenesis and adipogenesis or is RNF144A-AS1 being affected by the two differentiation processes?\n\n6) Would direct inhibition of IFN gamma have the same chondrogenic effect on these cells?\n\nReviewer #3:\n\nMinor comments to be addressed are with respect to further details for inclusion in the Materials and methods. In particular, information related to the number, ages, gender, and ethnicities of donors from whom MSC and ASC were obtained were not provided. Further details related to statistical analyses would also be helpful. For example, numbers of biological replicates and technical replicates were not obvious in the manuscript.\n\nOther than these issues, the manuscript was well written and provides novel information to the field.\n",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "32b03629-fc49-4cd4-bf04-b1581aab19f7",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C1",
+      "claim": "GRASLND (originally named RNF144A-AS1) is a novel lncRNA that regulates mesenchymal stem cell (MSC) chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identified the novel lncRNA GRASLND (originally named RNF144A-AS1) as a regulator of mesenchymal stem cell (MSC) chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "6ddd4e39-794c-4a7f-97e8-650d53f68f9b",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C2",
+      "claim": "GRASLND is a primate-specific lncRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "GRASLND, a primate-specific lncRNA, is upregulated during MSC chondrogenesis and appears to act directly downstream of SOX9, but not TGF-\u03b23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this characteristic of GRASLND, and Figure 3A shows conservation analysis across species.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "68d634a6-cc4a-47ad-964f-6604ac7c559f",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C3",
+      "claim": "GRASLND is upregulated during MSC chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "GRASLND, a primate-specific lncRNA, is upregulated during MSC chondrogenesis and appears to act directly downstream of SOX9, but not TGF-\u03b23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this and Figure 1A shows the expression pattern during chondrogenesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "1886764d-d502-4271-ac4b-7f0c673753aa",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C4",
+      "claim": "GRASLND acts directly downstream of SOX9.",
+      "claim_type": "EXPLICIT",
+      "source": "GRASLND, a primate-specific lncRNA, is upregulated during MSC chondrogenesis and appears to act directly downstream of SOX9, but not TGF-\u03b23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this relationship, and Figure 3E shows experimental validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "fe0a207e-042b-4848-bc59-312f1b8f05f9",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C5",
+      "claim": "GRASLND does not act downstream of TGF-\u03b23.",
+      "claim_type": "EXPLICIT",
+      "source": "GRASLND, a primate-specific lncRNA, is upregulated during MSC chondrogenesis and appears to act directly downstream of SOX9, but not TGF-\u03b23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this and Figure 3E shows that TGF-\u03b23 alone does not enhance GRASLND expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "4ce299f3-6f80-4f97-ace0-17a26f8300ea",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C6",
+      "claim": "Silencing of GRASLND results in lower accumulation of cartilage-like extracellular matrix in a pellet assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the silencing of GRASLND resulted in lower accumulation of cartilage-like extracellular matrix in a pellet assay, while GRASLND overexpression \u2013 either via transgene ectopic expression or by endogenous activation via CRISPR-dCas9-VP64 \u2013 significantly enhanced cartilage matrix production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, and Figures 1C-F show biochemical and histological evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "7a94730e-f5fb-4cde-94e9-4f446d4665ed",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C7",
+      "claim": "GRASLND overexpression via transgene ectopic expression significantly enhances cartilage matrix production.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the silencing of GRASLND resulted in lower accumulation of cartilage-like extracellular matrix in a pellet assay, while GRASLND overexpression \u2013 either via transgene ectopic expression or by endogenous activation via CRISPR-dCas9-VP64 \u2013 significantly enhanced cartilage matrix production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, and Figures 4B, D, F show experimental evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "4fda8030-c8ec-4e08-b0c0-8eac70859416",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C8",
+      "claim": "GRASLND overexpression via endogenous activation via CRISPR-dCas9-VP64 significantly enhances cartilage matrix production.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that the silencing of GRASLND resulted in lower accumulation of cartilage-like extracellular matrix in a pellet assay, while GRASLND overexpression \u2013 either via transgene ectopic expression or by endogenous activation via CRISPR-dCas9-VP64 \u2013 significantly enhanced cartilage matrix production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, and Figures 4C, E, F show experimental evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "8ff4e23c-f7be-4c0d-b9cd-efb30380d32b",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C9",
+      "claim": "GRASLND acts to inhibit IFN-\u03b3 by binding to EIF2AK2.",
+      "claim_type": "EXPLICIT",
+      "source": "GRASLND acts to inhibit IFN-\u03b3 by binding to EIF2AK2, and we further demonstrated that GRASLND exhibits a protective effect in engineered cartilage against interferon type II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this mechanism, and Figures 5F-G show RNA pull-down and RIP experiments confirming the binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "33c13d9f-a155-422a-8275-43dccf6e595a",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C10",
+      "claim": "GRASLND exhibits a protective effect in engineered cartilage against interferon type II.",
+      "claim_type": "EXPLICIT",
+      "source": "GRASLND acts to inhibit IFN-\u03b3 by binding to EIF2AK2, and we further demonstrated that GRASLND exhibits a protective effect in engineered cartilage against interferon type II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, and Figure 5I shows biochemical assays demonstrating protection against IFN-\u03b3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "7ed0dd11-c5bb-4698-b371-6a187427c1d6",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C11",
+      "claim": "Articular cartilage has little or no capacity for intrinsic repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Articular cartilage is an aneural, avascular tissue and has little or no capacity for intrinsic repair (Sophia Fox et al., 2009), and there are currently no effective procedures that result in long-term cartilage restoration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Sophia Fox et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "4e7a7f48-2213-4e73-8f87-b7f315fa30f6",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C12",
+      "claim": "There are currently no effective procedures that result in long-term cartilage restoration.",
+      "claim_type": "EXPLICIT",
+      "source": "Articular cartilage is an aneural, avascular tissue and has little or no capacity for intrinsic repair (Sophia Fox et al., 2009), and there are currently no effective procedures that result in long-term cartilage restoration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "a4457429-8b83-4713-9766-ef083629b666",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C13",
+      "claim": "Focal cartilage or osteochondral lesions generally progress to osteoarthritis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, focal cartilage or osteochondral lesions generally progress to osteoarthritis (OA), a progressive degenerative disease characterized by changes in the articular cartilage and remodeling of other joint tissues such as the synovium and subchondral bone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "ea252107-a61c-4fd1-afb3-1aa875c55c0f",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C14",
+      "claim": "Osteoarthritis is a progressive degenerative disease characterized by changes in the articular cartilage and remodeling of other joint tissues such as the synovium and subchondral bone.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, focal cartilage or osteochondral lesions generally progress to osteoarthritis (OA), a progressive degenerative disease characterized by changes in the articular cartilage and remodeling of other joint tissues such as the synovium and subchondral bone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "461088ff-6e94-4844-9f68-507b224dc4b6",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C15",
+      "claim": "Adult stem cells such as bone marrow-derived mesenchymal stem cells (MSCs) or adipose-derived stem cells (ASCs) provide a readily accessible source of multipotent cells that show significant promise for regenerative medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, adult stem cells such as bone marrow-derived mesenchymal stem cells (MSCs) or adipose-derived stem cells (ASCs) provide a readily accessible source of multipotent cells that show significant promise for regenerative medicine (Gimble and Guilak, 2003; Erickson et al., 2002; Awad et al., 2004; Caplan, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "cd530916-af34-4cf9-a449-39ab0e9ce840",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C16",
+      "claim": "Under defined culture conditions supplemented with TGF-\u03b23, MSCs produce a cartilaginous matrix that is rich in glycosaminoglycans (GAGs) and collagen type II (COL2).",
+      "claim_type": "EXPLICIT",
+      "source": "Under defined culture conditions supplemented with Transforming Growth Factor Beta 3 (TGF-\u03b23), MSCs produce a cartilaginous matrix that is rich in glycosaminoglycans (GAGs) and collagen type II (COL2) (Mackay et al., 1998; Johnstone et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Mackay et al., 1998 and Johnstone et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "dfaba892-b734-42b2-b284-88b607464386",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C17",
+      "claim": "The complete pathway involved in MSC chondrogenesis has not been fully deciphered.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the complete pathway involved in MSC chondrogenesis has not been fully deciphered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "65418f8a-a7cd-4222-94dc-28db6029a3e5",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C18",
+      "claim": "Gene regulatory pathways involved in stem cell differentiation may rely not only on protein-coding RNAs, but also on non-coding RNAs (ncRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing evidence suggests that the gene regulatory pathways involved in stem cell differentiation may rely not only on protein-coding RNAs, but also on non-coding RNAs (ncRNAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as emerging knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "d86eba25-2bc8-4b24-a695-2c416c1e7e9b",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C19",
+      "claim": "ncRNAs were initially difficult to identify because they did not possess open reading frames and were not evolutionarily highly conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "ncRNAs were initially difficult to identify because they did not possess open reading frames and were not evolutionarily highly conserved (Lander et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Lander et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "6fdc81fd-5792-44ea-b250-89fb1fdb4e9e",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C20",
+      "claim": "Chromatin-state mapping was used to identify transcriptional units of functional large intervening non-coding RNAs (lincRNAs) that were actively transcribed in regions flanking protein-coding loci.",
+      "claim_type": "EXPLICIT",
+      "source": "In one of the first landmark studies, chromatin-state mapping was used to identify transcriptional units of functional large intervening non-coding RNAs (lincRNAs) that were actively transcribed in regions flanking protein-coding loci (Guttman et al., 2009), and follow-up loss-of-function studies indicated that these lincRNAs were indeed crucial for the maintenance of pluripotency in embryonic stem cells (Guttman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Guttman et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "2c3dc189-77c2-46f8-a74d-a1c340925c20",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C21",
+      "claim": "lincRNAs are crucial for the maintenance of pluripotency in embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In one of the first landmark studies, chromatin-state mapping was used to identify transcriptional units of functional large intervening non-coding RNAs (lincRNAs) that were actively transcribed in regions flanking protein-coding loci (Guttman et al., 2009), and follow-up loss-of-function studies indicated that these lincRNAs were indeed crucial for the maintenance of pluripotency in embryonic stem cells (Guttman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Guttman et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "d024eb9f-d854-404f-a0d6-cea2cf970bba",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C22",
+      "claim": "Knowledge of lncRNA roles in the musculoskeletal system, particularly in chondrogenesis, remains limited.",
+      "claim_type": "EXPLICIT",
+      "source": "However, knowledge of their roles in the musculoskeletal system, particularly in chondrogenesis, remains limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a knowledge gap in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "585c1253-f490-40f9-9801-dcf9aaeab74d",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C23",
+      "claim": "lncRNA-HIT (HOXA Transcript Induced by TGF\u03b2) plays a role in epigenetic regulation during early limb development.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, lncRNA-HIT (HOXA Transcript Induced by TGF\u03b2) (Carlson et al., 2015) has been shown to play a role in epigenetic regulation during early limb development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Carlson et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "cc3c18a5-d273-438a-86ee-d264065745d6",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C24",
+      "claim": "lncRNA ROCR (Regulator of Chondrogenesis RNA) is implicated in activity upstream of SOX9 and in the regulation of chondrocyte differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have implicated a specific lncRNA, ROCR (Regulator of Chondrogenesis RNA) (Barter et al., 2017) in activity upstream of SRY-Box 9 (SOX9) and in the regulation of chondrocyte differentiation (Huynh et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Barter et al., 2017 and Huynh et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "4e3e99bc-62d2-4f5e-b606-f1e3da398959",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C25",
+      "claim": "lncRNAs are known to regulate and modulate various signaling cascades involved in the control of gene regulatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "As one of their many modes of actions, lncRNAs are also known to regulate and modulate various signaling cascades involved in the control of gene regulatory networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about lncRNA function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "06220107-897d-4fe7-b749-12d14cebd149",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C26",
+      "claim": "There is growing evidence for the role of interferon (IFN) in skeletal tissue development and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, there is growing evidence for the role of interferon (IFN) in skeletal tissue development and homeostasis (Dieudonne et al., 2013; Rostovskaya et al., 2018; Takayanagi et al., 2002a; Takayanagi et al., 2002b; Li, 2013; Sahni et al., 1999; Jang and Baik, 2013; Xiao et al., 2004; Sahni et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "88caa82c-039a-4b25-bd14-e40e2e317f66",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C27",
+      "claim": "Type I IFN includes mainly IFN-\u03b1 and IFN-\u03b2, which form complexes with IFNARs, activating the JAK/STAT pathway by phosphorylation of STAT1 and STAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I IFN includes mainly IFN alpha (IFN-\u03b1) and IFN beta (IFN-\u03b2), which form complexes with Interferon Alpha and Beta Receptors (IFNARs), activating the Janus Kinase/Signal Transducers and Activators of Transcription (JAK/STAT) pathway by phosphorylation of STAT1 (Signal Transducer and Activator of Transcription 1) and STAT2 (Signal Transducer and Activator of Transcription 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of Type I IFN signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "239519d1-9f45-4f25-b510-19ab3b3a3595",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C28",
+      "claim": "Phosphorylated STAT1/STAT2 form complexes with IRF9 and translocate into the nucleus to activate downstream targets via the ISRE DNA-binding motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylated STAT1/STAT2 then form complexes with IRF9 (IFN Regulatory Factor 9) and translocate into the nucleus to activate downstream targets via the interferon-stimulated responsible element (ISRE) DNA-binding motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of Type I IFN signaling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "d22e7c7d-8511-4fbd-8231-4367d99f28f8",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C29",
+      "claim": "Type II IFN relies on activation of the JAK/STAT pathway following the binding of IFN-\u03b3 to IFNGRs, resulting in phosphorylation and dimerization of STAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Type II IFN, on the other hand, relies on activation of the JAK/STAT pathway following the binding of IFN gamma (IFN-\u03b3) to Interferon Gamma Receptors (IFNGRs). This process subsequently results in the phosphorylation and dimerization of STAT1, which translocates into the nucleus and induces downstream targets via the gamma activated sequence (GAS) DNA-binding element (Brierley and Fish, 2002; Hertzog et al., 1994; Hu and Ivashkiv, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of Type II IFN signaling, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "56a74ce5-331e-4a59-8431-11b5f221cf84",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C30",
+      "claim": "IFN-\u03b3 has been implicated in non-viral processes, most notably due to its priming effect in auto-immune diseases such as lupus nephritis, multiple sclerosis, or rheumatoid arthritis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, IFN-\u03b3 has been implicated in non-viral processes, most notably due to its priming effect in auto-immune diseases such as lupus nephritis, multiple sclerosis, or rheumatoid arthritis (Green et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Green et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "cc7f779d-bd8b-49c7-bbd7-777562b29f8c",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C31",
+      "claim": "Pearson correlation analysis revealed 141 lncRNAs whose expression was highly correlated to those of MSC markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson correlation analysis revealed 141 lncRNAs whose expression was highly correlated to those of MSC markers, 40 lncRNAs to chondrogenic markers, and 17 lncRNAs to SOX transcription factors (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the bioinformatic analysis shown in Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "566cf071-2de9-4187-a06b-a731afda130a",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C32",
+      "claim": "Pearson correlation analysis revealed 40 lncRNAs whose expression was highly correlated to those of chondrogenic markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson correlation analysis revealed 141 lncRNAs whose expression was highly correlated to those of MSC markers, 40 lncRNAs to chondrogenic markers, and 17 lncRNAs to SOX transcription factors (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the bioinformatic analysis shown in Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "c475a7b3-1c7c-4094-88a1-4783bf905b5a",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C33",
+      "claim": "Pearson correlation analysis revealed 17 lncRNAs whose expression was highly correlated to those of SOX transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Pearson correlation analysis revealed 141 lncRNAs whose expression was highly correlated to those of MSC markers, 40 lncRNAs to chondrogenic markers, and 17 lncRNAs to SOX transcription factors (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the bioinformatic analysis shown in Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "464fbbf8-1445-4e04-ba1f-e530ee84e843",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C34",
+      "claim": "LOXL1-AS1 and MIR4435-1HG were downregulated upon ectopic SOX9 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Among those, LOXL1-AS1 and MIR4435-1HG were downregulated and RP11-366L20.2 and GRASLND were upregulated upon ectopic SOX9 overexpression (Table 1 and Supplementary file 1) (GSE69110; Ohba et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the GSE69110 dataset from Ohba et al., 2015, shown in Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "af1daa95-0980-4b76-87a0-a48012cbae92",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C35",
+      "claim": "RP11-366L20.2 and GRASLND were upregulated upon ectopic SOX9 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Among those, LOXL1-AS1 and MIR4435-1HG were downregulated and RP11-366L20.2 and GRASLND were upregulated upon ectopic SOX9 overexpression (Table 1 and Supplementary file 1) (GSE69110; Ohba et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the GSE69110 dataset from Ohba et al., 2015, shown in Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "faa71e5b-98aa-471a-810a-89a4e13294ae",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C36",
+      "claim": "Knockdown of GRASLND resulted in decreased expression of chondrogenic markers (COL2A1, ACAN).",
+      "claim_type": "EXPLICIT",
+      "source": "However, knockdown of GRASLND (alias RNF144A-AS1 [RNF144A Antisense RNA 1]) resulted in decreased expression of chondrogenic markers (COL2A1, ACAN) and in upregulation of apoptotic (CASP3) and cellular senescence (TP53) markers (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B with qRT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "1956376e-d595-4154-90a5-a65c1b71c342",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C37",
+      "claim": "Knockdown of GRASLND resulted in upregulation of apoptotic (CASP3) and cellular senescence (TP53) markers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, knockdown of GRASLND (alias RNF144A-AS1 [RNF144A Antisense RNA 1]) resulted in decreased expression of chondrogenic markers (COL2A1, ACAN) and in upregulation of apoptotic (CASP3) and cellular senescence (TP53) markers (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B with qRT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "eb7da68e-c361-4ecd-b43c-3eb299da264b",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C38",
+      "claim": "The effect of GRASLND knockdown was not due to nonspecific cytotoxicity of the examined shRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was not due to nonspecific cytotoxicity of the examined shRNAs, as released levels of lactase dehydrogenase (LDH) were similar among control and shRNA-expressing cells (Figure 1\u2014figure supplement 2D; Riss et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by LDH assay data shown in Figure 1\u2014figure supplement 2D and cited method from Riss et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "563e707d-2383-4991-aa70-5aba02b87e8c",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C39",
+      "claim": "Knockdown of GRASLND resulted in a reduction in both GAG deposition (p<0.0001) and DNA and GAG/DNA levels (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, biochemical assays indicated a reduction in both GAG deposition (p<0.0001) and DNA and GAG/DNA levels (p<0.001) (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in biochemical assays in Figure 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "d06a1276-b221-4e9f-b65d-08ad900b1cb6",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C40",
+      "claim": "Histologically, pellet samples with GRASLND targeted shRNAs showed phenotypic loss of GAG and collagen type II in the extracellular matrices.",
+      "claim_type": "EXPLICIT",
+      "source": "Histologically, we observed the same phenotypic loss of GAG and collagen type II in the extracellular matrices (ECM) of pellet samples with GRASLND targeted shRNAs, while the scrambled controls displayed explicit staining of these proteins (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in histological images in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "bc7c4a87-15b9-41d6-b415-d498f1ea0c46",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C41",
+      "claim": "GRASLND may be required for both cellular proliferation and cartilage-like matrix production.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that GRASLND may be required for both cellular proliferation and cartilage-like matrix production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the knockdown experiments showing effects on DNA content and GAG production.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "e2b67e1e-878f-4ea0-ab71-d0a48c997142",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C42",
+      "claim": "GRASLND expression was particularly enriched as chondrogenesis progressed.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that GRASLND expression was particularly enriched as chondrogenesis progressed (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1I with qRT-PCR data during chondrogenic differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "ed1cec6b-89e0-4926-8e78-66dfa45c5ceb",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C43",
+      "claim": "GRASLND peaked at earlier timepoints during adipogenesis but decreased at later time points.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, GRASLND peaked at earlier timepoints during adipogenesis but decreased at later time points (Figure 1G), and downregulated when MSCs underwent osteogenic induction (Figure 1H), indicating that GRASLND is specifically upregulated in chondrogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1G with qRT-PCR data during adipogenic differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "96cee061-8291-41d9-b17c-da06c8ec48ac",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C44",
+      "claim": "GRASLND was downregulated when MSCs underwent osteogenic induction.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, GRASLND peaked at earlier timepoints during adipogenesis but decreased at later time points (Figure 1G), and downregulated when MSCs underwent osteogenic induction (Figure 1H), indicating that GRASLND is specifically upregulated in chondrogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1H with qRT-PCR data during osteogenic differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "8d9fdb03-5d8f-4385-9830-d688d048521b",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C45",
+      "claim": "GRASLND is specifically upregulated in chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, GRASLND peaked at earlier timepoints during adipogenesis but decreased at later time points (Figure 1G), and downregulated when MSCs underwent osteogenic induction (Figure 1H), indicating that GRASLND is specifically upregulated in chondrogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the differential expression patterns across adipogenic, osteogenic, and chondrogenic differentiation shown in Figures 1G-I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "eb09877d-3649-4ea3-9dae-6ce979727738",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C46",
+      "claim": "GRASLND may display inhibitory effects on osteogenesis and adipogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we speculate that GRASLND may display inhibitory effects on osteogenesis and adipogenesis, being downregulated during these processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that GRASLND is downregulated during osteogenesis and adipogenesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "8367f6ed-d239-4c81-929f-5e2d111f7b5a",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C47",
+      "claim": "Pellets exhibited GRASLND FISH signals at later time points during chondrogenic differentiation, consistent with the RNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Pellets exhibited GRASLND FISH signals at later time points during chondrogenic differentiation, consistent with the RNA-seq data (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in RNA FISH images in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "ab6e43da-afce-4cbe-850c-2424fd0a0b2f",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C48",
+      "claim": "GRASLND exhibited higher expression in the cytoplasm, indicating a cytoplasmic subcellular location.",
+      "claim_type": "EXPLICIT",
+      "source": "GRASLND exhibited higher expression in the cytoplasm, indicating a cytoplasmic subcellular location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on qRT-PCR of nuclear and cytoplasmic fractions shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "68c378e4-8f97-40ed-b118-1bace0bebeee",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C49",
+      "claim": "GRASLND showed punctate labeling, suggesting it may function in the form of an RNA\u2013protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, as GRASLND showed punctate labeling, we speculate that this lncRNA may function in the form of an RNA\u2013protein complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the punctate labeling pattern observed in confocal microscopy shown in Figure 2C.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "7fce59f7-9327-4c54-9879-a7101844e71b",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C50",
+      "claim": "The genomic region of GRASLND (except for exon 1) is highly conserved in primates (Homo sapiens, Pan troglodytes, and Rhesus macaque) whose common ancestor can be traced back to 25 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Except for exon 1, the genomic region of GRASLND (displayed as RNF144A-AS1 in the UCSC Genome Browser) is highly conserved in primates (Homo sapiens, Pan troglodytes, and Rhesus macaque) whose common ancestor can be traced back to 25 million years ago (Gibbs et al., 2007), while sequences are less conserved in other mammals (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the conservation track in Figure 3A and supported by citation to Gibbs et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "d154acca-3345-4457-891f-19a7ab57d001",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C51",
+      "claim": "GRASLND may belong to a group of primate-specific lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that GRASLND may belong to a group of previously identified primate-specific lncRNAs (Derrien et al., 2012; Necsulea et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the conservation analysis and supported by citations to Derrien et al., 2012 and Necsulea et al., 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "06690b82-d267-4817-b8f0-8f6a0c618c2c",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C52",
+      "claim": "Neither knockdown nor overexpression of GRASLND affected RNF144A transcript levels in MSCs cultured with or without TGF-\u03b23.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither knockdown nor overexpression of GRASLND affected RNF144A transcript levels in MSCs cultured with or without TGF-\u03b23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figures 3B-C with qRT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "5dd2d53f-6f6c-42f3-81a1-2c09fc74358d",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C53",
+      "claim": "RNF144A protein levels remained unaffected by variations of GRASLND levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RNF144A protein levels also remained unaffected by variations of GRASLND levels, as indicated by western blot (Figure 3D and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in western blot data in Figure 3D and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "7558b5eb-89d1-4c63-9c82-0e970414c190",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C54",
+      "claim": "GRASLND is not involved in the regulation of RNF144A.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that GRASLND is not involved in the regulation of RNF144A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of effect on RNF144A transcript and protein levels when GRASLND is manipulated.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "49919827-b88c-4256-9346-8ac1553c3638",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C55",
+      "claim": "When SOX9 was overexpressed in fibroblasts, GRASLND expression was increased (~2 fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Data mining and computational analysis on earlier published data suggested that GRASLND was a downstream effector of SOX9 (GSE69110) (Ohba et al., 2015). When SOX9 was overexpressed in fibroblasts, GRASLND expression was increased (~2 fold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the GSE69110 dataset from Ohba et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "9bcee31b-d156-4161-ac7f-9a3a977b1182",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C56",
+      "claim": "SOX9 transgene overexpression in MSCs resulted in enhanced GRASLND expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We further confirmed this by utilizing SOX9 transgene overexpression in our MSCs culture (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3E with qRT-PCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "919c8771-95a8-4296-aa1a-031ef5f96fbd",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C57",
+      "claim": "Exogenous addition of TGF-\u03b23 alone did not result in enhanced GRASLND expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although TGF-\u03b23 has been demonstrated to act upstream of SOX9, exogenous addition of this growth factor alone did not result in enhanced GRASLND expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3E where TGF-\u03b23 treatment without SOX9 overexpression does not increase GRASLND.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "b27d9d0e-6178-4845-afaf-21b9358338cd",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C58",
+      "claim": "SOX9 levels in GFP controls were indistinguishable between TGF-\u03b23 conditions at 1 week in monolayer culture.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that SOX9 levels in GFP controls were indistinguishable between TGF-\u03b23 conditions at the time of investigation (1 week in monolayer culture), consistent with our previous finding that SOX9 was not upregulated until later timepoints in MSC chondrogenesis (Huynh et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is consistent with previous findings cited from Huynh et al., 2018b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "801663a5-5c1f-4cbf-9535-9e66c645bd91",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C59",
+      "claim": "TGF-\u03b23, despite being a potent growth factor, is not sufficient to elevate GRASLND expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, TGF-\u03b23, despite being a potent growth factor, is not sufficient to elevate GRASLND expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that TGF-\u03b23 alone does not increase GRASLND expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "c75e719e-5336-4360-8f60-4fec5c9a4f4f",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C60",
+      "claim": "GRASLND appeared to be a downstream target of SOX9.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, GRASLND appeared to be a downstream target of SOX9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experiments showing SOX9 overexpression increases GRASLND but TGF-\u03b23 alone does not.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "c782510a-2013-41d4-8adc-03d29bdbce86",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C61",
+      "claim": "Doxycycline was most potent at 1 \u00b5g/mL for inducing GRASLND expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As doxycycline was most potent at 1 \u00b5g/mL (Figure 4\u2014figure supplement 1B,C), this dose was used for all of the following experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1B,C with dose-response data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "b9c889fe-70fe-4a7d-b83d-88ffc0bb5a68",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C62",
+      "claim": "Increases in GAG were observed at higher doses of TGF-\u03b23 and at later time points, especially at 10 ng/mL of TGF-\u03b23.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our knockdown data, DNA content was unaffected. On the other hand, increases in GAG were observed at higher doses and at later time points, especially at 10 ng/mL of TGF-\u03b23.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1D-F with biochemical assays at different TGF-\u03b23 concentrations and time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "7a5ca17e-7d88-4920-a304-657cad633ed8",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C63",
+      "claim": "An elevated level of GRASLND alone was not sufficient to enhance GAG deposition when lower levels of TGF-\u03b23 were used (0.1 ng/mL and 1 ng/mL) or at earlier time points (day 7 and day 14).",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that an elevated level of GRASLND alone was not sufficient to enhance GAG deposition when lower levels of TGF-\u03b23 were used (0.1 ng/mL and 1 ng/mL) or at earlier time points (day 7 and day 14), and that GRASLND may act in concert with other downstream effectors, which were not present at lower doses of TGF-\u03b23 or at earlier time points in the process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the dose-response and time-course experiments shown in Figure 4\u2014figure supplement 1D-F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "204e5e88-6a5f-4a79-887a-2030bc65cd09",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C64",
+      "claim": "GRASLND may act in concert with other downstream effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that an elevated level of GRASLND alone was not sufficient to enhance GAG deposition when lower levels of TGF-\u03b23 were used (0.1 ng/mL and 1 ng/mL) or at earlier time points (day 7 and day 14), and that GRASLND may act in concert with other downstream effectors, which were not present at lower doses of TGF-\u03b23 or at earlier time points in the process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that GRASLND overexpression requires sufficient TGF-\u03b23 and time to enhance GAG production.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "2eff4b47-084a-425c-b6c8-0045141b1528",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C65",
+      "claim": "When chondrogenesis was induced with 10 ng/mL of TGF-\u03b23 and assessed at 21 days post induction, overexpression of GRASLND resulted in higher amounts of GAG deposition (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "When chondrogenesis was induced with 10 ng/mL of TGF-\u03b23 and assessed at 21 days post induction, overexpression of GRASLND resulted in higher amounts of GAG deposition (p<0.001) (Figure 4B), consistent with our data on the gene expression level (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in biochemical assays in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "4b87fc1b-1822-4404-a5ff-03651c506e1a",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C66",
+      "claim": "Overexpression of GRASLND resulted in a slight increase in chondrogenic markers (COL2A1, ACAN) and a slight decrease in the apoptotic marker CASP3.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a slight increase in chondrogenic markers (COL2A1, ACAN), and a slight decrease in the apoptotic marker CASP3, whereas cellular senescence was not different between the two groups (TP53) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in qRT-PCR data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "1474bed5-92b1-4b86-93ce-8154e553dcf9",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C67",
+      "claim": "Cellular senescence marker TP53 was not different between GRASLND overexpression and control groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a slight increase in chondrogenic markers (COL2A1, ACAN), and a slight decrease in the apoptotic marker CASP3, whereas cellular senescence was not different between the two groups (TP53) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in qRT-PCR data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "d3d8b2ac-cee8-440c-a561-294d5f8ecddf",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C68",
+      "claim": "When GRASLND was transcriptionally activated with CRISPR-dCas9, chondrogenesis was enhanced as evidenced by an elevated amount of GAG deposition (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "When GRASLND was transcriptionally activated with CRISPR-dCas9, chondrogenesis was enhanced as evidenced by an elevated amount of GAG deposition (p<0.01); DNA amount may also be slightly increased, albeit not to a statistically significant level (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in biochemical assays in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "37db1ac9-b380-4c9c-954e-c8ffb70e824e",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C69",
+      "claim": "CRISPR-dCas9-mediated activation only resulted in a moderate upregulation of GRASLND expression relative to transgene ectopic expression (2-fold vs 100-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that CRISPR-dCas9-mediated activation only resulted in a moderate upregulation of GRASLND expression relative to transgene ectopic expression (2-fold vs 100-fold).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of expression levels shown in Figures 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "a751e779-fbfa-45f4-83fc-a9f72dd0a79d",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C70",
+      "claim": "The functional outcome of CRISPR-dCas9-mediated activation was more pronounced than transgene ectopic expression, with approximately 50% increase in GAG/DNA compared to 30% with ectopic expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the functional outcome was more pronounced with CRISPR-dCas9. We observed an approximately 50% increase in the level of GAG produced when normalized to DNA (9.4 \u00b1 2.19 mg/mg vs 16.3 \u00b1 2.08 mg/mg), compared to 30% detected with ectopic expression (10.5 \u00b1 0.84 mg/mg vs 13.9 \u00b1 0.52 mg/mg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative comparison of GAG/DNA ratios from Figures 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "82976e70-b07c-40b9-94f0-487aa480e7a4",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C71",
+      "claim": "GRASLND depletion resulted in impaired expression of chondrocyte-associated genes such as TRPV4 and COL9A2.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, GRASLND depletion resulted in impaired expression of chondrocyte-associated genes such as TRPV4 and COL9A2 (top 20 downregulated genes ranked by adjusted p-values) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in RNA-seq data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "087de685-7a01-46e4-a545-49d776046094",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C72",
+      "claim": "Skeletal system development and extracellular matrix organization were among the pathways most affected by GRASLND knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal system development and extracellular matrix organization were among the pathways most affected by the knockdown (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in gene ontology analysis in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "7c420aa1-6890-49e0-a13c-138ae785ce46",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C73",
+      "claim": "Pathways pertaining to interferon response were highly enriched in the upregulated gene list upon silencing of GRASLND.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, pathways pertaining to interferon response were highly enriched in the upregulated gene list upon silencing of GRASLND.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in gene ontology analysis in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "d5cf1f22-31e0-4abe-a31d-bdddf38c6c84",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C74",
+      "claim": "The top 20 upregulated genes upon GRASLND knockdown involved many IFN downstream targets (MX2, IFI44, IFI44L, IFITM1, IFI6, IFIT1, STAT1, MX1, IFIT3, OAS3, OAS2).",
+      "claim_type": "EXPLICIT",
+      "source": "The top 20 upregulated genes involved many IFN downstream targets (MX2, IFI44, IFI44L, IFITM1, IFI6, IFIT1, STAT1, MX1, IFIT3, OAS3, OAS2), with both type I (IFN-\u03b1, IFN-\u03b2) and type II (IFN-\u03b3) found to be enriched in our gene ontology analysis (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in RNA-seq data in Figure 5A and gene ontology analysis in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "cfd5491d-605f-405b-9632-fb79e17b63c1",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C75",
+      "claim": "Upregulated genes upon GRASLND knockdown were found to exhibit DNA-binding motifs for transcription factors of the IFN pathways: STAT1, STAT2, IRF1, and IRF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, upregulated genes were also found to exhibit DNA-binding motifs for transcription factors of the IFN pathways: STAT1, STAT2, IRF1, and IRF2 (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in transcription factor motif analysis in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "474ad68d-bd1a-4688-b491-fe834944990e",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C76",
+      "claim": "GRASLND may act to suppress the activities of IFN-related transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, GRASLND may act to suppress the activities of these transcription factors, and as a result could affect IFN signaling pathways during chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNA-seq and motif analysis showing upregulation of IFN pathway genes and enrichment of IFN transcription factor motifs upon GRASLND knockdown.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "63f3f53e-bfd3-4eaa-83c9-4a8346591ea2",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C77",
+      "claim": "A decreased level of GRASLND led to a heightened type II (IFN-\u03b3) response but not to a heightened type I (IFN-\u03b2) response.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that a decreased level of GRASLND led to a heightened type II (IFN-\u03b3) (Figure 5E) response but not to a heightened type I (IFN-\u03b2) response (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in luciferase reporter assays in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "bf51b7be-47fb-4e07-928e-c98dcf6cb33e",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C78",
+      "claim": "At the basal level, luminescence activities between scrambled control and GRASLND knockdown were indistinguishable from each other in IFN-free conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, luminescence activities between scrambled control and GRASLND knockdown were indistinguishable from each other in basal, IFN-free conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in luciferase reporter assays in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "5d72ab5b-8f5f-412f-a456-25dcb3743ebb",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C79",
+      "claim": "The observed difference in IFN signal was a consequence of GRASLND downregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that at the basal level, the two groups responded similarly to lentiviral transduction, and that the observed difference in IFN signal was a consequence of GRASLND downregulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the luciferase assay results showing no difference at baseline but differences upon IFN treatment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "dfc353bf-df9c-4ad1-85ec-e453a0be3865",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C80",
+      "claim": "EIF2AK2 peptides were detected at elevated levels in sense samples as compared to antisense controls (p<0.05) in RNA pull-down assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Interferon-Induced Double-Stranded RNA-Activated Protein Kinase (EIF2AK2) peptides were detected at elevated levels in sense samples as compared to antisense controls (p<0.05); peptides were undetected in naked bead controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mass spectrometry analysis of RNA pull-down samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "be0ff3b8-fa90-4759-abb2-607638d8d466",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C81",
+      "claim": "RNA pull-down followed by western blot confirmed EIF2AK2 as a binding partner of GRASLND.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent RNA pull-down followed by western blot confirmed EIF2AK2 as a binding partner of GRASLND (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in western blot data in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "c1509be1-f8b0-4d6a-85ca-032ada064b21",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C82",
+      "claim": "GRASLND was found to be associated with endogenous EIF2AK2 by RNA immunoprecipitation (RIP).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, GRASLND was found to be associated with endogenous EIF2AK2 by RNA immunoprecipitation (RIP) (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in RIP data in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "09bef622-550d-483b-9b8d-fe26c6ff585f",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C83",
+      "claim": "The association of GRASLND RNA to EIF2AK2 could potentially result in downregulation of IFN-\u03b3 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these findings, we speculate that this association of GRASLND RNA to EIF2AK2 could potentially result in downregulation of IFN-\u03b3 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the binding data and known functions of EIF2AK2.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "3e95dd4e-63a1-4514-a140-d6a5bc7796a7",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C84",
+      "claim": "IFN-related genes (STAT1, IFNGR2, NCAM1, MID1) were highly elevated in the cartilage tissues of osteoarthritis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, by mining a published microarray database (GSE57218) (Ramos et al., 2014), we found that IFN-related genes (STAT1, IFNGR2, NCAM1, MID1) were highly elevated in the cartilage tissues of osteoarthritis patients (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the GSE57218 dataset from Ramos et al., 2014, shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "1ff9efbd-7f4e-4c7b-a412-a04242e3618d",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C85",
+      "claim": "A cohort of IFN-related genes was upregulated in damaged cartilage, especially STAT1 and IFNGR1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we identified another independent study that reported changes in the transcriptomes of intact and damaged cartilage tissues (E-MTAB-4304) (Dunn et al., 2016). Similarly, a cohort of IFN-related genes was also upregulated in damaged cartilage, especially STAT1 and IFNGR1 (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the E-MTAB-4304 dataset from Dunn et al., 2016, shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "2a4e4f6d-3be7-44fc-814a-2e619b1f537e",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C86",
+      "claim": "A negative correlation was identified between GRASLND and a few IFN related genes (IFNGR1, ICAM1) in damaged cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we identified a negative correlation between GRASLND and a few IFN related genes (IFNGR1, ICAM1) in damaged cartilage (Figure 5\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in correlation analysis in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "eb8e49ee-d7d8-4f4d-899f-60a44c6fa2dc",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C87",
+      "claim": "GRASLND may possess some therapeutic potential through suppression of IFN signaling in osteoarthritis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we proposed that GRASLND may possess some therapeutic potential through suppression of IFN signaling in osteoarthritis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation of IFN upregulation in OA and GRASLND's ability to suppress IFN signaling.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "5ff4463c-6d97-4cf7-a7d0-f1ed149d2581",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C88",
+      "claim": "The protective effect of GRASLND was observed upon IFN-\u03b3 challenge but not upon IFN-\u03b2 challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with luciferase reporter assays, the protective effect of GRASLND was observed upon IFN-\u03b3 challenge but not upon IFN-\u03b2 challenge (Figure 5H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in biochemical assays in Figures 5H and 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "5236dbb1-fcde-45ac-a710-657b2797e534",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C89",
+      "claim": "GRASLND can protect the ECM from degradation, but not completely to control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed a reduced level of GAG production compared to normal conditions, suggesting that GRASLND can protect the ECM from degradation, but not completely to control levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the biochemical assays showing partial protection against IFN-\u03b3 in Figure 5I.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "2f88b7a4-e840-4541-8f67-e74373ad5065",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C90",
+      "claim": "An increase in GAG production was observed when GRASLND was overexpressed in ASCs compared to control (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an increase in GAG production when GRASLND was overexpressed in ASCs compared to control (p<0.0001) (Figure 6A), although ACAN levels were not significantly increased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in biochemical assays in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "f185458c-0486-4f99-ad2e-f3675d23e111",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C91",
+      "claim": "COL2A1 expression was significantly elevated (~5 fold) with overexpression of GRASLND in ASCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, COL2A1 expression was significantly elevated (~5 fold) with overexpression of GRASLND (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in qRT-PCR data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "ec51f866-cfca-4e4f-9d01-279ebcdf8ac7",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C92",
+      "claim": "GRASLND uses the same mechanism across MSCs and ASCs, asserting a pan effect on potentiating their chondrogenic capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these data, it appears that GRASLND uses the same mechanism across these two cell types, asserting a pan effect on potentiating their chondrogenic capabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that GRASLND enhances chondrogenesis in both MSCs and ASCs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "fa0a7353-768d-43cd-b3a5-04a8ce05ef97",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C93",
+      "claim": "The influence of GRASLND could be variable in different target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that histologic examination of the engineered cartilage showed a similar level of collagen type II in pellets with GRASLND overexpression compared to the dsRed control (Figure 6C), suggesting that the influence of GRASLND could be variable in different target cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the histological analysis in Figure 6C showing similar collagen II staining despite increased GAG and COL2A1 expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "c31e7d4a-e6b5-48df-bb95-325b2d40401f",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C94",
+      "claim": "Lack of a known murine homolog makes it difficult to study GRASLND in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, lack of a known murine homolog makes it difficult to study GRASLND in vivo, and thus future studies may require GRASLND transgenic models in primate species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation based on the primate-specific nature of GRASLND.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "e7be910a-8015-440b-87e5-9a7f9fcc84c9",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C95",
+      "claim": "Future studies may require GRASLND transgenic models in primate species.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, lack of a known murine homolog makes it difficult to study GRASLND in vivo, and thus future studies may require GRASLND transgenic models in primate species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "1d04bfec-5b0d-49c2-8482-4b96bdf4cad9",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C96",
+      "claim": "IFN-\u03b3 has been suggested to inhibit collagen synthesis in dermal fibroblasts, myofibroblasts, and articular chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, IFN-\u03b3 has been suggested to inhibit collagen synthesis in dermal fibroblasts, myofibroblasts, and articular chondrocytes (Ishida et al., 2004; Yufit et al., 1995; Harrop et al., 1995; Granstein et al., 1990; Amento et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "96490ed7-8bb4-4cb1-8bd3-32888a51bbfb",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C97",
+      "claim": "The JAK/STAT pathway has been shown to inhibit chondrocyte proliferation and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the JAK/STAT pathway, which involves IFN downstream effectors, has also been shown to inhibit chondrocyte proliferation and differentiation (Sahni et al., 1999; Sahni et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Sahni et al., 1999 and Sahni et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "4fc01093-5c3b-4631-94db-c6481b90e6aa",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C98",
+      "claim": "EIF2AK2 has been reported to control STAT signaling by directly binding to and preventing its association with DNA for gene activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Canonically, a crucial player in protein synthesis, EIF2AK2, has also been reported to control STAT signaling by directly binding to and preventing its association with DNA for gene activation (Wang et al., 2006; Wong et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Wang et al., 2006 and Wong et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "4d101089-1d04-41e3-b3c9-2c50836f713f",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C99",
+      "claim": "Highly structured, single-stranded RNA can activate PKR EIF2AK2 via its double-stranded RNA-binding domains (dsDRBs).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several studies have suggested that highly structured, single-stranded RNA can also activate PKR EIF2AK2 via its double-stranded RNA-binding domains (dsDRBs) (Osman et al., 1999; Ben-Asouli et al., 2002; Cohen-Chalamish et al., 2009; Nallagatla et al., 2007; Mayo and Cole, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "f06b56b2-01a6-4aa8-900d-81c2a5cc7891",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C100",
+      "claim": "GRASLND could form a secondary structure to bind and activate EIF2AK2, which in turn inhibits STAT1-related transcriptional function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we hypothesized that GRASLND could form a secondary structure to bind and activate EIF2AK2, which in turn inhibits STAT1-related transcriptional function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the binding data and known mechanisms of EIF2AK2 function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "6d870c16-2177-4a45-9320-b754b9db596c",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C101",
+      "claim": "Modulation of IFN-\u03b3 via the JAK/STAT pathway, achieved by the GRASLND\u2013EIF2AK2 RNA\u2013protein complex, is important for cellular proliferation and differentiation during chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism supports the hypothesis that modulation of IFN-\u03b3 via the JAK/STAT pathway, achieved by the GRASLND\u2013EIF2AK2 RNA\u2013protein complex, is important for cellular proliferation and differentiation during chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental findings showing GRASLND binds EIF2AK2 and suppresses IFN-\u03b3 signaling.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "c566c9d9-2c0b-4760-b6c9-a61a148764fa",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C102",
+      "claim": "Upregulation of IFN has been implicated in arthritis by several studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulation of IFN has also been implicated in arthritis by several studies (Boissier et al., 1995; Cooper et al., 1988; Westacott et al., 1990; Kahle et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "16e4a944-c0aa-4ef8-ab9c-89e247457e4b",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C103",
+      "claim": "5 ng/mL of IFN-\u03b3 was more detrimental to chondrogenic constructs than 100 ng/mL of IFN-\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 5 ng/mL of IFN-\u03b3 was still more detrimental to chondrogenic constructs than 100 ng/mL of IFN-\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental design where these doses were selected as the lowest concentrations causing GAG loss.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "ee2ab3d6-9aea-4ceb-92e6-c2e7aef96266",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C104",
+      "claim": "MSCs express a much lower level of IFNAR2 than of IFNAR1, IFNGR1, or IFNGR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, MSCs express a much lower level of IFNAR2 than of IFNAR1, IFNGR1, or IFNGR2 (both in GSE109503 [Huynh et al., 2018b] and in GSE129985 [this manuscript]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of RNA-seq datasets GSE109503 and GSE129985.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "9511f1cf-b6cf-43f3-bb38-8284ba332374",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C105",
+      "claim": "Response to type I IFN may be stunted due to IFNAR2 deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "As these receptors function as heterodimers (Brierley and Fish, 2002; Hu and Ivashkiv, 2009), response to type I may be stunted due to IFNAR2 deficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low expression of IFNAR2 and the known requirement for heterodimer formation, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "ed089f7b-8bc8-4f40-a771-c5be710b0a70",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C106",
+      "claim": "A modified CRISPR-dCas9 system can be used successfully for endogenous transcriptional activation of lncRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we showed that a modified CRISPR-dCas9 system could be used successfully for endogenous transcriptional activation of lncRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the successful activation of GRASLND using CRISPR-dCas9-VP64 shown in Figures 4C, E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "3ab074ff-02ae-4bc4-8eb5-d3c5577f3314",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C107",
+      "claim": "The CRISPR-dCas9 system had been previously used in other cell types to regulate the expression of both protein-coding and non-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This system had been previously used in other cell types to regulate the expression of both protein-coding and non-coding genes (Black et al., 2016; Perez-Pinera et al., 2013; Bester et al., 2018; Liu et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "b06bda27-8aab-4211-8005-56e9d0d7627f",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C108",
+      "claim": "GRASLND does not regulate RNF144A, indicating that GRASLND acts in trans.",
+      "claim_type": "EXPLICIT",
+      "source": "As GRASLND does not regulate RNF144A, it is evident that GRASLND acts in trans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experiments showing no effect of GRASLND on RNF144A expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "aab11bef-ccd8-4383-b3c1-da0ab57026c2",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C109",
+      "claim": "The CRISPR-dCas9 system could be useful for gain-of-function studies to investigate lncRNAs acting in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we speculate that the CRISPR-dCas9 system could also be useful for gain-of-function studies to investigate lncRNAs acting in cis, as well as for studies of lncRNAs that are difficult to obtain via molecular cloning because of their secondary structures, highly repeated sequence or GC-rich content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the CRISPR-dCas9 system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "b09e9701-c78c-4688-a04a-d2d2960d0dd4",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C110",
+      "claim": "GRASLND acts downstream of SOX9 and enhances cartilage-like matrix deposition in stem cell-derived constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, we have identified GRASLND as an important regulator of MSC chondrogenesis. GRASLND acts downstream of SOX9 and enhances cartilage-like matrix deposition in stem cell-derived constructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "4a7e5ee6-7fa5-4d15-9c6b-c89b093c5479",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C111",
+      "claim": "GRASLND functions to suppress IFN via EIF2AK2, and as a result induces adult stem cells towards a more chondrocyte-like lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, GRASLND functions to suppress IFN via EIF2AK2, and as a result induces adult stem cells towards a more chondrocyte-like lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the mechanistic findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "cfe9ecdf-3eb8-4fc5-ae26-425521cfda58",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C112",
+      "claim": "The GRASLND\u2013EIF2AK2 RNA\u2013protein complex likely inhibits STAT1 transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the GRASLND\u2013EIF2AK2 RNA\u2013protein complex inhibits STAT1 transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the binding data, luciferase assays, and RNA-seq results showing enrichment of STAT1 target genes upon GRASLND knockdown.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "795c448c-1b4e-41eb-abfb-70804cd9b9b1",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "claim_id": "C113",
+      "claim": "GRASLND has potential utility in enhancing stem cell chondrogenesis for therapeutic applications such as cartilage tissue engineering or for the treatment of OA.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that GRASLND has potential utility in enhancing stem cell chondrogenesis for therapeutic applications such as cartilage tissue engineering or for the treatment of OA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential therapeutic applications based on the study findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0eeb3381-c343-4727-8c01-1a16bef872d7",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "GRASLND was identified as a novel lncRNA regulator of MSC chondrogenesis through bioinformatic analysis. The authors used Pearson correlation analysis on RNA-seq data to identify lncRNAs correlated with MSC markers, chondrogenic markers, and SOX transcription factors, narrowing candidates based on SOX9 overexpression data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 provide the bioinformatic pipeline with specific numbers of candidates identified. Claims C34-C35 show GRASLND was upregulated upon SOX9 overexpression in an independent dataset (GSE69110), providing convergent evidence. The systematic approach from 141 MSC-correlated lncRNAs to a shortlist of 4 candidates is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "0a8f261a-bfba-4f13-bbaa-86759a1b0751",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Knockdown of GRASLND impairs MSC chondrogenesis, reducing chondrogenic markers (COL2A1, ACAN), increasing apoptotic/senescence markers (CASP3, TP53), and decreasing GAG and DNA content in pellet cultures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 present consistent loss-of-function data across multiple assays (qRT-PCR, biochemical, histological) with appropriate statistical significance (p<0.0001 for GAG, p<0.001 for GAG/DNA). Claim C38 addresses the important control that effects are not due to cytotoxicity. The inference in C41 about both proliferation and matrix production is reasonable given the DNA and GAG data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "c50499e3-2b1c-46f0-953f-2a9f31874b64",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GRASLND expression is specifically upregulated during chondrogenesis compared to adipogenesis and osteogenesis, with expression increasing over time during chondrogenic differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 show differential expression patterns across three lineages with qRT-PCR data (Figures 1G-I). Claim C47 provides orthogonal validation via RNA FISH. The specificity claim (C45) is well-supported by the contrasting patterns. Claim C46 is appropriately labeled as speculation and does not undermine the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "0c4e0d3c-08ce-48fb-830f-a6f89e03fa7f",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GRASLND localizes primarily to the cytoplasm and shows punctate labeling suggesting it functions as part of an RNA-protein complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by nuclear/cytoplasmic fractionation with qRT-PCR (Figure 2B) using appropriate controls (NEAT1 for nuclear, GAPDH for cytoplasmic). Claim C49 is labeled as speculation based on confocal microscopy observations, which is appropriate. The cytoplasmic localization is important for the later mechanistic claims about EIF2AK2 binding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "e7ba59d3-eb6e-4892-aa52-d526f015cc75",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "GRASLND is a primate-specific lncRNA with high conservation in primates (Homo sapiens, Pan troglodytes, Rhesus macaque) but not in other mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 provides specific conservation data from UCSC Genome Browser (Figure 3A) with appropriate citation (Gibbs et al., 2007). Claim C51 appropriately contextualizes this within known primate-specific lncRNAs with citations. This primate specificity is important for understanding the limitations of the study (no mouse model available).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "f19cafed-7a98-48d3-89de-68cebf939cc5",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "GRASLND does not regulate its neighboring gene RNF144A, indicating it acts in trans rather than in cis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 show no effect of GRASLND manipulation on RNF144A at transcript (qRT-PCR) and protein (Western blot) levels in both knockdown and overexpression conditions. This is important for establishing the mechanism of action and justifying the name change from RNF144A-AS1 to GRASLND. The inference about trans-acting mechanism (C54, C108) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "cd04adad-6ae1-4a08-94d6-a1e4cbbd1c23",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GRASLND acts downstream of SOX9 but not TGF-\u03b23. SOX9 overexpression increases GRASLND expression, while TGF-\u03b23 alone does not, despite TGF-\u03b23 acting upstream of SOX9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 show SOX9 overexpression increases GRASLND in both fibroblasts (GSE69110 dataset) and MSCs (Figure 3E). Claim C57 shows TGF-\u03b23 alone is insufficient. Claim C58 provides important context that SOX9 levels were similar across TGF-\u03b23 conditions at the timepoint tested, explaining why TGF-\u03b23 alone doesn't increase GRASLND. The logic chain is sound and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "4b31a328-2e43-4f09-9860-dce3177390eb",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Transgenic overexpression of GRASLND via doxycycline-inducible lentiviral system enhances chondrogenesis, with optimal effects at 10 ng/mL TGF-\u03b23 and day 21, resulting in increased GAG deposition (p<0.001) and modest increases in chondrogenic markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 establish optimal conditions (1 \u03bcg/mL doxycycline, 10 ng/mL TGF-\u03b23, day 21). Claim C65 shows significant GAG increase with appropriate statistics. Claims C66-C67 show modest but consistent changes in gene expression. Claims C63-C64 appropriately note that GRASLND alone is insufficient at lower TGF-\u03b23 doses or earlier timepoints, suggesting it works in concert with other factors. The experimental design with temporal control is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "edaa3eb3-a375-4fcb-9562-03bd659247d9",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CRISPR-dCas9-VP64-mediated endogenous activation of GRASLND enhances chondrogenesis more effectively than transgenic overexpression, despite achieving only 2-fold vs 100-fold expression increase, resulting in ~50% vs ~30% increase in GAG/DNA ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 provide quantitative comparison between CRISPR and transgenic approaches with specific GAG/DNA values. The paradox that lower expression increase yields better functional outcome is interesting and appropriately noted. Claim C106 generalizes this as a successful method for lncRNA activation. The gRNA screening (11 candidates tested) adds rigor. However, the mechanism for why CRISPR is more effective is not explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "72786ae8-c65c-4b60-8562-b9649e61bee8",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RNA-seq analysis of GRASLND knockdown reveals upregulation of interferon response pathways, with enrichment of IFN downstream targets and transcription factor binding motifs (STAT1, STAT2, IRF1, IRF2) in upregulated genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 show expected downregulation of chondrogenic genes and pathways. Claims C73-C75 document the surprising upregulation of IFN pathways with specific genes and transcription factor motifs. The bioinformatic analysis appears comprehensive (gene ontology, motif enrichment). This provides the key mechanistic insight linking GRASLND to IFN suppression. The inference in C76 is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "47add3ab-f3b3-4336-8776-a23ada39875e",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Luciferase reporter assays demonstrate that GRASLND knockdown specifically enhances type II IFN (IFN-\u03b3/GAS) signaling but not type I IFN (IFN-\u03b2/ISRE) signaling, with no baseline differences in the absence of interferon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 show differential effects on type I vs type II IFN with appropriate reporter constructs (ISRE vs GAS elements). Claim C78 provides the critical control showing no baseline differences, ruling out non-specific effects of lentiviral transduction. This specificity for type II IFN is important for the mechanistic model and is consistent with the RNA-seq data showing STAT1 homodimer targets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "9f0743b5-4185-4219-adf8-fe6054431113",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "GRASLND binds to EIF2AK2 (PKR) as demonstrated by RNA pull-down with mass spectrometry (p<0.05), Western blot validation, and RNA immunoprecipitation, potentially mediating IFN-\u03b3 suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 provide convergent evidence for GRASLND-EIF2AK2 interaction using three independent methods: mass spec, RNA pull-down/Western, and RIP. The use of sense vs antisense controls and naked beads is appropriate. Claim C83 appropriately labels the mechanistic interpretation as speculation. However, the mass spec data shows only p<0.05 significance, and no information is provided about other proteins that might have been detected.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "ad7dfc56-0e46-4e6f-8ce4-fc60126a2988",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "GRASLND overexpression provides partial protection against IFN-\u03b3-induced GAG loss in engineered cartilage but not against IFN-\u03b2, though protection is incomplete compared to control conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C89 show GRASLND protects against IFN-\u03b3 but not IFN-\u03b2, consistent with the luciferase data. The acknowledgment that protection is partial (C89) is important and honest. However, the doses used (5 ng/mL IFN-\u03b3 vs 100 ng/mL IFN-\u03b2) were selected as 'lowest concentration causing GAG loss,' which may not be equivalent in terms of signaling strength, potentially confounding the comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "9dba5bb6-17a4-4e6e-a717-1cc326d64745",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Analysis of published datasets shows IFN-related genes are upregulated in osteoarthritis patient cartilage and damaged cartilage, with negative correlation between GRASLND and IFN genes, suggesting therapeutic potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C86 analyze two independent datasets (GSE57218, E-MTAB-4304) showing IFN upregulation in diseased cartilage. However, the correlation analysis (C86) shows only a few genes (IFNGR1, ICAM1) and the strength of correlation is not quantified. Claim C87 is appropriately labeled as speculation. The therapeutic potential claim is premature without in vivo validation, and the primate-specific nature of GRASLND limits translational potential.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "a0c0a9ff-6c2a-4c3f-8859-03d83cd3566c",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "GRASLND overexpression enhances chondrogenesis in adipose-derived stem cells (ASCs) with increased GAG production (p<0.0001) and COL2A1 expression (~5-fold), though histological collagen II staining was similar to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C91 show GRASLND enhances ASC chondrogenesis with significant GAG and COL2A1 increases. However, claim C93 notes that histological collagen II staining was similar between GRASLND and control groups, which is inconsistent with the 5-fold increase in COL2A1 mRNA. This discrepancy is acknowledged but not explained. The claim that GRASLND uses 'the same mechanism' across cell types (C92) is an inference not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "0daca393-afd9-4acd-af81-ccb303e11631",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The lack of a murine homolog for GRASLND limits in vivo studies, requiring future work with primate transgenic models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C95 acknowledge a significant limitation of the study. This is consistent with the primate-specific conservation data (C50-C51). The suggestion for primate models (C95) is appropriately labeled as speculation about future directions. This limitation is important for evaluating the translational potential of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "07a9257b-d2c0-4f74-ac60-fec59f65dd3e",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The proposed mechanism is that GRASLND forms a secondary structure to bind and activate EIF2AK2, which inhibits STAT1 transcriptional activity, thereby suppressing IFN-\u03b3 signaling during chondrogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C100-C101 and C112 present a mechanistic model based on: (1) GRASLND-EIF2AK2 binding, (2) known ability of EIF2AK2 to inhibit STAT signaling (C98), (3) enrichment of STAT1 targets upon GRASLND knockdown, and (4) luciferase data showing enhanced IFN-\u03b3 signaling. However, key steps are not directly demonstrated: EIF2AK2 activation by GRASLND, EIF2AK2-STAT1 interaction in this context, and inhibition of STAT1 DNA binding. The model is plausible but remains largely inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "0ea2ba1a-6b3c-4a19-bf1e-25a0c93e3943",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The differential sensitivity to IFN-\u03b3 vs IFN-\u03b2 may be explained by low IFNAR2 expression in MSCs, which would limit type I IFN signaling due to the requirement for IFNAR1/IFNAR2 heterodimers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 provides RNA-seq data from two datasets showing low IFNAR2 expression. Claim C105 makes a reasonable inference based on the known requirement for receptor heterodimerization (with appropriate citations). This provides a plausible explanation for the type II IFN specificity. However, protein-level receptor expression was not measured, and functional receptor availability was not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    },
+    {
+      "id": "4d4c88ac-b9eb-402e-b63c-60a01c198fa1",
+      "content_id": "1bdc0512-7e13-4b91-88bd-161a9fe89119",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "GRASLND has potential utility for enhancing stem cell chondrogenesis in therapeutic applications such as cartilage tissue engineering or osteoarthritis treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C113 is appropriately labeled as speculation. While the in vitro data showing enhanced chondrogenesis and IFN protection are promising, several factors limit the strength of this claim: (1) no in vivo validation, (2) primate-specific nature prevents mouse model studies, (3) partial rather than complete protection against IFN-\u03b3, (4) unclear whether GRASLND would be effective in the complex inflammatory milieu of OA. The therapeutic potential remains to be demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:56:11.838679Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "32b03629-fc49-4cd4-bf04-b1581aab19f7",
+      "result_id": "0eeb3381-c343-4727-8c01-1a16bef872d7"
+    },
+    {
+      "claim_id": "6ddd4e39-794c-4a7f-97e8-650d53f68f9b",
+      "result_id": "0eeb3381-c343-4727-8c01-1a16bef872d7"
+    },
+    {
+      "claim_id": "68d634a6-cc4a-47ad-964f-6604ac7c559f",
+      "result_id": "0eeb3381-c343-4727-8c01-1a16bef872d7"
+    },
+    {
+      "claim_id": "cc7f779d-bd8b-49c7-bbd7-777562b29f8c",
+      "result_id": "0eeb3381-c343-4727-8c01-1a16bef872d7"
+    },
+    {
+      "claim_id": "566cf071-2de9-4187-a06b-a731afda130a",
+      "result_id": "0eeb3381-c343-4727-8c01-1a16bef872d7"
+    },
+    {
+      "claim_id": "c475a7b3-1c7c-4094-88a1-4783bf905b5a",
+      "result_id": "0eeb3381-c343-4727-8c01-1a16bef872d7"
+    },
+    {
+      "claim_id": "464fbbf8-1445-4e04-ba1f-e530ee84e843",
+      "result_id": "0eeb3381-c343-4727-8c01-1a16bef872d7"
+    },
+    {
+      "claim_id": "af1daa95-0980-4b76-87a0-a48012cbae92",
+      "result_id": "0eeb3381-c343-4727-8c01-1a16bef872d7"
+    },
+    {
+      "claim_id": "faa71e5b-98aa-471a-810a-89a4e13294ae",
+      "result_id": "0a8f261a-bfba-4f13-bbaa-86759a1b0751"
+    },
+    {
+      "claim_id": "1956376e-d595-4154-90a5-a65c1b71c342",
+      "result_id": "0a8f261a-bfba-4f13-bbaa-86759a1b0751"
+    },
+    {
+      "claim_id": "eb7da68e-c361-4ecd-b43c-3eb299da264b",
+      "result_id": "0a8f261a-bfba-4f13-bbaa-86759a1b0751"
+    },
+    {
+      "claim_id": "563e707d-2383-4991-aa70-5aba02b87e8c",
+      "result_id": "0a8f261a-bfba-4f13-bbaa-86759a1b0751"
+    },
+    {
+      "claim_id": "d06a1276-b221-4e9f-b65d-08ad900b1cb6",
+      "result_id": "0a8f261a-bfba-4f13-bbaa-86759a1b0751"
+    },
+    {
+      "claim_id": "bc7c4a87-15b9-41d6-b415-d498f1ea0c46",
+      "result_id": "0a8f261a-bfba-4f13-bbaa-86759a1b0751"
+    },
+    {
+      "claim_id": "e2b67e1e-878f-4ea0-ab71-d0a48c997142",
+      "result_id": "c50499e3-2b1c-46f0-953f-2a9f31874b64"
+    },
+    {
+      "claim_id": "ed1cec6b-89e0-4926-8e78-66dfa45c5ceb",
+      "result_id": "c50499e3-2b1c-46f0-953f-2a9f31874b64"
+    },
+    {
+      "claim_id": "96cee061-8291-41d9-b17c-da06c8ec48ac",
+      "result_id": "c50499e3-2b1c-46f0-953f-2a9f31874b64"
+    },
+    {
+      "claim_id": "8d9fdb03-5d8f-4385-9830-d688d048521b",
+      "result_id": "c50499e3-2b1c-46f0-953f-2a9f31874b64"
+    },
+    {
+      "claim_id": "eb09877d-3649-4ea3-9dae-6ce979727738",
+      "result_id": "c50499e3-2b1c-46f0-953f-2a9f31874b64"
+    },
+    {
+      "claim_id": "8367f6ed-d239-4c81-929f-5e2d111f7b5a",
+      "result_id": "c50499e3-2b1c-46f0-953f-2a9f31874b64"
+    },
+    {
+      "claim_id": "ab6e43da-afce-4cbe-850c-2424fd0a0b2f",
+      "result_id": "0c4e0d3c-08ce-48fb-830f-a6f89e03fa7f"
+    },
+    {
+      "claim_id": "68c378e4-8f97-40ed-b118-1bace0bebeee",
+      "result_id": "0c4e0d3c-08ce-48fb-830f-a6f89e03fa7f"
+    },
+    {
+      "claim_id": "6ddd4e39-794c-4a7f-97e8-650d53f68f9b",
+      "result_id": "e7ba59d3-eb6e-4892-aa52-d526f015cc75"
+    },
+    {
+      "claim_id": "7fce59f7-9327-4c54-9879-a7101844e71b",
+      "result_id": "e7ba59d3-eb6e-4892-aa52-d526f015cc75"
+    },
+    {
+      "claim_id": "d154acca-3345-4457-891f-19a7ab57d001",
+      "result_id": "e7ba59d3-eb6e-4892-aa52-d526f015cc75"
+    },
+    {
+      "claim_id": "06690b82-d267-4817-b8f0-8f6a0c618c2c",
+      "result_id": "f19cafed-7a98-48d3-89de-68cebf939cc5"
+    },
+    {
+      "claim_id": "5dd2d53f-6f6c-42f3-81a1-2c09fc74358d",
+      "result_id": "f19cafed-7a98-48d3-89de-68cebf939cc5"
+    },
+    {
+      "claim_id": "7558b5eb-89d1-4c63-9c82-0e970414c190",
+      "result_id": "f19cafed-7a98-48d3-89de-68cebf939cc5"
+    },
+    {
+      "claim_id": "b06bda27-8aab-4211-8005-56e9d0d7627f",
+      "result_id": "f19cafed-7a98-48d3-89de-68cebf939cc5"
+    },
+    {
+      "claim_id": "1886764d-d502-4271-ac4b-7f0c673753aa",
+      "result_id": "cd04adad-6ae1-4a08-94d6-a1e4cbbd1c23"
+    },
+    {
+      "claim_id": "fe0a207e-042b-4848-bc59-312f1b8f05f9",
+      "result_id": "cd04adad-6ae1-4a08-94d6-a1e4cbbd1c23"
+    },
+    {
+      "claim_id": "49919827-b88c-4256-9346-8ac1553c3638",
+      "result_id": "cd04adad-6ae1-4a08-94d6-a1e4cbbd1c23"
+    },
+    {
+      "claim_id": "9bcee31b-d156-4161-ac7f-9a3a977b1182",
+      "result_id": "cd04adad-6ae1-4a08-94d6-a1e4cbbd1c23"
+    },
+    {
+      "claim_id": "919c8771-95a8-4296-aa1a-031ef5f96fbd",
+      "result_id": "cd04adad-6ae1-4a08-94d6-a1e4cbbd1c23"
+    },
+    {
+      "claim_id": "b27d9d0e-6178-4845-afaf-21b9358338cd",
+      "result_id": "cd04adad-6ae1-4a08-94d6-a1e4cbbd1c23"
+    },
+    {
+      "claim_id": "801663a5-5c1f-4cbf-9535-9e66c645bd91",
+      "result_id": "cd04adad-6ae1-4a08-94d6-a1e4cbbd1c23"
+    },
+    {
+      "claim_id": "c75e719e-5336-4360-8f60-4fec5c9a4f4f",
+      "result_id": "cd04adad-6ae1-4a08-94d6-a1e4cbbd1c23"
+    },
+    {
+      "claim_id": "7a94730e-f5fb-4cde-94e9-4f446d4665ed",
+      "result_id": "4b31a328-2e43-4f09-9860-dce3177390eb"
+    },
+    {
+      "claim_id": "c782510a-2013-41d4-8adc-03d29bdbce86",
+      "result_id": "4b31a328-2e43-4f09-9860-dce3177390eb"
+    },
+    {
+      "claim_id": "b9c889fe-70fe-4a7d-b83d-88ffc0bb5a68",
+      "result_id": "4b31a328-2e43-4f09-9860-dce3177390eb"
+    },
+    {
+      "claim_id": "7a5ca17e-7d88-4920-a304-657cad633ed8",
+      "result_id": "4b31a328-2e43-4f09-9860-dce3177390eb"
+    },
+    {
+      "claim_id": "204e5e88-6a5f-4a79-887a-2030bc65cd09",
+      "result_id": "4b31a328-2e43-4f09-9860-dce3177390eb"
+    },
+    {
+      "claim_id": "2eff4b47-084a-425c-b6c8-0045141b1528",
+      "result_id": "4b31a328-2e43-4f09-9860-dce3177390eb"
+    },
+    {
+      "claim_id": "4b87fc1b-1822-4404-a5ff-03651c506e1a",
+      "result_id": "4b31a328-2e43-4f09-9860-dce3177390eb"
+    },
+    {
+      "claim_id": "1474bed5-92b1-4b86-93ce-8154e553dcf9",
+      "result_id": "4b31a328-2e43-4f09-9860-dce3177390eb"
+    },
+    {
+      "claim_id": "4fda8030-c8ec-4e08-b0c0-8eac70859416",
+      "result_id": "edaa3eb3-a375-4fcb-9562-03bd659247d9"
+    },
+    {
+      "claim_id": "d3d8b2ac-cee8-440c-a561-294d5f8ecddf",
+      "result_id": "edaa3eb3-a375-4fcb-9562-03bd659247d9"
+    },
+    {
+      "claim_id": "37db1ac9-b380-4c9c-954e-c8ffb70e824e",
+      "result_id": "edaa3eb3-a375-4fcb-9562-03bd659247d9"
+    },
+    {
+      "claim_id": "a751e779-fbfa-45f4-83fc-a9f72dd0a79d",
+      "result_id": "edaa3eb3-a375-4fcb-9562-03bd659247d9"
+    },
+    {
+      "claim_id": "ed089f7b-8bc8-4f40-a771-c5be710b0a70",
+      "result_id": "edaa3eb3-a375-4fcb-9562-03bd659247d9"
+    },
+    {
+      "claim_id": "82976e70-b07c-40b9-94f0-487aa480e7a4",
+      "result_id": "72786ae8-c65c-4b60-8562-b9649e61bee8"
+    },
+    {
+      "claim_id": "087de685-7a01-46e4-a545-49d776046094",
+      "result_id": "72786ae8-c65c-4b60-8562-b9649e61bee8"
+    },
+    {
+      "claim_id": "7c420aa1-6890-49e0-a13c-138ae785ce46",
+      "result_id": "72786ae8-c65c-4b60-8562-b9649e61bee8"
+    },
+    {
+      "claim_id": "d5cf1f22-31e0-4abe-a31d-bdddf38c6c84",
+      "result_id": "72786ae8-c65c-4b60-8562-b9649e61bee8"
+    },
+    {
+      "claim_id": "cfd5491d-605f-405b-9632-fb79e17b63c1",
+      "result_id": "72786ae8-c65c-4b60-8562-b9649e61bee8"
+    },
+    {
+      "claim_id": "474ad68d-bd1a-4688-b491-fe834944990e",
+      "result_id": "72786ae8-c65c-4b60-8562-b9649e61bee8"
+    },
+    {
+      "claim_id": "63f3f53e-bfd3-4eaa-83c9-4a8346591ea2",
+      "result_id": "47add3ab-f3b3-4336-8776-a23ada39875e"
+    },
+    {
+      "claim_id": "bf51b7be-47fb-4e07-928e-c98dcf6cb33e",
+      "result_id": "47add3ab-f3b3-4336-8776-a23ada39875e"
+    },
+    {
+      "claim_id": "5d72ab5b-8f5f-412f-a456-25dcb3743ebb",
+      "result_id": "47add3ab-f3b3-4336-8776-a23ada39875e"
+    },
+    {
+      "claim_id": "8ff4e23c-f7be-4c0d-b9cd-efb30380d32b",
+      "result_id": "9f0743b5-4185-4219-adf8-fe6054431113"
+    },
+    {
+      "claim_id": "dfc353bf-df9c-4ad1-85ec-e453a0be3865",
+      "result_id": "9f0743b5-4185-4219-adf8-fe6054431113"
+    },
+    {
+      "claim_id": "be0ff3b8-fa90-4759-abb2-607638d8d466",
+      "result_id": "9f0743b5-4185-4219-adf8-fe6054431113"
+    },
+    {
+      "claim_id": "c1509be1-f8b0-4d6a-85ca-032ada064b21",
+      "result_id": "9f0743b5-4185-4219-adf8-fe6054431113"
+    },
+    {
+      "claim_id": "09bef622-550d-483b-9b8d-fe26c6ff585f",
+      "result_id": "9f0743b5-4185-4219-adf8-fe6054431113"
+    },
+    {
+      "claim_id": "33c13d9f-a155-422a-8275-43dccf6e595a",
+      "result_id": "ad7dfc56-0e46-4e6f-8ce4-fc60126a2988"
+    },
+    {
+      "claim_id": "5ff4463c-6d97-4cf7-a7d0-f1ed149d2581",
+      "result_id": "ad7dfc56-0e46-4e6f-8ce4-fc60126a2988"
+    },
+    {
+      "claim_id": "5236dbb1-fcde-45ac-a710-657b2797e534",
+      "result_id": "ad7dfc56-0e46-4e6f-8ce4-fc60126a2988"
+    },
+    {
+      "claim_id": "3e95dd4e-63a1-4514-a140-d6a5bc7796a7",
+      "result_id": "9dba5bb6-17a4-4e6e-a717-1cc326d64745"
+    },
+    {
+      "claim_id": "1ff9efbd-7f4e-4c7b-a412-a04242e3618d",
+      "result_id": "9dba5bb6-17a4-4e6e-a717-1cc326d64745"
+    },
+    {
+      "claim_id": "2a4e4f6d-3be7-44fc-814a-2e619b1f537e",
+      "result_id": "9dba5bb6-17a4-4e6e-a717-1cc326d64745"
+    },
+    {
+      "claim_id": "eb8e49ee-d7d8-4f4d-899f-60a44c6fa2dc",
+      "result_id": "9dba5bb6-17a4-4e6e-a717-1cc326d64745"
+    },
+    {
+      "claim_id": "2f88b7a4-e840-4541-8f67-e74373ad5065",
+      "result_id": "a0c0a9ff-6c2a-4c3f-8859-03d83cd3566c"
+    },
+    {
+      "claim_id": "f185458c-0486-4f99-ad2e-f3675d23e111",
+      "result_id": "a0c0a9ff-6c2a-4c3f-8859-03d83cd3566c"
+    },
+    {
+      "claim_id": "ec51f866-cfca-4e4f-9d01-279ebcdf8ac7",
+      "result_id": "a0c0a9ff-6c2a-4c3f-8859-03d83cd3566c"
+    },
+    {
+      "claim_id": "fa0a7353-768d-43cd-b3a5-04a8ce05ef97",
+      "result_id": "a0c0a9ff-6c2a-4c3f-8859-03d83cd3566c"
+    },
+    {
+      "claim_id": "c31e7d4a-e6b5-48df-bb95-325b2d40401f",
+      "result_id": "0daca393-afd9-4acd-af81-ccb303e11631"
+    },
+    {
+      "claim_id": "e7be910a-8015-440b-87e5-9a7f9fcc84c9",
+      "result_id": "0daca393-afd9-4acd-af81-ccb303e11631"
+    },
+    {
+      "claim_id": "f06b56b2-01a6-4aa8-900d-81c2a5cc7891",
+      "result_id": "07a9257b-d2c0-4f74-ac60-fec59f65dd3e"
+    },
+    {
+      "claim_id": "6d870c16-2177-4a45-9320-b754b9db596c",
+      "result_id": "07a9257b-d2c0-4f74-ac60-fec59f65dd3e"
+    },
+    {
+      "claim_id": "cfe9ecdf-3eb8-4fc5-ae26-425521cfda58",
+      "result_id": "07a9257b-d2c0-4f74-ac60-fec59f65dd3e"
+    },
+    {
+      "claim_id": "16e4a944-c0aa-4ef8-ab9c-89e247457e4b",
+      "result_id": "0ea2ba1a-6b3c-4a19-bf1e-25a0c93e3943"
+    },
+    {
+      "claim_id": "ee2ab3d6-9aea-4ceb-92e6-c2e7aef96266",
+      "result_id": "0ea2ba1a-6b3c-4a19-bf1e-25a0c93e3943"
+    },
+    {
+      "claim_id": "9511f1cf-b6cf-43f3-bb38-8284ba332374",
+      "result_id": "0ea2ba1a-6b3c-4a19-bf1e-25a0c93e3943"
+    },
+    {
+      "claim_id": "795c448c-1b4e-41eb-abfb-70804cd9b9b1",
+      "result_id": "4d4c88ac-b9eb-402e-b63c-60a01c198fa1"
+    }
+  ],
+  "comparisons": []
+}

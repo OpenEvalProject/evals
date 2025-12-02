@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "PMS patients exhibit sleep problems similar to the general ASD population, including difficulty falling asleep and multiple night awakenings starting around age 5, reduced sleep time during adolescence, and persistent sleep onset/maintenance problems across all ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C35-C41 are supported by sleep questionnaire data from 176 PMS patients with confirmed SHANK3 deletions (Figure 1). The data show age-specific patterns of sleep problems and comparisons to ASD and typically developing populations, providing strong descriptive evidence for these clinical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Shank3\u0394C mice sleep less than wild-type mice during the dark period under baseline conditions, with the most pronounced differences occurring at hour 19 and during the last half of the dark period, characterized by increased wakefulness and reduced NREM and REM sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C42-C49 are well-supported by EEG/EMG recordings from 10 WT and 10 Shank3\u0394C mice showing statistically significant period \u00d7 genotype interactions (p=0.036) and time \u00d7 genotype interactions (p<0.002 for all vigilance states). Post-hoc analyses with appropriate corrections confirm specific hourly differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Shank3\u0394C mice exhibit reduced sleep intensity as measured by blunted NREM delta power (0.5-4 Hz) and enhanced alpha power (10-15 Hz) during both light and dark periods, suggesting disrupted neural connectivity during NREM sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C50-C52 are supported by EEG spectral analysis (Figure 2B) showing significant differences in frequency bands with non-overlapping 95% confidence intervals. The interpretation linking delta power to sleep intensity is appropriately cited (C51). However, C52's inference about 'sleeping less deeply' is somewhat speculative, though reasonably grounded in established sleep physiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Shank3\u0394C mice show delayed sleep onset following sleep deprivation despite accumulating sleep pressure normally, spending less time in NREM sleep during the first 2 hours of recovery but more during hours 8-12, with transient enhancement of NREM EEG spectral power in higher frequencies during early recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C53-C68 are supported by comprehensive sleep deprivation experiments with appropriate controls (n=10 per genotype). Sleep deprivation was effective (>95% wakefulness, C53), and statistical analyses show significant genotype effects on latency to sleep (p=0.043, C65) and time in state during recovery. The finding of normal delta power accumulation (C60) but delayed sleep onset (C65) is particularly compelling evidence for a sleep onset-specific deficit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Sleep deprivation sharply increases differences in gene expression between Shank3\u0394C and WT mice, with the number of differentially expressed genes doubling from 69 (HC) to 134 (SD) at FDR<0.1. K-means clustering reveals three distinct gene expression patterns, with the largest cluster showing downregulation in mutants that is exacerbated by sleep deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C69-C81 are supported by RNA-seq data from prefrontal cortex (n=5 per group) with appropriate statistical methods including RUV normalization and edgeR differential expression analysis. PCA confirms sleep deprivation as the primary source of variance (PC1, 60%) and genotype as secondary (PC2, 6%). The study successfully detected 78% of positive control genes (C129), validating the approach. Clustering analysis appropriately identifies three gene expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C101",
+      "C102"
+    ],
+    "result": "Sleep deprivation downregulates circadian transcription factors (Per3, Hlf, Tef, Nr1d1, Bhlhe41) and MAPK/GnRH signaling pathway genes in Shank3\u0394C mice, with some circadian genes (Per3, Hlf, Tef) already differing under baseline conditions and others (Nr1d1, Bhlhe41) showing additional differences only after sleep deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C82-C87, C101-C102 are supported by functional annotation analysis using DAVID with appropriate enrichment criteria (EASE p<0.1, enrichment score >1.2). The identification of specific circadian transcription factors is confirmed by both differential expression analysis (Table 2) and clustering (Figure 4C, cluster 1). The distinction between baseline and sleep deprivation-induced differences is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C103",
+      "C104"
+    ],
+    "result": "Shank3\u0394C mice show impaired wheel-running activity in constant darkness (DD) with reduced revolutions compared to WT mice, while period length and alpha remain normal. However, wheel-running activity increases over time under continuous light-dark conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C88-C92, C103-C104 are supported by wheel-running data from two independent cohorts (n=7-8 per genotype). Linear mixed-effects models show significant genotype \u00d7 time interaction for activity (p<0.0001) but not for period or alpha. The DD-specific impairment is well-documented, though high variance in some Shank3\u0394C mice (C90) suggests individual variability. The contrasting result under continuous LD (C91, C106) strengthens the conclusion that the deficit is DD-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C111"
+    ],
+    "result": "Shank3 is an important modulator of sleep that may exert its effects through regulation of circadian transcription factors. The primary deficit in Shank3\u0394C mice is in sleep onset, as they have trouble falling asleep when sleep pressure is high, accumulate sleep pressure normally, and show no gross circadian rhythm abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C93-C99, C111 represent the main conclusions integrating multiple experimental findings. The sleep onset deficit is well-supported by convergent evidence from baseline sleep (C27, C49), sleep deprivation (C65-C68), and human data (C26, C93). The conclusion that this represents a novel animal model replicating human ASD sleep phenotypes (C94) is justified. The mechanistic link to circadian transcription factors is supported by RNA-seq data but remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C109",
+      "C110",
+      "C126"
+    ],
+    "result": "The mutant sleep phenotype may involve clock gene functions outside their central time-keeping role, as mutations in Per3 and Bhlhe41 are known to affect sleep regulation, and mutations in Shank3 exon 21 could lead to deficits in transcriptional regulation through direct nuclear effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100, C109-C110, C126 represent mechanistic speculation linking the observed phenotypes. While C110 is supported by appropriate citations showing Per3 and Bhlhe41 mutations affect sleep, the proposed mechanisms (C109, C126) are speculative. The DD-specific activity deficit and circadian gene downregulation are documented, but the causal connection to non-time-keeping clock gene functions requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Exon 21 of Shank3 encodes homer and cortactin interaction domains. SHANK3/homer complexes anchor mGluRs to the synapse, and Shank3\u0394C mice show reduced SHANK3 isoforms with increased synaptic mGluRs. mGluR signaling activates the MAPK/ERK pathway, explaining the observed regulation of MAPK pathway genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 provide mechanistic context for interpreting the RNA-seq results. The protein structure and function claims (C112-C114, C116) are appropriately cited. The characterization of Shank3\u0394C mice (C115) is supported by citation to Kouser et al., 2013. The inference connecting SHANK3's synaptic role to MAPK gene regulation (C117) is reasonable given the established signaling pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C127"
+    ],
+    "result": "SHANK3 may regulate circadian transcription factors through multiple potential mechanisms including Wnt signaling modulation, synaptic-nuclear shuttling, and direct binding to circadian transcription factors (REV-ERB\u03b1, DEC1), though the exact mechanism remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C125, C127 discuss potential mechanisms for SHANK3's nuclear effects. While individual claims are supported by appropriate citations (C119-C121, C123-C125, C127), these represent speculative connections to explain the observed circadian gene dysregulation. C122 appropriately notes that the GSK3\u03b2 mechanism doesn't fit the observed phenotype (normal period length). The acknowledgment of uncertainty (C118) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims establishing the prevalence and characteristics of ASD and sleep problems, the state of animal model research, and the rationale for studying Phelan-McDermid syndrome and Shank3 mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 provide literature context and are appropriately cited. These establish: ASD prevalence (C1), core symptoms (C2), sleep comorbidities (C3-C7), gaps in mechanistic understanding (C8, C10), inconsistent findings in animal models (C11-C18), lack of sleep onset studies in models (C19), and PMS/Shank3 characteristics (C20-C25). All claims are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C128",
+      "C129"
+    ],
+    "result": "Methodological validation and supporting contextual claims, including validation of the RNA-seq approach, motor coordination deficits in Shank3\u0394C mice, links between activity rhythms and dopamine, and suggestions for future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C105-C108, C128-C129 provide methodological context and validation. C129 demonstrates the RNA-seq study successfully detected 78% of positive control genes, validating the approach. C105-C108 provide relevant context about motor function and dopamine signaling, appropriately cited. C128 is a reasonable suggestion for future work. C30 establishes precedent for the genomic approach used.",
+    "result_type": "MINOR"
+  }
+]

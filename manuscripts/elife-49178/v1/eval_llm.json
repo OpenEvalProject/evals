@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes the background knowledge that mitochondrial dysfunction is associated with ISR activation, describes the ETC/OXPHOS system functions, and notes that mitochondrial disorders are common but lack effective treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge supported by extensive citations (C1, C7-C20). They provide the scientific context for the study and are appropriately referenced to prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "C2C12 myoblasts can differentiate into myotubes, which triggers mitochondrial biogenesis and promotes oxidative metabolism. Complex I or III inhibition abrogates oxygen consumption while ATP synthase inhibition retains residual respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 describe the experimental system and basic characterization of inhibitor effects on respiration. These are supported by Figure 1 data and established literature, providing validated experimental foundations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In myoblasts, mitochondrial inhibitors trigger ISR activation with piericidin and antimycin having stronger effects than oligomycin. Gene expression analysis reveals ATF4-driven ISR activation and downregulation of cell cycle and cholesterol biosynthesis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 describe comprehensive transcriptomic analysis (Figure 2) showing ISR activation in myoblasts. The PCA, cis-regulatory analysis, GSEA, and western blot data converge to support these conclusions about differential ISR activation by different inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In myoblasts, complex I or III inhibition elevates NADH/NAD+ ratios more than ATP synthase inhibition. Oxidizing cytosolic NADH with LbNOX is sufficient to almost completely ablate ISR activation upon ETC inhibition, demonstrating that impaired NADH oxidation is the primary trigger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 present a key mechanistic finding supported by Figure 3 data. The use of genetic tools (LbNOX, mitoLbNOX, NDI1) to manipulate compartment-specific NADH oxidation provides strong evidence that cytosolic NADH/NAD+ ratio drives ISR activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C90"
+    ],
+    "result": "During complex III inhibition in myoblasts, p53 activation (triggered by pyrimidine deficiency from reduced CoQ) shuts down ISR gene expression only when cytosolic reductive stress is resolved by LbNOX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C90 describe an interaction between p53 and ISR pathways. The data in Figure 3H shows that LbNOX enables p53 activation which then suppresses the ISR. This is supported by prior literature (C42-C43) and new experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "LbNOX modestly stimulates glycolysis but does not improve energy charge during complex I inhibition. Metabolomic analysis reveals that aspartate and asparagine are among the top metabolites depleted by piericidin in a manner responsive to cytosolic NADH oxidation. Aspartate supplementation significantly attenuates ISR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 establish that amino acid depletion, not energy deficiency, drives ISR activation. Figure 4A-H provides metabolomic and functional data showing aspartate/asparagine depletion and partial rescue by aspartate supplementation, though the rescue is incomplete compared to LbNOX.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Complex I inhibition activates GCN2 kinase due to asparagine depletion. Asparagine alone abrogates GCN2 activation, and GCN2 inhibition suppresses ISR gene expression. The mechanism involves elevated NADH/NAD+ blocking aspartate synthesis, which depletes asparagine and activates GCN2 through uncharged tRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 and C81-C89 present the complete mechanistic pathway linking NADH oxidation to ISR activation via asparagine depletion and GCN2. Figure 4K-M provides strong evidence with pharmacological GCN2 inhibition and western blots showing GCN2 phosphorylation. The biochemical reasoning about KM values and cellular concentrations (C85-C88) is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C91",
+      "C92"
+    ],
+    "result": "In myotubes, ETC inhibition does not activate the ISR despite elevated NADH/NAD+ ratios. The mitochondrial and cytosolic NADH/NAD+ ratios are not tightly linked, and myotubes do not rely on the malate-aspartate shuttle. Aspartate and asparagine are not depleted, explaining the absence of ISR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C73, C91-C92 describe the contrasting response in myotubes. Figure 5A-H provides comprehensive data showing lack of ISR activation by ETC inhibition, altered NADH compartmentalization, and absence of amino acid depletion. This demonstrates metabolic state-dependent ISR activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C93"
+    ],
+    "result": "ATP synthase inhibition triggers ISR in myotubes via mitochondrial inner-membrane hyperpolarization. Interventions that prevent hyperpolarization (co-treatment with piericidin, hypoxia pre-conditioning, or mild depolarization with BAM15) significantly attenuate the ISR, while LbNOX does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80, C93 establish a distinct mechanism for ISR activation in myotubes. Figure 5I provides strong evidence that hyperpolarization, not NADH oxidation or ATP depletion, drives the response. The experimental design with multiple interventions targeting membrane potential is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Recent work by others shows that HRI kinase triggers ISR in response to ATP synthase inhibition or depolarization via DELE1/OMA1 signaling. OMA1 responds to both depolarization and hyperpolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 cite recent literature that appeared during revision. These provide mechanistic context for the hyperpolarization findings and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "There is no universal mechanism linking mitochondrial dysfunction to ISR activation. Multiple paths exist depending on the nature of the mitochondrial defect and metabolic state. The response is not simply due to energy deficiency or mtDNA-encoded protein synthesis blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C97-C99 present the main conclusions. The contrasting mechanisms in myoblasts (NADH/asparagine/GCN2) versus myotubes (hyperpolarization) strongly support the conclusion of multiple context-dependent paths. The pyruvate therapy observation (C97) provides clinical relevance.",
+    "result_type": "MAJOR"
+  }
+]

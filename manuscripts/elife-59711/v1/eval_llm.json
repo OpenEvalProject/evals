@@ -1,0 +1,498 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C46"
+    ],
+    "result": "Chronic high neuronal activity accelerates the decline of experience-dependent plasticity with age, while maintaining low neuronal activity preserves plasticity. Animals cultured at 21% O2 (high activity) lost plasticity by day 7, whereas animals at 7% O2 (low activity) retained plasticity through day 10 of adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C32, C33 are directly supported by behavioral data showing differential plasticity decline in different O2 environments (Figure 1B-D). The conclusion (C34, C46) that plasticity decline is conditional on environmental state is well-supported by the experimental evidence showing maintained plasticity in low O2 conditions and rapid loss in high O2 conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Neuronal Ca2+ responses in URX O2-sensing neurons show experience-dependent plasticity that mirrors behavioral plasticity. In aged animals cultured at 21% O2, neuronal plasticity is lost, while animals cultured at 7% O2 retain neuronal plasticity at day 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C57 are directly supported by Ca2+ imaging data (Figure 2C-D). The summary conclusions (C58, C59) appropriately integrate the neuronal and behavioral findings, showing that both levels of plasticity decline together in high-activity conditions but are preserved in low-activity conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "Chronic neuronal activity causally drives plasticity decline with age. Chemogenetic silencing of O2-sensing neurons in high O2 conditions restores plasticity in aged animals, while optogenetic activation accelerates plasticity loss in low O2 conditions. This effect is independent of oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chemogenetic (C60-C63) and optogenetic (C64-C66) experiments provide strong causal evidence that neuronal activity level directly controls plasticity decline. The controls (C62, C63, C65) demonstrate specificity. The NAC experiments (C67-C68, C71) rule out oxidative stress as the primary mechanism. The major conclusions (C72, C73) are well-supported by the convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C100"
+    ],
+    "result": "Neural activity alters the transcriptome of O2-sensing neurons during aging. RNA-seq of isolated O2-sensing neurons shows differential gene expression patterns between high and low activity states, with validation confirming enrichment of neuron-specific markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data (C76, C84, C85) are quantitatively reported with appropriate statistical thresholds (FDR <0.1, fold change >1.5). Multiple validation approaches (C77, C80, C81) confirm the quality and specificity of the neuronal samples. The finding that gene expression for neuronal identity remains stable (C82, C83) while activity-regulated genes differ provides internal consistency. The conclusion (C100) is well-supported by the transcriptomic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C119",
+      "C124"
+    ],
+    "result": "High-activity neurons redirect transcriptional resources from maintaining plasticity to sustaining continuous firing. In young high-activity neurons, few genes are upregulated, but in aged high-activity neurons, genes related to Ca2+ homeostasis, cGMP signaling, and oxidative stress are upregulated, while plasticity-related genes are downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GO analysis findings (C91-C95) are supported by RNA-seq data with appropriate statistical thresholds. The gene set enrichment analysis (C96, C97) provides additional support. However, the interpretation that resources are \"redirected\" (C6, C119, C124) is somewhat speculative, as the data show correlation but not direct evidence of resource competition. The overall pattern is consistent with the interpretation, but the mechanistic claim of resource redirection is an inference rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C123"
+    ],
+    "result": "Approximately 5000 neuronal genes (~25% of genome) change expression with age in O2-sensing neurons, with ~60% shared between high and low activity states. Translation and ribosome biogenesis genes are upregulated in aged neurons (neuron-specific), while neuronal function genes are downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative findings (C101-C103) are clearly reported. Validation against the MetaWorm dataset (C104-C106) provides external validation. The neuron-specific upregulation of translation genes (C107-C109) is well-documented with citations to similar findings in other species, suggesting evolutionary conservation. The downregulation of neuronal function genes (C110-C111) is supported by GO analysis. The summary conclusion (C123) appropriately integrates these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Neural activity alters age-dependent gene expression trajectories in O2-sensing neurons. O2-sensing machinery genes decline with age overall but are upregulated in aged high-activity neurons. Activity-regulated genes and Ca2+ signaling genes show activity-dependent regulation with age. Oxidative stress genes are specifically upregulated in aged high-activity neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The findings on O2-sensing machinery (C112-C114), activity-regulated genes (C115), Ca2+ signaling genes (C116), and oxidative stress genes (C117-C118) are all supported by the RNA-seq data with appropriate statistical analysis. The activity-specific downregulation of learning-related genes (C120-C121) provides mechanistic insight. The interpretation of a better \"plasticity reserve\" in low-activity neurons (C122) is a reasonable inference from the differential gene expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Activity-regulated genes identified by RNA-seq functionally contribute to plasticity. RNAi knockdown of kdin-1, skn-1, and cfp-1 (genes sustained in aged high-activity neurons) affects plasticity in aged animals. kdin-1 knockdown specifically restores plasticity in aged high-activity animals without altering O2 responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The initial screen (C125-C127) identifies genes affecting plasticity. The focused validation of kdin-1, skn-1, and cfp-1 (C135-C141) shows age-dependent and activity-dependent effects. The finding that kdin-1 knockdown specifically restores plasticity (C138, C143) without affecting baseline responses is particularly strong evidence. The control showing no effect in low-activity conditions (C141) demonstrates specificity. The conclusions (C142, C145) are well-supported by the RNAi data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Calmodulin (CMD-1) mediates plasticity decline in high-activity neurons. Cell-specific cmd-1 knockdown does not affect plasticity in young adults but restores plasticity in aged high-activity animals (day 7, 21% O2). CMD-1 is essential in young but not old neurons for recovering from low activity states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNAi experiments (C148-C150) show age-dependent and activity-dependent effects of cmd-1 knockdown. The key finding that cmd-1 knockdown restores plasticity in aged high-activity animals (C152) is supported by behavioral data (Figure 7C,G). The specificity to high-activity conditions (C153) and the interpretation of CMD-1's role (C151, C154, C155) are well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Calcineurin (TAX-6) regulates plasticity tuning in young adults and promotes response decline in aged low-activity neurons. tax-6 knockdown eliminates plasticity in young animals but improves O2 responses in aged low-activity animals. The effect is activity-state dependent and acts through a pathway distinct from CMD-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNAi experiments show complex, activity-dependent effects of tax-6 knockdown (C158-C164). The finding that tax-6 knockdown improves responses in aged low-activity neurons (C162-C163) but not high-activity neurons (C161) demonstrates activity-state specificity (C165). The inference that CMD-1 acts through a calcineurin-independent pathway (C167) is reasonable given that tax-6 knockdown does not restore plasticity in aged high-activity animals. The summary (C168) appropriately captures the complex role of calcineurin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The K+-dependent Na+/Ca2+ exchanger NCX-5 is essential for sustaining plasticity during aging. ncx-5 knockdown does not affect plasticity in young adults but significantly reduces it in aged animals in both high and low activity conditions. NCX-5 is required for adaptation to changing O2 environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNAi experiments (C176-C180) show that ncx-5 is specifically required for plasticity in aged animals but not young adults (C178). The finding that ncx-5 knockdown impairs plasticity in both activity states (C179-C180) distinguishes it from cmd-1 and tax-6. The RNA-seq data showing higher ncx-5 expression in high-activity neurons (C175) provides additional context. The conclusion that NCX-5 is essential for plasticity during aging (C181) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "NCX-5 and CMD-1 control Ca2+ homeostasis in an activity-dependent manner to determine plasticity outcomes. ncx-5 knockdown reduces neuronal Ca2+ plasticity in young adults and elevates baseline Ca2+ in low-activity neurons. cmd-1 knockdown reduces baseline Ca2+ in high-activity neurons. Ca2+ homeostasis control in young adults determines plasticity retention in aged animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Ca2+ imaging experiments (C182-C185) show that ncx-5 knockdown impairs neuronal plasticity even when behavioral plasticity is intact in young adults (C183), suggesting neuronal changes precede behavioral changes. The findings on baseline Ca2+ (C188, C190) provide mechanistic insight into how these genes regulate Ca2+ homeostasis. The major conclusion (C191) integrating the roles of NCX-5 and CMD-1 is well-supported by the convergent evidence from behavioral assays, Ca2+ imaging, and the activity-dependent effects. However, the speculation about \"accumulated effects\" (C187) is less directly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "C. elegans show experience-dependent plasticity in O2 responses. Animals adapt their locomotory responses based on recent O2 culture conditions, with responses tuned to the most recent O2 environment within 12 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 describe the basic behavioral observations showing that animals adjust their responses based on culture O2 conditions and can update these responses after overnight shifts. The conclusion (C26) that tuning depends on recent O2 changes is directly supported by the behavioral data in Figure 1B-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Locomotory speed declines with age in both O2 conditions, but sensory ability to avoid high O2 remains largely intact until day 10. Response tuning by O2 culture condition is preserved in aging animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative observations (C27-C28) are clearly reported. The interpretation that sensory ability remains intact (C29) is supported by maintained avoidance behavior despite reduced speed. The citation to previous studies (C30) provides context. The observation that response tuning is preserved (C31) is supported by the behavioral data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The decline rate of plasticity is dictated by accumulated long-term O2 exposure rather than the direction of O2 shift. Plasticity loss in aged 21% O2-exposed animals is reversible by temporary cultivation at low oxygen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control experiments (C35-C36) test for assay bias and show that plasticity depends on accumulated exposure history. The interpretation (C37) is reasonable. The finding of partial reversibility (C38-C39) is important for understanding the mechanism and is supported by the data in Figure 1\u2014figure supplement 1G-I.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Aerotaxis assays confirm experience-dependent plasticity in O2 preference. Animals show different spatial O2 preferences based on culture conditions, and plasticity in these preferences declines with age in high O2 but not low O2 conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The aerotaxis data (C40-C44) provide an independent behavioral assay confirming the plasticity findings from the locomotory speed assays. The conclusion (C45) that O2 experience generates a memory is supported by both assay types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "URX Ca2+ responses are graded with O2 concentration and are reprogrammed by O2 culture conditions. Animals cultured at 7% O2 show higher Ca2+ responses to O2 stimuli than those cultured at 21% O2. Ca2+ responses can be fully reprogrammed by overnight O2 shifts in young adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Ca2+ imaging observations (C47-C51) are supported by data in Figure 2A-B. The statistical finding of complete adaptation (C52) and the conclusion (C53) are well-supported by the imaging data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Ca2+ responses decline with age in low-activity neurons but are maintained in high-activity neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These observations (C54-C55) from Ca2+ imaging in aged animals are supported by data in Figure 2\u2014figure supplement 1D and Figure 2C-D. This finding is somewhat counterintuitive but important for understanding the differential aging trajectories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C71"
+    ],
+    "result": "Antioxidant treatment with NAC does not restore plasticity in aged animals cultured at high O2, despite reducing oxidative stress as measured by gst-4p::GFP reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The NAC experiments (C67-C68) provide important negative controls showing that oxidative stress is not the primary driver of plasticity decline. The confirmation that NAC reduces oxidative stress (C68) validates the treatment, making the negative result (C67, C71) more meaningful.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The loss of plasticity in aged 21% O2-exposed animals can be substantially recovered by 24 hours at 7% O2, suggesting the loss is not permanent and can be restored by prolonged reduction of neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding (C74) shows reversibility of plasticity loss and is supported by behavioral data. The interpretation (C75) is reasonable and important for understanding the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "Genes involved in neuropeptide signaling are upregulated in both neurons and whole worms at high O2 in young adults. Genes upregulated at 21% O2 are enriched for phenotypes linked to high locomotory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These GO analysis findings (C87, C90) are supported by the RNA-seq data. The observation of minimal overlap in aged animals (C89) shows age-dependent divergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Delayed primary response genes (dPRGs) are enriched in aged high-activity neurons compared to low-activity neurons, suggesting functional activity-regulated genes are conserved between C. elegans and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene set enrichment analysis (C98) identifies conserved activity-regulated genes. The conclusion about evolutionary conservation (C99) is supported by the enrichment data and citations to mammalian studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "kdin-1, skn-1, and cfp-1 are orthologs of mammalian genes involved in neural excitability, oxidative stress, and transcriptional regulation. Their expression declines with age in low-activity neurons but not high-activity neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene identities and orthologies (C129-C131) are statements of fact. The functional roles (C132-C133) are supported by citations. The expression patterns (C134) are supported by the RNA-seq data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "skn-1 and cfp-1 RNAi have activity-dependent effects on O2 responses in aged animals, affecting plasticity indirectly through altered baseline responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings (C139-C140) from RNAi experiments show that skn-1 and cfp-1 have different phenotypes than kdin-1, affecting baseline responses rather than plasticity specifically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "Calmodulin plays a central role in activity-dependent plasticity and is highly conserved (98% amino acid identity) between C. elegans and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts (C146-C147) supported by citation and sequence comparison, providing context for the cmd-1 experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "Calcineurin is the only Ca2+-activated protein phosphatase in the brain and regulates learning and memory in both mammals and C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts (C156-C157) supported by citations, providing context for the tax-6 experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C169",
+      "C170"
+    ],
+    "result": "The ryanodine receptor UNC-68 is involved in sustaining tonic sensory responses. unc-68 knockdown has a similar but weaker phenotype than tax-6 knockdown in aged animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background (C169) is supported by citation. The RNAi result (C170) shows that unc-68 has effects similar to but weaker than tax-6, consistent with both being involved in Ca2+ signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "IIS/FOXO signaling (daf-16) and CREB coactivator signaling (crtc-1) are not involved in the O2 experience-dependent decline of plasticity with age, suggesting neuronal activity affects plasticity decline independent of lifespan-regulating pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative results from daf-16 and crtc-1 RNAi (C192, C194) are important controls showing that the plasticity decline is not mediated by canonical longevity pathways. The conclusion (C193, C195) is appropriately cautious and supported by the negative data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C196"
+    ],
+    "result": "Factors linked to neuronal Ca2+ signaling govern the decline of experience-dependent plasticity in O2 responses with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion (C196) appropriately integrates the findings from cmd-1, tax-6, and ncx-5 experiments, all of which are Ca2+-related genes that affect plasticity decline.",
+    "result_type": "MAJOR"
+  }
+]

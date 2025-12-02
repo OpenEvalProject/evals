@@ -1,0 +1,1848 @@
+{
+  "submission": {
+    "id": "2941d9c0-8415-40cd-b443-48dd4dfeec9b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:14:11.544262Z",
+    "updated_at": "2025-12-02T18:14:11.544262Z"
+  },
+  "content": [
+    {
+      "id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "submission_id": "2941d9c0-8415-40cd-b443-48dd4dfeec9b",
+      "content_type": "manuscript",
+      "content_text": "# Global sleep homeostasis reflects temporally and spatially integrated local cortical neuronal activity\n\n## Authors\n\n- Christopher W Thomas<sup>1</sup> ([ORCID: 0000-0001-5371-7257](https://orcid.org/0000-0001-5371-7257))\n- Mathilde CC Guillaumin<sup>2</sup> ([ORCID: 0000-0002-8611-3852](https://orcid.org/0000-0002-8611-3852))\n- Laura E McKillop<sup>1</sup> ([ORCID: 0000-0003-3085-1175](https://orcid.org/0000-0003-3085-1175))\n- Peter Achermann<sup>3</sup> ([ORCID: 0000-0002-0208-3511](https://orcid.org/0000-0002-0208-3511))\n- Vladyslav V Vyazovskiy<sup>1</sup> ([ORCID: 0000-0002-4336-6681](https://orcid.org/0000-0002-4336-6681)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Anatomy and Genetics, University of Oxford Oxford United Kingdom\n2. Nuffield Department of Clinical Neurosciences, University of Oxford Oxford United Kingdom\n3. Institute of Pharmacology and Toxicology, University of Zurich Zurich Switzerland\n4. The KEY Institute for Brain-Mind Research, Department of Psychiatry, Psychotherapy and Psychosomatics, University Hospital of Psychiatry Zurich Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nSleep homeostasis manifests as a relative constancy of its daily amount and intensity. Theoretical descriptions define \u2018Process S\u2019, a variable with dynamics dependent on global sleep-wake history, and reflected in electroencephalogram (EEG) slow wave activity (SWA, 0.5\u20134 Hz) during sleep. The notion of sleep as a local, activity-dependent process suggests that activity history must be integrated to determine the dynamics of global Process S. Here, we developed novel mathematical models of Process S based on cortical activity recorded in freely behaving mice, describing local Process S as a function of the deviation of neuronal firing rates from a locally defined set-point, independent of global sleep-wake state. Averaging locally derived Processes S and their rate parameters yielded values resembling those obtained from EEG SWA and global vigilance states. We conclude that local Process S dynamics reflects neuronal activity integrated over time, and global Process S reflects local processes integrated over space.\n\n## Introduction\n\nAccording to traditional theory, the need for sleep accumulates during wakefulness and dissipates during sleep. Despite decades of research, it is still uncertain precisely which biological variables form the substrate of sleep need, what characteristics of wake challenge their stability, how information about sleep-wake history is integrated over time, and how sleep mediates the restoration of homeostasis. Daily sleep amount varies greatly across the animal kingdom, yet individuals generally perform a relatively constant and species-specific amount of sleep each day. An even more fundamental question therefore remains whether homeostatic sleep regulation reflects an active process, dynamically shaping daily sleep architecture in response to a physiological need for the homeostatic regulation of specific variables, or whether it corresponds instead to an unknown innate time-keeping process which ensures only that a certain daily quota of sleep is obtained.\n\nThe earliest theories of sleep homeostasis supposed the existence of a single variable, termed Process S, which describes sleep drive at the global level (Borb\u00e9ly, 1982). This variable is assumed to always increase during wakefulness, independently of its content, and to decline during sleep. It is widely acknowledged that homeostatic sleep pressure is reflected in the levels of slow wave activity (SWA, 0.5\u20134 Hz spectral power) observable during NREM sleep in neurophysiological field potentials, such as electroencephalogram (EEG) or local field potential (LFP). Although preceding sleep-wake history is considered a key determinant of sleep amount and intensity, the circadian process also plays an important role (Daan et al., 1984). It is thought that the master pacemaker of circadian rhythmicity is located in the suprachiasmatic nucleus (SCN) of the hypothalamus, which consists of multiple cell-autonomous oscillators (Hastings et al., 2019). Although individual SCN cells may have widely diverse periods, the spatial averaging of their activities results in an occurrence of a stable circadian rhythm at the level of the whole animal (Liu et al., 1997; Kunz and Achermann, 2003).\n\nCurrent views on the origin of sleep homeostasis emphasise the importance of a local and activity-dependent component (Krueger and Tononi, 2011; Rattenborg et al., 2012; Tononi and Cirelli, 2014). It was shown that SWA is far from uniform across the brain, and that the behavioural and cognitive content of waking, beyond its mere duration, influences subsequent sleep and cortical\u00a0region-specific\u00a0SWA (Kattler et al., 1994; Huber et al., 2004; Vyazovskiy and Tobler, 2008; Rector et al., 2009; Murphy et al., 2011; Fisher et al., 2016). Indeed, many candidate mechanisms for the substrate of sleep homeostasis implicate processes occurring at a cellular or\u00a0local network level. These include the maintenance of cellular homeostasis (Reimund, 1994; Mackiewicz et al., 2007; Vyazovskiy and Harris, 2013; Bellesi et al., 2016), the replenishment of energy stores (Scharf et al., 2008), the influence of sleep-related signalling molecules such as adenosine or cytokines (Krueger et al., 2008), and the regulation of imbalanced synaptic strengths (Tononi and Cirelli, 2003; Vyazovskiy et al., 2008; Liu et al., 2010). Although the equivalence of these processes with Process S has not been conclusively demonstrated (Frank and Heller, 2019), the existing evidence supports the relevance of sleep-wake-dependent differences in neuronal activity for understanding the regulation of sleep.\n\nCortical neuronal activity is generally higher during waking compared to sleep (Vyazovskiy et al., 2009; McKillop et al., 2018), although this may depend on the cortical region (Hengen et al., 2013). Lower spike firing generally typical of sleep is thought to be due, at least in part, to regular periods of widespread synchronous network silence, termed off periods, intruding on ongoing activity (Steriade et al., 1993b; Steriade et al., 2001; Sanchez-Vives and Mattia, 2014). Importantly, off periods in neural populations are thought to underpin slow wave dynamics at the level of the field potential (Steriade et al., 1993a; Massimini et al., 2004; Buzs\u00e1ki et al., 2012), and it was shown that their properties reflect homeostatic sleep need (Vyazovskiy et al., 2009; McKillop et al., 2018; Saberi-Moghadam et al., 2018).\n\nNeuronal firing rates typically fluctuate around a homeostatic set point, which is characteristic for individual cells and variable across the population (Turrigiano, 2011; Hengen et al., 2013; O'Leary et al., 2014; Styr et al., 2019). The homeostatic regulation of firing rates may depend on processes occurring specifically in sleep and wakefulness (Grosmark et al., 2012; Hengen et al., 2016) and evidence suggests that firing rates change as a function of time spent awake, conditional on the behaviour (Vyazovskiy et al., 2009; Fisher et al., 2016). Additionally, the magnitude and direction of state-dependent changes in firing rate differs between neurons, depending on the brain region and their individual firing rate set point (Hengen et al., 2013; Miyawaki and Diba, 2016; Watson et al., 2016; Miyawaki et al., 2019). Firing rate homeostasis may occur above the individual cell level (Slomowitz et al., 2015), perhaps through synaptic plasticity induced by the sleep slow oscillation which may act to narrow the population firing rate distribution (Levenstein et al., 2017).\n\nOverall, the evidence suggests that the homeostatic regulation of sleep and of neuronal firing rates may be intrinsically related, however, this functional link remains incompletely defined. Mathematical modelling approaches present an opportunity to address this problem. To this end, we developed novel quantitative models of Process S and demonstrated that its temporal dynamics, on both a local and global level, can be derived entirely from local neuronal activity, without any reference to the animal\u2019s sleep and wake states. We found that the magnitude of the deviation of multi-unit firing rate from a locally specified set point carries sufficient information to account for empirically derived patterns of SWA. We then introduced the total time spent in off periods as an alternative measure for Process S with more local origins than SWA, and showed how Process S dynamics may then be described in terms of two opponent processes, dependent on spiking rate and off period occurrence. Our data show that the global dynamics of Process S can be derived from a spatiotemporal integration of local neuronal activities. This suggests that a possible functional role for sleep homeostasis is to provide a precise intrinsic time-keeping mechanism.\n\n## Results\n\nWe analysed chronic recordings of the\u00a0frontal electroencephalogram (EEG) alongside local field potential (LFP) and multi-unit activity (MUA) spiking from\u00a0the primary motor cortex of six mice. These recordings were made continuously over 48 h, starting at light onset, while the mice were freely behaving within their cage and exposed to a standard 12 h\u00a0-\u00a012\u00a0h light-dark cycle. At light onset of the second day a sleep deprivation protocol was enforced for 6 h, involving the presentation of novel objects. Outside of this sleep deprivation period, mice were undisturbed and able to sleep at will.\n\n### Process S dynamics can be described as a function of vigilance state history\n\nNREM sleep can be defined and distinguished from waking by the presence of high amplitude slow (0.5\u20134 Hz) waves in the EEG. The average EEG spectral power in the slow wave range (termed slow wave activity; SWA) in NREM sleep varies as a function of the animal\u2019s recent sleep-wake history, and this relationship has been captured in a classical quantitative theory using the concept of the\u00a0homeostatic\u00a0\u2018Process S\u2019 (Borb\u00e9ly, 1982; Daan et al., 1984). Process S describes a variable whose magnitude can be estimated from the level of SWA during NREM sleep, reflecting the intensity of sleep, and which is interpreted as corresponding to the homeostatic component of sleep drive (Franken et al., 1991a; Achermann et al., 1993; Huber et al., 2000a; Vyazovskiy et al., 2007; Guillaumin et al., 2018). Theoretically, Process S follows simple dynamics: during wake it increases according to a saturating exponential function towards an upper asymptote, while during NREM sleep it decays exponentially towards a lower asymptote. There are many published variants of the precise equations for this model, but, crucially, all these variants use the sleep-wake state history of the animal as the key predictive variable for Process S. Here, the specific equations used are:\n\n$$\nWake / REMsleep:\\frac{dS}{dt}=\\alpha(S_{max}\u2212S(t))NREMsleep:\\frac{dS}{dt}=\u2212\\beta(S(t)\u2212S_{min})\n$$\n\nWhere S(t) represents the level of Process S as a function of time, Smax and Smin are upper and lower asymptotes, and \u03b1 and \u03b2 are rate parameters. The first equation is applied when the animal is scored to be awake or in REM sleep and the second equation is applied when it is scored to be in NREM sleep. Here, we use the typical approach of applying the wake dynamics equation to REM sleep (Franken et al., 1991a; Huber et al., 2000a; Vyazovskiy et al., 2007), but for simplicity do not set separate parameters for wake vs. REM sleep. For convenience, S is expressed in units equivalent to those of SWA. This classical formalism is later abbreviated as model Cl-SWA. Process S as described by these simple dynamics accounts for the time course of empirical SWA with high accuracy. We applied this model to SWA derived from the frontal EEG of all animals, and as expected obtained a high quality fit (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54148/elife-54148-fig1-v1.jpg)\n\n**Figure 1.:** (A) An example of the classical state-based Process S model (blue) describing the dynamics of frontal EEG SWA (median per NREM sleep episode, black bars) over 48 h in one representative animal. Sleep deprivation occurred as indicated at light onset of the second day and lasted 6 h. Scored vigilance states are also shown. (B) An example of frontal electroencephalogram (EEG), primary motor cortical local field potentials (LFP), corresponding raw signal with multi-unit activity (MUA) and detected spikes, in representative segments of waking and NREM sleep. Slow waves and synchronous spiking off periods are visible in NREM sleep but not in wakefulness. The y-scale is the same for both wake and NREM sleep plots. (C) The distribution (log scale) of mean firing rates during wake, NREM and REM sleep over all animals and channels, in addition to the difference in mean firing rates in wake compared to NREM sleep (all are positive, reflecting higher firing in wake). Points indicate channels grouped by animal (left to right), but boxplots reflect channels from all animals treated as one population. (D) Distribution of correlation coefficients, calculated within each single channel, between wake episode duration (Duration), the change in slow wave activity (dSWA), and mean firing rate (mean FR). Points indicate channels grouped by animal (left to right), but boxplots reflect channels from all animals treated as one population. (E) An example scatter plot of the correlation between the change in median SWA from one NREM episode to the next and the mean firing rate during the intervening period of wakefulness. This channel is representative because it has the median correlation coefficient of all channels.\n\n### Neuronal firing rates are associated with Process S dynamics and vigilance state distributions\n\nWhichever specific processes within the brain underpin these state-dependent dynamics for Process S, we hypothesised that it is associated in some way to neuronal spiking activity, which differs characteristically between wake and NREM sleep (Figure 1B). The occurrence of spiking off periods causes firing rates to be typically lower during NREM sleep compared to wake and REM sleep. Consistent with this assumption, we found that the mean multi-unit firing rate averaged over all periods of wake was larger than the firing rate averaged over all periods of NREM sleep in every recording channel and every animal, with REM sleep showing typically intermediate values (Figure 1C).\n\nBecause the slow oscillation is underpinned by local neuronal dynamics, it is expected to be highly heterogeneous across the neocortex. Regional differences in SWA dynamics have been previously described, for example between frontal and occipital EEG derivations (Werth et al., 1996; Huber et al., 2000b), and can be accounted for within the classical Process S model through the selection of locally variable values for model rate parameters (Zavada et al., 2009; Rusterholz and Achermann, 2011; Guillaumin et al., 2018). To explore whether spike firing rates might account for some of the variation in the rate of increase of Process S, we correlated the change in LFP SWA from one NREM sleep episode to the next, when separated by wakefulness lasting at least 5 min, with the mean spike firing rate during this intervening wake period, and with the duration of that wake period. Correlation coefficients were obtained separately for each recording channel, and pooled across animals. As expected, we obtained large positive correlation coefficients between the duration of a period of wakefulness and the change in LFP SWA in all channels (mean\u00a0=\u00a00.66, sd\u00a0=\u00a00.13; Figure 1D). Importantly however, the change in LFP SWA was on average also positively correlated with the firing rate (mean\u00a0=\u00a00.27, sd\u00a0=\u00a00.30; Figure 1D,E), meaning that, generally, a higher firing rate during waking was associated with a larger increase in SWA in subsequent NREM sleep. Interestingly, these phenomena were not independent, as a positive correlation was also found between wake episode duration and firing rate (mean\u00a0=\u00a00.35, sd\u00a0=\u00a00.33; Figure 1D). These results further support the possibility that neuronal activity is associated with Process S dynamics. To test this hypothesis, we next turned to a quantitative modelling approach.\n\n### Process S dynamics can be described as a function of temporally and spatially integrated local neuronal activity\n\nWe first sought to determine whether a model expressing Process S dynamics solely as a function of local multi-unit firing rates might describe the levels of sleep SWA in the corresponding LFP with comparable accuracy to the classical model which is dependent on vigilance states defined at the global level (Figure 2). The classical Process S model was used as a starting point for the development of a novel firing-rate-dependent alternative. To do this, the equations of the classical model were adapted in two ways. Firstly, an instantaneous firing rate threshold (F\u03b8) was introduced as a new model parameter to replace the wake vs. sleep criterion, assuming an increase in Process S when the threshold is exceeded and a\u00a0decrease when firing is below. Conceptually, this firing rate threshold resembles a set point: a target firing rate at which the dynamics are stable. Secondly, we assumed that the rate of change of Process S is proportional to the difference between firing rate and this threshold. Introducing this change to the equations ensures that the rate of change of S is equal to zero exactly at the set point, and a continuous function of firing rate around this value. This version of the model is later abbreviated as Fr-SWA. The equations are (Figure 3A):\n\n$$\nF(t)>F_{\\theta}:\\frac{dS}{dt}=\\alpha(S_{max}\u2212S(t))(F(t)\u2212F_{\\theta})F(t)<F_{\\theta}:\\frac{dS}{dt}=\u2212\\beta(S(t)\u2212S_{min})(F_{\\theta}\u2212F(t))F(t)=F_{\\theta}:\\frac{dS}{dt}=0\n$$\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54148/elife-54148-fig2-v1.jpg)\n\n**Figure 2.:** (A) An example from one representative animal modelling the SWA averaged over all LFP channels, of both the classical model (blue) and novel firing-rate-based model (orange), calculated from the firing rate also averaged over all LFP channels (brown). (B) An example of both models applied to the SWA of a single LFP channel, which came from the same animal as used in A.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54148/elife-54148-fig3-v1.jpg)\n\n**Figure 3.:** (A) Equations for the classic state-based model (blue) and novel firing-rate-based model (orange). (B) For each animal, the distribution over channels of the median absolute\u00a0difference between the model and empirical SWA, expressed as a percentage of empirical SWA, for both classic and firing-rate-based models. Black lines indicate the values obtained from modelling the averaged LFP SWA and firing rate over all channels within an animal and the red lines give the parameter value obtained from the model applied to the frontal EEG SWA of that animal. (C) The same median percent error, grouped over animals and models, separately showing errors at the level of single LFP, averaged LFP and EEG. (D\u2013K) The distribution (log scale) of values estimated for \u03b1 and \u03b2\u00a0rate parameters in the classic model (blue) and in the firing-rate-based model (orange). Parameter values are first presented with boxplots plotted separately for each animal (D, F, H, J), then are additionally shown grouped by level of analysis (E, G, I, K), including single LFP channel, mean of LFPs, or (E and I only) frontal EEG. Vertical lines indicate the standard error of the group mean and grey lines connect points derived from the same animal across groups. (L) The distribution of the final optimised value for the firing rate set point parameter (F\u03b8) of the firing-rate-based model grouped by animal. (M) The same values z-normalised to the distribution of firing rates within wake, NREM and REM sleep. (N) The distribution of mean firing rate in wake, NREM and REM sleep, expressed as a percentage of the firing rate set point parameter (F\u03b8). Points indicate channels grouped and coloured by animal, but boxplots reflect all channels treated as one population. (O) The distribution of the change in Process S (\u0394S/\u0394t) from one 4 s time step to the next derived from the Fr-SWA model in wake, NREM sleep and REM sleep. All mice, channels and time are pooled.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54148/elife-54148-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The distribution of values estimated for Smax and (B) Smin parameters in Process S models derived from SWA with the classic model and (C-D) with the firing-rate-based model, with boxplots plotted separately for each animal.\u00a0The black lines indicate the values obtained from modelling the averaged LFP SWA and firing rate over all channels within an animal. Additionally, the red lines (in A and B only) give the parameter value obtained from the model of the frontal EEG SWA of the corresponding animal.\n\nWe applied this novel model, alongside the classical model, to describe SWA dynamics at the LFP level, by finding parameter values that would minimise the difference between empirical SWA and modelled Process S. The two models were fit to the SWA from each LFP channel separately, using the multi-unit firing rate from the same channel for the firing-rate-dependent model. The models were also fit to the SWA obtained by averaging the LFP (and firing rate) over the whole population of channels within the same mouse.\n\nFigure 2 shows two examples of the fit of both models, first to SWA derived from the average LFP, and also to SWA derived from a single LFP channel (these examples are from the same animal as in Figure 1A). The overall pattern of Process S dynamics was similar at both LFP and EEG recording levels and was well described by both the classic and novel firing-rate-based model. Throughout the data, this purely firing-rate-dependent model described the overall dynamics of LFP SWA during NREM sleep to a comparable accuracy as the classical model, as reflected in the median percent error deviation between modelled and empirical SWA (Figure 3B). Both the model type and animal had a highly significant effect on the median percent error of the model fit to individual LFP channels, although there is no significant interaction (Model: F(1,144)=25.9, p=1.1\u00d710\u22126; Animal: F(5,144)=30.2, p=6.3\u00d710\u221221; Model x Animal: F(5,144)=1.65, p=0.15; two-way ANOVA unequal groups). Errors were higher for the novel model, importantly however, the differences in fit quality due to the model type are small relative to the effect of the particular animal and channel, on which fit quality depends much more strongly (Model: \u03b72\u00a0=\u00a00.079; Animal: \u03b72\u00a0=\u00a00.459; Model x Animal: \u03b72\u00a0=\u00a00.025; Channel (residuals): \u03b72\u00a0=\u00a00.437). The errors of the model fit on the averaged LFP and on the EEG (classical model only) are also shown in Figure 3B, and are more explicitly compared in Figure 3C. We did not find any significant effect of the field potential level (EEG, average LFP, single LFP channels) on the model error (F(2,171) = 0.2, p=0.82, one-way ANOVA).\n\nThe distributions of final optimised rate parameters, $\\alpha$ and $\\beta$, are shown in Figure 3D\u2013G for the classic model and Figure 3H\u2013K for the firing-rate-based model. In all cases, it was observed that the optimised rate parameters for Process S derived from EEG and the mean LFP consistently fall within the range of corresponding parameters derived from single LFP channels, suggesting that Process S calculated at spatially higher levels may reflect an averaging of Processes S which exist more locally. Indeed, for both rate parameters in both models, the mean of parameter values over single-channel-derived Process S was not significantly different from the equivalent parameter values obtained from the mean LFP or EEG (Cl-SWA $\\alpha$: F(2,10) = 1.0, p=0.39; Cl-SWA $\\beta$: F(2,10) = 0.7, p=0.51; two-way ANOVA, factors spatial level and animal; Fr-SWA $\\alpha$: p=0.079; Fr-SWA $\\beta$: p=0.24; paired t-test). The final optimised values of the firing-rate threshold parameter, F\u03b8, in the activity-dependent model are shown in Figure 3L, and the values of Smax and Smin in both models are shown in Figure 3\u2014figure supplement 1. Most parameters in both models were significantly different between animals, with the exception of Smin in the firing-rate-dependent model (Cl-SWA $\\alpha$: F(5,77) = 4.03, p=2.8\u00d710\u22123; Cl-SWA $\\beta$: F(5,77) = 8.65, p=1.9\u00d710\u22126; Cl-SWA Smax: F(5,77) = 14.35, p=9.8\u00d710\u221210; Cl-SWA Smin: F(5,77) = 12.42, p=1.1\u00d710\u22128; Fr-SWA $\\alpha$: F(5,77) = 8.33, p=3.0\u00d710\u22126; Fr-SWA $\\beta$: F(5,77) = 9.27, p=7.5\u00d710\u22127; Fr-SWA F\u03b8: F(5,77) = 14.3, p=1.0\u00d710\u22129; Fr-SWA Smax: F(5,77) = 6.64, p=3.9\u00d710\u22125; Fr-SWA Smin: F(5,77) = 2.16, p=0.07; one way ANOVA).\n\nThe relationship between the optimal firing set point and state specific firing rates is shown in Figure 3M. Firing rate threshold was z-normalised (subtract the mean firing rate over a given state and divide by the standard deviation) separately with respect to the distribution of firing rates in wake, NREM and REM sleep. This shows, as expected, that the set point is typically below mean firing in wake (\u22121.0\u00a0\u00b1\u00a00.6; mean\u00a0\u00b1\u00a0sd), well above mean firing in NREM sleep (1.6\u00a0\u00b1\u00a01.1), and slightly above mean firing in REM sleep (0.7\u00a0\u00b1\u00a01.1). These were all significantly different from zero (Wake: p=1.6\u00d710\u221213, NREM: p=1.9\u00d710\u221214, REM: p=3.4\u00d710\u22127, two-sided Wilcoxon signed rank test). Figure 3N further shows the state-dependent distribution of average firing rate, expressed as a percentage of the chosen firing set point parameter. Mean firing was 182 \u00b1 57.6% of the firing rate set point during wake, 61.8 \u00b1 17.6% during NREM sleep, and 84.2 \u00b1 31.8% during REM sleep. Again, these distributions were all significantly different from 100% (Wake: p=6.7\u00d710\u221214, NREM: p=2.0\u00d710\u221214, REM: p=5.4\u00d710\u22125). Note that, in a few channels, the optimal firing rate threshold is actually above the mean firing rate during waking. This occurs when the waking firing rate distribution overlaps substantially with the NREM sleep firing rate distribution but has a heavier tail. REM sleep, in this data, is typically associated with firing below the set point, and therefore Process S decreases, albeit at a reduced rate compared to NREM sleep (Figure 3O). Interestingly, there are no significant correlations between the model fit error and the threshold normalisation relative to any one vigilance state (Wake: p=0.06, r\u00a0=\u00a00.21; NREM: p=0.35, r\u00a0=\u00a0\u22120.11; REM: p=0.94, r\u00a0=\u00a0\u22120.01), suggesting that there is no clear relationship between the firing rate set point and firing rate distribution of any one particular state.\n\n### Off occupancy as a novel metric for local sleep-wake related neuronal dynamics\n\nWhen considering the relationship between multi-unit firing rates and LFP slow waves, a conceptual complication arises due to the different origins of the LFP and MUA from within the same channel. While the MUA firing rate represents the activity of only a few individual neurons, factors such as volume conduction result in spatial smoothing of the LFP signal, and as such it can be influenced by the activities of neurons covering a cortical area potentially on the order of several millimetres (Kajikawa and Schroeder, 2011). Subthreshold currents also influence the LFP (Reimann et al., 2013; Ness et al., 2016). This means that when a slow wave is detected in the LFP, it is not guaranteed that all local neurons contributing to the MUA are necessarily silent (Todorova and Zugaro, 2019). Similarly, not every long interspike interval occurs during a slow wave. An estimation of the occurrence of off periods may be obtained by combining LFP and spiking data (Figure 4A). Slow wave detection was performed on each LFP over the whole 48 h, including all vigilance states (0.5\u20136 Hz filter followed by an amplitude threshold, values shown in Figure 4C). All multi-unit inter-spike intervals (ISIs) which coincide with the peak of detected slow waves were identified. The distribution of the duration of these ISIs was often (64 out of 75 channels) unambiguously bimodal (Figure 4B). This could be interpreted as evidence of the existence of two spiking states occurring locally during the more widespread network slow oscillation: high frequency spiking (on period) and extended silence (off period). Note that these two distributions do not simply correspond exactly to sleep vs. wake conditions, because bimodality is often evident in the distribution of slow wave coincident ISIs from NREM sleep only, or even from REM sleep only (Figure 4B). The distribution of slow wave coincident ISIs (over all vigilance states) was used to define an ISI duration threshold for the detection of off periods, separately for each channel. The values used for this threshold are shown in Figure 4D. The average multi-unit firing rate aligned to the peak of slow waves in detected off periods reveals a clear suppression of firing, consistent with expectations (Figure 4E). A rebound increase in average firing is visible in this example channel immediately after the off period, as has been previously documented in some cortical neuronal populations (Chauvette et al., 2010). The total fraction of time each channel spends in off periods was calculated over all epochs of 4 s, and termed the \u2018off occupancy\u2019. Off occupancy defined in this way is high in NREM sleep and low in both wake and REM sleep (Figure 4F). The existence of a non-zero frequency of local cortical off periods has been previously reported during wakefulness (Vyazovskiy et al., 2011; Vyazovskiy et al., 2014; Fisher et al., 2016), and REM sleep (Funk et al., 2016). The off occupancy measure displays similar temporal dynamics to LFP (and EEG) SWA over both sleep deprivation and spontaneous sleep and wake (Figure 4G). These results together demonstrate that the detected off periods were likely to be physiologically meaningful and that, for instance, the possible inclusion of interneurons in the MUA which may spike during off periods (Zucca et al., 2019) did not represent a significant problem.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54148/elife-54148-fig4-v1.jpg)\n\n**Figure 4.:** (A) An example section of LFP (raw in grey, 0.5\u20136 Hz filtered in black) and simultaneous MUA spikes. During this time window, the filtered LFP crosses the amplitude threshold (265 \u03bcV for this channel, red line) five times. The MUA inter-spike interval aligned to two of these peaks exceeds the duration threshold (85 ms for this channel) and so two off periods are detected (grey boxes). ISIs aligned to the other three out of five crossings (asterisks) are too short to be considered off periods. (B) Histograms of multi-unit inter-spike intervals aligned with detected slow waves (0\u00a0=\u00a0peak of slow wave) for this example channel. The four plots show, from left to right, ISIs over the whole recording and ISIs separately during wake, NREM and REM sleep only. The ISI duration threshold (red line) is selected using the histogram of all ISIs (leftmost) at the minimum between the two modes (and shown for comparison in the wake, NREM and REM sleep panels). (C) The distribution of LFP amplitude and (D) ISI duration threshold values used for definition of off periods for each channel, with boxplots plotted separately for each animal. (E) The mean multi-unit firing rate over a period of 1 s centred on the peak of detected slow waves, calculated over all slow waves within one example channel with a resolution of 1 ms. (F) Distributions of mean off occupancy (%) for all channels averaged over wake, NREM and REM sleep. Points indicate channels grouped by animal (left to right), but boxplots reflect all channels treated as one population. (G) Off occupancy is shown alongside EEG and LFP SWA for an example channel over 48 h. Traces represent these values calculated at 4 s resolution (light grey), in addition to the median value per NREM sleep episode, as used for model fitting (black bars). Firing rate (brown) and scored vigilance states are also shown.\n\n### Process S dynamics, defined using off periods, can be described as a function of vigilance states or neuronal firing rates\n\nIn order to investigate whether the off occupancy measure reflects Process S, we applied the classical state-based model to the time course of off occupancy, exactly as was done with single channel SWA. The classical model was applied with its equations unchanged, and is abbreviated as Cl-Off. Figure 5A shows an example of the resulting Process S time course obtained in this way with a high quality of fit. In contrast, some changes were introduced to the firing-rate-based model in order to describe off occupancy dynamics. We considered that the different dynamics above vs. below a particular firing rate set point may be due to two opponent processes simultaneously active in dynamic opposition but with differential magnitude in wake vs. NREM sleep. Specifically, we consider a Process S increasing term which is proportional to instantaneous firing rate, and a Process S decreasing term which is proportional to the time spent in off periods (off occupancy). The equation used is:\n\n$$\n\\frac{dS}{dt}=\\alphaF(t)(S_{max}\u2212S(t))\u2212\\betaX(t)(S(t)\u2212S_{min})\n$$\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54148/elife-54148-fig5-v1.jpg)\n\n**Figure 5.:** (A) An example of the novel model based on firing rates and off occupancy (purple), and the classic state-based model (blue), with optimised parameters describing the dynamics of off occupancy (median per NREM episode, black bars) over 48 h. Sleep deprivation occurred as indicated at light onset of the second day and lasted 6 h. Firing rate (brown), off occupancy (value per 4 s epoch, grey) and scored vigilance states are also shown. (B) Equations for the classic state-based model (blue) and firing-rate-and-off-occupancy-based model for off occupancy (purple). (C) For each animal, the distribution over channels of the median difference between the model and empirical off occupancy, expressed as a percentage of the off occupancy, for both classic and firing-rate-based models. (D) The distribution of values of the change in Process S (\u0394S/\u0394t) from one 4 s time step to the next derived from the Fr-Off model in wake, NREM sleep and REM sleep. All mice, channels and time are pooled. (E\u2013F) The distribution of optimised values used for the rate parameters in the classic model and (G-H) the firing rate model, with boxplots plotted separately for each animal.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54148/elife-54148-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The distribution of values used for Smax and (B) Smin parameters in Process S models derived from off occupancy with the classic model and (C-D) with the firing-rate-based model, with boxplots plotted separately for each animal.\n\nIn this model (Figure 5B), one term drives S towards an upper asymptote (Smax) in proportion to firing rate (F), while the other drives S towards a lower asymptote (Smin) in proportion to the off occupancy (X). Again, two rate parameters \u03b1 and \u03b2 are required. This model behaves similarly to previous models because firing is high in wake and low in NREM sleep, whereas off occupancy is high in NREM sleep and low in wake. This variant of the model is abbreviated as Fr-Off. Figure 5A also includes the fit from this model, demonstrating a high level of agreement between the two models and an accurate fit to the data.\n\nThe distribution of the median percent errors for the fits from both models over all animals and channels is shown in Figure 5C. As before, the model type and animal has a significant effect (Model: F(1,138) = 8.06, p=5.2\u00d710\u22123; Animal: F(5,138) = 17.2, p=3.2\u00d710\u221213; Model x Animal: F(5,138) = 0.52, p=0.76; two-way ANOVA with unequal groups), and the classic model achieved a slightly lower median percent error. However, this effect was again very weak compared with the variation in fit quality between animals and channels (Model: \u03b72\u00a0=\u00a00.034; Animal: \u03b72\u00a0=\u00a00.367; Model x Animal: \u03b72\u00a0=\u00a00.011; Channel (residuals): \u03b72\u00a0=\u00a00.588). Figure 5D shows the distribution of values for the change in modelled Process S from one simulated time step to the next resulting from the firing-rate-based model (Fr-Off), in wake, NREM and REM sleep, pooling all animals, channels and time. Unlike in the previous firing-rate-based model, REM sleep is now typically associated with an increase in Process S. The distributions of final optimised rate parameters, $\\alpha$ and $\\beta$, are shown in Figure 5E\u2013F for the classic model and Figure 5G\u2013H for the firing rate and off occupancy model. Values for Smax and Smin are shown in Figure 5\u2014figure supplement 1. Most parameters in both models were different between animals (Cl-Off $\\alpha$: F(5,74) = 2.4, p=0.047; Cl-Off $\\beta$: F(5,74) = 2.29, p=0.055; Cl-Off Smax: F(5,74) = 9.49, p=6.4\u00d710\u22127; Cl-Off Smin: F(5,74) = 16.79, p=8.0\u00d710\u221211; Fr-Off $\\alpha$: F(5,74) = 9.86, p=3.9\u00d710\u22127; Fr-Off $\\beta$: F(5,74) = 5.14, p=4.6\u00d710\u22124; Fr-Off Smax: F(5,74) = 10.08, p=2.8\u00d710\u22127; Fr-Off Smin: F(5,74) = 10.25, p=2.3\u00d710\u22127; one way ANOVA). Notably, the weakest evidence for inter-animal differences were for $\\alpha$ and $\\beta$ in the classic model.\n\n### Variation in local process S dynamics is averaged away at higher scales and is stable across conditions\n\nAlthough we demonstrated that the rate parameters obtained at the local level appear to correspond closely to those obtained for \u2018global\u2019 EEG, the question remains how local activity-dependent Processes S might relate to the global Process S which reflects sleep-wake history. To enable the direct comparison of their time courses, each Process S was normalised in a range from zero to one, determined by the corresponding fitted values of Smax and Smin. We observed that the mean over individual Processes S derived from applying activity-dependent models in single channels matches the time course of Process S derived from the EEG with the classical model. This held for both local SWA (Figure 6A) and off occupancy (Figure 6B) models. Note that the Cl-SWA model is considered in both cases here, as this is the most \u2018global\u2019 level at which the model can be applied, and off periods are not defined for the EEG. Interestingly, over all animals the global level Process S was typically in between the average of local Processes S derived from the two activity-dependent models (Figure 6C). This result suggests that global Process S calculated at a higher spatial scale might reflect an averaging across a manifold of local Processes S that exist on a finer spatial level.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54148/elife-54148-fig6-v1.jpg)\n\n**Figure 6.:** (A) The time course of Process S shown for one representative animal using the classical EEG-based model (blue), alongside average (orange) and individual channel (grey) Processes S derived from activity-dependent models of all individual LFP channels applied to SWA. (B) The same, except that Process S corresponding to individual channels (grey) and their average (purple) are derived from off periods. Note that the model in blue remains Cl-SWA, as off periods cannot be derived from the EEG. (C) Process S derived from applying the Cl-SWA model to frontal EEG (blue) and the mean Process S derived from applying Fr-SWA (orange) and Fr-Off (purple) to all individual channels. The results are shown for each of the six animals analysed. In all panels, all Process S time series are normalised between 0 to 1 relative to individual Smin and Smax values for fair comparison.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54148/elife-54148-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The values of the rate parameters \u03b1, and (B) \u03b2, obtained by algorithmic optimisation fitting to data from only the baseline or sleep deprivation day. For normalisation, values are expressed as a percentage of the original value obtained using the semi-automated approach (see Materials\u00a0and\u00a0methods). (C) The difference in the median percent error (E*) obtained from Process S with rate parameters optimised on either the baseline or sleep deprivation day from that obtained using the original semi-automated selected parameters. Negative values reflect improved fits. All values are shown for both classic (blue) and firing-rate-based (orange) models applied to SWA-derived Process S. (D\u2013F) The same variables are shown for the models based on off occupancy using both classic (blue) and firing-rate-based (purple) models. Statistical analysis was performed for each variable by a three-factor ANOVA. (A) Day: F(1, 293)=56.1, p=8.1\u00d710\u221213; Model: F(1, 293)=6.8, p=9.7\u00d710\u22123; Animal: F(5, 293)=1.4, p=0.23; Day x Model: F(5, 293)=0.6, p=0.43; Day x Animal: F(5, 293)=4.8, p=3.5\u00d710\u22124; Model x Animal: F(1, 293)=2.5, p=0.033; three-way ANOVA). (B) Day: F(1, 293)=110.9, p=3.3\u00d710\u221222; Model: F(1, 293)=28.9, p=1.6\u00d710\u22127; Animal: F(5, 293)=0.7, p=0.60; Day x Model: F(5, 293)=0.1, p=0.98; Day x Animal: F(5, 293)=11.1, p=8.3\u00d710\u221210; Model x Animal: F(5, 293)=11.6, p=7.4\u00d710\u22124; three-way ANOVA). (C) Day: F(1, 293)=4.37, p=0.038; Model: F(1, 293)=16.3, p=7.1\u00d710\u22125; Animal: F(5, 293)=17.3, p=5.3\u00d710\u221215; Day x Model: F(1, 293)=2.1, p=0.064; Day x Animal: F(5, 293)=24.5, p=1.4\u00d710\u221220; Model x Animal: F(1, 293)=3.6, p=3.9\u00d710\u22123; three-way ANOVA). (D) Day: F(1, 281)=48.2, p=2.6\u00d710\u221211; Model: F(1, 281)=2.6, p=0.11; Animal: F(5, 281)=2.6, p=0.027; Day x Model: F(5, 281)=3.2, p=0.077; Day x Animal: F(5, 281)=2.9, p=0.014; Model x Animal: F(1, 281)=0.8, p=0.54; three-way ANOVA). (E) Day: F(1, 281)=16.8, p=5.4\u00d710\u22125; Model: F(1, 281)=4.6, p=0.033; Animal: F(5, 281)=0.8, p=0.50; Day x Model: F(5, 281)=13.0, p=3.7\u00d710\u22124; Day x Animal: F(5, 281)=6.0, p=2.7\u00d710\u22125; Model x Animal: F(1, 281)=1.2, p=0.31; three-way ANOVA). (F) Day: F(1, 281)=15.9, p=8.4\u00d710\u22125; Model: F(1, 281)=1.4, p=0.25; Animal: F(5, 281)=7.5, p=1.2\u00d710\u22126; Day x Model: F(5, 281)=0.3, p=0.56; Day x Animal: F(5, 281)=2.6, p=0.028; Model x Animal: F(1, 281)=0.8, p=0.58; three-way ANOVA).\n\nThe modelling approaches described here all identify variability in Process S between recording channels, and indicate that a local component determines its temporal dynamics, which, in turn, is spatially integrated to give rise to the global dynamics of Process S. One important caveat that remains is that, even within the same global behavioural state, neuronal activity recorded from the same local cortical region may differ markedly between recording conditions, depending, for example, on the time of day or specific wake behaviours. Therefore, if the dynamics of global Process S represent spatial integration\u00a0of local neuronal activities, it is important to determine how stable the locally-derived rate parameters\u00a0are, and how sensitive our overall modelling approach is,\u00a0to factors which are expected to influence local neuronal firing rates.\n\nTo address this question, we performed parameter estimation for each model separately for baseline day, when the animals are awake spontaneously for most of the dark phase, and for the day when sleep deprivation was conducted, when the animals are engaged in novel object exploration and spent time awake for an extended period of time during the light phase, when nocturnal mice are habitually asleep. Invariably, we observed that both the rate parameters and the median error were close to those derived from the whole 48 h, with parameters clustering around 100% of their original values and error differences around zero (Figure 6\u2014figure supplement 1). Statistical analysis (Figure 6\u2014figure supplement 1) suggested that the day, baseline or sleep deprivation, did have a significant effect on all parameters and error differences, suggesting some influence on Process S which is unaccounted for both by global sleep-wake history and cortical activity. The model type,\u00a0either classical (state-based) or novel (activity-based), was generally only significant for Process S models based on SWA, not off periods. Importantly, the interaction between day and model was not significant in most cases, supporting that the activity-dependent models describe day-dependent variation in Process S generally similarly to the classical sleep-wake state model. Indeed, in the one case in which a significant interaction effect was found (\u03b2 in off periods models), day-dependent differences were greater for the classical model than activity-dependent model (Figure 6\u2014figure supplement 1E). The effect of animal was variably significant, although the interaction between animal and day was significant in all cases. This further suggests that variation in Process S errors may be associated with inter-individual variability arising from technical factors, such as precise location of the recording electrode, or systematic differences in the animals\u2019 behaviour, rather than due to the modelling approach.\n\n## Discussion\n\nHere, we demonstrated that Process S dynamics can be derived entirely from multi-unit neuronal spiking activity, without reference to global sleep-wake states. A model was outlined whereby the integrated history of local multi-unit firing rates, relative to a locally-defined firing rate set point, predicted the temporal dynamics of LFP SWA. The accuracy of this model was demonstrated in data recorded from mouse frontal cortex over 48 h, including both voluntary sleep and wake, and sleep deprivation. A novel metric for Process S was then presented, termed off occupancy, which measures the fraction of time a neural population spends in off periods, defined by the coincidence of LFP slow waves and multi-unit spiking silence. The modelling approach was combined with the off occupancy metric and tested on the same data to present a quantitative framework for understanding dynamics of sleep pressure at a highly local level in terms of neural spiking and off periods. Importantly, it is concluded that Process S at the global level reflects sleep-wake history through an integration of local cortical neuronal activity levels over time and also across spatially distributed networks.\n\nCentral to this modelling perspective is the assumption that the generation of spikes by a neural network is in some way correlated with an increase in sleep pressure, and that this manifests in the subsequent expression of slow waves and off periods, reflecting Process S. The energetic cost of spiking is high (Attwell and Laughlin, 2001), the regulation of a neuron\u2019s firing rate set point is linked to cellular energetics (Styr et al., 2019; Vergara et al., 2019), and neurons are susceptible to cellular stresses that can result from sustained metabolic load, such as oxidative stress (Wang and Michaelis, 2010; Cobley et al., 2018; Kempf et al., 2019; Cirelli et al., 2006). Furthermore, spiking activity may be mechanistically associated with synaptic plasticity, and it was suggested that firing rates are an important determinant of overall changes in synaptic strength, with higher spiking leading to greater changes (Graupner et al., 2016; Lappalainen et al., 2019). Compensatory processes exist within neurons to oppose cellular stress and related homeostatic challenges (K\u00fcltz, 2005) and off periods could provide the opportunity for neurons to prioritise such processes, therefore mediating the restorative benefits of sleep (Vyazovskiy and Harris, 2013). Similarly, off periods are associated with distinct synaptic plasticity rules (Gonz\u00e1lez-Rueda et al., 2018), and so their prevalence and patterning is likely also related to whatever regulation of synaptic strength occurs during sleep (Tononi and Cirelli, 2014; Timofeev and Chauvette, 2017; Seibt and Frank, 2019).\n\nAccording to this view of sleep homeostasis, in principle, regulation can occur entirely at the local level, within cortical networks or perhaps even within single neurons. Indeed, this is reflected in our results through the differences between channels both with respect to the accuracy of the model and in the values of optimised parameters. Why then is global sleep preferred over a hypothetical state including asynchronous local off periods, which presumably could be used to sustain longer periods of behavioural wakefulness? It has been argued previously that it is ecologically optimal to synchronise off periods and undergo dedicated periods of total behavioural shutdown, because local off periods during waking impair behaviour (Vyazovskiy et al., 2011; Rattenborg et al., 2012). Mechanistically, the occurrence of off periods might be obstructed by strong synaptic coupling and shared neuromodulatory tone. Indeed, it has been observed that the degree of coupling between an individual neuron\u2019s firing and the population firing rate, is variable between cells but characteristic to an individual neuron and likely reflects total synaptic strength with its neighbours (Okun et al., 2015). Some neurons may therefore be less able to express asynchronous off periods than others.\n\nThe preference for global sleep, despite its fundamentally local mechanisms, may be evidence that sleep homeostasis ultimately does not serve a single specific local function. Instead, the recent history of neuronal activity levels may regulate the local tendency to generate a signal (reflected in Process S) which is integrated over larger neuronal populations through intrinsic network mechanisms in order to produce a global sleep propensity signal that estimates the total time spent awake with great accuracy. This mechanism would enable the brain to enforce a daily quota of sleep, which could have many benefits at the physiological and ecological level, rather than to initiate sleep in response to the homeostatic need of one specific regulated variable (Vyazovskiy, 2015). Importantly, in this mechanism, the variables which change as a function of time spent awake or asleep do not themselves need to be directly regulated by sleep. Conversely, variables which remain stable during continuous wake or sleep could still make essential contributions to the time-keeping mechanism. Note that this property is present in our model, since the levels of neural activity themselves are not directly proportional to the levels of Process S. The approximately equivalent overall accuracy of both firing-rate-based and vigilance-state-based models supports this possibility, as does the evidence that homeostatically regulated cellular variables can actually be stable during extended wakefulness, and that maintenance processes in sleep may be ultimately prophylactic (Vyazovskiy and Harris, 2013). In order to maximise the efficiency of global sleep, single neuronal activities may be modulated such that sleep pressure accumulates, on average, as uniformly as possible. This is consistent with recent reports that sleep regulates the population level firing rate distribution (Watson et al., 2016; Levenstein et al., 2017; Miyawaki et al., 2019) and could account for sleep\u2019s link with synaptic and firing rate homeostasis, reconciling the local origins of sleep pressure accumulation with the global level of its dissipation.\n\nHere, spike firing rate is used to represent the level of neural activity because it is convenient to record, locally variable, and directly linked to neuronal functionality. However, no strong claim is made that firing rates are necessarily causally responsible for the accumulation of sleep pressure. Indeed, it would likely be possible to obtain a reasonable quantitative account of sleep homeostasis using any physiological variable (or set of variables) that are consistently higher in either the wake or sleep state. For example, a model assuming that Process S increases in proportion to local cortical temperature, which, in laboratory rodents, drops by\u00a0~2\u00b0C when falling asleep (Franken et al., 1991b; Tobler et al., 1997) and which has been mechanistically implicated in sleep regulation (Hoekstra et al., 2019), might also provide a plausible description of Process S dynamics. However, our results demonstrate that firing rates are a useful measurable correlate of the processes that directly underpin Process S, and therefore firing rate variance resulting from differences in experience and behaviour may well account for the variance in Process S accumulation in normal individuals, between waking periods and between cortical regions.\n\nIt should be noted that the firing-rate-based models used here typically slightly under-perform, relative to the classic model, in terms of minimising the error between simulation and empirical data. A limit on the accuracy of the model might be expected, related to technical restrictions rather than conceptual ones. In this approach, neuronal activity was considered at the multi-unit level, which comprises only a few randomly sampled nearby neurons. Certainly, individual neurons vary in their firing properties (Watson et al., 2016) and grouping these as a single measure of local network activity is somewhat arbitrary. However, since it remains possible that firing rate homeostasis acts on the population level (Levenstein et al., 2017) and also that there exist substantial local spatial correlations in cortical spiking (Okun et al., 2015), this choice is justifiable. Therefore, it may be significant that local Process S reflects global sleep-wake history more closely than the history of local activity, supporting the idea of a\u00a0spatial integration of Process S. It remains possible that these models might be applicable to firing derived from well isolated single units, although a reduction in fit quality would be predicted, owing to the proposed intrinsic spatial integration of Process S.\n\nA direct experimental test of the conclusion that global Process S derives from a spatial and temporal integration of local neuronal activities would require neuronal activity to be recorded and manipulated simultaneously across many brain areas, including cortical and subcortical regions. A recent study, which locally activated a specific cortical area during sleep with optogenetics, did not find an increase in SWA or off periods in subsequent NREM sleep (Rodriguez et al., 2016). The failure of such a localised manipulation of activity to alter measurable Process S is consistent with our conclusion of spatial integration, which implies that local deviations would indeed tend to be averaged away. More global manipulations of neuronal activity, using a pharmacological approach, unfortunately come with other interpretative difficulties. For example, another study found that systemic atropine administered during behavioural wakefulness produces slow wave activity and reduces neuronal activity, yet increases the duration of subsequent NREM sleep (Qiu et al., 2015). While this was interpreted as evidence that spiking activity is not related to sleep pressure accumulation, crucially, the direct effects of atropine on Process S and the functional significance of the resulting induced slow oscillation are unclear. Manipulations at an intermediate scale, for example which consistently perturbed a whole cortical region, might be effective and could, in theory, exert effects beyond simple local compensatory responses, impacting also global sleep-wake states. This might not be easy to achieve methodologically, as existing approaches are often not sufficiently selective and may lead to unspecific compensatory effects.\n\nIt is reasonable to assume that sleep homeostasis unfolds over multiple time scales and that Process S as defined by these models describes a relatively fast one, approaching its upper asymptote after continuous wakefulness on a time scale of hours. The inclusion of processes acting over longer or shorter time scales might explain discrepancies in all these models, however, the challenge remains to identify what these could be. Brain processes which unfold over multiple scales have previously been explained using the theory of criticality, which implies self-similarity across many spatial and temporal scales. It is possible that the magnitude of the deviation of cortical activity from the critical point might reflect the levels of Process S, as has been previously suggested (Pearlmutter and Houghton, 2009; Meisel et al., 2013). Alternatively, since waking dynamics may be slightly subcritical, and NREM sleep slightly supercritical (Priesemann et al., 2013), the deviation from criticality could, in principle, contribute to the dynamics of Process S. Crucially, it remains unclear to what extent criticality and sleep homeostasis are linked and by what mechanisms, although firing rate homeostasis is likely also relevant (Hsu and Beggs, 2006). Addressing this question would require datasets comprising a large number of widely spatially distributed recording sites, and well isolated individual neurons.\n\nThe role of REM sleep in Process S dynamics has not been explicitly addressed or considered in the construction of these models. Depending on the model variant, REM sleep is associated either with a small increase or small decrease in Process S, because firing rates are low in REM sleep (closer to NREM sleep than waking) and yet off period occupancy is also low (closer to wake levels than NREM sleep). It is possible that REM sleep might represent a homeostatically neutral state, in which the level of Process S changes minimally, or not at all (Vyazovskiy and Delogu, 2014). Another important factor which remains unaddressed is the influence of the circadian rhythm on Process S and also on neuronal activity. It may be possible, for example, that the time-keeping mechanism derives information also from circadian signals, possibly running faster or slower at different phases of the light-dark cycle or that the neuronal firing rate set-point experiences circadian regulation.\n\nIn summary, our data suggest that Process S is reflected at multiple scales in the brain, from EEG and LFP slow wave activity to the occurrence of local multi-unit off periods. Its dynamics across all scales can be described quantitatively using information derived only from local neuronal activity with comparable accuracy to the classical model of Process S which depends on global sleep-wake history. We postulate that, despite its local origins, Process S may be integrated across networks for the purpose of tracking time spent awake and used to enforce a daily quota of global sleep, rather than serving the regulation of specific physiological variables.\n\n## Materials and methods\n\n### Animals, surgery and husbandry\n\nChronic electrophysiological recordings from six male adult (4.8\u20135.7 months old, mean 5.2 months) C57BL/6J mice were analysed here. This data set is a subset of that used in a previous study (McKillop et al., 2018). The animals were surgically implanted with electrodes for the continuous recording of electroencephalogram (EEG), electromyogram (EMG) and cortical neuronal activity. EEG screw electrodes (Fine Science Tools) were inserted into the skull above the frontal cortex (primary motor area: anteroposterior 2 mm, mediolateral 2 mm) and occipital cortex (primary visual area: anteroposterior 3.5 mm, mediolateral 2.5 mm). Additional screw electrodes were placed contralateral to the occipital screw and above the cerebellum to serve as the ground and reference electrodes, respectively. A pair of stainless steel wires were inserted into the nuchal muscle for the recording of EMG. A polyimide-insulated tungsten microwire array (Tucker-Davis Technologies) was implanted through a craniotomy window into the frontal cortex (primary motor area: anteroposterior 2 mm, mediolateral \u22122 mm), contralateral to the EEG screw. The array comprised 16 wire channels of 33 \u03bcm diameter, arranged in 2 rows of 8, with columnar separation of 250 \u03bcm, row separation of 375 \u03bcm and tip angle of 45 degrees. One row of wires was 250 \u03bcm longer than the other to account for cortical curvature. A silicone gel (KwikSil, World Precision Instruments) was used to seal the craniotomy, and dental acrylic cement used to stabilise all the implanted electrodes. Surgeries were performed under isoflurane anaesthesia (4% induction, 1\u20132% maintenance). Analgesics were given immediately before surgery (1\u20132 mg/kg metacam and 0.08 mg/kg vetergesic, subcutaneous injection) and for at least 3 days during recovery following surgery (1\u20132 mg/kg metacam, oral). In addition, an immunosuppressant (0.2 mg/kg dexamethasone) was given the day before surgery, immediately before surgery and during recovery for at least 2 days. Animal wellbeing was closely monitored during recovery until a stable return to baseline was observed. All procedures were performed under a UK Home Office Project License and conformed to the Animal (Scientific Procedures) Act 1986.\n\nMice were housed individually following surgery. Two weeks after surgery, mice were transferred, still individually, to custom made Plexiglas cages (20.3\u00d732\u00d735 cm), containing a running wheel (Campden Instruments), which were placed within ventilated sound-attenuated Faraday chambers (Campden Instruments). The animals were exposed to a standard 12 h\u00a0-\u00a012\u00a0h light dark cycle, with food and water available ad libitum. Mice were allowed to habituate to the recording chamber and to attachment of the recording cables for a minimum of three days.\n\n### Experimental design\n\nAll the data analysed here were collected over two days. The first day served as a baseline, while the animals were completely undisturbed. A sleep deprivation protocol was enforced at light onset on the second day, immediately after the baseline day, and lasted 6 h. Sleep deprivation was performed using the well-established gentle handling procedure (McKillop et al., 2018).\u00a0During this period, experimenters constantly monitored both the behaviour and ongoing neurophysiological recordings of the mice. As soon as any animal showed signs of sleepiness (such as immobility, or slow waves in the EEG), novel objects were introduced to the cage (such as cardboard, colourful plastic and tissue paper) in order to encourage wakefulness. During the sleep deprivation period of 6 h, these mice slept 6.1\u00a0\u00b1\u00a02.9 min (mean\u00a0\u00b1\u00a0sd) only.\n\n### Data collection and pre-processing\n\nData acquisition was performed using a Multichannel Neurophysiology Recording System (Tucker Davis Technologies). EEG, EMG and microwire array LFP signals were filtered (0.1\u2013100 Hz), amplified (PZ5 NeuroDigitizer preamplifier, TDT) and stored locally (256.9 Hz sampling rate). Matlab scripts were used for signal conversion and data pre-processing. The LFP, EMG and EEG signals were filtered again offline between 0.5\u2013100 Hz (4th order Type II Chebyshev filter) and resampled at 256 Hz.\n\nExtracellular multi-unit spiking was additionally obtained from each microwire array channel, recorded at 25 kHz and filtered 300 Hz \u2013 5 kHz. An amplitude threshold (at least two standard deviations, minimum \u221225 \u03bcV) was used to identify putative spikes. Individual spikes were saved as a voltage waveform comprising 46 data samples (0.48 ms before to 1.36 ms after threshold crossing) plus a time stamp of occurrence. Spiking activity from each channel was cleaned offline for artefacts using the Matlab spike sorting software Wave_clus (Quiroga et al., 2004). All putative single unit clusters identified by the algorithm from the same channel were merged, excluding only noise spikes. MUA firing rate for each channel was calculated in epochs of 4 s and expressed in Hz.\n\nVigilance states were scored manually by visual inspection at a resolution of 4 s (using the software SleepSign, Kissei Comtec). Vigilance states were classified as waking (low amplitude but high frequency EEG with high or phasic EMG activity), NREM sleep (presence of EEG slow waves, a signal of a high amplitude and low frequency, and a low level of EMG activity) or REM sleep (low amplitude, high frequency EEG, and low EMG). All individual recording channels were manually visually examined in order to identify low quality signals which were characterised by poor signal to noise ratio, frequent artefacts, unsystematic rapid changes in firing rates, or major drifts in spike number across the recording period, that could not be related to the ongoing state. Such issues were considered to arise from technical issues and phenomena which were not physiological and these channels were excluded. For this analysis, over the six mice, a total of 78 out of 96 channels could be analysed (minimum of 10 out of 16 from each mouse). For the off occupancy models described below, 75 out of 96 channels were used; a further three channels were excluded because multi-unit firing rates, while stable, were too low to yield a reasonable estimate of the occurrence of off periods. Such a success rate is typical for electrophysiological studies where chronic in vivo recording of neuronal activity is performed in freely behaving animals across many days (Fisher et al., 2016; McKillop et al., 2018).\n\n### Slow wave activity\n\nEach EEG and LFP signal was processed to extract a measure of the slow wave activity (SWA). Signal segments were extracted within windows of 4 s duration and 1 s spacing (giving 3 s overlap), and Hann tapered. A Fourier transform was applied to each signal segment and the mean power in the slow wave range (frequencies from 0.5 to 4 Hz) was calculated. This measure was smoothed by finding the median over five temporally adjacent overlapping segments, yielding a SWA measurement for each sequential epoch of 4 s. For normalisation within each channel, SWA values were then expressed as a percentage of the mean SWA calculated over all artefact-free epochs scored as NREM sleep in the baseline 24 h. The median value of the SWA during each continuous NREM sleep episode served as an estimate of Process S. NREM sleep episodes shorter than 1 min (15 epochs) were excluded, as in a previous study modelling Process S in mice (Guillaumin et al., 2018). Brief awakenings (short arousals accompanied by movement, lasting\u00a0<20 s) were excluded from analysis but were not considered to be the ending of a NREM sleep episode.\n\n### Off period detection and definition of \u2018off occupancy\u2019\n\nOne aim of this study was to develop measures of Process S independent of the EEG, and so we focused on off periods, which are the neuronal counterpart of slow waves. Off periods refer to brief interruptions of spiking activity which occur synchronously across many recording sites, last approximately 70\u2013100 ms (Vyazovskiy et al., 2009), and are coincident with the positive deflection of LFP slow waves (McKillop et al., 2018). Off periods are difficult to define objectively in extracellular recordings. In these studies, off periods were detected by pooling spikes over all channels and identifying inter-spike intervals (ISIs) that exceed a threshold duration. However, pooling spikes removes the ability to compare local differences, and an off period will go undetected if it does not involve all channels. To overcome this limitation, off periods were defined separately for each channel by looking at the co-occurrence of local slow waves and spiking silence.\n\nThere is no universally accepted method for slow wave detection, and a recent comparison suggests that a simple amplitude-threshold-based approach, while in theory adequate, may underperform due to channel differences in overall LFP amplitude and large amplitude fluctuations of higher frequencies (Bukhtiyarova et al., 2019). For this reason, the LFP was first filtered from 0.5 to 6 Hz (4th order Butterworth filter), and a threshold defined individually for each channel, using the median plus one median absolute deviation of the peak amplitude of all positive half waves (including all vigilance states, but excluding epochs with artefacts). All positive half waves with peak amplitude above threshold were then considered to be slow waves.\n\nNext, for each LFP slow wave, the multi-unit spike preceding and following the slow wave peak was identified and the corresponding ISI determined. The distribution of these ISIs which coincide with slow waves was often (in 64 out of 75 channels) unambiguously bimodal, allowing the threshold to be selected at the local minimum between these two modes. When there was no evidence of bimodality a value of 120 ms was chosen, corresponding to the maximum value selected for the other channels. All inter-spike intervals aligned to slow wave peaks with a duration exceeding the threshold were considered off periods. Finally, the metric termed off occupancy was defined, for each epoch of 4 s, as the percentage of time spent in a detected off period during that epoch. Just as with SWA (see above), the median value of off occupancy over NREM sleep episodes was used to represent the level of Process S.\n\n### Model fitting and parameter optimisation\n\nThree theoretical models were used to describe the time course of Process S (see Results). The model differential equations were solved using a discrete time approximation, iteratively updating the value of modelled Process S in time steps of 4 s (Euler method). The fitting of various models to a particular channel of data is equivalent to finding the optimal choice of parameters to achieve the closest match between simulation and empirical SWA/off occupancy. In all models, the initial value of Process S was included as an additional free parameter. The selection of parameter values for model fitting was achieved using a semi-automated approach. First, an algorithmic methodology was established, which depends primarily on the definition of an error metric to assess fit quality between modelled Process S and empirical data. For each animal, NREM sleep episodes were identified with a duration of at least 1 min. For each NREM sleep episode (n\u00a0=\u00a01:N), the median empirical SWA/off occupancy (Xn), and similarly the median modelled value of Process S (Sn), were computed. The error metric (E) is defined as the sum of absolute differences between model and data, weighted by the relative episode duration (wn). This weight was defined as the absolute duration (dn) of the NREM sleep episode, normalised by the total duration of all episodes.\n\n$$\nE=\\sumn=1:Nw_{n}.|X_{n}\u2212S_{n}|w_{n}=d_{n}/\\sumi=1:Nd_{i}\n$$\n\nAlgorithmic parameter optimisation was performed separately for each channel, aiming to minimise this error metric. This was achieved using the Matlab function fminsearch, which uses the Nelder-Mead simplex algorithm (Lagarias et al., 1998). Many parameter combinations produce very similar dynamics, and many possible optimal (or near-optimal) parameter regimes exist, therefore algorithmic optimisation is sensitive to initial values. For this reason, initial values for the parameters were first set manually, aided with the use of a custom-made Matlab graphical user interface. Manually selected values were then fed into the algorithmic optimisation. Final parameter values were visually inspected to ensure that this optimisation produced an improvement of fit. The source code for this interface, along with key functions for calculating slow wave activity and off periods and for algorithmically optimising model fit, are included as supplementary files.\n\nThe final fit quality of a model to the data was expressed as the median percent error (E*). This is calculated by finding the absolute difference between median empirical (Xn) and simulated (Sn) SWA/off occupancy for each NREM sleep episode, expressed as a percentage of the empirical SWA/off occupancy in that episode. E* is then defined as the median over all NREM sleep episodes of these difference values. This alternative error metric is used for presentation of results because it has more comprehensible units (percentage of empirical SWA/off occupancy) compared to the error metric, with arbitrary units.\n\n$$\nE^{\u2217}=mediann=1:N[\\frac{|X_{n}\u2212S_{n}|}{X_{n}}\u22c5100%]\n$$\n\nIn order to cross-validate the parameter selection, the automatic parameter optimisation approach was applied again to only the rate parameters (\u03b1 and \u03b2, see Results) separately over halves of the data corresponding to the baseline day and sleep deprivation day. For this, the other parameters were left unchanged from the initial semi-automated approach, since the algorithmic optimisation may perform poorly with high dimensionality. The resulting \u03b1 and \u03b2\u00a0parameters and associated model errors (median percent errors, E*, calculated over the whole 48 h) were compared to those of the original parameter set.\n\n### Statistical analyses\n\nThe correlation between wake duration, wake firing rates and changes in SWA was calculated separately for each LFP channel. We first identified episodes of NREM sleep of at least 1 min duration (exactly as for modelling) and obtained the median SWA in each episode. We then identified which intervening time periods, between two NREM episodes, comprised at least 80% wake and lasted at least 5 min. We then calculated Pearson correlation coefficients between the duration of these wake periods, the mean multi-unit firing rate during these periods, and the change in median SWA from the\u00a0preceding to the following NREM sleep episode.\n\nAnalysis of variance was performed to explore factors influencing model parameters and fit quality using the Matlab functions anova1 (one-way) and anovan (two-way with unequal group size). For the rate parameters, ANOVA was calculated after applying a log transform. The effect size (\u03b72) is calculated for a factor as its sum of squares divided by the total sum of squares in the ANOVA and reflects the fraction of the variance accounted for by that factor.\n\nTo summarise the results in figures, boxplots were included alongside individual data points. These indicate the median, 25th and 75th percentiles, with whiskers extending to the most extreme value which falls within 150% of the interquartile range of the box. For these plots, results from individual channels were typically pooled across animals. In some cases, where indicated, channels from the same animal were presented as separate populations.\n",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "f50d4361-4be6-4f97-ba15-0d05a99dc084",
+      "submission_id": "2941d9c0-8415-40cd-b443-48dd4dfeec9b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Inna Slutsky, Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54148.sa1](https://doi.org/10.7554/eLife.54148.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn many brain areas, mean firing rates of neurons are regulated by sleep-wake cycle. However, how this local homeostatic regulation is linked to a global homeostatic process determining sleep pressure remains unknown. Based on empirical and modeling work, the authors propose that global sleep homeostasis arises from a spatial and temporal integration of local activities at the level of microcircuits. This study implies that homeostatic processes, integrating the history of activity at the level of local networks, may provide intrinsic time-keeping signals that can be used to calculate global sleep need.\n\nDecision letter after peer review:\n\n[Editors\u2019 note: the authors submitted for reconsideration following the decision after peer review. What follows is the decision letter after the first round of review.]\n\nThank you for submitting your work entitled \"Sleep homeostasis reflects temporally integrated local cortical neuronal activity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife. While all the reviewers appreciate the high quality of the data, they think that the findings are not conceptually new. The results are not qualitatively different from the established state-dependent regulation of mean firing rates and model-based predictions are not proposed.\n\nReviewer #1:\n\nThe paper focuses on the neuronal mechanisms that underlie sleep homeostasis. It proposes that the process which determines the need for sleep, so called process S, is not affected directly by sleep or wakefulness, but rather by deviations of local neuronal activity from a set point. The paper presents concrete mathematical models for the dynamics of process S in terms of neuronal firing rates and off periods, and shows that they could account for vigilance states and electrophysiological data collected from 6 mice over 48 hours (including a period of sleep deprivation). Thus, the paper suggests that sleep homeostasis is directly determined by intrinsic neuronal mechanisms, rather than by external cues. The proposed model for sleep homeostasis could have important implications and novel predictions for future studies on sleep regulation. Nevertheless, the fact that a model based on firing rate deviations could fit the data is not very surprising, and unexpected observations or predictions are not described, limiting the significance of the work for a wide audience. My comments relate more to the level of interpretation and predictions.\n\n1) Although the proposed model works well, the evidence is correlational in nature rather than causal (as also mentioned in the Discussion). I would not ask for new experiments, but some non-trivial predictions regarding the effect of causal interventions should be explicitly discussed. For example, optogenetic intervention to manipulate the firing rates, even locally, is expected to affect process S in a predicted manner and provide more support for the model if the results would be consistent.\n\n2) The paper suggests that sleep homeostasis involves multiple spatial and temporal scales. A unifying framework that could be interesting for describing this is that of critical brain dynamics, which suggests self-similarity across different spatial and temporal scales. Criticality was hypothesized in the past to in the context of sleep homeostasis [1]. Furthermore, changes in measures of criticality during sleep deprivation were described in a paper [2], on which one of the co-authors of the present paper (Achermann) is the last author. To be more specific, measures of the proximity to critical dynamics, derived from the population activity, could in principle replace the deviation of the firing rate from a set point in the proposed mathematical models. The network would be subcritical during wakefulness and supercritical during slow wave activity. One advantage of this model would be that it does not require fitting a parameter for the firing rate set point.\n\nReferences:\n\n1) Pearlmutter, B. A., and Houghton, C. J. (2009). A new hypothesis for sleep: tuning for criticality. Neural computation, 21(6), 1622-1641.\n\n2) Meisel, C., Olbrich, E., Shriki, O., and Achermann, P. (2013). Fading signatures of critical brain dynamics during sustained wakefulness in humans. Journal of Neuroscience, 33(44), 17363-17372.\n\nReviewer #2:\n\nSleep is hypothesized to be regulated by a homeostatic sleep pressure process (and by the circadian rhythm, which is not considered in the present research). It is widely believed that this process (\"process S\") manifests itself in slow waves. Hence, changes in the strength of process S can be quantified by the power of slow wave activity (SWA) in segments of a few seconds in duration. This empirical behavior is traditionally approximated analytically by an exponential decay towards an asymptotic value during sleep and an inverse behavior (with a potentially different time constant and asymptote) during wakefulness. Here the authors suggest to quantify process S through the instantaneous multiunit firing rate: at any point in time where firing rate is below a certain threshold, process S decays (as during sleep) and when firing rate is above it, process S grows (as during wakefulness). A variant of the model described by an equation taking firing rates and DOWN states into consideration was also considered.\n\nThe paper shows that such quantification of process S produces trajectories that are similar to the traditional model. The question addressed by this work has a clear motivation, as firing rate level is likely more closely related to the biophysical mechanisms of process S than the EEG slow waves (for all we know EEG is an epiphenomenon). In my opinion, the result is of confirmatory nature rather than any conceptually new finding, as I do not see how any result that is qualitatively different from what is shown could have been observed, given the established finding that MUA firing rates in wakefulness are on average higher than during sleep. If the very idea that the evolution of process S can be expressed through changes in firing rate is thought to be novel and important, the paper would benefit from making this point in a concise way, using only one variant of the model.\n\n1) I would have liked to see some form of cross-validation, e.g., by inferring the parameters separately from different portions of the data, and showing them to be in close agreement with each other. If this is not the case, the analytical model has too many parameters, which need not correspond to any biophysical processes.\n\n2) Subsection \u201cData collection and pre-processing\u201d: Some channels had an unstable MUA or had low firing rates and were excluded. The exclusion criteria seem to be subjective (no objective criteria are provided). This introduces a potential subjective bias into the findings and could preclude replication.\n\n3) Zucca et al., 2019, demonstrate that some PV cells fire during DOWN states. This is a potential confound of defining DOWNs based on ISIs of individual channels.\n\n4) A justification for a set point for MUA firing rate should be discussed, as different neurons can behave differently with respect to their individual set point (e.g. see Watson and Buzsaki, Neuron 2016).\n\nReviewer #3:\n\nThomas et al. present scientifically rigorous manuscript. The authors develop a novel means of modeling \"process S\" that is derived from the deviation of cortical firing rates from set points. The authors rigorously compare this approach to the classical model and demonstrate high agreement. The data used in this manuscript are of high spatial resolution and reveal significant differences in process S between recording channels within an animal. The work is statistically robust, and quite technical. This manuscript adds evidence to a series of papers that describe firing rate changes as a function of sleep and wake state, but makes no attempt to suggest a mechanism by which firing rates deviate or are restored. My concern with the paper is related primarily to its general interest and novelty. While the work is clearly rigorous and well executed, this study may be more appropriate for a specialized journal.\n\n1) The findings presented in this manuscript are derived from primary motor cortex, whose activity has long been described as strongly positively related to arousal state and movement (e.g. Evarts, 1964, Sreenivasan, 2016, the Vyazovskiy group's 2016 paper by Fisher). Given evidence that, for example, visual cortical areas show less or no modulation of rate during sleep versus wake (e.g. Durkin 2016; Hengen et al. 2016), it's unclear how universalizable rules/models will be across regions. That these data and conclusions may be specific to the circuit in M1 should be made clear throughout the manuscript and explicitly addressed as a key point of interest in the Discussion.\n\n2) One of the major speculative points in the manuscript is that the results support a model in which Process S is a time-keeping mechanism that maintains a sleep quota. The data presented seem to also be entirely consistent with a model in which waking experience-dependent alterations in neuronal physiology drive deviations in firing rates which require a homeostatic regulation of this (unidentified) physiological variable. Perhaps I have missed a key differentiator between these \u2013 if so, this should be clarified for the reader. Otherwise, the speculative model should be minimized.\n\n3) Much of the Discussion comes across as highly speculative.\n",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "da04e31f-5827-4af5-b292-a14a53de7163",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C1",
+      "claim": "Sleep homeostasis manifests as a relative constancy of daily sleep amount and intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep homeostasis manifests as a relative constancy of its daily amount and intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement in the abstract that draws from established scientific understanding of sleep homeostasis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "5f6d483a-9a4e-46ca-b7c1-4f5c4e2d8590",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C2",
+      "claim": "Process S is a variable with dynamics dependent on global sleep-wake history.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical descriptions define 'Process S', a variable with dynamics dependent on global sleep-wake history, and reflected in electroencephalogram (EEG) slow wave activity (SWA, 0.5\u20134 Hz) during sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references established theoretical descriptions of Process S in sleep research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "cf183882-b1a2-4500-8139-458d3c81b46d",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C3",
+      "claim": "Process S is reflected in EEG slow wave activity (0.5-4 Hz) during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical descriptions define 'Process S', a variable with dynamics dependent on global sleep-wake history, and reflected in electroencephalogram (EEG) slow wave activity (SWA, 0.5\u20134 Hz) during sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established relationship in sleep research literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "39b0ef5a-3c5d-435a-814e-7d1340929c93",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C4",
+      "claim": "Local Process S can be described as a function of the deviation of neuronal firing rates from a locally defined set-point, independent of global sleep-wake state.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we developed novel mathematical models of Process S based on cortical activity recorded in freely behaving mice, describing local Process S as a function of the deviation of neuronal firing rates from a locally defined set-point, independent of global sleep-wake state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on the mathematical models developed and tested on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "612f8ab3-70f6-4656-86cf-df0ad51ee891",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C5",
+      "claim": "Averaging locally derived Processes S and their rate parameters yields values resembling those obtained from EEG SWA and global vigilance states.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging locally derived Processes S and their rate parameters yielded values resembling those obtained from EEG SWA and global vigilance states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the study's data analysis comparing local and global measures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "c655187c-a9b3-4716-8ce4-2d8add4bfa18",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C6",
+      "claim": "Local Process S dynamics reflects neuronal activity integrated over time.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that local Process S dynamics reflects neuronal activity integrated over time, and global Process S reflects local processes integrated over space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results and data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "f4fd1cb9-5f8e-4385-bc41-406c98af35c5",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C7",
+      "claim": "Global Process S reflects local processes integrated over space.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that local Process S dynamics reflects neuronal activity integrated over time, and global Process S reflects local processes integrated over space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results and data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "f4f87b71-f6eb-4fb8-8065-ccf9c437491e",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C8",
+      "claim": "The need for sleep accumulates during wakefulness and dissipates during sleep according to traditional theory.",
+      "claim_type": "EXPLICIT",
+      "source": "According to traditional theory, the need for sleep accumulates during wakefulness and dissipates during sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references established theoretical frameworks in sleep research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "36425290-ad98-4e50-acce-9580deebbc67",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C9",
+      "claim": "Daily sleep amount varies greatly across the animal kingdom.",
+      "claim_type": "EXPLICIT",
+      "source": "Daily sleep amount varies greatly across the animal kingdom, yet individuals generally perform a relatively constant and species-specific amount of sleep each day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from comparative sleep research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "5d8bf65b-6f4a-4ed6-8fd8-effd2373d7d3",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C10",
+      "claim": "Individuals generally perform a relatively constant and species-specific amount of sleep each day.",
+      "claim_type": "EXPLICIT",
+      "source": "Daily sleep amount varies greatly across the animal kingdom, yet individuals generally perform a relatively constant and species-specific amount of sleep each day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from sleep research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "6f4d20a2-d4d0-497c-abcc-1308f169cb30",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C11",
+      "claim": "Process S is assumed to always increase during wakefulness, independently of its content.",
+      "claim_type": "EXPLICIT",
+      "source": "This variable is assumed to always increase during wakefulness, independently of its content, and to decline during sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the classical Process S model from Borb\u00e9ly (1982).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "84143ff1-997d-4bad-bf15-143378da2bfa",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C12",
+      "claim": "Process S is assumed to decline during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "This variable is assumed to always increase during wakefulness, independently of its content, and to decline during sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the classical Process S model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "fab8546b-cfd0-414f-8b59-01670b4f4b74",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C13",
+      "claim": "Homeostatic sleep pressure is reflected in the levels of slow wave activity (SWA, 0.5\u20134 Hz spectral power) during NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "It is widely acknowledged that homeostatic sleep pressure is reflected in the levels of slow wave activity (SWA, 0.5\u20134 Hz spectral power) observable during NREM sleep in neurophysiological field potentials, such as electroencephalogram (EEG) or local field potential (LFP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is widely acknowledged in the field as stated in the text.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "92f5e289-fcbe-433c-ae90-66c5a4afb25c",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C14",
+      "claim": "The circadian process plays an important role in sleep regulation alongside sleep-wake history.",
+      "claim_type": "EXPLICIT",
+      "source": "Although preceding sleep-wake history is considered a key determinant of sleep amount and intensity, the circadian process also plays an important role (Daan et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Daan et al., 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "08c495e9-c16b-425e-91d9-869ddb1ad9e8",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C15",
+      "claim": "The master pacemaker of circadian rhythmicity is located in the suprachiasmatic nucleus (SCN) of the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thought that the master pacemaker of circadian rhythmicity is located in the suprachiasmatic nucleus (SCN) of the hypothalamus, which consists of multiple cell-autonomous oscillators (Hastings et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hastings et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "bf517f4c-693f-4773-8ed4-3b93b3fc6fd8",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C16",
+      "claim": "The SCN consists of multiple cell-autonomous oscillators.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thought that the master pacemaker of circadian rhythmicity is located in the suprachiasmatic nucleus (SCN) of the hypothalamus, which consists of multiple cell-autonomous oscillators (Hastings et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hastings et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "98962249-0333-4306-9f4e-d16cc4570ae8",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C17",
+      "claim": "Individual SCN cells may have widely diverse periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Although individual SCN cells may have widely diverse periods, the spatial averaging of their activities results in an occurrence of a stable circadian rhythm at the level of the whole animal (Liu et al., 1997; Kunz and Achermann, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Liu et al., 1997 and Kunz and Achermann, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "4276f694-9739-4ce6-8c54-79000e16d052",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C18",
+      "claim": "Spatial averaging of SCN cell activities results in a stable circadian rhythm at the level of the whole animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Although individual SCN cells may have widely diverse periods, the spatial averaging of their activities results in an occurrence of a stable circadian rhythm at the level of the whole animal (Liu et al., 1997; Kunz and Achermann, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Liu et al., 1997 and Kunz and Achermann, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "d1359bc9-3630-4796-98fc-ccad962ae9ae",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C19",
+      "claim": "Current views on the origin of sleep homeostasis emphasise the importance of a local and activity-dependent component.",
+      "claim_type": "EXPLICIT",
+      "source": "Current views on the origin of sleep homeostasis emphasise the importance of a local and activity-dependent component (Krueger and Tononi, 2011; Rattenborg et al., 2012; Tononi and Cirelli, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "45a18d8e-5a95-429b-9884-2bafc7f0b164",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C20",
+      "claim": "SWA is far from uniform across the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that SWA is far from uniform across the brain, and that the behavioural and cognitive content of waking, beyond its mere duration, influences subsequent sleep and cortical region-specific SWA (Kattler et al., 1994; Huber et al., 2004; Vyazovskiy and Tobler, 2008; Rector et al., 2009; Murphy et al., 2011; Fisher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "535e79f7-a6f2-4608-80a2-c5473e3785ee",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C21",
+      "claim": "The behavioural and cognitive content of waking, beyond its mere duration, influences subsequent sleep and cortical region-specific SWA.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that SWA is far from uniform across the brain, and that the behavioural and cognitive content of waking, beyond its mere duration, influences subsequent sleep and cortical region-specific SWA (Kattler et al., 1994; Huber et al., 2004; Vyazovskiy and Tobler, 2008; Rector et al., 2009; Murphy et al., 2011; Fisher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "64c54cb9-b6a4-4aa8-90c8-01d466c0832e",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C22",
+      "claim": "Cortical neuronal activity is generally higher during waking compared to sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical neuronal activity is generally higher during waking compared to sleep (Vyazovskiy et al., 2009; McKillop et al., 2018), although this may depend on the cortical region (Hengen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vyazovskiy et al., 2009 and McKillop et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "225a459b-44bd-45f9-aa14-143d68fc0d26",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C23",
+      "claim": "Lower spike firing generally typical of sleep is thought to be due, at least in part, to regular periods of widespread synchronous network silence, termed off periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower spike firing generally typical of sleep is thought to be due, at least in part, to regular periods of widespread synchronous network silence, termed off periods, intruding on ongoing activity (Steriade et al., 1993b; Steriade et al., 2001; Sanchez-Vives and Mattia, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "f1280f97-3501-434c-aebd-75decad74e50",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C24",
+      "claim": "Off periods in neural populations are thought to underpin slow wave dynamics at the level of the field potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, off periods in neural populations are thought to underpin slow wave dynamics at the level of the field potential (Steriade et al., 1993a; Massimini et al., 2004; Buzs\u00e1ki et al., 2012), and it was shown that their properties reflect homeostatic sleep need (Vyazovskiy et al., 2009; McKillop et al., 2018; Saberi-Moghadam et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "2410da70-be2f-4dfd-b1f7-4d21acf70c1c",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C25",
+      "claim": "Off period properties reflect homeostatic sleep need.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, off periods in neural populations are thought to underpin slow wave dynamics at the level of the field potential (Steriade et al., 1993a; Massimini et al., 2004; Buzs\u00e1ki et al., 2012), and it was shown that their properties reflect homeostatic sleep need (Vyazovskiy et al., 2009; McKillop et al., 2018; Saberi-Moghadam et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "8a45b01c-7be4-477c-80f3-b208456b5334",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C26",
+      "claim": "Neuronal firing rates typically fluctuate around a homeostatic set point, which is characteristic for individual cells and variable across the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal firing rates typically fluctuate around a homeostatic set point, which is characteristic for individual cells and variable across the population (Turrigiano, 2011; Hengen et al., 2013; O'Leary et al., 2014; Styr et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "e89bbba3-593e-4b91-b71f-7ac03d08240b",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C27",
+      "claim": "The homeostatic regulation of firing rates may depend on processes occurring specifically in sleep and wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "The homeostatic regulation of firing rates may depend on processes occurring specifically in sleep and wakefulness (Grosmark et al., 2012; Hengen et al., 2016) and evidence suggests that firing rates change as a function of time spent awake, conditional on the behaviour (Vyazovskiy et al., 2009; Fisher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "eca6582e-1b1f-4cbb-a184-c0d6d79cef50",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C28",
+      "claim": "Firing rates change as a function of time spent awake, conditional on the behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "The homeostatic regulation of firing rates may depend on processes occurring specifically in sleep and wakefulness (Grosmark et al., 2012; Hengen et al., 2016) and evidence suggests that firing rates change as a function of time spent awake, conditional on the behaviour (Vyazovskiy et al., 2009; Fisher et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vyazovskiy et al., 2009 and Fisher et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "1b1d188f-dbca-445d-af46-cf3ceaa3dcb0",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C29",
+      "claim": "The magnitude and direction of state-dependent changes in firing rate differs between neurons, depending on the brain region and their individual firing rate set point.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the magnitude and direction of state-dependent changes in firing rate differs between neurons, depending on the brain region and their individual firing rate set point (Hengen et al., 2013; Miyawaki and Diba, 2016; Watson et al., 2016; Miyawaki et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "e4ee418c-5dd5-4838-acf9-0d977456b265",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C30",
+      "claim": "Firing rate homeostasis may occur above the individual cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Firing rate homeostasis may occur above the individual cell level (Slomowitz et al., 2015), perhaps through synaptic plasticity induced by the sleep slow oscillation which may act to narrow the population firing rate distribution (Levenstein et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Slomowitz et al., 2015 and Levenstein et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "d03df5f6-ee70-4aa4-b9b1-3f7254b1c781",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C31",
+      "claim": "The classical state-based Process S model describes the dynamics of frontal EEG SWA over 48 h with high accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied this model to SWA derived from the frontal EEG of all animals, and as expected obtained a high quality fit (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model fit shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "39a201a1-176a-4534-af96-af6252ae217e",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C32",
+      "claim": "The mean multi-unit firing rate averaged over all periods of wake was larger than the firing rate averaged over all periods of NREM sleep in every recording channel and every animal.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this assumption, we found that the mean multi-unit firing rate averaged over all periods of wake was larger than the firing rate averaged over all periods of NREM sleep in every recording channel and every animal, with REM sleep showing typically intermediate values (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "9387eaf3-dca9-4e28-a72e-be80470b678e",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C33",
+      "claim": "REM sleep shows typically intermediate firing rate values between wake and NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this assumption, we found that the mean multi-unit firing rate averaged over all periods of wake was larger than the firing rate averaged over all periods of NREM sleep in every recording channel and every animal, with REM sleep showing typically intermediate values (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "2c49fe23-2a3d-4046-8384-5703314a725f",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C34",
+      "claim": "Large positive correlation coefficients were obtained between the duration of a period of wakefulness and the change in LFP SWA in all channels (mean = 0.66, sd = 0.13).",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we obtained large positive correlation coefficients between the duration of a period of wakefulness and the change in LFP SWA in all channels (mean = 0.66, sd = 0.13; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the correlation analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "ba826e10-938b-4f6a-8797-f4eca984f7f4",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C35",
+      "claim": "The change in LFP SWA was on average positively correlated with the firing rate (mean = 0.27, sd = 0.30).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly however, the change in LFP SWA was on average also positively correlated with the firing rate (mean = 0.27, sd = 0.30; Figure 1D,E), meaning that, generally, a higher firing rate during waking was associated with a larger increase in SWA in subsequent NREM sleep.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the correlation analysis shown in Figures 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "e927df6b-f31e-48c6-a267-9c528f7e3c16",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C36",
+      "claim": "A higher firing rate during waking was associated with a larger increase in SWA in subsequent NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly however, the change in LFP SWA was on average also positively correlated with the firing rate (mean = 0.27, sd = 0.30; Figure 1D,E), meaning that, generally, a higher firing rate during waking was associated with a larger increase in SWA in subsequent NREM sleep.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the correlation data shown in Figures 1D and 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "c1387fa6-2e6b-4e90-abfe-13226b93e2ce",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C37",
+      "claim": "A positive correlation was found between wake episode duration and firing rate (mean = 0.35, sd = 0.33).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these phenomena were not independent, as a positive correlation was also found between wake episode duration and firing rate (mean = 0.35, sd = 0.33; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the correlation analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "54a15c51-194c-4b33-8429-4d87789d92d5",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C38",
+      "claim": "The firing-rate-dependent model described the overall dynamics of LFP SWA during NREM sleep to a comparable accuracy as the classical model.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the data, this purely firing-rate-dependent model described the overall dynamics of LFP SWA during NREM sleep to a comparable accuracy as the classical model, as reflected in the median percent error deviation between modelled and empirical SWA (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the model comparison shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "9bd08972-6f32-4e0d-a9f3-1dc909e79490",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C39",
+      "claim": "Both the model type and animal had a highly significant effect on the median percent error of the model fit to individual LFP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the model type and animal had a highly significant effect on the median percent error of the model fit to individual LFP channels, although there is no significant interaction (Model: F(1,144)=25.9, p=1.1\u00d710\u22126; Animal: F(5,144)=30.2, p=6.3\u00d710\u221221; Model x Animal: F(5,144)=1.65, p=0.15; two-way ANOVA unequal groups).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from statistical analysis (two-way ANOVA).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "a2c61b2a-ce2d-45e6-9d92-d633b0f54a90",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C40",
+      "claim": "The differences in fit quality due to the model type are small relative to the effect of the particular animal and channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Errors were higher for the novel model, importantly however, the differences in fit quality due to the model type are small relative to the effect of the particular animal and channel, on which fit quality depends much more strongly (Model: \u03b72 = 0.079; Animal: \u03b72 = 0.459; Model x Animal: \u03b72 = 0.025; Channel (residuals): \u03b72 = 0.437).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the effect size analysis (\u03b72 values).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "4ded8b59-62a4-4aac-9b6f-70e472f3b6d7",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C41",
+      "claim": "There was no significant effect of the field potential level (EEG, average LFP, single LFP channels) on the model error.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find any significant effect of the field potential level (EEG, average LFP, single LFP channels) on the model error (F(2,171) = 0.2, p=0.82, one-way ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from statistical analysis (one-way ANOVA).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "8dfd0114-ea4c-493d-880d-155b9d255577",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C42",
+      "claim": "The optimised rate parameters for Process S derived from EEG and the mean LFP consistently fall within the range of corresponding parameters derived from single LFP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, it was observed that the optimised rate parameters for Process S derived from EEG and the mean LFP consistently fall within the range of corresponding parameters derived from single LFP channels, suggesting that Process S calculated at spatially higher levels may reflect an averaging of Processes S which exist more locally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the parameter distributions shown in Figures 3D-K.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "ff29f6bf-18c3-43f8-97a9-8c26efbe58e4",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C43",
+      "claim": "Process S calculated at spatially higher levels may reflect an averaging of Processes S which exist more locally.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, it was observed that the optimised rate parameters for Process S derived from EEG and the mean LFP consistently fall within the range of corresponding parameters derived from single LFP channels, suggesting that Process S calculated at spatially higher levels may reflect an averaging of Processes S which exist more locally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation about parameter distributions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "ea997648-3061-4ac9-bac7-6a20d01a3efc",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C44",
+      "claim": "For both rate parameters in both models, the mean of parameter values over single-channel-derived Process S was not significantly different from the equivalent parameter values obtained from the mean LFP or EEG.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, for both rate parameters in both models, the mean of parameter values over single-channel-derived Process S was not significantly different from the equivalent parameter values obtained from the mean LFP or EEG (Cl-SWA \u03b1: F(2,10) = 1.0, p=0.39; Cl-SWA \u03b2: F(2,10) = 0.7, p=0.51; two-way ANOVA, factors spatial level and animal; Fr-SWA \u03b1: p=0.079; Fr-SWA \u03b2: p=0.24; paired t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from statistical analysis (ANOVA and t-tests).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "fc7d725d-d25a-4a03-9e1b-35acb8233260",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C45",
+      "claim": "The firing rate threshold is typically below mean firing in wake (\u22121.0 \u00b1 0.6; mean \u00b1 sd).",
+      "claim_type": "EXPLICIT",
+      "source": "This shows, as expected, that the set point is typically below mean firing in wake (\u22121.0 \u00b1 0.6; mean \u00b1 sd), well above mean firing in NREM sleep (1.6 \u00b1 1.1), and slightly above mean firing in REM sleep (0.7 \u00b1 1.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the z-normalization analysis shown in Figure 3M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "30648a6a-cae9-43c1-a2c9-bf9428e9a5d0",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C46",
+      "claim": "The firing rate threshold is well above mean firing in NREM sleep (1.6 \u00b1 1.1).",
+      "claim_type": "EXPLICIT",
+      "source": "This shows, as expected, that the set point is typically below mean firing in wake (\u22121.0 \u00b1 0.6; mean \u00b1 sd), well above mean firing in NREM sleep (1.6 \u00b1 1.1), and slightly above mean firing in REM sleep (0.7 \u00b1 1.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the z-normalization analysis shown in Figure 3M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "3c83bc04-aad7-4818-b5fc-f92ec3dc2e50",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C47",
+      "claim": "The firing rate threshold is slightly above mean firing in REM sleep (0.7 \u00b1 1.1).",
+      "claim_type": "EXPLICIT",
+      "source": "This shows, as expected, that the set point is typically below mean firing in wake (\u22121.0 \u00b1 0.6; mean \u00b1 sd), well above mean firing in NREM sleep (1.6 \u00b1 1.1), and slightly above mean firing in REM sleep (0.7 \u00b1 1.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the z-normalization analysis shown in Figure 3M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "67ff89e4-a2d6-4fed-833c-b46f840d58c6",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C48",
+      "claim": "Mean firing was 182 \u00b1 57.6% of the firing rate set point during wake.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean firing was 182 \u00b1 57.6% of the firing rate set point during wake, 61.8 \u00b1 17.6% during NREM sleep, and 84.2 \u00b1 31.8% during REM sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the analysis shown in Figure 3N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "6f2f7612-b222-48a5-92f2-88f20b68b0b2",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C49",
+      "claim": "Mean firing was 61.8 \u00b1 17.6% of the firing rate set point during NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean firing was 182 \u00b1 57.6% of the firing rate set point during wake, 61.8 \u00b1 17.6% during NREM sleep, and 84.2 \u00b1 31.8% during REM sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the analysis shown in Figure 3N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "d409b2d5-cd50-46bf-b62a-d0530bca0912",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C50",
+      "claim": "Mean firing was 84.2 \u00b1 31.8% of the firing rate set point during REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean firing was 182 \u00b1 57.6% of the firing rate set point during wake, 61.8 \u00b1 17.6% during NREM sleep, and 84.2 \u00b1 31.8% during REM sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the analysis shown in Figure 3N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "6c1f975d-2fb5-4119-90fe-3b489432b2e1",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C51",
+      "claim": "REM sleep is typically associated with firing below the set point, and therefore Process S decreases, albeit at a reduced rate compared to NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "REM sleep, in this data, is typically associated with firing below the set point, and therefore Process S decreases, albeit at a reduced rate compared to NREM sleep (Figure 3O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the model results shown in Figure 3O.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "31d504fd-b712-4f18-8e97-c5244c3054b5",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C52",
+      "claim": "The distribution of slow wave coincident ISIs was often (64 out of 75 channels) unambiguously bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the duration of these ISIs was often (64 out of 75 channels) unambiguously bimodal (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "a84e5c5e-4382-4654-b158-bd433d61a37f",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C53",
+      "claim": "Bimodality in ISI distribution could be interpreted as evidence of the existence of two spiking states occurring locally during the more widespread network slow oscillation: high frequency spiking (on period) and extended silence (off period).",
+      "claim_type": "EXPLICIT",
+      "source": "This could be interpreted as evidence of the existence of two spiking states occurring locally during the more widespread network slow oscillation: high frequency spiking (on period) and extended silence (off period).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the bimodal distribution observed in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "50989406-5de6-46c7-8fa3-2ba2af80b30a",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C54",
+      "claim": "Off occupancy is high in NREM sleep and low in both wake and REM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "The total fraction of time each channel spends in off periods was calculated over all epochs of 4 s, and termed the 'off occupancy'. Off occupancy defined in this way is high in NREM sleep and low in both wake and REM sleep (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "5af7ed83-24b5-4647-a821-10d4993eb0f9",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C55",
+      "claim": "The off occupancy measure displays similar temporal dynamics to LFP (and EEG) SWA over both sleep deprivation and spontaneous sleep and wake.",
+      "claim_type": "EXPLICIT",
+      "source": "The off occupancy measure displays similar temporal dynamics to LFP (and EEG) SWA over both sleep deprivation and spontaneous sleep and wake (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the comparison shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "c6fb3e38-c0ba-4267-9641-99110d848c22",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C56",
+      "claim": "The classical state-based model describes off occupancy dynamics with high quality of fit.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate whether the off occupancy measure reflects Process S, we applied the classical state-based model to the time course of off occupancy, exactly as was done with single channel SWA. The classical model was applied with its equations unchanged, and is abbreviated as Cl-Off. Figure 5A shows an example of the resulting Process S time course obtained in this way with a high quality of fit.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model fit shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "5f0176a6-855d-4a32-a143-2b0d50072887",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C57",
+      "claim": "The firing-rate-and-off-occupancy-based model describes off occupancy dynamics with high level of agreement to the classical model.",
+      "claim_type": "EXPLICIT",
+      "source": "This variant of the model is abbreviated as Fr-Off. Figure 5A also includes the fit from this model, demonstrating a high level of agreement between the two models and an accurate fit to the data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the model fit shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "c3b6767e-d53a-4dd0-9a70-c93b535217e9",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C58",
+      "claim": "The model type and animal has a significant effect on the median percent error for off occupancy models.",
+      "claim_type": "EXPLICIT",
+      "source": "As before, the model type and animal has a significant effect (Model: F(1,138) = 8.06, p=5.2\u00d710\u22123; Animal: F(5,138) = 17.2, p=3.2\u00d710\u221213; Model x Animal: F(5,138) = 0.52, p=0.76; two-way ANOVA with unequal groups), and the classic model achieved a slightly lower median percent error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from statistical analysis (two-way ANOVA).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "a5482a22-024d-4c45-85e4-dc5dfa145e24",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C59",
+      "claim": "The classic model achieved a slightly lower median percent error for off occupancy, but this effect was very weak compared with the variation in fit quality between animals and channels.",
+      "claim_type": "EXPLICIT",
+      "source": "As before, the model type and animal has a significant effect (Model: F(1,138) = 8.06, p=5.2\u00d710\u22123; Animal: F(5,138) = 17.2, p=3.2\u00d710\u221213; Model x Animal: F(5,138) = 0.52, p=0.76; two-way ANOVA with unequal groups), and the classic model achieved a slightly lower median percent error. However, this effect was again very weak compared with the variation in fit quality between animals and channels (Model: \u03b72 = 0.034; Animal: \u03b72 = 0.367; Model x Animal: \u03b72 = 0.011; Channel (residuals): \u03b72 = 0.588).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the effect size analysis (\u03b72 values).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "6ca5046d-ac75-44c0-9d90-3698bae81ccf",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C60",
+      "claim": "REM sleep is typically associated with an increase in Process S according to the Fr-Off model.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5D shows the distribution of values for the change in modelled Process S from one simulated time step to the next resulting from the firing-rate-based model (Fr-Off), in wake, NREM and REM sleep, pooling all animals, channels and time. Unlike in the previous firing-rate-based model, REM sleep is now typically associated with an increase in Process S.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the Fr-Off model shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "13efe526-c336-469a-ae10-e1e69965bb3b",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C61",
+      "claim": "The mean over individual Processes S derived from applying activity-dependent models in single channels matches the time course of Process S derived from the EEG with the classical model.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the mean over individual Processes S derived from applying activity-dependent models in single channels matches the time course of Process S derived from the EEG with the classical model. This held for both local SWA (Figure 6A) and off occupancy (Figure 6B) models.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the comparisons shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "53e41634-40f4-4465-a04a-f31a784d048d",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C62",
+      "claim": "Over all animals the global level Process S was typically in between the average of local Processes S derived from the two activity-dependent models.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, over all animals the global level Process S was typically in between the average of local Processes S derived from the two activity-dependent models (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the comparison shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "09495521-0f5f-44e5-af59-adcd4ef249ac",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C63",
+      "claim": "Global Process S calculated at a higher spatial scale might reflect an averaging across a manifold of local Processes S that exist on a finer spatial level.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that global Process S calculated at a higher spatial scale might reflect an averaging across a manifold of local Processes S that exist on a finer spatial level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that global Process S falls between the averages of local Processes S.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "82cba5fb-f7e9-40e7-8ca7-016288267b9d",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C64",
+      "claim": "The day (baseline or sleep deprivation) did have a significant effect on all parameters and error differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analysis (Figure 6\u2014figure supplement 1) suggested that the day, baseline or sleep deprivation, did have a significant effect on all parameters and error differences, suggesting some influence on Process S which is unaccounted for both by global sleep-wake history and cortical activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from statistical analysis shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "ce313ec7-2dde-48b6-991c-77c012891209",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C65",
+      "claim": "The interaction between day and model was not significant in most cases, supporting that the activity-dependent models describe day-dependent variation in Process S generally similarly to the classical sleep-wake state model.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the interaction between day and model was not significant in most cases, supporting that the activity-dependent models describe day-dependent variation in Process S generally similarly to the classical sleep-wake state model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the statistical analysis of day and model effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "df3c770d-4c8f-407e-823b-25775b5ea6ba",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C66",
+      "claim": "Process S dynamics can be derived entirely from multi-unit neuronal spiking activity, without reference to global sleep-wake states.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrated that Process S dynamics can be derived entirely from multi-unit neuronal spiking activity, without reference to global sleep-wake states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "9d94d708-028a-4c9e-a52a-5db5065d88b3",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C67",
+      "claim": "The integrated history of local multi-unit firing rates, relative to a locally-defined firing rate set point, predicted the temporal dynamics of LFP SWA.",
+      "claim_type": "EXPLICIT",
+      "source": "A model was outlined whereby the integrated history of local multi-unit firing rates, relative to a locally-defined firing rate set point, predicted the temporal dynamics of LFP SWA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the modeling approach and its results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "bb01f929-b566-493e-9b68-b7316bb74e92",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C68",
+      "claim": "Process S at the global level reflects sleep-wake history through an integration of local cortical neuronal activity levels over time and also across spatially distributed networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it is concluded that Process S at the global level reflects sleep-wake history through an integration of local cortical neuronal activity levels over time and also across spatially distributed networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "d5949de8-8b70-42d1-b80f-484d64332a69",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C69",
+      "claim": "The energetic cost of spiking is high.",
+      "claim_type": "EXPLICIT",
+      "source": "The energetic cost of spiking is high (Attwell and Laughlin, 2001), the regulation of a neuron's firing rate set point is linked to cellular energetics (Styr et al., 2019; Vergara et al., 2019), and neurons are susceptible to cellular stresses that can result from sustained metabolic load, such as oxidative stress (Wang and Michaelis, 2010; Cobley et al., 2018; Kempf et al., 2019; Cirelli et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Attwell and Laughlin, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "ec61d93b-e04c-4f75-95c1-76a66bed33ab",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C70",
+      "claim": "The regulation of a neuron's firing rate set point is linked to cellular energetics.",
+      "claim_type": "EXPLICIT",
+      "source": "The energetic cost of spiking is high (Attwell and Laughlin, 2001), the regulation of a neuron's firing rate set point is linked to cellular energetics (Styr et al., 2019; Vergara et al., 2019), and neurons are susceptible to cellular stresses that can result from sustained metabolic load, such as oxidative stress (Wang and Michaelis, 2010; Cobley et al., 2018; Kempf et al., 2019; Cirelli et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Styr et al., 2019 and Vergara et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "46910bff-f3a4-4be3-83c2-612f5cb857c1",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C71",
+      "claim": "Neurons are susceptible to cellular stresses that can result from sustained metabolic load, such as oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The energetic cost of spiking is high (Attwell and Laughlin, 2001), the regulation of a neuron's firing rate set point is linked to cellular energetics (Styr et al., 2019; Vergara et al., 2019), and neurons are susceptible to cellular stresses that can result from sustained metabolic load, such as oxidative stress (Wang and Michaelis, 2010; Cobley et al., 2018; Kempf et al., 2019; Cirelli et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "f91e2b08-322e-4153-a918-a08179595ee1",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C72",
+      "claim": "Spiking activity may be mechanistically associated with synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, spiking activity may be mechanistically associated with synaptic plasticity, and it was suggested that firing rates are an important determinant of overall changes in synaptic strength, with higher spiking leading to greater changes (Graupner et al., 2016; Lappalainen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Graupner et al., 2016 and Lappalainen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "f99684ff-2dda-4298-aaa3-8fe72a068b78",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C73",
+      "claim": "Firing rates are an important determinant of overall changes in synaptic strength, with higher spiking leading to greater changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, spiking activity may be mechanistically associated with synaptic plasticity, and it was suggested that firing rates are an important determinant of overall changes in synaptic strength, with higher spiking leading to greater changes (Graupner et al., 2016; Lappalainen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Graupner et al., 2016 and Lappalainen et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "7dba7845-e1bd-47c5-b354-1e3b9e548390",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C74",
+      "claim": "Off periods could provide the opportunity for neurons to prioritise compensatory processes, therefore mediating the restorative benefits of sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensatory processes exist within neurons to oppose cellular stress and related homeostatic challenges (K\u00fcltz, 2005) and off periods could provide the opportunity for neurons to prioritise such processes, therefore mediating the restorative benefits of sleep (Vyazovskiy and Harris, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on citations to K\u00fcltz, 2005 and Vyazovskiy and Harris, 2013.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "005f6d0d-2e2f-4240-be39-9d6d885a30e3",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C75",
+      "claim": "Off periods are associated with distinct synaptic plasticity rules.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, off periods are associated with distinct synaptic plasticity rules (Gonz\u00e1lez-Rueda et al., 2018), and so their prevalence and patterning is likely also related to whatever regulation of synaptic strength occurs during sleep (Tononi and Cirelli, 2014; Timofeev and Chauvette, 2017; Seibt and Frank, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gonz\u00e1lez-Rueda et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "a486859d-7404-47cb-99dc-65f37693a78c",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C76",
+      "claim": "It has been argued that it is ecologically optimal to synchronise off periods and undergo dedicated periods of total behavioural shutdown, because local off periods during waking impair behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been argued previously that it is ecologically optimal to synchronise off periods and undergo dedicated periods of total behavioural shutdown, because local off periods during waking impair behaviour (Vyazovskiy et al., 2011; Rattenborg et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vyazovskiy et al., 2011 and Rattenborg et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "f358909b-bdff-49f5-8c52-00ca3f6f8e0b",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C77",
+      "claim": "The degree of coupling between an individual neuron's firing and the population firing rate is variable between cells but characteristic to an individual neuron and likely reflects total synaptic strength with its neighbours.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been observed that the degree of coupling between an individual neuron's firing and the population firing rate, is variable between cells but characteristic to an individual neuron and likely reflects total synaptic strength with its neighbours (Okun et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Okun et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "8b483065-69f6-4c2b-9084-db413155a0c4",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C78",
+      "claim": "The recent history of neuronal activity levels may regulate the local tendency to generate a signal (reflected in Process S) which is integrated over larger neuronal populations through intrinsic network mechanisms in order to produce a global sleep propensity signal that estimates the total time spent awake with great accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the recent history of neuronal activity levels may regulate the local tendency to generate a signal (reflected in Process S) which is integrated over larger neuronal populations through intrinsic network mechanisms in order to produce a global sleep propensity signal that estimates the total time spent awake with great accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "2ff9d6e7-0ddf-4490-9524-4d5768f0e021",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C79",
+      "claim": "This mechanism would enable the brain to enforce a daily quota of sleep, which could have many benefits at the physiological and ecological level, rather than to initiate sleep in response to the homeostatic need of one specific regulated variable.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism would enable the brain to enforce a daily quota of sleep, which could have many benefits at the physiological and ecological level, rather than to initiate sleep in response to the homeostatic need of one specific regulated variable (Vyazovskiy, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors, supported by citation to Vyazovskiy, 2015.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "67ae2674-5f8d-4a75-9684-317e47dcf4b0",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C80",
+      "claim": "Sleep regulates the population level firing rate distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with recent reports that sleep regulates the population level firing rate distribution (Watson et al., 2016; Levenstein et al., 2017; Miyawaki et al., 2019) and could account for sleep's link with synaptic and firing rate homeostasis, reconciling the local origins of sleep pressure accumulation with the global level of its dissipation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Watson et al., 2016, Levenstein et al., 2017, and Miyawaki et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "58bb9dc9-963e-4c6f-b75e-da9c539dd1cc",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C81",
+      "claim": "A model assuming that Process S increases in proportion to local cortical temperature might also provide a plausible description of Process S dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a model assuming that Process S increases in proportion to local cortical temperature, which, in laboratory rodents, drops by ~2\u00b0C when falling asleep (Franken et al., 1991b; Tobler et al., 1997) and which has been mechanistically implicated in sleep regulation (Hoekstra et al., 2019), might also provide a plausible description of Process S dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical alternative model proposed by the authors, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "bb334f76-3c82-473b-ac60-bc5daf6dd146",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C82",
+      "claim": "In laboratory rodents, local cortical temperature drops by ~2\u00b0C when falling asleep.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a model assuming that Process S increases in proportion to local cortical temperature, which, in laboratory rodents, drops by ~2\u00b0C when falling asleep (Franken et al., 1991b; Tobler et al., 1997) and which has been mechanistically implicated in sleep regulation (Hoekstra et al., 2019), might also provide a plausible description of Process S dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Franken et al., 1991b and Tobler et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "28995a76-1933-4803-80bc-9b5994feb181",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C83",
+      "claim": "Firing rates are a useful measurable correlate of the processes that directly underpin Process S.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results demonstrate that firing rates are a useful measurable correlate of the processes that directly underpin Process S, and therefore firing rate variance resulting from differences in experience and behaviour may well account for the variance in Process S accumulation in normal individuals, between waking periods and between cortical regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "977c2a04-055c-4beb-b0c9-f65918916f09",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C84",
+      "claim": "Firing rate variance resulting from differences in experience and behaviour may well account for the variance in Process S accumulation in normal individuals, between waking periods and between cortical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results demonstrate that firing rates are a useful measurable correlate of the processes that directly underpin Process S, and therefore firing rate variance resulting from differences in experience and behaviour may well account for the variance in Process S accumulation in normal individuals, between waking periods and between cortical regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "8c1f07f4-a8ff-4924-abb6-678a548d1412",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C85",
+      "claim": "The firing-rate-based models typically slightly under-perform, relative to the classic model, in terms of minimising the error between simulation and empirical data.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the firing-rate-based models used here typically slightly under-perform, relative to the classic model, in terms of minimising the error between simulation and empirical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the model comparison results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "48df917f-4af3-4008-a5c1-080f7011c8ec",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C86",
+      "claim": "Local Process S reflects global sleep-wake history more closely than the history of local activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it may be significant that local Process S reflects global sleep-wake history more closely than the history of local activity, supporting the idea of a spatial integration of Process S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "a31c8349-d8c9-4ba9-9d4e-1ac54ca8b35a",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C87",
+      "claim": "A study that locally activated a specific cortical area during sleep with optogenetics did not find an increase in SWA or off periods in subsequent NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study, which locally activated a specific cortical area during sleep with optogenetics, did not find an increase in SWA or off periods in subsequent NREM sleep (Rodriguez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rodriguez et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "1328d77c-37a7-412a-97f9-3375c379146f",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C88",
+      "claim": "The failure of localised manipulation of activity to alter measurable Process S is consistent with the conclusion of spatial integration.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of such a localised manipulation of activity to alter measurable Process S is consistent with our conclusion of spatial integration, which implies that local deviations would indeed tend to be averaged away.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting previous findings to the current study's conclusions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "ad287d43-028e-481d-be21-5f605cff9878",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C89",
+      "claim": "Systemic atropine administered during behavioural wakefulness produces slow wave activity and reduces neuronal activity, yet increases the duration of subsequent NREM sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, another study found that systemic atropine administered during behavioural wakefulness produces slow wave activity and reduces neuronal activity, yet increases the duration of subsequent NREM sleep (Qiu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Qiu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "425cd0e5-ee3a-4c01-bdd1-55aa9333efa1",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C90",
+      "claim": "The magnitude of the deviation of cortical activity from the critical point might reflect the levels of Process S.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the magnitude of the deviation of cortical activity from the critical point might reflect the levels of Process S, as has been previously suggested (Pearlmutter and Houghton, 2009; Meisel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to Pearlmutter and Houghton, 2009 and Meisel et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "51f47896-ca60-4144-af93-9ae6a7728ff5",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C91",
+      "claim": "Waking dynamics may be slightly subcritical, and NREM sleep slightly supercritical.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, since waking dynamics may be slightly subcritical, and NREM sleep slightly supercritical (Priesemann et al., 2013), the deviation from criticality could, in principle, contribute to the dynamics of Process S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Priesemann et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "a52b6634-e0a1-467d-a46a-2e8cd7fddf5d",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C92",
+      "claim": "REM sleep might represent a homeostatically neutral state, in which the level of Process S changes minimally, or not at all.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that REM sleep might represent a homeostatically neutral state, in which the level of Process S changes minimally, or not at all (Vyazovskiy and Delogu, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citation to Vyazovskiy and Delogu, 2014.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "93706705-1ca8-46bc-89c4-ee26aa04822c",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C93",
+      "claim": "The global dynamics of Process S can be derived from a spatiotemporal integration of local neuronal activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show that the global dynamics of Process S can be derived from a spatiotemporal integration of local neuronal activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study based on the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "3a382413-72b8-4fb5-a6b0-5614f426e2c9",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C94",
+      "claim": "A possible functional role for sleep homeostasis is to provide a precise intrinsic time-keeping mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a possible functional role for sleep homeostasis is to provide a precise intrinsic time-keeping mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "6ef7c77c-6f84-47c2-ab3d-5f870a3675c9",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C95",
+      "claim": "Six male adult C57BL/6J mice (4.8\u20135.7 months old, mean 5.2 months) were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic electrophysiological recordings from six male adult (4.8\u20135.7 months old, mean 5.2 months) C57BL/6J mice were analysed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "240a0b4e-dcca-4d1c-a825-b20e908eb481",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C96",
+      "claim": "Recordings were made continuously over 48 h, starting at light onset.",
+      "claim_type": "EXPLICIT",
+      "source": "These recordings were made continuously over 48 h, starting at light onset, while the mice were freely behaving within their cage and exposed to a standard 12 h - 12 h light-dark cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "463eef11-7120-468c-b4ae-76355050163d",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C97",
+      "claim": "A sleep deprivation protocol was enforced for 6 h at light onset of the second day.",
+      "claim_type": "EXPLICIT",
+      "source": "At light onset of the second day a sleep deprivation protocol was enforced for 6 h, involving the presentation of novel objects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "d39fa24a-1c0d-4b78-bdb1-0250102245c9",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C98",
+      "claim": "During the sleep deprivation period of 6 h, mice slept 6.1 \u00b1 2.9 min (mean \u00b1 sd) only.",
+      "claim_type": "EXPLICIT",
+      "source": "During the sleep deprivation period of 6 h, these mice slept 6.1 \u00b1 2.9 min (mean \u00b1 sd) only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the sleep deprivation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "5d389359-0003-4baa-87de-fce4fc190670",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C99",
+      "claim": "A total of 78 out of 96 channels could be analysed (minimum of 10 out of 16 from each mouse).",
+      "claim_type": "EXPLICIT",
+      "source": "For this analysis, over the six mice, a total of 78 out of 96 channels could be analysed (minimum of 10 out of 16 from each mouse).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data quality and inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "c82985ec-2ac1-4c85-9703-5b44be0b17ad",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "claim_id": "C100",
+      "claim": "For the off occupancy models, 75 out of 96 channels were used.",
+      "claim_type": "EXPLICIT",
+      "source": "For the off occupancy models described below, 75 out of 96 channels were used; a further three channels were excluded because multi-unit firing rates, while stable, were too low to yield a reasonable estimate of the occurrence of off periods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data quality and inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7d3bd897-9e86-4d21-86b5-828fbb35289e",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel firing-rate-based model (Fr-SWA) that describes Process S dynamics as a function of local neuronal firing rates relative to a locally-defined set point, independent of global sleep-wake states. This model performed comparably to the classical state-based model in describing LFP SWA dynamics. Averaging locally-derived Process S values yielded parameters resembling those from global EEG measures, suggesting that global Process S reflects spatiotemporal integration of local neuronal activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C38-C44, C66-C68, and C93 collectively demonstrate that the firing-rate-based model accurately describes Process S dynamics with comparable performance to classical models (C38-C41). The spatial integration hypothesis is supported by observations that global parameters fall within the range of local parameters (C42-C44) and that averaged local Process S matches global Process S (C5, C61-C63). Statistical analyses confirm these relationships (C39, C44), and the model successfully captures correlations between firing rates and SWA changes (C34-C37).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "fd2bb543-48eb-4e8f-9c9e-32d345337d98",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The firing rate threshold (set point) in the Fr-SWA model was typically below mean firing during wake (-1.0 \u00b1 0.6 SD), well above mean firing during NREM sleep (1.6 \u00b1 1.1 SD), and slightly above mean firing during REM sleep (0.7 \u00b1 1.1 SD). Mean firing rates were 182% of the set point during wake, 61.8% during NREM sleep, and 84.2% during REM sleep, with REM sleep typically associated with Process S decrease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 provide quantitative characterization of the firing rate set point relative to vigilance states. The z-normalization analysis (C45-C47) and percentage calculations (C48-C50) are internally consistent and demonstrate that the set point appropriately distinguishes between states. All reported distributions were significantly different from expected null values (p < 0.001), supporting the validity of the set point parameter.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors developed 'off occupancy' as a novel local metric for Process S, defined by the coincidence of LFP slow waves and multi-unit spiking silence. Off occupancy showed bimodal ISI distributions (64/75 channels), was high in NREM sleep and low in wake/REM sleep, and displayed similar temporal dynamics to SWA. Both classical (Cl-Off) and firing-rate-based (Fr-Off) models accurately described off occupancy dynamics, with averaged local Process S matching global EEG-derived Process S.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C63 establish off occupancy as a valid local measure of Process S. The bimodal ISI distribution (C52-C53) provides objective evidence for distinct on/off states. The state-dependent differences (C54) and temporal dynamics matching SWA (C55) validate the measure. Both models fit the data well (C56-C59), with effect sizes showing that inter-animal and inter-channel variability exceeded model differences (C59: \u03b7\u00b2 = 0.034 for model vs. 0.367 for animal). The spatial integration finding (C61-C63) is consistent with the SWA-based results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "a8d0eb4f-8df2-4928-9344-325a210aaab7",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cross-validation analysis revealed that experimental day (baseline vs. sleep deprivation) significantly affected model parameters, suggesting influences on Process S beyond sleep-wake history and cortical activity. However, the interaction between day and model type was generally not significant, indicating that activity-dependent models describe day-dependent variation similarly to classical models. The firing-rate-based models slightly underperformed relative to classical models, but local Process S reflected global sleep-wake history more closely than local activity history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 and C85-C86 acknowledge limitations while supporting the overall conclusions. The significant day effect (C64) is appropriately interpreted as unaccounted variance, but the lack of day\u00d7model interaction (C65) supports that both model types capture similar dynamics. The slight underperformance of firing-rate models (C85) is acknowledged, but the observation that local Process S better reflects global history (C86) supports the spatial integration hypothesis. These claims demonstrate appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "d979cdd3-9610-49d8-bce0-ac6117aa9bff",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study analyzed chronic electrophysiological recordings from six male C57BL/6J mice (4.8-5.7 months old) over 48 hours, including a 6-hour sleep deprivation period on day 2. During sleep deprivation, mice slept only 6.1 \u00b1 2.9 minutes. A total of 78/96 channels were analyzed for SWA models and 75/96 for off occupancy models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C100 describe the experimental design and data quality. The sample size (n=6 mice) is modest but typical for chronic electrophysiology studies. The sleep deprivation was effective (6.1 min sleep in 6 hours). The channel exclusion criteria (C99-C100) are reasonable and transparently reported. However, the study is limited to male mice of one strain and age, limiting generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "4af795fa-7841-44c3-8dc3-f18f2ded8289",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The introduction establishes the theoretical framework for sleep homeostasis, including the classical Process S model, the role of SWA as a marker of sleep pressure, circadian influences, and current views emphasizing local and activity-dependent components of sleep regulation. It reviews evidence that neuronal firing rates fluctuate around homeostatic set points and that off periods underpin slow wave dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C30 provide background knowledge supported by appropriate citations to established literature. These claims accurately represent the current understanding of sleep homeostasis, Process S theory, and the relationship between neuronal activity and sleep regulation. The citations are appropriate and the claims are consistent with the referenced work. This background appropriately motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    },
+    {
+      "id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec",
+      "content_id": "9b13504e-d586-4a4e-a984-2874dbaa2a5c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The discussion proposes mechanistic interpretations linking neuronal spiking to sleep homeostasis through energetic costs, synaptic plasticity, and cellular stress. It suggests that sleep homeostasis may function as a time-keeping mechanism to enforce a daily sleep quota rather than regulating specific variables. The authors propose that local Process S signals are integrated spatially through network mechanisms to produce global sleep propensity, and discuss alternative explanations and limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C94 are largely speculative interpretations and hypotheses (C74, C78-C79, C81, C90-C92, C94) supported by citations to relevant literature. While these interpretations are plausible and well-reasoned, they extend beyond what the data directly demonstrate. The mechanistic links between firing rates and sleep pressure (C69-C73) are supported by citations but not tested in this study. The time-keeping hypothesis (C78-C79, C94) is an interesting interpretation but remains speculative. Claims C87-C89 appropriately discuss contradictory findings from other studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:14:11.544262Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "39b0ef5a-3c5d-435a-814e-7d1340929c93",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "612f8ab3-70f6-4656-86cf-df0ad51ee891",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "c655187c-a9b3-4716-8ce4-2d8add4bfa18",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "f4fd1cb9-5f8e-4385-bc41-406c98af35c5",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "d03df5f6-ee70-4aa4-b9b1-3f7254b1c781",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "39a201a1-176a-4534-af96-af6252ae217e",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "9387eaf3-dca9-4e28-a72e-be80470b678e",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "2c49fe23-2a3d-4046-8384-5703314a725f",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "ba826e10-938b-4f6a-8797-f4eca984f7f4",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "e927df6b-f31e-48c6-a267-9c528f7e3c16",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "c1387fa6-2e6b-4e90-abfe-13226b93e2ce",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "54a15c51-194c-4b33-8429-4d87789d92d5",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "9bd08972-6f32-4e0d-a9f3-1dc909e79490",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "a2c61b2a-ce2d-45e6-9d92-d633b0f54a90",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "4ded8b59-62a4-4aac-9b6f-70e472f3b6d7",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "8dfd0114-ea4c-493d-880d-155b9d255577",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "ff29f6bf-18c3-43f8-97a9-8c26efbe58e4",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "ea997648-3061-4ac9-bac7-6a20d01a3efc",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "df3c770d-4c8f-407e-823b-25775b5ea6ba",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "9d94d708-028a-4c9e-a52a-5db5065d88b3",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "bb01f929-b566-493e-9b68-b7316bb74e92",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "93706705-1ca8-46bc-89c4-ee26aa04822c",
+      "result_id": "7d3bd897-9e86-4d21-86b5-828fbb35289e"
+    },
+    {
+      "claim_id": "fc7d725d-d25a-4a03-9e1b-35acb8233260",
+      "result_id": "fd2bb543-48eb-4e8f-9c9e-32d345337d98"
+    },
+    {
+      "claim_id": "30648a6a-cae9-43c1-a2c9-bf9428e9a5d0",
+      "result_id": "fd2bb543-48eb-4e8f-9c9e-32d345337d98"
+    },
+    {
+      "claim_id": "3c83bc04-aad7-4818-b5fc-f92ec3dc2e50",
+      "result_id": "fd2bb543-48eb-4e8f-9c9e-32d345337d98"
+    },
+    {
+      "claim_id": "67ff89e4-a2d6-4fed-833c-b46f840d58c6",
+      "result_id": "fd2bb543-48eb-4e8f-9c9e-32d345337d98"
+    },
+    {
+      "claim_id": "6f2f7612-b222-48a5-92f2-88f20b68b0b2",
+      "result_id": "fd2bb543-48eb-4e8f-9c9e-32d345337d98"
+    },
+    {
+      "claim_id": "d409b2d5-cd50-46bf-b62a-d0530bca0912",
+      "result_id": "fd2bb543-48eb-4e8f-9c9e-32d345337d98"
+    },
+    {
+      "claim_id": "6c1f975d-2fb5-4119-90fe-3b489432b2e1",
+      "result_id": "fd2bb543-48eb-4e8f-9c9e-32d345337d98"
+    },
+    {
+      "claim_id": "31d504fd-b712-4f18-8e97-c5244c3054b5",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "a84e5c5e-4382-4654-b158-bd433d61a37f",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "50989406-5de6-46c7-8fa3-2ba2af80b30a",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "5af7ed83-24b5-4647-a821-10d4993eb0f9",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "c6fb3e38-c0ba-4267-9641-99110d848c22",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "5f0176a6-855d-4a32-a143-2b0d50072887",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "c3b6767e-d53a-4dd0-9a70-c93b535217e9",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "a5482a22-024d-4c45-85e4-dc5dfa145e24",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "6ca5046d-ac75-44c0-9d90-3698bae81ccf",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "13efe526-c336-469a-ae10-e1e69965bb3b",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "53e41634-40f4-4465-a04a-f31a784d048d",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "09495521-0f5f-44e5-af59-adcd4ef249ac",
+      "result_id": "c8a6f70d-6cf1-48db-8b3e-7c94081de6a6"
+    },
+    {
+      "claim_id": "82cba5fb-f7e9-40e7-8ca7-016288267b9d",
+      "result_id": "a8d0eb4f-8df2-4928-9344-325a210aaab7"
+    },
+    {
+      "claim_id": "ce313ec7-2dde-48b6-991c-77c012891209",
+      "result_id": "a8d0eb4f-8df2-4928-9344-325a210aaab7"
+    },
+    {
+      "claim_id": "8c1f07f4-a8ff-4924-abb6-678a548d1412",
+      "result_id": "a8d0eb4f-8df2-4928-9344-325a210aaab7"
+    },
+    {
+      "claim_id": "48df917f-4af3-4008-a5c1-080f7011c8ec",
+      "result_id": "a8d0eb4f-8df2-4928-9344-325a210aaab7"
+    },
+    {
+      "claim_id": "6ef7c77c-6f84-47c2-ab3d-5f870a3675c9",
+      "result_id": "d979cdd3-9610-49d8-bce0-ac6117aa9bff"
+    },
+    {
+      "claim_id": "240a0b4e-dcca-4d1c-a825-b20e908eb481",
+      "result_id": "d979cdd3-9610-49d8-bce0-ac6117aa9bff"
+    },
+    {
+      "claim_id": "463eef11-7120-468c-b4ae-76355050163d",
+      "result_id": "d979cdd3-9610-49d8-bce0-ac6117aa9bff"
+    },
+    {
+      "claim_id": "d39fa24a-1c0d-4b78-bdb1-0250102245c9",
+      "result_id": "d979cdd3-9610-49d8-bce0-ac6117aa9bff"
+    },
+    {
+      "claim_id": "5d389359-0003-4baa-87de-fce4fc190670",
+      "result_id": "d979cdd3-9610-49d8-bce0-ac6117aa9bff"
+    },
+    {
+      "claim_id": "c82985ec-2ac1-4c85-9703-5b44be0b17ad",
+      "result_id": "d979cdd3-9610-49d8-bce0-ac6117aa9bff"
+    },
+    {
+      "claim_id": "da04e31f-5827-4af5-b292-a14a53de7163",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "5f6d483a-9a4e-46ca-b7c1-4f5c4e2d8590",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "cf183882-b1a2-4500-8139-458d3c81b46d",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "f4f87b71-f6eb-4fb8-8065-ccf9c437491e",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "36425290-ad98-4e50-acce-9580deebbc67",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "5d8bf65b-6f4a-4ed6-8fd8-effd2373d7d3",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "6f4d20a2-d4d0-497c-abcc-1308f169cb30",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "84143ff1-997d-4bad-bf15-143378da2bfa",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "fab8546b-cfd0-414f-8b59-01670b4f4b74",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "92f5e289-fcbe-433c-ae90-66c5a4afb25c",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "08c495e9-c16b-425e-91d9-869ddb1ad9e8",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "bf517f4c-693f-4773-8ed4-3b93b3fc6fd8",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "98962249-0333-4306-9f4e-d16cc4570ae8",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "4276f694-9739-4ce6-8c54-79000e16d052",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "d1359bc9-3630-4796-98fc-ccad962ae9ae",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "45a18d8e-5a95-429b-9884-2bafc7f0b164",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "535e79f7-a6f2-4608-80a2-c5473e3785ee",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "64c54cb9-b6a4-4aa8-90c8-01d466c0832e",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "225a459b-44bd-45f9-aa14-143d68fc0d26",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "f1280f97-3501-434c-aebd-75decad74e50",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "2410da70-be2f-4dfd-b1f7-4d21acf70c1c",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "8a45b01c-7be4-477c-80f3-b208456b5334",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "e89bbba3-593e-4b91-b71f-7ac03d08240b",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "eca6582e-1b1f-4cbb-a184-c0d6d79cef50",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "1b1d188f-dbca-445d-af46-cf3ceaa3dcb0",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "e4ee418c-5dd5-4838-acf9-0d977456b265",
+      "result_id": "4af795fa-7841-44c3-8dc3-f18f2ded8289"
+    },
+    {
+      "claim_id": "d5949de8-8b70-42d1-b80f-484d64332a69",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "ec61d93b-e04c-4f75-95c1-76a66bed33ab",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "46910bff-f3a4-4be3-83c2-612f5cb857c1",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "f91e2b08-322e-4153-a918-a08179595ee1",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "f99684ff-2dda-4298-aaa3-8fe72a068b78",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "7dba7845-e1bd-47c5-b354-1e3b9e548390",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "005f6d0d-2e2f-4240-be39-9d6d885a30e3",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "a486859d-7404-47cb-99dc-65f37693a78c",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "f358909b-bdff-49f5-8c52-00ca3f6f8e0b",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "8b483065-69f6-4c2b-9084-db413155a0c4",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "2ff9d6e7-0ddf-4490-9524-4d5768f0e021",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "67ae2674-5f8d-4a75-9684-317e47dcf4b0",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "58bb9dc9-963e-4c6f-b75e-da9c539dd1cc",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "bb334f76-3c82-473b-ac60-bc5daf6dd146",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "28995a76-1933-4803-80bc-9b5994feb181",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "977c2a04-055c-4beb-b0c9-f65918916f09",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "a31c8349-d8c9-4ba9-9d4e-1ac54ca8b35a",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "1328d77c-37a7-412a-97f9-3375c379146f",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "ad287d43-028e-481d-be21-5f605cff9878",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "425cd0e5-ee3a-4c01-bdd1-55aa9333efa1",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "51f47896-ca60-4144-af93-9ae6a7728ff5",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "a52b6634-e0a1-467d-a46a-2e8cd7fddf5d",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    },
+    {
+      "claim_id": "3a382413-72b8-4fb5-a6b0-5614f426e2c9",
+      "result_id": "67fedeab-219e-44a0-a4d8-c3e71ae1cfec"
+    }
+  ],
+  "comparisons": []
+}

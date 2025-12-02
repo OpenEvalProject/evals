@@ -1,0 +1,1926 @@
+{
+  "submission": {
+    "id": "575b05c6-bad3-4bf7-9f99-897edded56a1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:27:44.219264Z",
+    "updated_at": "2025-12-02T16:27:44.219264Z"
+  },
+  "content": [
+    {
+      "id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "submission_id": "575b05c6-bad3-4bf7-9f99-897edded56a1",
+      "content_type": "manuscript",
+      "content_text": "# A molecular view on the escape of lipoplexed DNA from the endosome\n\n## Authors\n\n- Bart MH Bruininks<sup>1</sup> ([ORCID: 0000-0001-5136-0864](https://orcid.org/0000-0001-5136-0864))\n- Paulo CT Souza<sup>1</sup>\n- Helgi Ingolfsson<sup>1</sup>\n- Siewert J Marrink<sup>1</sup> ([ORCID: 0000-0001-8423-5277](https://orcid.org/0000-0001-8423-5277)) \u2020\n\n### Affiliations\n\n1. Groningen Biomolecular Sciences and Biotechnology Institute and Zernike Institute for Advanced Materials, University of Groningen Nijenborgh Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe use of non-viral vectors for in vivo gene therapy could drastically increase safety, whilst reducing the cost of preparing the vectors. A promising approach to non-viral vectors makes use of DNA/cationic liposome complexes (lipoplexes) to deliver the genetic material. Here we use coarse-grained molecular dynamics simulations to investigate the molecular mechanism underlying efficient DNA transfer from lipoplexes. Our computational fusion experiments of lipoplexes with endosomal membrane models show two distinct modes of transfection: parallel and perpendicular. In the parallel fusion pathway, DNA aligns with the membrane surface, showing very quick release of genetic material shortly after the initial fusion pore is formed. The perpendicular pathway also leads to transfection, but release is slower. We further show that the composition and size of the lipoplex, as well as the lipid composition of the endosomal membrane, have a significant impact on fusion efficiency in our models.\n\n## Introduction\n\nGene therapy is a promising technique with a wide applicability. The first clinical trials with gene therapy started in the early 90\u2019s, and the first approved therapy being introduced in Europe in 2012 (Cressey, 2012; Blaese et al., 1995; Hanna et al., 2017). Even though the concept of gene therapy has been around for a while, the problem remains to target and enter the right cells, without being toxic to the rest of the organism.\n\nMost higher organisms have evolved quite stringent measures to block uptake of DNA from their surroundings, preventing excessive genetic instability. Naked DNA gets quickly degraded in our body by exonucleases, whereas using viruses as vectors can lead to a strong acquired immune response (Nayak and Herzog, 2010). Therefore, \u2018new\u2019 non-viral based vectors are being developed. Non-viral vectors have two advantages, first, they do not trigger a specific immune response, and second, they are potentially much cheaper than viral vectors. Most non-viral vectors use cationic lipids or polymers for complexation with the negatively charged DNA, concealing the genetic material from degradation. The major downside to many of these non-viral based methods, is that their transfection rates in vivo are rather low (Tros de Ilarduya et al., 2010; Rezaee et al., 2016; Nayerossadat et al., 2012). Moreover, lipoplexes are potentially toxic especially if they are highly positively charged (Huang and Li, 1997).\n\nIn this work we focus on cationic lipid-DNA based vectors, called lipoplexes. Lipoplexes consist of (cationic) lipids whose role is twofold. One, they shield the genetic material from degradation, and two, the lipids support transfection (Kim et al., 2015; Ciani et al., 2004; Felgner et al., 1987). Upon exposure of the vector to cells, the cells incorporate the lipoplex by means of endocytosis, causing the complex to subsequently reside in the early and late endosome, and finally to be degraded in the lysosome. It is therefore important for the genetic material to escape the endosome before it gets degraded (ur Rehman et al., 2013; Rejman et al., 2004; Zuhorn et al., 2007). This escape from the endosome is one of the least understood and inefficient steps in current lipoplex or polymer mediated gene therapy and improving endosomal escape might improve transfection efficiency drastically (Degors et al., 2019).\n\nDue to the microscopic scale and dynamic nature of lipoplex-membrane fusion, it has proven very difficult by experimental means to relate physico-chemical properties of the vector to transfection efficiency. Molecular dynamics (MD) simulations provide an alternative tool to study molecular processes in atomic, or near atomic detail (Marrink et al., 2019). In particular coarse-grained (CG) models such as Martini (Marrink et al., 2007; Uusitalo et al., 2015) have proven popular, trading some of the atomic detail for a computational speedup and enabling direct simulation of membrane fusion (Markvoort and Marrink, 2011; Smirnova et al., 2019; Pannuzzo et al., 2014). Here we use the Martini model to simulate the fusion between nanoscale lipoplexes and endosomal model membranes and vesicles. We are able to resolve the molecular details of the fusion process, including the full release of the lipoplex cargo, short fragments of double-stranded DNA (dsDNA), across the endosomal membrane.\n\n## Results and discussion\n\n### Construction and validation of the lipoplex model\n\nTo investigate the escape of genetic material from a lipoplex inside a model endosome, we first constructed and validated a small lipoplex (~18 nm in diameter, 4 fragments of 24 bp dsDNA; Figure 1\u2014figure supplement 1). Our lipoplex formulation consists of 1,2-dioleoyl-3-trimethylammonium-propane (DOTAP) as the cationic lipid to bind the dsDNA, and 1,2-dioleoyl-sn-glycero-3- phosphoethanolamine (DOPE) as the helper lipid, at a 1:4 DOTAP/DOPE ratio. This complex is known to form the inverted hexagonal phase (HII) in complex with dsDNA at this ratio (Kim et al., 2015; Corsi et al., 2010; Koltover et al., 1998). Starting from a multilamellar initial configuration, with the dsDNA sandwiched in between the lamella, we observe spontaneous formation of the inverted hexagonal phase (Figure 1\u2014figure supplement 1), consistent with the experimental behavior. After removing periodic boundary conditions and coating the aggregate with an additional layer of DOTAP and DOPE, we arrive at our small lipoplex model which proves stable during a 10 \u03bcs simulation (Figure 1I; Figure 1\u2014figure supplements 1 and 2). To validate our model, we compared the dsDNA spacing inside the solvated lipoplex with the available SAXS data from literature. This showed that the liquid crystal lattice of the inverted hexagonal phase in our solvated CG lipoplex was very close to the experimental data (6.0\u00a0\u00b1\u00a00.1 nm compared to 6.1 nm for SAXS) (Corsi et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig1-v2.jpg)\n\n**Figure 1.:** Unadhered lipoplex containing four dsDNAs sits above the endosomal bilayer (I). After initial stalk formation (II), a wide hemifusion diaphragm is formed (III). A pore is formed in one of the channels containing the DNA (IVa, IVb). The angle of the DNA with respect to the average bilayer normal can be either perpendicular or parallel, resulting in subsequently zipper (IVa) or ejection (IVb) like release of the DNA (V). The pathways indicated are based on 25 independent fusion experiments, each 10 \u00b5s long, leading to 34 dsDNA transfection events. The time scales indicated are typical for successful transfection events.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** First the AA geometry and force field of the dsDNA was translated into their CG counterpart (A). Then the dsDNA was stacked on top of a bilayer composed of DOTAP and DOPE in a 1:4 ratio respectively, and the system was solvated (B1/2). This DNA-bilayer complex was stacked in the z and x dimensions (C), and was simulated until a stable HII lipid phase formed (D). The naked complex was placed in a larger simulation box and lipids were added around the lipoplex, to allow for formation of the outer leaflet (E). The lipoplex, initially placed above the bilayer, diffused to the membrane and the fusion stalk was initiated (F). This figure was reproduced from Bonomi and Camilloni (2019).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The radius of gyration for the solvated small lipoplex over time. Over the last 2 \u00b5s of the simulation the radius of gyration increases less than a quarter of an \u00c5ngstrom. We therefore concluded that the lipoplex complexes are close enough to equilibrium to use for transfection experiments. The water contacts (<1.5 nm) with the lipoplex were calculated using the inhouse VMD counting script. The solvation of the lipoplex shows the same trend as the radius of gyration also confirming that the lipoplex is stable and can be used for transfection. Since the hydration and gyration show the same (minor) growth, we think that the observed growth in size of the lipoplex is due to a minor underhydration upon construction of the periodic lipoplex.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Upon solvating the periodic lipoplex an extra layer of coating lipids was added. We used the approximate surface area of the lipoplex and divided it by the APL of the DOTAP:DOPE mixture (1:4; 0.63 nm2). From left to right we have 1/2, 1/1, 2/1 times the calculated amount. It is clear that underestimating the amount of coating lipids leads to loss of core lipids resulting in the loss of the internal structure and internalized dsDNA (left image). Oversaturating the core with coating lipids results in internalization of coating lipids, resulting in a new channel within the crystal lattice (right image). The expected amount results in no loss of internal structure of dsDNA, and no extra channels are formed (central image). Each condition was simulated for 10 \u00b5s after adding the coating.\n\nFor the endosome we made a crude symmetrical membrane model containing a mixture of PC and PS lipids at a 4:1 ratio. Clearly, real endosomal membranes are much more complex concerning lipid composition (van Meer et al., 2008). However, to a large extent, the exact composition is unknown (especially concerning asymmetry) and varies between endosomal stage and cell type. Given the large complexity of the simulated systems, we decided to keep the endosomal membrane composition as simple as possible, with PC as main phospholipid. PS was added as it was hypothesized before that anionic lipids could play an important role in the transfection mechanism (Tarahovsky et al., 2004). Both PC and PS lipids had a mixture of diC14:0 (dimyristoyl), diC14:1,9 c (dimyristoleoyl) and C14:0-C14:1,9 c (myristoyl-myristoleoyl) tails at a 1:1:2 ratio (Figure 2). The relatively short lipid tails were chosen because pore formation for longer tailed lipids have been shown to be too energetically unfavourable for the CG Martini lipids compared to their all-atom counterparts (Cohen and Melikyan, 2004; Bennett and Tieleman, 2011).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig2-v2.jpg)\n\n**Figure 2.:** The membrane compositions for the fusion experiments, and the lipoplex formulations are indicated in molar ratios. All PC/PS heads were combined with all tails, resulting in\u00a0six\u00a0different lipids per membrane composition (first 3). For the lipoplex formulations all PE was linked to DO and all TAP to either DP/DO/DLi (last 3). The nomenclature follows the default Martini lipids abbreviations as described by T.A.\u00a0Wassenaar et al.\u00a0(2015). An example of each tail and headgroup is displayed under the table (the tails are in the order of occurrence in their name). The complete nomenclature can also be found online at: \u2018http://cgmartini.nl/index.php/force-field-parameters/lipids2/350-lipid-details\u2019.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Snapshots of endosome bilayers after 1 \u00b5s of equilibration after being generated by insane. From left to right we show the most, more unsaturated and short lipids bilayer respectively (see Figure 2). In purple the unsaturated carbons are displayed. Teal represents the saturated carbons. Only the most unsaturated bilayer shows phase separation (left, DA).\n\n### Two distinct mechanisms leading to gene transfection\n\nWe first performed completely unbiased fusion experiments by placing the solvated lipoplex in solution above a hydrated bilayer. To monitor fusion we used: (i) lipid mixing, (ii) DNA-water contacts, and (iii) visual inspection. At the 10 \u00b5s time scale using unbiased simulations, we did not obtain sufficient dehydration of the lipoplex membrane interface for fusion to proceed (data not shown). Dehydration of the membrane-membrane interface is a known kinetic barrier for membrane fusion (Leikin et al., 1987), therefore we changed the initial set-up of the fusion experiment and started from a dehydrated state, with one of the corners of the lipoplex pointing toward the endosomal membrane. The dehydrated systems either remained in their dehydrated state, resulting eventually in the formation of a fusion stalk, or the membrane would rehydrate \u2013 from which dehydration was never observed. Since the formation of the fusion stalk has been described at many levels of detail (Knecht and Marrink, 2007; Aeffner, 2012), and is widely accepted as an essential step in any fusion pathway, we decided to start our further transfection experiments from the stalk state (Figure 1II), allowing for a more systematic approach.\n\nWe then performed five replica simulations, each ten microseconds long, starting from the stalk state. In each case, the system evolved to fusion of the lipoplex with the endosomal membrane, with the cargo being delivered across the target membrane (Figure 1; Video 1). The initial stalk rapidly decays (on a time scale of 10\u2013100 ns), expanding radially, leading to a so-called hemifusion diaphragm (HD) state (Kozlovsky et al., 2002) in which the inner lipoplex coat and the external endosomal membrane are in direct contact, exchanging lipids (Figure 1III; Figure 3\u2014figure supplements 1\u20135). Transfection subsequently proceeds via two different pathways, depending on the orientation of dsDNA either parallel or perpendicular with respect to the membrane normal (Figure 1IV; Figure 3\u2014figure supplements 1\u20135). For perpendicular transfection to the bilayer normal, an initial pore is formed at the rim of the hemifusion diaphragm, this causes rapid unzipping of lipids away from one dsDNA fragment. This unzipping results in a pore as large as the dsDNA fragment effectively transfecting the DNA by moving the lipids (Figure 1IVa), indicated by a rapid increase in hydration of the dsDNA (Figure 3\u2014figure supplements 1\u20135). For parallel transfection, a pore is formed at the place where the nearest dsDNA fragment is pointing at the HD. Pore formation is then followed by \u2018ejection\u2019 of this dsDNA fragment, resembling the unloading of a syringe, by moving both the dsDNA and lipids (Figure 1IVb). Visual inspection of the unloading process (Video 1) reveals that the dsDNA moves out of the channel concomitantly to the merging of the surrounding lipids with the endosomal membrane. This suggests that the release of curvature stress of the lipoplex (as the lipoplex channel lipid composition gets mixed with the endosomal lipids, the HII phase becomes destabilized) acts as the driving force pushing the DNA into the cytosol.\n\n![Video 1.](https://cdn.elifesciences.org/articles/52012/elife-52012-video1.mp4.jpg)\n\n**Video 1.:** Fusion of a small lipoplex containing 4 fragments of dsDNA. The headgroups of the lipoplex lipids (DOTAP:1, DOPE:4) are depicted in blue and the bilayer lipids (short lipids Figure 2) are depicted in red. Yellow and pink are used for subsequently the bases and backbone of the dsDNA. No bias was applied during this simulation.\n\nIn both pathways, after transfection of one dsDNA fragment, fusion can continue with another pore formation step to release the next fragment. At this point, either the lipoplex is already fully destabilized and the remaining cargo gets quickly transfected as well, or fusion halts in a prolonged hemifused state and some of the dsDNA remains trapped. In total 16 of the possible 20 dsDNA fragments (four fragments, five replicates) were successfully transfected in this setup. If complete fusion was achieved (Figure 1V), all dsDNA were at the opposing side of the bilayer. No leakage of dsDNA at the endosomal lumen was ever observed. Once transfected, although most of the dsDNA fragments still associated with the membrane (potentially stabilized by some of the cationic lipids from the lipoplex that come along), they were no longer enveloped by lipoplex components. The decomplexation of the dsDNA correlates well with the behaviour of lipoplex fusion in vitro by Rehman et al., where they describe that the DNA after transfection is no longer associated with lipoplex components (ur Rehman et al., 2013).\n\nTo quantify the overall transfection events further, we monitored the relative angle of the dsDNA fragments with respect to the membrane normal (Figure 3\u2014figure supplements 1\u20135). In all cases, the first transfected fragment of dsDNA was either perpendicular to the bilayer normal, or close to the starting orientation (90\u00b0 and 45\u00b0 respectively). Remarkably, in some of the simulations the lipoplex reoriented itself such that the following transfection event(s) took place with the dsDNA in the parallel orientation, that\u00a0is switching between the perpendicular and parallel pathway. This remarkable rearrangement might find its origin in the fact that the lipoplex core is suspended similar to a ball bearing, characterized by a low friction of the DNA/lipid core with respect to the coating layer. The removal of lipoplex material during fusion, which typically takes place on one side of the hemifusion diaphragm, might result in a torque causing the observed reorientation.\n\n### DxTAP unsaturation is mandatory for efficient transfection\n\nHaving established two major fusion pathways leading to successful DNA transfection, next we consider the role of lipid composition in this process. Experimental studies reveal that lipid tail saturation and length, as well as the chemical composition of the headgroup of the lipoplex play an important role (Koynova et al., 2009; Ma et al., 2007; Fletcher et al., 2006). In this paragraph we aim to unravel the molecular influence of lipid tail saturation on lipoplex fusion and transfection efficiency. To this end, we constructed two additional versions of our lipoplex, replacing the mono-unsaturated DOTAP either by its fully saturated counterpart DPTAP (i.e., replacing the oleoyl tails by palmitoyl tails), or by a double unsaturated analogue DLiTAP (linoleoyl tails), whilst maintaining the same 1:4 DxTAP:DOPE ratio and target endosomal membrane composition (Figure 2, short lipids). The fusion experiments were set up in the same manner as before with five repeats per condition, each spanning ten microseconds.\n\nFor the DPTAP based lipoplex we never observed transfection, even though the stalk was maintained. The internal structure of the lipoplex was found to be somewhat unstable, with some of the channels fusing with each other and losing their classical HII hexagonal packing. Nevertheless, no DNA was lost from the complex. The orientation of the dsDNA was mainly parallel with respect to the bilayer, except for short periods of internal reconfiguration upon loss of the hexagonal unit cell (Figure 3\u2014figure supplements 1\u20135). The DLiTAP lipoplex, on the other hand, underwent fusion and showed cargo transfection in four out of five replicate simulations. The total amount of dsDNA fragments translocated amounted to 10 out of 20, somewhat less compared to the DOTAP lipoplex (Figure 3). Similar to DOTAP, both parallel and perpendicular fusion pathways were observed, as quantified by the dsDNA orientation analysis (Figure 3\u2014figure supplements 1\u20135). Based on these results, it appears that unsaturated lipids complexing the dsDNA are required for successful fusion and transfection. This agrees with fusion experiments between bilayers/vesicles, from which it has been suggested that more negatively curved lipids and or lipids with a decreased bending modulus favor formation of the fusion stalk and subsequent hemifusion diaphragm (Markvoort and Marrink, 2011; Teague et al., 2002; Aeffner et al., 2012; Smirnova et al., 2010; Fan et al., 2016). Since the bending modulus tends to decrease with the amount of unsaturations in the tails (Levine et al., 2014; Pan et al., 2015), one could naively anticipate an even further increased fusion efficiency for DLiTAP compared to DOTAP, contrary to our findings. In our understanding, this can be explained by the fact that unsaturation in the lipid tails does not only stabilize the stalk and other fusion intermediates, but also the HII phase itself (i.e. stabilize the lipoplex, preventing the release of cargo).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig3-v2.jpg)\n\n**Figure 3.:** The number of successful transfections and amount of transfected DNA considering different lipid compositions. Each composition had 5 repeats with\u00a0four\u00a0dsDNA fragments each. Therefore the maximum number of transfections is\u00a0five\u00a0and the maximum amount of transfected fragments is 20 per condition. Left of the dotted line are the fusion results for varying lipoplex formulations on a short lipid membrane. For these formulations the lipoplex formulation was 4:1 DOPE/DxTAP. On the right of the dotted line the results for varying endosomal membrane compositions with constant lipoplex formulation (4:1 DOPE/DOTAP) are displayed. The alternative endosomal membrane models are enriched in poly-unsaturated DA or di-unsaturated DLi lipids (Figure 2).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Shown are the observables for the lipoplex-membrane fusion experiments. Each experiment was performed five times (one repeat per column). For each simulation the first 10 \u00b5s were taken into account. The three rows in the figures show subsequently the hydration of the dsDNA with its fusion moments indicated as dotted lines; the lipoplex-membrane lipid mixing; and the angle of each dsDNA with respect to the bilayer. The first three groups of graphs are for varying lipoplex composition and the last two are for varying membrane composition.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Shown are the observables for the lipoplex-membrane fusion experiments. Each experiment was performed five times (one repeat per column). For each simulation the first 10 \u00b5s were taken into account. The three rows in the figures show subsequently the hydration of the dsDNA with its fusion moments indicated as dotted lines; the lipoplex-membrane lipid mixing; and the angle of each dsDNA with respect to the bilayer. The first three groups of graphs are for varying lipoplex composition and the last two are for varying membrane composition.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Shown are the observables for the lipoplex-membrane fusion experiments. Each experiment was performed five times (one repeat per column). For each simulation the first 10 \u00b5s were taken into account. The three rows in the figures show subsequently the hydration of the dsDNA with its fusion moments indicated as dotted lines; the lipoplex-membrane lipid mixing; and the angle of each dsDNA with respect to the bilayer. The first three groups of graphs are for varying lipoplex composition and the last two are for varying membrane composition.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Shown are the observables for the lipoplex-membrane fusion experiments. Each experiment was performed five times (one repeat per column). For each simulation the first 10 \u00b5s were taken into account. The three rows in the figures show subsequently the hydration of the dsDNA with its fusion moments indicated as dotted lines; the lipoplex-membrane lipid mixing; and the angle of each dsDNA with respect to the bilayer. The first three groups of graphs are for varying lipoplex composition and the last two are for varying membrane composition.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Shown are the observables for the lipoplex-membrane fusion experiments. Each experiment was performed five times (one repeat per column). For each simulation the first 10 \u00b5s were taken into account. The three rows in the figures show subsequently the hydration of the dsDNA with its fusion moments indicated as dotted lines; the lipoplex-membrane lipid mixing; and the angle of each dsDNA with respect to the bilayer. The first three groups of graphs are for varying lipoplex composition and the last two are for varying membrane composition.\n\n### Target membrane composition severely affects fusion rate\n\nOur results point to a clear role for the composition of the lipoplex, raising the question whether the target membrane composition has a similar effect. To this end, we investigated the role of lipid composition of the endosomal membrane on the fusion efficiency of our lipoplex models. The precise lipid composition of the endosomal membrane is not known, and varies between cell types and level of maturation. Focusing on the role of lipid tails, we considered two additional endosomal membrane models, including some longer tailed lipids (diC16:0, dipalmitoyl, DP) and lipids with an increasing amount of unsaturation (diC18:2, dilinoleoyl, DLi and diC20:4, diarachidonyl, DA; Figure 2). We selected the most fusogenic lipoplex containing the DOTAP lipids, and performed again five repeats lasting ten microseconds each. Compared to the endosomal membrane model consisting of shorter lipids, described above, the fusion efficiency drops. In case of the endosomal membrane containing DLi lipids, no fusion events were observed at all, and the initial stalk state remained stable. For the endosomal membrane containing DA lipids, successful fusion and translocation of dsDNA was observed, but at a lower efficiency (Figure 3). When transfection occured, the mechanism was similar as described before as judged from the analysis of lipid mixing and dsDNA orientation (Figure 3\u2014figure supplements 1\u20135). A possible explanation for the reduced fusion rates with the alternative endosomal membrane models is the increased stability of the bilayer by the longer lipid tails.\n\n### Larger lipoplexes are more stable\n\nAfter performing the fusion experiments with the small lipoplex (4 \u00d7 24 bp) and membrane, we expanded to a larger lipoplex (12 \u00d7 48 bp) and target membrane to investigate the effect of size on the fusion process (Figure 4 and Figure 4\u2014figure supplement 1). For the membrane conditions we selected the most reactive lipoplex formulation (DOTAP) and membrane composition (short lipids; Figure 2). The large solvated lipoplex was, like the smaller lipoplex, stable over a period of 10 \u03bcs and adopted an HII crystal lattice (Figure 4A). A difference compared to the smaller lipoplex, is that the large lipoplex contained a mixture of open and closed channels, with two of the twelve channels being continuous with the solvent on one end and one of them being open on both ends. The large lipoplex also contained additional channels connecting the HII-channels, somewhat resembling a cubic phase. These connecting channels were large enough for ions, water and lipids to flow through, but the dsDNA remained strictly in the HII packing. We found that these connecting channels can have different origins. Some channels can occur when the equilibration of the HII phase is too short (50 ns); slightly elongating the preparation time removed such channels in the final periodic lipoplex (Figure 4\u2014figure supplement 1C). However, increasing lipoplex hydration (lipids:watersAA 1:12) resulted in stabilization of the connecting channels (Figure 4\u2014figure supplement 1C). In addition, connecting channels in the coated lipoplex appeared to be stable for at least 10 \u00b5s, and the coating process itself introduced new channels. Therefore our data suggest that these channels could be kinetically trapped structures, but also represent thermodynamic equilibrium structures depending on the exact state conditions. This is not unexpected if you consider the phase diagrams of lipid mixtures, which show a rich variety of inverted, cubic, and sponge phases that can interconvert as a function of temperature, hydration and other conditions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig4-v2.jpg)\n\n**Figure 4.:** The large lipoplex (A) showed the same stable HII structure as the small lipoplex with dsDNA inside the aqueous channels. Small additional connecting channels are also present, as indicated. Transfection was performed on top of a large endosomal model bilayer patch (B) and from within a model endosomal vesicle (C). In contrast to the small lipoplex, fusion did not spontaneously occur and had to be initiated using a biasing potential on one of the channels. After release of the biasing potential the dsDNA inside the pulled channel, and all dsDNA connected through connecting channels, transfected (3 DNA fragments transfected in both lamellar and vesicular system upon pulling of the same initial channel).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The solvated large lipoplex contained channels: regular dsDNA/aqueous channels are indicated in peach (A); an open channel is depicted with a magenta circle (B); and aqueous connecting channels are indicated with red arrows (A/B). The water is drawn in ice-blue (A) and the lipid density in grey (B). The connecting channels were mainly perpendicular to the HII channels and positioned at the end point(s) of the dsDNA (A). All HII channels but two were closed on both ends by lipid density. One channel remained open on both sides over a period of 10 \u00b5s, with the dsDNA in the open channel positioned in the lipoplex in the same manner as the dsDNA in the closed channels. Apparently opening a channel is not enough for dsDNA release from the complex. The bottom panel shows, from left to right, the channel connectivity for the large periodic phase under standard, elongated, and extra hydrated conditions (C). The spacing of the HII phase is already finished at 180 ns (the used equilibration time), however, some connective channels still exist, indicated by neighboring channels having the same color. These connections could be closed by equilibrating slightly longer (230 ns in total). To inspect if these channels could be stabilized, we increased the hydration (lipids:watersAA 1:12). This indeed resulted in connective channels being present until the end of the simulation.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52012/elife-52012-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The graph shows the lipoplex-endosome lipid contacts (<1.2 nm) over time. Within 0.5 \u00b5s the lipoplex reorients itself such that its HII-channels are roughly aligned with the membrane normal in the contact region. Components of the lipoplex closer than 4 nm to the endosome are colored blue (a longer cut-off was used to help with perception of orientation), the endosomal lipids are grey and the dsDNA inside the lipoplex is yellow/pink.\n\nFusion was, as for the small complexes, initiated from a preformed stalk with five repeats each spanning ten microseconds. In contrast to the transfection behaviour on small scale, the larger lipoplex did not show any transfection events during this time period. We did observe a reorientation of the lipoplex from an initial parallel state to a state in which the dsDNA is oriented perpendicular to the membrane surface, whilst increasing the contact area (Figure 4\u2014figure supplement 2). The lack of transfection for large lipoplexes raised the question whether this inhibition was of thermodynamic or kinetic nature. Therefore we performed five extra repeats of 10 \u00b5s, adding another biasing potential after formation of the stable hemifused complex to initiate the release of the first dsDNA fragment (see Materials\u00a0and\u00a0methods). The biasing potential was released after the first fusion event, that\u00a0is opening of the channel. This resulted in transfection of the dsDNA inside the channel which was opened and all the dsDNA fragments in channels which shared a connection with it (Figure 4B). In total, 15 fragments were transfected (3 DNA fragments for each of the five repeats). In general, decomplexation of the dsDNA was much slower compared to the small lipoplex case, and mainly proceeded by the unzipping pathway (Figure 1IVa). Thus it appears that cargo delivery can also take place with larger lipoplexes, but that kinetic trapping is more likely to occur in either a surface contact or hemifused state.\n\nTo explain the difference in reactivity of the large lipoplex with respect to the smaller one, it seems plausible that the curvature of the lipoplex plays an important role in fusion efficiency. The same is observed in case of fusion between small liposomes and membranes (Kawamoto et al., 2015). However, there is a second issue that should be considered, namely the overall stability of the lipoplex. This stability is affected by the geometric discrepancy between the optimal configuration for the lipoplex coating and the inner core. Whereas the optimal configuration of the coating would be a sphere, satisfying minimal curvature constraints, the optimal configuration of the core is an HII phase which does not have uniform curvature on its circumference. From these two requirements it follows that there will be an interfacial tension between the coating and the core, in addition to the interfacial tension of the coating with the surrounding solvent. If we compare the geometry of the small lipoplex to that of the large one there is a clear difference in the outer angles of the core. Considering a 2D projection along the channel axis, the small lipoplex has two 60\u00b0 and two 120\u00b0 angles. The large lipoplex has six 120\u00b0 angles. The bimodal angle distribution of the small lipoplex is further away from the preferred constant curvature of the coating than the larger one, resulting in a higher interfacial tension per lipid. Together, the lipoplex curvature stress and the interfacial tension between the core and coating layer explain the observed trend in reduced fusion efficiency upon increase in lipoplex size.\n\n### Escape from the endosome\n\nFinally, to study lipoplex fusion with endosomal membranes in a more realistic setting, we embedded a large lipoplex inside a small vesicle representing the endosome (Figure 4C). In principle, the curvature present in the endosomal membrane could further modulate the fusion pathway and efficiency. The lipid composition of the vesicular endosome consisted again of the short lipid variant (Figure 2). The vesicle measured 50 nm in diameter and the total system size exceeded 3 million CG beads (representing roughly 30 million atoms). To allow simulation of this large system size, the duration of the production run was reduced to 5 \u00b5s and only a single simulation was performed. As for the large bilayer system, no spontaneous fusion occurred, and a dsDNA fragment was pulled for initiation of transfection. Once the channel opened, dsDNA was transfected, followed by another two fragments that shared the same aqueous space via the connecting channels (Figure 4C). Opposed to the zipper-like fusion observed in the large bilayer experiment, this time fusion occurred in a mixed manner, combining the vertical alignment with the unzipping between neighbouring channels, resulting in a slow release (Videos 2 and 3). Although we can not extract generic behavior from this single experiment, the observed pathway points to a possible role of curvature on the preferred orientation of the lipoplex with respect to the endosomal membrane, with possible consequences for transfection efficiency.\n\n![Video 2.](https://cdn.elifesciences.org/articles/52012/elife-52012-video2.mp4.jpg)\n\n**Video 2.:** Fusion of the large lipoplex from inside the endosomal vesicle. The headgroups of the endosomal and lipoplex lipids are subsequently blue and orange. The endosomal lipids have dark grey tails and the lipoplex lipids have light grey tails. Yellow and pink are used for subsequently the bases and backbone of the dsDNA. No bias was applied during this simulation, though opening of the first channel occurred by a biasing potential as described in the methods section.\n\n![Video 3.](https://cdn.elifesciences.org/articles/52012/elife-52012-video3.mp4.jpg)\n\n**Video 3.:** Components of the lipoplex closer than 4 nm to the endosome are colored blue, the endosomal lipids are grey and the dsDNA inside the lipoplex is yellow/pink. Within 1 \u00b5s the lipoplex reorients itself such that its HII-channels are roughly aligned with the membrane normal in the contact region.\n\n### Conclusion\n\nWe were able to successfully simulate the lipoplex mediated transfection of dsDNA over a model endosomal membrane and observed two profoundly different fusion pathways. Release of the dsDNA by rapid unzipping of the HII phase occurs when the dsDNA lies perpendicular to the membrane normal, whilst an ejection-like or slow unzipping release of dsDNA is observed when the dsDNA is oriented parallel to the bilayer normal. Transitions between these states are also possible along the entire fusion pathway. Interestingly, our results for the small lipoplex indicate that transfection of the first dsDNA fragment triggers the release of a substantial amount, if not all, of the remaining genetic material likely caused by further destabilization of the lipoplex once cargo gets released.\n\nConsidering that the lipid composition of the endosomal membrane is not up for control, the differences between the lipoplex formulations appear to be most interesting from a rational design point of view. However, the endosomal bilayer composition varies per species and cell type, therefore understanding lipoplex-endosome interactions are of equal importance. We found that the transfection efficiency is sensitive to minor changes in both lipoplex and endosomal membrane composition, which is in line with experiments (Huang and Li, 1997). The highest amount of transfection was observed for the DOTAP:DOPE lipoplex. No transfection was observed for the DPTAP:DOPE complex, and DLiTAP:DOPE showed intermediate fusogenicity. Interestingly, the same lipid type modifications (e.g., presence of poly-unsaturated tails) can have both stabilizing and destabilizing effects on fusion efficiency, making rational predictions for optimal delivery vehicles difficult. Moreover, our results point to an important role of lipoplex size, with the larger lipoplex being less fusogenic. This we attribute to an increase of lipoplex stability causing slower lipid mixing of the lipoplex and the target membrane. In addition, the size and shape of the lipoplex affect the way the complex orients itself and interacts with the (curved) endosomal membrane. In this study we focused our efforts on exploring the effect of varying lipid tails, keeping many other parameters of the lipoplex constant. Future endeavors could investigate the role of lipid headgroups and charge ratios, which are known to affect transfection (Eastman et al., 1997; Ma et al., 2007). In addition, the DNA/lipid ratio and size of the DNA fragments could play a role. It would be interesting to see to what extent changing such parameters alters the observed fusion pathways and kinetics. To provide further insights into the process, the observed mechanisms need to be cast into a continuum type of description (May and Ben-Shaul, 2004; Hamm and Kozlov, 2000) from which the competing energetic driving forces can be more straightforwardly extracted.\n\nEventually, our in-silico predictions need experimental validation, although resolving fusion pathways at the molecular level remains highly challenging. Time resolved SAXS in combination with single-molecule fluorescence microscopy could be used to probe the relative orientation of the lipoplex and embedded genetic material during the transfection process. Furthermore, leakiness assays could be used to test whether or not endosomal material leaks out concomitantly, for\u00a0example via transient pore formation. Although the lipoplex fusion process described here does not involve such transient pores, we note that the presence of open channels in the lipoplex (Figure 4\u2014figure supplement 1) implies that endosomal material can become transfected along with the dsDNA even if the fusion itself is non-leaky. Besides, leaky fusion pathways have been observed in previous simulation studies between lipid membranes, and appear highly dependent on both lipid compositions and local stress conditions (Markvoort and Marrink, 2011). Therefore, it seems plausible that such transient pores could also form during lipoplex fusion.\n\nTo conclude, we demonstrated that detailed computer simulations of the fusion between a lipoplex and model endosomal membranes is nowadays possible, opening the way for systematic studies using the more advanced lipoplex formulations currently available (Barr\u00e1n-Berd\u00f3n et al., 2014; Al-Dulaymi et al., 2019; Severino et al., 2015; Leite Nascimento et al., 2016). Besides, the observed fusion pathways could be of generic importance for uptake of lipid-complexed nanoparticles into cells following endocytosis.\n\n## Materials and methods\n\n### Building the small periodic lipoplex\n\nWe followed a three step procedure for setting up the lipoplex-membrane fusion experiment. First we constructed the all-atom (AA) structure of the 24 base pairs dsDNA sequence ([CGCGAATTCGCG]2) using the B-DNA sequence to structure builder at the website of IIT Dehli (http://www.scfbio-iitd.res.in/software/drugdesign/bdna.jsp;\u00a0Arnott et al., 1976). We utilized Martinize to coarse-grain (CG) the AA structure to a Martini stiff-dsDNA force field and structure (Figure 1\u2014figure supplement 1A; Uusitalo et al., 2015). To build the periodic inverted hexagonal phase we roughly used the procedure described by Corsi et al. (2010). The CG DNA was placed on top of a bilayer constructed with the bilayer builder insane which contained DOTAP and DOPE at a 1:4 ratio (Figure 1\u2014figure supplements 1B1; Figure 2; Supplementary files 1, 2; Marrink et al., 2007; Wassenaar et al., 2015). This system was duplicated in its x dimension, yielding a single membrane with two dsDNA fragments stacked on top of it with a spacing of 6 nm with respect to each other, using GROMACS gmx editconf (Abraham et al., 2015). The system was hydrated to achieve a hydration of two atomistic waters per lipid and a salinity of 150 mM NaCl. In addition, each system was charge neutralized by exchanging random water beads for the appropriate counterion (Na+/Cl-). To prevent freezing of the water we added 10% anti-freeze particles (Marrink et al., 2007). The bilayer system was stacked on top of itself in the z dimension to obtain system of two bilayers and four dsDNA fragments (Figure 1\u2014figure supplement 1C). The stacked system was energy minimized and equilibrated using GROMACS 5.1.5. For energy minimization we used the steepest descent algorithm and for the equilibration we used the default Martini settings making use of a two fs time step up to the point that numerical stability was achieved (de Jong et al., 2016). The Verlet cut-off scheme was used with a 1.1 cut-off for both the coulombic (reaction-field) and van der Waals interactions. We used v-rescale for the thermostat at 310 K, coupling the DNA, lipids and solvent in separate groups. Pressure coupling was performed using the Berendsen barostat (Berendsen et al., 1984) for anisotropic systems. The production run made use of a 10 fs time step and the pressure coupling was switched to Parrinello-Rahman (Parrinello and Rahman, 1981). Within 50 ns the system changed from a stacked bilayer assembly into a stable inverted hexagonal phase (HII). This general procedure was used for all lipoplex formulations. However, in the presence of a stable lamellar bilayer the pressure coupling was set to semi-isotropic, and in the case of a free particle in solution the pressure coupling was handled isotropically. A detailed description including a step by step tutorial is described in our own chapter in Bonomi and Camilloni (2019).\n\n### Building the small solvated lipoplex\n\nOnce a stable periodic HII phase was obtained, we put the complex in a bigger box to add another layer of lipids around it. The surface of the lipoplex was approximated to be a parallelepiped to simplify geometric calculations. We used a symmetrical bilayer system to calculate the area per lipid (APL) of the DOPE, DOTAP mixture (Supplementary file 2). The approximated area of the lipoplex was divided by the APL of the lipid mixture. The calculated amount of lipids were added in a hollow cube around the naked lipoplex using PACKMOL (Mart\u00ednez et al., 2009). Water and ions were added as before. To test for the accuracy of this method, we also tried half and double the calculated amount and investigated lipoplex stability (Figure 1\u2014figure supplement 3). The system was solvated, energy minimized and equilibrated using the same settings as before except for the pressure coupling which was set to isotropic. The production run spanned 10 \u00b5s. The radius of gyration (gmx gyration) and hydration (in-house VMD based selection counter) of the lipoplex were analyzed over time, to evaluate the equilibrated state (Figure 1\u2014figure supplement 2). This general procedure was used for all lipoplex formulations. The DPTAP and DLiTAP containing lipoplexes were generated from the DOTAP lipoplex by exchanging the DOTAP lipid force field with either DPTAP or DLiTAP plus an extra step of equilibration (5 \u03bcs). The small lipoplex had a diameter of\u00a0~20 nm and the box dimensions were 28.1 28.1 19.8 nm for xyz respectively resulting in a total of 118,718 beads. The periodic boundaries were set to dodecahedron. A detailed description including a step by step tutorial is described in our own chapter in Bonomi and Camilloni (2019).\n\n### Building the large lipoplex\n\nThe same procedure to build the small lipoplexes was used to construct the large lipoplex. However, instead of four dsDNA fragments these lipoplexes contained twelve dsDNAs which had a length of 48 base pairs ([CGCGAATTCGCG]4) each. The final lipoplex had a diameter of\u00a0~30 nm.\n\n### Building the lipoplex-bilayer system (small)\n\nTo investigate the fusion behaviour of lipoplexes with membranes, we built several lipoplexes with varying composition. We prepared a system which has long polyunsaturated tails (DAPC), medium unsaturated tails (DLiPC) and short single unsaturated tails (DYPC) in the bilayer as its unsaturated component (Figure 2). In the case of the short lipid bilayer, all the lipids were shorter. The solvated lipoplex was placed on top of the appropriate bilayer using insane (Wassenaar et al., 2015). The systems were solvated and salinized, energy minimized and equilibrated as before, but the pressure coupling was set to semi-isotropic in the xy and z dimensions (with the membrane normal in z). After the system was equilibrated and the lipoplex adhered to the membrane, a pulling potential was added between\u00a0~10 lipids of the outer leaflet of the lipoplex in the proximity of the bilayer and vice versa. The initial center of geometry distance between the pulling groups was less than 3 nm and the pulling lasted for less than five ns (harmonic biasing force; constant velocity \u22121 m/s). After the initial stalk was formed, the biasing potential was removed. The system was equilibrated and a 10 \u00b5s transfection experiment was performed five times with random starting velocities for each membrane and lipoplex formulation. Again the pressure coupling was set to semi-isotropic. The small lipoplex bilayer box dimensions were 27.5 27.2 31.6 nm in xyz respectively with a total of 193,083 beads. A detailed description including a step by step tutorial is described in our own chapter in Bonomi and Camilloni (2019).\n\n### Building the lipoplex-bilayer system (large)\n\nUsing the optimal performing bilayer and lipoplex from the small lipoplex-bilayer experiments, we set up a system with a large lipoplex (DOPE:DOTAP; 12*48 bp) and the short lipids bilayer (Figure 2). Adhesion and stalk formation was performed identical to the small version of the experiment. However, after stalk formation two flavors of the experiment were conducted. In the first variant the experiment was left untouched after stalk formation for 10 \u03bcs. In the second variant of the experiment, we simulated until a stable fusion intermediate (no transfection) was obtained and then we initiated another pull. However, this time not pulling the tails of lipids in opposing leaflets together, but the heads of the lipids directly above and under the stalk/diaphragm. Thus pulling headgroups of lipids from inside one of the channels in the lipoplex, towards the headgroups of the opposing side of the bilayer. The initial centre of geometry distance between the two pulling groups was\u00a0~5 nm and lasted up to five ns (harmonic biasing force; constant velocity \u22121 m/s). This initiated a fusion pore from which transfection followed. After instantiation of the fusion pore the biasing potential was removed, allowing for unbiased transfection of the following fusion and transfection events. After the biasing potential was released five simulations were started from this point with random initial velocities, each running for 10 \u03bcs. The large lipoplex-bilayer box dimensions were 45.8 45.8 44.5 nm in xyz respectively, with a total of 749,538 beads.\n\n### Building the lipolex-vesicle system (large)\n\nAs for the large lipolex-bilayer system, the best performing lipoplex and bilayer composition in the small experiments were used. The initial state of the vesicle was constructed using an in-house Python three script based on a spherical fibonacci spiral (available on request). The amount of lipids placed on the inside was corrected for the area difference between the inner and outer leaflet, and the APL of DLPC was used to calculate the amount of lipids needed. After placement of the DLPC, the system was solvated and salted using insane and the appropriate lipid force fields we added in the topology file. The same protocol used in Qi et al. (2015),\u00a0and Risselada et al. (2008) to equilibrate a vesicle was used, relaxing the leaflet asymmetry through pores. After equilibration of the inter-leaflet tension (100 ns; production-md-settings with isotropic pressure coupling) the vesicle was dehydrated and desalted. The lipoplex plus its surrounding ions, waters and DNA were placed at the center of the porated vesicle and the system was rehydrated and salted using insane. This system was equilibrated for 800 ns, allowing for the ion content to equilibrate as well, tension release due to leaflet asymmetry occured in a few ns. The biasing potential for the pore was removed, which rapidly caused closing of the pores (<10 ns). The whole complex was then simulated for 1 \u00b5s during which the lipoplex adhered to the inside of the vesicle. From here the stalk was initiated as before for the small and large lipolex bilayer simulations. As for the large lipoplex-bilayer simulations, the experiment was split in two, one being the unbiased simulation of the stalk and possible transfection (1 \u03bcs). The second experiment included another biasing potential to initiate channel-vesicle fusion. The pulling procedures used were exactly the same as for the large lipolex-bilayer systems and after release the unbiased lipoplex-vesicle simulation spanned 5 \u03bcs. The large lipoplex-vesicle box dimensions were 72.8 72.8 72.8 nm in xyz respectively, with a total of 2,994,561 beads.\n\n### Analysis\n\nThe dsDNA spacing in the small solvated lipoplex was calculated using the center of mass (COM) distance between the first neighbours of each dsDNA over the last 2 \u03bcs of the solvated lipoplex (n\u00a0=\u00a05). We made a Python three script to analyze the angle of the dsDNA with respect to the z unit vector (normal to the average bilayer plane), using the COM of the first and last base pairs to construct the dsDNA orientational vector. The script treats the dsDNA termini as equals, therefore no higher angle with the membrane normal than 90\u00b0 can be obtained. The same VMD based counting script used for the calculation of hydration was used to calculate the lipid contacts and dsDNA-water contacts (cutoff 1.2 nm). The dsDNA-water contacts were used for the automated transfection detection script, which reported a transfection event whenever dsDNA hydration rapidly increased (more than 200 CG waters in less than 400 ns). The automated transfection detection was manually checked on five simulations, both with and without fusion, and was always correct. We used all the information above to investigate the angle with respect to transfection, as well as the importance of lipid mixing. VMD 1.9.3 was used to render the images and videos (Humphrey et al., 1996). The Tcl script used in combination with VMD to perform fast selection counting, and the Python script to perform the angle analysis and fusion detection are available in the repository. In general Python three and MDAnalysis were used extensively in the analysis and visualization (Gowers et al., 2016; Michaud-Agrawal et al., 2011).\n",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "2a00efb6-0321-4cfb-bfb7-65b9ee17443c",
+      "submission_id": "575b05c6-bad3-4bf7-9f99-897edded56a1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael M Kozlov, Tel Aviv University Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52012.sa1](https://doi.org/10.7554/eLife.52012.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe work by Marrink's group proposes a molecular mechanism of the endosomal release of genetic material from a non-viral vector. This mechanism is novel and will help design non-viral vectors stimulating gene therapy research. The work, based on the state-of-the-art large-scale molecular dynamics simulations, captures the entire fusion pathway of a non- viral vector with the endosomal membrane up to the point where the genetic material escapes from the endosome. Systematic variation of the lipid composition of both the non-viral vector and the endosomal membrane reveals the molecular factors that play a key role during gene transfection. The work is not only of interest to researchers working in the field of gene delivery but also to those working on nanoparticle uptake in a broader sense including drug delivery. Furthermore, the work is also highly innovative from the modeling perspective, which includes building and validation of the non-viral vectors as well as the large system complexity.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"A molecular perspective on lipoplex mediated genetic outbreak from the endosome\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Olga Boudker as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Nejat Duzgunes (Reviewer #2); Sylvio May (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe work represents an outstanding effort to use Molecular Dynamics to get insight into the mechanisms of DNA delivery to cells. The authors perform coarse-grained MD simulations to study the interaction between a lipoplex and an extended lipid bilayer or a small enveloping vesicle. In computational experiments using a pre-formed stalk structure as the starting state, fusion and subsequent release of short dsDNA segments are observed for certain combinations of lipids in the lipoplex and the interacting membrane. Release events are interpreted in terms of achieving transfection following the endosomal escape of DNA.\n\nHaving an overall positive opinion on the study, the reviewers formulated several concerns about the presentation of the results. The three major requests, which, according to the reviewer comments and my own impression have to be addressed are: (i) the physical mechanisms underlying the observed and described events have to be discussed, (ii) a discussion of predictions, which can be made, based on the computational results, on the behavior of real membranes differing from the modelled ones in composition and physical properties (ii) the title and the introducing sections of the article somewhat overemphasize the generality of the content, which should be downplayed.\n\nEssential revisions:\n\nMost specifically, the reviewers requested to addresses the following issues:\n\n1) The study represents a description of simulation results, which raises questions about the physical mechanisms behind the observed events. Since this is not an experimental but rather a computational study based on modelling the inter- and intra- molecular physical interactions, the physical forces behind the observations should be explicitly discussed. Particularly, the end of paragraph two in subsection \"Two distinct mechanisms leading to gene transfection\" states that DNA fragments are ejected like the unloading of a syringe. Why are they ejected? What causes the DNA to move away from the cationic lipids in the tube? Another example, larger lipoplexes appear to have small additional connecting channels (Figure 3). Why do they appear? Do they represent thermal equilibrium with defects or are these kinetically trapped nonequilibrium structures due to the lipoplex preparation protocol? Do they disappear if the final wrapping layer is supplemented by a few lipids? Yet another example, why is the lipoplex reorienting itself to ensure parallel or perpendicular orientation of the DNA? What is the origin of the torque that acts of the lipoplex?\n\nThe computational results demonstrate that initiating DNA release takes longer for larger lipoplexes. What is the physical reason for this effect? Could it be that the fusion rate is set by the curvature of the lipoplex lipid shell, which is quite high even the large 30-nm lipoplex analyzed in this study? If this is the case, could it be that for realistically large lipoplexes fusion events must be expected to take much longer or not happen at all?\n\n2) In the computational model, the structure of lipoplexes is characterized by three parameters: the amounts of the cationic lipids, the helper lipids, and DNA. The authors calculations have been performed for two particular sets of these values (small and large lipoplexes, both charge compensating), but there are many other choices that may be relevant for real systems (if, for example, the lipoplex is prepared in the presence of excess DNA or excess cationic lipid). The resulting lipoplex may become positively or negatively overcharged in these cases, with possible implications on the fusion pathways. In addition, slightly adjusting the number of lipids at fixed DNA may create frustration and/or tension of the outer wrapping layer, this may also modify the pathway and kinetics of fusion. The discussion of these issues will be beneficial for the impact of the work.\n\n3) Presenting the results of the study in the title as \"perspective on gene therapy\" sounds somewhat too ambitious since the work addresses only one, albeit important, aspect of the pathway toward transfection for one specific type of non-viral vector. In addition, the relation of the expression \"Genetic outbreak from the endosome\" to the content remains unclear.\n\nAlong the same lines, the sentences in the Abstract and throughout the paper concerning the proposed mechanism should be reformulated in a more suggestive rather than confirmative way since the simulated system, obviously, differs in their composition and other details from real intracellular membranes.\n\n4) Finally, several introductory statements need to the formulated in a more accurate way:\n\n\u2013 Lipoplexes can trigger a non-specific immune response; so, this sentence should be changed and a reference should be given.\n\n\u2013 Another major downside of lipoplexes is their potential toxicity, especially if they are highly positively charged.\n\n\u2013 DOTAP is not 1,2-dipalmitic...\n\n\u2013 The van Meer et al. paper shows mostly PC, PE and SM. Moreover, their Figure 3 shows that the lumen-exposed lipids are primarily PC, SM and glycosphingolipids. How will this change the conclusions of the paper?\n\n\u2013 The authors should discuss how their observations relate to the transfection of a much larger DNA molecule.\n",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "63168e8c-7dd8-49c7-90ab-641e788718cd",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C1",
+      "claim": "The first clinical trials with gene therapy started in the early 90's.",
+      "claim_type": "EXPLICIT",
+      "source": "The first clinical trials with gene therapy started in the early 90's, and the first approved therapy being introduced in Europe in 2012 (Cressey, 2012; Blaese et al., 1995; Hanna et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cressey, 2012; Blaese et al., 1995; Hanna et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "66607927-99c2-4b45-bad6-bcc2bfeb86da",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C2",
+      "claim": "The first approved gene therapy was introduced in Europe in 2012.",
+      "claim_type": "EXPLICIT",
+      "source": "The first clinical trials with gene therapy started in the early 90's, and the first approved therapy being introduced in Europe in 2012 (Cressey, 2012; Blaese et al., 1995; Hanna et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cressey, 2012; Blaese et al., 1995; Hanna et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "7e4fa096-e203-4a88-8832-b4b6e770b162",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C3",
+      "claim": "Naked DNA gets quickly degraded in our body by exonucleases.",
+      "claim_type": "EXPLICIT",
+      "source": "Naked DNA gets quickly degraded in our body by exonucleases, whereas using viruses as vectors can lead to a strong acquired immune response (Nayak and Herzog, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Nayak and Herzog, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "0d3f673f-0f36-4b8c-83d9-7bd2876d505f",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C4",
+      "claim": "Using viruses as vectors can lead to a strong acquired immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Naked DNA gets quickly degraded in our body by exonucleases, whereas using viruses as vectors can lead to a strong acquired immune response (Nayak and Herzog, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Nayak and Herzog, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "30a2b073-c4d3-4dfb-a69c-395ec7dd8179",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C5",
+      "claim": "Non-viral vectors do not trigger a specific immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-viral vectors have two advantages, first, they do not trigger a specific immune response, and second, they are potentially much cheaper than viral vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as an advantage of non-viral vectors based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "e0dc9c85-4e08-4dd2-960f-8b3793a8e2e5",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C6",
+      "claim": "Non-viral vectors are potentially much cheaper than viral vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-viral vectors have two advantages, first, they do not trigger a specific immune response, and second, they are potentially much cheaper than viral vectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as an advantage of non-viral vectors based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "29c15710-91ee-41ed-b3fb-ec933aea521a",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C7",
+      "claim": "The transfection rates of non-viral based methods in vivo are rather low.",
+      "claim_type": "EXPLICIT",
+      "source": "The major downside to many of these non-viral based methods, is that their transfection rates in vivo are rather low (Tros de Ilarduya et al., 2010; Rezaee et al., 2016; Nayerossadat et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Tros de Ilarduya et al., 2010; Rezaee et al., 2016; Nayerossadat et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "9b8b389b-8d0d-4e5d-b113-30a2bef2912d",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C8",
+      "claim": "Lipoplexes are potentially toxic especially if they are highly positively charged.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, lipoplexes are potentially toxic especially if they are highly positively charged (Huang and Li, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Huang and Li, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "e1beff06-42b6-4244-97d9-0c300f178c18",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C9",
+      "claim": "Cationic lipids shield genetic material from degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipoplexes consist of (cationic) lipids whose role is twofold. One, they shield the genetic material from degradation, and two, the lipids support transfection (Kim et al., 2015; Ciani et al., 2004; Felgner et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kim et al., 2015; Ciani et al., 2004; Felgner et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "f2c3003e-0058-4533-b929-86c74ae3f084",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C10",
+      "claim": "Cationic lipids support transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipoplexes consist of (cationic) lipids whose role is twofold. One, they shield the genetic material from degradation, and two, the lipids support transfection (Kim et al., 2015; Ciani et al., 2004; Felgner et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kim et al., 2015; Ciani et al., 2004; Felgner et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "bc444b71-aaa0-486a-8926-badc0bff7bc0",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C11",
+      "claim": "Cells incorporate the lipoplex by means of endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon exposure of the vector to cells, the cells incorporate the lipoplex by means of endocytosis, causing the complex to subsequently reside in the early and late endosome, and finally to be degraded in the lysosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge of cellular uptake mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "a35b2fa1-7b6c-48ff-b7cd-2aaf47f84baa",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C12",
+      "claim": "It is important for the genetic material to escape the endosome before it gets degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore important for the genetic material to escape the endosome before it gets degraded (ur Rehman et al., 2013; Rejman et al., 2004; Zuhorn et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to ur Rehman et al., 2013; Rejman et al., 2004; Zuhorn et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "bd4167c8-793d-4289-9f50-3214f3eb1fd0",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C13",
+      "claim": "Escape from the endosome is one of the least understood and inefficient steps in current lipoplex or polymer mediated gene therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "This escape from the endosome is one of the least understood and inefficient steps in current lipoplex or polymer mediated gene therapy and improving endosomal escape might improve transfection efficiency drastically (Degors et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Degors et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "466503bc-dfa1-4823-bd45-6826e730d49d",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C14",
+      "claim": "Improving endosomal escape might improve transfection efficiency drastically.",
+      "claim_type": "EXPLICIT",
+      "source": "This escape from the endosome is one of the least understood and inefficient steps in current lipoplex or polymer mediated gene therapy and improving endosomal escape might improve transfection efficiency drastically (Degors et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Degors et al., 2019 and represents a logical inference from the inefficiency of endosomal escape.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "359d8c7e-b7b8-42dc-ad8b-c62eca835be6",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C15",
+      "claim": "Coarse-grained models such as Martini have proven popular for simulating membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular coarse-grained (CG) models such as Martini (Marrink et al., 2007; Uusitalo et al., 2015) have proven popular, trading some of the atomic detail for a computational speedup and enabling direct simulation of membrane fusion (Markvoort and Marrink, 2011; Smirnova et al., 2019; Pannuzzo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Marrink et al., 2007; Uusitalo et al., 2015; Markvoort and Marrink, 2011; Smirnova et al., 2019; Pannuzzo et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "f84f43d8-442a-4dbe-8ad8-3940e83ba535",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C16",
+      "claim": "The small lipoplex is approximately 18 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the escape of genetic material from a lipoplex inside a model endosome, we first constructed and validated a small lipoplex (~18 nm in diameter, 4 fragments of 24 bp dsDNA; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the construction and measurement of the lipoplex model in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "d3329721-1dad-44d0-aca3-12fe6efbf177",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C17",
+      "claim": "The small lipoplex contains 4 fragments of 24 bp dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the escape of genetic material from a lipoplex inside a model endosome, we first constructed and validated a small lipoplex (~18 nm in diameter, 4 fragments of 24 bp dsDNA; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the construction of the lipoplex model in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "987ca90b-bb51-422f-aaaf-68eabe92891d",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C18",
+      "claim": "The lipoplex formulation consists of DOTAP as the cationic lipid and DOPE as the helper lipid at a 1:4 DOTAP/DOPE ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Our lipoplex formulation consists of 1,2-dioleoyl-3-trimethylammonium-propane (DOTAP) as the cationic lipid to bind the dsDNA, and 1,2-dioleoyl-sn-glycero-3- phosphoethanolamine (DOPE) as the helper lipid, at a 1:4 DOTAP/DOPE ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the composition of the lipoplex model used in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "585784d8-1432-4d17-92d3-c52e15ab7476",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C19",
+      "claim": "The DOTAP/DOPE complex is known to form the inverted hexagonal phase (HII) in complex with dsDNA at a 1:4 ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex is known to form the inverted hexagonal phase (HII) in complex with dsDNA at this ratio (Kim et al., 2015; Corsi et al., 2010; Koltover et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kim et al., 2015; Corsi et al., 2010; Koltover et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "e23916fb-e4a7-403d-b7e5-2caada05174b",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C20",
+      "claim": "Spontaneous formation of the inverted hexagonal phase was observed in the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Starting from a multilamellar initial configuration, with the dsDNA sandwiched in between the lamella, we observe spontaneous formation of the inverted hexagonal phase (Figure 1\u2014figure supplement 1), consistent with the experimental behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from the simulation data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "c455d4b6-7bb2-47aa-a15c-1902275f7217",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C21",
+      "claim": "The small lipoplex model proves stable during a 10 \u03bcs simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing periodic boundary conditions and coating the aggregate with an additional layer of DOTAP and DOPE, we arrive at our small lipoplex model which proves stable during a 10 \u03bcs simulation (Figure 1I; Figure 1\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data showing stability over 10 \u03bcs, as shown in Figure 1I and Figure 1\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "50c4fe93-7dd0-456a-85b9-f29b6c00c088",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C22",
+      "claim": "The liquid crystal lattice of the inverted hexagonal phase in the solvated CG lipoplex was very close to the experimental data (6.0 \u00b1 0.1 nm compared to 6.1 nm for SAXS).",
+      "claim_type": "EXPLICIT",
+      "source": "This showed that the liquid crystal lattice of the inverted hexagonal phase in our solvated CG lipoplex was very close to the experimental data (6.0 \u00b1 0.1 nm compared to 6.1 nm for SAXS) (Corsi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of simulation data with experimental SAXS data from Corsi et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "5f0fb1ab-9f6d-45d3-aa07-f6f2a1677aae",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C23",
+      "claim": "The endosomal membrane model contains a mixture of PC and PS lipids at a 4:1 ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "For the endosome we made a crude symmetrical membrane model containing a mixture of PC and PS lipids at a 4:1 ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the composition of the endosomal membrane model used in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "65fd4450-9579-4ed6-af00-71272f9c232f",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C24",
+      "claim": "Anionic lipids could play an important role in the transfection mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "PS was added as it was hypothesized before that anionic lipids could play an important role in the transfection mechanism (Tarahovsky et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Tarahovsky et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "c3a4d9b0-bf16-4b4f-879b-cc07d0f43304",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C25",
+      "claim": "Both PC and PS lipids had a mixture of diC14:0, diC14:1,9 c and C14:0-C14:1,9 c tails at a 1:1:2 ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Both PC and PS lipids had a mixture of diC14:0 (dimyristoyl), diC14:1,9 c (dimyristoleoyl) and C14:0-C14:1,9 c (myristoyl-myristoleoyl) tails at a 1:1:2 ratio (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the lipid tail composition used in the simulations, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "58410540-933b-472b-98e4-ac489e7e63d2",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C26",
+      "claim": "Relatively short lipid tails were chosen because pore formation for longer tailed lipids have been shown to be too energetically unfavourable for the CG Martini lipids compared to their all-atom counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively short lipid tails were chosen because pore formation for longer tailed lipids have been shown to be too energetically unfavourable for the CG Martini lipids compared to their all-atom counterparts (Cohen and Melikyan, 2004; Bennett and Tieleman, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cohen and Melikyan, 2004; Bennett and Tieleman, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "8f4a7927-fae8-460b-825d-47c44048c3d1",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C27",
+      "claim": "At the 10 \u00b5s time scale using unbiased simulations, sufficient dehydration of the lipoplex membrane interface for fusion to proceed was not obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 10 \u00b5s time scale using unbiased simulations, we did not obtain sufficient dehydration of the lipoplex membrane interface for fusion to proceed (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data from unbiased simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "91e91e54-7f2e-41ad-a18c-5718af4040ad",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C28",
+      "claim": "Dehydration of the membrane-membrane interface is a known kinetic barrier for membrane fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Dehydration of the membrane-membrane interface is a known kinetic barrier for membrane fusion (Leikin et al., 1987), therefore we changed the initial set-up of the fusion experiment and started from a dehydrated state, with one of the corners of the lipoplex pointing toward the endosomal membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Leikin et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "a9b63441-c80c-4dc9-aa20-6360f501db47",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C29",
+      "claim": "The formation of the fusion stalk has been described at many levels of detail and is widely accepted as an essential step in any fusion pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the formation of the fusion stalk has been described at many levels of detail (Knecht and Marrink, 2007; Aeffner, 2012), and is widely accepted as an essential step in any fusion pathway, we decided to start our further transfection experiments from the stalk state (Figure 1II), allowing for a more systematic approach.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Knecht and Marrink, 2007; Aeffner, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "7798f558-046e-444f-ae9b-7131bac3c373",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C30",
+      "claim": "Five replica simulations, each ten microseconds long, starting from the stalk state, resulted in fusion of the lipoplex with the endosomal membrane with cargo delivery across the target membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed five replica simulations, each ten microseconds long, starting from the stalk state. In each case, the system evolved to fusion of the lipoplex with the endosomal membrane, with the cargo being delivered across the target membrane (Figure 1; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data from five replica simulations, as shown in Figure 1 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "41ec4dd4-e466-49c7-aeef-2793272ac67e",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C31",
+      "claim": "The initial stalk rapidly decays (on a time scale of 10\u2013100 ns), expanding radially, leading to a hemifusion diaphragm (HD) state.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial stalk rapidly decays (on a time scale of 10\u2013100 ns), expanding radially, leading to a so-called hemifusion diaphragm (HD) state (Kozlovsky et al., 2002) in which the inner lipoplex coat and the external endosomal membrane are in direct contact, exchanging lipids (Figure 1III; Figure 3\u2014figure supplements 1\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data and supported by citation to Kozlovsky et al., 2002, as shown in Figure 1III and Figure 3\u2014figure supplements 1\u20135.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "c8a99eaf-4e69-4907-b114-63172b55519b",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C32",
+      "claim": "Transfection proceeds via two different pathways, depending on the orientation of dsDNA either parallel or perpendicular with respect to the membrane normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Transfection subsequently proceeds via two different pathways, depending on the orientation of dsDNA either parallel or perpendicular with respect to the membrane normal (Figure 1IV; Figure 3\u2014figure supplements 1\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data showing two distinct pathways, as shown in Figure 1IV and Figure 3\u2014figure supplements 1\u20135.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "506522b6-0720-4445-b7d3-4a6b1e1d88b1",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C33",
+      "claim": "For perpendicular transfection to the bilayer normal, an initial pore is formed at the rim of the hemifusion diaphragm, causing rapid unzipping of lipids away from one dsDNA fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "For perpendicular transfection to the bilayer normal, an initial pore is formed at the rim of the hemifusion diaphragm, this causes rapid unzipping of lipids away from one dsDNA fragment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "d196103f-cb3c-46b7-81a9-c79a30fe37ab",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C34",
+      "claim": "For parallel transfection, a pore is formed at the place where the nearest dsDNA fragment is pointing at the HD, followed by 'ejection' of this dsDNA fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "For parallel transfection, a pore is formed at the place where the nearest dsDNA fragment is pointing at the HD. Pore formation is then followed by 'ejection' of this dsDNA fragment, resembling the unloading of a syringe, by moving both the dsDNA and lipids (Figure 1IVb).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from simulation data, as shown in Figure 1IVb.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "0a834ad6-250e-4846-93c2-d4d16cb67913",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C35",
+      "claim": "The release of curvature stress of the lipoplex acts as the driving force pushing the DNA into the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the release of curvature stress of the lipoplex (as the lipoplex channel lipid composition gets mixed with the endosomal lipids, the HII phase becomes destabilized) acts as the driving force pushing the DNA into the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on visual inspection of the unloading process in the simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "5ad2351f-973d-40f9-9f06-a934397f5e31",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C36",
+      "claim": "In total 16 of the possible 20 dsDNA fragments (four fragments, five replicates) were successfully transfected in the small lipoplex setup.",
+      "claim_type": "EXPLICIT",
+      "source": "In total 16 of the possible 20 dsDNA fragments (four fragments, five replicates) were successfully transfected in this setup.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative analysis of simulation data from five replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "8c33ac3d-0b57-47fb-aa7f-2c1c61bd4a18",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C37",
+      "claim": "No leakage of dsDNA at the endosomal lumen was ever observed.",
+      "claim_type": "EXPLICIT",
+      "source": "No leakage of dsDNA at the endosomal lumen was ever observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from all simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "681c1adb-412b-462a-86cb-6f2fa186e70f",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C38",
+      "claim": "Once transfected, most of the dsDNA fragments still associated with the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Once transfected, although most of the dsDNA fragments still associated with the membrane (potentially stabilized by some of the cationic lipids from the lipoplex that come along), they were no longer enveloped by lipoplex components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "e93bbc22-c5b0-40ab-b7d3-31781ddf4499",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C39",
+      "claim": "The decomplexation of the dsDNA correlates well with the behaviour of lipoplex fusion in vitro by Rehman et al., where they describe that the DNA after transfection is no longer associated with lipoplex components.",
+      "claim_type": "EXPLICIT",
+      "source": "The decomplexation of the dsDNA correlates well with the behaviour of lipoplex fusion in vitro by Rehman et al., where they describe that the DNA after transfection is no longer associated with lipoplex components (ur Rehman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares simulation results with experimental data from ur Rehman et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "4d5e1c6d-c916-47d7-a3d2-0667b82455c1",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C40",
+      "claim": "In all cases, the first transfected fragment of dsDNA was either perpendicular to the bilayer normal, or close to the starting orientation (90\u00b0 and 45\u00b0 respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the first transfected fragment of dsDNA was either perpendicular to the bilayer normal, or close to the starting orientation (90\u00b0 and 45\u00b0 respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative analysis of dsDNA orientation from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "c7a0e821-122e-4ab0-b33b-bf3a79c7567b",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C41",
+      "claim": "In some of the simulations the lipoplex reoriented itself such that the following transfection event(s) took place with the dsDNA in the parallel orientation, switching between the perpendicular and parallel pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in some of the simulations the lipoplex reoriented itself such that the following transfection event(s) took place with the dsDNA in the parallel orientation, that is switching between the perpendicular and parallel pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "efd279de-7eb6-4d44-94e5-5236711cefda",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C42",
+      "claim": "The lipoplex core is suspended similar to a ball bearing, characterized by a low friction of the DNA/lipid core with respect to the coating layer.",
+      "claim_type": "EXPLICIT",
+      "source": "This remarkable rearrangement might find its origin in the fact that the lipoplex core is suspended similar to a ball bearing, characterized by a low friction of the DNA/lipid core with respect to the coating layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the observed reorientation behavior in the simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "3682dfa0-3462-4a40-9c39-8065c669a960",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C43",
+      "claim": "Lipid tail saturation and length, as well as the chemical composition of the headgroup of the lipoplex play an important role in transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental studies reveal that lipid tail saturation and length, as well as the chemical composition of the headgroup of the lipoplex play an important role (Koynova et al., 2009; Ma et al., 2007; Fletcher et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Koynova et al., 2009; Ma et al., 2007; Fletcher et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "472b061c-f853-428e-b145-cbd85ae9beb7",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C44",
+      "claim": "For the DPTAP based lipoplex, no transfection was observed, even though the stalk was maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "For the DPTAP based lipoplex we never observed transfection, even though the stalk was maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data from five replicates with DPTAP lipoplex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "2b346c2c-15ed-4bf3-9d30-82864c6cb19f",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C45",
+      "claim": "The internal structure of the DPTAP lipoplex was found to be somewhat unstable, with some of the channels fusing with each other and losing their classical HII hexagonal packing.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal structure of the lipoplex was found to be somewhat unstable, with some of the channels fusing with each other and losing their classical HII hexagonal packing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from simulation data of DPTAP lipoplex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "171e0497-cf65-4b26-ae39-55ed9d03e18e",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C46",
+      "claim": "The DLiTAP lipoplex underwent fusion and showed cargo transfection in four out of five replicate simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The DLiTAP lipoplex, on the other hand, underwent fusion and showed cargo transfection in four out of five replicate simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data from five replicates with DLiTAP lipoplex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "54f84dd8-7b38-496d-bcb5-00d4035aa44a",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C47",
+      "claim": "The total amount of dsDNA fragments translocated with DLiTAP lipoplex amounted to 10 out of 20, somewhat less compared to the DOTAP lipoplex.",
+      "claim_type": "EXPLICIT",
+      "source": "The total amount of dsDNA fragments translocated amounted to 10 out of 20, somewhat less compared to the DOTAP lipoplex (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on quantitative analysis of simulation data, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "7f3bf1f2-7bf3-4c01-9bc4-a5dd5f3d6e49",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C48",
+      "claim": "Unsaturated lipids complexing the dsDNA are required for successful fusion and transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, it appears that unsaturated lipids complexing the dsDNA are required for successful fusion and transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on comparison of simulation results across different lipoplex formulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "3cb217c3-1930-44a4-8dd2-6f0eaf5f23dd",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C49",
+      "claim": "More negatively curved lipids and/or lipids with a decreased bending modulus favor formation of the fusion stalk and subsequent hemifusion diaphragm.",
+      "claim_type": "EXPLICIT",
+      "source": "This agrees with fusion experiments between bilayers/vesicles, from which it has been suggested that more negatively curved lipids and or lipids with a decreased bending modulus favor formation of the fusion stalk and subsequent hemifusion diaphragm (Markvoort and Marrink, 2011; Teague et al., 2002; Aeffner et al., 2012; Smirnova et al., 2010; Fan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Markvoort and Marrink, 2011; Teague et al., 2002; Aeffner et al., 2012; Smirnova et al., 2010; Fan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "ab06d326-84cd-4938-9042-87d94c97c965",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C50",
+      "claim": "The bending modulus tends to decrease with the amount of unsaturations in the tails.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the bending modulus tends to decrease with the amount of unsaturations in the tails (Levine et al., 2014; Pan et al., 2015), one could naively anticipate an even further increased fusion efficiency for DLiTAP compared to DOTAP, contrary to our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Levine et al., 2014; Pan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "e1878926-a0e4-466f-b903-2f0bf296ba13",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C51",
+      "claim": "Unsaturation in the lipid tails stabilizes both the stalk and other fusion intermediates, as well as the HII phase itself.",
+      "claim_type": "EXPLICIT",
+      "source": "In our understanding, this can be explained by the fact that unsaturation in the lipid tails does not only stabilize the stalk and other fusion intermediates, but also the HII phase itself (i.e. stabilize the lipoplex, preventing the release of cargo).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation results and understanding of lipid behavior.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "0954ee06-c052-4b4a-b22a-9cbc733142a6",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C52",
+      "claim": "The transfection efficiency is sensitive to minor changes in both lipoplex and endosomal membrane composition.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the transfection efficiency is sensitive to minor changes in both lipoplex and endosomal membrane composition, which is in line with experiments (Huang and Li, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data and supported by citation to Huang and Li, 1997.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "402eb003-4e72-43d4-9907-078cfc491be3",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C53",
+      "claim": "The highest amount of transfection was observed for the DOTAP:DOPE lipoplex.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest amount of transfection was observed for the DOTAP:DOPE lipoplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative comparison of simulation data across different lipoplex formulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "0b11b3e4-74fb-403f-a994-5a3a108378b5",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C54",
+      "claim": "No transfection was observed for the DPTAP:DOPE complex.",
+      "claim_type": "EXPLICIT",
+      "source": "No transfection was observed for the DPTAP:DOPE complex, and DLiTAP:DOPE showed intermediate fusogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data from five replicates with DPTAP:DOPE lipoplex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "68ff0025-bbdf-4556-91ef-912e6d3313e4",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C55",
+      "claim": "DLiTAP:DOPE showed intermediate fusogenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "No transfection was observed for the DPTAP:DOPE complex, and DLiTAP:DOPE showed intermediate fusogenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data from five replicates with DLiTAP:DOPE lipoplex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "5fc5561c-35a0-4b86-b89d-8c2af6529209",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C56",
+      "claim": "Compared to the endosomal membrane model consisting of shorter lipids, the fusion efficiency drops with longer tailed lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the endosomal membrane model consisting of shorter lipids, described above, the fusion efficiency drops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of simulation data across different endosomal membrane compositions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "c9eeda90-2126-4db0-8cda-70354cb475af",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C57",
+      "claim": "In case of the endosomal membrane containing DLi lipids, no fusion events were observed at all, and the initial stalk state remained stable.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of the endosomal membrane containing DLi lipids, no fusion events were observed at all, and the initial stalk state remained stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data from five replicates with DLi-containing endosomal membrane.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "aac7b022-feef-4ac7-9f90-ee20d4621967",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C58",
+      "claim": "For the endosomal membrane containing DA lipids, successful fusion and translocation of dsDNA was observed, but at a lower efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "For the endosomal membrane containing DA lipids, successful fusion and translocation of dsDNA was observed, but at a lower efficiency (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data from five replicates with DA-containing endosomal membrane, as shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "5258800a-9ad8-4484-9fbc-bc7555216930",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C59",
+      "claim": "A possible explanation for the reduced fusion rates with the alternative endosomal membrane models is the increased stability of the bilayer by the longer lipid tails.",
+      "claim_type": "EXPLICIT",
+      "source": "A possible explanation for the reduced fusion rates with the alternative endosomal membrane models is the increased stability of the bilayer by the longer lipid tails.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative explanation based on the simulation results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "06316710-c288-430c-a07d-c27f54c8dc06",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C60",
+      "claim": "The large solvated lipoplex was stable over a period of 10 \u03bcs and adopted an HII crystal lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "The large solvated lipoplex was, like the smaller lipoplex, stable over a period of 10 \u03bcs and adopted an HII crystal lattice (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data for the large lipoplex, as shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "158cb3a1-dab5-4d56-b1ef-e2de3c12ca4a",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C61",
+      "claim": "The large lipoplex contained a mixture of open and closed channels, with two of the twelve channels being continuous with the solvent on one end and one of them being open on both ends.",
+      "claim_type": "EXPLICIT",
+      "source": "A difference compared to the smaller lipoplex, is that the large lipoplex contained a mixture of open and closed channels, with two of the twelve channels being continuous with the solvent on one end and one of them being open on both ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from simulation data of the large lipoplex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "046ed24e-a612-4b95-b0b4-09d528e1988f",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C62",
+      "claim": "The large lipoplex contained additional channels connecting the HII-channels, somewhat resembling a cubic phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The large lipoplex also contained additional channels connecting the HII-channels, somewhat resembling a cubic phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from simulation data of the large lipoplex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "dfb040b7-7ae4-427d-ad17-c4116835f15b",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C63",
+      "claim": "The connecting channels were large enough for ions, water and lipids to flow through, but the dsDNA remained strictly in the HII packing.",
+      "claim_type": "EXPLICIT",
+      "source": "These connecting channels were large enough for ions, water and lipids to flow through, but the dsDNA remained strictly in the HII packing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from simulation data of the large lipoplex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "0fbe2740-adfc-4284-ad13-b4390407971b",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C64",
+      "claim": "The large lipoplex did not show any transfection events during the 10 \u00b5s time period.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the transfection behaviour on small scale, the larger lipoplex did not show any transfection events during this time period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data from five replicates with the large lipoplex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "dc7bd6eb-84ce-43ee-a83f-7ca784a33b10",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C65",
+      "claim": "A reorientation of the large lipoplex from an initial parallel state to a state in which the dsDNA is oriented perpendicular to the membrane surface was observed, whilst increasing the contact area.",
+      "claim_type": "EXPLICIT",
+      "source": "We did observe a reorientation of the lipoplex from an initial parallel state to a state in which the dsDNA is oriented perpendicular to the membrane surface, whilst increasing the contact area (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from simulation data, as shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "6f689c1d-e7a0-4232-9964-f68d9014cfc6",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C66",
+      "claim": "Adding a biasing potential after formation of the stable hemifused complex to initiate the release of the first dsDNA fragment resulted in transfection of the dsDNA inside the channel which was opened and all the dsDNA fragments in channels which shared a connection with it.",
+      "claim_type": "EXPLICIT",
+      "source": "The biasing potential was released after the first fusion event, that is opening of the channel. This resulted in transfection of the dsDNA inside the channel which was opened and all the dsDNA fragments in channels which shared a connection with it (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data with biasing potential applied, as shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "097809a7-c579-4e06-9952-d89c91408108",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C67",
+      "claim": "In total, 15 fragments were transfected (3 DNA fragments for each of the five repeats) in the large lipoplex-bilayer system.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 15 fragments were transfected (3 DNA fragments for each of the five repeats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative analysis of simulation data from five replicates with the large lipoplex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "7c7f9766-d07d-42ed-a64e-905e1eb9e000",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C68",
+      "claim": "Decomplexation of the dsDNA was much slower compared to the small lipoplex case, and mainly proceeded by the unzipping pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, decomplexation of the dsDNA was much slower compared to the small lipoplex case, and mainly proceeded by the unzipping pathway (Figure 1IVa).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of simulation data between small and large lipoplex systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "ce21ad13-6861-400c-99a4-b63e264d6882",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C69",
+      "claim": "Cargo delivery can take place with larger lipoplexes, but kinetic trapping is more likely to occur in either a surface contact or hemifused state.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it appears that cargo delivery can also take place with larger lipoplexes, but that kinetic trapping is more likely to occur in either a surface contact or hemifused state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation results for large lipoplexes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "70e75497-0ed1-4a0f-957c-2ac4060a4bfd",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C70",
+      "claim": "The curvature of the lipoplex plays an important role in fusion efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain the difference in reactivity of the large lipoplex with respect to the smaller one, it seems plausible that the curvature of the lipoplex plays an important role in fusion efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on comparison of simulation results between small and large lipoplexes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "cc886805-855a-45fb-a375-cb7ca96c3a6d",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C71",
+      "claim": "The same trend of reduced fusion efficiency with size is observed in case of fusion between small liposomes and membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The same is observed in case of fusion between small liposomes and membranes (Kawamoto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kawamoto et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "108aa05a-2b04-4a15-a129-9b1f161b8bf9",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C72",
+      "claim": "There is an interfacial tension between the coating and the core, in addition to the interfacial tension of the coating with the surrounding solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "From these two requirements it follows that there will be an interfacial tension between the coating and the core, in addition to the interfacial tension of the coating with the surrounding solvent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on geometric considerations of the lipoplex structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "7fdf0d67-7b62-4810-b0fd-a0d3821b25b2",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C73",
+      "claim": "The small lipoplex has two 60\u00b0 and two 120\u00b0 angles in a 2D projection along the channel axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering a 2D projection along the channel axis, the small lipoplex has two 60\u00b0 and two 120\u00b0 angles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on geometric analysis of the lipoplex structure from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "92460f14-269d-4083-a377-d93d33e5cdc4",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C74",
+      "claim": "The large lipoplex has six 120\u00b0 angles in a 2D projection along the channel axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The large lipoplex has six 120\u00b0 angles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on geometric analysis of the lipoplex structure from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "b0f08972-1ad3-43ef-ab14-17313f3eb27f",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C75",
+      "claim": "The bimodal angle distribution of the small lipoplex is further away from the preferred constant curvature of the coating than the larger one, resulting in a higher interfacial tension per lipid.",
+      "claim_type": "EXPLICIT",
+      "source": "The bimodal angle distribution of the small lipoplex is further away from the preferred constant curvature of the coating than the larger one, resulting in a higher interfacial tension per lipid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on geometric analysis of the lipoplex structures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "2da1cdcf-73e8-4269-8315-aa7c87d5bad5",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C76",
+      "claim": "The lipoplex curvature stress and the interfacial tension between the core and coating layer explain the observed trend in reduced fusion efficiency upon increase in lipoplex size.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the lipoplex curvature stress and the interfacial tension between the core and coating layer explain the observed trend in reduced fusion efficiency upon increase in lipoplex size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation results and geometric analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "35be5c13-5a02-4540-8f27-0d28c1df0c94",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C77",
+      "claim": "The vesicle measured 50 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "The vesicle measured 50 nm in diameter and the total system size exceeded 3 million CG beads (representing roughly 30 million atoms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the size of the vesicle model used in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "705f5b9d-8015-4c56-9bbd-7a804eea1926",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C78",
+      "claim": "The total system size of the lipoplex-vesicle system exceeded 3 million CG beads (representing roughly 30 million atoms).",
+      "claim_type": "EXPLICIT",
+      "source": "The vesicle measured 50 nm in diameter and the total system size exceeded 3 million CG beads (representing roughly 30 million atoms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the size of the simulation system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "2c636dc8-ae73-4d46-ab59-54b34006a006",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C79",
+      "claim": "No spontaneous fusion occurred in the large vesicle system, and a dsDNA fragment was pulled for initiation of transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the large bilayer system, no spontaneous fusion occurred, and a dsDNA fragment was pulled for initiation of transfection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation data from the lipoplex-vesicle system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "1b8635f7-eadc-416e-b038-987eb153da7f",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C80",
+      "claim": "Once the channel opened in the vesicle system, dsDNA was transfected, followed by another two fragments that shared the same aqueous space via the connecting channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the channel opened, dsDNA was transfected, followed by another two fragments that shared the same aqueous space via the connecting channels (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation data from the lipoplex-vesicle system, as shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "53c93209-bb7c-472f-be01-190ffb50e154",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C81",
+      "claim": "Fusion in the vesicle system occurred in a mixed manner, combining the vertical alignment with the unzipping between neighbouring channels, resulting in a slow release.",
+      "claim_type": "EXPLICIT",
+      "source": "Opposed to the zipper-like fusion observed in the large bilayer experiment, this time fusion occurred in a mixed manner, combining the vertical alignment with the unzipping between neighbouring channels, resulting in a slow release (Videos 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from simulation data of the lipoplex-vesicle system, as shown in Videos 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "623e5e60-ba02-44a1-afd6-11ed1841a65d",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C82",
+      "claim": "The observed pathway in the vesicle system points to a possible role of curvature on the preferred orientation of the lipoplex with respect to the endosomal membrane, with possible consequences for transfection efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we can not extract generic behavior from this single experiment, the observed pathway points to a possible role of curvature on the preferred orientation of the lipoplex with respect to the endosomal membrane, with possible consequences for transfection efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative inference based on the single vesicle simulation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "50d0e821-b098-4bcf-a379-9fb1d611d75f",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C83",
+      "claim": "Two profoundly different fusion pathways were successfully simulated for lipoplex mediated transfection of dsDNA over a model endosomal membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to successfully simulate the lipoplex mediated transfection of dsDNA over a model endosomal membrane and observed two profoundly different fusion pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the main finding from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "d95dbfa6-6fca-4789-b34f-3cebbda10324",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C84",
+      "claim": "Release of the dsDNA by rapid unzipping of the HII phase occurs when the dsDNA lies perpendicular to the membrane normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of the dsDNA by rapid unzipping of the HII phase occurs when the dsDNA lies perpendicular to the membrane normal, whilst an ejection-like or slow unzipping release of dsDNA is observed when the dsDNA is oriented parallel to the bilayer normal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes observations from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "29529ee8-6bb1-45cd-af36-6a0485131a21",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C85",
+      "claim": "An ejection-like or slow unzipping release of dsDNA is observed when the dsDNA is oriented parallel to the bilayer normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of the dsDNA by rapid unzipping of the HII phase occurs when the dsDNA lies perpendicular to the membrane normal, whilst an ejection-like or slow unzipping release of dsDNA is observed when the dsDNA is oriented parallel to the bilayer normal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes observations from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "b0ea6a39-ee2e-4282-b8fe-54608a6ffac3",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C86",
+      "claim": "Transitions between perpendicular and parallel states are possible along the entire fusion pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Transitions between these states are also possible along the entire fusion pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "9f5fc3f0-9651-4136-bd96-2ac2ade1b5f0",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C87",
+      "claim": "Results for the small lipoplex indicate that transfection of the first dsDNA fragment triggers the release of a substantial amount, if not all, of the remaining genetic material likely caused by further destabilization of the lipoplex once cargo gets released.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our results for the small lipoplex indicate that transfection of the first dsDNA fragment triggers the release of a substantial amount, if not all, of the remaining genetic material likely caused by further destabilization of the lipoplex once cargo gets released.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation data for small lipoplexes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "1ccc0d11-f938-4526-9e7c-08f37b1ea627",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C88",
+      "claim": "The endosomal bilayer composition varies per species and cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the endosomal bilayer composition varies per species and cell type, therefore understanding lipoplex-endosome interactions are of equal importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about biological membranes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "a4dd19b1-a807-41bb-852a-e647f3931f00",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C89",
+      "claim": "The same lipid type modifications (e.g., presence of poly-unsaturated tails) can have both stabilizing and destabilizing effects on fusion efficiency, making rational predictions for optimal delivery vehicles difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the same lipid type modifications (e.g., presence of poly-unsaturated tails) can have both stabilizing and destabilizing effects on fusion efficiency, making rational predictions for optimal delivery vehicles difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation results showing complex effects of lipid modifications.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "7ba4cbae-e7b2-439a-be05-57fe43d0199b",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C90",
+      "claim": "The size and shape of the lipoplex affect the way the complex orients itself and interacts with the (curved) endosomal membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the size and shape of the lipoplex affect the way the complex orients itself and interacts with the (curved) endosomal membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the simulation results comparing different lipoplex sizes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "aa7537ae-fe81-4cef-9976-055329f9f880",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C91",
+      "claim": "The lipoplex fusion process described does not involve transient pores.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the lipoplex fusion process described here does not involve such transient pores, we note that the presence of open channels in the lipoplex (Figure 4\u2014figure supplement 1) implies that endosomal material can become transfected along with the dsDNA even if the fusion itself is non-leaky.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on observations from the simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "defeb593-6213-4af9-8a21-43d8d64c14a7",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C92",
+      "claim": "The presence of open channels in the lipoplex implies that endosomal material can become transfected along with the dsDNA even if the fusion itself is non-leaky.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the lipoplex fusion process described here does not involve such transient pores, we note that the presence of open channels in the lipoplex (Figure 4\u2014figure supplement 1) implies that endosomal material can become transfected along with the dsDNA even if the fusion itself is non-leaky.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is an inference based on the structural features observed in the simulation data, as shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "514d14d1-8402-41ae-b32e-84b024eeea62",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C93",
+      "claim": "Leaky fusion pathways have been observed in previous simulation studies between lipid membranes, and appear highly dependent on both lipid compositions and local stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, leaky fusion pathways have been observed in previous simulation studies between lipid membranes, and appear highly dependent on both lipid compositions and local stress conditions (Markvoort and Marrink, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Markvoort and Marrink, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "cad596bf-a2a2-49cc-ab0a-89bf6ca083c5",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C94",
+      "claim": "It seems plausible that transient pores could also form during lipoplex fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it seems plausible that such transient pores could also form during lipoplex fusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation based on previous simulation studies and the current results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "af8bc27c-fe4b-422d-b788-e0d8845e8fda",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C95",
+      "claim": "The observed fusion pathways could be of generic importance for uptake of lipid-complexed nanoparticles into cells following endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, the observed fusion pathways could be of generic importance for uptake of lipid-complexed nanoparticles into cells following endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about the broader implications of the simulation results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "76c9e3a4-113b-4e0f-99f6-6e1580de28a4",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C96",
+      "claim": "The small lipoplex had a diameter of ~20 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The small lipoplex had a diameter of ~20 nm and the box dimensions were 28.1 28.1 19.8 nm for xyz respectively resulting in a total of 118,718 beads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the size of the small lipoplex model used in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "eb39bce8-3d96-411f-8791-642dc6a439e9",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C97",
+      "claim": "The large lipoplex contained twelve dsDNAs which had a length of 48 base pairs each.",
+      "claim_type": "EXPLICIT",
+      "source": "However, instead of four dsDNA fragments these lipoplexes contained twelve dsDNAs which had a length of 48 base pairs ([CGCGAATTCGCG]4) each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the composition of the large lipoplex model used in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "8965d4b5-2197-461e-8a83-824cf5357b7c",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "claim_id": "C98",
+      "claim": "The final large lipoplex had a diameter of ~30 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The final lipoplex had a diameter of ~30 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the size of the large lipoplex model used in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d7eb75e1-1196-4e55-b5aa-fb483a421b62",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A small lipoplex model (~18 nm diameter) containing 4 fragments of 24 bp dsDNA with DOTAP:DOPE (1:4 ratio) was constructed and validated. The model spontaneously formed the inverted hexagonal (HII) phase, remained stable during 10 \u03bcs simulations, and showed dsDNA spacing (6.0 \u00b1 0.1 nm) consistent with experimental SAXS data (6.1 nm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 collectively demonstrate successful construction and validation of the small lipoplex model. The spontaneous HII phase formation (C20), stability over 10 \u03bcs (C21), and close agreement with experimental SAXS data (C22) provide strong validation. The model construction is well-documented with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "f92f519d-0473-46c2-87fe-baec6baa463a",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An endosomal membrane model was constructed containing PC:PS lipids (4:1 ratio) with mixed tail compositions (diC14:0, diC14:1,9c, C14:0-C14:1,9c at 1:1:2 ratio). Short lipid tails were chosen because longer tails make pore formation too energetically unfavorable in CG Martini models compared to all-atom simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 describe the endosomal membrane model construction with clear rationale. The choice of short lipid tails (C26) is justified by citations addressing known limitations of the CG Martini force field. The simplified composition is acknowledged as a limitation but is reasonable given system complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "0dec54b6-81f6-4da4-a6e6-e439dc6360db",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Starting from a pre-formed stalk state (rather than unbiased simulations), five replica simulations of 10 \u03bcs each all resulted in fusion of the lipoplex with the endosomal membrane and cargo delivery. The stalk rapidly decayed (10-100 ns) to form a hemifusion diaphragm state where lipid mixing occurred.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 establish the simulation protocol and initial fusion events. The decision to start from a stalk state (C29) is justified by prior literature and the kinetic barrier of dehydration (C27-C28). All five replicates showing fusion (C30) provides reproducibility, though the use of biasing to reach the stalk state limits conclusions about spontaneous fusion kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "78cfdf65-3fe8-4771-b5a9-59052f617098",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Two distinct transfection pathways were observed depending on dsDNA orientation: perpendicular orientation led to rapid unzipping of lipids, while parallel orientation resulted in ejection-like release. In total, 16 of 20 dsDNA fragments were successfully transfected with no leakage to the endosomal lumen. The lipoplex could reorient during fusion, switching between pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C42 describe the core mechanistic findings with strong support from simulation data across five replicates. The two pathways are well-characterized (C32-C34), quantified (C36, C40), and validated against experimental observations (C39). The reorientation behavior (C41-C42) is an interesting observation, though the mechanistic explanation (ball-bearing analogy) is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "13611270-f5e8-4b09-abe8-ef18a1ae9d74",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lipid tail saturation critically affects transfection efficiency. DPTAP (saturated) showed no transfection despite maintaining the stalk, while DLiTAP (double unsaturated) showed intermediate efficiency (10/20 fragments vs 16/20 for DOTAP). Unsaturated lipids are required for successful fusion, but excessive unsaturation may overstabilize the HII phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C51 demonstrate systematic investigation of lipid composition effects with five replicates per condition. The results show clear trends (C44, C46-C47, C53-C55) supported by prior literature (C43, C49-C50). The mechanistic interpretation (C48, C51) reconciles the non-monotonic relationship between unsaturation and efficiency, though this remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "72e0c080-3f2b-4633-9916-9f067a5adad1",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Endosomal membrane composition significantly affects transfection efficiency. DOTAP:DOPE showed highest transfection with short lipid membranes. Longer-tailed lipids (DLi, DA) in the endosomal membrane reduced fusion efficiency, with DLi showing no fusion events and DA showing reduced efficiency compared to short lipids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 systematically vary endosomal membrane composition with five replicates per condition. The results show clear composition-dependent effects (C56-C58) consistent with experimental observations (C52). The mechanistic explanation (C59) is plausible but speculative. The findings highlight the importance of both lipoplex and target membrane composition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A large lipoplex (12 \u00d7 48 bp dsDNA, ~30 nm diameter) formed stable HII structure with additional connecting channels between HII channels. Unlike small lipoplexes, spontaneous transfection did not occur within 10 \u03bcs. With biasing to initiate the first fusion event, 15 fragments (3 per replicate) were transfected, proceeding mainly via the slower unzipping pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C69 demonstrate size-dependent effects on fusion with appropriate controls (five replicates). The structural characterization (C60-C63) is detailed, and the lack of spontaneous fusion (C64) contrasts with small lipoplexes. The use of biasing (C66) is clearly disclosed, though it limits conclusions about spontaneous fusion kinetics. The inference about kinetic trapping (C69) is reasonable but requires longer simulations for confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "1cb04625-8c32-4821-9201-a65069d1ca1c",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The reduced fusion efficiency of larger lipoplexes is explained by geometric considerations: the small lipoplex has a bimodal angle distribution (60\u00b0 and 120\u00b0) creating higher interfacial tension per lipid compared to the large lipoplex (uniform 120\u00b0 angles). This curvature stress and interfacial tension between core and coating explain the size-dependent fusion efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C76 provide a geometric rationalization for size effects, but the analysis is largely qualitative and inferential (C72, C75-C76). While the geometric measurements (C73-C74) are clear, the connection to interfacial tension and fusion efficiency lacks quantitative validation. The explanation is plausible and supported by analogy to liposome fusion (C71), but would benefit from direct calculation of interfacial tensions or free energy barriers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "2c544eb4-bc94-432a-9c1b-8a948d861911",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A large lipoplex was simulated inside a 50 nm diameter vesicle (>3 million CG beads). After biased initiation, three connected dsDNA fragments were transfected via a mixed fusion mechanism combining vertical alignment and unzipping. This single experiment suggests membrane curvature may affect lipoplex orientation and transfection efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C82 describe an impressive large-scale simulation, but represent only a single 5 \u03bcs experiment (C82 explicitly acknowledges this limitation). While the observations (C80-C81) are interesting, the lack of replicates and short duration prevent drawing firm conclusions about curvature effects on fusion mechanisms. This is appropriately presented as exploratory work pointing to future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "ccb4bda7-b86c-4322-ad83-492b6bde7875",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Lipoplex-mediated transfection proceeds via two distinct pathways: rapid unzipping when dsDNA is perpendicular to the membrane, and ejection-like/slow unzipping when parallel. Transitions between orientations are possible throughout fusion. For small lipoplexes, transfection of the first fragment triggers release of most or all remaining genetic material.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 summarize the main mechanistic findings supported by extensive simulation data (25 independent 10 \u03bcs simulations totaling 250 \u03bcs). The two pathways are well-characterized across multiple conditions, and the cascade effect (C87) is consistently observed. These represent the core conclusions of the computational study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "2143eb48-585c-4fa2-b32f-eab7a6e1ed00",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Transfection efficiency depends on complex interactions between lipoplex and endosomal membrane compositions. The same lipid modifications can have both stabilizing and destabilizing effects, making rational design difficult. Lipoplex size and shape affect orientation and interaction with curved endosomal membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 synthesize findings across multiple experiments showing non-intuitive composition-structure-function relationships. The complexity (C89) is demonstrated by the non-monotonic effects of unsaturation. Size effects (C90) are shown across small vs. large lipoplexes and planar vs. curved membranes. These conclusions appropriately acknowledge the challenges for rational design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "e8b92372-6bee-4da6-86d0-241daf41e0fb",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The observed lipoplex fusion process does not involve transient pores, but open channels in the lipoplex could allow endosomal material to be co-transfected with dsDNA. Leaky fusion pathways observed in prior simulations suggest transient pores could plausibly form during lipoplex fusion under certain conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94 appropriately distinguish between what was observed (non-leaky fusion, C91) and what is possible based on structural features (C92) and prior work (C93). The speculation about transient pores (C94) is clearly marked as such and appropriately cautious. This represents honest reporting of what was and was not observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "7f677ee8-4482-4276-8803-32435d189d52",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background context establishes that gene therapy clinical trials began in the early 1990s with first approval in Europe in 2012. Non-viral vectors like lipoplexes avoid immune responses and are cheaper than viral vectors, but have low transfection rates. Endosomal escape is a critical bottleneck, and coarse-grained MD simulations enable study of fusion mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide standard background information supported by appropriate citations. These establish the motivation and context for the study. The historical claims (C1-C2) and general knowledge about gene therapy vectors (C3-C14) are well-established. The rationale for using CG simulations (C15) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "058045d1-1ec0-4c00-94d8-01c0929b492e",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The observed fusion pathways could be of generic importance for uptake of lipid-complexed nanoparticles into cells following endocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C95 is speculative about broader implications beyond the specific systems studied. While the mechanisms may indeed be generalizable, this would require additional studies with different nanoparticle systems. This is appropriately presented as a possibility rather than a demonstrated finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    },
+    {
+      "id": "4dc0bc21-7768-40f4-9a41-0d386919edd3",
+      "content_id": "c82ed122-fd35-41e2-8e6c-606373641ff8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methodological details: The small lipoplex had diameter ~20 nm with 118,718 CG beads. The large lipoplex contained twelve 48 bp dsDNA fragments with final diameter ~30 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C98 provide technical specifications of the simulation systems. These are straightforward descriptive claims about model construction that are internally consistent with other reported details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:27:44.219264Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f84f43d8-442a-4dbe-8ad8-3940e83ba535",
+      "result_id": "d7eb75e1-1196-4e55-b5aa-fb483a421b62"
+    },
+    {
+      "claim_id": "d3329721-1dad-44d0-aca3-12fe6efbf177",
+      "result_id": "d7eb75e1-1196-4e55-b5aa-fb483a421b62"
+    },
+    {
+      "claim_id": "987ca90b-bb51-422f-aaaf-68eabe92891d",
+      "result_id": "d7eb75e1-1196-4e55-b5aa-fb483a421b62"
+    },
+    {
+      "claim_id": "585784d8-1432-4d17-92d3-c52e15ab7476",
+      "result_id": "d7eb75e1-1196-4e55-b5aa-fb483a421b62"
+    },
+    {
+      "claim_id": "e23916fb-e4a7-403d-b7e5-2caada05174b",
+      "result_id": "d7eb75e1-1196-4e55-b5aa-fb483a421b62"
+    },
+    {
+      "claim_id": "c455d4b6-7bb2-47aa-a15c-1902275f7217",
+      "result_id": "d7eb75e1-1196-4e55-b5aa-fb483a421b62"
+    },
+    {
+      "claim_id": "50c4fe93-7dd0-456a-85b9-f29b6c00c088",
+      "result_id": "d7eb75e1-1196-4e55-b5aa-fb483a421b62"
+    },
+    {
+      "claim_id": "5f0fb1ab-9f6d-45d3-aa07-f6f2a1677aae",
+      "result_id": "f92f519d-0473-46c2-87fe-baec6baa463a"
+    },
+    {
+      "claim_id": "65fd4450-9579-4ed6-af00-71272f9c232f",
+      "result_id": "f92f519d-0473-46c2-87fe-baec6baa463a"
+    },
+    {
+      "claim_id": "c3a4d9b0-bf16-4b4f-879b-cc07d0f43304",
+      "result_id": "f92f519d-0473-46c2-87fe-baec6baa463a"
+    },
+    {
+      "claim_id": "58410540-933b-472b-98e4-ac489e7e63d2",
+      "result_id": "f92f519d-0473-46c2-87fe-baec6baa463a"
+    },
+    {
+      "claim_id": "8f4a7927-fae8-460b-825d-47c44048c3d1",
+      "result_id": "0dec54b6-81f6-4da4-a6e6-e439dc6360db"
+    },
+    {
+      "claim_id": "91e91e54-7f2e-41ad-a18c-5718af4040ad",
+      "result_id": "0dec54b6-81f6-4da4-a6e6-e439dc6360db"
+    },
+    {
+      "claim_id": "a9b63441-c80c-4dc9-aa20-6360f501db47",
+      "result_id": "0dec54b6-81f6-4da4-a6e6-e439dc6360db"
+    },
+    {
+      "claim_id": "7798f558-046e-444f-ae9b-7131bac3c373",
+      "result_id": "0dec54b6-81f6-4da4-a6e6-e439dc6360db"
+    },
+    {
+      "claim_id": "41ec4dd4-e466-49c7-aeef-2793272ac67e",
+      "result_id": "0dec54b6-81f6-4da4-a6e6-e439dc6360db"
+    },
+    {
+      "claim_id": "c8a99eaf-4e69-4907-b114-63172b55519b",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "506522b6-0720-4445-b7d3-4a6b1e1d88b1",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "d196103f-cb3c-46b7-81a9-c79a30fe37ab",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "0a834ad6-250e-4846-93c2-d4d16cb67913",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "5ad2351f-973d-40f9-9f06-a934397f5e31",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "8c33ac3d-0b57-47fb-aa7f-2c1c61bd4a18",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "681c1adb-412b-462a-86cb-6f2fa186e70f",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "e93bbc22-c5b0-40ab-b7d3-31781ddf4499",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "4d5e1c6d-c916-47d7-a3d2-0667b82455c1",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "c7a0e821-122e-4ab0-b33b-bf3a79c7567b",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "efd279de-7eb6-4d44-94e5-5236711cefda",
+      "result_id": "78cfdf65-3fe8-4771-b5a9-59052f617098"
+    },
+    {
+      "claim_id": "3682dfa0-3462-4a40-9c39-8065c669a960",
+      "result_id": "13611270-f5e8-4b09-abe8-ef18a1ae9d74"
+    },
+    {
+      "claim_id": "472b061c-f853-428e-b145-cbd85ae9beb7",
+      "result_id": "13611270-f5e8-4b09-abe8-ef18a1ae9d74"
+    },
+    {
+      "claim_id": "2b346c2c-15ed-4bf3-9d30-82864c6cb19f",
+      "result_id": "13611270-f5e8-4b09-abe8-ef18a1ae9d74"
+    },
+    {
+      "claim_id": "171e0497-cf65-4b26-ae39-55ed9d03e18e",
+      "result_id": "13611270-f5e8-4b09-abe8-ef18a1ae9d74"
+    },
+    {
+      "claim_id": "54f84dd8-7b38-496d-bcb5-00d4035aa44a",
+      "result_id": "13611270-f5e8-4b09-abe8-ef18a1ae9d74"
+    },
+    {
+      "claim_id": "7f3bf1f2-7bf3-4c01-9bc4-a5dd5f3d6e49",
+      "result_id": "13611270-f5e8-4b09-abe8-ef18a1ae9d74"
+    },
+    {
+      "claim_id": "3cb217c3-1930-44a4-8dd2-6f0eaf5f23dd",
+      "result_id": "13611270-f5e8-4b09-abe8-ef18a1ae9d74"
+    },
+    {
+      "claim_id": "ab06d326-84cd-4938-9042-87d94c97c965",
+      "result_id": "13611270-f5e8-4b09-abe8-ef18a1ae9d74"
+    },
+    {
+      "claim_id": "e1878926-a0e4-466f-b903-2f0bf296ba13",
+      "result_id": "13611270-f5e8-4b09-abe8-ef18a1ae9d74"
+    },
+    {
+      "claim_id": "0954ee06-c052-4b4a-b22a-9cbc733142a6",
+      "result_id": "72e0c080-3f2b-4633-9916-9f067a5adad1"
+    },
+    {
+      "claim_id": "402eb003-4e72-43d4-9907-078cfc491be3",
+      "result_id": "72e0c080-3f2b-4633-9916-9f067a5adad1"
+    },
+    {
+      "claim_id": "0b11b3e4-74fb-403f-a994-5a3a108378b5",
+      "result_id": "72e0c080-3f2b-4633-9916-9f067a5adad1"
+    },
+    {
+      "claim_id": "68ff0025-bbdf-4556-91ef-912e6d3313e4",
+      "result_id": "72e0c080-3f2b-4633-9916-9f067a5adad1"
+    },
+    {
+      "claim_id": "5fc5561c-35a0-4b86-b89d-8c2af6529209",
+      "result_id": "72e0c080-3f2b-4633-9916-9f067a5adad1"
+    },
+    {
+      "claim_id": "c9eeda90-2126-4db0-8cda-70354cb475af",
+      "result_id": "72e0c080-3f2b-4633-9916-9f067a5adad1"
+    },
+    {
+      "claim_id": "aac7b022-feef-4ac7-9f90-ee20d4621967",
+      "result_id": "72e0c080-3f2b-4633-9916-9f067a5adad1"
+    },
+    {
+      "claim_id": "5258800a-9ad8-4484-9fbc-bc7555216930",
+      "result_id": "72e0c080-3f2b-4633-9916-9f067a5adad1"
+    },
+    {
+      "claim_id": "06316710-c288-430c-a07d-c27f54c8dc06",
+      "result_id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba"
+    },
+    {
+      "claim_id": "158cb3a1-dab5-4d56-b1ef-e2de3c12ca4a",
+      "result_id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba"
+    },
+    {
+      "claim_id": "046ed24e-a612-4b95-b0b4-09d528e1988f",
+      "result_id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba"
+    },
+    {
+      "claim_id": "dfb040b7-7ae4-427d-ad17-c4116835f15b",
+      "result_id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba"
+    },
+    {
+      "claim_id": "0fbe2740-adfc-4284-ad13-b4390407971b",
+      "result_id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba"
+    },
+    {
+      "claim_id": "dc7bd6eb-84ce-43ee-a83f-7ca784a33b10",
+      "result_id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba"
+    },
+    {
+      "claim_id": "6f689c1d-e7a0-4232-9964-f68d9014cfc6",
+      "result_id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba"
+    },
+    {
+      "claim_id": "097809a7-c579-4e06-9952-d89c91408108",
+      "result_id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba"
+    },
+    {
+      "claim_id": "7c7f9766-d07d-42ed-a64e-905e1eb9e000",
+      "result_id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba"
+    },
+    {
+      "claim_id": "ce21ad13-6861-400c-99a4-b63e264d6882",
+      "result_id": "4662a9a3-70b6-4ce6-b163-4240550ec5ba"
+    },
+    {
+      "claim_id": "70e75497-0ed1-4a0f-957c-2ac4060a4bfd",
+      "result_id": "1cb04625-8c32-4821-9201-a65069d1ca1c"
+    },
+    {
+      "claim_id": "cc886805-855a-45fb-a375-cb7ca96c3a6d",
+      "result_id": "1cb04625-8c32-4821-9201-a65069d1ca1c"
+    },
+    {
+      "claim_id": "108aa05a-2b04-4a15-a129-9b1f161b8bf9",
+      "result_id": "1cb04625-8c32-4821-9201-a65069d1ca1c"
+    },
+    {
+      "claim_id": "7fdf0d67-7b62-4810-b0fd-a0d3821b25b2",
+      "result_id": "1cb04625-8c32-4821-9201-a65069d1ca1c"
+    },
+    {
+      "claim_id": "92460f14-269d-4083-a377-d93d33e5cdc4",
+      "result_id": "1cb04625-8c32-4821-9201-a65069d1ca1c"
+    },
+    {
+      "claim_id": "b0f08972-1ad3-43ef-ab14-17313f3eb27f",
+      "result_id": "1cb04625-8c32-4821-9201-a65069d1ca1c"
+    },
+    {
+      "claim_id": "2da1cdcf-73e8-4269-8315-aa7c87d5bad5",
+      "result_id": "1cb04625-8c32-4821-9201-a65069d1ca1c"
+    },
+    {
+      "claim_id": "35be5c13-5a02-4540-8f27-0d28c1df0c94",
+      "result_id": "2c544eb4-bc94-432a-9c1b-8a948d861911"
+    },
+    {
+      "claim_id": "705f5b9d-8015-4c56-9bbd-7a804eea1926",
+      "result_id": "2c544eb4-bc94-432a-9c1b-8a948d861911"
+    },
+    {
+      "claim_id": "2c636dc8-ae73-4d46-ab59-54b34006a006",
+      "result_id": "2c544eb4-bc94-432a-9c1b-8a948d861911"
+    },
+    {
+      "claim_id": "1b8635f7-eadc-416e-b038-987eb153da7f",
+      "result_id": "2c544eb4-bc94-432a-9c1b-8a948d861911"
+    },
+    {
+      "claim_id": "53c93209-bb7c-472f-be01-190ffb50e154",
+      "result_id": "2c544eb4-bc94-432a-9c1b-8a948d861911"
+    },
+    {
+      "claim_id": "623e5e60-ba02-44a1-afd6-11ed1841a65d",
+      "result_id": "2c544eb4-bc94-432a-9c1b-8a948d861911"
+    },
+    {
+      "claim_id": "50d0e821-b098-4bcf-a379-9fb1d611d75f",
+      "result_id": "ccb4bda7-b86c-4322-ad83-492b6bde7875"
+    },
+    {
+      "claim_id": "d95dbfa6-6fca-4789-b34f-3cebbda10324",
+      "result_id": "ccb4bda7-b86c-4322-ad83-492b6bde7875"
+    },
+    {
+      "claim_id": "29529ee8-6bb1-45cd-af36-6a0485131a21",
+      "result_id": "ccb4bda7-b86c-4322-ad83-492b6bde7875"
+    },
+    {
+      "claim_id": "b0ea6a39-ee2e-4282-b8fe-54608a6ffac3",
+      "result_id": "ccb4bda7-b86c-4322-ad83-492b6bde7875"
+    },
+    {
+      "claim_id": "9f5fc3f0-9651-4136-bd96-2ac2ade1b5f0",
+      "result_id": "ccb4bda7-b86c-4322-ad83-492b6bde7875"
+    },
+    {
+      "claim_id": "1ccc0d11-f938-4526-9e7c-08f37b1ea627",
+      "result_id": "2143eb48-585c-4fa2-b32f-eab7a6e1ed00"
+    },
+    {
+      "claim_id": "a4dd19b1-a807-41bb-852a-e647f3931f00",
+      "result_id": "2143eb48-585c-4fa2-b32f-eab7a6e1ed00"
+    },
+    {
+      "claim_id": "7ba4cbae-e7b2-439a-be05-57fe43d0199b",
+      "result_id": "2143eb48-585c-4fa2-b32f-eab7a6e1ed00"
+    },
+    {
+      "claim_id": "aa7537ae-fe81-4cef-9976-055329f9f880",
+      "result_id": "e8b92372-6bee-4da6-86d0-241daf41e0fb"
+    },
+    {
+      "claim_id": "defeb593-6213-4af9-8a21-43d8d64c14a7",
+      "result_id": "e8b92372-6bee-4da6-86d0-241daf41e0fb"
+    },
+    {
+      "claim_id": "514d14d1-8402-41ae-b32e-84b024eeea62",
+      "result_id": "e8b92372-6bee-4da6-86d0-241daf41e0fb"
+    },
+    {
+      "claim_id": "cad596bf-a2a2-49cc-ab0a-89bf6ca083c5",
+      "result_id": "e8b92372-6bee-4da6-86d0-241daf41e0fb"
+    },
+    {
+      "claim_id": "63168e8c-7dd8-49c7-90ab-641e788718cd",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "66607927-99c2-4b45-bad6-bcc2bfeb86da",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "7e4fa096-e203-4a88-8832-b4b6e770b162",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "0d3f673f-0f36-4b8c-83d9-7bd2876d505f",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "30a2b073-c4d3-4dfb-a69c-395ec7dd8179",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "e0dc9c85-4e08-4dd2-960f-8b3793a8e2e5",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "29c15710-91ee-41ed-b3fb-ec933aea521a",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "9b8b389b-8d0d-4e5d-b113-30a2bef2912d",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "e1beff06-42b6-4244-97d9-0c300f178c18",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "f2c3003e-0058-4533-b929-86c74ae3f084",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "bc444b71-aaa0-486a-8926-badc0bff7bc0",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "a35b2fa1-7b6c-48ff-b7cd-2aaf47f84baa",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "bd4167c8-793d-4289-9f50-3214f3eb1fd0",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "466503bc-dfa1-4823-bd45-6826e730d49d",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "359d8c7e-b7b8-42dc-ad8b-c62eca835be6",
+      "result_id": "7f677ee8-4482-4276-8803-32435d189d52"
+    },
+    {
+      "claim_id": "af8bc27c-fe4b-422d-b788-e0d8845e8fda",
+      "result_id": "058045d1-1ec0-4c00-94d8-01c0929b492e"
+    },
+    {
+      "claim_id": "76c9e3a4-113b-4e0f-99f6-6e1580de28a4",
+      "result_id": "4dc0bc21-7768-40f4-9a41-0d386919edd3"
+    },
+    {
+      "claim_id": "eb39bce8-3d96-411f-8791-642dc6a439e9",
+      "result_id": "4dc0bc21-7768-40f4-9a41-0d386919edd3"
+    },
+    {
+      "claim_id": "8965d4b5-2197-461e-8a83-824cf5357b7c",
+      "result_id": "4dc0bc21-7768-40f4-9a41-0d386919edd3"
+    }
+  ],
+  "comparisons": []
+}

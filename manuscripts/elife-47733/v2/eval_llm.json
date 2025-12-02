@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41"
+    ],
+    "result": "Loss-of-function mutations in the C. elegans gene acs-13, which encodes a homolog of human ACSL1, suppress paqr-2 mutant phenotypes. ACS-13 localizes to mitochondria in intestinal and hypodermal cells, as demonstrated by GFP fusion protein colocalization with Mitotracker and Western blotting of subcellular fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence support this result: the acs-13(et54) G125R mutation was isolated in a forward genetic screen (C2), confirmed as loss-of-function through CRISPR/Cas9 recreation (C23, C24), validated with an independent deletion allele (C25), and rescued by wild-type transgene (C34). Mitochondrial localization is well-supported by GFP reporter colocalization with Mitotracker (C35), lack of ER colocalization (C36), and Western blotting of fractionated samples (C37). The tissue expression pattern is confirmed by both translational and transcriptional reporters (C40, C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The acs-13(et54) mutation acts as an enhancer of UFA-producing suppressors (mdt-15(et14) and cept-1(et10)) but is only a weak suppressor by itself, suggesting it requires elevated UFA levels to function effectively. This synergistic interaction is further demonstrated by enhanced protection when combined with linoleic acid supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic interaction data are internally consistent and well-controlled: acs-13(et54) enhances mdt-15(et14) and cept-1(et10) (C26, C29) but not the already potent nhr-49(et8) or weak hacd-1(et12) suppressors (C27, C28). The mutation shows weak suppression alone for most phenotypes (C30, C31, C32), and the linoleic acid synergy experiment (C33) provides independent support for the UFA-dependence hypothesis. Multiple phenotypes were tested (glucose tolerance, cold tolerance, tail tip, brood size) providing comprehensive assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42",
+      "C43"
+    ],
+    "result": "ACS-13 expression is negatively regulated by MDT-15, and loss of acs-13 function results in abnormal mitochondrial morphology, suggesting ACS-13 contributes to mitochondrial homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR data showing decreased acs-13 expression in mdt-15(et14) mutants (C38) is straightforward and supports negative regulation by MDT-15 (C42). The mitochondrial morphology defects in acs-13(et54) mutants (C39) are documented with confocal microscopy and quantified, supporting the role in mitochondrial maintenance (C43). However, the mechanistic link between these observations remains inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "RNAi screening of acyl-CoA synthetases identified acs-5 and acs-15 (ACSL1/5/6 homologs) as the most potent mdt-15(et14) enhancers, with the acs-5(ok2668) deletion allele confirming this interaction, though acs-13 is more potent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNAi screen provides systematic assessment of multiple acyl-CoA synthetases (C44), and the acs-5(ok2668) deletion allele validates the RNAi result (C45). The comparison showing acs-5 does not suppress paqr-2 alone (C46) and is less potent than acs-13 (C47) is well-documented with quantitative measurements. This explains why acs-13 was isolated in the forward genetic screen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C53",
+      "C54"
+    ],
+    "result": "The acs-13(et54) mutation does not upregulate desaturases but requires their activity to suppress paqr-2 phenotypes. Loss of acs-13 function increases LCPUFA levels (20:3, 20:4, 20:5) in phospholipids at the expense of shorter SFAs and MUFAs, thereby restoring membrane fluidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GFP reporter data clearly show that acs-13(et54) does not increase FAT-7 expression (C48), distinguishing its mechanism from mdt-15(et14). The RNAi experiments demonstrate dependence on desaturase activity, particularly fat-6 and fat-7 (C49). The lipidomics data showing increased LCPUFAs and decreased SFAs/MUFAs (C53) directly support the proposed mechanism (C54). The data are consistent across multiple genetic backgrounds and culture conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In HEK293 cells, ACSL1 is highly expressed and can be effectively silenced by siRNA. ACSL1 knockdown specifically prevents palmitate-induced membrane rigidification without affecting basal membrane fluidity, while ACSL5 and ACSL6 knockdown have no such effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR data establish ACSL1 as the dominant isoform and confirm effective knockdown of all three genes (C55, C56). The FRAP and Laurdan dye experiments provide complementary measures of membrane fluidity, both showing that ACSL1 knockdown prevents palmitate-induced rigidification (C58, C60) without affecting basal fluidity (C57, C61). The specificity is demonstrated by the lack of effect with ACSL5/6 knockdown (C59). Multiple independent measurements strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "ACSL1 knockdown suppresses the increased palmitate sensitivity of AdipoR2-depleted HEK293 cells, paralleling the genetic suppression of paqr-2 by acs-13 mutations in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FRAP data clearly demonstrate that simultaneous knockdown of ACSL1 and AdipoR2 prevents the membrane rigidification observed with AdipoR2 knockdown alone (C62). This epistatic relationship (C63) directly parallels the C. elegans genetic interactions, providing strong evolutionary conservation of the mechanism. The experiment is well-controlled with appropriate single and double knockdown conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "ACSL1 knockdown reduces UPR activation in palmitate-challenged HEK293 cells without affecting cell viability or expression of other ACSL genes. ACSL1 expression is not regulated by AdipoR2 or TLCD1/TLCD2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR data showing reduced UPR gene expression (C64) are consistent with improved membrane homeostasis, while the viability data (C65) indicate the cells remain healthy. The lack of compensatory changes in other ACSL expression (C66) and independence from AdipoR2/TLCD regulation (C67) are important controls. However, the mechanistic connection between membrane fluidity and UPR activation, while plausible, is not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ACSL1 knockdown in palmitate-challenged HEK293 cells causes dramatic increases in PUFA-containing phospholipids (PCs and PEs), particularly 20:4, 22:5, and 22:6, while decreasing some sphingolipid classes. TAGs, PC/PE ratios, cholesterol/PC ratios, and total phospholipid class abundances remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comprehensive lipidomics analysis provides detailed characterization of lipid changes. The specific increases in PUFA-containing PCs and PEs (C68, C69) directly parallel the C. elegans findings and support the proposed mechanism. The selective nature of changes\u2014affecting membrane phospholipids and some sphingolipids (C70, C71) but not storage lipids or membrane composition ratios (C72, C73, C74)\u2014is well-documented. The summary interpretation (C75) is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "ACSL1 is strongly enriched in mitochondria of HEK293 cells (approximately 20-fold) with minor association with the ER (approximately 3-fold), as determined by subcellular fractionation and Western blotting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Western blotting data with appropriate organellar markers (VDAC for mitochondria, Calnexin for ER, GAPDH for cytosol) provide clear evidence for predominant mitochondrial localization (C76, C77). The quantification showing 20-fold mitochondrial enrichment versus 3-fold ER enrichment is well-controlled. This parallels the C. elegans ACS-13 localization and supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ACSL1 knockdown in palmitate-challenged HEK293 cells causes pronounced accumulation of palmitoylcarnitine and dramatic reduction in cardiolipins in mitochondria, with altered fatty acid composition in remaining cardiolipins. Expression of cardiolipin synthesis and remodeling genes is reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lipidomics data showing increased palmitoylcarnitine (C78) and decreased cardiolipins (C79) are well-documented with HPLC and mass spectrometry. The altered fatty acid composition of cardiolipins (C80) provides additional detail. The qPCR data on cardiolipin metabolism genes (C81) are consistent with the lipid changes, and agreement with prior mouse studies (C82) provides independent validation. These findings indicate significant mitochondrial lipid homeostasis defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Mitochondrial respiration is not detectably different between control and ACSL1 siRNA-treated HEK293 cells challenged with palmitate, as measured by Seahorse analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Seahorse respirometry data provide direct measurement of mitochondrial function (C83). The lack of detectable difference in respiration despite the cardiolipin defects is surprising but well-documented. This finding is consistent with literature showing that cardiolipins, while important, are not strictly essential for respiration. The experiment is appropriately controlled with multiple respiratory parameters measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In primary human umbilical vein endothelial cells (HUVEC), ACSL1 knockdown prevents palmitate-induced membrane rigidification without affecting basal membrane fluidity, demonstrating that the protective effect extends beyond cancer cell lines to normal primary human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR confirms effective ACSL1 knockdown in HUVEC (C84), and the Laurdan dye measurements show the same pattern as in HEK293 cells: no effect under basal conditions (C85) but protection against palmitate-induced rigidification (C86). This validation in primary cells (C87) is important because it addresses potential concerns about cancer cell-specific metabolism. The consistency across cell types strengthens the translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background knowledge establishing that lipotoxicity involves membrane rigidification by saturated fatty acids, and that PAQR-2/IGLR-2 in C. elegans (homologs of mammalian AdipoR1/AdipoR2) sense and respond to membrane rigidification by promoting fatty acid desaturation and PUFA incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize established knowledge from prior work (C1, C8-C20) that provides essential context for the current study. The claims are appropriately cited and represent the foundation upon which the new findings build. While not new results from this study, they are accurately presented and relevant to interpreting the significance of the acs-13/ACSL1 findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors conclude that acs-13 mutations in C. elegans and ACSL1 knockdown in human cells prevent lipotoxicity through a conserved mechanism: by reducing LCFA channeling into mitochondria, more PUFAs become available for incorporation into phospholipids, thereby improving membrane fluidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic model (C7, C91, C92) integrates the genetic, localization, and lipidomics data from both organisms. The evidence supporting each component is strong: mitochondrial localization of ACS-13/ACSL1, increased PUFA levels in phospholipids upon loss of function, and protection against membrane rigidification. However, the model remains somewhat inferential\u2014direct demonstration that reduced mitochondrial LCFA import causes the observed PUFA accumulation in phospholipids would require additional experiments (e.g., flux studies). The model is plausible and well-supported but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Discussion of prior work showing that different ACSLs have distinct roles in palmitate toxicity (ACSL3 activates SFAs, ACSL4 activates UFAs, ACSL1 channels LCFAs to mitochondria), and that ACSL1 knockout affects mitochondrial PUFA levels and cardiolipins in mouse models, with cardiolipin deficiencies being compatible with viability and respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C89, C90, C93, C94, C95) accurately summarize relevant prior literature and place the current findings in context. The citations are appropriate and the interpretations are consistent with the cited work. This contextual information helps explain why the current findings are significant and how they relate to existing knowledge about ACSL function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "The authors speculate that targeting specific acyl-CoA synthetases like ACSL1 with small-molecule inhibitors could provide therapeutic avenues against lipotoxicity in conditions such as dyslipidemia or liver steatosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly speculative (C96) and represents a potential future application rather than a demonstrated result. While the underlying data support the biological rationale, no inhibitor studies or therapeutic validation experiments are presented. The speculation is reasonable given the findings but remains untested. This type of forward-looking statement is appropriate for a discussion section but should not be evaluated as a supported result.",
+    "result_type": "MINOR"
+  }
+]

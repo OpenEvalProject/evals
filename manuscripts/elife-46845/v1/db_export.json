@@ -1,0 +1,1731 @@
+{
+  "submission": {
+    "id": "58df282b-ccbc-4202-b037-1f3429fd1792",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:12:28.599725Z",
+    "updated_at": "2025-12-02T12:12:28.599725Z"
+  },
+  "content": [
+    {
+      "id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "submission_id": "58df282b-ccbc-4202-b037-1f3429fd1792",
+      "content_type": "manuscript",
+      "content_text": "# A contractile injection system stimulates tubeworm metamorphosis by translocating a proteinaceous effector\n\n## Authors\n\n- Charles F Ericson<sup>1</sup> ([ORCID: 0000-0002-2854-0696](https://orcid.org/0000-0002-2854-0696))\n- Fabian Eisenstein<sup>3</sup>\n- Jo\u00e3o M Medeiros<sup>3</sup> ([ORCID: 0000-0001-9075-548X](https://orcid.org/0000-0001-9075-548X))\n- Kyle E Malter<sup>1</sup> ([ORCID: 0000-0002-3056-8751](https://orcid.org/0000-0002-3056-8751))\n- Giselle S Cavalcanti<sup>1</sup>\n- Robert W Zeller<sup>1</sup>\n- Dianne K Newman<sup>4</sup> ([ORCID: 0000-0003-1647-1918](https://orcid.org/0000-0003-1647-1918))\n- Martin Pilhofer<sup>3</sup> \u2020\n- Nicholas J Shikuma<sup>1</sup> ([ORCID: 0000-0001-5518-5020](https://orcid.org/0000-0001-5518-5020)) \u2020\n\n### Affiliations\n\n1. Department of Biology San Diego State University San Diego United States\n2. Viral Information Institute San Diego State University San Diego United States\n3. Department of Biology Institute of Molecular Biology and Biophysics, Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich Switzerland\n4. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States\n5. Division of Geological and Planetary Sciences California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe swimming larvae of many marine animals identify a location on the sea floor to undergo metamorphosis based on the presence of specific bacteria. Although this microbe\u2013animal interaction is critical for the life cycles of diverse marine animals, what types of biochemical cues from bacteria that induce metamorphosis has been a mystery. Metamorphosis of larvae of the tubeworm Hydroides elegans is induced by arrays of phage tail-like contractile injection systems, which are released by the bacterium Pseudoalteromonas luteoviolacea. Here we identify the novel effector protein Mif1. By cryo-electron tomography imaging and functional assays, we observe Mif1 as cargo inside the tube lumen of the contractile injection system and show that the mif1 gene is required for inducing metamorphosis. Purified Mif1 is sufficient for triggering metamorphosis when electroporated into tubeworm larvae. Our results indicate that the delivery of protein effectors by contractile injection systems may orchestrate microbe\u2013animal interactions in diverse contexts.\n\n## Introduction\n\nBacteria can have profound effects on the normal development of diverse animal taxa (McFall-Ngai et al., 2013). One of the most pervasive examples of bacteria\u00a0stimulating development is the induction of animal metamorphosis by bacteria (Hadfield, 2011). During these interactions in marine environments, surface-bound bacteria often serve as environmental triggers that induce mobile animal larvae to settle on a surface and undergo metamorphosis. Although the stimulation of metamorphosis by bacteria is critical for diverse animal-mediated processes such as coral reef formation (Webster et al., 2004; Whalan and Webster, 2014), the recruitment of stocks for marine fisheries (Dworjanyn and Pirozzi, 2008; Yu et al., 2010) and the fouling of submerged surfaces like the hulls of ships (i.e. biofouling) (Khandeparker et al., 2006; Nedved and Hadfield, 2008), we know little about the mechanisms that govern this microbe\u2013animal interaction.\n\nDespite the fact that the link between bacteria and animal metamorphosis was first discovered in the 1930s (Zobell and Allen, 1935), few bacterial products have been described that stimulate this developmental transition. To date, identified bacterial cues can all be classified as small molecules. Two examples are the small bacterial metabolite tetrabromopyrrole, which induces partial or complete metamorphosis of corals (Sneed et al., 2014; Tebben et al., 2011) and the polar molecule histamine from algae or associated microbes, which induces urchin metamorphosis (Swanson et al., 2007). To our knowledge, however, no proteinaceous bacterial cues have yet been identified that stimulate animal metamorphosis.\n\nTo investigate how bacteria induce animal metamorphosis, we have previously studied the interaction between the tubeworm Hydroides elegans (hereafter Hydroides) and the bacterium Pseudoalteromonas luteoviolacea (Hadfield et al., 1994; Huang and Hadfield, 2003; Nedved and Hadfield, 2008; Shikuma et al., 2016). We found that P. luteoviolacea produces arrays of Metamorphosis Associated Contractile structures (MACs) that induce the metamorphosis of Hydroides larvae (Huang et al., 2012; Shikuma et al., 2014). MACs are an example of a Contractile Injection System (CIS); macromolecular machines that are specialized to puncture membranes and often deliver proteinaceous effectors into target cells (Brackmann et al., 2017; Taylor et al., 2018). Like other CISs, MACs are evolutionarily related to the contractile tails of bacteriophages (bacterial viruses) and are composed of an inner tube protein (homologous to gp19 from phage T4 and Hcp from type six secretion systems) surrounded by a contractile sheath, a tail-spike, and a baseplate complex (Shikuma et al., 2014). The conserved mechanism is driven by contraction of the sheath, which propels the inner tube/spike into the target cell.\n\nDifferent ways of loading effectors onto a CIS have been suggested. Translocation mechanisms of effectors via the spike complex of a CIS have been well characterized (Quentin et al., 2018; Shneider et al., 2013). The presence of an alternative pathway of loading effectors into the inner tube lumen has been speculated but is only poorly understood. For example, an amorphous density inside the inner tube of the Antifeeding prophage (Afp) was attributed to either the toxin payload or a tape-measuring protein (Heymann et al., 2013). Other classes of effectors were found to interact with the inner tube protein (Hcp) and are likely released post-firing by tube dissociation in the target cytoplasm (Sana et al., 2016; Silverman et al., 2013).\n\nIn this study, we set out to identify a potential metamorphosis-inducing effector that MACs inject into Hydroides larvae, as well as the loading of such an effector into MACs. We show that a previously identified genomic region in P. luteoviolacea (Shikuma et al., 2016) encodes a bacterial protein that localizes to the inner tube lumen of the MAC structure and is necessary for inducing the metamorphosis of Hydroides larvae. Our results identify a proteinaceous effector stimulating animal metamorphosis and provide a direct visualization of an effector in the tube lumen of an assembled CIS.\n\n## Results\n\n### Two bacterial genes are responsible for densities within the inner tube lumen of MACs and are involved in metamorphosis induction\n\nWe previously identified a genomic locus in P. luteoviolacea encoding six genes (gene numbers JF50_12590, JF50_12595, JF50_12600, JF50_12605, JF50_12610 and JF50_12615) that was essential for inducing the larvae of Hydroides to undergo metamorphosis (Shikuma et al., 2016). Here we analyzed biofilms of strains with in-frame deletions of each of the six genes and tested their ability to induce Hydroides metamorphosis. The \u0394JF50_12605 and \u0394JF50_12615 mutants exhibited a reduced ability to induce metamorphosis (less than 20%, Figure 1A), while mutation of the other four genes had no observable effect. When JF50_12605 and JF50_12615 were replaced back into their native chromosomal loci, metamorphosis induction was restored (Figure 1B). We confirmed the effect of MACs on Hydroides metamorphosis by producing cell-free MAC array preparations. While larvae exposed to MACs from a \u2206JF50_12615 mutant did not induce metamorphosis (even at high concentrations), MACs from a \u2206JF50_12605 mutant induced metamorphosis when added at higher doses (Figure 1\u2014figure supplement 1A/B). Our results suggest that JF50_12615 was essential for the induction of metamorphosis, while JF50_12605 contributed but was dispensable. Based on our results here and below, we name the protein encoded by JF50_12615 as \u2018Mif1\u2019 for Metamorphosis-Inducing Factor 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig1-v1.jpg)\n\n**Figure 1.:** (A) Metamorphosis (%) assay of Hydroides larvae in response to biofilms of P. luteoviolacea wildtype (WT) and different gene deletion strains. Deletion of JF50_12605 or mif1 (JF50_12615) showed a significant loss in the ability to induce metamorphosis when compared to wildtype. (B) Restoration of JF50_12605 and mif1 (JF50_12615) into their native chromosomal loci restored function. Graphs in (A/B) show an average of biological replicates, where each point represents one biological replicate. *p-value\u22640.05, ns\u00a0=\u00a0not significant. (C\u2013E) Representative cryotomographic images of the \u2018filled\u2019 phenotype from wildtype MACs (C), and \u2018empty\u2019 phenotype from \u0394JF50_12605 (D), and \u0394mif1 (E) MACs. Scale bar, 100 nm. (F/G) Shown are representative MAC structures (on left; taken from C/E) and their density plots. The wildtype \u2018filled\u2019 phenotype shows a relatively homogeneous density profile across the diameter of the MAC. The \u0394mif1 \u2018empty\u2019 phenotype shows a low-density region in the center of the MAC. (H) Shown is the fraction of empty structures for different deletion mutants as observed by cryoET imaging. Note that the \u2018empty\u2019 phenotype correlates with the inability to induce metamorphosis (A).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Metamorphosis (%) of Hydroides larvae 24 h after exposure to extracted MACs from P. luteoviolacea wildtype (WT) and mutants. MAC extracts were diluted 1:100 before being mixed with larvae. (B) Dose-response curve of MAC extracts from WT (red), \u2206macB (blue), \u2206JF50_12605 (green), and \u2206mif1 (purple) mutants.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A-D) MAC arrays were present in (A/B) wildtype (WT) and (C/D) \u0394JF50_12590-12615 MAC extracts. Both strains showed arrays that comprised individual contractile structures in extended and contracted conformations. Shown are cryotomographic slices. Scale bar, 100 nm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A-F) Shown are cryotomographic slices of representative extended MACs for different strains and the corresponding density plots (plots were calculated from the boxed image region). \u2018Empty\u2019 and \u2018filled\u2019 phenotypes are characterized by differences in densities in the MAC center (arrowheads indicate low-density region in empty structures). Scale bar, 100 nm.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A\u2013B) When complemented into the native chromosomal loci, (A) JF50_12605 and (B) mif1 assemble wildtype-like MACs with a filled phenotype. Scale bar, 100 nm.\n\nTo search for structural differences between MACs from wildtype P. luteoviolacea and the specific gene deletion mutants, we employed cryo-electron tomography (cryoET) imaging. Deletion of the full JF50_12590\u2013JF50_12615 locus (Figure 1\u2014figure supplement 2), or each of the six genes individually (Figure 1\u2014figure supplement 3), did not impair the formation of ordered arrays of MACs, featuring both extended and contracted conformations. Upon detailed analyses, we observed that extended MACs from both \u0394JF50_12605 and \u0394mif1 strains exhibited a central lumen with very low density. By contrast, MACs from wildtype and the other deletion mutants possessed a density distribution that was homogeneous and a lumen was not discernable (Figure 1C\u2013G and Figure 1\u2014figure supplement 3). We refer to these structural phenotypes as \u2018empty\u2019 and \u2018filled\u2019 respectively. Strikingly, quantitative analyses showed that the empty phenotype in \u0394JF50_12605 and \u0394mif1 MACs correlated with the inability to induce metamorphosis (Figure 1A/H). The replacement of mif1 and JF50_12605 back into their native chromosomal loci reverted the empty phenotype back to filled (Figure 1\u2014figure supplement 4).\n\n### The density within the MAC tube lumen represents a cargo protein\n\nTo investigate whether the structural differences between wildtype and \u0394mif1/\u0394JF50_12605 MACs represented potential cargo, we performed sub-tomogram averaging of the extended sheath-tube complex (resolution estimation in Figure 2\u2014figure supplement 1). The resulting MAC structures for both wildtype and \u0394mif1 revealed densities corresponding to the sheath and the inner tube (Figure 2A\u2013F), similar to the structures of homologous CISs (Jiang et al., 2019). While the \u0394mif1 structure lacked any discernible density inside the\u00a0~4 nm-wide tube lumen (Figure 2E,F), the wildtype structure exhibited repeating packets of density inside the tube (Figure 2A\u2013D), suggesting the presence of a potential cargo. The densities in the tube lumen reinforced less strongly compared to the sheath-tube complex, which could be caused by one or a combination of the following factors: 1) during averaging, the alignment of the cargo was affected by the strong densities from the sheath-tube, 2) the cargo was not structured or flexible, and/or 3) the cargo was present at a sub-stoichiometric amount compared to tube subunits or tube-rings. In any case, it is likely that the packet-like shape of the cargo density was caused by alignment artifacts. This is supported by a difference map between the wildtype and \u2206mif1 structure, which shows a continuous density filling the inner tube lumen (Figure 2G,H). It is important to note, however, that the cargo and tube densities were separated by a low-density region (arrowheads in Figure 2B). Furthermore, any expelled tubes from triggered MACs always showed an \u2018empty\u2019 phenotype in cryotomography images (Figure 2\u2014figure supplement 2). These results together could indicate weak or entirely absent interactions between cargo and tube, possibly facilitating rapid release of the cargo from the tube upon contraction.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013F) Cross sectional (A/C/E) and longitudinal (B/D/F) slices through subtomogram averages of the MAC sheath-tube complex from wildtype (WT; A\u2013D) and \u2206mif1 (E\u2013F). The hexameric sheath and tube modules could be clearly discerned (indicated in C/D). The inner tube lumen displayed clear differences in density between WT and \u2206mif1. The wildtype tube lumen was filled with densities that likely represent cargo (A-D, indicated in yellow), which was not present in the \u2206mif1 lumen (E/F). Note the low-density region that separates the tube and cargo (indicated by arrowheads in B). (G/H) Shown are isosurfaces of the \u2206mif1 structure (gray) and of a difference map (yellow; calculated from the wildtype and \u2206mif1 structure), highlighting the additional density in the wildtype tube lumen. Scale bar, 10 nm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Fourier shell correlation (FSC) between the two independently aligned and averaged half-datasets for the wildtype (yellow graph, WT) and the \u2206mif1 (green graph) MAC subtomogram averages. Resolution estimates are\u00a0~17 \u00c5 and\u00a0~23 \u00c5 at the 0.5 threshold for wildtype and \u2206mif1, respectively, and\u00a0~14 \u00c5 and\u00a0~18 \u00c5 at the 0.143 threshold.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Shown is a representative cryotomographic slices of WT MACs. Arrowheads indicate expelled tubes with \u2018empty\u2019 phenotype.\n\nTo test whether JF50_12605 and/or Mif1 were present within the MAC complex and represented the cargo within the tube lumen, we performed protein identification by mass spectrometry of purified MACs. In two independent experiments, we detected Mif1 but not JF50_12605 in wildtype MAC samples (Figure 3A). MACs from the \u0394JF50_12605 mutant exhibited considerably fewer spectral counts for the Mif1 protein. These results are consistent with the \u2018empty\u2019 phenotype observed by cryoET imaging of the \u0394JF50_12605 strain (Figure 1D and Figure 1\u2014figure supplement 3E). To further corroborate the association of Mif1 with MAC arrays, we tagged Mif1 with a FLAG-tag in its native chromosomal locus in three different locations. After purifying MACs, we detected Mif1 strongly associated with MACs from two Mif1-FLAG-tagged strains and one at a reduced level by dot-blot and an anti-FLAG antibody (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig3-v1.jpg)\n\n**Figure 3.:** (A) Mass spectrometry of wildtype MAC arrays detected Mif1 but not JF50_12605. Spectral counts for Mif1 were low for MACs purified from the \u2206JF50_12605 mutant, indicating a possible chaperone-like function for JF50_12605. (B) Dot blot of purified MACs from wildtype or strains with Mif1 tagged at amino acid positions 943 [C-terminus] (Mif1-FLAG-943), 555 (Mif1-FLAG-555), and 190 (Mif1-FLAG-190) were probed with anti-FLAG antibody. The signal indicates association of Mif1 with MAC arrays. (C) Co-expression, reciprocal pull-down and western blotting of S-tagged JF50_12605 and 6xHis-tagged Mif1 indicate an interaction between both proteins. Strains in which only one component was tagged were used as controls. (D\u2013F) Quantification of bacterial two-hybrid experiments were used to analyze possible interactions between JF50_12605, Mif1 and tube (MacT1) proteins. Briefly, the two fragments of CyaA (T18/T25) were fused to the respective target proteins with the CyaA activity only being restored by interaction between target proteins. JF50_12605 showed a strong interaction with itself and with Mif1.\n\nBecause JF50_12605 is important for localizing Mif1 within the MAC complex, we analyzed protein\u2013protein interactions between JF50_12605 and Mif1. To this end, we performed a reciprocal pull down of S-tagged JF50_12605 and 6xHis-tagged Mif1. We detected JF50_12605 when pulling down Mif1 by nickel chromatography, and we detected Mif1 when pulling down JF50_12605 with S-tag antibodies (Figure 3C). To determine whether Mif1 or JF50_12605 associated with other components of the MAC complex, we utilized a bacterial two-hybrid system based on the interaction-mediated reconstruction of a cyclic AMP (cAMP) signaling cascade (Karimova et al., 2000). When JF50_12605, Mif1 and MacT1 (JF50_12680, tube) were screened for interactions, we found a significant interaction between JF50_12605 and Mif1 as well as JF50_12605 with itself (Figure 3D\u2013F). However, neither JF50_12605, nor Mif1 interacted with MacT1 (JF50_12680, tube). Together, these data indicate that Mif1 is present within the MAC structure and represents the densities seen in the tube lumen, while JF50_12605 might act as a chaperone that helps to localize Mif1 inside the MAC tube. Mif1, however, could also associate with MACs independently of JF50_12605 in an inefficient manner. This is shown by 1) the residual presence of Mif1 in MACs from a \u2206JF50_12605 mutant as detected by mass spectrometry (Figure 3A), and 2) the fact that high concentrations of a cell-free \u2206JF50_12605 MAC extract can induce metamorphosis (Figure 1\u2014figure supplement 1).\n\n### Purified and electroporated Mif1 protein induces tubeworm metamorphosis\n\nBecause our results suggested that Mif1 was loaded into the MAC tube lumen, we next tested whether Mif1 was sufficient for stimulating metamorphosis when delivered to Hydroides larvae. We therefore purified N-terminally His-tagged Mif1 by nickel chromatography (Figure 4A) and verified its identity by western blot with a Mif1-specific antibody (Figure 4B). As controls, we purified JF50_12605 and GFP under the same conditions. Mif1 protein provided exogenously to competent larvae of Hydroides at concentrations of up to 250 ng/\u00b5l did not stimulate metamorphosis (Figure 4\u2014figure supplement 1). We reasoned, however, that the Mif1 protein might require intracellular delivery into host cells to initiate metamorphosis of Hydroides. To this end, we utilized a custom electroporator that was previously successfully used for other marine invertebrates (Zeller, 2018; Zeller et al., 2006). Successful translocation of protein was confirmed by anti-GFP western blotting of larval lysate after electroporation (Figure 4\u2014figure supplement 2). When we delivered Mif1 into competent Hydroides larvae, a significant percentage of the larvae underwent metamorphosis (Figure 4C). In contrast, neither JF50_12605 nor GFP stimulated metamorphosis when electroporated under the same conditions. Our results suggest that Mif1 was sufficient to stimulate Hydroides metamorphosis when delivered by electroporation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig4-v1.jpg)\n\n**Figure 4.:** (A) Shown is an SDS page gel of purified Mif1, JF50_12605 and GFP. (B) Western blot of purified Mif1 protein probed with a C-terminal anti-Mif1 peptide antibody confirms Mif1 identity. (C) Metamorphosis (%) of Hydroides larvae 24 hr after electroporation with purified Mif1, JF50_12605 or GFP protein, shows induction of metamorphosis by electroporated Mif1. Graph shows an average of biological replicates, where each point represents one biological replicate. ****p-value\u22640.0001 by t-test, ns\u00a0=\u00a0not significant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Metamorphosis (%) of Hydroides larvae after being soaked in 250 ng/\u03bcl of purified GFP, JF50_12605, and JF50_12615 protein for 24 h. Wildtype (WT) MACs diluted 1:100 were used as a positive control for larval competence.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** We tested if electroporation results in a higher abundance of protein within tubeworm larvae. To this end, tubeworm larvae were mixed with purified GFP protein (0.625 \u00b5g/\u00b5l, 50 \u00b5g total) and electroporated at 30 V (150 V/cm) at 10 ohms and 3000 \u00b5F. As a control, a second treatment of tubeworm larvae mixed with GFP without electroporation was performed. After electroporation, larvae were washed five times to remove unassociated GFP protein. (A) Western blot analysis of larval lysate with and without electroporation resulted in higher recovery of GFP in electroporated larvae (+) when compared to un-electroporated control (-). (B) To normalize protein loading, we visualized the stain-free SDS-PAGE gel. (C/D) To quantify the amount of protein recovered after electroporation, a GFP standard curve was created by performing a Western blot on known GFP concentrations (n\u00a0=\u00a03). (E) To determine the amount of GFP associated with tubeworm larvae, we quantified GFP with (+) and without (-) electroporation. Values are a mean percent of total GFP electroporated (n\u00a0=\u00a04 biological replicates,\u00a0\u00b1\u00a0SD).\n\n## Discussion\n\nIn conclusion, our data indicate that the bacterium P. luteoviolacea induces metamorphosis of animal larvae by delivering the effector protein Mif1 via the tube lumen of an extracellular contractile injection system (MACs). These insights are significant for different fields of research as discussed below.\n\nFirst, previously reported bacterial cues for animal metamorphosis are all classified as small molecules (Sneed et al., 2014; Swanson et al., 2007; Tebben et al., 2011). The identification of a protein (Mif1) that stimulates tubeworm metamorphosis requires us to expand the scope of possible biomolecules and mechanisms by which bacteria stimulate animal development. Our findings suggest that rather than MACs stimulating metamorphosis solely by physical puncturing and depolarization of larval membranes, the delivered Mif1 protein could have an enzymatic activity. This challenges previous hypotheses on metamorphosis induction (Carpizo-Ituarte and Hadfield, 1998; Yool et al., 1986), however, it would be in line with many studies on other eukaryote-targeting CIS effectors with enzymatic activities (Jiang et al., 2016; Ma and Mekalanos, 2010; Vlisidou et al., 2019). Future investigations will shed light on the molecular mechanism by which Mif1 triggers animal metamorphosis, which is a challenging task, given that Mif1 does not feature any recognizable conserved protein domains.\n\nSecond, our results directly showed the previously hypothesized possibility of effector delivery via the tube lumen of a CIS (Heymann et al., 2013; Sana et al., 2016; Shneider et al., 2013; Silverman et al., 2013). Interestingly, the comparison of MACs with a different class of CIS, namely the Type Six Secretion System (T6SS), reveals significant differences. The T6SS effectors that are thought to be delivered by the T6SS tube lumen show protein\u2013protein interactions between the T6SS effector and the T6SS tube protein (Hcp) (Sana et al., 2016; Silverman et al., 2013). By contrast, we did not detect such interactions between Mif1 and MAC tube protein. One possible explanation could be that the biophysical characteristics of the T6SS tube and the MAC tube are different. While the T6SS tube is inherently unstable and disassembles soon after contraction (Szwedziak and Pilhofer, 2019), inner tubes of MACs and other extracellular CISs (and contractile phages) can be readily detected by electron microscopy and therefore seem to be much more stable. Given our observation that expelled MAC tubes were always empty (e.g. Figure 2\u2014figure supplement 2), this poses the question of how the effectors exit such a stable tube after contraction. We hypothesize that this could be the very reason for weak or entirely absent interactions between Mif1 and MAC tube, as well as for the low-density region that was seen in subtomogram averages separating Mif1 and MAC tube (Figure 2B). Another mechanistic consequence of low affinity between Mif1 and tube could be the requirement of an assembly factor, that\u00a0is JF50_12605, that allows for efficient targeting of Mif1 to the tube.\n\nThird, our insights into MAC function could be significant to re-engineer the system for future medical and biotechnological applications. As micron-scale, syringe-like structures, MACs have potential for being developed as delivery systems targeting eukaryotic cells. Extracellular CISs such as MACs are of particular interest, because they are released from the producing bacterial cell and autonomously bind to the target cell\u2019s surface. Extracellular CISs that target bacterial pathogens are already under development as narrow host-range antimicrobial agents (Scholl, 2017). The identification of effectors carried by MACs provides the basis for loading MACs with a cargo of choice. We recently reported a second effector that MACs deliver to eukaryotic cells (Rocchi et al., 2019), expanding the number of MAC effectors that could be engineered. Intriguingly, a cryotomogram of the \u2206pne1 (JF50_12610) mutant shows that the tube has a filled phenotype (Figure 1\u2014figure supplement 3). The filled phenotype suggests that Pne1 is not found within the inner tube, but instead could be loaded in a different location (e.g. spike) within the MACs complex. Understanding tube lumen-delivered effectors could be particularly helpful, based on the potential of a higher payload per CIS, as compared to spike-bound effectors.\n\nFourth, the identification of Mif1 and its delivery mechanism will facilitate the investigation of how bacterial factors trigger animal signaling systems, leading to metamorphosis. This could have potential practical applications for preventing biofouling, improving aquaculture husbandry, restoring degraded ecosystems like coral reefs, and as a biotechnology platform.\n\nThe fact that bacteria are known to stimulate metamorphosis in every major group of animals alive today (Hadfield, 2011), combined with the detection of MAC-like gene clusters in microbes from diverse environments including the ocean, terrestrial environments and even the human gut (B\u00f6ck et al., 2017; Jiang et al., 2019), underscores the huge diversity of bacterium\u2013animal interactions that remains to be explored.\n\n## Materials and methods\n\n### Metamorphosis assays\n\nBioassays were conducted with specimens of Hydroides elegans obtained from Quivira Basin, San Diego, California. Embryos were obtained and maintained as previously described (Nedved and Hadfield, 2008; Shikuma et al., 2016). Competent larvae were exposed to biofilms of P. luteoviolacea wild type, as a positive control, to P. luteoviolacea mutants, and to P. luteoviolacea strains unable to produce MAC structures (\u2206macB), as well as to artificial seawater (-). The percent of larvae that underwent metamorphosis was scored 24 hr after the induction of metamorphosis. Metamorphosis was scored visually by observing the number of individuals that formed branchial radioles, and a primary and secondary tube. Four biological replicates of approximately 30 larvae each were performed for each treatment on three separate occasions with larvae spawned from different adults.\n\n### Bacterial strains, plasmid construction and culture conditions\n\nAll bacterial strains, plasmids and primer sequences used are listed in the supplemental Tables 1 and 2. All deletion and fusion strains were created according to previously published protocols (Rocchi et al., 2019; Shikuma et al., 2016; Shikuma et al., 2014). Plasmid insert sequences were verified by DNA sequencing. Deletion and insert strains were confirmed by PCR. All E.\u00a0coli strains were grown in Lysogeny-Broth (LB) media at 37\u00b0C shaking at 200 revolutions per minute (RPM). All P. luteoviolacea cultures were grown in seawater tryptone (SWT) media (35.9 g/l Instant Ocean, 2.5 g/l tryptone, 1.5 g/l yeast extract, 1.5 ml/l glycerol) at 25\u00b0C shaking at 200 RPM. Media that contained antibiotics were at a concentration of 100 mg/ml unless otherwise stated.\n\n**Table 1.**\n Strains and plasmids used in this work.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Strain no.</th>\n      <th></th>\n      <th>Genotype</th>\n      <th>Source or reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Strain</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NJS5</td>\n      <td>HI1 StrR</td>\n      <td>P. luteoviolacea HI1, StrR</td>\n      <td>(Huang et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>NJS23</td>\n      <td>\u2206macB</td>\n      <td>P. luteoviolacea HI1, StrR\u2206macB</td>\n      <td>(Shikuma et al., 2014)</td>\n    </tr>\n    <tr>\n      <td>NJS235</td>\n      <td>\u2206JF50_12590-F50_12615</td>\n      <td>P. luteoviolacea HI1, StrR \u2206R4</td>\n      <td>(Shikuma et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>NJS289</td>\n      <td>\u2206JF50_12590</td>\n      <td>P. luteoviolacea HI1, StrR\u2206JF50_12590</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>NJS287</td>\n      <td>\u2206JF50_12595</td>\n      <td>P. luteoviolacea HI1, StrR\u2206JF50_12595</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>NJS285</td>\n      <td>\u2206JF50_12600</td>\n      <td>P. luteoviolacea HI1, StrR\u2206JF50_12600</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>NJS283</td>\n      <td>\u2206JF50_12605</td>\n      <td>P. luteoviolacea HI1, StrR\u2206JF50_12605</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>NJS281</td>\n      <td>\u2206JF50_12610</td>\n      <td>P. luteoviolacea HI1, StrR\u2206JF50_12610</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>NJS279</td>\n      <td>\u2206JF50_12615</td>\n      <td>P. luteoviolacea HI1, StrR\u2206JF50_12615</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>NJS294</td>\n      <td>\u2206JF50_12605::12605</td>\n      <td>P. luteoviolacea HI1, StrR\u2206JF50_12605::JF50_12605</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>NJS295</td>\n      <td>\u2206JF50_12615::12615</td>\n      <td>P. luteoviolacea HI1, StrR\u2206JF50_12615::JF50_12615</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Plasmid</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pNJS007</td>\n      <td>pCVD443</td>\n      <td>AmpR, KmR, sacB, pGP704 derivative</td>\n      <td>(Huang et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>pNJS266</td>\n      <td>pCVD443_\u220612590</td>\n      <td>pCVD443::\u220612590 AmpR, KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS265</td>\n      <td>pCVD443_\u220612595</td>\n      <td>pCVD443::\u220612595 AmpR, KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS264</td>\n      <td>pCVD443_\u220612600</td>\n      <td>pCVD443::\u220612600 AmpR, KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS263</td>\n      <td>pCVD443_\u220612605</td>\n      <td>pCVD443::\u220612605 AmpR, KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS262</td>\n      <td>pCVD443_\u220612610</td>\n      <td>pCVD443::\u220612610 AmpR, KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS261</td>\n      <td>pCVD443_\u220612615</td>\n      <td>pCVD443::\u220612615 AmpR, KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS256</td>\n      <td>pCVD443_12590\u2013615 complement</td>\n      <td>AmpR, KmR</td>\n      <td>(Shikuma et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>pNJS282</td>\n      <td>pCVD443_12605 complement</td>\n      <td>AmpR, KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS074</td>\n      <td>pCVD443_\u220612585</td>\n      <td>AmpR, KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS267</td>\n      <td>pUT18</td>\n      <td>AmpR</td>\n      <td>(Karimova et al., 2000)</td>\n    </tr>\n    <tr>\n      <td>pNJS268</td>\n      <td>pUT18C</td>\n      <td>AmpR</td>\n      <td>(Karimova et al., 2000)</td>\n    </tr>\n    <tr>\n      <td>pNJS269</td>\n      <td>pKT25</td>\n      <td>KmR</td>\n      <td>(Karimova et al., 2000)</td>\n    </tr>\n    <tr>\n      <td>pNJS270</td>\n      <td>pKNT25</td>\n      <td>KmR</td>\n      <td>(Karimova et al., 2000)</td>\n    </tr>\n    <tr>\n      <td>pNJS283</td>\n      <td>pUT18_12605</td>\n      <td>AmpR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS299</td>\n      <td>pUT18_12615</td>\n      <td>AmpR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS527</td>\n      <td>pUT18_12680</td>\n      <td>AmpR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS284</td>\n      <td>pKT25_12605</td>\n      <td>KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS285</td>\n      <td>pKT25_12615</td>\n      <td>KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS529</td>\n      <td>pKT25_12680</td>\n      <td>KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS286</td>\n      <td>pKNT25_12605</td>\n      <td>KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS300</td>\n      <td>pKNT25_12615</td>\n      <td>KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS530</td>\n      <td>pKNT25_12680</td>\n      <td>KmR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS393</td>\n      <td>pET15b_12605</td>\n      <td>AmpR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS395</td>\n      <td>pET15b_12615</td>\n      <td>AmpR</td>\n      <td>This Study</td>\n    </tr>\n    <tr>\n      <td>pNJS397</td>\n      <td>pET15b_GFP</td>\n      <td>AmpR</td>\n      <td>This Study</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Primers used in this work.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer</th>\n      <th>Sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1556_dA</td>\n      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGATTGGAGCAATAAACGGGTTC</td>\n    </tr>\n    <tr>\n      <td>1556_dB</td>\n      <td>GTTCATAATTAAACTGCGATCGCAGCCATAAGGCCTCCTTGATA</td>\n    </tr>\n    <tr>\n      <td>1556_dC</td>\n      <td>TATCAAGGAGGCCTTATGGCTGCGATCGCAGTTTAATTATGAAC</td>\n    </tr>\n    <tr>\n      <td>1556_dD</td>\n      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCCGCTTTGGGTACTGGCTTTA</td>\n    </tr>\n    <tr>\n      <td>1556_intF</td>\n      <td>CCGAGCAAACGTTATCACAA</td>\n    </tr>\n    <tr>\n      <td>1556_intR</td>\n      <td>TCAGCGCTCTCATTATGTGC</td>\n    </tr>\n    <tr>\n      <td>1555_dA</td>\n      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGACCGAGCAAACGTTATCACAA</td>\n    </tr>\n    <tr>\n      <td>1555_dB</td>\n      <td>CCTTGCATGAGGTTAAGAAAGTTTGACGTACCCTTCAGCCATATT</td>\n    </tr>\n    <tr>\n      <td>1555_dC</td>\n      <td>AATATGGCTGAAGGGTACGTCAAACTTTCTTAACCTCATGCAAGG</td>\n    </tr>\n    <tr>\n      <td>1555_dD</td>\n      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCGATGCGGTAACGGTTGTTCT</td>\n    </tr>\n    <tr>\n      <td>1555_intF</td>\n      <td>AGCGATTGATGCTGAACAAA</td>\n    </tr>\n    <tr>\n      <td>1555_intR</td>\n      <td>ACCATCGCATAACCCGTAAC</td>\n    </tr>\n    <tr>\n      <td>1554_dA</td>\n      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGATACGCCGTCCAGTTAGGACT</td>\n    </tr>\n    <tr>\n      <td>1554_dB</td>\n      <td>GTTTGTTAACGTCACGGCAGCTGCATTGCCATTTAAACTCC</td>\n    </tr>\n    <tr>\n      <td>1554_dC</td>\n      <td>GGAGTTTAAATGGCAATGCAGCTGCCGTGACGTTAACAAAC</td>\n    </tr>\n    <tr>\n      <td>1554_dD</td>\n      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCATTGATTGGAAGCGCGATAG</td>\n    </tr>\n    <tr>\n      <td>1554_intF</td>\n      <td>TTTATGAGGCACCAACGACA</td>\n    </tr>\n    <tr>\n      <td>1554_intR</td>\n      <td>GCCTGTGCCGTTTTATCTGT</td>\n    </tr>\n    <tr>\n      <td>1553_dA</td>\n      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGAGGCGATCAGTGGAGTGAAGT</td>\n    </tr>\n    <tr>\n      <td>1553_dB</td>\n      <td>AATACTTCTTGCTCAGCCCCGCGTGCTTCTTCTGTCATGT</td>\n    </tr>\n    <tr>\n      <td>1553_dC</td>\n      <td>ACATGACAGAAGAAGCACGCGGGGCTGAGCAAGAAGTATT</td>\n    </tr>\n    <tr>\n      <td>1553_dD</td>\n      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCTCAGAACCAGCAGTCTCACG</td>\n    </tr>\n    <tr>\n      <td>1553_intF</td>\n      <td>CGGGCCTAGAAATCACTCAA</td>\n    </tr>\n    <tr>\n      <td>1553_intR</td>\n      <td>TCGACGTCAAATCAGTCGAG</td>\n    </tr>\n    <tr>\n      <td>1552_dA</td>\n      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGAGAGAGCAAGAAGTGGCGAGT</td>\n    </tr>\n    <tr>\n      <td>1552_dB</td>\n      <td>TAGCCTTTTAGTGCCGCTTTTGAGGCGTCCATATCTGACA</td>\n    </tr>\n    <tr>\n      <td>1552_dC</td>\n      <td>TGTCAGATATGGACGCCTCAAAAGCGGCACTAAAAGGCTA</td>\n    </tr>\n    <tr>\n      <td>1552_dD</td>\n      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCTGCTGACCAAGCAGATTGAC</td>\n    </tr>\n    <tr>\n      <td>1552_intF</td>\n      <td>GGGCAATTGTTGTGGATTTT</td>\n    </tr>\n    <tr>\n      <td>1552_intR</td>\n      <td>TGATCCCAAACCACTTGTGA</td>\n    </tr>\n    <tr>\n      <td>1551_dA</td>\n      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGAGACTGCTGGTTCTGATTCGAT</td>\n    </tr>\n    <tr>\n      <td>1551_dB</td>\n      <td>AACAGATCATTACATTAAAATGAGCCTCTGTTCTTGTTGTTGCATTTCA</td>\n    </tr>\n    <tr>\n      <td>1551_dC</td>\n      <td>TGAAATGCAACAACAAGAACAGAGGCTCATTTTAATGTAATGATCTGTT</td>\n    </tr>\n    <tr>\n      <td>1551_dD</td>\n      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCCTTCTCCATTTTCGCCTTTG</td>\n    </tr>\n    <tr>\n      <td>1551_intF</td>\n      <td>CGTTTTCAGTGACCATCACG</td>\n    </tr>\n    <tr>\n      <td>1551_intR</td>\n      <td>CGGTGGGCAAAAAGGTATAA</td>\n    </tr>\n    <tr>\n      <td>pUT18_605_F1</td>\n      <td>CAGCTATGACCATGATTACGCCAAGCTTGCATGCCATGACAGAAGAAGCACGCGAAAAAA</td>\n    </tr>\n    <tr>\n      <td>pUT18_605_R1</td>\n      <td>CTGGCGGCTGAATTCGAGCTCGGTACCCGGGGATCATTCACAAGTGCTAATTGATAAAAT</td>\n    </tr>\n    <tr>\n      <td>pUT18_615_F1</td>\n      <td>CAGCTATGACCATGATTACGCCAAGCTTGCATGCCATGCAACAACAAGAACAGGAGCAAG</td>\n    </tr>\n    <tr>\n      <td>pUT18_615_R1</td>\n      <td>CTGGCGGCTGAATTCGAGCTCGGTACCCGGGGATCCATTAAAATGAGCCTTTCTTTTTCA</td>\n    </tr>\n    <tr>\n      <td>pUT18_680_F</td>\n      <td>CATGATTACGCCAAGCTTGCATGCCATGGCTACTACTAAAGCAGATATCG</td>\n    </tr>\n    <tr>\n      <td>pUT18_680_R</td>\n      <td>AATTCGAGCTCGGTACCCGGGGATCATGGAACTCAATCTTGATGTCATCT</td>\n    </tr>\n    <tr>\n      <td>pKT_605_F1</td>\n      <td>CCGATTACCTGGCGCGCACGCGGCGGGCTGCAGGGATGACAGAAGAAGCACGCGAAAAAA</td>\n    </tr>\n    <tr>\n      <td>pKT_605_R1</td>\n      <td>AACGACGGCCGAATTCTTAGTTACTTAGGTACCCGCTAATTCACAAGTGCTAATTGATAA</td>\n    </tr>\n    <tr>\n      <td>pKT_615_F1</td>\n      <td>CCGATTACCTGGCGCGCACGCGGCGGGCTGCAGGGATGCAACAACAAGAACAGGAGCAAG</td>\n    </tr>\n    <tr>\n      <td>pKT_615_R1</td>\n      <td>AACGACGGCCGAATTCTTAGTTACTTAGGTACCCGTTACATTAAAATGAGCCTTTCTTTT</td>\n    </tr>\n    <tr>\n      <td>pKT_680_F1</td>\n      <td>CCTGGCGCGCACGCGGCGGGCTGCAATGGCTACTACTAAAGCAGATATCG</td>\n    </tr>\n    <tr>\n      <td>pKT_680_R1</td>\n      <td>GCCGAATTCTTAGTTACTTAGGTACTTAATGGAACTCAATCTTGATGTCA</td>\n    </tr>\n    <tr>\n      <td>pKNT_605_F1</td>\n      <td>CAGCTATGACCATGATTACGCCAAGCTTGCATGCCATGACAGAAGAAGCACGCGAAAAAA</td>\n    </tr>\n    <tr>\n      <td>pKNT_605_R1</td>\n      <td>TGATGCGATTGCTGCATGGTCATTGAATTCGAGCTATTCACAAGTGCTAATTGATAAAAT</td>\n    </tr>\n    <tr>\n      <td>pKNT_615_F1</td>\n      <td>CAGCTATGACCATGATTACGCCAAGCTTGCATGCCATGCAACAACAAGAACAGGAGCAAG</td>\n    </tr>\n    <tr>\n      <td>pKNT_615_R1</td>\n      <td>TGATGCGATTGCTGCATGGTCATTGAATTCGAGCTCATTAAAATGAGCCTTTCTTTTTCA</td>\n    </tr>\n    <tr>\n      <td>pKNT_615_F2</td>\n      <td>CATGATTACGCCAAGCTTGCATGCCATGCAACAACAAGAACAGGAGCAAG</td>\n    </tr>\n    <tr>\n      <td>pKNT25-680_F</td>\n      <td>CATGATTACGCCAAGCTTGCATGCCATGGCTACTACTAAAGCAGATATCG</td>\n    </tr>\n    <tr>\n      <td>pKNT25-680_R</td>\n      <td>GCTGCATGGTCATTGAATTCGAGCTATGGAACTCAATCTTGATGTCATCT</td>\n    </tr>\n    <tr>\n      <td>pET15b_605_F1</td>\n      <td>TGCCGCGCGGCAGCCATATGATGACAGAAGAAGCACGCG</td>\n    </tr>\n    <tr>\n      <td>pET15b_605_R1</td>\n      <td>GCTTTGTTAGCAGCCGGATCCCTAATTCACAAGTGCTAATT</td>\n    </tr>\n  </tbody>\n</table>\n\n### Gentle MAC extraction\n\nP. luteoviolacea was grown in 50 ml SWT media in 250 ml flasks at 30 \u00b0C for 6 hr or overnight (12\u201314 h). Cells were centrifuged for 30 min at 4000 g and 4 \u00b0C and resuspended in 5 ml cold extraction buffer (20 mM Tris, pH 7.5, 1M NaCl). Cultures were centrifuged for 30 min at 4000 g and 4 \u00b0C and the supernatant was isolated and centrifuged for 30 min at 7000 g and 4 \u00b0C. The pellet was resuspended in 20\u2013100 \u00b5l cold extraction buffer and stored at 4\u00b0C for further use.\n\n### Plunge freezing of MACs\n\nPlunge freezing was performed as implemented in Weiss et al. (2017). In essence, gentle MAC extractions were seeded with 10 nm BSA-coated colloidal gold particles (1:4 v/v, Sigma) and 4 \u03bcl of the mixture was applied to a glow-discharged holey-carbon copper EM grid (R2/1, Quantifoil). The grid was backside blotted in a Vitrobot (FEI Company) by using a Teflon sheet on the front pad, and plunge-frozen in a liquid ethane-propane mixture (37%/63%) cooled by a liquid nitrogen bath. Frozen grids were stored in liquid nitrogen.\n\n### Cryo-electron tomography\n\nThe gentle MAC extractions were imaged by cryo-electron tomography (cryoET) (Weiss et al., 2017). Images were recorded on a Titan Krios TEM (FEI) equipped with a Quantum LS imaging filter operated at a 20 eV slit width and K2 Summit (Gatan). Pixel sizes at specimen level ranged from 2.14 \u00c5 to 2.72 \u00c5. Tilt series were collected using a bidirectional tilt-scheme from \u221230\u00b0 to +60\u00b0 and \u221232\u00b0 to \u221260\u00b0 in 2\u00b0 increments. Total dose was\u00a0~90 e-/\u00c52 and defocus was kept at \u22125 to \u22126 \u00b5m. Some tilt series were recorded in focus using a Volta phase plate (Danev et al., 2014). Tilt series were acquired using SerialEM (Mastronarde, 2005) and reconstructed and segmented using the IMOD program suite (Kremer et al., 1996). Density plots to determine filled and empty phenotypes were done using Fiji (Schindelin et al., 2012). Contrast enhancement of some tomograms was done using the tom_deconv deconvolution filter (https://github.com/dtegunov/tom_deconv).\n\n### Sub-tomogram averaging\n\nTomograms used for structure identification and picking were binned by a factor of 4. Defocus was estimated using Gctf (Zhang, 2016) and CTF correction, exposure filtering and backprojection was done using IMOD. SR data were binned by a factor of 2 resulting in a pixel size of 4.29 \u00c5/px. The discrete extended MAC structures were identified visually in individual tomograms and their longitudinal axes were modeled with open contours in 3dmod (Mastronarde, 2008). Individual model points were added at defined intervals of about 12 nm along the contours using the addModPts program from the PEET package (Heumann et al., 2011) resulting in 24\u2019721 initial particles for filled tubes and 37\u2019024 initial particles for empty tubes. Models were imported into Dynamo (Casta\u00f1o-D\u00edez et al., 2012), particles were extracted, the azimuth angle was randomized and all particles were averaged to obtain an initial reference. Four times binned subtomograms (17.14 \u00c5/px) were used for four iterations of initial alignment with the reference low-pass filtered to about 50 \u00c5. No symmetry was applied, but rotational search was limited to +/-\u00a030\u00b0. Before unbinning, subtomograms were cleaned by distance and cross correlation coefficient leaving 20\u2019358 filled and 20\u2019782 empty tube particles. Two times binned subtomograms (8.57 \u00c5/px) were extracted using the refined coordinates and the dataset was split in two half sets. Half sets were aligned independently for five iterations. Unbinned subvolumes (4.29 \u00c5/px) were extracted using the refined coordinates and aligned for eight more iterations. Subvolumes were cleaned by cross correlation coefficient and final averages were generated using 13\u2019039 particles and 13\u2019425 particles for filled and empty tubes, respectively. UCSF Chimera (Pettersen et al., 2004) was used for visualization of the 3D models and to generate the difference map between wildtype and \u2206mif1 structure.\n\n### Bacterial two-hybrid analysis\n\nBacterial two-hybrid Analysis was performed following the protocols detailed previously (Karimova et al., 2000). Briefly, proteins of interest were cloned into one of four Bacterial Two Hybrid (BTH) plasmids pUT18, pUT18C, pKT25, and pKNT25. These produced individual N- or C-terminal fusions between the proteins of interest and the T18 and T25 subunits on of the adenylate cyclase (CyaA) protein. All plasmid sequences were confirmed by PCR. Plasmid combinations containing the genes of interest were then electroporated into BTH101 electrocompetent cells that lacked a native CyaA gene. The BTH101 cells were grown on LB agar containing ampicillin (100 mg/ml), kanamycin (100 mg/ml) and 1% glucose. Glucose was used to suppress the expression of proteins before performing the assay. Protein\u2013protein interactions were quantified by performing a \u03b2-galactosidase assay with cells being grown overnight at 37\u00b0C and shaking at 200 RPM. Protein expression was induced with 1.0 mM IPTG. The cultures were incubated at 25\u00b0C shaking at 200 RPM for 6 hr before being mixed with a one-step \u2018\u03b2-gal\u2019 mix (Schaefer et al., 2016). A plate reader was then used to measure the absorbance at 420 nm and 600 nm. The optical densities were used to calculate Miller Units as previously described (Miller, 1972).\n\n### Protein purification and electroporation\n\nTo purify JF50_12615, JF50_12605 and GFP proteins, genes of interest were cloned into the pET15b plasmid and grown in E.\u00a0coli BL21 pLysE. Bacteria were struck out on LB agar plates with ampicillin (100 \u00b5g/\u00b5l) and grown at 37\u00b0C for 24 hr. A single colony was inoculated into 5 ml LB with ampicillin (100 \u00b5g/\u00b5l) and grown at 37\u00b0C shaking at 200 RPM for 14\u201316 hr. The overnight culture was diluted 1:500 into 500 ml LB with ampicillin (100 \u00b5g/\u00b5l), grown at 37\u00b0C shaking at 200 RPM until the culture reached an OD600 of 0.95. Protein expression was induced with 0.1 mM IPTG and grown for 25\u00b0C for 16 hr. The culture was centrifuged at 4000 g for 20 min and the supernatant was removed. The pellet was then resuspended in lysis buffer (20 mM imidazole, 25 mM tris-HCl, 500 mM NaCl, pH 8) with a protease inhibitor cocktail (100 \u00b5M leupeptin, 1 \u00b5M pepstatin and 5 \u00b5M bestatin). The culture was French pressed twice (1000 psi) and sonicated 3 times for 10\u201330 s each time. The lysed culture was then spun down at 12,000 g for 20 min and the supernatant was discarded. Inclusion bodies were purified from the pellet by first washing the pellet twice with 20 mM tris pH 8, 2 M urea, 2% triton X-100, 500 mM NaCl. The remaining pellet was resuspended using 5 ml 6M guanidinium HCl, 5 mM imidazole, 20 mM tris pH 8, 500 mM NaCl. The 6XHIS tagged proteins were then bound to Ni-agarose beads which had been pre-equilibrated to the resuspension buffer. The proteins were refolded by adding 1 ml/min of 5 mM imidazole, 20 mM tris pH 8, 500 mM NaCl up to a total of 50 ml. After refolding, the beads were loaded onto a vacuum column and washed twice with 10 ml of refolding buffer. The protein was then eluted using 250 mM imidazole, 20 mM tris pH 8, 500 mM NaCl. Fractions containing the protein were buffer exchanged into a storage buffer (25 mM tris, 250 mM NaCl, pH 7.6) and stored at \u221280\u00b0C. A Bradford protein assay (BioRad) was done in order to quantify the amount of protein present. An antibody produced against the Mif1-specific peptide sequence CERSKGEFTEGKPKP (Genscript) was used to confirm expression and purification.\n\n### Western blot\n\nProtein samples and lysates were first normalized using Bradford protein assay to quantify protein concentrations. Equal concentrations of protein were loaded onto BioRad stain-Free SDS-PAGE gels 4\u201320% (catalog no. 4568093) and imaged prior to transfer to confirm equal loading using BioRad gel doc ez system and stain free tray. The protein gel was then used to transfer protein to a PVDF membrane via semi-dry transfer system. The membranes were blocked in 5% milk-TBST (50 mM Tris-Cl, pH 7.6; 150 mM NaCl, 0.1% tween-20) for 30 min. The primary antibody was added at 1:1000 dilution (unless otherwise stated) to 5% milk-TBST and rocked overnight at 4\u00b0C. The membrane was washed three times for 10 min each in TBST. Secondary antibody was added at 1:20,000 to TBST and rocked for 1 hr at room temperature. The membrane was washed three more times for 15 min each before chemiluminescent substrate was added and visualized using BioRad XRS imaging cabinet. Antibodies include a custom Mif1 antibody (Genscript), S-Tag antibody (GenScript catalog no. A00625, RRID:AB_915085), DYKDDDDK antibody (Thermo Fisher Scientific catalog no. 701629, RRID:AB_2532497), GFP antibody (Thermo Fisher Scientific catalog no. G10362, RRID:AB_2536526) and Goat anti-Rabbit IgG (H+L) secondary antibody, HRP (Thermo Fisher Scientific Catalog no. 31460, RRID:AB_228341).\n\n### Electroporation\n\nThe method for electroporation of Hydroides larvae was adapted from those established for ascidian embryos (Zeller, 2018; Zeller et al., 2006). Specifically, 50 \u00b5l of 0.77 M mannitol, 20 \u00b5l of concentrated larvae (approximately 30 larvae), and 10 \u00b5l of purified protein (1.25\u201312.5 \u00b5g, 15.6\u2013156 ng/\u00b5l final concentration based on protein recovery from inclusion bodies) were mixed and added to a 2 mm electroporation cuvette. The mixture was then electroporated with 30 V (150 V/cm) at 10 ohms and 3000 \u00b5F using a custom electroporation apparatus as previously described (Zeller et al., 2006). After electroporation, the mixture was immediately removed from the cuvette and mixed with 1 ml filtered artificial sea water and transferred into a 24-well plate. The larvae were then observed for metamorphosis 24 to 72 hr later (dependent on WT MACs positive control). Purification of proteins was performed on three separate occasions and each purification was electroporated twice, for a total of six independent biological replicates, each yielding similar outcomes.\n\n### Quantification of electroporation\n\nTo test whether purified protein is transferred to tubeworm larvae by electroporation, larvae were concentrated to 30 larvae/\u00b5l. Final GFP concentration used was 0.625 \u00b5g/\u00b5l (50 \u00b5g total per electroporation). 20 \u00b5l of larvae were either electroporated by adding them to 50 \u00b5l 0.77 M mannitol and 10 \u00b5l of 5 \u00b5g/\u00b5l purified GFP, then electroporated at 30 V (150 V/cm) at 10 ohms and 3000 \u00b5F or not electroporated. Larvae were recovered from the electroporation cuvette by adding 1 ml instant ocean and moved to microcentrifuge tubes. Larvae were then washed 5 times with 1 ml instant ocean by first spinning down at 4000 g for 30 s and removing all but 50 \u00b5l of liquid. After the five washes larvae were then spun down at 4000 for 2 min and the sea water was removed. On ice, the larvae were then lysed in 100 \u00b5l 50 mM tris pH 8, 150 mM NaCl, 1% Triton X-100, and vortexed three times for 30 s each. Cell debris was pelleted by centrifuging at 21,000 g for 10 min and the pellet was discarded. The lysate was then quantified by first diluting a small aliquot of lysate (5 \u00b5l) 1:10 and using a Bradford protein assay. The GFP standard curve was created by performing 2-fold serial dilutions of the original purified GFP and using densitometry of the western blot. 8.76 \u00b5g of larvae lysate was loaded onto the same gel, with both the mock zap negative control and the electroporated larvae. Recovered protein was calculated using densitometry and the GFP standard curve. This was repeated for four biological replicates each with separate western blots.\n\n### Pulldown assays\n\nE. coli containing a dual expression plasmid with 12605, Mif1, or both 12605 and Mif1 was grown in 50 ml of LB supplemented with chloramphenicol (100 \u00b5g/ml) until an OD600 0.6 at 37\u00b0C. The E. coli plasmid was induced with 1 mM IPTG and the temperature was lowered to 20\u00b0C, then expression was allowed to proceed overnight (16 hr). Cells were recovered by pelleting at 4000 g for 10 min and media was discarded. Cells were resuspended in 25 mM tris pH 7.6, 150 mM NaCl and protease inhibitor cocktail (100 \u00b5M leupeptin, 1 \u00b5M pepstatin and 5 \u00b5M bestatin). Cells were lysed twice by French press 1000 Psi and then centrifuged at 10,000 g to remove cellular debris where the supernatant was then transferred to a new tube and the pellet was discarded. The conjugated agarose beads (Ni-NTA agarose and S-Tag binding agarose, EMD Millipore 69704\u20133) were equilibrated with the lysis buffer and 1 ml of agarose was added in batch to the recovered supernatant. Agarose was then recovered on a column and washed an additional two times with the lysis buffer to remove non-specific bound proteins. Proteins were eluted using either, 500 \u00b5l 3 M MgCl2, 20 mM tris pH 7.6 (S-TAG beads), or 500 \u00b5l 250 mM imidazole, 500 mM NaCl, 20 mM Tris pH 7.6 (Ni-NTA beads). 20 \u00b5g protein was loaded onto SDS-PAGE gel and then transferred onto PVDF membrane for western blot using either the endogenous Mif1 antibody or S-Tag antibody (GenScript Cat# A00625, RRID:AB_915085).\n\n### Mass spectrometry\n\nP. luteoviolacea was grown in 50 ml Marine Broth (MB) media in 250 ml flasks at 30\u00b0C for 6 hr or overnight (12\u201314 hr). Cells were centrifuged for 30 min at 7000 g and 4\u00b0C and resuspended in 5 ml cold extraction buffer (20 mM Tris, pH 7.5, 1 M NaCl). The resuspensions were centrifuged for 30 min at 4000 g and 4\u00b0C and the supernatant was isolated and centrifuged for 30 min at 7000 g and 4\u00b0C. The pellet was resuspended in 20\u2013100 \u00b5l cold extraction buffer and stored at 4\u00b0C for further use. All mass spectrometry was done by the Functional Genomics Center Zurich (FGCZ). To prep the MAC extracts for mass spectrometry, the extracts were precipitated by mixing 30 \u00b5l of sample with 70 \u00b5l water and 100 \u00b5l 20% TCA. The samples were then washed twice with cold acetone. The dry pellets were dissolved in 45 \u00b5l buffer (10 mM Tris/2 mM CaCl2, pH 8.2) and 5 \u00b5l trypsin (100 ng/\u00b5l in 10 mM HCl). They were then microwaved for 30 min at 60\u00b0C. The samples were dried, then dissolved in 20 \u00b5l 0.1% formic acid and transferred to autosampler vials for LC/MS/MS. 1 \u00b5l was injected.\n",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "ae6f67b9-5b5b-4b2a-867a-bcafb43d3d67",
+      "submission_id": "58df282b-ccbc-4202-b037-1f3429fd1792",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Misha Kudryashev, Max Planck Institute of Biophysics Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.46845.023](https://doi.org/10.7554/eLife.46845.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A contractile injection system stimulates tubeworm metamorphosis by translocating a proteinaceous effector\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gisela Storz as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript by Ericson and colleagues investigates the Metamorphosis Associated Contractile (MAC) system that Pseudoalteromonas luteoviolacea employs to induce metamorphosis of host larvae of the tubeworm Hydroides elegans. The authors characterized a cluster of six genes, one of which, Mif1, was found to be essential for the functionality of the MAC system towards Hydroides. Structural analysis by electron-cryotomography and subtomogram averaging revealed that while in the wild-type MAC system there is a density inside the inner tube, the Mif1-deficient system is lacking this density, suggesting the location of the effector to be inside the inner tube. In agreement of Mif1 being the translocated effector, electroporation of Mif1 into tubeworm larvae was sufficient to trigger metamorphosis.\n\nThe manuscript is interesting and well written; however, several essential points have to be addressed.\n\nEssential comments:\n\n1) The reviewers think that the assignment of the localization of Mif1 in the MAC particle requires more validation. Biochemical techniques such as SDS-PAGE or Western blotting could be used to analyze the protein composition in purified WT and \u0394JF50_12615 particles normalized to the same protein concentration. Furthermore, there is no interaction observed between Mif1 and the tube component by BTH. This could not be taken as conclusive, particularly since the gp19-like structure in the assembled MAC system is a hexamer in which Mif1 could be fitted similarly to the Tse2-Hcp1 interaction in T6SS (Silverman et al., 2013). The reviewers suggest that similar approaches be considered to test the fit of Mif1 within the MAC tube.\n\n2) A standard test for validating the function of the protein is the complementation assay. While the functional complementation for JF50_12605 and JF50_12615 mutants is shown in Figure 1B, the reviewers wonder whether the tubes were also found full after complementation of JF50_12615?\n\n3) Could the authors suggest a potential function or discuss functional units of JF50_12615 based on its the amino sequence or its location in the genome? Any conserved/hypervariable regions? Do Photorhabdus or Serratia contain orthologs? The authors suggest that Mif1 can make pores. Are there any hydrophobic domains that could be identified which would support this hypothesis? JF50_12615 occupies the central channel of the tube and thus it could be related to tape measure proteins. Do the WT and \u0394JF50_12615 mutant have similar or different particle length distributions?\n\n4) The authors show that a mutant lacking JF50_12605 is impaired in inducing metamorphosis but instead and in contrast to the Mif1 mutant, when extracellular MACs are prepared from the JF50_12605 mutant, there are no significant defect observed. There is no clear explanation on why this could be. Also there is no suggestion about the role of JF50_12605. Would that protein somehow be involved in helping loading Mif1 into the MACs, a kind of chaperone-like element? Is there any homology, or other features that stand out when examining the sequence of JF50_12605? The reviewers believe that this deserves a little bit more discussion, particularly because an interaction between Mif1 and JF50_12605 has been found using BTH. From this prospect, other methods should be used to validate this interaction, for example co-purification and pull down. This is even more true since the proportion of empty MACs appeared to be similar for the Mif1 and the JF50_12605 mutants.\n\n5) The authors have debated whether the empty MACs could have been missing the inner tube homologous to the bacteriophage tube made of gp19 (JF50_12680). Would the MACs form in absence of the tube? If yes, how do MACs without a tube look like?\n\n6) The authors report they have identified a second MACs effector, a nuclease they called Pne1 (preprint on bioRxiv). Are the authors suggesting that Pne1 is not in the lumen of the MACs? This is confusing and the relationship between Pne1 and Mif1 should be clarified either experimentally, i.e. by subtomogram averaging of Pne1-deficient MACs or in the Discussion.\n\n7) To aid the interpretation of the electroporation experiment it would be great to know how much protein actually ends up in the worm (if any)? Can that amount be compared to the total protein content of the worm?\n\n8) The quality of electron cryotomography and subtomogram averaging data is below the currently accepted standards in the field. The structures presented in Figure 2 have signs of overfitting as revealed by a texture outside of the protein density in the panel A. From the description in the Materials and methods section is not clear how the subtomogram alignment was performed, this should be briefly stated in the Materials and methods section additionally to the reference to Weiss et al. (2017). Each subtomogram average reconstruction has to have a corresponding resolution estimated by similarity between two statistically independently generated maps (so called \"gold standard\" processing). The similarity curves have to be presented in a supplementary figure. The pixel size at which the data is recorded is not needed in the figures. Figure 1\u2014figure supplements 2 and 3 would benefit from noise reduction in the corresponding tomograms by i.e. non-linear anisotropic diffusion.\n",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e312ee49-90b0-41eb-813f-ff5d5bc99b4c",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C1",
+      "claim": "Bacteria can have profound effects on the normal development of diverse animal taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria can have profound effects on the normal development of diverse animal taxa (McFall-Ngai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to McFall-Ngai et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "1fcc3941-3c7f-423f-93c1-982597a514c5",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C2",
+      "claim": "Surface-bound bacteria often serve as environmental triggers that induce mobile animal larvae to settle on a surface and undergo metamorphosis in marine environments.",
+      "claim_type": "EXPLICIT",
+      "source": "During these interactions in marine environments, surface-bound bacteria often serve as environmental triggers that induce mobile animal larvae to settle on a surface and undergo metamorphosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "c6c3d191-d7a9-4d1e-b555-ec938ede5d7b",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C3",
+      "claim": "The stimulation of metamorphosis by bacteria is critical for coral reef formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the stimulation of metamorphosis by bacteria is critical for diverse animal-mediated processes such as coral reef formation (Webster et al., 2004; Whalan and Webster, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Webster et al., 2004 and Whalan and Webster, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "db90be3f-c210-4340-8630-11b9cf1a980a",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C4",
+      "claim": "The stimulation of metamorphosis by bacteria is critical for the recruitment of stocks for marine fisheries.",
+      "claim_type": "EXPLICIT",
+      "source": "the recruitment of stocks for marine fisheries (Dworjanyn and Pirozzi, 2008; Yu et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dworjanyn and Pirozzi, 2008 and Yu et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "c2ab22e6-364b-4593-98a7-152f7f24dd32",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C5",
+      "claim": "The stimulation of metamorphosis by bacteria is critical for the fouling of submerged surfaces like the hulls of ships (biofouling).",
+      "claim_type": "EXPLICIT",
+      "source": "and the fouling of submerged surfaces like the hulls of ships (i.e. biofouling) (Khandeparker et al., 2006; Nedved and Hadfield, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Khandeparker et al., 2006 and Nedved and Hadfield, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "05a550c5-1296-4ed7-9d73-98c84f328eb2",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C6",
+      "claim": "Little is known about the mechanisms that govern the microbe-animal interaction involved in bacteria-induced metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "we know little about the mechanisms that govern this microbe\u2013animal interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "bfc18a15-fb53-49a5-9161-47ecb87a72f8",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C7",
+      "claim": "The link between bacteria and animal metamorphosis was first discovered in the 1930s.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that the link between bacteria and animal metamorphosis was first discovered in the 1930s (Zobell and Allen, 1935)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zobell and Allen, 1935",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "5e0f3973-5038-48b9-9fba-bf16f9a9cf1c",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C8",
+      "claim": "Few bacterial products have been described that stimulate the developmental transition of metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "few bacterial products have been described that stimulate this developmental transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "a69dd755-3f0e-40e9-b55d-3eda1906e0fe",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C9",
+      "claim": "Identified bacterial cues that stimulate metamorphosis can all be classified as small molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, identified bacterial cues can all be classified as small molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement summarizing existing literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "3661d334-a43d-4b8f-9242-180502196392",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C10",
+      "claim": "The small bacterial metabolite tetrabromopyrrole induces partial or complete metamorphosis of corals.",
+      "claim_type": "EXPLICIT",
+      "source": "Two examples are the small bacterial metabolite tetrabromopyrrole, which induces partial or complete metamorphosis of corals (Sneed et al., 2014; Tebben et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sneed et al., 2014 and Tebben et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "326481af-46a2-44d7-8ee0-4a9ff4ba8a81",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C11",
+      "claim": "The polar molecule histamine from algae or associated microbes induces urchin metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "and the polar molecule histamine from algae or associated microbes, which induces urchin metamorphosis (Swanson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Swanson et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "b78241b2-8e65-40dc-9307-09b5b1f78fbe",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C12",
+      "claim": "No proteinaceous bacterial cues have been identified that stimulate animal metamorphosis prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, however, no proteinaceous bacterial cues have yet been identified that stimulate animal metamorphosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "4029940f-4e52-45d8-ae4d-6f73a823cd8a",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C13",
+      "claim": "P. luteoviolacea produces arrays of Metamorphosis Associated Contractile structures (MACs) that induce the metamorphosis of Hydroides larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that P. luteoviolacea produces arrays of Metamorphosis Associated Contractile structures (MACs) that induce the metamorphosis of Hydroides larvae (Huang et al., 2012; Shikuma et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Huang et al., 2012 and Shikuma et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "2939a4fa-4116-4239-8a60-c04171961e34",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C14",
+      "claim": "MACs are an example of a Contractile Injection System (CIS).",
+      "claim_type": "EXPLICIT",
+      "source": "MACs are an example of a Contractile Injection System (CIS)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of classification",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "397b98e6-2d30-4cf8-b87a-c24b52652b7f",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C15",
+      "claim": "Contractile Injection Systems are macromolecular machines that are specialized to puncture membranes and often deliver proteinaceous effectors into target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "macromolecular machines that are specialized to puncture membranes and often deliver proteinaceous effectors into target cells (Brackmann et al., 2017; Taylor et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brackmann et al., 2017 and Taylor et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "a5a10039-ed5a-443b-ab1f-f428f6095ca2",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C16",
+      "claim": "MACs are evolutionarily related to the contractile tails of bacteriophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other CISs, MACs are evolutionarily related to the contractile tails of bacteriophages (bacterial viruses)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about evolutionary relationship",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "2410f898-063c-431f-97ee-26c287d1b0bd",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C17",
+      "claim": "MACs are composed of an inner tube protein (homologous to gp19 from phage T4 and Hcp from type six secretion systems) surrounded by a contractile sheath, a tail-spike, and a baseplate complex.",
+      "claim_type": "EXPLICIT",
+      "source": "and are composed of an inner tube protein (homologous to gp19 from phage T4 and Hcp from type six secretion systems) surrounded by a contractile sheath, a tail-spike, and a baseplate complex (Shikuma et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shikuma et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "5c3e7c1d-e5b7-489e-9691-ea43569207f8",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C18",
+      "claim": "The conserved mechanism of CIS is driven by contraction of the sheath, which propels the inner tube/spike into the target cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved mechanism is driven by contraction of the sheath, which propels the inner tube/spike into the target cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about conserved mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "13132f4f-14fc-4bb9-8103-de179799ddeb",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C19",
+      "claim": "Translocation mechanisms of effectors via the spike complex of a CIS have been well characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "Translocation mechanisms of effectors via the spike complex of a CIS have been well characterized (Quentin et al., 2018; Shneider et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Quentin et al., 2018 and Shneider et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "7cd13d43-c55d-4a89-a4da-0935e7d32224",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C20",
+      "claim": "The presence of an alternative pathway of loading effectors into the inner tube lumen has been speculated but is only poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of an alternative pathway of loading effectors into the inner tube lumen has been speculated but is only poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "8eecb277-6400-47e8-abe0-e592527fcbc5",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C21",
+      "claim": "An amorphous density inside the inner tube of the Antifeeding prophage (Afp) was attributed to either the toxin payload or a tape-measuring protein.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an amorphous density inside the inner tube of the Antifeeding prophage (Afp) was attributed to either the toxin payload or a tape-measuring protein (Heymann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Heymann et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "36523b67-f813-412a-899a-58f13df7d745",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C22",
+      "claim": "Other classes of effectors were found to interact with the inner tube protein (Hcp) and are likely released post-firing by tube dissociation in the target cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Other classes of effectors were found to interact with the inner tube protein (Hcp) and are likely released post-firing by tube dissociation in the target cytoplasm (Sana et al., 2016; Silverman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sana et al., 2016 and Silverman et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "c787660b-6326-44f5-9e19-b72207a93a1b",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C23",
+      "claim": "A previously identified genomic region in P. luteoviolacea encodes a bacterial protein that localizes to the inner tube lumen of the MAC structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a previously identified genomic region in P. luteoviolacea (Shikuma et al., 2016) encodes a bacterial protein that localizes to the inner tube lumen of the MAC structure",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in the manuscript and citation to Shikuma et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "2e136749-9c59-4a81-b73f-6b0827ee8421",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C24",
+      "claim": "The protein encoded by the previously identified genomic region is necessary for inducing the metamorphosis of Hydroides larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "and is necessary for inducing the metamorphosis of Hydroides larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional assays in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "1f430f65-1d39-43c5-951c-b177b3f799b7",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C25",
+      "claim": "The results identify a proteinaceous effector stimulating animal metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results identify a proteinaceous effector stimulating animal metamorphosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "a9253878-f395-4614-8c1c-90577c61d095",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C26",
+      "claim": "The results provide a direct visualization of an effector in the tube lumen of an assembled CIS.",
+      "claim_type": "EXPLICIT",
+      "source": "and provide a direct visualization of an effector in the tube lumen of an assembled CIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cryo-electron tomography imaging in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "16ae116e-42ca-4644-8b41-27fb0873bfb3",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C27",
+      "claim": "The \u0394JF50_12605 mutant exhibited a reduced ability to induce metamorphosis (less than 20%).",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394JF50_12605 and \u0394JF50_12615 mutants exhibited a reduced ability to induce metamorphosis (less than 20%, Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by metamorphosis assay data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "15591be1-51fe-4e5a-999c-c3881778288a",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C28",
+      "claim": "The \u0394JF50_12615 mutant exhibited a reduced ability to induce metamorphosis (less than 20%).",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394JF50_12605 and \u0394JF50_12615 mutants exhibited a reduced ability to induce metamorphosis (less than 20%, Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by metamorphosis assay data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "538b1ffc-1ea2-45f0-b3db-f9b8e1ac9de9",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C29",
+      "claim": "Mutation of the other four genes (JF50_12590, JF50_12595, JF50_12600, JF50_12610) had no observable effect on metamorphosis induction.",
+      "claim_type": "EXPLICIT",
+      "source": "while mutation of the other four genes had no observable effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by metamorphosis assay data in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "d82d321f-b29a-4c30-abb9-6adfc4cbcb99",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C30",
+      "claim": "When JF50_12605 and JF50_12615 were replaced back into their native chromosomal loci, metamorphosis induction was restored.",
+      "claim_type": "EXPLICIT",
+      "source": "When JF50_12605 and JF50_12615 were replaced back into their native chromosomal loci, metamorphosis induction was restored (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by complementation assay data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "bb63e10a-7718-4fea-a7ab-d8d5b3580308",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C31",
+      "claim": "Larvae exposed to MACs from a \u2206JF50_12615 mutant did not induce metamorphosis even at high concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "While larvae exposed to MACs from a \u2206JF50_12615 mutant did not induce metamorphosis (even at high concentrations), MACs from a \u2206JF50_12605 mutant induced metamorphosis when added at higher doses (Figure 1\u2014figure supplement 1A/B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response data in Figure 1\u2014figure supplement 1A/B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "5c69bebe-7f21-4ca1-85e3-451871c278f4",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C32",
+      "claim": "MACs from a \u2206JF50_12605 mutant induced metamorphosis when added at higher doses.",
+      "claim_type": "EXPLICIT",
+      "source": "While larvae exposed to MACs from a \u2206JF50_12615 mutant did not induce metamorphosis (even at high concentrations), MACs from a \u2206JF50_12605 mutant induced metamorphosis when added at higher doses (Figure 1\u2014figure supplement 1A/B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response data in Figure 1\u2014figure supplement 1A/B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "dcfaeebb-994e-43bb-9f17-6beeab54a0ee",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C33",
+      "claim": "JF50_12615 was essential for the induction of metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that JF50_12615 was essential for the induction of metamorphosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from functional assays showing complete loss of function",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "179c129d-aa34-46b0-9f92-5e62f84e79b5",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C34",
+      "claim": "JF50_12605 contributed to metamorphosis induction but was dispensable.",
+      "claim_type": "EXPLICIT",
+      "source": "while JF50_12605 contributed but was dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from functional assays showing partial loss of function",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "5ff31da7-e53a-4420-bc0b-99d21079b30f",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C35",
+      "claim": "The protein encoded by JF50_12615 is named Mif1 for Metamorphosis-Inducing Factor 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our results here and below, we name the protein encoded by JF50_12615 as 'Mif1' for Metamorphosis-Inducing Factor 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of nomenclature",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "0c60f3ff-e179-4d3d-a8cd-d68edc935878",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C36",
+      "claim": "Extended MACs from both \u0394JF50_12605 and \u0394mif1 strains exhibited a central lumen with very low density.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon detailed analyses, we observed that extended MACs from both \u0394JF50_12605 and \u0394mif1 strains exhibited a central lumen with very low density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cryo-electron tomography imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "fd4e43e0-59e1-4cf4-812f-9858282b12f5",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C37",
+      "claim": "MACs from wildtype and the other deletion mutants possessed a density distribution that was homogeneous and a lumen was not discernable.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, MACs from wildtype and the other deletion mutants possessed a density distribution that was homogeneous and a lumen was not discernable (Figure 1C\u2013G and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cryo-electron tomography imaging data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "af0a1673-ba27-445b-9963-e2649906604b",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C38",
+      "claim": "The empty phenotype in \u0394JF50_12605 and \u0394mif1 MACs correlated with the inability to induce metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, quantitative analyses showed that the empty phenotype in \u0394JF50_12605 and \u0394mif1 MACs correlated with the inability to induce metamorphosis (Figure 1A/H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis comparing structural and functional data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "bc87a7e9-ee16-48da-a733-ee9fbfc49338",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C39",
+      "claim": "The replacement of mif1 and JF50_12605 back into their native chromosomal loci reverted the empty phenotype back to filled.",
+      "claim_type": "EXPLICIT",
+      "source": "The replacement of mif1 and JF50_12605 back into their native chromosomal loci reverted the empty phenotype back to filled (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cryo-electron tomography imaging of complemented strains",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "a427830b-013a-4ab7-8f2c-27e97e4aacb6",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C40",
+      "claim": "Deletion of the full JF50_12590\u2013JF50_12615 locus did not impair the formation of ordered arrays of MACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the full JF50_12590\u2013JF50_12615 locus (Figure 1\u2014figure supplement 2), or each of the six genes individually (Figure 1\u2014figure supplement 3), did not impair the formation of ordered arrays of MACs",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cryo-electron tomography imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "e20debca-4cd1-47b9-830f-8418cdad04e3",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C41",
+      "claim": "Deletion of each of the six genes individually did not impair the formation of ordered arrays of MACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the full JF50_12590\u2013JF50_12615 locus (Figure 1\u2014figure supplement 2), or each of the six genes individually (Figure 1\u2014figure supplement 3), did not impair the formation of ordered arrays of MACs",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cryo-electron tomography imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "848204ed-cd30-4978-9f11-8148b07a6cdf",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C42",
+      "claim": "The \u0394mif1 structure lacked any discernible density inside the ~4 nm-wide tube lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "While the \u0394mif1 structure lacked any discernible density inside the ~4 nm-wide tube lumen (Figure 2E,F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sub-tomogram averaging data shown in Figure 2E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "75c846af-6af6-4126-8c5a-42553a6a3d96",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C43",
+      "claim": "The wildtype structure exhibited repeating packets of density inside the tube.",
+      "claim_type": "EXPLICIT",
+      "source": "the wildtype structure exhibited repeating packets of density inside the tube (Figure 2A\u2013D), suggesting the presence of a potential cargo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sub-tomogram averaging data shown in Figure 2A-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "470431db-3f0d-45c8-81f0-925ec5c94313",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C44",
+      "claim": "The cargo and tube densities were separated by a low-density region.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note, however, that the cargo and tube densities were separated by a low-density region (arrowheads in Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sub-tomogram averaging data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "7a0d30db-26dc-4e61-9996-f77dbc21f705",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C45",
+      "claim": "Any expelled tubes from triggered MACs always showed an 'empty' phenotype in cryotomography images.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, any expelled tubes from triggered MACs always showed an 'empty' phenotype in cryotomography images (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cryo-electron tomography imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "85f64f2c-3c46-45c7-b5c1-07cd898c620b",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C46",
+      "claim": "The separation between cargo and tube densities could indicate weak or entirely absent interactions between cargo and tube.",
+      "claim_type": "EXPLICIT",
+      "source": "These results together could indicate weak or entirely absent interactions between cargo and tube, possibly facilitating rapid release of the cargo from the tube upon contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "fa0fef2e-3bfd-4420-b26f-7496cc513567",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C47",
+      "claim": "Mif1 was detected in wildtype MAC samples by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "In two independent experiments, we detected Mif1 but not JF50_12605 in wildtype MAC samples (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "74e9844b-c67b-41eb-92cb-6e8403a5e161",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C48",
+      "claim": "JF50_12605 was not detected in wildtype MAC samples by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "In two independent experiments, we detected Mif1 but not JF50_12605 in wildtype MAC samples (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "c6693bb3-279e-41f5-8ae7-0c78b6852547",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C49",
+      "claim": "MACs from the \u0394JF50_12605 mutant exhibited considerably fewer spectral counts for the Mif1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "MACs from the \u0394JF50_12605 mutant exhibited considerably fewer spectral counts for the Mif1 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "21761b5f-b953-4364-92ef-46bb4e0efbe1",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C50",
+      "claim": "Mif1 was detected strongly associated with MACs from two Mif1-FLAG-tagged strains by dot-blot and an anti-FLAG antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "After purifying MACs, we detected Mif1 strongly associated with MACs from two Mif1-FLAG-tagged strains and one at a reduced level by dot-blot and an anti-FLAG antibody (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dot-blot data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "a82dc9af-831f-4682-9c99-f06e636d8dea",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C51",
+      "claim": "JF50_12605 was detected when pulling down Mif1 by nickel chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected JF50_12605 when pulling down Mif1 by nickel chromatography, and we detected Mif1 when pulling down JF50_12605 with S-tag antibodies (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "6d31c596-96e3-48ed-8240-7129c174be18",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C52",
+      "claim": "Mif1 was detected when pulling down JF50_12605 with S-tag antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected JF50_12605 when pulling down Mif1 by nickel chromatography, and we detected Mif1 when pulling down JF50_12605 with S-tag antibodies (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pull-down assay data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "043c4110-26d5-4c6f-a224-7a725da385e3",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C53",
+      "claim": "A significant interaction was found between JF50_12605 and Mif1 in bacterial two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "When JF50_12605, Mif1 and MacT1 (JF50_12680, tube) were screened for interactions, we found a significant interaction between JF50_12605 and Mif1 as well as JF50_12605 with itself (Figure 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bacterial two-hybrid data shown in Figure 3D-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "e24c1332-12d9-4e91-9a9b-40a70d08af93",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C54",
+      "claim": "A significant interaction was found between JF50_12605 and itself in bacterial two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "When JF50_12605, Mif1 and MacT1 (JF50_12680, tube) were screened for interactions, we found a significant interaction between JF50_12605 and Mif1 as well as JF50_12605 with itself (Figure 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bacterial two-hybrid data shown in Figure 3D-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "cbc80e81-b0dc-4f65-a15e-ab74a5c3424b",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C55",
+      "claim": "Neither JF50_12605 nor Mif1 interacted with MacT1 (tube protein) in bacterial two-hybrid assays.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither JF50_12605, nor Mif1 interacted with MacT1 (JF50_12680, tube).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bacterial two-hybrid data shown in Figure 3D-F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "37706937-352d-4e71-ac71-f0a1fd369715",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C56",
+      "claim": "Mif1 is present within the MAC structure and represents the densities seen in the tube lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that Mif1 is present within the MAC structure and represents the densities seen in the tube lumen",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of evidence including mass spectrometry, imaging, and functional assays",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "76d7f9b9-ed1c-4d33-ba85-9642f1208e8a",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C57",
+      "claim": "JF50_12605 might act as a chaperone that helps to localize Mif1 inside the MAC tube.",
+      "claim_type": "EXPLICIT",
+      "source": "while JF50_12605 might act as a chaperone that helps to localize Mif1 inside the MAC tube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from functional and interaction data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "e9d98b71-c649-4762-a5b3-fb445a584184",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C58",
+      "claim": "Mif1 could associate with MACs independently of JF50_12605 in an inefficient manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Mif1, however, could also associate with MACs independently of JF50_12605 in an inefficient manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from residual Mif1 detection in \u0394JF50_12605 mutant and dose-response data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "0415c001-49da-46e5-9133-fc8d23ed027b",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C59",
+      "claim": "Mif1 protein provided exogenously to competent larvae of Hydroides at concentrations of up to 250 ng/\u00b5l did not stimulate metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mif1 protein provided exogenously to competent larvae of Hydroides at concentrations of up to 250 ng/\u00b5l did not stimulate metamorphosis (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by metamorphosis assay data shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "79bc3672-82bf-45e4-b17d-8e14cae56d2b",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C60",
+      "claim": "When Mif1 was delivered into competent Hydroides larvae by electroporation, a significant percentage of the larvae underwent metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "When we delivered Mif1 into competent Hydroides larvae, a significant percentage of the larvae underwent metamorphosis (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electroporation and metamorphosis assay data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "fd8ef8d5-e620-4db2-9f58-5d0960373dc1",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C61",
+      "claim": "Neither JF50_12605 nor GFP stimulated metamorphosis when electroporated under the same conditions as Mif1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neither JF50_12605 nor GFP stimulated metamorphosis when electroporated under the same conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electroporation and metamorphosis assay data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "5999ea32-7daf-4b1f-856b-5077a418acd2",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C62",
+      "claim": "Mif1 was sufficient to stimulate Hydroides metamorphosis when delivered by electroporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that Mif1 was sufficient to stimulate Hydroides metamorphosis when delivered by electroporation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from electroporation experiments showing metamorphosis induction",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "65197c3b-8ca6-4aa4-9ce4-36defe85e8b8",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C63",
+      "claim": "The bacterium P. luteoviolacea induces metamorphosis of animal larvae by delivering the effector protein Mif1 via the tube lumen of an extracellular contractile injection system (MACs).",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our data indicate that the bacterium P. luteoviolacea induces metamorphosis of animal larvae by delivering the effector protein Mif1 via the tube lumen of an extracellular contractile injection system (MACs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion based on all experimental data in the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "8642f5d3-7917-4aa3-af8a-7105ad3c1ad5",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C64",
+      "claim": "Previously reported bacterial cues for animal metamorphosis are all classified as small molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "First, previously reported bacterial cues for animal metamorphosis are all classified as small molecules (Sneed et al., 2014; Swanson et al., 2007; Tebben et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "c9f4d8e0-572e-4328-8200-5ff4611a7530",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C65",
+      "claim": "The identification of a protein (Mif1) that stimulates tubeworm metamorphosis requires expanding the scope of possible biomolecules and mechanisms by which bacteria stimulate animal development.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of a protein (Mif1) that stimulates tubeworm metamorphosis requires us to expand the scope of possible biomolecules and mechanisms by which bacteria stimulate animal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about implications of the findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "ce1ca8ea-aab7-4fd6-837c-af41df7493ef",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C66",
+      "claim": "The delivered Mif1 protein could have an enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that rather than MACs stimulating metamorphosis solely by physical puncturing and depolarization of larval membranes, the delivered Mif1 protein could have an enzymatic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on findings and comparison to other CIS effectors",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "02d30485-e137-4e92-90bd-04841e086a9d",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C67",
+      "claim": "The findings challenge previous hypotheses on metamorphosis induction that suggested physical puncturing and depolarization as the sole mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This challenges previous hypotheses on metamorphosis induction (Carpizo-Ituarte and Hadfield, 1998; Yool et al., 1986)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on findings and citations to previous hypotheses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "7a2ffaf4-70d5-4c85-ab37-d0167a3b8503",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C68",
+      "claim": "The findings would be in line with many studies on other eukaryote-targeting CIS effectors with enzymatic activities.",
+      "claim_type": "EXPLICIT",
+      "source": "however, it would be in line with many studies on other eukaryote-targeting CIS effectors with enzymatic activities (Jiang et al., 2016; Ma and Mekalanos, 2010; Vlisidou et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on other CIS effectors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "79eb6342-6f49-45cb-9539-261bb987b624",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C69",
+      "claim": "Mif1 does not feature any recognizable conserved protein domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Future investigations will shed light on the molecular mechanism by which Mif1 triggers animal metamorphosis, which is a challenging task, given that Mif1 does not feature any recognizable conserved protein domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about protein sequence analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "cb4c78ae-e7fd-4275-9dea-044e7e949333",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C70",
+      "claim": "The results directly showed the previously hypothesized possibility of effector delivery via the tube lumen of a CIS.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our results directly showed the previously hypothesized possibility of effector delivery via the tube lumen of a CIS (Heymann et al., 2013; Sana et al., 2016; Shneider et al., 2013; Silverman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by imaging data and citations to previous hypotheses",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "5c757fb4-b420-42c2-9063-9bd51a6e8bfa",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C71",
+      "claim": "T6SS effectors that are thought to be delivered by the T6SS tube lumen show protein\u2013protein interactions between the T6SS effector and the T6SS tube protein (Hcp).",
+      "claim_type": "EXPLICIT",
+      "source": "The T6SS effectors that are thought to be delivered by the T6SS tube lumen show protein\u2013protein interactions between the T6SS effector and the T6SS tube protein (Hcp) (Sana et al., 2016; Silverman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies on T6SS",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "f1eb23b5-a60b-48c0-82dd-c31162f12293",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C72",
+      "claim": "Mif1 and MAC tube protein do not show protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we did not detect such interactions between Mif1 and MAC tube protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bacterial two-hybrid data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "085aa008-6fad-46e9-b3f7-5080f85c82cf",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C73",
+      "claim": "The T6SS tube is inherently unstable and disassembles soon after contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "While the T6SS tube is inherently unstable and disassembles soon after contraction (Szwedziak and Pilhofer, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Szwedziak and Pilhofer, 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "72200da6-c39c-42bf-b891-39b6b9cfe3c5",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C74",
+      "claim": "Inner tubes of MACs and other extracellular CISs (and contractile phages) can be readily detected by electron microscopy and therefore seem to be much more stable than T6SS tubes.",
+      "claim_type": "EXPLICIT",
+      "source": "inner tubes of MACs and other extracellular CISs (and contractile phages) can be readily detected by electron microscopy and therefore seem to be much more stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on electron microscopy observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "215564fa-33ce-4bd9-8f21-3eadcce3b33c",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C75",
+      "claim": "Weak or entirely absent interactions between Mif1 and MAC tube could facilitate rapid release of the cargo from the tube after contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that this could be the very reason for weak or entirely absent interactions between Mif1 and MAC tube, as well as for the low-density region that was seen in subtomogram averages separating Mif1 and MAC tube (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Speculation based on structural observations",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "b9921e2b-6c44-4373-b62b-e43a2edbd030",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C76",
+      "claim": "Low affinity between Mif1 and tube could require an assembly factor (JF50_12605) that allows for efficient targeting of Mif1 to the tube.",
+      "claim_type": "EXPLICIT",
+      "source": "Another mechanistic consequence of low affinity between Mif1 and tube could be the requirement of an assembly factor, that is JF50_12605, that allows for efficient targeting of Mif1 to the tube.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on functional data showing JF50_12605 role",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "d79b1de5-31c9-4f8b-8e47-a30fea9071da",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C77",
+      "claim": "MACs have potential for being developed as delivery systems targeting eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As micron-scale, syringe-like structures, MACs have potential for being developed as delivery systems targeting eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about potential applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "846123f8-d87d-445d-ae27-3e0dfbffbfbf",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C78",
+      "claim": "Extracellular CISs are of particular interest because they are released from the producing bacterial cell and autonomously bind to the target cell's surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular CISs such as MACs are of particular interest, because they are released from the producing bacterial cell and autonomously bind to the target cell's surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about properties of extracellular CISs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "8a40c0ec-5809-4a8f-9817-d74d12689147",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C79",
+      "claim": "Extracellular CISs that target bacterial pathogens are already under development as narrow host-range antimicrobial agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular CISs that target bacterial pathogens are already under development as narrow host-range antimicrobial agents (Scholl, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Scholl, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "c9703f19-d895-4403-9d82-c5932ddeadcd",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C80",
+      "claim": "The identification of effectors carried by MACs provides the basis for loading MACs with a cargo of choice.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of effectors carried by MACs provides the basis for loading MACs with a cargo of choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about implications for engineering applications",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "305a06cb-bbf3-4321-8476-beb52e8a734e",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C81",
+      "claim": "A second effector that MACs deliver to eukaryotic cells was recently reported.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported a second effector that MACs deliver to eukaryotic cells (Rocchi et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rocchi et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "5eb143c5-e9a2-4b9b-add7-46930aa398c4",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C82",
+      "claim": "Pne1 is not found within the inner tube based on the filled phenotype of the \u2206pne1 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a cryotomogram of the \u2206pne1 (JF50_12610) mutant shows that the tube has a filled phenotype (Figure 1\u2014figure supplement 3). The filled phenotype suggests that Pne1 is not found within the inner tube",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from imaging data showing filled phenotype",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "57442499-82a0-49a7-95b9-6e4d9b3b19de",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C83",
+      "claim": "Pne1 could be loaded in a different location (e.g. spike) within the MACs complex.",
+      "claim_type": "EXPLICIT",
+      "source": "but instead could be loaded in a different location (e.g. spike) within the MACs complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on imaging data",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "dc29e8df-106b-4cba-adc0-ecb1139b7b00",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C84",
+      "claim": "Understanding tube lumen-delivered effectors could be particularly helpful based on the potential of a higher payload per CIS compared to spike-bound effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding tube lumen-delivered effectors could be particularly helpful, based on the potential of a higher payload per CIS, as compared to spike-bound effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about advantages of tube lumen delivery",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "9ab871d9-74a2-4162-99fb-402b7f2f8225",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C85",
+      "claim": "Bacteria are known to stimulate metamorphosis in every major group of animals alive today.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that bacteria are known to stimulate metamorphosis in every major group of animals alive today (Hadfield, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hadfield, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "cb0c763c-8390-421c-9ede-7a847058d998",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C86",
+      "claim": "MAC-like gene clusters have been detected in microbes from diverse environments including the ocean, terrestrial environments and even the human gut.",
+      "claim_type": "EXPLICIT",
+      "source": "combined with the detection of MAC-like gene clusters in microbes from diverse environments including the ocean, terrestrial environments and even the human gut (B\u00f6ck et al., 2017; Jiang et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to B\u00f6ck et al., 2017 and Jiang et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "aa8607d2-422b-4962-8117-ef5e1e33d606",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "claim_id": "C87",
+      "claim": "A huge diversity of bacterium\u2013animal interactions remains to be explored.",
+      "claim_type": "EXPLICIT",
+      "source": "underscores the huge diversity of bacterium\u2013animal interactions that remains to be explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on widespread distribution of relevant systems",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "76e71c07-ea8d-4dab-9988-0016a95ccd69",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Deletion of genes JF50_12605 and JF50_12615 (mif1) significantly reduced metamorphosis induction to <20%, while deletion of four other genes (JF50_12590, JF50_12595, JF50_12600, JF50_12610) had no effect. Complementation restored function. JF50_12615 (mif1) was essential for metamorphosis, while JF50_12605 contributed but was dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 provide functional genetic evidence with appropriate controls (deletion and complementation). The distinction between essential (mif1) and dispensable (JF50_12605) is supported by dose-response data (C31-C32) showing that \u0394JF50_12605 MACs can induce metamorphosis at higher concentrations while \u0394mif1 cannot. Statistical significance is indicated (Figure 1A/B).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "05a9672e-d496-473f-b0b2-7f5cde96de7c",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cryo-electron tomography revealed that MACs from \u0394JF50_12605 and \u0394mif1 strains exhibited an 'empty' phenotype with low-density central lumen, while wildtype and other deletion mutants showed a 'filled' phenotype. The empty phenotype correlated with inability to induce metamorphosis, and complementation reverted the phenotype. MAC assembly was not impaired by any deletions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C41 provide structural evidence using cryo-electron tomography with quantitative analysis (C38). The correlation between structural phenotype and function is demonstrated. Complementation experiments (C39) confirm the genetic basis. The preservation of MAC assembly (C40-C41) is an important control showing the deletions specifically affect cargo loading, not structure formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "bca84b11-1a7b-4224-8b35-31b3f9827762",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sub-tomogram averaging revealed that wildtype MACs contain repeating packets of density inside the tube lumen separated from the tube by a low-density region, while \u0394mif1 MACs lack any discernible density in the ~4 nm-wide lumen. Expelled tubes from triggered MACs always showed an empty phenotype, suggesting weak or absent cargo-tube interactions that may facilitate rapid cargo release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 provide high-resolution structural data from sub-tomogram averaging. The observation of a low-density region separating cargo and tube (C44) and the consistent empty phenotype of expelled tubes (C45) provide direct evidence. However, C46 is speculative about the functional significance of weak interactions. The resolution estimates (Figure 2\u2014figure supplement 1) support the quality of the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mass spectrometry detected Mif1 but not JF50_12605 in wildtype MACs, with reduced Mif1 in \u0394JF50_12605 MACs. FLAG-tagged Mif1 associated with MACs. Pull-down and bacterial two-hybrid assays showed JF50_12605 interacts with Mif1 and itself, but neither protein interacted with the tube protein MacT1. These data indicate Mif1 is the cargo in the tube lumen, while JF50_12605 acts as a chaperone for efficient Mif1 loading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C55 provide multiple independent lines of biochemical evidence (mass spectrometry, immunodetection, pull-downs, two-hybrid assays) that converge on the same conclusion. The lack of interaction with tube protein (C55, C72) is an important negative control. Claims C56-C58 are reasonable inferences from the data, though C57-C58 involve some speculation about mechanism. The chaperone hypothesis is well-supported by the reduced but not absent Mif1 in \u0394JF50_12605 MACs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "6c19e604-133f-4e1c-aae3-178a54ee8744",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Exogenous Mif1 protein (up to 250 ng/\u00b5l) did not stimulate metamorphosis, but when delivered into larvae by electroporation, Mif1 induced significant metamorphosis while control proteins (JF50_12605, GFP) did not. This demonstrates Mif1 is sufficient to stimulate metamorphosis when delivered intracellularly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 provide functional evidence with appropriate controls (exogenous application, electroporation with control proteins). The electroporation method is validated (Figure 4\u2014figure supplement 2). Statistical significance is indicated (****p\u22640.0001, Figure 4C). The experiment demonstrates sufficiency of Mif1 for metamorphosis induction, though the artificial delivery method differs from natural MAC-mediated delivery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "1e545162-77d0-4e6b-8157-580b50ad5d32",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study identifies Mif1 as a proteinaceous effector that P. luteoviolacea delivers via the tube lumen of MACs to induce tubeworm metamorphosis, providing the first direct visualization of an effector in the tube lumen of an assembled contractile injection system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C25, C26 represent the main conclusions synthesizing all experimental evidence. The conclusion is well-supported by converging genetic (deletion/complementation), structural (cryo-ET, sub-tomogram averaging), biochemical (mass spec, protein interactions), and functional (metamorphosis assays, electroporation) data. This represents a significant advance in understanding both bacteria-induced metamorphosis and CIS effector delivery mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "7cf80586-7a94-4876-997d-69c2dce5bc71",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cell-free MAC preparations showed that \u0394mif1 MACs did not induce metamorphosis even at high concentrations, while \u0394JF50_12605 MACs induced metamorphosis at higher doses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 provide dose-response data (Figure 1\u2014figure supplement 1A/B) that distinguish the essential role of mif1 from the facilitating role of JF50_12605. This supports the interpretation that JF50_12605 acts as a chaperone for efficient Mif1 loading rather than being essential for function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "0437a449-9038-4945-9efd-9f454d977ec9",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Previously identified bacterial cues for animal metamorphosis were all small molecules (tetrabromopyrrole, histamine). The identification of the protein Mif1 as a metamorphosis-inducing factor expands the scope of possible biomolecules and mechanisms by which bacteria stimulate animal development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C9-C12 accurately summarize prior knowledge with appropriate citations. Claim C65 is a reasonable inference about the implications of identifying a proteinaceous cue. This contextualizes the novelty of the findings within the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "0dd315d6-30b8-442a-af3d-afaac291af6c",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The findings suggest Mif1 may have enzymatic activity rather than acting solely through physical membrane puncturing, challenging previous hypotheses. This would align with other CIS effectors with enzymatic activities, though Mif1 lacks recognizable conserved protein domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C67 are speculative interpretations not directly tested in this study. While the sufficiency of electroporated Mif1 suggests it acts intracellularly, no enzymatic activity is demonstrated. Claim C68 provides context from other systems but doesn't validate the hypothesis for Mif1. Claim C69 notes the absence of recognizable domains, which is factual but doesn't resolve the mechanism. Future biochemical characterization is needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "d57b5aba-8426-4ef5-b84f-3032b18c0127",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The results directly demonstrate effector delivery via the tube lumen of a CIS, a previously hypothesized but poorly understood mechanism. Unlike T6SS effectors that interact with tube protein (Hcp), Mif1 does not interact with MAC tube protein. The weak cargo-tube interactions may facilitate rapid cargo release from the more stable MAC tubes compared to unstable T6SS tubes, potentially requiring the assembly factor JF50_12605.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 accurately contextualize the findings within CIS biology with appropriate citations. The lack of Mif1-tube interaction (C72) is experimentally demonstrated. Claims C75-C76 are mechanistic speculations based on structural observations (low-density region, empty expelled tubes) and functional data (JF50_12605 role), but are reasonable hypotheses that explain the data. The comparison with T6SS is informative but the mechanistic interpretations require further testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "8746c31a-7708-460f-a1e1-ace49000462f",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A second MAC effector, Pne1 (JF50_12610), was recently reported. The filled phenotype of \u0394pne1 MACs suggests Pne1 is not located in the inner tube but could be loaded in a different location such as the spike.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 is supported by citation to Rocchi et al., 2019. Claims C82-C83 make a reasonable inference from the imaging data showing filled phenotype in \u0394pne1 mutant (Figure 1\u2014figure supplement 3), though C83 is speculative about alternative loading sites. This demonstrates MACs can deliver multiple effectors via different mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "088cbc89-3565-4e63-b86f-4582ee4ca98c",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MACs have potential as delivery systems targeting eukaryotic cells because they are released from bacteria and autonomously bind target cells. The identification of tube lumen-delivered effectors provides a basis for loading MACs with cargo of choice, with potential advantages over spike-bound effectors due to higher payload capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C80, C84 discuss potential applications but are largely speculative. Claim C79 about antimicrobial development is supported by citation. The potential for engineering MACs is a reasonable inference from understanding the loading mechanism, but no engineering experiments are performed. These are forward-looking statements about possible future applications rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "9a9f0b23-a8ef-4132-84d4-610dac8528c5",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Bacteria profoundly affect animal development, particularly through inducing metamorphosis in marine environments. This interaction is critical for coral reef formation, fisheries recruitment, and biofouling. Despite discovery in the 1930s, few bacterial products stimulating metamorphosis have been described, and mechanisms remain poorly understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide background context with appropriate citations. These establish the biological significance and knowledge gaps that motivate the study. All claims are well-supported by cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "f4cefa1a-cf73-419d-8019-1fdf160984f6",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "P. luteoviolacea produces MACs that induce Hydroides metamorphosis. MACs are contractile injection systems evolutionarily related to bacteriophage tails, composed of inner tube, contractile sheath, tail-spike, and baseplate. The mechanism involves sheath contraction propelling the tube/spike into target cells. Effector translocation via spike complexes is well characterized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C19 provide essential background on MACs and CIS biology with appropriate citations to prior work. These establish the foundation for the current study's investigation of tube lumen cargo delivery. All claims are well-supported by cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    },
+    {
+      "id": "f6183cd0-9690-4846-a2e5-2685a65ce848",
+      "content_id": "310db8c4-0c63-4dc2-832f-f2851285e5e3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Bacteria stimulate metamorphosis in every major animal group, and MAC-like gene clusters are detected in microbes from diverse environments including ocean, terrestrial, and human gut. This underscores the huge diversity of bacterium-animal interactions remaining to be explored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 are supported by appropriate citations. Claim C87 is a reasonable inference about the broader implications. These claims contextualize the potential widespread importance of the MAC-mediated interaction mechanism discovered in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:12:28.599725Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "16ae116e-42ca-4644-8b41-27fb0873bfb3",
+      "result_id": "76e71c07-ea8d-4dab-9988-0016a95ccd69"
+    },
+    {
+      "claim_id": "15591be1-51fe-4e5a-999c-c3881778288a",
+      "result_id": "76e71c07-ea8d-4dab-9988-0016a95ccd69"
+    },
+    {
+      "claim_id": "538b1ffc-1ea2-45f0-b3db-f9b8e1ac9de9",
+      "result_id": "76e71c07-ea8d-4dab-9988-0016a95ccd69"
+    },
+    {
+      "claim_id": "d82d321f-b29a-4c30-abb9-6adfc4cbcb99",
+      "result_id": "76e71c07-ea8d-4dab-9988-0016a95ccd69"
+    },
+    {
+      "claim_id": "dcfaeebb-994e-43bb-9f17-6beeab54a0ee",
+      "result_id": "76e71c07-ea8d-4dab-9988-0016a95ccd69"
+    },
+    {
+      "claim_id": "179c129d-aa34-46b0-9f92-5e62f84e79b5",
+      "result_id": "76e71c07-ea8d-4dab-9988-0016a95ccd69"
+    },
+    {
+      "claim_id": "5ff31da7-e53a-4420-bc0b-99d21079b30f",
+      "result_id": "76e71c07-ea8d-4dab-9988-0016a95ccd69"
+    },
+    {
+      "claim_id": "0c60f3ff-e179-4d3d-a8cd-d68edc935878",
+      "result_id": "05a9672e-d496-473f-b0b2-7f5cde96de7c"
+    },
+    {
+      "claim_id": "fd4e43e0-59e1-4cf4-812f-9858282b12f5",
+      "result_id": "05a9672e-d496-473f-b0b2-7f5cde96de7c"
+    },
+    {
+      "claim_id": "af0a1673-ba27-445b-9963-e2649906604b",
+      "result_id": "05a9672e-d496-473f-b0b2-7f5cde96de7c"
+    },
+    {
+      "claim_id": "bc87a7e9-ee16-48da-a733-ee9fbfc49338",
+      "result_id": "05a9672e-d496-473f-b0b2-7f5cde96de7c"
+    },
+    {
+      "claim_id": "a427830b-013a-4ab7-8f2c-27e97e4aacb6",
+      "result_id": "05a9672e-d496-473f-b0b2-7f5cde96de7c"
+    },
+    {
+      "claim_id": "e20debca-4cd1-47b9-830f-8418cdad04e3",
+      "result_id": "05a9672e-d496-473f-b0b2-7f5cde96de7c"
+    },
+    {
+      "claim_id": "848204ed-cd30-4978-9f11-8148b07a6cdf",
+      "result_id": "bca84b11-1a7b-4224-8b35-31b3f9827762"
+    },
+    {
+      "claim_id": "75c846af-6af6-4126-8c5a-42553a6a3d96",
+      "result_id": "bca84b11-1a7b-4224-8b35-31b3f9827762"
+    },
+    {
+      "claim_id": "470431db-3f0d-45c8-81f0-925ec5c94313",
+      "result_id": "bca84b11-1a7b-4224-8b35-31b3f9827762"
+    },
+    {
+      "claim_id": "7a0d30db-26dc-4e61-9996-f77dbc21f705",
+      "result_id": "bca84b11-1a7b-4224-8b35-31b3f9827762"
+    },
+    {
+      "claim_id": "85f64f2c-3c46-45c7-b5c1-07cd898c620b",
+      "result_id": "bca84b11-1a7b-4224-8b35-31b3f9827762"
+    },
+    {
+      "claim_id": "fa0fef2e-3bfd-4420-b26f-7496cc513567",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "74e9844b-c67b-41eb-92cb-6e8403a5e161",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "c6693bb3-279e-41f5-8ae7-0c78b6852547",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "21761b5f-b953-4364-92ef-46bb4e0efbe1",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "a82dc9af-831f-4682-9c99-f06e636d8dea",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "6d31c596-96e3-48ed-8240-7129c174be18",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "043c4110-26d5-4c6f-a224-7a725da385e3",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "e24c1332-12d9-4e91-9a9b-40a70d08af93",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "cbc80e81-b0dc-4f65-a15e-ab74a5c3424b",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "37706937-352d-4e71-ac71-f0a1fd369715",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "76d7f9b9-ed1c-4d33-ba85-9642f1208e8a",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "e9d98b71-c649-4762-a5b3-fb445a584184",
+      "result_id": "ed28642c-5e23-4f1c-9a6a-27767f456ed7"
+    },
+    {
+      "claim_id": "0415c001-49da-46e5-9133-fc8d23ed027b",
+      "result_id": "6c19e604-133f-4e1c-aae3-178a54ee8744"
+    },
+    {
+      "claim_id": "79bc3672-82bf-45e4-b17d-8e14cae56d2b",
+      "result_id": "6c19e604-133f-4e1c-aae3-178a54ee8744"
+    },
+    {
+      "claim_id": "fd8ef8d5-e620-4db2-9f58-5d0960373dc1",
+      "result_id": "6c19e604-133f-4e1c-aae3-178a54ee8744"
+    },
+    {
+      "claim_id": "5999ea32-7daf-4b1f-856b-5077a418acd2",
+      "result_id": "6c19e604-133f-4e1c-aae3-178a54ee8744"
+    },
+    {
+      "claim_id": "65197c3b-8ca6-4aa4-9ce4-36defe85e8b8",
+      "result_id": "1e545162-77d0-4e6b-8157-580b50ad5d32"
+    },
+    {
+      "claim_id": "1f430f65-1d39-43c5-951c-b177b3f799b7",
+      "result_id": "1e545162-77d0-4e6b-8157-580b50ad5d32"
+    },
+    {
+      "claim_id": "a9253878-f395-4614-8c1c-90577c61d095",
+      "result_id": "1e545162-77d0-4e6b-8157-580b50ad5d32"
+    },
+    {
+      "claim_id": "bb63e10a-7718-4fea-a7ab-d8d5b3580308",
+      "result_id": "7cf80586-7a94-4876-997d-69c2dce5bc71"
+    },
+    {
+      "claim_id": "5c69bebe-7f21-4ca1-85e3-451871c278f4",
+      "result_id": "7cf80586-7a94-4876-997d-69c2dce5bc71"
+    },
+    {
+      "claim_id": "8642f5d3-7917-4aa3-af8a-7105ad3c1ad5",
+      "result_id": "0437a449-9038-4945-9efd-9f454d977ec9"
+    },
+    {
+      "claim_id": "c9f4d8e0-572e-4328-8200-5ff4611a7530",
+      "result_id": "0437a449-9038-4945-9efd-9f454d977ec9"
+    },
+    {
+      "claim_id": "a69dd755-3f0e-40e9-b55d-3eda1906e0fe",
+      "result_id": "0437a449-9038-4945-9efd-9f454d977ec9"
+    },
+    {
+      "claim_id": "3661d334-a43d-4b8f-9242-180502196392",
+      "result_id": "0437a449-9038-4945-9efd-9f454d977ec9"
+    },
+    {
+      "claim_id": "326481af-46a2-44d7-8ee0-4a9ff4ba8a81",
+      "result_id": "0437a449-9038-4945-9efd-9f454d977ec9"
+    },
+    {
+      "claim_id": "b78241b2-8e65-40dc-9307-09b5b1f78fbe",
+      "result_id": "0437a449-9038-4945-9efd-9f454d977ec9"
+    },
+    {
+      "claim_id": "ce1ca8ea-aab7-4fd6-837c-af41df7493ef",
+      "result_id": "0dd315d6-30b8-442a-af3d-afaac291af6c"
+    },
+    {
+      "claim_id": "02d30485-e137-4e92-90bd-04841e086a9d",
+      "result_id": "0dd315d6-30b8-442a-af3d-afaac291af6c"
+    },
+    {
+      "claim_id": "7a2ffaf4-70d5-4c85-ab37-d0167a3b8503",
+      "result_id": "0dd315d6-30b8-442a-af3d-afaac291af6c"
+    },
+    {
+      "claim_id": "79eb6342-6f49-45cb-9539-261bb987b624",
+      "result_id": "0dd315d6-30b8-442a-af3d-afaac291af6c"
+    },
+    {
+      "claim_id": "cb4c78ae-e7fd-4275-9dea-044e7e949333",
+      "result_id": "d57b5aba-8426-4ef5-b84f-3032b18c0127"
+    },
+    {
+      "claim_id": "7cd13d43-c55d-4a89-a4da-0935e7d32224",
+      "result_id": "d57b5aba-8426-4ef5-b84f-3032b18c0127"
+    },
+    {
+      "claim_id": "8eecb277-6400-47e8-abe0-e592527fcbc5",
+      "result_id": "d57b5aba-8426-4ef5-b84f-3032b18c0127"
+    },
+    {
+      "claim_id": "36523b67-f813-412a-899a-58f13df7d745",
+      "result_id": "d57b5aba-8426-4ef5-b84f-3032b18c0127"
+    },
+    {
+      "claim_id": "5c757fb4-b420-42c2-9063-9bd51a6e8bfa",
+      "result_id": "d57b5aba-8426-4ef5-b84f-3032b18c0127"
+    },
+    {
+      "claim_id": "f1eb23b5-a60b-48c0-82dd-c31162f12293",
+      "result_id": "d57b5aba-8426-4ef5-b84f-3032b18c0127"
+    },
+    {
+      "claim_id": "085aa008-6fad-46e9-b3f7-5080f85c82cf",
+      "result_id": "d57b5aba-8426-4ef5-b84f-3032b18c0127"
+    },
+    {
+      "claim_id": "72200da6-c39c-42bf-b891-39b6b9cfe3c5",
+      "result_id": "d57b5aba-8426-4ef5-b84f-3032b18c0127"
+    },
+    {
+      "claim_id": "215564fa-33ce-4bd9-8f21-3eadcce3b33c",
+      "result_id": "d57b5aba-8426-4ef5-b84f-3032b18c0127"
+    },
+    {
+      "claim_id": "b9921e2b-6c44-4373-b62b-e43a2edbd030",
+      "result_id": "d57b5aba-8426-4ef5-b84f-3032b18c0127"
+    },
+    {
+      "claim_id": "5eb143c5-e9a2-4b9b-add7-46930aa398c4",
+      "result_id": "8746c31a-7708-460f-a1e1-ace49000462f"
+    },
+    {
+      "claim_id": "57442499-82a0-49a7-95b9-6e4d9b3b19de",
+      "result_id": "8746c31a-7708-460f-a1e1-ace49000462f"
+    },
+    {
+      "claim_id": "305a06cb-bbf3-4321-8476-beb52e8a734e",
+      "result_id": "8746c31a-7708-460f-a1e1-ace49000462f"
+    },
+    {
+      "claim_id": "d79b1de5-31c9-4f8b-8e47-a30fea9071da",
+      "result_id": "088cbc89-3565-4e63-b86f-4582ee4ca98c"
+    },
+    {
+      "claim_id": "846123f8-d87d-445d-ae27-3e0dfbffbfbf",
+      "result_id": "088cbc89-3565-4e63-b86f-4582ee4ca98c"
+    },
+    {
+      "claim_id": "8a40c0ec-5809-4a8f-9817-d74d12689147",
+      "result_id": "088cbc89-3565-4e63-b86f-4582ee4ca98c"
+    },
+    {
+      "claim_id": "c9703f19-d895-4403-9d82-c5932ddeadcd",
+      "result_id": "088cbc89-3565-4e63-b86f-4582ee4ca98c"
+    },
+    {
+      "claim_id": "dc29e8df-106b-4cba-adc0-ecb1139b7b00",
+      "result_id": "088cbc89-3565-4e63-b86f-4582ee4ca98c"
+    },
+    {
+      "claim_id": "e312ee49-90b0-41eb-813f-ff5d5bc99b4c",
+      "result_id": "9a9f0b23-a8ef-4132-84d4-610dac8528c5"
+    },
+    {
+      "claim_id": "1fcc3941-3c7f-423f-93c1-982597a514c5",
+      "result_id": "9a9f0b23-a8ef-4132-84d4-610dac8528c5"
+    },
+    {
+      "claim_id": "c6c3d191-d7a9-4d1e-b555-ec938ede5d7b",
+      "result_id": "9a9f0b23-a8ef-4132-84d4-610dac8528c5"
+    },
+    {
+      "claim_id": "db90be3f-c210-4340-8630-11b9cf1a980a",
+      "result_id": "9a9f0b23-a8ef-4132-84d4-610dac8528c5"
+    },
+    {
+      "claim_id": "c2ab22e6-364b-4593-98a7-152f7f24dd32",
+      "result_id": "9a9f0b23-a8ef-4132-84d4-610dac8528c5"
+    },
+    {
+      "claim_id": "05a550c5-1296-4ed7-9d73-98c84f328eb2",
+      "result_id": "9a9f0b23-a8ef-4132-84d4-610dac8528c5"
+    },
+    {
+      "claim_id": "bfc18a15-fb53-49a5-9161-47ecb87a72f8",
+      "result_id": "9a9f0b23-a8ef-4132-84d4-610dac8528c5"
+    },
+    {
+      "claim_id": "5e0f3973-5038-48b9-9fba-bf16f9a9cf1c",
+      "result_id": "9a9f0b23-a8ef-4132-84d4-610dac8528c5"
+    },
+    {
+      "claim_id": "4029940f-4e52-45d8-ae4d-6f73a823cd8a",
+      "result_id": "f4cefa1a-cf73-419d-8019-1fdf160984f6"
+    },
+    {
+      "claim_id": "2939a4fa-4116-4239-8a60-c04171961e34",
+      "result_id": "f4cefa1a-cf73-419d-8019-1fdf160984f6"
+    },
+    {
+      "claim_id": "397b98e6-2d30-4cf8-b87a-c24b52652b7f",
+      "result_id": "f4cefa1a-cf73-419d-8019-1fdf160984f6"
+    },
+    {
+      "claim_id": "a5a10039-ed5a-443b-ab1f-f428f6095ca2",
+      "result_id": "f4cefa1a-cf73-419d-8019-1fdf160984f6"
+    },
+    {
+      "claim_id": "2410f898-063c-431f-97ee-26c287d1b0bd",
+      "result_id": "f4cefa1a-cf73-419d-8019-1fdf160984f6"
+    },
+    {
+      "claim_id": "5c3e7c1d-e5b7-489e-9691-ea43569207f8",
+      "result_id": "f4cefa1a-cf73-419d-8019-1fdf160984f6"
+    },
+    {
+      "claim_id": "13132f4f-14fc-4bb9-8103-de179799ddeb",
+      "result_id": "f4cefa1a-cf73-419d-8019-1fdf160984f6"
+    },
+    {
+      "claim_id": "9ab871d9-74a2-4162-99fb-402b7f2f8225",
+      "result_id": "f6183cd0-9690-4846-a2e5-2685a65ce848"
+    },
+    {
+      "claim_id": "cb0c763c-8390-421c-9ede-7a847058d998",
+      "result_id": "f6183cd0-9690-4846-a2e5-2685a65ce848"
+    },
+    {
+      "claim_id": "aa8607d2-422b-4962-8117-ef5e1e33d606",
+      "result_id": "f6183cd0-9690-4846-a2e5-2685a65ce848"
+    }
+  ],
+  "comparisons": []
+}

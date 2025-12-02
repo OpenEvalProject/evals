@@ -1,0 +1,1739 @@
+{
+  "submission": {
+    "id": "4320d6b5-40f0-44f9-bc1f-116893cbb005",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:18:57.209364Z",
+    "updated_at": "2025-12-02T10:18:57.209364Z"
+  },
+  "content": [
+    {
+      "id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "submission_id": "4320d6b5-40f0-44f9-bc1f-116893cbb005",
+      "content_type": "manuscript",
+      "content_text": "# Estimating the burden of \u03b1-thalassaemia in Thailand using a comprehensive prevalence database for Southeast Asia\n\n## Authors\n\n- Carinna Hockham<sup>1</sup> ([ORCID: 0000-0003-2126-5350](https://orcid.org/0000-0003-2126-5350)) \u2020\n- Supachai Ekwattanakit<sup>3</sup>\n- Samir Bhatt<sup>4</sup>\n- Bridget S Penman<sup>5</sup>\n- Sunetra Gupta<sup>2</sup> ([ORCID: 0000-0002-9775-4006](https://orcid.org/0000-0002-9775-4006))\n- Vip Viprakasit<sup>3</sup>\n- Fr\u00e9d\u00e9ric B Piel<sup>7</sup> ([ORCID: 0000-0001-8131-7728](https://orcid.org/0000-0001-8131-7728))\n\n### Affiliations\n\n1. The George Institute for Global Health Sydney Australia\n2. Evolutionary Ecology of Infectious Disease Group, Department of Zoology University of Oxford Oxford United Kingdom\n3. Thalassaemia Centre, Faculty of Medicine Siriraj Hospital, Mahidol University Bangkok Thailand\n4. Department of Infectious Disease Epidemiology, School of Public Health Imperial College London United Kingdom\n5. Warwick Infectious Disease Epidemiology Research, School of Life Sciences Warwick University Coventry United Kingdom\n6. Department of Paediatrics, Faculty of Medicine Siriraj Hospital, Mahidol University Bangkok Thailand\n7. MRC-PHE Centre for Environment and Health, Department of Epidemiology and Biostatistics, School of Public Health Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nSevere forms of \u03b1-thalassaemia, haemoglobin H disease and haemoglobin Bart\u2019s hydrops fetalis, are an important public health concern in Southeast Asia. Yet information on the prevalence, genetic diversity and health burden of \u03b1-thalassaemia in the region remains limited. We compiled a geodatabase of \u03b1-thalassaemia prevalence and genetic diversity surveys and, using geostatistical modelling methods, generated the first continuous maps of \u03b1-thalassaemia mutations in Thailand and sub-national estimates of the number of newborns with severe forms in 2020. We also summarised the current evidence-base for \u03b1-thalassaemia prevalence and diversity for the region. We estimate that 3595 (95% credible interval 1,717\u20136,199) newborns will be born with severe \u03b1-thalassaemia in Thailand in 2020, which is considerably higher than previous estimates. Accurate, fine-scale epidemiological data are necessary to guide sustainable national and regional health policies for \u03b1-thalassaemia management. Our maps and newborn estimates are an important first step towards this aim.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).\n\n## Introduction\n\n\u03b1-thalassaemia is one of the commonest monogenic disorders of humans, spanning much of the malaria belt, including the Mediterranean, sub-Saharan Africa, Asia and the Pacific. It is estimated that up to 5% of the world\u2019s population carries at least one \u03b1-thalassaemia variant, with some populations (e.g. in India and Papua New Guinea) reporting gene frequencies of close to 80% (Piel and Weatherall, 2014). Central to its elevated frequency is the malaria protection afforded by the underlying genetic mutations, which have been favoured by natural selection in populations with historically high rates of malaria (Flint et al., 1998; Premawardhena et al., 2017; Weatherall and Clegg, 2001a; May et al., 2007). Due to recent population migrations, \u03b1-thalassaemia is now common in other parts of the world, as illustrated by the inclusion of haemoglobin H (HbH) disease (a form of \u03b1-thalassaemia) in the newborn screening programme in California (Vichinsky, 2013; Hoppe, 2009).\n\nHumans typically possess four copies of the \u03b1-globin gene. In an individual with \u03b1-thalassaemia, at least one of these four copies is absent or dysfunctional. The resulting deficit in \u03b1-globin affects the balance between \u03b1-globin and \u03b2- or \u03b3-globin chains that is necessary to produce normal adult haemoglobin (HbA) and normal foetal haemoglobin (HbF), respectively (Weatherall and Clegg, 2001b). The severity of \u03b1-thalassaemia is inversely related to the number of functional copies of the \u03b1-globin gene. A deficit of three or more \u03b1-globin genes leads to the production of \u03b3-globin tetramers, called Hb Bart\u2019s, in the foetus or \u03b2-globin tetramers, called HbH, in adults. Due to their very high oxygen affinity, neither tetramer is capable of transporting oxygen efficiently (Galanello and Cao, 2011). Furthermore, the instability of HbH leads to the production of inclusion bodies in red blood cells and a variable degree of haemolytic anaemia.\n\nTo date, 121 \u03b1-globin gene mutations have been identified (HbVar, http://globin.bx.psu.edu, accessed 07 July 2018). These include: (i) double gene deletions that remove both \u03b1-globin copies in a gene pair (\u03b10-thalassaemia), (ii) single gene deletions that remove one \u03b1-globin copy (\u03b1+-thalassaemia), and (iii) non-deletional (ND) mutations that in some way inactivate the affected gene (\u03b1ND-thalassaemia). While deletions constitute the vast majority of these \u03b1-thalassaemia variants, non-deletional variants are typically associated with more severe phenotypes (Chui et al., 2003; Fucharoen and Viprakasit, 2009; Lal et al., 2011). However, even amongst non-deletional variants, considerable phenotypic variability is observed (Singer, 2009). Because the geographical distribution of \u03b2-thalassaemia largely overlaps with the distribution of \u03b1-thalassaemia, it is important to note that their co-inheritance often leads to a reduced imbalance between \u03b1-globin and \u03b2-globin chains, resulting in a milder thalassaemia phenotype (Weatherall et al., 1981; Wainscoat et al., 1983; Kan and Nathan, 1970; Law et al., 2003).\n\nFrom a clinical perspective, \u03b1-thalassaemia is mostly a burden in Southeast Asia where \u03b10-thalassaemia variants (e.g. --SEA, --THAI) are common and result in HbH disease when inherited with \u03b1+-thalassaemia (e.g. -\u03b13.7 or -\u03b14.2) or \u03b1ND-thalassaemia (e.g. Hb Constant Spring, or Hb CS, or Hb Paks\u00e9), or in Hb Bart\u2019s hydrops fetalis when inherited from both parents (Weatherall et al., 2006; Chui, 2005). Previously, HbH disease was considered to be relatively benign; however, recent evidence suggests a spectrum of mild to severe forms of HbH disease, with the worst affected individuals requiring lifelong transfusion (Chui et al., 2003; Fucharoen and Viprakasit, 2009; Lal et al., 2011). Hb Bart\u2019s hydrops fetalis, the most severe form of \u03b1-thalassaemia, associated with an absence of any functional \u03b1-globin genes, is almost always fatal in utero or soon after birth, although intrauterine interventions and perinatal intensive care can lead to survival (Songdej et al., 2017).\n\nIn this context, there is a growing demand for a better understanding of the epidemiology of \u03b1-thalassaemia such that burden estimates can be calculated to guide public health decisions and assess the need for new pharmacological treatments. However, whilst several narrative reviews of the epidemiology of \u03b1-thalassaemia in Southeast Asian countries are available (Chui, 2005; Fucharoen and Winichagoon, 1987; Fucharoen and Winichagoon, 2011), a comprehensive review for the whole region has not been performed, making the current evidence-base patchy and incohesive. In addition, there appears to be a substantial amount of data that are available only in local data sources, which is not being accessed by the international community. Estimates of the number of newborns with severe forms of \u03b1-thalassaemia published by Modell and Darlison currently represent the only source of information on the epidemiology of thalassaemias and other inherited haemoglobin disorders at national and regional levels (Modell and Darlison, 2008). However, various inconsistencies have been identified in these \u03b1-thalassaemia estimates (Piel and Weatherall, 2014). Furthermore, they do not include most of the surveys conducted in the genomic era, which has allowed accurate diagnosis through DNA testing. Finally, haemoglobinopathies often present remarkably heterogeneous geographical distributions (Piel et al., 2013a; Piel et al., 2013b). As shown for other genetic conditions (e.g. sickle-cell anaemia), these variations can be captured by generating continuous allele frequency maps interpolated from population surveys using geostatistical techniques. Combined with high-resolution demographic and birth rate data, these maps allow sub-national newborn estimates to be calculated (Piel et al., 2013a; Piel et al., 2013b; Howes et al., 2012).\n\nThe aims of this study are therefore three-fold: i) to compile a geodatabase of published evidence for the distribution of \u03b1-thalassaemia and its common genetic variants in Southeast Asia, (ii) to generate the first model-based continuous maps of \u03b1-thalassaemia in Thailand and calculate refined estimates of the annual number of newborns affected by severe forms of \u03b1-thalassaemia, and iii) to comprehensively evaluate and summarise the compiled evidence-base for the whole region.\n\n## Results\n\n### The database\n\nOur keyword searches yielded a total of 868 unique potential sources of data on \u03b1-thalassaemia prevalence and/or genetic diversity in 10 Southeast Asian countries: Brunei Darussalam, Cambodia, Indonesia, Lao People\u2019s Democratic Republic, Malaysia, Myanmar, Philippines, Singapore, Thailand and Vietnam (Figure 1\u2014figure supplement 1). A further 74 potential data sources were identified by one of the authors (SE) from local Thai journals and independently double-checked for inclusion into the study (CH). Of all these sources, 75 met our inclusion criteria and were included in the final database. Due to some sources reporting estimates for more than one population, data were available for 106 individual population samples: 58 from the online literature search and 48 from the local literature. A detailed description of the database is provided in Appendix 5.\n\nForty-six surveys provided data on \u03b1-thalassaemia gene frequency alone, two provided data only relating to genetic diversity and 58 provided data on both. Four surveys were reported at the national level (two from Malaysia, one from Singapore and one from Thailand), and were retained for the regional analysis. The spatial and temporal distributions of identified surveys are shown in Figure 1\u2014figure supplement 2. The country for which the highest number of surveys was published in the international literature (i.e. excluding surveys obtained through local searches) was Thailand. No published surveys were identified for Brunei Darussalam or the Philippines. Within countries, surveys predominated in certain areas. For instance, in Thailand, the northern and northeastern parts of the country contained\u00a0>75% of all surveys. Data for southern Thailand came exclusively from Thai journals (n\u00a0=\u00a04) (Figure 1\u2014figure supplement 2). The total number of individuals sampled was 133,649 (the population of the region is estimated to be 647,483,729 in 2017), with a mean sample size of 1261. Further details on the final database are provided in Appendix 5.\n\nPrevalence surveys varied considerably with regards to the \u03b1-thalassaemia alleles and/or genotypes that were tested for or reported upon; whilst some reported allele frequencies for \u03b10-, \u03b1+- and \u03b1ND-thalassaemia, others provided data for only one or two of these. To maximise use of the available allele frequency data, whilst avoiding the incorporation of potentially biased estimates for overall \u03b1-thalassaemia allele frequency, we generated separate maps for each of the three major forms of \u03b1-thalassaemia \u2013 that is, \u03b10-, \u03b1+- and \u03b1ND-thalassaemia (Figure 1A,B and C, respectively). \u03b10-thalassaemia was the most extensively studied form (n\u00a0=\u00a097), followed by \u03b1ND-thalassaemia (n\u00a0=\u00a049) and then \u03b1+-thalassaemia (n\u00a0=\u00a047).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig1-v1.jpg)\n\n**Figure 1.:** (A) \u03b10-thalassaemia, (B) \u03b1+-thalassaemia and (C) \u03b1ND-thalassaemia. A spatial jitter of up to 0.30 latitude and longitude decimal degree coordinates was applied to allow visualisation of spatially duplicated data points. Colour intensity indicates allele frequency; circle size represents the size of the survey size. Surveys that could only be mapped at the national level are indicated by a black star.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Here, we defined the Southeast Asian region according to the member states of the Association of Southeast Asian Nations (ASEAN) (http://asean.org/asean/asean-member-states/).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** In both panels, the shape of the data points indicates the type of data provided by the survey, the colour indicates whether the survey was found in our online literature search or in local journals, and size represents the sample size of the survey. In (A) a spatial jitter of up to 0.30 latitude and longitude decimal degree coordinates was applied to allow visualisation of spatially duplicated data points.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Only the most common variants for \u03b1+-thalassemia (-\u03b13.7and -\u03b14.2) and \u03b10-thalassemia (--MED and --SEA) are shown for each region. The variants that appear in parentheses are those for which the data used to make this map are limited.\n\n### Continuous allele frequency maps for Thailand\n\nData for Thailand and its neighbouring countries (Cambodia, Lao PDR, Malaysia and Myanmar) formed the evidence-base for a Bayesian geostatistical model and are presented in Figure 2\u2014figure supplement 1. The total number of data points available for \u03b10-, \u03b1+- and \u03b1ND-thalassaemia was 88, 37 and 42, respectively. The data were used to generate 1 km x 1 km maps of allele frequencies of \u03b10-, \u03b1+- and \u03b1ND-thalassaemia in Thailand (Figure 2). One hundred realisations of the model were performed to generate a posterior predictive distribution (PPD) for each 1 km x 1 km pixel. The mean of the PPD is displayed, along with the 95% credible interval as a measure of model uncertainty.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig2-v1.jpg)\n\n**Figure 2.:** Panels A to C display the mean of the posterior predictive distribution (PPD) of 100 realisations of the geostatistical model. Panels D to F display the 95% credible interval of the PPD. Each row corresponds to a different \u03b1-thalassaemia form: \u03b10-thalassaemia (A and D); \u03b1+-thalassaemia (B and E) and \u03b1ND-thalassaemia (C and F). Figure 2\u2014figure supplement 1 shows the observed data used to construct the models and Figure 2\u2014figure supplement 2 displays the province names for reference.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) \u03b10-thalassaemia, (B) \u03b1+-thalassaemia and (C) \u03b1ND-thalassaemia. A variable spatial jitter was applied to allow visualisation of spatially duplicated data points. Colour intensity indicates allele frequency.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The Bangkok Metropolitan Region, which includes Bangkok City and surrounding provinces, is shaded in red, with Bangkok City shaded a darker red.\n\nThe maps for \u03b10- and \u03b1+-thalassaemia indicate clear spatial heterogeneity in allele frequencies, with ranges of 0.57\u20134.46% and 2.43\u201315.03%, respectively (Figure 2A,B). Heterogeneity is greatest in the north of the country. For \u03b10-thalassaemia, while large parts of the northernmost provinces of Chiang Rai, Phayao and Nan have predicted allele frequencies of up to 2%, allele frequencies for the neighbouring provinces of Chiang Mai, Lampang and Phrae are often twice as high (see Figure 2\u2014figure supplement 2 for a reference map of Thailand provinces). The allele is also predicted at frequencies of up to 4% in the northeast of the country, along a belt across most of the north of the country and in Chonburi and Rayong provinces in central Thailand. Allele frequencies below 1% are predicted throughout the southern zone. \u03b1+-thalassaemia has its highest predicted allele frequencies across the whole of the north and northeastern zones. Predicted allele frequencies of \u03b1ND-thalassaemia range between 1.57% and 1.65% only.\n\nModel uncertainty is greatest in areas where data are scarce (e.g. southern Thailand and along the border with Myanmar) or where there is heterogeneity in the available data (e.g. in Chiang Mai and the surrounding area). Overall, uncertainties are higher for \u03b1+-thalassaemia than for \u03b10-thalssaemia or \u03b1ND-thalassaemia, which is partly due to the wider range of observed frequencies for this form. For \u03b10-thalassaemia, the highest level of uncertainty is 9% and is found in Chumphon and Ranong provinces in southern Thailand and Kanchanaburi and Tak in the westernmost part of the country. For \u03b1+-thalassaemia, the highest uncertainty (up to 23%) is observed in the northeastern zone and in the north. Uncertainty for \u03b1ND-thalassaemia is patchy and ranged from 1.5% in central and northern Thailand to 2.5% in southern and northeastern Thailand. The results of the 10-fold cross-validation procedure reveal an average mean absolute error of the predictions of 0.93%, 4.10% and 2.30%, for \u03b10-, \u03b1+- and \u03b1ND-thalassaemia, respectively. The average correlation between the observed and predicted values is 0.74 (0.62\u20130.83), 0.71 (0.49\u20130.85) and 0.47 (0.17\u20130.69), respectively.\n\n### Estimates of number of affected newborns in Thailand\n\nEstimates of the number of newborns born with a severe form of \u03b1-thalassaemia (i.e. Hb Bart\u2019s hydrops fetalis and HbH disease) in Thailand in 2020 were generated by pairing our allele frequency predictions to high-resolution demographic data for the country. We estimate that the number of Hb Bart\u2019s hydrops fetalis births in the country will be 423 (CI: 184\u2013761) in 2020. The number of new cases of HbH disease is estimated to be 3,172, including 2674 (CI: 1,296\u20134,491) deletional and 498 (CI: 237\u2013947) non-deletional cases. The highest absolute burden of hydrops fetalis is predicted in Bangkok City (57 [CI: 13\u2013151]) (Figure 2\u2014figure supplement 2), with its high population density, and Udon Thani (23 [CI: 6\u201366]) in the northeastern zone, where some of the highest \u03b10-thalassaemia allele frequencies are predicted. Other provinces with a comparatively high burden include: Chiang Mai in the north of the country; Khon Kaen, Sakon Nakhon and Ubon Ratchathani in the northeast; and Chon Buri, Samut Prakan and Nonthaburi close to Bangkok City. The estimated number of hydrops fetalis births in these provinces range between 10 and 19. For HbH disease, the highest burden is predicted in northeast Thailand for both the deletional and non-deletional forms. Bangkok City is predicted to have the highest burden of HbH disease (301 [CI: 94\u2013639] for deletional HbH disease and 68 [CI: 25\u2013148] for non-deletional HbH disease).\n\nTo directly compare estimates generated using our methodology with those previously published by Modell and Darlison, we also calculated estimates using population and birth rate data for 2003 (Appendix 3). Modell and Darlison estimated 1017 and 2515 births to be affected by Hb Bart\u2019s hydrops fetalis and HbH disease, respectively, in 2003. Using population data from the same year paired with our model-based maps, and assuming no consanguinity, we estimate 709 and 5469 newborns to be born with Hb Bart\u2019s hydrops fetalis and HbH disease in the country. As Modell and Darlison included a population coefficient of consanguinity (F) in their calculations, we examined the effect that this would have on our estimates. We found that they do not change considerably (951 and 5,409), when a value of F of 0.1, a high value for the region (www.consang.net), is incorporated. Our estimates are therefore consistent with those by Modell and Darlison for Hb Bart\u2019s hydrops fetalis. However, they suggest that the burden of HbH disease in Thailand may have previously been underestimated. Moreover, whilst Modell and Darlison did not estimate the burden of non-deletional forms of HbH disease, our estimates suggest that 15% of the 5469 neonatal cases were of non-deletional types, which are usually associated with more severe phenotypes.\n\n### Overall distribution of \u03b1-thalassaemia across Southeast Asia\n\nIn our database for all of Southeast Asia, the number of surveys that tested for all three forms of \u03b1-thalassaemia was 40. Amongst these, the overall \u03b1-thalassaemia gene frequency ranged from 0% in populations from peninsular Malaysia to 35.4% in Preah Vihar, Cambodia (Munkongdee et al., 2016). A higher allele frequency of 49% was also reported in the So ethnic group from Khammouane Province in Lao PDR, although the sample size for this study was small (n\u00a0=\u00a050) (Sengchanh et al., 2005). Appendix 5\u2014table 2 shows the range of allele frequencies observed for the different \u03b1-thalassaemia forms (\u03b10-, \u03b1+- and \u03b1ND-thalassaemia) in each country.\n\nFor \u03b10-thalassaemia, the highest allele frequencies were observed in Thailand (Figure 1A, Figure 1\u2014source data 1) In Lao PDR, surveys along the Lao PDR-Thailand border near Vientiane reported allele frequencies between 4.03% and 7.28%, whilst the survey among the aforementioned So ethnic group reported an absence of the \u03b10-thalassaemia allele. The highest reported allele frequencies in Cambodia and Vietnam were 1.10% and 2.66%, respectively, with the majority of studies reporting even lower frequencies. However, data were sparse in the two countries (n\u00a0=\u00a04 in each). Allele frequencies of up to 1.53% were observed in southern Thailand, whilst the few surveys carried out in Myanmar (n\u00a0=\u00a01), Malaysia (n\u00a0=\u00a011) and Singapore (n\u00a0=\u00a02) reported allele frequencies of around 1%. In Malaysia, the highest allele frequency of \u03b10-thalassaemia was 1.92% from a study carried out in newborns in Kuala Lumpur, the capital city (Alauddin et al., 2017).\n\n\u03b1+-thalassaemia, the most prevalent form, reached allele frequencies of 26% in Cambodia (Figure 1B, Figure 1\u2014source data 2) (Munkongdee et al., 2016). The surveys revealed a clear north-to-south decline in the distribution of \u03b1+-thalassaemia across the region, with a single high allele frequency estimate of 16.8% observed in Sabah in Malaysian Borneo (Tan et al., 2010). High allele frequencies (\u226510%) were observed in all four surveys in Cambodia. In Vietnam the reported \u03b1+-thalassaemia allele frequency ranged from 1.59 to 14.4%.\n\nThe observed allele frequency of \u03b1ND-thalassaemia ranged between 0% in various locations across Malaysia and 16.25% in central Peninsular Malaysia (Figure 1C, Figure 1\u2014source data 3). Within Thailand, the highest reported allele frequencies of around 7% were observed in Khon Kaen in the northeast and Chachoengsao in central Thailand. In Cambodia and Vietnam, \u03b1ND-thalassaemia allele frequencies of up to 8% and 14.3% were reported, respectively, in surveys in which \u03b10-thalassaemia was found to be absent, whilst in other parts of these countries, the two forms were found to co-exist at similar allele frequencies (e.g. around 2.5% in Binh Phuoc and Khanh Hoa provinces in Vietnam).\n\n### Genetic diversity of \u03b1-thalassaemia across Southeast Asia\n\nMaps of the genetic diversity of \u03b1-thalassaemia across Southeast Asia are shown in Figures 3\u20136. Figure 3 (Figure 3\u2014source data 1) displays surveys that included all three \u03b1-thalassaemia forms (\u03b10-, \u03b1+- and \u03b1ND-thalassaemia), allowing relative proportions of each of the forms to be calculated without giving specific variant details. Figures 4\u20136 (Figure 4\u2014source data 1, Figure 5\u2014source data 1, Figure 6\u2014source data 1) display surveys that provided information on the frequencies of specific \u03b1-thalassaemia variants (e.g. --SEA, -\u03b13.7, etc.). For these, the variants that were tested for differ between surveys. Some surveys are included in both Figure 3 and Figures 4\u20136. For the latter figures, the region has been divided to improve visualisation of the data.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig3-v1.jpg)\n\n**Figure 3.:** Three surveys were mapped at the national level (indicated by a white star). The size of the pie charts reflects survey size.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig4-v1.jpg)\n\n**Figure 4.:** Given the high number of surveys in northeast Thailand, this region has been magnified. The y-axis scale is the same across all bar charts, ranging from 0 to 1. The variants that were tested for in each survey are indicated above each bar. \u03b10-thalassaemia mutations are shown in red, \u03b1+-thalassaemia mutations in blue and \u03b1ND-thalassaemia mutations in green. Empty spaces along the x-axis indicate an absence of the corresponding mutation in the survey sample. The sample size of the survey is given under each plot. Bar charts are connected to their spatial location by a black line.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig5-v1.jpg)\n\n**Figure 5.:** The y-axis scale is the same across all bar charts, ranging from 0 to 1. The variants that were tested for in each survey are indicated above each bar. \u03b10-thalassaemia mutations are shown in red, \u03b1+-thalassaemia mutations in blue and \u03b1ND-thalassaemia mutations in green. Empty spaces along the x-axis indicate an absence of the corresponding mutation in the survey sample. The sample size of the survey is given under each plot. Bar charts are connected to their spatial location by a black line. Data points are coloured by country, using the same colour scale as that in Figure 1\u2014figure supplement 1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig6-v1.jpg)\n\n**Figure 6.:** The y-axis scale is the same across all bar charts, ranging from 0 to 1. The variants that were tested for in each survey are indicated above each bar. \u03b10-thalassaemia mutations are shown in red, \u03b1+-thalassaemia mutations in blue and \u03b1ND-thalassaemia mutations in green. Empty spaces along the x-axis indicate an absence of the corresponding mutation in the survey sample. The sample size of the survey is given under each plot. Bar charts are connected to their spatial location by a black line. Data points are coloured by country, using the same colour scale as that in Figure 1\u2014figure supplement 1.\n\n\u03b1+-thalassaemia most consistently constituted the highest proportion of \u03b1-thalassaemia, although there were some surveys in which \u03b1ND-thalassaemia was the predominant form (e.g. central Vietnam and in parts of Malaysia). In Figure 3, areas where the observed relative proportion of \u03b10-thalassaemia was greatest include: Chiang Mai and Phayao provinces in north Thailand, Kalasin in northeast Thailand, Vientiane in Lao PDR, Kuala Lumpur and Selangor in Malaysia, Singapore and Jakarta in Indonesia. The \u03b10-thalassaemia allele was absent in the survey from Malaysian Borneo as well as in central Vietnam and central Lao PDR. In certain areas, \u03b10- and \u03b1ND-thalassaemia together accounted for the majority of \u03b1-thalassaemia (e.g.\u00a0~75% in Kalasin in Thailand,~60% in Kuala Lumpur and Jakarta and\u00a0~53% in Khon Kaen and Chachoensao in Thailand and Vientiane in Lao PDR). Some of these areas also correspond to where the highest allele frequencies of these alleles are found, for example, northeast Thailand and the Thailand-Lao PDR border.\n\nAmong surveys that tested for specific \u03b1-thalassaemia variants, the most commonly tested variant throughout the region was --SEA (n\u00a0=\u00a044), followed by -\u03b13.7 (n\u00a0=\u00a036) (Figures 4\u20136). Most of the studies in Thailand only tested for a subset of the mutations considered in this study; only one survey in Bangkok City tested for the whole suite. More than in other countries, surveys in Thailand tested specifically for \u03b10- or \u03b1ND-thalassaemia mutations (n\u00a0=\u00a07 and 9, respectively).\n\nThroughout the region, --SEA was the dominant \u03b10-thalassaemia mutation, and in the majority of surveys -\u03b13.7 was the dominant \u03b1+-thalassaemia and Hb CS the dominant \u03b1ND-thalassaemia mutation. The only exceptions were in Java in Indonesia, where -\u03b13.7 and -\u03b14.2 were found at similar frequencies and in Kelantan in Malaysia, where Hb Adana was the only \u03b1ND-thalassaemia mutation identified. The -(\u03b1)20.5 and --MED mutations were not detected in any of the surveys, whilst the --FIL mutation was found in 2 of the 16 surveys in which it was tested for and --THAI in 9 of the 31 surveys in which it was included. Consistent with Figure 3, \u03b10-thalassaemia variants contributed minimally to \u03b1-thalassaemia mutations in Myanmar, Cambodia and Vietnam but were found at higher frequencies in surveys along the Thailand-Lao PDR border. In Vietnam, Malaysia, Indonesia and Singapore, the frequency of \u03b10-thalassaemia varied considerably, with it being absent in some areas and a predominant form in others. This is also true for \u03b1ND-thalassaemia.\n\n## Discussion\n\n\u03b1-thalassaemia is a neglected public health problem whose burden has, to date, been largely overlooked, but for which morbidity is expected to increase in the coming decades as a result of the epidemiological transition, whereby acute infectious disease is replaced by chronic disease as the predominant cause of morbidity and mortality (Piel and Weatherall, 2014; Weatherall, 2011). Moreover, country reports (e.g. from Malaysia) indicate a shift in the age distribution of thalassaemia patients towards older ages (Ibrahim, 2012). As the burden increases, there will be greater demand for resources, including healthcare facilities and staff, genetic counselling and drugs, to treat and manage affected patients. This is particularly true for countries in Southeast Asia as well as the Mediterranean, where severe forms of \u03b1-thalassaemia (i.e. \u03b10-thalassaemia) are found.\n\n### Comparison with existing maps and population estimates\n\nThe model-based maps for Thailand presented here are, to our knowledge, the first spatially continuous maps of the distribution of \u03b1-thalassaemia in any country. Our newborn estimates represent the first evidence-based estimates of specific forms of \u03b1-thalassaemia disease amongst newborns since 2003 (although the study in which they were reported was published in 2008) (Modell and Darlison, 2008) and the first estimates at sub-national level. Importantly, whilst there are currently no estimates of the number of stillbirths that will occur in Thailand in 2020, our estimate of the number of Hb Bart\u2019s hydrops fetalis births represents more than 10% of the 3697 stillbirths estimated for 2015 (Blencowe et al., 2016).\n\nComparisons between previous newborn estimates and those generated in this study using our updated database and 2003 demographic data revealed an almost two-fold difference for deletional HbH disease (2515 compared to 4694 in the present study). Reasons for such discrepancies most likely relate to: (i) differences in the inclusion criteria used in the generation of our map and therefore our calculation of newborn estimates, (ii) the quantity of survey data used, and iii) the statistical methods employed. For instance, spatial specificity was not a consideration in the study by Modell and Darlison, who used a single allele frequency estimate extrapolated to the whole country. As such, the newborn calculations in the present study represent a methodological advance over previous efforts to assess the burden of \u03b1-thalassaemia. We related fine-scale allele frequency data to birth count data of equally high resolution, allowing location-specific estimates to be generated that could be aggregated to province level. Moreover, the use of model-based maps in our calculations enabled the measurement of uncertainty in our predictions. Finally, by including allele frequency data on \u03b1ND-thalassaemia, we were able to estimate the burden of the more severe non-deletional HbH disease.\n\nOur newborn estimates for 2020 are considerably lower than those for 2003. This reduction is due to the lower number of births in Thailand in 2020 as a result of a decreasing birth rate and population size (World population prospects, 2017). It would be interesting to quantify how improvements in the prevention of thalassaemias will affect these estimates in the future.\n\nOur descriptive maps represent the first detailed cartographic representations of \u03b1-thalassaemia allele frequency estimates in Southeast Asia, which take into account the specific geographical location of the surveys in which they were observed. Until now, available maps (e.g. Figure 1\u2014figure supplement 3) provided only a crude overview of overall \u03b1-thalassaemia gene frequency, without any distinction between different \u03b1-thalassaemia forms, and extrapolated to the entire region, thereby masking sub-national and even international, variation in allele frequencies (Piel and Weatherall, 2014).\n\nThe maps are broadly consistent with early narrative reviews of the gene frequency of \u03b1-thalassaemia in the region (Fucharoen and Winichagoon, 1987), showing a clear north-to-south trend of decreasing allele frequencies of \u03b10- and \u03b1+-thalassaemia and a patchier distribution of \u03b1ND-thalassaemia. However, our maps also demonstrate a severe lack of data on the allele frequency of \u03b1-thalassaemia across large parts of Southeast Asia, including in Myanmar, northern Lao PDR, northern Vietnam, Indonesia, Philippines and Brunei. This impedes our ability to assess the fine-scale burden of \u03b1-thalassaemia, making efficient public health planning for its control difficult, and limits our ability to track progress in the prevention and management of the disorder.\n\n### Patterns of genetic variation and their public health implications\n\nThe pattern of genetic diversity observed in this study indicates variable distributions of mild and severe \u03b1-thalassaemia forms. Reasons for this are unclear. However, high variant heterogeneity has been observed for other genetic disorders (e.g. G6PD deficiency) in Southeast Asia, (Howes et al., 2013) which might suggest a similar underlying cause. In their global study, Howes et al. noted that G6PD variants were most diverse in East Asia and the West Pacific, where P. falciparum parasites show strong population structure with lower genetic relatedness between populations in the region. Indeed, P. falciparum has been shown to display genetically structured populations within Thailand alone. (Pumpaibool et al., 2009) It is possible that the evolutionary dynamics between P. falciparum and haemoglobin variants, including \u03b1-thalassaemia, are more complex than we currently appreciate.\n\nThe observed spatial distributions of the different \u03b1-thalassaemia forms and variants has important implications for the design of newborn screening programmes with regards to the preferred diagnostic algorithm and allocation of treatment and management service provision. Areas with the highest proportions of co-occurring severe \u03b1-thalassaemia forms (i.e. \u03b10-thalassaemia and \u03b1ND-thalassaemia) may experience a higher prevalence of the severe non-deletional form of HbH disease. Furthermore, the predominance of Hb CS in surveys from Malaysia and Vietnam suggests that the health burden of \u03b1-thalassaemia in these areas may be greater than previously thought. Hb CS is a mutation at the termination codon of the \u03b12-globin gene, which, in a normal individual, accounts for three-quarters of overall \u03b1-globin production (Liebhaber and Kan, 1981; Orkin et al., 1981). As a result, \u03b12-globin gene mutations, such as Hb CS, tend to cause a more severe phenotype (Chui, 2005).\n\n### Model strengths and limitations\n\nThe reliability of the model-based maps is intrinsically linked to the quality, quantity and spatial coverage of the data upon which the models are based. We were unable to generate continuous maps for the whole of the Southeast Asian region as data were sparse in large areas. Whilst we are aware that unpublished surveys are likely to be available for most countries of the region, obtaining local data for all of the countries was beyond the scope of this study. Nevertheless, we have demonstrated that substantial additional survey data can be identified in locally published sources and, as a result, highlighted the enormous value of future collaborations to collate local data in other regions.\n\nFor Thailand, limitations relating to data sparsity, uneven survey distributions and heterogeneity in allele frequency can be quantified in the presented uncertainty intervals. Areas where there is little data or where observed allele frequencies are highly heterogeneous within a small geographical area will have more uncertain predictions, whilst a large amount of data for which there is little heterogeneity will lead to more precise predictions. We identified a lack of data in the southern part of Thailand, which is reflected in larger uncertainty estimates. Other predictions with high associated uncertainty include those along the Thailand-Myanmar border, particularly the southern tail of Myanmar, where no \u03b1-thalassaemia prevalence surveys are found. This highlights the arbitrary nature of country borders in mapping studies.\n\nSpatial smoothing is an important component of most geostatistical models. For the modelling approach used here, the range function (i.e. the extent of spatial autocorrelation) is defined by a parameter within the SPDE framework and takes a prior distribution. The smoothing in the approximate posterior therefore balances over- and under-fitting and is necessary to ensure that the model predicts adequately without fitting the idiosyncrasies of the data. As a result, the model does not predict allele frequencies that fully reflect heterogeneity between nearby surveys. Although extensive variation in allele frequencies between different ethnic groups in similar geographic locations has been observed in Thailand (Kulaphisit et al., 2017) and other countries (e.g. Sri Lanka), this could not be reflected in our predicted allele frequencies. For example, allele frequencies of around 3.65% for the Hb CS mutation have been reported in the Khmer ethnic group in Surin and Buriram provinces, whilst our model predicts maximum allele frequencies of 1.65% here. This smoothing process can similarly explain why the highest observed \u03b1ND-thalassaemia frequency of 7% in Khon Kaen was not reproduced in the predicted maps. In fact, our model-based predictions for \u03b1ND-thalassaemia are remarkably homogenous and the average correlation between the observed and predicted frequencies is low (0.47). This is because the close-range heterogeneity in the observed data, coupled with the absence of a long-range trend in frequency (as is observed for \u03b10- and \u03b1+-thalassaemia), makes it difficult for the model to discern a signal.\n\nIt is likely that other factors influence the allele frequencies of the different \u03b1-thalassaemia forms, but have not been considered in this mapping study, including ethnicity, consanguinity, historic rates of malaria (both Plasmodium falciparum and P. vivax) (Douglas et al., 2012) and population migration patterns. Furthermore, there is bound to be uncertainty in the geolocation of some of the surveys included in the study due to the lack of details published or available. This uncertainty could not be accounted for. Finally, whilst the inclusion criterion of molecular methods should help to improve the reliability of allele frequency estimates, they are not 100% sensitive (Old and Henderson, 2010) and do not cover all possible \u03b1-thalassaemia mutations, which may lead to some error in the reported allele frequencies.\n\nWhilst we have calculated the burden of \u03b1-thalassaemia in terms of the number newborns born with severe forms in 2020, there are other aspects of the disease burden that would be worth considering pending the availability of more data, for example, milder-forms and their coinheritance with \u03b2-thalassaemia, DALY losses from \u03b1-thalassaemia, maternal complications (some of which can be life-threatening) (Chui, 2005; Ratanasiri et al., 2009), psychological effects and, in the case of HbH disease, survival data allowing the calculation of all-age population estimates. Furthermore, the estimates presented here do not include compound disorders, such as EA Bart\u2019s and EF Bart\u2019s diseases (HbH disease with heterozygous and homozygous forms of \u03b2E, another clinically important structural \u03b2-globin variant, respectively), and therefore remain underestimates of the overall burden of \u03b1-thalassaemia disorders in Thailand (Galanello, 2013). Finally, the visualisation of our burden estimates are subject to the modifiable area unit problem, whereby the presentation of estimates at the province level likely masks pockets of high burden (Wong, 2009).\n\n### Future prospects and conclusions\n\nThe allele frequency, distribution and genetic variant profile of \u03b1-globin forms is only a part of their epidemiological complexity. An improved understanding of the natural history of \u03b1-thalassaemia and the factors that modify its clinical outcome will be imperative for establishing better estimates of its burden. This is particularly pertinent in the Southeast Asian region, where the disorder co-exists with \u03b2-thalassaemia, including the commonest haemoglobin variant, Hb E. Many studies have shown a positive epistatic interaction between \u03b1- and \u03b2-thalassaemia, whereby their co-inheritance results in the amelioration of the associated blood disorder (Fucharoen and Weatherall, 2012; Viprakasit et al., 2004).\n\nA detailed assessment of current knowledge on the allele frequency of \u03b1-thalassaemia and the magnitude of its health burden is needed to develop suitable prevention and control programmes. This study provides a detailed overview of the existing data on the gene frequency and genetic diversity of \u03b1-thalassaemia in Southeast Asia. We show that our knowledge of the accurate allele frequency and distribution of this highly complex disease remains somewhat limited. Because of the remarkable geographic heterogeneities in the gene frequency of \u03b1-thalassemia, interventions have to be tailored to the specific characteristics of the local population (e.g., prevalence of the disorder in the population, ethnic makeup, and consanguinity) and the local health care system As the epidemiological transition in these countries continues (Weatherall, 2011; Bundhamcharoen et al., 2011; Dhillon et al., 2012), it will become increasingly important to regularly update regional and national maps of \u03b1-thalassaemia gene frequency and newborn estimates such that health and demographic changes can be properly quantified (Piel and Weatherall, 2014). Our findings provide a baseline for such endeavours.\n\n## Materials and methods\n\n### Compiling a geodatabase of \u03b1-thalassaemia allele frequency and genetic diversity\n\nA comprehensive search of three major online bibliographic databases (PubMed, ISI Web of Knowledge and Scopus) was performed to identify published surveys of \u03b1-thalassaemia prevalence and/or genetic diversity in Southeast Asia (Figure 7). The 10 member states of the Association of Southeast Asian Nations (ASEAN) were used to define the region under study and include: Brunei Darussalam, Cambodia, Indonesia, Lao PDR, Malaysia, Myanmar, Philippines, Singapore, Thailand and Vietnam (Figure 1\u2014figure supplement 1). In addition, for Thailand, articles published in national journals (in Thai) \u2013 not included in international bibliographic databases \u2013 were manually searched for local surveys. Consistent and pre-defined sets of inclusion criteria for prevalence/allele frequency data and genetic diversity data, outlined in the Appendix 1, were used to identify relevant surveys. Data extracted from Thai journals were independently validated against the inclusion criteria by two of the authors (SE and CH).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/40580/elife-40580-fig7-v1.jpg)\n\n**Figure 7.:** Pink diamonds indicate the database and input data; green boxes denote model processes and data visualisation steps; blue rods represent study outputs.\u00a0.\n\n### Modelling continuous maps of \u03b1-thalassaemia allele frequency in Thailand\n\nWe employed a Bayesian geostatistical framework to model the allele frequencies of \u03b10-, \u03b1+- and \u03b1ND-thalassaemia, respectively, in Thailand, where a substantially higher number of surveys were identified. We included data from Thailand and its neighbouring countries (Myanmar, Lao PDR, Cambodia and Malaysia) in order to preclude the possibility of a border effect. Three surveys that were reported only at the national level (one in Thailand and two in Malaysia) were excluded for this part of the analysis. Only geographical location was included as a predictor of \u03b1-thalassaemia allele frequency (Figure 7).\n\nFor each of the three main forms of \u03b1-thalassaemia, a model was fitted using a Bayesian Stochastic Partial Differential Equation (SPDE) approach with Integrated Nested Laplace Approximation (INLA) algorithms developed by Rue et al. (Rue et al., 2009), available in an R-package (www.r-inla.org). The observed allele frequency data were transformed through an empirical logit to facilitate approximation by the Gaussian likelihood. The fitted model was then used to generate predictions at a resolution of 1 km x 1 km for \u03b1-thalassaemia allele frequencies for all unsampled locations in Thailand. Uncertainty estimates, measured as the 95% credible interval, for the predictions were calculated using 100 conditionally simulated realisations of the model to generate a posterior predictive distribution (PPD) for each 1 km x 1 km pixel. Full details of the modelling process and model validation procedures, which involved a 10-fold cross validation, are provided in Appendix 2.\n\n### Refining estimates of the annual number of neonates affected by severe disease forms\n\n**Table 1.**\n A breakdown of the genotypes for the three clinically important forms of \u03b1-thalassaemia \u2013 Hb Bart\u2019s hydrops fetalis, deletional HbH disease and non-deletional HbH disease \u2013 and the Hardy-Weinberg equilibrium (HWE) proportions used for their calculation.To compare our model output with previous newborn estimates for Hb Bart\u2019s hydrops fetalis and deletional HbH disease, we paired our allele frequency maps with 2003 demographic and birth data and included a measure of consanguinity in our calculations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Genotype</th>\n      <th>Disorder</th>\n      <th>HWE proportions</th>\n      <th>Inclusion of population coefficient of consanguinity (F)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>--/--</td>\n      <td>Hb Bart\u2019s hydrops fetalis</td>\n      <td>p2</td>\n      <td>p2\u00a0+\u00a0Fp(1 p)</td>\n    </tr>\n    <tr>\n      <td>-\u03b1/--</td>\n      <td>Deletional HbH disease</td>\n      <td>2pq</td>\n      <td>2pq(1 F)</td>\n    </tr>\n    <tr>\n      <td>\u03b1\u03b1ND/--</td>\n      <td>Non-deletional HbH disease</td>\n      <td>2pr</td>\n      <td>2pr(1 F)</td>\n    </tr>\n  </tbody>\n</table>\n\nTo generate estimates of the annual number of newborns affected by Hb Bart\u2019s hydrops fetalis syndrome (--/--) and deletional and non-deletional HbH disease (-\u03b1/-- and \u03b1\u03b1ND/--, respectively) in Thailand in 2020, we paired the predicted allele frequency maps generated using our Bayesian geostatistical framework with high-resolution birth count data. First, we combined the three allele frequency maps to estimate the frequency of each genotype in each pixel, assuming Hardy-Weinberg proportions for a four-allele system (Equation 1 and Table 1) (Hardy, 1908; Weinberg, 1908).\n\n$$\np^{2}+2pq+2pr+q^{2}+2qr+2qs+r^{2}+2rs+s^{2}=1\n$$\n\nwhere, p is the allele frequency of \u03b1 a0-thalassaemia (--), q is the allele frequency of \u03b1+-thalassaemia (-\u03b1), r is the allele frequency of \u03b1ND-thalassaemia (\u03b1\u03b1ND) and s is the allele frequency of the wild-type \u03b1-globin haplotype (\u03b1\u03b1).\n\nTo calculate birth counts, the 2015\u20132020 crude birth rate for Thailand was downloaded from the 2017 United Nations (UN) world population prospects (World population prospects, 2017) and multiplied with a high-resolution predicted 2020 population surface, adjusted to UN population estimates, obtained from the WorldPop project (www.worldpop.org.uk, last accessed 23 January 2018) (Tatem, 2017). The predicted genotype frequencies were then paired with the birth count data over 100 conditionally simulated realisations of the geostatistical model and areal estimates at province level calculated, together with 95% credible intervals; their calculation is described in Appendix 3. We also applied our maps to 2003 demographic data, and incorporated consanguinity into our calculations (Table 1), (Vieira et al., 2013) in order to more directly compare estimates generated using our method with previous estimates (Modell and Darlison, 2008). We used the online global database of consanguinity estimates (www.consang.net) to identify an upper limit for the coefficient of consanguinity for Thailand (F\u00a0=\u00a00.1) (Bittles and Black, 2015). However, due to important variations of this coefficient between ethnic groups and the lack of reliable or high-resolution data for consanguinity, we chose not to include it in our main calculations.\n\n### Summarising the current evidence-base for \u03b1-thalassaemia gene frequency in Southeast Asia\n\nCartographic representations of the identified prevalence surveys were generated using ArcGIS 10.4.1 (ESRI Inc, Redlands, CA, USA). The descriptive maps reflect the spatial distribution of the prevalence surveys, along with their respective sample sizes and observed \u03b10-, \u03b1+- and \u03b1ND-thalassaemia allele frequencies. Other features of the database, including the temporal distribution of the surveys, the identity of the populations studied (e.g. community, pregnant women, newborns, etc.) and the contribution of local Thai surveys to the evidence-base, were also examined.\n\n### Mapping \u03b1-thalassaemia genetic diversity\n\nMaps of the genetic diversity of \u03b1-thalassaemia across Southeast Asia were also generated (Figure 6). Given the heterogeneity in the reporting of different \u03b1-thalassaemia genotypes, we divided the genetic diversity data into two subtypes: (i) those surveys that only distinguished between the different \u03b1-thalassaemia forms (\u03b10-, \u03b1+-, and \u03b1ND-thalassaemia), and (ii) those surveys that contained detailed count data for a range of common mutations. We focused on the 11 mutations that are most commonly reported in Southeast Asia or are part of standard multiplex polymerase chain reaction (PCR) methods: -\u03b13.7, -\u03b14.2, --SEA, --THAI, --MED, --FIL, -(\u03b1)20.5, Hb Adana (HBA2:c.179G\u00a0>\u00a0A), Hb CS (HBA2:c.427T\u00a0>\u00a0C). Hb Paks\u00e9 (HBA2:c.429A\u00a0>\u00a0T), Hb Quong Sze (HbA2:c.377T\u00a0>\u00a0C) (Liu et al., 2000). An \u2018Other\u2019 category was used for other, rarer \u03b1-thalassaemia mutations. For the first data subtype, only surveys that tested for all three \u03b1-thalassaemia forms were mapped and the relative proportions of the different forms in the study sample were displayed using pie charts. For the latter, the same approach to that used in Howes et al. (2013) was used; the variant proportions were displayed using bar charts in which all variants that were explicitly tested for were included on the x-axis (Howes et al., 2013). This allowed information regarding the suite of variants that were tested for in the survey to be displayed as well as unambiguous representation of the absence of a variant in the study sample.\n",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "6b5bb632-00e2-4a77-af9c-94e7b644274d",
+      "submission_id": "4320d6b5-40f0-44f9-bc1f-116893cbb005",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- M Dawn Teare, Newcastle University United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40580.033](https://doi.org/10.7554/eLife.40580.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter, peer reviews, and accompanying author responses.\n\n[Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed.]\n\nThank you for submitting your article \"Estimating the burden of \u03b1-thalassaemia in Thailand using a comprehensive prevalence database for Southeast Asia\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eduardo Franco as the Senior Editor. The two reviewers have opted to remain anonymous.\n\nThe Reviewing Editor has highlighted the concerns that require revision and/or responses, and we have included the separate reviews below for your consideration. If you have any questions, please do not hesitate to contact us.\n\nSummary:\n\nThis is important, novel work. The analyses show a visualized map of \u03b1-thalassemia prevalence and genotypic diversity, which can be of a large benefit for future prevention policy in Thailand. A major strength of this work is an extensive review of relevant prevalence and genotype reports. Overall, this represents a valuable and much-needed contribution to the literature about this neglected genetic disorder.\n\nMajor concerns:\n\nThe model's smoothing effect appears to be quite strong, avoiding the more extreme points such as the 7% frequency of ND-thalassaemia quoted in paragraph four of subsection \u201cOverall distribution of \u03b1-thalassaemia across Southeast Asia\u201d. This ND-thalassaemia model also had relatively low correlation statistics. The authors need to discuss this further, and why the range in the predicted mean map is so homogenous for the ND-thalassaemias?\n\nFigures 4-6: why did you select to map proportions and not frequencies? Frequencies would seem a more informative metric. These maps show considerable variation between surveys very close together geographically (e.g. Vietnam and peninsular Malaysia), which would merit some mention in the Discussion.\n\nThe authors need to clarify if this model underestimates the burden of \u03b1-thalassemia diseases in Thailand due to the overlapping prevalence of \u03b1- and \u03b2-thalassemia.\n\nThe authors should clarify why Bangkok is predicted to have the highest burden of both hydrops fetalis and HbH disease (deletional and non-deletional), despite not having the highest allele frequency of \u03b10-thalassemia (Figure 1).\n\nThe influence of consanguinity is interesting. Authors ran their predictions for 2003 both with and without an adjustment coefficient, finding a relatively small difference. Can the authors explain their decision to not include this adjustment factor in their main predictions for 2020?\n\nSeparate reviews (please respond to each point):\n\nReviewer #1:\n\nThe highlight of this work was, for the first time, employment of geostatistical model to estimate burden of severe form of \u03b1-thalassemia in Thailand, and to the lesser extent in other Southeast Asian countries, in 2020. The analyses also show visualized map of \u03b1-thalassemia prevalence and genotypic diversity, which can be of a large benefit for future prevention policy in Thailand.\n\nThe strength of this work is an extensive review of relevant prevalence and genotype reports, not only from those published in international database, but also from local journals. Criteria for selection of unbiased surveys was clearly stated in the supplementary method 1. The limitation of this work was that these maps represent a prediction or estimation of prevalence. Therefore accuracy of the estimation depends largely upon availability of published data from individual area of the region. The authors, however, clearly stated this limitation in the discussion. Overlapping prevalence of \u03b1- and \u03b2-thalassemia are also commonly observed in Thailand. This includes e.g., AEBart's disease or AEBart's with CS, clinical phenotype of which can be more severe compare to those with deletional or non-deletional HbH alone. Therefore this model remain underestimates burden of \u03b1-thalassemia diseases in Thailand in this context. Future work on model of \u03b2-thalassemia prevalence will be very helpful.\n\nOther specific comment:\n\nIn the Result subsection \u201cEstimates of number of affected newborns in Thailand\u201d: The authors should clarify why Bangkok is predicted to have highest burden of both hydrops fetalis and HbH disease (deletional and non-deletional), despite not having the highest allele frequency of \u03b10-thalassemia (Figure 1).\n\nReviewer #2:\n\nHockham and colleagues present an impressive description of the available data about the burden of \u03b1-thalassaemia in Thailand and the broader ASEAN region. They make a strong case for the need for this analysis, and then detail a very thorough description of the available information, together with modelled surfaces of \u03b1-thalassaemia allele frequencies in Thailand. The scarcity of evidence outside Thailand constrained the modelling analysis to this country alone. From these maps, estimates of newborns affected by different forms of \u03b1-thalassaemia in Thailand are projected for 2020. Overall, this presentation of the evidence, and extension thereof through the modelling analysis, represents a valuable and much-needed contribution to the literature about this neglected genetic disorder \u2013 congratulations to the authors on this commendable undertaking and their clear distillation of a highly complex disorder.\n\nThe Introduction also quotes frequencies of close to 80% in Southeast Asia (citing reference 1), while values of this magnitude are not discussed in the section \"Overall distribution of \u03b1-thalassaemia across Southeast Asia\". If the survey reporting 80% did not meet the inclusion criteria for the present study, perhaps take out from the Introduction as could be misleading and confusing.\n\nSupplementary methods 1, Survey inclusion criteria: the maps risk being misleading if ethnic groups indigenous to an area but not representative are included, given they may today be a minority group. Were any such surveys in fact included in the mapping dataset?\n\nFigures 1 and 2 need to be swapped around (data points first, then the continuous maps).\n\nDoes the Ministry of Health reporting system include any statistics on \u03b1-thalassaemia disorders that could be compared to? Or are the necessary diagnostics not sufficiently accessible for figures to be helpful?\n\nMinor Comments:\n\nIntroduction paragraph three: brief reference to the variation in the ND phenotypes would be helpful. E.g. \"non-deletional variants are variable and typically associated with\u2026\"\n\nReference 22: Author name is \"Darlison\", not \"Darlinson\"\n\nReference 25 (Introduction paragraph five): this reference contains no geostatistical modelling. Suggest citing this instead: https://www.ncbi.nlm.nih.gov/pubmed/23152723\n\nResults section paragraph two: was a minimum sample size imposed? (maybe c/ref to the supplementary files here)\n\nSubsection \u201cEstimates of number of affected newborns in Thailand\u201d: what limits were used to define the spatial extent of Bangkok?\n\nSubsection \u201cOverall distribution of \u03b1-thalassaemia across Southeast Asia\u201d: Supplementary file 2 doesn't currently include this data.\n\nSubsection \u201cGenetic diversity of \u03b1-thalassaemia across Southeast Asia\u201d: \"only distinguished between them\" is not very clear; could change to something like \"and maps relative proportions of each allele type without giving specific variant details\".\n\nDiscussion, line three: suggest some additional detail in relation to the \"epidemiological transition\" \u2013 such as adding \"from infectious to non-communicable causes of disease and death\".\n\nDiscussion, paragraph one, last sentence: \"high prevalence\" is difficult to see in the maps in Figure 2. Perhaps adjust the wording.\n\nDiscussion, paragraph two, final sentence: are there no national statistics on the numbers of stillbirths?\n\nDiscussion, subsection \u201cModel strengths and limitations\u201d, third paragraph: malaria is listed as a possible influence of allele frequencies \u2013 should this be \"historic\" rates of malaria? Given that the diagnostics used here are molecular, this should not have any haematological impact of malaria infection on the diagnostic outcomes.\n\nSubsection \u201cRefining estimates of the annual number of neonates affected by severe disease forms\u201d: state the value of the consanguinity coefficient, and list its source. A reference to explain how F is applied in the Hardy-Weinberg equations would be useful \u2013 e.g.: https://www.ncbi.nlm.nih.gov/pubmed/23950147\n\nFigure 2: the specific locations of the points in panel A are hard to see, but would be helpful in exploring the modelled surfaces. Perhaps include a simpler map just showing the survey locations in the Supplementary information for a comparison with the modelled outputs. Or try scaling the data to resize the points?\n\nFigure 2: would also include the star meaning in the text legend.\n\nFigure 3: Legend needs to include some reference sample size pie charts; the pie charts are also quite difficult to distinguish by size, possible to widen the size range?\n\nFigure 7: the model input indicates that \"transformed allele frequency\" was input into the model \u2013 what transformation was applied and why?\n",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c14d9c54-cedf-4857-be2c-c1d9a5eb3098",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C1",
+      "claim": "Severe forms of \u03b1-thalassaemia, haemoglobin H disease and haemoglobin Bart's hydrops fetalis, are an important public health concern in Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe forms of \u03b1-thalassaemia, haemoglobin H disease and haemoglobin Bart's hydrops fetalis, are an important public health concern in Southeast Asia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a general assertion about the public health significance of these conditions in the region.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "94c9484a-dd01-4c2f-9ee9-93215f681b44",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C2",
+      "claim": "Information on the prevalence, genetic diversity and health burden of \u03b1-thalassaemia in Southeast Asia remains limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet information on the prevalence, genetic diversity and health burden of \u03b1-thalassaemia in the region remains limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "092ee22a-2db8-45ba-9192-42b49ae02f0e",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C3",
+      "claim": "3595 (95% credible interval 1,717\u20136,199) newborns will be born with severe \u03b1-thalassaemia in Thailand in 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that 3595 (95% credible interval 1,717\u20136,199) newborns will be born with severe \u03b1-thalassaemia in Thailand in 2020, which is considerably higher than previous estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This estimate is derived from the geostatistical modeling and demographic data analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "e4f69541-60ed-404d-aad4-551412e1d54e",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C4",
+      "claim": "The estimate of 3595 newborns with severe \u03b1-thalassaemia in Thailand in 2020 is considerably higher than previous estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that 3595 (95% credible interval 1,717\u20136,199) newborns will be born with severe \u03b1-thalassaemia in Thailand in 2020, which is considerably higher than previous estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is made explicitly in the abstract and supported by comparison with Modell and Darlison estimates in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "e2566bb9-ee6f-4b40-84df-fdac96072500",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C5",
+      "claim": "Up to 5% of the world's population carries at least one \u03b1-thalassaemia variant.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that up to 5% of the world's population carries at least one \u03b1-thalassaemia variant, with some populations (e.g. in India and Papua New Guinea) reporting gene frequencies of close to 80% (Piel and Weatherall, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Piel and Weatherall, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "214dbe83-0eed-491c-b2a1-e911a4ad2220",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C6",
+      "claim": "Some populations in India and Papua New Guinea report \u03b1-thalassaemia gene frequencies of close to 80%.",
+      "claim_type": "EXPLICIT",
+      "source": "It is estimated that up to 5% of the world's population carries at least one \u03b1-thalassaemia variant, with some populations (e.g. in India and Papua New Guinea) reporting gene frequencies of close to 80% (Piel and Weatherall, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Piel and Weatherall, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "fffec2ef-29fa-4671-95f9-41be5ded3536",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C7",
+      "claim": "Malaria protection afforded by \u03b1-thalassaemia mutations has been favoured by natural selection in populations with historically high rates of malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Central to its elevated frequency is the malaria protection afforded by the underlying genetic mutations, which have been favoured by natural selection in populations with historically high rates of malaria (Flint et al., 1998; Premawardhena et al., 2017; Weatherall and Clegg, 2001a; May et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies on malaria protection and natural selection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "80415584-ef05-48ff-b05b-0145c69991c2",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C8",
+      "claim": "\u03b1-thalassaemia is now common in other parts of the world due to recent population migrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to recent population migrations, \u03b1-thalassaemia is now common in other parts of the world, as illustrated by the inclusion of haemoglobin H (HbH) disease (a form of \u03b1-thalassaemia) in the newborn screening programme in California (Vichinsky, 2013; Hoppe, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and the example of California's newborn screening program.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "07f516d6-ce34-49cf-8bf8-0ddc923104af",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C9",
+      "claim": "Humans typically possess four copies of the \u03b1-globin gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans typically possess four copies of the \u03b1-globin gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about human genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "f326e068-4a90-4d8f-b8eb-9538d2c752e6",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C10",
+      "claim": "In \u03b1-thalassaemia, at least one of the four \u03b1-globin gene copies is absent or dysfunctional.",
+      "claim_type": "EXPLICIT",
+      "source": "In an individual with \u03b1-thalassaemia, at least one of these four copies is absent or dysfunctional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about \u03b1-thalassaemia based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "8ba29f47-68a5-4880-b048-4f841d223d20",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C11",
+      "claim": "The severity of \u03b1-thalassaemia is inversely related to the number of functional copies of the \u03b1-globin gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The severity of \u03b1-thalassaemia is inversely related to the number of functional copies of the \u03b1-globin gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge about the genotype-phenotype relationship in \u03b1-thalassaemia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "2172daf6-01c8-4b99-a98f-da7eb56173c0",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C12",
+      "claim": "A deficit of three or more \u03b1-globin genes leads to the production of \u03b3-globin tetramers (Hb Bart's) in the foetus or \u03b2-globin tetramers (HbH) in adults.",
+      "claim_type": "EXPLICIT",
+      "source": "A deficit of three or more \u03b1-globin genes leads to the production of \u03b3-globin tetramers, called Hb Bart's, in the foetus or \u03b2-globin tetramers, called HbH, in adults.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge about the molecular consequences of severe \u03b1-thalassaemia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "0c2c380f-6bed-463f-8164-cd4603a93787",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C13",
+      "claim": "Hb Bart's and HbH tetramers are not capable of transporting oxygen efficiently due to their very high oxygen affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to their very high oxygen affinity, neither tetramer is capable of transporting oxygen efficiently (Galanello and Cao, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Galanello and Cao, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "1e0fa72e-6190-4589-971d-adf7ae465692",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C14",
+      "claim": "The instability of HbH leads to the production of inclusion bodies in red blood cells and a variable degree of haemolytic anaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the instability of HbH leads to the production of inclusion bodies in red blood cells and a variable degree of haemolytic anaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge about the pathophysiology of HbH disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "eab3c810-e758-4fab-a5fd-2f504ed60c7e",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C15",
+      "claim": "121 \u03b1-globin gene mutations have been identified as of July 7, 2018.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, 121 \u03b1-globin gene mutations have been identified (HbVar, http://globin.bx.psu.edu, accessed 07 July 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on data from the HbVar database accessed on a specific date.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "38fd5b48-4d63-4175-a5b6-fbfac15445ff",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C16",
+      "claim": "Non-deletional \u03b1-thalassaemia variants are typically associated with more severe phenotypes than deletional variants.",
+      "claim_type": "EXPLICIT",
+      "source": "While deletions constitute the vast majority of these \u03b1-thalassaemia variants, non-deletional variants are typically associated with more severe phenotypes (Chui et al., 2003; Fucharoen and Viprakasit, 2009; Lal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "47f99c5b-03d6-44d4-8095-dc4a52de6cef",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C17",
+      "claim": "Considerable phenotypic variability is observed even amongst non-deletional \u03b1-thalassaemia variants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even amongst non-deletional variants, considerable phenotypic variability is observed (Singer, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Singer, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "1cd4ebf1-3ffe-41ea-9f9c-2730f444df6b",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C18",
+      "claim": "Co-inheritance of \u03b1-thalassaemia and \u03b2-thalassaemia often leads to a reduced imbalance between \u03b1-globin and \u03b2-globin chains, resulting in a milder thalassaemia phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the geographical distribution of \u03b2-thalassaemia largely overlaps with the distribution of \u03b1-thalassaemia, it is important to note that their co-inheritance often leads to a reduced imbalance between \u03b1-globin and \u03b2-globin chains, resulting in a milder thalassaemia phenotype (Weatherall et al., 1981; Wainscoat et al., 1983; Kan and Nathan, 1970; Law et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "d104436d-e2e3-47ae-a5ef-ace9af117d5a",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C19",
+      "claim": "\u03b10-thalassaemia variants (e.g. --SEA, --THAI) are common in Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "From a clinical perspective, \u03b1-thalassaemia is mostly a burden in Southeast Asia where \u03b10-thalassaemia variants (e.g. --SEA, --THAI) are common and result in HbH disease when inherited with \u03b1+-thalassaemia (e.g. -\u03b13.7 or -\u03b14.2) or \u03b1ND-thalassaemia (e.g. Hb Constant Spring, or Hb CS, or Hb Paks\u00e9), or in Hb Bart's hydrops fetalis when inherited from both parents (Weatherall et al., 2006; Chui, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Weatherall et al., 2006 and Chui, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "e5c6c8d0-faf0-44ea-ada2-bf7d68504607",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C20",
+      "claim": "\u03b10-thalassaemia inherited with \u03b1+-thalassaemia or \u03b1ND-thalassaemia results in HbH disease.",
+      "claim_type": "EXPLICIT",
+      "source": "From a clinical perspective, \u03b1-thalassaemia is mostly a burden in Southeast Asia where \u03b10-thalassaemia variants (e.g. --SEA, --THAI) are common and result in HbH disease when inherited with \u03b1+-thalassaemia (e.g. -\u03b13.7 or -\u03b14.2) or \u03b1ND-thalassaemia (e.g. Hb Constant Spring, or Hb CS, or Hb Paks\u00e9), or in Hb Bart's hydrops fetalis when inherited from both parents (Weatherall et al., 2006; Chui, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Weatherall et al., 2006 and Chui, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "cbbfce5d-2e5f-489e-8a0a-463ed78f4f09",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C21",
+      "claim": "\u03b10-thalassaemia inherited from both parents results in Hb Bart's hydrops fetalis.",
+      "claim_type": "EXPLICIT",
+      "source": "From a clinical perspective, \u03b1-thalassaemia is mostly a burden in Southeast Asia where \u03b10-thalassaemia variants (e.g. --SEA, --THAI) are common and result in HbH disease when inherited with \u03b1+-thalassaemia (e.g. -\u03b13.7 or -\u03b14.2) or \u03b1ND-thalassaemia (e.g. Hb Constant Spring, or Hb CS, or Hb Paks\u00e9), or in Hb Bart's hydrops fetalis when inherited from both parents (Weatherall et al., 2006; Chui, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Weatherall et al., 2006 and Chui, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "4f0d83b9-18be-4bea-bf64-e3fd05db085e",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C22",
+      "claim": "Recent evidence suggests a spectrum of mild to severe forms of HbH disease, with the worst affected individuals requiring lifelong transfusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, HbH disease was considered to be relatively benign; however, recent evidence suggests a spectrum of mild to severe forms of HbH disease, with the worst affected individuals requiring lifelong transfusion (Chui et al., 2003; Fucharoen and Viprakasit, 2009; Lal et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to clinical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "149512cf-8d3a-41fd-9797-4083f8f334bc",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C23",
+      "claim": "Hb Bart's hydrops fetalis is almost always fatal in utero or soon after birth.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb Bart's hydrops fetalis, the most severe form of \u03b1-thalassaemia, associated with an absence of any functional \u03b1-globin genes, is almost always fatal in utero or soon after birth, although intrauterine interventions and perinatal intensive care can lead to survival (Songdej et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Songdej et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "5f75c5f2-ee8e-4f94-a2a9-91713aa752a9",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C24",
+      "claim": "Intrauterine interventions and perinatal intensive care can lead to survival in Hb Bart's hydrops fetalis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb Bart's hydrops fetalis, the most severe form of \u03b1-thalassaemia, associated with an absence of any functional \u03b1-globin genes, is almost always fatal in utero or soon after birth, although intrauterine interventions and perinatal intensive care can lead to survival (Songdej et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Songdej et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "08423c5c-64d7-4d91-9d59-43d94baf9ee3",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C25",
+      "claim": "A comprehensive review of \u03b1-thalassaemia epidemiology for the whole Southeast Asian region has not been performed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whilst several narrative reviews of the epidemiology of \u03b1-thalassaemia in Southeast Asian countries are available (Chui, 2005; Fucharoen and Winichagoon, 1987; Fucharoen and Winichagoon, 2011), a comprehensive review for the whole region has not been performed, making the current evidence-base patchy and incohesive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "36eea367-7060-422b-8fde-58be51a5c194",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C26",
+      "claim": "There is a substantial amount of \u03b1-thalassaemia data available only in local data sources that is not being accessed by the international community.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there appears to be a substantial amount of data that are available only in local data sources, which is not being accessed by the international community.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the authors' experience in identifying local Thai sources.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "f479d70c-80f1-491a-a9d3-64f02dc09238",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C27",
+      "claim": "Modell and Darlison's estimates represent the only source of information on the epidemiology of thalassaemias and other inherited haemoglobin disorders at national and regional levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates of the number of newborns with severe forms of \u03b1-thalassaemia published by Modell and Darlison currently represent the only source of information on the epidemiology of thalassaemias and other inherited haemoglobin disorders at national and regional levels (Modell and Darlison, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Modell and Darlison, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "740d1463-2b50-4e8b-a9f8-63558c3b1f8c",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C28",
+      "claim": "Various inconsistencies have been identified in Modell and Darlison's \u03b1-thalassaemia estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, various inconsistencies have been identified in these \u03b1-thalassaemia estimates (Piel and Weatherall, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Piel and Weatherall, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "226f500d-c176-414d-a256-ed914078d49b",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C29",
+      "claim": "Modell and Darlison's estimates do not include most of the surveys conducted in the genomic era.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, they do not include most of the surveys conducted in the genomic era, which has allowed accurate diagnosis through DNA testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous estimates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "3875f677-9ce9-45fc-8e49-a3e365a7e967",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C30",
+      "claim": "Haemoglobinopathies often present remarkably heterogeneous geographical distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, haemoglobinopathies often present remarkably heterogeneous geographical distributions (Piel et al., 2013a; Piel et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Piel et al., 2013a and 2013b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "21522c56-6b1b-409e-a426-b3e1280f7094",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C31",
+      "claim": "The keyword searches yielded a total of 868 unique potential sources of data on \u03b1-thalassaemia prevalence and/or genetic diversity in 10 Southeast Asian countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Our keyword searches yielded a total of 868 unique potential sources of data on \u03b1-thalassaemia prevalence and/or genetic diversity in 10 Southeast Asian countries: Brunei Darussalam, Cambodia, Indonesia, Lao People's Democratic Republic, Malaysia, Myanmar, Philippines, Singapore, Thailand and Vietnam (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the search results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "98772f6b-66a4-41de-9be3-493c424b07ba",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C32",
+      "claim": "74 potential data sources were identified from local Thai journals.",
+      "claim_type": "EXPLICIT",
+      "source": "A further 74 potential data sources were identified by one of the authors (SE) from local Thai journals and independently double-checked for inclusion into the study (CH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the local search results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "8ac1233e-5305-47c3-84cd-acbb5dd0b888",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C33",
+      "claim": "75 sources met the inclusion criteria and were included in the final database.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all these sources, 75 met our inclusion criteria and were included in the final database.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the final database composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "3e39e5d8-c7f6-4243-af6a-74cba9034146",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C34",
+      "claim": "Data were available for 106 individual population samples: 58 from the online literature search and 48 from the local literature.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to some sources reporting estimates for more than one population, data were available for 106 individual population samples: 58 from the online literature search and 48 from the local literature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the database composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "81f70c4f-ab88-4f0c-9617-b3970e410945",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C35",
+      "claim": "46 surveys provided data on \u03b1-thalassaemia gene frequency alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-six surveys provided data on \u03b1-thalassaemia gene frequency alone, two provided data only relating to genetic diversity and 58 provided data on both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the database composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "4eedf42d-5c41-4fc4-a907-a85672258e68",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C36",
+      "claim": "The total number of individuals sampled was 133,649.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of individuals sampled was 133,649 (the population of the region is estimated to be 647,483,729 in 2017), with a mean sample size of 1261.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the database composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "16b77a99-d2c9-4ed2-93e6-86efd3e4c471",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C37",
+      "claim": "The mean sample size across surveys was 1261.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of individuals sampled was 133,649 (the population of the region is estimated to be 647,483,729 in 2017), with a mean sample size of 1261.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the database composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "225ef684-4d24-4fc8-a34f-92604574ee04",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C38",
+      "claim": "Thailand had the highest number of surveys published in the international literature (excluding local searches).",
+      "claim_type": "EXPLICIT",
+      "source": "The country for which the highest number of surveys was published in the international literature (i.e. excluding surveys obtained through local searches) was Thailand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the database analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "eb0c9d9f-41dc-4b90-b13e-8be1852c047e",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C39",
+      "claim": "No published surveys were identified for Brunei Darussalam or the Philippines.",
+      "claim_type": "EXPLICIT",
+      "source": "No published surveys were identified for Brunei Darussalam or the Philippines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the database analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "39535ce7-d8d1-499d-a740-d28a169fe816",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C40",
+      "claim": "In Thailand, the northern and northeastern parts of the country contained >75% of all surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "Within countries, surveys predominated in certain areas. For instance, in Thailand, the northern and northeastern parts of the country contained >75% of all surveys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the spatial distribution analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "15ae7802-1b64-47ac-9a91-f7c01e1cc677",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C41",
+      "claim": "Data for southern Thailand came exclusively from Thai journals (n = 4).",
+      "claim_type": "EXPLICIT",
+      "source": "Data for southern Thailand came exclusively from Thai journals (n = 4) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the data sources for southern Thailand.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "9447d55e-51b0-46d5-8cc5-d6743fac23ca",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C42",
+      "claim": "\u03b10-thalassaemia was the most extensively studied form (n = 97).",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b10-thalassaemia was the most extensively studied form (n = 97), followed by \u03b1ND-thalassaemia (n = 49) and then \u03b1+-thalassaemia (n = 47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the database composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "b0972242-4c26-40d6-9e7f-e3f82e197dd5",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C43",
+      "claim": "The predicted allele frequency range for \u03b10-thalassaemia in Thailand is 0.57\u20134.46%.",
+      "claim_type": "EXPLICIT",
+      "source": "The maps for \u03b10- and \u03b1+-thalassaemia indicate clear spatial heterogeneity in allele frequencies, with ranges of 0.57\u20134.46% and 2.43\u201315.03%, respectively (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the geostatistical model predictions shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "4e13de89-610b-45f8-8883-b44afbd66ba7",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C44",
+      "claim": "The predicted allele frequency range for \u03b1+-thalassaemia in Thailand is 2.43\u201315.03%.",
+      "claim_type": "EXPLICIT",
+      "source": "The maps for \u03b10- and \u03b1+-thalassaemia indicate clear spatial heterogeneity in allele frequencies, with ranges of 0.57\u20134.46% and 2.43\u201315.03%, respectively (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the geostatistical model predictions shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "6bddecfd-3119-46eb-b7d1-e188fa665f47",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C45",
+      "claim": "Predicted allele frequencies of \u03b1ND-thalassaemia in Thailand range between 1.57% and 1.65%.",
+      "claim_type": "EXPLICIT",
+      "source": "Predicted allele frequencies of \u03b1ND-thalassaemia range between 1.57% and 1.65% only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the geostatistical model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "0299f4e5-dba6-4c68-ab3a-a5f5cc6cf698",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C46",
+      "claim": "The highest predicted \u03b10-thalassaemia allele frequencies in Thailand are found in the northeast of the country, along a belt across most of the north, and in Chonburi and Rayong provinces in central Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "The allele is also predicted at frequencies of up to 4% in the northeast of the country, along a belt across most of the north of the country and in Chonburi and Rayong provinces in central Thailand.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the geostatistical model predictions shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "e539f39b-4671-4c52-9cec-c3df151fff8b",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C47",
+      "claim": "\u03b1+-thalassaemia has its highest predicted allele frequencies across the whole of the north and northeastern zones of Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1+-thalassaemia has its highest predicted allele frequencies across the whole of the north and northeastern zones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is derived from the geostatistical model predictions shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "ac79ca64-9a8c-48c0-b814-2d486ad539ef",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C48",
+      "claim": "The estimated number of Hb Bart's hydrops fetalis births in Thailand in 2020 is 423 (CI: 184\u2013761).",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that the number of Hb Bart's hydrops fetalis births in the country will be 423 (CI: 184\u2013761) in 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from pairing allele frequency predictions with demographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "96303ece-0083-44fb-bfa0-9da2ad771304",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C49",
+      "claim": "The estimated number of new cases of HbH disease in Thailand in 2020 is 3,172, including 2674 (CI: 1,296\u20134,491) deletional and 498 (CI: 237\u2013947) non-deletional cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of new cases of HbH disease is estimated to be 3,172, including 2674 (CI: 1,296\u20134,491) deletional and 498 (CI: 237\u2013947) non-deletional cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from pairing allele frequency predictions with demographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "6a476dfb-329a-47d6-80b8-f30326a48215",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C50",
+      "claim": "The highest absolute burden of hydrops fetalis in Thailand is predicted in Bangkok City (57 [CI: 13\u2013151]).",
+      "claim_type": "EXPLICIT",
+      "source": "The highest absolute burden of hydrops fetalis is predicted in Bangkok City (57 [CI: 13\u2013151]) (Figure 2\u2014figure supplement 2), with its high population density, and Udon Thani (23 [CI: 6\u201366]) in the northeastern zone, where some of the highest \u03b10-thalassaemia allele frequencies are predicted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from pairing allele frequency predictions with demographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "214a2ba2-f357-4d6c-9bbf-3e2c51d4cd15",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C51",
+      "claim": "Modell and Darlison estimated 1017 births to be affected by Hb Bart's hydrops fetalis in Thailand in 2003.",
+      "claim_type": "EXPLICIT",
+      "source": "Modell and Darlison estimated 1017 and 2515 births to be affected by Hb Bart's hydrops fetalis and HbH disease, respectively, in 2003.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation of previous estimates for comparison.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "e35a95f8-f0c2-41bf-94a8-d5b4682fe9ce",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C52",
+      "claim": "Modell and Darlison estimated 2515 births to be affected by HbH disease in Thailand in 2003.",
+      "claim_type": "EXPLICIT",
+      "source": "Modell and Darlison estimated 1017 and 2515 births to be affected by Hb Bart's hydrops fetalis and HbH disease, respectively, in 2003.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation of previous estimates for comparison.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "42b637a5-3aa6-4b49-89a0-a57cf2134d66",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C53",
+      "claim": "Using 2003 population data, the study estimates 709 newborns will be born with Hb Bart's hydrops fetalis in Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "Using population data from the same year paired with our model-based maps, and assuming no consanguinity, we estimate 709 and 5469 newborns to be born with Hb Bart's hydrops fetalis and HbH disease in the country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from applying the model to 2003 demographic data for comparison with previous estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "5ee11bfe-6657-485e-8c01-322170bd76ce",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C54",
+      "claim": "Using 2003 population data, the study estimates 5469 newborns will be born with HbH disease in Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "Using population data from the same year paired with our model-based maps, and assuming no consanguinity, we estimate 709 and 5469 newborns to be born with Hb Bart's hydrops fetalis and HbH disease in the country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from applying the model to 2003 demographic data for comparison with previous estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "a78f908c-15d1-4fbf-b57d-e01e77980a42",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C55",
+      "claim": "The study's estimates suggest that the burden of HbH disease in Thailand may have previously been underestimated.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates are therefore consistent with those by Modell and Darlison for Hb Bart's hydrops fetalis. However, they suggest that the burden of HbH disease in Thailand may have previously been underestimated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison between the study's estimates and previous estimates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "d321acff-afe3-4cbc-9f2c-80eaf9eb5bfc",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C56",
+      "claim": "15% of the 5469 neonatal HbH disease cases in 2003 were of non-deletional types.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, whilst Modell and Darlison did not estimate the burden of non-deletional forms of HbH disease, our estimates suggest that 15% of the 5469 neonatal cases were of non-deletional types, which are usually associated with more severe phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the study's calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "56b0edbf-fb9a-4691-8403-1ff963f1ba8c",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C57",
+      "claim": "Among surveys testing for all three forms of \u03b1-thalassaemia, the overall \u03b1-thalassaemia gene frequency ranged from 0% in populations from peninsular Malaysia to 35.4% in Preah Vihar, Cambodia.",
+      "claim_type": "EXPLICIT",
+      "source": "In our database for all of Southeast Asia, the number of surveys that tested for all three forms of \u03b1-thalassaemia was 40. Amongst these, the overall \u03b1-thalassaemia gene frequency ranged from 0% in populations from peninsular Malaysia to 35.4% in Preah Vihar, Cambodia (Munkongdee et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the database analysis with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "54c65e35-6a75-4850-ae82-5f44b659f05b",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C58",
+      "claim": "A higher allele frequency of 49% was reported in the So ethnic group from Khammouane Province in Lao PDR, although the sample size was small (n = 50).",
+      "claim_type": "EXPLICIT",
+      "source": "A higher allele frequency of 49% was also reported in the So ethnic group from Khammouane Province in Lao PDR, although the sample size for this study was small (n = 50) (Sengchanh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of a specific survey result with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "c183440f-e1d8-48f9-b5d8-2b39d436b5e4",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C59",
+      "claim": "The highest \u03b1+-thalassaemia allele frequency observed in the region was 26% in Cambodia.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1+-thalassaemia, the most prevalent form, reached allele frequencies of 26% in Cambodia (Figure 1B, Figure 1\u2014source data 2) (Munkongdee et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of the database analysis with a citation and reference to Figure 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "bd638e83-2f35-48b8-96be-1f907e65b325",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C60",
+      "claim": "The surveys revealed a clear north-to-south decline in the distribution of \u03b1+-thalassaemia across Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "The surveys revealed a clear north-to-south decline in the distribution of \u03b1+-thalassaemia across the region, with a single high allele frequency estimate of 16.8% observed in Sabah in Malaysian Borneo (Tan et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the spatial pattern of survey results shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "96f13e9b-669e-4314-8956-6b0a270c2378",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C61",
+      "claim": "The observed allele frequency of \u03b1ND-thalassaemia ranged between 0% in various locations across Malaysia and 16.25% in central Peninsular Malaysia.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed allele frequency of \u03b1ND-thalassaemia ranged between 0% in various locations across Malaysia and 16.25% in central Peninsular Malaysia (Figure 1C, Figure 1\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of the database analysis with reference to Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "78d16409-6bd7-4327-afb6-5a104a6755cc",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C62",
+      "claim": "--SEA was the dominant \u03b10-thalassaemia mutation throughout the region.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the region, --SEA was the dominant \u03b10-thalassaemia mutation, and in the majority of surveys -\u03b13.7 was the dominant \u03b1+-thalassaemia and Hb CS the dominant \u03b1ND-thalassaemia mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the genetic diversity data shown in Figures 4-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "bce40fd5-8149-4825-b9a1-acee830e9133",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C63",
+      "claim": "In the majority of surveys, -\u03b13.7 was the dominant \u03b1+-thalassaemia mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the region, --SEA was the dominant \u03b10-thalassaemia mutation, and in the majority of surveys -\u03b13.7 was the dominant \u03b1+-thalassaemia and Hb CS the dominant \u03b1ND-thalassaemia mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the genetic diversity data shown in Figures 4-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "cb7d459b-2756-4f2d-a3a1-e6a1bf5892a5",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C64",
+      "claim": "In the majority of surveys, Hb CS was the dominant \u03b1ND-thalassaemia mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the region, --SEA was the dominant \u03b10-thalassaemia mutation, and in the majority of surveys -\u03b13.7 was the dominant \u03b1+-thalassaemia and Hb CS the dominant \u03b1ND-thalassaemia mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the genetic diversity data shown in Figures 4-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "0fbab044-ec79-47ed-a9b3-d42a5fa265f6",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C65",
+      "claim": "The -(\u03b1)20.5 and --MED mutations were not detected in any of the surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "The -(\u03b1)20.5 and --MED mutations were not detected in any of the surveys, whilst the --FIL mutation was found in 2 of the 16 surveys in which it was tested for and --THAI in 9 of the 31 surveys in which it was included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the genetic diversity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "bc1218c3-569f-46eb-9e56-2a8a362825e9",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C66",
+      "claim": "The --FIL mutation was found in 2 of the 16 surveys in which it was tested for.",
+      "claim_type": "EXPLICIT",
+      "source": "The -(\u03b1)20.5 and --MED mutations were not detected in any of the surveys, whilst the --FIL mutation was found in 2 of the 16 surveys in which it was tested for and --THAI in 9 of the 31 surveys in which it was included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the genetic diversity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "3809fe1d-0cec-45a0-a8b0-f76762d14475",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C67",
+      "claim": "The --THAI mutation was found in 9 of the 31 surveys in which it was included.",
+      "claim_type": "EXPLICIT",
+      "source": "The -(\u03b1)20.5 and --MED mutations were not detected in any of the surveys, whilst the --FIL mutation was found in 2 of the 16 surveys in which it was tested for and --THAI in 9 of the 31 surveys in which it was included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the genetic diversity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "ac021152-0753-49a5-a0e8-38c9709e6855",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C68",
+      "claim": "The model-based maps for Thailand are the first spatially continuous maps of the distribution of \u03b1-thalassaemia in any country.",
+      "claim_type": "EXPLICIT",
+      "source": "The model-based maps for Thailand presented here are, to our knowledge, the first spatially continuous maps of the distribution of \u03b1-thalassaemia in any country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "d31f6b9b-3a9b-46ca-b798-2d5945f032c9",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C69",
+      "claim": "The newborn estimates represent the first evidence-based estimates of specific forms of \u03b1-thalassaemia disease amongst newborns since 2003.",
+      "claim_type": "EXPLICIT",
+      "source": "Our newborn estimates represent the first evidence-based estimates of specific forms of \u03b1-thalassaemia disease amongst newborns since 2003 (although the study in which they were reported was published in 2008) (Modell and Darlison, 2008) and the first estimates at sub-national level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "c7c5603e-bfd2-4212-8df4-7f6f87972101",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C70",
+      "claim": "The estimate of Hb Bart's hydrops fetalis births represents more than 10% of the 3697 stillbirths estimated for Thailand in 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, whilst there are currently no estimates of the number of stillbirths that will occur in Thailand in 2020, our estimate of the number of Hb Bart's hydrops fetalis births represents more than 10% of the 3697 stillbirths estimated for 2015 (Blencowe et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the study's estimates and cited stillbirth data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "faa56b42-f2d1-4884-bfb9-3b98d5b9475f",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C71",
+      "claim": "The newborn calculations in the present study represent a methodological advance over previous efforts to assess the burden of \u03b1-thalassaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the newborn calculations in the present study represent a methodological advance over previous efforts to assess the burden of \u03b1-thalassaemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a contribution of the study based on the use of fine-scale data and geostatistical methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "3cb95c02-f281-41b2-8680-d3eb1408042d",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C72",
+      "claim": "The descriptive maps represent the first detailed cartographic representations of \u03b1-thalassaemia allele frequency estimates in Southeast Asia that take into account the specific geographical location of the surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "Our descriptive maps represent the first detailed cartographic representations of \u03b1-thalassaemia allele frequency estimates in Southeast Asia, which take into account the specific geographical location of the surveys in which they were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "f8c13b95-4b94-441c-af4a-3c355dc1731e",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C73",
+      "claim": "The maps demonstrate a severe lack of data on the allele frequency of \u03b1-thalassaemia across large parts of Southeast Asia, including Myanmar, northern Lao PDR, northern Vietnam, Indonesia, Philippines and Brunei.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our maps also demonstrate a severe lack of data on the allele frequency of \u03b1-thalassaemia across large parts of Southeast Asia, including in Myanmar, northern Lao PDR, northern Vietnam, Indonesia, Philippines and Brunei.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the spatial distribution of surveys shown in the figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "d6cddf89-72bd-492a-bc18-2b6400e495bf",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C74",
+      "claim": "High variant heterogeneity has been observed for G6PD deficiency in Southeast Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "However, high variant heterogeneity has been observed for other genetic disorders (e.g. G6PD deficiency) in Southeast Asia, (Howes et al., 2013) which might suggest a similar underlying cause.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Howes et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "2d5756dd-68a2-4f81-a4c3-888dcf93f691",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C75",
+      "claim": "P. falciparum has been shown to display genetically structured populations within Thailand alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, P. falciparum has been shown to display genetically structured populations within Thailand alone. (Pumpaibool et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Pumpaibool et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "a0d38cfb-5d01-4965-a511-8609965efb22",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C76",
+      "claim": "The evolutionary dynamics between P. falciparum and haemoglobin variants, including \u03b1-thalassaemia, may be more complex than currently appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the evolutionary dynamics between P. falciparum and haemoglobin variants, including \u03b1-thalassaemia, are more complex than we currently appreciate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative interpretation of the observed genetic diversity patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "87e448e3-35a1-45a7-8382-cb1244c7733d",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C77",
+      "claim": "Areas with the highest proportions of co-occurring severe \u03b1-thalassaemia forms may experience a higher prevalence of the severe non-deletional form of HbH disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Areas with the highest proportions of co-occurring severe \u03b1-thalassaemia forms (i.e. \u03b10-thalassaemia and \u03b1ND-thalassaemia) may experience a higher prevalence of the severe non-deletional form of HbH disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic diversity patterns and knowledge of disease severity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "eb529a27-9266-4e1b-afb7-6de998d66334",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C78",
+      "claim": "The predominance of Hb CS in surveys from Malaysia and Vietnam suggests that the health burden of \u03b1-thalassaemia in these areas may be greater than previously thought.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the predominance of Hb CS in surveys from Malaysia and Vietnam suggests that the health burden of \u03b1-thalassaemia in these areas may be greater than previously thought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic diversity data and knowledge that Hb CS causes more severe phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "b18e018c-57eb-4035-9eeb-16d9c03f2ff9",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C79",
+      "claim": "Hb CS is a mutation at the termination codon of the \u03b12-globin gene, which in a normal individual accounts for three-quarters of overall \u03b1-globin production.",
+      "claim_type": "EXPLICIT",
+      "source": "Hb CS is a mutation at the termination codon of the \u03b12-globin gene, which, in a normal individual, accounts for three-quarters of overall \u03b1-globin production (Liebhaber and Kan, 1981; Orkin et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Liebhaber and Kan, 1981 and Orkin et al., 1981.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "c0484d76-fd59-45d7-a547-9ef0596dc0f2",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C80",
+      "claim": "\u03b12-globin gene mutations, such as Hb CS, tend to cause a more severe phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, \u03b12-globin gene mutations, such as Hb CS, tend to cause a more severe phenotype (Chui, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chui, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "e97b94d1-8440-4b09-b386-8cbcf0b2412b",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C81",
+      "claim": "The average mean absolute error of the predictions is 0.93%, 4.10% and 2.30%, for \u03b10-, \u03b1+- and \u03b1ND-thalassaemia, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the 10-fold cross-validation procedure reveal an average mean absolute error of the predictions of 0.93%, 4.10% and 2.30%, for \u03b10-, \u03b1+- and \u03b1ND-thalassaemia, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the model validation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "19331feb-f66d-4efc-a580-2a064bf6c9e8",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C82",
+      "claim": "The average correlation between the observed and predicted values is 0.74 (0.62\u20130.83), 0.71 (0.49\u20130.85) and 0.47 (0.17\u20130.69) for \u03b10-, \u03b1+- and \u03b1ND-thalassaemia, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The average correlation between the observed and predicted values is 0.74 (0.62\u20130.83), 0.71 (0.49\u20130.85) and 0.47 (0.17\u20130.69), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the model validation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "a9db0086-1a6f-48cc-8274-76bd52a3b5a9",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C83",
+      "claim": "Country reports from Malaysia indicate a shift in the age distribution of thalassaemia patients towards older ages.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, country reports (e.g. from Malaysia) indicate a shift in the age distribution of thalassaemia patients towards older ages (Ibrahim, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ibrahim, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "a90e40f3-9cb9-422b-b912-9caef49b8b22",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C84",
+      "claim": "Substantial additional survey data can be identified in locally published sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we have demonstrated that substantial additional survey data can be identified in locally published sources and, as a result, highlighted the enormous value of future collaborations to collate local data in other regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the study's experience in identifying 48 surveys from local Thai sources.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "d9b44892-ce56-482f-b8ec-75e69b36487b",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C85",
+      "claim": "Extensive variation in allele frequencies between different ethnic groups in similar geographic locations has been observed in Thailand.",
+      "claim_type": "EXPLICIT",
+      "source": "Although extensive variation in allele frequencies between different ethnic groups in similar geographic locations has been observed in Thailand (Kulaphisit et al., 2017) and other countries (e.g. Sri Lanka), this could not be reflected in our predicted allele frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Kulaphisit et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "a7b67b53-2b75-4aab-9859-88599fd70315",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C86",
+      "claim": "Allele frequencies of around 3.65% for the Hb CS mutation have been reported in the Khmer ethnic group in Surin and Buriram provinces.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, allele frequencies of around 3.65% for the Hb CS mutation have been reported in the Khmer ethnic group in Surin and Buriram provinces, whilst our model predicts maximum allele frequencies of 1.65% here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of ethnic variation that the model cannot capture.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "427086cc-7718-41e3-82dd-8015b62dd7cd",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "claim_id": "C87",
+      "claim": "Many studies have shown a positive epistatic interaction between \u03b1- and \u03b2-thalassaemia, whereby their co-inheritance results in the amelioration of the associated blood disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Many studies have shown a positive epistatic interaction between \u03b1- and \u03b2-thalassaemia, whereby their co-inheritance results in the amelioration of the associated blood disorder (Fucharoen and Weatherall, 2012; Viprakasit et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fucharoen and Weatherall, 2012 and Viprakasit et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "676d660f-0b55-4d2f-9fee-833beb2116c4",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors compiled a comprehensive geodatabase of \u03b1-thalassaemia surveys in Southeast Asia, identifying 868 potential sources from online searches and 74 from local Thai journals, resulting in 75 sources meeting inclusion criteria representing 106 population samples with 133,649 individuals. The database shows uneven geographic coverage with Thailand having the most surveys and no data for Brunei or Philippines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C42 provide detailed, internally consistent data on database composition derived from systematic literature searches. The numbers are specific and traceable, and the identification of local Thai sources (C32, C41) demonstrates thoroughness. The geographic gaps (C39) and spatial clustering (C40) are directly observable from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "f7a61946-11d3-4394-958a-7878cbb5b428",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Geostatistical modeling produced continuous allele frequency maps for Thailand showing spatial heterogeneity: \u03b10-thalassaemia ranges 0.57-4.46% with highest frequencies in northeast and northern regions; \u03b1+-thalassaemia ranges 2.43-15.03% with highest frequencies across north and northeast; \u03b1ND-thalassaemia shows minimal variation (1.57-1.65%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 describe model outputs with specific quantitative ranges and spatial patterns visible in Figure 2. The model validation (C81-C82) shows reasonable performance for \u03b10- and \u03b1+-thalassaemia (correlations 0.74 and 0.71), though weaker for \u03b1ND-thalassaemia (0.47), consistent with the narrow predicted range. The spatial patterns are supported by the input data distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "8198585f-8bbb-46be-8750-3c1989ca5a87",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For 2020, the study estimates 423 (CI: 184-761) Hb Bart's hydrops fetalis births and 3,172 HbH disease cases (2,674 deletional, 498 non-deletional) in Thailand, with highest absolute burden in Bangkok City and northeastern provinces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 present newborn burden estimates derived by combining model-predicted allele frequencies with demographic data using Hardy-Weinberg equilibrium assumptions. The methodology is clearly described, credible intervals are provided, and the spatial distribution of burden logically follows from allele frequency predictions and population density patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "2ded1443-dddf-4940-aa59-09de6adb4bcf",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The study's 2020 estimate of 3,595 severe \u03b1-thalassaemia births is considerably higher than previous estimates, primarily due to higher HbH disease estimates. When applied to 2003 data, the study estimates 709 Hb Bart's hydrops fetalis cases (consistent with Modell and Darlison's 1,017) but 5,469 HbH disease cases (vs. 2,515 previously), suggesting prior underestimation, with 15% being severe non-deletional forms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C51-C56 provide a coherent comparison with previous estimates. The consistency for Hb Bart's hydrops fetalis validates the approach, while the HbH disease discrepancy is explained by methodological differences (fine-scale spatial data, updated surveys, inclusion of non-deletional forms). The comparison using 2003 data (C53-C54) appropriately controls for demographic changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "142edae5-5762-41fc-a298-994f599ed4b1",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Across Southeast Asia, overall \u03b1-thalassaemia gene frequency ranged from 0% to 35.4% (49% in one small sample). \u03b1+-thalassaemia reached 26% in Cambodia with a clear north-to-south decline. \u03b1ND-thalassaemia ranged from 0% to 16.25% in Malaysia with patchy distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C61 report observed allele frequency ranges from the compiled database with appropriate citations and caveats (e.g., small sample size in C58). The north-to-south gradient (C60) is supported by Figure 1B and represents a clear spatial pattern. The ranges are consistent with the underlying survey data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "c13e1775-d178-42b1-971e-b3146a6cc419",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Genetic diversity analysis shows --SEA as the dominant \u03b10-thalassaemia mutation region-wide, -\u03b13.7 as the dominant \u03b1+-thalassaemia mutation in most surveys, and Hb CS as the dominant \u03b1ND-thalassaemia mutation. Some mutations (-(\u03b1)20.5, --MED) were not detected, while --FIL and --THAI were found in limited surveys.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C67 describe genetic diversity patterns directly observable in Figures 4-6. The dominance patterns are clearly stated with appropriate qualifications ('in the majority of surveys'). The absence of certain mutations and limited detection of others (C65-C67) are specific, verifiable observations from the database.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "c33032bc-0d53-4d46-a0db-564544e210fd",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study represents multiple methodological firsts: the first spatially continuous maps of \u03b1-thalassaemia distribution in any country, first evidence-based estimates of specific \u03b1-thalassaemia forms since 2003, and first sub-national estimates. The Hb Bart's hydrops fetalis estimate represents >10% of Thailand's 2015 stillbirths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 assert novelty and significance. The 'first' claims are supported by the absence of comparable prior work in the literature review. The stillbirth comparison (C70) provides important public health context using cited data (Blencowe et al., 2016). The methodological advance (C71) is justified by the use of fine-scale geostatistical methods versus previous country-level extrapolations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "a6caf455-7b34-4f4d-ab4a-aeda780270ae",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The maps reveal severe data gaps across large parts of Southeast Asia (Myanmar, northern Lao PDR, northern Vietnam, Indonesia, Philippines, Brunei), though substantial additional data can be identified in locally published sources, as demonstrated by the 48 Thai surveys found in local journals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C84 identify both limitations and opportunities. The data gaps (C73) are directly observable in Figures 1-2. The value of local sources (C84) is empirically demonstrated by the substantial contribution of local Thai journals (45% of Thailand surveys), supporting the inference that similar data likely exists for other countries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "8da23586-92e5-446f-ac69-d195cea1292d",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Model validation using 10-fold cross-validation shows mean absolute errors of 0.93%, 4.10%, and 2.30% for \u03b10-, \u03b1+-, and \u03b1ND-thalassaemia respectively, with correlations between observed and predicted values of 0.74, 0.71, and 0.47.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 report model validation metrics that are appropriate for geostatistical models. The lower correlation for \u03b1ND-thalassaemia (0.47) is consistent with the narrow predicted range (C45) and acknowledged model limitations. The validation approach (10-fold cross-validation) is standard and properly implemented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "3bcd4cdb-212a-4e8a-b871-021a117da5dc",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Areas with co-occurring \u03b10- and \u03b1ND-thalassaemia may experience higher prevalence of severe non-deletional HbH disease. The predominance of Hb CS in Malaysia and Vietnam suggests greater health burden than previously thought, as Hb CS mutations in the \u03b12-globin gene (accounting for 75% of \u03b1-globin production) cause more severe phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C80 make reasonable inferences about disease severity based on genetic diversity patterns and established knowledge about genotype-phenotype relationships. The molecular basis for Hb CS severity (C79-C80) is supported by appropriate citations. The inference about underestimated burden (C78) logically follows from the genetic data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "fd8ce80b-7708-4790-9548-de0202bc52c1",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model cannot capture extensive ethnic variation in allele frequencies observed within similar geographic locations, such as 3.65% Hb CS frequency in Khmer ethnic groups in Surin/Buriram provinces versus the model's predicted maximum of 1.65%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 acknowledge an important model limitation with a specific example. The limitation is inherent to spatial smoothing in geostatistical models and is honestly reported. The cited ethnic variation (Kulaphisit et al., 2017) represents real biological heterogeneity that cannot be captured without ethnicity-specific modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "efd9e542-c75d-42db-a549-aad48efb247e",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Severe \u03b1-thalassaemia is an important public health concern in Southeast Asia, yet information on prevalence, genetic diversity, and health burden remains limited. No comprehensive regional review exists, substantial data remains in local sources, and previous estimates by Modell and Darlison have inconsistencies and lack genomic-era surveys.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C25-C29 establish the study rationale by identifying knowledge gaps. The public health significance (C1) is supported by disease severity and prevalence. The gaps in comprehensive reviews (C25), local data access (C26), and limitations of prior estimates (C27-C29) are substantiated by citations and the authors' systematic review findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction provides established background on \u03b1-thalassaemia: global prevalence (up to 5% of world population), genetic basis (four \u03b1-globin gene copies with variable deletions/mutations), molecular pathophysiology (tetramers with high oxygen affinity), clinical spectrum (from benign to fatal), geographic distribution (overlapping with malaria and \u03b2-thalassaemia), and natural selection by malaria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C24 and C30 present well-established background knowledge appropriately supported by citations to authoritative sources. These claims provide necessary context for understanding the study's significance and are consistent with standard medical and genetic knowledge about \u03b1-thalassaemia. All factual statements are properly referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "07497de9-f6da-487c-8618-d341c4f59ff4",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The observed genetic diversity patterns may reflect complex evolutionary dynamics between P. falciparum and haemoglobin variants. High variant heterogeneity has been observed for G6PD deficiency in Southeast Asia, and P. falciparum shows genetically structured populations within Thailand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C76 present speculative interpretation of genetic diversity patterns. While the cited parallels with G6PD (C74) and P. falciparum population structure (C75) are factual, the inference about complex evolutionary dynamics (C76) is explicitly stated as speculative ('it is possible'). This represents hypothesis generation rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    },
+    {
+      "id": "e5fcf03d-f632-420d-977b-77242bb14382",
+      "content_id": "76ebc685-26db-4a60-b2eb-0aad2f2725df",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Country reports indicate shifting age distribution of thalassaemia patients toward older ages, and many studies show positive epistatic interaction between \u03b1- and \u03b2-thalassaemia resulting in amelioration of the blood disorder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83 and C87 cite established findings from the literature with appropriate references. The age distribution shift (C83) is supported by Ibrahim, 2012, and the epistatic interaction (C87) by multiple studies. These provide important context for understanding disease burden and clinical complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:57.209364Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "21522c56-6b1b-409e-a426-b3e1280f7094",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "98772f6b-66a4-41de-9be3-493c424b07ba",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "8ac1233e-5305-47c3-84cd-acbb5dd0b888",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "3e39e5d8-c7f6-4243-af6a-74cba9034146",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "81f70c4f-ab88-4f0c-9617-b3970e410945",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "4eedf42d-5c41-4fc4-a907-a85672258e68",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "16b77a99-d2c9-4ed2-93e6-86efd3e4c471",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "225ef684-4d24-4fc8-a34f-92604574ee04",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "eb0c9d9f-41dc-4b90-b13e-8be1852c047e",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "39535ce7-d8d1-499d-a740-d28a169fe816",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "15ae7802-1b64-47ac-9a91-f7c01e1cc677",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "9447d55e-51b0-46d5-8cc5-d6743fac23ca",
+      "result_id": "676d660f-0b55-4d2f-9fee-833beb2116c4"
+    },
+    {
+      "claim_id": "b0972242-4c26-40d6-9e7f-e3f82e197dd5",
+      "result_id": "f7a61946-11d3-4394-958a-7878cbb5b428"
+    },
+    {
+      "claim_id": "4e13de89-610b-45f8-8883-b44afbd66ba7",
+      "result_id": "f7a61946-11d3-4394-958a-7878cbb5b428"
+    },
+    {
+      "claim_id": "6bddecfd-3119-46eb-b7d1-e188fa665f47",
+      "result_id": "f7a61946-11d3-4394-958a-7878cbb5b428"
+    },
+    {
+      "claim_id": "0299f4e5-dba6-4c68-ab3a-a5f5cc6cf698",
+      "result_id": "f7a61946-11d3-4394-958a-7878cbb5b428"
+    },
+    {
+      "claim_id": "e539f39b-4671-4c52-9cec-c3df151fff8b",
+      "result_id": "f7a61946-11d3-4394-958a-7878cbb5b428"
+    },
+    {
+      "claim_id": "ac79ca64-9a8c-48c0-b814-2d486ad539ef",
+      "result_id": "8198585f-8bbb-46be-8750-3c1989ca5a87"
+    },
+    {
+      "claim_id": "96303ece-0083-44fb-bfa0-9da2ad771304",
+      "result_id": "8198585f-8bbb-46be-8750-3c1989ca5a87"
+    },
+    {
+      "claim_id": "6a476dfb-329a-47d6-80b8-f30326a48215",
+      "result_id": "8198585f-8bbb-46be-8750-3c1989ca5a87"
+    },
+    {
+      "claim_id": "092ee22a-2db8-45ba-9192-42b49ae02f0e",
+      "result_id": "2ded1443-dddf-4940-aa59-09de6adb4bcf"
+    },
+    {
+      "claim_id": "e4f69541-60ed-404d-aad4-551412e1d54e",
+      "result_id": "2ded1443-dddf-4940-aa59-09de6adb4bcf"
+    },
+    {
+      "claim_id": "214a2ba2-f357-4d6c-9bbf-3e2c51d4cd15",
+      "result_id": "2ded1443-dddf-4940-aa59-09de6adb4bcf"
+    },
+    {
+      "claim_id": "e35a95f8-f0c2-41bf-94a8-d5b4682fe9ce",
+      "result_id": "2ded1443-dddf-4940-aa59-09de6adb4bcf"
+    },
+    {
+      "claim_id": "42b637a5-3aa6-4b49-89a0-a57cf2134d66",
+      "result_id": "2ded1443-dddf-4940-aa59-09de6adb4bcf"
+    },
+    {
+      "claim_id": "5ee11bfe-6657-485e-8c01-322170bd76ce",
+      "result_id": "2ded1443-dddf-4940-aa59-09de6adb4bcf"
+    },
+    {
+      "claim_id": "a78f908c-15d1-4fbf-b57d-e01e77980a42",
+      "result_id": "2ded1443-dddf-4940-aa59-09de6adb4bcf"
+    },
+    {
+      "claim_id": "d321acff-afe3-4cbc-9f2c-80eaf9eb5bfc",
+      "result_id": "2ded1443-dddf-4940-aa59-09de6adb4bcf"
+    },
+    {
+      "claim_id": "56b0edbf-fb9a-4691-8403-1ff963f1ba8c",
+      "result_id": "142edae5-5762-41fc-a298-994f599ed4b1"
+    },
+    {
+      "claim_id": "54c65e35-6a75-4850-ae82-5f44b659f05b",
+      "result_id": "142edae5-5762-41fc-a298-994f599ed4b1"
+    },
+    {
+      "claim_id": "c183440f-e1d8-48f9-b5d8-2b39d436b5e4",
+      "result_id": "142edae5-5762-41fc-a298-994f599ed4b1"
+    },
+    {
+      "claim_id": "bd638e83-2f35-48b8-96be-1f907e65b325",
+      "result_id": "142edae5-5762-41fc-a298-994f599ed4b1"
+    },
+    {
+      "claim_id": "96f13e9b-669e-4314-8956-6b0a270c2378",
+      "result_id": "142edae5-5762-41fc-a298-994f599ed4b1"
+    },
+    {
+      "claim_id": "78d16409-6bd7-4327-afb6-5a104a6755cc",
+      "result_id": "c13e1775-d178-42b1-971e-b3146a6cc419"
+    },
+    {
+      "claim_id": "bce40fd5-8149-4825-b9a1-acee830e9133",
+      "result_id": "c13e1775-d178-42b1-971e-b3146a6cc419"
+    },
+    {
+      "claim_id": "cb7d459b-2756-4f2d-a3a1-e6a1bf5892a5",
+      "result_id": "c13e1775-d178-42b1-971e-b3146a6cc419"
+    },
+    {
+      "claim_id": "0fbab044-ec79-47ed-a9b3-d42a5fa265f6",
+      "result_id": "c13e1775-d178-42b1-971e-b3146a6cc419"
+    },
+    {
+      "claim_id": "bc1218c3-569f-46eb-9e56-2a8a362825e9",
+      "result_id": "c13e1775-d178-42b1-971e-b3146a6cc419"
+    },
+    {
+      "claim_id": "3809fe1d-0cec-45a0-a8b0-f76762d14475",
+      "result_id": "c13e1775-d178-42b1-971e-b3146a6cc419"
+    },
+    {
+      "claim_id": "ac021152-0753-49a5-a0e8-38c9709e6855",
+      "result_id": "c33032bc-0d53-4d46-a0db-564544e210fd"
+    },
+    {
+      "claim_id": "d31f6b9b-3a9b-46ca-b798-2d5945f032c9",
+      "result_id": "c33032bc-0d53-4d46-a0db-564544e210fd"
+    },
+    {
+      "claim_id": "c7c5603e-bfd2-4212-8df4-7f6f87972101",
+      "result_id": "c33032bc-0d53-4d46-a0db-564544e210fd"
+    },
+    {
+      "claim_id": "faa56b42-f2d1-4884-bfb9-3b98d5b9475f",
+      "result_id": "c33032bc-0d53-4d46-a0db-564544e210fd"
+    },
+    {
+      "claim_id": "3cb95c02-f281-41b2-8680-d3eb1408042d",
+      "result_id": "c33032bc-0d53-4d46-a0db-564544e210fd"
+    },
+    {
+      "claim_id": "f8c13b95-4b94-441c-af4a-3c355dc1731e",
+      "result_id": "a6caf455-7b34-4f4d-ab4a-aeda780270ae"
+    },
+    {
+      "claim_id": "a90e40f3-9cb9-422b-b912-9caef49b8b22",
+      "result_id": "a6caf455-7b34-4f4d-ab4a-aeda780270ae"
+    },
+    {
+      "claim_id": "e97b94d1-8440-4b09-b386-8cbcf0b2412b",
+      "result_id": "8da23586-92e5-446f-ac69-d195cea1292d"
+    },
+    {
+      "claim_id": "19331feb-f66d-4efc-a580-2a064bf6c9e8",
+      "result_id": "8da23586-92e5-446f-ac69-d195cea1292d"
+    },
+    {
+      "claim_id": "87e448e3-35a1-45a7-8382-cb1244c7733d",
+      "result_id": "3bcd4cdb-212a-4e8a-b871-021a117da5dc"
+    },
+    {
+      "claim_id": "eb529a27-9266-4e1b-afb7-6de998d66334",
+      "result_id": "3bcd4cdb-212a-4e8a-b871-021a117da5dc"
+    },
+    {
+      "claim_id": "b18e018c-57eb-4035-9eeb-16d9c03f2ff9",
+      "result_id": "3bcd4cdb-212a-4e8a-b871-021a117da5dc"
+    },
+    {
+      "claim_id": "c0484d76-fd59-45d7-a547-9ef0596dc0f2",
+      "result_id": "3bcd4cdb-212a-4e8a-b871-021a117da5dc"
+    },
+    {
+      "claim_id": "d9b44892-ce56-482f-b8ec-75e69b36487b",
+      "result_id": "fd8ce80b-7708-4790-9548-de0202bc52c1"
+    },
+    {
+      "claim_id": "a7b67b53-2b75-4aab-9859-88599fd70315",
+      "result_id": "fd8ce80b-7708-4790-9548-de0202bc52c1"
+    },
+    {
+      "claim_id": "c14d9c54-cedf-4857-be2c-c1d9a5eb3098",
+      "result_id": "efd9e542-c75d-42db-a549-aad48efb247e"
+    },
+    {
+      "claim_id": "94c9484a-dd01-4c2f-9ee9-93215f681b44",
+      "result_id": "efd9e542-c75d-42db-a549-aad48efb247e"
+    },
+    {
+      "claim_id": "08423c5c-64d7-4d91-9d59-43d94baf9ee3",
+      "result_id": "efd9e542-c75d-42db-a549-aad48efb247e"
+    },
+    {
+      "claim_id": "36eea367-7060-422b-8fde-58be51a5c194",
+      "result_id": "efd9e542-c75d-42db-a549-aad48efb247e"
+    },
+    {
+      "claim_id": "f479d70c-80f1-491a-a9d3-64f02dc09238",
+      "result_id": "efd9e542-c75d-42db-a549-aad48efb247e"
+    },
+    {
+      "claim_id": "740d1463-2b50-4e8b-a9f8-63558c3b1f8c",
+      "result_id": "efd9e542-c75d-42db-a549-aad48efb247e"
+    },
+    {
+      "claim_id": "226f500d-c176-414d-a256-ed914078d49b",
+      "result_id": "efd9e542-c75d-42db-a549-aad48efb247e"
+    },
+    {
+      "claim_id": "e2566bb9-ee6f-4b40-84df-fdac96072500",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "214dbe83-0eed-491c-b2a1-e911a4ad2220",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "fffec2ef-29fa-4671-95f9-41be5ded3536",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "80415584-ef05-48ff-b05b-0145c69991c2",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "07f516d6-ce34-49cf-8bf8-0ddc923104af",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "f326e068-4a90-4d8f-b8eb-9538d2c752e6",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "8ba29f47-68a5-4880-b048-4f841d223d20",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "2172daf6-01c8-4b99-a98f-da7eb56173c0",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "0c2c380f-6bed-463f-8164-cd4603a93787",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "1e0fa72e-6190-4589-971d-adf7ae465692",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "eab3c810-e758-4fab-a5fd-2f504ed60c7e",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "38fd5b48-4d63-4175-a5b6-fbfac15445ff",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "47f99c5b-03d6-44d4-8095-dc4a52de6cef",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "1cd4ebf1-3ffe-41ea-9f9c-2730f444df6b",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "d104436d-e2e3-47ae-a5ef-ace9af117d5a",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "e5c6c8d0-faf0-44ea-ada2-bf7d68504607",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "cbbfce5d-2e5f-489e-8a0a-463ed78f4f09",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "4f0d83b9-18be-4bea-bf64-e3fd05db085e",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "149512cf-8d3a-41fd-9797-4083f8f334bc",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "5f75c5f2-ee8e-4f94-a2a9-91713aa752a9",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "3875f677-9ce9-45fc-8e49-a3e365a7e967",
+      "result_id": "5b0f1bdd-a5ef-44ed-a073-e8045638f3a4"
+    },
+    {
+      "claim_id": "d6cddf89-72bd-492a-bc18-2b6400e495bf",
+      "result_id": "07497de9-f6da-487c-8618-d341c4f59ff4"
+    },
+    {
+      "claim_id": "2d5756dd-68a2-4f81-a4c3-888dcf93f691",
+      "result_id": "07497de9-f6da-487c-8618-d341c4f59ff4"
+    },
+    {
+      "claim_id": "a0d38cfb-5d01-4965-a511-8609965efb22",
+      "result_id": "07497de9-f6da-487c-8618-d341c4f59ff4"
+    },
+    {
+      "claim_id": "a9db0086-1a6f-48cc-8274-76bd52a3b5a9",
+      "result_id": "e5fcf03d-f632-420d-977b-77242bb14382"
+    },
+    {
+      "claim_id": "427086cc-7718-41e3-82dd-8015b62dd7cd",
+      "result_id": "e5fcf03d-f632-420d-977b-77242bb14382"
+    }
+  ],
+  "comparisons": []
+}

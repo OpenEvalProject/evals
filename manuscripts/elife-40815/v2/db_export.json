@@ -1,0 +1,1745 @@
+{
+  "submission": {
+    "id": "b5760b53-73ca-4e20-9518-262ab4ade7b4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:56:46.774742Z",
+    "updated_at": "2025-12-02T07:56:46.774742Z"
+  },
+  "content": [
+    {
+      "id": "57d8a920-b808-4792-a078-502109bcac45",
+      "submission_id": "b5760b53-73ca-4e20-9518-262ab4ade7b4",
+      "content_type": "manuscript",
+      "content_text": "# Individual long non-coding RNAs have no overt functions in zebrafish embryogenesis, viability and fertility\n\n## Authors\n\n- Mehdi Goudarzi<sup>1</sup> ([ORCID: 0000-0001-6669-5800](https://orcid.org/0000-0001-6669-5800)) \u2020\n- Kathryn Berg<sup>1</sup>\n- Lindsey M Pieper<sup>1</sup>\n- Alexander F Schier<sup>1</sup> ([ORCID: 0000-0001-7645-5325](https://orcid.org/0000-0001-7645-5325)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n2. Center for Brain Science Harvard University Cambridge United States\n3. FAS Center for Systems Biology Harvard University Cambridge United States\n4. Allen Discovery Center for Cell Lineage Tracing University of Washington Seattle United States\n5. Biozentrum University of Basel Basel Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nHundreds of long non-coding RNAs (lncRNAs) have been identified as potential regulators of gene expression, but their functions remain largely unknown. To study the role of lncRNAs during vertebrate development, we selected 25 zebrafish lncRNAs based on their conservation, expression profile or proximity to developmental regulators, and used CRISPR-Cas9 to generate 32 deletion alleles. We observed altered transcription of neighboring genes in some mutants, but none of the lncRNAs were required for embryogenesis, viability or fertility. Even RNAs with previously proposed non-coding functions (cyrano and squint) and other conserved lncRNAs (gas5 and lnc-setd1ba) were dispensable. In one case (lnc-phox2bb), absence of putative DNA regulatory-elements, but not of the lncRNA transcript itself, resulted in abnormal development. LncRNAs might have redundant, subtle, or context-dependent roles, but extrapolation from our results suggests that the majority of individual zebrafish lncRNAs have no overt roles in embryogenesis, viability and fertility.\n\n## Introduction\n\nLong non-coding RNAs (lncRNAs) comprise a heterogeneous group of transcripts longer than 200 nucleotides that do not encode proteins. LncRNAs have been proposed to affect the expression of neighboring or distant genes by acting as signaling, guiding, sequestering or scaffolding molecules (St Laurent et al., 2015; Rinn and Chang, 2012; Nagalakshmi et al., 2008; Carninci et al., 2005; Kapranov et al., 2007). The functions of specific lcnRNAs in dosage compensation (xist (Brockdorff et al., 1991; Marahrens et al., 1997), tsix (Lee et al., 1999), jpx (Johnston et al., 2002)) and imprinting (Airn (Wutz et al., 1997; Latos et al., 2012), MEG3 (Miyoshi et al., 2000;\u00a0Kobayashi et al., 2000), H19 (Bartolomei et al., 1991;\u00a0Feil et al., 1994)) are well established, and mutant studies in mouse have suggested that fendrr, peril, mdget, linc-brn1b, linc-pint (Sauvageau et al., 2013), and upperhand (Anderson et al., 2016) are essential for normal development. However, other studies have questioned the developmental relevance of several mouse lncRNAs, including Hotair (Am\u00e2ndio et al., 2016), MIAT/Gumafu (Ip et al., 2016), Evx1-as (Bell et al., 2016), upperhand, braveheart and haunt (Han et al., 2018). In zebrafish, morpholinos targeting the evolutionarily\u00a0conserved lncRNAs megamind (TUNA (Lin et al., 2014)) and cyrano resulted in embryonic defects (Ulitsky et al., 2011). However, a mutant study found no function for megamind and revealed that a megamind morpholino induced non-specific defects (Kok et al., 2015). These conflicting results have led to a controversy about the importance of lncRNAs for vertebrate development (Sauvageau et al., 2013), (Han et al., 2018). We therefore decided to mutate a group of selected zebrafish lncRNAs using CRISPR-Cas9, and assay their roles in embryogenesis, viability and fertility.\n\nTranscriptomic studies of early embryonic development (Ulitsky et al., 2011; Pauli et al., 2012) and five adult tissues (Kaushik et al., 2013) have identified over 2000 lncRNAs in zebrafish (Dhiman et al., 2015), of which 727 have been confirmed as non-coding based on ribosome occupancy patterns (Chew et al., 2013). For our mutant analysis we selected 24 bona fide lncRNAs based on synteny (conserved relative position on at least one other vertebrate genome), sequence conservation, expression dynamics (expression levels, onset and pattern) and proximity to developmental regulatory genes (see Table 1). These criteria were chosen to increase the likelihood of potential functional requirements of the selected lncRNAs. In addition, we selected a protein-coding RNA with a proposed non-coding function (squint).\n\n**Table 1.**\n Summary of lncRNA features and mutant phenotypes lncRNA names are shown in the first column.lncRNAs were named using the last four digits of their corresponding ENSEMBL Transcript ID or their chromosome number if no transcript ID was available (e.g. lnc-1200 is located on chromosome 12). The second column represents ribosomal occupancy pattern along the length of lncRNAs in comparison to the 5\u2019UTR, coding and 3\u2019UTR of typical protein-coding transcripts (Chew et al., 2013). The third column shows the transcript ID for the investigated lncRNA or its genomic coordinate in GRCz10. Column Four shows the deletion size. Fifth column represent the percentage decrease in the level of lncRNA in comparison to wild type from three biological replicates (qRT-PCR). The six and seven columns show the presence of embryonic phenotypes, viability and fertility (at least 15 adult pairs per allele) of homozygous mutant fish. Eighth and ninth column show the upstream and downstream neighboring genes in a 200 kb window centered around the lncRNA\u2019s TSS. The last column provides the selection criteria for each lncRNA.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">lncRNA mutant, deletion type</th>\n      <th rowspan=\"2\">Ribosome Profiling, class</th>\n      <th rowspan=\"2\">lncRNA transcript ID</th>\n      <th rowspan=\"2\">Deletion size</th>\n      <th rowspan=\"2\">Percent reduction</th>\n      <th rowspan=\"2\">Embryonic phenotype</th>\n      <th rowspan=\"2\">Viability and fertility</th>\n      <th colspan=\"2\">Neighboring genes</th>\n      <th rowspan=\"2\">Selection criteria</th>\n    </tr>\n    <tr>\n      <th>Up 100 Kb</th>\n      <th>Down 100 Kb</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>cyranoa171, TSS-del.</td>\n      <td>Trailerlike</td>\n      <td>ENSDART00000139872</td>\n      <td>326 bp</td>\n      <td>98%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>tmem39b</td>\n      <td>oip5</td>\n      <td>Syntenic and sequence conservation, Reported phenotype</td>\n    </tr>\n    <tr>\n      <td>cyranoa172, gene del.</td>\n      <td>Trailerlike</td>\n      <td>ENSDART00000139872</td>\n      <td>4374 bp</td>\n      <td>94%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>tmem39b</td>\n      <td>oip5</td>\n      <td>Syntenic and sequence conservation, Reported phenotype</td>\n    </tr>\n    <tr>\n      <td>gas5a173, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000156268</td>\n      <td>296 bp</td>\n      <td>100%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>osbpl9</td>\n      <td>tor3a</td>\n      <td>Syntenic conservation, well studied lncRNA, host of several snoRNA</td>\n    </tr>\n    <tr>\n      <td>lnc-setd1baa174, gene del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000141500</td>\n      <td>3137 bp</td>\n      <td>100%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>setd1ba</td>\n      <td>rhoF</td>\n      <td>Syntenic and sequence conservation, Proximity to developmental regulatory genes</td>\n    </tr>\n    <tr>\n      <td>squinta175, gene del.</td>\n      <td>Coding</td>\n      <td>ENSDART0 0000079692</td>\n      <td>1032 bp</td>\n      <td>95%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>htr1ab</td>\n      <td>eif4ebp1</td>\n      <td>Evolutionary conservation, Reported phenotype, putative cncRNA</td>\n    </tr>\n    <tr>\n      <td>lnc-phox2bba176, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000158002</td>\n      <td>652 bp</td>\n      <td>99%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>smntl1</td>\n      <td>phox2bb</td>\n      <td>Syntenic conservation</td>\n    </tr>\n    <tr>\n      <td>lnc-phox2bba177, gene del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000158002</td>\n      <td>9361 bp</td>\n      <td>87%</td>\n      <td>Yes</td>\n      <td>No</td>\n      <td>smntl1</td>\n      <td>phox2bb</td>\n      <td>Syntenic conservation</td>\n    </tr>\n    <tr>\n      <td>lnc-3852a178, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000153852</td>\n      <td>447 bp</td>\n      <td>100%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>lima1a</td>\n      <td>hoxc1a</td>\n      <td>Maternal expression, Proximity to developmental regulatory genes</td>\n    </tr>\n    <tr>\n      <td>lnc-1562a179, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000131562</td>\n      <td>409 bp</td>\n      <td>90%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>fgf10a</td>\n      <td>Maternal expression, Proximity to developmental regulatory genes</td>\n    </tr>\n    <tr>\n      <td>lnc-3982a180, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000153982</td>\n      <td>352 bp</td>\n      <td>97%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>bmp2b</td>\n      <td>Maternal expression, Proximity to developmental regulatory genes</td>\n    </tr>\n    <tr>\n      <td>lnc-6269a181, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000156269</td>\n      <td>535 bp</td>\n      <td>99%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>tbx1</td>\n      <td>*</td>\n      <td>Maternal expression, Proximity to developmental regulatory genes</td>\n    </tr>\n    <tr>\n      <td>lnc-2154a182, TSS-del.</td>\n      <td>Trailerlike</td>\n      <td>ENSDART00000132154</td>\n      <td>546 bp</td>\n      <td>100%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>rpz</td>\n      <td>nr2f5</td>\n      <td>Maternal expression, Proximity to developmental regulatory genes</td>\n    </tr>\n    <tr>\n      <td>lnc-1200a183, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>Chr12:1708389-1925779:1</td>\n      <td>590 bp</td>\n      <td>95%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>zip11</td>\n      <td>Maternal expression, Longest selected lncRNA</td>\n    </tr>\n    <tr>\n      <td>lnc-1200a184, gene del.</td>\n      <td>Leaderlike</td>\n      <td>Chr12:1708389-1925779:1</td>\n      <td>203.8 kb</td>\n      <td>84%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>zip11</td>\n      <td>Maternal expression, Longest selected lncRNA</td>\n    </tr>\n    <tr>\n      <td>lnc-2646a185, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00 000152646</td>\n      <td>240 bp</td>\n      <td>97%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>dkk1b</td>\n      <td>Proximity to developmental regulatory genes</td>\n    </tr>\n    <tr>\n      <td>lnc-4468a186, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000154468</td>\n      <td>306 bp</td>\n      <td>100%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>fam169ab</td>\n      <td>lhx5</td>\n      <td>Proximity to developmental regulatory genes, Low expression level</td>\n    </tr>\n    <tr>\n      <td>lnc-0600a187, TSS-del.</td>\n      <td>Trailerlike</td>\n      <td>Chr6:59414652-59443141:1</td>\n      <td>244 bp</td>\n      <td>95%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>gli1</td>\n      <td>Proximity to developmental regulatory genes, Low expression level</td>\n    </tr>\n    <tr>\n      <td>lnc-0900a188, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>Chr9:6684669-6691350:1</td>\n      <td>377 bp</td>\n      <td>83%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>pou3f3a</td>\n      <td>*</td>\n      <td>Syntenic conservation, Low expression level</td>\n    </tr>\n    <tr>\n      <td>lnc-8507a189, mTSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000158507</td>\n      <td>323 bp</td>\n      <td>81%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>npvf</td>\n      <td>hoxa1a</td>\n      <td>Proximity to Hox genes, Maternal and Zygotic promoters</td>\n    </tr>\n    <tr>\n      <td>lnc-8507a190, mzTSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000158507</td>\n      <td>9773 bp</td>\n      <td>95%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>npvf</td>\n      <td>hoxa1a</td>\n      <td>Proximity to Hox genes, Maternal and Zygotic promoters</td>\n    </tr>\n    <tr>\n      <td>lnc-7620a191, TSS-del.</td>\n      <td>Trailerlike</td>\n      <td>ENSDART00000137620</td>\n      <td>668 bp</td>\n      <td>99%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>gal3st1b</td>\n      <td>srsf9</td>\n      <td>Syntenic and sequence conservation, Implicated in adult fish and mouse behavior. Bitetti, A., et al. (2018)</td>\n    </tr>\n    <tr>\n      <td>lnc-1300a192, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>Chr13:4535992-4538275:1</td>\n      <td>367 bp</td>\n      <td>92%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>c1d</td>\n      <td>pla2g12b</td>\n      <td>Syntenic and sequence conservation, High expression level</td>\n    </tr>\n    <tr>\n      <td>lnc-7118a193, TSS-del.</td>\n      <td>Trailerlike</td>\n      <td>ENSDART00000157118</td>\n      <td>438 bp</td>\n      <td>82%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>mrps9</td>\n      <td>pou3f3b</td>\n      <td>Syntenic conservation</td>\n    </tr>\n    <tr>\n      <td>lnc-5888a194, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000155888</td>\n      <td>606 bp</td>\n      <td>96%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>glrx5</td>\n      <td>zgc:100997</td>\n      <td>Syntenic conservation, scaRNA13 host gene, shortest selected lncRNA</td>\n    </tr>\n    <tr>\n      <td>lnc-6913a195, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000156913</td>\n      <td>333 bp</td>\n      <td>72%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>usp20</td>\n      <td>ptges</td>\n      <td>Proximity to developmental regulatory genes</td>\n    </tr>\n    <tr>\n      <td>lnc-6913a196, gene del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000156913</td>\n      <td>5568 bp</td>\n      <td>93%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>usp20</td>\n      <td>ptges</td>\n      <td>Proximity to developmental regulatory genes</td>\n    </tr>\n    <tr>\n      <td>lnc-1666a197, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000141666</td>\n      <td>544 bp</td>\n      <td>96%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>ptf1a</td>\n      <td>*</td>\n      <td>Proximity to developmental regulatory genes, Restricted late expression</td>\n    </tr>\n    <tr>\n      <td>lnc-6490a198, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000146490</td>\n      <td>607 bp</td>\n      <td>99%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>nr2f2</td>\n      <td>*</td>\n      <td>Syntenic conservation, Restricted late expression</td>\n    </tr>\n    <tr>\n      <td>lnc-6490a199, gene del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000146490</td>\n      <td>8378 bp</td>\n      <td>100%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>nr2f2</td>\n      <td>*</td>\n      <td>Syntenic conservation, Restricted late expression</td>\n    </tr>\n    <tr>\n      <td>lnc-0464a200, TSS-del.</td>\n      <td>Trailerlike</td>\n      <td>ENSDART00000140464</td>\n      <td>597 bp</td>\n      <td>96%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>nr2f1a</td>\n      <td>*</td>\n      <td>Restricted late expression pattern</td>\n    </tr>\n    <tr>\n      <td>lnc-4149a201, TSS-del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000154149</td>\n      <td>491 bp</td>\n      <td>98%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>bhlhe22</td>\n      <td>*</td>\n      <td>Proximity to developmental regulatory genes</td>\n    </tr>\n    <tr>\n      <td>lnc-4149a202, gene del.</td>\n      <td>Leaderlike</td>\n      <td>ENSDART00000154149</td>\n      <td>35.11 kb</td>\n      <td>100%</td>\n      <td>No</td>\n      <td>Yes</td>\n      <td>bhlhe22</td>\n      <td>*</td>\n      <td>Proximity to developmental regulatory genes</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results and discussion\n\nThe genomic location of selected lncRNAs are depicted in Figure 1. The neighbor-relationship, and expression levels of the selected lncRNAs and their neighboring genes are shown in Figure 1\u2014figure supplement 1\u20131, Figure 1\u2014figure supplement 1\u20132, respectively.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig1-v2.jpg)\n\n**Figure 1.:** The chromosomal positions of selected lncRNAs are depicted.\u00a0lncRNAs discussed in the text are underlined. The corresponding genomic coordinates for all lncRNAs are provided in the supplementary file 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) lncRNA names and sizes are shown in the middle section (blue columns).\u00a0The distance, size and transcriptional orientation of the neighboring genes, in a 200 kb window centered on lncRNA\u2019s TSS are shown on the left (upstream neighbor) and on the right (downstream neighbor). The transcription orientation is represented by green (in the same direction as lncRNA) and magenta (in the opposite direction of lncRNA). (B) Visual representation of data in A. All sizes and distances are in Kb.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** LncRNAs are color coded as blue (Intergenic), brown (Overlapping) and green (Divergent/Promoter associated) (see Figure 1\u2014figure supplement 1B).\u00a0For each lncRNA and its upstream (top) and downstream (bottom) neighbor, the expression levels at 10 early-developmental stages are shown (Pauli et al., 2012). The scale is log2 (FPKM\u00a0+1) value, represented as gradient between 0 (white) and 8 (magenta).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Nine guide RNAs (the first six plus three additional gRNAs around the Transcriptional Termination Site, TTS) were used to generate the gene deletions. Relative positions of genotyping primers are indicated by numbered circles.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Visual representation of the expression level changes for each lncRNA and its neighboring genes in homozygous deletion mutants.\u00a0Three biological replicates for homozygous mutant and wild-type samples. Log2 of fold change between \u22124 (magenta) and 4 (green) is shown.\n\nUsing CRISPR-Cas9 (Figure 1\u2014figure supplement 1\u20133) we generated 32 knockout-alleles. 24 alleles removed regions containing transcription start sites (TSS-deletion; 244 bp to 736 bp), and eight alleles fully or partially removed the gene (1 kb to 203 kb) (Table 1). qRT-PCR analysis demonstrated effective reduction in the levels of the targeted lncRNA transcripts (average reduction of 94 \u00b1 6%; Table 1), which was further tested and confirmed for a subset of lncRNAs by in situ RNA hybridization (Figures 2B, 3B, C, 4D, 5B and 6D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0The positions of TSS-deletion allele and gene deletion allele are marked by dashed red lines.\u00a0Green box represents the conserved element in cyrano which is complementary to miR-7. Solid red lines indicate the position of the first exon-intron boundary (e1i1) morpholino and conserved microRNA binding site (CMiBS) morpholinos. Arrows flanking black dotted line mark the primer binding sites for qRT-PCR product. (B) Representative images of in situ hybridization for cyrano in wild type (15/15) and both homozygous TSS-deletion (21/22) and gene deletion (18/18) 1-dpf. (C) At 2-dpf gene deletion mutants (lower-left), (and TSS-deletion mutants, not shown) were not different from the wild-type embryos (upper-left). Morpholino injected wild-type embryos (upper-middle and upper-left) reproduced observed phenotype in Ulitsky et. al (Kok et al., 2015). Morpholino injected deletion-mutants, lacking the corresponding binding sites for morpholinos, (lower-middle and lower-left) were comparable to morpholino injected wild types.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Position of the TSS-deletion allele in gas5 is marked by dashed red line.\u00a0Arrows flanking black dotted lines mark the primer binding sites for 5\u2019-qPCR and 3\u2019-qPCR products. (B) Representative in situ hybridization images for gas5 in wild type (11/11) and homozygous TSS-deletion mutants (11/11). (C) Maternal and Zygotic gas5 (MZgas5) mutant embryos at 1-dpf were indistinguishable from the wild-type embryos at the same developmental stage (not shown). (D) Expression level of gas5 and osbpl9 measured by qRT-PCR. Tor3A, the other neighboring gene, was not expressed at the investigated time-point. (E)\u00a0Expression level of gas5, its trans targets ptena, ptenb and nr3c1 measured by qRT-PCR. The statistical significance of the observed changes was determined using t-test analysis and represented by star marks (*, **, ***, and **** respectively mark p-values<0.05,<0.01,<0.001 and<0.0001).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0The relative position of lnc-setd1ba and the protein-coding gene setd1ba.\u00a0The gene deletion region is marked by dashed red line. Arrows flanking black dotted line mark the primer-binding sites for qRT-PCR product. (B) Maternal and zygotic lnc-setd1ba mutants were not different from wild-type embryos at 1-dpf. (C) Representative images of in situ hybridization for lnc-setd1ba at four-\u00a0to\u00a0eight-cell stage mutant (18/18) and wild-type (25/25) embryos. (D) In situ hybridization for the protein-coding mRNA, setd1ba (9/11) in lnc-setd1ba mutants compared to the wild-type embryos (15/15). (E) qRT-PCR at 1 cell stage and 1-dpf for the lncRNA and its neighboring genes rhoF and setd1ba. The statistical significance of the observed changes was determined using t-test analysis and represented by star marks (ns, *, **, ***, and **** respectively mark p-values\u22650.05,<0.05,<0.01,<0.001 and<0.0001).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0The position of untranslated regions (brown), coding region (green), putative Dorsal Localization Element- DLE (blue) and the gene deletion (red dashed line) in the squint genomic locus.\u00a0Arrows flanking black dotted line mark the primer binding sites for qRT-PCR product. (B) In situ hybridization for squint at 8-cell stage on wild-type (18/20) and MZsquinta175(17/17) embryos. (C) qRT-PCR for squint and eif4ebp1 on wild-type and MZsquinta175 embryos at 1-cell stage. (D) Two representative MZsquinta175 embryos. (E)\u00a0MZsquinta175 embryonic phenotype (N\u00a0=\u00a04 independent crosses, n\u00a0=\u00a0360 embryos). The statistical significance of the observed changes was determined using t-test analysis and represented by star marks (ns, *, **, ***, and **** respectively mark p-values\u22650.05,<0.05,<0.01,<0.001 and<0.0001).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic representation of injected mRNAs. Cap-analog is indicated by in blue circles at the beginning of each mRNA. squint non-protein coding mRNA was generated by adding 8 Adenine-nucleotides (red circles) after in-frame ATG codons. (B) Table shows scoring outcome of observed phenotypes in embryos injected with 30 pg of each indicated mRNA. (C) Representative embryos showing typical wild-type, squint mutant or dorsalized morphology. Ambiguous phenotypes were scored as \u2018Affected\u2019.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/40815/elife-40815-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0The red dashed lines depict the respective positions of the lnc-phox2bb TSS and gene deletion.\u00a0Arrows flanking black dotted line mark the primer binding sites for qRT-PCR product. (B) Homozygous gene deletion mutants but not the TSS-deletion mutants show embryonic defects in jaw formation (arrow head) and swim bladder inflation (asterisk) by 4-dpf. (C) Histone marks (H3K4me1 and H3K27ac) associated with enhancer activity (Bogdanovic et al., 2012) and conserved noncoding elements (CNEs) (Hiller et al., 2013) overlap with gene deletion. (D) phox2bb expression pattern in the TSS and gene deletions. (E) qRT-PCR analysis on MZ TSS-deletion and gene deletion mutants. The statistical significance of the observed changes was determined using t-test analysis and represented by star marks (*, **, ***, and **** respectively mark p-values<0.05,<0.01,<0.001 and<0.0001).\n\nPrevious observations in mammalian cell culture systems suggested that lncRNA promoters can affect the expression of nearby genes (Engreitz et al., 2016). To test if these results hold true in vivo, we measured the changes in the expression of neighboring genes (a 200 kb window centered on each lncRNA) in lncRNA mutants. Several mutants displayed changes in the expression of neighboring genes (Figure 1\u2014figure supplement 1\u20134). In particular, 10 out of 40 neighboring genes showed more than two-fold changes in expression, lending in vivo support to observations in cell culture systems (Engreitz et al., 2016).\n\nTo determine the developmental roles of our selected lncRNAs, we generated maternal-zygotic mutant embryos (lacking both maternal and zygotic lncRNA activity) and analyzed morphology from gastrulation to larval stages, when all major organs have formed. Previous large-scale screens (Driever et al., 1996; Haffter et al., 1996) have shown that the visual assessment of live embryos and larvae is a powerful and efficient approach to identify mutant phenotypes, ranging from gastrulation movements and axis formation to the formation of brain, spinal cord, floor plate, notochord, somites, eyes, ears, heart, blood, pigmentation, vessels, kidney, pharyngeal arches, head skeleton, liver, and gut. No notable abnormalities were detected in 31/32 mutants. Moreover, these 31 mutants survived to adulthood, indicating functional organ physiology, and were fertile (Table 1). In the following section, we describe the results for five specific lncRNAs and put them in the context of previous studies.\n\n### Cyrano\n\ncyrano is evolutionarily conserved lncRNA and based on morpholino studies, has been suggested to have essential functions during zebrafish embryogenesis (Ulitsky et al., 2011) and brain morphogenesis (Sarangdhar et al., 2018). cyrano has also been suggested to act as a sponge (decoy-factor) for HuR during neuronal proliferation (Kim et al., 2016a), regulate miR-7 mediated embryonic stem cell differentiation (Smith et al., 2017), and control the level of miR-7 in the adult mouse brain (Kleaveland et al., 2018). We generated two mutant alleles that removed the TSS (cyranoa171) or the gene (cyranoa172), including the highly conserved miR-7 binding-site (Figure 2A,B). The expression level of the nearby gene (oip5) was not affected in either of these mutants (Figure 1\u2014figure supplement 1\u20134). In contrast to previous morpholino studies in zebrafish (Ulitsky et al., 2011) but in support of recent findings in mouse (Kleaveland et al., 2018), cyrano mutants developed normally and were viable and fertile.\n\nThe difference between morphant (Ulitsky et al., 2011) and mutant phenotypes might be caused by compensation in the mutants (Rossi et al., 2015; El-Brolosy and Stainier, 2017). To test this possibility, we injected the previously used morpholinos targeting the first exon-intron boundary (e1i1) or the conserved miR-7 binding site (CMiBS) into wild type and homozygous deletion mutants. The TSS-mutant allele lacked the e1i1 morpholino-binding site and the gene deletion allele lacked the CMiBS morpholino-binding site (Figure 2A). The previously reported phenotypes, including small heads and eyes, heart edema, and kinked tails were found in both wild type and mutants (Figure 2C), demonstrating that the morpholino-induced phenotypes were non-specific. These results reveal that cyrano transcripts or their evolutionarily conserved miR-7-binding site, are not required for embryogenesis, viability or fertility.\n\n### gas5\n\ngas5 is an evolutionarily conserved lncRNA (growth-arrest specific 5) (Coccia et al., 1992) that is highly expressed in early development (Figure 3B) and hosts several snoRNAs implicated in zebrafish development (Higa-Nakamine et al., 2012). Knockdown and knockout studies in cell culture (Ma et al., 2016) have indicated that gas5 might act as a tumor suppressor (Pickard and Williams, 2015) and exert effects at distant genomic sites (Schneider et al., 1988). However, the role of this lncRNA in development has not been studied in any vertebrate. Our gas5a173 mutant allele removed the sequences containing the TSS (\u2212169 to\u00a0+127) (Figure 3A) and resulted in complete elimination of its expression (Figure 3B and D). Expression of the neighboring gene osbpl9, encoding a lipid-binding protein, was increased by 50% (Figure 3D). Previous studies have shown that gas5 lncRNA can act in trans to affect pten expression (ptena and ptenb in zebrafish) by sequestering specific microRNAs (Li et al., 2017; Zhang et al., 2018; Liu et al., 2018). Additionally, gas5 transcript can mimic Glucocorticoid Response Element and act as a decoy factor (riborepressor) for the Glucocorticoid Receptor (nr3c1)-mediated transcription (Kino et al., 2010). We analyzed the expression level changes of these genes in MZgas5a173 embryos (at 1-dpf) and found significant upregulation for ptena in MZgas5a173 mutants (Figure 3E). Despite these changes in gene expression, gas5a173 mutants were indistinguishable from wild type (Figure 3C), reached adulthood and were fertile.\n\n### Lnc-setd1ba\n\nLnc-setd1ba is the zebrafish orthologue of human LIMT (Sas-Chen et al., 2016) (LncRNA Inhibiting Metastasis), which has been implicated in basal-like breast cancers. It is expressed from a shared promoter region that also drives the expression of the histone methyltransferase setd1ba in opposite direction (Figure 4A). Evolutionary conservation in vertebrates and proximity to setd1ba, whose mouse homolog is essential for embryonic development (Eymery et al., 2016; Kim et al., 2016b) prompted us to investigate the function of this lncRNA in zebrafish. We removed the gene of lnc-setd1ba downstream of its TSS (3137 bp deletion) (lnc-setd1baa174). In situ hybridization and qRT-PCR revealed absence of lncRNA expression (Figure 4C and E) and strong upregulation of setd1ba (Figure 4D and E) during cleavage stages and slight upregulation of setd1ba and the other neighboring gene rhoF at one-day post fertilization (1-dpf) (Figure 4E). Despite these changes, maternal-zygotic lnc-setd1baa174 mutants were indistinguishable from wild type (Figure 4B), reached adulthood and produced normal progeny.\n\n### Squint\n\nSquint encodes a Nodal ligand involved in mesendoderm specification (Pei et al., 2007; Heisenberg and N\u00fcsslein-Volhard, 1997). The previously studied squint insertion mutant alleles (squintHi975Tg 50 and squintcz35 51) lead to delayed mesendoderm specification and partially penetrant cyclopia (Dougan et al., 2003). Morpholino and misexpression studies have suggested an additional, non-coding role for maternally provided squint, wherein the squint 3'UTR mediates dorsal localization of squint mRNA, induces the expression of dorsal mesoderm genes, and is required for the development of dorsal structures (Gore et al., 2005; Lim et al., 2012). This mode of activity assigns squint to the cncRNA family - RNAs with both protein-coding and non-coding roles (Sampath and Ephrussi, 2016). To investigate the non-coding roles of squint mRNA we generated a deletion allele (squinta175) that lacked most of the protein coding region and the 3\u2019UTR, including the Dorsal Localization Element (DLE) implicated in maternal squint RNA localization (Gilligan et al., 2011) (Figure 5A). In this allele 525 bp (178 bp 5\u2019UTR, 280 bp first exon and 67 bp of second exon) out of the 1592bp-long mature transcript remain in the genome (Figure 5A). In situ hybridization (Figure 5B) and qRT-PCR (Figure 5C) showed that the level of remaining squint transcript was greatly reduced (~90%). MZsquint a175 embryos displayed partially penetrant cyclopia, similar to existing protein-disrupting squint alleles (Figure 5D) (Pei et al., 2007; Heisenberg and N\u00fcsslein-Volhard, 1997; Golling et al., 2002), but the defects proposed to be caused by interference with squint non-coding activity (Gore et al., 2005) were not detected.\n\nTo further test whether squint mRNA might have non-coding roles, we injected wild-type and MZsquint a175 embryos with either control RNA, full-length squint mRNA, a non-coding version of squint mRNA, or the putative transcript produced in squint a175 (Figure 5\u2014figure supplement 5\u2013S1). We found that in contrast to wild-type squint mRNA, control RNA, non-protein coding squint RNA or squint a175 RNA did not cause any phenotypes and did not rescue MZsquint a175 mutants. These results indicate that squint 3\u2019UTR does not have the previously proposed non-coding functions and that the squint transcript may not be a member of the cncRNA family.\n\n### Transcript-independent phenotype at lnc-phox2bb locus\n\nLnc-phox2bb neighbors phox2bb and smtnl1. Phox2bb is a transcription factor implicated in the development of the sympathetic nervous system (Pei et al., 2013), (Moreira et al., 2016; Tolbert et al., 2017), while smtnl1 has been implicated in smooth muscle contraction (Borman et al., 2009). Whole-gene deletion of lnc-phox2bb (lnc-phox2bba177) (Figure 6A) led to jaw deformation and failure to inflate the swim-bladder (Figure 6B), and no homozygous mutant fish survived to adulthood. Like the whole-gene deletion allele, the TSS-deletion allele (lnc-phox2bba176) lacked lnc-phox2bb RNA (Figure 6E), but in contrast to the whole-gene deletion mutants, TSS-deletion mutants developed normally and gave rise to fertile adults. To determine the cause of this difference, we analyzed the expression level and pattern of neighboring genes. We found that the anterior expression domain of phox2bb in the hindbrain was absent in the whole-gene deletion allele (Figure 6D). This finding is consistent with the observation that the deleted region contains enhancer elements for phox2bb (McGaughey et al., 2008), conserved non-coding elements (CNEs) (Hiller et al., 2013) (Figure 6C), and histone marks related to enhancer regions (H3K4me1 and H3K27Ac) (Bogdanovic et al., 2012). We also found that the expression level of smtnl1 increased in gene deletion mutants relative to the TSS-deletion mutant and wild type (Figure 6E). These results indicate that lnc-phox2bb RNA is not required for normal development but that the lnc-phox2bb overlaps with regulatory elements required for proper expression of phox2bb and smtnl1 (Figure 6E).\n\nIn summary, our systematic mutant studies indicate that none of the 25 lncRNAs analyzed here are essential for embryogenesis, viability or fertility, including the prominent lncRNAs cyrano, gas5, and lnc-setd1ba. Additionally, they refute the proposed non-coding function of squint RNA. Our phenotypic screen does not exclude more subtle phenotypes; for\u00a0example in behavior or brain activity (Rihel et al., 2010; Randlett et al., 2015; Summer et al., 2018). This mutant collection can now be analyzed for subtle, context specific or redundant functions, but extrapolation suggests that most individual zebrafish lncRNAs are not required for embryogenesis, viability or fertility.\n\n## Materials and methods\n\n### Animal care\n\nTL/AB zebrafish (Danio rerio) were used as wild-type fish in this study. Fish were maintained on daily 14 hr (light): 10 hr (dark) cycle at 28\u00b0C. All animal works were performed at the facilities of Harvard University, Faculty of Arts and Sciences (HU/FAS). This study was approved by the Harvard University/Faculty of Arts and Sciences Standing Committee on the Use of Animals in Research and Teaching (IACUC; Protocol #25\u201308)\n\n### Cas9 mediated mutagenesis\n\nGuide RNAs (gRNAs) were designed using CHOPCHOP (Montague et al., 2014) and synthesized in pool for each candidate as previously described (Gagnon et al., 2014). (See supplementary file 1 for the gRNA sequences). gRNAs were combined with Cas9 protein (50 \u03bcM) and co-injected (~1 nL) into the one-cell stage TL/AB wild-type embryos. Genomic DNA from 10 injected and 10 un-injected siblings was extracted (Meeker et al., 2007) and screened for the difference in amplified band pattern from the targeted region (See supplementary file 1 for the genotyping primer sequences). The rest of injected embryos were raised to adulthood, crossed to wild-type fish and screened for passing the mutant allele to the next generation. Founder fish with desirable mutations were selected and confirmed by Sanger sequencing of the amplified mutant allele. Heterozygous mutants were crossed together to generate homozygous mutants. At least 15 adult homozygous mutant pairs per allele were crossed to test fertility of mutants and to generate maternal and zygotic mutants (MZ) devoid of maternally and zygotic lncRNA activity.\n\n### Phenotype scoring procedure\n\nVisual assessment of live embryos and larvae performed (Driever et al., 1996; Haffter et al., 1996) to identify mutant phenotypes, ranging from gastrulation movements and axis formation to the formation of brain, spinal cord, floor plate, notochord, somites, eyes, ears, heart, blood, pigmentation, vessels, kidney, pharyngeal arches, head skeleton, liver, and gut.\n\nAt day 5, formation of swim bladder and overall appearance of the embryos were checked again (at any stage 60\u2013100 embryos were scored). Sixty to hundred fish from heterozygous mutant crosses were grown to adulthood and genotyped to identify the viability of adult homozygous fish. Validated homozygous mutant fish were further crossed together to test for potential fertility phenotypes or putative maternal functions of candidate lncRNAs.\n\n### Antisense RNA synthesis and in situ hybridization\n\nAntisense probes for in situ hybridization were transcribed using the DIG RNA labeling kit (Roche). All RNAs were purified using EZNA Total RNA kits (Omega Biotek). Embryos were fixed in 4% formaldehyde overnight at 4\u00b0C (embryos younger than 50% epiboly fixed for 2 days). In situ hybridizations were performed according to standard protocols (Thisse and Thisse, 2008). NBT/BCIP/Alkaline phosphatase-stained embryos were dehydrated in methanol and imaged in benzyl benzoate:benzyl alcohol (BBBA) using a Zeiss Axio Imager.Z1 microscope.\n\n### qRT-PCR\n\nTotal RNA was isolated from three individuals or sets of 10\u201320 embryos per condition using EZNA Total RNA kits (Omega Biotek). cDNA was generated using iScript cDNA Synthesis kit (Bio-Rad). qPCR was conducted using iTaq Universal SYBR Green Supermix (Bio-Rad) on a CFX96 (Bio-Rad). Gene expression levels were calculated relative to a reference gene, ef1a. Three technical replicates were used per condition. The qPCR primer sequences are listed in supplementary file 1.\n\n### Bright-field imaging\n\nEmbryos were anesthetized in Tricaine (Sigma) and mounted in 1% low melting temperature agarose (Sigma) with Tricaine, then imaged using a Zeiss SteREO Discovery.V12 microscope or Zeiss Axio Imager.Z1 microscope. Images were processed in FIJI/ImageJ (Schindelin et al., 2012). Brightness, contrast and color balance was applied uniformly to images.\n\n### Sense RNA synthesis and injections\n\nThe sequences for the wild-type squint mRNA, non-protein coding squint transcript (One Adenine base was added after eight in-frame ATG codons, and the 3\u2019UTR sequence kept unchanged) and the squinta175 transcript were synthesized as gBlocks (IDT) containing 5\u2019 XhoI cut site and 3\u2019 NotI site. Fragments were digested and inserted the pCS2 plasmid. Positive colonies were selected, and sanger sequenced to assure the accuracy of the gene synthesis process. Sequences of the constructs are provided in supplementary file 1. mRNA was in vitro transcribed by mMessage mMachine (Ambion) and purified by EZNA Total RNA kits (Omega Biotek). h2b-gfp was used as control mRNA. Each injection mix contained 30 ng/ul of squint or control mRNA). 1 nl of mRNA mix was injected into the yolk of one-cell stage embryos.\n\nMorpholinos were ordered from Gene Tools and injected based on Ulitsky et al. (2011).\n",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "7b83a1d5-3ddb-4d1f-bf35-32633a2071db",
+      "submission_id": "b5760b53-73ca-4e20-9518-262ab4ade7b4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Elisabeth M Busch-Nentwich, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40815.047](https://doi.org/10.7554/eLife.40815.047)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Long non-coding RNAs are largely dispensable for zebrafish embryogenesis, viability and fertility\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Elisabeth M Busch-Nentwich as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Didier Stainier as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Shawn Burgess (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study describes the generation and morphological characterisation of whole gene or transcription start site deletion mutants in 25 zebrafish lncRNAs. The authors find that the mutants display neither overt developmental phenotypes nor viability or fertility defects. The phenotype of one of the whole gene deletion mutants is due to loss of regulatory elements of neighbouring protein-coding genes which reside within the deleted lncRNA. The authors conclude that, based on these 25 examples, most zebrafish lncRNAs are dispensable for development, viability and fertility.\n\nThe experiments are well designed and carefully controlled. The results challenge previous findings using knockdown strategies and will be of high interest.\n\nEssential revisions:\n\n1) The title is not fully supported by the data. \"Largely dispensable\" implies that some phenotypes have been observed. Also, the extrapolation to all lncRNAs suggested in the title is overreaching based on 25 genes. A less general title, e.g. \"Zebrafish embryogenesis, viability and fertility are not overtly affected by loss of embryonically expressed long non-coding RNAs\", would be more appropriate. Similarly, in the abstract, the authors state that the lncRNAs are \"dispensable for embryogenesis.\" We suggest softening that statement. There has been a high profile paper that has walked back similar assertions about ultraconserved non-coding sequences (Dickel, 2018). There could easily be (as the authors acknowledge in the conclusions) subtle differences in embryogenesis not detected by eye but that are important to fish in the wild. Saying the fish can survive without the lncRNAs is as bold a statement as you can make with the data presented.\n\nThe authors state \"Previous large-scale screens have shown that the visual assessment of live embryos and larvae is a powerful and efficient approach to identify mutant phenotypes, ranging from gastrulation movements [\u2026] to the formation of brain, [\u2026] and gut.\" This is certainly true, but it is also true that many phenotypes are missed at this level of scrutiny and a sentence admitting that should be included.\n\n2) More detail needs to be provided on the chosen lncRNAs. The selection criteria need to be described more thoroughly. How was evolutionary conservation determined? Conservation of synteny or sequence conservation? What are the thresholds for these criteria (percentage sequence conservation, conserved relative position in which species etc.)? Also, please provide Figure 1 as a table rather than an image and provide the used lncRNA gene models as files that can be uploaded and viewed in a genome browser.\n\nDoes expression of the lncRNAs correlate with their neighbours? The authors show expression dynamics across development based on RNA-seq data from their 2012 publication. In the meantime more detailed gene expression datasets have been published, not least single cell data from the same lab. It would be interesting to see whether some of the early expressed lncRNAs can be detected in the single cell data and whether any lineage commitment can be identified.\n\nHow do previously described targets (e.g. trans targets for gas5) behave in the mutants?\n\n3) There has been controversy around the squint locus for some time, and while the presented data are fairly convincing, they are not definitive in ruling out squint as a cncRNA family member, as there are still pieces of the gene left both 5' and 3' that could maintain residual function. To maintain the assertion, a complete deletion would be required. Alternatively, it would be acceptable to acknowledge that there may still be an (admittedly small) chance that the remaining gene sequences could have residual non-coding functions.\n\n4) The 500-fold increase of setdb1a in the lnc-setdb1a mutant is very interesting, but not investigated any further. The authors state that lnc-setdb1a mutants are viable and fertile, but it is possible that maternal-zygotic mutants show impaired fertilisation or develop a gametogenesis defect over time. Have the authors looked at fertilisation rates in successive clutches from MZ mutant lnc-setdb1a adults? Is there an effect on setdb1a target gene expression in oocytes?\n\n5) Data on relative expression: Statistical tests should be used to determine whether the difference between wild type and mutant is significant. Further, relative expression levels are based on three biological replicates with three technical replicates each. This means a maximum of nine points underlie each bar in the bar charts. Similarly, N=4 in panel 5E. It would therefore increase data transparency to show the individual data points (and mean and SD) instead of bar charts.\n\nIn Figure 3D, Figure 4E, Figure 5C and Figure 6E it is not clear what the expression is relative to. Only Figure legend 5C states \"qRT-PCR [\u2026] on wild-type and MZ squint embryos\", which suggests all measurements are normalised to ef1a levels (as stated in Materials and methods section) and then the wild-type level is set to 1 for each measured gene, but this needs to be clarified in the figure legends.\n",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e3b88493-aa68-4449-8191-1e20ea11b425",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C1",
+      "claim": "Over 2000 lncRNAs have been identified in zebrafish through transcriptomic studies of early embryonic development and five adult tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptomic studies of early embryonic development (Ulitsky et al., 2011; Pauli et al., 2012) and five adult tissues (Kaushik et al., 2013) have identified over 2000 lncRNAs in zebrafish (Dhiman et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple published studies that performed transcriptomic analyses.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "72ed08b1-8e27-47ff-822b-1f44acd44140",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C2",
+      "claim": "727 zebrafish lncRNAs have been confirmed as non-coding based on ribosome occupancy patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "of which 727 have been confirmed as non-coding based on ribosome occupancy patterns (Chew et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a study that analyzed ribosome occupancy patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "52539983-1ed6-4e9c-b8d1-ebfbd32fdad0",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C3",
+      "claim": "24 bona fide lncRNAs were selected for mutant analysis based on synteny, sequence conservation, expression dynamics, and proximity to developmental regulatory genes.",
+      "claim_type": "EXPLICIT",
+      "source": "For our mutant analysis we selected 24 bona fide lncRNAs based on synteny (conserved relative position on at least one other vertebrate genome), sequence conservation, expression dynamics (expression levels, onset and pattern) and proximity to developmental regulatory genes (see Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the description of selection criteria and reference to Table 1 which lists the selected lncRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "61737f4e-a770-4556-a5b2-3bd4cf79943b",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C4",
+      "claim": "32 deletion alleles were generated using CRISPR-Cas9 for 25 zebrafish lncRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "we selected 25 zebrafish lncRNAs based on their conservation, expression profile or proximity to developmental regulators, and used CRISPR-Cas9 to generate 32 deletion alleles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by experimental data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "41b86081-134f-4f55-956c-c5cb18017fdb",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C5",
+      "claim": "24 alleles removed regions containing transcription start sites (TSS-deletion; 244 bp to 736 bp).",
+      "claim_type": "EXPLICIT",
+      "source": "24 alleles removed regions containing transcription start sites (TSS-deletion; 244 bp to 736 bp)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Table 1 showing deletion sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "741485af-7720-4b02-8167-3696e4c3930d",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C6",
+      "claim": "Eight alleles fully or partially removed the gene (1 kb to 203 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "and eight alleles fully or partially removed the gene (1 kb to 203 kb) (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data presented in Table 1 showing deletion sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "012a36a2-bc22-49c9-b146-ad3360e38293",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C7",
+      "claim": "qRT-PCR analysis demonstrated an average reduction of 94 \u00b1 6% in the levels of targeted lncRNA transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analysis demonstrated effective reduction in the levels of the targeted lncRNA transcripts (average reduction of 94 \u00b1 6%; Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by qRT-PCR data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "9da9707c-dd70-4c15-98e8-fd18ffd157f6",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C8",
+      "claim": "None of the 25 lncRNAs analyzed were essential for embryogenesis, viability or fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "our systematic mutant studies indicate that none of the 25 lncRNAs analyzed here are essential for embryogenesis, viability or fertility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phenotypic analysis data presented in Table 1 and throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "c0e5a684-dbf9-48f7-a150-d17663165a66",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C9",
+      "claim": "Altered transcription of neighboring genes was observed in some lncRNA mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed altered transcription of neighboring genes in some mutants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 1\u2014figure supplement 1\u20134.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "6a98761d-6f24-4d42-bd82-69ac6b0cf934",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C10",
+      "claim": "10 out of 40 neighboring genes showed more than two-fold changes in expression in lncRNA mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, 10 out of 40 neighboring genes showed more than two-fold changes in expression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by expression data shown in Figure 1\u2014figure supplement 1\u20134.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "4c629a05-2080-49a3-a8e3-707e03cb90ac",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C11",
+      "claim": "cyrano is an evolutionarily conserved lncRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "cyrano is evolutionarily conserved lncRNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about cyrano conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "f1b6130a-fb2b-4b01-9262-22627a296c3a",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C12",
+      "claim": "Morpholino studies suggested cyrano has essential functions during zebrafish embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "based on morpholino studies, has been suggested to have essential functions during zebrafish embryogenesis (Ulitsky et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous morpholino study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "09eda830-66d1-4f5a-8f6f-1e673af7b0ac",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C13",
+      "claim": "cyrano has been suggested to act as a sponge (decoy-factor) for HuR during neuronal proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "cyrano has also been suggested to act as a sponge (decoy-factor) for HuR during neuronal proliferation (Kim et al., 2016a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "74680e1a-839b-4f5e-b309-3e3eb3ec0df3",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C14",
+      "claim": "cyrano has been suggested to regulate miR-7 mediated embryonic stem cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "regulate miR-7 mediated embryonic stem cell differentiation (Smith et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "874dba0a-cd34-4516-9dbd-24d6e032c8ad",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C15",
+      "claim": "cyrano has been suggested to control the level of miR-7 in the adult mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "and control the level of miR-7 in the adult mouse brain (Kleaveland et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "0267646c-8499-4333-83bc-0c6babe42ba8",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C16",
+      "claim": "Two cyrano mutant alleles were generated: cyranoa171 (TSS deletion) and cyranoa172 (gene deletion including the miR-7 binding-site).",
+      "claim_type": "EXPLICIT",
+      "source": "We generated two mutant alleles that removed the TSS (cyranoa171) or the gene (cyranoa172), including the highly conserved miR-7 binding-site (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the description in text and visual representation in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "aa2ade96-8c25-40c2-a89d-90c578c9d1e1",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C17",
+      "claim": "The expression level of oip5 was not affected in cyrano mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression level of the nearby gene (oip5) was not affected in either of these mutants (Figure 1\u2014figure supplement 1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by expression data shown in Figure 1\u2014figure supplement 1\u20134.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "bbb8008b-7595-4547-b0f9-c70ff6b1d65e",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C18",
+      "claim": "cyrano mutants developed normally and were viable and fertile.",
+      "claim_type": "EXPLICIT",
+      "source": "cyrano mutants developed normally and were viable and fertile",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phenotypic observations and data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "e4564406-6ee4-4208-83d2-e821979ae5f3",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C19",
+      "claim": "Morpholinos targeting cyrano induced non-specific phenotypes in both wild type and mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The previously reported phenotypes, including small heads and eyes, heart edema, and kinked tails were found in both wild type and mutants (Figure 2C), demonstrating that the morpholino-induced phenotypes were non-specific.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data showing morpholino effects in both wild type and mutants as shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "3961a767-25af-43f3-822e-eceed15f6539",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C20",
+      "claim": "cyrano transcripts are not required for embryogenesis, viability or fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal that cyrano transcripts or their evolutionarily conserved miR-7-binding site, are not required for embryogenesis, viability or fertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the lack of phenotypes in cyrano mutants as shown in experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "0a931422-0270-409d-8bae-2d9bd8a10a0c",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C21",
+      "claim": "gas5 is an evolutionarily conserved lncRNA (growth-arrest specific 5).",
+      "claim_type": "EXPLICIT",
+      "source": "gas5 is an evolutionarily conserved lncRNA (growth-arrest specific 5) (Coccia et al., 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "eb95b91d-228e-44c9-9302-ffcdf3625f9b",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C22",
+      "claim": "gas5 is highly expressed in early development.",
+      "claim_type": "EXPLICIT",
+      "source": "that is highly expressed in early development (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "d2f3d8f8-cb0c-4b5a-b078-5fb17bca83af",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C23",
+      "claim": "gas5 hosts several snoRNAs implicated in zebrafish development.",
+      "claim_type": "EXPLICIT",
+      "source": "and hosts several snoRNAs implicated in zebrafish development (Higa-Nakamine et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "722cdc51-a84b-47af-8e3d-bb559d99e5b5",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C24",
+      "claim": "Knockdown and knockout studies in cell culture have indicated that gas5 might act as a tumor suppressor.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown and knockout studies in cell culture (Ma et al., 2016) have indicated that gas5 might act as a tumor suppressor (Pickard and Williams, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "48db7af1-f6ec-455f-ad5c-24e5898f60bc",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C25",
+      "claim": "gas5 has been suggested to exert effects at distant genomic sites.",
+      "claim_type": "EXPLICIT",
+      "source": "and exert effects at distant genomic sites (Schneider et al., 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "9382cf9f-7785-4b2d-97dd-7771b3676cf5",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C26",
+      "claim": "The gas5a173 mutant allele removed sequences containing the TSS (\u2212169 to +127) and resulted in complete elimination of gas5 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our gas5a173 mutant allele removed the sequences containing the TSS (\u2212169 to +127) (Figure 3A) and resulted in complete elimination of its expression (Figure 3B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization and qRT-PCR data shown in Figures 3A, 3B, and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "bb715f46-899b-497c-92ea-72d95d629382",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C27",
+      "claim": "Expression of osbpl9 was increased by 50% in gas5a173 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the neighboring gene osbpl9, encoding a lipid-binding protein, was increased by 50% (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "7c9515bb-f501-463b-afe8-2e8f4474964c",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C28",
+      "claim": "gas5 lncRNA can act in trans to affect pten expression by sequestering specific microRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that gas5 lncRNA can act in trans to affect pten expression (ptena and ptenb in zebrafish) by sequestering specific microRNAs (Li et al., 2017; Zhang et al., 2018; Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "a5dbb9f6-5d53-448b-aa65-8414b5a1312b",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C29",
+      "claim": "gas5 transcript can mimic Glucocorticoid Response Element and act as a decoy factor (riborepressor) for the Glucocorticoid Receptor (nr3c1)-mediated transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, gas5 transcript can mimic Glucocorticoid Response Element and act as a decoy factor (riborepressor) for the Glucocorticoid Receptor (nr3c1)-mediated transcription (Kino et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "f7e58073-034a-4f53-a55a-2644cc677717",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C30",
+      "claim": "ptena was significantly upregulated in MZgas5a173 mutants at 1-dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the expression level changes of these genes in MZgas5a173 embryos (at 1-dpf) and found significant upregulation for ptena in MZgas5a173 mutants (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "726a52de-0d8b-4414-91c1-d30354cf1635",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C31",
+      "claim": "gas5a173 mutants were indistinguishable from wild type, reached adulthood and were fertile.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these changes in gene expression, gas5a173 mutants were indistinguishable from wild type (Figure 3C), reached adulthood and were fertile.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenotypic observations shown in Figure 3C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "22d2e7d1-149d-4aed-a8ec-a28551024677",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C32",
+      "claim": "Lnc-setd1ba is the zebrafish orthologue of human LIMT (LncRNA Inhibiting Metastasis).",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc-setd1ba is the zebrafish orthologue of human LIMT (Sas-Chen et al., 2016) (LncRNA Inhibiting Metastasis)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study establishing orthology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "8d39d21c-12c2-4baa-ab31-b24c1f4afa79",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C33",
+      "claim": "Human LIMT has been implicated in basal-like breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "which has been implicated in basal-like breast cancers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the citation to Sas-Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "237d9952-3bd1-4754-b8fc-0af2d3daf32d",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C34",
+      "claim": "Lnc-setd1ba is expressed from a shared promoter region that also drives the expression of the histone methyltransferase setd1ba in opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "It is expressed from a shared promoter region that also drives the expression of the histone methyltransferase setd1ba in opposite direction (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by genomic structure shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "11cb01ae-7324-4f2d-b04b-d5d7bc884203",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C35",
+      "claim": "The mouse homolog of setd1ba is essential for embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "whose mouse homolog is essential for embryonic development (Eymery et al., 2016; Kim et al., 2016b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies in mouse.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "49b885ae-b2b0-4432-9845-eb28292a19aa",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C36",
+      "claim": "The lnc-setd1baa174 allele removed 3137 bp of the gene downstream of its TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "We removed the gene of lnc-setd1ba downstream of its TSS (3137 bp deletion) (lnc-setd1baa174).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the description of the deletion and data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "e725b76f-ffad-487a-ba3c-bb559a849ec9",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C37",
+      "claim": "In situ hybridization and qRT-PCR revealed absence of lnc-setd1ba expression in lnc-setd1baa174 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization and qRT-PCR revealed absence of lncRNA expression (Figure 4C and E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization and qRT-PCR data shown in Figures 4C and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "4f091043-34e6-41c7-b537-52941fe1df9b",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C38",
+      "claim": "setd1ba was strongly upregulated during cleavage stages in lnc-setd1baa174 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "and strong upregulation of setd1ba (Figure 4D and E) during cleavage stages",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization and qRT-PCR data shown in Figures 4D and 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "6220541b-d281-49af-9e0c-a6854167f20d",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C39",
+      "claim": "setd1ba and rhoF were slightly upregulated at one-day post fertilization in lnc-setd1baa174 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "and slight upregulation of setd1ba and the other neighboring gene rhoF at one-day post fertilization (1-dpf) (Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "fbe01b64-907f-4ceb-998b-e1041bab9d4d",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C40",
+      "claim": "Maternal-zygotic lnc-setd1baa174 mutants were indistinguishable from wild type, reached adulthood and produced normal progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these changes, maternal-zygotic lnc-setd1baa174 mutants were indistinguishable from wild type (Figure 4B), reached adulthood and produced normal progeny.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenotypic observations shown in Figure 4B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "9023b209-006c-4678-856c-15ffb23fa50b",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C41",
+      "claim": "Squint encodes a Nodal ligand involved in mesendoderm specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Squint encodes a Nodal ligand involved in mesendoderm specification (Pei et al., 2007; Heisenberg and N\u00fcsslein-Volhard, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "2493a28e-7f0c-424a-b98f-d292090945c2",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C42",
+      "claim": "Previously studied squint insertion mutant alleles lead to delayed mesendoderm specification and partially penetrant cyclopia.",
+      "claim_type": "EXPLICIT",
+      "source": "The previously studied squint insertion mutant alleles (squintHi975Tg 50 and squintcz35 51) lead to delayed mesendoderm specification and partially penetrant cyclopia (Dougan et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "e3a7e8fd-9729-4880-9c99-b39498d82bcb",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C43",
+      "claim": "Morpholino and misexpression studies have suggested an additional, non-coding role for maternally provided squint.",
+      "claim_type": "EXPLICIT",
+      "source": "Morpholino and misexpression studies have suggested an additional, non-coding role for maternally provided squint, wherein the squint 3'UTR mediates dorsal localization of squint mRNA, induces the expression of dorsal mesoderm genes, and is required for the development of dorsal structures (Gore et al., 2005; Lim et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "bb6819bf-3e61-4a40-b926-4feb710ef08b",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C44",
+      "claim": "The squinta175 deletion allele lacked most of the protein coding region and the 3'UTR, including the Dorsal Localization Element (DLE).",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the non-coding roles of squint mRNA we generated a deletion allele (squinta175) that lacked most of the protein coding region and the 3'UTR, including the Dorsal Localization Element (DLE) implicated in maternal squint RNA localization (Gilligan et al., 2011) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the description and visual representation in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "9d2785eb-1945-4f90-855b-bc2bc1710772",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C45",
+      "claim": "In the squinta175 allele, 525 bp (178 bp 5'UTR, 280 bp first exon and 67 bp of second exon) out of the 1592bp-long mature transcript remain in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In this allele 525 bp (178 bp 5'UTR, 280 bp first exon and 67 bp of second exon) out of the 1592bp-long mature transcript remain in the genome (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the description and visual representation in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "85852a78-9452-4b8a-b62f-46cbf474f6c3",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C46",
+      "claim": "The level of remaining squint transcript was greatly reduced (~90%) in squinta175 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In situ hybridization (Figure 5B) and qRT-PCR (Figure 5C) showed that the level of remaining squint transcript was greatly reduced (~90%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization and qRT-PCR data shown in Figures 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "dfbd452e-9010-4941-abda-5601426f8bb1",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C47",
+      "claim": "MZsquinta175 embryos displayed partially penetrant cyclopia, similar to existing protein-disrupting squint alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "MZsquint a175 embryos displayed partially penetrant cyclopia, similar to existing protein-disrupting squint alleles (Figure 5D) (Pei et al., 2007; Heisenberg and N\u00fcsslein-Volhard, 1997; Golling et al., 2002)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenotypic observations shown in Figure 5D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "f3ad2fba-455b-4ab0-ab22-d8be2eddee7a",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C48",
+      "claim": "The defects proposed to be caused by interference with squint non-coding activity were not detected in MZsquinta175 embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "but the defects proposed to be caused by interference with squint non-coding activity (Gore et al., 2005) were not detected",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the absence of expected phenotypes in the mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "0318747b-506c-40e8-862a-e0f474473b97",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C49",
+      "claim": "Control RNA, non-protein coding squint RNA, and squinta175 RNA did not cause any phenotypes and did not rescue MZsquinta175 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in contrast to wild-type squint mRNA, control RNA, non-protein coding squint RNA or squint a175 RNA did not cause any phenotypes and did not rescue MZsquint a175 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by injection experiments shown in Figure 5\u2014figure supplement 5\u2013S1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "73367c6f-12fb-45c8-b22d-8f40ebe8149c",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C50",
+      "claim": "squint 3'UTR does not have the previously proposed non-coding functions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that squint 3'UTR does not have the previously proposed non-coding functions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing lack of non-coding activity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "1d6c80fb-9d08-4464-90c8-65a1f8fc59e0",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C51",
+      "claim": "The squint transcript may not be a member of the cncRNA family.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the squint transcript may not be a member of the cncRNA family",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing lack of non-coding activity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "38b060ab-1da2-4ea9-916c-febf1b5a7df0",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C52",
+      "claim": "Lnc-phox2bb neighbors phox2bb and smtnl1.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc-phox2bb neighbors phox2bb and smtnl1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by genomic location data shown in Table 1 and Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "2d83e4ff-2a5d-4e41-a201-dc3b02b9be23",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C53",
+      "claim": "Phox2bb is a transcription factor implicated in the development of the sympathetic nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Phox2bb is a transcription factor implicated in the development of the sympathetic nervous system (Pei et al., 2013), (Moreira et al., 2016; Tolbert et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "958a7ddb-23cb-4609-bfba-3ebd445d3b36",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C54",
+      "claim": "smtnl1 has been implicated in smooth muscle contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "while smtnl1 has been implicated in smooth muscle contraction (Borman et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "392704cc-721b-42f7-8f41-680f3fde6c41",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C55",
+      "claim": "Whole-gene deletion of lnc-phox2bb (lnc-phox2bba177) led to jaw deformation and failure to inflate the swim-bladder.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-gene deletion of lnc-phox2bb (lnc-phox2bba177) (Figure 6A) led to jaw deformation and failure to inflate the swim-bladder (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by phenotypic observations shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "f53e2334-fb6a-4274-99ae-ceb7769377ec",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C56",
+      "claim": "No homozygous lnc-phox2bba177 mutant fish survived to adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "and no homozygous mutant fish survived to adulthood",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by viability data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "774f7db2-22d9-468c-bd40-0b564e65d18f",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C57",
+      "claim": "The TSS-deletion allele (lnc-phox2bba176) lacked lnc-phox2bb RNA but TSS-deletion mutants developed normally and gave rise to fertile adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the whole-gene deletion allele, the TSS-deletion allele (lnc-phox2bba176) lacked lnc-phox2bb RNA (Figure 6E), but in contrast to the whole-gene deletion mutants, TSS-deletion mutants developed normally and gave rise to fertile adults.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data in Figure 6E and phenotypic observations in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "57e2be6b-92ac-4dd7-a164-e846a91b9c8d",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C58",
+      "claim": "The anterior expression domain of phox2bb in the hindbrain was absent in the lnc-phox2bb whole-gene deletion allele.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the anterior expression domain of phox2bb in the hindbrain was absent in the whole-gene deletion allele (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by in situ hybridization data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "f329a180-c9fa-4e33-8ef4-d538d984148b",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C59",
+      "claim": "The deleted region in lnc-phox2bba177 contains enhancer elements for phox2bb.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the observation that the deleted region contains enhancer elements for phox2bb (McGaughey et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study and histone mark data shown in Figure 6C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "015aff8c-e7f8-4571-bd81-f0df54809c45",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C60",
+      "claim": "The deleted region in lnc-phox2bba177 contains conserved non-coding elements (CNEs).",
+      "claim_type": "EXPLICIT",
+      "source": "conserved non-coding elements (CNEs) (Hiller et al., 2013) (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to a previous study and CNE data shown in Figure 6C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "b2305485-bcd1-442f-8240-2e6f0397bef9",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C61",
+      "claim": "The deleted region in lnc-phox2bba177 contains histone marks related to enhancer regions (H3K4me1 and H3K27Ac).",
+      "claim_type": "EXPLICIT",
+      "source": "and histone marks related to enhancer regions (H3K4me1 and H3K27Ac) (Bogdanovic et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study and histone mark data shown in Figure 6C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "c6c27fb7-6466-44d5-878d-8b92ebbe34f7",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C62",
+      "claim": "The expression level of smtnl1 increased in lnc-phox2bb gene deletion mutants relative to the TSS-deletion mutant and wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the expression level of smtnl1 increased in gene deletion mutants relative to the TSS-deletion mutant and wild type (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "409ad373-6048-4ec6-a7ec-a498f5ec1354",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C63",
+      "claim": "lnc-phox2bb RNA is not required for normal development.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that lnc-phox2bb RNA is not required for normal development",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the comparison between TSS-deletion and gene deletion phenotypes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "ab98f4dc-c784-40df-b225-d9640f4aea6e",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C64",
+      "claim": "The lnc-phox2bb locus overlaps with regulatory elements required for proper expression of phox2bb and smtnl1.",
+      "claim_type": "EXPLICIT",
+      "source": "but that the lnc-phox2bb overlaps with regulatory elements required for proper expression of phox2bb and smtnl1 (Figure 6E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the differential phenotypes and expression changes between TSS-deletion and gene deletion alleles.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "9ec397e6-712c-458c-9d9f-125aa7c8d0b4",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C65",
+      "claim": "Absence of putative DNA regulatory-elements at the lnc-phox2bb locus, but not of the lncRNA transcript itself, resulted in abnormal development.",
+      "claim_type": "EXPLICIT",
+      "source": "In one case (lnc-phox2bb), absence of putative DNA regulatory-elements, but not of the lncRNA transcript itself, resulted in abnormal development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the differential phenotypes between TSS-deletion and gene deletion alleles shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "803e4e93-6901-44dd-8cfc-925ecb9bcb03",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C66",
+      "claim": "The majority of individual zebrafish lncRNAs have no overt roles in embryogenesis, viability and fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "but extrapolation from our results suggests that the majority of individual zebrafish lncRNAs have no overt roles in embryogenesis, viability and fertility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the systematic analysis of 25 lncRNAs showing no essential functions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "2f278a81-7cb5-44c1-8c1f-36879c62f275",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C67",
+      "claim": "LncRNAs might have redundant, subtle, or context-dependent roles.",
+      "claim_type": "EXPLICIT",
+      "source": "LncRNAs might have redundant, subtle, or context-dependent roles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about potential explanations for the lack of overt phenotypes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "c42f9db3-3f56-4161-93e8-db6457d0b530",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C68",
+      "claim": "Visual assessment of live embryos and larvae is a powerful and efficient approach to identify mutant phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous large-scale screens (Driever et al., 1996; Haffter et al., 1996) have shown that the visual assessment of live embryos and larvae is a powerful and efficient approach to identify mutant phenotypes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous large-scale screening studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "66415881-0fa9-419d-8565-3879d7d9c3a0",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C69",
+      "claim": "No notable abnormalities were detected in 31/32 lncRNA mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "No notable abnormalities were detected in 31/32 mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by phenotypic screening data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "5a58b7d4-410b-44a8-bc80-823aef72b4b9",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C70",
+      "claim": "31 out of 32 lncRNA mutants survived to adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these 31 mutants survived to adulthood, indicating functional organ physiology",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by viability data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "a1431f5a-0c4a-4a2e-9985-f60db7039fb5",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C71",
+      "claim": "31 out of 32 lncRNA mutants were fertile.",
+      "claim_type": "EXPLICIT",
+      "source": "and were fertile (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by fertility data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "722dcbbc-6162-48de-9265-960bd2af8d25",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C72",
+      "claim": "LncRNAs have been proposed to affect the expression of neighboring or distant genes by acting as signaling, guiding, sequestering or scaffolding molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "LncRNAs have been proposed to affect the expression of neighboring or distant genes by acting as signaling, guiding, sequestering or scaffolding molecules (St Laurent et al., 2015; Rinn and Chang, 2012; Nagalakshmi et al., 2008; Carninci et al., 2005; Kapranov et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies proposing these mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "45a767b8-c9cb-4989-aaaa-3a5e6ec02d44",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C73",
+      "claim": "The functions of specific lncRNAs in dosage compensation (xist, tsix, jpx) are well established.",
+      "claim_type": "EXPLICIT",
+      "source": "The functions of specific lcnRNAs in dosage compensation (xist (Brockdorff et al., 1991; Marahrens et al., 1997), tsix (Lee et al., 1999), jpx (Johnston et al., 2002)) and imprinting (Airn (Wutz et al., 1997; Latos et al., 2012), MEG3 (Miyoshi et al., 2000; Kobayashi et al., 2000), H19 (Bartolomei et al., 1991; Feil et al., 1994)) are well established",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies establishing these functions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "15c95b4f-73ba-486d-99ed-64da5e45b2f3",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C74",
+      "claim": "The functions of specific lncRNAs in imprinting (Airn, MEG3, H19) are well established.",
+      "claim_type": "EXPLICIT",
+      "source": "and imprinting (Airn (Wutz et al., 1997; Latos et al., 2012), MEG3 (Miyoshi et al., 2000; Kobayashi et al., 2000), H19 (Bartolomei et al., 1991; Feil et al., 1994)) are well established",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies establishing these functions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "8ba55efe-7b7b-4c44-be49-7f81a79eeede",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C75",
+      "claim": "Mutant studies in mouse have suggested that fendrr, peril, mdget, linc-brn1b, and linc-pint are essential for normal development.",
+      "claim_type": "EXPLICIT",
+      "source": "and mutant studies in mouse have suggested that fendrr, peril, mdget, linc-brn1b, linc-pint (Sauvageau et al., 2013), and upperhand (Anderson et al., 2016) are essential for normal development",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous mouse mutant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "52392696-a32d-4c11-a8ff-1efa8a5725b6",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C76",
+      "claim": "Other studies have questioned the developmental relevance of several mouse lncRNAs, including Hotair, MIAT/Gumafu, Evx1-as, upperhand, braveheart and haunt.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other studies have questioned the developmental relevance of several mouse lncRNAs, including Hotair (Am\u00e2ndio et al., 2016), MIAT/Gumafu (Ip et al., 2016), Evx1-as (Bell et al., 2016), upperhand, braveheart and haunt (Han et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies questioning lncRNA functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "ad6fe39c-6b68-48df-b4ec-69efa372a5d5",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C77",
+      "claim": "Morpholinos targeting megamind and cyrano resulted in embryonic defects in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, morpholinos targeting the evolutionarily conserved lncRNAs megamind (TUNA (Lin et al., 2014)) and cyrano resulted in embryonic defects (Ulitsky et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous morpholino study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "b58d21be-b7cd-413d-9ccd-a28d71dd3ee0",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C78",
+      "claim": "A mutant study found no function for megamind and revealed that a megamind morpholino induced non-specific defects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a mutant study found no function for megamind and revealed that a megamind morpholino induced non-specific defects (Kok et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous mutant study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "0d7145ba-a2f3-49b2-8d22-c3a77d485677",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C79",
+      "claim": "There is a controversy about the importance of lncRNAs for vertebrate development.",
+      "claim_type": "EXPLICIT",
+      "source": "These conflicting results have led to a controversy about the importance of lncRNAs for vertebrate development (Sauvageau et al., 2013), (Han et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies representing different perspectives on lncRNA importance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "c58a531e-8d91-41dd-9623-f5673245213d",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C80",
+      "claim": "lncRNA promoters can affect the expression of nearby genes in mammalian cell culture systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous observations in mammalian cell culture systems suggested that lncRNA promoters can affect the expression of nearby genes (Engreitz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous cell culture study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "af33f80b-fccc-42e2-a6cc-7d04e05662f4",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C81",
+      "claim": "The observations that lncRNA promoters can affect nearby gene expression hold true in vivo in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if these results hold true in vivo, we measured the changes in the expression of neighboring genes (a 200 kb window centered on each lncRNA) in lncRNA mutants. Several mutants displayed changes in the expression of neighboring genes (Figure 1\u2014figure supplement 1\u20134). In particular, 10 out of 40 neighboring genes showed more than two-fold changes in expression, lending in vivo support to observations in cell culture systems (Engreitz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing neighboring gene expression changes in vivo.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "c90d9cc5-9d14-48b2-825b-fba81de841ce",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C82",
+      "claim": "cyrano has been suggested to have functions in brain morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "and brain morphogenesis (Sarangdhar et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "db1ce3cb-1da6-43df-98c6-ddd1f3447cb4",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C83",
+      "claim": "The TSS-mutant allele of cyrano lacked the e1i1 morpholino-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The TSS-mutant allele lacked the e1i1 morpholino-binding site",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the genomic structure shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "6d3501a8-8a1c-4cd9-abe8-e10c45a2556b",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C84",
+      "claim": "The gene deletion allele of cyrano lacked the CMiBS morpholino-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "and the gene deletion allele lacked the CMiBS morpholino-binding site (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the genomic structure shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "d9726405-e25d-4a04-92da-f59d4d898291",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C85",
+      "claim": "The evolutionarily conserved miR-7-binding site in cyrano is not required for embryogenesis, viability or fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal that cyrano transcripts or their evolutionarily conserved miR-7-binding site, are not required for embryogenesis, viability or fertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the lack of phenotypes in cyrano gene deletion mutants that lack the miR-7 binding site.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "3f847523-79e4-45fd-b3fd-f9f7599dc6c7",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C86",
+      "claim": "The role of gas5 lncRNA in development has not been studied in any vertebrate prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the role of this lncRNA in development has not been studied in any vertebrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the absence of cited studies on gas5 developmental roles in vertebrates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "fde21fc9-66ca-4f03-ab57-2e7ac784f961",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C87",
+      "claim": "TL/AB zebrafish were used as wild-type fish in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "TL/AB zebrafish (Danio rerio) were used as wild-type fish in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "5c45cca3-28a8-422a-8847-12861add4bf4",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C88",
+      "claim": "Fish were maintained on daily 14 hr (light): 10 hr (dark) cycle at 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Fish were maintained on daily 14 hr (light): 10 hr (dark) cycle at 28\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "2ae1b0e4-246d-4a08-8479-a0b42f5b6e90",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "claim_id": "C89",
+      "claim": "At least 15 adult homozygous mutant pairs per allele were crossed to test fertility of mutants and to generate maternal and zygotic mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "At least 15 adult homozygous mutant pairs per allele were crossed to test fertility of mutants and to generate maternal and zygotic mutants (MZ) devoid of maternally and zygotic lncRNA activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a direct statement about the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "763d0cf0-7cbd-43d1-93a7-d38b69f4c0cf",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors selected 24 bona fide lncRNAs from over 2000 identified zebrafish lncRNAs (727 confirmed as non-coding) based on synteny, sequence conservation, expression dynamics, and proximity to developmental regulatory genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the background and selection criteria for the study. The identification of lncRNAs (C1, C2) is supported by appropriate citations to prior transcriptomic and ribosome profiling studies. The selection criteria (C3) are clearly stated and documented in Table 1, providing a rational basis for choosing candidates likely to have functional importance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "e345fa3e-e17d-4fd8-a8e9-5e387a82807a",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors generated 32 deletion alleles using CRISPR-Cas9 for 25 zebrafish lncRNAs, including 24 TSS-deletions (244-736 bp) and 8 gene deletions (1-203 kb), achieving an average 94\u00b16% reduction in targeted lncRNA transcript levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7 describe the mutagenesis approach and its effectiveness. The data in Table 1 and supplementary figures support the generation of deletions and confirm transcript reduction by qRT-PCR and in situ hybridization. The technical execution appears sound with appropriate controls and validation methods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "7c28afc5-1a67-448c-9b61-f6d978d8544f",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "None of the 25 lncRNAs analyzed were essential for embryogenesis, viability, or fertility, with 31/32 mutants showing no notable abnormalities, surviving to adulthood, and remaining fertile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C69-C71 present the core negative finding of the study. The phenotypic screening is supported by systematic visual assessment (C68) following established protocols, with data documented in Table 1. At least 15 adult homozygous pairs per allele were tested (C89), providing adequate sample sizes for fertility assessment. The one exception (lnc-phox2bb gene deletion) is appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "7c21b6b9-4023-48e8-9dae-ddca0f3b8b6a",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "LncRNA promoter deletions affected neighboring gene expression in vivo, with 10/40 neighboring genes showing >2-fold expression changes, supporting observations from mammalian cell culture systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C80-C81 demonstrate cis-regulatory effects of lncRNA loci. The expression changes are documented in Figure 1\u2014figure supplement 1-4 using qRT-PCR with appropriate replicates. This provides in vivo validation of cell culture observations (C80), though the functional significance of these expression changes remains unclear given the lack of overt phenotypes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cyrano mutants (TSS and gene deletions including the miR-7 binding site) developed normally and were viable and fertile, contradicting previous morpholino studies that showed embryonic defects, which were demonstrated to be non-specific off-target effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C20, C82-C85 present a critical re-evaluation of cyrano function. The genetic evidence (C16-C18) clearly shows no phenotype in mutants lacking cyrano or its miR-7 binding site. The morpholino control experiment (C19) is particularly strong: injecting morpholinos into mutants lacking the target sequence still produced phenotypes, definitively demonstrating off-target effects. This directly contradicts prior morpholino-based conclusions (C12-C15, C82) and is consistent with recent mouse findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "b466ce0c-4710-4730-a5df-4309bfa8a47e",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Gas5 mutants lacking the TSS showed complete loss of gas5 expression and altered expression of neighboring (osbpl9) and trans-acting target genes (ptena), but developed normally, reached adulthood, and were fertile, representing the first developmental study of this lncRNA in vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C31, C86 characterize gas5 function. The mutant allele (C26) effectively eliminates expression as shown by in situ and qRT-PCR (Figure 3B, D). Expression changes in neighboring (C27) and proposed trans targets (C30) are documented with statistical significance. Despite these molecular changes and prior cell culture studies suggesting important functions (C24-C25, C28-C29), no developmental phenotype was observed (C31), challenging the developmental relevance of this conserved lncRNA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "e86fc2fe-5cd1-4769-8320-569b27985bc2",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lnc-setd1ba mutants showed complete loss of lncRNA expression and strong upregulation of the divergently transcribed histone methyltransferase setd1ba during cleavage stages, but maternal-zygotic mutants developed normally and produced normal progeny despite the mouse homolog being essential for development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40 examine lnc-setd1ba, the zebrafish ortholog of human LIMT. The gene deletion (C36) eliminates lncRNA expression (C37) and causes dramatic upregulation of setd1ba (C38-C39), shown by in situ and qRT-PCR (Figure 4C-E). Despite this and the essentiality of the mouse setd1ba homolog (C35), no phenotype was observed (C40). The contrast with mouse development is notable but species differences in gene requirements are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Squint deletion mutants lacking most of the coding region and 3'UTR (including the Dorsal Localization Element) showed partially penetrant cyclopia similar to protein-disrupting alleles, but defects attributed to non-coding RNA functions were not detected, and rescue experiments failed to support non-coding roles, indicating squint is not a cncRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C51 test proposed non-coding functions of squint mRNA. The deletion allele (C44-C45) removes the DLE and most coding sequence, reducing transcript ~90% (C46). The cyclopia phenotype (C47) matches protein-disrupting alleles, but proposed non-coding defects were absent (C48). The rescue experiments (C49) are particularly informative: only wild-type squint mRNA rescued, while non-coding versions did not, strongly arguing against non-coding functions (C50-C51). This contradicts prior morpholino/overexpression studies (C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "fe948451-388e-4c0c-87c4-7f3862b6f069",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The lnc-phox2bb locus demonstrates that DNA regulatory elements, not the lncRNA transcript itself, are functionally important: whole-gene deletion caused jaw deformation, swim bladder defects, and lethality with altered phox2bb and smtnl1 expression, while TSS-deletion eliminating the transcript had no phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C65 provide the clearest example of distinguishing lncRNA transcript function from genomic regulatory elements. The critical comparison between TSS-deletion (no phenotype, C57) and gene deletion (severe phenotype, C55-C56) with both lacking lncRNA expression (C57) demonstrates the phenotype results from loss of DNA elements, not RNA (C63-C65). The deleted region contains enhancers, CNEs, and histone marks (C59-C61) supporting this interpretation. This is an important control often missing from lncRNA studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "ebd10d7b-4cd5-4952-bebb-b4f290f75da6",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors conclude that the majority of individual zebrafish lncRNAs have no overt roles in embryogenesis, viability, and fertility, though they may have redundant, subtle, or context-dependent roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C66 extrapolates from 25 lncRNAs to the majority of zebrafish lncRNAs. While the systematic negative results are compelling, several limitations affect this generalization: (1) the selection criteria biased toward conserved, highly expressed lncRNAs near developmental genes, which should enrich for functional candidates; (2) visual phenotypic screening may miss subtle defects (acknowledged in C67); (3) redundancy among lncRNAs was not tested; (4) context-dependent functions (stress, disease, specific behaviors) were not examined. The conclusion is reasonable but requires appropriate caveats about the scope of phenotypic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "1dc5f546-3ea8-4b4e-be9d-571f21db5e04",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Visual assessment of live embryos and larvae is a powerful approach to identify mutant phenotypes based on previous large-scale screens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is well-supported by citations to landmark zebrafish mutagenesis screens (Driever et al., 1996; Haffter et al., 1996) that successfully identified thousands of developmental mutants through visual screening. However, this approach has known limitations for detecting subtle, behavioral, physiological, or molecular phenotypes that may be relevant for lncRNA functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "71b8fca0-7742-41a0-b5db-4ad69fd9ca59",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The literature on lncRNA functions shows established roles for specific lncRNAs in dosage compensation and imprinting, but conflicting results from morpholino versus genetic studies have created controversy about the developmental importance of lncRNAs in vertebrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C79 provide important context from prior literature. The well-established functions (C73-C74) are appropriately cited. The controversy (C79) is documented by conflicting mouse studies (C75-C76) and the megamind example in zebrafish (C77-C78) where morpholino phenotypes were not reproduced in mutants. This context justifies the systematic genetic approach taken in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    },
+    {
+      "id": "10103cec-64a1-4cea-a0e9-f48caca6dbd3",
+      "content_id": "57d8a920-b808-4792-a078-502109bcac45",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study used TL/AB zebrafish maintained under standard conditions, with at least 15 adult homozygous mutant pairs per allele tested for fertility and maternal-zygotic mutant generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 describe basic methodological details that are clearly stated and appropriate. The sample size of 15 pairs per allele (C89) is reasonable for assessing fertility and generating maternal-zygotic mutants, though larger samples might detect subtle fertility defects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:56:46.774742Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e3b88493-aa68-4449-8191-1e20ea11b425",
+      "result_id": "763d0cf0-7cbd-43d1-93a7-d38b69f4c0cf"
+    },
+    {
+      "claim_id": "72ed08b1-8e27-47ff-822b-1f44acd44140",
+      "result_id": "763d0cf0-7cbd-43d1-93a7-d38b69f4c0cf"
+    },
+    {
+      "claim_id": "52539983-1ed6-4e9c-b8d1-ebfbd32fdad0",
+      "result_id": "763d0cf0-7cbd-43d1-93a7-d38b69f4c0cf"
+    },
+    {
+      "claim_id": "61737f4e-a770-4556-a5b2-3bd4cf79943b",
+      "result_id": "e345fa3e-e17d-4fd8-a8e9-5e387a82807a"
+    },
+    {
+      "claim_id": "41b86081-134f-4f55-956c-c5cb18017fdb",
+      "result_id": "e345fa3e-e17d-4fd8-a8e9-5e387a82807a"
+    },
+    {
+      "claim_id": "741485af-7720-4b02-8167-3696e4c3930d",
+      "result_id": "e345fa3e-e17d-4fd8-a8e9-5e387a82807a"
+    },
+    {
+      "claim_id": "012a36a2-bc22-49c9-b146-ad3360e38293",
+      "result_id": "e345fa3e-e17d-4fd8-a8e9-5e387a82807a"
+    },
+    {
+      "claim_id": "9da9707c-dd70-4c15-98e8-fd18ffd157f6",
+      "result_id": "7c28afc5-1a67-448c-9b61-f6d978d8544f"
+    },
+    {
+      "claim_id": "66415881-0fa9-419d-8565-3879d7d9c3a0",
+      "result_id": "7c28afc5-1a67-448c-9b61-f6d978d8544f"
+    },
+    {
+      "claim_id": "5a58b7d4-410b-44a8-bc80-823aef72b4b9",
+      "result_id": "7c28afc5-1a67-448c-9b61-f6d978d8544f"
+    },
+    {
+      "claim_id": "a1431f5a-0c4a-4a2e-9985-f60db7039fb5",
+      "result_id": "7c28afc5-1a67-448c-9b61-f6d978d8544f"
+    },
+    {
+      "claim_id": "c0e5a684-dbf9-48f7-a150-d17663165a66",
+      "result_id": "7c21b6b9-4023-48e8-9dae-ddca0f3b8b6a"
+    },
+    {
+      "claim_id": "6a98761d-6f24-4d42-bd82-69ac6b0cf934",
+      "result_id": "7c21b6b9-4023-48e8-9dae-ddca0f3b8b6a"
+    },
+    {
+      "claim_id": "c58a531e-8d91-41dd-9623-f5673245213d",
+      "result_id": "7c21b6b9-4023-48e8-9dae-ddca0f3b8b6a"
+    },
+    {
+      "claim_id": "af33f80b-fccc-42e2-a6cc-7d04e05662f4",
+      "result_id": "7c21b6b9-4023-48e8-9dae-ddca0f3b8b6a"
+    },
+    {
+      "claim_id": "4c629a05-2080-49a3-a8e3-707e03cb90ac",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "f1b6130a-fb2b-4b01-9262-22627a296c3a",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "09eda830-66d1-4f5a-8f6f-1e673af7b0ac",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "74680e1a-839b-4f5e-b309-3e3eb3ec0df3",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "874dba0a-cd34-4516-9dbd-24d6e032c8ad",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "0267646c-8499-4333-83bc-0c6babe42ba8",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "aa2ade96-8c25-40c2-a89d-90c578c9d1e1",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "bbb8008b-7595-4547-b0f9-c70ff6b1d65e",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "e4564406-6ee4-4208-83d2-e821979ae5f3",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "3961a767-25af-43f3-822e-eceed15f6539",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "c90d9cc5-9d14-48b2-825b-fba81de841ce",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "db1ce3cb-1da6-43df-98c6-ddd1f3447cb4",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "6d3501a8-8a1c-4cd9-abe8-e10c45a2556b",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "d9726405-e25d-4a04-92da-f59d4d898291",
+      "result_id": "e89ebcc1-2222-4df6-85ed-57d0734ddfdf"
+    },
+    {
+      "claim_id": "0a931422-0270-409d-8bae-2d9bd8a10a0c",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "eb95b91d-228e-44c9-9302-ffcdf3625f9b",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "d2f3d8f8-cb0c-4b5a-b078-5fb17bca83af",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "722cdc51-a84b-47af-8e3d-bb559d99e5b5",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "48db7af1-f6ec-455f-ad5c-24e5898f60bc",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "9382cf9f-7785-4b2d-97dd-7771b3676cf5",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "bb715f46-899b-497c-92ea-72d95d629382",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "7c9515bb-f501-463b-afe8-2e8f4474964c",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "a5dbb9f6-5d53-448b-aa65-8414b5a1312b",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "f7e58073-034a-4f53-a55a-2644cc677717",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "726a52de-0d8b-4414-91c1-d30354cf1635",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "3f847523-79e4-45fd-b3fd-f9f7599dc6c7",
+      "result_id": "b466ce0c-4710-4730-a5df-4309bfa8a47e"
+    },
+    {
+      "claim_id": "22d2e7d1-149d-4aed-a8ec-a28551024677",
+      "result_id": "e86fc2fe-5cd1-4769-8320-569b27985bc2"
+    },
+    {
+      "claim_id": "8d39d21c-12c2-4baa-ab31-b24c1f4afa79",
+      "result_id": "e86fc2fe-5cd1-4769-8320-569b27985bc2"
+    },
+    {
+      "claim_id": "237d9952-3bd1-4754-b8fc-0af2d3daf32d",
+      "result_id": "e86fc2fe-5cd1-4769-8320-569b27985bc2"
+    },
+    {
+      "claim_id": "11cb01ae-7324-4f2d-b04b-d5d7bc884203",
+      "result_id": "e86fc2fe-5cd1-4769-8320-569b27985bc2"
+    },
+    {
+      "claim_id": "49b885ae-b2b0-4432-9845-eb28292a19aa",
+      "result_id": "e86fc2fe-5cd1-4769-8320-569b27985bc2"
+    },
+    {
+      "claim_id": "e725b76f-ffad-487a-ba3c-bb559a849ec9",
+      "result_id": "e86fc2fe-5cd1-4769-8320-569b27985bc2"
+    },
+    {
+      "claim_id": "4f091043-34e6-41c7-b537-52941fe1df9b",
+      "result_id": "e86fc2fe-5cd1-4769-8320-569b27985bc2"
+    },
+    {
+      "claim_id": "6220541b-d281-49af-9e0c-a6854167f20d",
+      "result_id": "e86fc2fe-5cd1-4769-8320-569b27985bc2"
+    },
+    {
+      "claim_id": "fbe01b64-907f-4ceb-998b-e1041bab9d4d",
+      "result_id": "e86fc2fe-5cd1-4769-8320-569b27985bc2"
+    },
+    {
+      "claim_id": "9023b209-006c-4678-856c-15ffb23fa50b",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "2493a28e-7f0c-424a-b98f-d292090945c2",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "e3a7e8fd-9729-4880-9c99-b39498d82bcb",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "bb6819bf-3e61-4a40-b926-4feb710ef08b",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "9d2785eb-1945-4f90-855b-bc2bc1710772",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "85852a78-9452-4b8a-b62f-46cbf474f6c3",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "dfbd452e-9010-4941-abda-5601426f8bb1",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "f3ad2fba-455b-4ab0-ab22-d8be2eddee7a",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "0318747b-506c-40e8-862a-e0f474473b97",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "73367c6f-12fb-45c8-b22d-8f40ebe8149c",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "1d6c80fb-9d08-4464-90c8-65a1f8fc59e0",
+      "result_id": "1991bf45-7eb7-4769-b9f3-74ed910a3a73"
+    },
+    {
+      "claim_id": "38b060ab-1da2-4ea9-916c-febf1b5a7df0",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "2d83e4ff-2a5d-4e41-a201-dc3b02b9be23",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "958a7ddb-23cb-4609-bfba-3ebd445d3b36",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "392704cc-721b-42f7-8f41-680f3fde6c41",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "f53e2334-fb6a-4274-99ae-ceb7769377ec",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "774f7db2-22d9-468c-bd40-0b564e65d18f",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "57e2be6b-92ac-4dd7-a164-e846a91b9c8d",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "f329a180-c9fa-4e33-8ef4-d538d984148b",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "015aff8c-e7f8-4571-bd81-f0df54809c45",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "b2305485-bcd1-442f-8240-2e6f0397bef9",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "c6c27fb7-6466-44d5-878d-8b92ebbe34f7",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "409ad373-6048-4ec6-a7ec-a498f5ec1354",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "ab98f4dc-c784-40df-b225-d9640f4aea6e",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "9ec397e6-712c-458c-9d9f-125aa7c8d0b4",
+      "result_id": "fe948451-388e-4c0c-87c4-7f3862b6f069"
+    },
+    {
+      "claim_id": "803e4e93-6901-44dd-8cfc-925ecb9bcb03",
+      "result_id": "ebd10d7b-4cd5-4952-bebb-b4f290f75da6"
+    },
+    {
+      "claim_id": "2f278a81-7cb5-44c1-8c1f-36879c62f275",
+      "result_id": "ebd10d7b-4cd5-4952-bebb-b4f290f75da6"
+    },
+    {
+      "claim_id": "c42f9db3-3f56-4161-93e8-db6457d0b530",
+      "result_id": "1dc5f546-3ea8-4b4e-be9d-571f21db5e04"
+    },
+    {
+      "claim_id": "722dcbbc-6162-48de-9265-960bd2af8d25",
+      "result_id": "71b8fca0-7742-41a0-b5db-4ad69fd9ca59"
+    },
+    {
+      "claim_id": "45a767b8-c9cb-4989-aaaa-3a5e6ec02d44",
+      "result_id": "71b8fca0-7742-41a0-b5db-4ad69fd9ca59"
+    },
+    {
+      "claim_id": "15c95b4f-73ba-486d-99ed-64da5e45b2f3",
+      "result_id": "71b8fca0-7742-41a0-b5db-4ad69fd9ca59"
+    },
+    {
+      "claim_id": "8ba55efe-7b7b-4c44-be49-7f81a79eeede",
+      "result_id": "71b8fca0-7742-41a0-b5db-4ad69fd9ca59"
+    },
+    {
+      "claim_id": "52392696-a32d-4c11-a8ff-1efa8a5725b6",
+      "result_id": "71b8fca0-7742-41a0-b5db-4ad69fd9ca59"
+    },
+    {
+      "claim_id": "ad6fe39c-6b68-48df-b4ec-69efa372a5d5",
+      "result_id": "71b8fca0-7742-41a0-b5db-4ad69fd9ca59"
+    },
+    {
+      "claim_id": "b58d21be-b7cd-413d-9ccd-a28d71dd3ee0",
+      "result_id": "71b8fca0-7742-41a0-b5db-4ad69fd9ca59"
+    },
+    {
+      "claim_id": "0d7145ba-a2f3-49b2-8d22-c3a77d485677",
+      "result_id": "71b8fca0-7742-41a0-b5db-4ad69fd9ca59"
+    },
+    {
+      "claim_id": "fde21fc9-66ca-4f03-ab57-2e7ac784f961",
+      "result_id": "10103cec-64a1-4cea-a0e9-f48caca6dbd3"
+    },
+    {
+      "claim_id": "5c45cca3-28a8-422a-8847-12861add4bf4",
+      "result_id": "10103cec-64a1-4cea-a0e9-f48caca6dbd3"
+    },
+    {
+      "claim_id": "2ae1b0e4-246d-4a08-8479-a0b42f5b6e90",
+      "result_id": "10103cec-64a1-4cea-a0e9-f48caca6dbd3"
+    }
+  ],
+  "comparisons": []
+}

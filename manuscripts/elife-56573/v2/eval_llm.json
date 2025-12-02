@@ -1,0 +1,403 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "A systematic review identified 8621 articles, screened 5458 for full-text review, and included 414 studies (603 cohorts, 10,364 animals) in the meta-analysis. Studies predominantly used male animals (91%), with median age 9 weeks and median intervention duration 6 weeks. Hepatic triglyceride was most reported (79%), while portal inflammation was insufficiently reported for meta-analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide clear descriptive statistics about the systematic review process and study characteristics. The numbers are explicitly stated and internally consistent (e.g., 8621\u21925458\u2192414 studies). The claim about portal inflammation being insufficient for meta-analysis (C13-C14) is logically supported by only 8 cohorts from 3 studies being available.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Meta-analysis of hepatic triglyceride content showed an overall mean reduction of -29.9% (95% CI -33%, -27%) with considerable heterogeneity (I\u00b2=90%). Only 3/28 drug classes achieved \u226530% reduction (fibrates, omega-3 PUFA mixtures, DPP-4 inhibitors), the threshold associated with histological response in humans. Fibrates and PUFA mixtures showed greater reduction than the overall estimate, while thiazolidinediones and vitamin E showed smaller reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C27 present the primary meta-analysis results for hepatic TG with appropriate statistical measures (effect sizes, confidence intervals, heterogeneity statistics). The comparison to the human clinical threshold of \u226530% reduction (C17, C19) provides important context. The high heterogeneity (C16, C23, C27) is acknowledged and quantified appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Univariable meta-regression found that individual drug accounted for only 4.9% of heterogeneity in hepatic TG results, with the majority of variation unexplained. Weight difference (adj R\u00b2=3.3%, p=6.4\u00d710\u207b\u2074) and fasting insulin were associated with hepatic TG reduction, with stronger associations after removing weight-loss inducing models. In multivariable meta-regression, weight difference was the only significant variable (p=0.003) in final model 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 report meta-regression results with appropriate statistics. The finding that drug type explains little heterogeneity (C28-C29) while weight loss explains more (C30-C32) is a key result. The multivariable analysis (C33-C34) appropriately builds on univariable findings, though the small explained variance suggests important unmeasured confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Analysis of secondary metabolic outcomes showed 12/33 (36%) drug classes reduced weight, 17/32 (53%) reduced fasting glucose, and 15/25 (60%) reduced fasting insulin. Weight, glucose, and insulin differences were positively correlated. Longer studies and studies in older mice were associated with greater weight loss in intervention groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 describe patterns in metabolic outcomes across drug classes. The proportions are clearly stated and the correlations (C38-C42) are appropriately described. However, the interpretation that longer studies cause greater weight loss (C41-C42) may confound duration with cumulative drug effects or model progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Publication bias analysis revealed an uneven distribution favoring hepatic TG reduction, confirmed by Egger's test (\u03b2=-0.83, p=2.2\u00d710\u207b\u2074). Using trim-and-fill method, the corrected overall mean difference was estimated at -18.7% (95% CI -21%, -16%), over one-third smaller than the original -29.9% estimate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 appropriately assess publication bias using standard methods (funnel plot, Egger's test, trim-and-fill). The substantial reduction in effect size (37%) after correction is concerning and well-documented. However, trim-and-fill assumes missing studies are symmetric, which may not hold if publication bias is more complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Meta-analysis of histological steatosis grade showed overall MD of -0.7 (95% CI -0.8, -0.5) with considerable heterogeneity (I\u00b2=94%). Only 8/22 (36%) drug classes showed significant reduction, with fibrates showing the largest effect. Univariable meta-regression found strong associations with glucose difference (adj R\u00b2=21%, p=2.4\u00d710\u207b\u2076), weight, insulin, sex (adj R\u00b2=7%, p=0.01), and genetic background. A multivariable model using sex, glucose difference, and dietary fat explained 92% of variability in 19 cohorts (p*=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C55 report steatosis grade results with appropriate statistics. However, the multivariable model (C54-C55) explaining 92% of variance is based on only 19 cohorts, raising concerns about overfitting and generalizability. The permutation test p-value of 0.03 is marginal, and the small sample size limits confidence in this result despite statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "For lobular inflammation, 9/16 (56%) drug classes showed significant reduction. Univariable meta-regression identified associations with weight difference (adj R\u00b2=15%, p=4.0\u00d710\u207b\u2074) and dietary fat content (adj R\u00b2=21%, p=1.7\u00d710\u207b\u2075), with higher fat diets associated with smaller treatment effects. Most studies used either 40-45% or 60% kcal fat diets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 report lobular inflammation results with appropriate statistics. The association between dietary fat content and treatment response (C58-C60) is an important finding suggesting study design influences outcomes. The bimodal distribution of dietary fat (C61) is descriptive and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "For hepatocellular ballooning, 8/14 (57%) drug classes showed significant reduction. Fibrates showed greater reduction at the class level but not at individual drug level. Meta-regression found associations with glucose difference (adj R\u00b2=17%, p=9.0\u00d710\u207b\u2074), weight (adj R\u00b2=8%, p=0.01), dietary fat percentage, and fructose/glucose content (though only 12 studies contributed to this analysis). Longer studies were associated with larger reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 report ballooning results appropriately. The discrepancy between drug class and individual drug effects for fibrates (C63-C64) suggests heterogeneity within the class. The dietary composition findings (C67-C69) are limited by small sample size (12 studies), appropriately noted in C69. The duration effect (C70) may confound time with disease progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "For NAFLD Activity Score (NAS), 10/14 (71%) drug classes showed significant reduction, with fibrates most beneficial. Meta-regression found weight and glucose differences each accounted for 11-12% of heterogeneity. Multivariable models explained >60% of variation using genetic background, dietary fat, age at intervention start, and weight/glucose differences, without requiring drug as a covariate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 report NAS results, a composite score of steatosis, inflammation, and ballooning. The finding that study design variables explain substantial variance without drug type (C75) is important but based on small subsets of cohorts. This suggests study design may be more important than drug mechanism for this composite outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Fibrosis stage, the histological feature most strongly correlating with liver outcomes in humans, was pre-specified as the primary outcome but reported in only 58/603 (9.6%) cohorts. Only FXR agonists and statins (2/5, 40% drug classes) showed significant reduction, with overall MD of -0.5 (95% CI -0.6, -0.3) stages. Weight difference was associated with fibrosis reduction (adj R\u00b2=27%, p=0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 appropriately identify fibrosis as the primary outcome based on human clinical relevance (C76-C77). However, the severe underreporting (9.6% of cohorts, C78) fundamentally limits the strength of conclusions. The meta-analysis results (C79-C81) are statistically valid but based on limited data, reducing confidence in generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Publication bias was detected for all histological outcomes (steatosis, lobular inflammation, fibrosis, NAS) by asymmetric funnel plots and Egger's test. Trim-and-fill correction substantially reduced effect estimates: steatosis by 79% (to -0.14), lobular inflammation by 70% (to -0.18), fibrosis by 72% (to -0.12), and NAS by 55% (to -0.82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 document widespread publication bias across histological outcomes using appropriate methods. The magnitude of correction (55-79% reduction) is substantial and concerning for the field. However, trim-and-fill assumes a specific bias pattern and may over- or under-correct depending on the true nature of publication bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Quality assessment revealed 497/603 (82%) cohorts at high risk of bias due to lack of randomization or blinding. For hepatic TG, only 39% of cohorts achieved 80% power post-hoc, but based on meta-analysis results, n=16 per group would be needed for 80% power, which only 4.2% of cohorts met. Similar results were found for steatosis grade (40% with >80% power, but only 16% with adequate group size).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C93 appropriately assess study quality and statistical power. The high risk of bias (C88) and widespread underpowering (C89-C93) are serious methodological concerns. The post-hoc power calculations (C89-C93) are informative but should be interpreted cautiously as they depend on the potentially biased overall effect estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Summary findings indicate that weight loss and alleviation of insulin resistance were consistently associated with NAFLD improvement in rodents. Multiple drug classes caused weight loss in animals but not in humans. Study design variables (age, dietary composition) influenced treatment effect magnitude. Publication bias may have increased effect estimates by 37-79%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 appropriately summarize the main findings. The discrepancy between animal and human weight responses (C95) is a critical translational concern. The large impact of publication bias (C97) substantially undermines confidence in the reported effect sizes. These summary claims are well-supported by the detailed analyses in earlier claim groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors conclude that in rodents, alleviation of insulin resistance (usually mediated by weight loss) improves NAFLD independent of drug used. Some drugs causing weight loss in rodents (GLP-1 agonists, metformin) also do so in humans, while others (vitamin D, statins) do not. Over 50% of drugs reduced glucose in rodents, with some effects consistent with humans (thiazolidinediones, DPP4-inhibitors) but not others (ezetimibe). The authors suggest 'off-pharmacological-target' effects may account for some translational gap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 draw important translational inferences from the data. The conclusion about insulin resistance (C121) is supported by meta-regression results. The comparison of animal vs. human drug effects (C122-C126) appropriately identifies translational discrepancies. The speculation about off-target effects (C127) is reasonable but remains speculative without mechanistic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Many drugs showed significant efficacy in animals but this was inconsistent with human trial results. Vitamin D reduced NAS in rodents but showed no benefit in human trials. Pioglitazone, which improves NAFLD in humans, had one of the smallest hepatic TG improvements in rodents. GLP-1 agonists, successful in human Phase 2 trials, ranked in the middle for most rodent outcomes. Fibrates showed large effects in rodents but not in humans, and caused 10% weight loss in rodents not observed in human trials. The 95% CI for most drug classes overlapped, and no clear patterns indicated successful translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C147 systematically document animal-human translational failures with specific examples (vitamin D, pioglitazone, GLP-1 agonists, fibrates). The comparisons are appropriately supported by citations to human trials. The conclusion about lack of translational patterns (C146-C147) is sobering but well-supported by the data. This represents a major finding about the limitations of current preclinical models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Study design characteristics (age, sex, genetic background, dietary composition) affected treatment response across multiple outcomes. In some analyses, the majority of variation could be accounted for without including drug as a covariate, particularly for NAS and steatosis grade. Genetic background was a top variable in few multivariate models, though the authors anticipate its true impact may be greater than quantified due to study limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 document that study design variables explain substantial outcome variance, sometimes without requiring drug type. This is a critical finding suggesting confounding by study design. The observation about genetic background (C151-C153) appropriately acknowledges limitations in capturing this variable's full impact due to restricted strain diversity in the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The vast majority of studies showed NAFLD improvement, partly attributable to publication bias. Trim-and-fill estimates suggest publication bias may have substantially increased reported effect magnitude (e.g., hepatic TG reduction of 19% vs. 30%). This finding replicates evidence from preclinical neurological studies. A previous meta-analysis of sunitinib calculated publication bias overestimate at 45%. Power calculations suggest most cohorts were insufficiently sized. Low rates of randomization and blinding replicate previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C161 document systematic biases in the preclinical literature. The replication of publication bias findings from other fields (C157-C159) strengthens confidence in these results. The power analysis (C160) and quality assessment (C161) findings are concerning but well-documented. These represent important meta-scientific findings about the state of preclinical NAFLD research.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Very few studies reported portal inflammation severity. In humans, portal inflammatory activity correlates with fibrosis severity in adults and children with NAFLD. The authors suggest portal inflammation remains relatively unexplored in animal models and targeting it may be beneficial for slowing disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C163 appropriately document the lack of portal inflammation data in animal studies and its clinical relevance in humans. However, the suggestions that this area is worthy of investigation (C164) and that targeting portal inflammation may be beneficial (C165) are speculative. The human correlation data (C163) does not establish causality or predict therapeutic benefit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "The authors conclude it is unsurprising that preclinical metabolism studies are difficult to reproduce given study design's considerable effect on treatment response. Variations in seemingly small details (e.g., age at diet start) influence results and could silence subtle differences or generate false positives. These results help explain the preclinical-to-human translational gap and may be relevant beyond metabolism research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C171 draw appropriate conclusions about reproducibility and translation based on the meta-regression findings. The inference that study design variations affect reproducibility (C166-C169) is well-supported. The speculation about relevance beyond metabolism (C171) is reasonable given similar findings in other fields, though direct evidence is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "No association was observed between drug dose and treatment effect size. Studies were overwhelmingly performed in male animals (91%), while human studies are more evenly balanced (e.g., 60% female in STELLAR-3/4 trial). Sex was a top predictor in several multivariable models, suggesting lack of female mice may hinder drug identification for translation. Studies were almost uniformly done on young, growing mice, unlike adult patients in Phase 3 NAFLD trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C178 identify important translational gaps. The lack of dose-response (C172) is concerning for pharmacological studies. The sex imbalance (C173-C176) and age mismatch (C177-C178) between animal and human studies are well-documented translational barriers. The inference that these mismatches may hinder translation (C176) is reasonable but remains speculative without direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "The authors acknowledge study strengths (large number of studies, interventions, variables) and limitations including: simplification of study characteristics potentially underestimating variable impacts; use of fasting glucose/insulin as proxies rather than direct insulin resistance measures; restriction to standard histological criteria; lack of pre-specified statistical analysis plan; unconsidered variables (e.g., bacterial status); and missing data reducing meta-regression sample sizes. Despite limitations, the large dataset provides confidence in replicated findings. The authors conclude standardization is needed in preclinical metabolism studies to improve translatability and reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C197 provide appropriate self-critical assessment of study limitations. The acknowledgment of methodological simplifications (C180-C181), proxy measures (C182-C185), missing data (C193-C195), and lack of pre-specified analysis plan (C188-C189) demonstrates scientific rigor. The conclusion about need for standardization (C197) is well-supported by the findings but remains a recommendation rather than demonstrated solution.",
+    "result_type": "MINOR"
+  }
+]

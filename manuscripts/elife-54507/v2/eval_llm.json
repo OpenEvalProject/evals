@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C191"
+    ],
+    "result": "Locator is a deep neural network method that predicts geographic location directly from unphased diploid genotypes without requiring simulation-based training or explicit models of spatial genetic variation. The method uses a fully connected architecture with batch normalization and dropout, trained with Euclidean distance loss using the Adam optimizer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-32 clearly describe the method and are supported by technical implementation details (C179-183, C191). The approach is well-documented with appropriate architectural choices (batch normalization, dropout, early stopping). However, the claim of not requiring 'explicit models' (C28) is somewhat misleading\u2014the Euclidean loss function itself encodes spatial assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C132"
+    ],
+    "result": "In simulations across varying dispersal rates, Locator achieves prediction accuracy of 3.16-4.09 generations of dispersal with the largest training dataset (450 samples, 100,000 SNPs). Error scales with dispersal rate but remains constant when measured in dispersal generations, suggesting error reflects biological processes rather than model fitting noise. Accuracy improves with more training samples and SNPs, with diminishing returns above 200 samples or 10,000 SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-44 present simulation results with clear quantitative metrics. The constant error in dispersal generations (C37) is a compelling finding supported by Figure 2. However, the interpretation that error 'primarily reflects biological processes' (C38) is somewhat speculative\u2014model limitations could also contribute. The diminishing returns observation (C41-42) lacks statistical testing to determine significance. Sample sizes for validation appear adequate but no power analysis is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C131"
+    ],
+    "result": "Locator trains on 10,000 SNPs in less than 2 minutes compared to 6.5 hours for SPASIBA, representing at least an order of magnitude speedup. On empirical Anopheles data, Locator runs 3.1-532x faster than SPASIBA depending on SNP count. SPASIBA could not be run on 100,000+ SNPs due to memory limitations (400GB RAM), while Locator scaled successfully.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Runtime comparisons (C48-49, C52-53) are clearly documented with specific measurements. The computational advantage is substantial and well-demonstrated. However, the comparison is somewhat unfair given SPASIBA's memory limitations (C45) prevented testing at higher SNP counts where Locator excels. The claim of 'at least an order of magnitude faster' (C5, C131) is supported but the range of speedup (3.1-532x) suggests performance depends heavily on problem parameters. Hardware differences (GPU vs 80 CPUs) complicate direct comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C220"
+    ],
+    "result": "Applied to 765 Anopheles mosquitoes across sub-Saharan Africa using 2Mbp windows, Locator achieves median test errors of 5.7 km (maximum kernel density) or 36 km (centroid). Significant prediction error occurs only between sites in Cameroon, Burkina Faso, and Guinea\u2014regions previously assigned to a single ancestry cluster. The true locality falls within the 95% kernel density interval for all samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-70 present clear quantitative results for Anopheles with appropriate error metrics. The 5.7 km median error is impressive and well-documented. The observation that errors occur between genetically similar regions (C68-69) is consistent with expectations and supported by citation to previous ADMIXTURE analysis. However, the 95% coverage claim (C70) may be inflated\u2014this is expected by construction of kernel density estimation and doesn't necessarily validate biological accuracy. The large difference between modal (5.7 km) and centroid (36 km) estimates suggests sensitivity to the summary method chosen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C221"
+    ],
+    "result": "Applied to 5,965 P. falciparum samples using 500kb windows, Locator achieves median errors of 16.92 km (maximum kernel density) or 218.99 km (centroid). Predictions correctly separate major geographic populations (Americas, West Africa, East Africa, Southeast Asia, Papua New Guinea) and show good within-cluster discrimination in Southeast Asia (<200 km error). Higher error in West Africa reflects low genetic differentiation rather than mixed-strain infections. The method's model-free approach successfully handles the unusual data structure where variant calls represent pooled allele frequencies from blood samples rather than individual genotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-76 present clear results with appropriate regional analysis. The F_WS analysis (C79, C82) appropriately tests and rejects the mixed-infection hypothesis, though the weak positive correlation contradicts the initial hypothesis direction. The interpretation that Locator handles unusual data types (C83-85) is well-reasoned. However, the large difference between modal (16.92 km) and centroid (218.99 km) estimates is concerning and suggests high variance in predictions. The claim of 'good discrimination' in Southeast Asia (C75) uses a 200 km threshold that seems arbitrary. No statistical tests compare regional performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C143",
+      "C144",
+      "C145",
+      "C222"
+    ],
+    "result": "Applied to 56 human populations from HGDP using 10Mbp windows, Locator achieves median errors of 85 km (maximum kernel density) or 452.6 km (centroid). Predictions cluster around true sampling locations but extend toward other locations reflecting known migration patterns. Large prediction errors for South African Bantu and Xibo populations correspond to documented historical migrations. PCA analysis confirms that genomic windows with outlier predictions cluster with populations from predicted regions rather than true sampling locations, indicating predictions reflect ancestry variation rather than model error.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-96 present human results with compelling examples of historically-informed predictions. The PCA validation (C95-96) is a strength, demonstrating that outlier predictions reflect real ancestry signals. The correspondence with known migrations (C90-94, C143-145) is well-supported by multiple citations. However, the 85 km vs 452.6 km difference between summary methods is again concerning. The interpretation that 'much of the variation reflects historic patterns' (C143) may be overstated\u2014some could still be prediction error. The HGDP sampling strategy (C150-151) is acknowledged as a limitation but the implications for interpretation could be explored more thoroughly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C141",
+      "C142",
+      "C198",
+      "C199",
+      "C200",
+      "C207",
+      "C208"
+    ],
+    "result": "Windowed analysis across the genome produces clouds of predicted locations around true sample locations, with predictions roughly symmetrical for central individuals and bounded by landscape edges for peripheral individuals. The true location falls within the 50% kernel density contour for all test samples. This approach integrates over model training uncertainty and represents biological uncertainty from spatial drift of ancestral lineages. Differences among windows primarily reflect ancestry variation rather than inference uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-65 describe the windowed approach and its rationale. The observation that predictions are bounded by landscape edges (C62-63) suggests the network learns spatial structure. However, the interpretation that differences 'primarily reflect ancestry variation rather than uncertainty' (C208) is not rigorously tested\u2014no analysis separates these sources of variation. The 50% contour result (C64-65) is presented as validation but this is somewhat circular since kernel density estimation is designed to be centered. The claim that windowed analysis 'integrates over error' (C58, C141, C200) conflates multiple sources of uncertainty without quantifying their relative contributions. Biological interpretation requires stronger validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C100",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Prediction accuracy varies along the human genome, with a negative correlation between recombination rate and prediction error (p<0.0001, R\u00b2=0.27). Centromere presence explains 26.9% of variance in window error using 10Mb windows but only 2.6% with centiMorgan-based windows. Recombination-based windows show lower variance in per-window error (Levene's test p=0.0002) but similar genome-wide accuracy, leading to recommendations to use recombination-based windows for analyzing individual predictions but fixed windows for individual-level location estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C103-105 present clear statistical results with appropriate tests. The recombination rate correlation (R\u00b2=0.27) is moderate and the biological interpretation is reasonable. The centromere analysis provides mechanistic insight. However, the recommendation (C106-107) seems inconsistent\u2014if recombination-based windows perform better for individual predictions, why not use them for all analyses? The Levene's test (p=0.0002) shows significant difference in variance but the practical importance is unclear. The exclusion of 'top 2% of windows by test error' from Figure 8 is mentioned but not justified\u2014this could bias the correlation analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Analysis of the EDAR region (rs3827760 variant) shows prediction error direction follows genotype\u2014individuals with G alleles predict east of true location while A/A individuals predict west. Homozygous G/G Xibo and Hazara individuals predict east, one A/A Uyghur predicts west, 3 of 4 heterozygotes predict east, and five A/A Central/South Asian samples predict significantly west. This pattern suggests haplotypes with G alleles have more close relatives in eastern Eurasia, and strong differentiation in this region biases predictions away from the geographic cline center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-117 present an interesting analysis of a known selected region. The genotype-prediction correlation is clearly described with specific examples. The interpretation that G alleles have more eastern relatives (C116) is reasonable given the known east-west frequency cline. However, the sample sizes are very small (e.g., '3 of 4 heterozygotes') making statistical inference difficult. No formal test of association between genotype and prediction direction is provided. The claim that this represents 'signal' rather than error (C116) is interpretive. The analysis demonstrates an important limitation\u2014strong local selection can bias geographic predictions\u2014but this could be explored more rigorously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "When true sampling localities are excluded from training, prediction error increases substantially: from median 14 km (random split) to 116 km (excluding individual localities) to 778 km (excluding whole countries). Predicted locations typically project toward the nearest included training locality. Locator can interpolate unsampled localities when genetic differentiation is smooth but does not extrapolate outside training set bounds. When Angolan A. coluzzii are excluded, predictions project toward Burkina Faso A. coluzzii rather than closer A. gambiae localities, suggesting the network learns population structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-124 present important validation of method limitations. The quantitative error increases are clearly documented and the qualitative observations about projection behavior are well-described. The A. coluzzii example (C122) demonstrates the network learns species-level structure, not just geography. However, the interpretation that Locator 'can interpolate' but 'does not extrapolate' (C123-124) is somewhat imprecise\u2014the boundary between interpolation and extrapolation is unclear. The recommendation about sampling (C125) is appropriate but vague. This analysis reveals a critical limitation: the method requires comprehensive geographic sampling, which may not be feasible for many applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C52",
+      "C54",
+      "C55",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "On empirical Anopheles data, Locator achieves much lower mean error than SPASIBA on runs with >100 SNPs. Two factors explain improved accuracy: Locator handles abrupt allele frequency changes better than SPASIBA's geostatistical model, and limited sampling localities may act as a prior encouraging assignment to specific sites. The spatial concentration of samples may cause Locator to act more as a classifier than continuous predictor, requiring users to account for sampling design when interpreting results and avoid highly clustered sampling regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-55 compare performance on empirical data with reasonable explanations. However, the interpretation is somewhat contradictory: improved accuracy (C52, C133) is attributed to handling abrupt changes (C54) and sampling effects (C55, C135), but then sampling effects are presented as a limitation (C136-137). The claim that limited localities 'may act as a prior' (C55) is speculative without formal analysis. The statement that Locator 'can easily handle' abrupt changes (C134) is not rigorously tested\u2014no simulations with discontinuous allele frequencies are presented. The recommendation to 'avoid highly clustered sampling' (C137) contradicts the finding that such sampling improves accuracy. This result needs clearer separation of method capabilities from data-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Locator preprocesses VCF/Zarr data by converting to allele count vectors, imputing missing data using binomial draws with population allele frequency, removing singleton sites by default, and applying batch normalization. The method uses a 90/10 train/validation split by default, with validation data used for learning rate tuning and early stopping but not parameter fitting. For small datasets, ensemble approaches with different random seeds are recommended to mitigate regional under/overrepresentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-178 clearly describe preprocessing and validation procedures. The missing data imputation (C167-168) is reasonable and analogous to common PCA practices. The train/validation split (C174-176) is standard for neural networks. However, the 90/10 split may be insufficient for robust evaluation\u2014no justification is provided for this choice. The recommendation for ensemble approaches with small datasets (C177-178) is sensible but vague about what constitutes 'small'. The removal of singletons (C169) is mentioned as default but not justified\u2014singletons could contain geographic information. Overall, the preprocessing is adequately described but some choices lack justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C184",
+      "C185",
+      "C186"
+    ],
+    "result": "Locator's default architecture uses 10 dense layers of 256 nodes each with ELU activations, batch normalization, and 25% dropout after the fifth layer. Networks with over four layers perform similarly. Training uses early stopping (patience=100 epochs) and learning rate scheduling, which effectively prevents training/validation loss divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-190 describe the network architecture with appropriate technical details. The observation that networks with >4 layers perform similarly (C190) suggests the architecture is not over-parameterized, though no systematic architecture search is presented. The early stopping and learning rate scheduling (C184-186) are standard practices. However, the claim that learning rate scheduling 'effectively prevents divergence' (C186) is based on observation rather than systematic comparison. The choice of 10 layers and 256 nodes appears somewhat arbitrary\u2014no ablation study or hyperparameter optimization is described. Figure 5\u2014figure supplement 1 shows architecture comparisons but results are described as 'no single architecture provides consistently better performance,' which contradicts the choice of a specific default.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "For datasets lacking sufficient size or reference alignments for windowed analysis, uncertainty can be assessed by bootstrapping over a single set of unlinked SNPs. This approach doesn't reduce marginal trees but allows assessment of model training uncertainty. Uncertainty is summarized using 2D kernel density estimation with 95%, 50%, and 10% quantiles. Individual locations can be predicted as either maximum kernel density (modal, lower error, more classification-like) or geographic centroid (mean, higher error, more interpolation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C201-206 describe alternative uncertainty quantification approaches. The distinction between windowing and bootstrapping (C201-202) is clearly explained. The kernel density visualization (C203) is appropriate for spatial data. The comparison of modal vs centroid estimators (C205-206) identifies an important trade-off, though the characterization as 'classification behavior' vs 'interpolation' is somewhat informal. However, the recommendation lacks guidance on which estimator to use in practice. The large differences in error between estimators (e.g., 5.7 vs 36 km for Anopheles) suggest the choice substantially affects conclusions, yet no principled selection criterion is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Windowed analysis of HGDP data (human) took ~30 hours on a single GPU, while analysis of 5,965 Plasmodium genomes took 8 hours. This computational efficiency makes training on biobank-scale datasets with tens or hundreds of thousands of samples feasible, particularly with parallel GPU processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-139 provide concrete runtime measurements demonstrating computational feasibility. The extrapolation to biobank-scale datasets (C140) is reasonable given the observed scaling, though actual performance at that scale is not tested. The claim is appropriately qualified with 'well within reach' rather than stating it as demonstrated. However, memory requirements are not discussed\u2014while runtime may scale, memory constraints could limit applicability to very large datasets. The comparison to SPASIBA's estimated 70 days (C56) provides useful context, though that estimate is based on extrapolation rather than direct measurement.",
+    "result_type": "MINOR"
+  }
+]

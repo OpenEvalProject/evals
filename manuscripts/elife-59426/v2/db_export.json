@@ -1,0 +1,1600 @@
+{
+  "submission": {
+    "id": "a52ed75e-9301-4bef-80da-4b9e7f346451",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T21:13:29.501318Z",
+    "updated_at": "2025-12-02T21:13:29.501318Z"
+  },
+  "content": [
+    {
+      "id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "submission_id": "a52ed75e-9301-4bef-80da-4b9e7f346451",
+      "content_type": "manuscript",
+      "content_text": "# A physical mechanism of TANGO1-mediated bulky cargo export\n\n## Authors\n\n- Ishier Raote<sup>1</sup> ([ORCID: 0000-0002-5898-4896](https://orcid.org/0000-0002-5898-4896)) \u2020\n- Morgan Chabanon<sup>2</sup>\n- Nikhil Walani<sup>3</sup>\n- Marino Arroyo<sup>3</sup>\n- Maria F Garcia-Parajo<sup>2</sup>\n- Vivek Malhotra<sup>1</sup> ([ORCID: 0000-0001-6198-7943](https://orcid.org/0000-0001-6198-7943)) \u2020\n- Felix Campelo<sup>2</sup> ([ORCID: 0000-0002-0786-9548](https://orcid.org/0000-0002-0786-9548)) \u2020\n\n### Affiliations\n\n1. Centre for Genomic Regulation (CRG), The Barcelona Institute of Science and Technology Barcelona Spain\n2. ICFO-Institut de Ciencies Fotoniques, The Barcelona Institute of Science and Technology Barcelona Spain\n3. Universitat Polit\u00e8cnica de Catalunya-BarcelonaTech Barcelona Spain\n4. Institute for Bioengineering of Catalonia, The Barcelona Institute of Science and Technology Barcelona Spain\n5. Centre Internacional de M\u00e8todes Num\u00e8rics en Enginyeria (CIMNE) Barcelona Spain\n6. ICREA Barcelona Spain\n7. Universitat Pompeu Fabra (UPF) Barcelona Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe endoplasmic reticulum (ER)-resident protein TANGO1 assembles into a ring around ER exit sites (ERES), and links procollagens in the ER lumen to COPII machinery, tethers, and ER-Golgi intermediate compartment (ERGIC) in the cytoplasm (Raote et al., 2018). Here, we present a theoretical approach to investigate the physical mechanisms of TANGO1 ring assembly and how COPII polymerization, membrane tension, and force facilitate the formation of a transport intermediate for procollagen export. Our results indicate that a TANGO1 ring, by acting as a linactant, stabilizes the open neck of a nascent COPII bud. Elongation of such a bud into a transport intermediate commensurate with bulky procollagens is then facilitated by two complementary mechanisms: (i) by relieving membrane tension, possibly by TANGO1-mediated fusion of retrograde ERGIC membranes and (ii) by force application. Altogether, our theoretical approach identifies key biophysical events in TANGO1-driven procollagen export.\n\n## Introduction\n\nMulticellularity requires not only the secretion of signaling proteins \u2013such as neurotransmitters, cytokines, and hormones\u2013 to regulate cell-to-cell communication, but also of biomechanical matrices composed primarily of proteins such as collagens, which form the extracellular matrix (ECM) (Kadler et al., 2007; Mouw et al., 2014). These extracellular assemblies of collagens are necessary for tissue biogenesis and maintenance. Collagens, like all conventionally secreted proteins, contain a signal sequence that targets their entry into the endoplasmic reticulum (ER). After their glycosylation, procollagens fold and trimerize into a characteristic triple-helical, rigid structure, which, depending on the isoform, may extend several hundred nm in length (McCaughey and Stephens, 2019). These bulky procollagens are then exported from the ER at specialized export domains, termed ER exit sites (ERES), in a COPII-dependent manner. ERES are a fascinating subdomain of the ER, but a basic understanding of how these domains are created and segregated from the rest of the ER for the purpose of cargo export still remains a challenge. At the ERES, the formation of canonical COPII-coated carriers relies on the polymerization on the membrane surface of a large-scale protein structure: the protein coat. Polymerized coats, such as COPI, COPII, and clathrin coats, usually adopt spherical shapes \u2013which bend the membrane underneath to form small vesicles of\u00a0~60\u201390 nm in diameter (Faini et al., 2013), although helical arrangements of COPII coats have been observed (Zanetti et al., 2013; Ma and Goldberg, 2016). Membrane bending by coats is promoted when the energy gain of coat polymerization is larger than the elastic energy of membrane deformation (Derganc et al., 2013; Scheve et al., 2013; Kozlov et al., 2014; Saleem et al., 2015; Day and Stachowiak, 2020). However, how COPII components function specifically to export procollagen remains unclear. The discovery of TANGO1 as a key ERES-resident player has made the processes of procollagen export and the organization of ERES amenable to molecular analysis (Bard et al., 2006; Saito et al., 2009; Wilson et al., 2011).\n\nIn the lumen of the ER, the SH3-like domain of TANGO1 binds procollagen via HSP47 (Saito et al., 2009; Ishikawa et al., 2016; Figure 1A). On the cytoplasmic side, TANGO1 has a proline-rich domain (PRD) and two coiled-coil domains (CC1 and CC2) (Figure 1A). The PRD of TANGO1 interacts with the COPII components Sec23A and Sec16 (Saito et al., 2009; Ma and Goldberg, 2016; Maeda et al., 2017); the CC1 domain binds the NBAS/RINT1/ZW10 (NRZ) tethering complex to recruit ER-Golgi intermediate compartment (ERGIC) membranes and also drives self-association amongst TANGO1 proteins (Santos et al., 2015; Raote et al., 2018); and the CC2 domain oligomerizes with proteins of the TANGO1 family (such as cTAGE5) (Saito et al., 2011; Maeda et al., 2016). Both cytosolic and lumenal activities of TANGO1 are critical for its function. For instance, a recent report identified a disease-causing mutation in TANGO1 in a human family, which results in a substantial fraction of TANGO1 protein being truncated and lacking its cytosolic functions, leading to collagen export defects (Lekszas et al., 2020). Recently, we visualized procollagen export domains with high lateral spatial resolution using stimulated emission depletion (STED) nanoscopy in mammalian tissue cultured cells (Raote et al., 2017; Raote et al., 2018). These studies revealed that TANGO1 organizes at the ERES into ring-like structures, of\u00a0~200 nm in lumenal diameter, that corral COPII components. Moreover, two independent studies showed that TANGO1 rings are also present in Drosophila melanogaster (Liu et al., 2017; Reynolds et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the domain structure and topology of TANGO1, indicating the SH3 domain, a lumenal coiled-coiled domain (CC), the one and a half transmembrane region (TM), the coiled-coiled 1 (CC1) and 2 (CC2) domains, and the PRD. (B) Schematic description of the TANGO1 ring formation model (top view). ERES consisting of COPII subunits assemble into in-plane circular lattices (orange), whereas proteins of the TANGO1 family assemble into filaments by lateral protein-protein interactions (light blue). The competition between the affinity of the TANGO1 filament to bind COPII subunits (promoting capping of peripheral COPII subunits) and the resistance of the filament to be bent (promoting uncapping) controls the capping-uncapping transition. Only when TANGO1 caps the COPII lattice, it acts as a linactant by stabilizing the peripheral COPII subunits. (C) Schematic representation of individual proteins that constitute a TANGO1 filament and of how filament bending is associated with elastic stress generation. Individual TANGO1 family proteins (blue shapes) bind each other in a way that is controlled by the structure of protein-protein binding interfaces, leading to formation of an unstressed filament of a certain preferred curvature, $c_{0}$ (left cartoon, showing the case where $c_{0}$ = 0). Filament bending can be caused by the capping of TANGO1 filament to peripheral COPII machinery (orange area), which generates a stressed bent filament of a certain radius of curvature, $\u03c1=1/c$ (right cartoon). Such deviations from the preferred shape (shown in light blue) are associated with elastic stress generation (red arrows point to the direction of the generated bending torque, which correspond to the direction of recovery of the filament preferred shape).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The free energy change per unit area of the transport intermediate-TANGO1 system, $\\Deltaf_{c}$, plotted as a function of the shape parameter, $\u03b7$, for the COPII coat polymerization energy, $\\mu_{c}^{0}=0.030k_{B}T/nm^{2}$, for both full COPII capping by TANGO1 ($\\omega=1$, black, dashed curve) and non-capping conditions ($\\omega=0$, gray, dashed curve), are shown. Each separate contribution to the total free energy per unit area (Appendix 2) is individually represented: the contributions of (i) membrane tension (dark blue); (ii) COPII polymerization and membrane bending (orange); (iii) COPII line energy (green); (iv) TANGO1-mediated reduction of the COPII line energy (light blue); and (v) TANGO1 filament bending energy (vermillion). We considered no applied force, $N=0$, and the rest of the elastic parameters used for the calculations are specified in Appendix 2\u2014table 1.\n\nTo further extend these findings, we combined STED nanoscopy with genetic manipulations and established that TANGO1 rings are organized by (i) lateral self-interactions amongst TANGO1-like proteins, (ii) radial interactions with COPII subunits, and (iii) tethering of small ER-Golgi intermediate compartment (ERGIC) vesicles to assist in the formation of a procollagen-containing export intermediate (Raote et al., 2018). Overall, the data suggest a mechanism whereby TANGO1 assembles into a ring, which selectively gathers and organizes procollagen, remodels COPII budding machinery, and recruits ERGIC membranes for the formation of a procollagen-containing transport intermediate. However, the biophysical mechanisms governing these events and how they are regulated by TANGO1 remain unknown.\n\nHere, we put forward a biophysical framework to investigate how TANGO1 rings assemble around polymerizing COPII-coated structures for procollagen export. This general theoretical approach allows us to address: (i) the physical mechanisms by which TANGO1 and its interactors can assemble into functional rings at ERES, forming a fence around COPII coat components and (ii) whether and how a TANGO1 fence can couple COPII polymerization, membrane tension, and force to create an export route for procollagens at the ERES. In particular, we implement this theory in the form of two complementary models: a computational dynamic model that provides us with a general picture of the process of TANGO1-assisted transport intermediate formation; and a simplified but more tractable analytical equilibrium model that allows us to get clearer physical insights.\n\nOverall, our results support a model where TANGO1 temporally and spatially orchestrates the export of procollagen through biophysical interactions with procollagen, COPII components, ERGIC, and the ER membrane.\n\n## Model\u00a0development\n\nIn this section, we present the central hypotheses underlying our general modeling approach. These hypotheses are common to the two models that we subsequently describe: a dynamic computational model (Model A), and an equilibrium analytical model (Model B). We present here a qualitative overview of these models, highlighting their specificities, limitations and strengths. The detailed description of each model is provided in Appendix 1 and Appendix 2, respectively.\n\n### Fundamental hypotheses\n\nTo assess and rationalize mechanisms of TANGO1 assembly into rings at ERES and their contribution to procollagen export, we formulate general hypotheses built on accumulated experimental data that will serve as the foundation for our two modeling approaches.\n\nHypothesis 1: TANGO1 family of proteins and COPII coat proteins are described as two distinct membrane-bound species.\u00a0Given the complexity of the system and the lack of quantitative biochemical data regarding the interactions amongst the different TANGO1 and COPII components, we assume for our modeling purposes that the TANGO1 family of proteins (TANGO1, cTAGE5 and TANGO1-Short) can be effectively described as a single species, to which we will simply refer as TANGO1. Similarly, for simplicity, we describe all the subcomponents of the COPII inner and outer coats as a single species. For our purpose, a more detailed description would only add complexity and free parameters without providing relevant biophysical insights.\n\nHypothesis 2: COPII subunits polymerize on the ER membrane forming a coat of specific curvature.\u00a0COPII coat assembly at the ERES is relatively well characterized (Peotter et al., 2019). Polymerization of COPII subunits into spherical lattices induces curvature on the underlying membrane, typically resulting in spherical carriers of 60\u201390 nm (Faini et al., 2013; Aridor, 2018; Peotter et al., 2019). However, for bulky cargoes such as procollagens, complementary mechanisms are required to prevent the premature completion of the small carriers and to enable the packaging of large molecules.\n\nHypothesis 3: TANGO1 molecules have a propensity to assemble into rings as a result of protein-protein interactions between TANGO1-family proteins.\u00a0This hypothesis is based on the observations that: (i) TANGO1 is seen in ring-like filamentous assemblies of specific size by STED nanoscopy (Raote et al., 2017; Roux, 2018); (ii) there is a direct 1:1 binding between TANGO1 and cTAGE5 CC2 domains (Saito et al., 2011); (iii) TANGO1-Short and cTAGE5 can form oligomers and oligomeric complexes together with Sec12 and TANGO1 (Maeda et al., 2016); (iv) TANGO1 and TANGO1-Short can directly homo-dimerize by their CC1 domains (Raote et al., 2018); and (v) super-resolution live lattice SIM imaging of TANGO1 in D. melanogaster larval salivary gland shows filament growth in ring formation (Reynolds et al., 2019). A physical consequence of this hypothesis is that deviations from the preferred TANGO1 ring curvature are associated to an elastic energetic cost: the ring is subject to internal strains and stresses and therefore resists bending away from its preferred curvature (Figure 1B,C).\n\nHypothesis 4: TANGO1 has a binding affinity to the peripheral COPII coat subunits, helping stabilize the COPII domain boundary by effectively reducing its line energy.\u00a0This hypothesis is supported by the observations that proteins of the TANGO1 family bind to the COPII components Sec23, Sec16, and Sec12 (Saito et al., 2009; Ma and Goldberg, 2016; Hutchings et al., 2018; Raote et al., 2018). In physical terms, this hypothesis is equivalent to state that TANGO1 acts as a linactant by filling unsatisfied binding sites of the COPII coat edges and therefore effectively lowering its line tension (Figure 1B; Trabelsi et al., 2008, Saleem et al., 2015; Glick, 2017). Combined with hypothesis 1, another consequence of the TANGO1-COPII affinity is the mechanical coupling between the COPII coat edge and TANGO1.\n\nQualitatively, our generic model for TANGO1 ring assembly can be described as a competition between two different driving forces: the resistance to bending of TANGO1 filamentous assemblies (hypothesis 3) and the binding affinity of TANGO1 proteins for peripheral COPII subunits (hypothesis 4). In the case of low TANGO1 bending resistance and/or high TANGO1-COPII binding affinity, TANGO1 will easily assemble around COPII patches, forming a ring. In the following, we refer to this process as capping of the COPII patch by TANGO1, the analogue to \u2018wetting\u2019 in soft-matter physics (Figure 1B,C). As a result of capping, the linactant effect of TANGO1 on COPII-coated ERES reduces the line energy, thus limiting further growth of the COPII lattice and the size of the TANGO1 rings (Figure 1B). In contrast, in the case of high TANGO1 rigidity and/or low TANGO1-COPII affinity (for instance, in cells expressing mutants of TANGO1 with reduced or abrogated interaction to COPII proteins), capping of COPII coats by TANGO1 rings will be energetically unfavorable, preventing any linactant effect (Figure 1B).\n\n### Model A: dynamic computational model\n\nHere, we summarize our dynamic model of transport intermediate formation at ERES. The detailed, mathematical description of the model is presented in Appendix 1. The model extends the work of Tozzi et al., 2019 to include two membrane-bound\u00a0species representing TANGO1 and COPII, respectively.\n\nThe ER membrane is represented as a continuous elastic surface on which both protein species can diffuse, interact, and induce membrane curvature. To account for these coupled chemical-mechanical processes, we follow Onsager\u2019s variational formalism of dissipative dynamics (Arroyo and Desimone, 2009; Arroyo et al., 2018). The first step is to define the free energy of the system, which in our case is the sum of the following mechanical and chemical-related energetic contributions:\n\nNext, we identify the dissipative mechanisms such as those associated with protein diffusion on the membrane surface, and with membrane in-plane shear stress. In addition, the system exchanges energy in the form of external supply of species (fixed chemical potential at the boundaries) and mechanical power. Finally, membrane inextensibility is ensured with a Lagrange multiplier field that has the physical interpretation of the membrane tension.\n\nWith these definitions (see Appendix 1), we obtain the rate of change of the system at each time point by numerically minimizing the rate of free energy release, energy dissipation, and energy exchange by the system. To facilitate the computational scheme, we formulate the problem in axisymmetric conditions. Note that this is not a limitation of the model\u2019s physics itself but only of its numerical implementation.\n\nThe generality of Model A allows us to explore in a thermodynamically consistent manner a large range of possible dynamics of the system, including protein phase-separation, self-organization, spontaneous bud growth, and accessible stable states. However, the cost of this generality is a relative complexity that makes the physical understanding of the system more challenging. For this reason, in the next section, we describe a simplified but analytically tractable model.\n\n### Model B: equilibrium analytical model\n\nTo develop a theoretical model of transport intermediate formation at an ERES, we extend and adapt the approach from Saleem et al., 2015 on clathrin-coated vesicle formation to include the contributions of TANGO1 proteins in modulating COPII-dependent carrier formation. The detailed mathematical description is given in Appendix 2.\n\nThe main simplifying assumptions of this model are that (i) the system is at mechanical and thermodynamic equilibrium; (ii) the COPII coat is assumed to be much more rigid that the lipid bilayer, and therefore imposes a fixed radius of curvature leading to formation of spherical membranes of fixed radius $R_{c}$; and (iii) the buds are supposed axisymmetric. The second assumption allows us to limit the family of possible shapes to partial spheres connected to a flat surface, and greatly simplifies the theoretical treatment of the system. As shown below, this assumption is supported by the type of geometries obtained from Model A, which does not assume any a priori geometry.\n\nWe consider a continuous lipid membrane with a bending rigidity ($\u03ba_{b}$), under a certain lateral membrane tension ($\\sigma$). COPII assembly into a coat is driven by a binding chemical potential ($\\mu_{c}^{0}$) and is opposed by the membrane bending energy. We consider that the major contribution to the binding chemical potential comes from coat-coat polymerization and not from coat-membrane binding (Saleem et al., 2015), so the binding energy $\\mu_{c}^{0}$ represents the polymerization energy due to COPII-COPII binding, and will be referred to as the COPII polymerization energy in what follows. COPII units can therefore freely exchange with the rest of the membrane, which acts as the reservoir of COPII units at a fixed chemical potential. The edge of the COPII lattice has a line tension ($\\lambda_{0}$) due to free COPII polymerization sites. TANGO1 protein interactions are assumed to favor the formation of a linear filament of preferred curvature ($c_{0}$) and bending rigidity ($\u03ba_{T}$). Due to its affinity to COPII coat peripheral subunits, TANGO1 filaments can satisfy a fraction ($\\omega$) of the edge length, effectively reducing the COPII coat line tension by $\u0394\\lambda$. Finally, we also account for the mechanical work of an outward-directed force ($N$) which favors transport intermediate elongation.\n\nThe main advantage of this model is that the assumption on the carrier geometry allows us to analytically express the dependency of given quantities of interest on the model parameters, facilitating the physical interpretation of the system. For instance, writing the above mechanisms in terms of the free energy of the system, and taking a bare flat membrane as the reference state, the total free energy change of the system accounting for TANGO1 and COPII can be written as (see Appendix 2):\n\n$$\n\u0394f_{c}=\\sigma(\\frac{A_{m}}{A_{p}}\u22121)\u2212(\\mu_{c}^{0}\u22122\\frac{\u03ba_{b}}{R_{c}^{2}})\\frac{A_{c}}{A_{p}}+[\\lambda_{0}\u2212\\omega\u0394\\lambda+\\omega\\frac{\u03ba_{T}}{2}(\\frac{1}{\u03c1}\u2212c_{0})^{2}]\\frac{2\\pi\u03c1}{A_{p}}\u2212\\frac{N\u00a0z_{max}}{A_{p}},\n$$\n\nwhere $A_{m}$ is the membrane surface area, $A_{c}$ is the membrane surface area coated by COPII, $A_{p}$ is the surface area of the carrier projection onto the flat membrane, $\u03c1$ is the radius of the neck of the COPII coat, and $z_{max}$ is the height of the carrier (see Appendix 2\u2014figure 1). For practical reasons, we define the dimensionless shape parameter $\u03b7=z_{max}/(2R_{c})$, so that $\u03b7=1$ for a single sphere of COPII spontaneous curvature. Equation 1 is plotted in Figure 1\u2014figure supplement 1 for capped ($\\omega=1$) and uncapped ($\\omega=0$) carriers, highlighting the influence of COPII binding chemical potential on the energetically accessible shapes of the system.\n\n## Results\n\n### TANGO1 rings self-assemble to stabilize COPII shallow buds\n\nWe first make use of the generality of the computational dynamic model (Model A) to study the formation of TANGO1 assemblies at ERES. We start by investigating the ability of COPII complexes alone to generate spherical carriers. This corresponds to the control case where TANGO1 is treated as an inert species that only contributes to the entropic energy (no chemical nor mechanical interaction with COPII, the membrane, nor with itself). As shown in Figure 2A, after an initial nucleation stage (see Appendix 1), the COPII coat grows by recruiting more COPII species as it bends the membrane into a bud (Figure 2A(i\u2013iii), Figure 2\u2014video 1). As a metric to follow the bud growth with time, we track the height of the bud ($z_{max}$) as a function of time. As seen in Figure 2A, for inert TANGO1, the shape parameter \u2013 which we have earlier defined as $\u03b7=z_{max}/(2R_{c})$ \u2013 increases continuously until $\u03b7\u22431$ (Figure 2(ii)), before an abrupt event where $\u03b7$ jumps to 1.4 and then drops back to 1. This event corresponds to the neck closure (Appendix 1, Figure 2A(iii)), characterized by a snap-through instability (Hassinger et al., 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig2-v2.jpg)\n\n**Figure 2.:** Shape factor ($\u03b7$) and height ($z_{max}$) of the transport intermediate as a function of time for (A) inert TANGO1 and (B) functional TANGO1. (i-iii) Snapshots of the buds at the times indicated in the left graphs. All results obtained for parameters as given in Appendix 1\u2014table 1, with $\u03c7_{c}=-2k_{B}T$ and $\\sigma=0.006k_{B}T/nm^{2}$. Gray areas correspond to the coat nucleation stages (see Appendix 1 for details). See corresponding Figure 2\u2014video 1 and Figure 2\u2014video 2 for a dynamic representation of the simulations shown in (A) and (B), respectively.\n\nIn contrast, functional TANGO1 drastically modifies the dynamics and outcome of bud formation (see Figure 2B and Figure 2\u2014video 2). First, the nucleation stage is shortened, suggesting that TANGO1 can facilitate the nucleation of the COPII coat in the presence of a small force perturbation at the membrane. Second, instead of growing to the point where the neck closes, we find that the shape parameter reaches a maximum around $\u03b7\u22430.9$, before slightly decreasing to a stable height around $\u03b7\u22430.8$. As seen from the corresponding snapshots (Figure 2B(i\u2013iii)), this dynamic evolution is accompanied by the self-assembly of a high-density TANGO1 ring-like structure around the COPII coat that stabilizes the bud into a shallow, incomplete transport intermediate. These simulation results are in agreement with experimental observations of TANGO1 rings encircling COPII components in procollagen-rich membrane patches (Raote et al., 2017; Raote et al., 2018).\n\n### Transient reduction of membrane tension in TANGO1-stabilized buds facilitates the formation of large transport intermediates\n\nTo test if the formation of a stable incomplete transporter is compatible with the hypothesis that TANGO1 facilitates the biogenesis of large transport intermediate for procollagen export, we applied transient membrane tension reductions to shallow buds stabilized by TANGO1 rings. Such scenario is motivated by our previous experimental data showing that (i) ERGIC53-containing vesicles are recruited to the ERES by TANGO1 via tethering complexes (Nogueira et al., 2014; Santos et al., 2015; Raote et al., 2018), presumably enabling their fusion to the ER membrane and (ii) cells depleted of the tethering factors recruited by TANGO1 to ERES showed a reduction of\u00a0~70\u201380% in collagen secretion (Raote et al., 2018).\n\nTo mimic the presence of procollagen molecules inside the growing carrier preventing the total closure of the neck, we arbitrarily set a minimum neck radius threshold of 7.5 nm (see Appendix 1 for details). Starting from a stable shallow bud of shape parameter, $\u03b7\u22430.8$, at a large membrane tension of $\\sigma=0.006k_{B}T/nm^{2}$ (Figure 3D(i)), we apply an ad hoc transient tension reduction as follows. First, the tension is reduced to $\\sigma=0.003k_{B}T/nm^{2}$, leading to bud re-growth. Second, when the bud height reaches $\u03b7=1.5$ (just after the beginning of neck closure), the membrane tension is gradually set back to its original value of $\\sigma=0.006k_{B}T/nm^{2}$ over a 10 ms time ramp (Figure 3A\u2013C). We find that the carrier reaches a new equilibrium state at $\u03b7\u22432.8$, corresponding to a 'key-hole' shape of about 195 nm height (Figure 3D(ii)). Next, continuing from this new equilibrium state, we repeat the transient tension reduction protocol, this time initiating the ramp to recover high tension for $\u03b7=3.5$, just after a new neck is formed. This time, the bud continues growing in a pearled shape despite the recovery of high membrane tension (Figure 3D(iii,iv), and Figure 3\u2014video 1). Interestingly, the '2-pearl' shape corresponds to a height of about 300 nm, a typical length of trimerized procollagen I molecules (McCaughey and Stephens, 2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig3-v2.jpg)\n\n**Figure 3.:** A transient decrease of membrane tension mimicking ERGIC membrane recruitment by TANGO1 enables the sequential growth of COPII-TANGO1 transport intermediates. (A) Computational protocol for the applied membrane tension as a function of time. When an equilibrium state is reached, $\\sigma$ is transiently reduced from $0.006k_{B}T/nm^{2}$ to $0.003k_{B}T/nm^{2}$ until the transport intermediate grows to either $\u03b7=1.5$ or $\u03b7=3.5$ Then $\\sigma$ is progressively restored to $0.006k_{B}T/nm^{2}$ following a linear ramp of ~10 ms. (B) Resulting shape parameter, $\u03b7$, as a function of time. Double-barred lines indicate that the system can remain at equilibrium for an arbitrarily long time. (C) Shape parameter as a function of membrane tension, $\\sigma$. Gray regions in (A\u2013C) correspond to low-tension regimes. (D) Three-dimensional rendering of the shape of the transport intermediate and protein surface distribution at the respective points indicated in panels (A\u2013C). Parameters as in Appendix 1\u2014table 1, with $\u03c7_{c}=-2k_{B}T$ (see Appendix 1 for details, and Figure 3\u2014video 1 for a dynamic representation of the simulation).\n\nAltogether, our computational results support the scenario by which TANGO1 self-organizes around COPII coats and stabilizes shallow buds at physiological membrane tensions. This mechanism is enabled by TANGO1 affinity to COPII, TANGO1 filament bending rigidity, and the modulation of COPII coat line energy. The stability of shallow buds might facilitate procollagen recruitment and packaging by TANGO1 as well as the recruitment of ERGIC membranes to the ERES. We suggest that procollagen located at the neck of the growing carrier acts as a means to sterically prevent carrier scission. Transient membrane tension reduction, possibly mediated by fusing ERGIC membranes to the ER, allows the buds to grow from shallow to elongated pearled transport intermediates of sizes compatible with the encapsulation of procollagen molecules.\n\n### Analytical model explains transition from incomplete buds to large transport intermediates as a ratchet-like mechanism\n\nAlthough the generality of Model A allows us to explore ranges of possible dynamic behaviors of the TANGO1-COPII system, its computational nature and inherent complexity makes its complete and rigorous analysis prohibitively challenging. To overcome this difficulty and gain a deeper physical insight, we developed an analytically tractable model that relies on two key simplifying assumptions: (i) given the shapes obtained with Model A (Figures 2 and 3), we constrain our analysis to carrier geometries that can be approximated by a stack of spheres connected to a flat membrane patch; and (ii) we focus on the local equilibrium states of the system. The details of this equilibrium analytic model (Model B) are summarized in the Model Development section and detailed in Appendix 2.\n\nWe start by examining the effect of membrane tension on the accessible equilibrium configurations of the system as a function of the two degrees of freedom of Model B: the transport intermediate shape characterized by the shape parameter ($\u03b7$), and the capping fraction ($\\omega$). This geometric simplification allows to write the free energy change per unit area (Equation 1) as (see Appendix 2):\n\n$$\n\u0394f_{c}={\\frac{\\sigma\u03b7\u2212\\mu\u223c}{1\u2212\u03b7}+\\frac{\\lambda\u223c(\\omega)}{\\sqrt{\u03b7(1\u2212\u03b7)}}+\\frac{\\omega\u03ba\u223c_{T}}{\u03b7(1\u2212\u03b7)}(\\frac{1}{\\sqrt{\u03b7(1\u2212\u03b7)}}\u22124c_{0}R_{c}),\u03b7\\leq1/24\\sigma[n+(\u03b7\u2212n)^{2}]\u22124\\mu\u223c\u03b7+4\\lambda\u223c(\\omega)\\sqrt{(\u03b7\u2212n)(1\u2212\u03b7+n)}\u00a0+4\\omega\u03ba\u223c_{T}(\\frac{1}{\\sqrt{(\u03b7\u2212n)(1\u2212\u03b7+n)}}\u22124c_{0}R_{c}),\u03b7\\geq1/2,\n$$\n\nwhere $\\mu~=\\mu_{c}^{0}-2\u03ba_{b}/R_{c}^{2}+N/(2\\piR_{c})$ is the effective chemical potential, which depends on the polymerization energy of the coat on the membrane, $\\mu_{c}^{0}$, the bending rigidity of the membrane, $\u03ba_{b}$, and the applied pulling/pushing force, $N$; $\\lambda~\\omega=\\lambda_{0}-\\omega\u0394\\lambda/R_{c}+4\\omega\u03ba~_{T}c_{0}R_{c}^{2}$, is the effective line tension of the coat; $\u03ba~_{T}=\u03ba_{T}/8R_{c}^{3}$ is the renormalized bending rigidity of the TANGO1 filament; and $n$ is the number of fully-formed buds (see Appendix 2).\n\nWe plot in Figure 4A the free energy per unit area, $\u0394f_{c}$ (Equation 2), as a function of the shape parameter $\u03b7$, at two membrane tensions corresponding to experimentally measured value of the ER membrane, $\\sigma_{ER}=0.003k_{B}T/nm^{2}$, and of Golgi membranes, $\\sigma_{GC}=0.0012k_{B}T/nm^{2}$, respectively (Upadhyaya and Sheetz, 2004). In each case, the free energy per unit area for complete capping (TANGO1 rings forming around COPII patches, $\\omega=1$) and no capping (no TANGO1 rings around COPII patches, $\\omega=0$) are shown. The free energy per unit area of the transport intermediate, $\u0394f_{c}$, presents multiple local minima separated by energy barriers, indicating that global and locally stable shapes can coexist for a given set of parameters. At 'high' (ER) membrane tension, the global minimum of the free energy corresponds to a capped shallow bud ($\u03b7\u22430.35$), while locally stable shapes are also found for complete spherical buds connected to a capped shallow bud ($\u03b7\u22431.5$). In contrast, at 'low' (Golgi) membrane tension, the global free energy minimum is shifted to the capped complete spherical bud shape (pearled tube), while the incomplete bud state is now a local minimum. It should be noted that due to the geometric restriction of Model B, the energy barrier separating locally stable shapes tends to infinity for fully capped coats. However, our results indicate that the uncapping of the coat reduces the energy barrier, suggesting that a capping-uncapping transition might be necessary for a bud to grow. Alternatively, growth of a pearled structure from a shallow bud could also occur through unduloid-like shapes with a fully capped neck, which are not considered by model B, but are indeed observed with model A (see e.g. Figure 3D). The parameters controlling the capping-uncapping transition are studied in a later section.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig4-v2.jpg)\n\n**Figure 4.:** (A) Free energy per unit area of the transport intermediate-TANGO1 system, $\u0394f_{c}$, as a function of the shape parameter, $\u03b7$, at typical ER membrane tension (left), and Golgi membrane tension (right), for fully capped ($\\omega=1$, sly blue curves), and non-capped ($\\omega=0$, orange curves) cases. Solid lines indicate the locally stable states (lower free energy). Schematics of the transport intermediate shapes for the optimal shape parameters, $\u03b7_{1,2}^{*}$, are represented at the global and local equilibrium states. (B) Optimal shape parameters,$\u03b7_{1,2}^{*}$, as a function of the membrane tension, $\\sigma$. Globally stable shapes are indicated with solid lines, while locally stables shapes are shown by dashed lines. A transient reduction in the membrane tension (green arrows from point (1) to point (2)) can lead to the growth of the transport intermediate (black vertical arrow), whereas recovery of the tension to the initial value (green arrows from point (2) to point (3)) can keep the system in a kinetically arrested metastable configuration. The capping-uncapping transition is depicted by the orange-to-sky blue gradient line. (C) The free energy barriers separating the incomplete bud from the large intermediate morphologies, $\u0394f_{1,2}$ (blue line), and $\u0394f_{2,1}$ (vermillion line) as defined in (A), plotted as a function of the membrane tension, $\\sigma$. The arrow illustrates how a decrease in membrane tension reduces the energy barrier for growth of the transport intermediate. All parameter values are reported in Appendix 2\u2014table 1, with no applied force, $N=0$.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Optimal shape parameters, $\u03b7_{1,2}^{*}$, as a function of the membrane tension, $\\sigma$ in a case where no capping is forced ($\\omega=0$). Globally stable shapes are indicated with solid lines, while locally stables shapes are shown by dashed lines. A transient reduction in the membrane tension (green arrows from point (1) to point (2)) can lead to full closure of the bud neck. This open to full neck closure transition is depicted by the orange-to-sky blue gradient line. Parameter values are reported in Appendix 2\u2014table 1, with no applied force, $N=0$.\n\nTo better visualize the effect of membrane tension on the shift in globally and locally stable shapes, we plot the optimal shape parameters, $\u03b7^{*}$, (Figure 4B) and energy barriers between stable incomplete buds ($\u03b7^{\u2217}<1$) and large transport intermediates ($\u03b7^{\u2217}>1$) (Figure 4C) as a function the membrane tension. The effect of a transient decrease in membrane tension from $\\sigma_{ER}$ to $\\sigma_{GC}$ on a capped stable shallow bud is represented by the green arrows in Figure 4B. Upon tension reduction, the initially globally-stable shallow bud becomes a local but not global minimum (Figure 4A,B). Concomitantly, the free energy barrier to transition from an incomplete bud to a large transport intermediate, $\\Deltaf_{1,2}$, is reduced, and the reciprocal free energy barrier to transition back from a large to shallow bud, $\\Deltaf_{2,1}$, is increased (Figure 4C). At low membrane tension, the growth of the metastable bud can be triggered by a small perturbation \u2013 such as thermal fluctuations or a mechanical perturbation in the system \u2013 and might be facilitated by transient uncapping (Figure 4A). By assuming Arrhenius kinetics, we can estimate an average transition time as $\\tau_{1,2}=t_{0}e^{\\DeltaF_{1,2}/k_{B}T}$, where $t_{0}~1ms$ is a characteristic time scale of membrane shape dynamics (Campelo et al., 2017); and $\\DeltaF_{1,2}\u2248\\Deltaf_{1,2}\\piR_{c}^{2}$ is the overall free energy barrier of the shape transition. For the conditions detailed in Figure 4C, we obtain $\\DeltaF_{1,2}\\sigma_{ER}\u224833k_{B}T$ and $\\DeltaF_{1,2}\\sigma_{GC}\u22488k_{B}T$, and hence the transition time is decreases drastically upon tension reduction, from $\\tau_{1,2}\\sigma_{ER}~10^{9}min$ to $\\tau_{1,2}\\sigma_{GC}~0.1min$. Note that our equilibrium model can only predict the free energy barriers but not the actual dynamics of the transitions between metastable and stable states. Then, as the membrane tension recovers the 'high' ER value, the free energy barrier to transition back to a shallow bud remains relatively large ($\\Deltaf_{2,1}(\\sigma_{ER})>\\Deltaf_{1,2}(\\sigma_{GC})$), preventing the carrier to recover its shallow, globally\u00a0stable shape and hence possibly being kinetically trapped in a metastable configuration. Similar estimations as above, give that $\\DeltaF_{2,1}\\sigma_{ER}\u224825k_{B}T$, and $\\tau_{2,1}\\sigma_{ER}~10^{6}min$. By increasing these energy barriers, TANGO1 capping can contribute to preventing large transport intermediates from shrinking back to shallow shapes during subsequent cycles of membrane tension reduction. Overall, the tension-mediated growth of large transport intermediates is effectively a ratchet-like mechanism, where the difference between the energy barriers guarantees an almost unidirectional evolution of the system leading to the transport intermediate growth.\n\n### TANGO1 expands the parameter space of accessible stable incomplete carriers\n\nThe previous results were computed for a typical set of parameters of the TANGO1-COPII system (see Appendix 2\u2014table 1). Next, we studied how robust was the stabilization of an incomplete carrier by a TANGO1 ring with respect to the COPII polymerization energy. To do so, we computed the local minima of the overall energy per unit area (Equation 2) for a range of values of the COPII polymerization energy, $\\mu_{c}^{0}$, and the membrane tension, $\\sigma$. The results are shown in Figure 5A in the form of a shape diagram for the optimal shape parameter, $\u03b7^{*}$. We find that at low COPII polymerization energy, the coat fails to bend the membrane into a bud, resulting in a flat membrane ($\u03b7^{*}=0$). At high COPII polymerization energy, however, the system adopts a fully budded structure. Interestingly, we identify a range of intermediate COPII binding energies, ($0.0285\u00a0k_{B}T/nm^{2}<\\mu_{c}^{0}<0.0315\u00a0k_{B}T/nm^{2}$) at which a stable shallow bud ($\u03b7^{*}<1$) can be brought to a large pearled shape ($\u03b7^{*}>1$) by membrane tension reduction. Although this range of parameters might seem relatively narrow, similar narrow ranges have been shown to regulate clathrin-coated vesicle formation (Saleem et al., 2015; Hassinger et al., 2017).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig5-v2.jpg)\n\n**Figure 5.:** (A) Phase diagram obtained with Model B displaying the optimal shape parameter as a function of the COPII coat binding energy, $\\mu_{c}^{0}$, and of the membrane tension, $\\sigma$. Different shapes can be identified, from flat uncoated membranes, $\u03b7^{*}=0$, to incomplete coated buds, $\u03b7^{*}<1/2$, and to large transport intermediates, $\u03b7^{*}>1$. Unless otherwise specified, parameters used for all the calculations are listed in Appendix 2\u2014table 1. ER and Golgi membrane tensions are marked by yellow dashed lines. (B) Shape factor (color code) and final state (symbol) obtained with Model A as a function of membrane tension ($\\sigma$) and COPII self-interaction ($\u03c7_{c}$). (i) Inert TANGO1 but functional COPII. (ii) Functional TANGO1 and COPII. Each symbol represents the final state of a dynamic simulation, while iso-contours and colors are interpolated from the values at each symbol. (C) Snapshots of final states obtained for functional TANGO1 at $\\sigma=0.006\u00a0k_{B}T/nm^{2}$ as indicated in panel (B). Note that (i) and (ii) reached local equilibrium states.\n\nAs a comparison, we made use of the dynamic computational model (Model A) to compute the final carrier states and shape parameters for various values of the membrane tension, $\\sigma$, and the COPII self-interaction coefficient, $\u03c7_{c}$. The resulting shape diagrams are shown in Figure 5B for both inert and functional TANGO1. Note that the COPII self-interaction parameter $\u03c7_{c}$ in Model A is conceptually equivalent to $\\mu_{c}^{0}$ in the equilibrium Model B. In agreement with the results obtained with Model B (Figure 5A), we find that at low COPII self-interaction, the COPII coat either does not nucleate during the initial perturbation stage, or does nucleate but cannot provide enough bending energy to stabilize the membrane curvature against the membrane tension, thus resulting in a flat membrane ($\u03b7^{*}=0$). At high COPII self-interaction, the nucleated coat successfully works against membrane tension to generate membrane curvature, generating a closed spherical bud. At intermediate COPII self-interaction, we find a transition region where the deformed membrane stabilizes as an open, shallow bud. Interestingly, the presence of functional TANGO1 dramatically widens the parameter space at which stable shallow buds are obtained. Importantly, the phase boundary at the transition from shallow to closed bud now spans a larger range of membrane tension and COPII self-interaction values (Figure 5B,C).\n\nOverall, despite the different assumptions underlying the computational dynamic and equilibrium models, their qualitative agreement highlights the relevance of their common underlying physical mechanisms to TANGO1-mediated assembly of procollagen-containing transport intermediates.\n\n### TANGO1 properties control accessible membrane shapes through capping transition\n\nAs seen in Figures 4 and 5, the capping-uncapping transition of COPII coat by TANGO1 plays an important role in determining the transition between equilibrium-budded states. Therefore, we set out to examine the influence of TANGO1 model parameters on its capping ability.\n\nWe define $\u03b7^{tr}$ as the shape parameters at which the different capping-uncapping transitions occur, which corresponds to the solutions to the equation $\u0394f_{c}\u03b7^{tr},\\omega=0=\u0394f_{c}\u03b7^{tr},\\omega=1$. Similarly, it is also informative to define the neck opening radius at which the capping-uncapping transition occurs, $\u03c1^{tr}$, which can be analogously found as the stationary points of the free energy (Equation 1) with respect to the capping fraction ($\\partial\u0394f_{c}/\\partial\\omega=0$). From these equivalent definitions we obtain\n\n$$\n\u03b7^{tr}=n+\\frac{1}{2}(1\\pm\\sqrt{1\u2212\\frac{\u03be^{2}}{R_{c}^{2}}(1+c_{0}\u03be)^{2}}),\n$$\n\n\n\n$$\n\u03c1^{tr}=\\frac{\u03be}{1+c_{0}\u03be},\n$$\n\nfor $c_{0}>-1/\u03be$. Here $\u03be=\\sqrt{\u03ba_{T}/(2\u0394\\lambda)}\u224822nm$ is a TANGO1-related length-scale (see parameter values in Appendix 2\u2014table 1). These analytical results highlight how capping of COPII components by TANGO1 is promoted by large values of the TANGO1-COPII interaction, $\u0394\\lambda$, and prevented by large TANGO1 filament bending rigidities, $\u03ba_{T}$ (Figure 6\u2014figure supplement 1A). Additionally, if the bud opening radius $\u03c1$ is equal to the radius of curvature imposed by the spherical polymerization of COPII, $R_{c}$, we can define a critical value of the TANGO1 linactant strength below which there is no capping $\u0394\\lambda^{tr}=\\frac{\u03ba_{T}}{2}\\frac{1}{R_{c}}-c_{0}^{2}$. This is illustrated in Figure 6A where the value of the critical COPII boundary radius $\u03c1^{tr}$ (Equation 4) is plotted as a function of TANGO1 filament bending rigidity ($\u03ba_{T}$) and linactant strength ($\u0394\\lambda$). For $\u03c1>\u03c1^{tr}$, TANGO1 caps the COPII domains, whereas for $\u03c1<\u03c1^{tr}$, no capping nor ring formation occurs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig6-v2.jpg)\n\n**Figure 6.:** (A) Capping-uncapping phase diagram where the membrane neck radius at the radius at the trasition, $\u03c1^{tr}$ (color-coded), given by Equation 4, is plotted against TANGO1 linactant strength, $\u0394\\lambda$, and the bending rigidity, $\u03ba_{T}$, for a filament of zero spontaneous curvature. Below the critical value of TANGO1 linactant strength, $\u0394\\lambda^{tr}$, no capping occurs (no functional TANGO1 rings). Isolines for different values of $\u03c1^{tr}$ are indicated by the denoted dashed lines. (B,C) Shape diagrams indicating the shape of minimal free energy, represented by the optimal shape parameter, $\u03b7^{*}$ (color-coded), as a function of the COPII coat polymerization energy, $\\mu_{c}^{0}$, and of the TANGO1 linactant strength, $\\Delta\\lambda$ (B), or the TANGO1 filament bending rigidity, $\u03ba_{T}$ (C). Capping-uncapping transitions are marked by thick, dashed, white lines, whereas the different shape transitions are denoted by the different dashed lines.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A, B) Capping-uncapping transitions of TANGO1 as a function of the shape of the transport carrier, $\u03b7$, plotted against the TANGO1 linactant strength, $\\Delta\\lambda$, for different values of the filament bending rigidity, $\u03ba_{T}$ (colored curves). Snapshots of the shapes corresponding to the different pointed values of the shape parameter and indicating the capping-uncapping transitions are shown in the top part of the panel. (B) Plots of the optimal shape parameter, $\u03b7^{*}$ (left plot), and of the optimal neck radius, $\u03c1^{*}=\u03c1(\u03b7^{*})$ (right plot), as a function of the COPII coat polymerization energy, $\\mu_{c}^{0}$, for two discrete values of the TANGO1 linactant strength: $\\Delta\\lambda=0$ (light blue curves); and $\\Delta\\lambda=0.12k_{B}T/nm$ (orange curves). No capping is observed when TANGO1 is not a linactant, whereas a region of TANGO1 capping is found in the high linactant condition (orange region).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Shape diagram indicating the shape of minimal free energy, represented by the optimal shape parameter, $\u03b7^{*}$ (color-coded), as a function of the COPII coat polymerization energy, $\\mu_{c}^{0}$, and of the TANGO1 filament spontaneous curvature, $c_{0}$. Capping-uncapping transitions are marked by thick, dashed, white lines, whereas the different shape transitions are denoted by the different dashed lines.\n\nWe then computed the optimal shape parameter and wetting fraction for a large range of values of TANGO1 bending rigidity, $\u03ba_{T}$, linactant strength, $\u0394\\lambda$, and spontaneous curvature, $c_{0}$. These are presented in the form of shape diagrams in Figure 6B,C and Figure 6\u2014figure supplement 2A. We find that, although none of these properties control the transition between shallow buds ($\u03b7<1/2$) and large intermediates ($\u03b7>1$), they are key in determining the capping-uncapping transition. Remarkably, we find once again that TANGO1 capping significantly expands the regions where stable shallow buds are energetically favored. In addition, the presence of a TANGO1 ring capping COPII subunits induced the formation of shapes with larger neck radii (Figure 6B,C, and Figure 6\u2014figure supplement 1B). These results provide further support to our hypothesis that by capping COPII coats, TANGO1 stabilizes the formation of open buds preventing therefore the formation of fully budded spherical carriers. Such a stable wide neck would facilitate procollagen packing into the nascent intermediate.\n\n### Outward force facilitates the transition from TANGO1-stabilized buds to large transport intermediates\n\nFinally, we examined how the application of a force directed toward the cytosolic side of the bud can facilitate the growth of a TANGO1-capped transport intermediate. The existence of such a force, although speculative in the context of procollagen export, could have several possible origins. For instance, molecular motors linking the membrane to the cytoskeleton could potentially produce such pulling forces. Another hypothetical source of force is linked to the folding of triple-helical procollagen in the ER lumen. TANGO1 recruits procollagen by binding its chaperone HSP47 (Ishikawa et al., 2016), which preferentially interacts with triple-helical procollagen (Tasab et al., 2000). Procollagen folds into a rigid triple-helix from the C terminus to the N terminus in a zipper-like manner (Engel and Prockop, 1991). Therefore, HSP47, and correspondingly TANGO1, binding sites are generated on the procollagen as it folds. We thus hypothesize that the interface between TANGO1/HSP47 and procollagen could act as a zipper helping in the elongation of triple helical rigid procollagen. The C termini of procollagens are often associated with the ER membrane (Beck et al., 1996). It is therefore possible that a ring of TANGO1 would constrain the procollagens in a bundle with the folded C termini oriented toward the growing tip of the bud. As procollagens fold, newly generated HSP47/TANGO1-binding sites will be more distant to the growing tip of the bud. The net result of this process would be procollagen applying a force directed toward the cytosol (and exerting an opposite reaction force on the TANGO1 ring). The isotropic TANGO1 ring structure would prevent the generation of any net torque and therefore of any tilt of the procollagen molecules.\n\nFollowing the same protocol as above, we computed the optimal shape parameter as a function of the intensity of an outward point force for various COPII polymerization energies and membrane tensions. As shown in Figure 7A,B, we found that having a point force shifts the capping-uncapping and transport intermediate growth transitions toward lower COPII binding energies and higher membrane tensions. Interestingly, we can obtain an analytical estimate of the transition between incomplete shallow buds and large transport intermediates. To that end, we consider the situation where the free energy of an incomplete bud of shape parameter $\u03b7$, is equal to the free energy of a larger intermediate with an extra pearl, given by the shape parameter $\u03b7+1$. Equation 2 then gives\n\n$$\n\\mu_{c}^{0}\u22122\\frac{\u03ba_{b}}{R_{c}^{2}}+\\frac{N}{2\\piR_{c}}\u2212\\sigma=0,\n$$\n\nwhich is independent of the structural details of the TANGO1 ring, as we have seen before (Figure 6B,C). The solution to this parametric equation is represented by the plane in light blue shown in Figure 7C. For completeness, in Figure 7C we also show the numerically\u00a0found transition surfaces between flat membranes and shallow buds (dark blue surface, Figure 7C) and between large capped intermediates and full uncapped intermediates (orange surface, Figure 7C). Additionally, we rely on Equation 5 to define the critical force $N^{*}=2\\piR_{c}\\sigma-\\mu_{c}^{0}+2\u03ba_{b}/R_{c}^{2}$ at which the transition to a large transport intermediate is triggered. For the experimental values reported in Appendix 2\u2014table 1and $\\mu_{c}^{0}=0.03k_{B}T/nm^{2}$, we obtain $N^{*}~0.34\\frac{k_{B}T}{nm}=1.4pN$, which, for comparison, is in the same order of magnitude of the force generated by molecular actin polymerization (Footer et al., 2007), and an order of magnitude smaller than typical force required to extract a membrane tethers (Der\u00e9nyi et al., 2002). Taken together, our results indicate that the formation of large transport intermediates can be greatly facilitated in the presence of TANGO1 by forces of physiological ranges oriented toward the cytosol. This mechanism could be complementary to the membrane tension regulation mechanism described above.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig7-v2.jpg)\n\n**Figure 7.:** (A, B) Shape diagrams showing the optimal shape parameter, $\u03b7^{*}$ (color coded), as a function of the applied force, $N$, and the COPII coat polymerization energy, $\\mu_{c}^{0}$, for $\\sigma=\\sigma_{ER}=0.003\u00a0k_{B}T/nm^{2}$ (A); or the membrane tension, $\\sigma$, for $\\mu_{c}^{0}=0.03\u00a0k_{B}T/nm^{2}$ (B). (C) Three-dimensional shape diagram, indicating the transition zones between flat membranes ($\u03b7^{*}=0$), incomplete buds ($\u03b7^{*}<0$), and large transport intermediates ($\u03b7^{*}>1$) \u2013 as given by Equation 5 (light blue surface) and by numerical solution of model B (dark blue and orange surfaces) \u2013, as a function of the COPII coat polymerization energy, $\\mu_{c}^{0}$, membrane tension, $\\sigma$, and applied force, $N$. Unless otherwise specified, the elastic parameters used for all the calculations shown in (A\u2013C) are listed in Appendix 2\u2014table 1.\n\n## Discussion\n\n### A model for TANGO1-mediated procollagen export from the ER\n\nHere we delineated a feasible biophysical mechanism of how TANGO1 contributes to the formation of procollagen-containing transport intermediates at the ER. In particular, we presented two complementary models to study this process. The first model (Model A) is a dynamic model that does not impose any particular geometry for the intermediate shape. We next complemented this dynamic model with a more simplified but analytically tractable equilibrium model (Model B), which assumes that COPII polymerizes into lattices of spherical geometry. Physically, these models can be understood in terms of a competition between different driving forces. Each of these forces can either prevent or promote the elongation of procollagen-containing transport intermediates. The results obtained with these two complementary models of large transport intermediate formation reinforce the notion that TANGO1 rings serve to modulate the formation of COPII carriers for the export of bulky cargoes.\n\nWe previously showed that TANGO1 forms rings at ERES surrounding COPII components (Raote et al., 2017). We also revealed interactions that are required for TANGO1 ring formation, which are also important to control TANGO1-mediated procollagen export from the ER (Raote et al., 2018). However, it still remained unclear how TANGO1 rings organize and coordinate the budding machinery for efficient procollagen-export. Here, we propose that TANGO1 rings form at ERES by assembling as a filamentous structure made of different components of the TANGO1 family of proteins (Figure 1B,C). Evidence for the existence of linear assemblies of transmembrane proteins has indeed been reported in the context of transmembrane actin-associated (TAN) lines that couple outer nuclear membrane components to actin cables (Luxton et al., 2010). The components of the TANGO1 filament have an affinity for COPII subunits (Saito et al., 2009), leading to a capping of the periphery of a COPII lattice (Glick, 2017; Raote et al., 2018). This effectively reduces the line energy of the COPII coat and therefore we propose that, by capping COPII lattices, TANGO1 filaments can act as linactants (Figure 1B,C). In the context of HIV gp41-mediated membrane fusion, linactant compounds, such as vitamin E, lower the interfacial line tension between different membrane domains to inhibit HIV fusion (Yang et al., 2016).\n\nWhen the association of TANGO1 with COPII subunits was abrogated \u2013either by expressing TANGO1-\u2206PRD or by silencing the expression of SEC23A\u2013, TANGO1 formed either smaller rings or long linear filamentous structures or planar clusters (Raote et al., 2018). In cells expressing TANGO1-\u2206PRD, the interaction between one of the filament components, TANGO1, and the COPII subunits is abolished. However, a TANGO1 filament can still be formed because this mutant still interacts with other TANGO1 or cTAGE5 proteins (Raote et al., 2018). In this situation,\u00a0the filament proteins cTAGE5 (Saito et al., 2011; Saito et al., 2014) and TANGO1-Short (Maeda et al., 2016) can still bind the COPII component Sec23A. Because the affinity to bind to the peripheral COPII subunits is reduced, the filaments should be less line-active, and therefore less able to cap COPII components. Our theoretical results presented here predict that decreasing the TANGO1 filament linactant strength, $\\Delta\\lambda$, prevents capping of the peripheral COPII components and therefore results in a lower probability of having open carriers (Figure 6), which can lead to the observed defects in terms of ring structure and procollagen export.\n\nOur results show that the formation of TANGO1 rings helps stabilize the COPII bud neck (Figures 2 and 5). This, we suggest, could allow for an efficient recruitment of procollagen molecules by TANGO1 to the exit site. It is not clear how long it takes for a procollagen molecule to fully fold into an export-competent triple helix after its translation into the ER, and it is possible that TANGO1 can act as a sensor of procollagen folding to couple it with the export machinery. However, in experiments where type I procollagen triple-helical stabilization and ER export were synchronized, fully folded procollagen required\u00a0~15 min to reach the early Golgi compartment (McCaughey et al., 2019). Since the half-lives of COPII components on the ER membrane are of the order of a few seconds (Forster et al., 2006), it seems likely that there is a mechanism in place to stabilize open nascent carriers, which helps to fully pack complex cargoes. Our theoretical results (Figure 2) support the proposed mechanism by which TANGO1 rings arrest the growth of standard COPII carriers and stabilize open shallow buds for the efficient packaging of procollagens (Figure 8A,B).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/59426/elife-59426-fig8-v2.jpg)\n\n**Figure 8.:** (A) In absence of functional TANGO1, COPII-coated (orange) spherical vesicles assemble normally, generating spherical carriers of between 60\u201390 nm in size. In absence of TANGO1, procollagens (magenta) cannot be packed into such small carriers. (B) In presence of a functional TANGO1 (light blue), a filament forms capping the base of a growing COPII patch (see top view in the top right subpanel) and packages procollagens to the export sites. At the high membrane tension of the ER, our results showed that this TANGO1 fence stabilizes a shallow bud, which might allow the efficient packaging of export-competent procollagens. (C) The NRZ complex (dark blue), which is recruited to the procollagen export sites by the TANGO1 TEER domain, tethers ERGIC53-containing membranes. (D) A possible outwards-directed force (magenta arrow) facilitates the generation of a large transport intermediate. (E) A combination of membrane tension decrease (possibly mediated by fusion of ERGIC membranes), outwards-directed force, and the polymerization of COPII lattices, contribute to the growth of a large transport intermediate commensurate with long semi-rigid procollagen molecules. The actual shape of the transport intermediate and whether it is fully or only partially coated still remain unknown.\n\nOnce a TANGO1 ring forms and stabilizes a shallow bud, the results of our model indicate that carrier expansion can proceed via at least two different, non-exclusive scenarios (Figure 8C,D): (i) local reduction of the membrane tension (Figures 3\u20135) and (ii) appearance of a directed force applied at the growing carrier and pointing toward the cytosol (Figure 7). Additionally, it is also possible that carrier growth occurs by an increase in the polymerization ability of COPII coats (Figure 5). It is possible that TANGO1 can directly or indirectly control each of these mechanisms (Ma and Goldberg, 2016; Raote et al., 2018). Notably, the TANGO1 ring properties, such as the linactant strength or the filament bending rigidity, are not drivers for the incomplete bud to large transport intermediate transition (Figure 6) but rather, they enhance the regions of the parameter space where carrier shapes with wide-open necks are stabilized, as opposed to fully formed vesicles or unassembled coats (Figure 5A,B).\n\nThe results of our models indicate that a transient reduction of the ER membrane tension can induce a transition from a stable shallow bud encircled by a TANGO1 ring to a large transport intermediate, that is not reabsorbed upon recovery of the tension (Figures 3 and 4). It is worth noting that, despite the different modeling and implementation choices taken in these two approaches, the values of the membrane tension at which the predictions agree only differ by a factor two. This difference could certainly be further reduced by undergoing a thorough analysis of the computational model's parameter space. However, given the computational cost of such study and the uncertainty of the experimental estimates for the ER and Golgi membrane tensions, seeking such a quantitative match between two qualitative models would only bring very limited insights. Finally, whether and how such tension regulation occurs at the level of the ERES still remains to be fully resolved. Nevertheless, we suggest a possible way by which TANGO1 could act as the membrane tension regulator at the ERES. We propose that the fusion of ERGIC53-containing membranes tethered by the TANGO1 TEER domain (Raote et al., 2018) would be the trigger for carrier growth. In particular, the ER-specific SNARE protein Syntaxin18 and the SNARE regulator SLY1, both of which are involved in membrane fusion reactions at the ER, are also required for procollagen export in a TANGO1-dependent manner (Nogueira et al., 2014). Fusion of ERGIC membranes to the sites of procollagen export would lead to a local and transient reduction of the membrane tension (Sens and Turner, 2006). In this scenario, TANGO1 would act as a regulator of membrane tension homeostasis to control procollagen export at the ERES (Figure 8C,E). We have recently proposed that ERGIC membranes fuse directly or adjacently to the growing transport intermediate to allow for membrane addition and tension release; and showed that compartment mixing can be arrested by the TANGO1 ring serving as a diffusion barrier (Raote et al., 2020). In our models, we have not included the effects of a partial diffusion barrier at the base of the growing carrier. Although these effects could lead to changes in the dynamics of carrier growth as discussed below, we do not expect any major qualitative changes in our proposed mechanisms of carrier elongation.\n\nFrom the free energy profile shown in Figure 4A, we also noticed that the system needs to overcome an energy barrier to reach the globally stable state. Hence, depending on the dynamics of the system, this can be kinetically trapped into a locally stable deep bud (yellow shape in Figure 4A, right panel). Although\u00a0our analytical equilibrium model cannot account for the dynamics of such transitions, we can give some estimates. First, mechanical equilibration of the membrane shape ($\\tau_{mech}$) can be theoretically estimated to be of the order of milliseconds (see e.g. Campelo et al., 2017; Sens and Rao, 2013), which is also in accordance to our own results from model A, where shape changes are found within few milliseconds (Figure 3). Second, the diffusive behavior of membrane tension has been measured at the plasma membrane of HeLa cells, with a diffusion coefficient of $D_{\\sigma}=0.024\\mum^{2}/s$ (Shi et al., 2018), which gives a characteristic diffusion time of the order of $\\tau_{\\sigma}~1s$ (using characteristic length scales of $\u223c100\u2212500\u00a0nm$). Since $\\tau_{\\sigma}\u226b\\tau_{mech}$, membrane shape equilibrates much faster than the recovery of the membrane tension. Moreover, our recent findings that TANGO1 can induce a diffusion barrier at the base of the growing bud (Raote et al., 2020), suggest that the dynamics of tension equilibration can be even slower.\n\nIn parallel, we also hypothesize a situation where TANGO1 rings help pushing procollagen molecules into the growing carrier and couple this pushing force to procollagen folding, through the chaperone HSP47 (Figure 8D,E). Because HSP47 chaperone assists in folding (and hence in rigidifying) procollagen, it is tempting to speculate that the trimerization of procollagen occurs concomitantly to the its export and that the physical interaction between TANGO1 rings and procollagen/HSP47 could serve as a means to couple procollagen folding to force production. Although the existence of this pushing force is largely speculative, it could, according to our model, promote formation of a large intermediate and hence TANGO1 could act as a sensor of procollagen folding to couple it with the export machinery.\n\nFinally, the results of our dynamic model show that the shape of the elongated carrier is a pearled tubule (Figure 3D and Figure 3\u2014video 1). The fission of the upstream pearls is prevented in our model by a steric hindrance of the procollagen molecules packed inside the tubule (Figure 8E). Since TANGO1 is the receptor molecule that binds procollagen and packs it to facilitate its export (Saito et al., 2009), TANGO1 is indirectly required to prevent the fission of upstream necks. The results of our dynamic model indicate that during the elongation of the structure (Figure 3D and Figure 3\u2014video 1). We previously proposed that the large transport intermediate is converted into a tunnel connecting ER to the ERGIC/early Golgi cisternae (Raote and Malhotra, 2019). If so, an appealing possibility is that, at this stage, the role of a TANGO1 ring would be to prevent lipid mixing between these transiently connected organelles by acting as a diffusion barrier (Raote et al., 2020). Finally, after procollagen delivery to the acceptor compartment, fission of the neck between the first two pearls of the tubule would not be sterically prevented anymore and therefore the tunnel could be disconnected. Future work will be required to help elucidate the precise control of the timing between these proposed fusion and fission events.\n\nWhat controls organelle size in the context of intracellular trafficking? There has been a lot of work on what set the size of organisms, the size of tissues in an organism, and the size of cells in a tissue (Guertin and Sabatini, 2006; Marshall et al., 2012). However, there has been less work toward elucidating what sets the size of organelles relative to the cell. Extensive cargo transfer while trafficking bulky cargoes such as collagens leads to large amounts of membrane being transferred from one organelle to another. To maintain organelle homeostasis, loss of membrane from a compartment has to be concomitantly compensated by membrane acquisition from the biosynthetic pathway or by trafficking from other organelles; the arrival and departure of membrane at each compartment has to be efficiently balanced. How is this homeostatic balance controlled? Changes in membrane tension have been described to affect rates of exocytosis and endocytosis at the plasma membrane (Apodaca, 2002; Kosmalska et al., 2015; Wu et al., 2017) and of growth of membrane buds and tubes in general (Der\u00e9nyi et al., 2002; Cuvelier et al., 2005). Interestingly, a theoretical model has also established a crucial role for membrane tension in modulating the budding of clathrin-coated vesicles (Hassinger et al., 2017). Furthermore, it has been recently proposed that Atlastin-mediated maintenance of ER membrane tension is required for the efficient mobility of cargo proteins (Niu et al., 2019); and that the formation of intra-lumenal vesicles in endosomes is also regulated by membrane tension (Mercier et al., 2020). However, control of endomembrane trafficking by membrane tension still remains challenging to study experimentally and hence remains incompletely understood. We suggest that inter-organelle hubs, such as a TANGO1-scaffolded ERES-ERGIC, control the local tension homeostasis at specific membrane sub-domains and regulate the membrane flux between these organelles.\n\n### Proposal of experimental approaches to test the model\n\nWe have proposed and analyzed a theory by which TANGO1 assembles into a ring at the ERES to facilitate cargo export. The results of the theoretical biophysical models presented are compatible with our current understanding of the biology of this complex process. Importantly, our analyses are meant to help design experiments to further test our hypotheses. We speculate that a TANGO1 ring functions as a hub to collect and concentrate procollagens, to stabilize open COPII lattices, and to recruit and fuse membranes thus alleviating the ERES tension while promoting the export of procollagens from the ER. Although many of these individual events are based on experimental evidence, we lack an understanding of how collagens are collected and then percolated into the growing intermediate, whether the binding of TANGO1 to the rims of growing COPII coats acts as a linactant, the involvement of tension, the mechanism of tension sensing, and finally how these events are coordinated to cause procollagen export. It is important to be able to ask these questions because they highlight the gaps in our understanding of the process of cargo export at the ER. We propose a set of experimental procedures to test our hypotheses. The new experimental data will undoubtedly improve our understanding of how cells engage to export cargoes based on their size, volume, and the overall cellular needs.\n\n#### Does TANGO1 form a linear or quasi-linear filament held together by lateral protein-protein interactions?\n\nAlthough our hypothesis 3 (see Model Development section) is based on a number of indirect experimental observations, to our knowledge, there is no direct evidence for the existence of TANGO1 filaments. A first step to address this question will be to resolve the stoichiometry of the TANGO1 family proteins within a TANGO1 ring. Controlled photobleaching (Lee et al., 2012) or DNA-PAINT (Stein et al., 2019) of the single-labeled, endogenously\u00a0expressed proteins could allow the recording of the number and spatial positions of single fluorophores in individual TANGO1 rings. These results, after complete quantitative reconstruction of all the single molecule signals, should provide an absolute stoichiometry and ultra-resolved structure of TANGO1 organization in the ERES. Ultimately, in vitro reconstitution of TANGO1 ring formation in synthetic lipid bilayers by using recombinant proteins will be of paramount importance to experimentally observe the formation of TANGO1 filaments, assess the minimal components required for their formation, and eventually measure the elastic properties of a TANGO1 filament.\n\n#### Does the TANGO1-directed fusion of ERGIC membranes modulate the ERES membrane tension for procollagen export?\n\nFuture efforts in applying cutting-edge, super-resolution multicolor live-cell microscopy (Bottanelli et al., 2016; Ito et al., 2018; Liu et al., 2018; Schroeder et al., 2019) will help monitor the fusion of ERGIC membranes to the ER and couple these events to the formation of procollagen-containing transport intermediates. In addition, our hypothesis of TANGO1-mediated regulation of membrane tension is based upon the premise that fusion of ERGIC-53-containing vesicles to the procollagen export sites locally decreases the membrane tension. A recently\u00a0established fluorescent membrane tension sensor (Colom et al., 2018; Goujon et al., 2019) could provide a means to monitor such effects in relation to procollagen export.\n\n#### Is there an outwards-directed force contributing to transport intermediate elongation?\n\nIt has been shown that procollagen export from the ER does not require the presence of an intact microtubule network (McCaughey et al., 2019). However, the involvement of other force-producing agents, such as actin-myosin networks, remains unknown. The identification of additional physiological interactors of TANGO1 by proximity-dependent labeling assays, such as BioID (Roux, 2018), and the subsequent screening for candidates that can exert such forces could help identify possible molecular players involved in force-generation. However, it is important to stress that our model can explain the formation of large transport intermediates even in the absence of an applied force (Figure 7).\n\n#### What is the shape of the transport intermediate that shuttles collagens from the ER to the ERGIC/Golgi complex?\n\nOur full dynamic model predicts that the TANGO1-mediated procollagen-containing transport intermediates are shaped as a pearled tubule (Figure 3D). That this prediction holds true in tissue cultured cells, or alternatively that the transport intermediates have a more cylindrical geometry, as proposed from in vitro data of COPII polymerization in the presence of PPP sequences, such as those in the TANGO1 PRD (Ma and Goldberg, 2016; Hutchings et al., 2018), will reveal how TANGO1 modulates COPII polymerization and coat flexibility. To this end, three-dimensional, multicolor super-resolution microscopy techniques, such as 3D single molecule localization microscopy (3D-SMLM) or 3D stimulated emission depletion (3D-STED) microscopy, could provide sufficient resolution to map the three-dimensional morphology of the transport intermediates. Recent efforts by using 3D-SMLM and correlative light and electron microscopy (CLEM) have revealed the existence of large procollagen-containing structures (Gorur et al., 2017; Yuan et al., 2018). However, a recent report suggested that those structures were directed for lysosomal degradation and not for trafficking to the Golgi complex (Omari et al., 2018). By contrast, direct transport of procollagen between the ER and the Golgi complex by a short-loop pathway in the absence of large vesicles has been recently proposed (McCaughey et al., 2019), opening to the possibility of a direct tunneling mechanism for trafficking proteins between compartments (Raote and Malhotra, 2019). Eventually, the use of modern electron microscopy techniques such as cryo-electron tomography (Beck and Baumeister, 2016) or focused ion beam-scanning electron microscopy (FIB-SEM) (Nixon-Abell et al., 2016) will help solve this issue on the morphology of the transport intermediates that shuttle procollagens from the ER to the Golgi complex.\n\n### Concluding summary\n\nIn summary, we proposed a theoretical mechanical model that explains how TANGO1 molecules form functional rings at ERES, and how these TANGO1 rings assemble the machinery required to form a large transport intermediate commensurate with the size of procollagens. We envision that our hypotheses and the predictions of our model will guide new lines of experimental research to unravel mechanisms of COPII coats organization for the export of complex cargoes out of the ER.\n",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "53f93b7a-161f-4972-a0be-1c03006f9264",
+      "submission_id": "a52ed75e-9301-4bef-80da-4b9e7f346451",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jure Derganc, University of Ljubljana Slovenia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.59426.sa1](https://doi.org/10.7554/eLife.59426.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"A physical mechanism of TANGO1-mediated bulky cargo export\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional work is required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nThe paper presents an elaborate theoretical analysis of TANGO1-mediated transport of large procollagen cargo from endoplasmic reticulum exit sites (ERES). The paper addresses a very exciting topic since the mechanisms of cellular transport of large cargo are still poorly understood. The central hypothesis of the paper is that TANGO1 binds to the boundary of a growing COPII bud, where it (a) acts as linactant and modulates COPII assembly; (b) tethers ERGIC53-containing membranes that subsequently fuse with ERES and promote the growth of the transport carrier; (c) binds to procollagen in ER lumen and directs it into the carrier. Compared to the previous submission, the paper has been, without any doubt, substantially improved. However, as the topic is complex, it is no surprise that there are still some open questions.\n\nWhat became evident during the review process is a sense that what must seem clear to the authors was not clear to the reviewers, and the authors are strongly encouraged to respond with great care in the revised text to address each of the comments/concerns raised. Because of the extensive reviewer comments, we include them in full to guide you as you revise the manuscript.\n\nReviewer #1:\n\nThe paper presents an elaborate theoretical analysis of TANGO1-mediated transport of large procollagen cargo from endoplasmic reticulum exit sites (ERES). The paper addresses a very exciting topic since the mechanisms of cellular transport of large cargo are still poorly understood. The central hypothesis of the paper is that TANGO1 binds to the boundary of a growing COPII bud, where it (a) acts as linactant and modulates COPII assembly; (b) tethers ERGIC53-containing membranes that subsequently fuse with ERES and promote the growth of the transport carrier; (c) binds to procollagen in ER lumen and directs it into the carrier. The analysis presented in the paper comprises two distinct theoretical models:\n\nA) within the first model, the transport carrier shape is approximated by a string of spherical pearls and parametrized by a shape parameter eta. The equilibrium configuration of the carrier is determined by analytical minimization of the system's free energy in a quasi-static approximation.\n\nB) the second model is a dynamic computational model, where the shape of the transport carrier is constrained only by axial symmetry, and the time-evolution of the carrier configuration is determined by using Onsager's variational approach applied to a membrane with freely diffusing and interacting COPII and TANGO1 proteins. The solution is calculated numerically.\n\nIf compared to previous submissions, the paper has been, without any doubt, substantially improved. However, as the topic is complex, it is no surprise that there are still some open questions.\n\n1) The paper could be more clear on why TANGO1 has to act as a linactant stabilizing a growing COPII coat. Is it because the linactant effect is needed to slow down the growing COPII bud and thus give the time that is needed to recruit procollagen? If so, this should be additionally emphasized in the paper and corroborated by the model results. As it stands now, model A focuses mostly on the quasi-equilibrium shapes of the carrier and not on kinetics (the kinetics of the growth is described only briefly in L706-L733). Within equilibrium mechanics \"stabilizing\" can have a slightly different meaning than \"slowing down\". Consequently, the reader could wonder if the linactant effect is needed at all? The role of TANGO1 could as well be just to recruit the procollagen. The carrier would grow by itself, driven by COPII polymerization (see also point 2). In this regime, the closure of COPII bud would be prevented simply by the presence of procollagen on the luminal side, as described in model B. Why is this option not possible? Within the same lines: are the authors aware of any data on the kinetics of procollagen recruitment?\n\n2) The region in the parameter space, where the proposed model can describe the transport carrier growth, is relatively small, i.e., having other parameters fixed, it spans approximately within 0.026 kT/nm2 < muc0 < 0.032 kT/nm2 and 0.001 < \u03c3 < 0.003 kT/nm2 (Figure 4A). This raises concerns that the proposed mechanism is not very robust, e.g., if one parameter from the Table 1 changes for ~10% the proposed mechanism could break down completely. E.g. if muc0 is 0.034, the carrier could grow spontaneously, without the need for a linactant effect or tension regulation. I would encourage the authors to discuss this aspect of their model.\n\n3) While the analysis carried out with model B (dynamic computational model) is very comprehensive and sophisticated (kudos to its authors!), it is not clear if it can be applied to TANGO1/COPII transport carrier growth as presented in this paper. How to compare the results of both models presented? Namely, while the first model assumes that the whole carrier is covered with COPII, and that COPII coat is surrounded by a TANGO1 ring, the second model in intrinsically continuous and its results do not show any phase separation (or capping/no-capping transitions). Also, it is not clear how to compare the (values of) parameters muc0 and chic, which are not defined in the same way. Even if these parameters were conceptually similar, can one be sure that the model B is being solved in the same parameter region as Model A (as we saw earlier, model A is very sensitive to the values of muc0)? Unsurprisingly, Tozzi, Walani and Arroyo, 2019, show growth of protrusions that are very similar to the ones presented in Figure 7D, but with only one protein species and different parameter values. In addition, the time scales within both models are quite different, Model A assumes average budding transition times in the region of 0.1 min, while Model B shows that this time can be less than 100 ms.\n\nReviewer #2:\n\nThe authors present a theoretical study of how TANGO1 protein controls the transport of large cargo (procollagen) from the endoplasmic reticulum exit sites (ERES) to the Golgi apparatus. This is an interesting problem and has been dealt with experimentally from various angles by the authors (several published in eLife). This work builds on the 2018 eLife paper that revealed how TANGO1 organizes to corral COPII coats, and recruits ERGIC (ER-Golgi intermediate compartment) membranes for procollagen export. Here the authors develop an analytical model that considers COPII assembly into a spherical shell on the membrane and TANGO1 polymerization into a filament that caps the COPII lattice. They then study how various physical parameters (TANGO1 self-interaction, COPII self-interaction, TANGO-COPII interaction, membrane tension, external force) influence the resulting equilibrium membrane shape. In the end they discuss the dynamic growth of the protrusion.\n\nThe problem is interesting, and the Abstract seems exciting, however, in my opinion the data presented fails to support the main claims of the paper.\n\nMain concerns:\n\ni) The first claim by the authors is that by capping the COPII lattice TANGO1 prevents premature carrier scission and enables packing the bulky cargo into the carrier. This claim is repeated many times throughout the paper, without any data to support it, since the model does not consider carrier scission or cargo loading. This claim appears mainly speculative.\n\nThe authors do indeed show that TANGO1 capping stabilizes incomplete buds, but they do not show the relationship between this stabilization and cargo-loading or carrier scission. In fact, in their dynamic model they prevent carrier scission \"by hand\", by not allowing radii below certain size. They also do not present any experimental evidence that the procollagen transport is necessarily carried by incomplete buds or pearled tubes.\n\nHence the result that the capping stabilizes incomplete buds can also be interpreted in other ways, for instance as inhibitory to the carrier growth since the capping imposes a free energy barrier for the growth (Figure 2). In summary: there is no evidence in the paper that the capping indeed enables packing the bulky cargo.\n\nii) Related to the previous comment, the main assumption of the paper is that the procollagen transport is facilitated by incomplete COPII buds. However, the authors do not really present any evidence for that. For instance, if the carrier has a spherocylindrical shape (which has been reported for COPII in vitro) the whole conclusions on the role of capping would be different.\n\niii) The second main claim of the paper is that TANGO1 enables the carrier growth by reducing the membrane tension, by recruiting ERGIC. The authors model this effect \"by hand\", by decreasing the tension in their model and showing that the free energy minimum is shifted to long carrier shapes. In their dynamic model they impose sudden decrease and increase in tension and show that this enables and prevents the carrier growth, respectively. This result is nice, but not unexpected. The authors also do not really show that TANGO1 enables the carrier growth, but rather that the decrease of the membrane tension enables it, be it mediated by TANGO1 or otherwise. The role of membrane tension on the protrusion growth has been studied extensively before (see eg the body of work by Nassoy and Bassereau, for instance EPL 2005), and agrees with the findings presented here. In that sense the physical result that the decrease in the membrane tension enables the protrusion growth is not novel, although it has been put in a context of a different system.\n\niv) The paper feels unnecessarily long and repetitive, where the same claims are repeated many times.\n\nOverall, this is a nice exploratory paper that makes bold claims that appear not to be supported by data, it is my impression that the authors somewhat try to fit the results into a preconceived mechanism of how TANGO1 enables procollagen transport, as opposed to the mechanism arising from their data. The physical result that the decrease in the membrane tension enables protrusion growth is not surprising (or novel). In my opinion the work does not present a substantial development with respect to the 2018 eLife paper by the same authors.\n\nReviewer #3:\n\nIn this manuscript, the authors develop a theoretical model to analyse a scenario for the formation of large membrane carrier able to export procollagen fibres from ERES. COPII coat components polymerise into a spherical cap, which is prevented from maturation and budding by TANGO1 proteins assembling into a ring at the coat edge. TANGO1 also promotes the fusion of ERGIC vesicles which lower membrane tension locally and allow for the longer COPII-covered carriers able to incorporate procollagen.\n\nI appreciate some aspect of the model, primarily the analysis of the self-organisation of two types of membrane proteins into non-trivial structure. The fairly thorough study of the different possible range of behaviour, including a careful account of the relevance of different parameters, is valuable.\n\nOn the other hand, other aspects of the manuscript seem dubious to me and rely on what I believe to be incompatible assumptions. This is true for the tension regulation aspect, which is unfortunately a point that is strongly emphasise in the manuscript. Another weak point is the way the interaction with the procollagen fibres is treated.\n\nAnother problem I have with the manuscript is the constant mixing between rigorous results obtained from the model and speculations which are not supported by the model. Therefore, I think that this paper present interesting results regarding the self-organisation of coatomers and ring-forming proteins, which are certainly relevant for the situation under study, but that it requires important rewriting to put the result in their proper context and to separate facts from conjectures.\n\n1) The deformation of membrane by aggregation of proteins inducing membrane curvature has been studied in great details, and the role of the different physical parameters in the process, including membrane tension, is well documented. The originality of the present model is the involvement of a second class of proteins that stabilise the coat (e.g. disfavor the formation of a full spherical coat) due to attractive interaction with coat proteins AND the fact that these proteins tend to form semi-flexible filaments. The problem is treated at thermodynamic equilibrium, through energy minimisation. As such, it assumes ergodicity; that the entire space of configuration can be explored, and cannot investigate situations where the system is kinetically trapped into a particular state. This limitation is insufficiently discuss in the text, especially in the Introduction. Furthermore, the possibility for kinetic trapping is often explicitly mentioned without a word of caution, which could confused an uninformed reader that this possibility is accounted for by the model. It is not, and this must be stated explicitly.\n\n2) Thermodynamic equilibrium implies that proteins in the coat and in the ring can freely exchange with a reservoir, or that the time scales associated with this exchange are much faster than other time scales, such as the one for tension variation. The chemical potential of COPII monomer is assumed fixed, regardless of the coat size. This means that there exists a reservoir of monomer at fixed chemical potential with which the coat can freely exchange component. I see two possibilities. The reservoir is the flat membrane, which is itself in equilibrium with coat component in the cytosol, or the reservoir is the cytosol itself, which requires that coat component bind directly from the cytosol onto the growing coat. The chemical potential \\muc is said to include binding energy, without specifying if it is the binding of one monomer to the membrane or the binding between two monomers. I assume it is the latter which suggests that the reservoir is indeed the rest of the membrane. This makes sense to me, but it should be clearly discussed, including the fact that this model only makes sense if coatomers can be freely exchange between the growing coat and the rest of the membrane. By the way, the binding energy \\muc0 is expressed as an energy per unit area. This is not optimal. It should be expressed as an energy, so it can be compared with the thermal energy kT.\n\n3) The equilibrium treatment becomes particularly problematic when the situation involves diffusion barrier, which is the main argument put forward by the author in support of their claim that TANGO1 is a regulator of membrane tension, allowing to the elongation of membrane carrier. For this two happen, at least three conditions must be satisfied: i) lipids must be prevented from diffusing across the TANGO1 ring, ii) ERGIC vesicles must be allowed to fuse within the area delimited by the TANGO1 ring, and iii) coatomers must be able to freely exchange with their reservoir, i.e. to cross the diffusion barrier. It seems rather unlikely that condition 1 is strictly satisfied. the TANGO1 ring could slow down lipid diffusion, but probably not abolish it. This is indeed the conclusion of Raote et al., 2020, so the question of tension regulation becomes a competition between time scales; the time scale of tension equilibration vs. the time scale of coat formation. It is not discussed as such but it should.\n\nThere is an even bigger problem. There is a clear conflict between conditions (i) and (iii). It is not reasonable to claim that lipids are trapped but not coatomers. Furthermore, the fusion of ERGIC vesicles, even if one assumes that it occurs inside the TANGO1 ring, which seems very unlikely considering that this part of the membrane is crowded with COPII presumptuous, would locally and transiently reduce tension because membrane area of a completely different composition than the initial coat would be added to the region inside the ring. None of this is discussed. Probably because it is a difficult problem, but the way it is handled here is not at all satisfactory. The bottom line is that the claim of tension regulation is presumptuous and not acceptable in the current form.\n\n4) As far as I can see, procollagen is entirely absent from the model equations. Nevertheless it is present in the Discussion in mostly two ways; as a way to sterically hinder neck closure or as responsible for a normal force that helps elongate the membrane carrier. The first aspect is entirely conjectural and is not included in any way in the model. It should be presented as such in the Discussion. The second is somewhat introduced phenomenologically in the model, but is not properly discussed. For polymerising procollagen fibres to push on the coat, it would need to exert an opposite force on something else. What would that be? The ER membrane opposite to the ERES presumably, but expect if the fiber is perfectly perpendicular to that membrane, the force would also result in a torque that would made the fibre tilt. It is said repeatedly in the text that this force is dispensable, but we are still lacking an argument to explain how the fibre would properly orientate along the carrier axis of symmetry to be properly incorporated. Since this is a model for how to build membrane carrier for bulky cargo, the interaction between the cargo and the carrier must be discussed more thoroughly.\n\n5) Regarding the energy minimisation procedure. It is unclear why all energies are expressed in unit of Ap (Equations.1-4 etc\u2026). Ap is the projected area of the carrier, which changes non-linearly with the number of coatomers as the coat grows. It is unclear to me why this area is important, except if one wishes to discuss steric interaction between buds. I would think that the proper thing to do is to compare the energy per coatomer for different coat geometry, rather than to minimise the energy divided by Ac. As such, I don't think that the minimisation procedure is correct. For instance, looking at Figure 2B, we can see that the \"free\" energy of the double bud is smaller than that of the single bud so that the former is said to be \"globally stable\". What should be compared is the chemical potential (energy per COPII monomer) is both situations, which could very well favour single buds for the parameters of Figure 1B, in particular due to the favorable interaction between TANGO1 and COPII monomers.\n\nRelated to this, I could not figure out what is the difference between Am and Ac. Ac is supposed to be the coat area and Am the membrane area, but in this simplified geometry using spherical caps, I imagine that the entire curved part of the membrane is covered by coat, so why is Am not equal to Ac?\n\n6) TANGO1 is repeatedly described as a linactant, but it is not clear that the stabilisation of incomplete buds is due to the linactant effect. The TANGO1 ring is rigid and its caping of the coat edges involve an elastic energy penalty. Isn't this the dominant effect of coat stabilisation, rather than the linactant effect?\n\n7) The section proposal of experimental approaches to test the model is not very useful. It does not really provide experimental test of the model based on the quantitative findings of the model. The section .\u2026\u201c TANGO1 as a regulator of membrane tension homeostasis\u201d in largely speculative and not supported by the model. It is rather presents hypothesis that are a starting point of the model, several of which are dubious (in particular the fact that tension is reduced while membrane composition is not changed, as discussed above). It should be presented as speculation.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"A physical mechanism of TANGO1-mediated bulky cargo export\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Suzanne Pfeffer as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nSummary:\n\nThe paper entitled \"A physical mechanism of TANGO1-mediated bulky cargo export\" by Raote et al. has been re-submitted to eLife as a research advance to their prior research paper entitled \"TANGO1 builds a machine for collagen export by recruiting and spatially organizing COPII, tethers and membranes\" (Raote et al., 2018).\n\nThe paper addresses cellular transport of large cargo from endoplasmic reticulum exit sites (ERES), which is a very important open question in cell biology. Based on their previous experimental paper (Raote et al., 2018), the authors put forward a hypothesis that TANGO1 binds to the boundary of a growing COPII bud in the ERES, where it (a) acts as linactant and modulates COPII assembly; (b) tethers ERGIC53-containing membranes that subsequently fuse with ERES, decreases the ERES membrane tension and thus promote the growth of the transport carrier; (c) binds to procollagen in the ER lumen and directs it into the carrier. The present paper introduces an elaborate and interesting theoretical analysis showing that the TANGO1 hypothesis is compatible with the current understanding of physical mechanisms that guide membrane remodeling. Thus, the results present an essential and invaluable step towards a thorough understanding of cellular trafficking of large cargo.\n\nThe reviewers agree that the paper is suitable for publication in eLife after the authors address the following two concerns:\n\n1) The narrative of the paper has been much improved and the complex modeling is now presented clearly and concisely. However, the reviewers judge that the link between the modeling and the biological situation remains rather speculative. The reviewers therefore suggest that the authors add a paragraph of open and honest discussion on the speculative link between the model and biology.\n\n2) The authors should address the inconsistent use of high / low tension values in the two models. (0.006 / 0.003 kBT/nm2 in the continuous model, and 0.003 / 0.0012 kBT/nm2 in the equilibrium model).\n",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0e8621c6-efbc-4e00-84d4-96e5b6a0941b",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C1",
+      "claim": "TANGO1 assembles into a ring around ER exit sites (ERES).",
+      "claim_type": "EXPLICIT",
+      "source": "The endoplasmic reticulum (ER)-resident protein TANGO1 assembles into a ring around ER exit sites (ERES), and links procollagens in the ER lumen to COPII machinery, tethers, and ER-Golgi intermediate compartment (ERGIC) in the cytoplasm (Raote et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Raote et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "525849f1-4d7c-4f79-be99-fb53ea8c3c50",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C2",
+      "claim": "TANGO1 links procollagens in the ER lumen to COPII machinery, tethers, and ERGIC in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The endoplasmic reticulum (ER)-resident protein TANGO1 assembles into a ring around ER exit sites (ERES), and links procollagens in the ER lumen to COPII machinery, tethers, and ER-Golgi intermediate compartment (ERGIC) in the cytoplasm (Raote et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Raote et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "a0a4979f-0812-4351-a90c-7602b4689ced",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C3",
+      "claim": "A TANGO1 ring, by acting as a linactant, stabilizes the open neck of a nascent COPII bud.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that a TANGO1 ring, by acting as a linactant, stabilizes the open neck of a nascent COPII bud.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the theoretical modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "1ab50021-2802-4e37-806b-0411f82ed24b",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C4",
+      "claim": "Elongation of a COPII bud into a transport intermediate commensurate with bulky procollagens is facilitated by relieving membrane tension, possibly by TANGO1-mediated fusion of retrograde ERGIC membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongation of such a bud into a transport intermediate commensurate with bulky procollagens is then facilitated by two complementary mechanisms: (i) by relieving membrane tension, possibly by TANGO1-mediated fusion of retrograde ERGIC membranes and (ii) by force application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical modeling results and speculative reasoning about ERGIC membrane fusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "562affb1-eaf4-4fa4-9749-7a13563e3f53",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C5",
+      "claim": "Elongation of a COPII bud into a transport intermediate commensurate with bulky procollagens is facilitated by force application.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongation of such a bud into a transport intermediate commensurate with bulky procollagens is then facilitated by two complementary mechanisms: (i) by relieving membrane tension, possibly by TANGO1-mediated fusion of retrograde ERGIC membranes and (ii) by force application.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical modeling results and speculative reasoning about force generation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "c63541d9-272c-4b5c-b083-77cd4622f685",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C6",
+      "claim": "Collagens form the extracellular matrix (ECM).",
+      "claim_type": "EXPLICIT",
+      "source": "Multicellularity requires not only the secretion of signaling proteins \u2013such as neurotransmitters, cytokines, and hormones\u2013 to regulate cell-to-cell communication, but also of biomechanical matrices composed primarily of proteins such as collagens, which form the extracellular matrix (ECM) (Kadler et al., 2007; Mouw et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Kadler et al., 2007 and Mouw et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "f87f828d-7f5b-4b36-8545-b4e14605e369",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C7",
+      "claim": "Extracellular assemblies of collagens are necessary for tissue biogenesis and maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "These extracellular assemblies of collagens are necessary for tissue biogenesis and maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about collagen function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "e65f83d2-4c1a-4c35-b8f6-396c6f258a7c",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C8",
+      "claim": "Procollagens fold and trimerize into a characteristic triple-helical, rigid structure.",
+      "claim_type": "EXPLICIT",
+      "source": "After their glycosylation, procollagens fold and trimerize into a characteristic triple-helical, rigid structure, which, depending on the isoform, may extend several hundred nm in length (McCaughey and Stephens, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to McCaughey and Stephens, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "165d4570-e783-4262-90ed-39fce56bd6f9",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C9",
+      "claim": "Procollagen triple-helical structures may extend several hundred nm in length depending on the isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "After their glycosylation, procollagens fold and trimerize into a characteristic triple-helical, rigid structure, which, depending on the isoform, may extend several hundred nm in length (McCaughey and Stephens, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to McCaughey and Stephens, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "877796d8-6980-4538-8c7c-632430b2dd32",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C10",
+      "claim": "Bulky procollagens are exported from the ER at specialized export domains termed ER exit sites (ERES) in a COPII-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These bulky procollagens are then exported from the ER at specialized export domains, termed ER exit sites (ERES), in a COPII-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about procollagen export.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "801f0c33-9735-43d2-91e5-e216e622d407",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C11",
+      "claim": "Polymerized coats such as COPI, COPII, and clathrin coats usually adopt spherical shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymerized coats, such as COPI, COPII, and clathrin coats, usually adopt spherical shapes \u2013which bend the membrane underneath to form small vesicles of ~60\u201390 nm in diameter (Faini et al., 2013), although helical arrangements of COPII coats have been observed (Zanetti et al., 2013; Ma and Goldberg, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Faini et al., 2013, Zanetti et al., 2013, and Ma and Goldberg, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "e67e82d0-2245-4726-ab92-0bd495b2a6c5",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C12",
+      "claim": "Polymerized coats bend the membrane underneath to form small vesicles of ~60\u201390 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymerized coats, such as COPI, COPII, and clathrin coats, usually adopt spherical shapes \u2013which bend the membrane underneath to form small vesicles of ~60\u201390 nm in diameter (Faini et al., 2013), although helical arrangements of COPII coats have been observed (Zanetti et al., 2013; Ma and Goldberg, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Faini et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "d547cdb8-7c1c-4846-be2c-08521901b930",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C13",
+      "claim": "Helical arrangements of COPII coats have been observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymerized coats, such as COPI, COPII, and clathrin coats, usually adopt spherical shapes \u2013which bend the membrane underneath to form small vesicles of ~60\u201390 nm in diameter (Faini et al., 2013), although helical arrangements of COPII coats have been observed (Zanetti et al., 2013; Ma and Goldberg, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Zanetti et al., 2013 and Ma and Goldberg, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "84c0b03c-6c8e-4be2-ab02-8f4e9c5636a0",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C14",
+      "claim": "Membrane bending by coats is promoted when the energy gain of coat polymerization is larger than the elastic energy of membrane deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane bending by coats is promoted when the energy gain of coat polymerization is larger than the elastic energy of membrane deformation (Derganc et al., 2013; Scheve et al., 2013; Kozlov et al., 2014; Saleem et al., 2015; Day and Stachowiak, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies on membrane mechanics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "702f6416-19df-43f2-b93f-5c7bc37c0ff4",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C15",
+      "claim": "The SH3-like domain of TANGO1 binds procollagen via HSP47 in the lumen of the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lumen of the ER, the SH3-like domain of TANGO1 binds procollagen via HSP47 (Saito et al., 2009; Ishikawa et al., 2016; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Saito et al., 2009 and Ishikawa et al., 2016, and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "8856360b-47ff-4667-85ea-77942ed0a31d",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C16",
+      "claim": "The PRD of TANGO1 interacts with the COPII components Sec23A and Sec16.",
+      "claim_type": "EXPLICIT",
+      "source": "The PRD of TANGO1 interacts with the COPII components Sec23A and Sec16 (Saito et al., 2009; Ma and Goldberg, 2016; Maeda et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Saito et al., 2009, Ma and Goldberg, 2016, and Maeda et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "7e70298c-4c98-4847-8241-aaa1f2afbd2a",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C17",
+      "claim": "The CC1 domain of TANGO1 binds the NBAS/RINT1/ZW10 (NRZ) tethering complex to recruit ERGIC membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "the CC1 domain binds the NBAS/RINT1/ZW10 (NRZ) tethering complex to recruit ER-Golgi intermediate compartment (ERGIC) membranes and also drives self-association amongst TANGO1 proteins (Santos et al., 2015; Raote et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Santos et al., 2015 and Raote et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "a788cf3d-3c5c-48f8-8fc8-2ccc51547460",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C18",
+      "claim": "The CC1 domain of TANGO1 drives self-association amongst TANGO1 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "the CC1 domain binds the NBAS/RINT1/ZW10 (NRZ) tethering complex to recruit ER-Golgi intermediate compartment (ERGIC) membranes and also drives self-association amongst TANGO1 proteins (Santos et al., 2015; Raote et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Santos et al., 2015 and Raote et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "1837b237-f2c7-454e-97fa-38cee96509d6",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C19",
+      "claim": "The CC2 domain of TANGO1 oligomerizes with proteins of the TANGO1 family such as cTAGE5.",
+      "claim_type": "EXPLICIT",
+      "source": "and the CC2 domain oligomerizes with proteins of the TANGO1 family (such as cTAGE5) (Saito et al., 2011; Maeda et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Saito et al., 2011 and Maeda et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "451c675a-1096-42ee-b281-6a5b2acf5eef",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C20",
+      "claim": "A disease-causing mutation in TANGO1 in a human family results in a substantial fraction of TANGO1 protein being truncated and lacking its cytosolic functions, leading to collagen export defects.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a recent report identified a disease-causing mutation in TANGO1 in a human family, which results in a substantial fraction of TANGO1 protein being truncated and lacking its cytosolic functions, leading to collagen export defects (Lekszas et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Lekszas et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "1792ae87-b874-41af-b083-7fb3605a3cbf",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C21",
+      "claim": "TANGO1 organizes at the ERES into ring-like structures of ~200 nm in lumenal diameter that corral COPII components.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies revealed that TANGO1 organizes at the ERES into ring-like structures, of ~200 nm in lumenal diameter, that corral COPII components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on STED nanoscopy studies referenced in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "58112db1-1c40-48d1-ac64-53326c0a7c15",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C22",
+      "claim": "TANGO1 rings are present in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, two independent studies showed that TANGO1 rings are also present in Drosophila melanogaster (Liu et al., 2017; Reynolds et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Liu et al., 2017 and Reynolds et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "646359f4-427a-4c50-b58b-45c2b8ad3273",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C23",
+      "claim": "TANGO1 rings are organized by lateral self-interactions amongst TANGO1-like proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "we combined STED nanoscopy with genetic manipulations and established that TANGO1 rings are organized by (i) lateral self-interactions amongst TANGO1-like proteins, (ii) radial interactions with COPII subunits, and (iii) tethering of small ER-Golgi intermediate compartment (ERGIC) vesicles to assist in the formation of a procollagen-containing export intermediate (Raote et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Raote et al., 2018 and experimental data from STED nanoscopy.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "717c2a9b-e18d-498d-bb11-016b65cd6b56",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C24",
+      "claim": "TANGO1 rings are organized by radial interactions with COPII subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "we combined STED nanoscopy with genetic manipulations and established that TANGO1 rings are organized by (i) lateral self-interactions amongst TANGO1-like proteins, (ii) radial interactions with COPII subunits, and (iii) tethering of small ER-Golgi intermediate compartment (ERGIC) vesicles to assist in the formation of a procollagen-containing export intermediate (Raote et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Raote et al., 2018 and experimental data from STED nanoscopy.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "ce33af2d-f92d-4f72-9c69-cf927afeccc3",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C25",
+      "claim": "TANGO1 rings are organized by tethering of small ERGIC vesicles to assist in the formation of a procollagen-containing export intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "we combined STED nanoscopy with genetic manipulations and established that TANGO1 rings are organized by (i) lateral self-interactions amongst TANGO1-like proteins, (ii) radial interactions with COPII subunits, and (iii) tethering of small ER-Golgi intermediate compartment (ERGIC) vesicles to assist in the formation of a procollagen-containing export intermediate (Raote et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Raote et al., 2018 and experimental data from STED nanoscopy.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "2db751b4-89d4-495f-8017-b868165aaad3",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C26",
+      "claim": "TANGO1 family of proteins can be effectively described as a single species for modeling purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the complexity of the system and the lack of quantitative biochemical data regarding the interactions amongst the different TANGO1 and COPII components, we assume for our modeling purposes that the TANGO1 family of proteins (TANGO1, cTAGE5 and TANGO1-Short) can be effectively described as a single species, to which we will simply refer as TANGO1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling assumption stated explicitly in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "1cc00a98-4c6c-47df-b191-52c7bf24be33",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C27",
+      "claim": "COPII subunits polymerize on the ER membrane forming a coat of specific curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothesis 2: COPII subunits polymerize on the ER membrane forming a coat of specific curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental hypothesis of the model, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "3c29bbe6-5c07-4d60-8a77-4f75d5cb568d",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C28",
+      "claim": "COPII coat assembly typically results in spherical carriers of 60\u201390 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymerization of COPII subunits into spherical lattices induces curvature on the underlying membrane, typically resulting in spherical carriers of 60\u201390 nm (Faini et al., 2013; Aridor, 2018; Peotter et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Faini et al., 2013, Aridor, 2018, and Peotter et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "d8be7af2-b4ce-4f16-900b-d1db73b017a2",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C29",
+      "claim": "TANGO1 molecules have a propensity to assemble into rings as a result of protein-protein interactions between TANGO1-family proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothesis 3: TANGO1 molecules have a propensity to assemble into rings as a result of protein-protein interactions between TANGO1-family proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental hypothesis of the model, supported by multiple experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "be9e3430-d2cd-46fc-a338-adf9647eb31c",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C30",
+      "claim": "There is a direct 1:1 binding between TANGO1 and cTAGE5 CC2 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is based on the observations that: (i) TANGO1 is seen in ring-like filamentous assemblies of specific size by STED nanoscopy (Raote et al., 2017; Roux, 2018); (ii) there is a direct 1:1 binding between TANGO1 and cTAGE5 CC2 domains (Saito et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Saito et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "859e09a3-2a8a-40b8-987c-a98c925633ee",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C31",
+      "claim": "TANGO1-Short and cTAGE5 can form oligomers and oligomeric complexes together with Sec12 and TANGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) TANGO1-Short and cTAGE5 can form oligomers and oligomeric complexes together with Sec12 and TANGO1 (Maeda et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Maeda et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "d965ce59-d2b5-4313-8245-b0f35dfb2f50",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C32",
+      "claim": "TANGO1 and TANGO1-Short can directly homo-dimerize by their CC1 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "(iv) TANGO1 and TANGO1-Short can directly homo-dimerize by their CC1 domains (Raote et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Raote et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "f011d4bd-a7c2-4898-a9ad-2d744a0b41d9",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C33",
+      "claim": "TANGO1 has a binding affinity to the peripheral COPII coat subunits, helping stabilize the COPII domain boundary by effectively reducing its line energy.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypothesis 4: TANGO1 has a binding affinity to the peripheral COPII coat subunits, helping stabilize the COPII domain boundary by effectively reducing its line energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental hypothesis of the model, supported by experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "6fc8fbb5-a9c1-4a8c-9009-7f2ffc57dd0e",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C34",
+      "claim": "TANGO1 acts as a linactant by filling unsatisfied binding sites of the COPII coat edges and therefore effectively lowering its line tension.",
+      "claim_type": "EXPLICIT",
+      "source": "In physical terms, this hypothesis is equivalent to state that TANGO1 acts as a linactant by filling unsatisfied binding sites of the COPII coat edges and therefore effectively lowering its line tension (Figure 1B; Trabelsi et al., 2008, Saleem et al., 2015; Glick, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on physical interpretation of the model, supported by citations and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "798df72b-62ef-451c-96fc-77c1c7bf1e90",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C35",
+      "claim": "Functional TANGO1 drastically modifies the dynamics and outcome of bud formation compared to inert TANGO1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, functional TANGO1 drastically modifies the dynamics and outcome of bud formation (see Figure 2B and Figure 2\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on computational modeling results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "52bf8c94-3a60-4f0a-b201-9f9f0e4d6613",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C36",
+      "claim": "Functional TANGO1 shortens the nucleation stage of COPII coat formation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the nucleation stage is shortened, suggesting that TANGO1 can facilitate the nucleation of the COPII coat in the presence of a small force perturbation at the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "17a8fe81-0f26-4372-a843-e59b6dbdc253",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C37",
+      "claim": "Functional TANGO1 stabilizes COPII buds into shallow, incomplete transport intermediates with shape parameter around \u03b7\u22430.8.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, instead of growing to the point where the neck closes, we find that the shape parameter reaches a maximum around \u03b7\u22430.9, before slightly decreasing to a stable height around \u03b7\u22430.8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "1f8f24ec-e65a-44c8-91dc-7a6df39b8910",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C38",
+      "claim": "TANGO1 self-assembles into a high-density ring-like structure around the COPII coat that stabilizes the bud into a shallow, incomplete transport intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen from the corresponding snapshots (Figure 2B(i\u2013iii)), this dynamic evolution is accompanied by the self-assembly of a high-density TANGO1 ring-like structure around the COPII coat that stabilizes the bud into a shallow, incomplete transport intermediate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on computational modeling results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "fc4bb9ca-d916-4f51-830f-06861e9b2dcc",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C39",
+      "claim": "Simulation results of TANGO1 rings encircling COPII components are in agreement with experimental observations of TANGO1 rings in procollagen-rich membrane patches.",
+      "claim_type": "EXPLICIT",
+      "source": "These simulation results are in agreement with experimental observations of TANGO1 rings encircling COPII components in procollagen-rich membrane patches (Raote et al., 2017; Raote et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares modeling results with experimental data from cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "aacfcc1f-5e24-4252-9b76-ad8ad290806e",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C40",
+      "claim": "ERGIC53-containing vesicles are recruited to the ERES by TANGO1 via tethering complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such scenario is motivated by our previous experimental data showing that (i) ERGIC53-containing vesicles are recruited to the ERES by TANGO1 via tethering complexes (Nogueira et al., 2014; Santos et al., 2015; Raote et al., 2018), presumably enabling their fusion to the ER membrane",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Nogueira et al., 2014, Santos et al., 2015, and Raote et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "988c808a-a4c5-4a27-9832-2cd124f1b956",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C41",
+      "claim": "Cells depleted of the tethering factors recruited by TANGO1 to ERES showed a reduction of ~70\u201380% in collagen secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) cells depleted of the tethering factors recruited by TANGO1 to ERES showed a reduction of ~70\u201380% in collagen secretion (Raote et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Raote et al., 2018 and experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "c5ad33ab-7ae3-445b-9fee-4a19f71b7e2f",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C43",
+      "claim": "The '2-pearl' shape of the transport intermediate corresponds to a height of about 300 nm, a typical length of trimerized procollagen I molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the '2-pearl' shape corresponds to a height of about 300 nm, a typical length of trimerized procollagen I molecules (McCaughey and Stephens, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares modeling results with known procollagen dimensions from McCaughey and Stephens, 2019.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "6a558484-c5ce-4986-882d-e263caff1f35",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C44",
+      "claim": "TANGO1 self-organizes around COPII coats and stabilizes shallow buds at physiological membrane tensions.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our computational results support the scenario by which TANGO1 self-organizes around COPII coats and stabilizes shallow buds at physiological membrane tensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "087a1779-7bee-43cf-a22b-65358f889100",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C45",
+      "claim": "The stability of shallow buds might facilitate procollagen recruitment and packaging by TANGO1 as well as the recruitment of ERGIC membranes to the ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "The stability of shallow buds might facilitate procollagen recruitment and packaging by TANGO1 as well as the recruitment of ERGIC membranes to the ERES.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "0a8d9e68-c25d-478f-a1f2-7dc4b530472f",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C46",
+      "claim": "Procollagen located at the neck of the growing carrier acts as a means to sterically prevent carrier scission.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that procollagen located at the neck of the growing carrier acts as a means to sterically prevent carrier scission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative suggestion based on modeling considerations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "10b33cce-2e47-4234-8fcf-67b7d31e451c",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C47",
+      "claim": "At low membrane tension, the growth of the metastable bud can be triggered by a small perturbation such as thermal fluctuations or a mechanical perturbation in the system.",
+      "claim_type": "EXPLICIT",
+      "source": "At low membrane tension, the growth of the metastable bud can be triggered by a small perturbation \u2013 such as thermal fluctuations or a mechanical perturbation in the system \u2013 and might be facilitated by transient uncapping (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analytical modeling results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "388fa827-2b30-4b9a-a298-604334b80244",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C48",
+      "claim": "The tension-mediated growth of large transport intermediates is effectively a ratchet-like mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the tension-mediated growth of large transport intermediates is effectively a ratchet-like mechanism, where the difference between the energy barriers guarantees an almost unidirectional evolution of the system leading to the transport intermediate growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analytical modeling results and physical interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "f95f33b7-526d-4994-9c71-b9a45ceed047",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C49",
+      "claim": "TANGO1 expands the parameter space at which stable shallow buds are obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the presence of functional TANGO1 dramatically widens the parameter space at which stable shallow buds are obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of computational modeling results with and without functional TANGO1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "d6310fb5-3824-4c20-b880-1a9edd033f07",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C50",
+      "claim": "The capping-uncapping transition of COPII coat by TANGO1 plays an important role in determining the transition between equilibrium-budded states.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in Figures 4 and 5, the capping-uncapping transition of COPII coat by TANGO1 plays an important role in determining the transition between equilibrium-budded states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analytical modeling results shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "c6d467ac-4dcb-4150-a6db-4a930bb6ad06",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C51",
+      "claim": "Capping of COPII components by TANGO1 is promoted by large values of the TANGO1-COPII interaction and prevented by large TANGO1 filament bending rigidities.",
+      "claim_type": "EXPLICIT",
+      "source": "These analytical results highlight how capping of COPII components by TANGO1 is promoted by large values of the TANGO1-COPII interaction, \u0394\u03bb, and prevented by large TANGO1 filament bending rigidities, \u03baT (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analytical modeling results shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "5fd57872-afb8-46c2-a94b-225f27daa92e",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C52",
+      "claim": "TANGO1 capping significantly expands the regions where stable shallow buds are energetically favored.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we find once again that TANGO1 capping significantly expands the regions where stable shallow buds are energetically favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analytical modeling results from shape diagrams.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "70b9b802-9234-43c2-9943-e096a36d59fe",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C53",
+      "claim": "The presence of a TANGO1 ring capping COPII subunits induced the formation of shapes with larger neck radii.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the presence of a TANGO1 ring capping COPII subunits induced the formation of shapes with larger neck radii (Figure 6B,C, and Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analytical modeling results shown in Figure 6B,C and Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "18021272-fbaf-443f-9053-37340f98ea26",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C54",
+      "claim": "Having a point force shifts the capping-uncapping and transport intermediate growth transitions toward lower COPII binding energies and higher membrane tensions.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 7A,B, we found that having a point force shifts the capping-uncapping and transport intermediate growth transitions toward lower COPII binding energies and higher membrane tensions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analytical modeling results shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "9145c0cd-e120-497e-9a21-e0bd6d3771ad",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C56",
+      "claim": "The critical force of 1.4 pN is in the same order of magnitude of the force generated by molecular actin polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "which, for comparison, is in the same order of magnitude of the force generated by molecular actin polymerization (Footer et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the calculated force with known forces from Footer et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "0c59d397-940e-4e7a-b2e0-386ba842e3e5",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C57",
+      "claim": "The critical force of 1.4 pN is an order of magnitude smaller than typical force required to extract a membrane tethers.",
+      "claim_type": "EXPLICIT",
+      "source": "and an order of magnitude smaller than typical force required to extract a membrane tethers (Der\u00e9nyi et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim compares the calculated force with known forces from Der\u00e9nyi et al., 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "263334a3-82e4-4bef-9777-15c3f1a3a03d",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C58",
+      "claim": "The formation of large transport intermediates can be greatly facilitated in the presence of TANGO1 by forces of physiological ranges oriented toward the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results indicate that the formation of large transport intermediates can be greatly facilitated in the presence of TANGO1 by forces of physiological ranges oriented toward the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analytical modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "dd7c5d90-ef1d-4a08-9336-7107d666b048",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C59",
+      "claim": "The shape of the elongated carrier is a pearled tubule according to the dynamic model.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the results of our dynamic model show that the shape of the elongated carrier is a pearled tubule (Figure 3D and Figure 3\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on computational modeling results shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "1575fa1e-bdb6-462a-bd90-5da631a4dca0",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C60",
+      "claim": "The fission of the upstream pearls is prevented by a steric hindrance of the procollagen molecules packed inside the tubule.",
+      "claim_type": "EXPLICIT",
+      "source": "The fission of the upstream pearls is prevented in our model by a steric hindrance of the procollagen molecules packed inside the tubule (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on modeling assumptions illustrated in Figure 8E.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "eec0ad09-c2dd-4685-8ddf-851a24c7cff9",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C61",
+      "claim": "TANGO1 is indirectly required to prevent the fission of upstream necks because it is the receptor molecule that binds procollagen and packs it to facilitate its export.",
+      "claim_type": "EXPLICIT",
+      "source": "Since TANGO1 is the receptor molecule that binds procollagen and packs it to facilitate its export (Saito et al., 2009), TANGO1 is indirectly required to prevent the fission of upstream necks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the model and citation to Saito et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "474a2d20-c6b4-49a5-b248-b57cf4f04be7",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C62",
+      "claim": "The large transport intermediate is converted into a tunnel connecting ER to the ERGIC/early Golgi cisternae.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously proposed that the large transport intermediate is converted into a tunnel connecting ER to the ERGIC/early Golgi cisternae (Raote and Malhotra, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a previous proposal cited as Raote and Malhotra, 2019.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "d8ccf3c0-b312-4b42-b56e-aa0322366df4",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C63",
+      "claim": "The role of a TANGO1 ring would be to prevent lipid mixing between transiently connected organelles by acting as a diffusion barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "If so, an appealing possibility is that, at this stage, the role of a TANGO1 ring would be to prevent lipid mixing between these transiently connected organelles by acting as a diffusion barrier (Raote et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative possibility supported by citation to Raote et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "6d296e2f-3fe5-4a40-a5b5-6f73e7abc6de",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C64",
+      "claim": "Changes in membrane tension have been described to affect rates of exocytosis and endocytosis at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in membrane tension have been described to affect rates of exocytosis and endocytosis at the plasma membrane (Apodaca, 2002; Kosmalska et al., 2015; Wu et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Apodaca, 2002, Kosmalska et al., 2015, and Wu et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "6a7db85b-1026-4b93-b545-20cb0e17f1b2",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C65",
+      "claim": "A theoretical model has established a crucial role for membrane tension in modulating the budding of clathrin-coated vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a theoretical model has also established a crucial role for membrane tension in modulating the budding of clathrin-coated vesicles (Hassinger et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hassinger et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "8a129ae2-750a-4beb-967f-76edd1cdd252",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C66",
+      "claim": "Atlastin-mediated maintenance of ER membrane tension is required for the efficient mobility of cargo proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been recently proposed that Atlastin-mediated maintenance of ER membrane tension is required for the efficient mobility of cargo proteins (Niu et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Niu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "5c990a64-0059-4118-9b6e-c8d931bc55bc",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C67",
+      "claim": "The formation of intra-lumenal vesicles in endosomes is regulated by membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the formation of intra-lumenal vesicles in endosomes is also regulated by membrane tension (Mercier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mercier et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "764effa1-7176-4914-a8d4-73e6e5d606fc",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C68",
+      "claim": "Inter-organelle hubs such as a TANGO1-scaffolded ERES-ERGIC control the local tension homeostasis at specific membrane sub-domains and regulate the membrane flux between these organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that inter-organelle hubs, such as a TANGO1-scaffolded ERES-ERGIC, control the local tension homeostasis at specific membrane sub-domains and regulate the membrane flux between these organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a suggestion based on the modeling results and discussion.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "1250628d-9959-4dc3-a859-4efd8d7482c1",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C69",
+      "claim": "Procollagen export from the ER does not require the presence of an intact microtubule network.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that procollagen export from the ER does not require the presence of an intact microtubule network (McCaughey et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to McCaughey et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "ab89381c-6915-40db-83e7-c60bfa98fb9e",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C70",
+      "claim": "The ER-specific SNARE protein Syntaxin18 and the SNARE regulator SLY1 are required for procollagen export in a TANGO1-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the ER-specific SNARE protein Syntaxin18 and the SNARE regulator SLY1, both of which are involved in membrane fusion reactions at the ER, are also required for procollagen export in a TANGO1-dependent manner (Nogueira et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Nogueira et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "cfce00e1-2538-4460-b64c-cf8f35a366f0",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C71",
+      "claim": "Fusion of ERGIC membranes to the sites of procollagen export would lead to a local and transient reduction of the membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Fusion of ERGIC membranes to the sites of procollagen export would lead to a local and transient reduction of the membrane tension (Sens and Turner, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative proposal supported by citation to Sens and Turner, 2006.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "60d455d2-4ace-45c8-a05a-a881c236e1d7",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C72",
+      "claim": "TANGO1 would act as a regulator of membrane tension homeostasis to control procollagen export at the ERES.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, TANGO1 would act as a regulator of membrane tension homeostasis to control procollagen export at the ERES (Figure 8C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a speculative scenario proposed based on the modeling results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "866c495f-16f7-4b4a-ac09-95383ee91b98",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C73",
+      "claim": "ERGIC membranes fuse directly or adjacently to the growing transport intermediate to allow for membrane addition and tension release.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently proposed that ERGIC membranes fuse directly or adjacently to the growing transport intermediate to allow for membrane addition and tension release; and showed that compartment mixing can be arrested by the TANGO1 ring serving as a diffusion barrier (Raote et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a recent proposal cited as Raote et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "987d039d-7411-4c28-b2ff-d53a20e49c02",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C74",
+      "claim": "Compartment mixing can be arrested by the TANGO1 ring serving as a diffusion barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "We have recently proposed that ERGIC membranes fuse directly or adjacently to the growing transport intermediate to allow for membrane addition and tension release; and showed that compartment mixing can be arrested by the TANGO1 ring serving as a diffusion barrier (Raote et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Raote et al., 2020.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "90dcd528-3ca4-4baf-8625-37775a58d7e3",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C75",
+      "claim": "Mechanical equilibration of the membrane shape can be theoretically estimated to be of the order of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "First, mechanical equilibration of the membrane shape (\u03c4mech) can be theoretically estimated to be of the order of milliseconds (see e.g. Campelo et al., 2017; Sens and Rao, 2013), which is also in accordance to our own results from model A, where shape changes are found within few milliseconds (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on theoretical estimates from cited studies and modeling results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "97fd15ce-9bbb-41ac-9b1b-0eeb2051a2f4",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C77",
+      "claim": "Membrane shape equilibrates much faster than the recovery of the membrane tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Since \u03c4\u03c3\u226b\u03c4mech, membrane shape equilibrates much faster than the recovery of the membrane tension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of time scales from theoretical estimates and measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "9cd02a86-bc2e-401c-b577-758a88454334",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C78",
+      "claim": "TANGO1 can induce a diffusion barrier at the base of the growing bud.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our recent findings that TANGO1 can induce a diffusion barrier at the base of the growing bud (Raote et al., 2020), suggest that the dynamics of tension equilibration can be even slower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Raote et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "f9660f42-76c3-45d9-aa90-707c4101f8e0",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C79",
+      "claim": "HSP47 chaperone assists in folding and rigidifying procollagen.",
+      "claim_type": "EXPLICIT",
+      "source": "Because HSP47 chaperone assists in folding (and hence in rigidifying) procollagen",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about HSP47 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "403941cd-90f9-4d42-99e3-b1d3dcfbb8c9",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C80",
+      "claim": "The trimerization of procollagen occurs concomitantly to its export.",
+      "claim_type": "EXPLICIT",
+      "source": "it is tempting to speculate that the trimerization of procollagen occurs concomitantly to the its export",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "9d519753-84e4-4204-997a-4e122ff162e0",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C81",
+      "claim": "The physical interaction between TANGO1 rings and procollagen/HSP47 could serve as a means to couple procollagen folding to force production.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the physical interaction between TANGO1 rings and procollagen/HSP47 could serve as a means to couple procollagen folding to force production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative proposal.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "5ed04249-7f7c-4d90-893b-d0bf238f64a1",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C82",
+      "claim": "TANGO1 could act as a sensor of procollagen folding to couple it with the export machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the existence of this pushing force is largely speculative, it could, according to our model, promote formation of a large intermediate and hence TANGO1 could act as a sensor of procollagen folding to couple it with the export machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative proposal based on modeling results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "62d5b738-78e7-450e-8462-8cbb29d8faf2",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C83",
+      "claim": "Direct transport of procollagen between the ER and the Golgi complex by a short-loop pathway in the absence of large vesicles has been recently proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, direct transport of procollagen between the ER and the Golgi complex by a short-loop pathway in the absence of large vesicles has been recently proposed (McCaughey et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to McCaughey et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "70882e0e-ec35-4b91-9181-721b6eca7374",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C84",
+      "claim": "Fully folded procollagen required ~15 min to reach the early Golgi compartment in experiments where type I procollagen triple-helical stabilization and ER export were synchronized.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in experiments where type I procollagen triple-helical stabilization and ER export were synchronized, fully folded procollagen required ~15 min to reach the early Golgi compartment (McCaughey et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to McCaughey et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "8154790d-cb89-4ad7-94c0-36013256706c",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C85",
+      "claim": "The half-lives of COPII components on the ER membrane are of the order of a few seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the half-lives of COPII components on the ER membrane are of the order of a few seconds (Forster et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Forster et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "14c01c42-8b1c-4d9a-9bb0-2faa4671fe16",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C86",
+      "claim": "There is a mechanism in place to stabilize open nascent carriers to help fully pack complex cargoes.",
+      "claim_type": "EXPLICIT",
+      "source": "it seems likely that there is a mechanism in place to stabilize open nascent carriers, which helps to fully pack complex cargoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on comparison of time scales.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "569134fa-415e-488a-a673-9e9685b0d2c5",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "claim_id": "C87",
+      "claim": "TANGO1 rings arrest the growth of standard COPII carriers and stabilize open shallow buds for the efficient packaging of procollagens.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theoretical results (Figure 2) support the proposed mechanism by which TANGO1 rings arrest the growth of standard COPII carriers and stabilize open shallow buds for the efficient packaging of procollagens (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on theoretical modeling results shown in Figure 2 and illustrated in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TANGO1 acts as a linactant that stabilizes shallow, open COPII buds by capping the COPII coat edge and reducing line tension. Computational modeling (Model A) shows that functional TANGO1 shortens COPII nucleation, prevents neck closure, and stabilizes buds at shape parameter \u03b7\u22480.8, forming ring-like structures around COPII coats. Analytical modeling (Model B) confirms that TANGO1 capping expands the parameter space for stable shallow buds and increases neck radii. The capping-uncapping transition depends on TANGO1-COPII interaction strength and filament bending rigidity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C34-C39, C44, C49-C53, and C87 collectively demonstrate through both computational (Model A) and analytical (Model B) approaches that TANGO1 stabilizes shallow COPII buds via linactant activity. The models show consistent results regarding TANGO1 ring formation, bud stabilization, and the physical parameters controlling capping. The simulation results agree with experimental observations (C39), providing convergent evidence from theory and experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "95b36e9b-1729-4017-9c91-d8108ebc18f9",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Transient reduction of membrane tension, possibly mediated by TANGO1-directed fusion of ERGIC membranes, facilitates the growth of shallow buds into large transport intermediates through a ratchet-like mechanism. Analytical modeling shows that reducing membrane tension from ER (0.003 kBT/nm\u00b2) to Golgi (0.0012 kBT/nm\u00b2) levels lowers energy barriers for bud growth while preventing reversal, creating unidirectional growth. TANGO1 recruits ERGIC vesicles via tethering complexes, and their fusion could locally reduce membrane tension. Membrane shape equilibrates faster (milliseconds) than tension recovery (seconds), supporting the proposed mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C40-C41, C47-C48, and C71-C78 provide a mechanistic explanation for transport intermediate growth based on membrane tension modulation. The analytical model (C47-C48) demonstrates the ratchet mechanism with calculated energy barriers and transition times. Experimental evidence supports ERGIC recruitment by TANGO1 (C40-C41) and the role of fusion machinery (C70, C73-C74). Time scale analysis (C75, C77) validates the feasibility of the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "744607db-c55e-4705-b1c6-6162fa7af134",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Application of an outward-directed force of physiological magnitude (~1.4 pN) facilitates the transition from TANGO1-stabilized shallow buds to large transport intermediates. Analytical modeling shows that force shifts the capping-uncapping and growth transitions toward lower COPII binding energies and higher membrane tensions. The authors speculate that this force could arise from procollagen folding coupled to TANGO1/HSP47 binding, though this mechanism remains hypothetical and untested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C54, C56-C58 demonstrate through modeling that physiologically relevant forces can facilitate transport intermediate formation, with the calculated critical force (~1.4 pN) being comparable to known biological forces. However, the proposed source of this force (C79-C82) is explicitly speculative with no experimental validation. The force mechanism could facilitate growth but is not required by the model (as stated in the Discussion), making this result uncertain regarding its biological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "3fd5bae5-767e-4a19-a6da-d674871f7c6c",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The dynamic computational model predicts that elongated transport intermediates adopt a pearled tubule morphology with dimensions (~300 nm for 2-pearl structure) matching trimerized procollagen I length. The model proposes that procollagen molecules sterically prevent fission of upstream necks, with TANGO1 indirectly required through its role in procollagen binding and packaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C61, C43, and C46 describe predictions from the computational model regarding carrier morphology and the role of procollagen in preventing fission. While the predicted dimensions match known procollagen sizes (C43), the pearled tubule morphology and the steric hindrance mechanism (C60, C46) are model predictions without direct experimental validation. The authors acknowledge in the Discussion that the actual shape of transport intermediates remains unknown and requires future experimental verification using advanced microscopy techniques.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "fa8ddd5e-0e9c-4057-a882-e533c8eadd56",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The theoretical models are based on four fundamental hypotheses: (1) TANGO1 family proteins and COPII components can each be treated as single species; (2) COPII polymerizes into coats of specific curvature forming 60-90 nm carriers; (3) TANGO1 proteins assemble into rings through protein-protein interactions; and (4) TANGO1 binds peripheral COPII subunits, reducing line energy. These hypotheses are supported by multiple experimental observations from prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 establish the foundational assumptions of both models. The simplifying assumption of treating protein families as single species (C26) is explicitly stated as necessary given system complexity. The other hypotheses (C27-C33) are well-supported by multiple cited experimental studies showing COPII polymerization properties, TANGO1 oligomerization, and TANGO1-COPII interactions. These form a reasonable basis for the theoretical framework, though the simplifications limit quantitative predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TANGO1 is an ER-resident protein that assembles into ~200 nm diameter rings at ERES, linking procollagen in the ER lumen to COPII machinery, tethers, and ERGIC in the cytoplasm. TANGO1 has multiple functional domains: the SH3-like domain binds procollagen via HSP47, the PRD interacts with COPII components (Sec23A, Sec16), the CC1 domain binds the NRZ tethering complex and mediates self-association, and the CC2 domain oligomerizes with TANGO1 family proteins. TANGO1 rings are organized by lateral self-interactions, radial COPII interactions, and ERGIC vesicle tethering. Disease-causing mutations affecting TANGO1 cytosolic functions lead to collagen export defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C15-C25 describe established knowledge about TANGO1 structure, localization, and function, all supported by multiple citations to prior experimental work. These claims provide essential background context for the theoretical modeling but represent prior work rather than new findings from this manuscript. The evidence is well-established through STED nanoscopy, genetic manipulations, and disease studies cited throughout.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "7956771c-f8be-4251-a0ce-900ae06dfc8b",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Collagens form the extracellular matrix necessary for tissue biogenesis and maintenance. Procollagens fold and trimerize into rigid triple-helical structures extending several hundred nanometers, then are exported from the ER at ERES in a COPII-dependent manner. COPII and other coat proteins typically polymerize into spherical structures that bend membranes to form 60-90 nm vesicles, though helical COPII arrangements have been observed. Membrane bending by coats occurs when polymerization energy exceeds membrane deformation energy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C14 present well-established background knowledge about collagen biology, procollagen structure, and COPII-mediated vesicle formation, all supported by appropriate citations to the literature. These claims provide necessary context for understanding the biological problem addressed by the modeling but do not represent new findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "c7ba4067-0997-40b8-b5a9-eafbb609ffd6",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that large transport intermediates may be converted into tunnels connecting ER to ERGIC/Golgi, with TANGO1 rings potentially acting as diffusion barriers to prevent lipid mixing between transiently connected organelles. They suggest that inter-organelle hubs like TANGO1-scaffolded ERES-ERGIC control local tension homeostasis and regulate membrane flux between organelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C63 and C68 present speculative proposals about the fate of transport intermediates and the broader role of TANGO1 in organelle homeostasis. While these ideas are supported by citations to recent work (C62-C63 cite Raote and Malhotra 2019; Raote et al. 2020), they represent hypotheses for future investigation rather than conclusions supported by the current modeling work. The proposals are plausible extensions of the model but lack direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    },
+    {
+      "id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78",
+      "content_id": "78b4c9da-bada-4f18-860a-1ec95e867eb5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Membrane tension has been shown to regulate various membrane trafficking processes including exocytosis, endocytosis, clathrin-coated vesicle budding, cargo mobility in the ER, and intra-lumenal vesicle formation in endosomes. Procollagen export does not require microtubules but requires ER-specific SNARE proteins (Syntaxin18, SLY1) in a TANGO1-dependent manner. COPII components have short half-lives (~seconds) on ER membranes, while procollagen takes ~15 minutes to reach the Golgi, suggesting a mechanism exists to stabilize open carriers for cargo packaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67, C69-C70, and C83-C86 present established knowledge from the literature about membrane tension regulation of trafficking, the molecular requirements for procollagen export, and the kinetics of COPII and procollagen dynamics. All claims are supported by appropriate citations. These provide important context for interpreting the modeling results but represent prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T21:13:29.501318Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a0a4979f-0812-4351-a90c-7602b4689ced",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "6fc8fbb5-a9c1-4a8c-9009-7f2ffc57dd0e",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "798df72b-62ef-451c-96fc-77c1c7bf1e90",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "52bf8c94-3a60-4f0a-b201-9f9f0e4d6613",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "17a8fe81-0f26-4372-a843-e59b6dbdc253",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "1f8f24ec-e65a-44c8-91dc-7a6df39b8910",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "fc4bb9ca-d916-4f51-830f-06861e9b2dcc",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "6a558484-c5ce-4986-882d-e263caff1f35",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "f95f33b7-526d-4994-9c71-b9a45ceed047",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "d6310fb5-3824-4c20-b880-1a9edd033f07",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "c6d467ac-4dcb-4150-a6db-4a930bb6ad06",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "5fd57872-afb8-46c2-a94b-225f27daa92e",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "70b9b802-9234-43c2-9943-e096a36d59fe",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "569134fa-415e-488a-a673-9e9685b0d2c5",
+      "result_id": "24a12726-c4d1-4b90-83a0-ded67dbcbc4d"
+    },
+    {
+      "claim_id": "1ab50021-2802-4e37-806b-0411f82ed24b",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "aacfcc1f-5e24-4252-9b76-ad8ad290806e",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "988c808a-a4c5-4a27-9832-2cd124f1b956",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "10b33cce-2e47-4234-8fcf-67b7d31e451c",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "388fa827-2b30-4b9a-a298-604334b80244",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "cfce00e1-2538-4460-b64c-cf8f35a366f0",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "60d455d2-4ace-45c8-a05a-a881c236e1d7",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "866c495f-16f7-4b4a-ac09-95383ee91b98",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "987d039d-7411-4c28-b2ff-d53a20e49c02",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "90dcd528-3ca4-4baf-8625-37775a58d7e3",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "97fd15ce-9bbb-41ac-9b1b-0eeb2051a2f4",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "9cd02a86-bc2e-401c-b577-758a88454334",
+      "result_id": "95b36e9b-1729-4017-9c91-d8108ebc18f9"
+    },
+    {
+      "claim_id": "562affb1-eaf4-4fa4-9749-7a13563e3f53",
+      "result_id": "744607db-c55e-4705-b1c6-6162fa7af134"
+    },
+    {
+      "claim_id": "18021272-fbaf-443f-9053-37340f98ea26",
+      "result_id": "744607db-c55e-4705-b1c6-6162fa7af134"
+    },
+    {
+      "claim_id": "9145c0cd-e120-497e-9a21-e0bd6d3771ad",
+      "result_id": "744607db-c55e-4705-b1c6-6162fa7af134"
+    },
+    {
+      "claim_id": "0c59d397-940e-4e7a-b2e0-386ba842e3e5",
+      "result_id": "744607db-c55e-4705-b1c6-6162fa7af134"
+    },
+    {
+      "claim_id": "263334a3-82e4-4bef-9777-15c3f1a3a03d",
+      "result_id": "744607db-c55e-4705-b1c6-6162fa7af134"
+    },
+    {
+      "claim_id": "f9660f42-76c3-45d9-aa90-707c4101f8e0",
+      "result_id": "744607db-c55e-4705-b1c6-6162fa7af134"
+    },
+    {
+      "claim_id": "403941cd-90f9-4d42-99e3-b1d3dcfbb8c9",
+      "result_id": "744607db-c55e-4705-b1c6-6162fa7af134"
+    },
+    {
+      "claim_id": "9d519753-84e4-4204-997a-4e122ff162e0",
+      "result_id": "744607db-c55e-4705-b1c6-6162fa7af134"
+    },
+    {
+      "claim_id": "5ed04249-7f7c-4d90-893b-d0bf238f64a1",
+      "result_id": "744607db-c55e-4705-b1c6-6162fa7af134"
+    },
+    {
+      "claim_id": "dd7c5d90-ef1d-4a08-9336-7107d666b048",
+      "result_id": "3fd5bae5-767e-4a19-a6da-d674871f7c6c"
+    },
+    {
+      "claim_id": "1575fa1e-bdb6-462a-bd90-5da631a4dca0",
+      "result_id": "3fd5bae5-767e-4a19-a6da-d674871f7c6c"
+    },
+    {
+      "claim_id": "eec0ad09-c2dd-4685-8ddf-851a24c7cff9",
+      "result_id": "3fd5bae5-767e-4a19-a6da-d674871f7c6c"
+    },
+    {
+      "claim_id": "c5ad33ab-7ae3-445b-9fee-4a19f71b7e2f",
+      "result_id": "3fd5bae5-767e-4a19-a6da-d674871f7c6c"
+    },
+    {
+      "claim_id": "0a8d9e68-c25d-478f-a1f2-7dc4b530472f",
+      "result_id": "3fd5bae5-767e-4a19-a6da-d674871f7c6c"
+    },
+    {
+      "claim_id": "2db751b4-89d4-495f-8017-b868165aaad3",
+      "result_id": "fa8ddd5e-0e9c-4057-a882-e533c8eadd56"
+    },
+    {
+      "claim_id": "1cc00a98-4c6c-47df-b191-52c7bf24be33",
+      "result_id": "fa8ddd5e-0e9c-4057-a882-e533c8eadd56"
+    },
+    {
+      "claim_id": "3c29bbe6-5c07-4d60-8a77-4f75d5cb568d",
+      "result_id": "fa8ddd5e-0e9c-4057-a882-e533c8eadd56"
+    },
+    {
+      "claim_id": "d8be7af2-b4ce-4f16-900b-d1db73b017a2",
+      "result_id": "fa8ddd5e-0e9c-4057-a882-e533c8eadd56"
+    },
+    {
+      "claim_id": "be9e3430-d2cd-46fc-a338-adf9647eb31c",
+      "result_id": "fa8ddd5e-0e9c-4057-a882-e533c8eadd56"
+    },
+    {
+      "claim_id": "859e09a3-2a8a-40b8-987c-a98c925633ee",
+      "result_id": "fa8ddd5e-0e9c-4057-a882-e533c8eadd56"
+    },
+    {
+      "claim_id": "d965ce59-d2b5-4313-8245-b0f35dfb2f50",
+      "result_id": "fa8ddd5e-0e9c-4057-a882-e533c8eadd56"
+    },
+    {
+      "claim_id": "f011d4bd-a7c2-4898-a9ad-2d744a0b41d9",
+      "result_id": "fa8ddd5e-0e9c-4057-a882-e533c8eadd56"
+    },
+    {
+      "claim_id": "0e8621c6-efbc-4e00-84d4-96e5b6a0941b",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "525849f1-4d7c-4f79-be99-fb53ea8c3c50",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "702f6416-19df-43f2-b93f-5c7bc37c0ff4",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "8856360b-47ff-4667-85ea-77942ed0a31d",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "7e70298c-4c98-4847-8241-aaa1f2afbd2a",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "a788cf3d-3c5c-48f8-8fc8-2ccc51547460",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "1837b237-f2c7-454e-97fa-38cee96509d6",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "451c675a-1096-42ee-b281-6a5b2acf5eef",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "1792ae87-b874-41af-b083-7fb3605a3cbf",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "58112db1-1c40-48d1-ac64-53326c0a7c15",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "646359f4-427a-4c50-b58b-45c2b8ad3273",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "717c2a9b-e18d-498d-bb11-016b65cd6b56",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "ce33af2d-f92d-4f72-9c69-cf927afeccc3",
+      "result_id": "3c7dd798-34b8-405b-bc50-3cc9f3fd986f"
+    },
+    {
+      "claim_id": "c63541d9-272c-4b5c-b083-77cd4622f685",
+      "result_id": "7956771c-f8be-4251-a0ce-900ae06dfc8b"
+    },
+    {
+      "claim_id": "f87f828d-7f5b-4b36-8545-b4e14605e369",
+      "result_id": "7956771c-f8be-4251-a0ce-900ae06dfc8b"
+    },
+    {
+      "claim_id": "e65f83d2-4c1a-4c35-b8f6-396c6f258a7c",
+      "result_id": "7956771c-f8be-4251-a0ce-900ae06dfc8b"
+    },
+    {
+      "claim_id": "165d4570-e783-4262-90ed-39fce56bd6f9",
+      "result_id": "7956771c-f8be-4251-a0ce-900ae06dfc8b"
+    },
+    {
+      "claim_id": "877796d8-6980-4538-8c7c-632430b2dd32",
+      "result_id": "7956771c-f8be-4251-a0ce-900ae06dfc8b"
+    },
+    {
+      "claim_id": "801f0c33-9735-43d2-91e5-e216e622d407",
+      "result_id": "7956771c-f8be-4251-a0ce-900ae06dfc8b"
+    },
+    {
+      "claim_id": "e67e82d0-2245-4726-ab92-0bd495b2a6c5",
+      "result_id": "7956771c-f8be-4251-a0ce-900ae06dfc8b"
+    },
+    {
+      "claim_id": "d547cdb8-7c1c-4846-be2c-08521901b930",
+      "result_id": "7956771c-f8be-4251-a0ce-900ae06dfc8b"
+    },
+    {
+      "claim_id": "84c0b03c-6c8e-4be2-ab02-8f4e9c5636a0",
+      "result_id": "7956771c-f8be-4251-a0ce-900ae06dfc8b"
+    },
+    {
+      "claim_id": "474a2d20-c6b4-49a5-b248-b57cf4f04be7",
+      "result_id": "c7ba4067-0997-40b8-b5a9-eafbb609ffd6"
+    },
+    {
+      "claim_id": "d8ccf3c0-b312-4b42-b56e-aa0322366df4",
+      "result_id": "c7ba4067-0997-40b8-b5a9-eafbb609ffd6"
+    },
+    {
+      "claim_id": "764effa1-7176-4914-a8d4-73e6e5d606fc",
+      "result_id": "c7ba4067-0997-40b8-b5a9-eafbb609ffd6"
+    },
+    {
+      "claim_id": "6d296e2f-3fe5-4a40-a5b5-6f73e7abc6de",
+      "result_id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78"
+    },
+    {
+      "claim_id": "6a7db85b-1026-4b93-b545-20cb0e17f1b2",
+      "result_id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78"
+    },
+    {
+      "claim_id": "8a129ae2-750a-4beb-967f-76edd1cdd252",
+      "result_id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78"
+    },
+    {
+      "claim_id": "5c990a64-0059-4118-9b6e-c8d931bc55bc",
+      "result_id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78"
+    },
+    {
+      "claim_id": "1250628d-9959-4dc3-a859-4efd8d7482c1",
+      "result_id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78"
+    },
+    {
+      "claim_id": "ab89381c-6915-40db-83e7-c60bfa98fb9e",
+      "result_id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78"
+    },
+    {
+      "claim_id": "62d5b738-78e7-450e-8462-8cbb29d8faf2",
+      "result_id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78"
+    },
+    {
+      "claim_id": "70882e0e-ec35-4b91-9181-721b6eca7374",
+      "result_id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78"
+    },
+    {
+      "claim_id": "8154790d-cb89-4ad7-94c0-36013256706c",
+      "result_id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78"
+    },
+    {
+      "claim_id": "14c01c42-8b1c-4d9a-9bb0-2faa4671fe16",
+      "result_id": "55807f15-d7af-4cc8-80d4-8fb9b5fd2d78"
+    }
+  ],
+  "comparisons": []
+}

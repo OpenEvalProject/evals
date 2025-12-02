@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C105",
+      "C106"
+    ],
+    "result": "RELION-3 implements CPU-based vector acceleration that provides significant performance improvements (1.5x-5.4x speedup depending on processor generation and compiler settings) while maintaining result quality, enabling efficient use of diverse hardware and avoiding GPU memory limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide quantitative benchmark data showing speedups on different CPU generations with validation that results are not compromised (Figure 2). The technical implementation details (C36-C37) explain the mechanisms (single precision, coalesced memory allocation), and C41 demonstrates cost-efficiency approaching GPU hardware. The benefits stated in C1-C2, C105-C106 are well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24"
+    ],
+    "result": "RELION-3 includes reference-free autopicking using Laplacian-of-Gaussian filtering and enables execution of jobs from Python for non-interactive processing during data acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LoG autopicking method is described in detail in the Materials and Methods section with mathematical formulation, and its relationship to prior work (DoGpicker, C24) is acknowledged. The Python scripting capability (C4) is demonstrated through the relion_it.py script examples. The functionality is validated in the \u03b3-secretase processing example (Figure 6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Per-particle CTF refinement in RELION-3 enables estimation of individual particle defoci by exploiting both phases and amplitudes of experimental images, providing more reliable estimates than power spectrum-based methods and improving resolution even for particles at extreme tilt angles or with intermediate-resolution starting models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The method is rigorously described with mathematical formulation (Equations 2-4, 8-9) and validated on the influenza hemagglutinin dataset collected at 40\u00b0 tilt (C44-C51). The improvement from 4.2 \u00c5 (original) to 3.1 \u00c5 (RELION-3, C48) demonstrates effectiveness. Figure 1 and C30 show the improved signal-to-noise ratio of the cross-correlation approach. The robustness claims (C50-C51) are supported by the extreme test case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62"
+    ],
+    "result": "RELION-3 implements beam tilt estimation and correction that can recover resolution losses caused by imperfect coma-free alignment or beam-shift imaging, providing a computational alternative to active microscope-based beam tilt compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The method is described with physical principles (C31) and mathematical formulation (Equations 5-9). The ferritin beam-shift experiment (C58-C60) provides direct validation: data without active compensation improved from 2.9 \u00c5 to 2.2 \u00c5 after computational correction, matching the 2.2 \u00c5 achieved with active compensation. Figure 4 and supplementary figures show phase error patterns and linear beam tilt-beam shift relationships. The conclusion (C62) is appropriately cautious ('may be feasible').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "RELION-3 implements Ewald sphere curvature correction using a single-side band algorithm that improves resolution for large particles, as demonstrated by improvement of P22 virion reconstruction from 3.5 \u00c5 to 3.3 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The implementation (C33-C34) is described with appropriate citations. The P22 virion test case (C63-C67) provides validation: the ~700 \u00c5 diameter particle improved from 3.5 \u00c5 to 3.3 \u00c5 with correct curvature but only 3.9 \u00c5 with reverse curvature, demonstrating specificity. The theoretical resolution limit of 3.1 \u00c5 (C64) provides context. Claims C68-C69 about hand determination are appropriately speculative. Figure 5 shows density improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C48",
+      "C73",
+      "C75",
+      "C76",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C94",
+      "C104"
+    ],
+    "result": "RELION-3 achieves resolution improvements of 0.2-0.7 \u00c5 compared to previous versions across multiple test datasets through combined application of new methods, with \u03b2-galactosidase improving from 2.2 \u00c5 (RELION-2.0) to 1.90 \u00c5 and \u03b3-secretase improving from 3.4 \u00c5 (RELION-1.3) to 3.2 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple datasets provide convergent evidence: influenza HA (3.2 \u00c5 to 3.1 \u00c5, C48), \u03b3-secretase (3.4 \u00c5 to 3.2 \u00c5, C75-C76), and \u03b2-galactosidase (2.2 \u00c5 to 1.90 \u00c5, C82-C88). The improvements are documented with FSC curves and density features in Figures 3, 6, and 7. The incremental contributions of individual methods (defocus refinement, beam tilt correction, polishing) are systematically evaluated (C84-C87). The RELION-3 map also outperforms a competing method (EMD-7770) by 0.15 \u00c5 in model correlation (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Non-interactive preprocessing using the relion_it.py script approaches expert-level performance for \u03b3-secretase (3.3 \u00c5 vs 3.2 \u00c5), though the automated approach shows higher false positive rates and challenging datasets still benefit from manual parameter tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The \u03b3-secretase reprocessing provides a direct comparison: automated preprocessing (3.3 \u00c5, C73) vs expert selection with RELION-3 (3.2 \u00c5, C75) vs original expert processing (3.4 \u00c5, C74). The 0.1 \u00c5 difference between automated and expert approaches (C77) is small but the observation about model correlation (C78-C79) reveals limitations. The conclusions (C80-C81) are appropriately balanced. Figure 6 shows the processing workflow and results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "RELION-3 processing of human apo-ferritin achieved 1.65 \u00c5 resolution with spherical-like atomic features, demonstrating that automated high-resolution structure determination of straightforward samples is within close reach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 1.65 \u00c5 resolution (C98) is documented with FSC curves and density features in Figure 8. The resolution is appropriately contextualized as two shells below Nyquist (C99). The observation of spherical atomic features (C101) is shown in Figure 8C. The B-factor analysis (C102) provides additional characterization. The conclusion about automation (C103) is reasonable given the successful application of the relion_it.py script with minimal intervention. Data deposition (C97) enables reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Similar CTF refinement functionality exists in Frealign and cisTEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward citation-supported claim (C29) acknowledging prior/parallel work. The statement is appropriately placed in context and does not overstate RELION-3's novelty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The introduction provides historical context for the cryo-EM resolution revolution, attributing it to direct electron detectors (introduced 2012) and concurrent image processing software improvements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established historical facts supported by appropriate citations (C9-C15). The claims provide necessary context for understanding RELION-3's contributions but are not novel findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript describes the evolution of RELION through versions 1-2, including its Bayesian approach, pipelined workflow, GPU acceleration, and expanded functionality for sub-tomogram averaging and helical reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C16-C23) accurately describe prior RELION versions with appropriate citations. They provide necessary background but are not new results of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "For \u03b2-galactosidase, Ewald sphere correction did not improve resolution by a full Fourier shell, and B-factor analysis predicts resolutions of 1.75 \u00c5 and 1.69 \u00c5 with 4x and 8x more particles respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Ewald sphere result (C89) is clearly stated and appropriate for the particle size. The B-factor predictions (C90-C92) are generated by the bfactor_plot.py script with documented methodology (Rosenthal & Henderson approach) and shown in Figure 7 supplement 2. These are valid characterizations of the dataset but secondary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The RELION-3 \u03b2-galactosidase map shows better model correlation than the Subramaniam group's EMD-7770 despite identical nominal resolution, and FSC curves provide objective map quality assessment when properly used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to EMD-7770 (C93-C94) is documented in Figure 7 supplement 2 showing 0.15 \u00c5 better correlation. The discussion of FSC methodology (C95) is appropriately nuanced with citations. However, the comparison involves some methodological differences and the critique of the competing work, while scientifically valid, is somewhat polemical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "Corrections for per-particle defocus, beam tilt, and Ewald sphere will become more important as cryo-EM resolutions continue to improve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a reasonable extrapolation (C107) based on the demonstrated benefits at current resolutions and the physics of the corrections. It is appropriately presented as a prediction rather than a proven fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "RELION is distributed under GPL version 2, making it free to use or modify.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a factual statement about software licensing (C108-C109). While important for accessibility, it is not a scientific result.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,441 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Dot1l is the only known H3K79 methyltransferase that catalyzes sequential mono-, di-, and tri-methylation of H3K79, which is located at the globular domain of nucleosomes. Dot1l lacks a SET domain but contains an AdoMET motif and is known to play roles in telomere silencing, cell cycle regulation, and MLL-related leukemogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by multiple citations to established literature (Min et al., 2003; van Leeuwen et al., 2002; Frederiks et al., 2008; Feng et al., 2002; Schulze et al., 2009; Okada et al., 2005; Nguyen and Zhang, 2011; Ng et al., 2002). These are established facts about Dot1l from prior work that provide necessary background context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Dot1l directly interacts with Zc3h10 through its middle fragment (aa 501-1000) containing coiled coil motifs. This interaction was demonstrated in both overexpression systems and with endogenous proteins in BAT, and is not modulated by cold exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 are strongly supported by multiple complementary experimental approaches including Co-IP with tagged proteins (C6), Co-IP with endogenous proteins (C7), GST pull-down assays demonstrating direct binding (C9), and domain mapping experiments (C10). The data shown in Figure 1A-C provide converging evidence for direct protein-protein interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Dot1l is enriched in BAT compared to other tissues, enriched in the brown adipocyte fraction compared to SVF, induced upon cold exposure, and increased during BAT cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are supported by RT-qPCR and immunoblotting data shown in Figure 1D-F. The expression pattern of Dot1l mirrors that of Zc3h10 and other thermogenic genes, supporting its potential role in thermogenesis. The data are internally consistent and use appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Dot1l synergistically activates the Ucp1 promoter with Zc3h10 (11-fold increase), while neither protein alone produces comparable activation. This synergistic activation requires Dot1l's catalytic activity, as demonstrated by the M55L mutant and EPZ5676 inhibitor experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 are well-supported by luciferase reporter assays shown in Figure 1G. The synergistic effect (11-fold vs 3-fold for Zc3h10 alone) is substantial and statistically significant. The requirement for catalytic activity is demonstrated through two independent approaches (M55L mutant and EPZ5676 inhibitor), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Dot1l and Zc3h10 co-occupy the same regions of the Ucp1 promoter (-4.6 kb) and Tfam promoter (+50 bp), as demonstrated by ChIP and Re-ChIP experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by ChIP-qPCR and Re-ChIP data shown in Figure 1H. The Re-ChIP experiment is particularly strong evidence for co-occupancy, as it demonstrates that both proteins are present on the same DNA molecules. The inclusion of a negative control (Gapdh promoter) strengthens the specificity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Dot1l knockdown in BAT cells reduces Ucp1 and other thermogenic genes (Tfam, Nrf1, Elovl3) by ~50%, decreases oxygen consumption and uncoupled respiration, but does not affect adipogenic markers or lipid accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are supported by comprehensive data in Figure 2A-B and Figure 2\u2014figure supplement 1A, including RT-qPCR, immunoblotting, Seahorse OCR measurements, and Oil Red O staining. The specificity for thermogenic genes without affecting adipogenesis (C27) is important for establishing that Dot1l's role is specific to thermogenesis rather than general adipocyte function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Pharmacological inhibition of Dot1l with EPZ5676 reduces Ucp1 expression by 90% and other thermogenic genes by 40-80%, decreases H3K79me3 at thermogenic gene promoters, and this effect is recapitulated by the M55L catalytic mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are strongly supported by data in Figure 2C-D and Figure 2\u2014figure supplement 1B-C. The use of both pharmacological inhibition and catalytic mutant provides orthogonal validation. The ChIP-qPCR data (C30, C31) mechanistically link the enzymatic activity to H3K79 methylation at specific target genes, with appropriate negative controls (Gapdh).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Dot1l overexpression increases thermogenic gene expression and thermogenesis (measured by ERthermAC and OCR), while Zc3h10 knockdown decreases these parameters. Importantly, Zc3h10 knockdown prevents Dot1l-induced thermogenesis, demonstrating that Dot1l requires Zc3h10 for its function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by comprehensive data in Figure 2E-F using RT-qPCR, immunoblotting, ERthermAC fluorescence, and Seahorse OCR measurements. The epistasis experiment (C36-C37) is particularly strong evidence that Dot1l functions downstream of or in cooperation with Zc3h10. The use of ERthermAC as a functional readout of thermogenesis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "CRISPR-mediated Dot1l knockout reduces thermogenic gene expression by >50%, and Zc3h10 overexpression cannot rescue this defect. Dot1l KO increases ERthermAC+ population (indicating decreased thermogenesis), and Zc3h10 overexpression does not affect this phenotype in Dot1l KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by data in Figure 2G-H using CRISPR knockout pools. The failure of Zc3h10 overexpression to rescue Dot1l KO (C39, C42) provides strong genetic evidence that Dot1l is essential for Zc3h10 function. The use of two independent KO pools strengthens the conclusions. However, the incomplete knockout (~50% reduction) is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In 3T3-L1 cells, Dot1l overexpression alone increases Ucp1 expression 2-fold, co-overexpression with Zc3h10 increases it 3-fold, and this correlates with increased total and uncoupled OCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by data in Figure 2\u2014figure supplement 1D-F. The gain-of-function experiments in 3T3-L1 cells complement the loss-of-function studies in BAT cells. The speculation about endogenous Dot1l (C43) is reasonable but not directly tested. The functional validation with OCR measurements strengthens the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In vivo EPZ5676 treatment decreases thermogenic gene expression in BAT and iWAT (but not pWAT or liver), reduces body temperature by 4\u00b0C during cold exposure, and decreases VO2 at 4\u00b0C without affecting food intake or locomotor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 are supported by comprehensive in vivo data in Figure 3B-D and Figure 3\u2014figure supplement 1A-B. The tissue specificity (C48-C49) is important for establishing that the effect is specific to thermogenic tissues. The lack of effect on food intake and activity (C52) rules out general sickness or behavioral changes. The 4\u00b0C temperature difference during cold exposure is physiologically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Dot1l-BKO mice show 70% reduction in Dot1l in BAT and 60% in iWAT, with corresponding reductions in Ucp1 (40-60%) and other thermogenic genes (Dio2, Cidea, Tfam, Nrf1) at both mRNA and protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by RT-qPCR and immunoblotting data in Figure 4A-C. The incomplete knockout is acknowledged and explained by the Ucp1-Cre system. The coordinate downregulation of multiple thermogenic genes supports a broad role for Dot1l in the thermogenic program. The data are consistent across multiple genes and tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Dot1l-BKO mice show 50% reduction in H3K79me2 and 70% reduction in H3K79me3 at the Ucp1 promoter (-4.6 kb), with similar reductions at Nrf1 and Tfam promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by ChIP-qPCR data in Figure 4D. The mechanistic link between Dot1l loss and reduced H3K79 methylation at specific target genes is direct and expected. The data provide molecular evidence for how Dot1l regulates thermogenic gene expression. The specificity for Zc3h10 binding sites is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Dot1l-BKO mice are severely cold intolerant (5\u00b0C lower body temperature after 3 hr at 4\u00b0C), have reduced VO2 at both room temperature and 4\u00b0C, and show 20% decreased OCR in isolated BAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by physiological measurements in Figure 4E-F. The cold intolerance phenotype is severe and physiologically significant. The reduced VO2 and OCR provide mechanistic insight into the thermogenic defect. The consistency between whole-body and tissue-level measurements strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Dot1l-BKO mice on HFD gain ~8 g more weight by 13 weeks, with significantly larger iWAT and pWAT depots, and show impaired glucose tolerance and insulin sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by body weight, tissue mass, GTT, and ITT data in Figure 4G and Figure 4\u2014figure supplement 1B-C. The metabolic phenotype is consistent with reduced thermogenic capacity. However, the causal relationship between reduced thermogenesis and increased adiposity/insulin resistance is correlative rather than directly demonstrated. The lack of food intake differences is important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Zc3h10 overexpression in WT mice increases thermogenic gene expression and improves cold tolerance, but fails to rescue thermogenic gene expression or cold tolerance in Dot1l-BKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by in vivo rescue experiments in Figure 4H-I. The failure of Zc3h10 overexpression to rescue Dot1l-BKO provides strong genetic evidence that Dot1l is essential for Zc3h10 function in vivo. This complements the in vitro epistasis experiments and strengthens the model that Dot1l acts as a required coactivator for Zc3h10.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ATAC-seq analysis shows that Dot1l-BKO mice have significantly reduced chromatin accessibility near transcription start sites genome-wide, with the most affected pathways being cell cycle, chromatin organization, mitochondrion organization, and thermogenesis. Specific thermogenic genes (Ucp1, Cox8b, Cox7a) show much smaller ATAC-seq peaks in Dot1l-BKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by ATAC-seq data in Figure 5A. The genome-wide reduction in chromatin accessibility provides mechanistic insight into how Dot1l regulates gene expression. The pathway analysis is appropriate and the specific examples of thermogenic genes strengthen the conclusions. However, n=2 per group is a limitation for genome-wide studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "RNA-seq analysis shows that genes downregulated >2-fold in Dot1l-BKO mice are enriched for mitochondrion organization, oxidative phosphorylation, and thermogenesis pathways, including Ucp1, Cox8b, Elovl3, Ppargc1a, Nrf1, and Aifm2. Upregulated genes include chromatin compaction factors (Hdac3, Hdac4, Dnmt1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by RNA-seq data in Figure 5B. The transcriptomic changes are consistent with the phenotypic observations and provide comprehensive molecular evidence for Dot1l's role in thermogenesis. The upregulation of chromatin compaction factors (C77) is particularly interesting and supports the model that Dot1l maintains open chromatin. However, n=2 pooled samples per group is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Integration of ATAC-seq and RNA-seq data shows that 82% of downregulated genes in RNA-seq also show reduced chromatin accessibility in ATAC-seq, with shared pathways including cold-induced thermogenesis, mitochondrial organization, and oxidative phosphorylation. Shared genes include Ucp1, Ppargc1a, Cox8b, Nrf1, and Cidea.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by integrated analysis in Figure 5C. The high overlap (82%) between transcriptional changes and chromatin accessibility changes provides strong mechanistic evidence that Dot1l regulates thermogenic genes through chromatin remodeling. The identification of specific shared genes strengthens the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Background information on brown adipose tissue function, beige adipocyte recruitment, human BAT correlations with obesity, and known transcriptional regulators of Ucp1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C83-C89 are well-supported by appropriate citations to established literature. These provide necessary background context for understanding the significance of the current work. The citations are appropriate and the statements accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Background information on Zc3h10 as a BAT-enriched transcription factor that activates Ucp1 by binding to the -4.6 kb region, is phosphorylated by p38 MAPK, and whose manipulation affects thermogenic capacity and obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 are supported by citation to Yi et al., 2019, which is the authors' previous work. These claims provide essential background for understanding the current study's focus on Dot1l as a Zc3h10 interacting partner. The statements accurately represent the prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C114",
+      "C116"
+    ],
+    "result": "Background information on H3K79 methylation as an activation mark, its role in enhancer-promoter interactions, correlation with other activation marks, and potential mechanisms involving inhibition of histone deacetylases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100, C114, C116 are supported by appropriate citations to prior literature (Steger et al., 2008; Wood et al., 2018; Markenscoff-Papadimitriou et al., 2014; Gilan et al., 2016; Godfrey et al., 2019; Chen et al., 2015; Kang et al., 2018). These provide important mechanistic context for interpreting the current findings. The citations are appropriate and accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C118"
+    ],
+    "result": "Summary claims stating that H3K79me2/3 function as activation marks for thermogenic genes, Dot1l is recruited by Zc3h10 to activate thermogenic genes, Dot1l's methyltransferase activity is required for thermogenic gene expression, and Dot1l ablation impairs thermogenesis through decreased H3K79 methylation and chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C103-C108, C118 are high-level summary statements that integrate findings from multiple experiments throughout the paper. These are well-supported by the comprehensive data presented, including protein-protein interaction studies, functional assays in cells and mice, ChIP-qPCR, ATAC-seq, and RNA-seq. The conclusions are justified by the totality of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "GWAS database reveals multiple SNPs of Dot1l associated with waist-hip ratio and body mass index in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 cites GWAS database identifiers (HGVPM1111, HGVPM1114) but does not provide details about the strength of associations, sample sizes, or statistical significance. Without access to these specific GWAS entries or more detailed information, it is difficult to evaluate the robustness of these associations. This claim suggests potential human relevance but requires more detailed validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Zc3h10 binds to Dot1l via the coiled coil domain (aa 501-1000), which has been reported to interact with MLL fusion proteins in leukemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by domain mapping data (C10) and citation to Song et al., 2019 for the MLL fusion protein interaction. The parallel with leukemia is interesting and suggests that this domain may be a general protein-protein interaction interface for Dot1l. The citation to Mier et al., 2017 for coiled coil domain function is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Zc3h10 overexpression cannot rescue decreased thermogenic gene expression in Dot1l-BKO mice, and ATAC-seq shows markedly reduced open chromatin regions at thermogenic gene promoters in Dot1l-BKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by in vivo rescue experiments (Figure 4H) and ATAC-seq data (Figure 5A). These provide strong evidence for the epistatic relationship between Dot1l and Zc3h10 and the mechanistic role of chromatin accessibility. The claims are consistent with the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C115",
+      "C117"
+    ],
+    "result": "Speculative statements about potential mechanisms by which H3K79me2/3 may maintain enhancer/promoter associations and work with other histone modifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115 and C117 are explicitly speculative (\"It is possible that...\", \"probably works with...\") and are not directly tested in this study. While these are reasonable hypotheses based on the data and prior literature, they represent future directions rather than established findings. The speculation is appropriately qualified in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Summary claims that Dot1l ablation in Ucp1+ cells leads to decreased thermogenic gene expression, cold intolerance, decreased oxygen consumption, increased adiposity, and insulin insensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are high-level summaries of the Dot1l-BKO mouse phenotype, integrating data from Figure 4C-G and Figure 4\u2014figure supplement 1C. These summary statements are well-supported by the comprehensive phenotypic characterization. The causal chain from reduced thermogenesis to metabolic dysfunction is plausible but somewhat correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "Abstract summary claim that Dot1l ablation using Ucp1-Cre prevents activation of Ucp1 and other target genes to reduce thermogenic capacity and energy expenditure, promoting adiposity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is a high-level summary of the main findings presented in the abstract. This is well-supported by the comprehensive data throughout the manuscript, including gene expression, cold tolerance, oxygen consumption, and body weight measurements in Dot1l-BKO mice. The claim accurately represents the major conclusions of the study.",
+    "result_type": "MAJOR"
+  }
+]

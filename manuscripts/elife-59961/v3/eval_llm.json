@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Prolonged in vitro passage of alveolar epithelial cells (ATs) causes a shift from a normal surfactant (NS) phenotype to a deficient surfactant (DS) phenotype, characterized by reduced expression of type II markers (Abca3, surfactant proteins) and altered expression of type I markers, with fewer and smaller lamellar bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 collectively demonstrate the phenotypic shift from NS to DS through multiple converging lines of evidence: immunostaining (C1, C2), RT-PCR data (C3, C5, C6), and quantitative microscopy (C8). The characterization is comprehensive and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "LoCs reconstituted with DS ATs maintain the surfactant-deficient phenotype on-chip at the air-liquid interface for up to 6 days, with reduced expression of type II markers (notably Abca3) but no significant difference in type I markers compared to NS LoCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 demonstrate that the DS phenotype is maintained in the LoC system through quantitative lamellar body analysis (C10), RT-PCR data (C11, C12), and temporal stability assessment (C13). The data are consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The LoC model faithfully reproduces infection of both macrophages and ATs that occurs in vivo, with 7.3% of infected cells in mouse lungs at 8 dpi being type II ATs, though AT infection occurs at higher frequency in the LoC model than in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 validate the LoC model against in vivo data through microscopy analysis of infected mouse lungs (C15) and comparison of infection frequencies (C17). The acknowledgment of higher AT infection frequency in the LoC model (C17) and technical limitations (C16) demonstrates appropriate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27"
+    ],
+    "result": "Surfactant deficiency shifts the host-pathogen equilibrium in favor of Mtb, resulting in rapid and uncontrolled bacterial growth in both macrophages and ATs. Under NS conditions, bacterial growth is exponential but slower in macrophages than ATs, with a substantial non-growing fraction; under DS conditions, growth rates are equivalent and faster in both cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24, C27 are supported by extensive time-lapse microscopy data (Figure 2) showing exponential growth (C19), differential growth rates between cell types and surfactant conditions (C21, C22), and comparison with axenic cultures (C23, C24). Statistical significance is reported (p-values in C21, C22). The inference about host-pathogen equilibrium (C27) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Mtb growth on-chip is likely intracellular, as evidenced by poor axenic growth in ALI medium and absence of spatial patterns in growth rates within the LoC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 provide indirect evidence for intracellular growth through axenic culture controls (C25) and spatial analysis (C26). While the evidence is indirect, it is appropriately qualified and supported by the referenced figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C31"
+    ],
+    "result": "Growth rates measured in the LoC model under NS conditions are in good agreement with mouse model data from plasmid-loss assays, with the LoC providing approximately 200-fold higher temporal resolution and the entire population distribution of growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 validate the LoC model through quantitative comparison with published mouse data (Gill et al., 2009). The calculation converting mouse model parameters to growth rates (C30) is mathematically sound, and the temporal resolution advantage (C31) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Exogenous addition of Curosurf (surfactant replacement) rescues the DS phenotype by attenuating intracellular Mtb growth and generating a non-growing fraction similar to NS LoCs, without direct effects on bacterial viability or replication in the absence of host cells, indicating surfactant protects by altering host-Mtb interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 demonstrate rescue of the DS phenotype through two complementary approaches (treating Mtb or DS LoC with Curosurf) with appropriate controls showing no direct antimicrobial effect (C33). The inference about mechanism (C34, C35) is well-supported by the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The \u0394icl1\u0394icl2 mutant strain is unable to grow in either ATs or macrophages in the LoC model even under DS conditions, consistent with mouse model data and independent of surfactant secretion, providing evidence for intracellular growth in the LoC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 validate the LoC model using a well-characterized attenuated mutant. The consistency between LoC and mouse model data (C36, C37, C38) and the specificity for intracellular growth defects (C39, C40) provide strong validation. Controls with axenic cultures (C40) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Intracellular growth of ESX-1-deficient Mtb is largely independent of surfactant levels, with attenuation not rescued by surfactant deficiency. ESX-1 secretion is necessary for rapid intracellular growth in the absence of surfactant, consistent with the hypothesis that surfactant attenuates Mtb growth by depleting ESX-1 components from the bacterial surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 demonstrate surfactant-independent attenuation of ESX-1-deficient Mtb through growth rate analysis across NS and DS conditions (C43-C48). The data support the mechanistic inference (C50) and are consistent with the cited hypothesis (Raffetseder et al., 2019). Statistical significance is reported where appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Simulations of mouse infections using growth rate distributions from the LoC model predict attenuation levels for ESX-1-deficient strains that agree with published mouse model data when using NS (but not DS) conditions, validating that NS conditions in the LoC better mimic the native lung environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 use computational modeling to validate the LoC model against published in vivo data. The simulation approach is appropriate, statistical significance is reported (C52), and the agreement with mouse model data (C53) provides strong validation for the NS condition as physiologically relevant (C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Surfactant has a small but significant impact on growth of ESX-1-deficient Mtb in macrophages, despite complete independence in ATs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by statistical analysis (p=5.1E-3) shown in Figure 3J,K. This finding suggests an additional surfactant-dependent mechanism in macrophages beyond ESX-1 depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Surfactant (Curosurf) coats Mtb bacteria heterogeneously and partially strips virulence-associated lipids (SGL and TDM) but not PDIM from the bacterial cell surface, suggesting an additional mechanism for attenuation of intracellular growth in macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by microscopy (C56) and TLC data (C57-C59) showing selective removal of specific lipids. The mechanistic inference (C60) is appropriately qualified and supported by citation to literature on virulence-associated lipids (Dulberger et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Pulmonary surfactant plays an important role in host innate immunity during early Mtb infection, which may partly explain why individuals with defective surfactant function (including smokers and elderly persons) show increased risk of developing active TB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 represent the main conclusion of the study, supported by the collective experimental findings. The inference about clinical relevance (C82, C83) is appropriately qualified ('may partly explain') and supported by citations to relevant literature on surfactant deficiency and TB risk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "ATs are more permissive to Mtb growth than macrophages under NS (but not DS) conditions. AT infection is not an artifact of the LoC model, as infected ATs were identified in mouse lungs, though the higher incidence in the LoC is likely due to differences in inoculation method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by growth rate comparisons (C84), validation in mouse lungs (C85), and appropriate interpretation of differences between models (C86, C87). The acknowledgment of methodological differences demonstrates critical evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The LoC model provides superior spatiotemporal resolution compared to mouse models, reveals population distributions of growth rates and cell-to-cell heterogeneity, and shows growth characteristics consistent with animal model data, validating the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 collectively establish the advantages and validation of the LoC model. The temporal resolution advantage (C91), methodological rationale (C92), agreement with mouse data (C93, C97), and revelation of heterogeneity (C94-C96) are well-supported by the data and appropriately referenced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The findings suggest a potential role for pulmonary surfactant replacement formulations in host-directed therapies against TB, made possible by the organ-on-chip system's ability to reproduce host physiology in a modular and tuneable fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C104 represent speculative conclusions about therapeutic applications. While the rescue experiments with Curosurf (C32) provide proof-of-concept, translation to clinical therapy would require extensive additional validation including in vivo efficacy studies, safety assessment, and clinical trials. The claim is appropriately qualified as 'suggest a potential role' but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Surfactant deficiency results in rapid uncontrolled bacterial growth in both cell types, while normal surfactant levels generate a non-growing fraction. The DS phenotype is rescued by exogenous surfactant, which partially removes virulence-associated lipids from bacteria. ESX-1-deficient bacteria show surfactant-independent attenuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 summarize the main experimental findings from the abstract. These are well-supported by the detailed experimental data presented in the results section (growth rate analyses, rescue experiments, lipid stripping data, and ESX-1 mutant studies).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The low macrophage:AT ratio in the LoC is consistent with alveolar physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by cell density data in Table 1 and citation to Weibel, 2015. The macrophage:AT ratio of approximately 1:8 is physiologically relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Abca3 is required for surfactant export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is a statement of established knowledge supported by appropriate citations (Beers and Mulugeta, 2017; Besnard et al., 2010). This is background information rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Due to aerosol deposition physics, first contact with Mtb in naive hosts is typically a single-cell interaction. Evidence suggests surfactant plays a protective role, but animal models have limitations in studying this due to lethality of surfactant deficiency and insufficient spatiotemporal resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 establish the rationale for the study through appropriate citations to literature on aerosol deposition (C61), surfactant function (C63), and limitations of animal models (C64, C65). These are well-established concepts that motivate the development of the LoC model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Previous studies have examined specific surfactant components in macrophage infection models, showing mostly suppressive effects on Mtb growth, but with some contradictory findings. No prior studies examined endogenous surfactant expression in co-cultures at an air-liquid interface. ATs are a major lung component but their role in TB remains controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C78 provide a comprehensive literature review establishing the gap in knowledge that the current study addresses. The citations are appropriate and the summary of prior work (both supportive and contradictory findings) demonstrates balanced scholarship. The identification of the research gap (C78) is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The rapid uncontrolled growth of Mtb at the ALI in the absence of surfactant has not been reported in simpler in vitro models. The non-growing fraction observed under NS conditions may be equivalent to NGMA populations observed in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 highlight novel findings from the study. C79 is supported by literature review and comparison with current findings. C80 is appropriately qualified ('may be equivalent') and supported by citation to Manina et al., 2015, though direct equivalence would require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Most infected individuals harbor just one primary lesion from a single bacillus. First contact with an AT, though rarer in vivo, could potentially lead to more aggressive infection, which may explain why few exposed individuals develop clinical TB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C90 involve speculation about clinical implications. While C88 is supported by citation (Mckinney et al., 1998) and C90 reflects general knowledge, the speculation in C89 about AT infection leading to more aggressive disease is not directly tested and would require epidemiological or clinical data to validate. The connection to TB progression rates (C90) is highly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Curosurf is a surfactant replacement formulation of phospholipids and hydrophobic proteins. Phospholipids are the main component of native surfactant, and lipid recycling is a key AT and macrophage function. The two-way interaction of surfactant with bacteria may alter uptake or processing. Surfactant phospholipids have antiviral properties and adjuvant potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 provide background on surfactant composition and function. C98-C100 are supported by established knowledge and appropriate citations. C101 is speculative but appropriately qualified. C102 is supported by citations (Kimoto et al., 2013; Wang et al., 2020) and provides context for potential therapeutic applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The ESX-1 Type VII secretion system is a major Mtb virulence factor required for phagosomal escape, and its activity is upregulated during AT infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are statements of established knowledge supported by appropriate citations (van der Wel et al., 2007; Ryndak et al., 2015). This provides important background for interpreting the ESX-1-deficient mutant experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Surfactant may attenuate Mtb growth by depleting ESX-1 components on the bacterial cell surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 is a mechanistic hypothesis supported by citation to Raffetseder et al., 2019 and consistent with the ESX-1-deficient mutant data. However, direct evidence for ESX-1 component depletion by surfactant is not provided in the current study. The claim is appropriately qualified as a hypothesis but would require additional biochemical validation.",
+    "result_type": "MINOR"
+  }
+]

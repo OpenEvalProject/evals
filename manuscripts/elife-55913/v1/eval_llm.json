@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors developed a high-resolution imaging and automated 3D single-cell segmentation pipeline for the zebrafish pLLP, acquiring N=165 primordia with n=15,347 segmented cells. The pipeline reliably produces high-quality segmentations with rare errors (4.62% exclusion rate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 provide detailed methodology and quantitative metrics for the imaging and segmentation pipeline. The approach is well-documented with specific parameters (AiryScan FAST mode, ~20s/channel acquisition, quality control thresholds), and the resulting dataset size is clearly reported. The quality assessment (C32-C34) provides transparency about pipeline performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors developed ISLA-CBE, a novel point cloud-based morphometry method for feature embedding of 3D cellular images. ISLA converts images to point clouds via stochastic sampling, while CBE embeds these into feature spaces using cluster-based reference points. The method addresses rotational invariance through pairwise distance transformation (CFOR) and outperforms moment-based alternatives on synthetic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 describe the ISLA-CBE algorithm with clear methodological details and validation on synthetic data (C47-C48, Figure 3\u2014figure supplement 2). The approach addresses a stated gap in existing methods (C39) and provides both TFOR and CFOR representations. The validation demonstrates superiority over baseline methods, though only on synthetic data rather than biological ground truth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Application of ISLA-CBE to pLLP cell shapes reveals that principal components describe meaningful shape variation, with a small number of PCs capturing most heterogeneity. In TFOR, rotational orientation and cell length dominate (PCs 1-6), while in CFOR, cell sphericity accounts for ~50% of variation (PC1). Cells form continuous shape spectra rather than discrete morphological clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C56 are supported by quantitative analysis shown in Figure 4, including PCA plots, explained variance ratios, and correlation with engineered features. The continuous nature of cell shapes (C52-C53) is demonstrated through multiple visualizations (Figure 4A-D). The dominance of sphericity in CFOR (C56) is quantitatively stated and visually supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Consensus tissue maps reveal that cell height increases behind the leading edge (TFOR-PC3), consistent with known leader-follower transitions. A novel finding is that follower cells at the tissue center are more spherical than those at the periphery (CFOR-PC1), a pattern not previously described that may indicate unknown mechanical aspects of pLLP organization. These shape changes are continuous rather than discrete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 combine validation of known biology (C59-C60, supported by citation to Lecaudey et al., 2008) with novel findings (C64-C66). The consensus maps (Figure 4G) provide spatial visualization of these patterns. The novel sphericity pattern is clearly stated as previously undescribed (C65) and appropriately presented as hypothesis-generating (C66). The continuous nature of transitions (C63) is inferred from the data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ISLA-CBE successfully embeds subcellular protein distributions including nuclei, F-actin, and Golgi apparatus. Analysis of Golgi distribution reveals that PC3 represents apical enrichment, which is elevated in follower but not leader cells, providing quantitative support for increased epithelial character in followers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 demonstrate the versatility of ISLA-CBE beyond cell shape (C67-C68) with specific application to Golgi distribution. The finding of apical Golgi enrichment in followers (C70-C71) is supported by point cloud visualizations and consensus maps (Figure 5H-J). The biological interpretation (C72-C73) appropriately connects to established knowledge about epithelial cells (citation to Bacallao et al., 1989).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Machine learning-based prediction of pea3 gene expression from cell shape and location accounts for 38.2\u00b11.9% of expression variance. While residual variance reflects cell-to-cell heterogeneity without clear spatial patterns, the approach recovers the graded leader-follower expression pattern and could potentially integrate with scRNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 provide quantitative performance metrics with error estimates and are supported by Figure 6B-D. The limitation (C77) is appropriately acknowledged and explained. The potential application to scRNA-seq integration (C79) is appropriately framed as speculative. However, the 38% explained variance is modest, and the approach's utility for fine-grained expression patterns is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Mapping of manually annotated cell archetypes (leader, central rosette, peripheral rosette, inter-organ) into the shape space using SVC reveals that leader, central, and peripheral cells are morphologically distinct, while inter-organ cells are frequently misclassified. Analysis of archetype space shows common intermediates between leaders and peripheral cells, and between peripheral and central cells, but rare intermediates between leaders and central cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 are supported by confusion matrices (Figure 7\u2014figure supplement 1) and archetype space visualizations (Figure 7B-C). The failure to classify inter-organ cells (C83) is appropriately interpreted as evidence they lack distinct morphology at this stage (C84). The patterns of intermediate states (C85-C87) are observed in the data, though the biological interpretation of rare leader-central intermediates (C87) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Archetype-based visualization reveals that F-actin PC3 reflects apical enrichment in followers (consistent with known rosette morphogenesis), while cell sphericity (CFOR-PC1) is elevated in central rosette cells (a novel finding). Cell surface smoothness (CFOR-PC2) may represent additive effects of leader-follower and central-peripheral patterns. Statistical testing confirms inner rosette cells are significantly more spherical than outer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 combine validation of known biology (C88-C89, cited to Lecaudey et al., 2008) with novel findings (C90-C91). The statistical validation (C94, Figure 7F) provides rigorous support for the sphericity finding. The interpretation of smoothness patterns (C92-C93) is appropriately presented as speculative. The archetype-based approach successfully facilitates biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Comprehensive analysis reveals cells in the pLLP exist on continuous shape spectra rather than discrete groups. One spectrum runs along the leader-follower axis (flat, mesenchyme-like leaders to columnar, epithelial-like followers), and a second runs along the inside-outside axis of rosettes. Cell sphericity and smoothness show inside-outside patterning, leading to a novel hypothesis that variations in adhesion/contractility drive this pattern via differential interfacial tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 synthesize findings about the leader-follower axis, appropriately connecting to prior work (citations to Nechiporuk and Raible, 2008; Lecaudey et al., 2008; Nogare et al., 2017) while emphasizing the continuous nature revealed by the data-driven approach. Claims C115-C120 present the inside-outside axis findings and propose a mechanistic hypothesis based on established biophysical principles (citations to Matzke, 1946; Lecuit and Lenne, 2007; Brodland, 2002). The hypothesis (C120) is appropriately framed as novel and requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors use machine learning (SVR) to integrate data across experiments by predicting subcellular marker distributions from cell shape as a common reference. This approach avoids the need for stereotypical shapes required by image registration methods and works with smaller datasets than deep learning approaches, though the resulting atlas cannot be easily viewed as an image overlay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 describe the data integration strategy with appropriate acknowledgment of limitations. The approach is validated across multiple markers (Figure 5\u2014figure supplement 1) showing SVR performs well. The limitations of previous approaches (C106) and alternatives (C107) are appropriately cited. The trade-off between quantitative analysis capability (C109) and visualization (C108) is clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors argue that while quantitative microscopy is crucial for developmental biology and data science has proven valuable in other fields, adoption in developmental biology has been slow because in vivo microscopy generates 'rich data' rather than 'big data', with limited sample numbers, high variance, and few simultaneous measurements. They identify three key challenges: data extraction, data integration, and data interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 establish the motivation and framework for the study. The characterization of the field's state (C1-C2, C14) and limitations of developmental imaging (C15-C18) are presented as general knowledge with appropriate citations. The distinction between 'rich' and 'big' data (C21) is a useful conceptual framing. The three challenges (C22) provide a clear organizational structure for the work. These claims are primarily contextual rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The zebrafish posterior lateral line primordium (pLLP) is described as an experimentally tractable model of self-organized organogenesis that migrates along the embryo, periodically depositing rosette-shaped cell clusters. The pLLP is patterned into leader and follower zones and exhibits intricate tissue architecture that is challenging to study at the single-cell level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C23-C27 describe established knowledge about the pLLP model system, appropriately supported by citations (Haas and Gilmour, 2006; Ghysen and Dambly-Chaudi\u00e8re, 2007; Nechiporuk and Raible, 2008; Lecaudey et al., 2008; Galanternik et al., 2016; Nogare et al., 2017). These claims provide necessary biological context but do not represent novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors position ISLA-CBE relative to existing methods, noting that previous approaches focus separately on shape or protein distributions, require stereotypical objects for registration, or (for deep learning) require large datasets and are intractable. ISLA-CBE is not easily reversible but serves as a simple and broadly applicable tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 provide appropriate context for the methodological contribution by comparing to prior work (with citations to Tweedy et al., 2013; Kalinin et al., 2018; Rajaram et al., 2012; Gut et al., 2018; Peng and Murphy, 2011; Johnson et al., 2015, 2017; Marcus, 2018). The limitation of ISLA-CBE (C102) is appropriately acknowledged. These claims support the novelty argument but are primarily contextual.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors conclude that their data-driven approach successfully retrieves both known and novel biological patterns, demonstrating potential for systems-level understanding in developmental biology. They identify future needs including software frameworks, improved interpretation methods, and atlas expansion with additional modalities, envisioning a comprehensive 'digital primordium'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C95-C98 provide high-level framing of the study's contribution and the field's goals. Claims C121-C125 outline future directions that are appropriately speculative. These claims synthesize the work's implications but do not present specific testable results. The vision of a 'digital primordium' (C125) is aspirational rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors provide background on organogenesis as a complex multi-scale process, the challenges of reductionist approaches, and the emergence of data science as a paradigm for data-driven knowledge generation. They note data science has been successful in high-throughput cell biology and omics analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 establish general background knowledge about developmental biology and data science, appropriately supported by citations (Chan et al., 2017; Bizzarri et al., 2013; Dhar, 2013; Blei and Smyth, 2017; Baker et al., 2018; Roukos and Misteli, 2014; Gut et al., 2018; Chessel and Carazo Salas, 2019; Libbrecht and Noble, 2015; Angerer et al., 2017; Huang et al., 2017; Ching et al., 2018). These are contextual claims that frame the study but do not represent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C45",
+      "C57",
+      "C58",
+      "C110",
+      "C117"
+    ],
+    "result": "Various supporting claims about technical considerations (high resolution facilitates segmentation), biological context (planar cell polarity pathways, cell surface mechanics in pLLP, morphogenetic aspects of inside-outside axis), and field-wide challenges (data interpretation in data science).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C29, C45, C57-C58, C110, C117) provide supporting context and rationale for various aspects of the study. They are appropriately cited where relevant and represent either technical knowledge, biological background, or field observations rather than primary findings of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C66",
+      "C87",
+      "C92",
+      "C93",
+      "C120"
+    ],
+    "result": "Several speculative interpretations are offered: greater protrusive activity in leaders may reduce smoothness (C62), the sphericity pattern may indicate unknown mechanical aspects (C66), rare leader-central intermediates may indicate infrequent direct transitions (C87), smoothness patterns may represent additive mechanisms (C92-C93), and adhesion/contractility variations may drive inside-outside sorting (C120).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62, C66, C87, C92-C93, and C120 are explicitly presented as speculative interpretations using language like 'may' and 'possibly'. While these hypotheses are reasonable given the data and grounded in biological principles (with appropriate citations where relevant), they represent interpretations rather than demonstrated findings. They appropriately identify directions for future experimental validation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2013 @@
+{
+  "submission": {
+    "id": "e41782a5-3a9c-46e1-a97a-38fe4df311c5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:59:56.808999Z",
+    "updated_at": "2025-12-02T10:59:56.808999Z"
+  },
+  "content": [
+    {
+      "id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "submission_id": "e41782a5-3a9c-46e1-a97a-38fe4df311c5",
+      "content_type": "manuscript",
+      "content_text": "# Proteome-wide signatures of function in highly diverged intrinsically disordered regions\n\n## Authors\n\n- Taraneh Zarin<sup>1</sup> ([ORCID: 0000-0003-1253-3843](https://orcid.org/0000-0003-1253-3843))\n- Bob Strome<sup>1</sup>\n- Alex N Nguyen Ba<sup>2</sup>\n- Simon Alberti<sup>3</sup> ([ORCID: 0000-0003-4017-6505](https://orcid.org/0000-0003-4017-6505))\n- Julie D Forman-Kay<sup>5</sup> ([ORCID: 0000-0001-8265-972X](https://orcid.org/0000-0001-8265-972X))\n- Alan M Moses<sup>1</sup> ([ORCID: 0000-0003-3118-3121](https://orcid.org/0000-0003-3118-3121)) \u2020\n\n### Affiliations\n\n1. Department of Cell and Systems Biology University of Toronto Toronto Canada\n2. Department of Organismic and Evolutionary Biology Harvard University Cambridge United States\n3. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n4. Center for Molecular and Cellular Bioengineering, Biotechnology Center Technische Universit\u00e4t Dresden Dresden Germany\n5. Program in Molecular Medicine Hospital for Sick Children Toronto Canada\n6. Department of Biochemistry University of Toronto Toronto Canada\n7. Department of Ecology and Evolutionary Biology University of Toronto Toronto Canada\n8. Department of Computer Science University of Toronto Toronto Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nIntrinsically disordered regions make up a large part of the proteome, but the sequence-to-function relationship in these regions is poorly understood, in part because the primary amino acid sequences of these regions are poorly conserved in alignments. Here we use an evolutionary approach to detect molecular features that are preserved in the amino acid sequences of orthologous intrinsically disordered regions. We find that most disordered regions contain multiple molecular features that are preserved, and we define these as \u2018evolutionary signatures\u2019 of disordered regions. We demonstrate that intrinsically disordered regions with similar evolutionary signatures can rescue function in vivo, and that groups of intrinsically disordered regions with similar evolutionary signatures are strongly enriched for functional annotations and phenotypes. We propose that evolutionary signatures can be used to predict function for many disordered regions from their amino acid sequences.\n\n## Introduction\n\nIntrinsically disordered protein regions are associated with a large array of functions (reviewed in Forman-Kay and Mittag, 2013), including cell signaling (Iakoucheva et al., 2004; Tompa, 2014; Wright and Dyson, 2015), mediation of protein-protein interactions (Borgia et al., 2018; Tang et al., 2012; Tompa et al., 2015), and the formation of membraneless organelles through phase separation (Banani et al., 2017; Franzmann et al., 2018; Nott et al., 2015; Patel et al., 2015; Riback et al., 2017). These regions are widespread in eukaryotic proteomes (Peng et al., 2013; Ward et al., 2004), but do not fold into stable secondary or tertiary structures, and do not typically perform enzymatic functions (Uversky, 2011). Although intrinsically disordered regions can readily be identified based on their primary amino acid sequence (Doszt\u00e1nyi et al., 2005; Uversky, 2002), it remains a challenge to associate these regions with specific biological and biochemical functions based on their amino acid sequences, limiting systematic functional analysis. In stark contrast, for folded regions, protein function can often be predicted with high specificity based on the presence of conserved protein domains (El-Gebali et al., 2019) or enzymatic active sites (Ondrechen et al., 2001). Analogous methods to assign function to intrinsically disordered regions based on evolutionary conservation (or other sequence properties) are of continuing research interest (reviewed in van der Lee et al., 2014).\n\nWe and others (Davey et al., 2012; Nguyen Ba et al., 2012) have shown that short segments of evolutionary conservation in otherwise rapidly evolving disordered regions point to key functional residues, often important for posttranslational modifications, or other transient protein interactions (Tompa et al., 2014). However, these conserved segments make up a small fraction of disordered regions (5%), and the vast majority of disordered amino acids show little evidence for evolutionary constraint in alignments of primary amino acid sequences (Colak et al., 2013). It is currently unclear how intrinsically disordered regions persist at high frequency in the proteome, given these apparently low levels of evolutionary constraint (Afanasyeva et al., 2018; Brown et al., 2010; Colak et al., 2013; de la Chaux et al., 2007; Khan et al., 2015; Light et al., 2013; T\u00f3th-Petr\u00f3czy and Tawfik, 2013).\n\nOne hypothesis for the preponderance of disordered regions despite high amino acid sequence divergence, is that the \u2018molecular features\u2019 of disordered regions that are important for function (such as length [Schlessinger et al., 2011], complexity [Alberti et al., 2009; Halfmann, 2016; Kato et al., 2012; Molliex et al., 2015], amino acid composition [Moesa et al., 2012], and net charge [Mao et al., 2010; Strickfaden et al., 2007; Zarin et al., 2017]) do not lead to detectable similarity in primary amino acid sequence alignments. Indeed, recently, evidence that such molecular features can be under evolutionary constraint has been reported for some proteins (Daughdrill et al., 2007; Lemas et al., 2016; Zarin et al., 2017). For example, we showed that signaling function of a disordered region in the Saccharomyces cerevisiae protein Ste50 appears to depend on its net charge, and we found evidence that this molecular feature is under evolutionary constraint, despite no detectable sequence similarity in alignments (Zarin et al., 2017).\n\nHere we sought to test whether evolutionary preservation of molecular features is a general property of highly diverged intrinsically disordered protein regions. To do so, we obtained a set of 82 sequence features reported in the literature to be important for disordered region function (Supplementary file 1 - Table S1). We computed these for S.\u00a0cerevisiae intrinsically disordered regions and their orthologs, and compared them to simulations of molecular evolution where conserved segments (if any) are retained, but where there is no selection to retain molecular features (Nguyen Ba et al., 2014; Nguyen Ba et al., 2012). Deviations from the simulations indicate that the highly diverged intrinsically disordered regions are preserving molecular features during evolution through natural selection (Zarin et al., 2017).\n\nWe find that many intrinsically disordered regions show evidence for selection on multiple molecular features, which we refer to as an \u2018evolutionary signature\u2019. Remarkably, we show that intrinsically disordered regions with similar evolutionary signatures appear to rescue function, while regions with very different signatures cannot, strongly supporting the idea that the preserved molecular features are important for disordered region function. By clustering intrinsically disordered regions based on these evolutionary signatures, we obtain (to our knowledge) the first global view of the functional landscape of these enigmatic protein regions. We recover patterns of molecular features known to be associated with intrinsically disordered region functions such as subcellular organization and targeting signals. We also identify new patterns of molecular features not previously associated with functions of disordered regions such as DNA repair and ribosome biogenesis. Finally, we show that similarity of evolutionary signatures can generate hypotheses about the function of completely disordered proteins. Taken together, our results indicate that evolutionary constraint on molecular features in disordered regions is so widespread that sequence-based prediction of their functions should be possible based on molecular features.\n\n## Results\n\n### Proteome-wide evolutionary analysis reveals evolutionarily constrained sequence features are widespread in highly diverged intrinsically disordered regions\n\nWe identified more than 5000 intrinsically disordered regions (IDRs) in the S.\u00a0cerevisiae proteome and quantified their evolutionary divergence (see Materials\u00a0and\u00a0methods). As expected, we found that the IDRs evolve more rapidly than the regions that were not identified as disordered (Figure 1\u2014figure supplement 1). We also confirmed that the vast majority of these IDRs are distinct from Pfam domains (Figure 1\u2014figure supplement 2). These results are consistent with previous reports (Brown et al., 2010; Colak et al., 2013; de la Chaux et al., 2007; Khan et al., 2015; Light et al., 2013; T\u00f3th-Petr\u00f3czy and Tawfik, 2013) that the primary amino acid sequence alignments of IDRs show high levels of divergence and it is not possible to annotate IDR functions using standard homology-based approaches.\n\nTo test for selection on molecular features in these IDRs, we applied a method that we recently used to show evidence of selection on an IDR in the S.\u00a0cerevisiae Ste50 protein (Zarin et al., 2017). We obtained 82 molecular features that have been reported or hypothesized to be important for IDR function (Supplementary file 1 - Table S1) and tested whether these molecular features are under selection in the S. cerevisiae IDRs (see Materials\u00a0and\u00a0methods for details). Briefly, we compare the distribution of a given molecular feature in a set of orthologous IDRs to a null expectation, which is formed by simulating the evolution of each IDR. When the mean or variance of the molecular feature across the orthologous IDRs deviates from the distribution of means or variances in our null expectation, we predict that this feature is under selection, and thus could be important for the function of the IDR in question. For example, in the Ste50 IDR, as reported previously (Zarin et al., 2017), we found that the variance of the net charge with phosphorylation of the IDR falls outside of our null expectation, while the mean falls within our null expectation (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig1-v4.jpg)\n\n**Figure 1.:** (A) Left: Mean versus log variance of the \u2018net charge with phosphorylation\u2019 molecular feature for the real Ste50 IDR (a.a. 152\u2013250) ortholog set and simulated Ste50 orthologous IDR sets (N\u00a0=\u00a01000). Right: Example simulated Ste50 orthologous IDR sets (no. 663 and no. 56 out of 1000) and the real Ste50 IDR and its orthologs, colored according to percent identity in the primary amino acid sequence. (B) Percentage of IDRs that are significantly deviating from simulations in mean, log variance, or both mean and log variance of each molecular feature. (C) Frequency [1\u00a0+\u00a0log(frequency)] of number of significant molecular features per IDR for the real IDRs (yellow) versus the random expectation (blue) obtained from a set of simulated IDRs.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig1-figsupp1-v4.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Boxplot boxes represent the 25th-75th percentile of the data, the black line represents the median, and whiskers represent 1.5*the interquartile range. Outliers fall outside the 1.5*interquartile range, and are represented by unfilled circles.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig1-figsupp2-v4.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Percentage of regions with 0% Pfam overlap for IDRs is 91%, whereas for non-IDRs it is 74%.\n\nWe applied this analysis to 5149 IDRs (see Materials\u00a0and\u00a0methods) and computed the percentage of IDRs where the evolution of each molecular feature fell beyond our null expectation (empirical p<0.01, Figure 1B). We find that charge properties such as net charge and acidic residue content are most likely to deviate from our null expectation (more than 50% of IDRs) (Figure 1B). This is in contrast to non-conserved motif density, which deviates from our null expectation in 21.6% of IDRs at most (for CDK phosphorylation consensus sites). Other molecular features that frequently deviate from our null expectation are sequence complexity (43.0%), asparagine residue content (43.3%), and physicochemical features such as isoelectric point (53.9%). We also found that the mean of each molecular feature deviates from our null expectation more often than the variance (Figure 1B). These results suggest that there are many more molecular features that are under selection in IDRs than is currently appreciated (Daughdrill et al., 2007; Lemas et al., 2016; Zarin et al., 2017).\n\nNext, we quantified the number of molecular features that are significant per IDR, assigning significance to a molecular feature if either the mean, variance, or both mean and variance of the molecular feature deviated from our null expectation (empirical p<0.01, Figure 1C). Surprisingly, many IDRs have many significant molecular features, with a median of 15 significant molecular features per IDR (compared to one significant feature expected by chance; see Materials\u00a0and\u00a0methods). Although many of our features are correlated (see Discussion), these results suggest that the deviation from our expectations of molecular feature evolution is not due to a few outlier IDRs, but rather that most IDRs tend to have multiple molecular features that are under selection.\n\n### Intrinsically disordered regions with similar molecular features can perform similar functions despite negligible similarity of primary amino acid sequences\n\nThe analysis above indicates that highly diverged IDRs typically contain multiple molecular features that are under selection. To summarize the set of preserved molecular features in each IDR, we computed Z-scores comparing either the observed mean or variance of each molecular feature in the orthologous IDRs to our simulations (see Materials\u00a0and\u00a0methods). We call these summaries of evolution of molecular features (vectors of Z-scores) \u2018evolutionary signatures\u2019. If the features are important for function, IDRs with similar evolutionary signatures are predicted to perform (or at least be capable of performing) similar molecular functions. To test this hypothesis, we replaced the endogenous Ste50 IDR with several IDRs from functionally unrelated proteins: Pex5, a peroxisomal signal receptor (Erdmann and Blobel, 1996), Stp4, a predicted transcription factor (Abdel-Sater et al., 2004), and Rad26, a DNA-dependent ATPase involved in Transcription Coupled Repair (Gregory and Sweder, 2001; Guzder et al., 1996) (Figure 2A). Ste50 is an adaptor protein in the High Osmolarity Glycerol (HOG) and mating pathways (Hao et al., 2008; Jansen et al., 2001; Tatebayashi et al., 2007; Truckses et al., 2006; Yamamoto et al., 2010) whose IDR is important for basal mating pathway activity (as measured by expression of a reporter driven by the Fus1 promoter) (Hao et al., 2008; Zarin et al., 2017). The IDRs that we used to replace the Ste50 IDR all have negligible similarity when their primary amino acid sequences are aligned, but vary in the similarity of their evolutionary signatures (to the Ste50 IDR, Figure 2A). We found that the basal mating reporter expression in each strain corresponded to how similar the evolutionary signature of the replacing IDR was to that of the Ste50 IDR (all mutants significantly different from wildtype and each other, Wilcoxon test p<0.05, Figure 2B). To further assay mating pathway activity, we exposed the wildtype and chimaeric strains with IDRs from Pex5, Stp4 and Rad26 to mating pheromone. We found that the two chimaeric strains that were more similar in their evolutionary signatures to the wildtype (Pex5 and Stp4) began the process of \u2018shmooing\u2019, or responding to pheromone, whereas the strain that had the IDR with the most different evolutionary signature (Rad 26) could not shmoo (Figure 2C; full micrographs in Figure 2\u2014figure supplement 1). Although it is challenging to quantitate similarity between evolutionary signatures comprised of correlated features (see Discussion), our ability to use these signatures to predict which IDRs can rescue signaling function suggests that they may be associated with IDR function.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig2-v4.jpg)\n\n**Figure 2.:** (A) Multiple sequence alignment of Ste50 IDR (a.a. 152\u2013250), Pex5 IDR (a.a. 77\u2013161), Stp4 (a.a. 144\u2013256), and Rad26 IDR (a.a. 163\u2013239) shows negligible similarity when their primary amino acid sequences are aligned, while evolutionary signatures show that the Pex5 and Stp4 IDRs are more similar to the Ste50 IDR than the Rad26 IDR. While the Ste50 IDR has five consensus phosphorylation sites that are implicated in its function (Hao et al., 2008; Yamamoto et al., 2010; Zarin et al., 2017), the Pex5 IDR and Rad26 IDR have none, and the Stp4 IDR has 4. IDRs are presented in order of increasing Euclidian distance between their evolutionary signatures, though we do not recommend using this measure to quantitate similarity between evolutionary signatures independently (see Discussion). The Ste50 IDR is located between the Sterile Alpha Motif (SAM) and Ras Association (RA) domains in the Ste50 protein. (B) Boxplots show distribution of values corresponding to basal Fus1pr-GFP activity in an S.\u00a0cerevisiae strain with the wildtype Ste50 IDR compared to strains with the Pex5, Stp4, or Rad26 IDR swapped to replace the Ste50 IDR in the genome. Boxplot boxes represent the 25th-75th percentile of the data, the black line represents the median, and whiskers represent 1.5*the interquartile range. Outliers fall outside the 1.5*interquartile range, and are represented by unfilled circles. Distribution of GFP activity is based on quantification of GFP intensity in single cells pooled from four colonies (which we define as biological replicates) for each strain; sample sizes for each distribution are as follows: WT n\u00a0=\u00a0588 cells, Pex5 IDR n\u00a0=\u00a0196 cells, Stp4 IDR n\u00a0=\u00a0228 cells, Rad26 IDR n\u00a0=\u00a0271 cells. (C) Brightfield micrographs showing each strain from part B following exposure to pheromone. Shmooing cells are those which have elongated cell shape, representing mating projections.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig2-figsupp1-v4.jpg)\n\n### Proteome-wide view of evolutionary signatures in disordered regions reveals association with function\n\nTo test the association of function with evolutionary signatures in highly diverged IDRs, we clustered and visualized the evolutionary signatures for 4646 IDRs in the proteome (see Materials\u00a0and\u00a0methods) (Figure 3). Remarkably, the evolutionary signatures reveal a global view of disordered region function. The IDRs fall into at least 23 clusters based on similarity of their evolutionary signatures (groups A through W, Figure 3) that are significantly associated with specific biological functions (enriched for Gene Ontology (GO) term, phenotype, and/or literature annotations, False Discovery Rate [FDR]=5%, Benjamini-Hochberg corrected) (Table 1; full table of enrichments in supplementary data; clustered IDRs and evolutionary signatures in supplementary data). Given that this level of specificity of biological information has not been previously associated with sequence properties of highly diverged IDRs, we performed a series of controls, ensuring that our clusters are not based on sequence similarity between IDRs, that our annotation enrichment results are not due to a mis-specification of the null hypothesis, and to confirm that these annotation enrichment results cannot be obtained simply based on amino acid frequencies of IDRs (Supplementary file 1 - Table S2; see Materials\u00a0and\u00a0methods).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig3-v4.jpg)\n\n**Figure 3.:** A-W show clusters significantly enriched for annotations (see Table 1; full table of enrichments in supplementary data). Cluster names represent summary of enriched annotations.\n\n**Table 1.**\n Top five enriched GO term annotations and top three enriched phenotype annotations for each cluster (in order of decreasing corrected p-values).Full table of\u00a0>1000 significant GO term, phenotype, and literature enrichments in supplementary data.Table 1\u2014source data 1.Full table of enrichments for Table 1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>ID</th>\n      <th>Annotations (Positive proteins in cluster/Total proteins in cluster)</th>\n      <th>Corrected P &lt;=</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>A</td>\n      <td>nucleus (201/295), rRNA processing (40/295), ribosome biogenesis (39/295), nucleolus (50/295), maturation of SSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA) (14/295), inviable (110/295), RNA\u00a0accumulation\u00a0decreased (46/295), RNA\u00a0accumulation\u00a0increased (39/295)</td>\n      <td>1.46e-03</td>\n    </tr>\n    <tr>\n      <td>B</td>\n      <td>amino acid transmembrane transport (8/140), amino acid transmembrane transporter activity (8/140), transmembrane transport (21/140), amino acid transport (9/140)</td>\n      <td>1.11e-02</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>nucleolus (42/159), rRNA processing (27/159), ribosome biogenesis (26/159), nucleus (107/159), preribosome, large subunit precursor (13/159), RNA\u00a0accumulation\u00a0increased (28/159), inviable (60/159), RNA\u00a0accumulation\u00a0decreased (27/159)</td>\n      <td>4.88e-03</td>\n    </tr>\n    <tr>\n      <td>D</td>\n      <td>nucleus (72/86), DNA repair (20/86), cellular response to DNA damage stimulus (18/86), DNA binding (28/86), damaged DNA binding (7/86), mutation\u00a0frequency\u00a0increased (14/86), chromosome plasmid maintenance decreased (29/86), cell cycle progression in S phase increased duration (4/86)</td>\n      <td>4.21e-02</td>\n    </tr>\n    <tr>\n      <td>E</td>\n      <td>motor activity (4/89), ATP binding (25/89), ASTRA complex (3/89)</td>\n      <td>4.23e-02</td>\n    </tr>\n    <tr>\n      <td>F</td>\n      <td>90S preribosome (11/73), rRNA processing (14/73), ribosome biogenesis (14/73), endonucleolytic cleavage in ITS1 to separate SSU-rRNA from 5.8S rRNA and LSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA) (6/73), nucleolus (15/73)</td>\n      <td>2.49e-02</td>\n    </tr>\n    <tr>\n      <td>G</td>\n      <td>nuclear pore nuclear basket (4/35), nucleocytoplasmic transporter activity (4/35)</td>\n      <td>4.54e-02</td>\n    </tr>\n    <tr>\n      <td>H</td>\n      <td>nucleic acid binding (16/66), translational initiation (7/66), cytoplasmic stress granule (9/66), mRNA binding (13/66), translation initiation factor activity (6/66)</td>\n      <td>3.60e-03</td>\n    </tr>\n    <tr>\n      <td>I</td>\n      <td>regulation of transcription, DNA-templated (23/52), transcription, DNA-templated (22/52), positive regulation of transcription from RNA polymerase II promoter (12/52)</td>\n      <td>6.58e-03</td>\n    </tr>\n    <tr>\n      <td>J</td>\n      <td>RNA polymerase II transcription factor activity, sequence-specific DNA binding (10/52), positive regulation of transcription from RNA polymerase II promoter (14/52), regulation of transcription, DNA-templated (21/52), RNA polymerase II core promoter proximal region sequence-specific DNA binding (9/52), transcription, DNA-templated (19/52)</td>\n      <td>1.22e-02</td>\n    </tr>\n    <tr>\n      <td>K</td>\n      <td>trehalose biosynthetic process (2/19), Golgi to endosome transport (3/19), ubiquitin binding (4/19)</td>\n      <td>3.81e-02</td>\n    </tr>\n    <tr>\n      <td>L</td>\n      <td>sequence-specific DNA binding (21/70), RNA polymerase II core promoter proximal region sequence-specific DNA binding (13/70), DNA binding (27/70), positive regulation of transcription from RNA polymerase II promoter (17/70), regulation of transcription, DNA-templated (27/70)</td>\n      <td>6.75e-05</td>\n    </tr>\n    <tr>\n      <td>M</td>\n      <td>structural constituent of nuclear pore (8/54), protein targeting to nuclear inner membrane (5/54), nuclear pore central transport channel (6/54), mRNA transport (9/54), nuclear pore (8/54)</td>\n      <td>5.87e-05</td>\n    </tr>\n    <tr>\n      <td>N</td>\n      <td>sequence-specific DNA binding (18/39), DNA binding (19/39), zinc ion binding (11/39), regulation of transcription, DNA-templated (19/39), RNA polymerase II transcription factor activity, sequence-specific DNA binding (8/39)</td>\n      <td>6.21e-04</td>\n    </tr>\n    <tr>\n      <td>O</td>\n      <td>regulation of transcription, DNA-templated (53/130), transcription, DNA-templated (50/130), sequence-specific DNA binding (25/130), positive regulation of transcription from RNA polymerase II promoter (26/130), nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay (8/130), endocytosis\u00a0decreased (26/130), invasive\u00a0growth\u00a0increased (37/130), cell\u00a0shape\u00a0abnormal (15/130)</td>\n      <td>1.29e-02</td>\n    </tr>\n    <tr>\n      <td>P</td>\n      <td>intracellular signal transduction (19/129), protein kinase activity (22/129), protein serine/threonine kinase activity (22/129), kinase activity (24/129), phosphorylation (24/129)</td>\n      <td>3.34e-06</td>\n    </tr>\n    <tr>\n      <td>Q</td>\n      <td>extracellular region (33/67), fungal-type cell wall (30/67), cell wall (25/67), anchored component of membrane (20/67), cell wall organization (23/67)</td>\n      <td>1.01e-20</td>\n    </tr>\n    <tr>\n      <td>R</td>\n      <td>positive regulation of transcription from RNA polymerase II promoter (21/119), DNA binding (32/119), RNA polymerase II core promoter proximal region sequence-specific DNA binding (12/119), transcription factor activity, sequence-specific DNA binding (10/119), transcription, DNA-templated (33/119)</td>\n      <td>1.55e-02</td>\n    </tr>\n    <tr>\n      <td>S</td>\n      <td>integral component of membrane (59/133), membrane (68/133), fungal-type vacuole membrane (18/133), vacuole (18/133), L-tyrosine transmembrane transporter activity (4/133)</td>\n      <td>5.48e-03</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>stress-activated protein kinase signaling cascade (4/33), regulation of apoptotic process (4/33)</td>\n      <td>3.57e-02</td>\n    </tr>\n    <tr>\n      <td>U</td>\n      <td>cytoskeleton (15/80), spindle (6/80), kinetochore microtubule (3/80)</td>\n      <td>1.47e-02</td>\n    </tr>\n    <tr>\n      <td>V</td>\n      <td>fungal-type vacuole (15/43), mannosylation (7/43), integral component of membrane (28/43), cell wall mannoprotein biosynthetic process (6/43), alpha-1,6-mannosyltransferase activity (4/43)</td>\n      <td>1.45e-05</td>\n    </tr>\n    <tr>\n      <td>W</td>\n      <td>mitochondrion (144/165), mitochondrial inner membrane (57/165), mitochondrial matrix (34/165), oxidation-reduction process (31/165), mitochondrial translation (22/165), respiratory growth decreased rate (81/165), respiratory\u00a0growth\u00a0absent (71/165), mitochondrial genome maintenance absent (25/165)</td>\n      <td>3.15e-15</td>\n    </tr>\n  </tbody>\n</table>\n\nSeveral of the functions that we find enriched within our clusters have been previously associated with molecular features of IDRs, which we recover in our analysis. For example, we find a cluster that is associated with \u2018nucleocytoplasmic transporter activity\u2019 (cluster M) that includes IDRs from FG-NUP proteins Nup42, Nup145, Nup57, Nup49, Nup116, and Nup100 that form part of the nuclear pore central transport channel (Alber et al., 2007). In cluster M, we find molecular features such as increased asparagine content, increased polar residue content, and increased proline and charged residue demixing (\u2018Omega\u2019; Martin et al., 2016) in addition to the well-known \u2018FG\u2019 repeats that are found in the FG-NUP IDRs (reviewed in Terry and Wente, 2009). Another interesting example is cluster O, which contains IDRs from proteins that are enriched for a wide range of annotations such as \u2018P-body\u2019, \u2018cytoplasmic stress granule\u2019, \u2018actin cortical patch\u2019, and \u2018DNA binding\u2019. Cluster O contains IDRs from proteins associated with phase separation and membraneless organelles such as Sup35 (Franzmann et al., 2018) and Dhh1 (Protter et al., 2018). The evolutionary signatures for the IDRs in this cluster include features that are typically associated with so-called \u2018prionogenic\u2019, low complexity disordered regions, such as increased mean polyglutamine repeats (Alberti et al., 2009), but also indicate that there are other relevant molecular features for this set of disordered regions (Figure 4A). For example, in these regions, the variance of the net charge is reduced, and charged residues are depleted during evolution. These sequence features are illustrated in Figure 4B, where we compare the presence of glutamine and charged residues in an example disordered region from this cluster (Ccr4; a protein that is known to accumulate in P-bodies; Teixeira and Parker, 2007) to an example from the corresponding simulation (Figure 4B). Taken together, these results indicate that our analysis captures molecular features that have been previously associated with IDR functions, and suggests additional molecular features in these IDRs that may be important for their functions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig4-v4.jpg)\n\n**Figure 4.:** (A) Pattern of evolutionary signatures in cluster O. (B) Example disordered region from cluster O, Ccr4, with a subset of highlighted molecular features compared between its real set of orthologs and an example set of simulated orthologous IDRs. Species included in phylogeny in order from top to bottom are S.\u00a0cerevisiae, Saccharomyces mikatae, Saccharomyces kudriavzevii, Saccharomyces uvarum, Candida glabrata, Kazachstania naganishii, Naumovozyma castellii, Naumovozyma dairenensis, Tetrapisispora blattae, Tetrapisispora phaffii, Vanderwaltozyma polyspora, Zygosaccharomyces rouxii, Torulaspora delbrueckii, Kluyveromyces lactis, Eremothecium (Ashbya) cymbalariae, Lachancea waltii.\n\nWe also find functions associated with our clusters that have not been previously associated with molecular features of IDRs. For example, cluster D (Figure 5A) is associated with DNA repair, and its evolutionary signature contains increased mean \u2018Kappa\u2019 (Das and Pappu, 2013) and decreased mean \u2018Sequence Charge Decoration\u2019 (SCD) (Sawle and Ghosh, 2015), both of which indicate that there is an increased separation of positive and negatively charged residues in these IDRs compared to our null expectation. This is illustrated by the IDR from Srs2, a protein that is known to be involved in DNA repair (Aboussekhra et al., 1989; Yeung and Durocher, 2011), and shows high charge separation compared to an example corresponding simulation (Figure 5B). The evolutionary signature for this cluster also reveals an increased mean fraction of charged residues and negatively charged residues in particular (Figure 5A), which is also clear in the comparison between the real Srs2 orthologs and the simulation (Figure 5B). Although acidic stretches have been associated with IDRs in histone chaperones (Warren and Shechter, 2017), to our knowledge, the separation of oppositely charged residues has not been associated with the wider functional class of DNA repair IDRs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig5-v4.jpg)\n\n**Figure 5.:** (A) Pattern of evolutionary signatures in cluster D. (B) Example disordered region from cluster D, Srs2, with a subset of highlighted molecular features compared between its real set of orthologs and an example set of simulated orthologous IDRs. Species included in phylogeny in order from top to bottom are S.\u00a0cerevisiae, S.\u00a0mikatae, S.\u00a0kudriavzevii, S.\u00a0uvarum, C.\u00a0glabrata, Kazachstania africana, K.\u00a0naganishii, N.\u00a0castellii, N.\u00a0dairenensis, T.\u00a0phaffii, Z.\u00a0rouxii, T.\u00a0delbrueckii, K.\u00a0lactis, Eremothecium (Ashbya) gossypii, E.\u00a0cymbalariae, Lachancea kluyveri, Lachancea thermotolerans, L.\u00a0waltii.\n\nOur analysis also indicates that there is not necessarily a 1:1 mapping between IDRs with shared evolutionary signatures and current protein functional annotations. For example, we find three clusters associated with ribosome biogenesis (clusters A, C, F) that cannot be distinguished based on their enriched GO terms. The largest of these is cluster A, where 201/295 proteins have a \u2018nucleus\u2019 annotation, and 110/295 are essential proteins (\u2018inviable\u2019 deletion phenotype). This cluster is also enriched for several phenotypes associated with RNA accumulation (Table 1, cluster A; see supplementary data for full list of significant enrichments). Cluster A contains highly acidic IDRs with CKII phosphorylation consensus sites. CKII has been previously associated with nucleolar organization (Louvet et al., 2006), and a previous analysis of non-conserved consensus phosphorylation sites found ribosome biogenesis as strongly enriched in predicted CKII targets (Lai et al., 2012). In contrast, cluster C shares neither of these molecular features with cluster A, and cluster F shares only highly acidic residue content. Interestingly, cluster C contains increased mean polylysine repeats, and is significantly enriched for proteins that have been experimentally verified as targets for lysine polyphosphorylation (Bentley-DeSousa et al., 2018) (p=2.7\u00d710\u22123, hypergeometric test). Overall, although the IDRs in these clusters share different evolutionary signatures, they are all found in proteins associated with ribosome biogenesis. We hypothesize that these different signatures point to different functions relating to ribosome biogenesis, but we have no indication of what these might be based on current protein annotations (see Discussion).\n\nWe find similar observations in multiple clusters that have distinct evolutionary signatures enriched for terms associated with regulation of transcription (clusters I, J, L, N, O, R). These clusters are not clearly separable based on mechanistic steps of transcription (such as sequence-specific DNA binding, chromatin remodeling, etc.). Some of these clusters exhibit molecular features that have been associated with different classes of transcriptional activation domains that are based on amino acid composition (reviewed in Frietze and Farnham, 2011). For example, clusters J, O and N have increased glutamine residue content, and cluster N has increased proline residue content. However, clusters I and R have no amino acid composition bias, while cluster N has increased proline-directed phosphorylation consensus sites, suggesting post-translational modifications. This indicates that our analysis reveals new sub-classifications of transcription-associated IDRs. While we hypothesize that these IDRs have different functions, once more we have no indication of what these functions could be based on current protein annotations (see Discussion).\n\n### A cluster of evolutionary signatures is associated with N-terminal mitochondrial targeting signals\n\nOne of our clusters of intrinsically disordered regions is exceptionally strongly associated with the mitochondrion (144/165 proteins in the cluster) and other annotations that are related to mitochondrial localization and function (for example, 81/165 proteins in the cluster have shown a decreased respiratory growth phenotype) (Table 1, cluster W; see supplementary data for full list of significant enrichments). The vast majority of mitochondrial proteins are synthesized with N-terminal pre-sequences (Maccecchini et al., 1979) (also known as N-terminal targeting signals) that are cleaved upon import (V\u00f6gtle et al., 2009) and are thought to sample dynamic structural configurations (Saitoh et al., 2011; Saitoh et al., 2007) (Figure 6A). Since 145/165 of the disordered regions in this cluster are N-terminal, we hypothesized that this cluster contains disordered regions that are associated with mitochondrial targeting signals (V\u00f6gtle et al., 2009). In line with this hypothesis, we find previously described sequence features of mitochondrial N-terminal targeting signals in our evolutionary signatures; for example, these IDRs are depleted of negatively charged residues, have an abundance of positively charged residues, and are much more hydrophobic than our null expectation (Figure 6\u2014figure supplement 1A) (Garg and Gould, 2016; V\u00f6gtle et al., 2009). Examples of disordered regions in this cluster include those of the Heme A synthase Cox15 and the mitochondrial inner membrane ABC (ATP-binding cassette) transporter Atm1 (Figure 6\u2014figure supplement 1B). In order to test our hypothesis that this cluster of evolutionary signatures identifies mitochondrial N-terminal targeting signals, we used a recently published tool that scores the probability that a sequence is a mitochondrial targeting signal (Fukasawa et al., 2015). Using this tool, we find that the IDRs in cluster W have a much higher probability of being mitochondrial targeting signals than any other cluster with enriched annotations in our analysis (Bonferroni-corrected p\u22646.5\u00d710\u221211, Wilcoxon test) (Figure 6B, red box). Interestingly, the adjacent cluster V (Figure 6B, purple box), which we hypothesize to contain targeting sequences for the endoplasmic reticulum, is distinct from cluster W in this analysis.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig6-v4.jpg)\n\n**Figure 6.:** (A) Schematic (not to scale) showing the path of a mitochondrial precursor peptide (with N-terminal targeting sequence in red) from the cytosol, where it is translated, to the mitochondrial matrix, where the peptide folds and targeting sequence is cleaved. (B) Violin plots (median indicated by black dot, thick black line showing 25th-75th percentile, and whiskers showing outliers) show distributions of mitochondrial presequence probability scores for all IDRs in each cluster. The cluster that we predict to contain mitochondrial N-terminal targeting signals is outlined in red, while the cluster that we predict to contain endoplasmic reticulum targeting signals is outlined in purple. (C) Micrographs of S.\u00a0cerevisiae strains in which Cox15 is tagged with GFP, with either the wildtype Cox15 IDR, deletion of the Cox15 IDR, replacement of the Cox15 IDR with the Atm1 IDR (also in the mitochondrial targeting signal cluster), or replacement of the Cox15 IDR with the Emp47 IDR (from the endoplasmic reticulum targeting signal cluster).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig6-figsupp1-v4.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Pattern of evolutionary signatures in cluster W. (B) Multiple sequence alignments of example disordered regions from Cox15 (top) and Atm1 (bottom) from cluster W, showing a subset of highlighted molecular features. Species included in phylogeny in order from top to bottom are S.\u00a0cerevisiae, S.\u00a0mikatae, S.\u00a0kudriavzevii, S.\u00a0uvarum, C.\u00a0glabrata, K.\u00a0africana, K.\u00a0naganishii, N.\u00a0castellii, N.\u00a0dairenensis, T.\u00a0phaffii, V.\u00a0polyspora, Z.\u00a0rouxii, T.\u00a0delbrueckii, K.\u00a0lactis, E.\u00a0gossypii, E.\u00a0cymbalariae, L.\u00a0kluyveri, L.\u00a0thermotolerans, L.\u00a0waltii.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig6-figsupp2-v4.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig6-figsupp3-v4.jpg)\n\n**Figure 6\u2014figure supplement 3.:** From left to right: Mdl2-GFP has a mitochondrial localization in the wildtype (WT) strain, knocking out the Mdl2 IDR abolishes wildtype localization, and replacing the Mdl2 IDR with that of Atm1 rescues mitochondrial localization.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/46883/elife-46883-fig6-figsupp4-v4.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Scale bars represent 10 micrometers. (A) GFP-tagged Cox15 IDR\u2206Emp47 reverted to wildtype Cox15-GFP. (B) GFP-tagged Cox15 IDR\u22060 reverted to wildtype Cox15-GFP.\n\nIf the specificity of the function of the IDRs in this cluster is strong, we predict that swapping an IDR from cluster W with that of a verified mitochondrial targeting sequence would result in correct localization to the mitochondria, while swapping an IDR from a different cluster would not. Mitochondrial precursor peptides that are not correctly targeted to the mitochondria are thought to be degraded (M\u00e5rtensson et al., 2019; Weidberg and Amon, 2018). To test this, we first used the (uncharacterized) disordered region from Atm1 that falls into cluster W to replace that of Cox15, which also falls into cluster W and is an experimentally verified mitochondrial targeting sequence (V\u00f6gtle et al., 2009) (Figure 6C). In accordance with our hypothesis, we find that GFP-tagged Cox15 correctly localizes to the mitochondria when its disordered region is swapped with that of Atm1, but does not localize correctly when its disordered region is deleted (Figure 6C; full micrographs in Figure 6\u2014figure supplement 2). We also repeated this experiment with another protein that has an experimentally verified N-terminal mitochondrial targeting sequence, Mdl2, and found the same results (Figure 6\u2014figure supplement 3). Next, we replaced the Cox15 IDR with the disordered region of Emp47, which has an evolutionary signature that we predict to be associated with targeting signals for the endoplasmic reticulum (cluster V). In this case, as we predicted, we found no mitochondrial localization of Cox15-GFP. For strains where there was no discernible localization to the mitochondria (and no presence of GFP), we wanted to rule out that these were caused by the transformation process. Therefore, we restored the wildtype N-terminal IDR in the strains in which the Cox15 IDR was replaced with Emp47 or knocked out (Figure 6\u2014figure supplement 4). Because we were able to rescue the mitochondrial localization with the restored wildtype IDR, we conclude that the absence of mitochondrial GFP expression is directly linked to the mutations we made in the N-terminal IDR of each strain. Importantly, these putative targeting signals have no detectable similarity when their primary amino acid sequences are aligned, and we therefore suggest that the similarity in their molecular features is preserved by stabilizing selection (see Discussion). These results confirm that IDRs with similar evolutionary signatures can rescue subcellular targeting functions, and suggest that the evolutionary signatures are specific enough to predict function of at least some IDRs.\n\n### Evolutionary signatures of function can be used for functional annotation of fully disordered proteins\n\nA major challenge to proteome-wide analysis of IDRs is the limited applicability of homology-based sequence analysis. Proteins with a mixture of disordered regions and structured domains can be assigned function based on homology to their structured domains, but fully disordered proteins are much more difficult to classify (reviewed in van der Lee et al., 2014). We therefore asked whether hypotheses about functions of fully disordered proteins could be generated using evolutionary signatures. We identified ten yeast proteins of unknown function that are predicted to be most disordered (see Materials\u00a0and\u00a0methods). To predict function according to our clustering analysis, we simply assigned them the annotation of the cluster in which they fell (Table 2). For example, Rnq1 has been extensively studied as a \u2018yeast prion\u2019, but there is no clear function associated with this protein under normal conditions (Kroschwald et al., 2015; Sondheimer and Lindquist, 2000; Treusch and Lindquist, 2012). Interestingly, Rnq1 falls into our cluster of disordered regions that are associated with nucleocytoplasmic transport (cluster M) and the nuclear pore central transport channel. While Rnq1 is annotated with a cytosolic localization, an RNQ1 deletion was recently shown to cause nuclear aggregation of the polyQ-expanded huntingtin exon1 (Httex1) in a model of Huntington\u2019s disease (Zheng et al., 2017). Therefore, we propose a role for Rnq1 in nucleocytoplasmic transport. For some of these largely disordered proteins, we obtain large disordered segments falling into multiple clusters (indicated by more than one cluster ID in Table 2), suggesting more than one possible function for the protein (see Discussion). To estimate the predictive power of this approach, we also identified the ten most disordered yeast proteins with known functions based on their gene descriptions in SGD (Cherry et al., 2012). We found that predictions of function based on our cluster annotations clearly matched the gene description of the proteins in 5 of 10 cases, suggesting a predictive power of at least 50% (Supplementary file 1 - Table S3, see Discussion). This analysis illustrates how evolutionary signatures can be used to generate hypotheses of function for fully disordered proteins.\n\n**Table 2.**\n Evolutionary signatures of function can be used for functional annotation of previously uncharacterized proteins and IDRs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>ID</th>\n      <th>Name</th>\n      <th>Description</th>\n      <th>% Disorder</th>\n      <th>Cluster ID</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>YCL028W</td>\n      <td>RNQ1</td>\n      <td>Protein whose biological role is unknown; localizes to the cytosol</td>\n      <td>96</td>\n      <td>M: Nucleocytoplasmic transport</td>\n    </tr>\n    <tr>\n      <td>YKL105C</td>\n      <td>SEG2</td>\n      <td>Protein whose biological role is unknown; localizes to the cell periphery</td>\n      <td>92</td>\n      <td>P: Signal transduction</td>\n    </tr>\n    <tr>\n      <td>YGR196C</td>\n      <td>FYV8</td>\n      <td>Protein whose biological role is unknown; localizes to the cytoplasm in a large-scale study</td>\n      <td>89</td>\n      <td>A: Ribosome biogenesis R: Transcription</td>\n    </tr>\n    <tr>\n      <td>YGL023C</td>\n      <td>PIB2</td>\n      <td>Protein whose biological role is unknown; localizes to the mitochondrion in a large-scale study</td>\n      <td>86</td>\n      <td>R: Transcription</td>\n    </tr>\n    <tr>\n      <td>YOL036W</td>\n      <td></td>\n      <td>Protein whose biological role and cellular location are unknown</td>\n      <td>84</td>\n      <td>P: Signal transduction R: Transcription</td>\n    </tr>\n    <tr>\n      <td>YNL176C</td>\n      <td>TDA7</td>\n      <td>Protein whose biological role is unknown; localizes to the vacuole</td>\n      <td>83</td>\n      <td>Q: Cell wall organization</td>\n    </tr>\n    <tr>\n      <td>YFR016C</td>\n      <td></td>\n      <td>Protein whose biological role is unknown; localizes to both the cytoplasm and bud in a large-scale study</td>\n      <td>83</td>\n      <td>A: Ribosome biogenesis</td>\n    </tr>\n    <tr>\n      <td>YBL081W</td>\n      <td></td>\n      <td>Protein whose biological role and cellular location are unknown</td>\n      <td>82</td>\n      <td>M: Nucleocytoplasmic transport</td>\n    </tr>\n    <tr>\n      <td>YBR016W</td>\n      <td></td>\n      <td>Protein whose biological role is unknown; localizes to the bud membrane and the mating projection membrane</td>\n      <td>82</td>\n      <td>O: Sup35-like</td>\n    </tr>\n    <tr>\n      <td>YOL070C</td>\n      <td>NBA1</td>\n      <td>Protein whose biological role is unknown; localizes to the bud neck and cytoplasm and colocalizes with ribosomes in multiple large-scale studies</td>\n      <td>81</td>\n      <td>Does not fall into annotated cluster; close to ribosome biogenesis cluster</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nIn this work, we tested for evolutionary constraints on highly diverged intrinsically disordered regions proteome-wide. In contrast to the relative lack of constraint on primary amino acid sequence alignments (compared to folded regions, Brown et al., 2002; T\u00f3th-Petr\u00f3czy and Tawfik, 2013), we find that the vast majority of disordered regions contain molecular features that deviate in their evolution from our null expectation (a simulation of disordered region evolution; Nguyen Ba et al., 2014; Nguyen Ba et al., 2012). Our discovery that highly diverged disordered regions contain (interpretable) molecular features that are under evolutionary constraint provides researchers with testable hypotheses about molecular features that could be important for function in their proteins of interest. Furthermore, in principle, our framework for the analysis of diverged disordered regions can be extrapolated to proteins from other species.\n\nImportantly, our choice of features was based on previous reports of important sequence features in IDRs that could be easily calculated for protein sequences and scaled to millions of simulated sets of orthologous IDRs. Thus, our evidence for constraint must represent a lower bound on the total amount of functional constraint on highly diverged IDRs: there are very likely to be sequence characteristics that were not captured by our features. Further, even when we do find evidence for constraint on a feature, we do not know whether our feature represents the actual feature required for IDR function, or is simply correlated with it. For example, we found IDRs that show constraint on glycine and arginine content, but these may reflect the real constraint on planar-pi interactions (Vernon and Forman-Kay, 2019) and are not fully captured by either of these features. In the future, we could exhaustively search for protein sequence features that best explain the evolutionary patterns as was done for features of activation domains that explain reporter activity (Ravarani et al., 2018).\n\nAnother important element to consider is that many of our features are correlated with each other. For example, net charge is correlated with the fraction of acidic and/or basic residues in a given IDR. Due to the non-independence of molecular features that comprise the \u2018evolutionary signatures\u2019, it is difficult to quantify similarity between these evolutionary signatures using standard distance metrics that assume independence. We use a weighted uncentred correlation distance (de Hoon et al., 2004)\u00a0in the clustering analysis, which limits the impact of correlated features. However, we caution against a quantitative comparison of individual evolutionary signatures.\n\nDespite our choice of molecular features, we found strong evidence that groups of disordered regions share evolutionary signatures, and that these groups of IDRs are associated with specific biological functions. To demonstrate the association of evolutionary signatures with previously known functions, we associated IDRs with protein function, and indeed showed that we could generate hypotheses about protein function for fully disordered proteins. However, many proteins contain multiple IDRs. In these proteins, the IDRs may perform different functions (just as multiple folded domains may perform independent functions), thus complicating the mapping of molecular functions to molecular features of IDRs. We are currently developing more well-defined statistical approaches to predict function for IDRs based on evolutionary signatures. Systematic data at the level of individual IDRs would greatly facilitate future progress in this area.\n\nAnother challenge in associating specific functions with individual IDRs is that current bioinformatics predictions of IDRs at the proteome level often lead to arbitrary breaks (or merging) of IDRs, as IDR boundaries are very difficult to define precisely (even with sensitive experimental approaches; Jensen et al., 2013). Whether or not IDRs serve as distinct functional units across a linear peptide sequence, and where the boundaries for these regions lie on a proteome-wide scale, is an area for further research. In our cluster analysis, we find that the vast majority of IDRs in multi-IDR proteins fall into different clusters, and that this matches our expectation from random chance. A small minority of IDRs from very large (>1500 amino acid) disordered proteins cluster together, suggesting that they are \u2018broken up\u2019 pieces of larger units.\n\nDespite the caveat of IDR boundaries in proteome-wide analyses, evolutionary signatures of selection on molecular features represent a new way to assign function to the large numbers of currently enigmatic IDRs that have been identified based on protein sequences. This approach is complementary to current bioinformatics approaches to predict IDR function that are based on presence (Edwards et al., 2007) or conservation of SLiMs (Beltrao and Serrano, 2005; Davey et al., 2012; Lai et al., 2012; Nguyen Ba et al., 2012), prediction of interactions (MoRFs) (Fuxreiter et al., 2004; Lee et al., 2012; Mohan et al., 2006; Oldfield et al., 2005; Vacic et al., 2007), or prediction of phase separation (Vernon and Forman-Kay, 2019).\n\nOur evolutionary analysis addresses challenges in assigning function to highly diverged intrinsically disordered regions whose presence is conserved in orthologs. Although there are examples of slowly evolving disordered regions (Ahrens et al., 2016; Ahrens et al., 2018; Brown et al., 2002), these reflect a minority of IDRs, and pose less of a challenge for standard protein sequence analysis methods. Because we take the evolutionary rate of IDRs into account in our analysis, we do not identify constrained molecular features for these slowly evolving IDRs, as they would not be significantly different in our simulated IDRs. Furthermore, although there are examples of IDRs that are lost or gained through evolution (Ahrens et al., 2017; Montanari et al., 2011), the presence of IDRs is conserved across orthologs in the vast majority of cases (Bellay et al., 2011; Chen et al., 2006a; Chen et al., 2006b; Colak et al., 2013).\n\nWidespread evidence for shared functions in the highly diverged portions of IDRs also has several evolutionary implications. The lack of homology between most IDRs with similar evolutionary signatures suggests that the molecular features are preserved in each IDR independently. For example, the more than 150 IDRs that we believe represent mitochondrial N-terminal targeting signals share similar constraints on their molecular features, yet these signals have been preserved independently over very long evolutionary time as mitochondrial genes were transferred individually to the nuclear genome (Adams and Palmer, 2003). The preservation of molecular features over long evolutionary time, despite accumulation of amino acid divergence, is consistent with a model of stabilizing selection (Bedford and Hartl, 2009; Hansen, 1997; Lande, 1976), where individual amino acid sites are under relatively weak functional constraints (Landry et al., 2014). In this view, single point mutations are unlikely to dramatically impair IDR function, and therefore large evolutionary divergence can accumulate. This also suggests that disease-causing mutations in disordered regions are more likely to cause gain of function, consistent with at least one recent study (Meyer et al., 2018).\n\nAlthough current models for the evolution of short linear motifs (well-characterized functional elements in IDRs) also implicate stabilizing selection (Koch et al., 2018; Landry et al., 2014), these motifs represent only a minority of the residues in disordered regions (Nguyen Ba et al., 2012). Our observation of shared evolutionary signatures associated with specific functions in highly diverged IDRs suggests that this evolutionary mechanism is shaping the proteome on a much wider scale than currently appreciated. Further, stabilizing selection stands in contrast to purifying selection on individual residues, the major evolutionary mechanism thought to preserve function in stably folded regions of the proteome (Taylor and Raes, 2004). Thus, we propose that these two major biophysical classes of protein regions (IDRs vs. folded regions) also evolve under two different functional regimes.\n\n## Materials and methods\n\n### Multiple sequence alignments and visualization\n\nWe acquired orthologs of Saccharomyces cerevisiae from the Yeast Gene Order Browser (Byrne and Wolfe, 2005) and made multiple sequence alignments using MAFFT (Katoh and Standley, 2013) with default settings, as previously described (Nguyen Ba et al., 2014; Nguyen Ba et al., 2012). We visualized multiple sequence alignments using Jalview (Waterhouse et al., 2009).\n\n### Quantification of evolutionary divergence of IDRs and ordered regions of the proteome\n\nWe identified IDRs in the S.\u00a0cerevisiae proteome using DISOPRED3 (Jones and Cozzetto, 2015) and filtered them to include only those that are 30 amino acids or longer. We identified the non-disordered regions of the proteome as the inverse subset of the IDRs, and again only included regions that are 30 amino acids or longer. Using the multiple sequence alignments constructed for these protein regions (as above), and only including those proteins for which there at least 10 species in the alignment and at least 10 amino acids for each species, we calculated evolutionary distances for each region using PAML (Yang, 2007) using the WAG model, with an initial kappa of 2, initial omega of 0.4, and clean data set to 0. We used the sum of branch lengths for each region to estimate the evolutionary divergence, and plotted the distribution of this metric for IDRs and non-IDRs in the S.\u00a0cerevisiae proteome in Figure 1\u2014figure supplement 1.\n\n### Quantification of IDR overlap with pfam annotations\n\nWe obtained the list of Pfam (El-Gebali et al., 2019) domain coordinates for S.\u00a0cerevisiae from the Saccharomyces Genome Database (SGD) (Cherry et al., 2012). We included domain coordinates that had e-values less than or equal to 1, and which occurred in more than one protein in the S.\u00a0cerevisiae proteome. We then computed the percentage overlap of each IDR (coordinates determined as above) with the Pfam domain coordinates, and plotted the distribution of percent overlap values for all predicted IDRs in the S.\u00a0cerevisiae proteome in Figure 1\u2014figure supplement 2.\n\n### Evolutionary analysis of diverged disordered regions\n\nEvolutionary analysis of diverged disordered regions was performed as in Zarin et al. (2017), with some modifications to facilitate proteome-wide analysis. Briefly, we sought to simulate evolution of disordered regions while being agnostic to the conservation of molecular features that we tested. Using the multiple sequence alignments of S. cerevisiae IDRs and species branch lengths (as described above), we used the previously described phylo-HMM software (Nguyen Ba et al., 2014; Nguyen Ba et al., 2012) to obtain maximum likelihood estimates of the site-specific (i.e. \u2018column\u2019) and \u2018local\u2019 rate of evolution for each amino acid. The phylo-HMM exploits preferential conservation of SLiMs in disordered regions to predict them by comparing these site-specific rates to the \u2018local\u2019 rates of evolution. Because indels are frequently found in disordered regions, the phylo-HMM software models sequence evolution as a probabilistic evolutionary process that considers amino acid substitutions according to a standard continuous time markov process framework (Durbin et al., 1998) and generation of indels with power-law distribution (Cartwright, 2006). For our set of data, we used the default parameters of the software, that\u00a0is the parameters used in the original study on a similar set of data (for example, we used a window size of 31 alignment columns to estimate the \u2018local\u2019 rate of evolution).\n\nHaving predicted these rates of evolution and conserved SLiMs for each IDR, we simulated 1000 orthologous sets of IDRs for each IDR. We did this using a previously described disordered region evolution simulator (Nguyen Ba et al., 2014; Nguyen Ba et al., 2012) that preserves SLiMs and evolves disordered regions according to a disordered region-specific substitution matrix, but is agnostic to other molecular features. We used the S.\u00a0cerevisiae sequence as the root for the simulator. The simulator uses a model similar to the phylo-HMM where amino acids can either mutate or generate an indel according to the specified rates of evolution. In contrast to the phylo-HMM, the substitution matrix used in the simulator was obtained using the stationary frequencies of the 20 amino acids derived from predicted disordered regions in the S. cerevisiae proteome, and exchangeability between pairs of amino acids was inferred from closely related species S.\u00a0cerevisiae, Saccharomyces paradoxus, S.\u00a0mikatae, and Saccharomyces bayanus (as in Nguyen Ba et al., 2014; Nguyen Ba et al., 2012). Therefore, as evolutionary time increases, sequences diverge from the initial S.\u00a0cerevisiae sequence according to the phylogenetic tree and tend towards the equilibrium stationary frequencies of disordered amino acids. This simulator requires a scaling factor to convert evolutionary distances from substitutions per site as obtained from PAML (Yang, 2007). We chose the scaling factor such that the average distance between S.\u00a0cerevisiae and S.\u00a0uvarum over all the IDR alignments equals 1.\n\nSequences and trees were read into R using the \u2018seqinr\u2019 (Charif and Lobry, 2007) and \u2018ape\u2019 (Paradis and Schliep, 2019) packages, respectively. Sequences were parsed in R using the \u2018stringr\u2019 (Wickham, 2010) and \u2018stringi\u2019 (Gagolewski, 2019) packages. We calculated all the sequence features for the real and simulated set of IDR orthologs using custom functions in R except for isoelectric point, which was computed using the computePI function in seqinr (Charif and Lobry, 2007), as well as \u2018Omega\u2019 (Martin et al., 2016), \u2018Kappa\u2019 (Das and Pappu, 2013), and Wootton-Federhen complexity (Wootton and Federhen, 1993), which were calculated using the localCider program (Holehouse et al., 2017) called through R using the \u2018rPython\u2019 package (Bellosta, 2015).\n\nWe calculated the mean and log variance of each feature for each real set of orthologous IDRs and each of the 1000 sets of orthologous IDRs. Because simulations sometimes lead to the deletion of the IDR, we did not include those IDRs that had fewer than 950 non-empty simulations. To obtain a random expectation for Figure 1C, we quantified the number of significant (p<0.01) molecular features in a set of randomly chosen simulated IDRs (one for each real IDR).\n\nTo summarize the difference between each real set of orthologous IDRs and its corresponding 1000 simulated sets of orthologous IDRs, we used a standard Z-score ($Z$) where we subtracted the mean of the simulations ($\\mu$) from the real value ($x$) and divided by the standard deviation of the simulations ($\\sigma$). The formula for the Z-score is as follows:\n\n$$\nZ=\\frac{x-\\mu}{\\sigma}\n$$\n\n### Strain construction and growth conditions\n\nAll strains (Supplementary file 1 - Table S4) were constructed in the S. cerevisiae BY4741 background. IDR transformants were constructed using the Delitto Perfetto in vivo site-directed mutagenesis method (Storici et al., 2001). Ste50 IDR mutants were constructed in the ssk22\u03940::HisMx3 ssk2\u03940 background as in Zarin et al. (2017). Genomic changes in transformed strains were confirmed by Sanger sequencing. For mitochondrial strains, starting strains were acquired from the GFP collection (Huh et al., 2003). The Fus1pr-GFP reporter was constructed as in Zarin et al. (2017) using Gibson assembly (Gibson et al., 2009), integrated at the HO locus using a selectable marker (URA3), and confirmed by PCR.\n\nAll experiments were done on log-phase cells grown at 30\u00b0C in rich or synthetic complete media lacking appropriate nutrients to maintain selection of markers, unless otherwise stated. Two percent (wt/vol) glucose was used as the carbon source.\n\n### Confocal microscopy and image analysis\n\nWe acquired all images with a Leica TCS SP8 microscope using standard, uncoated glass slides with a 100x objective. For all GFP images, seven evenly spaced z-slices covering\u00a0~6 microns in the z plane were collected for each field of view, and maximum projections of these slices were quantified for Figure 2B, or presented as micrographs in Figure 6C. To quantify basal Fus1pr-GFP expression, single cells in micrographs were segmented using YeastSpotter (http://yeastspotter.csb.utoronto.ca/) (Lu et al., 2019). The segmented masks and corresponding fluorescent images were imported into R using the \u2018EBImage\u2019 package (Pau et al., 2010), and GFP intensity for each cell was quantified using base R functions (example available on http://yeastspotter.csb.utoronto.ca). To assay shmooing, log phase cells were inoculated with 1 uM alpha factor for 2 hr at 30\u00b0C (as in Kompella et al., 2016), at which point they were imaged in brightfield as above. We repeated each microscopy experiment at least twice on different days, and present representative results from one of those days in Figure 2B, C and Figure 6.\n\n### Clustering of proteome-wide evolutionary signatures\n\nHierarchical clustering was performed using the Cluster 3.0 program (de Hoon et al., 2004). The evolutionary signature data was first filtered to include only those IDRs that had at least one Z-score with an absolute value of 3 or more, and with at least 95% data present for the 164 features. This resulted in 4646 IDRs (filtered from the initial 5149) that were then clustered using uncentered correlation distance and average linkage, with \u2018cluster\u2019 and \u2018calculate weights\u2019 options selected for \u2018genes\u2019 (i.e. IDRs), but not for arrays (i.e. molecular features). Clusters were picked manually for further analysis. The full clusterplot is available in supplementary data.\n\nIn order to ensure that the clustering was not simply due to sequence similarity between the disordered regions, for each cluster, we compared the pairwise distance of the IDRs in each cluster to that of the IDRs outside that cluster, and calculated the percent of disordered regions in each cluster that fell in the top 1% of pairwise distance in all the clusters. This metric is presented for each cluster in Supplementary file 1 - Table S2. For example, the cluster with the highest amount of sequence similarity according to this threshold (top 1% similarity) is cluster Q, with 8.9% of IDRs in this cluster having high sequence similarity according to this threshold. However, the vast majority of the clusters are comprised of IDRs with negligible sequence similarity; for example, 17/23 clusters have less than 1% IDRs with high sequence similarity. In order to calculate pairwise distances, we made pairwise global alignments (with gap opening penalty of 0 and gap extension penalty of 1) and calculated distances using the BLOSUM62 matrix (this was done using the \u2018stringDist\u2019 function in the Biostrings R package; Pag\u00e8s et al., 2018).\n\n### Tests for enrichment of annotations\n\nAnnotations for Gene Ontology (GO) terms, phenotypes, and literature were acquired from SGD (Cherry et al., 2012) for the S.\u00a0cerevisiae proteome. We included GO terms that applied to a maximum of 5000 genes in the S.\u00a0cerevisiae proteome. A test for enrichment of annotations was done using the hypergeometric test for each cluster against all the proteins in the clustering analysis. To obtain Q-values, p-values were corrected using the Benjamini-Hochberg method. Q-values below an FDR of 5% were retained. Because there is not a 1-to-1 correspondence between IDRs and annotations, which are based on proteins, we also calculated Q-values using permutation tests. To do so, we uniformly sampled 1000 clusters of IDRs for each cluster from the 4646 IDRs included in our clusterplot, and obtained the sum of the top ten \u2013 log Q-values associated with each test for enrichment, as above. We compared this test statistic to the observed sum of top ten \u2013 log Q-values for each cluster, and reported the difference as a standard Z-score in Supplementary file 1 - Table S2.\n\nIn order to understand how our evolutionary signatures compare to information obtained only from amino acid frequencies, we computed vectors of Z-scores for each IDR that represented their amino acid frequencies normalized to the proteome-wide average. We clustered these vectors using k-means (K\u00a0=\u00a025) with the Cluster 3.0 program (de Hoon et al., 2004) We performed a similar permutation test (as above), where the sample of 1000 clusters was not uniform, but drawn to create 1000 random clusters of IDRs with similar amino acid composition for each cluster. For example, for each IDR in a cluster, we found the cluster that it fell into in the amino acid frequency clusterplot, and sampled from that cluster to replace the IDR in our evolutionary signature clusterplot. We did this 1000 times for each cluster, and used the same test statistic as the above-described permutations to report the difference in enriched annotations between our clusterplot based on evolutionary signatures and the clusterplot based on amino acid frequencies (Supplementary file 1 - Table S2).\n\n### Identification of highly disordered proteins with unknown function\n\nWe identified proteins whose biological role is unknown according to their SGD annotation (Cherry et al., 2012). We quantified the percent of residues that were predicted to be disordered in each protein with unknown function, and present the top ten most disordered proteins in Table 2.\n",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "7c61f527-91f3-42d5-9f08-1d4f6a50cbfc",
+      "submission_id": "e41782a5-3a9c-46e1-a97a-38fe4df311c5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael B Eisen, HHMI, University of California, Berkeley United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.46883.sa1](https://doi.org/10.7554/eLife.46883.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Proteome-wide signatures of function in highly diverged intrinsically disordered regions\" for consideration by eLife. Your article has been reviewed by Michael Eisen as the Senior Editor and Reviewing Editor, and two reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Xavier Darzacq (Reviewer #1) and Jessica Siltberg-Liberles (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Please aim to submit the revised version within two months.\n\nSummary:\n\nWhile related protein intrinsically disordered regions (IDRs) usually have little sequence similarity, a growing body of work suggests that general molecular features of these sequences \u2013 such as charge or proportions of specific amino acid residues \u2013 are conserved. In this manuscript, Zarin et al.et al., find evidence for such conservation by extending a methodology previously applied to an IDR from the S. cerevisiae protein Ste50p to a broader collection of IDRs from the S. cerevisiae proteome. The reviewers consider the manuscript to be a well-executed and timely stud y of interest to a wide range of eLife readers, and suggest only a series of relatively minor revisions.\n\nEssential revisions:\n\nThe only major point raised by the reviewers is that the manuscript would be improved with a more in depth description of the methods, which are referred to currently primarily by citation.\n\nFor example, it is unclear whether the same power law distribution for gap lengths is used as in past work by Nguyen Ba et al.et al., and how the disordered region substitution matrices are inferred. Additionally, a brief summary of the phylo-HMM(s) (both sequence and gap) used to infer sequence conservation in individual IDRs would be useful given how central this is to the results in the manuscript. Such a discussion could be accomplished simply by extending the existing subsection \"Evolutionary analysis of diverged disordered regions\".\n\nMinor points:\n\n1) In Figure 6C and Figure 6\u2014figure supplement 2, no fluorescence is visible for Cox15 IDR\u22060 and Cox15\u2206Emp47. This makes it hard to judge whether these constructs fail to localize to mitochondria, as claimed in the manuscript. Are these constructs poorly expressed, or is high thresholding in the fluorescence channel responsible?\n\n2) In Figure 2, three substitutions in the Ste50p IDR are made to demonstrate that similarity in the set of molecular features under selection (\"evolutionary signature\") implies the ability to perform similar functions. We recommend that the authors indicate how many consensus MAPK phosphorylation sites are present in each of these substituted domains, as this is a core function of the Ste50p IDR.\n\n3) In Figure 2, IDRs are ordered by the Euclidean distance of their vectors of molecular feature Z-scores. This is would be appropriate for linearly independent, orthogonal vector components. Because many of the molecular features are linearly dependent (for instance, (fraction of basic residues) + (fraction of acidic residues) = (fraction of charged residues)), their Z-scores might be suspected to lack independence as well. No evidence to the contrary is provided in the manuscript. Codependence of molecular features could also bias the clustering algorithm so that it is more dependent on features that have a high redundancy (e.g. any of the charge attributes). Zarin et al., use clustering in a qualitative way, so we think this is a minor concern and should not impact the main claims of the paper. However, since this method is likely to be implemented by others, we recommend including a note of caution about using Euclidean distance to interpret differences in evolutionary signatures, especially since Figure 2 implies that this is valid.\n\n4) The authors assert that their IDR cluster-function assignments can be used for functional annotation of 10 previously uncharacterized disordered proteins (Table 2). While this would be useful, the authors provide little validation for these predictions apart from some indirect evidence for one of the proteins (Rnq1p). To make this point more persuasive and to demonstrate the accuracy of the cluster-function assignments, the authors could include predictions for the function of 10 fully disordered proteins of known function, in addition to the existing set of proteins of unknown function.\n\n5) The authors refer to the molecular features as \"evolutionary signatures\" but wouldn't \"functional signatures\" be a better term? The title also hints at this\u2026\n\n6) The authors often use the term homology when they mean sequence similarity. They are not equivalent. For example, from subsection \u201cClustering of proteome-wide evolutionary signatures\u201d:\n\n\"For example, the cluster with the highest amount of \"homologous\" IDRs according to this threshold (top 1% homology) is cluster Q, with 8.9% homologous IDRs. However, the vast majority of the clusters have negligibly homologous IDRs; for example, 17/23 clusters have less than 1% homology between IDRs.\"\n\nIt would be better to write:\n\n\"For example, the cluster with the most similar IDRs according to this threshold (top 1% similarity) is cluster Q, with 8.9% sequence identity across the IDRs. However, the vast majority of the clusters have less similar IDRs; for example, 17/23 clusters have less than 1% sequence identity between IDRs.\"\n\n7) Following up on the entire paragraph from subsection \u201cClustering of proteome-wide evolutionary signatures\u201d mentioned above, how are the sequences from different IDRs in the clusters compared. It says with Blosum62, but how are they aligned? Gap penalties? What information do pairwise distances between sequences that are this divergent provide?\n\n8) Disorder is predicted using DISOPRED3 on the S.cerevisiae proteome, but if disorder is only predicted for one species, how do you know that disorder is conserved for sequences in each alignment? Disorder is not necessarily conserved across sequences, not even across orthologs, see Montanari et al., 2011 and for further discussion see Ahrens et al.2017.\n\n9) It is stated on numerous occasions that disordered regions are rapidly evolving and they most frequently do, but not always. Some disordered regions that also are predicted to have secondary structure to evolve slow, see Ahrens et al., 2018 and Ahrens et al., 2016.\n\n10) Another recent paper that discusses functional constraint in disordered regions and due to its relevance, it ought to be referred to from the current manuscript, see Afanasyeva et al., 2018.\n\n11) Figure 1\u2014supplementary figure 2 shows nothing. It is supposed to show very little, but really, this shows nothing. If this is correct, can you add what the data looks like for ordered regions as a comparison?\n",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cc7a8b75-3acc-4756-87c5-0bcda8fcfb9e",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C1",
+      "claim": "Intrinsically disordered regions make up a large part of the proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically disordered regions make up a large part of the proteome, but the sequence-to-function relationship in these regions is poorly understood, in part because the primary amino acid sequences of these regions are poorly conserved in alignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about IDRs in the abstract, supported by established scientific knowledge about proteome composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "f047fefc-34df-470d-b83c-b22f983a5063",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C2",
+      "claim": "The sequence-to-function relationship in intrinsically disordered regions is poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically disordered regions make up a large part of the proteome, but the sequence-to-function relationship in these regions is poorly understood, in part because the primary amino acid sequences of these regions are poorly conserved in alignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of knowledge in the field as described in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "7178e37a-6106-4b04-be75-15dc2a1b88a4",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C3",
+      "claim": "The primary amino acid sequences of intrinsically disordered regions are poorly conserved in alignments.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically disordered regions make up a large part of the proteome, but the sequence-to-function relationship in these regions is poorly understood, in part because the primary amino acid sequences of these regions are poorly conserved in alignments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations throughout the manuscript and is a well-established observation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "31f1cfc9-77a1-46f0-85ae-f73936e13709",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C4",
+      "claim": "Most disordered regions contain multiple molecular features that are preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that most disordered regions contain multiple molecular features that are preserved, and we define these as 'evolutionary signatures' of disordered regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the proteome-wide evolutionary analysis presented in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "8d8ddbd7-b3b7-4cc7-afa6-7c179b9f1b71",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C5",
+      "claim": "Intrinsically disordered regions with similar evolutionary signatures can rescue function in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that intrinsically disordered regions with similar evolutionary signatures can rescue function in vivo, and that groups of intrinsically disordered regions with similar evolutionary signatures are strongly enriched for functional annotations and phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through experimental data with Ste50 IDR replacements and mitochondrial targeting signal experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "c7cfdaf2-e0de-4a78-9b2b-0a94675e614c",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C6",
+      "claim": "Groups of intrinsically disordered regions with similar evolutionary signatures are strongly enriched for functional annotations and phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that intrinsically disordered regions with similar evolutionary signatures can rescue function in vivo, and that groups of intrinsically disordered regions with similar evolutionary signatures are strongly enriched for functional annotations and phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the clustering analysis and enrichment tests presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "bc24bfdd-e096-4990-be6d-00b33717f0f7",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C7",
+      "claim": "Evolutionary signatures can be used to predict function for many disordered regions from their amino acid sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that evolutionary signatures can be used to predict function for many disordered regions from their amino acid sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the findings of the study, representing an inference from the data presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "001cefed-a200-4a1e-b029-7dca9ec74754",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C8",
+      "claim": "Intrinsically disordered protein regions are associated with cell signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically disordered protein regions are associated with a large array of functions (reviewed in Forman-Kay and Mittag, 2013), including cell signaling (Iakoucheva et al., 2004; Tompa, 2014; Wright and Dyson, 2015), mediation of protein-protein interactions (Borgia et al., 2018; Tang et al., 2012; Tompa et al., 2015), and the formation of membraneless organelles through phase separation (Banani et al., 2017; Franzmann et al., 2018; Nott et al., 2015; Patel et al., 2015; Riback et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "2ade3624-9e60-4ed7-9b26-cfffbebe3854",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C9",
+      "claim": "Intrinsically disordered protein regions are associated with mediation of protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically disordered protein regions are associated with a large array of functions (reviewed in Forman-Kay and Mittag, 2013), including cell signaling (Iakoucheva et al., 2004; Tompa, 2014; Wright and Dyson, 2015), mediation of protein-protein interactions (Borgia et al., 2018; Tang et al., 2012; Tompa et al., 2015), and the formation of membraneless organelles through phase separation (Banani et al., 2017; Franzmann et al., 2018; Nott et al., 2015; Patel et al., 2015; Riback et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "9371fb02-30da-4ca4-8689-f9cf6d31a553",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C10",
+      "claim": "Intrinsically disordered protein regions are associated with the formation of membraneless organelles through phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsically disordered protein regions are associated with a large array of functions (reviewed in Forman-Kay and Mittag, 2013), including cell signaling (Iakoucheva et al., 2004; Tompa, 2014; Wright and Dyson, 2015), mediation of protein-protein interactions (Borgia et al., 2018; Tang et al., 2012; Tompa et al., 2015), and the formation of membraneless organelles through phase separation (Banani et al., 2017; Franzmann et al., 2018; Nott et al., 2015; Patel et al., 2015; Riback et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "fdaf4e82-178d-4393-81ad-a1d4e0cb22c1",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C11",
+      "claim": "Intrinsically disordered regions are widespread in eukaryotic proteomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions are widespread in eukaryotic proteomes (Peng et al., 2013; Ward et al., 2004), but do not fold into stable secondary or tertiary structures, and do not typically perform enzymatic functions (Uversky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "e6f6ae63-ea60-4526-a1b3-8f330c4d8748",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C12",
+      "claim": "Intrinsically disordered regions do not fold into stable secondary or tertiary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions are widespread in eukaryotic proteomes (Peng et al., 2013; Ward et al., 2004), but do not fold into stable secondary or tertiary structures, and do not typically perform enzymatic functions (Uversky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a defining characteristic of IDRs supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "778e4284-de93-40a7-a7ad-084f964b72c5",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C13",
+      "claim": "Intrinsically disordered regions do not typically perform enzymatic functions.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions are widespread in eukaryotic proteomes (Peng et al., 2013; Ward et al., 2004), but do not fold into stable secondary or tertiary structures, and do not typically perform enzymatic functions (Uversky, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Uversky, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "01688ef6-170b-47db-9219-b061ddc4df6b",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C14",
+      "claim": "Intrinsically disordered regions can readily be identified based on their primary amino acid sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Although intrinsically disordered regions can readily be identified based on their primary amino acid sequence (Doszt\u00e1nyi et al., 2005; Uversky, 2002), it remains a challenge to associate these regions with specific biological and biochemical functions based on their amino acid sequences, limiting systematic functional analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prediction methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "bdb332ba-250c-42ac-895f-6433c7dde351",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C15",
+      "claim": "It remains a challenge to associate intrinsically disordered regions with specific biological and biochemical functions based on their amino acid sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Although intrinsically disordered regions can readily be identified based on their primary amino acid sequence (Doszt\u00e1nyi et al., 2005; Uversky, 2002), it remains a challenge to associate these regions with specific biological and biochemical functions based on their amino acid sequences, limiting systematic functional analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the current state of the field and the motivation for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "5c47f2b9-eaf1-428c-af94-fdeafe10a398",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C16",
+      "claim": "For folded regions, protein function can often be predicted with high specificity based on the presence of conserved protein domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, for folded regions, protein function can often be predicted with high specificity based on the presence of conserved protein domains (El-Gebali et al., 2019) or enzymatic active sites (Ondrechen et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to domain databases and active site prediction methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "e7f5742a-a55c-4d42-809c-a0d2525f9f1b",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C17",
+      "claim": "Short segments of evolutionary conservation in otherwise rapidly evolving disordered regions point to key functional residues.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others (Davey et al., 2012; Nguyen Ba et al., 2012) have shown that short segments of evolutionary conservation in otherwise rapidly evolving disordered regions point to key functional residues, often important for posttranslational modifications, or other transient protein interactions (Tompa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work by the authors and others.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "43690474-2d70-43ee-a3ca-3128d88ef4b3",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C18",
+      "claim": "Conserved segments in disordered regions are often important for posttranslational modifications or other transient protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others (Davey et al., 2012; Nguyen Ba et al., 2012) have shown that short segments of evolutionary conservation in otherwise rapidly evolving disordered regions point to key functional residues, often important for posttranslational modifications, or other transient protein interactions (Tompa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tompa et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "0fc1ef72-39b5-4972-b6b0-1a45b5f05876",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C19",
+      "claim": "Conserved segments make up a small fraction (5%) of disordered regions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these conserved segments make up a small fraction of disordered regions (5%), and the vast majority of disordered amino acids show little evidence for evolutionary constraint in alignments of primary amino acid sequences (Colak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Colak et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "452afbc7-3373-4e9f-b070-0483eb2bcdc0",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C20",
+      "claim": "The vast majority of disordered amino acids show little evidence for evolutionary constraint in alignments of primary amino acid sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these conserved segments make up a small fraction of disordered regions (5%), and the vast majority of disordered amino acids show little evidence for evolutionary constraint in alignments of primary amino acid sequences (Colak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Colak et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "d3ca0916-c3a2-402f-8bb6-8f85e64ee16e",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C21",
+      "claim": "More than 5000 intrinsically disordered regions were identified in the S. cerevisiae proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified more than 5000 intrinsically disordered regions (IDRs) in the S. cerevisiae proteome and quantified their evolutionary divergence (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the computational analysis described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "21a1a388-c195-4c05-a3a3-95dcf5c3d2b3",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C22",
+      "claim": "IDRs evolve more rapidly than regions that were not identified as disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we found that the IDRs evolve more rapidly than the regions that were not identified as disordered (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "c88f68c9-273c-4d8c-9771-947479bf5e04",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C23",
+      "claim": "The vast majority of IDRs are distinct from Pfam domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that the vast majority of these IDRs are distinct from Pfam domains (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "c089ec83-77b5-41ad-8fb8-f37efe28fb7f",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C24",
+      "claim": "91% of IDRs have 0% Pfam overlap.",
+      "claim_type": "EXPLICIT",
+      "source": "Percentage of regions with 0% Pfam overlap for IDRs is 91%, whereas for non-IDRs it is 74%.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is stated in the caption of Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "f58becd7-1f57-4f17-a895-e4337f11bc5f",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C25",
+      "claim": "Charge properties such as net charge and acidic residue content are most likely to deviate from the null expectation in more than 50% of IDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that charge properties such as net charge and acidic residue content are most likely to deviate from our null expectation (more than 50% of IDRs) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "25938234-f3ec-416b-a676-42954db67c79",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C26",
+      "claim": "Non-conserved motif density deviates from the null expectation in 21.6% of IDRs at most for CDK phosphorylation consensus sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to non-conserved motif density, which deviates from our null expectation in 21.6% of IDRs at most (for CDK phosphorylation consensus sites).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the proteome-wide analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "ce326f84-4ac4-47d8-8300-0669f095d6b5",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C27",
+      "claim": "Sequence complexity deviates from the null expectation in 43.0% of IDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Other molecular features that frequently deviate from our null expectation are sequence complexity (43.0%), asparagine residue content (43.3%), and physicochemical features such as isoelectric point (53.9%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the proteome-wide analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "83055bd6-7a2d-41e9-82c7-b8cf50e7f976",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C28",
+      "claim": "Asparagine residue content deviates from the null expectation in 43.3% of IDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Other molecular features that frequently deviate from our null expectation are sequence complexity (43.0%), asparagine residue content (43.3%), and physicochemical features such as isoelectric point (53.9%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the proteome-wide analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "e87dc007-c377-43d2-b0f0-a718cd34682f",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C29",
+      "claim": "Isoelectric point deviates from the null expectation in 53.9% of IDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Other molecular features that frequently deviate from our null expectation are sequence complexity (43.0%), asparagine residue content (43.3%), and physicochemical features such as isoelectric point (53.9%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the proteome-wide analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "c9059659-ceb2-40ad-8ab4-28c7bda6e6d3",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C30",
+      "claim": "The mean of each molecular feature deviates from the null expectation more often than the variance.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the mean of each molecular feature deviates from our null expectation more often than the variance (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "1f035f88-8a92-4e29-850d-0663f3166a3e",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C31",
+      "claim": "Many IDRs have many significant molecular features, with a median of 15 significant molecular features per IDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, many IDRs have many significant molecular features, with a median of 15 significant molecular features per IDR (compared to one significant feature expected by chance; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the proteome-wide analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "a41c4b72-a443-42b7-a4fe-758c510f0916",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C32",
+      "claim": "One significant feature is expected by chance per IDR.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, many IDRs have many significant molecular features, with a median of 15 significant molecular features per IDR (compared to one significant feature expected by chance; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the random expectation analysis described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "b6b409b1-9eab-4846-a085-70f7d13c5b78",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C33",
+      "claim": "The Ste50 IDR has five consensus phosphorylation sites that are implicated in its function.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Ste50 IDR has five consensus phosphorylation sites that are implicated in its function (Hao et al., 2008; Yamamoto et al., 2010; Zarin et al., 2017), the Pex5 IDR and Rad26 IDR have none, and the Stp4 IDR has 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "ee3a5842-b2b4-4317-b701-ccac18ce7160",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C34",
+      "claim": "The Pex5 IDR has no consensus phosphorylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Ste50 IDR has five consensus phosphorylation sites that are implicated in its function (Hao et al., 2008; Yamamoto et al., 2010; Zarin et al., 2017), the Pex5 IDR and Rad26 IDR have none, and the Stp4 IDR has 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "4ae070dc-d721-4a2b-ba86-b09bf3e1e575",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C35",
+      "claim": "The Rad26 IDR has no consensus phosphorylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Ste50 IDR has five consensus phosphorylation sites that are implicated in its function (Hao et al., 2008; Yamamoto et al., 2010; Zarin et al., 2017), the Pex5 IDR and Rad26 IDR have none, and the Stp4 IDR has 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "790ec5bc-4edd-4e1f-897f-e12a6103169f",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C36",
+      "claim": "The Stp4 IDR has 4 consensus phosphorylation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Ste50 IDR has five consensus phosphorylation sites that are implicated in its function (Hao et al., 2008; Yamamoto et al., 2010; Zarin et al., 2017), the Pex5 IDR and Rad26 IDR have none, and the Stp4 IDR has 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "8ea58b31-285a-4c80-9f5c-dddb3b080467",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C37",
+      "claim": "The basal mating reporter expression in each strain corresponded to how similar the evolutionary signature of the replacing IDR was to that of the Ste50 IDR.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the basal mating reporter expression in each strain corresponded to how similar the evolutionary signature of the replacing IDR was to that of the Ste50 IDR (all mutants significantly different from wildtype and each other, Wilcoxon test p<0.05, Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "db3bc898-2b13-4860-8b01-0837497b7197",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C38",
+      "claim": "All mutants were significantly different from wildtype and each other (Wilcoxon test p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the basal mating reporter expression in each strain corresponded to how similar the evolutionary signature of the replacing IDR was to that of the Ste50 IDR (all mutants significantly different from wildtype and each other, Wilcoxon test p<0.05, Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "0b0a3a2e-61a0-4b32-96f6-78a8cb05184d",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C39",
+      "claim": "The two chimaeric strains that were more similar in their evolutionary signatures to the wildtype (Pex5 and Stp4) began the process of shmooing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the two chimaeric strains that were more similar in their evolutionary signatures to the wildtype (Pex5 and Stp4) began the process of 'shmooing', or responding to pheromone, whereas the strain that had the IDR with the most different evolutionary signature (Rad 26) could not shmoo (Figure 2C; full micrographs in Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "0be09a3c-67c6-40ad-8e12-aeede9b7bd69",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C40",
+      "claim": "The strain that had the IDR with the most different evolutionary signature (Rad26) could not shmoo.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the two chimaeric strains that were more similar in their evolutionary signatures to the wildtype (Pex5 and Stp4) began the process of 'shmooing', or responding to pheromone, whereas the strain that had the IDR with the most different evolutionary signature (Rad 26) could not shmoo (Figure 2C; full micrographs in Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "be844f31-1312-4006-b0c2-5819aa72b90e",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C41",
+      "claim": "The IDRs fall into at least 23 clusters based on similarity of their evolutionary signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "The IDRs fall into at least 23 clusters based on similarity of their evolutionary signatures (groups A through W, Figure 3) that are significantly associated with specific biological functions (enriched for Gene Ontology (GO) term, phenotype, and/or literature annotations, False Discovery Rate [FDR]=5%, Benjamini-Hochberg corrected) (Table 1; full table of enrichments in supplementary data; clustered IDRs and evolutionary signatures in supplementary data).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the clustering analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "9ef44f9c-67dc-44c4-8e8e-319dcede551f",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C42",
+      "claim": "The 23 clusters are significantly associated with specific biological functions (FDR=5%, Benjamini-Hochberg corrected).",
+      "claim_type": "EXPLICIT",
+      "source": "The IDRs fall into at least 23 clusters based on similarity of their evolutionary signatures (groups A through W, Figure 3) that are significantly associated with specific biological functions (enriched for Gene Ontology (GO) term, phenotype, and/or literature annotations, False Discovery Rate [FDR]=5%, Benjamini-Hochberg corrected) (Table 1; full table of enrichments in supplementary data; clustered IDRs and evolutionary signatures in supplementary data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "a6fd4624-0f6d-42be-9cfc-a340bf5d82c9",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C43",
+      "claim": "Cluster M is associated with nucleocytoplasmic transporter activity and includes IDRs from FG-NUP proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we find a cluster that is associated with 'nucleocytoplasmic transporter activity' (cluster M) that includes IDRs from FG-NUP proteins Nup42, Nup145, Nup57, Nup49, Nup116, and Nup100 that form part of the nuclear pore central transport channel (Alber et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the clustering and enrichment analysis, with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "df5861d3-cb7e-4880-9032-214337ea7466",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C44",
+      "claim": "Cluster M contains molecular features such as increased asparagine content, increased polar residue content, and increased proline and charged residue demixing ('Omega').",
+      "claim_type": "EXPLICIT",
+      "source": "In cluster M, we find molecular features such as increased asparagine content, increased polar residue content, and increased proline and charged residue demixing ('Omega'; Martin et al., 2016) in addition to the well-known 'FG' repeats that are found in the FG-NUP IDRs (reviewed in Terry and Wente, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of evolutionary signatures in cluster M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "96f095ed-5786-4c7e-9c7a-08fae224fbee",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C45",
+      "claim": "Cluster O contains IDRs from proteins associated with phase separation and membraneless organelles such as Sup35 and Dhh1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster O contains IDRs from proteins associated with phase separation and membraneless organelles such as Sup35 (Franzmann et al., 2018) and Dhh1 (Protter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on these proteins.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "59d31f39-4111-4927-a87e-585aeca56c76",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C46",
+      "claim": "The evolutionary signatures for the IDRs in cluster O include features that are typically associated with 'prionogenic', low complexity disordered regions, such as increased mean polyglutamine repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary signatures for the IDRs in this cluster include features that are typically associated with so-called 'prionogenic', low complexity disordered regions, such as increased mean polyglutamine repeats (Alberti et al., 2009), but also indicate that there are other relevant molecular features for this set of disordered regions (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 4A and citation to Alberti et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "1c027ae2-345d-41b6-b000-a1aa36c19d77",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C47",
+      "claim": "In cluster O IDRs, the variance of the net charge is reduced, and charged residues are depleted during evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in these regions, the variance of the net charge is reduced, and charged residues are depleted during evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of evolutionary signatures in cluster O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "3387cbdd-5847-464d-b0a9-664507a803fc",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C48",
+      "claim": "Cluster D is associated with DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cluster D (Figure 5A) is associated with DNA repair, and its evolutionary signature contains increased mean 'Kappa' (Das and Pappu, 2013) and decreased mean 'Sequence Charge Decoration' (SCD) (Sawle and Ghosh, 2015), both of which indicate that there is an increased separation of positive and negatively charged residues in these IDRs compared to our null expectation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the enrichment analysis for cluster D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "44174b8e-37c3-4835-9404-d34b317837db",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C49",
+      "claim": "Cluster D's evolutionary signature contains increased mean 'Kappa' and decreased mean 'Sequence Charge Decoration' (SCD), indicating increased separation of positive and negatively charged residues.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, cluster D (Figure 5A) is associated with DNA repair, and its evolutionary signature contains increased mean 'Kappa' (Das and Pappu, 2013) and decreased mean 'Sequence Charge Decoration' (SCD) (Sawle and Ghosh, 2015), both of which indicate that there is an increased separation of positive and negatively charged residues in these IDRs compared to our null expectation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of evolutionary signatures in cluster D, with citations to the definitions of these features.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "ab23b450-dca4-484b-9d18-aa45d80a0125",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C50",
+      "claim": "The evolutionary signature for cluster D reveals an increased mean fraction of charged residues and negatively charged residues in particular.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary signature for this cluster also reveals an increased mean fraction of charged residues and negatively charged residues in particular (Figure 5A), which is also clear in the comparison between the real Srs2 orthologs and the simulation (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "0385c6d0-e3b6-4f39-91ef-4dc1b0d69d47",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C51",
+      "claim": "Three clusters (A, C, F) are associated with ribosome biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we find three clusters associated with ribosome biogenesis (clusters A, C, F) that cannot be distinguished based on their enriched GO terms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "e116d123-2577-4e56-bdda-e33e5d1c1d0a",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C52",
+      "claim": "In cluster A, 201/295 proteins have a 'nucleus' annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest of these is cluster A, where 201/295 proteins have a 'nucleus' annotation, and 110/295 are essential proteins ('inviable' deletion phenotype).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the enrichment analysis for cluster A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "2e2eccc2-be9c-4779-a4b2-1205bfed17f7",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C53",
+      "claim": "In cluster A, 110/295 are essential proteins ('inviable' deletion phenotype).",
+      "claim_type": "EXPLICIT",
+      "source": "The largest of these is cluster A, where 201/295 proteins have a 'nucleus' annotation, and 110/295 are essential proteins ('inviable' deletion phenotype).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the enrichment analysis for cluster A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "1ebb5e68-25f7-4c6b-8513-e85b915ded83",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C54",
+      "claim": "Cluster A contains highly acidic IDRs with CKII phosphorylation consensus sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster A contains highly acidic IDRs with CKII phosphorylation consensus sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the molecular features in cluster A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "754b0639-723f-4dea-bb99-fe6d8f021bf1",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C55",
+      "claim": "CKII has been previously associated with nucleolar organization.",
+      "claim_type": "EXPLICIT",
+      "source": "CKII has been previously associated with nucleolar organization (Louvet et al., 2006), and a previous analysis of non-conserved consensus phosphorylation sites found ribosome biogenesis as strongly enriched in predicted CKII targets (Lai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "7b7ec53e-ed05-4a61-bb3d-3e1e2eb2da7d",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C56",
+      "claim": "A previous analysis found ribosome biogenesis as strongly enriched in predicted CKII targets.",
+      "claim_type": "EXPLICIT",
+      "source": "CKII has been previously associated with nucleolar organization (Louvet et al., 2006), and a previous analysis of non-conserved consensus phosphorylation sites found ribosome biogenesis as strongly enriched in predicted CKII targets (Lai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lai et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "4d8ca76a-015a-4906-8c87-79275161ac7a",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C57",
+      "claim": "Cluster C contains increased mean polylysine repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cluster C contains increased mean polylysine repeats, and is significantly enriched for proteins that have been experimentally verified as targets for lysine polyphosphorylation (Bentley-DeSousa et al., 2018) (p=2.7\u00d710\u22123, hypergeometric test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of evolutionary signatures in cluster C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "fa73bef1-d999-46e0-be78-00fb477ba2ec",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C58",
+      "claim": "Cluster C is significantly enriched for proteins that have been experimentally verified as targets for lysine polyphosphorylation (p=2.7\u00d710\u22123, hypergeometric test).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, cluster C contains increased mean polylysine repeats, and is significantly enriched for proteins that have been experimentally verified as targets for lysine polyphosphorylation (Bentley-DeSousa et al., 2018) (p=2.7\u00d710\u22123, hypergeometric test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from enrichment analysis with citation to experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "c9e35725-f1ad-4450-a567-73927e795cb9",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C59",
+      "claim": "Multiple clusters (I, J, L, N, O, R) have distinct evolutionary signatures enriched for terms associated with regulation of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We find similar observations in multiple clusters that have distinct evolutionary signatures enriched for terms associated with regulation of transcription (clusters I, J, L, N, O, R).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "4c105ea6-c05f-4ae8-90ea-46e3a3a626d6",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C60",
+      "claim": "Clusters J, O and N have increased glutamine residue content.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, clusters J, O and N have increased glutamine residue content, and cluster N has increased proline residue content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of evolutionary signatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "37670090-4c02-49d3-95de-e10618992b82",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C61",
+      "claim": "Cluster N has increased proline residue content.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, clusters J, O and N have increased glutamine residue content, and cluster N has increased proline residue content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of evolutionary signatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "5a6b4397-cbc9-4a36-b1bd-b864d5fa716a",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C62",
+      "claim": "Clusters I and R have no amino acid composition bias.",
+      "claim_type": "EXPLICIT",
+      "source": "However, clusters I and R have no amino acid composition bias, while cluster N has increased proline-directed phosphorylation consensus sites, suggesting post-translational modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of evolutionary signatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "c96bb2e9-4dd6-4c2c-88b2-8ec877f95565",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C63",
+      "claim": "Cluster N has increased proline-directed phosphorylation consensus sites.",
+      "claim_type": "EXPLICIT",
+      "source": "However, clusters I and R have no amino acid composition bias, while cluster N has increased proline-directed phosphorylation consensus sites, suggesting post-translational modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of evolutionary signatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "7a78553e-7943-4eb4-98ec-e221d8b0e2da",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C64",
+      "claim": "Cluster W is exceptionally strongly associated with the mitochondrion (144/165 proteins in the cluster).",
+      "claim_type": "EXPLICIT",
+      "source": "One of our clusters of intrinsically disordered regions is exceptionally strongly associated with the mitochondrion (144/165 proteins in the cluster) and other annotations that are related to mitochondrial localization and function (for example, 81/165 proteins in the cluster have shown a decreased respiratory growth phenotype) (Table 1, cluster W; see supplementary data for full list of significant enrichments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the enrichment analysis for cluster W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "9ded5899-9af4-4bf2-beae-31fbfbc1d9bb",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C65",
+      "claim": "81/165 proteins in cluster W have shown a decreased respiratory growth phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "One of our clusters of intrinsically disordered regions is exceptionally strongly associated with the mitochondrion (144/165 proteins in the cluster) and other annotations that are related to mitochondrial localization and function (for example, 81/165 proteins in the cluster have shown a decreased respiratory growth phenotype) (Table 1, cluster W; see supplementary data for full list of significant enrichments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the enrichment analysis for cluster W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "efe03096-5ec0-439e-a5ec-165f34e8a104",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C66",
+      "claim": "145/165 of the disordered regions in cluster W are N-terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "Since 145/165 of the disordered regions in this cluster are N-terminal, we hypothesized that this cluster contains disordered regions that are associated with mitochondrial targeting signals (V\u00f6gtle et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of cluster W.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "a1a2d5fe-e23e-42ed-9ce4-dbcfe43b157a",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C67",
+      "claim": "Mitochondrial N-terminal targeting signals are depleted of negatively charged residues, have an abundance of positively charged residues, and are much more hydrophobic than the null expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this hypothesis, we find previously described sequence features of mitochondrial N-terminal targeting signals in our evolutionary signatures; for example, these IDRs are depleted of negatively charged residues, have an abundance of positively charged residues, and are much more hydrophobic than our null expectation (Figure 6\u2014figure supplement 1A) (Garg and Gould, 2016; V\u00f6gtle et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 6\u2014figure supplement 1A and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "b462c3d7-a8d9-4182-876a-853911f2291e",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C68",
+      "claim": "The IDRs in cluster W have a much higher probability of being mitochondrial targeting signals than any other cluster with enriched annotations (Bonferroni-corrected p\u22646.5\u00d710\u221211, Wilcoxon test).",
+      "claim_type": "EXPLICIT",
+      "source": "Using this tool, we find that the IDRs in cluster W have a much higher probability of being mitochondrial targeting signals than any other cluster with enriched annotations in our analysis (Bonferroni-corrected p\u22646.5\u00d710\u221211, Wilcoxon test) (Figure 6B, red box).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "11e7b4ab-1983-49d2-ada9-57a7b35b653b",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C69",
+      "claim": "GFP-tagged Cox15 correctly localizes to the mitochondria when its disordered region is swapped with that of Atm1.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with our hypothesis, we find that GFP-tagged Cox15 correctly localizes to the mitochondria when its disordered region is swapped with that of Atm1, but does not localize correctly when its disordered region is deleted (Figure 6C; full micrographs in Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "e642556e-f0ee-476d-aa19-bb6d643e63b8",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C70",
+      "claim": "GFP-tagged Cox15 does not localize correctly when its disordered region is deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with our hypothesis, we find that GFP-tagged Cox15 correctly localizes to the mitochondria when its disordered region is swapped with that of Atm1, but does not localize correctly when its disordered region is deleted (Figure 6C; full micrographs in Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "b17a7b4e-ad45-4f2d-8c63-b13740f54c30",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C71",
+      "claim": "When the Cox15 IDR is replaced with the Emp47 IDR, there is no mitochondrial localization of Cox15-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we replaced the Cox15 IDR with the disordered region of Emp47, which has an evolutionary signature that we predict to be associated with targeting signals for the endoplasmic reticulum (cluster V). In this case, as we predicted, we found no mitochondrial localization of Cox15-GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by microscopy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "593a4138-2558-4895-9573-737e874ffffc",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C72",
+      "claim": "Restoring the wildtype N-terminal IDR rescues mitochondrial localization in strains where the Cox15 IDR was replaced with Emp47 or knocked out.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we restored the wildtype N-terminal IDR in the strains in which the Cox15 IDR was replaced with Emp47 or knocked out (Figure 6\u2014figure supplement 4). Because we were able to rescue the mitochondrial localization with the restored wildtype IDR, we conclude that the absence of mitochondrial GFP expression is directly linked to the mutations we made in the N-terminal IDR of each strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 6\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "f4cf4362-ab9d-47bf-bdd9-2757256faa69",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C73",
+      "claim": "Rnq1 falls into the cluster of disordered regions associated with nucleocytoplasmic transport (cluster M).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Rnq1 falls into our cluster of disordered regions that are associated with nucleocytoplasmic transport (cluster M) and the nuclear pore central transport channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "8b7ffc6c-a29d-4115-b7a3-22b487182b8f",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C74",
+      "claim": "An RNQ1 deletion was shown to cause nuclear aggregation of the polyQ-expanded huntingtin exon1 (Httex1) in a model of Huntington's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "While Rnq1 is annotated with a cytosolic localization, an RNQ1 deletion was recently shown to cause nuclear aggregation of the polyQ-expanded huntingtin exon1 (Httex1) in a model of Huntington's disease (Zheng et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zheng et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "73e12055-5af5-4a10-b814-4b9cb4fbb2a2",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C75",
+      "claim": "Predictions of function based on cluster annotations clearly matched the gene description of the proteins in 5 of 10 cases for the most disordered yeast proteins with known functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that predictions of function based on our cluster annotations clearly matched the gene description of the proteins in 5 of 10 cases, suggesting a predictive power of at least 50% (Supplementary file 1 - Table S3, see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the validation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "b8daccd0-60f3-42c8-8951-3d4bc0215254",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C76",
+      "claim": "The lack of constraint on primary amino acid sequence alignments in disordered regions is relative compared to folded regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the relative lack of constraint on primary amino acid sequence alignments (compared to folded regions, Brown et al., 2002; T\u00f3th-Petr\u00f3czy and Tawfik, 2013), we find that the vast majority of disordered regions contain molecular features that deviate in their evolution from our null expectation (a simulation of disordered region evolution; Nguyen Ba et al., 2014; Nguyen Ba et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "77590ce2-d5ac-44f8-9bf4-3bae6b850bee",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C77",
+      "claim": "The vast majority of disordered regions contain molecular features that deviate in their evolution from the null expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the relative lack of constraint on primary amino acid sequence alignments (compared to folded regions, Brown et al., 2002; T\u00f3th-Petr\u00f3czy and Tawfik, 2013), we find that the vast majority of disordered regions contain molecular features that deviate in their evolution from our null expectation (a simulation of disordered region evolution; Nguyen Ba et al., 2014; Nguyen Ba et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "73534201-385e-4236-9868-a13a2d1302e4",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C78",
+      "claim": "The evidence for constraint on IDRs represents a lower bound on the total amount of functional constraint on highly diverged IDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our evidence for constraint must represent a lower bound on the total amount of functional constraint on highly diverged IDRs: there are very likely to be sequence characteristics that were not captured by our features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of the feature set used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "50580f0e-ac3d-44ec-bd4f-b77b36f0b8ff",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C79",
+      "claim": "The lack of homology between most IDRs with similar evolutionary signatures suggests that the molecular features are preserved in each IDR independently.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of homology between most IDRs with similar evolutionary signatures suggests that the molecular features are preserved in each IDR independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of similar evolutionary signatures without sequence similarity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "c8a956f0-6198-4227-bd4d-fddaf172707a",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C80",
+      "claim": "The more than 150 IDRs that represent mitochondrial N-terminal targeting signals share similar constraints on their molecular features, yet these signals have been preserved independently over very long evolutionary time.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the more than 150 IDRs that we believe represent mitochondrial N-terminal targeting signals share similar constraints on their molecular features, yet these signals have been preserved independently over very long evolutionary time as mitochondrial genes were transferred individually to the nuclear genome (Adams and Palmer, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citation to Adams and Palmer, 2003.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "8fd488de-15a4-4a0e-9022-d7c9c2e29ee6",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C81",
+      "claim": "The preservation of molecular features over long evolutionary time, despite accumulation of amino acid divergence, is consistent with a model of stabilizing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The preservation of molecular features over long evolutionary time, despite accumulation of amino acid divergence, is consistent with a model of stabilizing selection (Bedford and Hartl, 2009; Hansen, 1997; Lande, 1976), where individual amino acid sites are under relatively weak functional constraints (Landry et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to evolutionary theory.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "fc136ffe-cfa2-4379-a713-8ec27e945fcf",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C82",
+      "claim": "Single point mutations in IDRs are unlikely to dramatically impair IDR function.",
+      "claim_type": "EXPLICIT",
+      "source": "In this view, single point mutations are unlikely to dramatically impair IDR function, and therefore large evolutionary divergence can accumulate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the stabilizing selection model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "0c05eb5c-804a-45d2-976c-a7f1b8f809f6",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C83",
+      "claim": "Disease-causing mutations in disordered regions are more likely to cause gain of function.",
+      "claim_type": "EXPLICIT",
+      "source": "This also suggests that disease-causing mutations in disordered regions are more likely to cause gain of function, consistent with at least one recent study (Meyer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citation to Meyer et al., 2018.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "3f1f7f80-badc-4a92-acda-649e5b942466",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C84",
+      "claim": "Stabilizing selection stands in contrast to purifying selection on individual residues, the major evolutionary mechanism thought to preserve function in stably folded regions of the proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, stabilizing selection stands in contrast to purifying selection on individual residues, the major evolutionary mechanism thought to preserve function in stably folded regions of the proteome (Taylor and Raes, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Taylor and Raes, 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "03cf0fe0-037c-49a1-bc0f-d5a2a9684f09",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C85",
+      "claim": "IDRs and folded regions evolve under two different functional regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that these two major biophysical classes of protein regions (IDRs vs. folded regions) also evolve under two different functional regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "ac94e70a-0f8b-4e33-9bfc-0125dca7cee0",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C86",
+      "claim": "82 sequence features reported in the literature to be important for disordered region function were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, we obtained a set of 82 sequence features reported in the literature to be important for disordered region function (Supplementary file 1 - Table S1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "8867a600-a02d-4769-b78a-3df9c2a81153",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C87",
+      "claim": "Ste50 is an adaptor protein in the High Osmolarity Glycerol (HOG) and mating pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Ste50 is an adaptor protein in the High Osmolarity Glycerol (HOG) and mating pathways (Hao et al., 2008; Jansen et al., 2001; Tatebayashi et al., 2007; Truckses et al., 2006; Yamamoto et al., 2010) whose IDR is important for basal mating pathway activity (as measured by expression of a reporter driven by the Fus1 promoter) (Hao et al., 2008; Zarin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "ce88148f-7005-4207-8cc0-7fa1fa6375b8",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C88",
+      "claim": "The Ste50 IDR is important for basal mating pathway activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ste50 is an adaptor protein in the High Osmolarity Glycerol (HOG) and mating pathways (Hao et al., 2008; Jansen et al., 2001; Tatebayashi et al., 2007; Truckses et al., 2006; Yamamoto et al., 2010) whose IDR is important for basal mating pathway activity (as measured by expression of a reporter driven by the Fus1 promoter) (Hao et al., 2008; Zarin et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hao et al., 2008 and Zarin et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "6ca09c64-dcb3-4f24-92f8-e08e2afcbe4b",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C89",
+      "claim": "Pex5 is a peroxisomal signal receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we replaced the endogenous Ste50 IDR with several IDRs from functionally unrelated proteins: Pex5, a peroxisomal signal receptor (Erdmann and Blobel, 1996), Stp4, a predicted transcription factor (Abdel-Sater et al., 2004), and Rad26, a DNA-dependent ATPase involved in Transcription Coupled Repair (Gregory and Sweder, 2001; Guzder et al., 1996) (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Erdmann and Blobel, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "48ff54ad-2710-426d-94b1-caa09b73982b",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C90",
+      "claim": "Stp4 is a predicted transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we replaced the endogenous Ste50 IDR with several IDRs from functionally unrelated proteins: Pex5, a peroxisomal signal receptor (Erdmann and Blobel, 1996), Stp4, a predicted transcription factor (Abdel-Sater et al., 2004), and Rad26, a DNA-dependent ATPase involved in Transcription Coupled Repair (Gregory and Sweder, 2001; Guzder et al., 1996) (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Abdel-Sater et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "1e674b33-9360-4775-adfc-0b62896a0685",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C91",
+      "claim": "Rad26 is a DNA-dependent ATPase involved in Transcription Coupled Repair.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we replaced the endogenous Ste50 IDR with several IDRs from functionally unrelated proteins: Pex5, a peroxisomal signal receptor (Erdmann and Blobel, 1996), Stp4, a predicted transcription factor (Abdel-Sater et al., 2004), and Rad26, a DNA-dependent ATPase involved in Transcription Coupled Repair (Gregory and Sweder, 2001; Guzder et al., 1996) (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gregory and Sweder, 2001 and Guzder et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "f49839cc-b09f-49ef-83cd-9e64091e6a66",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C92",
+      "claim": "The vast majority of mitochondrial proteins are synthesized with N-terminal pre-sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of mitochondrial proteins are synthesized with N-terminal pre-sequences (Maccecchini et al., 1979) (also known as N-terminal targeting signals) that are cleaved upon import (V\u00f6gtle et al., 2009) and are thought to sample dynamic structural configurations (Saitoh et al., 2011; Saitoh et al., 2007) (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "9b6455ad-f39e-4dbb-84b7-ef03f600029c",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C93",
+      "claim": "Mitochondrial N-terminal pre-sequences are cleaved upon import.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of mitochondrial proteins are synthesized with N-terminal pre-sequences (Maccecchini et al., 1979) (also known as N-terminal targeting signals) that are cleaved upon import (V\u00f6gtle et al., 2009) and are thought to sample dynamic structural configurations (Saitoh et al., 2011; Saitoh et al., 2007) (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to V\u00f6gtle et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "40088981-bc9d-483f-a216-de0b03bbef0a",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C94",
+      "claim": "Mitochondrial N-terminal pre-sequences are thought to sample dynamic structural configurations.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of mitochondrial proteins are synthesized with N-terminal pre-sequences (Maccecchini et al., 1979) (also known as N-terminal targeting signals) that are cleaved upon import (V\u00f6gtle et al., 2009) and are thought to sample dynamic structural configurations (Saitoh et al., 2011; Saitoh et al., 2007) (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Saitoh et al., 2011 and Saitoh et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "7409486f-b0c3-4012-8ba0-7e47749f37a0",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C95",
+      "claim": "Ccr4 is a protein that is known to accumulate in P-bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "These sequence features are illustrated in Figure 4B, where we compare the presence of glutamine and charged residues in an example disordered region from this cluster (Ccr4; a protein that is known to accumulate in P-bodies; Teixeira and Parker, 2007) to an example from the corresponding simulation (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Teixeira and Parker, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "6d8c13b2-c928-4781-a873-143451772e38",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C96",
+      "claim": "Acidic stretches have been associated with IDRs in histone chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Although acidic stretches have been associated with IDRs in histone chaperones (Warren and Shechter, 2017), to our knowledge, the separation of oppositely charged residues has not been associated with the wider functional class of DNA repair IDRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Warren and Shechter, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "01c7f918-516a-44f3-8f5e-53d10c52412f",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C97",
+      "claim": "The separation of oppositely charged residues has not been associated with the wider functional class of DNA repair IDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although acidic stretches have been associated with IDRs in histone chaperones (Warren and Shechter, 2017), to our knowledge, the separation of oppositely charged residues has not been associated with the wider functional class of DNA repair IDRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a novel finding of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "3006bdd2-0c7c-4a7e-8a1a-bb9bb35e57dc",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C98",
+      "claim": "Mitochondrial precursor peptides that are not correctly targeted to the mitochondria are thought to be degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial precursor peptides that are not correctly targeted to the mitochondria are thought to be degraded (M\u00e5rtensson et al., 2019; Weidberg and Amon, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to M\u00e5rtensson et al., 2019 and Weidberg and Amon, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "f8eac5a7-8425-4c46-b0e1-ae2c9e02a636",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "claim_id": "C99",
+      "claim": "The presence of IDRs is conserved across orthologs in the vast majority of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although there are examples of IDRs that are lost or gained through evolution (Ahrens et al., 2017; Montanari et al., 2011), the presence of IDRs is conserved across orthologs in the vast majority of cases (Bellay et al., 2011; Chen et al., 2006a; Chen et al., 2006b; Colak et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "abc203b2-b349-4dac-9df0-139fe9460c44",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the context and challenges of studying intrinsically disordered regions (IDRs), noting that while IDRs are widespread in eukaryotic proteomes and can be identified from sequence, they lack stable structure, don't typically perform enzymatic functions, and their sequence-to-function relationship is poorly understood compared to folded domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C8-C16) are well-established background knowledge supported by multiple citations to prior literature. They accurately represent the current state of the field and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "89ec78ae-f88a-42d8-9ef9-023eae202e0c",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work has shown that short conserved segments in IDRs point to functional residues important for post-translational modifications, but these segments represent only ~5% of disordered regions, with the vast majority showing little evolutionary constraint in sequence alignments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 accurately cite prior work including the authors' own previous studies. The 5% figure is specifically attributed to Colak et al., 2013, providing appropriate support for this quantitative claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "5c06b20c-0d5f-46de-9809-a94787456b55",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors identified >5000 IDRs in S. cerevisiae, confirmed they evolve more rapidly than non-disordered regions, and verified that 91% have no overlap with Pfam domains, establishing that these IDRs are distinct from known folded domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by computational analysis and data shown in supplementary figures. The methods are described and the results are consistent with prior literature on IDR properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "7ba00e57-705e-4b77-ba03-ddbccfbaaa17",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Proteome-wide analysis of 82 molecular features reveals that charge properties (net charge, acidic residue content) deviate from null expectations in >50% of IDRs, while other features like sequence complexity (43.0%), asparagine content (43.3%), and isoelectric point (53.9%) also frequently deviate. The median IDR has 15 significant features compared to 1 expected by chance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C32 and C86 are supported by the proteome-wide computational analysis shown in Figure 1B-C. The comparison to simulated null expectations provides appropriate statistical context. The specific percentages and median values are clearly presented in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "c098ba6f-50d2-4491-9d6b-43ef4a3d4ab1",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Most disordered regions contain multiple molecular features that are preserved during evolution, deviating from null expectations despite high sequence divergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C77 represent the central finding of the proteome-wide analysis. This is well-supported by the data showing that the vast majority of IDRs have multiple significant molecular features (median of 15) compared to random expectation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "IDR swap experiments with Ste50 demonstrate that basal mating reporter expression and shmooing ability correspond to similarity of evolutionary signatures. IDRs from Pex5 and Stp4 (more similar signatures) partially rescue function, while Rad26 IDR (most different signature) cannot rescue function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 and C87-C91 are supported by experimental data in Figure 2. Statistical significance is reported (Wilcoxon test p<0.05), and microscopy data confirms the phenotypic differences. The experimental design appropriately tests the hypothesis that evolutionary signatures predict functional similarity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "6a9137c8-0ca8-4e57-8709-06ff1a4b1b50",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "IDRs with similar evolutionary signatures can rescue function in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is supported by both the Ste50 swap experiments (C37-C40) and the mitochondrial targeting experiments (C69-C72). Multiple independent experimental systems demonstrate functional rescue by IDRs with similar evolutionary signatures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "e5496fed-54b7-48f8-8ea8-91ae0f33aa42",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Clustering analysis reveals that IDRs fall into at least 23 clusters based on evolutionary signatures, and these clusters are significantly associated with specific biological functions (FDR=5%, Benjamini-Hochberg corrected).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C42, and C6 are supported by the clustering analysis shown in Figure 3 and enrichment statistics in Table 1. The authors performed appropriate controls for sequence similarity and null hypothesis specification (Supplementary Table S2). The statistical correction for multiple testing is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "57640eb8-c618-4833-a158-09569a8de848",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cluster M is associated with nucleocytoplasmic transport and contains IDRs from FG-NUP proteins with molecular features including increased asparagine content, polar residue content, and proline/charged residue demixing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by enrichment analysis and evolutionary signature characterization. The association with known FG-NUP proteins provides validation, and the identified features are consistent with prior knowledge of these proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "10da8454-94a8-43b1-8b82-eeb603ce15f3",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cluster O contains IDRs from proteins associated with phase separation (Sup35, Dhh1, Ccr4) and shows evolutionary signatures including increased polyglutamine repeats, reduced net charge variance, and depletion of charged residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 and C95 are supported by enrichment analysis, evolutionary signature data (Figure 4A), and sequence comparisons (Figure 4B). The association with known phase-separating proteins provides validation of the clustering approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "fa1cf3bb-ab42-4b3a-89e9-f56340fcfe53",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cluster D is associated with DNA repair and shows increased separation of oppositely charged residues (increased Kappa, decreased SCD) and increased negatively charged residue content, representing a novel association not previously reported for DNA repair IDRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 and C96-C97 are supported by enrichment analysis and evolutionary signature data (Figure 5A-B). The authors appropriately note this is a novel finding while acknowledging prior work on acidic stretches in histone chaperones.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "ef68c7b5-14ca-4fea-9cfc-03234fe76dd8",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Three clusters (A, C, F) are associated with ribosome biogenesis but have distinct evolutionary signatures. Cluster A contains acidic IDRs with CKII sites, while cluster C contains polylysine repeats and is enriched for lysine polyphosphorylation targets (p=2.7\u00d710\u207b\u00b3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C58 are supported by enrichment analysis and evolutionary signature characterization. The statistical enrichment for lysine polyphosphorylation targets in cluster C is appropriately tested and reported. The distinct signatures for functionally related clusters suggest functional sub-specialization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "f7f31674-18ec-4e0b-a137-40d1e8ad2001",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Multiple clusters (I, J, L, N, O, R) are enriched for transcription regulation but have distinct evolutionary signatures, including differences in glutamine content, proline content, and phosphorylation consensus sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 are supported by enrichment analysis and evolutionary signature characterization. The identification of multiple distinct signatures for transcription-related IDRs suggests functional heterogeneity within this broad category.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "139f892c-5e09-4a2f-8f80-1d368f613c3a",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cluster W is strongly associated with mitochondria (144/165 proteins), with 145/165 IDRs being N-terminal. These IDRs show features of mitochondrial targeting signals (depleted negative charge, enriched positive charge, increased hydrophobicity) and have significantly higher mitochondrial targeting probability scores than other clusters (p\u22646.5\u00d710\u207b\u00b9\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 and C92-C94 are supported by enrichment analysis, evolutionary signature data (Figure 6\u2014supplement 1A), and computational prediction scores (Figure 6B). The statistical comparison to other clusters is appropriately performed with Bonferroni correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "6559c4d6-1df6-41a1-968c-a145d6b19225",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Experimental validation shows that Cox15-GFP localizes to mitochondria when its IDR is swapped with Atm1 IDR (both from cluster W) but not when deleted or replaced with Emp47 IDR (from cluster V). Restoring the wildtype IDR rescues localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 are supported by microscopy data (Figure 6C and supplements). The experimental design includes appropriate controls (deletion, ER-targeting IDR swap, and rescue experiments) that strengthen the conclusion that evolutionary signatures predict targeting function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "aaec1a86-71b7-4e14-b66b-e1d81f617e35",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Rnq1 falls into cluster M (nucleocytoplasmic transport), and RNQ1 deletion causes nuclear aggregation of polyQ-expanded huntingtin, suggesting a role in nucleocytoplasmic transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C73 is supported by the clustering analysis, and C74 accurately cites prior work. However, the connection between these observations is speculative. The authors appropriately present this as a hypothesis rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "9e57d85c-a383-485a-9af2-11a0b1090c01",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "For the 10 most disordered yeast proteins with known functions, predictions based on cluster annotations matched gene descriptions in 5/10 cases, suggesting at least 50% predictive power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 presents a validation attempt, but the evaluation is subjective (\"clearly matched\") and based on a small sample (n=10). The 50% figure may be inflated given potential confirmation bias in assessing matches. More rigorous validation with independent assessment would strengthen this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "29a522ac-7b40-44f1-84d6-9565ec7aad25",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Evolutionary signatures can be used to predict function for many disordered regions from their amino acid sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C7 is supported by the combination of: (1) strong functional enrichments in clusters (C42), (2) experimental validation of functional rescue (C5, C37-C40, C69-C72), and (3) preliminary validation on uncharacterized proteins (C75). While the predictive power needs further validation, the evidence supports this as a viable approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors propose that IDRs evolve under stabilizing selection on molecular features rather than purifying selection on individual residues, representing a different evolutionary regime from folded regions. This model explains how IDRs can accumulate sequence divergence while maintaining function, and suggests disease mutations in IDRs are more likely gain-of-function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C85 and C99 present an evolutionary interpretation supported by the data. The observation of preserved molecular features despite sequence divergence (C77) is consistent with stabilizing selection. The citations to evolutionary theory are appropriate. However, C83 (disease mutations) is speculative and appropriately qualified with citation to one supporting study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    },
+    {
+      "id": "c0c65366-341f-46a3-b059-ba51c090fdc6",
+      "content_id": "84410800-98d7-4909-9454-8d2596f26dfd",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Mitochondrial precursor peptides that are not correctly targeted are thought to be degraded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 is appropriately cited to recent literature (M\u00e5rtensson et al., 2019; Weidberg and Amon, 2018) and provides context for interpreting the localization experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:59:56.808999Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cc7a8b75-3acc-4756-87c5-0bcda8fcfb9e",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "f047fefc-34df-470d-b83c-b22f983a5063",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "7178e37a-6106-4b04-be75-15dc2a1b88a4",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "001cefed-a200-4a1e-b029-7dca9ec74754",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "2ade3624-9e60-4ed7-9b26-cfffbebe3854",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "9371fb02-30da-4ca4-8689-f9cf6d31a553",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "fdaf4e82-178d-4393-81ad-a1d4e0cb22c1",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "e6f6ae63-ea60-4526-a1b3-8f330c4d8748",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "778e4284-de93-40a7-a7ad-084f964b72c5",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "01688ef6-170b-47db-9219-b061ddc4df6b",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "bdb332ba-250c-42ac-895f-6433c7dde351",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "5c47f2b9-eaf1-428c-af94-fdeafe10a398",
+      "result_id": "abc203b2-b349-4dac-9df0-139fe9460c44"
+    },
+    {
+      "claim_id": "e7f5742a-a55c-4d42-809c-a0d2525f9f1b",
+      "result_id": "89ec78ae-f88a-42d8-9ef9-023eae202e0c"
+    },
+    {
+      "claim_id": "43690474-2d70-43ee-a3ca-3128d88ef4b3",
+      "result_id": "89ec78ae-f88a-42d8-9ef9-023eae202e0c"
+    },
+    {
+      "claim_id": "0fc1ef72-39b5-4972-b6b0-1a45b5f05876",
+      "result_id": "89ec78ae-f88a-42d8-9ef9-023eae202e0c"
+    },
+    {
+      "claim_id": "452afbc7-3373-4e9f-b070-0483eb2bcdc0",
+      "result_id": "89ec78ae-f88a-42d8-9ef9-023eae202e0c"
+    },
+    {
+      "claim_id": "d3ca0916-c3a2-402f-8bb6-8f85e64ee16e",
+      "result_id": "5c06b20c-0d5f-46de-9809-a94787456b55"
+    },
+    {
+      "claim_id": "21a1a388-c195-4c05-a3a3-95dcf5c3d2b3",
+      "result_id": "5c06b20c-0d5f-46de-9809-a94787456b55"
+    },
+    {
+      "claim_id": "c88f68c9-273c-4d8c-9771-947479bf5e04",
+      "result_id": "5c06b20c-0d5f-46de-9809-a94787456b55"
+    },
+    {
+      "claim_id": "c089ec83-77b5-41ad-8fb8-f37efe28fb7f",
+      "result_id": "5c06b20c-0d5f-46de-9809-a94787456b55"
+    },
+    {
+      "claim_id": "f58becd7-1f57-4f17-a895-e4337f11bc5f",
+      "result_id": "7ba00e57-705e-4b77-ba03-ddbccfbaaa17"
+    },
+    {
+      "claim_id": "25938234-f3ec-416b-a676-42954db67c79",
+      "result_id": "7ba00e57-705e-4b77-ba03-ddbccfbaaa17"
+    },
+    {
+      "claim_id": "ce326f84-4ac4-47d8-8300-0669f095d6b5",
+      "result_id": "7ba00e57-705e-4b77-ba03-ddbccfbaaa17"
+    },
+    {
+      "claim_id": "83055bd6-7a2d-41e9-82c7-b8cf50e7f976",
+      "result_id": "7ba00e57-705e-4b77-ba03-ddbccfbaaa17"
+    },
+    {
+      "claim_id": "e87dc007-c377-43d2-b0f0-a718cd34682f",
+      "result_id": "7ba00e57-705e-4b77-ba03-ddbccfbaaa17"
+    },
+    {
+      "claim_id": "c9059659-ceb2-40ad-8ab4-28c7bda6e6d3",
+      "result_id": "7ba00e57-705e-4b77-ba03-ddbccfbaaa17"
+    },
+    {
+      "claim_id": "1f035f88-8a92-4e29-850d-0663f3166a3e",
+      "result_id": "7ba00e57-705e-4b77-ba03-ddbccfbaaa17"
+    },
+    {
+      "claim_id": "a41c4b72-a443-42b7-a4fe-758c510f0916",
+      "result_id": "7ba00e57-705e-4b77-ba03-ddbccfbaaa17"
+    },
+    {
+      "claim_id": "ac94e70a-0f8b-4e33-9bfc-0125dca7cee0",
+      "result_id": "7ba00e57-705e-4b77-ba03-ddbccfbaaa17"
+    },
+    {
+      "claim_id": "31f1cfc9-77a1-46f0-85ae-f73936e13709",
+      "result_id": "c098ba6f-50d2-4491-9d6b-43ef4a3d4ab1"
+    },
+    {
+      "claim_id": "77590ce2-d5ac-44f8-9bf4-3bae6b850bee",
+      "result_id": "c098ba6f-50d2-4491-9d6b-43ef4a3d4ab1"
+    },
+    {
+      "claim_id": "b6b409b1-9eab-4846-a085-70f7d13c5b78",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "ee3a5842-b2b4-4317-b701-ccac18ce7160",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "4ae070dc-d721-4a2b-ba86-b09bf3e1e575",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "790ec5bc-4edd-4e1f-897f-e12a6103169f",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "8ea58b31-285a-4c80-9f5c-dddb3b080467",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "db3bc898-2b13-4860-8b01-0837497b7197",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "0b0a3a2e-61a0-4b32-96f6-78a8cb05184d",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "0be09a3c-67c6-40ad-8e12-aeede9b7bd69",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "8867a600-a02d-4769-b78a-3df9c2a81153",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "ce88148f-7005-4207-8cc0-7fa1fa6375b8",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "6ca09c64-dcb3-4f24-92f8-e08e2afcbe4b",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "48ff54ad-2710-426d-94b1-caa09b73982b",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "1e674b33-9360-4775-adfc-0b62896a0685",
+      "result_id": "82a99613-69fd-4ef4-85e6-ef6be8f32ff8"
+    },
+    {
+      "claim_id": "8d8ddbd7-b3b7-4cc7-afa6-7c179b9f1b71",
+      "result_id": "6a9137c8-0ca8-4e57-8709-06ff1a4b1b50"
+    },
+    {
+      "claim_id": "be844f31-1312-4006-b0c2-5819aa72b90e",
+      "result_id": "e5496fed-54b7-48f8-8ea8-91ae0f33aa42"
+    },
+    {
+      "claim_id": "9ef44f9c-67dc-44c4-8e8e-319dcede551f",
+      "result_id": "e5496fed-54b7-48f8-8ea8-91ae0f33aa42"
+    },
+    {
+      "claim_id": "c7cfdaf2-e0de-4a78-9b2b-0a94675e614c",
+      "result_id": "e5496fed-54b7-48f8-8ea8-91ae0f33aa42"
+    },
+    {
+      "claim_id": "a6fd4624-0f6d-42be-9cfc-a340bf5d82c9",
+      "result_id": "57640eb8-c618-4833-a158-09569a8de848"
+    },
+    {
+      "claim_id": "df5861d3-cb7e-4880-9032-214337ea7466",
+      "result_id": "57640eb8-c618-4833-a158-09569a8de848"
+    },
+    {
+      "claim_id": "96f095ed-5786-4c7e-9c7a-08fae224fbee",
+      "result_id": "10da8454-94a8-43b1-8b82-eeb603ce15f3"
+    },
+    {
+      "claim_id": "59d31f39-4111-4927-a87e-585aeca56c76",
+      "result_id": "10da8454-94a8-43b1-8b82-eeb603ce15f3"
+    },
+    {
+      "claim_id": "1c027ae2-345d-41b6-b000-a1aa36c19d77",
+      "result_id": "10da8454-94a8-43b1-8b82-eeb603ce15f3"
+    },
+    {
+      "claim_id": "7409486f-b0c3-4012-8ba0-7e47749f37a0",
+      "result_id": "10da8454-94a8-43b1-8b82-eeb603ce15f3"
+    },
+    {
+      "claim_id": "3387cbdd-5847-464d-b0a9-664507a803fc",
+      "result_id": "fa1cf3bb-ab42-4b3a-89e9-f56340fcfe53"
+    },
+    {
+      "claim_id": "44174b8e-37c3-4835-9404-d34b317837db",
+      "result_id": "fa1cf3bb-ab42-4b3a-89e9-f56340fcfe53"
+    },
+    {
+      "claim_id": "ab23b450-dca4-484b-9d18-aa45d80a0125",
+      "result_id": "fa1cf3bb-ab42-4b3a-89e9-f56340fcfe53"
+    },
+    {
+      "claim_id": "6d8c13b2-c928-4781-a873-143451772e38",
+      "result_id": "fa1cf3bb-ab42-4b3a-89e9-f56340fcfe53"
+    },
+    {
+      "claim_id": "01c7f918-516a-44f3-8f5e-53d10c52412f",
+      "result_id": "fa1cf3bb-ab42-4b3a-89e9-f56340fcfe53"
+    },
+    {
+      "claim_id": "0385c6d0-e3b6-4f39-91ef-4dc1b0d69d47",
+      "result_id": "ef68c7b5-14ca-4fea-9cfc-03234fe76dd8"
+    },
+    {
+      "claim_id": "e116d123-2577-4e56-bdda-e33e5d1c1d0a",
+      "result_id": "ef68c7b5-14ca-4fea-9cfc-03234fe76dd8"
+    },
+    {
+      "claim_id": "2e2eccc2-be9c-4779-a4b2-1205bfed17f7",
+      "result_id": "ef68c7b5-14ca-4fea-9cfc-03234fe76dd8"
+    },
+    {
+      "claim_id": "1ebb5e68-25f7-4c6b-8513-e85b915ded83",
+      "result_id": "ef68c7b5-14ca-4fea-9cfc-03234fe76dd8"
+    },
+    {
+      "claim_id": "754b0639-723f-4dea-bb99-fe6d8f021bf1",
+      "result_id": "ef68c7b5-14ca-4fea-9cfc-03234fe76dd8"
+    },
+    {
+      "claim_id": "7b7ec53e-ed05-4a61-bb3d-3e1e2eb2da7d",
+      "result_id": "ef68c7b5-14ca-4fea-9cfc-03234fe76dd8"
+    },
+    {
+      "claim_id": "4d8ca76a-015a-4906-8c87-79275161ac7a",
+      "result_id": "ef68c7b5-14ca-4fea-9cfc-03234fe76dd8"
+    },
+    {
+      "claim_id": "fa73bef1-d999-46e0-be78-00fb477ba2ec",
+      "result_id": "ef68c7b5-14ca-4fea-9cfc-03234fe76dd8"
+    },
+    {
+      "claim_id": "c9e35725-f1ad-4450-a567-73927e795cb9",
+      "result_id": "f7f31674-18ec-4e0b-a137-40d1e8ad2001"
+    },
+    {
+      "claim_id": "4c105ea6-c05f-4ae8-90ea-46e3a3a626d6",
+      "result_id": "f7f31674-18ec-4e0b-a137-40d1e8ad2001"
+    },
+    {
+      "claim_id": "37670090-4c02-49d3-95de-e10618992b82",
+      "result_id": "f7f31674-18ec-4e0b-a137-40d1e8ad2001"
+    },
+    {
+      "claim_id": "5a6b4397-cbc9-4a36-b1bd-b864d5fa716a",
+      "result_id": "f7f31674-18ec-4e0b-a137-40d1e8ad2001"
+    },
+    {
+      "claim_id": "c96bb2e9-4dd6-4c2c-88b2-8ec877f95565",
+      "result_id": "f7f31674-18ec-4e0b-a137-40d1e8ad2001"
+    },
+    {
+      "claim_id": "7a78553e-7943-4eb4-98ec-e221d8b0e2da",
+      "result_id": "139f892c-5e09-4a2f-8f80-1d368f613c3a"
+    },
+    {
+      "claim_id": "9ded5899-9af4-4bf2-beae-31fbfbc1d9bb",
+      "result_id": "139f892c-5e09-4a2f-8f80-1d368f613c3a"
+    },
+    {
+      "claim_id": "efe03096-5ec0-439e-a5ec-165f34e8a104",
+      "result_id": "139f892c-5e09-4a2f-8f80-1d368f613c3a"
+    },
+    {
+      "claim_id": "a1a2d5fe-e23e-42ed-9ce4-dbcfe43b157a",
+      "result_id": "139f892c-5e09-4a2f-8f80-1d368f613c3a"
+    },
+    {
+      "claim_id": "b462c3d7-a8d9-4182-876a-853911f2291e",
+      "result_id": "139f892c-5e09-4a2f-8f80-1d368f613c3a"
+    },
+    {
+      "claim_id": "f49839cc-b09f-49ef-83cd-9e64091e6a66",
+      "result_id": "139f892c-5e09-4a2f-8f80-1d368f613c3a"
+    },
+    {
+      "claim_id": "9b6455ad-f39e-4dbb-84b7-ef03f600029c",
+      "result_id": "139f892c-5e09-4a2f-8f80-1d368f613c3a"
+    },
+    {
+      "claim_id": "40088981-bc9d-483f-a216-de0b03bbef0a",
+      "result_id": "139f892c-5e09-4a2f-8f80-1d368f613c3a"
+    },
+    {
+      "claim_id": "11e7b4ab-1983-49d2-ada9-57a7b35b653b",
+      "result_id": "6559c4d6-1df6-41a1-968c-a145d6b19225"
+    },
+    {
+      "claim_id": "e642556e-f0ee-476d-aa19-bb6d643e63b8",
+      "result_id": "6559c4d6-1df6-41a1-968c-a145d6b19225"
+    },
+    {
+      "claim_id": "b17a7b4e-ad45-4f2d-8c63-b13740f54c30",
+      "result_id": "6559c4d6-1df6-41a1-968c-a145d6b19225"
+    },
+    {
+      "claim_id": "593a4138-2558-4895-9573-737e874ffffc",
+      "result_id": "6559c4d6-1df6-41a1-968c-a145d6b19225"
+    },
+    {
+      "claim_id": "f4cf4362-ab9d-47bf-bdd9-2757256faa69",
+      "result_id": "aaec1a86-71b7-4e14-b66b-e1d81f617e35"
+    },
+    {
+      "claim_id": "8b7ffc6c-a29d-4115-b7a3-22b487182b8f",
+      "result_id": "aaec1a86-71b7-4e14-b66b-e1d81f617e35"
+    },
+    {
+      "claim_id": "73e12055-5af5-4a10-b814-4b9cb4fbb2a2",
+      "result_id": "9e57d85c-a383-485a-9af2-11a0b1090c01"
+    },
+    {
+      "claim_id": "bc24bfdd-e096-4990-be6d-00b33717f0f7",
+      "result_id": "29a522ac-7b40-44f1-84d6-9565ec7aad25"
+    },
+    {
+      "claim_id": "b8daccd0-60f3-42c8-8951-3d4bc0215254",
+      "result_id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc"
+    },
+    {
+      "claim_id": "73534201-385e-4236-9868-a13a2d1302e4",
+      "result_id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc"
+    },
+    {
+      "claim_id": "50580f0e-ac3d-44ec-bd4f-b77b36f0b8ff",
+      "result_id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc"
+    },
+    {
+      "claim_id": "c8a956f0-6198-4227-bd4d-fddaf172707a",
+      "result_id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc"
+    },
+    {
+      "claim_id": "8fd488de-15a4-4a0e-9022-d7c9c2e29ee6",
+      "result_id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc"
+    },
+    {
+      "claim_id": "fc136ffe-cfa2-4379-a713-8ec27e945fcf",
+      "result_id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc"
+    },
+    {
+      "claim_id": "0c05eb5c-804a-45d2-976c-a7f1b8f809f6",
+      "result_id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc"
+    },
+    {
+      "claim_id": "3f1f7f80-badc-4a92-acda-649e5b942466",
+      "result_id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc"
+    },
+    {
+      "claim_id": "03cf0fe0-037c-49a1-bc0f-d5a2a9684f09",
+      "result_id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc"
+    },
+    {
+      "claim_id": "f8eac5a7-8425-4c46-b0e1-ae2c9e02a636",
+      "result_id": "fbe099ed-2987-479c-82bf-dc9ceb8a0dbc"
+    },
+    {
+      "claim_id": "3006bdd2-0c7c-4a7e-8a1a-bb9bb35e57dc",
+      "result_id": "c0c65366-341f-46a3-b059-ba51c090fdc6"
+    }
+  ],
+  "comparisons": []
+}

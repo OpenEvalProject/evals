@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C44",
+      "C45"
+    ],
+    "result": "The HiRIEF LC-MS/MS method demonstrates high proteome coverage for plasma analysis. Optimization experiments identified an average of 1,505 proteins per condition (range 904-1,888) with 1% FDR, compared to only 241 proteins in the MS runtime control. The method covered at least 2,236 of the 3,509 proteins reported in PeptideAtlas, with 3,053 total proteins identified across all optimization conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C32-C40, C44-C45 provide converging evidence for high proteome coverage. The optimization data (C32-C40) show systematic evaluation of pH ranges and sample loads with consistent protein identification. The comparison to PeptideAtlas (C45) and MS runtime control (C33-C34) provide appropriate benchmarks demonstrating the method's superior performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "The HiRIEF LC-MS/MS method demonstrates reproducibility across multiple TMT-labeled cohorts. In the first cohort, 2,587 proteins were identified with 51% detected in all four TMT sets, with average CVs of 4.7% within sets and 7.3% between sets. A core set of 828 genes was robustly identified across all nine TMT sets from 42 individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 provide detailed reproducibility metrics from two independent cohorts with appropriate technical replicates. The CV values (C53-C54) are well within acceptable ranges for proteomics. The core set analysis (C58) demonstrates robust detection across multiple experiments. Comparison with re-analyzed Keshishian data (C61-C62) provides appropriate benchmarking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C96",
+      "C97"
+    ],
+    "result": "Integration of genomic sequence information enables detection of single amino acid variants (SAAVs) in plasma. The method detected 229 SAAV peptides mapping to 161 genes where corresponding SNPs were confirmed by SNP array analysis. In heterozygous cases, the corresponding canonical peptide was found in 65% of cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C96-C97 demonstrate successful SAAV detection with genomic validation. The detection of canonical peptides in heterozygous cases (C97) provides internal validation of the approach. However, the relatively small sample size (4 individuals) and lack of detailed false discovery analysis for SAAV detection represent minor limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Proteogenomics analysis demonstrates transfer of protein variants between mother and fetus across the placenta. From two mother-child pairs, 21 proteins (22 unique peptides) showed evidence of transfer based on SAAV detection, with 11 proteins transferred baby-to-mother and 9 mother-to-baby. Three proteins showed consistent transfer directions in both pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C103 describe the transfer findings, but several concerns limit confidence: (1) very small sample size (n=2 pairs), (2) manual curation rejected 5/32 initial candidates (C99), suggesting potential for false positives, (3) no independent validation method, (4) alternative explanations (e.g., maternal expression of fetal hemoglobin variants, C92) not fully excluded, (5) the claim of 'first demonstration' (C5, C105) is strong given the uncertainties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C78"
+    ],
+    "result": "The HiRIEF method can detect low abundance tissue-enriched proteins in plasma, with over 500 tissue-enriched proteins detected spanning a wide concentration range from liver to CNS and pancreas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C78 are supported by the data showing detection of tissue-enriched proteins across multiple organs. The classification uses stringent HPA criteria ('tissue enriched'). Figure 3c provides visual evidence of detection across multiple tissue types with appropriate abundance distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The HiRIEF method can detect phosphorylated proteins in plasma. On average 3.3% of proteins contained phosphorylated peptides, with the highest numbers in the most acidic pI range. The phosphorylation site distribution differed from intracellular studies, showing relatively high proportions of phospho-tyrosine and phospho-threonine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41-C43 demonstrate phosphoprotein detection capability. The finding of different phosphorylation patterns compared to intracellular studies (C43) is interesting but requires caution as plasma phosphorylation may reflect different biology or technical artifacts. The detection of clinically relevant EGFR phosphorylation adds credibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "The HiRIEF method can quantitate differences in plasma proteomes between mother and newborn, and changes related to pregnancy. Placental proteins showed dramatic increases during pregnancy (30 proteins detected vs. 8 in non-pregnant controls), with higher levels in maternal plasma than newborns. Specific proteins like AMH and CRH were uniquely detected in babies and mothers, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83, C86, C88-C89 provide consistent evidence for detecting pregnancy-related changes. The use of non-pregnant controls (C79) and pre-pregnancy samples (C80) provides appropriate comparisons. The detection of expected markers (AMH in male newborns, CRH in mothers) supports validity. However, sample sizes are small (n=2 mother-newborn pairs, n=1 longitudinal).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Analysis of inter-individual variability in 30 healthy donors revealed that coagulation/complement proteins and transmembrane receptors (EGFR, TGFBR3) were tightly regulated, while lipoproteins showed high variability. Gender effects were prominent, with a male-upregulated cluster enriched in lipid transport proteins and cardiovascular disease genes (15/38 proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 describe biologically coherent patterns of variability. The findings are consistent with prior studies (C63, C71 cite concordant work). Statistical testing was performed (t-test, p<0.01, FDR corrected, C73). The sample size (n=30) is adequate for these exploratory analyses. The high variability of HLA genes (C68) is expected but the proposed explanation (peptide assignment issues) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The method detected 5/8 proteins from the CancerSEEK test in optimization experiments and 3/8 in the 30-donor cohort. Classical plasma proteins were detected in high-abundance ranges while potential biomarker classes (FDA-approved drug targets, cancer-related proteins) were in lower abundance ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 demonstrate detection of clinically relevant proteins. The partial detection of CancerSEEK proteins (3-5/8) shows both capability and limitations. The abundance distribution findings (C76-C77) are expected and serve as validation of the method's dynamic range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Spiked PSA (4 ng/mL) was only detected in the ultra-narrow 4.0-4.25 pH strip, not in broader strips covering the same pI interval, suggesting that narrower pH intervals can increase analytical depth for selected proteins. MRM validation detected 670\u00d710\u207b\u00b9\u2078 moles of PSA peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 demonstrate the utility of narrow pH ranges for targeted detection. The PSA spike-in at clinically relevant concentration (4 ng/mL) with MRM validation (C50) provides strong evidence. The finding that ultra-narrow ranges detect more intracellular proteins (C49) supports the increased depth claim. However, this is a single example and generalizability is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The HiRIEF-MS method has potential for liquid biopsy protein profiling, with capabilities for detecting tissue leakage proteins, phosphoproteins, and SAAV peptides. The method provides possibilities for studying mother-fetus signaling and pathological pregnancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C112-C116 make forward-looking statements about potential applications. While the demonstrated capabilities (C112-C114) support these possibilities, the actual utility for liquid biopsy and clinical applications remains to be proven. These are reasonable inferences from the data but represent future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background claims about the state of plasma proteomics field, including challenges (high-abundance proteins, sample throughput vs. coverage trade-offs), existing databases (PeptideAtlas, PPD), and prior studies. The authors claim no prior global proteogenomics studies have integrated genomic information to detect SAAV in plasma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C31 provide field context with appropriate citations. The characterization of plasma composition (C17-C18), challenges (C13-C14, C20-C21), and prior work (C22-C27) appears accurate based on citations. The claim of novelty for SAAV detection (C31) is supported by the limited prior work cited (C30), though 'no global studies' is a strong statement that's difficult to verify completely.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Benchmarking against the Keshishian et al. study shows comparable performance. Keshishian reported 2,066-4,836 proteins per set with CVs of 16-24%, while HiRIEF identified 1,043 genes in 7/9 sets from 42 individuals using less plasma (40 \u03bcl vs. 400 \u03bcl) and simpler depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide appropriate benchmarking through re-analysis of published data. The comparison shows HiRIEF achieves somewhat lower protein numbers but with advantages in sample requirements and throughput. The re-analysis using identical search parameters (stated in methods) ensures fair comparison. The authors appropriately acknowledge trade-offs rather than claiming superiority.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C87",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Background claims about known biology relevant to mother-fetus transfer, including AMH concentrations in newborns vs. pregnant females, CRH's role in parturition, fetal hemoglobin genetics, fetal DNA transfer, and challenges in proving protein transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85, C87, C90-C95 cite appropriate literature for known biological facts. These provide necessary context for interpreting the transfer findings. The acknowledgment of challenges in proving protein transfer (C94-C95) appropriately frames the difficulty of the authors' claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Discussion claims about the current state of proteomics: >10,000 proteins routinely identified in cell/tissue samples (comparable to RNA-seq), while plasma proteomics remains challenging due to high demands on throughput/dynamic range, high sample variability, and lack of genetic blueprint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 accurately characterize the field with appropriate citations (C106-C107). The characterization of plasma-specific challenges (C109-C111) is well-established in the field and provides appropriate context for the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Among 611 plasma proteins detected exclusively by HiRIEF, Golgi membrane proteins and MHC molecules were enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 reports GO enrichment analysis results for HiRIEF-unique proteins. This is a straightforward analysis of the data with appropriate statistical methods. The finding is biologically plausible as these protein classes may be underrepresented in prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C70"
+    ],
+    "result": "Background claims about specific proteins: genetic variation affecting LPA secretion is known, and increased CETP in women with Type 2 diabetes (but not men) has been linked to cardiovascular disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C70 cite appropriate literature for known biological facts about LPA and CETP. These provide context for interpreting the observed variability patterns in the data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "A synthetic dosage lethal (SDL) screen in yeast identified Pho85 (orthologous to mammalian CDK5) as antagonizing the growth-inhibitory effect of overexpressed PER2, suggesting CDK5 may act upstream of PER2 in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide experimental evidence from the SDL screen (Figure 1A) showing that pho85\u0394 mutants are compromised for growth when PER2 is overexpressed. C4 correctly interprets this genetic interaction. C5 is appropriately labeled as speculative inference based on orthology, representing a reasonable hypothesis for follow-up rather than a definitive conclusion about mammalian biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "CDK5 kinase activity, but not protein levels, displays a diurnal profile in the SCN with peak activity at ZT12-ZT20, as demonstrated by time-dependent phosphorylation of histone H1 that is specifically blocked by the CDK5 inhibitor roscovitine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 are well-supported by Western blot data (Figure 1B) showing constant CDK5 protein levels and in vitro kinase assay data (Figure 1C) demonstrating time-dependent activity. The specificity is confirmed by pharmacological inhibition (Figure 1D). C8 appropriately cites prior work establishing histone H1 as a CDK5 substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Knock-down of Cdk5 in the SCN shortened the free-running circadian period in mice (from 23.3\u00b10.1 hr to 22.5\u00b10.2 hr), with phenotypes similar to Per2Brdm1 mutants, including less precise activity onset and reduced total activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C23 are supported by comprehensive behavioral data including actograms, periodogram analysis, and quantitative measurements (Figure 2A-C, supplements). Sample sizes are adequate (n=6 for shCdk5, n=6 for controls, n=4 for Per2Brdm1) with appropriate statistical analysis. The viral delivery method and controls are properly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The circadian period phenotypes of shCdk5 and Per2Brdm1 mice are similar but not identical; knock-down of Cdk5 in Per2Brdm1 mice further shortens period in a non-additive manner, suggesting CDK5 affects period partially via PER2 and partially via additional factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 present genetic interaction data (Figure 2B, D-F) with appropriate quantification and statistical analysis. The non-additive effects (C29-C30) are correctly interpreted as evidence for both PER2-dependent and PER2-independent functions of CDK5. C31 appropriately cites prior work on CDK5-CLOCK interactions and labels this as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Efficient and localized knock-down of CDK5 in the SCN was confirmed by immunofluorescence, with viral expression restricted to the SCN and adjacent regions but not distant brain areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by immunofluorescence data (Figure 3A, supplements 1-2) showing reduced CDK5 signal in shCdk5-treated SCN and GFP expression patterns indicating localized viral infection. This validates that behavioral phenotypes result from SCN-specific manipulation rather than off-target effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PER2 protein levels are strongly reduced in shCdk5 SCN and nearly absent in Per2Brdm1 animals at ZT12, suggesting CDK5 is a main regulator of PER2 accumulation in the SCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by immunofluorescence data (Figure 3B, supplements 3-4) showing reduced PER2 in both shCdk5 and Per2Brdm1 SCN. The similarity in PER2 levels provides a molecular explanation for the similar behavioral phenotypes. Quantification is provided in supplement 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "CDK5 and PER2 physically interact in cells and brain tissue in a time-dependent manner, with strongest interaction at ZT12-ZT16 in the SCN; the interaction is reduced by roscovitine and confirmed by negative controls using Per2-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are supported by co-immunoprecipitation data from multiple systems (Figure 4A-D, supplements). The time-dependent interaction in SCN (C44-C45) aligns with CDK5 activity profiles. Appropriate controls include Per2-/- mice (C43), different salt concentrations (C42), and pharmacological inhibition (C40). C40 appropriately cites the mechanism of roscovitine.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The PER2-CDK5 interaction occurs in the cytoplasm, with CDK5 binding to the C-terminal region of PER2 while PAS domain deletions do not affect binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by subcellular fractionation (Figure 4E), immunofluorescence (Figure 4F), domain deletion analysis (Figure 4\u2014supplement 4), and pull-down assays with recombinant proteins (Figure 4G). The cytoplasmic localization is consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "CDK5/p35 phosphorylates the N-terminal region of PER2 at serine 394 (S394), as demonstrated by in vitro kinase assays, mass spectrometry, site-directed mutagenesis, and a phospho-specific antibody.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 present converging evidence for S394 phosphorylation: radioactive kinase assays (Figure 5A-C, supplements), mass spectrometry identification (Figure 5B, Supplementary file 1), mutagenesis showing reduced phosphorylation of S394D/G mutants (Figure 5C), and validation with a phospho-specific antibody (Figure 5D). The specificity is confirmed by roscovitine inhibition (C54) and the location within a CDK5 consensus sequence (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "PER2 phosphorylation at S394 is time-dependent with peak at ZT12 and occurs predominantly in the cytoplasm, while total PER2 is present in both cytoplasm and nucleus with higher nuclear levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by time-course Western blots with the phospho-specific antibody (Figure 5E) and subcellular fractionation (Figure 5F). The temporal pattern of P-S394-PER2 aligns with CDK5 activity. The cytoplasmic localization of the phosphorylated form suggests a role in regulating nuclear entry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CDK5 affects PER2 protein stability, as demonstrated by reduced PER2 levels upon CDK5 inhibition (roscovitine), CRISPR/Cas9 deletion, or shRNA knock-down, and accelerated PER2 degradation (t1/2 reduced from 11h to 4h) in cycloheximide chase experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are supported by multiple complementary approaches: pharmacological inhibition (Figure 6A), genetic deletion (Figure 6B), dose-dependent knock-down (Figure 6C), and protein stability measurements (Figure 6D). The cycloheximide chase provides quantitative half-life measurements with appropriate controls. The consistency across methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PER2 degradation involves the proteasome, and CDK5-mediated phosphorylation is required for PER2 nuclear entry, as shown by proteasome inhibition rescuing PER2 levels and absence of nuclear PER2 when CDK5 is knocked down.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by epoxomycin treatment rescuing PER2 levels despite CDK5 absence (Figure 6E), subcellular fractionation showing no nuclear PER2 in shCdk5 cells (Figure 6F), and immunofluorescence in SCN sections (Figure 6G, supplement 4). The proteasome involvement is clearly demonstrated, and the requirement for CDK5 in nuclear entry is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The S394G mutation of PER2 significantly reduces interaction with CRY1, suggesting that CDK5-mediated phosphorylation at S394 is important for PER2-CRY1 complex formation, which is known to be required for nuclear entry and PER2 stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 appropriately cite prior work establishing CRY1's role in PER2 nuclear transport and stability. C80 is supported by co-immunoprecipitation data (Figure 6H) showing reduced CRY1 binding to S394G mutant. C81 appropriately synthesizes these findings. This provides a mechanistic link between CDK5 phosphorylation and PER2 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "CDK5 is a vital kinase in post-mitotic neurons with established roles in development and cell death; prior work showed CDK5 phosphorylates CLOCK, though this may be less relevant in the SCN where NPAS2 can replace CLOCK function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 appropriately cite established knowledge and prior literature about CDK5 function. C82 states general knowledge, C83-C87 cite specific prior findings with appropriate references, and C88-C90 discuss prior work on CDK5-CLOCK interactions with appropriate caveats about SCN-specific mechanisms. These provide important context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The diurnal activity of CDK5 may be regulated by ATP availability (which peaks at night in the SCN) and cofactors; potential feedback loops may exist between CDK5 and CK1\u03b4 based on in vitro phosphorylation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C96 cite prior work appropriately but represent speculative discussion about mechanisms not directly tested in this study. C91 cites ATP rhythms, C92-C93 cite CDK5 cofactor regulation, and C94-C96 discuss potential CK1-CDK5 feedback based on in vitro studies. While these are reasonable hypotheses, they lack direct experimental support in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The non-additive genetic interactions and sequence similarity between PER1 and PER2 at the CDK5 phosphorylation site suggest complex regulatory mechanisms; CDK5 binds the C-terminus but phosphorylates the N-terminus of PER2, suggesting a specific protein structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97 and C100-C101 are supported by the genetic and biochemical data presented. C98 presents sequence comparison (knowledge-based). C99 appropriately cites prior work on PER1/PER2 double knockouts. C102 cites prior work on p35 function. These claims appropriately integrate current findings with prior knowledge to discuss mechanistic implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The temporal dynamics of P-S394-PER2 differ from total PER2, with P-S394-PER2 peaking earlier and declining faster; this phosphorylated form may play a role in cytoplasm-to-nucleus shuttling and macromolecular complex assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 discuss the interpretation of temporal data (Figure 5E) with appropriate caveats about antibody cross-reactivity (C103) and citations to prior work on PER2 modifications (C104-C105). C106-C107 present reasonable speculative inferences about function based on the cytoplasmic localization, with C107 appropriately citing work on macromolecular complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "CDK5 phosphorylation at S394 stabilizes PER2 (increasing half-life from ~4h to ~11h); the Per2Brdm1 mutation deletes the region containing S394, preventing CDK5 phosphorylation and resulting in unstable PER2 and shortened circadian period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are directly supported by the cycloheximide chase data (Figure 6D). C110-C112 appropriately cite and interpret prior work on the Per2Brdm1 mutation in light of the current findings, providing a molecular explanation for the previously observed phenotype. This represents strong integration of new and prior findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The stabilizing effect of CDK5 on PER2 is analogous to the function of Drosophila shaggy on Tim; PER2 stability is also regulated by CK1\u03b4/\u03b5 and the ubiquitin ligase MDM2, with potential cross-regulation between CDK5 and CK1\u03b4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 appropriately cite extensive prior literature on PER2 regulation by CK1\u03b4/\u03b5 (C113), comparisons to Drosophila (C114), CDK5-CK1\u03b4 interactions (C115), and MDM2-mediated degradation (C121). C116 and C118 are appropriately labeled as speculative. C119-C120 are supported by the current data (Figure 6D-E). This discussion appropriately contextualizes findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "S394 phosphorylation is essential for PER2 nuclear entry and interaction with CRY1; this is consistent with prior work showing CRY1-dependent nuclear transport and with previous findings that PP1 inhibition increases PER2 nuclear accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is supported by the subcellular fractionation and immunofluorescence data (Figures 6F-G). C123-C124 appropriately cite prior work on PER-CRY function with multiple references. C125-C126 cite and interpret prior work from the same group on PP1, with C126 appropriately labeled as speculative about PP1 being the phosphatase for S394.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "CDK5 regulates the circadian clock by phosphorylating PER2 at S394, which is important for PER2-CRY1 interaction and nuclear entry; inhibition of CDK5 produces phenotypes similar to Per2Brdm1 mutants, though CDK5 may also affect other clock proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 represent appropriate summary conclusions synthesizing the major findings of the study. They are well-supported by the collective evidence from behavioral, biochemical, and cell biological experiments. The caveats about additional CDK5 targets (C127) are appropriate given the genetic interaction data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "PER2 is involved in multiple physiological pathways beyond clock regulation, and may mediate biological functions previously linked to CDK5, such as brain reward system regulation and psychiatric diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C131-C132 appropriately cite prior literature connecting both PER2 and CDK5 to reward and psychiatric phenotypes. However, these represent speculative connections that are not directly tested in the current study. While the molecular link between CDK5 and PER2 is established, the functional implications for these other phenotypes remain hypothetical and would require additional experiments.",
+    "result_type": "MINOR"
+  }
+]

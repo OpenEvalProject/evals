@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C92"
+    ],
+    "result": "Sustained TNF-\u03b1 stimulation induces transcriptional memory that depends on TET enzymes, particularly TET2. TET2 KO and TET TKO cells show impaired activation and memory effects for both the CMV reporter and endogenous memory genes including CALCB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence converge: bisulfite sequencing shows TET-dependent demethylation (C14), flow cytometry and RT-qPCR demonstrate impaired EGFP and CALCB expression in TET KO cells (C15, C36, C37), and RNA-seq confirms loss of memory effects across all identified genes in TET TKO cells (C42). The causal role is established through genetic knockout experiments with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "DNA demethylation induced by TNF-\u03b1 is maintained after cytokine withdrawal for extended periods (10-30 days), creating a heritable hypomethylated state at regulatory regions. This maintained demethylation facilitates enhanced NF-\u03baB binding and transcriptional activation upon subsequent stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Bisulfite sequencing data demonstrate progressive demethylation during TNF-\u03b1 treatment (C12, C51) and maintenance of demethylated states after 10 days (C13, C52) and 30 days (C53) of cytokine withdrawal. ChIP-seq data show enhanced p65 binding at demethylated regions (C2). The temporal stability of demethylation is well-documented with appropriate time-course experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C68",
+      "C69",
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C87"
+    ],
+    "result": "High initial methylation level and CpG density around \u03baB sites correlate with the functional potential of transcriptional memory modules. Regions with higher total methylation (combining CpG number and methylation level) are more disfavored for p65 binding initially but show greater enhancement after demethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Genome-wide analysis shows that p65 peaks associated with memory genes have high initial methylation and CpG density (C68, C74, C75), and that total methylation inversely correlates with p65 occupancy (C76, C78). The correlation between CpG density, initial methylation, and memory potential is supported by multiple complementary analyses including ChIP-seq, methylation profiling, and functional validation (C3, C87). The mechanistic link is established through cited literature on methylation-mediated repression (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C49",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CALCB exhibits the strongest transcriptional memory among identified genes, mediated by a primate-specific endogenous retrovirus (ERV) containing two MER11B enhancer elements. This ERV is essential for TNF-\u03b1-induced CALCB activation and memory, and its primate-specific nature suggests evolutionary co-option as an epigenetic memory module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq shows CALCB has the highest memory effect (C4), RT-qPCR demonstrates maintained memory for 30 days (C27), and ChIP-seq identifies the ERV location (C49). Critically, CRISPR-mediated deletion of individual MER11B elements partially impairs CALCB activation (C60, C61), while deletion of both elements or the entire ERV completely abolishes TNF-\u03b1 response and memory (C62, C63, C64). Evolutionary analysis confirms primate-specific presence (C65, C66), supporting the co-option hypothesis (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C94",
+      "C109"
+    ],
+    "result": "TNF-\u03b1-mediated transcriptional memory increases sensitivity to inflammatory signals by more than 100-fold. Memory-consolidated cells respond to 0.4 ng/mL TNF-\u03b1 with approximately twofold better CALCB expression than naive cells treated with 50 ng/mL TNF-\u03b1 (125-fold lower concentration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Dose-response experiments with RT-qPCR (C88) and RNA-seq (C90, C91) demonstrate that memory-consolidated cells achieve higher expression of CALCB, EGFP, and PTGES at 125-fold lower TNF-\u03b1 concentration compared to naive cells. The magnitude of sensitization is unprecedented (C89) and mechanistically linked to demethylation-mediated lowering of transcriptional threshold (C109). Multiple genes show this effect with quantitative data supporting the >100-fold claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C28",
+      "C29"
+    ],
+    "result": "Five endogenous genes (CALCB, PTGES, LHX2, CCL2, TNF) plus the EGFP reporter were identified as inflammatory transcriptional memory genes based on defined criteria (\u22651.3-fold higher expression in second vs. first induction, FPKM >5). These genes show differential memory strength, with CALCB, PTGES, and EGFP displaying the strongest effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data systematically identify memory genes using explicit criteria (C16), categorize them by memory strength (C17), and demonstrate elevated baseline expression for strong memory genes (C18). IL32 serves as a negative control, showing TNF-\u03b1 responsiveness without memory (C19). Global transcriptome analysis confirms specificity of memory effects (C28, C29). The identification pipeline is rigorous with appropriate controls and statistical thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C41",
+      "C55",
+      "C58",
+      "C69"
+    ],
+    "result": "NF-\u03baB p65 is required for both TNF-\u03b1-induced gene activation and transcriptional memory. RELA deletion severely impairs CALCB and PTGES activation, memory effects, and TET-mediated demethylation at regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-qPCR shows RELA KO cells have severely impaired CALCB activation and memory (C30, C31), confirmed at protein level by ELISA (C32). Similar effects are observed for PTGES (C41). Bisulfite sequencing demonstrates RELA-dependent demethylation at both CMV promoter and CALCB enhancers (C55), and genome-wide methylation analysis confirms this requirement (C58, C69). The genetic knockout approach with multiple readouts provides strong causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "TNF-\u03b1 induces p65 binding at 405 regulatory elements co-occupied by H3K27ac. DNA demethylation occurs at p65 peaks in a binding-dependent but transcription-independent manner, with stronger demethylation adjacent to peak centers. Memory genes show enhanced p65 and H3K27ac occupancy during second induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq identifies 405 TNF-\u03b1-responsive elements (C45) and links 10 peaks to memory genes (C46, C47). Enhanced occupancy during second induction is demonstrated for CALCB and PTGES (C48). Genome-wide methylation analysis shows demethylation at p65 peaks (C56) with position-dependent effects (C57). Critically, analysis of peaks grouped by eRNA expression shows similar demethylation regardless of transcriptional activity (C59), establishing binding-dependence. The multi-omics integration is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C108",
+      "C112"
+    ],
+    "result": "p65 can bind methylated regions but exhibits marked preference for unmethylated regions. A key mechanism of memory consolidation is converting initially disfavored methylated p65-binding regions into favored unmethylated regions, facilitating enhanced binding and activation upon subsequent stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq analysis grouped by initial methylation levels clearly demonstrates p65 preference for unmethylated regions (C71, C108). The mechanistic model (C72) is well-supported by the binding preference data and the observed demethylation during memory consolidation. The claim about methylation-insensitive TFs favoring unmethylated regions in chromatin context (C112) is directly supported by the p65 ChIP-seq data. This represents an important conceptual advance in understanding TF-DNA interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Initially methylated p65 peaks with the largest total demethylation function as inflammatory transcriptional memory modules. The top 25% most demethylated peaks (129 peaks, 106 genes including all five memory genes) show higher enhancer RNA expression, elevated neighboring gene expression during second induction, and distance-sensitive effects (strongest within 10 kb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Systematic analysis identifies occupancy-increased peaks correlate with high initial methylation and demethylation (C80). Integrated ChIP-seq, ATAC-seq, and methylation analysis show coordinated changes with demethylation (C81). The top 25% demethylated peaks are functionally validated (C83) showing higher eRNA expression (C84), elevated neighboring gene expression (C85), and distance-dependent effects (C86). The functional validation of the predictive model is rigorous and includes all identified memory genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The CMV promoter contains \u03baB sites and serves as a model for inflammatory transcriptional memory. TNF-\u03b1 treatment gradually increases EGFP reporter expression over time, and longer initial treatment durations result in stronger memory effects during second induction, indicating that sufficient time is needed for memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CMV promoter structure is documented (C7), flow cytometry shows time-dependent increase in EGFP-positive cells (C8), and duration-dependent memory effects (C9). The conclusion about consolidation time requirement (C10) is appropriately inferred from the dose-response relationship. This establishes the reporter system as a valid model for studying inflammatory memory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "CALCB encodes \u03b2-CGRP, a 37-amino acid neuropeptide that differs from \u03b1-CGRP by three amino acids. CGRP overexpression is an important cause of migraine, and several FDA-approved monoclonal antibodies target CGRP or its receptors for migraine treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts about CGRP biology and migraine therapeutics, appropriately cited from published literature (C21, C22, C23). The FDA approval status of the antibodies (C24) is verifiable public information. This background information is accurate and relevant for contextualizing the CALCB findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C39",
+      "C40"
+    ],
+    "result": "CALCA is barely transcribed in the experimental system, allowing specific measurement of \u03b2-CGRP. PTGES, which encodes prostaglandin E synthase, also shows inflammatory transcriptional memory with progressive increase during long-term TNF-\u03b1 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data confirm minimal CALCA expression (C33), validating the ELISA specificity for \u03b2-CGRP. PTGES function is appropriately cited (C39), and RT-qPCR demonstrates progressive expression increase (C40). These supporting observations strengthen the main findings about memory genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C44",
+      "C50",
+      "C73",
+      "C74"
+    ],
+    "result": "CALCB expression increases gradually during TNF-\u03b1 induction, with longer initial exposure producing stronger subsequent responses. The CALCB promoter is unmethylated, but upstream MER11B elements contain \u03baB sites flanked by 7 CpG sites. IL32, which lacks memory despite demethylation, has fewer CpGs around its \u03baB site compared to memory genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-qPCR demonstrates progressive CALCB increase (C34) and duration-dependent memory (C35). Bisulfite sequencing shows unmethylated CALCB promoter (C44), directing attention to distal elements. Sequence analysis identifies MER11B structure (C50). The IL32 comparison (C73, C74) provides important negative control data explaining why demethylation alone is insufficient for memory. These observations support the model linking CpG density to memory potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Signal-induced active DNA demethylation is proposed as a general principle for transcriptional memory. DNA methylation is well-suited for governing long-term memory due to its stability in quiescent cells and faithful inheritance during cell division. The bimodal nature of CpG methylation makes it ideal for storing binary information ('locked' vs. 'unlocked' states).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the experimental data on TNF-\u03b1-induced memory are solid, the generalization to other signaling systems (C95) is speculative and requires additional validation. The properties of DNA methylation cited (C96, C97) are well-established, and the conceptual model (C98) is reasonable, but the claim that this is a 'general principle' extends beyond the presented data. The speculation is clearly identified and appropriately cautious, but requires future work for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Methyl-CpG binding proteins mediate methylation-dependent repression, with efficiency depending on both methylation level and CpG density. High CpG density and methylation around \u03baB sites create effective repressive environments requiring sustained TNF-\u03b1 for demethylation. Transcription factors are classified as methylation-sensitive or -insensitive based on CpG content in binding motifs, with NF-\u03baB being methylation-insensitive but capable of activating methylated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize established knowledge from cited literature (C99, C100, C103, C104, C105) with the current study's findings (C101, C102). The classification of NF-\u03baB as methylation-insensitive (C106) is based on motif structure, and its ability to activate methylated genes (C107) is supported by both prior work and current data. The integration of established principles with new findings is appropriate and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Methylation-insensitive, signal-dependent transcription factors may function together with methylation-sensitive TFs to regulate transcriptional memory, with demethylation induced by the former facilitating binding of the latter for coordinated gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation (C110, C111) about potential mechanisms. While the hypothesis is reasonable and could explain some observations, it lacks direct experimental support in the current study. Testing this model would require identifying and manipulating methylation-sensitive TFs that cooperate with NF-\u03baB at memory genes. The speculation is appropriately identified but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Not all \u03baB sites bound by p65 can drive expression of neighboring genes, emphasizing that transcription factor binding alone is insufficient for gene activation\u2014functional enhancer-promoter wiring is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is appropriately inferred from the observation that only a subset of demethylated p65 peaks are associated with memory genes (C113). The principle that 'binding is not functioning' (C114) is well-established in the field and supported by the current data showing many p65 peaks without associated gene activation. This represents an important conceptual point about interpreting ChIP-seq data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The findings support a role for neuroinflammation in migraine pathogenesis. Inflammatory signals and memory consolidation may play important pathogenic roles in migraine patients, especially those with chronic migraine. The primate-specific nature of the CALCB ERV suggests nonhuman primate models may be important for studying inflammatory contributions to migraine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the connection between CGRP and migraine is well-established (C115), the extrapolation from HEK293F cell culture to migraine pathogenesis (C116, C117) is highly speculative. The suggestion to use primate models (C118) is reasonable given the ERV's primate-specificity, but the clinical relevance of the inflammatory memory mechanism remains unproven. These claims appropriately identify speculation but require substantial additional work including in vivo validation, patient studies, and demonstration that the mechanism operates in relevant cell types (neurons, not HEK293F cells).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Sustained inflammatory signals can lead to the formation of transcriptional memory, potentially explaining how acute inflammation can transform into chronic inflammation when initial signals are reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a well-supported summary of the main findings (C93). The experimental data demonstrate that sustained TNF-\u03b1 creates memory that persists after signal withdrawal and enhances responses to subsequent low-dose stimulation. While the connection to chronic inflammation is somewhat speculative, it is a reasonable inference from the demonstrated mechanism. The claim appropriately summarizes the study's contribution to understanding inflammation biology.",
+    "result_type": "MAJOR"
+  }
+]

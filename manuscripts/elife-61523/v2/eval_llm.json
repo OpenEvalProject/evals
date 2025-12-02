@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C73",
+      "C74"
+    ],
+    "result": "A systematic literature review following PRISMA guidelines identified 688 records from PubMed, from which 58 original research studies were deemed eligible for literature overview and 43 studies were included in the meta-analysis after applying exclusion criteria. The survey revealed that diffusion-weighted imaging (28 studies), magnetization transfer (27 studies), T2 relaxometry (19 studies), and T1 relaxometry (10 studies) were the most common MRI approaches compared with histology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C17, C73-C74 provide a clear methodological description and quantitative results from the systematic review process. The numbers are consistently reported and the PRISMA methodology is appropriate for systematic reviews, lending credibility to the selection process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Analysis of R\u00b2 values across studies showed that the highest correlations (R\u00b2 >0.8) were obtained mostly from MT measures but were associated with small sample sizes (average 32 sample points). Studies with largest sample sizes showed R\u00b2 values between 0.6-0.8 for MT and T2 relaxometry, with lower values for T1 relaxometry and other approaches. Specific meta-analysis results showed MPF (R\u00b2=0.7657) and MWF (R\u00b2=0.6997) had the highest overall estimates, while diffusion-based measures ranged from R\u00b2=0.2095 (AD) to R\u00b2=0.3766 (FA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C77-C103 present descriptive statistics and meta-analysis results with specific numerical values from Table 1 and referenced figures. The data are internally consistent and appropriately derived from the mixed-effects models described in the methodology (C75-C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C47",
+      "C50",
+      "C104"
+    ],
+    "result": "Meta-analysis revealed that MPF (R\u00b2=0.7657) and MWF (R\u00b2=0.6997) showed the highest correlations with myelin content, while all other measures showed R\u00b2 estimates in the range 0.21-0.53. Meta-regression analysis distinguished MT- and relaxometry-based measures as having significantly higher R\u00b2 estimates compared to diffusion-based measures. Within diffusion measures, FA showed slightly higher estimates than RD, AD, or MD, though differences were marginal or non-significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28, C47, C50, and C104 present the core quantitative findings from the meta-analysis and meta-regression. The statistical comparisons are appropriately conducted using repeated measures meta-regression with Tukey's test and Bonferroni correction (described in methods), and the conclusions about relative performance are supported by the reported z-scores and p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C51",
+      "C52"
+    ],
+    "result": "Prediction intervals for most MRI measures spanned from 0.1 to 0.9, indicating substantial variability in expected future study results. Only MPF (0.49-1) and MWF (0.45-0.95) showed narrower prediction intervals, suggesting they may be more suitable choices for future studies, though the authors note these ranges are still quite large.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C51-C52 report prediction intervals calculated from the mixed-effects models using \u03c4\u00b2 (between-study variance). The wide prediction intervals appropriately reflect heterogeneity across studies and provide realistic expectations for future research. The cautious interpretation in C52 is warranted given the remaining uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The I\u00b2 statistic, measuring heterogeneity due to experimental design differences, was generally quite high across all measures. MWF showed the lowest I\u00b2 (73.19%) but was based on only 4 studies, while MPF showed relatively low I\u00b2 (83.18%) based on 10 studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 report I\u00b2 values from Table 1 with appropriate caveats about sample size. The high I\u00b2 values (>70%) indicate substantial heterogeneity across studies, which is appropriately acknowledged. The authors correctly note that MWF's lower I\u00b2 may be misleading due to the small number of studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Differences across studies in validation modality, magnetic field strength, and other methodological factors strongly limit inter-study comparisons. Histology and immunochemistry provide only proxy measures based on transmittance rather than volumetric myelin quantification, while electron microscopy, though providing volumetric measures, has limitations including tissue shrinkage and fixation artifacts. None of the reviewed studies considered histology reproducibility, and most studies were conducted at 7T and 9.4T field strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 identify important sources of heterogeneity and methodological limitations in the validation studies. These observations are supported by the systematic review data (C57, C58) and established knowledge about histological techniques (C54-C56). The critique is fair and identifies genuine limitations in using histology as ground truth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C48",
+      "C49",
+      "C65"
+    ],
+    "result": "Diffusion-weighted imaging has inherent limitations for estimating myelin content because it does not directly measure myelin. DWI acquisitions use echo times (~100 ms) too long to detect myelin macromolecules (T2 ~10 \u03bcs) or myelin water (T2 ~30 ms). Instead, diffusion measures like FA and RD are influenced by multiple factors beyond myelin content, making them unsuitable as specific myelin biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39, C48-C49, and C65 provide a mechanistic explanation for why diffusion measures show lower correlations with histology. The technical details about T2 relaxation times are supported by citations (C37-C38), and the conclusion aligns with the meta-analysis results showing diffusion measures have the lowest R\u00b2 values. This is acknowledged as not novel (C65) but important to reiterate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "MT-based measures are sensitive to tissue pH, and changes in pH caused by inflammation will affect MT-based measures of myelin, limiting their specificity despite being focused on macromolecular contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 identify an important confound for MT-based measures with appropriate citation support (Stanisz et al., 2004). This represents a legitimate limitation that affects the interpretation of MT measures as myelin-specific biomarkers, particularly in pathological conditions involving inflammation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "T2 relaxometry can directly observe water trapped between myelin bilayers and estimate myelin water fraction, unlike diffusion and MT approaches. However, the multi-compartment model assumes slow water exchange between compartments, while evidence shows water exchange actually contributes to T2 spectra variations. Faster acquisition alternatives have been developed to address the historical limitation of long acquisition times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 accurately describe T2 relaxometry methodology and its advantages/limitations. The direct observation of myelin water (C42-C43) is established knowledge, while the limitation regarding water exchange assumptions (C45-C46) is appropriately cited. The mention of faster alternatives (C44) is relevant for practical applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Only one study (Tardif et al., 2012) computed both Pearson and Spearman correlations, reporting higher Spearman correlations and suggesting non-linear relationships should be considered. Only MWF is expected to assume a value of zero when myelin is absent, raising calibration issues for other measures when using correlation-based validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 identify important methodological limitations in the validation literature. The observation about limited comparison of correlation methods (C59-C60) is based on the systematic review, and the point about MWF's zero-intercept property (C61) is appropriately cited and highlights a fundamental difference in how measures should be validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "More than half of the reviewed studies considered at most two MRI measures, indicating the field is mostly focused on formulating new measures rather than systematically comparing existing ones. The literature clearly lacks reproducibility studies addressing measure specificity and parameter sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 provide a meta-level critique of the field based on the systematic review findings. The observation about limited multi-measure comparisons (C62) is data-driven, while the inference about field focus (C63) and the identified gap in reproducibility studies (C64) represent reasonable conclusions that motivate future research directions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The multi-echo spin-echo implementation of MWF can only acquire a single slice in clinical scenarios, though faster GRASE-based techniques have been proposed that still require ~15 minutes for whole-brain acquisition at 2mm isotropic resolution. Similarly, complex qMT acquisitions are time-consuming, though optimized protocols focusing on MPF have been developed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 discuss practical limitations of acquisition time for clinical translation. The statements about MWF acquisition limitations (C66-C68) and MPF optimization (C69) are supported by appropriate citations and represent established knowledge about these techniques' practical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Several MRI measures are sensitive to myelin content, and most are not statistically different in terms of their relationship with histology. Measures highly correlated with histology are also expected to have higher specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 represent the main conclusions of the meta-analysis. C70-C71 are directly supported by the meta-regression results showing many measures are not statistically distinguishable. C72 is a reasonable inference linking correlation strength to specificity, though this connection could be more explicitly validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "A mixed-effects model was used to estimate overall effect sizes in terms of R\u00b2, accounting for expected distribution of effect sizes due to inter-study differences in factors like histology reference, magnetic field strength, and pathology model. The Metafor package version 2.4-0 was used for model fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 describe the statistical methodology with appropriate justification for choosing mixed-effects over fixed-effects models. The rationale for expecting heterogeneous effect sizes is sound, and software version is specified for reproducibility. This represents appropriate meta-analysis methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims establish that myelin sheaths provide fast electrical conduction, axonal protection, and trophic support; that activity-dependent myelination is a plasticity mechanism; that demyelination occurs in neurological diseases like multiple sclerosis; and that despite myelin thickness being below MRI resolution, its presence influences MRI-detectable physical properties including relaxation and diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide standard background information appropriately supported by citations (C1-C3) or established knowledge (C4-C5). These claims set the context for why MRI-based myelin imaging is important and feasible, and are not controversial.",
+    "result_type": "MINOR"
+  }
+]

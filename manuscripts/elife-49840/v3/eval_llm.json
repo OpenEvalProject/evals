@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "A minimal branched actin network with approximately 200 Arp2/3 complexes is sufficient to internalize endocytic pits up to ~60 nm against physiological membrane tension. The model is robust to variations in filament stiffness, stall force, and Hip1R affinity, but is particularly sensitive to the number of Arp2/3 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C19, C20, and C21 are supported by computational simulations (Figure 1F-G, Figure 1\u2014figure supplement 1) showing that the minimal actin network can drive internalization and that Arp2/3 complex number is a critical parameter. The model predictions are constrained by experimental parameters and show consistent internalization outcomes across parameter sweeps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C66",
+      "C83",
+      "C84"
+    ],
+    "result": "A newly developed molecule-counting method using GFP-tagged nanocages as calibration standards determined that approximately 200 Arp2/3 complexes accumulate at sites of clathrin-mediated endocytosis in human induced pluripotent stem cells. The vast majority (81 \u00b1 10%) of CME events show ArpC3-GFP bursts prior to internalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C23, C25, C66, and C84 are supported by experimental data including calibration curves (Figure 2D, R\u00b2 = 0.996), time-lapse imaging (Figure 2G), and molecule counting (Figure 2I). The method is validated by showing linear proportionality between fluorescence and molecule number, and by demonstrating that double-tagged cells have twice the fluorescence of single-tagged cells (Figure 2\u2014figure supplement 2C-D). Claim C83 provides structural justification for the tagging strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C67"
+    ],
+    "result": "Simulations predict that actin self-organizes into a radial dendritic network with barbed ends oriented toward the base of the pit, driving assembly of 150 \u00b1 30 filaments containing 5700 \u00b1 1100 monomers. The network internalizes the pit ~60 nm in 10-15 s, with more barbed ends (10 \u00b1 4) near the base than the neck (1 \u00b1 1), producing an axial force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26-C33, and C67 are supported by simulation results (Figure 3A-I, Figure 3\u2014figure supplement 1) showing the spatial organization, filament numbers, and force production. The self-organization emerges from the model's spatial boundary conditions (Arp2/3 at base, Hip1R on coat) and is consistent across multiple simulations (n=96). The prediction of axial force production (C33) follows logically from the spatial distribution of barbed ends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C72",
+      "C74"
+    ],
+    "result": "The surface distribution of Hip1R around the endocytic pit strongly impacts endocytic outcome, with both rate and extent of internalization increasing with Hip1R coverage. A threshold of ~100 Hip1R molecules is necessary for internalization. In contrast, varying Arp2/3 complex surface density by 20-fold or localizing some Arp2/3 at the neck had little impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40, C72, and C74 are supported by systematic simulation studies (Figure 4, Figure 4\u2014figure supplements 1-3) showing that Hip1R distribution is critical while Arp2/3 density is not. The mechanism is explained by Hip1R coverage directing more barbed ends toward the base (C38), which increases Arp2/3 binding (C39) and filament nucleation. The threshold of ~100 Hip1R molecules (C40) is clearly demonstrated in Figure 4\u2014figure supplement 3A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C68"
+    ],
+    "result": "Long actin filaments bend between attachment sites in the coat and the base of the pit, storing elastic energy. Simulations show 13 \u00b1 3% of filaments bend beyond thermal fluctuations, storing up to ~750 pN\u00b7nm of elastic energy\u2014larger than the work required for internalization. Cryo-electron tomography confirms the presence of bent filaments at endocytic sites in SK-MEL-2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C50, and C68 are supported by both simulation data (Figure 5A, E-F, Figure 5\u2014figure supplement 2) and experimental validation via cryo-electron tomography (Figure 5B). The simulations quantify bending energy and show it exceeds internalization work requirements (C46), while remaining below filament severing thresholds (C44). The experimental observation of bent filaments at endocytic sites (C42) validates a key model prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C6",
+      "C77"
+    ],
+    "result": "Elastic energy stored in bent filaments contributes to endocytic internalization. When membrane tension is released in simulations, pit internalization sharply increases while filament bending near the base decreases by 50%, consistent with energy release supporting internalization through an elastic Brownian ratchet mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C6, and C77 are supported by simulation experiments where tension is released at t=10s (Figure 5G-I, Figure 5\u2014video 2). The sharp increase in internalization (C51) coupled with gradual decrease in bending energy (C52) demonstrates that stored elastic energy can drive internalization. The mechanism is consistent with elastic Brownian ratchet theory (C77), supported by citations to theoretical work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Inhibiting Arp2/3 complex activity stalls endocytosis. Simulations predict that nucleation rates below 1 filament per second inhibit endocytosis, which was validated experimentally by treating SK-MEL-2 cells with the Arp2/3 inhibitor CK-666, resulting in dose-dependent and time-dependent inhibition of endocytic progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by both simulation predictions (Figure 6A-B) and experimental validation (Figure 6C-D, Figure 6\u2014figure supplement 1A). The simulations identify a threshold nucleation rate of 1 filament per second (C54, consistent with Beltzner and Pollard 2008), and CK-666 treatment experiments confirm dose-dependent inhibition of endocytosis (C55), validating the model prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C69"
+    ],
+    "result": "The endocytic actin network adapts to changes in membrane tension. Under elevated tension, more growing filaments are directed toward the base of the pit, increasing Arp2/3 recruitment, actin nucleation, and filament bending. At >50x higher tension (1 pN/nm), internalization slows but is not abolished, with the network showing better performance than expected for a non-adapting system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C56-C61, and C69 are supported by systematic simulations varying membrane tension (Figure 7A-H, Figure 7\u2014figure supplement 1). The data show tension-dependent attenuation (C56) consistent with prior work, but also demonstrate adaptive behavior (C57) with increased barbed ends at the base (C7, C60), more Arp2/3 binding (C8, C60), more filaments (C60), and increased bending energy (C9, C60) under high tension. The increased energy efficiency (C61) supports the adaptation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The endocytic actin network's ability to adapt to load depends on Hip1R coverage around the pit. A phase diagram shows that cells with high membrane tension are especially sensitive to Arp2/3 nucleation rate, while cells with low tension can perform endocytosis even with low Arp2/3 activity. As Hip1R coverage increases, the network's adaptive capacity increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by systematic simulations varying both tension and Hip1R coverage (Figure 8B-G). The phase diagram (Figure 8B) clearly shows differential sensitivity to Arp2/3 activity at different tensions (C62, C63), consistent with experimental observations (Boulant et al., 2011). The dependence of adaptation on Hip1R coverage (C64, C65) is demonstrated by measurements of barbed ends, Arp2/3 binding, filament numbers, and bending energy (Figure 8D-G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Membrane mechanics simulations show that a clathrin-coated pit experiences a nearly linear force-extension relationship until ~100 nm internalization, with resistance to internalization directly proportional to plasma membrane tension for a wide range of coat rigidities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C18 are supported by continuum mechanics simulations (Figure 1C-D) showing the linear force-extension regime and the proportionality between resistance and tension. This relationship justifies the simplified spring model used in the actin simulations and is consistent across different coat rigidities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Prior experimental work supports the model's predictions: knocking down Hip1R in HeLa cells inhibited endocytosis, and capping actin filament elongation with Cytochalasin inhibits CME.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 are supported by citations to published literature (Engqvist-Goldstein et al., 2004; Brady et al., 2010; Grassart et al., 2014). These prior results are consistent with the model's predictions about the importance of Hip1R and actin elongation for endocytosis, providing validation for the model's assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C78",
+      "C79"
+    ],
+    "result": "Based on the relative positions of Arp2/3 activators and Hip1R linkers, the self-organized actin network produces force orthogonal to the base of the pit rather than pinching the neck. The broad Hip1R distribution directs filaments toward the base, nucleating more filaments and increasing bending. Filament bending occurs to a greater extent and longer duration than at flat surfaces, possibly due to curved geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C75, C78, and C79 are supported by simulation results (Figures 3-5, 7) and represent mechanistic interpretations of the data. The orthogonal force production (C73) is demonstrated in Figure 3I. The role of Hip1R distribution (C79) is shown in Figures 4-5, 7. The comparison to flat surfaces (C78) is an inference supported by the simulation data showing sustained bending. These interpretations are logical and well-supported by the computational results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Bent filaments are predicted to contribute to endocytosis resilience by preventing backsliding and by releasing stored elastic energy through thermal fluctuations, consistent with the elastic Brownian ratchet mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 are supported by simulation results (Figure 5) and theoretical considerations. C76 is explicitly stated as a prediction/speculation, while C77 is supported by the tension-release experiments (Figure 5H-I) and is consistent with established theory (De La Cruz and Gardel, 2015a; Mogilner and Oster, 1996). The mechanisms are plausible and supported by the data, though C76 remains a prediction requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Comparison to yeast endocytosis: An agent-based model of yeast predicted radial filament organization in the XY plane, but the >200x larger force requirements in yeast lead to different axial organization, less filament bending, and a distinct force production mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C81 are supported by citation to published work on yeast (Mund et al., 2018) and comparison to the current mammalian model. The inference about different mechanisms (C81) is reasonable given the vastly different force scales (turgor pressure in yeast vs. membrane tension in mammalian cells). This comparison contextualizes the current findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background context on actin and endocytosis: Branched actin networks drive membrane forward during cell migration on large scales and deform membranes on smaller scales. In CME, clathrin and BAR proteins generate initial curvature, while actin provides force for membrane shape changes, particularly under high tension where pits stall without functional actin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 are supported by citations to published literature and represent established background knowledge. These claims provide context for the current study and are well-supported by the cited references. They establish the scientific foundation for investigating actin's role in mammalian endocytosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Model parameters are derived from published literature: Arp2/3 branching angle is 77 \u00b1 13\u00b0, cytoplasmic actin concentration is 60-100 \u00b5M, ATP-actin association rate is 11.6 subunits/\u00b5M/s, actin persistence length is 10 \u00b5m (flexural rigidity 0.041 pN\u00b7\u00b5m\u00b2), and phalloidin stiffens actin filaments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are supported by citations to published literature (Blanchoin et al., 2000; Vinzenz et al., 2012; Haugwitz et al., 1994; Wu and Pollard, 2005; Pollard, 1986; McCullough et al., 2008; Gittes et al., 1993; Isambert et al., 1995; Pfaendtner et al., 2010). These parameters are well-established in the literature and provide appropriate constraints for the computational model.",
+    "result_type": "MINOR"
+  }
+]

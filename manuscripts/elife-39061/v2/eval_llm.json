@@ -1,0 +1,402 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The study used MEG to measure brain activity while 26 participants read 240 highly constraining sentences presented at 1000 ms per word. Sentences were constructed in 120 pairs that predicted the same final word despite different contexts, with pair members separated by at least 30 sentences during presentation. Comprehension accuracy was high (98% \u00b1 2.0%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C25, C27-C29 collectively describe the experimental design and basic behavioral results. The methodology is clearly described with appropriate detail, and the high comprehension accuracy (C29) validates that participants engaged with the task. The design is well-suited to test the hypothesis about item-specific predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C46"
+    ],
+    "result": "Spatial RSA revealed that the spatial pattern of MEG activity was more similar when sentence pairs predicted the same word (within-pairs) versus different words (between-pairs) in the time window 120-515 ms after the penultimate word onset (\u2212880 to \u2212485 ms before the final word; t(25) = 3.751, p < 0.001). This effect was present in 18/26 participants and was not observed at earlier time windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30-C34, C46 describe the main spatial RSA finding with appropriate statistical support. The effect is statistically significant, shows consistency across most participants (C33), and demonstrates temporal specificity (C34 shows no effect at earlier time windows). The timing and magnitude of the effect are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The spatial similarity effect cannot be explained by differences in the number of within-pair versus between-pair comparisons. A control analysis using matched numbers of comparisons confirmed the effect (t(25) = 2.393, p = 0.025).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 address a potential methodological confound. The statistical argument in C35 is sound, and the control analysis in C36 provides empirical confirmation. The effect remains significant even when controlling for the number of comparisons, strengthening the main finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C48",
+      "C49"
+    ],
+    "result": "The spatial similarity effect reflects prediction of the final word rather than lexical processing of the penultimate word (SFW-1). Lexical properties and predictability of SFW-1 were matched between within-pair and between-pair sentences. A control analysis with matched SFW-1 showed the effect remained (t(25) = 1.81, p = 0.08), though only approaching significance due to limited power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C48-C49 address alternative explanations through design controls and additional analyses. The experimental design appropriately matched confounding variables (C37-C38), and the control analysis (C39) provides supporting evidence despite reduced power. The timing argument (C48) further supports the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Previously encountering a sentence ending with the expected final word did not inflate spatial similarity between sentence pairs predicting the same word. A repeated measures ANOVA showed no main effect of order (F(1,25) = 0.747, p = 0.396) and no interaction (F(1,25) = 1.804, p = 0.191).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 addresses a potential memory confound with appropriate statistical analysis. The lack of order effects and interactions provides strong evidence that the spatial similarity effect is not driven by memory for previously encountered words. The ANOVA design is appropriate for this question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C53"
+    ],
+    "result": "The spatial similarity effect was not simply due to prediction of syntactic category. Spatial similarity for pairs predicting the same specific words was significantly larger than for pairs predicting the same syntactic category (t(25) = \u22123.559, p = 0.002), indicating the effect reflects lexico-semantic rather than purely syntactic predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C53 address whether the effect reflects syntactic versus semantic predictions. The comparison between within-pair and within-category similarity is well-designed and statistically significant. This control analysis strengthens the interpretation that the effect reflects item-specific semantic predictions rather than broader syntactic categories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C61",
+      "C64"
+    ],
+    "result": "The spatial patterns associated with prediction changed over time, as evidenced by the absence of off-diagonal effects in the cross-temporal similarity matrix. The spatial similarity effect was transient, lasting from 120-515 ms after SFW-1 onset before dropping off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C61, C64 describe the temporal dynamics of the spatial patterns. The cross-temporal analysis (C43) provides appropriate evidence for dynamic spatial patterns, and the timing information (C61) is clearly documented. These findings are well-supported by the data shown in Figure 2D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C66"
+    ],
+    "result": "Temporal RSA revealed that the temporal pattern of neural activity was more similar when sentence pairs predicted the same versus different words over central and posterior sensors (cluster-based randomization test: p = 0.002), indicating that prediction of specific words is associated with unique temporal patterns of neural activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C66 describe the main temporal RSA finding at the sensor level. The cluster-based permutation approach appropriately controls for multiple comparisons, and the statistical significance is clearly reported. This finding complements the spatial RSA results and is well-supported by the data in Figure 3A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C76",
+      "C90"
+    ],
+    "result": "Source localization revealed that the temporal similarity effect localized to the left inferior temporal gyrus, extending into the medial temporal lobe including the left fusiform, hippocampus, and parahippocampus, as well as left cerebellum (p = 0.006).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45, C76, C90 describe the source localization of the temporal similarity effect. The beamforming approach is appropriate for MEG source localization, and the statistical significance is clearly reported with proper correction for multiple comparisons. The anatomical specificity is well-documented in Figure 3B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C52",
+      "C88"
+    ],
+    "result": "The study provides neural evidence that item-specific lexico-semantic predictions are associated with unique spatial and temporal patterns of neural activity. This distinguishes the current work from previous studies that averaged across different predicted words.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C52, C88 state the main conclusion of the study. This conclusion is well-supported by the convergent evidence from both spatial RSA (C32, C46) and temporal RSA (C44, C45) analyses, along with appropriate control analyses ruling out alternative explanations. The novelty claim (C52) is justified given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C60"
+    ],
+    "result": "The authors suggest that the unique spatial patterns reflected the prediction of spatially distributed semantic features associated with predicted words, with different predicted words activating different spatially distributed networks corresponding to their semantic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C54-C55, C60 present interpretations about semantic feature representations. While consistent with the data and prior literature (C26), these claims are largely speculative (as acknowledged in evidence_type). The study cannot definitively distinguish semantic from phonological/orthographic representations (C56-C57), limiting confidence in this specific interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors suggest that the left inferior/medial temporal lobe played a role in temporally 'binding' distributed semantic features through unique temporal patterns, consistent with Damasio's (1989) theory of temporal synchrony within convergence zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C69-C72 propose a temporal binding mechanism. While the temporal similarity effect is well-documented (C44-C45), the functional interpretation as 'binding' is speculative (as acknowledged in evidence_type). The consistency with Damasio's theory (C69) provides theoretical support, but the study does not directly test binding mechanisms or demonstrate causal relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The increased spatial similarity may have reflected predictions at phonological and/or orthographic levels, potentially through top-down pre-activation from semantic to lower linguistic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C57 present an alternative interpretation of the spatial similarity effect. The authors acknowledge this possibility but note the study cannot distinguish between semantic and phonological/orthographic contributions due to the one-to-one correspondence between semantic features and word forms. This represents a limitation that requires future work to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The spatial similarity effect began at 120 ms after SFW-1 onset, suggesting predictions were generated as soon as sufficient information was available. This is consistent with generative frameworks where comprehenders predict events and semantic features prior to bottom-up input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 interpret the timing of the effect within a theoretical framework. The timing observation (120 ms) is well-documented (C32, C46), and the interpretation that this reflects the earliest point of unambiguous prediction is reasonable given the experimental design. The connection to generative frameworks (C59) is appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "The transient nature of the spatial similarity effect may reflect either lack of maintenance over the long interstimulus interval or 'activity-silent' working memory. Different semantic features may have been recruited at different time points, contributing to the dynamic spatial patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C63, C65 offer speculative interpretations of the transient effect. While the transient nature is well-documented (C61), the explanations are explicitly speculative. The activity-silent memory hypothesis (C63) is cited from prior work but not directly tested. The dynamic recruitment of features (C65) is plausible but remains speculative without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The findings extend previous work showing that temporal patterns in the left inferior temporal lobe encode item-specific representations during picture naming (Chen et al., 2016) by demonstrating that such patterns can be detected before new bottom-up input becomes available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 position the findings relative to prior work. The citation to Chen et al. (2016) is appropriate, and the claim that the current findings extend this work by showing anticipatory temporal patterns is well-supported by the temporal RSA results (C44-C45). The novelty claim is justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The localization of the temporal similarity effect to left ventral temporal regions is consistent with the well-established role of these regions in lexico-semantic processing and their proposed function as semantic 'hubs' that integrate distributed semantic features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 interpret the anatomical localization within the context of prior literature. The localization finding is well-documented (C45), and the consistency with prior work on these regions' roles in semantic processing is appropriately supported by multiple citations. The interpretation as semantic hubs is well-grounded in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The possible involvement of the hippocampus is consistent with its role in binding representations to generate predictions, as demonstrated in rodent spatial navigation and human studies. The hippocampus may play an analogous role in language prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C82 discuss hippocampal involvement. While the source localization shows medial temporal lobe activity (C76), the authors appropriately note that MEG source localization in deep structures should be interpreted with caution. The connection to prior work on hippocampal prediction is well-cited (C78-C82), but the inference about language prediction (C81) remains speculative given the methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The activity included the left cerebellum, which may play a role in generating item-specific predictions in language processing, though previous studies reported bilateral (right-dominant) cerebellar activation during language prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C85 discuss cerebellar involvement. The source localization shows left cerebellar activity (C83), but this differs from prior reports of bilateral activation (C84). The interpretation that the cerebellum plays a role in item-specific predictions (C85) is speculative and should be interpreted cautiously given MEG's limited spatial resolution for deep structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The study deliberately used highly constraining contexts and long interstimulus intervals to encourage high-certainty predictions and ensure detection of representationally specific activity. The study does not address whether such predictions occur under more naturalistic conditions or whether they are probabilistic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 acknowledge important limitations of the study design. The authors appropriately recognize that their experimental conditions were optimized for detecting item-specific predictions but do not speak to debates about prediction under more naturalistic conditions. This honest assessment of scope is important for interpreting the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "In conclusion, unique spatial patterns of neural activity became active around 100 ms after a word was unambiguously predicted with transient and dynamic activation, accompanied by unique temporal patterns localizing to the left inferior and medial temporal lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 summarize the main findings. These conclusions are well-supported by the spatial RSA results (C32, C46, C61) and temporal RSA results (C44-C45). The summary accurately reflects the key empirical findings without overstating the interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A stimulus set of 120 sentence pairs in Mandarin was developed with highly constraining contexts (mean constraint: 88% \u00b1 12%). Pairs had distinct contexts with no common content words (except 5 pairs) but predicted the same final word. Half predicted nouns and half predicted verbs. Stimuli were validated through cloze norming in 30 participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 describe the stimulus development and validation. The cloze norming procedure (C94) is appropriate for validating constraint, and the high mean constraint (C95) confirms the stimuli were suitable for encouraging specific predictions. The balanced design with nouns and verbs (C93) enables the syntactic control analysis (C41-C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study was approved by the IRB of the Institute of Psychology, Chinese Academy of Sciences. Thirty-four participants were recruited, with 8 excluded due to technical problems, leaving 26 participants (mean age 23 years, 13 males) in the final dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe ethical approval and participant information. The sample size (N=26) is reasonable for MEG studies, and the exclusion criteria (technical problems) are appropriate. The demographic information is adequately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "MEG data were collected using a CTF Omega System with 275 axial gradiometers (6 non-functional sensors excluded), with signals low-pass filtered at 300 Hz and digitized at 1200 Hz. After artifact rejection, 96% \u00b1 3.4% of trials were retained on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 describe the MEG data acquisition and preprocessing. The equipment specifications are standard, the filtering and sampling parameters are appropriate, and the high trial retention rate (C102) indicates good data quality. The methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior work establishes that prediction is a core computational principle of brain function, that probabilistic prediction facilitates language comprehension, and that semantic features of upcoming words can be predicted in highly constraining contexts. Previous studies showed anticipatory brain activity but averaged across different predicted words, leaving unclear whether item-specific predictions produce unique neural patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 review prior literature and identify the research gap. The citations appropriately support the background claims about prediction in language processing (C7-C13). The identification of the gap (C14) is accurate and well-motivated, providing clear justification for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C26"
+    ],
+    "result": "Multivariate Pattern Analysis (MVPA) and Representational Similarity Analysis (RSA) provide methods for identifying unique patterns of neural activity. These approaches have been successfully applied to fMRI, MEG, and EEG data to decode representationally specific information during perception and working memory. Semantic features are thought to be represented in spatially distributed networks detectable with spatial RSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20, C26 describe the methodological approach and its theoretical basis. The citations appropriately support the use of RSA methods (C15-C20), and the theoretical framework about distributed semantic representations (C26) is well-grounded in prior literature. This provides solid methodological justification for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C47",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors interpret the spatial similarity effect as reflecting greater similarity in brain activity produced by predicting the same versus different words. While previous studies showed anticipatory lexico-semantic processing, the current study uniquely demonstrates that these predictions are item-specific with spatially distinct neural patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C50-C51 present the authors' interpretation of their main finding. The interpretation (C47) is reasonable given the experimental design and control analyses. The positioning relative to prior work (C51) is accurate, and the claim of novelty (C52, included in another result) is justified by the unique experimental approach.",
+    "result_type": "MAJOR"
+  }
+]

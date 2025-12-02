@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C27",
+      "C28",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The MDS identified 2833 snakebite deaths from 611,483 verbal autopsy records (2001-2014), with 92% inter-rater agreement between physicians. Total snakebite deaths from 2001-2014 were estimated at 808,000 (uncertainty range: 738,000-833,000).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 and C107-C109 provide detailed quality control data showing high inter-rater reliability (92% agreement) and systematic review of discordant cases. The uncertainty range (C27-C28) is appropriately derived from physician agreement rates. The methodology is transparent and the estimates are well-supported by the underlying data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "India experienced 1.2 million snakebite deaths from 2000-2019 (average 58,000/year), with deaths increasing from 55,000 in 2001 to 61,000 in 2014 due to 1.1% annual population growth. The age-standardized death rate was 4.8 per 100,000, declining 0.8% annually. Deaths were distributed across age groups: 47% at ages 30-69, 28% in children <15 years, 17% at ages 15-29, and 9% at ages 70+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal trends (C29-C32) are well-documented with appropriate age-standardization to the 2001 census population. The extrapolation to 2000-2019 (C16) is reasonable given stable rates during the observation period. The age distribution (C40-C43) is directly calculated from MDS data. The methodology of applying MDS proportions to UN death totals is appropriate and addresses known undercounting in the SRS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Age-specific snakebite death rates declined fastest in children 0-14 years (1.6% annually) and young adults 15-29 years (1.2% annually), with no decline in middle-aged adults 30-69 years. Gender patterns shifted: before 2010, rates were higher in boys than girls, but from 2010-2014, rates in girls exceeded those in boys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The age-specific trends (C33-C35) are clearly calculated from MDS data and show differential patterns by age group. The gender reversal (C36-C37) is an interesting finding supported by the data, though the manuscript does not provide explanation for this shift. The claims are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C38",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The lifetime risk of dying from snakebite before age 70 is approximately 1 in 250 nationally (0.37%), but reaches 1 in 167 (0.6%) or higher in specific high-risk areas. About 260 million people lived in areas with >0.6% risk, including 4 million in hotspots with \u22651% risk. These high-risk areas were concentrated in Andhra Pradesh, Odisha, Bihar, Uttar Pradesh, Madhya Pradesh, Chhattisgarh, and Rajasthan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial analysis (C50-C54) uses appropriate Bayesian geostatistical methods adjusting for relevant covariates (altitude, temperature, rural/urban status, poverty proxy). The lifetime risk calculations (C23, C38) are properly derived from age-specific rates. The population estimates overlay risk surfaces on gridded population data. The methodology is sound and uncertainty is addressed in Appendix 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Eight states accounted for 70% of snakebite deaths (Bihar, Jharkhand, Madhya Pradesh, Odisha, Uttar Pradesh, Andhra Pradesh, Rajasthan, Gujarat), containing 55% of India's population, with age-standardized death rates of ~6 per 100,000. Rates rose over time in most high-burden states (particularly Bihar) but fell in Andhra Pradesh. Lower-burden states had initial rates of 3.7 per 100,000 that declined over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The state-level analysis (C44-C49) is directly derived from MDS data with appropriate age-standardization. The identification of high-burden states is data-driven and the temporal trends by state are clearly documented in Table 3. The heterogeneity in trends (rising in Bihar, falling in Andhra Pradesh) is an important finding that is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C19",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Snakebite deaths occurred predominantly in rural areas (94%) and out of hospital (77%), at home. Half of deaths occurred during the monsoon season (June-September), with peak mortality of 294 deaths/day in mid-July and trough of 78 deaths/day in mid-February. Seasonality was consistent across study years and between high- and low-burden states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rural/out-of-hospital distribution (C14-C15, C19) is directly reported from MDS data. The seasonal analysis (C55-C59) uses appropriate Poisson time series modeling to estimate daily mortality patterns. The consistency of seasonality across years and states (C56-C57) strengthens the findings. Figure 2A provides visual support for the temporal patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Snakebite mortality showed strong altitude dependence: crude death rates below 400m were three times higher than at 1000m. Over 80% of deaths occurred below 400m altitude and 50% below 200m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The altitude analysis (C60-C62) is calculated from MDS data aggregated by elevation using NASA SRTM digital elevation data. The strong altitude gradient is consistent with snake ecology and human population distribution. Figure 2B provides visual support. The finding is biologically plausible and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "A systematic literature review of 87,590 snakebite cases from 78 studies (2000-2019) found bites were more common in males (59%), ages 30-69 (57%), June-September (48%), and outdoors (64%). The leg was the dominant bite site (77%). Two-thirds of treated cases were seen within 1-6 hours. Russell's viper accounted for 43% of identified species, followed by unknown (21%), krait (18%), and cobra (12%). However, MDS deaths were equal between males and females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic review (C63-C64) followed appropriate methodology, screening 1417 papers and including 78 studies. The characteristics reported (C65-C77) are directly from the literature review data. The discrepancy between literature (59% male bites) and MDS (equal male/female deaths) in C69 is appropriately noted and may reflect differential case-fatality or healthcare-seeking behavior. The species distribution is limited by identification challenges acknowledged in the limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Government hospital reporting captured only 10% of expected snakebite deaths (15,500 reported vs. 154,000 MDS-estimated hospital deaths from 2003-2015). Karnataka had the most complete reporting at 26%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between government reports and MDS estimates (C78-C81) clearly demonstrates severe underreporting in the routine surveillance system. The calculation is straightforward and the finding has important implications for surveillance. Table 4 provides detailed state-level data. The 10-fold underestimate is a critical finding for public health policy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Total snakebites in 2015 were estimated at 1.11-1.77 million, with 70% showing envenomation (0.77-1.24 million envenomations). The in-hospital case-fatality rate was estimated at 3.2% based on 3,329 deaths among 87,590 cases in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The prevalence estimates (C25, C84-C85) rely on indirect methods with multiple assumptions about in-hospital vs. out-of-hospital ratios (Appendix 1-table 2). The case-fatality rate (C83) is derived from ordinary least squares regression of literature data, which may be biased by publication bias and differential healthcare-seeking. The authors acknowledge these estimates are 'crude' and subject to 'obvious limitations.' The wide ranges reflect substantial uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Antivenom treatment reduced deaths by over 90% in healthcare facility studies. However, only about half of cases reached medical care within 6 hours. Emergency ambulance services in 2014 transported 27,509 patients within 6 hours with a case-fatality rate of 1.3% (359 deaths).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The antivenom effectiveness (C97) is reported from literature review data (Appendix 2-table 1). The delay in care (C98) is documented in the systematic review. The ambulance service data (C99-C100) provides real-world evidence of improved outcomes with rapid transport and treatment. The lower case-fatality rate (1.3%) compared to general in-hospital cases (3.2%) supports the importance of timely care.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The MDS monitored 23 million people in 3.6 million nationally representative households from 1998-2014 using three sampling frames based on 1991, 2001, and 2011 censuses. Verbal autopsies were conducted by 900 non-medical surveyors and coded by two of 404 trained physicians using ICD-10. The SRS has 5-10% undercounting, but missing deaths are randomly distributed. UN death totals were used to adjust for undercounting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MDS methodology (C102-C106) is well-established and previously validated (cited references). The acknowledgment of SRS undercounting (C110) and its random distribution (C111-C112) is supported by cited studies. The use of UN death totals (C113) is an appropriate adjustment method. The sampling design is robust and nationally representative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The systematic literature review searched four databases (Ovid MEDLINE, PubMed, Web of Science, Scopus) for English-language studies from January 2000 to September 2019. From 1417 initial studies, 78 were included after review by three independent reviewers, categorized as autopsy (7), emergency medical services (1), hospital (66), and community (4) studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic review methodology (C114-C118) follows standard practices with multiple database searches, defined inclusion criteria, and independent review by three reviewers. The PRISMA-style reporting of screening and inclusion is appropriate. Appendix 2 provides additional methodological details. The review is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "WHO estimates 81,000-138,000 annual snakebite deaths globally, with three times that number surviving with disabilities. WHO included snakebite envenoming in the neglected tropical diseases list in 2017 and launched a 2019 strategy to halve deaths and disabilities by 2030. India accounts for approximately half of global deaths. A 2005 study estimated 46,000 annual deaths in India, prompting WHO to revise global estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C6 are supported by WHO citations (2019a, 2019b, 2019c). The India proportion (C7) is a reasonable inference from WHO global estimates and the current study's findings. The 2005 estimate (C8) is properly cited to Mohapatra et al., 2011. These provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C87"
+    ],
+    "result": "Venomous snakebites cause acute medical emergencies including shock, paralysis, hemorrhage, acute kidney injury, and severe local tissue destruction. Most deaths and serious consequences are avoidable by timely access to safe and effective antivenoms. Snakebite deaths are nearly all avoidable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 are supported by established medical knowledge and citation to Guti\u00e9rrez et al., 2017. Claim C87 is a reasonable inference given the availability of effective treatment. These provide important context for the public health significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "High snake densities occur in grain agriculture due to rodent and amphibian prey. Species-specific bite circumstances are described: krait bites occur at night while sleeping unprotected by mosquito nets; saw-scaled viper bites occur when stepped on or while cutting grass; cobra bites are defensive or predatory; Russell's viper bites occur in fields during day or at night when walking without light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ecological explanation (C88) is supported by citations to Whitaker and Captain, 2004 and Mise et al., 2016. The species-specific circumstances (C119-C122) are supported by multiple citations and represent established knowledge about snakebite epidemiology. This information is relevant for prevention strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C101"
+    ],
+    "result": "Proposed interventions include targeting agrarian communities in high-risk areas during monsoon seasons with education about snake-safe practices, protective equipment, and lighting. Mass distribution of mosquito nets could protect against snakebites. Government hospitals can provide free antivenom, and India has sufficient manufacturing capacity. Current polyvalent antivenoms cover only 4 species (common cobra, common krait, Russell's viper, saw-scaled viper) despite 3 other cobra species, 7 other krait species, and at least 15 total medically important species in India.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The proposed interventions (C89-C91) are reasonable based on study findings but are speculative recommendations without evidence of effectiveness. The antivenom availability and manufacturing capacity claims (C92-C93) are supported by citations. The antivenom coverage limitations (C94-C96) are well-documented with multiple citations. However, the actual effectiveness of proposed interventions requires future evaluation. These are discussion points rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The 2005 Indian estimate of 46,000 annual deaths relied on 123,000 verbal autopsy records from 2001-2003 in the MDS. The current study reports on over 600,000 deaths from 2001-2014. An earlier report estimated a ratio of one death to 20 envenomations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C9-C11) provide appropriate context about prior work and the expansion of the dataset. They are factual statements about previous publications and the current study's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Snakebite deaths represent only 0.5% of approximately 10 million deaths in India in 2015.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This calculation (C86) is straightforward: ~58,000 snakebite deaths / ~10 million total deaths = 0.5%. It provides appropriate context for the relative magnitude of snakebite mortality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Painless nocturnal krait bites resulting in 'early morning paralysis' may not be attributed to snakebite, potentially leading to underestimation, but this bias is likely small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The phenomenon of unrecognized krait bites (C123) is supported by citations to Saini et al., 1986 and Ariaratnam et al., 2008. However, the assessment that the bias is 'likely small' (C124) is the authors' judgment without quantitative support. This represents acknowledged uncertainty in the estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The spatial analysis adjusted for poverty (using female illiteracy as proxy), altitude, temperature, and rural/urban status based on their known associations with snakebite risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The covariate selection (C125-C127) is justified by citations to Harrison et al., 2009 and Chaves et al., 2015. These are appropriate adjustments for the geostatistical model. The use of female illiteracy as a poverty proxy is reasonable given data availability.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Corin is a serine protease with tissue-specific expression patterns and cellular localization. It is primarily expressed in the heart where it activates ANP, but is also found in uterus and kidney. In the kidney, corin is restricted to tubular epithelial cells and shows apical membrane localization in polarized renal epithelial cells, contrasting with overall membrane expression in non-polarized cardiomyocytes and HEK293 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are well-supported by citations to published literature establishing corin's function, tissue distribution, and differential membrane localization patterns. These background claims provide essential context for the study but represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Corin exhibits apical-specific expression in polarized MDCK cells but overall membrane expression in non-polarized HL-1 and HEK293 cells. Corin is activated on the cell surface in both MDCK and HEK293 cells, as demonstrated by trypsin sensitivity of the activation cleavage fragment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 are supported by confocal microscopy (Figure 1A) and western blotting data (Figure 1\u2014figure supplement 1). The trypsin digestion experiment provides clear evidence that corin activation occurs on the cell surface. The differential localization between polarized and non-polarized cells is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Other type II transmembrane serine proteases (hepsin, matriptase, TMPRSS3-5) show both apical and basolateral expression in MDCK cells, indicating that apical-specific expression is not a common feature of this protein family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by confocal microscopy data (Figure 1B) comparing corin with other type II transmembrane serine proteases. This control experiment strengthens the conclusion that corin's apical-specific expression is distinctive and requires specific molecular determinants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The determinants for apical-specific corin expression reside in the extracellular region between Fz1 and SR domains, specifically in or near the LDLR8 module. Deletion of the cytoplasmic tail does not affect apical expression, while deletion of LDLR8 module (alone or with LDLR6-7) results in both apical and basolateral expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by systematic deletion mutagenesis and confocal microscopy (Figure 2A-B, Figure 2\u2014figure supplement 1). The experimental design appropriately narrows down the critical region through progressive deletions. Quantitative analysis confirms the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Individual N-glycosylation sites near LDLR8 module (N567, N651, N697, N761, N1022) are not required for apical-specific corin expression in MDCK cells, as all N-glycosylation site mutants retained apical-specific expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by confocal microscopy data (Figure 2\u2014figure supplement 2B,C) showing that N-glycosylation site mutants maintain apical expression. This negative result is important for ruling out N-glycans as the apical sorting signal, though the study only tested individual sites rather than combinations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Ser683 in corin LDLR8 module is critical for apical-specific expression. The D608S substitution in the \u0394R78 mutant restored apical expression, while the S683D mutation in wild-type corin resulted in both apical and basolateral expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by confocal microscopy data (Figure 3A-B, Figure 3\u2014figure supplement 1C-D). The rescue experiment (D608S) and loss-of-function experiment (S683D) provide complementary evidence for Ser683's critical role. The experimental logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Ser683 is located in a conserved DSSDE motif in corin LDLR8 module. Mutations of D682A, S684A, D685A, and E686A resulted in apical and basolateral expression, while S683A retained apical-specific expression, indicating the DSSDE motif is important but Ser683 can be replaced by Ala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by sequence alignment (Figure 4\u2014figure supplement 1A), literature citations, and confocal microscopy data (Figure 4A, Figure 4\u2014figure supplement 1B). The systematic alanine scanning provides strong evidence for the motif's importance while revealing that Ser683 tolerates conservative substitution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The DSSDE motif is transportable among LDLR modules. Introducing the DSSDE motif into LDLR6 or LDLR7 modules of the S684A mutant restored apical-specific expression, confirmed by both confocal microscopy and biotin-labeling experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by confocal microscopy (Figure 4B, Figure 4\u2014figure supplement 1C) and western blotting of biotin-labeled proteins (Figure 4\u2014figure supplement 2). The motif transplantation experiments provide strong evidence that the DSSDE motif is both necessary and sufficient for apical targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Computational modeling reveals that corin LDLR6 and LDLR8 modules have similar overall topology with Asp608/Ser683 located at surface-exposed corners. The S683D mutation causes the negatively-charged Asp683 side chain to protrude more than Ser683 or Ala683, suggesting proper conformation in this region is important for protein interactions in membrane sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C42 are based on computational modeling (Figure 5A-B) using homology modeling from VLDLR structure. While the models provide structural insights, they are predictions that lack experimental validation. The claim about importance for protein interactions (C42) is speculative. The modeling supports but does not prove the functional importance of the DSSDE motif conformation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "CD320, a type I transmembrane protein with two LDLR modules, contains the DSSDE motif in its second LDLR module and shows apical expression in proximal tubular epithelial cells in human kidney sections and in transfected MDCK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by sequence analysis (Figure 6A), immunostaining of human kidney sections (Figure 6B), and confocal microscopy of transfected MDCK cells (Figure 6C). This extends the findings from corin to another protein, strengthening the generalizability of the DSSDE motif's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The DSSDE motif in CD320 LDLR2 module regulates apical membrane expression in MDCK cells. Mutations of D160A, S162A, D163A, and E164A resulted in apical and basolateral expression, while S161A retained apical-specific expression, paralleling the findings in corin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by confocal microscopy data (Figure 7A, Figure 7\u2014figure supplement 1A). The parallel results between CD320 and corin strengthen the conclusion that the DSSDE motif has a conserved function in apical targeting across different proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CD320 LDLR1 module has a DGSDE motif that does not support apical targeting, but introducing the DSSDE motif into LDLR1 module (ML1/S162A mutant) restored apical-specific expression, demonstrating the DSSDE motif can function in different LDLR module contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by sequence analysis (Figure 7B) and confocal microscopy (Figure 7B, Figure 7\u2014figure supplement 1B). The motif swap experiment in CD320 provides additional evidence that the DSSDE motif is transportable and functions independently of its native LDLR module context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Rab11a, but not Rab11b, is involved in apical-specific expression of corin and CD320 in MDCK cells. Dominant-negative Rab11a or RAB11A knockdown resulted in both apical and basolateral expression, while Rab11b manipulation had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by confocal microscopy with dominant-negative mutants (Figure 8A, Figure 8\u2014figure supplement 1A) and shRNA knockdown experiments (Figure 8B-C, Figure 8\u2014figure supplement 1B-C, Figure 8\u2014figure supplement 2A-D). The complementary approaches (dominant-negative and knockdown) strengthen the conclusion about Rab11a's specific role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C82",
+      "C83"
+    ],
+    "result": "A proposed model suggests corin and CD320 are transported via common recycling endosomes to Rab11a-positive apical recycling endosomes, where the DSSDE motif is recognized by a Rab11a-dependent mechanism for apical sorting. Mutations in the DSSDE motif abolish this recognition, resulting in both apical and basolateral sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 and C82-C83 present a mechanistic model based on the experimental data, but the model is speculative. While the Rab11a requirement is well-established, the specific trafficking route through CRE to ARE and the direct recognition of the DSSDE motif by a Rab11a-dependent mechanism lack direct experimental evidence. The model is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The DSSDE motif in corin LDLR8 module represents a novel apical sorting signal distinct from previously identified signals (cytoplasmic tail, transmembrane domain, GPI anchor, PDZ-binding motif, N/O-glycans). The motif is transportable among LDLR modules and specifies apical expression in polarized renal epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 synthesize the study's main findings and place them in context of known apical sorting mechanisms. The claims are well-supported by the experimental data showing the DSSDE motif is necessary, sufficient, and transportable. This represents a significant advance in understanding apical targeting mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The surface area around Ser683 in corin LDLR8 module may serve as a protein-interacting site for apical targeting in renal epithelial cells, analogous to ligand-binding sites in LDLR modules of the human LDLR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72 are speculative, based on structural comparisons to known LDLR ligand-binding sites. While C71 is supported by literature citations about LDLR structure, C72 is a hypothesis that lacks direct experimental evidence. The speculation is reasonable but requires validation through protein interaction studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CD320 is a receptor for vitamin B12 uptake expressed apically in proximal tubular epithelial cells, consistent with its function in vitamin reabsorption. The DSSDE motif in CD320 LDLR2 module is required for apical expression, suggesting this motif may have similar regulatory function in other LDLR module-containing proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by literature citations and experimental data (immunostaining, confocal microscopy). C78 is a reasonable extrapolation but remains speculative without testing additional proteins. The CD320 findings provide important validation that the DSSDE motif's function extends beyond corin.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C84"
+    ],
+    "result": "Rab11a-positive endosomes are primary trafficking stations toward the apical membrane in polarized epithelial cells and mediate vesicle trafficking and recycling. Manipulation of Rab11a, but not Rab11b, affects apical expression of corin and CD320.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79 and C84 are supported by literature citations establishing Rab11a's role. Claims C80-C81 are supported by experimental data from dominant-negative and knockdown experiments. These claims establish the mechanistic link between the DSSDE motif and Rab11a-dependent trafficking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Corin undergoes PCSK6-mediated activation and ectodomain shedding on the cell surface in cardiomyocytes, HEK293 cells, and MDCK cells. The cleaved protease domain fragment is not detected intracellularly, suggesting activated corin may not be internalized for recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by literature citations. Claims C87-C88 are supported by experimental data described in the Discussion. However, the inference that corin is not recycled (C86) is based on negative data and may reflect detection limits rather than absence of recycling. More sensitive assays would be needed to definitively rule out recycling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "This study identifies a conserved DSSDE motif in LDLR modules of corin and CD320 as a regulatory element for apical sorting in MDCK cells, likely mediated by a Rab11a-dependent mechanism. The motif is present in other LDLR module-containing proteins and may have similar roles in apical membrane targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 summarize the study's main findings, which are well-supported by the experimental data. C94 is a reasonable suggestion for future research but remains speculative. The study makes a significant contribution to understanding apical targeting mechanisms in polarized epithelial cells.",
+    "result_type": "MAJOR"
+  }
+]

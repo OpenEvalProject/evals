@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes the foundational knowledge that insect navigation arises from coordinated guidance systems (path integration and visual memory), with the central complex (CX) and mushroom bodies (MB) as key neural substrates, but notes that the neural coordination mechanisms remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C12 collectively establish well-accepted prior knowledge about insect navigation systems and their neural substrates, supported by multiple citations to review papers and neurophysiological studies. These claims appropriately frame the knowledge gap that motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Current visual memory models can replicate route following but fail to account for visual homing from novel locations, and existing multi-view storage approaches are brittle and inconsistent with observed ant behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C19-C24 accurately summarize limitations of existing models with appropriate citations to behavioral and modeling studies. The characterization of the gap between current models and observed behavior (e.g., ants moving directly back to route rather than aligning with familiar direction) is well-supported by cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Neuroanatomical evidence suggests the CX coordinates navigation behavior, but a theoretical hypothesis explaining the neural mechanisms has not been developed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 appropriately identify the second knowledge gap motivating this work, supported by citations to neuroanatomical studies. This establishes the need for the theoretical framework proposed in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors propose that insects require distinct strategies for route-following and homing using different aspects of frequency-encoded views processed in different neural pathways, extending the navigation toolkit from two to three core modules (PI, RF, and VH).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3-C4, C17, C46-C47 present the core conceptual proposal but are primarily speculative. While the frequency-encoding approach is demonstrated computationally (C47 references both speculation and data), the biological implementation and the necessity of separating RF and VH as distinct systems rather than variants of visual memory require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A mushroom body model using rotationally-invariant frequency amplitudes can generate visual homing behavior that replicates ant displacement experiments, though it cannot distinguish route direction upon arrival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 demonstrate that the VH model produces behavior matching experimental data (Figures 2C-D, references to Wystrach et al. 2012, Narendra 2007). The limitation (C39) is acknowledged. Claims C48-C51 provide some biological support for frequency encoding, though the specific Zernike Moment implementation is acknowledged as borrowed from computer graphics. The model successfully addresses a key gap in prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A route following model based on learned associations between rotationally-invariant amplitudes and rotationally-varying phases can recover route direction and follow familiar paths, with potential neural implementation via the OL-AOTU-BU-EB pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 show the RF model replicates ant behavior (Figure 4B, citations to behavioral studies). Claims C52-C54 propose a plausible neural implementation supported by recent neurophysiological evidence (Kim et al. 2019, Fisher et al. 2019). However, the use of a simple ANN (C83-C85) is acknowledged as exploratory pending more detailed neuroanatomical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C42",
+      "C43",
+      "C57",
+      "C86",
+      "C87"
+    ],
+    "result": "A pair of ring attractor networks in the CX can optimally integrate PI and VH outputs by weighting cues according to their certainties, replicating behavioral data from cue-conflict experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33, C42-C43, C57, C86-C87 demonstrate that the ring attractor integration mechanism replicates trends from cue-conflict experiments (Figure 3C, citations to Legge et al. 2014, Wystrach et al. 2015). The mechanism is biologically plausible given known CX structure (C27-C29) and produces realistic extended homing paths (C43, Figure 3D). The optimal integration property is supported by prior theoretical work (C29, C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "A context-dependent switching mechanism using visual novelty from the MB can coordinate On-route (RF) and Off-route (PI+VH) strategies, enabling the unified model to replicate all key adaptive behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C89-C91 show the switching circuit produces appropriate behavioral transitions in zero-vector and full-vector trials (Figure 5B-C). The use of visual novelty as a switching signal is well-motivated (C89). However, the authors acknowledge using different parameter settings across trials (C45, Table 1) and note this is a proof-of-principle demonstration, suggesting the mechanism may require refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C55",
+      "C56",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "The CX and MB work in tandem to coordinate navigation, with the CX acting as coordinator and the MB as mediator, using multiple ring attractors for different compass systems and contextual control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5-C6, C55-C56, C60-C62, C64-C65 present the overarching hypothesis about CX-MB coordination. While the model demonstrates this is computationally feasible and consistent with some neuroanatomical evidence, the specific neural implementations (especially C60-C61 proposing 3-4 independent ring attractors) are largely speculative. The hypothesis is testable but requires substantial neurophysiological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C18",
+      "C66"
+    ],
+    "result": "The unified model reproduces behavioral data from cue conflict experiments in realistic environments and represents a proof-of-principle framework for coordinating PI, VH, and RF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C18, C66 summarize the overall achievement. The model successfully replicates multiple behavioral datasets (Figures 2-5) in a simulated ant-like environment. The characterization as 'proof-of-principle' is appropriate given acknowledged limitations (parameter tuning, simplified neural implementations). The model advances understanding by providing a testable framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C63",
+      "C67"
+    ],
+    "result": "The model architecture is inspired by known insect neuroanatomy, shows parallels to mammalian navigation systems, and can potentially be extended to other insect navigation behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C63, C67 appropriately contextualize the model within broader neuroscience. The inspiration from FB column structure (C58) and parallels to mammalian systems (C59) are well-cited. The extensibility claim (C67) is reasonable speculation supported by citations to diverse navigation behaviors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C88"
+    ],
+    "result": "The model uses established computational methods including a simulated 3D ant environment, Zernike Moment frequency encoding, and neural network architectures adapted from prior work, with biologically-constrained parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C72-C85, C88 describe the computational implementation. The methods are clearly documented with appropriate citations. The use of established techniques (Zernike Moments, ring attractors from Stone et al. 2017) and biological constraints (e.g., 8 neurons matching CX columns, C88) supports reproducibility and biological plausibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C34",
+      "C59",
+      "C60"
+    ],
+    "result": "Metazoan Cdt1 proteins possess N-terminal intrinsically disordered regions (IDRs) that are conserved across species. DISOPRED analysis reveals that D. melanogaster Cdt1 has an extended N-terminal IDR, and similar IDRs are present in other metazoan Cdt1s including human, mouse, X. laevis, C. elegans, and D. rerio. The Orc1 IDR shows 67% identity across the Drosophila genus, and the composition, length, and pI of initiator IDRs are conserved across metazoan phyla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C34, C59-C60 collectively demonstrate that metazoan initiator proteins contain conserved N-terminal IDRs. The computational predictions (DISOPRED) are supported by bioinformatic analysis across multiple species (Table 1), and the conservation of IDR properties (composition, length, pI) across metazoa is well-documented. The sequence conservation of Orc1 IDR within Drosophila (67% identity) despite predicted disorder is particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "D. melanogaster Cdt1 binds DNA with nanomolar affinity (Kd,app = 83 \u00b1 17 nM by fluorescence anisotropy, ~100 nM by EMSA), while S. cerevisiae Cdt1 shows no DNA binding. The DmCdt1-DNA complex is heterogeneous and large, and DNA binding is freely reversible as demonstrated by competition assays (Kc,app = 64 nM). This DNA-binding activity induces DmCdt1 to phase separate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8, C16-C19 provide convergent evidence from multiple orthogonal assays (pulldown, fluorescence anisotropy, EMSA, competition) demonstrating specific DNA binding by DmCdt1 but not ScCdt1. The Kd values are consistent across methods (~80-100 nM), and the competition assay confirms reversible binding equilibrium. The heterogeneous nature of the complex observed by EMSA is consistent with the phase separation behavior described in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Mixing DmCdt1 with duplex DNA results in visible turbidity and formation of phase-separated droplets up to 3-4 \u00b5m in diameter containing both protein and nucleic acid. This turbidity is reversible with salt addition (400 mM KCl). Two-color fluorescence imaging confirms co-localization of eGFP-Cdt1 and Cy5-dsDNA in droplets, demonstrating that phase separation is driven by dsDNA-induced coacervation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C20-C24 provide multiple lines of evidence for DNA-dependent phase separation using visual observation, DIC microscopy, and two-color fluorescence imaging. The salt-reversibility (C10) supports an electrostatic mechanism. Controls showing no droplets with protein or DNA alone (C21-C22) are appropriate. The conclusion that dye-labeled oligonucleotides can serve as a proxy for labeled protein (C24) is reasonable given the co-localization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Cdt1 phase separation depends on DNA length but not sequence. Phase separation is observed with oligonucleotides longer than 25 basepairs, and randomly generated 60 bp oligonucleotides with 10-75% GC content are equally potent at inducing phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by systematic depletion assays testing DNA length and sequence composition (Figure 1\u2014figure supplement 1B-C). The length requirement (>25 bp) is consistent with the need for multivalent interactions in phase separation. The sequence independence is demonstrated by testing oligonucleotides with varying GC content, supporting a non-sequence-specific DNA binding mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36"
+    ],
+    "result": "The N-terminal IDR of Cdt1 is necessary and sufficient for DNA-dependent phase separation. Deletion of the IDR (Cdt1\u0394IDR) abolishes droplet formation and phase separation, while the isolated IDR (Cdt1IDR) alone binds DNA (Kd,app = 158 \u00b1 32 nM) and undergoes DNA-dependent phase separation. This demonstrates that the Cdt1 IDR directly interacts with dsDNA and is essential for condensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C27-C32, C36 provide strong evidence through deletion and minimal construct analysis. The \u0394IDR construct shows complete loss of function in both microscopy and depletion assays (C25, C27, C29), while the isolated IDR retains both DNA binding and phase separation capabilities (C30-C32). This constitutes a classic necessity-and-sufficiency demonstration. The slightly weaker DNA binding affinity of the isolated IDR (158 nM vs 83 nM for full-length) may reflect contributions from other domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C35"
+    ],
+    "result": "Phase separation behavior differs between yeast and metazoan Cdt1 proteins. S. cerevisiae Cdt1, which lacks an N-terminal IDR, does not exhibit phase separation in vitro, while human Cdt1 can undergo DNA-induced liquid phase condensation similar to DmCdt1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C35 are supported by experimental data (Figure 2\u2014figure supplement 1D-G) and are consistent with the bioinformatic analysis showing that ScCdt1 lacks an N-terminal IDR (Table 1). The positive result with human Cdt1 supports the evolutionary conservation of this property in metazoans. However, the manuscript does not provide quantitative comparison of phase separation efficiency between human and Drosophila Cdt1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "DmCdt1 undergoes DNA-dependent phase separation at physiological protein and salt concentrations. Endogenous Cdt1 concentration in early D. melanogaster embryos peaks at ~70 nM during active replication. Phase separation is observed at protein concentrations as low as 62.5 nM at physiological salt (150 mM KGlutamate), but requires 500 nM at 300 mM salt and is abolished at 600 mM salt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 establish physiological relevance through Western blot quantitation of endogenous protein levels (C37) and systematic phase diagram analysis (C38-C40). The salt-dependence is consistent with an electrostatic mechanism. The depletion assay confirmation at nanomolar concentrations (C41) strengthens the conclusion. However, the in vivo concentration measurement relies on assumptions about embryo volume and protein extraction efficiency that are not fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "DISOPRED analysis reveals that D. melanogaster ORC subunits Orc1 and Orc2, as well as Cdc6, possess high levels of disordered content (>30%) with continuous disordered regions longer than 200 amino acids. In contrast, Mcm2-7 subunits contain less than 30% predicted disordered sequence with no single region exceeding 150 amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by computational disorder prediction (DISOPRED) shown in Figure 3A. The distinction between initiator proteins (high disorder) and Mcm2-7 (low disorder) is clear and quantitative. However, disorder prediction algorithms have known limitations and false positive/negative rates. Experimental validation of disorder (e.g., by NMR or circular dichroism) would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "D. melanogaster ORC undergoes DNA-dependent phase separation in both the presence and absence of ATP, and this requires the N-terminal IDR of Orc1 but not Orc2. Deletion of the Orc1 IDR (ORC1\u0394IDR) abolishes phase separation, while deletion of the Orc2 IDR has no effect. S. cerevisiae ORC does not phase separate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C54-C58, C62 provide strong evidence through depletion assays and fluorescence microscopy with deletion constructs. The differential requirement for Orc1 vs Orc2 IDRs (C54-C57) is particularly informative and correlates with the charge properties of these IDRs (Orc1 pI=10.1 vs Orc2 pI=6.0). The lack of phase separation by ScORC (C62) is consistent with the absence of a basic N-terminal IDR in ScOrc1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The Orc1 and Orc2 IDRs are similar in length (362 vs 269 amino acids) and amino acid composition, with near-equal distribution across hydrophobic (36/35%), hydrophilic (30/29%), and charged (32/33%) classes. However, they differ markedly in isoelectric point: Orc1 IDR (pI=10.1) is enriched for positive charges (20% positive, 12% negative), while Orc2 IDR (pI=6.0) is weakly enriched for negative charges (17% negative, 16% positive).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 are supported by sequence composition analysis. The quantitative comparison of amino acid types is straightforward and reproducible. The charge difference between Orc1 and Orc2 IDRs provides a mechanistic explanation for their differential roles in phase separation (C54-C58). The preponderance of hydrophobic residues in predicted IDRs (C51) is noted as unexpected, which is appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "S. cerevisiae Orc1 possesses an N-terminal IDR that is shorter than observed in metazoa (143 aa vs >240 aa) and has an acidic pI (4.7) rather than the basic pI (>9) characteristic of metazoan Orc1 IDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by sequence analysis data in Table 1. This observation provides a mechanistic explanation for why ScORC does not phase separate (C62), as the acidic pI would not favor electrostatic interactions with negatively charged DNA. The claim is descriptive and well-supported by the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "D. melanogaster Cdc6 binds DNA and forms DNA-dependent condensates that require its N-terminal IDR. Cdc6 DNA binding is ATP-independent, but phase separation is inhibited by ATP (possibly through hydrotrope effects). Unlike Cdt1 and ORC, Cdc6 shows only partial depletion with short oligonucleotides but complete partitioning with plasmid DNA, indicating a requirement for longer DNA segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 demonstrate Cdc6 phase separation through multiple assays (pulldown, depletion, microscopy) and establish the IDR requirement through deletion analysis (C72). The ATP inhibition (C66) is reproducible but mechanistically unclear; the hydrotrope hypothesis (C67) is speculative and based on citation. The DNA length requirement (C69-C70) is interesting but the comparison to Cdt1/ORC is qualitative rather than quantitative. The partial depletion behavior (C68) suggests Cdc6 may have different phase separation properties than Cdt1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "All three initiator components (ORC, Cdc6, Cdt1) can co-associate in liquid phases in the presence of DNA and ATP. Both tRFP-Cdc6 and eGFP-Cdt1 show marked enrichment within ORC droplets, and the presence of other initiators overcomes the ATP-mediated inhibition of Cdc6 phase separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by multi-color fluorescence microscopy (Figure 4A) showing co-localization of all three initiators. The observation that ATP inhibition of Cdc6 is overcome in the presence of ORC and Cdt1 (C76) is important for physiological relevance, as ATP is required for helicase loading. However, the mechanism by which other initiators overcome ATP inhibition is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Initiator condensates show specificity in protein recruitment. eGFP-Cdt1 is enriched 10-fold within ORC/Cy5-dsDNA droplets relative to bulk phase, while eGFP-FUS shows no enrichment. This demonstrates that initiator condensates can exclude proteins with non-congruent IDRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide evidence for selective partitioning using appropriate positive (Cdt1) and negative (FUS) controls. The 10-fold enrichment (C79) is quantitative and significant. The use of FUS as a negative control (C78) is appropriate as it is a well-characterized phase-separating protein with different IDR properties. This selectivity is important for biological function, though the molecular basis for selectivity is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Mcm2-7 does not undergo phase separation on its own in the presence or absence of ATP. The IDRs of Mcm2 and Mcm3 have acidic pI (<6), and while Mcm4 has a basic N-terminal IDR (pI=11.0), it has fewer charged residues than initiator IDRs. Fluorescence microscopy confirms that Mcm2-7 does not form droplets with DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by depletion assays (Figure 4E-F) and fluorescence microscopy (Figure 4\u2014figure supplement 2C). The sequence analysis of Mcm IDRs (C82-C83) provides a mechanistic explanation for the lack of phase separation. The negative result is important for establishing that phase separation is specific to initiator proteins and not a general property of replication factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Mcm2-7 does not phase separate independently but is selectively recruited into condensed phases when all three initiation factors (ORC, Cdc6, Cdt1) and ATP are present, showing ~8-fold enrichment in the pelleted phase. Omission of any single initiator abolishes Mcm2-7 recruitment, demonstrating stringent requirements for partitioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 demonstrate selective Mcm2-7 recruitment through systematic depletion assays (Figure 4G-H). The requirement for all three initiators plus ATP (C87, C89) matches the known requirements for helicase loading, supporting physiological relevance. The ~8-fold enrichment is quantitative. However, the assay uses plasmid DNA and it's unclear whether this represents true phase separation or simply co-pelleting with initiator condensates. The distinction between recruitment and loading is not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Initiator IDRs have a distinct amino acid sequence signature compared to other phase-separating proteins (FUS, EWS, Laf1). They are characterized by: (1) high sequence complexity with equal representation of charged, hydrophilic, and hydrophobic residues, (2) deficiency in aromatic amino acids and glycine, and (3) net positive charge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by sequence composition analysis (Figure 4\u2014figure supplement 1). The comparison to well-characterized phase-separating proteins is appropriate. The identification of a distinct sequence signature is important for understanding the molecular basis of initiator phase separation and distinguishing it from LCD-driven phase separation. However, the functional significance of each feature (e.g., low aromatic content) is not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Previous work has demonstrated that tight DNA binding by yeast and metazoan ORC depends on ATP binding to Orc1, and a discrete patch within the DmOrc1 IDR near the ATPase domain is necessary but not sufficient for ATP-dependent DNA binding in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by appropriate citations to prior work (Bell and Stillman 1992; Bleichert et al. 2018; Chesnokov et al. 2001; Giordano-Coltart et al. 2005). These claims establish important context for interpreting the current findings about ATP-independent DNA binding. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The initial association of ORC with chromatin in vivo proceeds through an ATP-independent DNA-binding mode. A functional eGFP-Orc1 transgene rescues an Orc1 null allele and shows 2.7-fold chromosomal enrichment beginning in anaphase. An eGFP-Orc1WalkerAB mutant (defective in ATP binding/hydrolysis) cannot rescue the null but shows wild-type chromatin association (2.7-fold enrichment), demonstrating that ATP is not required for initial chromatin recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 provide strong evidence through genetic rescue experiments (Table 2) and live-cell imaging (Figure 5A-D). The key observation is that the WalkerAB mutant associates with chromatin normally but cannot rescue viability, indicating that ATP is required for downstream function but not initial recruitment. The quantitative similarity in enrichment (2.7-fold for both WT and WalkerAB) is compelling. The lattice light-sheet microscopy provides high-quality temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The Orc1 N-terminal IDR is essential for viability and facilitates ATP-independent recruitment of ORC to mitotic chromosomes. In S2 cells, wild-type Orc1, Orc1WalkerAB, and Orc1\u0394BAH all show similar telophase chromosome recruitment (~2.3-2.6 fold enrichment), but Orc1\u0394IDR shows no recruitment (1.0-fold enrichment). An Orc1\u0394IDR transgene cannot rescue an Orc1 null allele.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 provide convergent evidence from cell culture imaging (Figure 5E-I) and fly genetics (Table 2). The complete loss of chromatin recruitment with \u0394IDR (C103-C104) contrasts with normal recruitment by WalkerAB and \u0394BAH mutants, establishing the specific requirement for the IDR. The genetic rescue data (C105) confirms essentiality. Together with the phase separation data, this strongly supports the model that IDR-mediated interactions drive initial ORC recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Previous work has shown that ORC-chromatin association is regulated by CDK-dependent phosphorylation in human and X. laevis systems. The major CDK phosphorylation sites map to the Orc1 IDR, and phosphorylation of these sites interferes with DNA binding by Drosophila ORC in vitro and requires cessation of CDK activity for ORC binding to mitotic chromosomes in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by appropriate citations to prior work (Findeisen et al. 1999; Lee et al. 2012; Li et al. 2004; Rowles et al. 1999; Remus et al. 2005; Baldinger and Gossen 2009). These claims establish important context for the phosphorylation experiments. The claims accurately represent the cited literature and provide mechanistic background for understanding how CDK regulates ORC function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Replication initiation factor IDRs are enriched for CDK phosphorylation sites. Orc1 has 16 putative CDK sites (7 full consensus [S/T]PX[K/R], 9 minimal [S/T]P), with 15/16 in the IDR. Cdc6 has 7 sites (4 full consensus), all in the N-terminal IDR. Cdt1 has 16 sites (9 full consensus), with 13/16 in the N-terminal IDR. Thus, initiator IDRs retain the vast majority of CDK phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by sequence analysis (Figure 6A). The identification and quantitation of CDK consensus sequences is straightforward bioinformatics. The concentration of CDK sites in IDRs (C115) is striking and provides a mechanistic link between cell cycle regulation and phase separation. However, not all predicted sites may be functional phosphorylation sites in vivo, and the analysis does not distinguish between sites that are actually phosphorylated vs. those that match the consensus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "CDK-dependent phosphorylation inhibits ORC phase separation. Pre-treatment of ORC with CDK1/CycA/ATP abolishes DNA-dependent depletion from the supernatant and prevents droplet formation, while treatment with CDK1/CycA or ATP alone has no effect. This demonstrates that ORC phase separation is directly inhibited by CDK phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by depletion assays (Figure 6C) and fluorescence microscopy (Figure 6D) with appropriate controls. The requirement for both CDK/CycA and ATP (C116) demonstrates specificity for phosphorylation rather than non-specific effects. The convergence of depletion and microscopy data strengthens the conclusion. This provides a direct mechanistic link between cell cycle regulation and phase separation control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "Cdc6 phase separation is inhibited in the presence of both CDK1/CycA and ATP, but is also inhibited by ATP alone, preventing assessment of a specific phosphorylation effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by depletion assay data (Figure 6E). The authors appropriately note that the ATP effect confounds interpretation of the phosphorylation result. This is honest reporting of an ambiguous result. The ATP inhibition of Cdc6 phase separation was previously observed (C66), so this is consistent with earlier findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "CDK/Cyclin phosphorylation directly inhibits liquid phase condensation by Cdt1. Phase separation by Cdt1 is fully inhibited by treatment with CDK1/CycA and ATP, but not by CDK1/CycA or ATP alone. This demonstrates that CDK/Cyclin phosphorylation can directly inhibit liquid phase condensation by replication initiation factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by depletion assay data (Figure 6F). The requirement for both CDK/CycA and ATP demonstrates specificity for phosphorylation. Together with the ORC data (C116-C118), this establishes a general mechanism for cell cycle regulation of initiator phase separation. The conclusion (C121) is appropriately broad, encompassing both ORC and Cdt1 results while acknowledging the ambiguity with Cdc6.",
+    "result_type": "MAJOR"
+  }
+]

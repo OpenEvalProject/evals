@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The paper establishes foundational concepts about place cells and remapping. Place cells in the hippocampus fire at specific spatial locations (place fields), collectively forming maps of environments. The hippocampus uses independent maps for different contexts, observable through remapping where place fields change location or disappear between contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C10-C13) represent well-established knowledge in hippocampal neuroscience, supported by foundational citations (O'Keefe 1976, Muller and Kubie 1987, Colgin et al. 2008). They provide necessary background rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The paper identifies a fundamental problem in the remapping literature: what constitutes a 'context change' has never been precisely defined, researchers have operationalized context in many different ways (sensory cues, geometry, task), and these different manipulations have produced inconsistent effects without a unified framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4, C6, C15-C18) accurately characterize the state of the field based on literature review. The assessment is supported by citations to multiple studies showing different operationalizations and inconsistent results. This establishes the motivation for the theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C20",
+      "C21",
+      "C46",
+      "C47",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The paper proposes a theoretical framework where remapping is formalized as hidden state inference. According to this view, remapping reflects subjective beliefs about hidden environmental states rather than objective properties. Each hippocampal map corresponds to a unique hidden state, activated proportionally to the posterior probability of that state, with animals using Bayesian inference to partition observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C7-C8, C20-C21, C46-C47, C121-C123) present the core theoretical proposal but are speculative. While the framework is mathematically coherent and builds on prior work (Fuhs & Touretzky 2007), it remains a computational-level theory without direct neural validation. The framework's value depends on its explanatory power demonstrated in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The model explains why remapping responds to cue constellations rather than individual cues. Simulations show that changing all cues leads to global remapping while changing subsets leads to partial remapping, consistent with empirical findings that individual cues exert weak effects and no single cue completely controls remapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 accurately describe empirical findings (O'Keefe & Conway 1978, Shapiro et al. 1997). Claims C60-C63 show the model qualitatively reproduces these patterns (Figure 2). However, the simulations use simplified abstract features and the quantitative match to data is not rigorously assessed. The result demonstrates conceptual consistency rather than precise prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The model explains experience-dependent remapping. In Lever et al. 2002, place cells initially showed limited remapping between square and circle boxes but remapped after extensive experience. Simulations show that early in training there is uncertainty about hidden states, but with more observations the two-state hypothesis becomes favored, explaining why remapping emerges gradually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 accurately describe empirical findings. Claim C70 and Figure 3C show the model qualitatively reproduces the gradual emergence of remapping through accumulation of evidence. The theoretical explanation (C69) that distinctions are acquired gradually due to simplicity bias is coherent. However, the simulation uses idealized 1D Gaussian observations rather than realistic spatial data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The model explains map stabilization over time. Empirical studies show intra-environment map similarity increases with experience (Law et al. 2016). The model interprets this as animals sharpening their representation of states with experience, becoming more confident in recognizing repetitions. Simulations show the one-state hypothesis becomes increasingly favored over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 accurately cite empirical findings. Claim C73 identifies an inconsistency in LTP-based explanations. Claims C74-C75 provide an alternative explanation with supporting simulations (Figure 4C). The model provides a coherent account, though again using simplified 1D observations. The distinction between this and Figure 3 (same vs. different states) is conceptually clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The model explains remapping due to non-sensory variables like movement direction. Markus et al. 1995 found greater remapping in directed vs. random foraging despite identical sensory cues. Simulations show the model assigns higher probability to two hidden states for directional observations (Von Mises distributions) than uniform observations, matching empirical patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 accurately describe empirical findings. Claim C79 and Figure 5C show the model reproduces the qualitative pattern. The use of circular statistics (Von Mises distributions) is appropriate for directional data. However, the simulation is again simplified and doesn't capture the full complexity of spatial trajectories in the actual experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The model addresses cue rotation experiments by incorporating reference direction inference. Simulations reproduce key findings: 180\u00b0 clean rotation leads to place field rotation with minimal remapping, 180\u00b0 dirty rotation shows more uncertainty, and 45\u00b0 dirty rotation shows intermediate behavior, all consistent with empirical observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82, C84, C86 accurately describe empirical findings from Rotenberg & Muller 1997. Claims C85, C87 show simulations qualitatively match these patterns (Figure 6). The extension to handle rotational ambiguity is conceptually sound. However, the model's prediction of greater heterogeneity in the dirty 180\u00b0 condition lacks empirical validation (C85 notes insufficient power in original study).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The model addresses inconsistent morph experiment results across labs. The key difference between Wills et al. 2005 (complete remapping) and Leutgeb et al. 2005b (partial remapping) is attributed to training duration. The model predicts both results can occur in the same lab by testing at different training stages, with simulations showing probability of assigning morphs to extreme states increases with training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C97 provide detailed analysis of experimental inconsistencies, accurately citing studies. The inference that training duration is key (C96-C97) is reasonable but speculative. Claim C98 makes a testable prediction, and C99 with Figure 7B shows supporting simulations. However, this is a post-hoc explanation of existing discrepancies rather than a priori prediction. The prediction (C98) remains untested, making this result uncertain despite internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The paper establishes that remapping categories (global, partial, rate, null) are not strictly exclusive. Studies reporting global remapping show non-zero correlations, studies reporting no remapping show imperfect overlap, rate remapping is always accompanied by partial remapping, and place cell responses are extremely heterogeneous across cells, animals, and laboratories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C22-C35) accurately synthesize findings from multiple empirical studies with appropriate citations. The conclusion that virtually all remapping is partial remapping (C33) is a reasonable inference from the reviewed evidence. This establishes important context for the theoretical framework but represents literature review rather than novel empirical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C105",
+      "C106"
+    ],
+    "result": "The model relates partial remapping and rate remapping through a distribution of responses across the place cell population. Analysis suggests the fraction of cells that completely remap correlates with magnitude of rate remapping across protocols, and increased uncertainty correlates with population heterogeneity, as observed when comparing Leutgeb et al. 2005b (partial remapping) to Wills et al. 2005 (global remapping).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 are definitional. Claim C103 makes an empirical observation about correlation across protocols in Leutgeb et al. 2005a, supported by citation and analysis. Claims C105-C106 propose a pattern linking uncertainty to heterogeneity with one example. However, Figure 8 uses Beta distributions as an illustrative heuristic rather than a mechanistic model. The proposed correlations (C103, C105) need systematic empirical validation across studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "The model explains animal-to-animal variability in remapping through variation in the concentration parameter \u03b1. This parameter controls the tendency to infer new hidden states and was previously used to model age-dependent and individual variability. Simulations show different \u03b1 values can produce different partitioning behaviors matching observed variability (e.g., Wills et al. 2005 where 2 of 6 animals showed different partitioning).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 accurately describe empirical observations of variability. Claim C113 correctly cites prior use of \u03b1 variation. Figure 9 demonstrates that \u03b1 variation can produce different partitioning outcomes. However, this is a proof-of-concept showing \u03b1 can capture variability, not a demonstration that \u03b1 differences actually explain observed variability. No independent measurement or validation of \u03b1 values across animals is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The model predicts that animals trained with higher variability in a feature will be more likely to assign novel observations with novel values in that feature to the same state (less remapping). This reflects greater 'tolerance' for deviations. Simulations demonstrate this effect, and a similar result was independently reported by Plitt & Giocomo 2019.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 makes a clear prediction demonstrated in Figure 10B. Claim C119 provides intuitive explanation. Claim C120 notes independent corroboration. This is a genuine a priori prediction of the model with supporting simulation. However, the prediction remains to be tested experimentally in the specific remapping context (though C120 suggests related findings exist). The result is supported as a model prediction but uncertain regarding empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The paper establishes theoretical background from learning theory. Extinction after conditioning doesn't erase associations but creates competing memories, with context serving as a retrieval cue. The hidden state inference framework explains phenomena like the partial reinforcement extinction effect, where partial reinforcement renders hidden states ambiguous, requiring more trials to infer different states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 accurately describe established learning theory (Pavlov, Bouton 2004). Claims C41-C45 describe the hidden state inference framework applied to learning, with appropriate citations (Gershman et al. 2010, 2017a; Courville et al. 2006). This provides important theoretical context linking the current work to prior applications of the framework, but represents background rather than novel contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The paper positions its contribution relative to prior work. The model builds on Fuhs & Touretzky 2007 but emphasizes the role of uncertainty and its connection to partial remapping, rate remapping, and population heterogeneity. The Bayesian nonparametric model has been previously used to explain other hippocampal-dependent phenomena, and here recapitulates a broad range of remapping phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 accurately acknowledge prior work and distinguish the current contribution. Claims C50-C51 state explanatory scope demonstrated in Results. Claims C124-C127 summarize the theoretical framework and its scope. These claims accurately characterize the work's relationship to prior literature and its contributions, supported by the simulation results presented throughout.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C19"
+    ],
+    "result": "The sensitivity of place cells to context changes is consistent with studies implicating the hippocampus in context-dependent behavior, including fear conditioning where animals freeze in contexts inferred to be the same as shock contexts, even if not physically identical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C14, C19) accurately cite relevant literature (Holland & Bouton 1999, Gershman et al. 2010, Chang & Liang 2017) linking hippocampal remapping to broader context-dependent behavior. This establishes the behavioral relevance of remapping, though the paper acknowledges in Discussion that causal connections remain to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C55",
+      "C64"
+    ],
+    "result": "The hidden state framework can resolve puzzles about remapping. As animals collect more observations, the posterior progressively concentrates on single explanations. Partial remapping reflects inherent uncertainty about whether observations are drawn from the same distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 states the overall goal, demonstrated through multiple simulation results. Claim C55 describes a fundamental property of Bayesian inference. Claim C64 provides the key theoretical interpretation linking uncertainty to partial remapping. These claims are supported by the simulation results throughout the paper, though the framework remains at the computational level without neural implementation.",
+    "result_type": "MAJOR"
+  }
+]

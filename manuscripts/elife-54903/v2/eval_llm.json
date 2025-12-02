@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Adult Maf cDKO mice exhibit spontaneous non-motor epileptic activity characterized by spike-and-wave discharges similar to absence-type epilepsy. The authors propose this epileptic phenotype is multifaceted, involving overall reductions in MGE-derived interneurons and dysregulation of genes including Mef2c, Snap25, and Npy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C131 are directly supported by EEG recordings shown in Figure 1\u2014figure supplement 1 demonstrating spike-and-wave discharges in cDKO mice. Claims C132-C134 provide mechanistic context through citations to prior work and are consistent with the observed interneuronopathy. The statistical comparison (C23) shows significant differences between WT and cDKO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Single-cell RNA-sequencing of P0 WT and cDKO neocortices identified 24 clusters including MGE-derived interneurons (cluster 1). Differential expression analysis revealed 81 dysregulated genes in MGE interneurons, with 47 upregulated (including Sst, Nrp1, Pnoc, Npy) and 34 downregulated (including Maf, Mafb, Mef2c, Cxcr4, Snap25). No transcriptomic changes were observed in non-MGE cell types, suggesting cell-autonomous effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 are well-supported by scRNA-seq data presented in Figure 1 and supplementary figures. UMAP visualization (C24, C29) clearly shows cluster separation for MGE interneurons but not other cell types (C27). Differential expression analysis (C30-C32) is documented in Figure 1\u2014figure supplement 5. Validation by FISH and immunofluorescence for key genes (C36-C37) strengthens these findings. Gene ontology analysis (C33) provides functional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Mef2c was the third most downregulated gene while Sst was the most upregulated gene in Maf cDKO MGE interneurons. Validation by immunofluorescence confirmed reduced MEF2C expression across cortical layers in P2 cDKOs, and FISH confirmed increased Sst+ cortical interneurons. Birth-dating experiments showed >3-fold increase in Sst+ interneurons born at E15.5, indicating overproduction across development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are strongly supported by converging evidence from scRNA-seq (C34-C35), immunofluorescence (C36), FISH (C37), and EdU birth-dating (C38). Statistical analyses are provided for all quantifications with appropriate p-values. The conclusion of persistent overproduction (C39) is a reasonable inference from the temporal data showing increased Sst+ INs at multiple developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Maf and Mafb are genetically upstream of Mef2c and promote its expression to drive PV+ interneuron fate specification. MGE transplantation assays confirmed reduced PV+ interneurons in cDKO cells, and Mef2c transfection rescued this deficit, correcting the SST/PV ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are directly supported by transplantation data in Figure 2 with appropriate statistical analysis (Chi-square test, p<0.0001). The genetic relationship (C41) is a reasonable inference from the observation that Mef2c is reduced in cDKOs. Claim C40 is supported by citation to prior work. The rescue experiment (C44) provides strong functional evidence for the proposed pathway (C45). However, C42 is labeled as speculation/hypothesis, which is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors identified candidate markers of immature PV+ interneurons by comparing Sst+ and Sst- MGE-derived interneurons. Mef2c, Elmo1, Igfbp4, and Sp9 are enriched in Sst- populations, particularly in the hippocampus. This represents the first identification of genes almost exclusively expressed in Sst- MGE-derived immature hippocampal interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by scRNA-seq analysis (Figure 3A) and validated by RNAscope with statistical comparisons (Figure 3). The hypothesis that Sst- cells represent future PV+ interneurons (C46) is reasonable based on lineage tracing data (C47, cited from prior work). The specificity of markers, particularly Mef2c in hippocampus (C49, p<0.0001), is well-documented. Claim C51 regarding novelty is appropriately qualified as \"likely\" the first such study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Reduced Mef2c and Snap25 expression underlie neurite outgrowth defects in Maf cDKO interneurons. Primary culture experiments showed that transfection of Maf, Mef2c, or Snap25 each rescued neurite complexity defects in cDKO interneurons to WT levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by Sholl analysis data in Figure 4 showing reduced neurite complexity in cDKO and rescue by all three genes. Claim C52 is supported by citations to prior literature. The conclusion (C56) that Mef2c and Snap25 are downstream of Maf/Mafb is a reasonable inference from the rescue experiments, though alternative explanations (e.g., parallel pathways) are not fully excluded. Sample sizes appear adequate (N=3-4 per group, 15-20 neurons analyzed).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Maf and Mafb have post-mitotic functions in regulating interneuron morphology. Deletion using Sst-IRES-Cre (post-mitotic) or postnatal deletion in culture both resulted in neurite outgrowth defects. Maf, Mef2c, and Snap25 each rescued neurite defects in postnatal cDKO interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C59 are supported by Sholl analysis data from Sst-IRES-Cre experiments (Figure 4\u2014figure supplement 2) and postnatal deletion experiments (Figure 4). The rescue experiments (C61) are documented in Figure 4K-R. The inference of post-mitotic function (C58, C60) is well-supported by the experimental design, which specifically tests function after cell cycle exit. The conclusion (C62) is appropriately qualified as \"likely\" given the rescue data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Prepronociceptin (Pnoc) is identified as a hippocampal interneuron-specific marker. In P2 WTs, Pnoc+ cells are largely restricted to hippocampus, with ~40% being tdTomato+ (MGE/POA lineage) and few being Htr3a+ (CGE lineage). Maf cDKOs show ectopic Pnoc expression in neocortex and increased Pnoc+ cells in hippocampus, consistent with increased hippocampal interneuron density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C72 are well-supported by FISH data in Figure 5 with appropriate statistical analyses (t-tests with p<0.01 to p<0.0001). The spatial restriction of Pnoc to hippocampus in WTs (C65) is clearly shown in Figure 5G. Lineage analysis (C66-C67) provides evidence for MGE/POA origin. The increased Pnoc expression in cDKO (C69-C70) is quantified across regions. The conclusion (C72) is a reasonable inference supported by converging evidence from Pnoc, Sst, and tdTomato quantifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Maf and Mafb repress hippocampal interneuron generation. Birth-dating experiments showed ~2-fold increase in hippocampal interneuron generation at E12.5 and ~2.5-fold increase at E15.5 in cDKOs, across all hippocampal subregions. In contrast, cortical interneuron generation showed a trend toward decrease at E12.5. The MGE normally generates hippocampal/cortical interneurons in a 1:2 ratio, but cDKOs overproduce hippocampal interneurons, especially at E12.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 are supported by comprehensive birth-dating experiments using BrdU (E12.5) and EdU (E15.5) with Lhx6 FISH (Figure 6). Statistical analyses are provided for all quantifications (t-tests with p<0.01 to p<0.0001). The regional specificity (C77, C80) is documented across CA1, CA3, and DG. The conclusion (C83) that hippocampal interneuron overproduction occurs \"at the expense\" of cortical interneurons is appropriately qualified as a hypothesis (\"perhaps\") given the trend data for cortical interneurons (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Cxcr4 expression is reduced in Maf cDKO MGE interneurons, starting as early as E15.5. FISH at P2 showed clear reduction especially in hippocampus. While this provides a potential mechanism for premature interneuron entrance into the cortical plate, reduced Cxcr4 alone probably does not explain increased hippocampal interneurons, as Cxcr4 null mice do not show this phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by scRNA-seq data (Figure 1\u2014figure supplement 5) and validated by FISH (Figure 1\u2014figure supplement 6) with statistical analyses (p=0.0159 for hippocampus, p<0.0001 for neocortex). The inference regarding migration defects (C116) is reasonable given prior work cited. The conclusion (C118) that Cxcr4 reduction alone is insufficient is appropriately cautious and supported by comparison to Cxcr4 null mice (C117, cited from prior work).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Nrp1 is upregulated in Maf cDKO, particularly in hippocampus. While Nrp1 overexpression alone is not sufficient to promote increased hippocampal/cortical interneuron ratio, the authors propose that interactions between NRP1 and CXCR4 may guide interneuron migration to hippocampus, based on analogies to other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C120 are supported by differential expression analysis and FISH data (Figure 1\u2014figure supplements 5 and 7). Claims C121-C129 provide relevant background from prior literature. However, the key mechanistic claim (C130) is speculative and not directly tested. The negative result from Nrp1 overexpression experiments (C123, mentioned in discussion but data not shown) weakens the proposed mechanism. The analogy to other systems (breast cancer, visual system) may not be directly applicable to interneuron development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors propose a transcriptional pathway where Maf/Mafb drive Mef2c expression to promote PV+ interneuron production prenatally and interneuron morphological maturation postnatally. This pathway may operate in conjunction with signaling hubs such as MTOR/MAPK/RYK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 provide established background on Mef2c from prior literature. Claims C87, C89, C96 are directly supported by rescue experiments (Figures 2 and 4). Claims C90-C91 are supported by birth-dating data. The proposed pathway (C92) is a reasonable synthesis of the experimental findings, though direct evidence of transcriptional regulation (e.g., ChIP-seq, promoter analysis) is not provided. The speculation about signaling pathways (C93) is appropriately qualified and supported by citations. Claims C95 and C97 regarding persistent postnatal function are well-supported by the postnatal deletion experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Snap25 is part of the SNARE complex regulating vesicle fusion and neurite branching. Snap25 expression is decreased in Maf cDKO interneurons, and expressing Snap25 rescued neurite outgrowth defects in both prenatal and postnatal cDKO interneurons. The authors propose that Snap25 and Mef2c may regulate each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 provide established background supported by citations. Claim C100 is supported by scRNA-seq data (Figure 1\u2014figure supplement 5). Claim C101 is directly supported by rescue experiments in Figure 4. The conclusion (C102) that Maf/Mafb-driven expression of Snap25 is critical is well-supported by the rescue data. However, the speculation about mutual regulation between Snap25 and Mef2c (C103) is not directly tested and remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Maf and Mafb are key regulators of disease genes responsible for balanced MGE SST/PV interneuron production (Mef2c), interneuron morphological maturation (Mef2c, Snap25), and balanced cortical/hippocampal interneuron production (Cxcr4, Nrp1). The authors report that ~22% of Nkx2.1-Cre lineage cortical interneurons are Sp9+ at P2, with ~60% of PV candidate hippocampal interneurons being Sp9+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 is a reasonable summary of the study's findings, synthesizing the various experimental results. Claims C136-C138 regarding Sp9 expression are supported by RNAscope quantification data mentioned in the discussion. The novelty claim (C137) is appropriately stated. The acknowledgment that 22% may be an underestimate (C138) shows appropriate scientific caution. However, the Sp9 data appears to be primarily in the discussion without detailed presentation in main figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims establishing prior work: Maf and Mafb have compensatory roles in repressing SST+ interneuron production in MGE secondary progenitors. Maf/Mafb conditional deletion decreases survival and changes physiological properties of MGE-derived cortical interneurons. Loss of Maf/Mafb leads to overproduction of SST+ interneurons at expense of PV+ interneurons, with progressive interneuron loss reaching ~70% by adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C17-C22 are all explicitly stated as being from prior work (Pai et al., 2019) and are appropriately cited throughout. These claims provide essential context for the current study. While not new findings in this manuscript, they are accurately represented and properly attributed. The evidence type is correctly labeled as CITATION and DATA from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims on interneuron biology: Interneuron pathologies are hypothesized to underlie symptoms of autism, epilepsy, and schizophrenia through disrupted circuit inhibition. Cortical interneurons are generated in MGE, CGE, and POA, with distinct molecular markers. Hippocampal interneurons share similar properties with cortical interneurons but lack clear distinguishing markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 represent established knowledge in the field, appropriately cited to prior literature (Lim et al., 2018; Rubenstein and Merzenich, 2003; Sohal and Rubenstein, 2019; Yizhar et al., 2011; Gelman et al., 2011; Pelkey et al., 2017). These claims provide necessary background context and are accurately represented. The gap in knowledge regarding hippocampal interneuron markers (C16) sets up one of the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion claims on Pnoc as hippocampal interneuron marker: The molecular program distinguishing cortical from hippocampal interneurons remains largely unknown. The authors identify Pnoc as a unique marker distinguishing hippocampal from cortical interneurons, with expression widely and robustly in hippocampal but not cortical interneurons. Loss of Maf/Mafb leads to increased Pnoc expression and disproportionate hippocampal interneurons, suggesting Maf/Mafb control cortical/hippocampal interneuron regional fate determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C112 synthesize the Pnoc findings in the discussion. The gap in knowledge (C104) is appropriately stated. The identification of Pnoc as a marker (C105, C108) is well-supported by FISH data in Figure 5. Prior work on Pnoc (C106-C107) is appropriately cited. The increased expression in cDKO (C109) is supported by quantification. The conclusions about Maf/Mafb controlling regional fate (C110-C112) are reasonable inferences from the data, representing a novel finding of the study.",
+    "result_type": "MAJOR"
+  }
+]

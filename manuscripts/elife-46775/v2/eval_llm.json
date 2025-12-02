@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C76",
+      "C77"
+    ],
+    "result": "Four peptidic inhibitors (S37, S61, S62, and S71) were computationally designed using Rosetta-based modeling to bind the NACore steric zipper structure and cap \u03b1-synuclein fibril ends. S37, S61, and S62 are predicted to bind both ends of the NACore protofilament, while S71 binds only one end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 and C76-C77 describe a well-documented computational design approach using established structural templates (PDB ID: 4RIL) and Rosetta software. The design rationale is clearly stated, and the predicted binding properties of the four inhibitors are explicitly shown in Figure 1. The methodology is appropriately cited and the computational predictions provide a foundation for subsequent experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Surface plasmon resonance measurements demonstrate that the four inhibitors bind \u03b1-synuclein fibrils with varying affinities: S62 (Kd = 0.5 \u03bcM), S61 (Kd = 9.28 \u03bcM), S71 (Kd = 10.9 \u03bcM), and S37 (Kd = 328 \u03bcM). The improved designs (S61, S62, S71) show 6-11-fold selectivity for fibrils over monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 present direct experimental measurements from SPR experiments shown in Figure 2A-B. The binding affinities are quantitatively determined using standard 1:1 binding models, and the selectivity for fibrils over monomers is demonstrated through comparative measurements. The data are internally consistent with the computational predictions, showing S62 as the highest affinity binder. Technical replicates are mentioned in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "All four inhibitors reduce \u03b1-synuclein aggregation in vitro as measured by ThT fluorescence, with S62 and S61 showing efficacy at equimolar concentrations while S37 and S71 require 10-fold excess. Electron microscopy confirms that inhibitors produce sparse, short, bundled fibrils compared to abundant long fibrils formed by \u03b1-syn alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are well-supported by complementary ThT fluorescence data (Figure 2C) and electron microscopy observations (Figure 2D). The dose-response relationship correlates with the SPR binding affinities, providing internal consistency. The morphological changes observed by EM provide independent confirmation of the inhibitory effects. Multiple technical replicates are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A cell culture seeding model was established where sonicated \u03b1-synuclein fibrils efficiently seed aggregation of endogenous YFP-labeled \u03b1-syn in HEK293 cells, producing fluorescent puncta that increase in size and number over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe the validation of the cell culture model system. The seeding capacity of sonicated fibrils is demonstrated in Figure 2\u2014figure supplement 1B, and the time-dependent increase in puncta is shown in Figure 3\u2014figure supplement 1C. This establishes a functional assay for testing inhibitor efficacy in a cellular context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "When \u03b1-synuclein is aggregated in the presence of inhibitors, all four show dose-dependent reduction in cellular seeding in both WT and A53T cell lines. S62 is effective at equimolar concentrations, S61 at 2-fold excess, while S71 and S37 require 5-10-fold excess.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by quantitative cell culture data in Figure 3B-E with statistical analysis (two-way ANOVA, p<0.01-0.0001). The dose-response relationships are consistent with the SPR binding affinities and in vitro aggregation data, demonstrating internal consistency across multiple assays. The results are replicated in both WT and A53T cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Control experiments demonstrate that the inhibitors do not self-aggregate or seed \u03b1-syn aggregation when incubated alone, and scrambling the binding motif sequence abolishes inhibitory activity, confirming sequence specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 present essential negative controls. ThT fluorescence (Figure 4A), electron microscopy (Figure 4B), and cell seeding assays (Figure 4C-D) all show no aggregation or seeding by inhibitors alone. The scrambled peptide control (Figure 4\u2014figure supplement 1) demonstrates sequence specificity, ruling out non-specific effects of the tags or general peptide properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "When pre-formed \u03b1-synuclein fibrils are co-transfected with inhibitors, S62 and S61 reduce cellular seeding but require 25-100-fold molar excess. These inhibitors also cause fibril bundling into thick morphologies, while S71 and S37 show minimal effects on both seeding and morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by cell culture data (Figure 5B-E) and electron microscopy (Figure 5\u2014figure supplement 1). The higher concentrations required compared to the co-aggregation experiments (C49) are explained by the need to overcome secondary nucleation. The correlation between morphological changes and reduced seeding provides mechanistic insight, though the authors acknowledge the mechanism is not fully understood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "\u03b1-Synuclein fibrils extracted from MSA patient brain tissue (but not control tissue) contain fibrillar structures by EM and robustly seed aggregation in A53T \u03b1-syn expressing HEK293 cells but show low seeding in WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by Western blot (Figure 6B), electron microscopy (Figure 6C, Figure 6\u2014figure supplement 1), and cell seeding assays (Figure 6D, Figure 6\u2014figure supplement 2). The use of two independent MSA samples and an age-matched control strengthens the findings. The differential seeding in A53T vs WT cells is consistent with the known higher aggregation propensity of the A53T mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "All four inhibitors significantly reduce cellular seeding by MSA patient-derived \u03b1-synuclein fibrils, with S62 showing the highest potency followed by S71, S37, and S61.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by quantitative cell culture data from two independent MSA samples (Figure 7B-E) with statistical analysis (two-way ANOVA, p<0.01-0.0001). Notably, the rank order of potency differs from that observed with recombinant fibrils, suggesting potential strain-specific effects. This demonstrates clinical relevance but also highlights the complexity of \u03b1-syn polymorphs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C68",
+      "C73"
+    ],
+    "result": "The efficacy of the inhibitors suggests that pathogenic \u03b1-synuclein seeds contain steric zipper structures, that A53T fibrils are structurally similar to WT fibrils, and that secondary nucleation is a common mechanism of amyloid aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60, C68, and C73 are inferences rather than direct observations. While the inhibitor efficacy is consistent with the presence of steric zippers in pathogenic seeds (C60), alternative explanations are not fully excluded. The structural similarity of A53T and WT fibrils (C68) is inferred from similar inhibitor efficacy but lacks direct structural evidence. The secondary nucleation hypothesis (C73) is supported by analogy to Tau inhibitors but requires more mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Nearly 100 inhibitor designs were tested through iterative optimization, revealing that tag location (N- vs C-terminus), modification type (Trp vs Arg at Thr72), and linker sequences affect inhibitor efficacy despite retaining the same core binding motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 describe the optimization process and structure-activity relationships. While the full dataset of ~100 designs is not shown, the observations about tag location (C62), modification specificity (C63), and the variability among S37/S61/S62 (C64) are consistent with the presented binding and functional data. This demonstrates rational design principles, though more detailed structure-activity data would strengthen the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The cell culture model does not show acute cell death upon puncta formation, and a single administration of inhibitors remains effective for up to 7 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by cell growth measurements (Figure 3\u2014figure supplement 1, right) and the 7-day time point used in MSA experiments. However, the lack of acute toxicity does not address potential long-term or subtle toxic effects. The 7-day efficacy is demonstrated but the mechanism of sustained activity is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The authors suggest that the inhibitors could be used diagnostically to identify different \u03b1-syn strains, or that a cocktail of inhibitors targeting different polymorphs might be therapeutically effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 are speculative suggestions for future applications. While the differential efficacy against MSA-derived vs recombinant fibrils provides some support for strain-specific interactions, these remain untested hypotheses. The diagnostic application (C74) would require extensive validation, and the cocktail approach (C75) is purely speculative without experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establish that synucleinopathies are characterized by \u03b1-synuclein aggregation, that NACore (residues 68-78) is critical for aggregation, that \u03b1-syn forms steric zipper structures, and that prion-like seeding mechanisms contribute to disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 provide established background knowledge supported by appropriate citations to the literature. These claims set the scientific context for the study and are generally well-accepted in the field. The citations appear appropriate and the claims accurately represent prior work, though the original sources were not independently verified for this evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "S62 causes 25-65-fold decrease in ThT fluorescence during \u03b1-syn aggregation, while S61 causes 8-15-fold decrease, demonstrating S62's superior potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 quantify the relative potencies of S62 and S61 based on ThT fluorescence data shown in Figure 3\u2014figure supplement 2. The measurements are consistent with the SPR binding affinities and cell culture results, providing internal consistency across multiple assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The inhibitors prevent \u03b1-synuclein aggregation in vitro and in cell culture with binding affinities of 0.5 \u03bcM to fibril seeds, and show efficacy against human patient-derived \u03b1-syn fibrils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 summarize the main findings of the study. These are well-supported by the comprehensive data from SPR (C24-C27), in vitro aggregation assays (C29-C34), cell culture experiments (C38-C41, C48-C49), and MSA patient-derived fibril studies (C56-C57). The 0.5 \u03bcM binding affinity specifically refers to S62, the most potent inhibitor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C69",
+      "C71",
+      "C72"
+    ],
+    "result": "Supporting observations include that \u03b1-syn fibrils specifically seed \u03b1-syn (not Tau or A\u03b2), that the A53T mutation increases aggregation propensity, and that Tau inhibitors also require high molar excess concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C69, C71, and C72 are supported by appropriate citations to the literature (Sanders et al. 2014; Flagmeier et al. 2016; Li et al. 2001; Narhi et al. 1999; Seidler et al. 2018). These claims provide context for the experimental design choices and interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Methods describe protein expression in E. coli BL21(DE3), commercial synthesis of inhibitors at >98% purity, use of validated HEK293 cell lines from Dr. Marc Diamond, and extraction of aggregates from human brain tissue using PTA/sarkosyl precipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 describe standard methodological details that are appropriately documented. The cell line validation is cited to Sanders et al. 2014, the extraction protocol to Woerman et al. 2015 and Prusiner et al. 2015, and the inhibitor purity is specified. These methodological claims are adequately supported for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

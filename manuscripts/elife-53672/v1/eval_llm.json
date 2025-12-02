@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "FcpA and FcpB adopt unique protein folds unrelated to known flagellin structures. FcpA from L. biflexa was crystallized in three space groups revealing an all-helical V-shaped architecture, while FcpB from L. interrogans adopts a \u03b2-sheet structure with distant homology to the Mam33 family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 are well-supported by X-ray crystallography data presented in Table 2 and Figure 1C-F. The structures were solved using standard crystallographic methods with appropriate validation metrics (R-work, R-free, Ramachandran statistics). The novelty of FcpA fold is validated by structural alignment algorithms (C33), and FcpB homology to Mam33 family is appropriately cited (C35-C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Cryo-electron tomography and sub-tomogram averaging of wild-type L. biflexa flagellar filaments revealed a ~10 \u00c5 resolution structure showing concentric protein layers with an asymmetric sheath localized to the outer (convex) curvature. The inner core layers resemble flagellin D0/D1 domains, consistent with FlaB composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C50 are supported by the cryo-tomography data (Figure 2, Figure 2\u2014figure supplements 1-5). The methodological approach is well-justified given the curved filament geometry (C40). Resolution estimates (~10 \u00c5 average, with anisotropy from 9-18 \u00c5) are documented with FSC curves. The asymmetric sheath localization (C48-C49) is clearly visible in cross-sections and contrasts with symmetric exoflagellar structures (C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Computational docking identified FcpA and FcpB localization on the convex side of the filament sheath, with FcpA forming six protofilaments in an inner layer and FcpB forming four protofilaments in an outer layer. This arrangement follows an 11-protofilament helical lattice and was validated by comparison with fcpB- mutant reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 are supported by convergent results from two independent docking strategies (SITUS and Rosetta-based approaches) as described in Methods. The 11-protofilament arrangement (C53) is consistent with known flagellar structures. Validation using fcpB- mutant data (C58, Figure 2H-I) provides strong independent confirmation of FcpB localization, showing four missing density features that coincide with predicted FcpB positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Filaments from fcpA- mutants are significantly smaller in diameter than wild-type and fcpB- filaments, indicating loss of both FcpA and FcpB from the filament.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by direct diameter measurements from cryo-EM images (Figure 5\u2014figure supplement 1B) and are consistent with prior biochemical studies (C60, Wunder et al., 2018). The observation that FcpA deletion leads to FcpB loss is mechanistically explained by the structural model showing FcpB is too far from the core to bind directly (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Additional sheath features on the filament concave side manifest as two rows of elongated density units separated by a groove. Comparison of wild-type and fcpB- maps suggests these features include FlaA1 and/or FlaA2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by direct observation in the tomographic maps (Figure 2C, 3A, Figure 3\u2014figure supplement 4). The assignment to FlaA proteins (C63) is a reasonable inference based on: (1) FlaA is known to reside in the sheath (C62, Li et al., 2008), (2) missing density in fcpB- mutant maps (Figure 2I), and (3) these are the only other known filament components. However, definitive localization awaits atomic structures of FlaA proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The filament core exhibits 11-fold helical symmetry matching that of Salmonella flagella. After 11-fold averaging to compensate for missing wedge artifacts, the core structure shows homology with flagellin D0/D1 domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by 3D auto-correlation analysis (C66, Figure 3\u2014figure supplement 5) that objectively identified 11-fold symmetry. The symmetry-averaged structure (C68, Figure 3B-C, Figure 3\u2014figure supplement 6) shows clear \u03b1-helical features and homology to Salmonella D0/D1 domains. The approach appropriately addresses the missing wedge artifact (C65) documented in Figure 1\u2014figure supplement 1 and Figure 2\u2014figure supplement 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The atomic model reveals specific protein-protein interfaces: FcpA arms contact predicted FlaB loop regions, FcpB presents conserved surface patches toward FcpA, and complementary electrostatic potentials map onto the FcpA:FcpB interface. FcpB sites are too distant from the core to bind directly, explaining why FcpA deletion causes FcpB loss. Evidence suggests FcpA may also interact with FlaA proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C83 are supported by the integrated atomic model (Figure 4) combining crystallographic structures with the cryo-EM map. The FcpA-FlaB interface (C70-C73) is structurally reasonable, with FcpA arms positioned near predicted FlaB loops. FcpA-FcpB interactions (C75-C78) are supported by conserved surface patches (Figure 4E), complementary electrostatics (Figure 1E-F), and consistency with crystal packing interfaces (C77). The explanation for FcpA-dependent FcpB binding (C79-C80) is mechanistically sound and consistent with prior genetics (Wunder et al., 2018). FcpA-FlaA interaction (C81-C83) is supported by map density and pull-down assays (Sasaki et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Trajectory analysis reveals progressive filament straightening as sheath components are lost. Wild-type filaments show uniform high curvature (~5 \u03bcm\u207b\u00b9), fcpB- filaments show mixed populations (~50% wild-type curvature, remainder \u22643 \u03bcm\u207b\u00b9), and fcpA- filaments show further reduction in curvature, with 'thick' segments (~170 \u00c5 diameter, partial sheath) maintaining ~3 \u03bcm\u207b\u00b9 curvature while 'thin' segments (~120 \u00c5 diameter, unsheathed core) show lower curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 are strongly supported by quantitative curvature analysis of 3D filament trajectories (Figure 5A-C, Methods section on curvature analysis). The progressive straightening trend is clear and statistically robust given the large number of analyzed segments (wild-type: 84 filaments; fcpB-: 14 filaments; fcpA-: 8 filaments). The correlation between diameter and curvature in fcpA- samples (C89-C91) provides additional mechanistic insight. Results extend prior observations (C85, Wunder et al., 2016a, 2018) with quantitative structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The Leptospira flagellum exhibits a novel asymmetric subunit arrangement not previously observed in exoflagellated bacteria or other spirochetes, and this asymmetric architecture is functionally linked to flagellar supercoiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 represent the central conclusions of the manuscript, supported by the convergence of structural data (asymmetric sheath localization, C48-C50), mutant analysis (progressive straightening with sheath loss, C84-C91), and mechanistic modeling (C112-C116). The novelty is well-established by comparison with symmetric exoflagellar structures (C50) and prior spirochete studies that assumed helical symmetry (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors propose that sheath protein binding initiates an allosteric transition of the core to a highly curved supercoil geometry. The mechanism involves FcpA preferentially binding to longitudinally expanded protofilaments on the outer curvature, creating a helical symmetry mismatch that stabilizes the supercoiled geometry, with FcpB further reinforcing this arrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C116 present a mechanistic model that is plausible and consistent with the structural data (particularly the 3 \u00c5 difference in axial repeat between inner and outer curvature, C114). However, this remains a proposed mechanism (C113, C115, C116 use speculative language: 'potential mechanism,' 'if FcpA preferentially binds,' 'would be ideally suited'). Direct experimental validation of the allosteric transition, binding preferences, and symmetry mismatch mechanism would require additional biophysical studies (e.g., binding assays with different core conformations, mutational analysis of proposed interfaces).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The asymmetric sheath locks the core into a single, nondegenerate shape, contrasting with homopolymer flagella that can interconvert between 11 equivalent conformations. This prevents the filament from propagating helical waves without rotating or rotating without propagating waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 present logical inferences from the asymmetric structure. The reasoning is sound: an asymmetric sheath breaks the rotational degeneracy inherent in symmetric homopolymer filaments (C118, supported by prior theory, Klug 1967). The functional consequence (C119-C120) follows logically from this structural constraint. While direct experimental demonstration of wave propagation behavior would strengthen these claims, the structural logic is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The application of subtomogram averaging to supercoiled filaments represents a methodological innovation, contrasting with prior studies that used straight mutant filaments or computationally straightened supercoiled structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 accurately characterize the methodological contribution. The customized subtomogram averaging procedure (Figure 2\u2014figure supplements 1-2) successfully handled the curved geometry that precluded standard single-particle methods (C40). The comparison with prior approaches is fair: most flagellar structures used straight mutants (C97), one spirochete study computationally straightened the filament (C98, Liu et al., 2010), and recent hook structures (C99) used methods unsuited for large-diameter supercoils in unfavorable orientations (C100).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Wild-type Leptospira filaments exhibit a flattened, left-handed supercoil with much higher curvature (~5 \u03bcm\u207b\u00b9) than exoflagellar polymorphs (0-3 \u03bcm\u207b\u00b9). The geometry resembles the 'Coiled' exoflagellar form but with smaller diameter (0.45 \u03bcm vs. 1.0 \u03bcm). Loss of sheath proteins reduces curvature toward values consistent with exoflagellar polymorphs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are supported by quantitative measurements (Figure 5A, Figure 5\u2014figure supplement 3) and appropriate comparisons with literature values for exoflagellar polymorphs (Calladine 1975, Kamiya and Asakura 1976). The supercoil parameters (pitch, diameter, curvature) are clearly documented. The comparison is fair and highlights the distinctive geometry of Leptospira filaments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Despite losing curvature, fcpA- filaments remain more curved than straight TMV or amyloid filaments. The 'thin' fcpA- population maintains ~2 \u03bcm\u207b\u00b9 curvature, falling within the range of exoflagellar polymorphs (0-3 \u03bcm\u207b\u00b9), suggesting the Leptospira core may retain polymorphic supercoiled behavior similar to exoflagellates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 are supported by quantitative curvature comparisons (Figure 5C). The comparison with TMV/amyloid filaments (C107-C109, citing Rohou and Grigorieff 2014) appropriately distinguishes inherent supercoiling from artifacts. The inference about polymorphic behavior (C111) is reasonable given the curvature range and occasional observation of sinusoidal fcpA- filaments (Figure 5\u2014figure supplement 4), though direct demonstration of polymorph interconversion would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The asymmetric sheath may reinforce the endoflagellum for high torque loads, particularly important in Leptospira which has only a single flagellum per cell end (unlike other spirochetes with multiple flagella). This complements other spirochete adaptations including extra-large motors and covalently crosslinked hooks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 present a functional hypothesis supported by appropriate citations. The importance of curvature and stiffness for spirochete motility is established (C121, Berg et al., 1978; Dombrowski et al., 2009). The structural reinforcements in spirochetes (C123-C124, Beeby et al., 2016; Miller et al., 2016) and unique single-flagellum configuration in Leptospira (C125, Charon et al., 2012) are well-documented. The proposed reinforcement function (C126) is a reasonable inference, though marked as speculative ('may therefore be').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Images of fcpA- filaments suggest remaining sheath components (likely FlaA1/FlaA2) are capable of asymmetric binding, preferentially on the concave side. Since FlaA orthologs are found in all spirochetes and affect filament diameter and pitch, asymmetric sheath arrangement may be a general feature contributing to supercoiling and motility across spirochetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C132 present reasonable inferences but with important limitations. The asymmetric binding of remaining components in fcpA- filaments (C127) is supported by images (Figure 3, Figure 5\u2014figure supplement 1, Table 3), though the authors acknowledge inability to localize FlaA proteins definitively (C128). The generalization to other spirochetes (C132) is plausible given FlaA conservation (C129) and effects on filament geometry (C130-C131, Li et al., 2000a; Lambert et al., 2012), but remains speculative without direct structural data from other spirochetes. The claim is appropriately hedged ('may be a general feature').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establishing spirochete biology, flagellar composition, and prior genetic studies of Leptospira flagellar components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C29 provide essential background context, all appropriately supported by citations to prior literature. These establish: spirochete motility mechanisms (C1-C2, C6-C12), Leptospira-specific features (C13-C18), flagellar composition complexity (C19-C22), and genetic studies of FlaA, FlaB, FcpA, and FcpB (C23-C29). All claims are well-documented in the literature and provide necessary context for interpreting the structural results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Leptospira flagellar filaments are coated by a highly asymmetric, multi-component sheath layer that contrasts with flagellin-only homopolymers in exoflagellated bacteria. Distinct sheath proteins localize to inner and outer curvatures to define supercoiling geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the main findings stated in the abstract, which are fully supported by the detailed structural and functional data presented throughout the manuscript (particularly results groups 1-8 above). These summary claims accurately reflect the major discoveries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The supercoiling control mechanism in Leptospira contrasts with factors in other bacteria (buffer composition, torsional strain from rotation). Prior studies focused on simpler exoflagellar homopolymers with different functional roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 provide appropriate context for the novelty of the findings. The comparison with other supercoiling mechanisms (C94, Calladine et al., 2013) is accurate, and the distinction from prior work on exoflagellates (C95) is fair and well-supported.",
+    "result_type": "MINOR"
+  }
+]

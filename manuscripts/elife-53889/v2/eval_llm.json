@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Degradation of ME31B during the maternal-to-zygotic transition is triggered by egg activation through the PNG kinase complex (PNG, GNU, and PLU), but does not require fertilization. ME31B-GFP fluorescence decreases from 2-3 hr after egg laying in control embryos but remains stable in png50 mutants and in embryos with GNU or PLU knockdown, while degradation still occurs in unfertilized but activated eggs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide converging evidence from multiple experimental approaches (fluorescence microscopy of ME31B-GFP in control vs. png50 mutants, RNAi knockdown of PNG complex components, and comparison of fertilized vs. unfertilized eggs) that consistently demonstrate PNG kinase activity at egg activation is necessary and sufficient for ME31B degradation. The data are internally consistent and supported by appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C2",
+      "C27",
+      "C28"
+    ],
+    "result": "ME31B is degraded by the ubiquitin-proteasome system in a PNG-dependent manner. ME31B-GFP is ubiquitinated in wild-type but not png50 embryos, is not degraded by autophagy (knockdown of autophagy components does not stabilize ME31B-GFP), and is partially stabilized by proteasome depletion (Rpn10 and Rpn11 knockdown).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 and C2 provide multiple lines of evidence (ubiquitin immunoprecipitation, autophagy component knockdowns, proteasome component knockdowns) that converge on the ubiquitin-proteasome system as the degradation mechanism. The partial stabilization with proteasome knockdown (C28) is appropriately interpreted given the technical challenges noted (incomplete knockdown, potential redundancy). The negative autophagy results (C27) strengthen the conclusion by ruling out an alternative pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C3",
+      "C101"
+    ],
+    "result": "The E2 conjugating enzyme Marie Kondo (UBC-E2H/Kdo) is required for the degradation of ME31B, TRAL, and Cup. Knockdown of Kdo blocks ME31B-GFP degradation, stabilizes both wild-type ME31B and ME31B-GFP fusion proteins as well as endogenous Cup and TRAL, and eliminates detectable ubiquitination of ME31B-GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33, C3, and C101 provide comprehensive evidence from fluorescence microscopy, western blotting of multiple proteins (both tagged and endogenous), and ubiquitination assays that Kdo is essential for degradation of all three RNA-binding proteins. The consistency across multiple readouts and proteins strengthens the conclusion. The antibody validation (C3 mentions raising antibodies) adds rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C4"
+    ],
+    "result": "The CTLH E3 ligase complex is required for degradation of ME31B, TRAL, and Cup. The Drosophila CTLH complex includes at least RanBPM, Muskelin, CG6617 (Houki), CG3295 (Souji), and CG31357 (Katazuke), which were identified by mass spectrometry of ME31B-GFP and Cup-GFP immunoprecipitates. Depletion of CG3295, Muskelin, or RanBPM stabilizes all three proteins without affecting Kdo levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44 and C4 provide strong evidence through orthogonal approaches: bioinformatic identification of homologs, mass spectrometry detection of physical interactions, RNAi knockdown experiments showing stabilization of target proteins, and control experiments ruling out indirect effects through Kdo. The identification of components in multiple independent immunoprecipitations (C36-C38) and the functional validation through knockdowns (C39, C41) provide robust support. The negative result for CG7611 (C40) is appropriately noted with caveats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C5"
+    ],
+    "result": "The Drosophila CTLH complex has a different architecture than the yeast Gid complex, particularly in substrate recognition. Structural modeling suggests that RanBPM lacks the Gid4-interacting loop present in yeast Gid1, and Houki lacks the Gid5-interacting tail present in yeast Gid8. The interaction between RanBPM and ME31B-GFP depends on Muskelin but not Souji, consistent with predicted modular organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 and C5 combine structural modeling (based on recent cryoEM structures) with experimental validation (immunoprecipitation experiments testing component dependencies). The structural predictions (C50-C51) are based on established homology modeling approaches and are supported by experimental data showing Muskelin-dependent but Souji-independent RanBPM-ME31B interaction (C48-C49). However, the conclusion about substrate recognition being different (C52, C5) is appropriately presented as inference rather than definitive proof, as direct substrate recognition mechanisms are not experimentally determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PNG kinase activity is not required for the CTLH complex to recognize and interact with ME31B and Cup. The interaction between RanBPM and ME31B-GFP persists in png50 mutants and is unaffected by Kdo depletion. Similarly, endogenous Cup interacts with RanBPM in both wild-type and png50 embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide clear evidence from immunoprecipitation experiments in png50 mutants and Kdo knockdown embryos that the E3 ligase-substrate interaction is PNG-independent. This is a critical negative result that rules out a simple model where PNG phosphorylation creates a recognition motif for the CTLH complex. The use of both tagged (ME31B-GFP) and endogenous (Cup) proteins strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C108",
+      "C109",
+      "C111",
+      "C7"
+    ],
+    "result": "Translation of Kdo mRNA is dramatically upregulated (25-fold) during the oocyte-to-embryo transition in a PNG-dependent manner, placing it in the top 10% of upregulated genes and showing similar PNG dependence as Smaug. Kdo translation is repressed during oogenesis but increases upon egg activation, with >200-fold difference between wild-type and png50 activated eggs. Kdo protein levels increase dramatically in wild-type but are undetectable in png50 embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62, C108-C109, C111, and C7 provide comprehensive evidence from ribosome profiling (translational efficiency measurements), western blotting (protein levels), and comparative analysis (ranking among all genes) that Kdo translation is highly PNG-dependent. The magnitude of the effect (25-fold increase, >200-fold difference between genotypes, 7th most affected transcript) and the consistency between mRNA translation and protein levels provide strong support. The comparison to Smaug (C109), a known PNG target, provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C91",
+      "C92"
+    ],
+    "result": "The poly(A) tail length on Kdo mRNA doubles upon egg activation in a PNG-dependent manner, partially mediating the translational increase. Changes in poly(A)-tail length directly impact translational changes during egg activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C91-C92 provide evidence from poly(A)-tail length measurements and cite prior work (Eichhorn et al., 2016) establishing the mechanistic link between poly(A)-tail length and translation during egg activation. The data show PNG-dependent poly(A)-tail extension for Kdo mRNA, and the claim that this 'partially' mediates translation (C91) is appropriately cautious given that other mechanisms also contribute (see C97-C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "ME31B binding to mRNAs changes during egg activation in a PNG-dependent manner, and these changes correlate with translational efficiency changes (rs = -0.48, p<10^-15). mRNAs with diminished ME31B binding are translationally activated while those with increased binding are repressed. This relationship holds even after controlling for poly(A)-tail length changes (rs = -0.40, p<10^-15), indicating PNG triggers two independent mechanisms for altering translation: changing poly(A)-tail length and altering ME31B binding. For Kdo specifically, ME31B-GFP binding is substantially reduced upon egg activation in a PNG-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66, C94-C98 provide strong statistical evidence from RNA immunoprecipitation and ribosome profiling data. The correlations are highly significant (p<10^-15), the sample size is large (n=4727 genes), and the relationship persists after controlling for poly(A)-tail length (C97), demonstrating independence of the two mechanisms. The use of appropriate statistical tests (Spearman correlation, Fisher's r-to-z transformation) and the specific analysis of Kdo mRNA (C66) linking back to the main hypothesis strengthen the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C6"
+    ],
+    "result": "During oogenesis, ME31B (presumably via Cup and TRAL) represses translation of Kdo mRNA, suppressing production of its own E2 conjugating enzyme. Upon egg activation, PNG activity leads to extension of the Kdo mRNA poly(A) tail and stimulates dissociation of ME31B from the transcript, promoting Kdo translation and setting the stage for clearance of ME31B, TRAL, and Cup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 and C6 synthesize multiple lines of evidence into a coherent mechanistic model: ME31B binding to Kdo mRNA during oogenesis (C67), PNG-dependent changes in both poly(A)-tail length and ME31B binding (C68), and the functional consequence of Kdo production leading to protein degradation (C69). This model is well-supported by the data presented in previous result groups, though the claim that ME31B acts 'presumably via Cup and TRAL' (C67) is appropriately cautious as direct evidence for their involvement in Kdo repression is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "ME31B, TRAL, and Cup are maternally deposited Drosophila RNA-binding proteins that form a complex blocking translation initiation, are required for oogenesis, bind and repress thousands of maternal mRNAs, and are cleared during the MZT coinciding with the major wave of zygotic transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C11 establish the biological context for the study by citing prior work (Wang et al., 2017 and others). These are well-established facts in the field supported by multiple citations. While these claims rely on prior work rather than new data in this manuscript, they are accurately represented and provide essential background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The PNG kinase (composed of PNG, GNU, and PLU subunits) is central to the oocyte-to-egg transition in Drosophila, which is triggered by egg activation rather than fertilization. PNG is activated by mechanical stress during oviposition and quickly inactivated by GNU degradation, restricting activity to the first 30 minutes. PNG phosphorylates ME31B, Cup, and TRAL, and leads to changes in poly(A)-tail length and translation of thousands of transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 provide essential background on the PNG kinase system, citing established literature (Elfring et al., 1997; Tadros et al., 2007; Hara et al., 2017, 2018; and others). These are well-documented facts that provide context for understanding how PNG activity at egg activation (occurring hours before ME31B degradation) could trigger the degradation events. The claims are accurately represented with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The maternal-to-zygotic transition (MZT) is a conserved developmental process requiring both zygotic transcription activation and maternal transcript clearance, with failure being embryonic lethal. The ubiquitin-proteasome system is a major protein degradation pathway where E3 ligases recognize targets and E2 enzymes provide activated ubiquitin. Drosophila has hundreds of E3 ligases and 29 E2 enzymes, but most substrates are unknown and few are implicated in the MZT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 provide general background knowledge about the MZT and ubiquitin-proteasome system, supported by appropriate citations (Benoit et al., 2009; Liang et al., 2008; Komander and Rape, 2012; Du et al., 2011). These are well-established facts that provide necessary context for the study. The claims accurately represent current knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C34"
+    ],
+    "result": "UBC-E2H/Marie Kondo is an E2 conjugating enzyme conserved from yeast to humans that works through the CTLH E3 ligase complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C34 cite established literature (Kaiser et al., 1994, 1995; Lampert et al., 2018; Santt et al., 2008) documenting the conservation and E3 ligase partnership of Kdo. These are well-established facts that provide important context for the identification of Kdo in the screen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The ME31B-GFP trap line used in this study is expressed from the endogenous locus and recapitulates wild-type protein dynamics. Results are consistent with complementary studies showing MG132 injection stabilizes ME31B, TRAL, and Cup, and with previous mass spectrometry studies of ME31B complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 provide important methodological validation and cite concordant results from other studies (Buszczak et al., 2007; Wang et al., 2017; Cao et al., 2019; G\u00f6tze et al., 2017). The validation that ME31B-GFP behaves like wild-type protein (C88) is critical for interpreting all fluorescence-based experiments. The concordance with independent studies (C89-C90) strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Known CTLH component mRNAs were either not affected or downregulated during egg activation, though unidentified components may be regulated by PNG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 reports negative results from ribosome profiling analysis, appropriately noting the caveat that unidentified components might be regulated. This is a useful control observation that helps focus attention on Kdo as the PNG-regulated component, though it is a relatively minor supporting detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C107"
+    ],
+    "result": "Muskelin shows tissue-specific expression (strongly expressed only in ovaries based on FlyBase RNA-seq data), which together with translational control of Kdo may partly explain how ME31B, a ubiquitous protein, is specifically destabilized in the early embryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C107 cite FlyBase data and draw a reasonable inference about tissue-specific regulation. However, this is presented as speculation ('may partly explain') and the FlyBase citation provides only correlative evidence. The claim is appropriately cautious but represents a relatively minor supporting observation rather than a central finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The list of proteins degraded during the Drosophila MZT includes GNU, Matrimony, Cort, Smaug, ME31B, TRAL, Cup, and potentially Wispy and Dhd based on mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 cite published literature (Benoit et al., 2009; Hara et al., 2017; Pesin and Orr-Weaver, 2007; Wang et al., 2017; Whitfield et al., 2013; Sysoev et al., 2016) documenting other proteins degraded during the MZT. This provides useful context for the broader significance of the work but is background information rather than a new finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The 3'UTR of Kdo contains putative Pumilio-binding sites, and Kdo translation is upregulated when Pumilio is knocked down in ovaries. Pumilio is a PNG target, suggesting a model where PNG phosphorylates and inactivates translational repressors like Pumilio at egg activation, leading to Kdo production. PNG also mediates translational upregulation of Zelda and Smaug, key MZT effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 cite published work (Flora et al., 2018; Hara et al., 2018; Chen et al., 2014; Eichhorn et al., 2016; Tadros et al., 2007) and propose a mechanistic model. The Pumilio connection (C81-C83) is speculative but based on reasonable evidence (binding sites, knockdown data, PNG phosphorylation). The broader context about Zelda and Smaug (C84-C85) is well-established. These claims provide useful mechanistic context but are largely based on prior work and speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Egg activation stimulates production of multiple key factors important for clearing the maternal RNA and protein dowry and producing zygotic gene products. Clearance of the maternal protein dowry appears to be a coordinated but underappreciated aspect of the MZT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 synthesize the findings of this study with prior work to draw broader conclusions about MZT regulation. These are reasonable inferences supported by the data, but they represent interpretive conclusions rather than specific experimental findings. The claim that protein clearance is 'underappreciated' (C87) is a meta-scientific observation about the field rather than a data-driven result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80",
+      "C99",
+      "C100",
+      "C106"
+    ],
+    "result": "PNG phosphorylation may contribute to the MZT by modulating the activities of ME31B, TRAL, and Cup rather than their stability, potentially affecting their ability to repress gene expression. Translational repressors like Pumilio may be phosphorylated and inactivated at egg activation, leading to Kdo production. PNG may also contribute through other undiscovered mechanisms such as phosphorylating unknown CTLH adaptor proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C99-C100, and C106 are explicitly presented as speculation ('tempting to speculate,' 'possible model,' 'may contribute') in the discussion. While these are reasonable hypotheses based on the data and prior work (Hara et al., 2018), they are not experimentally tested in this manuscript. The speculation is appropriate for a discussion section but does not constitute supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The CTLH complex has not been previously studied in Drosophila. Gid7/WDR26 are important in yeast and human CTLH complexes, and a Drosophila ortholog (CG7611) was identified but its role remains unclear. Gid4 and Gid5, which are critical for substrate recognition in S. cerevisiae, have no identifiable Drosophila orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 provide important context about the novelty of studying CTLH in Drosophila and the challenges in identifying all components. The statements about yeast and human complexes cite appropriate literature (Lampert et al., 2018; Maitland et al., 2019; Santt et al., 2008). The inability to identify Gid4/Gid5 orthologs is a significant observation that motivates the structural modeling work, though it is a negative result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "ME31B is broadly associated with translational repression in the early embryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 cites prior work (Wang et al., 2017) establishing ME31B's role in translational repression. This is background information that motivates the analysis of ME31B binding changes during egg activation but is not a new finding of this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1939 @@
+{
+  "submission": {
+    "id": "7a7819a3-7d75-471a-bf8a-ff983349baaa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:32:30.937384Z",
+    "updated_at": "2025-12-02T15:32:30.937384Z"
+  },
+  "content": [
+    {
+      "id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "submission_id": "7a7819a3-7d75-471a-bf8a-ff983349baaa",
+      "content_type": "manuscript",
+      "content_text": "# Tumors attenuating the mitochondrial activity in T cells escape from PD-1 blockade therapy\n\n## Authors\n\n- Alok Kumar<sup>1</sup> ([ORCID: 0000-0002-4269-3971](https://orcid.org/0000-0002-4269-3971))\n- Kenji Chamoto<sup>1</sup> ([ORCID: 0000-0001-8625-3612](https://orcid.org/0000-0001-8625-3612))\n- Partha S Chowdhury<sup>1</sup>\n- Tasuku Honjo<sup>1</sup> ([ORCID: 0000-0003-2300-3928](https://orcid.org/0000-0003-2300-3928)) \u2020\n\n### Affiliations\n\n1. Department of Immunology and Genomic Medicine, Graduate School of Medicine, Kyoto University Kyoto Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nPD-1 blockade therapy has revolutionized cancer treatments. However, a substantial population of patients is unresponsive. To rescue unresponsive patients, the mechanism of unresponsiveness to PD-1 blockade therapy must be elucidated. Using a \u2018bilateral tumor model\u2019 where responsive and unresponsive tumors were inoculated into different sides of the mouse belly, we demonstrated that unresponsive tumors can be categorized into two groups: with and without systemic immunosuppressive property (SIP). The SIP-positive tumors released uncharacterized, non-proteinaceous small molecules that inhibited mitochondrial activation and T cell proliferation. By contrast, the SIP-negative B16 tumor escaped from immunity by losing MHC class I expression. Unresponsiveness of SIP-positive tumors was partially overcome by improving the mitochondrial function with a mitochondrial activator; this was not successful for B16, which employs immune ignorance. These results demonstrated that the \u2018bilateral tumor model\u2019 was useful for stratifying tumors to investigate the mechanism of unresponsiveness and develop a strategy for proper combination therapy.\n\n## Introduction\n\nCancer immunotherapy using immune checkpoint blockade, particularly antibodies against programmed cell death receptor 1 (PD-1) or its ligand (PD-L1), has made a revolution in cancer treatments as this treatment has durable response even to terminal stage cancers and lesser side-effects compared to the conventional cancer treatments (Brahmer et al., 2010; Couzin-Frankel, 2013; Hodi et al., 2010; Mahoney et al., 2015; Topalian et al., 2015). The success of clinical trials for the PD-1/PD-L1 axis blockade led the FDA to approve antibodies for PD-1 (e.g. nivolumab, pembrolizumab) or PD-L1 (e.g. Atezolizumab, Avelumab, Durvalumab) for different types of human cancers including metastatic non-small cell lung carcinoma (NSCLC), squamous cell lung cancer, renal cell carcinoma, hodgkin's lymphoma, head and neck squamous cell carcinoma, and recently, for microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) cancers that include many late-stage cancers (Chowdhury et al., 2018a).\n\nDespite the impressive success rate of PD-1 blockade therapy, a significant fraction of patients is unresponsive. To further improve its efficacy, we must (i) identify biomarker(s) that predict the responsiveness/unresponsiveness and (ii) develop improved strategy including the combination therapy. For these improvements, we need to understand the mechanism of unresponsiveness to PD-1 blockade therapy. Most studies on biomarkers and resistance mechanisms have focused only on the tumor\u2019s intrinsic properties (Cristescu et al., 2018; Ribas, 2015; Rieth and Subramanian, 2018; Wellenstein and de Visser, 2018; Zou et al., 2016). We need to elucidate the mechanism for unresponsiveness related to immune effector T cells to understand the complicated interaction between cancer and immunity. Several studies have worked on the unresponsive\u00a0mechanism from the immunity side in different models. In one such model, the \u2018Cold and Hot tumor hypothesis\u2019, tumors can be roughly classified as \u2018immunologically hot (inflamed)\u2019 with an abundance of tumor-infiltrating lymphocytes (TILs) and \u2018immunologically cold (noninflamed)\u2019 with an absence of a sufficient population of pre-existing immune cells (Bonaventura et al., 2019; van der Woude et al., 2017). In addition, some groups claim that clinical failures in many patients could be due to an imbalance between T-cell reinvigoration and tumor burden (Borcoman et al., 2018; Huang et al., 2017).\n\nCD8+ T cells, the major immune effector cells for attacking tumors, are subject to negative regulation by multiple mechanisms in tumor-bearing hosts. Some of the well-known negative regulatory cells and soluble factors include myeloid-derived suppressor cells (MDSC), innate lymphoid cells (ILC), tumor-associated macrophages (TAM), regulatory CD4+ T cells (Tregs), regulatory B cells (Bregs), transforming growth factor \u03b2 (TGF-\u03b2), interleukin-10 (IL-10), adenosine, granulocyte-macrophage colony-stimulating factor (GM-CSF), prostaglandin E2 (PGE2), and L-Kynurenine (Artis and Spits, 2015; DeNardo and Ruffell, 2019; Facciabene et al., 2012; Sarvaria et al., 2017; Tauriello et al., 2018). Lack of MHC class I and neo-antigen on tumor cells also cause unresponsiveness because T cells cannot recognize the tumor (Garrido et al., 2016; McGranahan et al., 2017; Rodr\u00edguez, 2017). The tumor microenvironment, influenced by the above mechanisms, allows tumor cells to escape from immune attack (DeNardo and Ruffell, 2019; Russo and Protti, 2017). Due to this complexity of tumor and immunity interactions, it is difficult to determine which tumor employs which immune escape mechanism.\n\nEnergy metabolism mediated by mitochondrial activity regulates the fate of T cells. It has been reported that mitochondria play an important role in antigen-specific T cell activation through signaling of mitochondrial-derived reactive oxygen species (ROS) (Mallilankaraman, 2018; Murphy and Siegel, 2013; Sena et al., 2013). We recently reported that mitochondria are activated in tumor-reactive CTLs during PD-1 blockade therapy in MC38 tumor-bearing hosts (Chamoto et al., 2017). Boosting fatty acid oxidation with a metabolic modulator enhanced the PD-1 blockade effect (Chowdhury et al., 2018b). Therefore, attenuation of the mitochondrial activity of T cells by tumor-mediated factors could be an immune escape mechanism.\n\nIn this study, we developed a novel approach using a \u2018bilateral tumor model\u2019 and studied the immunosuppressive nature of unresponsive tumors to PD-1 blockade therapy. This model allowed us to categorize unresponsive tumors into two: those which have immune ignorance properties at tumor local sites and the others which have systemic immunosuppressive properties (SIP).\u00a0SIP is mediated by small molecules to downregulate mitochondrial function directly\u00a0and to inhibit T cell proliferation. Boosting the mitochondrial activity by the addition of bezafibrate, a pan-PPAR agonist, partially improved the efficacy of the PD-1 blockade against unresponsive tumors with SIP but not for tumors with immune ignorance at the local site.\n\n## Results\n\n### Different immune responses between hosts with responsive and unresponsive tumors\n\nWe first determined which tumor was responsive and unresponsive using an anti-PD-L1 monoclonal antibody (mAb) to block PD-1 signal (PD-1 blockade) or the Pdcd1-/- mouse model (Figure 1\u2014figure supplement 1). As summarized in \u2018Table 1\u2019, GL261, MC38, and MethA were characterized as responsive tumors while LLC, B16, Pan02, and CT26 were characterized as unresponsive tumors.\n\n**Table 1.**\n List of mouse cell lines from different genetic backgrounds used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell line</th>\n      <th>Background</th>\n      <th>Response to PD-1 blockade therapy</th>\n      <th>Particulars</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GL261</td>\n      <td>C57BL/6N</td>\n      <td>Responsive</td>\n      <td>Glioblastoma cell line</td>\n      <td>As a gift from Dr.\u00a0Toda,\u00a0Keio\u00a0University, Japan</td>\n    </tr>\n    <tr>\n      <td>MC38</td>\n      <td>C57BL/6N</td>\n      <td>Responsive</td>\n      <td>Colon carcinoma cell line</td>\n      <td>As a gift from Dr. James P. Allison, Memorial Sloan-Kettering Cancer Center (New York, NY, USA)</td>\n    </tr>\n    <tr>\n      <td>LLC</td>\n      <td>C57BL/6N</td>\n      <td>Unresponsive</td>\n      <td>Lewis lung carcinoma cell line</td>\n      <td>American Type Culture Collection</td>\n    </tr>\n    <tr>\n      <td>B16</td>\n      <td>C57BL/6N</td>\n      <td>Unresponsive</td>\n      <td>Melanoma cell line</td>\n      <td>As a gift from Dr. Nagahiro Minato, Graduate School of Medicine, Kyoto University</td>\n    </tr>\n    <tr>\n      <td>Pan02</td>\n      <td>C57BL/6N</td>\n      <td>Unresponsive</td>\n      <td>Pancreatic ductal adenocarcinoma cell line</td>\n      <td>National Cancer Institute</td>\n    </tr>\n    <tr>\n      <td>MethA</td>\n      <td>BALB/c</td>\n      <td>Responsive</td>\n      <td>3-methylcholanthrene (MCA)-induced fibrosarcoma cell line</td>\n      <td>Cell Resource Center for Biomedical Research (Sendai, Japan)</td>\n    </tr>\n    <tr>\n      <td>CT26</td>\n      <td>BALB/c</td>\n      <td>Unresponsive</td>\n      <td>N-nitroso-N-methylurethane-(NNMU) induced colon carcinoma cell line</td>\n      <td>National Cancer Institute</td>\n    </tr>\n  </tbody>\n</table>\n\nSince CD8+ cytotoxic T lymphocytes (CTLs) are the main effector cells during PD-1 blockade therapy, we examined the difference in the host's\u00a0immune responses to a responsive tumor and an unresponsive tumor according to the schedule shown in Figure 1A. We found both the total lymphocytes and the effector memory CD8+ T cells (defined as CD62Llow CD44high, P3) in draining lymph nodes (DLNs) significantly increased in the group of responsive tumors, but did not change in unresponsive tumor-bearing hosts after PD-1 blockade (Figure 1B and C). Further, total CD44+ T cells which include both central memory (CD62Lhigh CD44high, P2) and effector memory (CD62Llow CD44high, P3) were also larger after the PD-1 blockade therapy over ctrl IgG treated group in the hosts with responsive tumor (Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic diagram of the experimental schedule. (B) Absolute number of lymphocytes per draining\u00a0lymph node\u00a0(DLN) was calculated and compared among mice with different responsive or unresponsive tumors. (C) DLN cells were stained with anti-CD8, anti-CD62L, and anti-CD44 antibodies. Representative FACS patterns after gating on CD8+ T cells in each group with or without PD-1 blockade (top panel). Schematic representation of subpopulations among CD8+ T cells (bottom panel, left). Bar graphs of frequency and the absolute number of effector memory (CD62Llow CD44high; P3, hereinafter) population are shown (bottom panel, middle and right). (D) Cells after tumor digestion were stained with anti-CD8, and anti-CD45.2 antibodies. CD45.2+ CD8+ TIL frequency was compared between control IgG and anti-PD-L1 treated groups in responsive and unresponsive tumor-bearing hosts. Representative FACS pattern (upper panel) and the respective bar graph (lower panel) of CD45.2+ CD8+ TIL frequency are shown. (E) Harvested tumor mass cells from experimental groups were stained with anti-CD8, anti-CD45.2, and anti-T-bet antibodies. T-bet expression was plotted after gating on CD45.2+ CD8+ T cells. Representative FACS pattern from GL261 group (ctrl IgG treated) is shown (left). The frequency of T-bet among CD45.2+ CD8+ TILs of mice with the different tumor is shown. (F) IFN-\u03b3 expression was intracellularly analyzed in the same way as (E). Representative FACS pattern from GL261 group (ctrl IgG treated) is shown (left). The frequency of IFN-\u03b3 among CD45.2+ CD8+ TILs of mice with the different tumor is shown. (B\u2013C) one-way ANOVA analysis. (D\u2013F) two-tailed student\u2019s t-test analysis. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, data represent the means\u00a0\u00b1\u00a0SEM of five mice. Data are representative of two independent experiments. n.s. represents \u2018not significant\u2019.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic diagram of the PD-1 blockade therapy. Tumor size was measured on every alternative day. (B-C) Tumor growth was measured in anti-PD-L1 mAb treatment model (top panels) or genomic PD-1-/- model (bottom panels) in C57BL/6N (B) and BALB/c (C) background. Data represent the means \u00b1 SEM of five or six mice. Data are representative of three independent experiments.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Related with Figure 1C. CD8+ DLN cells were gated for CD44+. Representative FACS pattern for each group is shown in upper panel. CD44+ frequency (lower panel, left figure) and absolute number (lower panel, right figure) were quantified. Data represent the means \u00b1 SEM of 5 mice. **p < 0.01, ***p < 0.001, one-way ANOVA analysis. Data are representative of three independent experiments. n.s. represents \u2018not significant\u2019.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Following the experimental schedule as mentioned in Figure 1A, mice were sacrificed on day 12 for analysis of immune responses. (A) Absolute number of lymphocytes per LN were compared between responsive and unresponsive tumor-bearing hosts. (B) DLN cells were stained with anti-CD8, anti-CD62L, and anti-CD44 antibodies. Frequency (left) and absolute number (right) of effector memory CD8+ T cells (P3 population) were calculated. (C-D) Cells after tumor digestion were stained with anti-CD8 and anti-CD45.2 mAb. Representative FACS pattern of CD45.2+ CD8+ CTLs from MethA-bearing mice treated with ctrl IgG group is shown (left). The frequency of CD45.2+ CD8+ CTLs was compared between responsive and unresponsive tumor-bearing hosts (right) (C). Following surface staining, T-bet was stained intranuclearly. Representative FACS pattern from MethA-bearing mice treated with ctrl IgG group (left) and the bar graph of frequency\u00a0(%)\u00a0of T-bet expression are shown (right) (D). Data represent the means \u00b1 SEM of five or six mice. *p < 0.05, one-way ANOVA analysis. Data are representative of two independent experiments. n.s. represents \u2018not significant\u2019.\n\nThe frequency of CD8+ tumor-infiltrating lymphocytes (TILs) also increased after PD-1 blockade in the group of responsive tumor-bearing hosts, but not in unresponsive tumor-bearing hosts (Figure 1D). The expression of T-bet and IFN- \u03b3, which reflect the activity of Th1-type cytotoxic activity, increased after PD-1 blockade treatment in the group bearing responsive tumors, but did not in the unresponsive tumor-bearing group (Figure 1E and F; Sullivan et al., 2003). Similar results were obtained in mice on another genetic background (BALB/c) (Figure 1\u2014figure supplement 3). Taken together, anti-tumor immune responses increased only in hosts with responsive tumors but not in hosts with unresponsive tumors.\n\n### Higher mitochondrial activity of effector CD8+ T cells from mice with responsive tumors after PD-1 blockade\n\nWe and others have previously reported that mitochondrial activation in CD8+ T cells is a marker of CTLs activation (Buck et al., 2016; Chamoto et al., 2017). Thus, to determine whether there was an association between the responsiveness to PD-1 blockade therapy and mitochondrial activation in T cells, we measured several markers of mitochondrial activation using the Seahorse Analyzer (Figure 2\u2014figure supplement 1A). We found that DLN CD8+ T cells from responsive (MC38 and GL261) tumor-bearing hosts had significantly higher basal respiration, maximal respiration, spare respiratory capacity (SRC), and ATP turnover by PD-1 blockade, which was not observed in unresponsive (B16 and LLC) tumor-bearing hosts (Figure 2A). Similar results were obtained in mice on the BALB/c background (Figure 2\u2014figure supplement 1B). Besides, mitochondrial superoxide production (MitoSox) and Cellular ROS (CellRos) in CD8+ TIL were increased by PD-1 blockade therapy only in responsive tumor-bearing mice (Figure 2B and C). Together, increased activity in CD8+ T cells by PD-1 blockade in responsive tumor-bearing mice parallels with their activation status of mitochondria.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig2-v2.jpg)\n\n**Figure 2.:** (A) DLN CD8+ T cells were purified from the pool of five mice per group from the experiment of Figure 1. OCR of DLN CD8+ T cells was measured from responsive and unresponsive tumor groups (left). Other parameters associated with OCR graph (basal respiration, maximal respiration, spare respiratory capacity, and ATP turnover) were calculated and values were plotted in a bar graph for respective tumor group (right). Data represent the means\u00a0\u00b1\u00a0SEM of five wells. *p<0.05, **p<0.01, ***p<0.001, two-tailed student\u2019s t-test analysis. (B\u2013C) Tumor mass cells, from the experimental groups of Figure 1, were stained with anti-CD8, anti-CD45.2 antibodies and mitochondrial dyes for Mitochondrial Superoxide production (B) or Cellular ROS production (C). Representative histogram (left) and MFI (right) of mitochondrial dyes after gating on CD45.2+ CD8+ T cells are shown. Data represent the means\u00a0\u00b1\u00a0SEM of five mice. *p<0.05, **p<0.01, ***p<0.001, one-way ANOVA analysis. Data are representative of two independent experiments (A\u2013C). n.s. represents \u2018not significant\u2019.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative OCR plot by Seahorse XFe analyzer, showing basal respiration, maximal respiration, spare respiratory capacity, ATP turnover, proton-leak, and non-mitochondrial respiration, is shown. (B) OCR of DLN CD8+ T cells was measured from experimental groups of Figure 1\u2014figure supplement 3. DLN CD8+ T cells were purified from the\u00a0pooled cells of each group. OCR plot (left) and its associated parameters (right) from responsive tumor (top panels) and unresponsive tumor (bottom panels) are shown. Data represent the means \u00b1 SEM of five wells. *p < 0.05, two-tailed student\u2019s t-test analysis. Data are representative of two independent experiments. n.s. represents \u2018not significant\u2019.\n\n### Classification of unresponsive tumors by the presence or absence of systemic immunosuppressive property (SIP)\n\nTo investigate the mechanism of the systemic immune suppression of unresponsive tumors, we next employed a \u2018bilateral tumor inoculation model\u2019 where unresponsive and responsive tumors were inoculated on different sides of the host (Figure 3A). This model facilitates disclosing how much humoral factors derived from unresponsive tumors would contribute to the growth of responsive tumors in the other side. As shown in Figure 3B, we found that when unresponsive tumors (LLC or Pan02) were present on the left side, the growth inhibition of the responsive MC38 on the right by the PD-1 blockade therapy was inefficient. However, when the unresponsive B16 was on the left, the responsive MC38 or GL261 were rejected by PD-1 blockade as efficiently as the case in which no tumor was on the left side (Figure 3B and Figure 3\u2014figure supplement 1A). The sizes of the left unresponsive tumor in the same experiment were not inhibited by the PD-1 blockade therapy (Figure 3\u2014figure supplement 1B). Therefore, we speculated that the unresponsive LLC and Pan02 tumors may have released immune suppressive factors, while the unresponsive B16 did not.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig3-v2.jpg)\n\n**Figure 3.:** (A) Unresponsive tumor cells (LLC, Pan02 and B16) were inoculated on the left flank of C57BL/6N mice. On day 6, responsive tumor (MC38) cells were inoculated on the right flank of the same mice. On day 8, anti-PD-L1 mAb (or isotype control Rat IgG2a) was injected every fifth day thereafter. (B) Tumor growth of responsive MC38 on the right side was compared with or without PD-1 blockade treatment. (C) Following the same schedule, as mentioned in (A), unresponsive tumor (CT26) cells and responsive tumor (MethA) cells were injected in BALB/c mice. Tumor growth of MethA on the right side was shown. (B\u2013C) Data represent the means\u00a0\u00b1\u00a0SEM of five mice. Data are representative of two independent experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Unresponsive tumor (B16) and responsive tumor (GL261) were injected and therapy were given as per the schedule mentioned in Figure 3A. Tumor growth of right responsive tumor (GL261) with or without PD-1 blockade was compared when no tumor (left panel) or in the presence of B16 (right panel) on left side. (B and C) Unresponsive tumor growth on left side of hosts associated with experimental groups of Figure 3B or C are shown. Data represent the means \u00b1 SEM of five mice. Data are representative of two independent experiments.\n\nFollowing the same experimental design, we performed the bilateral tumor experiment in mice on another background (BALB/c) and identified that CT26 is an unresponsive tumor with SIP (Figure 3C and Figure 3\u2014figure supplement 1C). Taken together, we classified unresponsive tumors into two groups: those with or without SIP (Table 2).\n\n**Table 2.**\n Mechanistic classification of unresponsive tumors.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Background</th>\n      <th>Name of tumor</th>\n      <th>Releasing suppressive factor (related to Figure 3)</th>\n      <th>Activation of acquired immunity (related to Figure 5)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">C57BL/6N</td>\n      <td>B16</td>\n      <td>No</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>LLC</td>\n      <td>Yes</td>\n      <td>Less</td>\n    </tr>\n    <tr>\n      <td>Pan02</td>\n      <td>Yes</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>BALB/c</td>\n      <td>CT26</td>\n      <td>Yes</td>\n      <td>Less</td>\n    </tr>\n  </tbody>\n</table>\n\n### Tumor-derived suppressive soluble factor(s) systemically inhibits mitochondrial activity of CTLs in vivo\n\nSince we observed mitochondrial activation in CD8+ T cells as a parameter of responsiveness (Figure 2), we used the bilateral tumor model to investigate how immunosuppressive factors released from unresponsive tumors (on the left side) inhibited the immune response against responsive tumors (on the right side) from the aspect of mitochondrial activation (Figure 4A). As shown in Figure 4B, the absolute number of lymphocytes in the DLN on the side with MC38 was increased by PD-1 blockade in mice with the SIP-negative B16 on the other side, but not when the SIP-positive LLC was on the other side. Accordingly, mitochondrial ROS production, mass, OCR and ATP turnover in DLN CD8+ T cells were also enhanced by PD-1 blockade on the MC38 side in the presence of B16 on the other side, but not the case when SIP-positive LLC was inoculated on the other side (Figure 4C and D). In contrast, the PD-1 blockade treatment did not change the mitochondrial activation status in the unresponsive tumor sides (B16 and LLC) (Figure 4E and F). In summary, while both LLC and B16 were unresponsive, only the LLC systemically inhibited the mitochondrial activation of CTLs during the PD-1 blockade therapy.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig4-v2.jpg)\n\n**Figure 4.:** (A) Mice were treated in the same way as Figure 3A and sacrificed on day 14 for the analysis of DLN CD8+ T cells. (B) Absolute number of lymphocytes per LN from the MC38 side was calculated. (C) DLN cells harvested from the MC38 side were stained with anti-CD8 mAb, MitoSox (left panels) and MitoMass (right panels). Representative FACS profiles after gating on CD8+ T cells and MFI of dye staining are shown. (D) OCR of CD8+ T cells purified from pooled DLN cells of MC38 side for different groups is shown (top). Basal respiration and ATP turnover values were calculated from the OCR graph (bottom). (E) DLN cells harvested from the unresponsive side were stained with anti-CD8 mAb, MitoSox (left) and MitoMass (right). Representative FACS profiles of DLN CD8+ T cells and the MFI of dye staining are shown. (F) OCR of CD8+ T cells purified from pooled DLN cells of B16 or LLC side is shown (left). Basal respiration and ATP turnover values were calculated from the OCR graph (right). (B, C, E) Data represent the means\u00a0\u00b1\u00a0SEM of five mice. *p<0.05, **p<0.01, two-tailed student\u2019s t-test analysis. (D, F) Data represent the means\u00a0\u00b1\u00a0SEM of five wells. *p<0.05, **p<0.01, one-way ANOVA analysis. Data are representative of two independent experiments. n.s. represents \u2018not significant\u2019.\n\n### The immunotherapy-resistant B16 tumor employs local immunological ignorance\n\nWe suspected that unresponsive tumors without SIP may not be recognized by the acquired immunity. We compared tumor growth between wild type and immune-compromised mice (Rag2-/-). As shown in Figure 5A, the growth of responsive tumors (MC38, GL261, and MethA) was significantly restricted in wild type compared with Rag2-/- mice. In contrast, unresponsive tumors were more or less insensitive to acquired immunity (Figure 5B). Note that some unresponsive tumors with SIP (LLC and CT26) were sensed to a small extent by acquired immunity while unresponsive tumors without SIP (B16) were completely ignored (Table 2). This complete ignorance could be attributed to deficiencies in the \u2018T cell - tumor cell interaction\u2019 probably due to less neoantigen and/or lack of MHC class I expression. Indeed, we found that B16 does not express MHC class I even after stimulation with IFN-\u03b3, but others do (Figure 5C and D). In other words, B16 acquired unresponsiveness by employing local immunological ignorance instead of SIP.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013B) Tumor growth of responsive and unresponsive tumors was observed in wild type or immune-compromised (Rag2-/-) mice. Tumor sizes of responsive tumors (A) and unresponsive tumor (B) are shown. Data represent the means\u00a0\u00b1\u00a0SEM of 5 mice. (C\u2013D) Responsive and unresponsive tumor cells were stimulated with IFN-\u03b3 for overnight, followed by staining with anti-H-2Kb/H-2Kd mAbs. Representative histograms of MHC class I for responsive (C) and unresponsive (D) tumor cells are shown. Data represent the means\u00a0\u00b1\u00a0SEM of three wells. Data are representative of three independent experiments.\n\nThese data indicate that one of the mechanisms of unresponsiveness in tumors without SIP is lack of MHC class I expression, and suggest that elimination of the suppressive factor would facilitate the enhancement of PD-1 blockade therapeutic efficacy only in unresponsive tumors with SIP.\n\n### Secretion of immune inhibitory small molecules from SIP-positive tumors\n\nTo examine whether immune suppressive factors are released from unresponsive tumors, na\u00efve CD8+ T cells were stimulated with anti-(CD3+CD28) mAb-coated beads in the presence of supernatants collected from responsive and unresponsive tumor cell cultures (Figure 6A). Proliferation assays (thymidine incorporation and Ki67 detection assays) demonstrated that T cell proliferation was significantly inhibited in the presence of supernatants from LLC or CT26, but not in the presence of supernatants from B16, GL261 or MethA (Figure 6B and Figure 6\u2014figure supplement 1A and B). The suppressive effects of soluble factors from the LLC supernatant was further evidenced by the restoration of T cell proliferation when the supernatant was diluted (Figure 6\u2014figure supplement 1C). It is of note that the SIP factor production is not only specific to mouse cell lines, but also to human cell lines (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig6-v2.jpg)\n\n**Figure 6.:** (A) Na\u00efve CD8+ T cells (CD44- CD8+ T cells) were purified from spleen and LNs of C57BL/6N mice. Na\u00efve CD8+ T cells were stimulated with anti-(CD3+CD28) mAbs-coated dynabeads for 48 hrs with or without culture supernatant from different tumor cell lines. (B) T-cell proliferation was measured by 3H-thymidine incorporation assay. (C) T cells were stained with anti-CD8 mAb, CellRox dye\u00a0(cellular ROS, left) and MitoTracker Deep Red dye\u00a0(mitochondrial potential, right) after the stimulation. The MFI of mitochondrial dyes of CD8+ T cells are shown. (D\u2013E) OCR (D) and ECAR (E) of T cells were measured. The OCR graphs without (left) or with culture supernatants groups (right) are shown. (F) Na\u00efve CD8+ T cells were stimulated with B16 or LLC supernatant for 2 hrs. In the control wells, fresh medium was added. Following the stimulation, cells were stained with mitochondrial dyes. Representative histogram (upper panel) and MFI (lower panel) of each dye are shown. (G) LLC supernatant was heat-inactivated to denature protein components. To remove small molecules, the supernatant was treated with dextran-coated charcoal (DCC) that adsorbs small molecules. The effects of treated supernatant on T cell proliferation was assessed. (H) Using different cut-off filters, LLC supernatant was fractionated into\u00a0<3 kDa and\u00a0<50 kDa fractions that were further treated with DCC. The effects of the treated fractions on na\u00efve CD8+ T cell proliferation was assessed. Data represent the means\u00a0\u00b1\u00a0SEM of three wells. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, one-way ANOVA analysis (B\u2013H). Data are representative of three independent experiments. n.s. represents \u2018not significant\u2019.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** As per schedule mentioned in Figure 6A, na\u00efve CD8+ T cells were stimulated in the presence of culture supernatant. (A-B) Na\u00efve CD8+ T cells were stimulated in the presence of culture supernatant of tumor cells from C57BL/6N (A) or BALB/c (B) background. Ki-67 expression was analyzed intracellularly by flow cytometry. Representative FACS profile (upper panel) and frequency of CD8+ KI-67+ T cells (lower panel) are shown. Control groups are shared between A and B. (C) Na\u00efve CD8+ T cells were stimulated in the presence of serially diluted culture supernatants from B16 and LLC. T cell proliferation was measured by 3 H-thymidine incorporation assay. (D) OCR (left) and ECAR (right) were measured of na\u00efve CD8 + T cells that were stimulated in the presence of culture supernatant from MethA and CT26. (E) CT26 supernatant was heat-inactivated to denature protein components. To remove small molecules, supernatant was treated with DCC. The effect of treated supernatant on na\u00efve CD8+ T cell proliferation was assessed. (F) Using different cut-off filters, CT26 supernatant was fractionated into <3kDa and <50kDa fraction that were further treated with DCC. The effect of treated fractions on na\u00efve CD8+ T cell proliferation was assessed. Data represent the means \u00b1 SEM of triplicate wells. *p < 0.05, ***p < 0.001, ****p < 0.0001, one-way ANOVA analysis. Data are representative of three independent experiments. n.s. represents \u2018not significant\u2019.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Schedule of in vitro T cell proliferation assay (upper panel). Murine na\u00efve CD8+ T cells were stimulated for 48 hrs with anti-(CD3+CD28) mAbs in the presence of culture supernatants collected from different human cancer cell lines cultures. Details of different human cancer cell lines are shown (lower panel). (B) Proliferation was assessed by thymidine incorporation assay. Data represent the means \u00b1 SEM of triplicate wells. Data are representative of three independent experiments.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) In continuation with Figure 6F, mRNA level of PGC-1\u03b1 and PGC-1\u03b2 were quantified in the tumor supernatant (sup) treated na\u00efve CD8+ T cells. (B) B cells (B220+ lymphocytes) were purified from spleen of 8-weeks old C57BL/6N mice and were stimulated with B16 or LLC supernatants for 2 hrs. Following the stimulation, mitochondrial dye staining was performed. Representative histogram (upper panel) and MFI (lower panel) of each dye are shown. Data represent the means \u00b1 SEM of three wells. **p < 0.01, ***p < 0.001, one-way ANOVA analysis. Data are representative of two independent experiments. n.s. represents \u2018not significant\u2019.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Expression levels of immune suppression-associated genes were examined by quantitative reverse\u00a0transcription\u00a0PCR (qRT-PCR) in different tumor cell lines. Tumor names in red and blue are responsive and unresponsive, respectively. (A) Expression of CD39 (left) and CD73 (right) were quantified. (B) Expression of Cox2 (left) and mPGES1 (right) were quantified. (C) Expression of IDO1 was quantified. Data represent the means \u00b1 SEM of 3 wells assuming the expression in MC38 = 1 in qRT-PCR analysis. Data are representative of 3 independent experiments. Murine b -actin was taken as internal control during qRT-PCR analysis.\n\nIn addition, different parameters of mitochondrial activation such as cellular ROS and mitochondrial potential were significantly inhibited by the LLC supernatant compared with the B16 and GL261 supernatants (Figure 6C). The OCR and the extracellular acidification rate (ECAR), a parameter for glycolytic function, were severely reduced in CD8+ T cells cultured for 48 hrs in the presence of LLC supernatants compared with those from B16 and GL261 (Figure 6D and E). Similar suppressive activities were observed by supernatants from BALB/c background tumor CT26 (Figure 6\u2014figure supplement 1D). To clarify whether this mitochondrial suppression is direct or bystander, we examined mitochondrial activation parameters within 2 hrs of coculture with the supernatant. As shown in Figure 6F, mitochondrial activation parameters were inhibited in the presence of LLC supernatants immediately, indicating that SIP factors highly likely inhibit mitochondrial activity directly, but not cellular transcriptional activity. Indeed, the transcriptional levels of PGC-1\u03b1/\u03b2, a master regulator of mitochondrial activation, did not change within 2 hrs (Figure 6\u2014figure supplement 3A). The SIP factor inhibited B cell mitochondria as well within 2 hrs, showing this suppressive effect is more general (Figure 6\u2014figure supplement 3B). These results indicate that the immunosuppressive factors released from SIP-positive tumors directly and generally inhibit the mitochondrial function.\n\nFurther, to understand the molecular properties of suppressive factors, we performed heat-inactivation to denature protein components and used a dextran-coated charcoal (DCC) treatment to adsorb small molecules in the culture supernatants. As shown in Figure 6G and Figure 6\u2014figure supplement 1E, heat-inactivation of LLC and CT26 culture supernatants did not abolish their suppressive activity, whereas removing low molecular weight compounds using the DCC treatment eliminated their suppressive activity, suggesting that the suppressive factor(s) may be comprised of non-proteinaceous small molecules. We further fractionated the supernatant into \u2018Fraction A (<3 KDa)\u2019 and \u2018Fraction B (3\u00a0~\u00a050 KDa)\u2019 and found that \u2018Fraction A\u2019 had almost the same inhibition potential as the total culture supernatants (Figure 6H and Figure 6\u2014figure supplement 1F). Again, removing small molecules from \u2018Fraction A\u2019 using the DCC treatment restored the proliferation of CD8+ T cells. We further tested whether previously reported small molecules could be candidates of the SIP factor such as adenosine, Prostaglandin E2 (PGE2) and kynurenine, the transcriptional levels of key enzymes to produce them were examined. However, there was no relationship between the suppressive property and the expression levels of enzymes including CD39, CD73, COX-2, mPGES1 and IDO1 (Figure 6\u2014figure supplement 4), suggesting the low possibility of known factors.\n\n### Combination of bezafibrate with PD-1 blockade improves survival of mice bearing SIP-positive tumors\n\nSince SIP reduced the mitochondrial activity, we examined whether mitochondria activation drug combination can reverse the immune suppression by SIP-positive tumors. As bezafibrate activates mitochondria and synergizes with PD-1 blockade therapy, we first tested whether bezafibrate can reverse the suppression of mitochondrial function and proliferation caused by suppressive factors from the LLC culture supernatants in vitro (Chowdhury et al., 2018b). Mitochondrial function of\u00a0na\u00efve\u00a0CD8+ T cells was regained significantly when bezafibrate was used along with culture supernatant\u00a0in\u00a0vitro (Figure 7A). Encouraged with these in vitro results, we performed PD-1 blockade combinatorial therapy with bezafibrate for LLC tumor-bearing hosts (Figure 7B). We found that the tumor-killing effect by the PD-1 blockade was enhanced and mouse survival was increased in the combination therapy (Figure 7C). Of note is the fact that the combinatorial treatment could not rescue the B16\u00a0tumor-bearing hosts\u00a0(Figure 7C). We observed similar results in tumors on the BALB/c background. The survival of SIP-positive CT26\u00a0tumor-bearing hosts was improved with the combinatorial therapy with bezafibrate (Figure 7\u2014figure supplement 1). In summary, the SIP effects of unresponsive tumors were partially rescued by a mitochondrial activation chemical, bezafibrate in vitro and in vivo.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig7-v2.jpg)\n\n**Figure 7.:** (A) Na\u00efve CD8+ T cells purified from spleen and LNs of C57BL/6N mice were stimulated for 48 hrs with anti-(CD3+CD28) mAb along with LLC culture supernatant and Bezafibrate (5 \u03bcM). Following incubation, OCR of T cells was measured. Data represent the means\u00a0\u00b1\u00a0SEM of three wells. *p<0.05, **p<0.01, ***p<0.001, one-way ANOVA analysis. Data are representative of three independent experiments.\u00a0(B) Unresponsive tumors (B16 and LLC) were injected and the mice were treated with anti-PD-L1 mAb along with Bezafibrate (5 mg/kg). Schematic diagram of the combination therapy schedule\u00a0is\u00a0shown. (C) Tumor graph (left) and survival curve (right) are shown for the B16 (upper panel) and LLC (lower panel) tumor-bearing host treated with Bezafibrate combination therapy. Data represent the means\u00a0\u00b1\u00a0SEM of five mice. *p<0.05, one-way ANOVA analysis. Data are representative of three independent experiments.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52330/elife-52330-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** SIP-positive CT26 tumor was injected in mice and therapy was given as per schedule mentioned in Figure 7B. Tumor size (left) and survival (right) of CT26 tumor-bearing host are shown. Data represent the means \u00b1 SEM of five mice. *p < 0.05, one-way ANOVA analysis. Data are representative of three independent experiments.\n\n## Discussion\n\nOne of the biggest issues in PD-1 blockade cancer immunotherapy is how to reduce the rate of unresponsiveness. Although there are many unresponsive mechanisms, cancers employ at least two strategies to escape from the immune attack: local or systemic immune suppression. Some reports have suggested \u2018hot tumors\u2019 and \u2018cold tumors\u2019 to distinguish responsive and unresponsive tumors based on the level of immune cell infiltration in the tumor mass (van der Woude et al., 2017). However, it is difficult to explain the molecular mechanisms of unresponsiveness by this definition because it explains the results of immune responses in local tumor areas, but not the induction phase of immune escape.\n\nIn this paper, we employed the bilateral tumor inoculation model, which can distinguish local immune ignorance from systemic immune suppression, and categorized unresponsive tumors into two groups, with or without SIP. Small molecule(s) with less than 3 kDa size which is released from SIP-positive tumors appear to attenuate mitochondria-mediated energy metabolism in T cells. We rule out the known factors such as suppressive cytokines, adenosine, Prostaglandin E2 (PGE2) and kynurenine. Tumor cells show dysregulated cellular metabolism and the metabolic products often induce immune suppression (DeBerardinis, 2008; Munn and Mellor, 2013; Vazquez et al., 2016). Although it has been reported that methyl-nicotinamide (MNA), which is converted by nicotinamide N-methyl-transferase (NNMT), acts as an immune suppressive factor (Gebicki et al., 2003), this compound showed no suppression at physiological levels (data not shown). Other metabolites could be candidates, which are derived from the tumor\u2019s metabolic activity.\n\nFor successful PD-1 blockade therapy, the \u2018tumor-immunity cycle\u2019 needs to operate smoothly (Chen and Mellman, 2013; Pio et al., 2019). Hindrance in the pathway at any step of antigen recognition, activation, recruitment and killing at the tumor site, DLN or bloodstream would lead to the unresponsive state (Mushtaq et al., 2018). DLN is generally considered as a place where na\u00efve T cells are primed to effector T cells. Our bilateral tumor\u00a0model analysis suggests that LLC systemically inhibits T cell priming at DLN of responsive tumor sides via suppressive factors, but B16 does not. However, it seems to contradict that T cells in DLN on the side of B16 were not activated in spite of the deficiency of SIP. This observation suggests that tumor recognition by the local tumor area is critical to trigger T cell priming in DLN and to establish a successful tumor-immunity cycle. Therefore, tumors lacking MHC take advantage of the ignorance or escape mechanism not only in the local tumor area but also in DLN. Given that LLC expresses MHC and is sensitive to the acquired immunity to some extent, it is reasonable that LLC but not B16 is susceptible to the combination therapy.\n\nMitochondrial activation is essential for the full activation of T cells. In our in vitro assay system for mitochondrial activities, we stimulated na\u00efve CD8+ T cells by anti-(CD3+CD28) mAb beads because CD28 in addition to CD3 signal is necessary for robust mitochondrial\u00a0activation during the proliferation (Klein Geltink et al., 2017). Although our OCR data suggest that the suppressive factors downregulate the mitochondrial activity, ECAR also severely inhibited. Therefore, the suppressive factors may inhibit glycolysis, resulting in the attenuation of subsequent OXPHOS reactions. This hypothesis agrees with the fact that T cells rely on glycolysis more than OXPHOS when they differentiate from na\u00efve to effector T cells (Menk et al., 2018). Another possible mechanism for suppression of mitochondrial function by the suppressive factors is inhibition of the downstream signals of CD3 and/or CD28 because these two signals are necessary for the upregulation of glycolysis and OXPHOS in T cells.\n\nIn this work, we applied bezafibrate to unresponsive LLC or CT26 tumors. We found this combination therapy partially restored the PD-1 blockade effect per the in vitro assays where bezafibrate partially removed the mitochondrial inhibition by the suppressive factors in the supernatant. This partial effect suggests that under the situation of \u2018brake\u2019 induced by the suppressive factors, the \u2018acceleration\u2019 by PGC-1\u03b1/PPAR activation would not fully work. To obtain the maximum benefit, we need to define the suppressive factors and remove the \u2018brake\u2019. Our data suggest the possibility of unknown small molecules for suppressive factors. The purification of this small molecule by bio-assays will enable us to identify its structure by mass spectrometry. Once we know such a compound, we may be able to find the enzymes responsible for the synthesis of this product and target them for combinatorial treatment.\n\n## Materials and methods\n\n### Animals\n\nC57BL/6N and BALB/c inbred mice were purchased from \u2018The Charles River Laboratories, Japan (Kanagawa, Japan)\u2019. Pdcd1-/- and Rag2-/- inbred mice lines were maintained under specific pathogen-free conditions at the Institute of Laboratory Animals, Graduate School of Medicine, Kyoto University. Female, 6\u20138 weeks-old mice were used in all the experiments.\n\n### Cell culture\n\nCell lines were cultured in RPMI or DMEM medium (Gibco, Grand Island, NY, USA; catalog #11875\u2013093 and 11995\u2013065 respectively) with 10% (v/v) heat-inactivated fetal bovine serum and 1% (v/v) penicillin-streptomycin mixed solution (Nacalai Tesque, Kyoto, Japan, 26253\u201384) as per the instructions recommended by the ATCC. Cell lines were free of mycoplasma contamination. Cell cultures were maintained at 37\u00b0C with 5% CO2 in a humidified incubator. Details of different murine cell lines used in the experiment e.g. source of cell lines, background, and origin of cancer, etc. are mentioned in Table 1. The tumor cell lines MethA and GL261 were passaged in vivo once before use in experiments.\n\n### Monotherapy model using anti-PD-L1 antibody\n\nTumor cells were intradermally (i.d.) injected into the right flank of mice (day 0). Monotherapy with the anti-PD-L1 antibody was started when the tumor size reached 50\u201360 mm3 (around day 5). Mice were intraperitoneally (i.p.) injected with 80 \u03bcg of anti-PD-L1 mAb (clone 1-111A.4); mAb injection was repeated every fifth day. For untreated mice, an isotype control for the anti-PD-L1 mAb (Rat IgG2a, \u03ba) was injected. Tumor sizes were measured every alternate day using a digimatic caliper (Mitutoyo Europe GmbH, Germany) and tumor volume was calculated using the formula for a typical ellipsoid [\u03c0 \u00d7 (length\u00a0\u00d7breadth\u00a0\u00d7 height)/6].\n\n### Bilateral tumor model\n\nFirst, unresponsive tumor cells were i.d.- injected into the left flank of mice (day 0). When the size of the unresponsive tumor was around 60\u201370 mm3 (around day 6\u20137), responsive tumor cells were i.d.- injected into the right flank. Two-three days after the responsive tumor injection (around day 9\u201310), anti-PD-L1 antibody was injected following a monotherapy treatment model (for the dose of antibody and interval between two injections). Tumor sizes of responsive and unresponsive tumors were measured every alternate day and tumor volume was calculated according to the formula mentioned earlier.\n\n### Chemical reagents\n\nBezafibrate (Santa Cruz Biotechnology, Dallas, TX, USA) was used at the dose of 5 mg/kg for in vivo combination therapy. Bezafibrate was freshly prepared, immediately before use, in DMSO. Dissolved bezafibrate was diluted in PBS and 200 \u03bcL was i.p.-injected per mouse. Bezafibrate was added at the concentration of 5 \u03bcM for in vitro assays throughout this work wherever it is used unless specified.\n\n### Combination therapy model\n\nFor combination therapy experiments, the therapy started when the tumor size was 60\u201370 mm3. Mice were i.p.- injected with 40 \u03bcg of anti-PD-L1 mAb (clone 1-111A.4); the mAb injection was repeated every sixth day. Mice were i.p.-injected with bezafibrate at 5 mg/kg dose every third day. For control groups, an isotype control for the anti-PD-L1 mAb (Rat IgG2a, \u03ba) and DMSO vehicle for bezafibrate were injected. All groups were subjected to the same dose of DMSO. Tumor measurement was performed as stated above.\n\n### Na\u00efve CD8+ T cell isolation\n\nTo isolate na\u00efve CD8+ T cells from C57BL/6N inbred wild-type mice, the spleen and three LNs (axillary, brachial, and inguinal LNs) from both the right and left sides were harvested. The spleen was minced, treated with ACK lysis buffer (0.15 M NH4Cl + 1.0 mM KHCO3 + 0.1 mM Na2-EDTA) for 2 min to lyse the erythrocytes, and mixed with pooled and minced LN cells. Na\u00efve (CD62Lhigh CD44low) CD8+ T cells were then purified from total pooled lymphocytes according to the manufacturer\u2019s instructions (Miltenyi Biotec, 130-096-543). For in vitro analysis, na\u00efve CD8+ T cells were stimulated with anti-CD3 and CD28 mAb-coated dynabeads (Thermo Fisher Scientific, Gibco, Catalog# 11452D).\n\n### Collection of culture supernatants from different cell lines\n\nWe seeded 0.5 million cells/well in 6-well plates in 4 mL total volume of respective media as recommended by the ATCC. After 48 hrs of incubation, we harvested the culture supernatant, centrifuged at 10,000 x g for 15 min at 22\u00b0C, collected the supernatant, and kept it at \u221280\u00b0C for storage. We added culture supernatant one-fourth of the total volume in the well (96-well round-bottom plate) throughout the in vitro assays with na\u00efve CD8+ T cells in this work, unless specified.\n\n### Thymidine incorporation assay\n\nThymidine solution diluted in spleen RPMI (Basal RPMI media with 10% FCS, 1% Penicillin-Streptomycin, 50 \u03bcM 2-Mercapto ethanol, L-Glutamine, Na-pyruvate, NEAA) was added to cells and incubated for 4 hrs at 37\u00b0C in a humidified incubator with 5% CO2. After incubation, cells were transferred to a 96-well filter plate followed by the addition of scintillation buffer. Thymidine uptake was measured on a Microbeta2 microplate counter (PerkinElmer, # 2450\u20130120) machine.\n\n### Heat-inactivation treatment of supernatant\n\nTo inactivate the protein component, culture supernatant was boiled for 10 min at 95\u00b0C followed by centrifugation at 10,000 x g for 30 min. The supernatant was collected and stored at \u221280\u00b0C for storage.\n\n### Dextran-coated charcoal (DCC) treatment of supernatant\n\nTo remove small molecules, the supernatant was treated with DCC, which removes small molecules (e.g. nucleotides, vitamins, lipids) from the sample by adsorbing them on the surface. To remove small molecules, 12 mg DCC (for 500 \u03bcL supernatant) was added and incubated for 20 min at 25\u00b0C, followed by centrifugation at 10,000 x g for 30 min. After centrifugation, the supernatant that was free from small molecules was collected.\n\n### Fractionation of culture supernatant\n\nCultures supernatants were fractionated into different fractions using amicon ultra-centrifugal filters (Merck Millipore Ltd., Ireland) with cut-off sizes of 3 KDa and 50 KDa. Supernatants were added to 3 KDa filter and centrifuged at 12,000 x g for 30 min at 4\u00b0C. The filtered supernatant was collected and further fractionated using a higher cut-off filter (50 KDa) in a similar way.\n\n### Cell preparation for analysis\n\nFor draining lymph node (DLN) analysis, axillary, brachial, and inguinal LNs (one of each) were harvested from the tumor-bearing side (left or right flank) of mice. All LNs were minced and pooled. Average LN cell numbers (total pooled LN cells/3) were used as absolute cell numbers. For tumor-infiltrating lymphocyte (TIL) analysis, tumor tissue was harvested and cut into 1\u20132 mm pieces with scissors followed by digestion with collagenase type IV (Worthington Biochemical Corporation, Lakewood, NJ, Catalog # LS004188) using a gentle MACS Dissociator (Miltenyi Biotec). The numbers of TILs per mg of tumor tissue were used as the absolute numbers.\n\n### Flow cytometry analysis\n\nThe following monoclonal antibodies (mAbs) were used to detect the respective antigens during FACS staining: CD8 (53\u20136.7), CD62L (MEL-14), CD44 (IM7), CD45.2 (104), T-bet (4B10), IFN-\u03b3 (XMG-1.2) from BioLegend (San Diego, CA, USA); and Ki67 (SolA15) from eBioscience (San Diego, CA, USA). All flow cytometry experiments were performed on a FACS Canto II (BD Biosciences, Franklin Lakes, NJ, USA), and analyzed using the FlowJo software (FLOWJO, LLC, Ashland, OR, USA).\n\nMitochondrial mass, membrane potential, mitochondrial superoxide, and cellular ROS were determined by MitoTracker Green, MitoTracker Deep Red, MitoSOX Red, and CellROX Green reagents, respectively (all from Life Technologies, Carlsbad, CA, USA). The cells were washed twice with D-PBS buffer followed by the addition of dye solution with final concentrations of 0.125, 0.125, 5.0, and 0.625 \u03bcM, respectively, in RPMI media and incubated at 37\u00b0C in a 5% CO2 humidified incubator for 30 min. After incubation, cells were washed twice with D-PBS buffer followed by surface staining.\n\n### Intranuclear staining\n\nFor intranuclear staining, cells were fixed and permeabilized using the Foxp3 staining kit (Thermo Fisher Scientific, Catalog # 00-5523-00) following the manufacturer\u2019s instructions. After fixation and permeabilization, cells were incubated with the respective antibody for 15 min at 4\u00b0C in the dark, followed by washing with FACS buffer (PBS, 0.5\u20131% BSA or 5\u201310% FBS, 0.1% NaN3 sodium azide).\n\n### Intracellular cytokine staining for IFN- \u03b3\n\nHomogenized tumor mass cells from in vivo treated experimental mice were incubated for 4 hrs at 37\u00b0C in a 5% CO2 humidified incubator. After incubation, Brefeldin A and Monensin (eBioscience, Invitrogen, Carlsbad, CA, USA; catalog # 4506\u201351 and 4505\u201351 respectively) were added at the concentration of 5 \u03bcg/mL and 2 \u03bcM as per the manufacturer\u2019s instructions and incubated for further 2 hrs. Following a total of six hours of incubation, cells were washed once with D-PBS and further stained for surface proteins, if any. Cells were then fixed with 1.5% paraformaldehyde solution (incubated for 15 min at 4\u00b0C) and washed twice with FACS buffer. Cells were then treated with 0.5% Triton-X-100 in PBS and incubated for 15 min at 4\u00b0C to permeabilize the cells. Monoclonal antibodies to IFN- \u03b3 were added (the concentration was pre-optimized) and incubated for 15 min at 4\u00b0C followed by washing with FACS buffer.\n\n### qRT-PCR\n\nWe isolated RNA from the\u00a0experimental\u00a0groups with the RNeasy mini kit (QIAGEN, Hilden, Germany) and synthesized cDNA by reverse transcription (Invitrogen). The primers used to perform quantitative\u00a0reverse\u00a0transcription PCR (qRT-PCR)\u00a0are listed here.\u00a0The primers pairs used\u00a0were FP: TACCACCCCATCTGGTCATT, RP:\u00a0GGACGTTTTGTTTGGTTGGT\u00a0for CD39; FP: CAAATCCCACACAACCACTG, RP: TGCTCACTTGGTCACAGGAC for CD73; FP: CAAGGGAGTCTGGAACATTG, RP: ACCCAGGTCCTCGCTTATGA for COX2; FP: ATGAGTACACGAAGCCGAGG, RP: CCAGTATTACAGGAGTGACCCAG for mPGES1; FP: CACTGAGCACGGACGGACTGAGA, RP: TCCAATGCTTTCAGGTCTTGACGC for IDO1; FP: CGGAAATCATATCCAACCAG, RP: TGAGGACCGCTAGCAAGTTTG for PGC-1\u03b1; FP: GGTGTTCGGTGAGATTGTAGAG, RP: GTGATAAAACCGTGCTTCTGG for PGC-1\u03b2; and FP: TATTGGCAACGAGCGGTTCC, RP: GGCATAGAGGTCTTTACGGATGT for \u03b2-actin. \u03b2-actin was used as loading control.\n\n### Measurement of oxygen consumption rates and extracellular acidification rate\n\nThe oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) of treated cells were measured using an XFe96 Extracellular Flux analyzer (Seahorse Biosciences, North Billerica, MA, USA). One day before the experiment, first the XFe96 plate was coated with CellTak solution as per the manufacturer\u2019s recommendation. On the day of the experiment, all chemicals (e.g. Oligomycin, FCCP, and Rotenone/Antimycin A) were prepared in OCR media as per the manufacturer\u2019s recommendation and the machine was calibrated using the calibrant buffer in the calibrant plate prior to the experiment. 400 thousand cells per well were seeded in the precoated XFe96 plate and the OCR/ECAR was measured. Different parameters from the OCR graph were calculated. ATP turnover was defined as follows: (last rate measurement before oligomycin) - (minimum rate measurement after oligomycin injection). Maximal respiration was defined as follows: (maximum rate measurement after FCCP) - (non-mitochondrial respiration). Spare respiratory capacity (SRC) was calculated by subtracting basal respiration from maximal respiration. We measured the ECAR value in the same well, which contained an optimal glucose level so the basal ECAR (or glycolysis) value is the reading we obtained immediately before oligomycin injection. We prepared the assay medium as described in the XF cell Mito Stress Test Kit (Kit 103015\u2013100). The glucose concentration in this medium is 10 mM. In the classical glycolytic assay procedure (glucose-free media) the final concentration of glucose added to the port was 10 mM while measuring flux. The basal ECAR value in this classical method is calculated by subtracting the last rate measurement before the glucose injection from the maximum rate measurement before the oligomycin injection, which gives essentially the same value if calculated by our method. Glycolytic capacity was defined as the rate measured after the oligomycin injection. The glycolytic reserve was defined as follows: (glycolytic capacity) \u2013 (basal ECAR value).\n\n### Statistics\n\nStatistical analysis was performed using Prism 6 (GraphPad Software, La Jolla, CA, USA). One-way ANOVA analysis followed by Sidak's multiple comparison test was utilized to analyze three or more variables. To compare two groups, student\u2019s t-test was used. All statistical tests were two-sided assuming parametric data, and a p-value of\u00a0<0.05 was considered significant. The variations of data were evaluated as the means\u00a0\u00b1\u00a0standard error of the mean (SEM). Five or more samples were thought to be appropriate for the sample size estimate in this study. Samples and animals were randomly chosen from the pool and treated. No blinding test was used for the treatment of samples and animals.\n\n### Study approval\n\nMice were maintained under specific pathogen-free conditions at the Institute of Laboratory Animals, Graduate School of Medicine, Kyoto University under the direction of the Institutional Review Board.\n",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "8bf3ab8d-ea09-43b2-8d11-44f4ec4e0773",
+      "submission_id": "7a7819a3-7d75-471a-bf8a-ff983349baaa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yutaka Kawakami, Keio University School of Medicine Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52330.sa1](https://doi.org/10.7554/eLife.52330.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Tumors attenuating the mitochondrial activity in T cells escape from PD-1 blockade therapy\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Guest Reviewing Editor and Jeffrey Settleman as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Madhusudhanan Sukmar (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nKumar A et al. described non-protein (heat stable) small molecule (less than 3kDa) soluble factors from murine tumor cells might be responsible for systemic T cell suppression through impairment of mitochondrial activity in vitro and in vivo by using bilateral transplanted in vivo tumor models and various metabolic and mitochondria assays. The authors classified responsive tumors (MC38 and GL271 in B6 mice, MethA in BALB/c mice) and unresponsive tumors (LLC and Pan02 in B6, CT26 in BALB/c) with this soluble factor mechanism. (B16 is an unresponsive tumor due to MHC loss, not due to soluble factors). The factors also downregulated glycolysis as evidenced by decreased ECAR. The mitochondrial activators bezafibrate partially reversed this immunosuppression in vivo. The authors concluded that such a soluble factor from tumor cells is one of the systemic immunosuppressive mechanisms through impairment of energy metabolism of T cells, and may be responsible for unresponsiveness of some cancers to PD-1 blockade.\n\nEssential revisions:\n\n1) This is an intriguing study showing that soluble factors from tumor cells systemically inhibit energy metabolism of anti-tumor T cells. Although the authors clearly demonstrated presence of non-protein small molecule soluble factors derived from some of the PD-1 Ab unresponsive murine tumor cell lines in multiple tumors and mice, some of the results are duplication of the previous reports such as the authors' own work (bezafibrates and mitochondrial activation potentiating immunotherapy) and others' reports such as T cell suppression by small molecules from tumor cells, and unresponsiveness of B16 through MHC class I loss. Therefore, the responsible molecules may be identified or their unique activity on energy metabolic pathway different from the previously reported immunosuppressive factors should be shown.\n\n2) It is not clear whether the new soluble factors (systemic immunosuppressive property (SIP) factor) really affect specifically on energy metabolism including mitochondrial activity and glycolysis. The factors might non-specifically inhibit T cell activation and proliferation, resulting in impaired energy metabolism. Without identification of the molecules, the authors need to show the unique property of the factors that preferential inhibit energy metabolism pathway, not other T cell activation signaling and pathway, etc. Because the authors clearly showed multiple responsive and unresponsive murine tumor cell lines, comparative studies of metabolome for responsible molecules, and transcriptome for responsible enzymes and pathways, may be performed, and the results will lead to the mechanistic insights for the authors' intriguing findings and lead to the major advance in cancer immunology.\n\n3) It is important to clarify if the impairment of mitochondrial activity by the SIP factors is dependent on PGC-1\u03b1 and mitochondria biogenesis, because the authors and others (Scharping et al. Immunity 2016) have previously shown that mitochondrial biogenesis is inhibited in T cells, and bezafibrate enhances PGC-1\u03b1 expression.\n\n4) The authors analyzed T cells only in draining lymph nodes and T cell induction level. It is also important to analyze the effects on effector T cells in tumors. Transcriptional profiling of T cells cultured with boiled LLC supernatant for various times will provide some insights into the nature of the SIP factors.\n\n5) The timing of implant of unresponsive tumors and responsive tumors in in vivo experiments may be changed. For example, responsive tumors on day 0, followed by injection of unresponsive tumors on day 6. The experiments will characterize the nature of the SIP factors.\n\n6) Because the SIP factors inhibited T cells in vitro, similar activity is also be evaluated in various human cancer cell lines.\n",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b12a77e5-3b0a-409b-a68c-0661d3838415",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C1",
+      "claim": "PD-1 blockade therapy has revolutionized cancer treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "PD-1 blockade therapy has revolutionized cancer treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the impact of PD-1 blockade therapy, supported by established scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "428a85fa-8c91-4e2c-9eaf-6dfbe07b914f",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C2",
+      "claim": "A substantial population of patients is unresponsive to PD-1 blockade therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a substantial population of patients is unresponsive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field of cancer immunotherapy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "8f706e07-a15d-48de-88b9-e9901a46ce36",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C3",
+      "claim": "Unresponsive tumors can be categorized into two groups: with and without systemic immunosuppressive property (SIP).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a 'bilateral tumor model' where responsive and unresponsive tumors were inoculated into different sides of the mouse belly, we demonstrated that unresponsive tumors can be categorized into two groups: with and without systemic immunosuppressive property (SIP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the bilateral tumor model described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "cc27ef88-d07b-49c7-88ef-3ce23554c987",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C4",
+      "claim": "SIP-positive tumors released uncharacterized, non-proteinaceous small molecules that inhibited mitochondrial activation and T cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "The SIP-positive tumors released uncharacterized, non-proteinaceous small molecules that inhibited mitochondrial activation and T cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing the effects of tumor supernatants on T cell function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "5787f79a-4688-4fad-9262-f28210b9bc50",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C5",
+      "claim": "The SIP-negative B16 tumor escaped from immunity by losing MHC class I expression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the SIP-negative B16 tumor escaped from immunity by losing MHC class I expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing MHC class I expression patterns in different tumor cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "83e5a680-7545-4cce-bfcf-e7c6f5e450ef",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C6",
+      "claim": "Unresponsiveness of SIP-positive tumors was partially overcome by improving the mitochondrial function with a mitochondrial activator.",
+      "claim_type": "EXPLICIT",
+      "source": "Unresponsiveness of SIP-positive tumors was partially overcome by improving the mitochondrial function with a mitochondrial activator; this was not successful for B16, which employs immune ignorance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from combination therapy experiments with bezafibrate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "dc567cfa-95b5-4111-b07b-5ec8989784a5",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C7",
+      "claim": "The 'bilateral tumor model' was useful for stratifying tumors to investigate the mechanism of unresponsiveness and develop a strategy for proper combination therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that the 'bilateral tumor model' was useful for stratifying tumors to investigate the mechanism of unresponsiveness and develop a strategy for proper combination therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental results obtained using the bilateral tumor model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "279c4a99-a913-4c49-a99e-6d6f8c8ce745",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C8",
+      "claim": "Cancer immunotherapy using immune checkpoint blockade has made a revolution in cancer treatments as this treatment has durable response even to terminal stage cancers and lesser side-effects compared to the conventional cancer treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cancer immunotherapy using immune checkpoint blockade, particularly antibodies against programmed cell death receptor 1 (PD-1) or its ligand (PD-L1), has made a revolution in cancer treatments as this treatment has durable response even to terminal stage cancers and lesser side-effects compared to the conventional cancer treatments (Brahmer et al., 2010; Couzin-Frankel, 2013; Hodi et al., 2010; Mahoney et al., 2015; Topalian et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "4fde0e56-2797-430e-a8e4-01077e62f89c",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C9",
+      "claim": "The FDA approved antibodies for PD-1 (e.g. nivolumab, pembrolizumab) or PD-L1 (e.g. Atezolizumab, Avelumab, Durvalumab) for different types of human cancers including metastatic non-small cell lung carcinoma (NSCLC), squamous cell lung cancer, renal cell carcinoma, hodgkin's lymphoma, head and neck squamous cell carcinoma, and recently, for microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "The success of clinical trials for the PD-1/PD-L1 axis blockade led the FDA to approve antibodies for PD-1 (e.g. nivolumab, pembrolizumab) or PD-L1 (e.g. Atezolizumab, Avelumab, Durvalumab) for different types of human cancers including metastatic non-small cell lung carcinoma (NSCLC), squamous cell lung cancer, renal cell carcinoma, hodgkin's lymphoma, head and neck squamous cell carcinoma, and recently, for microsatellite instability-high (MSI-H) or mismatch repair deficient (dMMR) cancers that include many late-stage cancers (Chowdhury et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "ae66a88f-7d68-4181-beeb-5dc77f758942",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C10",
+      "claim": "Most studies on biomarkers and resistance mechanisms have focused only on the tumor's intrinsic properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Most studies on biomarkers and resistance mechanisms have focused only on the tumor's intrinsic properties (Cristescu et al., 2018; Ribas, 2015; Rieth and Subramanian, 2018; Wellenstein and de Visser, 2018; Zou et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "c2ecde33-fe18-452a-a746-fa1d54c59b21",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C11",
+      "claim": "Tumors can be roughly classified as 'immunologically hot (inflamed)' with an abundance of tumor-infiltrating lymphocytes (TILs) and 'immunologically cold (noninflamed)' with an absence of a sufficient population of pre-existing immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In one such model, the 'Cold and Hot tumor hypothesis', tumors can be roughly classified as 'immunologically hot (inflamed)' with an abundance of tumor-infiltrating lymphocytes (TILs) and 'immunologically cold (noninflamed)' with an absence of a sufficient population of pre-existing immune cells (Bonaventura et al., 2019; van der Woude et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "cfb9c659-8217-4bc9-8484-fab051dc6eb4",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C12",
+      "claim": "Clinical failures in many patients could be due to an imbalance between T-cell reinvigoration and tumor burden.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, some groups claim that clinical failures in many patients could be due to an imbalance between T-cell reinvigoration and tumor burden (Borcoman et al., 2018; Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "824ad456-f61e-437d-81f9-509710785f7e",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C13",
+      "claim": "CD8+ T cells are the major immune effector cells for attacking tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "CD8+ T cells, the major immune effector cells for attacking tumors, are subject to negative regulation by multiple mechanisms in tumor-bearing hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of tumor immunology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "42678780-e75f-460e-9be1-6ecfb8a92227",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C14",
+      "claim": "Some of the well-known negative regulatory cells and soluble factors include myeloid-derived suppressor cells (MDSC), innate lymphoid cells (ILC), tumor-associated macrophages (TAM), regulatory CD4+ T cells (Tregs), regulatory B cells (Bregs), transforming growth factor \u03b2 (TGF-\u03b2), interleukin-10 (IL-10), adenosine, granulocyte-macrophage colony-stimulating factor (GM-CSF), prostaglandin E2 (PGE2), and L-Kynurenine.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the well-known negative regulatory cells and soluble factors include myeloid-derived suppressor cells (MDSC), innate lymphoid cells (ILC), tumor-associated macrophages (TAM), regulatory CD4+ T cells (Tregs), regulatory B cells (Bregs), transforming growth factor \u03b2 (TGF-\u03b2), interleukin-10 (IL-10), adenosine, granulocyte-macrophage colony-stimulating factor (GM-CSF), prostaglandin E2 (PGE2), and L-Kynurenine (Artis and Spits, 2015; DeNardo and Ruffell, 2019; Facciabene et al., 2012; Sarvaria et al., 2017; Tauriello et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "f5c49eb9-c815-4c28-bd9f-aec1907b3c39",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C15",
+      "claim": "Lack of MHC class I and neo-antigen on tumor cells cause unresponsiveness because T cells cannot recognize the tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Lack of MHC class I and neo-antigen on tumor cells also cause unresponsiveness because T cells cannot recognize the tumor (Garrido et al., 2016; McGranahan et al., 2017; Rodr\u00edguez, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "f58a9e77-05d8-4242-b210-d06d21e06171",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C16",
+      "claim": "The tumor microenvironment allows tumor cells to escape from immune attack.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumor microenvironment, influenced by the above mechanisms, allows tumor cells to escape from immune attack (DeNardo and Ruffell, 2019; Russo and Protti, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "f06acaf8-3470-481b-8499-49986c0d8017",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C17",
+      "claim": "Energy metabolism mediated by mitochondrial activity regulates the fate of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Energy metabolism mediated by mitochondrial activity regulates the fate of T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of T cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "167ee19e-8fd4-43ee-a003-6e9baed665d4",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C18",
+      "claim": "Mitochondria play an important role in antigen-specific T cell activation through signaling of mitochondrial-derived reactive oxygen species (ROS).",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that mitochondria play an important role in antigen-specific T cell activation through signaling of mitochondrial-derived reactive oxygen species (ROS) (Mallilankaraman, 2018; Murphy and Siegel, 2013; Sena et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "7224d5b8-c099-4c39-89ae-71a7657b987c",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C19",
+      "claim": "Mitochondria are activated in tumor-reactive CTLs during PD-1 blockade therapy in MC38 tumor-bearing hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported that mitochondria are activated in tumor-reactive CTLs during PD-1 blockade therapy in MC38 tumor-bearing hosts (Chamoto et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "bd3201b4-4dac-42de-b87d-b5fd5edf6220",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C20",
+      "claim": "Boosting fatty acid oxidation with a metabolic modulator enhanced the PD-1 blockade effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Boosting fatty acid oxidation with a metabolic modulator enhanced the PD-1 blockade effect (Chowdhury et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "77a08a7d-2699-4c23-9199-78f635731cb6",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C21",
+      "claim": "Attenuation of the mitochondrial activity of T cells by tumor-mediated factors could be an immune escape mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, attenuation of the mitochondrial activity of T cells by tumor-mediated factors could be an immune escape mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from previous observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "cbb1960d-cac8-452a-8a3f-b29b014dea2e",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C22",
+      "claim": "GL261, MC38, and MethA were characterized as responsive tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "As summarized in 'Table 1', GL261, MC38, and MethA were characterized as responsive tumors while LLC, B16, Pan02, and CT26 were characterized as unresponsive tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "8d0ebfc2-e9ee-4fc6-ba96-27afe831344b",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C23",
+      "claim": "LLC, B16, Pan02, and CT26 were characterized as unresponsive tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "As summarized in 'Table 1', GL261, MC38, and MethA were characterized as responsive tumors while LLC, B16, Pan02, and CT26 were characterized as unresponsive tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "2d3eff27-73fc-4750-b3d8-de563c414848",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C24",
+      "claim": "Both the total lymphocytes and the effector memory CD8+ T cells in draining lymph nodes significantly increased in the group of responsive tumors after PD-1 blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "We found both the total lymphocytes and the effector memory CD8+ T cells (defined as CD62Llow CD44high, P3) in draining lymph nodes (DLNs) significantly increased in the group of responsive tumors, but did not change in unresponsive tumor-bearing hosts after PD-1 blockade (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "31918a80-979a-4f80-a5a2-d6532a434068",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C25",
+      "claim": "Total lymphocytes and effector memory CD8+ T cells in draining lymph nodes did not change in unresponsive tumor-bearing hosts after PD-1 blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "We found both the total lymphocytes and the effector memory CD8+ T cells (defined as CD62Llow CD44high, P3) in draining lymph nodes (DLNs) significantly increased in the group of responsive tumors, but did not change in unresponsive tumor-bearing hosts after PD-1 blockade (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "fb1c6853-a5cf-4cad-a577-126f23137d26",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C26",
+      "claim": "Total CD44+ T cells which include both central memory and effector memory were larger after the PD-1 blockade therapy over ctrl IgG treated group in the hosts with responsive tumor.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, total CD44+ T cells which include both central memory (CD62Lhigh CD44high, P2) and effector memory (CD62Llow CD44high, P3) were also larger after the PD-1 blockade therapy over ctrl IgG treated group in the hosts with responsive tumor (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "6043f9cf-580b-41ef-bb02-dd0c7a9cd7fd",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C27",
+      "claim": "The frequency of CD8+ tumor-infiltrating lymphocytes increased after PD-1 blockade in the group of responsive tumor-bearing hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of CD8+ tumor-infiltrating lymphocytes (TILs) also increased after PD-1 blockade in the group of responsive tumor-bearing hosts, but not in unresponsive tumor-bearing hosts (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "0dfae49f-3570-4141-87ed-edcbf781d966",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C28",
+      "claim": "The frequency of CD8+ tumor-infiltrating lymphocytes did not increase after PD-1 blockade in unresponsive tumor-bearing hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of CD8+ tumor-infiltrating lymphocytes (TILs) also increased after PD-1 blockade in the group of responsive tumor-bearing hosts, but not in unresponsive tumor-bearing hosts (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "f15dc707-df1a-4a09-8318-f1eb9f5d062d",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C29",
+      "claim": "The expression of T-bet and IFN-\u03b3 increased after PD-1 blockade treatment in the group bearing responsive tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of T-bet and IFN- \u03b3, which reflect the activity of Th1-type cytotoxic activity, increased after PD-1 blockade treatment in the group bearing responsive tumors, but did not in the unresponsive tumor-bearing group (Figure 1E and F; Sullivan et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E and F, and citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "8c107e55-c5d2-40a6-a2bb-9eb1102be6f4",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C30",
+      "claim": "The expression of T-bet and IFN-\u03b3 did not increase after PD-1 blockade treatment in the unresponsive tumor-bearing group.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of T-bet and IFN- \u03b3, which reflect the activity of Th1-type cytotoxic activity, increased after PD-1 blockade treatment in the group bearing responsive tumors, but did not in the unresponsive tumor-bearing group (Figure 1E and F; Sullivan et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "0b488fe1-567c-4c72-93df-e6f678cb407b",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C31",
+      "claim": "Anti-tumor immune responses increased only in hosts with responsive tumors but not in hosts with unresponsive tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, anti-tumor immune responses increased only in hosts with responsive tumors but not in hosts with unresponsive tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "de434f92-639d-4d1b-92a4-6055f44b8794",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C32",
+      "claim": "Mitochondrial activation in CD8+ T cells is a marker of CTLs activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have previously reported that mitochondrial activation in CD8+ T cells is a marker of CTLs activation (Buck et al., 2016; Chamoto et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "ab32ad3a-51a3-4788-aff7-e5c122dfd355",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C33",
+      "claim": "DLN CD8+ T cells from responsive tumor-bearing hosts had significantly higher basal respiration, maximal respiration, spare respiratory capacity, and ATP turnover by PD-1 blockade.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that DLN CD8+ T cells from responsive (MC38 and GL261) tumor-bearing hosts had significantly higher basal respiration, maximal respiration, spare respiratory capacity (SRC), and ATP turnover by PD-1 blockade, which was not observed in unresponsive (B16 and LLC) tumor-bearing hosts (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "cc15f2a8-a62a-4e58-9f29-d6124c61912f",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C34",
+      "claim": "Higher basal respiration, maximal respiration, spare respiratory capacity, and ATP turnover by PD-1 blockade was not observed in unresponsive tumor-bearing hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that DLN CD8+ T cells from responsive (MC38 and GL261) tumor-bearing hosts had significantly higher basal respiration, maximal respiration, spare respiratory capacity (SRC), and ATP turnover by PD-1 blockade, which was not observed in unresponsive (B16 and LLC) tumor-bearing hosts (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "fc0f5069-537f-4402-a1f7-0cb7d7dcd0a6",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C35",
+      "claim": "Mitochondrial superoxide production and Cellular ROS in CD8+ TIL were increased by PD-1 blockade therapy only in responsive tumor-bearing mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, mitochondrial superoxide production (MitoSox) and Cellular ROS (CellRos) in CD8+ TIL were increased by PD-1 blockade therapy only in responsive tumor-bearing mice (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "f5f8c64a-56b7-4e7b-b3a7-3b8852fcc5f3",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C36",
+      "claim": "Increased activity in CD8+ T cells by PD-1 blockade in responsive tumor-bearing mice parallels with their activation status of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, increased activity in CD8+ T cells by PD-1 blockade in responsive tumor-bearing mice parallels with their activation status of mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data presented in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "80460391-8bbe-44da-8a18-b12167b98fce",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C37",
+      "claim": "When unresponsive tumors (LLC or Pan02) were present on the left side, the growth inhibition of the responsive MC38 on the right by the PD-1 blockade therapy was inefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3B, we found that when unresponsive tumors (LLC or Pan02) were present on the left side, the growth inhibition of the responsive MC38 on the right by the PD-1 blockade therapy was inefficient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "c7ac74f6-39b2-4ab8-ae81-bcff78b77d7a",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C38",
+      "claim": "When the unresponsive B16 was on the left, the responsive MC38 or GL261 were rejected by PD-1 blockade as efficiently as the case in which no tumor was on the left side.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the unresponsive B16 was on the left, the responsive MC38 or GL261 were rejected by PD-1 blockade as efficiently as the case in which no tumor was on the left side (Figure 3B and Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "94e25974-6d78-4b38-84c5-5824a2aca66e",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C39",
+      "claim": "The sizes of the left unresponsive tumor in the same experiment were not inhibited by the PD-1 blockade therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "The sizes of the left unresponsive tumor in the same experiment were not inhibited by the PD-1 blockade therapy (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "915d4679-a86d-4be7-aceb-17b80de3c1ab",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C40",
+      "claim": "The unresponsive LLC and Pan02 tumors may have released immune suppressive factors, while the unresponsive B16 did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we speculated that the unresponsive LLC and Pan02 tumors may have released immune suppressive factors, while the unresponsive B16 did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from the bilateral tumor model data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "329d0862-1deb-45b9-83f6-2d5268b33dd1",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C41",
+      "claim": "CT26 is an unresponsive tumor with SIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the same experimental design, we performed the bilateral tumor experiment in mice on another background (BALB/c) and identified that CT26 is an unresponsive tumor with SIP (Figure 3C and Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "90f45add-17b1-4b17-901e-9663e0d884d9",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C42",
+      "claim": "The absolute number of lymphocytes in the DLN on the side with MC38 was increased by PD-1 blockade in mice with the SIP-negative B16 on the other side.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4B, the absolute number of lymphocytes in the DLN on the side with MC38 was increased by PD-1 blockade in mice with the SIP-negative B16 on the other side, but not when the SIP-positive LLC was on the other side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "3a429ab2-a885-43d9-afd9-11d635be3eab",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C43",
+      "claim": "The absolute number of lymphocytes in the DLN on the side with MC38 was not increased by PD-1 blockade when the SIP-positive LLC was on the other side.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4B, the absolute number of lymphocytes in the DLN on the side with MC38 was increased by PD-1 blockade in mice with the SIP-negative B16 on the other side, but not when the SIP-positive LLC was on the other side.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "e9996143-7bc0-40a9-b995-02a7e9d3870e",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C44",
+      "claim": "Mitochondrial ROS production, mass, OCR and ATP turnover in DLN CD8+ T cells were enhanced by PD-1 blockade on the MC38 side in the presence of B16 on the other side.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, mitochondrial ROS production, mass, OCR and ATP turnover in DLN CD8+ T cells were also enhanced by PD-1 blockade on the MC38 side in the presence of B16 on the other side, but not the case when SIP-positive LLC was inoculated on the other side (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "31f7e846-fa0c-4a9d-9781-d3d7a4095520",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C45",
+      "claim": "Mitochondrial ROS production, mass, OCR and ATP turnover in DLN CD8+ T cells were not enhanced by PD-1 blockade when SIP-positive LLC was inoculated on the other side.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, mitochondrial ROS production, mass, OCR and ATP turnover in DLN CD8+ T cells were also enhanced by PD-1 blockade on the MC38 side in the presence of B16 on the other side, but not the case when SIP-positive LLC was inoculated on the other side (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "307d057b-a777-4658-8087-0bdfd5c3627a",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C46",
+      "claim": "The PD-1 blockade treatment did not change the mitochondrial activation status in the unresponsive tumor sides (B16 and LLC).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the PD-1 blockade treatment did not change the mitochondrial activation status in the unresponsive tumor sides (B16 and LLC) (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "ec54888e-6a54-4671-8719-e2bff022b779",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C47",
+      "claim": "Only the LLC systemically inhibited the mitochondrial activation of CTLs during the PD-1 blockade therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, while both LLC and B16 were unresponsive, only the LLC systemically inhibited the mitochondrial activation of CTLs during the PD-1 blockade therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "8d98b4b2-f7b6-4879-9d98-99be57f3945a",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C48",
+      "claim": "The growth of responsive tumors (MC38, GL261, and MethA) was significantly restricted in wild type compared with Rag2-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5A, the growth of responsive tumors (MC38, GL261, and MethA) was significantly restricted in wild type compared with Rag2-/- mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "9c3e56a8-3fcc-45a9-a779-668e0ed8c6ff",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C49",
+      "claim": "Unresponsive tumors were more or less insensitive to acquired immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, unresponsive tumors were more or less insensitive to acquired immunity (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "6e8d25c4-1057-4c67-8871-bae553a262f6",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C50",
+      "claim": "Some unresponsive tumors with SIP (LLC and CT26) were sensed to a small extent by acquired immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that some unresponsive tumors with SIP (LLC and CT26) were sensed to a small extent by acquired immunity while unresponsive tumors without SIP (B16) were completely ignored (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B and summarized in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "6c595691-fef8-41c3-92d7-cec093ebc254",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C51",
+      "claim": "Unresponsive tumors without SIP (B16) were completely ignored by acquired immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that some unresponsive tumors with SIP (LLC and CT26) were sensed to a small extent by acquired immunity while unresponsive tumors without SIP (B16) were completely ignored (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B and summarized in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "15fa5924-5d78-4e52-9b00-d5e05f18f45a",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C52",
+      "claim": "B16 does not express MHC class I even after stimulation with IFN-\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that B16 does not express MHC class I even after stimulation with IFN-\u03b3, but others do (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "9265258f-6970-4c0f-a247-b8faaa555ea2",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C53",
+      "claim": "B16 acquired unresponsiveness by employing local immunological ignorance instead of SIP.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, B16 acquired unresponsiveness by employing local immunological ignorance instead of SIP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing lack of MHC class I expression in B16.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "a269b5f5-6b45-4e8d-bda0-92f49847796e",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C54",
+      "claim": "One of the mechanisms of unresponsiveness in tumors without SIP is lack of MHC class I expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that one of the mechanisms of unresponsiveness in tumors without SIP is lack of MHC class I expression, and suggest that elimination of the suppressive factor would facilitate the enhancement of PD-1 blockade therapeutic efficacy only in unresponsive tumors with SIP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data presented in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "95d01044-0669-41fd-9f8f-fade0ab57fd1",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C55",
+      "claim": "Elimination of the suppressive factor would facilitate the enhancement of PD-1 blockade therapeutic efficacy only in unresponsive tumors with SIP.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that one of the mechanisms of unresponsiveness in tumors without SIP is lack of MHC class I expression, and suggest that elimination of the suppressive factor would facilitate the enhancement of PD-1 blockade therapeutic efficacy only in unresponsive tumors with SIP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "8a2d3247-2423-4548-a2ba-60427894e45e",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C56",
+      "claim": "T cell proliferation was significantly inhibited in the presence of supernatants from LLC or CT26.",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferation assays (thymidine incorporation and Ki67 detection assays) demonstrated that T cell proliferation was significantly inhibited in the presence of supernatants from LLC or CT26, but not in the presence of supernatants from B16, GL261 or MethA (Figure 6B and Figure 6\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B and Figure 6\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "4e33ffee-1526-4b72-b75e-ffa539ce62d1",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C57",
+      "claim": "T cell proliferation was not inhibited in the presence of supernatants from B16, GL261 or MethA.",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferation assays (thymidine incorporation and Ki67 detection assays) demonstrated that T cell proliferation was significantly inhibited in the presence of supernatants from LLC or CT26, but not in the presence of supernatants from B16, GL261 or MethA (Figure 6B and Figure 6\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B and Figure 6\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "19c81b5d-d88f-4f5b-9efe-9eeb6da5dcb7",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C58",
+      "claim": "The suppressive effects of soluble factors from the LLC supernatant was evidenced by the restoration of T cell proliferation when the supernatant was diluted.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppressive effects of soluble factors from the LLC supernatant was further evidenced by the restoration of T cell proliferation when the supernatant was diluted (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "d9724dfe-2971-407d-a254-f7abf80dd78b",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C59",
+      "claim": "The SIP factor production is not only specific to mouse cell lines, but also to human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "It is of note that the SIP factor production is not only specific to mouse cell lines, but also to human cell lines (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "146875e5-6197-4b33-9ef5-b76eea52f309",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C60",
+      "claim": "Different parameters of mitochondrial activation such as cellular ROS and mitochondrial potential were significantly inhibited by the LLC supernatant compared with the B16 and GL261 supernatants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, different parameters of mitochondrial activation such as cellular ROS and mitochondrial potential were significantly inhibited by the LLC supernatant compared with the B16 and GL261 supernatants (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "68386508-01c6-40aa-8b2f-ed4a760fad1a",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C61",
+      "claim": "The OCR and the extracellular acidification rate were severely reduced in CD8+ T cells cultured for 48 hrs in the presence of LLC supernatants compared with those from B16 and GL261.",
+      "claim_type": "EXPLICIT",
+      "source": "The OCR and the extracellular acidification rate (ECAR), a parameter for glycolytic function, were severely reduced in CD8+ T cells cultured for 48 hrs in the presence of LLC supernatants compared with those from B16 and GL261 (Figure 6D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "00535f01-44ae-4b6b-8b8f-1fc13a1c049b",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C62",
+      "claim": "Mitochondrial activation parameters were inhibited in the presence of LLC supernatants immediately.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6F, mitochondrial activation parameters were inhibited in the presence of LLC supernatants immediately, indicating that SIP factors highly likely inhibit mitochondrial activity directly, but not cellular transcriptional activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "a97c543c-c666-488e-ba27-459a0c452989",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C63",
+      "claim": "SIP factors highly likely inhibit mitochondrial activity directly, but not cellular transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6F, mitochondrial activation parameters were inhibited in the presence of LLC supernatants immediately, indicating that SIP factors highly likely inhibit mitochondrial activity directly, but not cellular transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the rapid effect of LLC supernatants on mitochondrial parameters.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "3c9961f6-3e67-43d4-8179-d57bd9f2a86d",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C64",
+      "claim": "The transcriptional levels of PGC-1\u03b1/\u03b2 did not change within 2 hrs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the transcriptional levels of PGC-1\u03b1/\u03b2, a master regulator of mitochondrial activation, did not change within 2 hrs (Figure 6\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "9804b0c7-b85b-4433-84a3-1d86d523d7b9",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C65",
+      "claim": "The SIP factor inhibited B cell mitochondria as well within 2 hrs, showing this suppressive effect is more general.",
+      "claim_type": "EXPLICIT",
+      "source": "The SIP factor inhibited B cell mitochondria as well within 2 hrs, showing this suppressive effect is more general (Figure 6\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "432354a4-e21f-4231-b2e7-b6680da229cb",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C66",
+      "claim": "The immunosuppressive factors released from SIP-positive tumors directly and generally inhibit the mitochondrial function.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the immunosuppressive factors released from SIP-positive tumors directly and generally inhibit the mitochondrial function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing rapid and general effects on mitochondria.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "6a2ca6a1-c545-475b-8ad6-be3d13dea48b",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C67",
+      "claim": "Heat-inactivation of LLC and CT26 culture supernatants did not abolish their suppressive activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6G and Figure 6\u2014figure supplement 1E, heat-inactivation of LLC and CT26 culture supernatants did not abolish their suppressive activity, whereas removing low molecular weight compounds using the DCC treatment eliminated their suppressive activity, suggesting that the suppressive factor(s) may be comprised of non-proteinaceous small molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6G and Figure 6\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "187a08c0-4554-410d-b688-46745a1bc0ec",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C68",
+      "claim": "Removing low molecular weight compounds using the DCC treatment eliminated the suppressive activity of LLC and CT26 culture supernatants.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6G and Figure 6\u2014figure supplement 1E, heat-inactivation of LLC and CT26 culture supernatants did not abolish their suppressive activity, whereas removing low molecular weight compounds using the DCC treatment eliminated their suppressive activity, suggesting that the suppressive factor(s) may be comprised of non-proteinaceous small molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6G and Figure 6\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "195c2e2a-afa8-4d92-a928-f5a3798dd9e5",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C69",
+      "claim": "The suppressive factor(s) may be comprised of non-proteinaceous small molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6G and Figure 6\u2014figure supplement 1E, heat-inactivation of LLC and CT26 culture supernatants did not abolish their suppressive activity, whereas removing low molecular weight compounds using the DCC treatment eliminated their suppressive activity, suggesting that the suppressive factor(s) may be comprised of non-proteinaceous small molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing heat stability and DCC sensitivity.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "5bbbeb02-1449-48d4-b551-e9c9e397e336",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C70",
+      "claim": "Fraction A (<3 KDa) had almost the same inhibition potential as the total culture supernatants.",
+      "claim_type": "EXPLICIT",
+      "source": "We further fractionated the supernatant into 'Fraction A (<3 KDa)' and 'Fraction B (3 ~ 50 KDa)' and found that 'Fraction A' had almost the same inhibition potential as the total culture supernatants (Figure 6H and Figure 6\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6H and Figure 6\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "8bd9ae14-d92c-4efc-a511-97c79a310dd7",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C71",
+      "claim": "Removing small molecules from 'Fraction A' using the DCC treatment restored the proliferation of CD8+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, removing small molecules from 'Fraction A' using the DCC treatment restored the proliferation of CD8+ T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6H and Figure 6\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "432efad7-219b-4f60-9b1c-a349330646a1",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C72",
+      "claim": "There was no relationship between the suppressive property and the expression levels of enzymes including CD39, CD73, COX-2, mPGES1 and IDO1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was no relationship between the suppressive property and the expression levels of enzymes including CD39, CD73, COX-2, mPGES1 and IDO1 (Figure 6\u2014figure supplement 4), suggesting the low possibility of known factors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "f8fa961d-e524-4cdc-b943-a28791a53391",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C73",
+      "claim": "Mitochondrial function of na\u00efve CD8+ T cells was regained significantly when bezafibrate was used along with culture supernatant in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial function of na\u00efve CD8+ T cells was regained significantly when bezafibrate was used along with culture supernatant in vitro (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "a90b0750-6258-476c-878c-511d8bf15f78",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C74",
+      "claim": "The tumor-killing effect by the PD-1 blockade was enhanced and mouse survival was increased in the combination therapy with bezafibrate for LLC tumor-bearing hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the tumor-killing effect by the PD-1 blockade was enhanced and mouse survival was increased in the combination therapy (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "1e3f4320-93a1-4a93-9888-7813947cef1f",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C75",
+      "claim": "The combinatorial treatment could not rescue the B16 tumor-bearing hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note is the fact that the combinatorial treatment could not rescue the B16 tumor-bearing hosts (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "b78b15c9-9326-49e0-89fa-1a7ce39cb583",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C76",
+      "claim": "The survival of SIP-positive CT26 tumor-bearing hosts was improved with the combinatorial therapy with bezafibrate.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed similar results in tumors on the BALB/c background. The survival of SIP-positive CT26 tumor-bearing hosts was improved with the combinatorial therapy with bezafibrate (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "1be1c0b0-27a1-4501-ae80-f8c6d0f50919",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C77",
+      "claim": "The SIP effects of unresponsive tumors were partially rescued by a mitochondrial activation chemical, bezafibrate in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the SIP effects of unresponsive tumors were partially rescued by a mitochondrial activation chemical, bezafibrate in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement based on the experimental data presented in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "fc6315ba-d3b2-4833-bd7f-d32098ae4bd6",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C78",
+      "claim": "Cancers employ at least two strategies to escape from the immune attack: local or systemic immune suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are many unresponsive mechanisms, cancers employ at least two strategies to escape from the immune attack: local or systemic immune suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings from the bilateral tumor model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "b6e51751-c85b-4056-a451-e4acdc042b30",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C79",
+      "claim": "It is difficult to explain the molecular mechanisms of unresponsiveness by the 'hot tumors' and 'cold tumors' definition because it explains the results of immune responses in local tumor areas, but not the induction phase of immune escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Some reports have suggested 'hot tumors' and 'cold tumors' to distinguish responsive and unresponsive tumors based on the level of immune cell infiltration in the tumor mass (van der Woude et al., 2017). However, it is difficult to explain the molecular mechanisms of unresponsiveness by this definition because it explains the results of immune responses in local tumor areas, but not the induction phase of immune escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical analysis of existing models based on the authors' findings.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "20180f69-9f0c-4ce8-975c-cdcdedc59e9c",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C80",
+      "claim": "Small molecule(s) with less than 3 kDa size which is released from SIP-positive tumors appear to attenuate mitochondria-mediated energy metabolism in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paper, we employed the bilateral tumor inoculation model, which can distinguish local immune ignorance from systemic immune suppression, and categorized unresponsive tumors into two groups, with or without SIP. Small molecule(s) with less than 3 kDa size which is released from SIP-positive tumors appear to attenuate mitochondria-mediated energy metabolism in T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data from fractionation and functional assays.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "fe71d6f3-c3b5-41db-9c83-978504ef90fa",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C81",
+      "claim": "Known factors such as suppressive cytokines, adenosine, Prostaglandin E2 (PGE2) and kynurenine are ruled out as the SIP factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We rule out the known factors such as suppressive cytokines, adenosine, Prostaglandin E2 (PGE2) and kynurenine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing no correlation between enzyme expression and SIP property.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "9068a6f1-6d12-4104-b4ac-743fbb868fb3",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C82",
+      "claim": "Tumor cells show dysregulated cellular metabolism and the metabolic products often induce immune suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor cells show dysregulated cellular metabolism and the metabolic products often induce immune suppression (DeBerardinis, 2008; Munn and Mellor, 2013; Vazquez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "5c4fc2ce-21fc-46dd-ae88-397ece44c583",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C83",
+      "claim": "Methyl-nicotinamide (MNA) showed no suppression at physiological levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it has been reported that methyl-nicotinamide (MNA), which is converted by nicotinamide N-methyl-transferase (NNMT), acts as an immune suppressive factor (Gebicki et al., 2003), this compound showed no suppression at physiological levels (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data (not shown) and citation to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "13d34e6a-ff4f-4e54-b2a7-f75043e34854",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C84",
+      "claim": "For successful PD-1 blockade therapy, the 'tumor-immunity cycle' needs to operate smoothly.",
+      "claim_type": "EXPLICIT",
+      "source": "For successful PD-1 blockade therapy, the 'tumor-immunity cycle' needs to operate smoothly (Chen and Mellman, 2013; Pio et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "05636fd7-8377-4280-8486-8ead222f11e0",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C85",
+      "claim": "Hindrance in the pathway at any step of antigen recognition, activation, recruitment and killing at the tumor site, DLN or bloodstream would lead to the unresponsive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Hindrance in the pathway at any step of antigen recognition, activation, recruitment and killing at the tumor site, DLN or bloodstream would lead to the unresponsive state (Mushtaq et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "92b74d4b-24af-40d3-a8b7-cfb7c94f593b",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C86",
+      "claim": "LLC systemically inhibits T cell priming at DLN of responsive tumor sides via suppressive factors, but B16 does not.",
+      "claim_type": "EXPLICIT",
+      "source": "Our bilateral tumor model analysis suggests that LLC systemically inhibits T cell priming at DLN of responsive tumor sides via suppressive factors, but B16 does not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data from the bilateral tumor model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "a8279f83-b0ab-4838-b84a-83e96018089e",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C87",
+      "claim": "Tumor recognition by the local tumor area is critical to trigger T cell priming in DLN and to establish a successful tumor-immunity cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that tumor recognition by the local tumor area is critical to trigger T cell priming in DLN and to establish a successful tumor-immunity cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that T cells in DLN on the side of B16 were not activated.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "1f646860-f423-453f-b7fd-77511878759e",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C88",
+      "claim": "Tumors lacking MHC take advantage of the ignorance or escape mechanism not only in the local tumor area but also in DLN.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, tumors lacking MHC take advantage of the ignorance or escape mechanism not only in the local tumor area but also in DLN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings regarding B16 tumor.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "2d465391-fec6-46f7-9304-947efcbf9d34",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C89",
+      "claim": "It is reasonable that LLC but not B16 is susceptible to the combination therapy given that LLC expresses MHC and is sensitive to the acquired immunity to some extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that LLC expresses MHC and is sensitive to the acquired immunity to some extent, it is reasonable that LLC but not B16 is susceptible to the combination therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing differential responses to combination therapy.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "74994720-2585-4b92-8988-64ec2af6998a",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C90",
+      "claim": "Mitochondrial activation is essential for the full activation of T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial activation is essential for the full activation of T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of T cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "3d9e388c-8ec3-4d0d-b83f-fe4f8e94386a",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C91",
+      "claim": "CD28 in addition to CD3 signal is necessary for robust mitochondrial activation during the proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our in vitro assay system for mitochondrial activities, we stimulated na\u00efve CD8+ T cells by anti-(CD3+CD28) mAb beads because CD28 in addition to CD3 signal is necessary for robust mitochondrial activation during the proliferation (Klein Geltink et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "09bec9bd-6fb7-49c6-a00a-404dda29836a",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C92",
+      "claim": "The suppressive factors may inhibit glycolysis, resulting in the attenuation of subsequent OXPHOS reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our OCR data suggest that the suppressive factors downregulate the mitochondrial activity, ECAR also severely inhibited. Therefore, the suppressive factors may inhibit glycolysis, resulting in the attenuation of subsequent OXPHOS reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from the OCR and ECAR data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "607a258f-4293-42e9-8d0a-6b2f86a32c31",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C93",
+      "claim": "T cells rely on glycolysis more than OXPHOS when they differentiate from na\u00efve to effector T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis agrees with the fact that T cells rely on glycolysis more than OXPHOS when they differentiate from na\u00efve to effector T cells (Menk et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "7a2eaa63-04eb-4cf5-a064-a70d337af947",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C94",
+      "claim": "Another possible mechanism for suppression of mitochondrial function by the suppressive factors is inhibition of the downstream signals of CD3 and/or CD28.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possible mechanism for suppression of mitochondrial function by the suppressive factors is inhibition of the downstream signals of CD3 and/or CD28 because these two signals are necessary for the upregulation of glycolysis and OXPHOS in T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on inference from the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "7f495871-92a5-421b-99f2-6ebca3b5148f",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C95",
+      "claim": "Bezafibrate partially removed the mitochondrial inhibition by the suppressive factors in the supernatant in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We found this combination therapy partially restored the PD-1 blockade effect per the in vitro assays where bezafibrate partially removed the mitochondrial inhibition by the suppressive factors in the supernatant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "df86ea6c-a9ab-475c-82c4-6406e7c6b819",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C96",
+      "claim": "Under the situation of 'brake' induced by the suppressive factors, the 'acceleration' by PGC-1\u03b1/PPAR activation would not fully work.",
+      "claim_type": "EXPLICIT",
+      "source": "This partial effect suggests that under the situation of 'brake' induced by the suppressive factors, the 'acceleration' by PGC-1\u03b1/PPAR activation would not fully work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the partial efficacy of bezafibrate combination therapy.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "a0b6ab52-35bd-4cdc-bdbb-a50ee4f7e706",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C97",
+      "claim": "To obtain the maximum benefit, we need to define the suppressive factors and remove the 'brake'.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain the maximum benefit, we need to define the suppressive factors and remove the 'brake'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "32b76a7a-ac36-4cd2-a9f3-dcb47df9f601",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C98",
+      "claim": "The purification of this small molecule by bio-assays will enable us to identify its structure by mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest the possibility of unknown small molecules for suppressive factors. The purification of this small molecule by bio-assays will enable us to identify its structure by mass spectrometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future research approaches.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "e06cf6bb-a39a-4ceb-b84c-a8697253a9b9",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "claim_id": "C99",
+      "claim": "Once we know such a compound, we may be able to find the enzymes responsible for the synthesis of this product and target them for combinatorial treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Once we know such a compound, we may be able to find the enzymes responsible for the synthesis of this product and target them for combinatorial treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future therapeutic strategies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "596f3d22-90a8-497d-b301-46ad74739649",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors classified seven tumor cell lines into responsive (GL261, MC38, MethA) and unresponsive (LLC, B16, Pan02, CT26) categories based on their response to PD-1 blockade therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C23 are supported by experimental data shown in Figure 1\u2014figure supplement 1, which demonstrates tumor growth curves with and without PD-1 blockade therapy across multiple tumor models in both C57BL/6N and BALB/c backgrounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "e166d06a-f04d-4348-b91e-caec8d1f1bcc",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PD-1 blockade therapy increased immune responses (lymphocyte numbers, effector memory CD8+ T cells, TILs, T-bet and IFN-\u03b3 expression) in hosts bearing responsive tumors but not in hosts bearing unresponsive tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C31 are well-supported by experimental data in Figures 1B-F showing significant increases in multiple immune parameters in responsive tumor-bearing hosts after PD-1 blockade, with no changes observed in unresponsive tumor-bearing hosts. Statistical significance is reported with appropriate p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "9b2bc824-78ff-4fda-a64a-1bcd7068b1a2",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mitochondrial activation parameters (basal respiration, maximal respiration, spare respiratory capacity, ATP turnover, ROS production) increased in CD8+ T cells from responsive tumor-bearing hosts after PD-1 blockade but not in unresponsive tumor-bearing hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 are supported by experimental data in Figure 2A-C using Seahorse analysis and flow cytometry with mitochondrial dyes. The correlation between T cell activation and mitochondrial function is demonstrated across multiple parameters with statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "dbf8496a-f4d5-459f-8749-1fb815b38f9b",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using a bilateral tumor model, the authors categorized unresponsive tumors into two groups: those with systemic immunosuppressive property (SIP-positive: LLC, Pan02, CT26) and those without (SIP-negative: B16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C37-C41 are supported by experimental data in Figure 3B-C showing that SIP-positive tumors (LLC, Pan02, CT26) on one side inhibited PD-1 blockade efficacy against responsive tumors on the other side, while B16 did not. This novel experimental approach provides clear evidence for the classification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "a21b10aa-bbe2-4774-956b-4d25b4a75020",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In the bilateral tumor model, SIP-positive LLC systemically inhibited mitochondrial activation and lymphocyte expansion in draining lymph nodes of the responsive tumor side during PD-1 blockade, while SIP-negative B16 did not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 are supported by experimental data in Figure 4B-F showing differential effects of LLC versus B16 on mitochondrial parameters and lymphocyte numbers in the contralateral responsive tumor side. The data demonstrate systemic immunosuppression by LLC but not B16.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "aa16482b-82f4-4f92-a7dd-259668ca1132",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Responsive tumors were controlled by acquired immunity in wild-type mice, while unresponsive tumors showed varying degrees of immune evasion. B16 completely evaded immunity through lack of MHC class I expression, while LLC and CT26 were partially recognized despite being unresponsive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 are supported by experimental data in Figure 5A-D comparing tumor growth in wild-type versus Rag2-/- mice and MHC class I expression analysis. The data clearly demonstrate that B16 lacks MHC class I expression even after IFN-\u03b3 stimulation, providing a mechanism for immune ignorance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SIP-positive tumors (LLC, CT26) released factors that directly and rapidly inhibited T cell proliferation and mitochondrial function, affecting both T cells and B cells, without altering transcriptional regulators of mitochondrial function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C56-C66 are supported by extensive in vitro experimental data in Figure 6B-F showing that supernatants from SIP-positive tumors inhibited T cell proliferation, OCR, ECAR, and multiple mitochondrial parameters within 2 hours without changing PGC-1\u03b1/\u03b2 transcription. The rapid kinetics support direct inhibition rather than transcriptional effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "66cbdf66-fef1-435a-9d62-3885ab3a53de",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The suppressive factors from SIP-positive tumors are non-proteinaceous small molecules (<3 kDa) that are heat-stable and removable by dextran-coated charcoal treatment. Known immunosuppressive factors (adenosine, PGE2, kynurenine) were ruled out.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72, C80-C81 are supported by experimental data in Figure 6G-H and Figure 6\u2014figure supplement 4 showing that heat treatment did not abolish suppressive activity, DCC treatment eliminated it, and the <3 kDa fraction retained full activity. Expression analysis of enzymes producing known factors showed no correlation with SIP property.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "44a60f67-3c7a-4a4b-9dbb-1d54746548db",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Combination therapy with bezafibrate (a mitochondrial activator) and PD-1 blockade partially improved survival in SIP-positive tumor-bearing hosts (LLC, CT26) but not in SIP-negative B16 tumor-bearing hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C73-C77 are supported by experimental data in Figure 7A-C and Figure 7\u2014figure supplement 1 showing that bezafibrate partially restored mitochondrial function in vitro and improved survival in LLC and CT26 tumor models but not B16. The partial efficacy is consistent with the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "a4588e70-44d1-406d-b89c-459567b88918",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The bilateral tumor model is useful for stratifying tumors and demonstrates that cancers employ at least two strategies to escape immunity: local immune ignorance (B16) versus systemic immune suppression (LLC, Pan02, CT26).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C78-C79, and C86-C89 represent valid inferences from the experimental data. The bilateral tumor model successfully distinguished between local and systemic mechanisms of immune evasion, providing a conceptual advance over the 'hot/cold tumor' classification. The mechanistic interpretations are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "d2f04d74-080f-490c-b811-15aab625fe6e",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that suppressive factors may inhibit glycolysis or CD3/CD28 signaling, and that bezafibrate's partial efficacy suggests that mitochondrial activation alone cannot fully overcome the 'brake' imposed by suppressive factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C92, C94, and C96 are speculative mechanistic interpretations based on the OCR/ECAR data and partial efficacy of bezafibrate. While the observations are valid, the proposed mechanisms are not directly tested and represent hypotheses for future investigation rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "8161221f-96c4-45be-adfd-fb37431da8c2",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The introduction establishes the clinical importance of PD-1 blockade therapy, the problem of unresponsiveness, existing models of resistance, and the role of mitochondrial metabolism in T cell function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C8-C21 represent established knowledge and prior work that is appropriately cited. These claims provide necessary context for the study and are supported by citations to published literature. C21 is a reasonable hypothesis that motivates the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "3ff887fd-881a-4b72-adff-1200023a837b",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mitochondrial activation in CD8+ T cells is a marker of CTL activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by citations to published literature including the authors' previous work. This established knowledge provides the rationale for using mitochondrial parameters as readouts of T cell activation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "fafc2d59-a53f-4c56-b127-66e2aa3e73ef",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The discussion contextualizes findings within established knowledge about tumor metabolism, the tumor-immunity cycle, and T cell metabolic requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85, C90-C91, and C93 represent established knowledge appropriately cited from the literature. These claims provide context for interpreting the experimental findings and are well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    },
+    {
+      "id": "2c78db7f-42a9-4600-9ae4-5464c76b4f9f",
+      "content_id": "a4e04fca-a987-4ccb-9196-a057a7e476c1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors suggest that eliminating suppressive factors would enhance PD-1 blockade efficacy in SIP-positive tumors, and propose future approaches to identify and target the suppressive factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55 and C95-C99 are speculative statements about future research directions. While C95 is supported by the in vitro data showing partial rescue with bezafibrate, the other claims represent proposed future work rather than demonstrated results. These are reasonable hypotheses but not experimentally validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:32:30.937384Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cbb1960d-cac8-452a-8a3f-b29b014dea2e",
+      "result_id": "596f3d22-90a8-497d-b301-46ad74739649"
+    },
+    {
+      "claim_id": "8d0ebfc2-e9ee-4fc6-ba96-27afe831344b",
+      "result_id": "596f3d22-90a8-497d-b301-46ad74739649"
+    },
+    {
+      "claim_id": "2d3eff27-73fc-4750-b3d8-de563c414848",
+      "result_id": "e166d06a-f04d-4348-b91e-caec8d1f1bcc"
+    },
+    {
+      "claim_id": "31918a80-979a-4f80-a5a2-d6532a434068",
+      "result_id": "e166d06a-f04d-4348-b91e-caec8d1f1bcc"
+    },
+    {
+      "claim_id": "fb1c6853-a5cf-4cad-a577-126f23137d26",
+      "result_id": "e166d06a-f04d-4348-b91e-caec8d1f1bcc"
+    },
+    {
+      "claim_id": "6043f9cf-580b-41ef-bb02-dd0c7a9cd7fd",
+      "result_id": "e166d06a-f04d-4348-b91e-caec8d1f1bcc"
+    },
+    {
+      "claim_id": "0dfae49f-3570-4141-87ed-edcbf781d966",
+      "result_id": "e166d06a-f04d-4348-b91e-caec8d1f1bcc"
+    },
+    {
+      "claim_id": "f15dc707-df1a-4a09-8318-f1eb9f5d062d",
+      "result_id": "e166d06a-f04d-4348-b91e-caec8d1f1bcc"
+    },
+    {
+      "claim_id": "8c107e55-c5d2-40a6-a2bb-9eb1102be6f4",
+      "result_id": "e166d06a-f04d-4348-b91e-caec8d1f1bcc"
+    },
+    {
+      "claim_id": "0b488fe1-567c-4c72-93df-e6f678cb407b",
+      "result_id": "e166d06a-f04d-4348-b91e-caec8d1f1bcc"
+    },
+    {
+      "claim_id": "ab32ad3a-51a3-4788-aff7-e5c122dfd355",
+      "result_id": "9b2bc824-78ff-4fda-a64a-1bcd7068b1a2"
+    },
+    {
+      "claim_id": "cc15f2a8-a62a-4e58-9f29-d6124c61912f",
+      "result_id": "9b2bc824-78ff-4fda-a64a-1bcd7068b1a2"
+    },
+    {
+      "claim_id": "fc0f5069-537f-4402-a1f7-0cb7d7dcd0a6",
+      "result_id": "9b2bc824-78ff-4fda-a64a-1bcd7068b1a2"
+    },
+    {
+      "claim_id": "f5f8c64a-56b7-4e7b-b3a7-3b8852fcc5f3",
+      "result_id": "9b2bc824-78ff-4fda-a64a-1bcd7068b1a2"
+    },
+    {
+      "claim_id": "8f706e07-a15d-48de-88b9-e9901a46ce36",
+      "result_id": "dbf8496a-f4d5-459f-8749-1fb815b38f9b"
+    },
+    {
+      "claim_id": "80460391-8bbe-44da-8a18-b12167b98fce",
+      "result_id": "dbf8496a-f4d5-459f-8749-1fb815b38f9b"
+    },
+    {
+      "claim_id": "c7ac74f6-39b2-4ab8-ae81-bcff78b77d7a",
+      "result_id": "dbf8496a-f4d5-459f-8749-1fb815b38f9b"
+    },
+    {
+      "claim_id": "94e25974-6d78-4b38-84c5-5824a2aca66e",
+      "result_id": "dbf8496a-f4d5-459f-8749-1fb815b38f9b"
+    },
+    {
+      "claim_id": "915d4679-a86d-4be7-aceb-17b80de3c1ab",
+      "result_id": "dbf8496a-f4d5-459f-8749-1fb815b38f9b"
+    },
+    {
+      "claim_id": "329d0862-1deb-45b9-83f6-2d5268b33dd1",
+      "result_id": "dbf8496a-f4d5-459f-8749-1fb815b38f9b"
+    },
+    {
+      "claim_id": "90f45add-17b1-4b17-901e-9663e0d884d9",
+      "result_id": "a21b10aa-bbe2-4774-956b-4d25b4a75020"
+    },
+    {
+      "claim_id": "3a429ab2-a885-43d9-afd9-11d635be3eab",
+      "result_id": "a21b10aa-bbe2-4774-956b-4d25b4a75020"
+    },
+    {
+      "claim_id": "e9996143-7bc0-40a9-b995-02a7e9d3870e",
+      "result_id": "a21b10aa-bbe2-4774-956b-4d25b4a75020"
+    },
+    {
+      "claim_id": "31f7e846-fa0c-4a9d-9781-d3d7a4095520",
+      "result_id": "a21b10aa-bbe2-4774-956b-4d25b4a75020"
+    },
+    {
+      "claim_id": "307d057b-a777-4658-8087-0bdfd5c3627a",
+      "result_id": "a21b10aa-bbe2-4774-956b-4d25b4a75020"
+    },
+    {
+      "claim_id": "ec54888e-6a54-4671-8719-e2bff022b779",
+      "result_id": "a21b10aa-bbe2-4774-956b-4d25b4a75020"
+    },
+    {
+      "claim_id": "8d98b4b2-f7b6-4879-9d98-99be57f3945a",
+      "result_id": "aa16482b-82f4-4f92-a7dd-259668ca1132"
+    },
+    {
+      "claim_id": "9c3e56a8-3fcc-45a9-a779-668e0ed8c6ff",
+      "result_id": "aa16482b-82f4-4f92-a7dd-259668ca1132"
+    },
+    {
+      "claim_id": "6e8d25c4-1057-4c67-8871-bae553a262f6",
+      "result_id": "aa16482b-82f4-4f92-a7dd-259668ca1132"
+    },
+    {
+      "claim_id": "6c595691-fef8-41c3-92d7-cec093ebc254",
+      "result_id": "aa16482b-82f4-4f92-a7dd-259668ca1132"
+    },
+    {
+      "claim_id": "15fa5924-5d78-4e52-9b00-d5e05f18f45a",
+      "result_id": "aa16482b-82f4-4f92-a7dd-259668ca1132"
+    },
+    {
+      "claim_id": "9265258f-6970-4c0f-a247-b8faaa555ea2",
+      "result_id": "aa16482b-82f4-4f92-a7dd-259668ca1132"
+    },
+    {
+      "claim_id": "a269b5f5-6b45-4e8d-bda0-92f49847796e",
+      "result_id": "aa16482b-82f4-4f92-a7dd-259668ca1132"
+    },
+    {
+      "claim_id": "cc27ef88-d07b-49c7-88ef-3ce23554c987",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "8a2d3247-2423-4548-a2ba-60427894e45e",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "4e33ffee-1526-4b72-b75e-ffa539ce62d1",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "19c81b5d-d88f-4f5b-9efe-9eeb6da5dcb7",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "d9724dfe-2971-407d-a254-f7abf80dd78b",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "146875e5-6197-4b33-9ef5-b76eea52f309",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "68386508-01c6-40aa-8b2f-ed4a760fad1a",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "00535f01-44ae-4b6b-8b8f-1fc13a1c049b",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "a97c543c-c666-488e-ba27-459a0c452989",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "3c9961f6-3e67-43d4-8179-d57bd9f2a86d",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "9804b0c7-b85b-4433-84a3-1d86d523d7b9",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "432354a4-e21f-4231-b2e7-b6680da229cb",
+      "result_id": "1071dc23-ff97-4bdc-a6c8-d958bc822a89"
+    },
+    {
+      "claim_id": "6a2ca6a1-c545-475b-8ad6-be3d13dea48b",
+      "result_id": "66cbdf66-fef1-435a-9d62-3885ab3a53de"
+    },
+    {
+      "claim_id": "187a08c0-4554-410d-b688-46745a1bc0ec",
+      "result_id": "66cbdf66-fef1-435a-9d62-3885ab3a53de"
+    },
+    {
+      "claim_id": "195c2e2a-afa8-4d92-a928-f5a3798dd9e5",
+      "result_id": "66cbdf66-fef1-435a-9d62-3885ab3a53de"
+    },
+    {
+      "claim_id": "5bbbeb02-1449-48d4-b551-e9c9e397e336",
+      "result_id": "66cbdf66-fef1-435a-9d62-3885ab3a53de"
+    },
+    {
+      "claim_id": "8bd9ae14-d92c-4efc-a511-97c79a310dd7",
+      "result_id": "66cbdf66-fef1-435a-9d62-3885ab3a53de"
+    },
+    {
+      "claim_id": "432efad7-219b-4f60-9b1c-a349330646a1",
+      "result_id": "66cbdf66-fef1-435a-9d62-3885ab3a53de"
+    },
+    {
+      "claim_id": "20180f69-9f0c-4ce8-975c-cdcdedc59e9c",
+      "result_id": "66cbdf66-fef1-435a-9d62-3885ab3a53de"
+    },
+    {
+      "claim_id": "fe71d6f3-c3b5-41db-9c83-978504ef90fa",
+      "result_id": "66cbdf66-fef1-435a-9d62-3885ab3a53de"
+    },
+    {
+      "claim_id": "83e5a680-7545-4cce-bfcf-e7c6f5e450ef",
+      "result_id": "44a60f67-3c7a-4a4b-9dbb-1d54746548db"
+    },
+    {
+      "claim_id": "f8fa961d-e524-4cdc-b943-a28791a53391",
+      "result_id": "44a60f67-3c7a-4a4b-9dbb-1d54746548db"
+    },
+    {
+      "claim_id": "a90b0750-6258-476c-878c-511d8bf15f78",
+      "result_id": "44a60f67-3c7a-4a4b-9dbb-1d54746548db"
+    },
+    {
+      "claim_id": "1e3f4320-93a1-4a93-9888-7813947cef1f",
+      "result_id": "44a60f67-3c7a-4a4b-9dbb-1d54746548db"
+    },
+    {
+      "claim_id": "b78b15c9-9326-49e0-89fa-1a7ce39cb583",
+      "result_id": "44a60f67-3c7a-4a4b-9dbb-1d54746548db"
+    },
+    {
+      "claim_id": "1be1c0b0-27a1-4501-ae80-f8c6d0f50919",
+      "result_id": "44a60f67-3c7a-4a4b-9dbb-1d54746548db"
+    },
+    {
+      "claim_id": "dc567cfa-95b5-4111-b07b-5ec8989784a5",
+      "result_id": "a4588e70-44d1-406d-b89c-459567b88918"
+    },
+    {
+      "claim_id": "fc6315ba-d3b2-4833-bd7f-d32098ae4bd6",
+      "result_id": "a4588e70-44d1-406d-b89c-459567b88918"
+    },
+    {
+      "claim_id": "b6e51751-c85b-4056-a451-e4acdc042b30",
+      "result_id": "a4588e70-44d1-406d-b89c-459567b88918"
+    },
+    {
+      "claim_id": "92b74d4b-24af-40d3-a8b7-cfb7c94f593b",
+      "result_id": "a4588e70-44d1-406d-b89c-459567b88918"
+    },
+    {
+      "claim_id": "a8279f83-b0ab-4838-b84a-83e96018089e",
+      "result_id": "a4588e70-44d1-406d-b89c-459567b88918"
+    },
+    {
+      "claim_id": "1f646860-f423-453f-b7fd-77511878759e",
+      "result_id": "a4588e70-44d1-406d-b89c-459567b88918"
+    },
+    {
+      "claim_id": "2d465391-fec6-46f7-9304-947efcbf9d34",
+      "result_id": "a4588e70-44d1-406d-b89c-459567b88918"
+    },
+    {
+      "claim_id": "09bec9bd-6fb7-49c6-a00a-404dda29836a",
+      "result_id": "d2f04d74-080f-490c-b811-15aab625fe6e"
+    },
+    {
+      "claim_id": "7a2eaa63-04eb-4cf5-a064-a70d337af947",
+      "result_id": "d2f04d74-080f-490c-b811-15aab625fe6e"
+    },
+    {
+      "claim_id": "df86ea6c-a9ab-475c-82c4-6406e7c6b819",
+      "result_id": "d2f04d74-080f-490c-b811-15aab625fe6e"
+    },
+    {
+      "claim_id": "b12a77e5-3b0a-409b-a68c-0661d3838415",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "428a85fa-8c91-4e2c-9eaf-6dfbe07b914f",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "279c4a99-a913-4c49-a99e-6d6f8c8ce745",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "4fde0e56-2797-430e-a8e4-01077e62f89c",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "ae66a88f-7d68-4181-beeb-5dc77f758942",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "c2ecde33-fe18-452a-a746-fa1d54c59b21",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "cfb9c659-8217-4bc9-8484-fab051dc6eb4",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "824ad456-f61e-437d-81f9-509710785f7e",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "42678780-e75f-460e-9be1-6ecfb8a92227",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "f5c49eb9-c815-4c28-bd9f-aec1907b3c39",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "f58a9e77-05d8-4242-b210-d06d21e06171",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "f06acaf8-3470-481b-8499-49986c0d8017",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "167ee19e-8fd4-43ee-a003-6e9baed665d4",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "7224d5b8-c099-4c39-89ae-71a7657b987c",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "bd3201b4-4dac-42de-b87d-b5fd5edf6220",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "77a08a7d-2699-4c23-9199-78f635731cb6",
+      "result_id": "8161221f-96c4-45be-adfd-fb37431da8c2"
+    },
+    {
+      "claim_id": "de434f92-639d-4d1b-92a4-6055f44b8794",
+      "result_id": "3ff887fd-881a-4b72-adff-1200023a837b"
+    },
+    {
+      "claim_id": "9068a6f1-6d12-4104-b4ac-743fbb868fb3",
+      "result_id": "fafc2d59-a53f-4c56-b127-66e2aa3e73ef"
+    },
+    {
+      "claim_id": "5c4fc2ce-21fc-46dd-ae88-397ece44c583",
+      "result_id": "fafc2d59-a53f-4c56-b127-66e2aa3e73ef"
+    },
+    {
+      "claim_id": "13d34e6a-ff4f-4e54-b2a7-f75043e34854",
+      "result_id": "fafc2d59-a53f-4c56-b127-66e2aa3e73ef"
+    },
+    {
+      "claim_id": "05636fd7-8377-4280-8486-8ead222f11e0",
+      "result_id": "fafc2d59-a53f-4c56-b127-66e2aa3e73ef"
+    },
+    {
+      "claim_id": "74994720-2585-4b92-8988-64ec2af6998a",
+      "result_id": "fafc2d59-a53f-4c56-b127-66e2aa3e73ef"
+    },
+    {
+      "claim_id": "3d9e388c-8ec3-4d0d-b83f-fe4f8e94386a",
+      "result_id": "fafc2d59-a53f-4c56-b127-66e2aa3e73ef"
+    },
+    {
+      "claim_id": "607a258f-4293-42e9-8d0a-6b2f86a32c31",
+      "result_id": "fafc2d59-a53f-4c56-b127-66e2aa3e73ef"
+    },
+    {
+      "claim_id": "95d01044-0669-41fd-9f8f-fade0ab57fd1",
+      "result_id": "2c78db7f-42a9-4600-9ae4-5464c76b4f9f"
+    },
+    {
+      "claim_id": "7f495871-92a5-421b-99f2-6ebca3b5148f",
+      "result_id": "2c78db7f-42a9-4600-9ae4-5464c76b4f9f"
+    },
+    {
+      "claim_id": "a0b6ab52-35bd-4cdc-bdbb-a50ee4f7e706",
+      "result_id": "2c78db7f-42a9-4600-9ae4-5464c76b4f9f"
+    },
+    {
+      "claim_id": "32b76a7a-ac36-4cd2-a9f3-dcb47df9f601",
+      "result_id": "2c78db7f-42a9-4600-9ae4-5464c76b4f9f"
+    },
+    {
+      "claim_id": "e06cf6bb-a39a-4ceb-b84c-a8697253a9b9",
+      "result_id": "2c78db7f-42a9-4600-9ae4-5464c76b4f9f"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The manuscript provides extensive background on G-quadruplex (G4) structures, their biological roles, and prior work demonstrating their involvement in transcription, translation, replication, cancer, and response to G4-stabilizing ligands. These claims establish the scientific context and rationale for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C31 are well-supported by citations to established literature and represent accepted knowledge in the G4 field. These background claims appropriately contextualize the study and are consistently supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors performed the first unbiased genome-wide shRNA screen to identify human genes that promote cell death when silenced in the presence of G4-stabilizing ligands (PDS and PhenDC3), identifying 9509 depleted hairpins, 843 G4 ligand-specific gene knockdowns, and 758 stringent G4 sensitizers in A375 melanoma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-C37 describe the genome-wide screen design and results, supported by detailed methodology, appropriate statistical analysis (FDR \u2264 0.05), and data presented in Figures 2-3 and Supplementary files. The experimental design includes appropriate controls (DMSO), replicates, and stringent criteria for hit identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The genome-wide screen validated known G4 sensitizers (BRCA1/2, ATRX, HERC2) and identified 20 additional G4-associated genes as sensitizers, including 8 from curated databases and 12 from text-mining approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 demonstrate validation of the screening approach by recovering known G4 sensitizers and extending findings to previously characterized G4-associated genes. The use of multiple independent approaches (database annotation, text-mining) strengthens confidence in the results, as shown in Figures 3D-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Pathway and functional enrichment analysis of the 758 G4 sensitizers revealed five significant KEGG pathways (cell cycle, ribosome, spliceosome, ubiquitin-mediated proteolysis, DNA replication) and enrichments in DNA/RNA-related GO terms and protein domains including helicases, RNA recognition motifs, and DNA-binding domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by appropriate bioinformatics analyses with multiple testing correction (Bonferroni, p<0.05) as shown in Figure 4 and Supplementary file 1. The enrichment analyses use established methods (KEGG, GO, GENE3D, PFAM) and reveal biologically coherent functional categories consistent with G4 biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "G4 sensitizers show significant enrichment for cancer-associated genes (2-fold enrichment, p=9.1\u00d710\u207b\u2076 for 50 genes in COSMIC database), including a DNA damage response cluster containing BRCA1/2, PALB2, and BAP1, and chromatin modifiers SMARCA4, SMARCB1, and SMARCE1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by statistical analysis showing significant enrichment of cancer genes and STRING network analysis revealing functionally related clusters (Figure 5). The identification of PALB2 and BAP1 as novel G4 sensitizers extends known BRCA1/2 vulnerabilities and is supported by appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A custom focused shRNA screen with 8018 shRNAs was developed and validated in A375 cells, recovering 342 G4 sensitizers with 40.6% overlap with the genome-wide screen, identifying 290 total sensitizers (89 PDS-specific, 161 PhenDC3-specific, 40 common), with 27 of 40 common sensitizers associated with DNA/RNA binding processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe the focused screen design and results, supported by data in Figure 6. The 40.6% overlap between screens is reasonable given differences in experimental conditions and provides validation. The enrichment of DNA/RNA binding processes among common sensitizers is consistent with direct G4 targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Among the 290 robust G4 sensitizers, 74 genes are found in the druggable genome database (DGIdb), including 13 in both 'Druggable Genome' and 'Clinically Actionable' categories, with 12 genes among the 40 most robust sensitizers including 5 in both categories (BRCA1, CHEK1, CDK12, TOP1, PDKP1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by systematic analysis using the DGIdb database as shown in Figures 6G-H and Supplementary file 1. This analysis appropriately identifies therapeutic opportunities, though the claim about PDKP1 should be verified as this gene name is non-standard (possibly PDPK1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "A custom screen in HT1080 fibrosarcoma cells identified 121 G4 sensitizers with 58% overlap with A375 results, revealing core pathways in spliceosome, homologous recombination, and ubiquitin-mediated proteolysis, with four genes (BRCA1, TOP1, DDX42, GAR1) consistently identified as sensitizers across all screens and both ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 demonstrate reproducibility across cell lines and identify robust core sensitizers. The data in Figure 7 support these findings, and the identification of four consistent genes across all conditions provides high-confidence targets. The 58% overlap between cell lines is reasonable given different genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Independent siRNA validation experiments in HT1080 cells confirmed that knockdown of BRCA1, TOP1, DDX42, and GAR1 significantly increased sensitivity to PDS or PhenDC3 compared to DMSO control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by orthogonal validation using siRNA knockdown with appropriate controls (non-targeting siRNA, DMSO) as described in the text and shown in Figure 8. Protein depletion was confirmed by immunoblotting (76-92% knockdown), and growth inhibition was monitored over 144 hours, providing robust validation of the shRNA screen results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Pharmacological inhibition of WEE1 (with MK1775) or USP1 (with pimozide) in combination with PDS showed synergistic cell killing in both HT1080 and A375 cells, with peak synergies of 21-61% depending on cell line and drug combination, validated by both short-term CellTiter-Glo and long-term clonogenic assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 demonstrate proof-of-principle for combinatorial therapeutic approaches. The synergy analysis using Combenefit software with the BLISS model is appropriate, and results are supported by data in Figure 9 across multiple assay formats. The validation in clonogenic assays strengthens the findings, though lower concentrations were required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The screen identified known G4 helicases (DHX36, DHX9) and the DEAD-box protein DDX3X as G4 sensitizers. DDX42, a non-processive RNA helicase associated with splicing, was identified as a novel G4 sensitizer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by citations to established literature for known G4 helicases and the screen data for DDX42. The identification of DDX42 as a sensitizer is supported by consistent results across multiple screens (Figure 10A), providing rationale for further characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "DDX42 was characterized as a newly discovered G4-binding protein that predominantly localizes to the nucleus (4-9 fold enrichment over cytoplasm), binds NRAS RNA G4 with Kd of 71.1 \u00b1 3.5 nM and MYC DNA G4 with Kd of 232.9 \u00b1 23.5 nM, with minimal binding to mutant controls or RNA hairpin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by subcellular fractionation data (Figure 10B-E) and ELISA binding assays (Figure 10F-G) with appropriate controls (mutant oligonucleotides, RNA hairpin, GAPDH/LaminB1 fractionation controls). The G4 structures were validated by circular dichroism (Figure 10\u2014supplement 1). The Kd values indicate specific, high-affinity binding to G4 structures, establishing DDX42 as a bona fide G4-binding protein.",
+    "result_type": "MAJOR"
+  }
+]

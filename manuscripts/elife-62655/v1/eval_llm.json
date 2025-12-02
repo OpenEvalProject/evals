@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C59"
+    ],
+    "result": "Api rapidly and potently inhibits global protein synthesis in E. coli cells. Treatment with 1.25 \u00b5M Api (MIC) for 1 min reduced translation by 75%, and 4\u00d7 MIC for 2 min reduced it to ~10% of control levels. This rapid inhibition results from translation arrest at stop codons, ribosome queuing, and depletion of available release factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C11 provide direct experimental measurements of protein synthesis inhibition at specific Api concentrations and time points, with reference to supporting figures. Claim C59 synthesizes these observations into a mechanistic summary. The data are quantitative, reproducible, and consistent with the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Api causes dramatic redistribution of ribosomes along mRNAs with buildup at stop codons. Approximately 11% of all ribosome footprints map to stop codons in Api-treated cells, representing a ~10-fold increase in normalized ribosome density. In 97% of genes, stop codon (SC) scores shifted higher, with 56% showing SC scores above 8, demonstrating that Api acts as a potent global inhibitor of translation termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 present converging Ribo-seq evidence showing genome-wide ribosome accumulation at stop codons. The quantitative metrics (11% of footprints, ~10-fold increase, 97% of genes affected) are internally consistent and supported by figures. The SC score analysis provides systematic genome-wide validation of the termination inhibition phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Api efficiently acts upon both RF1 and RF2, with modest differences between stop codon types. Analysis revealed statistically significant prevalence of glycine residues at C-termini of proteins encoded in ORFs with high SC-scores in Api-treated cells, indicating context-specific action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by comparison of SC scores across stop codon types (C16, Figure 3\u2014figure supplement 2), showing Api acts on both RF1 and RF2. Claim C19 provides pLogo analysis identifying sequence context effects. The data contradict a prior study suggesting RF1 preference, demonstrating critical evaluation of the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C43"
+    ],
+    "result": "Api-induced ribosome stalling at stop codons causes severe ribosome queuing. At least three distinct waves of ribosome density are observed upstream of stop codons, with crests spaced by ~27 nt (corresponding to ribosome footprint length), representing elongating ribosomes queued behind those arrested at termination sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 describe the queuing pattern with specific quantitative measurements (~27 nt spacing) that match ribosome footprint length distributions (Figure 2\u2014figure supplement 1). The interpretation that these represent queued ribosomes is well-supported by the spacing data. Claim C43 summarizes this as a major consequence of Api action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C46",
+      "C49"
+    ],
+    "result": "Api induces pervasive stop codon readthrough leading to synthesis of proteins with C-terminal extensions. In Api-treated cells, 90% of genes show RT scores >1, indicating higher ribosome density in 3'UTRs than ORFs. Mass spectrometry identified peptides encoded downstream of stop codons in Api-treated but not control samples. Approximately 49% of extension peptides were in-frame, resulting from near-cognate tRNA misincorporation, while others resulted from \u00b11 frameshifting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C26 provide Ribo-seq evidence for readthrough (90% of genes with RT>1, ribosome peaks at downstream stop codons). Claims C27-C29 provide orthogonal proteomics validation, identifying extension peptides only in Api-treated samples. Claim C29 demonstrates near-cognate tRNA misreading at stop codons. Claims C46 and C49 provide mechanistic interpretation linking RF depletion to readthrough. The convergence of Ribo-seq and proteomics data strongly supports this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Api depletes the pool of free release factors by sequestering them on stalled ribosomes. Western blot analysis showed ribosome-depleted lysates from Api-treated cells essentially lacked free RF2. The number of stop codon footprints (~11% of total) roughly matches the ribosome:RF ratio in cells, suggesting most stop codon density represents Api-stalled post-release ribosomes with trapped RFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 provides direct biochemical evidence (Western blot, Figure 2B) showing depletion of free RF2 in Api-treated cells. Claims C40-C42 integrate this with Ribo-seq data and literature on cellular RF abundance to support the mechanistic model. The quantitative agreement between stop codon footprint abundance and ribosome:RF ratios strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Puromycin treatment of lysates from Api-treated cells significantly reduced relative amounts of queued ribosomes and 3'UTR ribosomes, consequently increasing relative occupancy of stop codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 describes a biochemical manipulation (puromycin treatment) that selectively removes ribosomes carrying peptidyl-tRNA, simplifying the complex ribosome distribution pattern. The result is supported by metagene analysis (Figure 2\u2014figure supplement 2) and is consistent with the model distinguishing post-release from pre-release ribosome populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Api triggers activation of ribosome rescue systems (tmRNA, ArfA, ArfB), but these systems remain ineffective due to RF depletion and Api trapping. The highest ribosome occupancy peak corresponds to the tmRNA degron stop codon. Expression of arfA and arfB increased in Api-treated cells. However, deletion of rescue system genes does not sensitize cells to Api, confirming the rescue systems cannot function under Api treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C34-C35 provide Ribo-seq and RNA-seq evidence for rescue system activation (tmRNA peak, increased arfA/arfB expression). Claims C51-C56 provide mechanistic interpretation explaining why rescue systems fail (RF depletion prevents tmRNA and ArfA function; ArfB is trapped by Api per C55 with citation). Claim C57 provides critical genetic validation: deletion of rescue genes does not increase Api sensitivity, confirming they are non-functional under Api treatment. The logic is internally consistent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C58"
+    ],
+    "result": "Api causes a moderate increase (~2-fold) in ribosome footprints at start codons of some genes. In vitro toeprinting at very high Api concentrations (2 mM) showed start codon effects in zntA and tyrS. This may relate to Api's low affinity for ribosomes with vacant exit tunnels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 quantifies the start codon effect from Ribo-seq data (~2-fold increase). Claim C38 provides in vitro validation, though requiring very high Api concentrations (2 mM vs. 50 \u00b5M for stop codon effects), indicating this is a minor/secondary effect. Claim C58 offers a mechanistic interpretation based on prior literature. The effect is real but modest compared to the dominant stop codon phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C60"
+    ],
+    "result": "Api's unique mechanism as a termination inhibitor allows it to preclude many inhibitor-free ribosomes from translation by binding only a few terminating ribosomes, explaining the discrepancy between strong in vivo and weak in vitro inhibition. In cells with diverse mRNAs, RF depletion rapidly halts translation; in cell-free systems with single mRNA species, many molecules are translated before RF depletion occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C60 provide mechanistic explanations for previously puzzling observations (C9). The logic is sound: in cells, Api binding to a subset of terminating ribosomes depletes the RF pool, affecting all subsequent termination events genome-wide. In vitro with single mRNA, this effect is diluted. Claim C45 addresses why ribosome queuing doesn't increase polysome density (most ribosomes already mRNA-associated in fast-growing cells). The explanations are internally consistent and resolve apparent contradictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Api's ability to stimulate stop codon bypass is more robust than aminoglycosides, odilorhabdins, or negamycin, leading to readthrough of multiple downstream stop codons. Unlike miscoding antibiotics, Api does not reduce general translation accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 compares Api to other readthrough-inducing antibiotics, supported by data showing ribosome footprints downstream of multiple stop codons (Figure 4\u2014figure supplement 3A). Claim C48 distinguishes Api's mechanism (RF depletion) from miscoding antibiotics (reduced accuracy), with citations supporting potential therapeutic applications. The comparison is valid and highlights Api's unique properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Under the Api treatment conditions used, no significant accumulation of protein aggregates was detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 reports a negative result from aggregation assays (Figure 4\u2014figure supplement 6), addressing whether C-terminal extensions cause protein aggregation. While the authors note aggregation might still contribute to antimicrobial activity, the data clearly show no detectable aggregation under their conditions. This is a straightforward experimental observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Api could potentially be repurposed for genome-wide analysis of translation termination sites and protein-coding regions. While Api's multifaceted effects (termination arrest, queuing, readthrough) present challenges, optimization such as puromycin treatment to remove queued ribosomes could enable mapping of stop codons. Combined use of initiation and termination inhibitors with Ribo-seq could provide new insights into genetic encoding and gene expression regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C65 discuss potential future applications of Api as a research tool, drawing parallels to retapamulin's use for mapping start codons (C61). However, these are speculative proposals (C62, C64, C65 are marked as SPECULATION in evidence_type). Claim C63 acknowledges the challenges. While the ideas are reasonable and build on the demonstrated effects of Api, they represent proposed future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on apidaecin and PrAMPs: Api is an 18-amino acid proline-rich antimicrobial peptide from honeybees, described as the first antibiotic specifically targeting translation termination. Unlike most PrAMPs that arrest ribosomes at start codons, Api binds in the exit tunnel without directly obstructing the catalytic site, traps release factors and deacyl-tRNA, and can interfere with peptidyl-tRNA hydrolysis. Prior work showed discrepancies between in vitro and in vivo effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 summarize prior knowledge and set up the study's motivation. All claims are explicitly supported by citations to previous work (Florin et al. 2017, Krizsan et al. 2014-2015, etc.). These establish the context and identify the gap (in vivo mechanism unknown, in vitro/in vivo discrepancy) that the current study addresses. This is standard background material that accurately represents prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "A larger fraction of ribosomes associated with stop codons is likely arrested in a post-release state, with Api bound in the exit tunnel, trapped RF1 or RF2 in the A site, and deacylated tRNA in the P site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 presents a mechanistic interpretation of the ribosome state at stop codons. This is supported by integration of multiple lines of evidence: RF2 depletion data (C25), the match between stop codon footprint abundance and ribosome:RF ratios (C42), puromycin sensitivity experiments (C30), and prior structural/biochemical work (C6-C7). The interpretation is reasonable and consistent with all available data.",
+    "result_type": "MINOR"
+  }
+]

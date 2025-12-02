@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C29",
+      "C72",
+      "C73"
+    ],
+    "result": "Theta-burst stimulation (TBS) induces a homeostatic, long-lasting depression of intrinsic excitability in CA1 pyramidal neurons in vivo. The reduction in firing rate (~29%) was significant compared to controls, began within minutes, lasted at least 30 minutes, and correlated with the number of spikes evoked during TBS. The effect manifested as a rightward shift in the input-output curve without changing the slope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C24, C29, C72-C73 provide converging evidence from whole-cell patch-clamp recordings showing significant reduction in firing rate (p=7.3\u00d710\u207b\u2074), appropriate controls, correlation with spike number (R\u00b2=0.40, p=0.0083), and characterization of the input-output relationship. The homeostatic nature is supported by the correlation between effect magnitude and activity level. Statistical tests are appropriate and sample sizes adequate (n=16 TBS, n=11 control).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The TBS-induced reduction in excitability is associated with decreased input resistance (~10%) and increased latency to first spike (~103%), both correlating with the change in excitability. These changes suggest modification of sub-threshold conductances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide statistical evidence for changes in input resistance (p=0.0087, R\u00b2=0.38) and first spike latency (p=0.005, R\u00b2=0.69), both significant compared to controls. The correlations with excitability changes support a mechanistic link. Claim C34's inference about sub-threshold conductances is reasonable given the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The TBS-induced plasticity does not involve changes in membrane potential variance, action potential threshold (when compared to controls), or afterhyperpolarization (AHP), indicating that supra-threshold conductances are unlikely to mediate the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 provide statistical evidence showing no significant changes in membrane potential variance (p=0.84), no significant difference in AP threshold between TBS and control (p=0.32), and no effect on AHP (p=0.92, p=0.19 vs control). The inference in C41 is logically supported by these negative results. Appropriate controls and statistical tests strengthen these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C74"
+    ],
+    "result": "The induction of TBS-induced plasticity requires intracellular calcium, as demonstrated by complete blockade with BAPTA (0.5 mM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C74 show that BAPTA prevented the depression of excitability (firing rate change: +23.0\u00b113.7% vs -29.2\u00b17.1% in TBS, p=0.0012), along with preventing changes in input resistance and latency. The calcium dependence is clearly established with appropriate statistical comparison (n=7 BAPTA vs n=16 TBS).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "The TBS-induced plasticity is independent of NMDA receptors, as blocking NMDARs with intracellular MK-801 (1 mM) did not prevent the reduction in excitability. This suggests voltage-gated calcium channels are the primary calcium source for induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 provides statistical evidence that MK-801 did not affect the TBS-induced reduction (firing rate: -42.1\u00b112.2%, p=0.35 vs TBS; n=7). The inference in C44 about voltage-gated calcium channels is reasonable given that BAPTA blocked the effect but MK-801 did not. The logic is sound and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C80",
+      "C81",
+      "C85"
+    ],
+    "result": "The TBS-induced decrease in excitability is not mediated by Ih. Instead, the sag ratio increased (indicating decreased Ih), which would be expected to increase excitability. Blocking Ih with ZD7288 did not prevent the plasticity, indicating that Ih regulates excitability locally rather than globally under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 provide comprehensive evidence: sag ratio increased (p=0.0088), indicating decreased Ih; the change did not correlate with excitability change (R\u00b2=0.08, p=0.29); and ZD7288 did not prevent the plasticity (firing rate: -22.9\u00b18.6%, p=0.63 vs TBS; n=6). The inference in C53-C54 that another mechanism must be responsible is logically sound. This contradicts prior in vitro findings, making it a significant observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C75",
+      "C86"
+    ],
+    "result": "The reduction in excitability is mediated, at least in part, by an increase in the slowly inactivating potassium current ID, carried by Kv1.1 channels at the axon initial segment. DTX-K significantly attenuated the TBS-induced changes in firing rate, input resistance, and first spike latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide statistical evidence that DTX-K significantly reduced the effect of TBS on firing rate (TBS: -51.8\u00b18.7% vs DTX-K: -25.5\u00b15.3%, p=0.037), input resistance (p=9.7\u00d710\u207b\u2074), and latency (p=0.04). The sample size is adequate (n=6 each) and the partial blockade is consistent with ID involvement. The inference in C60 and C86 is well-supported. However, the incomplete blockade suggests other mechanisms may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C71",
+      "C77",
+      "C117",
+      "C121"
+    ],
+    "result": "In behaving mice navigating virtual reality environments, place cells show an experience-dependent reduction in out-of-field firing rate during exploration of novel environments, consistent with decreased intrinsic excitability. Out-of-field firing decreased over time (1.58\u21921.37 Hz, p=0.0065, n=171) with a negative shift in lap-by-lap correlations (p=0.0093).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 provide statistical evidence for decreased out-of-field firing in novel environments. However, as acknowledged in C119-C120, it is unclear how synaptic strength outside the place field is affected by exploration, and interneuronal plasticity may also contribute. The interpretation as decreased intrinsic excitability (C63, C71) is plausible but not definitively established, as alternative explanations involving synaptic changes cannot be ruled out. The correlation with in vitro findings is suggestive but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In novel environments, in-field firing rate of place cells increased across the session (3.63\u21924.19 Hz, p=0.0071, n=171), consistent with synaptic potentiation within the place field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide statistical evidence for increased in-field firing with positive shift in correlations (p=0.048). The interpretation in C66 as synaptic potentiation is reasonable and supported by citations to prior work. This provides a control showing that the decrease in out-of-field firing is not due to general recording degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C118"
+    ],
+    "result": "In familiar environments, no significant change in out-of-field firing rate was detected (p=0.22, n=268), though a negative shift in correlations was observed (p=0.012). In-field firing also showed no change (p=0.42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 provide statistical evidence showing no significant changes in firing rates in familiar environments, with appropriate sample size (n=268). The negative shift in out-of-field correlations (C68) suggests some tendency toward decreased activity even in familiar environments, as noted in C118. The data are clearly presented with appropriate statistical tests.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The TBS-induced change in excitability did not correlate with initial cellular properties including input resistance (R\u00b2=0.11, p=0.21), membrane potential (R\u00b2=0.015, p=0.66), action potential threshold (R\u00b2=0.0045, p=0.80), or burstiness (R\u00b2=0.02, p=0.60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 provide statistical evidence showing no significant correlations between the plasticity and initial cellular properties. This is important for ruling out that the effect depends on the initial excitability state. Sample size is adequate (n=16) and statistical tests appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Some Kv1 channels appear to be active at the holding membrane potential (~-75 mV), as evidenced by DTX-K reducing the change in input resistance. This observation favors a shift in activation properties over membrane insertion as the mechanism of regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 infers from the DTX-K effect on input resistance that some Kv1 channels are active at rest. Claims C88-C89 provide speculative mechanistic explanations based on known voltage dependencies of ID. While the reasoning is plausible and supported by citations, the mechanism remains speculative. Direct measurements of channel properties would be needed to confirm this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "ID is carried by Kv1.1 channels localized to the axon initial segment in CA1 pyramidal neurons. Changes in AIS excitability can significantly influence neuronal excitability without affecting synaptic integration, distinguishing this from dendritic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by citations to prior research establishing the localization and functional properties of Kv1.1 channels. The functional distinction from dendritic conductances is well-established in the literature. These claims provide important context for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The incomplete prevention of excitability reduction by DTX-K might be explained by incomplete channel block, involvement of other Kv1 subtypes, plasticity in other conductances (e.g., inwardly rectifying K+ channels), or increased tonic GABA current. However, increased GABA current would be expected to decrease latency, opposite to observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C96 provide speculative explanations for the incomplete DTX-K block, supported by citations. However, these remain hypotheses without direct experimental evidence. The reasoning about GABA effects (C96) appropriately rules out one possibility based on inconsistency with observed latency changes. Additional experiments would be needed to distinguish among these alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The observed plasticity is unusual compared to typical homeostatic plasticity of Kv1, as it occurs rapidly (minutes) in response to a small stimulus rather than over hours/days in response to sustained input. This may be necessary in CA1 where neurons are largely silent outside place fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 accurately characterize the novelty of the findings compared to prior work (supported by citations). Claim C99 provides reasonable speculation about functional necessity based on known properties of CA1 neurons. The reasoning is sound though speculative about the functional significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The results demonstrate a form of plasticity of intrinsic excitability not previously described in CA1 pyramidal neurons in vitro, mechanistically distinct from Ih-mediated plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by the experimental evidence showing calcium-dependent, Ih-independent plasticity mediated by Kv1.1 channels. The comparison with prior in vitro studies is appropriate and the novelty claim is justified by the mechanistic differences demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Differences between in vivo and in vitro findings may relate to preparation differences. In vitro slices have advantages but are artificial with reduced activity and damaged processes. Anesthetized recordings provide stability but involve altered brain states and neuromodulator levels. The significance of findings needs confirmation in behaving animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 provide appropriate discussion of methodological limitations, supported by citations. The authors appropriately acknowledge that anesthesia may have influenced results (C114-C115) and that confirmation in awake animals is needed (C116). This represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Fast homeostatic plasticity of intrinsic excitability could regulate coding in CA1 by preventing network domination by the same neurons. More excitable cells are preferentially recruited to engrams, and the activity-driven decrease in excitability might contribute to diversifying recruitment across experiences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C129 provide speculative functional interpretation supported by citations to prior work on memory allocation and excitability. The hypothesis is plausible and consistent with recent findings (C129), but remains speculative. The proposed mechanism is reasonable but would require additional experiments specifically designed to test memory allocation to be definitively supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The relationship between action potential-driven plasticity (observed here) and CREB-associated synaptic plasticity remains to be determined. CREB activation requires synaptic calcium entry and affects AHP, which was not changed in this study. Future work should examine how intrinsic excitability is modulated following place field activity and plateau potentials in behaving animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 appropriately identify open questions and future directions. The distinction between action potential-driven and synaptically-driven plasticity is well-articulated (C133-C134), and the lack of AHP change (C132) is correctly noted as distinguishing this from CREB effects. These represent appropriate acknowledgment of limitations and future research needs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Whole-cell patch-clamp recordings were obtained from 56 CA1 pyramidal neurons in anesthetized rats, with cell identity verified by biocytin staining in 45/56 cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 describe basic methodological details that are well-documented in the methods section and figures. The verification rate (80%) is reasonable for in vivo recordings. This provides important quality control information.",
+    "result_type": "MINOR"
+  }
+]

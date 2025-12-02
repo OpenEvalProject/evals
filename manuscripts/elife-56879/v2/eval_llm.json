@@ -1,0 +1,443 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C15",
+      "C16",
+      "C143",
+      "C149",
+      "C151"
+    ],
+    "result": "RAPID is an unsupervised, automated machine learning algorithm designed for single-cell cytometry data that identifies phenotypically distinct cell populations and determines whether these populations stratify patient survival. The algorithm is open-access, modular, and provides quantitative descriptions of cell clusters with respect to patient outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C11, C15-C16, C143, C149, and C151 collectively establish RAPID's core capabilities and design principles. The algorithm's unsupervised nature, automation, and ability to identify prognostic cell populations are explicitly stated and demonstrated throughout the manuscript with both glioblastoma and BCP-ALL datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C147",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "RAPID was systematically assessed for five key performance criteria: cluster stability, modularity (compatibility with various dimensionality reduction and clustering tools), transparency (ability to derive simple models), independence from known prognosticators, and reproducibility/translational potential using orthogonal validation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C147, C155-C157 describe the comprehensive validation strategy employed. The manuscript demonstrates each assessment criterion through multiple experiments including repeated subsampling (C100-C110), UMAP vs t-SNE comparison (C111-C116), multivariate Cox analysis (C117-C125), and IHC validation (C137-C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C214",
+      "C215",
+      "C216",
+      "C217"
+    ],
+    "result": "Dataset 1 comprised 28 IDH wild-type glioblastoma patient samples analyzed by mass cytometry, yielding over 2 million viable cells (4,710-336,284 cells per tumor) with a 34-dimensional antibody panel. The cohort had median overall survival of 13 months and progression-free survival of 6.3 months, typical for glioblastoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23, C59-C64, C205-C208, and C214-C217 provide consistent descriptions of Dataset 1's composition, size, and clinical characteristics. The survival statistics are explicitly stated with citations confirming they are typical for glioblastoma (C60-C61, C214-C215). Sample collection and processing methods are clearly documented with appropriate ethical approvals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C163",
+      "C164"
+    ],
+    "result": "RAPID successfully validated its performance on Dataset 2, a previously published BCP-ALL dataset of 54 patients. The algorithm re-identified prognostic features (CD38, CD34, p-S6, p-SYK, p-4EBP1) originally discovered by independent researchers without requiring the normal developmental trajectory reference used in the original analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C93-C99, C163-C164 demonstrate RAPID's ability to reproduce known findings in an independent dataset from a different disease and institution. The re-identification of previously reported prognostic features (C96-C98) without requiring reference populations (C164) validates the algorithm's unsupervised approach and generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "RAPID's workflow involves equal sampling of cells from each patient, automated determination of optimal cluster number (testing 5-50 clusters via FlowSOM), assignment of patients to high/low abundance groups using interquartile range, and Cox survival analysis to identify prognostic clusters. The algorithm uses Marker Enrichment Modeling (MEM) to quantitatively describe cell phenotypes on a +10 to -10 scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C58 describe the technical implementation of RAPID's workflow. The equal sampling strategy (C44-C45), automated cluster optimization (C48-C50), statistical cutpoint determination (C52), and survival analysis (C53-C55) are clearly documented. The use of MEM for phenotype description (C57-C58) provides interpretable output. The comparison with DBSCAN (C51) supports the choice of FlowSOM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Patient-specific t-SNE analysis identified immune (CD45+) and endothelial (CD45-CD31+) cells, which were computationally excluded. The remaining CD45-CD31- glioblastoma cells displayed phenotypically distinct subpopulations with aberrant co-expression of neural lineage and stem cell proteins. A common t-SNE of 131,880 cells (4,710 per patient) identified 43 phenotypically distinct clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C76 describe the preprocessing and initial clustering of glioblastoma cells. The identification and exclusion of non-tumor cells (C66-C68) is standard practice. The observation of aberrant protein co-expression (C70-C72) is validated by citation to prior single-cell RNA-seq studies (C73). The common t-SNE analysis with equal cell numbers per patient (C75) and identification of 43 clusters (C76) are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "RAPID identified four Glioblastoma Negative Prognostic (GNP) clusters and five Glioblastoma Positive Prognostic (GPP) clusters associated with overall survival. GNP cells were enriched for S100B, SOX2, p-STAT3, p-STAT5, and p-S6, while lacking EGFR, GFAP, and CD44. GPP cells were enriched for EGFR but lacked pro-survival phospho-proteins and cyclin B1. GNP-high tumors had significantly lower immune infiltration than GPP-high tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C92 describe the primary findings from Dataset 1. The identification of GNP and GPP clusters (C81-C82) with distinct molecular phenotypes (C85-C89) is supported by MEM analysis with quantitative enrichment scores. The validation that these are not residual immune/endothelial cells (C90) and the association with immune infiltration (C91-C92, p<0.001) strengthen the biological interpretation. Alternative cutpoints showed consistency (C78, F-measure=0.86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Cluster stability was assessed through 99 additional FlowSOM runs and 9 additional t-SNE analyses with different cell subsamplings. Five of 43 original clusters had F-measure <0.5 and were excluded. GNP and GPP phenotypes were highly reproducible across runs (average RMSD: GNP vs GNP = 92.8, GPP vs GPP = 88.9), with average patient categorization F-measure of 0.79.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C110 demonstrate rigorous statistical validation of cluster stability. The use of F-measure to assess both cell assignment consistency (C101-C103) and patient categorization (C107) is appropriate. The exclusion of unstable clusters (C103, C110) shows appropriate quality control. The high RMSD values (C108-C109) and F-measures indicate robust phenotype identification despite stochastic elements in the workflow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "RAPID's modularity was validated by replacing t-SNE with UMAP for dimensionality reduction. Using UMAP, RAPID identified 31 populations including 4 prognostic clusters (1 GNP, 3 GPP) with phenotypes comparable to t-SNE results. Cell assignment between t-SNE and UMAP showed high concordance (F-measure = 0.87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 demonstrate RAPID's modularity and independence from specific dimensionality reduction tools. The identification of similar prognostic phenotypes using UMAP (C112-C114) and high F-measure for cell assignment between methods (C115) validate the algorithm's robustness. This addresses a key design goal stated in C18 and supports the claim that RAPID is not tool-dependent (C116).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Multivariate Cox proportional-hazards analysis demonstrated that GNP and GPP cell abundances were continuously and independently associated with patient outcomes. Each 1% increase in GNP cells was associated with 7% increased mortality (HR=1.07, p=0.003), while 1% increase in GPP cells was associated with 7% decreased mortality (HR=0.93, p=0.05) and 4% increased time to progression (HR=0.96, p=0.04), independent of age, MGMT status, resection extent, and treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C125 provide strong evidence for the independent prognostic value of RAPID-identified cell populations. The multivariate analysis appropriately controls for known glioblastoma prognostic factors (C118) and demonstrates continuous associations (C119-C121) rather than artifacts of arbitrary cutpoints. The distinct associations of GNP with OS and GPP with PFS (C122-C123) suggest different biological roles. The proportional hazards assumption was tested and satisfied (stated in methods).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "RAPID identified 4 cell subsets significantly associated with progression-free survival: three with unfavorable PFS (GNPPFS: subsets 20, 33, 43) and one with favorable PFS (GPPPFS: subset 3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 demonstrate RAPID's applicability to different clinical endpoints. The identification of PFS-associated clusters distinct from OS-associated clusters suggests the algorithm can capture different aspects of disease biology. However, the overlap between some clusters (e.g., subset 33 appears in both analyses) and limited validation of PFS findings suggest this is a secondary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The 43 identified glioblastoma cell clusters showed extensive abundance variation across patients (median 14 clusters >1% per tumor, range 5-27). The number of clusters per tumor was not associated with survival (\u03c1=0.047, p=0.812), but the abundance of the 7 stable prognostic clusters was closely correlated with overall survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132 address the relationship between tumor heterogeneity and outcome. The finding that cluster number (a measure of diversity) does not predict survival (C131) while specific cluster abundances do (C132) is biologically important and statistically sound. This suggests that specific cellular phenotypes, not overall diversity, drive outcome differences. The statistics are clearly reported with appropriate correlation analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "A simplified two-dimensional gating strategy using S100B and EGFR (the most divergent features identified by MEM) successfully stratified patients into GNP-like, GPP-like, and low groups in the mass cytometry data. This simple model showed strong outcome stratification (HR=6.56, GNP-like median OS=111.5 days, GPP-like median OS=896 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 demonstrate RAPID's transparency and translational potential. The use of MEM labels to select discriminating features (C134) provides a principled approach to dimensionality reduction. The strong hazard ratio (C135) indicates that the two-feature model captures much of the prognostic information from the high-dimensional analysis. This validates the biological relevance of the RAPID findings and enables practical application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Biological validation using immunohistochemistry on a tissue microarray of 73 independent glioblastoma samples confirmed that S100B and EGFR staining intensity could stratify patients into GNP-like and GPP-like groups. GNP-like enrichment was associated with shorter overall survival (HR=2.3, median OS: GNP-like=298 days, GPP-like=560 days, p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C142 provide critical biological validation using an orthogonal technology (IHC) and independent cohort. The successful stratification in the validation cohort (C140) with significant hazard ratio (HR=2.3, p=0.03) confirms the biological robustness of RAPID findings. The use of a different technology (C137-C138) and larger sample size (73 vs 28 patients) strengthens confidence in the translational potential. The lower HR in IHC (2.3) vs mass cytometry (6.56) is expected given the loss of multidimensional information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior automated analysis tools like Citrus required binary sample categorization or known reference populations, making them unsuitable for continuous clinical variables like survival time or for tissues like brain where normal reference populations are not readily available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 and C12-C14 establish the rationale for RAPID's development. The limitations of prior approaches (C12, C145) are accurately described with appropriate citations. The challenge of continuous variables (C13) and lack of reference populations for brain tissue (C14, C146) are valid motivations. However, the claim that these approaches \"could not be used\" (C146) may be overstated\u2014they could potentially be adapted, though not optimally suited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Glioblastoma is the most common and highly aggressive primary brain tumor in adults, containing cells with diverse genomic and transcriptomic features. Previous studies measured signaling in bulk tumors or characterized limited numbers of single cells (<33,000). Existing subclasses do not correspond to large prognostic differences, and signaling effector protein activation states are inaccessible to sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 provide accurate background on glioblastoma biology and prior research limitations, all supported by appropriate citations. The characterization of glioblastoma (C26-C28), limitations of prior studies (C29-C32), and technical constraints of sequencing for signaling proteins (C35-C37) are well-established in the literature. This background effectively motivates the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C148",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Cytometry data are well-suited for RAPID due to excellent signal-to-noise ratio, quantitative comparisons, and direct measurement of signaling pathway activation. While designed for cytometry, RAPID's approach is anticipated to be applicable to other single-cell data types including RNA-seq and imaging cytometry as these technologies advance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 accurately describe cytometry's advantages with appropriate citations. However, claims C152-C154 about broader applicability are speculative. The statement that \"published datasets were not available\" (C153) for RNA-seq meeting RAPID's criteria is a limitation of validation, not evidence of future applicability. The anticipated usefulness for other data types (C154) is reasonable speculation but undemonstrated. The algorithm's performance on non-cytometry data remains to be validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "RAPID identified two independent prognostic signatures in glioblastoma: GNP cells (enriched for S100B, SOX2, p-STAT3, p-STAT5, associated with decreased survival) and GPP cells (enriched for EGFR and CD44, associated with longer survival). High-dimensional cytometry enabled identification of rare cell subsets and revealed signaling mechanisms not apparent in bulk or genomic analyses, including a novel connection between p-STAT5 and glioblastoma outcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C174 summarize the major biological findings. The identification of two distinct prognostic signatures (C165-C167) is well-supported by the data. The characterization of GNP cells with abnormal neural development features and active signaling (C172-C173) is consistent with aggressive tumor biology. The novel identification of p-STAT5 association with glioblastoma outcome (C174) is a significant finding, though mechanistic validation would strengthen this claim. The advantages of single-cell protein analysis (C169-C170) are demonstrated by the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "STAT5 signaling is required for blocking apoptosis and driving cell cycle entry in tissue development and is a feature of negative prognostic AML. The signaling events in GNP cells could be studied in glioblastoma models using combinations of JAK and PI3K/mTOR inhibitors. Similar signaling profiles have been observed in leukemia and ovarian cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C175-C176 accurately describe STAT5's known biological roles with appropriate citations. However, claims C177-C178 about future therapeutic studies are speculative and not demonstrated in this work. The limitation that analyses were performed at a single timepoint (C180) is acknowledged, and the speculation about signaling enabling state transitions (C181) is reasonable but unproven. The observation of similar profiles in other cancers (C183) is interesting but requires more detailed comparison to be conclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "GPP cells showed EGFR and CD44 co-enrichment, diminished proliferation, lack of STAT5 phosphorylation, and association with higher immune infiltration. This study found EGFR protein expression associated with better survival, contrasting with prior debates about EGFR's prognostic value. The difference may reflect single-cell protein measurement versus bulk genomic/transcriptomic approaches, as copy number and transcript levels do not necessarily predict protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C184-C185 accurately describe the GPP phenotype. The association with immune infiltration (C185) and potential relevance for immunotherapy (C186) are supported by the data (C91-C92). The finding that EGFR protein expression associates with better survival (C192) is well-documented and validated with two different antibodies (C195). The explanation that single-cell protein measurement differs from bulk genomic approaches (C193-C194) is reasonable and supported by citations. However, the debate about EGFR's role (C190-C191) is complex, and this study adds one perspective rather than resolving the debate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "RAPID reliably identified prognostic cells in both glioblastoma and blood cancer datasets. Cellular identification was robust, stable, reproducible, and independent of dimensionality reduction tools. The findings informed a simplified IHC scoring system that stratified outcome in 73 patients and could potentially be used to assign patients to treatment groups in clinical trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C202 accurately summarize the study's achievements. The validation across two diseases (C199), demonstration of robustness (C200), successful IHC validation (C201), and development of a simplified pipeline (C202) are all well-supported by the data. However, claims C203-C204 about future clinical applications are speculative. While the potential for clinical translation is demonstrated, actual implementation in clinical trials would require additional validation, standardization, and regulatory considerations not addressed in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C150",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C218"
+    ],
+    "result": "The recommended use of RAPID involves running the algorithm at least 10 times to identify consensus populations stable in phenotype and risk stratification. The algorithm was extensively validated for cluster stability, independence from known prognosticators, and ability to inform complementary approaches. RAPID runs in 15 minutes for the primary dataset after dimensionality reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150, C158-C162, and C218 describe RAPID's practical implementation and validation. The recommendation for 10 runs (C150) is based on the stability testing performed (C159). The extensive validation (C158-C162) is demonstrated throughout the manuscript. The runtime of 15 minutes (C218) is reasonable for the dataset size and indicates practical feasibility. These claims provide useful guidance for users and demonstrate the algorithm's computational efficiency.",
+    "result_type": "MINOR"
+  }
+]

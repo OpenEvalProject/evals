@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Single-cell RNA-seq was performed on Drosophila testis, yielding high-quality data with 426,563,073 reads from 5000 cells, averaging 85,312 reads and 4185 genes per cell, with high reproducibility (Pearson's R = 0.97) compared to bulk RNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19-C23, and C120-C123 collectively describe the experimental approach and data quality metrics. The high correlation with bulk RNA-seq (C22-C23) and cell viability (C122) support the technical validity of the dataset. The methods are clearly described with appropriate detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Cell type identification through clustering revealed germline stem cells, spermatogonia, spermatocytes, spermatids, and somatic cells (cyst stem cells, terminal epithelial cells, hub cells), validated by marker gene expression consistent with prior knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe cell type identification using established marker genes with literature support. The validation against known markers (C25-C27) strengthens confidence in cell type assignments. The inference of continuous progression (C28) is reasonable given the t-SNE clustering pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Gene expression varies dramatically across spermatogenesis, with late spermatogonia expressing ~7000 genes per cell and late spermatids expressing ~2000 genes, indicating post-meiotic transcriptional downregulation. RNA content in post-meiotic cells is five times lower than meiotic stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present consistent findings about transcriptional dynamics during spermatogenesis. The data on gene numbers (C29-C30) and RNA content (C32) align with the known biology of post-meiotic transcriptional suppression (C31), supported by appropriate citations. The quantitative measurements appear internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "De novo genes show diverse expression patterns across cell types, with 87 segregating and 97 fixed de novo genes detected. Spermatocytes show the highest relative abundance of segregating de novo genes and express similar proportions of fixed de novo genes and testis-specific genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 describe expression patterns of de novo genes across cell types. The detection of specific numbers of genes (C34) and their cell-type-specific patterns (C35-C38) are data-driven observations. The interpretation that these genes may play functional roles in spermatocytes (C39) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Pseudotime analysis reveals that UMI counts increase then decrease during spermatogenesis, consistent with post-meiotic transcriptional downregulation. Fixed de novo genes show diverse expression patterns (early, late, bimodal), while most segregating de novo genes are biased toward early/middle pseudotime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 describe pseudotime analysis results. The UMI pattern (C40-C41) validates the pseudotime ordering against known biology. The diverse expression patterns of de novo genes (C42-C43) are directly observable from the data presented in Figure 3D-E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Segregating de novo genes are less expressed in germline stem cells (p.adj = 9.35E-04) and slightly enriched in early spermatids (p.adj = 1.70E-02) compared to testis-specific genes, while fixed de novo genes show no statistical difference. Both segregating and fixed de novo genes display similar directional biases across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C46 present statistical comparisons with appropriate p-values. However, C47 and C49 present contradictory interpretations: C47 suggests expression patterns may impact fixation likelihood, while C49 suggests they do not. This contradiction undermines confidence in the interpretation, though the underlying data (C48) appears sound. The authors need to clarify their position.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Across pseudotime, 55-62% of de novo genes are biased toward middle stages (spermatocytes), 11% toward late stages (spermatids), and 26-29% toward early stages (GSC and spermatogonia), indicating functional diversification in short evolutionary timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 provide quantitative data on expression bias patterns across pseudotime. The percentages are clearly stated and appear to sum appropriately. The interpretation of functional diversification (C53) is reasonable given the observed diversity of expression patterns, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Only 2 of 14 child duplicated genes show the same expression pattern as their parental copy. Parental genes exhibit early or late expression patterns, while child genes show diverse patterns including bimodal expression (43%), suggesting regulatory divergence and possible neofunctionalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 present clear quantitative findings about duplicated gene expression patterns. The observation that most child genes differ from parents (C54-C55) is well-supported by the data. The speculation about neofunctionalization (C59) is appropriately qualified and supported by relevant citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Fixed de novo genes are most frequently biased toward mid-spermatogenesis, while melanogaster-specific duplicate genes are most commonly bimodally expressed, indicating that a gene's expression pattern is influenced by its mode of origination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 present comparative data on expression patterns between de novo and duplicated genes, with reference to Table 2. The interpretation that mode of origination influences expression pattern (C62) is a reasonable inference from the observed differences between these gene classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "73 high-confidence germline-specific substitutions were identified from single-cell RNA-seq data, with variant alleles exclusively in germ cells. After accounting for clustered mutations, 44 mutational events were identified, showing decreased relative abundance during spermatogenesis progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68, C70-C71 describe the variant calling approach and results. The filtering criteria (C66-C67) are appropriate for identifying germline-specific variants. The treatment of clustered mutations as single events (C68, C70) is reasonable. The finding of decreased mutational load (C71) is supported by the normalization approach described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "30% of germline substitutions were detected in early spermatids but none in late spermatids. The proportion of cells carrying mutations decreases linearly throughout spermatogenesis (p = 2.20E-16), suggesting either active lesion repair or removal of mutated cells by programmed cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 present clear quantitative findings with strong statistical support (chi-square test, p = 2.20E-16). The absence of variants in late spermatids (C73) is notable, though C74 appropriately acknowledges alternative explanations including technical limitations. The linear trend (C76) is well-supported statistically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "Ribosomal protein genes are strongly biased toward early spermatogenesis, upregulated in GSCs/early spermatogonia and late spermatogonia, and downregulated in spermatocytes and spermatids, consistent with translation being required early to build cellular machinery during rapid growth and division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 present expression bias data for ribosomal protein genes with reference to Table 1. The interpretation (C80, C82) that this reflects early translation requirements is reasonable and consistent with the known biology of spermatogenesis. The connection to stem cell biology (C81-C82) is appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "DNA repair genes are upregulated in GSCs/early spermatogonia and late spermatogonia (p < 8.14E-62 and 5.80E-44) and depleted in early and late spermatocytes (p < 1.75E-38 and 4.58E-29), suggesting DNA repair machinery is assembled early to repair mutations as they occur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 present highly significant statistical findings for DNA repair gene expression bias. The interpretation (C85) that early transcription enables early repair is logical and consistent with the observed pattern. The statistical significance is very strong, supporting the robustness of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C119"
+    ],
+    "result": "A method was developed to extract mutational information from single-cell RNA-seq data, approximating relative mutational load of different cell types without DNA sequencing, demonstrating that cell-type-specific mutational load can be estimated with reasonable accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97, C119 describe a methodological contribution. The approach is clearly described in the methods section, with appropriate acknowledgment of limitations (cannot detect variants in untranscribed regions). The validation through comparison with known biology supports the claim of reasonable accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Mutational load decreases as spermatogenesis progresses, suggesting spermatogenesis is a highly reparative process. However, the data cannot distinguish between successful repair of lesions and removal of mutated cells by programmed cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C98-C100 present the main conclusion about decreasing mutational load. The finding is well-supported by multiple lines of evidence (C71, C75-C76). The acknowledgment of alternative explanations (C99-C100) is appropriate and demonstrates scientific rigor in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Germline stem cells/early spermatogonia show the highest mutational load, indicating they carry a relatively high mutational burden upon entering spermatogenesis. This could result from repeated asymmetric divisions causing variant buildup, necessitating a mechanism to remove lesions from maturing gametes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 present a clear finding from the mutational load analysis. The speculation about mechanism (C107-C108) is appropriately qualified and biologically plausible. The logical inference about repair mechanisms (C109-C110) follows reasonably from the high early mutational load and low final load.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "DNA repair gene transcription drops during meiotic stages, suggesting repair proteins are translated early and continue functioning throughout spermatogenesis. Post-meiotic haploidy constrains available repair mechanisms, and in Drosophila males, repair is likely due to replicative or transcriptional forces rather than recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 integrate the DNA repair gene expression data with known biological constraints. The inference about early translation (C112) is reasonable given the expression pattern. The discussion of post-meiotic constraints (C113-C114) and Drosophila-specific biology (C115) appropriately contextualizes the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C15"
+    ],
+    "result": "The testis shows patterns of rapid gene evolution and is a hotspot for genetic novelties including de novo genes, duplications, and mutations. It expresses more genes than any other tissue and young genes tend to be testis-biased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C12, C15 present established knowledge from the literature, appropriately cited. These claims provide context for the study but are not novel findings. They are well-supported by the cited references and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C87"
+    ],
+    "result": "New genes are expressed in various cell types with patterns influenced by their mode of origination. Lineage-specific de novo genes are commonly expressed in early spermatocytes, while young duplicated genes are often bimodally expressed, contrasting with previous characterization of de novo genes as lowly expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C87 summarize key findings about new gene expression. The contrast with previous work (C86-C87) highlights the value of single-cell resolution. The specific patterns for de novo genes (C6) and duplicated genes (C7) are well-supported by the detailed analyses presented in the results.",
+    "result_type": "MAJOR"
+  }
+]

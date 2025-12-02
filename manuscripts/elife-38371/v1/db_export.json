@@ -1,0 +1,2061 @@
+{
+  "submission": {
+    "id": "0cb5e976-2cfa-4b9d-a3ec-f67751b28551",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:13:01.020021Z",
+    "updated_at": "2025-12-02T09:13:01.020021Z"
+  },
+  "content": [
+    {
+      "id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "submission_id": "0cb5e976-2cfa-4b9d-a3ec-f67751b28551",
+      "content_type": "manuscript",
+      "content_text": "# Step-to-step variations in human running reveal how humans run without falling\n\n## Authors\n\n- Nidhi Seethapathi<sup>1</sup> ([ORCID: 0000-0002-5159-9717](https://orcid.org/0000-0002-5159-9717)) \u2020\n- Manoj Srinivasan<sup>1</sup> ([ORCID: 0000-0002-7811-3617](https://orcid.org/0000-0002-7811-3617)) \u2020\n\n### Affiliations\n\n1. Mechanical and Aerospace Engineering The Ohio State University Columbus United States\n2. Department of Bioengineering University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHumans can run without falling down, usually despite uneven terrain or occasional pushes. Even without such external perturbations, intrinsic sources like sensorimotor noise perturb the running motion incessantly, making each step variable. Here, using simple and generalizable models, we show that even such small step-to-step variability contains considerable information about strategies used to run stably. Deviations in the center of mass motion predict the corrective strategies during the next stance, well in advance of foot touchdown. Horizontal motion is stabilized by total leg impulse modulations, whereas the vertical motion is stabilized by differentially modulating the impulse within stance. We implement these human-derived control strategies on a simple computational biped, showing that it runs stably for hundreds of steps despite incessant noise-like perturbations or larger discrete perturbations. This running controller derived from natural variability echoes behaviors observed in previous animal and robot studies.\n\n## Introduction\n\nHuman running is often modeled as being periodic (Blickhan and Full, 1993; Seyfarth et al., 2002; Srinivasan and Holmes, 2008). But running is not exactly periodic, even on a treadmill at constant speed. Body motion during running varies from step to step (Cavanagh et al., 1977; Belli et al., 1995; Jordan et al., 2007; Jordan and Newell, 2008). This step-to-step variability could be due to internal perturbative sources like muscle force noise and sensory noise (Warren et al., 1986; Harris and Wolpert, 1998; Osborne et al., 2005) or small external perturbations (e.g. visual field inhomogeneity, small ground imperfections). To run without falling, the body\u2019s \u2018running controller\u2019 must prevent the effects of these small perturbations from growing too large. Here, we provide an experimentally\u00a0derived low-dimensional characterization of this control that reveals how humans run without falling down.\n\nOne classic modeling paradigm for running control assumes that the human leg behaves like a linear spring (Blickhan, 1989; McMahon and Cheng, 1990; Blickhan and Full, 1993). This paradigm has been used to argue how passive-elastic properties may reduce muscle work needed for locomotion (Alexander and Vernon, 1975; Alexander, 1990) and has been useful in examining locomotion in a simplified setting. Variants of these spring-mass running models have demonstrated stable running (Seyfarth et al., 2002; Seipel and Holmes, 2005; Ghigliazza et al., 2005; Geyer et al., 2006; Srinivasan and Holmes, 2008; Englsberger et al., 2016). These models have been successful in fitting the average center of mass motion during running (Blickhan and Full, 1993; Geyer et al., 2006; Srinivasan and Holmes, 2008). However,\u00a0understanding running stability requires understanding how deviations from the average motion are controlled. It has been previously recognized that spring-like leg mechanics cannot explain how deviations from the average motion are controlled and eventually attenuated (e.g.\u00a0Ghigliazza et al., 2005; Biewener and Daley, 2007; Maus et al., 2015). Here, we examine the role of active muscle control in running stability, using more general models of human locomotion rooted in Newtonian mechanics (Srinivasan, 2011).\n\nOne way of characterizing the running controller is to apply perturbations (for instance, pushes or pulls or sudden changes in terrain) and examine how the body recovers from the perturbations (Van Woensel and Cavanagh, 1992; Daley and Biewener, 2006; Qiao and Jindrich, 2014; Riddick and Kuo, 2016). Instead of such external perturbations, here, we use the naturally occurring step-to-step variability (Hurmuzlu and Basdogan, 1994; Maus et al., 2015) to characterize the controller. Previous attempts at examining such variability for controller information focused only on walking (Hurmuzlu and Basdogan, 1994;\u00a0Wang and Srinivasan, 2012;\u00a0Wang, 2013; Wang and Srinivasan, 2014) or considered variants of the spring-mass model (Maus et al., 2015). Here, we directly characterize the control in terms of how humans modulate their leg force magnitude and direction during running. The only way to control the center of mass motion is for the leg to systematically change the forces and the impulses it applies on the ground. We uncover how such center of mass control is achieved. We then implement this human-derived controller on a simple mathematical model of a biped (Srinivasan, 2011), showing that this biped model runs without falling down, despite incessant noise-like perturbations, large external perturbations, and on uneven terrain.\n\nA human-derived controller such as the one proposed here could inform monitoring devices to quantify running stability or fall likelihood (O'Loughlin et al., 1993), or could help understand running movement disorders. Further, implementing such controllers into robotic prostheses and exoskeletons (Dollar and Herr, 2008; Shultz et al., 2015) will allow the human body to interact more \u2018naturally\u2019 with the device, rather than having to compensate for an unnatural controller. Some running robots have demonstrated stable running, using a variety of control schemes (Raibert, 1986; Chevallereau et al., 2005; Tajima et al., 2009; Nelson et al., 2019). But these robots fall short of human performance and versatility. Understanding human running may lead to better running robots.\n\n## Results\n\nThe step-to-step variability during running appears superficially random. We show that this variability contains low-dimensional structure, specifically containing information about control strategies involved in running stably. We implement these strategies into a feedback controller, thereby stabilizing a simple mathematical model of a biped, and make further predictions.\n\nWe measured body motion and ground reaction forces (GRFs) of humans running for hundreds of steps on a treadmill at three speeds: 2.5, 2.7 and 2.9 m/s (see Materials and methods). Each running step consists of a \u2018flight phase\u2019 with neither foot on the ground, and a \u2018stance phase\u2019 with one foot on the ground. Figure 1 shows the coordinate system and sign convention: $x$ is sideways, $y$ is fore-aft, and $z$ is vertical. The results we present are for the highest running speed and we discuss speed-dependence of our results separately. Unless otherwise specified, all quantities and results in equations and figures are non-dimensionalized using body mass $m$, acceleration due to gravity $g$, and leg length $\u2113_{max}$. Forces are normalized by $m\u2062g$, distances by $\u2113_{max}$, speeds by $\\sqrt{g\u2062\u2113_{max}}$, time by $\\sqrt{\u2113_{max}/g}$, impulses by $m\u2062\\sqrt{g\u2062\u2113_{max}}$, etc.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig1-v1.jpg)\n\n**Figure 1.:** A schematic of a running trajectory, perturbed sideways during flight. The runner can recover back to steady state by changing the ground reaction force \u2014 say, by altering the foot placement and the leg force magnitude. This conceptual model is supported by our analysis of running data.\n\n### A hypothesized controller structure for stable running\n\nDuring flight phase, the body center of mass moves in a nearly parabolic trajectory and the runner has no control over this parabolic motion (as the aerodynamic forces generated by the person are negligible, unlike birds). From Newton\u2019s second law, it follows that the only way to control the center of mass motion is to modulate the total ground reaction force components during stance phase, when the leg is in contact with the ground. However, there are infinitely many ways to modulate the ground reaction forces to control the center of mass motion. Here, we examine how the ground reaction forces are modulated in response to center of mass state deviations during the previous flight apex (Figure 1). A flight apex is defined as when the center of mass height $z$ is maximum. The center of mass position and velocity at flight apex are denoted by $(x_{a},y_{a},z_{a})$ and $(x\u02d9_{a},y\u02d9_{a},z\u02d9_{a})$, respectively. Because the vertical velocity at flight apex $z\u02d9_{a}=0$ by definition, $z\u02d9_{a}$ is not considered as an explanatory variable. The absolute horizontal position $(x_{a},y_{a})$ on the treadmill changes with a much slower time-scale than other variables. Therefore, our default set of explanatory variables is $(x\u02d9_{a},y\u02d9_{a},z_{a})$. We will include the horizontal position $(x_{a},y_{a})$ when we comment later on \u2018station keeping\u2019.\n\n### Fore-aft and sideways impulses independently control center of mass motion\n\nThe step-to-step variability in the center of mass state at flight apex over hundreds of steps is shown in Figure 2a. To be stable, the runner needs to prevent this motion variability from growing without bound. As noted, the only way to control this motion is by using the ground reaction forces (GRFs). Consequently, the ground reaction force components over the stance phase are also variable (Figure 2b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig2-v1.jpg)\n\n**Figure 2.:** (a) Variability in the center of mass velocity at flight apex. (b) Mean GRFs in three directions (black line) and one standard deviation around the mean (yellow band) for a right stance phase; left stance phase GRF is similar in fore-aft and vertical directions, but the sideways GRF is negative of that for the right stance. Green text indicates standard deviation values in all panels. GRFs are in fraction of body weight. (c) Variability in the fore-aft and sideways impulses due to the GRFs. (d) Variability in foot position relative to torso at the beginning of stance phase. In panels a, c and d each dot corresponds to a separate step and the scatter plot is for all subjects with each subject\u2019s mean value subtracted, so that only variability about the mean is shown for 500 randomly\u00a0chosen steps. Red dots denote right steps and blue dots denote left steps.\n\nThe net effect of the ground reaction forces on the center of mass velocity over a stance phase is captured by the force impulse, namely, the integral of the force. The variability in the sideways and fore-aft ground reaction impulses over a step (Figure 2c) are well-predicted by the variability in the center of mass state $(x\u02d9_{a},y\u02d9_{a},z_{a})$ at the previous flight apex (Figure 3). Moreover, the sideways impulse depends primarily on the sideways velocity $x\u02d9_{a}$ and the fore-aft impulse depends primarily on the fore-aft velocity $y\u02d9_{a}$. Thus, it appears that the control in the fore-aft and sideways directions are independent or decoupled. Pooled over all subjects, the best-fit linear model for the sideways impulse $P_{x}$ is:\n\n$$\nLeft\u00a0stance:\u00a0\u0394P_{x}=\u22121.03\u0394x\u02d9_{a},\u00a0with\u00a0R^{2}=0.55,\u00a0andRight\u00a0stance:\u00a0\u0394P_{x}=\u22121.07\u0394x\u02d9_{a},\u00a0with\u00a0R^{2}=0.53,\n$$\n\nand that for the fore-aft GRF impulse $P_{y}$ is:\n\n$$\nLeft\u00a0stance:\u00a0\u0394P_{y}=\u22120.72\u0394y\u02d9_{a},\u00a0with\u00a0R^{2}=0.32,\u00a0and\u00a0Right\u00a0stance:\u00a0\u0394P_{y}=\u22120.72\u0394y\u02d9_{a},\u00a0with\u00a0R^{2}=0.33,\n$$\n\nas in Figure 3. All coefficients in Equations (1) and (2) are significant at $p<10^{\u22124}$. Both sideways and fore-aft impulses depend negligibly on vertical position deviations, so that including $z_{a}$ in the regression increases the $R^{2}$ values by less than $0.02$.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig3-v1.jpg)\n\n**Figure 3.:** A linear model based on center of mass velocity deviations at flight apex explains a considerable fraction of the impulse on the next step. The impulses are mass-normalized. The scatter plot shows 500 randomly selected steps for left (blue dots) and right stances (red dots). The best-fit line (yellow) and the corresponding slope are shown for the left stance impulse. The slopes of the best fit line suggest that the sideways impulse corrects about 100% of the sideways velocity deviation on average and the fore-aft impulse corrects about 70% of the fore-aft velocity deviation.\n\n### Almost deadbeat: impulses correct horizontal velocity mostly within a step\n\nThe linear models for the fore-aft and sideways impulses in Equations (1) and (2) have a simple interpretation. The $\u0394\u2062x\u02d9_{a}$ coefficient of about $-1$ in Equation (1) (that is, $\u0394\u2062P_{x}\u2248-\u0394\u2062x\u02d9_{a}$) implies that sideways velocity deviations are completely corrected in one step, on average (over all steps and all subjects). This correction could have been done over many steps, as would be the case if the coefficient were $-0.5$, say. But humans seem to exhibit a \u2018one-step dead-beat controller\u2019 on average for sideways velocity deviations (the term deadbeat control refers to when state deviations decay to zero in a finite amount of time). Of course, this single-step correction is not perfect. An $R^{2}$ value of about $0.55$ suggests that the system over-corrects or under-corrects deviations for any given step.\n\nAnalogously, the coefficient of $-0.72$ in Equation (2) suggests that about 72% of a forward velocity deviation is corrected in a single step, on average. While this is not strictly \u2018deadbeat control\u2019, it results in only $(1-0.72)^{2}=0.08$ of a perturbation remaining after two steps, and $(1-0.72)^{3}=0.02$ of a perturbation after three steps, indicating rapid control.\n\n### Apex-to-apex maps also show fast decay of center of mass deviations\n\nWe corroborate the above findings regarding perturbation decay with the \u2018apex-to-apex maps\u2019: that is, linear models that describe the relation between deviations in the state at one flight apex and those at the next flight apex. The right-to-left map from the state $S_{right}=[x\u02d9_{a},y\u02d9_{a},z_{a}]_{right}$ at an apex preceding a right stance to the state at the next flight apex (preceding a left stance) is, approximately:\n\n$$\n[x\u02d9_{a}y\u02d9_{a}z_{a}]_{left}=K_{R\u2192L}\u22c5[x\u02d9_{a}y\u02d9_{a}z_{a}]_{\u00a0right\u00a0}whereK_{R\u2192L}=[\u22120.05^{\u2217}\u22120.02^{\u2217}+0.31^{\u2217}\u22120.08^{\u2217}+0.27\u22120.15^{\u2217}+0.02^{\u2217}+0.06+0.46],\n$$\n\nwhere the superscript\u00a0$^{\u2217}$ indicates that the coefficient is not significantly different from zero ($p>0.05$). The left-to-right matrix $K_{L\u2192R}$ is similar to $K_{R\u2192L}$, except for the sign changes due to mirror-symmetry. The matrix product of $K_{L\u2192R}$ and $K_{R\u2192L}$ \u2014 Jacobians of the Poincare map (Hurmuzlu and Basdogan, 1994; Guckenheimer and Holmes, 2013; Maus et al., 2015) \u2014 quantify how apex state deviations grow or decay over one stride (two steps). The eigenvalues of this matrix product were all less than one in absolute value, indicating a stable periodic motion. The largest eigenvalue was $0.14$, indicating that at most $14$% of a perturbation remains after a stride on average in any direction.\n\nThe low value of $K_{R\u2192L}\u2062(1,1)$, not significantly different from zero, suggests that a purely sideways velocity perturbation gets corrected essentially over one step on average, consistent with the sideways impulse control (Equation 1). Similarly, the value $K_{R\u2192L}\u2062(2,2)=0.27$ suggests that 73% of a forward velocity deviation is corrected in one step, consistent with the fore-aft impulse control (Equation 2). Finally, the $(3,3)$ element of the step map (Equation 3) suggests that less than 50% of a deviation in vertical position $z_{a}$ remains after a step.\u00a0See\u00a0(Maus et al., 2015) for a detailed Floquet analysis of human running including more state variables, complementing the simplified version here.\n\n### Within-step vertical impulse modulations control vertical position\n\nThe control of vertical position is qualitatively different from that of control in the fore-aft and sideways directions, as we cannot use net vertical impulse for vertical position control due to the impulse-momentum considerations below. A flight apex occurs when the center of mass vertical velocity is zero. So, the net vertical impulse between two consecutive flight apexes is also zero (as it equals the change in vertical momentum, according to the impulse-momentum equation). Therefore, changing the net vertical impulse over a stance phase will not accomplish any meaningful control in the vertical direction. However, we will show that by differentially modulating the vertical impulse within one stance phase, we can change the vertical position ($z_{a}$) from one flight apex to the next, without changing the net impulse.\n\nTo show this most simply, consider infinitesimal flight phases and a stance phase from $t=0$ to $t=T_{step}$. The total impulse $P_{z}$ due to the vertical ground reaction force $F_{z}\u2062(t)$ equals that due to gravity,\u00a0which\u00a0is given by, $P_{z}=\\int_{0}^{T_{step}}F_{z}\u2062(t)\u2062\ud835\udc51t=\\int_{0}^{T_{step}}m\u2062g\u2062\ud835\udc51t=m\u2062g\u2062T_{step}$. For a triangular stance force (Figure 4) with peak force $F_{peak}$ at $t_{peak}$, we get $F_{peak}=2\u2062m\u2062g$. Then, by integrating the vertical acceleration $(F_{z}/m-g)$ twice, the change in vertical position $z\u2062(T_{step})-z\u2062(0)$ over a step is given by:\n\n$$\nz\u2062(T_{step})-z\u2062(0)=\\frac{g}{6}\u2062((T_{step}-t_{peak})^{2}-t_{peak}^{2}).\n$$\n\n![Figure 4.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig4-v1.jpg)\n\n**Figure 4.:** Using a unimodal vertical GRF, we find that the way to lower vertical position over a step is to move the peak force to the right. This is equivalent to increasing the vertical impulse on the second half of the step and decreasing the vertical impulse over the first half. Conversely, to increase the vertical position over a step, we find that the peak force needs to be moved to the left.\n\nIf the step was symmetric about mid-stance ($t_{peak}=T_{step}/2$), there is no vertical position change over a step ($z\u2062(T_{step})=z\u2062(0)$). The flight apex vertical position on the next step $z\u2062(T_{step})$ can be changed by changing $t_{peak}$ relative to $T_{step}/2$ (Figure 4). For example, if $z\u2062(0)$ at one flight phase was greater than its nominal value and the runner wishes to reduce it, this simple model predicts that the runner will decrease the first-half impulse and increase the second-half impulse; doing this is equivalent to delaying $t_{peak}$ relative to $T_{step}/2$ (as in Figure 4). This prediction is in agreement with the following experimentally-derived linear relations for the first half vertical impulse from $t=0$ to $T_{step}/2$, namely $\u0394\u2062P_{z}|_{0}^{T_{step}/2}$, and the second half vertical impulse from $t=T_{step}/2$ to $T_{step}$, namely $\u0394\u2062P_{z}|_{T_{step}/2}^{T_{step}}$:\n\n$$\nLeft\u00a0stance:\u00a0\u0394P_{z}|_{0}^{T_{step}/2}=\u22122.5\u0394z_{a}\u00a0and\u00a0\u0394P_{z}|_{T_{step}/2}^{T_{step}}=+2.5\u0394z_{a}\u00a0with\u00a0R^{2}=0.35,\u00a0and\u00a0\n$$\n\n\n\n$$\nRight\u00a0stance:\u00a0\u0394P_{z}|_{0}^{T_{step}/2}=\u22122.3\u0394z_{a}\u00a0and\u00a0\u0394P_{z}|_{T_{step}/2}^{T_{step}}=+2.3\u0394z_{a}\u00a0with\u00a0R^{2}=0.30.\n$$\n\nWe see that a positive $\u0394z_{a}$ corresponds to a decrease in the first-half vertical impulse and an increase in the second half vertical impulse. In addition to the vertical impulse, the landing leg length is also modulated in response to vertical flight apex deviations. Regressing the leg length $\u2113$ at the beginning of stance with the flight apex state, we found that this landing leg length is mostly a function of the vertical position at flight apex:\n\n$$\n\u0394\u2113_{landing}=0.3\u0394z_{a},\u00a0with\u00a0p<10^{\u22124}\u00a0and\u00a0R^{2}=0.25.\n$$\n\nThus, a downward position deviation at flight apex would result in landing with a shorter leg length than nominal (e.g. via flexed knee or ankle). A downward position deviation is analogous to a sudden step-up perturbation, so reducing the landing leg length reduces trip likelihood.\n\n### Impulse control is achieved by phase-dependent force modulations\n\nThe linear models above tell us how deviations from nominal motion at flight apex are corrected grossly over the next stance. But they do not tell us how the forces are modified continuously throughout a stance phase. The variability of the GRF components $(F_{x},F_{y},F_{z})$ depend on the \u2018phase\u2019 of the stride cycle, specifically, the time fraction $\u03d5_{stance}$ of stance (Figure 2b). To explain this phase-dependent force variability within a single step, we compute the phase dependent sensitivity of $(F_{x},F_{y},F_{z})$ to the center of mass state as follows. For each output, say $F_{x}$, we divide the stance duration into 20 phases and compute a linear model for $F_{x}$ at each of those phases, all with $(x\u02d9_{a},y\u02d9_{a},z_{a})$ as inputs. We refer to the coefficients in these linear models as a function of the phase $\u03d5_{stance}$ as the phase-dependent sensitivities of the GRFs (Figure 5) to the corresponding predictor variable in $(x\u02d9_{a},y\u02d9_{a},z_{a})$.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig5-v1.jpg)\n\n**Figure 5.:** We show how the GRF components respond to perturbations at the previous flight apex, as estimated by our phase-dependent GRF model. (a) Sideways GRF response to a (rightward) sideways velocity perturbation. (b) Fore-aft GRF response to a forward velocity perturbation. In both cases, the change in GRF from nominal (shown by the arrow) is obtained as a product of the perturbation size and the sensitivity of the GRF to the perturbation. To produce these plots, we computed a sequence of linear models, predicting the ground reaction forces at a sequence of gait phases through the stance phase, all using the same input variables, namely the flight apex center of mass state. The sensitivities or partial derivatives ($J_{1}(\u03d5_{stance})$\u00a0and\u00a0$J_{5}(\u03d5_{stance})$)\u00a0shown are the corresponding coefficients in these linear models, plotted as a function of the stance fraction $\u03d5_{stance}$\u00a0at which the GRF is being predicted by the linear model.\u00a0In the axis labels, the nominal or average ground reaction forces are denoted with an overbar ($F\u00af_{x}$\u00a0and\u00a0$F\u00af_{y}$) and the modulated ground reaction forces are denoted without the overbar ($F_{x}$\u00a0and\u00a0$F_{y}$).\n\nThe phase-dependent sensitivity of sideways GRF to $x\u02d9_{a}$ shows that $F_{x}$ is decreased over the whole step to correct a positive sideways velocity deviation at flight and that a majority of this correction occurs during the middle of stance (Figure 5a). Similarly, in response to a positive fore-aft velocity perturbation, the fore-aft GRF is modulated so that there is a net negative force on the body over the next step (Figure 5b). The sensitivity of the fore-aft force $F_{y}$ is more in the first half of stance than during the second half of stance, being modulated more during the deceleration phase (roughly\u00a0$\u03d5_{stance}<0.5$) than during the acceleration phase (roughly\u00a0$\u03d5_{stance}>0.5$).\n\n### Foot placement control: step in the direction of the fall\n\nPlacing the foot relative to the body allows a runner to modulate the leg force direction and thus the GRF components. The foot position $(x_{f},y_{f})$ relative to center of mass position at the beginning of stance phase $(x_{s},y_{s})$ is predicted by the previous flight apex state as described by the following equations. Specifically, sideways foot placement is described by the following equations:\n\n$$\nLeft\u00a0stance:\u00a0\u0394(x_{f}\u2212x_{s})=0.95\u0394x\u02d9_{a}\u00a0with\u00a0R^{2}=0.64\u00a0and\u00a0Right\u00a0stance:\u00a0\u0394(x_{f}\u2212x_{s})=1.00\u0394x\u02d9_{a}\u00a0with\u00a0R^{2}=0.62.\n$$\n\nThe fore-aft foot placement is described by the following equations:\n\n$$\nLeft\u00a0stance:\u00a0\u0394(y_{f}\u2212y_{s})=0.42\u0394y\u02d9_{a}\u22120.76\u0394z_{\\alpha}\u00a0with\u00a0R^{2}=0.45\u00a0and\u00a0Right\u00a0stance:\u00a0\u0394(y_{f}\u2212y_{s})=0.39\u0394y\u02d9_{a}\u22120.83\u0394z_{a}\u00a0with\u00a0R^{2}=0.46.\n$$\n\nThat is, a sideways velocity perturbation to the body results in the foot being placed further along the direction of the perturbation. So, a rightward perturbation results in a more rightward step. Analogously, a forward velocity perturbation results in the foot being placed further forward relative to the body. As with the impulses, again, there is no significant coupling between sideways and fore-aft directions. Fore-aft foot placement modulation also depends on vertical position deviations, in a manner that the runner lands with a steeper leg when landing from a higher flight apex $z_{a}$. Such dependence of landing leg angle on vertical position is analogous to behavior in terrain-change experiments (Daley and Biewener, 2006; M\u00fcller et al., 2012; Qiao and Jindrich, 2012; Birn-Jeffery and Daley, 2012), as discussed in detail later.\u00a0We speculate that using foot placement based on center of mass state may be an efficient way to affect the center of mass motion, compared to, say, changing the leg force magnitudes and leg joint torques after the foot touches down (Clark, 2018).\n\n### Swing foot re-positioning happens during flight, just before foot touchdown\n\nOne possibility is that the foot placement deviations are achieved early on during the swing phase and this deviation is preserved during swing until the foot touchdown. However, this does not appear to be the case. Figure 6 shows the fraction of foot placement variance predicted by the swing foot state over the previous step. Less than 10% of the eventual foot placement is predicted by the swing foot at the beginning of flight phase (Figure 6). The explanatory power of the swing foot rises rapidly during the flight phase from less than 10% to a 100% when it becomes the next stance foot, suggesting that most swing foot re-positioning may happen during this flight phase.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig6-v1.jpg)\n\n**Figure 6.:** The fraction of sideways foot placement (panel a) and fore-aft foot placement (panel b) variance at beginning of stance predicted by the center of mass (CoM) state or swing foot state during the previous one step (flight and stance). To produce this figure, a sequence of linear models were built for predicting the foot placement based on the center of mass state or swing foot state during different phases through the previous step. We plot the $R^{2}$ value corresponding to these linear models (that is, fraction of variance explained) as a function of the gait phase used for the prediction; the gait phase is represented as the fraction of a step starting from beginning of previous stance phase. The solid and dashed lines represent right and left foot placements, respectively.\n\n### Center of mass state predicts future foot placement before the foot state does\n\nAt the beginning of flight phase (and earlier), the center of mass state is a vastly better predictor of the next foot placement than the swing foot itself (Figure 6). We can predict the foot placement using the center of mass state better than just the relative swing foot state until about 100 ms before foot touchdown. The explanatory power of the center of mass remains flat during flight. This flatness is likely because center of mass state follows a parabolic path during flight and thus accumulates no new variation. This lag between the explanatory power of the center of mass and the foot suggests that the error information in the center of mass state is yet to be fully incorporated into the swing foot re-positioning until the flight phase. During the brief flight phase, when the swing foot\u2019s explanatory power increases, information from center of mass state is transferred to the foot, presumably via some mixture of feedback control and feedforward dynamics.\n\n### Continuous stance state feedback, station-keeping, and running speed do not significantly affect stance control\n\nAs an alternative to control based on discrete monitoring of deviations at the previous flight apex state, we considered a \u2018continuous control\u2019 model. Specifically, we obtained linear models for the GRFs based on the current center of mass state during stance $(x\u02d9,y\u02d9,z)$. These linear models did not differ significantly in the fraction of GRF variance explained, compared to the apex-based control model ($p=0.94$). In the linear models above, adding the sideways and fore-aft apex body position $(x_{a},y_{a})$ to the explanatory variables improves the $R^{2}$ values by less than $1.5%$. Thus, the runners did not prioritize controlling their position relative to the treadmill (station-keeping). Further, the regression coefficients for $(x\u02d9_{a},y\u02d9_{a},z_{a})$ did not vary significantly across the three running speeds ($p>0.05$, paired t-test).\n\n### Approximate left-right symmetry in the control\n\nThe running control gains have approximate bilateral (left-right) symmetry. The gains that couple sideways direction\u00a0variables and either fore-aft or vertical direction\u00a0variables have mirror-symmetry (see Equations 1,2,8,9). That is, these gains for the left leg\u2019s stance are the negatives of corresponding gains for the right leg\u2019s stance. On the other hand, gains that couple one\u00a0sideways variable\u00a0with\u00a0another sideways\u00a0variable, or one\u00a0fore-aft variable\u00a0with another\u00a0fore-aft variable,\u00a0are the same for the left and right legs without any such sign changes. This mirror symmetry in running control likely follows from the approximate mirror symmetry in body physiology about the sagittal plane and was also found in walking (Wang and Srinivasan, 2014; Ankaral\u0131 et al., 2015). This symmetry suggests the lack of a substantially dominant limb for running control, in contrast to the asymmetry and limb role differentiation that occurs in some other tasks (Peters, 1988).\n\n### Simple models of running capture GRFs and phase-dependent GRF modulations\n\nWe now show that the experimentally\u00a0derived control strategies described above are sufficient to control the running dynamics of a simple mathematical model of a biped. We consider a biped with point-mass upper body and massless telescoping legs capable of generating arbitrary force profiles (unlike a spring). We considered two versions of this biped model (Figure 7a), one with direct control of the leg force and another that produces leg forces via Hill-type muscles (Figure 7b). See Materials and methods for how the nominal running motion and the feedback controllers are specified for the models.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig7-v1.jpg)\n\n**Figure 7.:** (a) Two simple biped models were simulated: a telescoping leg model with direct force control and a kneed biped with activation control of the muscle at the knee. (b) The muscle in the second model is a classic Hill-type muscle (Zajac, 1989), composed of an active contractile element, a series elastic element (tendon), and a parallel elastic element. The force $F_{CE}$ in the active contractile element for the muscle model depends on the muscle length $\u2113_{m}$ through a force-length relationship $\u03c8_{\u2113}$, on the muscle length rate $\u2113\u02d9_{m}$ through a force-velocity relation $\u03c8_{v}$, and the activation $a$, so that $F_{CE}=a\u2062F_{iso}\u2062\u03c8_{v}\u2062\u03c8_{\u2113}$, where $F_{iso}$ is the maximum isometric force in the muscle (Zajac, 1989). (c) The control input for both models is represented as a Fourier sum of two sine waves of frequencies $T_{stance}^{-1}$ and $2\u2062T_{stance}^{-1}$. For the first model, the force is represented by this Fourier sum and for the second model, the muscle activation. This two-term function is able to allow leg force profiles without a time-reversal symmetry as shown (force peak not occurring at mid-stance).\n\nWe find that the models\u2019 ground reaction forces are similar to experimental data despite not explicitly matching the curves (Figure 8a). Further, we find that the phase-dependent ground reaction force feedback gains for the models are qualitatively similar to the phase-dependent\u00a0gains inferred from experiment (Figure 8b), again, despite not explicitly fitting the shape of these phase-dependent\u00a0gains. This shows that these simple models can not only capture the average motion during running, but also how the runner responds to deviations from the average motion.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig8-v1.jpg)\n\n**Figure 8.:** Both models fit the experimental GRFs and feedback gains reasonably well, despite not having been made to match them explicitly: (a) Mean GRFs over stance in three directions. GRFs are reported as a fraction of body weight. (b) Phase-dependent feedback gains describing the sensitivity of the sideways GRF to sideways velocity perturbation, fore-aft GRF to a fore-aft velocity perturbation, and the vertical GRF to vertical position perturbation at the previous flight apex. The standard deviations of the experimentally derived curves are shown as yellow bands.\n\n### Human-derived controller stabilizes a minimal model of bipedal running\n\nThe simple models\u2019 running motions are not stable without the controller: an arbitrarily small perturbation makes it diverge from the original running motion. With the foot placement and leg force controller turned on, the running motion is asymptotically stable. Figure 9a\u2013d shows the model recovering from fore-aft, sideways, and vertical perturbations at flight apex. It is a mathematical theorem that a stable periodic motion that can reject perturbations at one phase (say, flight apex) can reject perturbations at any phase (Guckenheimer and Holmes, 2013). So, it follows that our model rejects perturbations at any phase.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig9-v1.jpg)\n\n**Figure 9.:** We illustrate the stability of the running model by showing how large perturbations at flight apex decay. (a) Decay of a forward velocity perturbation. (b) Decay of a sideways velocity perturbation. (c) Top view center of mass trajectory, showing the unperturbed running motion and a running motion that recovers from a rightward velocity perturbation. The rightward perturbation elicits a rightward foot placement, compared to the nominal foot placement during unperturbed running. (d) Sagittal view of running, recovering from an upward position perturbation. On the first step, the leg touch-down angle is steeper than the touch-down angle during unperturbed running and the contact time is shorter. All quantities are non-dimensional. See Videos 1,2 and 3 for illustrative\u00a0animations of the biped model recovering from forward, sideways, and vertical perturbations, respectively.\n\n![Video 1.](https://cdn.elifesciences.org/articles/38371/elife-38371-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/38371/elife-38371-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/38371/elife-38371-video3.mp4.jpg)\n\nThe inputs to the feedback controller ($x\u02d9_{a},y\u02d9_{a},z_{a}$) do not include the absolute sideways and fore-aft position $(x_{a},y_{a})$ of the runner. Therefore, the controller does not correct position perturbations (station-keeping). A sideways or fore-aft push to the model results in convergence to the nominal running motion, except for a sideways or fore-aft position offset (Figure 9c).\n\n### Non-zero leg work for energy-changing perturbations\n\nFigure 10 illustrates\u00a0the leg work-loop for the unperturbed run (net zero work) and when positive perturbations are applied to sideways and fore-aft velocities, and vertical positions.\u00a0All such positive perturbations result in net negative work on the first step after the perturbation, reflected in the work-loops with net negative area within them. Such net positive or negative leg work is clearly necessary to recover from perturbations that change the total mechanical energy of the runner, as was recognized in prior discussions of the energy-neutral spring-mass model of running (Ghigliazza et al., 2005; Biewener and Daley, 2007; Srinivasan and Holmes, 2008).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig10-v1.jpg)\n\n**Figure 10.:** Work loops for the muscle-driven biped model without perturbations and with perturbations in the (a) fore-aft velocity, (b) sideways velocity, and (c) vertical position. The work loop plots force versus leg length and the signed area included in it is the net work performed by the leg.\n\n### Explaining variability: muscle-driven running model does not fall despite noise\n\nTo\u00a0simulate the step-to-step variability in real human running, we added \u2018noise\u2019 to our foot placement and leg forces (for the direct force control model) or muscle activations (for the muscle-driven model) and simulated the biped models for a few hundred steps. This noise is meant to model the phenomenon that intended muscle forces tend to deviate from actual muscle forces due to motor noise (Harris and Wolpert, 1998). We find that while the direct leg force control model falls down, the runner with muscles does not fall down for hundreds of steps despite the noise. The stable motion of the center of mass in the presence of noise-like perturbations is shown in Figure 11a. The variability in the center of mass state at flight apex for the model (Figure 11b) as a result of the simulated noisy control is qualitatively similar to the variability found in experiment (Figure 2a). The model is also able to run without falling despite vertical position perturbations at flight apex, which are equivalent to uneven terrain. Thus, even though the model was derived using data on horizontal ground, it is capable of running robustly on uneven terrain. The muscle-driven model is robust to motor noise presumably because of the intrinsic stabilizing properties of force-length and force-velocity relations (Hogan, 1984; Jindrich and Full, 2002).\n\n![Figure 11.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig11-v1.jpg)\n\n**Figure 11.:** (a) Multiple steps of the biped model running in the presence of noisy foot placement and muscle activations (blue for stance phases and pink for flight phases). Periodic nominal motion in the absence of noise (black, solid lines for stance, dashed for flight). (b) Deviations in flight apex state, GRF impulse, and foot placement from nominal for a 1000 steps (500 left steps as blue dots, 500 right steps as red dots), showing behavior analogous to Figure 2. This variability is not explicitly specified, but instead emerges from the interaction between the motor noise and the controlled dynamics.\n\n## Discussion\n\nWe have mined the step-to-step variability in human running to show how humans modulate leg forces and foot placement to run stably. We then used these data-derived control strategies on a biped model, demonstrating robustness to discrete\u00a0perturbations and persistent motor noise.\n\nWe have shown that humans use foot placement or leg angle control in a manner that they step in the direction of the perturbation, thereby directing the leg force so as to oppose the perturbation. This result provides an empirical basis for ad hoc assumptions about leg angle control made in previous running models (Seyfarth, 2003; Ghigliazza et al., 2005; Peuker et al., 2012). The foot placement controller derived from running data is qualitatively similar to the classic Raibert-like controller used in early running robots (Raibert, 1986) in that the foot placement opposes velocity deviations with no sideways-fore-aft coupling, but differs in that it has a dependence on vertical position perturbations. This makes such robotic controllers inadvertently biomimetic. Humans use similar foot placement control in walking, stepping in the direction of the perturbation (Hof et al., 2010; Wang and Srinivasan, 2014). Previous work had shown that appropriate foot placement is used in running ostriches while turning (Jindrich et al., 2007), running humans in cutting maneuvers (Besier et al., 2003), and turning while walking (Patla et al., 1999).\n\nSome past work on inferring stability from variability focused on kinematic measures of variability such as Floquet multipliers, finite-time Lyapunov exponents (Dingwell et al., 2001) and long term correlations in walking and running variability (Hausdorff et al., 1995; Jordan et al., 2006; Kaipust et al., 2012). Such measures can provide discriminative diagnostic measures (Kaipust et al., 2012), but do not attempt to provide a causal narrative about how locomotion is controlled. Our approach here, rooted in Newton-Euler mechanics, is able to discover potential causal strategies underlying locomotion stability, and by extension, could inform treatment of pathological unstable movements in addition to diagnosis. Other past studies have used variants of the principal component analysis (Cappellini et al., 2006; Maus et al., 2015) to demonstrate that the intrinsic variability in human locomotion may reside in a lower dimensional manifold (Cappellini et al., 2006; Chang et al., 2009; Yen et al., 2009; Dingwell et al., 2010; Maus et al., 2015). Here, by focusing on how the center of mass is controlled through forces, we have implicitly used a physics-based dimensionality reduction to examine the dominant control strategies.\n\nWhile our work relies on linear regressions from data, the basic physics relating the inputs and outputs in these models suggest a natural causal account. This causal account, based on simplifying modeling assumptions, ignores the effect of variables not considered here. Our goal here was to delineate the explanatory power of controller descriptions based on center of mass state. To identify the effect of perturbations of other possibly relevant state variables (such as trunk attitude and angular velocity), we may need to either independently perturb these state variables or show that the natural variability in such variables is not significantly correlated with the center of mass state.\n\nThe gain relating sideways foot placement and sideways velocity deviation was about 2.5 times greater than the gain relating fore-aft foot placement and fore-aft velocity deviation; a similar factor of 3 was found in walking (Wang and Srinivasan, 2014), perhaps reflecting the greater sideways instability of a biped without foot placement control (Ghigliazza et al., 2005). Also consistent with lower control authority and a greater fall propensity in the sideways direction, we find that the recovery from a sideways perturbation is faster than from a fore-aft perturbation. While station-keeping was not prioritized over a single step, it may occur on a slower time-scale with a multi-step controller, not considered here.\n\nThe results we have presented have been for data pooled over all subjects. Performing the regressions for data from individual subjects indicates that the dominant terms in the inferred controllers are similar for all subjects; the subject-to-subject variability in the estimated control gains are shown in Figure 12. Figure 12 illustrates how the accuracy of an estimated control gain depends on the number of strides used for regression. For such linear regressions, the error estimate (standard deviation) is expected to decrease with $N_{stride}$ like $1/N_{stride}^{2}$, so that a factor of 10 decrease in error requires a 100-fold increase in sample size (Wang and Srinivasan, 2012; Hamilton, 1994). This dependence on $N_{stride}$ may guide selection of sample sizes for future experimental designs.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/38371/elife-38371-fig12-v1.jpg)\n\n**Figure 12.:** (a) The coefficients in the impulse control equations (Equations 1-2) and foot placement equations (Equations 8-9). The box plots indicate distributions of coefficients over all subjects; coefficients for each subject are also shown (red circles). (b) The dependence of coefficient estimate on the sample size, namely the number of strides $N_{stride}$ used. The box plot indicates variability in control gain estimates. This plot was generated using bootstrap statistics (Efron and Tibshirani, 1994) by resampling from the pooled data from all subjects, and plotting the distribution of control gains obtained for each $N_{stride}$ over multiple samples. This graph corresponds to the left stance impulses, but the corresponding graph for the right stances is nearly identical. Other coefficients exhibit similar trends with sample size. The boxes in the box plots show the median and the 25th\u00a0to 75th percentile and the whiskers indicate all data within 2.7 standard deviations from the median.\n\nOur model predicts that when a runner starts at a higher-than-normal height at flight apex, or equivalently, encounters a step-down, the runner lands with a steeper leg angle (Figure 9d). Such behavior has been observed in humans and bipedal running birds running with large unforeseen or visible step-downs (Daley and Biewener, 2006; Grimmer et al., 2008; M\u00fcller et al., 2012; Qiao and Jindrich, 2012). Conversely, step-ups decrease touch-down angle, as predicted (Birn-Jeffery and Daley, 2012). This behavior has been attributed to swing leg retraction just before foot contact (Seyfarth, 2003), but our foot placement controller captures this phenomenon despite not having explicit leg swing dynamics. While the terrain perturbations in the aforementioned experiments were large (5\u201320 cm), our model is based on data with tiny step-to-step deviations (vertical position $z_{a}$ s.d. 5 mm). This agreement indicates that humans may use qualitatively similar control strategies for large external perturbations and small intrinsic perturbations. Such foot placement control has also been used\u00a0to\u00a0control robots running on uneven terrain (Hodgins and Raibert, 1991).\n\nIt is expected that any running controller that achieves asymptotic stability will need to perform net mechanical work in response to perturbations that decrease or increase the body\u2019s mechanical energy (Ghigliazza et al., 2005; Srinivasan and Holmes, 2008; Maus et al., 2015). Our results are consistent with such expectation, as illustrated by the work-loops with net mechanical work in Figure 10. Energy-conservative spring-like leg behavior does not allow such net mechanical work and can achieve only partial asymptotic stability, not being able to handle energy-changing perturbations (as noted by (Ghigliazza et al., 2005)). Indeed, it is generally thought that even the spring-mass-like steady state center of mass motion in running is due to considerable muscle action and has been termed pseudo-elastic (Ruina et al., 2005) or pseudo-compliant (McN. Alexander, 1997). Remarkably, energy-optimal running movements in models with no leg springs produce similar spring-mass-like center of mass trajectories (Srinivasan, 2011), with leg muscles performing equal amounts of positive and negative work.\n\nA previous article (Maus et al., 2015) fit running data to variants of the spring-mass model, allowing the spring stiffness and spring length to change during stance, and showing that constant values for these parameters cannot fit running data. Here, we have used a simpler model to directly describe the control of stance leg force or activation (Figure 8). Such direct control of leg force or activation is perhaps more parsimonious than the simultaneous control of two variables, namely, spring stiffness and length. We have shown that humans modulate GRF continuously over the whole stance phase for control (Figure 5); Maus and colleagues (Maus et al., 2015) assumed, for simplicity, an instantaneous finite energy input at mid-stance.\n\nThe stabilizing responses we have characterized in this study are likely due to a mixture of feedforward dynamics and active neurally mediated feedback control.\u00a0When we use the term \"control\" here, we implicitly refer to this mixture. It is hard to rigorously separate the roles of feedforward and feedback control without recording motor neuronal outputs and how these outputs interact with the properties of muscles. Nevertheless, we can determine the feasibility of feedback control by checking whether there is enough time for feedback control, given typical neuromuscular latencies. Our typical flight phase durations are greater than or about roughly equal to the typical short- or middle- latencies in reflex or feedback loops involving vestibular (Fitzpatrick et al., 1994; Iles et al., 2007) or proprioceptive mechanisms (Pearson and Collins, 1993; Sinkj\u00e6r et al., 1999). This suggests feasibility of feedback based on flight phase or late stance phase information regarding center of mass state. While we have focused on the control of stance based on the previous flight apex, we have found that equivalent controllers based on the center of mass state at the end of previous stance have similar predictive ability (Figure 6), thus allowing more time for neural feedback. Specifically,\u00a0the\u00a0lag between the information in the center of mass state and the swing foot state regarding future foot placement is about 0.1 s for sideways placement and about twice that for fore-aft foot placement, suggesting sufficient time for neurally mediated feedback control of foot placement (Figure 6).\n\nCenter of mass state or other body state information needed for feedback control could be estimated by the nervous system by integrating sensory signals from vision (Patla, 1997), proprioceptive sensors (especially when the foot is on the ground (Sainburg et al., 1995)), and vestibular sensors (Angelaki and Cullen, 2008), potentially in combination with predictive internal models (Wolpert et al., 1995; Cullen, 2004). In future work, repeating the calculations herein (for instance, Figure 6) for experiments that systematically block or degrade (say, by adding sensory noise) one or more of these sensors may tell us the relative contributions of these sensors to running control. We speculate that most available relevant sensory information is used, perhaps analogous to an optimal state estimator (Kuo, 2005; Srinivasan, 2009), and degrading one sensor may result in sensory re-weighting on a slow time-scale (Carver et al., 2006; Assl\u00e4nder and Peterka, 2014).\u00a0Such experiments may also help explicitly distinguish the effects of sensory and motor noise, which we have implicitly combined here into a single residual term in the linear regressions.\n\nIn this work, we have obtained a running controller with simplifying assumptions. Because humans have extended feet, non-point-mass upper bodies and legs with masses, the simple\u00a0point-mass model may not capture all aspects of the running data (Bullimore and Burn, 2006; Srinivasan and Holmes, 2008). Further, we\u00a0have made simplifying assumptions about muscle architecture, muscle properties (linear force-velocity relations), and muscle activation, which are meant to capture the main qualitative dynamical features of muscles, rather than model them quantitatively precisely. For instance, we used a linear force-velocity relation,\u00a0which may be sufficient to produce damping-like and\u00a0stabilizing\u00a0muscle behavior when activated, but this damping behavior may be accentuated by a more\u00a0realistic\u00a0nonlinear force-velocity relation.\n\nFuture work will also involve obtaining controllers for more complex biped models and muscle models with different control architectures, which, for instance, might include\u00a0feedback control based\u00a0on not just the center of mass state, but the states of individual body segments. We have focused on linear relations between state deviations and control, as this\u00a0is naturally suited for small deviations and perturbations that our data contains. In future work, we hope to examine the range of perturbation sizes for which this linear description is accurate by comparing this linear control to responses in experiments with larger perturbations, also inferring nonlinear descriptions should they improve predictive capability.\u00a0We will also examine other control architectures, for instance, more explicitly incorporating state estimation and considering continuous control of motor outputs based on an estimated state, partly correcting for neural latencies using internal models.\n\nThe methods used\u00a0here\u00a0are simple and non-invasive: they can be replicated to study running stability and control in other animals, or indeed, other approximately periodic tasks such as flapping flight and swimming.\u00a0These methods are suitable for analyzing differences in different populations like athletes and non-athletes, the young and the elderly, and adults with and without movement disorders. Once such differences are well-characterized, this information could be used, say, in a rehabilitation setting to track progress from a controller in the presence of a movement disorder to a more healthy controller, and to design rehabilitation robots that assist in this progress.\n\n## Materials and methods\n\nWe collected running data by conducting human subject experiments, obtained linear models to characterize the control strategies hidden in the step-to-step variability, and performed dynamic simulations using the inferred controller on a mathematical model of the runner.\n\n### Experimental methods\n\nThe protocols were approved by the Ohio State University Institution Review Board and subjects participated with informed consent. Eight subjects, three female and five male (age 25.0 \u00b15 years, weight 66.8 \u00b17 kg, height 1.8 \u00b10.14 m, leg length 1.05 \u00b10.08 m, mean \u00b1 s.d.) ran on a split-belt treadmill at three constant speeds: 2.5, 2.7 and 2.9 m/s, presented in random order. Each speed had 2075 \u00b1 67 strides across all subjects (one stride\u00a0=\u00a0two steps) with subjects running about 3.5 min on average. Subjects wore a loose safety harness that did not constrain their motion. Three-dimensional ground reaction forces and moments on each belt of the treadmill were recorded by separate six-axis load cells (Bertec Inc, 1000 Hz). Body segment motion was measured using marker-based motion capture (Vicon T20, 100 Hz) with four reflective markers on each foot and on the torso.\n\n### Calculating input state variables during flight apex\n\nWe define flight apex as when the center of mass velocity reaches its peak height ($z\u02d9=0$). The input to the running controller is drawn from the center of mass state at flight apex, namely position $(x_{a},y_{a},z_{a})$ and velocity $(x\u02d9_{a},y\u02d9_{a},z\u02d9_{a})$. Unless otherwise specified, we use the flight apex state $(x\u02d9_{a},y\u02d9_{a},z_{a})$ as inputs in our linear models. The vertical velocity $z\u02d9_{a}$ at flight apex is zero by definition and hence not included as an input. The center of mass velocities are obtained by integrating the center of mass accelerations, that is, the mass-normalized net force on the body: $x\u00a8=F_{x}/m$, $y\u00a8=F_{y}/m$,\u00a0and\u00a0$z\u00a8=F_{z}/m\u2212g$,\u00a0where $F_{x},F_{y}$ and $F_{z}$ are the measured ground reaction forces on the body. To obtain the integration constants, we assume that the mean velocity and acceleration over the whole trial are zero, because the person does not translate appreciably in the lab frame over a trial. To remove the slow integration drift in the center of mass velocity, we used a high-pass filter with a frequency cut-off equal to an eighth of mean step frequency (Luinge and Veltink, 2005; Schepers et al., 2009). Changing this high-pass filter cut-off to a twentieth of the step frequency instead, or using a piecewise-linear de-trending over 20 steps, do not affect any of this article\u2019s conclusions. This is because the stability-critical time-scales are much shorter. We ignored air drag here, because including it changed the velocities by less than 10-5 ms-1, which is much smaller than the step-to-step variability. We use a weighted mean of four markers, roughly\u00a0at the sacral level, as an approximation of the center of mass position (Gard et al., 2004; Wang and Srinivasan, 2014; Perry and Srinivasan, 2017).\n\n### Calculating the output control variables during stance\n\nWe assume that the following variables are used to control the runner: GRFs, foot placement, and the landing leg length. Stance phases are identified as when the vertical GRF exceeds a threshold value to account for measurement noise ($F_{z}>30$ N). The corresponding stance duration is $T_{stance}$. The GRF impulses $(P_{x},P_{y},P_{z})$ for each step are obtained by integrating the GRF components over the stance phase ($P_{x}=\\int_{0}^{T_{stance}}F_{x}\u2062\ud835\udc51t$, etc). In addition to considering how GRF control occurs grossly over one step, we also consider GRF control throughout stance as a function of stance phase fraction $\u03d5_{stance}$. Each stance phase is divided into $n$ bins of duration $T_{stance}/n$. To approximate how the GRFs changes with the stance phase fraction $\u03d5_{stance}$, we used the binned averages of the GRF in each of $n=20$ bins.\n\n### Linear regressions between the outputs and the inputs\n\nWe compute the mean values of the inputs over all steps in each trial and obtain deviations from these means $(\u0394\u2062x\u02d9_{a},\u0394\u2062y\u02d9_{a},\u0394\u2062z_{a})$. Similarly, we compute the deviations from the means of the output variables $\u0394\u2062F\u2062(\u03d5_{stance})$, $\u0394\u2062P$, and $\u0394\u2062(x_{f}-x_{s},y_{f}-y_{s})$. We use ordinary least squares regression to obtain linear models between the inputs and the outputs and report significant coefficients. Specifically, we have $\u0394\u2062Output=J\u22c5\u0394\u2062Input$, where the Jacobian matrix $J$ represents the matrix of coefficients in the linear model. Each element of the matrix $J$ quantifies the sensitivity of an output variable to small changes in a corresponding input variable, as inferred from the data and subject to the simplifying model assumptions. These sensitivity coefficients could be interpreted as partial derivatives, such as: $\\partial\u2061T_{stance}/\\partial\u2061x\u02d9_{a}$, $\\partial\u2061F_{y}\u2062(\u03d5_{stance})/\\partial\u2061y\u02d9_{a}$, and so on. Unless otherwise specified, the results presented are based on deviations of all subjects pooled together as one dataset, but we find that the models\u00a0of individual subjects\u2019 data are qualitatively similar (as indicated in Figure 12). The coefficients for the right leg and left leg are computed separately, to accommodate sign changes due to symmetry about the sagittal plane.\n\n### Regressions with phase-dependent inputs\n\nIn addition to the regressions described above using the flight apex state as the predictor, we used the center of mass state $(\u0394\u2062x\u02d9_{a},\u0394\u2062y\u02d9_{a},\u0394\u2062z_{a})$ at different phases over the previous step to predict each of the stance phase outputs. Specifically, for each stance phase output, we performed $n=20$\u00a0regressions, each using the center of mass state at one of\u00a0the\u00a0$n=20$ equally spaced gait phases over the previous step, where one full step is defined as starting and ending at a touch-down. This analysis allows us to investigate the predictive ability of the center of mass state at different phases. For these phase-dependent regressions, in addition to using the center of mass state as the predictor, we repeated the calculations using the swing foot state (position and velocity relative to the center of mass), so as to compare the different predictive abilities as in Figure 6.\n\n### Implementing the data-derived control on a minimal mathematical biped\n\nWe consider two simple models of running, similar in spirit to previous models in terms of simplicity (Blickhan and Full, 1993; Geyer et al., 2006; Srinivasan and Holmes, 2008), but generalized such that the leg forces are not constrained by ad hoc spring-like-leg assumptions (Srinivasan, 2011). Instead, the biped controller details are inferred from our experimentally\u00a0obtained linear models. Both biped models have a point-mass upper body and massless legs (Srinivasan and Ruina, 2006; Srinivasan, 2011), that can change effective leg length during stance by modulating the leg force (Figure 7a). During flight phase, the point-mass body undergoes parabolic free flight. The legs can apply forces on the upper body during stance phase. The two models, dubbed \u2018direct force control model\u2019 and \u2018muscle control model\u2019 differ in how the leg force is produced and controlled. For the muscle control model, we use a Hill muscle model with force-length and force-velocity relations (Figure 7b, c and d). The 3D equations of motion of the point-mass biped are: $mx\u00a8=F_{leg}\u22c5(x\u2212x_{foot})/\u2113$,\u00a0$my\u00a8=F_{leg}\u22c5(y\u2212y_{foot})/\u2113$,\u00a0and\u00a0$mz\u00a8=\u2212mg+F_{leg}\u22c5(z\u2212z_{foot})/\u2113$, where $F_{leg}$ is the scalar leg force, $(x_{foot},y_{foot},z_{foot})$ is the foot position with $z_{foot}=0$ on flat terrain and $\u2113=\\sqrt{(x\u2212x_{foot})^{2}+(y\u2212y_{foot})^{2}+(z\u2212z_{foot})^{2}}$ is the leg length from body to foot. In the \u2018direct force control model\u2019, the object of control is the leg force $F_{leg}$ during stance phase. In the \u2018muscle control model\u2019, the object of control is the muscle activation $a_{muscle}$, which is converted to muscle force via the force-length and force-velocity equations of Hill-type muscles (Figure 7a\u2013b). See (Zajac, 1989; Srinivasan and Ruina, 2006; Srinivasan, 2011) for more detailed equations of motion and muscle model equations.\n\nBoth models have two terms in their control: (1) a feedforward or \u2018nominal\u2019 term, that depends only on the average or desired periodic motion and (2) feedback modification of the control in response to state deviations at flight phase. The model\u2019s leg force or muscle activation is modeled as a two-term sine series of the form $A_{1}sin\u2061(2\\pit/2T_{stance})+A_{2}sin\u2061(2\\pit/T_{stance})$, as shown in Figure 7e. By changing the relative weights of $A_{1}$ and $A_{2}$, the shape of the leg force profile can be changed from being symmetric about the peak force to being asymmetric, with the peak force preceding or following mid-stance. We parameterize the running motion using stance duration $T_{stance}$, flight duration $T_{flight}$, 2D foot placement $(x_{foot},y_{foot})$, 3D initial conditions for stance $(x\u2062(0),y\u2062(0),z\u2062(0))$, and the coefficients of the two-term sine series ($A_{1}$ and $A_{2}$). We solve for these variables to obtain a periodic running motion that accurately match the forward speed, step period, step width, and peak leg force from experimental data (Figure 8a) by using an optimization procedure (Srinivasan and Holmes, 2008; Srinivasan, 2011) that enforces a constraint satisfaction tolerance of less than $10^{-6}$. The runner leaves the ground when it reaches the maximum leg length, but the nominal leg length at landing is assumed to be shorter (95%) than the maximum leg length, as seen in running data (Voloshina and Ferris, 2015). We enforce that left and right stances are mirror symmetric. Unlike previous simple running models, our model\u2019s nominal periodic motion has non-zero step width and a stance phase that is asymmetric about mid-stance. This asymmetric stance is due to unequal landing and take-off leg lengths, and the asymmetry of the leg force or muscle activation about mid-stance.\n\nThe foot placement control for the models are based on the experimentally\u00a0derived control and given by the linear model in Equations 8 and 9. The leg force feedback control based on apex body state, for the direct force control model, has gains as shown in Figure 8b. The muscle control model\u2019s feedback control gains are also shown superimposed in Figure 8b. These control gains were derived for the two models by modifying the Fourier coefficients for the force and muscle activations respectively, so that the linear map from one apex to the next is best matched to that from data (Equation 3). While there are infinitely many controllers, even for this simple biped model, that can approximate the apex-to-apex map, our simplifying assumptions constrains the space of controllers to produce a unique fit. The leg forces and muscle activations are rectified, so that they never become negative despite feedback control (Blum et al., 2017). The foot placement control\u00a0and leg force feedback control are activated only when the apex state deviates from nominal.\n\nTo obtain a running simulation over many steps, we break up each step into three phases: flight from apex to beginning of stance, the stance phase, and flight from the end of stance to flight apex. The control actions for the next stance are chosen at flight apex. As previously defined for the experimental data, the flight apex is when $z\u02d9$ becomes zero. In some cases, if the vertical velocity is downward when a stance phase ends ($z\u02d9<0$), there is no flight \u2018apex\u2019 and the controller uses the end of stance state instead of flight apex state as input. The end of flight and thus, the beginning of stance, are determined as the moment when the distance between the body and the target foot position is exactly equal to the landing leg length. The leg length at landing is also controlled based on flight apex state, based on the linear model in Equation 7. At flight apex, if the distance to the next foot position is less than the target landing leg length, the runner immediately goes into stance.\n\nSuch a simulation, when started from initial conditions exactly on the nominal periodic motion, results in a perfectly periodic motion when there are no further perturbations. We then re-simulated the two point-mass running models for hundreds of steps, in the presence of noisy foot placements and leg forces or muscle activations with step-to-step variability. To model the noise in foot placement, we computed the \u2018desired\u2019 foot placement based on the center of mass state at flight apex (Equations 8-9) and then added a deviation drawn from a normal distribution, whose variance equals the foot placement variance not explained by Equation 8. Similarly, we incorporated imprecise control of leg forces or muscle activation in the following manner: for each stance phase, once the leg force $F\u2062(t)$ (for model-1) or muscle activation $a\u2062(t)$ (for model-2) is determined based on the center of mass state at the previous flight apex, we \u2018corrupt\u2019 these functions by a multiplicative noise term, so that the actual leg force or muscle activation is $F\u2062(t)\u2062(1+\u03f5)$ or $a\u2062(t)\u2062(1+\u03f5)$ respectively, where $\u03f5$ is drawn from a normal distribution with variance equal to the unexplained step-to-step variability in leg force magnitude. Thus, we use the unexplained variance in the foot placement and leg forces from experimental regressions as a simple model of the intrinsic noise in active control.\n",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "391c9e88-574c-4615-93bf-bf261f606191",
+      "submission_id": "0cb5e976-2cfa-4b9d-a3ec-f67751b28551",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Lentink, Stanford University United States\n\nReviewers:\n- Andrew Biewener, Harvard United States\n- Greg Sawicki, NC State University United States\n\n## Review text\n\nDOI: [10.7554/eLife.38371.022](https://doi.org/10.7554/eLife.38371.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Step-to-step variations in human running reveal how humans run without falling\" for consideration by eLife. Your article has been reviewed by Andrew King as the Senior Editor, a Reviewing Editor, and two reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Andrew Biewener (Reviewer #1) and Greg Sawicki (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nHow do humans stabilize themselves while running? This study of human running exploits the information contained in the natural step-to-step variability of the movement of the center of mass of the body as well as the ground reaction forces under the foot to 'reverse-engineer' the control algorithm. Using well-designed experiments and mathematical modelling, the authors provide key insights into how changes in foot placement and ground reaction force are modulated to deal with noise and perturbations to run stably. Interestingly, humans make these adjustments side-to-side within a stride, while fore-aft adjustments are made over several strides. Previous studies explained the role of elastic storage in the legs to run efficiently, the present findings shed new light on the central role of active muscle control to run stably. This finding is of broad interest to roboticists, engineers, and biomechanists interested in human and animal locomotion over terrain. The new information on how humans control their gait may be used to develop better controllers for powered exoskeletons and prostheses as well as humanoid robots.\n\nEssential revisions:\n\n1A) The authors tend to overstate the novelty of their findings in suggesting that past work based on a passive spring-mass running model cannot account for stable running. Past work based on spring-mass running mechanics was developed to argue for how passive-elastic properties may reduce the work of muscles needed to control leg and body movement. But these past studies do not claim that muscle work per se is unnecessary. As the author's own work (Srinivasan, 2011) and earlier papers (Alexander, 1997; Ruina et al., 2005) have noted (in addition to others \u2013 e.g. Biewener and Daley, 2007), spring-like leg behavior can result from an inelastic limb, in which muscle negative work is performed followed by equal positive work. The authors should revise to more accurately represent that understanding and approach of past workers on running dynamics in relation to their own work. We understand that some of these earlier studies may have overstated their implications towards dynamic stability during running. However, we encourage the authors to focus on their new data and model and let that speak towards the contribution of their study. Examples are listed below:\n\n1B) The majority of those who have modeled steady running as a spring-mass system with spring-like leg dynamics do not suggest that this passive model is an accurate representation of how running is controlled, or that it would necessarily result in stable periodic motion following a perturbation. The authors' telescoping or single knee joint muscle-controlled leg model which shows net leg work (either negative or positive) is unsurprising in this regard and an expected result. Please better reflect that past workers who analyze running as spring-mass dynamics implicitly or explicitly recognize that some muscle work must be done to control the time-varying motions of a runner's CoM state for stable periodic motion.\n\n1C) Introduction \"Here, in contrast, we eschew spring-mass-like assumptions and characterize the control in terms of how humans modulate their leg force magnitude and direction.\" This is somewhat misleading in that spring-mass assumptions previously made by other workers were to explore the extent to which running (trotting, hopping) can be explained by passive dynamics, while recognizing that some amount of muscle work to stabilize running (or to go uphill/downhill, change direction) is necessary. The majority of prior workers do not claim that running is purely passive and does not require muscle work for control and stability. Please reflect the understanding and work in the field more accurately here.\n\n1D) Subsection \u201cHuman-derived controller stabilizes a minimal model of bipedal running\u201d: \"Running stably cannot be purely passive and involves active leg work.\" Please revise so this does not overstate the significance of the authors' modeling and findings.\n\n1E) Discussion section: The pseudo-elastic behavior of a runner's leg, which in fact could be entirely based on actuation (negative work followed by equivalent positive work) \u2013 as citations to Ruina et al., 2005 and Alexander, 1997 demonstrate, as well as the author's own past work (Srinivasan, 2011).\n\n2) There is a large literature dedicated to understanding variability in gait (e.g., Dingwell's GEM; Chang's UCM; Hausdorff's long-term noise correlations; Laquaniti's principle components analysis etc.). These approached are predominantly based on characterizing the variability in kinematic measures as a way to assess 'stability', but they cannot say much about the underlying control and this has limited their impact on understanding control of gait mechanics more fundamentally. The approach presented here is a long-overdue, a more formal linear systems ID framework grounded in Newton-Euler mechanics. It may be worth acknowledging this and comparing/contrasting the utility of these two approaches (e.g., diagnosis vs. prediction) without overly criticizing previous approaches. E.g. by focusing one or a couple of sentences in the discussion on the key new abilities that add to previous approaches and how they could be used together in future studies.\n\n3) The modeling approach taken here is framed in the form of a linear system ID, which is OK for small perturbations, in this case step to step variation around an average behavior. Figure 8 starts to address this in simulation, but how well does the approach hold for more explicit, larger perturbations at different phases of the gait where non-linearities might become more important? What is the plan to deal with this? Please clarify this, or the underlying limitations, in the discussion.\n\n4) Please discuss the potential physiological mechanisms underlying the extracted controller, and suggest experiments that could be done to elucidate them if you have a new perspective on this. E.g., the authors mention a combination of feedforward and feedback processes but do not elaborate much on how vision, vestibular, proprioception, and cerebellar internal model may contribute.\n\n5) Can this approach be applied to smaller data sets from single individuals as well? How variable is the controller across people and how much data is necessary to extract a good model?\n\n6) Introduction \"Numerous running robots have demonstrated stable periodic running, using a variety of control schemes (Raibert, 1986; Chevallereau et al., 2005; Tajima et al., 2009).\" If robots are moving stably and periodically, as stated here, why then isn't human running and other animal running not stable and periodic as per the authors' lead statement (Introduction)? The earlier statement is made to argue the importance of muscle actuation for control to achieve truly stable periodic motion. Clearly both animals and robots need to do some muscle work to control movement. This inconsistency in phrasing needs to be addressed.\n\n7) The regressions for equations 1and 2 should be shown (at least in supplemental materials).\n\n8) Subsection \u201cImpulse control is achieved by phase-dependent force modulations\u201d: \"compute the phase-dependent sensitivity of the GRFs to\u2026\" Exactly how are these phase-dependent sensitivities computed? (The y-axis label for these needs to be defined/explained more clearly.) This is explained in part (subsection \u201cLinear regressions between the outputs and the inputs\u201d) but could be made more clear and explicit when showing and referring to these patterns in Figure 4.\n\n9) Figure 5: Swing-foot reposition and CoM state predictability of foot position \u2013 how these are determined/calculated needs to be made clear. Results are stated but their basis is not shown.\n\n10) Figure 6: The force-velocity and force-length relations shown and implemented in the authors' model may be overly simple. F-V is an inverse hyperbolic not linear relationship and the lengthening side of F-V is much more skewed than the authors' model. (Also consider Zajac, 1989). How would a more realistic F-V relationship (inverse hyperbolic for shortening and a more steep and rapid leveling off of force in relation to lengthening) affect the authors' model?\n",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7de4fbb2-37b4-426f-b00f-905a7f5efabd",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C1",
+      "claim": "Human running is often modeled as being periodic.",
+      "claim_type": "EXPLICIT",
+      "source": "Human running is often modeled as being periodic (Blickhan and Full, 1993; Seyfarth et al., 2002; Srinivasan and Holmes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature that models running as periodic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "aecf258d-6e22-4c63-a972-e80ab4cb0bf5",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C2",
+      "claim": "Running is not exactly periodic, even on a treadmill at constant speed.",
+      "claim_type": "EXPLICIT",
+      "source": "But running is not exactly periodic, even on a treadmill at constant speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation that sets up the study's focus on variability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "ca9cf0e1-b89e-416e-8062-6835b3e78add",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C3",
+      "claim": "Body motion during running varies from step to step.",
+      "claim_type": "EXPLICIT",
+      "source": "Body motion during running varies from step to step (Cavanagh et al., 1977; Belli et al., 1995; Jordan et al., 2007; Jordan and Newell, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations documenting step-to-step variability in running.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "eea97120-b047-4072-860c-8bba1aded987",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C4",
+      "claim": "Step-to-step variability could be due to internal perturbative sources like muscle force noise and sensory noise.",
+      "claim_type": "EXPLICIT",
+      "source": "This step-to-step variability could be due to internal perturbative sources like muscle force noise and sensory noise (Warren et al., 1986; Harris and Wolpert, 1998; Osborne et al., 2005) or small external perturbations (e.g. visual field inhomogeneity, small ground imperfections).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to literature on motor and sensory noise.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "bb4ce1e3-4dc3-4ca8-962f-750992e4ec62",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C5",
+      "claim": "Step-to-step variability could be due to small external perturbations such as visual field inhomogeneity and small ground imperfections.",
+      "claim_type": "EXPLICIT",
+      "source": "This step-to-step variability could be due to internal perturbative sources like muscle force noise and sensory noise (Warren et al., 1986; Harris and Wolpert, 1998; Osborne et al., 2005) or small external perturbations (e.g. visual field inhomogeneity, small ground imperfections).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Examples of external perturbations are provided as potential sources of variability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "c0e009b9-4fe5-4d4b-aaad-6b9e957d3bc6",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C6",
+      "claim": "Deviations in the center of mass motion predict the corrective strategies during the next stance, well in advance of foot touchdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Deviations in the center of mass motion predict the corrective strategies during the next stance, well in advance of foot touchdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the experimental data and analysis presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "6064a491-f89f-430e-9468-123dd6055ba4",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C7",
+      "claim": "Horizontal motion is stabilized by total leg impulse modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Horizontal motion is stabilized by total leg impulse modulations, whereas the vertical motion is stabilized by differentially modulating the impulse within stance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the experimental data and regression analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "bd5b041e-f9c8-4ff2-a44c-ad29efceb1af",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C8",
+      "claim": "Vertical motion is stabilized by differentially modulating the impulse within stance.",
+      "claim_type": "EXPLICIT",
+      "source": "Horizontal motion is stabilized by total leg impulse modulations, whereas the vertical motion is stabilized by differentially modulating the impulse within stance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the experimental data and regression analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "baf5f709-5c5c-46a3-87cc-9d3edbfe0124",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C9",
+      "claim": "The human-derived control strategies implemented on a simple computational biped allow it to run stably for hundreds of steps despite incessant noise-like perturbations or larger discrete perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "We implement these human-derived control strategies on a simple computational biped, showing that it runs stably for hundreds of steps despite incessant noise-like perturbations or larger discrete perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through computational simulations described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "163b375f-a4a8-48eb-9515-dfd42d6a0064",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C10",
+      "claim": "The running controller derived from natural variability echoes behaviors observed in previous animal and robot studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This running controller derived from natural variability echoes behaviors observed in previous animal and robot studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding that connects the current work to prior literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "715832c5-06fd-4f16-9c7d-9ac3483b7d90",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C11",
+      "claim": "The classic modeling paradigm for running control assumes that the human leg behaves like a linear spring.",
+      "claim_type": "EXPLICIT",
+      "source": "One classic modeling paradigm for running control assumes that the human leg behaves like a linear spring (Blickhan, 1989; McMahon and Cheng, 1990; Blickhan and Full, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature on spring-mass models of running.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "bba74bf3-6313-4f98-91e8-845f675acff2",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C12",
+      "claim": "Spring-mass running models have been used to argue how passive-elastic properties may reduce muscle work needed for locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "This paradigm has been used to argue how passive-elastic properties may reduce muscle work needed for locomotion (Alexander and Vernon, 1975; Alexander, 1990) and has been useful in examining locomotion in a simplified setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature on the role of elastic properties in locomotion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "7952c04f-97b2-44b2-80fb-5080113e9f4a",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C13",
+      "claim": "Variants of spring-mass running models have demonstrated stable running.",
+      "claim_type": "EXPLICIT",
+      "source": "Variants of these spring-mass running models have demonstrated stable running (Seyfarth et al., 2002; Seipel and Holmes, 2005; Ghigliazza et al., 2005; Geyer et al., 2006; Srinivasan and Holmes, 2008; Englsberger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature on stable running models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "775a8678-abc8-4b8b-a31b-53d96e819dae",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C14",
+      "claim": "Spring-mass models have been successful in fitting the average center of mass motion during running.",
+      "claim_type": "EXPLICIT",
+      "source": "These models have been successful in fitting the average center of mass motion during running (Blickhan and Full, 1993; Geyer et al., 2006; Srinivasan and Holmes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature demonstrating model fits to data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "331dea1a-b971-4d59-8c45-deca42f04e91",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C15",
+      "claim": "Understanding running stability requires understanding how deviations from the average motion are controlled.",
+      "claim_type": "EXPLICIT",
+      "source": "However, understanding running stability requires understanding how deviations from the average motion are controlled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual statement that motivates the study's approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "5ba2089c-318a-4448-9742-bd4202cb1747",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C16",
+      "claim": "Spring-like leg mechanics cannot explain how deviations from the average motion are controlled and eventually attenuated.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously recognized that spring-like leg mechanics cannot explain how deviations from the average motion are controlled and eventually attenuated (e.g. Ghigliazza et al., 2005; Biewener and Daley, 2007; Maus et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature recognizing limitations of spring-mass models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "612d2490-d191-479b-bea7-4e9c3bcf8d97",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C17",
+      "claim": "The only way to control the center of mass motion is for the leg to systematically change the forces and the impulses it applies on the ground.",
+      "claim_type": "EXPLICIT",
+      "source": "The only way to control the center of mass motion is for the leg to systematically change the forces and the impulses it applies on the ground.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from Newton's laws of motion and is a fundamental principle of mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "71c29ff1-ef81-437a-a84e-bd2f1901ab61",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C18",
+      "claim": "Eight subjects (three female and five male) participated in the running experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight subjects, three female and five male (age 25.0 \u00b15 years, weight 66.8 \u00b17 kg, height 1.8 \u00b10.14 m, leg length 1.05 \u00b10.08 m, mean \u00b1 s.d.) ran on a split-belt treadmill at three constant speeds: 2.5, 2.7 and 2.9 m/s, presented in random order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods and participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "d80c4925-8c58-4840-8b16-88195ba67ca0",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C19",
+      "claim": "Subjects ran at three constant speeds: 2.5, 2.7 and 2.9 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight subjects, three female and five male (age 25.0 \u00b15 years, weight 66.8 \u00b17 kg, height 1.8 \u00b10.14 m, leg length 1.05 \u00b10.08 m, mean \u00b1 s.d.) ran on a split-belt treadmill at three constant speeds: 2.5, 2.7 and 2.9 m/s, presented in random order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "557ee735-7701-472b-8805-c7d8688d54a3",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C20",
+      "claim": "Each speed had 2075 \u00b1 67 strides across all subjects with subjects running about 3.5 min on average.",
+      "claim_type": "EXPLICIT",
+      "source": "Each speed had 2075 \u00b1 67 strides across all subjects (one stride = two steps) with subjects running about 3.5 min on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "c86aa4fd-8435-4058-9685-64de7f01e934",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C23",
+      "claim": "The control in the fore-aft and sideways directions are independent or decoupled.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it appears that the control in the fore-aft and sideways directions are independent or decoupled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the regression analysis showing minimal coupling between directions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "73be4cdf-8959-442e-8d98-3fbc933b14a5",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C31",
+      "claim": "Humans exhibit a 'one-step dead-beat controller' on average for sideways velocity deviations.",
+      "claim_type": "EXPLICIT",
+      "source": "But humans seem to exhibit a 'one-step dead-beat controller' on average for sideways velocity deviations (the term deadbeat control refers to when state deviations decay to zero in a finite amount of time).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the regression coefficient from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "838c69ff-a168-495a-86c8-93224f234863",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C37",
+      "claim": "All eigenvalues of the apex-to-apex map matrix product were less than one in absolute value, indicating a stable periodic motion.",
+      "claim_type": "EXPLICIT",
+      "source": "The eigenvalues of this matrix product were all less than one in absolute value, indicating a stable periodic motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the eigenvalue analysis indicating stability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "8812808b-2a1f-47ce-bc4e-7a025dd39d1b",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C39",
+      "claim": "The net vertical impulse between two consecutive flight apexes is zero.",
+      "claim_type": "EXPLICIT",
+      "source": "A flight apex occurs when the center of mass vertical velocity is zero. So, the net vertical impulse between two consecutive flight apexes is also zero (as it equals the change in vertical momentum, according to the impulse-momentum equation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the impulse-momentum theorem and the definition of flight apex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "1207243b-bce5-4f0b-8a03-f6181d5a07fd",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C40",
+      "claim": "Changing the net vertical impulse over a stance phase will not accomplish any meaningful control in the vertical direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, changing the net vertical impulse over a stance phase will not accomplish any meaningful control in the vertical direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the impulse-momentum considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "a99c138c-83d7-4190-8aa4-73ef84bed3f7",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C46",
+      "claim": "A downward position deviation at flight apex results in landing with a shorter leg length than nominal.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a downward position deviation at flight apex would result in landing with a shorter leg length than nominal (e.g. via flexed knee or ankle).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the regression result for landing leg length.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "e71fe2b6-e6dd-49e7-a152-d7b50d4c081a",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C47",
+      "claim": "A downward position deviation is analogous to a sudden step-up perturbation, so reducing the landing leg length reduces trip likelihood.",
+      "claim_type": "EXPLICIT",
+      "source": "A downward position deviation is analogous to a sudden step-up perturbation, so reducing the landing leg length reduces trip likelihood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation of the landing leg length control strategy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "9b46db28-0044-458f-81fd-d71f99264ac0",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C52",
+      "claim": "A sideways velocity perturbation to the body results in the foot being placed further along the direction of the perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, a sideways velocity perturbation to the body results in the foot being placed further along the direction of the perturbation. So, a rightward perturbation results in a more rightward step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the foot placement regression results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "bbdf0e0d-288b-4b8d-87e5-78d6a71dbd12",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C53",
+      "claim": "A forward velocity perturbation results in the foot being placed further forward relative to the body.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, a forward velocity perturbation results in the foot being placed further forward relative to the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the foot placement regression results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "15553b4c-7493-409b-9d4a-c4af5f827e6b",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C54",
+      "claim": "There is no significant coupling between sideways and fore-aft directions in foot placement control.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the impulses, again, there is no significant coupling between sideways and fore-aft directions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the regression analysis showing independent control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "d669dea7-53a7-42a0-9ca2-c7eac66b88d1",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C56",
+      "claim": "Less than 10% of the eventual foot placement is predicted by the swing foot at the beginning of flight phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Less than 10% of the eventual foot placement is predicted by the swing foot at the beginning of flight phase (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the phase-dependent regression analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "6389a46e-24e4-4ea8-848d-9dbbaef6d91a",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C57",
+      "claim": "Most swing foot re-positioning may happen during the flight phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The explanatory power of the swing foot rises rapidly during the flight phase from less than 10% to a 100% when it becomes the next stance foot, suggesting that most swing foot re-positioning may happen during this flight phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the phase-dependent regression analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "2bbef637-f1c5-4344-a208-7fd50bd274f8",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C58",
+      "claim": "At the beginning of flight phase, the center of mass state is a vastly better predictor of the next foot placement than the swing foot itself.",
+      "claim_type": "EXPLICIT",
+      "source": "At the beginning of flight phase (and earlier), the center of mass state is a vastly better predictor of the next foot placement than the swing foot itself (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the phase-dependent regression analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "33966153-dc99-42f2-95c3-a80fdb01a6ac",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C59",
+      "claim": "The center of mass state can predict foot placement better than the relative swing foot state until about 100 ms before foot touchdown.",
+      "claim_type": "EXPLICIT",
+      "source": "We can predict the foot placement using the center of mass state better than just the relative swing foot state until about 100 ms before foot touchdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the phase-dependent regression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "87f3e454-a9e7-46f3-a380-1684426e3a4f",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C60",
+      "claim": "The explanatory power of the center of mass remains flat during flight.",
+      "claim_type": "EXPLICIT",
+      "source": "The explanatory power of the center of mass remains flat during flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the phase-dependent regression analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "fd222dd4-b0fd-4960-8e41-a8ff61ac291d",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C61",
+      "claim": "The flatness of center of mass explanatory power during flight is likely because center of mass state follows a parabolic path during flight and thus accumulates no new variation.",
+      "claim_type": "EXPLICIT",
+      "source": "This flatness is likely because center of mass state follows a parabolic path during flight and thus accumulates no new variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observation about center of mass explanatory power.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "c95e9864-be6e-4d9e-a69e-8907b557af25",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C64",
+      "claim": "The runners did not prioritize controlling their position relative to the treadmill (station-keeping).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the runners did not prioritize controlling their position relative to the treadmill (station-keeping).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the regression results showing minimal effect of absolute position.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "ad222abf-0ea3-4458-bb1c-bfcbc49e022f",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C66",
+      "claim": "The running control gains have approximate bilateral (left-right) symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The running control gains have approximate bilateral (left-right) symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the regression analysis comparing left and right leg control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "9037b282-4653-4d0f-abb2-b91f240316f4",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C67",
+      "claim": "Gains that couple sideways direction variables and either fore-aft or vertical direction variables have mirror-symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The gains that couple sideways direction variables and either fore-aft or vertical direction variables have mirror-symmetry (see Equations 1,2,8,9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the regression analysis comparing left and right leg control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "7f91610d-bb3c-4723-8a23-d37c229fe378",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C68",
+      "claim": "Gains that couple one sideways variable with another sideways variable, or one fore-aft variable with another fore-aft variable, are the same for the left and right legs without any sign changes.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, gains that couple one sideways variable with another sideways variable, or one fore-aft variable with another fore-aft variable, are the same for the left and right legs without any such sign changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the regression analysis comparing left and right leg control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "2d03433f-5bf0-4fc7-887c-788fea1a6aa1",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C69",
+      "claim": "The mirror symmetry in running control likely follows from the approximate mirror symmetry in body physiology about the sagittal plane.",
+      "claim_type": "EXPLICIT",
+      "source": "This mirror symmetry in running control likely follows from the approximate mirror symmetry in body physiology about the sagittal plane and was also found in walking (Wang and Srinivasan, 2014; Ankaral\u0131 et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the symmetry observation, supported by citations to similar findings in walking.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "6e461fd7-14f2-47b7-b1f1-d3b8d9f6fb1f",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C70",
+      "claim": "The symmetry suggests the lack of a substantially dominant limb for running control.",
+      "claim_type": "EXPLICIT",
+      "source": "This symmetry suggests the lack of a substantially dominant limb for running control, in contrast to the asymmetry and limb role differentiation that occurs in some other tasks (Peters, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the symmetry observation, contrasted with other tasks.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "c4f698d6-6488-49c0-85e4-1783700aa4a9",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C71",
+      "claim": "The simple biped models' ground reaction forces are similar to experimental data despite not explicitly matching the curves.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the models' ground reaction forces are similar to experimental data despite not explicitly matching the curves (Figure 8a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model simulations shown in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "3c6d2e5f-6b9c-4fe7-b809-346e02284df8",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C72",
+      "claim": "The phase-dependent ground reaction force feedback gains for the models are qualitatively similar to the phase-dependent gains inferred from experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we find that the phase-dependent ground reaction force feedback gains for the models are qualitatively similar to the phase-dependent gains inferred from experiment (Figure 8b), again, despite not explicitly fitting the shape of these phase-dependent gains.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model simulations shown in Figure 8b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "5bcbaf45-3bff-411f-9cff-b16a3ea9e1c1",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C73",
+      "claim": "The simple models can capture not only the average motion during running, but also how the runner responds to deviations from the average motion.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that these simple models can not only capture the average motion during running, but also how the runner responds to deviations from the average motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "2db9a31a-5438-421d-b4fc-a346ba9cf414",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C74",
+      "claim": "The simple models' running motions are not stable without the controller.",
+      "claim_type": "EXPLICIT",
+      "source": "The simple models' running motions are not stable without the controller: an arbitrarily small perturbation makes it diverge from the original running motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "2f3cc72e-c6c2-4bb9-8256-b2c29135e191",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C75",
+      "claim": "With the foot placement and leg force controller turned on, the running motion is asymptotically stable.",
+      "claim_type": "EXPLICIT",
+      "source": "With the foot placement and leg force controller turned on, the running motion is asymptotically stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "bf9edb23-464e-4b96-a083-0ae3f366e1b1",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C76",
+      "claim": "A stable periodic motion that can reject perturbations at one phase can reject perturbations at any phase.",
+      "claim_type": "EXPLICIT",
+      "source": "It is a mathematical theorem that a stable periodic motion that can reject perturbations at one phase (say, flight apex) can reject perturbations at any phase (Guckenheimer and Holmes, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical theorem cited from the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "96d0043c-470d-4c9e-ad6f-92b031b19394",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C77",
+      "claim": "The model rejects perturbations at any phase.",
+      "claim_type": "EXPLICIT",
+      "source": "So, it follows that our model rejects perturbations at any phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the mathematical theorem and the model's stability at flight apex.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "03b42eb7-3a77-4c9c-a7fd-764abdc64a59",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C79",
+      "claim": "A sideways or fore-aft push to the model results in convergence to the nominal running motion, except for a sideways or fore-aft position offset.",
+      "claim_type": "EXPLICIT",
+      "source": "A sideways or fore-aft push to the model results in convergence to the nominal running motion, except for a sideways or fore-aft position offset (Figure 9c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the computational model simulations shown in Figure 9c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "9ca8e223-521d-4716-96de-ad8a8050435a",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C80",
+      "claim": "All positive perturbations to sideways velocity, fore-aft velocity, and vertical position result in net negative work on the first step after the perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "All such positive perturbations result in net negative work on the first step after the perturbation, reflected in the work-loops with net negative area within them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model simulations shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "dd936104-2386-4417-b2d2-f8219c412fa6",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C81",
+      "claim": "Net positive or negative leg work is necessary to recover from perturbations that change the total mechanical energy of the runner.",
+      "claim_type": "EXPLICIT",
+      "source": "Such net positive or negative leg work is clearly necessary to recover from perturbations that change the total mechanical energy of the runner, as was recognized in prior discussions of the energy-neutral spring-mass model of running (Ghigliazza et al., 2005; Biewener and Daley, 2007; Srinivasan and Holmes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical principle supported by citations to prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "b0a5292d-bf69-4323-b030-92a7ff5e42b2",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C82",
+      "claim": "While the direct leg force control model falls down with noise, the runner with muscles does not fall down for hundreds of steps despite the noise.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that while the direct leg force control model falls down, the runner with muscles does not fall down for hundreds of steps despite the noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model simulations with noise.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "01ce94ad-0dca-4b98-bffc-07c52e329082",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C83",
+      "claim": "The variability in the center of mass state at flight apex for the model as a result of the simulated noisy control is qualitatively similar to the variability found in experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The variability in the center of mass state at flight apex for the model (Figure 11b) as a result of the simulated noisy control is qualitatively similar to the variability found in experiment (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between model simulations and experimental data shown in Figures 11b and 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "a81774a0-5f85-4e3c-acf9-bae1f9a680a8",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C84",
+      "claim": "The model is able to run without falling despite vertical position perturbations at flight apex, which are equivalent to uneven terrain.",
+      "claim_type": "EXPLICIT",
+      "source": "The model is also able to run without falling despite vertical position perturbations at flight apex, which are equivalent to uneven terrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "fa8943d5-42eb-4da1-8a75-0eec652e60c6",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C85",
+      "claim": "Even though the model was derived using data on horizontal ground, it is capable of running robustly on uneven terrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, even though the model was derived using data on horizontal ground, it is capable of running robustly on uneven terrain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model's ability to handle vertical position perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "cbf361dd-7fb3-4955-9740-c2c8e6b5b966",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C86",
+      "claim": "The muscle-driven model is robust to motor noise presumably because of the intrinsic stabilizing properties of force-length and force-velocity relations.",
+      "claim_type": "EXPLICIT",
+      "source": "The muscle-driven model is robust to motor noise presumably because of the intrinsic stabilizing properties of force-length and force-velocity relations (Hogan, 1984; Jindrich and Full, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model's robustness, supported by citations to literature on muscle properties.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "50ba05af-efaf-4871-aa8f-0e9e1b65c890",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C87",
+      "claim": "Humans use foot placement control in a manner that they step in the direction of the perturbation, thereby directing the leg force so as to oppose the perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that humans use foot placement or leg angle control in a manner that they step in the direction of the perturbation, thereby directing the leg force so as to oppose the perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the study's findings on foot placement control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "9e2d2eea-7d13-4c95-9ada-6709d918aff4",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C88",
+      "claim": "The foot placement controller derived from running data is qualitatively similar to the classic Raibert-like controller used in early running robots.",
+      "claim_type": "EXPLICIT",
+      "source": "The foot placement controller derived from running data is qualitatively similar to the classic Raibert-like controller used in early running robots (Raibert, 1986) in that the foot placement opposes velocity deviations with no sideways-fore-aft coupling, but differs in that it has a dependence on vertical position perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the study's findings and prior robotic control strategies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "4fec1477-baff-4bb9-9e5d-86c7ee8788e0",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C89",
+      "claim": "Humans use similar foot placement control in walking, stepping in the direction of the perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans use similar foot placement control in walking, stepping in the direction of the perturbation (Hof et al., 2010; Wang and Srinivasan, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior findings in walking, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "f6d93138-5837-46b0-8d4c-95ac8a5b0439",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C90",
+      "claim": "Appropriate foot placement is used in running ostriches while turning.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work had shown that appropriate foot placement is used in running ostriches while turning (Jindrich et al., 2007), running humans in cutting maneuvers (Besier et al., 2003), and turning while walking (Patla et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior findings in other contexts, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "1e161f53-fc3b-49be-a23d-483cf73034d3",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C91",
+      "claim": "The gain relating sideways foot placement and sideways velocity deviation was about 2.5 times greater than the gain relating fore-aft foot placement and fore-aft velocity deviation.",
+      "claim_type": "EXPLICIT",
+      "source": "The gain relating sideways foot placement and sideways velocity deviation was about 2.5 times greater than the gain relating fore-aft foot placement and fore-aft velocity deviation; a similar factor of 3 was found in walking (Wang and Srinivasan, 2014), perhaps reflecting the greater sideways instability of a biped without foot placement control (Ghigliazza et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of control gains, with interpretation supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "ecdccb17-60af-4412-bcce-452c50b12985",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C92",
+      "claim": "The recovery from a sideways perturbation is faster than from a fore-aft perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Also consistent with lower control authority and a greater fall propensity in the sideways direction, we find that the recovery from a sideways perturbation is faster than from a fore-aft perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study's analysis of perturbation recovery.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "e58025c6-d2ab-45d3-9eaf-781cc6977db7",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C93",
+      "claim": "Station-keeping may occur on a slower time-scale with a multi-step controller, not considered in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "While station-keeping was not prioritized over a single step, it may occur on a slower time-scale with a multi-step controller, not considered here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about control strategies not examined in the current study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "7c67addc-f21c-4bd9-9ba2-238bf3844847",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C94",
+      "claim": "The dominant terms in the inferred controllers are similar for all subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Performing the regressions for data from individual subjects indicates that the dominant terms in the inferred controllers are similar for all subjects; the subject-to-subject variability in the estimated control gains are shown in Figure 12.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the individual subject analysis shown in Figure 12.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "6c7b6c6d-b9a2-4ab0-b02f-c5d6f5545c6c",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C96",
+      "claim": "When a runner starts at a higher-than-normal height at flight apex, or equivalently, encounters a step-down, the runner lands with a steeper leg angle.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that when a runner starts at a higher-than-normal height at flight apex, or equivalently, encounters a step-down, the runner lands with a steeper leg angle (Figure 9d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the computational model shown in Figure 9d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "0d156e87-00f1-4d4f-8c7a-e5de1398de1d",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C97",
+      "claim": "Landing with a steeper leg angle when encountering a step-down has been observed in humans and bipedal running birds.",
+      "claim_type": "EXPLICIT",
+      "source": "Such behavior has been observed in humans and bipedal running birds running with large unforeseen or visible step-downs (Daley and Biewener, 2006; Grimmer et al., 2008; M\u00fcller et al., 2012; Qiao and Jindrich, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior experimental findings, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "2998b9e8-e17b-4302-ae8e-2f6587807a82",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C98",
+      "claim": "Step-ups decrease touch-down angle.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, step-ups decrease touch-down angle, as predicted (Birn-Jeffery and Daley, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior experimental findings, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "7049f69f-4b3d-4534-bbb8-2d6ae3f158d2",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C99",
+      "claim": "The behavior of landing with steeper leg angle on step-downs has been attributed to swing leg retraction just before foot contact.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior has been attributed to swing leg retraction just before foot contact (Seyfarth, 2003), but our foot placement controller captures this phenomenon despite not having explicit leg swing dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to a prior explanation, supported by a citation, contrasted with the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "db301cc8-56dc-4d24-9ea2-668ec221e4d2",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C100",
+      "claim": "The model captures the phenomenon of steeper landing on step-downs despite not having explicit leg swing dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavior has been attributed to swing leg retraction just before foot contact (Seyfarth, 2003), but our foot placement controller captures this phenomenon despite not having explicit leg swing dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational model simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "86a5343d-d07b-4e7b-a25d-6f353affd0c7",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C101",
+      "claim": "The agreement between model predictions and large terrain perturbation experiments indicates that humans may use qualitatively similar control strategies for large external perturbations and small intrinsic perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "This agreement indicates that humans may use qualitatively similar control strategies for large external perturbations and small intrinsic perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison between model predictions and prior experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "4c23311c-e641-4d20-93c1-f56ad1e379f4",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C102",
+      "claim": "Any running controller that achieves asymptotic stability will need to perform net mechanical work in response to perturbations that decrease or increase the body's mechanical energy.",
+      "claim_type": "EXPLICIT",
+      "source": "It is expected that any running controller that achieves asymptotic stability will need to perform net mechanical work in response to perturbations that decrease or increase the body's mechanical energy (Ghigliazza et al., 2005; Srinivasan and Holmes, 2008; Maus et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical expectation supported by citations to prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "470125c3-f610-4360-b04c-a665e141b56d",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C103",
+      "claim": "Energy-conservative spring-like leg behavior does not allow net mechanical work and can achieve only partial asymptotic stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Energy-conservative spring-like leg behavior does not allow such net mechanical work and can achieve only partial asymptotic stability, not being able to handle energy-changing perturbations (as noted by (Ghigliazza et al., 2005)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical limitation of spring-mass models, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "e59cea60-3041-450e-9b23-a63cad3080c8",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C104",
+      "claim": "Spring-mass-like steady state center of mass motion in running is due to considerable muscle action and has been termed pseudo-elastic or pseudo-compliant.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is generally thought that even the spring-mass-like steady state center of mass motion in running is due to considerable muscle action and has been termed pseudo-elastic (Ruina et al., 2005) or pseudo-compliant (McN. Alexander, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior conceptual frameworks, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "89491c88-3ed0-4e60-a1a9-5730373331c9",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C105",
+      "claim": "Energy-optimal running movements in models with no leg springs produce similar spring-mass-like center of mass trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, energy-optimal running movements in models with no leg springs produce similar spring-mass-like center of mass trajectories (Srinivasan, 2011), with leg muscles performing equal amounts of positive and negative work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior modeling work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "148bde5b-8aff-4c1f-9cb0-44d59bf93330",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C106",
+      "claim": "A previous article fit running data to variants of the spring-mass model, allowing the spring stiffness and spring length to change during stance.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous article (Maus et al., 2015) fit running data to variants of the spring-mass model, allowing the spring stiffness and spring length to change during stance, and showing that constant values for these parameters cannot fit running data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to prior work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "67a0cfee-38cb-41af-8ef2-f6b9aa4741cf",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C107",
+      "claim": "Direct control of leg force or activation is perhaps more parsimonious than the simultaneous control of two variables, namely, spring stiffness and length.",
+      "claim_type": "EXPLICIT",
+      "source": "Such direct control of leg force or activation is perhaps more parsimonious than the simultaneous control of two variables, namely, spring stiffness and length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of modeling approaches, expressing a preference for parsimony.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "a7294cc5-7cc8-420e-a602-379acdb15f1b",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C108",
+      "claim": "Humans modulate GRF continuously over the whole stance phase for control.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that humans modulate GRF continuously over the whole stance phase for control (Figure 5); Maus and colleagues (Maus et al., 2015) assumed, for simplicity, an instantaneous finite energy input at mid-stance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study shown in Figure 5, contrasted with prior modeling assumptions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "7deaaf28-439f-4b64-b00c-81b480107a23",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C109",
+      "claim": "The stabilizing responses characterized in this study are likely due to a mixture of feedforward dynamics and active neurally mediated feedback control.",
+      "claim_type": "EXPLICIT",
+      "source": "The stabilizing responses we have characterized in this study are likely due to a mixture of feedforward dynamics and active neurally mediated feedback control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the control mechanisms underlying the observed behaviors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "58c6d4bd-f73b-478c-accf-335796389cda",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C110",
+      "claim": "Typical flight phase durations are greater than or about roughly equal to the typical short- or middle- latencies in reflex or feedback loops involving vestibular or proprioceptive mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our typical flight phase durations are greater than or about roughly equal to the typical short- or middle- latencies in reflex or feedback loops involving vestibular (Fitzpatrick et al., 1994; Iles et al., 2007) or proprioceptive mechanisms (Pearson and Collins, 1993; Sinkj\u00e6r et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of time scales, supported by citations to literature on neural latencies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "998af522-525d-4eb6-af3e-cfc45fc33131",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C111",
+      "claim": "The comparison of time scales suggests feasibility of feedback based on flight phase or late stance phase information regarding center of mass state.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests feasibility of feedback based on flight phase or late stance phase information regarding center of mass state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of time scales.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "ecab2236-2ca6-4c12-8920-f5bf59ab7183",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C112",
+      "claim": "Equivalent controllers based on the center of mass state at the end of previous stance have similar predictive ability to apex-based controllers.",
+      "claim_type": "EXPLICIT",
+      "source": "While we have focused on the control of stance based on the previous flight apex, we have found that equivalent controllers based on the center of mass state at the end of previous stance have similar predictive ability (Figure 6), thus allowing more time for neural feedback.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the phase-dependent regression analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "17c42cdd-161d-4a94-8d09-c388d8f62ff4",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C113",
+      "claim": "The lag between the information in the center of mass state and the swing foot state regarding future foot placement is about 0.1 s for sideways placement.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the lag between the information in the center of mass state and the swing foot state regarding future foot placement is about 0.1 s for sideways placement and about twice that for fore-aft foot placement, suggesting sufficient time for neurally mediated feedback control of foot placement (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the phase-dependent regression analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "22ecbc97-0cf4-4312-8bda-8f0c473a90fe",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C114",
+      "claim": "The lag between the information in the center of mass state and the swing foot state regarding future foot placement is about 0.2 s for fore-aft placement.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the lag between the information in the center of mass state and the swing foot state regarding future foot placement is about 0.1 s for sideways placement and about twice that for fore-aft foot placement, suggesting sufficient time for neurally mediated feedback control of foot placement (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the phase-dependent regression analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "d96f02d5-7e34-4ebb-a791-db1e34a3d968",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C115",
+      "claim": "Center of mass state information needed for feedback control could be estimated by the nervous system by integrating sensory signals from vision, proprioceptive sensors, and vestibular sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Center of mass state or other body state information needed for feedback control could be estimated by the nervous system by integrating sensory signals from vision (Patla, 1997), proprioceptive sensors (especially when the foot is on the ground (Sainburg et al., 1995)), and vestibular sensors (Angelaki and Cullen, 2008), potentially in combination with predictive internal models (Wolpert et al., 1995; Cullen, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about sensory integration mechanisms, supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "f7919f8d-5674-4408-b8c4-aa65482567a7",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C116",
+      "claim": "Most available relevant sensory information is likely used, perhaps analogous to an optimal state estimator.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that most available relevant sensory information is used, perhaps analogous to an optimal state estimator (Kuo, 2005; Srinivasan, 2009), and degrading one sensor may result in sensory re-weighting on a slow time-scale (Carver et al., 2006; Assl\u00e4nder and Peterka, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about sensory integration, supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "a3b5a71c-736b-45f2-8e6b-16866d6a8f42",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C117",
+      "claim": "The simple point-mass model may not capture all aspects of the running data because humans have extended feet, non-point-mass upper bodies and legs with masses.",
+      "claim_type": "EXPLICIT",
+      "source": "Because humans have extended feet, non-point-mass upper bodies and legs with masses, the simple point-mass model may not capture all aspects of the running data (Bullimore and Burn, 2006; Srinivasan and Holmes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of model limitations, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "4c3aee74-d4ca-4a03-bbbe-475b9eff7370",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C118",
+      "claim": "The study made simplifying assumptions about muscle architecture, muscle properties, and muscle activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we have made simplifying assumptions about muscle architecture, muscle properties (linear force-velocity relations), and muscle activation, which are meant to capture the main qualitative dynamical features of muscles, rather than model them quantitatively precisely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of modeling assumptions and their limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "c9e2caef-dfee-4bf1-8661-2ca5c97c8a22",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C119",
+      "claim": "A linear force-velocity relation may be sufficient to produce damping-like and stabilizing muscle behavior when activated.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we used a linear force-velocity relation, which may be sufficient to produce damping-like and stabilizing muscle behavior when activated, but this damping behavior may be accentuated by a more realistic nonlinear force-velocity relation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the adequacy of the linear force-velocity assumption.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "b789f294-daac-4098-8997-0497c3131d0b",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C120",
+      "claim": "The methods used in this study are simple and non-invasive and can be replicated to study running stability and control in other animals or other approximately periodic tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "The methods used here are simple and non-invasive: they can be replicated to study running stability and control in other animals, or indeed, other approximately periodic tasks such as flapping flight and swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "5ae95deb-c027-4054-ba20-e347da2468a0",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C121",
+      "claim": "These methods are suitable for analyzing differences in different populations like athletes and non-athletes, the young and the elderly, and adults with and without movement disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods are suitable for analyzing differences in different populations like athletes and non-athletes, the young and the elderly, and adults with and without movement disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential applications of the methods.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "2d8b1341-39fa-4c54-b041-1f79bae9c7a3",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C122",
+      "claim": "Information about control differences could be used in a rehabilitation setting to track progress from a controller in the presence of a movement disorder to a more healthy controller.",
+      "claim_type": "EXPLICIT",
+      "source": "Once such differences are well-characterized, this information could be used, say, in a rehabilitation setting to track progress from a controller in the presence of a movement disorder to a more healthy controller, and to design rehabilitation robots that assist in this progress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential clinical applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "2ba5a493-d4b6-48e2-80f2-8986ecba5a19",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C123",
+      "claim": "The protocols were approved by the Ohio State University Institution Review Board and subjects participated with informed consent.",
+      "claim_type": "EXPLICIT",
+      "source": "The protocols were approved by the Ohio State University Institution Review Board and subjects participated with informed consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "d8f98b72-14b6-4483-8113-3e032a900e5a",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C124",
+      "claim": "Three-dimensional ground reaction forces and moments on each belt of the treadmill were recorded by separate six-axis load cells at 1000 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Three-dimensional ground reaction forces and moments on each belt of the treadmill were recorded by separate six-axis load cells (Bertec Inc, 1000 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental data collection methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "2d9d65b0-dc13-44b2-a936-be17009d35e5",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C125",
+      "claim": "Body segment motion was measured using marker-based motion capture at 100 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Body segment motion was measured using marker-based motion capture (Vicon T20, 100 Hz) with four reflective markers on each foot and on the torso.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental data collection methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "0ca511f6-a9da-464f-81b0-c72385b028fb",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C128",
+      "claim": "To remove the slow integration drift in the center of mass velocity, a high-pass filter with a frequency cut-off equal to an eighth of mean step frequency was used.",
+      "claim_type": "EXPLICIT",
+      "source": "To remove the slow integration drift in the center of mass velocity, we used a high-pass filter with a frequency cut-off equal to an eighth of mean step frequency (Luinge and Veltink, 2005; Schepers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing methods, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "a85f5424-00d3-44b4-a538-eca98208220d",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C129",
+      "claim": "Changing the high-pass filter cut-off to a twentieth of the step frequency, or using a piecewise-linear de-trending over 20 steps, do not affect the article's conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Changing this high-pass filter cut-off to a twentieth of the step frequency instead, or using a piecewise-linear de-trending over 20 steps, do not affect any of this article's conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the robustness of the analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "c0e9490f-435e-4ebe-b07b-e887249a13fa",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C130",
+      "claim": "Air drag was ignored because including it changed the velocities by less than 10\u207b\u2075 ms\u207b\u00b9, which is much smaller than the step-to-step variability.",
+      "claim_type": "EXPLICIT",
+      "source": "We ignored air drag here, because including it changed the velocities by less than 10-5 ms-1, which is much smaller than the step-to-step variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for a modeling assumption based on quantitative analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "46645eb9-6d6f-44c4-874b-1330b4baf231",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "claim_id": "C131",
+      "claim": "A weighted mean of four markers, roughly at the sacral level, was used as an approximation of the center of mass position.",
+      "claim_type": "EXPLICIT",
+      "source": "We use a weighted mean of four markers, roughly at the sacral level, as an approximation of the center of mass position (Gard et al., 2004; Wang and Srinivasan, 2014; Perry and Srinivasan, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis methods, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "713249a4-9981-4f76-8310-8553b010c3ad",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Eight subjects ran on a treadmill at three speeds (2.5, 2.7, 2.9 m/s) for approximately 2075 strides per speed. Ground reaction forces were recorded at 1000 Hz and body motion was captured at 100 Hz using marker-based motion capture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C123-C125 describe the experimental setup with appropriate detail. The sample size, measurement frequencies, and ethical approval are clearly documented, providing a solid methodological foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "abf36a01-5790-412b-8e6f-7d5a3e693e3e",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Running exhibits step-to-step variability even at constant treadmill speed, potentially due to internal sources (muscle force noise, sensory noise) or external perturbations (visual field inhomogeneity, ground imperfections).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 establish the phenomenon of running variability and cite appropriate literature (C3, C4). The observation of variability (C2) is well-documented in prior work, and the proposed sources (C4, C5) are reasonable hypotheses supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "a3384932-77da-4d49-8de5-6a37c612d83c",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Center of mass deviations at flight apex predict corrective strategies during the next stance. Horizontal motion is stabilized by total leg impulse modulations with decoupled fore-aft and sideways control, exhibiting near-deadbeat control for sideways velocity (coefficient \u2248-1.0) and rapid correction for fore-aft velocity (coefficient \u2248-0.72).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8, C23, and C31 present the core experimental findings with strong statistical support (R\u00b2 = 0.55 for sideways, 0.32 for fore-aft, p<10\u207b\u2074). The regression analyses in Equations 1-2 and Figure 3 provide quantitative evidence. The interpretation of deadbeat control (C31) follows logically from the regression coefficients.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "92ccc118-49f5-43e6-88bf-74880c1ad358",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All eigenvalues of the apex-to-apex map matrix product were less than one in absolute value (largest = 0.14), indicating stable periodic motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 provides quantitative stability analysis using standard dynamical systems methods (Floquet analysis). The eigenvalue analysis corroborates the impulse control findings and demonstrates mathematical stability of the running motion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "fc8b4468-8873-474a-8e49-12d6be61ea7c",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Vertical position control cannot use net vertical impulse (which must be zero between flight apexes) but instead modulates impulse distribution within stance. Landing leg length is adjusted based on vertical position deviations (\u0394\u2113 = 0.3\u0394z_a, R\u00b2 = 0.25) to reduce trip likelihood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 correctly apply impulse-momentum principles. Claims C46-C47 present experimental findings (Equation 7) with reasonable R\u00b2 values. The physical reasoning is sound, though the functional interpretation (C47) about trip likelihood is somewhat speculative but plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "ee4c6751-370c-4ecb-b29c-641a2bd0c88b",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Foot placement control involves stepping in the direction of velocity perturbations (sideways: \u0394(x_f-x_s) = 0.95-1.00\u0394\u1e8b_a, R\u00b2 \u2248 0.63; fore-aft: \u0394(y_f-y_s) = 0.39-0.42\u0394\u1e8f_a - 0.76-0.83\u0394z_a, R\u00b2 \u2248 0.45) with no significant coupling between sideways and fore-aft directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 present foot placement control findings (Equations 8-9) with moderate to good R\u00b2 values and clear statistical significance. The decoupling observation (C54) is consistent with the impulse control findings. The interpretation that runners step in the direction of perturbation is well-supported by the positive regression coefficients.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "99f4dc6b-5d0a-4be8-a9d7-efb0b4819042",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "At the beginning of flight phase, less than 10% of eventual foot placement is predicted by swing foot position, but center of mass state predicts foot placement much better until ~100 ms before touchdown. The explanatory power of center of mass remains flat during flight, likely because it follows a parabolic trajectory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C61 present phase-dependent regression analysis (Figure 6) showing temporal evolution of predictive power. The quantitative findings (C56, C59) are clearly stated. The interpretation about parabolic flight (C61) is physically sound. This analysis provides important insights into the timing of foot placement control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "a7a5ff2f-080d-4ce3-8cd7-b64409de5a6d",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Runners did not prioritize station-keeping (controlling position relative to treadmill) over single steps, though it may occur on slower time-scales with multi-step control not examined here.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by regression analysis showing minimal effect of absolute position (R\u00b2 improvement <1.5%). Claim C93 appropriately acknowledges limitations of the single-step analysis. The conclusion is appropriately cautious about what was not tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "e99ddb61-7f1c-447e-8892-49ae9684566f",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Running control exhibits approximate bilateral symmetry with mirror-symmetry for gains coupling sideways with fore-aft/vertical directions, and identical gains for within-direction couplings. This likely reflects body physiology symmetry and suggests no substantially dominant limb.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 describe symmetry patterns in the control gains with appropriate citations to similar findings in walking (C69). The interpretation about lack of limb dominance (C70) is reasonable though somewhat speculative. The symmetry observations are well-documented in Equations 1-2 and 8-9.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "cdcecad3-85ba-49d9-ad5e-2e2c6c0f5380",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Simple biped models with human-derived controllers produce ground reaction forces and phase-dependent feedback gains qualitatively similar to experimental data (Figure 8), capturing both average motion and responses to deviations despite not explicitly fitting these features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 demonstrate that the computational models reproduce key experimental features (Figure 8). The qualitative agreement is visually apparent in the figures. This validates that the inferred control strategies are sufficient to explain the observed behavior, though quantitative goodness-of-fit metrics are not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "79eb9fa4-03e1-425c-901b-6a68adc841cb",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The simple models are unstable without the controller but achieve asymptotic stability with foot placement and leg force control. The model rejects perturbations at any phase (following from mathematical theorem) and recovers from sideways/fore-aft pushes except for position offsets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 demonstrate model stability through simulation and cite appropriate mathematical theorems (C76). Claim C79 shows recovery behavior (Figure 9c). The stability analysis is rigorous and the citation to Guckenheimer and Holmes (2013) for the phase-independence theorem is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "d94c89e7-e18b-45fc-b406-cc0390ff34d4",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Positive perturbations to sideways velocity, fore-aft velocity, and vertical position result in net negative work on the first step after perturbation. Such net work is necessary to recover from energy-changing perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 present work-loop analysis (Figure 10) showing net mechanical work in response to perturbations. The physical reasoning (C81) is sound and supported by appropriate citations. This addresses a known limitation of spring-mass models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "93d25905-a6af-4f2b-8258-4d198bdd69be",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The muscle-driven model (but not direct force control model) runs stably for hundreds of steps despite motor noise, producing variability qualitatively similar to experimental data. The model handles uneven terrain despite being derived from horizontal ground data. Robustness is attributed to intrinsic muscle properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C86 demonstrate model robustness through simulation (Figure 11). The comparison between muscle-driven and direct force control models (C82) is informative. The qualitative similarity to experimental variability (C83) is shown in Figure 11b. The interpretation about muscle properties (C86) is reasonable and supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "e13135fb-1c14-4d78-95ac-e7105a9730af",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Humans use foot placement control by stepping in the direction of perturbations. This is qualitatively similar to Raibert-like robot controllers but differs in vertical position dependence. Similar control is used in human walking and animal turning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 summarizes the foot placement findings. Claims C88-C90 appropriately contextualize the findings within prior literature on robots (C88), human walking (C89), and animal locomotion (C90) with appropriate citations. The comparison is fair and highlights both similarities and differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "5238ed3c-7b10-4f43-a46e-f689284d94c2",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The sideways foot placement gain was ~2.5 times greater than fore-aft gain (similar to 3\u00d7 factor in walking), and sideways perturbation recovery was faster than fore-aft recovery, consistent with greater sideways instability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 present quantitative comparisons with appropriate citations to walking studies. The interpretation about sideways instability is reasonable and supported by citations to modeling work (Ghigliazza et al., 2005). The consistency across walking and running is noteworthy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "7b4ef32a-4142-4509-a8f2-509268a87958",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Individual subject analysis shows that dominant terms in the inferred controllers are similar across all subjects, with subject-to-subject variability shown in Figure 12.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 addresses inter-subject consistency with supporting data in Figure 12. This strengthens the generalizability of the findings, though detailed statistical analysis of inter-subject differences is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "11a7e89a-4459-4249-a7b2-3e4b3557557b",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The model predicts steeper landing angles for step-downs (higher flight apex), matching observations in humans and birds on large terrain perturbations. The model captures this despite lacking explicit leg swing dynamics, suggesting similar control strategies for large and small perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C101 connect model predictions to prior experimental findings with appropriate citations (C97, C98). The model's ability to reproduce terrain response behavior (C100) without explicit swing dynamics is notable. The inference about similar control strategies (C101) is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "a8eb26fc-c6d2-4275-bf1f-307e260feb7e",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Asymptotic stability requires net mechanical work for energy-changing perturbations, which spring-mass models cannot provide. The study shows continuous GRF modulation throughout stance, contrasting with prior assumptions of instantaneous mid-stance energy input. Direct force control may be more parsimonious than controlling spring stiffness and length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C108 provide theoretical context and compare the current approach to prior spring-mass models with appropriate citations. The argument for parsimony (C107) is reasonable. The contrast with Maus et al. (2015) regarding continuous vs. instantaneous control (C108) is well-articulated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "aad37df1-3894-4af1-b653-2727f019ce66",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The stabilizing responses likely involve both feedforward dynamics and active feedback control. Flight phase durations (~100-200 ms) are comparable to neural feedback latencies, suggesting feasibility of feedback control. The lag between center of mass and swing foot predictive information (~0.1 s sideways, ~0.2 s fore-aft) allows sufficient time for neural feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C109-C114 provide careful analysis of temporal feasibility of feedback control with appropriate citations to neural latency literature (C110). The quantitative timing analysis (C113, C114) from Figure 6 supports the feasibility argument. The interpretation is appropriately cautious about distinguishing feedforward and feedback contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "d31bf092-ce39-4ec7-9716-6a2c3653562e",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Center of mass state information for feedback control could be estimated by integrating sensory signals from vision, proprioception, and vestibular sensors, potentially with internal models. Most available sensory information is likely used, analogous to optimal state estimation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C115-C116 are explicitly speculative about sensory integration mechanisms. While supported by appropriate citations to relevant literature, these are hypotheses about neural mechanisms that were not directly tested in the study. The speculation is reasonable but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "270ce54c-69a7-4e38-9926-3ae0403249af",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The simple point-mass model may not capture all aspects of running due to extended feet, non-point-mass bodies, and leg masses. Simplifying assumptions were made about muscle architecture and properties (e.g., linear force-velocity relations) to capture qualitative features rather than quantitative precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C119 appropriately acknowledge model limitations with supporting citations. The acknowledgment that simplifications capture qualitative rather than quantitative features (C118) is honest and appropriate. The speculation about adequacy of linear force-velocity relations (C119) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "4493079b-214f-48b3-adb4-023d85002001",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The methods are simple, non-invasive, and generalizable to other animals and periodic tasks. They could be used to analyze differences across populations (athletes, elderly, movement disorders) and potentially inform rehabilitation tracking and robot design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C120-C122 discuss potential applications and generalizability. While the methods are indeed simple and non-invasive (C120), the claims about applications to other populations (C121) and rehabilitation (C122) are speculative and not demonstrated in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "b77e9bc6-29ea-4caf-8c27-49218d7b8988",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Data processing involved high-pass filtering (cutoff = 1/8 step frequency) to remove integration drift, with robustness checks showing conclusions unchanged with different cutoffs. Air drag was negligible (<10\u207b\u2075 m/s change). Center of mass position was approximated using weighted mean of sacral markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C128-C131 describe data processing methods with appropriate citations and justifications. The robustness checks (C129) strengthen confidence in the findings. The quantitative justification for ignoring air drag (C130) is appropriate. The center of mass approximation (C131) is standard and well-cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    },
+    {
+      "id": "52fb88e2-0065-4ff5-9754-3bf71d8dffd1",
+      "content_id": "e11679c1-2591-419b-8d5f-f8682dd00e15",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Running is often modeled as periodic using spring-mass models that fit average motion but cannot explain control of deviations from average. Understanding stability requires understanding deviation control, which necessitates systematic leg force modulation (from Newton's laws).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11-C17 provide appropriate background context with extensive citations to prior literature. The logical progression from spring-mass model limitations (C16) to the necessity of force control (C17) is sound. These claims establish the motivation and theoretical foundation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:13:01.020021Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "71c29ff1-ef81-437a-a84e-bd2f1901ab61",
+      "result_id": "713249a4-9981-4f76-8310-8553b010c3ad"
+    },
+    {
+      "claim_id": "d80c4925-8c58-4840-8b16-88195ba67ca0",
+      "result_id": "713249a4-9981-4f76-8310-8553b010c3ad"
+    },
+    {
+      "claim_id": "557ee735-7701-472b-8805-c7d8688d54a3",
+      "result_id": "713249a4-9981-4f76-8310-8553b010c3ad"
+    },
+    {
+      "claim_id": "2ba5a493-d4b6-48e2-80f2-8986ecba5a19",
+      "result_id": "713249a4-9981-4f76-8310-8553b010c3ad"
+    },
+    {
+      "claim_id": "d8f98b72-14b6-4483-8113-3e032a900e5a",
+      "result_id": "713249a4-9981-4f76-8310-8553b010c3ad"
+    },
+    {
+      "claim_id": "2d9d65b0-dc13-44b2-a936-be17009d35e5",
+      "result_id": "713249a4-9981-4f76-8310-8553b010c3ad"
+    },
+    {
+      "claim_id": "aecf258d-6e22-4c63-a972-e80ab4cb0bf5",
+      "result_id": "abf36a01-5790-412b-8e6f-7d5a3e693e3e"
+    },
+    {
+      "claim_id": "ca9cf0e1-b89e-416e-8062-6835b3e78add",
+      "result_id": "abf36a01-5790-412b-8e6f-7d5a3e693e3e"
+    },
+    {
+      "claim_id": "eea97120-b047-4072-860c-8bba1aded987",
+      "result_id": "abf36a01-5790-412b-8e6f-7d5a3e693e3e"
+    },
+    {
+      "claim_id": "bb4ce1e3-4dc3-4ca8-962f-750992e4ec62",
+      "result_id": "abf36a01-5790-412b-8e6f-7d5a3e693e3e"
+    },
+    {
+      "claim_id": "c0e009b9-4fe5-4d4b-aaad-6b9e957d3bc6",
+      "result_id": "a3384932-77da-4d49-8de5-6a37c612d83c"
+    },
+    {
+      "claim_id": "6064a491-f89f-430e-9468-123dd6055ba4",
+      "result_id": "a3384932-77da-4d49-8de5-6a37c612d83c"
+    },
+    {
+      "claim_id": "bd5b041e-f9c8-4ff2-a44c-ad29efceb1af",
+      "result_id": "a3384932-77da-4d49-8de5-6a37c612d83c"
+    },
+    {
+      "claim_id": "c86aa4fd-8435-4058-9685-64de7f01e934",
+      "result_id": "a3384932-77da-4d49-8de5-6a37c612d83c"
+    },
+    {
+      "claim_id": "73be4cdf-8959-442e-8d98-3fbc933b14a5",
+      "result_id": "a3384932-77da-4d49-8de5-6a37c612d83c"
+    },
+    {
+      "claim_id": "838c69ff-a168-495a-86c8-93224f234863",
+      "result_id": "92ccc118-49f5-43e6-88bf-74880c1ad358"
+    },
+    {
+      "claim_id": "8812808b-2a1f-47ce-bc4e-7a025dd39d1b",
+      "result_id": "fc8b4468-8873-474a-8e49-12d6be61ea7c"
+    },
+    {
+      "claim_id": "1207243b-bce5-4f0b-8a03-f6181d5a07fd",
+      "result_id": "fc8b4468-8873-474a-8e49-12d6be61ea7c"
+    },
+    {
+      "claim_id": "a99c138c-83d7-4190-8aa4-73ef84bed3f7",
+      "result_id": "fc8b4468-8873-474a-8e49-12d6be61ea7c"
+    },
+    {
+      "claim_id": "e71fe2b6-e6dd-49e7-a152-d7b50d4c081a",
+      "result_id": "fc8b4468-8873-474a-8e49-12d6be61ea7c"
+    },
+    {
+      "claim_id": "9b46db28-0044-458f-81fd-d71f99264ac0",
+      "result_id": "ee4c6751-370c-4ecb-b29c-641a2bd0c88b"
+    },
+    {
+      "claim_id": "bbdf0e0d-288b-4b8d-87e5-78d6a71dbd12",
+      "result_id": "ee4c6751-370c-4ecb-b29c-641a2bd0c88b"
+    },
+    {
+      "claim_id": "15553b4c-7493-409b-9d4a-c4af5f827e6b",
+      "result_id": "ee4c6751-370c-4ecb-b29c-641a2bd0c88b"
+    },
+    {
+      "claim_id": "d669dea7-53a7-42a0-9ca2-c7eac66b88d1",
+      "result_id": "99f4dc6b-5d0a-4be8-a9d7-efb0b4819042"
+    },
+    {
+      "claim_id": "6389a46e-24e4-4ea8-848d-9dbbaef6d91a",
+      "result_id": "99f4dc6b-5d0a-4be8-a9d7-efb0b4819042"
+    },
+    {
+      "claim_id": "2bbef637-f1c5-4344-a208-7fd50bd274f8",
+      "result_id": "99f4dc6b-5d0a-4be8-a9d7-efb0b4819042"
+    },
+    {
+      "claim_id": "33966153-dc99-42f2-95c3-a80fdb01a6ac",
+      "result_id": "99f4dc6b-5d0a-4be8-a9d7-efb0b4819042"
+    },
+    {
+      "claim_id": "87f3e454-a9e7-46f3-a380-1684426e3a4f",
+      "result_id": "99f4dc6b-5d0a-4be8-a9d7-efb0b4819042"
+    },
+    {
+      "claim_id": "fd222dd4-b0fd-4960-8e41-a8ff61ac291d",
+      "result_id": "99f4dc6b-5d0a-4be8-a9d7-efb0b4819042"
+    },
+    {
+      "claim_id": "c95e9864-be6e-4d9e-a69e-8907b557af25",
+      "result_id": "a7a5ff2f-080d-4ce3-8cd7-b64409de5a6d"
+    },
+    {
+      "claim_id": "e58025c6-d2ab-45d3-9eaf-781cc6977db7",
+      "result_id": "a7a5ff2f-080d-4ce3-8cd7-b64409de5a6d"
+    },
+    {
+      "claim_id": "ad222abf-0ea3-4458-bb1c-bfcbc49e022f",
+      "result_id": "e99ddb61-7f1c-447e-8892-49ae9684566f"
+    },
+    {
+      "claim_id": "9037b282-4653-4d0f-abb2-b91f240316f4",
+      "result_id": "e99ddb61-7f1c-447e-8892-49ae9684566f"
+    },
+    {
+      "claim_id": "7f91610d-bb3c-4723-8a23-d37c229fe378",
+      "result_id": "e99ddb61-7f1c-447e-8892-49ae9684566f"
+    },
+    {
+      "claim_id": "2d03433f-5bf0-4fc7-887c-788fea1a6aa1",
+      "result_id": "e99ddb61-7f1c-447e-8892-49ae9684566f"
+    },
+    {
+      "claim_id": "6e461fd7-14f2-47b7-b1f1-d3b8d9f6fb1f",
+      "result_id": "e99ddb61-7f1c-447e-8892-49ae9684566f"
+    },
+    {
+      "claim_id": "c4f698d6-6488-49c0-85e4-1783700aa4a9",
+      "result_id": "cdcecad3-85ba-49d9-ad5e-2e2c6c0f5380"
+    },
+    {
+      "claim_id": "3c6d2e5f-6b9c-4fe7-b809-346e02284df8",
+      "result_id": "cdcecad3-85ba-49d9-ad5e-2e2c6c0f5380"
+    },
+    {
+      "claim_id": "5bcbaf45-3bff-411f-9cff-b16a3ea9e1c1",
+      "result_id": "cdcecad3-85ba-49d9-ad5e-2e2c6c0f5380"
+    },
+    {
+      "claim_id": "2db9a31a-5438-421d-b4fc-a346ba9cf414",
+      "result_id": "79eb9fa4-03e1-425c-901b-6a68adc841cb"
+    },
+    {
+      "claim_id": "2f3cc72e-c6c2-4bb9-8256-b2c29135e191",
+      "result_id": "79eb9fa4-03e1-425c-901b-6a68adc841cb"
+    },
+    {
+      "claim_id": "bf9edb23-464e-4b96-a083-0ae3f366e1b1",
+      "result_id": "79eb9fa4-03e1-425c-901b-6a68adc841cb"
+    },
+    {
+      "claim_id": "96d0043c-470d-4c9e-ad6f-92b031b19394",
+      "result_id": "79eb9fa4-03e1-425c-901b-6a68adc841cb"
+    },
+    {
+      "claim_id": "03b42eb7-3a77-4c9c-a7fd-764abdc64a59",
+      "result_id": "79eb9fa4-03e1-425c-901b-6a68adc841cb"
+    },
+    {
+      "claim_id": "9ca8e223-521d-4716-96de-ad8a8050435a",
+      "result_id": "d94c89e7-e18b-45fc-b406-cc0390ff34d4"
+    },
+    {
+      "claim_id": "dd936104-2386-4417-b2d2-f8219c412fa6",
+      "result_id": "d94c89e7-e18b-45fc-b406-cc0390ff34d4"
+    },
+    {
+      "claim_id": "b0a5292d-bf69-4323-b030-92a7ff5e42b2",
+      "result_id": "93d25905-a6af-4f2b-8258-4d198bdd69be"
+    },
+    {
+      "claim_id": "01ce94ad-0dca-4b98-bffc-07c52e329082",
+      "result_id": "93d25905-a6af-4f2b-8258-4d198bdd69be"
+    },
+    {
+      "claim_id": "a81774a0-5f85-4e3c-acf9-bae1f9a680a8",
+      "result_id": "93d25905-a6af-4f2b-8258-4d198bdd69be"
+    },
+    {
+      "claim_id": "fa8943d5-42eb-4da1-8a75-0eec652e60c6",
+      "result_id": "93d25905-a6af-4f2b-8258-4d198bdd69be"
+    },
+    {
+      "claim_id": "cbf361dd-7fb3-4955-9740-c2c8e6b5b966",
+      "result_id": "93d25905-a6af-4f2b-8258-4d198bdd69be"
+    },
+    {
+      "claim_id": "50ba05af-efaf-4871-aa8f-0e9e1b65c890",
+      "result_id": "e13135fb-1c14-4d78-95ac-e7105a9730af"
+    },
+    {
+      "claim_id": "9e2d2eea-7d13-4c95-9ada-6709d918aff4",
+      "result_id": "e13135fb-1c14-4d78-95ac-e7105a9730af"
+    },
+    {
+      "claim_id": "4fec1477-baff-4bb9-9e5d-86c7ee8788e0",
+      "result_id": "e13135fb-1c14-4d78-95ac-e7105a9730af"
+    },
+    {
+      "claim_id": "f6d93138-5837-46b0-8d4c-95ac8a5b0439",
+      "result_id": "e13135fb-1c14-4d78-95ac-e7105a9730af"
+    },
+    {
+      "claim_id": "1e161f53-fc3b-49be-a23d-483cf73034d3",
+      "result_id": "5238ed3c-7b10-4f43-a46e-f689284d94c2"
+    },
+    {
+      "claim_id": "ecdccb17-60af-4412-bcce-452c50b12985",
+      "result_id": "5238ed3c-7b10-4f43-a46e-f689284d94c2"
+    },
+    {
+      "claim_id": "7c67addc-f21c-4bd9-9ba2-238bf3844847",
+      "result_id": "7b4ef32a-4142-4509-a8f2-509268a87958"
+    },
+    {
+      "claim_id": "6c7b6c6d-b9a2-4ab0-b02f-c5d6f5545c6c",
+      "result_id": "11a7e89a-4459-4249-a7b2-3e4b3557557b"
+    },
+    {
+      "claim_id": "0d156e87-00f1-4d4f-8c7a-e5de1398de1d",
+      "result_id": "11a7e89a-4459-4249-a7b2-3e4b3557557b"
+    },
+    {
+      "claim_id": "2998b9e8-e17b-4302-ae8e-2f6587807a82",
+      "result_id": "11a7e89a-4459-4249-a7b2-3e4b3557557b"
+    },
+    {
+      "claim_id": "7049f69f-4b3d-4534-bbb8-2d6ae3f158d2",
+      "result_id": "11a7e89a-4459-4249-a7b2-3e4b3557557b"
+    },
+    {
+      "claim_id": "db301cc8-56dc-4d24-9ea2-668ec221e4d2",
+      "result_id": "11a7e89a-4459-4249-a7b2-3e4b3557557b"
+    },
+    {
+      "claim_id": "86a5343d-d07b-4e7b-a25d-6f353affd0c7",
+      "result_id": "11a7e89a-4459-4249-a7b2-3e4b3557557b"
+    },
+    {
+      "claim_id": "4c23311c-e641-4d20-93c1-f56ad1e379f4",
+      "result_id": "a8eb26fc-c6d2-4275-bf1f-307e260feb7e"
+    },
+    {
+      "claim_id": "470125c3-f610-4360-b04c-a665e141b56d",
+      "result_id": "a8eb26fc-c6d2-4275-bf1f-307e260feb7e"
+    },
+    {
+      "claim_id": "e59cea60-3041-450e-9b23-a63cad3080c8",
+      "result_id": "a8eb26fc-c6d2-4275-bf1f-307e260feb7e"
+    },
+    {
+      "claim_id": "89491c88-3ed0-4e60-a1a9-5730373331c9",
+      "result_id": "a8eb26fc-c6d2-4275-bf1f-307e260feb7e"
+    },
+    {
+      "claim_id": "148bde5b-8aff-4c1f-9cb0-44d59bf93330",
+      "result_id": "a8eb26fc-c6d2-4275-bf1f-307e260feb7e"
+    },
+    {
+      "claim_id": "67a0cfee-38cb-41af-8ef2-f6b9aa4741cf",
+      "result_id": "a8eb26fc-c6d2-4275-bf1f-307e260feb7e"
+    },
+    {
+      "claim_id": "a7294cc5-7cc8-420e-a602-379acdb15f1b",
+      "result_id": "a8eb26fc-c6d2-4275-bf1f-307e260feb7e"
+    },
+    {
+      "claim_id": "7deaaf28-439f-4b64-b00c-81b480107a23",
+      "result_id": "aad37df1-3894-4af1-b653-2727f019ce66"
+    },
+    {
+      "claim_id": "58c6d4bd-f73b-478c-accf-335796389cda",
+      "result_id": "aad37df1-3894-4af1-b653-2727f019ce66"
+    },
+    {
+      "claim_id": "998af522-525d-4eb6-af3e-cfc45fc33131",
+      "result_id": "aad37df1-3894-4af1-b653-2727f019ce66"
+    },
+    {
+      "claim_id": "ecab2236-2ca6-4c12-8920-f5bf59ab7183",
+      "result_id": "aad37df1-3894-4af1-b653-2727f019ce66"
+    },
+    {
+      "claim_id": "17c42cdd-161d-4a94-8d09-c388d8f62ff4",
+      "result_id": "aad37df1-3894-4af1-b653-2727f019ce66"
+    },
+    {
+      "claim_id": "22ecbc97-0cf4-4312-8bda-8f0c473a90fe",
+      "result_id": "aad37df1-3894-4af1-b653-2727f019ce66"
+    },
+    {
+      "claim_id": "d96f02d5-7e34-4ebb-a791-db1e34a3d968",
+      "result_id": "d31bf092-ce39-4ec7-9716-6a2c3653562e"
+    },
+    {
+      "claim_id": "f7919f8d-5674-4408-b8c4-aa65482567a7",
+      "result_id": "d31bf092-ce39-4ec7-9716-6a2c3653562e"
+    },
+    {
+      "claim_id": "a3b5a71c-736b-45f2-8e6b-16866d6a8f42",
+      "result_id": "270ce54c-69a7-4e38-9926-3ae0403249af"
+    },
+    {
+      "claim_id": "4c3aee74-d4ca-4a03-bbbe-475b9eff7370",
+      "result_id": "270ce54c-69a7-4e38-9926-3ae0403249af"
+    },
+    {
+      "claim_id": "c9e2caef-dfee-4bf1-8661-2ca5c97c8a22",
+      "result_id": "270ce54c-69a7-4e38-9926-3ae0403249af"
+    },
+    {
+      "claim_id": "b789f294-daac-4098-8997-0497c3131d0b",
+      "result_id": "4493079b-214f-48b3-adb4-023d85002001"
+    },
+    {
+      "claim_id": "5ae95deb-c027-4054-ba20-e347da2468a0",
+      "result_id": "4493079b-214f-48b3-adb4-023d85002001"
+    },
+    {
+      "claim_id": "2d8b1341-39fa-4c54-b041-1f79bae9c7a3",
+      "result_id": "4493079b-214f-48b3-adb4-023d85002001"
+    },
+    {
+      "claim_id": "0ca511f6-a9da-464f-81b0-c72385b028fb",
+      "result_id": "b77e9bc6-29ea-4caf-8c27-49218d7b8988"
+    },
+    {
+      "claim_id": "a85f5424-00d3-44b4-a538-eca98208220d",
+      "result_id": "b77e9bc6-29ea-4caf-8c27-49218d7b8988"
+    },
+    {
+      "claim_id": "c0e9490f-435e-4ebe-b07b-e887249a13fa",
+      "result_id": "b77e9bc6-29ea-4caf-8c27-49218d7b8988"
+    },
+    {
+      "claim_id": "46645eb9-6d6f-44c4-874b-1330b4baf231",
+      "result_id": "b77e9bc6-29ea-4caf-8c27-49218d7b8988"
+    },
+    {
+      "claim_id": "7de4fbb2-37b4-426f-b00f-905a7f5efabd",
+      "result_id": "52fb88e2-0065-4ff5-9754-3bf71d8dffd1"
+    },
+    {
+      "claim_id": "715832c5-06fd-4f16-9c7d-9ac3483b7d90",
+      "result_id": "52fb88e2-0065-4ff5-9754-3bf71d8dffd1"
+    },
+    {
+      "claim_id": "bba74bf3-6313-4f98-91e8-845f675acff2",
+      "result_id": "52fb88e2-0065-4ff5-9754-3bf71d8dffd1"
+    },
+    {
+      "claim_id": "7952c04f-97b2-44b2-80fb-5080113e9f4a",
+      "result_id": "52fb88e2-0065-4ff5-9754-3bf71d8dffd1"
+    },
+    {
+      "claim_id": "775a8678-abc8-4b8b-a31b-53d96e819dae",
+      "result_id": "52fb88e2-0065-4ff5-9754-3bf71d8dffd1"
+    },
+    {
+      "claim_id": "331dea1a-b971-4d59-8c45-deca42f04e91",
+      "result_id": "52fb88e2-0065-4ff5-9754-3bf71d8dffd1"
+    },
+    {
+      "claim_id": "5ba2089c-318a-4448-9742-bd4202cb1747",
+      "result_id": "52fb88e2-0065-4ff5-9754-3bf71d8dffd1"
+    },
+    {
+      "claim_id": "612d2490-d191-479b-bea7-4e9c3bcf8d97",
+      "result_id": "52fb88e2-0065-4ff5-9754-3bf71d8dffd1"
+    }
+  ],
+  "comparisons": []
+}

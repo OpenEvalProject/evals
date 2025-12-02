@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C7",
+      "C39",
+      "C58",
+      "C60",
+      "C61",
+      "C63",
+      "C138"
+    ],
+    "result": "Single-molecule tracking reveals that endocytic proteins have residence times of 1-2 seconds, much shorter than the ~20 second bulk patch lifetimes, indicating proteins turn over approximately 5 times during vesicle formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C58, C60, C61, C63, and C138 provide direct experimental measurements showing single-molecule residence times of 1-2 seconds across multiple endocytic proteins. Claims C39 and C7 correctly interpret these findings as indicating ~5-fold turnover during the ~20 second CME event. The data are supported by extensive controls (C69-C72) ruling out photobleaching artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "FRAP experiments demonstrate rapid fluorescence recovery (~1 second half-time, ~100% recovery) for endocytic proteins Myo1p, Wsp1p, Acp1p, and Fim1p.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe FRAP results showing very fast recovery with near-complete fluorescence recovery. While the authors acknowledge difficulty in precise quantification due to changing molecule numbers (C51), the qualitative observation of rapid exchange is well-supported by the data shown in Figure 2D and supplements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C64",
+      "C77",
+      "C78",
+      "C79",
+      "C92"
+    ],
+    "result": "Endocytic proteins exhibit heterogeneous motion behaviors, with actin-associated proteins showing lifetime-dependent displacement while membrane-associated proteins do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 and C92 describe heterogeneous behaviors observed in the tracking data, with C78-C79 specifically documenting differential behavior between actin-associated and membrane-associated proteins. The data in Figures 4 and 6 support these observations, though the mechanistic interpretation remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C90"
+    ],
+    "result": "Single-molecule tracks typically span 100-200 nm end-to-end distance, with actin-associated proteins and clathrin showing a greater proportion of long tracks (>250 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C74, and C90 are directly supported by the displacement analysis shown in Figure 4A-B. Statistical significance of differences between proteins is documented in C75. The measurements are consistent with the known size of endocytic structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Diffusion coefficient analysis reveals three mobility classes: high (~6000 nm\u00b2/s), mid (~1100 nm\u00b2/s), and low (~65 nm\u00b2/s), interpreted as vesicle diffusion, meshwork motions, and membrane-bound states respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 provide quantitative measurements of apparent diffusion coefficients for different proteins and mobility classes, supported by MSD analysis in Figure 5. Claim C88 provides a mechanistic interpretation that is reasonable given the known biology, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C45",
+      "C46"
+    ],
+    "result": "Logical simulations demonstrate that discrete assembly/disassembly and continuous turnover models can produce similar bulk dynamics but differ in total molecule consumption and single-molecule residence times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C45, and C46 describe simulations shown in Figure 1 that effectively illustrate how different molecular mechanisms can produce similar bulk measurements. This provides important conceptual framework for interpreting the experimental results, though these are illustrative models rather than mechanistic simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Acp1p-mEGFP endocytic patches have lifetimes of 18.4 \u00b1 3.5 seconds, consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 provides direct measurement from bulk patch tracking (Figure 2, Table 1), and C48 confirms consistency with prior literature. This establishes the baseline bulk lifetime against which single-molecule measurements are compared.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Sparse SNAP-tag labeling achieves low labeling efficiency enabling single-molecule tracking, with spots colocalizing specifically to endocytic sites and negligible non-specific binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C57 describe the labeling strategy and validation controls shown in Figure 2\u2014figure supplement 2. The colocalization with mEGFP-tagged proteins and absence of signal in wild-type cells provide strong evidence for specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Control experiments demonstrate that spot disappearance is due to protein dissociation rather than photobleaching, with photobleaching occurring ~10-fold slower than measured residence times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 describe critical controls shown in Figure 3\u2014figure supplement 1 and Table 3. The fixed cell experiments showing 15+ second tracks and the invariance of lifetime distributions with laser power provide strong evidence against photobleaching artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Sensitivity analysis shows that even with unrealistic tracking parameters that introduce artifacts, average residence times remain below 3-4 seconds, much faster than the ~10 second prediction for single-turnover mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 describe parameter sensitivity analysis shown in Figure 3\u2014figure supplement 3. This robustness analysis strengthens confidence in the main findings, though the authors appropriately acknowledge tracking parameter sensitivity as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C101",
+      "C102",
+      "C103",
+      "C105"
+    ],
+    "result": "The findings imply that endocytic patches consume >30,000 actin subunits (vs. 6,500 peak), requiring higher polymerization/disassembly rates and more polymerizing ends than previously estimated, with correspondingly greater ATP energy consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C103 and C105 make quantitative inferences about energy consumption and kinetic rates based on the turnover measurements. While the logic is sound (C105 calculation: 6,500 peak \u00d7 5 turnovers = 32,500 total), these are indirect inferences rather than direct measurements. The actual rates and energy consumption would require additional experiments to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C41",
+      "C97",
+      "C113",
+      "C114"
+    ],
+    "result": "The results validate predicted turnover behavior from theoretical models and suggest that quantitative models of CME force production should be revised to account for continuous turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C41, C97, and C113 interpret the significance of the findings for understanding force generation in CME. Claim C113 appropriately positions the work as experimental validation of prior theoretical predictions (C112). Claim C114 provides a reasonable recommendation for future modeling efforts, though the specific revisions needed remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The peaked, skewed-tail shape of residence time distributions indicates multi-step kinetics rather than simple single-step unbinding, inconsistent with transient associations with stable assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 provide kinetic interpretation of the distribution shapes. The reasoning is sound: exponential distributions would indicate simple kinetics (C118), while gamma-like distributions indicate multi-step processes (C119-C120). The comparison to actin treadmilling kinetics (C120) provides appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Dissociation kinetics for actin-associated proteins are likely driven by filament disassembly/severing rather than simple unbinding, as in vitro unbinding rates (10\u207b\u2074 to 10\u207b\u00b2 s\u207b\u00b9) are much slower than observed timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 provides mechanistic interpretation supported by comparison to in vitro measurements (C124-C125). The logic is sound: if proteins remained bound until spontaneous unbinding, residence times would be much longer. However, this remains an inference as the actual severing/disassembly events are not directly observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C93"
+    ],
+    "result": "Long-distance tracks of actin-associated proteins are attributed to molecules remaining associated with vesicles after scission, while the majority of short-displacement events reflect rapid turnover in developing CCPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C91, and C93 provide interpretation of the heterogeneous displacement data. The interpretation is reasonable given the known biology of CME and is consistent with the mobility class analysis (C88), though direct visualization of vesicle association is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Slight differences in residence times between actin-associated proteins may reflect binding delays after nucleation or pre-recruitment timing, with Fim1p's fast sub-population potentially representing transient single-domain binding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C128 provide speculative mechanistic explanations for observed differences between proteins. While plausible, these interpretations are not directly tested and represent hypotheses for future investigation rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Clathrin shows short residence times consistent with triskelia unbinding during CCP development, while End4p displays the highest fraction of long-lived events consistent with its membrane-anchoring role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 interpret protein-specific behaviors in the context of known functions. The observations are supported by the data in Figure 6, and the interpretations are consistent with prior literature (C129-C130) and known protein functions (C132).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Recent reports suggest myosin-I-mediated pushing of filament ends and mechanical stress-enhanced cofilin severing could contribute to the observed high turnover rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C108 cite recent literature proposing mechanisms that could explain the high turnover rates. While these are plausible contributing mechanisms supported by other studies, they are speculative in the context of this work and would require additional experiments to validate their role in CME.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Fast turnover could affect higher-order force generation mechanisms, including crosslinker remodeling enabling elastic energy redistribution and changes in filament orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C111 speculate about broader implications for force generation mechanisms. While C110 cites theoretical work supporting the crosslinker remodeling concept, these remain hypotheses about higher-order effects that are not directly tested in this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2079 @@
+{
+  "submission": {
+    "id": "dc47bc0b-5b53-4965-9390-76f403218f5c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:16:02.559535Z",
+    "updated_at": "2025-12-02T17:16:02.559535Z"
+  },
+  "content": [
+    {
+      "id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "submission_id": "dc47bc0b-5b53-4965-9390-76f403218f5c",
+      "content_type": "manuscript",
+      "content_text": "# R-spondins engage heparan sulfate proteoglycans to potentiate WNT signaling\n\n## Authors\n\n- Ramin Dubey<sup>1</sup> ([ORCID: 0000-0002-0687-5831](https://orcid.org/0000-0002-0687-5831))\n- Peter van Kerkhof<sup>2</sup>\n- Ingrid Jordens<sup>2</sup>\n- Tomas Malinauskas<sup>3</sup> ([ORCID: 0000-0002-4847-5529](https://orcid.org/0000-0002-4847-5529))\n- Ganesh V Pusapati<sup>1</sup> ([ORCID: 0000-0002-1406-2566](https://orcid.org/0000-0002-1406-2566))\n- Joseph K McKenna<sup>4</sup> ([ORCID: 0000-0002-3921-4933](https://orcid.org/0000-0002-3921-4933))\n- Dan Li<sup>5</sup>\n- Jan E Carette<sup>6</sup>\n- Mitchell Ho<sup>5</sup> ([ORCID: 0000-0002-9152-5405](https://orcid.org/0000-0002-9152-5405))\n- Christian Siebold<sup>3</sup> ([ORCID: 0000-0002-6635-3621](https://orcid.org/0000-0002-6635-3621))\n- Madelon Maurice<sup>2</sup>\n- Andres M Lebensohn<sup>4</sup> ([ORCID: 0000-0002-4224-8819](https://orcid.org/0000-0002-4224-8819)) \u2020\n- Rajat Rohatgi<sup>1</sup> ([ORCID: 0000-0001-7609-8858](https://orcid.org/0000-0001-7609-8858)) \u2020\n\n### Affiliations\n\n1. Departments of Biochemistry and Medicine, Stanford University School of Medicine Stanford United States\n2. Department of Cell Biology and Oncode Institute, Centre for Molecular Medicine, University Medical Centre Utrecht Utrecht Netherlands\n3. Division of Structural Biology, Wellcome Centre for Human Genetics, University of Oxford Oxford United Kingdom\n4. Laboratory of Cellular and Molecular Biology, Center for Cancer Research, National Cancer Institute, National Institutes of Health Bethesda United States\n5. Laboratory of Molecular Biology, Center for Cancer Research, National Cancer Institute, National Institutes of Health Bethesda United States\n6. Department of Microbiology and Immunology, Stanford University School of Medicine Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nR-spondins (RSPOs) amplify WNT signaling during development and regenerative responses. We previously demonstrated that RSPOs 2 and 3 potentiate WNT/\u03b2-catenin signaling in cells lacking leucine-rich repeat-containing G-protein coupled receptors (LGRs) 4, 5 and 6 (Lebensohn and Rohatgi, 2018). We now show that heparan sulfate proteoglycans (HSPGs) act as alternative co-receptors for RSPO3 using a combination of ligand mutagenesis and ligand engineering. Mutations in RSPO3 residues predicted to contact HSPGs impair its signaling capacity. Conversely, the HSPG-binding domains of RSPO3 can be entirely replaced with an antibody that recognizes heparan sulfate (HS) chains attached to multiple HSPGs without diminishing WNT-potentiating activity in cultured cells and intestinal organoids. A genome-wide screen for mediators of RSPO3 signaling in cells lacking LGRs 4, 5 and 6 failed to reveal other receptors. We conclude that HSPGs are RSPO co-receptors that potentiate WNT signaling in the presence and absence of LGRs.\n\n## Introduction\n\nR-spondins (RSPOs) are vertebrate-specific secreted proteins that amplify signaling through the WNT/\u03b2-catenin pathway, a cell-cell communication system that regulates tissue patterning during embryonic development and regenerative responses in adults (de Lau et al., 2014; de Lau et al., 2012; Nusse and Clevers, 2017; Steinhart and Angers, 2018). Mutations that disrupt the RSPO signaling circuit cause structural birth defects, exemplified by limb truncations, lung hypoplasia, craniofacial malformations and cardiovascular defects seen in humans and mice carrying mutations in RSPO2 and RSPO3 (Aoki et al., 2008; Aoki et al., 2007; Bell et al., 2008; Nam et al., 2007; Szenker-Ravi et al., 2018). In adults, RSPOs function as niche-derived signals required for the renewal of epithelial stem cells in multiple tissues, including the intestine, skin and bone (de Lau et al., 2014). Elucidating the mechanisms that mediate the reception and transduction of RSPO signals will further our understanding of these fundamental developmental and homeostatic processes, and is essential to harnessing the considerable therapeutic potential of this pathway to enhance regenerative responses.\n\nThe prevailing paradigm of RSPO signaling holds that they amplify responses to WNT ligands by simultaneously binding to two types of receptors at the cell surface: one of three leucine-rich repeat-containing G-protein coupled receptors (LGRs), LGRs 4, 5 or 6 (hereafter referred to jointly as LGRs), and one of two transmembrane E3 ubiquitin ligases, ZNRF3 or RNF43 (Carmon et al., 2011; Chen et al., 2013; de Lau et al., 2011; Glinka et al., 2011; Gong et al., 2012; Peng et al., 2013a; Peng et al., 2013b; Ruffner et al., 2012; Wang et al., 2013; Zebisch et al., 2013; Zebisch and Jones, 2015). ZNRF3/RNF43 reduce cell-surface levels of WNT receptors, Frizzled (FZD) and LDL Receptor Related Protein (LRP) 5/6 proteins, by direct ubiquitination (Hao et al., 2012; Koo et al., 2012). RSPOs amplify WNT signaling by inducing the endocytosis of ZNRF3/RNF43, which leads to an increase in the number of WNT receptors at the plasma membrane and consequently an increase in sensitivity to WNT ligands. RSPOs were thought to increase WNT receptor levels only in specific cell types that express LGRs, such as intestinal stem cells, thus allowing the strength of the response to WNT to be tightly controlled in time and space (de Lau et al., 2014).\n\nWe and others recently made the unexpected discovery that this paradigm is incomplete: RSPO2 and RSPO3 can potentiate WNT signaling in the absence of LGRs 4, 5 and 6, previously considered obligate high-affinity receptors for RSPOs. Our previous article in eLife demonstrated that RSPO2 and RSPO3 can still potentiate WNT signaling in LGR4/5/6KO human haploid cells (Lebensohn and Rohatgi, 2018). Similarly, RSPO2 and RSPO3 can amplify WNT-mediated signaling in Lgr4/5/6 triple-knockout immortalized fibroblasts (Szenker-Ravi et al., 2018)\u00a0and\u00a0RSPO2 can potentiate WNT signaling in 293T cells lacking LGR4 (Park et al., 2018). This \u2018LGR-independent\u2019 mode of signaling is particularly relevant to RSPO-related birth defects because it appears to be the dominant mode of signaling during development of the limbs, lungs and cardiovascular system (Szenker-Ravi et al., 2018). Mice carrying loss-of-function mutations in LGRs 4, 5 and 6 (Lgr4/5/6-/-) do not show either the limb truncations, lung hypoplasia or craniofacial abnormalities observed in humans and mouse embryos lacking Rspo2 (Aoki et al., 2008; Bell et al., 2008; Szenker-Ravi et al., 2018), or the vascular and associated placental defects observed in mouse embryos lacking Rspo3 (Aoki et al., 2007).\n\nThese results raise a pressing question: are there alternative receptors that transduce RSPO signals in the absence of LGRs? RSPOs contain tandem furin-like domains, FU1 and FU2, that interact with ZNRF3/RNF43 and LGRs, respectively. They also contain a thrombospondin type 1 (TSP) domain and a basic region (BR) (we refer to them together as the TSP/BR domain) that interact with heparin and heparan sulfate proteoglycans (HSPGs) (Ayadi, 2008; Chang et al., 2016; Nam et al., 2006; Ohkawara et al., 2011; Ren et al., 2018). The TSP/BR domain has been considered dispensable to potentiate WNT/\u03b2-catenin signaling (Glinka et al., 2011; Kazanskaya et al., 2004; Kim et al., 2008), but we previously demonstrated that it is essential in the absence of LGRs (Lebensohn and Rohatgi, 2018). We also proposed that glypicans (GPCs), syndecans (SDCs) or other HSPGs may mediate LGR-independent signaling through interactions between their heparan sulfate (HS) chains and the TSP/BR domain of certain RSPOs.\n\nIn this study, we introduced structure-based mutations into the TSP/BR domain of RSPO3, engineered RSPO3 ligands fused to a non-native, HSPG-binding single-chain variable fragment (scFv) and disrupted different classes of HSPGs to demonstrate that the interaction between RSPO3 and the HS chains of HSPGs is necessary and sufficient to transduce signals in cells lacking LGRs. We find that the interaction with HSPGs also contributes substantially to LGR-dependent signaling in cultured cells and in small intestinal organoids, showing that HSPGs play an important role in promoting RSPO3 signaling in most contexts.\n\n## Results\n\n### The interaction between the TSP/BR domain of RSPO3 and HSPGs is necessary to potentiate WNT signaling\n\nWe previously reported that disruption of EXTL3, the gene encoding a glycosyltransferase required for the biosynthesis of all HS chains, reduces LGR-independent RSPO3 signaling by\u00a0~80% (Lebensohn and Rohatgi, 2018). However, depleting either all SDCs (1-4) or PIGL, an enzyme required for the biogenesis of all GPCs, did\u00a0not reduce LGR-independent signaling by RSPO3. These observations suggested functional redundancy between GPCs, SDCs and perhaps other HSPGs (Sarrazin et al., 2011) in mediating LGR-independent signaling, making loss-of-function genetic experiments aimed at characterizing this signaling mechanism challenging. Our previous experiments also left open the possibility that reducing the levels of all HSPGs by depleting EXTL3 may change the cell-surface abundance of a different co-receptor for RSPOs that mediates LGR-independent signaling.\u00a0Therefore, we investigated the mechanism of LGR-independent signaling further by modifying the RSPO ligands themselves.\n\nWe previously showed that deleting the complete TSP/BR domain of RSPO3 eliminated its ability to potentiate WNT signaling in LGR4/5/6KO cells (Lebensohn and Rohatgi, 2018). Deleting the entire TSP/BR domain is a drastic alteration that prevents binding to heparin (Nam et al., 2006), but could also disrupt interactions with other potential binding partners. To design more precise mutations that selectively disrupt the putative HS-binding surface of RSPO3, we created a structural model of the RSPO3 TSP/BR domain based on its homology to 26 of the most similar proteins in the Protein Data Bank (Figure 1A and Figure 1\u2014video 1). Analogous to other TSP domains, the model shows an elongated three-stranded fold stabilized by disulfide bonds at both ends (Ayadi, 2008; Tan et al., 2002). Two positively charged grooves (Site-1 and Site-2 in Figure 1A and Figure 1\u2014video 1) on one face of the model suggested potential sites of interaction with negatively charged HS polymers.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54469/elife-54469-fig1-v1.jpg)\n\n**Figure 1.:** (A) Homology model of the isolated TSP/BR domain of human RSPO3 (residues valine 146 - isoleucine 232; UniprotKB Q9BXY4). Left panel: cartoon representation of the protein backbone, with side-chains shown for lysine (K) and arginine (R) residues. N- and C-termini are circled and disulfide bonds are labelled with roman numerals. Two positively charged HS-binding grooves, revealed by the electrostatic potential map (middle panel), are labeled Site-1 and Site-2. K and R residues lining Site-1 and Site-2 are colored purple and orange, respectively, and residues mutated to glutamic acid (E) in the RSPO3 TSP/BR (K/R\u2192E) mutant are labeled. Middle panel: the electrostatic potential map calculated with the Adaptive Poisson-Boltzmann Solver (Jurrus et al., 2018) is displayed from \u221210 kT/e to +10 kT/e (blue: positively charged; red: negatively charged). Two virtually docked 8-mer heparin chains (estimated free energies are \u221213.9 and \u221214.8 kcal/mol for Site-1 and Site-2, respectively) are depicted in stick representation (red: oxygen, blue: nitrogen, gold: sulphur, green: carbon of heparin-1, yellow: carbon of heparin-2). Right panel: electrostatic potential map of the RSPO3 TSP/BR (K/R\u2192E) mutant. The orientation of the middle and right panels is 90\u00b0 rotated clockwise around the y-axis relative to the left panel. (B) Schematic representation of WT and mutant RSPO3 variants showing the domains and mutations present in these proteins. The N-terminal HA and the C-terminal Fc and 1D4 tags present in these constructs are not shown. Amino acid numbers for human RSPO3 (UniProtKB Q9BXY4) are indicated below. Green and red arrows show K\u2192E and R\u2192E mutations, respectively, introduced into the TSP/BR domain of the RSPO3 TSP/BR (K/R\u2192E) mutant. Polypeptide lengths are drawn to scale. See Supplementary file 1 for the nucleotide sequences of these constructs. (C) Coomassie-stained polyacrylamide gels showing equal volumes of the three purified RSPO3 proteins used in (D) and (E). Molecular weight standards in kilodaltons (kDa) are indicated to the right. (D) and (E) Dose-response curves for the indicated purified RSPO3 variants in WT HAP1-7TGP (D) and LGR4/5/6KO (E) cells, in the presence of 1.43% WNT3A CM. Each circle represents the median WNT reporter fluorescence from 2,500 cells. Dose-response curves were fitted to the data using non-linear regression as described in Materials and methods. Where possible, half-maximal effective concentrations (EC50,\u00a0all in nM) were derived from curve fits and are as follows. RSPO3 (WT): 0.048\u00a0\u00b1\u00a00.005 in (D) and 0.092\u00a0\u00b1\u00a00.007 in (E). RSPO3 \u0394TSP/BR (K/R\u2192E): 0.63\u00a0\u00b1\u00a00.02 in (D). RSPO3 \u0394TSP/BR: 3.93\u00a0\u00b1\u00a01.0 in (D).\n\nBased on this model, we mutated six (out of sixteen) lysine (K) and four (out of nine) arginine (R) residues in these grooves to charge-reversing glutamic acid (E) residues, thereby altering the electrostatic surface of the TSP/BR domain so that it should not be able to interact properly with HS chains. We refer to this mutant protein as RSPO3 TSP/BR (K/R\u2192E) (Figure 1A and B, Figure 1\u2014video 1, and Supplementary file 1). We produced a tagged version of RSPO3 TSP/BR (K/R\u2192E) and purified it under physiological conditions using a one-step affinity purification strategy described in our previous eLife paper (see Figure 1\u2014figure supplement 1A from Lebensohn and Rohatgi, 2018). We have demonstrated that tagged RSPO proteins produced and purified in this manner preserve the signaling properties of their untagged counterparts (see Figure 1\u2014figure supplement 1C and D from\u00a0Lebensohn and Rohatgi, 2018). A coomassie blue-stained gel of purified wild type (WT) RSPO3, RSPO3 TSP/BR (K/R\u2192E) and RSPO3 \u0394TSP/BR, a control construct lacking the TSP/BR domain entirely (Figure 1B), is shown in Figure 1C.\n\nWe tested the capacity of these recombinant RSPO3 proteins to potentiate signaling induced by a low dose of WNT3A conditioned medium (CM) in WT HAP1-7TGP or in LGR4/5/6KO cells. HAP1-7TGP is a human haploid cell line harboring a fluorescent transcriptional reporter for WNT/\u03b2-catenin signaling that we have previously established as a valid and genetically tractable system to study both WNT- and RSPO-dependent signaling (Lebensohn et al., 2016). LGR4/5/6KO cells are a clonal derivative of HAP1-7TGP in which LGRs 4, 5 and 6 were disrupted by CRISPR/Cas9-mediated genome editing (Lebensohn and Rohatgi, 2018). In LGR4/5/6KO cells, the signaling response to low levels of WNT3A can be potentiated robustly by RSPO2 and RSPO3, but not by RSPO1 or RSPO4 (see Figure 1B and C from Lebensohn and Rohatgi, 2018), making them a convenient system to study LGR-independent RSPO signaling.\n\nAs we had observed previously (see Figure 2F and G from Lebensohn and Rohatgi, 2018), deleting the TSP/BR domain of RSPO3 reduced its potency by\u00a082-fold in WT HAP1-7TGP cells (Figure 1D), and completely abolished signaling in LGR4/5/6KO cells (Figure 1E). Similarly, the K/R\u2192E mutations we introduced into the TSP/BR domain of RSPO3 reduced its potency by\u00a013-fold in WT HAP1-7TGP cells (Figure 1D) and almost completely abolished its ability to potentiate WNT signaling in LGR4/5/6KO cells (Figure 1E). Our data supports the model that interactions between basic K and R residues in the TSP/BR domain of RSPO3 and the HS chains of HSPGs contribute substantially to potentiating WNT signaling in the presence of LGRs. In the absence of LGRs, the RSPO3-HSPG interaction becomes essential to potentiate WNT signaling.\n\n### The TSP/BR domain of RSPO3 can be replaced by a non-native HS-binding domain without compromising activity\n\nWhile the positively charged grooves we mutated in the TSP/BR domain (Figure 1A and Figure 1\u2014video 1) are known to interact with HS chains in other TSP\u00a0domain-containing proteins (Sarrazin et al., 2011; Tan et al., 2002), it remained possible that the K/R\u2192E mutations disrupted the interaction of RSPO3 with a different, unidentified receptor. To resolve this issue, we sought to provide the HSPG-binding functionality of the TSP/BR domain through an entirely different protein. We engineered a synthetic RSPO3 protein in which we replaced the entire TSP/BR domain with HS20, an scFv antibody selected by phage display to bind to the HS chains of GPC3 (Gao et al., 2016; Gao et al., 2014; Geoghegan et al., 2017; Figure 2A and Supplementary file 1). We refer to this protein as RSPO3 \u0394TSP/BR HS20. Due to the presence of the HS20 scFv in the RSPO3 \u0394TSP/BR HS20 fusion protein, we excluded the Fc tag that we had used in other RSPO3 constructs to promote their solubility. We retained an N-terminal HA tag and a small C-terminal 1D4 tag, the latter of which was used for affinity purification of the fusion protein (Figure 2A and B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54469/elife-54469-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cartoons depicting synthetic proteins in which the FU1 and FU2 domains of RSPO3 were fused to HS20, an scFv that binds to HS chains. In two control proteins designed to abolish HS binding, the CDR3 loop of HS20 was replaced with a glycine-serine (GS) or a poly-alanine (A) linker. In two other proteins, we introduced mutations that diminish binding of the FU1 domain to ZNRF3/RNF43 (R67A/Q72A) or of the FU2 domain to LGRs (F106E/F110E). See Supplementary file 1 for the nucleotide sequences of these constructs. (B) Coomassie-stained polyacrylamide gels showing equal volumes of the five purified RSPO3 proteins used in (C\u2013H). Molecular weight standards in kDa are indicated to the right of each gel. (C\u2013H) Dose-response curves for the indicated purified RSPO3 variants in WT HAP1-7TGP (C, E and G) and LGR4/5/6KO (D, F and H) cells, in the presence of 1.43% WNT3A CM. Each circle represents the median WNT reporter fluorescence from 2,500 cells. Dose-response curves were fitted to the data using non-linear regression as described in Materials and methods. Where possible, EC50 values (all in nM) were derived from curve fits\u00a0and are as follows. RSPO3 (WT): 0.046\u00a0\u00b1\u00a00.004 in (C) and 0.11\u00a0\u00b1\u00a00.015 in (D). RSPO3 \u0394TSP/BR: 9.8\u00a0\u00b1\u00a00.92 in (G). RSPO3 \u0394TSP/BR HS20: 0.032\u00a0\u00b1\u00a00.002 in (C), 0.11\u00a0\u00b1\u00a00.013 in (D), 0.035\u00a0\u00b1\u00a00.003 in (E), 0.18\u00a0\u00b1\u00a00.03 in (F), 0.20\u00a0\u00b1\u00a00.017 in (G) and 1.1\u00a0\u00b1\u00a00.12 in (H). RSPO3 \u0394TSP/BR HS20 (R67A/Q72A): 2.0\u00a0\u00b1\u00a00.26 in (G). RSPO3 \u0394TSP/BR HS20 (F106E/F110E): 0.68\u00a0\u00b1\u00a00.014 in (G) and 0.49\u00a0\u00b1\u00a00.07 in (H).\n\nReplacing the TSP/BR domain with HS20 in RSPO3 \u0394TSP/BR HS20 did\u00a0not\u00a0disrupt the ability of RSPO3 to signal both in the presence and absence of LGRs (Figure 2C and D). Importantly, mutations in the antigen-binding third complementarity-determining region (CDR3) of HS20 (RSPO3 \u0394TSP/BR HS20 (GS) and RSPO3 \u0394TSP/BR HS20 (A) in Figure 2A and B) entirely eliminated the WNT-potentiating activity of RSPO3 \u0394TSP/BR HS20, both in the presence and absence of LGRs (Figure 2E and F). The fact that HS20, a structurally unrelated protein specifically selected for HS-binding activity (Gao et al., 2014), can functionally substitute for the TSP/BR domain of RSPO3 provides strong support for our model that interactions with HSPGs are required to potentiate WNT signaling in cells lacking LGRs, and also contribute significantly in cells containing LGRs.\n\nWhat are the relative contributions of ZNRF3/RNF43, LGRs and HSPGs to signaling by RSPO3 \u0394TSP/BR HS20? In order to measure the contribution of FU1 domain interactions with ZNRF3/RNF43 and FU2 domain interactions with LGRs, we individually mutated the FU1 and FU2 domains of RSPO3 \u0394TSP/BR HS20. Point mutations (R67A/Q72A) in the FU1 domain of RSPO3 \u0394TSP/BR HS20 (RSPO3 \u0394TSP/BR HS20 (R67A/Q72A) in Figure 2A and B) known to weaken the interaction with ZNRF3/RNF43 (Xie et al., 2013), reduced signaling potency by 10-fold in WT HAP1-7TGP cells (Figure 2G) and abolished signaling in LGR4/5/6KO cells (Figure 2H). Point mutations (F106E/F110E) in the FU2 domain of RSPO3 \u0394TSP/BR HS20 (RSPO3 \u0394TSP/BR HS20 (F106E/F110E) in Figure 2A and B) that weaken interactions with LGRs (Xie et al., 2013) reduced signaling efficacy by 80% and potency by 3-fold in WT HAP1-7TGP cells (Figure 2G). As expected, disrupting the LGR-binding FU2 domain in RSPO3 \u0394TSP/BR HS20 (F106E/F110E) did not reduce signaling in LGR4/5/6KO cells (Figure 2H).\n\nWe conclude that interactions with ZNRF3/RNF43, LGRs and HSPGs all contribute to the potentiation of WNT signaling by RSPO3 \u0394TSP/BR HS20 in the presence of LGRs. Interactions with ZNRF3/RNF43 and HSPGs are required for signaling in the absence of LGRs. The simplest model to explain these results is that RSPO3 can bind simultaneously to LGR and HSPG co-receptors, which together present the ligand to ZNRF3/RNF43, the key effectors that mediate endocytosis of the complex. Without LGRs, RSPO3 is presented by HSPGs alone, explaining the significantly lower potency of both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 in LGR4/5/6KO compared to WT HAP1-7TGP cells (Figures 1D, E, 2C and D). Binding assays and structural studies with purified proteins will be required to test for the formation of a ternary RSPO3-LGR-HSPG complex.\n\n### Signaling by RSPO3 causes internalization and degradation of RNF43 in the presence or absence of LGRs\n\nWe tested whether the mechanism whereby RSPO3 \u0394TSP/BR HS20 potentiates WNT responses is equivalent to that of WT RSPO3. LGR-dependent RSPO signaling triggers internalization and lysosomal degradation of the E3 ubiquitin ligases ZNRF3 and RNF43, promoting the stabilization of WNT receptors (Hao et al., 2012; Koo et al., 2012). Whether LGR-independent signaling by RSPO3 proceeds through a similar mechanism is not known. We used a surface biotinylation assay (Koo et al., 2012) to measure RSPO3-mediated internalization and degradation of RNF43-Flag in WT HAP1-7TGP and in LGR4/5/6KO cells. Treatment of either WT HAP1-7TGP or LGR4/5/6KO cells with WT RSPO3 led to the depletion of RNF43-Flag from the cell surface and a reduction in its total cellular level (Figure 3A and B), suggesting similar signaling mechanisms for LGR-dependent and LGR-independent potentiation of WNT signaling. These results are consistent with our previous mutational analysis demonstrating that the ZNRF3/RNF43-interacting FU1 domain is essential for RSPO3 signaling in cells lacking LGRs (Lebensohn and Rohatgi, 2018).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54469/elife-54469-fig3-v1.jpg)\n\n**Figure 3.:** Cell-surface RNF43-Flag (captured by cell-surface biotinylation; see Materials and methods), total RNF43-Flag and total actin were visualized by immunoblotting after treatment of WT HAP1-7TGP (A) or LGR4/5/6KO (B) cells with the indicated RSPO3 variants.\n\nHaving established the mechanism of LGR-independent signaling by RSPO3, we tested whether RSPO3 \u0394TSP/BR HS20 potentiates WNT responses through an equivalent mechanism. Deletion of the TSP/BR domain of RSPO3 (RSPO3 \u0394TSP/BR in Figure 3A and B) prevented the internalization and degradation of RNF43-Flag in both WT HAP1-7TGP and LGR4/5/6KO cells, consistent with the reduced capacity of RSPO3 \u0394TSP/BR to promote LGR-dependent (Figure 1D) and LGR-independent (Figure 1E) signaling. In contrast, as with WT RSPO3, addition of RSPO3 \u0394TSP/BR HS20 to either WT HAP1-7TGP (Figure 3A) or LGR4/5/6KO (Figure 3B) cells resulted in the depletion of RNF43-Flag from the cell surface and a reduction in its total cellular level. The effects of RSPO3 \u0394TSP/BR HS20 were dependent on the interaction between HS20 and HS chains, since the RSPO3 \u0394TSP/BR HS20 (GS) mutant, which carries mutations in the HS-binding CDR3 loop of HS20, failed to promote internalization and degradation of RNF43-Flag (Figure 3A and B).\n\nIn summary, replacing the HS-binding TSP/BR domain of RSPO3 with HS20, an unrelated protein that binds HS chains, can rescue signaling in the absence of LGRs and substantially enhance signaling in their presence by promoting the internalization and degradation of RNF43. We propose that HSPGs represent the third major class of RSPO co-receptors, in addition to LGRs and ZNRF3/RNF43.\n\n### HSPG specificity of RSPO3 signaling\n\nAre specific HSPGs required for RSPO signaling? Cell-surface HSPGs comprise six glypicans (GPC1-6), which are anchored to the plasma\u00a0membrane by a glycophosphatidylinositol (GPI) linkage, and four syndecans (SDC1-4), which are single pass transmembrane proteins (Sarrazin et al., 2011). In our previous eLife paper (Lebensohn and Rohatgi, 2018), we presented evidence that RSPO3 can use the HS chains on multiple HSPGs to potentiate WNT signaling. However, HS20 is an scFv selected to bind to GPC3 (Gao et al., 2014), raising the possibility that the synthetic RSPO3 \u0394TSP/BR HS20 ligand may have a narrower HSPG selectivity. In a binding assay with purified proteins, HS20 bound equally well to GPC3 and GPC4 (Figure 4A), the two GPCs expressed most highly in HAP1 cells (see Table 1 in Lebensohn and Rohatgi, 2018: average\u00a0RPKM values for GPC3 and GPC4 were 157 and 220, respectively). HS20 failed to bind to mutant GPC3 and GPC4 proteins that cannot be modified by HS chains (GPC3\u0394HS and GPC4\u0394HS in Figure 4A). These results support a prior conclusion that HS20 recognizes the HS side-chain structure shared by multiple HSPGs, rather than binding to the protein core of a specific GPC (Gao et al., 2014).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/54469/elife-54469-fig4-v1.jpg)\n\n**Figure 4.:** (A) Binding of HS20 to GPC3 or GPC4. An ELISA plate was coated with GPC3, GPC4, or mutant versions lacking HS chains (GPC3\u0394HS or GPC4\u0394HS). HS20 scFv was added at increasing concentrations (x-axis), followed by a goat anti-human IgG horseradish peroxidase conjugate. Bound HS20 was quantified with 3,3\u2032,5,5\u2032-tetramethylbenzidine detection reagent by measuring absorbance at 450 nm (y-axis). An irrelevant Fc-fusion protein (CD276-hFc, labeled \u2018Control\u2019) was used as an antigen control. (B\u2013C) Fold-change in the EC50 of WT RSPO3 (B) or RSPO3 \u0394TSP/BR HS20 (C) in LGR4/5/6KO cells and clonal derivatives in which different HSPGs were depleted through the indicated gene disruptions (see Results and Materials and methods for details). Since deletion of some GPCs in HAP1 cells leads to impaired WNT reception (Lebensohn et al., 2016; Lebensohn and Rohatgi, 2018), we first determined a concentration of WNT3A CM that yielded similar levels of WNT reporter activity in all the cell lines and then titrated RSPO3 variants to determine their EC50\u00a0values. Error bars denote the standard error of the curve fits used to calculate the EC50. The statistical significance of differences between the measured EC50\u00a0values in LGR4/5/6KO cells and clonal derivatives thereof was determined by a two-tailed, unpaired t-test, and is indicated as **** (p<0.0001), *** (p<0.001), ** (p<0.01), * (p<0.05) or ns (non-significant).\n\nTo test the HSPG\u00a0specificity of RSPO3 \u0394TSP/BR HS20 more thoroughly in cells, we used CRISPR/Cas9 methods to generate a series of clonal cell lines (see Materials and methods and Supplementary files 2 and 3) with increasingly severe deficits in their HSPG composition: (1) GPC3KO, (2) GPC4KO, (3) PIGLKO (lacking an enzyme required for GPI anchor biosynthesis and hence for the cell-surface expression of all GPCs), (4) SDC1/2/3/4KO (lacking all four SDCs) and (5) EXTL3KO (lacking a glycosyltransferase required for the synthesis of HS chains attached to all HSPGs, including all GPCs and SDCs, but not for the synthesis of other proteoglycans\u00a0or\u00a0glycosaminoglycans). Each of these mutations was introduced into LGR4/5/6KO cells, in which the HS-binding activity of HS20 is required for signaling (Figure 2D), and hence the effect of eliminating different HSPGs can be measured most accurately. We also tested the specificity of WT RSPO3, containing the native HSPG-binding TSP/BR domain, in these cell lines.\n\nDisrupting GPC3 in LGR4/5/6KO cells had no significant effect on signaling induced by either WT RSPO3 or RSPO3 \u0394TSP/BR HS20 (Figure 4B and C), consistent with the finding that HS20 can bind with equivalent affinity to the HS chains of other GPCs such as GPC4 (Figure 4A). Disrupting GPC4 or PIGL modestly reduced the potency (i.e. increased the EC50) of both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 (Figure 4B and C). Combined disruption of all SDCs \u2013 SDC1, SDC2, SDC3 and SDC4 \u2013 surprisingly increased the potency (ie. lowered\u00a0the EC50) of both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 (Figure 4B and C). This increase in potency may be related to the previous observation that some SDCs inhibit WNT/\u03b2-catenin signaling through regulation of LRP6 and RSPO3 (Astudillo et al., 2014). Finally, disrupting EXTL3, predicted to globally block HS chain biosynthesis, impaired signaling by both proteins to the greatest extent (Figure 4B and C).\n\nOverall, disrupting different HSPGs led to a qualitatively similar effect on signaling by WT RSPO3 and RSPO3 \u0394TSP/BR HS20, with GPC3 disruption having no effect, GPC4 or PIGL disruption causing a modest reduction in signaling potency and EXTL3 disruption causing the greatest reduction in signaling potency. These results are most consistent with the model that RSPO3 \u0394TSP/BR HS20, like WT RSPO3, can signal in a redundant manner via either GPCs, SDCs or another HSPG by engaging their HS chains rather than their protein cores.\n\n### HSPGs potentiate RSPO3-supported small intestinal organoid growth\n\nGiven the substantial contribution made by the interaction between the TSP/BR domain or HS20 and HSPGs to LGR-dependent signaling in haploid cells (Figures 1D and 2C), it was important to test whether this interaction also mediates RSPO signaling in a more physiological context. The growth of mouse small intestinal organoids is strictly dependent on exogenously\u00a0supplied RSPOs (Sato et al., 2009) and on the expression of LGRs (de Lau et al., 2011). In addition, studies in mice have shown that depletion of HS chains in the intestinal epithelium compromise WNT-dependent crypt renewal and regeneration following radiation-induced injury (Yamamoto et al., 2013). We used this organoid culture system in combination with our mutant and engineered RSPO3 ligands to test the importance of RSPO-HSPG interactions for supporting the crypt-villus architecture of the intestine. WT RSPO3 promoted the growth of intestinal organoids with multiple budded structures at concentrations down to 0.5 nM (Figure 5A and B). The buds represent crypt domains, since they are enriched in markers of proliferating cells (Ki67) and of Paneth cells (lysozyme) (Figure 5C). RSPO3 \u0394TSP/BR was markedly less potent in this assay, enabling only a few organoids to grow at a concentration of 10 nM (Figure 5B).\u00a0While the FU1 and FU2 domains present in RSPO3 \u0394TSP/BR were sufficient to promote organoid growth\u00a0at the highest concentration tested, our titration experiment revealed that abolishing HSPG interactions by deleting the TSP/BR domain sharply reduced ligand potency.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/54469/elife-54469-fig5-v1.jpg)\n\n**Figure 5.:** (A) Bright-field microscopy images of B6 mouse small intestinal organoids grown in EN medium supplemented with various purified RSPO3 proteins at the indicated concentrations. Green arrowheads indicate viable, crypt-containing organoids and red asterisks mark dead organoids. The scale bar in the bottom right image represents 100 \u03bcm. (B) The viability of organoids grown at various concentrations of the indicated RSPO3 variants was quantified from images of the type shown in (A). Each circle represents the quantification of an independent experiment. The inset (right) shows a magnified view of organoid viability at a ligand concentration of 0.1 nM. (C) Confocal microscopy images of mouse small intestinal organoids grown in medium supplemented with 1 nM of the indicated purified RSPO3 proteins. DAPI (blue) stains nuclei, phalloidin (red) stains actin filaments at the apical surface of cells, lysozyme (green, top row) stains Paneth cells and Ki67 (green, bottom row) stains proliferating cells. For both images in each row, the scale bars in the right image represent 30 \u03bcm.\n\nTo determine if the positive effect of the TSP/BR domain in promoting organoid growth is due to its interactions with HSPGs, we tested the organoid-supporting properties of RSPO3 \u0394TSP/BR HS20. Not only was RSPO3 \u0394TSP/BR HS20 able to fully support organoid growth, with budding of normal crypt domains, but it was more potent than WT RSPO3, supporting some organoid growth even at concentrations as low as 0.1 nM (Figure 5A and B). Organoids grown in the presence of RSPO3 \u0394TSP/BR HS20 were indistinguishable from those grown in the presence of WT RSPO3, with crypt domains containing proliferating cells and Paneth cells (Figure 5C). The capacity of RSPO3 \u0394TSP/BR HS20 to promote organoid growth required the interaction between HS20 and HS chains, since RSPO3 \u0394TSP/BR HS20 (GS), carrying mutations in the HS-binding CDR3 loop (Figure 2A) failed to promote organoid growth at concentrations below 10 nM, similarly to RSPO3 \u0394TSP/BR (Figure 5A and B).\n\nWe conclude from these experiments that the interaction between the TSP/BR domain, or HS20, and HSPGs contributes substantially to the capacity of RSPO3 to support the growth of mouse intestinal organoids. While additional work will be required to establish which specific HSPGs mediate RSPO reception in the intestine, we note that Gpc3 mRNA\u00a0expression in mouse intestinal organoids is undetectable (Lindeboom et al., 2018), suggesting that, as in HAP1 cells (Figure 4B), RSPOs likely signal through other HSPGs. Multi-omics data shows that GPC4, SDC1 and SDC4 are expressed at detectable levels in mouse intestinal organoids (Lindeboom et al., 2018), making them candidate receptors for RSPO3 in this tissue.\n\n### A haploid genetic screen for RSPO3 receptors in cells lacking LGRs\n\nWhile our results demonstrate that the interaction between RSPO3 and the HS chains of HSPGs is necessary to promote LGR-independent signaling in cells, and can significantly enhance LGR-dependent signaling in cells and intestinal organoids, they do not preclude the existence of another co-receptor capable of mediating these effects. We previously reported the results of a genome-wide, haploid genetic screen for regulators of RSPO1-potentiated, low-level WNT signaling in WT HAP1-7TGP cells (Lebensohn et al., 2016). That screen was focused on LGR-dependent signaling, since RSPO1 (unlike RSPO3) requires LGRs to potentiate WNT signaling\u00a0(Lebensohn and Rohatgi, 2018).\u00a0We attempted to identify any additional co-receptors required for LGR-independent signaling through a similar haploid genetic screen for regulators of RSPO3-potentiated, low-level WNT signaling in cells lacking LGRs 4, 5 and 6 (see Materials and methods). To distinguish genes required\u00a0specifically for LGR-independent signaling from those required for LGR-dependent signaling, we compared the results of our\u00a0new screen to\u00a0those\u00a0of our previous screen for RSPO1-potentiated signaling in WT HAP1-7TGP cells (Lebensohn et al., 2016).\n\nThe RSPO3 screen in LGR4/5/6KO cells revealed a subset of the WNT signaling regulators previously\u00a0identified in the RSPO1 screen in WT HAP1-7TGP cells (Figure 6A\u2013C and Supplementary files 4 and 5), including the WNT co-receptor LRP6, members of the TCF/LEF transcriptional complex such as CTNNB1, CREBBP, BCL9 and DOT1L, the ubiquitin ligase RNF146, which ubiquitinates poly-ADP-ribosylated AXIN1 for proteasomal degradation, and a truncated form of AXIN2 that represses WNT signaling through an unknown mechanism (Lebensohn et al., 2016). LGR4, the top hit of the RSPO1 screen in WT HAP1-7TGP cells, was not a significant hit in the RSPO3 screen in LGR4/5/6KO cells, in which LGR4 had\u00a0been disrupted by CRISPR/Cas9-mediated genome editing (Figure 6A\u2013C and Supplementary files 4 and 5).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/54469/elife-54469-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013B) Circle plots depicting genes enriched for inactivating gene\u00a0trap\u00a0(GT) insertions in the screen for regulators of RSPO1-potentiated WNT signaling in HAP1-7TGP cells (A) and in the screen for regulators of RSPO3-potentiated WNT signaling in LGR4/5/6KO cells (B). The y-axis indicates the significance of inactivating GT insertion enrichment in the sorted vs. the control cells (expressed in units of -log10FDR-corrected p-value) and the x-axis indicates genes (in random order) for which inactivating GT insertions were mapped in the sorted cells (see Materials and methods). Genes with FDR-corrected p-value<0.01 are labeled and colored cyan if they reached this level of significance in both screens, or orange if they reached this level of significance in only one of the two screens. The diameter of each circle is proportional to the number of unique inactivating GT insertions mapped in the sorted cells, which is also indicated next to the gene name for the most significant hits with FDR-corrected p-values<10\u22124. See Supplementary file 4 for ranked lists of hits from both screens. (C) Heat map comparing the two screens. Genes enriched for inactivating GT insertions (FDR-corrected p-value<0.01) in at least one of the two screens (Supplementary file 5) were clustered based on their IGTIOB score in each screen (see Materials and methods).\n\nThe RSPO3 screen in LGR4/5/6KO cells failed to reveal any unique significant hits compared to the RSPO1 screen in WT HAP1-7TGP cells (Figure 6A\u2013C and Supplementary files 4 and 5), suggesting there were no genes selectively required for LGR-independent potentiation of WNT signaling by RSPO3. While several components of the GPI-anchor biosynthetic machinery, including PIGP, PIGS, PIGU, PIGL and DPM3, as well as GPC4 were hits in both screens, we have previously shown that their presence as significant hits in the RSPO1 screen in WT HAP1-7TGP cells was due to the requirement of GPI-anchored GPCs for low-level WNT signaling, independently of RSPOs (Lebensohn et al., 2016). In summary, haploid genetic screens did not reveal an additional co-receptor required for LGR-independent potentiation of WNT signaling by RSPO3.\n\n## Discussion\n\nThe TSP/BR domain of RSPOs is conserved across vertebrates, primitive chordates and hemichordates, suggesting a functional role in signaling by these ligands (de Lau et al., 2012). The TSP/BR domain can bind to HS chains, but its role in amplifying WNT/\u03b2-catenin signaling has remained uncertain. Initial studies showed that this domain was dispensable, since a fragment of RSPOs that contains only the FU1 and FU2 domains can amplify WNT/\u03b2-catenin signaling in vitro (Glinka et al., 2011; Kazanskaya et al., 2004; Kim et al., 2008; Zebisch et al., 2013). Our previous (Lebensohn and Rohatgi, 2018) and current work provides a clear function for the TSP/BR domain of RSPO3 in WNT/\u03b2-catenin signaling in vitro and ex vivo: (1) it is essential for signaling in the absence of LGRs and (2) it enhances signaling potency in the presence of LGRs in both cultured cells and intestinal organoids. In this report we focused on RSPO3, but we previously demonstrated that RSPO2 (but not RSPO1 or RSPO4) can also amplify WNT/\u03b2-catenin signaling in the absence of LGRs. It will be interesting to determine whether the TSP/BR domains of RSPO1 and RSPO4 can also enhance ligand potency, especially in light of the observation that only RSPO2 and RSPO3, but not RSPO1 or RSPO4, bind to SDC1-4 (Ohkawara et al., 2011). Perhaps the divergent biological functions of different RSPOs (de Lau et al., 2012) is dictated by their ability to signal though HSPGs, LGRs or both. Importantly, we do not know how the RSPO concentrations in tissues compare to those typically used in in vitro culture systems, which can be arbitrarily high. Thus, the TSP/BR domain may be critical for certain RSPOs to potentiate WNT signaling in vivo, especially under regimes of limiting ligand concentration in tissues.\n\nUntil this study, it has been challenging to disentangle the role of HSPGs in mediating signaling through the core WNT/\u03b2-catenin pathway from their contribution to the amplification of WNT signaling by RSPOs. HSPGs and HS chains were initially implicated in the distribution, stability and potency of WNT ligands in studies from Drosophila, which lacks an RSPO signaling module for WNT amplification (Baeg et al., 2001; Reichsman et al., 1996). In those studies, HSPGs promoted WNT/\u03b2-catenin signaling by directly binding to WNT ligands. However, depletion of HS chains by the genetic disruption of enzymes required for their synthesis has also been shown to impair WNT/\u03b2-catenin signaling and associated responses in the mouse intestine, the mouse mammary gland and in multiple myeloma cells, all contexts in which RSPOs play prominent roles (Alexander et al., 2000; Ren et al., 2018; Yamamoto et al., 2013). Thus, a reduction in RSPO-potentiated WNT signaling caused by depletion of HSPGs can be due to a defect in WNT reception, RSPO reception or both. In fact, we showed previously (Lebensohn et al., 2016; Lebensohn and Rohatgi, 2018) that impaired WNT reception is the reason why genes encoding proteins required for the biogenesis of GPCs, and GPC4, the most abundant GPC in HAP1 cells, were prominent hits in both of our RSPO screens (Figure 6A\u2013C and Supplementary files 4 and 5). Our present RSPO mutagenesis and engineering experiments, which leave the HSPG repertoire of cells intact and their role in WNT reception undisturbed, cleanly demonstrate that interactions with HSPGs are also required for RSPO reception.\n\nHow do HSPGs function during reception of RSPO ligands? HSPGs have been implicated in the function of many ligands (reviewed in\u00a0Sarrazin et al., 2011), including chemokines and growth factors that activate receptor tyrosine kinases, such as fibroblast growth factor (FGF). In these cases, HSPGs can function as co-receptors by either templating a ligand-receptor interaction (such as the one between FGF and its receptor) or by inducing a conformational change in the ligand that increases its ability to interact with receptors (such as the one induced in anti-thrombin). In both of these cases, exogenously added heparin (untethered to the cell surface, in contrast to the HS chains of HSPGs) would be predicted to promote receptor-ligand interactions. Alternatively, HSPGs can function as endocytic receptors to mediate ligand uptake and degradation in the lysosome (Belting, 2003; Sarrazin et al., 2011; Williams and Fuki, 1997). Our results are more consistent with HSPGs functioning as endocytic receptors in RSPO signaling. First, exogenously added heparin inhibits, rather than promotes, RSPO signaling (Lebensohn and Rohatgi, 2018). Second, the TSP/BR domain can be replaced by a non-native, HS-binding scFv, making steric effects or conformational changes unlikely. Instead, the mere interaction between RSPOs and HSPGs seems to be sufficient for signaling. Our results directly demonstrate that both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 can cause internalization and degradation of RNF43-Flag in cells lacking LGRs (Figure 3B). Since ZNRF3 and RNF43 are E3 ubiquitin ligases that negatively regulate WNT receptors, their clearance from the cell surface induced by RSPO3-HSPG interactions would be sufficient to enhance WNT signaling.\n\nOur work also sheds light on the relative roles of HSPGs and LGRs in mediating signaling by different RSPO family members. Previous studies have proposed that the simultaneous binding of RSPOs to LGRs through the FU2 domain and to ZNRF3/RNF43 through the FU1 domain triggers the ubiquitination, endocytosis and degradation of ZNRF3/RNF43 (Hao et al., 2012; Koo et al., 2012). The affinity of the FU2 domain for LGRs is high (in the nM range) for all RSPOs, while the affinity of the FU1 domain for ZNRF3/RNF43 is much higher for RSPO2 and RSPO3 compared to RSPO1 and RSPO4 (Zebisch et al., 2013). At least for RSPO3, our experiments suggest that the interaction with LGRs is not sufficient to drive the efficient endocytosis of RNF43. HSPG binding, provided by the native TSP/BR domain or by the non-native HS20 scFv, is also required even in the presence of LGRs (Figure 3A). In the case of RSPO3 and also RSPO2, not only are LGRs insufficient to mediate RSPO signaling, but they are in fact dispensable. This is most likely due to the higher affinity of these RSPO ligands for ZNRF3/RNF43, since replacing the ZNRF3/RNF43-bindnig FU1 domain of RSPO1 with that of RSPO3 is sufficient to render RSPO1 capable of signaling without LGRs (Lebensohn and Rohatgi, 2018). However, even when LGRs are present, HSPGs can markedly enhance the potency of RSPO3 (Figure 1D and Figure 5A and B) and potentially other RSPOs. One possibility is that HSPGs trap RSPOs near the cell surface, increasing their local concentration and the extent of their binding to LGRs. This model is supported by the observation that either the genetic or enzymatic depletion of HS chains, or the removal of the TSP/BR domain, reduces binding of RSPOs to the surface of multiple myeloma cells, while the genetic depletion of LGR4 does\u00a0not (Ren et al., 2018). Alternatively, the simultaneous binding of RSPO3 to LGRs and HSPGs may be required to trigger efficient endocytosis.\n\nSeveral questions remain. We did not identify a single HSPG that serves as the RSPO receptor in HAP1 cells, most likely because HSPGs are multiply redundant in these cells (Lebensohn and Rohatgi, 2018). Disruption of GPC3, GPC4, all GPI-anchored GPCs or all SDCs either had no effect or only partially reduced the signaling potency of WT RSPO3 and synthetic RSPO3 \u0394TSP/BR HS20 ligands (Figure 4B and C). Only the disruption of all HS-containing HSPGs reduced signaling by these RSPOs substantially, confirming the functional redundancy of HSPGs. However, specific HSPGs may be important in different tissues, stages of development or pathological conditions. For instance, the interaction of SDC4 and RSPO3 was shown to regulate WNT/planar cell polarity (PCP) signaling during Xenopus gastrulation by a process that requires clathrin-mediated endocytosis (Ohkawara et al., 2011), and SDC1 was shown to promote signaling in multiple myeloma by presenting WNTs and RSPOs (Ren et al., 2018). It will be interesting to test whether specific HSPGs mediate RSPO signaling during development of tissues that do not require the function of LGRs,\u00a0such as the limbs and lungs (Szenker-Ravi et al., 2018). We also cannot discount the possibility that there are other undiscovered co-receptors capable of mediating the potentiation of WNT signaling by RSPOs during development. Our haploid genetic\u00a0screens may have failed to identify an alternative RSPO co-receptor if it was redundant, required for cell\u00a0viability or growth, or simply not expressed in HAP1 cells. These are known caveats of loss-of-function genetic screens.\n\nNotwithstanding these possibilities, our current and previous results (Lebensohn and Rohatgi, 2018) strongly suggest that HSPGs such as GPCs or SDCs are the main co-receptors, in addition to ZNRF3 or RNF43, that transduce RSPO signals in the presence and absence of LGRs.\n\n## Materials and methods\n\nThe following materials and methods relevant to this manuscript have been described previously (Lebensohn et al., 2016; Lebensohn and Rohatgi, 2018): cell lines and growth conditions, preparation of WNT3A CM, construction of the HAP1-7TGP WNT reporter haploid cell line, construction of mutant HAP1-7TGP cell lines by CRISPR/Cas9-mediated genome editing, production and immuno-affinity purification of tagged RSPO proteins by transient transfection of 293T cells, quantification of tagged RSPO proteins, reporter-based forward genetic screens and comparative analysis of significant hits across screens. Where applicable, modifications to those materials and methods are described below.\n\n### Key resources table\n\nProvided as Supplementary file 6.\n\n### Cell\u00a0lines\n\nHuman haploid cells (HAP1) were validated using prodium iodide staining to ensure they have a haploid DNA content. All derivatives of HAP1 cells made using CRISPR/Cas9 methods were verified by DNA sequencing. HEK\u00a0293T cells\u00a0were obtained from ATCC with a certificate of authentication and used at low passage (<10) without any additional STR profiling. Cell lines were confirmed to be mycoplasma-negative when cultures were started in the lab.\n\n### Plasmids\n\npHLsec-HA-hRSPO3-Tev-Fc-Avi-1D4 and pHLsec-HA-hRSPO3\u0394TSP/BR-Tev-Fc-Avi-1D4 (encoding proteins containing an N-terminal HA tag and C-terminal Fc and 1D4 tags) were constructed as described previously (Lebensohn and Rohatgi, 2018).\n\npHLsec-HA-hRSPO3TSP/BR(K/R\u2192E)-Tev-Fc-Avi-1D4 (Figure 1B and Supplementary file 1) was synthesized as a gBlock Gene Fragment (Integrated DNA Technologies (IDT)) flanked at the 5\u2019 and 3\u2019 ends, respectively, by 24 base pair (bp) overhangs overlapping the sequence upstream of the unique AgeI site and downstream of the unique KpnI site in the pHLsec-HA-Tev-Fc-Avi-1D4 vector. The gBlock was subcloned into pHLsec-HA-Tev-Fc-Avi-1D4, previously digested with AgeI and KpnI, using the NEBuilder HiFi DNA Assembly Master Mix (New England Biolabs (NEB) Cat. # E2621L).\n\npHLsec-HA-hRSPO3\u0394TSP/BRHS20-Avi-1D4, pHLsec-HA-hRSPO3\u0394TSP/BRHS20(GS)-Avi-1D4, and pHLsec-HA-hRSPO3\u0394TSP/BRHS20(A)-Avi-1D4, all of which encode proteins containing an N-terminal HA tag and a C-terminal 1D4 tag but lacking the dimerizing Fc tag (Figure 2A and Supplementary file 1), were synthesized as gBlock Gene Fragments (IDT) flanked at the 5\u2019 and 3\u2019 ends, respectively, by 24 bp overhangs overlapping the sequence upstream of the unique AgeI site and downstream of the unique KpnI site in the pHLsec-HA-Avi-1D4 vector described previously (Lebensohn and Rohatgi, 2018). The gBlock was subcloned into pHLsec-HA-Avi-1D4, previously digested with AgeI and KpnI, using the NEBuilder HiFi DNA Assembly Master Mix (NEB Cat. # E2621L).\n\npHLsec-HA-hRSPO3\u0394TSP/BRHS20(R67A/Q72A)-Avi-1D4 and pHLsec-HA-hRSPO3\u0394TSP/BRHS20(F106E/F110E)-Avi-1D4 were made by replacing the FU1 and FU2 domains in pHLsec-HA-hRSPO3\u0394TSP/BRHS20-Avi-1D4 with those from pHLsec-HA-hRSPO3(R67A/Q72A)-Tev-Fc-Avi-1D4 and pHLsec-HA-hRSPO3(F106E/F110E)-Tev-Fc-Avi-1D4 (Lebensohn and Rohatgi, 2018), respectively. A fragment containing the FU1 and FU2 domains was subcloned by double digestion with AgeI and MfeI followed by ligation.\n\nRNF43-2xFlag-2xHA and N-terminal SNAP-tagged mouse FZD5 (Ala27-Val585) were described previously (Koo et al., 2012).\n\npVRC8400-GPC3\u0394HS-hFc (pMH137) and pVRC8400-GPC4\u0394HS-hFc (pMH373) were constructed as described previously (Feng et al., 2013). Briefly, serine to alanine substitutions were introduced at the HS attachment sites of GPC3 (S495A and S509A) or GPC4 (S494A, S498A and S500A) and the mutant constructs were PCR-amplified and inserted into the pVRC8400 expression vector (a gift from Dr. Gary J. Nabel, National Institute of Allergy and Infectious Diseases, Bethesda, MD). Sequences encoding the IL-2 signal peptide and a human Fc tag were added to the N-terminus and C-terminus of the mutant GPCs, respectively.\n\npX458-mCherry was made by replacing the coding sequence of GFP in pSpCas9(BB)\u22122A-GFP (pX458, a gift from Dr. Feng Zhang, Addgene plasmid # 48138) with that of a modified mCherry sequence. The WT mCherry sequence has a BbsI cleavage site that makes it incompatible with the BbsI restriction digestion required for cloning the single guide RNA (sgRNA) oligos into pX458. Therefore, a silent mutation was introduced into the mCherry sequence to eliminate the BbsI cleavage site. Terminal EcoRI sites and a T2A sequence were appended to the modified mCherry sequence to obtain an EcoRI-T2A-mCherry-EcoRI fragment. The EcoRI-T2A-EGFP-EcoRI fragment in px458 was replaced with the EcoRI-T2A-mCherry-EcoRI fragment by EcoRI double digestion and ligation to obtain pX458-mCherry.\n\n### Antibodies\n\nPrimary antibodies: Rho 1D4 purified monoclonal antibody (University of British Columbia, https://uilo.ubc.ca/rho-1d4-antibody), mouse anti-Flag M2 (MilliporeSigma Cat. # F3165), mouse anti-actin monoclonal (Clone C4, MP Biomedicals Cat. # 08691002), polyclonal rabbit anti-human lysozyme (Agilent Dako Cat. # A0099), rabbit anti-Ki67 (Abcam Cat. # ab15580).\n\nSecondary antibodies: chicken anti-rabbit Alexa Fluor 488 (Thermo Fisher Scientific Cat. # A21441), goat anti-mouse Alexa Fluor 680 (Thermo Fisher Scientific Cat. # A21057), goat anti-mouse IRDye800 (Rockland Immunochemicals Cat. # 610-132-121), goat anti-human Ig kappa chain HRP conjugate (MilliporeSigma Cat. # AP502P).\n\nStaining reagents: phalloidin-TRITC (MilliporeSigma Cat. # P1951), DAPI (MilliporeSigma Cat. # D9542).\n\n### RSPO3 modeling\n\nA structural model of human RSPO3 (residues valine 146 - isoleucine 232; UniProtKB Q9BXY4) was built using the HHpred web server (Max Planck Institute Bioinformatics Toolkit) based on homology to the 26 most similar protein structures in the Protein Data Bank (Zimmermann et al., 2018). Polymers consisting of four disaccharide units of heparin (PDB ID 1HPN [Mulloy et al., 1993]) were docked to RSPO3 using AutoDock Vina (Trott and Olson, 2010). Heparin was kept rigid during docking. Positively charged side chains of residues 161, 162, 164, 169, 170, 198, 203\u2013205, 208, 211 (Site-1) or 213, 214, 216, 218\u2013222, 225, 229 (Site-2) were kept flexible during docking. The models depicted in Figure 1A and the animation shown as Figure 1\u2014video 1 were rendered using PyMOL 2.3.2.\n\n### Production of tagged RSPO proteins\n\nTagged RSPO proteins were produced by transient transfection of 293T cells and immuno-affinity purification as described previously (Lebensohn and Rohatgi, 2018), with some modifications. The WT, mutant and truncated RSPO3 proteins have an N-terminal HA tag and C-terminal Fc and 1D4 tags; the engineered RSPO3 \u0394TSP/BR HS20 fusion proteins, and mutant derivatives thereof, have an N-terminal HA tag and a C-terminal 1D4 tag (see Supplementary file 1 for nucleotide sequences).\u00a0~24 hr before transfection, 20 \u00d7 106 293T cells were seeded in a T-225 flask containing 55 ml of growth medium (Dulbecco\u2019s Modified Eagle\u2019s Medium (DMEM)/high glucose without L-glutamine, sodium pyruvate (HyClone, GE Healthcare Life Sciences Cat. # SH30081.FS); 10% fetal bovine serum (FBS, MilliporeSigma Cat. # S11150); 1 mM sodium pyruvate (Gibco, Thermo Fisher Scientific Cat. # 11360070); 1x MEM non-essential amino acids (Gibco, Thermo Fisher Scientific Cat. # 11140050); 2 mM L-glutamine (Gemini Bio Products Cat. # 400\u2013106)). Once they had reached\u00a0~80% confluency, the cells in each flask were transfected with 1 ml of a transfection mix prepared as follows. 30 \u00b5g of DNA constructs encoding tagged WT, mutant or synthetic RSPO proteins were diluted in 910 \u00b5l of serum-free DMEM and 90 \u00b5l of polyethylenimine (PEI, linear, MW\u00a0~25,000, Polysciences, Inc Cat. # 23966) was added from a 1 mg/ml stock (prepared in sterile water, stored frozen and equilibrated to 37\u00b0C before use). The transfection mix was vortexed briefly, incubated for 15\u201320 min at room temperature (RT) and added to the cells without replacing the growth medium.\u00a0~24 hr post-transfection, the cells were washed with 55 ml PBS and the medium was replaced with 55 ml of CD 293 medium (Thermo Fisher Scientific Cat. # 11913019) supplemented with 1x L-glutamine solution and 2 mM valproic acid (MilliporeSigma Cat. # P4543, added from a 0.5 M stock prepared in water and sterilized by filtration through a 0.22 \u00b5m filter) to promote protein expression.\u00a0~96 hr post-transfection, the CM from each flask, containing secreted RSPO protein, was filtered through 0.45 \u00b5m filters (Nalgene aPES membrane, Thermo Fisher Scientific Cat. # 166\u20130045) to remove particulates and was reserved on ice. 300 \u00b5l of a\u00a0~\u00a050% slurry of Rho 1D4 resin (prepared as described in Lebensohn and Rohatgi, 2018) was added to a 50 ml conical tube containing the RSPO CM and the suspension was incubated overnight, rocking at 4\u00b0C. Following binding and during all subsequent washes, the resin was collected by centrifugation for 5 min at 400 x g in a swinging bucket rotor. The beads were washed three times at RT with 25 ml PBS by resuspending them in buffer and mixing by inversion for\u00a0~1 min. The resin was transferred to a 1.5 ml Eppendorf tube and washed three more times with 1 ml of PBS, 10% glycerol. Following the last wash, the buffer was aspirated and the resin was resuspended in 150 \u00b5l of 500 \u00b5M 1D4 peptide ((NH3)-T-E-T-S-Q-V-A-P-A-(COOH)) prepared in PBS, 10% glycerol, to obtain a\u00a0~\u00a050% slurry. Elution was carried out by rotating the tube horizontally overnight at 4\u00b0C. Following centrifugation of the resin, the eluate was recovered and reserved on ice. The resin was resuspended in another 150 \u00b5l of 500 \u00b5M 1D4 peptide in PBS, 10% glycerol, and a second round of elution was carried out for 2 hr at RT. Following centrifugation of the resin, the second eluate was recovered and pooled with the first. The final eluate was centrifuged again to remove residual resin and the supernatant containing tagged RSPO proteins was aliquoted, frozen in liquid nitrogen and stored at \u221280\u00b0C. Tagged RSPO proteins were quantified as described previously (Lebensohn and Rohatgi, 2018).\n\n### Dose-response analysis of RSPO3 effects on WNT reporter fluorescence\n\n20,000 cells were plated per well of a 96-well plate and grown in complete IMDM growth medium (Iscove's Modified Dulbecco's Medium (IMDM) modified with L-glutamine, HEPES (GE Healthcare Life Sciences Cat. # SH30228.01); 2 mM L-glutamine; 40 units/ml penicillin:40 \u00b5g/ml Streptomycin (Gemini Bio-products Cat. # 400\u2013109); 10% FBS).\u00a0~24 hr after plating, the cells were treated with complete IMDM growth medium containing 1.43% WNT3A CM and the indicated concentrations of RSPO proteins. After 24 hr of treatment, cells were trypsinized in 40 \u03bcl of Tryspin-EDTA (0.05%, Thermo Fisher Scientific Cat. # 25300054) and harvested in 160 \u03bcl of complete IMDM growth medium. WNT reporter (EGFP) fluorescence data for 2,500 singlet-gated cells was measured by flow cytometry on a BD Accuri RUO Special Order System (BD Biosciences). The median EGFP fluorescence from each well was depicted as circles in Figure 1D and E and Figure 2C\u2013H. Dose-response curves were fitted using the nonlinear regression (curve fit) analysis tool in GraphPad Prism 8 using the [agonist] vs. response \u2013 variable slope (four parameters) equation. Results presented are representative of experiments repeated at least twice.\n\n### Cell-surface RNF43 biotinylation assay\n\nWT HAP1-7TGP or LGR4/5/6KO cells were transfected with human RNF43-2xFlag-2xHA and SNAP-tagged mouse FZD5 using PEI (Koo et al., 2012). 24 hr after transfection, cells were washed with ice-cold PBS complete (containing Ca2+ and Mg2+) and kept on ice. 800 \u03bcM of EZ-Link Sulfo-NHS-SS-Biotin (Thermo Fisher Scientific Cat. # 21331) in PBS complete was added to each well and biotinylation was allowed to proceed for 30 min on ice. The medium was aspirated, cells were washed once with ice-cold PBS complete and unreacted biotin was quenched with complete IMDM growth medium containing 50 mM glycine for 5 min on ice. Cells were washed with ice-cold PBS complete and lysed for 30 min on ice in lysis buffer (20 mM Tris pH 7.5, 150 mM NaCl, 1% Triton\u00a0X-100, 1 mM EDTA, 1 mM PMSF, 10 \u03bcg/ml Leupeptin, 10 \u03bcg/ml Aprotinin). Cell lysates were centrifuged for 5 min at 14,000 x g at 4\u00b0C. An aliquot of the supernatant (\u2018Total\u2019 in Figure 3A and B) was mixed with SDS sample buffer and the remaining supernatant was incubated with 25 \u03bcl of a 50% slurry of Streptavidin agarose beads (Pierce, Thermo Fisher Scientific Cat. # 20349) for 60 min at 4\u00b0C. The beads were washed with 0.1x PBS complete, and biotinylated proteins (\u2018Surface\u2019 in Figure 3A and B) were eluted in 20 \u03bcl 2x SDS sample buffer, 40 mM DTT for 30 min at 37\u00b0C and analyzed by SDS-PAGE and Western blot. Western blotting was performed using standard procedures. Samples were resolved by SDS-PAGE, transferred to Immobilon-FL PVDF membranes (MiliporeSigma Cat. # IPFL00005), blocked with Odyssey blocking buffer (Li-Cor Cat. # 927\u201340000), incubated with the indicated primary and secondary antibodies, and imaged using the Amersham Typhoon NIR laser scanner (GE Healthcare).\n\n### Production of recombinant GPC mutant proteins without HS chains\n\nThe GPC3 and GPC4 mutant proteins without HS chains (GPC3\u0394HS and GPC4\u0394HS in Figure 4A) were constructed by replacing serine with alanine residues at the HS attachment sites. pVRC8400-GPC3\u0394HS-hFc or pVRC8400-GPC4\u0394HS-hFc were transiently transfected into HEK-293T cells. The cell supernatant was harvested and the Fc-tagged GPC proteins were purified on a Protein A Hi-Trap column (GE Healthcare Cat. # 29048576) according to the manufacturer\u2019s instructions. The quality and quantity of purified proteins were determined by SDS-PAGE and by measuring absorbance at 280 nm on a NanoDrop instrument (Thermo Fisher Scientific), respectively.\n\n### Measurement of HS20 binding to GPCs by enzyme-linked immunosorbent assay (ELISA)\n\nIncreasing concentrations of HS20 (serial 2-fold dilutions starting from 1 \u03bcg/ml) were added into a 96-well ELISA plate coated with 5 \u03bcg/ml of glycosylated GPC3, GPC4 (R and D Systems Cat. # 2119-GP and 9195-GP, respectively), GPC3\u0394HS, GPC4\u0394HS, or an irrelevant human Fc-fusion protein (CD276-hFc, labeled \u2018Control\u2019 in Figure 4A) and incubated for 1 hr at RT. The plate was washed three times with PBST (PBS, 0.1% Tween-20) and incubated with 50 \u03bcl of goat anti-human kappa chain HRP conjugate (1:5,000 dilution) for 1 hr at RT. After washing six times with PBST, 50 \u03bcl/well of 3,3\u2032,5,5\u2032-tetramethylbenzidine detection reagent (Kirkegaard and Perry Laboratories Cat. # 95059\u2013156) was added and incubated for 10 min at RT. Absorbance was read at 450 nm.\n\n### Construction of mutant HAP1-7TGP cell lines by CRISPR/Cas9-mediated genome editing\n\nThe LGR4/5/6KO, LGR4/5/6KO; PIGLKO, LGR4/5/6KO; SDC1/2/3/4KO and LGR4/5/6KO; EXTL3KO cell lines used in this study have been described previously (Lebensohn and Rohatgi, 2018). The LGR4/5/6KO; GPC3KO and LGR4/5/6KO; GPC4KO cell lines were constructed as described previously (Lebensohn et al., 2016). Briefly, oligonucleotides encoding sgRNAs (Supplementary file 2) were selected from a published library (Doench et al., 2016) and cloned into pX458-mCherry according to a published protocol (Cong et al., 2013) (original version of \u2018Target Sequence Cloning Protocol\u2019 from http://www.genome-engineering.org/crispr/wp-content/uploads/2014/05/CRISPR-Reagent-Description-Rev20140509.pdf). Clonal cell lines were established as described previously (Lebensohn et al., 2016) by transient transfection of LGR4/5/6KO cells with pX458-mCherry containing the desired sgRNAs (since we used pX458-mCherry, there was no need to co-transfect with pmCherry), followed by single-cell sorting of mCherry-positive cells. Genotyping was done as described previously (Lebensohn et al., 2016) using the primers indicated in Supplementary file 2, and the sequencing results are summarized in Supplementary file 3.\n\n### Growth of mouse small intestinal organoids\n\nSmall intestinal organoids were established and maintained as described (Sato et al., 2009), starting from isolated crypts collected from the entire length of the small intestine of B6 mice. The basic culture medium (advanced DMEM/F12, penicillin/streptomycin, 10 mM HEPES, 1x GlutaMAX, 1x N-2 supplement, 1x B-27 supplement (all from Gibco, Thermo Fisher Scientific Cat. # 12634010, 400\u2013109, 15630080, 35050061, 17502001 and 17504044, respectively), 1 mM N-acetylcysteine (MilliporeSigma Cat. # 106425)), was supplemented with 50 ng/ml recombinant murine EGF (Peprotech Cat. # 315\u201309), and 1% v/v Noggin CM to obtain EN medium. Purified RSPO recombinant proteins were added to the basic culture medium as indicated. Organoids were cultured in matrigel droplets (Corning CellBIND, Corning Cat. # 3300, 3335, 3292). The medium was refreshed 3 and 6 days after splitting. Images were captured 8 days after splitting using an EVOS M5000 imaging system (Thermo Fisher Scientific).\n\n### Immunofluorescence microscopy of organoids\n\nOrganoids were carefully harvested from matrigel, collected by centrifugation for 5 min at 100 x g at 4\u00b0C and washed with ice-cold medium. Organoids were transferred to a \u03bc-slide 8 well (Ibidi Cat. # 80826) and fixed in paraformaldehyde (4%, diluted in 0.1 M sodium phosphate buffer pH 7.4) for 1 hr at RT. Paraformaldehyde was removed and 20 mM ammonium chloride (in PBS) was added for 10 min. Organoids were permeabilized in PBD 0.2 T buffer (1x PBS, 1% BSA, 1% DMSO, 0.2% TX-100) for 30 min at RT. Organoids were incubated with anti-human lysozyme or anti-Ki67 primary antibodies in PBD 0.2 T for 3 hr at RT, followed by anti-rabbit Alexa Fluor 488 secondary antibody containing 0.2 \u03bcg/ml DAPI and phalloidin-TRITC in PBD 0.2 T for 3 hr at RT. Organoids were mounted in Ibidi mounting medium (Ibidi Cat. # 50001) and images were acquired with a Zeiss LSM700 confocal microscope. Images were processed in ImageJ (National Institutes of Health).\n\n### Reporter-based haploid genetic screens for regulators of RSPO1 signaling in HAP1-7TGP cells and for regulators of RSPO3 signaling in LGR4/5/6KO cells\n\nHAP1-7TGP or LGR4/5/6KO cells were mutagenized with a GT-containing retrovirus as described previously (Lebensohn et al., 2016). Six days following mutagenesis, the HAP1-7TGP or LGR4/5/6KO cell populations were treated with a low dose (1.04%) of WNT3A CM in complete IMDM growth medium, combined with a saturating dose (10 ng/ml) of recombinant human RSPO1 (R and D Systems Cat. # 4645-RS) or RSPO3 (R and D Systems Cat. # 3500-RS), respectively. A total of 1.25 \u00d7 108 singlet-gated cells were sorted by fluorescence-activated cell sorting (FACS), gating for the lowest ~10% WNT reporter (EGFP) fluorescence. A population of singlet-gated HAP1-7TGP or LGR4/5/6KO cells (not gated based on EGFP fluorescence) was also sorted and carried along as a control to set FACS gates during the subsequent sort. Cells were expanded for 6 days to allow recovery and resetting of the WNT reporter, and a portion of the cells was used in a subsequent round of sorting, following the same treatment and FACS gating criteria. For both screens described, cells underwent two consecutive rounds of FACS sorting. 3 \u00d7 107 cells expanded following the final sort for each screen were used to identify GT insertions in the sorted cell populations and an equivalent number of mutagenized but unsorted HAP1-7TGP or LGR4/5/6KO cells were used to identify GT insertions in the respective control cell populations. Preparation of genomic GT insertion libraries for deep sequencing, mapping of sequencing reads and statistical analysis of GT insertion enrichment was conducted as described previously (Lebensohn et al., 2016), except that the libraries for the unsorted (control) and sorted cell populations from the RSPO3 screen in LGR4/5/6KO cells were indexed and sequenced together in an Illumina NextSeq 500 system.\u00a0FASTQ files containing sequencing data for the\u00a0unsorted and sorted cell pupulations from the RSPO3 screen in LGR4/5/6KO cells, as well as for the\u00a0sorted cell population from the RSPO1 screen in HAP1-7TGP cells have been deposited in the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA) with study accession number SRP260445.\u00a0The FASTQ file containing the sequencing data for the\u00a0unsorted cell pupulation from the RSPO1 screen in HAP1-7TGP cells had been deposited previously with study accession number SRP094861 (SRA\u00a0accession number SRX2410629). We generated a ranked list of hits from each screen (Supplementary file 4) and used it to create circle plots depicting the data (Figure 6A and B). Note that the data presented here for the RSPO1 screen in HAP1-7TGP cells is different from that presented in our previous report (Lebensohn et al., 2016) because in order to maintain a comparable degree of phenotypic enrichment between this screen and the RSPO3 screen in LGR4/5/6KO cells, we analyzed a cell population from our previous RSPO1 screen in HAP1-7TGP cells that had been sorted only twice (as opposed to four times) for the lowest ~10% WNT reporter activity.\n\n### Comparative analysis of significant hits between screens\n\nWe used two metrics to compare the results of the RSPO1 screen in HAP1-7TGP cells and the RSPO3 screen in LGR4/5/6KO cells. The FDR-corrected p-value (Figure 6A and B, and Supplementary file 4) tests for the enrichment of inactivating GT insertions in the sorted cell population over total GT insertions in the control cell population (Lebensohn et al., 2016). While this is a good metric by which to compare the significance of hits in a given screen, it depends on many experimental variables affecting the identification of GT insertions in both the sorted and control cell populations, making it an equivocal metric to directly compare hits between screens. We therefore used the Intronic GT Insertion Orientation Bias (IGTIOB) score we developed previously (Lebensohn et al., 2016), which is based on the frequency of intronic sense vs. antisense GT insertions only in the sorted cell population from each screen, to directly compare significant hits between the RSPO1 screen in HAP1-7TGP cells and the RSPO3 screen in LGR4/5/6KO cells. In order to avoid missing any potential hits unique to only one screen, we relaxed the GT enrichment FDR-corrected p-value threshold for inclusion in the comparative analysis from\u00a0<10\u22124 (used in\u00a0our previous studies [Lebensohn et al., 2016]) to\u00a0<0.01. We generated a list of all genes with an FDR-corrected p-value<0.01 in at least one of the two screens (Supplementary file 5) and used the IGTIOB scores of those genes in both screens to build a heat map (Figure 6C) as described previously (Lebensohn et al., 2016).\n\n### Statistical analysis\n\nData analysis and visualization for the dose-response analysis of RSPO3 effects on WNT reporter fluorescence (Figure 1D and E, Figure 2C\u2013H) were performed in GraphPad Prism 8. Dose-response curves were fitted with the non-linear regression curve fit using the [agonist] vs. response \u2013 variable slope (four parameters) equation. All reported EC50 values were obtained from these curve fits. The statistical significance of the differences in EC50 values for various RSPO variants and cell lines (Figure 4B and C) was determined by a two-tailed, unpaired t-test in GraphPad Prism 8. Statistical analysis of screen data was performed as described previously (Lebensohn et al., 2016).\n",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "bb9d9d5f-a3ad-4fff-b751-33a5b9c7ad37",
+      "submission_id": "dc47bc0b-5b53-4965-9390-76f403218f5c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Duojia Pan, UT Southwestern Medical Center and HHMI United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54469.sa1](https://doi.org/10.7554/eLife.54469.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript from Dubey and colleagues presents a significant extension of their interesting observations from an eLife paper published in 2018. In the current work, they use a creative approach to show that R-spondin3 signaling that is independent of LGR4/5/6 requires interactions with Heparan sulfate proteoglycans (HSPGs). Overall, the work is well executed from a technical perspective, innovative approaches are utilized, and the manuscript is well written.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"R-spondins engage heparan sulfate proteoglycans to potentiate WNT signaling\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jonathan Cooper as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Bart Williams (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript from Dubey and colleagues presents information that extends their interesting observations from an eLife paper published in 2018. In this work, they use a creative approach to show that R-spondin3 signaling that is independent of LGR4/5/6 requires interactions with Heparan sulfate proteoglycans (HSPGs). Overall the results are of good quality and the findings are interesting and represent sufficient new progress.\n\nEssential revisions:\n\n1) Some additional information and controls related to HS20 and the rationale for choosing GPC3 as a target for the fusion protein would further enhance the manuscript. What was the rationale for specifically choosing GPC3 as the HSPG that was chosen to target in this work? What is the level of GPC3 expression in the systems (cell lines and organoids) chosen for this work? How does it compare to GPC4 (which the authors note was identified as a hit in both the RSPO1 and RSPO3 haploid genetic screens)?\n\n2) The fusion of the mutant RSPO3 with HS20 is innovative. What is known about its specificity for GPC3 relative to other GPCs? Further evidence for specificity could be provided by knocking down GPC3 levels in the cell line and/or organoid systems and showing that the signaling activity was the RSPO3-\u0394TSP/BR-HS20 fusion protein was significantly reduced or lost. Alternatively, the authors could carry out the haploid genetic screen with the RSPO3-\u0394TSP/BR-HS20 fusion protein to see if GPC3 is now required for activity.\n\n3) The authors speculate on an interesting point that the ability of the different R-spondins to signal is \"dictated by their ability to signal through HSPGs, LGRs, or both.\" Is there evidence that RSPO3 can interact with HSPGs and LGRs simultaneously? Perhaps examining whether the RSPO3-\u0394TSP/BR-HS30 fusion protein can simultaneously interact with LGR4/5/6 and its known target GPC3 could help address this?\n\n4) Given the inherent difficulties of interpreting negative results, the negative results Figure 4 may be minimized and presented as a figure supplement.\n",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "01bc0df5-8eec-474c-86e3-76245cca909b",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C1",
+      "claim": "RSPOs 2 and 3 potentiate WNT/\u03b2-catenin signaling in cells lacking leucine-rich repeat-containing G-protein coupled receptors (LGRs) 4, 5 and 6.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that RSPOs 2 and 3 potentiate WNT/\u03b2-catenin signaling in cells lacking leucine-rich repeat-containing G-protein coupled receptors (LGRs) 4, 5 and 6 (Lebensohn and Rohatgi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Lebensohn and Rohatgi, 2018).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "13871ddb-8b97-45ea-b27a-9939960a53b0",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C2",
+      "claim": "Heparan sulfate proteoglycans (HSPGs) act as alternative co-receptors for RSPO3.",
+      "claim_type": "EXPLICIT",
+      "source": "We now show that heparan sulfate proteoglycans (HSPGs) act as alternative co-receptors for RSPO3 using a combination of ligand mutagenesis and ligand engineering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from ligand mutagenesis and ligand engineering experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "a9b5d829-93bf-41f9-a235-69cc90432888",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C3",
+      "claim": "Mutations in RSPO3 residues predicted to contact HSPGs impair its signaling capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in RSPO3 residues predicted to contact HSPGs impair its signaling capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing reduced signaling potency of RSPO3 TSP/BR (K/R\u2192E) mutant in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "9007c1f9-d74c-4468-a2a8-a97ee0fdfe69",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C4",
+      "claim": "The HSPG-binding domains of RSPO3 can be entirely replaced with an antibody that recognizes heparan sulfate (HS) chains without diminishing WNT-potentiating activity in cultured cells and intestinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the HSPG-binding domains of RSPO3 can be entirely replaced with an antibody that recognizes heparan sulfate (HS) chains attached to multiple HSPGs without diminishing WNT-potentiating activity in cultured cells and intestinal organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing RSPO3 \u0394TSP/BR HS20 maintains signaling activity in Figures 2 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "44d4fc54-7c12-4dba-91fb-e6ba64c05653",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C5",
+      "claim": "A genome-wide screen for mediators of RSPO3 signaling in cells lacking LGRs 4, 5 and 6 failed to reveal other receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "A genome-wide screen for mediators of RSPO3 signaling in cells lacking LGRs 4, 5 and 6 failed to reveal other receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the haploid genetic screen presented in Figure 6 and Supplementary files 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "f4364403-dc22-4cfb-8dd8-9e54e2d5097f",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C6",
+      "claim": "HSPGs are RSPO co-receptors that potentiate WNT signaling in the presence and absence of LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that HSPGs are RSPO co-receptors that potentiate WNT signaling in the presence and absence of LGRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple experimental data throughout the manuscript, including mutagenesis, ligand engineering, and functional assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "8bc12296-e0d9-4044-b731-f45deba05667",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C7",
+      "claim": "Mutations that disrupt the RSPO signaling circuit cause structural birth defects, including limb truncations, lung hypoplasia, craniofacial malformations and cardiovascular defects in humans and mice carrying mutations in RSPO2 and RSPO3.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that disrupt the RSPO signaling circuit cause structural birth defects, exemplified by limb truncations, lung hypoplasia, craniofacial malformations and cardiovascular defects seen in humans and mice carrying mutations in RSPO2 and RSPO3 (Aoki et al., 2008; Aoki et al., 2007; Bell et al., 2008; Nam et al., 2007; Szenker-Ravi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "21c516d1-8c62-42ea-8533-1ea2e8c9db63",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C8",
+      "claim": "RSPOs function as niche-derived signals required for the renewal of epithelial stem cells in multiple tissues, including the intestine, skin and bone.",
+      "claim_type": "EXPLICIT",
+      "source": "In adults, RSPOs function as niche-derived signals required for the renewal of epithelial stem cells in multiple tissues, including the intestine, skin and bone (de Lau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "f9b44ff7-03f3-43bb-a308-14abc8583fcb",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C9",
+      "claim": "RSPOs amplify responses to WNT ligands by simultaneously binding to LGRs 4, 5 or 6 and one of two transmembrane E3 ubiquitin ligases, ZNRF3 or RNF43.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevailing paradigm of RSPO signaling holds that they amplify responses to WNT ligands by simultaneously binding to two types of receptors at the cell surface: one of three leucine-rich repeat-containing G-protein coupled receptors (LGRs), LGRs 4, 5 or 6 (hereafter referred to jointly as LGRs), and one of two transmembrane E3 ubiquitin ligases, ZNRF3 or RNF43 (Carmon et al., 2011; Chen et al., 2013; de Lau et al., 2011; Glinka et al., 2011; Gong et al., 2012; Peng et al., 2013a; Peng et al., 2013b; Ruffner et al., 2012; Wang et al., 2013; Zebisch et al., 2013; Zebisch and Jones, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple prior studies describing the prevailing paradigm.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "a68f93c5-2e5a-4b49-af56-61e23620662c",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C10",
+      "claim": "ZNRF3/RNF43 reduce cell-surface levels of WNT receptors, Frizzled (FZD) and LDL Receptor Related Protein (LRP) 5/6 proteins, by direct ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "ZNRF3/RNF43 reduce cell-surface levels of WNT receptors, Frizzled (FZD) and LDL Receptor Related Protein (LRP) 5/6 proteins, by direct ubiquitination (Hao et al., 2012; Koo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "453b40ff-6e72-4afa-9aed-793df3ef2d47",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C11",
+      "claim": "RSPOs amplify WNT signaling by inducing the endocytosis of ZNRF3/RNF43, which leads to an increase in the number of WNT receptors at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "RSPOs amplify WNT signaling by inducing the endocytosis of ZNRF3/RNF43, which leads to an increase in the number of WNT receptors at the plasma membrane and consequently an increase in sensitivity to WNT ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge in the field and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "a4d498e3-4755-47f8-8955-6c7a4e126ae4",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C12",
+      "claim": "RSPO2 and RSPO3 can potentiate WNT signaling in the absence of LGRs 4, 5 and 6.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others recently made the unexpected discovery that this paradigm is incomplete: RSPO2 and RSPO3 can potentiate WNT signaling in the absence of LGRs 4, 5 and 6, previously considered obligate high-affinity receptors for RSPOs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the authors' previous work and other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "1a9881d2-cb90-4020-a980-3b8349e04e9a",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C13",
+      "claim": "RSPO2 and RSPO3 can still potentiate WNT signaling in LGR4/5/6KO human haploid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous article in eLife demonstrated that RSPO2 and RSPO3 can still potentiate WNT signaling in LGR4/5/6KO human haploid cells (Lebensohn and Rohatgi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "cf46f4bd-94b9-4ea2-beea-c82d00ac1f09",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C14",
+      "claim": "RSPO2 and RSPO3 can amplify WNT-mediated signaling in Lgr4/5/6 triple-knockout immortalized fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, RSPO2 and RSPO3 can amplify WNT-mediated signaling in Lgr4/5/6 triple-knockout immortalized fibroblasts (Szenker-Ravi et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "9c00e5e3-a069-472e-b0f0-068a7bea5655",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C15",
+      "claim": "RSPO2 can potentiate WNT signaling in 293T cells lacking LGR4.",
+      "claim_type": "EXPLICIT",
+      "source": "and RSPO2 can potentiate WNT signaling in 293T cells lacking LGR4 (Park et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "d48b6c05-e167-4f55-8936-e1d6a0c5cb37",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C16",
+      "claim": "LGR-independent mode of signaling is the dominant mode of signaling during development of the limbs, lungs and cardiovascular system.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'LGR-independent' mode of signaling is particularly relevant to RSPO-related birth defects because it appears to be the dominant mode of signaling during development of the limbs, lungs and cardiovascular system (Szenker-Ravi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "655632ab-0d5c-4703-9473-72a07cec0dce",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C17",
+      "claim": "Mice carrying loss-of-function mutations in LGRs 4, 5 and 6 do not show limb truncations, lung hypoplasia or craniofacial abnormalities observed in humans and mouse embryos lacking Rspo2.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice carrying loss-of-function mutations in LGRs 4, 5 and 6 (Lgr4/5/6-/-) do not show either the limb truncations, lung hypoplasia or craniofacial abnormalities observed in humans and mouse embryos lacking Rspo2 (Aoki et al., 2008; Bell et al., 2008; Szenker-Ravi et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "9722be74-9ea3-439d-9979-938e969ac7f2",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C18",
+      "claim": "Mice carrying loss-of-function mutations in LGRs 4, 5 and 6 do not show vascular and associated placental defects observed in mouse embryos lacking Rspo3.",
+      "claim_type": "EXPLICIT",
+      "source": "or the vascular and associated placental defects observed in mouse embryos lacking Rspo3 (Aoki et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "1c13b29d-3f60-4536-816d-44d39789ea85",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C19",
+      "claim": "RSPOs contain tandem furin-like domains, FU1 and FU2, that interact with ZNRF3/RNF43 and LGRs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "RSPOs contain tandem furin-like domains, FU1 and FU2, that interact with ZNRF3/RNF43 and LGRs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "387d3280-fc54-473e-8ac6-bea9f5fd5374",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C20",
+      "claim": "RSPOs contain a thrombospondin type 1 (TSP) domain and a basic region (BR) that interact with heparin and heparan sulfate proteoglycans (HSPGs).",
+      "claim_type": "EXPLICIT",
+      "source": "They also contain a thrombospondin type 1 (TSP) domain and a basic region (BR) (we refer to them together as the TSP/BR domain) that interact with heparin and heparan sulfate proteoglycans (HSPGs) (Ayadi, 2008; Chang et al., 2016; Nam et al., 2006; Ohkawara et al., 2011; Ren et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "f13f17f4-7111-43d8-85b6-2a3b18d02d69",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C21",
+      "claim": "The TSP/BR domain has been considered dispensable to potentiate WNT/\u03b2-catenin signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The TSP/BR domain has been considered dispensable to potentiate WNT/\u03b2-catenin signaling (Glinka et al., 2011; Kazanskaya et al., 2004; Kim et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "b964c29c-3b65-43d8-bedd-80c5f9f92791",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C22",
+      "claim": "The TSP/BR domain is essential for RSPO signaling in the absence of LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "but we previously demonstrated that it is essential in the absence of LGRs (Lebensohn and Rohatgi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "f7b4ab1a-b7c4-4aca-881a-b81c60dbcb89",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C23",
+      "claim": "Disruption of EXTL3 reduces LGR-independent RSPO3 signaling by ~80%.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously reported that disruption of EXTL3, the gene encoding a glycosyltransferase required for the biosynthesis of all HS chains, reduces LGR-independent RSPO3 signaling by ~80% (Lebensohn and Rohatgi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "1d7b1f0a-cd75-4520-bc3c-0e87500083b6",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C24",
+      "claim": "Depleting either all SDCs (1-4) or PIGL did not reduce LGR-independent signaling by RSPO3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, depleting either all SDCs (1-4) or PIGL, an enzyme required for the biogenesis of all GPCs, did not reduce LGR-independent signaling by RSPO3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "cf112ce1-1868-4dcd-a465-5af63253d640",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C25",
+      "claim": "Deleting the complete TSP/BR domain of RSPO3 eliminated its ability to potentiate WNT signaling in LGR4/5/6KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that deleting the complete TSP/BR domain of RSPO3 eliminated its ability to potentiate WNT signaling in LGR4/5/6KO cells (Lebensohn and Rohatgi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "6acd178f-dccf-45e7-8337-527f0b4305f6",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C26",
+      "claim": "The RSPO3 TSP/BR domain model shows an elongated three-stranded fold stabilized by disulfide bonds at both ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous to other TSP domains, the model shows an elongated three-stranded fold stabilized by disulfide bonds at both ends (Ayadi, 2008; Tan et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the structural model shown in Figure 1A and citations to prior structural studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "ffd47d5f-855d-434c-8fe8-61fb7b82eb1f",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C27",
+      "claim": "Two positively charged grooves (Site-1 and Site-2) on one face of the RSPO3 TSP/BR domain model suggest potential sites of interaction with negatively charged HS polymers.",
+      "claim_type": "EXPLICIT",
+      "source": "Two positively charged grooves (Site-1 and Site-2 in Figure 1A and Figure 1\u2014video 1) on one face of the model suggested potential sites of interaction with negatively charged HS polymers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the structural model and electrostatic potential map shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "00c32d55-60db-4a61-ad57-58e2a25c807e",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C28",
+      "claim": "Deleting the TSP/BR domain of RSPO3 reduced its potency by 82-fold in WT HAP1-7TGP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As we had observed previously (see Figure 2F and G from Lebensohn and Rohatgi, 2018), deleting the TSP/BR domain of RSPO3 reduced its potency by 82-fold in WT HAP1-7TGP cells (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "e60fb5e8-bed2-44e6-b678-4bd88b217828",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C29",
+      "claim": "Deleting the TSP/BR domain of RSPO3 completely abolished signaling in LGR4/5/6KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and completely abolished signaling in LGR4/5/6KO cells (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "58f8f25d-5672-4e22-a47f-6f4e7effaafc",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C30",
+      "claim": "The K/R\u2192E mutations in the TSP/BR domain of RSPO3 reduced its potency by 13-fold in WT HAP1-7TGP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the K/R\u2192E mutations we introduced into the TSP/BR domain of RSPO3 reduced its potency by 13-fold in WT HAP1-7TGP cells (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "ff4714b8-9520-422d-9466-3009899b392f",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C31",
+      "claim": "The K/R\u2192E mutations in the TSP/BR domain of RSPO3 almost completely abolished its ability to potentiate WNT signaling in LGR4/5/6KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and almost completely abolished its ability to potentiate WNT signaling in LGR4/5/6KO cells (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "f06b5e95-9477-4fa5-9141-a7320e261f51",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C32",
+      "claim": "Interactions between basic K and R residues in the TSP/BR domain of RSPO3 and the HS chains of HSPGs contribute substantially to potentiating WNT signaling in the presence of LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data supports the model that interactions between basic K and R residues in the TSP/BR domain of RSPO3 and the HS chains of HSPGs contribute substantially to potentiating WNT signaling in the presence of LGRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutagenesis experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "99a60528-1d64-493b-beb4-5d79ba96fedc",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C33",
+      "claim": "In the absence of LGRs, the RSPO3-HSPG interaction becomes essential to potentiate WNT signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of LGRs, the RSPO3-HSPG interaction becomes essential to potentiate WNT signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing loss of signaling in LGR4/5/6KO cells when HSPG binding is disrupted.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "89b1a741-d9c4-4b20-b8aa-eb26e8425e43",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C34",
+      "claim": "HS20 is an scFv antibody selected by phage display to bind to the HS chains of GPC3.",
+      "claim_type": "EXPLICIT",
+      "source": "We engineered a synthetic RSPO3 protein in which we replaced the entire TSP/BR domain with HS20, an scFv antibody selected by phage display to bind to the HS chains of GPC3 (Gao et al., 2016; Gao et al., 2014; Geoghegan et al., 2017; Figure 2A and Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "42aafc41-549d-4729-b078-dfe3546d0e63",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C35",
+      "claim": "Replacing the TSP/BR domain with HS20 in RSPO3 \u0394TSP/BR HS20 did not disrupt the ability of RSPO3 to signal both in the presence and absence of LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Replacing the TSP/BR domain with HS20 in RSPO3 \u0394TSP/BR HS20 did not disrupt the ability of RSPO3 to signal both in the presence and absence of LGRs (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "e5caff56-ec81-4197-806a-adf1df0b9ea1",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C36",
+      "claim": "Mutations in the antigen-binding CDR3 of HS20 entirely eliminated the WNT-potentiating activity of RSPO3 \u0394TSP/BR HS20, both in the presence and absence of LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, mutations in the antigen-binding third complementarity-determining region (CDR3) of HS20 (RSPO3 \u0394TSP/BR HS20 (GS) and RSPO3 \u0394TSP/BR HS20 (A) in Figure 2A and B) entirely eliminated the WNT-potentiating activity of RSPO3 \u0394TSP/BR HS20, both in the presence and absence of LGRs (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "9a386ca5-34ca-43c5-82cb-50f9f55249a1",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C37",
+      "claim": "HS20 can functionally substitute for the TSP/BR domain of RSPO3.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that HS20, a structurally unrelated protein specifically selected for HS-binding activity (Gao et al., 2014), can functionally substitute for the TSP/BR domain of RSPO3 provides strong support for our model that interactions with HSPGs are required to potentiate WNT signaling in cells lacking LGRs, and also contribute significantly in cells containing LGRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing functional equivalence of HS20 and TSP/BR domain.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "c6a56e76-09a2-4d38-b7b0-418b7220e4c5",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C38",
+      "claim": "Point mutations (R67A/Q72A) in the FU1 domain of RSPO3 \u0394TSP/BR HS20 reduced signaling potency by 10-fold in WT HAP1-7TGP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutations (R67A/Q72A) in the FU1 domain of RSPO3 \u0394TSP/BR HS20 (RSPO3 \u0394TSP/BR HS20 (R67A/Q72A) in Figure 2A and B) known to weaken the interaction with ZNRF3/RNF43 (Xie et al., 2013), reduced signaling potency by 10-fold in WT HAP1-7TGP cells (Figure 2G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "5576c104-d660-441a-a757-0c87d8198de6",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C39",
+      "claim": "Point mutations (R67A/Q72A) in the FU1 domain of RSPO3 \u0394TSP/BR HS20 abolished signaling in LGR4/5/6KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and abolished signaling in LGR4/5/6KO cells (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "dff783fe-e595-4bc9-9605-eaa886c27c03",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C40",
+      "claim": "Point mutations (F106E/F110E) in the FU2 domain of RSPO3 \u0394TSP/BR HS20 reduced signaling efficacy by 80% and potency by 3-fold in WT HAP1-7TGP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Point mutations (F106E/F110E) in the FU2 domain of RSPO3 \u0394TSP/BR HS20 (RSPO3 \u0394TSP/BR HS20 (F106E/F110E) in Figure 2A and B) that weaken interactions with LGRs (Xie et al., 2013) reduced signaling efficacy by 80% and potency by 3-fold in WT HAP1-7TGP cells (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2G and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "fac00f3d-cad2-4556-afd8-6a99b7baf36c",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C41",
+      "claim": "Disrupting the LGR-binding FU2 domain in RSPO3 \u0394TSP/BR HS20 (F106E/F110E) did not reduce signaling in LGR4/5/6KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, disrupting the LGR-binding FU2 domain in RSPO3 \u0394TSP/BR HS20 (F106E/F110E) did not reduce signaling in LGR4/5/6KO cells (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "47955cc0-0402-45ea-a90a-5bd655f59760",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C42",
+      "claim": "Interactions with ZNRF3/RNF43, LGRs and HSPGs all contribute to the potentiation of WNT signaling by RSPO3 \u0394TSP/BR HS20 in the presence of LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that interactions with ZNRF3/RNF43, LGRs and HSPGs all contribute to the potentiation of WNT signaling by RSPO3 \u0394TSP/BR HS20 in the presence of LGRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutational analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "448f1efe-7396-40bb-859c-f18f91843010",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C43",
+      "claim": "Interactions with ZNRF3/RNF43 and HSPGs are required for signaling in the absence of LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions with ZNRF3/RNF43 and HSPGs are required for signaling in the absence of LGRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from mutational analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "82cd4915-c4af-4b82-ba4e-b17ed66fd979",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C44",
+      "claim": "RSPO3 can bind simultaneously to LGR and HSPG co-receptors, which together present the ligand to ZNRF3/RNF43.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest model to explain these results is that RSPO3 can bind simultaneously to LGR and HSPG co-receptors, which together present the ligand to ZNRF3/RNF43, the key effectors that mediate endocytosis of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a model proposed based on inference from experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "baab8cbb-e612-4de0-b703-8a6f07a6906b",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C45",
+      "claim": "Without LGRs, RSPO3 is presented by HSPGs alone, explaining the significantly lower potency of both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 in LGR4/5/6KO compared to WT HAP1-7TGP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Without LGRs, RSPO3 is presented by HSPGs alone, explaining the significantly lower potency of both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 in LGR4/5/6KO compared to WT HAP1-7TGP cells (Figures 1D, E, 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is a model proposed based on inference from experimental data shown in Figures 1 and 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "79840fbb-94f8-4291-a875-3bdd81266a47",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C46",
+      "claim": "Treatment of either WT HAP1-7TGP or LGR4/5/6KO cells with WT RSPO3 led to the depletion of RNF43-Flag from the cell surface and a reduction in its total cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of either WT HAP1-7TGP or LGR4/5/6KO cells with WT RSPO3 led to the depletion of RNF43-Flag from the cell surface and a reduction in its total cellular level (Figure 3A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "8b595bee-02e5-4a2e-9619-a23f2f9977bb",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C47",
+      "claim": "LGR-dependent and LGR-independent potentiation of WNT signaling by RSPO3 proceed through similar mechanisms.",
+      "claim_type": "IMPLICIT",
+      "source": "Treatment of either WT HAP1-7TGP or LGR4/5/6KO cells with WT RSPO3 led to the depletion of RNF43-Flag from the cell surface and a reduction in its total cellular level (Figure 3A and B), suggesting similar signaling mechanisms for LGR-dependent and LGR-independent potentiation of WNT signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from experimental data showing similar effects on RNF43 in both cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "7bc09f87-1ff2-4709-a014-61909d5c22ed",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C48",
+      "claim": "The ZNRF3/RNF43-interacting FU1 domain is essential for RSPO3 signaling in cells lacking LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with our previous mutational analysis demonstrating that the ZNRF3/RNF43-interacting FU1 domain is essential for RSPO3 signaling in cells lacking LGRs (Lebensohn and Rohatgi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "6211dfd3-3b4c-4df1-842f-39de2e7559a4",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C49",
+      "claim": "Deletion of the TSP/BR domain of RSPO3 prevented the internalization and degradation of RNF43-Flag in both WT HAP1-7TGP and LGR4/5/6KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the TSP/BR domain of RSPO3 (RSPO3 \u0394TSP/BR in Figure 3A and B) prevented the internalization and degradation of RNF43-Flag in both WT HAP1-7TGP and LGR4/5/6KO cells",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "d1532c30-46e0-49e1-9565-0822d9e168f8",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C50",
+      "claim": "Addition of RSPO3 \u0394TSP/BR HS20 to either WT HAP1-7TGP or LGR4/5/6KO cells resulted in the depletion of RNF43-Flag from the cell surface and a reduction in its total cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, as with WT RSPO3, addition of RSPO3 \u0394TSP/BR HS20 to either WT HAP1-7TGP (Figure 3A) or LGR4/5/6KO (Figure 3B) cells resulted in the depletion of RNF43-Flag from the cell surface and a reduction in its total cellular level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "412f5df4-d90a-45f0-8967-9eb4f4f5ef92",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C51",
+      "claim": "The effects of RSPO3 \u0394TSP/BR HS20 on RNF43 internalization and degradation were dependent on the interaction between HS20 and HS chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of RSPO3 \u0394TSP/BR HS20 were dependent on the interaction between HS20 and HS chains, since the RSPO3 \u0394TSP/BR HS20 (GS) mutant, which carries mutations in the HS-binding CDR3 loop of HS20, failed to promote internalization and degradation of RNF43-Flag (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "f7bf6707-0775-4d0e-bc26-569fa641fa2a",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C52",
+      "claim": "HSPGs represent the third major class of RSPO co-receptors, in addition to LGRs and ZNRF3/RNF43.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that HSPGs represent the third major class of RSPO co-receptors, in addition to LGRs and ZNRF3/RNF43.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "6bab522c-acdd-4f49-bbdd-2e4d20b38e7e",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C53",
+      "claim": "Cell-surface HSPGs comprise six glypicans (GPC1-6), which are anchored to the plasma membrane by a glycophosphatidylinositol (GPI) linkage, and four syndecans (SDC1-4), which are single pass transmembrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-surface HSPGs comprise six glypicans (GPC1-6), which are anchored to the plasma membrane by a glycophosphatidylinositol (GPI) linkage, and four syndecans (SDC1-4), which are single pass transmembrane proteins (Sarrazin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge and citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "c16a6f24-c270-4520-ad53-edabe84f1464",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C54",
+      "claim": "RSPO3 can use the HS chains on multiple HSPGs to potentiate WNT signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous eLife paper (Lebensohn and Rohatgi, 2018), we presented evidence that RSPO3 can use the HS chains on multiple HSPGs to potentiate WNT signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "34c2a573-36fa-4a04-a0ba-13352047695e",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C55",
+      "claim": "HS20 bound equally well to GPC3 and GPC4.",
+      "claim_type": "EXPLICIT",
+      "source": "In a binding assay with purified proteins, HS20 bound equally well to GPC3 and GPC4 (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "6f141264-5cd4-4ebb-aad9-9b3621d1cc91",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C56",
+      "claim": "HS20 failed to bind to mutant GPC3 and GPC4 proteins that cannot be modified by HS chains.",
+      "claim_type": "EXPLICIT",
+      "source": "HS20 failed to bind to mutant GPC3 and GPC4 proteins that cannot be modified by HS chains (GPC3\u0394HS and GPC4\u0394HS in Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "c17e92d7-a5b0-4b05-a892-5bf2349cd065",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C57",
+      "claim": "HS20 recognizes the HS side-chain structure shared by multiple HSPGs, rather than binding to the protein core of a specific GPC.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support a prior conclusion that HS20 recognizes the HS side-chain structure shared by multiple HSPGs, rather than binding to the protein core of a specific GPC (Gao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "71bacf35-9c92-4fdf-b42a-0c0c5e309202",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C58",
+      "claim": "Disrupting GPC3 in LGR4/5/6KO cells had no significant effect on signaling induced by either WT RSPO3 or RSPO3 \u0394TSP/BR HS20.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting GPC3 in LGR4/5/6KO cells had no significant effect on signaling induced by either WT RSPO3 or RSPO3 \u0394TSP/BR HS20 (Figure 4B and C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "bf066ea0-dbca-4d09-944d-46d6667e0500",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C59",
+      "claim": "Disrupting GPC4 or PIGL modestly reduced the potency of both WT RSPO3 and RSPO3 \u0394TSP/BR HS20.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting GPC4 or PIGL modestly reduced the potency (i.e. increased the EC50) of both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "8bb2fe0a-bdf8-429b-b146-7d1c023c9357",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C60",
+      "claim": "Combined disruption of all SDCs increased the potency of both WT RSPO3 and RSPO3 \u0394TSP/BR HS20.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined disruption of all SDCs \u2013 SDC1, SDC2, SDC3 and SDC4 \u2013 surprisingly increased the potency (ie. lowered the EC50) of both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "a0527115-4f4e-43e8-82ef-866c4733dc2a",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C61",
+      "claim": "Some SDCs inhibit WNT/\u03b2-catenin signaling through regulation of LRP6 and RSPO3.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in potency may be related to the previous observation that some SDCs inhibit WNT/\u03b2-catenin signaling through regulation of LRP6 and RSPO3 (Astudillo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "5d5db11e-6e42-494d-ae27-8c8055fca559",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C62",
+      "claim": "Disrupting EXTL3 impaired signaling by both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 to the greatest extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, disrupting EXTL3, predicted to globally block HS chain biosynthesis, impaired signaling by both proteins to the greatest extent (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "b297e9a0-79d8-43d7-9620-2ba1fdc32dbe",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C63",
+      "claim": "RSPO3 \u0394TSP/BR HS20, like WT RSPO3, can signal in a redundant manner via either GPCs, SDCs or another HSPG by engaging their HS chains rather than their protein cores.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are most consistent with the model that RSPO3 \u0394TSP/BR HS20, like WT RSPO3, can signal in a redundant manner via either GPCs, SDCs or another HSPG by engaging their HS chains rather than their protein cores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a model inferred from experimental data on HSPG specificity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "118f14f9-6f35-4c17-b66d-d62efa39e595",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C64",
+      "claim": "The growth of mouse small intestinal organoids is strictly dependent on exogenously supplied RSPOs.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth of mouse small intestinal organoids is strictly dependent on exogenously supplied RSPOs (Sato et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "d2af2e76-5448-454d-9c77-e890d4dc7bda",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C65",
+      "claim": "The growth of mouse small intestinal organoids is dependent on the expression of LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "and on the expression of LGRs (de Lau et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "e327b04e-a9e3-4ac4-8ce4-1ad604cac81c",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C66",
+      "claim": "Depletion of HS chains in the intestinal epithelium compromises WNT-dependent crypt renewal and regeneration following radiation-induced injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, studies in mice have shown that depletion of HS chains in the intestinal epithelium compromise WNT-dependent crypt renewal and regeneration following radiation-induced injury (Yamamoto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "72ec4147-bb13-4bca-a997-bedc13575897",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C67",
+      "claim": "WT RSPO3 promoted the growth of intestinal organoids with multiple budded structures at concentrations down to 0.5 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "WT RSPO3 promoted the growth of intestinal organoids with multiple budded structures at concentrations down to 0.5 nM (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "539233aa-dd9f-4bb0-a130-00fc923081a7",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C68",
+      "claim": "The buds in intestinal organoids represent crypt domains, enriched in markers of proliferating cells (Ki67) and of Paneth cells (lysozyme).",
+      "claim_type": "EXPLICIT",
+      "source": "The buds represent crypt domains, since they are enriched in markers of proliferating cells (Ki67) and of Paneth cells (lysozyme) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "2b3bc530-03a4-4908-b051-b6945b88cc3d",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C69",
+      "claim": "RSPO3 \u0394TSP/BR was markedly less potent than WT RSPO3 in promoting organoid growth, enabling only a few organoids to grow at a concentration of 10 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "RSPO3 \u0394TSP/BR was markedly less potent in this assay, enabling only a few organoids to grow at a concentration of 10 nM (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "e983c22d-f4fe-450a-86c0-8675e0d12ff0",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C70",
+      "claim": "RSPO3 \u0394TSP/BR HS20 was more potent than WT RSPO3 in supporting organoid growth, supporting some organoid growth even at concentrations as low as 0.1 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only was RSPO3 \u0394TSP/BR HS20 able to fully support organoid growth, with budding of normal crypt domains, but it was more potent than WT RSPO3, supporting some organoid growth even at concentrations as low as 0.1 nM (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "3722cf47-eb9e-43a2-a023-fc1cc1ece1de",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C71",
+      "claim": "Organoids grown in the presence of RSPO3 \u0394TSP/BR HS20 were indistinguishable from those grown in the presence of WT RSPO3, with crypt domains containing proliferating cells and Paneth cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Organoids grown in the presence of RSPO3 \u0394TSP/BR HS20 were indistinguishable from those grown in the presence of WT RSPO3, with crypt domains containing proliferating cells and Paneth cells (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "dd971c93-78d2-47a8-b456-82fef2777406",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C72",
+      "claim": "The capacity of RSPO3 \u0394TSP/BR HS20 to promote organoid growth required the interaction between HS20 and HS chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The capacity of RSPO3 \u0394TSP/BR HS20 to promote organoid growth required the interaction between HS20 and HS chains, since RSPO3 \u0394TSP/BR HS20 (GS), carrying mutations in the HS-binding CDR3 loop (Figure 2A) failed to promote organoid growth at concentrations below 10 nM, similarly to RSPO3 \u0394TSP/BR (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "93eacf18-e504-4c9d-bbbf-d099ef3d9097",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C73",
+      "claim": "The interaction between the TSP/BR domain, or HS20, and HSPGs contributes substantially to the capacity of RSPO3 to support the growth of mouse intestinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude from these experiments that the interaction between the TSP/BR domain, or HS20, and HSPGs contributes substantially to the capacity of RSPO3 to support the growth of mouse intestinal organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on experimental data from organoid experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "45e1558c-bef8-4b99-942f-6cea4dc96399",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C74",
+      "claim": "Gpc3 mRNA expression in mouse intestinal organoids is undetectable.",
+      "claim_type": "EXPLICIT",
+      "source": "While additional work will be required to establish which specific HSPGs mediate RSPO reception in the intestine, we note that Gpc3 mRNA expression in mouse intestinal organoids is undetectable (Lindeboom et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "03adb967-2e93-4a1f-8b4b-74bef882050b",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C75",
+      "claim": "GPC4, SDC1 and SDC4 are expressed at detectable levels in mouse intestinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-omics data shows that GPC4, SDC1 and SDC4 are expressed at detectable levels in mouse intestinal organoids (Lindeboom et al., 2018), making them candidate receptors for RSPO3 in this tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "f988fa0e-2851-4250-a515-0e56cac46d3c",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C76",
+      "claim": "The RSPO3 screen in LGR4/5/6KO cells revealed a subset of the WNT signaling regulators previously identified in the RSPO1 screen in WT HAP1-7TGP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The RSPO3 screen in LGR4/5/6KO cells revealed a subset of the WNT signaling regulators previously identified in the RSPO1 screen in WT HAP1-7TGP cells (Figure 6A\u2013C and Supplementary files 4 and 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from genetic screens shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "bb583699-037f-49e5-b464-65bf8845bf76",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C77",
+      "claim": "LGR4 was not a significant hit in the RSPO3 screen in LGR4/5/6KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "LGR4, the top hit of the RSPO1 screen in WT HAP1-7TGP cells, was not a significant hit in the RSPO3 screen in LGR4/5/6KO cells, in which LGR4 had been disrupted by CRISPR/Cas9-mediated genome editing (Figure 6A\u2013C and Supplementary files 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from genetic screens shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "c7708cf6-6d8e-4512-9729-d8813af871c1",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C78",
+      "claim": "The RSPO3 screen in LGR4/5/6KO cells failed to reveal any unique significant hits compared to the RSPO1 screen in WT HAP1-7TGP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The RSPO3 screen in LGR4/5/6KO cells failed to reveal any unique significant hits compared to the RSPO1 screen in WT HAP1-7TGP cells (Figure 6A\u2013C and Supplementary files 4 and 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data from genetic screens shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "aa481118-2083-4479-8bc5-c0f08dfd794d",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C79",
+      "claim": "There were no genes selectively required for LGR-independent potentiation of WNT signaling by RSPO3.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting there were no genes selectively required for LGR-independent potentiation of WNT signaling by RSPO3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the lack of unique hits in the RSPO3 screen.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "d4b48c08-5ae1-42a5-8e72-cc8365d43400",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C80",
+      "claim": "Components of the GPI-anchor biosynthetic machinery and GPC4 were hits in both screens due to the requirement of GPI-anchored GPCs for low-level WNT signaling, independently of RSPOs.",
+      "claim_type": "EXPLICIT",
+      "source": "While several components of the GPI-anchor biosynthetic machinery, including PIGP, PIGS, PIGU, PIGL and DPM3, as well as GPC4 were hits in both screens, we have previously shown that their presence as significant hits in the RSPO1 screen in WT HAP1-7TGP cells was due to the requirement of GPI-anchored GPCs for low-level WNT signaling, independently of RSPOs (Lebensohn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "576c0b05-6cbd-4734-88fc-84f224bbcfdc",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C81",
+      "claim": "Haploid genetic screens did not reveal an additional co-receptor required for LGR-independent potentiation of WNT signaling by RSPO3.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, haploid genetic screens did not reveal an additional co-receptor required for LGR-independent potentiation of WNT signaling by RSPO3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on experimental data from genetic screens.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "b136c9dd-8e2d-4803-986e-b5e4b0ccaae6",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C82",
+      "claim": "The TSP/BR domain of RSPOs is conserved across vertebrates, primitive chordates and hemichordates.",
+      "claim_type": "EXPLICIT",
+      "source": "The TSP/BR domain of RSPOs is conserved across vertebrates, primitive chordates and hemichordates, suggesting a functional role in signaling by these ligands (de Lau et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "55ca67cc-a2a4-4c0f-b400-a4b47cb09b9a",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C83",
+      "claim": "A fragment of RSPOs that contains only the FU1 and FU2 domains can amplify WNT/\u03b2-catenin signaling in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial studies showed that this domain was dispensable, since a fragment of RSPOs that contains only the FU1 and FU2 domains can amplify WNT/\u03b2-catenin signaling in vitro (Glinka et al., 2011; Kazanskaya et al., 2004; Kim et al., 2008; Zebisch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "ec13b299-daae-4fb7-a758-4f6692a358db",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C84",
+      "claim": "The TSP/BR domain of RSPO3 is essential for signaling in the absence of LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous (Lebensohn and Rohatgi, 2018) and current work provides a clear function for the TSP/BR domain of RSPO3 in WNT/\u03b2-catenin signaling in vitro and ex vivo: (1) it is essential for signaling in the absence of LGRs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from current and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "6447f38e-0dec-403f-80e6-6c295aad8e01",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C85",
+      "claim": "The TSP/BR domain of RSPO3 enhances signaling potency in the presence of LGRs in both cultured cells and intestinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "and (2) it enhances signaling potency in the presence of LGRs in both cultured cells and intestinal organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from current work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "c17bb4fc-060a-4886-a888-62ea974c9d17",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C86",
+      "claim": "Only RSPO2 and RSPO3, but not RSPO1 or RSPO4, bind to SDC1-4.",
+      "claim_type": "EXPLICIT",
+      "source": "It will be interesting to determine whether the TSP/BR domains of RSPO1 and RSPO4 can also enhance ligand potency, especially in light of the observation that only RSPO2 and RSPO3, but not RSPO1 or RSPO4, bind to SDC1-4 (Ohkawara et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "9c5c0138-47e4-4476-ae85-87203e165f02",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C87",
+      "claim": "HSPGs and HS chains were initially implicated in the distribution, stability and potency of WNT ligands in studies from Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "HSPGs and HS chains were initially implicated in the distribution, stability and potency of WNT ligands in studies from Drosophila, which lacks an RSPO signaling module for WNT amplification (Baeg et al., 2001; Reichsman et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "457c55b1-af7f-4f46-bce9-464fb4fa1e5f",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C88",
+      "claim": "HSPGs promoted WNT/\u03b2-catenin signaling by directly binding to WNT ligands in Drosophila studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In those studies, HSPGs promoted WNT/\u03b2-catenin signaling by directly binding to WNT ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established knowledge from prior studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "d8a23849-ccea-4092-81d1-5d041b8468ff",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C89",
+      "claim": "Depletion of HS chains by genetic disruption of enzymes required for their synthesis impairs WNT/\u03b2-catenin signaling in the mouse intestine, the mouse mammary gland and in multiple myeloma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, depletion of HS chains by the genetic disruption of enzymes required for their synthesis has also been shown to impair WNT/\u03b2-catenin signaling and associated responses in the mouse intestine, the mouse mammary gland and in multiple myeloma cells, all contexts in which RSPOs play prominent roles (Alexander et al., 2000; Ren et al., 2018; Yamamoto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "23809c7a-a6d8-4d6d-bf1e-2c6c3dfe67a5",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C90",
+      "claim": "Impaired WNT reception is the reason why genes encoding proteins required for the biogenesis of GPCs, and GPC4, were prominent hits in both RSPO screens.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we showed previously (Lebensohn et al., 2016; Lebensohn and Rohatgi, 2018) that impaired WNT reception is the reason why genes encoding proteins required for the biogenesis of GPCs, and GPC4, the most abundant GPC in HAP1 cells, were prominent hits in both of our RSPO screens (Figure 6A\u2013C and Supplementary files 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to prior work and data from Figure 6.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "7bb85da5-3740-4951-aca7-89da114e2fed",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C91",
+      "claim": "RSPO mutagenesis and engineering experiments cleanly demonstrate that interactions with HSPGs are required for RSPO reception.",
+      "claim_type": "EXPLICIT",
+      "source": "Our present RSPO mutagenesis and engineering experiments, which leave the HSPG repertoire of cells intact and their role in WNT reception undisturbed, cleanly demonstrate that interactions with HSPGs are also required for RSPO reception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on experimental data from the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "8f32156b-e8a0-4177-8157-6524e68943f8",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C92",
+      "claim": "Exogenously added heparin inhibits, rather than promotes, RSPO signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "First, exogenously added heparin inhibits, rather than promotes, RSPO signaling (Lebensohn and Rohatgi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "bfe656cc-4216-4fad-b6cd-42ae4688fb5b",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C93",
+      "claim": "The mere interaction between RSPOs and HSPGs seems to be sufficient for signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the mere interaction between RSPOs and HSPGs seems to be sufficient for signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from experimental data showing functional substitution of TSP/BR with HS20.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "6f7213db-bf3f-4427-a46b-d1229878f8ff",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C94",
+      "claim": "Both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 can cause internalization and degradation of RNF43-Flag in cells lacking LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results directly demonstrate that both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 can cause internalization and degradation of RNF43-Flag in cells lacking LGRs (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "7fcd9175-096b-4490-ab33-d588ca6c5abb",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C95",
+      "claim": "Clearance of ZNRF3 and RNF43 from the cell surface induced by RSPO3-HSPG interactions would be sufficient to enhance WNT signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Since ZNRF3 and RNF43 are E3 ubiquitin ligases that negatively regulate WNT receptors, their clearance from the cell surface induced by RSPO3-HSPG interactions would be sufficient to enhance WNT signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the known function of ZNRF3/RNF43 and experimental data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "c1809efb-b151-45c4-a4e3-fc990fa7c2a4",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C96",
+      "claim": "The affinity of the FU2 domain for LGRs is high (in the nM range) for all RSPOs.",
+      "claim_type": "EXPLICIT",
+      "source": "The affinity of the FU2 domain for LGRs is high (in the nM range) for all RSPOs, while the affinity of the FU1 domain for ZNRF3/RNF43 is much higher for RSPO2 and RSPO3 compared to RSPO1 and RSPO4 (Zebisch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "3c7c32dc-4bf9-4a92-9644-8dd04a0c48b9",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C97",
+      "claim": "The interaction with LGRs is not sufficient to drive the efficient endocytosis of RNF43 for RSPO3.",
+      "claim_type": "EXPLICIT",
+      "source": "At least for RSPO3, our experiments suggest that the interaction with LGRs is not sufficient to drive the efficient endocytosis of RNF43.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from experimental data showing requirement for HSPG binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "0204c85d-fa4f-4b07-b0f4-5ac0eb53cfa3",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C98",
+      "claim": "HSPG binding is required for RSPO3 signaling even in the presence of LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "HSPG binding, provided by the native TSP/BR domain or by the non-native HS20 scFv, is also required even in the presence of LGRs (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "0467fc10-ee13-4dad-8401-56ea0ee25060",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C99",
+      "claim": "LGRs are insufficient to mediate RSPO signaling for RSPO3 and RSPO2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of RSPO3 and also RSPO2, not only are LGRs insufficient to mediate RSPO signaling, but they are in fact dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from current and prior work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "fe7b7692-bcf5-4028-b669-efddf2871d12",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C100",
+      "claim": "The higher affinity of RSPO2 and RSPO3 for ZNRF3/RNF43 is the reason LGRs are dispensable for these RSPOs.",
+      "claim_type": "EXPLICIT",
+      "source": "This is most likely due to the higher affinity of these RSPO ligands for ZNRF3/RNF43, since replacing the ZNRF3/RNF43-bindnig FU1 domain of RSPO1 with that of RSPO3 is sufficient to render RSPO1 capable of signaling without LGRs (Lebensohn and Rohatgi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work and inference.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "d776efab-10a1-4cef-918d-c59866dbd0a0",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C101",
+      "claim": "HSPGs can markedly enhance the potency of RSPO3 even when LGRs are present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even when LGRs are present, HSPGs can markedly enhance the potency of RSPO3 (Figure 1D and Figure 5A and B) and potentially other RSPOs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1D and 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "54429c96-8e34-4ca9-8176-7df96480609a",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C102",
+      "claim": "HSPGs may trap RSPOs near the cell surface, increasing their local concentration and the extent of their binding to LGRs.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that HSPGs trap RSPOs near the cell surface, increasing their local concentration and the extent of their binding to LGRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculative model proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "6c2dfc2b-1258-4936-a7df-61988919677a",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C103",
+      "claim": "Either the genetic or enzymatic depletion of HS chains, or the removal of the TSP/BR domain, reduces binding of RSPOs to the surface of multiple myeloma cells, while the genetic depletion of LGR4 does not.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is supported by the observation that either the genetic or enzymatic depletion of HS chains, or the removal of the TSP/BR domain, reduces binding of RSPOs to the surface of multiple myeloma cells, while the genetic depletion of LGR4 does not (Ren et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "e8057c13-c6df-4a16-9c73-3e3aaf123741",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C104",
+      "claim": "The simultaneous binding of RSPO3 to LGRs and HSPGs may be required to trigger efficient endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the simultaneous binding of RSPO3 to LGRs and HSPGs may be required to trigger efficient endocytosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculative model proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "013e3995-bc38-45c4-a230-d65fe1a17d24",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C105",
+      "claim": "HSPGs are multiply redundant in HAP1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not identify a single HSPG that serves as the RSPO receptor in HAP1 cells, most likely because HSPGs are multiply redundant in these cells (Lebensohn and Rohatgi, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from experimental data and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "ab107ed3-9a30-4489-b797-569c369cd604",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C106",
+      "claim": "The interaction of SDC4 and RSPO3 regulates WNT/planar cell polarity (PCP) signaling during Xenopus gastrulation by a process that requires clathrin-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the interaction of SDC4 and RSPO3 was shown to regulate WNT/planar cell polarity (PCP) signaling during Xenopus gastrulation by a process that requires clathrin-mediated endocytosis (Ohkawara et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "7685624a-a6e4-4523-8059-524f27457a40",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "claim_id": "C107",
+      "claim": "SDC1 promotes signaling in multiple myeloma by presenting WNTs and RSPOs.",
+      "claim_type": "EXPLICIT",
+      "source": "and SDC1 was shown to promote signaling in multiple myeloma by presenting WNTs and RSPOs (Ren et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7db858d0-3f39-4d37-af42-33254d96b944",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Structure-based mutations in the TSP/BR domain of RSPO3 that disrupt predicted HSPG-binding sites impair WNT signaling potency. The K/R\u2192E mutations reduced potency 13-fold in WT cells and nearly abolished signaling in LGR4/5/6KO cells, demonstrating that HSPG interactions are essential for LGR-independent signaling and contribute substantially to LGR-dependent signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28-C33 are directly supported by dose-response data in Figure 1D-E showing quantified EC50 values. The structural model (C26-C27) provides rational design basis for the mutations. The mutagenesis approach specifically targets predicted HSPG-binding residues, and the differential effects in WT vs LGR4/5/6KO cells clearly demonstrate the role of HSPG interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "4767af30-e330-481a-a8ab-e920d5e7a13c",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The TSP/BR domain of RSPO3 can be functionally replaced with HS20, a structurally unrelated scFv antibody that binds HS chains. RSPO3 \u0394TSP/BR HS20 maintains full signaling activity in both WT and LGR4/5/6KO cells, and this activity is abolished by mutations in the HS-binding CDR3 loop of HS20.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by dose-response data in Figures 2C-F showing that RSPO3 \u0394TSP/BR HS20 signals equivalently to WT RSPO3, while CDR3 mutants lose activity. Claims C55-C57 demonstrate HS20 binds HS chains on multiple GPCs (Figure 4A). This domain-swapping experiment provides strong evidence that HS-binding per se, rather than specific TSP/BR structure, is required for signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "65d613d7-718e-454f-b5a4-7d38d2348806",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mutational analysis of RSPO3 \u0394TSP/BR HS20 demonstrates that interactions with ZNRF3/RNF43 (via FU1), LGRs (via FU2), and HSPGs all contribute to WNT signaling potentiation in the presence of LGRs, while ZNRF3/RNF43 and HSPG interactions are required in the absence of LGRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 are supported by dose-response data in Figure 2G-H showing quantified effects of FU1 and FU2 mutations. The R67A/Q72A mutations (FU1) abolish signaling in LGR4/5/6KO cells, while F106E/F110E mutations (FU2) reduce but don't eliminate signaling in WT cells and have no effect in LGR4/5/6KO cells, consistent with the proposed model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "9af10d22-deb2-4188-98b6-937595b76faa",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RSPO3 induces internalization and degradation of RNF43 through a mechanism that requires HSPG binding in both the presence and absence of LGRs. Both WT RSPO3 and RSPO3 \u0394TSP/BR HS20 cause RNF43 depletion from the cell surface, while RSPO3 \u0394TSP/BR and HS20 CDR3 mutants do not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C49-C51, C94 are directly supported by cell-surface biotinylation data in Figure 3A-B showing RNF43 internalization. The requirement for HSPG binding is demonstrated by loss of effect with \u0394TSP/BR and HS20(GS) mutants. This establishes that LGR-dependent and LGR-independent signaling proceed through similar mechanisms involving RNF43 clearance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "c8ba19e6-07d9-43de-9658-0b62665842b3",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RSPO3 signals through multiple HSPGs in a redundant manner. Disrupting individual HSPGs (GPC3, GPC4) or all GPCs (PIGL) has modest effects on signaling, while disrupting all HS chain synthesis (EXTL3) severely impairs signaling. This pattern is observed for both WT RSPO3 and RSPO3 \u0394TSP/BR HS20.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60, C62 are supported by EC50 measurements in Figure 4B-C showing quantified effects of different HSPG knockouts. The modest effects of individual HSPG disruptions combined with the severe effect of EXTL3 knockout clearly demonstrate functional redundancy. The similar patterns for WT RSPO3 and RSPO3 \u0394TSP/BR HS20 support the model that both engage HS chains rather than specific protein cores.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "b43707a2-11fb-4e3f-9709-86045e02fbf7",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HSPG interactions substantially contribute to RSPO3 function in mouse intestinal organoids. RSPO3 \u0394TSP/BR HS20 supports organoid growth more potently than WT RSPO3, while RSPO3 \u0394TSP/BR is markedly less potent. The HS-binding activity is required, as HS20 CDR3 mutants lose activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 are supported by organoid viability quantification in Figure 5A-B and immunofluorescence in Figure 5C. The dose-response data show clear differences in potency between constructs, and the organoids display normal crypt architecture with proliferating cells and Paneth cells. This demonstrates physiological relevance of HSPG interactions beyond cultured cell lines.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "5df5091a-8017-439a-901d-c86905e8d648",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A genome-wide haploid genetic screen for mediators of RSPO3 signaling in LGR4/5/6KO cells identified known WNT pathway components but failed to reveal any unique hits or additional co-receptors required for LGR-independent signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79, C81 are supported by the genetic screen data in Figure 6 and Supplementary files 4-5. The screen identified a subset of hits from the RSPO1 screen but no unique significant hits. LGR4 was appropriately absent as a hit since it was knocked out. The lack of unique hits suggests no additional specific co-receptors are required, consistent with the HSPG redundancy model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "54d7900d-1427-4d70-af2e-53cc2ce78a7a",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HSPGs represent a third major class of RSPO co-receptors, in addition to LGRs and ZNRF3/RNF43. The interaction between RSPOs and HSPGs is sufficient for signaling, as demonstrated by ligand mutagenesis and engineering experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the main conclusion (C6, C52) supported by the totality of experimental evidence including mutagenesis (Figure 1), domain replacement (Figure 2), RNF43 internalization (Figure 3), HSPG specificity (Figure 4), organoid function (Figure 5), and genetic screens (Figure 6). The convergent evidence from multiple experimental approaches strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "2875ee5f-31f1-4483-bfdb-b2f0a8313aea",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose models for how HSPGs and LGRs cooperate in RSPO signaling: RSPO3 may bind simultaneously to LGR and HSPG co-receptors to present the ligand to ZNRF3/RNF43, or HSPGs may trap RSPOs near the cell surface to increase local concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44, C45, C102, C104 are mechanistic models inferred from the data but not directly tested. While the data show that both LGRs and HSPGs contribute to signaling (Figure 2), the authors acknowledge these are speculative models. Direct binding studies showing ternary complex formation or surface concentration measurements would be needed to distinguish between these possibilities.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "2d76d574-05f7-4f4a-b0bb-569abbca21d4",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work established that RSPO2 and RSPO3 can potentiate WNT signaling in the absence of LGRs 4, 5, and 6, and that the TSP/BR domain and EXTL3 are required for this LGR-independent signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C15, C22-C25 are all supported by citations to prior work (primarily Lebensohn and Rohatgi, 2018). These establish the foundation for the current study. The authors appropriately cite their previous findings and those of others to establish the context for investigating the mechanism of LGR-independent signaling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "74573f8a-5ed4-40cd-be11-5e4a6db2b989",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The TSP/BR domain of RSPO3 is essential for signaling in the absence of LGRs and enhances signaling potency in the presence of LGRs in both cultured cells and intestinal organoids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 summarize the functional role of the TSP/BR domain demonstrated throughout the manuscript. C84 is supported by data in Figures 1E and 2D,F,H showing loss of signaling in LGR4/5/6KO cells when the TSP/BR domain is deleted or mutated. C85 and C101 are supported by data in Figures 1D, 2C,E,G and 5A-B showing reduced potency in WT cells and organoids when HSPG binding is disrupted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "acfb87a1-952e-4652-abd5-24b43becd7cd",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on RSPO signaling, WNT pathway biology, developmental roles, receptor interactions, and prior studies on HSPGs in WNT signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11, C16-C21, C53, C82-C83, C86-C89 provide background context supported by citations to established literature. These claims accurately represent prior knowledge about RSPO biology, developmental defects, the prevailing LGR-ZNRF3/RNF43 paradigm, HSPG structure, and prior studies on HSPGs in WNT signaling. The citations appear appropriate and the claims are consistent with established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "99347948-526f-4e39-b06b-57151121616a",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Additional supporting information from prior studies on RSPO-HSPG interactions, organoid biology, affinity measurements, and tissue-specific HSPG expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C64-C66, C74-C75, C80, C90, C92, C96, C100, C103, C106-C107 are all supported by appropriate citations to prior work. These provide important context for interpreting the current results, including prior evidence for RSPO-HSPG interactions, organoid requirements, binding affinities, and tissue-specific considerations. The citations appear accurate and relevant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "ad324923-7c42-4bd0-b674-4bce15ba2a2e",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The unexpected increase in RSPO3 potency upon disruption of all SDCs may be related to prior observations that some SDCs inhibit WNT/\u03b2-catenin signaling through regulation of LRP6 and RSPO3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C61 is speculative, as indicated by the phrase \"may be related to.\" While the observation of increased potency with SDC disruption is supported by data in Figure 4B-C, the mechanistic explanation is only suggested based on a citation to prior work (Astudillo et al., 2014). The authors appropriately present this as speculation rather than a definitive conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    },
+    {
+      "id": "c8fa5e42-382c-4112-ac06-ed9dcf00166d",
+      "content_id": "0cdef9a9-e0af-4053-9f46-74bd93f630f9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "For RSPO3 and RSPO2, LGRs are insufficient and dispensable for signaling, likely due to higher affinity for ZNRF3/RNF43. HSPG binding is required even in the presence of LGRs to drive efficient RNF43 endocytosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95, C97-C99 are supported by the RNF43 internalization data (Figure 3A) showing that HSPG binding is required for RNF43 clearance even in WT cells, and by the dose-response data showing signaling in LGR4/5/6KO cells. C99 is supported by prior work and current data. C100 provides a mechanistic explanation supported by citation to prior work on domain swapping experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:16:02.559535Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "13871ddb-8b97-45ea-b27a-9939960a53b0",
+      "result_id": "7db858d0-3f39-4d37-af42-33254d96b944"
+    },
+    {
+      "claim_id": "a9b5d829-93bf-41f9-a235-69cc90432888",
+      "result_id": "7db858d0-3f39-4d37-af42-33254d96b944"
+    },
+    {
+      "claim_id": "6acd178f-dccf-45e7-8337-527f0b4305f6",
+      "result_id": "7db858d0-3f39-4d37-af42-33254d96b944"
+    },
+    {
+      "claim_id": "ffd47d5f-855d-434c-8fe8-61fb7b82eb1f",
+      "result_id": "7db858d0-3f39-4d37-af42-33254d96b944"
+    },
+    {
+      "claim_id": "00c32d55-60db-4a61-ad57-58e2a25c807e",
+      "result_id": "7db858d0-3f39-4d37-af42-33254d96b944"
+    },
+    {
+      "claim_id": "e60fb5e8-bed2-44e6-b678-4bd88b217828",
+      "result_id": "7db858d0-3f39-4d37-af42-33254d96b944"
+    },
+    {
+      "claim_id": "58f8f25d-5672-4e22-a47f-6f4e7effaafc",
+      "result_id": "7db858d0-3f39-4d37-af42-33254d96b944"
+    },
+    {
+      "claim_id": "ff4714b8-9520-422d-9466-3009899b392f",
+      "result_id": "7db858d0-3f39-4d37-af42-33254d96b944"
+    },
+    {
+      "claim_id": "f06b5e95-9477-4fa5-9141-a7320e261f51",
+      "result_id": "7db858d0-3f39-4d37-af42-33254d96b944"
+    },
+    {
+      "claim_id": "99a60528-1d64-493b-beb4-5d79ba96fedc",
+      "result_id": "7db858d0-3f39-4d37-af42-33254d96b944"
+    },
+    {
+      "claim_id": "9007c1f9-d74c-4468-a2a8-a97ee0fdfe69",
+      "result_id": "4767af30-e330-481a-a8ab-e920d5e7a13c"
+    },
+    {
+      "claim_id": "89b1a741-d9c4-4b20-b8aa-eb26e8425e43",
+      "result_id": "4767af30-e330-481a-a8ab-e920d5e7a13c"
+    },
+    {
+      "claim_id": "42aafc41-549d-4729-b078-dfe3546d0e63",
+      "result_id": "4767af30-e330-481a-a8ab-e920d5e7a13c"
+    },
+    {
+      "claim_id": "e5caff56-ec81-4197-806a-adf1df0b9ea1",
+      "result_id": "4767af30-e330-481a-a8ab-e920d5e7a13c"
+    },
+    {
+      "claim_id": "9a386ca5-34ca-43c5-82cb-50f9f55249a1",
+      "result_id": "4767af30-e330-481a-a8ab-e920d5e7a13c"
+    },
+    {
+      "claim_id": "34c2a573-36fa-4a04-a0ba-13352047695e",
+      "result_id": "4767af30-e330-481a-a8ab-e920d5e7a13c"
+    },
+    {
+      "claim_id": "6f141264-5cd4-4ebb-aad9-9b3621d1cc91",
+      "result_id": "4767af30-e330-481a-a8ab-e920d5e7a13c"
+    },
+    {
+      "claim_id": "c17e92d7-a5b0-4b05-a892-5bf2349cd065",
+      "result_id": "4767af30-e330-481a-a8ab-e920d5e7a13c"
+    },
+    {
+      "claim_id": "c6a56e76-09a2-4d38-b7b0-418b7220e4c5",
+      "result_id": "65d613d7-718e-454f-b5a4-7d38d2348806"
+    },
+    {
+      "claim_id": "5576c104-d660-441a-a757-0c87d8198de6",
+      "result_id": "65d613d7-718e-454f-b5a4-7d38d2348806"
+    },
+    {
+      "claim_id": "dff783fe-e595-4bc9-9605-eaa886c27c03",
+      "result_id": "65d613d7-718e-454f-b5a4-7d38d2348806"
+    },
+    {
+      "claim_id": "fac00f3d-cad2-4556-afd8-6a99b7baf36c",
+      "result_id": "65d613d7-718e-454f-b5a4-7d38d2348806"
+    },
+    {
+      "claim_id": "47955cc0-0402-45ea-a90a-5bd655f59760",
+      "result_id": "65d613d7-718e-454f-b5a4-7d38d2348806"
+    },
+    {
+      "claim_id": "448f1efe-7396-40bb-859c-f18f91843010",
+      "result_id": "65d613d7-718e-454f-b5a4-7d38d2348806"
+    },
+    {
+      "claim_id": "79840fbb-94f8-4291-a875-3bdd81266a47",
+      "result_id": "9af10d22-deb2-4188-98b6-937595b76faa"
+    },
+    {
+      "claim_id": "8b595bee-02e5-4a2e-9619-a23f2f9977bb",
+      "result_id": "9af10d22-deb2-4188-98b6-937595b76faa"
+    },
+    {
+      "claim_id": "7bc09f87-1ff2-4709-a014-61909d5c22ed",
+      "result_id": "9af10d22-deb2-4188-98b6-937595b76faa"
+    },
+    {
+      "claim_id": "6211dfd3-3b4c-4df1-842f-39de2e7559a4",
+      "result_id": "9af10d22-deb2-4188-98b6-937595b76faa"
+    },
+    {
+      "claim_id": "d1532c30-46e0-49e1-9565-0822d9e168f8",
+      "result_id": "9af10d22-deb2-4188-98b6-937595b76faa"
+    },
+    {
+      "claim_id": "412f5df4-d90a-45f0-8967-9eb4f4f5ef92",
+      "result_id": "9af10d22-deb2-4188-98b6-937595b76faa"
+    },
+    {
+      "claim_id": "6f7213db-bf3f-4427-a46b-d1229878f8ff",
+      "result_id": "9af10d22-deb2-4188-98b6-937595b76faa"
+    },
+    {
+      "claim_id": "71bacf35-9c92-4fdf-b42a-0c0c5e309202",
+      "result_id": "c8ba19e6-07d9-43de-9658-0b62665842b3"
+    },
+    {
+      "claim_id": "bf066ea0-dbca-4d09-944d-46d6667e0500",
+      "result_id": "c8ba19e6-07d9-43de-9658-0b62665842b3"
+    },
+    {
+      "claim_id": "8bb2fe0a-bdf8-429b-b146-7d1c023c9357",
+      "result_id": "c8ba19e6-07d9-43de-9658-0b62665842b3"
+    },
+    {
+      "claim_id": "5d5db11e-6e42-494d-ae27-8c8055fca559",
+      "result_id": "c8ba19e6-07d9-43de-9658-0b62665842b3"
+    },
+    {
+      "claim_id": "b297e9a0-79d8-43d7-9620-2ba1fdc32dbe",
+      "result_id": "c8ba19e6-07d9-43de-9658-0b62665842b3"
+    },
+    {
+      "claim_id": "013e3995-bc38-45c4-a230-d65fe1a17d24",
+      "result_id": "c8ba19e6-07d9-43de-9658-0b62665842b3"
+    },
+    {
+      "claim_id": "72ec4147-bb13-4bca-a997-bedc13575897",
+      "result_id": "b43707a2-11fb-4e3f-9709-86045e02fbf7"
+    },
+    {
+      "claim_id": "539233aa-dd9f-4bb0-a130-00fc923081a7",
+      "result_id": "b43707a2-11fb-4e3f-9709-86045e02fbf7"
+    },
+    {
+      "claim_id": "2b3bc530-03a4-4908-b051-b6945b88cc3d",
+      "result_id": "b43707a2-11fb-4e3f-9709-86045e02fbf7"
+    },
+    {
+      "claim_id": "e983c22d-f4fe-450a-86c0-8675e0d12ff0",
+      "result_id": "b43707a2-11fb-4e3f-9709-86045e02fbf7"
+    },
+    {
+      "claim_id": "3722cf47-eb9e-43a2-a023-fc1cc1ece1de",
+      "result_id": "b43707a2-11fb-4e3f-9709-86045e02fbf7"
+    },
+    {
+      "claim_id": "dd971c93-78d2-47a8-b456-82fef2777406",
+      "result_id": "b43707a2-11fb-4e3f-9709-86045e02fbf7"
+    },
+    {
+      "claim_id": "93eacf18-e504-4c9d-bbbf-d099ef3d9097",
+      "result_id": "b43707a2-11fb-4e3f-9709-86045e02fbf7"
+    },
+    {
+      "claim_id": "44d4fc54-7c12-4dba-91fb-e6ba64c05653",
+      "result_id": "5df5091a-8017-439a-901d-c86905e8d648"
+    },
+    {
+      "claim_id": "f988fa0e-2851-4250-a515-0e56cac46d3c",
+      "result_id": "5df5091a-8017-439a-901d-c86905e8d648"
+    },
+    {
+      "claim_id": "bb583699-037f-49e5-b464-65bf8845bf76",
+      "result_id": "5df5091a-8017-439a-901d-c86905e8d648"
+    },
+    {
+      "claim_id": "c7708cf6-6d8e-4512-9729-d8813af871c1",
+      "result_id": "5df5091a-8017-439a-901d-c86905e8d648"
+    },
+    {
+      "claim_id": "aa481118-2083-4479-8bc5-c0f08dfd794d",
+      "result_id": "5df5091a-8017-439a-901d-c86905e8d648"
+    },
+    {
+      "claim_id": "576c0b05-6cbd-4734-88fc-84f224bbcfdc",
+      "result_id": "5df5091a-8017-439a-901d-c86905e8d648"
+    },
+    {
+      "claim_id": "f4364403-dc22-4cfb-8dd8-9e54e2d5097f",
+      "result_id": "54d7900d-1427-4d70-af2e-53cc2ce78a7a"
+    },
+    {
+      "claim_id": "f7bf6707-0775-4d0e-bc26-569fa641fa2a",
+      "result_id": "54d7900d-1427-4d70-af2e-53cc2ce78a7a"
+    },
+    {
+      "claim_id": "7bb85da5-3740-4951-aca7-89da114e2fed",
+      "result_id": "54d7900d-1427-4d70-af2e-53cc2ce78a7a"
+    },
+    {
+      "claim_id": "bfe656cc-4216-4fad-b6cd-42ae4688fb5b",
+      "result_id": "54d7900d-1427-4d70-af2e-53cc2ce78a7a"
+    },
+    {
+      "claim_id": "82cd4915-c4af-4b82-ba4e-b17ed66fd979",
+      "result_id": "2875ee5f-31f1-4483-bfdb-b2f0a8313aea"
+    },
+    {
+      "claim_id": "baab8cbb-e612-4de0-b703-8a6f07a6906b",
+      "result_id": "2875ee5f-31f1-4483-bfdb-b2f0a8313aea"
+    },
+    {
+      "claim_id": "54429c96-8e34-4ca9-8176-7df96480609a",
+      "result_id": "2875ee5f-31f1-4483-bfdb-b2f0a8313aea"
+    },
+    {
+      "claim_id": "e8057c13-c6df-4a16-9c73-3e3aaf123741",
+      "result_id": "2875ee5f-31f1-4483-bfdb-b2f0a8313aea"
+    },
+    {
+      "claim_id": "01bc0df5-8eec-474c-86e3-76245cca909b",
+      "result_id": "2d76d574-05f7-4f4a-b0bb-569abbca21d4"
+    },
+    {
+      "claim_id": "a4d498e3-4755-47f8-8955-6c7a4e126ae4",
+      "result_id": "2d76d574-05f7-4f4a-b0bb-569abbca21d4"
+    },
+    {
+      "claim_id": "1a9881d2-cb90-4020-a980-3b8349e04e9a",
+      "result_id": "2d76d574-05f7-4f4a-b0bb-569abbca21d4"
+    },
+    {
+      "claim_id": "cf46f4bd-94b9-4ea2-beea-c82d00ac1f09",
+      "result_id": "2d76d574-05f7-4f4a-b0bb-569abbca21d4"
+    },
+    {
+      "claim_id": "9c00e5e3-a069-472e-b0f0-068a7bea5655",
+      "result_id": "2d76d574-05f7-4f4a-b0bb-569abbca21d4"
+    },
+    {
+      "claim_id": "b964c29c-3b65-43d8-bedd-80c5f9f92791",
+      "result_id": "2d76d574-05f7-4f4a-b0bb-569abbca21d4"
+    },
+    {
+      "claim_id": "f7b4ab1a-b7c4-4aca-881a-b81c60dbcb89",
+      "result_id": "2d76d574-05f7-4f4a-b0bb-569abbca21d4"
+    },
+    {
+      "claim_id": "1d7b1f0a-cd75-4520-bc3c-0e87500083b6",
+      "result_id": "2d76d574-05f7-4f4a-b0bb-569abbca21d4"
+    },
+    {
+      "claim_id": "cf112ce1-1868-4dcd-a465-5af63253d640",
+      "result_id": "2d76d574-05f7-4f4a-b0bb-569abbca21d4"
+    },
+    {
+      "claim_id": "ec13b299-daae-4fb7-a758-4f6692a358db",
+      "result_id": "74573f8a-5ed4-40cd-be11-5e4a6db2b989"
+    },
+    {
+      "claim_id": "6447f38e-0dec-403f-80e6-6c295aad8e01",
+      "result_id": "74573f8a-5ed4-40cd-be11-5e4a6db2b989"
+    },
+    {
+      "claim_id": "d776efab-10a1-4cef-918d-c59866dbd0a0",
+      "result_id": "74573f8a-5ed4-40cd-be11-5e4a6db2b989"
+    },
+    {
+      "claim_id": "8bc12296-e0d9-4044-b731-f45deba05667",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "21c516d1-8c62-42ea-8533-1ea2e8c9db63",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "f9b44ff7-03f3-43bb-a308-14abc8583fcb",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "a68f93c5-2e5a-4b49-af56-61e23620662c",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "453b40ff-6e72-4afa-9aed-793df3ef2d47",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "d48b6c05-e167-4f55-8936-e1d6a0c5cb37",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "655632ab-0d5c-4703-9473-72a07cec0dce",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "9722be74-9ea3-439d-9979-938e969ac7f2",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "1c13b29d-3f60-4536-816d-44d39789ea85",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "387d3280-fc54-473e-8ac6-bea9f5fd5374",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "f13f17f4-7111-43d8-85b6-2a3b18d02d69",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "6bab522c-acdd-4f49-bbdd-2e4d20b38e7e",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "b136c9dd-8e2d-4803-986e-b5e4b0ccaae6",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "55ca67cc-a2a4-4c0f-b400-a4b47cb09b9a",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "c17bb4fc-060a-4886-a888-62ea974c9d17",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "9c5c0138-47e4-4476-ae85-87203e165f02",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "457c55b1-af7f-4f46-bce9-464fb4fa1e5f",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "d8a23849-ccea-4092-81d1-5d041b8468ff",
+      "result_id": "acfb87a1-952e-4652-abd5-24b43becd7cd"
+    },
+    {
+      "claim_id": "c16a6f24-c270-4520-ad53-edabe84f1464",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "118f14f9-6f35-4c17-b66d-d62efa39e595",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "d2af2e76-5448-454d-9c77-e890d4dc7bda",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "e327b04e-a9e3-4ac4-8ce4-1ad604cac81c",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "45e1558c-bef8-4b99-942f-6cea4dc96399",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "03adb967-2e93-4a1f-8b4b-74bef882050b",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "d4b48c08-5ae1-42a5-8e72-cc8365d43400",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "23809c7a-a6d8-4d6d-bf1e-2c6c3dfe67a5",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "8f32156b-e8a0-4177-8157-6524e68943f8",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "c1809efb-b151-45c4-a4e3-fc990fa7c2a4",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "fe7b7692-bcf5-4028-b669-efddf2871d12",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "6c2dfc2b-1258-4936-a7df-61988919677a",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "ab107ed3-9a30-4489-b797-569c369cd604",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "7685624a-a6e4-4523-8059-524f27457a40",
+      "result_id": "99347948-526f-4e39-b06b-57151121616a"
+    },
+    {
+      "claim_id": "a0527115-4f4e-43e8-82ef-866c4733dc2a",
+      "result_id": "ad324923-7c42-4bd0-b674-4bce15ba2a2e"
+    },
+    {
+      "claim_id": "7fcd9175-096b-4490-ab33-d588ca6c5abb",
+      "result_id": "c8fa5e42-382c-4112-ac06-ed9dcf00166d"
+    },
+    {
+      "claim_id": "3c7c32dc-4bf9-4a92-9644-8dd04a0c48b9",
+      "result_id": "c8fa5e42-382c-4112-ac06-ed9dcf00166d"
+    },
+    {
+      "claim_id": "0204c85d-fa4f-4b07-b0f4-5ac0eb53cfa3",
+      "result_id": "c8fa5e42-382c-4112-ac06-ed9dcf00166d"
+    },
+    {
+      "claim_id": "0467fc10-ee13-4dad-8401-56ea0ee25060",
+      "result_id": "c8fa5e42-382c-4112-ac06-ed9dcf00166d"
+    }
+  ],
+  "comparisons": []
+}

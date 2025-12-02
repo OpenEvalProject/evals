@@ -1,0 +1,1757 @@
+{
+  "submission": {
+    "id": "8de361d9-04aa-4c86-aca4-dd3e4b4552f5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:46:58.413458Z",
+    "updated_at": "2025-12-02T10:46:58.413458Z"
+  },
+  "content": [
+    {
+      "id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "submission_id": "8de361d9-04aa-4c86-aca4-dd3e4b4552f5",
+      "content_type": "manuscript",
+      "content_text": "# Improved CUT&RUN chromatin profiling tools\n\n## Authors\n\n- Michael P Meers<sup>1</sup>\n- Terri D Bryson<sup>1</sup>\n- Jorja G Henikoff<sup>1</sup>\n- Steven Henikoff<sup>1</sup> ([ORCID: 0000-0002-7621-8685](https://orcid.org/0000-0002-7621-8685)) \u2020\n\n### Affiliations\n\n1. Basic Sciences Division Fred Hutchinson Cancer Research Center Seattle United States\n2. Howard Hughes Medical Institute United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreviously, we described a novel alternative to chromatin immunoprecipitation, CUT&RUN, in which unfixed permeabilized cells are incubated with antibody, followed by binding of a protein A-Micrococcal Nuclease (pA/MNase) fusion protein (Skene and Henikoff, 2017). Here we introduce three enhancements to CUT&RUN: A hybrid protein A-Protein G-MNase construct that expands antibody compatibility and simplifies purification, a modified digestion protocol that inhibits premature release of the nuclease-bound complex, and a calibration strategy based on carry-over of E. coli DNA introduced with the fusion protein. These new features, coupled with the previously described low-cost, high efficiency, high reproducibility and high-throughput capability of CUT&RUN make it the method of choice for routine epigenomic profiling.\n\n## Introduction\n\nProfiling the chromatin landscape for specific components is one of the most widely used methods in biology, and over the past decade, chromatin immunoprecipitation (ChIP) followed by sequencing (ChIP-seq) has become practically synonymous with genome-wide chromatin profiling (Landt et al., 2012; Schubert, 2018). However, the most widely used ChIP-seq protocols have limitations and are subject to artifacts (Jain et al., 2015; Park et al., 2013; Teves et al., 2016; Teytelman et al., 2013), of which only some have been addressed by methodological improvements (Brind'Amour et al., 2015; Kasinathan et al., 2014; Rhee and Pugh, 2011; Rossi et al., 2018; van Galen et al., 2016). An inherent limitation to ChIP is that solubilization of chromatin, whether by sonication or enzymatic digestion, results in sampling from the entire solubilized genome, and this requires very deep sequencing so that the sites of targeted protein binding can be resolved above background (Landt et al., 2012). To overcome this limitation, we introduced Cleavage Under Targets and Release Using Nuclease (CUT&RUN) (Skene and Henikoff, 2017), which is based on the chromatin immunocleavage (ChIC)-targeted nuclease strategy (Schmid et al., 2004): Successive incubation of unfixed cells or nuclei with an antibody and a Protein A-Micrococcal Nuclease (pA/MNase) fusion protein is followed by activation of MNase with calcium. In\u00a0CUT&RUN, cells or nuclei remain intact throughout the procedure and only the targeted sites of binding are released into solution. Our CUT&RUN method dramatically reduced non-specific backgrounds, such that\u00a0~10 fold lower sequencing depth was required to obtain similar peak-calling performance (Skene and Henikoff, 2017). In addition, CUT&RUN provides near base-pair resolution, and our most recently published benchtop protocol is capable of profiling\u00a0~100 human cells for an abundant histone modification and\u00a0~1000 cells for a transcription factor (Skene et al., 2018). The simplicity of CUT&RUN has also resulted in a fully automated robotic version (AutoCUT&RUN) in which the high reproducibility and low cost makes it ideally suited for high-throughput epigenomic profiling of clinical samples (Janssens et al., 2018). Other advances based on our original CUT&RUN publication include CUT&RUN.Salt for fractionation of chromatin based on solubility (Thakur and Henikoff, 2018) and CUT&RUN.ChIP for profiling specific protein components within complexes released by CUT&RUN digestion (Brahma and Henikoff, 2019). CUT&RUN has also been adopted by others (Ahmad and Spens, 2018; Daneshvar et al., 2019; de Bock et al., 2018; Ernst et al., 2019; Federation et al., 2018; Hainer et al., 2019; Hainer and Fazzio, 2019; Hyle et al., 2019; Inoue et al., 2018; Liu et al., 2018; Menon et al., 2019; Oomen et al., 2019; Park et al., 2019; Roth et al., 2018; Uyehara and McKay, 2019; Zhang et al., 2019; Zheng and Gehring, 2019), and since publication of our eLife paper we have distributed materials to\u00a0>600 laboratories world-wide, with user questions and answers fielded interactively on our open-access Protocols.io site (dx.doi.org/10.17504/protocols.io.zcpf2vn).\n\nBroad implementation of CUT&RUN requires reagent standardization, and the rapid adoption of CUT&RUN\u00a0by the larger community of researchers motivates the enhancements described here. First, the method requires a fusion protein that is not at this writing commercially available, and the published pA/MNase purification protocol is cumbersome, which effectively restricts dissemination of the method. Therefore, we have produced an improved construct with a 6-His-Tag that can be easily purified using a commercial kit, and by using a Protein A-Protein G hybrid, the fusion protein binds avidly to mouse antibodies, which bind only weakly to Protein A. Second, the original protocols are sensitive to digestion time, in that under-digestion results in low yield and over-digestion can result in pre-mature release of pA/MNase-bound complexes that can digest accessible DNA sites. To address this limitation, we have modified the protocol such that premature release is reduced, allowing digestion to near-completion for high yields with less background. Third, the current CUT&RUN protocol recommends a spike-in of heterologous DNA at the release step to compare samples in a series. Here we demonstrate that adding a spike-in is unnecessary, because the carry-over of E. coli DNA from purification of pA/MNase or pAG/MNase is sufficient to calibrate samples in a series.\n\n## Results and discussion\n\n### An improved CUT&RUN vector\n\nThe pA/MNase fusion protein produced by the pK19-pA-MN plasmid (Schmid et al., 2004) requires purification from lysates of Escherichia coli overexpressing cells using an immunoglobulin G (IgG) column, and elution with low pH followed by neutralization has resulted in variations between batches. To improve the purification protocol, we added a 6-His tag (Bornhorst and Falke, 2000) into the pK19-pA-MN fusion protein (Figure 1A and Figure 1\u2014figure supplement 1A). This allowed for simple and gentle purification on a nickel resin column (Figure 1\u2014figure supplement 1B). In addition, we found that a commercial 6-His-cobalt resin kit also yielded pure highly active enzyme from a 20 ml culture, enough for\u00a0~10,000 reactions. Even when used in excess, there is no increase in release of background fragments (Figure 1\u2014figure supplement 2), which indicates that the washes are effective in removing unbound fusion protein.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46314/elife-46314-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic diagram (not to scale) showing improvements to the pA-MNase fusion protein, which include addition of the C2 Protein G IgG binding domain, a 6-histidine tag for purification and a hemagglutinin tag (HA) for immunoprecipitation. (B) The Protein A/G hybrid fusion results in high-efficiency CUT&RUN for both rabbit and mouse primary antibodies. CUT&RUN for both rabbit and mouse RNAPII-Ser5phosphate using pAG/MNase were extracted from either the supernatant or the total cellular extract. Tracks are shown for the histone gene cluster at Chr6:26,000,000\u201326,300,000, where NPAT is a transcription factor that co-activates histone genes. Tracks for 2\u2019 and 10\u2019 time points are displayed at the same scale for each antibody and for both supernatant (supn) or total DNA extraction protocols.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46314/elife-46314-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Plasmid map of pAG-ERH-MNase-6xHIS-HA. (B) Coomassie-stained gel of fusion protein eluted from nickel-agarose.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46314/elife-46314-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) K562 cells were incubated with an antibody to H3K27me3 (CST #9733 Rabbit monoclonal), washed twice with 1 ml Dig-wash. The sample was split into aliquots for incubation with pA/MNase at the recommended concentration and a serial dilution of pAG/MNase, followed by 3 1 ml washes. After 30 min using the standard protocol, lImit digestions are seen at all dilutions for this abundant epitope, indicating that the amount of fusion protein used in this experiment was in excess. (B) Representative tracks from these samples on the same normalized count scale show consistently low CUT&RUN\u00a0backgrounds with excess pAG/MNase, which indicates that washes are sufficient to minimize non-specific background cleavages. ENCODE ChIP-seq tracks are shown for comparison, where USC used CST #9733, and Broad Institute used Millipore 07\u2013449.\n\nIn principle an epitope-tagged pAG/MNase could be used for chromatin pull-down from a CUT&RUN supernatant in sequential strategies like CUT&RUN.ChIP (Brahma and Henikoff, 2019). However, in practice use of the 6-His tag is complicated by the requirement for a chelating agent to release the protein from the nickel resin. Therefore, we also added an HA (hemagglutinin) tag, which could be used to affinity-purify the complex of a directly bound chromatin particle with a primary antibody and the fusion protein.\n\nProtein A binds well to rabbit, goat, donkey and guinea pig IgG antibodies, but poorly to mouse IgG1, and so for most mouse antibodies, Protein G is generally used (Fishman and Berg, 2019). To further improve the versatility of the MNase fusion protein, we encoded a single Protein G domain adjacent to the Protein A domain in the pK19-pA-MN plasmid (Eliasson et al., 1988). In addition, we mutated three residues in the Protein G coding sequence to further increase binding for rabbit antibodies (Jha et al., 2014). This resulted in a fusion protein that binds strongly to most commercial antibodies without requiring a secondary antibody. We found that for ordinary CUT&RUN applications pAG/MNase behaves very similarly to pA/MNase, but is more easily purified and is more versatile, for example allowing us to perform CUT&RUN without requiring a secondary antibody for mouse primary monoclonal antibodies (Figure 1B).\n\n### Preventing premature release during CUT&RUN digestion\n\nWhen fragments are released by cleavage in the presence of Ca++ ions, the associated pA/MNase complex can digest accessible DNA (Skene and Henikoff, 2017). Although performing digestion at 0\u00b0C minimizes this artifact, eliminating premature release during digestion would allow for more complete release of target-specific fragments. Based on the observation that nucleosome core particles aggregate in high-divalent-cation and low-salt conditions (de Frutos et al., 2001), we wondered whether these conditions would prevent premature release of chromatin particles in situ. Therefore, we performed digestions in 10 mM CaCl2 and 3.5 mM HEPES pH 7.5. Under these high-calcium/low-salt conditions, chromatin is digested with no detectable release of fragments into the supernatant (Figure 2). Reactions are halted by transferring the tube to a magnet, removing the liquid, and adding elution buffer containing 150 mM NaCl, 20 mM EGTA and 25 \u00b5g/ml RNAse A, which releases the small DNA fragments into the supernatant. These conditions are compatible with direct end-polishing and ligation used for AutoCUT&RUN (Janssens et al., 2018). Furthermore, retention of the cleaved fragments within the nucleus under high-divalent cation/low-salt conditions could facilitate single-cell application of CUT&RUN.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46314/elife-46314-fig2-v2.jpg)\n\n**Figure 2.:** CUT&RUN was performed using either the high-Ca++/low-salt (Ca++) or the standard (Std) method with antibodies to three different epitopes. DNA was extracted from supernatants, where no elution was carried out for the Ca++ samples. Although high yields of nucleosomal ladder DNA eluted from the supernatants using the standard method, no DNA was detectable in the supernatant using the high-Ca++/low salt method when the elution step was omitted. Left, Tapestation images from indicated lanes; Right, Densitometry of the same lanes.\n\nThe high-calcium/low-salt protocol provided similar results using either pA/MNase and pAG/MNase (Figure 3). We also obtained similar results with either protocol for digestion time points over a\u00a0~\u00a030 fold range and for both supernatant and total DNA extraction (Figure 4\u2014figure supplement 1). For antibodies to H3K27ac, libraries produced using the high-calcium/low-salt protocol showed improved consistency relative to the standard protocol when digested over an extended time-course (Figure 4), presumably because preventing release of particles during digestion avoids their premature release where they would artifactually digest accessible DNA. The close correlations between high-calcium/low-salt H3K27ac datasets for time points over a\u00a0~\u00a0100 fold range occur with corresponding increases in the yield of fragments released into the supernatant during subsequent elution (Figure 4\u2014figure supplement 2). This indicates that longer digestion times result in higher yields, with high signal-to-noise throughout the digestion series (Figure 4). Thus, this modification of CUT&RUN can reduce the risk of overdigestion for abundant epitopes such as H3K27ac, where premature release of pA-MNase-bound chromatin particles can increase background.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46314/elife-46314-fig3-v2.jpg)\n\n**Figure 3.:** (A) CUT&RUN was performed with an antibody to H3K27ac (Millipore MABE647) and to CTCF (Millipore 07\u2013729) with digestion over a 1 to 27 min range as indicated using pAG/MNase with the high-Ca++/low-salt protocol. Correlation matrix comparing peak overlaps for time points and fusion constructs. The datasets were pooled and MACS2 was used with default parameters to call peaks, excluding those in repeat-masked intervals and those where peaks overlapped with the top 1% of IgG occupancies, for a total of 52,425 peaks. Peak positions were scored for each dataset and correlations (R2 values shown along the diagonal and displayed with Java TreeView v.1.16r2, contrast\u00a0=\u00a01.25) were calculated between peak vectors. IgG and H3K27me3 (me3) negative controls were similarly scored. (B) Same as A, except the antibody was to CTCF. A set of 9403 sites with a CTCF motif within a hypersensitive site was used (Skene and Henikoff, 2017). High correlations between all time points demonstrate the uniformity of digestion over a 27-fold range. (C) Representative tracks from datasets used for panels A and B showing a 100 kb region that includes a histone locus cluster (chr6:25,972,600\u201326,072,600).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46314/elife-46314-fig4-v2.jpg)\n\n**Figure 4.:** (A) H3K27ac CUT&RUN time-course experiments were performed with an Abcam 4729 rabbit polyclonal antibody, following either the standard protocol or the low-salt/high-calcium (High-Ca++) protocol. Samples of 5 million fragments from the 10 H3K27ac datasets were pooled and MACS2 called 36,529 peaks. Peak positions were scored for each dataset and correlations (R2 values shown along the diagonal) were calculated between peak vectors. IgG and H3K27me3 (me3) negative controls were similarly scored. Higher correlations between the High-Ca++ than the Standard time points indicates improved uniformity of digestion over the\u00a0~100 fold range of digestion times. (B) Tracks from a representative 200 kb region around the HoxB locus. (C) Fraction of reads in peaks (Frip) plots for each time point after down-sampling (5 million, 2.5 million, 1.25 million, 625,000 and 312,500), showing consistently higher Frip values for Ca++ (red) than Std (blue).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46314/elife-46314-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) H3K4me2 CUT&RUN time points with digestions using either the standard protocol or the high-calcium/low-salt protocol with either supernatant or total DNA extraction. To construct the correlation matrix, all 8 H3K4me2 datasets were pooled and MACS2 was used to call peaks, which yielded 64,156 peaks. Peak positions were scored for each dataset and correlations (R2 displayed with Java TreeView v.1.16r2, contrast\u00a0=\u00a01.25) were calculated between peak vectors. IgG and H3K27me3 (me3) negative controls were similarly scored. (B) Same as Figure 4B. (C) Same as Figure 4C.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46314/elife-46314-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** CUT&RUN with the low-salt/high-calcium protocol results in fragment release within 20 s at 0\u00b0C.\n\nWe previously showed that CUT&RUN can be performed on insoluble protein complexes by extracting total DNA (Skene and Henikoff, 2017) or by performing salt fractionation of the bead-bound cells and extracting DNA from the residual pellet (Thakur and Henikoff, 2018). In either case, large DNA fragments were depleted using SPRI (AMPure XP) beads before library preparation. RNA polymerase II (RNAPII) from animal cells is insoluble when engaged (Mayer et al., 2015; Weber et al., 2014), and requires harsh treatments for quantitative profiling using ChIP (Skene and Henikoff, 2015). To determine whether CUT&RUN can be used for insoluble chromatin complexes, we profiled Serine-5-phosphate on the C-terminal domain (CTD) of the Rpb1 subunit of RNAPII using both extraction of supernatant and of total DNA. This CTD phosphorylation is enriched in the initiating form of RNAPII, and we observed similar genic profiles for supernatant and total DNA (Figure 1B).\n\n### Calibration using E. coli carry-over DNA\n\nComparing samples in a series typically requires calibration for experimental quality and sequencing read depth. It is common to use background levels to calibrate ChIP-seq samples in a series and to define and compare peaks for peak-calling (Landt et al., 2012). However, the extremely low backgrounds of CUT&RUN led us to a calibration strategy based on spike-in of heterologous DNA, which has been generally recommended for all situations in which samples in a series are to be compared (Chen et al., 2015; Hu et al., 2015). In our current spike-in protocol, the heterologous DNA, which is typically DNA purified from an MNase digest of yeast Saccharomyces cerevisiae or Drosophila melanogaster chromatin, is added when stopping a reaction, and we adopted this spike-in procedure for the high-calcium/low-salt protocol described in the previous section. Interestingly, we noticed that mapping reads to both the spike-in genome and the E. coli genome resulted in almost perfect correlation (R2\u00a0=\u00a00.97) between S. cerevisiae and E. coli in an experiment using pA/MNase in which the number of cells was varied over several orders of magnitude (Figure 5A). Near-perfect correlations (R2\u00a0=\u00a00.96\u20130.99) between yeast spike-in and carry-over E. coli DNA were also seen in series using the same batch of pAG/MNase with high-calcium/low-salt digestion conditions (Figure 5B), and for both supernatant release and extraction and total DNA extraction (Figure 5C\u2013D). These strong positive correlations are not accounted for by cross-mapping of the yeast spike-in to the E. coli genome, because omitting the spike-in for a low-abundance epitope resulted in very few yeast counts with high levels of E. coli counts (blue symbol in Figure 5C\u2013D panels). As the source of E. coli DNA is carried over from purification of pA/MNase and pAG/MNase, the close correspondence provides confirmation of the accuracy of our heterologous spike-in procedure (Skene and Henikoff, 2017). Moreover, as carry-over E. coli DNA is introduced at an earlier step, and is cleaved to small mappable fragments that are released during digestion and elution, it provides a more desirable calibration standard than using heterologous DNA (Chen et al., 2015; Hu et al., 2015). High correlations were also seen between S. cerevisiae spike-in and E. coli carry-over DNA for pA-MNase in batches that we have distributed (Table 1). Therefore, data for nearly all CUT&RUN experiments performed thus far can be recalibrated post-hoc whether or not a spike-in calibration standard had been added.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46314/elife-46314-fig5-v2.jpg)\n\n**Figure 5.:** (A) Fragments from a CUT&RUN K562 cell experiment (GSE104550 20170426) using antibodies against H3K27me3 (100\u20138,000 cells) and CTCF (1,000\u2013100,000 cells) were mapped to the repeat-masked genome of S. cerevisae and the full genome\u00a0of E. coli. Standard digestion was followed by supernatant release and extraction. (B) Same as A using antibodies against multiple epitopes of varying abundances, with high-calcium/low-salt digestion followed by supernatant release and extraction. (C) Same as B except using standard digestion conditions and total DNA extraction. The S. cerevisiae spike-in DNA was left out for one sample (blue square). From top to bottom, antibodies are: NPAT Thermo PA5-66839, Myc: CST Rabbit Mab #13987, CTD: PolII CTD Abcam 8WG16, RNAPII-Ser5: Abcam 5408 (mouse), RNAPII-Ser2: CST E1Z3G, CTCF Millipore 07\u2013729, RNAPII-Ser5: CST D9N5I (rabbit), H3K4me2: Upstate 07\u2013030. (D) Same as C except using high-calcium/low-salt digestion and total DNA extraction. From top to bottom, antibodies are: CTCF Millipore 07\u2013729, NPAT Thermo PA5-66839, Myc: CST Rabbit Mab #13987, CTD: PolII CTD Abcam 8WG16, RNAPII-Ser5: Abcam 5408 (mouse), RNAPII-Ser5: CST D9N5I (rabbit), RNAPII-Ser2: CST E1Z3G, H3K4me2: Upstate 07\u2013030.\n\n**Table 1.**\n Carry-over E. coli DNA correlates closely with the heterologous spike-in for both fusion proteins and both low-salt/high-calcium and standard digestion conditions.CUT&RUN was performed for H3K27me3 in parallel for pA/MNase Batch #6 (pA), pAG/MNase (pAG) using both low-salt/high-calcium (lo-hi) and standard (std) CUT&RUN digestion conditions. Each sample started with\u00a0~700,000 cells and 10 \u00b5L of bead slurry. Also varied in this experiment was addition of antibody followed by bead addition (Ab first) and addition of 0.1% BSA in the antibody buffer (BSA). Adding antibody first led to increased recovery of both yeast and E. coli DNA relative to human DNA, indicative of loss of cells prior to addition of fusion protein, possibly caused by loss of digitonin solubilization of membrane sugars.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>H3K27me3</th>\n      <th>Ab first</th>\n      <th>BSA</th>\n      <th>Human</th>\n      <th>Yeast</th>\n      <th>E. coli</th>\n      <th>Corr (Sc:Ec)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>pA lo-hi</td>\n      <td></td>\n      <td></td>\n      <td>5913983</td>\n      <td>743</td>\n      <td>3455</td>\n      <td>0.92</td>\n    </tr>\n    <tr>\n      <td>pA lo-hi</td>\n      <td></td>\n      <td>+</td>\n      <td>7748003</td>\n      <td>858</td>\n      <td>4988</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pA lo-hi</td>\n      <td>+</td>\n      <td></td>\n      <td>5202278</td>\n      <td>2288</td>\n      <td>16110</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pA lo-hi</td>\n      <td>+</td>\n      <td>+</td>\n      <td>5178086</td>\n      <td>1804</td>\n      <td>18759</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pA std</td>\n      <td></td>\n      <td></td>\n      <td>6013347</td>\n      <td>595</td>\n      <td>2462</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td>pA std</td>\n      <td></td>\n      <td>+</td>\n      <td>6005080</td>\n      <td>859</td>\n      <td>2295</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pA std</td>\n      <td>+</td>\n      <td></td>\n      <td>4104736</td>\n      <td>2624</td>\n      <td>21236</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pA std</td>\n      <td>+</td>\n      <td>+</td>\n      <td>3972820</td>\n      <td>2328</td>\n      <td>19245</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pAG lo-hi</td>\n      <td></td>\n      <td></td>\n      <td>6999802</td>\n      <td>789</td>\n      <td>404</td>\n      <td>0.94</td>\n    </tr>\n    <tr>\n      <td>pAG lo-hi</td>\n      <td></td>\n      <td>+</td>\n      <td>6374939</td>\n      <td>642</td>\n      <td>467</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pAG lo-hi</td>\n      <td>+</td>\n      <td></td>\n      <td>4140407</td>\n      <td>1565</td>\n      <td>1291</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pAG lo-hi</td>\n      <td>+</td>\n      <td>+</td>\n      <td>4058693</td>\n      <td>2382</td>\n      <td>5289</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pAG std</td>\n      <td></td>\n      <td></td>\n      <td>7514127</td>\n      <td>308</td>\n      <td>567</td>\n      <td>0.90</td>\n    </tr>\n    <tr>\n      <td>pAG std</td>\n      <td></td>\n      <td>+</td>\n      <td>5935592</td>\n      <td>355</td>\n      <td>125</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pAG std</td>\n      <td>+</td>\n      <td></td>\n      <td>4594153</td>\n      <td>1271</td>\n      <td>555</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>pAG std</td>\n      <td>+</td>\n      <td>+</td>\n      <td>5379610</td>\n      <td>2509</td>\n      <td>1353</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nTo explain the presence of carry-over E. coli DNA in proportion to the amount of yeast spike-in DNA, which is constant between samples in a series, we can exclude intracellular binding, because we observe proportionality between E. coli and yeast reads despite varying human cell numbers over two orders of magnitude (Figure 5A). Rather, we note that Concanavalin A binds to glycosylated immunoglobulins, and so the successive treatments of Con A bead-bound cells with excess antibody and Protein A(G)/MNase fusion protein will affix an amount of carry-over E. coli DNA to beads in proportion to the number of beads. Our use of a constant number of beads for all samples in a series to be compared would then have resulted in a constant amount of carry-over E. coli DNA. A similar inference of E. coli carry-over DNA suitable for calibration was noted for CUT&Tag (Kaya-Okur et al., 2019), which suggests successive binding of antibodies and Protein A-Tn5 to the Con A beads used to immobilize cells. Thus,\u00a0our calibration strategy might serve as a more general replacement for conventional spike-ins.\n\n### Conclusions\n\nSince its introduction in our original eLife paper (Skene and Henikoff, 2017), the advantages of CUT&RUN over ChIP-seq has led to its rapid adoption, including publication of new CUT&RUN protocols for low cell numbers (Hainer and Fazzio, 2019; Skene et al., 2018), for plant tissues (Zheng and Gehring, 2019) and for high-throughput (Janssens et al., 2018). The new CUT&RUN advances that we describe here are likely to be useful when applied in all of these protocols. Our improved CUT&RUN fusion construct simplifies reagent purification and eliminates the requirement for a secondary antibody against mouse primary antibodies. Our high-calcium/low-salt protocol minimizes time-dependent variability. Our discovery that carry-over E. coli DNA almost perfectly correlates with an added spike-in upgrades a contaminant to a resource that can be used as a spike-in calibration proxy, even post-hoc simply by counting reads mapping to the E. coli genome in existing CUT&RUN datasets.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Human)</td>\n      <td>K562</td>\n      <td>ATCC</td>\n      <td>#CCL-243</td>\n      <td>RRID: CVCL_0004</td>\n    </tr>\n    <tr>\n      <td>Biological sample (Escherichia coli)</td>\n      <td>JM101 cells</td>\n      <td>Agilent</td>\n      <td>#200234</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-NPAT</td>\n      <td>Thermo</td>\n      <td>PA5-66839</td>\n      <td>Concentration: 1:100; RRID:AB_2663287</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>guinea pig polyclonal anti-rabbit IgG</td>\n      <td>Antibodies Online</td>\n      <td>ABIN101961</td>\n      <td>Concentration: 1:100; RRID: AB_10775589</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-mouse IgG</td>\n      <td>Abcam</td>\n      <td>46540</td>\n      <td>Concentration: 1:100; RRID: AB_2614925</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit monoclonal anti-RNAPII-Ser5</td>\n      <td>Cell Signaling</td>\n      <td>D9N51</td>\n      <td>Concentration: 1:100</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>mouse monoclonal anti-RNAPII-Ser5</td>\n      <td>Abcam</td>\n      <td>5408</td>\n      <td>Concentration: 1:100; RRID:AB_304868</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit monoclonal anti-H3K27me3</td>\n      <td>Cell Signaling</td>\n      <td>9733</td>\n      <td>Concentration: 1:100; RRID: AB_2616029</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-H3K4me2</td>\n      <td>Upstate</td>\n      <td>07\u2013730</td>\n      <td>Concentration: 1:100; RRID: AB_11213050</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit monoclonal anti-H3K27ac</td>\n      <td>Millipore</td>\n      <td>MABE647</td>\n      <td>Concentration: 1:100;</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-H3K27ac</td>\n      <td>Abcam</td>\n      <td>4729</td>\n      <td>Concentration: 1:100; RRID: AB_2118291</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>rabbit polyclonal anti-CTCF</td>\n      <td>Millipore</td>\n      <td>07\u2013729</td>\n      <td>Concentration: 1:100; RRID: AB_441965</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AG-ERH-MNase-6xHIS-HA (plasmid)</td>\n      <td></td>\n      <td>Progenitors: pK19-pA-MN; gBlocks</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pK19-pA-MN</td>\n      <td>Schmid et al., 2004</td>\n      <td></td>\n      <td>Gift from author</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>gBlock Hemagglutinin and 6-histidine tags; gattacaGAAGACAACGCTGATTCAGGTCAAGGCGGtGGTGGcTCTGGgGGcGGgGGcTCGGGtGGtGGgGGcTCAcaccatcaccatcaccatGGCGGtGGTGGcTCTTACCCATACGATGTTCCAGATTACGCTtaatgaGGATCCgattaca</td>\n      <td>Integrated DNA Technologies (IDT)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>gBLOCK PrtG_ERH Codon optimized; AGCAGAAGCTAAAAAGCTAAACGATGCTCAAGCACCAAAAACAACTTATAAATTAGTCATCAACGGGAAAACGCTGAAGGGTGAAACCACGACAGAGGCCGTAGATGCGGAGACAGCGGAGCGCCACTTTAAGCAATACGCGAATGATAACGGTGTAGACGGCGAGTGGACCTACGACGACGCGACAAAGACCTTTACCGTCACGGAGAAACCTGAGGTTATCGACGCGTCTGAGTTGACGC CAGCCGTAGATGACGATAAAGAATTCGCAACTTCAACTAAAAAATTAC</td>\n      <td>Integrated DNA Technologies (IDT)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>pA/MNase</td>\n      <td>Schmid et al., 2004</td>\n      <td></td>\n      <td>purified as described inSchmid et al., 2004 and supplementary</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>pAG/MNase</td>\n      <td>This paper</td>\n      <td></td>\n      <td>Purified from modified plasmid pAG-ERH-MNase-6xHIS-HA in S Henikoff Lab</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pull-Down PolyHis Protein:Protein Interaction Kit</td>\n      <td>Thermo</td>\n      <td>#21277</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Concanavalin A coated magnetic beads</td>\n      <td>Bangs Laboratories</td>\n      <td>#BP-531</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Gibson Assembly</td>\n      <td>New England Biolabs</td>\n      <td>#E2611</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Chicken egg white lysozyme</td>\n      <td>EMD Millipore</td>\n      <td>#71412</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Zwittergent 3\u201310 detergent (0.03%)</td>\n      <td>EMD Millipore</td>\n      <td>#693021</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Digitonin</td>\n      <td>EMD Millipore</td>\n      <td>#300410</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Roche Complete Protease Inhibitor EDTA-free tablets</td>\n      <td>Sigma Aldrich</td>\n      <td>5056489001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>RNase A Dnase- and protease-free</td>\n      <td>Thermo</td>\n      <td>ENO531</td>\n      <td>10 mg/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Proteinase K</td>\n      <td>Thermo</td>\n      <td>EO0492</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Glycogen</td>\n      <td>Sigma-Aldrich</td>\n      <td>10930193001</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical\u00a0compound, drug</td>\n      <td>Spermidine</td>\n      <td>Sigma-Aldrich</td>\n      <td>#S0266</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nK562 cells were purchased from ATCC (#CCL-243) and cultured as previously described (Janssens et al., 2018). All tested negative for mycoplasma contamination using MycoProbe kit.\n\n### Construction and purification of an improved IgG-affinity/MNase fusion protein\n\nHemagglutinin and 6-histidine tags were added to the carboxyl-terminus of pA-MNase (Schmid et al., 2004) using a commercially synthesized dsDNA fragment (gBlock) from Integrated DNA Technologies (IDT), which contains the coding sequence for both tags, glycine-rich flexible linkers and includes restriction sites for cloning. Another IDT gBlock containing the optimized protein-G coding sequence and homologous flanking regions to the site of insertion, was introduced via PCR overlap extension using Gibson Assembly Master Mix (New England Biolabs cat. #E2611), following the manufacturer\u2019s instructions. The sequence-verified construct was transformed into JM101 cells (Agilent Technologies cat. #200234) for expression, cultured in NZCYM-Kanamycin (50 \u00b5g/ml) and induced with 2 mM Isopropyl \u03b2-D-1-thiogalactopyranoside following standard protein expression and purification protocols. The cell pellet was resuspended in 10 ml Lysis Buffer, consisting of 10 mM Tris-HCl pH 7.5, 300 mM NaCl, 10 mM Imidazole, 5 mM beta-mercaptoethanol, and EDTA-free protease inhibitor tablets at the recommended concentration (Sigma-Aldrich cat. #5056489001). Lysis using chicken egg white lysozyme (10 mg/mL solution, EMD cat. #71412 solution) was followed by sonication with a Branson Sonifier blunt-end adapter at output level 4, 45 s intervals for 5\u201310 rounds or until turbidity was reduced. The lysate was cleared by high-speed centrifugation and purified over a nickel-agarose column, taking advantage of the poly-histidine tag for efficient purification via immobilized metal affinity chromatography. Cleared lysate was applied to a 20 ml disposable gravity-flow column 1.5 ml (0.75 ml bed volume) of NI-NTA agarose (Qiagen cat. #30210), washed twice in three bed volumes of Lysis Buffer. Lysate was applied followed by two washes at five bed volumes of 10 mM Tris-HCl pH 7.5, 300 mM NaCl, 20 mM Imidazole, 0.03% ZWITTERGENT 3\u201310 Detergent (EMD Millipore cat. #693021) and EDTA-free protease inhibitor tablets. Elution was performed with 1 ml 10 mM Tris-HCl pH 7.5, 300 mM NaCl, 250 mM Imidazole and EDTA-free protease inhibitor tablets. Eluate was dialyzed twice against a 750 ml volume of 10 mM Tris-HCl pH 7.5, 150 mM NaCl, 1 mM EDTA, 1 mM PMSF to remove imidazole. Glycerol was then added to 50%, aliquots stored at \u201380\u00b0C for long term storage and \u201320\u00b0C for working stocks.\n\nFor purification, we used either the nickel-based protocol or the Pierce Cobalt kit (Pull-Down PolyHis Protein:Protein Interaction Kit cat. #21277 from Thermo Fisher). Similar results were obtained using either the nickel or cobalt protocol, although the cobalt kit alleviated the need for a sonicator, using a fifth of the starting material from either fresh culture or a cell pellet frozen in lysis buffer, and yielded more protein per volume of starting material. With the cobalt kit, 20 ml of culture yielded\u00a0~100 \u00b5g of fusion protein.\n\n### CUT&RUN using high-calcium/low-salt digestion conditions\n\nLog-phase cultures of K562 cells were harvested, washed, and bound to activated Concanavalin A-coated magnetic beads, then permeabilized with Wash buffer (20 mM HEPES, pH7.5, 150 mM NaCl, 0.5 mM spermidine and a Roche complete tablet per 50 ml) containing 0.05% Digitonin (Dig-Wash) as described (Skene et al., 2018). The bead-cell slurry was incubated with antibody in a 50\u2013100 \u00b5L volume for 2 hr at room temperature or at 4\u00b0C overnight on a nutator or rotator essentially as described (Skene et al., 2018). In some experiments, cells were permeabilized and antibody was added and incubated 2 hr to 3 days prior to addition of ConA beads with gentle vortexing; similar results were obtained (e.g. Figure 2B\u2013D), although with lower yields. After 2\u20133 washes in 1 ml Dig-wash, beads were resuspended in 50\u2013100 \u00b5L pA/MNase or pAG/MNase and incubated for 1 hr at room temperature. After two washes in Dig-wash, beads were resuspended in low-salt rinse buffer (20 mM HEPES, pH7.5, 0.5 mM spermidine, a Roche mini-complete tablet per 10 ml and 0.05% Digitonin). Tubes were chilled to 0\u00b0C, the liquid was removed on a magnet stand, and ice-cold calcium incubation buffer (3.5 mM HEPES pH 7.5, 10 mM CaCl2, 0.05% Digitonin) was added while gently vortexing. Tubes were replaced on ice during the incubation for times indicated in each experiment, and within 30 s of the end of the incubation period the tubes were replaced on the magnet, and upon clearing, the liquid was removed, followed by immediate addition of EGTA-STOP buffer (170 mM NaCl, 20 mM EGTA, 0.05% Digitonin, 20 \u00b5g/ml glycogen, 25 \u00b5g/ml RNase A, 2 pg/ml S. cerevisiae fragmented nucleosomal DNA). Beads were incubated at 37\u00b0C for 30 min, replaced on a magnet stand and the liquid was removed to a fresh tube and DNA was extracted as described (Skene et al., 2018). A detailed step-by-step protocol is available at https://www.protocols.io/view/cut-amp-run-targeted-in-situ-genome-wide-profiling-zcpf2vn. Extraction of pellet and total DNA was performed essentially as described (Skene and Henikoff, 2017; Thakur and Henikoff, 2018).\n\n### DNA sequencing and data processing\n\nThe size distribution of libraries was determined by Agilent 4200 TapeStation analysis, and libraries were mixed to achieve equal representation as desired aiming for a final concentration as recommended by the manufacturer. Paired-end Illumina sequencing was performed on the barcoded libraries following the manufacturer\u2019s instructions. Paired-end reads were aligned using Bowtie2 version 2.2.5 with options: --local --very-sensitive-local --no-unal --no-mixed --no-discordant --phred33 -I 10 -X 700. For MACS2 peak calling, parameters used were macs2 callpeak \u2013 t input_file \u2013p 1e-5 \u2013f BEDPE/BED(Paired End vs. Single End sequencing data) \u2013keep-dup all \u2013n out_name. Some datasets showed contamination by sequences of undetermined origin consisting of the sequence (TA)n. To avoid cross-mapping, we searched blastn for TATATATATATATATATATATATAT against hg19, collapsed the overlapping hits into 34,832 regions and intersected with sequencing datasets, keeping only the fragments that did not overlap any of these regions.\n\n### Evaluating time-course data\n\nIf digestion and fragment release into the supernatant occur linearly with time of digestion until all fragments within a population are released, then we expect that CUT&RUN features will be linearly correlated within a time-course series. For CTCF, features were significant CTCF motifs intersecting with DNAseI hypersensitive sites (Skene and Henikoff, 2017). For H3K27Ac and H3K4me2, we called peaks using MACS2 and calculated the Pearson correlation coefficients between time points, displayed as a matrix of R2 values, using the following procedure:\n",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "11b59396-9cb3-40b2-9d3b-27448485655d",
+      "submission_id": "8de361d9-04aa-4c86-aca4-dd3e4b4552f5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen Parker, University of Michigan United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.46314.017](https://doi.org/10.7554/eLife.46314.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A streamlined protocol and analysis pipeline for CUT&RUN chromatin profiling\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe main objective of the manuscript is to introduce an improved protocol for CUT&RUN and a peak calling algorithm. The authors made optimized the pA-MNase enzyme (now pAG-MNase), for easier purification and recognition of both mouse and rabbit primary antibodies. Furthermore, the authors suggest an improved high Ca2+/low salt CUT&RUN protocol that prevents overdigestion/nonspecific digestion. The authors also find that E. coli DNA carried over in the pAG-MNase purification is still present in CUT&RUN sequencing samples and can therefore be used to normalize CUT&RUN data. Lastly, a new peak calling algorithm is proposed for calling peaks in CUT&RUN data as it typically has low read number and high signal to noise ratio. Although this manuscript does not contain any biological findings or major changes to the current CUT&RUN protocol, it does communicate important improvements to a technique that many labs are interested in using.\n\nEssential revisions:\n\n1) All reviewers uniformly shared major concerns about the peak calling algorithm, and we summarize these here:\n\na) There are several different modes and the description how they differ and when each is appropriate wasn't clear.\n\nb) The sudden drop-off of SEACR with more data (going from 25M to 30M reads, Figure 5D) reveals a very concerning flaw in the model or a bug in the implementation. Performance should improve with more data in a downsampling experiment. The overall drop-off and poor performance present significant questions to its claim of robustness and general usability.\n\nc) Could MACS2 and HOMER algorithms perform comparably to SEACR simply by tuning their parameters (wasn't clear how much of an effort was made to do this, and we think that is important for algorithm benchmarking)? More comparisons to other factors would be helpful.\n\nd) SEACR does not provide any estimate of statistical significance to the assigned peaks compared to other methods. How are users to interpret confidence in peak calls?\n\ne) Why were the target blocks defined by contiguous regions of nonzero coverage rather than tiling windows?\n\nf) Figure 5 \u2013 label axes of (A)-(C) more clearly. These appear to be TPR vs. FPR using the encode logFDR<-10 peaks as a truth set; is that right? But should each peak caller at a given sampling depth have a summary value (auROC or auPR) rather than a point?\n\ng) Figure 6B \u2013 SEACR is more aggressive in aggregating long peaks but this seems sort of trivial (i.e. one could do something similar by padding and merging peaks)\n\nOverall, we felt that the other aspects of the manuscript were strong enough to warrant a path forward in the Research Advances format even if all the above items about the peak caller are not addressable.\n\n2) A high Calcium/Low salt procedure is included that reduces diffusion of the released complex. The data to support this lower diffusion is that signal to noise appears higher. However, direct evidence for lower diffusion within the nucleus is not provided. Background seems to be lower in specific example loci (e.g. shown in Figure 1B) \u2013 this should be quantified genome-wide (e.g.,% signal in peaks). The improvement appears to be more profound in some examples (H3K27ac, Figure 2\u2014figure supplement 1A) than others (H34Kme2, Figure 2\u2014figure supplement 1A). Also, are inter-sample correlations the best way to show signal:noise improvement? It would be more convincing with precision and recall (or similar) vs. high-confidence peaks.\n\n3) The authors claim that DNA carry over from E. coli in the pAG-MN preparation is a good substitute for the yeast genomic DNA spike in that is normally used. My concern about this is that this is not a well-controlled spike in, as the amount of E. coli DNA may well vary between batches of the purified PAG-MNase.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Improved CUT&RUN chromatin profiling and analysis tool\" for further consideration at eLife. Your revised article has been favorably evaluated by Detlef Weigel (Senior Editor), a Reviewing Editor, and three reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nAll three reviewers have examined the revised manuscript and feel that all points were addressed with the exception of the issues raised in items 1a-g regarding the peak caller. Importantly, all reviewers remain uniformly concerned about this aspect of the work and do not believe the revisions adequately addressed the points that were outlined. All reviewers believe that other aspects of this manuscript warrant publication and advocate for moving forward without the peak caller, which would expedite publication.\n\nHowever, if the authors would like to make additional revisions to the peak caller sections, we will re-review those and recommend directly addressing the items we initially raised:\n\n1b) The response to this point was to add an ad hoc \"genome coverage\" filter to effectively throw out reads and decrease noise. This is not a reasonable solution for a robust peak caller and only emphasizes the sensitivity of the method to read depth and noise.\n\n1c) Insufficient parameter exploration was provided to convincingly demonstrate that the other peak callers are inferior to SEACR. For example, in addition to changing MACS2 FDR, why have the authors not attempted to change the local \u03bb smoothing parameter, which would make MACS2 use a genome-wide Poisson threshold that is more equivalent to the single genome-wide threshold that SEACR uses? More informed parameter exploration beyond the single example provided here would make a stronger case.\n\n1d) The authors state that statistical model based FDRs are inferior to their empirical threshold, but the performance results only support such a statement under a limited and author-selected (yellow highlights in plots) range of read depths. Further, performance on additional antibodies (TFs, histone mods, etc.) should be presented before such a strong claim is made.\n\n1e) If \"contiguous signal blocks reflect real patterns of protein protection that should be incorporated into the peak calls.\" then why do the authors need to implement a \"genome coverage\" filter at high read depths? This statement is contradictory to the performance results and methods in the manuscript.\n\n1f) See point 1c above.\n\nOverall, the SEACR algorithm seems very sensitive to background noise levels, which may be highly variable across diverse labs that will implement the revised CUT&RUN technique. This could be a recipe for confusion and misinterpretation across the user base. For the collective reasons outlined above, we remain skeptical about including the peak caller in this manuscript. However, we would welcome immediate forward movement if this section is removed.\n",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d20389ec-bc09-42bd-83d7-520272b9a07d",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C1",
+      "claim": "CUT&RUN is a novel alternative to chromatin immunoprecipitation in which unfixed permeabilized cells are incubated with antibody, followed by binding of a protein A-Micrococcal Nuclease (pA/MNase) fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we described a novel alternative to chromatin immunoprecipitation, CUT&RUN, in which unfixed permeabilized cells are incubated with antibody, followed by binding of a protein A-Micrococcal Nuclease (pA/MNase) fusion protein (Skene and Henikoff, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Skene and Henikoff, 2017, which is the original publication describing CUT&RUN.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "731eb591-a210-40be-bd2b-b41574e5b04f",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C2",
+      "claim": "A hybrid protein A-Protein G-MNase construct expands antibody compatibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we introduce three enhancements to CUT&RUN: A hybrid protein A-Protein G-MNase construct that expands antibody compatibility and simplifies purification",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as one of three enhancements introduced in this manuscript. The manuscript presents experimental data showing the construct works with both rabbit and mouse antibodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "d7a58484-0058-47f3-a4d5-d18bf32b6ca9",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C3",
+      "claim": "A hybrid protein A-Protein G-MNase construct simplifies purification.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we introduce three enhancements to CUT&RUN: A hybrid protein A-Protein G-MNase construct that expands antibody compatibility and simplifies purification",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by the description of the 6-His tag purification protocol in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "82771c8f-96ca-473f-9a73-3f8ce84c6fe5",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C4",
+      "claim": "A modified digestion protocol inhibits premature release of the nuclease-bound complex.",
+      "claim_type": "EXPLICIT",
+      "source": "a modified digestion protocol that inhibits premature release of the nuclease-bound complex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by experimental data showing no DNA release in supernatant under high-calcium/low-salt conditions without elution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "a3bae220-a206-4205-a8be-7b3662673c86",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C5",
+      "claim": "E. coli DNA introduced with the fusion protein can be used as a calibration strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "a calibration strategy based on carry-over of E. coli DNA introduced with the fusion protein",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract and supported by experimental data showing high correlation (R\u00b2 = 0.97-0.99) between E. coli carry-over DNA and yeast spike-in DNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "1bd763d7-85f6-4b4a-b6ad-b278676c9cd4",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C6",
+      "claim": "CUT&RUN dramatically reduced non-specific backgrounds compared to ChIP-seq, requiring ~10 fold lower sequencing depth to obtain similar peak-calling performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our CUT&RUN method dramatically reduced non-specific backgrounds, such that ~10 fold lower sequencing depth was required to obtain similar peak-calling performance (Skene and Henikoff, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to the original CUT&RUN publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "7c414346-4b54-46e8-9f95-76c46e1f5d39",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C7",
+      "claim": "CUT&RUN provides near base-pair resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CUT&RUN provides near base-pair resolution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the introduction and is based on the original CUT&RUN publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "0eaf31a6-e27e-4d71-9ca5-8bcf377834d8",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C8",
+      "claim": "The most recently published benchtop CUT&RUN protocol is capable of profiling ~100 human cells for an abundant histone modification.",
+      "claim_type": "EXPLICIT",
+      "source": "our most recently published benchtop protocol is capable of profiling ~100 human cells for an abundant histone modification and ~1000 cells for a transcription factor (Skene et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Skene et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "2a8c709c-3708-4fe2-8d82-8745a74b9e16",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C9",
+      "claim": "The most recently published benchtop CUT&RUN protocol is capable of profiling ~1000 human cells for a transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "our most recently published benchtop protocol is capable of profiling ~100 human cells for an abundant histone modification and ~1000 cells for a transcription factor (Skene et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Skene et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "464f3eb6-60a7-4d1f-b821-05ff127f75d4",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C10",
+      "claim": "AutoCUT&RUN is a fully automated robotic version of CUT&RUN with high reproducibility and low cost, making it ideally suited for high-throughput epigenomic profiling of clinical samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplicity of CUT&RUN has also resulted in a fully automated robotic version (AutoCUT&RUN) in which the high reproducibility and low cost makes it ideally suited for high-throughput epigenomic profiling of clinical samples (Janssens et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Janssens et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "46854942-d57d-4b45-b65c-87c56746ed22",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C11",
+      "claim": "ChIP-seq has become practically synonymous with genome-wide chromatin profiling over the past decade.",
+      "claim_type": "EXPLICIT",
+      "source": "over the past decade, chromatin immunoprecipitation (ChIP) followed by sequencing (ChIP-seq) has become practically synonymous with genome-wide chromatin profiling (Landt et al., 2012; Schubert, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Landt et al., 2012 and Schubert, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "dd73542c-e627-4347-b6eb-f9c46b81dad3",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C12",
+      "claim": "The most widely used ChIP-seq protocols have limitations and are subject to artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the most widely used ChIP-seq protocols have limitations and are subject to artifacts (Jain et al., 2015; Park et al., 2013; Teves et al., 2016; Teytelman et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to publications describing ChIP-seq limitations and artifacts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "78472c3b-8810-4ca4-bbf6-4a0967faa98b",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C13",
+      "claim": "Solubilization of chromatin in ChIP results in sampling from the entire solubilized genome, requiring very deep sequencing to resolve sites of targeted protein binding above background.",
+      "claim_type": "EXPLICIT",
+      "source": "An inherent limitation to ChIP is that solubilization of chromatin, whether by sonication or enzymatic digestion, results in sampling from the entire solubilized genome, and this requires very deep sequencing so that the sites of targeted protein binding can be resolved above background (Landt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the introduction and supported by a citation to Landt et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "bc26ca21-7ec0-480c-ba66-44c6ca0b5520",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C14",
+      "claim": "In CUT&RUN, cells or nuclei remain intact throughout the procedure and only the targeted sites of binding are released into solution.",
+      "claim_type": "EXPLICIT",
+      "source": "In CUT&RUN, cells or nuclei remain intact throughout the procedure and only the targeted sites of binding are released into solution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the introduction and is based on the fundamental principle of the CUT&RUN method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "e3fd1d0e-c42e-48ac-9f27-9e0bb2d16e10",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C15",
+      "claim": "CUT&RUN is based on the chromatin immunocleavage (ChIC)-targeted nuclease strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this limitation, we introduced Cleavage Under Targets and Release Using Nuclease (CUT&RUN) (Skene and Henikoff, 2017), which is based on the chromatin immunocleavage (ChIC)-targeted nuclease strategy (Schmid et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to both the original CUT&RUN publication and the ChIC publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "f8bd1e8c-aca6-4f35-9cd3-33502bf4c4e8",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C16",
+      "claim": "Materials from the CUT&RUN method have been distributed to >600 laboratories world-wide since publication of the eLife paper.",
+      "claim_type": "EXPLICIT",
+      "source": "since publication of our eLife paper we have distributed materials to >600 laboratories world-wide",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the introduction as a factual statement about distribution of materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "bce04a22-3a29-4e16-abc9-33ff5b4881e4",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C17",
+      "claim": "The pA/MNase fusion protein is not commercially available at the time of writing.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the method requires a fusion protein that is not at this writing commercially available",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the introduction as a factual observation about reagent availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "48a6768e-9d4e-48d8-83be-62bdf51a548f",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C18",
+      "claim": "The published pA/MNase purification protocol is cumbersome, which effectively restricts dissemination of the method.",
+      "claim_type": "EXPLICIT",
+      "source": "the published pA/MNase purification protocol is cumbersome, which effectively restricts dissemination of the method",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the introduction as a motivation for developing the improved construct.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "6dae836d-e303-4d39-91b6-7603083d4ad8",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C19",
+      "claim": "The original CUT&RUN protocols are sensitive to digestion time, with under-digestion resulting in low yield and over-digestion resulting in premature release of pA/MNase-bound complexes that can digest accessible DNA sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the original protocols are sensitive to digestion time, in that under-digestion results in low yield and over-digestion can result in pre-mature release of pA/MNase-bound complexes that can digest accessible DNA sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the introduction as a limitation of the original protocol.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "aa74cf07-c84a-477d-9a5d-e44fe6c5ce0b",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C20",
+      "claim": "The pK19-pA-MN plasmid requires purification from lysates of Escherichia coli overexpressing cells using an immunoglobulin G (IgG) column.",
+      "claim_type": "EXPLICIT",
+      "source": "The pA/MNase fusion protein produced by the pK19-pA-MN plasmid (Schmid et al., 2004) requires purification from lysates of Escherichia coli overexpressing cells using an immunoglobulin G (IgG) column",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section and supported by a citation to Schmid et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "ac42ecbb-c118-4c3b-9cdf-0ebac3df8d2e",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C21",
+      "claim": "Elution of pA/MNase with low pH followed by neutralization has resulted in variations between batches.",
+      "claim_type": "EXPLICIT",
+      "source": "elution with low pH followed by neutralization has resulted in variations between batches",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as an observation about the original purification protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "b424a822-06df-4622-aaf4-ab3a92b3ff0a",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C22",
+      "claim": "A 6-His tag was added into the pK19-pA-MN fusion protein to improve the purification protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve the purification protocol, we added a 6-His tag (Bornhorst and Falke, 2000) into the pK19-pA-MN fusion protein (Figure 1A and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by a citation and figures showing the construct design.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "53cb3ec4-21b6-4ccf-a58d-3533e70e6943",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C23",
+      "claim": "The 6-His tag allows for simple and gentle purification on a nickel resin column.",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed for simple and gentle purification on a nickel resin column (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by a figure showing the purification result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "08210309-eb1c-4ae4-92f1-98f5b0321c50",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C24",
+      "claim": "A commercial 6-His-cobalt resin kit yielded pure highly active enzyme from a 20 ml culture, enough for ~10,000 reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that a commercial 6-His-cobalt resin kit also yielded pure highly active enzyme from a 20 ml culture, enough for ~10,000 reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as an experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "876a8a2d-82f7-4dcb-bcf8-54a7cc4770fc",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C25",
+      "claim": "When used in excess, there is no increase in release of background fragments with the pAG/MNase fusion protein, indicating that washes are effective in removing unbound fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when used in excess, there is no increase in release of background fragments (Figure 1\u2014figure supplement 2), which indicates that the washes are effective in removing unbound fusion protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "953381a9-e89e-4e95-b673-2c06fe5cb8df",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C26",
+      "claim": "Protein A binds well to rabbit, goat, donkey and guinea pig IgG antibodies, but poorly to mouse IgG1.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein A binds well to rabbit, goat, donkey and guinea pig IgG antibodies, but poorly to mouse IgG1, and so for most mouse antibodies, Protein G is generally used (Fishman and Berg, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section and supported by a citation to Fishman and Berg, 2019.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "d09eb2b0-5f47-480a-88c6-56aa7a1ead96",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C27",
+      "claim": "For most mouse antibodies, Protein G is generally used.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein A binds well to rabbit, goat, donkey and guinea pig IgG antibodies, but poorly to mouse IgG1, and so for most mouse antibodies, Protein G is generally used (Fishman and Berg, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section and supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "f7b73ab9-1950-4a09-a651-217f707ad28a",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C28",
+      "claim": "A single Protein G domain was encoded adjacent to the Protein A domain in the pK19-pA-MN plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "To further improve the versatility of the MNase fusion protein, we encoded a single Protein G domain adjacent to the Protein A domain in the pK19-pA-MN plasmid (Eliasson et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section and supported by a citation to Eliasson et al., 1988.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "4a046be4-ae0c-409f-aa95-6b2f1344f44a",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C29",
+      "claim": "Three residues in the Protein G coding sequence were mutated to further increase binding for rabbit antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we mutated three residues in the Protein G coding sequence to further increase binding for rabbit antibodies (Jha et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section and supported by a citation to Jha et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "34612adb-b204-4a1b-b1eb-47ba28c1d0eb",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C30",
+      "claim": "The pAG/MNase fusion protein binds strongly to most commercial antibodies without requiring a secondary antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted in a fusion protein that binds strongly to most commercial antibodies without requiring a secondary antibody.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as a consequence of the Protein A/G hybrid design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "9f907c41-e945-43fe-94c2-9d0fe12417f8",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C31",
+      "claim": "pAG/MNase allows CUT&RUN to be performed without requiring a secondary antibody for mouse primary monoclonal antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for ordinary CUT&RUN applications pAG/MNase behaves very similarly to pA/MNase, but is more easily purified and is more versatile, for example allowing us to perform CUT&RUN without requiring a secondary antibody for mouse primary monoclonal antibodies (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "2f517cee-0420-468a-bd14-ff50d9dec041",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C32",
+      "claim": "pAG/MNase behaves very similarly to pA/MNase for ordinary CUT&RUN applications.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for ordinary CUT&RUN applications pAG/MNase behaves very similarly to pA/MNase, but is more easily purified and is more versatile",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as an experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "d7168092-ef29-431c-8dd1-99581792d8ab",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C33",
+      "claim": "pAG/MNase is more easily purified than pA/MNase.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that for ordinary CUT&RUN applications pAG/MNase behaves very similarly to pA/MNase, but is more easily purified and is more versatile",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as an experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "35848da8-a592-4c9f-a94c-69915b2e5a6e",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C34",
+      "claim": "When fragments are released by cleavage in the presence of Ca++ ions, the associated pA/MNase complex can digest accessible DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "When fragments are released by cleavage in the presence of Ca++ ions, the associated pA/MNase complex can digest accessible DNA (Skene and Henikoff, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section and supported by a citation to the original CUT&RUN publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "9b34d1fc-9577-4265-b381-38cfe397d3f2",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C35",
+      "claim": "Performing digestion at 0\u00b0C minimizes the artifact of pA/MNase digesting accessible DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although performing digestion at 0\u00b0C minimizes this artifact",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as an established practice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "1687660b-861a-4d37-b22e-3ef0f83e887a",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C36",
+      "claim": "Nucleosome core particles aggregate in high-divalent-cation and low-salt conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the observation that nucleosome core particles aggregate in high-divalent-cation and low-salt conditions (de Frutos et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to de Frutos et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "6c100225-8ebc-4769-a24b-413af76d5f7e",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C37",
+      "claim": "Digestion in 10 mM CaCl2 and 3.5 mM HEPES pH 7.5 results in chromatin being digested with no detectable release of fragments into the supernatant.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we performed digestions in 10 mM CaCl2 and 3.5 mM HEPES pH 7.5. Under these high-calcium/low-salt conditions, chromatin is digested with no detectable release of fragments into the supernatant (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "4da57d7f-0fdb-490b-8f48-b090b078dbae",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C38",
+      "claim": "High-calcium/low-salt digestion conditions are compatible with direct end-polishing and ligation used for AutoCUT&RUN.",
+      "claim_type": "EXPLICIT",
+      "source": "These conditions are compatible with direct end-polishing and ligation used for AutoCUT&RUN (Janssens et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section and supported by a citation to Janssens et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "ac839b83-8781-438d-b666-4cc06dfe3b6b",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C39",
+      "claim": "Retention of cleaved fragments within the nucleus under high-divalent cation/low-salt conditions could facilitate single-cell application of CUT&RUN.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, retention of the cleaved fragments within the nucleus under high-divalent cation/low-salt conditions could facilitate single-cell application of CUT&RUN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as a speculative possibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "855a67f4-399f-4381-a54a-e7b50f78134f",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C40",
+      "claim": "The high-calcium/low-salt protocol provided similar results using either pA/MNase and pAG/MNase.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-calcium/low-salt protocol provided similar results using either pA/MNase and pAG/MNase (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "40dec199-8cd2-446a-a283-0dd6eefdb90d",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C41",
+      "claim": "Similar results were obtained with either high-calcium/low-salt or standard protocol for digestion time points over a ~ 30 fold range and for both supernatant and total DNA extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "We also obtained similar results with either protocol for digestion time points over a ~ 30 fold range and for both supernatant and total DNA extraction (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "fbf855bf-ed38-4092-be59-c25259011ccd",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C42",
+      "claim": "Libraries produced using the high-calcium/low-salt protocol showed improved consistency relative to the standard protocol when digested over an extended time-course for antibodies to H3K27ac.",
+      "claim_type": "EXPLICIT",
+      "source": "For antibodies to H3K27ac, libraries produced using the high-calcium/low-salt protocol showed improved consistency relative to the standard protocol when digested over an extended time-course (Figure 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "5652405a-84e5-409a-b95d-a9c50b3c1129",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C43",
+      "claim": "Preventing release of particles during digestion avoids their premature release where they would artifactually digest accessible DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "presumably because preventing release of particles during digestion avoids their premature release where they would artifactually digest accessible DNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as an inference to explain the improved consistency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "c531f7b1-e30f-4034-87a0-e9c5eaa747aa",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C44",
+      "claim": "Close correlations between high-calcium/low-salt H3K27ac datasets for time points over a ~ 100 fold range occur with corresponding increases in the yield of fragments released into the supernatant during subsequent elution.",
+      "claim_type": "EXPLICIT",
+      "source": "The close correlations between high-calcium/low-salt H3K27ac datasets for time points over a ~ 100 fold range occur with corresponding increases in the yield of fragments released into the supernatant during subsequent elution (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "1c006feb-b3ba-44d4-b20b-7da718cc960f",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C45",
+      "claim": "Longer digestion times result in higher yields with high signal-to-noise throughout the digestion series.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that longer digestion times result in higher yields, with high signal-to-noise throughout the digestion series (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "13673148-846f-418c-9b79-964b3c9b089c",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C46",
+      "claim": "The high-calcium/low-salt modification of CUT&RUN can reduce the risk of overdigestion for abundant epitopes such as H3K27ac, where premature release of pA-MNase-bound chromatin particles can increase background.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this modification of CUT&RUN can reduce the risk of overdigestion for abundant epitopes such as H3K27ac, where premature release of pA-MNase-bound chromatin particles can increase background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as a conclusion from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "7dee7d18-7edd-4a78-a2ce-3dfde2e20a5a",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C47",
+      "claim": "CUT&RUN can be performed on insoluble protein complexes by extracting total DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that CUT&RUN can be performed on insoluble protein complexes by extracting total DNA (Skene and Henikoff, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to the original CUT&RUN publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "0ff5c72e-a306-4f85-b668-0244e9473b93",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C48",
+      "claim": "CUT&RUN can be performed on insoluble protein complexes by performing salt fractionation of the bead-bound cells and extracting DNA from the residual pellet.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that CUT&RUN can be performed on insoluble protein complexes by extracting total DNA (Skene and Henikoff, 2017) or by performing salt fractionation of the bead-bound cells and extracting DNA from the residual pellet (Thakur and Henikoff, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Thakur and Henikoff, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "0cf45579-109a-42a5-b4cd-f8e3a9ddd9ee",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C49",
+      "claim": "RNA polymerase II (RNAPII) from animal cells is insoluble when engaged.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA polymerase II (RNAPII) from animal cells is insoluble when engaged (Mayer et al., 2015; Weber et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mayer et al., 2015 and Weber et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "080723fc-6f89-4354-89f0-f8bf935d1a5b",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C50",
+      "claim": "RNAPII requires harsh treatments for quantitative profiling using ChIP.",
+      "claim_type": "EXPLICIT",
+      "source": "and requires harsh treatments for quantitative profiling using ChIP (Skene and Henikoff, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Skene and Henikoff, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "2bdc2eb2-a020-4f75-9338-6d7b5628e94b",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C51",
+      "claim": "Serine-5-phosphate on the C-terminal domain (CTD) of the Rpb1 subunit of RNAPII is enriched in the initiating form of RNAPII.",
+      "claim_type": "EXPLICIT",
+      "source": "This CTD phosphorylation is enriched in the initiating form of RNAPII",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as established knowledge about RNAPII phosphorylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "f170d051-4f6c-44d4-868c-6b6f691237ba",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C52",
+      "claim": "Similar genic profiles were observed for supernatant and total DNA extraction when profiling Serine-5-phosphate on the CTD of RNAPII.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed similar genic profiles for supernatant and total DNA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "7cf4661e-cd3f-49e8-a95c-197b22019ca3",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C53",
+      "claim": "It is common to use background levels to calibrate ChIP-seq samples in a series and to define and compare peaks for peak-calling.",
+      "claim_type": "EXPLICIT",
+      "source": "It is common to use background levels to calibrate ChIP-seq samples in a series and to define and compare peaks for peak-calling (Landt et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Landt et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "6f0d29ac-957d-42d3-a213-1975eccb8e1e",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C54",
+      "claim": "The extremely low backgrounds of CUT&RUN led to a calibration strategy based on spike-in of heterologous DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the extremely low backgrounds of CUT&RUN led us to a calibration strategy based on spike-in of heterologous DNA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as a consequence of the low background in CUT&RUN.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "7617cb23-066a-4a43-b58c-f6e62fce0579",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C55",
+      "claim": "Spike-in of heterologous DNA has been generally recommended for all situations in which samples in a series are to be compared.",
+      "claim_type": "EXPLICIT",
+      "source": "which has been generally recommended for all situations in which samples in a series are to be compared (Chen et al., 2015; Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2015 and Hu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "254651c8-2697-47f9-b633-50fdd084c8ac",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C56",
+      "claim": "Mapping reads to both the spike-in genome and the E. coli genome resulted in almost perfect correlation (R2 = 0.97) between S. cerevisiae and E. coli in an experiment using pA/MNase in which the number of cells was varied over several orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we noticed that mapping reads to both the spike-in genome and the E. coli genome resulted in almost perfect correlation (R2 = 0.97) between S. cerevisiae and E. coli in an experiment using pA/MNase in which the number of cells was varied over several orders of magnitude (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "5409aac2-05c9-4527-bdf2-7b14c73f56a9",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C57",
+      "claim": "Near-perfect correlations (R2 = 0.96\u20130.99) between yeast spike-in and carry-over E. coli DNA were seen in series using the same batch of pAG/MNase with high-calcium/low-salt digestion conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Near-perfect correlations (R2 = 0.96\u20130.99) between yeast spike-in and carry-over E. coli DNA were also seen in series using the same batch of pAG/MNase with high-calcium/low-salt digestion conditions (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "0cd74203-ead4-486e-b96e-a59ec6d26fa1",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C58",
+      "claim": "Near-perfect correlations (R2 = 0.96\u20130.99) between yeast spike-in and carry-over E. coli DNA were seen for both supernatant release and extraction and total DNA extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "and for both supernatant release and extraction and total DNA extraction (Figure 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "aeac6190-52a4-4aa0-a52f-2d7414ccde26",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C59",
+      "claim": "The strong positive correlations between yeast spike-in and E. coli carry-over are not accounted for by cross-mapping of the yeast spike-in to the E. coli genome.",
+      "claim_type": "EXPLICIT",
+      "source": "These strong positive correlations are not accounted for by cross-mapping of the yeast spike-in to the E. coli genome, because omitting the spike-in for a low-abundance epitope resulted in very few yeast counts with high levels of E. coli counts (blue symbol in Figure 5C\u2013D panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by experimental data showing that omitting spike-in still yields E. coli counts but not yeast counts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "8ea935f0-31e6-46f8-9d19-94d43f4e4641",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C60",
+      "claim": "The source of E. coli DNA is carried over from purification of pA/MNase and pAG/MNase.",
+      "claim_type": "EXPLICIT",
+      "source": "As the source of E. coli DNA is carried over from purification of pA/MNase and pAG/MNase, the close correspondence provides confirmation of the accuracy of our heterologous spike-in procedure (Skene and Henikoff, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as an inference about the source of E. coli DNA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "fcefb719-a53d-40a9-a201-ed1571ea729b",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C61",
+      "claim": "The close correspondence between E. coli carry-over and yeast spike-in provides confirmation of the accuracy of the heterologous spike-in procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "As the source of E. coli DNA is carried over from purification of pA/MNase and pAG/MNase, the close correspondence provides confirmation of the accuracy of our heterologous spike-in procedure (Skene and Henikoff, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section and supported by the high correlation data and a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "eae558bb-2b4c-43fa-b688-1bd164f6ec9b",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C62",
+      "claim": "Carry-over E. coli DNA is introduced at an earlier step than heterologous spike-in DNA and is cleaved to small mappable fragments that are released during digestion and elution.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as carry-over E. coli DNA is introduced at an earlier step, and is cleaved to small mappable fragments that are released during digestion and elution, it provides a more desirable calibration standard than using heterologous DNA (Chen et al., 2015; Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as an inference about the properties of E. coli carry-over DNA.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "500f6d8c-eaaa-41b3-afa7-cb1cf2e3cb4a",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C63",
+      "claim": "Carry-over E. coli DNA provides a more desirable calibration standard than using heterologous DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as carry-over E. coli DNA is introduced at an earlier step, and is cleaved to small mappable fragments that are released during digestion and elution, it provides a more desirable calibration standard than using heterologous DNA (Chen et al., 2015; Hu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as a conclusion based on the properties of E. coli carry-over DNA.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "d93d75fe-545e-4441-8f3f-276c30c4d814",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C64",
+      "claim": "High correlations were seen between S. cerevisiae spike-in and E. coli carry-over DNA for pA-MNase in batches that have been distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "High correlations were also seen between S. cerevisiae spike-in and E. coli carry-over DNA for pA-MNase in batches that we have distributed (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in the Results section and supported by data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "16ceeb59-fd44-4cca-a342-d5b3162fca87",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C65",
+      "claim": "Data for nearly all CUT&RUN experiments performed thus far can be recalibrated post-hoc whether or not a spike-in calibration standard had been added.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, data for nearly all CUT&RUN experiments performed thus far can be recalibrated post-hoc whether or not a spike-in calibration standard had been added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as a conclusion based on the E. coli carry-over findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "f1051a02-c9d9-4474-900a-de259861c28b",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C66",
+      "claim": "Concanavalin A binds to glycosylated immunoglobulins.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, we note that Concanavalin A binds to glycosylated immunoglobulins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as established knowledge about Concanavalin A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "4c6aa1f6-0e9d-44c0-8877-e407309ae73d",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C67",
+      "claim": "Successive treatments of Con A bead-bound cells with excess antibody and Protein A(G)/MNase fusion protein will affix an amount of carry-over E. coli DNA to beads in proportion to the number of beads.",
+      "claim_type": "EXPLICIT",
+      "source": "and so the successive treatments of Con A bead-bound cells with excess antibody and Protein A(G)/MNase fusion protein will affix an amount of carry-over E. coli DNA to beads in proportion to the number of beads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as an inference to explain the proportionality of E. coli carry-over.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "5d1357f5-28a3-411b-ad80-b14b2aae91e7",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C68",
+      "claim": "Use of a constant number of beads for all samples in a series results in a constant amount of carry-over E. coli DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our use of a constant number of beads for all samples in a series to be compared would then have resulted in a constant amount of carry-over E. coli DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as an inference to explain the calibration mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "8acecf82-7bd6-4949-b771-0f79f22d839f",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C69",
+      "claim": "A similar inference of E. coli carry-over DNA suitable for calibration was noted for CUT&Tag.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar inference of E. coli carry-over DNA suitable for calibration was noted for CUT&Tag (Kaya-Okur et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kaya-Okur et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "b764826e-494e-4ffa-82e0-a6e2f30f7151",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C70",
+      "claim": "The calibration strategy using E. coli carry-over might serve as a more general replacement for conventional spike-ins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our calibration strategy might serve as a more general replacement for conventional spike-ins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Results section as a speculative conclusion.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "7f7ccc6e-f295-4b81-be94-399d5684dc4e",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C71",
+      "claim": "The advantages of CUT&RUN over ChIP-seq has led to its rapid adoption since its introduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Since its introduction in our original eLife paper (Skene and Henikoff, 2017), the advantages of CUT&RUN over ChIP-seq has led to its rapid adoption",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Conclusions section and supported by the citation and the list of publications adopting CUT&RUN.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "0da1e345-f973-41d4-a2ab-6f2a55cf5178",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C72",
+      "claim": "New CUT&RUN protocols have been published for low cell numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "including publication of new CUT&RUN protocols for low cell numbers (Hainer and Fazzio, 2019; Skene et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hainer and Fazzio, 2019 and Skene et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "38aa4120-36a1-4a44-808b-9e779c5f955c",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C73",
+      "claim": "New CUT&RUN protocols have been published for plant tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "for plant tissues (Zheng and Gehring, 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zheng and Gehring, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "9f7439dd-503e-4b5e-91c2-0816f187c347",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C74",
+      "claim": "New CUT&RUN protocols have been published for high-throughput applications.",
+      "claim_type": "EXPLICIT",
+      "source": "and for high-throughput (Janssens et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Janssens et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "dbf90aa8-b7e0-41e9-80c5-f748fa1ce01e",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C75",
+      "claim": "The new CUT&RUN advances described in this manuscript are likely to be useful when applied in all of the published CUT&RUN protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "The new CUT&RUN advances that we describe here are likely to be useful when applied in all of these protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Conclusions section as a speculative statement about the utility of the improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "5a91a4ff-9731-4a27-b955-811457131921",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C76",
+      "claim": "The improved CUT&RUN fusion construct simplifies reagent purification.",
+      "claim_type": "EXPLICIT",
+      "source": "Our improved CUT&RUN fusion construct simplifies reagent purification",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Conclusions section and supported by the experimental data on purification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "791af46d-766d-4c77-96f1-c30e97d1bd62",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C77",
+      "claim": "The improved CUT&RUN fusion construct eliminates the requirement for a secondary antibody against mouse primary antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "and eliminates the requirement for a secondary antibody against mouse primary antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Conclusions section and supported by the experimental data showing direct use of mouse antibodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "b2d62e61-761f-4072-8113-167ee14aff66",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C78",
+      "claim": "The high-calcium/low-salt protocol minimizes time-dependent variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our high-calcium/low-salt protocol minimizes time-dependent variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Conclusions section and supported by the correlation data across time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "19637af2-0e85-4232-a7ff-986f49d56cff",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C79",
+      "claim": "Carry-over E. coli DNA almost perfectly correlates with an added spike-in.",
+      "claim_type": "EXPLICIT",
+      "source": "Our discovery that carry-over E. coli DNA almost perfectly correlates with an added spike-in",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Conclusions section and supported by the correlation data (R\u00b2 = 0.96-0.99).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "8089e76a-f243-410c-987d-7aa9d5d09958",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C80",
+      "claim": "Carry-over E. coli DNA can be used as a spike-in calibration proxy, even post-hoc simply by counting reads mapping to the E. coli genome in existing CUT&RUN datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "upgrades a contaminant to a resource that can be used as a spike-in calibration proxy, even post-hoc simply by counting reads mapping to the E. coli genome in existing CUT&RUN datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Conclusions section and supported by the correlation data and inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "d8f40e18-cd10-4aa9-9064-d0c5c5be7d8a",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C81",
+      "claim": "K562 cells were purchased from ATCC (#CCL-243).",
+      "claim_type": "EXPLICIT",
+      "source": "K562 cells were purchased from ATCC (#CCL-243)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Materials and methods section as a factual statement about cell source.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "1f046aa0-d0fe-4459-8225-b252eb84f971",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C82",
+      "claim": "K562 cells tested negative for mycoplasma contamination using MycoProbe kit.",
+      "claim_type": "EXPLICIT",
+      "source": "All tested negative for mycoplasma contamination using MycoProbe kit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Materials and methods section as a quality control result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "ab72b4d9-6b0b-49ab-a58d-774ecea9eba1",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C89",
+      "claim": "CUT&RUN for both rabbit and mouse RNAPII-Ser5phosphate using pAG/MNase can be performed with either supernatant or total cellular extract.",
+      "claim_type": "EXPLICIT",
+      "source": "The Protein A/G hybrid fusion results in high-efficiency CUT&RUN for both rabbit and mouse primary antibodies. CUT&RUN for both rabbit and mouse RNAPII-Ser5phosphate using pAG/MNase were extracted from either the supernatant or the total cellular extract.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in Figure 1 caption and shown in Figure 1B tracks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "a878865d-48ae-4129-b253-9c996694b814",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C90",
+      "claim": "NPAT is a transcription factor that co-activates histone genes.",
+      "claim_type": "EXPLICIT",
+      "source": "where NPAT is a transcription factor that co-activates histone genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in Figure 1 caption as established knowledge about NPAT function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "faeabda9-3c8b-41d0-ae12-4b20efb71ddd",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C91",
+      "claim": "The cobalt kit yielded more protein per volume of starting material than the nickel protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained using either the nickel or cobalt protocol, although the cobalt kit alleviated the need for a sonicator, using a fifth of the starting material from either fresh culture or a cell pellet frozen in lysis buffer, and yielded more protein per volume of starting material.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Materials and methods section as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "60373a75-5498-45f4-8cdc-5097a233358b",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C92",
+      "claim": "With the cobalt kit, 20 ml of culture yielded ~100 \u00b5g of fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "With the cobalt kit, 20 ml of culture yielded ~100 \u00b5g of fusion protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the Materials and methods section as an experimental result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "6068c75f-984d-4e51-8261-eebaefde0899",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C93",
+      "claim": "Adding antibody first led to increased recovery of both yeast and E. coli DNA relative to human DNA, indicative of loss of cells prior to addition of fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding antibody first led to increased recovery of both yeast and E. coli DNA relative to human DNA, indicative of loss of cells prior to addition of fusion protein, possibly caused by loss of digitonin solubilization of membrane sugars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in Table 1 caption as an interpretation of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "702aff72-d7c5-46d7-b321-a8961d84df7b",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C94",
+      "claim": "Loss of cells when adding antibody first is possibly caused by loss of digitonin solubilization of membrane sugars.",
+      "claim_type": "EXPLICIT",
+      "source": "possibly caused by loss of digitonin solubilization of membrane sugars.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in Table 1 caption as a speculative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "5de3641b-5b4c-4693-9cd6-0103ba7f6f27",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "claim_id": "C95",
+      "claim": "Carry-over E. coli DNA correlates closely with the heterologous spike-in for both fusion proteins and both low-salt/high-calcium and standard digestion conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Carry-over E. coli DNA correlates closely with the heterologous spike-in for both fusion proteins and both low-salt/high-calcium and standard digestion conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is stated in Table 1 title and supported by the correlation values shown in the table.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "75c20336-e18f-45ea-8bd6-bbf838cb3285",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed an improved pAG/MNase fusion protein by adding a 6-His tag for simplified purification and incorporating a Protein G domain to expand antibody compatibility. The construct enables direct use of mouse antibodies without secondary antibodies and yields ~100 \u00b5g of pure, highly active enzyme from 20 ml culture using a commercial cobalt kit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C33 provide converging experimental evidence for the improved construct: the 6-His tag enables simple purification (C23, C91-C92), the Protein A/G hybrid binds both rabbit and mouse antibodies (C26-C31, Figure 1B), and excess fusion protein does not increase background (C25). The construct performs similarly to the original pA/MNase while being easier to purify (C32-C33).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a high-calcium/low-salt digestion protocol (10 mM CaCl2, 3.5 mM HEPES pH 7.5) that prevents premature release of cleaved chromatin fragments during digestion. This modification reduces time-dependent variability, particularly for abundant epitopes like H3K27ac, by preventing pA/MNase-bound complexes from artifactually digesting accessible DNA sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C40-C42, and C44-C45 provide strong experimental support: Figure 2 shows no detectable DNA release without elution under high-calcium conditions (C37), correlation matrices demonstrate improved consistency across time points (C42, Figure 4), and yields increase with digestion time while maintaining high signal-to-noise (C44-C45). The mechanistic explanation based on nucleosome aggregation (C36) is supported by citation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "ab9b29e8-9ad7-43be-8071-69f7bc497260",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors discovered that E. coli DNA carried over from fusion protein purification correlates nearly perfectly (R\u00b2 = 0.96-0.99) with intentionally added yeast spike-in DNA across multiple experimental conditions. This carry-over DNA can serve as an internal calibration standard, enabling post-hoc normalization of existing CUT&RUN datasets without requiring spike-in addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 provide strong quantitative evidence with high R\u00b2 values across multiple conditions (Figures 5A-D, Table 1). The correlation is not due to cross-mapping (C59), and the mechanistic explanation involving ConA bead binding (C66-C68) is reasonable. However, the claim that this works for \"nearly all\" past experiments (C65) may be overstated without broader validation across different laboratories and batches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "f43e3a2b-e4fd-4ad0-b040-c82aa037e72e",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors demonstrate that CUT&RUN can profile insoluble chromatin-associated proteins like RNA polymerase II Ser5-phosphate using either supernatant or total DNA extraction, yielding similar genic profiles with both rabbit and mouse antibodies when using pAG/MNase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 establish the precedent for profiling insoluble complexes (supported by citations), C49-C51 provide context about RNAPII properties, and C52 and C89 show experimental validation with similar profiles for both extraction methods (Figure 1B). The data support the technical feasibility of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "62e7056d-3a43-4528-8ac7-168065e75dae",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The original CUT&RUN protocol is sensitive to digestion time, with under-digestion causing low yield and over-digestion causing premature release of pA/MNase-bound complexes that can digest accessible DNA sites, though performing digestion at 0\u00b0C minimizes this artifact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 identifies the limitation motivating the high-calcium protocol development. Claims C34-C35 provide mechanistic context supported by citation (C34) and established practice (C35). This limitation is directly addressed by the high-calcium/low-salt protocol results (Result 2).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "f28c0a15-0e5a-42be-84cb-c2dd81e92ebc",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The original pA/MNase fusion protein requires cumbersome purification using an IgG column with low pH elution, resulting in batch-to-batch variability and limiting method dissemination due to lack of commercial availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 identify the practical limitations motivating the improved construct, while C20-C21 describe the technical issues with the original purification protocol. These claims establish the rationale for developing the improved pAG/MNase construct with 6-His tag purification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CUT&RUN is an established chromatin profiling method that has been rapidly adopted by >600 laboratories worldwide, with advantages over ChIP-seq including 10-fold lower sequencing depth, near base-pair resolution, low cell number capability, and compatibility with various applications including automation, low cell numbers, plant tissues, and high-throughput profiling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide background context supported by multiple citations to prior work (C1, C6-C15) and evidence of adoption (C16, C71-C74). All claims are appropriately attributed to prior publications or stated as factual observations. This establishes the foundation and motivation for the current improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "c0ce6ce1-5202-4fca-ae59-9eb6bf452aa8",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The extremely low backgrounds of CUT&RUN necessitated a calibration strategy based on spike-in of heterologous DNA, which has been generally recommended for comparing samples in a series, in contrast to ChIP-seq which uses background levels for calibration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C55 establish the context for the E. coli carry-over discovery by explaining current calibration practices. C53 describes ChIP-seq practice (supported by citation), while C54-C55 explain the CUT&RUN spike-in strategy (also supported by citations). This provides the rationale for Result 3.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "6cfbbc4f-566e-4619-a719-5ea6515f67dd",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "K562 cells used in the study were purchased from ATCC and tested negative for mycoplasma contamination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 provide standard methodological quality control information. The cell line source is documented and contamination testing was performed, meeting basic experimental standards.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "1ac0afd2-211f-4bc9-9dd8-7a9d7da8aef0",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The high-calcium/low-salt digestion conditions are compatible with direct end-polishing and ligation used for AutoCUT&RUN and could potentially facilitate single-cell applications of CUT&RUN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C38 regarding AutoCUT&RUN compatibility is supported by citation but lacks direct experimental validation in this manuscript. Claim C39 about single-cell applications is explicitly speculative (\"could facilitate\") with no supporting data. These potential applications require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "4b32e255-c0b4-416f-a104-4563404f7454",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The E. coli carry-over calibration strategy might serve as a more general replacement for conventional spike-ins in other chromatin profiling methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is explicitly speculative (\"might serve\") and extends beyond the CUT&RUN data presented. While C69 notes similar observations in CUT&Tag, broader applicability to other methods requires experimental validation. The generalizability claim is premature without testing in diverse experimental contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "5189abd5-7c41-4fb1-9223-1a3170277e7e",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Adding antibody before ConA beads leads to increased recovery of yeast and E. coli DNA relative to human DNA, possibly due to loss of digitonin solubilization of membrane sugars causing cell loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C93 presents an experimental observation from Table 1, but C94 offers only a speculative mechanistic explanation without supporting evidence. The observation is documented but the proposed mechanism requires validation. The practical implication (order of addition matters) is clear, but the underlying cause remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    },
+    {
+      "id": "75bbbe7b-adb2-44b0-ae45-72ff74b44984",
+      "content_id": "c4028c33-1024-41ac-b6d7-4295462efe5f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "NPAT is a transcription factor that co-activates histone genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 states established biological knowledge about NPAT function, used to provide context for Figure 1B tracks showing the histone gene cluster. This is general knowledge appropriately applied to interpret the experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:46:58.413458Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "731eb591-a210-40be-bd2b-b41574e5b04f",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "d7a58484-0058-47f3-a4d5-d18bf32b6ca9",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "b424a822-06df-4622-aaf4-ab3a92b3ff0a",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "53cb3ec4-21b6-4ccf-a58d-3533e70e6943",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "08210309-eb1c-4ae4-92f1-98f5b0321c50",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "876a8a2d-82f7-4dcb-bcf8-54a7cc4770fc",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "953381a9-e89e-4e95-b673-2c06fe5cb8df",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "d09eb2b0-5f47-480a-88c6-56aa7a1ead96",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "f7b73ab9-1950-4a09-a651-217f707ad28a",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "4a046be4-ae0c-409f-aa95-6b2f1344f44a",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "34612adb-b204-4a1b-b1eb-47ba28c1d0eb",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "9f907c41-e945-43fe-94c2-9d0fe12417f8",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "2f517cee-0420-468a-bd14-ff50d9dec041",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "d7168092-ef29-431c-8dd1-99581792d8ab",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "5a91a4ff-9731-4a27-b955-811457131921",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "791af46d-766d-4c77-96f1-c30e97d1bd62",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "faeabda9-3c8b-41d0-ae12-4b20efb71ddd",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "60373a75-5498-45f4-8cdc-5097a233358b",
+      "result_id": "75c20336-e18f-45ea-8bd6-bbf838cb3285"
+    },
+    {
+      "claim_id": "82771c8f-96ca-473f-9a73-3f8ce84c6fe5",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "35848da8-a592-4c9f-a94c-69915b2e5a6e",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "9b34d1fc-9577-4265-b381-38cfe397d3f2",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "1687660b-861a-4d37-b22e-3ef0f83e887a",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "6c100225-8ebc-4769-a24b-413af76d5f7e",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "4da57d7f-0fdb-490b-8f48-b090b078dbae",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "ac839b83-8781-438d-b666-4cc06dfe3b6b",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "855a67f4-399f-4381-a54a-e7b50f78134f",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "40dec199-8cd2-446a-a283-0dd6eefdb90d",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "fbf855bf-ed38-4092-be59-c25259011ccd",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "5652405a-84e5-409a-b95d-a9c50b3c1129",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "c531f7b1-e30f-4034-87a0-e9c5eaa747aa",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "1c006feb-b3ba-44d4-b20b-7da718cc960f",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "13673148-846f-418c-9b79-964b3c9b089c",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "b2d62e61-761f-4072-8113-167ee14aff66",
+      "result_id": "efbc10d9-e639-4c2e-a2e1-b02e8fc0720c"
+    },
+    {
+      "claim_id": "a3bae220-a206-4205-a8be-7b3662673c86",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "254651c8-2697-47f9-b633-50fdd084c8ac",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "5409aac2-05c9-4527-bdf2-7b14c73f56a9",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "0cd74203-ead4-486e-b96e-a59ec6d26fa1",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "aeac6190-52a4-4aa0-a52f-2d7414ccde26",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "8ea935f0-31e6-46f8-9d19-94d43f4e4641",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "fcefb719-a53d-40a9-a201-ed1571ea729b",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "eae558bb-2b4c-43fa-b688-1bd164f6ec9b",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "500f6d8c-eaaa-41b3-afa7-cb1cf2e3cb4a",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "d93d75fe-545e-4441-8f3f-276c30c4d814",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "16ceeb59-fd44-4cca-a342-d5b3162fca87",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "f1051a02-c9d9-4474-900a-de259861c28b",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "4c6aa1f6-0e9d-44c0-8877-e407309ae73d",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "5d1357f5-28a3-411b-ad80-b14b2aae91e7",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "19637af2-0e85-4232-a7ff-986f49d56cff",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "8089e76a-f243-410c-987d-7aa9d5d09958",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "5de3641b-5b4c-4693-9cd6-0103ba7f6f27",
+      "result_id": "ab9b29e8-9ad7-43be-8071-69f7bc497260"
+    },
+    {
+      "claim_id": "7dee7d18-7edd-4a78-a2ce-3dfde2e20a5a",
+      "result_id": "f43e3a2b-e4fd-4ad0-b040-c82aa037e72e"
+    },
+    {
+      "claim_id": "0ff5c72e-a306-4f85-b668-0244e9473b93",
+      "result_id": "f43e3a2b-e4fd-4ad0-b040-c82aa037e72e"
+    },
+    {
+      "claim_id": "0cf45579-109a-42a5-b4cd-f8e3a9ddd9ee",
+      "result_id": "f43e3a2b-e4fd-4ad0-b040-c82aa037e72e"
+    },
+    {
+      "claim_id": "080723fc-6f89-4354-89f0-f8bf935d1a5b",
+      "result_id": "f43e3a2b-e4fd-4ad0-b040-c82aa037e72e"
+    },
+    {
+      "claim_id": "2bdc2eb2-a020-4f75-9338-6d7b5628e94b",
+      "result_id": "f43e3a2b-e4fd-4ad0-b040-c82aa037e72e"
+    },
+    {
+      "claim_id": "f170d051-4f6c-44d4-868c-6b6f691237ba",
+      "result_id": "f43e3a2b-e4fd-4ad0-b040-c82aa037e72e"
+    },
+    {
+      "claim_id": "ab72b4d9-6b0b-49ab-a58d-774ecea9eba1",
+      "result_id": "f43e3a2b-e4fd-4ad0-b040-c82aa037e72e"
+    },
+    {
+      "claim_id": "6dae836d-e303-4d39-91b6-7603083d4ad8",
+      "result_id": "62e7056d-3a43-4528-8ac7-168065e75dae"
+    },
+    {
+      "claim_id": "35848da8-a592-4c9f-a94c-69915b2e5a6e",
+      "result_id": "62e7056d-3a43-4528-8ac7-168065e75dae"
+    },
+    {
+      "claim_id": "9b34d1fc-9577-4265-b381-38cfe397d3f2",
+      "result_id": "62e7056d-3a43-4528-8ac7-168065e75dae"
+    },
+    {
+      "claim_id": "bce04a22-3a29-4e16-abc9-33ff5b4881e4",
+      "result_id": "f28c0a15-0e5a-42be-84cb-c2dd81e92ebc"
+    },
+    {
+      "claim_id": "48a6768e-9d4e-48d8-83be-62bdf51a548f",
+      "result_id": "f28c0a15-0e5a-42be-84cb-c2dd81e92ebc"
+    },
+    {
+      "claim_id": "aa74cf07-c84a-477d-9a5d-e44fe6c5ce0b",
+      "result_id": "f28c0a15-0e5a-42be-84cb-c2dd81e92ebc"
+    },
+    {
+      "claim_id": "ac42ecbb-c118-4c3b-9cdf-0ebac3df8d2e",
+      "result_id": "f28c0a15-0e5a-42be-84cb-c2dd81e92ebc"
+    },
+    {
+      "claim_id": "d20389ec-bc09-42bd-83d7-520272b9a07d",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "1bd763d7-85f6-4b4a-b6ad-b278676c9cd4",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "7c414346-4b54-46e8-9f95-76c46e1f5d39",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "0eaf31a6-e27e-4d71-9ca5-8bcf377834d8",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "2a8c709c-3708-4fe2-8d82-8745a74b9e16",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "464f3eb6-60a7-4d1f-b821-05ff127f75d4",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "46854942-d57d-4b45-b65c-87c56746ed22",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "dd73542c-e627-4347-b6eb-f9c46b81dad3",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "78472c3b-8810-4ca4-bbf6-4a0967faa98b",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "bc26ca21-7ec0-480c-ba66-44c6ca0b5520",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "e3fd1d0e-c42e-48ac-9f27-9e0bb2d16e10",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "f8bd1e8c-aca6-4f35-9cd3-33502bf4c4e8",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "7f7ccc6e-f295-4b81-be94-399d5684dc4e",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "0da1e345-f973-41d4-a2ab-6f2a55cf5178",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "38aa4120-36a1-4a44-808b-9e779c5f955c",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "9f7439dd-503e-4b5e-91c2-0816f187c347",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "dbf90aa8-b7e0-41e9-80c5-f748fa1ce01e",
+      "result_id": "3abc6b88-c462-4fea-9c2f-30dcfd623bfd"
+    },
+    {
+      "claim_id": "7cf4661e-cd3f-49e8-a95c-197b22019ca3",
+      "result_id": "c0ce6ce1-5202-4fca-ae59-9eb6bf452aa8"
+    },
+    {
+      "claim_id": "6f0d29ac-957d-42d3-a213-1975eccb8e1e",
+      "result_id": "c0ce6ce1-5202-4fca-ae59-9eb6bf452aa8"
+    },
+    {
+      "claim_id": "7617cb23-066a-4a43-b58c-f6e62fce0579",
+      "result_id": "c0ce6ce1-5202-4fca-ae59-9eb6bf452aa8"
+    },
+    {
+      "claim_id": "d8f40e18-cd10-4aa9-9064-d0c5c5be7d8a",
+      "result_id": "6cfbbc4f-566e-4619-a719-5ea6515f67dd"
+    },
+    {
+      "claim_id": "1f046aa0-d0fe-4459-8225-b252eb84f971",
+      "result_id": "6cfbbc4f-566e-4619-a719-5ea6515f67dd"
+    },
+    {
+      "claim_id": "4da57d7f-0fdb-490b-8f48-b090b078dbae",
+      "result_id": "1ac0afd2-211f-4bc9-9dd8-7a9d7da8aef0"
+    },
+    {
+      "claim_id": "ac839b83-8781-438d-b666-4cc06dfe3b6b",
+      "result_id": "1ac0afd2-211f-4bc9-9dd8-7a9d7da8aef0"
+    },
+    {
+      "claim_id": "b764826e-494e-4ffa-82e0-a6e2f30f7151",
+      "result_id": "4b32e255-c0b4-416f-a104-4563404f7454"
+    },
+    {
+      "claim_id": "6068c75f-984d-4e51-8261-eebaefde0899",
+      "result_id": "5189abd5-7c41-4fb1-9223-1a3170277e7e"
+    },
+    {
+      "claim_id": "702aff72-d7c5-46d7-b321-a8961d84df7b",
+      "result_id": "5189abd5-7c41-4fb1-9223-1a3170277e7e"
+    },
+    {
+      "claim_id": "a878865d-48ae-4129-b253-9c996694b814",
+      "result_id": "75bbbe7b-adb2-44b0-ae45-72ff74b44984"
+    }
+  ],
+  "comparisons": []
+}

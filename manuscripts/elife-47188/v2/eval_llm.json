@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors designed the AMIE device, a lightweight (~1.5-2.0 g) three-part assembly (probe, internal mount, external casing) that enables chronic Neuropixels implantation in freely moving mice. The design features a rail system connecting internal and external components, with only the external casing cemented to the skull, and accommodates both the probe and headstage while allowing optional headbar implantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C32-C36, C39-C43 collectively describe the AMIE device design with specific technical details supported by Figures 1-2. The modular assembly, weight specifications, and surgical approach are clearly documented with visual evidence, providing strong support for this methodological result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Implanted mice were mobile by 48 hours post-surgery and showed behavioral metrics (time moving, velocity, acceleration) that overlapped considerably with naive mice during both spontaneous exploration and looming-evoked escape responses, though implanted mice were slightly slower without reaching statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 are supported by quantitative behavioral data in Figure 3 with appropriate statistical testing (Wilcoxon Rank Sum tests, effect sizes). The authors appropriately note non-significant trends and acknowledge that some naive mice achieved higher peak accelerations, providing balanced interpretation of the behavioral impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The AMIE enabled recording of 20-145 single units per session across multiple brain regions during freely moving behavior, with yields consistent within individual mice across 1-2 weeks. Unit counts were lower than acute experiments, possibly due to chronic recording conditions, and the longest implant duration was 41 days without signal decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 are supported by data in Figure 4 showing unit yields across mice and days. The authors appropriately acknowledge methodological factors affecting unit counts (probe type, sorting criteria, manual curation) and provide honest comparison with prior acute work. Validation with Kilosort2 (C60) strengthens confidence in manual curation criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The AMIE design enables headbar implantation for head-fixed recordings, allowing researchers to record from the same neurons during both freely moving and restrained conditions with similar unit yields (~60 units). Visual responses to drifting gratings were observed even in deep midbrain structures during head-fixed experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by Figure 5 demonstrating successful head-fixed recordings after freely moving sessions. The ability to bridge ethological and psychophysical paradigms is a key advantage, and the observation of visual responses in midbrain (C66) is notable, though the functional interpretation requires caution without additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "The AMIE enables probe explantation and reuse, with successful explantation in 4/4 attempts when silicone was added to the shank base versus 1/6 without silicone. Re-implanted probes yielded 43.6\u00b117.8 neurons with reduced event rate and SNR compared to first implants, though signal degradation was also observed in first implants over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C67-C77, C80 demonstrate proof-of-concept for probe reuse (Figure 6, Table 1), but the evidence is limited by small sample size (n=4 successful explants with silicone), reduced performance in re-implants, and confounding factors (signal decay in first implants, complications in some mice). The claim of successful reuse is technically accurate but requires qualification about reduced yield and success rate. Additional experiments are needed to establish reliability and optimal conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Prior to this work, Neuropixels probes were not well-suited for freely moving mice due to design challenges (mounting components, protecting electronics, securing the shank), and there was no established method to recover probes after chronic experiments despite their high cost ($1000) and limited availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23, C25-C31 establish the motivation for the work through citations and logical inference. The assessment of prior limitations is supported by C31 (citation to Okun et al. 2016) and the cost information (C26) is factual. These claims appropriately frame the problem addressed by the AMIE device.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The Neuropixels probe has a ~3 cm flex cable attached to a 1 g headstage, and early testing showed that suspending this above the mouse's head caused rapid twisting of the flex cable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 describe a technical challenge and preliminary observation that motivated the design solution. C37 is supported by citation (Jaeyoon et al. 2017) and C38 reports empirical observation from pilot testing. These provide clear rationale for the headstage mounting approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The Neuropixels tether cannot be easily commutated due to data demands, which is manageable for rats in large arenas but challenging for mice in smaller arenas, requiring occasional experimenter intervention (1-2 times per hour) to untangle the cord.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 acknowledge a practical limitation of the system with appropriate comparison to prior work (C86, citing Jun et al. 2017) and honest reporting of the authors' experience (C88). This transparent discussion of limitations strengthens the overall credibility of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Neuropixels probes enable high-yield, low-noise recordings with 384 contacts across 3.84 mm (covering >half the mouse brain depth), on-site amplification/digitization, and automated spike sorting capabilities. They have proven valuable for acute experiments in mice and chronic experiments in rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C22 provide background on Neuropixels technology supported by appropriate citations (Jun et al. 2017, Steinmetz et al. 2018, Pachitariu et al. 2016). These are established facts about the technology that contextualize the current work. The technical specifications and prior applications are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C24"
+    ],
+    "result": "Electrophysiology in freely moving rodents has enabled important discoveries across multiple domains (place/grid cells, attentional control, fear learning, etc.), though traditional methods (static arrays, microdrives) lack the spatiotemporal coverage of Neuropixels. There is substantial interest in studying behaviors involving natural movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14, C24 provide literature context supported by multiple citations. These claims appropriately establish the scientific importance of freely moving recordings and the limitations of prior methods, motivating the need for adapting Neuropixels to this application. The assessment of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C89",
+      "C90"
+    ],
+    "result": "Visual looming stimuli elicit strong escape responses in mice (established in prior work), and the AMIE enables recordings in both restrained and unrestrained conditions with similar unit yields, allowing researchers to obtain complementary information about neural function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C89-C90 combine established knowledge (C49, supported by citations) with summary statements about AMIE capabilities demonstrated in the paper. These claims accurately reflect the data presented in Figures 4-5 and appropriately acknowledge limitations in cross-lab comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The AMIE design is compatible with both Neuropixels 3A and 3B (1.0) probes, with design files available for both versions. The authors suggest the design can be adapted to other silicon probes (e.g., Neuronexus).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 provide practical information about probe compatibility and design availability. C78 is a factual specification, C79-C83 are supported by the demonstrated capabilities and stated resource availability, while C84 is appropriately framed as a suggestion rather than demonstrated fact. The availability of design files enhances reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Male 3-4 month old C57/BL6 mice were used because they are larger and expected to better handle implant weight. Mice received carprofen-medicated food pre-surgery, and DiI signals were detectable in brain tissue up to 1 month post-implantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 describe methodological details that are straightforward and well-documented. C91 and C93 are factual descriptions of methods, C92 provides reasonable justification for subject selection, and C94 reports a histological observation. These are appropriately detailed for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

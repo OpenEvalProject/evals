@@ -1,0 +1,150 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C48"
+    ],
+    "result": "Ciliates and flagellates exhibit distinct morphological and kinematic characteristics. Ciliates span speeds up to 7 mm/s while flagellates remain in the sub-mm/s range, with average cell sizes differing fourfold (31 \u00b5m for flagellates vs 132 \u00b5m for ciliates). The number of flagella provides a clear morphological division between the two groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C48 are directly supported by the collected data from 189 organisms (112 flagellates, 77 ciliates) as shown in Figure 2 and its supplements. The speed ranges, size measurements, and flagellar counts are explicitly stated and visualized, providing clear empirical evidence for these morphological and kinematic distinctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Swimming speed distributions for both flagellates and ciliates are accurately described by log-normal distributions, with agreement extending to fourth moments. The authors conclude that the published literature contains sufficient unbiased data to capture the complete distributions, supported by theoretical results on log-normal distributions and their properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are well-supported by the statistical fitting shown in Figure 3 and Figure 3\u2014figure supplement 1, which demonstrates agreement up to fourth moments. The theoretical justification (C14-C16, C56-C57) is appropriately cited, and the conclusion about data completeness (C17, C58) follows logically from the quality of fit using maximum likelihood estimation (C55). The use of established statistical methods and comparison of calculated vs predicted moments provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C20",
+      "C21"
+    ],
+    "result": "When scaled by characteristic speeds (median M), the swimming speed distributions for flagellates and ciliates collapse onto an apparently universal distribution. The two distributions are nearly identical, with integrated absolute difference of 0.028 and Kullback-Leibler divergence of 0.0016.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C20-C21 are supported by Figure 4, which shows the rescaled distributions with overlapping confidence intervals. The quantitative similarity metrics (integrated absolute difference and KL divergence) are explicitly calculated and reported as very small values. The near-identical variance parameters (\u03c3_fl=0.978 vs \u03c3_cil=0.936, within 5%) provide additional support for the universality claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C62"
+    ],
+    "result": "The observed log-normal randomness captures a universal way for ecological niches to be populated by abundant microorganisms with similar propulsion characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51 and C62 represent speculative interpretations of the statistical findings. While the log-normal distributions and their similarity are well-established by the data, the ecological interpretation about niche population is not directly tested or validated. This remains a hypothesis that would require additional ecological data and mechanistic studies to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The distributions of swimming speeds among species do not necessarily reflect the distributions of swimming speeds among individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is appropriately acknowledged as a limitation. The authors correctly note that their data represents species-level averages rather than individual-level variation, for which no data is available. This is an important caveat that affects the interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Swimming speed data were collected from 26 papers for ciliates and 48 papers for flagellates, measured under diverse environmental conditions. The data are considered as arising from random sampling of environmental conditions rather than representing a uniform environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C26 describe the data collection methodology. While the number of source papers is explicitly stated, the interpretation that heterogeneous measurement conditions constitute \"random sampling\" (C26) is questionable. Different labs may have systematic biases, and the lack of explicit inclusion criteria raises concerns about selection bias. The authors state \"no explicit criteria were imposed\" but this does not guarantee unbiased sampling of the true biological distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C55"
+    ],
+    "result": "Histogram bin widths were chosen using the Freedman-Diaconis rule, and fitting procedures used raw data via maximum likelihood estimation rather than processed histograms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53 and C55 describe appropriate statistical methodology. The use of the Freedman-Diaconis rule for binning and maximum likelihood estimation on raw data are standard best practices that ensure the fitted parameters are not artifacts of data processing choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The introduction provides background on unicellular eukaryote diversity, distribution, motility mechanisms, and the morphological/functional distinctions between flagellates and ciliates, including the structural basis of flagellar propulsion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C47 represent well-established background knowledge appropriately cited from the literature. These claims provide necessary context for the study but do not constitute novel findings. The exclusion of spermatozoa (C47) is justified with a clear rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Figure 1 displays a phylogenetic tree of studied organisms showing large morphological variation, with both aquatic and parasitic groups including ciliates and flagellates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 accurately describe the content of Figure 1, which provides visual documentation of the taxonomic diversity and morphological variation in the dataset. This supports the breadth of the data collection effort.",
+    "result_type": "MINOR"
+  }
+]

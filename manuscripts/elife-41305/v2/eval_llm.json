@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "BRD9 bromodomain is a selective functional dependency in synovial sarcoma. CRISPR screening identified BRD9 bromodomain-targeting sgRNAs as specifically depleted in synovial sarcoma cells but not in Ewing or rhabdomyosarcoma cells, with rescue experiments confirming that only wildtype full-length BRD9 can rescue this depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 provide converging evidence from multiple experimental approaches (pooled CRISPR screen, individual sgRNA depletion assays, shRNA knockdown, Project DRIVE database analysis, and rescue experiments) demonstrating BRD9 bromodomain as a selective dependency in synovial sarcoma. The controls for sgRNA editing efficiency (C25) and BRD9 expression levels (C26) strengthen the conclusion that the observed effects are specific to synovial sarcoma.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "BRD9 is a component of SS18-SSX containing BAF complexes in synovial sarcoma cells. Endogenous immunoprecipitation experiments demonstrate that BRD9 co-purifies with SS18-SSX fusion proteins, and proteomic analysis identifies GLTSCR1, suggesting incorporation into GBAF assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C38 provide direct experimental evidence from co-IP and mass spectrometry showing BRD9 associates with SS18-SSX in both exogenous (HEK293T) and endogenous (synovial sarcoma) contexts. The identification of GLTSCR1 (C38) supports the GBAF complex hypothesis. Prior work citations (C31-C32, C36-C37) provide appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "BRD9 and GLTSCR1 are sub-stoichiometric members of SS18-SSX containing complexes, present at 10-20% the abundance of SS18-SSX, yet the BRD9-containing subset appears functionally specialized. Despite their low abundance, no dependencies were observed for other BAF bromodomains in the screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by quantitative proteomics using the iBAQ algorithm showing relative protein abundances. The inference that BRD9-containing complexes are functionally specialized (C43) is reasonable given the strong dependency observed despite sub-stoichiometric presence. The lack of dependency on other BAF bromodomains (C42) strengthens the specificity argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "A novel BAF complex interaction domain (amino acids 311-345) within BRD9 is essential for BAF complex association and functionally required in synovial sarcoma cells. High-density CRISPR mutagenesis identified this region, and deletion mutants demonstrate that while the bromodomain is dispensable for complex interaction, the 311-345 region is essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 provide direct experimental evidence from high-density CRISPR mutagenesis, rescue experiments, and co-IP studies demonstrating the functional importance and biochemical role of the 311-345 region. The conclusion (C48) that BAF complex association is functionally essential is well-supported by the inability of \u0394311-345 mutants to rescue sgRNA depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "BRD9 and SS18-SSX1 co-localize extensively across the synovial sarcoma genome, binding broadly at both promoters (~35%) and distal regulatory regions (~65%), with the majority of binding sites overlapping and showing tight correlation. Both proteins bind virtually all active gene promoters and enhancer elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by ChIP-seq data using epitope-tagged endogenous proteins. The extensive co-localization, tight correlation, and overlap with previous SS18-SSX1 ChIP studies (C55) provide strong evidence. The binding to active regulatory elements (C54) is supported by additional ChIP-seq for RNAPII and H3K27Ac.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "BRD9 bromodomain inhibition shows modest therapeutic effects in synovial sarcoma with IC50 values in the \u03bcM range. Inhibitor treatment and bromodomain mutation lead to incomplete loss of BRD9 chromatin binding, indicating that BRD9 can access chromatin in a bromodomain-independent manner through BAF complex incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 provide converging evidence from dose-response assays, ChIP-Rx experiments, and mutational analysis demonstrating that bromodomain inhibition is only partially effective. The requirement for BAF complex interaction for chromatin binding (C61) is directly demonstrated. The conclusion (C63) that bromodomain inhibition is unlikely to completely ablate BRD9 function is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The BRD9 degrader dBRD9-A is highly specific, elicits near-complete BRD9 degradation at low nanomolar concentrations in a CRBN- and bromodomain-dependent manner, and produces greater therapeutic effects than bromodomain inhibition specifically in synovial sarcoma. BRD9 degradation disrupts GBAF complex assembly by causing loss of GLTSCR1/L from SS18-SSX complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C75 provide comprehensive characterization of dBRD9-A through Bromoscan selectivity profiling (C64), western blots (C65-C67), ChIP-Rx (C68), dose-response assays (C69-C70), and quantitative proteomics (C72). The mechanism involving GBAF disruption (C72-C74) is supported by proteomics data. The conclusion that degradation is more efficacious than inhibition (C75) is directly demonstrated by comparative dose-response data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "dBRD9-A treatment induces progressive cell cycle arrest and apoptosis in synovial sarcoma cells in vitro, and inhibits tumor progression in vivo in a xenograft model without overt toxicity. The on-target specificity is confirmed by resistance of cells expressing a BRD7 bromodomain swap mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 provide comprehensive in vitro and in vivo evidence for therapeutic efficacy. Cell cycle and apoptosis data (C76-C77), bromodomain swap control (C78), xenograft data (C79), pharmacodynamic confirmation (C80), and toxicity assessment (C81) collectively support the therapeutic potential. The bromodomain swap experiment (C78) is a particularly strong control for on-target activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "BRD9 degradation primarily causes downregulation of gene expression, with preferential effects on super-enhancer (SE)-associated genes that are known to play key functional roles in synovial sarcoma. These SE-associated genes depend on SS18-SSX1 for expression, and BRD9 degradation reduces SS18-SSX1 binding at SEs, demonstrating that BRD9 maintains the oncogenic transcriptional program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 are supported by cell count-normalized RNA-seq showing preferential downregulation of SE-associated genes (C86), SS18-SSX1 knockdown experiments demonstrating SE gene dependence (C87), and ChIP-seq showing reduced SS18-SSX1 binding at SEs after BRD9 degradation (C88). The functional importance of these genes (C83-C84) is supported by prior literature. The conclusion (C89-C90) that BRD9 maintains the oncogenic program is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C109"
+    ],
+    "result": "This work identifies BRD9 as supporting oncogenic mechanisms underlying SS18-SSX in synovial sarcoma and establishes targeted BRD9 degradation as the first actionable therapeutic vulnerability directly linked to SS18-SSX, providing rationale for clinical investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C91-C92, C94-C96, C109) are well-supported by the comprehensive experimental evidence presented throughout the study, including the demonstration of BRD9's role in maintaining oncogenic gene expression, the specificity of the dependency, and the therapeutic efficacy of degradation both in vitro and in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "BRD9 may promote and/or stabilize binding of SS18-SSX containing complexes at acetylated chromatin regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is explicitly speculative ('may promote') and while supported by the observation of reduced SS18-SSX binding at some super enhancers after BRD9 loss, the mechanism is not directly demonstrated. The claim appropriately reflects uncertainty about whether BRD9 promotes recruitment versus stabilizes binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C73"
+    ],
+    "result": "BRD9 is essential for assembly of GBAF complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C97 are supported by quantitative proteomics (C72) showing loss of GLTSCR1/L from SS18-SSX complexes following BRD9 degradation. While the inference is reasonable, direct assembly assays were not performed, so the conclusion relies on loss-of-function data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The shared dependency on BRD9 in malignant rhabdoid tumors (MRT) and synovial sarcoma may be explained by loss of SNF5, which could shift BAF complex assembly toward a GBAF-like state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C102 accurately report prior findings and established knowledge. However, claims C103-C104 are explicitly speculative ('tempting to speculate', 'could explain') and while the hypothesis is reasonable given that SNF5 is absent from GBAF complexes, no direct experimental evidence is provided to test this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106"
+    ],
+    "result": "Loss of function mutations in ARID1A/B in bladder cancer and uterine corpus endometrial carcinoma could potentially shift BAF complex assembly toward a GBAF-like state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 is supported by citation. However, claim C106 is speculative ('could potentially') and no experimental evidence is provided to test whether ARID1A/B loss affects GBAF assembly or creates BRD9 dependency in these cancers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Degradation of BRD9 has more profound effects than inhibition, suggesting that protein degradation may be more efficacious than inhibition for targeting multi-protein complexes generally, with implications for other chromatin regulators like EZH2 and DOT1L currently under clinical investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is directly supported by comparative experimental data. Claims C111-C114 appropriately extrapolate from the BRD9 findings to suggest broader implications for targeting multi-protein complexes. The reasoning (C112-C113) that inhibition may leave scaffolding functions intact is supported by the BRD9 data showing bromodomain-independent chromatin binding. The suggestion about developing degraders for other targets (C114) is a reasonable future direction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on synovial sarcoma: Sarcomas account for up to 20% of pediatric malignancies and respond poorly to conventional therapy. Synovial sarcoma (~10% of soft-tissue sarcomas) is characterized by the SS18-SSX fusion resulting from t(X;18) translocation, which is present in essentially 100% of cases and is the primary driver of disease. The SS18-SSX fusion functions as an aberrant transcriptional regulator by incorporating into BAF complexes, evicting wildtype SS18 and SNF5, and driving an oncogenic expression signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide appropriate background context supported by citations to prior literature (C1-C3, C8, C10, C12, C14-C15, C17-C18, C20) and established knowledge in the field (C4-C7, C9, C11, C13, C16, C19, C21). These claims accurately represent the current understanding of synovial sarcoma biology and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C107",
+      "C108"
+    ],
+    "result": "The specificity of BRD9 dependency in synovial sarcoma is remarkable and bodes well for clinical applications. Currently synovial sarcoma has few effective treatments and advanced disease has poor survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is an interpretive statement supported by the comprehensive specificity data throughout the study. Claims C107-C108 accurately describe the current clinical situation for synovial sarcoma as established knowledge, providing important context for the therapeutic rationale.",
+    "result_type": "MINOR"
+  }
+]

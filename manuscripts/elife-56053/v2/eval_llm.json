@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36"
+    ],
+    "result": "In a fully connected network model with diverse learning rates, neurons with fast learning rates develop higher population coupling than neurons with slow learning rates. Fast neurons develop strong specific connections sooner but exhibit greater synaptic weight fluctuations, while slow neurons develop more stable and specific connectivity. Increasing learning rate predominantly increases non-specific connections, leading to overall increased synaptic input and population coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C15, C24-C34, and C36 collectively demonstrate the plasticity-coupling link through computational simulations. The model implementation is clearly described (C24-C25), the emergent connectivity patterns are documented (C26-C32), and the relationship between learning rate and population coupling is quantified (C36, Figure 1E). The results are internally consistent and supported by figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "A strong plasticity-coupling link requires both moderate amounts of noise within the network and relatively slow synaptic scaling compared with Hebbian plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by parameter exploration shown in Figure 1\u2014figure supplement 1, which systematically varies noise and synaptic scaling rate. The finding is consistent with experimental timescales cited (Turrigiano et al., 1998), providing biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In a receptive-field based network model of mouse visual cortex, diverse learning rates lead to a broader distribution of population coupling that is correlated with synaptic input, matching experimental observations better than uniform learning rate networks. Networks with diverse learning rates also exhibit broader population coupling distributions and weaker stimulus selectivity compared to uniform networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 and C48-C50 demonstrate that the plasticity-coupling link generalizes to more realistic network architectures. Statistical tests are provided (C41: r=0.29, p<1e-5; C43: p=0.52), figures support the claims (Figure 2A-D), and comparisons with experimental data (Okun et al., 2015) validate the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The magnitude of stimulus selectivity fluctuations is correlated with population coupling in networks with diverse learning rates but not in networks with uniform learning rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by statistical analysis (C45: p=0.4; C46: r=0.18, p=1e-5) and Figure 2E. This demonstrates a key prediction of the model that distinguishes diverse from uniform learning rate networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Analysis of Allen Brain Observatory data validates the model prediction that population coupling is correlated with stimulus response variability. Approximately 75% of neurons show orientation preference changes, and population coupling is weakly but significantly correlated with changes in preferred orientation (r=0.1, p<1e-5) and direction (r=0.12, p<1e-5). This relationship is independent of mean calcium fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C51-C57 provide experimental validation of the model's key prediction. Statistical tests are appropriate (Spearman correlations, t-tests), sample sizes are large (15,281 neurons, 64 experiments), and controls for confounding factors are included (C56). The correlations are weak but significant and consistent across experiments (Figure 3E-F).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In perceptual learning simulations, networks with only fast learning rates quickly learn stimulus associations but degrade feedforward stimulus representation, while networks with only slow learning rates maintain stable representations but learn poorly. Networks with diverse learning rates overcome both limitations by having fast neurons learn associations while slow neurons maintain a stable backbone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by perceptual learning simulations shown in Figure 4A-B. The complementary roles of fast and slow neurons are clearly demonstrated, and the advantage of diverse learning rates is evident in the combined performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C62",
+      "C63",
+      "C64",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Strong population coupling helps plastic neurons alter their stimulus preference during perceptual learning but hinders stable neurons from providing instructive signals. Optimal perceptual learning occurs when plastic neurons have high population coupling and stable neurons have low population coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C62-C64 are supported by systematic simulations varying population coupling (Figure 4D). The mechanistic explanation is provided (C76-C77), and the functional implications are clearly demonstrated. The results show a specific region of parameter space (labeled \u03a6 in Figure 4D) where learning is optimal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Networks with diverse learning rates advantageously combine properties of networks with only slow or only fast learning rates for stimulus decoding, performing well across a range of input strengths and noise levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by stimulus decoding simulations shown in Figure 4E. The performance advantage of diverse learning rate networks is demonstrated across different parameter regimes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C20",
+      "C21",
+      "C72",
+      "C73",
+      "C74",
+      "C78",
+      "C79"
+    ],
+    "result": "The plasticity-coupling link provides a parsimonious mechanism for diverse population coupling observed in sensory cortex and enables efficient combination of stable and flexible stimulus representation. This architecture ensures plastic neurons are strongly coupled while stable neurons form a weakly coupled backbone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C20-C21, and C72-C79 synthesize the main conclusions from the computational and experimental results. The interpretation is well-supported by the collective evidence from model simulations (Figures 1-2), experimental validation (Figure 3), and functional analyses (Figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The network model implements Hebbian plasticity and synaptic scaling for excitatory synapses, and homeostatic inhibitory plasticity for inhibitory synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 describe the model implementation with appropriate citations (Vogels et al., 2011). The plasticity rules are mathematically specified in Equations 3-4 and are standard approaches in computational neuroscience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C35",
+      "C47",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Background claims establish that neurons exhibit diverse stimulus response stability, population coupling is correlated with synaptic input, and the mechanisms underlying this diversity are unknown. These observations motivate the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C13, C16, C35, C47, and C66-C71 are background knowledge supported by appropriate citations to experimental literature. These establish the context and motivation for the study but are not novel findings of this work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1695 @@
+{
+  "submission": {
+    "id": "6346a888-a765-40d4-ac40-df0ef8115631",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:56:40.925871Z",
+    "updated_at": "2025-12-02T06:56:40.925871Z"
+  },
+  "content": [
+    {
+      "id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "submission_id": "6346a888-a765-40d4-ac40-df0ef8115631",
+      "content_type": "manuscript",
+      "content_text": "# Dopamine neurons projecting to medial shell of the nucleus accumbens drive heroin reinforcement\n\n## Authors\n\n- Julie Corre<sup>1</sup>\n- Ruud van Zessen<sup>1</sup>\n- Micha\u00ebl Loureiro<sup>1</sup> ([ORCID: 0000-0002-5915-5627](https://orcid.org/0000-0002-5915-5627))\n- Tommaso Patriarchi<sup>2</sup>\n- Lin Tian<sup>2</sup> ([ORCID: 0000-0001-7012-6926](https://orcid.org/0000-0001-7012-6926))\n- Vincent Pascoli<sup>1</sup>\n- Christian L\u00fcscher<sup>1</sup> ([ORCID: 0000-0001-7917-4596](https://orcid.org/0000-0001-7917-4596)) \u2020\n\n### Affiliations\n\n1. Department of Basic Neurosciences, Medical Faculty University of Geneva Geneva Switzerland\n2. School of Medicine, Department of Biochemistry and Molecular Medicine University of California Davis California United States\n3. Service of Neurology University of Geneva Hospital Geneva Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe dopamine (DA) hypothesis posits the increase of mesolimbic dopamine levels as a defining commonality of addictive drugs, initially causing reinforcement, eventually leading to compulsive consumption. While much experimental evidence from psychostimulants supports this hypothesis, it has been challenged for opioid reinforcement. Here, we monitor genetically encoded DA and calcium indicators as well as cFos in mice to reveal that heroin activates DA neurons located in the medial part of the VTA, preferentially projecting to the medial shell of the nucleus accumbens (NAc). Chemogenetic and optogenetic manipulations of VTA DA or GABA neurons establish a causal link to heroin reinforcement. Inhibition of DA neurons blocked heroin self-administration, while heroin inhibited optogenetic self-stimulation of DA neurons. Likewise, heroin occluded the self-inhibition of VTA GABA neurons. Together, these experiments support a model of disinhibition of a subset of VTA DA neurons in opioid reinforcement.\n\n## Introduction\n\nThe DA hypothesis of drug reinforcement is rooted in the observation that electrical activation of the medial forebrain bundle leads to repetitive action (Olds and Milner, 1954). Rats willingly self-stimulate brain regions populated by DA neurons or receiving inputs from DA neurons. Moreover, pharmacological blockade of DA receptors impairs the reinforcing properties of psychostimulants in both rats (Maldonado et al., 1993; McGregor and Roberts, 1993; Roberts et al., 1977) and primates (Bergman et al., 1989; Johanson and Schuster, 1975). Several microdialysis and voltammetry studies demonstrated the increase of DA in the NAc shell as a common feature of addictive drugs, including opioids (Aragona et al., 2008; Di Chiara and Imperato, 1988; Pontieri et al., 1995; Stuber et al., 2005). Furthermore, electrolytic lesions of the VTA to NAc pathway decreased reinforcement during intravenous self-administration of morphine and cocaine under a progressive ratio schedule (Suto et al., 2011).\n\nThe DA hypothesis has also received support from molecular investigations. Indeed, the reinforcing effects of opioids require \u00b5-opioid receptors (Charbogne et al., 2017; Contarino et al., 2002; Matthes et al., 1996), which are enriched in VTA GABA neurons (Cohen et al., 1992; Devine and Wise, 1994; Johnson and North, 1992). Based on in vivo single unit and brain slice recordings, a disinhibition scenario of VTA DA neurons has been proposed (Gysling and Wang, 1983), whereby MOR activation inhibits GABA neurons (Johnson and North, 1992) through somatodendritic hyperpolarization and the reduction of the efferent release probability. The former effect would be mediated by G protein\u2013coupled inwardly rectifying K+ (GIRK) channels, while inhibition of calcium entry underlies the later (L\u00fcscher et al., 1997).\n\nRegardless, it has been repeatedly argued that the initial reinforcing effects of opioids, can escape DA involvement. These results were largely based on pharmacological experiments. For example, the non-selective DA antagonists alpha-flupenthixol and haloperidol decreased cocaine SA but only to a lesser extent heroin SA (Ettenberg et al., 1982; Van Ree and Ramsey, 1987). In addition, lesioning DA terminals in the NAc with 6-OHDA had no effect on the initiation of heroin self-administration (Gerrits and Van Ree, 1996; Pettit et al., 1984) and the D1 antagonist SCH23390, when systemically administered, significantly decreased heroin self-administration, but had no effect when directly infused into the NAc (Gerrits et al., 1994).\n\nThe challenge of the DA hypothesis is also supported by genetic manipulations. For example, DA-deficient mice (targeted deletion of TH and DBH: tyrosine hydroxylase and dopamine beta-hydroxylase) still expressed conditioned place preference for morphine (Hnasko et al., 2005) and the downregulation of accumbal D1Rs prevented the acquisition of cocaine but not heroin self-administration (Pisanu et al., 2015).\n\nIf not through DA, how would opioids cause reinforcement? A model has been proposed with the pedunculopontine nucleus (PPN, called TPP in the original publication) as the initial target of opioids, which receives a descending GABA projection from the VTA. (Bechara and van der Kooy, 1992; Nader et al., 1994; Nader and van der Kooy, 1997). In this scenario DA-dependent mechanisms would take control only after chronic exposure, once dependence is established.\n\nNot surprisingly, the question whether DA modulation underlies the reinforcing properties of opioid is therefore still hotly debated (Badiani et al., 2011; Blum et al., 2015; Nutt et al., 2015), which is why in the present study we use advanced genetic tools that allow for selective observation and manipulation of neuronal populations to revisit this fundamental question.\n\n## Results\n\nMice were trained to intravenously self-administer heroin under a fixed-ratio one schedule (Figure 1a, see Methods) for 12 daily sessions of 6 hr maximum (Figure 1b). The dose was decreased from 50 to 25 \u00b5g/kg/infusion after six days, which led to higher acquisition rates (Figure 1c). The animals quickly learned to discriminate between an active and an inactive lever (after 6 days of training: 144.9\u00a0\u00b1\u00a026.0 active lever presses versus 8.3\u00a0\u00b1\u00a02.5 inactive ones; after 12 days: 283.4\u00a0\u00b1\u00a028 versus 20.9\u00a0\u00b1\u00a09.3. Figure 1d\u2013f) and readily reached a robust number of heroin infusions (after 6 days of training with the higher dose: 50.6\u00a0\u00b1\u00a06.9 infusions; after 6 days with the lower dose: 138.1\u00a0\u00b1\u00a05.1 infusions after 12 days of training) in two to three hours at the end of the acquisition (Figure 1g). After 30d of withdrawal, mice were brought back into the apparatus in the absence of heroin injections and significantly differentiated between active and inactive lever (Figure 1h and i). Taken together this experiment shows that heroin was highly reinforcing and induced seeking behavior, a widely used model for relapse (Garc\u00eda Pardo et al., 2017; Shaham et al., 2003).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/39945/elife-39945-fig1-v2.jpg)\n\n**Figure 1.:** (a), Schematic of behavioral setup for self-administration experiments in (d-g). (b), Day-to-day schedule of experiment for (d\u2013g). (c), Detail of the sequence of events following a press on the active lever. An active lever press triggers the illumination of a cue-light just above the lever and an infusion of heroin. The infusion is followed by a time-out period (7 or 37 s depending on the session) where heroin is no longer available despite presses on the correct lever. WD, withdrawal. (d), Raster plot for infusions and inactive lever presses as a function of time during acquisition of daily self-administration session of 6 hr for a mouse that self-administered saline or (e), heroin. (f), Mean\u00a0\u00b1SEM total lever presses and (g), infusions during the acquisition phase of saline (n\u00a0=\u00a010) or heroin (n\u00a0=\u00a014) self-administration. Infusion rate was very robust in mice which self-administered heroin (two-way repeated-measures [RM] ANOVA, group effect, F(1, 22)=142.2, p<0.001, time effect, F(11, 242)=30.51, p<0.001, group X time interaction, F(11, 242)=31.13, p<0.001; Bonferroni post hoc analysis, *p<0.05, **p<0.01, ***p<0.001) and animals quickly learned to discriminate between the active and inactive lever (two-way RM ANOVA, group effect, F(3, 44)=47.16, p<0.001, time effect, F(11, 484)=6.464, p<0.001, group X time interaction, F(33, 484)=47.16, p<0.001; Bonferroni post hoc analysis, ***p<0.001). (h), Raster plot (top) for active and inactive lever presses as a function of time during cue-induced relapse session at day 30 of withdrawal for a mouse that self-administered either saline (top) or heroin (bottom) during acquisition phase. (i), Mean\u00b1SEM total lever presses at 30 days of withdrawal for mice trained for heroin (n\u00a0=\u00a06) self-administration. After 30 days of forced withdrawal seeking was robust in mice which self-administered heroin (active versus inactive lever, paired t test, t10\u00a0=\u00a02.31, *p<0.05).\n\nTo test whether heroin, when administered to drug-na\u00efve mice, causes a DA increase in the NAc, we recorded the fluorescence changes of an intensity-based genetically encoded DA sensor (here called dLight1), in freely moving mice with fiber photometry. dLight1 enables optical readout of changes in DA concentration by coupling the agonist binding-induced conformational changes in human DA receptors to changes in the fluorescence intensity of circularly permuted (cp) GFP derived from GCaMP6 (Patriarchi et al., 2018). We started by replicating dopamine-specific responses in dLight-transfected HEK cells (Figure 2a, Patriarchi et al., 2018). Next, to probe DA release in freely moving mice, we delivered an adeno associated virus encoding dLight 1 (AAV9-CAG- dLight1) in the NAc, followed by implantation of an optic fiber for recordings. A group of DAT-cre mice was also injected the red-shifted opsin Chrimson (AAV8-hSyn-DIO-ChrimsonR-tdTo) into the VTA (Figure 2b\u2013c). Brief (5 ms) delivery of 593 nm laser light pulses into the VTA resulted in an increase of fluorescence in the NAc that co-varied with frequency of stimulation (Figure 2d). To then test the effects of heroin on accumbal dopamine levels, animals were habituated to a recording arena and injected with either saline or heroin on subsequent days. Within less than a minute after the intraperitoneal heroin administration, we observed the onset of a fluorescence transient that peaked after three minutes (Figure 2e\u2013f, saline: \u22120.008 \u00b1 0.007, dF/F heroin: 0.133 \u00b1 0.03 dF/F, p=0.0062, t(6) = 4.117, Paired Student\u2019s T-Test, n\u00a0=\u00a07). Importantly, the effect size was similar to that of cocaine, but was not seen following administration of the selective-serotonin reuptake inhibitor citalopram nor the norepinephrine reuptake inhibitor reboxetine (Figure 2g saline: \u22120.01\u00a0\u00b1\u00a00.005 dF/F, citalopram: \u22120.008\u00a0\u00b1\u00a00.008 dF/F, cocaine: 0.165\u00a0\u00b1\u00a00.025 dF/F, reboxetine \u22120.009\u00a0\u00b1\u00a00.006 dF/F). These experiments demonstrate that dLight fluorescence specifically captures dopamine transients, and a first injection of heroin increases DA concentration in the NAc within minutes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/39945/elife-39945-fig2-v2.jpg)\n\n**Figure 2.:** (a) Fluorescence in response to five neuromodulators in HEK293 cells expressing dLight1 (DYN: dynorphin; GLU: glutamate; 5HT: serotonin; NE: norepinephrine). Data are presented as median with 25/75 percentile (box) and min-max (whiskers).( b), Schematic of the experiment for c-f; (c), Left, medial NAc shell of DAT-Cre+ mice were bilaterally injected with the DRD1-based DA sensor (dLight). Right, the amber light\u2013drivable channelrhodopsin Chrimson was injected unilaterally in the VTA. (d), D-light-mediated fluorescence change following optogenetic activation of VTA DA neurons by Chrimson (mean of n\u00a0=\u00a03 animals). (e),\u00a0Example trace from single animal, showing dLight-mediated fluorescence change in the NAc following intraperitoneal heroin (8 mg/kg) or saline injections. Tick mark indicates injection. (f), Average fluorescence after saline, heroin (8 mg/kg), citalopram (10 mg/kg), reboxetine (20 mg/kg) or cocaine (20 mg/kg) treatment compared to pre-infusion baseline (n\u00a0=\u00a04\u20137). Intraperitoneal injection of heroin or cocaine significantly increased fluorescence signals (as compared to control injections for heroin, paired t test, t6\u00a0=\u00a04.117, **p<0.01; for citalopram, reboxetine and cocaine, RM one-way ANOVA: F(3,15) = 42.48, p<0.01; Bonferroni post hoc analysis: *p<0.05).( g), Schematic of the experiment for h-j; h, Left, VTA of DAT-Cre+ mice was bilaterally injected with the floxed version of the calcium indicator GCAMP6m. Right, coronal confocal images of infected VTA. (i), Average GCaMP6m fluorescence in VTA DA neurons following first intravenous infusion of heroin (100 \u03bcg/kg/inf) or saline. Red tick marks indicate injection onset. (j), Average fluorescence after heroin or saline treatment compared to pre-infusion baseline (n\u00a0=\u00a011). Calcium transients significantly increased after heroin infusions (dF/F for saline versus heroin, Lilliefors test for normality, Wilcoxon matched-pairs signed rank test, ***p<0.001). Error bars, SEM.\n\nWe then expressed a Cre-dependant GCaMP6m (AAV-DJ-EF1a-DIO-GCaMP6m) in DAT-Cre mice to record VTA DA neuron activity with fiber photometry (Figure 2g\u2013h, Cui et al., 2013; Gunaydin et al., 2014; Lerner et al., 2015) after an i.v. heroin injection in freely moving mice. Repeated infusions of heroin through the jugular vein, every 2 min, increased the calcium signal in VTA-DA neurons within minutes and a plateau is observed after the third infusion (Figure 2i\u2013j, dF/F saline compared to baseline: \u22120.0063\u00a0\u00b1\u00a00.016, dF/F heroin compared to baseline: 0.22\u00a0\u00b1\u00a00.085, n\u00a0=\u00a011, p=0.001, Wilcoxon signed rank test). Interestingly, even though the methods are inherently technically different, the kinetic of this activity is similar to the DA surge we observed in the NAc suggesting a tight correlation between VTA DA neurons activity and DA release. Taken together, these experiments demonstrate that the first exposure to heroin in naive animals increases VTA DA neuron activity and increases DA release in the NAc.\n\nTo map the activated neurons in the VTA following heroin administration, mice were perfused after the very first self-administration session and brain slices were stained for the expression of the immediate early gene cFos and tyrosine hydroxylase (TH, Figure 3a). Cells positive for cFos that were also TH-immunoreactive were found most prominently in the medial part of the VTA. In this area of the VTA, 27.8% of TH+\u00a0were cFos+\u00a0after heroin SA, whereas 1.5% of TH+\u00a0were cFos+\u00a0after saline SA (Figure 3b\u2013e).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/39945/elife-39945-fig3-v2.jpg)\n\n**Figure 3.:** (a), Schematic of experiment for (b-e); (b), TH (left, red), cFos (middle, green) staining of VTA DA neurons and co-localization of TH- and cFos-expressing neurons (right) after one day of either saline (top) or heroin (bottom) self-administration. Mice were perfused 60 min after the end of a single self-administration session. Cell nuclei are stained with Hoechst (not shown). D, dorsal; L, lateral; v, ventral; m, medial. (c) ,\u00a0Location within the VTA of histologically identified DA neurons expressing cFos after one day of heroin self-administration. Each color of the markers represents one animal.( d), High magnification confocal pictures of TH and cFos staining in saline and heroin mice. (e), Quantification of the TH positive VTA DA neurons also expressing cFos after one day of saline or heroin self-administration (saline: 2102 cells from four mice, heroin: 1902 cells from four mice). (f), Schematic of experiment for (f\u2013g). The retrograde tracers CTB, conjugated to either the fluorescent dye AlexaFluor 488 (green) or AlexaFluor 555 (red) were injected in the lateral NAc shell or the medial one, respectively. In addition, a catheter implantation was performed (see methods) in order to allow heroin self-administration.( f), Left, coronal images showing infections in the NAc shell. Right, coronal image of the VTA. (g), Quantification of CTB positive cells in the VTA. (h), Schematic for cFos staining in the medial and lateral VTA, projecting to the NAc medial and lateral. Coronal pictures of NAc injected with CTB-555 in the medial Shell and CTB-647 in the lateral Shell and corresponding pictures in the VTA with cFos staining. (i), High magnification confocal images of CTB-555 and 647 with Hoechst (left), cFos (middle, green) and cFos with CTBs (right, green/red/magenta) in the medial or lateral VTA neurons after one day of heroin self-administration. Mice were perfused 60 min after the end of the self-administration session and cell nuclei have also been stained with Hoechst (not shown).( j), Quantification of the cFos positive VTA neurons labelled with red or magenta CTB.\n\nDA neurons located in the medial part of the VTA preferentially project to the NAc core and medial Shell as well as in the medial prefrontal cortex, whereas DA neurons located in more lateral portions of the VTA project to the lateral Shell (Lammel et al., 2008). To reveal the target of the heroin-activated VTA DA neurons, we therefore injected the cholera toxin subunit B (CTB) tracer of two distinct colors (CTB-555 and CTB-488) in the medial and lateral NAc shell respectively (Figure 3f) confirming the topography of medio-lateral VTA-NAc parallel projections. CTB-555 seeded in the medial NAc retrogradly migrated to the medial VTA, whereas CTB-455 injected into the lateral Shell was mostly found in the lateral VTA, with very little co-localization of the two tracers (1.5%, Figure 3g). This result indicates that there are very few collaterals (Yang et al., 2018), allowing for a quantification of the co-localization of the two CTB markers with cFos after a first heroin self-administration session. We thus injected mice with the CTB tracer of two distinct colors (CTB-555 or CTB-647 in the medial or lateral NAc shell respectively, counterbalanced between animals) and submitted the mice to a session of heroin SA. We found that 51.0% of medial Shell projecting VTA neurons were also cFos positive, while this was only the case in 20.5% lateral Shell projecting cells. (Figure 3h\u2013j). Taken together, heroin self-administration activates DA neurons in the medial part of the VTA that project preferentially to the medial NAc shell.\n\nTo probe for a causal relationship between enhanced mesolimbic dopamine and heroin reinforcement, we tested whether inhibiting VTA DA neurons during the initial sessions would impact acquisition and maintenance of heroin SA. To this end, we injected DAT-Cre mice expressing hSyn-DIO-hM4D(Gi) in VTA DA neurons with CNO 1 hr prior to heroin self-administration (Figure 4a\u2013b). This chemogenetic intervention has been shown to be efficient to hyperpolarize DA neurons in acute midbrain slices (Bariselli et al., 2018). Silencing VTA DA neurons in animals where self-administration was well established significantly decreased the number of active lever presses and ensuing heroin infusions (Figure 4c\u2013e, 223\u00a0\u00b1\u00a060 LP for 111\u00a0\u00b1\u00a025 infusions dropped to 23\u00a0\u00b1\u00a09 LP for 15\u00a0\u00b1\u00a06 infusions after 4 days of treatment condition (DAT-Cre+ versus DAT-Cre-) x CNO (present, absent), two-way repeated measures ANOVA and multiple comparison post-hoc Sidack test, *p<0.05, **p<0.005, ****p<0.0001). We further tested the necessity of VTA DA signaling during the very early heroin SA sessions. Silencing VTA DA neurons from the first to the fourth session significantly prevented the acquisition of heroin SA (Figure 4f\u2013h). After CNO was stopped (from session 5), the mice quickly acquired the task and reached a number of lever presses and infusions similar to the control animals. CNO had no effect on self-administration in DAT-Cre- mice. All together these results suggest that VTA DA activity is required for the initial reinforcing properties of opioids from the very early stage of drug exposure.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/39945/elife-39945-fig4-v2.jpg)\n\n**Figure 4.:** (a), Schematic of the experiment for (b-e); (b), Left, VTA of DTA-Cre+ mice were bilaterally injected with the inhibitory DREADD hM4D. Right, coronal confocal images of infected VTA. (c), Raster plot for infusions and inactive lever presses during the daily acquisition sessions of heroin self-administration for a DAT-Cre+ mouse. CNO (2 mg/kg) was injected intraperitoneally 20 min prior. (d), Mean\u00a0\u00b1SEM total lever presses and (e), infusions during the acquisition phase of heroin self-administration for DAT-Cre+ (n\u00a0=\u00a05, closed circle) and DAT-Cre- mice (n\u00a0=\u00a06, open circle). When the self-administration behavior was well established CNO was injected prior to the session and the activation of the inhibitory DREADD dramatically decreased the number of lever presses and infusions (session highlighted in grey and red, respectively) in the DAT-Cre+ animals (condition (DAT-Cre+ versus DAT-Cre-) x CNO (present, absent); (for LP: two-way RM ANOVA, group effect, F(3, 14)=21.81, p<0.001, time effect, F(3, 42)=1.366, p=0.269, group X time interaction, F(9, 42)=1.328, p=0.252; Bonferroni post hoc analysis, ***p<0.001; for infusions: two-way RM ANOVA, group effect, F(1, 7)=12.25, p<0.01, time effect, F(3, 21)=2.664, p=0.0743, group X time interaction, F(3, 21)=2.816, p=0.064; Bonferroni post hoc analysis, **p<0.01). (f), Raster plot for infusions and inactive lever presses during the daily acquisition session of heroin self-administration for a DAT-Cre+ mouse. Twenty minutes prior to the sessions highlighted in pink, CNO (2 mg/kg) was injected intraperitoneally. (g), Mean\u00a0\u00b1SEM total lever presses and (h), infusions during the acquisition phase of heroin self-administration for DAT-Cre+ (n\u00a0=\u00a06, closed circle) or DAT-Cre- mice (n\u00a0=\u00a04, open circle). CNO injection from the first session prevented the establishment of heroin self-administration behavior in the DAT-Cre+ animals (condition (DAT-Cre+ versus DAT-Cre-) x CNO (present, absent); (for LP: two-way RM ANOVA, group effect, F(3, 16)=37.14, p<0.0001, time effect, F(4, 64)=3.755, p=0.0083, group X time interaction, F(12, 64)=2.959, p=0.002; Bonferroni post hoc analysis, **p<0.01, ***p<0.001; for infusions: two-way RM ANOVA, group effect, F(1, 8)=168.6, p<0.0001, time effect, F(4, 32)=13.52, p=0.0001, group X time interaction, F(4, 32)=8.269, p=0.0001; Bonferroni post hoc analysis, **p<0.01, ***p<0.001).\n\nWe next tested whether heroin would occlude optogenetic VTA DA neuron self-stimulation as shown for cocaine (Pascoli et al., 2015). If heroin employs the same neuronal circuitry as VTA DA neuron self-stimulation, a heroin injection should decrease lever pressing for VTA DA activation. DAT-cre+ mice were infected with the blue-light shifted excitatory opsin AAV5-DIO-hChR2-eYFP (Figure 5a\u2013b). To avoid the development of tolerance to heroin, we injected various doses of heroin in a randomized order intraperitoneally (i.p.) immediately prior to the self-stimulation sessions (Figure 5c) and each session under heroin was followed by two sessions with free access to laser stimulation (LS) (Figure 5c). At baseline, the mice pressed up to 291\u00a0\u00b1\u00a039 times to obtain 134\u00a0\u00b1\u00a01.15 LS in 60 min under a fixed-ratio 1 (FR1, followed by 20 s time out period) schedule (Figure 5d and e). After heroin injection, the performance decreased significantly in a dose-dependent fashion (Figure 5i), suppressing lever pressing completely at the highest dose (Figure 5d\u2013i). To rule out any sedative effects of heroin at these doses, a separate set of mice were tested over a 30 min free exploration period in an open field (see Methods). We observed that heroin actually increases locomotor activity in open field, even at the highest dose tested (Figure 5j). These experiments indicate that reinforcement induced by optogenetic self-stimulation of VTA DA neurons or heroin SA share underlying neural circuits.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/39945/elife-39945-fig5-v2.jpg)\n\n**Figure 5.:** (a), Schematic of the experiment for (b-f); (b), Left, VTA of DAT-Cre+ mice was bilaterally injected with a floxed version of the excitatory opsin ChR2. Right, coronal confocal images of infected VTA.(c), Schedule of the experiment.(d), Raster plot for laser stimulation during the daily acquisition session of 1 hr for a DAT-Cre+ mouse. Right before the sessions highlighted in blue, heroin (mg/kg, dose administrated in a random order) was injected intraperitoneally. For a matter of clarity, only the three last baseline sessions are shown and the heroin sessions are arranged from the lowest dose to the highest.(e), Active, inactive lever presses and (f), laser stimulation during each session for an example DAT-Cre+ mouse. Heroin dose-dependently reduced active lever pressing and the number of laser stimulations. (g), Active, inactive lever presses and (h), laser stimulation during the acquisition sessions of self-stimulations for either DAT-Cre+ mice (n\u00a0=\u00a011, closed circles) or DAT-Cre- mice (n\u00a0=\u00a06, open circles). Establishment of self-stimulation behavior was present only in mice with expression of eYFP-ChR2 in VTA DA neurons (DAT-Cre+ but not DAT-Cre- mice (for LP: two-way RM ANOVA, group effect, F(3, 30)=38.27, p<0.001, time effect, F(7, 210)=0.4947, p=0.8378, group X time interaction, F(21, 210)=2.179, p=0.0029; Bonferroni post hoc analysis, **p<0.01, ***p<0.001; for laser stimulation: two-way RM ANOVA, group effect, F(1, 15)=581.8, p<0.0001, time effect, F(7, 105)=3.938, p=0.0007, group X time interaction, F(7, 105)=8.233, p<0.0001; Bonferroni post hoc analysis, ***p<0.001).( i), Dose-response and fitting curve for effect of heroin i.p. injection on laser self-stimulation for DAT-Cre+ (n\u00a0=\u00a011, closed circles) or DAT-Cre- (n\u00a0=\u00a06, open circles) mice. The values of IC50 and Hill coefficient are 6.5 mg/kg and 3.9 respectively. (j), Mean\u00a0\u00b1SEM of distance traveled in an open field after daily injections of increasing doses of saline or heroin (n\u00a0=\u00a06). At highest doses used (16 and 32 mg/kg), heroin significantly increased the distance traveled (saline versus heroin injection, one-way RM ANOVA, heroin doses effect, F(2.475, 12.37)=581.80.27, p=0.00084; Bonferroni post hoc analysis, *p<0.05).\n\nFinally to examine the involvement of VTA GABA neurons (Tan et al., 2012; van Zessen et al., 2012), we tested the reinforcing properties of their self-inhibition and asked whether heroin exposure would also occlude this behavior. We expressed the light-gated inhibitory proton pump eArchT-3.0 in the VTA of GAD-Cre mice (Figure 6a\u2013b;\u00a0O'Connor et al., 2015) and gave the mice control over the laser switch. The mice quickly learned to discriminate the active and inactive lever by significantly increasing the number of active lever press and laser-stimulation triggered during the acquisition sessions (293.1\u00a0\u00b1\u00a040 LP to obtain 119\u00a0\u00b1\u00a015 LS in 180 min). Intraperitoneal injection of heroin just prior to the VTA GABA self-inhibition session significantly decreased the operant behavior in a dose-dependent manner (Figure 6d\u2013f) and abolished this behavior at the highest dose (Figure 6d\u2013f). In fact, the IC50 was very similar to the IC50 calculated based on the occlusion with DA neuron self-stimulation (6.9 vs 6.4 mg/kg, Figure 6i and Figure 5i). This experiment indicates that reinforcement by optogenetic VTA GABA self-inhibition and reinforcement by heroin share underlying neural circuits and are compatible with a disinhibitory mechanism where heroin targets GABA neurons leading to an increase of DA neurons activity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/39945/elife-39945-fig6-v2.jpg)\n\n**Figure 6.:** (a), Schematic of the experiment for b-f; (b), Left, VTA of GAD-Cre+ mice was bilaterally injected with a floxed version of the inhibitory opsin Arch3.0. Right, coronal confocal images of infected VTA.( c,) Schedule of the experiment.( d), Raster plot for laser inhibition during the daily acquisition session of 3 hr for a GAD-Cre+ mouse. Right before the sessions highlighted in yellow, heroin (mg/kg) was injected intraperitoneally.( e), total lever presses and (f), infusions during the acquisition phase of laser self-inhibition for an example GAD-Cre+ mouse. Heroin injection resulted in a dose-dependent decrease in laser self-inhibition.( g,) Dose-response and fitting curve for effect of heroin i.p injection on laser self-inhibition for GAD-Cre+ mice (n\u00a0=\u00a07). The values of IC50 and Hill coefficient are 6.2 mg/kg and 2.8 respectively. (h,) Summary diagram. After self-administration heroin, metabolized in morphine, binds to the MORs located on GABA neurons and activates GIRKs channels. It results in the inhibition of these neurons and the disinhibition of the DA neurons located in the ventromedial VTA. Disinhibition of these neurons leads to an increase in DA release in the medial NAc shell.\n\n## Discussion\n\nIn the present study, we found that heroin increases DA in the NAc through the activation of a subset of VTA DA neurons located in the medial VTA, which preferentially project to the NAc medial shell. Our chemo- and optogenetic manipulations support a disinhibitory motif and establish a link of causality with behavioral reinforcement.\n\nThe VTA consists of DA (60\u201365%), GABA (30\u201335%), glutamate (2%) and neurons that express more than one marker (Margolis et al., 2006; Nair-Roberts et al., 2008; Roberts and Ribak, 1987; Steffensen et al., 1998; Yamaguchi et al., 2011). Among DA neurons, subpopulations have been proposed based on DAT expression (Blanchard et al., 1994; Li et al., 2013), properties of afferent excitatory and inhibitory synaptic inputs, as well as projection to distinct targets, which have been mapped to specific functions. For example, aversive stimuli potentiate glutamatergic inputs onto DA neurons projecting to the mPFC, while rewarding stimuli potentiate inputs onto medial shell and lateral shell NAc projecting DA neurons (Lammel et al., 2011). The mediolateral topography of accumbens shell neurons is conserved by their dopamine inputs from the VTA, where medial and lateral shell projecting DA neurons segregate along the mediolateral VTA (Beier et al., 2015; Lammel et al., 2012; Lammel et al., 2008). We find that heroin during initial reinforcement preferentially activates neurons of the medial VTA projecting to the medial Shell, but cannot exclude the contribution from other projections.\n\nMost of the afferents to midbrain DA neurons are GABAergic. Back projecting accumbal medium-spiny neurons, while targeting both DA and GABA neurons (Beier et al., 2015; Henny et al., 2012; Yang et al., 2018), form particularly strong synaptic connections to the latter (Bocklisch et al., 2013), which then control the activity of DA neurons (Johnson and North, 1992). This disinhibitory motif is particularly strong for neurons of the lateral VTA (Yang et al., 2018). Removal of tonic inhibition from VTA DA neurons by interneurons and accumbal projections can therefore cause increases in DA neuron activity (Jhou et al., 2009; Johnson and North, 1992) and NAc DA release (van Zessen et al., 2012). Using a genetically encoded DA reporter we confirm that already the very first dose of heroin increases DA in the shell.\n\nIn the alternate model of DA-independent reinforcement, the initial effect of opioids would still be on VTA GABA neurons that however mainly project to the PPN (Laviolette et al., 2004), a heterogeneous nucleus containing GABA, glutamate and acetylcholine neurons. The PPN projects back to the midbrain (Oakman et al., 1995; Wang and Morales, 2009; Watabe-Uchida et al., 2012) regulating reinforcement (Floresco et al., 2003; Inglis et al., 2000; Lammel et al., 2012; Pan and Hyland, 2005; Steidl and Veverka, 2015). The nearby LDT which strongly innervates the VTA may also contribute (Omelchenko and Sesack, 2005). There is direct evidence that the activation of the LDT-VTA pathway leads to CPP, reinforces operant responses with natural- (Lammel et al., 2012; Steidl and Veverka, 2015) and drug-rewards (Shinohara et al., 2014; Wise, 2004). However, all these scenarios converge to activate VTA DA neurons, and are thus not DA-independent. Such a \u2018non-dopaminergic substrate for reward within the VTA\u2019 (Nader and van der Kooy, 1997) is also at odds with several publications that observe an increase of extracellular DA levels in the shell following acute administration of opioids (Aragona et al., 2008; Di Chiara and Imperato, 1988; Pontieri et al., 1995; Stuber et al., 2005). Moreover our data suggest that the same circuits maintain reinforcement as exposure becomes chronic. After 12 days of heroin self-administration, inhibition of DA neurons still caused a strong, but fully reversible decrease in the responding behavior. Taken together DA-independent heroin reinforcement seems unlikely.\n\nHeroin decreased lever-pressing for VTA DA neuron self-stimulation (Pascoli et al., 2015) in a dose-dependent fashion, which could not be explained by sedative effects as the same dose was able to increase locomotor activity in an open field. Such occlusion strongly suggests that heroin converges on the same cellular mechanism (similar to cocaine occlusion experiments). We also - to the best of our knowledge for the first time in the literature - observed strong reinforcement with GABA neuron self-inhibition, which was sensitive to heroin exposure. Opioids suppress the activity of VTA GABA interneurons by activation of \u00b5-opioid receptors (MORs) (Jalabert et al., 2011; Johnson and North, 1992; Mazei-Robison et al., 2011), which then hyperpolarize the neurons and decrease the release probability at the axon terminal via the activation of GIRK channels and the inhibition of voltage gated calcium channels, respectively (Cohen et al., 1992; Johnson and North, 1992). The most straightforward interpretation for the effect on the behavior is thus again an occlusion scenario. Interestingly the IC50 for this effect was virtually identical to the IC50 observed with the occlusion of self-stimulation of DA neurons.\n\nOur results are in direct contrast with older pharmacological experiments, where DA receptor antagonists had an effect on reinforcement of cocaine but not heroin (Ettenberg et al., 1982; Pettit et al., 1984). Maybe the receptor occupancy of the antagonists was insufficient, particularly when administrated intra-cranially as suggested by the discrepancy between the systemic and intra-cranial results (Neisewander et al., 1998). Moreover, several studies relied on CPP rather than testing for the effect on self-administration. Moreover, validation of the pharmacological effect on neural activity in vivo remains difficult.\n\nOn the other hand, there is much support for functional accumbal DA transmission underlying opioid reinforcement. Electrolytic lesions or inactivation of the NAc result in significantly decreased responding for intravenous self-administration of opioids (Alderson et al., 2001; Dworkin et al., 1988; Suto et al., 2011; Zito et al., 1985). Mice also learn to self-administer MORs agonists when infused directly into the NAc (David and Cazala, 2000; Goeders et al., 1984), most likely via the disinhibitory loop connecting the NAc back to the VTA. A recent study using a siRNA to downregulate D1aR in the NAc shell blocked the acquisition of cocaine but not heroin self-administration (Pisanu et al., 2015), raising the question for the role of specific DA receptors in drug-adaptive behavior.\n\nThe observation that morphine can induce CPP in DA-deficient mice (Hnasko et al., 2005) is likely explained by developmental adaptations. Moreover, these mice suffer from a severe locomotion deficit, which precluded the testing for reinforcement in a self-administration setting.\n\nHere, by confirming the validity of the DA hypotheses for opioids, we aim to integrate work on these drugs into the emerging circuit model for addiction. Our study thus supports VTA DA neuron disinhibition for the opioid reinforcement. Untangling the circuits underlying opioid reinforcement may not only allow refining addiction treatments, but also draft the roadmap for the development of analgesic compounds without addiction liability.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>DATIREScre</td>\n      <td>The Jackson Laboratory (www.jax.org)</td>\n      <td>MGI:3689434</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Gad2tm2(cre)Zjh</td>\n      <td>The Jackson Laboratory (http://www.jax.org)</td>\n      <td>MGI:4418713</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (homo sapiens, human)</td>\n      <td>HEK293T</td>\n      <td>ATCC</td>\n      <td>Cat# CRL-1573</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV9-CAG-dLight1.1</td>\n      <td>Dr. Lin Tian, University of California Davis</td>\n      <td></td>\n      <td>Patriarchi et al., 2018</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAVDJ-EF1a-DIO-GCaMP6m</td>\n      <td>Stanford Vector Core</td>\n      <td>Cat# GVVC-AAV-94</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV8-hSyn-DIO-ChrimsonR-tdTo</td>\n      <td>UNC Vector Core</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV5-hSyn-DIO-HM4D(Gi)-mCherry</td>\n      <td>UNC Vector Core</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV5-EF1a-DIO-ChR2(H134R)-eYFP</td>\n      <td>UNC Vector Core</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>AAV5-EF1a-DIO-eArch3.0-eYFP</td>\n      <td>UNC Vector Core</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CTB (Alexa FluorTM 555 Conjugate)</td>\n      <td>Invitrogen/Thermo Fisher</td>\n      <td>Cat# C34776</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CTB (Alexa FluorTM 488 Conjugate)</td>\n      <td>Invitrogen/Thermo Fisher</td>\n      <td>Cat# C34775</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>CTB (Alexa FluorTM 647 Conjugate)</td>\n      <td>Invitrogen/Thermo Fisher</td>\n      <td>Cat# C34778</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Diacetylmorphine (heroin)</td>\n      <td>DiaMo Narcotics GmbH</td>\n      <td>DIAPHIN</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Citalopram</td>\n      <td>Cayman Chemical</td>\n      <td>Cat# 14572</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Reboxetine</td>\n      <td>Tocris</td>\n      <td>Cat# 1982</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cocaine</td>\n      <td>University Hospital of Geneva</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-cFos</td>\n      <td>Santa Cruz Biotechnology</td>\n      <td>RRID: AB_2106783</td>\n      <td>(dilution 1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Tyrosine Hydroxylase</td>\n      <td>Sigma-Altrich</td>\n      <td>Cat# T2928</td>\n      <td>(dilution 1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti- GFP</td>\n      <td>Invitrogen/Thermo Fisher</td>\n      <td>Cat# 11122</td>\n      <td>(dilution 1:500)</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Prism 7.02</td>\n      <td>Graphpad</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB R2017a</td>\n      <td>Mathworks</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Synapse</td>\n      <td>Tucker-Davis Technologies</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Animals\n\nWild-type C57BL/6 and transgenic mice were used throughout the study. Weights, ages and genders were homogeneously distributed among the groups. Transgenic mice were backcrossed to the C57BL/6 line for a minimum of four generations. Transgenic DAT-Cre mice (Slc6a3) were heterozygous BAC transgenic mice in which the Cre recombinase expression was under the control of the regulatory elements of the DA transporter gene (DAT-Cre+ mice; (Turiault et al., 2007) DAT-Cre mice were originally provided by G\u00fcnther Schutz. GAD-Cre+ (Gad65Cre non-inducible;(K\u00e4tzel et al., 2011)) mice (Gad2) were also used. All animals were kept in a temperature (21 \u00b1 2\u00b0C) and humidity (50 \u00b1 5%) controlled environment with a 12 hr light/12 hr dark cycle (lights on at 7:00). Food and water were available ad libitum, unless otherwise stated. All procedures were approved by the animal welfare committee of the Cantonal of Geneva, in accordance with Swiss law.\n\n### Stereotaxic injections and optic fiber cannulation\n\nAnesthesia was induced at 5% and maintained at 2.5% isoflurane (w/v) (Baxter AG) during the surgery. The animal was placed in a stereotaxic frame (Angle One) and craniotomies were performed using stereotaxic coordinates (for VTA: AP \u22123.3; ML \u22120.9 with a 10\u00b0 angle; DV \u22124.3. For the lateral NAc shell: AP 0.98; ML +- 1.6; DV \u22124.5. For the medial NAc shell: AP 1.6; ML +- 0.5; DV \u22124.3). Injections of virus (0.5 \u03bcl) used graduated pipettes (Drummond Scientific Company), broken back to a tip diameter of 10\u201315 mm, at an infusion rate of 0.05 \u03bcl / min. Following the same procedure AAV5-hSyn-DIO-HM4D(Gi)-mCherry, AAV5-EF1a-DIO-ChR2(H134R)-eYFP and AAV5-EF1a-DIO-eArch3.0-eYFP (all from University of North Carolina Vector Core) were also injected bilaterally in the VTA, while AAV-DJ-EF1a-DIO-GCaMP6m (Stanford Vector Core) and dLight1 (AAV9-CAG-dLight1.1, courtesy of Dr. Lin Tian, University of California Davis) were injected unilaterally in the VTA and the NAc, respectively. Finally, cholera toxin subunit B Alexa Fluor 555, 488 and 647 conjugate (CTB 555, CTB 488 and CTB 647, Invitrogen) were injected bilaterally in the lateral or medial NAc shell respectively. When the experimental paradigm required it, during the same surgical procedure, unique chronically indwelling optic fiber cannula (Sparta et al., 2011) were implanted above the VTA using the exact same coordinates as for the injection except for DV coordinate, which was reduced to 4.2. Three screws were fixed into the skull to support the implant, which was further secured with dental cement. First behavioral session typically occurs 10\u201314 days after surgery to allow sufficient expression of the virus.\n\n### Implantation of jugular vein catheter\n\nMice were anaesthetized with a mix of ketamine (60 mg/kg, Ketalar) and xylazine (12 mg/kg, Rompun) solution. Catheters (CamCaths, model MIVSA) made of silicone elastomer tubing (outside diameter 0.63 mm, inside diameter 0.30 mm) were inserted 1.0\u20131.2 cm in the right jugular vein, about 5 mm from the pectoral muscle, to reach the right atrium. The other extremity of the catheter was placed subcutaneously in the mid-scapular region and connected to stainless steel tubing appearing outside the skin. Blood reflux in the tubing was checked to confirm correct placement of the catheter. Mice were allowed to recover for 3\u20135 days before the start of drug self-administration training and received antibiotics (Baytril 10%, 1 ml in 250 ml of water) in the drinking water during this period. Catheters were flushed daily with a heparin solution (Heparin \u2018Bichsel\u2019) in saline (30 IU) during the recovery period and just before and after each self-administration session.\n\n### Self-administration apparatus\n\nAll behavioral experiments were performed during the light phase and took place in mouse operant chambers (ENV-307A-CT, Med Associates) situated in sound-attenuating cubicle (Med Associates). Two retractable levers were present on both sides of one wall of the chamber. A cue-light was located above each lever and a house light was present in each chamber. During intravenous drug self-administration sessions, the stainless steel tubing of the catheter device was connected through a CoEx PE/PVCtubing (BCOEX-T25, Instech Solomon) to a swivel (Instech Solomon) and then an infusion pump (PHM-100, Med-Associates). The apparatus was controlled and data captured using a PC running MED-PC IV (Med-Associates).\n\n### Drug self-administration acquisition\n\nTo familiarize the mice with the operant self-administration setting, we performed four days of food shaping, whereby the mouse had to press an active lever once to obtain a food reward (FR1, one 60 min session per day, 20 mg sucrose pellet, Test Diet, USA). Following IV-catheter placement surgery mice were deprived of food for 12 hr before the first self-administration session to promote exploratory activity and were given food access ad libitum after the first session. Each session was 360 min in duration and started with the illumination of the house light and the insertion of the two levers into the operant chamber. During the first six sessions, a single press on the active lever (termed fixed-ratio one, or FR1) resulted in an infusion of 0.05 mg/kg of heroin (diacetylmorphine, DiaMo Narcotics GmbH, dissolved in 0.9% saline at 0.05 mg/mL and delivered at 0.0177 ml/s as a unit dose depending on the weight of the mouse) paired with a 5 s continuous illumination of the cue light above the active lever. Completion of the fixed-ratio also initiated a timeout period of 40 s during which heroin was no longer available. For the next six sessions, the dose of heroin was halved to 0.025 mg/kg in order to boost lever pressing (as a measure of motivation) while avoiding overdoses or any eventual sedative effect. Time out period was reduced to 10 s. The active lever (left or right lever) was randomly assigned for each mouse. To avoid an overdose of heroin, a maximum of 75 infusions for the \u2018high\u2019 dose and 150 for the \u2018low\u2019 dose were allowed per session. Only mice having reached a stable rate of correct lever responses were included in the study. Saline control mice undertook the same procedure as heroin mice except that saline (NaCl 0.9% B. Braun) replaced heroin infusions.\n\n### Test of cue-associated drug seeking\n\nThirty days after the final self-administration session (that is day 42), mice were tested for cue-associated seeking. The cue-associated drug-seeking test was a 90 min session, identical to the heroin acquisition period (house light on, insertion of the two levers), except that one press on the active lever (FR1 schedule) now triggered illumination of the cue light for 5 s but without a heroin infusion or a timeout period. The infusion pump was also activated during the drug-seeking session, because the pump noise provided an extra drug-associated cue.\n\n### Fiber photometry cannulation and recordings\n\nFollowing viral injections (see above), DAT-Cre+ or wildtype mice were chronically implanted with an optic fiber (MFC_400/430\u20130.48_4 mm_ZF2.5(G)_FLT, Doric Lenses) above the VTA (GCaMP6m experiments) or NAc (dLight experiments). During recordings excitation (470 nm, M470F3, Thorlabs) and control LED light (405 nm, M405FP1, Thorlabs) was passed through excitation filters and focused onto a patch cord (MFP_400/430/1100\u20130.48_4 m_FC-ZF2.5, Doric Lenses). The fiber patch cord was connected to the chronically implanted fiber, and emission light (500\u2013550 nm) was collected through the same fiber and passed onto a photoreceiver (Newport 2151, Doric Lenses). Excitation light was sinusoidally modulated at 211 and 531 Hz (470 nm and 405 nm light, respectively) and collected raw signal was demodulated by a real-time signal processor (RZ5P, Tucker Davis Systems) to determine contributions from 470 nm and 405 nm excitation sources (see Lerner et al., 2015).\n\nFor bulk GCaMP6 imaging of VTA DA calcium activity, animals were also surgically implanted with an intravenous catheter in the right jugular vein (see above). After habituation they were then recorded while freely moving in standard Med-Associates operant chambers. They were recorded for a baseline period (10 min) and then received five saline IV injections, immediately followed by a second baseline period (10 min) and five IV heroin injections. All injections were non-contingent with a two minute inter-injection interval.\n\nFor recordings of striatal dopamine dynamics using dLight, after habituation to handling, animals were injected intraperitoneally while freely moving in their homecage. In order to assess the effects of heroin (8 mg/kg), intraperitoneal Injections were performed on two experimental days separated by at least 48 hr (saline or heroin in counterbalanced design). A separate cohort of animals was subsequently treated with saline, citalopram (10 mg/kg, Cayman Chemical), reboxetine (20 mg/kg, Tocris) and cocaine (20 mg/kg) on separated recording days. During each day, fluorescence was recorded for at least a five-minute baseline period before injection, and a twenty-minute period after injection.\n\nA subgroup of dLight animals was DAT-Cre positive (n\u00a0=\u00a03), and also injected with AAV8-hSyn-FLEX-ChrimsonR-TDTomato in the VTA, while a second optic fiber was placed above the structure. On a separate session, animals were optogenetically stimulated in the VTA while freely moving in their homecage. Using a counterbalanced sequence, bursts of 10\u201315 mW 593 nm wavelength light were administered once per 30 s. Bursts consisted of 5 pulses of 5 ms duration at 5, 10, 20, and 50 Hz. Laser light originated from a 593 nm DPSS laser that was gated by a shutter (CMSA-SR475_FC, Doric Lenses).\n\nAll data analyses were performed offline in Matlab (custom script https://github.com/tjd2002/tjd-shared-code, Davidson, 2016). To calculate dF/F, a linear fit was applied to the 405 nm signal during the baseline period to align it to the 470 nm signal, producing a fitted 405 nm signal that was used as F0 to normalize the 470 nm using standard dF/F normalization: (470 nm signal - fitted 405 nm signal)/fitted 405 nm signal. To quantify signal changes, for GCaMP6 experiments the average signal in the five minutes preceding the first IV injection (saline or heroin) was then compared to the average signal in the five minutes following the fifth IV injection (saline or heroin). For dLight experiments, the average signal in the five minutes preceding IP injection was compared to the average signal between ten and fifteen minutes after IP injection. At the end of all experiments, mice were euthanized and brains fixed in paraformaldehyde to prepare histological slices for verification of virus expression.\n\n### Cell culture for dLight1 sensitivity experiment\n\nHEK293T cells (ATCC, Manassas VA #1573, STR authenticated, mycoplasma negative) were cultured and transfected as previously described (Patriarchi et al., 2018). Briefly, hippocampal neurons were isolated and infected using AAVs (1 x 109 GC/ml) at DIV5. Two weeks later, cells were washed with HBSS (Life Technologies) and imaged using a 40X oil-based objective on an inverted Zeiss Observer LSN710 confocal microscope with 488/513 ex/em wavelengths. For testing dLight1 sensitivity, neurotransmitters were directly applied to the bath during imaging sessions. A dual buffer gravity-driven perfusion system was used to exchange buffers between different drug concentrations. One-photon emission spectrum for the sensors was determined using the lambda-scan function of the confocal microscope. Two-photon emission spectrum was obtained with a 40X water-based objective on a SliceScore (Scientifica) and used to obtain normalized two-photon cross-section using MATLAB ROIs were generated using the threshold function in Fiji. Spatial movies and images of dF/F in response to a ligand was calculated as $\\frac{Ft-F-baseline}{F-baseline}$ with $Ft$\u00a0the pixel-wise fluorescence value at each time and mean fluorescence in time points prior to ligand application,$F-baseline$.\n\n### Immunostaining and cell counting\n\nMice were injected with a lethal dose of pentobarbital (150 mg/kg) and perfused trans-cardially with cold PBS and 4% paraformaldehyde solution. Brains were extracted and submerged in fixative for 24 hr at 4\u00b0C. Series of coronal 60 mm thick sections were cut on a vibratome. Immunostaining started by blocking slices in PBS 10% BSA and 0.3% Triton X-100 followed by overnight incubation in PBS 3% BSA and 0.3% Triton X-100 with primary antibody: cFos (dilution 1:5000, rabbit polyclonal, Santa Cruz, RRID: AB_2106783), TH (dilution 1:500, Mouse monoclonal anti-Tyrosine Hydroxylase, Sigma T2928) or GFP (dilution 1:500, rabbit polyclonal, Invitrogen, A11122). After three 15 min washes in PBS at room temperature, slices were incubated with 1:500 Alexa-conjugated secondary antibodies against the corresponding species (Alexa-Fluor 488, 555, Life Technologies). After three more steps of washing in PBS, a Hoechst staining was used to stain all neurons. Slices were then mounted and covered on microscope slides using mounting medium Mowiol (Calbiochem, Cat 475904\u2013100 GM). Images were obtained in a confocal laser-scanning microscopy with a Fluoview 300 system (Olympus) using a 488 nm argon laser and a 537 nm heliumneon laser or in Leica SP5 confocal microscope using additional 350 nm laser with a 20x/0.7 NA oil immersion or objective. A semi-automated method was used to quantify viral infection and cFos expression in confocal images of brain slices containing the VTA or the NAc. Equally thresholded images were subjected to multiparticle analysis (NIH ImageJ). Region of interest (ROI) intensity values were obtained from the z stack of raw images by using Multi Measure tool. Colocalization was determined by overlap of the ROI obtained from the two independent fluorescence signals. Analysis was performed in at least three sections per animal.\n\n### DA neuron Self-Stimulation/Inhibition Acquisition\n\nFor optogenetic studies, fiber optic cannulae of mice were connected via patch cords (Thor Labs, Germany) to a rotary joint (FRJ_1 \u00d7 2_FC-2FC; Doric Lenses, Quebec, Canada), suspended above the operant chamber. A second patch cord connected from the rotary joint to a blue or orange DPSS laser (SDL-473\u2013100 mW or SDL-593\u2013100 mW, respectively; Shanghai Dream Lasers; Shanghai, China) positioned outside of the cubicle. Laser power was typically 15\u201320 mW measured at the end of each patch cord. Thus, allowing for up to 30% power loss in connecting the patch cord to the implanted cannulae, we estimated laser power to be approximately 10\u201314 mW at the tip of the cannulae. In some cases, a mechanical shutter was used to control laser output (SR474 driver with SR476 shutter head; Stanford Research Systems, aligned using a connectorized mechanical shutter adaptor; Doric Lenses).\n\nEach of the 22 optogenetic stimulation of VTA DA acquisition sessions lasted 60 min with no maximum number of reward. During all the sessions, a single press on the active lever (termed fixed ratio one, or FR1) resulted in a 10 s illumination of a cue light (pulses of 1 s at 1 Hz). After a delay of 5 s, onset of a 15 s blue laser stimulation (473 nm) composed of 30 bursts separated by 250 ms (each burst consisted of 5 laser pulses of 4 ms pulse width at 20 Hz; Brown et al., 2010). A 20 s timeout followed the rewarded lever press, during which lever presses had no consequence but were recorded.\n\nEach of the 19 optogenetic inhibition of VTA GABA acquisition sessions lasted 180 min with no maximum number of reward. During all the sessions, a single press on the active lever (termed fixed ratio one, or FR1) resulted in a 10 s illumination of a cue light (pulses of 1 s at 1 Hz). After a delay of 5 s, onset of a 15 s continuous orange laser stimulation. A 20 s timeout followed the rewarded lever press, during which lever presses had no consequence but were recorded.\n\n### Effect of heroin on locomotor activity\n\nTo assess locomotor activity, mice were tested over a 30 min free exploration period in an open field. The apparatus consisted of Plexiglas square (40 \u00d7 40 cm). Light intensity was respectively 150 lux and 120 lux at the center and walls of the arena. Animals were injected daily with saline or increasing doses of heroin (4, 8, 16, 32 mg/kg, i.p., 10 ml/kg) immediately before being placed in the apparatus. The distance travelled was recorded and analyzed by a video-tracking system (ANY-maze; Stoelting).\n\n### Effect of chemogenetic inhibition of VTA DA neurons on self-administration behavior\n\nOne hour before the behavioral test, DAT-Cre+ mice expressing DREADD receptors were intraperitoneally injected with CNO 2 mg/kg in saline solution (10 ml/kg). The mice were then placed in the same settings as in a self-administration 360 min session (as described on page 12). Mice were randomly assigned to one of the two behavioral protocols. DAT-Cre- mice were used in the same settings as negative controls.\n\n### Statistics\n\nSample sizes were calculated using publicly available sample size calculators; group sizes are in the range use for similar methodology by us and others. Experiments were typically repeated in at least two cohorts. Samples were randomly assigned to experimental groups. Experimenters were not blinded for data collection and analysis, except for cFos quantification (both acquisition and analysis),. Multiple comparisons were first subject to mixed-factor ANOVA defining both between- (for example, DAT-cre\u00a0+vs DAT-cre-; saline or heroin self-administration groups) and/or within- (for example, active or inactive lever presses) group factors. Where significant main effects or interaction terms were found (p<0.05), further comparisons were made by a two-tailed Student\u2019s t-test with Bonferroni correction. Single comparisons of between- or within-group measures were made by two-tailed non-paired or paired Student\u2019s t-test, respectively.\n",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "6d0babe0-6e1d-4369-8cbc-574c0aaba2c3",
+      "submission_id": "6346a888-a765-40d4-ac40-df0ef8115631",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lisa M Monteggia, UT Southwestern Medical Center United States\n\nReviewers:\n- Marina E Wolf, United States\n\n## Review text\n\nDOI: [10.7554/eLife.39945.013](https://doi.org/10.7554/eLife.39945.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dopamine neurons projecting to medial shell of the nucleus accumbens drive heroin reinforcement\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by a Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers were overall positive about your study and found the manuscript balanced and scholarly in its effort to address a timely question. However, the reviewers agreed that certain key issues need to be addressed before publication. Importantly, two methods used in the study need some further validation. The authors are strongly encouraged to control for potential non-specific effects of CNO as well as establish the specificity of the dLight1 probe. The authors may already have data to address these issues. Inclusion of further controls will strengthen the arguments presented in the manuscript.\n\nEssential revisions:\n\n1) D-Light is a novel tool. The authors should validate the specificity of the signal. It would be great to replicate some of the controls shown in the original paper to establish the veracity of D-Light as a reporter for dopamine.\n\n2) Given the recent issues with the selectivity and potential metabolism of clozapine-n-oxide (CNO), the authors should control the DREADD experiments with clozapine to ensure that the effects are specific to DREADD action.\n",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "81ffa51e-2b08-41ad-9ae5-56599d8e08ba",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C1",
+      "claim": "Mice trained to intravenously self-administer heroin under a fixed-ratio one schedule for 12 daily sessions of 6 hr maximum quickly learned to discriminate between an active and an inactive lever.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were trained to intravenously self-administer heroin under a fixed-ratio one schedule (Figure 1a, see Methods) for 12 daily sessions of 6 hr maximum (Figure 1b). The dose was decreased from 50 to 25 \u00b5g/kg/infusion after six days, which led to higher acquisition rates (Figure 1c). The animals quickly learned to discriminate between an active and an inactive lever (after 6 days of training: 144.9 \u00b1 26.0 active lever presses versus 8.3 \u00b1 2.5 inactive ones; after 12 days: 283.4 \u00b1 28 versus 20.9 \u00b1 9.3. Figure 1d\u2013f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing differential lever pressing behavior (144.9 \u00b1 26.0 active vs 8.3 \u00b1 2.5 inactive after 6 days) and referenced to Figure 1d-f showing behavioral measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "867122d8-49b2-4c27-8c3c-6eea1c4aa3e9",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C2",
+      "claim": "After 30 days of withdrawal, mice significantly differentiated between active and inactive lever in the absence of heroin injections.",
+      "claim_type": "EXPLICIT",
+      "source": "After 30d of withdrawal, mice were brought back into the apparatus in the absence of heroin injections and significantly differentiated between active and inactive lever (Figure 1h and i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from withdrawal testing and referenced to Figure 1h and i showing lever discrimination behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "af19c06d-033c-434b-b7dc-78fc61fe4729",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C3",
+      "claim": "Heroin is highly reinforcing and induces seeking behavior, which is a widely used model for relapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together this experiment shows that heroin was highly reinforcing and induced seeking behavior, a widely used model for relapse (Garc\u00eda Pardo et al., 2017; Shaham et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the self-administration and withdrawal experiments, and by citations to Garc\u00eda Pardo et al., 2017 and Shaham et al., 2003 establishing this as a model for relapse.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "a70df948-ce9b-4bbe-a3f8-d678004e0464",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C4",
+      "claim": "dLight1 enables optical readout of changes in DA concentration by coupling the agonist binding-induced conformational changes in human DA receptors to changes in the fluorescence intensity of circularly permuted GFP derived from GCaMP6.",
+      "claim_type": "EXPLICIT",
+      "source": "dLight1 enables optical readout of changes in DA concentration by coupling the agonist binding-induced conformational changes in human DA receptors to changes in the fluorescence intensity of circularly permuted (cp) GFP derived from GCaMP6 (Patriarchi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Patriarchi et al., 2018 describing the dLight1 sensor mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "0e142f18-bac4-468e-9040-12549353070f",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C5",
+      "claim": "Brief (5 ms) delivery of 593 nm laser light pulses into the VTA resulted in an increase of fluorescence in the NAc that co-varied with frequency of stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Brief (5 ms) delivery of 593 nm laser light pulses into the VTA resulted in an increase of fluorescence in the NAc that co-varied with frequency of stimulation (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from optogenetic stimulation experiments and referenced to Figure 2d showing frequency-dependent fluorescence changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "d532ba3a-3332-449a-b65c-060dfd282690",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C6",
+      "claim": "Within less than a minute after intraperitoneal heroin administration, a fluorescence transient was observed that peaked after three minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Within less than a minute after the intraperitoneal heroin administration, we observed the onset of a fluorescence transient that peaked after three minutes (Figure 2e\u2013f, saline: \u22120.008 \u00b1 0.007, dF/F heroin: 0.133 \u00b1 0.03 dF/F, p=0.0062, t(6) = 4.117, Paired Student's T-Test, n = 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing time course and magnitude of fluorescence changes with statistical analysis (p=0.0062, n=7) and referenced to Figure 2e-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "a50187b1-1bb7-493b-8610-e2c72267cd8e",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C7",
+      "claim": "The effect size of heroin on dLight fluorescence was similar to that of cocaine.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the effect size was similar to that of cocaine, but was not seen following administration of the selective-serotonin reuptake inhibitor citalopram nor the norepinephrine reuptake inhibitor reboxetine (Figure 2g saline: \u22120.01 \u00b1 0.005 dF/F, citalopram: \u22120.008 \u00b1 0.008 dF/F, cocaine: 0.165 \u00b1 0.025 dF/F, reboxetine \u22120.009 \u00b1 0.006 dF/F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data comparing fluorescence changes across different drugs (heroin: 0.133 \u00b1 0.03 dF/F vs cocaine: 0.165 \u00b1 0.025 dF/F) and referenced to Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "27a99864-caad-4f18-9c10-35324e4519fb",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C8",
+      "claim": "dLight fluorescence specifically captures dopamine transients.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrate that dLight fluorescence specifically captures dopamine transients, and a first injection of heroin increases DA concentration in the NAc within minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental results showing selective response to dopamine-modulating drugs (heroin, cocaine) but not to serotonin or norepinephrine reuptake inhibitors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "ac8ae933-92c8-4090-a450-41a85e968cd9",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C9",
+      "claim": "A first injection of heroin increases DA concentration in the NAc within minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments demonstrate that dLight fluorescence specifically captures dopamine transients, and a first injection of heroin increases DA concentration in the NAc within minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing fluorescence increase within minutes of heroin administration (peaked after three minutes).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "9d8e7378-bb8c-4c7c-a792-d1daec17dc96",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C10",
+      "claim": "Repeated infusions of heroin through the jugular vein every 2 min increased the calcium signal in VTA-DA neurons within minutes and a plateau is observed after the third infusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Repeated infusions of heroin through the jugular vein, every 2 min, increased the calcium signal in VTA-DA neurons within minutes and a plateau is observed after the third infusion (Figure 2i\u2013j, dF/F saline compared to baseline: \u22120.0063 \u00b1 0.016, dF/F heroin compared to baseline: 0.22 \u00b1 0.085, n = 11, p=0.001, Wilcoxon signed rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from GCaMP6m recordings showing calcium signal changes with statistical analysis (p=0.001, n=11) and referenced to Figure 2i-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "2cd3c948-709c-4416-a4d6-ad9de7c3cd3c",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C11",
+      "claim": "The kinetic of VTA DA neuron activity is similar to the DA surge observed in the NAc suggesting a tight correlation between VTA DA neurons activity and DA release.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, even though the methods are inherently technically different, the kinetic of this activity is similar to the DA surge we observed in the NAc suggesting a tight correlation between VTA DA neurons activity and DA release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparison of temporal patterns between VTA DA neuron calcium signals and NAc dopamine fluorescence measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "a6dccfed-e3ea-42ee-a90d-941a38debc2a",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C12",
+      "claim": "The first exposure to heroin in naive animals increases VTA DA neuron activity and increases DA release in the NAc.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these experiments demonstrate that the first exposure to heroin in naive animals increases VTA DA neuron activity and increases DA release in the NAc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from both GCaMP6m recordings in VTA and dLight recordings in NAc showing increased activity and DA release.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "469c59c3-e3d7-49f8-b334-1bb5b0c847fb",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C13",
+      "claim": "27.8% of TH+ neurons were cFos+ after heroin self-administration in the medial part of the VTA, whereas 1.5% of TH+ were cFos+ after saline self-administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells positive for cFos that were also TH-immunoreactive were found most prominently in the medial part of the VTA. In this area of the VTA, 27.8% of TH+ were cFos+ after heroin SA, whereas 1.5% of TH+ were cFos+ after saline SA (Figure 3b\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from immunohistochemistry showing differential cFos expression (27.8% vs 1.5%) and referenced to Figure 3b-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "ea110384-d8d9-4571-ae1b-62004e755f48",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C14",
+      "claim": "DA neurons located in the medial part of the VTA preferentially project to the NAc core and medial Shell as well as in the medial prefrontal cortex, whereas DA neurons located in more lateral portions of the VTA project to the lateral Shell.",
+      "claim_type": "EXPLICIT",
+      "source": "DA neurons located in the medial part of the VTA preferentially project to the NAc core and medial Shell as well as in the medial prefrontal cortex, whereas DA neurons located in more lateral portions of the VTA project to the lateral Shell (Lammel et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lammel et al., 2008 describing VTA-NAc projection topography.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "b04fb195-4f1f-41d5-bd16-330dd07c93fb",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C15",
+      "claim": "CTB-555 seeded in the medial NAc retrogradely migrated to the medial VTA, whereas CTB-455 injected into the lateral Shell was mostly found in the lateral VTA, with very little co-localization of the two tracers (1.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "CTB-555 seeded in the medial NAc retrogradly migrated to the medial VTA, whereas CTB-455 injected into the lateral Shell was mostly found in the lateral VTA, with very little co-localization of the two tracers (1.5%, Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from retrograde tracing showing spatial segregation (1.5% co-localization) and referenced to Figure 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "92950d6b-ecec-4c6a-8e8c-32cd4c084b2c",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C16",
+      "claim": "There are very few collaterals between medial and lateral VTA-NAc projections.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that there are very few collaterals (Yang et al., 2018), allowing for a quantification of the co-localization of the two CTB markers with cFos after a first heroin self-administration session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the low co-localization data (1.5%) and supported by citation to Yang et al., 2018.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "16fb17ca-761d-4199-99be-58944218a6d1",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C17",
+      "claim": "51.0% of medial Shell projecting VTA neurons were cFos positive after heroin self-administration, while this was only the case in 20.5% lateral Shell projecting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 51.0% of medial Shell projecting VTA neurons were also cFos positive, while this was only the case in 20.5% lateral Shell projecting cells. (Figure 3h\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from combined retrograde tracing and cFos immunohistochemistry (51.0% vs 20.5%) and referenced to Figure 3h-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "1e0d5169-b6cc-490f-a29d-c508fa5d7c3d",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C18",
+      "claim": "Heroin self-administration activates DA neurons in the medial part of the VTA that project preferentially to the medial NAc shell.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, heroin self-administration activates DA neurons in the medial part of the VTA that project preferentially to the medial NAc shell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from cFos mapping and retrograde tracing showing preferential activation of medial VTA neurons projecting to medial NAc shell.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "03796597-aad7-437e-a9f0-299bf2e48367",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C19",
+      "claim": "Chemogenetic silencing of VTA DA neurons in animals where self-administration was well established significantly decreased the number of active lever presses and ensuing heroin infusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing VTA DA neurons in animals where self-administration was well established significantly decreased the number of active lever presses and ensuing heroin infusions (Figure 4c\u2013e, 223 \u00b1 60 LP for 111 \u00b1 25 infusions dropped to 23 \u00b1 9 LP for 15 \u00b1 6 infusions after 4 days of treatment condition (DAT-Cre+ versus DAT-Cre-) x CNO (present, absent), two-way repeated measures ANOVA and multiple comparison post-hoc Sidack test, *p<0.05, **p<0.005, ****p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from chemogenetic manipulation showing significant behavioral changes with statistical analysis (p<0.0001) and referenced to Figure 4c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "e96e46fc-fcd8-4bcc-becf-90a36ae2ad7a",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C20",
+      "claim": "Silencing VTA DA neurons from the first to the fourth session significantly prevented the acquisition of heroin self-administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing VTA DA neurons from the first to the fourth session significantly prevented the acquisition of heroin SA (Figure 4f\u2013h). After CNO was stopped (from session 5), the mice quickly acquired the task and reached a number of lever presses and infusions similar to the control animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from chemogenetic manipulation during early acquisition showing prevention of learning and referenced to Figure 4f-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "f8e8ab36-00b8-4c8a-a15d-c9f44d713a1d",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C21",
+      "claim": "CNO had no effect on self-administration in DAT-Cre- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "CNO had no effect on self-administration in DAT-Cre- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from control animals lacking Cre recombinase, serving as negative control for chemogenetic manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "bd981ba4-505d-4916-8372-5177c42c113d",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C22",
+      "claim": "VTA DA activity is required for the initial reinforcing properties of opioids from the very early stage of drug exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "All together these results suggest that VTA DA activity is required for the initial reinforcing properties of opioids from the very early stage of drug exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the chemogenetic inhibition experiments showing that blocking VTA DA neurons prevents acquisition and maintenance of heroin self-administration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "236594a8-7dec-46d8-824f-a97944b94aaf",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C23",
+      "claim": "Heroin decreased lever-pressing for VTA DA neuron self-stimulation in a dose-dependent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "At baseline, the mice pressed up to 291 \u00b1 39 times to obtain 134 \u00b1 1.15 LS in 60 min under a fixed-ratio 1 (FR1, followed by 20 s time out period) schedule (Figure 5d and e). After heroin injection, the performance decreased significantly in a dose-dependent fashion (Figure 5i), suppressing lever pressing completely at the highest dose (Figure 5d\u2013i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from optogenetic self-stimulation experiments showing dose-dependent decrease in lever pressing and referenced to Figure 5d-i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "e2a5a169-e73a-4cbd-9cd2-2e2808597339",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C24",
+      "claim": "Heroin increases locomotor activity in open field, even at the highest dose tested.",
+      "claim_type": "EXPLICIT",
+      "source": "To rule out any sedative effects of heroin at these doses, a separate set of mice were tested over a 30 min free exploration period in an open field (see Methods). We observed that heroin actually increases locomotor activity in open field, even at the highest dose tested (Figure 5j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from open field locomotor testing and referenced to Figure 5j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "3204f6ee-ff94-4542-9692-39bb7c1b00c5",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C25",
+      "claim": "Reinforcement induced by optogenetic self-stimulation of VTA DA neurons or heroin self-administration share underlying neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments indicate that reinforcement induced by optogenetic self-stimulation of VTA DA neurons or heroin SA share underlying neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the occlusion experiment showing that heroin blocks optogenetic self-stimulation of VTA DA neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "c409254d-2021-4804-9ce2-a095554b47b6",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C26",
+      "claim": "Mice expressing eArchT-3.0 in VTA GABA neurons quickly learned to discriminate the active and inactive lever by significantly increasing the number of active lever press and laser-stimulation triggered during the acquisition sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed the light-gated inhibitory proton pump eArchT-3.0 in the VTA of GAD-Cre mice (Figure 6a\u2013b; O'Connor et al., 2015) and gave the mice control over the laser switch. The mice quickly learned to discriminate the active and inactive lever by significantly increasing the number of active lever press and laser-stimulation triggered during the acquisition sessions (293.1 \u00b1 40 LP to obtain 119 \u00b1 15 LS in 180 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from optogenetic self-inhibition experiments showing learned discrimination behavior and referenced to Figure 6a-b and citation to O'Connor et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "dcb8bc63-0581-4040-9b4c-0d512d034259",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C27",
+      "claim": "Intraperitoneal injection of heroin just prior to the VTA GABA self-inhibition session significantly decreased the operant behavior in a dose-dependent manner and abolished this behavior at the highest dose.",
+      "claim_type": "EXPLICIT",
+      "source": "Intraperitoneal injection of heroin just prior to the VTA GABA self-inhibition session significantly decreased the operant behavior in a dose-dependent manner (Figure 6d\u2013f) and abolished this behavior at the highest dose (Figure 6d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from optogenetic self-inhibition with heroin administration showing dose-dependent behavioral suppression and referenced to Figure 6d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "baa15ccd-fc3d-462e-96aa-a1ca4af81a29",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C28",
+      "claim": "The IC50 for heroin occlusion of VTA GABA self-inhibition was very similar to the IC50 calculated based on the occlusion with DA neuron self-stimulation (6.9 vs 6.4 mg/kg).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the IC50 was very similar to the IC50 calculated based on the occlusion with DA neuron self-stimulation (6.9 vs 6.4 mg/kg, Figure 6i and Figure 5i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data comparing IC50 values from two different occlusion experiments and referenced to Figure 6i and Figure 5i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "66481b7e-2685-4da4-b160-dc67e4b4dd29",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C29",
+      "claim": "Reinforcement by optogenetic VTA GABA self-inhibition and reinforcement by heroin share underlying neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment indicates that reinforcement by optogenetic VTA GABA self-inhibition and reinforcement by heroin share underlying neural circuits and are compatible with a disinhibitory mechanism where heroin targets GABA neurons leading to an increase of DA neurons activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the occlusion experiment showing that heroin blocks VTA GABA self-inhibition with similar IC50 to DA neuron self-stimulation occlusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "27f19402-91e0-41f3-a608-ac98a6632b7a",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C30",
+      "claim": "Heroin employs a disinhibitory mechanism where heroin targets GABA neurons leading to an increase of DA neurons activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment indicates that reinforcement by optogenetic VTA GABA self-inhibition and reinforcement by heroin share underlying neural circuits and are compatible with a disinhibitory mechanism where heroin targets GABA neurons leading to an increase of DA neurons activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined results of VTA GABA self-inhibition occlusion and VTA DA neuron activation experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "d3d15f2d-39ff-4885-b1e2-5f7c51ba3bd6",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C31",
+      "claim": "Heroin activates DA neurons located in the medial part of the VTA, preferentially projecting to the medial shell of the nucleus accumbens.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we found that heroin increases DA in the NAc through the activation of a subset of VTA DA neurons located in the medial VTA, which preferentially project to the NAc medial shell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from cFos mapping, retrograde tracing, and photometry experiments showing preferential activation of medial VTA neurons projecting to medial NAc shell.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "9588542f-b967-4789-8ae5-def16df6851c",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C32",
+      "claim": "Chemo- and optogenetic manipulations support a disinhibitory motif and establish a link of causality with behavioral reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "Our chemo- and optogenetic manipulations support a disinhibitory motif and establish a link of causality with behavioral reinforcement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from chemogenetic inhibition of DA neurons and optogenetic self-stimulation/self-inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "a883da53-cf48-4a16-b9a7-1cfeaaea79f1",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C33",
+      "claim": "The VTA consists of DA (60\u201365%), GABA (30\u201335%), glutamate (2%) and neurons that express more than one marker.",
+      "claim_type": "EXPLICIT",
+      "source": "The VTA consists of DA (60\u201365%), GABA (30\u201335%), glutamate (2%) and neurons that express more than one marker (Margolis et al., 2006; Nair-Roberts et al., 2008; Roberts and Ribak, 1987; Steffensen et al., 1998; Yamaguchi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies (Margolis et al., 2006; Nair-Roberts et al., 2008; Roberts and Ribak, 1987; Steffensen et al., 1998; Yamaguchi et al., 2011) describing VTA cellular composition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "b281871a-e1d3-4573-866e-afb91f21923c",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C34",
+      "claim": "Aversive stimuli potentiate glutamatergic inputs onto DA neurons projecting to the mPFC, while rewarding stimuli potentiate inputs onto medial shell and lateral shell NAc projecting DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, aversive stimuli potentiate glutamatergic inputs onto DA neurons projecting to the mPFC, while rewarding stimuli potentiate inputs onto medial shell and lateral shell NAc projecting DA neurons (Lammel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lammel et al., 2011 describing stimulus-specific synaptic plasticity in VTA DA neuron subpopulations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "747e7afa-8277-4648-95b2-85ec023df1de",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C35",
+      "claim": "The mediolateral topography of accumbens shell neurons is conserved by their dopamine inputs from the VTA, where medial and lateral shell projecting DA neurons segregate along the mediolateral VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "The mediolateral topography of accumbens shell neurons is conserved by their dopamine inputs from the VTA, where medial and lateral shell projecting DA neurons segregate along the mediolateral VTA (Beier et al., 2015; Lammel et al., 2012; Lammel et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies (Beier et al., 2015; Lammel et al., 2012; Lammel et al., 2008) describing VTA-NAc topographic organization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "96a75e99-bd1b-41bf-852f-b3b059303220",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C36",
+      "claim": "Heroin during initial reinforcement preferentially activates neurons of the medial VTA projecting to the medial Shell.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that heroin during initial reinforcement preferentially activates neurons of the medial VTA projecting to the medial Shell, but cannot exclude the contribution from other projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from cFos mapping and retrograde tracing showing preferential activation (51.0% vs 20.5% for medial vs lateral projections).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "ce8431e5-a023-40fd-b903-8c9af3ca8557",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C37",
+      "claim": "Most of the afferents to midbrain DA neurons are GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the afferents to midbrain DA neurons are GABAergic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about VTA circuitry and afferent connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "62567ac2-1097-4b22-b4d7-ebd0477abb36",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C38",
+      "claim": "Back projecting accumbal medium-spiny neurons, while targeting both DA and GABA neurons, form particularly strong synaptic connections to the latter.",
+      "claim_type": "EXPLICIT",
+      "source": "Back projecting accumbal medium-spiny neurons, while targeting both DA and GABA neurons (Beier et al., 2015; Henny et al., 2012; Yang et al., 2018), form particularly strong synaptic connections to the latter (Bocklisch et al., 2013), which then control the activity of DA neurons (Johnson and North, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies describing NAc-VTA connectivity (Beier et al., 2015; Henny et al., 2012; Yang et al., 2018; Bocklisch et al., 2013; Johnson and North, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "d74d7137-ee5b-4520-8305-28fa53657f37",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C39",
+      "claim": "This disinhibitory motif is particularly strong for neurons of the lateral VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "This disinhibitory motif is particularly strong for neurons of the lateral VTA (Yang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yang et al., 2018 describing regional differences in disinhibitory circuitry.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "457bde8f-4a9e-43a2-b21f-73f1fd8109d1",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C40",
+      "claim": "Removal of tonic inhibition from VTA DA neurons by interneurons and accumbal projections can cause increases in DA neuron activity and NAc DA release.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of tonic inhibition from VTA DA neurons by interneurons and accumbal projections can therefore cause increases in DA neuron activity (Jhou et al., 2009; Johnson and North, 1992) and NAc DA release (van Zessen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies demonstrating disinhibition effects (Jhou et al., 2009; Johnson and North, 1992; van Zessen et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "10530944-7cd1-4a0d-9cc9-a84b13f6433b",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C41",
+      "claim": "Using a genetically encoded DA reporter confirms that already the very first dose of heroin increases DA in the shell.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a genetically encoded DA reporter we confirm that already the very first dose of heroin increases DA in the shell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from dLight recordings showing DA increase after first heroin exposure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "ce1cc2b6-869e-4e6c-8fe3-7b21bc8a7ca3",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C42",
+      "claim": "In the alternate model of DA-independent reinforcement, the initial effect of opioids would be on VTA GABA neurons that mainly project to the PPN.",
+      "claim_type": "EXPLICIT",
+      "source": "In the alternate model of DA-independent reinforcement, the initial effect of opioids would still be on VTA GABA neurons that however mainly project to the PPN (Laviolette et al., 2004), a heterogeneous nucleus containing GABA, glutamate and acetylcholine neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes an alternative hypothesis from the literature, supported by citation to Laviolette et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "663c3bb9-d0fd-4f5f-8ca7-8d74415c7349",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C43",
+      "claim": "The PPN projects back to the midbrain regulating reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "The PPN projects back to the midbrain (Oakman et al., 1995; Wang and Morales, 2009; Watabe-Uchida et al., 2012) regulating reinforcement (Floresco et al., 2003; Inglis et al., 2000; Lammel et al., 2012; Pan and Hyland, 2005; Steidl and Veverka, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies describing PPN-midbrain connectivity and function (Oakman et al., 1995; Wang and Morales, 2009; Watabe-Uchida et al., 2012; Floresco et al., 2003; Inglis et al., 2000; Lammel et al., 2012; Pan and Hyland, 2005; Steidl and Veverka, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "0a2aceff-ec2a-424e-a1f0-e2110bda8994",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C44",
+      "claim": "The activation of the LDT-VTA pathway leads to CPP and reinforces operant responses with natural- and drug-rewards.",
+      "claim_type": "EXPLICIT",
+      "source": "There is direct evidence that the activation of the LDT-VTA pathway leads to CPP, reinforces operant responses with natural- (Lammel et al., 2012; Steidl and Veverka, 2015) and drug-rewards (Shinohara et al., 2014; Wise, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies demonstrating LDT-VTA pathway function in reinforcement (Lammel et al., 2012; Steidl and Veverka, 2015; Shinohara et al., 2014; Wise, 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "c22f8b6e-8956-44e8-9fac-50a2bdc570d3",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C45",
+      "claim": "All scenarios involving PPN and LDT converge to activate VTA DA neurons, and are thus not DA-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all these scenarios converge to activate VTA DA neurons, and are thus not DA-independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the circuit architecture described, where PPN and LDT pathways ultimately activate VTA DA neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "851365a4-1099-4904-a7c1-49af4779708c",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C46",
+      "claim": "Several publications observe an increase of extracellular DA levels in the shell following acute administration of opioids.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a 'non-dopaminergic substrate for reward within the VTA' (Nader and van der Kooy, 1997) is also at odds with several publications that observe an increase of extracellular DA levels in the shell following acute administration of opioids (Aragona et al., 2008; Di Chiara and Imperato, 1988; Pontieri et al., 1995; Stuber et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies measuring DA levels after opioid administration (Aragona et al., 2008; Di Chiara and Imperato, 1988; Pontieri et al., 1995; Stuber et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "5abf09ce-31cc-4ab4-8ab3-10c31735fdf7",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C47",
+      "claim": "After 12 days of heroin self-administration, inhibition of DA neurons still caused a strong, but fully reversible decrease in the responding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover our data suggest that the same circuits maintain reinforcement as exposure becomes chronic. After 12 days of heroin self-administration, inhibition of DA neurons still caused a strong, but fully reversible decrease in the responding behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from chemogenetic inhibition experiments showing continued requirement for DA neurons after chronic exposure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "35d530d8-f31b-4976-b7dd-42b9c4cbc1a2",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C48",
+      "claim": "DA-independent heroin reinforcement seems unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together DA-independent heroin reinforcement seems unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the totality of experimental evidence showing DA involvement in heroin reinforcement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "1e5d4a54-9d92-4a56-865b-94242a1c2004",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C49",
+      "claim": "Heroin decreased lever-pressing for VTA DA neuron self-stimulation in a dose-dependent fashion, which could not be explained by sedative effects as the same dose was able to increase locomotor activity in an open field.",
+      "claim_type": "EXPLICIT",
+      "source": "Heroin decreased lever-pressing for VTA DA neuron self-stimulation (Pascoli et al., 2015) in a dose-dependent fashion, which could not be explained by sedative effects as the same dose was able to increase locomotor activity in an open field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from both optogenetic self-stimulation and open field locomotor testing, with citation to Pascoli et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "52a5b3bc-5734-490d-bdb8-c04173f1d393",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C50",
+      "claim": "Occlusion of VTA DA neuron self-stimulation by heroin strongly suggests that heroin converges on the same cellular mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Such occlusion strongly suggests that heroin converges on the same cellular mechanism (similar to cocaine occlusion experiments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the occlusion experimental design and results, drawing parallel to cocaine experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "caca6c00-1be1-4c87-835b-b4c0ef666cad",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C51",
+      "claim": "This study observed strong reinforcement with GABA neuron self-inhibition for the first time in the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "We also - to the best of our knowledge for the first time in the literature - observed strong reinforcement with GABA neuron self-inhibition, which was sensitive to heroin exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from optogenetic self-inhibition experiments, claimed as novel finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "d3b49a0a-7db4-40dd-a886-830fb10696fb",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C52",
+      "claim": "Opioids suppress the activity of VTA GABA interneurons by activation of \u00b5-opioid receptors (MORs).",
+      "claim_type": "EXPLICIT",
+      "source": "Opioids suppress the activity of VTA GABA interneurons by activation of \u00b5-opioid receptors (MORs) (Jalabert et al., 2011; Johnson and North, 1992; Mazei-Robison et al., 2011), which then hyperpolarize the neurons and decrease the release probability at the axon terminal via the activation of GIRK channels and the inhibition of voltage gated calcium channels, respectively (Cohen et al., 1992; Johnson and North, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies describing MOR-mediated suppression of VTA GABA neurons (Jalabert et al., 2011; Johnson and North, 1992; Mazei-Robison et al., 2011; Cohen et al., 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "ddd68dc2-2c40-43de-89ad-96383241ba97",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C53",
+      "claim": "The IC50 for heroin occlusion of VTA GABA self-inhibition was virtually identical to the IC50 observed with the occlusion of self-stimulation of DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly the IC50 for this effect was virtually identical to the IC50 observed with the occlusion of self-stimulation of DA neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing IC50 values from two different occlusion experiments (6.9 vs 6.4 mg/kg).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "619be187-d519-4542-a8f1-fb6c52477749",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C54",
+      "claim": "The results are in direct contrast with older pharmacological experiments, where DA receptor antagonists had an effect on reinforcement of cocaine but not heroin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are in direct contrast with older pharmacological experiments, where DA receptor antagonists had an effect on reinforcement of cocaine but not heroin (Ettenberg et al., 1982; Pettit et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Contrasts current findings with previous literature, supported by citations to Ettenberg et al., 1982 and Pettit et al., 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "0a8c54a8-6268-4075-97a2-f6ff8998f562",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C55",
+      "claim": "The receptor occupancy of the antagonists in older studies was possibly insufficient, particularly when administered intra-cranially as suggested by the discrepancy between the systemic and intra-cranial results.",
+      "claim_type": "EXPLICIT",
+      "source": "Maybe the receptor occupancy of the antagonists was insufficient, particularly when administrated intra-cranially as suggested by the discrepancy between the systemic and intra-cranial results (Neisewander et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for discrepancy with previous literature, supported by citation to Neisewander et al., 1998.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "de585e21-c542-446b-83a0-ea4b337b4826",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C56",
+      "claim": "Electrolytic lesions or inactivation of the NAc result in significantly decreased responding for intravenous self-administration of opioids.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrolytic lesions or inactivation of the NAc result in significantly decreased responding for intravenous self-administration of opioids (Alderson et al., 2001; Dworkin et al., 1988; Suto et al., 2011; Zito et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies showing NAc involvement in opioid self-administration (Alderson et al., 2001; Dworkin et al., 1988; Suto et al., 2011; Zito et al., 1985).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "4cb7dbc9-a7f7-4911-a797-57f27f34ca3b",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C57",
+      "claim": "Mice learn to self-administer MORs agonists when infused directly into the NAc.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice also learn to self-administer MORs agonists when infused directly into the NAc (David and Cazala, 2000; Goeders et al., 1984), most likely via the disinhibitory loop connecting the NAc back to the VTA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies showing intra-NAc MOR agonist self-administration (David and Cazala, 2000; Goeders et al., 1984), with inference about mechanism.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "3cec617b-9b29-432e-9413-7ab352c8a3ee",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C58",
+      "claim": "A recent study using a siRNA to downregulate D1aR in the NAc shell blocked the acquisition of cocaine but not heroin self-administration.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study using a siRNA to downregulate D1aR in the NAc shell blocked the acquisition of cocaine but not heroin self-administration (Pisanu et al., 2015), raising the question for the role of specific DA receptors in drug-adaptive behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pisanu et al., 2015 showing differential effects of D1aR downregulation on cocaine vs heroin.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "ed821c8b-3aee-428f-857a-8d912c634f6b",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C59",
+      "claim": "The observation that morphine can induce CPP in DA-deficient mice is likely explained by developmental adaptations.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that morphine can induce CPP in DA-deficient mice (Hnasko et al., 2005) is likely explained by developmental adaptations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for findings from Hnasko et al., 2005 showing morphine CPP in DA-deficient mice.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "2f717e19-3872-4baa-9e5b-881b0cacd494",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C60",
+      "claim": "DA-deficient mice suffer from a severe locomotion deficit, which precluded the testing for reinforcement in a self-administration setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these mice suffer from a severe locomotion deficit, which precluded the testing for reinforcement in a self-administration setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from knowledge about DA-deficient mouse phenotype to explain limitations of previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "bde18da7-3621-4392-b984-ac3cf2ed6001",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C61",
+      "claim": "By confirming the validity of the DA hypotheses for opioids, this study aims to integrate work on these drugs into the emerging circuit model for addiction.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, by confirming the validity of the DA hypotheses for opioids, we aim to integrate work on these drugs into the emerging circuit model for addiction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "States the overall goal and interpretation of the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "fd5b8a30-1728-4b04-bb4e-1caf7a3c26bf",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C62",
+      "claim": "This study supports VTA DA neuron disinhibition for opioid reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study thus supports VTA DA neuron disinhibition for the opioid reinforcement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion inferred from the totality of experimental evidence presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "33014374-18d5-4b07-abc0-8c43c16beec9",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C63",
+      "claim": "Untangling the circuits underlying opioid reinforcement may allow refining addiction treatments and draft the roadmap for the development of analgesic compounds without addiction liability.",
+      "claim_type": "EXPLICIT",
+      "source": "Untangling the circuits underlying opioid reinforcement may not only allow refining addiction treatments, but also draft the roadmap for the development of analgesic compounds without addiction liability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential translational implications of the research findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "8c47e455-7fd4-4412-b0ac-ee83d885c4ac",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C64",
+      "claim": "The DA hypothesis of drug reinforcement is rooted in the observation that electrical activation of the medial forebrain bundle leads to repetitive action.",
+      "claim_type": "EXPLICIT",
+      "source": "The DA hypothesis of drug reinforcement is rooted in the observation that electrical activation of the medial forebrain bundle leads to repetitive action (Olds and Milner, 1954).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to foundational study by Olds and Milner, 1954.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "1807d24e-7b82-4a7e-8557-fb33d8637d54",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C65",
+      "claim": "Rats willingly self-stimulate brain regions populated by DA neurons or receiving inputs from DA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Rats willingly self-stimulate brain regions populated by DA neurons or receiving inputs from DA neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge in the field about self-stimulation behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "b9bb0e9d-8a89-446e-a761-0305dc711baa",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C66",
+      "claim": "Pharmacological blockade of DA receptors impairs the reinforcing properties of psychostimulants in both rats and primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, pharmacological blockade of DA receptors impairs the reinforcing properties of psychostimulants in both rats (Maldonado et al., 1993; McGregor and Roberts, 1993; Roberts et al., 1977) and primates (Bergman et al., 1989; Johanson and Schuster, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies in rats and primates (Maldonado et al., 1993; McGregor and Roberts, 1993; Roberts et al., 1977; Bergman et al., 1989; Johanson and Schuster, 1975).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "891f896b-d540-48ef-99d3-244b95a4ef7a",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C67",
+      "claim": "Several microdialysis and voltammetry studies demonstrated the increase of DA in the NAc shell as a common feature of addictive drugs, including opioids.",
+      "claim_type": "EXPLICIT",
+      "source": "Several microdialysis and voltammetry studies demonstrated the increase of DA in the NAc shell as a common feature of addictive drugs, including opioids (Aragona et al., 2008; Di Chiara and Imperato, 1988; Pontieri et al., 1995; Stuber et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies measuring DA levels (Aragona et al., 2008; Di Chiara and Imperato, 1988; Pontieri et al., 1995; Stuber et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "9da0f138-7481-4c25-99a2-558b2892db33",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C68",
+      "claim": "Electrolytic lesions of the VTA to NAc pathway decreased reinforcement during intravenous self-administration of morphine and cocaine under a progressive ratio schedule.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, electrolytic lesions of the VTA to NAc pathway decreased reinforcement during intravenous self-administration of morphine and cocaine under a progressive ratio schedule (Suto et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Suto et al., 2011 showing effects of VTA-NAc pathway lesions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "c7c12037-7d0d-43ed-98dc-75075f54208b",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C69",
+      "claim": "The reinforcing effects of opioids require \u00b5-opioid receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the reinforcing effects of opioids require \u00b5-opioid receptors (Charbogne et al., 2017; Contarino et al., 2002; Matthes et al., 1996), which are enriched in VTA GABA neurons (Cohen et al., 1992; Devine and Wise, 1994; Johnson and North, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies showing MOR requirement (Charbogne et al., 2017; Contarino et al., 2002; Matthes et al., 1996) and MOR localization (Cohen et al., 1992; Devine and Wise, 1994; Johnson and North, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "1f7b2aeb-de8c-4c5b-b148-63f754433abf",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C70",
+      "claim": "\u00b5-opioid receptors are enriched in VTA GABA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the reinforcing effects of opioids require \u00b5-opioid receptors (Charbogne et al., 2017; Contarino et al., 2002; Matthes et al., 1996), which are enriched in VTA GABA neurons (Cohen et al., 1992; Devine and Wise, 1994; Johnson and North, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies showing MOR expression in VTA GABA neurons (Cohen et al., 1992; Devine and Wise, 1994; Johnson and North, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "a0cbdd43-e285-4a7d-9e36-87d7f67cfebf",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C71",
+      "claim": "Based on in vivo single unit and brain slice recordings, a disinhibition scenario of VTA DA neurons has been proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on in vivo single unit and brain slice recordings, a disinhibition scenario of VTA DA neurons has been proposed (Gysling and Wang, 1983), whereby MOR activation inhibits GABA neurons (Johnson and North, 1992) through somatodendritic hyperpolarization and the reduction of the efferent release probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies proposing disinhibition mechanism (Gysling and Wang, 1983; Johnson and North, 1992).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "6a839e35-b5ae-4162-b585-e1ff72ce35ba",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C72",
+      "claim": "MOR activation inhibits GABA neurons through somatodendritic hyperpolarization and the reduction of the efferent release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on in vivo single unit and brain slice recordings, a disinhibition scenario of VTA DA neurons has been proposed (Gysling and Wang, 1983), whereby MOR activation inhibits GABA neurons (Johnson and North, 1992) through somatodendritic hyperpolarization and the reduction of the efferent release probability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Johnson and North, 1992 describing mechanism of MOR-mediated GABA neuron inhibition.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "60909ac4-2a62-44dc-bdc0-049f0509a7bf",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C73",
+      "claim": "Somatodendritic hyperpolarization would be mediated by G protein\u2013coupled inwardly rectifying K+ (GIRK) channels, while inhibition of calcium entry underlies the reduction of release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "The former effect would be mediated by G protein\u2013coupled inwardly rectifying K+ (GIRK) channels, while inhibition of calcium entry underlies the later (L\u00fcscher et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to L\u00fcscher et al., 1997 describing molecular mechanisms of MOR effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "7bbcfd1a-272e-44fc-9474-af9478d7ec52",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C74",
+      "claim": "It has been repeatedly argued that the initial reinforcing effects of opioids can escape DA involvement.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, it has been repeatedly argued that the initial reinforcing effects of opioids, can escape DA involvement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes an alternative hypothesis from the literature that the authors are challenging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "9f61729f-1b02-4f7f-a1cc-710cca8d211b",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C75",
+      "claim": "The non-selective DA antagonists alpha-flupenthixol and haloperidol decreased cocaine SA but only to a lesser extent heroin SA.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the non-selective DA antagonists alpha-flupenthixol and haloperidol decreased cocaine SA but only to a lesser extent heroin SA (Ettenberg et al., 1982; Van Ree and Ramsey, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies showing differential effects of DA antagonists (Ettenberg et al., 1982; Van Ree and Ramsey, 1987).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "049c3efd-9a4b-4afc-87de-c837c5e05cd0",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C76",
+      "claim": "Lesioning DA terminals in the NAc with 6-OHDA had no effect on the initiation of heroin self-administration.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, lesioning DA terminals in the NAc with 6-OHDA had no effect on the initiation of heroin self-administration (Gerrits and Van Ree, 1996; Pettit et al., 1984)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies using 6-OHDA lesions (Gerrits and Van Ree, 1996; Pettit et al., 1984).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "44d620d0-9ddd-496e-aefe-022a0ca765f4",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C77",
+      "claim": "The D1 antagonist SCH23390, when systemically administered, significantly decreased heroin self-administration, but had no effect when directly infused into the NAc.",
+      "claim_type": "EXPLICIT",
+      "source": "and the D1 antagonist SCH23390, when systemically administered, significantly decreased heroin self-administration, but had no effect when directly infused into the NAc (Gerrits et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gerrits et al., 1994 showing route-dependent effects of D1 antagonist.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "bd6990bd-1d87-49be-be98-3bfe6204577d",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C78",
+      "claim": "DA-deficient mice (targeted deletion of TH and DBH) still expressed conditioned place preference for morphine.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, DA-deficient mice (targeted deletion of TH and DBH: tyrosine hydroxylase and dopamine beta-hydroxylase) still expressed conditioned place preference for morphine (Hnasko et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hnasko et al., 2005 showing morphine CPP in DA-deficient mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "031fdc65-332a-40ae-b15d-a3e19b2af3b1",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C79",
+      "claim": "The downregulation of accumbal D1Rs prevented the acquisition of cocaine but not heroin self-administration.",
+      "claim_type": "EXPLICIT",
+      "source": "and the downregulation of accumbal D1Rs prevented the acquisition of cocaine but not heroin self-administration (Pisanu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pisanu et al., 2015 showing differential effects of D1R downregulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "82b89c4b-4775-4b84-b487-b9b293a02945",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C80",
+      "claim": "A model has been proposed with the pedunculopontine nucleus (PPN) as the initial target of opioids, which receives a descending GABA projection from the VTA.",
+      "claim_type": "EXPLICIT",
+      "source": "If not through DA, how would opioids cause reinforcement? A model has been proposed with the pedunculopontine nucleus (PPN, called TPP in the original publication) as the initial target of opioids, which receives a descending GABA projection from the VTA. (Bechara and van der Kooy, 1992; Nader et al., 1994; Nader and van der Kooy, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to studies proposing PPN-based model (Bechara and van der Kooy, 1992; Nader et al., 1994; Nader and van der Kooy, 1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "8a0d2919-f176-4b6f-b73f-eab92e76eeba",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C81",
+      "claim": "In the PPN-based scenario, DA-dependent mechanisms would take control only after chronic exposure, once dependence is established.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario DA-dependent mechanisms would take control only after chronic exposure, once dependence is established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the temporal aspect of the alternative PPN-based model from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "abb35012-7dc0-440b-aad6-e84700e07d25",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C82",
+      "claim": "The question whether DA modulation underlies the reinforcing properties of opioid is still hotly debated.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, the question whether DA modulation underlies the reinforcing properties of opioid is therefore still hotly debated (Badiani et al., 2011; Blum et al., 2015; Nutt et al., 2015), which is why in the present study we use advanced genetic tools that allow for selective observation and manipulation of neuronal populations to revisit this fundamental question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to recent debates in the literature (Badiani et al., 2011; Blum et al., 2015; Nutt et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "b0947fdf-d68c-4f24-bde0-858b5199be89",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "claim_id": "C83",
+      "claim": "This study uses advanced genetic tools that allow for selective observation and manipulation of neuronal populations to revisit the question of DA involvement in opioid reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, the question whether DA modulation underlies the reinforcing properties of opioid is therefore still hotly debated (Badiani et al., 2011; Blum et al., 2015; Nutt et al., 2015), which is why in the present study we use advanced genetic tools that allow for selective observation and manipulation of neuronal populations to revisit this fundamental question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "States the methodological approach and rationale for the current study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "353002ea-38e4-4f19-914a-04b277d0beb6",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mice successfully acquired heroin self-administration behavior, discriminating between active and inactive levers, and exhibited drug-seeking behavior after 30 days of withdrawal. This establishes heroin as highly reinforcing and the behavioral paradigm as a valid model for relapse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are well-supported by behavioral data showing robust lever discrimination (144.9\u00b126.0 vs 8.3\u00b12.5 presses after 6 days), stable self-administration over 12 days, and persistent seeking behavior after withdrawal (Figure 1). Statistical analyses confirm significant differences and the model is validated by appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "d5a34b36-9675-4ede-b06f-8812277b4503",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using the dLight1 dopamine sensor, heroin administration rapidly increased dopamine levels in the NAc within minutes, with effect sizes similar to cocaine and specific to dopamine (not serotonin or norepinephrine). This demonstrates that acute heroin exposure increases NAc dopamine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C9 are supported by fiber photometry data showing heroin-induced fluorescence increases (0.133\u00b10.03 dF/F, p=0.0062, n=7) that peaked at 3 minutes, with specificity confirmed by lack of response to citalopram and reboxetine. The dLight1 sensor is validated by citation and optogenetic controls (C5). Statistical analyses are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "f6b873ca-259f-4069-9620-8d53169df65e",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Heroin infusions increased calcium signals in VTA dopamine neurons, with kinetics similar to NAc dopamine release, demonstrating that first heroin exposure activates VTA DA neurons and increases NAc dopamine release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 are supported by GCaMP6m recordings showing significant calcium increases in VTA DA neurons (dF/F 0.22\u00b10.085, p=0.001, n=11) with temporal dynamics matching NAc dopamine signals. The correlation between VTA activity and NAc release (C11) is inferred from temporal similarity but lacks direct simultaneous measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "1fe82efd-6f4c-4fe4-a929-28f722d2ae94",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Heroin self-administration preferentially activates dopamine neurons in the medial VTA that project to the medial NAc shell, as demonstrated by cFos mapping and retrograde tracing showing 51.0% of medial shell-projecting neurons were cFos+ versus 20.5% of lateral shell-projecting neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 are well-supported by immunohistochemistry showing 27.8% TH+/cFos+ cells in medial VTA after heroin vs 1.5% after saline, combined with retrograde tracing demonstrating topographic organization (1.5% collateralization) and preferential activation of medial projections (51.0% vs 20.5%). The anatomical claims (C14) are appropriately cited. Figures 3b-j provide clear visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "0fdc0864-0835-4538-bae2-4ea352b046cc",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Chemogenetic silencing of VTA dopamine neurons both prevented acquisition and disrupted maintenance of heroin self-administration, establishing that VTA DA activity is required for opioid reinforcement from initial exposure through chronic use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 are strongly supported by DREADD experiments showing CNO significantly reduced established self-administration (223\u00b160 to 23\u00b19 lever presses, p<0.0001) and prevented acquisition when applied during early sessions. Appropriate controls (DAT-Cre- mice, C21) and reversibility upon CNO cessation strengthen causal interpretation. Statistical analyses are rigorous with two-way RM ANOVA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "7d20693e-797e-4e82-8918-ed9b9ee0d1f9",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Heroin dose-dependently occluded optogenetic self-stimulation of VTA dopamine neurons, an effect not explained by sedation as heroin increased locomotor activity. This occlusion indicates shared neural circuits between heroin reinforcement and VTA DA neuron activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 are supported by optogenetic data showing dose-dependent reduction in self-stimulation (IC50=6.5 mg/kg) while the same doses increased open-field locomotion, ruling out sedation. The occlusion logic (C25) is sound and parallels established cocaine experiments. However, occlusion alone doesn't definitively prove identical mechanisms\u2014alternative explanations like ceiling effects or downstream convergence exist.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "67e8b917-c119-4efb-b899-7188818942e1",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mice learned to self-inhibit VTA GABA neurons optogenetically, and heroin dose-dependently occluded this behavior with an IC50 (6.9 mg/kg) nearly identical to DA neuron self-stimulation occlusion (6.4 mg/kg). This supports a disinhibitory mechanism where heroin inhibits VTA GABA neurons to activate DA neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 are supported by novel optogenetic self-inhibition data (293.1\u00b140 lever presses) and heroin occlusion with matching IC50 values. The disinhibitory interpretation (C30) is reasonable given the circuit architecture and matching IC50s, though it remains inferential. This is reportedly the first demonstration of GABA self-inhibition reinforcement (C51), adding novelty. The mechanistic conclusion is logical but indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "52f76305-ca52-409a-9305-10b6b9859419",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study demonstrates that heroin activates medial VTA dopamine neurons projecting to medial NAc shell through a disinhibitory mechanism, establishing causal links between this circuit and behavioral reinforcement via chemo- and optogenetic manipulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 and C62 synthesize the major findings. The anatomical specificity (C31) is supported by cFos/tracing data, the disinhibitory mechanism (C32) by GABA self-inhibition occlusion, and causality by chemogenetic necessity experiments. Together, these provide converging evidence for the dopamine hypothesis in opioid reinforcement, though some mechanistic details remain inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "30014d9c-3892-4a6a-841c-8c7d2f73a873",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript reviews established VTA anatomy and circuitry, including cellular composition, projection topography, GABAergic afferents, and disinhibitory motifs, providing context for interpreting the experimental findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 are appropriately cited literature reviews establishing VTA cellular composition (60-65% DA, 30-35% GABA), projection topography, and circuit architecture. These provide necessary background but are not novel findings. Citations appear appropriate (Margolis et al., 2006; Lammel et al., 2008, 2011, 2012; Beier et al., 2015; Yang et al., 2018; etc.).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "68f7781c-8ada-45d1-a3bd-81fba3504104",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The dLight sensor confirms that the first dose of heroin increases dopamine in the NAc shell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 restates findings from C6-C9 and is supported by the same photometry data. This is a confirmatory statement of a major finding already evaluated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "39c7d2b4-911e-44d2-95a6-5d27427395b0",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript discusses alternative DA-independent models involving PPN/LDT pathways but argues these ultimately converge on VTA DA neuron activation, concluding that DA-independent heroin reinforcement is unlikely based on the current data and literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 and C48 review alternative models from literature (appropriately cited: Laviolette et al., 2004; Nader and van der Kooy, 1997; etc.) and provide logical arguments for why they don't support DA-independence. The conclusion (C48) is reasonable given the experimental evidence, though it's an inference rather than direct demonstration. The argument that PPN/LDT pathways converge on DA neurons (C45) is logical but not experimentally tested here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "4ea56f46-ac89-4bf8-805d-4942a377bf39",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "After 12 days of chronic heroin self-administration, chemogenetic inhibition of DA neurons still caused reversible decreases in responding behavior, suggesting the same circuits maintain reinforcement during chronic exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C47 is supported by the chemogenetic data from C19 showing continued DA neuron requirement after 12 days. This extends the necessity finding from acute to chronic exposure, though the manuscript doesn't extensively characterize chronic adaptations. The reversibility is an important control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "4c9dce68-80f9-455a-8c0a-efbc63a48e80",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The occlusion experiments with matching IC50 values for DA neuron self-stimulation and GABA neuron self-inhibition strongly suggest heroin converges on the same cellular mechanisms, with GABA self-inhibition reinforcement being a novel finding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 and C53 are supported by the optogenetic occlusion data with nearly identical IC50 values (6.4 vs 6.9 mg/kg). The novelty claim (C51) for GABA self-inhibition is stated but not independently verified. The occlusion logic is sound but represents inference about mechanism rather than direct proof of identical pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "bd0e9ec9-4f50-4a07-b199-cdec958ccb73",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript discusses discrepancies with older pharmacological studies and genetic manipulations that challenged the DA hypothesis, offering explanations including insufficient receptor occupancy, developmental adaptations, and methodological limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C60 review conflicting literature and offer speculative explanations (C55, C59 explicitly marked as speculation). While the citations appear accurate (Ettenberg et al., 1982; Pettit et al., 1984; Hnasko et al., 2005; Pisanu et al., 2015), the explanations for discrepancies are not experimentally tested here. The discussion is reasonable but represents interpretation rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "1142f3c5-1691-4452-b567-9249b6610f10",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study aims to integrate opioid research into the circuit model for addiction and suggests potential translational applications for addiction treatment and developing non-addictive analgesics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61 and C63 state the study's goals and potential implications. C61 is a reasonable summary of the study's contribution. C63 is explicitly speculative about future applications. These are appropriate framing statements but not experimental results requiring evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The introduction reviews the historical development of the dopamine hypothesis, supporting evidence from psychostimulants, challenges from opioid studies, and alternative models, establishing the rationale for using genetic tools to revisit this question.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C83 constitute the introduction's literature review, establishing context and rationale. Citations appear appropriate and comprehensive (Olds and Milner, 1954; multiple studies on DA antagonists, lesions, genetic manipulations, etc.). This provides necessary background but represents prior work rather than new findings. The rationale for the current study (C83) is well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    },
+    {
+      "id": "8ad15714-7c54-4cff-8716-55455ee3ea99",
+      "content_id": "5f83c89e-677c-404d-8293-7c882d7d5bdb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Opioids suppress VTA GABA interneuron activity through \u03bc-opioid receptor activation, causing hyperpolarization via GIRK channels and reduced release probability via calcium channel inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 reviews established mechanisms from literature (Jalabert et al., 2011; Johnson and North, 1992; Mazei-Robison et al., 2011; Cohen et al., 1992) that provide mechanistic context for the disinhibition model. This is appropriately cited background information, not a novel finding of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:56:40.925871Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "81ffa51e-2b08-41ad-9ae5-56599d8e08ba",
+      "result_id": "353002ea-38e4-4f19-914a-04b277d0beb6"
+    },
+    {
+      "claim_id": "867122d8-49b2-4c27-8c3c-6eea1c4aa3e9",
+      "result_id": "353002ea-38e4-4f19-914a-04b277d0beb6"
+    },
+    {
+      "claim_id": "af19c06d-033c-434b-b7dc-78fc61fe4729",
+      "result_id": "353002ea-38e4-4f19-914a-04b277d0beb6"
+    },
+    {
+      "claim_id": "a70df948-ce9b-4bbe-a3f8-d678004e0464",
+      "result_id": "d5a34b36-9675-4ede-b06f-8812277b4503"
+    },
+    {
+      "claim_id": "0e142f18-bac4-468e-9040-12549353070f",
+      "result_id": "d5a34b36-9675-4ede-b06f-8812277b4503"
+    },
+    {
+      "claim_id": "d532ba3a-3332-449a-b65c-060dfd282690",
+      "result_id": "d5a34b36-9675-4ede-b06f-8812277b4503"
+    },
+    {
+      "claim_id": "a50187b1-1bb7-493b-8610-e2c72267cd8e",
+      "result_id": "d5a34b36-9675-4ede-b06f-8812277b4503"
+    },
+    {
+      "claim_id": "27a99864-caad-4f18-9c10-35324e4519fb",
+      "result_id": "d5a34b36-9675-4ede-b06f-8812277b4503"
+    },
+    {
+      "claim_id": "ac8ae933-92c8-4090-a450-41a85e968cd9",
+      "result_id": "d5a34b36-9675-4ede-b06f-8812277b4503"
+    },
+    {
+      "claim_id": "9d8e7378-bb8c-4c7c-a792-d1daec17dc96",
+      "result_id": "f6b873ca-259f-4069-9620-8d53169df65e"
+    },
+    {
+      "claim_id": "2cd3c948-709c-4416-a4d6-ad9de7c3cd3c",
+      "result_id": "f6b873ca-259f-4069-9620-8d53169df65e"
+    },
+    {
+      "claim_id": "a6dccfed-e3ea-42ee-a90d-941a38debc2a",
+      "result_id": "f6b873ca-259f-4069-9620-8d53169df65e"
+    },
+    {
+      "claim_id": "469c59c3-e3d7-49f8-b334-1bb5b0c847fb",
+      "result_id": "1fe82efd-6f4c-4fe4-a929-28f722d2ae94"
+    },
+    {
+      "claim_id": "ea110384-d8d9-4571-ae1b-62004e755f48",
+      "result_id": "1fe82efd-6f4c-4fe4-a929-28f722d2ae94"
+    },
+    {
+      "claim_id": "b04fb195-4f1f-41d5-bd16-330dd07c93fb",
+      "result_id": "1fe82efd-6f4c-4fe4-a929-28f722d2ae94"
+    },
+    {
+      "claim_id": "92950d6b-ecec-4c6a-8e8c-32cd4c084b2c",
+      "result_id": "1fe82efd-6f4c-4fe4-a929-28f722d2ae94"
+    },
+    {
+      "claim_id": "16fb17ca-761d-4199-99be-58944218a6d1",
+      "result_id": "1fe82efd-6f4c-4fe4-a929-28f722d2ae94"
+    },
+    {
+      "claim_id": "1e0d5169-b6cc-490f-a29d-c508fa5d7c3d",
+      "result_id": "1fe82efd-6f4c-4fe4-a929-28f722d2ae94"
+    },
+    {
+      "claim_id": "03796597-aad7-437e-a9f0-299bf2e48367",
+      "result_id": "0fdc0864-0835-4538-bae2-4ea352b046cc"
+    },
+    {
+      "claim_id": "e96e46fc-fcd8-4bcc-becf-90a36ae2ad7a",
+      "result_id": "0fdc0864-0835-4538-bae2-4ea352b046cc"
+    },
+    {
+      "claim_id": "f8e8ab36-00b8-4c8a-a15d-c9f44d713a1d",
+      "result_id": "0fdc0864-0835-4538-bae2-4ea352b046cc"
+    },
+    {
+      "claim_id": "bd981ba4-505d-4916-8372-5177c42c113d",
+      "result_id": "0fdc0864-0835-4538-bae2-4ea352b046cc"
+    },
+    {
+      "claim_id": "236594a8-7dec-46d8-824f-a97944b94aaf",
+      "result_id": "7d20693e-797e-4e82-8918-ed9b9ee0d1f9"
+    },
+    {
+      "claim_id": "e2a5a169-e73a-4cbd-9cd2-2e2808597339",
+      "result_id": "7d20693e-797e-4e82-8918-ed9b9ee0d1f9"
+    },
+    {
+      "claim_id": "3204f6ee-ff94-4542-9692-39bb7c1b00c5",
+      "result_id": "7d20693e-797e-4e82-8918-ed9b9ee0d1f9"
+    },
+    {
+      "claim_id": "c409254d-2021-4804-9ce2-a095554b47b6",
+      "result_id": "67e8b917-c119-4efb-b899-7188818942e1"
+    },
+    {
+      "claim_id": "dcb8bc63-0581-4040-9b4c-0d512d034259",
+      "result_id": "67e8b917-c119-4efb-b899-7188818942e1"
+    },
+    {
+      "claim_id": "baa15ccd-fc3d-462e-96aa-a1ca4af81a29",
+      "result_id": "67e8b917-c119-4efb-b899-7188818942e1"
+    },
+    {
+      "claim_id": "66481b7e-2685-4da4-b160-dc67e4b4dd29",
+      "result_id": "67e8b917-c119-4efb-b899-7188818942e1"
+    },
+    {
+      "claim_id": "27f19402-91e0-41f3-a608-ac98a6632b7a",
+      "result_id": "67e8b917-c119-4efb-b899-7188818942e1"
+    },
+    {
+      "claim_id": "d3d15f2d-39ff-4885-b1e2-5f7c51ba3bd6",
+      "result_id": "52f76305-ca52-409a-9305-10b6b9859419"
+    },
+    {
+      "claim_id": "9588542f-b967-4789-8ae5-def16df6851c",
+      "result_id": "52f76305-ca52-409a-9305-10b6b9859419"
+    },
+    {
+      "claim_id": "fd5b8a30-1728-4b04-bb4e-1caf7a3c26bf",
+      "result_id": "52f76305-ca52-409a-9305-10b6b9859419"
+    },
+    {
+      "claim_id": "a883da53-cf48-4a16-b9a7-1cfeaaea79f1",
+      "result_id": "30014d9c-3892-4a6a-841c-8c7d2f73a873"
+    },
+    {
+      "claim_id": "b281871a-e1d3-4573-866e-afb91f21923c",
+      "result_id": "30014d9c-3892-4a6a-841c-8c7d2f73a873"
+    },
+    {
+      "claim_id": "747e7afa-8277-4648-95b2-85ec023df1de",
+      "result_id": "30014d9c-3892-4a6a-841c-8c7d2f73a873"
+    },
+    {
+      "claim_id": "ce8431e5-a023-40fd-b903-8c9af3ca8557",
+      "result_id": "30014d9c-3892-4a6a-841c-8c7d2f73a873"
+    },
+    {
+      "claim_id": "62567ac2-1097-4b22-b4d7-ebd0477abb36",
+      "result_id": "30014d9c-3892-4a6a-841c-8c7d2f73a873"
+    },
+    {
+      "claim_id": "d74d7137-ee5b-4520-8305-28fa53657f37",
+      "result_id": "30014d9c-3892-4a6a-841c-8c7d2f73a873"
+    },
+    {
+      "claim_id": "457bde8f-4a9e-43a2-b21f-73f1fd8109d1",
+      "result_id": "30014d9c-3892-4a6a-841c-8c7d2f73a873"
+    },
+    {
+      "claim_id": "10530944-7cd1-4a0d-9cc9-a84b13f6433b",
+      "result_id": "68f7781c-8ada-45d1-a3bd-81fba3504104"
+    },
+    {
+      "claim_id": "ce1cc2b6-869e-4e6c-8fe3-7b21bc8a7ca3",
+      "result_id": "39c7d2b4-911e-44d2-95a6-5d27427395b0"
+    },
+    {
+      "claim_id": "663c3bb9-d0fd-4f5f-8ca7-8d74415c7349",
+      "result_id": "39c7d2b4-911e-44d2-95a6-5d27427395b0"
+    },
+    {
+      "claim_id": "0a2aceff-ec2a-424e-a1f0-e2110bda8994",
+      "result_id": "39c7d2b4-911e-44d2-95a6-5d27427395b0"
+    },
+    {
+      "claim_id": "c22f8b6e-8956-44e8-9fac-50a2bdc570d3",
+      "result_id": "39c7d2b4-911e-44d2-95a6-5d27427395b0"
+    },
+    {
+      "claim_id": "851365a4-1099-4904-a7c1-49af4779708c",
+      "result_id": "39c7d2b4-911e-44d2-95a6-5d27427395b0"
+    },
+    {
+      "claim_id": "35d530d8-f31b-4976-b7dd-42b9c4cbc1a2",
+      "result_id": "39c7d2b4-911e-44d2-95a6-5d27427395b0"
+    },
+    {
+      "claim_id": "5abf09ce-31cc-4ab4-8ab3-10c31735fdf7",
+      "result_id": "4ea56f46-ac89-4bf8-805d-4942a377bf39"
+    },
+    {
+      "claim_id": "1e5d4a54-9d92-4a56-865b-94242a1c2004",
+      "result_id": "4c9dce68-80f9-455a-8c0a-efbc63a48e80"
+    },
+    {
+      "claim_id": "52a5b3bc-5734-490d-bdb8-c04173f1d393",
+      "result_id": "4c9dce68-80f9-455a-8c0a-efbc63a48e80"
+    },
+    {
+      "claim_id": "caca6c00-1be1-4c87-835b-b4c0ef666cad",
+      "result_id": "4c9dce68-80f9-455a-8c0a-efbc63a48e80"
+    },
+    {
+      "claim_id": "ddd68dc2-2c40-43de-89ad-96383241ba97",
+      "result_id": "4c9dce68-80f9-455a-8c0a-efbc63a48e80"
+    },
+    {
+      "claim_id": "619be187-d519-4542-a8f1-fb6c52477749",
+      "result_id": "bd0e9ec9-4f50-4a07-b199-cdec958ccb73"
+    },
+    {
+      "claim_id": "0a8c54a8-6268-4075-97a2-f6ff8998f562",
+      "result_id": "bd0e9ec9-4f50-4a07-b199-cdec958ccb73"
+    },
+    {
+      "claim_id": "de585e21-c542-446b-83a0-ea4b337b4826",
+      "result_id": "bd0e9ec9-4f50-4a07-b199-cdec958ccb73"
+    },
+    {
+      "claim_id": "4cb7dbc9-a7f7-4911-a797-57f27f34ca3b",
+      "result_id": "bd0e9ec9-4f50-4a07-b199-cdec958ccb73"
+    },
+    {
+      "claim_id": "3cec617b-9b29-432e-9413-7ab352c8a3ee",
+      "result_id": "bd0e9ec9-4f50-4a07-b199-cdec958ccb73"
+    },
+    {
+      "claim_id": "ed821c8b-3aee-428f-857a-8d912c634f6b",
+      "result_id": "bd0e9ec9-4f50-4a07-b199-cdec958ccb73"
+    },
+    {
+      "claim_id": "2f717e19-3872-4baa-9e5b-881b0cacd494",
+      "result_id": "bd0e9ec9-4f50-4a07-b199-cdec958ccb73"
+    },
+    {
+      "claim_id": "bde18da7-3621-4392-b984-ac3cf2ed6001",
+      "result_id": "1142f3c5-1691-4452-b567-9249b6610f10"
+    },
+    {
+      "claim_id": "33014374-18d5-4b07-abc0-8c43c16beec9",
+      "result_id": "1142f3c5-1691-4452-b567-9249b6610f10"
+    },
+    {
+      "claim_id": "8c47e455-7fd4-4412-b0ac-ee83d885c4ac",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "1807d24e-7b82-4a7e-8557-fb33d8637d54",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "b9bb0e9d-8a89-446e-a761-0305dc711baa",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "891f896b-d540-48ef-99d3-244b95a4ef7a",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "9da0f138-7481-4c25-99a2-558b2892db33",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "c7c12037-7d0d-43ed-98dc-75075f54208b",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "1f7b2aeb-de8c-4c5b-b148-63f754433abf",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "a0cbdd43-e285-4a7d-9e36-87d7f67cfebf",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "6a839e35-b5ae-4162-b585-e1ff72ce35ba",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "60909ac4-2a62-44dc-bdc0-049f0509a7bf",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "7bbcfd1a-272e-44fc-9474-af9478d7ec52",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "9f61729f-1b02-4f7f-a1cc-710cca8d211b",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "049c3efd-9a4b-4afc-87de-c837c5e05cd0",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "44d620d0-9ddd-496e-aefe-022a0ca765f4",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "bd6990bd-1d87-49be-be98-3bfe6204577d",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "031fdc65-332a-40ae-b15d-a3e19b2af3b1",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "82b89c4b-4775-4b84-b487-b9b293a02945",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "8a0d2919-f176-4b6f-b73f-eab92e76eeba",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "abb35012-7dc0-440b-aad6-e84700e07d25",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "b0947fdf-d68c-4f24-bde0-858b5199be89",
+      "result_id": "ed74ae6d-3080-4427-ade2-c813fd9e9ef7"
+    },
+    {
+      "claim_id": "d3b49a0a-7db4-40dd-a886-830fb10696fb",
+      "result_id": "8ad15714-7c54-4cff-8716-55455ee3ea99"
+    }
+  ],
+  "comparisons": []
+}

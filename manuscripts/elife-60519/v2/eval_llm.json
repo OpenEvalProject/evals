@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C31",
+      "C32",
+      "C45",
+      "C46"
+    ],
+    "result": "The study analyzed 2566 consecutive COVID-19 patients from five Massachusetts hospitals between March 4 and April 13, 2020, extracting 164 features per patient. Among these patients, 36.2% were hospitalized, 29.4% of hospitalized patients required ICU care, and 79.5% of ICU patients required mechanical ventilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C24, C31-C32, C45-C46 provide consistent demographic and outcome data with explicit numbers and percentages. The data extraction methodology is clearly described, and the cohort characteristics are well-documented across multiple claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C55",
+      "C8"
+    ],
+    "result": "A hospitalization prediction model achieved 88% AUC using random validation and 84% AUC on external hospital validation, with vital signs (oxygen saturation, temperature, respiratory rate), age, BMI, dyspnea, and comorbidities identified as the most important predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25-C28, C55, C8 collectively demonstrate strong model performance with consistent AUC values across validation strategies. The identified predictors are clinically plausible and supported by the data in Table 1, though the claim of 88% in C2 appears to round up from 88.2%.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C36",
+      "C37",
+      "C62",
+      "C9"
+    ],
+    "result": "An ICU admission prediction model for 2513 patients achieved 87% AUC (86% for parsimonious model), identifying chest opacities, age, male gender, respiratory rate, fever, and laboratory values (albumin, anion gap, oxygen saturation, LDH, calcium) as key predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C36-C37, C62, C9 provide consistent performance metrics and predictor variables supported by Table 2. The model performance is well-validated with both random and hospital-based splits, though the abstract claims 87% while the best model achieves 86.9%.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A mechanical ventilation prediction model for 2525 patients achieved 86% AUC, with a parsimonious model achieving 85% AUC using only 8 variables including lung opacities, albumin, fever, respiratory rate, glucose, male gender, LDH, and anion gap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35, C47-C49 are well-supported by Table 4 data showing consistent performance metrics. The parsimonious model demonstrates strong predictive power with minimal features, and the identified variables are clinically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C78"
+    ],
+    "result": "Restricted ICU models for 628 patients with complete LDH and CRP data achieved 83% AUC (80% for parsimonious model), with LDH, CRP, calcium, lung opacity, anion gap, SpO2, sodium, and insulin-dependent diabetes as key predictors, substantially outperforming PSI (59%) and CURB-65 (57%) scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40, C42-C44, C78 are supported by Table 3 data. The restricted model demonstrates robustness on a more challenging patient subset, and the superior performance over standard pneumonia scores is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C51",
+      "C52"
+    ],
+    "result": "Restricted ventilation models for 635 patients achieved 82% AUC with a parsimonious 5-variable model, substantially outperforming PSI (58%) and CURB-65 (57%) scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41, C51-C52 are well-supported by Table 5 data showing strong performance of the restricted ventilation model. The comparison to standard scores demonstrates the unique clinical profile of COVID-19.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C50",
+      "C81",
+      "C82"
+    ],
+    "result": "Standard pneumonia severity scores (PSI and CURB-65) achieved substantially lower accuracies (67-74%) compared to the COVID-19-specific models, highlighting the different clinical profile of COVID-19.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38-C39, C50, C81-C82 consistently show that standard pneumonia scores underperform compared to COVID-19-specific models across all outcomes. This finding is well-documented in Tables 2, 4, and 5, supporting the conclusion about COVID-19's distinct clinical profile.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The models can predict ICU admission and ventilation needs 35-38 hours in advance on average, with maintained performance even when restricted to predictions 18-48 hours before the outcome, demonstrating clinical utility for early intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C83-C86 are supported by Table 6 and the discussion of temporal prediction performance. The models demonstrate clinically meaningful lead times, though the ventilation model performance drops substantially (64% AUC) at 48 hours, which limits the strength of this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C87",
+      "C88",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "ACE inhibitors (ACEIs) may reduce hospitalization risk (OR 0.73, 95% CI 0.52-1.04) while ARBs show no association, contradicting speculation that ACEIs worsen COVID-19 outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C30, C87-C88 report an odds ratio with confidence interval crossing 1.0, indicating the effect is not statistically significant. The claim of 'reducing odds by 3/4' is misleading given the CI includes 1.0. While the finding contradicts prior speculation (C118-C121), the evidence is insufficient to conclude a protective effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C64"
+    ],
+    "result": "Age is a stronger predictor than comorbidities for severe COVID-19, with specific comorbidities (adrenal insufficiency, transplantation, chronic kidney disease, diabetes) and laboratory abnormalities (elevated LDH, CRP, anion gap, glucose; decreased calcium, sodium, albumin) strongly associated with adverse outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C64 are supported by the model coefficients in Tables 1-5 showing age consistently as a top predictor. The identified comorbidities and lab values are clinically plausible and well-documented in the results, though the claim that age is 'stronger' than comorbidities requires comparing standardized coefficients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "All three models achieved 86-88% AUC with parsimonious models (\u226410 variables) achieving 83-86% AUC. Binarized models showed similar performance except in restricted populations where continuous values proved more informative. Performance remained consistent across random and hospital-based validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77, C79-C80 accurately summarize model performance across different configurations. The consistency across validation strategies (C80) strengthens confidence in generalizability, and the observation about binarized models (C74, C79) is supported by the data showing ~10% AUC drop in restricted populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study used NLP for data extraction, applied standard preprocessing (one-hot encoding, standardization, missing value imputation), excluded patients requiring immediate ICU/ventilation (<4 hours), and employed multiple machine learning methods (RF, XGBoost, SVM, LR) with 80/20 train-test splits and 5-fold cross-validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C92-C100, C111-C115 describe standard and appropriate methodology. The preprocessing steps are clearly documented, the exclusion criteria are justified, and the validation strategy using both random splits and hospital-based validation is rigorous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study used standard performance metrics (AUC-ROC, Weighted F1-score) and logistic regression coefficients for interpretability, with standardized variables allowing direct comparison of predictor importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C110 describe standard statistical and machine learning methodology correctly. The use of standardized variables for coefficient comparison (C102) is appropriate, and the performance metrics are well-established for classification tasks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C61",
+      "C65",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study provides clinical interpretations for key predictors: vital signs reflect disease severity, diabetes may affect outcomes through immune dysfunction, LDH indicates tissue damage, low calcium suggests cell lysis, and elevated anion gap suggests metabolic acidosis and tissue hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C61, C65, C68-C70 provide clinically plausible interpretations supported by medical knowledge and citations. However, some interpretations (C61, C70) are speculative ('might be,' 'may be') and represent hypotheses rather than demonstrated mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C57",
+      "C63",
+      "C67"
+    ],
+    "result": "The study contextualizes findings within existing COVID-19 literature, citing CDC hospitalization data, New York City ICU/ventilation rates, and prior studies identifying LDH, CRP, age, and male gender as important prognostic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14, C57, C63, C67 appropriately cite prior work to contextualize the study. These citations support the novelty and relevance of the current work by showing consistency with and extension of prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C116",
+      "C117",
+      "C122"
+    ],
+    "result": "The models are intended to assist (not replace) clinical judgment for patient triage, resource planning, and policy decisions, with online calculators made available for implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91, C116-C117, C122 appropriately describe potential applications and limitations. The availability of online calculators (C122) facilitates translation to practice, though the actual clinical utility and implementation success are not evaluated in this study.",
+    "result_type": "MINOR"
+  }
+]

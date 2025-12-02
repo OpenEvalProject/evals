@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C67",
+      "C68",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors successfully generated a conditional GR knockout rat line (SD:nr3c1fl/fl) using CRISPR/Cas9 to insert LoxP sites flanking exon 3 of the Nr3c1 gene. From ~60 injected zygotes yielding 17 pups, one founder (#60) was correctly targeted, validated by PCR, sequencing, and restriction enzyme digestion, with no off-target mutations detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular validation is comprehensive, including PCR with multiple primer sets (C21-C23), Sanger sequencing of the entire targeted region (C23, C84), copy number verification, and exclusion of random plasmid integration (C25). The low efficiency (1/17 pups) is typical for HDR-based CRISPR approaches. The single A/T base change in a non-conserved intronic region (C24) is unlikely to be functionally significant, though this remains an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Baseline behavioral and physiological characterization showed no differences between SD:nr3c1fl/fl and wildtype rats in open field, elevated plus maze, forced swim test, body weight, or organ weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These control experiments (C86-C88) demonstrate that LoxP insertion alone does not alter baseline phenotype, which is critical for validating the conditional model. The data are referenced in Appendix figures, though not shown in the main text. This supports that observed effects after Cre-mediated recombination are due to GR loss rather than the genetic modification itself.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C69"
+    ],
+    "result": "Viral-mediated Cre delivery successfully induced region-specific, cell-type-specific, and projection-specific GR knockdown. AAV8-hSyn-Cre in BLA eliminated GR in Cre+ cells in floxed but not wildtype rats. CaMKII\u03b1-Cre in PFC caused GR loss only in infected neurons. Retrograde AAVrg-Cre from BLA eliminated GR in PFC-BLA projection neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The immunohistochemical validation (C29-C36, Figure 2) demonstrates successful Cre-dependent GR deletion across multiple targeting strategies. However, the authors acknowledge using different viral controls (AAVrg-pmSyn1-EBFP-Cre vs AAVrg-CAG-GFP) with different promoters and fluorophores for the projection-specific experiments, which is a significant limitation. The lack of matched controls makes it difficult to definitively attribute differences solely to GR deletion versus viral construct differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Quantitative immunohistochemistry confirmed significant GR knockdown in CaMKII\u03b1+ neurons of the PL-PFC in both female (p<0.0001, n=5 GRKD vs n=10 control) and male (p<0.0001, n=6 GRKD vs n=9 control) SD:nr3c1fl/fl rats injected with CaMKII\u03b1-Cre virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantification (C41-C42, Figure 3A-B) provides statistical support for effective GR knockdown with highly significant p-values. The methods describe a semi-quantitative approach using ImageJ to measure GR optical density in GFP+ cells. While the approach is reasonable, the lack of calibration to known GR concentrations and the unequal sample sizes (particularly n=5 for female GRKD) are minor limitations. The effect appears robust despite these concerns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C72",
+      "C89",
+      "C91"
+    ],
+    "result": "Female rats with PL-PFC CaMKII\u03b1-specific GR knockdown showed increased freezing during fear acquisition (p=0.035), delayed extinction (p=0.012), and impaired extinction recall (p=0.020). Male rats showed no deficits in any phase of fear conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sex-specific effects in fear conditioning (C44-C50, Figure 4A-B) are statistically significant in females with appropriate repeated measures ANOVA. The lack of a significant GRKD \u00d7 tone interaction in acquisition (C45, p=0.285) suggests the main effect may reflect overall heightened fear rather than impaired learning per se. Males showed no effects across all phases (C48-C50), supporting sex-specificity. Sample sizes are noted as reduced due to breeding limitations and missed injections, and effect sizes are reported as small-to-medium, which is appropriate transparency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C73",
+      "C92"
+    ],
+    "result": "Male rats with PL-PFC GR knockdown showed no change in immobility but significantly increased diving behavior on both days of forced swim test (Day 1: p=0.005; Day 2: p=0.003), interpreted as enhanced active coping. Female rats showed no differences in either measure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FST results (C53-C57, Figure 4C-J) demonstrate a clear sex-specific behavioral shift in males. The increased diving without changes in total immobility (C53-C55) suggests a qualitative change in coping strategy rather than overall activity. The interpretation that diving represents active coping is supported by citations (C58). Females showed no effects (C56-C57), reinforcing sex-specificity. The statistical tests (t-tests) are appropriate for the design, though sample sizes (n=14-15 total per sex) are modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C74"
+    ],
+    "result": "Female rats with PL-PFC GR knockdown showed delayed HPA axis shut-off after acute restraint stress (GRKD \u00d7 time interaction p=0.027; 120-min timepoint p=0.050), suggesting impaired negative feedback. Males showed no differences in corticosterone response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HPA axis data (C61-C63, Figure 4K-L) show sex-specific effects consistent with the behavioral findings. The significant interaction in females (C61) and delayed recovery at 120 min (C62, p=0.050, at the threshold of significance) support impaired feedback inhibition. The lack of effect in males (C63) contrasts with prior work using non-specific viral knockdown (C60, C65), which the authors attribute to cell-type specificity of the current approach. This is a reasonable interpretation but remains speculative without direct comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C93"
+    ],
+    "result": "The rat model offers advantages over existing mouse CaMKII\u03b1-Cre driver lines, which delete GR across multiple brain regions (cortex, hippocampus, BLA, caudate, BNST), making circuit-specific interpretation impossible. The viral approach in rats enables region-specific and projection-specific GR deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to mouse models (C77-C81) is well-supported by citations and highlights a genuine advantage of the viral approach in rats. The widespread deletion in mouse driver lines (C79) indeed precludes circuit-specific conclusions (C80). The demonstration of region-, cell-type-, and projection-specific targeting (C82, C93) validates this advantage. However, the claim that prior studies haven't specified GR-specific cognitive deficits (C81) may overstate the novelty, as some mouse studies have examined cognitive behaviors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors speculate that sex-specific vulnerability of females to GR knockdown may model mechanisms underlying the overrepresentation of women in stress-related psychiatric disorders (depression, PTSD), which involve PFC dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This translational interpretation (C94-C98) is highly speculative. While the associations between fear/HPA dysregulation and psychiatric disorders (C94), sex differences in prevalence (C95), and PFC involvement (C96) are well-established by citations, the leap to claiming the rat model reflects mechanisms of human sex differences (C97-C98) is not directly supported by the data. The model demonstrates sex differences in GR function but does not establish causality for human disease vulnerability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C66",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors position CRISPR/Cas9-generated conditional knockout rats as valuable tools for bio-behavioral research, leveraging advantages of rats over mice for complex behavioral assays while enabling cell-type and circuit-specific manipulations previously limited to mouse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims (C1-C2, C6-C10) accurately represent the field and are well-supported by citations. The demonstration that CRISPR/Cas9 is effective in rats (C66, C99) is validated by the successful model generation. The advantages of rats for behavioral studies (C9, C100) are well-established. The forward-looking claim about expanding applications (C101) is reasonable given the proof-of-concept, though somewhat speculative about future impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C43",
+      "C51",
+      "C70",
+      "C71",
+      "C75",
+      "C76",
+      "C90"
+    ],
+    "result": "The functional validation demonstrates that the conditional GR knockout rat model can reveal sex-specific roles of GR in PFC-dependent behaviors, with CaMKII\u03b1-Cre targeting primarily excitatory projection neurons (>80% specificity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-type specificity claim (C37-C38) is supported by citation to Wood et al., 2019, though the authors appropriately note uncertainty about GABAergic interneuron targeting (C40). The functional validation (C70) is demonstrated by the behavioral and physiological data. The sex-specific effects (C75) are consistently observed across multiple assays. The claim that this provides high-resolution assessment (C76) is supported by the data, though the resolution is limited by the CaMKII\u03b1 promoter's specificity rather than single-cell precision.",
+    "result_type": "MAJOR"
+  }
+]

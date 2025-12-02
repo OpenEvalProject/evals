@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The HCND folds into three short alpha helices (HCNa, HCNb, HCNc) that are positioned between the VSD and C-linker, with specific structural contacts: F109 and I135 anchor the HCND to the VSD, while R112 and M113 form salt bridges with the C-linker of adjacent subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 describe the structural architecture of the HCND based on the HCN1 cryo-EM structure (PDB: 5U6O). The structural observations are directly supported by Figure 1, which shows the three helices, their orientations, and the specific residue contacts. These are descriptive structural claims based on high-resolution structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Hydrophobic residues I177 (HCN2) and I176 (HCN2) in the HCND are essential for channel folding and trafficking to the plasma membrane. Mutations disrupting these hydrophobic interactions (I177D/G, I176D) prevent plasma membrane localization, while conservative substitutions (I177V/A, I176V) maintain function. Mild disruptions (I176A, L250A) result in loss of voltage-dependent gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C78 are well-supported by mutagenesis data in HCN2 and HCN1 (Figures 2, 2-supplements). The trafficking defects are confirmed by confocal microscopy showing intracellular retention. The functional phenotypes (loss of time-dependent gating in I176A/L250A, cesium sensitivity) are demonstrated by electrophysiology. The data consistently show that hydrophobic interactions at these positions are critical for both trafficking and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The aromatic residue F151 (HCN2)/F109 (HCN1) in the HCND inserts into a hydrophobic pocket formed by S1 and S4 of the VSD. Progressive weakening of this hydrophobic interaction shifts V1/2 to more depolarized voltages (F151V: +4.4 mV, F151A: +13 mV, F151E: +34.7 mV). Complete disruption (F151E) abolishes cAMP sensitivity, while partial disruption (F151V/A) maintains cAMP response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C99 are strongly supported by combined computational (MD simulations, Figure 3) and experimental data (electrophysiology, Figure 4). The MD simulations show F109 stably inserted in the pocket except for F109E, which rotates out and becomes hydrated. The experimental V1/2 shifts correlate well with the predicted strength of hydrophobic interactions. The loss of cAMP sensitivity in F151E is clearly demonstrated. The F151R behavior is explained by MD showing it can form alternative interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Linear Response Theory (LRT) computational analysis predicts that the HCND mechanically couples the C-linker and VSD. Force perturbations applied to the C-linker, HCND, or S4 helix all produce similar concerted rotational movements of these three domains, suggesting the HCND transmits conformational changes bidirectionally between the C-linker and VSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are supported by LRT computational modeling (Figure 5). The analysis shows that perturbations at different sites (C-linker A425, HCND K108, or S4 E283) produce similar rotational movements in all three domains, supporting mechanical coupling. However, LRT is a coarse-grained computational method with inherent limitations (acknowledged by authors). The predictions require experimental validation, which is provided by subsequent mutagenesis experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Disrupting the salt bridge contacts between the HCND and C-linker (K464A-E478A double mutant in HCN2) abolishes the cAMP-induced shift in voltage-dependent activation while maintaining cAMP binding (evidenced by effects on deactivation). Single mutations (K464A or E478A) retain cAMP sensitivity. Mutant cycle analysis confirms E478 and R154 interact with an interaction energy of -2.0 kcal/mol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C118 are well-supported by systematic mutagenesis and electrophysiology (Figure 6). The double mutant K464A-E478A shows no V1/2 shift with cAMP (\u0394V1/2 = +2.3 mV, not significant) while single mutants respond normally. The retention of cAMP effects on deactivation kinetics in the double mutant confirms cAMP binding is intact, supporting the interpretation that coupling is disrupted. The mutant cycle analysis (Figure 6-supplement 2) provides thermodynamic evidence for interaction between E478 and R154.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C127",
+      "C128"
+    ],
+    "result": "The mechanism of HCND-mediated coupling between the C-linker and VSD is conserved across HCN isoforms. Equivalent double mutations in HCN4 (K543A-E557A) and HCN1 (K422A-E436A) also abolish cAMP effects on voltage-dependent activation while maintaining cAMP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 and C127-C128 are supported by parallel experiments in HCN4 and HCN1 (Figure 7). The HCN4 double mutant shows no V1/2 shift with cAMP but retains effects on deactivation kinetics. The HCN1 double mutant phenocopies the R549E low-affinity mutant, consistent with loss of coupling to endogenous cAMP. The conservation across three isoforms strengthens the generality of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "In HCN1, the K422A-E436A double mutant shows a V1/2 similar to the low-affinity R549E mutant, suggesting the double mutation prevents transmission of the signal from endogenous cAMP. Addition of 15 \u03bcM cAMP does not affect either mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 are supported by experimental data in Figure 7A. The approach of using R549E as a control for loss of cAMP binding is well-established (Chen et al., 2001). The similar V1/2 values between K422A-E436A and R549E, and the lack of response to exogenous cAMP in both, support the interpretation that the double mutant disrupts coupling to endogenous cAMP. This is an elegant experimental design for HCN1, which has high cAMP affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C129",
+      "C130",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The HCND mechanically couples the VSD and C-linker/CNBD, acting as a transmission element that integrates voltage and cAMP signals. The HCND forms a mechanical continuum through hydrophobic interactions with the VSD (via F109/F151) and salt bridges with the C-linker (via R112/M113 and K422/E436), enabling bidirectional transmission of conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C129-C138, C170-C172 represent the main conclusions of the study. These are well-supported by the convergence of structural analysis, computational modeling (LRT), and systematic mutagenesis across three HCN isoforms. The hydrophobic and electrostatic contacts are structurally defined, computationally validated, and functionally confirmed by mutations that disrupt these interactions and abolish cAMP modulation of voltage gating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The HCND is essential for correct channel folding and trafficking to the plasma membrane. This confirms and extends previous reports showing HCN2 channels lacking the N-terminus do not reach the plasma membrane, and that the HCNb helix contains a conserved ER export motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 are supported by the trafficking defects observed in multiple mutants (I135G, F109E, I177D/G, I176D) shown by confocal microscopy. The interpretation is consistent with prior literature (Proenza et al., 2002; Tran et al., 2002; Pan et al., 2015). However, the authors acknowledge they cannot distinguish between folding defects and trafficking defects, which is an appropriate limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "cAMP binding induces an iris-like rotation in the C-linker gating ring, which is translated into an upward rotational movement of the HCND due to the bifurcated salt bridge attachment. This causes tilting of the S4 domain through tight hydrophobic interactions. This mechanical link is conserved across HCN isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 integrate prior structural/computational work on C-linker rotation (cited studies) with the current findings on HCND coupling. The mechanism is supported by the LRT analysis (Figure 5, Video 1) and the functional consequences of disrupting HCND contacts. The conservation is demonstrated experimentally in HCN1, HCN2, and HCN4. The model is coherent and well-supported, though the exact amplitudes of motion remain uncertain due to LRT limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The HCND controls voltage-dependent gating by exerting an inhibitory action on the VSD. Weakening HCND-VSD interactions (I176A, L250A) produces 'leaky' channels with loss of voltage dependence. Progressive weakening of the F151 hydrophobic contact shifts V1/2 to more depolarized voltages, consistent with reduced inhibition. cAMP relieves this inhibition by transmitting conformational changes through the HCND to the VSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C150 are supported by the functional phenotypes of HCND-VSD mutants. The 'leaky' phenotype of I176A/L250A (loss of time-dependent gating, increased instantaneous current) is clearly demonstrated. The progressive V1/2 shifts with F151 mutations correlate with predicted interaction strength. The model that HCND exerts tonic inhibition is consistent with prior work (Wainger et al., 2001) and explains why cAMP cannot open channels without voltage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The contact between the HCND and C-linker is essential for allosteric regulation. Disrupting these contacts eliminates cAMP effects on channel activation. Isoform-specific responses to cAMP emerge from differences in the mechanisms connecting cytosolic to transmembrane domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 are supported by the double mutant data in all three isoforms (Figures 6-7). The observation that mutational effects are more consistent for C-linker/HCND interactions than HCND/VSD interactions across isoforms (e.g., HCN1 I134A vs HCN2 I176A) supports the conclusion about isoform-specific mechanisms. This is an important insight about the molecular basis of isoform diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Removal of VSD inhibition on cAMP-mediated pore opening requires both voltage and the physical connection between VSD and C-linker mediated by the HCND. The HCND may preactivate the channel by lowering the voltage required to move the sensor, and directly mediates the autoinhibitory effect of the CNBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C159 represent mechanistic interpretations supported by the experimental data and consistent with prior functional studies (Kusch et al., 2010; Wainger et al., 2001). The requirement for both voltage and HCND coupling is demonstrated by the double mutants. The preactivation model is consistent with the observed voltage-dependent increase in cAMP affinity (Kusch et al., 2010). Claim C159 includes speculation ('might') which is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The findings are consistent with prior models of HCN gating, including bidirectional coupling between CNBD and VSD (Kusch et al., Thon et al.) and the gating canal model (Bell et al.). The hydrophobic pocket connecting F151 to S4 is located at the C-terminal tail of S4 where the gating canal is expected to form, suggesting the HCND may influence gating canal formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C163 accurately cite prior work and show the current findings are consistent with established models. Claims C164-C166 make an interesting structural observation (F151 pocket location coincides with predicted gating canal site) and offer speculation about mechanism. The speculation is appropriately qualified ('can speculate', 'might', 'may') and is reasonable given the structural alignment. This represents good integration with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The HCND-mediated coupling explains why cAMP cannot open the pore without voltage and provides a physiologically relevant mechanism to prevent inappropriate channel opening in response to cAMP fluctuations. This provides a rationale for HCND mutations found in patients with early infantile epileptic encephalopathy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C167 is a well-supported conclusion from the data. Claim C168 is a reasonable physiological inference given the submicromolar Kd for cAMP. Claim C169 appropriately connects the findings to disease-associated mutations (Marini et al., 2018; Nava et al., 2014), though the specific functional consequences of those mutations are not tested here. The connection is plausible and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background and context claims about HCN channel structure, function, and prior knowledge gaps. These establish the physiological importance of HCN channels, describe their structural architecture, and identify the unknown mechanism coupling cAMP binding to voltage-dependent gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C44 are primarily background claims from the Introduction, citing established literature. They accurately represent prior knowledge about HCN channel function (C1-C13), structure (C14-C26), voltage gating (C27-C29), cAMP regulation (C30-C41), and knowledge gaps (C3, C22, C42). The structural claims are based on the HCN1 cryo-EM structure (Lee and MacKinnon, 2017). Claims C43-C44 represent the hypothesis that motivated the study, based on structural inspection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The study demonstrates that the HCND is critical for cAMP response in HCN1, HCN2, and HCN4, and that the HCND sets the voltage range for channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are high-level summary claims stated in the Introduction as study findings. They are well-supported by the comprehensive mutagenesis data across three isoforms showing loss of cAMP response when HCND contacts are disrupted (C45), and by the V1/2 shifts observed with HCND-VSD mutations (C46). These represent the two major functional roles of the HCND discovered in this study.",
+    "result_type": "MAJOR"
+  }
+]

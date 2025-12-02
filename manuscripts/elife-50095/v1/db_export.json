@@ -1,0 +1,1486 @@
+{
+  "submission": {
+    "id": "30c15a97-d8a9-4d13-9c7a-30d754e9db2a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:01:56.307894Z",
+    "updated_at": "2025-12-02T14:01:56.307894Z"
+  },
+  "content": [
+    {
+      "id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "submission_id": "30c15a97-d8a9-4d13-9c7a-30d754e9db2a",
+      "content_type": "manuscript",
+      "content_text": "# Antagonism between parasites within snail hosts impacts the transmission of human schistosomiasis\n\n## Authors\n\n- Martina R Laidemitt<sup>1</sup> ([ORCID: 0000-0001-6250-5555](https://orcid.org/0000-0001-6250-5555)) \u2020\n- Larissa C Anderson<sup>1</sup> ([ORCID: 0000-0002-4259-4068](https://orcid.org/0000-0002-4259-4068))\n- Helen J Wearing<sup>1</sup> ([ORCID: 0000-0002-9837-9797](https://orcid.org/0000-0002-9837-9797))\n- Martin W Mutuku<sup>4</sup>\n- Gerald M Mkoji<sup>4</sup>\n- Eric S Loker<sup>1</sup>\n\n### Affiliations\n\n1. Department of Biology University of New Mexico Albuquerque United States\n2. Center for Evolutionary and Theoretical Immunology (CETI) University of New Mexico Albuquerque United States\n3. Department of Mathematics and Statistics University of New Mexico Albuquerque United States\n4. Centre for Biotechnology Research and Development Kenya Medical Research Institute Nairobi Kenya\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman disease agents exist within complex environments that have underappreciated effects on transmission, especially for parasites with multi-host life cycles. We examined the impact of multiple host and parasite species on transmission of the human parasite Schistosoma mansoni in Kenya. We show S. mansoni is impacted by cattle and wild vertebrates because of their role in supporting trematode parasites, the larvae of which have antagonistic interactions with S. mansoni in their shared Biomphalaria vector snails. We discovered the abundant cattle trematode, Calicophoron sukari, fails to develop in Biomphalaria pfeifferi unless S. mansoni larvae are present in the same snail. Further development of S. mansoni is subsequently prevented by C. sukari\u2019s presence. Modeling indicated that removal of C. sukari would increase S. mansoni-infected snails by two-fold. Predictable exploitation of aquatic habitats by humans and their cattle enable C. sukari to exploit S. mansoni, thereby limiting transmission of this human pathogen.\n\n## Introduction\n\nInfectious diseases exist in complex ecological settings and for some disease agents, successful transmission may require sequential colonization of multiple obligatory hosts. This is particularly important for digenetic trematodes because obligatory hosts must overlap in space and time and in sufficient numbers for transmission to be successful (Dobson, 2004; Begon, 2008; LoGiudice et al., 2008). In addition, the environment may harbor a diversity of host species, some of which might serve as alternative competent hosts thus potentially favoring parasite persistence, or conversely, such species may act as non-productive sinks for the parasite thereby diminishing its transmission. As shown by an increasing number of studies, the net effect of biotically complex environments on transmission success for a particular parasite may be hard to predict, particularly for parasites that use multiple hosts to complete their life cycles (Lafferty et al., 1994; Suz\u00e1n et al., 2009; Lafferty, 2012; Johnson et al., 2013; Salkeld et al., 2013; Rohr et al., 2015; Frainer et al., 2018). Furthermore, the impact may be highly contextual, depending on the density of host species, leading to dilution or amplification of transmission (Luis et al., 2018).\n\nAnother factor influencing the success of a particular parasite is the diversity of other infectious agents present that colonize the same host species, thereby setting up the potential for within-host interactions. Such interactions can range from mutual dependence or facilitation to overt competition and even predation of one parasite by another (Lim and Heyneman, 1972;\u00a0Combes, 1982; Lafferty et al., 1994; Hechinger et al., 2011). The purpose of this study is to combine field observations, experimental infections and use of a mathematical model parameterized by our empirical data to understand how transmission of the widespread human-infecting trematode Schistosoma mansoni is influenced by other trematode species present in the aquatic habitats in and around Lake Victoria. We are particularly interested in those trematode species that share with S. mansoni a dependence on Biomphalaria snails for their larval development. These additional Biomphalaria-dependent trematodes also infect a variety of wild or domestic host species to complete their respective life cycles. Therefore, strong interactions occurring among trematode species in the snail host could have cascading effects on the level of parasitism occurring in many host species, including humans and domestic animals.\n\nS. mansoni is the most geographically widespread causative agent of intestinal schistosomiasis, and the Lake Victoria Basin is one of the largest hyperendemic areas of schistosomiasis in the world (Gouvras et al., 2017; Wiegand et al., 2017). Despite repeated treatments with the anthelmintic praziquantel, children living in villages near the lakeshore often exhibit prevalence of S. mansoni infection of\u00a0>50%, and up to 90% in some areas (Woodhall et al., 2013).\n\nA textbook-like portrayal of the S. mansoni life cycle highlighting the role of humans and a generic \u2018Biomphalaria\u2019 in transmission belies a more complex reality in the Lake Victoria Basin in that multiple options exist for transmission. With respect to mammalian definitive hosts, humans are certainly the most important in maintaining transmission (Colley et al., 2014), but baboons and common rodents like Mastomys natalensis can also play a role and may assume greater significance in ongoing chemotherapy-based control programs targeting human transmission (Hanelt et al., 2010; Catalano et al., 2018). Likewise, S. mansoni in and around the lake also infects three Biomphalaria taxa that exist in different habitats. Schistosoma mansoni eggs are passed into aquatic habitats in human feces. A miracidium hatches from an egg and if successful in finding and penetrating a Biomphalaria snail, then initiates a long-term, proliferative period of asexual development. This development culminates in the production of human-infective cercariae which are released or \u2018shed\u2019 into the surrounding water. These obligatory vector hosts include B. pfeifferi in streams and small impoundments, B. sudanica along the lakeshore, and B. choanomphala, now generally considered to be a distinct ecophenotype of B. sudanica, found especially but not exclusively in deeper water (Magendantz, 1972; Standley et al., 2011; Zhang et al., 2018). All three species have been found naturally infected with S. mansoni, (Magendantz, 1972; Standley et al., 2011; Mutuku et al., 2017;\u00a0Mutuku et al., 2019).\n\nIn addition to exploiting multiple definitive and intermediate host species, S. mansoni is, like many infectious agents, influenced in a myriad of ways by the diverse species with which it co-occurs. For instance, several other non-host species of freshwater snails co-occur with Biomphalaria and may act as sinks for S. mansoni as its miracidia will not develop in these snail species. Likewise, there are other species of digenetic trematode species in Kenya with an obligatory dependence on Biomphalaria snails for their larval development and their larval stages may strongly interact with S. mansoni larvae for access to the resources offered by these snail hosts. It is well-known from other studies that complex interactions usually dominated by antagonism via predation (and by indirect antagonism) can occur amongst the larvae of trematode species sharing a particular individual snail, and these interactions often have predictable outcomes that can influence patterns of abundance among trematode species in particular communities (Fernandez and Esch, 1991; Lafferty et al., 1994; Sold\u00e1nov\u00e1 et al., 2012; Mordecai et al., 2016).\n\nRelevant to considerations of intra-snail interactions is that not all larval trematodes have the same pattern of development within their host snail. Some like S. mansoni develop sac-like sporocysts, whereas others produce rediae possessing a mouth surrounded by a powerful sucker, and a gut (Schell, 1985). Rediae can move within the snail and may ingest host tissue, including gonadal tissue (Lim and Lie, 1969). For example, the rediae of echinostomes (Echinostomatoidea) in particular tend to be dominant in intramolluscan interactions, with some echinostome species able to produce small, motile rediae specialized for attacking and killing larvae of other trematodes species, including S. mansoni sporocysts (Lim and Heyneman, 1972; Moravec et al., 1974; Hechinger et al., 2011). Amphistome trematodes (Paramphistomoidea) also produce rediae, and these tend to have more complex antagonistic or facilitation interactions with other trematodes (Southgate et al., 1989; Spatz et al., 2012). Sporocyst-producing species including strigeids and schistosomes have also been shown to have more subtle indirect antagonistic effects on larvae of other trematodes mediated by as yet uncharacterized soluble factors (Basch et al., 1969). Given the complex nature of the guilds of trematodes, we found to be associated with Biomphalaria snails in Kenya, we hypothesized that some of these non-schistosome trematode species could negatively impact the development and transmission of S. mansoni in Biomphalaria.\n\nTo better understand these interactions, we initiated a survey at two stream sites and one lake site in western Kenya to define the trematode diversity from Biomphalaria. Morphological features and molecular markers were used to aid explicit definition of trematode species diversity. We also used sequential observations and experimental infections to reveal the dominance hierarchy among the trematodes that use B. pfeifferi, the most widely distributed S. mansoni vector in Africa. The same approaches also enabled us to observe striking antagonistic interactions perpetrated on S. mansoni by the most common trematode recovered from our habitats, the cattle-transmitted amphistome Calicophoron sukari. We then integrated our field survey results and experimental studies into a mathematical model to quantify the influence of C. sukari on S. mansoni transmission. These studies collectively highlight the importance of animal husbandry practices and of a diverse community of wild animals and the trematodes they support, particularly those dependent on Biomphalaria, on downstream transmission of S. mansoni infection to people in west Kenya.\n\n## Results\n\n### Field surveys\n\nUpon screening Biomphalaria from both stream and lake habitats, several trematode species were found, verified as distinct taxa using morphological features and molecular markers (Figure 1a). A total of 19 species were found among 19,914 B. pfeifferi (overall prevalence 12.3%) from the perennial Asao Stream, 7 species from 1,136 B. pfeifferi (15.5%) from the highly seasonal Kasabong stream, and from Lake Victoria, 21 species of cercariae from 3,369 B. sudanica (10.3%), (Figure 1b). Some species, like S. mansoni, were recovered from all habitats, but many were habitat specific, such that in aggregate, 29 taxa were recovered. The life cycles of most of these trematodes have yet to be clarified, but by inferring probable life cycles from relatives with known life cycles (Yamaguti, 1958; Schell, 1985), a broad variety of invertebrate and wild and domestic vertebrate species are involved as hosts in supporting these life cycles (Figure 1c). A portion of the field-collected Biomphalaria were also exposed to S. mansoni to assess compatibility\u00a0and we found that all three taxa of Biomphalaria were susceptible to S. mansoni, but found that B. pfeifferi was the most compatible (Figure 1d). At Asao and Kasabong, the most common trematode recovered from B. pfeifferi was the cattle-transmitted amphistome Calicophoron sukari (Laidemitt et al., 2017) (1,035/2439 total infections, or 42.4% of all infections at Asao, and at Kasabong 97/176, or 55.1% of all infections) followed closely by S. mansoni (1014 of 2439 total infections at Asao or 41.6% of all infections and at Kasabong, 68/176 or 38.6% of all infections) (Figure 1e). Both species were also commonly recovered from B. pfeifferi, but C. sukari was not recovered from B. sudanica or B. choanomphala. Also noteworthy is the overall prevalence of S. mansoni infections at stream sites (5.09% and 5.89%) was much higher than from the lakeshore (0.22%).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/50095/elife-50095-fig1-v1.jpg)\n\n**Figure 1.:** (A) The different types of trematode cercariae recovered either uniquely from B. pfeifferi from streams or from B. sudanica from the lakeshore, or that were recovered from both snail species (in red), confirmed with mitochondrial barcodes. (B) Kasabong (ephemeral stream) and Asao (perennial stream), the overall prevalence of larval trematode infections in B. pfeifferi is shown along with pie charts showing the composition of the trematode infections. Note the large proportions of infections comprised of C. sukari or S. mansoni. (C) A sample of six trematode with inferred life cycles (in some cases directly documented) to point out the variety of invertebrate and vertebrate hosts (and plants) involved in such cycles. (D) Peak prevalence of S. mansoni (indicated on vertical axis as the percent shedding cercariae) from three different Biomphalaria taxa to experimental infection with S. mansoni miracidia (five miracida/snail) derived from local school children. (E) The prevalence of C. sukari, S. mansoni, and other trematodes from bimonthly surveys of Kasabong and Asao. Note C. sukari is the most abundant trematode in both locations. The turtle, carp and frog images in panel C were reproduced from Pixabay (https://pixabay.com/photos/turtle-animal-wildlife-wild-nature-1517920/, https://pixabay.com/vectors/animal-carp-fish-freshwater-lake-2029698/, and https://pixabay.com/photos/tree-frog-anuran-frog-amphibians-299886/ respectively), under the terms of the Pixabay license (https://pixabay.com/service/license/).\n\n### Dominance hierarchy\n\nBy observing natural takeover events (Biomphalaria shedding one type of cercariae and then later shedding a different type of cercariae only) and through experimental infections, we discovered that at Asao Stream S. mansoni occupies an intermediate position in the hierarchy, and echinostomes and C. sukari were the more dominant species (Figure 2). In general, amphistomes of domestic ruminants like C. sukari were more commonly recovered from B. pfeifferi from stream sites whereas echinostomes, mostly transmitted by birds (Laidemitt et al., 2019), were more likely to be recovered from B. sudanica from the lakeshore.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/50095/elife-50095-fig2-v1.jpg)\n\n**Figure 2.:** The dominance hierarchy was worked out through both experimental superinfections of snails with existing infections (green numbers), and by maintaining infected snails from the field to see if they switched from shedding one type of cercaria to another (orange numbers). Percentages shown are the prevalence of infected B. pfeifferi (shedding/total number of B. pfeifferi collected) for each group.\n\nWe discovered that if B. pfeifferi from stream habitats that were not shedding cercariae of any kind at the time of collection were then exposed to S. mansoni miracidia, surprisingly they were almost as likely to subsequently shed C. sukari as S. mansoni cercariae (p<0.001) (Figure 3a). Control snails, otherwise similar except not exposed to S. mansoni, were subsequently much less likely to shed cercariae of either species.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/50095/elife-50095-fig3-v1.jpg)\n\n**Figure 3.:** (A) Field-derived B. pfeifferi shown not to be shedding any cercariae at the time of collection were either left as unexposed controls or were exposed to S. mansoni (five miracidia/snail). Note that, unexpectedly, exposed snails were just as likely to subsequently shed C. sukari as S. mansoni cercariae compared to the control groups (p=<0.001). A few unexposed snails also shed cercariae, indicating that some of the snails had prepatent snails at the time of infection. (B) The prevalence of lab-reared B. pfeifferi exposed to various combinations of miracidia (see horizontal axis) of C. sukari and/or S. mansoni that subsequently shed cercariae of either species. Exposures to either species were with five miracidia/snail, 50 or 60 snails were used for each of 5 treatments for three separate experiments (total of 850 snails used). Separate ANOVAs were done for S. mansoni and C. sukari (each involving comparison of four groups), followed by pairwise comparisons. (C) Histological section of B. pfeifferi exposed to C. sukari for 8 days. Note the undeveloped sporocyst and the layer of hemocytes around it. (D) Histological section of B. pfeifferi exposed to S. mansoni for 8 days. The sporocyst has grown considerably and has developing daughter sporocysts within.\n\n### C. sukari and S. mansoni Experimental Exposures\n\nThree additional experiments were undertaken with laboratory-bred\u00a0F1 B. pfeifferi exposed to S. mansoni (originating from primary school children), to C. sukari (from cow dung samples collected from the banks of the streams), or to both species in various combinations (Figure 3b) and see methods. In control experiments, peak S. mansoni shedding was 7 weeks post exposure (86.7%, 92/106 surviving B. pfeifferi) and peak C. sukari shedding was at 8 weeks post exposure (0.68%, 1/114 surviving B. pfeifferi). In control experiments, S. mansoni shedding prevalence was 75.9% (63/83 surviving snails) 10 weeks post exposure and C. sukari shedding prevalence was 1.3% (1/79 of surviving snails). In the experiment \u2018Sm first then two weeks later Cs,\u2019 24.2% (16/66) surviving B. pfeifferi shed S. mansoni and 21.2% (14/66) shed C. sukari cercariae. In the experiment \u2018Cs then two weeks later Sm,\u2019 35.1% (26/74) of surviving B. pfeifferi shed C. sukari and 2.7% (2/74) shed S. mansoni cercariae. In the simultaneous experiment 9.2% (7/76) surviving B. pfeifferi shed S. mansoni and 15.8% (12/76) shed C. sukari cercariae. The results demonstrated that S. mansoni miracidia were capable of infecting B. pfeifferi on their own as expected (Mutuku et al., 2014), but C. sukari miracidia were poorly infective to B. pfeifferi on their own. From these co-exposure experiments the prevalence of B. pfeifferi shedding S. mansoni was significantly less than in the simultaneous (p=0.0478) and \u2018Cs then two weeks later Sm\u2019 experiments (p=0.0292) compared to S. mansoni controls. In comparison, C. sukari prevalence was significantly higher (p=0.0192) in the \u2018Cs then two weeks later Sm group\u2019.\n\nExamination of histological sections of B. pfeifferi taken 8 days after exposure to only C. sukari miracidia revealed the presence of sporocysts that had undergone little or no growth or development and had host hemocytes around them (Figure 3c). By contrast, S. mansoni sporocysts were much larger at the same age and germinal development was underway (Figure 3d). The success of C. sukari sporocysts in B. pfeifferi increased significantly (p=<0.0192) if S. mansoni miracidia were also allowed to infect the snails, particularly so if the S. mansoni exposures followed the exposure of snails to C. sukari. Importantly, this was accompanied by a sharp reduction in the number of snails shedding S. mansoni cercariae as compared to the snails exposed just to S. mansoni (Figure 3b).\n\nA further indication of the antagonistic interactions between the two trematode species was provided by the observation that although infections of both S. mansoni and C. sukari were common in B. pfeifferi in west Kenyan stream habitats, double infections (snails simultaneously shedding cercariae of both species) were rare, and occurred less than expected by chance (p=<0.001) (Figure 4a). Some field snails found to be naturally shedding S. mansoni cercariae would, upon further observation in the lab, permanently switch over to producing C. sukari cercariae instead. Similarly, exposure of field-collected snails shedding C. sukari cercariae to S. mansoni miracidia rarely resulted in conversion of the infections to production of S. mansoni cercariae. However, exposure of snails that were shedding S. mansoni cercariae to miracidia of C. sukari more often resulted in production of C. sukari cercariae. Lastly, our survey data also showed that numbers of S. mansoni and C. sukari infections were positively correlated (r\u00a0=\u00a00.622) (Figure 4b). This is not surprising, since C. sukari relies on S. mansoni for its own transmission.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/50095/elife-50095-fig4-v1.jpg)\n\n**Figure 4.:** (A) Graph showing the number of single infections of B. pfeifferi with either S. mansoni or C. sukari and the number of observed double infections, which was significantly fewer than the number of double infections expected by chance (p=<0.001). (B) Correlation between the abundance of S. mansoni and C. sukari infections (XY pairs\u00a0=\u00a025, Pearson r\u00a0=\u00a00.622, p=0.0009) in B. pfeifferi from our stream survey data (prevalence of each parasite from 25 collection time points).\n\n### Mathematical model\n\nTo estimate the potential impact of C. sukari on S. mansoni transmission, we developed a mechanistic mathematical model that explicitly accounts for parasite-parasite interactions within B. pfeifferi and is parameterized using values obtained from our experimental and field studies (supplementary data). In particular, our modeling framework tracks the outcomes for each parasite in the case of both simultaneous and sequential infections of B. pfeifferi with C. sukari and S. mansoni, based on survival rates from our empirical data. Furthermore, the model includes two snail size classes to account for size-dependent variation in snail survival and fecundity and cercariae output, which we have previously shown is important for accurately assessing the risk of infection to humans (Anderson et al., submitted). By varying the input of either S. mansoni or C. sukari miracidia to the model, we can examine how the relative abundance of S. mansoni to C. sukari larvae in the environment impacts the production of new parasites within the snail portion of the transmission cycle. The model predicts that the force of infection of S. mansoni, as measured by the proportion of cercariae-producing (shedding) snails, is reduced by approximately half in the presence of the antagonist C. sukari (Figure 5a). Only inputs of miracidia biased unrealistically heavily towards S. mansoni over C. sukari permit the highest numbers of S. mansoni cercariae to be produced (Figure 5b). We assume that the presence of C. sukari infections in B. pfeifferi represent \u2018lost\u2019 S. mansoni infections. Therefore, our survey results (Figure 2c) suggest that if C. sukari were absent then the prevalence of S. mansoni shedders in streams would increase by 50% or more. Also, the model predictions highlight that, dependent on the background levels of infection, there may be increases of several hundred percent of S. mansoni cercariae in the absence of C. sukari.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/50095/elife-50095-fig5-v1.jpg)\n\n**Figure 5.:** (A) At three different levels of S. mansoni prevalence in snails, the predicted reduction in prevalence of shedding snails from our transmission model due to the presence of C. sukari is estimated. In each case, the proportion of snails shedding S. mansoni is reduced by at least one half in the presence of C. sukari. (B) Relationship from model showing how S. mansoni cercariae production is maximized in this system only when the input of S. mansoni miracidia is very high relative to the input of C. sukari miracidia.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/50095/elife-50095-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Each snail class includes both juvenile and adult age groups.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/50095/elife-50095-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The impact of miracidial input levels on the proportion of snails shedding each parasite and the miracidial input levels which result in levels seen in our field data vary with B. pfeifferi exposure rates.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/50095/elife-50095-fig5-figsupp3-v1.jpg)\n\n## Discussion\n\nSchistosoma mansoni is common in sub-Saharan Africa, aided by multiple transmission options, including humans, rodents and baboons as definitive hosts and by the widespread presence of several species of Biomphalaria vector snails occupying diverse aquatic habitats. Additionally, open human defecation and inadequate sanitation ensure widespread contamination of freshwater habitats with S. mansoni eggs (Nagi et al., 2014). We discovered at least 29 additional species of digenetic trematodes cycling through wild and domestic vertebrate definitive hosts that depend on Biomphalaria snails in western Kenya, creating inevitable opportunities for interactions if the larvae of two or more species co-occur in the same snail.\n\nIn the rural settings where S. mansoni thrives, people often stand side-by-side with domestic ruminants to access water in streams or other water bodies, water that contains schistosome-infected B. pfeifferi. Domestic ruminants also predictably pass huge quantities of helminth eggs into the water, including those of C. sukari (we estimate\u00a0~10,000 eggs/cowpat). As C. sukari also develops in B. pfeifferi, a common and recurrent situation arises in which these two digenetic trematode species vie for access to their shared obligatory snail host.\n\nWe have shown that S. mansoni occupies an intermediate position in a trematode dominance hierarchy in B. pfeifferi in west Kenya and can be routinely displaced if present in co-infections by echinostomes and amphistomes, although particular species may vary in their predatory tendencies and the degree of their dominance (Hechinger et al., 2011; Garcia-Vedrenne et al., 2016). Surprisingly, even though much of the previous work focusing on interspecific trematode antagonism has been undertaken in the context of exploiting it as a potential control strategy for schistosomiasis (Combes, 1982; Moravec et al., 1974; Pointier and Jourdane, 2000; Toledo and Fried, 2011) ours is the first study undertaken in which all the species involved are extant in sub-Saharan Africa, where schistosomiasis assumes its greatest public health significance.\n\nWith respect to this hierarchy, the dominant trematodes are not the species we most commonly recovered from snails, for at least two reasons. One is that co-infections by no means inevitably occur within snails so that a species with a subordinate position is not always required to compete. This is of relevance for a species like S. mansoni occupying an intermediate hierarchical position in that it is not inevitably confronted in snails by predatory or inhibitory rediae of other species. Secondly, input of eggs from competitively dominant species like echinostomes often originates from birds (Laidemitt et al., 2019) and is likely dwarfed by the input of eggs from large definitive hosts like people, goats or cattle. This helps explain how the prevalence achieved by S. mansoni or by\u00a0C. sukari is much higher than achieved by echinostomes despite the latter\u2019s competitive dominance in snails.\n\nFrom the point of view of S. mansoni, colonizing a snail harboring a preexisting trematode infection, including even those snails infected with subordinate trematodes, is bound to interfere with its transmission to some extent. Successful infection will either be preempted by presence of a dominant species, or if take-over of a subordinate species occurs, the process likely takes weeks. In the interim, production of S. mansoni cercariae will be delayed or reduced, and the infected snail could well expire before the take-over is complete.\n\nOf the many trematodes coexisting with S. mansoni, C. sukari is most noteworthy for it is both abundant and dominant. Furthermore, the unusual facilitating effect provided to C. sukari by S. mansoni that we observed carries some provocative consequences. For example, from our experimental exposures of field-derived snails we found that B. pfeifferi were already colonized by C. sukari larvae, but the larvae were unable to complete development without a follow-up exposure to S. mansoni. This implies that most of the C. sukari infections we observed in streams represent snails that had been penetrated by S. mansoni miracidia and in which some degree of schistosome sporocyst development took place: the sporocysts were either stymied early in their development by the pre-existing presence of C. sukari larvae, or were able to develop to the point of cercariae production only to be taken over by a subsequent C. sukari infection. It is possible that other trematode species like strigeids or xiphidiocercariae may also facilitate C. sukari infections though they are much less abundant in our stream habitats than S. mansoni.\n\nBy using our empirical work to parameterize a novel mathematical model that explicitly accounts for interaction between parasites within snail hosts, we were able to quantify the role of antagonistic trematodes in field snails on the force of schistosomiasis transmission in an endemic setting. Specifically, our mathematical model predicted that C. sukari could dampen the force of transmission of S. mansoni by as much as 65 percent. The presence of C. sukari-infected cattle thereby provides a significant protective effect for humans. Furthermore, the amphistome would not persist or would persist at much lower levels without the facilitation provided by S. mansoni. Consequently, in current mass drug administration (MDA) campaigns in Kenya, treating humans with praziquantel (with presumed downstream effects on limiting S. mansoni infections in snails) would then also decrease the number of successful C. sukari infections in snails and in turn the number of cattle infected with\u00a0C. sukari. Conversely, if cattle were targeted in MDA campaigns to control Fasciola gigantica and other flukes like C. sukari, we would expect assuming no concomitant S. mansoni control, to observe an increase in the number of S. mansoni infections in snails. In particular, our model predicts at least a 40% increase (Figure 5a). The peculiar dependencies between C. sukari and S. mansoni provide an important example of how intramolluscan encounters could have significant downstream effects on the prevalence of infection of either parasite in their respective definitive hosts.\n\nThe interactions we have noted between S. mansoni and C. sukari favor the latter species, but in other contexts, including in Kenya, the presence of another amphistome species Calicophoron microbothrium in the snail Bulinus tropicus facilitates infections with the cattle schistosome Schistosoma bovis (Southgate et al., 1989). Schistosomes and amphistomes, possibly because their respective positions in the dominance hierarchy lie close together (Figure 2), clearly engage in distinctive interactions that seem to favor the colonization of a snail species that might otherwise not easily be infected.\n\nRecent transcriptional studies have indicated that S. mansoni sporocysts promote down-regulation of many B. pfeifferi immune factors, and that C. sukari transcriptomic activity may be limited without S. mansoni present (Buddenborg et al., 2017). This is suggestive that immune interference provided by S. mansoni enables larval development of C. sukari to proceed (Lim and Heyneman, 1972). This idea is supported by finding, following experimental infections of B. pfeifferi by C. sukari, intact but undeveloped mother sporocysts of C. sukari loosely surrounded by snail hemocytes, as if parasite and host were at an impasse. Furthermore, several studies in the related snail, Biomphalaria glabrata indicate S. mansoni and Echinostoma paraensei can interfere with snail defenses, thereby allowing development of particular trematode strains and species that would otherwise be doomed to fail in B. glabrata (Lie, 1982; Lie et al., 1976; Hanington et al., 2012). We also note that immune-suppression mediated by one trematode species may be a means whereby another trematode species is able to invade and colonize an otherwise incompatible snail host, thereby helping to account for high rates of snail host-switching that are a prominent feature of trematode-snail interactions (Brant and Loker, 2013) and C. sukari may exemplify this process.\n\nAlso, of interest is the mechanism whereby subsequent development of S. mansoni sporocysts is suppressed in the presence of C. sukari larvae. Is it mediated directly by predatory or secretory activities of C. sukari larvae, or indirectly via snail host responses? Our histological and in vitro encounter studies do not reveal direct evidence of predatory activity by C. sukari rediae. It also seems unlikely that if S. mansoni initially provided immune-mediated protection for C. sukari that later in the co-infection the tables would be turned such that S. mansoni rather than C. sukari would be selectively attacked by host immune responses. One possibility to pursue is that secretory/excretory products produced by C. sukari larvae interfere with development of S. mansoni sporocysts, possibly including damaging them such that they are prone to attack by hemocytes of B. pfeifferi. Identification of factors inimical to S. mansoni larval development would be of potential interest as a novel means of schistosomiasis control. We further note that in an area of hyperendemic transmission of S. mansoni in and around Lake Victoria, this predominantly human parasite is nonetheless favored by its ability to infect diverse definitive hosts and at least three taxa of ecologically distinct Biomphalaria intermediate hosts. However, S. mansoni transmission is modulated by a number of biological realities that relate both to historical patterns in animal husbandry favoring transmission of trematodes of domestic ruminants and to the presence of several wild vertebrate species that support a remarkably diverse trematode fauna. Many of these trematodes, at least 29 species in addition to S. mansoni, also depend on Biomphalaria snails for their larval development. Our results indicate that S. mansoni is in no way favored by their presence but must interact with them if found in the same snail host and can even be directly exploited by them by providing a needed facilitation effect, one that favors the continued presence and abundance of a potent competitor, the most common trematode in the system, the cattle-transmitted C. sukari.\n\nIn conclusion, the peculiar interactions we found between S. mansoni and C. sukari highlight the important role of human-modified history in dictating patterns of infectious disease. The long-term use of the same snail-containing aquatic habitats by human pastoralists and their livestock has led to a situation where the parasites of cattle have seemingly been selected to exploit the predictable and widespread presence of the human parasite S. mansoni in snails. Here we show another example of how pastoralism has shaped the nature of the parasites and diseases experienced by both humans and ruminants (Greter et al., 2017). In addition, the interspecific interactions occurring between trematodes within their vector snails can in turn have cascading effects in influencing prevalence of parasites in their definitive hosts, including humans.\n\n## Materials and methods\n\n### Field surveys and parasite assessment\n\nTo measure transmission patterns of trematode parasites in their snail hosts, we sampled six sites along a 300 m stretch of Asao Stream (\u22120.31810, 35.00690) in western Kenya every other month from January 2014-January 2018. We also sampled six sites along a 300 m stretch at Kasabong Stream (\u22120.15190, 34.33550) and two sites along the shoreline at Lake Victoria (\u22120.09410, 34.70760) from Jan 2015-Jan 2018. At the stream and shoreline sites, two people sampled for 15 min using a long-handled triangular mesh scoop, scooping the sides of rocks, plants, and the bottom of the substrate to collect snails. Water velocity and pH (Hanna Instruments pH/Conductivity/TDS High-Range Tester) measurements were also recorded. Air temperature and rainfall data were collected from the Kisumu, Kenya airport weather station. Snails were then transported back to the lab and following cleaning and sorting were individually placed into 12-well tissue culture plates with 3 ml of aged tap water. The plates were then placed in natural light for 2 hr to induce the release of cercariae (\u2018shedding\u2019). Snails were identified using an African snail key (Brown and Kristensen, 1989) and cercariae were provisionally identified using African and North American keys (Frandsen and Christensen, 1984; Schell, 1985). Some snails found to be infected with trematodes were used for experimental exposures to determine which trematodes were dominant or subordinate to S. mansoni (see below). Uninfected snails were placed into 20 L plastic aquaria and fed red leaf lettuce and then re-shed 3 weeks post-collection to determine if they had harbored prepatent trematode infections (incompletely developed infections) at the time of collection. Most cercariae from each individual shedding snail were saved in a separate 2 ml screwcap tube and preserved in 95% ethanol for later molecular analyses.\n\nBecause cryptic species commonly exist among trematodes, we employed molecular markers to more precisely differentiate species in conjunction with morphological features of the cercariae. We used both nuclear markers 28S ribosomal gene (28S) or intragenic spacer (ITS), and mitochondrial markers cytochrome oxidase 1 (cox1) or NADH dehydrogenase 1 (nad1) for this purpose. The choice of molecular markers used depended upon the number of GenBank records already available for each trematode superfamily. For example, there was a greater diversity of GenBank records for ITS than for the 28S gene for amphistomes. Genomic DNA was extracted from 1 to 3 cercariae using the Qiagen MicroKit (Qiagen, Valencia CA), with a final elution of 35 \u03bcl. PCR cycles and primers used were as reported in Laidemitt et al. (2017) for ITS and cox1 for amphistomes, Morgan and Blair (1998) for the nad1 gene for echinostomes, Tkach et al. (2016) for the 28S gene which amplifies many superfamilies of trematodes and\u00a0(Lockyer et al., 2003) for cox1 to amplify schistosomes. PCR products were purified using ExoSap-IT (Affymetrix, Santa Clara, CA).\n\nPCR amplicons were sequenced in both directions using an Applied Biosystems 3100 automated sequencer and BigDye terminator cycle sequencing kit Version 3.1 (Applied Biosystems, Foster City, CA). Sequences were edited in Sequencher 5.0 and then were aligned by eye in Mega 7 (Kumar et al., 2016) against the diversity of sequences in GenBank for each gene. More details about these methods are described in Laidemitt et al. (2017)\u00a0and Laidemitt et al. (2019). To determine species or genus to which our samples were most closely aligned, we ran pairwise comparisons in Mega 7. Operationally, we used p-distance values less than 1.5% with respect to nad1 or cox1 genes to indicate our samples corresponded to those of a single species, and values\u00a0>\u00a05% to indicate they were different species (Vilas et al., 2005).\n\n### Compatibility of Biomphalaria to S. mansoni\n\nFifty F1 Biomphalaria pfeifferi or B. choanomphala, or 60 B. sudanica were individually exposed to 5 S. mansoni miracidia from sympatric localities (Asao for B. pfeifferi, Kanyibok for B. sudanica and B. choanomphala) in 12 well cell culture plates for 6 hr and then placed into 20 L tanks and fed lettuce and shrimp pellets three times a week. Water was changed once a week. Snails were put in 12 well plates under ambient light to induce shedding once a week starting 3 weeks post exposure. Peak shedding prevalence of surviving snails, which is the number shedding Biomphalaria/surviving Biomphalaria are shown (Figure 1D). B. pfeiffieri shed the earliest (4 weeks and peaked at 6 weeks) and B. sudanica and B. choanomphala started shedding at 6 weeks and peaked at 7 weeks. Snails used in this experiment were identified by reference to the mitochondrial genomes of Biomphalaria collected from the same locality (Asao) or nearby localities (Kanyibok) and published by Zhang et al. (2018).\n\n### Experimental exposures to examine interactions between S. mansoni and the amphistome Calicophoron sukari\n\nExperiments\u00a0were set up to examine the interactions between S. mansoni and the common amphistome we provisionally identified as C. sukari (Dinnik, 1954). S. mansoni eggs were collected and pooled from five primary school children (see ethics statement below) and C. sukari eggs were harvested from cow dung samples collected along the banks of Asao stream. Eggs from both sources were concentrated using nested sieves (Mutuku et al., 2014). After the cattle dung was sieved, half of the retained egg-rich material was placed into the refrigerator as a source of C. sukari eggs for later parts of the same experiment, and the other half was placed in plastic containers and aerated in the dark for 14\u201316 days to allow the eggs to fully embryonate. Eggs were considered fully embryonated when moving miracidia were observed within the eggs.\n\nTo establish F1 B. pfeifferi for the experiment, at least 200 uninfected (screened by shedding) parental snails were collected from Asao stream or Kasabong stream and divided among five 180 L tanks for breeding. Snails were fed red leaf lettuce and shrimp pellets three times per week until eggs were laid.\n\nFifty (2014 experimental exposures) or sixty (2017 experimental exposures) 2\u20134 mm laboratory-reared F1 B. pfeifferi (parents from Kasabong stream in 2014 and parents from Asao stream in 2017) were assigned to each of the following six treatment groups: 1) sham controls (no parasite exposure, but individually placed into 12 well plates); 2) snails individually exposed to 5 S. mansoni miracidia; 3) snails individually exposed to 5 C. sukari miracidia; 4) snails individually exposed to 5 S. mansoni miracidia and two weeks later to 5 C. sukari miracidia; 5) snails individually exposed to 5 miracida of C. sukari then two weeks later to five miracidia each of S. mansoni; and 6) snails simultaneously exposed to 5 C. sukari and 5 S. mansoni miracidia. F1 snails were randomly chosen from the five 180 L tanks and placed individually into 12-well cell culture plates with 3 ml of aged tap water for the exposures. Miracidia were hatched by placing a flask or plastic container with S. mansoni or C. sukari eggs in water in ambient light. Miracidia were transferred using a glass pipette into a petri dish to facilitate enumeration and were then pipetted into the 12-well cell culture plates (five miracidia per species per well). All snails were exposed to miracidia obtained within 2 hr of hatching and were exposed for 6 hr in the 12 well plates. Snails were then placed into 20 L tanks in a screened, covered snail rearing facility subject to the diurnal light and temperature at Kisian,\u00a0Kenya. The snails were kept in 20 L tanks and were fed red leaf lettuce and shrimp pellets three times a week. Water was changed once a week.\n\nStarting at three weeks post-exposure and at weekly intervals thereafter, snails were individually placed into wells in 12-well cell culture plates with 3 ml of aged tap water for two hours between 10:00-12:00 under ambient light to determine if they would shed cercariae. Cercariae were identified according to cercariae keys (Schell, 1985) and for verification and further delineation, some cercariae were sequenced (GenBank accession numbers MN603500-MN603506). Snails were shed once a week until 10 weeks post second parasite exposure (12 weeks from initial exposure). The number of shedders and snail mortality were recorded and prevalence of infection determined as described above. This basic experimental protocol was repeated three times, in Jan 2014, Jan 2017 and Jun 2017.\n\nAn appropriate sample size was computed when the study was being designed. We used G*Power to calculate sample size with an alpha error probability of 0.05 and found our sample size was appropriate (250 to 300 for each experiment or 50 to 60 per each treatment). Differences among treatment groups with respect to infection success of experimental exposures were analyzed GraphPad Prism 7\u00a0for both S. mansoni and C. sukari using a non-parametric Kruskal-Wallis analysis of variance (ANOVA) with an alpha of 0.05, by exposure type (single parasite, and mixed species co-exposure), followed by pair-wise comparisons. In the co-exposure experiments we used shedding rates at 8 weeks post second parasite exposure (10 weeks post exposure for controls). Non-parametric tests were used because the data were not normally distributed because survivorship and infection prevalence varied among the infection groups. Prevalence of infection of each parasite per group was determined as the proportion of surviving exposed B. pfeifferi shedding cercariae.\n\n### Assessing relative dominance ranking among trematodes\n\nTwo different methods were used to reveal the trematode dominance hierarchy. The first used field-derived B. pfeifferi found to be shedding one species of cercaria. These were kept in aquaria and were shed twice a week until the snail died. A \u2018natural takeover\u2019 was recorded if the snail ceased shedding one species of cercaria and switched over to shedding a different species of cercaria (for example, B. pfeifferi was first shedding S. mansoni and later began shedding C. sukari cercariae). The second method was to obtain either field-derived B. pfeifferi shedding one type of cercaria, or to experimentally expose lab-reared B. pfeifferi to a particular species of trematode. Then, once the snails were shedding cercariae of that species, they were re-exposed to miracidia of a different species of trematode. These snails were isolated and shed twice a week starting three weeks post second exposure to learn if cercariae of the second species were produced.\n\n### Histology\n\nSnails were placed in Railliet-Henry\u2019s fluid for at least 48 hr. The shell of each snail was removed, and the body of the snail was placed into 10% neutral buffered formalin. The snails were sent to TriCore Reference Laboratories in Albuquerque, New Mexico, sectioned, and sections stained with hematoxylin and eosin.\n\n### Mathematical modeling methods\n\nWe developed a deterministic model framework, described by a system of ordinary differential equations, to evaluate the impact of C. sukari presence and transmission intensity on S. mansoni prevalence in B. pfeifferi and total S. mansoni cercarial production (Figure 5\u2014figure supplement 1 and Supplementary file 3). The model divides the B. pfeifferi snail population into two size classes (juvenile and adults) and multiple infection stages (susceptible, exposed, infected, infected and castrated) to account for the reduction in growth rates and fecundity and an increase in mortality associated with S. mansoni and C. sukari infections. It also incorporates the timing of each trematode infection (both simultaneous and sequential) on consequent S. mansoni or C. sukari cercarial output as determined by our laboratory experiments. In addition, the model includes a \u2018sink\u2019 snail population to account for the loss of miracidia (of both trematode species) when the larvae infect incompetent snail species that do not result in new cercariae. Moreover, the model explicitly tracks the loss of miracidia due to the successful infection of any snail host.\n\nThe equilibrium levels of S. mansoni and C. sukari infection were calibrated to field survey data by fixing the rate of snail exposure per miracidial density and the S. mansoni and C. sukari miracidia input into the system. Field survey data, obtained from January 2014-January 2018 at Asao stream in western Kenya, identify the proportion of B. pfeifferi shedding each trematode. These data indicate that the proportion of B. pfeifferi shedding S. mansoni was equivalent to the proportion shedding C. sukari. We set miracidial inputs and exposure rates to yield three different S. mansoni and C. sukari snail shedding regimes, at 2.5, 5 and 10 percent. The relative size of the exposure rates reflects miracidial preference for B. pfeifferi over potential sink snails from our choice chamber experiments, and the unlikely possibility of simultaneous exposure. The volume of water in the system and the overall snail density and relative abundance of B.pfeifferi and potential sink snails were obtained from snail density surveys conducted from June 2016\u00a0to\u00a0January 2018 on a 380 meter section of Asao stream. The impact of varying levels of C. sukari miracidial input into the S. mansoni transmission system at equilibrium was then evaluated with respect to the prevalence of S. mansoni infection in B. pfeifferi and the overall S. mansoni cercarial output of the snail population. The sensitivity of B. pfeifferi infection with S. mansoni and C. sukari and resulting cercarial output to miracidial input and exposure rate of B. pfeifferi per miracidial density was explored and is represented in Figure 5\u2014figure supplements 2 and 3. At the snail density we found at Asao stream the miracidial input values that resulted in equal shedding of S. mansoni and C. sukari at reasonable inputs, of between 50\u20135,000,000 miracidia per week, were only possible in certain exposure ranges. These B. pfeifferi exposure rates per miracidial density per week were primarily between 0.025 and 0.75 (Figure 5\u2014figure supplement 1). All model variables, differential equations and parameter values are also described in Supplementary files 1\u20133. All model simulations were performed in Matlab 2019a (The MathWorks Inc, Natick, MA, 2019).\n\n### Ethical approval\n\nHuman subjects were enrolled into our study to provide fecal samples containing Schistosoma mansoni eggs. We used these eggs to do our experimental exposures and to develop the dominance hierarchy. Samples were collected and pooled from five primary school children from Obuon primary school near Asao Stream, Kenya (00\u00b019\u201901\u2019 S, 035\u00b000\u201922\u2019 E). Consent forms were given and signed by the children\u2019s parents. The KEMRI Ethics Review Committee (SSC No. 2373) and the UNM Institution Review Board (IRB 821021\u20131) approved all aspects of this project involving human subjects. All children tested and found positive for S. mansoni were treated with praziquantel following standard protocols. Details of recruitment and participation of human subjects for fecal collection are described in Mutuku et al. (2014). This project was undertaken with the approval of Kenya\u2019s National Commission for Science, Technology, and Innovation (permit number NACOSTI/P/15/9609/4270), National Environment Management Authority (NEMA/AGR/46/2014) and cercariae and snails were exported with the approval of the Kenya Wildlife Service permit number 0004754.\n",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "f619b087-9e6a-4908-8d32-5a53388d6ff6",
+      "submission_id": "30c15a97-d8a9-4d13-9c7a-30d754e9db2a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jason Rohr, University of Notre Dame United States\n\nReviewers:\n- Bonnie Webster, The Natural History Museum United Kingdom\n- Giulio De Leo\n\n## Review text\n\nDOI: [10.7554/eLife.50095.sa1](https://doi.org/10.7554/eLife.50095.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nLaidemitt et al. elegantly combine observational, experimental and modeling approaches to offer new insights into how parasite interactions can enhance or decrease transmission depending on the context. They studied human and cattle flatworms, which compete for the resources in a shared snail intermediate host when humans and their domestic animals use the same aquatic habitats. The human flatworm cause the debilitating neglected tropical diseases schistosomiasis. The authors discovered that efforts aimed at reducing the transmission of human schistosomes would help to also control the cattle parasite, whereas efforts targeted at the cattle parasite would be detrimental to schistosomiasis control, thus having important implications for the management of this widespread human disease.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Antagonism between parasites within snail hosts impacts the transmission of human schistosomiasis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Neil Ferguson as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bonnie Webster (Reviewer #1); Giulio De Leo (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers and I found this to be an interesting and well-designed study. I particularly found the question important and understudied, and the findings potentially significant to schistosomiasis control. However, there are some issues that should be addressed that I do think will improve this manuscript. Please see below.\n\nEssential revisions:\n\nI received two reviews from reviewers with considerable experience in mathematical modeling of schistosomaisis. One suggested that some sensitivity and uncertainty analyses would improve the paper, and I agree. The second noticed a potential error in the model and both reviewers had concerns about model complexity. These should be addressed. Reviewer #1 raised concerns about clarity of the methods and the results. These concerns should also be addressed.\n\nReviewer #1:\n\nThis is a very interesting, important and well-executed project. It is also scientifically novel and presents some important results.\n\nMy major concern is some of the clarity of the methods and also the results read more like a discussion.\n\nFor the results, I suggest adding actually numbers rather than just an overview of the findings.\n\nThere are several important details missing from the results which are needed for clarity of the data and to see how the experiments were performed.\n\nI have detailed these areas that need changing or adding too below:\n\nSubsection \u201cField surveys and parasite assessment\u201d: Also, how were the cercariae preserved i.e. individually, pooled and in how much ethanol. Also, relate this to the extraction. Individual or pooled cercariae extracted.\n\nSubsection \u201cC. sukari and S. mansoni Experimental Exposures\u201d, paragraph two: to help the readers it would be good to have the primer and PCR details in the Materials and methods even though they are published.\n\nResults section: generally, it would be good to have more numbers and actual amounts stated. I take the example of paragraph two in subsection \u201cC. sukari and S. mansoni Experimental Exposures\u201d: \"Some field snails\u2026\", \"rarely resulted\u2026\" it would be better to have an actual number of snails. At the moment the results read more like a discussion.\n\nSubsection \u201cField surveys and parasite assessment\u201d paragraph two: add how the sequences were edited before analysis.\n\nThe final two sentences of the same paragraph: this is confusing. Can you clarify? Did you use the pairwise comparisons to determine your species or sub-species clusters or determine the actual species? Did you have reference sequences in the analysis?\n\nSubsection \u201cCompatibility of Biomphalaria to S. mansoni\u201d: in the results you do not refer to F1 snails in the experiments.\n\nIn the same section explain what you did at each exposure time. Did you record the numbers and then take those infected snails out of the experiment to get a final figure? How many weeks did you continue? Did you record deaths and how did you take these into account in your percentage infection calculations? 50 or 60 is too vague, how many were used? What is peak shedding prevalence? Also the final sentence of this subsection is actually results not methods so the structure needs changing. Also, here how were the different snails identified and how robust is that identification?\n\nIn subsection \u201cExperimental exposures to examine interactions between S. mansoni and the amphistome Calicophoron sukari\u201d: here you describe the rearing of the snails. But these lab. reared snails are used in the section above. Some restructuring is needed to allow the Materials and methods to be followed better.\n\nFinal sentence of the first paragraph in subsection \u201cExperimental exposures to examine interactions between S. mansoni and the amphistome Calicophoron sukari\u201d: is there a reference for this method?\n\nParagraph two: again 50-60 is too vague, add the actual number?\n\nIn the same paragraph is \u201cin Jan2014\u201d correct? that is a long time before the 2017 studies?\n\nHow many weeks after did you stop and were deaths recorded?\n\nHow were the cercariae identified?\n\nThere are no details on how the snails were individually exposed, in what kind of vessel, the general amount of water, for how long, how were the miracidia captured?\n\nIn the first paragraph of the same section: how do you know they are embryonated and ready for collection for the exposure experiment.\n\nSubsection \u201cAssessing relative dominance ranking among trematodes\u201d: can you add some numbers of snails that were involved. Again for subsection \u201cHistology\u201d and which exposed combinations.\n\nReviewer #2:\n\nThis is a very interesting study, combining field observations, laboratory experiments, and mathematical models, to explore mechanisms of antagonism between different species of trematodes within snail hosts and the likely impacts on the transmission of human schistosomiasis. Overall, the study was well-designed and implemented, and novel, generating new insights into complexity of S. mansoni transmission and having implications on schistosomiasis control programs.\n\nThe only major comment relates to the mathematical modeling on which an important result (removal of C. sukari would increase S. manosoni-infected snail by three-fold) was based. The mathematical model has too many parameters, given the scale (e.g. limited numbers) of both field observations and lab experiments and the degree to which the majority of parameters relied on parameter estimations, it worried me a bit about the \"uncertainty\" of the result. It might be helpful to perform sensitivity and uncertainty analyses on the model. Other than that, this is a well-done study.\n",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7be7f7dd-dadc-4cd5-af61-0a4c8b05010a",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C1",
+      "claim": "S. mansoni is impacted by cattle and wild vertebrates because of their role in supporting trematode parasites, the larvae of which have antagonistic interactions with S. mansoni in their shared Biomphalaria vector snails.",
+      "claim_type": "EXPLICIT",
+      "source": "We show S. mansoni is impacted by cattle and wild vertebrates because of their role in supporting trematode parasites, the larvae of which have antagonistic interactions with S. mansoni in their shared Biomphalaria vector snails.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing interactions between trematode species in snails, field survey data showing co-occurrence of multiple trematode species, and experimental exposures demonstrating antagonistic effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "84aa1a04-9d29-424e-abe1-c0b92d0de829",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C2",
+      "claim": "The abundant cattle trematode, Calicophoron sukari, fails to develop in Biomphalaria pfeifferi unless S. mansoni larvae are present in the same snail.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered the abundant cattle trematode, Calicophoron sukari, fails to develop in Biomphalaria pfeifferi unless S. mansoni larvae are present in the same snail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental exposure data showing C. sukari has very low infection success when exposed alone (0.68-1.3% prevalence) compared to when co-exposed with S. mansoni, and histological evidence showing undeveloped C. sukari sporocysts surrounded by hemocytes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "832ce60e-2e38-4d56-ba72-215976682721",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C3",
+      "claim": "Further development of S. mansoni is subsequently prevented by C. sukari's presence.",
+      "claim_type": "EXPLICIT",
+      "source": "Further development of S. mansoni is subsequently prevented by C. sukari's presence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing significantly reduced S. mansoni shedding prevalence in co-exposure experiments, particularly when C. sukari was introduced before or simultaneously with S. mansoni.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "3bb5cc79-de6a-4c74-80cd-b7ab4e4c1793",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C4",
+      "claim": "Removal of C. sukari would increase S. mansoni-infected snails by two-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling indicated that removal of C. sukari would increase S. mansoni-infected snails by two-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling parameterized with empirical data from field surveys and experimental exposures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "42b2f5b3-7fa9-4519-9148-338eff52630d",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C5",
+      "claim": "Predictable exploitation of aquatic habitats by humans and their cattle enable C. sukari to exploit S. mansoni, thereby limiting transmission of this human pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictable exploitation of aquatic habitats by humans and their cattle enable C. sukari to exploit S. mansoni, thereby limiting transmission of this human pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from field observations showing co-occurrence of both parasites in areas where humans and cattle share water sources, combined with experimental data showing the facilitation-antagonism relationship.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "22ac09f7-c01d-40bf-a9be-e4b9ba65d9fd",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C6",
+      "claim": "The Lake Victoria Basin is one of the largest hyperendemic areas of schistosomiasis in the world.",
+      "claim_type": "EXPLICIT",
+      "source": "S. mansoni is the most geographically widespread causative agent of intestinal schistosomiasis, and the Lake Victoria Basin is one of the largest hyperendemic areas of schistosomiasis in the world (Gouvras et al., 2017; Wiegand et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "048f5c36-c1a5-4c54-99d4-79ac88447d10",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C7",
+      "claim": "Children living in villages near the lakeshore often exhibit prevalence of S. mansoni infection of >50%, and up to 90% in some areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite repeated treatments with the anthelmintic praziquantel, children living in villages near the lakeshore often exhibit prevalence of S. mansoni infection of >50%, and up to 90% in some areas (Woodhall et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "5945741d-b1dd-4aa9-a417-80b4f7938fcb",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C8",
+      "claim": "A total of 19 species of trematodes were found among 19,914 B. pfeifferi from the perennial Asao Stream with overall prevalence of 12.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 19 species were found among 19,914 B. pfeifferi (overall prevalence 12.3%) from the perennial Asao Stream",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by field survey data collected from January 2014 to January 2018.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "68df30fb-91e8-4576-861f-1d7148d45d58",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C9",
+      "claim": "7 species of trematodes were found from 1,136 B. pfeifferi (15.5% prevalence) from the highly seasonal Kasabong stream.",
+      "claim_type": "EXPLICIT",
+      "source": "7 species from 1,136 B. pfeifferi (15.5%) from the highly seasonal Kasabong stream",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by field survey data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "54a478bf-95d5-4039-b35f-a76b5ec09514",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C10",
+      "claim": "21 species of cercariae were found from 3,369 B. sudanica (10.3% prevalence) from Lake Victoria.",
+      "claim_type": "EXPLICIT",
+      "source": "from Lake Victoria, 21 species of cercariae from 3,369 B. sudanica (10.3%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by field survey data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "dd53e91f-9a2b-4ec5-adcf-3a3eba9a322a",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C11",
+      "claim": "In aggregate, 29 trematode taxa were recovered from the study sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Some species, like S. mansoni, were recovered from all habitats, but many were habitat specific, such that in aggregate, 29 taxa were recovered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by field survey data and molecular identification of trematode species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "ce4c1687-faa3-4133-b235-60c64ac351ba",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C12",
+      "claim": "All three taxa of Biomphalaria were susceptible to S. mansoni, but B. pfeifferi was the most compatible.",
+      "claim_type": "EXPLICIT",
+      "source": "A portion of the field-collected Biomphalaria were also exposed to S. mansoni to assess compatibility and we found that all three taxa of Biomphalaria were susceptible to S. mansoni, but found that B. pfeifferi was the most compatible (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental exposure data showing different infection success rates among the three Biomphalaria taxa, with results shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "2b44bd3f-047d-452a-9c45-bb0e1046991d",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C13",
+      "claim": "At Asao, C. sukari was the most common trematode recovered from B. pfeifferi (1,035/2439 total infections, or 42.4% of all infections).",
+      "claim_type": "EXPLICIT",
+      "source": "At Asao and Kasabong, the most common trematode recovered from B. pfeifferi was the cattle-transmitted amphistome Calicophoron sukari (Laidemitt et al., 2017) (1,035/2439 total infections, or 42.4% of all infections at Asao",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by field survey data from Asao Stream.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "613643f2-72a8-48e5-b9a9-20174b9196a1",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C14",
+      "claim": "At Kasabong, C. sukari comprised 97/176 infections, or 55.1% of all infections.",
+      "claim_type": "EXPLICIT",
+      "source": "and at Kasabong 97/176, or 55.1% of all infections",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by field survey data from Kasabong stream.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "991cbf56-f875-47a5-9cdc-147811a34bb6",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C15",
+      "claim": "S. mansoni comprised 1014 of 2439 total infections at Asao or 41.6% of all infections.",
+      "claim_type": "EXPLICIT",
+      "source": "followed closely by S. mansoni (1014 of 2439 total infections at Asao or 41.6% of all infections",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by field survey data from Asao Stream.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "2aa3505d-7572-400b-aa25-b42da8c10158",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C16",
+      "claim": "At Kasabong, S. mansoni comprised 68/176 or 38.6% of all infections.",
+      "claim_type": "EXPLICIT",
+      "source": "and at Kasabong, 68/176 or 38.6% of all infections",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by field survey data from Kasabong stream.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "53a49776-cb50-4ab2-93f7-54d2dec4692b",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C17",
+      "claim": "C. sukari was not recovered from B. sudanica or B. choanomphala.",
+      "claim_type": "EXPLICIT",
+      "source": "Both species were also commonly recovered from B. pfeifferi, but C. sukari was not recovered from B. sudanica or B. choanomphala.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by field survey data showing absence of C. sukari in these two Biomphalaria species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "b577fd93-76cb-488e-a792-5a507772d862",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C18",
+      "claim": "The overall prevalence of S. mansoni infections at stream sites (5.09% and 5.89%) was much higher than from the lakeshore (0.22%).",
+      "claim_type": "EXPLICIT",
+      "source": "Also noteworthy is the overall prevalence of S. mansoni infections at stream sites (5.09% and 5.89%) was much higher than from the lakeshore (0.22%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by field survey data comparing stream and lakeshore sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "46c258b6-50ca-4859-8070-7d63dde3cb30",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C19",
+      "claim": "S. mansoni occupies an intermediate position in the dominance hierarchy at Asao Stream.",
+      "claim_type": "EXPLICIT",
+      "source": "By observing natural takeover events (Biomphalaria shedding one type of cercariae and then later shedding a different type of cercariae only) and through experimental infections, we discovered that at Asao Stream S. mansoni occupies an intermediate position in the hierarchy",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both observational data of natural takeover events and experimental superinfection studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "ecccb12b-bc81-4eca-8fdd-ca9cf890fb2b",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C20",
+      "claim": "Echinostomes and C. sukari were the more dominant species than S. mansoni in the hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "and echinostomes and C. sukari were the more dominant species (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental superinfection data and natural takeover observations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "62b7a723-1324-4d89-b722-0cc179769122",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C21",
+      "claim": "Field-derived B. pfeifferi not shedding cercariae at collection were almost as likely to subsequently shed C. sukari as S. mansoni cercariae after exposure to S. mansoni miracidia (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that if B. pfeifferi from stream habitats that were not shedding cercariae of any kind at the time of collection were then exposed to S. mansoni miracidia, surprisingly they were almost as likely to subsequently shed C. sukari as S. mansoni cercariae (p<0.001) (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental exposure data with statistical analysis showing significant results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "e47defdc-6d3d-465f-a803-18f623ecc7a5",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C22",
+      "claim": "Control snails not exposed to S. mansoni were subsequently much less likely to shed cercariae of either species.",
+      "claim_type": "EXPLICIT",
+      "source": "Control snails, otherwise similar except not exposed to S. mansoni, were subsequently much less likely to shed cercariae of either species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental control group data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "f6b597e8-4f8c-4651-9bfe-326e17f5a6f8",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C23",
+      "claim": "In control experiments with S. mansoni only, peak S. mansoni shedding was 7 weeks post exposure at 86.7% (92/106 surviving B. pfeifferi).",
+      "claim_type": "EXPLICIT",
+      "source": "In control experiments, peak S. mansoni shedding was 7 weeks post exposure (86.7%, 92/106 surviving B. pfeifferi)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental exposure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "c4a0dc6a-17b5-4418-b21d-312029f0d763",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C24",
+      "claim": "In control experiments with C. sukari only, peak C. sukari shedding was at 8 weeks post exposure at 0.68% (1/114 surviving B. pfeifferi).",
+      "claim_type": "EXPLICIT",
+      "source": "and peak C. sukari shedding was at 8 weeks post exposure (0.68%, 1/114 surviving B. pfeifferi).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental exposure data showing very low infection success of C. sukari alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "d871a51e-e54a-4d48-9287-05b9d08d3737",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C25",
+      "claim": "In the 'Sm first then two weeks later Cs' experiment, 24.2% (16/66) surviving B. pfeifferi shed S. mansoni and 21.2% (14/66) shed C. sukari cercariae.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiment 'Sm first then two weeks later Cs,' 24.2% (16/66) surviving B. pfeifferi shed S. mansoni and 21.2% (14/66) shed C. sukari cercariae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental co-exposure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "5221bdd3-5684-42d9-ae9f-9ec73a97ab29",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C26",
+      "claim": "In the 'Cs then two weeks later Sm' experiment, 35.1% (26/74) of surviving B. pfeifferi shed C. sukari and 2.7% (2/74) shed S. mansoni cercariae.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiment 'Cs then two weeks later Sm,' 35.1% (26/74) of surviving B. pfeifferi shed C. sukari and 2.7% (2/74) shed S. mansoni cercariae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental co-exposure data showing C. sukari dominance when introduced first.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "95f664f6-9b6b-4f1f-bd60-d54f4e0706e1",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C27",
+      "claim": "In the simultaneous exposure experiment, 9.2% (7/76) surviving B. pfeifferi shed S. mansoni and 15.8% (12/76) shed C. sukari cercariae.",
+      "claim_type": "EXPLICIT",
+      "source": "In the simultaneous experiment 9.2% (7/76) surviving B. pfeifferi shed S. mansoni and 15.8% (12/76) shed C. sukari cercariae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental co-exposure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "4a77d868-b09f-47a5-9cbd-26aceb3e6d16",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C28",
+      "claim": "S. mansoni miracidia were capable of infecting B. pfeifferi on their own as expected.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated that S. mansoni miracidia were capable of infecting B. pfeifferi on their own as expected (Mutuku et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "4a146ab4-3423-442c-a07b-ede1937d9769",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C29",
+      "claim": "C. sukari miracidia were poorly infective to B. pfeifferi on their own.",
+      "claim_type": "EXPLICIT",
+      "source": "but C. sukari miracidia were poorly infective to B. pfeifferi on their own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental exposure data showing very low infection rates (0.68-1.3%) in control groups exposed only to C. sukari.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "000fc568-7a2f-49ba-9bb6-495df0a3c927",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C30",
+      "claim": "The prevalence of B. pfeifferi shedding S. mansoni was significantly less in the simultaneous (p=0.0478) and 'Cs then two weeks later Sm' experiments (p=0.0292) compared to S. mansoni controls.",
+      "claim_type": "EXPLICIT",
+      "source": "From these co-exposure experiments the prevalence of B. pfeifferi shedding S. mansoni was significantly less than in the simultaneous (p=0.0478) and 'Cs then two weeks later Sm' experiments (p=0.0292) compared to S. mansoni controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "10c081cb-a9c0-4597-9a58-e8862b811681",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C31",
+      "claim": "C. sukari prevalence was significantly higher (p=0.0192) in the 'Cs then two weeks later Sm group'.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, C. sukari prevalence was significantly higher (p=0.0192) in the 'Cs then two weeks later Sm group'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "77f574e2-e0a0-4919-ab18-1090f15ebfd9",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C32",
+      "claim": "Histological sections of B. pfeifferi taken 8 days after exposure to only C. sukari miracidia revealed the presence of sporocysts that had undergone little or no growth or development and had host hemocytes around them.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of histological sections of B. pfeifferi taken 8 days after exposure to only C. sukari miracidia revealed the presence of sporocysts that had undergone little or no growth or development and had host hemocytes around them (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological examination data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "42353cbd-77c9-4a08-ac78-b323d7f88886",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C33",
+      "claim": "S. mansoni sporocysts were much larger at 8 days post-exposure than C. sukari sporocysts and germinal development was underway.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, S. mansoni sporocysts were much larger at the same age and germinal development was underway (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological examination data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "663cda2a-4a99-4ade-aaf7-9198c8135e99",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C34",
+      "claim": "The success of C. sukari sporocysts in B. pfeifferi increased significantly (p=<0.0192) if S. mansoni miracidia were also allowed to infect the snails, particularly so if the S. mansoni exposures followed the exposure of snails to C. sukari.",
+      "claim_type": "EXPLICIT",
+      "source": "The success of C. sukari sporocysts in B. pfeifferi increased significantly (p=<0.0192) if S. mansoni miracidia were also allowed to infect the snails, particularly so if the S. mansoni exposures followed the exposure of snails to C. sukari.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental co-exposure data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "b8f9807a-d786-4ff8-a491-7a59ebe38677",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C35",
+      "claim": "The increased success of C. sukari in co-infections was accompanied by a sharp reduction in the number of snails shedding S. mansoni cercariae as compared to the snails exposed just to S. mansoni.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this was accompanied by a sharp reduction in the number of snails shedding S. mansoni cercariae as compared to the snails exposed just to S. mansoni (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "a5f6d025-274f-4e6d-b1bb-1caed7cf0749",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C36",
+      "claim": "Double infections (snails simultaneously shedding cercariae of both S. mansoni and C. sukari species) were rare, and occurred less than expected by chance (p=<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "A further indication of the antagonistic interactions between the two trematode species was provided by the observation that although infections of both S. mansoni and C. sukari were common in B. pfeifferi in west Kenyan stream habitats, double infections (snails simultaneously shedding cercariae of both species) were rare, and occurred less than expected by chance (p=<0.001) (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by field survey data with statistical analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "9597176f-2e66-44f0-9cb2-2a897a0eb7ee",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C37",
+      "claim": "Numbers of S. mansoni and C. sukari infections were positively correlated (r = 0.622).",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, our survey data also showed that numbers of S. mansoni and C. sukari infections were positively correlated (r = 0.622) (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by field survey data with correlation analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "d604a4d0-878f-4853-a5e9-f45efe738551",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C38",
+      "claim": "The mathematical model predicts that the force of infection of S. mansoni, as measured by the proportion of cercariae-producing (shedding) snails, is reduced by approximately half in the presence of the antagonist C. sukari.",
+      "claim_type": "EXPLICIT",
+      "source": "The model predicts that the force of infection of S. mansoni, as measured by the proportion of cercariae-producing (shedding) snails, is reduced by approximately half in the presence of the antagonist C. sukari (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mathematical modeling parameterized with empirical data, with results shown in Figure 5a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "d7888f10-cb6f-4cac-b6cc-dc23a40e188d",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C39",
+      "claim": "If C. sukari were absent then the prevalence of S. mansoni shedders in streams would increase by 50% or more.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our survey results (Figure 2c) suggest that if C. sukari were absent then the prevalence of S. mansoni shedders in streams would increase by 50% or more.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from survey data and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "37db6436-61bf-4139-8259-6b236dd6317b",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C40",
+      "claim": "The model predictions highlight that, dependent on the background levels of infection, there may be increases of several hundred percent of S. mansoni cercariae in the absence of C. sukari.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the model predictions highlight that, dependent on the background levels of infection, there may be increases of several hundred percent of S. mansoni cercariae in the absence of C. sukari.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "2cbdd136-368f-4da5-a6bb-5c8188c62df1",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C41",
+      "claim": "Humans are the most important definitive host in maintaining S. mansoni transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to mammalian definitive hosts, humans are certainly the most important in maintaining transmission (Colley et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "3573c7ee-0f3a-49da-b2a9-4d17b6296d73",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C42",
+      "claim": "Baboons and common rodents like Mastomys natalensis can also play a role in S. mansoni transmission and may assume greater significance in ongoing chemotherapy-based control programs targeting human transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "but baboons and common rodents like Mastomys natalensis can also play a role and may assume greater significance in ongoing chemotherapy-based control programs targeting human transmission (Hanelt et al., 2010; Catalano et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "a11255dd-9120-4ade-9463-3fc0774e1f7f",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C43",
+      "claim": "S. mansoni in and around Lake Victoria infects three Biomphalaria taxa that exist in different habitats: B. pfeifferi in streams and small impoundments, B. sudanica along the lakeshore, and B. choanomphala in deeper water.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, S. mansoni in and around the lake also infects three Biomphalaria taxa that exist in different habitats. Schistosoma mansoni eggs are passed into aquatic habitats in human feces. A miracidium hatches from an egg and if successful in finding and penetrating a Biomphalaria snail, then initiates a long-term, proliferative period of asexual development. This development culminates in the production of human-infective cercariae which are released or 'shed' into the surrounding water. These obligatory vector hosts include B. pfeifferi in streams and small impoundments, B. sudanica along the lakeshore, and B. choanomphala, now generally considered to be a distinct ecophenotype of B. sudanica, found especially but not exclusively in deeper water (Magendantz, 1972; Standley et al., 2011; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature and field observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "33b53019-44b2-4c2b-8ee8-c87e2372df03",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C44",
+      "claim": "All three Biomphalaria species (B. pfeifferi, B. sudanica, and B. choanomphala) have been found naturally infected with S. mansoni.",
+      "claim_type": "EXPLICIT",
+      "source": "All three species have been found naturally infected with S. mansoni, (Magendantz, 1972; Standley et al., 2011; Mutuku et al., 2017; Mutuku et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature including field studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "9d4fa089-e51d-4c31-87ec-161d6feed15c",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C45",
+      "claim": "Rediae possess a mouth surrounded by a powerful sucker, and a gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Some like S. mansoni develop sac-like sporocysts, whereas others produce rediae possessing a mouth surrounded by a powerful sucker, and a gut (Schell, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to established parasitology literature describing trematode morphology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "cd227f87-0817-40d2-a72a-a1f46d43ea24",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C46",
+      "claim": "Rediae can move within the snail and may ingest host tissue, including gonadal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Rediae can move within the snail and may ingest host tissue, including gonadal tissue (Lim and Lie, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "509f0597-053c-4f49-847b-07d62a4d9a7c",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C47",
+      "claim": "The rediae of echinostomes tend to be dominant in intramolluscan interactions, with some echinostome species able to produce small, motile rediae specialized for attacking and killing larvae of other trematodes species, including S. mansoni sporocysts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the rediae of echinostomes (Echinostomatoidea) in particular tend to be dominant in intramolluscan interactions, with some echinostome species able to produce small, motile rediae specialized for attacking and killing larvae of other trematodes species, including S. mansoni sporocysts (Lim and Heyneman, 1972; Moravec et al., 1974; Hechinger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature on trematode interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "b41c5248-f09f-40c6-9b69-f13e81551241",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C48",
+      "claim": "Amphistome trematodes produce rediae, and these tend to have more complex antagonistic or facilitation interactions with other trematodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Amphistome trematodes (Paramphistomoidea) also produce rediae, and these tend to have more complex antagonistic or facilitation interactions with other trematodes (Southgate et al., 1989; Spatz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "a535c396-c7d0-4aef-a414-02c9fbebba87",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C49",
+      "claim": "Sporocyst-producing species including strigeids and schistosomes have more subtle indirect antagonistic effects on larvae of other trematodes mediated by as yet uncharacterized soluble factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Sporocyst-producing species including strigeids and schistosomes have also been shown to have more subtle indirect antagonistic effects on larvae of other trematodes mediated by as yet uncharacterized soluble factors (Basch et al., 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "4641c9c4-9b24-499b-9276-15d2d9560b75",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C50",
+      "claim": "Amphistomes of domestic ruminants like C. sukari were more commonly recovered from B. pfeifferi from stream sites whereas echinostomes, mostly transmitted by birds, were more likely to be recovered from B. sudanica from the lakeshore.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, amphistomes of domestic ruminants like C. sukari were more commonly recovered from B. pfeifferi from stream sites whereas echinostomes, mostly transmitted by birds (Laidemitt et al., 2019), were more likely to be recovered from B. sudanica from the lakeshore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by field survey data and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "0044a2e7-bc00-43d6-9c1c-23cf8a6ad577",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C51",
+      "claim": "C. sukari relies on S. mansoni for its own transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not surprising, since C. sukari relies on S. mansoni for its own transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental data showing C. sukari requires S. mansoni for successful infection of B. pfeifferi.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "964d8e16-e0e8-4b40-8a93-5e7137022efc",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C52",
+      "claim": "Most of the C. sukari infections observed in streams represent snails that had been penetrated by S. mansoni miracidia and in which some degree of schistosome sporocyst development took place.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that most of the C. sukari infections we observed in streams represent snails that had been penetrated by S. mansoni miracidia and in which some degree of schistosome sporocyst development took place: the sporocysts were either stymied early in their development by the pre-existing presence of C. sukari larvae, or were able to develop to the point of cercariae production only to be taken over by a subsequent C. sukari infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental exposure data and field observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "de389f44-65bc-4c48-b793-da2a4a66c9fb",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C53",
+      "claim": "The mathematical model predicted that C. sukari could dampen the force of transmission of S. mansoni by as much as 65 percent.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, our mathematical model predicted that C. sukari could dampen the force of transmission of S. mansoni by as much as 65 percent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "2a3858a3-4280-4d5b-a8e5-b6648b468239",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C54",
+      "claim": "The amphistome C. sukari would not persist or would persist at much lower levels without the facilitation provided by S. mansoni.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the amphistome would not persist or would persist at much lower levels without the facilitation provided by S. mansoni.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from experimental data showing C. sukari's dependence on S. mansoni for successful infection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "5cb402fb-f9a7-4d96-982d-c86ef65821b6",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C55",
+      "claim": "In current mass drug administration (MDA) campaigns in Kenya, treating humans with praziquantel would decrease the number of successful C. sukari infections in snails and in turn the number of cattle infected with C. sukari.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, in current mass drug administration (MDA) campaigns in Kenya, treating humans with praziquantel (with presumed downstream effects on limiting S. mansoni infections in snails) would then also decrease the number of successful C. sukari infections in snails and in turn the number of cattle infected with C. sukari.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the facilitation relationship between S. mansoni and C. sukari demonstrated experimentally.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "4b698279-acbf-4261-93d6-e79b9395089e",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C56",
+      "claim": "If cattle were targeted in MDA campaigns to control Fasciola gigantica and other flukes like C. sukari, assuming no concomitant S. mansoni control, an increase in the number of S. mansoni infections in snails would be expected, with the model predicting at least a 40% increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, if cattle were targeted in MDA campaigns to control Fasciola gigantica and other flukes like C. sukari, we would expect assuming no concomitant S. mansoni control, to observe an increase in the number of S. mansoni infections in snails. In particular, our model predicts at least a 40% increase (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from modeling results shown in Figure 5a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "be18a005-aadb-485d-860d-12936fd6233e",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C57",
+      "claim": "Recent transcriptional studies have indicated that S. mansoni sporocysts promote down-regulation of many B. pfeifferi immune factors, and that C. sukari transcriptomic activity may be limited without S. mansoni present.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent transcriptional studies have indicated that S. mansoni sporocysts promote down-regulation of many B. pfeifferi immune factors, and that C. sukari transcriptomic activity may be limited without S. mansoni present (Buddenborg et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published transcriptomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "a1b8471b-c69e-4a77-b4d2-b6e532a410c4",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C58",
+      "claim": "Immune interference provided by S. mansoni enables larval development of C. sukari to proceed.",
+      "claim_type": "EXPLICIT",
+      "source": "This is suggestive that immune interference provided by S. mansoni enables larval development of C. sukari to proceed (Lim and Heyneman, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from transcriptomic data and histological observations, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "cdfbfcb9-a0d1-4461-aaee-20e5bcdcd17f",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C59",
+      "claim": "S. mansoni and Echinostoma paraensei can interfere with Biomphalaria glabrata defenses, thereby allowing development of particular trematode strains and species that would otherwise be doomed to fail in B. glabrata.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, several studies in the related snail, Biomphalaria glabrata indicate S. mansoni and Echinostoma paraensei can interfere with snail defenses, thereby allowing development of particular trematode strains and species that would otherwise be doomed to fail in B. glabrata (Lie, 1982; Lie et al., 1976; Hanington et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature on immune interference in related snail species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "84547ef7-4f13-4a8d-983d-9f3aa8523ec8",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C60",
+      "claim": "Immune-suppression mediated by one trematode species may be a means whereby another trematode species is able to invade and colonize an otherwise incompatible snail host, thereby helping to account for high rates of snail host-switching that are a prominent feature of trematode-snail interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that immune-suppression mediated by one trematode species may be a means whereby another trematode species is able to invade and colonize an otherwise incompatible snail host, thereby helping to account for high rates of snail host-switching that are a prominent feature of trematode-snail interactions (Brant and Loker, 2013) and C. sukari may exemplify this process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed facilitation effect and citation to literature on host-switching.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "c06dabee-b6c7-41e5-9da3-20d5777611f3",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C61",
+      "claim": "S. mansoni is favored by its ability to infect diverse definitive hosts and at least three taxa of ecologically distinct Biomphalaria intermediate hosts in the hyperendemic transmission area around Lake Victoria.",
+      "claim_type": "EXPLICIT",
+      "source": "We further note that in an area of hyperendemic transmission of S. mansoni in and around Lake Victoria, this predominantly human parasite is nonetheless favored by its ability to infect diverse definitive hosts and at least three taxa of ecologically distinct Biomphalaria intermediate hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from field survey data showing multiple host species and experimental compatibility studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "e01d1ee0-a460-4413-9dda-e8369bfcd910",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C62",
+      "claim": "The long-term use of the same snail-containing aquatic habitats by human pastoralists and their livestock has led to a situation where the parasites of cattle have seemingly been selected to exploit the predictable and widespread presence of the human parasite S. mansoni in snails.",
+      "claim_type": "EXPLICIT",
+      "source": "The long-term use of the same snail-containing aquatic habitats by human pastoralists and their livestock has led to a situation where the parasites of cattle have seemingly been selected to exploit the predictable and widespread presence of the human parasite S. mansoni in snails.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed facilitation relationship and evolutionary reasoning about co-occurrence patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "8f046a86-f24a-4ace-a48c-0db9a5f083f4",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C63",
+      "claim": "Pastoralism has shaped the nature of the parasites and diseases experienced by both humans and ruminants.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show another example of how pastoralism has shaped the nature of the parasites and diseases experienced by both humans and ruminants (Greter et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the study's findings and citation to literature on pastoralism and disease.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "dd0d7d2b-69c9-4c42-b2bd-df07355c0578",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C64",
+      "claim": "The interspecific interactions occurring between trematodes within their vector snails can have cascading effects in influencing prevalence of parasites in their definitive hosts, including humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the interspecific interactions occurring between trematodes within their vector snails can in turn have cascading effects in influencing prevalence of parasites in their definitive hosts, including humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the modeling results showing how within-snail interactions affect transmission to humans.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "787f45c0-74c0-4f8e-84de-7990164c6148",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C65",
+      "claim": "Molecular markers (28S ribosomal gene, intragenic spacer ITS, cytochrome oxidase 1 cox1, and NADH dehydrogenase 1 nad1) were used to differentiate trematode species in conjunction with morphological features of the cercariae.",
+      "claim_type": "EXPLICIT",
+      "source": "Because cryptic species commonly exist among trematodes, we employed molecular markers to more precisely differentiate species in conjunction with morphological features of the cercariae. We used both nuclear markers 28S ribosomal gene (28S) or intragenic spacer (ITS), and mitochondrial markers cytochrome oxidase 1 (cox1) or NADH dehydrogenase 1 (nad1) for this purpose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "86ce0829-8c41-4ea3-a6e3-239ea3e0d0ae",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C66",
+      "claim": "P-distance values less than 1.5% with respect to nad1 or cox1 genes were used to indicate samples corresponded to a single species, and values > 5% to indicate they were different species.",
+      "claim_type": "EXPLICIT",
+      "source": "Operationally, we used p-distance values less than 1.5% with respect to nad1 or cox1 genes to indicate our samples corresponded to those of a single species, and values > 5% to indicate they were different species (Vilas et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the operational criteria used for species identification, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "73a0ee8d-1c55-459b-86aa-3df14387b4b3",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C67",
+      "claim": "B. pfeifferi shed S. mansoni cercariae the earliest (4 weeks) and peaked at 6 weeks post-exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "B. pfeiffieri shed the earliest (4 weeks and peaked at 6 weeks)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental exposure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "b624106b-3a56-4e78-aeb0-24b4edfb1330",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C68",
+      "claim": "B. sudanica and B. choanomphala started shedding S. mansoni cercariae at 6 weeks and peaked at 7 weeks post-exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "and B. sudanica and B. choanomphala started shedding at 6 weeks and peaked at 7 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental exposure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "703d3c72-26b9-4c41-b3b5-db1c3b7f6061",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C69",
+      "claim": "S. mansoni eggs were collected and pooled from five primary school children.",
+      "claim_type": "EXPLICIT",
+      "source": "S. mansoni eggs were collected and pooled from five primary school children (see ethics statement below)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the source of parasite material used in experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "6551be2d-ee12-481f-b578-f31c0bab3c44",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C70",
+      "claim": "C. sukari eggs were harvested from cow dung samples collected along the banks of Asao stream.",
+      "claim_type": "EXPLICIT",
+      "source": "and C. sukari eggs were harvested from cow dung samples collected along the banks of Asao stream.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the source of parasite material used in experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "9a399654-68e7-46c1-942c-fba5c2de9f6e",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C71",
+      "claim": "An estimated ~10,000 C. sukari eggs are present per cowpat.",
+      "claim_type": "EXPLICIT",
+      "source": "Domestic ruminants also predictably pass huge quantities of helminth eggs into the water, including those of C. sukari (we estimate ~10,000 eggs/cowpat).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on estimation from field observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "751bf235-45aa-4f63-8fd2-67d8a1cd335a",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C72",
+      "claim": "The model explicitly tracks the outcomes for each parasite in the case of both simultaneous and sequential infections of B. pfeifferi with C. sukari and S. mansoni, based on survival rates from empirical data.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our modeling framework tracks the outcomes for each parasite in the case of both simultaneous and sequential infections of B. pfeifferi with C. sukari and S. mansoni, based on survival rates from our empirical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the mathematical modeling approach used in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "df559603-fa72-4e51-bbce-a4bde5dcf627",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C73",
+      "claim": "The model includes two snail size classes to account for size-dependent variation in snail survival and fecundity and cercariae output.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the model includes two snail size classes to account for size-dependent variation in snail survival and fecundity and cercariae output, which we have previously shown is important for accurately assessing the risk of infection to humans (Anderson et al., submitted).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a feature of the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "facb045d-2778-4826-a1ee-54c59fee5bd2",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "claim_id": "C74",
+      "claim": "The model includes a 'sink' snail population to account for the loss of miracidia when the larvae infect incompetent snail species that do not result in new cercariae.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the model includes a 'sink' snail population to account for the loss of miracidia (of both trematode species) when the larvae infect incompetent snail species that do not result in new cercariae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a feature of the mathematical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5cf3354c-6507-4948-a819-0a53634dfcb7",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Field surveys identified 29 trematode taxa across three Biomphalaria species in western Kenya, with C. sukari and S. mansoni being the most abundant parasites in B. pfeifferi from stream sites (42-55% and 39-42% of infections respectively), while C. sukari was absent from B. sudanica and B. choanomphala. S. mansoni prevalence was much higher in streams (5-6%) than at the lakeshore (0.22%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C18 and C50 provide comprehensive field survey data collected over 4 years from multiple sites with large sample sizes (>24,000 snails total). The data consistently show species distributions, prevalence rates, and habitat associations with appropriate molecular and morphological identification methods (C65-C66). The findings are internally consistent and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "37991143-bf39-4a70-914a-dcec1f61725a",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All three Biomphalaria taxa (B. pfeifferi, B. sudanica, and B. choanomphala) are susceptible to S. mansoni infection, with B. pfeifferi showing the highest compatibility and earliest shedding (peak at 6 weeks), while B. sudanica and B. choanomphala peaked at 7 weeks post-exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C67-C68 are supported by experimental exposure data with adequate sample sizes (50-60 snails per group). Claims C43-C44 are supported by both citations to published literature and field observations. The compatibility differences among species are clearly demonstrated with temporal dynamics documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "df99127a-843b-413e-88cd-4e620a9c75a6",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "S. mansoni occupies an intermediate position in the trematode dominance hierarchy in B. pfeifferi, with echinostomes and C. sukari being more dominant species capable of displacing S. mansoni infections through natural takeover events and experimental superinfections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 are supported by both natural takeover observations and experimental superinfection studies documented in Figure 2. Claims C47-C48 provide mechanistic context from cited literature. The hierarchy is established through multiple lines of evidence including field observations and controlled experiments, though the exact mechanisms remain partially characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "f7f69ddd-eeb0-4a34-84ce-84f2ab9dec00",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "C. sukari fails to develop effectively in B. pfeifferi when exposed alone (0.68-1.3% infection success), but field-derived snails exposed to S. mansoni were almost as likely to subsequently shed C. sukari as S. mansoni cercariae (p<0.001). Histological examination revealed undeveloped C. sukari sporocysts surrounded by hemocytes at 8 days post-exposure when exposed alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C21-C22, C24, C29, C32, and C34 are strongly supported by converging experimental evidence including exposure experiments with appropriate controls, statistical analysis (p<0.001, p<0.0192), and histological data (Figure 3c). The facilitation effect is demonstrated through multiple experimental approaches with adequate sample sizes and replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "198c5840-9fd4-4311-b32f-449fd920c7f1",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "C. sukari presence significantly reduces S. mansoni transmission success in co-infection experiments. When C. sukari was introduced before S. mansoni, only 2.7% of snails shed S. mansoni compared to 86.7% in S. mansoni-only controls (p=0.0292). C. sukari prevalence was significantly higher (35.1%, p=0.0192) when introduced before S. mansoni.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C23, C25-C27, C30-C31, and C35 are supported by well-designed experimental exposures with multiple treatment groups (n=50-60 per group), appropriate controls, statistical analysis, and three independent replications (2014, 2017 twice). The timing-dependent effects are clearly demonstrated with significant p-values and adequate sample sizes calculated using G*Power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "25e1d110-f650-4671-9c92-68f9ed42561c",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "S. mansoni sporocysts were much larger than C. sukari sporocysts at 8 days post-exposure with germinal development underway, suggesting that immune interference provided by S. mansoni enables C. sukari larval development to proceed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is directly supported by histological data (Figure 3d) showing developmental differences. Claim C58 is a reasonable inference based on the histological observations, transcriptomic data from cited literature (C57), and the facilitation effect demonstrated experimentally, though the exact mechanism remains to be fully elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "1d65a012-d2e0-4dfb-9f81-f6135eaa894b",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Double infections (snails simultaneously shedding both S. mansoni and C. sukari) were rare and occurred less than expected by chance (p<0.001), yet the numbers of S. mansoni and C. sukari infections were positively correlated (r=0.622), indicating that C. sukari relies on S. mansoni for its own transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by field survey data with statistical analysis showing both the rarity of double infections and positive correlation. Claim C51 is a logical inference from the experimental facilitation data (C2, C34) and field observations. The apparent paradox (positive correlation but rare co-shedding) is explained by the temporal dynamics of facilitation followed by competitive exclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "6ea4c5f5-84c0-42eb-88ff-4af4387a1af6",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mathematical modeling parameterized with empirical data predicts that C. sukari reduces S. mansoni force of infection by approximately 50% (up to 65%), and removal of C. sukari would increase S. mansoni-infected snails by at least two-fold, with potential increases of several hundred percent depending on background infection levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C38-C40, C53, and C72-C74 are supported by a mechanistic mathematical model explicitly incorporating empirical parameters from field surveys and experimental exposures. The model accounts for size-dependent variation, sequential/simultaneous infections, and sink populations. However, the model predictions depend on parameter estimates and assumptions that could benefit from sensitivity analysis beyond what is shown in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "3d3cf0dc-3288-43fb-afe2-c4eab66e998c",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The predictable co-occurrence of humans and cattle at aquatic habitats has led to an evolutionary situation where C. sukari exploits the widespread presence of S. mansoni in snails for its own transmission, thereby creating cascading effects that limit S. mansoni transmission to humans. Most C. sukari infections in streams represent snails previously penetrated by S. mansoni miracidia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C5 synthesize the major findings and are well-supported by the experimental and field data. Claims C52, C54, C61, and C64 are reasonable inferences from the demonstrated facilitation-antagonism relationship. Claims C62-C63 involve evolutionary speculation that, while plausible given the data, extend beyond what can be definitively concluded from the current study. The cascading effects are supported by modeling (C64).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "c398bd6e-a011-486a-981a-0441fec9fb70",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mass drug administration (MDA) targeting humans with praziquantel would decrease C. sukari infections in cattle, while conversely, treating cattle to control flukes like C. sukari without concomitant S. mansoni control would increase S. mansoni infections in snails by at least 40%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C56 are logical predictions based on the demonstrated facilitation-antagonism relationship and modeling results (Figure 5a). However, these are untested hypotheses about intervention outcomes that assume the relationship holds under MDA conditions and that there are no compensatory mechanisms or confounding factors. Field validation of these predictions would be needed to confirm these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "69d9f976-3ebb-43f0-a91e-6101dcb923b8",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Transcriptomic studies indicate S. mansoni sporocysts down-regulate B. pfeifferi immune factors, and immune-suppression mediated by one trematode species may enable another species to colonize an otherwise incompatible snail host, potentially explaining high rates of host-switching in trematode-snail interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 is supported by citation to published transcriptomic work. Claim C59 is supported by multiple citations to studies in related snail species (B. glabrata). Claim C60 is a reasonable mechanistic hypothesis connecting immune interference to host-switching patterns, supported by citations and the C. sukari facilitation data, though it remains somewhat speculative regarding the evolutionary implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "58b6d3a3-0bf7-432c-9505-0979d9e19b90",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background context on schistosomiasis epidemiology in the Lake Victoria Basin and trematode biology, including that the region is hyperendemic with child infection prevalence >50-90%, humans are the most important definitive host, and different trematode larval forms have distinct morphologies and interaction mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C41-C42, C45-C46, and C49 provide established background information supported by appropriate citations to published literature. These claims establish the epidemiological and biological context for the study but do not represent novel findings from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    },
+    {
+      "id": "8734a7c8-f3cf-4958-8118-9cf282e80324",
+      "content_id": "e11c4150-d397-4634-94ae-fe8d80e6282a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details including the use of molecular markers (28S, ITS, cox1, nad1) with p-distance thresholds (<1.5% for same species, >5% for different species) for species identification, and parasite material sources (S. mansoni eggs from five school children, C. sukari eggs from cow dung with ~10,000 eggs/cowpat).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 describe appropriate molecular methods with established criteria cited from literature (Vilas et al., 2005). Claims C69-C71 document parasite sources with ethical approval. Claim C71 is an estimate rather than precise measurement but provides useful context for understanding environmental parasite loads. These methodological details are adequately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:01:56.307894Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5945741d-b1dd-4aa9-a417-80b4f7938fcb",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "68df30fb-91e8-4576-861f-1d7148d45d58",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "54a478bf-95d5-4039-b35f-a76b5ec09514",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "dd53e91f-9a2b-4ec5-adcf-3a3eba9a322a",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "2b44bd3f-047d-452a-9c45-bb0e1046991d",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "613643f2-72a8-48e5-b9a9-20174b9196a1",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "991cbf56-f875-47a5-9cdc-147811a34bb6",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "2aa3505d-7572-400b-aa25-b42da8c10158",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "53a49776-cb50-4ab2-93f7-54d2dec4692b",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "b577fd93-76cb-488e-a792-5a507772d862",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "4641c9c4-9b24-499b-9276-15d2d9560b75",
+      "result_id": "5cf3354c-6507-4948-a819-0a53634dfcb7"
+    },
+    {
+      "claim_id": "ce4c1687-faa3-4133-b235-60c64ac351ba",
+      "result_id": "37991143-bf39-4a70-914a-dcec1f61725a"
+    },
+    {
+      "claim_id": "a11255dd-9120-4ade-9463-3fc0774e1f7f",
+      "result_id": "37991143-bf39-4a70-914a-dcec1f61725a"
+    },
+    {
+      "claim_id": "33b53019-44b2-4c2b-8ee8-c87e2372df03",
+      "result_id": "37991143-bf39-4a70-914a-dcec1f61725a"
+    },
+    {
+      "claim_id": "73a0ee8d-1c55-459b-86aa-3df14387b4b3",
+      "result_id": "37991143-bf39-4a70-914a-dcec1f61725a"
+    },
+    {
+      "claim_id": "b624106b-3a56-4e78-aeb0-24b4edfb1330",
+      "result_id": "37991143-bf39-4a70-914a-dcec1f61725a"
+    },
+    {
+      "claim_id": "46c258b6-50ca-4859-8070-7d63dde3cb30",
+      "result_id": "df99127a-843b-413e-88cd-4e620a9c75a6"
+    },
+    {
+      "claim_id": "ecccb12b-bc81-4eca-8fdd-ca9cf890fb2b",
+      "result_id": "df99127a-843b-413e-88cd-4e620a9c75a6"
+    },
+    {
+      "claim_id": "509f0597-053c-4f49-847b-07d62a4d9a7c",
+      "result_id": "df99127a-843b-413e-88cd-4e620a9c75a6"
+    },
+    {
+      "claim_id": "b41c5248-f09f-40c6-9b69-f13e81551241",
+      "result_id": "df99127a-843b-413e-88cd-4e620a9c75a6"
+    },
+    {
+      "claim_id": "84aa1a04-9d29-424e-abe1-c0b92d0de829",
+      "result_id": "f7f69ddd-eeb0-4a34-84ce-84f2ab9dec00"
+    },
+    {
+      "claim_id": "62b7a723-1324-4d89-b722-0cc179769122",
+      "result_id": "f7f69ddd-eeb0-4a34-84ce-84f2ab9dec00"
+    },
+    {
+      "claim_id": "e47defdc-6d3d-465f-a803-18f623ecc7a5",
+      "result_id": "f7f69ddd-eeb0-4a34-84ce-84f2ab9dec00"
+    },
+    {
+      "claim_id": "c4a0dc6a-17b5-4418-b21d-312029f0d763",
+      "result_id": "f7f69ddd-eeb0-4a34-84ce-84f2ab9dec00"
+    },
+    {
+      "claim_id": "4a146ab4-3423-442c-a07b-ede1937d9769",
+      "result_id": "f7f69ddd-eeb0-4a34-84ce-84f2ab9dec00"
+    },
+    {
+      "claim_id": "77f574e2-e0a0-4919-ab18-1090f15ebfd9",
+      "result_id": "f7f69ddd-eeb0-4a34-84ce-84f2ab9dec00"
+    },
+    {
+      "claim_id": "663cda2a-4a99-4ade-aaf7-9198c8135e99",
+      "result_id": "f7f69ddd-eeb0-4a34-84ce-84f2ab9dec00"
+    },
+    {
+      "claim_id": "832ce60e-2e38-4d56-ba72-215976682721",
+      "result_id": "198c5840-9fd4-4311-b32f-449fd920c7f1"
+    },
+    {
+      "claim_id": "f6b597e8-4f8c-4651-9bfe-326e17f5a6f8",
+      "result_id": "198c5840-9fd4-4311-b32f-449fd920c7f1"
+    },
+    {
+      "claim_id": "d871a51e-e54a-4d48-9287-05b9d08d3737",
+      "result_id": "198c5840-9fd4-4311-b32f-449fd920c7f1"
+    },
+    {
+      "claim_id": "5221bdd3-5684-42d9-ae9f-9ec73a97ab29",
+      "result_id": "198c5840-9fd4-4311-b32f-449fd920c7f1"
+    },
+    {
+      "claim_id": "95f664f6-9b6b-4f1f-bd60-d54f4e0706e1",
+      "result_id": "198c5840-9fd4-4311-b32f-449fd920c7f1"
+    },
+    {
+      "claim_id": "000fc568-7a2f-49ba-9bb6-495df0a3c927",
+      "result_id": "198c5840-9fd4-4311-b32f-449fd920c7f1"
+    },
+    {
+      "claim_id": "10c081cb-a9c0-4597-9a58-e8862b811681",
+      "result_id": "198c5840-9fd4-4311-b32f-449fd920c7f1"
+    },
+    {
+      "claim_id": "b8f9807a-d786-4ff8-a491-7a59ebe38677",
+      "result_id": "198c5840-9fd4-4311-b32f-449fd920c7f1"
+    },
+    {
+      "claim_id": "42353cbd-77c9-4a08-ac78-b323d7f88886",
+      "result_id": "25e1d110-f650-4671-9c92-68f9ed42561c"
+    },
+    {
+      "claim_id": "a1b8471b-c69e-4a77-b4d2-b6e532a410c4",
+      "result_id": "25e1d110-f650-4671-9c92-68f9ed42561c"
+    },
+    {
+      "claim_id": "a5f6d025-274f-4e6d-b1bb-1caed7cf0749",
+      "result_id": "1d65a012-d2e0-4dfb-9f81-f6135eaa894b"
+    },
+    {
+      "claim_id": "9597176f-2e66-44f0-9cb2-2a897a0eb7ee",
+      "result_id": "1d65a012-d2e0-4dfb-9f81-f6135eaa894b"
+    },
+    {
+      "claim_id": "0044a2e7-bc00-43d6-9c1c-23cf8a6ad577",
+      "result_id": "1d65a012-d2e0-4dfb-9f81-f6135eaa894b"
+    },
+    {
+      "claim_id": "3bb5cc79-de6a-4c74-80cd-b7ab4e4c1793",
+      "result_id": "6ea4c5f5-84c0-42eb-88ff-4af4387a1af6"
+    },
+    {
+      "claim_id": "d604a4d0-878f-4853-a5e9-f45efe738551",
+      "result_id": "6ea4c5f5-84c0-42eb-88ff-4af4387a1af6"
+    },
+    {
+      "claim_id": "d7888f10-cb6f-4cac-b6cc-dc23a40e188d",
+      "result_id": "6ea4c5f5-84c0-42eb-88ff-4af4387a1af6"
+    },
+    {
+      "claim_id": "37db6436-61bf-4139-8259-6b236dd6317b",
+      "result_id": "6ea4c5f5-84c0-42eb-88ff-4af4387a1af6"
+    },
+    {
+      "claim_id": "de389f44-65bc-4c48-b793-da2a4a66c9fb",
+      "result_id": "6ea4c5f5-84c0-42eb-88ff-4af4387a1af6"
+    },
+    {
+      "claim_id": "751bf235-45aa-4f63-8fd2-67d8a1cd335a",
+      "result_id": "6ea4c5f5-84c0-42eb-88ff-4af4387a1af6"
+    },
+    {
+      "claim_id": "df559603-fa72-4e51-bbce-a4bde5dcf627",
+      "result_id": "6ea4c5f5-84c0-42eb-88ff-4af4387a1af6"
+    },
+    {
+      "claim_id": "facb045d-2778-4826-a1ee-54c59fee5bd2",
+      "result_id": "6ea4c5f5-84c0-42eb-88ff-4af4387a1af6"
+    },
+    {
+      "claim_id": "7be7f7dd-dadc-4cd5-af61-0a4c8b05010a",
+      "result_id": "3d3cf0dc-3288-43fb-afe2-c4eab66e998c"
+    },
+    {
+      "claim_id": "42b2f5b3-7fa9-4519-9148-338eff52630d",
+      "result_id": "3d3cf0dc-3288-43fb-afe2-c4eab66e998c"
+    },
+    {
+      "claim_id": "964d8e16-e0e8-4b40-8a93-5e7137022efc",
+      "result_id": "3d3cf0dc-3288-43fb-afe2-c4eab66e998c"
+    },
+    {
+      "claim_id": "2a3858a3-4280-4d5b-a8e5-b6648b468239",
+      "result_id": "3d3cf0dc-3288-43fb-afe2-c4eab66e998c"
+    },
+    {
+      "claim_id": "c06dabee-b6c7-41e5-9da3-20d5777611f3",
+      "result_id": "3d3cf0dc-3288-43fb-afe2-c4eab66e998c"
+    },
+    {
+      "claim_id": "e01d1ee0-a460-4413-9dda-e8369bfcd910",
+      "result_id": "3d3cf0dc-3288-43fb-afe2-c4eab66e998c"
+    },
+    {
+      "claim_id": "8f046a86-f24a-4ace-a48c-0db9a5f083f4",
+      "result_id": "3d3cf0dc-3288-43fb-afe2-c4eab66e998c"
+    },
+    {
+      "claim_id": "dd0d7d2b-69c9-4c42-b2bd-df07355c0578",
+      "result_id": "3d3cf0dc-3288-43fb-afe2-c4eab66e998c"
+    },
+    {
+      "claim_id": "5cb402fb-f9a7-4d96-982d-c86ef65821b6",
+      "result_id": "c398bd6e-a011-486a-981a-0441fec9fb70"
+    },
+    {
+      "claim_id": "4b698279-acbf-4261-93d6-e79b9395089e",
+      "result_id": "c398bd6e-a011-486a-981a-0441fec9fb70"
+    },
+    {
+      "claim_id": "be18a005-aadb-485d-860d-12936fd6233e",
+      "result_id": "69d9f976-3ebb-43f0-a91e-6101dcb923b8"
+    },
+    {
+      "claim_id": "cdfbfcb9-a0d1-4461-aaee-20e5bcdcd17f",
+      "result_id": "69d9f976-3ebb-43f0-a91e-6101dcb923b8"
+    },
+    {
+      "claim_id": "84547ef7-4f13-4a8d-983d-9f3aa8523ec8",
+      "result_id": "69d9f976-3ebb-43f0-a91e-6101dcb923b8"
+    },
+    {
+      "claim_id": "22ac09f7-c01d-40bf-a9be-e4b9ba65d9fd",
+      "result_id": "58b6d3a3-0bf7-432c-9505-0979d9e19b90"
+    },
+    {
+      "claim_id": "048f5c36-c1a5-4c54-99d4-79ac88447d10",
+      "result_id": "58b6d3a3-0bf7-432c-9505-0979d9e19b90"
+    },
+    {
+      "claim_id": "2cbdd136-368f-4da5-a6bb-5c8188c62df1",
+      "result_id": "58b6d3a3-0bf7-432c-9505-0979d9e19b90"
+    },
+    {
+      "claim_id": "3573c7ee-0f3a-49da-b2a9-4d17b6296d73",
+      "result_id": "58b6d3a3-0bf7-432c-9505-0979d9e19b90"
+    },
+    {
+      "claim_id": "9d4fa089-e51d-4c31-87ec-161d6feed15c",
+      "result_id": "58b6d3a3-0bf7-432c-9505-0979d9e19b90"
+    },
+    {
+      "claim_id": "cd227f87-0817-40d2-a72a-a1f46d43ea24",
+      "result_id": "58b6d3a3-0bf7-432c-9505-0979d9e19b90"
+    },
+    {
+      "claim_id": "a535c396-c7d0-4aef-a414-02c9fbebba87",
+      "result_id": "58b6d3a3-0bf7-432c-9505-0979d9e19b90"
+    },
+    {
+      "claim_id": "787f45c0-74c0-4f8e-84de-7990164c6148",
+      "result_id": "8734a7c8-f3cf-4958-8118-9cf282e80324"
+    },
+    {
+      "claim_id": "86ce0829-8c41-4ea3-a6e3-239ea3e0d0ae",
+      "result_id": "8734a7c8-f3cf-4958-8118-9cf282e80324"
+    },
+    {
+      "claim_id": "703d3c72-26b9-4c41-b3b5-db1c3b7f6061",
+      "result_id": "8734a7c8-f3cf-4958-8118-9cf282e80324"
+    },
+    {
+      "claim_id": "6551be2d-ee12-481f-b578-f31c0bab3c44",
+      "result_id": "8734a7c8-f3cf-4958-8118-9cf282e80324"
+    },
+    {
+      "claim_id": "9a399654-68e7-46c1-942c-fba5c2de9f6e",
+      "result_id": "8734a7c8-f3cf-4958-8118-9cf282e80324"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors quantified absolute protein abundances using three independent methods: 'in-gel' fluorescence, FCS-calibrated imaging, and flow cytometry (FCM). For CTCF in mESCs, they report ~218,000 \u00b1 24,000 molecules/cell; for CTCF in U2OS cells, ~109,800 molecules/cell (cross-validated average); and for Rad21 in mESCs, ~109,400 molecules/cell (with higher uncertainty).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by convergent evidence from multiple orthogonal quantification methods (C1-C3, C7, C9-C12). The 'in-gel' fluorescence and FCS-calibrated imaging methods yielded consistent CTCF estimates in U2OS cells within technical error (C9), providing strong cross-validation. The Rad21 measurements show greater variability between methods (C11-C12), which the authors acknowledge, but the estimates remain within error bounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors calculated that an average CTCF binding site in mESCs is occupied ~50% of the time by CTCF, based on measured protein abundance (~217,200 molecules/cell), cell cycle distribution (~3 genome copies per average cell), fraction of CTCF bound to DNA (~49%), and total CTCF binding sites (~71,000 per haploid genome).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calculation is logically sound and based on well-supported measurements (C13-C18). The cell cycle distribution data (C13) is consistent with prior literature (C14), and the binding site occupancy calculation (C18) appropriately integrates multiple measured parameters. However, the authors appropriately note that this represents an average across sites with likely heterogeneous occupancies, and the interpretation in the context of loop extrusion (C19) involves some speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors estimated the upper bound density of putatively loop-extruding cohesin complexes as ~5.3 per Mb (if monomeric) or ~2.7 per Mb (if dimeric), corresponding to genomic distances of ~186-372 kb between extruding cohesins in mESCs. This estimate matches computational predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calculation is based on measured Rad21 abundance and previously determined chromatin-bound fraction (C20-C21). The authors appropriately acknowledge this as an upper bound and note important caveats: the chromatin-bound fraction may not all be engaged in loop extrusion, and the density may not be uniform across the genome. The agreement with computational estimates (C22) provides external validation, though the uncertainty in Rad21 measurements limits precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors provide biochemical evidence that mammalian cohesin can exist as dimers or oligomers. Co-immunoprecipitation experiments in two independent endogenously-tagged mESC clones (C85 and B4) showed protein-mediated, benzonase-resistant Rad21 self-interaction. They estimate at least ~8% of cohesin exists in dimeric state during pull-down, likely an underestimate of the in vivo ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CoIP data from two independent clones (C27, C30-C31) provide strong evidence for cohesin self-interaction. The benzonase resistance experiments (C28, C32) convincingly demonstrate the interaction is protein-mediated rather than DNA-dependent. The quantitative estimate (C33) is appropriately conservative and the authors acknowledge it likely underestimates the true in vivo ratio due to experimental disruption (C34). However, the data cannot definitively distinguish between dimers, oligomers, or alternative architectures (C35), which the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors developed and validated a simple FCM-based method for determining absolute protein abundance of any Halo-tagged protein using U2OS C32 Halo-CTCF as a standard. They demonstrated this by quantifying Halo-Sox2 (~460,517 \u00b1 25,606 molecules/cell) and Halo-TBP (~99,111 \u00b1 29,125 molecules/cell) in mESCs, with noted limitations for very low (<10,000) or very high (>10-20 million) expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The method is well-validated through cross-validation with 'in-gel' fluorescence and FCS-calibrated imaging for CTCF (C9-C10). The Sox2 and TBP quantifications (C36-C37) demonstrate practical application. The authors appropriately identify method limitations at extreme expression levels (C38-C39), though these are based on reasonable inferences rather than direct experimental validation. The method's simplicity and use of a validated standard make it a valuable tool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The authors validated that JF646 labeling of Halo-tagged proteins is near-quantitative (\u226590% efficiency) in live cells through titration experiments and citation of prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is supported by both experimental titration data (C48, Figure 1\u2014figure supplement 1A-C) and citation to prior validation work (C47). This is an important control for the quantification methods, as incomplete labeling would lead to systematic undercounting. The \u226590% efficiency suggests minimal bias, though some undercounting remains possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors review prior literature establishing CTCF and cohesin as causal regulators of TAD formation, the success of loop extrusion models in reproducing genomic contact maps, and the current limitations due to lack of quantitative biological data to constrain modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize well-established findings from the cited literature (C40-C44) and appropriately identify gaps in current knowledge (C45-C46). This contextualizes the importance of the quantitative measurements reported in the current study. The claims are appropriately supported by multiple citations to relevant prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors review the controversial literature on cohesin stoichiometry, noting conflicting evidence from different organisms and experimental systems regarding whether cohesin functions as monomers, dimers, or oligomers, and discuss potential functional differences between SA1- and SA2-containing cohesin complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent the state of the literature on cohesin stoichiometry, appropriately citing supporting studies for each assertion (C23-C26, C51-C60). The review highlights important controversies and methodological considerations (e.g., overexpression artifacts in C26) that motivated the current study's use of endogenous tagging. The speculation about cohesin clusters (C61) is appropriately tentative and cites prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors observe that CTCF abundance in U2OS cells (~105,000) is approximately half that in mESCs (~218,000), consistent with independent measurements in HeLa cells, and speculate this may reflect cell-type-specific regulation of chromatin looping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The quantitative comparison between cell types (C4) is well-supported by the measurements. The consistency with HeLa cell data (C5) provides some external validation. However, the speculation about cell-type-specific regulation (C6) is not directly tested and represents an interesting hypothesis rather than a demonstrated result. Additional experiments would be needed to establish whether CTCF abundance differences functionally regulate chromatin looping in different cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Over 90% of cellular Halo-CTCF molecules localize to the nucleus in interphase U2OS cells, corresponding to ~106,000 nuclear molecules at ~144.3 nM concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by FCS-calibrated imaging data with 3D segmentation of nuclear and cytoplasmic compartments (C8, Figure 1\u2014figure supplement 2B,E). The nuclear localization is expected for a chromatin-binding protein and provides important context for interpreting the functional implications of total cellular abundance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The authors note that Rad21 appears to be the least abundant cohesin subunit and that essentially all endogenously tagged Rad21-Halo is incorporated into cohesin complexes based on prior single-molecule tracking studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim about Rad21 being the least abundant subunit (C49) is stated as inference from Materials and methods but not fully detailed in the main text. The claim about Rad21 incorporation into complexes (C50) is supported by citation to prior work. These are important considerations for interpreting Rad21 abundance as a proxy for cohesin complex abundance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors provide background on TADs and their role in gene regulation and disease, and on the HaloTag system and advantages of endogenous tagging over overexpression approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These introductory claims accurately represent established knowledge in the field, appropriately supported by citations to relevant literature (C62-C66). They provide important context for understanding the significance and methodological choices of the current study.",
+    "result_type": "MINOR"
+  }
+]

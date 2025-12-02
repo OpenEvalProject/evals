@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C68",
+      "C75"
+    ],
+    "result": "The human brain is 238% larger than expected for a primate of similar body mass and phylogenetic position. All hominin species were strongly supported positive outliers, with H. sapiens exceeding predictions by 7.63 standard deviations and H. neanderthalensis by 6.96 standard deviations. Even when accounting for the close phylogenetic relationship with H. neanderthalensis, humans remain exceptional outliers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 and C68, C75 provide converging evidence from BayesModelS analyses using phylogenetically-controlled methods. The statistical support is strong (>99.9% of predictions below observed values), and the finding is robust across different analytical approaches. The magnitude of deviation (238% larger than expected) is substantial and well-quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C50",
+      "C51",
+      "C52",
+      "C69",
+      "C70",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Progressive shifts towards larger brain size relative to body mass occurred along the human lineage within hominins, with evolution showing both directional increase (slope = 0.04) and acceleration (\u03b4 = 8.36). Distinct shifts in brain-body scaling occurred at the hominin-primate divergence and at the human-Neanderthal divergence from other hominins. Additional shifts were detected in other primate lineages including increases in Lemuridae and Cebinae, and decreases in Alouatta and Colobinae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 and C50-C52 are supported by bayou OU model analyses and PGLS model comparisons showing the directional acceleration model was favored (AICc = -23.38). Claims C69-C70 and C94-C96 synthesize these findings. The convergence of multiple analytical approaches (OU models, PGLS with \u03b4 transformation) strengthens the conclusion. However, C32 notes convergence issues with \u03b1 and \u03c3\u00b2 parameters in one phylogeny, though shift detection remained consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C76",
+      "C97",
+      "C98"
+    ],
+    "result": "Human neocortex volume is exceptionally large relative to body mass but not relative to the rest of the brain. A single shift in neocortex scaling occurred at the origin of haplorrhines, with different scaling patterns detected between strepsirrhines and haplorrhines. No exceptional neocortex expansion occurred specifically in the human lineage relative to other brain structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by bayou analyses (Bayes factors > 18 for Brownian model vs. OU models when predicting from body mass; Bayes factors > 9.2 for weighted predictor model when predicting from rest-of-brain). Claims C76, C97-C98 synthesize these findings. This contradicts widespread assumptions (C22) but is well-supported by the data. The finding that humans are outliers for neocortex vs. body mass (C54) but not vs. rest-of-brain is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C80",
+      "C99"
+    ],
+    "result": "Human cerebellum volume is exceptionally large relative to body mass. A shift towards increased cerebellar volume relative to rest-of-brain occurred on the branch leading to apes. OU models outperformed Brownian models for cerebellum evolution relative to rest-of-brain (Bayes factor 10.65), though weighted and unweighted OU models performed similarly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by bayou analyses with clear Bayes factors (11.96 and 22.79 favoring Brownian over OU models for body mass prediction; 10.65 favoring OU over Brownian for rest-of-brain prediction). Claims C80 and C99 synthesize these findings. The detection of a shift at the ape branch (C61) is consistent across both OU models, strengthening confidence despite model ambiguity (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The medulla expanded in humans relative to body mass (positive outlier status) but to a lesser degree than other brain structures (negative outlier status relative to rest-of-brain). Medulla evolution was not modulated by selection towards a stationary optimum, with Brownian models favored over OU models (Bayes factors > 7.4 for body mass, > 3.8 for rest-of-brain).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 and C85-C87 are supported by consistent bayou and BayesModelS analyses. The finding that humans are positive outliers for medulla vs. body mass but negative outliers vs. rest-of-brain is internally consistent and indicates differential expansion. The Brownian model preference indicates lack of stabilizing selection, consistent with prior literature (C27-C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "For rest-of-brain volume relative to body mass, OU models were selected over Brownian models (Bayes factors > 13), but no shifts in scaling regime were detected in either OU model across the primate phylogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by bayou analyses with clear Bayes factors. The absence of detected shifts despite OU model preference suggests stabilizing selection without regime changes. This serves as a control showing that the method can distinguish between evolution with and without shifts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C88"
+    ],
+    "result": "The differential timing of shifts in neocortex (at haplorrhine origin) and cerebellum (at ape origin) supports mosaic brain evolution theory. This suggests no single adaptive hypothesis can account for primate brain evolution; rather, different selection pressures on different information-processing capacities operated at different times on different lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 and C88 represent valid inferences from the empirical findings about neocortex (C56, C98) and cerebellum (C61, C99) shifts occurring on different phylogenetic branches. The mosaic pattern is directly demonstrated by the data. However, these are interpretive claims about evolutionary process rather than direct empirical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Model selection between Brownian and OU models for ECV evolution was sensitive to phylogeny choice. Using the hominin phylogeny, the Brownian model was favored (Bayes factors > 22), while using the alternate hominin phylogeny, the unweighted predictor OU model was favored (Bayes factors > 42), though with poor convergence for \u03b1 and \u03c3\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C32 reveal methodological sensitivity to phylogenetic assumptions. The poor convergence noted in C32 for \u03b1 and \u03c3\u00b2 parameters raises concerns about parameter identifiability, though shift detection remained consistent. The authors acknowledge this issue but argue shift identification is robust. This uncertainty affects confidence in the specific evolutionary model but not the broader pattern of shifts along the human lineage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Several non-human primate species showed exceptional brain evolution for individual traits, but only humans showed exceptional evolution across multiple brain components. Large brain size in Daubentonia and Cebinae has been attributed to extractive foraging and tool use. Two Gorilla species and two Pan troglodytes subspecies showed unexpected patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by the comprehensive analyses across multiple brain structures. Claims C90-C93 identify specific species with exceptional patterns. However, C92 is speculative about Gorilla patterns being byproducts of body mass increase. The Pan troglodytes subspecies finding (C93) may reflect methodological artifacts as the authors note sister taxa deviating in opposite directions could both be identified as outliers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C21"
+    ],
+    "result": "Non-phylogenetic methods may give misleading results by failing to incorporate trait covariation from shared evolutionary history. Valid analysis requires phylogenetic methods for both estimating scaling parameters and evaluating deviations. Including the species being investigated in regression models can introduce error, especially for extreme phenotypes. Using relative measures like encephalization quotients can bias parameter estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C21 represent established methodological principles in phylogenetic comparative methods, supported by citations to methodological literature (Garland and Ives, 2000; Ross et al., 2004; Organ et al., 2011; Freckleton, 2002). These claims justify the analytical approach but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C13",
+      "C15"
+    ],
+    "result": "Prior work by Azevedo et al. (2009) found human brain mass only 10% greater than expected, but this used non-phylogenetic methods. Pagel (2002) found accelerating ECV evolution in hominins but did not account for body size. Montgomery et al. (2010) found exceptional absolute change in human brain mass but not exceptional rate of change relative to body size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C13, and C15 accurately represent prior work based on the cited sources. These provide context for the current study's findings and highlight how methodological choices (phylogenetic vs. non-phylogenetic, accounting for body size) affect conclusions. The current study's findings (238% larger than expected) differ substantially from Azevedo et al.'s 10% estimate, likely due to methodological improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The pattern of accelerating brain size increase is consistent with hypotheses postulating co-evolutionary positive feedback processes driving human brain evolution, such as feedback between brain size and culture/language or socio-cognitive evolutionary arms races.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 represents a valid inference connecting the empirical finding of accelerating evolution (C50-C52) to existing theoretical frameworks. However, this is interpretive rather than a direct test of these hypotheses. The data are consistent with but do not prove these specific mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "H. neanderthalensis was not identified as an outlier when H. sapiens was included in the analysis, but was identified as a strongly supported positive outlier when H. sapiens was excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 demonstrate the sensitivity of outlier detection to which species are included in the analysis. This is methodologically important and the authors provide a reasonable explanation (inclusion of H. sapiens creates wide posterior distribution). This supports their decision to exclude all hominins when testing hominin outlier status.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "The shift in neocortex size at the origin of haplorrhines may be related to visual specializations for high-acuity photic vision, mediated by extensive cortical visual areas that make up over 50% of cortex in these species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is explicitly speculative ('may be related') and represents a hypothesis rather than a tested conclusion. While supported by citations to relevant literature on haplorrhine visual systems, this functional interpretation of the neocortex shift is not directly tested in this study.",
+    "result_type": "MINOR"
+  }
+]

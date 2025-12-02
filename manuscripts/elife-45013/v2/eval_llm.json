@@ -1,0 +1,523 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10",
+      "C11"
+    ],
+    "result": "Rats successfully learned to discriminate between three auditory cues predicting different shock probabilities (danger p=1.00, uncertainty p=0.375, safety p=0.00), showing a non-linear relationship between shock probability and fear output as measured by suppression ratios. Fear discrimination was robust across all 88 recording sessions and across all 1-second intervals of cue presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 provide strong statistical evidence (F2,174 = 592.00, p=2.32\u00d710\u207b\u2077\u2078) for discriminative fear across cues. Claim C8 documents the critical non-linear relationship (uncertainty suppression ratio closer to danger than safety despite probability being closer to safety), which is essential for distinguishing threat probability from fear output in subsequent analyses. The temporal analysis (C10-C11) confirms discrimination persists across all intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Suppression ratios calculated in short (1-second) intervals are artificially inflated but remain valid for relative comparisons between cues because the inflation affects all cues equally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 acknowledge a methodological limitation while establishing validity for the primary use case. The supporting figure (Figure 1\u2014figure supplement 2) provides theoretical justification. This is important for interpreting interval-by-interval analyses throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "K-means clustering of 245 recorded vlPAG neurons based on baseline firing rate identified two populations (LFR n=199, HFR n=46). Within the LFR cluster, 29 neurons showed phasic increases in firing during the first 1-second interval (Onset population) and 14 neurons showed increases during the last 1-second interval (Ramping population).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering approach (C15-C16) is justified by prior optogenetic work identifying glutamatergic and GABAergic neurons with distinct firing rates. The identification criteria for Onset (C18) and Ramping (C20-C22) populations use appropriate statistical thresholds (p<0.017, Bonferroni corrected). The sample sizes and distribution across animals are clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Onset neurons (n=29) showed differential firing that was maximal during the first 1-second interval (danger > uncertainty > safety), with this differential pattern diminishing over cue presentation and absent by the last interval. Statistical analysis confirmed significant cue \u00d7 bin interaction and differential firing between danger and uncertainty in the first interval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 provide comprehensive temporal characterization with appropriate statistics. The ANOVA interaction (C26: F218,6104 = 1.94, p<0.01) and post-hoc tests (C27: t28 = 4.54, p=9.70\u00d710\u207b\u2075 for danger vs. uncertainty) support the temporal specificity. The non-significant comparison for uncertainty vs. safety (C28) is honestly reported and followed up with additional analysis showing a significant interaction over the first 5 seconds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Ramping neurons (n=14) showed no differential firing in the first 1-second interval but exhibited ramping activity over cue presentation with maximal differential firing in the last interval (danger > uncertainty > safety). Statistical analysis confirmed significant cue \u00d7 bin interaction and differential firing between all cue pairs in the last interval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide complementary temporal characterization to Onset neurons. The ANOVA (C34: F218,2834 = 4.33, p<0.01, \u03b7p\u00b2 = 0.24) shows strong interaction effects. Post-hoc tests confirm no early discrimination (C35) but robust late discrimination (C36: danger vs. uncertainty t13 = 3.17, p=7.41\u00d710\u207b\u00b3; uncertainty vs. safety t13 = 8.26, p=2.00\u00d710\u207b\u2076).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Differential firing in Ramping neurons was determined by the time of departure from safety rather than rate of increase. Ramping to danger emerged earlier (2.8-5.8 seconds) than to uncertainty (5.7-6.5 seconds), but the rate of firing increase did not differ between danger and uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 describe results from a sliding window analysis that distinguishes timing from rate mechanisms. The specific timing values (C38) are provided with appropriate statistical thresholds (p<0.05 and Bonferroni-corrected p<0.00025). The finding that rates don't differ (C39) is important for mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Four simultaneously recorded Onset-Ramping neuron pairs showed no negative correlations in trial-by-trial firing variations across 1-second intervals, demonstrating that Onset and Ramping populations are distinct and independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 address whether one population drives the other. The analysis of four pairs (C40) with regression across intervals (C41) found no negative correlations, supporting independence (C42). However, the small sample size (n=4 pairs) limits generalizability, though the conclusion is appropriately stated as demonstrating distinctness rather than proving complete independence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Single-unit analysis of Onset neurons revealed correlated firing between danger and uncertainty with bias toward greater danger firing, temporal specificity to the first interval, and a predominant firing pattern of danger > uncertainty > safety (n=14/29 neurons, the only pattern exceeding chance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 characterize single-unit properties supporting population-level findings. The correlation analyses (C43-C44) and temporal specificity (C45) are appropriately visualized. The firing pattern analysis (C46) uses shuffling to establish statistical significance above chance, providing rigorous support for the predominant pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Single-unit analysis of Ramping neurons showed correlated danger and uncertainty firing with bias toward danger, no correlation but consistent bias for uncertainty over safety, temporal specificity to the last interval, and a predominant firing pattern of danger > uncertainty > safety (n=11/14 neurons, exceeding chance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 parallel the Onset analysis for Ramping neurons. The different correlation patterns (C47-C48: correlation for danger-uncertainty but not uncertainty-safety) suggest different encoding properties. The firing pattern analysis (C50) again uses appropriate statistical comparison to chance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Onset and Ramping neurons showed no meaningful activity changes during naturally occurring nose poke cessation in inter-trial intervals, demonstrating that activity patterns are specific to cue-induced suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 addresses an important alternative explanation (that neural activity simply reflects motor cessation). The control analysis examining spontaneous cessation periods provides appropriate negative control evidence, though more quantitative statistical reporting would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Relative differences in fear output do not match relative differences in vlPAG firing. Rats showed robust behavioral discrimination between uncertainty and safety, but Onset neurons showed only modest differential firing between these cues, while Ramping neurons showed stronger discrimination only at cue end, too late to organize early fear output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 establish the critical mismatch motivating the regression analysis. The behavioral discrimination (C53) is well-established from earlier claims. The modest Onset discrimination (C54) and late Ramping discrimination (C55-C56) create a temporal and magnitude mismatch with behavior, though the inference that Ramping neurons \"cannot organize\" early fear output (C56) is somewhat strong given the correlational nature of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Linear regression analysis revealed that Onset neuron activity in the first 1-second interval was captured by threat probability (beta significantly greater than zero and greater than fear measures) but not by total fear or interval fear. This probability signaling was highest in the first interval, persisted for several seconds, then diminished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 present the core regression findings for Onset neurons. The methodology (C57-C60) is clearly described. The results show strong probability signaling (C61-C64) with appropriate statistics (C63: probability vs. total fear t28 = 3.75, p=8.01\u00d710\u207b\u2074). The ANOVA across intervals (C67) confirms temporal dynamics. The conclusion that probability, not fear, drives Onset activity is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Threat-tuning curve analysis for Onset neurons showed peak beta coefficient at the actual uncertainty probability (0.375), with coefficients dropping off as uncertainty assignment moved to extremes. The actual probability (0.375) captured activity better than a binary assignment (0.000).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 demonstrate that Onset neurons encode graded probability rather than binary threat. The tuning curve analysis (C68-C70) provides strong evidence for continuous probability coding. The comparison to binary coding (C71) directly tests an alternative hypothesis and is supported by supplementary figure data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Linear regression for Ramping neurons in the last 1-second interval revealed mixed signaling of threat probability and total fear, with probability prioritized. Across all intervals, only the probability beta coefficient differed significantly from zero (t13 = 4.21, p=1.02\u00d710\u207b\u00b3) and exceeded both fear measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 show Ramping neurons signal both probability and fear but prioritize probability. The statistics are rigorous (C76: ANOVA interaction F18,234 = 2.16, p<0.01; C78: probability vs. interval fear t13 = 4.32, p=8.28\u00d710\u207b\u2074). The mean beta coefficients (C77) show probability (0.58\u00b10.14) substantially exceeds total fear (0.12\u00b10.10) and interval fear (-0.03\u00b10.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The threat-tuning curve for Ramping neurons was shifted right of the actual probability (peak at 0.625 vs. actual 0.375), consistent with mixed signaling of fear output and threat probability rather than pure probability signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 provide additional evidence for mixed signaling in Ramping neurons. The rightward shift (C79) is predicted by the combination of probability (danger >> uncertainty > safety) and fear output (danger > uncertainty >> safety) signals. This interpretation (C80) is logical given the regression results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Post-cue analysis revealed distinct patterns: Onset neurons showed negligible delay and post-shock activity with no significant ANOVA effects, while Ramping neurons continued firing through the delay period but diminished after shock, with significant trial \u00d7 bin interaction (F132,1716 = 3.14, p<0.01). The populations differed significantly from each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 characterize post-cue dynamics. The contrasting patterns are supported by appropriate statistics: no effects for Onset (C83) versus significant effects for Ramping (C84). The direct comparison (C85) confirms populations differ. This extends the characterization of temporal dynamics beyond the cue period.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Post-cue regression analysis showed Onset neurons did not signal interval fear or probability after cue offset (no significant effects), while Ramping neurons signaled probability throughout the delay period, diminishing after shock delivery (significant regressor \u00d7 interval interaction F8,104 = 5.20, p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 apply regression analysis to post-cue periods. The null results for Onset (C86-C88) are appropriately reported with statistics showing lack of effects. The Ramping results (C89-C90) show continued probability signaling during delay, supporting a role in temporal threat estimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Correlation matrix analysis of probability beta coefficients between delay and post-shock periods showed 13/20 significant correlations for Onset neurons versus 4/20 for Ramping neurons, with proportions differing significantly (\u03c7\u00b2 = 8.08, p=4.5\u00d710\u207b\u00b3). With Bonferroni correction, 6/20 Onset versus 1/20 Ramping comparisons remained significant (\u03c7\u00b2 = 4.22, p=0.039).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 show Onset probability signals persist across shock while Ramping signals are disrupted. The correlation matrix approach is appropriate for examining signal persistence. Both uncorrected (C92) and corrected (C93) analyses show significant differences between populations, though the effect is weaker with correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study found two vlPAG populations consistent with previous reports: Onset neurons with short-latency excitation reflecting threat probability invariant of fear output, and Ramping neurons reflecting both threat probability and fear output with probability prioritized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 summarize the main findings in context of prior work. The consistency with previous reports (C94-C95) is appropriately cited. The main conclusions about Onset (C96) and Ramping (C97) neurons are well-supported by the extensive regression analyses presented earlier. These represent the core discoveries of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "While vlPAG signals for fear output could potentially emerge at the ensemble level or in other populations (inhibited or non-cue-responsive neurons), signals for threat probability and fear output co-exist in the vlPAG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C100 acknowledge alternative possibilities while maintaining the main conclusion. These are appropriately speculative (C98-C99) given the single-unit focus of the study. The conclusion about co-existence (C100) is supported, but the extent of fear output signaling in vlPAG remains uncertain without testing these alternative populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The results are correlative and may not reflect causal roles. While previous work shows VGlut2+ neurons (likely corresponding to the LFR cluster) and GABA neurons can causally produce freezing, the current study cannot definitively identify neuron types or establish causality. However, blocking Onset activity would theoretically remove the threat signal driving defensive behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108 appropriately acknowledge limitations and discuss causal interpretations. The caveat about correlational evidence (C101) is important. The discussion of previous causal work (C102, C104) provides context. The inability to definitively identify neuron types (C103) is an honest limitation. The mechanistic speculation (C107-C108) is reasonable but clearly presented as prediction rather than established fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Recordings were intentionally made from caudal vlPAG (bregma -7.62 to -7.98), the subregion preferentially activated by fearful contexts and typically targeted in manipulations disrupting fear behaviors. Threat probability signaling was observed across all recording locations, though neurons signaling fear output might be restricted to more caudal regions not sampled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 justify the recording location with appropriate citations (C109-C110) and report the anatomical distribution of findings (C111). The acknowledgment that ~0.7 mm of caudal vlPAG was not sampled (C112) and the possibility of anatomically restricted fear output signals (C113) represent appropriate caveats about anatomical coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Previous studies failed to find robust vlPAG-freezing relationships. The current study used conditioned suppression to better capture vlPAG activity, but this measure did not capture Onset firing and only partially captured Ramping firing at cue end. Neural activity was not driven by nose poke cessation itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 discuss the behavioral measure and its relationship to neural activity. The summary of previous work (C114) provides context. The rationale for using suppression (C115) is reasonable. The finding that suppression doesn't fully capture neural activity (C116) is a key result. The control for motor cessation (C117) addresses an important alternative explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Alternative fear behaviors (darting, cardiovascular changes, startle) are unlikely to account for the observed neural activity. Darting is less common in males with extensive training and no escape possibility. Cardiovascular changes haven't been linked to vlPAG. Startle involves dorsal PAG. Most fear behaviors show sustained onset-to-offset patterns not observed in the data. Any behavior matching Onset firing would necessarily match shock probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 systematically address alternative behavioral explanations. Each is appropriately dismissed with citations (C118-C123) or logical arguments (C124-C126). The final point (C126) is particularly important: any behavior perfectly matching Onset firing would be confounded with probability itself, making the distinction between behavior and probability encoding impossible to resolve through behavior alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The findings challenge the Predatory Imminence Continuum (PIC) model's implicit assumption that vlPAG contains only fear output information. Instead, single vlPAG neurons contain detailed information about time and degree of threat, requiring reconsideration of vlPAG's role in the fear circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C135 place findings in theoretical context. The PIC framework (C127-C132) is accurately described with appropriate citations. The identification of an implicit assumption (C133) is insightful. The challenge to this assumption (C134) is well-supported by the data. The call for reconsideration (C135) is appropriate given the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Rather than signaling fear output, vlPAG Onset neurons signal threat probability. This information could be used to organize fear responses through projections to CeA/RVM or distributed to larger fear networks through thalamic projections, analogous to brainstem visual threat detection signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C137 restate the main conclusion, which is well-supported. However, the proposed circuit mechanisms (C138-C139) are speculative, citing anatomical connectivity but not testing these pathways functionally. The analogy to visual threat detection (C139) is interesting but remains hypothetical without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Ramping neurons cannot fully drive fear output because differential fear appears before Ramping activity. They may provide threat probability estimates that increase as threat approaches, help sustain estimates during trace conditioning, or estimate timing of noxious events. Human neuroimaging shows PAG-centric activity increases as threats approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C140 makes a strong logical argument based on temporal mismatch, which is well-supported. However, the proposed functions (C141-C142) are speculative, though reasonable given the firing patterns. The human neuroimaging evidence (C143) provides some support but cannot specify PAG subregions, limiting its relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Ramping neurons may provide feedback about shock probability and fear output for learning, consistent with vlPAG's role in feedback processes. They could also modulate pain through descending control, relating to conditioned and placebo analgesia. VlPAG activation is consistently observed in placebo analgesia studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C146 propose a learning function with some support from cited literature on vlPAG feedback roles. The pain modulation hypothesis (C147-C148) is plausible given known circuitry. The placebo analgesia connection (C149) is supported by multiple citations, though the link to the current Ramping neuron findings remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C150",
+      "C151"
+    ],
+    "result": "Between Onset and Ramping populations, the vlPAG contains threat probability estimates from first encounter through the noxious event. The vlPAG may not signal fear output per se but is rich with information informing various fear processes and behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151 synthesize the main findings. The temporal coverage claim (C150) is well-supported by the data showing Onset activity at cue start and Ramping activity through delay. The conclusion about information richness rather than direct fear output (C151) appropriately captures the findings while acknowledging uncertainty about downstream uses of this information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Non-linear fear output may reflect evolutionary optimization for survival (erring toward greater fear for uncertain threats) or summation of multiple threat signals. VlPAG may provide linear probability signals to RVM, while other regions like RRF (showing danger = uncertainty > safety in preliminary data) provide additional signals. Summation would produce observed non-linear output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C153 offer evolutionary speculation that is reasonable but untestable. The circuit mechanism (C154-C160) is more concrete but relies heavily on preliminary unpublished RRF data (C158). The proposed summation model (C160) is plausible and could explain the behavioral non-linearity, but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "VlPAG threat probability signals may be trained by CeA but become CeA-independent with training, consistent with lesion studies showing CeA is essential for initial learning but less so after extended training. However, CeA is anticipated to remain essential for updating threat probability when contingencies change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C162 propose a relationship between vlPAG and CeA with some support from cited lesion studies. However, the current study doesn't test CeA involvement. The prediction about updating (C164-C165) is reasonable but speculative. This represents an interesting hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "The findings challenge the prevailing focus on amygdala as the privileged site of integration in fear circuits, marking vlPAG as a likely node of dysfunction in stress and anxiety disorders. Deliberate study of vlPAG function and dysfunction will be essential for developing effective therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C168 accurately describe the field's focus on amygdala with appropriate citations. The challenge to amygdala's privileged status (C169) is supported by the demonstration of integration in vlPAG. However, the clinical implications (C169, C171) are speculative, as the study doesn't examine psychiatric populations or dysfunction. The call for future research (C170-C171) is appropriate but represents a research direction rather than an established finding.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1928 @@
+{
+  "submission": {
+    "id": "e3bf32ba-7008-4884-8457-09ee2357bac0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:22:36.354061Z",
+    "updated_at": "2025-12-02T10:22:36.354061Z"
+  },
+  "content": [
+    {
+      "id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "submission_id": "e3bf32ba-7008-4884-8457-09ee2357bac0",
+      "content_type": "manuscript",
+      "content_text": "# NRG1 is a critical regulator of differentiation in TP63-driven squamous cell carcinoma\n\n## Authors\n\n- Ganapati V Hegde<sup>1</sup> ([ORCID: 0000-0001-6473-153X](https://orcid.org/0000-0001-6473-153X)) \u2020\n- Cecile de la Cruz<sup>2</sup>\n- Jennifer M Giltnane<sup>3</sup>\n- Lisa Crocker<sup>2</sup>\n- Avinashnarayan Venkatanarayan<sup>1</sup>\n- Gabriele Schaefer<sup>2</sup>\n- Debra Dunlap<sup>3</sup>\n- Joerg D Hoeck<sup>4</sup>\n- Robert Piskol<sup>5</sup>\n- Florian Gnad<sup>5</sup>\n- Zora Modrusan<sup>6</sup>\n- Frederic J de Sauvage<sup>4</sup>\n- Christian W Siebel<sup>1</sup>\n- Erica L Jackson<sup>1</sup> ([ORCID: 0000-0002-7100-8021](https://orcid.org/0000-0002-7100-8021)) \u2020\n\n### Affiliations\n\n1. Discovery Oncology Genentech South San Francisco United States\n2. Translational Oncology Genentech South San Francisco United States\n3. Pathology Genentech South San Francisco United States\n4. Molecular Oncology Genentech South San Francisco United States\n5. Bioinformatics Genentech South San Francisco United States\n6. Molecular Biology Genentech South San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSquamous cell carcinomas (SCCs) account for the majority of cancer mortalities. Although TP63 is an established lineage-survival oncogene in SCCs, therapeutic strategies have not been developed to target TP63 or it\u2019s downstream effectors. In this study we demonstrate that TP63 directly regulates NRG1 expression in human SCC cell lines and that NRG1 is a critical component of the TP63 transcriptional program. Notably, we show that squamous tumors are dependent NRG1 signaling in vivo, in both genetically engineered mouse models and human xenograft models, and demonstrate that inhibition of NRG1 induces keratinization and terminal squamous differentiation of tumor cells, blocking proliferation and inhibiting tumor growth. Together, our findings identify a lineage-specific function of NRG1 in SCCs of diverse anatomic origin.\n\n## Introduction\n\nWithin the past decade, lineage addiction has emerged as a common paradigm to explain how certain tumors depend on co-opted survival and self-renewal programs that drive the normal development of the tissues from which they arise (Garraway and Sellers, 2006). During normal development and tissue homeostasis, \u2018master regulator\u2019 transcription factors control large sets of genes regulating cellular identity, differentiation and survival (Chan and Kyba, 2013). Amplifications of master regulators act as oncogenic drivers in cancers arising in the tissues whose development they normally control. Examples include MITF, which directs melanocyte development and is amplified in some melanomas and NKX2.1, which directs development of the distal lung epithelium and is amplified in some lung adenocarcinomas (Kendall et al., 2007). Some cancers remain fully dependent on transcription factors expressed by precursor cells of the lineage from which they develop, even in the absence of genetic alterations in these genes. Examples include AR in prostate cancer and ESR1 in luminal breast cancers (Garraway and Sellers, 2006).\n\nDespite varied anatomic origins, squamous cell cancers (SCCs) share many common properties, including genetic and epigenetic alterations (Dotto and Rustgi, 2016). The TP63 transcription factor exemplifies an important lineage dependency in SCCs (Ramsey et al., 2013). Amplification of TP63 is prevalent in SCCs, and TP63 expression is used to distinguish SCCs from other cancer subtypes in multiple tissues (Dotto and Rustgi, 2016). SCCs arise in numerous organ systems that contain stratified or pseudo-stratified epithelia, including the lung, head and neck, esophagus, skin, bladder and cervix. Interestingly, like other lineage survival oncogenes, TP63 is a key regulator of the progenitor cells in the basal cell compartment during normal development and homeostasis of most stratified or pseudostratified epithelia (Mills et al., 1999; Yang et al., 1999). Despite its established role as a driver of lineage dependency, TP63 is a transcription factor, and as such is challenging to target therapeutically.\n\nHere we show that NRG1 expression is directly regulated by TP63 in SCCs of various organs, and that co-expression of NRG1 and its receptor ERBB3 is prevalent in SCCs. Moreover, we find that many of the SCC models that co-express NRG1 and ERBB3 depend on NRG1 autocrine signaling in vivo, in contrast to non-squamous cancers that exhibit NRG1 autocrine signaling but are not dependent on it.\n\n## Results and discussion\n\n### TP63 regulates NRG1 expression\n\nTP63 is highly expressed in basal cells of various epithelia and is required for the progenitor cell function. In addition, TP63 acts as a key survival factor and driver of SCCs (Rocco et al., 2006; Thurfjell et al., 2005). Interestingly, studies of normal mammary basal cells established that TP63 can directly activate NRG1 transcription (Forster et al., 2014). Therefore, we evaluated whether this transcriptional wiring exists in SCCs. We found that NRG1 and TP63 expression significantly correlated in both esophageal and lung squamous cell carcinomas (LUSC) as determined from The Cancer Genome Atlas (TCGA) transcriptome data (Figure 1A). TP63 has two isoform classes that either contain (TA-TP63) or lack (DeltaN-TP63) an N-terminal transactivation domain. Despite lacking this domain, deltaN-TP63, the major isoform expressed in SCCs, functions as both a positive and negative transcriptional regulator of different target gene subsets (Hibi et al., 2000; Moll and Slade, 2004). We evaluated whether TP63 regulates NRG1 expression in SCCs using siRNAs to knockdown all TP63 isoforms (siTP63 # 14) or only the TA-TP63 isoforms (siTA-TP63 # 13) and assessing expression of both isoforms of the NRG1 EGF-like domain, NRG1\u03b1 and NRG1\u03b2, by qPCR in the OE-21 and KYSE-140 SCC cell lines. Knockdown of just the TA isoforms modestly reduced NRG1 expression, whereas silencing of all isoforms robustly decreased NRG1 expression (Figure 1B). We further expanded this finding in an additional cell line, KYSE-180 (Figure 1C). Knockdown of deltaN-TP63 significantly reduced NRG1 transcripts, confirming that deltaN-TP63 regulates NRG1 expression in SCCs. Immunoblotting confirmed knockdown of deltaN-TP63 at the protein level. In addition, we determined whether NRG1 is a direct transcriptional target of deltaN-TP63 by ChIP-PCR using antibodies for TP63alpha and deltaN-TP63 and PCR primers that amplify the NRG1 promoter. Binding of both TP63 isoforms was significantly enriched at the region \u221230 kB from the transcriptional start site (TSS), which encompasses the TP63 binding motif, compared to the control locus at \u221221 kB (Figure 1D). Together, these data suggest that deltaN-TP63 directly regulates NRG1 transcription in SCC.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46551/elife-46551-fig1-v2.jpg)\n\n**Figure 1.:** (A) Correlation of TP63 and NRG1 in LUSC (n\u00a0=\u00a0223) and Esophageal (n\u00a0=\u00a0263) patient samples in TCGA data set. Statistical significance was determined by two-tailed test and Pearson correlation (r) was determined. (B) Relative expression of TP63, NRG1\u03b1 and NRG1\u03b2 upon TP63 knockdown using siRNA in OE21 and KYSE-140 SCCs. (C) Relative expression of TP63 (all, TA and deltaN isoforms), NRG1\u03b1, NRG1\u03b2 upon TP63 knockdown using siRNA in KYSE-180 SCC. Expression of TA and deltaN TP63 and upon TP63 knockdown by siRNA. siRNAs for TA-TP63 (#13), all isoform-TP63 (#14), deltaN-TP63 [#1, #2, #3) and non-target control (NTC#3, NTC#4). Relative quantitation by qPCR in B and C is mean with standard deviation relative to dharmafect transfection reagent control. (D) ChIP analysis of p63alpha and deltaNp63 binding \u221230 kB from the NRG1 transcriptional start site (TSS) in KYSE-180 SCC. IgG and primers amplifying the \u221221 kB region were used as controls. Data is represented as average with standard error of mean from three independent experiments. One-way ANOVA test was used to determine the statistical significance in comparison to IgG. *p<0.05.\n\n### Efficacy of anti-NRG1 in in vivo models of SCC\n\nEmerging evidence suggest that high ERBB3 or high NRG1 expression is associated with poor clinical outcome in SCCs (Qian et al., 2015). We reasoned that in order for NRG1 to promote SCC growth, tumors would have to co-express NRG1 and its receptor ERBB3. Interestingly, NRG1/ERBB3 co-expression appeared prevalent in lung and head and neck SCCs, but was notably rare in lung adenocarcinoma across the various cancer datasets available in TCGA (Figure 2A). To ascertain whether SCCs co-expressing NRG1 and ERBB3 are responsive to inhibition of NRG1 signaling, we screened a panel of cell lines from SCC indications including lung, esophageal and skin for growth sensitivity to an NRG1 blocking antibody (Hegde et al., 2013) in vitro. Anti-NRG1 treatment modestly inhibited the growth of cell lines expressing both NRG1 and ERBB3 (Figure 2B). Because the p63 transcriptional program is critical for both maintenance and cell fate determination of epithelial progenitor cells, we reasoned that perturbation of this program would be more impactful in vivo. We assessed the effect of NRG1 inhibition on xenograft tumors derived from the FaDu head and neck, HCC95 lung and KYSE-180 esophageal squamous cell carcinoma lines. Importantly, anti-NRG1 treatment markedly inhibited tumor growth in each of these models to an extent that far exceeded that observed in vitro. (Figure 3A). In addition, increased keratinization and changes in tumor cell morphology were observed in tumors from anti-NRG1 treated mice (Figure 4\u2014figure supplement 1). To further evaluate the NRG1-dependency in ERBB3/NRG1 co-expressing squamous cell cancers, we tested the efficacy of anti-NRG1 in lung SCC PDX models. Again, anti-NRG1 significantly inhibited the tumor growth of three models that co-express NRG1 and ERBB3, resulting in tumor stasis (Figure 3B and Figure 3\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46551/elife-46551-fig2-v2.jpg)\n\n**Figure 2.:** (A) NRG1 and ERBB3 mRNA levels in head and neck squamous carcinoma (HNSC), lung squamous carcinoma (LUSC) and lung adenocarcinoma (LUAD) patient samples from TCGA. (B) In vitro growth of different SCC cell lines in the presence of anti-NRG1 or control anti-Ragweed antibody. Expression levels of NRG1, Erbb3, Erbb4 and TP63 (RPKM) for each cell line are shown below the respective in vitro growth data. Average growth is presented as is mean with standard error of mean relative to anti-Ragweed from four independent experiments with more than three replicates in every experiment. Statistical significance was determined using t-test with * indicates p<0.05.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46551/elife-46551-fig3-v2.jpg)\n\n**Figure 3.:** Effect of anti-NRG1 or anti-Ragweed (control) antibodies in (A) FaDu (head and neck), HCC95 (lung) and KYSE-180 (esophagus) SCC cell lines in preclinical mouse xenograft models, N\u00a0=\u00a08\u201312 mice/group, (B) Lung SCC PDX models, n\u00a0=\u00a04 mice/group, and (C) Lgr5CreERT2; Ptenflox/flox; KrasLSL-G12D/+ skin GEMM, n\u00a0=\u00a07\u20138 mice/group. Statistical significance was determined by Log-rank test. Red arrow indicates the time of the final antibody dose. (D) H and E staining for GEMM skin at the end of study.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46551/elife-46551-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Effect of anti-NRG1 or anti-Ragweed (control) antibodies in FaDu (head and neck), HCC95 (lung) and KYSE-180 (esophagus) SCC cell lines in preclinical mouse xenograft models, N\u00a0=\u00a08\u201312 mice/group. LUN#120, LUN#150 and LUN#331 are lung SCC PDX models, n\u00a0=\u00a04 mice/group. Percent change in tumor volume was determined at after one weak from last antibody dose in Figure 3 with respect to initial tumor volume of respective animals.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46551/elife-46551-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) In vitro growth of ovarian cell lines in the presence of anti-NRG1 or anti-Ragweed (control) antibody. Expression of NRG1, Erbb3, Erbb4 and TP63 by RNAseq are shown below the respective in vitro growth of different cell lines. Average growth is presented as is mean with standard error of mean relative to anti-Ragweed from four independent experiments with more than three replicates in every experiment. Statistical significance was determined using t-test with * indicates p<0.05. (B) Efficacy of anti-NRG1 or anti-Ragweed (control) antibody in ovarian PDX models, n\u00a0=\u00a08\u201312 mice/group. Red arrow indicates the last dose of antibody.\n\nAlthough NRG1 is not widely recognized as an important factor in cutaneous SCC, downregulation of endogenous NRG1 expression occurs during differentiation of cultured keratinocytes, and activation of NRG1 signaling inhibits keratinocyte differentiation and promotes neo-epidermal outgrowth in human skin explant cultures (De Potter et al., 2001). Furthermore, mice with Krt5-Cre-driven knockout of Erbb3 in basal progenitor cells are resistant to carcinogen-induced skin tumorigenesis and exhibit defective wound healing (Dahlhoff et al., 2015), while Krt5-driven overexpression of deltaN-TP63 enhances carcinogen-induced skin tumorigenesis (Devos et al., 2017). Therefore, we tested the effect of inhibiting NRG1 in the Lgr5CreERT2; Ptenflox/flox; KrasLSL-G12D/+ genetically engineered model of cutaneous SCC. In this highly aggressive tumor model, anti-NRG1 dramatically increased the progression free survival (PFS) compared to control treatment, nearly doubling time to progression from 14 to 27 days (p<0.002) (Figure 3C\u2013D). Progression was defined as enlargement and redness of the lips and snout, as this was the only clinical observation in the animals and macroscopic skin tumors were observed only upon necropsy. In control animals, the dermis was expanded by confluent nests of squamous cells forming tumors that\u00a0>\u00a080% of the dermis in skin lesions sampled from 5 of 7 animals. In contrast, in 5 of 6 anti-NRG1 treated animals, lesions were limited to central dilated keratinization without dermal expansion, consistent with epidermal inclusion cyst, a benign squamous proliferation (Figure 3D).\n\nOur analysis of RNAseq data across tumor indications also revealed prevalent NRG1/ERBB3 co-expression in ovarian cancer. We tested the effect of anti-NRG1 on a panel of ovarian cancer cell lines and indeed proliferation of cell lines expressing both NRG1 and ERBB3 was inhibited by anti-NRG1 in vitro (Figure 3\u2014figure supplement 2A). However, unlike the SCC models, ovarian PDX models expressing NRG1 and ERBB3 were not sensitive to anti-NRG1 treatment in vivo (Figure 3\u2014figure supplement 2B\u2013C) suggesting that dependence on NRG1 signaling may be specific to the TP63 driven cancer types. Together these data support a role for NRG1 in mediating p63 lineage dependency in SCCs.\n\n### Anti-NRG1 induces squamous differentiation\n\nTo explore the mechanism mediating the robust tumor growth inhibition observed in anti-NRG1 treated SCC models, we repeated the in vivo studies for three SCC xenograft models of different anatomic origins and collected tumors after treatment. Histological analysis revealed that in all models anti-NRG1-treated tumors exhibited a more well-differentiated appearance, with increased eosinophilic cytoplasm consistent with enhanced keratinization, indicating that anti-NRG1 treatment was driving differentiation in these tumors (Figure 4\u2014figure supplement 1 and Figure 4A). Moreover, anti-NRG1-treated tumors showed a dramatic increase in the expression of KRT10, a differentiation-specific keratin normally restricted to the post-mitotic layers of stratified-keratinizing and cornifying epithelia (Figure 4A). Immunoblot analyses of treated tumors showed that anti-NRG1 inhibited ERBB3 activation and decreased the levels of multiple proliferation markers, consistent with a mechanism in which differentiation is induced at the expense of proliferation (Figure 4B and Figure 4\u2014figure supplement 2). Markers of apoptosis were not affected (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46551/elife-46551-fig4-v2.jpg)\n\n**Figure 4.:** (A) Representative image of KRT10 (differentiation marker) staining of tumor from FaDu and HCC95 SCC models upon anti-NRG1 treatments compared to anti-Ragweed control. N\u00a0=\u00a05 mice/group. (B) Protein levels of apoptosis markers upon anti-NRG1 treatment in vivo in HCC95 SCC xenografts. phospho-ERBB3 level was used to assess inhibition of signaling. Expression of proliferation markers upon one and three doses of anti-NRG1 relative to anti-Ragweed treatment in vivo in HCC95 lung SCC by RNAseq. (C) Expression of lung basal cell differentiation markers after one or three doses of anti-NRG1 and one dose of anti-Ragweed treatment in HCC95 lung SCC xenograft tumors by RNAseq. N\u00a0=\u00a05 mice/group. Expression of (D) squamous differentiation markers and progenitor cell related markers following three doses of anti-NRG1 relative to anti-Ragweed treatment in HCC95 lung SCC xenograft tumors by RNAseq. Average fold change relative to anti-ragweed from n\u00a0=\u00a05 mice/group.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46551/elife-46551-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Representative image of H and E staining of KYSE-180, HCC95 and FaDu tumors upon anti-NRG1 treatments compared to anti-Ragweed control. N\u00a0=\u00a05 mice/group.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46551/elife-46551-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Expression of proliferation, differentiation and progenitor cell related markers following one dose of anti-NRG1 relative to anti-Ragweed treatment in HCC95 lung SCC xenograft tumors by RNAseq. Average fold change relative to anti-Ragweed from n\u00a0=\u00a05 mice/group.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46551/elife-46551-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Relative expression of differentiation markers such as KRT1, KRT10, IVL and KRTDAP in FaDu, HCC95 and KYSE-180 cell lines after treatment with antibodies for 3 days in vitro.\n\nTo broadly assess changes in expression of differentiation markers, we analyzed RNAseq data, focusing on a gene expression signature of human airway basal cells (Hackett et al., 2011). Anti-NRG1 treatment caused significant changes in the levels of nearly all the genes in the panel (Figure 4C). Notably, many of the genes upregulated by anti-NRG1 treatment are associated with differentiation of stratified epithelia, such as KLK7, BNC1 and ADAMTS1, demonstrating a profound effect on the differentiation state of the tumor cells that becomes more pronounced with ongoing treatment. Of note, NRG1 is itself a marker of airway basal cells, and anti-NRG1 treatment resulted in downregulation of the NRG1 transcript. Upon differentiation, airway basal cells cluster with keratinocytes in unsupervised analyses (Hackett et al., 2011). Therefore, we evaluated markers of keratinocyte differentiation and found that anti-NRG1 treatment resulted in strong upregulation of several well-established keratinocyte differentiation markers (Figure 4D and Figure 4\u2014figure supplement 2), while the expression of several lung progenitor cell markers was decreased (Figure 4D and Figure 4\u2014figure supplement 2). Treatment of SCC cell lines with anti-NRG1 in vitro also increased expression of the differentiation markers KRT1, KRT10, IVL and KRTDAP (Figure 4\u2014figure supplement 3). However, the magnitude of upregulation was much lower than in the tumors, consistent with the more modest effects of anti-NRG1 treatment on the proliferation of cell lines in vitro.\n\nNRG1 signaling supports progenitor cell function and regeneration in a diverse set of normal tissues (Bartus et al., 2016; Bersell et al., 2009). Our data suggest that NRG1 may serve a similar function downstream of TP63 in tumors derived from squamous epithelia. We show that treating squamous tumors with an NRG1 blocking antibody reduced proliferation, concomitant with induced cellular differentiation and increased keratin production. The marked difference in response between in vitro and in vivo models is consistent with a pro-differentiation effect of anti-NRG1 treatment, as cancer cells are known to undergo dedifferentiation and lose tissue-specific expression patterns and differentiation capacity when cultured long term on plastic. In contrast, although NRG1 and ERBB3 co-expression is prevalent in ovarian tumors, ovarian cancer models did not respond to NRG1 inhibition in vivo. Our model predicts such a result, given that fewer than 10% of epithelial ovarian tumors express p63 and it is not a lineage oncogene in this cancer type.\n\nEGFR signaling is known to be an important driver in SCCs and anti-EGFR therapies have been approved for the treatment of head and neck and lung SCCs\u00a0(Sacco and Worden, 2016; Thakur and Wozniak, 2017). In contrast, NRG1-ERBB3 signaling has been implicated as a resistance mechanism to anti-EGFR therapies (Wheeler et al., 2008). However, dual inhibition of ERBB3 and EGFR did not show significant clinical benefit compared to EGFR inhibition alone. Our findings on the role of NRG1 in SCCs raise the possibility that NRG1 may still provide resistance to EGFR therapeutics through ERBB4 receptor activation when ERBB3 is inhibited, and provide rationale for exploring the clinical benefit of NRG1 inhibition in combination with EGFR inhibition in SCCs.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species)or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strainbackground (M. musculus)</td>\n      <td>C.B-17 SCID beige mice</td>\n      <td>Charles River Labs</td>\n      <td>CB17.Cg-PrkdcscidLystbg-J/Crl</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strainbackground (M. musculus)</td>\n      <td>Athymic nude mice</td>\n      <td>Harlan Sprague Dawley (Livermore facility)</td>\n      <td>Hsd:Athymic Nude-Foxn1nu</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (M. musculus)</td>\n      <td>Lgr5CreERT2+; tdTomato; KrasG12Dwt/ki; PTENloxP/loxP</td>\n      <td>Lgr5CreERT2+; pubmed id:21927002 tdTomato; pubmed id: PMC2840225 KrasG12Dwt/ki; pubmed id: 11751630 PTENloxP/loxP; pubmed id: 11691952</td>\n      <td></td>\n      <td>LAR, Genentech</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ragweed</td>\n      <td>Genentech</td>\n      <td>9652</td>\n      <td>In vivo: 20 mg/kg, i.p.,qwk In vitro: 20 ug/ml</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-NRG1</td>\n      <td>Genentech</td>\n      <td>YW538.24.71</td>\n      <td>In vivo: 20 mg/kg, i.p.,qwk In vitro: 20 ug/ml</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>deltaNTP63 (Rabbit Polyclonal IgG)</td>\n      <td>Biolegend</td>\n      <td>RRID:AB_2256361 Cat. #: 619001</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Actin (Mouse IgG)</td>\n      <td>BD Bioscience</td>\n      <td>RRID:AB_2289199 Cat. #: 612656</td>\n      <td>WB (1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>p-ERBB3 (Rabbit mAb)</td>\n      <td>Cell Signaling Technologies</td>\n      <td>RRID:AB_2099709 Cat. #: 4791</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>ERBB3 (Rabbit mAb)</td>\n      <td>Cell Signaling Technologies</td>\n      <td>RRID:AB_2721919 Cat. #: 12708</td>\n      <td>WB (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit PARP (Rabbit polyclonal)</td>\n      <td>Cell Signaling Technologies</td>\n      <td>RRID:AB_2160739 Cat. #: 9542</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Cleaved caspase-3 (Rabbit mAb)</td>\n      <td>Cell Signaling Technologies</td>\n      <td>Cat. #: 9664</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>TP63 alpha (Rabbit mAb)</td>\n      <td>Cell Signaling Technologies</td>\n      <td>RRID:AB_2637091 Cat. #: 13109</td>\n      <td>CHIP (1:100) WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>KRT10 (Rabbit polyclonal)</td>\n      <td>Covance Biologicals</td>\n      <td>RRID:AB_291580 Cat. #: PRB-159P</td>\n      <td>IHC (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TP63-all</td>\n      <td>Life Technologies</td>\n      <td>Hs00978340_m1</td>\n      <td>qPCR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>TA-TP63-TA</td>\n      <td>Life Technologies</td>\n      <td>Hs00186613_m1</td>\n      <td>qPCR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>deltaN-TP63</td>\n      <td>Life Technologies</td>\n      <td>Hs00978339_m1</td>\n      <td>qPCR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NRG1a</td>\n      <td>Life Technologies</td>\n      <td>Hs01103794_m1</td>\n      <td>qPCR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>NRG1b</td>\n      <td>Life Technologies</td>\n      <td>Hs00247624_m1</td>\n      <td>qPCR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KRTDAP</td>\n      <td>Life Technologies</td>\n      <td>Hs00415563_m1</td>\n      <td>qPCR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KRT1</td>\n      <td>Life Technologies</td>\n      <td>Hs00196158_m1</td>\n      <td>qPCR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>KRT10</td>\n      <td>Life Technologies</td>\n      <td>Hs00166289_m1</td>\n      <td>qPCR</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>IVL</td>\n      <td>Life Technologies</td>\n      <td>Hs00846307_s1</td>\n      <td>qPCR</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>TA-TP63</td>\n      <td>Dharmacon</td>\n      <td>#13\u00a0=\u00a0J-003330\u201313</td>\n      <td>siRNA</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>all isoform-TP63</td>\n      <td>Dharmacon</td>\n      <td>#14\u00a0=\u00a0J-003330\u201314</td>\n      <td>siRNA</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>NTC#3</td>\n      <td>Dharmacon</td>\n      <td>D-001810\u201303</td>\n      <td>siRNA</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>NTC#4</td>\n      <td>Dharmacon</td>\n      <td>D-001810\u201304</td>\n      <td>siRNA</td>\n    </tr>\n    <tr>\n      <td>Software,algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>graphpad.com</td>\n      <td>RRID:SCR_002798</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nCancer cell lines were sourced, authenticated, tested for mycoplasma and maintained by the Genentech cell bank (gCELL) as described (Yu et al., 2015). Cell lines were cultured in either RPMI-1640 or Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) growth medium supplemented with 10% of fetal bovine serum (FBS), 2 mmoL glutamine and penicillin/streptomycin. For growth assays, tumor cells were cultured in media containing 2% FBS in 96-well plates, and treated for 96 hr with 20 ug/ml of anti-NRG1 YW538.24.71 (previously described in Hegde et al., 2013) or anti-Ragweed (control) antibodies in triplicate, and assayed using cell titer blue (Promega). For effect of antibodies on differentiation in vitro, FaDu, HCC95 and KYSE-180 tumor cells were cultured with 20 ug/ml of antibodies for three days. RNA was analyzed and qPCR was performed using ABI TaqMan primer/probes as explained below. Detailed characterization of this anti-NRG1 (YW538.24.71) was previously described (Hegde et al., 2013). Statistical significance was determined by t-test from at least three independent experiments. Expression of NRG1, ERBB3 and ERBB4 was assessed by RNAseq.\n\n### Animal studies\n\nAll animal studies were approved by the Institutional Animal Care and Use Committee (IACUC) at Genentech (LASAR numbers 10-2319A, 16\u20131304, 16-1304A, 16\u20130098, 16\u20131120, 16\u20131143 and 16\u20132005, 16\u20131120). For cell line xenograft studies, tumor cells were subcutaneously inoculated into C.B-17 SCID beige mice (FaDu) or athymic nude mice (HCC95 and KYSE-180). Mice were randomized into treatment groups when tumor volumes reached\u00a0~200mm3. Antibodies were dosed once per week intraperitoneally (i.p.) at 20 mg/kg for three doses, and tumor volumes and body weights were measured twice a week. For RNAseq, histology and western blot, HCC95 tumors were collected 72 hr after the first or third dose. For patient-derived tumor xenografts, tumor fragments were subcutaneously implanted into Balb/C nude mice, which were randomized into treatment groups (n\u00a0=\u00a05) when tumor volumes reached 150\u2013250 mm3. Dosing and measurements were performed as noted above for 3\u20134 weeks.\n\n### Genetically engineered mouse model\n\nThe Lgr5CreERT2+; tdTomato; KrasG12Dwt/ki; PTENloxP/loxP squamous skin cancer mouse model (manuscript in preparation), was used following Genentech IACUC guidelines. At 10\u201315 weeks of age, mice were dosed once with Tamoxifen (100 mg/kg, i.p.). Three days after a single tamoxifen dose, mice were divided into two groups with mice of similar proportion of age and sex, and dosed with anti-Ragweed or anti-NRG1 antibodies (20 mg/kg, i.p., once in a week).\n\n### Tumor growth analysis\n\nA mixed-modeling approach was used to analyze tumor volumes for xenograft and PDX studies as explained earlier (Hegde et al., 2013). Cubic regression splines were used to fit a nonlinear profile to the time courses of log2 tumor volume for each treatment group and tumor volumes were plotted as fitted tumor volumes (mm3). Percent tumor growth inhibition (TGI) was calculated relative to the average tumor volume of control (anti-Ragweed) mice. Kaplan-Meier analysis was used to determine progression-free survival for the skin GEMM SCC mice. Log-rank analysis was used for statistical analysis to compare treatment groups.\n\n### RNA interference\n\nCells were plated in medium without antibiotics and transfected with 5 nmol/L of siRNA using Dharmafect transfection reagent (Dharmacon). siRNAs for TA-TP63 (#13\u00a0=\u00a0J-003330\u201313), all isoform-TP63 (#14\u00a0=\u00a0J-003330\u201314), deltaN-TP63 [#1 (S\u00a0=\u00a0GGACAGCAGCAUUGAUCAAUU, AS\u00a0=\u00a0UUGAUCAAUGCUGCUGUCCUU), #2 (S\u00a0=\u00a0CUUCUUAAGUAGAUUCAUAUU, AS\u00a0=\u00a0UAUGAAUCUACUUAAGAAGUU, #3(S\u00a0=\u00a0GGGACUUGAGUUCUGUUAUUU, AS\u00a0=\u00a0AUAACAGAACUCAAGUCCCUU)], and negative control non target control (NTC#3, NTC#4) were purchased from Dharmacon. RNA was isolated after 72 hr using a RNeasy Plus kit (Qiagen). cDNA was prepared using the Advantage RT for PCR kit (Clontech), and qPCR was performed using ABI master mix, and the results were validated by three independent experiments using the following Taqman assays (Life Technologies): TP63-all (Hs00978340_m1), TA-TP63-TA (Hs00186613_m1), deltaN-TP63 (Hs00978339_m1), NRG1a (Hs01103794_m1) and NRG1b (Hs00247624_m1).\n\n### Immunoblotting\n\n72 hr after siRNA transfection, cells were washed twice with PBS and lysed in RIPA buffer containing protease/phosphatase inhibitors at 4\u00b0C. Protein concentrations were determined by BCA (Thermo Scientific). Proteins were separated by SDS-PAGE, transferred to nitrocellulose membrane and stained with the indicated antibodies. HCC95 tumors from the in vivo studies were processed similarly for analysis of pharmacodynamic and apoptotic markers. Antibodies: TP63 alpha (Cell Signaling Technologies, CST 13109), deltaNTP63 (Biolegend 619001), actin (BD Bioscience 612656), p-ERBB3 (CST 4791), ERBB3 (CST 12708), PARP (CST 9542) and Cleaved caspase-3 (CST 9664).\n\n### Chromatin immunoprecipitation (ChIP)\n\nChIP was performed from KYSE-180 cells (Diagenode iDeal CHIP-seq kit for Transcription factors). Cultures of 25 million cells were fixed and cross-linked with formaldehyde (1.1%) for 15 min at room temperature and stopped with glycine. The cell pellet was re-suspended in ChIP lysis buffers and sonicated using a Bioruptor sonicator (Diagenode) to produce chromatin fragments averaging 200\u2013500 bp. Sheared chromatin was incubated overnight at 4\u00b0C with protein A-coated magnetic beads plus either anti-TP63 alpha (CST 13109), anti-deltaNTP63 (BioLegend 619001) or isotype control antibody. Beads were washed, DNA was eluted and crosslinks were reversed during an incubation overnight at 65\u00b0C. Samples were treated with iPure beads and DNA was purified. Quantitative PCR was performed using sybr green PCR master mix (Applied Biosystem) to assess enrichment at the NRG1 promoter. The results were validated by three independent experiments. The ChIP ratio was calculated as enrichment over noise, normalized to the input. Statistical significance was determined by one-way ANOVA. Primers used for CHIP PCR were \u221221 kB NRG1 promoter (5\u2019-TTCAAAAGGGAGTGCCAACTTTTCC-3\u2019, 5\u2019-GGTGCCTCACCTTTCTTCTTCCTGTCC-3\u2019) and \u221230 KB NRG1 promoter (5\u2019-GCCCCAAATTCTTTTGCCCCTTAT-3\u2019, 5\u2019-TTGGTTGGCTTGCTGAAGCTGGTGT-3\u2019) from NRG1 transcript start site as described earlier (Forster et al., 2014).\n\n### Immunohistochemistry\n\nTumors collected after one or three dose of antibodies were fixed in 10% neutral-buffered formalin overnight then transferred to 70% ethanol, processed and embedded into paraffin. Tumor sections were subjected to H and E and IHC using rabbit polyclonal anti-Cytokeratin10 (KRT10) antibody (Covance Biologicals, PRB-159P), incubated at a concentration of 1.0 ug/mL for 60 min at room temperature and binding was visualized using ABC-Peroxidase Elite followed by DAB chromagen and counter stained with Mayer\u2019s hematoxylin. KRT10 expression was reviewed manually by a translational pathologist (JMG) and scored for the percentage of cells demonstrating moderate to strong immunoreactivity, excluding areas of necrosis (0\u2013100%).\n\n### RNA-seq\n\nRNA-seq libraries were prepared using TruSeq RNA Sample Preparation kit (Illumina, CA) and sequenced on Illumina HiSeq 2500 sequencers, yielding an average of 34 million single-end reads (50 bp) per sample. Reads were aligned to the human genome version NCBI GRCh37 using GSNAP. Expression counts per gene were obtained by counting the number of reads aligned concordantly within a pair and uniquely to each gene locus as defined by NCBI, Ensembl gene annotations, and RefSeq mRNA sequences. Differential gene expression analysis was performed using edgeR. Gene enrichment analysis was performed on the edgeR differential expression results using the Gsea Preranked tool available through the Broad\u2019s GSEA application. DESeq was used to compute the variance stabilized expression values for plotting the expression heat maps.\n\n### Statistical analysis\n\nGraphical and statistical data were generated with Microsoft Excel or GraphPad Prism (GraphPad Software, La Jolla, CA, USA). Statistical significance of differences between the results was assessed using a standard 2-tailed t-test or one-way ANOVA using Prism. p<0.05 was considered statistically significant.\n",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "edb05c6d-d77d-41df-83a5-da7ab32295e9",
+      "submission_id": "e3bf32ba-7008-4884-8457-09ee2357bac0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- William C Hahn, Dana-Farber Cancer Institue United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.46551.014](https://doi.org/10.7554/eLife.46551.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"NRG1 is a critical component of the TP63 transcriptional program driving squamous cell cancers in multiple tissues\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kevin Struhl as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers believe that the findings are of potential significance and may have therapeutic implications. Although NRG1 has already been established as a TP63 target in breast cells and NRG1/ERBB signaling has already been reported to play a role in squamous cell carcinoma biology, a strength of the work is the use of human material, murine models and cancer cell lines as well as an antibody to block NRG, which suggests that blocking NRG may affect tumor maintenance. However, the reviewers request additional work to more clearly demonstrate the interaction of NRG and p63, to clarify the specificity of some of the reagents and to determine whether squamous differentiation is the basis of the observed findings.\n\nEssential revisions:\n\n1) The title is quite broad. The reviewers were unclear whether the findings are true in all squamous tissues or are specific for a particular squamous epithelium. This should be addressed, and the title should be changed to more accurately reflect the findings presented in the manuscript.\n\n2) Further evidence to support co-expression/co-localization of NRG and p63 in SCC would strengthen the manuscript.\n\n3) The use of the blocking antibody is powerful but the details of how specific this reagent is for NRG are lacking. Further evidence of specificity and/or the use of genetics to support the findings are necessary.\n\n4) The authors should clarify whether tumors regress or arrest after treatment with the antibody. A waterfall plot of all of the tumors would be helpful.\n\n5) Is there squamous differentiation in cell lines? This needs to be assessed. If so, it is surprising that this did not affect proliferation.\n\n6) Although several experimental models are used, it would be helpful to perform similar experiments in at least three cell lines or to determine whether there are specific squamous tissues in which these findings are most relevant.\n\nFor your information, we have included the reviews below, as you might find them helpful when preparing the revised version of your manuscript.\n\nReviewer #1:\n\nIn this manuscript Jackson and co-workers investigated the role of p63-NRG in tumor cell proliferation and tumor maintenance. They found that p63 and NRG expression co-occurred in the TCGA lung and esophageal cancer datasets. They showed that suppressing p63 decreased NRG expression and was localized to the NRG. Using a NRG antibody they showed that there was a modest effect on cell proliferation but a stronger effect in some tumor models. They argue that the effects on tumors is due to SCC differentiation.\n\nOverall these experiments are well described and well controlled. The observations are timely and important and may have therapeutic implications. However, there are a few points that require some additional clarification.\n\nThe authors argue that the NRG plays a key role in SCC or those that co-express NRG and p63. However, they do not show this directly. It would be helpful to perform experiments in a panel of cell lines in which these markers are noted so that the point can be made clear. This is particularly important since the authors show that some tumors don't respond to anti-NRG, suggesting that they don't co-express p63 and NRG but this is not shown.\n\nIt is also not clear whether the tumors regress or simply arrest. It would be helpful to show a waterfall plot for each tumor.\n\nIt is also not clear why squamous differentiation would not affect proliferation. Have the authors formally assessed whether there is evidence of squamous differentiation in the 2D cultures?\n\nReviewer #2:\n\nThe authors show that NRG1 is a transcriptional target of p63 and argue that anti-NRG1 could be an effective therapy for a wide variety of squamous cell carcinomas. This data is interesting; however, the authors use a very limited number of cell lines and in vivo models. To strengthen the manuscript, the authors should focus on one type of SCC with a more robust number of cell lines and in vivo models.\n\nReviewer #3:\n\nIn this manuscript Hedge et al. show that TP63 directly regulates NRG1 expression in squamous cell carcinoma (SCC) cell lines. In addition, they show that treatment with an anti-NRG1 antibody inhibits the growth of SCC xenograft models and provide evidence that inhibition of NRG1 induces keratinization and terminal squamous differentiation of tumor cells. Although the data are potentially interesting, there are some major issues with the experimental design, which include the following:\n\n1) All experiments aimed at elucidating NRG1 function utilize an NRG1 blocking antibody. However, the authors fail to demonstrate (e.g. by using genetic tools) that the phenotype observed in their model systems upon antibody treatment is specifically mediated by NRG1 inhibition.\n\n2) NRG1 has already been established as a TP63 target in breast cells and NRG1/ERBB signaling has already been reported to play a role in squamous cell carcinoma biology. The authors provide some evidence that NRG1 inhibition decreases SCC cell proliferation and promotes cell differentiation. This hypothesis should be further investigated in properly controlled in 3D cell culture models where the role of ERBB3 and ERBB4 signaling could also be addressed.\n\n3) In Figure 1, it would be important to perform double IHC/IF to demonstrate co-localization of deltaN-TP63 and NRG1 at the protein level in tumor cells within human SCC tissue samples.\n\n4) In Figure 3, immunoblotting data documenting inhibition of Nrg1/ErbB signaling in the treated in vivo models should be provided.\n\n5) In Figure 4, data for anti-Ragweed control (3 dose) should be showed for all experiments.\n",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a3596e61-665a-415b-bae7-cb2777de2869",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C1",
+      "claim": "Squamous cell carcinomas (SCCs) account for the majority of cancer mortalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Squamous cell carcinomas (SCCs) account for the majority of cancer mortalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract without specific supporting data or citations provided in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "c8fa277d-c23f-4065-8ada-c9b4ba2313a6",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C2",
+      "claim": "TP63 is an established lineage-survival oncogene in SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although TP63 is an established lineage-survival oncogene in SCCs, therapeutic strategies have not been developed to target TP63 or it's downstream effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction section discussing TP63's role in SCCs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "22d4f9cf-43ac-4fe3-af45-85067c510d86",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C3",
+      "claim": "Therapeutic strategies have not been developed to target TP63 or its downstream effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although TP63 is an established lineage-survival oncogene in SCCs, therapeutic strategies have not been developed to target TP63 or it's downstream effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "e4ece336-9de6-4f65-8df7-f1eb4ff96fd7",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C4",
+      "claim": "TP63 directly regulates NRG1 expression in human SCC cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we demonstrate that TP63 directly regulates NRG1 expression in human SCC cell lines and that NRG1 is a critical component of the TP63 transcriptional program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data including siRNA knockdown experiments and ChIP-PCR shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "78d0fb55-4084-41aa-b44e-8ad0195e16c4",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C5",
+      "claim": "NRG1 is a critical component of the TP63 transcriptional program.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we demonstrate that TP63 directly regulates NRG1 expression in human SCC cell lines and that NRG1 is a critical component of the TP63 transcriptional program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing the relationship between TP63 and NRG1 and the functional consequences of NRG1 inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "6c8fc793-e411-4492-8b98-1891bb3bec3a",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C6",
+      "claim": "Squamous tumors are dependent on NRG1 signaling in vivo in genetically engineered mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we show that squamous tumors are dependent NRG1 signaling in vivo, in both genetically engineered mouse models and human xenograft models, and demonstrate that inhibition of NRG1 induces keratinization and terminal squamous differentiation of tumor cells, blocking proliferation and inhibiting tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from the Lgr5CreERT2; Ptenflox/flox; KrasLSL-G12D/+ skin GEMM shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "e4f62dd5-fcec-4a8e-93ad-b6cc4e24cc9d",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C7",
+      "claim": "Squamous tumors are dependent on NRG1 signaling in vivo in human xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we show that squamous tumors are dependent NRG1 signaling in vivo, in both genetically engineered mouse models and human xenograft models, and demonstrate that inhibition of NRG1 induces keratinization and terminal squamous differentiation of tumor cells, blocking proliferation and inhibiting tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by xenograft data from FaDu, HCC95, and KYSE-180 cell lines shown in Figure 3A and PDX models in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "9ca92f5e-e18e-4253-8a99-05b17234b869",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C8",
+      "claim": "Inhibition of NRG1 induces keratinization and terminal squamous differentiation of tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we show that squamous tumors are dependent NRG1 signaling in vivo, in both genetically engineered mouse models and human xenograft models, and demonstrate that inhibition of NRG1 induces keratinization and terminal squamous differentiation of tumor cells, blocking proliferation and inhibiting tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by histological analysis, KRT10 staining, and RNAseq data showing upregulation of differentiation markers in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "0d4b3307-8ec8-47a3-a110-b3ee356ef8c3",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C9",
+      "claim": "Inhibition of NRG1 blocks proliferation of squamous tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we show that squamous tumors are dependent NRG1 signaling in vivo, in both genetically engineered mouse models and human xenograft models, and demonstrate that inhibition of NRG1 induces keratinization and terminal squamous differentiation of tumor cells, blocking proliferation and inhibiting tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by decreased expression of proliferation markers shown in Figure 4B and tumor growth inhibition data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "5168d7d8-fba6-4329-b25e-e12179aa7ee2",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C10",
+      "claim": "Inhibition of NRG1 inhibits tumor growth in squamous cell carcinomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we show that squamous tumors are dependent NRG1 signaling in vivo, in both genetically engineered mouse models and human xenograft models, and demonstrate that inhibition of NRG1 induces keratinization and terminal squamous differentiation of tumor cells, blocking proliferation and inhibiting tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by tumor volume measurements in xenograft, PDX, and GEMM models shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "402d88c0-cdac-42ce-b8e2-fcc6a7f8dbdc",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C11",
+      "claim": "NRG1 has a lineage-specific function in SCCs of diverse anatomic origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings identify a lineage-specific function of NRG1 in SCCs of diverse anatomic origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing NRG1 dependency in SCCs from head and neck, lung, esophagus, and skin, but not in ovarian cancers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "a3d672f0-5b1a-4983-a7c3-4166b80eaabc",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C12",
+      "claim": "Lineage addiction has emerged as a common paradigm to explain how certain tumors depend on co-opted survival and self-renewal programs that drive the normal development of the tissues from which they arise.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the past decade, lineage addiction has emerged as a common paradigm to explain how certain tumors depend on co-opted survival and self-renewal programs that drive the normal development of the tissues from which they arise (Garraway and Sellers, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Garraway and Sellers, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "efa7ec06-4ddd-41f9-b278-af399fb052dc",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C13",
+      "claim": "Master regulator transcription factors control large sets of genes regulating cellular identity, differentiation and survival during normal development and tissue homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "During normal development and tissue homeostasis, 'master regulator' transcription factors control large sets of genes regulating cellular identity, differentiation and survival (Chan and Kyba, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Chan and Kyba, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "3db1baed-87fe-462b-9818-e30354b72345",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C14",
+      "claim": "Amplifications of master regulators act as oncogenic drivers in cancers arising in the tissues whose development they normally control.",
+      "claim_type": "EXPLICIT",
+      "source": "Amplifications of master regulators act as oncogenic drivers in cancers arising in the tissues whose development they normally control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by examples of MITF and NKX2.1 provided in the text with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "113ed457-10ab-4943-be24-04702065275b",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C15",
+      "claim": "MITF directs melanocyte development and is amplified in some melanomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include MITF, which directs melanocyte development and is amplified in some melanomas and NKX2.1, which directs development of the distal lung epithelium and is amplified in some lung adenocarcinomas (Kendall et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kendall et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "edc0fa85-4a74-4adf-95b3-124c1e4dbf32",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C16",
+      "claim": "NKX2.1 directs development of the distal lung epithelium and is amplified in some lung adenocarcinomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include MITF, which directs melanocyte development and is amplified in some melanomas and NKX2.1, which directs development of the distal lung epithelium and is amplified in some lung adenocarcinomas (Kendall et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kendall et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "a73ae81e-251a-4e33-947e-5ac16ffc6e29",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C17",
+      "claim": "Some cancers remain fully dependent on transcription factors expressed by precursor cells of the lineage from which they develop, even in the absence of genetic alterations in these genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Some cancers remain fully dependent on transcription factors expressed by precursor cells of the lineage from which they develop, even in the absence of genetic alterations in these genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by examples of AR in prostate cancer and ESR1 in luminal breast cancers.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "e1ef0467-57ca-4d62-bb78-5f27670d3c9a",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C18",
+      "claim": "AR is a lineage dependency factor in prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include AR in prostate cancer and ESR1 in luminal breast cancers (Garraway and Sellers, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Garraway and Sellers, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "6fd8e153-cba7-41a9-9f13-677add332b36",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C19",
+      "claim": "ESR1 is a lineage dependency factor in luminal breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples include AR in prostate cancer and ESR1 in luminal breast cancers (Garraway and Sellers, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Garraway and Sellers, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "8f524bff-5b79-44d9-9a85-c6b877cf6168",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C20",
+      "claim": "Squamous cell cancers share many common properties, including genetic and epigenetic alterations, despite varied anatomic origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite varied anatomic origins, squamous cell cancers (SCCs) share many common properties, including genetic and epigenetic alterations (Dotto and Rustgi, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Dotto and Rustgi, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "00b14fd0-d88b-4a3e-8c7d-b66ee0444375",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C21",
+      "claim": "The TP63 transcription factor exemplifies an important lineage dependency in SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The TP63 transcription factor exemplifies an important lineage dependency in SCCs (Ramsey et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Ramsey et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "fd351179-d9a9-4e2a-9a3c-238ab2acd5f0",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C22",
+      "claim": "Amplification of TP63 is prevalent in SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Amplification of TP63 is prevalent in SCCs, and TP63 expression is used to distinguish SCCs from other cancer subtypes in multiple tissues (Dotto and Rustgi, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Dotto and Rustgi, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "5ae32c43-2b00-4b04-aacd-52b19727a9a5",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C23",
+      "claim": "TP63 expression is used to distinguish SCCs from other cancer subtypes in multiple tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Amplification of TP63 is prevalent in SCCs, and TP63 expression is used to distinguish SCCs from other cancer subtypes in multiple tissues (Dotto and Rustgi, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Dotto and Rustgi, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "f6d88bcf-b70e-4119-a3d5-549e4810f812",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C24",
+      "claim": "SCCs arise in numerous organ systems that contain stratified or pseudo-stratified epithelia, including the lung, head and neck, esophagus, skin, bladder and cervix.",
+      "claim_type": "EXPLICIT",
+      "source": "SCCs arise in numerous organ systems that contain stratified or pseudo-stratified epithelia, including the lung, head and neck, esophagus, skin, bladder and cervix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about SCC tissue origins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "537aeebf-f051-425c-82c7-d663acddfcf1",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C25",
+      "claim": "TP63 is a key regulator of the progenitor cells in the basal cell compartment during normal development and homeostasis of most stratified or pseudostratified epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, like other lineage survival oncogenes, TP63 is a key regulator of the progenitor cells in the basal cell compartment during normal development and homeostasis of most stratified or pseudostratified epithelia (Mills et al., 1999; Yang et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Mills et al., 1999 and Yang et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "f51be8e1-52cb-49ce-a561-9f2c6980618c",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C26",
+      "claim": "TP63 is a transcription factor and is challenging to target therapeutically.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its established role as a driver of lineage dependency, TP63 is a transcription factor, and as such is challenging to target therapeutically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about the difficulty of targeting transcription factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "2d4c19c2-d7d3-47a9-8806-43472e109085",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C27",
+      "claim": "NRG1 expression is directly regulated by TP63 in SCCs of various organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that NRG1 expression is directly regulated by TP63 in SCCs of various organs, and that co-expression of NRG1 and its receptor ERBB3 is prevalent in SCCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by siRNA knockdown and ChIP-PCR experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "6af2c68b-f054-4800-bccb-5304082ecf52",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C28",
+      "claim": "Co-expression of NRG1 and its receptor ERBB3 is prevalent in SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that NRG1 expression is directly regulated by TP63 in SCCs of various organs, and that co-expression of NRG1 and its receptor ERBB3 is prevalent in SCCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TCGA data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "0b0fb79d-7643-465b-bb44-cde82d64f5a9",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C29",
+      "claim": "Many SCC models that co-express NRG1 and ERBB3 depend on NRG1 autocrine signaling in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that many of the SCC models that co-express NRG1 and ERBB3 depend on NRG1 autocrine signaling in vivo, in contrast to non-squamous cancers that exhibit NRG1 autocrine signaling but are not dependent on it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo efficacy data in xenograft, PDX, and GEMM models shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "3d6ee351-e2f8-4312-8aae-7afe02aca5e0",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C30",
+      "claim": "Non-squamous cancers exhibit NRG1 autocrine signaling but are not dependent on it.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that many of the SCC models that co-express NRG1 and ERBB3 depend on NRG1 autocrine signaling in vivo, in contrast to non-squamous cancers that exhibit NRG1 autocrine signaling but are not dependent on it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the lack of efficacy of anti-NRG1 in ovarian PDX models shown in Figure 3\u2014figure supplement 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "255a1760-58bc-40b7-a510-90b433e9c5ab",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C31",
+      "claim": "TP63 is highly expressed in basal cells of various epithelia and is required for progenitor cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "TP63 is highly expressed in basal cells of various epithelia and is required for the progenitor cell function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "8fcffb56-fa45-4fba-8b97-c75a0d3694ad",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C32",
+      "claim": "TP63 acts as a key survival factor and driver of SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, TP63 acts as a key survival factor and driver of SCCs (Rocco et al., 2006; Thurfjell et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Rocco et al., 2006 and Thurfjell et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "d0229bd1-12fb-4bc3-94f7-0b6eb77db7a7",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C33",
+      "claim": "Studies of normal mammary basal cells established that TP63 can directly activate NRG1 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, studies of normal mammary basal cells established that TP63 can directly activate NRG1 transcription (Forster et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Forster et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "98ceccee-d8ab-47eb-845c-7905eab48bf2",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C34",
+      "claim": "NRG1 and TP63 expression significantly correlated in esophageal squamous cell carcinomas as determined from TCGA transcriptome data.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that NRG1 and TP63 expression significantly correlated in both esophageal and lung squamous cell carcinomas (LUSC) as determined from The Cancer Genome Atlas (TCGA) transcriptome data (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 1A with Pearson r = 0.537, p<0.0001 for esophageal samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "cdc78a0a-990c-45f2-8790-c662d9b7fe52",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C35",
+      "claim": "NRG1 and TP63 expression significantly correlated in lung squamous cell carcinomas as determined from TCGA transcriptome data.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that NRG1 and TP63 expression significantly correlated in both esophageal and lung squamous cell carcinomas (LUSC) as determined from The Cancer Genome Atlas (TCGA) transcriptome data (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 1A with Pearson r = 0.604, p<0.0001 for LUSC samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "d116e7f2-40d8-4a79-93a6-edc51be67448",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C36",
+      "claim": "TP63 has two isoform classes that either contain (TA-TP63) or lack (DeltaN-TP63) an N-terminal transactivation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TP63 has two isoform classes that either contain (TA-TP63) or lack (DeltaN-TP63) an N-terminal transactivation domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about TP63 isoforms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "c45f5ed0-03ce-430c-bcf2-5fc2044f3ea3",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C37",
+      "claim": "DeltaN-TP63 is the major isoform expressed in SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite lacking this domain, deltaN-TP63, the major isoform expressed in SCCs, functions as both a positive and negative transcriptional regulator of different target gene subsets (Hibi et al., 2000; Moll and Slade, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to Hibi et al., 2000 and Moll and Slade, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "f0a683bd-8864-488a-b16f-afa35e716ac3",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C38",
+      "claim": "DeltaN-TP63 functions as both a positive and negative transcriptional regulator of different target gene subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite lacking this domain, deltaN-TP63, the major isoform expressed in SCCs, functions as both a positive and negative transcriptional regulator of different target gene subsets (Hibi et al., 2000; Moll and Slade, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Hibi et al., 2000 and Moll and Slade, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "5b3c7d52-620b-4377-a82a-7e120a53eed6",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C39",
+      "claim": "Knockdown of just the TA isoforms modestly reduced NRG1 expression in OE-21 and KYSE-140 SCC cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of just the TA isoforms modestly reduced NRG1 expression, whereas silencing of all isoforms robustly decreased NRG1 expression (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "38db99cd-3e59-415f-b341-d6fc9e5b2ac5",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C40",
+      "claim": "Silencing of all TP63 isoforms robustly decreased NRG1 expression in OE-21 and KYSE-140 SCC cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of just the TA isoforms modestly reduced NRG1 expression, whereas silencing of all isoforms robustly decreased NRG1 expression (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "3314e74d-3cae-4944-b976-43bf79df76de",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C41",
+      "claim": "Knockdown of deltaN-TP63 significantly reduced NRG1 transcripts in KYSE-180 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of deltaN-TP63 significantly reduced NRG1 transcripts, confirming that deltaN-TP63 regulates NRG1 expression in SCCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "37497356-16fc-47cc-8f43-f40ab0f34f4b",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C42",
+      "claim": "DeltaN-TP63 regulates NRG1 expression in SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of deltaN-TP63 significantly reduced NRG1 transcripts, confirming that deltaN-TP63 regulates NRG1 expression in SCCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by siRNA knockdown experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "09b11eb2-3970-44ba-95c1-d2a708ba5197",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C43",
+      "claim": "Binding of both TP63alpha and deltaN-TP63 isoforms was significantly enriched at the region \u221230 kB from the NRG1 transcriptional start site compared to the control locus at \u221221 kB.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of both TP63 isoforms was significantly enriched at the region \u221230 kB from the transcriptional start site (TSS), which encompasses the TP63 binding motif, compared to the control locus at \u221221 kB (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP-PCR data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "eb4d06a3-1dd4-4438-8458-e37f95365205",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C44",
+      "claim": "DeltaN-TP63 directly regulates NRG1 transcription in SCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that deltaN-TP63 directly regulates NRG1 transcription in SCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of siRNA knockdown and ChIP-PCR experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "055f48f3-19f4-41c6-8c0c-e5cc903043b2",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C45",
+      "claim": "High ERBB3 or high NRG1 expression is associated with poor clinical outcome in SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging evidence suggest that high ERBB3 or high NRG1 expression is associated with poor clinical outcome in SCCs (Qian et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Qian et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "ee0e42c9-f2e6-4fb1-8496-92afd869c4cb",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C46",
+      "claim": "NRG1/ERBB3 co-expression appeared prevalent in lung squamous cell carcinomas across various cancer datasets available in TCGA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NRG1/ERBB3 co-expression appeared prevalent in lung and head and neck SCCs, but was notably rare in lung adenocarcinoma across the various cancer datasets available in TCGA (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TCGA data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "ec5e85c7-7f3a-451e-9fad-ec14ef925564",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C47",
+      "claim": "NRG1/ERBB3 co-expression appeared prevalent in head and neck squamous cell carcinomas across various cancer datasets available in TCGA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NRG1/ERBB3 co-expression appeared prevalent in lung and head and neck SCCs, but was notably rare in lung adenocarcinoma across the various cancer datasets available in TCGA (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TCGA data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "1f13f7c0-4f42-4029-a4b4-ec04fa321dea",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C48",
+      "claim": "NRG1/ERBB3 co-expression was notably rare in lung adenocarcinoma across various cancer datasets available in TCGA.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NRG1/ERBB3 co-expression appeared prevalent in lung and head and neck SCCs, but was notably rare in lung adenocarcinoma across the various cancer datasets available in TCGA (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TCGA data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "5656f3a2-d7c8-45ee-9dd0-48b52263e60c",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C49",
+      "claim": "Anti-NRG1 treatment modestly inhibited the growth of SCC cell lines expressing both NRG1 and ERBB3 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-NRG1 treatment modestly inhibited the growth of cell lines expressing both NRG1 and ERBB3 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro growth assay data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "e22d5783-5512-4211-b2ca-69e15ac543c0",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C50",
+      "claim": "The p63 transcriptional program is critical for both maintenance and cell fate determination of epithelial progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the p63 transcriptional program is critical for both maintenance and cell fate determination of epithelial progenitor cells, we reasoned that perturbation of this program would be more impactful in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about p63 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "139205e4-a991-4a9d-80e5-df5a04c6b942",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C51",
+      "claim": "Anti-NRG1 treatment markedly inhibited tumor growth in FaDu head and neck xenograft tumors to an extent that far exceeded that observed in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, anti-NRG1 treatment markedly inhibited tumor growth in each of these models to an extent that far exceeded that observed in vitro. (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tumor volume measurements shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "c3cd5e15-4c04-4e47-b2ab-15a8756991cc",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C52",
+      "claim": "Anti-NRG1 treatment markedly inhibited tumor growth in HCC95 lung squamous cell carcinoma xenograft tumors to an extent that far exceeded that observed in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, anti-NRG1 treatment markedly inhibited tumor growth in each of these models to an extent that far exceeded that observed in vitro. (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tumor volume measurements shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "7ad184b8-da69-424b-b77a-4344c8cd490d",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C53",
+      "claim": "Anti-NRG1 treatment markedly inhibited tumor growth in KYSE-180 esophageal squamous cell carcinoma xenograft tumors to an extent that far exceeded that observed in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, anti-NRG1 treatment markedly inhibited tumor growth in each of these models to an extent that far exceeded that observed in vitro. (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tumor volume measurements shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "e29025a0-5ccb-4f80-9d8d-ea40e4dc8937",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C54",
+      "claim": "Increased keratinization and changes in tumor cell morphology were observed in tumors from anti-NRG1 treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, increased keratinization and changes in tumor cell morphology were observed in tumors from anti-NRG1 treated mice (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "6edb375c-2f91-4540-8220-4c560bddd560",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C55",
+      "claim": "Anti-NRG1 significantly inhibited the tumor growth of three lung SCC PDX models that co-express NRG1 and ERBB3, resulting in tumor stasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, anti-NRG1 significantly inhibited the tumor growth of three models that co-express NRG1 and ERBB3, resulting in tumor stasis (Figure 3B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tumor volume measurements in PDX models shown in Figure 3B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "e7aa9736-a48a-4383-be88-e1a9bf0274bb",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C56",
+      "claim": "NRG1 is not widely recognized as an important factor in cutaneous SCC.",
+      "claim_type": "EXPLICIT",
+      "source": "Although NRG1 is not widely recognized as an important factor in cutaneous SCC, downregulation of endogenous NRG1 expression occurs during differentiation of cultured keratinocytes, and activation of NRG1 signaling inhibits keratinocyte differentiation and promotes neo-epidermal outgrowth in human skin explant cultures (De Potter et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge with supporting citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "97f36b07-8fa2-466c-95f5-d39ae429ff88",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C57",
+      "claim": "Downregulation of endogenous NRG1 expression occurs during differentiation of cultured keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although NRG1 is not widely recognized as an important factor in cutaneous SCC, downregulation of endogenous NRG1 expression occurs during differentiation of cultured keratinocytes, and activation of NRG1 signaling inhibits keratinocyte differentiation and promotes neo-epidermal outgrowth in human skin explant cultures (De Potter et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to De Potter et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "8eb93e8a-12e1-4a5b-952a-d2c044316c94",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C58",
+      "claim": "Activation of NRG1 signaling inhibits keratinocyte differentiation and promotes neo-epidermal outgrowth in human skin explant cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Although NRG1 is not widely recognized as an important factor in cutaneous SCC, downregulation of endogenous NRG1 expression occurs during differentiation of cultured keratinocytes, and activation of NRG1 signaling inhibits keratinocyte differentiation and promotes neo-epidermal outgrowth in human skin explant cultures (De Potter et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to De Potter et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "3fa2b4bc-c050-4f3d-a5e0-237e2fdbf2f9",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C59",
+      "claim": "Mice with Krt5-Cre-driven knockout of Erbb3 in basal progenitor cells are resistant to carcinogen-induced skin tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mice with Krt5-Cre-driven knockout of Erbb3 in basal progenitor cells are resistant to carcinogen-induced skin tumorigenesis and exhibit defective wound healing (Dahlhoff et al., 2015), while Krt5-driven overexpression of deltaN-TP63 enhances carcinogen-induced skin tumorigenesis (Devos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Dahlhoff et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "72112c85-ffbc-4648-9e5f-732067d7abbf",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C60",
+      "claim": "Mice with Krt5-Cre-driven knockout of Erbb3 in basal progenitor cells exhibit defective wound healing.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mice with Krt5-Cre-driven knockout of Erbb3 in basal progenitor cells are resistant to carcinogen-induced skin tumorigenesis and exhibit defective wound healing (Dahlhoff et al., 2015), while Krt5-driven overexpression of deltaN-TP63 enhances carcinogen-induced skin tumorigenesis (Devos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Dahlhoff et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "6038fbbb-ef87-4cc0-9194-0e8f2a95ac15",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C61",
+      "claim": "Krt5-driven overexpression of deltaN-TP63 enhances carcinogen-induced skin tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mice with Krt5-Cre-driven knockout of Erbb3 in basal progenitor cells are resistant to carcinogen-induced skin tumorigenesis and exhibit defective wound healing (Dahlhoff et al., 2015), while Krt5-driven overexpression of deltaN-TP63 enhances carcinogen-induced skin tumorigenesis (Devos et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Devos et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "dea33f46-b131-4011-b3bf-6deeb03709a7",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C62",
+      "claim": "Anti-NRG1 dramatically increased the progression free survival in the Lgr5CreERT2; Ptenflox/flox; KrasLSL-G12D/+ genetically engineered model of cutaneous SCC, nearly doubling time to progression from 14 to 27 days (p<0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "In this highly aggressive tumor model, anti-NRG1 dramatically increased the progression free survival (PFS) compared to control treatment, nearly doubling time to progression from 14 to 27 days (p<0.002) (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Kaplan-Meier survival analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "526fc1d9-a152-4fbc-8499-9236a902467b",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C63",
+      "claim": "In control animals of the skin GEMM, the dermis was expanded by confluent nests of squamous cells forming tumors that comprised >80% of the dermis in skin lesions sampled from 5 of 7 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In control animals, the dermis was expanded by confluent nests of squamous cells forming tumors that > 80% of the dermis in skin lesions sampled from 5 of 7 animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on histological analysis of control animals in the skin GEMM study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "92a99dbc-cf13-4da3-9e19-fbee41edb732",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C64",
+      "claim": "In 5 of 6 anti-NRG1 treated animals in the skin GEMM, lesions were limited to central dilated keratinization without dermal expansion, consistent with epidermal inclusion cyst, a benign squamous proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in 5 of 6 anti-NRG1 treated animals, lesions were limited to central dilated keratinization without dermal expansion, consistent with epidermal inclusion cyst, a benign squamous proliferation (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "a8ea318d-15e2-4eb0-9645-76dff75ae6b5",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C65",
+      "claim": "RNAseq data analysis revealed prevalent NRG1/ERBB3 co-expression in ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of RNAseq data across tumor indications also revealed prevalent NRG1/ERBB3 co-expression in ovarian cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of RNAseq data across tumor types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "8a02a23a-2fad-4b8c-be5d-bc5f87ce8eb8",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C66",
+      "claim": "Proliferation of ovarian cancer cell lines expressing both NRG1 and ERBB3 was inhibited by anti-NRG1 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the effect of anti-NRG1 on a panel of ovarian cancer cell lines and indeed proliferation of cell lines expressing both NRG1 and ERBB3 was inhibited by anti-NRG1 in vitro (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro growth assay data shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "37c6bdf5-4905-4bd0-804b-738ae60ac5ae",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C67",
+      "claim": "Ovarian PDX models expressing NRG1 and ERBB3 were not sensitive to anti-NRG1 treatment in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the SCC models, ovarian PDX models expressing NRG1 and ERBB3 were not sensitive to anti-NRG1 treatment in vivo (Figure 3\u2014figure supplement 2B\u2013C) suggesting that dependence on NRG1 signaling may be specific to the TP63 driven cancer types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by tumor volume measurements in ovarian PDX models shown in Figure 3\u2014figure supplement 2B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "8adc9c71-3a06-47a9-b57b-2a1345e7bc8d",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C68",
+      "claim": "Dependence on NRG1 signaling may be specific to the TP63 driven cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the SCC models, ovarian PDX models expressing NRG1 and ERBB3 were not sensitive to anti-NRG1 treatment in vivo (Figure 3\u2014figure supplement 2B\u2013C) suggesting that dependence on NRG1 signaling may be specific to the TP63 driven cancer types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential response between SCC and ovarian cancer models to anti-NRG1 treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "695d94a4-909d-438a-b819-9e35a8e2ef23",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C69",
+      "claim": "NRG1 mediates p63 lineage dependency in SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data support a role for NRG1 in mediating p63 lineage dependency in SCCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data showing TP63 regulation of NRG1 and the dependency of SCCs on NRG1 signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "b70a35fd-a633-45c7-ac6c-743da39b4526",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C70",
+      "claim": "Anti-NRG1-treated tumors exhibited a more well-differentiated appearance, with increased eosinophilic cytoplasm consistent with enhanced keratinization.",
+      "claim_type": "EXPLICIT",
+      "source": "Histological analysis revealed that in all models anti-NRG1-treated tumors exhibited a more well-differentiated appearance, with increased eosinophilic cytoplasm consistent with enhanced keratinization, indicating that anti-NRG1 treatment was driving differentiation in these tumors (Figure 4\u2014figure supplement 1 and Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological analysis shown in Figure 4\u2014figure supplement 1 and Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "73d2995a-d8d3-4d58-b3f7-4b67f6820952",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C71",
+      "claim": "Anti-NRG1 treatment was driving differentiation in SCC tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Histological analysis revealed that in all models anti-NRG1-treated tumors exhibited a more well-differentiated appearance, with increased eosinophilic cytoplasm consistent with enhanced keratinization, indicating that anti-NRG1 treatment was driving differentiation in these tumors (Figure 4\u2014figure supplement 1 and Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from histological changes and molecular marker expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "79aa270f-3405-4686-be41-a6d13c1cd802",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C72",
+      "claim": "Anti-NRG1-treated tumors showed a dramatic increase in the expression of KRT10, a differentiation-specific keratin normally restricted to the post-mitotic layers of stratified-keratinizing and cornifying epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, anti-NRG1-treated tumors showed a dramatic increase in the expression of KRT10, a differentiation-specific keratin normally restricted to the post-mitotic layers of stratified-keratinizing and cornifying epithelia (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by KRT10 immunohistochemistry shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "f76c343a-2bd2-4402-9fa7-a5693f084929",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C73",
+      "claim": "Anti-NRG1 inhibited ERBB3 activation in treated tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblot analyses of treated tumors showed that anti-NRG1 inhibited ERBB3 activation and decreased the levels of multiple proliferation markers, consistent with a mechanism in which differentiation is induced at the expense of proliferation (Figure 4B and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot analysis showing decreased phospho-ERBB3 in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "d6430346-cffb-43a9-8801-8d03de7d43d5",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C74",
+      "claim": "Anti-NRG1 decreased the levels of multiple proliferation markers in treated tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblot analyses of treated tumors showed that anti-NRG1 inhibited ERBB3 activation and decreased the levels of multiple proliferation markers, consistent with a mechanism in which differentiation is induced at the expense of proliferation (Figure 4B and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data showing decreased expression of proliferation markers in Figure 4B and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "8f45caa4-93d0-42e3-8525-8d4e853b4918",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C75",
+      "claim": "Anti-NRG1 treatment induces differentiation at the expense of proliferation in SCC tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblot analyses of treated tumors showed that anti-NRG1 inhibited ERBB3 activation and decreased the levels of multiple proliferation markers, consistent with a mechanism in which differentiation is induced at the expense of proliferation (Figure 4B and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined observations of increased differentiation markers and decreased proliferation markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "e0a3f45d-2534-451b-9f03-08ce194a7e99",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C76",
+      "claim": "Markers of apoptosis were not affected by anti-NRG1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Markers of apoptosis were not affected (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblot analysis of PARP and cleaved caspase-3 shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "22b62de2-8190-4dff-b170-2f153a312ee7",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C77",
+      "claim": "Anti-NRG1 treatment caused significant changes in the levels of nearly all genes in a human airway basal cell gene expression signature.",
+      "claim_type": "EXPLICIT",
+      "source": "To broadly assess changes in expression of differentiation markers, we analyzed RNAseq data, focusing on a gene expression signature of human airway basal cells (Hackett et al., 2011). Anti-NRG1 treatment caused significant changes in the levels of nearly all the genes in the panel (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq analysis shown in Figure 4C with citation to Hackett et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "2abd679e-c757-4993-91e8-bcfd558e5a2b",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C78",
+      "claim": "Many of the genes upregulated by anti-NRG1 treatment are associated with differentiation of stratified epithelia, such as KLK7, BNC1 and ADAMTS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, many of the genes upregulated by anti-NRG1 treatment are associated with differentiation of stratified epithelia, such as KLK7, BNC1 and ADAMTS1, demonstrating a profound effect on the differentiation state of the tumor cells that becomes more pronounced with ongoing treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAseq data analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "353ec3d1-22b1-48e8-a0a4-fb1ffe51461d",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C79",
+      "claim": "Anti-NRG1 treatment demonstrates a profound effect on the differentiation state of tumor cells that becomes more pronounced with ongoing treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, many of the genes upregulated by anti-NRG1 treatment are associated with differentiation of stratified epithelia, such as KLK7, BNC1 and ADAMTS1, demonstrating a profound effect on the differentiation state of the tumor cells that becomes more pronounced with ongoing treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing gene expression changes after one versus three doses of anti-NRG1 shown in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "5cc76a5c-6e41-4b4e-941d-aba972bba17d",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C80",
+      "claim": "NRG1 is a marker of airway basal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, NRG1 is itself a marker of airway basal cells, and anti-NRG1 treatment resulted in downregulation of the NRG1 transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to the airway basal cell signature from Hackett et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "1b3cbfa3-af6a-4549-8371-93390acb58f9",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C81",
+      "claim": "Anti-NRG1 treatment resulted in downregulation of the NRG1 transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, NRG1 is itself a marker of airway basal cells, and anti-NRG1 treatment resulted in downregulation of the NRG1 transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAseq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "f3f0e845-810e-4b4e-9a21-580b6d828c98",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C82",
+      "claim": "Upon differentiation, airway basal cells cluster with keratinocytes in unsupervised analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon differentiation, airway basal cells cluster with keratinocytes in unsupervised analyses (Hackett et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Hackett et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "a0dd859b-b541-4fb3-a98e-9ef8d2c859c0",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C83",
+      "claim": "Anti-NRG1 treatment resulted in strong upregulation of several well-established keratinocyte differentiation markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we evaluated markers of keratinocyte differentiation and found that anti-NRG1 treatment resulted in strong upregulation of several well-established keratinocyte differentiation markers (Figure 4D and Figure 4\u2014figure supplement 2), while the expression of several lung progenitor cell markers was decreased (Figure 4D and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 4D and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "091dd1dd-41ff-4e75-8cef-6ee8fe35d74e",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C84",
+      "claim": "Anti-NRG1 treatment decreased the expression of several lung progenitor cell markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we evaluated markers of keratinocyte differentiation and found that anti-NRG1 treatment resulted in strong upregulation of several well-established keratinocyte differentiation markers (Figure 4D and Figure 4\u2014figure supplement 2), while the expression of several lung progenitor cell markers was decreased (Figure 4D and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNAseq data shown in Figure 4D and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "f2d7a0fa-a04d-4025-bc58-44da292d1a1e",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C85",
+      "claim": "Treatment of SCC cell lines with anti-NRG1 in vitro increased expression of the differentiation markers KRT1, KRT10, IVL and KRTDAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of SCC cell lines with anti-NRG1 in vitro also increased expression of the differentiation markers KRT1, KRT10, IVL and KRTDAP (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "c8723185-6ad0-412c-b636-4db4851c4a8b",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C86",
+      "claim": "The magnitude of upregulation of differentiation markers by anti-NRG1 in vitro was much lower than in tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the magnitude of upregulation was much lower than in the tumors, consistent with the more modest effects of anti-NRG1 treatment on the proliferation of cell lines in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing in vitro and in vivo data on differentiation marker expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "c4410b6a-8218-4b05-927d-59330caf192b",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C87",
+      "claim": "NRG1 signaling supports progenitor cell function and regeneration in a diverse set of normal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "NRG1 signaling supports progenitor cell function and regeneration in a diverse set of normal tissues (Bartus et al., 2016; Bersell et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bartus et al., 2016 and Bersell et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "dfc74b36-1ec9-4f9b-b451-18991cd5cc27",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C88",
+      "claim": "NRG1 serves a similar function downstream of TP63 in tumors derived from squamous epithelia as it does in supporting progenitor cell function in normal tissues.",
+      "claim_type": "IMPLICIT",
+      "source": "Our data suggest that NRG1 may serve a similar function downstream of TP63 in tumors derived from squamous epithelia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed effects of NRG1 inhibition on differentiation and the known role of NRG1 in progenitor cells.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "8f563df6-3529-4397-b660-722bc3209fa9",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C89",
+      "claim": "Treating squamous tumors with an NRG1 blocking antibody reduced proliferation, concomitant with induced cellular differentiation and increased keratin production.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that treating squamous tumors with an NRG1 blocking antibody reduced proliferation, concomitant with induced cellular differentiation and increased keratin production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the combined data from tumor growth studies, proliferation markers, and differentiation markers shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "dc69b91e-1ec6-4055-9f92-ca64b71175f7",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C90",
+      "claim": "The marked difference in response between in vitro and in vivo models is consistent with a pro-differentiation effect of anti-NRG1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The marked difference in response between in vitro and in vivo models is consistent with a pro-differentiation effect of anti-NRG1 treatment, as cancer cells are known to undergo dedifferentiation and lose tissue-specific expression patterns and differentiation capacity when cultured long term on plastic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that anti-NRG1 has greater effects in vivo than in vitro, combined with knowledge about cell culture effects on differentiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "caf811c5-f5f1-4970-8a6a-b60e103bebb8",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C91",
+      "claim": "Cancer cells undergo dedifferentiation and lose tissue-specific expression patterns and differentiation capacity when cultured long term on plastic.",
+      "claim_type": "EXPLICIT",
+      "source": "The marked difference in response between in vitro and in vivo models is consistent with a pro-differentiation effect of anti-NRG1 treatment, as cancer cells are known to undergo dedifferentiation and lose tissue-specific expression patterns and differentiation capacity when cultured long term on plastic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about cell culture effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "600088d4-bb8f-4350-a248-6252a1e9727b",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C92",
+      "claim": "Fewer than 10% of epithelial ovarian tumors express p63.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts such a result, given that fewer than 10% of epithelial ovarian tumors express p63 and it is not a lineage oncogene in this cancer type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge to explain the lack of NRG1 dependency in ovarian cancers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "376c223f-ce29-41db-98c4-aa13d6492952",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C93",
+      "claim": "p63 is not a lineage oncogene in ovarian cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts such a result, given that fewer than 10% of epithelial ovarian tumors express p63 and it is not a lineage oncogene in this cancer type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge to explain the lack of NRG1 dependency in ovarian cancers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "8d24e347-7bf9-43c4-9a9f-f2d84c704db2",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C94",
+      "claim": "EGFR signaling is an important driver in SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR signaling is known to be an important driver in SCCs and anti-EGFR therapies have been approved for the treatment of head and neck and lung SCCs (Sacco and Worden, 2016; Thakur and Wozniak, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Sacco and Worden, 2016 and Thakur and Wozniak, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "2db6de8b-6b3b-403b-be70-f8ea050d7ae6",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C95",
+      "claim": "Anti-EGFR therapies have been approved for the treatment of head and neck SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR signaling is known to be an important driver in SCCs and anti-EGFR therapies have been approved for the treatment of head and neck and lung SCCs (Sacco and Worden, 2016; Thakur and Wozniak, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Sacco and Worden, 2016 and Thakur and Wozniak, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "7a4a769f-bcdf-4a77-93f0-fb591b2e9ab4",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C96",
+      "claim": "Anti-EGFR therapies have been approved for the treatment of lung SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "EGFR signaling is known to be an important driver in SCCs and anti-EGFR therapies have been approved for the treatment of head and neck and lung SCCs (Sacco and Worden, 2016; Thakur and Wozniak, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Sacco and Worden, 2016 and Thakur and Wozniak, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "a737dd5f-915f-40b2-afd2-0cb98be0196f",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C97",
+      "claim": "NRG1-ERBB3 signaling has been implicated as a resistance mechanism to anti-EGFR therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NRG1-ERBB3 signaling has been implicated as a resistance mechanism to anti-EGFR therapies (Wheeler et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Wheeler et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "5702e5b7-d060-4a2b-927f-b5b49e1a4aaa",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C98",
+      "claim": "Dual inhibition of ERBB3 and EGFR did not show significant clinical benefit compared to EGFR inhibition alone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, dual inhibition of ERBB3 and EGFR did not show significant clinical benefit compared to EGFR inhibition alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge about clinical trial results.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "6ec374eb-5041-44d2-aa2c-f4b34a98686f",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C99",
+      "claim": "NRG1 may provide resistance to EGFR therapeutics through ERBB4 receptor activation when ERBB3 is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings on the role of NRG1 in SCCs raise the possibility that NRG1 may still provide resistance to EGFR therapeutics through ERBB4 receptor activation when ERBB3 is inhibited, and provide rationale for exploring the clinical benefit of NRG1 inhibition in combination with EGFR inhibition in SCCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings about NRG1's role in SCCs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "81e78a2f-1f90-4867-9029-5107ad30bca8",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "claim_id": "C100",
+      "claim": "There is rationale for exploring the clinical benefit of NRG1 inhibition in combination with EGFR inhibition in SCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings on the role of NRG1 in SCCs raise the possibility that NRG1 may still provide resistance to EGFR therapeutics through ERBB4 receptor activation when ERBB3 is inhibited, and provide rationale for exploring the clinical benefit of NRG1 inhibition in combination with EGFR inhibition in SCCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TP63 directly regulates NRG1 expression in squamous cell carcinomas. The authors demonstrate correlation between TP63 and NRG1 expression in TCGA datasets, show that siRNA knockdown of TP63 isoforms reduces NRG1 expression in multiple SCC cell lines, and provide ChIP-PCR evidence of direct TP63 binding to the NRG1 promoter region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C27, C34-C35, C39-C44 collectively provide strong evidence through multiple complementary approaches: TCGA correlation analysis (r=0.604 and 0.537, p<0.0001), siRNA knockdown experiments in multiple cell lines showing dose-dependent reduction in NRG1 expression, and ChIP-PCR demonstrating enrichment of both TP63\u03b1 and \u0394N-TP63 at the NRG1 promoter. The convergence of correlative, functional, and mechanistic data strongly supports direct transcriptional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "25712b59-715b-4fcc-89c5-edb93514aa0a",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NRG1 and ERBB3 are co-expressed in squamous cell carcinomas but not in lung adenocarcinoma. Analysis of TCGA datasets shows prevalent co-expression in head and neck and lung SCCs, while co-expression is rare in lung adenocarcinoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C46-C48 are supported by TCGA data analysis shown in Figure 2A. The visual representation clearly demonstrates differential co-expression patterns between SCC subtypes and adenocarcinoma. However, the manuscript does not provide quantitative thresholds or statistical tests for what constitutes 'prevalent' versus 'rare' co-expression, which would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "de33485f-dd1e-41c1-a3ca-27b25216f8e7",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Squamous cell carcinomas are dependent on NRG1 signaling in vivo. Anti-NRG1 antibody treatment markedly inhibited tumor growth in xenograft models (FaDu, HCC95, KYSE-180), PDX models (three lung SCC models), and a genetically engineered mouse model of cutaneous SCC, with effects far exceeding those observed in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C29, C51-C53, C55, C62 are well-supported by in vivo efficacy data across multiple model systems shown in Figure 3. The xenograft, PDX, and GEMM data consistently demonstrate tumor growth inhibition with anti-NRG1 treatment. Statistical significance is reported for the GEMM (p<0.002). The consistency across diverse anatomic origins (head/neck, lung, esophagus, skin) strengthens the conclusion. Sample sizes appear adequate (n=4-12 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "11d51766-7ee2-411e-90a9-1ea745169af5",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Anti-NRG1 treatment induces keratinization and squamous differentiation in SCC tumors. Histological analysis revealed increased eosinophilic cytoplasm consistent with enhanced keratinization, and dramatic increases in KRT10 expression, a differentiation-specific keratin marker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C70-C72 are supported by histological analysis (Figure 4\u2014figure supplement 1, Figure 4A) and KRT10 immunohistochemistry across multiple models. The visual evidence is compelling and consistent across different SCC subtypes. However, the manuscript mentions that KRT10 expression was scored as percentage of cells with moderate to strong immunoreactivity, but quantitative data for all models is not fully presented in the text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "52db1306-234c-4f65-a96d-c2305192776f",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Anti-NRG1 treatment blocks proliferation and inhibits tumor growth through induction of differentiation rather than apoptosis. Immunoblot and RNAseq analyses show inhibition of ERBB3 activation, decreased proliferation markers, but no change in apoptosis markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C73-C76 are supported by multiple lines of evidence: tumor volume measurements (Figure 3), immunoblot analysis showing decreased phospho-ERBB3 and unchanged apoptosis markers (Figure 4B), and RNAseq data showing decreased proliferation marker expression (Figure 4B, Figure 4\u2014figure supplement 2). The mechanistic interpretation that differentiation occurs 'at the expense of proliferation' is reasonable given the data, though the causal relationship could be more rigorously tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "a66b6661-c500-44b3-b8a3-537e2dad97ce",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Anti-NRG1 treatment causes widespread changes in differentiation-related gene expression. RNAseq analysis shows significant changes in airway basal cell markers and strong upregulation of keratinocyte differentiation markers (KLK7, BNC1, ADAMTS1), with effects becoming more pronounced with ongoing treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79, C83-C84 are supported by RNAseq data shown in Figure 4C-D and Figure 4\u2014figure supplement 2. The use of an established airway basal cell gene signature (Hackett et al., 2011) provides a systematic framework for analysis. The comparison between one and three doses demonstrates dose-dependent effects. However, the manuscript does not specify the statistical thresholds used to define 'significant changes' or provide adjusted p-values for multiple testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "63158c0b-38b5-4ccd-9b94-3838b4684d70",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NRG1 dependency is specific to TP63-driven squamous cell carcinomas. While ovarian cancer cell lines expressing NRG1 and ERBB3 showed sensitivity to anti-NRG1 in vitro, ovarian PDX models were not sensitive in vivo, contrasting with SCC models. This suggests NRG1 mediates p63 lineage dependency specifically in SCCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C65-C69 are supported by the differential response between SCC and ovarian cancer models (Figure 3\u2014figure supplement 2). The in vitro sensitivity but in vivo resistance of ovarian models provides a critical negative control. The interpretation linking this to TP63 expression (C68-C69, C92-C93) is logical given that <10% of ovarian tumors express p63. However, this remains correlative; direct testing of the TP63 dependency hypothesis would require additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "eeb434b3-dccb-4952-a7dd-cc49f8c6a650",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Anti-NRG1 has modest effects in vitro compared to dramatic effects in vivo. In vitro treatment modestly inhibited growth and increased differentiation markers, but the magnitude was much lower than in tumors, consistent with a pro-differentiation effect that requires in vivo context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C85-C86, C90 are supported by comparing in vitro (Figure 2B, Figure 4\u2014figure supplement 3) and in vivo (Figure 3, Figure 4) data. The interpretation that this difference reflects loss of differentiation capacity in long-term culture (C91) is reasonable and supported by general knowledge. However, alternative explanations (e.g., differences in drug exposure, tumor microenvironment effects) are not fully explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "cdbe63ae-d897-4708-81b4-c6b4f0a8da0e",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NRG1 has a lineage-specific function in SCCs of diverse anatomic origin as a critical component of the TP63 transcriptional program. The authors propose that NRG1 serves a similar progenitor cell maintenance function downstream of TP63 in tumors as it does in normal tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C5, C88-C89 represent the overarching conclusions of the study. These are well-supported by the collective evidence showing: (1) TP63 regulation of NRG1, (2) NRG1/ERBB3 co-expression in SCCs, (3) in vivo dependency across multiple SCC models from different anatomic sites, (4) induction of differentiation upon NRG1 inhibition, and (5) specificity to TP63-expressing cancers. Claim C88 is appropriately qualified as speculative in the original text.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "f76b83f8-3559-4cb6-83b3-0befc70a9199",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Anti-NRG1 treatment in the skin GEMM prevented progression to invasive SCC. Control animals developed tumors comprising >80% of dermis in 5/7 animals, while 5/6 anti-NRG1 treated animals had only benign epidermal inclusion cysts without dermal expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54, C63-C64 are supported by histological analysis and survival data from the GEMM study (Figure 3C-D). The dramatic difference in histological appearance and the near-doubling of progression-free survival (14 to 27 days, p<0.002) provide strong evidence. However, the sample sizes are relatively small (n=6-7 per group), and the definition of 'progression' based on clinical observation rather than confirmed tumor burden is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "5ce6dcfc-4f4f-4f49-9267-7c388b2df43a",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Squamous cell carcinomas account for the majority of cancer mortalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Claim C1 is stated in the abstract without supporting data or citations. This claim is likely inaccurate\u2014while SCCs are common and deadly, they do not account for the 'majority' of cancer deaths globally. Lung adenocarcinoma, colorectal cancer, and other non-squamous cancers collectively cause more deaths. This appears to be an overstatement that should be corrected or properly cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "cab26124-1e14-4e30-8e55-9ad7599624bf",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background and contextual claims about lineage addiction, TP63 biology, SCC characteristics, and related signaling pathways. These claims establish the scientific context and rationale for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C12-C26, C31-C33, C36-C38, C45, C50, C56-C61, C80, C82, C87, C91-C98 are background statements supported by appropriate citations to the literature. These provide necessary context but are not primary findings of this study. The citations appear appropriate and the statements align with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    },
+    {
+      "id": "bbff803a-ffac-481a-a796-f556ba95c687",
+      "content_id": "156df00f-db10-43fa-bb9e-e951b87c9634",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that NRG1 may provide resistance to EGFR therapeutics through ERBB4 activation when ERBB3 is inhibited, providing rationale for exploring NRG1 inhibition in combination with EGFR inhibition in SCCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C100 are speculative proposals for future work based on the study findings. While the rationale is logical given the established role of NRG1-ERBB3 signaling in EGFR resistance and the new findings about NRG1 in SCCs, no experimental data is provided to test this hypothesis. These are appropriately framed as possibilities rather than demonstrated findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:22:36.354061Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e4ece336-9de6-4f65-8df7-f1eb4ff96fd7",
+      "result_id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2"
+    },
+    {
+      "claim_id": "2d4c19c2-d7d3-47a9-8806-43472e109085",
+      "result_id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2"
+    },
+    {
+      "claim_id": "98ceccee-d8ab-47eb-845c-7905eab48bf2",
+      "result_id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2"
+    },
+    {
+      "claim_id": "cdc78a0a-990c-45f2-8790-c662d9b7fe52",
+      "result_id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2"
+    },
+    {
+      "claim_id": "5b3c7d52-620b-4377-a82a-7e120a53eed6",
+      "result_id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2"
+    },
+    {
+      "claim_id": "38db99cd-3e59-415f-b341-d6fc9e5b2ac5",
+      "result_id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2"
+    },
+    {
+      "claim_id": "3314e74d-3cae-4944-b976-43bf79df76de",
+      "result_id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2"
+    },
+    {
+      "claim_id": "37497356-16fc-47cc-8f43-f40ab0f34f4b",
+      "result_id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2"
+    },
+    {
+      "claim_id": "09b11eb2-3970-44ba-95c1-d2a708ba5197",
+      "result_id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2"
+    },
+    {
+      "claim_id": "eb4d06a3-1dd4-4438-8458-e37f95365205",
+      "result_id": "065ca5a8-9bfd-4fa8-9eda-e193a5ee07f2"
+    },
+    {
+      "claim_id": "6af2c68b-f054-4800-bccb-5304082ecf52",
+      "result_id": "25712b59-715b-4fcc-89c5-edb93514aa0a"
+    },
+    {
+      "claim_id": "ee0e42c9-f2e6-4fb1-8496-92afd869c4cb",
+      "result_id": "25712b59-715b-4fcc-89c5-edb93514aa0a"
+    },
+    {
+      "claim_id": "ec5e85c7-7f3a-451e-9fad-ec14ef925564",
+      "result_id": "25712b59-715b-4fcc-89c5-edb93514aa0a"
+    },
+    {
+      "claim_id": "1f13f7c0-4f42-4029-a4b4-ec04fa321dea",
+      "result_id": "25712b59-715b-4fcc-89c5-edb93514aa0a"
+    },
+    {
+      "claim_id": "6c8fc793-e411-4492-8b98-1891bb3bec3a",
+      "result_id": "de33485f-dd1e-41c1-a3ca-27b25216f8e7"
+    },
+    {
+      "claim_id": "e4f62dd5-fcec-4a8e-93ad-b6cc4e24cc9d",
+      "result_id": "de33485f-dd1e-41c1-a3ca-27b25216f8e7"
+    },
+    {
+      "claim_id": "0b0fb79d-7643-465b-bb44-cde82d64f5a9",
+      "result_id": "de33485f-dd1e-41c1-a3ca-27b25216f8e7"
+    },
+    {
+      "claim_id": "139205e4-a991-4a9d-80e5-df5a04c6b942",
+      "result_id": "de33485f-dd1e-41c1-a3ca-27b25216f8e7"
+    },
+    {
+      "claim_id": "c3cd5e15-4c04-4e47-b2ab-15a8756991cc",
+      "result_id": "de33485f-dd1e-41c1-a3ca-27b25216f8e7"
+    },
+    {
+      "claim_id": "7ad184b8-da69-424b-b77a-4344c8cd490d",
+      "result_id": "de33485f-dd1e-41c1-a3ca-27b25216f8e7"
+    },
+    {
+      "claim_id": "6edb375c-2f91-4540-8220-4c560bddd560",
+      "result_id": "de33485f-dd1e-41c1-a3ca-27b25216f8e7"
+    },
+    {
+      "claim_id": "dea33f46-b131-4011-b3bf-6deeb03709a7",
+      "result_id": "de33485f-dd1e-41c1-a3ca-27b25216f8e7"
+    },
+    {
+      "claim_id": "9ca92f5e-e18e-4253-8a99-05b17234b869",
+      "result_id": "11d51766-7ee2-411e-90a9-1ea745169af5"
+    },
+    {
+      "claim_id": "b70a35fd-a633-45c7-ac6c-743da39b4526",
+      "result_id": "11d51766-7ee2-411e-90a9-1ea745169af5"
+    },
+    {
+      "claim_id": "73d2995a-d8d3-4d58-b3f7-4b67f6820952",
+      "result_id": "11d51766-7ee2-411e-90a9-1ea745169af5"
+    },
+    {
+      "claim_id": "79aa270f-3405-4686-be41-a6d13c1cd802",
+      "result_id": "11d51766-7ee2-411e-90a9-1ea745169af5"
+    },
+    {
+      "claim_id": "0d4b3307-8ec8-47a3-a110-b3ee356ef8c3",
+      "result_id": "52db1306-234c-4f65-a96d-c2305192776f"
+    },
+    {
+      "claim_id": "5168d7d8-fba6-4329-b25e-e12179aa7ee2",
+      "result_id": "52db1306-234c-4f65-a96d-c2305192776f"
+    },
+    {
+      "claim_id": "f76c343a-2bd2-4402-9fa7-a5693f084929",
+      "result_id": "52db1306-234c-4f65-a96d-c2305192776f"
+    },
+    {
+      "claim_id": "d6430346-cffb-43a9-8801-8d03de7d43d5",
+      "result_id": "52db1306-234c-4f65-a96d-c2305192776f"
+    },
+    {
+      "claim_id": "8f45caa4-93d0-42e3-8525-8d4e853b4918",
+      "result_id": "52db1306-234c-4f65-a96d-c2305192776f"
+    },
+    {
+      "claim_id": "e0a3f45d-2534-451b-9f03-08ce194a7e99",
+      "result_id": "52db1306-234c-4f65-a96d-c2305192776f"
+    },
+    {
+      "claim_id": "22b62de2-8190-4dff-b170-2f153a312ee7",
+      "result_id": "a66b6661-c500-44b3-b8a3-537e2dad97ce"
+    },
+    {
+      "claim_id": "2abd679e-c757-4993-91e8-bcfd558e5a2b",
+      "result_id": "a66b6661-c500-44b3-b8a3-537e2dad97ce"
+    },
+    {
+      "claim_id": "353ec3d1-22b1-48e8-a0a4-fb1ffe51461d",
+      "result_id": "a66b6661-c500-44b3-b8a3-537e2dad97ce"
+    },
+    {
+      "claim_id": "a0dd859b-b541-4fb3-a98e-9ef8d2c859c0",
+      "result_id": "a66b6661-c500-44b3-b8a3-537e2dad97ce"
+    },
+    {
+      "claim_id": "091dd1dd-41ff-4e75-8cef-6ee8fe35d74e",
+      "result_id": "a66b6661-c500-44b3-b8a3-537e2dad97ce"
+    },
+    {
+      "claim_id": "3d6ee351-e2f8-4312-8aae-7afe02aca5e0",
+      "result_id": "63158c0b-38b5-4ccd-9b94-3838b4684d70"
+    },
+    {
+      "claim_id": "a8ea318d-15e2-4eb0-9645-76dff75ae6b5",
+      "result_id": "63158c0b-38b5-4ccd-9b94-3838b4684d70"
+    },
+    {
+      "claim_id": "8a02a23a-2fad-4b8c-be5d-bc5f87ce8eb8",
+      "result_id": "63158c0b-38b5-4ccd-9b94-3838b4684d70"
+    },
+    {
+      "claim_id": "37c6bdf5-4905-4bd0-804b-738ae60ac5ae",
+      "result_id": "63158c0b-38b5-4ccd-9b94-3838b4684d70"
+    },
+    {
+      "claim_id": "8adc9c71-3a06-47a9-b57b-2a1345e7bc8d",
+      "result_id": "63158c0b-38b5-4ccd-9b94-3838b4684d70"
+    },
+    {
+      "claim_id": "695d94a4-909d-438a-b819-9e35a8e2ef23",
+      "result_id": "63158c0b-38b5-4ccd-9b94-3838b4684d70"
+    },
+    {
+      "claim_id": "5656f3a2-d7c8-45ee-9dd0-48b52263e60c",
+      "result_id": "eeb434b3-dccb-4952-a7dd-cc49f8c6a650"
+    },
+    {
+      "claim_id": "f2d7a0fa-a04d-4025-bc58-44da292d1a1e",
+      "result_id": "eeb434b3-dccb-4952-a7dd-cc49f8c6a650"
+    },
+    {
+      "claim_id": "c8723185-6ad0-412c-b636-4db4851c4a8b",
+      "result_id": "eeb434b3-dccb-4952-a7dd-cc49f8c6a650"
+    },
+    {
+      "claim_id": "dc69b91e-1ec6-4055-9f92-ca64b71175f7",
+      "result_id": "eeb434b3-dccb-4952-a7dd-cc49f8c6a650"
+    },
+    {
+      "claim_id": "402d88c0-cdac-42ce-b8e2-fcc6a7f8dbdc",
+      "result_id": "cdbe63ae-d897-4708-81b4-c6b4f0a8da0e"
+    },
+    {
+      "claim_id": "78d0fb55-4084-41aa-b44e-8ad0195e16c4",
+      "result_id": "cdbe63ae-d897-4708-81b4-c6b4f0a8da0e"
+    },
+    {
+      "claim_id": "dfc74b36-1ec9-4f9b-b451-18991cd5cc27",
+      "result_id": "cdbe63ae-d897-4708-81b4-c6b4f0a8da0e"
+    },
+    {
+      "claim_id": "8f563df6-3529-4397-b660-722bc3209fa9",
+      "result_id": "cdbe63ae-d897-4708-81b4-c6b4f0a8da0e"
+    },
+    {
+      "claim_id": "e29025a0-5ccb-4f80-9d8d-ea40e4dc8937",
+      "result_id": "f76b83f8-3559-4cb6-83b3-0befc70a9199"
+    },
+    {
+      "claim_id": "526fc1d9-a152-4fbc-8499-9236a902467b",
+      "result_id": "f76b83f8-3559-4cb6-83b3-0befc70a9199"
+    },
+    {
+      "claim_id": "92a99dbc-cf13-4da3-9e19-fbee41edb732",
+      "result_id": "f76b83f8-3559-4cb6-83b3-0befc70a9199"
+    },
+    {
+      "claim_id": "a3596e61-665a-415b-bae7-cb2777de2869",
+      "result_id": "5ce6dcfc-4f4f-4f49-9267-7c388b2df43a"
+    },
+    {
+      "claim_id": "c8fa277d-c23f-4065-8ada-c9b4ba2313a6",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "22d4f9cf-43ac-4fe3-af45-85067c510d86",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "a3d672f0-5b1a-4983-a7c3-4166b80eaabc",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "efa7ec06-4ddd-41f9-b278-af399fb052dc",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "3db1baed-87fe-462b-9818-e30354b72345",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "113ed457-10ab-4943-be24-04702065275b",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "edc0fa85-4a74-4adf-95b3-124c1e4dbf32",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "a73ae81e-251a-4e33-947e-5ac16ffc6e29",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "e1ef0467-57ca-4d62-bb78-5f27670d3c9a",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "6fd8e153-cba7-41a9-9f13-677add332b36",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "8f524bff-5b79-44d9-9a85-c6b877cf6168",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "00b14fd0-d88b-4a3e-8c7d-b66ee0444375",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "fd351179-d9a9-4e2a-9a3c-238ab2acd5f0",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "5ae32c43-2b00-4b04-aacd-52b19727a9a5",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "f6d88bcf-b70e-4119-a3d5-549e4810f812",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "537aeebf-f051-425c-82c7-d663acddfcf1",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "f51be8e1-52cb-49ce-a561-9f2c6980618c",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "255a1760-58bc-40b7-a510-90b433e9c5ab",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "8fcffb56-fa45-4fba-8b97-c75a0d3694ad",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "d0229bd1-12fb-4bc3-94f7-0b6eb77db7a7",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "d116e7f2-40d8-4a79-93a6-edc51be67448",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "c45f5ed0-03ce-430c-bcf2-5fc2044f3ea3",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "f0a683bd-8864-488a-b16f-afa35e716ac3",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "055f48f3-19f4-41c6-8c0c-e5cc903043b2",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "e22d5783-5512-4211-b2ca-69e15ac543c0",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "e7aa9736-a48a-4383-be88-e1a9bf0274bb",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "97f36b07-8fa2-466c-95f5-d39ae429ff88",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "8eb93e8a-12e1-4a5b-952a-d2c044316c94",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "3fa2b4bc-c050-4f3d-a5e0-237e2fdbf2f9",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "72112c85-ffbc-4648-9e5f-732067d7abbf",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "6038fbbb-ef87-4cc0-9194-0e8f2a95ac15",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "5cc76a5c-6e41-4b4e-941d-aba972bba17d",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "f3f0e845-810e-4b4e-9a21-580b6d828c98",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "c4410b6a-8218-4b05-927d-59330caf192b",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "caf811c5-f5f1-4970-8a6a-b60e103bebb8",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "600088d4-bb8f-4350-a248-6252a1e9727b",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "376c223f-ce29-41db-98c4-aa13d6492952",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "8d24e347-7bf9-43c4-9a9f-f2d84c704db2",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "2db6de8b-6b3b-403b-be70-f8ea050d7ae6",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "7a4a769f-bcdf-4a77-93f0-fb591b2e9ab4",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "a737dd5f-915f-40b2-afd2-0cb98be0196f",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "5702e5b7-d060-4a2b-927f-b5b49e1a4aaa",
+      "result_id": "cab26124-1e14-4e30-8e55-9ad7599624bf"
+    },
+    {
+      "claim_id": "6ec374eb-5041-44d2-aa2c-f4b34a98686f",
+      "result_id": "bbff803a-ffac-481a-a796-f556ba95c687"
+    },
+    {
+      "claim_id": "81e78a2f-1f90-4867-9029-5107ad30bca8",
+      "result_id": "bbff803a-ffac-481a-a796-f556ba95c687"
+    }
+  ],
+  "comparisons": []
+}

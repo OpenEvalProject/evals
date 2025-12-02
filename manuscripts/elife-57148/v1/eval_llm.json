@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "VMHvl neurons show diverse response patterns during social defeat and post-defeat behaviors. During social defeat, 40% of neurons (Social+) showed tonic increases in activity, while 32% (Social-) showed opposite patterns. Subsets of neurons showed phasic responses time-locked to defeat events (36% Defeat+, 11% Defeat-). During post-defeat approach-avoidance, 49% of neurons (Assessment+) were activated during risk assessment, and 15% (Flight+) and 30% (Flight-) showed modulation during flight behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C23-C30 provide comprehensive quantitative calcium imaging data from Figure 1 showing distinct neuronal populations with different response properties during social defeat and subsequent defensive behaviors. The data includes appropriate sample sizes, statistical thresholds (auROC > 0.65 or < 0.35, p<0.05), and clear behavioral correlates. The findings are internally consistent and well-documented with representative traces and population analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C71"
+    ],
+    "result": "Assessment+ neurons show significant overlap with Defeat+ neurons (53% vs 17% chance, p=4.23\u00d710\u207b\u00b9\u00b9) and many Assessment+ cells (37% vs 14% chance, p=0.00031) are also Flight- cells. The triple overlap of Defeat+/Assessment+/Flight- cells (26% vs 5% chance, p=2.0\u00d710\u207b\u2076) represents the largest fraction of responsive neurons. Assessment+ cells were activated during risk assessment at distances from the threat chamber.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C71 demonstrate statistically significant overlap between neuronal populations encoding different aspects of threat response, supported by Fisher's exact tests with highly significant p-values. The data from Figure 1r-t and Video 2 show that these neurons encode a generalized threat state rather than specific behaviors. The statistical approach (comparing observed vs chance overlap) is appropriate and the conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C39",
+      "C72"
+    ],
+    "result": "Following social defeat, VMHvl neurons develop context-specific responses during re-exposure 24 hours later. 27% of neurons (Far chamber+) showed activation in the defeat chamber and 23% (Home+) showed activation in the home chamber. These context-responsive neurons were largely absent during pre-defeat habituation and showed abrupt on/off responses at chamber boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C35, C39, C72 are supported by calcium imaging data from Figure 2 showing experience-dependent emergence of spatial context encoding. The comparison between pre- and post-defeat conditions (Figure 2\u2014supplement 2c) provides critical control data. The abrupt modulation at chamber boundaries (C72) supports the interpretation that these neurons encode discrete contexts rather than gradients. Sample sizes are adequate (N=9-10 mice) and the findings are novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C73"
+    ],
+    "result": "Context-responsive neurons show systematic relationships with social threat encoding. Far chamber+ neurons strongly overlap with Social+ neurons (67% vs 11% chance, p=9.597\u00d710\u207b\u00b9\u00b9) and Defeat+ neurons (42% vs 10% chance, p=2.0\u00d710\u207b\u2076), while Home+ neurons overlap with Social- neurons (62% vs 7% chance, p=1.065\u00d710\u207b\u00b9\u2070). A larger fraction of Far chamber+ than Home+ neurons were Assessment+ or Defeat+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C73 demonstrate systematic relationships between spatial context and threat encoding using appropriate statistical tests (Fisher's exact test). The data from Figure 2i-l,o show that the defeat-associated context (far chamber) recruits threat-encoding neurons while the home chamber recruits a distinct population. This supports the interpretation that VMHvl encodes both threat and safety contexts. The statistical significance is strong across all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C74"
+    ],
+    "result": "Social defeat induces reorganization of spatial context encoding in VMHvl. Before defeat, ensemble activity in home, corridor, and far chambers was overlapping, but after defeat these representations became significantly separated (Home vs Far chamber LDA distance, p=0.0075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40, C74 are supported by LDA analysis in Figure 2m-q showing experience-dependent changes in ensemble encoding. The pre-post comparison provides strong evidence for plasticity. However, the analysis is limited to frames where animals were in different chambers, and the manuscript does not fully address whether behavioral differences (e.g., time spent in chambers) could contribute to the observed separation. Despite this limitation, the finding is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C75"
+    ],
+    "result": "cFos TRAP experiments show that approximately 50\u00b115% of VMHvl neurons are recruited by repeated exposure to the same behavior (aggression-aggression or defense-defense), while different behaviors (aggression-defense) show only 18\u00b15% overlap, and controls show 10\u00b12% overlap (ANOVA F=20.89, p=0.0001). This suggests approximately one quarter of activated cells are recruited by both aggression and defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C75 are supported by cFos TRAP data in Figure 3a-d with appropriate statistical analysis (ANOVA with post-hoc tests). The experimental design with counterbalanced conditions is rigorous. The inference in C75 that ~25% of cells support common functions is reasonable given the overlap data, though the manuscript acknowledges this is consistent with prior work (Sakurai et al., 2016). Sample sizes appear adequate (N=3-6 per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "During aggression, 18% of neurons (Sniff+) showed phasic modulation during social investigation and 14% (Attack+) during attack, with 51% of Attack+ neurons also being Sniff+ (p=2\u00d710\u207b\u2076). Comparing across behaviors, 35% of Defeat+ neurons (vs 6% chance, p=0.00003) were reactivated during investigation (Sniff+) and 20% (vs 5% chance, p=0.02458) during attack, with 42% of Defeat+ cells overlapping with either Sniff+ or Attack+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 demonstrate overlap between aggression and defense encoding using calcium imaging during resident-intruder tests (Figure 3e-n). The statistical analyses are appropriate and the overlap between Defeat+ and Sniff+ neurons supports the hypothesis of common threat encoding. However, the manuscript notes that neurons were more robustly activated during defeat than aggression (C88), suggesting asymmetric recruitment. The data support the main conclusion but with this caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C76"
+    ],
+    "result": "Attack+ neurons showed more overlap with Far chamber+ neurons (41% vs 4% chance, p=0.00022) than Home+ neurons (12% vs 3% chance, p=0.36), despite attacks occurring in the home cage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C76 present an unexpected finding that attack-responsive neurons overlap more with the defeat context than the home context where attacks occurred. This is statistically significant and supports the interpretation that aggression recruits threat-related rather than safety-related representations. However, the manuscript does not fully explore alternative explanations (e.g., whether attack neurons might encode features of the subordinate's presence rather than location). The finding is intriguing but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C51",
+      "C52",
+      "C53",
+      "C77",
+      "C97"
+    ],
+    "result": "Social defeat, but not aggression, induces reorganization of neural ensemble activity. Neuron ensemble activity during the first and second defeat experiences were significantly non-overlapping, while repeated aggression showed no such changes. This reorganization occurred only when defeats preceded aggression experiences, not when they followed, suggesting experience-dependent plasticity rather than spontaneous fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C51-C53, C77, C97 are supported by LDA analysis in Figure 4a-b and supplements showing defeat-specific plasticity. The counterbalanced design (defeat-first vs aggression-first) provides strong evidence that the effect is specific to defeat experience. The lack of behavioral differences across defeat days (Figure 4\u2014supplement 1) supports the interpretation of neural plasticity. However, the analysis is restricted to frames during close social encounters, which may not capture all relevant neural dynamics. The conclusion is well-supported but with this methodological caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C79",
+      "C114",
+      "C115"
+    ],
+    "result": "Esr1+ neurons in VMHvl show response patterns similar to the general population. During defeat, 46% showed tonic increases (Social+) and 18% decreases (Social-), with 31% showing phasic Defeat+ responses. During approach-avoidance, 64% were Assessment+ and 16% Flight+/15% Flight-. During context re-exposure, 35% were Far chamber+ and 18% Home+. Defeat+ and Assessment+ overlap was moderate but not significant (32% vs 20% chance, p=0.44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63, C79, C114-C115 demonstrate that Esr1+ neurons encode threat and context similarly to the general VMHvl population, using the same calcium imaging and analysis methods. The proportions of responsive neurons are comparable across populations. The lack of significant Defeat+/Assessment+ overlap in Esr1+ neurons (C79) differs slightly from the general population but may reflect smaller sample size (N=2-3 mice for Esr1+ vs N=4-12 for general population). The overall conclusion that Esr1+ neurons encode similar features is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C80",
+      "C116"
+    ],
+    "result": "Esr1+ neuron ensemble activity is remodeled by social defeat in a manner indistinguishable from the general VMHvl population. Ensemble activity during first and second defeat experiences were significantly non-overlapping (Kolmogorov-Smirnov test, p=0.0001 for each mouse), and machine learning achieved similar accuracy in distinguishing defeat days using Esr1+ cells as using all cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C80, C116 demonstrate that Esr1+ neurons undergo similar experience-dependent plasticity as the general population, supported by LDA analysis (Figure 4l) and machine learning classification (Figure 4\u2014supplement 3d). The use of multiple analytical approaches strengthens the conclusion. However, the Esr1+ experiments used smaller sample sizes (N=3 mice) compared to general population experiments, which limits statistical power. The conclusion is supported but would benefit from larger samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C86",
+      "C99",
+      "C117"
+    ],
+    "result": "Optogenetic activation of VMHvl Esr1+ neurons elicits robust defensive behaviors (freezing, flight, reduced social interaction, immobility) after social defeat but not before defeat or in control mice. This demonstrates that social defeat induces functional plasticity within or downstream of VMHvl that transforms the behavioral output of Esr1+ neuron activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C65-C67, C86, C99, C117 provide strong evidence for experience-dependent functional plasticity using optogenetic manipulation (Figure 5). The pre-post defeat comparison within subjects and the control groups (YFP-expressing mice, pre-defeat ChR2 mice) provide rigorous controls. Statistical analyses show significant effects post-defeat (ANOVA with Tukey's post-hoc, multiple p<0.01). The dramatic behavioral switch in Video 3 (C86) provides compelling qualitative evidence. The conclusion that plasticity occurs within or downstream of VMHvl is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C89",
+      "C90",
+      "C105",
+      "C106"
+    ],
+    "result": "VMHvl neurons encode an experience-dependent map of spatial context and exhibit functional plasticity in response to past social experience that guides behavioral outputs. A major function of VMHvl is to provide an internal state of social threat generalizable across defensive behaviors and cues, while also encoding spatial context beyond threat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C89-C90, C105-C106 represent the main conclusions synthesizing the calcium imaging and optogenetic findings. These conclusions are well-supported by the convergent evidence from multiple experiments showing: (1) generalized threat encoding across behaviors (C31-C33), (2) experience-dependent spatial context encoding (C34-C40), (3) neural ensemble reorganization after defeat (C51-C53), and (4) functional plasticity demonstrated optogenetically (C65-C67). The conclusions appropriately integrate the findings and are justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C107"
+    ],
+    "result": "The hypothalamus should be viewed as an integrator of present and past sensory and contextual information that adapts survival behaviors to a changing environment, rather than as a hardwired, innate behavioral response region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C107 represent a conceptual reframing of hypothalamic function based on the study's findings. This conclusion is supported by the demonstration of experience-dependent plasticity in spatial encoding (C40), neural ensemble reorganization (C51-C53), and functional transformation of optogenetic responses (C65-C67). However, this is a broad interpretive claim that extends beyond the specific findings in VMHvl. The data support this reframing for VMHvl but generalizing to the entire hypothalamus requires caution. The conclusion is justified for the system studied but may be overstated for the hypothalamus as a whole.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior literature establishes that the hypothalamus contains evolutionarily conserved networks for survival behaviors, with VMHdm controlling predator defense and VMHvl controlling reproduction and territorial aggression. However, defensive responses to social threats require VMHvl rather than VMHdm, suggesting VMHvl plays a general role in social threat responding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C12 summarize established knowledge from prior literature with appropriate citations. These claims provide necessary background context for the study. The citations appear accurate and the characterization of prior work is consistent with the field. However, as these are literature claims rather than new findings, they should be evaluated based on the accuracy of citation rather than experimental support. The claims accurately represent prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work shows that stimulation of VMHvl can elicit both aggression and avoidance, with responses influenced by social and hormonal status. Neurons in VMHvl show firing patterns correlated with social behaviors, and cFos/bulk calcium imaging identified overlapping recruitment during aggression and defeat. However, single unit recordings during social defeat or avoidance had not been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 accurately summarize prior literature with appropriate citations, establishing the gap in knowledge (C18) that motivates the current study. The characterization of prior work appears accurate and provides important context for understanding the novelty of the current findings. These are literature review claims rather than new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "VMHvl receives afferents from medial amygdala encoding conspecific identity, as well as inputs from lateral septum and subiculum that could convey contextual information and modulate aggression. Ensemble neural activity in VMHvl can be reshaped by sexual experience, demonstrating capacity for experience-dependent changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 summarize prior anatomical and functional studies with appropriate citations. C20 includes speculation ('could convey') which is appropriately qualified. These claims establish the anatomical basis for the hypothesis that VMHvl integrates social and contextual information. The characterization of prior work appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C91",
+      "C95"
+    ],
+    "result": "The manuscript speculates that repeated aggression/winning may impart resistance to defeat-induced plasticity, that home cells may encode territorial features supporting behaviors like scent marking and defensive aggression, and that contextual and social cues may be integrated dynamically in VMHvl for territorial defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C91, C95 are explicitly speculative (using 'suggests', 'speculate', 'may') and represent hypotheses for future testing rather than supported conclusions. C78 is based on the observation that defeat-first but not aggression-first animals show ensemble reorganization (C53), which provides some indirect support. C91 and C95 are reasonable speculations based on the findings but lack direct experimental support. These should be clearly distinguished from the supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C85",
+      "C103"
+    ],
+    "result": "The manuscript predicts that artificial activation before and after defeat should produce different outputs if plasticity occurs within/downstream of VMHvl, and interprets findings to indicate that VMHvl Esr1+ neurons can promote both aggression and avoidance depending on context or experience, with VMHvl primed to promote either defensive avoidance or aggression based on past experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C85, C103 represent logical predictions and interpretations of the optogenetic findings. C82 correctly predicts the experimental logic. C85 and C103 are interpretations supported by the optogenetic data (C65-C67) and prior literature (C83-C84, C100-C102). However, C103 extends beyond the data by claiming VMHvl is 'primed' for either response under baseline conditions, when the data show no reliable response before defeat (C66, C100). The interpretation is partially supported but may overstate the baseline state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C98",
+      "C101",
+      "C102",
+      "C104",
+      "C109",
+      "C111",
+      "C112"
+    ],
+    "result": "Prior optogenetic and recording studies show that VMHvl Esr1+ stimulation can elicit aggression against females/castrated males but sometimes causes brief avoidance, that aggression does not induce ensemble changes while sex does, that VMHdm neurons show similar firing patterns during predator approach, and that VMHvl can be recruited by stimulus-associated cues and during anticipation of aggression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C98, C101-C102, C104, C109, C111-C112 accurately cite prior literature to contextualize the current findings. These citations are used appropriately to support interpretations and comparisons. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C108",
+      "C110",
+      "C113"
+    ],
+    "result": "The manuscript infers that neurons are more robustly activated during defeat than aggression suggesting more efficient threat recruitment in losers, that conspecific aggression is driven by defensive instinct for territorial defense, that VMHvl neurons encode generalized threat states rather than specific behaviors, and that VMHvl may dynamically encode territorial features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C108, C110, C113 represent inferences from the data. C88 is supported by comparing activation patterns in Figures 1 and 3. C108 is supported by the overlap data (C47) and cited literature (Lorenz, 1963). C110 is well-supported by the overlap analyses (C31-C33). C113 is supported by the LDA analysis (C40). These inferences are reasonable and supported by the data, though they represent interpretations rather than direct observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C87",
+      "C92",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "The manuscript concludes that plasticity in ensemble recruitment occurs within or downstream of VMHvl, that Home+/Far chamber+ cells encode context rather than threat gradients, that VMHvl receives hippocampal inputs via LS that could contribute contextual information and modulate aggression, and that social defeat reshaped both spatial context and social cue encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87, C92-C94, C96 represent conclusions and interpretations. C87 is well-supported by the optogenetic data (C65-C67). C92 is supported by the abrupt on/off responses at boundaries (C72). C93-C94 cite prior anatomical/functional work appropriately. C96 summarizes the main findings accurately. These conclusions are justified by the data presented.",
+    "result_type": "MINOR"
+  }
+]

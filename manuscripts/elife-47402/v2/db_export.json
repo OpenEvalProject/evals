@@ -1,0 +1,1351 @@
+{
+  "submission": {
+    "id": "60d8e237-a18b-4bf9-b9bb-01bbdf2aef12",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:05:36.483873Z",
+    "updated_at": "2025-12-02T11:05:36.483873Z"
+  },
+  "content": [
+    {
+      "id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "submission_id": "60d8e237-a18b-4bf9-b9bb-01bbdf2aef12",
+      "content_type": "manuscript",
+      "content_text": "# HDX-MS reveals nucleotide-dependent, anti-correlated opening and closure of SecA and SecY channels of the bacterial translocon\n\n## Authors\n\n- Zainab Ahdash<sup>1</sup> ([ORCID: 0000-0002-4495-8689](https://orcid.org/0000-0002-4495-8689))\n- Euan Pyle<sup>1</sup> ([ORCID: 0000-0002-4633-4917](https://orcid.org/0000-0002-4633-4917))\n- William John Allen<sup>3</sup> ([ORCID: 0000-0002-9513-4786](https://orcid.org/0000-0002-9513-4786))\n- Robin A Corey<sup>4</sup> ([ORCID: 0000-0003-1820-7993](https://orcid.org/0000-0003-1820-7993))\n- Ian Collinson<sup>3</sup> ([ORCID: 0000-0002-3931-0503](https://orcid.org/0000-0002-3931-0503)) \u2020\n- Argyris Politis<sup>1</sup> ([ORCID: 0000-0002-6658-3224](https://orcid.org/0000-0002-6658-3224)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry King's College London London United Kingdom\n2. Department of Chemistry Imperial College London London United Kingdom\n3. School of Biochemistry University of Bristol Bristol United Kingdom\n4. Department of Biochemistry University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe bacterial Sec translocon is a multi-protein complex responsible for translocating diverse proteins across the plasma membrane. For post-translational protein translocation, the Sec-channel \u2013 SecYEG \u2013 associates with the motor protein SecA to mediate the ATP-dependent transport of pre-proteins across the membrane. Previously, a diffusional-based Brownian ratchet mechanism for protein secretion has been proposed; the structural dynamics required to facilitate this mechanism remain unknown. Here, we employ hydrogen-deuterium exchange mass spectrometry (HDX-MS) to reveal striking nucleotide-dependent conformational changes in the Sec protein-channel from Escherichia coli. In addition to the ATP-dependent opening of SecY, reported previously, we observe a counteracting, and ATP-dependent, constriction of SecA around the pre-protein. ATP binding causes SecY to open and SecA to close; while, ADP produced by hydrolysis, has the opposite effect. This alternating behaviour could help impose the directionality of the Brownian ratchet for protein transport through the Sec machinery.\n\n## Introduction\n\nProtein transport across and into the membranes that surround and sub-divide cells is essential for life. The ubiquitous Sec translocon performs this task in the plasma membrane of bacteria and the endoplasmic reticulum of eukaryotes. A protein-channel through the membrane is formed by the conserved hetero-trimeric core-complex: Sec61\u03b1\u03b2\u03b3 in eukaryotes, and SecYEG in archaea and bacteria (Hartmann et al., 1994). In bacteria, protein secretion is important for cell envelope biogenesis and maintenance, as well as for the delivery of adherence and pathogenic effector proteins to the cell surface. During protein secretion, SecYEG engages with the cytosolic motor ATPase SecA (Lill et al., 1989), and together they pass pre-proteins with a short N-terminal cleavable signal sequence across the membrane, whilst still in an unfolded conformation (Hartl et al., 1990; Arkowitz et al., 1993).\n\nA structure of the complete SecA-SecYEG complex has been determined with an ATP analogue (ADP-BeFx; PDB code 3DIN), as well as with a short pre-protein mimic (Zimmer et al., 2008; Li et al., 2016) (PDB code 5EUL; modified in Figure 1a). The key regions of SecA and SecYEG are highlighted in the context of this model, shown by orthogonal views for clarity (Figure 1a,b). No structure of the ADP-bound state has been experimentally determined; however, molecular dynamics (MD) simulations and F\u00f6rster Resonance Energy Transfer (FRET) analyses suggest that ATP and ADP respectively favour open and closed forms of the SecY channel (Fessl et al., 2018; Allen et al., 2016). This behaviour was incorporated into a \u2018Brownian ratchet\u2019 model to describe the mechanism of ATP driven protein translocation, whereby ATP binding and hydrolysis act to bias pre-protein diffusion in an outward direction. This directionality is further augmented by other factors, including the promotion of pre-protein folding on the outside, but not the inside (Corey et al., 2019), and by coupling transport to the trans-membrane proton-motive-force (PMF) (Brundage et al., 1990).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig1-v2.jpg)\n\n**Figure 1.:** (a) Structure and sub-domains of SecA-SecYEG (based in 3DIN\u00a0as\u00a0in Zimmer et al., 2008, modelled with a pre-protein; Corey et al., 2016a). The pre-protein, ATP and signal sequence are highlighted in grey, orange and yellow, respectively. (b) Top view of the complex highlighting the nucleotide-binding-domains NBD1 and NBD2 as well as PPXD (Pre-Protein cross-linking Domain) and HWD (Helical Wing Domain) (c) Overview of the HDX-MS process. The sample is prepared in detergent micelles (DDM) and after addition of nucleotides is incubated in a deuterated solvent (1). Following deuteration of the mixture at different time-points, the HDX reaction is quenched and the protein is digested with pepsin (2). Peptides are separated by liquid chromatography and subsequently identified by mass spectrometry (MS). The mass uptake of the protein in different conditions (e.g. AMPPNP vs ADP) is then compared (3). Peptides with significant difference in deuterium uptake are mapped onto a Woods plot (4). The length of lines represent the peptide sizes. Blue and red regions indicate significant protection and deprotection, respectively. Insignificant differences, calculated by\u00a0a 99% confidence interval, are shown in grey.\n\nOne criticism of the Brownian ratchet model is the effect of non-hydrolysable ATP analogues: while they cause the channel through SecY to open-up (Allen et al., 2016), they have also been shown to prevent backsliding of trapped translocation intermediates (Bauer et al., 2014; Erlandson et al., 2008). If the pre-protein channel opens in response to ATP, one might reasonably expect backsliding to occur more readily \u2013 not less. To explain this apparent contradiction, one could invoke a second clamp that tightens when ATP is bound and prevents backwards diffusion. Indeed, SecA is known to form a clamp for the translocating pre-protein (Zimmer et al., 2008), so it could plausibly fulfil this role. Thus far, however, experimental evidence for this idea is lacking. Furthermore, as the SecA clamp can be fixed in a closed state without preventing transport (Gold et al., 2013), the conformational changes involved are likely to be subtle, and not necessarily captured with techniques such as FRET.\n\nClearly, the key to understanding the mechanism that prevents unfavourable back-sliding and refinement of the Brownian ratchet model is to learn more about the dynamic action of SecA-SecYEG at different stages of the ATP hydrolytic cycle. In this study, we exploit recent technical advances in HDX-MS to probe the structural differences between the ATP and ADP associated states that underpin function.\n\nHDX-MS has emerged as a non-invasive and highly sensitive method for interrogating the conformational dynamics of membrane proteins and their complexes (Adhikary et al., 2017; Eisinger et al., 2017; Martens et al., 2018; Reading et al., 2017). HDX-MS measures the exchange of backbone amide hydrogen to deuterium at peptide-level resolution (Englander and Kallenbach, 1983; Konermann et al., 2011; Engen, 2009). The rate of HDX depends on the solvent accessibility, protein flexibility, and hydrogen bonding networks (Mistarz et al., 2016). Thus, HDX-MS can monitor the conformational changes of protein complexes by comparing HDX rates between distinct protein states (e.g.. protein versus protein with ligand). Consequently, comparative HDX-MS has emerged as an attractive tool to define conformational changes to complement other, high-resolution techniques. For example, the analysis of the structural consequences of protein-ligand/drug interactions, nucleotide dependent protein dynamics; ATP/\u00a0GTP versus ADP/ GDP (Murcia Rios et al., 2018; Narang et al., 2018); including those associated with membrane proteins and complexes (Adhikary et al., 2017; Martens et al., 2018; Reading et al., 2017). Here, we use HDX-MS to systematically interrogate nucleotide-induced conformational changes in the multi-component SecA-SecYEG complex.\n\n## Results\n\nTo investigate the conformational dynamics of SecA, we prepared samples of the enzyme either alone or saturated with an excess of purified SecYEG. We used HDX-MS to study the conformational dynamics of the complex. In each case, the experiments were run in the presence of ADP or a non-hydrolysable analogue of ATP (AMPPNP), and only the data for the saturated component (SecA) was used. AMPPNP was used to study the ATP-bound state because ATP is rapidly hydrolysed to ADP in the active complex: all mentions hereafter of ATP pertinent to the HDX-MS experiments refer to AMPPNP.\n\nOptimised procedures for HDX-MS were carried out as described previously (Corey et al., 2019; Martens et al., 2018) (Figure 1c). The peptide coverage of the whole complex was high (ranging from 82% to 95% for the respective subunits; Figure 2\u2014figure supplement 1), enabling a thorough analysis of SecA and SecYEG. The comparison of the AMPPNP versus ADP datasets produced a differential HDX-MS fingerprint (\u0394HDX) that allowed direct comparisons between the results obtained for distinct states (AMPPNP - ADP; Figure 1c). To interpret the data, we utilised the Woods plot, which displays the length and the beginning and end residues of each analysed peptide against their respective \u0394HDX. Woods plots were prepared using our in-house software (Deuteros; Lau et al., 2019).\n\nWe began by investigating the influence of nucleotides on the conformational dynamics of SecA. \u0394HDX experiments were performed allowing us to track structural changes between AMPPNP and ADP bound states (SecAAMPPNP \u2013 SecAADP). Surprisingly, there was very little effect on the conformational dynamics of the isolated SecA (Figure 2a,b and Figure 2\u2014figure supplement 2a). The greatest difference in deuterium uptake between the two states was observed at and around the ATP-binding sites (Figure 2a,b). This highlights the fact that SecA is only activated when it is associated with SecYEG: studying SecA by itself is therefore unlikely to yield information pertinent to transport.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig2-v2.jpg)\n\n**Figure 2.:** (a) Structures of the complex highlighting the contact sites (cyan) in SecA with SecG (green), SecY (pink), mature regions of the pre-protein (PP-M; grey) and ATP (orange). Significant sum differences in relative deuterium uptake (\u0394HDX\u00a0=\u00a0AMPPNP-ADP) of (b) SecA without SecYEG, and (c) of SecA in the presence of a molar excess of SecYEG after 30 min of deuteration. Highlighted regions represent contacts with SecG, SecY, pre-protein (mature domain, PP-M) and ATP; coloured according to (a). Dashed boxes in (c) highlight regions in contact with the pre-protein mature domain (PP-M). Detailed information of HDX-MS data is provided in Supplementary files 1a and 1b.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Maps were generated using Deuteros (Lau et al., 2019).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Woods plots comparing the relative deuterium uptake (AMPPNP-ADP) of (a) SecA alone and (b) SecA in complex (and saturated) with SecYEG after incubation at 25\u00b0C in deuterated solvent for 15 s, 1, or 5 min. The dotted lines represent the 99% confidence interval, which indicates that\u00a0the level of difference of deuterium uptake between the two compared states is statistically significant. Bars represent individual peptides. Bar length corresponds to peptide size. Red and blue coloured bars indicate statistically significant deprotected or protected peptides, respectively.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Woods plots comparing the relative deuterium uptake of SecA upon interaction with SecYEG (present in excess) at 15 s, 1, 5 or 30 min. Results indicate an overall deprotection, hence destabilisation of SecA upon SecYEG binding.\n\nTo\u00a0further explore the mechanism of protein transport we carried out equivalent comparative HDX-MS experiments in the presence of an excess of SecYEG to saturate SecA (SecAAMPPNPSecYEG - SecAADPSecYEG) (Figure 2a,c and Figure 2\u2014figure supplement 2b). The results are consistent with SecYEG having a profound effect on SecA: SecYEG induces a large ATP-dependent stabilisation across almost the entirety of SecA (Figure 2c; negative \u0394HDX, blue bars). We also examined the conformational effects of SecYEG binding to SecA (Figure 2\u2014figure supplement 3). Interestingly, the results suggested small differences as compared to the differences observed between ATP- and ADP-bound states of SecA whilst bound to SecYEG (Figure 2c and Figure 2\u2014figure supplement 3). This implies that the presence of nucleotides conformationally activate SecA.\n\nFor mechanistic interpretation, the data were analysed in the context of a model of the SecA-SecYEG bound to a short pre-protein (Corey et al., 2016a)(Figure 2a). Most striking was the correspondence of the stabilised regions with sites in SecA that directly contact the mature regions (PP-M) of the translocating pre-protein (Figure 2a,c; dashed boxes \u2013PP-M, grey bars). Such stabilisation in SecA suggests an ATP-driven conformational closure around the mature segment of the pre-protein. Conversely, of course, the highlighted regions identified in SecA would be destabilised in the ADP-bound state, following ATP hydrolysis.\n\nTo explore the nucleotide-dependent conformational dynamics of the complex, we compared the behaviour of SecA to the associated channel complex SecYEG. Previously, we conducted \u0394HDX analysis of SecA-SecYEG, as above, but instead saturated SecYEG with SecA (Corey et al., 2019). In that instance, we were only interested in selecting peptides lining the SecY protein-channel. Here, by taking into account global \u0394HDX (SecAAMPPNPSecYEG - SecAADPSecYEG), we highlight the long-range nucleotide dependent impact of SecA on the dynamics of SecYEG (30 min deuterium exchange; not previously shown; Figure 3;\u00a0Corey et al., 2019).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig3-v2.jpg)\n\n**Figure 3.:** (a) Structures of the SecA-SecYEG complex highlighting the contact sites of SecY (pink) and SecG (green) with SecA (cyan), signal sequence (PP-S; yellow) and pre-protein (PP-M; grey). (b-d) Significant sum differences in relative deuterium uptake (\u0394HDX\u00a0=\u00a0AMPPNP-ADP) of (b) SecY, (c) SecE and (d) SecG in the presence of excess SecA at 30 min of deuteration. Regions interacting with SecY (b) and SecG (d) are highlighted: SecA, pre-protein mature domain (PP-M) and pre-protein signal sequence (PP-S); colour coding as in (a). Confidence intervals (CI; 99%) are shown as grey dotted lines. Red and blue bars indicate structural stabilisation (positive \u0394HDX) and destabilisation (negative \u0394HDX) of peptides, respectively. Grey bars indicate peptides with insignificant \u0394HDX. Dashed boxes in (b) highlight regions interacting with the pre-protein signal sequence (PP-S) and the mature pre-protein (PP-M). Detailed information of HDX-MS data is provided in Supplementary file 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Woods plots comparing the relative deuterium uptake of SecYEG while bound to SecA (AMPPNP-ADP), showing: (a) SecY (b) SecE and (c) SecG after incubation at 25\u00b0C in deuterated solvent for 15 s, 1, or 5 min. The dotted lines represent the 99% confidence interval, which indicates the level of difference of deuterium uptake between the two compared states is statistically significant. Bars represent individual peptides. Bar length corresponds to peptide size. Red and blue coloured bars indicate statistically significant deprotected or protected peptides, respectively.\n\nInterestingly, we found significant ATP-dependent destabilisation of SecY (Figure 3a,b, and Figure 3\u2014figure supplement 1). Closer inspection of the identified peptides reveals that two prominently destabilised regions in the SecY protein would be in direct contact with the signal sequence (PP-S) and mature regions (PP-M) of the pre-protein during protein translocation (Figure 3b; dashed boxes \u2013PP-M grey, and PP-S yellow bars). These regions include the plug, which in the absence of the pre-protein maintains the closed state of the channel (Van den Berg et al., 2004), and the highly conserved trans-membrane helix 7. Multiple regions within the SecE and SecG subunits were also significantly destabilised in the presence of AMPPNP (Figure 3a,c\u2013d and Figure 3\u2014figure supplement 1). Again, conversely those identified regions would be stabilised after hydrolysis to ADP. These observations are consistent with an ATP-driven opening of the SecY channel, and closure after hydrolysis (Fessl et al., 2018; Allen et al., 2016).\n\nThe \u0394HDX analysis describes contrasting behaviour between the protein channel and cytoplasmic motor components of the bacterial translocon, during the ATP binding and hydrolysis cycle. Notably, there is an ATP-dependent closure around the translocating polypeptide by SecA and opening of the channel through SecYEG (Figure 4a); reversed in the ADP bound state after ATP hydrolysis (Figure 4b). To further understand this effect with respect to local structural rearrangements in SecA, we re-analysed previously-run all-atom molecular dynamics (MD) simulations of the SecA-SecYE complex engaged with a stretch of pre-protein (Corey et al., 2019). The size of two distinct pores in the SecA pre-protein channel through which the pre-protein passes were quantified (Figure 4c,d; see also Materials\u00a0and\u00a0methods for details); note that both pores contain residues shown by HDX-MS to be protected in the ATP-bound state (Figure 2, Figure 4c and Materials\u00a0and\u00a0methods).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47402/elife-47402-fig4-v2.jpg)\n\n**Figure 4.:** (a) Periplasmic, membrane perpendicular and cytosolic views of the SecA-SecYEG-preprotein complex model, with \u0394HDX of the peptides mapped onto the structure. The translocon complex is coloured light grey, with H-bonding destabilised and stabilised regions in red and blue, respectively. The pre-protein is shown in yellow (signal sequence) and dark grey (mature). ATP is shown as orange spheres. (b) Schematic summarising the primary outcomes from the data here. (c) Snapshots of SecA-SecYE with an engaged pre-protein after 1 \u00b5s all-atom MD simulation (Corey et al., 2019). SecA-SecYE is shown as grey surface and has been slabbed to show the pre-protein channel through both SecA and SecY. The pre-protein is shown as red cartoon, and was absent for the cavity size analysis in panel\u00a0(d). The positions of the conserved SecA pores have been highlighted; pore 1 (green) and pore 2 (blue). Visual analysis suggests that pore 1\u00a0is more constricted in the ATP state (d). Quantification of the pore size, using snapshots every 25 ns from 750 to 1000 ns: both pores are tighter in ATP bound state (pore 1 means are 1.9 and 2.6 \u00c52, p<0.0001\u00a0using\u00a0a\u00a02\u00a0tailed\u00a0t-test: pore 2 means are 2.4 and 2.1 \u00c52, p=0.0061).\n\nFrom the simulation data, it is clear that both SecA pores, particularly pore one at the cytoplasmic entrance of SecA, are more constricted in the ATP-bound state (Figure 4c,d). This is consistent with the HDX data and suggests that ATP-binding is causing SecA to close around the engaged pre-protein.\n\n## Discussion\n\nOverall, our results reveal profound nucleotide-dependent differences in the structure of the active Sec complex (SecA-SecYEG). These differences can broadly be divided into two groups: those affecting the membrane channel (SecY, SecE and SecG), which become destabilised in the presence of ATP, and those affecting SecA, which become stabilised. A more detailed analysis reveals that the most dramatic changes affect regions that would directly contact a translocating pre-protein. These results are consistent with the previously proposed Brownian ratchet mechanism of pre-protein transport (Allen et al., 2016). The cyclical ATP/ADP-dependent conformational dynamics highlighted in SecA and SecYEG are presumably integral components of the underling mechanism of this ratcheting machine,\u00a0for instance, the opening (ATP) and closure (ADP) of the channel through SecY (Corey et al., 2019). Secondly, the conferral of ATP-dependent asymmetry that prevents pre-protein\u00a0folding at the cytosolic side of the membrane, while allowing it at the exterior (Corey et al., 2019) is\u00a0likely to also be a result of these changes. Finally, the observation that ATP causes SecA to constrict around the pre-protein could potentially explain why pre-proteins do not backslide in the presence of a non-hydrolysable ATP analogue (Bauer et al., 2014; Erlandson et al., 2008); and thereby promote forward transport.\n\nThe experiments presented here demonstrate the power of combining HDX-MS with the results of biochemistry and molecular simulations to understand the conformational mechanism of multi-component membrane protein complexes, difficult to study by other approaches.\n\n## Materials and methods\n\n### Protein preparation\n\nSecYEG and SecA were overproduced and purified as described previously (Gold et al., 2007).\n\n### Hydrogen deuterium exchange mass spectrometry (HDX-MS)\n\nThe HDX-MS experiments outlined here were carried out using a Synapt G2-Si HDMS coupled to an Acquity UPLC M-Class system with HDX and automation (Waters Corporation, Manchester, UK).\n\nTo form the SecA-SecYEG complex, SecYEG and SecA were mixed and incubated for 10 min on ice. For experiments investigating SecA (Figure 2), SecA (10 \u03bcM) was saturated by SecYEG (15 \u03bcM). For experiments investigating SecYEG (Figure 3), SecA (15 \u03bcM) was added in excess of SecYEG (10 \u03bcM), as described previously (Corey et al., 2019). 5 \u00b5l of SecA or the SecA-SecYEG complex was diluted into 95 \u03bcl of deuteration buffer (20 mM Tris pH 8, 2 mM MgCl2, 50 mM KCl, and 0.02% (w/v) dodecyl-maltoside (DDM) in D2O) or with equilibration buffer (20 mM Tris pH 8, 2 mM MgCl2, 50 mM KCl, and 0.02% (w/v) DDM in H2O). Deuteration was carried out at 25\u00b0C. For experiments analysing the Sec complex in the presence of the nucleotides, 1 mM of either the non-hydrolysable AMPPNP or ADP was added to the protein mixture and to equilibrium or deuteration buffer.\n\nThe proteins were labelled by incubation in deuteration buffer for 0.25, 1, 5, and 30 min to capture short, medium and long exchange times. Deuteration was quenched with 100 \u03bcL of quench buffer (0.7% (v/v) formic acid and 0.1% (w/v) DDM) at 1\u00b0C and a pH of 2.4. Protein digestion to peptides was performed at 25\u00b0C using an Enzymate online digestion column (Waters) in 0.1% (v/v) formic acid at a flow rate of 200 \u03bcL/min. Between injection of samples, the pepsin column was washed with cleaning solution (0.8% (v/v) formic acid, 1.5 M Gu-HCl, and 4% (v/v) MeOH) recommended by the manufacturer. To reduce peptide carry-over, a blank run was performed between sample runs.\n\nPeptides were trapped using an Acquity BEH C18 1.7 \u03bcM VANGUARD pre-column for 3 min at a flow rate of 200 \u03bcL/min in buffer A (0.1% (v/v) formic acid at a pH of\u00a0~2.5). Peptides were eluted into an Acquity UPLC BEH C18 1.7 \u03bcM 1.0 \u00d7 100 mm analytical column with a linear gradient of 8\u201340% (v/v) gradient of acetonitrile with 0.1% (v/v) formic acid at a flow rate of 40 \u03bcL/min. Peptides were then ionised by positive electrospray into a Synapt G2-Si mass spectrometer (Waters). A 20\u201330 V trap collision energy ramp was utilised to capture the MSE data. The\u00a0electrospray ionisation source was operated in a positive ion mode and ion mobility was enabled for all experiments. Leucine Enkephalin was used as a lock mass for mass accuracy correction and iodide was used for mass spectrometry calibration. All deuterium time points were performed in triplicate.\n\n### HDX data evaluation and statistical analysis\n\nAll experiments, including deuterated time points and reference sample controls, were repeated in triplicate. MSE data from reference sample controls of\u00a0the complexes were used by the Waters ProteinLynx Global Server 2.5.1 (PLGS) and filtered using DynamX (v. 3.0) to provide sequence identification. The following parameters were used to filter the quality of the peptides: minimum and maximum peptide sequence length of 4 and 25, respectively, minimum intensity of 1000, minimum MS/MS products of 2, minimum products per amino acid of 0.2, and a maximum MH\u00a0+\u00a0error threshold of 5 ppm. All spectra generated from the peptides were examined and only peptides with high-quality spectra and a high signal to noise ratio were used for data analysis. Wood\u2019s plots and confidence intervals were generated using the in-house Deuteros software (Lau et al., 2019).\n\n### In silico analyses of SecA pore dynamics\n\nAnalyses were based on all-atom molecular dynamics simulations of a complex comprising Bacillus subtilis SecA, Geobacillus thermodenitrificans SecYE and a 76-stretch of pre-protein, built from PDB 5EUL (Li et al., 2016). The simulations were run in an ATP- or ADP-bound state, with full details of their set up described previously (Corey et al., 2019). For the analyses here, only the atoms corresponding to SecA and SecYE were kept (i.e. the solvent, membrane and pre-protein were removed). Snapshots were taken every 25 ns over a range of 750 to 1000 ns.\n\nTwo highly conserved pre-protein pores in SecA were identified: pore 1\u00a0on the cytoplasmic surface of SecA (Figure 4c: green) and pore 2\u00a0close to the SecY binding interface (Figure 4c: blue). Pore 1 consists of residues Ile 222, Ser 224, Gly 326, Arg 327, Arg 328 and Ser 340 (in B. subtilis numbering; equivalent to E. coli residues Ile 224, Ser 226, Gly 346, Arg 347, Arg 348 and Ser 350). Pore 2 consists of Gln 595, Tyr 599 and Gln 736 on SecA (in B. subtilis numbering, E. coli equivalent are Gln 644, Tyr 648 and Gln 787), and Ile 243, Tyr 245 and Ala 246 on the functionally\u00a0important (Corey et al., 2016b) C4 loop of SecY (G. thermodentrifinicans numbering, approximately equivalent to Val 246, Tyr 248 and Ala 249 on E. coli SecY). Note that residues Gly 346, Arg 347, Arg 348 and Ser 350 in pore one and Gln 787 and Ala 249 of pore 2 (all in E. coli numbering) are shown to be deprotected in the HDX data (see Data Availability).\n\nTo quantify the pore size in the different snapshots, cavity cross-sectional area analyses were run using HOLE (Smart et al., 1996). The algorithm was set to start from a position in either pore 1 (between the \u03b1-carbons of residues Ile 222 and Ser 340) or pore 2 (between the \u03b1-carbons of residues Tyr 599 and Ile 243). To account for flexibility in the pore position, a region of\u00a0~0.9 nm on either side of the starting point was selected for analysis, and the pore defined as the narrowest point in this region. The pore size was quantified based on the average over a 0.35 nm window, to reduce artefacts arising from thermal fluctuations.\n\nImages were made using the PyMOL Molecular Graphics System version 2.1.1, Schr\u00f6dinger, LLC, and data were plotted and analysed in Prism version 7, GraphPad Software.\n\n### Data availability\n\nThe mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Vizca\u00edno et al., 2016) partner repository with the dataset identifier: PXD013594.\n\nSecYEG-SecA (saturated SecYEG from Corey et al., eLife 2019;8:e41803 doi: 10.7554/eLife.41803) data can be accessed using the with the dataset identifier: PXD013594.\n",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "adf3c834-c766-41d1-96c8-4c85b8df09ce",
+      "submission_id": "60d8e237-a18b-4bf9-b9bb-01bbdf2aef12",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.47402.016](https://doi.org/10.7554/eLife.47402.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"HDX-MS reveals nucleotide-based, anti-correlated opening and closure of SecA/ SecY channels of the bacterial translocon\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nUsing hydrogen-deuterium exchange experiment and molecular dynamics simulations, this work investigated and provided important insight into the structural-mechanism of protein translocation by SecA. The finding is consistent with the previously proposed Brownian ratchet mechanism in showing channel-opening of SecY and simultaneous channel-tightening of SecA upon ATP binding of the latter.\n\nEssential revisions:\n\nWhile the reviewers were satisfied with the quality of the data and found the results of this work potentially interesting and significant, they believe that the conclusion can be further strengthened by showing that the altered pattern of hydrogen-deuterium exchange upon ATP binding is indeed a result of SecA tightening and SecY opening upon ATP binding. As is, this is not necessarily the case because other changes in conformational dynamics such as disruption of protein secondary structure could also alter the HD exchange pattern without SecA tightening and SecY opening. The reviewers suggest that further analysis on the MD data is required to show that from the MD data on can qualitatively predict the HDX patterns. This could be done in principle using previously reported methods such as that by Park et al. (J. Chem. Inf. Model. 2015, 55, 1914\u22121925).\n\nThe authors should expand the Discussion somewhat to contextualize their results with respect to the current understanding of SecY translocation mechanisms.\n",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0c8cec51-e303-426e-bb67-173388c9ed6a",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C1",
+      "claim": "The bacterial Sec translocon is a multi-protein complex responsible for translocating diverse proteins across the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterial Sec translocon is a multi-protein complex responsible for translocating diverse proteins across the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement about the Sec translocon that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "0811b0dd-0eda-46c9-a830-ac4fa239ba5f",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C2",
+      "claim": "For post-translational protein translocation, the Sec-channel \u2013 SecYEG \u2013 associates with the motor protein SecA to mediate the ATP-dependent transport of pre-proteins across the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "For post-translational protein translocation, the Sec-channel \u2013 SecYEG \u2013 associates with the motor protein SecA to mediate the ATP-dependent transport of pre-proteins across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the established mechanism of the Sec system, drawing from scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "ab426c70-dbc3-45bd-a321-c6dc874a01ed",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C3",
+      "claim": "A diffusional-based Brownian ratchet mechanism for protein secretion has been previously proposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, a diffusional-based Brownian ratchet mechanism for protein secretion has been proposed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior work in the field, indicating citation-based support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "e8c79b79-ebef-4e57-8c37-da3f5a9c9615",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C4",
+      "claim": "The structural dynamics required to facilitate the Brownian ratchet mechanism remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "the structural dynamics required to facilitate this mechanism remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a knowledge gap, based on inference from the existing literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "759b87ea-ec37-41b5-b723-4ea062ac8a8c",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C5",
+      "claim": "HDX-MS reveals striking nucleotide-dependent conformational changes in the Sec protein-channel from Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we employ hydrogen-deuterium exchange mass spectrometry (HDX-MS) to reveal striking nucleotide-dependent conformational changes in the Sec protein-channel from Escherichia coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the HDX-MS experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "028fa3cd-d728-483c-830c-938f136ee80a",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C6",
+      "claim": "ATP-dependent opening of SecY has been reported previously.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the ATP-dependent opening of SecY, reported previously",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior published work, indicating citation-based support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "565fa7b9-e0db-4bc4-9693-c849521028fd",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C7",
+      "claim": "ATP-dependent constriction of SecA around the pre-protein occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "we observe a counteracting, and ATP-dependent, constriction of SecA around the pre-protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by HDX-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "c9021bfe-a0a7-4506-8544-3dd76301b5c2",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C8",
+      "claim": "ATP binding causes SecY to open and SecA to close.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP binding causes SecY to open and SecA to close",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the HDX-MS experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "402b0c33-9b0f-4b96-9479-d579cc9e855e",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C9",
+      "claim": "ADP produced by hydrolysis causes SecY to close and SecA to open.",
+      "claim_type": "EXPLICIT",
+      "source": "while, ADP produced by hydrolysis, has the opposite effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the HDX-MS experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "b6662808-434c-4e79-92d6-92040df376c8",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C10",
+      "claim": "The alternating behavior of SecA and SecY could help impose the directionality of the Brownian ratchet for protein transport through the Sec machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "This alternating behaviour could help impose the directionality of the Brownian ratchet for protein transport through the Sec machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "3f6b9d47-b9d6-44e5-bd10-7e48752e1cc4",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C11",
+      "claim": "The Sec translocon is ubiquitous in the plasma membrane of bacteria and the endoplasmic reticulum of eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitous Sec translocon performs this task in the plasma membrane of bacteria and the endoplasmic reticulum of eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about the distribution of the Sec translocon.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "beef6add-2360-4ccd-a209-9c597a9ca967",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C12",
+      "claim": "A protein-channel through the membrane is formed by the conserved hetero-trimeric core-complex: Sec61\u03b1\u03b2\u03b3 in eukaryotes, and SecYEG in archaea and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "A protein-channel through the membrane is formed by the conserved hetero-trimeric core-complex: Sec61\u03b1\u03b2\u03b3 in eukaryotes, and SecYEG in archaea and bacteria (Hartmann et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "e9db07bf-a875-472d-a5a4-5f8ff59edf84",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C13",
+      "claim": "In bacteria, protein secretion is important for cell envelope biogenesis and maintenance, as well as for the delivery of adherence and pathogenic effector proteins to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria, protein secretion is important for cell envelope biogenesis and maintenance, as well as for the delivery of adherence and pathogenic effector proteins to the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about bacterial protein secretion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "003ea456-f7f4-49cc-ad02-29760cea0591",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C14",
+      "claim": "During protein secretion, SecYEG engages with the cytosolic motor ATPase SecA.",
+      "claim_type": "EXPLICIT",
+      "source": "During protein secretion, SecYEG engages with the cytosolic motor ATPase SecA (Lill et al., 1989)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "121d134d-407c-42c0-8d21-9e9089c5c620",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C15",
+      "claim": "SecA and SecYEG together pass pre-proteins with a short N-terminal cleavable signal sequence across the membrane, whilst still in an unfolded conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "and together they pass pre-proteins with a short N-terminal cleavable signal sequence across the membrane, whilst still in an unfolded conformation (Hartl et al., 1990; Arkowitz et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "45b1767f-7bda-426e-86a1-65dbc172ccdf",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C16",
+      "claim": "A structure of the complete SecA-SecYEG complex has been determined with an ATP analogue (ADP-BeFx; PDB code 3DIN).",
+      "claim_type": "EXPLICIT",
+      "source": "A structure of the complete SecA-SecYEG complex has been determined with an ATP analogue (ADP-BeFx; PDB code 3DIN)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to a previously published crystal structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "a72c47e0-0c92-443a-b687-b6de061df2f5",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C17",
+      "claim": "A structure of the complete SecA-SecYEG complex has been determined with a short pre-protein mimic (PDB code 5EUL).",
+      "claim_type": "EXPLICIT",
+      "source": "as well as with a short pre-protein mimic (Zimmer et al., 2008; Li et al., 2016) (PDB code 5EUL; modified in Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to a previously published crystal structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "75f24aa9-5920-4e00-9449-90d57c56af9e",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C18",
+      "claim": "No structure of the ADP-bound state has been experimentally determined.",
+      "claim_type": "EXPLICIT",
+      "source": "No structure of the ADP-bound state has been experimentally determined",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in structural knowledge based on the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "a0a3632e-d01b-4042-a49d-31dba303159c",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C19",
+      "claim": "Molecular dynamics (MD) simulations and F\u00f6rster Resonance Energy Transfer (FRET) analyses suggest that ATP and ADP respectively favour open and closed forms of the SecY channel.",
+      "claim_type": "EXPLICIT",
+      "source": "however, molecular dynamics (MD) simulations and F\u00f6rster Resonance Energy Transfer (FRET) analyses suggest that ATP and ADP respectively favour open and closed forms of the SecY channel (Fessl et al., 2018; Allen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior computational and experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "f376d91e-a6e2-49ff-8f75-76d48887bfb0",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C20",
+      "claim": "The behavior of ATP and ADP favoring open and closed forms of SecY was incorporated into a 'Brownian ratchet' model to describe the mechanism of ATP driven protein translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "This behaviour was incorporated into a 'Brownian ratchet' model to describe the mechanism of ATP driven protein translocation, whereby ATP binding and hydrolysis act to bias pre-protein diffusion in an outward direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to a mechanistic model based on prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "74aa555a-fe31-46cc-a245-8e91d5780878",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C21",
+      "claim": "The directionality of the Brownian ratchet is further augmented by the promotion of pre-protein folding on the outside, but not the inside.",
+      "claim_type": "EXPLICIT",
+      "source": "This directionality is further augmented by other factors, including the promotion of pre-protein folding on the outside, but not the inside (Corey et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "0c5977ff-e72b-426a-929e-93e584ae637d",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C22",
+      "claim": "The directionality of the Brownian ratchet is augmented by coupling transport to the trans-membrane proton-motive-force (PMF).",
+      "claim_type": "EXPLICIT",
+      "source": "and by coupling transport to the trans-membrane proton-motive-force (PMF) (Brundage et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "53f01192-400e-4fbd-b8da-35c8b2653a38",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C23",
+      "claim": "Non-hydrolysable ATP analogues cause the channel through SecY to open-up.",
+      "claim_type": "EXPLICIT",
+      "source": "while they cause the channel through SecY to open-up (Allen et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "3f0f7fa5-5b6f-444d-88c8-36ed1c741a68",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C24",
+      "claim": "Non-hydrolysable ATP analogues have been shown to prevent backsliding of trapped translocation intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "they have also been shown to prevent backsliding of trapped translocation intermediates (Bauer et al., 2014; Erlandson et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "071487a3-f070-48c1-bb37-ab7253b202a6",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C25",
+      "claim": "SecA is known to form a clamp for the translocating pre-protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, SecA is known to form a clamp for the translocating pre-protein (Zimmer et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "c6201a74-4c2b-437e-ba47-5cb4c5d3ea17",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C26",
+      "claim": "The SecA clamp can be fixed in a closed state without preventing transport.",
+      "claim_type": "EXPLICIT",
+      "source": "as the SecA clamp can be fixed in a closed state without preventing transport (Gold et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "a4f7fb49-4d4c-43cd-ac54-2b1fc1544d79",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C27",
+      "claim": "The conformational changes involved in SecA clamping are likely to be subtle, and not necessarily captured with techniques such as FRET.",
+      "claim_type": "EXPLICIT",
+      "source": "the conformational changes involved are likely to be subtle, and not necessarily captured with techniques such as FRET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of FRET and prior experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "4bd1c149-600d-4e0f-9203-9e5e742883ce",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C28",
+      "claim": "HDX-MS has emerged as a non-invasive and highly sensitive method for interrogating the conformational dynamics of membrane proteins and their complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "HDX-MS has emerged as a non-invasive and highly sensitive method for interrogating the conformational dynamics of membrane proteins and their complexes (Adhikary et al., 2017; Eisinger et al., 2017; Martens et al., 2018; Reading et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "dcd2d167-e847-454d-bdc0-2e569e729ed9",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C29",
+      "claim": "HDX-MS measures the exchange of backbone amide hydrogen to deuterium at peptide-level resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "HDX-MS measures the exchange of backbone amide hydrogen to deuterium at peptide-level resolution (Englander and Kallenbach, 1983; Konermann et al., 2011; Engen, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the fundamental principle of HDX-MS, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "d85328bb-c241-4863-8c08-a5e10a48c314",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C30",
+      "claim": "The rate of HDX depends on the solvent accessibility, protein flexibility, and hydrogen bonding networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of HDX depends on the solvent accessibility, protein flexibility, and hydrogen bonding networks (Mistarz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "06513a7c-d305-4372-ba10-02e64b2ff66e",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C31",
+      "claim": "HDX-MS can monitor the conformational changes of protein complexes by comparing HDX rates between distinct protein states.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, HDX-MS can monitor the conformational changes of protein complexes by comparing HDX rates between distinct protein states (e.g.. protein versus protein with ligand).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the application of HDX-MS, supported by citation and knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "e6d7127d-b0d2-4471-932a-357d42520cbf",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C32",
+      "claim": "Comparative HDX-MS has emerged as an attractive tool to define conformational changes to complement other, high-resolution techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, comparative HDX-MS has emerged as an attractive tool to define conformational changes to complement other, high-resolution techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the utility of HDX-MS in structural biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "9b0c7943-7d86-4ca0-9c25-d4ddc0217b46",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C33",
+      "claim": "The peptide coverage of the whole SecA-SecYEG complex was high (ranging from 82% to 95% for the respective subunits).",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide coverage of the whole complex was high (ranging from 82% to 95% for the respective subunits; Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a data quality metric from the HDX-MS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "e8edcca2-cb5b-4221-b386-0d2ecddd84b4",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C34",
+      "claim": "There was very little effect of nucleotides on the conformational dynamics of the isolated SecA.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, there was very little effect on the conformational dynamics of the isolated SecA (Figure 2a,b and Figure 2\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the HDX-MS experiments comparing AMPPNP and ADP bound states of SecA alone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "de222037-973d-477a-85d4-568f3d5d378a",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C35",
+      "claim": "The greatest difference in deuterium uptake between the two nucleotide states of isolated SecA was observed at and around the ATP-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The greatest difference in deuterium uptake between the two states was observed at and around the ATP-binding sites (Figure 2a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the HDX-MS experiments on isolated SecA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "c79fa6f2-dff6-485d-bd4b-2245063304f7",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C36",
+      "claim": "SecA is only activated when it is associated with SecYEG.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights the fact that SecA is only activated when it is associated with SecYEG",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the HDX-MS data showing minimal changes in isolated SecA.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "cf9e799c-dceb-47b0-8d70-aa4f6c6b8c70",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C37",
+      "claim": "SecYEG induces a large ATP-dependent stabilisation across almost the entirety of SecA.",
+      "claim_type": "EXPLICIT",
+      "source": "The results are consistent with SecYEG having a profound effect on SecA: SecYEG induces a large ATP-dependent stabilisation across almost the entirety of SecA (Figure 2c; negative \u0394HDX, blue bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the HDX-MS experiments on the SecA-SecYEG complex.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "e1be7f2f-e612-4431-886b-211af1d810f5",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C38",
+      "claim": "The presence of nucleotides conformationally activate SecA.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the presence of nucleotides conformationally activate SecA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the HDX-MS data comparing SecA with and without SecYEG.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "32f0b265-6f62-47c4-b64e-f864b9964288",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C39",
+      "claim": "The stabilised regions in SecA correspond with sites that directly contact the mature regions (PP-M) of the translocating pre-protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Most striking was the correspondence of the stabilised regions with sites in SecA that directly contact the mature regions (PP-M) of the translocating pre-protein (Figure 2a,c; dashed boxes \u2013PP-M, grey bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the HDX-MS data in the context of the structural model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "552d81dd-07ab-46f0-9054-adc506d7a6f5",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C40",
+      "claim": "ATP-driven conformational closure of SecA around the mature segment of the pre-protein occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such stabilisation in SecA suggests an ATP-driven conformational closure around the mature segment of the pre-protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the HDX-MS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "3aaecb8d-4b70-420a-8116-59549f8d8ff2",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C41",
+      "claim": "The highlighted regions identified in SecA would be destabilised in the ADP-bound state, following ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, of course, the highlighted regions identified in SecA would be destabilised in the ADP-bound state, following ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the comparative HDX-MS data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "a04da739-b315-4c86-ba5d-aba39c40d78a",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C42",
+      "claim": "Significant ATP-dependent destabilisation of SecY was found.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found significant ATP-dependent destabilisation of SecY (Figure 3a,b, and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the HDX-MS experiments on SecYEG in complex with SecA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "2f5d5197-5321-4aef-bf87-a4b121c55cea",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C43",
+      "claim": "Two prominently destabilised regions in SecY would be in direct contact with the signal sequence (PP-S) and mature regions (PP-M) of the pre-protein during protein translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer inspection of the identified peptides reveals that two prominently destabilised regions in the SecY protein would be in direct contact with the signal sequence (PP-S) and mature regions (PP-M) of the pre-protein during protein translocation (Figure 3b; dashed boxes \u2013PP-M grey, and PP-S yellow bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the HDX-MS data in the context of the structural model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "ddd8bd3a-756d-4020-8a58-450e7b437a2c",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C44",
+      "claim": "The destabilised regions in SecY include the plug, which in the absence of the pre-protein maintains the closed state of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "These regions include the plug, which in the absence of the pre-protein maintains the closed state of the channel (Van den Berg et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement combines HDX-MS findings with prior structural knowledge supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "ba859691-fde3-453d-8f06-49bf06ef836e",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C45",
+      "claim": "The destabilised regions in SecY include the highly conserved trans-membrane helix 7.",
+      "claim_type": "EXPLICIT",
+      "source": "and the highly conserved trans-membrane helix 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the description of HDX-MS findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "b9b3c7ab-1fea-41ef-9d8e-89c3db7d41cd",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C46",
+      "claim": "Multiple regions within the SecE and SecG subunits were significantly destabilised in the presence of AMPPNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple regions within the SecE and SecG subunits were also significantly destabilised in the presence of AMPPNP (Figure 3a,c\u2013d and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the HDX-MS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "3f773609-458a-45e2-886e-34a37424db1e",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C47",
+      "claim": "The identified regions in SecYEG would be stabilised after hydrolysis to ADP.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, conversely those identified regions would be stabilised after hydrolysis to ADP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the comparative HDX-MS data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "75229cde-e9d8-4f90-9b45-809849299140",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C48",
+      "claim": "The observations are consistent with an ATP-driven opening of the SecY channel, and closure after hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with an ATP-driven opening of the SecY channel, and closure after hydrolysis (Fessl et al., 2018; Allen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation of the HDX-MS data is consistent with prior work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "e3701fc2-04eb-48de-bd46-dbe7fac9eeb0",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C49",
+      "claim": "There is an ATP-dependent closure around the translocating polypeptide by SecA and opening of the channel through SecYEG.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is an ATP-dependent closure around the translocating polypeptide by SecA and opening of the channel through SecYEG (Figure 4a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the primary findings from the HDX-MS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "19e6768b-4e5d-4e94-9fe5-3eabe19c106b",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C50",
+      "claim": "The ATP-dependent closure of SecA and opening of SecYEG is reversed in the ADP bound state after ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "reversed in the ADP bound state after ATP hydrolysis (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the primary findings from the HDX-MS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "b059678f-2da2-414e-828c-986810678075",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C51",
+      "claim": "Both SecA pores contain residues shown by HDX-MS to be protected in the ATP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "note that both pores contain residues shown by HDX-MS to be protected in the ATP-bound state (Figure 2, Figure 4c and Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This connects the HDX-MS findings to the MD simulation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "6451e0cb-dfca-43c3-8e92-3c0f06314d9b",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C52",
+      "claim": "Both SecA pores, particularly pore one at the cytoplasmic entrance of SecA, are more constricted in the ATP-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "From the simulation data, it is clear that both SecA pores, particularly pore one at the cytoplasmic entrance of SecA, are more constricted in the ATP-bound state (Figure 4c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis of MD simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "e9d8e423-9dbc-4a40-8ec9-ea8c5ef8949a",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C53",
+      "claim": "ATP-binding is causing SecA to close around the engaged pre-protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the HDX data and suggests that ATP-binding is causing SecA to close around the engaged pre-protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation combining HDX-MS and MD simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "2816d625-22c6-4a58-9019-84845db4d1a7",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C54",
+      "claim": "The results reveal profound nucleotide-dependent differences in the structure of the active Sec complex (SecA-SecYEG).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results reveal profound nucleotide-dependent differences in the structure of the active Sec complex (SecA-SecYEG).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the primary findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "c955e710-5794-4577-a024-6edd44eb026c",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C55",
+      "claim": "Regions affecting the membrane channel (SecY, SecE and SecG) become destabilised in the presence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "those affecting the membrane channel (SecY, SecE and SecG), which become destabilised in the presence of ATP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the HDX-MS findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "4fdf1d65-8828-419d-a3b6-e75cc430ed2e",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C56",
+      "claim": "Regions affecting SecA become stabilised in the presence of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "and those affecting SecA, which become stabilised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the HDX-MS findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "9b6f2d57-6bbf-4cda-a99b-cfbdcc697be3",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C57",
+      "claim": "The most dramatic changes affect regions that would directly contact a translocating pre-protein.",
+      "claim_type": "EXPLICIT",
+      "source": "A more detailed analysis reveals that the most dramatic changes affect regions that would directly contact a translocating pre-protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the HDX-MS data in the context of the structural model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "80b708b5-7d86-44df-b978-30be50e5c391",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C58",
+      "claim": "The results are consistent with the previously proposed Brownian ratchet mechanism of pre-protein transport.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the previously proposed Brownian ratchet mechanism of pre-protein transport (Allen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the findings to prior mechanistic models.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "3ec7b321-68e5-4ee0-8e47-4c2aa26f42d9",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C59",
+      "claim": "The cyclical ATP/ADP-dependent conformational dynamics highlighted in SecA and SecYEG are presumably integral components of the underling mechanism of the ratcheting machine.",
+      "claim_type": "EXPLICIT",
+      "source": "The cyclical ATP/ADP-dependent conformational dynamics highlighted in SecA and SecYEG are presumably integral components of the underling mechanism of this ratcheting machine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "1b54ffaf-5ae6-4dc5-a8c2-88efa490c77e",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C60",
+      "claim": "The opening (ATP) and closure (ADP) of the channel through SecY is an integral component of the ratcheting mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "for instance, the opening (ATP) and closure (ADP) of the channel through SecY (Corey et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the findings to prior work on the mechanism.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "6f8d94e5-8d20-4fde-be64-73bc2c74c1a9",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C61",
+      "claim": "The conferral of ATP-dependent asymmetry that prevents pre-protein folding at the cytosolic side of the membrane, while allowing it at the exterior is likely to be a result of the observed conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the conferral of ATP-dependent asymmetry that prevents pre-protein folding at the cytosolic side of the membrane, while allowing it at the exterior (Corey et al., 2019) is likely to also be a result of these changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation connecting the findings to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "f6604cd8-2a4a-4d58-8580-4f94d0519cac",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C62",
+      "claim": "The observation that ATP causes SecA to constrict around the pre-protein could potentially explain why pre-proteins do not backslide in the presence of a non-hydrolysable ATP analogue.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the observation that ATP causes SecA to constrict around the pre-protein could potentially explain why pre-proteins do not backslide in the presence of a non-hydrolysable ATP analogue (Bauer et al., 2014; Erlandson et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings in light of prior observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "5fbe6734-053a-4a92-9224-503ab2bd61f4",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C63",
+      "claim": "The constriction of SecA around the pre-protein could promote forward transport.",
+      "claim_type": "EXPLICIT",
+      "source": "and thereby promote forward transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the mechanistic implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "35b81bc2-2cc3-40d8-b11b-6144651083fe",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C64",
+      "claim": "The experiments demonstrate the power of combining HDX-MS with the results of biochemistry and molecular simulations to understand the conformational mechanism of multi-component membrane protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments presented here demonstrate the power of combining HDX-MS with the results of biochemistry and molecular simulations to understand the conformational mechanism of multi-component membrane protein complexes, difficult to study by other approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the methodological approach of the study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "83771869-00e4-490e-b744-c66e9d6d153f",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C65",
+      "claim": "AMPPNP was used to study the ATP-bound state because ATP is rapidly hydrolysed to ADP in the active complex.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPPNP was used to study the ATP-bound state because ATP is rapidly hydrolysed to ADP in the active complex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the methodological choice based on biochemical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "b28cff35-2dd3-4ccb-913c-2e29e4ab7221",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C66",
+      "claim": "The peptide coverage ranged from 82% to 95% for the respective subunits of SecA-SecYEG.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide coverage of the whole complex was high (ranging from 82% to 95% for the respective subunits; Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a data quality metric from the HDX-MS experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "5df0b0a0-c20e-47b6-9226-dc2dc3efd831",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C67",
+      "claim": "Pore 1 in SecA consists of residues Ile 222, Ser 224, Gly 326, Arg 327, Arg 328 and Ser 340 (in B. subtilis numbering).",
+      "claim_type": "EXPLICIT",
+      "source": "Pore 1 consists of residues Ile 222, Ser 224, Gly 326, Arg 327, Arg 328 and Ser 340 (in B. subtilis numbering; equivalent to E. coli residues Ile 224, Ser 226, Gly 346, Arg 347, Arg 348 and Ser 350).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural composition of pore 1 based on the MD simulation model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "f32efdcd-8202-432c-ac9d-797c5057edec",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C68",
+      "claim": "Pore 2 in SecA consists of Gln 595, Tyr 599 and Gln 736 on SecA, and Ile 243, Tyr 245 and Ala 246 on the C4 loop of SecY.",
+      "claim_type": "EXPLICIT",
+      "source": "Pore 2 consists of Gln 595, Tyr 599 and Gln 736 on SecA (in B. subtilis numbering, E. coli equivalent are Gln 644, Tyr 648 and Gln 787), and Ile 243, Tyr 245 and Ala 246 on the functionally important (Corey et al., 2016b) C4 loop of SecY (G. thermodentrifinicans numbering, approximately equivalent to Val 246, Tyr 248 and Ala 249 on E. coli SecY).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural composition of pore 2 based on the MD simulation model, with citation for functional importance.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "077a0f61-d39d-4510-8cf2-3d9e32781c31",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C69",
+      "claim": "Residues Gly 346, Arg 347, Arg 348 and Ser 350 in pore one and Gln 787 and Ala 249 of pore 2 (all in E. coli numbering) are shown to be deprotected in the HDX data.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that residues Gly 346, Arg 347, Arg 348 and Ser 350 in pore one and Gln 787 and Ala 249 of pore 2 (all in E. coli numbering) are shown to be deprotected in the HDX data (see Data Availability).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects specific residues in the pores to the HDX-MS findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "17852b72-e98d-476e-87a4-5d18272ac2ea",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C70",
+      "claim": "Pore 1 means are 1.9 and 2.6 \u00c52 for ATP and ADP states respectively (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "both pores are tighter in ATP bound state (pore 1 means are 1.9 and 2.6 \u00c52, p<0.0001 using a 2 tailed t-test",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the MD simulation analysis with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "a212cd3f-cda9-48c6-a95f-ccdf20aac4ba",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "claim_id": "C71",
+      "claim": "Pore 2 means are 2.4 and 2.1 \u00c52 for ATP and ADP states respectively (p=0.0061).",
+      "claim_type": "EXPLICIT",
+      "source": "pore 2 means are 2.4 and 2.1 \u00c52, p=0.0061).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the MD simulation analysis with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7e3652e7-e0e3-49a5-a44b-e710851270fe",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HDX-MS reveals that ATP binding causes opposing conformational changes in SecA and SecYEG: SecA becomes stabilized (closes) around the pre-protein while SecYEG becomes destabilized (opens), with the opposite occurring upon ATP hydrolysis to ADP. The most dramatic changes occur in regions that directly contact the translocating pre-protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C7-C9, C33-C57 collectively demonstrate nucleotide-dependent conformational changes using HDX-MS with high peptide coverage (82-95%, C33, C66). The data show ATP-dependent stabilization of SecA (C37, C40, C56) and destabilization of SecYEG (C42, C46, C55) in regions contacting the pre-protein (C39, C43, C57), with reversal in the ADP state (C41, C47, C50). The findings are internally consistent and supported by appropriate controls comparing isolated SecA (minimal changes, C34-C35) versus the complex (C36-C38).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "b6722503-02b7-46a7-9669-e20c004c3211",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MD simulations demonstrate that both SecA pores (particularly pore 1) are more constricted in the ATP-bound state compared to ADP, with statistically significant differences in pore size. This computational finding is consistent with HDX-MS data showing protection of pore residues in the ATP state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53, C67-C71 provide convergent evidence from MD simulations and HDX-MS. The pore size quantification shows statistically significant constriction in ATP state (pore 1: 1.9 vs 2.6 \u00c5\u00b2, p<0.0001; pore 2: 2.4 vs 2.1 \u00c5\u00b2, p=0.0061, C70-C71). The specific residues identified in the pores (C67-C68) are shown to be protected in HDX data (C69), providing independent validation. The statistical analysis appears appropriate with sufficient sampling (snapshots every 25 ns from 750-1000 ns).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "096df734-97d7-483b-b06b-4b52d1282e9b",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The observed alternating conformational dynamics of SecA and SecYEG are proposed to impose directionality on the Brownian ratchet mechanism for protein transport, potentially explaining why pre-proteins do not backslide in the presence of non-hydrolysable ATP analogues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10, C58-C63 present mechanistic interpretations that are explicitly speculative (C10, C59, C61-C63 marked as SPECULATION). While the HDX-MS and MD data support ATP-dependent conformational changes, the causal link to Brownian ratchet directionality and prevention of backsliding remains inferential. The consistency with prior models (C58, C60) and observations (C62) is noted, but direct experimental validation of the proposed mechanism is not provided. The claims appropriately use cautious language ('could help', 'presumably', 'likely', 'potentially').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "8f10356e-a4e2-40d5-b1b7-842f08d170a3",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "HDX-MS is established as a sensitive method for studying membrane protein conformational dynamics, and AMPPNP was used as a non-hydrolysable ATP analogue because ATP is rapidly hydrolyzed in the active complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32, C64-C65 describe established methodological principles supported by citations (C28-C31) and biochemical knowledge (C65). The choice of AMPPNP is appropriately justified (C65), and the general utility of HDX-MS for membrane protein complexes is well-documented (C28, C32). Claim C64 appropriately summarizes the integrative approach combining HDX-MS, biochemistry, and MD simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "f608e22c-cc3b-4ffc-bb7c-df315aa2ee10",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Sec translocon is a conserved multi-protein complex (SecYEG in bacteria, Sec61\u03b1\u03b2\u03b3 in eukaryotes) that mediates ATP-dependent protein translocation across membranes, with SecA serving as the motor ATPase in bacteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C11-C15 provide background on the Sec system supported by established knowledge and citations (C12, C14-C15). These are well-established facts in the field describing the composition, distribution, and basic function of the Sec translocon. The claims accurately represent prior work and provide necessary context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "2a127689-c895-481c-ad3e-021dafb51e3b",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Prior work established a Brownian ratchet model for Sec-mediated transport based on ATP/ADP-dependent opening/closing of SecY, but the structural dynamics of SecA and the mechanism preventing backsliding remained unclear, particularly regarding subtle conformational changes not captured by techniques like FRET.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C16-C27 accurately summarize prior work with appropriate citations (C16-C17, C19-C26) and identify knowledge gaps (C4, C18, C27). The claims correctly note that no ADP-bound structure exists (C18), that MD/FRET suggest nucleotide-dependent SecY dynamics (C19), and that SecA clamping changes may be subtle (C27). This establishes the rationale for the current HDX-MS study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    },
+    {
+      "id": "9b634007-c4fa-49dd-b34c-c29ec210a19b",
+      "content_id": "e7fa3bb8-4206-4389-9743-3ba9bae1d2d0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The HDX-MS experiments achieved high peptide coverage ranging from 82% to 95% for the respective subunits of the SecA-SecYEG complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 (duplicate of C33) reports a data quality metric directly from the experimental results, supported by Figure 2\u2014figure supplement 1. The high coverage across all subunits (82-95%) indicates comprehensive analysis of the complex, which is essential for the validity of the conformational dynamics conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:05:36.483873Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "759b87ea-ec37-41b5-b723-4ea062ac8a8c",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "565fa7b9-e0db-4bc4-9693-c849521028fd",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "c9021bfe-a0a7-4506-8544-3dd76301b5c2",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "402b0c33-9b0f-4b96-9479-d579cc9e855e",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "9b0c7943-7d86-4ca0-9c25-d4ddc0217b46",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "e8edcca2-cb5b-4221-b386-0d2ecddd84b4",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "de222037-973d-477a-85d4-568f3d5d378a",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "c79fa6f2-dff6-485d-bd4b-2245063304f7",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "cf9e799c-dceb-47b0-8d70-aa4f6c6b8c70",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "e1be7f2f-e612-4431-886b-211af1d810f5",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "32f0b265-6f62-47c4-b64e-f864b9964288",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "552d81dd-07ab-46f0-9054-adc506d7a6f5",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "3aaecb8d-4b70-420a-8116-59549f8d8ff2",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "a04da739-b315-4c86-ba5d-aba39c40d78a",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "2f5d5197-5321-4aef-bf87-a4b121c55cea",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "ddd8bd3a-756d-4020-8a58-450e7b437a2c",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "ba859691-fde3-453d-8f06-49bf06ef836e",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "b9b3c7ab-1fea-41ef-9d8e-89c3db7d41cd",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "3f773609-458a-45e2-886e-34a37424db1e",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "75229cde-e9d8-4f90-9b45-809849299140",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "e3701fc2-04eb-48de-bd46-dbe7fac9eeb0",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "19e6768b-4e5d-4e94-9fe5-3eabe19c106b",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "2816d625-22c6-4a58-9019-84845db4d1a7",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "c955e710-5794-4577-a024-6edd44eb026c",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "4fdf1d65-8828-419d-a3b6-e75cc430ed2e",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "9b6f2d57-6bbf-4cda-a99b-cfbdcc697be3",
+      "result_id": "7e3652e7-e0e3-49a5-a44b-e710851270fe"
+    },
+    {
+      "claim_id": "b059678f-2da2-414e-828c-986810678075",
+      "result_id": "b6722503-02b7-46a7-9669-e20c004c3211"
+    },
+    {
+      "claim_id": "6451e0cb-dfca-43c3-8e92-3c0f06314d9b",
+      "result_id": "b6722503-02b7-46a7-9669-e20c004c3211"
+    },
+    {
+      "claim_id": "e9d8e423-9dbc-4a40-8ec9-ea8c5ef8949a",
+      "result_id": "b6722503-02b7-46a7-9669-e20c004c3211"
+    },
+    {
+      "claim_id": "5df0b0a0-c20e-47b6-9226-dc2dc3efd831",
+      "result_id": "b6722503-02b7-46a7-9669-e20c004c3211"
+    },
+    {
+      "claim_id": "f32efdcd-8202-432c-ac9d-797c5057edec",
+      "result_id": "b6722503-02b7-46a7-9669-e20c004c3211"
+    },
+    {
+      "claim_id": "077a0f61-d39d-4510-8cf2-3d9e32781c31",
+      "result_id": "b6722503-02b7-46a7-9669-e20c004c3211"
+    },
+    {
+      "claim_id": "17852b72-e98d-476e-87a4-5d18272ac2ea",
+      "result_id": "b6722503-02b7-46a7-9669-e20c004c3211"
+    },
+    {
+      "claim_id": "a212cd3f-cda9-48c6-a95f-ccdf20aac4ba",
+      "result_id": "b6722503-02b7-46a7-9669-e20c004c3211"
+    },
+    {
+      "claim_id": "b6662808-434c-4e79-92d6-92040df376c8",
+      "result_id": "096df734-97d7-483b-b06b-4b52d1282e9b"
+    },
+    {
+      "claim_id": "80b708b5-7d86-44df-b978-30be50e5c391",
+      "result_id": "096df734-97d7-483b-b06b-4b52d1282e9b"
+    },
+    {
+      "claim_id": "3ec7b321-68e5-4ee0-8e47-4c2aa26f42d9",
+      "result_id": "096df734-97d7-483b-b06b-4b52d1282e9b"
+    },
+    {
+      "claim_id": "1b54ffaf-5ae6-4dc5-a8c2-88efa490c77e",
+      "result_id": "096df734-97d7-483b-b06b-4b52d1282e9b"
+    },
+    {
+      "claim_id": "6f8d94e5-8d20-4fde-be64-73bc2c74c1a9",
+      "result_id": "096df734-97d7-483b-b06b-4b52d1282e9b"
+    },
+    {
+      "claim_id": "f6604cd8-2a4a-4d58-8580-4f94d0519cac",
+      "result_id": "096df734-97d7-483b-b06b-4b52d1282e9b"
+    },
+    {
+      "claim_id": "5fbe6734-053a-4a92-9224-503ab2bd61f4",
+      "result_id": "096df734-97d7-483b-b06b-4b52d1282e9b"
+    },
+    {
+      "claim_id": "4bd1c149-600d-4e0f-9203-9e5e742883ce",
+      "result_id": "8f10356e-a4e2-40d5-b1b7-842f08d170a3"
+    },
+    {
+      "claim_id": "dcd2d167-e847-454d-bdc0-2e569e729ed9",
+      "result_id": "8f10356e-a4e2-40d5-b1b7-842f08d170a3"
+    },
+    {
+      "claim_id": "d85328bb-c241-4863-8c08-a5e10a48c314",
+      "result_id": "8f10356e-a4e2-40d5-b1b7-842f08d170a3"
+    },
+    {
+      "claim_id": "06513a7c-d305-4372-ba10-02e64b2ff66e",
+      "result_id": "8f10356e-a4e2-40d5-b1b7-842f08d170a3"
+    },
+    {
+      "claim_id": "e6d7127d-b0d2-4471-932a-357d42520cbf",
+      "result_id": "8f10356e-a4e2-40d5-b1b7-842f08d170a3"
+    },
+    {
+      "claim_id": "35b81bc2-2cc3-40d8-b11b-6144651083fe",
+      "result_id": "8f10356e-a4e2-40d5-b1b7-842f08d170a3"
+    },
+    {
+      "claim_id": "83771869-00e4-490e-b744-c66e9d6d153f",
+      "result_id": "8f10356e-a4e2-40d5-b1b7-842f08d170a3"
+    },
+    {
+      "claim_id": "0c8cec51-e303-426e-bb67-173388c9ed6a",
+      "result_id": "f608e22c-cc3b-4ffc-bb7c-df315aa2ee10"
+    },
+    {
+      "claim_id": "0811b0dd-0eda-46c9-a830-ac4fa239ba5f",
+      "result_id": "f608e22c-cc3b-4ffc-bb7c-df315aa2ee10"
+    },
+    {
+      "claim_id": "3f6b9d47-b9d6-44e5-bd10-7e48752e1cc4",
+      "result_id": "f608e22c-cc3b-4ffc-bb7c-df315aa2ee10"
+    },
+    {
+      "claim_id": "beef6add-2360-4ccd-a209-9c597a9ca967",
+      "result_id": "f608e22c-cc3b-4ffc-bb7c-df315aa2ee10"
+    },
+    {
+      "claim_id": "e9db07bf-a875-472d-a5a4-5f8ff59edf84",
+      "result_id": "f608e22c-cc3b-4ffc-bb7c-df315aa2ee10"
+    },
+    {
+      "claim_id": "003ea456-f7f4-49cc-ad02-29760cea0591",
+      "result_id": "f608e22c-cc3b-4ffc-bb7c-df315aa2ee10"
+    },
+    {
+      "claim_id": "121d134d-407c-42c0-8d21-9e9089c5c620",
+      "result_id": "f608e22c-cc3b-4ffc-bb7c-df315aa2ee10"
+    },
+    {
+      "claim_id": "ab426c70-dbc3-45bd-a321-c6dc874a01ed",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "e8c79b79-ebef-4e57-8c37-da3f5a9c9615",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "45b1767f-7bda-426e-86a1-65dbc172ccdf",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "a72c47e0-0c92-443a-b687-b6de061df2f5",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "75f24aa9-5920-4e00-9449-90d57c56af9e",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "a0a3632e-d01b-4042-a49d-31dba303159c",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "f376d91e-a6e2-49ff-8f75-76d48887bfb0",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "74aa555a-fe31-46cc-a245-8e91d5780878",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "0c5977ff-e72b-426a-929e-93e584ae637d",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "53f01192-400e-4fbd-b8da-35c8b2653a38",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "3f0f7fa5-5b6f-444d-88c8-36ed1c741a68",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "071487a3-f070-48c1-bb37-ab7253b202a6",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "c6201a74-4c2b-437e-ba47-5cb4c5d3ea17",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "a4f7fb49-4d4c-43cd-ac54-2b1fc1544d79",
+      "result_id": "2a127689-c895-481c-ad3e-021dafb51e3b"
+    },
+    {
+      "claim_id": "b28cff35-2dd3-4ccb-913c-2e29e4ab7221",
+      "result_id": "9b634007-c4fa-49dd-b34c-c29ec210a19b"
+    }
+  ],
+  "comparisons": []
+}

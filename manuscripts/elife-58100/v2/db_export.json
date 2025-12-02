@@ -1,0 +1,1475 @@
+{
+  "submission": {
+    "id": "ea958acd-436e-4b72-a770-e87c72f61213",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:45:50.527133Z",
+    "updated_at": "2025-12-02T20:45:50.527133Z"
+  },
+  "content": [
+    {
+      "id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "submission_id": "ea958acd-436e-4b72-a770-e87c72f61213",
+      "content_type": "manuscript",
+      "content_text": "# Structural insight into toxin secretion by contact-dependent growth inhibition transporters\n\n## Authors\n\n- Jeremy Guerin<sup>1</sup> ([ORCID: 0000-0003-2622-040X](https://orcid.org/0000-0003-2622-040X))\n- Istvan Botos<sup>1</sup>\n- Zijian Zhang<sup>2</sup>\n- Karl Lundquist<sup>2</sup>\n- James C Gumbart<sup>2</sup> ([ORCID: 0000-0002-1510-7842](https://orcid.org/0000-0002-1510-7842))\n- Susan K Buchanan<sup>1</sup> ([ORCID: 0000-0001-9657-7119](https://orcid.org/0000-0001-9657-7119)) \u2020\n\n### Affiliations\n\n1. Laboratory of Molecular Biology, NIDDK, NIH Bethesda United States\n2. School of Physics, Georgia Institute of Technology Atlanta Georgia\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacterial contact-dependent growth inhibition (CDI) systems use a type Vb secretion mechanism to export large CdiA toxins across the outer membrane by dedicated outer membrane transporters called CdiB. Here, we report the first crystal structures of two CdiB transporters from Acinetobacter baumannii and Escherichia coli. CdiB transporters adopt a TpsB fold, containing a 16-stranded transmembrane \u03b2-barrel connected to two periplasmic domains. The lumen of the CdiB pore is occluded by an N-terminal \u03b1-helix and the conserved extracellular loop 6; these two elements adopt different conformations in the structures. We identified a conserved DxxG motif located on strand \u03b21 that connects loop 6 through different networks of interactions. Structural modifications of DxxG induce rearrangement of extracellular loops and alter interactions with the N-terminal \u03b1-helix, preparing the system for \u03b1-helix ejection. Using structural biology, functional assays, and molecular dynamics simulations, we show how the barrel pore is primed for CdiA toxin secretion.\n\n## Introduction\n\nIn bacterial ecosystems, competition for limited nutrients can be a life or death battle. To fight for resources, some Gram-negative bacteria employ direct toxin exchange through a process known as Contact-Dependent growth Inhibition (CDI). This process was first described in Escherichia\u00a0coli EC93, where a two-partner secretion system consisting of a CdiA toxin and a CdiB transporter was shown to inhibit other E. coli strains (Aoki et al., 2005). CdiB is an outer membrane transporter that releases its CdiA toxin to the cell surface. Once contact occurs, a toxin domain at the CdiA C-terminus is cleaved and imported into the target bacterium to inhibit growth. To prevent self-destruction, CDI systems also express an immunity protein, CdiI, which protects against CdiA toxins delivered from neighboring cells (Figure 1\u2014figure supplement 3; Aoki et al., 2005; Ruhe et al., 2018; Ruhe et al., 2017).\n\nCdiA and CdiB belong to the Two-Partner Secretion family of proteins (TPS; Type Vb secretion system). The core of a TPS system consists of two proteins called TpsA for the secreted proteins, and TpsB for their cognate transporters (Gu\u00e9rin et al., 2017). Like TpsA, CdiA toxins are predicted to fold into a \u03b2-helix, forming an elongated filament that extends several hundred angstroms from CdiB transporters (Clantin et al., 2004; Ruhe et al., 2018). CdiA proteins are synthesized in the cytoplasm and contain two N-terminal domains directing their secretion: a signal peptide and a TPS domain (Figure 1\u2014figure supplement 3). After inner membrane translocation and signal peptide removal by the SEC machinery, the CdiA TPS domain interacts with the periplasmic domains of its cognate CdiB transporter (Baud et al., 2014; Clantin et al., 2004; Delattre et al., 2011; Hodak et al., 2006). At this point, translocation across the outer membrane is initiated and the rest of the protein is folded at the surface of the bacterium. Domain organization and folding during secretion are still poorly understood, however a study using electron cryo-tomography suggests that secretion occurs in two distinct steps (Ruhe et al., 2018). In this model, the CdiA N-terminal half of the protein, including the TPS and FHA-1 domains, is secreted first and forms a 330 \u00c5 filament exposing the receptor-binding domain (RBD). The RBD recognizes a specific membrane receptor on the surface of a neighboring cell, triggering the second secretion step (Ruhe et al., 2018; Ruhe et al., 2017). The CdiA C-terminal half of the protein, which was still in the periplasm, is now released and exported to the cell surface. A short tyrosine- and proline-rich region and a second filamentous hemagglutinin domain (FHA-2) fold and then associate with the outer membrane of the target bacterium to deliver the C-terminal toxin. The toxin domain is cleaved from the rest of the CdiA protein by an unknown mechanism, and then released into the target cell.\n\nCdiB proteins are members of the Omp85 superfamily. There are two functionally distinct protein classes in the Omp85 superfamily: BamA/TamA proteins that insert newly synthesized outer membrane proteins into the outer membrane, and TpsB proteins that secrete cognate protein substrates to the extracellular surface (Figure 1\u2014figure supplement 3; Gentle et al., 2004; Gu\u00e9rin et al., 2017; Heinz and Lithgow, 2014). While there are several BamA, TamA, and BAM complex structures (Bakelar et al., 2016; Gruss et al., 2013; Gu et al., 2016; Noinaj et al., 2013), only one TpsB structure has been characterized: Bordetella pertussis FhaC (Clantin et al., 2007; Maier et al., 2015). This TpsB transporter secretes a major adhesin called filamentous haemagglutinin (FHA). BamA/TamA and TpsB proteins share a common fold with distinct features enabling either insertion into the membrane, or secretion across it. The two protein classes use a 16-stranded \u03b2-barrel to span the outer membrane, connected to a series of N-terminal periplasmic interaction modules called polypeptide-transport-associated (POTRA) domains. Inside the \u03b2-barrel lumen, extracellular loop 6 (L6) forms a \u2018lid-lock\u2019 through interactions between two essential signature motifs: (V/I)RG(Y/F) at the tip of L6 and (F/G)xDxG on strand \u03b213 (Gruss et al., 2013; Maier et al., 2015; Noinaj et al., 2013). Mutagenesis experiments have shown that L6 is essential for activity but its precise function is unclear (Gu\u00e9rin et al., 2015; H\u00f6hr et al., 2018; Leonard-Rivera and Misra, 2012; Rigel et al., 2013). In addition, TpsB proteins contain an N-terminal \u03b1-helix (H1) inserted into the barrel pore that is not found in BamA/TamA proteins. H1 is connected to the first POTRA domain by a short periplasmic polypeptide; this linker has been shown to be essential for secretion in the FhaC/FHA system. Since H1 blocks the barrel pore in the resting conformation, it must be removed for secretion to occur (Figure 1\u2014figure supplement 3; Baud et al., 2014; Gu\u00e9rin et al., 2014; Maier et al., 2015).\n\nHere we report the first crystal structures of CdiB transporters from A. baumannii (ACICU) and E. coli (EC93). Two distinct conformations for H1 are observed within the \u03b2-barrel lumen. Using structure-based sequence alignment, we identified a conserved DxxG motif on strand \u03b21 that is found in all TpsB transporters but not in BamA/TamA proteins. We show that the role of DxxG is to increase the flexibility of strand \u03b21, which in turn affects the \u03b21\u2013\u03b216 interface. We developed a secretion assay to show that CdiB transporters specifically secrete their cognate CdiA proteins and used this assay to analyze the functions of individual amino acids in CdiA secretion. Molecular dynamics simulations illustrate ejection of H1 from \u03b2-barrel lumen. Our results highlight conformational changes in the \u03b2-barrel domain that facilitate pore opening and secretion of the substrate.\n\n## Results\n\n### Two CdiB transporter structures\n\nWe determined two full-length crystal structures of CdiB transporters from Acinetobacter baumannii (strain ACICU) and E. coli (strain EC93), which will be referred to as CdiBAb and CdiBEc. CdiBAb and CdiBEc structures were built and refined to final resolutions of 2.4 \u00c5 and 2.6 \u00c5, respectively (Table 1). Despite low sequence similarity (21% sequence identity), both structures adopt a common fold: an N-terminal \u03b1-helix (H1) is inserted into the lumen of the \u03b2-barrel and is connected by a\u00a0~\u00a020 residue linker to two periplasmic POTRA domains. The POTRA domains have a conserved \u03b2\u03b1\u03b1\u03b2\u03b2 fold and extend away from the \u03b2-barrel (Figure 1). The C-terminal \u03b2-barrel consists of 16 antiparallel \u03b2-strands organized as an oblique cylinder with cross-sectional dimensions of 35 \u00c5 x 25 \u00c5. The longest \u03b2-strands (\u03b25 to \u03b28) form an extended \u03b2-sheet that may serve to anchor the CdiA substrate to initialize its folding (Baud et al., 2014; Figure 1 and Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig1-v2.jpg)\n\n**Figure 1.:** Membrane view (upper panel) and periplasmic view (lower panel) of (A) CdiB from Acinetobacter baumannii (CdiBAb) in light teal and, (B) CdiB from Escherichia coli (CdiBEc) in pale yellow. The first POTRA domain is indicated by P1, and the second POTRA domain, closer to the \u03b2-barrel, by P2. Inside the \u03b2-barrel, the N-terminal helix H1 is shown in blue and Loop 6 (L6) in magenta. The linker connecting H1 to P1 is also colored blue. The first and last \u03b2-strands from the \u03b2-barrel are shown in yellow, with the DxxG motif in orange. In the lower panels, selected sidechains from DxxG and L6 are shown as sticks, with the interacting loop 6 residue highlighted.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Extracellular loops 1, 2, and 5 from CdiBEc structure are colored in orange (indicated by L1, L2, and L5). (A) Extracellular view of the network of interaction (dashed lines) between helix H1 (blue), loop 6 (magenta) and loop 1. Lysine 440 from loop 6 stabilizes N211, the second residue of the conserved DxxG motif. The long extracellular loop 5 is stabilized by interactions with loop 6 and \u03b28 from the \u03b2-barrel (pale yellow). (B) zoomed view of loop 1-helix H1-loop 6 interactions where Q214 forms hydrogen bonds with two residues from helix H1 (R10 and Q14), while R10 also interacts with K440 from loop 6. The loop 1 conformation is secured by an interaction between S245 on \u03b23 and T217-G218 on loop 1. As seen in the sequence alignment (Supplementary file 1), the glycine of the DxxG motif, and T217-G218 residues are conserved, and the CdiBEc structure displays their spatial proximity. The conserved glycines complete the turn made by loop 1, where one amine group interacts with the carbonyl group of T217. (C) side view of loop 5 showing three hydrophobic residues (M370, W372, F373) that extend outside the \u03b2-barrel toward the outer membrane, potentially interacting with the membrane bilayer.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** View of the periplasmic region for (A) CdiBAb and, (B) CdiBEc. The \u03b1-helix proximal to the \u03b2-barrel lumen is labeled \u03b14, where a conserved glutamate forms a salt bridge with an arginine and a lysine present on \u03b26 and \u03b27 from the \u03b2-barrel in both structures. On the same face of \u03b14, a polar residue connects the N-terminal region of the linker (colored in blue). A zoomed view of this region is shown in the inset. The C-terminal region of the linker shows greater variation between the CdiB structures, where the linker in CdiBAb makes multiple interactions along the \u03b12 helix of POTRA1. In both structures, the conserved cysteines (colored in red) form a disulfide bond that connects the linker to POTRA1. The two residues missing in the CdiBEc linker are represented by dashed lines.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** In the cytoplasm, the CDI operon synthetizes CdiB and CdiA as preproteins. The N-terminal signal peptide (represented by a yellow box) is cleaved by the SEC complex (yellow) during inner membrane translocation. In the periplasm, CdiB and CdiA follow two different pathways (aided by periplasmic chaperones; not shown). As a TpsB transporter, CdiB interacts with the BAM complex, which folds and inserts CdiB into the outer membrane. BamA (brown), the central element of the BAM complex, and TpsB transporters are part of the same Omp85 superfamily sharing structural homologies (loop 6 and periplasmic POTRA domains (P) are indicated). CdiAs are large multi-domains proteins: the signaling domains TPS and RBD are represented in light green, FHA-1 and FHA-2 domains in dark green, and C-terminal toxin domain in red. In the periplasm, the N-terminal TPS domain recognizes and interacts with CdiB POTRA domains to initiate outer membrane translocation. At the surface of the cell, CdiA forms a filament folded as a \u03b2-helix that presents the RBD and toxin domains to neighboring bacteria. To prevent fratricide and auto-inhibition, the CDI operon produces a cytoplasmic immunity protein (CdiI). The boundaries of CdiB, CdiA, and BamA proteins are indicated by \u2018N-ter\u2019 and \u2018C-ter\u2019.\n\n**Table 1.**\n Data collection and refinement statistics for CdiBAb and CdiBEc.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>CdiB Ab (Se)</th>\n      <th>CdiB Ab</th>\n      <th>CdiB Ec</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Data collection</td>\n    </tr>\n    <tr>\n      <td>\u03bb (\u00c5)</td>\n      <td>0.979415</td>\n      <td>1.0</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P1</td>\n      <td>P1</td>\n      <td>P21212</td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>47 49.3 86.8</td>\n      <td>46.9 49.3 86.8</td>\n      <td>45.3 112.9 183.4</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>100.7 90.6 109.9</td>\n      <td>100.8 90.4 109.9</td>\n      <td>90 90 90</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>50\u20132.6</td>\n      <td>50\u20132.4</td>\n      <td>50\u20132.6</td>\n    </tr>\n    <tr>\n      <td>Rsym/Rmerge\u2020*</td>\n      <td>0.1 (1.4)</td>\n      <td>0.1 (1.3)</td>\n      <td>0.1 (1.3)</td>\n    </tr>\n    <tr>\n      <td>I / \u03c3 (I)*</td>\n      <td>13.6 (1.4)</td>\n      <td>10.1 (1.3)</td>\n      <td>13.9 (2.0)</td>\n    </tr>\n    <tr>\n      <td>CC (1/2) (%)*</td>\n      <td>0.998 (0.688)</td>\n      <td>0.99 (0.619)</td>\n      <td>0.99 (0.9)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)*</td>\n      <td>90.8 (90.0)</td>\n      <td>97.0 (82.4)</td>\n      <td>99.9 (100)</td>\n    </tr>\n    <tr>\n      <td>Ano Completeness (%)*</td>\n      <td>90.1 (89.5)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Redundancy*</td>\n      <td>7.7 (7.7)</td>\n      <td>5.8 (5.6)</td>\n      <td>13 (13.5)</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td></td>\n      <td>44\u20132.4</td>\n      <td>44\u20132.6</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td></td>\n      <td>27153</td>\n      <td>29889</td>\n    </tr>\n    <tr>\n      <td>Rwork\u00a7/Rfree\u00b6</td>\n      <td></td>\n      <td>0.20/0.25</td>\n      <td>0.24/0.26</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">r.m.s. deviations</td>\n    </tr>\n    <tr>\n      <td>Bonds (\u00c5)</td>\n      <td></td>\n      <td>0.003</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>Angles (\u00b0)</td>\n      <td></td>\n      <td>0.61</td>\n      <td>0.58</td>\n    </tr>\n    <tr>\n      <td>No. Protein atoms</td>\n      <td></td>\n      <td>4256</td>\n      <td>4130</td>\n    </tr>\n    <tr>\n      <td>No. Ligand atoms</td>\n      <td></td>\n      <td>52</td>\n      <td>90</td>\n    </tr>\n    <tr>\n      <td>No. Waters</td>\n      <td></td>\n      <td>55</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">B-factors (\u00c52)</td>\n    </tr>\n    <tr>\n      <td>Wilson B</td>\n      <td></td>\n      <td>53.20</td>\n      <td>68.29</td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td></td>\n      <td>59.6</td>\n      <td>79.1</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td></td>\n      <td>69.1</td>\n      <td>81.2</td>\n    </tr>\n    <tr>\n      <td>Waters</td>\n      <td></td>\n      <td>54.4</td>\n      <td>58.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Ramachandran Analysis</td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td></td>\n      <td>98.3</td>\n      <td>97.18</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td></td>\n      <td>1.7</td>\n      <td>2.82</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td></td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>6WIL</td>\n      <td>6WIM</td>\n      <td>PDB code</td>\n    </tr>\n  </tbody>\n</table>\n\n_\u2020Rsym = \u03a3hkl,j (|Ihkl-<Ihkl\u00a0>\u00a0|) / \u03a3hkl,j Ihkl, where\u00a0<\u00a0Ihkl\u00a0>\u00a0is the average intensity for a set of j symmetry-related reflections and Ihkl is the value of the intensity for a single reflection within a set of symmetry-related reflections.\u00a7R factor = \u03a3hkl (||Fo| - |Fc||) / \u03a3hkl|Fo| where Fo is the observed structure factor amplitude and Fc is the calculated structure factor amplitude.\u00b6Rfree = \u03a3hkl,T (||Fo| - |Fc||) / \u03a3hkl,T|Fo|, where a test set, T (5% of the data), is omitted from the refinement.* Statistics for highest resolution shell shown in parentheses._\n\nThe extracellular surface of the \u03b2-barrel is composed of long loops in mostly extended conformations that allow access to the barrel pore and would facilitate CdiA secretion. In TpsB/CdiB proteins, extracellular loop 5 is usually longer than other extracellular loops; the entire loop\u00a05 can be traced in CdiBEc but electron density is missing for CdiBAb (residues 389\u2013411) and FhaC (residues 381\u2013399; PDB: 4QKY). In CdiBEc, loop\u00a05 is stabilized by contacts with loop\u00a06 (R421) and two residues from strand \u03b28 (R340 and T343) (Figure 1\u2014figure supplement 1). Interestingly, this loop contains three hydrophobic residues (M370, W372, F373) that extend outward from the \u03b2-barrel toward the membrane, with sidechains potentially interacting with the bilayer lipopolysaccharides.\n\nOn the periplasmic side of the outer membrane, the two POTRA domains exhibit the conserved \u03b2\u03b1\u03b1\u03b2\u03b2 fold characteristic of Omp85 proteins (Figure 1\u2014figure supplement 2). A network of interactions connects \u03b2-barrel-POTRA2 and the linker through conserved charged residues. A glutamate from helix \u03b14 of POTRA2 (E179 in CdiBAb and E168 in CdiBEc) forms a salt bridge with an arginine and a lysine present on strands \u03b26 and \u03b27, respectively (R325-K330 in CdiBAb and R309-K314 in CdiBEc), while the N-terminal region of the linker (Y35 in CdiBAb and S34-A35 in CdiBEc) is also stabilized by side chains from \u03b14 (D175 for CdiBAb, and R161-E164 for CdiBEc). Some of these interactions are also seen in the FhaC structure, and biochemical experiments have shown that the interactions between POTRA2 and the linker are essential for substrate recognition and secretion (Baud et al., 2014; Delattre et al., 2011; Maier et al., 2015). These conserved interactions emphasize the importance of the POTRA domains for TpsB function.\n\nThe linker connecting H1 to POTRA1 is well defined in the electron density maps. In CdiBAb, the linker is stabilized by a network of interactions with helices \u03b12 and \u03b14 from POTRA1 and POTRA2, respectively (Figure 1\u2014figure supplement 2). In both CdiB structures, the C-terminal part of the linker is attached to POTRA1 by a disulfide bond between two cysteines, an interaction that is conserved in all CdiB transporters (and some TpsB transporters). While a network of interactions stabilizes the N-terminal linker region near the \u03b2-barrel lumen, the middle region of the linker appears more flexible, sharing fewer surface interactions with POTRA1 (especially for CdiBEc where residues 42\u201343 are missing in the electron density). This position differs slightly between CdiBAb and CdiBEc, confirming the biochemical and biophysical studies that have shown multiple linker conformations in the resting state (Gu\u00e9rin et al., 2014; Maier et al., 2015;\u00a0Figure 1, Figure 1\u2014figure supplement 2).\n\n### Structural differences in helix H1\n\nBoth CdiB structures adopt the same overall architecture, with H1 and L6 occluding the interior of the \u03b2-barrel. However, H1 is positioned very differently in CdiBAb and CdiBEc (Figure 2, Video 1): the angle between H1 and the \u03b2-barrel is about 10\u00b0 for CdiBAb, versus 25\u00b0 for CdiBEc. In addition, H1 sits higher in the barrel pore in CdiBAb, positioning its N-terminus closer to the extracellular surface. In this orientation, H1 interacts with the inner barrel wall using 12 H-bonds and three salt bridges, with no interactions to loop\u00a06, for a total buried surface area of 1263 \u00c52 (Figure 2, Figure 2\u2014source data 1). In CdiBEc, H1 in sits 4.8 \u00c5 lower in the barrel pore, allowing it to form 5 H-bonds with loop\u00a06, and 8 H-bonds with the barrel wall, for a total buried surface of 1385 \u00c52.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig2-v2.jpg)\n\n**Figure 2.:** (A) Membrane view of a superposition of CdiBAb (light teal) and CdiBEc (pale yellow) that illustrates conformational differences of helix H1 inside the \u03b2-barrel. To better visualize helix H1, \u03b2-strands from the front of the barrel are transparent. (B) Molecular surface cross-section of CdiBAb (light teal) and CdiBEc (pale yellow) where helix H1 and linker are shown in blue.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Root-Mean-Square Deviation (RMSD) of the position of helix H1 for the two CdiB models generated by Targeted Molecular Dynamics (TMD) simulations. Top panels, CdiBAb structure where the helix H1 is moved from its initial position toward the position of the CdiBEc helix H1. Bottom panels, CdiBEc structure where the helix H1 is moved from its initial position toward the position of the CdiBAb helix H1. TMD was run for 30 ns, followed by 30 ns of H1 restrained to the new position, and then 120 ns of free equilibration. (A) CdiBAb H1 RMSD comparison with the initial frame (CdiBAb crystal structure). (B) CdiBAb H1 RMSD comparison with the targeted model (CdiBEc H1 position). (C) CdiBEc H1 RMSD comparison with the initial frame (CdiBEc crystal structure). (D) CdiBEc H1 RMSD comparison with the targeted model (CdiBAb H1 position).\n\n![Video 1.](https://cdn.elifesciences.org/articles/58100/elife-58100-video1.mp4.jpg)\n\n**Video 1.:** Linear interpolation morph of CdiBAb and CdiBEc crystal structures highlights the conformational differences observed. Helix H1 adopts a different angle and is positioned at a different height in the two structures. \u03b21 twists inward, whereas loop 2 is oriented outward. The POTRA domains are relatively rigid. We note that although the length of the small \u03b1-helix in POTRA 1 differs between CdiBAb and CdiBEc, the mobility detected in the morph movie is probably an artefact due to the length.\n\nTo better understand the orientation of H1 in the \u03b2-barrel lumen, we generated two models using the targeted molecular dynamics method (TMD). The first model is based on the structure of CdiBAb, where the helix H1 is moved from its initial position toward the position of the CdiBEc helix H1. The second model is based on the structure of CdiBEc, where the helix H1 is moved from its initial position toward the position of CdiBAb helix H1. TMD was run for 30 ns, followed by 30 ns of H1 restrained to the new position, and then 120 ns of free equilibration (Video 2). For both models, analysis of RMSD during free equilibration reveal that H1 is stable in the new position and does not revert to the initial state (Figure 2\u2014figure supplement 1, Video 2). This result suggests that H1 can adopt either orientation in both systems.\n\n![Video 2.](https://cdn.elifesciences.org/articles/58100/elife-58100-video2.mp4.jpg)\n\n**Video 2.:** From the initial state: X-ray structures of CdiBAb (left) or CdiBEc (right), the helix H1 is displaced toward the position of the helix from CdiBEc helix (left) or CdiBAb (right).\n\nOur results on the position of H1 in CdiB agree with previous studies that have reported high flexibility for H1 in the TpsB transporter FhaC. Acting as a plug domain, H1 exists in different states in the resting conformation and can undergo a large conformational change to fully open the \u03b2-barrel pore during secretion (Baud et al., 2014; Gu\u00e9rin et al., 2014). The structural variations observed in our CdiB structures illustrate at least two conformations that include different interactions with the interior of the \u03b2-barrel, loop 6 and extracellular loops.\n\n### Extracellular loop 6 and the DxxG motif on strand \u03b21\n\nLike H1, L6 sits in the interior of the \u03b2-barrel and partially occludes it. This conformation is maintained by a conserved salt bridge between an arginine on the tip of L6 (from the (V/I)RG(F/Y) motif) and an aspartate on strand \u03b213 ((F/G)xDxG motif), an interaction observed in all Omp85 structures (Gruss et al., 2013; Gu et al., 2016; Maier et al., 2015; Noinaj et al., 2013). In addition, in the CdiBAb and CdiBEc structures, the arginine is also stabilized by a glutamate from \u03b212 (E483 and E455 respectively) (Figure 3A and B). This position inside the \u03b2-barrel lumen allows loop\u00a06 sidechains to point toward the \u03b21\u2013\u03b216 interface. Loop\u00a06 uses different interactions with \u03b21 to stabilize alternate conformations in CdiBAb and CdiBEc involving the \u03b21\u2013\u03b216 interface and extracellular loops 1 and 2 (Figure 3C and D, Video 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig3-v2.jpg)\n\n**Figure 3.:** Zoomed view of loop 6 (L6, magenta) in the lumen of the \u03b2-barrel of (A) CdiBAb (light teal) and, (B) CdiBEc (pale yellow). Sidechains involved in the network of interactions between L6 (VRGF/Y motif), \u03b212 and \u03b213 (F/GxDxG motif) and the DxxG motif (orange) are indicated by black dashed lines. \u03b21 and \u03b216 are colored in yellow, and extracellular loops 1 and 2 are indicated by \u2018L1' and \u2018L2',\u00a0respectively. A conformational difference is shown between CdiB structures: in CdiBAb, R460, located before the VRG(F/Y) motif, interacts with the first and third residues of the DxxG motif, while In CdiBEc, K440 located after VRG(F/Y), interacts with the second residue of DxxG. Membrane view of the \u03b2-barrel of (C) CdiBAb and, (D) CdiBEc where \u03b22\u20134 are highlighted in light teal and pale yellow respectively. \u03b21 and \u03b216 are highlighted in yellow, and DxxG motif in orange with important residues numbered. At the \u03b21\u2013\u03b216 interface, mainchain interactions are shown as black dashed lines, and sidechain interactions as red dashed lines. In CdiBEc the two sidechains from L6 pointing toward \u03b21\u2013\u03b216 are shown.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Superposition of CdiBEc (pale yellow) and FhaC (blue, PDB: 4QKY). Helix H1 lies at the same angle inside the barrel and the \u03b21\u2013\u03b216 interface is shorter, where the second residue of DxxG (N219) stabilizes \u03b216 and starts loop 1. Loop 1 is flexible and twisted inward, whereas loop 2 is oriented outward. (A) Membrane view illustrates conformational similarities between the CdiBEc (pale yellow) and FhaC (blue) structures. N-terminal helix H1, loop 1, loop 2, loop 6, and the first \u03b2-strand are indicated by H1, L1, L2, L6, and \u03b21, respectively. For clarity, the front of the \u03b2-barrel is transparent. (B) Membrane view of the \u03b2-barrel of FhaC for comparison with Figure 3D. Helix H1 and strands \u03b22 - \u03b24 are highlighted in blue. \u03b21 and \u03b216 are highlighted in yellow, with the DxxG motif in orange. Interactions between \u03b21\u00a0and\u00a0\u03b216 are shown by black dashed lines. (C) Extracellular view of DxxG-H1-L6 in FhaC structure. R17 from helix H1 (blue) forms a network of interactions between E446 on loop 6 (pink) and the conserved aspartate D218 from the DxxG motif (orange).\n\nStructure-based sequence alignment of TpsB transporters allowed us to identify a conserved sequence, the DxxG motif, where \u2018x\u2019 corresponds to polar residues (Supplementary file 1). This region is located on \u03b21, interacts with loop\u00a06, and dictates features of the \u03b21\u2013\u03b216 interface on the extracellular surface of the protein. DxxG can either fully fold as a \u03b2-strand or adopt an extended conformation that tilts inward as shown by CdiBAb and CdiBEc, respectively (Figure 3). In CdiBAb, the DxxG motif accounts for four residues on the 12-residue \u03b21 strand, allowing \u03b21 to form an extended \u03b2-sheet with \u03b22, \u03b23, and \u03b216 (Figure 3C). The sidechains of the first and third residues (D224 and S226) interact with R460 from loop\u00a06 (Figure 3A), while the mainchain interacts with strand \u03b22. In this structure, the second and fourth residues of the DxxG motif (D225 and G227) form H-bonds with \u03b216. As a result, the \u03b2-barrel is in a fully zipped conformation, stabilized by 10 H-bonds between strands \u03b21 and \u03b216 (Figure 3C). Extracellular loops 1\u20132 are short, with loop\u00a02 curved inward and partially blocking the top of the channel (Figure 3C). In CdiBEc, the DxxG motif is in an extended conformation and initiates loop\u00a01. As a result, strand \u03b21 is shorter, containing only eight residues. The \u03b2-sheet formed by \u03b216 and \u03b21-\u03b23 is also shorter (Figure 3D). In this structure, the \u03b21\u2013\u03b216 interface is stabilized by only 6 H-bonds, although the sidechain from the second residue (N211) of the DxxG motif contributes to additional interactions with \u03b216 that further stabilize the interface (Figure 3D). By increasing the length and flexibility of loop\u00a01, the DxxG motif creates an inward tilting of the loop, allowing it to fold against \u03b22-\u03b23 and interact directly with H1 (Figure 1\u2014figure supplement 1A and B). In this position, loop\u00a01 pushes loop\u00a02 away from the lumen of the barrel. In CdiBEc, the conserved glycine from the DxxG motif is also involved in a large conformational change by completing the turn made by loop 1 (Figure 3D). From our structural analysis, we propose that the role of this region is to increase the flexibility of strand \u03b21, and to facilitate the conformational changes of loop\u00a01 and loop\u00a02.\n\nA comparison of CdiBAb and CdiBEc with TpsB transporter FhaC shows that the structures of FhaC and CdiBEc are virtually identical (Figure 3\u2014figure supplement 1), whereas CdiBAb shows an alternate conformation. The high structural similarity observed between FhaC and CdiB transporters suggests that the large body of research pertaining to FhaC is also relevant to CDI secretion.\n\n### Secretion of CdiA by CdiB is specific\n\nTo probe the specificity of CDI systems, we generated an in-vivo functional assay by co-expressing full-length cdiB genes with truncated versions of cdiA genes, to produce only the N-terminal domain of the toxin: CdiA-Nt (containing TPS and part of FHA-1) (Figure 1\u2014figure supplement 3). After induction, the bacterial pellet was separated from the culture supernatant and production of CdiB and CdiA-Nt were detected by Western blotting. As expected, when CdiBAb and CdiA-NtAb are co-expressed, CdiBAb is detected in the pellet, and CdiA-NtAb in the supernatant (Figure 4A). As a control, when only CdiBAb is expressed, no CdiAAb secretion is detected, since the protein is not produced. When only CdiA-NtAb is expressed, neither CdiBAb nor CdiA-NtAb are detected, since no CdiBAb transporter is available to secrete CdiA-NtAb. These results show that the secretion of CdiA-Nt is CdiB dependent. We next asked whether CDI systems are specific. No secretion of CdiA occurs when a different CdiB species is used, despite 50% sequence similarity between the two CdiA-Nt constructs. These results show that CDI toxins and transporters are not interchangeable (Figure 4A). As a control, CdiA-NtEc is detected in the culture supernatant when CdiBEc is expressed. Unfortunately, a small amount of CdiBEc is also detected in the supernatant, indicating that overexpression of CdiBEc can increase bacterial lysis. Therefore, we used only CdiBAb/CdiA-NtAb for subsequent functional analyses.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig4-v2.jpg)\n\n**Figure 4.:** Immunoblot analyses of Escherichia\u00a0coli C41 cultures co-expressing CdiB and CdiA-Nt. (A) After induction, cell pellets \u2018P\u2019 and culture supernatants \u2018S\u2019 are separated and analyzed to detect the presence of CdiB and CdiA-Nt from Acinetobacter baumannii ACICU \u2018Ab\u2019 or E. coli EC93 \u2018Ec\u2019, respectively. Dash indicates that cdi genes are present on the plasmid but not induced. CdiA-NtAb 74-472 and CdiA-NtEc 29-416 are only detected in the supernatant when their respective CdiB transporters are present. (B) CdiB variants where helix H1 \u2018\u0394H1\u2019 and Linker \u2018\u0394Link\u2019 are genetically deleted and co-expressed with their cognate CdiA-Nt substrates from CDI systems of A.\u00a0baumannii \u2018Ab\u2019 and E. coli \u2018Ec\u2019. CdiB and CdiA-Nt wildtype proteins detected in immunoblot are indicated by B and A for A.\u00a0baumannii ACICU and B* and A* for E. coli. Detection of CdiB\u0394H1 and CdiB\u0394H1\u0394Link variants are indicated respectively, by a black square and a black circle for A. baumannii; and a white square and a white circle for E. coli. Protein ladder bands indicate 62, 49, 38 kDa respectively.\n\n### Helix H1 and linker influence CdiB stability\n\nTo probe the functions of H1 and the linker connecting it to POTRA1, we constructed CdiB variants lacking H1 or lacking both H1 and the linker. The latter construct removes structural elements found in TpsB/CdiB proteins, but not in BamA/TamA proteins, such that only the two POTRA domains and \u03b2-barrel are present (Figure 1\u2014figure supplement 3). When just the helix is deleted, there is less CdiB in the pellet fraction, especially for CdiBAb, and correspondingly, a smaller amount of CdiA-Nt is secreted (Figure 4B). This suggests that H1 is important for folding, membrane insertion, and/or stability of CdiB. However, when both the helix and linker are deleted, CdiB is present and secretion of CdiA-Nt occurs (Figure 4B). These results show that the helix and linker are not essential for CdiA-Nt secretion but must be important for CdiB stability. In comparison, the linker was found to be essential for substrate secretion in FhaC and helps to stabilize the POTRA domains (Delattre et al., 2011; Jacob-Dubuisson et al., 2009). However, the precise function of the linker and why its presence alone drastically affects CdiBAb, are unclear. One obvious function of H1 is to plug the \u03b2-barrel lumen when substrate is absent, preventing entry/exit of unwanted molecules (Clantin et al., 2007).\n\n### Flexibility of the \u03b21\u2013\u03b216 interface is essential for secretion\n\nIn CdiBAb, the DxxG motif increases the length of the first \u03b2-strand to 12 residues, rigidifying the \u03b21\u2013\u03b216 interface, but this region appears more flexible in CdiBEc and FhaC structures (Figure 3, Figure 5C, Video 1, Figure 3\u2014figure supplement 1). To understand whether the flexibility of DxxG is important for activity, we engineered paired cysteine variants between \u03b21 and \u03b216 to stabilize the conformation of CdiBAb. The CdiBAb cysteine variants were then tested for their ability to secrete CdiA-NtAb in the absence or presence of the reducing agent TCEP. Disulfide bond formation was analyzed by Western blot (Figure 5). Clear disulfide bond formation was observed for all mutants positioned in the middle of the \u03b2-sheet. When \u03b21 and \u03b216 are cross-linked, substrate secretion is greatly impaired, however reduction of the disulfide rescues secretion (Figure 5A). To confirm that crosslinking \u03b21\u2013\u03b216 does not impair CdiBAb biogenesis, we monitored expression of CdiB D224C/S555C and secretion of CdiA-Nt over time (Figure 5B). CdiBAb was detected in the pellet from 20 to 100 min after induction, in the presence or absence of TCEP. In comparison, the secretion of CdiA-Nt is greatly increased only when the \u03b21\u2013\u03b216 disulfide is reduced with TCEP. To confirm that the disulfide mutants are correctly targeted to the outer membrane, we isolated and solubilized membranes from the D225C/F554C mutant. The oxidized form was detected in membranes and could be solubilized with detergent (Figure 5\u2014figure supplement 1A). As a control, we confirmed disulfide formation in a strain lacking the periplasmic oxidoreductase, DsbA (Figure 5\u2014figure supplement 1B). Altogether, these results show that secretion of CdiA is inhibited when strands \u03b21 and \u03b216 are tethered, and correspondingly, flexibility of \u03b21 and the DxxG motif facilitate secretion.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig5-v2.jpg)\n\n**Figure 5.:** (A) CdiBAb cysteine variants are co-expressed with CdiA-Nt substrate from Acinetobacter baumannii in presence + or absence - of reducing agent \u2018TCEP\u2019 in the culture. After induction, pellet \u2018P\u2019 and supernatant \u2018S\u2019 are separated and analyzed by western\u00a0blot to detect the presence of CdiA-Nt \u2018A\u2019 and, CdiB without cross-linking \u2018red\u2019, or CdiB with \u03b21\u2013\u03b216 crosslinked \u2018ox\u2019. Protein ladder bands indicate 70, 50, 40 kDa, respectively. (B) After induction (t0) the secretion of CdiA-Nt and the production of CdiBAb double cysteine D224C-S555C are monitored at 10 min intervals. Samples from culture supernatant and bacterial pellet are separated, analyzed by western\u00a0blot, and the bands corresponding to CdiA-Nt (left) and CdiBAb (right) displayed. For comparison, reducing agent was added to the pellet fraction t100 (\u2018+DTT\u2019) or incubated with the culture at t0 (\u2018+TCEP\u2019). (C) Mainchain representation of \u03b21\u2013\u03b216 of CdiB from A.\u00a0baumannii (left) and E.\u00a0coli (right) colored in yellow, or orange for the DxxG motif. Adjacent sidechains oriented in the same direction are indicated by dashed lines, where * indicate sidechains involved in H-bonding in the crystal structure. Black circles with white numbers indicate engineered disulfides.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Western\u00a0blot of isolated membrane fraction from CdiB D225C/F554C double cysteine variant (represented by bold letters A to E). Fraction A, bacterial pellet fraction (\u2018P \u2018lane from Figure 5A). Fraction B, bacterial lysate fraction homogenized three times. Fraction C, supernatant fraction after centrifugation at 7000 g (where inclusion bodies and unlysed cells are removed). Fraction D, pellet from ultracentrifugation at 160,000 g to isolate membrane fractions after a 2% Triton wash (which removes soluble and inner membrane proteins). Membrane fractions are resuspended in 50 mM Tris-HCl, pH7.4, 200 mM NaCl, and solubilized by constant stirring in 5% Elugent. Fraction E, supernatant of a second ultracentrifugation at 220,000 g containing solubilized membrane proteins. As seen in Figure 5, \u03b21\u2013\u03b216 are mostly crosslinked in the D225C-F554C mutant where \u2018ox\u2019 and \u2018red\u2019 indicate the oxidized and reduced form, respectively. Protein ladder bands indicate 70 and 50 kDa. (B) Western\u00a0blot analysis of bacterial pellet from CdiBAb D225C/F554C variant expressed in MC4100 E.\u00a0coli parent cell (dsbA \u2018+\u2019) and MC4100 E.\u00a0coli dsbA:ChloroR strain (dsbA \u2018-\u2018), in absence (second lane) or presence of TCEP (\u2018+TCEP\u2019).\n\n### Loop 2 and the DxxG motif influence secretion\n\nBased on conformational differences in the CdiB crystal structures, we probed residues that might be important for CdiA secretion. We monitored CdiA secretion over 130 min (Figure 6A, left). We controlled the system so that production does not increase cell lysis, and we monitored the expression levels of CdiB in the bacterial pellet (Figure 6A, right; Figure 6\u2014figure supplement 1A). For all mutants, CdiB was detected after 20 min and levels increased over time. In contrast, levels of secreted wildtype CdiA-Nt are first detected after 60 min. Removing H1 and the linker (WT\u0394H1\u0394Link) slightly improves secretion, with the toxin first detected after 50 min. This result reconfirms that H1 is not essential for TpsB function (M\u00e9li et al., 2006; Figure 4B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig6-v2.jpg)\n\n**Figure 6.:** (A) Secretion of CdiA-NtAb 74-472 and expression of CdiBAb are monitored after induction (t0) up to 130 mins. Samples from culture supernatant and bacterial pellet were separated by centrifugation, analyzed by western\u00a0blot, and the bands corresponding to CdiA-Nt (left) and CdiBAb variants (right) displayed. A gray dashed line at 60 min after induction indicates the reference point for the W.T where enough CdiA-Nt is present in the culture supernatant for immunoblot detection. (B), (C) Secretion activity was assessed by the levels of CdiA-NtAb 74-472 detected in culture supernatants normalized to the wildtype at t130 min (100%), repeated three times independently where error bars represent the standard error of the mean. (B), Secretion activity comparison from 20 to 130 min for CdiBAb wildtype (WT, \u25cf), CdiB where H1 and Linker are genetically deleted (WT\u0394H1\u0394Linker, \u0394), Loop 2 substitutions GGAG (L2GGAG,\u2666) and single substitution variants D224G (, gray), S226G (\u25a1, light gray). (C), Secretion activity comparison from 50 to 130 min between CdiBAb wildtype (WT, \u25cf), single substitution S226E (\u25cb), S226E without H1 and Linker (S226E\u0394H1\u0394Linker, \u0394 gray), and double substitution S226E+R460G (\u25a1).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Western\u00a0blot detection of GroEL and MBP from culture supernatant and bacterial pellet over 130 min after induction of CdiA-NtAb with CdiBAb wild type (A) or CdiBAb L2GGAG variant (B). Protein ladder bands indicate 180, 130, 100, 70, 55, 40, 35 and 25 kDa.\n\nLoop\u00a02 adopts very different conformations in our two CdiB structures. Whereas deletion of this loop prevents expression of CdiB, the 4-residue substitution of DDFH to GGAG is tolerated and does not increase cell lysis (Figure 6\u2014figure supplement 1B). Removal of the sidechains can prevent loop\u00a02 interaction with the rest of the protein while increasing loop\u00a02 flexibility. The GGAG mutant results in measurable impact on the secretion, where CdiA is detected after just 30 min and continues to increase over time. This result suggests that increasing loop\u00a02 flexibility enhances secretion activity and may promote the active conformation of the \u03b2-barrel. As a comparison, when loop\u00a02 adopts an inward conformation in the CdiBAb X-ray structure, the sidechains point in the direction of H1 and loop\u00a06, and the \u03b2-barrel lumen is partially capped (Figure 1, Figure 3, and Video 1).\n\nOur structural and functional analysis reveal that \u03b21 can be fully folded as a \u03b2-strand stabilized by \u03b216 or adopt a more flexible extended secondary structure and be folded inward as part of loop\u00a01. Our hypothesis is that the conserved DxxG motif can facilitate a conformational change that promotes the active conformation. To explore the role of the interaction between DxxG and the conserved loop\u00a06 inside the \u03b2-barrel, we made point mutants in the D224-S226-R460 interaction network. Mutations to glycine do not lower the rate of CdiA secretion, indicating no essential role for these residues in producing an active CdiB conformation and/or substrate interaction (Figure 6A and B). However, the CdiBAb structure predicts that mutation of S226 to glutamate would allow formation of a salt bridge with R460, further stabilizing the DxxG-L6 network. In fact, S226E delays secretion and results in lower amounts of CdiA secreted over time. Combining S226E with R460G or with the H1-linker deletion (S226E\u0394H1\u0394Link) improves secretion and restores CdiA levels to near wildtype (Figure 6A and C). These results show that interactions between DxxG and loop\u00a06 affect CdiA secretion and that flexibility in this region is essential.\n\n### Link between DxxG conformation and position of H1 helix\n\nThe main conformational differences observed between CdiBAb and CdiBEc are at the \u03b21\u2013\u03b216 interface at the DxxG motif, and inside the barrel with H1. Based on structural analysis of CdiBEc, the rearrangement of loop\u00a01 created by DxxG forms a network of interactions between loop\u00a01, H1, and loop\u00a06 (Q214-R10-K440-N211; Figure 1\u2014figure supplement 1). Interestingly, in the FhaC structure, there is a similar network of interactions between \u03b21, H1, and L6, where R17 from H1 interacts with the conserved aspartate from DxxG (Figure 3\u2014figure supplement 1). In both CdiBEc and FhaC structures, the inward tilting of DxxG in \u03b21 promotes the rearrangement of loop\u00a01 and loop\u00a02 while presenting a new interaction surface for H1. However, due to the weak sequence conservation of H1 in TpsB transporters (Supplementary file 1), it is difficult to predict whether particular residues either stabilize the helix in the barrel pore or induce its exit in the active conformation. Since the position of H1 in our CdiB structures vary, we wanted to understand whether \u03b21\u2013\u03b216 and DxxG remain flexible. Using molecular dynamics, we ran three 500-ns equilibrium simulations of each CdiB structure in a species-specific outer membrane (Video 3, Figure 7\u2014figure supplement 1; Phillips et al., 2005). Although the position of H1 remains stable in the \u03b2-barrel lumen, we observed rupture of several H-bonds between \u03b21 and \u03b216 in the CdiBAb simulations. Part of the DxxG motif can convert from a \u03b2-strand to a loop, whereas the \u03b21\u2013\u03b216 interface can fluctuate from a short to a long \u03b2-sheet affecting the size of the \u03b216-\u03b21-\u03b22-\u03b23 sheet. During the simulations we observe that water molecules penetrate into the membrane slightly to keep the DxxG motif solvated (Figure 7\u2014figure supplement 1C). This environment may facilitate the interconversion of secondary structure. In comparison, during CdiBEc simulations, the DxxG motif tilts inward, toward the lumen, and the CdiBEc conformation is much more stable, with no H-bond disruption detected between \u03b21 and \u03b216. This result shows that DxxG can exist in two different conformational states: fully folded as a \u03b2-strand or in a more flexible, extended conformation. The equilibrium simulations demonstrate that CdiBAb interconverts between the two conformations, while CdiBEc stabilizes only the unfolded conformation. However, the importance of these structural differences to CdiA secretion remains to be determined.\n\n![Video 3.](https://cdn.elifesciences.org/articles/58100/elife-58100-video3.mp4.jpg)\n\n**Video 3.:** 500 ns equilibrium simulations of three CdiBAb (light teal) and three CdiBEc (pale yellow) molecules. Full length CdiB proteins are inserted into their respective species-specific outer membranes (shown in Figure 7\u2014figure supplement 1). Strands \u03b21 and \u03b216 are highlighted in yellow, and helix H1 in blue. The H-bonds between G227-T552 and I229-V534 are indicated for CdiBAb and CdiBEc, respectively. The POTRA domains and linker were present for the simulations but not shown in the final movies.\n\n### Extraction of helix H1 from \u03b2-barrel lumen\n\nTo secrete substrates across the outer membrane, TpsB/CdiB transporters must cycle through multiple conformational states, from the resting conformation with H1 inserted into the \u03b2-barrel lumen, to the active form when H1 resides in the periplasm (Figure 1\u2014figure supplement 3; Baud et al., 2014; Gu\u00e9rin et al., 2014). To understand these conformational changes, we induced the exit of H1 by steered molecular dynamics (SMD) to measure the force needed to extract it from the pore and observe its exit path (Video 4, Video 5; Sotomayor and Schulten, 2007). H1 was pulled in the direction of the periplasm at a constant speed of 0.29 \u00c5/ns over 150\u2013200 ns. In these experiments, we wanted to mimic a hypothetical periplasmic force that could cause the helix to exit the pore as might be expected when substrate is present and/or when large conformational changes in the linker and POTRA domains occur. During the simulations, H1 is free to move or rotate as force is applied to the center of mass of the helix. We tracked the position of H1 and measured the force required. We also used the SMD trajectories to seed potential of mean force (PMF) calculations to determine the free energy required to extract H1 from CdiBAb and CdiBEc \u03b2-barrels (Figure 7, Figure 7\u2014figure supplement 2A; Sugita et al., 2000). Since the exit pathway of H1 is not known, we ran four independent simulations (two per species) to assess the role of sampling during SMD simulations and PMF calculations. In the case of CdiBAb, both independently determined PMF profiles show a continuous rise in energy as the helix is extracted from the barrel. With large energetic barriers measured at 90kcal/mol and 32kcal/mol, respectively, the exit of H1 appears to be energetically expensive (Figure 7\u2014figure supplement 2A). Similarly, the first PMF determined for H1 extraction from CdiBEc suggests 35 kcal/mol is required to extract H1. However, the second run for CdiBEc found a significantly lower energy path on a similar time scale as the other PMF calculations (35\u201360 ns/window, or 1.7\u20132.6 \u03bcs in total) (Figure 7). Therefore, we extended this PMF calculation to 235 ns/window (10.1 \u03bcs in total). From this PMF, we discovered a new minimum, one even lower in energy than the crystal structure minimum, at a point of intermediate extraction. In this PMF, the second minimum is separated from the crystal-structure conformation by 7.5 kcal/mol and a barrier of 13 kcal/mol; the fully extracted state is 7.5 kcal/mol higher than the second minimum and almost identical to the crystal-structure conformation. The existence of an intermediate state during helix extraction from the barrel is supported by earlier experimental data where Pulsed-electron double-resonance (PELDOR) spectroscopy revealed distinct peaks in the distance distribution on a related two-partner-secretion transporter, FhaC, even in the absence of any substrate (Gu\u00e9rin et al., 2014). We note that for computational efficiency, the POTRA domains were not present in the PMF calculations; along with the substrate, they may shift the relative energies of the fully embedded, partially embedded, and fully extracted H1 conformations. Also, the different PMFs obtained for different starting conditions illustrates the systematic uncertainty present in these calculations when run for moderate lengths (1\u20132 \u03bcs in total), complicated further by the unknown end-state structure.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig7-v2.jpg)\n\n**Figure 7.:** Plot of the potential of mean force (PMF) measured as a function of the distance between the centers-of-mass of the \u03b1-helix H1 and \u03b2-barrel of CdiBEc. Three images of CdiBEc have been added to the plot representing different states, from the left to right: resting conformation, intermediate extraction, and H1 out of the pore.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) CdiBAb was inserted into a bilayer that mimics the A. baumannii outer membrane. The outer leaflet is composed of type 1 and type 2 Lipid A with a ratio of 1:1 and the R1 core. (B) CdiBEc was inserted into an asymmetric bilayer that mimics the E. coli outer membrane. The outer leaflet is composed of type1 Lipid A with the R1 core. The inner leaflets of both membranes are composed of PPPE, PVPG and PVCL with a ratio of 15:4:1. The protein-membrane systems are surrounded by TIP3P water. The system size for the E. coli simulation is 110 \u00d7 115\u00d7125 \u00c53 and\u00a0~170,000 atoms, while the system size for the A. baumannii simulation is 115 \u00d7 125\u00d7125 \u00c53 and\u00a0~200,000 atoms. (C) Zoomed-in view of the DxxG motif from CdiBAb inserted into the outer membrane bilayer. Water molecules (in red and white) penetrate into the membrane to keep DxxG solvated.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Plots of the results of four independent PMF calculations measured as a function of the distance between helix H1 and \u03b2-barrel of CdiBEc (top panels) and CdiBAb (lower panels). Statistical error (+ / - 1 standard deviation) is represented as a red dashed line. CdiBEc run two is also presented in Figure 7. (B) Force vs. position plots of the steered molecular dynamics simulations for H1 extraction from CdiBEc and CdiBAb structures (wt), from CdiBAb where Loop 2 is in-silico deleted (Ab \u0394L2), and from CdiBAb double cysteine variants (Ab \u03b21\u2013\u03b216). For each system, three independent replicas are presented (blue, orange, green). The main differences observed between the CdiBAb replicas is due to the formation of an ion-bridged interaction between H1 and D224 (DxxG) and D261 (loop 2). D261 is removed in the \u0394L2 mutant, although we still see an ion-bridged interaction between H1 and E469 (loop 6) in one out of the three trajectories.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58100/elife-58100-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Left and middle images are taken from CdiBAb WT trajectories and show interactions between E4 and D224 (DxxG) and E4 and D261 (loop 2), respectively. The image on the right is taken from simulation of CdiBAb \u0394L2 and shows an interaction between E4 and E469 (loop 6).\n\n![Video 4.](https://cdn.elifesciences.org/articles/58100/elife-58100-video4.mp4.jpg)\n\n**Video 4.:** SMD simulations of CdiBAb (light teal) where helix H1 is pulled toward the direction of the periplasm at a constant speed (0.29 \u00c5/ns).\n\n![Video 5.](https://cdn.elifesciences.org/articles/58100/elife-58100-video5.mp4.jpg)\n\n**Video 5.:** SMD simulations of CdiBEc (pale yellow) where helix H1 is pulled toward the direction of the periplasm at a constant speed (0.29 \u00c5/ns).\n\nTo better understand the exit pathway and investigate any conformational differences between CdiBAb and CdiBEc, we ran several additional SMD simulations. Using the X-ray structures as an initial model, we pulled the H1 helix to the periplasm and quantified the force as a function of the position during extraction for three replicas (Figure 7\u2014figure supplement 2B). The force plots for CdiBEc and CdiBAb display distinct features, while on average CdiBEc requires less work to extract H1, especially from \u221225 to \u221235 \u00c5. Upon further examination, we observed a strong electrostatic interaction between H1 and the DxxG motif or loop\u00a02 in CdiBAb that require a large force to disrupt (Figure 7\u2014figure supplement 3). This ion-bridged interaction is not observed for CdiBEc, probably because loop\u00a02 is oriented outward and does not interact with H1. Based on the CdiBAb functional data (Figure 5, Figure 6) we built and simulated two CdiBAb mutants. The force plot of CdiBAb in which loop\u00a02 is deleted shows that less force is required to extract H1 on average. In comparison, the force plots from the disulfide-bonded \u03b21\u2013\u03b216 mutant display features similar to the wildtype CdiBAb, with multiple peaks observed in the \u221210 to \u221235 \u00c5 range (Figure 7\u2014figure supplement 2B). These results show that by stabilizing H1 in the barrel lumen through electrostatic interactions, some structural elements (such as loop\u00a02 and the DxxG motif) influence the energetic barrier needed to open the \u03b2-barrel pore.\n\nAltogether our simulations indicate that the exit of H1 must follow a pathway inside the \u03b2-barrel lumen to be correctly extracted. As an alternative, conformational changes from the \u03b2-barrel itselft (rearrangement of extracellular loops, flexibility of DxxG motif) decrease the energy required to eject H1 while probably preparing the active conformation.\n\n## Discussion\n\nBy releasing large exoproteins at the surface of the cell, type Vb secretion systems play an essential role in pathogenesis and survival of Gram-negative bacteria. Genome databases have reported hundreds of TpsA proteins that come in different sizes and domain organizations, where CdiA toxins represent a special subgroup. An increasing number of studies have reported multifunctional roles for CdiA proteins, apparently independent of toxin activity. CdiA promotes adhesion on epithelial cells in A. baumannii, plays a major role in intracellular survival and intracellular escape in Neisseria meningitidis, increases the virulence of Pseudomonas aeruginosa in infection models, and controls biofilm establishment in human pathogens (Melvin et al., 2017; Mercy et al., 2016; P\u00e9rez et al., 2016; Roussin et al., 2019; Tal\u00e0 et al., 2008). Both CDI systems investigated in our study have been shown to be constitutively active, and a secretome analysis of Acinetobacter spp. revealed that CdiA is one of the most abundantly secreted proteins (Aoki et al., 2005; Harding et al., 2017).\n\nDuring the secretion cycle, the TpsB \u03b2-barrel must adopt multiple conformational states favoring ejection of the N-terminal helix H1, entry and movement of substrate into the \u03b2-barrel lumen, folding of substrate in the extracellular space and then re-entry of H1 into the lumen. All steps happen in an environment where no hydrolysable energy or electrochemical gradient sources are available to power conformational changes. The limited space inside the \u03b2-barrel lumen and the multiple tertiary interactions with H1 increase the energetic barrier needed to eject the internal \u03b1-helix. As a result, additional conformational changes are likely required to obtain the active conformation, such as potential rearrangement of the \u03b2-barrel itself. These changes may be induced by the presence of the substrate CdiA, the binding of which to the POTRA domains could provide the additional 7.5 kcal/mol necessary to fully extract the helix (Figure 7).\n\nThe flexibility of the \u03b21\u2013\u03b216 interface mediated by the DxxG motif plays an essential role in the transport mechanism, where conformational changes in loop\u00a01 display different interacting surfaces for H1 and possibly for the toxin substrate. At the \u03b21\u2013\u03b216 interface, sidechains from the conserved loop\u00a06 interact with the DxxG motif, helping to stabilize different conformations. Our structures also reveal two different conformations for loop\u00a02 that affect CdiA secretion and H1 ejection. Similar results have been observed for FhaC, where deletion of this loop does not affect the active conformation, whereas insertion of several residues reduces the channel conductance and prevents substrate secretion (Baud et al., 2014; M\u00e9li et al., 2006). These results suggest a common and conserved role of loop\u00a02 in the TpsB transporter family, where the inward state can stabilize the resting conformation, and the outward state facilitate the active conformation.\n\nH1 and the DxxG motif are both present in CdiB/TpsB transporters, but absent in BamA/TamA proteins. We hypothesize that they contribute to unidirectional secretion where the lumen of the \u03b2-barrel is accessible or inaccessible at different stages of the secretion cycle. The position of loop\u00a06 and interactions with \u03b213 are conserved in all Omp85 proteins, suggesting a common function. In addition to possibly interacting with the substrate upon entering the \u03b2-barrel lumen, our results suggest that loop\u00a06 can also stabilize different conformational states of the \u03b2-barrel at the \u03b21\u2013\u03b216 interface.\n\n## Materials and methods\n\n### Cloning and purification of CdiB proteins\n\ncdiBAb from A. baumannii strain ACICU (locus tag ACICU_01912, protein id WP_000956371) and cdiBEc from E. coli strain EC93 (locus DQ100454, protein id AAZ57197.1) were codon-optimized, synthesized (Genscript) and cloned using ligation- independent cloning into pET9 vector, a derivative of pET20b (EMD Millipore). Signal sequence positions 1\u201323 for CdiBAb and 1\u201352 for CdiBEc were replaced by the pelB signal sequence followed by a 10-Histidine tag and a TEV site (ENLYFQSM) added to the N-terminus of mature proteins. Expression was performed in BL21(DE3) cells in 12 liters of TB media supplemented with 25 \u03bcg/mL kanamycin during 3 days at 20\u00b0C without induction (leaky expression of pET9 vector). Cells were collected by centrifugation (7500 g for 15 min), and resuspended in lysis buffer (50 mM Tris-HCl, pH7.4, 200 mM NaCl, 1 mM MgCl2, 10 mg/mL DNase I, and 100 mg/mL 4-(2-aminoethyl)benzenesulphonyl fluoride (AEBSF)). Cells were broken by three passages through an Emulsiflex C3 (Avestin) homogenizer at 4\u00b0C, and unlysed cells removed by centrifugation (7500 g for 15 min). The membrane fraction was harvested by ultracentrifugation (160,000 g for 60 min), and the pellet was resuspended in 50 mM Tris-HCl, pH7.4, 200 mM NaCl, 20 mM imidazole and solubilized by constant stirring in 5% Elugent (EMD Millipore) for 16 hr at 4\u00b0C. Solubilized membranes were harvested by a second ultracentrifugation step (220,000 g for 60 min) and the supernatant containing CdiB proteins was applied to a 15 mL Ni-NTA column (Qiagen) and eluted with 50 mM Tris-HCl, pH7.4, 200 mM NaCl, 0.8% Elugent and 250 mM imidazole. To remove the N-terminal 10-His Tag, peak fractions were pooled and incubated with 2 mg of TEV protease, in the presence of 2 mM DTT and 1 mM EDTA at 4\u00b0C under gentle agitation for 12 hr. The mixture was diluted into 50 mM Tris-HCl, pH8, 0.8% elugent and applied to an anion exchange chromatography column (Q sepharose GE Healthcare) for detergent exchange, eluted using a NaCl gradient into 50 mM Tris-HCl, pH8, and 1% C8E4 (Anatrace). To remove uncleaved protein from the TEV digestion, the peak fractions from ion-exchange were applied to a second Ni-NTA purification on gravity column using 2 mL of resin. The flow through containing TEV-digested CdiB proteins was concentrated to 4 mL and applied to a HiLoad 16/600 Superdex 200 size exclusion column (GE Healthcare) using 25 mM NaPi pH6.6, 100 mM NaCl, 1% C8E4. For Selenomethionine-substituted CdiBAb proteins, expression was performed in B834 E. coli cells (Novagen). Cultures were started in 12 L of TB media, then when OD600 reached 0.8, cells were harvested and washed two times in SelenoMet minimal media (Molecular Dimensions) supplemented with L-methionine at 60 mg/L. The final round was resuspended in 1 liter of SelenoMet media to inoculate 12 liters of SelenoMet supplemented with L-methionine at 60 mg.L\u22121 and 50 \u00b5g.mL\u22121 kanamycin. When OD600 reached 0.7, SeMet derivatized CdiBAb proteins were induced by addition of 1 mM Isopropyl\u2010thio \u03b2\u2010D\u20101\u2010thiogalactopyranoside (IPTG) and grown 16 hr at 30\u00b0C. The final OD600 was\u00a0~2.5, cells were harvested by centrifugation and CdiB proteins purified as described above. The incorporation of selenium into CdiBAb proteins was analyzed by mass spectrometry (data not shown; Taplin \u2013 Harvard).\n\n### Crystallization and data collection\n\nFor crystallization, samples were concentrated to\u00a0~10 mg/mL and sparse matrix screening was performed using a TTP Labtech Mosquito crystallization robot using hanging drop vapor diffusion with plates incubated at 21\u00b0C. The best native crystals for CdiBAb were grown from 100 mM Tris-HCl pH 8.4, 200 mM lithium sulfate, 10% PEG400, and 23% ethylene glycol. Selenomethionine-substituted crystals of CdiBAb were crystallized using similar conditions to native: 100 mM Tris-HCl pH 8, 200 mM lithium sulfate, 11% PEG400, and 23% ethylene glycol. The best crystals for CdiBEc were grown from Morpheus II condition C10 (Molecular Dimensions): 100 mM Gly-Gly, AMPD pH8.5, 4 mM Alkalis (1 mM Rubidium chloride, 1 mM Strontium acetate, 1 mM Cesium acetate, 1 mM Barium acetate), 12.5% PEG4000% and 20% 1,2,6-Hexanetriol. Crystals were collected directly from the crystallization drops and native data were collected at SER-CAT (ID22) and the GM/CA-CAT (ID23-D) beamlines of the Advanced Photon Source of the Argonne National Laboratory. Data collection for selenium-single-wavelength anomalous dispersion (Se-SAD) phasing of CdiBAb was performed at the BL12-2 beamline of the Stanford Synchrotron Radiation Lightsource from the SLAC National Accelerator Laboratory, during the Rapidata practical course. A summary of the data collection statistics can be found in Table 1.\n\n### Structure determination\n\nMolecular replacement on CdiBAb native data using the FhaC structures (PDB 4QKY and 3NJT) was unsuccessful. We phased the CdiBAb structure by collecting one data set on selenomethionine substituted CdiBAb crystal at the wavelength 0.979 \u00c5. The data were processed in space group P1 to a final resolution of 2.6 \u00c5 and selenium sites located using SHELX (Sheldrick, 2010). A phase-extended density-modified electron density map was produced with AutoSol (PHENIX) (Adams et al., 2010) and used for iterative model building (COOT [Emsley and Cowtan, 2004]) and refinement (PHENIX). This model was then used as a search model to solve the selenomethionine derivative CdiBAb and native CdiBEc structures by molecular replacement using Phaser-MR (Adams et al., 2010). The CdiBAb structure was refined in space group P1 to 2.4 \u00c5 resolution with R/Rfree values of 0.20/0.25 and CdiBEc in space group P21212 to 2.6 \u00c5 resolution with R/Rfree values of 0.24/0.26. Figures were made with UCSF Chimera (Pettersen et al., 2004).\n\nCoordinates and structure factors for the CdiBAb and CdiBEc structures have been deposited in the Protein Data Bank (PDB accession codes 6WIL and 6WIM).\n\n### Sequence alignments\n\nStarting after the predicted signal sequence, sequence alignments included representative Type Vb transporters where eight are involved in the CDI mechanism (6 CdiB: WP_000956371, AAZ57197.1, WP_046042815, ACI07001.1, WP_002210394.1, NP_273542, WP_126867950. 2 BcpB: WP_011402463, WP_011851264) and nine representative TpsB transporters, not involved in the CDI mechanism (WP_010930614, VDH07240, BAA21096, WP_136264517, AAA50322, AAA87060.1, AAX13508.1, WP_011191836, WP_010895677). Alignments were performed with T-coffee (Notredame et al., 2000) and edited with Jalview (Waterhouse et al., 2009) to take into consideration the secondary structure from available structural data. The final result was presented with ESPript (Robert and Gouet, 2014). Sequence identity percentage was calculated using Blastp suite (NCBI).\n\n### Secretion assays\n\nTo test secretion activity, two plasmids were used to co-produce CdiB and CdiA-NT proteins in E.\u00a0coli C41 (DE3) cells. cdiB genes were cloned into the pBAD plasmid under the control of the arabinose promoter, where the signal sequences (1\u201323 for CdiBAb and 1\u201352 for CdiBEc) were replaced by a pelB signal sequence, and 6-Histidine tags inserted into extracellular loop7 (located between residues 510\u2013511 for CdiAAb, and between residues 486\u2013487 for CdiAAc). The 5\u2019 region of cdiA genes from the related CDI operons was codon-optimized and synthesized (Genscript) to produce region 74\u2013472 for CdiAAb (WP_001039234.1) and region 29\u2013460 for CdiAEc (AAZ57198.1) containing the TPS domain and part of the FHA-1 domain. cdiA-NT genes were cloned into a pCDF plasmid under the control of a T7 promoter with lac operator, and the native signal sequence (1\u201373 and 1\u201328) was replaced by the pelB signal sequence, and a 6-Histidine tag added at the C-termini of the proteins. Cloning and CdiB deletion variants (denoted \u0394 in the text) were engineered using the Gibson assembly method (NEB) and amino acids substituted using Q5 Site-Directed Mutagenesis (NEB). \u03b1-helix H1 deletion constructs were built by removing the first 26 (IEDVSLPSQVLQDQRLKELNQQLQDQ) and 29 (AMLSPGDRSAIQQQQQQLLDENQRQRDAL) N-terminal residues from CdiBAb and CdiBEc, respectively. Constructs with \u03b1-helix H1 and linker deleted start at the first conserved cysteine indicated in Supplementary file 1 (end of the linker). For secretion assay E.\u00a0coli C41(DE3) cells were co-transformed using pBAD-cdiB and pCDF-cdiA-NT constructs and selected with 25 \u03bcg/mL kanamycin and 20 \u03bcg/mL streptomycin on LB (LB K/S). Cultures for secretion assays were incubated by shaking at 37\u00b0C 20 mL culture LB K/S in 125 mL flasks. When cultures reached OD600\u00a0=\u00a00.8, 0.1% arabinose and 400 \u03bcM IPTG were added for exactly 2h30 min and standardized at the end of the induction period using the final OD600, 100 \u03bcL containing 4 \u00d7 107 bacteria were harvested by centrifugation at 7000 g for 10 min. For kinetic experiments, 0.1% arabinose and 400 \u03bcM IPTG are added at OD600\u00a0=\u00a00.8 (t0), then after 20 min every 10 mins (for 100\u2013130 mins) 100 \u03bcL from each culture were harvested by centrifugation to separate culture supernatant and bacterial pellet at 7000 g for 10 min. For double cysteine variants, 5 mM TCEP was added during the induction period (TCEP \u2018+\u2019). 1X SDS-loading buffer was added into the culture supernatants and heated at 95\u00b0C. The whole cells (pellet) were washed and resuspended in 100 \u03bcL of 50 mM Tris-HCl pH7.4, 200 mM NaCl 1X SDS-loading buffer, heated at 95\u00b0C for 10 min at 1400 rpm shaking. 10 \u03bcL fractions from supernatant and whole cells were analyzed on NuPAGE 4\u201312% gels (Invitrogen) with 1X MES SDS-PAGE running buffer for 35 min at 200 V (constant) and transferred to polyvinylidenedifluoride (PVDF) membrane via the iBlot system (Invitrogen). Anti-HIS-HRP, Anti-GroEL, Anti-mouse and rabbit IgG-HRP (Sigma) and Anti-MBP (NEB) antibodies were used for western blot analysis and imaged using an ImageQuant LAS 4000 imaging system (GE Healthcare). The respective amounts, and estimation of the secretion efficiency were determined by scanning densitometry of the CdiA-NT and CdiB protein bands using the ImageQuantTL software (GE Healthcare). For kinetic experiments, the secretion efficiency of CdiA-NT wild type is arbitrarily set to 100% at t130 min and compared with the secretion efficiency of CdiA-NT variants. For the DsbA experiment, MC4100 dsbA+ parent cells and MC4100 dsbA- cells (dsbA::cm) were transformed using pBAD-cdiBAb D225C/F554C. All experiments were independently repeated at least three times from fresh transformations, and data were analyzed and presented using Prism 8 (GraphPad).\n\n### Equilibration Molecular dynamics (MD) simulations\n\nCHARMM-GUI membrane builder (Jo et al., 2008; Wu et al., 2014) was used to generate simulation systems. One copy of CdiB from E. coli or A. baumannii (referred to as CdiBEc or CdiBAb, respectively) was inserted into its respective species-specific outer membrane. The outer leaflet of the E. coli membrane was composed of type 1 Lipid A and R1 core (Wu et al., 2013). The outer leaflet of the A. baumannii membrane was composed of type 1 and type 2 Lipid A in a 1:1 ratio and R1 core (Fregolino et al., 2010). The inner leaflets of both membranes were composed of PPPE, PVPG and PVCL with a ratio of 15:4:1 (Vance and Vance, 2002). All systems were solvated with TIP3P water (Jorgensen et al., 1983). The E. coli system size is 110 \u00d7 115\u00d7125 \u00c53 and\u00a0~170000 atoms, while the A. baumannii system size is 115 \u00d7 125\u00d7125 \u00c53 and\u00a0~200000 atoms. Visual Molecular Dynamics (VMD) was used to construct both systems (Humphrey et al., 1996). We ran six equilibrium simulations, three for CdiBAb and three for CdiBEc, with NAMD for 500 ns each (Phillips et al., 2005). The lipid placement was the same for each replica. The force field used for all simulations is CHARMM36m (Huang et al., 2017). Langevin dynamics (damping constant \u0263\u00a0=\u00a01.0 ps\u22121) was used to keep the temperature (310 K\u00a0=\u00a037\u00b0C) constant and an anisotropic Langevin piston barostat was adopted for constant pressure (one atm) (Martyna et al., 1994). The time step of the simulations is two fs. Bonded interactions and short-range (below the 12 \u00c5 cutoff) nonbonded interactions were updated at every time step. The Particle-mesh Ewald (PME) method (Darden et al., 1993) was used for long-range interactions, calculated every other time step.\n\nThe potential of mean force (PMF) for extraction of the helix H1 from CdiBAb and CdiBEc \u03b2-barrels was calculated using replica-exchange umbrella sampling (REUS) (Sugita et al., 2000) and the weighted histogram analysis method (WHAM) (Grossfield, 2017; Kumar et al., 1992). A collective variable defining the distance between the C\u0251 atoms of the helix and those of the barrel projected onto the membrane axis was constructed using the colvars module of NAMD (Fiorin et al., 2013). Steered molecular dynamics (SMD) (Sotomayor and Schulten, 2007) was used to generate starting states for each window. A total of 43\u201350 windows were used, covering a range from +2 to \u221240 \u00c5 (positive values are on the extracellular side and negative values on the periplasmic side compared to the crystal structure at 0 \u00c5). For the four PMF calculations (two for CdiBAb and two for CdiBEc), we ran 35\u2013235 ns/window (1.7\u201310.1 \u03bcs per PMF). Exchange rates between the windows were between 0.1 and 0.5. A particularly difficult region to sample was around \u22124 to \u221212 \u00c5 for CdiBAb. To improve sampling in this region, we ran 16 additional windows, spaced every 0.5 \u00c5, with a larger restraint for 10 ns each. While these windows helped with WHAM, it should be noted that they do not benefit from accelerated convergence intrinsic to REUS. Bootstrap error estimates were calculated using WHAM. Correlation times for each window, a necessary input for the error estimate, were determined from the integral of the normalized autocorrelation function (ACF), cut-off at the first time it reaches 0. These ACFs were determined using ACFCalculator (Gaalswyk et al., 2016) with inputs from additional 2-ns highly restrained (force constant of 10 kcal/mol\u22c5\u00c52) simulations. The correlation time ranged from 20 ps to 140 ps and were smoothed using a three-point running average (Hub et al., 2010). PMFs are plotted in Figure 7\u2014figure supplement 2 with + / - 1 standard deviation.\n\nTo quantify H1\u2019s removal from the CdiB \u03b2-barrel, we ran SMD simulations. Because interactions with the linker region and POTRA domains are unpredictable in a non-equilibrium simulation, we deleted them prior to running SMD for both CdiBAb and CdiBEc. In the SMD simulations, force was applied to the center of mass of H1 and its secondary structure was restrained to obtain the force profile of extraction under the assumption that H1 maintains its \u03b1-helical structure. H1 was pulled toward the periplasm at a constant speed (0.29 \u00c5/ns) in all SMD simulations, which were 150\u2013200 ns in length. Loop 2 (Leu260 to Ser266) was deleted in the \u2018\u0394L2\u2019 system. Gly227 (\u03b21) and Thr552 (\u03b216) were substituted by cysteines to form a disulfide bond in the \u2018\u03b21\u2013\u03b216\u2019 system. Three SMD replicas were run for each of these CdiBAb variants at the same speed and length as for the WT systems.\n\nTo explore the different positions of H1 observed in each species\u2019 \u03b2-barrel, Targeted Molecular Dynamic (TMD) simulations were run. In the first TMD simulation starting from the crystal structure of CdiBAb, H1 was forced to adopt the same position relative to the \u03b2-barrel as that of CdiBEc H1. In the second TMD simulation, the same procedure was applied to CdiBEc, matching its H1 to the position of that in the CdiBAb structure. TMD was run for 30 ns, followed by 30 ns in which H1 was restrained to its new position, and finally 120 ns of free equilibration.\n",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "192e08df-402a-4d3c-9803-f64605c5cb27",
+      "submission_id": "ea958acd-436e-4b72-a770-e87c72f61213",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Merritt Maduke, Stanford University School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58100.sa1](https://doi.org/10.7554/eLife.58100.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis manuscript presents structures of two \"CdiB\" transporters, which serve as microbial defense systems, secreting substrate CdiA proteins to trigger toxic effects on competing microbes. To relate structure to function, the authors developed a functional assay and validated the role of the observed conformational change in the transport mechanism.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structural insight into toxin secretion by contact dependent growth inhibition transporters\" for consideration by eLife. Your article has been reviewed by four peer reviewers, including Merritt Maduke as the Reviewing Editors, Reviewer #1, and the evaluation has been overseen by and Olga Boudker as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Dukas Jurenas (Reviewer #3); Trevor Moraes (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that if it is not feasible to do the experiments that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nIn this manuscript, the authors report their findings on a type Vb two-partner secretion system, represented by CdIA and CdIB proteins from Acinetobacter baumannii and Escherichia coli. In this system, outer membrane protein CdIB is responsible for secretion of its substrate protein CdIA from periplasm to the extracellular environment, which then is delivered to a cell of a competing microbe, triggering its toxic effects on that cell. Thus, this system acts to inhibit growth of competing bacteria. Here, the structures of two CdiB transporters are presented. Previously, only one TpsB structure had been determined. The two new structures adopt two different conformations, one overlapping with that of the previous structure, and one new conformation involved a repositioning of a DxxG motif that is unique to the TpsB transporters. The writing in this manuscript is excellent; the Introduction clearly set up the background, original discovery of contact dependent inhibition, and the known biochemical/structural information about the type Vb secretion system. To test the functional relevance of predicted conformational change, the authors developed a secretion assay that measures secreted CdiA protein by Western blot, and they tested predictions via cross-linking, complementarity, and mutational analysis. The authors additionally perform MD simulations to evaluate energetics of removal of the H1 helix from the pore. The simulations support the main thrust of the paper, but there are major concerns that must be addressed. In summary, this manuscript presents the first structures of CdiB transporters, identifies conformational change in a critical structure motif, confirms the functional relevance of the observed conformational change, and uses MD simulations to lay groundwork for future experimental analysis of CdiB transport mechanism. Going forward, we look forward to follow-up work such as structures with bound substrates/substrate peptides, structures of mutants, and experimental (e.g. EPR/DEER) results on CdiB conformational dynamics. Overall, once issues with the MD simulations are addressed, the results presented in this manuscript will be of broad interest to scientists studying mechanisms of membrane proteins.\n\nRevisions for this paper:\n\nExperimental:\n\n1) In Figure 6B, the authors show that the GGAG mutant increases apparent activity, which is ostensibly consistent with their model. However, it is feasible that the increase in CdiB(Ab) secretion is due to increased cell lysis (as occurs with the Ec homolog, Figure 4A) rather than to increased secretion activity. Therefore, it is important to show a control for this experiment. If an experiment is not possible at this time, then the paper should be revised to specify the caveat.\n\n2) Figure 5B would benefit from having a WT CdIB protein as control (as was done in Figure 6A). Also, the statement that \"CdiBAb was detected in the pellet after 20 minutes and remained at a constant level over the 100-minute time course, in the presence or absence of TCEP\" does not seem correct, as the band intensity increased from 20min to 60min. Please correct this statement and if possible shown densitometry analysis on the bands to better quantify and describe the observed phenomenon.\n\nSimulations:\n\nThe computational expert who reviewed the manuscript provided specific comments that we agree are essential to address. The reviewer's comments are as follows:\n\n\u2013 Regarding the suggestion in subsection \u201cStructural differences in helix H1\u201d these two structures demonstrate mobility of the helix. How can we be certain that this difference in position is not a transporter dependent difference? This is exactly where the simulations could really help support this argument.\n\n\u2013 Do the authors really see the CdiBAb simulation interconvert between the two beta1 configurations as stated in subsection \u201cLink between DxxG conformation and position of H1 helix\u201d, or do they only see one direction (unravelling)? I can't tell from the videos because it is too small. I would really like to see this analysis and any follow up, because while the removal of the helix in Figure 7 is very difficult to accurately capture, these changes are doable. Is there a lipid that plays a role in this happening? The authors do three simulations of each structure, is the lipid placement the same in each case or does that get reinitialized too?\n\n\u2013 I want to give my general impressions of the helix removal simulations. I like that the authors used both umbrella sampling and SMD, but I must say that given the very large energies (and they may actually be very large) and significant contact between the helix and the barrel, I am completely unconvinced by this analysis as it stands. In agreement with the authors, I also worry about a number of things: the reaction coordinate, potential protein conformational changes in the barrel and loops, the action of other elements from the periplasm or extracellular spaces, and most importantly sampling. I am concerned that with a few microseconds of enhanced sampling, you are not going to answer this question adequately, and you may arrive at completely wrong conclusions. For instance, I am left with the impression that the authors believe that the helix unravels to exit, and while it may undergo conformational changes, I don't think it is going to look like your SMD where the entire thing is unravelled in the aqueous environment. My first reason to not think this is the case are the two structures \u2013 we see the helix move quite a bit, but it is a well-formed helix in both cases. Moreover, if you run the helix through DISOPRED, is there reason to think that it is marginally stable as an \u03b1-helix?\n\n\u2013 Personally, I would really love to see a very careful PMF carried out between the two states that you currently have. Create a homology model of one structure using a template of the other, where needed, or do some other kind of targeting, and then really sample the move from one to the other. This alone would be really hard, and might take tens of microseconds, if not more, to get a converged data set, but there are some really good features of this approach:\n\n\u2013 it is much more tractable,\n\n\u2013 you have end points that you believe, and\n\n\u2013 you will learn a lot about what it takes to move the helix in this barrel and how the helix and rest of the protein have to adapt to do it.\n\n\u2013 With my 2 cents given, I am not opposed to including the current PMF and SMD (although, I wouldn't do it personally), but I really would like to see more simulations to feel better that you have reached some kind of convergence. This is outlined below. Moreover, I would include these as supplemental figures where I focused more on the very general big picture ideas of overall energies supporting one reaction coordinate/transformation over another, etc. But that is my opinion, and I don't want to tell you how to write your own paper (ok, I gave another 2 cents here).\n\nPMF calculations\n\n\u2013 How were the actual snapshots generated in the 50 windows? Did you use rigid rotation, or did you seed 1 window from the last? If you used rigid rotation/translation, what were the sterics like prior to each run? Did you minimize, etc? I think it would be most ideal to carry these windows out sequentially, where you start in the X-ray structure state, carry out a 20 ns simulation under restraints, and then pick back through the simulation to identify the snapshot that moved the farthest along your reaction coordinate to seed the next step.\n\n\u2013 Figure 7C should have bootstrap error estimates, in my opinion. If it can't be done in Alan Grossfield's implementation (I can't remember) there are some Gromacs tools to do this and mBAR can do it too. It is important to down sample your data here in each bin, however, so that you don't use correlated snapshots. Given the complexity and size of this system, this is going to be very important to see. I would especially like to see in a reply the side by side comparisons of the figures here with any recalculated taking into account correlations.\n\n\u2013 As far as I can tell, it looks like each PMF is made up of about 750-1,000 ns of aggregate data. While there are important questions about how this is seeded and the progress coordinate used, I would at least like to see 1 or 2 more of these PMF profiles for each of the two conditions generated using completely independent simulations to assess the role of sampling in the computed PMF values.\n\nSMD simulations\n\n\u2013 Two independent runs per each condition (each about 150-200 ns), but only 1 profile is plotted for each in Figure 7A and B. Did you plot the average of the two? Given the small amount of time used to generate these, I would certainly compute 3-5 more SMD runs per condition and make a plot with all of the runs so that we can assess the role of stochasticity and non-equilibrium pulling versus the differences in the protein and or mutation in the protein.\n\n\u2013 Finally, do you see any correspondence between the structural conformations that come out of your PMF and the SMD? You might have mentioned this, but I didn't catch it. This kind of analysis would again make me feel better about the convergence, but since you don't seem to favor the helix exit as a helix, maybe you don't want to get into that.\n\nThe statistics on the simulations is inadequate.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for re-submitting your article \"Structural insight into toxin secretion by contact dependent growth inhibition transporters\" for consideration by eLife. Your article has been re-reviewed by two peer reviewers, including Merritt Maduke as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Olga Boudker as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nRevisions:\n\nIt is great to see that PMF profile was extended and additional simulations run. The new PMF is very different from the previous ones. We would have liked to see more of an attempt to rationalize the distances and compare with this propertied structure. Are they at all close in a semiquantitative manner? For future studies, cross linking from this intermediate state would be ideal.\n\nFor the current study, the authors should qualify their PMF in the final text and include a statement noting that they got very different results for the same starting conditions, which highlights the high degree of uncertainty in these kinds of calculations, especially when the end point structures are not known.\n",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2d9e21be-b6f2-4bea-b6b3-afc0a12f75cf",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C1",
+      "claim": "CdiB transporters from Acinetobacter baumannii and Escherichia coli were crystallized and their structures determined to 2.4 \u00c5 and 2.6 \u00c5 resolution, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "CdiBAb and CdiBEc structures were built and refined to final resolutions of 2.4 \u00c5 and 2.6 \u00c5, respectively (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the resolution of the crystal structures in the Results section and provides crystallographic statistics in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "aa719058-28ae-4b44-9b78-71b764f8d06c",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C2",
+      "claim": "CdiBAb and CdiBEc share 21% sequence identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite low sequence similarity (21% sequence identity), both structures adopt a common fold",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states the sequence identity percentage between the two proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "1dfdeabd-b6f3-4e9f-a133-e989f337a427",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C3",
+      "claim": "CdiB transporters adopt a TpsB fold containing a 16-stranded transmembrane \u03b2-barrel connected to two periplasmic POTRA domains.",
+      "claim_type": "EXPLICIT",
+      "source": "both structures adopt a common fold: an N-terminal \u03b1-helix (H1) is inserted into the lumen of the \u03b2-barrel and is connected by a ~ 20 residue linker to two periplasmic POTRA domains. The POTRA domains have a conserved \u03b2\u03b1\u03b1\u03b2\u03b2 fold and extend away from the \u03b2-barrel (Figure 1). The C-terminal \u03b2-barrel consists of 16 antiparallel \u03b2-strands organized as an oblique cylinder with cross-sectional dimensions of 35 \u00c5 x 25 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the structural architecture of CdiB proteins based on crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "e7ef9af5-4c98-40d7-acf6-1262c4b5f3fa",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C4",
+      "claim": "An N-terminal \u03b1-helix (H1) is inserted into the \u03b2-barrel lumen of CdiB transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "an N-terminal \u03b1-helix (H1) is inserted into the lumen of the \u03b2-barrel",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the presence and location of helix H1 based on crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "59151411-c63e-44b2-9bad-da3aa4a38edc",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C5",
+      "claim": "The lumen of the CdiB pore is occluded by an N-terminal \u03b1-helix and the conserved extracellular loop 6.",
+      "claim_type": "EXPLICIT",
+      "source": "The lumen of the CdiB pore is occluded by an N-terminal \u03b1-helix and the conserved extracellular loop 6",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract as a key finding from the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "5af2bf96-c1e0-46f3-9b5f-9f6ef9b6191d",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C6",
+      "claim": "A conserved DxxG motif is located on strand \u03b21 of CdiB transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a conserved DxxG motif located on strand \u03b21",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the identification of this motif through structure-based sequence alignment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "70d1d1ec-2ec4-4d79-940f-d1b7e1e6e833",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C7",
+      "claim": "The DxxG motif is found in all TpsB transporters but not in BamA/TamA proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure-based sequence alignment of TpsB transporters allowed us to identify a conserved sequence, the DxxG motif, where 'x' corresponds to polar residues (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes identification of this motif through sequence alignment of TpsB transporters, and later states it is absent in BamA/TamA proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "5535e02c-e001-4b22-aeac-3cb041ef1ebb",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C8",
+      "claim": "H1 adopts different conformations in CdiBAb and CdiBEc structures, with different angles relative to the \u03b2-barrel (10\u00b0 for CdiBAb versus 25\u00b0 for CdiBEc).",
+      "claim_type": "EXPLICIT",
+      "source": "However, H1 is positioned very differently in CdiBAb and CdiBEc (Figure 2, Video 1): the angle between H1 and the \u03b2-barrel is about 10\u00b0 for CdiBAb, versus 25\u00b0 for CdiBEc.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript explicitly describes the different angles of H1 in the two structures based on crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "62d68071-eefa-46d8-9517-4a1ee1c3cfb5",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C9",
+      "claim": "In CdiBAb, H1 sits higher in the barrel pore and interacts with the inner barrel wall using 12 H-bonds and three salt bridges, with a total buried surface area of 1263 \u00c5\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, H1 sits higher in the barrel pore in CdiBAb, positioning its N-terminus closer to the extracellular surface. In this orientation, H1 interacts with the inner barrel wall using 12 H-bonds and three salt bridges, with no interactions to loop 6, for a total buried surface area of 1263 \u00c52 (Figure 2, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific quantitative measurements of H1 interactions in CdiBAb from structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "fbb784e1-7761-4093-9510-385a4314479e",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C10",
+      "claim": "In CdiBEc, H1 sits 4.8 \u00c5 lower in the barrel pore and forms 5 H-bonds with loop 6 and 8 H-bonds with the barrel wall, for a total buried surface of 1385 \u00c5\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "In CdiBEc, H1 in sits 4.8 \u00c5 lower in the barrel pore, allowing it to form 5 H-bonds with loop 6, and 8 H-bonds with the barrel wall, for a total buried surface of 1385 \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific quantitative measurements of H1 interactions in CdiBEc from structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "d8051ce5-16bd-4d78-a3bc-d9e2959abc71",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C11",
+      "claim": "Targeted molecular dynamics simulations show that H1 can adopt either orientation in both CdiBAb and CdiBEc systems.",
+      "claim_type": "EXPLICIT",
+      "source": "For both models, analysis of RMSD during free equilibration reveal that H1 is stable in the new position and does not revert to the initial state (Figure 2\u2014figure supplement 1, Video 2). This result suggests that H1 can adopt either orientation in both systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes TMD simulation results showing H1 stability in different positions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "f5517be6-5253-4e4d-bdfd-ae5ca08d8e5c",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C12",
+      "claim": "Loop 6 sits in the interior of the \u03b2-barrel and partially occludes it.",
+      "claim_type": "EXPLICIT",
+      "source": "Like H1, L6 sits in the interior of the \u03b2-barrel and partially occludes it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes the position of loop 6 based on crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "0b768cb0-4458-4c1c-81a7-b0beca4f87b7",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C13",
+      "claim": "Loop 6 is maintained in its conformation by a conserved salt bridge between an arginine on the tip of L6 (from the (V/I)RG(F/Y) motif) and an aspartate on strand \u03b213 ((F/G)xDxG motif).",
+      "claim_type": "EXPLICIT",
+      "source": "This conformation is maintained by a conserved salt bridge between an arginine on the tip of L6 (from the (V/I)RG(F/Y) motif) and an aspartate on strand \u03b213 ((F/G)xDxG motif), an interaction observed in all Omp85 structures (Gruss et al., 2013; Gu et al., 2016; Maier et al., 2015; Noinaj et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes this conserved interaction based on structural data and comparison with other Omp85 structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "87abce58-fbf2-44b4-8b8a-697f9af7ddbc",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C14",
+      "claim": "CdiB transporters specifically secrete their cognate CdiA proteins and are not interchangeable between species.",
+      "claim_type": "EXPLICIT",
+      "source": "No secretion of CdiA occurs when a different CdiB species is used, despite 50% sequence similarity between the two CdiA-Nt constructs. These results show that CDI toxins and transporters are not interchangeable (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data from secretion assays showing species-specific interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "e05319ee-a5e2-4638-9e60-63e4db0781b5",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C15",
+      "claim": "Deletion of H1 results in less CdiB in the pellet fraction and correspondingly smaller amounts of CdiA-Nt secreted.",
+      "claim_type": "EXPLICIT",
+      "source": "When just the helix is deleted, there is less CdiB in the pellet fraction, especially for CdiBAb, and correspondingly, a smaller amount of CdiA-Nt is secreted (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data from deletion mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "de6cf19e-8091-4077-bfe0-70cb1648a8d2",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C16",
+      "claim": "H1 is important for folding, membrane insertion, and/or stability of CdiB.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that H1 is important for folding, membrane insertion, and/or stability of CdiB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the experimental observation that deletion of H1 reduces CdiB levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "f64f5d69-283e-4658-9411-075525ff98d6",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C17",
+      "claim": "When both H1 and the linker are deleted, CdiB is present and secretion of CdiA-Nt occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when both the helix and linker are deleted, CdiB is present and secretion of CdiA-Nt occurs (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data from deletion mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "23bd7d6d-a0b3-4927-828f-072d141b0c0a",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C18",
+      "claim": "The helix and linker are not essential for CdiA-Nt secretion but are important for CdiB stability.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the helix and linker are not essential for CdiA-Nt secretion but must be important for CdiB stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws this conclusion from the deletion mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "a5d2b881-920d-4334-8444-dea6504b85aa",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C19",
+      "claim": "Cross-linking \u03b21 and \u03b216 with disulfide bonds greatly impairs substrate secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "When \u03b21 and \u03b216 are cross-linked, substrate secretion is greatly impaired, however reduction of the disulfide rescues secretion (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data from cysteine cross-linking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "8ca77e1f-d3e9-475e-a52d-d4f8e9eda3b1",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C20",
+      "claim": "Reduction of the \u03b21-\u03b216 disulfide bond rescues secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "When \u03b21 and \u03b216 are cross-linked, substrate secretion is greatly impaired, however reduction of the disulfide rescues secretion (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data showing that adding reducing agent restores secretion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "cd4fd3e9-876d-4543-9111-4808b9e5942a",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C21",
+      "claim": "Flexibility of \u03b21 and the DxxG motif facilitate secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results show that secretion of CdiA is inhibited when strands \u03b21 and \u03b216 are tethered, and correspondingly, flexibility of \u03b21 and the DxxG motif facilitate secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws this conclusion from the cross-linking experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "f7bf1e10-a651-43c5-a955-15c088fcb674",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C22",
+      "claim": "The GGAG substitution in loop 2 enhances secretion activity, with CdiA detected after just 30 min compared to 60 min for wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "The GGAG mutant results in measurable impact on the secretion, where CdiA is detected after just 30 min and continues to increase over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data from loop 2 mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "8ad73bbf-099f-4b6d-adb0-96dd55381f0d",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C23",
+      "claim": "Increasing loop 2 flexibility enhances secretion activity and may promote the active conformation of the \u03b2-barrel.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that increasing loop 2 flexibility enhances secretion activity and may promote the active conformation of the \u03b2-barrel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this from the loop 2 GGAG mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "9146384c-2206-42e1-8efe-500a1d59639c",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C24",
+      "claim": "The S226E mutation delays secretion and results in lower amounts of CdiA secreted over time.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, S226E delays secretion and results in lower amounts of CdiA secreted over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents experimental data from point mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "c59adf60-aa72-4961-a236-6918fb2a4e45",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C25",
+      "claim": "Combining S226E with R460G or with the H1-linker deletion improves secretion and restores CdiA levels to near wildtype.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining S226E with R460G or with the H1-linker deletion (S226E\u0394H1\u0394Link) improves secretion and restores CdiA levels to near wildtype (Figure 6A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents experimental data from double mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "0cc0fbbb-b86a-4412-82a1-a26b520cce44",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C26",
+      "claim": "Interactions between DxxG and loop 6 affect CdiA secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that interactions between DxxG and loop 6 affect CdiA secretion and that flexibility in this region is essential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws this conclusion from the mutational analysis of DxxG and loop 6 residues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "7dec8b75-d16b-4657-a367-679204c6d7c1",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C27",
+      "claim": "During equilibrium MD simulations, several H-bonds between \u03b21 and \u03b216 rupture in CdiBAb, and part of the DxxG motif can convert from a \u03b2-strand to a loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the position of H1 remains stable in the \u03b2-barrel lumen, we observed rupture of several H-bonds between \u03b21 and \u03b216 in the CdiBAb simulations. Part of the DxxG motif can convert from a \u03b2-strand to a loop, whereas the \u03b21\u2013\u03b216 interface can fluctuate from a short to a long \u03b2-sheet affecting the size of the \u03b216-\u03b21-\u03b22-\u03b23 sheet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes observations from molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "648df648-a645-4180-8182-b1cc80db2412",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C28",
+      "claim": "During CdiBEc simulations, the DxxG motif tilts inward toward the lumen and the conformation is much more stable with no H-bond disruption detected between \u03b21 and \u03b216.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, during CdiBEc simulations, the DxxG motif tilts inward, toward the lumen, and the CdiBEc conformation is much more stable, with no H-bond disruption detected between \u03b21 and \u03b216.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes observations from molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "519dca89-024e-4bfd-95c6-421d757b3de8",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C29",
+      "claim": "Water molecules penetrate into the membrane to keep the DxxG motif solvated.",
+      "claim_type": "EXPLICIT",
+      "source": "During the simulations we observe that water molecules penetrate into the membrane slightly to keep the DxxG motif solvated (Figure 7\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes observations from molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "f4311fc7-c2e3-4625-8c38-619e091b6973",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C30",
+      "claim": "Potential of mean force calculations for CdiBEc reveal an intermediate state during helix extraction that is lower in energy than the crystal structure minimum.",
+      "claim_type": "EXPLICIT",
+      "source": "From this PMF, we discovered a new minimum, one even lower in energy than the crystal structure minimum, at a point of intermediate extraction. In this PMF, the second minimum is separated from the crystal-structure conformation by 7.5 kcal/mol and a barrier of 13 kcal/mol; the fully extracted state is 7.5 kcal/mol higher than the second minimum and almost identical to the crystal-structure conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents results from PMF calculations based on molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "a6d5182d-c23b-4480-a2d5-4b10c189f258",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C31",
+      "claim": "The existence of an intermediate state during helix extraction is supported by earlier PELDOR spectroscopy data on FhaC.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of an intermediate state during helix extraction from the barrel is supported by earlier experimental data where Pulsed-electron double-resonance (PELDOR) spectroscopy revealed distinct peaks in the distance distribution on a related two-partner-secretion transporter, FhaC, even in the absence of any substrate (Gu\u00e9rin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous experimental work to support the computational findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "acd452fd-e9fa-40cd-bdae-21e920b1585d",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C32",
+      "claim": "CdiBEc requires less work on average to extract H1 compared to CdiBAb, especially from \u221225 to \u221235 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The force plots for CdiBEc and CdiBAb display distinct features, while on average CdiBEc requires less work to extract H1, especially from \u221225 to \u221235 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents results from steered molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "1f1c34cf-3a1d-4834-b1b5-1e445b8de152",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C33",
+      "claim": "A strong electrostatic interaction between H1 and the DxxG motif or loop 2 in CdiBAb requires a large force to disrupt.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon further examination, we observed a strong electrostatic interaction between H1 and the DxxG motif or loop 2 in CdiBAb that require a large force to disrupt (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes observations from steered molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "8bcf7c99-40cb-4c4f-82a5-e7d6b5db2033",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C34",
+      "claim": "Deletion of loop 2 in CdiBAb reduces the force required to extract H1 on average.",
+      "claim_type": "EXPLICIT",
+      "source": "The force plot of CdiBAb in which loop 2 is deleted shows that less force is required to extract H1 on average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents results from steered molecular dynamics simulations of a deletion mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "dc1f214d-36b5-4ce8-a651-28a8ccc92077",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C35",
+      "claim": "CDI systems were first described in Escherichia coli EC93, where a CdiA toxin and CdiB transporter were shown to inhibit other E. coli strains.",
+      "claim_type": "EXPLICIT",
+      "source": "This process was first described in Escherichia coli EC93, where a two-partner secretion system consisting of a CdiA toxin and a CdiB transporter was shown to inhibit other E. coli strains (Aoki et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the original discovery of CDI systems.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "324f741e-7b86-4bc6-8ddb-298db9be8500",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C36",
+      "claim": "CdiB is an outer membrane transporter that releases its CdiA toxin to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "CdiB is an outer membrane transporter that releases its CdiA toxin to the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the function of CdiB based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "133fb368-8f1a-411d-9d38-86ee7f5f89f8",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C37",
+      "claim": "Once contact occurs, a toxin domain at the CdiA C-terminus is cleaved and imported into the target bacterium to inhibit growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Once contact occurs, a toxin domain at the CdiA C-terminus is cleaved and imported into the target bacterium to inhibit growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the mechanism of CDI based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "1ff38a7e-8083-42c4-9223-f25487bf8e72",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C38",
+      "claim": "CDI systems express an immunity protein, CdiI, which protects against CdiA toxins delivered from neighboring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To prevent self-destruction, CDI systems also express an immunity protein, CdiI, which protects against CdiA toxins delivered from neighboring cells (Figure 1\u2014figure supplement 3; Aoki et al., 2005; Ruhe et al., 2018; Ruhe et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the immunity mechanism based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "998255b6-bb82-4e28-bfa0-d986781e0134",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C39",
+      "claim": "CdiA toxins are predicted to fold into a \u03b2-helix, forming an elongated filament that extends several hundred angstroms from CdiB transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Like TpsA, CdiA toxins are predicted to fold into a \u03b2-helix, forming an elongated filament that extends several hundred angstroms from CdiB transporters (Clantin et al., 2004; Ruhe et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the predicted structure of CdiA based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "89353ecd-e965-45e2-940e-a8772fdf1e2b",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C40",
+      "claim": "CdiA proteins contain two N-terminal domains directing their secretion: a signal peptide and a TPS domain.",
+      "claim_type": "EXPLICIT",
+      "source": "CdiA proteins are synthesized in the cytoplasm and contain two N-terminal domains directing their secretion: a signal peptide and a TPS domain (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the domain organization of CdiA proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "a486cb6f-abe4-4216-8a85-3c156bab7d9c",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C41",
+      "claim": "After inner membrane translocation and signal peptide removal by the SEC machinery, the CdiA TPS domain interacts with the periplasmic domains of its cognate CdiB transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "After inner membrane translocation and signal peptide removal by the SEC machinery, the CdiA TPS domain interacts with the periplasmic domains of its cognate CdiB transporter (Baud et al., 2014; Clantin et al., 2004; Delattre et al., 2011; Hodak et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the secretion mechanism based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "f3dfb66b-744c-47bc-83aa-b3ae16db143c",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C42",
+      "claim": "CdiB proteins are members of the Omp85 superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "CdiB proteins are members of the Omp85 superfamily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the protein family classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "736ed961-644e-45f5-b812-4072ae53d9dc",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C43",
+      "claim": "There are two functionally distinct protein classes in the Omp85 superfamily: BamA/TamA proteins that insert newly synthesized outer membrane proteins into the outer membrane, and TpsB proteins that secrete cognate protein substrates to the extracellular surface.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two functionally distinct protein classes in the Omp85 superfamily: BamA/TamA proteins that insert newly synthesized outer membrane proteins into the outer membrane, and TpsB proteins that secrete cognate protein substrates to the extracellular surface (Figure 1\u2014figure supplement 3; Gentle et al., 2004; Gu\u00e9rin et al., 2017; Heinz and Lithgow, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the functional classification of Omp85 proteins based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "58691518-d4e2-4d5f-833e-3beace916424",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C44",
+      "claim": "Only one TpsB structure has been characterized prior to this work: Bordetella pertussis FhaC.",
+      "claim_type": "EXPLICIT",
+      "source": "While there are several BamA, TamA, and BAM complex structures (Bakelar et al., 2016; Gruss et al., 2013; Gu et al., 2016; Noinaj et al., 2013), only one TpsB structure has been characterized: Bordetella pertussis FhaC (Clantin et al., 2007; Maier et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the prior state of structural knowledge for TpsB proteins.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "0abcecb4-1982-42fc-86bf-616041cc616a",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C45",
+      "claim": "BamA/TamA and TpsB proteins use a 16-stranded \u03b2-barrel to span the outer membrane, connected to a series of N-terminal periplasmic POTRA domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The two protein classes use a 16-stranded \u03b2-barrel to span the outer membrane, connected to a series of N-terminal periplasmic interaction modules called polypeptide-transport-associated (POTRA) domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the common structural features of Omp85 proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "bdb00664-c4fa-4d8d-bbee-578f26fa6386",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C46",
+      "claim": "Inside the \u03b2-barrel lumen, extracellular loop 6 forms a 'lid-lock' through interactions between two essential signature motifs: (V/I)RG(Y/F) at the tip of L6 and (F/G)xDxG on strand \u03b213.",
+      "claim_type": "EXPLICIT",
+      "source": "Inside the \u03b2-barrel lumen, extracellular loop 6 (L6) forms a 'lid-lock' through interactions between two essential signature motifs: (V/I)RG(Y/F) at the tip of L6 and (F/G)xDxG on strand \u03b213 (Gruss et al., 2013; Maier et al., 2015; Noinaj et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes conserved structural features based on cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "c3feb446-1825-46da-add1-2fcddf271d43",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C47",
+      "claim": "Mutagenesis experiments have shown that L6 is essential for activity but its precise function is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutagenesis experiments have shown that L6 is essential for activity but its precise function is unclear (Gu\u00e9rin et al., 2015; H\u00f6hr et al., 2018; Leonard-Rivera and Misra, 2012; Rigel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes previous experimental findings from cited literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "760a09db-9f31-4bd6-a329-1880d4931f4d",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C48",
+      "claim": "TpsB proteins contain an N-terminal \u03b1-helix (H1) inserted into the barrel pore that is not found in BamA/TamA proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, TpsB proteins contain an N-terminal \u03b1-helix (H1) inserted into the barrel pore that is not found in BamA/TamA proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a distinguishing structural feature of TpsB proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "f57e8089-a7dd-44fa-80be-397d9fc462c0",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C49",
+      "claim": "H1 is connected to the first POTRA domain by a short periplasmic polypeptide linker that has been shown to be essential for secretion in the FhaC/FHA system.",
+      "claim_type": "EXPLICIT",
+      "source": "H1 is connected to the first POTRA domain by a short periplasmic polypeptide; this linker has been shown to be essential for secretion in the FhaC/FHA system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the linker and cites its functional importance from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "79ae4ecb-6e95-47e0-933e-bb96a466bc9d",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C50",
+      "claim": "H1 blocks the barrel pore in the resting conformation and must be removed for secretion to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Since H1 blocks the barrel pore in the resting conformation, it must be removed for secretion to occur (Figure 1\u2014figure supplement 3; Baud et al., 2014; Gu\u00e9rin et al., 2014; Maier et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the functional role of H1 based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "74d128f0-5040-434b-9e4e-befd4a16e59a",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C51",
+      "claim": "The structures of CdiBAb and CdiBEc are the first crystal structures of CdiB transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the first crystal structures of two CdiB transporters from Acinetobacter baumannii and Escherichia coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this is the first report of CdiB structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "31cefc9b-6956-4df3-8ec0-030596942314",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C52",
+      "claim": "The structures of FhaC and CdiBEc are virtually identical.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of CdiBAb and CdiBEc with TpsB transporter FhaC shows that the structures of FhaC and CdiBEc are virtually identical (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares the structures and states their similarity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "18bafec4-7665-470d-931c-e30b92ba4210",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C53",
+      "claim": "CdiBAb shows an alternate conformation compared to FhaC and CdiBEc.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of CdiBAb and CdiBEc with TpsB transporter FhaC shows that the structures of FhaC and CdiBEc are virtually identical (Figure 3\u2014figure supplement 1), whereas CdiBAb shows an alternate conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares the structures and identifies conformational differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "85c13d93-44c3-42e3-9300-858f11fb500f",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C54",
+      "claim": "The high structural similarity between FhaC and CdiB transporters suggests that research on FhaC is also relevant to CDI secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "The high structural similarity observed between FhaC and CdiB transporters suggests that the large body of research pertaining to FhaC is also relevant to CDI secretion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws this inference from the structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "2a4648bb-8d45-49d4-bf6f-7ed1284befb4",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C55",
+      "claim": "CdiA promotes adhesion on epithelial cells in A. baumannii.",
+      "claim_type": "EXPLICIT",
+      "source": "CdiA promotes adhesion on epithelial cells in A. baumannii, plays a major role in intracellular survival and intracellular escape in Neisseria meningitidis, increases the virulence of Pseudomonas aeruginosa in infection models, and controls biofilm establishment in human pathogens (Melvin et al., 2017; Mercy et al., 2016; P\u00e9rez et al., 2016; Roussin et al., 2019; Tal\u00e0 et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature describing multifunctional roles of CdiA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "20aee2aa-b0e7-4506-8122-dd201667c895",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C56",
+      "claim": "CdiA plays a major role in intracellular survival and intracellular escape in Neisseria meningitidis.",
+      "claim_type": "EXPLICIT",
+      "source": "CdiA promotes adhesion on epithelial cells in A. baumannii, plays a major role in intracellular survival and intracellular escape in Neisseria meningitidis, increases the virulence of Pseudomonas aeruginosa in infection models, and controls biofilm establishment in human pathogens (Melvin et al., 2017; Mercy et al., 2016; P\u00e9rez et al., 2016; Roussin et al., 2019; Tal\u00e0 et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature describing multifunctional roles of CdiA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "d782473b-6feb-4903-8543-62bf4c7a10e4",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C57",
+      "claim": "CdiA increases the virulence of Pseudomonas aeruginosa in infection models.",
+      "claim_type": "EXPLICIT",
+      "source": "CdiA promotes adhesion on epithelial cells in A. baumannii, plays a major role in intracellular survival and intracellular escape in Neisseria meningitidis, increases the virulence of Pseudomonas aeruginosa in infection models, and controls biofilm establishment in human pathogens (Melvin et al., 2017; Mercy et al., 2016; P\u00e9rez et al., 2016; Roussin et al., 2019; Tal\u00e0 et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature describing multifunctional roles of CdiA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "e775227b-1f08-48c8-8233-ea8c9e4c6bed",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C58",
+      "claim": "CdiA controls biofilm establishment in human pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "CdiA promotes adhesion on epithelial cells in A. baumannii, plays a major role in intracellular survival and intracellular escape in Neisseria meningitidis, increases the virulence of Pseudomonas aeruginosa in infection models, and controls biofilm establishment in human pathogens (Melvin et al., 2017; Mercy et al., 2016; P\u00e9rez et al., 2016; Roussin et al., 2019; Tal\u00e0 et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature describing multifunctional roles of CdiA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "e661250f-2edc-4982-94e1-2596b303757f",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C59",
+      "claim": "Both CDI systems investigated in this study have been shown to be constitutively active.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CDI systems investigated in our study have been shown to be constitutively active, and a secretome analysis of Acinetobacter spp. revealed that CdiA is one of the most abundantly secreted proteins (Aoki et al., 2005; Harding et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites literature showing constitutive activity of the CDI systems studied.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "5f9a1523-80e1-4fa2-8d5a-f32cb3c977b7",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C60",
+      "claim": "CdiA is one of the most abundantly secreted proteins in Acinetobacter spp.",
+      "claim_type": "EXPLICIT",
+      "source": "Both CDI systems investigated in our study have been shown to be constitutively active, and a secretome analysis of Acinetobacter spp. revealed that CdiA is one of the most abundantly secreted proteins (Aoki et al., 2005; Harding et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a secretome analysis showing CdiA abundance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "03ad828b-9056-4148-b3d6-c678e2ce1256",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C61",
+      "claim": "The binding of substrate CdiA to the POTRA domains could provide the additional 7.5 kcal/mol necessary to fully extract the helix H1.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes may be induced by the presence of the substrate CdiA, the binding of which to the POTRA domains could provide the additional 7.5 kcal/mol necessary to fully extract the helix (Figure 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the role of substrate binding based on the PMF calculations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "fd632560-913b-4e75-a042-69bf3cbf6fcd",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C62",
+      "claim": "The flexibility of the \u03b21\u2013\u03b216 interface mediated by the DxxG motif plays an essential role in the transport mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The flexibility of the \u03b21\u2013\u03b216 interface mediated by the DxxG motif plays an essential role in the transport mechanism, where conformational changes in loop 1 display different interacting surfaces for H1 and possibly for the toxin substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws this conclusion from structural and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "7a018965-0363-49d5-ba45-e16ffc3fb1e6",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C63",
+      "claim": "Deletion of loop 2 does not affect the active conformation of FhaC.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results have been observed for FhaC, where deletion of this loop does not affect the active conformation, whereas insertion of several residues reduces the channel conductance and prevents substrate secretion (Baud et al., 2014; M\u00e9li et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work on FhaC loop 2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "3df6654a-3394-4b66-8c94-0e38435713a2",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C64",
+      "claim": "Insertion of several residues into loop 2 of FhaC reduces channel conductance and prevents substrate secretion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results have been observed for FhaC, where deletion of this loop does not affect the active conformation, whereas insertion of several residues reduces the channel conductance and prevents substrate secretion (Baud et al., 2014; M\u00e9li et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work on FhaC loop 2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "7755dac5-2d94-4833-bd8d-b31dc0282a05",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C65",
+      "claim": "Loop 2 has a common and conserved role in the TpsB transporter family, where the inward state can stabilize the resting conformation and the outward state facilitates the active conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest a common and conserved role of loop 2 in the TpsB transporter family, where the inward state can stabilize the resting conformation, and the outward state facilitate the active conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws this conclusion from comparison of CdiB and FhaC data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "dcbd795f-31ed-4cef-97a9-f266998387e6",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C66",
+      "claim": "H1 and the DxxG motif are both present in CdiB/TpsB transporters but absent in BamA/TamA proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "H1 and the DxxG motif are both present in CdiB/TpsB transporters, but absent in BamA/TamA proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this structural distinction between protein families.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "0bacdd57-f5cb-453e-b06d-20b1858f760d",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C67",
+      "claim": "H1 and the DxxG motif contribute to unidirectional secretion where the lumen of the \u03b2-barrel is accessible or inaccessible at different stages of the secretion cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that they contribute to unidirectional secretion where the lumen of the \u03b2-barrel is accessible or inaccessible at different stages of the secretion cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this hypothesis based on structural and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "c206450a-0e41-4d73-a6ec-91faf05ae26c",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C68",
+      "claim": "The position of loop 6 and interactions with \u03b213 are conserved in all Omp85 proteins, suggesting a common function.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of loop 6 and interactions with \u03b213 are conserved in all Omp85 proteins, suggesting a common function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers functional conservation from structural conservation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "50fa65f7-139d-4305-bce9-2c209ae57608",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "claim_id": "C69",
+      "claim": "Loop 6 can stabilize different conformational states of the \u03b2-barrel at the \u03b21\u2013\u03b216 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to possibly interacting with the substrate upon entering the \u03b2-barrel lumen, our results suggest that loop 6 can also stabilize different conformational states of the \u03b2-barrel at the \u03b21\u2013\u03b216 interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this function based on structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "519e566b-56a4-4cb9-b0a4-0bb1c0ae0801",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The first crystal structures of CdiB transporters from A. baumannii and E. coli were determined at 2.4 \u00c5 and 2.6 \u00c5 resolution, respectively. Despite only 21% sequence identity, both adopt a common TpsB fold with a 16-stranded \u03b2-barrel, two POTRA domains, and an N-terminal \u03b1-helix (H1) inserted into the barrel lumen that occludes the pore along with extracellular loop 6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 and C51 are well-supported by crystallographic data presented in Table 1 and structural descriptions in the Results section. The resolution values, sequence identity, and structural features are explicitly stated and supported by deposited PDB structures (6WIL and 6WIM). This represents the first structural characterization of CdiB transporters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "28f1b8d2-d891-4c4a-8c84-0b3641c72b6b",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A conserved DxxG motif was identified on strand \u03b21 through structure-based sequence alignment of TpsB transporters. This motif is present in all TpsB/CdiB transporters but absent in BamA/TamA proteins, distinguishing these two Omp85 subfamilies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, and C66 are supported by sequence alignment data (Supplementary file 1) and structural analysis. The identification of this motif as a distinguishing feature between TpsB and BamA/TamA proteins is based on comparative structural and sequence analysis across multiple family members.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "a9825e13-cfe8-4bee-ab10-f458387da0dd",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "H1 adopts different conformations in the two CdiB structures, with angles of 10\u00b0 (CdiBAb) versus 25\u00b0 (CdiBEc) relative to the \u03b2-barrel and different vertical positions (4.8 \u00c5 difference). Targeted molecular dynamics simulations demonstrate that H1 can stably adopt either orientation in both systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 are supported by crystallographic measurements (specific angles and distances) and TMD simulations showing RMSD stability (Figure 2\u2014figure supplement 1). The structural data provide quantitative evidence for conformational differences, and computational simulations validate the stability of alternative conformations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "84dd24e9-59b1-4bd3-b2f3-f6efd05ce63d",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loop 6 sits in the interior of the \u03b2-barrel and partially occludes it. Its conformation is maintained by a conserved salt bridge between an arginine from the (V/I)RG(F/Y) motif at the tip of L6 and an aspartate on strand \u03b213 from the (F/G)xDxG motif, an interaction observed in all Omp85 structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C13, and C46 are supported by structural data from the CdiB structures and comparison with other Omp85 family members. The conserved salt bridge is explicitly described and cited as a common feature across the superfamily, providing strong support for this structural observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "bdf98f89-86e1-4860-9ec4-657f85d63b59",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CdiB transporters specifically secrete their cognate CdiA proteins and are not interchangeable between species, despite 50% sequence similarity between CdiA-Nt constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C14 is supported by experimental secretion assay data (Figure 4A) showing that cross-species combinations do not result in CdiA secretion. The specificity is demonstrated through multiple negative controls where mismatched CdiB-CdiA pairs fail to secrete substrate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "7832b4fa-9ebd-469a-b79c-907498d57c14",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Deletion of H1 alone reduces CdiB levels and CdiA-Nt secretion, suggesting H1 is important for CdiB folding, membrane insertion, and/or stability. However, deletion of both H1 and the linker restores CdiB presence and CdiA-Nt secretion, indicating these elements are not essential for secretion but are important for CdiB stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are supported by deletion mutant data (Figure 4B) showing differential effects of H1 deletion versus H1+linker deletion. The interpretation that H1 affects stability rather than being essential for secretion is logically derived from the observation that the double deletion rescues function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "ccaaedb4-eecf-4bdf-b9ae-8d25898f3050",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cross-linking \u03b21 and \u03b216 with disulfide bonds greatly impairs substrate secretion, but reduction of the disulfide rescues secretion. This demonstrates that flexibility of \u03b21 and the DxxG motif facilitates secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by cysteine cross-linking experiments (Figure 5A) showing impaired secretion with disulfide formation and rescue upon reduction. Time-course experiments (Figure 5B) confirm that the cross-linking effect is on secretion rather than CdiB biogenesis. The conclusion about flexibility is well-supported by the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "8b4b5873-9e55-4151-a528-adac0fe7dfa1",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The GGAG substitution in loop 2 enhances secretion activity, with CdiA detected after 30 min compared to 60 min for wildtype. This suggests that increasing loop 2 flexibility enhances secretion activity and may promote the active conformation of the \u03b2-barrel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C23 are supported by mutant secretion assay data (Figure 6A, B) showing accelerated secretion kinetics. The interpretation that flexibility enhancement promotes activity is reasonable given the GGAG substitution removes bulky sidechains. However, the mechanism remains somewhat speculative ('may promote').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "c5dde469-1cd7-4554-99d8-fa15adb231a4",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The S226E mutation delays secretion and reduces CdiA levels, but combining S226E with R460G or H1-linker deletion restores secretion to near wildtype levels. This demonstrates that interactions between DxxG and loop 6 affect CdiA secretion and that flexibility in this region is essential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by point mutant and double mutant data (Figure 6A, C). The rescue of the S226E phenotype by suppressor mutations provides strong evidence for the functional importance of DxxG-loop 6 interactions. The conclusion about flexibility is well-supported by the mutational analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "6e000207-1658-4a87-b0b0-782486e4e374",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "During equilibrium MD simulations, CdiBAb shows rupture of H-bonds between \u03b21 and \u03b216 with the DxxG motif converting from \u03b2-strand to loop, while CdiBEc maintains a stable conformation with the DxxG motif tilted inward. Water molecules penetrate into the membrane to keep the DxxG motif solvated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by 500-ns equilibrium MD simulations (three replicates per system) with explicit observations of structural dynamics (Video 3, Figure 7\u2014figure supplement 1C). The differential behavior between CdiBAb and CdiBEc is consistently observed across replicas, providing robust computational evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "c912341a-d408-4bb0-b555-b086ee6b3d2d",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Potential of mean force calculations for CdiBEc reveal an intermediate state during helix extraction that is 7.5 kcal/mol lower in energy than the crystal structure minimum, separated by a 13 kcal/mol barrier. This intermediate state is supported by earlier PELDOR spectroscopy data on the related transporter FhaC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C31 are supported by extensive PMF calculations (235 ns/window, 10.1 \u03bcs total; Figure 7) with bootstrap error estimates. The existence of an intermediate is corroborated by independent experimental data (PELDOR) on a related system, strengthening the computational finding. However, the authors acknowledge that POTRA domains were omitted for computational efficiency, which may affect absolute energies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "625acc0d-962d-4a88-a030-b4c018f88b27",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Steered MD simulations show that CdiBEc requires less work to extract H1 compared to CdiBAb, especially from \u221225 to \u221235 \u00c5. A strong electrostatic interaction between H1 and the DxxG motif or loop 2 in CdiBAb requires large force to disrupt, and deletion of loop 2 reduces the force required for H1 extraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by SMD simulations with multiple replicas (Figure 7\u2014figure supplement 2B, 3). The force profiles show clear differences between species and mutants. The identification of specific electrostatic interactions provides mechanistic insight, though SMD is a non-equilibrium method with inherent limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "7060d7ae-5527-43d5-b91f-9c9196868393",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Structural comparison reveals that FhaC and CdiBEc are virtually identical, while CdiBAb shows an alternate conformation. The high structural similarity between FhaC and CdiB transporters suggests that research on FhaC is relevant to CDI secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by structural superposition (Figure 3\u2014figure supplement 1) showing near-identity between FhaC and CdiBEc. The inference that FhaC research is relevant to CDI is reasonable given the structural conservation, though functional differences may still exist.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "c698062e-35b7-4fb9-9317-9c3c14fb3bee",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The flexibility of the \u03b21\u2013\u03b216 interface mediated by the DxxG motif plays an essential role in transport, with loop 2 having a conserved role where the inward state stabilizes the resting conformation and the outward state facilitates the active conformation. Loop 6 can stabilize different conformational states at the \u03b21\u2013\u03b216 interface. H1 and DxxG may contribute to unidirectional secretion by controlling barrel lumen accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C65, C67-C69 integrate structural, functional, and computational data to propose mechanistic models. The conclusions are well-supported by the combination of cross-linking experiments, mutational analysis, MD simulations, and comparison with FhaC data. However, some aspects remain hypothetical ('may contribute'), appropriately reflecting the current state of knowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background information on CDI systems, CdiA/CdiB proteins, and the Omp85 superfamily is presented, including the discovery of CDI in E. coli EC93, the domain organization of CdiA proteins, the classification of Omp85 proteins into BamA/TamA and TpsB subfamilies, and the prior structural characterization of only one TpsB protein (FhaC).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C50 represent background knowledge appropriately cited from the literature. These claims establish context for the current work and are supported by appropriate citations. They are not novel findings but rather accurate summaries of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "e0f793a6-a220-4fb2-b6d8-402b6edc81cf",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CdiA proteins have multifunctional roles beyond toxin delivery, including promoting adhesion in A. baumannii, facilitating intracellular survival in N. meningitidis, increasing virulence in P. aeruginosa, and controlling biofilm establishment. The CDI systems studied are constitutively active, and CdiA is one of the most abundantly secreted proteins in Acinetobacter spp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 are supported by appropriate citations to prior literature. These claims provide biological context for the importance of understanding CdiB structure and function. The statements accurately represent findings from cited studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "4857ef80-4684-4b76-a5e7-ca3aa84fe8cd",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The binding of substrate CdiA to the POTRA domains could provide the additional 7.5 kcal/mol necessary to fully extract helix H1 from the barrel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C61 is speculative, as acknowledged by the conditional language ('could provide'). While the 7.5 kcal/mol value comes from PMF calculations, the role of substrate binding is hypothetical since the simulations did not include substrate. The POTRA domains were also omitted from PMF calculations for computational efficiency, adding uncertainty to the energetic estimates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    },
+    {
+      "id": "1a6f07d8-860d-45b2-9532-4912c0b19d8d",
+      "content_id": "2ee515bc-7197-4c6f-a129-f792ff35cdbb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Previous studies on FhaC showed that deletion of loop 2 does not affect the active conformation, whereas insertion of residues reduces channel conductance and prevents substrate secretion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63 and C64 accurately cite prior work on FhaC loop 2 function. These claims provide comparative context for interpreting the CdiB loop 2 results and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:45:50.527133Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2d9e21be-b6f2-4bea-b6b3-afc0a12f75cf",
+      "result_id": "519e566b-56a4-4cb9-b0a4-0bb1c0ae0801"
+    },
+    {
+      "claim_id": "aa719058-28ae-4b44-9b78-71b764f8d06c",
+      "result_id": "519e566b-56a4-4cb9-b0a4-0bb1c0ae0801"
+    },
+    {
+      "claim_id": "1dfdeabd-b6f3-4e9f-a133-e989f337a427",
+      "result_id": "519e566b-56a4-4cb9-b0a4-0bb1c0ae0801"
+    },
+    {
+      "claim_id": "e7ef9af5-4c98-40d7-acf6-1262c4b5f3fa",
+      "result_id": "519e566b-56a4-4cb9-b0a4-0bb1c0ae0801"
+    },
+    {
+      "claim_id": "59151411-c63e-44b2-9bad-da3aa4a38edc",
+      "result_id": "519e566b-56a4-4cb9-b0a4-0bb1c0ae0801"
+    },
+    {
+      "claim_id": "74d128f0-5040-434b-9e4e-befd4a16e59a",
+      "result_id": "519e566b-56a4-4cb9-b0a4-0bb1c0ae0801"
+    },
+    {
+      "claim_id": "5af2bf96-c1e0-46f3-9b5f-9f6ef9b6191d",
+      "result_id": "28f1b8d2-d891-4c4a-8c84-0b3641c72b6b"
+    },
+    {
+      "claim_id": "70d1d1ec-2ec4-4d79-940f-d1b7e1e6e833",
+      "result_id": "28f1b8d2-d891-4c4a-8c84-0b3641c72b6b"
+    },
+    {
+      "claim_id": "dcbd795f-31ed-4cef-97a9-f266998387e6",
+      "result_id": "28f1b8d2-d891-4c4a-8c84-0b3641c72b6b"
+    },
+    {
+      "claim_id": "5535e02c-e001-4b22-aeac-3cb041ef1ebb",
+      "result_id": "a9825e13-cfe8-4bee-ab10-f458387da0dd"
+    },
+    {
+      "claim_id": "62d68071-eefa-46d8-9517-4a1ee1c3cfb5",
+      "result_id": "a9825e13-cfe8-4bee-ab10-f458387da0dd"
+    },
+    {
+      "claim_id": "fbb784e1-7761-4093-9510-385a4314479e",
+      "result_id": "a9825e13-cfe8-4bee-ab10-f458387da0dd"
+    },
+    {
+      "claim_id": "d8051ce5-16bd-4d78-a3bc-d9e2959abc71",
+      "result_id": "a9825e13-cfe8-4bee-ab10-f458387da0dd"
+    },
+    {
+      "claim_id": "f5517be6-5253-4e4d-bdfd-ae5ca08d8e5c",
+      "result_id": "84dd24e9-59b1-4bd3-b2f3-f6efd05ce63d"
+    },
+    {
+      "claim_id": "0b768cb0-4458-4c1c-81a7-b0beca4f87b7",
+      "result_id": "84dd24e9-59b1-4bd3-b2f3-f6efd05ce63d"
+    },
+    {
+      "claim_id": "bdb00664-c4fa-4d8d-bbee-578f26fa6386",
+      "result_id": "84dd24e9-59b1-4bd3-b2f3-f6efd05ce63d"
+    },
+    {
+      "claim_id": "87abce58-fbf2-44b4-8b8a-697f9af7ddbc",
+      "result_id": "bdf98f89-86e1-4860-9ec4-657f85d63b59"
+    },
+    {
+      "claim_id": "e05319ee-a5e2-4638-9e60-63e4db0781b5",
+      "result_id": "7832b4fa-9ebd-469a-b79c-907498d57c14"
+    },
+    {
+      "claim_id": "de6cf19e-8091-4077-bfe0-70cb1648a8d2",
+      "result_id": "7832b4fa-9ebd-469a-b79c-907498d57c14"
+    },
+    {
+      "claim_id": "f64f5d69-283e-4658-9411-075525ff98d6",
+      "result_id": "7832b4fa-9ebd-469a-b79c-907498d57c14"
+    },
+    {
+      "claim_id": "23bd7d6d-a0b3-4927-828f-072d141b0c0a",
+      "result_id": "7832b4fa-9ebd-469a-b79c-907498d57c14"
+    },
+    {
+      "claim_id": "a5d2b881-920d-4334-8444-dea6504b85aa",
+      "result_id": "ccaaedb4-eecf-4bdf-b9ae-8d25898f3050"
+    },
+    {
+      "claim_id": "8ca77e1f-d3e9-475e-a52d-d4f8e9eda3b1",
+      "result_id": "ccaaedb4-eecf-4bdf-b9ae-8d25898f3050"
+    },
+    {
+      "claim_id": "cd4fd3e9-876d-4543-9111-4808b9e5942a",
+      "result_id": "ccaaedb4-eecf-4bdf-b9ae-8d25898f3050"
+    },
+    {
+      "claim_id": "f7bf1e10-a651-43c5-a955-15c088fcb674",
+      "result_id": "8b4b5873-9e55-4151-a528-adac0fe7dfa1"
+    },
+    {
+      "claim_id": "8ad73bbf-099f-4b6d-adb0-96dd55381f0d",
+      "result_id": "8b4b5873-9e55-4151-a528-adac0fe7dfa1"
+    },
+    {
+      "claim_id": "9146384c-2206-42e1-8efe-500a1d59639c",
+      "result_id": "c5dde469-1cd7-4554-99d8-fa15adb231a4"
+    },
+    {
+      "claim_id": "c59adf60-aa72-4961-a236-6918fb2a4e45",
+      "result_id": "c5dde469-1cd7-4554-99d8-fa15adb231a4"
+    },
+    {
+      "claim_id": "0cc0fbbb-b86a-4412-82a1-a26b520cce44",
+      "result_id": "c5dde469-1cd7-4554-99d8-fa15adb231a4"
+    },
+    {
+      "claim_id": "7dec8b75-d16b-4657-a367-679204c6d7c1",
+      "result_id": "6e000207-1658-4a87-b0b0-782486e4e374"
+    },
+    {
+      "claim_id": "648df648-a645-4180-8182-b1cc80db2412",
+      "result_id": "6e000207-1658-4a87-b0b0-782486e4e374"
+    },
+    {
+      "claim_id": "519dca89-024e-4bfd-95c6-421d757b3de8",
+      "result_id": "6e000207-1658-4a87-b0b0-782486e4e374"
+    },
+    {
+      "claim_id": "f4311fc7-c2e3-4625-8c38-619e091b6973",
+      "result_id": "c912341a-d408-4bb0-b555-b086ee6b3d2d"
+    },
+    {
+      "claim_id": "a6d5182d-c23b-4480-a2d5-4b10c189f258",
+      "result_id": "c912341a-d408-4bb0-b555-b086ee6b3d2d"
+    },
+    {
+      "claim_id": "acd452fd-e9fa-40cd-bdae-21e920b1585d",
+      "result_id": "625acc0d-962d-4a88-a030-b4c018f88b27"
+    },
+    {
+      "claim_id": "1f1c34cf-3a1d-4834-b1b5-1e445b8de152",
+      "result_id": "625acc0d-962d-4a88-a030-b4c018f88b27"
+    },
+    {
+      "claim_id": "8bcf7c99-40cb-4c4f-82a5-e7d6b5db2033",
+      "result_id": "625acc0d-962d-4a88-a030-b4c018f88b27"
+    },
+    {
+      "claim_id": "31cefc9b-6956-4df3-8ec0-030596942314",
+      "result_id": "7060d7ae-5527-43d5-b91f-9c9196868393"
+    },
+    {
+      "claim_id": "18bafec4-7665-470d-931c-e30b92ba4210",
+      "result_id": "7060d7ae-5527-43d5-b91f-9c9196868393"
+    },
+    {
+      "claim_id": "85c13d93-44c3-42e3-9300-858f11fb500f",
+      "result_id": "7060d7ae-5527-43d5-b91f-9c9196868393"
+    },
+    {
+      "claim_id": "fd632560-913b-4e75-a042-69bf3cbf6fcd",
+      "result_id": "c698062e-35b7-4fb9-9317-9c3c14fb3bee"
+    },
+    {
+      "claim_id": "7755dac5-2d94-4833-bd8d-b31dc0282a05",
+      "result_id": "c698062e-35b7-4fb9-9317-9c3c14fb3bee"
+    },
+    {
+      "claim_id": "0bacdd57-f5cb-453e-b06d-20b1858f760d",
+      "result_id": "c698062e-35b7-4fb9-9317-9c3c14fb3bee"
+    },
+    {
+      "claim_id": "c206450a-0e41-4d73-a6ec-91faf05ae26c",
+      "result_id": "c698062e-35b7-4fb9-9317-9c3c14fb3bee"
+    },
+    {
+      "claim_id": "50fa65f7-139d-4305-bce9-2c209ae57608",
+      "result_id": "c698062e-35b7-4fb9-9317-9c3c14fb3bee"
+    },
+    {
+      "claim_id": "dc1f214d-36b5-4ce8-a651-28a8ccc92077",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "324f741e-7b86-4bc6-8ddb-298db9be8500",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "133fb368-8f1a-411d-9d38-86ee7f5f89f8",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "1ff38a7e-8083-42c4-9223-f25487bf8e72",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "998255b6-bb82-4e28-bfa0-d986781e0134",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "89353ecd-e965-45e2-940e-a8772fdf1e2b",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "a486cb6f-abe4-4216-8a85-3c156bab7d9c",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "f3dfb66b-744c-47bc-83aa-b3ae16db143c",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "736ed961-644e-45f5-b812-4072ae53d9dc",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "58691518-d4e2-4d5f-833e-3beace916424",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "0abcecb4-1982-42fc-86bf-616041cc616a",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "c3feb446-1825-46da-add1-2fcddf271d43",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "760a09db-9f31-4bd6-a329-1880d4931f4d",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "f57e8089-a7dd-44fa-80be-397d9fc462c0",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "79ae4ecb-6e95-47e0-933e-bb96a466bc9d",
+      "result_id": "f4f5e4a9-1e44-4c4c-86a3-c7c7bb017e17"
+    },
+    {
+      "claim_id": "2a4648bb-8d45-49d4-bf6f-7ed1284befb4",
+      "result_id": "e0f793a6-a220-4fb2-b6d8-402b6edc81cf"
+    },
+    {
+      "claim_id": "20aee2aa-b0e7-4506-8122-dd201667c895",
+      "result_id": "e0f793a6-a220-4fb2-b6d8-402b6edc81cf"
+    },
+    {
+      "claim_id": "d782473b-6feb-4903-8543-62bf4c7a10e4",
+      "result_id": "e0f793a6-a220-4fb2-b6d8-402b6edc81cf"
+    },
+    {
+      "claim_id": "e775227b-1f08-48c8-8233-ea8c9e4c6bed",
+      "result_id": "e0f793a6-a220-4fb2-b6d8-402b6edc81cf"
+    },
+    {
+      "claim_id": "e661250f-2edc-4982-94e1-2596b303757f",
+      "result_id": "e0f793a6-a220-4fb2-b6d8-402b6edc81cf"
+    },
+    {
+      "claim_id": "5f9a1523-80e1-4fa2-8d5a-f32cb3c977b7",
+      "result_id": "e0f793a6-a220-4fb2-b6d8-402b6edc81cf"
+    },
+    {
+      "claim_id": "03ad828b-9056-4148-b3d6-c678e2ce1256",
+      "result_id": "4857ef80-4684-4b76-a5e7-ca3aa84fe8cd"
+    },
+    {
+      "claim_id": "7a018965-0363-49d5-ba45-e16ffc3fb1e6",
+      "result_id": "1a6f07d8-860d-45b2-9532-4912c0b19d8d"
+    },
+    {
+      "claim_id": "3df6654a-3394-4b66-8c94-0e38435713a2",
+      "result_id": "1a6f07d8-860d-45b2-9532-4912c0b19d8d"
+    }
+  ],
+  "comparisons": []
+}

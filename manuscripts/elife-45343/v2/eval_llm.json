@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "E. faecium and E. faecalis-sagA express comparable levels of SagA protein in cell pellets and supernatants, while E. faecalis lacks SagA expression. E. faecium exhibits the fastest growth rate and unique cell wall morphology compared to E. faecalis. E. faecalis-sagA shows decreased growth rate, increased cell width, and cell wall deformations compared to E. faecalis, suggesting SagA expression affects cell wall composition and integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are directly supported by western blot, growth curve, and electron microscopy data shown in Figure 1. Claim C37 is appropriately qualified as speculative ('may regulate') based on the morphological observations. The data demonstrate clear phenotypic differences associated with SagA expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "E. faecium peptidoglycan contains more non-crosslinked muropeptides including GlcNAc-MDP compared to E. faecalis. E. faecalis-sagA shows decreased abundance of specific muropeptide fragments compared to E. faecalis. Whole genome sequencing confirmed sagA insertion and revealed 39 genes with mutations, but none of the high-coverage non-synonymous mutations were in cell wall synthesis genes, suggesting SagA expression is responsible for the observed changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by LC-MS peptidoglycan analysis (Figure 2a) and whole genome sequencing data. The genomic analysis appropriately controls for off-target mutations, strengthening the conclusion that SagA expression drives the observed peptidoglycan changes. The data are consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "E. faecium at MOI=1 activates NOD2 but not NOD1, while E. faecalis and E. faecalis-sagA require 1000-fold higher bacterial load (MOI=10\u00b3) to activate NOD2. This selective NOD2 activation is consistent with Lys-type peptidoglycan specificity. E. faecium shows enhanced bacterial adhesion/internalization compared to E. faecalis and E. faecalis-sagA in gentamicin protection assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by NOD1/NOD2 activation assays (Figure 2b) and gentamicin protection assays (Figure 2c). The 1000-fold difference in bacterial load required for NOD2 activation is substantial and statistically significant. The interpretation regarding Lys-type peptidoglycan specificity (C45) is appropriately supported by citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "SagA contains an N-terminal signal sequence, predicted coiled-coil domain, Ser/Thr-rich linker, and C-terminal NlpC/p60 peptidase domain. SagA is unique to E. faecium with no clear homologs (>25% identity) in E. faecalis, but shares significant similarity with NlpC/p60 orthologs in other E. faecium strains. The NlpC/p60 domain and conserved active site residues are required for SagA-mediated protection in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by bioinformatic analysis (Figure 3a, supplements 1-2) and sequence alignments. Claim C50 is supported by citation to prior work (Rangan et al., 2016). The bioinformatic predictions are standard and appropriately interpreted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C64",
+      "C65"
+    ],
+    "result": "The SagA-NlpC/p60 domain structure was solved to 2.4 \u00c5 resolution by X-ray crystallography. The structure contains typical cysteine peptidase fold features with dimensions of 32.5 \u00d7 30 \u00d7 23 \u00c5 and shares significant structural homology with other NlpC/p60 hydrolases (RMSD 1.6-2.0 \u00c5). The catalytic triad (C443, H494, H506) is located in a putative substrate-binding groove composed of negatively charged residues. The most conserved residues are in the active site. The protein is monomeric by gel filtration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56, C64-C65 are well-supported by X-ray crystallography data (Figure 3, PDB 6B8C) with appropriate resolution (2.4 \u00c5) and structural analysis. The RMSD values indicate good structural similarity to homologs. Electron density maps (Figure 3e) confirm the catalytic triad. The structural characterization is thorough and meets crystallographic standards.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Recombinant SagA constructs do not cleave intact E. faecium peptidoglycan, but the SagA-NlpC/p60 domain cleaves mutanolysin-digested peptidoglycan to generate small muropeptides. SagA-NlpC/p60 cleaves peptidoglycan from E. faecium and E. faecalis but not E. coli, suggesting specificity for L-Lys-type peptidoglycan. LC-MS analysis identified several enzymatic products including GlcNAc-MDP. Full-length SagA is less active than the truncated NlpC/p60 domain, suggesting the N-terminus may inhibit activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by in-gel fluorescence profiling and LC-MS data (Figure 3 supplements). The substrate specificity data (C59-C60) provide strong evidence for L-Lys-type preference. Claim C63 is appropriately qualified as speculative ('may inhibit') based on the activity difference. The requirement for mutanolysin pre-digestion suggests SagA acts on partially processed peptidoglycan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Molecular docking studies show the catalytic triad (C443, H494, H506) is well-positioned near the predicted peptide bond cleavage site. Two tryptophans (W433, W462) are predicted to serve as substrate-binding clamps. Single and double alanine mutants of W433 and W462 significantly abrogate hydrolytic activity, demonstrating these residues are crucial for SagA-NlpC/p60 peptidoglycan hydrolase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 present docking predictions appropriately qualified as computational models. Claim C68-C69 provide experimental validation through mutagenesis (Figure 4 supplement 2), which strongly supports the predicted roles of W433 and W462. The combination of computational and experimental approaches strengthens the conclusions about substrate binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "SagA-NlpC/p60 shows minimal activity with non-crosslinked disaccharide-tripeptide, -tetrapeptide, and -pentapeptide substrates. However, it readily cleaves crosslinked disaccharide-tripeptide-disaccharide-tetrapeptide to generate GlcNAc-MDP and GlcNAc-M7P with a specific activity of 67 \u00b1 7 nmol/min/mg at 37\u00b0C. This demonstrates SagA-NlpC/p60 is a cysteine endopeptidase that preferentially cleaves crosslinked peptidoglycan fragments at the peptide bond between D-iGln and L-Lys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are strongly supported by LC-MS analysis with purified substrates (Figure 4d-f, supplements). The substrate specificity is clearly demonstrated, and the specific activity measurement provides quantitative data. The C443A mutant serves as an appropriate negative control. The identification of cleavage site is supported by product analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "SagA-generated and synthetic GlcNAc-MDP activate NOD2 in a dose-dependent manner comparable to commercial MDP. Among SagA-generated muropeptides, GlcNAc-MDP most effectively activates NOD2, followed by GlcNAc-M7P, and both are more active than the crosslinked peptidoglycan substrate. This demonstrates that non-crosslinked muropeptides more effectively activate NOD2 in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 are supported by NOD2 activation assays using HEK-Blue cells (Figure 5a-b). The dose-response data are clear and include appropriate controls (commercial MDP, synthetic GlcNAc-MDP). The comparison between crosslinked and non-crosslinked muropeptides directly addresses the mechanism. Statistical significance is indicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Chromosomal insertion of SagA active site mutants into E. faecalis yielded low/undetectable protein expression. Plasmid-based expression in L. plantarum yielded comparable levels of wild-type SagA, signal sequence mutant (\u0394SS), and active site mutant (C443A) in cell lysates without altering L. plantarum peptidoglycan composition. In antibiotic-treated mice, L. plantarum expressing wild-type SagA protected against C. difficile pathogenesis, while \u0394SS and C443A mutants were not protective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by western blot data (Figure 5c), LC-MS peptidoglycan analysis (supplement 3), and in vivo C. difficile infection experiments (Figure 5d). The in vivo data include appropriate controls and statistical analysis (log-rank test). The requirement for both secretion and catalytic activity is clearly demonstrated. Sample sizes appear adequate (n=9-10 mice/group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C99",
+      "C100"
+    ],
+    "result": "E. faecium has unique peptidoglycan composition with smaller non-crosslinked muropeptides that more effectively activate NOD2 compared to E. faecalis. SagA is a NlpC/p60 endopeptidase that preferentially hydrolyzes crosslinked Lys-type peptidoglycan fragments to generate smaller muropeptides including GlcNAc-MDP. Both SagA secretion and endopeptidase activity are required for enhancing probiotic activity against C. difficile in vivo. The mechanism involves SagA-generated muropeptides activating NOD2 to trigger downstream signaling that enhances intestinal barrier function and host immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions of the manuscript and are supported by the collective experimental data including peptidoglycan analysis, structural studies, biochemical assays, NOD2 activation experiments, and in vivo infection models. The mechanistic model (C100, Figure 6) is well-supported by the data, though some aspects remain to be fully elucidated (e.g., downstream signaling details).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "E. faecium may be intrinsically more capable of interacting with mammalian cells and/or directly activating NOD2 despite both Enterococci having Lys-type peptidoglycan. SagA expression enhances protective activity of E. faecalis and L. plantarum against enteric pathogens in vivo, suggesting secreted SagA may prime or activate immune pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C90 are appropriately qualified as speculative ('may'). C88 is supported by the differential NOD2 activation and gentamicin protection data. C89 is supported by citations to prior work. These interpretations are reasonable but acknowledge uncertainty about the precise mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Full-length SagA purified from E. coli is active but the C-terminal NlpC/p60 domain is significantly more active in vitro. The SagA-NlpC/p60 domain is structurally similar to other bacterial hydrolases with similar active site residues. It shows endopeptidase activity that preferentially cleaves L-Lys-type crosslinked peptidoglycan, requiring conserved Cys443. W433 and W462 are essential for activity and may stabilize substrate binding. These tryptophans are highly conserved among SagA orthologs and other bacterial hydrolases. The molecular basis for Lys- vs DAP-type specificity remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C97 are supported by enzymatic activity data, structural analysis, and mutagenesis experiments. Claim C98 appropriately acknowledges a limitation in understanding substrate specificity determinants. The conservation analysis strengthens the functional importance of identified residues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C82"
+    ],
+    "result": "Prior work established that E. faecium and SagA enhance intestinal barrier function and pathogen tolerance in C. elegans and mice. E. faecium protection requires NOD2, MyD88, and RegIII\u03b3 but not adaptive immunity. SagA is one of the most abundant E. faecium secreted proteins and is essential for E. faecium growth. The protective activity is protease-sensitive and requires tol-1 signaling in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize prior work from the authors (Rangan et al., 2016; Pedicord et al., 2016) and others, providing essential context for the current study. The claims are appropriately supported by citations. This background establishes the biological significance and motivates the mechanistic investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The manuscript cites various examples of microbiota-host interactions including PSA from B. fragilis activating TLR2, butyrate from Clostridial strains inducing Tregs, and C. scindens generating secondary bile acids. E. faecium is ubiquitous in animal and human microbiota. Smaller muropeptide fragments enhance NOD2 activation, function as vaccine adjuvants, and enhance monocyte activity. NOD2 is important for immune signaling in host physiology and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide literature context and are appropriately supported by citations to prior work. They establish the broader significance of microbiota-derived molecules in host immunity and position the current work within this framework. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  }
+]

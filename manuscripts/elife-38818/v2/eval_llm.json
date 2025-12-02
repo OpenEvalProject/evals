@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C31",
+      "C48",
+      "C49",
+      "C50",
+      "C60"
+    ],
+    "result": "VTA dopamine neurons are activated by the unexpected omission of the aversive US during early extinction trials. Single-unit recordings showed 25% of putative DA neurons exhibited significant firing increases during US omission in early extinction (C24), but only 7.5% during late extinction (C26), with population-level significance only during early extinction (C31). Fiber photometry confirmed significant Ca2+ signal increases during early but not late extinction (C48-C50), and this signal magnitude correlated with extinction learning strength (C5, C54, C55, C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The convergent evidence from single-unit electrophysiology (C24, C26, C31) and cell-type-specific fiber photometry (C48-C50) strongly supports DA neuron activation during unexpected US omission. The temporal specificity (early vs. late extinction) and correlation with behavioral extinction (C54, C55) provide robust support. Controls for movement artifacts (C27, C28) and CS offset responses (C25, C52, C53) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C78"
+    ],
+    "result": "Optogenetic inhibition of DA neurons during US omission impairs fear extinction learning. The Paired-NpHR group showed significantly higher freezing during late extinction (C65) and early extinction recall (C67) compared to controls. The Unpaired-NpHR control group behaved comparably to eYFP controls (C68), demonstrating temporal specificity of the effect (C70). Groups showed comparable fear acquisition and initial extinction freezing (C71, C72), ruling out baseline differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optogenetic inhibition experiment provides strong causal evidence with appropriate controls. The paired vs. unpaired manipulation design (C68-C70) effectively demonstrates temporal specificity. Statistical analyses support group differences (C64, C65, C67), and control analyses rule out alternative explanations related to baseline fear memory differences (C71, C72) or nonspecific effects of inhibition (C69, C76, C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Optogenetic excitation of DA neurons during US omission accelerates fear extinction learning and strengthens extinction memory. The Paired-ChR2 group showed significantly lower freezing during early extinction (C84) and extinction recall (C91) compared to controls. The effect was temporally specific, as the Unpaired-ChR2 group behaved like eYFP controls (C85-C87). Fear renewal was comparable across groups (C93, C94), indicating the effect was on extinction rather than fear memory erasure (C95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optogenetic excitation experiment provides strong causal evidence for sufficiency with appropriate experimental design. The paired vs. unpaired manipulation (C85-C87) demonstrates temporal specificity. Statistical support is robust (C83, C84, C91). The fear renewal test (C93-C95) is a critical control that rules out alternative explanations related to memory reconsolidation impairment, strengthening the conclusion about enhanced extinction learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The magnitude of the DA neuron Ca2+ signal during early extinction correlates with extinction learning strength. Significant correlations were found between the Ca2+ signal during early extinction and both the change in freezing from early to late extinction (C54, Spearman's \u03c1=0.83, p=0.0037) and freezing levels during late extinction (C55, \u03c1=0.92, p=0.0003). No correlation was found with reward responses (C56), suggesting the relationship is specific to extinction learning rather than recording location variability (C57, C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analyses are well-designed with appropriate controls. The lack of correlation with reward responses (C56) is a clever control for ruling out technical artifacts related to recording location. However, the sample size (n=10) is modest for correlation analyses, and the correlations, while statistically significant, are based on individual differences that could be influenced by unmeasured variables. The convergent evidence from optogenetic manipulations strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The US omission signal is specific to putative DA neurons and not observed in putative non-DA neurons. No putative DA neurons showed selective decreases in firing during US omission (C29), while the dominant response was excitatory (C30). Putative non-DA neurons showed no significant changes in firing during US omission compared to habituation controls (C32, C33, C35), suggesting the excitation in DA neurons is not mediated by local GABA neuron disinhibition (C34, C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell-type specificity analysis is well-controlled with appropriate statistical comparisons between DA and non-DA populations. The classification of neurons as putative DA vs. non-DA based on firing rate and spike waveform (C148) is standard but has known limitations. The conclusion about lack of GABA involvement (C34) is reasonable but somewhat speculative, as the non-DA population is heterogeneous and may not exclusively represent local GABA neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C59"
+    ],
+    "result": "VTA DA neurons show diverse responses to the CS during extinction, with no significant population-level change. Only 5% of putative DA neurons showed CS-evoked excitation and 7.5% showed inhibition during early extinction (C38, C39), resulting in no significant average population response (C40, C59). The authors speculate this may be due to the non-discriminative fear conditioning paradigm used (C41), as discriminative tasks elicit stronger DA responses to the CS (C42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of CS responses is well-documented with appropriate population-level analyses. The lack of strong CS responses is clearly demonstrated (C38-C40, C59) and is consistent between single-unit and photometry data. The speculation about task design (C41, C42) is reasonable but remains untested in this study. This result provides important context for interpreting the US omission responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C149",
+      "C150"
+    ],
+    "result": "Fiber photometry with gCaMP6 in DAT-Cre mice provides cell-type-specific measurement of DA neuron activity. High overlap (97.1%) between gCaMP6 expression and TH immunostaining was observed (C43, C149). gCaMP6-expressing animals showed transient fluorescence increases absent in GFP controls (C44), and reward delivery caused large fluorescence increases consistent with known DA neuron responses (C45, C46). Both groups showed comparable fear conditioning behavior (C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation of the fiber photometry approach is thorough and appropriate. The histological specificity is high (C149), the functional validation with reward responses (C45, C46) is consistent with established DA neuron properties, and the behavioral controls (C47) rule out effects of viral expression on learning. This provides strong support for the validity of the photometry measurements used in the main experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C151",
+      "C152"
+    ],
+    "result": "NpHR-eYFP expression in DAT-Cre mice is specific to DA neurons and optical stimulation effectively inhibits DA neuron firing. High overlap (95.3%) between NpHR-eYFP expression and TH immunostaining was observed (C61, C151), and optical stimulation of NpHR inhibited DA neuron firing in awake mice (C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation of the optogenetic inhibition approach is appropriate with histological confirmation of cell-type specificity (C151) and functional validation of inhibition (C62). These are standard and necessary controls for optogenetic experiments. The specificity is comparable to the photometry experiments, supporting the validity of the manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C153",
+      "C154"
+    ],
+    "result": "ChR2-eYFP expression in DAT-Cre mice is specific to DA neurons and optical stimulation effectively induces DA neuron firing. High overlap (95.9%) between ChR2-eYFP expression and TH immunostaining was observed (C79, C153), and optical stimulation of ChR2 induced firing in DA neurons in awake mice (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation of the optogenetic excitation approach is appropriate with histological confirmation of cell-type specificity (C153) and functional validation of excitation (C80). These controls are standard and necessary for optogenetic experiments. The specificity is comparable to other viral expression experiments in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C148"
+    ],
+    "result": "Putative DA neurons were classified based on baseline firing rate (<10 Hz) and long-duration action potentials (>450 \u03bcs peak-to-peak). A total of 43 of 90 neurons on day 1 and 40 of 75 neurons on day 2 met these criteria (C22, C23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification criteria (C148) are standard in the field and based on well-established electrophysiological properties of DA neurons. However, this classification method has known limitations as it is probabilistic rather than definitive. The proportions classified as DA neurons (~48-53%) are reasonable for VTA recordings. While this approach is widely accepted, it introduces some uncertainty into the cell-type identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C10",
+      "C144"
+    ],
+    "result": "Fear extinction is critical for adaptive behavior, and deficits in extinction learning are hallmarks of anxiety disorders. Extinction represents new learning rather than erasure of the original fear memory (C8), and is mediated by a distributed brain network including the amygdala, medial prefrontal cortex, and hippocampus (C10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge in the field, supported by extensive prior literature as indicated by the citations. They provide appropriate context for the study but are not novel findings. The claims accurately represent the current understanding of fear extinction neurobiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C101",
+      "C102",
+      "C114"
+    ],
+    "result": "Prediction error theory provides a framework for understanding extinction learning. New learning is initiated when outcomes violate expectations (C12), generating prediction error signals (C13). DA neurons encode reward prediction errors (C16, C101, C102), increasing firing to unexpected or better-than-expected rewards (C17, C18). The omission of an aversive US during extinction can be conceptualized as a better-than-expected outcome (C15) that likely generates a prediction error signal (C14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established theoretical frameworks and prior empirical findings that motivate the current study. The prediction error framework (C12-C13) and DA neuron encoding of reward prediction errors (C16-C18, C101-C102) are well-supported by prior literature. The application to fear extinction (C14-C15) is a reasonable hypothesis that the current study tests. These provide appropriate theoretical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C110",
+      "C111",
+      "C112",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Prior evidence suggests DA involvement in fear extinction. DA release increases in the nucleus accumbens during fear extinction (C19, C134, C135), and DA receptor blockade in the NAc impairs extinction (C20, C137). Previous studies using partial reinforcement paradigms showed DA neuron responses to aversive US omission (C110), though these responses were smaller than observed in the current study (C111). Context valence influences DA responses to US omission (C112).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent prior literature and provide important context for interpreting the current findings. The comparison with previous studies (C111) is valuable for understanding the magnitude of effects observed. The discussion of methodological differences (C112) helps explain discrepancies with prior work. These claims are well-supported by citations and provide appropriate background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The optogenetic inhibition manipulation did not have nonspecific long-term effects on extinction learning ability or fear memory strength. The Paired-NpHR group showed normal extinction rates during extinction recall in the absence of inhibition (C75), suggesting no long-term impairment in extinction capacity (C76) or alteration of fear memory strength (C77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These control analyses are important for ruling out alternative explanations of the main findings. The statistical analysis (C75) supports the inference that the manipulation specifically affected extinction learning during the manipulation period rather than causing lasting deficits (C76, C77). However, these are inferences based on behavioral observations rather than direct measurements of memory strength or learning capacity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C113"
+    ],
+    "result": "DA neurons encode a prediction error-like signal during fear extinction learning. A subpopulation of putative DA neurons increased firing selectively during US omission (C104), specifically during early extinction when US omission was unexpected (C105), and not in non-DA neurons (C106). This suggests DA neurons encode a prediction error-like signal during extinction (C107) and signal better-than-expected outcomes more generally, including aversive event omission (C113).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation is well-supported by the experimental data showing temporal specificity (C105), cell-type specificity (C106), and consistency with prediction error theory. However, the characterization as a \"prediction error-like\" signal is an interpretation based on the temporal dynamics and theoretical framework rather than a direct demonstration of prediction error encoding. The claim is reasonable but involves some inferential leap from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The DA signal during US omission drives fear extinction learning, consistent with prior findings on DA's role in reinforcement learning. Bidirectional optogenetic manipulations demonstrated that the DA signal is necessary and sufficient for normal extinction (C117). These results are consistent with prior work on DA in reinforcement learning (C118) and recent studies showing DA involvement in extinction (C119, C120). Enhancement of DA signaling during extinction may be a potential therapeutic strategy for anxiety disorders (C121).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The causal conclusion (C117) is well-supported by the optogenetic experiments. The comparison with prior literature (C118-C120) appropriately contextualizes the findings. However, the therapeutic speculation (C121) is reasonable but goes beyond the data, as the study used normal mice and did not test any clinical models or therapeutic interventions. This is appropriately framed as a suggestion rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The DA signal occurs earlier than neuronal activation in other extinction-related brain regions. Fear extinction is mediated by the amygdala and infralimbic cortex (C122), where neuronal activation occurs during the CS and later than the DA signal (C123). Extinction neurons in the amygdala become CS-responsive late in extinction (C124, C125), and IL neurons show increased firing during extinction recall (C126). The DA signal occurs early in extinction (C127), supporting its role in initiating learning. DA signaling in these regions is important for extinction (C129), and DA neuron inhibition prevents extinction-related plasticity in these areas (C130), though the mechanism is unclear (C131).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal comparison with other brain regions (C123-C127) is well-supported by citations to prior literature and provides important context for the functional interpretation. The discussion of downstream mechanisms (C128-C131) appropriately acknowledges what is known and unknown. However, the temporal comparison is based on different studies using different methods, which limits the strength of the comparison. The conclusion about timing supporting an initiating role (C127) is reasonable but somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The projection target of DA neurons signaling US omission remains to be identified. DA neurons form functionally distinct subpopulations based on projection targets (C132). The NAc-projecting subpopulation is a candidate (C133), supported by evidence of DA release in NAc during early extinction (C134, C135) and NAc DA's role in relief learning and avoidance (C136, C137, C138). However, one study found that inhibiting DA terminals in NAc did not affect extinction learning (C139). Single-unit results show only a small subpopulation responds to US omission (C140), and identifying the relevant projection-defined subpopulation is an important future question (C141).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This discussion appropriately acknowledges the limitations of the current study and identifies important future directions. The evidence for NAc involvement is mixed (C134-C139), with some supporting and some contradicting evidence. The acknowledgment that only a subpopulation of DA neurons responds (C140) is important for interpreting the conflicting literature. The conclusion that this remains uncertain (C141) is appropriate given the current evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "Male C57BL/6N mice aged 3 months were used for electrophysiology experiments (C146), and male heterozygous DAT-Cre mice aged 3-6 months were used for photometry and optogenetics experiments (C147).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are straightforward methodological details that are clearly stated. The use of male mice only is a limitation for generalizability but is clearly reported. The age ranges are appropriate for the experiments. These details are necessary for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The AID system is not suitable for protein degradation in zebrafish because OsTIR1-mCherry induces degradation of sfGFP-mAID in a dose-dependent manner irrespective of auxin (IAA), and higher concentrations (\u226550 pg/embryo) cause embryo toxicity and lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 provide converging evidence that the AID system lacks auxin-dependence in zebrafish and shows toxicity at higher concentrations. The data from Figure 1D and supplements demonstrate dose-dependent degradation without IAA requirement and embryo deformation at high OsTIR1 levels, supporting the conclusion that this system is unsuitable in its current form.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "The ZIF-1/ZF1 tag degradation system only reduced sfGFP-ZF1 levels by 17%, indicating inefficient degradation in zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by quantitative data in Figure 1E,H showing minimal (17%) reduction in sfGFP-ZF1 levels. This result clearly demonstrates that the ZIF-1/ZF1 system does not efficiently degrade tagged proteins in zebrafish.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The Ab-SPOP/FP-tag degradation system efficiently degrades nuclear proteins (70% reduction) but not cytoplasmic proteins (13% reduction), making it unsuitable for non-nuclear protein degradation in zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by data in Figure 1F,H showing compartment-specific degradation efficiency. The results are consistent with prior work (Shin et al., 2015) and demonstrate clear differential degradation between nuclear and cytoplasmic compartments, supporting the conclusion about limited applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "zGrad, a modified version of deGradFP using the zebrafish fbxw11b F-box domain instead of Drosophila Slimb, efficiently degrades sfGFP-ZF1 by 89% in both cytoplasm and nucleus, with degradation observable as early as 2.5 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 demonstrate the development and validation of zGrad. The sequence homology-based identification of fbxw11b (C11) is reasonable, and the dramatic improvement from 19% (deGradFP) to 89% (zGrad) degradation (C12) with early onset (C13) is well-supported by Figure 1G,H data. This represents a key methodological advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "zGrad degrades nuclear H2A-EGFP with tissue-specific efficiency: 87% reduction in somites (onset 200 min, half-life 156 min) versus 22% reduction in primordium (onset 140 min, half-life 29 min), likely due to differences in H2A-EGFP expression levels and continued production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 present comprehensive kinetic data for H2A-EGFP degradation. The differential efficiency between tissues is well-documented with quantitative measurements. The explanation for tissue differences (C17) is reasonable given the supporting data on expression levels (C64-C65) and continued production (C66), though it remains somewhat speculative. The use of H2A-mCherry as an internal control is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "zGrad efficiently degrades transmembrane Cdh1-sfGFP with 79% reduction in the primordium, rapid onset (75 min), and short half-life (24 min). The Cdh1-sfGFP and Cdh1-TagRFP transgenes are functional as they rescue cdh1 mutant lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 demonstrate efficient degradation of a transmembrane protein. The functional validation of transgenes through rescue experiments (C20, Table 2) is critical and well-executed. The kinetic parameters are precisely measured using ratiometric analysis with Cdh1-TagRFP as control, providing strong evidence for rapid and efficient degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "zGrad degrades cytoplasmic Ctnna-Citrine by 58% with onset at 65 min and half-life of 19 min. The Ctnna-Citrine fusion is functional as homozygous fish are viable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 demonstrate degradation of a cytoplasmic protein. The functional validation through viability of homozygous fish (C24) is appropriate. However, the quantification is less robust than for other proteins as it lacks a ratiometric control (acknowledged by authors), which introduces some uncertainty in the absolute degradation efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "zGrad targets nuclear, cytoplasmic, and transmembrane proteins tagged with EGFP or Citrine for degradation, but does not degrade secreted GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 synthesize the compartment-specificity results. The data from multiple protein types (H2A, Cdh1, Ctnna) support broad applicability across compartments. The lack of secreted GFP degradation (C26) is an important limitation that is appropriately documented, suggesting the nanobody cannot access the secretory pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "zGrad-mediated depletion of Ctnna-Citrine causes cell detachment and embryonic lethality in maternal-zygotic and maternal embryos at 3-5 hpf, and in zygotic embryos at ~24 hpf, demonstrating that maternal Ctnna sustains development for approximately one day before zygotic Ctnna is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 demonstrate that zGrad can recapitulate genetic loss-of-function phenotypes and reveal temporal requirements. The phenotypes match published zygotic mutants (C30, Han et al., 2016). The inference about maternal contribution (C31) is well-supported by the ~20 hour delay between maternal and zygotic phenotypes. This represents a key functional validation of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Heat shock-induced zGrad expression depletes Cdh1-sfGFP in cdh1-/- embryos, causing skin shedding and rapid death, though penetrance is variable. This demonstrates that zGrad can cause loss-of-protein function and uncover phenotypes beyond initial essential requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 show that temporal induction of zGrad can reveal late-stage protein requirements. The incomplete penetrance (C33) is a limitation that the authors acknowledge, likely reflecting insufficient depletion in some embryos. Despite this, the result demonstrates proof-of-concept for uncovering post-gastrulation Cdh1 functions that cannot be studied in cdh1-/- mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Heat shock-induced zGrad transiently depletes Cxcr4b-EGFP, causing stalled primordium migration and rounded morphology at 90 min post-heat shock. Migration resumes after 120 min when Cxcr4b-EGFP is re-produced, demonstrating reversible protein loss-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 demonstrate temporal and reversible protein inactivation. The time-lapse data showing transient migration arrest followed by recovery provides strong evidence for reversibility. This is a key advantage of the system over genetic approaches and represents a novel phenotype distinct from complete loss-of-function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Tissue-specific expression of zGrad from the cxcr4b promoter efficiently depletes Cxcr4b-EGFP below detectable levels but only partially phenocopies the cxcr4b mutant migration defect (72.5% migration distance vs. near-zero in mutants), likely because zGrad expression levels are insufficient for complete functional depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 demonstrate tissue-specific protein depletion with partial phenocopy. The expression pattern validation (C39) and efficient depletion (C40) are well-documented. The partial phenotype (C41-C42) is appropriately interpreted as insufficient zGrad expression (C44), which is a reasonable explanation. The control showing zGrad alone doesn't affect migration (C43) is important. This demonstrates both the potential and limitations of tissue-specific approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "zGrad degrades transmembrane and cytoplasmic proteins with half-lives around 20 min, while nuclear H2A-EGFP degradation is slower (~2.5 hr), possibly due to histone stability and reduced nuclear degradation efficiency. Despite a 65-200 min delay for induction, zGrad is rapid enough for studying acute protein inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 synthesize the kinetic properties of zGrad. The differential degradation rates between compartments are well-documented. The explanation for slow H2A degradation (C48) cites relevant literature but remains somewhat speculative. The conclusion about suitability for acute inactivation studies (C50) is reasonable given the demonstrated kinetics, though the induction delay is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The mAID-nanobody fusion system (Daniel et al., 2018) overcomes AID system leakiness and provides auxin-dependent degradation in zebrafish, but requires expression of an additional component compared to zGrad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 appropriately cite and compare to contemporary work. The comparison is fair and acknowledges both advantages (auxin control) and disadvantages (additional component) of the alternative system. This contextualizes zGrad within the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "zGrad can be used to deplete maternal proteins and uncover early requirements, as demonstrated by maternal Ctnna depletion causing early severe cell-cell adhesion defects, potentially circumventing the need for germline replacement to generate maternal mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 propose and validate an application of zGrad. The maternal Ctnna depletion phenotype (C55, Figure 3) provides proof-of-concept. The proposed advantage over germline replacement (C54) is reasonable, though this remains a prospective application rather than a fully demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "zGrad requires sufficiently high expression levels for complete protein depletion and functional disruption. Amplification systems like Gal4/UAS or Tet-On could enhance tissue-specific expression. Combined with increasing GFP-tagged lines, zGrad should be useful for studying acute loss-of-function and potentially circumventing genetic compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C58 discuss limitations and future directions. The need for high zGrad expression (C56) is supported by the partial Cxcr4b phenotype. The proposed solutions (C57) are reasonable but not experimentally validated in this study. The potential to circumvent genetic compensation (C58) is speculative and would require direct experimental comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "zGrad recognizes multiple GFP variants (EGFP, sfGFP, Citrine) and degrades proteins tagged at N-terminus, C-terminus, or internally, with kinetics similar to other degron systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 characterize zGrad's versatility. Recognition of multiple GFP variants (C59) is demonstrated across experiments. Tag position flexibility (C60) is shown with different proteins, though systematic testing of all positions on the same protein was not performed. The kinetic comparison (C61) appropriately cites relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "zGrad efficiently degrades transmembrane, cytosolic, and nuclear GFP-tagged proteins in zebrafish in an inducible and reversible manner. Global depletion recapitulates genetic loss-of-function phenotypes, while local and temporal inactivation yields more restricted and novel phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 represent the main conclusions of the manuscript. These are well-supported by the comprehensive experimental data showing degradation across compartments (C14-C27), global phenotypes matching mutants (C28-C34), and restricted phenotypes from temporal/spatial control (C35-C45). This synthesis accurately reflects the body of evidence presented.",
+    "result_type": "MAJOR"
+  }
+]

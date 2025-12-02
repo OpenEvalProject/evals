@@ -1,0 +1,1524 @@
+{
+  "submission": {
+    "id": "d2a7cd86-50bb-4ce0-874e-e18614e85a28",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:18:28.971004Z",
+    "updated_at": "2025-12-02T17:18:28.971004Z"
+  },
+  "content": [
+    {
+      "id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "submission_id": "d2a7cd86-50bb-4ce0-874e-e18614e85a28",
+      "content_type": "manuscript",
+      "content_text": "# Fast and reversible neural inactivation in macaque cortex by optogenetic stimulation of GABAergic neurons\n\n## Authors\n\n- Abhishek De<sup>1</sup> ([ORCID: 0000-0002-2978-473X](https://orcid.org/0000-0002-2978-473X))\n- Yasmine El-Shamayleh<sup>3</sup> ([ORCID: 0000-0002-5396-2823](https://orcid.org/0000-0002-5396-2823))\n- Gregory D Horwitz<sup>2</sup> ([ORCID: 0000-0001-5130-5259](https://orcid.org/0000-0001-5130-5259)) \u2020\n\n### Affiliations\n\n1. Graduate Program in Neuroscience, University of Washington Seattle United States\n2. Department of Physiology and Biophysics, Washington National Primate Research Center, University of Washington Seattle United States\n3. Department of Neuroscience, Zuckerman Mind Brain Behavior Institute, Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOptogenetic techniques for neural inactivation are valuable for linking neural activity to behavior but they have serious limitations in macaques. To achieve powerful and temporally precise neural inactivation, we used an adeno-associated viral (AAV) vector carrying the channelrhodopsin-2 gene under the control of a Dlx5/6 enhancer, which restricts expression to GABAergic neurons. We tested this approach in the primary visual cortex, an area where neural inactivation leads to interpretable behavioral deficits. Optical stimulation modulated spiking activity and reduced visual sensitivity profoundly in the region of space represented by the stimulated neurons. Rebound firing, which can have unwanted effects on neural circuits following inactivation, was not observed, and the efficacy of the optogenetic manipulation on behavior was maintained across >1000 trials. We conclude that this inhibitory cell-type-specific optogenetic approach is a powerful and spatiotemporally precise neural inactivation tool with broad utility for probing the functional contributions of cortical activity in macaques.\n\n## Introduction\n\nA major goal of systems neuroscience is to understand how neural activity mediates behavior. Neural inactivation techniques are central to this endeavor (Wurtz, 2015). However, these techniques can have unintended consequences that complicate data interpretation (Abraham, 2008; Goold and Nicoll, 2010; Goshen et al., 2011; Sokolova and Mody, 2008; Stemmler and Koch, 1999; Turrigiano et al., 1998). For example, by impairing task performance, neural inactivation can cause animals to explore new task strategies for acquiring reward. This change in strategy may change the information flow through neural circuits. To avoid these complications, inactivation methods are needed that can be reversed more quickly than these circuit-level changes can occur.\n\nOptogenetics is the fastest method for reversible neural inactivation currently available. In rodents, optogenetic inactivation has revealed links between neural activity and behavior that would have been difficult to discover with traditional, slower inactivation methods based on injection of pharmacological agents, cortical cooling, or lesioning (Goshen et al., 2011; Hanks et al., 2015; Yartsev et al., 2018). Optogenetic inactivation has already been used in a few pioneering studies to perturb the behavior of macaque monkeys (Acker et al., 2016; Afraz et al., 2015; Cavanaugh et al., 2012; Fetsch et al., 2018). The approach taken in these studies was to reduce neuronal spiking by activating hyperpolarizing opsins (eNpHR, Arch, or Jaws). The directness of this approach facilitates the interpretation of behavioral effects. However, the behavioral effects produced this way have been small, perhaps because most promoters used in viral vectors drive expression in many neuronal types, and suppression of inhibitory neurons may counteract suppression of excitatory neurons.\n\nAn alternative approach, which has been successful in rodents, is to selectively activate inhibitory neurons with channelrhodopsin-2 (ChR2) (Cone et al., 2019; Glickfeld et al., 2013; Guo et al., 2014; Khan et al., 2018; McBride et al., 2019). This approach has two advantages. First, it is based on the opening of ion channels, which conduct more ions per photon absorbed than ion pumps. Second, it leverages the dense local connectivity and low synaptic failure rates of GABAergic neurons to suppress long-range excitatory signaling locally and robustly (Isaacson and Scanziani, 2011; Kubota et al., 2015; Packer and Yuste, 2011; Wiegert et al., 2017).\n\nTo test the efficacy of this approach for cortical inactivation in macaques, we injected area V1 of three rhesus monkeys\u00a0with\u00a0a viral vector containing a cell-type-specific promoter (AAV\u2013mDlx5/6\u2013ChR2) (Dimidschstein et al., 2016). In this study, we confirm the specificity of GABAergic neuronal transduction in macaque cortex and demonstrate that illumination of the injection site modulates spiking activity. We also show that illumination impairs visual sensitivity profoundly, reversibly, and reliably at the receptive fields of the illuminated neurons but not outside. We conclude that optogenetic stimulation of inhibitory neurons is a powerful method for inactivating regions of the macaque monkey brain with high spatial and temporal precision.\n\n## Results\n\n### Selectivity of opsin expression\n\nA previous study showed that an AAV vector carrying the gene for the fluorescent reporter, GFP, under the control of the mDlx5/6 enhancer, transduced V1 GABAergic neurons in a marmoset with 93% selectivity (Dimidschstein et al., 2016). To determine whether AAV\u2013mDlx5/6\u2013ChR2\u2013mCherry has similar selectivity in macaque, we injected V1 of one animal (monkey 1) and examined the tissue histologically (Figure 1 and Figure 1\u2014figure supplement 1). mCherry-positive cells had non-pyramidal morphologies, consistent with them being GABAergic. Similar histological results with this viral vector have been described in macaques previously (Scerra et al., 2019).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig1-v2.jpg)\n\n**Figure 1.:** (A) A histological section of V1 from monkey 1 stained with DAPI (blue) and antibodies against parvalbumin (green) and mCherry (red). Scale bar is 250 \u03bcm. The pial surface is indicated by the dashed gray curve and the border between layers 1 and 2/3 is indicated by the solid gray curve. The laminar specificity is an idiosyncrasy of this particular injection; see Figure 1\u2014figure supplement 1 for a histological section of the V1/V2 border. (B) Locations of cell bodies in (A) expressing mCherry (red), parvalbumin (green), or both (\u2018+').\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A histological section of V1/V2 from monkey 1 processed with antibodies against parvalbumin (green) and mCherry (red), imaged at 10X. Scale bar is 1 mm. (B) Locations of cell bodies in (A) expressing mCherry (red), parvalbumin (green) or both (\u2018+'). Sensitivity analysis of AAV\u2013mDlx5/6\u2013ChR2\u2013mCherry transduction to PV+ neurons in two regions of efficient transduction.\n\nMost mCherry-positive neurons co-expressed parvalbumin (468/543), a marker for 75% of GABAergic neurons in macaque V1 (Van Brederode et al., 1990). This high level of co-expression is consistent with selective transduction of GABAergic neurons and is sufficiently high to suggest that parvalbumin-positive neurons were transduced with particularly high efficiency (p<0.005; binomial test).\n\n### Optogenetic control of neural activity\n\nTo test whether ChR2 expression was sufficiently strong to perturb neural activity, we recorded extracellular spiking responses from single- and multi-units near the injection sites in two other monkeys (monkeys 2 and 3) while they performed a contrast detection task. Most sites were visually driven (46/56, response to a low-contrast Gabor stimulus greater than baseline firing rate; 19/56, p<0.05; Mann-Whitney U test, Figure 2\u2014figure supplement 1). Given our selection criteria, all sites were significantly modulated by optical stimulation (p<0.06; Mann-Whitney U test; see Methods). Some units were excited by optical stimulation (Figure 2A) whereas others were suppressed (Figure 2B). At 38 of the 56 sites, optical stimulation increased spiking. Excitation was prevalent in our dataset because we searched for sites at which optical stimulation produced an audible change in the baseline firing rate\u00a0(Figure 2C). The mean latency to response was 14\u00b126 (SD) ms and was\u00a0<5 ms at 11 sites (Figure 2\u2014figure supplement 2A\u2013B). Neurons excited at short latency (<5 ms) presumably expressed ChR2 and suppressed other neurons via synaptic inhibition. The latency of suppression was longer than the latency of excitation, but this comparison is challenging because baseline firing rates were low (Figure 2\u2014figure supplement 2C, Figure 2\u2014figure supplement 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig2-v2.jpg)\n\n**Figure 2.:** (A,B) Responses (in impulses per second, ips) of two example single units, aligned to the onset of optical stimulation, which lasted 300 ms (blue rectangle). Rasters (tick marks) and peristimulus time histograms (blue traces) are shown for an activated single\u00a0unit (A) and a suppressed single\u00a0unit (B). Insets: Mean spike waveform (thick black curve) and noise waveform (thick gray curve)\u00a0\u00b1\u00a01 standard deviation (thin curves). (C) Scatter plot of firing rate on laser trials against baseline firing rate of units from monkey 2 (squares) and monkey 3 (circles). Data from example activated and suppressed units are circled in red. Firing rates were computed during optical stimulation or the equivalent epoch on control trials.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Visually\u00a0driven firing rate was computed during the Gabor stimulus presentation period (200 ms) and plotted against the baseline firing rate. A total of 46 sites were driven by visual stimuli. 19 of those were significantly visually\u00a0driven.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Analysis of latency to first spike at activated sites. Latency was defined as the time to first spike following optical stimulation on each trial. Black points represent medians across trials within a site, and the lower and the upper end of vertical black lines represent the 25th and 75th percentiles. (B) Histogram of average latencies to first spike following optogenetic activation. (C) Histogram of latencies at activated (black) and suppressed (gray) sites. For each site, firing rate was computed in a sliding 50-ms window from \u221250\u2013150 ms after the laser was turned off. This firing rate was compared against the pre-laser firing rate (computed in a 50-ms window before optical stimulation). The time at which the firing rates in the two windows differed significantly was defined as the latency (p<0.05, Wilcoxon rank sum test).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Responses are aligned to the onset of optical stimulation.\n\nNeural activity suppression using halorhodopsins in monkeys is typically followed by a rebound of activity at the termination of optical stimulation (Acker et al., 2016; Fetsch et al., 2018). We did not observe such rebounds with AAV\u2013mDlx5/6\u2013ChR2. We compared average firing rates at 18 suppressed sites in a 50-ms window before and after optical stimulation. At one example site, the pre-laser firing rate exceeded the post-laser firing rate (22 vs. 0 impulses/sec, p<0.001, Wilcoxon signed rank test, Figure 3A), consistent with sustained suppression. At a different example site, the pre-laser firing rate was lower than the post-laser firing rate, consistent with a small rebound (10 vs. 25\u00a0impulses/sec, p=0.02, Wilcoxon signed rank test, Figure 3B). Such rebounds were rare; post-laser firing rates exceeded pre-laser firing rates at only 2 of 18 sites (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig3-v2.jpg)\n\n**Figure 3.:** (A) Responses of a single\u00a0unit with a pre-laser firing rate that\u00a0exceeded the post-laser firing rate. Recovery time to the baseline firing rate was 195 ms (vertical gray line). (B) Responses of another single\u00a0unit with a post-laser firing rate that\u00a0exceeded the pre-laser firing rate. Recovery time was 15 ms. (C) Scatter plot of pre-laser firing rates against post-laser firing rates. For each site, post-laser firing rate was computed in a sliding 50-ms window from 0 to 200 ms after the laser was switched\u00a0off. The ranges of post-laser firing rates are plotted as black lines and averages are plotted as black points. Data from neurons in (A) and (B) are circled in red. (D) Histogram of recovery times following optogenetic suppression. Recovery times of example units are marked with red tick marks, and the median is marked with a triangle.\n\nActivity at most suppressed sites recovered to baseline levels gradually after laser termination. We measured this recovery time by computing the first time at which the average spike count in a 50-ms sliding window returned to 90% of the pre-laser firing rate. Recovery times ranged from 0 to 215 ms (Figure 3D) with roughly half of the sites recovering within 100 ms (median\u00a0=\u00a097.5 ms). These data demonstrate that suppression persists several tens of milliseconds after laser termination.\n\n### Optogenetic control of behavior\n\nTo evaluate the behavioral\u00a0efficacy of optogenetic stimulation, we trained monkeys 2 and 3 to perform two visually demanding tasks. Reward contingencies were independent of laser stimulation in both tasks.\n\nIn the visually guided saccade task, a target appeared inside the receptive\u00a0fields\u00a0(RFs) of the stimulated V1 neurons on a random subset of trials and outside on other trials (Figure 4A\u2013B). Data from an example block of trials from each monkey show the main results (Figure 4C\u2013D). On control trials, both monkeys made accurate saccades to most target locations. On laser trials, the monkeys failed to make saccades into the RFs of the optically stimulated neurons. Saccades were unaffected when the target appeared at other locations, indicating that the optogenetic effect was retinotopically specific. On laser trials when the target appeared inside the RFs, monkey 2 typically maintained fixation, and monkey 3 typically made leftward\u00a0~10\u00b0 saccades. Similar behaviors were observed on catch trials in which no target was shown (Figure 4E\u2013F, see Materials and methods). The inaccuracy of saccades made by monkey 3 into the left visual field was likely due to repeated electrode penetrations in the midbrain of this animal that were unrelated to the current experiments (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig4-v2.jpg)\n\n**Figure 4.:** (A) Task design. (B) Timing of events. The small overshoot in the laser trace accurately reflects the temporal profile of the light. (C,D) Eye position traces on control (gray) and laser (blue) trials are shown from 0 to 300 ms after the fixation point was extinguished for one block of trials. The RF location of the illuminated neurons (gray filled circle) and the target locations outside of\u00a0the RF (gray open circles) are highlighted. (E,F) Eye positions on catch trials from the same blocks as (C,D).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Data are shown from each individual block of trials. Gray traces show saccades on control trials, and the blue traces show saccades on laser trials. The position of the target inside the RF of the illuminated neurons (gray filled circle) and outside (gray unfilled circle) are shown.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A,B) Saccade accuracy (the average distance between saccade end points and target location) on control and laser trials. Data from trials in which the target appeared inside the RFs of the stimulated neurons (filled symbols) were analyzed separately from interleaved trials in which the target appeared in other locations (open symbols). (C) Histograms of saccade latency on control (gray) and laser (blue) trials when the target was presented inside the RF. (E) Histograms of saccade latency on control (gray) and laser (blue) trials when the target was presented outside the RF. (B,D,F) Data from monkey 3 in the same format as (A,C,E).\n\nWe collected data in 10 sessions from monkey 2 (16 blocks of trials) and 7 sessions from monkey 3 (20 blocks of trials). Within each session, we calculated the distance between saccade end points and target locations. When the target appeared inside the RFs of stimulated neurons, the saccade end points tended to be closer to the target on control trials than on laser trials (p<0.002 for monkey 2, p=0.03 for monkey 3; Wilcoxon signed rank tests). When the target appeared in other locations, the saccade endpoints were similarly close to the target on control and laser trials (p=0.92 for monkey 2, p=0.38 for monkey 3; Wilcoxon signed rank tests; Figure 4\u2014figure supplement 2A\u2013B). Saccade latencies were greater on laser trials than on control trials when targets were inside the RFs (p<0.0001 for monkey 2 and 3; Mann-Whitney U tests; Figure 4\u2014figure supplement 2C\u2013D) but not when targets were elsewhere (p=0.90 for monkey 2 and p=0.41 for monkey 3; Mann-Whitney U tests; Figure 4\u2014figure supplement 2E\u2013F).\n\nTo confirm that the deficit in task performance was not purely oculomotor, we trained monkeys 2 and 3 to perform a contrast detection task that required saccades to targets outside\u00a0of the RFs of the stimulated neurons (Figure 5A\u2013B: see Materials and methods). An example block of trials from each monkey demonstrates the main results. Both monkeys detected the visual stimulus more frequently on control than on laser trials (proportion of hits on control vs. laser trials; p<0.001 for monkey 2 and monkey 3; binomial tests for equality of proportions; Figure 5C\u2013D). This performance deficit was also reflected in psychometric functions (Figure 5C\u2013D inset) and in the contrast values selected by the staircase procedure (Figure 5E\u2013F). Neither monkey was able to detect the visual stimulus with above-chance accuracy on laser trials even at the maximum stimulus contrast achievable. Saccades to the stimulus location were never required, and thus the behavioral effects produced by optical stimulation in this task cannot be explained by an oculomotor deficit.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig5-v2.jpg)\n\n**Figure 5.:** (A) Task design. (B) Timing of events. (C) Performance of monkey 2 over one block of trials. Hits (H) and misses (M) are proportions of Gabor-present trials that were answered correctly and incorrectly, respectively. Correct rejections (CR) and false alarms (FA) are proportions of Gabor-absent trials that were answered correctly and incorrectly, respectively. Insets show psychometric functions on control (gray) and laser (blue) trials. Symbol size in insets reflects the number of trials that contributed to each data point. (E) Contrasts selected by the staircase procedure on control (gray) and laser (blue) trials. (D,F) Performance of monkey 3 in the same format as (C,E). Luminance contrast could not exceed 0.66 because the gray background was close to the upper limit of the display range.\n\nIn one session, the Gabor stimulus location was randomized across trials, confirming the retinotopic specificity of the effect (Figure 6). Additional control experiments confirmed that the monkeys were able to make saccades to both target locations irrespective of optical stimulation (data not shown) and showed that performance on control trials was unaffected by the interleaved laser trials (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig6-v2.jpg)\n\n**Figure 6.:** Data are from a single session consisting of 4 blocks of trials from monkey 2.\u00a0(A) On each trial, the Gabor stimulus appeared at one of three randomly\u00a0interleaved locations (X, Y, or Z), all of which were 9.6\u00b0 away from the fixation point (central black dot). Locations Y and Z were on the vertical and horizontal meridians, respectively. (B) The proportions of hits (H), misses (M), correct rejections (CR) and false alarms (FA) are plotted in the same format as in Figure 5C. The laser reduced the monkey\u2019s contrast sensitivity when the Gabor stimulus appeared at the receptive fields of the transduced neurons (X, gray circle). No significant effect was observed at locations Y and Z (C,D).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** In the first block, the laser power was low (0.8 mW) and performance was statistically indistinguishable on laser and control trials. For this block only, data from laser and control trials were pooled. In the subsequent blocks, the laser power was\u00a0>60 mW, and performance was significantly impaired on laser trials (p<0.05 in all cases, binomial test of proportions). For these blocks, data from control trials are only presented. (A) Proportion of hits in each block is plotted in chronological order. (B) d\u2019 in each block is plotted in chronological order. (C) Psychometric functions in the first and the pooled subsequent blocks did not differ significantly (p=0.11, Likelihood ratio test of separate Weibull fits to the first and the subsequent blocks data versus the best single fit to the pooled data). (D) Luminance contrast values selected by the staircase procedure as a function of trial number in each block.\n\nWe collected data in 11 sessions from monkey 2 (69 blocks of trials) and 12 sessions from monkey 3 (81 blocks of trials). In almost every session (10/11 in monkey 2, 11/12 in monkey 3), the proportion of hits on control trials was significantly greater than on laser trials (binomial tests for equality of proportions, p<0.05, Figure 7A\u2013B). An analysis of sensitivity indices (d\u2019) confirmed that this change in performance was consistent with a reduction in sensitivity and inconsistent with a pure change in criterion (Figure 7C\u2013D, Figure 7\u2014figure supplement 1). In most blocks of trials (52/69 in monkey 2 and 63/81 in monkey 3), optical stimulation increased detection thresholds beyond the limits of the display, an event that occurred rarely on control trials (0/63 blocks in monkey 2, 8/81 blocks in monkey 3).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig7-v2.jpg)\n\n**Figure 7.:** (A) Scatter plot showing proportion of hits on control trials against laser trials from each session in monkey 2. Sessions with significantly fewer hits on laser trials than control trials are shown in black (p<0.05, binomial test for equal proportions). Error bars represent the standard error of mean. (B) Data from monkey 3 in the same format as (A). (C) Scatterplot of d\u2019 from control trials plotted against d\u2019 from laser trials from each session performed by monkey 2. (D) Data from monkey 3 in the same format as (C).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Noise (gray, $\ud835\udca9$\u00a0(0,1)) and signal (blue) distributions of decision variables with same variance are plotted. The effect of the laser is assumed to reduce the mean of the signal distribution. Shown are the monkey\u2019s criterion (vertical dashed line) and the optimal criterion (blue triangle) for each signal distribution. The optimal criterion is the point of intersection between the signal and noise distributions. Even if the monkey\u2019s criterion does not depend on laser power, c-criterion changes. This is because c-criterion is the difference between the optimal and the monkey\u2019s criterion. (B) d\u2019 is plotted against the c-criterion for different signal distributions. Under this model, changes in d\u2019 are conflated with changes in c-criterion.\n\nAs laser power increased, errors became more common, which caused the staircase procedure to increase the stimulus contrast rapidly (Figure 8A). The magnitude of the behavioral effect increased steeply with laser intensity between 12.8 and 22.3 mW, and\u00a0it saturated by 30.0 mW (Figure 8B). Behavior on control trials was not significantly affected by changes in laser power (r=\u22120.15, p=0.78; Spearman\u2019s\u00a0correlation between d\u2019 on control trials from each block and laser power).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig8-v2.jpg)\n\n**Figure 8.:** (A) Contrast values selected by the staircase procedure on laser trials (solid lines) and interleaved control trials (dashed lines) across seven blocks. (B) The difference in d\u2019 between control and laser trials as a function of laser power calculated from the data in (A). A Naka-Rushton fit to the data is shown in black. (C) Differences in d\u2019 between control and laser trials as a function of trial number in each session. Each session consisted of at least five blocks of 120 trials. The duration of an individual trial was 2.80\u00a0\u00b1\u00a00.51 s (mean\u00a0\u00b1\u00a0SD), and the number of trials per session was 813\u00a0\u00b1\u00a0253. Points are means and error bars are standard error of the mean (SEM). SEM was not plotted for the final two points, each of which represent data from a single session. (D) Scatter plot of the differences in d\u2019 for early trials (1\u2013480) vs. late trials (480\u2013beyond) within each session.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A) Effect of laser power on firing rate across seven blocks from a single session. The difference in laser-evoked firing rate and baseline firing rate is plotted as a function of laser power. Behavioral effects for these blocks of trials are shown in Figure 8B. (B) Relationship between neurophysiological and behavioral effects at the activated (black) and suppressed (gray) sites during the Gabor contrast detection task. Neurophysiological effects were computed as the absolute value of the difference between laser-evoked and baseline firing rate, divided by the sum of two.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig8-figsupp2-v2.jpg)\n\n**Figure 8\u2014figure supplement 2.:** The data in panels (B,C and D) were collected 840 days after the vector injections, and 663 days after the termination of optogenetic silencing experiments that contributed to the manuscript. (A) Electrophysiologically mapped receptive fields (RFs) before (unfilled circles) and after (filled circles) AAV injections into area V1. The polygon (black outline) enclosing all the RFs represents the region of interest where monkey\u2019s visual sensitivity could be affected. (B) Saccade accuracy data from a visually guided saccade task. On each trial, a target appeared, the fixation point disappeared, and the monkey was rewarded for making a saccade to the target within\u00a0~300 ms. Targets were randomly drawn from two 7 \u00d7 7\u00b0 grids (98 locations), one in the upper visual field and one in the lower visual field. (10 repetitions at each location). The size of each disk represents the proportion of saccades made to the corresponding target (landing within a 5 \u00d7 5\u00b0 window). Each target location tested is plotted in a unique color which is preserved across panels. The monkey\u2019s performance was\u00a0\u226560% at all the tested locations. (C) Average saccade latencies are plotted as a function of target location. (D) Saccade end points are plotted as a function of target location in the unique color assigned to each location. Relative to saccades up and left, saccades down and right were less likely to be correct, had longer latencies, and were less accurate. The \u2018shearing\u2019 of the saccade end point distributions relative to the target positions is due to a small tilt in the infrared camera (SMI Inc, Hi-Speed Primate) relative to the eye.\n\nOptogenetic modulations of neural activity were linked to effects on behavior across these trials (r=0.36, p=0.43; Spearman\u2019s correlation between neural laser modulation index and difference in d\u2019 between control and laser trials; Figure 8\u2014figure supplement 1). Pooling data across all blocks of trials reduced the correlation (r=0.16, p=0.23). Pooling the data reduced statistical power due to covariates across blocks of trials that exerted different effects on neurophysiological and behavioral outcomes (e.g. fiber position, stimulus location in the visual field, and quality of neural recordings). These covariates were held fixed in the data shown in Figure 8A\u2013B.\n\nIn a previous study, the behavioral effects produced by optogenetic silencing of neurons in area MT using the suppressive opsin, Jaws (red-shifted cruxhalorhospsin), decreased over tens of minutes (Fetsch et al., 2018). To determine whether a similar phenomenon occurred with ChR2-mediated inactivation, we analyzed 4 experimental sessions (28 blocks of trials) from monkey 2 and 5 sessions (33 blocks of trials) from monkey 3. From these sessions, we considered\u00a0only the subset of blocks with identical laser power.\n\nThe behavioral effects we observed were consistently large over the course of\u00a0~1000 trials (or\u00a0~50 mins). We quantified the behavioral effect as the difference in d\u2019 between laser and control trials within each block. The behavioral effect varied little as a function of block number, (r=0.18, p=0.59;\u00a0Spearman\u2019s\u00a0correlation between block number and d\u2019 averaged across sessions; Figure 8C). It was also consistent within individual sessions; linear regression slopes of the behavioral effect as a function of block number in each session did not differ significantly from zero (p=0.57, Student\u2019s t-test). For comparison with previous work (Fetsch et al., 2018), we calculated the behavioral effect in early and late trials within each session. Unlike the previous work, the behavioral effect did not differ between the first 480 trials (4 blocks) and the subsequent trials, suggesting the absence of compensatory changes under the conditions of the current study (p=0.79, Student\u2019s t-test, Figure 8D).\n\n## Discussion\n\nThe fast activation and inactivation of neurons afforded by optogenetics has revolutionized our understanding of the nervous systems of rodents and invertebrates. Understanding the primate brain at a similar level of detail is facilitated by optogenetics in the macaque monkey\u2014a model organism with a brain structure similar to humans that can be trained to perform complex behavioral tasks. Rapid activation was already feasible in primates using microsimulation\u00a0or\u00a0optogenetics, and now rapid inactivation is too.\n\nWe achieved inactivation by stimulating GABAergic neurons in macaque V1 and measured electrophysiological and behavioral consequences. First,\u00a0we showed that the AAV\u2013mDlx5/6\u2013ChR2 vector targeted ChR2 expression to GABAergic neurons in area V1. Second, we showed that optical stimulation modulated the activity of neurons near the injection site. Third, we showed that optical stimulation impaired visual sensitivity in two behavioral tasks. The reduction in sensitivity was specific to trials in which optical stimulation was delivered and to the RF location of the stimulated neurons, demonstrating the temporal and spatial precision of the inactivation. Laser-induced modulations of neural responses were rapid, rebound activity following light pulses was negligible, and behavioral effects were consistent across\u00a0~1000 trials.\n\nBelow, we compare the results of our study with those of previous studies that used optogenetic neural inactivation to perturb macaque behavior. We then discuss the effect\u00a0of\u00a0optogenetic stimulation of V1 on eye movements and ways in which the method could be improved. Finally, we discuss potential applications of AAV\u2013mDlx5/6\u2013ChR2 for understanding primate brain function.\n\n### Comparison with optogenetic inactivation studies\n\nFour previous studies used optogenetic inactivation to perturb monkey behavior (Acker et al., 2016; Afraz et al., 2015; Cavanaugh et al., 2012; Fetsch et al., 2018). The two studies most similar to ours quantified the effect of neural inactivation on behavior as changes in visual discrimination thresholds on 2AFC tasks (Afraz et al., 2015; Fetsch et al., 2018). In one study, inactivation of inferotemporal cortical neurons raised thresholds for classifying face stimuli on the basis of gender (Afraz et al., 2015). In the other, inactivation of MT cortical neurons biased judgements of visual motion direction (Fetsch et al., 2018). In both cases, threshold changes were smaller than those we observed (~5% vs.\u00a0>100%, Figure 7).\n\nThe threshold changes we observed were large for\u00a0potentially several reasons. First, we excited ChR2-expressing inhibitory neurons to reduce the spiking of excitatory neurons. Stimulation of a small number of inhibitory neurons can suppress the\u00a0activity of a large number of excitatory neurons (Wiegert et al., 2017). Second, we used ChR2, which conducts more ions per absorbed photon than ion pumps (Jaws and ArchT). Third, we used higher laser power (4\u2013160 mW vs.\u00a0~2 mW and ~12 mW; Figures 4\u20138). Fourth, we inactivated area V1, an area that is indispensable for the behaviors we studied (Koerner and Teuber, 1973; Merigan et al., 1993; Radoeva et al., 2008). Higher-order visual cortical areas may be sufficiently interconnected to allow one or more areas to compensate for others with regard to the behaviors tested. An intriguing, and now-testable, hypothesis is that the spared visual sensitivity following visual cortical lesions is due to the engagement of slow compensatory mechanisms, not the unmasking of normally functioning pathways (Leopold, 2012).\n\nWe interpreted the stimulation-induced change in the monkeys\u2019 performance as a change in sensitivity, and it is inconsistent with a change in criterion alone. Additionally, the brevity and unpredictability of the optical stimulation makes large, consistent, selective changes in criterion on laser trials unlikely. Nevertheless, we cannot rule out the possibility that the optical stimulation affected sensitivity and criterion together (Figure 7\u2014figure supplement 1).\n\n### Comparison with non-selective optogenetic stimulation of V1\n\nIllumination of ChR2-expressing neurons in area V1 causes monkeys to make saccades into the RFs of the stimulated neurons under some conditions (Jazayeri et al., 2012). This behavior is consistent with the perception of a phosphene (Tehovnik et al., 2003). In our study, however, monkeys rarely made saccades into the RFs of the stimulated neurons, suggesting that they did not experience a phosphene. This result held on trials requiring a saccade to a visual target inside the RFs of the stimulated neurons and on trials in which no target was shown, a condition similar to the key condition in the study of Jazayeri et al., 2012. In principle, detection of the optical stimulation could have provided a cue for acquiring reward in the visually guided saccade task. Having sensed the optical stimulation, and seen no target, the monkey could have increased its reward rate by making a saccade into the RFs of the stimulated neurons. The fact that the monkeys did not behave this way suggests that they were unable to detect the stimulation, or at least were unable to use it to direct saccades. Sensing the optical stimulation would not have been useful for increasing reward rate in the contrast detection task.\n\nWe attribute the difference between studies to the population of V1 neurons stimulated. We used a Dlx5/6 enhancer to express ChR2 selectively in inhibitory neurons whereas Jazayeri et al., 2012 used the human synapsin I promoter, which drives expression in both excitatory and inhibitory neurons (Nathanson et al., 2009). One hypothesis is that phosphenes are caused by spikes in a subset of excitatory projection neurons. In this case, pan-GABAergic stimulation would not be expected to produce phosphenes, but stimulation of specific GABAergic subtypes might. For example, stimulation of VIP-expressing neurons might produce a phosphene through disinhibition of excitatory neurons (Cone et al., 2019).\n\n### Effect of laser power and optical fiber insertion on cortex\n\nOver the course of this study, monkeys 2 and 3 acquired visual deficits in areas of the visual field corresponding to the regions of V1 inactivated. To ask whether the optogenetic manipulations produced long-lasting visual deficits, we conducted behavioral experiments in monkey 2 twenty-two months after the final optogenetic experiment was conducted (Figure 8\u2014figure supplement 2). Visual sensitivity, assessed by the probability, latency, and accuracy of visually guided saccades, was reduced in the optogenetically manipulated lower-right visual field relative to the unmanipulated upper-left visual field, but the deficit was subtle. We presume that this deficit reflects cortical damage, which could be due to tissue heating by the light, repeated penetrations by optical fibers, or single-unit recordings that were made in this animal for three years prior to commencing the current study. While a comparable behavioral dataset could not be obtained from monkey 3, histological analysis of the calcarine sulcus, where most of the optogenetic manipulations were made in this animal, revealed nothing unusual (e.g. areas of necrosis, burn marks, etc.) (data not shown). They did reveal electrode/optical fiber tracks, the expected gliosis associated with these tracks, and healthy-looking mCherry+ neurons that were similar in morphology and density to those in monkey 1.\n\nThe laser power used in the current study spanned a broad range (4\u2013160 mW for 200\u2013300 ms) and, on average, was higher than that used in other studies (Afraz et al., 2015; Cavanaugh et al., 2012; Dai et al., 2014; El-Shamayleh et al., 2017; Fetsch et al., 2018; Gerits et al., 2012; Inoue et al., 2015; Ohayon et al., 2013; Stauffer et al., 2016; Tamura et al., 2017). Given the stimulation parameters we used, (450 nm light conducted through 300 \u00b5m-diameter optical fibers), we likely heated tissue near the fiber tip by several \u00b0C in many of our experiments (Arias-Gil et al., 2016). However, the consistency of the behavioral effect within individual sessions after repeated optical stimulation argues against acute damage (Figure 8C\u2013D).\n\nThe tissue damage produced by optogenetic manipulations can be mitigated by using artificial dura (Nandy et al., 2019; Ruiz et al., 2013) and red-shifted or step-function opsins (Berndt et al., 2009). Artificial dura allows non-invasive optical stimulation of the superficial cortical layers, reducing mechanical damage. Red-shifted opsins are activated by long-wavelength light, which heats tissue less and thus causes less thermal damage than short-wavelength lights do. The neural activity produced by step-function opsins outlast the light pulses required to trigger them, allowing brief, safe light pulses to produce longer lasting stimulation events\u00a0(Gong et al., 2020).\n\n### Potential applications of AAV\u2013mDlx5/6\u2013ChR2\n\nOptogenetic stimulation of inhibitory neurons using AAV\u2013mDlx5/6\u2013ChR2 facilitates at least three broad categories of experiments. The first category includes experiments in which slow neural inactivation precludes data collection, for example, experiments probing the neural substrate of life-sustaining processes (e.g. breathing)\u00a0(Baertsch et al., 2018; Simonyan, 2014). Less extreme examples include the inactivation of oculomotor structures that are necessary for stable visual fixation, a simple oculomotor behavior without which more complicated behaviors\u00a0are difficult to study (Goffart et al., 2012; Krauzlis et al., 2017). Experiments in which inactivation induces compensatory changes in task strategy (Paolini and McKenzie, 1997) or the routing of neural signals also fall in this category (Cowey, 2010; Kinoshita et al., 2019; Leopold, 2012; Mori et al., 2006).\n\nThe second class of experiments are those that address questions about the functional significance of spike timing. Monkeys can learn to use signals in sensory cortices at particular times relative to external and internal events to mediate their behavior (Poort et al., 2012; Roelfsema et al., 1998; Seidemann et al., 1998). Just as electrical microstimulation can be used to reveal the contribution of spikes added to sensory representations at specific times, optogenetic inactivation can be used, complementarily, to eliminate spikes. Indeed, optogenetic inactivation was used recently\u00a0to show that spiking activity in the frontal eye fields of macaques contributes to memory-guided saccades before, during, and after target presentation (Acker et al., 2016). Future studies may reveal differences between the transient and sustained phases of sensory-, decision- and movement-related signals for guiding behavior (Freedman et al., 2001; Hegd\u00e9, 2008; Ibos and Freedman, 2017; Roelfsema et al., 2007; Shushruth et al., 2018).\n\nA third class of experiments probes the electrophysiological response properties of inhibitory neurons in vivo (Adesnik et al., 2012; Atallah et al., 2012; Cardin et al., 2009; Scholl et al., 2015; Sohal et al., 2009; Wilson et al., 2017; Wilson et al., 2012). Excitatory and inhibitory neurons within a cortical area have different response properties in mice, cats, and ferrets, a fact that is presumably related to differences in their respective functional contributions (Huang and Paul, 2018). Identification of inhibitory and excitatory neurons in vivo has been challenging in monkeys. The discovery of fast-spiking excitatory neurons in primates undermines the use of extracellularly recorded spike waveforms (Kelly et al., 2019). Optogenetic phototagging of inhibitory neurons, using AAV\u2013mDlx5/6\u2013ChR2 permits electrophysiological identification of neuronal subtypes more decisively (Figure 9).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/52658/elife-52658-fig9-v2.jpg)\n\n**Figure 9.:** Peristimulus time histograms (black) in response to sinusoidal laser modulation from 2 Hz to 254 Hz (blue). Inset: Mean spike waveforms (thick black curve) and noise waveforms (thick gray curve)\u00a0\u00b1\u00a01 standard deviation (thin curves). (B) Direction tuning curve showing individual (black points) and mean responses (black line) across repeated presentations of a drifting sinusoidal grating. (C) Spatial frequency tuning curve with symbols identical to (B).\n\nIn summary, the optogenetic approach used in this study holds promise for a finer level of neural circuit interrogation than previously achievable in monkeys. This union of neural inactivation technique and animal model has broad utility for addressing many outstanding questions in systems neuroscience that span the domains of sensation, action and cognition.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Antibody</td>\n      <td>mCherry monoclonal antibody</td>\n      <td>Clontech</td>\n      <td>Cat. No. 632543 RRID:AB_2307319</td>\n      <td>(1:250)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-parvalbumin</td>\n      <td>Swant</td>\n      <td>Code: 27 RRID:AB_2631173</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti- Mouse IgG (H+L) highly cross-adsorbed secondary antibody, Alexa Fluor 568</td>\n      <td>Molecular Probes</td>\n      <td>Cat. No. A10037 RRID:AB_2534013</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Rabbit IgG (H+L) highly cross-adsorbed secondary antibody, Alexa Fluor 488</td>\n      <td>Molecular Probes</td>\n      <td>Cat. No. A21206 RRID:AB_2535792</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Donkey anti-Rabbit IgG (H+L) highly cross-adsorbed secondary antibody, Alexa Fluor 350</td>\n      <td>Molecular Probes</td>\n      <td>Cat. No. A10039 RRID:AB_2534015</td>\n      <td>(1:200)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>DAPI</td>\n      <td>Invitrogen</td>\n      <td>Cat. No. D21490</td>\n      <td>(1:5000)</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pAAV-mDlx-ChR2-mCherry-Fishell-3</td>\n      <td>Addgene</td>\n      <td>Cat. No. 83898 RRID:Addgene_83898</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo-sapiens)</td>\n      <td>HEK293T</td>\n      <td>American Type Culture Collection</td>\n      <td>CRL-3216 RRID:CVCL_0063</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Macaca Mulatta)</td>\n      <td>Rhesus monkey</td>\n      <td>Washington National Primate Research Center</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software/Algorithm</td>\n      <td>MATLAB</td>\n      <td>Mathworks</td>\n      <td>https://www.mathworks.com/products/matlab.html RRID:SCR_001622</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software/Algorithm</td>\n      <td>Fiji</td>\n      <td>NIH (ImageJ)</td>\n      <td>https://imagej.net/Fiji RRID:SCR_002285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software/Algorithm</td>\n      <td>Plexon Sort Client</td>\n      <td>Plexon</td>\n      <td>http://www.plexon.com RRID:SCR_003170</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software/Algorithm</td>\n      <td>Plexon Offline Sorter</td>\n      <td>Plexon</td>\n      <td>http://www.plexon.com RRID:SCR_000012</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Contact for resource sharing\n\nFurther information and requests for resources should be directed to and will be fulfilled by the Lead Contact, Gregory D Horwitz (ghorwitz@u.washington.edu).\n\n### Experimental model and subject details\n\nThree rhesus monkeys (Macaca mulatta) participated in this study (males; 7\u201314 kg). Two monkeys were surgically implanted with a head-holding device and a recording chamber that provided access to the primary visual cortex (V1). Surgical procedures, experimental protocols, and animal care conformed to the NIH Guide for the Care and Use of Laboratory Animals and were approved by the Institutional Animal Care and Use Committee at the University of Washington.\n\nAnimal husbandry and housing were overseen by the Washington National Primate Research Center. All monkeys had ad-libitum access to biscuits (Fiber Plus Monkey Diet 5049, Lab Diet). Monkeys 2 and 3 had controlled daily access to fresh produce and water. When possible, animals were pair-housed and allowed grooming contact. Cages were washed every other week, bedding was changed every day, and animals were examined by a veterinarian at least twice per year.\n\nDuring each experiment, monkeys viewed a CRT monitor binocularly with their heads fixed. The viewing distance was 100 cm for monkey 2 and 50 cm for monkey 3. Eye position signals were measured with an optical eye tracker for monkey 2 and a scleral search coil for monkey 3. Behavioral and stimulation timing events and eye position signals were digitized and stored for offline analysis.\n\n### Method details\n\n#### AAV vector production\n\nRecombinant AAV vectors were produced using a conventional three-plasmid transient transfection of human embryonic kidney cells (HEK293T, female, unauthenticated) with polyethylenimine (25 kDa, Polysciences). The transfer plasmid was pAAV-mDlx-ChR2-mCherry-Fishell-3 (Addgene #83898). Vectors were harvested and purified by ultracentrifugation through an iodixanol gradient column, exchanged into phosphate buffered saline (PBS), and titered using qPCR.\n\n#### AAV vector injections\n\nAfter mapping a track through V1 gray matter using standard extracellular recording techniques in awake fixating monkeys, we advanced an electrode and cannula to the deepest point of the track and began a series of injections. Using a Hamilton syringe attached to a manual pump, we injected 1.0\u20131.5 \u00b5l of AAV vector at each of several locations spaced 500 \u00b5m apart along a track (normal to the opercular surface). Each injection was followed by a 2 min wait period after which the electrode and cannula were slowly retracted to the next site. This process was repeated at 9\u201314 sites, and a total of 14\u201317 \u00b5l was injected along each track. In monkey 2, we injected 14 \u03bcL of AAV9\u2013mDlx5/6\u2013ChR2\u2013mCherry (1.5\u00a0\u00d7\u00a01013 genomes/ml) at each of two opercular sites that were\u00a0~2 mm apart. The AAV vector was injected along 4 mm tracks throughout the thickness of the cortex at both sites, in the left hemisphere. In monkey 3, we injected\u00a0~17 \u03bcL of AAV1\u2013mDlx5/6\u2013ChR2\u2013mCherry (1.0\u00a0\u00d7\u00a01013 genomes/ml) along a 5 mm track in the first site and 14 \u03bcL along a 6.5 mm track in the second site, in the right hemisphere, to target both opercular and calcarine regions of area V1. The two injection tracks were\u00a0~1.5 mm apart.\n\n### Histology\n\nWe injected area V1 of monkey 1 with AAV1\u2013mDlx5/6\u2013ChR2-mCherry to examine the specificity of vector transduction. These injections were performed during a surgical procedure while the monkey was anesthetized, and electrophysiological recordings were not made. The monkey recovered from the surgery and was euthanized 45 days later with an overdose of pentobarbital and perfused transcardially with 4% paraformaldehyde (wt/vol). The brain was removed, cryoprotected in 30% sucrose (wt/vol) and 50 \u03bcm-thick sections were cut on a sliding microtome. Fluorescence signals from mCherry (primary antibody: 1:250, Clontech 632543, mouse anti-mCherry; secondary antibody: 1:200, Invitrogen Molecular Probe) and parvalbumin (primary antibody: 1:5000, rabbit anti-PV, Swant 27; secondary antibody: 1:200, Invitrogen Molecular Probes) were detected immunocytochemically. Sections were counterstained with DAPI (1:5000, Molecular Probes D-21490) and cover-slipped using a DABCO-based mounting medium.\n\n### Neurophysiology\n\nThree to four weeks after AAV injections in monkeys 2 and 3, we searched for neuronal responses to blue light (450 nm; 33\u2013161 mW) delivered to area V1 via an optical fiber (300 \u03bcm outer diameter; Thor Labs) with a beveled tip that eased entry through the dura. A fiber and a glass-coated tungsten electrode (1\u20133 M\u03a9 FHC) were placed in a common guide tube and lowered independently into the brain by microdrive (Narashige or Alpha-Omega). Extracellular spikes\u00a0were amplified (1x head-stage), high-pass filtered (250 Hz cutoff), digitized (sampling rate of 40 kHz) and sorted (Plexon MAP system).\n\n### Site selection criteria\n\nStimulation sites were selected by inserting an electrode into V1 and finding a region with vigorous visual activity and a clearly defined receptive field (RF). The optical fiber was then lowered while repeatedly delivering brief laser pulses. The optical fiber typically lagged the electrode by 100\u2013500 \u00b5m. Only sites at which optical stimulation produced an audible change in firing rate were tested.\n\n### Laser setup\n\nThe laser was developed in-house by the Bioengineering Core at the Washington National Primate Research Center. Light was generated by a laser diode (part # PL TB450B). Light delivery was modulated by modulating the current to the laser diode (digital to analog converter part # AD5683) not by shutter.\n\n### Visually guided saccade task\n\nMonkeys were trained to make saccades to visual targets 4\u201317\u00b0 from the fixation point. Each trial began when the monkey acquired a central fixation point (0.2\u20130.3\u00b0 sided square) within a 1.6\u00a0\u00d7\u00a01.6\u00b0 electronic window. Then, 13 ms after the central target disappeared, a saccade target (square with sides 0.3\u20130.4\u00b0) was presented. Two to ten target locations, equiangularly spaced at fixed radius, were interleaved within each block of trials. Monkeys were rewarded for making a saccade to the target. On half of the target-present trials at each location, a 300-ms laser pulse was delivered simultaneously with the target presentation (Figure 4B). We interleaved 10\u201330 catch trials in which no target was presented, and the monkey was rewarded unconditionally. Optical stimulation was delivered on half of the catch trials, immediately after the fixation point disappeared.\n\n### Two-alternative forced choice (2AFC) Gabor contrast detection task\n\nMonkeys were trained to detect a Gabor stimulus positioned 4\u201317\u00b0 from the fixation point. Each trial began when the monkey acquired the fixation point. Then, after a 520-ms delay, a drifting Gabor stimulus appeared on half of the trials (spatial frequency\u00a0=\u00a01 cycle/\u00b0, temporal frequency\u00a0=\u00a08 Hz, standard deviation\u00a0=\u00a00.2\u00b0, duration\u00a0=\u00a0200 ms). Immediately after the Gabor stimulus disappeared, a pair of targets appeared along the horizontal meridian, 2\u00b0 from the fixation point. A saccade to the target on the same side of the screen as the Gabor stimulus was rewarded on Gabor-present trials, and a saccade to the target on the opposite side was rewarded on Gabor-absent trials.\n\nThe Gabor stimulus appeared inside the RF of neurons at the recording site in all trials except a few in\u00a0which retinotopic specificity was\u00a0tested (Figure 6). Optical stimulation began at the stimulus onset, lasted 300 ms (Figure 5B), and was delivered on half of the Gabor-present and half of the Gabor-absent trials. The monkey typically performed several blocks of trials per session, each consisting of 120 trials. Stimulus strength was adjusted by independent contrast staircase procedures on laser and control trials. Contrast, defined as the difference between the highest and lowest luminance values, divided by the sum of the two, increased by a factor of 1.18\u20131.33 following an incorrect response and decreased by a factor of 0.75\u20130.85 following three consecutive correct responses.\n\n### Quantification and statistical analyses\n\nAll statistical analyses were performed in MATLAB.\n\n### Sensitivity index (d\u2019)\n\nSensitivity (d\u2019) was measured using a standard formula from signal detection theory (Green and Swets, 1966; Macmillan and Creelman, 2004).\n\n$$\nd^{\u2032}=\u03a6^{\u22121}(proportionofhits)\u2212\u03a6^{\u22121}(proportionoffalsealarms)\n$$\n\nIn this equation, \u03a6-1 is the inverse normal cumulative distribution function. Proportions of 0 were replaced with 0.5/n, and proportions of 1 were replaced by 1-0.5/n, where n\u00a0is the number of Gabor-present (for hits) or Gabor-absent trials (for false alarms) (Stanislaw and Todorov, 1999).\n\n### Fit to behavioral data\n\nProportions of correct responses were fit with a cumulative Weibull distribution function by maximizing likelihood assuming binomial error. Fitting was performed using the inbuilt MATLAB fmincon function. Detection threshold was defined as the luminance contrast corresponding to 82% correct.\n",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "e041f573-8f2e-4745-bade-ab4b3ff55c87",
+      "submission_id": "d2a7cd86-50bb-4ce0-874e-e18614e85a28",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Schmid, Newcastle University United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.52658.sa1](https://doi.org/10.7554/eLife.52658.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nTargeted optogenetic inactivation of neural circuits in non-human primates is essential to clarify specific links between neuronal activity and behaviour. Here the authors capitalise on the recent development of Dlx5/6 enhancer-guided targeting of GABAergic neurons (Dimidschstein et al., 2016) for optogenetic manipulation of macaque primary visual cortex (V1). The authors show how optogenetic targeting of V1 GABAergic neurons modulates V1 neural activity and leads to a substantial, specific impairment in vision guided behaviour.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Fast and reversible neural inactivation in macaque cortex by optogenetic stimulation of GABAergic neurons\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Michael Schmid as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Joshua Gold as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Wim Vanduffel (Reviewer #2); David Sheinberg (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nDe, El-Shamayleh, and Horwitz describe anatomical, electrophysiological and behavioral results of optogenetic deactivation experiments targeting primary visual cortex (V1) in macaques. The authors capitalise on the recent development of Dlx5/6 enhancer-guided targeting of GABAergic neurons (Dimidschstein et al., 2016). Here De et al. used the Dlx5/6 enhancer in combination with a depolarizing opsin (ChR2) to activate inhibitory neurons, with the aim to inactivate the local downstream excitatory neurons. A key advance of this study is the demonstration that a AAV approach for targeting inhibitory neurons that has been shown to work in the marmoset translates to the rhesus monkey. The authors show histological evidence for transduced neurons near the injection site, as evidenced by mCherry expression. Moreover, most of the transduced neurons were PV+, indicating high specificity for inhibitory neurons. At neuron level, they observed both increased (2/3 of the stimulated sites) and suppressed (1/3 of the sites) light-induced activity. Moreover, the monkeys failed to make reliable saccades to targets represented by the stimulated neurons. Finally, the monkeys had severely reduced contrast detection thresholds at these sites. The authors provide compelling results from a combination of histological, electrophysiological and behavioural tests. Particularly the strong behavioural effects advance the field and will be of great interest to a wide audience. Unwanted rebound effects, which are typically present when using alternative hyperpolarizing opsins (e.g. ArchT or Jaws), are largely absent. Overall, the evidence presented is solid, the analyses are sound, the writing is very straightforward and the message is clear. The new research is important, timely and provides an important step forward for the field. However, the reviewers have expressed important concerns that need to be addressed before the manuscript can be accepted for publication.\n\nEssential revisions:\n\n1) The expression pattern needs to be more fully characterised. The selectivity of the vector seems to be high -i.e. mainly restricted to PV+ interneurons. Yet, the sensitivity is surprisingly low (only 41 neurons are transduced). Would this be a vast underestimation of the real number of the neurons expressing ChR2? It would be good for readers to know the percentage of Parvalbumin neurons that show fluorescence to get a better estimate on the expression sensitivity. There are some recent reports indicating that the threshold for detecting FP expression might be higher than the threshold for the functional gene (Kinoshita et al., 2019). Or do the authors think that the number of neurons expressing ChR2 can be as low as ~40 in order to evoke a clear behavioral effect? Figure 1 suggests a very laminar-specific expression pattern, but the authors explain that this is not typical. Was this slice the only one analyzed? Ideally the reader would like to see an assessment across cortical laminae, but perhaps the authors could show further sections that give a more representative view of the expression pattern. Although seemingly annoying, this may be useful for layer-specific optogenetic deactivations.\n\n2) Characterise more fully electrophysiological responses. Given the relatively long latencies of the optogenetic effect (see Figure 2\u2014figure supplement 2), it is unlikely that these are only first order neurons expressing the opsin which are directly activated by the blue light. How do the authors explain the long latency effects? It would be also interesting to plot the latencies of the cells showing a suppression effect (i.e. the time after stimulation onset that the activity drops significantly below the pre-stimulation firing rate). These latencies should be longer than those of neurons showing an excitatory effect. Estimating the onset of suppression is not trivial, but this could be informative regarding potential direct and indirect effects. Figure 3B also shows suppression for a site with some very bursty responses which seem to drastically inflate the Y-axis (Response). Was this high variability and bursty activity common for suppressed sites? The overall spontaneous rates of many GABAergic cells is fairly high, but it's not clear if that is the case for the population explored here. That spiking increased in >60% of recorded sites is in line with successful targeting of GABAergic interneurons. But what do we learn about these neurons? The authors discuss the potential of photo-tagging in the Discussion and provide one exemplary direction selective unit in Figure 9. But one is left with the question what happened at the other sites? Are they visually responsive?\n\n3) Further aspects should be considered that might have influenced behavioural performance. For the behavioral tasks the authors should probably emphasize that reward contingencies were not dependent on laser delivery. It was also unclear on why the measure used quantifying the effect for the oculomotor task was not simply distance from the target? For this task, the data for Monkey 3 shown in Figure 4 even for the control trials looks like it's not right on the center of the RF location. Does this figure show exactly where the target was presented and how were the eye positions calibrated? In both paradigms opto stimulation occurred at the same time as visual stimulation. Given a visual response latency of 40 ms or more in V1 neurons, at least in theory, the opto stimulus could serve as a cue telling the monkey how to act in order to get reward. It is indicated that the change in contrast detection performance is due to the reduction in sensitivity and not a change in criterion. One cannot conclude that from d-primes only. The c-criterion should also be listed as there can be a change in sensitivity and criterion.\n\n4) Electrophysiological and behavioural measures should be more directly related to each other. There's no obvious reason why these couldn't be done simultaneously. If possible, it would be good to see opto elicted spiking activity from the trials during behavioural testing and to probe whether there is a direct relationship between the strength of spiking and the behavioural effect.\n\n5) Clarify for the detection conditions, how the authors move from the example sessions (Figure 5) to the population data (Figure 7). Some rewording here to make it clear that the comments in the paragraph below are referring to the examples in Figure 5 and not the whole population (which follows in a couple of paragraphs). For the population, the authors should revisit Figure 7 to not include all the blocks, as this conflates the independent sessions (11 and 12) from the blocks, which are clearly not independent. To include all the blocks in Figure 7 is a clear case for pseudo-replication. The population analysis needs to be by session, not block. The authors should also revisit the psychometric fits (examples in Figure 5, e.g.). The laser fits don't look very good \u2013 was there some estimate of goodness of fit for these?\n\n6) Clarify details about injection and stimulation procedures (see minor points), including heating induced damage considerations. A concern is in understanding and justifying the need for the large increase in power used to activate the neurons under study. The absolute power levels are on a direct concern if they cause lasting damage to the tissue. On one hand the prolonged efficacy across the session is evidence that effects of greater power did not present an acute problem, but there could be concern that prolonged use in a single site, for example, could lead to irreversible damage. More discussion on the power would be useful.\n",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c865ec54-1ef1-4395-98f2-42e506eae0a5",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C1",
+      "claim": "AAV\u2013mDlx5/6\u2013ChR2\u2013mCherry transduced V1 GABAergic neurons in a marmoset with 93% selectivity in a previous study.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study showed that an AAV vector carrying the gene for the fluorescent reporter, GFP, under the control of the mDlx5/6 enhancer, transduced V1 GABAergic neurons in a marmoset with 93% selectivity (Dimidschstein et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Dimidschstein et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "48b5539a-53eb-468b-a2d5-4ff6d8694100",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C2",
+      "claim": "mCherry-positive cells had non-pyramidal morphologies in macaque V1.",
+      "claim_type": "EXPLICIT",
+      "source": "mCherry-positive cells had non-pyramidal morphologies, consistent with them being GABAergic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on histological observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "3682fcd8-8bd9-421c-b78c-54c33b13b810",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C3",
+      "claim": "Most mCherry-positive neurons co-expressed parvalbumin (468/543).",
+      "claim_type": "EXPLICIT",
+      "source": "Most mCherry-positive neurons co-expressed parvalbumin (468/543), a marker for 75% of GABAergic neurons in macaque V1 (Van Brederode et al., 1990).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data from histological analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "ae83fd6a-5f33-48ef-b113-3b8199e065aa",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C4",
+      "claim": "Parvalbumin is a marker for 75% of GABAergic neurons in macaque V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Most mCherry-positive neurons co-expressed parvalbumin (468/543), a marker for 75% of GABAergic neurons in macaque V1 (Van Brederode et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Van Brederode et al., 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "b1ec2b0d-7cf7-4f86-8785-e21b06976209",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C5",
+      "claim": "Parvalbumin-positive neurons were transduced with particularly high efficiency (p<0.005).",
+      "claim_type": "EXPLICIT",
+      "source": "This high level of co-expression is consistent with selective transduction of GABAergic neurons and is sufficiently high to suggest that parvalbumin-positive neurons were transduced with particularly high efficiency (p<0.005; binomial test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis (binomial test) of the histological data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "59165976-f5d9-4957-8093-c3597272d789",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C6",
+      "claim": "Most recording sites were visually driven (46/56).",
+      "claim_type": "EXPLICIT",
+      "source": "Most sites were visually driven (46/56, response to a low-contrast Gabor stimulus greater than baseline firing rate; 19/56, p<0.05; Mann-Whitney U test, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by electrophysiological data and statistical testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "e4860514-a925-4e83-92cb-2cdd14692f90",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C7",
+      "claim": "At 38 of the 56 sites, optical stimulation increased spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "At 38 of the 56 sites, optical stimulation increased spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on electrophysiological recordings during optical stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "96f46d9f-7e85-4cac-8b41-30316580a660",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C8",
+      "claim": "The mean latency to response was 14\u00b126 (SD) ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean latency to response was 14\u00b126 (SD) ms and was <5 ms at 11 sites (Figure 2\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of electrophysiological data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "2719c2c8-5793-4253-9209-4652f04c104d",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C9",
+      "claim": "Latency to response was <5 ms at 11 sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean latency to response was 14\u00b126 (SD) ms and was <5 ms at 11 sites (Figure 2\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of electrophysiological data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "d42273b2-b7c7-41a9-8838-7994077fa2f8",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C10",
+      "claim": "Neurons excited at short latency (<5 ms) presumably expressed ChR2 and suppressed other neurons via synaptic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons excited at short latency (<5 ms) presumably expressed ChR2 and suppressed other neurons via synaptic inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the short latency of excitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "c9417e55-4219-43e3-a21c-7d1d519f922d",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C11",
+      "claim": "Neural activity suppression using halorhodopsins in monkeys is typically followed by a rebound of activity at the termination of optical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural activity suppression using halorhodopsins in monkeys is typically followed by a rebound of activity at the termination of optical stimulation (Acker et al., 2016; Fetsch et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "da6f4a83-04ec-4f54-8408-d265a4fa53a8",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C12",
+      "claim": "Rebound activity was not observed with AAV\u2013mDlx5/6\u2013ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe such rebounds with AAV\u2013mDlx5/6\u2013ChR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of electrophysiological data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "f01e3ca9-1336-4314-9b76-8b1e509192f9",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C13",
+      "claim": "Post-laser firing rates exceeded pre-laser firing rates at only 2 of 18 sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Such rebounds were rare; post-laser firing rates exceeded pre-laser firing rates at only 2 of 18 sites (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "07b2e472-5f53-40d8-b3aa-194b0a7addb8",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C14",
+      "claim": "Recovery times ranged from 0 to 215 ms with a median of 97.5 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Recovery times ranged from 0 to 215 ms (Figure 3D) with roughly half of the sites recovering within 100 ms (median = 97.5 ms).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of recovery times shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "a963304e-1b2f-4ac1-b770-9c6e3f30bdc7",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C15",
+      "claim": "On laser trials, both monkeys failed to make saccades into the RFs of the optically stimulated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On laser trials, the monkeys failed to make saccades into the RFs of the optically stimulated neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on behavioral data from the visually guided saccade task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "2d755230-c05b-4fca-b6b9-92a78787b9d8",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C16",
+      "claim": "Saccades were unaffected when the target appeared at locations outside the RFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Saccades were unaffected when the target appeared at other locations, indicating that the optogenetic effect was retinotopically specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on behavioral data demonstrating spatial specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "f6dd96f0-e66a-4900-8411-641fe0d650c5",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C17",
+      "claim": "When the target appeared inside the RFs of stimulated neurons, saccade end points tended to be closer to the target on control trials than on laser trials (p<0.002 for monkey 2, p=0.03 for monkey 3).",
+      "claim_type": "EXPLICIT",
+      "source": "When the target appeared inside the RFs of stimulated neurons, the saccade end points tended to be closer to the target on control trials than on laser trials (p<0.002 for monkey 2, p=0.03 for monkey 3; Wilcoxon signed rank tests).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "80532091-2acd-4da5-b168-61972bdee618",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C18",
+      "claim": "Saccade latencies were greater on laser trials than on control trials when targets were inside the RFs (p<0.0001 for monkey 2 and 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Saccade latencies were greater on laser trials than on control trials when targets were inside the RFs (p<0.0001 for monkey 2 and 3; Mann-Whitney U tests; Figure 4\u2014figure supplement 2C\u2013D) but not when targets were elsewhere (p=0.90 for monkey 2 and p=0.41 for monkey 3; Mann-Whitney U tests; Figure 4\u2014figure supplement 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of behavioral data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "f6b7889b-2791-480b-b54d-ff285b00761e",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C19",
+      "claim": "Both monkeys detected the visual stimulus more frequently on control than on laser trials (p<0.001 for both monkeys).",
+      "claim_type": "EXPLICIT",
+      "source": "Both monkeys detected the visual stimulus more frequently on control than on laser trials (proportion of hits on control vs. laser trials; p<0.001 for monkey 2 and monkey 3; binomial tests for equality of proportions; Figure 5C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of behavioral data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "24d526ec-c154-4c8c-9fc7-a3ffb63ca670",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C20",
+      "claim": "Neither monkey was able to detect the visual stimulus with above-chance accuracy on laser trials even at the maximum stimulus contrast achievable.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither monkey was able to detect the visual stimulus with above-chance accuracy on laser trials even at the maximum stimulus contrast achievable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on behavioral performance data from the contrast detection task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "9c5b2a9a-66ea-4028-a59c-dfb4287a617c",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C21",
+      "claim": "In almost every session (10/11 in monkey 2, 11/12 in monkey 3), the proportion of hits on control trials was significantly greater than on laser trials (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In almost every session (10/11 in monkey 2, 11/12 in monkey 3), the proportion of hits on control trials was significantly greater than on laser trials (binomial tests for equality of proportions, p<0.05, Figure 7A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis across multiple sessions shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "eb75c130-642b-476a-930b-091b1fbcc4b2",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C22",
+      "claim": "In most blocks of trials (52/69 in monkey 2 and 63/81 in monkey 3), optical stimulation increased detection thresholds beyond the limits of the display.",
+      "claim_type": "EXPLICIT",
+      "source": "In most blocks of trials (52/69 in monkey 2 and 63/81 in monkey 3), optical stimulation increased detection thresholds beyond the limits of the display, an event that occurred rarely on control trials (0/63 blocks in monkey 2, 8/81 blocks in monkey 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative analysis of behavioral data across multiple blocks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "bf9abcca-19d4-4e19-899a-add6579d5284",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C23",
+      "claim": "The magnitude of the behavioral effect increased steeply with laser intensity between 12.8 and 22.3 mW, and it saturated by 30.0 mW.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the behavioral effect increased steeply with laser intensity between 12.8 and 22.3 mW, and it saturated by 30.0 mW (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of behavioral effects as a function of laser power shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "cd0d6eb4-abb9-4814-a697-910e5395280d",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C24",
+      "claim": "Behavior on control trials was not significantly affected by changes in laser power (r=\u22120.15, p=0.78).",
+      "claim_type": "EXPLICIT",
+      "source": "Behavior on control trials was not significantly affected by changes in laser power (r=\u22120.15, p=0.78; Spearman's correlation between d' on control trials from each block and laser power).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "eaa96593-1d16-4e75-abfd-6c52b80b7ad4",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C25",
+      "claim": "The behavioral effects were consistently large over the course of ~1000 trials (or ~50 mins).",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral effects we observed were consistently large over the course of ~1000 trials (or ~50 mins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of behavioral data across extended sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "17a77925-6da7-4b00-ba7c-9df90046446f",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C26",
+      "claim": "The behavioral effect varied little as a function of block number (r=0.18, p=0.59).",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral effect varied little as a function of block number, (r=0.18, p=0.59; Spearman's correlation between block number and d' averaged across sessions; Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "434e331a-94d0-450d-8aa8-578c1c2a05fc",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C27",
+      "claim": "The behavioral effect did not differ between the first 480 trials and the subsequent trials (p=0.79).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the previous work, the behavioral effect did not differ between the first 480 trials (4 blocks) and the subsequent trials, suggesting the absence of compensatory changes under the conditions of the current study (p=0.79, Student's t-test, Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "e84fab7c-5ce8-4e7d-a77f-4c672bac81df",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C28",
+      "claim": "Optogenetics is the fastest method for reversible neural inactivation currently available.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetics is the fastest method for reversible neural inactivation currently available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about optogenetic methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "0d1e7735-673f-4786-88f7-81c11fec8117",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C29",
+      "claim": "In rodents, optogenetic inactivation has revealed links between neural activity and behavior that would have been difficult to discover with traditional, slower inactivation methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, optogenetic inactivation has revealed links between neural activity and behavior that would have been difficult to discover with traditional, slower inactivation methods based on injection of pharmacological agents, cortical cooling, or lesioning (Goshen et al., 2011; Hanks et al., 2015; Yartsev et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies in rodents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "778d7f63-8006-44ac-ab92-1e875b790311",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C30",
+      "claim": "Optogenetic inactivation has been used in a few pioneering studies to perturb the behavior of macaque monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic inactivation has already been used in a few pioneering studies to perturb the behavior of macaque monkeys (Acker et al., 2016; Afraz et al., 2015; Cavanaugh et al., 2012; Fetsch et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies in macaques.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "c5324266-7965-401c-91d9-714137801cf9",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C31",
+      "claim": "The behavioral effects produced by direct hyperpolarization of neurons with opsins have been small, perhaps because suppression of inhibitory neurons may counteract suppression of excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the behavioral effects produced this way have been small, perhaps because most promoters used in viral vectors drive expression in many neuronal types, and suppression of inhibitory neurons may counteract suppression of excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim involves speculation about the reasons for small behavioral effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "7ebd1046-322b-48aa-bba0-60fc97a8350c",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C32",
+      "claim": "Selective activation of inhibitory neurons with ChR2 has been successful in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative approach, which has been successful in rodents, is to selectively activate inhibitory neurons with channelrhodopsin-2 (ChR2) (Cone et al., 2019; Glickfeld et al., 2013; Guo et al., 2014; Khan et al., 2018; McBride et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies in rodents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "9b757b7e-e803-484a-8df0-3dfd4a28f1c8",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C33",
+      "claim": "ChR2-based approaches have two advantages: they are based on ion channels which conduct more ions per photon absorbed than ion pumps, and they leverage the dense local connectivity and low synaptic failure rates of GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach has two advantages. First, it is based on the opening of ion channels, which conduct more ions per photon absorbed than ion pumps. Second, it leverages the dense local connectivity and low synaptic failure rates of GABAergic neurons to suppress long-range excitatory signaling locally and robustly (Isaacson and Scanziani, 2011; Kubota et al., 2015; Packer and Yuste, 2011; Wiegert et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies and established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "f8d6428e-d44d-4840-9946-243c69809aaf",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C34",
+      "claim": "Illumination of ChR2-expressing neurons in area V1 causes monkeys to make saccades into the RFs of the stimulated neurons under some conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Illumination of ChR2-expressing neurons in area V1 causes monkeys to make saccades into the RFs of the stimulated neurons under some conditions (Jazayeri et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jazayeri et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "d3ff2c92-d34a-442d-b482-8111456990f3",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C35",
+      "claim": "In the current study, monkeys rarely made saccades into the RFs of the stimulated neurons, suggesting that they did not experience a phosphene.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, however, monkeys rarely made saccades into the RFs of the stimulated neurons, suggesting that they did not experience a phosphene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on behavioral observations and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "7f7d9070-6fed-4195-b24a-093ce3d7f549",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C36",
+      "claim": "The difference between studies is attributed to the population of V1 neurons stimulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute the difference between studies to the population of V1 neurons stimulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental design differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "919193ac-2724-453f-bda9-905eae272362",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C37",
+      "claim": "Jazayeri et al., 2012 used the human synapsin I promoter, which drives expression in both excitatory and inhibitory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a Dlx5/6 enhancer to express ChR2 selectively in inhibitory neurons whereas Jazayeri et al., 2012 used the human synapsin I promoter, which drives expression in both excitatory and inhibitory neurons (Nathanson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nathanson et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "57bcdf24-48a3-481d-81ce-df142fd63959",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C38",
+      "claim": "One hypothesis is that phosphenes are caused by spikes in a subset of excitatory projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "One hypothesis is that phosphenes are caused by spikes in a subset of excitatory projection neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "a5cf500d-6831-4b13-a5a1-76f0022d4838",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C39",
+      "claim": "Over the course of this study, monkeys 2 and 3 acquired visual deficits in areas of the visual field corresponding to the regions of V1 inactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of this study, monkeys 2 and 3 acquired visual deficits in areas of the visual field corresponding to the regions of V1 inactivated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on behavioral observations over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "5dfdf74e-e074-4830-96ea-47fdb45130f1",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C40",
+      "claim": "Visual sensitivity was reduced in the optogenetically manipulated lower-right visual field relative to the unmanipulated upper-left visual field in monkey 2 twenty-two months after the final optogenetic experiment, but the deficit was subtle.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual sensitivity, assessed by the probability, latency, and accuracy of visually guided saccades, was reduced in the optogenetically manipulated lower-right visual field relative to the unmanipulated upper-left visual field, but the deficit was subtle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on behavioral data collected 22 months after experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "b7bece3a-6fdd-4103-8815-22b18b25f6b8",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C41",
+      "claim": "The deficit is presumed to reflect cortical damage, which could be due to tissue heating by the light, repeated penetrations by optical fibers, or single-unit recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "We presume that this deficit reflects cortical damage, which could be due to tissue heating by the light, repeated penetrations by optical fibers, or single-unit recordings that were made in this animal for three years prior to commencing the current study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim involves speculation about the causes of the observed deficit.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "08fb9a35-c209-4014-bcee-32f4963821a8",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C42",
+      "claim": "The laser power used in the current study spanned a broad range (4\u2013160 mW for 200\u2013300 ms) and was higher than that used in other studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The laser power used in the current study spanned a broad range (4\u2013160 mW for 200\u2013300 ms) and, on average, was higher than that used in other studies (Afraz et al., 2015; Cavanaugh et al., 2012; Dai et al., 2014; El-Shamayleh et al., 2017; Fetsch et al., 2018; Gerits et al., 2012; Inoue et al., 2015; Ohayon et al., 2013; Stauffer et al., 2016; Tamura et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison with cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "cb76c107-1436-4791-98a9-283d5d6a9c71",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C43",
+      "claim": "Given the stimulation parameters used, tissue near the fiber tip was likely heated by several \u00b0C in many experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the stimulation parameters we used, (450 nm light conducted through 300 \u00b5m-diameter optical fibers), we likely heated tissue near the fiber tip by several \u00b0C in many of our experiments (Arias-Gil et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from stimulation parameters and a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "514f78c2-ff3f-41b2-819d-f49d851ed98d",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C44",
+      "claim": "The consistency of the behavioral effect within individual sessions after repeated optical stimulation argues against acute damage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the consistency of the behavioral effect within individual sessions after repeated optical stimulation argues against acute damage (Figure 8C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of behavioral data shown in Figure 8C\u2013D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "0023d592-d6f5-4721-bd77-a04064570565",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C45",
+      "claim": "Tissue damage produced by optogenetic manipulations can be mitigated by using artificial dura and red-shifted or step-function opsins.",
+      "claim_type": "EXPLICIT",
+      "source": "The tissue damage produced by optogenetic manipulations can be mitigated by using artificial dura (Nandy et al., 2019; Ruiz et al., 2013) and red-shifted or step-function opsins (Berndt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "87f95335-3253-4f40-a63f-6bb974c768b2",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C46",
+      "claim": "Artificial dura allows non-invasive optical stimulation of the superficial cortical layers, reducing mechanical damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Artificial dura allows non-invasive optical stimulation of the superficial cortical layers, reducing mechanical damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about artificial dura.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "71666558-8129-45ec-b07d-faba6966b543",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C47",
+      "claim": "Red-shifted opsins are activated by long-wavelength light, which heats tissue less and thus causes less thermal damage than short-wavelength lights do.",
+      "claim_type": "EXPLICIT",
+      "source": "Red-shifted opsins are activated by long-wavelength light, which heats tissue less and thus causes less thermal damage than short-wavelength lights do.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about opsin properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "593391c6-f689-4d43-a66d-df88787938a5",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C48",
+      "claim": "The neural activity produced by step-function opsins outlast the light pulses required to trigger them, allowing brief, safe light pulses to produce longer lasting stimulation events.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural activity produced by step-function opsins outlast the light pulses required to trigger them, allowing brief, safe light pulses to produce longer lasting stimulation events (Gong et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gong et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "e3427de4-486c-4719-9a43-600700549d67",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C49",
+      "claim": "Threshold changes observed in this study were larger than those in previous studies (~5% vs. >100%).",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, threshold changes were smaller than those we observed (~5% vs. >100%, Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of behavioral effects with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "c5743de0-5317-4804-8c85-06c04725e106",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C50",
+      "claim": "The large threshold changes were potentially due to several reasons including exciting ChR2-expressing inhibitory neurons, using ChR2 which conducts more ions per absorbed photon than ion pumps, using higher laser power, and inactivating area V1 which is indispensable for the behaviors studied.",
+      "claim_type": "EXPLICIT",
+      "source": "The threshold changes we observed were large for potentially several reasons. First, we excited ChR2-expressing inhibitory neurons to reduce the spiking of excitatory neurons. Stimulation of a small number of inhibitory neurons can suppress the activity of a large number of excitatory neurons (Wiegert et al., 2017). Second, we used ChR2, which conducts more ions per absorbed photon than ion pumps (Jaws and ArchT). Third, we used higher laser power (4\u2013160 mW vs. ~2 mW and ~12 mW; Figures 4\u20138). Fourth, we inactivated area V1, an area that is indispensable for the behaviors we studied (Koerner and Teuber, 1973; Merigan et al., 1993; Radoeva et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim involves inference and speculation about the reasons for large behavioral effects, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "7de4e87f-3610-4f9d-a298-cb020ece0c21",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C51",
+      "claim": "Higher-order visual cortical areas may be sufficiently interconnected to allow one or more areas to compensate for others with regard to the behaviors tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher-order visual cortical areas may be sufficiently interconnected to allow one or more areas to compensate for others with regard to the behaviors tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the organization of higher-order visual areas.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "62828e31-deb6-4868-97b1-15449330173e",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C52",
+      "claim": "An intriguing hypothesis is that the spared visual sensitivity following visual cortical lesions is due to the engagement of slow compensatory mechanisms, not the unmasking of normally functioning pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "An intriguing, and now-testable, hypothesis is that the spared visual sensitivity following visual cortical lesions is due to the engagement of slow compensatory mechanisms, not the unmasking of normally functioning pathways (Leopold, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly stated as a hypothesis and supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "2b6f22a9-aeb4-4335-a676-7d7c25ccbcb4",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C53",
+      "claim": "The stimulation-induced change in the monkeys' performance was interpreted as a change in sensitivity, inconsistent with a change in criterion alone.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpreted the stimulation-induced change in the monkeys' performance as a change in sensitivity, and it is inconsistent with a change in criterion alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of behavioral data using signal detection theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "0d83192e-7569-45b8-8988-48709e2b95bd",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C54",
+      "claim": "The brevity and unpredictability of the optical stimulation makes large, consistent, selective changes in criterion on laser trials unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the brevity and unpredictability of the optical stimulation makes large, consistent, selective changes in criterion on laser trials unlikely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "598cdfb9-9696-4c52-863c-57a8019e612f",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C55",
+      "claim": "Excitatory and inhibitory neurons within a cortical area have different response properties in mice, cats, and ferrets.",
+      "claim_type": "EXPLICIT",
+      "source": "Excitatory and inhibitory neurons within a cortical area have different response properties in mice, cats, and ferrets, a fact that is presumably related to differences in their respective functional contributions (Huang and Paul, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Huang and Paul, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "74f9d346-deb5-41c3-8308-8dbe7b85c619",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C56",
+      "claim": "Identification of inhibitory and excitatory neurons in vivo has been challenging in monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of inhibitory and excitatory neurons in vivo has been challenging in monkeys.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about technical challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "36df3ef8-b393-41cd-8750-5a30ed2fbb99",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C57",
+      "claim": "The discovery of fast-spiking excitatory neurons in primates undermines the use of extracellularly recorded spike waveforms for cell type identification.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of fast-spiking excitatory neurons in primates undermines the use of extracellularly recorded spike waveforms (Kelly et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kelly et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "66c2d71d-2111-44fb-b5d7-ac2f07ae3e19",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C58",
+      "claim": "Optogenetic phototagging of inhibitory neurons using AAV\u2013mDlx5/6\u2013ChR2 permits electrophysiological identification of neuronal subtypes more decisively.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic phototagging of inhibitory neurons, using AAV\u2013mDlx5/6\u2013ChR2 permits electrophysiological identification of neuronal subtypes more decisively (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "1946c029-3bd1-43e9-9650-d6915dea4c9b",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C59",
+      "claim": "Optogenetic stimulation of inhibitory neurons is a powerful method for inactivating regions of the macaque monkey brain with high spatial and temporal precision.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that optogenetic stimulation of inhibitory neurons is a powerful method for inactivating regions of the macaque monkey brain with high spatial and temporal precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is the main conclusion of the study, based on all the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "7a0286b6-9116-4eda-b488-5a3d05d9daae",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C60",
+      "claim": "This inhibitory cell-type-specific optogenetic approach is a powerful and spatiotemporally precise neural inactivation tool with broad utility for probing the functional contributions of cortical activity in macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that this inhibitory cell-type-specific optogenetic approach is a powerful and spatiotemporally precise neural inactivation tool with broad utility for probing the functional contributions of cortical activity in macaques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract as the main conclusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "f5f1aa87-af9d-4292-9ecc-3ffcf835d7e2",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C61",
+      "claim": "Optical stimulation modulated spiking activity in the region of space represented by the stimulated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical stimulation modulated spiking activity and reduced visual sensitivity profoundly in the region of space represented by the stimulated neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on electrophysiological recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "05f8aa54-4ecf-449f-a367-d18093aaeef7",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C62",
+      "claim": "Optical stimulation reduced visual sensitivity profoundly in the region of space represented by the stimulated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical stimulation modulated spiking activity and reduced visual sensitivity profoundly in the region of space represented by the stimulated neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on behavioral data from the contrast detection task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "9937d6a9-702c-44ac-b50f-bb2df4535d06",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C63",
+      "claim": "The efficacy of the optogenetic manipulation on behavior was maintained across >1000 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Rebound firing, which can have unwanted effects on neural circuits following inactivation, was not observed, and the efficacy of the optogenetic manipulation on behavior was maintained across >1000 trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of behavioral data across extended sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "6bdd1022-32d0-431f-8cb3-f3bc5bf00eee",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C64",
+      "claim": "Three rhesus monkeys (males; 7\u201314 kg) participated in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Three rhesus monkeys (Macaca mulatta) participated in this study (males; 7\u201314 kg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "87c694f1-099b-46bf-a424-1f8be08d3134",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C65",
+      "claim": "Two monkeys were surgically implanted with a head-holding device and a recording chamber that provided access to the primary visual cortex (V1).",
+      "claim_type": "EXPLICIT",
+      "source": "Two monkeys were surgically implanted with a head-holding device and a recording chamber that provided access to the primary visual cortex (V1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the surgical procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "f3300d8f-33d3-4b29-bf13-bf7b164866f6",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C66",
+      "claim": "In monkey 2, 14 \u03bcL of AAV9\u2013mDlx5/6\u2013ChR2\u2013mCherry (1.5 \u00d7 10^13 genomes/ml) was injected at each of two opercular sites that were ~2 mm apart.",
+      "claim_type": "EXPLICIT",
+      "source": "In monkey 2, we injected 14 \u03bcL of AAV9\u2013mDlx5/6\u2013ChR2\u2013mCherry (1.5 \u00d7 1013 genomes/ml) at each of two opercular sites that were ~2 mm apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the injection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "428f716e-0c7e-4abc-a0ae-d6f18ec1b152",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C67",
+      "claim": "In monkey 3, ~17 \u03bcL of AAV1\u2013mDlx5/6\u2013ChR2\u2013mCherry (1.0 \u00d7 10^13 genomes/ml) was injected along a 5 mm track in the first site and 14 \u03bcL along a 6.5 mm track in the second site.",
+      "claim_type": "EXPLICIT",
+      "source": "In monkey 3, we injected ~17 \u03bcL of AAV1\u2013mDlx5/6\u2013ChR2\u2013mCherry (1.0 \u00d7 1013 genomes/ml) along a 5 mm track in the first site and 14 \u03bcL along a 6.5 mm track in the second site, in the right hemisphere, to target both opercular and calcarine regions of area V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the injection procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "f9267ed9-d173-419c-b4ed-ffed4526b8e4",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C68",
+      "claim": "Monkey 1 was euthanized 45 days after AAV injection.",
+      "claim_type": "EXPLICIT",
+      "source": "The monkey recovered from the surgery and was euthanized 45 days later with an overdose of pentobarbital and perfused transcardially with 4% paraformaldehyde (wt/vol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental timeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "44a0e926-2725-45ce-83d5-518b57d39234",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C69",
+      "claim": "Three to four weeks after AAV injections in monkeys 2 and 3, neuronal responses to blue light were searched for.",
+      "claim_type": "EXPLICIT",
+      "source": "Three to four weeks after AAV injections in monkeys 2 and 3, we searched for neuronal responses to blue light (450 nm; 33\u2013161 mW) delivered to area V1 via an optical fiber (300 \u03bcm outer diameter; Thor Labs) with a beveled tip that eased entry through the dura.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental timeline and procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "13503ef1-2467-40a3-9ca5-1a02f9b274b1",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C70",
+      "claim": "Stimulation sites were selected by finding a region with vigorous visual activity and a clearly defined receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulation sites were selected by inserting an electrode into V1 and finding a region with vigorous visual activity and a clearly defined receptive field (RF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the site selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "15ccce8f-cf5e-4be2-b937-e1fde14bc847",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C71",
+      "claim": "Only sites at which optical stimulation produced an audible change in firing rate were tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Only sites at which optical stimulation produced an audible change in firing rate were tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the site selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "9221501b-d06b-4812-9b20-0c32a35750cd",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C72",
+      "claim": "Sensitivity (d') was measured using a standard formula from signal detection theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Sensitivity (d') was measured using a standard formula from signal detection theory (Green and Swets, 1966; Macmillan and Creelman, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the analysis method and is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "4d9b7e66-d422-46b5-8063-bc383746ed73",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C73",
+      "claim": "Proportions of correct responses were fit with a cumulative Weibull distribution function by maximizing likelihood assuming binomial error.",
+      "claim_type": "EXPLICIT",
+      "source": "Proportions of correct responses were fit with a cumulative Weibull distribution function by maximizing likelihood assuming binomial error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "c9428d4b-4ac4-409d-b304-d6b428f8a8f3",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "claim_id": "C74",
+      "claim": "Detection threshold was defined as the luminance contrast corresponding to 82% correct.",
+      "claim_type": "EXPLICIT",
+      "source": "Detection threshold was defined as the luminance contrast corresponding to 82% correct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the definition used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ae15b55b-9068-4540-be54-3a550beef185",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AAV\u2013mDlx5/6\u2013ChR2\u2013mCherry selectively transduces GABAergic neurons in macaque V1, with particularly high efficiency for parvalbumin-positive neurons. Histological analysis showed that 468/543 (86%) of mCherry-positive neurons co-expressed parvalbumin, significantly higher than expected by chance (p<0.005), and mCherry-positive cells exhibited non-pyramidal morphologies consistent with GABAergic identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 provide converging histological evidence for selective GABAergic transduction. The quantitative co-localization data (C3, C5) with statistical validation, morphological observations (C2), and appropriate citation of prior work (C1, C4) collectively support the conclusion. The binomial test appropriately assesses whether parvalbumin co-expression exceeds chance expectations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "d9be025b-7ff1-44e8-93fb-eae4614949d2",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optical stimulation modulates neural activity at recording sites in V1, with 38/56 sites showing increased spiking and short-latency responses (<5 ms at 11 sites, mean 14\u00b126 ms) consistent with direct ChR2 activation of GABAergic neurons that subsequently suppress other neurons via synaptic inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 provide quantitative electrophysiological data demonstrating optical modulation of neural activity with appropriate temporal characteristics. The short latencies at some sites (C9) support the inference (C10) that directly activated ChR2-expressing neurons mediate suppression of other neurons, though C10 remains inferential rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "44c1be28-dd01-446b-8e75-bb0a2e054275",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation using AAV\u2013mDlx5/6\u2013ChR2 does not produce rebound activity following laser termination, unlike halorhodopsin-based approaches. Post-laser firing rates exceeded pre-laser rates at only 2/18 suppressed sites, with recovery times ranging from 0-215 ms (median 97.5 ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 provide appropriate comparison with prior methods (C11) and quantitative evidence (C13, C14) that rebound activity is rare with this approach (C12). The data support a key advantage of the ChR2-based inhibitory neuron stimulation method over direct hyperpolarization approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "cc64970d-fca9-4448-b483-f8ebe9e7881b",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optical stimulation impairs visually guided saccades in a retinotopically specific manner. Monkeys failed to make saccades into the receptive fields of stimulated neurons on laser trials, with saccade endpoints farther from targets (p<0.002 for monkey 2, p=0.03 for monkey 3) and longer latencies (p<0.0001 for both monkeys) when targets appeared inside the RFs, but not when targets appeared elsewhere.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 provide converging behavioral evidence with appropriate statistical tests demonstrating spatial specificity of the optogenetic effect. The retinotopic specificity (C16) and quantitative comparisons with statistical validation (C17, C18) strongly support the conclusion that optical stimulation produces localized behavioral deficits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "791ab5a8-909f-4f1a-bcb2-3b714826f4dc",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optical stimulation profoundly impairs contrast detection performance. Both monkeys detected visual stimuli more frequently on control than laser trials (p<0.001), with neither monkey achieving above-chance accuracy on laser trials even at maximum contrast. In most sessions (10/11 for monkey 2, 11/12 for monkey 3) and blocks (52/69 and 63/81 respectively), optical stimulation significantly reduced detection or increased thresholds beyond display limits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 provide extensive quantitative behavioral data with appropriate statistical tests across multiple sessions and blocks. The consistency of effects across animals and the magnitude of impairment (inability to detect even maximum contrast stimuli, C20) strongly support the conclusion of profound behavioral effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "b5145a72-f23d-42ed-9525-1a9a7081da1a",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The behavioral effects of optical stimulation are dose-dependent, stable over time, and do not show evidence of compensation. Effects increased steeply with laser power between 12.8-22.3 mW and saturated by 30.0 mW, remained consistent across ~1000 trials (~50 mins), showed no correlation with block number (r=0.18, p=0.59), and did not differ between early and late trials (p=0.79).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 provide comprehensive characterization of the temporal stability and dose-response properties of the optogenetic manipulation. The statistical analyses appropriately test for adaptation or compensation effects, and the lack of such effects (C26, C27) distinguishes this approach from prior work. Control trial performance was unaffected by laser power (C24), supporting specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "7fef6be9-b490-476d-aa82-bf606c314509",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Monkeys acquired subtle visual deficits in optogenetically manipulated regions, assessed 22 months post-experiment in monkey 2. The deficit is attributed to potential tissue damage from high laser power (4-160 mW), tissue heating (likely several \u00b0C), or repeated fiber penetrations, though consistency of acute behavioral effects argues against acute damage during experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C39-C44 acknowledge long-term tissue effects but involve substantial speculation about causes (C41, C43). While C40 provides behavioral data showing subtle deficits, C42 documents higher laser power than other studies, and C44 argues against acute damage, the causal attribution remains uncertain. The lack of histological data from monkey 2 and the confound of prior single-unit recordings (C41) limit definitive conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "7521dce7-51b0-4fd2-a121-3029170ed290",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The threshold changes observed in this study (~>100%) were substantially larger than those in previous optogenetic inactivation studies (~5%), potentially due to multiple factors including selective activation of inhibitory neurons, use of ChR2 (higher ion conductance than pumps), higher laser power, and targeting V1 which is indispensable for the tested behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 provide appropriate comparison with prior work and offer plausible mechanistic explanations supported by citations. While C50 involves some speculation, the proposed mechanisms are well-grounded in established principles (ion channel vs pump efficiency, inhibitory neuron connectivity, area-specific necessity) and supported by relevant citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "8624ca2f-5b3b-43d7-94e1-11c66b2a33ba",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The optogenetic manipulation produced changes in visual sensitivity rather than criterion alone, as assessed by signal detection theory. The brevity and unpredictability of optical stimulation makes large, consistent criterion changes on laser trials unlikely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 appropriately address the sensitivity vs. criterion distinction using signal detection theory framework. The argument that brief, unpredictable stimulation is unlikely to produce strategic criterion shifts (C54) is reasonable, though the analysis would be strengthened by explicit presentation of criterion measures alongside d' values.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "869a046a-9ef2-4d7f-b888-058cd225f35c",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Unlike prior work using non-selective promoters that produced phosphenes, selective stimulation of inhibitory neurons with AAV\u2013mDlx5/6\u2013ChR2 did not cause monkeys to make saccades into stimulated receptive fields, suggesting no phosphene perception. This difference is attributed to the neuronal population stimulated (inhibitory vs. mixed excitatory/inhibitory).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 provide appropriate comparison with prior work (Jazayeri et al., 2012) and identify the key methodological difference (promoter selectivity). The behavioral observations (C35) support the inference of no phosphene, and the attribution to neuronal population differences (C36, C37) is well-reasoned. C38 offers a testable hypothesis for future work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "efd3b756-c7dc-42e6-ae75-f8f2c70e3073",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tissue damage from optogenetic manipulations can be mitigated through technical improvements including artificial dura (reducing mechanical damage), red-shifted opsins (reducing thermal damage from lower tissue heating), and step-function opsins (allowing brief, safe pulses to produce sustained effects).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 provide well-supported recommendations for future work, appropriately citing prior studies (C45, C48) and explaining the mechanistic basis for each improvement (C46-C48). These represent established approaches in the field rather than speculative proposals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "3f7ffdcf-624c-4f88-ad47-961b1a125a22",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Optogenetic phototagging using AAV\u2013mDlx5/6\u2013ChR2 enables decisive electrophysiological identification of inhibitory neurons in macaques, addressing the challenge that fast-spiking excitatory neurons in primates undermine traditional spike waveform-based classification methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 appropriately cite prior work on cell-type differences (C55) and classification challenges (C57), identify the technical problem (C56), and demonstrate the solution with data (C58, Figure 9). This represents an important methodological contribution beyond the primary inactivation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "5639aba6-9a59-46d9-a161-16d9512dac1c",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation of inhibitory neurons using AAV\u2013mDlx5/6\u2013ChR2 is a powerful method for spatiotemporally precise neural inactivation in macaques. The approach modulated spiking activity, profoundly reduced visual sensitivity in the represented region of space, avoided rebound firing, and maintained efficacy across >1000 trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 represent the main conclusions of the study, appropriately synthesizing the major findings from histology (selectivity), electrophysiology (C61), behavior (C62), temporal properties (C63), and comparison with alternative methods. The conclusions are well-supported by the collective evidence presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "5a14a3ae-ab8d-4106-a45b-54bd3475b4dc",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Optogenetics provides the fastest reversible neural inactivation method currently available. While successful in rodents and used in pioneering macaque studies, prior approaches using direct hyperpolarization produced small behavioral effects, potentially due to counteracting suppression of inhibitory neurons. An alternative approach activating inhibitory neurons with ChR2 has advantages including higher ion conductance and leveraging GABAergic connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 provide appropriate context from prior work, accurately citing studies in rodents (C29, C32) and macaques (C30), and identifying limitations of previous approaches (C31). The rationale for the ChR2-based inhibitory neuron approach (C33) is well-grounded in established principles and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "43ec96eb-c6dd-4518-9c97-d47223319cbd",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study used three male rhesus monkeys (7-14 kg), with two implanted for chronic recordings. AAV injections targeted V1 with different serotypes and volumes (AAV9 in monkey 2, AAV1 in monkey 3), followed by histological analysis in monkey 1 (45 days post-injection) and electrophysiological recordings in monkeys 2-3 (3-4 weeks post-injection). Recording sites were selected based on visual responsiveness and audible firing rate changes during optical stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C71 provide standard methodological details about subjects, surgical procedures, injection parameters, and site selection criteria. These are appropriately documented and support reproducibility, though the site selection criterion (C71, audible change) introduces potential bias toward strongly modulated sites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    },
+    {
+      "id": "66fcf690-8c80-4de1-b368-c4f20fb4aebf",
+      "content_id": "ad66224a-3ce7-4266-aaef-427fd6a5facd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Behavioral performance was analyzed using signal detection theory (d' calculated from hit and false alarm rates), psychometric functions were fit with Weibull distributions using maximum likelihood with binomial error, and detection threshold was defined as 82% correct performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 describe standard, well-established analysis methods appropriately cited (C72). The Weibull fitting procedure (C73) and threshold definition (C74) are conventional approaches for psychophysical data analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:18:28.971004Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c865ec54-1ef1-4395-98f2-42e506eae0a5",
+      "result_id": "ae15b55b-9068-4540-be54-3a550beef185"
+    },
+    {
+      "claim_id": "48b5539a-53eb-468b-a2d5-4ff6d8694100",
+      "result_id": "ae15b55b-9068-4540-be54-3a550beef185"
+    },
+    {
+      "claim_id": "3682fcd8-8bd9-421c-b78c-54c33b13b810",
+      "result_id": "ae15b55b-9068-4540-be54-3a550beef185"
+    },
+    {
+      "claim_id": "ae83fd6a-5f33-48ef-b113-3b8199e065aa",
+      "result_id": "ae15b55b-9068-4540-be54-3a550beef185"
+    },
+    {
+      "claim_id": "b1ec2b0d-7cf7-4f86-8785-e21b06976209",
+      "result_id": "ae15b55b-9068-4540-be54-3a550beef185"
+    },
+    {
+      "claim_id": "59165976-f5d9-4957-8093-c3597272d789",
+      "result_id": "d9be025b-7ff1-44e8-93fb-eae4614949d2"
+    },
+    {
+      "claim_id": "e4860514-a925-4e83-92cb-2cdd14692f90",
+      "result_id": "d9be025b-7ff1-44e8-93fb-eae4614949d2"
+    },
+    {
+      "claim_id": "96f46d9f-7e85-4cac-8b41-30316580a660",
+      "result_id": "d9be025b-7ff1-44e8-93fb-eae4614949d2"
+    },
+    {
+      "claim_id": "2719c2c8-5793-4253-9209-4652f04c104d",
+      "result_id": "d9be025b-7ff1-44e8-93fb-eae4614949d2"
+    },
+    {
+      "claim_id": "d42273b2-b7c7-41a9-8838-7994077fa2f8",
+      "result_id": "d9be025b-7ff1-44e8-93fb-eae4614949d2"
+    },
+    {
+      "claim_id": "c9417e55-4219-43e3-a21c-7d1d519f922d",
+      "result_id": "44c1be28-dd01-446b-8e75-bb0a2e054275"
+    },
+    {
+      "claim_id": "da6f4a83-04ec-4f54-8408-d265a4fa53a8",
+      "result_id": "44c1be28-dd01-446b-8e75-bb0a2e054275"
+    },
+    {
+      "claim_id": "f01e3ca9-1336-4314-9b76-8b1e509192f9",
+      "result_id": "44c1be28-dd01-446b-8e75-bb0a2e054275"
+    },
+    {
+      "claim_id": "07b2e472-5f53-40d8-b3aa-194b0a7addb8",
+      "result_id": "44c1be28-dd01-446b-8e75-bb0a2e054275"
+    },
+    {
+      "claim_id": "a963304e-1b2f-4ac1-b770-9c6e3f30bdc7",
+      "result_id": "cc64970d-fca9-4448-b483-f8ebe9e7881b"
+    },
+    {
+      "claim_id": "2d755230-c05b-4fca-b6b9-92a78787b9d8",
+      "result_id": "cc64970d-fca9-4448-b483-f8ebe9e7881b"
+    },
+    {
+      "claim_id": "f6dd96f0-e66a-4900-8411-641fe0d650c5",
+      "result_id": "cc64970d-fca9-4448-b483-f8ebe9e7881b"
+    },
+    {
+      "claim_id": "80532091-2acd-4da5-b168-61972bdee618",
+      "result_id": "cc64970d-fca9-4448-b483-f8ebe9e7881b"
+    },
+    {
+      "claim_id": "f6b7889b-2791-480b-b54d-ff285b00761e",
+      "result_id": "791ab5a8-909f-4f1a-bcb2-3b714826f4dc"
+    },
+    {
+      "claim_id": "24d526ec-c154-4c8c-9fc7-a3ffb63ca670",
+      "result_id": "791ab5a8-909f-4f1a-bcb2-3b714826f4dc"
+    },
+    {
+      "claim_id": "9c5b2a9a-66ea-4028-a59c-dfb4287a617c",
+      "result_id": "791ab5a8-909f-4f1a-bcb2-3b714826f4dc"
+    },
+    {
+      "claim_id": "eb75c130-642b-476a-930b-091b1fbcc4b2",
+      "result_id": "791ab5a8-909f-4f1a-bcb2-3b714826f4dc"
+    },
+    {
+      "claim_id": "bf9abcca-19d4-4e19-899a-add6579d5284",
+      "result_id": "b5145a72-f23d-42ed-9525-1a9a7081da1a"
+    },
+    {
+      "claim_id": "cd0d6eb4-abb9-4814-a697-910e5395280d",
+      "result_id": "b5145a72-f23d-42ed-9525-1a9a7081da1a"
+    },
+    {
+      "claim_id": "eaa96593-1d16-4e75-abfd-6c52b80b7ad4",
+      "result_id": "b5145a72-f23d-42ed-9525-1a9a7081da1a"
+    },
+    {
+      "claim_id": "17a77925-6da7-4b00-ba7c-9df90046446f",
+      "result_id": "b5145a72-f23d-42ed-9525-1a9a7081da1a"
+    },
+    {
+      "claim_id": "434e331a-94d0-450d-8aa8-578c1c2a05fc",
+      "result_id": "b5145a72-f23d-42ed-9525-1a9a7081da1a"
+    },
+    {
+      "claim_id": "a5cf500d-6831-4b13-a5a1-76f0022d4838",
+      "result_id": "7fef6be9-b490-476d-aa82-bf606c314509"
+    },
+    {
+      "claim_id": "5dfdf74e-e074-4830-96ea-47fdb45130f1",
+      "result_id": "7fef6be9-b490-476d-aa82-bf606c314509"
+    },
+    {
+      "claim_id": "b7bece3a-6fdd-4103-8815-22b18b25f6b8",
+      "result_id": "7fef6be9-b490-476d-aa82-bf606c314509"
+    },
+    {
+      "claim_id": "08fb9a35-c209-4014-bcee-32f4963821a8",
+      "result_id": "7fef6be9-b490-476d-aa82-bf606c314509"
+    },
+    {
+      "claim_id": "cb76c107-1436-4791-98a9-283d5d6a9c71",
+      "result_id": "7fef6be9-b490-476d-aa82-bf606c314509"
+    },
+    {
+      "claim_id": "514f78c2-ff3f-41b2-819d-f49d851ed98d",
+      "result_id": "7fef6be9-b490-476d-aa82-bf606c314509"
+    },
+    {
+      "claim_id": "e3427de4-486c-4719-9a43-600700549d67",
+      "result_id": "7521dce7-51b0-4fd2-a121-3029170ed290"
+    },
+    {
+      "claim_id": "c5743de0-5317-4804-8c85-06c04725e106",
+      "result_id": "7521dce7-51b0-4fd2-a121-3029170ed290"
+    },
+    {
+      "claim_id": "2b6f22a9-aeb4-4335-a676-7d7c25ccbcb4",
+      "result_id": "8624ca2f-5b3b-43d7-94e1-11c66b2a33ba"
+    },
+    {
+      "claim_id": "0d83192e-7569-45b8-8988-48709e2b95bd",
+      "result_id": "8624ca2f-5b3b-43d7-94e1-11c66b2a33ba"
+    },
+    {
+      "claim_id": "f8d6428e-d44d-4840-9946-243c69809aaf",
+      "result_id": "869a046a-9ef2-4d7f-b888-058cd225f35c"
+    },
+    {
+      "claim_id": "d3ff2c92-d34a-442d-b482-8111456990f3",
+      "result_id": "869a046a-9ef2-4d7f-b888-058cd225f35c"
+    },
+    {
+      "claim_id": "7f7d9070-6fed-4195-b24a-093ce3d7f549",
+      "result_id": "869a046a-9ef2-4d7f-b888-058cd225f35c"
+    },
+    {
+      "claim_id": "919193ac-2724-453f-bda9-905eae272362",
+      "result_id": "869a046a-9ef2-4d7f-b888-058cd225f35c"
+    },
+    {
+      "claim_id": "57bcdf24-48a3-481d-81ce-df142fd63959",
+      "result_id": "869a046a-9ef2-4d7f-b888-058cd225f35c"
+    },
+    {
+      "claim_id": "0023d592-d6f5-4721-bd77-a04064570565",
+      "result_id": "efd3b756-c7dc-42e6-ae75-f8f2c70e3073"
+    },
+    {
+      "claim_id": "87f95335-3253-4f40-a63f-6bb974c768b2",
+      "result_id": "efd3b756-c7dc-42e6-ae75-f8f2c70e3073"
+    },
+    {
+      "claim_id": "71666558-8129-45ec-b07d-faba6966b543",
+      "result_id": "efd3b756-c7dc-42e6-ae75-f8f2c70e3073"
+    },
+    {
+      "claim_id": "593391c6-f689-4d43-a66d-df88787938a5",
+      "result_id": "efd3b756-c7dc-42e6-ae75-f8f2c70e3073"
+    },
+    {
+      "claim_id": "598cdfb9-9696-4c52-863c-57a8019e612f",
+      "result_id": "3f7ffdcf-624c-4f88-ad47-961b1a125a22"
+    },
+    {
+      "claim_id": "74f9d346-deb5-41c3-8308-8dbe7b85c619",
+      "result_id": "3f7ffdcf-624c-4f88-ad47-961b1a125a22"
+    },
+    {
+      "claim_id": "36df3ef8-b393-41cd-8750-5a30ed2fbb99",
+      "result_id": "3f7ffdcf-624c-4f88-ad47-961b1a125a22"
+    },
+    {
+      "claim_id": "66c2d71d-2111-44fb-b5d7-ac2f07ae3e19",
+      "result_id": "3f7ffdcf-624c-4f88-ad47-961b1a125a22"
+    },
+    {
+      "claim_id": "1946c029-3bd1-43e9-9650-d6915dea4c9b",
+      "result_id": "5639aba6-9a59-46d9-a161-16d9512dac1c"
+    },
+    {
+      "claim_id": "7a0286b6-9116-4eda-b488-5a3d05d9daae",
+      "result_id": "5639aba6-9a59-46d9-a161-16d9512dac1c"
+    },
+    {
+      "claim_id": "f5f1aa87-af9d-4292-9ecc-3ffcf835d7e2",
+      "result_id": "5639aba6-9a59-46d9-a161-16d9512dac1c"
+    },
+    {
+      "claim_id": "05f8aa54-4ecf-449f-a367-d18093aaeef7",
+      "result_id": "5639aba6-9a59-46d9-a161-16d9512dac1c"
+    },
+    {
+      "claim_id": "9937d6a9-702c-44ac-b50f-bb2df4535d06",
+      "result_id": "5639aba6-9a59-46d9-a161-16d9512dac1c"
+    },
+    {
+      "claim_id": "e84fab7c-5ce8-4e7d-a77f-4c672bac81df",
+      "result_id": "5a14a3ae-ab8d-4106-a45b-54bd3475b4dc"
+    },
+    {
+      "claim_id": "0d1e7735-673f-4786-88f7-81c11fec8117",
+      "result_id": "5a14a3ae-ab8d-4106-a45b-54bd3475b4dc"
+    },
+    {
+      "claim_id": "778d7f63-8006-44ac-ab92-1e875b790311",
+      "result_id": "5a14a3ae-ab8d-4106-a45b-54bd3475b4dc"
+    },
+    {
+      "claim_id": "c5324266-7965-401c-91d9-714137801cf9",
+      "result_id": "5a14a3ae-ab8d-4106-a45b-54bd3475b4dc"
+    },
+    {
+      "claim_id": "7ebd1046-322b-48aa-bba0-60fc97a8350c",
+      "result_id": "5a14a3ae-ab8d-4106-a45b-54bd3475b4dc"
+    },
+    {
+      "claim_id": "9b757b7e-e803-484a-8df0-3dfd4a28f1c8",
+      "result_id": "5a14a3ae-ab8d-4106-a45b-54bd3475b4dc"
+    },
+    {
+      "claim_id": "6bdd1022-32d0-431f-8cb3-f3bc5bf00eee",
+      "result_id": "43ec96eb-c6dd-4518-9c97-d47223319cbd"
+    },
+    {
+      "claim_id": "87c694f1-099b-46bf-a424-1f8be08d3134",
+      "result_id": "43ec96eb-c6dd-4518-9c97-d47223319cbd"
+    },
+    {
+      "claim_id": "f3300d8f-33d3-4b29-bf13-bf7b164866f6",
+      "result_id": "43ec96eb-c6dd-4518-9c97-d47223319cbd"
+    },
+    {
+      "claim_id": "428f716e-0c7e-4abc-a0ae-d6f18ec1b152",
+      "result_id": "43ec96eb-c6dd-4518-9c97-d47223319cbd"
+    },
+    {
+      "claim_id": "f9267ed9-d173-419c-b4ed-ffed4526b8e4",
+      "result_id": "43ec96eb-c6dd-4518-9c97-d47223319cbd"
+    },
+    {
+      "claim_id": "44a0e926-2725-45ce-83d5-518b57d39234",
+      "result_id": "43ec96eb-c6dd-4518-9c97-d47223319cbd"
+    },
+    {
+      "claim_id": "13503ef1-2467-40a3-9ca5-1a02f9b274b1",
+      "result_id": "43ec96eb-c6dd-4518-9c97-d47223319cbd"
+    },
+    {
+      "claim_id": "15ccce8f-cf5e-4be2-b937-e1fde14bc847",
+      "result_id": "43ec96eb-c6dd-4518-9c97-d47223319cbd"
+    },
+    {
+      "claim_id": "9221501b-d06b-4812-9b20-0c32a35750cd",
+      "result_id": "66fcf690-8c80-4de1-b368-c4f20fb4aebf"
+    },
+    {
+      "claim_id": "4d9b7e66-d422-46b5-8063-bc383746ed73",
+      "result_id": "66fcf690-8c80-4de1-b368-c4f20fb4aebf"
+    },
+    {
+      "claim_id": "c9428d4b-4ac4-409d-b304-d6b428f8a8f3",
+      "result_id": "66fcf690-8c80-4de1-b368-c4f20fb4aebf"
+    }
+  ],
+  "comparisons": []
+}

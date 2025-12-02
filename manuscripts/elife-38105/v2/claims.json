@@ -1,0 +1,1501 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "The VGG-16 network is a deep convolutional neural network used as a model of the visual system in this study.",
+    "claim_type": "EXPLICIT",
+    "source": "The network used in this study\u2014VGG-16, (Simonyan and Zisserman, 2014)\u2014is shown in Figure 1A and explained in Materials and methods, 'Network Model'.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript directly states that VGG-16 is the network used and cites the source.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Early convolutional layers of VGG-16 are best at predicting activity of voxels in V1.",
+    "claim_type": "EXPLICIT",
+    "source": "This network was explored in (G\u00fc\u00e7l\u00fc and van Gerven, 2015), where it was shown that early convolutional layers of this CNN are best at predicting activity of voxels in V1, while late convolutional layers are best at predicting activity of voxels in the object-selective lateral occipital area (LO).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to a previous study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Late convolutional layers of VGG-16 are best at predicting activity of voxels in the object-selective lateral occipital area (LO).",
+    "claim_type": "EXPLICIT",
+    "source": "This network was explored in (G\u00fc\u00e7l\u00fc and van Gerven, 2015), where it was shown that early convolutional layers of this CNN are best at predicting activity of voxels in V1, while late convolutional layers are best at predicting activity of voxels in the object-selective lateral occipital area (LO).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to a previous study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "Tuning curves in all layers show higher correlation with gradient values than expected by chance.",
+    "claim_type": "EXPLICIT",
+    "source": "As can be seen, tuning curves in all layers show higher correlation with gradient values than expected by chance (as assayed by shuffled controls), but this correlation is relatively low, increasing across layers from about .2 to .5.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 2C and comparison to shuffled controls.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The correlation between tuning curves and gradient values is relatively low, increasing across layers from about 0.2 to 0.5.",
+    "claim_type": "EXPLICIT",
+    "source": "As can be seen, tuning curves in all layers show higher correlation with gradient values than expected by chance (as assayed by shuffled controls), but this correlation is relatively low, increasing across layers from about .2 to .5.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 2C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "Overall tuning quality increases with layer depth.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall tuning quality also increases with layer depth (Figure 2B), but less strongly.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 2B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Strong tuning values can be associated with weak or even negative gradient values.",
+    "claim_type": "EXPLICIT",
+    "source": "As these distributions show, strong tuning values can be associated with weak or even negative gradient values.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 2D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Negative gradient values indicate that increasing the activity of that feature map makes the network less likely to categorize the image as the given category.",
+    "claim_type": "EXPLICIT",
+    "source": "Negative gradient values indicate that increasing the activity of that feature map makes the network less likely to categorize the image as the given category.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an explanation of what negative gradient values mean in the context of the model.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Feature maps that strongly prefer a category may not be involved in its classification, or even be inversely related to it.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, even feature maps that strongly prefer a category (and are only a few layers from the classifier) still may not be involved in its classification, or even be inversely related to it.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the observation that strong tuning values can be associated with negative gradient values.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Category selectivity does not predict impact on classification.",
+    "claim_type": "EXPLICIT",
+    "source": "This is aligned with a recent neural network ablation study that shows category selectivity does not predict impact on classification (Morcos et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to another study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Binary classification performance on merged images is 64.4% without attention.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of these classifiers on the test images indicates that this is a challenging task for the network (64.4% on merged images and 55.6% on array, Figure 1D. Chance is 50%), and thus a good opportunity to see the effects of attention.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 1D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Binary classification performance on array images is 55.6% without attention.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of these classifiers on the test images indicates that this is a challenging task for the network (64.4% on merged images and 55.6% on array, Figure 1D. Chance is 50%), and thus a good opportunity to see the effects of attention.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 1D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Chance performance for the binary classification task is 50%.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of these classifiers on the test images indicates that this is a challenging task for the network (64.4% on merged images and 55.6% on array, Figure 1D. Chance is 50%), and thus a good opportunity to see the effects of attention.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is stated directly in the text.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Feature-based attention is implemented by modulating the activity of units in each feature map according to how strongly the feature map prefers the attended object category.",
+    "claim_type": "EXPLICIT",
+    "source": "We implement feature-based attention in this network by modulating the activity of units in each feature map according to how strongly the feature map prefers the attended object category (see Materials and methods, 'Tuning values' and 'How attention is applied').",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the implementation method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "The slope of the activation function of units in a given feature map is scaled according to the tuning value of that feature map for the attended category.",
+    "claim_type": "EXPLICIT",
+    "source": "The slope of the activation function of units in a given feature map is scaled according to the tuning value of that feature map for the attended category (positive tuning values increase the slope while negative tuning values decrease it).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the implementation method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Positive tuning values increase the slope of the activation function while negative tuning values decrease it.",
+    "claim_type": "EXPLICIT",
+    "source": "The slope of the activation function of units in a given feature map is scaled according to the tuning value of that feature map for the attended category (positive tuning values increase the slope while negative tuning values decrease it).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the implementation method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "The impact of attention on activity is multiplicative and bi-directional.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus the impact of attention on activity is multiplicative and bi-directional.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The manuscript describes the implementation method.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "Attention enhances performance on both merged and array image tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "For both image types (merged and array), attention enhances performance and there is a clear increase in performance enhancement as attention is applied at later layers in the network (numbering is as in Figure 1A).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "There is a clear increase in performance enhancement as attention is applied at later layers in the network.",
+    "claim_type": "EXPLICIT",
+    "source": "For both image types (merged and array), attention enhances performance and there is a clear increase in performance enhancement as attention is applied at later layers in the network (numbering is as in Figure 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "Attention applied at the final convolutional layer leads to an 18.8% percentage point increase in binary classification on the merged images task.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, attention applied at the final convolutional layer performs best, leading to an 18.8% percentage point increase in binary classification on the merged images task and 22.8% increase on the array images task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "Attention applied at the final convolutional layer leads to a 22.8% percentage point increase in binary classification on the array images task.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, attention applied at the final convolutional layer performs best, leading to an 18.8% percentage point increase in binary classification on the merged images task and 22.8% increase on the array images task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "FSGM-like effects can have large beneficial impacts on performance.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, FSGM-like effects can have large beneficial impacts on performance.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the performance improvements observed when attention is applied.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "Attention applied at all layers simultaneously does not lead to better performance than attention applied at any individual layer.",
+    "claim_type": "EXPLICIT",
+    "source": "Attention applied at all layers simultaneously does not lead to better performance than attention applied at any individual layer (Figure 3\u2014figure supplement 1A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 3\u2014figure supplement 1A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Multiplicative and bidirectional effects work best for attention implementation.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, multiplicative and bidirectional effects work best.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 3\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "Attention applied using gradient values shows the same layer-wise trend as when using tuning values.",
+    "claim_type": "EXPLICIT",
+    "source": "Attention applied using gradient values shows the same layer-wise trend as when using tuning values.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "Attention applied using gradient values reaches the same performance enhancement peak as tuning values when applied at the final layers.",
+    "claim_type": "EXPLICIT",
+    "source": "It also reaches the same performance enhancement peak when attention is applied at the final layers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Attention applied according to gradient values outperforms that of tuning values when applied at middle layers of the network.",
+    "claim_type": "EXPLICIT",
+    "source": "The major difference, however, comes when attention is applied at middle layers of the network. Here, attention applied according to gradient values outperforms that of tuning values.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Attention at lower layers is less effective at moving performance in true positive/false positive space and movement is in somewhat random directions.",
+    "claim_type": "EXPLICIT",
+    "source": "Looking at the effects of applying attention at different layers, we can see that attention at lower layers is less effective at moving the performance in this space and that movement is in somewhat random directions, although there is an average increase in performance with moderate attentional strength.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "With attention applied at later layers, true positive rates are more likely to increase for moderate attentional strengths.",
+    "claim_type": "EXPLICIT",
+    "source": "With attention applied at later layers, true positive rates are more likely to increase for moderate attentional strengths, while substantial false positive rate increases occur only with higher strengths.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "When attention is applied with modest strength at layer 13, most categories see a substantial increase in true positives with only modest increases in false positives.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, when attention is applied with modest strength at layer 13, most categories see a substantial increase in true positives with only modest increases in false positives.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "As attention strength continues to increase, false positives increase substantially and eventually lead to a net decrease in overall classifier performance.",
+    "claim_type": "EXPLICIT",
+    "source": "As strength continues to increase however, false positives increase substantially and eventually lead to a net decrease in overall classifier performance (representing as crossing the dotted line in Figure 4A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 4A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "Neurons in MT showed an average increase in activity of 7% when attending their preferred motion direction.",
+    "claim_type": "EXPLICIT",
+    "source": "Experimentally, when switching from no or neutral attention, neurons in MT showed an average increase in activity of 7% when attending their preferred motion direction (and similar decrease when attending the non-preferred) (Martinez-Trujillo and Treue, 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "The majority of human detection experiments show a concurrent increase in both true and false positive rates as attention strength is increased.",
+    "claim_type": "EXPLICIT",
+    "source": "The majority of these experiments show a concurrent increase in both true and false positive rates as attention strength is increased.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data from multiple experimental studies shown in Figure 4B.",
+    "evidence_type": [
+      "CITATION",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "For the model to achieve the performance changes observed between low and medium attention in the macaque change detection study, a roughly 12% activity change is needed.",
+    "claim_type": "EXPLICIT",
+    "source": "For the model to achieve the performance changes observed between low and medium attention a roughly 12% activity change is needed, but average V4 firing rates recorded during this task show an increase of only 3.6%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is calculated by comparing model results to experimental data.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Average V4 firing rates recorded during the macaque change detection task show an increase of only 3.6%.",
+    "claim_type": "EXPLICIT",
+    "source": "For the model to achieve the performance changes observed between low and medium attention a roughly 12% activity change is needed, but average V4 firing rates recorded during this task show an increase of only 3.6%.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The discrepancy between model-predicted and observed activity changes may suggest that changes in correlations or firing rate changes in areas aside from V4 also make important contributions to observed performance changes.",
+    "claim_type": "EXPLICIT",
+    "source": "This discrepancy may suggest that changes in correlations (Cohen and Maunsell, 2009) or firing rate changes in areas aside from V4 also make important contributions to observed performance changes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation based on the observed discrepancy.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The size of experimentally observed performance changes is broadly consistent with the size of experimentally observed neural changes.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, according to our model, the size of experimentally observed performance changes is broadly consistent with the size of experimentally observed neural changes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the comparison of model results to experimental data.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "Varying the strength of attention applied at the final convolutional layer has more favorable performance effects than altering the classifier threshold.",
+    "claim_type": "EXPLICIT",
+    "source": "Comparing this to the pink line, it is clear that varying the strength of attention applied at the final convolutional layer has more favorable performance effects than altering the classifier threshold (which corresponds to an additive effect of attention at the classifier layer).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 4B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The model roughly matches experiments in the amount of neural modulation needed to create the observed changes in true and false positive rates.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, the model roughly matches experiments in the amount of neural modulation needed to create the observed changes in true and false positive rates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the comparison of model results to experimental data.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The performance of binary classifiers on the orientation detection task without attention is above chance.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of these binary classifiers without attention is above chance (distribution across orientations shown in inset of Figure 5A).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The performance of the binary classifier associated with vertical orientation (0 degrees) was abnormally high at 92% correct without attention.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of the binary classifier associated with vertical orientation (0 degrees) was abnormally high (92% correct without attention, other orientations average 60.25%. This likely reflects the over-representation of vertical lines in the training images) and this orientation was excluded from further performance analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "Other orientations average 60.25% correct without attention in the orientation detection task.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of the binary classifier associated with vertical orientation (0 degrees) was abnormally high (92% correct without attention, other orientations average 60.25%. This likely reflects the over-representation of vertical lines in the training images) and this orientation was excluded from further performance analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5A.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The abnormally high performance for vertical orientation likely reflects the over-representation of vertical lines in the training images.",
+    "claim_type": "EXPLICIT",
+    "source": "The performance of the binary classifier associated with vertical orientation (0 degrees) was abnormally high (92% correct without attention, other orientations average 60.25%. This likely reflects the over-representation of vertical lines in the training images) and this orientation was excluded from further performance analysis.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about the cause of the abnormal performance.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The trend in the orientation detection task is similar to that of the object task: applying attention at later layers leads to larger performance increases.",
+    "claim_type": "EXPLICIT",
+    "source": "We find (Figure 5D, solid line and Figure 3\u2014figure supplement 1B, red) that the trend in this task is similar to that of the object task: applying attention at later layers leads to larger performance increases (14.4% percentage point increase at layer 10).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Applying attention at layer 10 in the orientation detection task leads to a 14.4% percentage point increase in performance.",
+    "claim_type": "EXPLICIT",
+    "source": "We find (Figure 5D, solid line and Figure 3\u2014figure supplement 1B, red) that the trend in this task is similar to that of the object task: applying attention at later layers leads to larger performance increases (14.4% percentage point increase at layer 10).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "Orientation tuning quality peaks in the middle layers.",
+    "claim_type": "EXPLICIT",
+    "source": "This is despite the fact that orientation tuning quality peaks in the middle layers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "The average correlation between gradient values and tuning values increases with layer in the orientation detection task.",
+    "claim_type": "EXPLICIT",
+    "source": "While overall the correlations between gradient values and tuning values are lower (and even negative for early layers), the average correlation still increases with layer (Figure 5C), as with the category detection task.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "Using gradient values creates similar trends as using tuning values in the orientation detection task, with gradient values performing better in the middle layers.",
+    "claim_type": "EXPLICIT",
+    "source": "Here again, using gradient value creates similar trends as using tuning values, with gradient values performing better in the middle layers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "Gradients perform significantly better than tuning at layer 7 in the orientation detection task.",
+    "claim_type": "EXPLICIT",
+    "source": "Gradients perform significantly (p=1.9e -2) better than tuning at layer 7.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by statistical analysis of the data shown in Figure 5D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "Both spatial and feature-based attention influence sensitivity and criteria.",
+    "claim_type": "EXPLICIT",
+    "source": "Figure 5E shows that both spatial and feature-based attention influence sensitivity and criteria.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Feature-based attention decreases criteria more than spatial attention does.",
+    "claim_type": "EXPLICIT",
+    "source": "However, feature-based attention decreases criteria more than spatial attention does.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "Sensitivity increases more for spatial attention alone than for feature-based attention alone.",
+    "claim_type": "EXPLICIT",
+    "source": "Sensitivity increases more for spatial attention alone than for feature-based attention alone, indicating that spatial attention amplifies differences in the representation of whichever features are present.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 5E.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "Spatial attention amplifies differences in the representation of whichever features are present.",
+    "claim_type": "EXPLICIT",
+    "source": "Sensitivity increases more for spatial attention alone than for feature-based attention alone, indicating that spatial attention amplifies differences in the representation of whichever features are present.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the observation that spatial attention increases sensitivity more than feature-based attention.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Spatial attention was found experimentally to increase sensitivity and (less reliably) decrease criteria.",
+    "claim_type": "EXPLICIT",
+    "source": "In line with our results, spatial attention was found experimentally to increase sensitivity and (less reliably) decrease criteria (Hawkins et al., 1990; Downing, 1988).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Feature-based attention is known to decrease criteria, with lesser effects on sensitivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Furthermore, feature-based attention is known to decrease criteria, with lesser effects on sensitivity (Rahnev et al., 2011; Bang and Rahnev, 2017; though see Stein and Peelen, 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "Spatial attention increases sensitivity more than category-based attention.",
+    "claim_type": "EXPLICIT",
+    "source": "A study that looked explicitly at the different effects of spatial and category-based attention (Stein and Peelen, 2017) found that spatial attention increases sensitivity more than category-based attention (most visible in their Experiment 3c, which uses natural images), and the effects of the two are additive.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "The effects of spatial and category-based attention are additive.",
+    "claim_type": "EXPLICIT",
+    "source": "A study that looked explicitly at the different effects of spatial and category-based attention (Stein and Peelen, 2017) found that spatial attention increases sensitivity more than category-based attention (most visible in their Experiment 3c, which uses natural images), and the effects of the two are additive.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "Differences in V4 neural activity were observed between trials using high versus low sensitivity stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "Differences in V4 neural activity were observed between trials using high versus low sensitivity stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study (Luo and Maunsell, 2015).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "No differences in V4 neural activity were observed between trials using high versus low criteria stimuli.",
+    "claim_type": "EXPLICIT",
+    "source": "No differences were observed between trials using high versus low criteria stimuli.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study (Luo and Maunsell, 2015).",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "Areas outside of the ventral stream (or at least outside V4) are capable of impacting criteria.",
+    "claim_type": "EXPLICIT",
+    "source": "This indicates that areas outside of the ventral stream (or at least outside V4) are capable of impacting criteria (Sridharan et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the experimental observation and supported by citation.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "As FSGM activity changes propagate through the network, the FSGM effects wear off.",
+    "claim_type": "EXPLICIT",
+    "source": "As these activity changes propagate through the network, however, the FSGM effects wear off, suggesting that activating units tuned for a stimulus at one layer does not necessarily activate cells tuned for that stimulus at the next.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Activating units tuned for a stimulus at one layer does not necessarily activate cells tuned for that stimulus at the next.",
+    "claim_type": "EXPLICIT",
+    "source": "As these activity changes propagate through the network, however, the FSGM effects wear off, suggesting that activating units tuned for a stimulus at one layer does not necessarily activate cells tuned for that stimulus at the next.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the observation that FSGM effects wear off as they propagate.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "The misalignment between tuning at one layer and the next explains why attention applied at all layers simultaneously isn't more effective.",
+    "claim_type": "EXPLICIT",
+    "source": "This misalignment between tuning at one layer and the next explains why attention applied at all layers simultaneously isn't more effective (Figure 3\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is inferred from the observation of misalignment and the performance data.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Applying attention to a category at one layer can actually have effects that counteract attention at a later layer.",
+    "claim_type": "EXPLICIT",
+    "source": "In fact, applying attention to a category at one layer can actually have effects that counteract attention at a later layer (see Figure 6\u2014figure supplement 1).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 6\u2014figure supplement 1.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "When attention is applied according to gradient values, the effects at the layer at which attention is applied do not look strongly like FSGM.",
+    "claim_type": "EXPLICIT",
+    "source": "In Figure 6C (right), we show the same analysis, but while applying attention according to gradient values. The effects at the layer at which attention is applied do not look strongly like FSGM, however FSGM properties evolve as the activity changes propagate through the network, leading to clear FSGM-like effects at the final layer.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "FSGM properties evolve as activity changes propagate through the network when attention is applied according to gradient values, leading to clear FSGM-like effects at the final layer.",
+    "claim_type": "EXPLICIT",
+    "source": "In Figure 6C (right), we show the same analysis, but while applying attention according to gradient values. The effects at the layer at which attention is applied do not look strongly like FSGM, however FSGM properties evolve as the activity changes propagate through the network, leading to clear FSGM-like effects at the final layer.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Finding FSGM-like behaviour in neural data could be a result of FSGM effects at that area or non-FSGM effects at an earlier area.",
+    "claim_type": "EXPLICIT",
+    "source": "Finding FSGM-like behaviour in neural data could thus be a result of FSGM effects at that area or non-FSGM effects at an earlier area (here, attention applied according to gradients which, especially at earlier layers, are not aligned with tuning).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the observation that gradient-based attention can produce FSGM-like effects at later layers.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "As early as one layer post-attention, some feature maps start showing feature matching behaviour.",
+    "claim_type": "EXPLICIT",
+    "source": "As early as one layer post-attention, some feature maps start showing feature matching behaviour.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 6D.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "FSGM effects can turn into FM effects as they propagate through the network.",
+    "claim_type": "EXPLICIT",
+    "source": "The fact that the attention literature contains conflicting findings regarding the feature similarity gain model versus the feature matching model (Motter, 1994; Ruff and Born, 2015) may result from this finding that FSGM effects can turn into FM effects as they propagate through the network.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation based on the model findings and cited experimental conflicts.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Feature matching behaviour is observed more in FEF than V4.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, this mechanism can explain the observations that feature matching behaviour is observed more in FEF than V4 (Zhou and Desimone, 2011) and that match information is more easily read out from perirhinal cortex than IT (Pagan et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Match information is more easily read out from perirhinal cortex than IT.",
+    "claim_type": "EXPLICIT",
+    "source": "In particular, this mechanism can explain the observations that feature matching behaviour is observed more in FEF than V4 (Zhou and Desimone, 2011) and that match information is more easily read out from perirhinal cortex than IT (Pagan et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "A new measure of activity changes inspired by gradient values better correlates with performance changes than the FSGM measure of activity changes, particularly at earlier layers.",
+    "claim_type": "EXPLICIT",
+    "source": "We show (Figure 6\u2014figure supplement 2) that this new measure better correlates with performance changes than the FSGM measure of activity changes, particularly at earlier layers.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 6\u2014figure supplement 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "An experiment that recorded from the same neurons during both an orientation-based color classification task and an orientation detection task could distinguish between tuning-based and gradient-based attention.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, an experiment that recorded from the same neurons during both tasks could distinguish between tuning-based and gradient-based attention.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a proposed experiment based on the model findings.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "Gradient-based attention will produce different neural modulations for the orientation-based color classification task and the orientation detection task, while the FSGM predicts identical modulations.",
+    "claim_type": "EXPLICIT",
+    "source": "But gradient-based attention will produce different neural modulations for the two tasks, while the FSGM predicts identical modulations (Figure 7C).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "The claim is supported by data shown in Figure 7C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Neural modulations of the kind and magnitude observed experimentally lead to performance changes of the kind and magnitude observed experimentally.",
+    "claim_type": "EXPLICIT",
+    "source": "Using a variety of visual tasks, we show that neural modulations of the kind and magnitude observed experimentally lead to performance changes of the kind and magnitude observed experimentally.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary claim supported by the various experimental comparisons throughout the paper.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "At earlier layers, attention applied according to tuning does not successfully propagate through the network.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that, at earlier layers, attention applied according to tuning does not successfully propagate through the network, and has a weaker impact on performance than attention applied according to values computed for optimally modulating higher areas.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary claim supported by the data shown in Figures 3B and 6C.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "At earlier layers, attention applied according to tuning has a weaker impact on performance than attention applied according to values computed for optimally modulating higher areas.",
+    "claim_type": "EXPLICIT",
+    "source": "We find that, at earlier layers, attention applied according to tuning does not successfully propagate through the network, and has a weaker impact on performance than attention applied according to values computed for optimally modulating higher areas.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary claim supported by the data shown in Figure 3B.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "Biological attention might be applied at least in part to optimize function rather than strictly according to tuning.",
+    "claim_type": "EXPLICIT",
+    "source": "This raises the question of whether biological attention might be applied at least in part to optimize function rather than strictly according to tuning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation based on the model findings.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Deep convolutional neural networks can reach near-human performance on some visual tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "But given that CNNs can reach near-human performance on some visual tasks and have architectural and representational similarities to the visual system, they are well-positioned for exploring how neural correlates of attention can impact behaviour.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge in the field.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "CNNs have architectural and representational similarities to the visual system.",
+    "claim_type": "EXPLICIT",
+    "source": "But given that CNNs can reach near-human performance on some visual tasks and have architectural and representational similarities to the visual system, they are well-positioned for exploring how neural correlates of attention can impact behaviour.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is established knowledge in the field, supported by multiple citations throughout the paper.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The feature similarity gain model claims that a neuron's activity is multiplicatively scaled up (or down) according to how much it prefers (or doesn't prefer) the properties of the attended stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "This model, introduced by Treue and Martinez-Trujillo, claims that a neuron's activity is multiplicatively scaled up (or down) according to how much it prefers (or doesn't prefer) the properties of the attended stimulus (Treue and Mart\u00ednez Trujillo, 1999; Martinez-Trujillo and Treue, 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to the original studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "FBA effects are spatially global: if a task performed at one location in the visual field activates attention to a particular feature, neurons that represent that feature across the visual field will be affected.",
+    "claim_type": "EXPLICIT",
+    "source": "FBA effects are spatially global: if a task performed at one location in the visual field activates attention to a particular feature, neurons that represent that feature across the visual field will be affected (Zhang and Luck, 2009; Saenz et al., 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "Feature-based attention leads to a general shift in the representation of the neural population towards that of the attended stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, this leads to a general shift in the representation of the neural population towards that of the attended stimulus (\u00c7ukur et al., 2013; Kaiser et al., 2016; Peelen and Kastner, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "The effects of combined feature and spatial attention have been found to be additive.",
+    "claim_type": "EXPLICIT",
+    "source": "The effects of combined feature and spatial attention have been found to be additive (Hayden and Gallant, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "Many studies of attention focus on V4 and MT/MST, as these areas have reliable attentional effects.",
+    "claim_type": "EXPLICIT",
+    "source": "Many studies of attention focus on V4 and MT/MST (Treue, 2001), as these areas have reliable attentional effects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to a review.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Some studies find attention effects at earlier areas, though they tend to be weaker and occur later in the visual response.",
+    "claim_type": "EXPLICIT",
+    "source": "Some studies do find effects at earlier areas (Moro et al., 2010), though they tend to be weaker and occur later in the visual response (Kastner and Pinsk, 2004).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "A leading hypothesis is that attention signals, coming from prefrontal areas, target later visual areas, and the feedback connections that those areas send to earlier ones cause the weaker effects seen there later.",
+    "claim_type": "EXPLICIT",
+    "source": "Therefore, a leading hypothesis is that attention signals, coming from prefrontal areas (Moore and Armstrong, 2003; Monosov et al., 2011; Bichot et al., 2015; Kornblith and Tsao, 2017), target later visual areas, and the feedback connections that those areas send to earlier ones cause the weaker effects seen there later (Buffalo et al., 2010; Luck et al., 1997).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Covert visual attention has been shown repeatedly to enhance performance on challenging visual tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "Covert visual attention\u2014applied according to spatial location or visual features\u2014has been shown repeatedly to enhance performance on challenging visual tasks (Carrasco, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to a review.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "Neural modulations associated with attention include changes in firing rates, noise levels, and correlated activity.",
+    "claim_type": "EXPLICIT",
+    "source": "Such experiments have identified numerous neural modulations associated with attention, including changes in firing rates, noise levels, and correlated activity (Treue, 2001; Cohen and Maunsell, 2009; Fries et al., 2001; Maunsell and Cook, 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "When CNNs are trained to successfully perform object classification on real-world images, the intermediate representations learned are remarkably similar to those of the primate visual system.",
+    "claim_type": "EXPLICIT",
+    "source": "Recently it has been shown that when these networks are trained to successfully perform object classification on real-world images, the intermediate representations learned are remarkably similar to those of the primate visual system, making CNNs state-of-the-art models of the ventral stream (Yamins et al., 2014; Khaligh-Razavi et al., 2017; Khaligh-Razavi and Kriegeskorte, 2014; Kheradpisheh et al., 2016; Kar et al., 2017; Cadena et al., 2017; Tripp, 2017; Love et al., 2017; Kubilius et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to multiple studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Early convolutional layers of deep CNNs best capture the representation of V1.",
+    "claim_type": "EXPLICIT",
+    "source": "A key finding has been the correspondence between different areas in the ventral stream and layers in the deep CNNs, with early convolutional layers best able to capture the representation of V1 and middle and higher layers best able to capture V4 and IT, respectively (G\u00fc\u00e7l\u00fc and van Gerven, 2015; Eickenberg et al., 2017; Yamins et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "Middle and higher layers of deep CNNs best capture V4 and IT, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "A key finding has been the correspondence between different areas in the ventral stream and layers in the deep CNNs, with early convolutional layers best able to capture the representation of V1 and middle and higher layers best able to capture V4 and IT, respectively (G\u00fc\u00e7l\u00fc and van Gerven, 2015; Eickenberg et al., 2017; Yamins et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "The generalizability of CNNs is limited, and the models are not able to match all elements of visual behaviour.",
+    "claim_type": "EXPLICIT",
+    "source": "The generalizability of these networks is limited, however, and the models are not able to match all elements of visual behaviour (Ullman et al., 2016; Azulay and Weiss, 2018; Baker et al., 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to studies showing limitations.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Attention is most effective applied at later layers (e.g., layers 9\u201313), which correspond most to areas V4 and LO.",
+    "claim_type": "EXPLICIT",
+    "source": "Attention is most effective applied at later layers (e.g., layers 9\u201313), where tuning and gradient values are better correlated. According to (G\u00fc\u00e7l\u00fc and van Gerven, 2015), these layers correspond most to areas V4 and LO.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the performance data and supported by citation.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "V4 and LO are known and studied for reliably showing attentional effects, whereas earlier areas such as V1 are generally not.",
+    "claim_type": "EXPLICIT",
+    "source": "Such areas are known and studied for reliably showing attentional effects, whereas earlier areas such as V1 are generally not (Luck et al., 1997; Abdelhack and Kamitani, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The strength of category-specific preparatory activity in object selective cortex was correlated with performance in a study involving detection of objects in natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "In a study involving detection of objects in natural scenes, the strength of category-specific preparatory activity in object selective cortex was correlated with performance, whereas such preparatory activity in V1 was anti-correlated with performance (Peelen and Kastner, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "Category-specific preparatory activity in V1 was anti-correlated with performance in a study involving detection of objects in natural scenes.",
+    "claim_type": "EXPLICIT",
+    "source": "In a study involving detection of objects in natural scenes, the strength of category-specific preparatory activity in object selective cortex was correlated with performance, whereas such preparatory activity in V1 was anti-correlated with performance (Peelen and Kastner, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "In a V4 study, the correlation coefficient between an index of tuning and an index of attentional modulation was 0.52.",
+    "claim_type": "EXPLICIT",
+    "source": "In (Chelazzi et al., 1998) the correlation coefficient between an index of tuning and an index of attentional modulation was .52 for a population of V4 neurons, suggesting factors other than selectivity influence attention.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "A correlation between normalization and attentional modulation has been shown.",
+    "claim_type": "EXPLICIT",
+    "source": "Local connectivity is also likely to play a role, as a correlation between normalization and attentional modulation has been shown (Ni et al., 2012).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to an experimental study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "It is plausible that the visual system can learn the connections needed to carry out gradient-based attention.",
+    "claim_type": "EXPLICIT",
+    "source": "We believe that it is plausible that the visual system can learn the connections needed to carry out gradient-based attention.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about biological plausibility.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "An anti-Hebbian post-pre spike timing-dependent learning rule would strengthen the connection from a high level neuron to a low level one, if the lower level one causes the firing of the higher.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, if a high-level neuron related to the classification of an image sends a feedback connection to lower areas, an anti-Hebbian post-pre spike timing-dependent learning rule would strengthen the connection from the high level neuron to the low level one, if the lower level one causes the firing of the higher.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about a possible biological mechanism.",
+    "evidence_type": [
+      "SPECULATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "It is more difficult to imagine how higher areas could learn the connections needed to target neurons according to their tuning, as in the FSGM.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, it is actually more difficult to imagine how higher areas could learn the connections needed to target neurons according to their tuning, as in the FSGM.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is speculation about biological plausibility.",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C109",
+    "claim": "CNNs lack many biological details including recurrent connections, dynamics, cell types, and noisy responses.",
+    "claim_type": "EXPLICIT",
+    "source": "While CNNs have representations that are similar to the ventral stream, they lack many biological details including recurrent connections, dynamics, cell types, and noisy responses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a known limitation of the model.",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C110",
+    "claim": "Preliminary work has shown that biological elements can be incorporated into a CNN structure, and attention can enhance performance in this more biologically-realistic architecture.",
+    "claim_type": "EXPLICIT",
+    "source": "Preliminary work has shown that these elements can be incorporated into a CNN structure, and attention can enhance performance in this more biologically-realistic architecture (Lindsay et al., 2017).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citation to a previous study.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C111",
+    "claim": "Coarse stimulation protocols have found a relationship between the tuning of neural populations and their impact on perception.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus far, coarse stimulation protocols have found a relationship between the tuning of neural populations and their impact on perception (Moeller et al., 2017; DeAngelis et al., 1998; Salzman et al., 1990).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C112",
+    "claim": "Studies of the relationship between tuning and choice probabilities suggest that a neuron's preferred stimulus is not always an indication of its causal role in classification.",
+    "claim_type": "EXPLICIT",
+    "source": "However, studies of the relationship between tuning and choice probabilities suggest that a neuron's preferred stimulus is not always an indication of its causal role in classification (Zaidel et al., 2017; Purushothaman and Bradley, 2005), though see (Katz et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C113",
+    "claim": "VGG-16 achieved 92.7% top-5 accuracy on ImageNet classification.",
+    "claim_type": "EXPLICIT",
+    "source": "Looking at the top-5 error rate (wherein an image is correctly labelled if the true category appears in the top five categories given by the network), this network achieved 92.7% accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a reported performance metric for the network.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C114",
+    "claim": "Merged images are generated by transparently overlaying two images, each from a different category.",
+    "claim_type": "EXPLICIT",
+    "source": "Merged images are generated by transparently overlaying two images, each from a different category (specifically, pixel values from each are divided by two and then summed).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the method for creating test images.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C115",
+    "claim": "Array images are composed of four separate images that are scaled down to 112 by 112 pixels and placed on a two by two grid.",
+    "claim_type": "EXPLICIT",
+    "source": "Array images are composed of four separate images (all from different categories) that are scaled down to 112 by 112 pixels and placed on a two by two grid.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the method for creating test images.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C116",
+    "claim": "Test image sets are balanced (50% do contain the given category and 50% do not).",
+    "claim_type": "EXPLICIT",
+    "source": "Test image sets are balanced (50% do contain the given category and 50% do not, 150 total test images per category).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This describes the composition of the test sets.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C117",
+    "claim": "Feature-based attention shifts the representations of all stimuli in the direction of the attended category, implicitly lowering the detection threshold.",
+    "claim_type": "EXPLICIT",
+    "source": "Intuitively, feature-based attention shifts the representations of all stimuli in the direction of the attended category, implicitly lowering the detection threshold.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an intuitive explanation of the mechanism.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C118",
+    "claim": "During a change detection task, feature-based attention is deployed to the pre-change features of a stimulus.",
+    "claim_type": "EXPLICIT",
+    "source": "Previous work has demonstrated that, during a change detection task, feature-based attention is deployed to the pre-change features of a stimulus (Cohen and Maunsell, 2011; Mayo et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "The claim is supported by citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  }
+]

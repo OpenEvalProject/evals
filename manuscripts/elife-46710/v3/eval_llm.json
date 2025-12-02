@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C59",
+      "C2",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The cryo-EM structure of XtOTOP3 was determined to 3.9 \u00c5 resolution, revealing a homodimeric architecture with each subunit containing 12 transmembrane helices organized into two structurally homologous \u03b1-helical barrels. This represents a novel protein fold with no structural homologs identified in database searches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C59, C2, C65, C66, and C67 are well-supported by the cryo-EM data presented in Figures 2 and supplementary figures. The resolution, structural features, and novelty of the fold are documented with appropriate density maps, structural analysis, and DALI searches. The quality of the density map (C59) supports the model building, and the lack of structural homologs (C66) justifies the claim of a new fold (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "XtOTOP3 localizes to the plasma membrane and conducts proton-selective currents that are activated by extracellular acidification, with significantly larger currents at pH below 5.0. The channel's proton selectivity is confirmed by reversal potential measurements matching Nernst potentials and lack of sensitivity to monovalent cation substitution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by comprehensive electrophysiology data shown in Figure 1. Confocal imaging (C39), whole-cell recordings (C40-C41), reversal potential analysis (C42), and ion substitution experiments (C43) provide converging evidence for proton selectivity (C44). The experimental design is appropriate and the data quality appears sufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "XtOTOP3 exhibits rapid current decay caused by both intracellular proton accumulation and intracellular pH-dependent desensitization. The channel becomes inactive at intracellular pH 6.0 but conducts robustly at pH 6.5 or higher, with progressive shifts in reversal potential and current amplitude during repetitive stimulation reflecting local proton accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C54 are supported by systematic electrophysiology experiments shown in Figure 1d-e. The dual mechanism of current decay (C47) is inferred from two complementary experiments: fixed intracellular pH measurements (C48-C50) and repetitive voltage ramp protocols (C51-C53). The logic connecting these observations is sound, though the inference nature of some claims (C47, C50, C52-C54) should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Unlike mouse OTOP1 which is blocked only by Zn2+, XtOTOP3 is partially blocked by both Zn2+ and Ca2+ from the extracellular side. The Ca2+ blockage may be physiologically relevant given high extracellular Ca2+ concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by electrophysiology data in Figure 1f-g showing differential divalent cation sensitivity between MmOTOP1 and XtOTOP3. However, C58 is speculative about physiological relevance. While the speculation is reasonable, it lacks direct experimental validation. The result is supported for the experimental findings but the physiological significance claim is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The N-terminus inside orientation of XtOTOP3 was confirmed using a fluorescence protease protection assay, where N-terminal GFP-tagged protein was resistant to extracellular protease but became susceptible after membrane permeabilization with digitonin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by the FPP assay data shown in Figure 2\u2014figure supplement 4. The experimental design is appropriate for determining membrane protein topology, with proper controls (before and after permeabilization). The inference of N-terminus inside orientation (C64) logically follows from the experimental observations (C62-C63).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "XtOTOP3 dimerization is mediated by extensive hydrophobic contacts between TM1 and TMs 9-10 from neighboring subunits (1536 \u00c5\u00b2 contact area). The dimer encloses a hydrophobic central cavity likely filled with lipids, supported by elongated lipid-like densities observed in the structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by structural analysis shown in Figure 2. The dimerization interface (C68-C69) is well-documented with calculated surface area. The hydrophobic cavity (C70) and observed densities (C72) support the speculation about lipid filling (C71), though this remains inferential. The functional relevance of dimerization is acknowledged as untested in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Each XtOTOP3 subunit contains two structurally independent \u03b1-helical barrels forming potential N-pore and C-pore ion conduction pathways. Both pores are open from the extracellular side but become occluded at constriction points formed by conserved triads (Gln232/585-Asp262/Asn623-Tyr322/666) midway through the membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C73-C77 are supported by structural analysis shown in Figures 2-3. The identification of two pores (C73), their structural independence (C74), solvent accessibility (C75), and constriction points (C4-C5, C76) are documented. However, the functional role as proton conduction pores (C3, C73) involves speculation that is acknowledged in the discussion (C109-C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Mutagenesis reveals differential sensitivity of the two constriction triads: the C-pore triad is less amenable to perturbation than the N-pore triad, suggesting unequal contribution to proton transport. The C-pore triad contains the conserved FYR motif and forms an extensive hydrogen-bonding network absent in the N-pore, indicating the C-pore plays a more determinant role in channel activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C78-C89 are supported by comprehensive mutagenesis data in Figure 3d-e combined with structural analysis in Figure 3b-c. The differential sensitivity (C6, C81-C82) is clearly demonstrated, and structural features explaining this difference (C83-C88) are well-documented. The inference about unequal contribution (C7, C89) is reasonable but should be noted as interpretive rather than directly proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The inter-pore interface is asymmetric: tightly packed and hydrophobic on the extracellular half, but solvent-accessible on the intracellular half. A conserved acidic residue (Glu321) is positioned at the center of the hydrophobic interface and is essential for channel function, as its neutralization abolishes activity while conservative substitution to Asp preserves function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C97 are supported by structural analysis (Figure 4a-b) and mutagenesis data (Figure 4d). The asymmetric interface (C90-C91), conserved residues (C92-C94), and functional importance of Glu321 (C95-C96) are well-documented. The inference about essentiality (C97) is reasonable given the mutagenesis results and conservation, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The intracellular inter-pore interface contains a solvent-accessible cavity with conserved residues Asp509 and His669. His669 mutations abolish channel activity, while Asp509 mutations dramatically slow desensitization without eliminating conductance. This effect is conserved in mouse OTOP1, indicating Asp509 has a general role in intracellular pH-dependent desensitization across OTOP family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C98-C107 are supported by structural analysis (Figure 4c) and extensive mutagenesis data (Figure 4d-e, supplements). The structural features (C98-C101) are well-documented, and functional effects of mutations (C102-C106) are clearly demonstrated. The generalization to OTOP family (C107) is supported by data from both XtOTOP3 and MmOTOP1 (C106), though testing in additional family members would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "pH regulates XtOTOP3 activity bidirectionally: low extracellular pH activates the channel while low intracellular pH inactivates it, demonstrating pH-dependent regulation from both sides of the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by the comprehensive electrophysiology data presented throughout Figure 1, particularly panels b and d. The bidirectional pH regulation is clearly demonstrated with appropriate controls and is a key functional characteristic of the channel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The current structure likely represents a closed state based on observed constrictions, but direct evidence for the ion conduction pathway is lacking. Alternative mechanisms, including allosteric modulation of an unidentified pathway by the constriction triads, cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C112 represent acknowledged limitations and uncertainties in the study. While the speculation about closed state (C108) is reasonable given the constrictions, the authors appropriately note the lack of direct evidence (C109-C110) and consider alternative mechanisms (C111-C112). These are honest assessments of uncertainty rather than supported conclusions, and further structural and functional studies are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background claims establishing the biological importance of proton transport, the identification of OTOP channels as proton channels, OTOP1 as the sour taste receptor, and the roles of OTOP family members in various physiological processes including otoconia/otolith development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C10-C36 are background/context claims supported by appropriate citations to prior literature. These establish the scientific context for the current work and appear to accurately represent the cited studies. While these are not original findings of this manuscript, they are appropriately referenced and provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116"
+    ],
+    "result": "The XtOTOP3 structure and identified functional hotspots will serve as a valuable template for future mechanistic studies of OTOP proton channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 is a reasonable forward-looking statement based on the comprehensive structural and functional characterization presented. The novel structure, identified functional residues, and mechanistic insights provide a solid foundation for future studies, though the actual utility will depend on subsequent research.",
+    "result_type": "MINOR"
+  }
+]

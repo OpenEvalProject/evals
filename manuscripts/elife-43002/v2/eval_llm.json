@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript provides background on ribosome biogenesis, its disruption, and associated phenotypes. These claims establish that ribosome production is resource-intensive, that disruptions lead to diverse phenotypes including ribosomopathies and cancer, and that excess r-proteins are normally degraded to prevent aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 are all supported by citations to prior literature and represent established knowledge in the field. These background claims provide context for the experimental work but do not constitute novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Depletion of rRNA processing factors (Las1, Rat1, Rrp17, Rrp44) using auxin-inducible degradation leads to rapid accumulation of pre-rRNA, reduction in free 60S subunits, and specific activation of Hsf1 target genes without activating the general stress response (Msn2/4 targets).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C27 are well-supported by experimental data including Western blots (C16), Northern blots (C17, C24), sucrose gradients (C18-C19), RNA-seq (C20), ChIP-qPCR (C22), and appropriate controls (C23, C25-C27). The specificity of Hsf1 activation is demonstrated through multiple orthogonal approaches including anchor-away and control depletions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The transcriptional response to rRNA processing factor depletion is highly specific: Hsf1 targets are activated without activation of Msn2/4-dependent ESR genes, a pattern previously observed only under acute proteostatic strain. Hsf1 activation occurs within minutes of disrupting rRNA processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by RNA-seq data (C28-C29), citations to prior work (C30), and kinetic analysis (C31). The specificity of the response is a key finding that distinguishes this stress from general environmental stress responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "When r-protein synthesis is inhibited (by rapamycin or cycloheximide) while rRNA synthesis continues, pre-rRNA accumulates but Hsf1 is not activated. This demonstrates that excess r-proteins relative to rRNA, not the reverse imbalance, triggers the Hsf1-dependent proteostatic stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by Northern blot data (C33-C35) and citation (C32). The inference in C36 is logical and well-supported by the directional specificity of the response. This is a critical control experiment that establishes the directionality of the imbalance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Treatment with diazaborine (DZA), which specifically inhibits the r-protein assembly factor Drg1, leads to rapid and specific activation of Hsf1 targets without activating Msn2/4 targets or the UPR. This response is adaptive (returns to baseline by 90 min), confers thermotolerance, and includes upregulation of proteasome subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C46 are well-supported by citations (C37-C38), Northern blots (C39-C41), genetic controls with DZA-resistant mutant (C42), thermotolerance assay (C43), and RNA-seq data (C44-C46). The specificity of DZA and the comprehensive characterization of the response strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Depletion of r-protein-specific chaperones (escortins Tsr2, Sqt1, Yar1) leads to accumulation of Hsf1 target genes without affecting Msn2/4 targets, demonstrating that orphan r-proteins are sufficient to activate the Hsf1 regulon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by Northern blot data showing specific Hsf1 activation upon escortin depletion. The inference in C50 is well-justified as escortin depletion would specifically affect r-protein folding and assembly, providing orthogonal evidence for the orphan r-protein model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "During RPAS, r-protein genes are specifically downregulated while ribosome biogenesis factor genes are not, and this occurs independently of TORC1 signaling (as evidenced by unchanged phospho-Rps6 levels).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by RNA-seq data (C51), citations and data (C52), and Western blot analysis (C53). The independence from TORC1 signaling is an important mechanistic distinction from canonical stress responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "RPAS leads to a >50% reduction in translational output that cannot be explained by ribosome dilution alone (which would cause at most 20% reduction in 20 min) and occurs independently of Gcn2-mediated eIF2\u03b1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 are supported by Western blot data of V5-tagged proteins (C54), quantitative reasoning (C55), and Western blot showing no eIF2\u03b1 phosphorylation (C56). The magnitude of translational repression exceeding what ribosome dilution could explain is a key observation, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Newly synthesized r-proteins aggregate during RPAS in a translation-dependent manner. Specific r-proteins (Rps26, Rpl10, Rpl3) show 3-5 fold increases in the insoluble fraction upon DZA treatment, while mature assembled r-proteins show minimal aggregation. The aggregation is not dependent on RNA/DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 are supported by citations (C57-C58), Northern blots showing CHX blocks Hsf1 activation (C59-C60), sedimentation assays (C61-C65), and benzonase treatment (C64). The distinction between newly synthesized and mature r-proteins (C62 vs C65) is particularly important for establishing that aggregation is specific to orphan r-proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Quantitative mass spectrometry reveals that a broad complement of r-proteins, particularly 60S subunit proteins, aggregate during RPAS. Additionally, nucleolar ribosome biogenesis factors show prominent aggregation, suggesting that DZA treatment causes aggregation of both cytosolic and nuclear r-proteins along with collateral aggregation of biogenesis factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by quantitative mass spectrometry data. The breadth of r-protein aggregation beyond direct Drg1 targets (C67) and the identification of nucleolar factors (C68) strengthen the model. The inference about nuclear aggregation (C69) is reasonable given the data, though direct visualization would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RPAS disrupts proteostasis in both nuclear and cytosolic compartments. The Hsp40 chaperone Sis1 relocalizes to form a ring-like structure at the nuclear periphery, the nucleolar protein Cfi1 moves inward, and cytosolic Hsp104 foci increase from 1-2 to 7-8 per cell. These effects are blocked by translation inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by confocal microscopy data with quantification. The CHX block (C72) demonstrates dependence on newly synthesized proteins. The inference about proteostasis disruption in both compartments (C74) is well-supported by the spatial reorganization of quality control factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Wild-type Hsf1 function is critical for adaptation to RPAS. The hsf1 po4* hypoinducer mutant shows severe growth defects in DZA, and loss of the proteasome regulator RPN4 confers a ~25-fold growth defect in DZA. Loss of the non-essential proteasome subunit PRE9 confers DZA resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by growth assays (C75-C76) and competitive fitness assays (C77-C78). The importance of Hsf1 and proteasome function is clearly demonstrated. The PRE9 result (C78) is interesting but the mechanism is speculative and would benefit from further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C106"
+    ],
+    "result": "Exogenous activation of the Hsf1 regulon by estradiol-induced expression of Hsf1DBD-VP16 provides >40% growth enhancement in DZA and AZC, demonstrating that bolstering proteostasis capacity can protect cells from RPAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79 and C106 are supported by growth assays with appropriate controls. This is a key result demonstrating the functional importance of the Hsf1 response and suggesting potential therapeutic strategies. The independence from cell size changes strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Cells with lower rates of ribosome production (grown in glycerol vs glucose, or sch9\u0394 mutants) show reduced Hsf1 activation in response to DZA, indicating that rapidly proliferating cells with high ribosome production are at greater risk of experiencing RPAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are supported by Northern blot data (C80-C82) showing reduced Hsf1 activation in slower-growing conditions. The inference about proliferating cells being at greater risk (C83-C84) is logical and well-supported. This provides important context for understanding when RPAS is most likely to occur.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "The authors propose a model where excess orphan r-proteins from aberrant ribosome biogenesis drive proteotoxicity by aggregating and sequestering chaperones, leading to Hsf1 activation and upregulation of proteostasis machinery. This response supports cell fitness and protects against RPAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 and C89 represent the central model of the paper, synthesizing the experimental findings. The model is well-supported by the collective evidence showing r-protein aggregation, Hsf1 activation, and fitness benefits of enhanced proteostasis. The chaperone sequestration mechanism (C86) is inferred but consistent with established Hsf1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The discussion contextualizes RPAS within broader biological contexts, noting that excess r-proteins are normally degraded, that many conditions can disrupt ribosome biogenesis (chemotherapeutics, environmental stress, aging, cancer, ribosomopathies), and that cell type-specific vulnerability may relate to growth rate and ribosome production demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C105 are discussion points supported by citations to prior literature. These claims place the findings in broader context and suggest implications, but do not represent novel experimental findings from this study. The speculation about cell-type specificity (C96) is reasonable but requires future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Alleviating proteotoxic stress enhances cell growth under RPAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is directly supported by the estradiol pre-conditioning experiments (Figure 6E) showing growth enhancement. This is a key experimental result demonstrating the functional importance of proteostasis in RPAS.",
+    "result_type": "MAJOR"
+  }
+]

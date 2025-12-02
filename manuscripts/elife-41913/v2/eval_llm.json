@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C20"
+    ],
+    "result": "LNCaP and CWR22PC-EP prostate cancer cells containing an AR-responsive reporter (ARR3tk-eGFP) display >100-fold heterogeneity in eGFP expression despite similar AR protein levels by immunofluorescence. This heterogeneity is stable for over 30 days post-sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16, C17, and C20 are well-supported by flow cytometry data (Figure 1C), immunofluorescence microscopy (Figure 1B), and longitudinal flow cytometry analysis (Figure 1G). The data clearly demonstrate substantial heterogeneity in AR transcriptional output that is independent of AR expression levels and remains stable over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C22"
+    ],
+    "result": "ARsig-hi cells express higher levels of endogenous AR target genes (FKBP5, KLK3, TRPM8) and show increased AR transcriptional activity by RNA-seq analysis. This difference is not explained by differential AR expression or nuclear translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, and C22 are supported by qRT-PCR (Figure 1D), western blot (Figure 1E), GSEA analysis (Figure 1F), and nuclear fractionation experiments (Figure 1\u2014figure supplement 2). The data consistently show that ARsig-hi cells have elevated AR target gene expression without corresponding changes in AR protein levels or localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C4"
+    ],
+    "result": "ARsig-hi cells show enhanced sensitivity to DHT in a dose-dependent manner and develop enzalutamide resistance significantly faster than ARsig-lo or parental cells in xenograft models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C4 are supported by qRT-PCR analysis of DHT-induced gene expression (Figure 1H) and xenograft tumor growth data (Figure 1I). The in vivo data demonstrate a clear functional consequence of high AR output in terms of drug resistance, with statistical significance reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Variable intensity of KLK3 staining is observed in tumor cells with comparable AR staining levels in primary prostate cancers, suggesting that AR transcriptional heterogeneity observed in cell lines is present in patient samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25 and C26 are based on immunohistochemistry of a small number of patient samples (Figure 1\u2014figure supplement 4). While the data show heterogeneity, the authors acknowledge this is a small dataset, and the inference about clinical relevance requires more extensive validation. The claim is suggestive but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "RNA-sequencing identified 191 genes upregulated in ARsig-hi cells, with enrichment of luminal cell gene sets. An shRNA screen of 33 candidate genes identified GREB1, GHRHR, and KLF8 as genes that inhibit AR activity when knocked down, all of which are transcriptionally upregulated by DHT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by RNA-seq analysis (Figure 2\u2014source data 1), GSEA (Figure 2A), and functional shRNA screening with flow cytometry and qRT-PCR validation (Figure 2C-E). The experimental design is appropriate and the results are clearly presented with proper controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C5"
+    ],
+    "result": "GREB1 shows a statistically significant positive correlation with AR output score in TCGA primary prostate tumors, with increased expression in cases with high versus low AR scores. This identifies GREB1 as a gene responsible for high AR output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C5 are supported by correlation analysis of TCGA data (Figure 2F) showing statistical significance (r=0.55, p<0.0001). The clinical dataset analysis strengthens the case for GREB1 over the other two candidates (GHRHR, KLF8) which did not show significant correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "GREB1 upregulation and its effect on AR output are confirmed in CWR22PC-EP cells by qRT-PCR, flow cytometry, and CRISPR/Cas9-mediated knockout experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by data from an independent cell line (CWR22PC-EP) using multiple experimental approaches including qRT-PCR (Figure 2\u2014figure supplement 1A), flow cytometry (Figure 2\u2014figure supplement 1B), and CRISPR/Cas9 with multiple sgRNAs (Figure 2G-H). This provides strong validation across different experimental systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C30"
+    ],
+    "result": "GREB1 is an AR target gene, as demonstrated by DHT-induced upregulation of GREB1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C30 are supported by qRT-PCR analysis showing DHT-induced upregulation of GREB1 (Figure 2E). This establishes the feed-forward mechanism where AR activity induces GREB1, which in turn amplifies AR signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "GREB1 overexpression in ARsig-lo cells enhances DHT-induced AR target gene expression in a dose-dependent manner. GREB1 interacts with AR by co-immunoprecipitation and is recruited to KLK3 and FKBP5 enhancer regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by qRT-PCR and western blot data (Figure 3B-C), co-IP experiments (Figure 3D), and ChIP-qPCR (Figure 3E). The data demonstrate both the functional consequence of GREB1 overexpression and its physical interaction with AR at target gene enhancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C8"
+    ],
+    "result": "GREB1 promotes EP300 recruitment to AR target genes. ARsig-hi cells show GREB1-dependent EP300 binding, GREB1 overexpression increases EP300 recruitment in ARsig-lo cells, and EP300 knockdown suppresses the effect of GREB1 overexpression, indicating EP300 is required for GREB1 function as an AR cofactor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 and C8 are supported by ChIP-qPCR experiments (Figure 3F-G, Figure 3\u2014figure supplement 2A-B) showing GREB1-dependent EP300 recruitment and functional dependence on EP300 for GREB1's coactivator function. The data establish a clear mechanistic link between GREB1 and EP300 in AR signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C7"
+    ],
+    "result": "GREB1 impacts AR DNA binding efficiency genome-wide. Knockdown or CRISPR deletion of GREB1 reduces AR binding to target enhancers, while GREB1 overexpression promotes AR recruitment. ChIP-seq shows genome-wide reduction in AR peak height with GREB1 depletion, but no changes in binding site location or consensus motifs, indicating GREB1 enhances AR DNA binding efficiency without altering specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 and C7 are supported by ChIP-qPCR at specific loci (Figure 3H, Figure 3\u2014figure supplement 2C) and genome-wide ChIP-seq analysis (Figure 3I-K, Figure 3\u2014figure supplement 2D-E). The data clearly demonstrate that GREB1 affects AR binding efficiency rather than specificity, representing a novel mechanism distinct from canonical coactivators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Total and nuclear AR levels are not changed by GREB1 knockdown or overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by western blot analysis (Figure 3C, Figure 3\u2014figure supplement 2F-G) showing no changes in AR protein levels with GREB1 manipulation. This is important for establishing that GREB1's effects are not mediated through changes in AR expression or localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C77",
+      "C78"
+    ],
+    "result": "GREB1 functions as a coactivator of both ER and AR but through different mechanisms. Earlier studies and new data show GREB1 does not affect ER DNA binding in breast cancer cells, suggesting different conformational consequences of GREB1 binding on AR versus ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, C77, and C78 are supported by ChIP experiments in MCF7 cells (Figure 3\u2014figure supplement 3A-B) confirming no effect on ER DNA binding, contrasting with the AR DNA binding effects. However, C78 involves speculation about conformational mechanisms that are not directly tested. The differential effects are clearly demonstrated, but the mechanistic explanation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "NCOA1/2 knockdown inhibits AR reporter activity and target gene expression but does not affect AR occupancy of binding sites, demonstrating that GREB1 has unique effects on AR DNA binding that distinguish it from other coactivators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by flow cytometry, qRT-PCR, and ChIP data (Figure 3\u2014figure supplement 3C-E) showing that NCOA1/2 depletion affects AR transcriptional output without affecting AR DNA binding. This provides an important control demonstrating the specificity of GREB1's effect on AR DNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "GREB1 knockdown in ARsig-hi cells inhibits baseline and DHT-induced AR target gene expression, with RNA-seq showing enrichment of androgen down-regulated gene sets and prostate basal cell gene sets. GREB1 knockdown impairs >70% of DHT-induced genes, and there is significant overlap between gene sets enriched in GREB1-depleted ARsig-hi cells and ARsig-lo cells, indicating GREB1 is a major molecular determinant of the ARsig-hi state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by qRT-PCR and western blot (Figure 4A-C), GSEA analysis (Figure 4D), and Venn diagram analysis of RNA-seq data (Figure 4E-F). The comprehensive transcriptomic analysis provides strong evidence that GREB1 is a major determinant of the high AR output phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C9",
+      "C85"
+    ],
+    "result": "GREB1 knockdown in LNCaP/AR ARsig-hi xenografts results in a significant delay in the development of enzalutamide resistance after 10 weeks, providing genetic evidence that GREB1 is required for in vivo enzalutamide resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C9, and C85 are supported by xenograft tumor growth data (Figure 4G) showing statistically significant delays in resistance development with GREB1 knockdown. This is a critical in vivo validation of the therapeutic relevance of GREB1 in enzalutamide resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C83"
+    ],
+    "result": "An overall increase in GREB1 expression is observed in CRPC patients who progressed on enzalutamide treatment, with no significant differences in tumor purity or stromal content between pre- and post-treatment samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66, C67, and C83 are based on analysis of SU2C data (Figure 4H, Figure 4\u2014figure supplement 1F). However, the authors acknowledge that samples are not matched pre- and post-treatment, which limits the strength of this conclusion. The tumor purity analysis helps address potential confounding, but the lack of matched samples and the small post-treatment sample size (n=19) make this result suggestive rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The magnitude of AR signaling output, independent of AR genomic alteration or expression level, contributes to antiandrogen resistance through upregulation of GREB1. GREB1 is a candidate driver of enzalutamide resistance through a novel feed-forward mechanism where GREB1 amplifies AR activity by a two-part mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C10, C71, C72, and C73 represent the main conclusions of the study and are supported by the collective evidence from cell line experiments, mechanistic studies, and xenograft models. The feed-forward mechanism (GREB1 is an AR target that amplifies AR signaling) is well-established through multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "GREB1 binds AR and promotes assembly of an active transcription complex by recruiting histone acetyltransferases such as EP300/CBP, and additionally improves the efficiency of AR binding to DNA, representing a novel two-part mechanism of AR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C75 summarize the mechanistic findings and are supported by co-IP (Figure 3D), ChIP (Figure 3E-G), and ChIP-seq experiments (Figure 3I-K). The two-part mechanism is well-documented through multiple complementary approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "ARsig-lo cells show upregulation of gene sets related to proliferation and cell cycle based on RNA-seq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by RNA-seq analysis (Figure 1\u2014source data 1). This is an interesting observation that distinguishes the current reporter system from previous work, though it is not central to the main conclusions about GREB1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C68",
+      "C69"
+    ],
+    "result": "Background claims about AR amplification as a mechanism of antiandrogen resistance, AR transcriptional heterogeneity in primary prostate cancers, and the role of coactivators are established by citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C15, C68, and C69 are background knowledge supported by appropriate citations to prior studies. These establish the context for the current work and are generally accepted in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C55",
+      "C76",
+      "C79"
+    ],
+    "result": "Background claims about GREB1 in breast cancer, NCOA1/2 function, TRIM24 as an AR cofactor, and androgen's growth inhibitory effects at high concentrations are supported by citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, C55, C76, and C79 are background knowledge supported by appropriate citations. These provide context for interpreting the current findings about GREB1 in prostate cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "High levels of AR transcriptional output can promote castration-resistant disease progression, inferred from evidence about AR amplification and clinical outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is a reasonable inference from the cited evidence (C68, C69) about AR amplification and clinical outcomes. This provides the rationale for investigating non-genomic mechanisms of increased AR output.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "High GREB1 levels could result in growth suppression similar to high androgen concentrations, and high AR output cells would gain a fitness advantage under androgen deprivation or AR inhibition, as demonstrated by enzalutamide resistance in xenografts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80 and C81 involve speculation about mechanisms maintaining stable heterogeneity. While C81 is supported by the xenograft data (Figure 1I), C80 is speculative and not directly tested. The model is plausible but requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C82",
+      "C84"
+    ],
+    "result": "GREB1 levels in CRPC patients may be predictive of response to next generation AR therapy, though the positive correlation of GREB1 with high AR activity is largely based on the hormone-na\u00efve TCGA cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82 and C84 acknowledge limitations and suggest future directions. C84 correctly notes that the TCGA correlation data is from hormone-na\u00efve patients, which is an important caveat. C82 is speculation about future clinical utility that requires prospective validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "A small molecule inhibitor blocking AR N-terminal domain and CBP/EP300 interactions is in clinical development, and similar strategies to disrupt GREB1/AR interaction may be possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by citation and clinical trial reference (NCT02606123). Claim C87 is speculation about future therapeutic strategies based on the current findings. The precedent exists, but the feasibility of targeting GREB1/AR interaction remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "GREB1 binding has different conformational consequences on AR and ER that influence DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C78 is speculation about molecular mechanisms that are not directly tested. While the differential effects on AR versus ER DNA binding are clearly demonstrated (C77), the proposed conformational explanation is hypothetical and would require structural or biophysical studies to validate.",
+    "result_type": "MINOR"
+  }
+]

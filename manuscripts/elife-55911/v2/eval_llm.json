@@ -1,0 +1,469 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript establishes the background context for Huntington's disease (HD), describing it as a dominantly inherited neurodegenerative disorder caused by CAG repeat expansion in the HTT gene, with medium-spiny neurons (MSNs) being particularly vulnerable. Somatic CAG expansion is highlighted as a key driver of disease onset based on GWAS studies, supporting a two-step pathogenesis model involving both CAG expansion rate and toxic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by appropriate citations to prior literature and represent well-established knowledge in the HD field. These background claims provide the scientific rationale for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript reviews prior work showing that DNA repair genes (particularly MMR genes) modify CAG expansion in HD mouse models, that chromatin structure may influence repeat instability, that transcriptional dysregulation and epigenetic alterations contribute to HD pathogenesis, and that HDAC inhibitors have shown beneficial effects in HD mouse models, including reduction of CAG expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are all supported by appropriate citations to prior literature. These claims establish the rationale for investigating HDAC2 and HDAC3 as potential modifiers of HD pathogenesis and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "MSN-specific knockout of Hdac2 or Hdac3 was successfully achieved in the striatum, as demonstrated by loss of HDAC2 or HDAC3 protein in the majority of striatal cells (which are DARPP-32 positive MSNs), with remaining immunopositive cells being DARPP-32 negative. Western blots confirmed loss of HDAC2 protein and revealed compensatory upregulation of HDAC1. Expression was not altered in cortex, confirming cell-type specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are well-supported by immunohistochemistry data (Figure 1B), western blot data (Figure 1\u2014figure supplement 2), and cortical immunostaining (Figure 1\u2014figure supplement 3). The data convincingly demonstrate successful MSN-specific knockout of the target genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Hdac2 KO mice appeared phenotypically normal, while Hdac3 KO mice were significantly smaller with lower body weight and more than half did not survive to five months of age, limiting some aspects of the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by observational data from the mouse cohorts. The differential phenotypes between Hdac2 and Hdac3 knockouts are clearly documented and appropriately acknowledged as a limitation for the Hdac3 studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "MSN-specific knockout of Hdac2 elicited a substantial transcriptional response with approximately 11-12% of genes significantly dysregulated (FDR<0.05), with roughly equal proportions of up- and down-regulated genes. HttQ111/+ striata also exhibited numerous dysregulated genes, though fewer reached statistical significance after multiple testing correction. The transcriptional dysregulation from HttQ111 appeared somewhat muted in the Hdac2 knockout background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are well-supported by RNA-seq differential expression analysis (Figure 2). The statistical analyses are appropriate, using FDR correction for multiple testing. The observation of muted HttQ111 effects in Hdac2 KO background is supported by comparison of contrasts 3 and 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "RNA-seq analysis confirmed Cre-mediated deletion of Hdac2 exons 2-4, revealed compensatory upregulation of Hdac1 transcripts in Hdac2 KO striata (consistent with western blot data), and showed that the HttQ111 allele did not alter expression of Hdac genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by RNA-seq data (Figure 2\u2014figure supplement 1) and are consistent with western blot data (Figure 1\u2014figure supplement 2). The analyses appropriately validate the knockout and examine potential compensatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Principal component analysis of RNA-seq data revealed that Hdac2 genotype accounted for the greatest variance between samples (PC1), sex accounted for the second principal component, and Htt genotype did not clearly separate samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by PCA analysis shown in Figure 2\u2014figure supplement 2. The PCA appropriately characterizes the major sources of variation in the dataset, though the lack of clear separation by Htt genotype may reflect limited power due to sample size and the modest transcriptional effects at this age.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Global levels of striatal H3K9 and H4K12 acetylation showed fairly subtle alterations that appeared to depend on age in Hdac2 KO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by western blot data (Figure 2\u2014figure supplement 3). The subtle effects are consistent with cell-type-specific knockout and previous observations that HDAC inhibition effects are locus-specific. However, the age-dependent effects could benefit from more rigorous statistical analysis across age groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Pathway enrichment analysis revealed that Hdac2 KO and HttQ111 mutations altered shared processes and pathways, including upregulation of cell adhesion, plasma membrane, calcium ion binding, and morphine addiction pathways, and downregulation of neuronal function pathways. Statistical testing showed highly significant overlaps in differentially expressed genes and enriched pathways between the two mutations, with most overlaps representing changes in the same direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by pathway enrichment analysis (Figure 3) and overlap analysis (Figure 3\u2014figure supplement 1) with appropriate statistical testing using Fisher's exact tests. The analyses appropriately characterize the transcriptional consequences of the mutations and their interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "152 genes dysregulated by HttQ111 (representing ~12% of total HttQ111-dysregulated genes at p<0.05) had expression levels that did not differ significantly between Htt+/+ Hdac2 WT and HttQ111/+ Hdac2 KO striata, suggesting normalization or 'rescue' of these genes. Two genes from a set of 29 commonly dysregulated genes (Ppp1r1b and Slc29a1) showed this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by differential expression analysis and statistical testing (Figure 4). The identification of genes with normalized expression is methodologically sound, though the biological significance of this 12% subset requires further validation. The analysis appropriately focuses on robustly dysregulated genes shared with prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "In 29 commonly dysregulated genes (significantly dysregulated in both this study and Langfelder et al.), the relative impact (absolute log2 fold-change) of the HttQ111 allele was reduced in Hdac2 KO mice compared to Hdac2 WT mice, with this enrichment being statistically significant by permutation testing (p<1e-5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by differential expression analysis (Figure 4\u2014figure supplement 1, Figure 5) and permutation testing. The permutation test appropriately assesses the statistical significance of the observed pattern. This represents a novel finding about the genetic interaction between Hdac2 and HttQ111.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "MSN-specific knockout of Hdac2 showed age-dependent effects on CAG expansion: a non-significant reduction at 2.5 months (p=0.42), a significant reduction at 5 months (p=0.0094), and a non-significant reduction at 10 months (p=0.26). Hdac3 knockout also significantly reduced expansion at 5 months (p=0.0026).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by CAG expansion analysis (Figure 6) with appropriate statistical testing (two-tailed unpaired t-tests). The age-dependent effects are clearly documented, though the lack of significance at 10 months may reflect the wide range of CAG lengths in that cohort or limited sample size. The moderate effect size is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Cre recombinase expression alone did not impact CAG expansion, and neither Hdac2 KO nor Hdac3 KO resulted in significant loss of MSNs as determined by DARPP-32-positive cell counts, ruling out alternative explanations for reduced expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by appropriate control experiments (Figure 6\u2014figure supplement 1 and Figure 6\u2014figure supplement 2). These controls are essential for interpreting the CAG expansion results and rule out confounding explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Hdac2 and Hdac3 are moderate enhancers of CAG expansion in MSNs of HttQ111/+ mice, with the impact of Hdac2 KO appearing to depend on age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is an appropriate synthesis of the CAG expansion data (C44-C47). The characterization as 'moderate' enhancers is justified by the effect sizes observed and comparison with MMR gene knockouts that eliminate expansion entirely.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Msh3 mRNA levels were modestly decreased in HttQ111/+ Hdac2 KO striata (nominal p<0.01; adjusted p=0.07), but MSH3 protein levels were not reduced in Hdac2 KO striata, suggesting that altered DNA repair gene expression does not explain the impact on CAG expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by RNA-seq data (Figure 6\u2014figure supplement 3A, B) and western blot analysis (Figure 6\u2014figure supplement 3C, D). The discordance between mRNA and protein levels is appropriately documented and interpreted. This rules out one potential mechanism for the instability effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Small molecule HDAC inhibitors (SAHA, MS-275, and splitomicin) stimulated CAG contractions in a cell-based assay, with magnitude of effect comparable to or exceeding other genetic and pharmacological manipulations previously tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by cell-based assay data (Figure 7B, C). The assay is well-established and appropriately controlled. However, the authors appropriately note that the direction of effect (contraction vs. expansion suppression) differs between the cell assay and mouse models, which requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The manuscript reviews prior work establishing that HttQ111 mice exhibit early diffuse nuclear mutant huntingtin immunostaining (~2.5 months) followed by discrete nuclear inclusions (~6-12 months), occurring selectively in MSNs, with these phenotypes being highly CAG repeat length-dependent and modified by genes that alter somatic expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by appropriate citations to prior literature. These claims establish the rationale for examining nuclear huntingtin pathology as a downstream phenotype and are well-documented in previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Hdac2 KO in MSNs significantly reduced the intensity of diffuse nuclear mutant huntingtin immunostaining at both 2.5 months (p=0.025) and 5 months (p=0.0062), with a stronger impact at 5 months. This effect was not due to Cre expression alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by mAb5374 immunostaining quantification (Figure 8) with appropriate statistical testing and Cre controls (Figure 6\u2014figure supplement 1). The age-dependent strengthening of the effect parallels the CAG expansion results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "In 10-month mice, Hdac2 KO showed a non-significant decrease in nuclear inclusions in the low CAG group (p=0.153) but a statistically significant decrease in the high CAG group (p=0.0261).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by nuclear inclusion quantification (Figure 8) with appropriate statistical testing. The stratification by CAG length is appropriate given the known CAG length-dependence of this phenotype, though the small sample sizes limit power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "In 5-month Hdac3 KO mice, a non-statistically significant trend toward decreased diffuse nuclear mutant huntingtin was observed (p=0.21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by mAb5374 immunostaining quantification (Figure 8C) with appropriate statistical testing. The lack of statistical significance is appropriately acknowledged and likely reflects the small sample size (N=6 WT, N=3 KO) and high mortality in Hdac3 KO mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "There was a strong correlation (Pearson r=0.87, p=0.0011) between mAb5374 intensity and expansion index in 5-month Hdac2 KO cohort mice, consistent with somatic CAG expansion as a modifier of nuclear huntingtin pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by correlation analysis (Figure 8D) with appropriate statistical testing. This correlation provides evidence linking the CAG expansion effects to the nuclear pathology phenotype, though causality cannot be definitively established from correlation alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Hdac2 KO decreased total huntingtin mRNA levels in Htt+/+ striata by 5.9% (nominal p=0.06; adjusted p=0.25) and in HttQ111/+ striata by 11% (nominal p<0.001; adjusted p<0.05), but western blot analyses did not show an impact on steady-state levels of wild-type or mutant huntingtin protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by RNA-seq data (Figure 8\u2014figure supplement 1) and western blot analysis (Figure 8\u2014figure supplement 1C, D). The discordance between mRNA and protein levels is appropriately documented. This suggests that altered huntingtin levels do not readily explain the nuclear pathology effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Exon1-intron1-spanning transcripts were identified in HttQ111/+ striata (consistent with prior studies), but Hdac2 KO had no impact on the number of these aberrant transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by RNA-seq analysis (Figure 8\u2014figure supplement 1B) and citation to prior work. This rules out altered expression of exon1-containing fragments as an explanation for the nuclear pathology effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "MSN-specific knockout of Hdac2 reversed transcriptional dysregulation of a subset of genes, resulted in moderate reduction in somatic CAG expansion and nuclear huntingtin pathology. MSN-specific knockout of Hdac3 resulted in comparable reduction in somatic CAG expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 represent an appropriate synthesis of the major findings from the transcriptional (C22-C43), CAG expansion (C44-C50), and nuclear pathology (C59-C65) analyses. All component claims are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Despite compensatory upregulation of HDAC1, it is unable to compensate for the lack of HDAC2 in MSNs, providing evidence for a specific role of HDAC2 in MSNs and supporting distinct functions of HDAC1 and HDAC2 in adult neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is an inference supported by the substantial transcriptional dysregulation observed despite HDAC1 upregulation (C17, C22-C23, C27), along with citations to prior work. The logic is sound, though direct functional studies would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Approximately 12% of genes dysregulated by HttQ111 were normalized by Hdac2 KO to wild-type levels, while ~24% were further dysregulated in the same direction. Additionally, in the most significantly HttQ111-dysregulated genes, Hdac2 KO lessened the relative impact of the HttQ111 allele regardless of absolute expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by differential expression analysis (Figures 4-5) with appropriate statistical testing including permutation analysis. These findings reveal a complex genetic interaction between Hdac2 and HttQ111, with both ameliorative and exacerbating effects on transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The genetic interaction between Hdac2 KO and HttQ111 indicates a functional relationship that may reflect huntingtin's role in regulating the REST-containing transcriptional repressor complex that includes HDAC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is an inference based on the genetic interaction data and citation to prior work (Buckley et al., 2010). While the genetic interaction is well-documented, the specific mechanistic interpretation involving the REST complex is speculative and would require additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "HDAC inhibitors with activity against HDAC2 would have potential to reverse some early transcriptional changes from expanded CAG mutations, but the results indicate a complex relationship between Hdac2 and expanded CAG repeats with implications for HDAC2 inhibition therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are appropriate inferences from the transcriptional data showing both reversal and exacerbation of gene dysregulation (C76-C78). The cautious interpretation regarding therapeutic implications is warranted given the complexity of the genetic interactions observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Hdac2 and Hdac3 are enhancers of CAG expansion in MSNs, though neither has a large impact compared to MMR genes that are fundamental drivers and whose knockouts eliminate expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by the CAG expansion data (C44-C47) and comparison with prior studies of MMR genes. The characterization as 'moderate' or 'enhancers' rather than 'drivers' is appropriate given the effect sizes and comparison with MMR gene knockouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The results are consistent with prior studies showing that HDAC inhibitor RGFP966 reduced striatal CAG expansion in HttQ111 mice, and that HDAC3 and HDAC5 enhanced CAG expansion in cell-based assays. However, HDAC2 was not implicated in the cell-based system based on differential effects of selective inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 appropriately compare the current findings with prior literature. The citations are appropriate and the comparison highlights both consistencies and differences between model systems, which is important for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Possible mechanisms by which Hdac2 or Hdac3 modify CAG instability include altering chromatin structure near the CAG repeat tract or changing acetylation of DNA repair proteins leading to altered activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 are speculative mechanistic proposals supported by citations to relevant literature but not directly tested in this study. These represent reasonable hypotheses for future investigation but are not experimentally validated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Hdac2 knockout modifies nuclear intensity and inclusion phenotypes in HttQ111 mice at least in part as a consequence of reduced CAG expansion in MSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C89 is supported by the strong correlation between expansion index and nuclear huntingtin intensity (C65) and the known CAG length-dependence of these phenotypes. However, the phrase 'at least in part' appropriately acknowledges that other mechanisms may also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The modest reduction in CAG expansion from Hdac2 knockout is unlikely to explain the reversal of transcriptional dysregulation, where gene expression levels are effectively normalized to wild-type in HttQ111/+ Hdac2 KO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is a reasonable inference based on the magnitude of transcriptional changes (C39-C40, C76) relative to the modest CAG expansion reduction (C45). The logic is sound, suggesting that transcriptional effects are likely independent of the instability effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Hdac2 and Hdac3 are modifiers of different aspects of HD pathogenesis in MSNs, with moderate effects on CAG expansion (which drives disease onset rate in humans) and, for Hdac2, effects on downstream molecular and cellular phenotypes potentially important in toxicity mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 represent an appropriate synthesis of the overall findings. The characterization of effects as 'moderate' is justified by the data, and the distinction between effects on CAG expansion versus downstream phenotypes is well-supported.",
+    "result_type": "MAJOR"
+  }
+]

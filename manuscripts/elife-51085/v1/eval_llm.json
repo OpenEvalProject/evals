@@ -1,0 +1,509 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "CytoCensus is a supervised machine learning tool designed for 3D cell detection in complex tissues using a 2D 'point-and-click' training interface, Random Forests with pre-calculated image features, and proximity maps. It is designed to be user-friendly, robust to poor image quality, and easily installed on standard computers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C17-C19, C36-C50 collectively describe the design, implementation, and capabilities of CytoCensus. The software's architecture (Random Forests, proximity maps), user interface (point-and-click), and performance characteristics are explicitly stated and demonstrated through the manuscript's data and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors developed and validated an ex vivo culture and imaging protocol for Drosophila larval brains that supports normal development over extended periods (>20h), using reduced laser power (10% of normal) with patch-based denoising, and enables quantitation of neuroblast and GMC division rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 and C93-C102 describe the development and validation of the ex vivo imaging protocol. Multiple validation criteria are provided (C93-C101), including brain growth, division rates matching published literature, and sustained normal cell cycle behavior. The measured neuroblast division rate of ~90 min per cycle (C96) matches prior publications (Homem et al., 2013; Bowman et al., 2008), supporting the claim that the protocol accurately represents normal development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "CytoCensus outperforms other freely available image analysis tools (TrackMate, RACE, Fiji-WEKA, Ilastik Pixel Classification) in accuracy and speed for detecting neuroblasts in complex 3D Drosophila brain datasets, achieving significantly higher F1-scores (p=0.005 vs Fiji-WEKA, p=0.007 vs Ilastik).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C121 describe comparative performance testing with appropriate statistical analysis. Ground-truth manual annotations were used (C115), parameters were optimized to prevent overfitting (C116), and F1-scores with statistical significance are reported (C117-C118). The comparison is fair and well-controlled, with multiple tools tested on the same datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "On a neutral challenge dataset of synthetic clustered cells in 3D with low SNR, CytoCensus (F1-score: 0.98 \u00b1 0.05) significantly outperforms Ilastik Pixel Classification (F1-score: 0.88 \u00b1 0.09) in cell centre detection accuracy (p<0.001, n=25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 describe validation on an independent benchmark dataset. The use of a neutral challenge dataset from the Broad Bioimage Benchmark Collection provides unbiased ground truth. The methodology is sound: training on 1 image, parameter optimization on 5 images, and evaluation on 25 images. Statistical significance is properly reported with appropriate sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "CytoCensus performs competitively on the Cell Tracking Challenge Segmentation Benchmark, achieving top 3 performance in detection on 3/6 datasets and in segmentation on 2/6 datasets, performing particularly well on datasets with high cell density and low signal-to-noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 describe performance on an independent benchmark. The results show CytoCensus performs well on datasets matching its design goals (high density, low SNR) but struggles with highly variable cell shapes (C132), which is consistent with the stated limitation of assuming roughly spherical cells (C82). The post-processing approach using MorphACME is clearly described (C129).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C137",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "In syp knockdown Drosophila larvae, brain size is significantly enlarged (23% increase in diameter, 35% increase in volume, p<0.0001), but neuroblast number is unchanged (WT: 45.6\u00b11.3, syp RNAi: 44.1\u00b12.1, n=22 and 15 respectively), suggesting that altered division rate rather than neuroblast number causes the overgrowth phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137, C143-C150 describe the syp brain overgrowth phenotype. The measurements are quantitative with appropriate statistics and sample sizes. CytoCensus was used to count neuroblasts (C147), showing no significant difference (C148). The conclusion that neuroblast number is not the cause (C149) is supported by the data, and the hypothesis about division rate (C150) is reasonable and subsequently tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Using CytoCensus combined with TrackMate tracking, the authors found that syp RNAi neuroblasts have a 1.78-fold shorter cell cycle compared to wild-type (p=0.02, WT n=7, syp RNAi n=5 brains), which is proposed as the primary cause of increased brain size in syp knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C160 describe the measurement of neuroblast division rates. The methodology is clearly described: CytoCensus detection followed by TrackMate tracking (C152), with dramatic improvement in detection accuracy when using CytoCensus proximity maps (F1 score 0.92\u00b10.02 vs 0.11\u00b10.09, C153-C154). The measured 1.78-fold difference in cell cycle length (C158) is statistically significant with appropriate sample sizes. The conclusion that this causes brain enlargement (C159) is a reasonable inference supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "GMC cell cycle length is decreased by 20% in syp RNAi (WT: 8.00h\u00b10.89, syp RNAi: 6.25h\u00b11.45, p=0.01, n=8 each), but GMCs divide normally and terminally, producing no additional cells. The enlarged brain size in syp RNAi is therefore attributed to increased neuroblast division rate producing more GMCs and progeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C171 describe GMC analysis using semi-automated tracking with CytoCensus. The methodology addresses the challenge of identifying GMCs (C162-C163) using high temporal resolution imaging and denoising (C164). The measured 20% decrease in GMC cycle length (C168-C169) is statistically significant, but the observation that GMCs divide normally (C169) and produce no additional cells (C170) supports the conclusion that neuroblast division rate is the primary cause of brain enlargement (C171).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "Using live imaging and CytoCensus, the authors found that individual neuroblasts have constant cell cycle periods but considerable variation exists between neuroblasts within the same brain (>2-fold difference), suggesting neuroblast division rate regulation is a key factor in lineage size variation. syp knockdown neuroblasts show more consistent division rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C181 describe the analysis of individual neuroblast behavior. The finding that each neuroblast has a constant cell cycle period (C177) matches in vitro observations (Homem et al., 2013), while the >2-fold variation between neuroblasts (C178) is a novel observation enabled by the live imaging approach. The inference that division rate regulation contributes to lineage size variation (C179) is reasonable. The observation of more consistent division rates in syp RNAi (C180) is supported by the data and suggests a regulatory role for syp (C181).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "CytoCensus successfully analyzed zebrafish retinal organoids at the single-cell level, reproducing previously published cumulative fluorescence analysis (Eldred et al., 2017) while additionally quantifying photoreceptor cell distribution, which was not possible with the original analysis method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C193 describe the application of CytoCensus to zebrafish organoids. The comparison to prior work (Eldred et al., 2017) is appropriate, and CytoCensus successfully reproduces the published results (C189-C190) while providing additional capability to analyze photoreceptor cells defined by marker combinations (C191). The claim about potential application to live organoid development (C192) is appropriately framed as an expectation rather than demonstrated capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "CytoCensus successfully quantified transcription factor expression (Brachyury, Lhx1, Sox2) in mouse embryos, producing robust quantitation that matches qualitatively reported expression patterns in the field (Piliszek et al., 2016) and matches manual 2D quantification, even for non-spherical cells in epithelial tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C207 describe the application of CytoCensus to mouse embryos. The quantitation of transcription factor expression in specific regions (VE and PPE, C198) is clearly described. The observation that CytoCensus can detect non-spherical cells (C202-C203) by integrating nuclear and membrane markers is important for demonstrating robustness. The results match both manual quantification (C204) and published qualitative patterns (C206), supporting the validity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C208",
+      "C209"
+    ],
+    "result": "CytoCensus was successfully applied to multiple model systems (Drosophila brains, zebrafish organoids, mouse embryos) for quantitating cell numbers, distributions, and divisions in complex 3D/4D tissues, demonstrating wide applicability and providing a practical alternative to bespoke image analysis pipelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C20-C27, C208-C209 describe the overall utility and applications of CytoCensus. The successful application to three different model systems with different tissue types and imaging challenges demonstrates the generalizability of the approach. The claim that it works 'out-of-the-box' (C25) is supported by the ease-of-use design features described in other claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Existing freely available image analysis tools (Ilastik, FARSIGHT, CellProfiler, Advanced Cell Classifier, RACE, SuRVoS, 3D-RSD, MINS) have limitations including requirements for advanced knowledge, extensive manual annotation, 2D-only analysis, or application-specific tailoring, and current deep learning implementations have hardware/installation requirements too complex for typical biologists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35 describe limitations of existing tools based on citations to published literature and the authors' assessment. While these are primarily literature-based claims rather than experimental results, they provide important context for the development of CytoCensus. The assessment is reasonable and supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Generic markers of cellular morphology (Jupiter::GFP, Histone::RFP) offer advantages over specific markers (brightness, usability across mutant backgrounds, low laser power requirements) but create complex images challenging for segmentation. CytoCensus addresses this by using point-and-click training on cell centres, outperforming other approaches and enabling single-cell analysis in complex tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 describe the rationale for using generic markers and how CytoCensus addresses the resulting analysis challenges. The advantages of generic markers (C61-C63) are well-reasoned, and the challenge they create (C64) is addressed by CytoCensus's design (C65). The performance claims (C66-C67) are supported by the comparative testing data described in other results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CytoCensus uses supervised machine learning with 2D point-and-click annotation and 3D proximity map output, making training quick and easy with minimal effort. While neural networks may be superior with extensive training data and appropriate hardware, CytoCensus enables rapid progression from observations to statistically significant results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 describe the training approach and its advantages. The acknowledgment that the approach is subjective and user-dependent (C70) is appropriate. The recommendation to consider neural networks when extensive training data and hardware are available (C72) is reasonable and appropriately caveated. The claim about rapid workflow (C74) is supported by the design features described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The findings on syp's role in neuroblast division rate complement a concurrent study by Samuels et al. (2020a) showing that Syncrip inhibits Imp, which regulates myc mRNA stability, a proto-oncogene regulating size and division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 describe how the current findings relate to concurrent work. The citation to Samuels et al. (2020a) is appropriate, and the mechanistic details (C77) are attributed to that work. This provides important biological context for the division rate findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CytoCensus has a technical limitation in assuming roughly spherical cell shape, meaning cellular projections (axons, dendrites) would not be identified. However, the robustness of cell centre detection even with irregular cells can be useful for further analysis, and outputs are compatible with other programs like FIJI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 honestly describe limitations of the approach. The limitation regarding cell shape (C82-C83) is clearly stated, and the acknowledgment that other programs may be more appropriate for certain questions is appropriate. The claim about compatibility with other software (C85) is supported by the design features described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "With increased availability of high-throughput imaging, there is greater need for automated analysis. While unsupervised methods are ideal but currently in their infancy, minimally supervised methods like CytoCensus are desirable for analyzing larger datasets with statistically significant replicates, empowering researchers to make better use of data and reach more reliable conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 describe the broader context and impact of the work. These are primarily discussion/conclusion claims that synthesize the findings. The assessment of the current state of unsupervised methods (C87) is reasonable, and the claims about CytoCensus's potential impact (C89-C92) are supported by the demonstrated capabilities in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "CytoCensus facilitates automated detection and quantitative analysis of cell types from time-lapse 3D image stacks through single-click annotation in user-defined ROIs, manual evaluation of proximity maps, saving of identification regimes for batch processing, and sequential application of multiple regimes to identify multiple cell classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 describe the workflow and capabilities of CytoCensus. These are clearly demonstrated in Figure 2 and the accompanying text. The workflow is logical and well-designed for user interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "CytoCensus represents a significant advance over other freely available methods in ease of use and ability to accurately analyze cells in large volumes of live imaging data from intact complex tissues, which will greatly facilitate future study of subtle or complex mutant developmental phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 are summary conclusions supported by the comparative performance data (C117-C127) and the successful applications to multiple biological systems. The claim about facilitating future studies (C136) is a reasonable inference based on the demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background context: Drosophila neuroblasts generate diverse neurons and glia through regulated proliferation over >120h development. Modern imaging has been indispensable for studying development, but imaging of intact live brains has been limited to short periods, division rates vary in the literature and haven't been systematically determined for individual neuroblasts, and automated analysis methods lag behind microscopy advances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C15 provide background context supported by appropriate citations to published literature. These establish the motivation for the work and identify gaps in current knowledge and methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Progress in understanding regulated cell proliferation during larval brain development has largely depended on painstaking manual image analysis, but the volume of data from whole brain imaging makes manual assessment impractical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 describe the motivation for developing automated analysis methods. These are supported by citation to published work (Neum\u00fcller et al., 2011) and represent a reasonable assessment of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Background on syp: SYNCRIP/hnRNPQ (mammalian homologue of Syp) is a component of RNA granules in hippocampal neuron dendrites. In Drosophila, Syp determines neuronal fate, is involved in neuroblast termination in pupae, is required for neuromuscular junction development/function, and was previously identified in a screen for genes required for normal brain development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 provide background on syp supported by appropriate citations to published literature. This establishes the biological context for studying the syp knockdown phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "The authors developed ex vivo live imaging of Drosophila brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is a high-level summary of methodological development that is supported by the detailed protocol description in claims C51-C60 and the validation data in claims C93-C102.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "In zebrafish organoids, CytoCensus is generally applicable and compatible with other cell types and live imaging markers, making it possible to easily characterize organoid organization at the cellular level, including analysis of cell types not previously quantified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 summarize the zebrafish organoid findings, which are detailed in claims C183-C193. The capability to analyze cell types not previously quantified (C79) is specifically demonstrated for photoreceptor cells (C191).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The authors quantified transcription factor expression in mouse embryos, illustrating how qualitative phenotypes can be converted into quantitative characterizations, even in epithelial tissue with non-spherical cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 summarize the mouse embryo findings, which are detailed in claims C194-C207. The ability to handle non-spherical cells (C81) is an important demonstration of robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C150",
+      "C182"
+    ],
+    "result": "Future work hypotheses: The authors hypothesize that changes in neuroblast division rate or progeny division might be responsible for syp brain enlargement, and that future work using CytoCensus could link individual neuroblast division rates to neural lineage atlases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150 and C182 are explicitly stated as hypotheses and future work. C150 is subsequently tested and supported (C158-C159), but C182 remains a speculation about future applications. These are appropriately framed as hypotheses/future directions rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

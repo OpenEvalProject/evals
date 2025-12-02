@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors applied Gaussian Process (GP) models to a large-scale drug screening dataset (265 compounds, 1074 cell lines) and identified 24 clinically established biomarkers and 6 novel biomarkers. The uncertainty estimates from the GP models were validated using an independent replicate screen of 26 drugs on 10 cell lines with 8-9 replicates per condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 describe the main dataset, the biomarker identification results, and the validation approach. The dataset size is clearly stated (C3), the identification of 24 established and 6 novel biomarkers is explicitly reported (C4, C5), and validation experiments with replicates are described (C6). These claims are mutually reinforcing and provide converging evidence for the core findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors found that GP estimation uncertainty correlates positively with observation uncertainty when IC50 values are within the tested concentration range (r=0.84), but negatively when IC50 values are extrapolated beyond the maximum concentration (r=-0.39). They conclude that estimation uncertainty is useful for within-range IC50 values but cannot proxy for observation uncertainty when extrapolating beyond the tested range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 provide specific statistical correlations with confidence intervals from replicate experiments. Claims C56-C59 present the authors' hypothesis and conclusions about the relationship between estimation and observation uncertainty. The positive correlation within range and negative correlation beyond range are both statistically significant with reported confidence intervals, and the conclusion (C58-C59) logically follows from the empirical observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "IC50 values from GP and sigmoid curve fitting methods showed high concordance (weighted Pearson correlation 0.88, 95% CI [0.85, 0.91]). Both methods successfully identified known clinically-actionable biomarkers including BRAF mutations with BRAF inhibitors in melanoma and thyroid carcinoma, EGFR mutations with EGFR inhibitors in lung adenocarcinoma, ERBB2 amplification with lapatinib in breast cancer, and TP53 mutations with nutlin-3a resistance across five cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 demonstrate concordance between GP and sigmoid methods through statistical correlation (C24-C25) and validation against known biomarkers (C26-C32). The weighted Pearson correlation of 0.88 with tight confidence intervals indicates strong agreement. Multiple established biomarkers are identified with both statistical significance (ANOVA q-values, Bayesian posterior probabilities) and literature support through citations to clinical studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Six novel drug sensitivity biomarkers were concordantly identified by both GP and sigmoid methods at 0.1% FDR. These include EGFR amplification as a biomarker for daporinad (NAMPT inhibitor) response in glioblastoma, and ARID2 mutations as a biomarker for doramapimod (p38 MAPK inhibitor) response in melanoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 states the overall finding of six novel biomarkers identified concordantly by both methods at stringent FDR threshold. Claims C34-C41 provide detailed examples with mechanistic context. The concordance between two independent curve-fitting methods strengthens confidence in these findings. However, these are computational predictions requiring experimental validation, which is appropriately acknowledged by the authors as 'not yet clinically established.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C61",
+      "C62"
+    ],
+    "result": "The Bayesian model incorporating uncertainty estimates detected BRAF mutations in colorectal cancer as a sensitivity biomarker for dabrafenib, which was less significant by ANOVA. This association has been reported in vitro and in melanoma patients, and BRAF targeting was recently confirmed as viable for metastatic colorectal cancer with BRAF mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 describe how the Bayesian test leverages uncertainty information to detect this biomarker more effectively than ANOVA. The Bayesian model appropriately weights cell lines with low uncertainty more heavily (C46). Claims C43-C45 and C62 provide literature support showing this association exists in vitro and has recent clinical validation (Kopetz et al., 2019), supporting the biological plausibility and clinical relevance of the computational finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C63",
+      "C64"
+    ],
+    "result": "The ANOVA model detected KRAS copy number alteration as a resistance biomarker for lenalidomide in melanoma, but the Bayesian model excluded this association due to high uncertainty in the mutant cell line responses. Lenalidomide has had no clinical success in KRAS mutant cases or melanoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 describe the discrepancy between ANOVA and Bayesian results, with the Bayesian model appropriately accounting for high uncertainty in the mutant estimates (C48). Claims C63-C64 provide the interpretation and clinical context showing lenalidomide has not been successful in these contexts. This demonstrates the value of incorporating uncertainty: the Bayesian model correctly excludes a false positive that ANOVA detects, as supported by negative clinical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Experiments showing partial drug response (AUC 0.4-0.9) had the greatest difference between GP and sigmoid AUC estimates and the highest estimation uncertainty. High estimation uncertainty from GPs correlated with high Spearman correlation (poor quality) in the raw dose-response data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 describe the relationship between estimation uncertainty and data quality. The observation that partial responders have highest uncertainty and greatest method disagreement is logical and supported by Figure 3A. The correlation between GP uncertainty estimates and Spearman correlation (a quality metric) validates that the GP uncertainty captures genuine data quality issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C72",
+      "C73"
+    ],
+    "result": "GP models can fit a wider variety of dose-response curves than parametric sigmoidal models and provide straightforward uncertainty quantification for any summary statistic. The GP model uses a two-component Beta mixture to handle outliers at higher doses, which cannot be modeled with simple Gaussian noise without overestimating the noise parameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe advantages of the GP approach in terms of flexibility and uncertainty quantification. Claims C72-C73 explain the technical approach to handling outliers. These are well-established properties of GP models and mixture models. The authors appropriately describe the methodological advantages, though the actual demonstration of fitting 'unexpected shapes' or 'off-target effects' is limited in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The GP model's increased flexibility comes at a cost: there are few constraints on curve behavior outside observed dosages, leading to counter-intuitive behavior where posterior mean estimates can increase when extrapolating beyond maximum dosage, accompanied by commensurate increases in posterior variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe a known limitation of non-parametric models when extrapolating. The authors appropriately acknowledge this limitation and note that increased uncertainty accompanies the counter-intuitive mean behavior (C55), as shown in Figures 5D-E. This is an honest assessment of the method's limitations and the uncertainty appropriately reflects the unreliability of extrapolation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The Sigmoid curve fitting method underestimates variance of non-responding cell lines, rendering the GP approach superior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 compares the two methods and asserts GP superiority for variance estimation in non-responders. This is supported by the comparison shown in Figure 5\u2014figure supplement 1 and the citation to Vis et al., 2016. The claim is consistent with the known limitation of parametric models having fixed variance structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C74"
+    ],
+    "result": "The method is applicable to any dose-response data without replicates, improves biomarker discovery for precision medicine, and is generalizable beyond cancer to any disease and dose-response measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C67 and C74 make broad assertions about applicability and benefits. While the method is theoretically applicable to other dose-response data (C66, C74), this has not been demonstrated in the manuscript. The claim that it 'improves biomarker discovery' (C67) is supported for the specific cancer drug screening context but generalization requires additional validation. These are reasonable extrapolations but lack direct empirical support in the presented work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors provide background context on drug development failure rates, existing drug screening studies, limitations of current approaches, and prior applications of Gaussian Processes in biological contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 provide background information supported by appropriate citations. These establish the motivation for the work: high drug failure rates (C1-C2), existence of large screening studies (C7-C8), limitations of current methods including lack of replicates (C10-C11), challenges with extrapolation (C12), and assumptions in machine learning approaches (C13-C14). Prior GP applications (C16-C18) establish precedent. All claims are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The experimental protocol involved testing compounds at 5-9 titration points with 4-fold or 2-fold dilutions, seeding cells on day 0, allowing 24 hours for linear growth, treating for 3 days, and quantifying ATP levels with CellTiter-Glo. Negative cell viability values (n=2646) were set to 0 during preprocessing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 describe the experimental and preprocessing protocols. These are straightforward methodological descriptions that are clearly stated in the Materials and Methods section. The preprocessing decision to set negative values to 0 (C71) is explicitly documented with the number of affected values and reference to a supplementary figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Overall drug responses and biomarkers from independent drug screens were consistent when comparing similar dose ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by citation to Haverty et al., 2016. This contextualizes the authors' findings about the importance of dose range in comparing studies and supports their conclusion about the limitations of extrapolation. The claim appropriately attributes this finding to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The high uncertainty in response estimates of chromatin histone methylation targeting compounds may be due to the large number of factors contributing to epigenetic regulation of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is explicitly speculative ('may be due to') and offers a biological explanation for observed high uncertainty in a specific drug class. While the speculation is reasonable and supported by a citation to Luo, 2015 about epigenetic complexity, this remains an untested hypothesis. The authors appropriately present this as speculation rather than a demonstrated finding.",
+    "result_type": "MINOR"
+  }
+]

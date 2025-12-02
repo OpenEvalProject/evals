@@ -1,0 +1,417 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "LEC stimulation drives disynaptic feedforward inhibition (FFI) in BLA principal neurons. Single LEC stimulation elicits monosynaptic glutamatergic EPSCs and polysynaptic GABAergic IPSCs in BLA PNs, with IPSCs delayed ~3 ms relative to EPSCs. BLA PNs rarely fire in response to LEC stimulation, but blocking GABAA receptors with gabazine significantly increases PN firing, confirming FFI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C42 provide converging pharmacological and electrophysiological evidence for LEC-driven FFI in BLA. The pharmacological dissection (C32-C33), timing analysis (C36), and functional validation with gabazine (C40-C41) are internally consistent and appropriately controlled. The horizontal slice preparation is validated as functionally complete (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "LEC afferents differentially target BLA cell types with nearly all PV+ INs (15/16) responding to minimal LEC stimulation, compared to subsets of Sst+ INs (16/35) and PNs (12/24). Sst+ and PV+ INs receive larger and faster uEPSCs than PNs, with Sst+ INs having lower threshold stimulation intensity than other cell types, suggesting greater functional convergence of LEC inputs onto Sst+ INs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 demonstrate cell-type-specific connectivity using minimal stimulation experiments with appropriate pharmacological controls (C46). The statistical analyses are appropriate (Kruskal-Wallis tests), sample sizes are adequate, and the interpretation of threshold intensity as reflecting convergence (C51-C52) is reasonable though indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C108",
+      "C109"
+    ],
+    "result": "Unsupervised cluster analysis of 105 Sst+ INs based on 15 membrane properties reveals two distinct subpopulations (Groups I and II). Group I Sst+ INs (87.5% of LEC-responsive Sst+ INs) exhibit fast-spiking properties similar to PV+ INs, while Group II (89.5% of non-responsive Sst+ INs) are non-fast-spiking. Decision tree and random forest analyses identify maximum firing rate, hyperpolarization-induced sag, and AP halfwidth as key discriminating parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C68 describe rigorous computational classification using appropriate unsupervised (Ward's method with Thorndike's procedure) and supervised (decision tree, random forest) approaches. The convergence of multiple analytical methods strengthens the conclusion. Cross-validation metrics (82.9% for decision tree, 90.7% for random forest) indicate good model performance. The biological interpretation linking electrophysiological phenotype to circuit function is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "PV+ and Group I (fast-spiking) Sst+ INs show no significant differences in somatic and dendritic morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by quantitative morphological analysis with appropriate statistical testing. However, the sample size for morphological reconstructions is relatively small (n=6 PV+, n=8 Sst+ Group I), which may limit power to detect subtle differences. The finding is nonetheless clearly stated and appropriately analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "LEC stimulation at PN threshold intensity preferentially recruits FS Sst+ INs over PV+ INs. Sst+ INs fire robustly while PV+ INs rarely fire in response to LEC stimulation. Two mechanisms underlie this differential recruitment: Sst+ INs have more depolarized resting membrane potential and larger evoked subthreshold EPSPs compared to PV+ INs, suggesting greater functional convergence of LEC afferents onto FS Sst+ INs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 provide mechanistic insight into differential IN recruitment using current-clamp recordings at physiologically relevant stimulation intensities. The statistical analyses are appropriate (Mann-Whitney U, Kolmogorov-Smirnov tests), and the dual mechanism explanation (Vrest and EPSP amplitude) is well-supported. The classification of recorded Sst+ INs as predominantly FS (7/8 cells, C73) strengthens the link to the clustering analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "BLA PV+ INs receive stronger synaptic input from local PNs than FS or nFS Sst+ INs, with larger amplitude uEPSCs in paired recordings. This pattern is consistent with a larger role for PV+ INs in feedback inhibition relative to Sst+ INs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 use paired recordings to demonstrate differential local connectivity. The statistical analysis (Kruskal-Wallis test, p=0.025) is appropriate, though the sample sizes are modest (5-8 pairs per group). The interpretation regarding feedback inhibition (C83) is reasonable given the data but remains inferential without direct functional testing of feedback circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "FS Sst+ and PV+ INs receive greater levels of spontaneous excitatory input compared to nFS Sst+ INs. PV+ INs have larger amplitude sEPSCs than either Sst+ subtype, while PV+ and FS Sst+ INs have more frequent sEPSCs than nFS Sst+ INs. nFS Sst+ INs show slower sEPSC decay kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 characterize spontaneous excitatory input using appropriate analyses of sEPSC properties. The statistical tests (one-way ANOVA, Kruskal-Wallis) are correctly applied. The findings complement the evoked response data and support the functional distinction between IN subtypes. The interpretation (C87) appropriately acknowledges the divergent roles of FS Sst+ and PV+ INs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C101"
+    ],
+    "result": "Chemogenetic inactivation of Sst+ INs, but not PV+ INs, reduces LEC-driven FFI in BLA PNs. CNO application in Sst-hM4Di mice reduces IPSC amplitude by 30.2% and I/E balance by 40.2%, while having no effect in PV-hM4Di mice or wildtype littermates. This demonstrates that FS Sst+ INs mediate LEC\u2192BLA FFI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 provide the critical causal evidence using chemogenetics with appropriate controls (wildtype littermates, C94-C95). The validation of hM4Di efficacy (C88), confirmation that FFI timing is preserved (C89-C90), and specificity to inhibition (C93) strengthen the conclusions. The statistical analyses are appropriate (Wilcoxon signed-rank, paired t-tests). This is the key result establishing the functional role of Sst+ INs in FFI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Validation of transgenic mouse lines shows Sst-tdTomato mice have 88.09% colocalization of \u03b1Sst with tdTomato and 13.28% colocalization of \u03b1PV with tdTomato. PV-tdTomato mice have 90.82% colocalization of \u03b1PV with tdTomato and 18.34% colocalization of \u03b1Sst with tdTomato.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154 provide essential validation of the genetic tools used throughout the study. The colocalization percentages indicate good specificity with expected low but non-zero overlap between markers. Sample size (n=3 mice per line) is adequate for this validation purpose. This is critical methodological validation but not a primary scientific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on BLA function in associative learning: BLA plays a vital role in associating sensory stimuli with valence information through plastic changes in excitatory PNs. GABAergic inhibition, particularly FFI, gates PN plasticity and is critical for learning. In cortex and hippocampus, PV+ INs mediate FFI, but in BLA, FFI plays a dual role in regulating PN output and gating plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 establish the scientific context through citations to prior literature. These are appropriately cited knowledge claims that frame the study's rationale. The citations appear appropriate and the synthesis of prior work is reasonable, though the actual content of cited papers cannot be verified from this manuscript alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C28",
+      "C78",
+      "C79"
+    ],
+    "result": "Prior literature suggests competing hypotheses about FFI in BLA: PV+ INs mediate FFI in cortex and hippocampus, but anatomical studies in BLA implicate Sst+ INs. There is relative scarcity of cortical afferent synapses onto BLA PV+ INs, and prior hypotheses suggest BLA Sst+ INs mediate FFI while PV+ INs mediate feedback inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C16-C17, C28, C78-C79 establish the knowledge gap and competing hypotheses that motivate the study. These are appropriately cited and frame the central question. The anatomical evidence (C28) from Smith et al. 2000 is a key piece of prior knowledge supporting the hypothesis tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on LEC\u2192BLA circuit: LEC receives olfactory input, responds to odorants, and projects to BLA where it drives FFI and exerts inhibitory effects on olfactory input. The LEC\u2192BLA synapse is plastic and may be involved in olfactory and multimodal sensory-valence learning. LEC also projects to hippocampus and receives CA1 input, with deep layer LEC neurons innervating BLA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C27 provide anatomical and functional context for the LEC\u2192BLA circuit through appropriate citations. These establish why this particular circuit is relevant for studying FFI in the context of sensory-valence learning. The claims are well-supported by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C104",
+      "C105"
+    ],
+    "result": "BLA Sst+ INs are a heterogeneous population with diverse electrophysiological properties ex vivo and responses to stimuli in vivo, similar to cerebral cortex. This diversity suggests Sst may be expressed by a broad range of GABAergic IN subtypes in BLA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C104-C105 establish the rationale for using cluster analysis to identify Sst+ IN subtypes. These are appropriately cited knowledge claims that motivate the analytical approach. The parallel to cortical Sst+ IN diversity is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The membrane properties of Group I Sst+ and PV+ INs are consistent with a fast-spiking phenotype typically seen in cortical, hippocampal, and BLA PV+ INs. Examples of FS Sst+ INs also exist in cerebral cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 contextualize the finding of FS Sst+ INs in BLA by referencing similar observations in cortex. The citations to Large et al. 2016, Ma et al. 2006, and Nigro et al. 2018 support the existence of FS Sst+ INs in cortex, validating that this is not unprecedented. This strengthens the biological plausibility of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "Summary of main findings: LEC afferents synapse onto both PV+ and FS Sst+ INs, but only FS Sst+ INs fire in response to LEC activity. PV+ INs receive stronger input from local PNs. Inactivation of Sst+ but not PV+ INs reduces FFI. These findings are consistent with prior anatomical studies suggesting Sst+ INs form the circuit underlying FFI in BLA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100, C102 synthesize the major experimental findings. These summary claims are well-supported by the data presented in earlier results. The connection to prior anatomical work (C102) appropriately places the functional findings in the context of existing structural knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "The membrane properties of Sst+ IN subpopulations suggest differential expression of HCN and Kv3 channels. Consistent with this, Kv3.2 is expressed in a large subpopulation of BLA Sst+ INs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 provide a mechanistic interpretation of the electrophysiological differences between Sst+ IN subtypes. The inference about ion channel expression (C106) is reasonable given the membrane properties observed (sag, firing rate, AP width). The citation to McDonald and Mascagni 2006 regarding Kv3.2 expression (C107) provides independent support for this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Canonically, PV+ INs are thought to be synonymous with FS INs, but in BLA this is not the case. Two functionally distinct populations of FS INs can be separated based on PV or Sst expression. A fast-spiking phenotype is insufficient to classify an IN solely as PV+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 challenge a common assumption in the field based on the experimental data. The argument is well-supported by the demonstration of FS Sst+ INs in BLA and is strengthened by citations to recent cortical studies (C113). This represents an important conceptual advance in understanding IN classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In neocortex, FS Sst+ INs have distinct functions from PV+ INs despite similar physiological phenotypes. FS Sst+ INs in piriform and neocortex show clear biophysical and circuit connectivity differences from other Sst+ IN subtypes and have disparate functioning during sensory processing. BLA FS Sst+ INs are similarly a biophysically and functionally distinct class that mediates feedforward inhibition in the LEC\u2192BLA circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 place the BLA findings in the broader context of cortical circuit organization. The citations to recent cortical studies (Naka et al. 2019, Large et al. 2016, Ma et al. 2006, Nigro et al. 2018, Mu\u00f1oz et al. 2017) support the parallel between BLA and cortical FS Sst+ INs. This contextualization strengthens the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "In cortex, hippocampus, and BLA, PV+ INs regulate PN output, but anatomical data indicates BLA PV+ INs receive more input from local PNs than from afferents. PV+ INs fire more readily in response to local PN activation. Thus, PV+ INs are positioned to provide feedback and lateral inhibition to control BLA output, while FS Sst+ INs provide feedforward inhibition to regulate PN responses to sensory afferents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 synthesize the functional implications of the findings. The interpretation is well-supported by the experimental data (paired recordings, recruitment experiments) and prior anatomical/physiological literature. The proposed division of labor between PV+ (feedback) and FS Sst+ (feedforward) INs is a logical synthesis of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "These inhibitory networks would work in concert to fine-tune BLA activity to allow animals to learn about and react to stimuli. Archetypal circuit motifs that reappear across brain regions may be realized by different types of neurons depending on the functional role of the local circuit motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 provide broader conceptual implications. C126 is a reasonable speculation about circuit function based on the findings. C127 articulates an important general principle about circuit organization that emerges from this work. Both are appropriately framed as interpretations rather than direct experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Although PV+ INs do not fire in response to LEC stimulation, afferent activation leads to subthreshold depolarization. Local PNs preferentially target PV+ INs. This suggests that if afferents drive specific PN subsets to fire, the subthreshold depolarization would prime PV+ INs to fire in response to subsequent PN activity, providing lateral inhibition to select for activity in specific PN subsets. In vivo studies show sensory stimuli drive activity in specific BLA PN subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C133 propose an interesting circuit mechanism for PV+ IN function. While the underlying observations (subthreshold responses in PV+ INs, preferential PN\u2192PV+ connectivity) are supported, the proposed mechanism (C130, C132) is speculative and not directly tested. The in vivo evidence (C133) supports the premise of sparse PN activity but does not validate the proposed mechanism. This represents a testable hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Discussion of potential subnucleus-specific differences: A recent study shows PV+ INs mediate polysynaptic inhibition in lateral but not basal BLA following fiber tract stimulation. Since LEC afferents primarily target basal BLA and cortical inputs generally target PV-/calbindin+ INs (which are predominantly Sst+ INs) throughout BLA, the findings that FS Sst+ INs mediate FFI likely hold across cortical inputs to BLA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C141 address potential discrepancies with prior work and generalizability of findings. The reasoning is logical and well-cited, but the authors acknowledge uncertainty about which BLA subnucleus was recorded from (horizontal slices don't allow unambiguous discrimination). The speculation about generalizability (C141) is reasonable but requires experimental validation. This represents an important caveat and direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "In BLA, FFI critically controls PN plasticity. Sst+ INs target PN dendrites and regulate dendritic Ca2+ flux. Recent work shows dendritic disinhibition via Sst+ IN inhibition gates plasticity and learning. Sensory stimuli inhibit Sst+ IN firing, and manipulating Sst+ IN activity affects learning. The data suggest sensory stimulus-mediated inhibition of Sst+ INs would reduce FFI and allow dendritic disinhibition, enabling plastic changes in PNs to determine future behavioral responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C142-C148 propose a mechanistic model linking the circuit findings to learning. While the individual pieces of evidence are well-cited (C142-C147), the proposed mechanism (C148) is speculative and not directly tested in this study. The model is plausible and represents an important hypothesis, but requires in vivo validation during learning. The authors appropriately frame this as a suggestion rather than a demonstrated finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "The role of BLA FFI in gating plasticity and of Sst+ INs in gating learning suggests a potential role for this circuit in olfactory and other forms of sensory-valence learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C103 is a reasonable speculation based on the circuit findings and prior literature on BLA function in learning. The claim is appropriately hedged ('suggests a potential role') and is supported by relevant citations. However, this remains a hypothesis that requires behavioral validation.",
+    "result_type": "MINOR"
+  }
+]

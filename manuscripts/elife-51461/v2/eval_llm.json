@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background context on Mtb as a successful human pathogen causing chronic infections, with macrophages playing a central role in pathogenesis. The interactions between Mtb and macrophages have coevolved over ~70,000 years, and nearly 10 million people develop tuberculosis annually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by established knowledge and appropriate citations (Russell 2011, Comas et al. 2013, WHO 2018). These are standard background statements in the tuberculosis field that accurately represent the current understanding of Mtb pathogenesis and epidemiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript describes established mechanisms of Mtb-macrophage interactions, including TLR2 engagement, phagosomal maturation arrest via ESX-1, membrane perforation leading to cGAS/STING/TBK1 activation and type I IFN response, and activation of ubiquitin-mediated selective autophagy. The role of canonical autophagy in antimicrobial effects remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C14 accurately summarize well-established prior work on Mtb pathogenesis with appropriate citations (Gopalakrishnan & Salgame 2016, Sturgill-Koszycki et al. 1994, MacGurn & Cox 2007, Watson et al. 2015, etc.). These background claims provide necessary context for the current study and acknowledge areas of ongoing uncertainty (C9, C14).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript establishes the rationale for PTM analysis by noting that prior global approaches relied on mRNA profiling, which has limitations. PTM analysis provides more comprehensive assessment of cellular state during infection, as many pathways including autophagy are regulated by PTMs rather than transcription. Some autophagy components and receptors have been implicated in Mtb infection, but many remain untested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 provide well-supported rationale for the study approach, citing appropriate literature (Ehrt et al. 2001, Lamark et al. 2017, Herhaus & Dikic 2015, Watson et al. 2012, Manzanillo et al. 2013, Franco et al. 2017). The logic that PTM analysis captures biological processes not reflected in mRNA changes is sound and supported by established knowledge of cellular regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study used mass spectrometry to analyze changes in protein abundance, phosphorylation, and ubiquitylation in primary murine macrophages infected with Mtb over a 24-hour time course with biological triplicates. Mock infections were performed at 0, 6, and 24 hours, with minimal changes between uninfected timepoints. Technical and biological replicates showed high reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C28-C31 describe the experimental design and data quality. The approach is sound with appropriate biological replicates (n=3), time-matched controls, and demonstrated reproducibility (Figure 1B, Supplementary file 1). The finding of minimal changes in mock-infected cells (C30, Figure 1\u2014figure supplement 1A-C) validates the experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study identified over 1000 statistically significant changes in protein abundance or PTMs during Mtb infection. Changes in protein abundance and ubiquitylation progressively increased over time, while phosphopeptide changes showed a bimodal pattern with peaks at early (2-4 hr) and late (24 hr) timepoints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C32-C34 are supported by the mass spectrometry data shown in Figure 1C and Figure 1\u2014figure supplements 2-3. The temporal dynamics are clearly demonstrated, with appropriate statistical analysis (p<0.05, log2-fold-change \u22651 or \u2264-1). The bimodal phosphorylation pattern (C34) is a novel observation that distinguishes phosphorylation dynamics from other PTMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Correlation analysis between mRNA and protein changes revealed weak correlation at 6 hours (\u03c1=0.36) but stronger correlation at 24 hours (\u03c1=0.74). However, poor correlations were observed between mRNA and phosphorylated (\u03c1=0.37) or ubiquitylated proteins (\u03c1=0.52) at 24 hours, indicating that PTM-controlled processes operate independently of transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are well-supported by correlation analyses shown in Figure 1D-F and Figure 1\u2014figure supplement 4, with comparison to published RNAseq data (Braverman et al. 2016). The interpretation (C38) that PTMs capture biology independent of gene expression is justified by the data and consistent with prior work (Berg-Larsen et al. 2013). The correlation values are clearly stated and appropriately interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "During Mtb infection, 470 proteins changed significantly in abundance, 1489 in phosphorylation, and 606 in ubiquitylation, with limited overlap between the three categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by the Venn diagram analysis in Figure 3B. The numbers are clearly stated and the limited overlap demonstrates that different PTMs capture distinct aspects of the cellular response. This finding reinforces the value of measuring multiple PTM types simultaneously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Pathway enrichment analysis revealed highly significant enrichment of antiviral responses (p=4.53\u00d710\u207b\u00b2\u2070), small GTPase-mediated signal transduction (p=2.12\u00d710\u207b\u00b2\u2076), regulation of catabolic processes including autophagy (p=2.39\u00d710\u207b\u00b2\u2075), and previously unimplicated pathways including nucleocytoplasmic transport (p=1.92\u00d710\u207b\u00b9\u2079) and DNA damage response (p=2.08\u00d710\u207b\u00b9\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by pathway enrichment analysis shown in Figure 3C and Figure 3\u2014figure supplement 1, with highly significant p-values. The identification of expected pathways (antiviral, GTPase signaling, autophagy) validates the approach, while novel pathways (nucleocytoplasmic transport, DNA damage) represent new findings. The analysis used appropriate bioinformatics tools (Metascape) with GO Biological Processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Temporal clustering analysis of protein abundance changes revealed two major clusters: proteins that increased (enriched for inflammatory, antiviral, and bacterial response pathways) and proteins that decreased (enriched for ribosome biogenesis and DNA replication). OASL1 showed the fourth greatest fold change (34-fold, p=1.56\u00d710\u207b\u00b9\u00b2) and may regulate type I IFN responses. Autophagy receptors p62 and TAX1BP1 increased significantly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by cluster analysis in Figure 3\u2014figure supplement 2 and abundance data in Supplementary file 3. The functional enrichments are statistically significant and biologically interpretable. The OASL1 finding (C49-C51) is notable and supported by both proteomics and transcriptomics data (Figure 3A, Figure 1D), with appropriate citations to prior work on OASL1 function (Lee et al. 2013, Leisching et al. 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Temporal clustering of PTM changes revealed distinct patterns: ubiquitylated substrates clustered into four classes with autophagy enriched at later timepoints (6-24 hr) and histones showing decreased ubiquitylation (p=1.82\u00d710\u207b\u2077). Phosphorylated substrates also formed four classes, with actin cytoskeleton organization and small GTPase signaling enriched across all clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by cluster analyses in Figure 3\u2014figure supplement 1 and 3. The temporal patterns are clearly demonstrated with appropriate statistical support. The finding that actin cytoskeleton and GTPase signaling are dynamically regulated throughout infection (C58) is consistent with the known importance of these pathways in Mtb pathogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "PhosFate bioinformatic analysis predicted activation of expected kinases (IKBKB, MAP kinases, JAK/STATs) and decreased activity of cyclin-dependent kinases, consistent with macrophage growth arrest during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by PhosFate analysis shown in Figure 3\u2014figure supplement 4A. The identification of expected kinases validates the computational approach, while the CDK prediction (C60) is consistent with prior observations (Cumming et al. 2017). However, these are predictions that would require experimental validation for definitive confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Autophagy pathway was prominently enriched in PTM datasets, with p62 showing the greatest number of phosphorylation changes among autophagy receptors, including novel sites at Ser-28, Ser-320, and Ser-372. Four autophagy receptors (BNIP3L, Optineurin, FUNDC1, TAX1BP1) were selectively modified in functional domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by data in Figure 2A-B and Figure 3C. The identification of novel p62 phosphosites (C63) is supported by comparison with known sites (Richter et al. 2016). The finding that multiple autophagy receptors are modified (C64, Figure 2B, 2C-G) is a key discovery that motivated subsequent functional studies. The modifications occur in functional domains, suggesting biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Microscopy analysis revealed that NBR1, Optineurin, TAX1BP1, and p62 colocalize with Mtb during infection. NBR1 and TAX1BP1 showed similar colocalization rates to p62 (~30%), while Optineurin colocalization was less frequent (~7%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by microscopy data in Figure 4A-B. The quantification is based on appropriate image analysis (45 images per coverslip, three technical replicates). The ~30% p62 colocalization rate (C67) is consistent with prior findings (Watson et al. 2012), validating the experimental approach. The identification of TAX1BP1 as a novel Mtb-colocalizing receptor is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Tax1bp1-/- macrophages showed significantly increased Mtb colocalization with ubiquitin, phospho-TBK1, and p62 compared to wild-type cells, while p62-/- macrophages showed decreased ubiquitin targeting to Mtb. Similar results were obtained with CRISPR-edited Tax1bp1 macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by microscopy data in Figure 5B and Figure 5\u2014figure supplement 1. The use of both knockout mice and CRISPR editing (C70) provides orthogonal validation. The automated colocalization analysis from >1000 infected cells provides robust quantification. Statistical significance is demonstrated (p<0.001). The contrasting phenotypes of Tax1bp1-/- and p62-/- cells support distinct roles in the autophagy pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Tax1bp1-/- or CRISPR-edited macrophages showed a slight but significant decrease in Mtb colocalization with LC3, persisting even with IFN-\u03b3 stimulation. This indicates TAX1BP1 is required for efficient delivery of LC3-containing autophagosomal membranes to the Mtb phagosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by microscopy data in Figure 6A-B and Figure 6\u2014figure supplement 1. The decrease in LC3 colocalization is statistically significant (p<0.05) and observed in both knockout and CRISPR-edited cells. The persistence with IFN-\u03b3 stimulation (C71) indicates the defect is not overcome by immune activation. The interpretation (C72) is a reasonable inference from the data, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Tax1bp1-/- macrophages showed moderate but statistically significant increases in Mtb CFUs at 3 and 5 days post-infection and accelerated bacterial growth measured by bioluminescence at MOI 2 or 5. However, Tax1bp1-/- macrophages retained the ability to restrict Mtb growth when stimulated with IFN-\u03b3, indicating TAX1BP1 deficiency leads to increased Mtb growth in the absence of IFN-\u03b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by CFU data (Figure 6C) and bioluminescence assays (Figure 6D-E). The growth phenotype is modest but statistically significant and reproducible across two independent assays. The rescue by IFN-\u03b3 (C75, Figure 6E) is consistent with normal nitric oxide production (Figure 6\u2014figure supplement 1) and indicates TAX1BP1 functions in a parallel antimicrobial pathway. The interpretation (C76) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Tax1bp1-/- macrophages showed no significant changes in pro-inflammatory cytokines (IL-6, IL-12, TNF-\u03b1) but exhibited a modest yet significant increase in type I interferon production, consistent with previous reports of TAX1BP1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by cytokine measurements in Figure 6\u2014figure supplement 2. The lack of change in pro-inflammatory cytokines (C77) argues against a general inflammatory defect, while the increased type I IFN (C78) is consistent with prior work (Parvatiyar et al. 2010) and may contribute to the growth phenotype since type I IFN promotes Mtb growth in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study generated a comprehensive database of PTM changes during Mtb infection, representing an ensemble of host responses and pathogenic strategies. The analysis revealed changes in previously unrecognized pathways including mRNA metabolism and DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 accurately summarize the study's main contribution. The database is comprehensive (>1000 significant changes) and publicly available (PXD015361, C94). The identification of novel pathways (C81) is supported by enrichment analysis (Figure 3). Claim C80 is somewhat speculative but represents a reasonable interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Autophagy receptor phosphorylation peaked at 6-8 hours, between the bimodal peaks of overall phosphorylation. Novel PTMs were identified including BNIP3L dephosphorylation at Ser-141/144, FUNDC1 phosphorylation at Tyr-11, Optineurin phosphorylation at Thr-210/212 and Ser-556, and p62 ubiquitylation at Lys-13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by temporal analysis (Figure 2C-G) and domain mapping (Figure 2B). The identification of novel PTM sites is based on comparison with published data (Richter et al. 2016, Peng et al. 2017, Hendriks et al. 2017). The temporal dynamics of autophagy receptor modification (C82) represent a novel finding that distinguishes these proteins from bulk phosphorylation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "p62-deficient macrophages were unable to recruit ubiquitin to Mtb, supporting a feed-forward loop model. TAX1BP1 was phosphorylated and increased in abundance during infection, and functions downstream of p62, ubiquitin, and phospho-TBK1 recruitment to enable maturation of the ubiquitylated Mtb phagosome to an LC3-positive phagophore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 integrate multiple lines of evidence (Figures 5B, 2B, Supplementary file 4, Figure 7 model). The p62 feed-forward loop model (C87) is supported by the ubiquitin recruitment defect and is consistent with prior work (Dupont et al. 2009, Peng et al. 2017). The TAX1BP1 functional model (C89) is well-supported by the sequential accumulation of ubiquitin/p62/pTBK1 but decreased LC3 in Tax1bp1-/- cells, indicating a block at a specific step.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "TAX1BP1 is not required for global autophagy but has been implicated in selective autophagy of Salmonella. TAX1BP1 was originally identified as an A20-binding protein that regulates NF-\u03baB signaling. Increased TAX1BP1 phosphorylation at Ser-693, an IKK\u03b1 substrate, was identified during Mtb infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 provide important context for TAX1BP1 function, supported by appropriate citations (Whang et al. 2017, Tumbarello et al. 2015, Heyninck et al. 1999, Iha et al. 2008, Shembade et al. 2011, Olive & Sassetti 2018). The Ser-693 phosphorylation (C93) is a novel finding from the current study that may link TAX1BP1 to inflammatory signaling, though the functional significance was not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The mass spectrometry data have been deposited to ProteomeXchange/PRIDE with identifier PXD015361.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 documents appropriate data deposition, making the resource publicly available. This is essential for reproducibility and enables the community to mine the dataset for additional insights.",
+    "result_type": "MINOR"
+  }
+]

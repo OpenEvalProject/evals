@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "GSK3B functions as a negative regulator of Wnt-induced lipid droplet accumulation. Overexpression of wild-type or constitutively active GSK3B attenuates lipid droplet formation, while GSK3B knockdown induces lipid droplets similar to APC silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 provide converging evidence from gain-of-function (overexpression) and loss-of-function (siRNA) experiments showing GSK3B negatively regulates lipid droplet formation. The data are consistent with GSK3B's established role in the Wnt destruction complex and are supported by Figure 1A-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C2"
+    ],
+    "result": "Wnt-induced lipid droplet biogenesis does not depend on canonical TCF/LEF transcription factors, as siRNA knockdown of these factors failed to affect lipid droplet accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19 and C2 report negative results with TCF/LEF knockdown. However, the manuscript lacks critical controls: no validation of knockdown efficiency is shown, no positive control demonstrating that TCF/LEF activity was actually reduced, and no assessment of whether compensation by other TCF/LEF family members occurred. The conclusion of TCF/LEF independence requires stronger evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Lipid droplet accumulation in response to Wnt3a is transcriptionally mediated, as evidenced by increased expression of key lipid droplet enzymes SOAT1 and DGAT2, inhibition by actinomycin D, and requirement for these enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 establish transcriptional control through multiple lines of evidence: upregulation of key enzymes (C21), functional requirement demonstrated by knockdown and inhibitors (C23-C24), and sensitivity to transcriptional inhibition (C25). The data in Figures 1D-E support these conclusions, though the actinomycin D experiment is somewhat non-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Wnt ligands display broad but not universal capacity to induce lipid droplet accumulation, with activity paralleling evolutionary relationships and canonical Wnt signaling capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by systematic testing of 19 Wnt ligands (Figure 1F-G). The correlation with evolutionary relationships and published TCF/LEF activation data strengthens the conclusion. However, the manuscript notes this is based on only two replicates, which is minimal for such a broad screen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Chemical modulators of the Wnt pathway affect lipid droplet accumulation in a manner consistent with pathway activation or inhibition, as demonstrated by compound library screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C40 describe a targeted compound screen showing that known Wnt activators induce lipid droplets while inhibitors reduce them (Figure 1H-I). This provides orthogonal validation of Wnt pathway involvement. However, many of these compounds have off-target effects, and the mechanistic attributions to specific pathway components (C30, C32, C34, C36, C38, C40) rely entirely on literature citations without independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "TFAP2 family transcription factors are identified as candidate regulators through promoter analysis showing enrichment of TFAP2A/C binding sites in lipid droplet genes, supported by known TFAP2 biology and interactions with Wnt pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 present computational analysis identifying TFAP2 binding site enrichment in lipid droplet gene promoters (Figure 2\u2014supplement 2). The statistical significance (p<10^-3 to 10^-5) and presence in 74/145 lipid droplet proteins support this finding. Claims C45-C49 provide relevant biological context from literature. This represents solid hypothesis generation but requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C56"
+    ],
+    "result": "RNAseq analysis at early timepoints after Wnt3a treatment reveals DDIT3 as the most upregulated transcription factor and TFAP2C among the most upregulated, while SREBF1 is the most downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 and C56 report RNAseq findings (Figure 2B, Figure 2\u2014supplement 3). The temporal analysis (2h and 6h) is appropriate for identifying early transcriptional responses. DDIT3 upregulation is validated at both mRNA and protein levels. However, the manuscript does not provide information about statistical significance, multiple testing correction, or sequencing depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "SREBF1 does not play a significant role in Wnt-induced lipid droplet formation, as overexpression of constitutively active SREBF1 or treatment with SREBF1 inhibitor had no effect on lipid droplets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 present negative results with SREBF1 manipulation (Figure 2\u2014supplement 4). The constitutively active SREBF1 does activate target genes (Figure 2\u2014supplement 4C), providing a positive control. This effectively rules out SREBF1 as a major mediator of the lipid droplet response, despite its downregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "TFAP2A protein directly binds to the promoter regions of multiple lipid droplet-related genes, as demonstrated by ChIP-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 reports ChIP-PCR data (Figure 2C) showing TFAP2A binding to 10 lipid droplet gene promoters. The enrichment over negative control (CTCF) is statistically significant. However, the manuscript does not specify whether this is in Wnt-stimulated or basal conditions, and only tests TFAP2A, not other family members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "TFAP2A and TFAP2C are necessary for Wnt-induced lipid droplet accumulation, as demonstrated by RNAi requiring tandem knockdown in L cells and complete loss of response in TFAP2A knockout HeLa-MZ cells, with rescue upon re-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 provide strong loss-of-function evidence through both RNAi (Figure 3A-C) and CRISPR knockout (Figure 3D-E). The requirement for tandem knockdown in L cells suggests functional redundancy, while single knockout sufficiency in HeLa-MZ cells may reflect cell-type differences in TFAP2 expression. The rescue experiment (C65) is critical for ruling out off-target effects. Knockdown efficiency is documented (Figure 3\u2014supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C96"
+    ],
+    "result": "TFAP2A, TFAP2B, and TFAP2C are each sufficient to induce lipid droplet biogenesis when overexpressed, with effects correlating with nuclear localization and accompanied by increased expression of lipid droplet enzymes and accumulation of neutral lipids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 and C96 demonstrate sufficiency through overexpression experiments (Figure 3F-I). The correlation with nuclear localization (Figure 3H) is important for establishing that transcriptional activity drives the effect. The induction of target genes (C68) and lipid accumulation (C69) provide mechanistic support. However, overexpression experiments can produce non-physiological effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "DDIT3 consensus binding sites are enriched in lipid-related transcription factor promoters, and DDIT3 overexpression increases lipid droplet enzyme expression and neutral lipid accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 identify DDIT3 binding sites in 7/10 lipid-related transcription factors (Figure 4\u2014supplement 1A) and show that DDIT3 overexpression increases lipid droplet enzymes but not coat proteins (Figure 4A). This selective effect is interesting but the mechanism is unclear. The 1.8-fold enrichment (C74) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "DDIT3 is necessary for Wnt-induced lipid droplet biogenesis, as demonstrated by loss of response following DDIT3 knockdown or knockout, with rescue upon re-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C87 provide comprehensive loss-of-function evidence for DDIT3 through RNAi (Figure 4B-C) and CRISPR knockout (Figure 4D). The complete loss of Wnt response in knockout cells (C85) and rescue by re-expression (C86) are particularly strong. Effects on both lipid droplets and neutral lipids are documented. Knockdown efficiency is shown (Figure 3\u2014supplement 2C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "DDIT3 overexpression is sufficient to increase lipid droplet numbers and neutral lipid levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 demonstrate DDIT3 sufficiency through overexpression (Figure 4E, Figure 3\u2014supplement 1E-G). Combined with necessity data, this establishes DDIT3 as both necessary and sufficient for lipid droplet induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "DDIT3 acts upstream of TFAP2A in the regulatory hierarchy, as DDIT3 can rescue TFAP2A knockout but not vice versa, suggesting DDIT3 may function as both a direct inducer and a TFAP2A repressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 report asymmetric rescue experiments (Figure 4\u2014supplement 1D). While the data show DDIT3 can rescue TFAP2A knockout but not vice versa, the interpretation (C93) that DDIT3 acts as a TFAP2A repressor is speculative and contradicts other data showing DDIT3 has binding sites in TFAP2C (not TFAP2A) promoter. The regulatory relationship requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C71",
+      "C94",
+      "C95"
+    ],
+    "result": "TFAP2 family members mediate the pro-lipid droplet signal induced by Wnt3a and may function as master regulators of lipid droplet biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C71, C94-C95 represent the main conclusions synthesizing the necessity and sufficiency data. The evidence for TFAP2 mediating Wnt-induced lipid droplets is strong. However, the designation as 'master regulator' (C4) is somewhat premature without demonstrating that TFAP2 controls the full transcriptional program of lipid droplet biogenesis or showing in vivo relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Wnt signaling via the destruction complex induces transcription-mediated lipid changes including decreased SREBF1 (affecting membrane cholesterol) and increased DDIT3/TFAP2 (triggering lipid droplet biogenesis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 synthesize the pathway architecture. The evidence for transcriptional mediation is solid (C97). The SREBF1 decrease contributing to reduced membrane cholesterol (C98) is supported by prior work (Scott et al., 2015) though not directly tested here. The DDIT3/TFAP2 induction triggering lipid droplets (C99) is well-supported by the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C103",
+      "C107",
+      "C110"
+    ],
+    "result": "The authors speculate that Wnt/TFAP2 signaling may coordinate lipid storage with circadian rhythms and developmental processes, serving as a signal to store lipids during nutrient excess.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100, C103, C107, C110 are largely speculative, extrapolating from the current findings and literature on circadian regulation. While interesting hypotheses, these claims lack direct experimental support in the manuscript. The connections to circadian biology (C101-C102, C104-C106) are based entirely on literature citations.",
+    "result_type": "MINOR"
+  }
+]

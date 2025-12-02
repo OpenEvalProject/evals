@@ -1,0 +1,208 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Seven infant marmosets were observed longitudinally across 220 sessions during their first two months of postnatal life, with vocal, postural-locomotor, and heart rate data collected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C77-C83 provide comprehensive methodological details about subjects, housing, and data collection. The sample size (n=7), session frequency (~30 per subject), and total observations (220 sessions, 10,956 calls, 3,195 postural-locomotor behaviors) are clearly documented with appropriate detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C84",
+      "C85"
+    ],
+    "result": "Infant marmosets produce two types of contact calls\u2014immature cries (short duration, high Wiener entropy) and mature phees (long duration, low Wiener entropy)\u2014with cries decreasing and phees increasing across development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 are well-supported by statistical analysis (Table 1, Figure 2A) showing significant developmental changes in cry and phee production. The acoustic characterization using Wiener entropy (C84-C85) is appropriately defined and cited. The classification scheme is grounded in prior work and validated by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Postural behaviors (righting reflex to hindlimb support) and locomotor behaviors (crawling to walking) transition from immature to mature forms across development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by statistical analysis (Table 1, Figure 2A) showing significant developmental trajectories. The classification of behaviors as immature vs. mature is based on whether their proportion increases or decreases with age, which is a reasonable operational definition consistent with prior literature (Wang et al., 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C42",
+      "C57",
+      "C59"
+    ],
+    "result": "Vocal development matures earlier (around postnatal day 10) than postural (day 19) and locomotor (day 21) development, following a head-to-tail developmental sequence where postural-locomotor maturity is not required for vocal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are strongly supported by GLMM analysis showing vocal maturity indices significantly larger than postural (p=0.0005) and locomotor (p=0.0034) indices, with clear visualization in Figure 2D-E. The transition timepoints are derived from maturity index curves. The interpretation (C42, C57, C59) logically follows from the data, though the head-to-tail sequence interpretation relies on cross-species comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C27"
+    ],
+    "result": "Call acoustic properties are associated with locomotor activity: shorter, noisier calls (higher entropy) occur during high locomotor activity, while longer, tonal calls occur during reduced activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by LMM analyses with large sample sizes (n=9,606-9,609 calls) showing significant associations between call duration/entropy and locomotor activity (both p<0.0001 after Bonferroni-Holm correction). Claim C27 confirms immature calls have higher locomotor activity than mature calls (p<0.0001). The interpretations (C21-C22) appropriately summarize the statistical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C43",
+      "C68"
+    ],
+    "result": "Locomotor activity shows opposite temporal dynamics around immature vs. mature calls, with activity increasing before immature calls but decreasing before mature calls. This coordination improves with development, as locomotor activity during mature calls increases from early to late development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by bootstrap significance testing showing clear temporal patterns in Figure 3C. Claim C28 demonstrates developmental change with statistical support (p=0.0056). The interpretations (C43, C68) appropriately conclude that vocal-locomotor coordination improves with age. The bootstrap methodology is rigorous, though the 95% threshold choice could be better justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Arousal levels (measured by heart rate percentiles) differ between call types: immature calls occur during low arousal (below 95% threshold), while mature calls occur during elevated arousal (above 95% threshold). These patterns emerge and strengthen across development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by bootstrap significance testing (Figure 4A) and LMM analysis (p=0.0276, n=6,215 calls). Claims C33-C35 describe developmental dynamics shown in Figure 4B. The 'global' nature of arousal changes (C31) is appropriately noted. However, the marginal significance for developmental change (C35, p=0.0795) suggests this effect is weaker than stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Locomotor activity occurs during elevated arousal levels (heart rate above 95% threshold), with arousal changes preceding movement by at least 10 seconds. Heart rate during locomotion increases throughout the first two months of life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by bootstrap significance testing shown in Figure 4C-D. The temporal precedence of arousal changes (C37) parallels findings for vocal production. However, the developmental increase (C39) shows only marginal significance (p=0.0580), suggesting this trend is less robust than the main effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C44",
+      "C67",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Vocal-locomotor coordination during mature call production is associated with elevated arousal levels, particularly during the first month when infants transition from immature to mature calls. Arousal state appears to facilitate coordination between vocal and locomotor systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by LMM analysis (p=0.0208, n=3,966 calls, Figure 5B). Claim C41 shows this effect is specific to month 1 (p=0.0382) but not month 2 (p=0.6220), indicating developmental specificity. The interpretations (C44, C67, C74-C76) appropriately acknowledge the correlational nature of the findings and avoid causal claims. The authors correctly note study design limitations preclude causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C72",
+      "C73"
+    ],
+    "result": "Prior literature establishes that vocal-locomotor coordination varies across species and contexts, that locomotor skills predict speech development in humans, that arousal affects vocal production, and that marmoset vocal and motor development parallels human development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C56 and C61-C66, C72-C73 appropriately cite relevant prior work to establish context. The citations appear appropriate for the claims made. However, the accuracy of these cited claims cannot be fully verified without examining the original sources. The authors appropriately use this literature to motivate their study and interpret findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors propose that infants gradually improve vocal-locomotor coordination through arousal-mediated processes, that early vocal development may serve to elicit caregiver attention, and that autonomic nervous system dynamics may scaffold mature social behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58, C60, C69-C71 are explicitly speculative interpretations (marked as SPECULATION in evidence_type). While these hypotheses are plausible and consistent with the data, they extend beyond what the current study directly demonstrates. The authors appropriately present these as possibilities rather than established findings, but they remain untested hypotheses requiring future work.",
+    "result_type": "MINOR"
+  }
+]

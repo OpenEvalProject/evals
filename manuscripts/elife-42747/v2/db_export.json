@@ -1,0 +1,1623 @@
+{
+  "submission": {
+    "id": "470fa183-e197-48f3-b66c-02d79dd09539",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T09:25:01.849187Z",
+    "updated_at": "2025-12-02T09:25:01.849187Z"
+  },
+  "content": [
+    {
+      "id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "submission_id": "470fa183-e197-48f3-b66c-02d79dd09539",
+      "content_type": "manuscript",
+      "content_text": "# Protein denaturation at the air-water interface and how to prevent it\n\n## Authors\n\n- Edoardo D'Imprima<sup>1</sup> ([ORCID: 0000-0002-9830-7929](https://orcid.org/0000-0002-9830-7929)) \u2020\n- Davide Floris<sup>1</sup> ([ORCID: 0000-0001-9144-5459](https://orcid.org/0000-0001-9144-5459))\n- Mirko Joppe<sup>2</sup> ([ORCID: 0000-0001-6463-0253](https://orcid.org/0000-0001-6463-0253))\n- Ricardo S\u00e1nchez<sup>3</sup>\n- Martin Grininger<sup>2</sup>\n- Werner K\u00fchlbrandt<sup>1</sup> ([ORCID: 0000-0002-2013-4810](https://orcid.org/0000-0002-2013-4810))\n\n### Affiliations\n\n1. Department of Structural Biology Max Planck Institute of Biophysics Frankfurt Germany\n2. Buchmann Institute for Molecular Life Sciences, Institute of Organic Chemistry and Chemical Biology Goethe University Frankfurt Frankfurt Germany\n3. Sofja Kovalevskaja Group, Max Planck Institute of Biophysics Frankfurt Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nElectron cryo-microscopy analyzes the structure of proteins and protein complexes in vitrified solution. Proteins tend to adsorb to the air-water interface in unsupported films of aqueous solution, which can result in partial or complete denaturation. We investigated the structure of yeast fatty acid synthase at the air-water interface by electron cryo-tomography and single-particle image processing. Around 90% of complexes adsorbed to the air-water interface are partly denatured. We show that the unfolded regions face the air-water interface. Denaturation by contact with air may happen at any stage of specimen preparation. Denaturation at the air-water interface is completely avoided when the complex is plunge-frozen on a substrate of hydrophilized graphene.\n\n## Introduction\n\nIn the short time since the resolution revolution (Kuhlbrandt, 2014), single-particle electron cryo-microscopy (cryo-EM) has developed into a main technique for high\u00a0resolution structure determination of proteins (Bai et al., 2015a). To achieve high\u00a0contrast and high resolution in cryo-EM, a small volume of protein solution is applied to an EM support grid (Cheng et al., 2015; Passmore and Russo, 2016) and blotted before vitrification by plunge-freezing in liquid ethane (Dubochet et al., 1988; McDowall et al., 1983). During this process, the protein is inevitably exposed to the atmosphere at a high surface-to-volume ratio. It has often been suggested that the air-water interface is a hostile environment for proteins (Glaeser and Han, 2017; Ramsden, 1994; Taylor and Glaeser, 2008; Trurnit, 1960; Yoshimura et al., 1994). Numerous studies from the first half of the 20th century (reviewed by Neurath and Bull (Neurath and Bull, 1938)) have shown that globular proteins applied to dilute buffers will eventually form an insoluble monolayer of\u00a0~10 \u00c5 thickness at the air-water interface, which means that they denature completely. A recent systematic investigation by electron cryo-tomography (cryo-ET) of 31 different proteins on cryo-EM grids has shown that all have a more or less pronounced tendency to adhere to the air-water interface (Noble et al., 2018). Even if the proteins do not denature, adsorption often results in preferential orientation, which is undesirable for image processing and high-resolution structure determination. The standard method of preparing cryo-EM specimens by plunge-freezing of thin, unsupported layers of protein solution is therefore potentially problematic. Recent studies (Glaeser, 2018; Glaeser and Han, 2017; Han et al., 2017) have drawn attention to the effects of the air water interface on proteins in solution, in particular on their integrity and orientation on cryoEM grids.\n\nProteins diffuse from the bulk phase of a thin layer of aqueous solution to the air-water interface in a millisecond or less (Israelachvili, 2011; Naydenova and Russo, 2017; Taylor and Glaeser, 2008), so that each protein can make thousands of contacts with the atmosphere during the few seconds it takes to prepare a cryo-EM grid. At each encounter, the protein is at risk of partial unfolding. Fast nanodispensers (Jain et al., 2012) in combination with self-blotting grids (Wei et al., 2018) have been developed to minimize protein exposure to the air-water interface, and initial results look promising (Dandey et al., 2018; Scapin et al., 2018; Xu et al., 2018). Attempts to overcome preferential orientation include saturation of the surface with surfactants, such as fluorinated detergents (Popot, 2010) that interact poorly with the protein (Blees et al., 2017; Efremov et al., 2015). These approaches require careful screening or access to a sophisticated (and costly) apparatus that is not universally available. As a simpler and potentially more general solution, we propose to use a physical support that largely prevents protein contact with, and consequently denaturation at, the air-water interface.\n\nContinuous thin layers of amorphous carbon help to spread proteins evenly on cryo-EM grids (Bai et al., 2013; D'Imprima et al., 2017; Nguyen et al., 2015; Schraidt and Marlovits, 2011). Amorphous carbon is, however, far from ideal as a support film for cyro-EM because it adds background and conducts electrons poorly (Brink et al., 1998; Larson et al., 2011). Beam-induced movement is more severe on amorphous carbon support films than on unsupported films of vitrified solutions (Russo and Passmore, 2014).\n\nIn contrast to amorphous carbon, graphene, a monomolecular layer of crystalline carbon, has a number of desirable properties. It is the thinnest and strongest material known and at the same time an excellent conductor (Geim and Novoselov, 2007). It is stable under a 300 kV electron beam (Sader et al., 2013), and almost completely electron-transparent to 2.13 A\u030a resolution (the position of the first Bragg peak) and beyond (Pantelic et al., 2012).\u00a0The main problem of graphene for cryo-EM is its extreme hydrophobicity. For an even spread of the protein solution, the graphene surface has to be made hydrophilic. Graphene oxide is less hydrophobic than graphene, but more difficult to apply to EM grids as a monolayer (Boland et al., 2017). Graphene can be rendered hydrophilic by plasma etching (Russo and Passmore, 2014) or non-covalent chemical doping, exploiting the \u03c0-\u03c0 stacking interaction between graphene and aromatic planar compounds such as 1-pyrenecarboxylic acid (Pantelic et al., 2014). For cryo-EM, advantages of non-covalent doping include (i) the graphene structure is preserved; (ii) surface charge can be selectively modified; (iii) the number of adsorbed particles per unit area can be tuned by adjusting the concentration of the doping chemical.\n\nWe explored the denaturing effect of the air-water interface on fatty acid synthase (FAS) from Saccharomyces cerevisiae as an example of a large protein complex, and devised a way to avoid it. The structure of FAS is well-characterized by protein crystallography (Jenni et al., 2007; Johansson et al., 2008; Lomakin et al., 2007) and cryo-EM (Gipson et al., 2010). This makes it easy to detect and analyze which part of the complex contacts the interface and to what extent it is denatured. We use cryo-ET to locate the FAS particles on cryo-EM grids and visualize the denaturation of individual protein complexes in contact with the air-water interface. Finally, we demonstrate by high-resolution single-particle cryo-EM that a stable substrate of hydrophilized graphene avoids the denaturation of FAS complex during cryo-EM specimen preparation completely.\n\n## Results\n\n### Fatty acid synthase is intact prior to cryo-EM grid preparation\n\nThe FAS complex used for cryo-EM data collection was pure and homogeneous, as shown by size exclusion chromatography, SDS-polyacrylamide gel electrophoresis and blue-native polyacrylamide gel electrophoresis (Figure 1\u2014figure supplement 1A\u2013C). Thermal shift assays indicated that the complex was stable (Figure 1\u2014figure supplement 1D), and at 1500\u20133000 mU/mg it was enzymatically fully active (Fichtlscherer et al., 2000; Oesterhelt et al., 1969; Wieland et al., 1979). Negative-stain EM of freshly purified FAS samples indicated that the complex was structurally intact (Figure 1\u2014figure supplement 2A). Cryo-EM of the same samples in plunge-frozen, unsupported thin layers of vitrified solution on holey carbon film revealed that around 90% of the particles had suffered major structural damage (Figure 1). FAS particles in two-dimensional (2D) and in particular three-dimensional (3D) classification lacked between one third and one half of their density or had weak density at the distal part of the beta-domes (Figure 1A,B). A reconstruction of\u00a0~8000 particles was limited to 9.5 \u00c5 resolution, according to the gold-standard 0.143 FSC criterion (Scheres and Chen, 2012) (Figure 1C). Back-tracking of incomplete particles in the 3D classes (Figure 1B) revealed major structural defects of the protein complexes in the raw micrographs (Figure 1\u2014figure supplement 2B,C). These observations led us to conclude that the protein must have been damaged prior to or during cryo-EM grid preparation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig1-v2.jpg)\n\n**Figure 1.:** (A) Two-dimensional classification of particles shows weak or absent density of beta-domes (red arrows). (B) The alpha-wheel structure reveals major damage to about 90% of particles (dashed red). The remaining \u223c10% (dashed grey) contributed to a reconstruction (C) at 9.5 \u00c5 resolution.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Size-exclusion chromatography. (B) SDS PAGE. (C) Blue-native PAGE. (D) Thermal shift assays in different buffers as a function of temperature. Columns show the average melting temperature of three replicates.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Negatively stained FAS. The inset shows three representative 2D class averages. (B) Low magnification of a Quantifoil R2/2 cryo grid hole. (C) Broken particles from class 3 (Figure 1B) identified in a micrograph at higher magnification (red circles) and surface views of the corresponding three-dimensional reconstruction.\n\n### Particle distribution in vitrified cryo-EM grids\n\nNext, we performed cryo-ET on the vitrified specimens prepared for single-particle cryo-EM. Several batches of purified FAS plunge-frozen by different users under different conditions were examined. All experiments indicated damaged FAS complexes in all imaged areas (Figure 2A). In most instances, small fragments of denatured FAS were found in the areas surrounding individual complexes (red arrows in Figure 2A, Figure 2\u2014video 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig2-v2.jpg)\n\n**Figure 2.:** (A) Segmentation of a typical Quantifoil R2/2 grid hole with FAS complexes. Red arrows indicate fragments of FAS particles. (B) Slab of vitrified buffer, delimited by carbon and small contaminating ice crystals. (C) Detail of a single FAS complex showing morphological differences between sides facing the air-water interface or away from it.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Four- pixel slices through NAD-filtered tomogram indicate atmospheric surface contamination by ice crystals (slices #1 and #4). The upper meniscus (slice #2) is less populated with adsorbed FAS particles (red circles) than the lower meniscus (slice #3).\n\nCryo-ET revealed that FAS adhered to the two opposite surfaces of the unsupported thin layers of vitrified buffer. One surface, which we refer to as the lower meniscus, was densely packed with adsorbed protein complexes. The opposite surface (the upper meniscus) had only a small number of particles attached (Figure 2B and Figure 2\u2014figure supplement 1). Together with small ice crystals from atmospheric contamination on the outside surface of the vitrified layer, the FAS complexes on the upper and lower meniscus allowed us to trace the air-water interface exactly (Figure 2B).\n\nTomographic volumes suggested that nearly all the FAS particles in contact with the air-water interface were damaged. The particles were mostly flattened on one side and appeared incomplete (Figure 2C). The flattened regions aligned with the plane of the air-water interface. Particles attached to the lower and upper meniscus appeared to be equally affected, although the small number of particles on the upper meniscus precluded a statistically significant analysis. Our observations thus suggest that at some point during cryo-specimen preparation, the large majority of FAS complexes encountered the air-water interface, attached to it, and the air-exposed side unfolded before vitrification.\n\n### Orientation of damaged FAS particles on the air-water interface\n\nFAS particles at the air-water interface were investigated by subtomogram averaging (STA). A set of 1724 subvolumes was manually selected, and a subset of 20 randomly picked volumes was used as a reference for initial alignment. No symmetry constraints were applied. The final reconstruction indicated that one side of the FAS map lacked density, whereas the opposite side of the complex appeared complete (Figure 3A). FAS attached with its long axis parallel to the air-water interface, which accounts for the scarcity of top views in the single-particle analysis. To determine the orientation of the partly denatured FAS complexes relative to the air-water interface, we fitted a surface through the centers of all particles (Figure 3B). We then calculated the vectors pointing from the center of a complex towards its flattened side (Figure 3C). Finally, we assessed by how much the vectors diverged from the normal of the previously calculated plane through all particles at that position, and whether they pointed toward the air-water interface or away from it. This analysis indicated clearly that the vectors pointed towards the air-water interface (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig3-v2.jpg)\n\n**Figure 3.:** (A) Subtomogram averaging confirms localized denaturation of FAS. The published cryo-EM structure of intact FAS (Gipson et al., 2010) (above) is shown for comparison. (B) Surface (Sestimate) through the center of all FAS complexes in the selected area. (C) Vector Pdenat describing the orientation of denatured FAS (Rdenat), of the missing density (Rmissing) and the perpendicular direction (Pnormal) relative to Sestimate. The displacement angle is \u03b4. (D) Angular distribution of \u03b4 for all particles in reconstructed tomograms.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Classification by MRA indicates FAS denaturation comparable to single-particle results (Figure 1B). Particles reconstructed from the best class (class 1) indicated significant denaturation (B). Published cryo-EM map of FAS (Gipson et al., 2010) shown for comparison on the right.\n\nThe structural heterogeneity of the partly denatured FAS complexes was examined by multi-reference alignment. In line with the single-particle results (Figure 1B), we found different degrees of particle damage. About 86% were extensively damaged, with one third or even half of the characteristic quaternary FAS structure weak or absent (Figure 3\u2014figure supplement 1A). The remaining 14% had poorly resolved densities (Figure 3\u2014figure supplement 1B), suggesting that even those particles on the air-water interface that appeared intact had suffered some damage. The set of subvolumes probably contained a small number of undamaged particles from the bulk phase, but visual inspection of the tomographic volumes did not reveal any. We conclude that most if not all particles at or near a meniscus were damaged to a greater or lesser extent by contact with the air-water interface.\n\n### Air exposure induces protein denaturation\n\nIn a series of three experiments, we tested different ways in which exposure to air could cause protein denaturation. As before, negative-stain EM confirmed that the particles were initially undamaged (Figure 4A). In one experiment, we bubbled air through the sample to maximize air contact. In another experiment, we poured the protein solution over a glass rod (Trurnit, 1960) to expose a continuous thin aqueous film to the atmosphere (Figure 4B). In the third experiment, we applied a 20 \u03bcl volume of FAS solution to a standard EM support grid coated with continuous carbon, and then touched the top of the droplet with a second carbon-coated grid (Figure 4C). In this way, we separated the particles adsorbed to the air-water interface from those adsorbed to the carbon film (Figure 4D). The result of each experiment was then examined by negative-stain EM (upper panels in Figure 4B\u2013D). Bubbling air through the sample (experiment 1) completely denatured all FAS complexes (not shown), whereas in experiments 2 and 3 a small proportion remained intact. Denatured proteins were a predominant feature in all the three conditions except that particles adsorbed to the carbon film in experiment 3 (Figure 4D) were apparently undamaged. These results show that FAS at the air-water interface is denatured, whereas it remains intact when adsorbed to a solid substrate in liquid.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig4-v2.jpg)\n\n**Figure 4.:** (A) Untreated FAS sample (control). (B) A thin film of FAS solution flowing over a glass rod. Most complexes are denatured. (C) Denatured FAS particles picked up from the top of the droplet. (D) Undamaged FAS particles adsorbed to amorphous carbon at the opposite drop surface.\n\n### Hydrophilized graphene-coated grids prevent denaturation at the air-water interface\n\nTo find out whether adsorption to a continuous support film would prevent damage also under cryo-conditions, we prepared FAS on EM-grids coated with a layer of graphene rendered hydrophilic with 1-pyrene carboxylic acid (1-pyrCA). To assess the quality of the graphene, all grids were examined by electron diffraction before vitrification. Sharp diffraction spots indicated flat monolayers of graphene (Figure 5\u2014figure supplement 1A,B). The hydrophobic nature of the untreated graphene film was apparent from the repulsion of a water droplet pipetted onto the grid (Figure 5\u2014figure supplement 1C). The same grids were then chemically doped with a solution of 1-pyrCA, which did not degrade the crystalline order of the graphene layer (Figure 5\u2014figure supplement 1D,E). The hydrophilic character of the\u00a01-pyrCA-doped graphene was indicated by the reduced contact angle of a water droplet on the grid (Figure 5\u2014figure supplement 1F). The FAS solution was applied as before, and grids were blotted and plunge-frozen as for unsupported vitreous films. The hydrophilized graphene/FAS grids were then used for cryo-ET and single-particle cryo-EM.\n\nCryo-ET indicated the position of the air-water and graphene-water interfaces by atmospheric ice crystals and small patches of contaminants (Figure 5A,B). When the graphene layer was rendered hydrophilic by 1-pyrCA, FAS had a strong preference for the graphene-water interface over the air-water interface (Figure 5B, Figure 5\u2014figure supplement 2 and Figure 5\u2014video 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig5-v2.jpg)\n\n**Figure 5.:** (A) Zero degree view of tomographic tilt series. (B) Slab of vitrified buffer delimited by carbon and ice contaminants, indicating adsorption of FAS complexes to the graphene-water interface. (C) Subtomogram averaging confirms the structural integrity of FAS. (D) Three-dimensional impression (not drawn to scale) indicating the relative position of Quantifoil carbon film (dark grey) and hydrophilized graphene (mid-grey) on the copper support grid (dark red). The solution containing FAS particles (light grey) was applied from the uncoated side of the grid.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Quantifoil R0.6/1 grid coated with graphene. (B) Electron diffraction pattern of the area shown in (A). (C) Same grid with a droplet of water. (D) Same grid as in (A) after chemical doping with 1-pyrCA. (E) Electron diffraction pattern of area imaged in (D). (F) Doped grid with a droplet of water.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Four-pixel slices through NAD-filtered tomograms at various heights show atmospheric ice contamination (slices #1 and #4). FAS particles are evenly spread in one layer (slice #2) on the graphene film. A layer of contaminants on the lower surface identifies the position of the electron-transparent graphene sheet (slice #3).\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig5-figsupp3-v2.jpg)\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Classification by MRA (A) indicates that all particles are intact. The map of the best class (class 1) does not show any sign of denaturation (B). Published cryo-EM map of FAS (Gipson et al., 2010) shown for comparison on the right.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** FSC of the two unfiltered half-maps of FAS before (blue) and after (cyan) masking. FSC performed on the half-maps with phases randomized beyond 60 \u00c5 (grey). FSC curves before and after masking indicate resolutions of 24.6 \u00c5 and 17.1 \u00c5, respectively.\n\nTo investigate the state of preservation of FAS on hydrophilized graphene, we hand-picked a set of 2090 subvolumes and performed subtomogram averaging and multi-reference classification as for unsupported vitrified samples. Reconstructions both before (Figure 5C and Figure 5\u2014figure supplement 3) and after (Figure 5\u2014figure supplement 4) multi-reference alignment indicated that all particles were intact. The best sub-tomogram averages yielded maps at 24.6 \u00c5 and 17.1\u00a0\u00c5 resolution before and after masking (Figure 5\u2014figure supplement 5). Since few if any particles stuck to the air-water interface and multi-reference alignment did not reveal any damage, we conclude that FAS does not denature on hydrophilized graphene.\n\n### Hydrophilized graphene is suitable for high-resolution cryo-EM\n\nTo find out whether hydrophilized graphene films are suitable for high-resolution structure determination, we analyzed FAS on these grids by single-particle cryo-EM. Typical micrographs recorded at 0.9 \u03bcm defocus showed well-preserved particles (Fig. Figure 6\u2014figure supplement 1A), although the background is not completely transparent. Presumably, the pristine graphene surface became contaminated to some extent with atmospheric hydrocarbons during specimen preparation, and the high dopant concentration may contribute to some loss of contrast. These factors may compromise the detection and alignment of particles that are significantly smaller than yeast FAS. The 2D (Figure 6\u2014figure supplement 1B) and rotationally averaged 1D power spectra (Figure 6\u2014figure supplement 1C) indicated oscillations beyond 3\u00a0\u00c5 spatial frequency (Figure 6\u2014figure supplement 1C).\n\nAll 2D class averages displayed high-resolution detail (Figure 6A) and confirmed that FAS was structurally undamaged. This was verified by 3D classification, which showed intact complexes with well-resolved secondary structure. Note that this dataset contained only intact particles (Figure 6B), whereas 90% of the particles in the single-particle FAS dataset from unsupported vitrified samples had suffered major damage (Figure 1B classes 2, 3), and even the remaining 10% were compromised (Figure 1B class one and Figure 1C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig6-v2.jpg)\n\n**Figure 6.:** Two-dimensional (A) and three-dimensional (B) classification both show intact particles. A final map calculated without (C) or with (D) imposed D3 symmetry indicated a resolution of 4.8 \u00c5\u00a0or 4.0\u00a0\u00c5.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Typical image of FAS vitrified on hydrophilized graphene. (B) Two-dimensional power spectrum of (A) extends beyond the highest frequency used to fit the theoretical CTF (3.5 \u00c5). (C) Rotationally averaged one-dimensional plot of (B) shows that the CTF fit extends beyond 3 \u00c5 spatial frequency.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) and top view (B). (C) Longitudinal section of (A). (D) Transversal section of (B) showing the central alpha wheel at a local resolution of 3.5 \u00c5 or better. (E) Fourier shell correlation of the half-maps, unfiltered (blue) and phase-randomized (grey).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) 8000 particles in unsupported vitrified buffer (Class one from Figure 1B); (B) 8000 particles from hydrophilized graphene supported samples; (C) 28,000 particles from hydrophilized graphene-supported samples (Class one from Figure 6B).\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (A) Overview of FAS map reconstruction after consensus refinement from the dataset on unsupported vitrified buffer and hydrophilized graphene respectively. (B) Angular distribution plot of equal subsets of particles after consensus refinement.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/42747/elife-42747-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** The resolution the published map (Gipson et al., 2010) is between our FAS reconstruction in unsupported vitrified buffer, and the reconstruction of FAS on hydrophilized graphene.\n\nAfter merging the best 3D classes, we obtained a final set of \u223c28,000 particles. Auto-refinement without symmetry (C1) or with imposed D3 symmetry yielded maps at 4.8 and 4.0\u00a0\u00c5 resolution, respectively (Figure 6C,D). Local resolution estimates indicated better than 3.5\u00a0\u00c5 resolution for the rigid alpha wheel (Figure 6\u2014figure supplement 2). For an unbiased comparison to the 9.5\u00a0\u00c5 map obtained from FAS in unsupported vitrified buffer (Figure 6\u2014figure supplement 3A), we randomly selected 8000 particles from the dataset collected on hydrophilized graphene. The resulting map (Figure 6\u2014figure supplement 3B) attained a resolution of 6.4 \u00c5, confirming that hydrophilized graphene works very much better as a substrate for single-particle cryo-EM of FAS than unsupported vitrified buffer. The particles were intact and the map contained all the main features of the best non-symmetrized 4.8\u00a0\u00c5 map (Figure 6\u2014figure supplement 3C). Finally, although not random, particle orientation was much more evenly distributed on hydrophilized graphene, compared to unsupported vitrified buffer (Figure 6\u2014figure supplement 4).\n\n## Discussion\n\nAn earlier single-particle cryo-EM structure of S. cerevisiae FAS in unsupported vitrified buffer (Gipson et al., 2010) reported a resolution of 7.2\u00a0\u00c5 at the 0.5 FSC threshold and\n\n5.9\u00a0\u00c5 at 0.143 FSC. The \u2018gold-standard FSC\u2019 procedure of estimating map resolution by comparing reconstructions derived from two independent halves of the particle data set (Chen et al., 2013; Scheres and Chen, 2012) had not been introduced at the time and was not applied. Therefore, the 0.5 FSC resolution estimate of that map was realistic, as confirmed by a comparison of the FAS alpha wheel in the earlier structure to the gold-standard FSC maps in the present study (Figure 6\u2014figure supplement 5). The resolution of the earlier map is clearly between that of the 6.4\u00a0\u00c5 map of FAS on graphene and the 9.5\u00a0\u00c5 map of FAS in unsupported vitrified buffer, which were obtained with \u223c8000 particles each. The better quality of the earlier map (Gipson et al., 2010) is fully accounted for by the larger number of particles contributing to it, and the application of D3 symmetry. The 4\u00a0\u00c5 resolution of our present map from 28,000 particles on hydrophilized graphene is most likely limited by the inherent flexibility of the complex. This is implied by the cryo-EM structure of a FAS complex from the thermophilic fungus Chaetomium thermophilum (Kastritis et al., 2017), which attained a gold standard, FSC 0.143 resolution of 4.7\u00a0\u00c5 from only \u223c 4000 particles. It is well known that protein complexes from thermophilic organisms are more stable than those of mesophilic origin. By comparison, more than 100,000 particles contributed to the 7.5 \u00c5\u00a0cryo-EM structure of a FAS complex from Mycobacterium smegmatis (Boehringer et al., 2013), suggesting that the mycobacterial complex is significantly less stable.\n\nIn many of the cryo-EM grids examined by electron tomography (Noble et al., 2018), the curvatures of the upper and lower meniscus were different. In the case of FAS, the less densely populated upper meniscus was more strongly curved than the lower meniscus (Figure 2B, Figure 2\u2014video 1). The reason for the difference in curvature is not known and most likely stochastic. The asymmetric distribution of protein on the upper and lower meniscus is surprising, because the grids were blotted symmetrically from both sides. Possibly, the more densely populated lower meniscus remained in contact with air for longer during the blotting process, so that more protein accumulated on it. At this stage, the reason for the asymmetrical particle distribution on the two surfaces is unknown.\n\nOur cryo-EM analysis of FAS, a soluble 2.6 MDa protein complex, revealed that only a minority of the particles in unsupported vitreous films retained intermediate-resolution features, whereas up to 90% were at least partly denatured by the air-water interface. A survey of recently reported high-resolution cryo-EM structures shows that usually only a minor fraction of a large single-particle data set contributes to the final high-resolution map. Percentages of good particles were 19% for the 3.8\u00a0\u00c5 map of a human synaptic GABAA receptor (Zhu et al., 2018); 15% for human P-glycoprotein at 3.4\u00a0\u00c5 (Kim and Chen, 2018); 11.8% for a 4\u00a0\u00c5 nucleosome map\u00a0(Takizawa et al., 2018); 8.9% for the 3.4\u00a0\u00c5 structure of human \u03b3-secretase (Bai et al., 2015b); and only 5.7% for the 4\u00a0\u00c5 structure of a sodium channel complex from electric eel (Yan et al., 2017). All were prepared in unsupported vitrified buffer. These numbers suggest that up to 94% of the particles may have suffered partial denaturation at the air-water interface. Future studies will show whether this is indeed the case, and whether denaturation can be avoided by using hydrophilized graphene grids, as we have shown for yeast FAS. If hydrophilized or otherwise functionalized graphene grids prove to work as well for other proteins to overcome denaturation at the air-water interface, a much higher proportion of particles would contribute to the final structure. This would result in a large increase in data collection efficiency and significantly better maps. It would be a major boost for cryo-EM.\n\n## Materials and methods\n\n### Strain cultivation and protein purification\n\nYeast cultures were grown and FAS was purified as previously reported (Chakravarty et al., 2004; Gajewski et al., 2017b). Haploid FAS-deficient S. cerevisiae cells were transfected with plasmids carrying FAS-encoding genes, then grown in YPD medium. After bead disruption and differential centrifugation, the soluble components were purified by strep-Tactin affinity chromatography then by size-exclusion chromatography. The main peak was concentrated to \u223c4 mg/ml. All purification steps were analyzed by SDS-PAGE.\n\n### Thermal shift assay (TSA) and activity assay\n\nThermal shift assays were performed as previously reported. Briefly, 2 \u03bcl of protein solution (0.9 mg/ml) were mixed with 21 \u03bcl of phosphate buffer (100 mM; pH 6.5) and 2 \u03bcl of 62.5 X SYPRO Orange protein gel stain, then fluorescence was measured from 5\u00b0C to 95\u00b0C with a step of 0.5 \u00b0C/min, with excitation wavelength set to 450\u2013490 nm, and emission wavelength to 560\u2013580 nm. FAS activity was determined by tracing NADPH consumption at 334 nm as reported (Gajewski et al., 2017a), and adapted for plate reader read-out (120 \u03bcl scale containing 200 mM NaH2PO4/Na2HPO4 (pH 7.3), 1.75 mM 1,4-dithiothreitol, 0.03 mg/ml BSA, 0.7 \u03bcg FAS, 500 \u03bcM malonyl CoA, 417 \u03bcM acetyl CoA and 250 \u03bcM NADPH).\n\n### Grid preparation\n\nQuantifoil R0.6/1 and R2/2 grids (Quantifoil Micro Tools, Jena, Germany) were used to prepare cryo-specimens with or without graphene support. Grids were washed thoroughly overnight in chloroform. For graphene-coated grids, graphene pads (1 cm2) (Graphenea, Cambridge, MA) were floated onto Quantifoil grids in a water bath. The graphene layer was deposited on the holey carbon side of the grids, whereas the protein sample is later applied on the copper side after mild glow discharge (15 mA for 45 s). Quantifoil R1/2 and R1.2/1.3 grids were tested but found to be less suitable as the smaller hole size yields flatter graphene layers. Grids were dried under nitrogen flow\u00a0for 30 min and then heated to 150\u00b0C for one hour to anneal the graphene layer to the Quantifoil film. Graphene-coated grids were stored under vacuum until use. Graphene-coated grids were washed in pure acetone for one hour to dissolve the protective PMMA layer and then rinsed with isopropanol for another hour, followed by drying under a nitrogen stream. Finally, the grids were dipped into 50 mM 1-pyrenecarboxyilic acid (Sigma Aldrich, Munich, Germany) dissolved in DMSO (Sigma Aldrich, Munich, Germany) for one minute, rinsed in one change of isopropanol and ethanol, and dried under a nitrogen stream. Grid quality was assessed in a FEI Tecnai G2 Spirit BioTwin (FEI Company, Hillsboro, OR) operated at 120 kV, at a nominal magnification of 9300x, yielding a pixel size at the specimen level of 1.19 nm. Electron diffraction patterns were recorded at a nominal camera length of 540 mm, with a 1 s exposure time and 150 \u03bcm aperture.\n\n### Negative staining\n\nFAS was diluted in purification buffer (100 mM sodium phosphate, pH 6.5) 0.05 mg/ml and negatively stained with 2% (w/v) sodium silicotungstate (Agar Scientific, Stansted, UK). Specimen preparation was performed as described previously\u00a0(Salzer et al., 2016). Micrographs were recorded in a FEI Tecnai G2 Spirit (FEI Company, Hillsboro, OR) operated at 120 kV, with a pixel size of 2.68 \u00c5.\n\n### Controlled protein denaturation at the air-water interface\n\nThree different experiments of controlled protein denaturation at the air-water interface were carried out in triplicate. Freshly purified FAS solution was diluted to 0.01 mg/ml with purification buffer (100 mM sodium phosphate, pH 6.5). For experiment 1, air was bubbled through 200 \u03bcL of protein solution through a pipette tip for about 10 s, and EM grids were prepared from a 3 \u03bcl aliquot. For experiment 2, 200 \u03bcl of protein solution were passed over a 5 cm 100 \u03bcl intraMARK disposable glass micropipette (Brand, Wertheim, Germany) sealed at both ends, and collected for EM analysis in negative stain. For experiment 3, 20 \u03bcl of FAS solution were pipetted onto EM grid coated with amorphous carbon and incubated in air. After 15 s, the drop was touched with a second carbon-coated EM grid and blotted. Both grids were negatively stained as before.\n\n### Single-particle cryo-EM\n\nThree \u03bcl of FAS solution (1.0 mg/ml for unsupported grids or 0.2 mg/ml for hydrophilized graphene grids) were applied to freshly glow-discharged Quantifoil R2/2 holey carbon grids (Quantifoil Micro Tools, Jena, Germany) for unsupported samples or Quantifoil R0.6/1 holey carbon grids for hydrophilized graphene. Grids were vitrified in a Vitrobot Mark IV plunge-freezer at 100% humidity and 10\u00b0C after blotting for 6\u20138 s. Cryo-EM images were collected in a Titan Krios (FEI Company, Hillsboro, OR) electron microscope operating at 300 kV. Images were recorded automatically with EPU at a pixel-size of 1.053 \u00c5, on a Falcon III EC direct electron detector (FEI Company, Hillsboro, OR) operating in counting mode. A total of 2648 and 1055 dose-fractionated movies were recorded to a cumulative dose of \u223c 32 e-/\u00c52 for FAS in unsupported vitrified buffer and on hydrophilized graphene, respectively. Image drift correction was performed using Unblur (Grant and Grigorieff, 2015) and MotionCor2 (Zheng et al., 2017). CTF determination with CTFFIND 4.1.10 (Rohou and Grigorieff, 2015). All subsequent image processing steps were performed within Relion 2.1 (Kimanius et al., 2016). An initial dataset of 81,163 unsupported particles was automatically picked, 2D classified, and used for the first consensus refinement with a 50 \u00c5 low pass filtered FAS EM map (EMD-1623 (Gipson et al., 2010)) as initial reference. No symmetry was imposed. The same procedure was applied to the data collected on hydrophilized graphene grids, starting from a dataset of 57,021 particles. The best particles, sorted by 3D classification, were combined to perform a reconstruction imposing C1 (no symmetry) or D3 symmetry. This yielded maps at 9.5\u00a0\u00c5 resolution (unsupported samples, C1 symmetry), 4.8 and 4.0\u00a0\u00c5 resolution (hydrophilized graphene, C1 and D3 symmetry, respectively). All maps were corrected for the modulation transfer function (MTF) of the detector and sharpened with a B-factor of\u00a0\u2212130 \u00c52. Particle back-tracking was performed with the script star2jpg (https://github.com/olibclarke/EM-scripts/blob/master/star2jpg.bash).\n\n### Electron cryo-tomography\n\nVitrified specimens were imaged in a Titan Krios (FEI Company, Hillsboro, OR) electron microscope operating at 300 kV, equipped with a K2 summit direct electron detector and a Quantum energy filter (Gatan, Inc., Pleasanton, CA). The magnification was set to a pixel size of 3.39\u00a0\u00c5 or 2.20\u00a0\u00c5 for the dataset in unsupported aqueous films and hydrophilized graphene, respectively. Dose-fractionated tomographic images were automatically recorded in counting mode from \u221260\u00b0 to\u00a0+\u00a060\u00b0 using a dose-symmetric acquisition scheme\u00a0(Hagen et al., 2017) implemented in SerialEM\u00a0(Mastronarde, 2005) to a cumulative dose of 90 e-/\u00c52 per tilt series. After movie frame alignment with MotionCor2 (Zheng et al., 2017) and CTF correction with Gctf (Zhang, 2016), the image stack files were processed with IMOD (Kremer et al., 1996). Weighted back projection was used to reconstruct the 3D volumes after patch track alignment. If necessary, the tomograms were processed with a Nonlinear Anisotropic Diffusion (NAD) filter (Frangakis and Hegerl, 2001) for visualization.\n\n### Subtomogram averaging, volume segmentation and rendering\n\nAll processing steps were performed with Dynamo (Casta\u00f1o-D\u00edez, 2017). A set of 1724 and 2090 particles was manually picked from unsupported and hydrophilized graphene-coated grids, respectively. In both cases a subset of 20 random particles was used to generate an initial reference, and subtomogram averaging was performed according to the \u2018gold standard\u2019 procedure (Scheres and Chen, 2012). The final map was band-pass filtered to 308 and 12 \u00c5. To assess mask bias, FSC was also performed on the masked half-maps with phases randomized beyond 60 \u00c5. The correlation dropped at the resolution above which the phases were randomized, indicating that the mask did not affect the resolution estimate. Finally, particle heterogeneity was explored by multi-reference alignment. To exclude reference bias, average volumes of damaged and intact FAS complexes were used as initial models for the graphene and the dataset unsupported dataset, respectively. Both references were low-pass filtered to 50 \u00c5. For illustrative purposes, final maps were Gaussian-filtered (standard deviation of two physical pixels) within UCSF Chimera (Pettersen et al., 2004) and tomographic volumes segmented with the convolutional neural network method implemented in EMAN2.2 (Chen et al., 2017; Tang et al., 2007).\n\n### Estimation of particle-to-interface orientation\n\nTo determine the orientation of partly denatured FAS with respect to the air-water interface, MATLAB was used to correlate the tomographic reconstruction with a geometrical model assuming that, upon adsorption, the plane describing the denatured side of the FAS particles would be parallel to the air-water interface. The missing density due to denaturation (Rmissing) was treated as the difference between the reconstruction of intact FAS (Rintact) and the map obtained from sub-tomogram averaging of denatured particles (Rdenat). The analysis consisted of five sequential steps: (i) coordinates of the center of FAS complexes previously determined by sub-tomogram averaging were used to model the air-water interface (Sestimate) by the Thin-plate interpolator option of the Curve Fitting Toolbox in MATLAB; (ii) for each particle location the vector Pnormal was calculated, which represents the normal of Sestimate at that position; (iii) a vector Pdenat was computed that describes the relative orientation of the denatured side as the vector pointing from the center of Rintact to the center of mass of Rmissing; (iv) the Pdenat vector was calculated for every particle detected in all the tomographic volumes; (v) finally, the displacement angle \u03b4 between the vectors Pdenat and Pnormal was calculated with a 7.5\u00b0 sampling step. The distribution of \u03b4 was plotted as a bild file. All the 3D rendering and movie editing were performed with Blender, Chimera (Pettersen et al., 2004) and ChimeraX (Goddard et al., 2018).\n\n### Data and materials availability\n\nThe EM maps have been deposited in the EMDB with accession codes EMD-0178 (single particle cryo-EM FAS map on graphene support) and EMD-0179 (subtomogram averaging FAS map on graphene support).\n",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "a52cac79-5a4a-4b82-b0d4-c34d3bc1498d",
+      "submission_id": "470fa183-e197-48f3-b66c-02d79dd09539",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Axel T Brunger, Stanford University United States\n\nReviewers:\n- Robert M Glaeser, Lawrence Berkeley National Laboratory, University of California, Berkeley United States\n- Georgios Skiniotis, University of Michigan United States\n\n## Review text\n\nDOI: [10.7554/eLife.42747.030](https://doi.org/10.7554/eLife.42747.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Protein denaturation at the air-water interface and how to prevent it\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Axel Brunger as Reviewing Editor, and the evaluation has been overseen by John Kuriyan as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Robert M Glaeser (Reviewer #2); Georgios Skiniotis (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study explores the effects of adsorption to the air-water interface on protein particle structure and orientation. Using both single-particle cryo-EM and cryo-ET coupled to sub-tomogram averaging, the authors provide a thorough topological and structural analysis of vitrified protein particles using the well characterized yeast fatty acid synthase (FAS) as a model system. This work follows the recent cryo-ET study by Carragher and colleagues showing that most particles prepared with the typical vitrification process preferentially adsorb to the air-water interface with potentially detrimental effects to their structure. Here, D'Imprima and colleagues build on those findings and demonstrate convincingly that up to ~90% of particles residing at the interface have suffered damage through denaturation, with the denatured region facing the interface. The cryo-EM analysis, coupled to simple but very elegant negative stain imaging of particle integrity under different conditions, clearly reveals that particles have been damaged during vitrification and that this is associated with exposure to air; an event that accounts for a large fraction of discarded particles with important implications for data collection and structural analysis. The authors go further to demonstrate that the use of hydrophilized (through non-covalent doping) graphene prevents FAS denaturation and allows the calculation of highly improved 3D reconstructions.\n\nEssential revisions:\n\nThe authors propose the use of hydrophilized graphene oxide as a general solution to avoid protein denaturation during vitrification. To make such a strong impact however, this work should include a demonstration of the general use of this support with additional and different types of samples. In the absence of such additional experiments, the paper may be acceptable only if it focuses its message on yeast FAS. Statements in the title, Abstract and throughout the paper about the general application of this method should be removed.\n\nThe treatment by 1-pyrCA is interesting. In previous publications (e.g., Russo and Passmore, 2014), hydrogen-plasma treatment was used. Did the authors try this method? If so, how does it compare with the 1-pyrCA method?\n\nIt is common that papers about using graphene or graphene oxide as support films claim that such specimen-support films give much less background noise in the images than is the case for evaporated carbon support films. While that is clearly expected to be true, in this case the data seem to show that the background noise is much higher after the functionalization steps than it was before, and the authors properly point this out. The authors should either not make such a big point at the beginning about there being a low-noise background (i.e. do not raise false expectations), or point out, whenever making such statements, that the FGM reported here do not fully deliver the desired low-noise support film.\n\n\u2022 It is not enough to suggest, as the authors do, that the increased RMS background is similar in height to that of the functionalized chemical groups that were added.\n\n\u2022 Nor is it enough to point out, as the authors might do, that the noise did not interfere with getting a high-resolution map of FAS, because this quite a large particle.\n\n\u2022 The community will still be skeptical that the same type of grids will be useful for particles in the size range of 200 kDa or smaller.\n\nThe manuscript does not fully represent the extent to which the cryo-EM community now appreciates that the air-water interface can do bad things. The unintended consequence is that the manuscript appears to claim more credit for originality than is perhaps due.\n\n\u2022 A simple change might be to remove the statement, at the end of the first paragraph of the Introduction, which says \"Effects of adsorption.\u2026 are not widely appreciated.\"\n\n\u2022 A more extensive change would be to add a more comprehensive review of recent literature.\n\nPlease clarify which surface it is, in Figure 2B, to which the sample was applied. When sample is applied to a holey carbon grid, there are small disks of air-water interface within each hole and a large, continuous air-water interface on the top side of the sitting drop of sample. Of these two air-water interfaces, which is the one that has so many particles adsorbed to it?\n\nIt would be informative if the authors would describe whether bubbling air through their sample, in the way that they described, resulted in foam, and if so, how long it persisted. Indeed, a photo of the foam (if there was any) would be a good addition to the supplementary material.\n\nThe discussion on the lower and upper meniscus of the vitrified layer requires further explanation and clarification. What is their relation to the direction the sample is applied?\n\nIn reference to the 2010 cryo-EM study, the authors state that \"The fact that the resolution was limited to 7.2 \u00c5 even with more than twice the number of particle images suggests that the complex was equally affected by denaturation at the air-water interface\". This statement needs correction. The resolution was primarily limited by recording on film without the ability to correct for specimen motion.\n\nThere are particles in Figure 4D that do appear half, not unlike damaged particles at the interface, although they have adsorbed to the carbon. How do the authors explain these types of particles, also compared to the ones in the typical experiment of 4A?\n",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a7b32228-18c1-46bd-8186-e4ab31420136",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C1",
+      "claim": "Single-particle electron cryo-microscopy (cryo-EM) has developed into a main technique for high resolution structure determination of proteins since the resolution revolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In the short time since the resolution revolution (Kuhlbrandt, 2014), single-particle electron cryo-microscopy (cryo-EM) has developed into a main technique for high resolution structure determination of proteins (Bai et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kuhlbrandt, 2014 and Bai et al., 2015a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "340a5a8a-fc96-4213-981d-d38c2cb44418",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C2",
+      "claim": "Proteins are inevitably exposed to the atmosphere at a high surface-to-volume ratio during cryo-EM specimen preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "During this process, the protein is inevitably exposed to the atmosphere at a high surface-to-volume ratio.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding of the cryo-EM specimen preparation process",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "9f7bbce3-e81b-40b3-8d30-9ab17f73e026",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C3",
+      "claim": "The air-water interface is a hostile environment for proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It has often been suggested that the air-water interface is a hostile environment for proteins (Glaeser and Han, 2017; Ramsden, 1994; Taylor and Glaeser, 2008; Trurnit, 1960; Yoshimura et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "297c97e7-3f54-4ca4-98fd-44e0780c96b6",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C4",
+      "claim": "Globular proteins applied to dilute buffers will eventually form an insoluble monolayer of ~10 \u00c5 thickness at the air-water interface, which means that they denature completely.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies from the first half of the 20th century (reviewed by Neurath and Bull (Neurath and Bull, 1938)) have shown that globular proteins applied to dilute buffers will eventually form an insoluble monolayer of ~10 \u00c5 thickness at the air-water interface, which means that they denature completely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to review by Neurath and Bull, 1938",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "56c0d299-be4b-47d5-aec7-31a16ab51e5b",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C5",
+      "claim": "All 31 different proteins examined by electron cryo-tomography on cryo-EM grids have a more or less pronounced tendency to adhere to the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent systematic investigation by electron cryo-tomography (cryo-ET) of 31 different proteins on cryo-EM grids has shown that all have a more or less pronounced tendency to adhere to the air-water interface (Noble et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Noble et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "b8c7c51b-cdd5-4d9c-a9e2-1a9162e3eed9",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C6",
+      "claim": "Proteins diffuse from the bulk phase of a thin layer of aqueous solution to the air-water interface in a millisecond or less.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins diffuse from the bulk phase of a thin layer of aqueous solution to the air-water interface in a millisecond or less (Israelachvili, 2011; Naydenova and Russo, 2017; Taylor and Glaeser, 2008), so that each protein can make thousands of contacts with the atmosphere during the few seconds it takes to prepare a cryo-EM grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Israelachvili, 2011; Naydenova and Russo, 2017; Taylor and Glaeser, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "b5907999-b0e3-47a8-a7a7-5274b1376bc7",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C7",
+      "claim": "Each protein can make thousands of contacts with the atmosphere during the few seconds it takes to prepare a cryo-EM grid.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins diffuse from the bulk phase of a thin layer of aqueous solution to the air-water interface in a millisecond or less (Israelachvili, 2011; Naydenova and Russo, 2017; Taylor and Glaeser, 2008), so that each protein can make thousands of contacts with the atmosphere during the few seconds it takes to prepare a cryo-EM grid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the diffusion rate and specimen preparation time",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "7217b0fd-1b9a-434f-a389-d452ae9a644c",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C8",
+      "claim": "At each encounter with the air-water interface, the protein is at risk of partial unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "At each encounter, the protein is at risk of partial unfolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the hostile nature of the air-water interface",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "dda863ed-f222-4de4-a257-2f7830a7080e",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C9",
+      "claim": "Graphene is the thinnest and strongest material known and at the same time an excellent conductor.",
+      "claim_type": "EXPLICIT",
+      "source": "It is the thinnest and strongest material known and at the same time an excellent conductor (Geim and Novoselov, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Geim and Novoselov, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "c84c9cd6-9195-4306-bea2-e7474a613614",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C10",
+      "claim": "Graphene is stable under a 300 kV electron beam.",
+      "claim_type": "EXPLICIT",
+      "source": "It is stable under a 300 kV electron beam (Sader et al., 2013), and almost completely electron-transparent to 2.13 \u00c5 resolution (the position of the first Bragg peak) and beyond (Pantelic et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sader et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "a62c1ad3-ada3-4a2e-a468-f996763863c2",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C11",
+      "claim": "Graphene is almost completely electron-transparent to 2.13 \u00c5 resolution and beyond.",
+      "claim_type": "EXPLICIT",
+      "source": "It is stable under a 300 kV electron beam (Sader et al., 2013), and almost completely electron-transparent to 2.13 \u00c5 resolution (the position of the first Bragg peak) and beyond (Pantelic et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pantelic et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "c679ee8f-df86-4640-9701-e153fda01410",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C12",
+      "claim": "The main problem of graphene for cryo-EM is its extreme hydrophobicity.",
+      "claim_type": "EXPLICIT",
+      "source": "The main problem of graphene for cryo-EM is its extreme hydrophobicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of graphene properties",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "67dce0f0-ebac-4843-9256-20e40fda38b6",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C13",
+      "claim": "The FAS complex used for cryo-EM data collection was pure and homogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "The FAS complex used for cryo-EM data collection was pure and homogeneous, as shown by size exclusion chromatography, SDS-polyacrylamide gel electrophoresis and blue-native polyacrylamide gel electrophoresis (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "2fa81a89-2544-4264-aae8-a9d6892ae8c2",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C14",
+      "claim": "Thermal shift assays indicated that the FAS complex was stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermal shift assays indicated that the complex was stable (Figure 1\u2014figure supplement 1D), and at 1500\u20133000 mU/mg it was enzymatically fully active (Fichtlscherer et al., 2000; Oesterhelt et al., 1969; Wieland et al., 1979).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "67df6c4d-3987-4ca5-a8ca-1fa87083daa3",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C15",
+      "claim": "The FAS complex at 1500\u20133000 mU/mg was enzymatically fully active.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermal shift assays indicated that the complex was stable (Figure 1\u2014figure supplement 1D), and at 1500\u20133000 mU/mg it was enzymatically fully active (Fichtlscherer et al., 2000; Oesterhelt et al., 1969; Wieland et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citations to Fichtlscherer et al., 2000; Oesterhelt et al., 1969; Wieland et al., 1979",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "99fc039a-eaf1-4ff6-8192-10c8d7f097c4",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C16",
+      "claim": "Negative-stain EM of freshly purified FAS samples indicated that the complex was structurally intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative-stain EM of freshly purified FAS samples indicated that the complex was structurally intact (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "09e58f05-3cf8-45f2-8798-e2e2d42f1a17",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C17",
+      "claim": "Around 90% of FAS particles in plunge-frozen, unsupported thin layers of vitrified solution on holey carbon film had suffered major structural damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM of the same samples in plunge-frozen, unsupported thin layers of vitrified solution on holey carbon film revealed that around 90% of the particles had suffered major structural damage (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "dd6cd019-a29a-4d6d-94db-67811df2f7ed",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C18",
+      "claim": "FAS particles in two-dimensional and three-dimensional classification lacked between one third and one half of their density or had weak density at the distal part of the beta-domes.",
+      "claim_type": "EXPLICIT",
+      "source": "FAS particles in two-dimensional (2D) and in particular three-dimensional (3D) classification lacked between one third and one half of their density or had weak density at the distal part of the beta-domes (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "cc6a7326-b458-45d3-9a8a-ab49099a83bf",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C19",
+      "claim": "A reconstruction of ~8000 FAS particles from unsupported vitrified buffer was limited to 9.5 \u00c5 resolution according to the gold-standard 0.143 FSC criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "A reconstruction of ~8000 particles was limited to 9.5 \u00c5 resolution, according to the gold-standard 0.143 FSC criterion (Scheres and Chen, 2012) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C and citation to Scheres and Chen, 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "5c0dd5f9-e98d-4e11-9d78-26c209527907",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C20",
+      "claim": "Back-tracking of incomplete particles in the 3D classes revealed major structural defects of the protein complexes in the raw micrographs.",
+      "claim_type": "EXPLICIT",
+      "source": "Back-tracking of incomplete particles in the 3D classes (Figure 1B) revealed major structural defects of the protein complexes in the raw micrographs (Figure 1\u2014figure supplement 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 2B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "3d2b0d7b-67ef-47cb-a7b8-905c07a3bde8",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C21",
+      "claim": "The protein must have been damaged prior to or during cryo-EM grid preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations led us to conclude that the protein must have been damaged prior to or during cryo-EM grid preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that intact proteins became damaged during specimen preparation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "c55eaf65-bdda-4df4-8d11-123d98f5d320",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C22",
+      "claim": "All batches of purified FAS plunge-frozen by different users under different conditions showed damaged FAS complexes in all imaged areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Several batches of purified FAS plunge-frozen by different users under different conditions were examined. All experiments indicated damaged FAS complexes in all imaged areas (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "a39d2856-be59-4d3a-b065-dfe4ea614cdb",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C23",
+      "claim": "Small fragments of denatured FAS were found in the areas surrounding individual complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In most instances, small fragments of denatured FAS were found in the areas surrounding individual complexes (red arrows in Figure 2A, Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A and Figure 2\u2014video 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "63319f6e-32c5-441f-a55a-7cd3c6ecbb5b",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C24",
+      "claim": "FAS adhered to the two opposite surfaces of the unsupported thin layers of vitrified buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-ET revealed that FAS adhered to the two opposite surfaces of the unsupported thin layers of vitrified buffer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cryo-ET experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "346226ad-2fd8-4b26-8684-d578ebfd5c87",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C25",
+      "claim": "The lower meniscus was densely packed with adsorbed protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "One surface, which we refer to as the lower meniscus, was densely packed with adsorbed protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cryo-ET experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "1ccaad24-386e-4cfc-9f8e-3e0996f3b10a",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C26",
+      "claim": "The upper meniscus had only a small number of particles attached.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite surface (the upper meniscus) had only a small number of particles attached (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "ab6f081c-6ef3-491d-9dab-dd57fd94d482",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C27",
+      "claim": "Nearly all the FAS particles in contact with the air-water interface were damaged.",
+      "claim_type": "EXPLICIT",
+      "source": "Tomographic volumes suggested that nearly all the FAS particles in contact with the air-water interface were damaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by tomographic experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "0d3ed896-e8e9-46e9-ba61-3811a97ea0b2",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C28",
+      "claim": "The particles were mostly flattened on one side and appeared incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "The particles were mostly flattened on one side and appeared incomplete (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "c5d4d451-f42f-4d06-a8e5-0abcc556de8d",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C29",
+      "claim": "The flattened regions aligned with the plane of the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The flattened regions aligned with the plane of the air-water interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by tomographic experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "3641a44f-cf28-4a8f-9b67-1c5a05e8cd89",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C30",
+      "claim": "At some point during cryo-specimen preparation, the large majority of FAS complexes encountered the air-water interface, attached to it, and the air-exposed side unfolded before vitrification.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations thus suggest that at some point during cryo-specimen preparation, the large majority of FAS complexes encountered the air-water interface, attached to it, and the air-exposed side unfolded before vitrification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that damaged particles have flattened regions aligned with the air-water interface",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "e87f9f7b-6e13-42b0-ae9e-117c88f17c58",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C31",
+      "claim": "One side of the FAS map from subtomogram averaging lacked density, whereas the opposite side of the complex appeared complete.",
+      "claim_type": "EXPLICIT",
+      "source": "The final reconstruction indicated that one side of the FAS map lacked density, whereas the opposite side of the complex appeared complete (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "cf89851c-e8e4-43b2-b7c3-afe8b16a1ce0",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C32",
+      "claim": "FAS attached with its long axis parallel to the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "FAS attached with its long axis parallel to the air-water interface, which accounts for the scarcity of top views in the single-particle analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from subtomogram averaging data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "0ff45084-a0c9-429e-828f-83324dec16b7",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C33",
+      "claim": "The vectors pointing from the center of FAS complexes towards their flattened side pointed towards the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis indicated clearly that the vectors pointed towards the air-water interface (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "9e722976-8efe-4056-bb0c-527cc816e669",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C34",
+      "claim": "About 86% of FAS particles at the air-water interface were extensively damaged, with one third or even half of the characteristic quaternary FAS structure weak or absent.",
+      "claim_type": "EXPLICIT",
+      "source": "About 86% were extensively damaged, with one third or even half of the characteristic quaternary FAS structure weak or absent (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "d85f192a-8c13-40dc-84f9-fef10bfd7a88",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C35",
+      "claim": "The remaining 14% of FAS particles at the air-water interface had poorly resolved densities, suggesting that even those particles that appeared intact had suffered some damage.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 14% had poorly resolved densities (Figure 3\u2014figure supplement 1B), suggesting that even those particles on the air-water interface that appeared intact had suffered some damage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1B and inference from the poor resolution",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "e5e13e2a-4ee9-4d18-bcd8-9125dfb9f417",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C36",
+      "claim": "Most if not all particles at or near a meniscus were damaged to a greater or lesser extent by contact with the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that most if not all particles at or near a meniscus were damaged to a greater or lesser extent by contact with the air-water interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the multi-reference alignment results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "a639b356-0e65-4577-b842-772f56f25214",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C37",
+      "claim": "Bubbling air through the FAS sample completely denatured all FAS complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Bubbling air through the sample (experiment 1) completely denatured all FAS complexes (not shown), whereas in experiments 2 and 3 a small proportion remained intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from experiment 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "905f987b-1dfd-4a7d-9193-005d752abdda",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C38",
+      "claim": "Denatured proteins were a predominant feature in all three air exposure conditions except that particles adsorbed to the carbon film remained apparently undamaged.",
+      "claim_type": "EXPLICIT",
+      "source": "Denatured proteins were a predominant feature in all the three conditions except that particles adsorbed to the carbon film in experiment 3 (Figure 4D) were apparently undamaged.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "1274abde-0ca5-4253-88b1-8c3c7b502131",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C39",
+      "claim": "FAS at the air-water interface is denatured, whereas it remains intact when adsorbed to a solid substrate in liquid.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that FAS at the air-water interface is denatured, whereas it remains intact when adsorbed to a solid substrate in liquid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental results of the three air exposure experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "58075ff5-0960-45d6-854e-d0676bc81939",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C40",
+      "claim": "When the graphene layer was rendered hydrophilic by 1-pyrCA, FAS had a strong preference for the graphene-water interface over the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "When the graphene layer was rendered hydrophilic by 1-pyrCA, FAS had a strong preference for the graphene-water interface over the air-water interface (Figure 5B, Figure 5\u2014figure supplement 2 and Figure 5\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B, Figure 5\u2014figure supplement 2 and Figure 5\u2014video 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "87bf51de-68b8-48d9-b9ba-c0e1f1f9e6a8",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C41",
+      "claim": "Reconstructions of FAS on hydrophilized graphene both before and after multi-reference alignment indicated that all particles were intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstructions both before (Figure 5C and Figure 5\u2014figure supplement 3) and after (Figure 5\u2014figure supplement 4) multi-reference alignment indicated that all particles were intact.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5C, Figure 5\u2014figure supplement 3, and Figure 5\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "4737d63d-405b-4997-85d8-24ca26395cd0",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C42",
+      "claim": "The best sub-tomogram averages of FAS on hydrophilized graphene yielded maps at 24.6 \u00c5 and 17.1 \u00c5 resolution before and after masking.",
+      "claim_type": "EXPLICIT",
+      "source": "The best sub-tomogram averages yielded maps at 24.6 \u00c5 and 17.1 \u00c5 resolution before and after masking (Figure 5\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "84f7fd3d-cacc-45a5-80c2-e62947d1afe5",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C43",
+      "claim": "FAS does not denature on hydrophilized graphene.",
+      "claim_type": "EXPLICIT",
+      "source": "Since few if any particles stuck to the air-water interface and multi-reference alignment did not reveal any damage, we conclude that FAS does not denature on hydrophilized graphene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that particles on hydrophilized graphene were intact",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "7a84cb3a-166d-4bef-8268-0be05c8a9db4",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C44",
+      "claim": "All 2D class averages of FAS on hydrophilized graphene displayed high-resolution detail and confirmed that FAS was structurally undamaged.",
+      "claim_type": "EXPLICIT",
+      "source": "All 2D class averages displayed high-resolution detail (Figure 6A) and confirmed that FAS was structurally undamaged.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "5755e1ba-de75-4a42-a95e-7c0144667888",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C45",
+      "claim": "3D classification of FAS on hydrophilized graphene showed intact complexes with well-resolved secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "This was verified by 3D classification, which showed intact complexes with well-resolved secondary structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 3D classification experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "89b27fd8-f525-4483-b999-fb41cf85703e",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C46",
+      "claim": "The dataset of FAS on hydrophilized graphene contained only intact particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this dataset contained only intact particles (Figure 6B), whereas 90% of the particles in the single-particle FAS dataset from unsupported vitrified samples had suffered major damage (Figure 1B classes 2, 3), and even the remaining 10% were compromised (Figure 1B class one and Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "090f8ea7-5809-411c-b439-9e1efa409e8a",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C47",
+      "claim": "Auto-refinement of FAS on hydrophilized graphene without symmetry or with imposed D3 symmetry yielded maps at 4.8 and 4.0 \u00c5 resolution, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Auto-refinement without symmetry (C1) or with imposed D3 symmetry yielded maps at 4.8 and 4.0 \u00c5 resolution, respectively (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "82e30a34-20ea-4b33-aa5b-489f33a077d1",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C48",
+      "claim": "Local resolution estimates indicated better than 3.5 \u00c5 resolution for the rigid alpha wheel of FAS on hydrophilized graphene.",
+      "claim_type": "EXPLICIT",
+      "source": "Local resolution estimates indicated better than 3.5 \u00c5 resolution for the rigid alpha wheel (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "8170831b-c0ca-4922-aeb1-1bd5a32ceb49",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C49",
+      "claim": "A map from 8000 randomly selected particles from the dataset collected on hydrophilized graphene attained a resolution of 6.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "For an unbiased comparison to the 9.5 \u00c5 map obtained from FAS in unsupported vitrified buffer (Figure 6\u2014figure supplement 3A), we randomly selected 8000 particles from the dataset collected on hydrophilized graphene. The resulting map (Figure 6\u2014figure supplement 3B) attained a resolution of 6.4 \u00c5, confirming that hydrophilized graphene works very much better as a substrate for single-particle cryo-EM of FAS than unsupported vitrified buffer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "5e80e1bc-420d-4625-9366-b3685abf098a",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C50",
+      "claim": "Hydrophilized graphene works very much better as a substrate for single-particle cryo-EM of FAS than unsupported vitrified buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting map (Figure 6\u2014figure supplement 3B) attained a resolution of 6.4 \u00c5, confirming that hydrophilized graphene works very much better as a substrate for single-particle cryo-EM of FAS than unsupported vitrified buffer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the comparison of resolution between hydrophilized graphene (6.4 \u00c5) and unsupported buffer (9.5 \u00c5) with the same number of particles",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "63797238-af2d-4f1e-967d-deac32f97446",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C51",
+      "claim": "Particle orientation was much more evenly distributed on hydrophilized graphene, compared to unsupported vitrified buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, although not random, particle orientation was much more evenly distributed on hydrophilized graphene, compared to unsupported vitrified buffer (Figure 6\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "5953a66f-f39a-4592-9569-549f81c96110",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C52",
+      "claim": "An earlier single-particle cryo-EM structure of S. cerevisiae FAS in unsupported vitrified buffer reported a resolution of 7.2 \u00c5 at the 0.5 FSC threshold and 5.9 \u00c5 at 0.143 FSC.",
+      "claim_type": "EXPLICIT",
+      "source": "An earlier single-particle cryo-EM structure of S. cerevisiae FAS in unsupported vitrified buffer (Gipson et al., 2010) reported a resolution of 7.2 \u00c5 at the 0.5 FSC threshold and 5.9 \u00c5 at 0.143 FSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gipson et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "8704f2b3-840b-4f63-9acc-1348ad209c48",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C53",
+      "claim": "The 0.5 FSC resolution estimate of the earlier FAS map was realistic.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the 0.5 FSC resolution estimate of that map was realistic, as confirmed by a comparison of the FAS alpha wheel in the earlier structure to the gold-standard FSC maps in the present study (Figure 6\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison shown in Figure 6\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "9f7ae465-93f0-4d59-90ec-305f1ca20a83",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C54",
+      "claim": "The resolution of the earlier FAS map is clearly between that of the 6.4 \u00c5 map of FAS on graphene and the 9.5 \u00c5 map of FAS in unsupported vitrified buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution of the earlier map is clearly between that of the 6.4 \u00c5 map of FAS on graphene and the 9.5 \u00c5 map of FAS in unsupported vitrified buffer, which were obtained with \u223c8000 particles each.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of maps shown in Figure 6\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "7c68605b-a29a-4631-81ed-fccc0bbcf381",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C55",
+      "claim": "The better quality of the earlier FAS map is fully accounted for by the larger number of particles contributing to it, and the application of D3 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The better quality of the earlier map (Gipson et al., 2010) is fully accounted for by the larger number of particles contributing to it, and the application of D3 symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of particle numbers and symmetry application",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "c5a911ad-9d5e-48f9-9bf1-1aafd0c321bf",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C56",
+      "claim": "The 4 \u00c5 resolution of the present FAS map from 28,000 particles on hydrophilized graphene is most likely limited by the inherent flexibility of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The 4 \u00c5 resolution of our present map from 28,000 particles on hydrophilized graphene is most likely limited by the inherent flexibility of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on comparison with thermophilic FAS",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "17232157-c348-45c9-a4df-2c20d93888a5",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C57",
+      "claim": "The cryo-EM structure of a FAS complex from the thermophilic fungus Chaetomium thermophilum attained a gold standard, FSC 0.143 resolution of 4.7 \u00c5 from only \u223c 4000 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "This is implied by the cryo-EM structure of a FAS complex from the thermophilic fungus Chaetomium thermophilum (Kastritis et al., 2017), which attained a gold standard, FSC 0.143 resolution of 4.7 \u00c5 from only \u223c 4000 particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kastritis et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "ecdffe16-28f9-47b9-9a4d-20acd65e293c",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C58",
+      "claim": "Protein complexes from thermophilic organisms are more stable than those of mesophilic origin.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that protein complexes from thermophilic organisms are more stable than those of mesophilic origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "51afdd08-e292-4f3a-adbc-9915674e6d3b",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C59",
+      "claim": "More than 100,000 particles contributed to the 7.5 \u00c5 cryo-EM structure of a FAS complex from Mycobacterium smegmatis, suggesting that the mycobacterial complex is significantly less stable.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparison, more than 100,000 particles contributed to the 7.5 \u00c5 cryo-EM structure of a FAS complex from Mycobacterium smegmatis (Boehringer et al., 2013), suggesting that the mycobacterial complex is significantly less stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the large number of particles required and citation to Boehringer et al., 2013",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "3045cd59-2956-47fc-8fe8-8916b031e867",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C60",
+      "claim": "In many of the cryo-EM grids examined by electron tomography, the curvatures of the upper and lower meniscus were different.",
+      "claim_type": "EXPLICIT",
+      "source": "In many of the cryo-EM grids examined by electron tomography (Noble et al., 2018), the curvatures of the upper and lower meniscus were different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Noble et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "fe03324b-192a-4835-96c1-02244dc19389",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C61",
+      "claim": "In the case of FAS, the less densely populated upper meniscus was more strongly curved than the lower meniscus.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of FAS, the less densely populated upper meniscus was more strongly curved than the lower meniscus (Figure 2B, Figure 2\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B and Figure 2\u2014video 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "e72b1550-a870-47fc-bcc1-eb39e960bc61",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C62",
+      "claim": "The asymmetric distribution of protein on the upper and lower meniscus is surprising, because the grids were blotted symmetrically from both sides.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric distribution of protein on the upper and lower meniscus is surprising, because the grids were blotted symmetrically from both sides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the observation of asymmetric distribution despite symmetric blotting",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "2c45529b-9da1-49dc-805e-6b5ccddfab1e",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C63",
+      "claim": "Possibly, the more densely populated lower meniscus remained in contact with air for longer during the blotting process, so that more protein accumulated on it.",
+      "claim_type": "EXPLICIT",
+      "source": "Possibly, the more densely populated lower meniscus remained in contact with air for longer during the blotting process, so that more protein accumulated on it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning to explain the asymmetric distribution",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "bb61c450-3f23-4b37-8c7a-a2a47094dd96",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C64",
+      "claim": "Only a minority of the FAS particles in unsupported vitreous films retained intermediate-resolution features, whereas up to 90% were at least partly denatured by the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryo-EM analysis of FAS, a soluble 2.6 MDa protein complex, revealed that only a minority of the particles in unsupported vitreous films retained intermediate-resolution features, whereas up to 90% were at least partly denatured by the air-water interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from cryo-EM analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "c3beb242-1895-4594-886a-d8a60d69e9c9",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C65",
+      "claim": "Usually only a minor fraction of a large single-particle data set contributes to the final high-resolution map in recently reported high-resolution cryo-EM structures.",
+      "claim_type": "EXPLICIT",
+      "source": "A survey of recently reported high-resolution cryo-EM structures shows that usually only a minor fraction of a large single-particle data set contributes to the final high-resolution map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple recent cryo-EM structures",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "c37aa2e3-6383-450b-9937-63156675f6b8",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C66",
+      "claim": "19% of particles contributed to the 3.8 \u00c5 map of a human synaptic GABAA receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Percentages of good particles were 19% for the 3.8 \u00c5 map of a human synaptic GABAA receptor (Zhu et al., 2018); 15% for human P-glycoprotein at 3.4 \u00c5 (Kim and Chen, 2018); 11.8% for a 4 \u00c5 nucleosome map (Takizawa et al., 2018); 8.9% for the 3.4 \u00c5 structure of human \u03b3-secretase (Bai et al., 2015b); and only 5.7% for the 4 \u00c5 structure of a sodium channel complex from electric eel (Yan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "03e73832-378b-48e6-a927-04684dca0b4c",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C67",
+      "claim": "15% of particles contributed to human P-glycoprotein at 3.4 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Percentages of good particles were 19% for the 3.8 \u00c5 map of a human synaptic GABAA receptor (Zhu et al., 2018); 15% for human P-glycoprotein at 3.4 \u00c5 (Kim and Chen, 2018); 11.8% for a 4 \u00c5 nucleosome map (Takizawa et al., 2018); 8.9% for the 3.4 \u00c5 structure of human \u03b3-secretase (Bai et al., 2015b); and only 5.7% for the 4 \u00c5 structure of a sodium channel complex from electric eel (Yan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim and Chen, 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "7de91b5a-02ad-46db-88ed-0376eb01f0de",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C68",
+      "claim": "11.8% of particles contributed to a 4 \u00c5 nucleosome map.",
+      "claim_type": "EXPLICIT",
+      "source": "Percentages of good particles were 19% for the 3.8 \u00c5 map of a human synaptic GABAA receptor (Zhu et al., 2018); 15% for human P-glycoprotein at 3.4 \u00c5 (Kim and Chen, 2018); 11.8% for a 4 \u00c5 nucleosome map (Takizawa et al., 2018); 8.9% for the 3.4 \u00c5 structure of human \u03b3-secretase (Bai et al., 2015b); and only 5.7% for the 4 \u00c5 structure of a sodium channel complex from electric eel (Yan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Takizawa et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "3e919d90-5603-4c1a-a06a-f40132f66c46",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C69",
+      "claim": "8.9% of particles contributed to the 3.4 \u00c5 structure of human \u03b3-secretase.",
+      "claim_type": "EXPLICIT",
+      "source": "Percentages of good particles were 19% for the 3.8 \u00c5 map of a human synaptic GABAA receptor (Zhu et al., 2018); 15% for human P-glycoprotein at 3.4 \u00c5 (Kim and Chen, 2018); 11.8% for a 4 \u00c5 nucleosome map (Takizawa et al., 2018); 8.9% for the 3.4 \u00c5 structure of human \u03b3-secretase (Bai et al., 2015b); and only 5.7% for the 4 \u00c5 structure of a sodium channel complex from electric eel (Yan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bai et al., 2015b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "64111f50-d533-4a30-ada7-6a37fcb99619",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C70",
+      "claim": "Only 5.7% of particles contributed to the 4 \u00c5 structure of a sodium channel complex from electric eel.",
+      "claim_type": "EXPLICIT",
+      "source": "Percentages of good particles were 19% for the 3.8 \u00c5 map of a human synaptic GABAA receptor (Zhu et al., 2018); 15% for human P-glycoprotein at 3.4 \u00c5 (Kim and Chen, 2018); 11.8% for a 4 \u00c5 nucleosome map (Takizawa et al., 2018); 8.9% for the 3.4 \u00c5 structure of human \u03b3-secretase (Bai et al., 2015b); and only 5.7% for the 4 \u00c5 structure of a sodium channel complex from electric eel (Yan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yan et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "c2c214f0-52c5-4802-8e63-72900e048424",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C71",
+      "claim": "All the structures with low percentages of good particles were prepared in unsupported vitrified buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "All were prepared in unsupported vitrified buffer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the survey of recently reported structures",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "15ea5d88-5046-4138-a99c-71ce798cf448",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C72",
+      "claim": "These numbers suggest that up to 94% of the particles may have suffered partial denaturation at the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "These numbers suggest that up to 94% of the particles may have suffered partial denaturation at the air-water interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference from the low percentages of good particles",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "f6897a12-562f-468d-96c7-d126e791357f",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C73",
+      "claim": "If hydrophilized or otherwise functionalized graphene grids prove to work as well for other proteins to overcome denaturation at the air-water interface, a much higher proportion of particles would contribute to the final structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Future studies will show whether this is indeed the case, and whether denaturation can be avoided by using hydrophilized graphene grids, as we have shown for yeast FAS. If hydrophilized or otherwise functionalized graphene grids prove to work as well for other proteins to overcome denaturation at the air-water interface, a much higher proportion of particles would contribute to the final structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about future applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "9ed19ce9-3034-413e-b7af-8c16ee4ee99f",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C74",
+      "claim": "If hydrophilized graphene works for other proteins, this would result in a large increase in data collection efficiency and significantly better maps.",
+      "claim_type": "EXPLICIT",
+      "source": "This would result in a large increase in data collection efficiency and significantly better maps. It would be a major boost for cryo-EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about the potential impact",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "33ab28e8-7019-41ed-b224-82fc6536ccb8",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C75",
+      "claim": "Around 90% of FAS complexes adsorbed to the air-water interface are partly denatured.",
+      "claim_type": "EXPLICIT",
+      "source": "Around 90% of complexes adsorbed to the air-water interface are partly denatured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from cryo-ET and single-particle analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "7c76897e-5113-44d9-9a30-ac8d02807e9f",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C76",
+      "claim": "The unfolded regions of FAS face the air-water interface.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the unfolded regions face the air-water interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from subtomogram averaging and orientation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "3e73f32e-2884-4254-a0ca-bc985beab621",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C77",
+      "claim": "Denaturation by contact with air may happen at any stage of specimen preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Denaturation by contact with air may happen at any stage of specimen preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that proteins make thousands of contacts with the air-water interface during preparation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "f483d284-57ad-40a2-bf9e-0dba0a674222",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C78",
+      "claim": "Denaturation at the air-water interface is completely avoided when the FAS complex is plunge-frozen on a substrate of hydrophilized graphene.",
+      "claim_type": "EXPLICIT",
+      "source": "Denaturation at the air-water interface is completely avoided when the complex is plunge-frozen on a substrate of hydrophilized graphene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing all particles intact on hydrophilized graphene",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "a5bd8054-2c02-44f1-abfe-f9e19a1f1dc4",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C79",
+      "claim": "Amorphous carbon helps to spread proteins evenly on cryo-EM grids.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuous thin layers of amorphous carbon help to spread proteins evenly on cryo-EM grids (Bai et al., 2013; D'Imprima et al., 2017; Nguyen et al., 2015; Schraidt and Marlovits, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bai et al., 2013; D'Imprima et al., 2017; Nguyen et al., 2015; Schraidt and Marlovits, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "b03e0cc5-b00c-42b9-ae5d-7d7b526ed1f6",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C80",
+      "claim": "Amorphous carbon is far from ideal as a support film for cryo-EM because it adds background and conducts electrons poorly.",
+      "claim_type": "EXPLICIT",
+      "source": "Amorphous carbon is, however, far from ideal as a support film for cyro-EM because it adds background and conducts electrons poorly (Brink et al., 1998; Larson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brink et al., 1998; Larson et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "efc3242d-9551-4c62-a432-613996d3357e",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C81",
+      "claim": "Beam-induced movement is more severe on amorphous carbon support films than on unsupported films of vitrified solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Beam-induced movement is more severe on amorphous carbon support films than on unsupported films of vitrified solutions (Russo and Passmore, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Russo and Passmore, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "93df62d6-a4bb-416b-8de0-24202e66116b",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C82",
+      "claim": "Graphene can be rendered hydrophilic by plasma etching or non-covalent chemical doping.",
+      "claim_type": "EXPLICIT",
+      "source": "Graphene can be rendered hydrophilic by plasma etching (Russo and Passmore, 2014) or non-covalent chemical doping, exploiting the \u03c0-\u03c0 stacking interaction between graphene and aromatic planar compounds such as 1-pyrenecarboxylic acid (Pantelic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Russo and Passmore, 2014 and Pantelic et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "f3835e1a-b4ab-4f2e-943b-801414993ed9",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C83",
+      "claim": "For cryo-EM, advantages of non-covalent doping include that the graphene structure is preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "For cryo-EM, advantages of non-covalent doping include (i) the graphene structure is preserved; (ii) surface charge can be selectively modified; (iii) the number of adsorbed particles per unit area can be tuned by adjusting the concentration of the doping chemical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of non-covalent doping",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "f97690dd-68e1-486d-9fb9-79f29d6dd883",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C84",
+      "claim": "For cryo-EM, advantages of non-covalent doping include that surface charge can be selectively modified.",
+      "claim_type": "EXPLICIT",
+      "source": "For cryo-EM, advantages of non-covalent doping include (i) the graphene structure is preserved; (ii) surface charge can be selectively modified; (iii) the number of adsorbed particles per unit area can be tuned by adjusting the concentration of the doping chemical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of non-covalent doping",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "d2840b26-66b7-4b60-aa18-0a4b98564c56",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C85",
+      "claim": "For cryo-EM, advantages of non-covalent doping include that the number of adsorbed particles per unit area can be tuned by adjusting the concentration of the doping chemical.",
+      "claim_type": "EXPLICIT",
+      "source": "For cryo-EM, advantages of non-covalent doping include (i) the graphene structure is preserved; (ii) surface charge can be selectively modified; (iii) the number of adsorbed particles per unit area can be tuned by adjusting the concentration of the doping chemical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of non-covalent doping",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "193d62e2-9ca2-4663-a20b-02383eabb440",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C86",
+      "claim": "The structure of FAS is well-characterized by protein crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of FAS is well-characterized by protein crystallography (Jenni et al., 2007; Johansson et al., 2008; Lomakin et al., 2007) and cryo-EM (Gipson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jenni et al., 2007; Johansson et al., 2008; Lomakin et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "aad926e5-0624-40b9-b713-5cb229e79b73",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C87",
+      "claim": "The structure of FAS is well-characterized by cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of FAS is well-characterized by protein crystallography (Jenni et al., 2007; Johansson et al., 2008; Lomakin et al., 2007) and cryo-EM (Gipson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gipson et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "efc6b8f4-81b9-42e4-9102-0c50d46c50b5",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C88",
+      "claim": "The well-characterized structure of FAS makes it easy to detect and analyze which part of the complex contacts the interface and to what extent it is denatured.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes it easy to detect and analyze which part of the complex contacts the interface and to what extent it is denatured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the availability of well-characterized FAS structure",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "4e8f1ef3-2e4f-432a-bb6c-8fb739e86ca7",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "claim_id": "C89",
+      "claim": "The EM maps have been deposited in the EMDB with accession codes EMD-0178 and EMD-0179.",
+      "claim_type": "EXPLICIT",
+      "source": "The EM maps have been deposited in the EMDB with accession codes EMD-0178 (single particle cryo-EM FAS map on graphene support) and EMD-0179 (subtomogram averaging FAS map on graphene support).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of data deposition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "837e7aa6-f468-425e-bc58-1b5084ae7eca",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The FAS complex used for cryo-EM was pure, homogeneous, stable, enzymatically active, and structurally intact prior to grid preparation, as demonstrated by multiple biochemical and structural assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 provide converging evidence from size exclusion chromatography, gel electrophoresis, thermal shift assays, enzymatic activity measurements, and negative-stain EM that the FAS sample was high quality before cryo-EM grid preparation. This establishes that subsequent damage occurred during specimen preparation rather than from sample degradation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "0b99d37c-ff50-40ae-a19e-3fd71501ef19",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Approximately 90% of FAS particles in plunge-frozen unsupported vitrified buffer suffered major structural damage, with particles lacking one-third to one-half of their density, limiting reconstruction to 9.5 \u00c5 resolution from ~8000 particles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 demonstrate through 2D/3D classification, reconstruction, and back-tracking analysis that the majority of FAS particles were damaged during cryo-EM grid preparation. The quantification (90% damaged) is supported by classification results shown in Figure 1, and the 9.5 \u00c5 resolution is determined by gold-standard FSC. The conclusion that damage occurred during preparation (C21) logically follows from the intact starting material.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "a08e529b-032a-44ef-bebd-aa6dfd0ed737",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cryo-ET revealed that FAS particles adhered to both air-water interfaces (upper and lower meniscus) with asymmetric distribution, and nearly all particles in contact with the interface were damaged, flattened on one side, with the flattened regions aligned with the air-water interface plane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C30 provide direct visualization evidence from cryo-ET that particles contact and are damaged at the air-water interface. The observation of flattened particles with damage oriented toward the interface (C28-C29) strongly supports the conclusion that interface contact causes denaturation (C30). The asymmetric distribution (C25-C26) is an interesting observation, though the explanation remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "09214f6f-31f9-4003-b1d5-c7da57d44f02",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Subtomogram averaging and multi-reference alignment of FAS at the air-water interface showed that one side of the complex lacked density, particles attached with their long axis parallel to the interface, and vectors from particle centers to damaged regions pointed toward the air-water interface. About 86% were extensively damaged and 14% showed poor resolution, indicating most or all particles at the meniscus were damaged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 provide quantitative orientation analysis demonstrating that the damaged side of FAS faces the air-water interface. The geometric analysis (C33, Figure 3D) is rigorous and the multi-reference alignment (C34-C35) provides statistical support for the extent of damage. The conclusion that essentially all particles at the interface are damaged (C36) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "84648923-5456-49b5-90c6-6f3a997605ab",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Controlled air exposure experiments demonstrated that FAS is denatured at the air-water interface but remains intact when adsorbed to a solid substrate (carbon film) in liquid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 describe three experiments that systematically test the effect of air exposure. The observation that particles on carbon film remain intact (C38) while those at the air-water interface denature provides strong evidence that the interface itself, not simply surface adsorption, causes damage. However, the experiments are only examined by negative-stain EM, which has lower resolution than cryo-EM.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "623f8369-e04d-4b83-84a2-2964109dd150",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "When FAS was prepared on hydrophilized graphene, particles strongly preferred the graphene-water interface over the air-water interface, and subtomogram averaging showed all particles were intact with no evidence of denaturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 demonstrate by cryo-ET and subtomogram averaging that hydrophilized graphene prevents FAS denaturation. The preference for graphene over air-water interface (C40) and the intact reconstructions (C41-C42) provide strong evidence. The resolution (17.1-24.6 \u00c5) is lower than the single-particle results but sufficient to assess structural integrity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "d0d429f2-5189-4b05-aa82-e495df325676",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Single-particle cryo-EM of FAS on hydrophilized graphene yielded only intact particles, achieving 4.0 \u00c5 resolution with D3 symmetry from ~28,000 particles. An unbiased comparison using 8,000 particles showed 6.4 \u00c5 resolution on graphene versus 9.5 \u00c5 in unsupported buffer, demonstrating that hydrophilized graphene works much better as a substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51 provide comprehensive single-particle cryo-EM analysis showing that hydrophilized graphene preserves FAS integrity and enables high-resolution structure determination. The unbiased comparison (C49-C50) using equal particle numbers is particularly rigorous. The 4.0 \u00c5 resolution (C47) and improved particle orientation distribution (C51) demonstrate the practical advantages of the method. All claims are well-supported by the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "0ff5de7b-28fb-41df-9522-4f92cf901e98",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison to an earlier FAS cryo-EM structure (Gipson et al., 2010) showed that the 0.5 FSC resolution estimate of 7.2 \u00c5 was realistic, falling between the current 6.4 \u00c5 map on graphene and 9.5 \u00c5 map in unsupported buffer (both from ~8000 particles), with the better quality fully accounted for by more particles and D3 symmetry application.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 provide a fair comparison to prior work. The visual comparison (Figure 6\u2014figure supplement 5) supports the assessment that the earlier map quality is intermediate. The explanation (C55) that particle number and symmetry account for the difference is reasonable, though somewhat speculative since the earlier work may have had different levels of particle damage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "7bf9d347-e972-4d71-92bd-48c172e55c35",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The 4 \u00c5 resolution limit of the FAS map on graphene is likely due to inherent flexibility of the mesophilic yeast complex, as implied by comparison to a thermophilic FAS that achieved 4.7 \u00c5 from only ~4000 particles, while a less stable mycobacterial FAS required >100,000 particles for 7.5 \u00c5 resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C59 present a reasonable hypothesis about resolution limits based on protein stability, but this remains speculative (C56 explicitly notes this). The comparisons to thermophilic (C57) and mycobacterial (C59) FAS are informative but don't definitively prove that flexibility limits the current structure. Other factors like ice thickness, particle orientation, or data collection parameters could contribute.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "36550643-3eb6-455b-ac7a-f5334a6120ad",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The upper and lower meniscus showed different curvatures and asymmetric protein distribution despite symmetric blotting, possibly because the lower meniscus remained in contact with air longer during blotting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C62 describe an interesting observation of asymmetric particle distribution, but the explanation (C63) is explicitly speculative. The observation is supported by the data (Figure 2B), but the mechanism remains unclear. This asymmetry could have important implications for understanding specimen preparation but requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "b4a53d82-8bf0-4cdd-9ca2-e4b72d3712bc",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A survey of recent high-resolution cryo-EM structures prepared in unsupported vitrified buffer showed that only 5.7-19% of particles typically contribute to final maps, suggesting that up to 94% may have suffered partial denaturation at the air-water interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C72 present an important broader implication, but the inference that low particle usage indicates air-water interface denaturation (C72) is speculative. While the FAS data support this interpretation, other factors could explain low particle yields in other studies (conformational heterogeneity, preferred orientation, ice quality, particle aggregation, etc.). The survey data (C66-C70) are accurately cited, but the causal attribution requires more evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    },
+    {
+      "id": "2cb0eb37-4a19-436f-8600-a83ca88dcd96",
+      "content_id": "b0433d53-36b1-4d98-bf0a-a9f4c7fcec25",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "If hydrophilized graphene works for other proteins to prevent air-water interface denaturation, it would result in much higher particle usage, increased data collection efficiency, significantly better maps, and would be a major boost for cryo-EM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74 present reasonable predictions about future impact, but these are explicitly speculative about generalizability to other proteins. The FAS results are promising, but whether the method works broadly remains to be demonstrated. Some proteins may not adhere well to graphene, or the background from dopant contamination may be problematic for smaller proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T09:25:01.849187Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "67dce0f0-ebac-4843-9256-20e40fda38b6",
+      "result_id": "837e7aa6-f468-425e-bc58-1b5084ae7eca"
+    },
+    {
+      "claim_id": "2fa81a89-2544-4264-aae8-a9d6892ae8c2",
+      "result_id": "837e7aa6-f468-425e-bc58-1b5084ae7eca"
+    },
+    {
+      "claim_id": "67df6c4d-3987-4ca5-a8ca-1fa87083daa3",
+      "result_id": "837e7aa6-f468-425e-bc58-1b5084ae7eca"
+    },
+    {
+      "claim_id": "99fc039a-eaf1-4ff6-8192-10c8d7f097c4",
+      "result_id": "837e7aa6-f468-425e-bc58-1b5084ae7eca"
+    },
+    {
+      "claim_id": "09e58f05-3cf8-45f2-8798-e2e2d42f1a17",
+      "result_id": "0b99d37c-ff50-40ae-a19e-3fd71501ef19"
+    },
+    {
+      "claim_id": "dd6cd019-a29a-4d6d-94db-67811df2f7ed",
+      "result_id": "0b99d37c-ff50-40ae-a19e-3fd71501ef19"
+    },
+    {
+      "claim_id": "cc6a7326-b458-45d3-9a8a-ab49099a83bf",
+      "result_id": "0b99d37c-ff50-40ae-a19e-3fd71501ef19"
+    },
+    {
+      "claim_id": "5c0dd5f9-e98d-4e11-9d78-26c209527907",
+      "result_id": "0b99d37c-ff50-40ae-a19e-3fd71501ef19"
+    },
+    {
+      "claim_id": "3d2b0d7b-67ef-47cb-a7b8-905c07a3bde8",
+      "result_id": "0b99d37c-ff50-40ae-a19e-3fd71501ef19"
+    },
+    {
+      "claim_id": "c55eaf65-bdda-4df4-8d11-123d98f5d320",
+      "result_id": "a08e529b-032a-44ef-bebd-aa6dfd0ed737"
+    },
+    {
+      "claim_id": "a39d2856-be59-4d3a-b065-dfe4ea614cdb",
+      "result_id": "a08e529b-032a-44ef-bebd-aa6dfd0ed737"
+    },
+    {
+      "claim_id": "63319f6e-32c5-441f-a55a-7cd3c6ecbb5b",
+      "result_id": "a08e529b-032a-44ef-bebd-aa6dfd0ed737"
+    },
+    {
+      "claim_id": "346226ad-2fd8-4b26-8684-d578ebfd5c87",
+      "result_id": "a08e529b-032a-44ef-bebd-aa6dfd0ed737"
+    },
+    {
+      "claim_id": "1ccaad24-386e-4cfc-9f8e-3e0996f3b10a",
+      "result_id": "a08e529b-032a-44ef-bebd-aa6dfd0ed737"
+    },
+    {
+      "claim_id": "ab6f081c-6ef3-491d-9dab-dd57fd94d482",
+      "result_id": "a08e529b-032a-44ef-bebd-aa6dfd0ed737"
+    },
+    {
+      "claim_id": "0d3ed896-e8e9-46e9-ba61-3811a97ea0b2",
+      "result_id": "a08e529b-032a-44ef-bebd-aa6dfd0ed737"
+    },
+    {
+      "claim_id": "c5d4d451-f42f-4d06-a8e5-0abcc556de8d",
+      "result_id": "a08e529b-032a-44ef-bebd-aa6dfd0ed737"
+    },
+    {
+      "claim_id": "3641a44f-cf28-4a8f-9b67-1c5a05e8cd89",
+      "result_id": "a08e529b-032a-44ef-bebd-aa6dfd0ed737"
+    },
+    {
+      "claim_id": "e87f9f7b-6e13-42b0-ae9e-117c88f17c58",
+      "result_id": "09214f6f-31f9-4003-b1d5-c7da57d44f02"
+    },
+    {
+      "claim_id": "cf89851c-e8e4-43b2-b7c3-afe8b16a1ce0",
+      "result_id": "09214f6f-31f9-4003-b1d5-c7da57d44f02"
+    },
+    {
+      "claim_id": "0ff45084-a0c9-429e-828f-83324dec16b7",
+      "result_id": "09214f6f-31f9-4003-b1d5-c7da57d44f02"
+    },
+    {
+      "claim_id": "9e722976-8efe-4056-bb0c-527cc816e669",
+      "result_id": "09214f6f-31f9-4003-b1d5-c7da57d44f02"
+    },
+    {
+      "claim_id": "d85f192a-8c13-40dc-84f9-fef10bfd7a88",
+      "result_id": "09214f6f-31f9-4003-b1d5-c7da57d44f02"
+    },
+    {
+      "claim_id": "e5e13e2a-4ee9-4d18-bcd8-9125dfb9f417",
+      "result_id": "09214f6f-31f9-4003-b1d5-c7da57d44f02"
+    },
+    {
+      "claim_id": "a639b356-0e65-4577-b842-772f56f25214",
+      "result_id": "84648923-5456-49b5-90c6-6f3a997605ab"
+    },
+    {
+      "claim_id": "905f987b-1dfd-4a7d-9193-005d752abdda",
+      "result_id": "84648923-5456-49b5-90c6-6f3a997605ab"
+    },
+    {
+      "claim_id": "1274abde-0ca5-4253-88b1-8c3c7b502131",
+      "result_id": "84648923-5456-49b5-90c6-6f3a997605ab"
+    },
+    {
+      "claim_id": "58075ff5-0960-45d6-854e-d0676bc81939",
+      "result_id": "623f8369-e04d-4b83-84a2-2964109dd150"
+    },
+    {
+      "claim_id": "87bf51de-68b8-48d9-b9ba-c0e1f1f9e6a8",
+      "result_id": "623f8369-e04d-4b83-84a2-2964109dd150"
+    },
+    {
+      "claim_id": "4737d63d-405b-4997-85d8-24ca26395cd0",
+      "result_id": "623f8369-e04d-4b83-84a2-2964109dd150"
+    },
+    {
+      "claim_id": "84f7fd3d-cacc-45a5-80c2-e62947d1afe5",
+      "result_id": "623f8369-e04d-4b83-84a2-2964109dd150"
+    },
+    {
+      "claim_id": "7a84cb3a-166d-4bef-8268-0be05c8a9db4",
+      "result_id": "d0d429f2-5189-4b05-aa82-e495df325676"
+    },
+    {
+      "claim_id": "5755e1ba-de75-4a42-a95e-7c0144667888",
+      "result_id": "d0d429f2-5189-4b05-aa82-e495df325676"
+    },
+    {
+      "claim_id": "89b27fd8-f525-4483-b999-fb41cf85703e",
+      "result_id": "d0d429f2-5189-4b05-aa82-e495df325676"
+    },
+    {
+      "claim_id": "090f8ea7-5809-411c-b439-9e1efa409e8a",
+      "result_id": "d0d429f2-5189-4b05-aa82-e495df325676"
+    },
+    {
+      "claim_id": "82e30a34-20ea-4b33-aa5b-489f33a077d1",
+      "result_id": "d0d429f2-5189-4b05-aa82-e495df325676"
+    },
+    {
+      "claim_id": "8170831b-c0ca-4922-aeb1-1bd5a32ceb49",
+      "result_id": "d0d429f2-5189-4b05-aa82-e495df325676"
+    },
+    {
+      "claim_id": "5e80e1bc-420d-4625-9366-b3685abf098a",
+      "result_id": "d0d429f2-5189-4b05-aa82-e495df325676"
+    },
+    {
+      "claim_id": "63797238-af2d-4f1e-967d-deac32f97446",
+      "result_id": "d0d429f2-5189-4b05-aa82-e495df325676"
+    },
+    {
+      "claim_id": "5953a66f-f39a-4592-9569-549f81c96110",
+      "result_id": "0ff5de7b-28fb-41df-9522-4f92cf901e98"
+    },
+    {
+      "claim_id": "8704f2b3-840b-4f63-9acc-1348ad209c48",
+      "result_id": "0ff5de7b-28fb-41df-9522-4f92cf901e98"
+    },
+    {
+      "claim_id": "9f7ae465-93f0-4d59-90ec-305f1ca20a83",
+      "result_id": "0ff5de7b-28fb-41df-9522-4f92cf901e98"
+    },
+    {
+      "claim_id": "7c68605b-a29a-4631-81ed-fccc0bbcf381",
+      "result_id": "0ff5de7b-28fb-41df-9522-4f92cf901e98"
+    },
+    {
+      "claim_id": "c5a911ad-9d5e-48f9-9bf1-1aafd0c321bf",
+      "result_id": "7bf9d347-e972-4d71-92bd-48c172e55c35"
+    },
+    {
+      "claim_id": "17232157-c348-45c9-a4df-2c20d93888a5",
+      "result_id": "7bf9d347-e972-4d71-92bd-48c172e55c35"
+    },
+    {
+      "claim_id": "ecdffe16-28f9-47b9-9a4d-20acd65e293c",
+      "result_id": "7bf9d347-e972-4d71-92bd-48c172e55c35"
+    },
+    {
+      "claim_id": "51afdd08-e292-4f3a-adbc-9915674e6d3b",
+      "result_id": "7bf9d347-e972-4d71-92bd-48c172e55c35"
+    },
+    {
+      "claim_id": "3045cd59-2956-47fc-8fe8-8916b031e867",
+      "result_id": "36550643-3eb6-455b-ac7a-f5334a6120ad"
+    },
+    {
+      "claim_id": "fe03324b-192a-4835-96c1-02244dc19389",
+      "result_id": "36550643-3eb6-455b-ac7a-f5334a6120ad"
+    },
+    {
+      "claim_id": "e72b1550-a870-47fc-bcc1-eb39e960bc61",
+      "result_id": "36550643-3eb6-455b-ac7a-f5334a6120ad"
+    },
+    {
+      "claim_id": "2c45529b-9da1-49dc-805e-6b5ccddfab1e",
+      "result_id": "36550643-3eb6-455b-ac7a-f5334a6120ad"
+    },
+    {
+      "claim_id": "bb61c450-3f23-4b37-8c7a-a2a47094dd96",
+      "result_id": "b4a53d82-8bf0-4cdd-9ca2-e4b72d3712bc"
+    },
+    {
+      "claim_id": "c3beb242-1895-4594-886a-d8a60d69e9c9",
+      "result_id": "b4a53d82-8bf0-4cdd-9ca2-e4b72d3712bc"
+    },
+    {
+      "claim_id": "c37aa2e3-6383-450b-9937-63156675f6b8",
+      "result_id": "b4a53d82-8bf0-4cdd-9ca2-e4b72d3712bc"
+    },
+    {
+      "claim_id": "03e73832-378b-48e6-a927-04684dca0b4c",
+      "result_id": "b4a53d82-8bf0-4cdd-9ca2-e4b72d3712bc"
+    },
+    {
+      "claim_id": "7de91b5a-02ad-46db-88ed-0376eb01f0de",
+      "result_id": "b4a53d82-8bf0-4cdd-9ca2-e4b72d3712bc"
+    },
+    {
+      "claim_id": "3e919d90-5603-4c1a-a06a-f40132f66c46",
+      "result_id": "b4a53d82-8bf0-4cdd-9ca2-e4b72d3712bc"
+    },
+    {
+      "claim_id": "64111f50-d533-4a30-ada7-6a37fcb99619",
+      "result_id": "b4a53d82-8bf0-4cdd-9ca2-e4b72d3712bc"
+    },
+    {
+      "claim_id": "c2c214f0-52c5-4802-8e63-72900e048424",
+      "result_id": "b4a53d82-8bf0-4cdd-9ca2-e4b72d3712bc"
+    },
+    {
+      "claim_id": "15ea5d88-5046-4138-a99c-71ce798cf448",
+      "result_id": "b4a53d82-8bf0-4cdd-9ca2-e4b72d3712bc"
+    },
+    {
+      "claim_id": "f6897a12-562f-468d-96c7-d126e791357f",
+      "result_id": "2cb0eb37-4a19-436f-8600-a83ca88dcd96"
+    },
+    {
+      "claim_id": "9ed19ce9-3034-413e-b7af-8c16ee4ee99f",
+      "result_id": "2cb0eb37-4a19-436f-8600-a83ca88dcd96"
+    }
+  ],
+  "comparisons": []
+}

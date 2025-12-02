@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "SPARK1 is a transcriptional PPI reporter that requires both blue light and a PPI event for activation, integrates PPI events over a 5-minute window, and reduces background through light-gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe the established features of SPARK1 from prior work (Kim et al., 2017). These are well-supported by citation and serve as background for the current study. The claims accurately represent the published SPARK1 system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "SPARK1 performance is highly expression-level dependent, with high expression causing proximity-independent TEVp-TEVcs interaction and significant background, making stable expression or viral transduction preferable to transient transfection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 describe observed limitations of SPARK1. The mechanistic explanation (C6-C7) is supported by citation to TEVp-TEVcs Km values and illustrated in Figure 1C. The practical observations (C8-C9) are stated as empirical findings from working with the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Light delivery presents technical challenges for high-throughput screens with robotic platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 describes a practical limitation of light-gated systems for automation. This is a reasonable technical observation about robotic platform capabilities and serves as motivation for SPARK2 development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "SPARK2 incorporates NanoLuc luciferase to control the LOV domain via proximity-dependent BRET, enabling temporal gating by either light or luciferin, with a nested AND gate design that improves PPI specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 describe the core design of SPARK2. These claims are supported by experimental data throughout the manuscript (Figures 2-5) demonstrating both luciferin and light gating, proximity-dependent BRET, and improved specificity from the nested AND gate design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "NanoLuc was selected as the luciferase for SPARK2 based on its brightness, 450 nm emission wavelength overlapping with LOV activation spectrum, small 19 kDa size, and stable furimazine substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C23 provide the rationale for selecting NanoLuc. These properties are supported by citations to published characterizations of NanoLuc and represent established knowledge about this luciferase variant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "In LOVTRAP assays with \u03b22AR-NanoLuc-LOV, both furimazine (10 \u00b5M, 1 min) and blue light (10 s) caused comparable mCherry-Zdk1 relocalization from membrane to cytosol, demonstrating that NanoLuc-LOV activation is as efficient as exogenous blue light.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by data in Figure 2B-D showing quantified mCherry relocalization. The LOVTRAP background (C24-C26) is properly cited. The conclusion of comparable efficiency (C30) is a reasonable interpretation of the quantitative data showing similar relocalization levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "NanoLuc activation of LOV is proximity-dependent: extracellular NanoLuc-\u03b22AR-LOV did not release mCherry-Zdk1 with furimazine but did with blue light, while both constructs showed robust NanoLuc bioluminescence, indicating that moving NanoLuc ~5 nm away prevents LOV activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by data in Figure 2E-H and Figure 2\u2014figure supplement 1D. The control experiment showing functional LOVTRAP with blue light (C32) and comparable NanoLuc expression (C33) strengthen the conclusion of proximity-dependence (C34-C35). The ~5 nm distance estimate is reasonable given the membrane topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "SPARK2 with NanoLuc-arrestin-TEVp shows light- and agonist-dependent Citrine expression for \u03b22AR, AVPR2, and DRD1, demonstrating that NanoLuc can regulate LOV in place of external blue light without impairing recognition or sterics, enabling toggling between luciferin and light control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are supported by data in Figure 3A-B and Figure 3\u2014figure supplement 1A-B. The demonstration across multiple GPCRs (C40) strengthens the generality. The conclusion that 19 kDa NanoLuc doesn't impair function (C37) is supported by the clear signal observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Luciferin-gated SPARK2 eliminates background in the +luciferin/no PPI condition while maintaining robust signal in the +luciferin/PPI condition, producing higher PPI-specificity than light-gating, which shows substantial background in the +light/no PPI condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by quantitative data in Figure 3C-D showing eliminated background with luciferin-gating versus substantial background with light-gating. The mechanistic explanation (C43-C45) logically follows from the nested AND gate design. Comparison to SPARK1 (C50) is supported by Figure 3\u2014figure supplement 1A-B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The nested AND gate via intramolecular BRET is essential for improved specificity: a single AND gate design with NanoLuc directly fused to LOV showed high background comparable to light-gating, while producing similar signal ratios with blue light, indicating no steric hindrance from NanoLuc-LOV fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by the control experiment in Figure 3E-H comparing nested versus single AND gate designs. The high background with the fusion construct (C52) and similar performance with light (C53) support the conclusion that the nested design is essential (C51) and that steric hindrance is not the issue (C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SPARK2 is compatible with orthogonal FLuc reporter (535 nm, beetle luciferin substrate), showing 11.6-fold signal increase with 20 min furimazine treatment, with undetectable background in +furimazine/no PPI condition but significant background in +light/no PPI condition, confirming luciferin-gated SPARK2 as a lower-background, higher-specificity alternative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by data in Figure 4A-B. The orthogonality of FLuc (C55-C56) is properly cited. The quantitative measurements (C57, C59-C61) are clearly shown in Figure 4B. The conclusion (C62) is well-supported by both the FLuc data and the earlier imaging results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SPARK2 was applied to high-throughput screening of 92 compounds against \u03b22AR and DRD1, detecting known agonists with >3-fold increases for \u03b22AR and >6-fold for DRD1, including weaker partial agonists, with dopamine showing no \u03b22AR activation (supporting G-protein bias) but activating DRD1, and haloperidol (a DRD2 antagonist) showing DRD1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are supported by screening data in Figure 4C-E. The detection of known agonists validates the assay. The dopamine result (C65-C66) is interesting and supported by citations about biased agonism. The haloperidol result (C69) is surprising but clearly shown in the data. Sample size (n=2 biological replicates) is modest but acceptable for a screening demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Proximity-dependence of NanoLuc-LOV interaction in SPARK2 context: \u03b22AR-arrestin SPARK2 shows 9.0-fold signal increase with agonist versus 3.4-fold for membrane-bound NanoLuc control, despite comparable NanoLuc bioluminescence and FLuc reporter signal with blue light, confirming NanoLuc must be within <5 nm of LOV for efficient activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by data in Figure 4\u2014figure supplement 1A-D. The control experiments showing comparable NanoLuc expression (C73) and functional SPARK2 components with light (C74) strengthen the conclusion of proximity-dependence (C75). This confirms the earlier LOVTRAP findings in the SPARK2 context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "NanoLuc can activate o\u03b22AR (a rhodopsin-\u03b22AR chimera): cells expressing NanoLuc-o\u03b22AR-eLOV-TEVcs-Gal4 and NanoLuc-arrestin-TEVp showed significantly more Citrine-positive cells with furimazine and 9-cis-retinal compared to controls, suggesting both extracellular NanoLuc-o\u03b22AR BRET and intracellular NanoLuc-LOV BRET occur in the same cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by data in Figure 5A-C and Figure 5\u2014figure supplement 1A-B. The positive control with blue light (C80) validates the system. The furimazine result (C81) demonstrates the novel capability. The interpretation of dual BRET (C82) is reasonable given the experimental design, though direct evidence of simultaneous BRET events is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "SPARK2 was applied to detect trans-cellular contacts: 87% of Citrine-positive Receiver cells were adjacent to NanoLuc-expressing Sender cells, with higher Citrine/Flag ratios when both furimazine and Sender NanoLuc were present, and no signal increase without 9-cis-retinal, demonstrating proof-of-concept for luciferin-gated transcriptional readout of cell-cell contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by data in Figure 5D-G and Figure 5\u2014figure supplement 1C-E. The 87% specificity (C83) is good but not perfect, which the authors acknowledge. The quantitative analysis (C84) and controls (C85) support the conclusion. However, the authors appropriately note this requires further optimization (C102), so this is a proof-of-concept rather than a fully validated tool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "SPARK2 employs a novel nested AND gate design where addition of NanoLuc to the protease component enables toggling between light and luciferin gating and reduces background, successfully detecting GPCR-arrestin interactions with versatile readouts, screening compounds, and detecting cell-cell contacts, demonstrating that luciferase can regulate LOV domains in a proximity-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 summarize the key findings and are supported by the collective experimental data. The novelty claim (C87) is reasonable given the unique nested AND gate design. The summary of capabilities (C88-C91) accurately reflects the demonstrated applications. The mechanistic insights (C92-C94) are well-supported by the LOVTRAP and SPARK2 experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors speculate that NanoLuc could be incorporated into other LOV-based optogenetic tools to enable toggling between light and luciferin control, that LOV functions could be made conditional on user-designed PPIs, that luciferase regulation likely extends to cryptochromes and other photosensory proteins like o\u03b22AR, and that the nested AND gate concept could improve other reporter designs, though trans-cellular SPARK2 requires further optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C102 are primarily speculative about future applications and extensions. While these speculations are reasonable based on the demonstrated principles (C95-C97, C100), they represent hypotheses rather than tested results. The claim about cryptochromes (C98) is factual background. The o\u03b22AR regulation (C99) is demonstrated. The natural double filter analogy (C101) is properly cited. The acknowledgment that trans-cellular SPARK2 needs optimization (C102) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Background information on LOV domain mechanism, luciferase properties, and asLOV2 V416L mutation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 provide background information properly supported by citations to published work. These establish the mechanistic basis for the experimental design and are not novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

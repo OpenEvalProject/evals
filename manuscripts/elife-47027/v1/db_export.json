@@ -1,0 +1,1486 @@
+{
+  "submission": {
+    "id": "8bd72672-5999-4d3c-af90-a3f49500a071",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:51:27.154287Z",
+    "updated_at": "2025-12-02T12:51:27.154287Z"
+  },
+  "content": [
+    {
+      "id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "submission_id": "8bd72672-5999-4d3c-af90-a3f49500a071",
+      "content_type": "manuscript",
+      "content_text": "# Population rate-coding predicts correctly that human sound localization depends on sound intensity\n\n## Authors\n\n- Antje Ihlefeld<sup>1</sup> ([ORCID: 0000-0001-7185-5848](https://orcid.org/0000-0001-7185-5848)) \u2020\n- Nima Alamatsaz<sup>1</sup> ([ORCID: 0000-0003-3374-3663](https://orcid.org/0000-0003-3374-3663))\n- Robert M Shapley<sup>3</sup>\n\n### Affiliations\n\n1. New Jersey Institute of Technology Newark United States\n2. Rutgers University Newark United States\n3. New York University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman sound localization is an important computation performed by the brain. Models of sound localization commonly assume that sound lateralization from interaural time differences is level invariant. Here we observe that two prevalent theories of sound localization make opposing predictions. The labelled-line model encodes location through tuned representations of spatial location and predicts that perceived direction is level invariant. In contrast, the hemispheric-difference model encodes location through spike-rate and predicts that perceived direction becomes medially biased at low sound levels. Here, behavioral experiments find that softer sounds are perceived closer to midline than louder sounds, favoring rate-coding models of human sound localization. Analogously, visual depth perception, which is based on interocular disparity, depends on the contrast of the target. The similar results in hearing and vision suggest that the brain may use a canonical computation of location: encoding perceived location through population spike rate relative to baseline.\n\n## Introduction\n\nA fundamental question of human perception is how we perceive target locations in space. Through our eyes and skin, the activation patterns of sensory organs provide rich spatial cues. However, for other sensory dimensions, including sound localization and visual depth perception, spatial locations must be computed by the brain. For instance, interaural time differences (ITDs) of the sounds reaching the ears allow listeners to localize sound in the horizontal plane. In the ascending mammalian auditory pathway, the first neural processing stage where ITDs are encoded, on the timescale of microseconds, is the medial superior olive (MSO). Here, temporally precise binaural inputs converge, and their ITDs are converted to neural firing rate (Goldberg and Brown, 1968; Yin and Chan, 1990; Spitzer and Semple, 1995; Pecka et al., 2010; Day and Semple, 2011). The shape of the MSO output firing rate curves as a function of ITD resembles that of a cross-correlation operation on the inputs to each ear (Batra and Yin, 2004). How this information is interpreted downstream of the MSO has led to the development of conflicting theories on the neural mechanisms of sound localization in humans. One prominent neural model for sound localization, originally proposed by Jeffress (1948), consists of a labelled line of coincidence detector neurons that are sensitive to the binaural synchronicity of neural inputs from each ear, with each neuron maximally sensitive to a specific magnitude of ITD (Figure 1A). This labelled-line model is computationally equivalent to a neural place-code based on bandlimited cross-correlations of the sounds reaching both ears (Domnitz and Colburn, 1977). Several studies support the existence of labelled-line neural place-code mechanisms in the avian brain (Carr and Konishi, 1988; Overholt et al., 1992), and versions of it have successfully been applied in many engineering applications predicting human localization performance (e.g. Durlach, 1963; Hafter, 1971; Stern and Trahiotis, 1995; Breebaart et al., 2001; Hartmann et al., 2005).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47027/elife-47027-fig1-v1.jpg)\n\n**Figure 1.:** (A) Firing rate of a simulated nucleus laminaris neuron with a preferred ITD of 375 \u00b5s, as a function of source ITD.\u00a0The model predicts source laterality based on the locus of the peak of the firing rate function. (B) Hemispheric differences in firing rates, averaged across all 81 simulated inferior colliculus units. Rate models assume that source laterality is proportional to firing rate, causing ambiguities at the lowest sound intensities. Inset: Reconstructed responses of an inferior colliculus unit. The unit predominantly responds contralaterally to the direction of sound (high-contrast traces). The hemispheric difference model subtracts this activity from the average rate on the ipsilateral side (example shown with low-contrast traces). (C) Mean population response using labelled-line coding across a range of ITDs and sound intensities. Inset: The root-mean square (RMS) difference relative to estimated angle at 80 dB SPL does not change with sound intensity, predicting that sound laterality is intensity invariant. (D) Mean population response using hemispheric-difference coding. For lower sound intensities, predicted source direction is biased towards midline (compare red and orange versus blue or yellow). For higher sound intensities, predicted source direction is intensity invariant (blue on top of yellow line). Inset: RMS difference relative to estimated angle at 80 dB SPL decreases with increasing sound intensity, predicting that sound laterality is not intensity invariant. Ribbons show one standard error of the mean across 100 simulated responses. Sound intensity is denoted by color (see color key in the figure).\n\nA growing literature proposes an alternative to the labelled-line model to explain mammalian sensitivity to ITD (Lee and Groh, 2014). One reason for an alternative is that two excitatory inputs should suffice to implement the labelled-line model, but evidence from experiments on Mongolian gerbils shows that in addition to bilateral excitatory inputs, sharply tuned bilateral inhibitory inputs to the MSO play a crucial role in processing ITDs (Brand et al., 2002). Moreover, to date no labelled-line type neurons encoding auditory space have been discovered in a mammalian species. Indeed, using a population rate-code, several studies proposed that mammalian sound localization can be modeled based on differences in firing rates across the two populations of neurons that are tuned to opposing hemispheres (Figure 1B; van Bergeijk, 1962; McAlpine and Grothe, 2003; Devore et al., 2009). Rate-based models generally predict that neuronal responses carry most information at the steepest slopes of neural-discharge-rate versus ITD curves, where neural discharge changes most strongly (Stecker et al., 2005), consistent with the observation that the peak ITDs of rate-ITD curves often fall outside the physiologically plausible range (McAlpine and Grothe, 2003; Grothe et al., 2010; but see also Joris et al., 2006). In addition, some authors have suggested that how mammalian sound localization adapts to stimulus history further supports a rate-based neural population code, as assessed behaviorally or via magnetoencephalography (Phillips and Hall, 2005; Stange et al., 2013; Salminen et al., 2010).\n\nIt is unknown which of the two competing models, broadly characterized as labelled-line versus rate-code model, describes human sound localization better. Here, we observe that the two different models predict different dependencies of sound localization on sound intensity. By combining behavioral data on sound intensity dependence in normal-hearing listeners with numerical predictions of human sound lateralization from both models, we attempt to disentangle whether human auditory perception is based on a\u00a0place-code, akin to the labelled-line model, or whether it is instead more closely described by a population rate-code.\n\nAn extensive physiology literature characterizes labelled-line versus population-rate type neurons and suggests that, at least from the perspective of evolution, birds and mammals use different neural mechanisms to calculate sound direction (review: Grothe, 2003). Thus, we searched the avian and mammalian physiology literature and identified two studies that characterized labelled-line versus population rate-code neurons at low sound levels and as a function of both sound level and ITD (Pe\u00f1a et al., 1996; Zwiers et al., 2004). Both Pe\u00f1a et al. (1996) and Zwiers et al. (2004) report neural firing rate in response to acoustic noise stimuli and are thus suitable for predicting each model\u2019s sensitivity to the acoustic noises we tested in the current study. Here, we ran a meta-analysis, reconstructing simulated neurons with response characteristics from each of the two studies and using maximum likelihood estimation to predict source laterality from these previous findings.\n\n## Results\n\n### Model Predictions\n\nTo predict how lateralization depends on sound intensity from the responses of labelled-line neurons, we estimated neural firing rates from previous recordings in the nucleus laminaris in barn owl (Pe\u00f1a et al., 1996). To estimate lateralization\u2019s dependence on level based on a population rate-code, we used previous recordings from the inferior colliculus of rhesus macaque monkey and calculated hemispheric differences in firing rate (Zwiers et al., 2004). The labelled-line neurons predicted that, as sound intensity decreases, perceived source laterality would converge towards similar means for low versus high sound intensities, with increased response variability at decreasing sound intensities (Figure 1C). In contrast, the hemispheric-difference model predicted that as sound intensity decreases to near threshold levels, perceived laterality would become increasingly biased toward the midline reference (Figure 1D, for\u00a0example note the shallower slope and thus compressed laterality percepts for red versus blue curves). At higher overall sound intensities, both models predicted that lateralization would be intensity invariant (see insets in Figure 1C versus D). Therefore, analyzing how sound intensity affects perceived sound direction near sensation threshold offers an opportunity to disentangle whether our human auditory system relies on a place-based or rate-based population code for localizing sound based on ITD.\n\nA listener\u2019s ability to discriminate ITD can vary with sound intensity (Dietz et al., 2013). However, it is difficult to interpret previous findings linking sensitivity to ITD and a listener\u2019s judgement of sound source direction as a function of sound intensity. Some reported decreased perceived source laterality near sensation threshold (Teas, 1962; Sabin et al., 2005), but others reported weak or no level effects on perceived lateralization (Von B\u00e9k\u00e9sy and Wever, 1960; Mickunas, 1963; Hartmann and Rakerd, 1993; Macpherson and Middlebrooks, 2000; Inoue, 2001; Vliegen and Van Opstal, 2004; Brungart and Simpson, 2008; Gai et al., 2013). Several factors complicate the interpretation of these previous findings in the context of the current hypothesis. For instance, assuming an approximately 30 dB dynamic range of rate-level function either at the MSO or downstream in the binaural pathway (e.g. medial superior olive: Goldberg and Brown, 1968; inferior colliculus: Zwiers et al., 2004), for stimuli at higher sensation levels (SL) where the rate-level functions saturate, both the labelled-line and the hemispheric difference model predict level invariance. This could explain how studies that tested for the role of sound level over a range of high intensities did not see an effect. Moreover, when presented in the free field, sounds also contain interaural level differences and spectral cues, in addition to ITD. For low-frequency sound, listeners rely dominantly on ITD when judging lateral source angle. However, for broadband sound, listeners integrate across all three types of spatial cue (Wightman and Kistler, 1992; Ihlefeld and Shinn-Cunningham, 2011). Unlike ITDs, interaural level differences and overall sound intensity both decrease with increasing source distance, raising the possibility that for stimuli with high-frequency content, listeners judged softer sounds to be more medial because they interpreted them to be farther away than louder sounds. Further, at low sound intensities, the sound-direction-related notches of the spectral cues at high-frequencies should have been less audible than at higher sound intensities, increasing stimulus ambiguity. A resulting increase in response variability may have obscured the effect of sound\u00a0intensity on ITD coding. Finally, some historic studies used only two or three listeners, suggesting that they may have been statistically underpowered. Thus, the literature provides insufficient evidence on how ITD-based lateralization varies with sound\u00a0level near sensation threshold.\n\n### Human perception\n\nHere, we contrasted two competing hypotheses toward the goal of disentangling whether ITD-based human sound localization relies on a labelled-line versus a population rate-place neural code. The labelled-line code hypothesis predicted that the mean perceived direction based on ITD would be intensity invariant, even at intensities close to SL. Using a psychophysical paradigm, we studied lateralization based on ITD as a function of sound intensity in a group of ten normally hearing listeners (experiment 1).\u00a0Stimuli consisted of low-frequency noise tokens that were bandlimited to cover most of the frequency range where humans can discriminate ITD (Brughera et al., 2013; here, corner frequencies from 300 to 1200 Hz, shown in Figure 2A). In each one-interval trial, listeners had to indicate perceived laterality across a range of ITDs from \u2212375 to 375 \u03bcs. Lateralization was measured as function of SL. To examine how sound intensity affects perceived ITD coding of source direction, we modelled perceived laterality with a nonlinear mixed effect model (NLME) that included fixed effects of ITD and sound intensity as well as a random effect of listener.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47027/elife-47027-fig2-v1.jpg)\n\n**Figure 2.:** (A) Stimuli: spectrally flat noise, used in experiment 1 (dark grey) versus A-weighted noise, tested as a control for audibility in experiment 2 (light grey). The purple line shows the magnitude of the zero-phase inverse A-weighting filter. (B) Responses from one representative listener (TCW) across two sound intensities and the corresponding NLME fits for these data. (C and D) Perceived laterality as a function of ITD for C) spectrally flat noise (experiment 1) or D) A-weighted noise (experiment 2). Error bars, where large enough to be visible, show one standard error of the mean across listeners. Colors denote sound intensity. Insets illustrate magnified section of the plots. Circles show raw data, lines and ribbons show NLME fits and one standard of the mean.\n\nFigure 2B depicts lateralization performance with spectrally flat noise at two sound intensities for a representative listener (TCW). Figure 2C shows raw data (circles) and NMLE fits (lines) across all listeners. Error bars show one standard error of the mean across listeners, and shaded ribbons indicate one standard error of the mean fit across listeners. This model predicts 80.6% of the variance in the measured responses and is deemed an appropriate fit of the data. Table 1 lists all NLME parameters. Perceived laterality scores increased with increasing ITD, as expected. With decreasing sound intensity, percepts were increasingly biased towards midline (compare order of colored lines, magnified in the inset of Figure 2C). These trends were supported by the NLME model, which revealed significant effects of ITD (p<0.001; $\\alpha_{x1}$) and sound intensity (p<0.001; $\\alpha_{y1}$) on the maximal extent of laterality, confirming the predicted trend from the hemispheric difference model and rejecting our null hypothesis. Average pure tone audiometric thresholds affect perceived laterality, albeit mildly (p<0.001; $\\alpha_{y2}$ = 0.01). Sound intensity did not significantly affect the slope of the psychometric functions (p=0.14; $\\alpha_{x2}$).\n\n**Table 1.**\n Results of Nonlinear Mixed Effects Model for flat-spectrum noise condition.Note that Laterality:sound intensity refers to the NLME weight attributed to acoustic sound intensity of the auditory target. In contrast, Laterality:audibility captures the NLME weight attributed to pure tone audiometric thresholds based on the listeners\u2019 perceptual abilities (see Materials\u00a0and\u00a0methods for details).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Description</th>\n      <th></th>\n      <th>Value</th>\n      <th>Std.error</th>\n      <th>t-value</th>\n      <th>p-value</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Intercept: ITD</td>\n      <td>\u03b1x0</td>\n      <td>0.06</td>\n      <td>0.04</td>\n      <td>1.58</td>\n      <td>0.11</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Slope: ITD</td>\n      <td>\u03b1x1</td>\n      <td>2.45</td>\n      <td>0.05</td>\n      <td>46.15</td>\n      <td>&lt;0.001</td>\n      <td>***</td>\n    </tr>\n    <tr>\n      <td>Slope: sound intensity</td>\n      <td>\u03b1x2</td>\n      <td>0.02</td>\n      <td>0.01</td>\n      <td>1.47</td>\n      <td>0.14</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Laterality: sound intensity</td>\n      <td>\u03b1y1</td>\n      <td>0.05</td>\n      <td>0.01</td>\n      <td>7.59</td>\n      <td>&lt;0.001</td>\n      <td>***</td>\n    </tr>\n    <tr>\n      <td>Laterality: audibility</td>\n      <td>\u03b1y2</td>\n      <td>0.01</td>\n      <td>0.002</td>\n      <td>4.86</td>\n      <td>&lt;0.001</td>\n      <td>***</td>\n    </tr>\n  </tbody>\n</table>\n\n_10986 degrees of freedom._\n\nIn a second experiment, we examined whether these results were robust to the spectral details of the stimuli. A caveat of testing spectrally flat noise at low sound intensities is that parts of the spectrum may be inaudible, and this may contribute to the slight but significant effect of audibility on laterality ($\\alpha_{y2}$). Therefore, the results of experiment\u00a01 could potentially be confounded by the fact that the bandwidth of the audible portion of the noise tokens decreased with decreasing sound intensity. Alternatively, the effect of absolute pure tone detection thresholds that we observe in our normal-hearing listeners may reflect differences in neural function beyond audibility. As a control for perceived stimulus bandwidth, the same listeners were tested again, using inverse A-weighted noises (experiment 2). Inverse A-weighting boosts sound energy at each frequency in rough proportion to the human threshold. Resulting inverse A-weighted sensitivity thus achieves nearly constant sensation level across frequency. All of the original ten listeners from experiment 1 completed experiment 2. Methods were similar as in the first experiment, except that the stimuli consisted of inversely A-weighted noise (compare magnitude spectra in Figure 2A). The data and NLME model fits for the second experiment are shown in Figure 2D (color key identical to Figure 2C), and coefficients are listed in Table 2. This second model accounts for 80.4% of the variance in the data, closely fitting the measured responses. All NLME coefficients are significant (p<0.001 for $\\alpha_{x1}$; $\\alpha_{x2}$; $\\alpha_{y1}$ and $\\alpha_{y2}$). The\u00a0intercept coefficient ($\\alpha_{x0}$\u00a0estimate\u00a0=\u00a0\u22120.60, SE\u00a0=\u00a00.03, p<0.001) revealed a slight leftward response bias, consistent with a slight narrowband interaural level difference in our stimuli due to precision limits of our test system. The fact that $\\alpha_{x2}$ is significant shows that when all noise portions are approximately equally audible, as here, with inverse A-weighted noise, both perceived laterality and the slope linking the change in laterality to ITD decrease with decreasing sound intensity. This is consistent with the interpretation that by controlling for audibility across-frequency, the sensitivity of the task to sound level increases, revealing a medial bias effect not only for the most lateral but also for more medial source angles.\n\n**Table 2.**\n Results of Nonlinear Mixed Effects Model for inverse A-weighted noise condition.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>NLME weight</th>\n      <th></th>\n      <th>Value</th>\n      <th>Std.error</th>\n      <th>t-value</th>\n      <th>p-value</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Intercept: ITD</td>\n      <td>\u03b1x0</td>\n      <td>\u22120.60</td>\n      <td>0.03</td>\n      <td>\u221219.28</td>\n      <td>&lt;0.001</td>\n      <td>***</td>\n    </tr>\n    <tr>\n      <td>Slope: ITD</td>\n      <td>\u03b1x1</td>\n      <td>2.57</td>\n      <td>0.06</td>\n      <td>46.26</td>\n      <td>&lt;0.001</td>\n      <td>***</td>\n    </tr>\n    <tr>\n      <td>Slope: sound intensity</td>\n      <td>\u03b1x2</td>\n      <td>0.06</td>\n      <td>0.01</td>\n      <td>4.98</td>\n      <td>&lt;0.001</td>\n      <td>***</td>\n    </tr>\n    <tr>\n      <td>Laterality: sound intensity</td>\n      <td>\u03b1y1</td>\n      <td>0.04</td>\n      <td>0.01</td>\n      <td>7.10</td>\n      <td>&lt;0.001</td>\n      <td>***</td>\n    </tr>\n    <tr>\n      <td>Laterality: audibility</td>\n      <td>\u03b1y2</td>\n      <td>0.01</td>\n      <td>0.002</td>\n      <td>3.30</td>\n      <td>&lt;0.001</td>\n      <td>***</td>\n    </tr>\n  </tbody>\n</table>\n\n_10986 degrees of freedom._\n\nThus, the results confirm the effect of biasing perceived laterality toward midline with decreasing sound intensity. Therefore, for both spectrally flat noise and A-weighted noise, statistical analyses, which partialed out overall differences between listeners, are inconsistent with a labelled-line model of human sound localization.\n\n## Discussion\n\nPopulation rate-coding to compute sensory dimension may not be unique to the auditory system. In analogy to sound localization based on the comparison of signals from the two ears (Figure 3A), visual depth is computed in the cerebral cortex based on signals from the two eyes (Figure 3B; Poggio, 1995; Parker and Cumming, 2001; Parker, 2016). Specifically, in both primary V1 and extrastriate V3a cortex of rhesus macaque monkeys, three types of neurons are thought to encode binocular disparity. \u2018Tuned-excitatory\u2019 neurons respond best to zero spatial disparity between the two eyes, whereas \u2018near cells\u2019 respond more vigorously when an object approaches, increasing crossed disparity between the eyes (Parker and Cumming, 2001). Finally, \u2018far cells\u2019 fire more vigorously as uncrossed disparity increases. In V1, the most frequently encountered type of binocular neurons are of the tuned-excitatory type. However, in V3a the large majority of neurons is stereo-specific (Poggio et al., 1988) and most neurons are either near or far cells. Functional magnetic resonance imaging experiments on human stereoscopic vision found that unlike V1 activity, the activity in cortical area V3a predicts behavioral performance on tasks involving stereoscopic depth (Backus et al., 2001). These observations lead us to propose that in order to compute perceptual space from sensory input, the central nervous system has evolved a canonical computation that is common to different sensory modalities. Specifically, we propose that near and far cells encode visual distance from the fixation plane in a way similar to how inferior colliculus neurons encode auditory azimuthal angle away from midline reference: firing rate increases monotonically with distance from perceptual reference anchor or fixation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47027/elife-47027-fig3-v1.jpg)\n\n**Figure 3.:** (A) Computing sound direction requires analysis of the binaural difference between the signals reaching the left and right ear. (B) Estimating visual depth hinges on analysis of the binocular disparity between the signals reaching left and right eye. (C) For both hearing and vision, the proportion of the neural population that is stimulated (in the inferior colliculus or V3) depends both on the physical dimension to be estimated (source laterality or source distance) and the intensity of the stimulus (sound intensity or visual contrast). For hearing and vision, ambiguity in this putative neural code predicts D) biased responses at low stimulus intensities (sound intensity or contrast).\n\nWe observe that in both the auditory and the visual system, the same cells that are tuned to binaural ITD or binocular disparity also have intensity-response functions. A rate-code based on a population of these cells should cause ambiguities when stimulated below the saturation firing rate, either at low sound intensity or at low contrast (Figure 3C). Thus, based on the analogies between the stereo-depth computation and the azimuth-ITD computation, we hypothesized that low visual contrast might affect the computation of depth in a manner analogous to the effect of low sound levels in sound localization\u2014there might be a bias to lower perceived depth at lower contrast (Figure 3D). Indeed, one study found such an effect, but only in some observers (Cisarik and Harwerth, 2008). A confounding factor in that earlier study is that perceived depth is a complicated neural computation, not only dependent on stereoscopic disparity but also on monocular cues including contrast (Parker, 2016). Several studies on depth perception indicate that low contrast is interpreted by the brain as a cue for distance; lower contrast targets are perceived farther away (e.g. Schor and Howarth, 1986; Rohaly and Wilson, 1999). However, experiments that controlled for low contrast bias demonstrated that low contrast causes perceived depth to shrink, both for near and far deviations from baseline (Chen et al., 2016). Thus, there is a link between population rate-coding and stimulus intensity in perceived visual depth as in perceived auditory azimuth, two perceptual spatial dimensions computed by the brain.\n\nTo illustrate how rate-based decoding of target location varies with sound intensity, we here chose a rate-coding model that compares firing rates across two populations of neurons, tuned to opposite hemifields. This read-out is a direct realization of the original canonical rate-based model for ITD decoding (van Bergeijk, 1962). Alternative rate-code readouts exist (for a recent summary of binaural models, see Dietz et al., 2018). Most of these rate-code models rely on subtractive comparisons between populations of neurons that are tuned to opposite hemifields, inherently sharing ambiguous readouts at low suprathreshold sound intensities. In contrast, divisive comparisons between ipsi- and contralaterally tuned neural populations are less likely to predict the observed behavioral bias due to stimulus intensity (Groh, 2001). Future work will need to delineate how specific implementations of rate-based readouts shape the intensity-induced bias of sound localization. Moreover, it has been suggested that depending on perceptual task, the mammalian brain could combine place- and rate-codes (Porter and Groh, 2006; Goodman et al., 2013). For instance, the mammalian auditory pathway may convert place- into rate-codes and vice versa (Groh et al., 2003; Porter and Groh, 2006). However, downstream from the inferior colliculus, rate-coding seems to be maintained, at least in the superior colliculus of rhesus macaque (Werner-Reiss and Groh, 2008; Lee and Groh, 2014). Moreover, our psychophysical and computational results suggest that for sound localization based on ITD at low sound levels, cortical maps do not play a role. However, there is good evidence for spatial map-like signals in higher order auditory cortical fields when interaural level differences are present, at medium to high sound levels (Higgins et al., 2010). How these interaural-level-difference-based cortical maps influence sound localization behavior is yet to be determined.\n\nAn additional factor restricting rate-based readouts is that auditory cortex units display nonlinear rate-intensity functions. For instance, excitatory-excitatory (EE) cells in auditory cortex that are tuned to sound locations near midline are also often tuned for sound intensity (Semple and Kitzes, 1993; Pollak et al., 2002; Zhang et al., 2004; Razak and Fuzessery, 2010; Higgins et al., 2010). This intensity tuning may complicate rate-based decoding at higher sound intensities. However, it is not apparent at the very low sound intensities needed to explain the perceptual bias observed here. There are additional fascinating findings in the neurophysiological literature regarding frequency and intensity tuning, and interesting correlations between non-monotonicity in the azimuthal and intensity dimensions (Woods et al., 2006), but a detailed discussion of these points is beyond the scope of the present behavioral-computational study.\n\nIn summary, unlike predictions from a rate-code neuronal readout, labelled-line coding predicts that sound localization is intensity invariant. Our experimental results show that for low frequency noise, where ITDs are the dominant localization cue, and at low sound intensities, sound lateralization based on ITD is not intensity invariant; it becomes increasingly medially biased with decreasing SL. The observed localization bias is overall small in magnitude, showing that the brain can robustly localize based on ITD across a large range of sound intensities. However, this bias is of theoretical importance as it confirms the prediction of a subtractive rate-based neuronal readout. Moreover, our auditory finding parallels a phenomenon of visual fixation bias when calculating visual distance from binocular disparity at low contrast. This casts doubt on the idea that the neural mechanism of ITD-based sound localization and binocular disparity-based visual distance estimation are based on place-based coding. Instead, our perceptual data on auditory localization together with previously published data on visual distance perception are parsimonious with the idea that a population rate-code underlies the brain\u2019s computation of location.\n\n## Materials and methods\n\n### Experimental model and subject details\n\nTwelve na\u00efve normal-hearing listeners (ages 18\u201327, five females) were enrolled in this study and paid for their time. Their audiometric thresholds, as assessed via a calibrated GSI 39 Auto Tymp device (Grason-Stadler), were 25 dB hearing level or better at octave frequencies from 250 to 8000 Hz, and did not differ by more than 10 dB across ears at each octave frequency. This study was approved by and all testing was administered according to the guidelines of the Institutional Review Board of the New Jersey Institute of Technology, protocol F217-14. All listeners gave written informed consent both to participate in the study and to publish the results with confidential listener identity.\n\n### Method details\n\nListeners were seated in a double-walled sound-attenuating booth (Industrial Acoustics Company) with a noise floor of 20.0 dB SPL (wideband LAFeq). Stimuli were digitally generated in Matlab R2016b (The MathWorks, Inc), D/A converted through an external sound card (Emotiva Stealth DC-1) at a sampling frequency of 192 kHz, with a resolution of 24 bits per sample, and presented to the listener through ER-2 insert earphones (Etymotic Research Inc). The equipment was calibrated using an acoustic mannequin (KEMAR model, G.R.A.S. Sound and Vibration) with a precision of less than \u00b15 \u03bcs ITD and less than \u00b11 dB interaural level difference. Foam eartips were inserted following guidelines provided by Etymotic Research to encourage equal representation of sounds to both ears and minimize interaural leakage. Each session lasted approximately 60 min. Listeners kept the insert earphones placed inside their ears throughout testing. Insert earphones were replaced by the experimenter after each break. Throughout this study, to generate stimuli, tokens of uniformly distributed white noise were generated and bandpassed using a zero-phase Butterworth filter with 36 dB/octave frequency roll-off, and 3 dB down points at 300 and 1200 Hz. Each noise token was\u00a01\u00a0s in duration, including 10 ms long squared cosine ramps at the onset and offset.\n\n### Sensation level measurements\n\nAt the beginning of each session, and, as a re-test control, mid-way through each session, each individual listener\u2019s SL was measured for the type of sound that was later on used for training and testing, via one run of adaptive tracking. On each one-interval trial of each track, a new noise token was generated and presented diotically. Trials were spaced randomly in time (uniform distribution, inter-token intervals from 3 to 5.5 s). Listeners pressed a button when they heard a sound. No response feedback was given.\n\nOn each trial, a response was scored a \u2018hit\u2019 if a listener responded with a button push before the onset of the subsequent trial, and a \u2018miss\u2019 if the listener did not respond during the interval. If a listener\u2019s response changed from hit to miss or from miss to hit across sequential trials, this was interpreted as a response reversal. Using one-up-one-down adaptive tracking, the noise intensity was increased or decreased after each reversal, with a step size of 5 dB (decreasing) or 2.5 dB (increasing). Each listener completed ten adaptive-track reversals, with SL threshold equaling the median of the final six reversals. Each SL was used as reference intensity for the subsequent 30 min of testing. If detection thresholds changed between initial test and re-test control by more than 5 dB, this indicated that an insert earphone moved, and the experimenter replaced the earphones. Thresholds generally did not change by more than 5 dB.\n\n### Training\n\nTo train listeners on consistently reporting their perception of ITD, using adaptive tracking, listeners matched the perceived laterality of a variable-ITD pointer to that of a fixed-ITD target. Target token intensity was set relative to the listener\u2019s own diotic sensation threshold, at 10 or 25 dB SL, and presented with 0 dB interaural level difference. The pointer intensity was fixed at 25 dB SL. Target ITDs spanned the range from \u2212375 to 375 \u03bcs, in 75 \u03bcs steps. Target ITDs and SLs were randomly interleaved across runs, but held fixed throughout each adaptive run. In each two-interval trial of a run, the pointer token was presented in the first, and the target token in the second interval. The start ITD of the pointer token at the beginning of each run equaled 0 \u03bcs. Using a hand-held controller (Xbox 360 wireless controller for Windows, Microsoft Corp.), listeners adjusted the ITD of the pointer token. Specifically, listeners pushed the directional keys (D-pad) either to the left or right in order to move and match the pointer direction with that of the target sound. When a listener indicated a left- or right-ward response, the pointer ITD was decreased or increased. Initial ITD step size equaled 100 \u03bcs, then 50 \u00b15 \u03bcs (uniformly distributed) after the first reversal. By the end of the second reversal, ITD step size was reduced to 25 \u00b15 \u03bcs (uniformly distributed) and remained the same for all of the following reversals. Listeners were instructed to \u2018home in\u2019 on the target by moving the pointer initially to a position more lateral than the target, then more medial than the target with the goal of centering on the target. No response feedback was provided. A run was completed after a listener had completed a total of five adaptive-tracking reversals. For each target ITD, the matched pointer ITD was estimated by averaging the pointer ITDs of the final two reversals. Each listener performed three sessions of training: In the first session only a subset of target ITDs were presented (\u2212375,\u2013150, 0, 150 and 375 \u03bcs), whereas the two following sessions included all of the eleven ITDs. Per training session, each ITD was presented once at 10 and 25 dB SL, for a total of 54 adaptive tracking runs across all training sessions. To familiarize listeners with the experimental task (described below), at the end of second and third sessions of training listeners performed an additional 5 blocks of the experimental testing task, without response feedback. These task training data were not used for statistical analysis.\n\nTo assess whether listeners could reliably report their lateralization percepts, training performance was evaluated for each listener by calculating the Pearson correlation coefficient between target ITD and matched pointer ITD in the final training session. Criterion correlation equaled 0.9 (N\u00a0=\u00a011 ITDs, significance level\u00a0=\u00a00.01, power\u00a0=\u00a00.95). Ten listeners reached criterion, suggesting that they were able to consistently report where they perceived the sounds based on ITD. Two of the originally recruited twelve listeners failed to reach training criterion ($R^{2}$\u00a0=\u00a0<0.84, 0.87>) and were excluded from testing.\n\n### Testing\n\nUsing the method of fixed stimuli, we tested lateralization in two experiments. Except for the stimuli, which consisted of spectrally flat noise tokens in experiment\u00a01 and A-weighted noise tokens in experiment 2, the methods were similar across the two experiments. Noise tokens were generated from a statistically similar noise distribution as those presented during both SL measurements and training (see Overall Design). A touchscreen monitor (Dell P2314T) displayed the response interface at about 40 cm distance from the listener. Using a precise touch stylus (MEKO Active Fine Point Stylus 1.5 mm Tip), listeners indicated perceived laterality of noise in a one-interval task. Noise tokens were presented at 5, 10, 15, 20, and 25 dB SL. ITDs varied randomly from trial to trial, in 75 \u03bcs steps spanning the range from \u2212375 \u03bcs to 375 \u03bcs. On each trial, a new token of noise was generated. Each listener performed 20 blocks of 55 trials each (11 ITDs at each of the five sound intensities), with SL measured both before the first and the eleventh block. ITDs and sound intensity were randomly interleaved from trial to trial such that each combination of ITD and sound intensity was presented once before all of them were repeated in a different random order.\n\n### Models\n\nWe estimate the combined effects of ITD and sound intensity on predicted source laterality both in avian labelled-line type units and in binaurally sensitive units of a mammalian auditory system. The sound intensities where we expect to see an effect of overall sound level fall below 30 dB SPL, because only in this range would most auditory neurons fire below saturation, allowing us to disambiguate labelled-line versus hemispheric rate-difference coding. However, scant data exist for either type of unit at sound pressure levels below 30 dB SPL. We identified two prior studies that have measured neural discharge rate as a function of ITD at these very low sound intensities. Both studies used noise as acoustic stimuli, and the neural response statistics they report are thus suitable for estimating what type of information would be available to either type of coding mechanism with the type of noise stimuli that human listeners lateralized in the behavioral experiments here.\n\nOne study in barn owl shows that the output functions of nucleus laminaris neurons can be modeled through interaural cross-correlation functions, even at very low sound intensities (Pe\u00f1a et al., 1996). That study reports Pearson correlation coefficients between the neural response function of nucleus laminaris units at 50 dB SPL versus all other tested sound levels. To reconstruct the spatial information realistically available from the output of labelled-line neurons, across both a range of \u2212375 to 375 \u03bcs ITD in 20 \u03bcs steps, we first constructed biologically plausible interaural cross-correlation functions at 50 dB SPL and then added internal noise to the resulting curves to mimic the Pearson correlation coefficients reported by Pe\u00f1a et al. (1996). Our model predictions pertain to sound intensities spanning the range from 10 to 70 dB SPL, similar to previous work (Pe\u00f1a et al., 1996). Due to overall scarcity of available data at low dB SPL, here we use firing rate characteristics for unit # 0123795\u2013530.02 (Pe\u00f1a et al., 1996) with a nominal best frequency of 1 kHz. To generate the acoustic inputs to the labelled-line model, we initially generated a Gaussian noise token, duplicated it and introduced a variable ITD, spanning a range from \u2212375 to 375 \u03bcs, with 20 \u03bcs step size and 0 dB interaural level difference. To simulate ITD information available after cochlear processing, we then processed both noises with a 1/3-octave wide bandpass filter with 24 dB/octave frequency roll-off, followed by half-wave rectification and low-pass filtering at 1500 Hz. We then simulated internal noise by adding uniformly distributed dichotic noise tokens with mean spontaneous firing rates of 5% of the root mean square value of the signal, resulting in left (L) and right (R) inputs to the binaural cross-correlation neurons, called $x_{L}(t)$ and $x_{R}(t)$. To establish 50 dB SPL reference functions, at each simulated ITD, we then calculated the binaural cross-correlation function $cc(\\tau)$ of $x_{L}(t)$ and $x_{R}(t)$, as follows: $cc(\\tau)=300+(450\u2212300)\\frac{\\int_{\u2212\u221e}^{+\u221e}\u00a0x_{L}(t)x_{R}(t+\\tau)dt)}{max|\\int_{\u2212\u221e}^{+\u221e}\u00a0x_{L}(t)x_{R}(t+\\tau)dt|}$,\u00a0with $\\tau$ signifying the best ITD of each neuron, and extrema scaled such that $cc(\\tau)$ spans a range from 300 to 450 spikes/sec, approximating nucleus laminaris firing rates at 50 dB SPL (Pe\u00f1a et al., 1996). To simulate non-sound driven neural discharge, we then added uniformly distributed random noise $cc^_{ref}(\\tau)=cc(\\tau)+U(0,\\mu)$, with a mean discharge of $\\mu$\u00a0=\u00a05 spikes/sec, (Pe\u00f1a et al., 1996). The resulting signal is our reference cross-correlation function at 50 dB SPL, called $cc_{ref}(\\tau)$, shown in Figure 1A as yellow bold line for a representative simulated neuron.\n\nFor each sound level and ITD, we then statistically reconstructed a family of interaural cross-correlation functions that match the originally reported functions (Pe\u00f1a et al., 1996). Specifically, we added scaled dichotic uniformly distributed noise tokens $n_{L}(t)\u2190U(0,\\mu)$ and $n_{R}(t)\u2190U(0,\\mu)$ to the $x_{L}(t)$ and $x_{R}(t)$, such that the monaural inputs to the binaural cross-correlation functions equal $x^_{L,R}(t)=\\alphax_{L,R}(t)+\\sqrt{1\u2212\\alpha^{2}}n_{L,R}(t)$. The resulting cross-correlation function for each sound level and ITD is then $cc^(\\tau)=(x_{L}\u22c6x_{R})(\\tau)$, shown for a representative neuron in Figure 1A as blue, brown and red lines corresponding to 70, 30 and 10 dB SPL. We then searched through the space of scaling coefficients $\\alpha$ until the Pearson correlation coefficient between $cc_{ref}(\\tau)$ and $cc^(\\tau)$ matched the coefficients originally reported by Pe\u00f1a et al. (1996) with a precision error of less than 10%.\n\nTo estimate predicted sound laterality as a function of sound intensity for these simulated labelled-line neurons, at each intensity, we then identified the $\\tau$ where $cc^(\\tau)=max(cc^(\\tau))$. For each sound level and ITD, we calculated predicted sound laterality in 100 repetitions of these simulations. Figure 1C shows mean estimated laterality across these 100 simulations, with ribbons showing one standard error of the mean across simulations.\n\nTo estimate source laterality based on rate-coding, we assayed the mammalian auditory system, where one previous study reports firing statistics for 81 inferior colliculus units in rhesus macaque as a function of ITD and over a wide range of sound intensities, including very low sound intensities (Zwiers et al., 2004). From the previously published linear regression parameters, we initially reconstruct linear regression functions linking ITD, sound intensity and firing rate (Zwiers et al., 2004). However, while linear regression fits afford statisticial convenience, they cannot fully capture the sigmoidally shaped firing rate functions in mammalian inferior colliculus units. Therefore, we multiplied the original linear reconstructions with sigmoid functions. Specifically, consistent with prior literature, each simulated sigmoidal output function saturates over a 30 dB dynamic range, has linear growth over the physiologically plausible range of contralateral ITDs, has a threshold between uniformly distributed between 0 and 10 dB SPL, and a spontaneous non-sound-evoked discharge of between 2 and 10 spikes/second (e.g. Ramachandran et al., 1999).\n\nThe inset of Figure 1B shows a representative simulated inferior colliculus unit (color denotes sound intensity, dark shading shows contralateral responses), whereas Figure 1B shows the differences in firing rates for contra minus ipsi-lateral simulated firing rates, averaged across all 81 simulated inferior colliculus units. From these resulting differences in contra versus ipsi firing rates we calculated, collapsed across sound intensities from 0 to 80 dB SPL, the probability density of the firing rate for each inferior colliculus unit as a function of source ITD. Assuming an ideal observer, we then classified the sound azimuth as a function of sound intensity via maximum likelihood estimation. To calculate the mean and variance of predicted ITD as a function of sound intensity, we then ran a bootstrapping analysis, sampling with replacement 100 times. Figure 1D shows the across-simulation average predicted source laterality, with ribbons showing one standard error of the mean across simulations.\n\n### Quantification and statistical analysis\n\nGrowth curve analysis was used to analyze perceived laterality scores as a function of ITD and sound intensity. For each of the two noise conditions, the perceived laterality scores were fitted with an NLME model. The model included fixed effects $\\alpha$\u00a0and random effects $\\beta$. Equation 1 describes a sigmoidal function linking ITD to perceived laterality, with a score from left (\u22121) to right (1). The effect of sound intensity on the maximal extent of lateralization is $\\alpha_{y1}$. To factor out across-listener differences in absolute hearing thresholds, for each listener, we calculated the pure tone average (PTA) detection threshold in quiet, averaged across ears, and across 500 and 1000 Hz. Weight $\\alpha_{y2}$ models the contribution of PTA. The slope terms are $\\alpha_{x1}$ for perceived laterality changes attributed to ITD, and $\\alpha_{x2}$ for laterality-ITD slopes attributed to sound intensity. Our stimuli were initially calibrated to have a broadband interaural level difference of 0 dB. However, because the transfer function of our sound card was not perfectly flat across frequency, fluctuations of \u00b11 dB interaural level difference occurred across frequency, on the same order of magnitude as the minimal threshold for human interaural level difference discrimination (Francart and Wouters, 2007). Thus, parameter $\\alpha_{x0}$ factors out central response bias from the lateralization scores. Random effects of individual differences across listeners were used to model both the maximal extent of lateralization, $\\beta_{y0,listener}$, and the perceived midline, $\\beta_{x0,listener}$, centering the sigmoid\u00a0(Equation 1):\n\n$$\nresponse\u223c\\frac{\\alpha_{y2}\\timesPTA+\\alpha_{y1}\\timesintensity+\\beta_{y0,listener}}{1+e^{\u2212[\\alpha_{x2}\\timesintensity+\\alpha_{x1}\\times(ITD\u2212\\alpha_{x0}\u2212\\beta_{x0,listener})]}}\u22120.5\n$$\n\nTo better conform with the assumptions of the NLME model, prior to fitting, ITD and sound intensity parameters were scaled by subtracting the mean stimulus value, and dividing by the standard deviation of stimulus parameters, resulting in distributions of stimulus parameters with zero-mean and a variance of one. Laterality scores were then fitted using these normalized parameters, with the nlme package, programmed in RStudio 1.1 for Windows (RStudio Inc, Boston, MA, USA).\n\n### Data and software availability\n\nAll data and analysis code are available at Dryad\u00a0(http://doi.org/10.5061/dryad.t8c381f) .\n",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "1500756c-2022-4f19-9c21-73ea316788f4",
+      "submission_id": "8bd72672-5999-4d3c-af90-a3f49500a071",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Catherine Emily Carr, University of Maryland United States\n\nReviewers:\n- Catherine Emily Carr, University of Maryland United States\n- Heather Read\n- Jennifer M Groh, Duke University United States\n\n## Review text\n\nDOI: [10.7554/eLife.47027.012](https://doi.org/10.7554/eLife.47027.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Population rate coding predicts correctly that human sound localization depends on sound intensity\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Catherine Emily Carr as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Barbara Shinn-Cunningham as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Heather Read (Reviewer #2) and Jennifer M Groh (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a combined modeling and behavioral study of human sound localization that supports rate-coding models. Since sound levels affect the firing rate of individual neurons, sometimes changes in intensity can be confused with changes in location. The experiments investigate psychophysical evidence for this predicted effect, with positive results.\n\nThe authors use a hemispheric difference rate coding model of a range of interaural time delays (ITD) to predict that sound localization would be biased towards midline locations at low sound levels. Though the hemispheric rate coding model is simplistic and has been explored before, it is a useful way to raise the question of whether such biases might exist perceptually in auditory systems as they do in visual systems.\n\nSuggestions for improvement mostly concern additions and clarifications, not new experiments. In general questions from the review should be answered by changes to the text. We number major suggestions below.\n\n1) Clarification of response types:\n\nTowards the end, the Discussion section explains appropriately how \"both the auditory and the visual system, the same cells that are tuned to binaural ITD or binocular disparity also have intensity-response functions\u2026..\" that should cause ambiguities (biases) in localizing sensory objects near the sensory midline. Figure 3 illustrates this principle with monotonic intensity dependence of neural response rate functions for ITD in central inferior colliculus. Thus, this part of the discussion is appropriately focused on some of the universal principles for neurometric and psychometric localization of sensory objects/stimuli in both visual and auditory systems, and their intensity/contrast dependence.\n\nHowever, in the first paragraph of the Discussion section, some details are given regarding how visual cortical neurons fall into three types: (1) \"Tuned-excitatory\" neurons [that] respond best to zero spatial disparity; (2) \"near cells\" [that] respond more vigorously when [ocular] disparity[is crossed] (Parker and Cumming. (2001)); (3) and \"far cells\" when ocular disparity is uncrossed. This paragraph goes on to say that secondary visual cortices (V3) respond by and large to binocular cues (as opposed to monocular) cues. Do those binocular responses display biases towards the sensory field midline at low contrast? By analogy IT cortical neurons are biased towards central 0-6 degrees visual angle, is the IT central biased and tuning binaural and contrast dependent?\n\nIt would be useful to explain that neural responses in the auditory cortices are also distributed into regions and cortical fields according to binaural types. Auditory cortices have contralateral tuned-excitatory neurons that respond best to contralateral location disparity (e.g. level difference or ITD difference) and auditory cortices also have \"tuned-excitatory\" neurons that respond best to zero spatial disparity. The latter have been called (EE/F) or \"primarily binaural\" or \"two-way intensity\" tuned (Semple and Kitzes, 1993b; Pollak et al., 2002; Zhang et al., 2004; Razak and Fuzessery, 2010; Higgins et al., 2010). Notably, many if not all of the latter studies find that the \"tuned-excitatory\" neurons observed in primary (A1) or secondary ventral auditory cortices respond optimally at lower sound intensities. Hence, this raises an interesting twist namely, that neurons also can encode sound location/azimuth position near the midline in spite of the \"ambiguities\" at low sound intensities possibly by using spatial cues other than ITD.\n\n2) There is some confusion about what the results actually are.a) What is the difference between \"audibility\" and \"intensity\" in the statistical assessment (subsection \u201cHuman perception\u201d, Table 1 and Table 2) What does audibility mean in this context? If it co-varies with intensity, why is it included as a term in the model? Is it a means of incorporating the audiograms of individual subjects?\n\nb) Aren't changes to the slope of the psychometric function as a function of intensity the key result? Yet, that was significant for the second experiment but not the first (although it was close). I think it would be reasonable to say the first experiment didn't quite reject the null hypothesis but showed a trend, so a second experiment was done that controlled an additional aspect of the stimuli in the task, and the same subjects repeated the study, at which point strongly significant results were then obtained. The authors should be commended for including both experiments in the results.\n\nc) Re: experiment 2: the description in subsection \u201cHuman perception\u201d is clear in explaining that in experiment 2, the A-weighting equalizes the perceived bandwidth of the sounds across intensities, but is followed by: \"As a control for stimulus audibility\". If I have understood the lead-in correctly, this sentence would make more sense to this reader as: \"As a control for perceived bandwidth\".\n\n3) Computational context:\n\nIt would be useful to explain that although this study supports the intensity dependence of sound localization and potentially hemispheric models for the corresponding neural code alternative scenarios may exist. For example, is it not possible that the mammalian brain has both place-codes and rate codes in different parts that are called upon under different circumstances?\n\nThe computational underpinnings behind this experiment are perhaps more subtle than currently described. A previous study by Porter and Groh, 2006) lays out a few possible models for converting between place and rate codes and explicitly considers the dependence of neural firing patterns on both sound intensity and any other non-spatial factors (see Porter and Groh Figure 4 and page 319 for description of the models and the evidence for and against).\n\nFactors to consider are: is the proposed readout a subtractive or divisive comparison between left and right channels? How would the predicted effect of sound intensity differ depending on that computational combination rule? Might the relatively small effect of intensity in this task reveal that the brain is doing a pretty good job of handling this under a range of conditions, but it is not perfect?\n\nOther factors to consider are that the place codes may have effects of intensity as well, depending on how they are read out. For example, a weighted-sum readout of a place code will be sensitive to intensity signals. A weighted-average readout, however, incorporates a normalization mechanism that removes the intensity signal. A winner-take-all readout is also robust to intensity. I don't think the authors need to go into extensive detail, but a few qualifying phrases at well-placed locations in the manuscript to alert the reader that the comparison is not a matter of place codes vs rate codes per se but place-codes-and-their-readouts vs. rate-codes-and-their-readouts would go a long way.\n\nReferences to include:\n\nThe Porter and Groh, (2006) study mentioned above is relevant for inclusion. In addition, Salminen and colleagues have conducted a number of studies arguing that the human brain does indeed use a rate code for sound location. In the primate brain, studies by Werner-Reiss and Groh, (2008, auditory cortex) and Groh et al., (2003, inferior colliculus) are relevant. I also recommend including citations to the literature on non-monotonic rate-level functions in the auditory pathway: this term refers to neurons whose responses go up and then down as a function of increasing sound intensity. The existence of these neurons may be part of the way in which the brain produces largely accurate sound localization despite mixed sensitivity to intensity and laterality in individual neurons.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Population rate-coding predicts correctly that human sound localization depends on sound intensity\" for further consideration at eLife. Your revised article has been favorably evaluated by Barbara Shinn-Cunningham (Senior Editor), a Reviewing Editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nAfter consultation among the reviewers regarding multiple details of the underlying neurophysiology as covered in the Discussion section, the consensus recommendation is that the authors add something along the lines that while their study was motivated by the notion that there's no auditory map, it is entirely possible that there are sufficient map-like signals in higher order auditory cortical fields to support perception. Citations for this latter point include: Higgins et al., 2010, and Woods et al., 2006.\n\nThere are additional fascinating findings in the neurophysiological literature regarding frequency and intensity tuning, and interesting correlations between non-monotonicity in the azimuthal and intensity dimensions, but a detailed discussion of these points is probably beyond the scope for the present behavioral/computational study.\n",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ca6607cd-d954-4b32-b09e-8da25f20a237",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C1",
+      "claim": "Models of sound localization commonly assume that sound lateralization from interaural time differences is level invariant.",
+      "claim_type": "EXPLICIT",
+      "source": "Models of sound localization commonly assume that sound lateralization from interaural time differences is level invariant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about existing models in the field, representing established knowledge about common assumptions in sound localization modeling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "4cf135d7-16cb-4274-81ac-e215ef30d0eb",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C2",
+      "claim": "The labelled-line model encodes location through tuned representations of spatial location.",
+      "claim_type": "EXPLICIT",
+      "source": "The labelled-line model encodes location through tuned representations of spatial location and predicts that perceived direction is level invariant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of the labelled-line model based on established theoretical frameworks in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "c3c0ad28-ec65-4d0d-8eb2-3b5ac178ce71",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C3",
+      "claim": "The labelled-line model predicts that perceived direction is level invariant.",
+      "claim_type": "EXPLICIT",
+      "source": "The labelled-line model encodes location through tuned representations of spatial location and predicts that perceived direction is level invariant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction derived from the properties of the labelled-line model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "3fb753d3-b43f-424a-88a0-2dbfd9ec86e6",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C4",
+      "claim": "The hemispheric-difference model encodes location through spike-rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the hemispheric-difference model encodes location through spike-rate and predicts that perceived direction becomes medially biased at low sound levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of the hemispheric-difference model based on established theoretical frameworks.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "18bc49f6-45a0-4fdb-9d64-0893d65fae32",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C5",
+      "claim": "The hemispheric-difference model predicts that perceived direction becomes medially biased at low sound levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the hemispheric-difference model encodes location through spike-rate and predicts that perceived direction becomes medially biased at low sound levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction derived from the properties of the hemispheric-difference model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "898f2448-cd0a-460e-8ba9-b51c15358eb7",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C6",
+      "claim": "Softer sounds are perceived closer to midline than louder sounds in human sound localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, behavioral experiments find that softer sounds are perceived closer to midline than louder sounds, favoring rate-coding models of human sound localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the behavioral experiments conducted in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "19172861-493a-4f64-b667-e5fc7afccfc9",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C7",
+      "claim": "The finding that softer sounds are perceived closer to midline favors rate-coding models of human sound localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, behavioral experiments find that softer sounds are perceived closer to midline than louder sounds, favoring rate-coding models of human sound localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing experimental results with model predictions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "292f75a2-067f-43f3-a58f-c3cf0c7eb22c",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C8",
+      "claim": "Visual depth perception, which is based on interocular disparity, depends on the contrast of the target.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, visual depth perception, which is based on interocular disparity, depends on the contrast of the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in visual neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "2844b225-48aa-4198-ab50-dabfedf58fad",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C9",
+      "claim": "The brain may use a canonical computation of location that encodes perceived location through population spike rate relative to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar results in hearing and vision suggest that the brain may use a canonical computation of location: encoding perceived location through population spike rate relative to baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the analogy between auditory and visual findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "2c134b0a-a52b-4e2b-a286-466a50f01a74",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C10",
+      "claim": "Interaural time differences (ITDs) of the sounds reaching the ears allow listeners to localize sound in the horizontal plane.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, interaural time differences (ITDs) of the sounds reaching the ears allow listeners to localize sound in the horizontal plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in auditory neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "d5e1629a-2dcd-464e-95fd-e463d4a46764",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C11",
+      "claim": "The medial superior olive (MSO) is the first neural processing stage where ITDs are encoded on the timescale of microseconds in the ascending mammalian auditory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ascending mammalian auditory pathway, the first neural processing stage where ITDs are encoded, on the timescale of microseconds, is the medial superior olive (MSO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in auditory neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "1c2dd7fe-da89-446d-a8d9-0e1d3233c79c",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C12",
+      "claim": "In the MSO, temporally precise binaural inputs converge, and their ITDs are converted to neural firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, temporally precise binaural inputs converge, and their ITDs are converted to neural firing rate (Goldberg and Brown, 1968; Yin and Chan, 1990; Spitzer and Semple, 1995; Pecka et al., 2010; Day and Semple, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "bca60ee5-d2cd-49d9-a59a-2c388e482cd2",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C13",
+      "claim": "The shape of the MSO output firing rate curves as a function of ITD resembles that of a cross-correlation operation on the inputs to each ear.",
+      "claim_type": "EXPLICIT",
+      "source": "The shape of the MSO output firing rate curves as a function of ITD resembles that of a cross-correlation operation on the inputs to each ear (Batra and Yin, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "5e42df0a-1cde-4c9e-a381-7fc919b74d3d",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C14",
+      "claim": "The labelled-line model for sound localization was originally proposed by Jeffress (1948).",
+      "claim_type": "EXPLICIT",
+      "source": "One prominent neural model for sound localization, originally proposed by Jeffress (1948), consists of a labelled line of coincidence detector neurons that are sensitive to the binaural synchronicity of neural inputs from each ear, with each neuron maximally sensitive to a specific magnitude of ITD (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical citation of the original proposal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "20cd569d-37bc-4304-9b4f-2b8e1a42a301",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C15",
+      "claim": "The labelled-line model consists of a labelled line of coincidence detector neurons that are sensitive to the binaural synchronicity of neural inputs from each ear, with each neuron maximally sensitive to a specific magnitude of ITD.",
+      "claim_type": "EXPLICIT",
+      "source": "One prominent neural model for sound localization, originally proposed by Jeffress (1948), consists of a labelled line of coincidence detector neurons that are sensitive to the binaural synchronicity of neural inputs from each ear, with each neuron maximally sensitive to a specific magnitude of ITD (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structure of the labelled-line model with reference to a figure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "3d7afa19-ab25-49db-8cf0-2a0d79c8715d",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C16",
+      "claim": "The labelled-line model is computationally equivalent to a neural place-code based on bandlimited cross-correlations of the sounds reaching both ears.",
+      "claim_type": "EXPLICIT",
+      "source": "This labelled-line model is computationally equivalent to a neural place-code based on bandlimited cross-correlations of the sounds reaching both ears (Domnitz and Colburn, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "23550a81-bed1-4b07-aca2-9f4e7afdfc49",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C17",
+      "claim": "Several studies support the existence of labelled-line neural place-code mechanisms in the avian brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies support the existence of labelled-line neural place-code mechanisms in the avian brain (Carr and Konishi, 1988; Overholt et al., 1992), and versions of it have successfully been applied in many engineering applications predicting human localization performance (e.g. Durlach, 1963; Hafter, 1971; Stern and Trahiotis, 1995; Breebaart et al., 2001; Hartmann et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "b328b1c6-a011-4fdd-9679-3d864674ec65",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C18",
+      "claim": "Versions of the labelled-line model have successfully been applied in many engineering applications predicting human localization performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies support the existence of labelled-line neural place-code mechanisms in the avian brain (Carr and Konishi, 1988; Overholt et al., 1992), and versions of it have successfully been applied in many engineering applications predicting human localization performance (e.g. Durlach, 1963; Hafter, 1971; Stern and Trahiotis, 1995; Breebaart et al., 2001; Hartmann et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "71b3477f-b77b-4377-865a-a3ee588878d7",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C19",
+      "claim": "Evidence from experiments on Mongolian gerbils shows that sharply tuned bilateral inhibitory inputs to the MSO play a crucial role in processing ITDs.",
+      "claim_type": "EXPLICIT",
+      "source": "One reason for an alternative is that two excitatory inputs should suffice to implement the labelled-line model, but evidence from experiments on Mongolian gerbils shows that in addition to bilateral excitatory inputs, sharply tuned bilateral inhibitory inputs to the MSO play a crucial role in processing ITDs (Brand et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "04c17376-a80b-4a93-94c9-b22ba9841f48",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C20",
+      "claim": "To date no labelled-line type neurons encoding auditory space have been discovered in a mammalian species.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, to date no labelled-line type neurons encoding auditory space have been discovered in a mammalian species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "642e7719-b9d6-4e7b-a26c-a10c8a28e8bd",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C21",
+      "claim": "Several studies proposed that mammalian sound localization can be modeled based on differences in firing rates across the two populations of neurons that are tuned to opposing hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using a population rate-code, several studies proposed that mammalian sound localization can be modeled based on differences in firing rates across the two populations of neurons that are tuned to opposing hemispheres (Figure 1B; van Bergeijk, 1962; McAlpine and Grothe, 2003; Devore et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple cited studies and illustrated in a figure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "79470a79-dba8-46eb-b8b0-ff45001aca93",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C22",
+      "claim": "Rate-based models generally predict that neuronal responses carry most information at the steepest slopes of neural-discharge-rate versus ITD curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Rate-based models generally predict that neuronal responses carry most information at the steepest slopes of neural-discharge-rate versus ITD curves, where neural discharge changes most strongly (Stecker et al., 2005), consistent with the observation that the peak ITDs of rate-ITD curves often fall outside the physiologically plausible range (McAlpine and Grothe, 2003; Grothe et al., 2010; but see also Joris et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "949e0a20-47bd-4bfd-94a9-cb3978257fc6",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C23",
+      "claim": "The peak ITDs of rate-ITD curves often fall outside the physiologically plausible range.",
+      "claim_type": "EXPLICIT",
+      "source": "Rate-based models generally predict that neuronal responses carry most information at the steepest slopes of neural-discharge-rate versus ITD curves, where neural discharge changes most strongly (Stecker et al., 2005), consistent with the observation that the peak ITDs of rate-ITD curves often fall outside the physiologically plausible range (McAlpine and Grothe, 2003; Grothe et al., 2010; but see also Joris et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies, though with a noted exception.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "8ee353fd-e392-4e20-95ce-1a3b2c674cb4",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C24",
+      "claim": "How mammalian sound localization adapts to stimulus history supports a rate-based neural population code.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, some authors have suggested that how mammalian sound localization adapts to stimulus history further supports a rate-based neural population code, as assessed behaviorally or via magnetoencephalography (Phillips and Hall, 2005; Stange et al., 2013; Salminen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "c2eba3e9-50c3-4014-852e-28545f5dcdbf",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C25",
+      "claim": "It is unknown which of the two competing models (labelled-line versus rate-code model) describes human sound localization better.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unknown which of the two competing models, broadly characterized as labelled-line versus rate-code model, describes human sound localization better.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "8f32c680-9770-4a4b-8b48-9f4ebdcfa139",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C26",
+      "claim": "The two different models (labelled-line versus rate-code) predict different dependencies of sound localization on sound intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observe that the two different models predict different dependencies of sound localization on sound intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation derived from theoretical analysis of the models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "a0088861-64f1-41b5-af49-4a69dfa2d7a7",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C27",
+      "claim": "Birds and mammals use different neural mechanisms to calculate sound direction.",
+      "claim_type": "EXPLICIT",
+      "source": "An extensive physiology literature characterizes labelled-line versus population-rate type neurons and suggests that, at least from the perspective of evolution, birds and mammals use different neural mechanisms to calculate sound direction (review: Grothe, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a cited review.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "09ebb397-625a-4355-a7d2-740880f9c378",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C28",
+      "claim": "Pe\u00f1a et al. (1996) characterized labelled-line neurons at low sound levels and as a function of both sound level and ITD.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we searched the avian and mammalian physiology literature and identified two studies that characterized labelled-line versus population rate-code neurons at low sound levels and as a function of both sound level and ITD (Pe\u00f1a et al., 1996; Zwiers et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "16b495e5-47f1-4f85-81f8-2a955aa404a3",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C29",
+      "claim": "Zwiers et al. (2004) characterized population rate-code neurons at low sound levels and as a function of both sound level and ITD.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we searched the avian and mammalian physiology literature and identified two studies that characterized labelled-line versus population rate-code neurons at low sound levels and as a function of both sound level and ITD (Pe\u00f1a et al., 1996; Zwiers et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "9e3342fa-10c6-43f8-a9a0-1ee6205cf4d3",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C30",
+      "claim": "Both Pe\u00f1a et al. (1996) and Zwiers et al. (2004) report neural firing rate in response to acoustic noise stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Pe\u00f1a et al. (1996) and Zwiers et al. (2004) report neural firing rate in response to acoustic noise stimuli and are thus suitable for predicting each model's sensitivity to the acoustic noises we tested in the current study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "a1652614-64f7-47f2-b98e-1fb3c01f65ae",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C31",
+      "claim": "The labelled-line neurons predicted that as sound intensity decreases, perceived source laterality would converge towards similar means for low versus high sound intensities, with increased response variability at decreasing sound intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "The labelled-line neurons predicted that, as sound intensity decreases, perceived source laterality would converge towards similar means for low versus high sound intensities, with increased response variability at decreasing sound intensities (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the computational model based on reconstructed neural data, illustrated in Figure 1C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "9e817273-6265-4798-b412-88ecc8ee88e3",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C32",
+      "claim": "The hemispheric-difference model predicted that as sound intensity decreases to near threshold levels, perceived laterality would become increasingly biased toward the midline reference.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the hemispheric-difference model predicted that as sound intensity decreases to near threshold levels, perceived laterality would become increasingly biased toward the midline reference (Figure 1D, for example note the shallower slope and thus compressed laterality percepts for red versus blue curves).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the computational model based on reconstructed neural data, illustrated in Figure 1D.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "88594e4c-37b5-4f4f-ad26-6a17bc71c6a5",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C33",
+      "claim": "At higher overall sound intensities, both models predicted that lateralization would be intensity invariant.",
+      "claim_type": "EXPLICIT",
+      "source": "At higher overall sound intensities, both models predicted that lateralization would be intensity invariant (see insets in Figure 1C versus D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from both computational models, illustrated in the figure insets.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "6031d537-3574-4374-95e6-407771dcdd5a",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C34",
+      "claim": "A listener's ability to discriminate ITD can vary with sound intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "A listener's ability to discriminate ITD can vary with sound intensity (Dietz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "92ea869f-8b0f-4b49-bb1d-7f3015fdac0d",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C35",
+      "claim": "Some studies reported decreased perceived source laterality near sensation threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Some reported decreased perceived source laterality near sensation threshold (Teas, 1962; Sabin et al., 2005), but others reported weak or no level effects on perceived lateralization (Von B\u00e9k\u00e9sy and Wever, 1960; Mickunas, 1963; Hartmann and Rakerd, 1993; Macpherson and Middlebrooks, 2000; Inoue, 2001; Vliegen and Van Opstal, 2004; Brungart and Simpson, 2008; Gai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "27ce0846-1b10-4f62-88f4-c04d871fd0a9",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C36",
+      "claim": "Some studies reported weak or no level effects on perceived lateralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Some reported decreased perceived source laterality near sensation threshold (Teas, 1962; Sabin et al., 2005), but others reported weak or no level effects on perceived lateralization (Von B\u00e9k\u00e9sy and Wever, 1960; Mickunas, 1963; Hartmann and Rakerd, 1993; Macpherson and Middlebrooks, 2000; Inoue, 2001; Vliegen and Van Opstal, 2004; Brungart and Simpson, 2008; Gai et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "bf2d0a14-ea6c-4b77-809e-ee3c28677d42",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C37",
+      "claim": "For stimuli at higher sensation levels where the rate-level functions saturate, both the labelled-line and the hemispheric difference model predict level invariance.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, assuming an approximately 30 dB dynamic range of rate-level function either at the MSO or downstream in the binaural pathway (e.g. medial superior olive: Goldberg and Brown, 1968; inferior colliculus: Zwiers et al., 2004), for stimuli at higher sensation levels (SL) where the rate-level functions saturate, both the labelled-line and the hemispheric difference model predict level invariance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of neural rate-level functions and cited studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "9cd30c65-2844-4e25-90b6-c27e7a0b3827",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C38",
+      "claim": "For low-frequency sound, listeners rely dominantly on ITD when judging lateral source angle.",
+      "claim_type": "EXPLICIT",
+      "source": "For low-frequency sound, listeners rely dominantly on ITD when judging lateral source angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in auditory perception.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "ea9c1c44-ca16-4070-af61-2c25298ddec4",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C39",
+      "claim": "For broadband sound, listeners integrate across all three types of spatial cue (ITD, interaural level differences, and spectral cues).",
+      "claim_type": "EXPLICIT",
+      "source": "However, for broadband sound, listeners integrate across all three types of spatial cue (Wightman and Kistler, 1992; Ihlefeld and Shinn-Cunningham, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "28ba6f98-f665-4047-a7cd-664ee017de75",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C40",
+      "claim": "Unlike ITDs, interaural level differences and overall sound intensity both decrease with increasing source distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike ITDs, interaural level differences and overall sound intensity both decrease with increasing source distance, raising the possibility that for stimuli with high-frequency content, listeners judged softer sounds to be more medial because they interpreted them to be farther away than louder sounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of acoustic physics and perception.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "c19ecb93-e621-4e46-8076-60486e766330",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C41",
+      "claim": "The literature provides insufficient evidence on how ITD-based lateralization varies with sound level near sensation threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the literature provides insufficient evidence on how ITD-based lateralization varies with sound level near sensation threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "4d8c0730-784a-446b-b2d0-a532f33e958a",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C42",
+      "claim": "The labelled-line code hypothesis predicted that the mean perceived direction based on ITD would be intensity invariant, even at intensities close to sensation level.",
+      "claim_type": "EXPLICIT",
+      "source": "The labelled-line code hypothesis predicted that the mean perceived direction based on ITD would be intensity invariant, even at intensities close to SL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from the labelled-line model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "0bd46db6-7b47-442b-93bf-97c9e2015341",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C43",
+      "claim": "Stimuli consisted of low-frequency noise tokens that were bandlimited to cover most of the frequency range where humans can discriminate ITD (corner frequencies from 300 to 1200 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli consisted of low-frequency noise tokens that were bandlimited to cover most of the frequency range where humans can discriminate ITD (Brughera et al., 2013; here, corner frequencies from 300 to 1200 Hz, shown in Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental stimuli used in the study, with reference to a cited study and a figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "952056a4-483c-46a6-8b17-634e124aa674",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C44",
+      "claim": "The NLME model predicts 80.6% of the variance in the measured responses for spectrally flat noise.",
+      "claim_type": "EXPLICIT",
+      "source": "This model predicts 80.6% of the variance in the measured responses and is deemed an appropriate fit of the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "9628210d-58d3-4654-b83c-1476de4c524d",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C45",
+      "claim": "Perceived laterality scores increased with increasing ITD.",
+      "claim_type": "EXPLICIT",
+      "source": "Perceived laterality scores increased with increasing ITD, as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "effda99d-ee6e-447e-b63a-e9ab322e622f",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C46",
+      "claim": "With decreasing sound intensity, percepts were increasingly biased towards midline.",
+      "claim_type": "EXPLICIT",
+      "source": "With decreasing sound intensity, percepts were increasingly biased towards midline (compare order of colored lines, magnified in the inset of Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "19d1a3f0-b835-4991-80e5-0d90df00ba23",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C52",
+      "claim": "The NLME model for inverse A-weighted noise accounts for 80.4% of the variance in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "This second model accounts for 80.4% of the variance in the data, closely fitting the measured responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "5401cc07-fbc5-49e2-b7a9-9392d8a13022",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C55",
+      "claim": "The results confirm the effect of biasing perceived laterality toward midline with decreasing sound intensity for both spectrally flat noise and A-weighted noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the results confirm the effect of biasing perceived laterality toward midline with decreasing sound intensity. Therefore, for both spectrally flat noise and A-weighted noise, statistical analyses, which partialed out overall differences between listeners, are inconsistent with a labelled-line model of human sound localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "337108cf-057e-4cbb-88e5-456bf4759364",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C56",
+      "claim": "Statistical analyses are inconsistent with a labelled-line model of human sound localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the results confirm the effect of biasing perceived laterality toward midline with decreasing sound intensity. Therefore, for both spectrally flat noise and A-weighted noise, statistical analyses, which partialed out overall differences between listeners, are inconsistent with a labelled-line model of human sound localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "58dc6947-34a4-4030-a5b4-3bd12cda0262",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C57",
+      "claim": "Visual depth is computed in the cerebral cortex based on signals from the two eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "In analogy to sound localization based on the comparison of signals from the two ears (Figure 3A), visual depth is computed in the cerebral cortex based on signals from the two eyes (Figure 3B; Poggio, 1995; Parker and Cumming, 2001; Parker, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cited studies and illustrated in a figure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "af9a2773-6fc5-4b1a-8f9d-837641ee03bf",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C58",
+      "claim": "In both primary V1 and extrastriate V3a cortex of rhesus macaque monkeys, three types of neurons are thought to encode binocular disparity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in both primary V1 and extrastriate V3a cortex of rhesus macaque monkeys, three types of neurons are thought to encode binocular disparity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in visual neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "219f1a78-c8d7-41ba-bdde-6b645ac7a5e9",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C59",
+      "claim": "Tuned-excitatory neurons respond best to zero spatial disparity between the two eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "'Tuned-excitatory' neurons respond best to zero spatial disparity between the two eyes, whereas 'near cells' respond more vigorously when an object approaches, increasing crossed disparity between the eyes (Parker and Cumming, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "2496cef8-53ca-4efe-8f82-5e2fce1f345d",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C60",
+      "claim": "Near cells respond more vigorously when an object approaches, increasing crossed disparity between the eyes.",
+      "claim_type": "EXPLICIT",
+      "source": "'Tuned-excitatory' neurons respond best to zero spatial disparity between the two eyes, whereas 'near cells' respond more vigorously when an object approaches, increasing crossed disparity between the eyes (Parker and Cumming, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "df71b727-080f-4067-b3fb-dd4e5b3c7302",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C61",
+      "claim": "Far cells fire more vigorously as uncrossed disparity increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, 'far cells' fire more vigorously as uncrossed disparity increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in visual neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "0ce753ca-a7e0-4031-8db8-2dcd9c433815",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C62",
+      "claim": "In V1, the most frequently encountered type of binocular neurons are of the tuned-excitatory type.",
+      "claim_type": "EXPLICIT",
+      "source": "In V1, the most frequently encountered type of binocular neurons are of the tuned-excitatory type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in visual neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "065a2d3e-e42c-4e7e-994a-02ab22295f67",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C63",
+      "claim": "In V3a the large majority of neurons is stereo-specific and most neurons are either near or far cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in V3a the large majority of neurons is stereo-specific (Poggio et al., 1988) and most neurons are either near or far cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "29b56af2-1303-4fc8-a21a-bb1a699f7164",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C64",
+      "claim": "Unlike V1 activity, the activity in cortical area V3a predicts behavioral performance on tasks involving stereoscopic depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional magnetic resonance imaging experiments on human stereoscopic vision found that unlike V1 activity, the activity in cortical area V3a predicts behavioral performance on tasks involving stereoscopic depth (Backus et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "bb9e2e67-cbf3-4cd4-a4dc-1c745c8110f2",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C65",
+      "claim": "The central nervous system has evolved a canonical computation that is common to different sensory modalities for computing perceptual space from sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations lead us to propose that in order to compute perceptual space from sensory input, the central nervous system has evolved a canonical computation that is common to different sensory modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the analogies between auditory and visual findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "023bd956-8b81-4b7e-9515-22b162fc2477",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C66",
+      "claim": "Near and far cells encode visual distance from the fixation plane in a way similar to how inferior colliculus neurons encode auditory azimuthal angle away from midline reference.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we propose that near and far cells encode visual distance from the fixation plane in a way similar to how inferior colliculus neurons encode auditory azimuthal angle away from midline reference: firing rate increases monotonically with distance from perceptual reference anchor or fixation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the analogies between auditory and visual findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "2d97b6a8-c5e3-4f41-8f6f-cbb4c84449fd",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C67",
+      "claim": "In both the auditory and the visual system, the same cells that are tuned to binaural ITD or binocular disparity also have intensity-response functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that in both the auditory and the visual system, the same cells that are tuned to binaural ITD or binocular disparity also have intensity-response functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on established knowledge in neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "0182eec3-78cb-4afc-a2f2-a2f2e8123219",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C68",
+      "claim": "A rate-code based on a population of cells tuned to binaural ITD or binocular disparity should cause ambiguities when stimulated below the saturation firing rate, either at low sound intensity or at low contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "A rate-code based on a population of these cells should cause ambiguities when stimulated below the saturation firing rate, either at low sound intensity or at low contrast (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the properties of rate-coding and illustrated in a figure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "83956a08-3024-4ad5-8fc3-71c91c804a72",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C69",
+      "claim": "One study found that low visual contrast affects the computation of depth, but only in some observers.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, one study found such an effect, but only in some observers (Cisarik and Harwerth, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "106c89fb-7ee9-41a4-aaf3-6a27a00c5546",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C70",
+      "claim": "Several studies on depth perception indicate that low contrast is interpreted by the brain as a cue for distance; lower contrast targets are perceived farther away.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies on depth perception indicate that low contrast is interpreted by the brain as a cue for distance; lower contrast targets are perceived farther away (e.g. Schor and Howarth, 1986; Rohaly and Wilson, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "09ce3f58-70dc-46f1-a94a-9525ee444116",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C71",
+      "claim": "Experiments that controlled for low contrast bias demonstrated that low contrast causes perceived depth to shrink, both for near and far deviations from baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "However, experiments that controlled for low contrast bias demonstrated that low contrast causes perceived depth to shrink, both for near and far deviations from baseline (Chen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "a990edef-a218-46d4-8b3e-b4493c4e8974",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C72",
+      "claim": "There is a link between population rate-coding and stimulus intensity in perceived visual depth as in perceived auditory azimuth.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is a link between population rate-coding and stimulus intensity in perceived visual depth as in perceived auditory azimuth, two perceptual spatial dimensions computed by the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the comparison of auditory and visual findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "80e2331e-b861-444e-8ed6-1935d324dc9a",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C73",
+      "claim": "Most rate-code models rely on subtractive comparisons between populations of neurons that are tuned to opposite hemifields, inherently sharing ambiguous readouts at low suprathreshold sound intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these rate-code models rely on subtractive comparisons between populations of neurons that are tuned to opposite hemifields, inherently sharing ambiguous readouts at low suprathreshold sound intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of rate-code models in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "68394601-f720-47fb-a9be-1dde794ac6ca",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C74",
+      "claim": "Divisive comparisons between ipsi- and contralaterally tuned neural populations are less likely to predict the observed behavioral bias due to stimulus intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, divisive comparisons between ipsi- and contralaterally tuned neural populations are less likely to predict the observed behavioral bias due to stimulus intensity (Groh, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "e04f0d67-d418-4547-a742-68d82af7be81",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C75",
+      "claim": "It has been suggested that depending on perceptual task, the mammalian brain could combine place- and rate-codes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, it has been suggested that depending on perceptual task, the mammalian brain could combine place- and rate-codes (Porter and Groh, 2006; Goodman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "f7938b02-b3ea-4b60-a2ea-54b5e8b950b6",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C76",
+      "claim": "The mammalian auditory pathway may convert place- into rate-codes and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the mammalian auditory pathway may convert place- into rate-codes and vice versa (Groh et al., 2003; Porter and Groh, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "82fcf4df-f5c7-4fcd-a257-060d88831025",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C77",
+      "claim": "Downstream from the inferior colliculus, rate-coding seems to be maintained, at least in the superior colliculus of rhesus macaque.",
+      "claim_type": "EXPLICIT",
+      "source": "However, downstream from the inferior colliculus, rate-coding seems to be maintained, at least in the superior colliculus of rhesus macaque (Werner-Reiss and Groh, 2008; Lee and Groh, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "c8fac004-83ba-424e-a4d6-6ad24c6062eb",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C78",
+      "claim": "Psychophysical and computational results suggest that for sound localization based on ITD at low sound levels, cortical maps do not play a role.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our psychophysical and computational results suggest that for sound localization based on ITD at low sound levels, cortical maps do not play a role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the study's results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "83ed1835-9a62-423c-a00a-21f23065a29d",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C79",
+      "claim": "There is good evidence for spatial map-like signals in higher order auditory cortical fields when interaural level differences are present, at medium to high sound levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is good evidence for spatial map-like signals in higher order auditory cortical fields when interaural level differences are present, at medium to high sound levels (Higgins et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "339dcd35-39ce-4dfe-9fc9-9a65e05c2ec5",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C80",
+      "claim": "Excitatory-excitatory (EE) cells in auditory cortex that are tuned to sound locations near midline are also often tuned for sound intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, excitatory-excitatory (EE) cells in auditory cortex that are tuned to sound locations near midline are also often tuned for sound intensity (Semple and Kitzes, 1993; Pollak et al., 2002; Zhang et al., 2004; Razak and Fuzessery, 2010; Higgins et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "fc6a5f9a-f06d-4e0c-a3e7-3a0cac1f0a88",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C81",
+      "claim": "Unlike predictions from a rate-code neuronal readout, labelled-line coding predicts that sound localization is intensity invariant.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, unlike predictions from a rate-code neuronal readout, labelled-line coding predicts that sound localization is intensity invariant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from the labelled-line model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "97530c52-af6b-46f3-84e5-2dcf85e20173",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C82",
+      "claim": "For low frequency noise, where ITDs are the dominant localization cue, and at low sound intensities, sound lateralization based on ITD is not intensity invariant; it becomes increasingly medially biased with decreasing sensation level.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental results show that for low frequency noise, where ITDs are the dominant localization cue, and at low sound intensities, sound lateralization based on ITD is not intensity invariant; it becomes increasingly medially biased with decreasing SL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "e4dc5072-cf5d-48b0-bc9c-ede6bac90498",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C83",
+      "claim": "The observed localization bias is overall small in magnitude, showing that the brain can robustly localize based on ITD across a large range of sound intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed localization bias is overall small in magnitude, showing that the brain can robustly localize based on ITD across a large range of sound intensities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "ed33a01c-2898-405a-a117-07537dfff724",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C84",
+      "claim": "The localization bias is of theoretical importance as it confirms the prediction of a subtractive rate-based neuronal readout.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this bias is of theoretical importance as it confirms the prediction of a subtractive rate-based neuronal readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing experimental results with model predictions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "930e8d19-cc1a-464b-80b3-9db4ebfd4966",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C85",
+      "claim": "The auditory finding parallels a phenomenon of visual fixation bias when calculating visual distance from binocular disparity at low contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our auditory finding parallels a phenomenon of visual fixation bias when calculating visual distance from binocular disparity at low contrast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing auditory and visual findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "f7f28e04-d576-46c2-a350-d9c10261e746",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C86",
+      "claim": "The perceptual data on auditory localization together with previously published data on visual distance perception are parsimonious with the idea that a population rate-code underlies the brain's computation of location.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our perceptual data on auditory localization together with previously published data on visual distance perception are parsimonious with the idea that a population rate-code underlies the brain's computation of location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's results and comparison with visual literature.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "483eba90-dff0-4676-866c-37153bb78d59",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C87",
+      "claim": "Twelve na\u00efve normal-hearing listeners (ages 18\u201327, five females) were enrolled in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve na\u00efve normal-hearing listeners (ages 18\u201327, five females) were enrolled in this study and paid for their time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "8d954d7f-0868-4722-984d-3fded4192846",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C88",
+      "claim": "Listeners' audiometric thresholds were 25 dB hearing level or better at octave frequencies from 250 to 8000 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Their audiometric thresholds, as assessed via a calibrated GSI 39 Auto Tymp device (Grason-Stadler), were 25 dB hearing level or better at octave frequencies from 250 to 8000 Hz, and did not differ by more than 10 dB across ears at each octave frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the hearing characteristics of the study participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "08237715-6c9c-40af-a97e-7f09e3d244cb",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "claim_id": "C89",
+      "claim": "Ten listeners reached training criterion, suggesting that they were able to consistently report where they perceived the sounds based on ITD.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten listeners reached criterion, suggesting that they were able to consistently report where they perceived the sounds based on ITD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the training phase of the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "407411e6-2b52-4265-ab63-39b1cab90258",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Two competing models of sound localization make opposing predictions about intensity dependence: the labelled-line model predicts intensity-invariant perceived direction, while the hemispheric-difference model predicts medial bias at low sound levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the theoretical framework by describing established models and their predictions. These are well-supported by prior literature and represent accurate characterizations of the two competing theoretical frameworks in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "d74fa08e-7ff5-41ca-be6e-490168fe2d38",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Computational modeling based on reconstructed neural data from avian labelled-line neurons and mammalian inferior colliculus neurons predicts that the labelled-line model shows intensity-invariant lateralization with increased variability at low intensities, while the hemispheric-difference model predicts medial bias at low intensities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C33 describe model predictions based on reconstructed neural data from two prior studies (Pe\u00f1a et al., 1996; Zwiers et al., 2004). However, the reconstruction methodology involves multiple assumptions and approximations (adding noise to match correlation coefficients, sigmoid transformations of linear regressions) that introduce uncertainty. The cross-species comparison (barn owl vs. rhesus macaque) and the validity of applying these specific neural recordings to predict human behavior requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "fc984676-f5dc-4fc6-8a82-3dd817702a6b",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Behavioral experiment 1 with spectrally flat noise (300-1200 Hz) in 10 normal-hearing listeners shows that perceived laterality increases with ITD and becomes increasingly biased toward midline with decreasing sound intensity, with the NLME model explaining 80.6% of variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C87-C89 describe a well-designed psychophysical experiment with appropriate participant selection, training criteria, and statistical modeling. The NLME model accounts for both fixed effects (ITD, sound intensity) and random effects (individual listeners), and the 80.6% variance explained indicates good model fit. The finding of medial bias at low intensities is clearly demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "8df33d7b-080b-4008-87fd-fcdeb5ab914b",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Behavioral experiment 2 with inverse A-weighted noise confirms the medial bias effect, with the NLME model explaining 80.4% of variance, controlling for potential confounds related to audibility across frequencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C55 describe a control experiment that addresses a potential confound (unequal audibility across frequencies). The similar results with A-weighted noise strengthen the conclusion that the medial bias is not an artifact of partial inaudibility of the stimulus. The comparable model fit (80.4% vs 80.6%) supports the robustness of the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "8c5d7559-c8c8-4f35-a385-f9fb7fa311d0",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The behavioral finding that softer sounds are perceived closer to midline than louder sounds is inconsistent with the labelled-line model and supports rate-coding models, specifically confirming the prediction of subtractive rate-based neuronal readout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C56, C82, and C84 represent the main conclusion linking experimental results to model predictions. The behavioral data clearly show medial bias at low intensities, which is consistent with the hemispheric-difference model prediction (C32) but inconsistent with the labelled-line model prediction (C31, C42). However, the strength of this conclusion depends on the validity of the computational modeling (which has uncertainties) and assumes that these are the only two viable models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "79f90c12-a2a1-4aa9-97d6-b0b4b995b5af",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Visual depth perception based on binocular disparity involves three types of neurons in V1 and V3a cortex (tuned-excitatory, near cells, far cells), with V3a activity predicting behavioral performance on stereoscopic depth tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C57-C64 accurately summarize established knowledge in visual neuroscience, supported by appropriate citations. These claims provide the foundation for the cross-modal comparison between auditory and visual spatial processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "e6be213f-aec0-49c7-bcdd-0f36a21420ff",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Both auditory ITD-sensitive and visual disparity-sensitive neurons have intensity-response functions, and rate-coding predicts ambiguities at low stimulus intensities; visual depth perception shows contrast-dependent effects analogous to the auditory intensity effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C72 draw parallels between auditory and visual systems. While the analogy is conceptually interesting, the evidence is mixed: C69 notes effects only in some observers, C70 describes contrast as a distance cue (opposite to the proposed effect), and C71 shows depth shrinkage at low contrast. The relationship between these visual findings and the auditory results is not as clear-cut as presented, and the analogy requires more direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "bdffa240-a985-47a8-b9ae-0840ce5c9e5b",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The similar intensity/contrast dependence in auditory localization and visual depth perception suggests the brain uses a canonical computation across sensory modalities: encoding perceived location through population spike rate relative to baseline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9, C65, C66, C85, and C86 propose a broad theoretical framework about canonical neural computation across modalities. This is explicitly speculative (C9, C65, C66 are marked as speculation/inference). While the auditory data support rate-coding for sound localization, the visual analogy is less clear (see previous result), and the generalization to a 'canonical computation' across all sensory modalities requires substantially more evidence from multiple sensory systems and species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "d670050b-595b-4096-bf8e-1153c8c17e13",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior to this study, it was unknown which model (labelled-line vs. rate-code) better describes human sound localization, and the literature provided insufficient evidence on how ITD-based lateralization varies with sound level near sensation threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C26, and C41 accurately characterize the state of knowledge in the field and identify the gap that this study addresses. The authors appropriately acknowledge the limitations and contradictions in prior literature (C35, C36).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "ffce22f0-9407-4391-80fa-2ad43c58e2e4",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Most rate-code models rely on subtractive comparisons between hemispheric populations; the mammalian auditory pathway may convert between place- and rate-codes, with rate-coding maintained downstream of the inferior colliculus, and cortical maps likely not playing a role in ITD-based localization at low sound levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C80 provide important context about the diversity of rate-coding models and the complexity of neural coding in the auditory pathway. These are appropriately supported by citations and acknowledge nuances (e.g., C74 notes divisive models would not predict the observed bias). Claim C78 appropriately qualifies the inference about cortical maps as specific to ITD-based localization at low sound levels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    },
+    {
+      "id": "c526867a-3c11-4960-b48d-a4d5c18118f4",
+      "content_id": "c8eab687-a262-4c32-b449-6a4096770148",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The observed localization bias is small in magnitude, demonstrating that the brain can robustly localize based on ITD across a large range of sound intensities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 appropriately contextualizes the findings by noting that while the bias is statistically significant and theoretically important, it is small in absolute magnitude. This is an important qualification that prevents overinterpretation of the practical significance of the effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:51:27.154287Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ca6607cd-d954-4b32-b09e-8da25f20a237",
+      "result_id": "407411e6-2b52-4265-ab63-39b1cab90258"
+    },
+    {
+      "claim_id": "4cf135d7-16cb-4274-81ac-e215ef30d0eb",
+      "result_id": "407411e6-2b52-4265-ab63-39b1cab90258"
+    },
+    {
+      "claim_id": "c3c0ad28-ec65-4d0d-8eb2-3b5ac178ce71",
+      "result_id": "407411e6-2b52-4265-ab63-39b1cab90258"
+    },
+    {
+      "claim_id": "3fb753d3-b43f-424a-88a0-2dbfd9ec86e6",
+      "result_id": "407411e6-2b52-4265-ab63-39b1cab90258"
+    },
+    {
+      "claim_id": "18bc49f6-45a0-4fdb-9d64-0893d65fae32",
+      "result_id": "407411e6-2b52-4265-ab63-39b1cab90258"
+    },
+    {
+      "claim_id": "a1652614-64f7-47f2-b98e-1fb3c01f65ae",
+      "result_id": "d74fa08e-7ff5-41ca-be6e-490168fe2d38"
+    },
+    {
+      "claim_id": "9e817273-6265-4798-b412-88ecc8ee88e3",
+      "result_id": "d74fa08e-7ff5-41ca-be6e-490168fe2d38"
+    },
+    {
+      "claim_id": "88594e4c-37b5-4f4f-ad26-6a17bc71c6a5",
+      "result_id": "d74fa08e-7ff5-41ca-be6e-490168fe2d38"
+    },
+    {
+      "claim_id": "0bd46db6-7b47-442b-93bf-97c9e2015341",
+      "result_id": "fc984676-f5dc-4fc6-8a82-3dd817702a6b"
+    },
+    {
+      "claim_id": "952056a4-483c-46a6-8b17-634e124aa674",
+      "result_id": "fc984676-f5dc-4fc6-8a82-3dd817702a6b"
+    },
+    {
+      "claim_id": "9628210d-58d3-4654-b83c-1476de4c524d",
+      "result_id": "fc984676-f5dc-4fc6-8a82-3dd817702a6b"
+    },
+    {
+      "claim_id": "effda99d-ee6e-447e-b63a-e9ab322e622f",
+      "result_id": "fc984676-f5dc-4fc6-8a82-3dd817702a6b"
+    },
+    {
+      "claim_id": "483eba90-dff0-4676-866c-37153bb78d59",
+      "result_id": "fc984676-f5dc-4fc6-8a82-3dd817702a6b"
+    },
+    {
+      "claim_id": "8d954d7f-0868-4722-984d-3fded4192846",
+      "result_id": "fc984676-f5dc-4fc6-8a82-3dd817702a6b"
+    },
+    {
+      "claim_id": "08237715-6c9c-40af-a97e-7f09e3d244cb",
+      "result_id": "fc984676-f5dc-4fc6-8a82-3dd817702a6b"
+    },
+    {
+      "claim_id": "19d1a3f0-b835-4991-80e5-0d90df00ba23",
+      "result_id": "8df33d7b-080b-4008-87fd-fcdeb5ab914b"
+    },
+    {
+      "claim_id": "5401cc07-fbc5-49e2-b7a9-9392d8a13022",
+      "result_id": "8df33d7b-080b-4008-87fd-fcdeb5ab914b"
+    },
+    {
+      "claim_id": "898f2448-cd0a-460e-8ba9-b51c15358eb7",
+      "result_id": "8c5d7559-c8c8-4f35-a385-f9fb7fa311d0"
+    },
+    {
+      "claim_id": "19172861-493a-4f64-b667-e5fc7afccfc9",
+      "result_id": "8c5d7559-c8c8-4f35-a385-f9fb7fa311d0"
+    },
+    {
+      "claim_id": "337108cf-057e-4cbb-88e5-456bf4759364",
+      "result_id": "8c5d7559-c8c8-4f35-a385-f9fb7fa311d0"
+    },
+    {
+      "claim_id": "97530c52-af6b-46f3-84e5-2dcf85e20173",
+      "result_id": "8c5d7559-c8c8-4f35-a385-f9fb7fa311d0"
+    },
+    {
+      "claim_id": "ed33a01c-2898-405a-a117-07537dfff724",
+      "result_id": "8c5d7559-c8c8-4f35-a385-f9fb7fa311d0"
+    },
+    {
+      "claim_id": "292f75a2-067f-43f3-a58f-c3cf0c7eb22c",
+      "result_id": "79f90c12-a2a1-4aa9-97d6-b0b4b995b5af"
+    },
+    {
+      "claim_id": "58dc6947-34a4-4030-a5b4-3bd12cda0262",
+      "result_id": "79f90c12-a2a1-4aa9-97d6-b0b4b995b5af"
+    },
+    {
+      "claim_id": "af9a2773-6fc5-4b1a-8f9d-837641ee03bf",
+      "result_id": "79f90c12-a2a1-4aa9-97d6-b0b4b995b5af"
+    },
+    {
+      "claim_id": "219f1a78-c8d7-41ba-bdde-6b645ac7a5e9",
+      "result_id": "79f90c12-a2a1-4aa9-97d6-b0b4b995b5af"
+    },
+    {
+      "claim_id": "2496cef8-53ca-4efe-8f82-5e2fce1f345d",
+      "result_id": "79f90c12-a2a1-4aa9-97d6-b0b4b995b5af"
+    },
+    {
+      "claim_id": "df71b727-080f-4067-b3fb-dd4e5b3c7302",
+      "result_id": "79f90c12-a2a1-4aa9-97d6-b0b4b995b5af"
+    },
+    {
+      "claim_id": "0ce753ca-a7e0-4031-8db8-2dcd9c433815",
+      "result_id": "79f90c12-a2a1-4aa9-97d6-b0b4b995b5af"
+    },
+    {
+      "claim_id": "065a2d3e-e42c-4e7e-994a-02ab22295f67",
+      "result_id": "79f90c12-a2a1-4aa9-97d6-b0b4b995b5af"
+    },
+    {
+      "claim_id": "29b56af2-1303-4fc8-a21a-bb1a699f7164",
+      "result_id": "79f90c12-a2a1-4aa9-97d6-b0b4b995b5af"
+    },
+    {
+      "claim_id": "2d97b6a8-c5e3-4f41-8f6f-cbb4c84449fd",
+      "result_id": "e6be213f-aec0-49c7-bcdd-0f36a21420ff"
+    },
+    {
+      "claim_id": "0182eec3-78cb-4afc-a2f2-a2f2e8123219",
+      "result_id": "e6be213f-aec0-49c7-bcdd-0f36a21420ff"
+    },
+    {
+      "claim_id": "83956a08-3024-4ad5-8fc3-71c91c804a72",
+      "result_id": "e6be213f-aec0-49c7-bcdd-0f36a21420ff"
+    },
+    {
+      "claim_id": "106c89fb-7ee9-41a4-aaf3-6a27a00c5546",
+      "result_id": "e6be213f-aec0-49c7-bcdd-0f36a21420ff"
+    },
+    {
+      "claim_id": "09ce3f58-70dc-46f1-a94a-9525ee444116",
+      "result_id": "e6be213f-aec0-49c7-bcdd-0f36a21420ff"
+    },
+    {
+      "claim_id": "a990edef-a218-46d4-8b3e-b4493c4e8974",
+      "result_id": "e6be213f-aec0-49c7-bcdd-0f36a21420ff"
+    },
+    {
+      "claim_id": "2844b225-48aa-4198-ab50-dabfedf58fad",
+      "result_id": "bdffa240-a985-47a8-b9ae-0840ce5c9e5b"
+    },
+    {
+      "claim_id": "bb9e2e67-cbf3-4cd4-a4dc-1c745c8110f2",
+      "result_id": "bdffa240-a985-47a8-b9ae-0840ce5c9e5b"
+    },
+    {
+      "claim_id": "023bd956-8b81-4b7e-9515-22b162fc2477",
+      "result_id": "bdffa240-a985-47a8-b9ae-0840ce5c9e5b"
+    },
+    {
+      "claim_id": "930e8d19-cc1a-464b-80b3-9db4ebfd4966",
+      "result_id": "bdffa240-a985-47a8-b9ae-0840ce5c9e5b"
+    },
+    {
+      "claim_id": "f7f28e04-d576-46c2-a350-d9c10261e746",
+      "result_id": "bdffa240-a985-47a8-b9ae-0840ce5c9e5b"
+    },
+    {
+      "claim_id": "c2eba3e9-50c3-4014-852e-28545f5dcdbf",
+      "result_id": "d670050b-595b-4096-bf8e-1153c8c17e13"
+    },
+    {
+      "claim_id": "8f32c680-9770-4a4b-8b48-9f4ebdcfa139",
+      "result_id": "d670050b-595b-4096-bf8e-1153c8c17e13"
+    },
+    {
+      "claim_id": "c19ecb93-e621-4e46-8076-60486e766330",
+      "result_id": "d670050b-595b-4096-bf8e-1153c8c17e13"
+    },
+    {
+      "claim_id": "80e2331e-b861-444e-8ed6-1935d324dc9a",
+      "result_id": "ffce22f0-9407-4391-80fa-2ad43c58e2e4"
+    },
+    {
+      "claim_id": "68394601-f720-47fb-a9be-1dde794ac6ca",
+      "result_id": "ffce22f0-9407-4391-80fa-2ad43c58e2e4"
+    },
+    {
+      "claim_id": "e04f0d67-d418-4547-a742-68d82af7be81",
+      "result_id": "ffce22f0-9407-4391-80fa-2ad43c58e2e4"
+    },
+    {
+      "claim_id": "f7938b02-b3ea-4b60-a2ea-54b5e8b950b6",
+      "result_id": "ffce22f0-9407-4391-80fa-2ad43c58e2e4"
+    },
+    {
+      "claim_id": "82fcf4df-f5c7-4fcd-a257-060d88831025",
+      "result_id": "ffce22f0-9407-4391-80fa-2ad43c58e2e4"
+    },
+    {
+      "claim_id": "c8fac004-83ba-424e-a4d6-6ad24c6062eb",
+      "result_id": "ffce22f0-9407-4391-80fa-2ad43c58e2e4"
+    },
+    {
+      "claim_id": "83ed1835-9a62-423c-a00a-21f23065a29d",
+      "result_id": "ffce22f0-9407-4391-80fa-2ad43c58e2e4"
+    },
+    {
+      "claim_id": "339dcd35-39ce-4dfe-9fc9-9a65e05c2ec5",
+      "result_id": "ffce22f0-9407-4391-80fa-2ad43c58e2e4"
+    },
+    {
+      "claim_id": "e4dc5072-cf5d-48b0-bc9c-ede6bac90498",
+      "result_id": "c526867a-3c11-4960-b48d-a4d5c18118f4"
+    }
+  ],
+  "comparisons": []
+}

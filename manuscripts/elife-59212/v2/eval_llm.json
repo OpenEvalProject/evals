@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C128",
+      "C129"
+    ],
+    "result": "A longitudinal observational study was conducted on 53 small-scale poultry farms in Ca Mau province, southern Vietnam, from June 2015 to January 2017. Monthly questionnaires collected data on poultry demographics, mortality, and management practices. The study focused on chickens, ducks, and Muscovy ducks, with farms keeping an average of 79 chickens, 53 ducks, and 7 Muscovy ducks per farm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 and C123-C129 provide consistent and detailed descriptions of the study design, sample size, data collection methods, and ethical approvals. The methodology is clearly described with specific numbers, timeframes, and procedures that are internally consistent and appropriate for a longitudinal behavioral study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Descriptive statistics from the study show that disease outbreaks occurred in 18.8% of flock-months (non-sudden outbreaks in chickens), 1.6% (sudden outbreaks in chickens), and 7.2% (outbreaks in other species). Of 1503 broiler chicken flock-months analyzed for harvest, no harvest occurred in 995, complete harvest in 258, and partial harvest in 250 flock-months, with an overall harvest probability of 23.9%. AI vaccination was performed in 7.5% of 1318 eligible flock-months, and farm disinfection occurred in 67.4% of 858 farm-months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C56 present internally consistent descriptive statistics with clear denominators and appropriate exclusion criteria. The numbers are specific and the percentages are mathematically consistent with the reported counts. The data appear to be appropriately processed for the subsequent statistical analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In small broiler flocks (\u226416 birds), disease outbreaks significantly increased harvest probability. Non-sudden outbreaks (ONS) in the same month increased harvest probability by 56% (OR=2.06, 95% CI: 1.23-3.45), and sudden outbreaks (OS) increased it by 214% (OR=9.34, 95% CI: 2.13-40.94). ONS in the previous month also increased harvest by 56% (OR=2.06, 95% CI: 1.17-3.62), while ONS two months prior decreased harvest by 47% (OR=0.41, 95% CI: 0.19-0.92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C68-C76 present statistically significant findings with appropriate confidence intervals and p-values. The effect sizes are substantial and biologically plausible. The temporal pattern (increased harvest during/after outbreaks, followed by decreased harvest two months later) is logically consistent with a depopulation-repopulation cycle. The model explained 34.2% of deviance (C57), which is reasonable for behavioral data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "For large broiler flocks (>16 birds), non-sudden outbreaks (ONS) had no significant effect on harvest probability. Sudden outbreaks (OS) one month prior showed a potential 76% increase in harvest (OR=3.89, 95% CI: 0.82-18.46, p=0.09), but this association lacked statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C77 reports no effect based on AIC comparison, which is appropriate. However, C78 reports a marginally non-significant result (p=0.09) with a wide confidence interval that crosses 1.0. The authors acknowledge insufficient statistical power. While the point estimate suggests an effect, the lack of significance and wide CI make this result uncertain rather than supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Flocks harvested during or one month after disease outbreaks in chickens were more likely to be sold to traders and less likely to be slaughtered at home compared to flocks harvested without recent outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is explicitly based on 'partial observations' from only the last six months of data collection. While Table 3 shows the pattern described, the limited sample size, lack of statistical testing, and incomplete data collection period make this finding uncertain. The authors do not provide sample sizes or statistical tests for this comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "AI vaccination probability strongly increased with flock size, from nearly 0% for flocks \u226416 birds to nearly 100% for flocks >200 birds. Vaccination was preferentially performed at 4.3 weeks of age, was more likely in confined flocks (OR=24.6, 95% CI: 6.32-95.6), and showed seasonal variation with increased likelihood during September-January. The model explained 71.9% of deviance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C84-C96 present a coherent set of findings about vaccination behavior with strong statistical support. The effect sizes are large and confidence intervals are appropriately reported. The high deviance explained (71.9%, C83) indicates good model fit. The findings are biologically and economically plausible (larger flocks justify vaccination costs, confined flocks are easier to vaccinate, seasonal patterns align with disease risk).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Farm disinfection probability increased with the number of layer-breeder hens (OR=1.3, 95% CI: 1.12-1.51), layer-breeder ducks (OR=1.25, 95% CI: 1.02-1.53), and broiler chickens (OR=1.07, 95% CI: 1.01-1.13). Disinfection showed strong temporal autocorrelation (\u03c1=0.71, p<0.0001) and seasonal variation (lowest in October-November, highest in January-April), but was not affected by disease outbreaks. The model explained 61.9% of deviance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 present statistically significant findings with appropriate confidence intervals. The temporal autocorrelation finding (C98, C100) is methodologically important and was appropriately addressed using an AR-1 model. The lack of outbreak effect on disinfection (C105) is a negative finding but is clearly stated and based on AIC comparison. The seasonal pattern and farm size effects are plausible and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The harvest model explained 34.2% of deviance and showed that harvest probability strongly depended on the difference between flock age and anticipated maturity age (\u03b4t). A threshold of 16 birds per flock optimally separated small (52% of flocks) from large flocks (48%). Harvest probability was near zero when \u03b4t < -15 weeks, increased steeply from \u03b4t = -10 to 0, and remained high but <100% for \u03b4t > 0. Large flocks showed steeper increases in harvest probability and higher post-maturity harvest rates (41-61%) than small flocks (30-41%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C67 and C80-C82 describe the baseline harvest model with appropriate statistical detail. The use of AIC to determine the optimal flock size threshold (C59) is methodologically sound. The relationship between age and harvest is biologically expected and well-characterized. The farm random effect being significant only for large flocks (C82) is an interesting finding that suggests more heterogeneity in management of larger operations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C117"
+    ],
+    "result": "Small-scale farmers rely on rapid sale of birds to mitigate disease losses, but this behavior has the potential to enhance onward transmission as depopulated birds enter markets and trading networks. Depopulation may reduce local transmission but increase long-distance pathogen dissemination and expose humans in the supply chain to infection risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C111-C117 present the main interpretation of the study findings. The inference that rapid sale during outbreaks enhances transmission risk is well-supported by the empirical findings (increased harvest during outbreaks, C2-C3) combined with established epidemiological knowledge about HPAI transmission through trade networks (C113-C114, supported by citations). The dual effect of depopulation (reducing local but increasing distant transmission) is a logical inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background context on avian influenza, livestock disease emergence, and poultry farming in Vietnam and Asia. HPAI emerged in China in 1996, has become endemic in parts of Asia and Africa, and poses pandemic risk. In Vietnam, HPAI has been endemic since 2003-2004, with over 7 million households practicing small-scale poultry farming. Previous studies identified gaps in understanding farmer behavioral responses to disease outbreaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7-C32 provide background context supported by appropriate citations to published literature and official statistics. These claims establish the scientific rationale for the study and are consistent with established knowledge about avian influenza epidemiology and poultry farming in Southeast Asia. The citations appear appropriate and the claims are not controversial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Discussion context placing the study in broader epidemiological and policy contexts. The Mekong delta is a hotspot for pathogen emergence. The study is claimed to be the first detailed quantification of livestock management dynamics in response to disease outbreaks. Small-scale poultry farming is common in AI-affected regions and likely to persist. Alternative depopulation strategies (e.g., using birds as reptile feed) exist in some areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C122 provide discussion context with appropriate citations. The claim of novelty (C109) is qualified with 'to the best of our knowledge' and appears reasonable given the cited literature gap (C25). The discussion of policy implications and alternative practices is appropriately supported by citations and logical inference from the findings. The speculation about future trends (C122) is appropriately hedged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Outbreaks with sudden deaths (death <1 day after symptom onset) are considered indicative of HPAI infection in chickens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C127 is supported by citation to Mariner et al., 2014 and represents an established diagnostic criterion. This definition is critical for the study's classification of outbreak types (OS vs ONS) and is appropriately referenced.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1674 @@
+{
+  "submission": {
+    "id": "ab5d3fc6-edc8-4097-9d16-9daf2975923c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:55:27.485363Z",
+    "updated_at": "2025-12-02T10:55:27.485363Z"
+  },
+  "content": [
+    {
+      "id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "submission_id": "ab5d3fc6-edc8-4097-9d16-9daf2975923c",
+      "content_type": "manuscript",
+      "content_text": "# A microfluidic device for inferring metabolic landscapes in yeast monolayer colonies\n\n## Authors\n\n- Zoran S Marinkovic<sup>1</sup> ([ORCID: 0000-0002-7720-2802](https://orcid.org/0000-0002-7720-2802))\n- Cl\u00e9ment Vulin<sup>1</sup> ([ORCID: 0000-0003-3914-0708](https://orcid.org/0000-0003-3914-0708))\n- Mislav Acman<sup>1</sup>\n- Xiaohu Song<sup>2</sup>\n- Jean-Marc Di Meglio<sup>1</sup> ([ORCID: 0000-0003-0446-4550](https://orcid.org/0000-0003-0446-4550))\n- Ariel B Lindner<sup>2</sup> ([ORCID: 0000-0001-5015-6511](https://orcid.org/0000-0001-5015-6511)) \u2020\n- Pascal Hersen<sup>1</sup> ([ORCID: 0000-0003-2379-4280](https://orcid.org/0000-0003-2379-4280)) \u2020\n\n### Affiliations\n\n1. Laboratoire Mati\u00e8re et Syst\u00e8mes Complexes UMR 7057 CNRS and Universit\u00e9 de Paris Paris France\n2. U1001 INSERM Paris France\n3. CRI Universit\u00e9 de Paris Paris France\n4. Institute of Biogeochemistry and Pollutant Dynamics ETH Z\u00fcrich Z\u00fcrich Switzerland\n5. Department of Environmental Microbiology Eawag D\u00fcbendorf Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicrobial colonies are fascinating structures in which growth and internal organization reflect complex morphogenetic processes. Here, we generated a microfluidics device with arrays of long monolayer yeast colonies to further global understanding of how intercellular metabolic interactions affect the internal structure of colonies within defined boundary conditions. We observed the emergence of stable glucose gradients using fluorescently labeled hexose transporters and quantified the spatial correlations with intra-colony growth rates and expression of other genes regulated by glucose availability. These landscapes depended on the external glucose concentration as well as secondary gradients, for example amino acid availability. This work demonstrates the regulatory genetic networks governing cellular physiological adaptation are the key to internal structuration of cellular assemblies. This approach could be used in the future to decipher the interplay between long-range metabolic interactions, cellular development and morphogenesis in more complex systems.\n\n## Introduction\n\nStructured cellular populations are complex, dynamic systems and their composition, expansion and internal structure are the result of interactions between the cells and their microenvironment. Cells absorb and metabolize nutrients and also produce and secrete metabolites, creating spatial gradients of nutrients and metabolites. Thus, cells at the outskirts of a multicellular assembly do not experience the same microenvironment as the cells deeply buried within. Reciprocally, cellular physiology is dependent on the cell\u2019s position within a colony. Such variations in cellular physiology are consistently observed in a variety of multicellular systems \u2013 from bacterial and yeast colonies (Vulin et al., 2014; C\u00e1p et al., 2012) to biofilms (Nadell et al., 2016) and tumors (Carmona-Fontaine et al., 2013; Delarue et al., 2014) \u2013 and are reflected by altered gene expression levels and cellular phenotypes as growth rates, nutrient uptake rates and metabolic activity. Such variations presumably emerge because of long-range metabolic interactions between cells, in that the cellular microenvironment at one position depends on the nutrient uptake rate at another position.\n\nNotably, multicellular communities (Shapiro, 1998; Shou et al., 2007; Xavier and Foster, 2007) exhibit various adaptive benefits, including higher cell proliferation, improved access to resources and niches (Koschwanez et al., 2011), collective defence (e.g., against antagonists, drugs, antibiotics) (Nadell et al., 2016) resulting in optimization of population survival when confronted with averse physical, chemical, nutritional or biological challenges (Palkov\u00e1 and V\u00e1chov\u00e1, 2006). These examples indicate the importance of understanding the emergence and maintenance of complex spatial multicellular structures from ecological (Antwis et al., 2017; Gonzalez et al., 2012; Widder et al., 2016), medical (Bryers, 2008; Gilbert et al., 2018; Estrela and Brown, 2018) and evolutionary (Ratcliff et al., 2012; Nadell et al., 2010; Kim et al., 2008) perspectives. Yet, despite the obvious contrast between homogeneous environments and the pronounced environmental heterogeneity of microbial cellular assemblies, the majority of scientific research to date has either focused on single cells in homogeneous environments or populations of cells grown in batch or continuous liquid cultures. This is mostly due to the complexity of designing an experiment that would allow monitoring, over long time, the development of a spatially defined extended multicellular assembly. This is in particular the case for the widely used eukaryotic model organism yeast Saccharomyces cerevisiae, despite the numerous calls in recent reviews to study its nutrient sensing, signaling, and related growth and development control within the natural colony context. (Conrad et al., 2014; Broach, 2012; Hor\u00e1k, 2013).\n\nAs microorganisms in nature tend to live in multicellular communities, devising an experimental approach that captures this complexity while being easy to use and amenable to different experimental needs and conditions should further our understanding of complex gene regulatory networks in the context of microbial evolution and ecology.\n\nCurrent direct observations of three-dimensional colonies and biofilms are cumbersome and often constrained by existing technologies (Nadell et al., 2016). For example, two-photon microscopy of sliced agarose-encapsulated yeast colonies was required to show that yeast cells may adopt different physiologies \u2013 and possibly different cell types \u2013 depending on their position within a colony (C\u00e1p et al., 2012). In another example, nanospray desorption electrospray ionization mass spectrometry (nanoDESI MS) was used to study growing bacterial colonies on agar plates and showed a wide diversity and complexity of compounds that characterize microbial chemical ecology (Watrous et al., 2012; Traxler and Kolter, 2012). Such complex methodologies are not amenable to time-lapse imaging, nor to observation of the temporal variations in gene expression and growth rates of single cells over relevant time and length scales. An alternative is to grow microbial cells in microfluidic devices to spatially constrain the growth of the cells and to control the delivery of nutrients (Bennett and Hasty, 2009; Cookson et al., 2005; Robert et al., 2010; Ni et al., 2012; Llamosi et al., 2016). Microfluidic experimental research is typically designed to ensure that the cells being studied experience a homogeneous environment. This can be done at the single cell level, as it has been demonstrated in studies of aging of yeast (Jo et al., 2015) and bacteria (Yang et al., 2019) where single cells had to be trapped and kept under constant nutrient flow for long term observations to capture their death. Alternatively, a small cell assembly can be trapped in dead-end chambers under assumption that a quick diffusion of nutrients will keep the environment in chambers homogeneous. With that approach cell lineages were tracked for bacteria (Wang et al., 2010) (the widely used \u2018mother machine\u2019) and yeast (Xu et al., 2015), cells were subjected to fluctuating environments of different carbon sources to study non-genetic memory in bacteria (Lambert et al., 2014), and bacterial colonies were synchronized through quorum sensing and gas-phase redox signalling over centimeter-length scales to produce oscillating colony \u2018biopixels\u2019 (Prindle et al., 2011). Although effective for their specific applications, unfortunately, such devices do not fully capture emerging properties at a colony level, that\u00a0is spatial variations in growth rates, microenvironments and phenotypes. Recently, there have been a few attempts to use microfluidics to study collective properties of bacterial colonies grown as a microcolony. Hornung et al. (2018) grew two-dimensional bacterial microcolonies in a 75 \u00b5m long device perfused with a very low concentration (up to 585 \u00b5M) of protocatechuic acid as the only carbon source from both sides of the cell chamber. They observed heterogeneous growth in agreement with a combination of a reaction-diffusion model and particle-based simulations. In a similar setup, a 60 \u00b5m long device perfused with a very low concentration of glucose (up to 800 \u00b5M) from one side was used to study the emergence of microscale gradients that resulted in metabolic cross-feeding between glucose-fermenting and acetate-respiring subpopulations of bacteria and antibiotic tolerance by slow growing subpopulation (Co et al., 2019). Wilmoth et al. used microwells up to 100 \u00b5m in diameter to look at spatial patterns of H1-Type VI secretion system (T6SS) mutants of Pseudomonas aeruginosa accompanied with an agent-based model depicting the two observed subpopulations (Wilmoth et al., 2018). They found that spatial constraints and local concentrations of growth substrates affect the spatial organization of cells. Finally, Liu et al. grew Bacillus subtilis biofilms perfused with glycerol and glutamate media. They discovered collective oscillations which emerge as a consequence of long-range metabolic co-dependence between cells in the interior and cells at the periphery of a biofilm, presumably to maximize the availability of nutrients and survival of interior cells (Liu et al., 2015). While the use of microfluidics gave rise to the discovery of collective properties of microbial assemblies and facilitated quantitative observations, such attempts are currently limited by inherent difficulties tied to fabrication of efficient microfluidic devices and choice of model organism. These limitations include small device dimensions (<100 \u00b5m) (Hornung et al., 2018; Co et al., 2019; Wilmoth et al., 2018), use of low nutrient concentrations (<1 mM) (Hornung et al., 2018; Co et al., 2019), limited scope of nutrient types (Hornung et al., 2018; Co et al., 2019; Liu et al., 2015) and in some cases inability to access single cell level measurements (Wilmoth et al., 2018). Therefore, it is challenging to apply such devices for the general case of the study of a large monolayer of cells in standard range and scope of nutrients, often used in biological research in liquid cultures. Additionally, it is tempting to reconstruct the emergence of gene expression landscapes on a global scale (e.g., within structured populations) from local (e.g., single cell) properties, given the extensive knowledge accumulated on single-cell gene regulatory networks. However, the variations in the microenvironment within a multicellular assembly and their interconnections with gene expression and cell metabolism are rather poorly known.\n\nIn attempt to overcome the above limitations in current methodologies and observe emerging properties at a colony level in larger dimensions and standard nutrient conditions, we developed a microfluidic device to grow thin, extended arrays of yeast cell monolayers that are perfused with nutrients from a single direction. We demonstrate the emergence of heterogeneous microenvironments and quantify spatial variation in cellular growth rate and the formation of gene expression landscapes for key metabolic genes involved in glucose transport and utilization, across the nascent 2D microcolony in 800 \u00b5m long cell chambers and up to 444 mM glucose concentration. Interestingly, the gene expression landscapes exhibited a high degree of spatial correlation over a wide range of glucose concentrations. Notably, we show that a growing extended assembly of cells presents a robust, steady state spatial structure, transitioning between fermentative (high glucose environment, fast growth, rapid glucose utilization) and respiratory (low glucose environment, slow growth, slow but efficient glucose utilization [Pfeiffer and Morley, 2014; Hagman and Pi\u0161kur, 2015]) regimes, located close to and far from the nutrient source, respectively. This spatial structure emerges from the interplay between how cells individually adapt to the microenvironment and, at the same time, alter their surroundings as a result of their metabolic activity. Said differently, structured cells create and experience a spatially structured micro-environment through the interplay of nutrient diffusion and uptake without any obvious inherent biological program that would imply cell-cell communication and coordinated community action.\n\n## Results\n\n### Growing extended yeast monolayers\n\nMicrofluidic systems are usually designed to ensure a homogeneous microenvironment for all cells (Bennett and Hasty, 2009). In contrast, in this study, we designed a microfluidic device \u2013 dubbed the \u2018yeast machine\u2019 \u2013 to grow long, narrow yeast monolayers with the aim of observing the emergence of nutrient gradients and spatial variations in cellular growth and gene expression landscapes. We used soft lithography techniques to fabricate a multi-layered microfluidic device composed of a large channel (to flow nutrients) and an array of perpendicular, extended (800 \u00b5m-long), narrow (50 \u00b5m-wide), flat (4.5 \u00b5m-high) dead-end chambers in which yeast cells can grow as monolayers while the media is supplied by a pressure pump-based system with flow control (Figure 1, Figure 1\u2014figure supplement 1). The length of the dead-end chambers was optimized to induce significant variations in the nutrient concentrations within the chambers due to cellular nutrient uptake. The chamber width was large enough to avoid jamming during cell growth due to geometric constraints and small enough to avoid generation of complex, cell-recirculating flows induced by cell growth (Boyer et al., 2011). The chamber height was comparable to \u2013 but slightly larger than \u2013 the average size of a yeast cell, so the cells were vertically constrained to facilitate single-cell imaging and time-lapse fluorescence microscopy (Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig1-v2.jpg)\n\n**Figure 1.:** (a) Media reservoirs are pressurized with the help of Fluigent MFCS pressure pump resulting in flow through the flow sensors, into the chip and then to waste. Flow sensors and pressure pump are connected to the flow-rate control module, which maintains a constant flow through the system. Nutrient supply and media conditions can be changed in real time. (b) Each single \u2018yeast machine\u2019 has two sets of cell chambers of various widths (5 \u00b5m, 10 \u00b5m, 25 \u00b5m and 50 \u00b5m). The Cell chambers are connected perpendicularly to a large flow channel (1 mm wide, 25 \u00b5m high). This design facilitates adaptation for different model systems (e.g. bacteria, yeast, mammalian cells) and high-throughput depending on the of predefined flexible length, width and height flexible adapted dimensions. (c) A close-up sketch of a set of cell chambers used in our experiments. They are 800 \u00b5m long, 50 \u00b5m wide, and 4.5 \u00b5m high. A single cell chamber fits a monolayer of up to 2500 yeast cells. The whole setup is mounted on a microscope for time-lapse fluorescent imaging.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Microfluidic device fabrication. Epoxy-based resin is spread on a silicon wafer and illuminated with the UV light through a custom designed chrome mask. Soluble part of the resin is washed off and a new cycle of resin deposition can be made depending on the number of layers of the microfluidic device. The master wafer is silanized and used as a re-usable negative mold to produce microfluidic chips. Polydimethylsiloxane (PDMS) is then poured on the master wafer and cured until it is polymerized. The PDMS chip is bonded with a glass coverslip by plasma bonding. The final microfluidic chip is used to grow cells and deliver nutrients. The thinner parts are the cell chambers, and the thicker part is the main nutrient channel. (b) Microfluidic chip bonded to a cover slip. Each chip has two independent \u2018yeast machines\u2019. (c) 3D printed chip holder for centrifugation with the chip mounted on it (channels are colored with different dyes for better visualization). (d) Spin coater that is used for centrifugation of cells into the cell chamber. (e) Microfluidic chip mounted on a microscope.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Cell chambers of the \u2018yeast machine\u2019 at high magnification in different starting glucose concentrations. Cells are vertically constrained to facilitate single-cell imaging and time-lapse fluorescence microscopy.\n\nThe cells were injected into the main channel of the \u2018yeast machine\u2019 and then forced into the dead-end chambers by centrifugation using a homemade 3D-printed holding device attached to a spin coater (see Figure 1\u2014figure supplement 1; Materials\u00a0and\u00a0methods). The main channel was washed with yeast synthetic complete growth medium to remove excess cells; cells that were trapped in the dead-end chambers by centrifugation were not removed by the washing step. Nutrients were flowed through the main channel and could passively diffuse into the array of dead-end chambers. The cells formed growing monolayers that extended from the closed end of the chamber and collectively progressed towards the nutrient source (i.e. the open end of the chamber) as the cells pushed each other while growing (Figure 2a,b; Video 1). Cells eventually filled each chamber, forming an extended two-dimensional colony composed of about 2500 cells (Figure 2b, Figure 1\u2014figure supplement 2), typically\u00a0~10 cells wide and\u00a0~200 cells long. Cells could be observed locally at high magnification (100\u00a0\u00d7\u00a0objective), while the whole assembly could be seen at low magnification (10\u00a0\u00d7\u00a0objective). We recorded the cellular expansion and subsequent internal dynamics of these long monolayers, as well as the landscape of expression of key fluorescently tagged endogenous genes, over time and over an almost 1000-fold range of glucose concentrations (from 0.01% to 8% w/vol).\n\n![Video 1.](https://cdn.elifesciences.org/articles/47951/elife-47951-video1.mp4.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig2-v2.jpg)\n\n**Figure 2.:** (a) The microfluidic device is perfused with nutrients using a pressure-driven system (see Figure 1). Yeast monolayers extend within the long chambers: front velocity (VF) and local velocity (Vz) are determined by cellular growth and division. (b) Example of a time-lapse collage of yeast monolayer expansion along an 800 \u00b5m-long chamber (2% w/vol. glucose, 5\u00a0\u00d7\u00a0amino acid concentration). Front velocity increases and reaches a plateau (indicated by flattening of the slope of the green curve). When the front approaches close to the open end of the chamber (i.e., 0 \u00b5m), the over-spilling cells are constantly washed away by the nutrient flow within the main channel. ( c) Front velocity reaches a maximum when the position of the front becomes close to the open end of the chamber indicating that after expanding by a typical distance (~400 \u00b5m here for 2% w/vol. glucose), the maximal number of cells that receive glucose and can participate in expansion has been reached. 340 velocity data points binned into 10 equally spaced position points were extracted from n\u00a0=\u00a012 colony front trajectories (2% w/vol. glucose). The error bars denote standard deviations of each bin (~15\u201330 velocity data points). (d) Front velocity as function of external glucose concentration. Data comes from the bin closest to the open end of the chamber as measured in Figure 2c for each glucose concentration (n\u00a0>\u00a05). Error bars denote standard deviations. (e) Local cellular motion can be assessed by computing the standard deviation of pixel intensities across a stack of time-lapse images. Here, white areas indicate variations in movement across the time-lapse for cells below 400 \u00b5m, while the cells above do not move. Averaging over several channels (n\u00a0=\u00a09), we obtained an indicator of cell motion and thus an estimate of the glucose penetration distance, H (~400 \u00b5m for 2% glucose). (f) Local velocity decreases for cells deeper within the chamber. Local velocity also increases with external glucose concentration. Velocity Data, that were binned into 16 equally spaced position, comes from the analysis of\u00a0>100 cell trajectories. Error bars denote standard deviations.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a-b)\u00a0If not present in excess, amino acids can also limit growth of cells. Indeed, cells generate spatial gradients for all nutrients and metabolites in their microenvironment. The tradeoff between diffusion of a molecule and its uptake rate defines the properties of the gradient, thus gradients are expected to vary from one nutrient to another. In this setting, glucose and amino acids are important nutrients that can limit growth if present at too low concentrations. Glucose is required as a carbon source and the media must be supplemented with amino acids as the strain is an auxotroph. To determine the importance of amino acid concentration, we reduced the amino acid concentration to the standard concentration of SC media (called 1\u00a0\u00d7\u00a0CSM in the main text). (c) The front velocity was lower at high glucose and low amino acid concentrations than in the case with high glucose and high amino acid concentrations. There was no significant difference up to about 1% w/vol (55.5 mM) glucose. Above that glucose concentration, front velocities increased with the glucose concentration at a high amino acid concentration (5\u00a0\u00d7\u00a0CSM), whereas front velocity levels off at a low amino acid concentration (1\u00a0\u00d7\u00a0CSM). Data comes from the bin closest to position 0 \u00b5m as measured in Figure 2c for each glucose concentration. Depending on the glucose concentration, minimum 5 to maximum 12 trajectories were measured (n\u00a0=\u00a05\u201312). Represented are means and standard deviations that contain ~15- ~ 30 velocity points each. (d) The same effect was observed for local velocities. There was almost no distinction between local velocities as the source concentration of glucose increased up to about 1% w/vol (55.5 mM), but the difference in local velocities was striking at higher glucose concentrations. Taken together, this means that glucose is the limiting nutrient in both 1\u00a0\u00d7\u00a0and 5\u00a0\u00d7\u00a0amino acid media, up to a glucose concentration of about 1% w/vol (55.5 mM). For the case of 5\u00a0\u00d7\u00a0amino acid concentration, glucose remains the limiting factor for glucose concentrations used in this study. Data comes from\u00a0>100 trajectories, depending on different glucose concentration. Velocity datapoints were then binned into 16 equally spaced position points. Represented are means and standard deviations of each bin.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Red data represent the local velocity field as a function of position inside a fully developed monolayer. Error bars are\u00a0\u00b1\u00a0standard deviations computed for numerous single-cell trajectories (>100). Black data are the front velocity measured for an expanding yeast monolayer. Maximum front velocities are reported as function of glucose concentration in Figure 2. The maximum velocities for both measurements lie within the error bars.\n\n### Monolayer in expansion displays regions of fast and slow growth\n\nExpansion of the monolayers of cells was observed by microscopy at low magnification (10\u00d7 objective). Under standard glucose-rich conditions (2% w/vol; 111 mM) and excess amino acids (5\u00d7 CSM, see Materials\u00a0and\u00a0methods), the front velocity, VF, increased during the first 2-4 h and eventually reached a steady-state close to 100 \u00b5m.h\u22121 (Figure 2c,d, Video 1). Front velocity is the sum of the contribution of every cell to colony expansion. Therefore, VF depends on the quantities of glucose and other nutrients that penetrate inside the yeast monolayer, which impact both the number of cells that grow and their growth rates. Initially, the monolayer is sparsely populated and sufficient glucose is expected to reach all cells. After growth and division, a larger number of cells can participate in global expansion of the population. Thus, the front velocity is expected to quickly increase over time. However, at some point, as the size of the monolayer increases, the cells close to the dead end of the chamber will stop growing (due to absorption and metabolism of available nutrients by cells closer to the nutrient source/chamber opening) and the front velocity will plateau. Hence, after the cell chamber populates with cells completely, a steady-state is reached where a constant number of cells with access to glucose continue to divide and move passively towards the nutrient source, while the number of cells at the dead end of the chamber deprived of glucose (and other nutrients) remains unchanged. If we consider the ideal case in which yeast cells are 4 \u00b5m-wide and divide every 90 min in the presence of glucose, each cell layer leads to an expansion of 4 \u00b5m every 90 min, or 2.6 \u00b5m.hr\u22121. The observed terminal front velocity of 94 \u00b1 8 \u00b5m.hr\u22121 (Figure 2) can be attributed to the first 36 \u00b1 3 layers of cells, that\u00a0is the first 140 \u00b5m of the colony. The glucose penetration distance can be approximated by assuming (Vulin et al., 2014) that glucose \u2013 of which the concentration is maintained at C0 at the front of the monolayer \u2013 freely diffuses within the assembly with a diffusion coefficient D ~ 100 \u00b5m (C\u00e1p et al., 2012).s\u22121 and is absorbed by cells at a constant rate, q0, of ~ 1 mM.s\u22121. Diffusion law dictates that the glucose concentration is expected to decrease significantly after a typical distance, H, that scales with $\\sqrt{\\frac{DC_{0}}{q_{0}}}$ ~ 100 \u00b5m. Our direct observation (Figure 2e) showed that for a layer of growing cells, H is around 400 \u00b5m at 2% w/vol glucose. Notably, both estimations are in agreement, albeit they underestimate the observed size of the growing layer. These discrepancies result from discarding the decay in the cellular growth rate at decreasing glucose concentrations and the variation in the specific cellular uptake rate, q, with glucose concentration. Indeed, the interplay between glucose diffusion and uptake is central to structuration of the colony as it affects both the number of cells that have access to glucose and the glucose concentration in the microenvironment of each region, and thus determines which cells actually participate in colony expansion and by how much (Vulin et al., 2014). The true glucose penetration distance is therefore likely to be larger than the above \u2018guesstimate\u2019. Yet, inferring the true penetration distance would require a detailed model of the dependency of both cellular glucose absorption and the growth rate on the glucose concentration, as well as experimental measurements of the glucose concentrations within the monolayer. This outlines the difficulty of predicting the internal structure of a simple yeast monolayer due to our limited understanding of how yeast cells interact with nutrients and the difficulty of obtaining quantitative details of the microenvironment landscapes within a yeast monolayer. In the following text, we quantify the expression of different glucose concentration-dependent transporters as a possible proxy for intra-colony glucose concentration. We even ventured further, to study how landscapes of cellular growth and expression of key genes involved in glucose transport self-emerge from long-range metabolic interactions within the yeast colony.\n\n### Front velocity increases with glucose concentration\n\nIncreasing the glucose concentration (from 0.01% to 8% w/vol) led to higher terminal front velocities (Figure 2d), in agreement with the fact that at higher concentrations, glucose will penetrate further by diffusion in the colony (Figure 2a). Thus, increasing the concentration allows a larger number of cells to access glucose and participate in the growth of the colony. Yet, the front velocity does not increase linearly with glucose concentration, and plateaus at very high glucose concentrations (>4% w/vol). One interpretation is that at this concentration range, sufficient glucose reaches the dead end of the chamber, allowing all cells to participate in the growth of the assembly. However, based on VF ~ \u00b5L, where L is the length of the dead-end chamber and \u00b5 is the average cell growth rate, one would expect a saturating front velocity of 368 \u00b5m.h\u22121, much larger than the measured value of 100 \u00b5m.h\u22121.\n\nGlucose is not the only nutrient required for cellular growth; amino acids can be a limiting factor for auxotrophic strains such as the one employed in this study (S288C background). This is why we used an excess of amino acids (5\u00a0\u00d7\u00a0CSM) compared to classic SC medium for yeast cell cultures. Indeed, using standard amino acid concentrations in the media resulted in significantly lower terminal front velocities, even at high glucose concentrations (Figure 2\u2014figure supplement 1). This suggests that amino acid availability can limit cellular growth, which is especially visible in the presence of high glucose concentrations, where glucose is no longer limiting but amino acids are. As all experiments were performed under 5-fold higher amino acid concentrations than normal SC medium, other metabolites that are consumed are likely to form gradients within colony and might become rate-limiting for growth. Taken together, we conclude that the spatial variations in all metabolic components of the microenvironment need to be taken into account in order to fully understand microbial colony growth. With that in mind, building a mathematical model to account for the observed expansion of a spatially structured colony is barely achievable, and we will not address this question here. Rather, we opted to further characterize the development of glucose gradients as a specific and critical component of the emergence of the metabolic landscape of the colony.\n\n### Local expansion rate decreases with distance from the nutrient source\n\nOnce the dead-end chambers were filled with cells, we found that similar growth pattern emerged across parallel chambers, specific to each glucose concentration. The cells closer to the open end of the chambers continued to divide, pushing cells out that were washed away by the flow in the nutrient channel. Cells closer to the dead end (y\u00a0~\u00a0800 \u00b5m) did not move, grow nor divide. At standard glucose conditions (2% w/vol) and a high amino acid concentration (5\u00a0\u00d7\u00a0CSM), significant cell motion was not observed after y\u00a0~\u00a0400 \u00b5m, indicating that very limited glucose is available to the cells that are beyond this region. By tracking single cell trajectories, we measured the velocity field within the yeast monolayers over a range of glucose concentrations. We extracted\u00a0>100 single cell trajectories per concentration, resulting in thousands of velocity data points (see Materials\u00a0and\u00a0methods). As expected, increasing the glucose concentration in the nutrient channel (from 0.01% to 8% w/vol) led to higher local velocities deeper in the colony (Figure 2f, Figure 2\u2014figure supplement 2). Concomitantly, velocity also increased closer to the chamber opening when cells experienced a higher glucose concentration.\n\nIn summary, our setup captures the essence of structured colonies, with the emergence of a landscape of growth divided into a non-growing area and actively growing area. This spatial separation is the result of the formation of glucose (and other nutrient) gradients. These gradients emerge as a result of cellular metabolic activity, which in turn affects the cellular growth rate and physiology at the local scale.\n\n### Cellular metabolic activity creates gene expression landscapes\n\nThe emerging glucose (and other nutrient) gradients are expected to both trigger and be governed by differential gene expression landscapes. To this end, we studied the expression of seven key glucose transporters (HXT1-7) whose expressions are regulated by the extracellular glucose concentration. We employed yeast strains in which these endogenous glucose transporters were tagged with GFP (Materials\u00a0and\u00a0methods), and recorded the fluorescence signals at the global scale using a low-magnification objective (10\u00d7) and local cellular scale using a high-magnification objective (100\u00d7). Cells were loaded into the chambers as described above and observed after the establishment of a quasi-steady state (starting 10 hr after the chamber was filled with cells, Figure 3\u2014figure supplement 1). We observed the formation of different landscapes of gene expression for each of the seven transporters, each with marked territories of low and high expression (Figures 3 and 4; Materials\u00a0and\u00a0methods). In particular, HXT1 and HXT7 displayed inversely correlated landscapes of gene expression (e.g., Figure 3a and g for 2% w/vol glucose). Both patterns demonstrate the formation and maintenance of a glucose gradient that emerges from cellular metabolic activity. HXT1 is a low-affinity glucose transporter mainly expressed under high-glucose conditions, while HXT7 is a high-affinity glucose transporter expressed under low-glucose conditions only (Figure 3b and f) (Reifenberger et al., 1997; Diderich et al., 1999; Maier et al., 2002). Concomitantly, HXT1 was expressed at the highest levels in the cells close to the chamber opening (i.e., in the highest glucose concentration), while HXT7 expression peaked further away in the chamber, indicating a transition to a low-glucose region. We examined the cells at higher magnification (60\u00d7) to assess the localisation of HXT7 gene expression. As expected, in the cells expressing the highest levels of this gene, the fluorescence was localized to the cell membrane, indicating HTX7 played an active role in glucose transport in these cells. In contrast, deeper in the colony, we observed lower levels of HTX7 fluorescence due to the long lifetime of GFP-fused proteins and absence of dilution through cell division, though this fluorescence was localized in vacuoles, indicating the transporter had been targeted for degradation by the cells (Hovsepian et al., 2017) (Figure 3a). Assuming the observed peak of HXT7 fluorescence matches the peak fluorescence observed in batch culture at a glucose concentration of 0.016% w/vol. (Figure 3b,c, Figure 3\u2014figure supplement 2), we could locate the position in the yeast monolayer at which the glucose concentration reached 0.016% w/vol. This position was around Hf\u00a0~\u00a0500 \u00b5m from the front, in good agreement with the transition in cell motion (Figure 2, Hm\u00a0~400 \u00b5m).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig3-v2.jpg)\n\n**Figure 3.:** (a)\u00a0Expression profile of HXT7-GFP along the chamber (average fluorescence levels, n\u00a0=\u00a09; standard deviation shown as the envelope) for an external concentration of 2% w/vol glucose. Membrane localization of HXT7 was only observed in the cells surrounding the area of peak HXT7 expression, localized at\u00a0~500 \u00b5m at 2% w/vol. glucose. (b) FACS measurements of HXT7-GFP expression in batch culture (average of three replicates) showing a single intensity peak at C0\u00a0=\u00a00.016%. This peak value can be mapped back to the spatial landscape of 3a to infer the glucose concentration in the region of peak HXT7-GFP fluorescence. n\u00a0=\u00a03\u20136 per glucose concentration (c) On varying the glucose concentration in the nutrient channel, we observed a transition in peak HXT7-GFP fluorescence within the 2D colony. At a concentration of 4% w/vol and above, the peak was located close to the dead end of the chamber or not visible, indicating sufficient glucose was available throughout the chamber (color code normalized to maximal expression level). Data obtained from n\u00a0=\u00a08\u201317 replicates per glucose concentrations (see also Figure 3\u2014figure supplement 2). (d)\u00a0Compared with 3b, it is possible to roughly define areas of glucose presence in the monolayer for a range of glucose concentrations (n\u00a0=\u00a08\u201317, per glucose concentrations, error bars denote\u00a0\u00b1\u00a0one standard deviation). (e) Landscape of HXT1-GFP gene expression over a range of glucose concentrations (color code normalized to maximal expression); n\u00a0=\u00a08\u20139 per glucose concentrations (Figure 3\u2014figure supplement 3). (f) FACS measurements of HXT1-GFP over a range of glucose concentrations; n\u00a0=\u00a03 replicates. 3 g. Overlay of HXT1 (red) and HXT7 (green) gene expression landscapes at three external glucose concentrations, showing that the expression landscapes of these transporters were inversely correlated, in agreement with their different glucose-dependent expression patterns (compare 3b and 3 f).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a)\u00a0Expansion of a monolayer of cells expressing HXT7-GFP with a boundary glucose concentration of 2% w/vol and 5\u00a0\u00d7\u00a0CSM. One can observe the appearance of a peak of expression within sufficiently long monolayers. After some transient changes, the peak of expression reached steady-state position. (b) Same experiment but with HXT1-GFP (shown in red here and in the main article). The landscape of HXT1 evolved very slowly over time, probably as the result of slow changes in cellular physiology and aging of the monolayer. All landscape profiles shown in the main article were measured after 10 hr of growth as a fully developed monolayer. (c) HXT7-GFP landscape obtained for a 4% w/vol boundary glucose condition. The peak of expression is very close to the end of the chamber. (d) HXT1-GFP landscape obtained for a 4% w/vol boundary glucose condition. HXT1 landscape has a higher intensity and a deeper penetration than in b.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Gene expression of glucose transporter HXT7 in different glucose concentrations and high amino acid concentration (5x CSM). Data obtained from n\u00a0=\u00a08\u201317 replicates per glucose concentration. Shaded error bars denote\u00a0\u00b1\u00a0one standard deviation.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Gene expression of glucose transporter HXT1 in different glucose concentrations and high amino acid concentration (5x CSM). Data obtained from n\u00a0=\u00a08\u20139 replicates per glucose concentration. Shaded error bars denote\u00a0\u00b1\u00a0one standard deviation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig4-v2.jpg)\n\n**Figure 4.:** (a)\u00a0FACS measurements for HXT1-GFP to HXT7-GFP in batch culture over a range of glucose concentrations. The expression levels of each HXT show a specific dependence on glucose concentration (n\u00a0=\u00a03\u20136 replicates per glucose concentration). (b) Landscapes of gene expression for all HXTs-GFP at an external glucose concentration of 2% w/vol. HXTs are ordered by their relative glucose specificity: HXT1 is expressed under high-glucose conditions, while HXT5 is only expressed at very low-glucose conditions. Assuming a progressive spatial decay in the glucose concentration away from the chamber opening, all maps of gene expression are in perfect agreement with the intensity profiles observed in batch culture (n\u00a0=\u00a08\u201310 replicates per glucose concentration). (c-d) Method of glucose gradient reconstruction. The fluorescence landscape of HXT7 (resp. HXT1) shows a peak Fmax (resp. a minimum, Fmin) at a given location. The fluorescence intensity at the opening of the chamber, F0, corresponds to the external glucose concentration, C0. Using the FACS measurements of HXT7 (resp. HXT1) as a function of glucose concentration, one can define the concentration of glucose that matches the peak Fmax (respective to the minimum Fmin), and the fluorescence intensity that corresponds to C0. This allows us to linearly map all other fluorescence intensities for a given glucose concentration from the batch culture to the fluorescence intensities inside the colony, allowing the glucose concentration across the entire cellular monolayer to be reconstructed. Data comes from previously mentioned HXT1 and HXT7 microfluidics and flow cytometry measurements. (e-f) Reconstruction of glucose concentration obtained from HXT7 (e, f) and HXT1 (f) fluorescence data and various external glucose concentrations.\n\n### Gene expression landscapes depend on the glucose source concentration\n\nIncreasing the glucose concentration in the nutrient channel changed the gene expression landscape of all seven glucose transporters (Figures 3 and 4). In particular, at 1% w/vol glucose, HXT1 was only expressed at low levels at the growing front of the colony (y\u00a0<\u00a060 \u00b5m). In contrast, at the highest glucose concentration (8% w/vol; Figure 3e, Figure 3\u2014figure supplement 3), HXT1 was expressed at high levels throughout the whole colony, demonstrating glucose was available throughout the chamber. As HXT1 is mainly expressed under high-glucose conditions (>1% w/vol glucose) in batch culture (Diderich et al., 1999), this observation indicated the glucose penetration distance (within the chamber) increased with the external glucose concentration. This is in agreement with the increase in local velocity with the external glucose concentration in Figure 2, with the size of the growing area also increasing with the external glucose concentration.\n\nIn contrast, HXT7 exhibited a peak-like expression pattern, and was repressed under both high-glucose conditions and when no glucose was present. At low-glucose concentrations (0.1% w/vol), a peak in HXT7 expression was observed at the very beginning of the colony (y\u00a0~\u00a020 \u00b5m), indicating glucose was quickly absorbed by the cells closest to the chamber opening, thus these were the only cells with access to sufficient carbon resources to grow and divide. The peak of HXT7 expression moved deeper into the colony as the glucose concentration increased and disappeared completely at 8% w/vol glucose, again indicating sufficient glucose could diffuse to the end of the chamber under high-glucose conditions (Figures 3 and 4).\n\n### Reconstructing glucose concentration landscapes using glucose transporter gene expression levels\n\nWe assessed the expression profiles of HXT1-7 in batch culture as a function of glucose concentration (see Materials\u00a0and\u00a0methods) to obtain a qualitative idea of the glucose concentrations within the microfluidic device. The data for HXT7 was particularly revealing: its rather sharp, well-defined expression peak at 0.016% w/vol allowed to define the distance in the microfluidic device at which the glucose concentration is close to that value (Figure 3a,c). This concentration boundary separates the yeast monolayer into two regions with different properties, that\u00a0is actively dividing and growth arrest. The position of this boundary moved deeper into the colony as the external glucose concentration increased (Figure 3d).\n\nWe extended this idea further and used the complete HXT7 expression profile to infer the glucose concentrations at all positions within the chambers. Assuming that the local level of HXT7 expression is only set by the local glucose concentration, we can use batch culture measurements of HXT7 expression (based on flow cytometry) to determine the glucose concentration at a given chamber position (Figure 4c and d). However, this only allows us to reconstruct the glucose concentration gradient up to 0.016% w/vol., that\u00a0is in the domain where cells are actively dividing. The idea is simply to linearly map the two sets of measurements (in batch culture and in the microfluidic device) based on the fluorescence levels that correspond to the maxima Fmax and F\u2019max and HXT7-GFP fluorescence levels at the chamber entry F0 and F\u20190. Using the data for HXT7 in Figure 3, we were able to reconstruct the glucose gradient for different initial glucose concentrations (Figure 4e). When applied to HXT1, the same inference led to very similar results (Figure 4f). In both cases, glucose concentrations decay very quickly moving away from the chamber opening and then exhibit a relatively long tail moving deeper into the colony.\n\n### Gene expression landscapes of other genes and transcription factor activity confirm the inferred glucose gradients\n\nThe fact the seven glucose transporters exhibited varied, robust spatial expression patterns under identical conditions (e.g., Figure 4a), together with the observed growth rate landscapes (Figure 2), suggests cellular metabolic state varies significantly across the longitudinal axis of the yeast monolayers. This variation was further assessed by mapping the expression and localisation of additional key genes involved in glucose metabolism.\n\nMIG1 is a key transcription factor involved in glucose repression that localizes to the nucleus in the presence of glucose, to repress genes that participate in parallel carbon metabolic pathways (e.g., galactose) (Conrad et al., 2014; Broach, 2012). Observing the cells at high magnification, we quantified the distance after which MIG1 fluorescence was not present in the nucleus of the cells (Figure 5b). This distance, around 400 \u00b5m at C0\u00a0=\u00a02% w/vol glucose, was in excellent agreement with the data obtained by HXT7 profiling. Interestingly, the spatial transition from nuclear MIG1 to cytoplasmic MIG1 localisation was very sharp and occurred over just a few cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig5-v2.jpg)\n\n**Figure 5.:** (a)\u00a0Landscape of HXT5 expression. HXT5 is expressed under very low and no glucose conditions and appears to be a good marker of growth arrest. At C0\u00a0=\u00a02% w/vol, HXT5 expression is in good agreement with the observed absence of cellular division (see Figure 2, Figure 5\u2014figure supplement 1). (b) Landscape of MIG1 activity. MIG1 fluorescence was located in the nucleus in the presence of glucose, with a sharp transition in nuclear localization observed (middle picture, at 2% w/vol glucose in the nutrient channel), confirming the existence of a glucose gradient (n\u00a0=\u00a03 replicates). Total number of cells and cells with nuclear localization of fluorescence were annotated manually and binned into 25 \u00b5m bins (see also Figure 5\u2014figure supplement 2). (c) HXK1 and HXK2 are hexokinases involved in glucose metabolism. Their landscape of expression exhibited peaks that indicate a transition from high to very low glucose levels (n\u00a0=\u00a08\u20139 replicates per glucose concentration). (d) FACS measurements of HXK1 and HXK2 expression over a range of glucose concentrations (n\u00a0=\u00a03\u20136 replicates per glucose concentration).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Gene expression of glucose transporter HXT5 in different glucose concentrations and high amino acid concentration (5x CSM). Data obtained from n\u00a0=\u00a09\u201317 replicates per glucose concentration. Shaded error bars denote\u00a0\u00b1\u00a0one standard deviation.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Gene expression of transcription factor MIG1 in different glucose concentrations and high amino acid concentration (5x CSM). Data obtained from n\u00a0=\u00a03 replicates per glucose concentration. Shaded error bars denote\u00a0\u00b1\u00a0one standard deviation.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (a) We also measured the glucose concentrations of the samples that were assessed by FACS. In all experiments, the glucose concentration was within 90\u2013100% of the initial glucose concentration, indicating the cells did not use large amounts of the glucose supplied. This sets a typical error of about 10% on the inferences of glucose concentrations and gradient reconstruction in our article. Data comes from three replicates (n\u00a0=\u00a03). (b) Level of expression of HXK1 (red), HXK2 (blue) and GLK1 (green) reported in the main article represented in log-scale. (c) Level of expression of PDC1 reported in the main article represented in log-scale. (d) Level of expression of SDH2 reported in the main article represented in log-scale. Data in S11b, c, d comes from 3 to 6 replicates, depending on the glucose concentration (n\u00a0=\u00a03\u20136).\n\nIn agreement with the batch culture observations, we found HXT5 was only expressed in regions with very low or no glucose concentrations where the cells did not seem to divide over several hours (Figure 5a). Therefore, HXT5 appears to be an excellent marker of growth arrest in this context (Verwaal et al., 2002).\n\nThe expression landscapes of two hexokinases involved in glucose metabolism, HXK1 and HXK2 (Figure 5c) that are expressed when cells are grown on non-glucose carbon sources, were also consistent with the batch measurements (Figure 5d, Figure 5\u2014figure supplement 3) and further validated the existence of a glucose gradient. For each profile, we extracted the position of maximal expression and inferred the glucose concentration at this position from the FACS measurements of batch cultures. The batch measurements indicated maximal HXK1 and HXK2 expression were observed at a glucose concentration of about 0.016% w/vol. As expected, neither enzyme was expressed at very high glucose concentrations. The HXK1 and HXK2 expression maxima were similar at the two other glucose concentrations studied, around 300 \u00b5m at C0\u00a0=\u00a01% and 500 \u00b5m at 2% w/vol. Again, these data are in very good agreement with the positions of HXT7 peak expression at the same glucose concentrations.\n\nFinally, we examined the expression of PDC1 and SDH2, which are overexpressed in fermenting and respiring cells, respectively (Otterstedt et al., 2004; Bonander et al., 2008; Ohlmeier et al., 2004). Their expression landscapes were inversely correlated (Figure 6a, Figure 6\u2014figure supplement 1), indicating a transition from fermentative metabolic activity at the nutrient front of the colony to respiratory metabolic activity towards the dead end of the chamber where glucose is scarce. These expression maps are in good accordance with our previous results (Figures 2, 3 and 5) and the levels of PDC1 and SDH2 expression in batch culture (Figure 6b and c).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig6-v2.jpg)\n\n**Figure 6.:** (a)\u00a0Overlay of the landscapes of gene expression of PDC1 (blue) and SHD2 (pink). PDC1 is known to be expressed when yeast cells ferment, SDH2 is mainly expressed in respiring cells (see also Figure 6\u2014figure supplement 1). (b) FACS measurements of PDC1 expression over a range of glucose concentrations in batch culture (n\u00a0=\u00a03). (c) FACS measurements of SDH2 expression over a range of glucose concentrations in batch culture. The inverse correlation between PDC1 and SDH2 expression observed in batch culture is in good agreement with the inversely correlated spatial expression patterns within yeast cell monolayers (n\u00a0=\u00a03).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Gene expression landscape of pyruvate decarboxylase PDC1 (blue) and succinate dehydrogenase SDH2 (pink) in different glucose concentrations and high amino acid concentration (5x CSM). PDC1 is overexpressed during fermentations and SDH2 is overexpressed during respiration. Position 0 \u00b5m is the position of the glucose source. In colonies, two subpopulations differentiate. One that has fermentative metabolism where glucose is abundant and the other that has respiratory metabolism where glucose is scarce. Depending on the starting glucose concentrations, one or the other dominates. Data obtained from n\u00a0=\u00a06\u20139 replicates per glucose concentration. Shaded error bars denote\u00a0\u00b1\u00a0one standard deviation.\n\n### Multiple gene expression landscapes are spatially correlated\n\nWe decided to compare the landscapes of gene expression for the entire set of reporter genes by aligning the different landscapes across varied nutrient conditions (Figure 7a). Strikingly, all landscapes showed a high level of spatial correlation. Two major landscapes emerged: peaking (e.g., HXT7) and switching (e.g., HXT1 or MIG1). We defined and extracted the typical lengths of the peaking and switching landscapes (Figure 7b) and plotted them as function of the external glucose concentration (Figure 7c). The typical lengths of all of these landscapes for different reporter genes were remarkably close, despite the fact that we looked at different cellular components: a transcription factor (MIG1), glucose transporters (HXTs), metabolic enzymes (HXKs) and metabolic state reporters (SDH2, PDC1). Notably, we gained a global view of gene expression landscapes and their interrelationships along a monolayer colony. All data showed the colonies were structured into two regions with very different properties (Figure 7d): an actively growing region, where cells divide abundantly and ferment glucose, and a quiescent area, where cells do not divide much and have switched to respiratory metabolism to compensate for the very low glucose availability. While it is not surprising to see the expression levels of metabolic genes vary with the glucose concentration, our approach demonstrates genetic programs not only allow individual cells to adapt to changes in the nutrient environment, but also enable multicellular assemblies to spatially self-organize through long-range metabolic interactions governed by physical rules of diffusion and uptake. This sheds new light on the coordinated actions of these genes in individual cells in a biologically relevant multicellular context that has impact on ecology, evolution, development and emergence of multicellularity.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/47951/elife-47951-fig7-v2.jpg)\n\n**Figure 7.:** (a)\u00a0The different landscapes of gene expression presented in this study are aligned, regrouped and displayed over a range of glucose concentrations. This simple view sheds light on the macroscopic spatial correlations between these different landscapes, which are both setting and traces of the establishment of glucose gradients. (b) For each gene expression landscape, we identified the fluorescence peak (HXT7, HXK1, HXK2) or the position of the transition between low and high expression (HXT1, HXT5, SDH2, PDC1) or activity of the transcription factor (MIG1). (c) Landscapes of gene expression delimit two regions in which cells are physiologically different. Phase I indicates active growth by fermentation in the presence of glucose; Phase II indicates growth arrest or very limited growth via respiratory metabolism at zero or close to zero glucose concentrations. The transition between the two phases typically takes place relatively sharply, over a hundred micrometers or\u00a0~20 cells.\n\nOverall, we studied how cells within a monolayer colony collectively shape their microenvironment through long-range metabolic interactions. This is a complex process, in which individual cells adapt locally, and shape a spatial landscape of gene expression as a global phenotype. As a whole, the structure of an assembly of cells and the microenvironment landscapes emerge as the result of local cellular metabolic activity of individual cells.\n\n## Discussion\n\nHere, we took an alternative point of view compared to traditional systems and single-cell biology. Rather than studying single-cell metabolic properties in a well-mixed, homogeneous environment, we designed a microfluidic chip to force yeast cells to grow and shape their microenvironment, solely by fixing the properties of the microenvironment at the boundary of the monolayer. This approach allowed us to measure simultaneously properties at both the single-cell scale and structured population scale and holds potential for establishing a quantitative link between these scales.\n\nIn standard batch culture, as cells exhaust the media, their adaptation time, limited by sensing, transcription and translation, may lag behind the decrease of glucose in the media. In contrast, in our 2D colony device, once steady-state gradient is settled, cells\u2019 residence time within a given range of glucose that corresponds to stable HXT expression is significantly longer, assuring that even though cells are continuously pushed away, they spend sufficient time within a given concentration to equilibrate their response to the gradient and therefore faithfully report the glucose concentration in their environment. As example, at 1% glucose the mean velocity at Hxt7 expression peak, spanning over\u00a0>200 \u00b5m (Figure 3a, varies between 5\u201315 \u00b5m/hour (Figure 2f), suggesting cells\u2019 residence time of\u00a0>10 hr, pointing to the advantage of working in this setup.\n\nSpecifically, we showed that cells self-generate nutrient landscapes that in turn influence cellular metabolism and gene expression profiles. This behavior, based on nutrient uptake adaptation, is generic and feeds back on the behavior of other cells through what we call non-specific long-range metabolic interactions. Indeed, the microenvironment sensed by cells a few hundred micrometres inside a colony is very different from the microenvironment experienced by the cells at periphery. The resulting patterns may emerge from the individual adaptive properties of the cells without the need to evoke specific higher-level community properties as cell-cell communication. Notably, gradients emerge over relatively short distances, and this process may possibly affect studies of cellular populations within microfluidics settings. More importantly, quantitative description of gene expression landscapes is critical if one wants to understand the establishment and behavior of cellular populations, whether these are as simple as yeast colonies or more complex, such as biofilms and complex microbial ecosystems in which several types of cells cohabit and may specifically communicate and interact. Indeed, in addition to the described long-range metabolic interactions, many other environmental and genetic determinants such as intercellular communication, cell surface properties, cell-cell adhesion strength and secretion of extracellular matrix components have been shown to participate in the emergence of the complex morphology (Nadell et al., 2016; Granek and Magwene, 2010; Flemming et al., 2016) and internal structure of microbial colonies in such complex situations. The nature of many of these interactions could also be studied using similar microfluidic devices to identify the relative contribution and relationship of environmental and genetic determinants to the metabolically generated microenvironment.\n\nWe have made notable advances in the study of emerging properties of yeast colony growth, microenvironment formation and gene expression compared to previously published studies (C\u00e1p et al., 2012; Mar\u0161\u00edkov\u00e1 et al., 2017; Palkov\u00e1 et al., 2014). These studies have shown fascinating differentiation and diversity within yeast colonies grown on agar but their relevance to study the dynamical emergence of complexity in microbial colonies is limited by their methodology (e.g., growth on a single specific medium with no dynamic control of environmental changes, two-photon microscopy, unsuitable for live time-lapse microscopy, obligation to section colonies etc.) which does not allow detailed spatiotemporal analysis of cellular growth, microenvironment and gene expression landscapes at a relevant single-cell scale. Our approach is designed to access the dynamics of large microbial colonies, and while we did not report it here, it is straightforward with microfluidics to dynamically change in frequency and composition the external environment, and as such to analyse how colonies adapt their internal organization to such stresses.\n\nOur results are in most part in line with the knowledge of glucose metabolism obtained in batch culture. Yet, our methodology sheds quantitative description of the spatial expression of genes involved in the glucose metabolism and its correlation with the cell local growth rates. Our results show that even in the simple context studied here, reconstructing the microenvironment spatial structure from single-cell measurement is not trivial. A proper model should take into account how the growth rate and specific absorption rate vary with the glucose concentration and the microenvironment. Modeling the entire complexity of the microenvironment is hardly possible, even with today\u2019s knowledge. Thus, we decided to take a different approach and use key genes involved in glucose metabolism to infer the glucose concentration gradient. We showed that different reporter genes consistently reported the same glucose gradient. We envision that the data extracted from relevant fluorescent reporters could be fed into an agent-based or mean-field models that take cell-cell interactions, mechanics and spatial diffusion of metabolites into account to fill the gap between data generated from single cells to data that is relevant to evolution and ecology, that\u00a0is at the colony scale. We anticipate that linking local properties to macroscopic, global behavior will help to understand the architecture of microbial communities and how evolution shapes the development of these architectures through long-range metabolic interactions and possible inherent biological programs that coordinate it. Of note, in another rare attempt to study emergence of population level phenomena in yeast S. cerevisiae Campbell et al. (2015) looked at the synthetic \u2018self-establishing communities\u2019 that were able to cooperatively exchange metabolites. They inoculated on agar plate auxotrophic S. cerevisiae strain that had different auxotrophic markers on plasmids. As cells were dividing, some of the plasmids that complemented yeast auxotrophy and therefore rescued their growth were lost, resulting in a colony which is composed of yeast that are auxotrophic for a certain amino acid. However, they were able to grow because they used amino acids that were released in the environment by other yeast that were producing it, effectively generating a very heterogeneous colony that sustained growth through metabolite exchange. Interestingly, previous efforts to co-culture complementary auxotrophs had limited effectiveness in supporting co-growth in liquid cultures, indicating the importance of spatial structure in facilitating cooperation and makes our system very attractive for study of such phenomena (Wintermute and Silver, 2010).\n\nFurthermore, while the spatial microenvironment is not fully characterized, we have shown that the emergence of gradients, and simultaneously gene expression landscapes, are robust and reproducible features of the colony. Moreover, the landscapes can be compared to extract correlation patterns and infer how gene regulatory networks act in synchronicity to establish the microenvironment within the colony. This approach may provide a relatively simple, yet effective method of screening for \u2018organismic\u2019 properties that have been shaped by evolution and are only relevant in a multicellular context.\n\nOur future efforts to extend the application of this setup will be dedicated to the study of how the microenvironment dynamically changes when external conditions are altered, an uncharted territory at the scale of a multicellular assembly that is central to the understanding of microbial ecosystem resistance to stress, environmental fluctuations and adaptation. We anticipate that similar approaches could be used to study aging, cooperation and competition, cell memory or evolutionary dynamics, as well as quantitative characterization of (synthetic) ecological systems and mixtures of cells relevant to ecology and chemical biology.\n\n## Materials and methods\n\n### Yeast strains\n\nAll experiments were performed using haploid S. cerevisiae strains derived from the S288C background - BY4741: MATa his3\u03941 leu2\u03940 met15\u03940 ura3\u03940. See Supplementary file 1 for a detailed list of the yeast strains used in this study.\n\n### Microscopy\n\nWe used an inverted fluorescence microscope (IX81, Olympus) equipped with an EMCCD camera (Evolve 512, Photometrics) and X-Cite exacte fluorescence light source (Lumen Dynamics). Optical filters from Chroma Technology Corporation ET-EGFP (U-N49002; Ex 470/40 nm Di495 Em 525/50 nm) and ET-DsRed (U-N49005; Ex 545/30 nm Di570 Em620/60 nm) were used to observe GFP and RFP fluorescence. Cells were observed using Olympus 10\u00d7 (Plan 10x/0.25 NA), 60\u00d7 (PlanApo N 60x/1.42 NA Oil) and 100\u00d7 (UPlanFL N 100x/1.3 NA Oil) objectives. Open-source \u00b5Manager (Edelstein et al., 2014) microscopy software was used to control all of these components and setup multi-dimensional acquisition. The temperature inside the microscope incubation chamber that contained the media and cells was maintained at 30\u00b0C (Life Imaging Services). Fluorescence intensity was set to 10% of maximum output, fluorescence exposure was set to 1000 ms and camera gain was set at maximum. The time interval between each acquisition cycle was 6 min.\n\n### Microfluidics and cell loading\n\nMicrofluidic devices were constructed using soft lithography techniques. Photomasks were drawn using L-Edit software (Tanner) and printed on a high-resolution glass substrate (Delta Mask). A master wafer was created using SU-8 2000 (MicroChem) epoxy-based photoresist that was spin-coated to the appropriate thickness and exposed to UV light using an appropriate photomask to create the desired pattern. Multi-layered patterns were aligned and exposed to UV light using a MJB4 manual mask aligner (SUSS MicroTec) and the dimensions of the master wafer were checked using a Dektak 150 surface profiler (Veeco). The master wafer was treated with 95% (3-mercaptopropyl)-trimethoxysilane (Sigma) for 1 hr in the vapor phase. Microfluidic chips were created by casting a degassed 10:1 mix of polydimethylsiloxane (PDMS) and curing agent (Sylgard 184 kit; Dow Corning) on the master wafer, followed by at least 2 hr curing at 65\u00b0C. Each chip was gently cut and peeled off the master wafer; the entry/exit ports were punched out. The chip and a glass coverslip (24 \u00d7 50 mm #1; Menzel-Gl\u00e4ser) were treated with O2 plasma for 1 min in a plasma cleaner (Harrick Plasma), bonded together and incubated at 65\u00b0C for 10 min. Before loading cells, the chips were coated with 1% Pluronic F-127 (Sigma) for 30 min. Cells were precultured overnight in 5 mL of synthetic complete (SC) medium containing 2% w/vol glucose in a shaking incubator at 30\u00b0C, diluted 50-fold into 50 mL of SC\u00a0+2% w/vol glucose, cultured for 5\u20136 hr in a shaking incubator at 30\u00b0C to an OD600 of 0.2\u20130.4, collected by centrifugation, and loaded into the microfluidic system with a pipette. The microfluidic system was centrifuged for 2 min at 1000 rpm using 3D-printed adaptors (Laurell WS-650 spin coater) to force the cells into the dead-end cell chambers. Liquid media was flowed rapidly through the flow channel to remove excess cells and the flow rate was set to 5 \u00b5L/min. A pressure-based microfluidic flow control system (MFCS; Fluigent) coupled with a flow rate platform (Fluigent) and a flow rate control module (Fluigent) that measured the flow rate and kept it constant by adjusting the pressure through a feedback loop was used to push liquid media through the flow channel. The output was kept at a constant pressure of 100 mbar above atmospheric pressure to minimize formation of air bubbles inside the flow channel.\n\n### Flow cytometry\n\nFlow cytometry experiments were performed on a Gallios Flow Cytometer (Beckman Coulter) using a 488 nm excitation laser and 530/30 nm FL1 emission filter to detect GFP fluorescence. Data analysis was performed using Kaluza Flow Cytometry Analysis Software (Beckman Coulter). Approximately 104 cells were inoculated in 10 mL of SC medium containing various glucose concentrations (log2 dilutions from 8% to 0.0078125%, and 0% w/vol glucose) and cultured in a shaking incubator at 30\u00b0C to an OD600 of\u00a0~0.02\u20130.2 depending on the starting glucose concentration. Cells were then diluted 10-fold into 10 mL of fresh SC media containing the same starting glucose concentration and grown for 4\u20135 hr in a shaking incubator at 30\u00b0C, centrifuged at 4000 rpm for 10 min, re-suspended in 300 \u00b5L of PBS pH 7.4 buffer (Gibco) and fluorescence was measured using the flow cytometer. The supernatant of each sample was collected, and the glucose concentration was measured using the Glucose (HK) Assay Kit (Sigma) to confirm that the glucose concentration remained at similar levels during the growth phase (Figure 5\u2014figure supplement 3). This is a modification of a previously published protocol (Youk and van Oudenaarden, 2009) for measuring expression of glucose transporters in different glucose concentrations modified to minimize glucose depletion in batch culture prior to expression measurements by working with sufficiently diluted batch populations. We thus expect that these measures represent expression levels that correspond to the starting glucose concentration, and would therefore be close to the measure within the 2D colonies (see discussion).\n\n### Image analysis\n\nImage analysis was performed using open-source ImageJ 1.51 p software (Schneider et al., 2012). To obtain front velocity, we applied a threshold (Otsu) to detect the bottom frontier over time after flattening the background using a FFT band-pass filter. The image signal is decomposed by FFT into a spectrum of its constituent frequencies. Because some operations can be more easily performed on the spectrum than on the original image, the FFT bandpass algorithm filters out large structures (shading correction) and small structures (smoothing) of the specified size by gaussian filtering in Fourier space. The default parameters are set at 40 pixels for large structure and five pixels for small ones. To compute the local speed of the cells inside the cell assembly, we used the plugin TrackMate (Tinevez et al., 2017) v3.5.1 to track cell trajectories. TrackMate was set to DoG detector with estimated blob diameter of 4 \u00b5m and threshold of 4, while tacking was set to linear motion LAP.\n",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "60cd0b5e-a919-4326-8a01-9e0190e636c6",
+      "submission_id": "ab5d3fc6-edc8-4097-9d16-9daf2975923c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kevin J Verstrepen, VIB-KU Leuven Center for Microbiology Belgium\n\nReviewers:\n- Hans Steenackers\n\n## Review text\n\nDOI: [10.7554/eLife.47951.026](https://doi.org/10.7554/eLife.47951.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Emergence of metabolic landscapes in yeast monolayer colonies\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nWe appreciate how your study uses a microfluidics setup to study the behavior of S. cerevisiae in a glucose gradient. The combination of this setup with GFP tagged version of hexose transporters, a glucose sensitive transcription factor (MIG1), and other reporters of metabolic state (PDC1, SHD2) allows studying spatial patterning as a function of glucose availability. The results show that patterns of expression of hexose transporters with different affinities are spatially arranged in a manner consist with a gradient of glucose availability with highest amounts of glucose available near the \"source\" (i.e. periphery of the artificial colony), and lowest levels near the \"sink\" (i.e. center of the artificial colony). Perhaps more interestingly, interpretation of the data suggests a relatively sharp transition in the colony between zones of growth and slow/no-growth, which they ascribe to zones of fermentative and aerobic metabolism.\n\nOverall, the reviewers agree that this is a particularly elegant study. As you can see in the individual reports (below), reviewer 1 is significantly more positive than reviewers 2 and 3. However, after discussing the individual reviews, all reviewers question the amount of novel biological insight that is presented in your paper.\n\nAs such, I am afraid that we are not able to offer publication in eLife (unless of course you believe that we missed the major message and its biological relevance). On the other hand, everyone also agrees that the experiments and results are beautiful, and that the setup may be usable for other studies. As such, we wonder whether it would be conceivable to re-write your paper as a \"Tools and resources\" paper? If so, you would need to emphasize the design and operation of the system, detail its use for a broad range of studies and compare it to other, existing systems such as the ones describes by Hornung et al., 2018, and Wilmoth et al., 2018. The Hornung et al. paper in particular seems to use a rather similar setup\u2026\n\nReviewer #1:\n\nThe authors applied a microfluidic device to study how long-range metabolic interactions influence the internal structure of simple yeast cell monolayers asymmetrically exposed to an external nutrient source. They showed spatial variation in nutrient levels, cellular growth, and expression of several metabolic genes to self-emerge. Notably, the gene expression landscapes exhibited a high degree of spatial correlation over different levels of external nutrient level and were indicative of a clear spatial transition between fermentative and respirative growth.\n\nI really enjoyed reading this work. Although the experimental set-up is simple and the conclusions intuitive and straightforward, the depth of the analyses and the clarity of the interpretations are impressive. The authors combined growth measurements, single cell tracking, fluorescence based expression analysis with FACS and microscopy and advanced data representation to study spatial relations between nutrients, growth and metabolism with an unprecedented level of detail. This work will therefore undoubtedly provide inspiration to many other researchers interested in spatial heterogeneity of microbial communities. I therefore recommend publication in eLife.\n\nReviewer #2:\n\nMarinkovic et al. address single-cell response to glucose gradients within structured communities. They present an intriguing method to look at metabolic landscapes in a microbial community. However, I do believe the novelty of the results need to be clarified significantly better, and the conclusions drawn must be discussed more critically. Alternatively, the work may be more suitable for a methods focused publication, as using the gene expression of the transporters to gauge the extracellular concentration of glucose within a colony is an interesting tool.\n\nMajor concerns:\n\nA) The glucose gradients emerge in the end artificially, due to the design of the microfluidic chamber and due to the fact the yeast's consume glucose, and not due to community action. The method of the author's pictures of how the cells respond to different glucose availability as a function of glucose concentration in different areas of the closed channels. But the effects are the same if one cultivates the cells in batch cultures, and tunes glucose availability in this way. One does hence not learn anything about yeast communities, only, that yeast in batch culture and in a microfluidic chamber respond similarly to glucose depletion. Hence, is there anything new in the study, other than nicely illustrating the well-established fact that yeast activates different glucose transporter at different glucose concentration?\n\nB) Batch cultures are used to tune gene expression sensors. But, in batch culture, glucose is constantly and rapidly depleted, while gene expression, needs some time to adjust. At any given time, in batch culture, the glucose concentration in the media, and the gene expression programme, are hence asynchronous (i.e. gene expression lags behind the glucose concentration). Chemostat experiments would be needed, to have a glucose concentration that corresponds to the gene expression programme at a particular point in time.\n\nMethod:\n\nFigure 1: I have not found the mention of the exact number of dead-end chambers within one microfluidic chip (I'm guessing 16 from the figures?). However, looking at the n in different experiments (e.g. Figure 1, n=12, n>5 and n=9) I am wondering in how many separate experiments these were done, and how much of the collected data was discarded and for which reasons?\n\nWas it excluded that nutrient concentrations from the previous chamber affected the later ones? Especially in the stages when the chambers were already filling up/cells were being carried away?\n\nResults and Conclusion:\n\nSubsection \u201cCellular metabolic activity creates gene expression landscapes\u201d: \"Both patterns demonstrate the formation and maintenance of a glucose gradient that emerges from cellular metabolic activity.\" The pattern of the gene expression demonstrates that the cells adapt to the glucose gradient that emerges through supply of fresh media from only one side. \"Formation and maintenance by cellular metabolic activity\" in the sense that, yes, the cells close to the opening do import the glucose they require seems a weak point to make. In other words, there is evidence for the contrary \u2013 there seems no different action of cells in the community as in the batch culture, when it comes to the expression of the transporters.\n\nDiscussion paragraph four: What is the dependence/independence of the different gene expression looked at here? Can we talk about synchronicity between networks if the studied genes are known to dependent on the same external factor?\n\nFigure 6: Landscapes of gene expression is not shown at all glucose concentrations for all genes, why?\n\nReviewer #3:\n\nThis manuscript details the results of a study using a microfluidic system to study growth and gene regulation in monolayers of yeast cells. This system is presented as a tractable model for studying pattern formation in microbial colonies, via spatial and temporal measurement of cell division rates and measurement of gene expression via fluorescently tagged reporters.\n\nThe authors use this experimental setup, in combination with GFP tagged version of hexose transporters, a glucose sensitive transcription factor (MIG1), and other reporters of metabolic state (PDC1, SHD2) to study spatial patterning as a function of glucose availability.\n\nUnsurprisingly, they find that patterns of expression of hexose transporters with different affinities are spatially arranged in a manner consist with a gradient of glucose availability with highest amounts of glucose available near the \"source\" (i.e. periphery of the artificial colony), and lowest levels near the \"sink\" (i.e. center of the artificial colony). Perhaps more interestingly, their interpretation of their data suggest a relatively sharp transition in the colony between zones of growth and slow/no-growth, which they ascribe to zones of fermentive and aerobic metabolism.\n\nWhile I appreciate the elegance of the microfluidic colony model that is presented, the key findings are rather modest -- i.e. there are gradients of nutrient availability in microbial colonies. This doesn't really have the impact I expect from eLife papers.\n\nBelow I detail a number of concerns/comments about the study, the analyses, and whether the authors have adequate related their work to the larger literature in this area.\n\nDetailed comments:\n\n1) Several other recent papers (Hornung et al., 2018,; Wilmoth et al., 2018) have used microfluidic setups to study microbial colonies. The Hornung et al. paper is the most similar to the current experimental design.\n\n2) If goal was to measure the rate of glucose uptake and availability it seems like there may be other more direct approaches than inferring this from hexose transporter expression, such as the use of 2-NBDG, a non-metabolizable, fluorescent glucose analog (Roy et al. 2015, doi: 10.1371/journal.pone.0121985).\n\n3) The following paper, while not at the fine spatial scale provided by the microfluidics, presents a more complete and compelling view of metabolic differentiation in yeast colonies: Mar\u0161\u00edkov\u00e1 et al., 2017.\n\n4) The spatial analyses focus primarily on peaks of maximum expression, but the data is potentially much richer and more interesting if the authors consider not only the global maxima but more complex spatial patterns. For example, in Figure 4B MIG1 nuclear localization appears to be multimodal. What is going on here?\n\n5) There is very little effort to contextualize this work in the larger body of studies of yeast colony structure, physiology, or regulation of glucose responsive TFs. Illustrative of this, there are only three citations total in the entire discussion. There is only a single reference to the regulation of hexose transporters in the entire manuscript. Specific examples:\n\n- Subsection \u201cCellular metabolic activity creates gene expression landscapes\u201d: \" HXT1 is a low-affinity glucose transporter mainly expressed under high-glucose conditions, while HXT7 is a high-affinity glucose transporter expressed under low-glucose conditions only\" Citations?\n\n- Subsection \u201cGene expression landscapes depend on the glucose source concentration\u201d: \"As HXT1 is mainly expressed under high-glucose conditions (> 1% w/vol glucose) in batch culture\u2026\" Citation?\n\n- Subsection \u201cGene expression landscapes of other genes and transcription factor activity confirm the inferred glucose gradients\u201d: \"MIG1 is a key transcription factor involved in glucose repression that localizes to the nucleus in the presence of glucose, to repress genes that participate in parallel carbon metabolic pathways (e.g., galactose).\" Citation?\n\n- and in the same subsection: \"\u2026we examined the expression of PDC1 and SDH2, which are overexpressed in fermenting and respiring cells, respectively\" Citation?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"A microfluidic device for inferring metabolic landscapes in yeast monolayer colonies\" for further consideration at eLife. Your revised article has been favorably evaluated by Naama Barkai (Senior Editor), a Reviewing Editor, and three reviewers.\n\nWe really appreciate the efforts of re-writing this manuscript as a \"resource\" paper. We feel that the paper has been much improved, but there are some remaining issues that need to be addressed through textual changes before acceptance, as outlined below:\n\n1) We ask that the authors make it clear to the reader that what they call a \"community action\" does not imply that cells are responding differently in the community than they would as single cells in planktonic growth. The observed effects (gradients and response to these gradients) are merely the consequence of a high concentration of more or less static cells. So, perhaps calling it \"population effect\" would be more appropriate?\n\n2) We would appreciate if you could insert a succinct discussion of the difference between a batch culture and this steady-state (where in principle, the cells could be better adapted as they are not always \"running behind\" in their response to a variable environment, as they would be in batch). (see reviewer 2's comments below for more details)\n\n3) We again ask to include more references and to not overstate the advantage of the presented device (see reviewer 3's comment below).\n\n4) Please provide more details about the reproducibility/variability and statistics of the results and analyses.\n\nThe above points summarize what we believe to be essential changes, and we only ask for textual changes instead of further experiments. We are including the full reviews for your reference below.\n\nReviewer #1:\n\nIn this revised manuscript, the authors \u2013 as requested- presented their work as a tool that can be generally applied to quantitatively and dynamically study growth landscapes, metabolic landscapes and gene expression landscapes within extended monolayers of cells. They extensively elaborated on the similarities and differences of their approach compared to other studies that applied agar colony models or microfluidics devices to study spatiotemporal patterns in colonies, and clearly pinpointed advantages of their approach. A figure was added to clarify the experimental set-up. Also my other (minor) comments were addressed to a sufficient extent. I therefore recommend publication.\n\nReviewer #2:\n\nAlthough the authors have put efforts in their revision, they have not addressed my two main points. I'm hence wondering if I have not expressed myself clearly enough, so it's perhaps my own fault \u2013 or it also could be a different use of language between disciplines, so that the authors did simply not understand my questions. Long story short, I don't want to sound negative as it may be my own use of language, but the revision has not addressed the two simple concerns I had. Perhaps the other reviewers could comment if they agree or disagree with me, I'm happy if my comments are ignored, in case my concerns are not shared.\n\nI think both points still are relevant, though. The first one could be fixed simply in writing. 'Community action' implies to me, and I guess to many others in the field, that there are interactions between the cells that emerge in the community \u2013 implying that cells would behave differently in the community as if they are not in the community. When it comes to glucose consumption, this seems not to be the case \u2013 there seems nothing which indicates that the individual cell's glucose import would be depending on interaction terms between the cells. The manuscript is written as if glucose gradients would emerge because of 'community action', but in fact, they emerge from cells that consume the glucose, in a way that does not require a different action as if cells would act independently to one another. In other words, the cells deplete the glucose in the MF channels, and within the channel, this creates a gradient, to which the cells respond. This alone does not indicate that cells act differently in the community. as they would act in Isolation.\n\nThe second point may remain relevant, however. The sensors are tuned in batch culture. But in batch culture, one expects a time differential, between the glucose concentration present at a point in time, and the average gene expression program activated at that same moment (as gene expression needs time to adjust, but glucose is constantly depleted. I.e. if gene expression needs 30mins to adjust to a changed glucose concentration, the gene expression program reflects the glucose concentration that was in the batch 30mins earlier before the timepoint was taken). I had suggested the authors to control this in chemostats, where gene expression and concentration are a time-wise aligned. I agree this would have been time-consuming to do and could hence be difficult for the authors to do. But it would have been great if they could have come up at least with some idea, and quantify how big this effect is; One would assume the differential between glucose concentration and gene expression are strongest in the early and late exponential phase. If chemostats are too difficult, one could suggest also much simpler surrogate experiment, for instance. One could, for instance, re-supplement exhausted media with glucose, perform a time-course, and estimate in this way the time needed until the gene expression has re-adjusted to the supplied glucose level. The sensor data would need to be adjusted by the time differential.\n\nReviewer #3:\n\nThis revised manuscript has been appropriately rewritten as a \"Tools and Resource\" article.\n\n1) The authors overstate the uniqueness of their approach. For example, in the Introduction in reference to previous studies using similar microfluidics designs:\n\n\" While the use of microfluidics gave rise to the discovery of interesting collective properties of microbial assemblies, such attempts were too specific and had to deal with some of the limitations like small device dimensions (<100 100 \u03bcm), use of low nutrient concentrations (<1 mM), limited scope of nutrient types, inability to access single cell level \u2013 and therefore cannot be transposed to the general case of the study of a large monolayer of cells in standard range and scope of nutrients employed in biological research.\"\n\nFew of these critiques hold up. For example, low nutrient concentrations and limited scope of nutrient types are simply specifics factors applied to the different organisms study. This critique applies equally to the system presented here. Furthermore, the Hornung et al. article certainly allows access to the single cell level. The text should be revised to reflect a more accurate summary of this earlier related work.\n\n2) The rebuttal states \"We agree that more contextualization was necessary so we expanded our Introduction and Discussion part, as well as provided additional citations, including all the ones proposed by the reviewer\" I can find no references our discussion of prior literature at the line numbers provided.\n\n3) One of the points the authors make several times regards the reproducibility of their assays. For example: \"We demonstrate a novel capacity to reproduce and\n\nquantify\u2026\" and \"\u2026we found the growth pattern was highly reproducible across parallel chambers..\" However in the eLife \"transparent reporting form\" the authors state \"We did not use statistical inference or comparison between data sets.\" How then did the authors estimate reproducibility/repeatability?\n",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f29d9657-8900-4ca8-bf18-56e37dffcd27",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C1",
+      "claim": "Microbial colonies are structures in which growth and internal organization reflect complex morphogenetic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbial colonies are fascinating structures in which growth and internal organization reflect complex morphogenetic processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that frames the study's context.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "c53affac-51ea-477a-9354-ee3aabecf333",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C2",
+      "claim": "Stable glucose gradients emerge in yeast monolayer colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed the emergence of stable glucose gradients using fluorescently labeled hexose transporters and quantified the spatial correlations with intra-colony growth rates and expression of other genes regulated by glucose availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "dc48724f-0e1a-454a-9d91-d0d81e5c42e7",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C3",
+      "claim": "Glucose gradients can be observed using fluorescently labeled hexose transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed the emergence of stable glucose gradients using fluorescently labeled hexose transporters and quantified the spatial correlations with intra-colony growth rates and expression of other genes regulated by glucose availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the methodology used to observe glucose gradients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "a7e280e2-38f3-4cb2-a641-e5e8d8b4175a",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C4",
+      "claim": "Glucose gradient landscapes depend on external glucose concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "These landscapes depended on the external glucose concentration as well as secondary gradients, for example amino acid availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding about the factors affecting landscape formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "d3f26fea-a5ea-4991-916c-9a40071376a3",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C5",
+      "claim": "Glucose gradient landscapes depend on amino acid availability.",
+      "claim_type": "EXPLICIT",
+      "source": "These landscapes depended on the external glucose concentration as well as secondary gradients, for example amino acid availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a finding about the factors affecting landscape formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "d2f93ae9-6291-4166-b987-9bacb937996a",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C6",
+      "claim": "Regulatory genetic networks governing cellular physiological adaptation are key to internal structuration of cellular assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "This work demonstrates the regulatory genetic networks governing cellular physiological adaptation are the key to internal structuration of cellular assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a conclusion from the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "4f63294a-e203-4b37-8774-913c1e20f2b7",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C7",
+      "claim": "Cells at the outskirts of a multicellular assembly experience a different microenvironment than cells deeply buried within.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cells at the outskirts of a multicellular assembly do not experience the same microenvironment as the cells deeply buried within.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle in the introduction based on the fact that cells create spatial gradients.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "04c57afe-b015-43d2-a164-35b19b2aa8a3",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C8",
+      "claim": "Cellular physiology is dependent on the cell's position within a colony.",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocally, cellular physiology is dependent on the cell's position within a colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "f8e36a6c-5143-4ba6-850a-b42769010b16",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C9",
+      "claim": "Variations in cellular physiology are consistently observed in bacterial and yeast colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "Such variations in cellular physiology are consistently observed in a variety of multicellular systems \u2013 from bacterial and yeast colonies (Vulin et al., 2014; C\u00e1p et al., 2012) to biofilms (Nadell et al., 2016) and tumors (Carmona-Fontaine et al., 2013; Delarue et al., 2014) \u2013 and are reflected by altered gene expression levels and cellular phenotypes as growth rates, nutrient uptake rates and metabolic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "879561ac-6d56-458a-9466-e0850387f9c8",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C10",
+      "claim": "Variations in cellular physiology are consistently observed in biofilms.",
+      "claim_type": "EXPLICIT",
+      "source": "Such variations in cellular physiology are consistently observed in a variety of multicellular systems \u2013 from bacterial and yeast colonies (Vulin et al., 2014; C\u00e1p et al., 2012) to biofilms (Nadell et al., 2016) and tumors (Carmona-Fontaine et al., 2013; Delarue et al., 2014) \u2013 and are reflected by altered gene expression levels and cellular phenotypes as growth rates, nutrient uptake rates and metabolic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "01dcc426-135a-47e2-a9fa-53302ce3997a",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C11",
+      "claim": "Variations in cellular physiology are consistently observed in tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Such variations in cellular physiology are consistently observed in a variety of multicellular systems \u2013 from bacterial and yeast colonies (Vulin et al., 2014; C\u00e1p et al., 2012) to biofilms (Nadell et al., 2016) and tumors (Carmona-Fontaine et al., 2013; Delarue et al., 2014) \u2013 and are reflected by altered gene expression levels and cellular phenotypes as growth rates, nutrient uptake rates and metabolic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "7d5a9f11-70d5-4613-bed3-69ff6b400b22",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C12",
+      "claim": "Variations in cellular physiology are reflected by altered gene expression levels and cellular phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such variations in cellular physiology are consistently observed in a variety of multicellular systems \u2013 from bacterial and yeast colonies (Vulin et al., 2014; C\u00e1p et al., 2012) to biofilms (Nadell et al., 2016) and tumors (Carmona-Fontaine et al., 2013; Delarue et al., 2014) \u2013 and are reflected by altered gene expression levels and cellular phenotypes as growth rates, nutrient uptake rates and metabolic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "ad5c51c3-6746-49a2-889b-58909dfc18c9",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C13",
+      "claim": "Variations in cellular physiology emerge because of long-range metabolic interactions between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Such variations presumably emerge because of long-range metabolic interactions between cells, in that the cellular microenvironment at one position depends on the nutrient uptake rate at another position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a presumption or hypothesis in the introduction.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "da985c28-6145-4e2e-af2c-f60c32497046",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C14",
+      "claim": "Multicellular communities exhibit higher cell proliferation as an adaptive benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, multicellular communities (Shapiro, 1998; Shou et al., 2007; Xavier and Foster, 2007) exhibit various adaptive benefits, including higher cell proliferation, improved access to resources and niches (Koschwanez et al., 2011), collective defence (e.g., against antagonists, drugs, antibiotics) (Nadell et al., 2016) resulting in optimization of population survival when confronted with averse physical, chemical, nutritional or biological challenges (Palkov\u00e1 and V\u00e1chov\u00e1, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "564accb3-0c8f-4f16-94f2-7436ae60e950",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C15",
+      "claim": "Multicellular communities exhibit improved access to resources and niches as an adaptive benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, multicellular communities (Shapiro, 1998; Shou et al., 2007; Xavier and Foster, 2007) exhibit various adaptive benefits, including higher cell proliferation, improved access to resources and niches (Koschwanez et al., 2011), collective defence (e.g., against antagonists, drugs, antibiotics) (Nadell et al., 2016) resulting in optimization of population survival when confronted with averse physical, chemical, nutritional or biological challenges (Palkov\u00e1 and V\u00e1chov\u00e1, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "4746ad08-d4fb-4056-96b2-eb4b9a301477",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C16",
+      "claim": "Multicellular communities exhibit collective defence as an adaptive benefit.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, multicellular communities (Shapiro, 1998; Shou et al., 2007; Xavier and Foster, 2007) exhibit various adaptive benefits, including higher cell proliferation, improved access to resources and niches (Koschwanez et al., 2011), collective defence (e.g., against antagonists, drugs, antibiotics) (Nadell et al., 2016) resulting in optimization of population survival when confronted with averse physical, chemical, nutritional or biological challenges (Palkov\u00e1 and V\u00e1chov\u00e1, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "c8ccc84c-849b-4b68-be14-54637a56e2d3",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C17",
+      "claim": "The majority of scientific research to date has focused on single cells in homogeneous environments or populations of cells grown in batch or continuous liquid cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, despite the obvious contrast between homogeneous environments and the pronounced environmental heterogeneity of microbial cellular assemblies, the majority of scientific research to date has either focused on single cells in homogeneous environments or populations of cells grown in batch or continuous liquid cultures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general observation about the state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "290d43c9-fd46-466d-8143-037c01f22752",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C18",
+      "claim": "Two-photon microscopy of sliced agarose-encapsulated yeast colonies was required to show that yeast cells may adopt different physiologies depending on their position within a colony.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, two-photon microscopy of sliced agarose-encapsulated yeast colonies was required to show that yeast cells may adopt different physiologies \u2013 and possibly different cell types \u2013 depending on their position within a colony (C\u00e1p et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "920ee5a5-90ef-4333-ac5d-d1cbc443c7f5",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C19",
+      "claim": "Yeast cells may adopt different physiologies depending on their position within a colony.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, two-photon microscopy of sliced agarose-encapsulated yeast colonies was required to show that yeast cells may adopt different physiologies \u2013 and possibly different cell types \u2013 depending on their position within a colony (C\u00e1p et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "f00861dd-f0f8-4da9-95e5-0be7c5802b66",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C20",
+      "claim": "NanoDESI MS was used to study growing bacterial colonies on agar plates and showed a wide diversity and complexity of compounds that characterize microbial chemical ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "In another example, nanospray desorption electrospray ionization mass spectrometry (nanoDESI MS) was used to study growing bacterial colonies on agar plates and showed a wide diversity and complexity of compounds that characterize microbial chemical ecology (Watrous et al., 2012; Traxler and Kolter, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "0fefe32c-ced6-4822-9890-daf232263526",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C21",
+      "claim": "The microfluidic device has dead-end chambers that are 800 \u00b5m long, 50 \u00b5m wide, and 4.5 \u00b5m high.",
+      "claim_type": "EXPLICIT",
+      "source": "We used soft lithography techniques to fabricate a multi-layered microfluidic device composed of a large channel (to flow nutrients) and an array of perpendicular, extended (800 \u00b5m-long), narrow (50 \u00b5m-wide), flat (4.5 \u00b5m-high) dead-end chambers in which yeast cells can grow as monolayers while the media is supplied by a pressure pump-based system with flow control (Figure 1, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the physical specifications of the device used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "49c24da5-406c-4c8d-a2f3-d262ebd06e45",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C22",
+      "claim": "The length of the dead-end chambers was optimized to induce significant variations in the nutrient concentrations within the chambers due to cellular nutrient uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the dead-end chambers was optimized to induce significant variations in the nutrient concentrations within the chambers due to cellular nutrient uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design consideration for the device.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "59b81a5b-2432-48f1-898d-3b8d4ef42a72",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C23",
+      "claim": "The chamber width was large enough to avoid jamming during cell growth due to geometric constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "The chamber width was large enough to avoid jamming during cell growth due to geometric constraints and small enough to avoid generation of complex, cell-recirculating flows induced by cell growth (Boyer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design consideration for the device.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "ef86d898-d322-4703-8e07-1923d91cf974",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C24",
+      "claim": "The chamber width was small enough to avoid generation of complex, cell-recirculating flows induced by cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The chamber width was large enough to avoid jamming during cell growth due to geometric constraints and small enough to avoid generation of complex, cell-recirculating flows induced by cell growth (Boyer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design consideration for the device, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "5101af77-9f96-4271-987a-4cc83e19faa7",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C25",
+      "claim": "The chamber height was comparable to but slightly larger than the average size of a yeast cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The chamber height was comparable to \u2013 but slightly larger than \u2013 the average size of a yeast cell, so the cells were vertically constrained to facilitate single-cell imaging and time-lapse fluorescence microscopy (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design consideration for the device.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "abe28c2c-b00a-4a21-9315-b6e47fb14f52",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C26",
+      "claim": "Cells formed growing monolayers that extended from the closed end of the chamber and collectively progressed towards the nutrient source.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells formed growing monolayers that extended from the closed end of the chamber and collectively progressed towards the nutrient source (i.e. the open end of the chamber) as the cells pushed each other while growing (Figure 2a,b; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observation from the experiments, supported by figures and video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "1e6f212a-44f8-4504-9fd7-60ff1979d153",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C27",
+      "claim": "Cells eventually filled each chamber, forming an extended two-dimensional colony composed of about 2500 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells eventually filled each chamber, forming an extended two-dimensional colony composed of about 2500 cells (Figure 2b, Figure 1\u2014figure supplement 2), typically ~10 cells wide and ~200 cells long.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observation from the experiments, supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "27385cff-bf65-4688-a6b6-e21d1b8807dc",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C28",
+      "claim": "Under standard glucose-rich conditions (2% w/vol; 111 mM) and excess amino acids (5\u00d7 CSM), the front velocity increased during the first 2-4 h and eventually reached a steady-state close to 100 \u00b5m.h\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Under standard glucose-rich conditions (2% w/vol; 111 mM) and excess amino acids (5\u00d7 CSM, see Materials and methods), the front velocity, VF, increased during the first 2-4 h and eventually reached a steady-state close to 100 \u00b5m.h\u22121 (Figure 2c,d, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a specific experimental observation, supported by figures and video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "95e65fc9-1a83-4eb7-a1da-f9697605e0b3",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C29",
+      "claim": "Front velocity depends on the quantities of glucose and other nutrients that penetrate inside the yeast monolayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Front velocity is the sum of the contribution of every cell to colony expansion. Therefore, VF depends on the quantities of glucose and other nutrients that penetrate inside the yeast monolayer, which impact both the number of cells that grow and their growth rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the relationship between front velocity and nutrient availability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "747d529e-d2c1-46ac-ba96-ac234927ec78",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C30",
+      "claim": "The glucose penetration distance is around 400 \u00b5m at 2% w/vol glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Our direct observation (Figure 2e) showed that for a layer of growing cells, H is around 400 \u00b5m at 2% w/vol glucose.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the experiments, supported by a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "cb42c85d-bbdc-445d-b6b7-a3f2ba46754f",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C31",
+      "claim": "Increasing the glucose concentration (from 0.01% to 8% w/vol) led to higher terminal front velocities.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the glucose concentration (from 0.01% to 8% w/vol) led to higher terminal front velocities (Figure 2d), in agreement with the fact that at higher concentrations, glucose will penetrate further by diffusion in the colony (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation, supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "bf4dd6b2-b09e-43d4-a32f-56d3ef7961c7",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C32",
+      "claim": "The front velocity does not increase linearly with glucose concentration, and plateaus at very high glucose concentrations (>4% w/vol).",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the front velocity does not increase linearly with glucose concentration, and plateaus at very high glucose concentrations (>4% w/vol).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "837d3edf-7c97-4f6d-b85d-81c5e76d6a5a",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C33",
+      "claim": "Using standard amino acid concentrations in the media resulted in significantly lower terminal front velocities, even at high glucose concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using standard amino acid concentrations in the media resulted in significantly lower terminal front velocities, even at high glucose concentrations (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation, supported by a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "4c8b4781-5fda-4530-9b28-e50b1fc2ad0e",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C34",
+      "claim": "Amino acid availability can limit cellular growth, which is especially visible in the presence of high glucose concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that amino acid availability can limit cellular growth, which is especially visible in the presence of high glucose concentrations, where glucose is no longer limiting but amino acids are.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "c8ffc008-98d4-4d5d-8d38-2d7b95c4f126",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C35",
+      "claim": "At standard glucose conditions (2% w/vol) and a high amino acid concentration (5 \u00d7 CSM), significant cell motion was not observed after y ~ 400 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "At standard glucose conditions (2% w/vol) and a high amino acid concentration (5 \u00d7 CSM), significant cell motion was not observed after y ~ 400 \u00b5m, indicating that very limited glucose is available to the cells that are beyond this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "6a1f2c66-3ddd-47d7-9f2e-aa3e472e493e",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C36",
+      "claim": "Increasing the glucose concentration in the nutrient channel (from 0.01% to 8% w/vol) led to higher local velocities deeper in the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, increasing the glucose concentration in the nutrient channel (from 0.01% to 8% w/vol) led to higher local velocities deeper in the colony (Figure 2f, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation, supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "18870a11-acf6-40b8-b0ef-8423d68f51d0",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C37",
+      "claim": "HXT1 and HXT7 displayed inversely correlated landscapes of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, HXT1 and HXT7 displayed inversely correlated landscapes of gene expression (e.g., Figure 3a and g for 2% w/vol glucose).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation, supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "f6f3df24-4d42-4265-9095-bf026ea33d0a",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C38",
+      "claim": "HXT1 is a low-affinity glucose transporter mainly expressed under high-glucose conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "HXT1 is a low-affinity glucose transporter mainly expressed under high-glucose conditions, while HXT7 is a high-affinity glucose transporter expressed under low-glucose conditions only (Figure 3b and f) (Reifenberger et al., 1997; Diderich et al., 1999; Maier et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations to previous studies and figures from the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "39c7985f-db47-4240-9fa3-9879dfc07801",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C39",
+      "claim": "HXT7 is a high-affinity glucose transporter expressed under low-glucose conditions only.",
+      "claim_type": "EXPLICIT",
+      "source": "HXT1 is a low-affinity glucose transporter mainly expressed under high-glucose conditions, while HXT7 is a high-affinity glucose transporter expressed under low-glucose conditions only (Figure 3b and f) (Reifenberger et al., 1997; Diderich et al., 1999; Maier et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by citations to previous studies and figures from the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "b90b96a7-5b55-40af-956f-53ad447662c8",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C40",
+      "claim": "HXT1 was expressed at the highest levels in the cells close to the chamber opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, HXT1 was expressed at the highest levels in the cells close to the chamber opening (i.e., in the highest glucose concentration), while HXT7 expression peaked further away in the chamber, indicating a transition to a low-glucose region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "602992c9-c4b7-465e-92fb-b158145e6537",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C41",
+      "claim": "HXT7 expression peaked further away in the chamber, indicating a transition to a low-glucose region.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, HXT1 was expressed at the highest levels in the cells close to the chamber opening (i.e., in the highest glucose concentration), while HXT7 expression peaked further away in the chamber, indicating a transition to a low-glucose region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "3b1e7cfb-ae28-4f49-8a5d-6aa9f50d988d",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C42",
+      "claim": "In cells expressing the highest levels of HXT7, the fluorescence was localized to the cell membrane, indicating HTX7 played an active role in glucose transport in these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, in the cells expressing the highest levels of this gene, the fluorescence was localized to the cell membrane, indicating HTX7 played an active role in glucose transport in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "136acfe3-c7c2-4ce8-aa5f-823c97550d4b",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C43",
+      "claim": "Deeper in the colony, lower levels of HTX7 fluorescence were observed, though this fluorescence was localized in vacuoles, indicating the transporter had been targeted for degradation by the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, deeper in the colony, we observed lower levels of HTX7 fluorescence due to the long lifetime of GFP-fused proteins and absence of dilution through cell division, though this fluorescence was localized in vacuoles, indicating the transporter had been targeted for degradation by the cells (Hovsepian et al., 2017) (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation and inference, supported by a citation and figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "7370265e-3f0a-422a-b561-74763a5eea70",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C44",
+      "claim": "The peak of HXT7 fluorescence matches the peak fluorescence observed in batch culture at a glucose concentration of 0.016% w/vol.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming the observed peak of HXT7 fluorescence matches the peak fluorescence observed in batch culture at a glucose concentration of 0.016% w/vol. (Figure 3b,c, Figure 3\u2014figure supplement 2), we could locate the position in the yeast monolayer at which the glucose concentration reached 0.016% w/vol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an assumption used to infer glucose concentrations, supported by figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "c81650d2-3c3b-4e1c-8ab8-f0551b89e36e",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C45",
+      "claim": "The position at which the glucose concentration reached 0.016% w/vol was around Hf ~ 500 \u00b5m from the front.",
+      "claim_type": "EXPLICIT",
+      "source": "This position was around Hf ~ 500 \u00b5m from the front, in good agreement with the transition in cell motion (Figure 2, Hm ~400 \u00b5m).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the experimental data, supported by figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "2e138a70-7c19-4eb2-8dd7-a9d86d182856",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C46",
+      "claim": "At 1% w/vol glucose, HXT1 was only expressed at low levels at the growing front of the colony (y < 60 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, at 1% w/vol glucose, HXT1 was only expressed at low levels at the growing front of the colony (y < 60 \u00b5m).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "3e7ee028-fabe-4efb-a352-58869e311c3c",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C47",
+      "claim": "At the highest glucose concentration (8% w/vol), HXT1 was expressed at high levels throughout the whole colony, demonstrating glucose was available throughout the chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at the highest glucose concentration (8% w/vol; Figure 3e, Figure 3\u2014figure supplement 3), HXT1 was expressed at high levels throughout the whole colony, demonstrating glucose was available throughout the chamber.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation and inference, supported by figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "70725707-0dae-4897-abee-ed0a21cea9ec",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C48",
+      "claim": "HXT1 is mainly expressed under high-glucose conditions (>1% w/vol glucose) in batch culture.",
+      "claim_type": "EXPLICIT",
+      "source": "As HXT1 is mainly expressed under high-glucose conditions (>1% w/vol glucose) in batch culture (Diderich et al., 1999), this observation indicated the glucose penetration distance (within the chamber) increased with the external glucose concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "49cdde82-4f57-4139-8a0b-092ee9287133",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C49",
+      "claim": "The glucose penetration distance increased with the external glucose concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "As HXT1 is mainly expressed under high-glucose conditions (>1% w/vol glucose) in batch culture (Diderich et al., 1999), this observation indicated the glucose penetration distance (within the chamber) increased with the external glucose concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "e3a4d0a3-fae8-4d7b-9eed-b399f3cf3d1b",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C50",
+      "claim": "HXT7 exhibited a peak-like expression pattern, and was repressed under both high-glucose conditions and when no glucose was present.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, HXT7 exhibited a peak-like expression pattern, and was repressed under both high-glucose conditions and when no glucose was present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "7f652665-fca1-4ccc-8d6b-6e00e8149727",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C51",
+      "claim": "At low-glucose concentrations (0.1% w/vol), a peak in HXT7 expression was observed at the very beginning of the colony (y ~ 20 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "At low-glucose concentrations (0.1% w/vol), a peak in HXT7 expression was observed at the very beginning of the colony (y ~ 20 \u00b5m), indicating glucose was quickly absorbed by the cells closest to the chamber opening, thus these were the only cells with access to sufficient carbon resources to grow and divide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "53f71767-f811-48d5-81f0-111c7fcde186",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C52",
+      "claim": "The peak of HXT7 expression moved deeper into the colony as the glucose concentration increased.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak of HXT7 expression moved deeper into the colony as the glucose concentration increased and disappeared completely at 8% w/vol glucose, again indicating sufficient glucose could diffuse to the end of the chamber under high-glucose conditions (Figures 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation and inference, supported by figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "f30f9be7-778d-4589-913e-41308782c929",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C53",
+      "claim": "The peak of HXT7 expression disappeared completely at 8% w/vol glucose, indicating sufficient glucose could diffuse to the end of the chamber under high-glucose conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak of HXT7 expression moved deeper into the colony as the glucose concentration increased and disappeared completely at 8% w/vol glucose, again indicating sufficient glucose could diffuse to the end of the chamber under high-glucose conditions (Figures 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation and inference, supported by figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "425ba388-7b98-4dd6-8575-1f8bc91d216e",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C54",
+      "claim": "The local level of HXT7 expression is only set by the local glucose concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that the local level of HXT7 expression is only set by the local glucose concentration, we can use batch culture measurements of HXT7 expression (based on flow cytometry) to determine the glucose concentration at a given chamber position (Figure 4c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an assumption used for the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "46c02311-5883-4052-ba47-92f78b7ad05f",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C55",
+      "claim": "Using HXT7 expression data allows reconstruction of the glucose gradient for different initial glucose concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the data for HXT7 in Figure 3, we were able to reconstruct the glucose gradient for different initial glucose concentrations (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a method and result from the study, supported by figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "ac5a4eb9-67a0-42a1-a57c-fa1788549ac8",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C56",
+      "claim": "When applied to HXT1, the same inference led to very similar results as HXT7.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to HXT1, the same inference led to very similar results (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a result from the study, supported by a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "5185c5bf-87e4-49e0-a39c-98c86f9d8eb2",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C57",
+      "claim": "Glucose concentrations decay very quickly moving away from the chamber opening and then exhibit a relatively long tail moving deeper into the colony.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, glucose concentrations decay very quickly moving away from the chamber opening and then exhibit a relatively long tail moving deeper into the colony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a pattern observed in the reconstructed glucose gradients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "15811d01-9784-4189-95a7-565a4f66b077",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C58",
+      "claim": "MIG1 is a key transcription factor involved in glucose repression that localizes to the nucleus in the presence of glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "MIG1 is a key transcription factor involved in glucose repression that localizes to the nucleus in the presence of glucose, to repress genes that participate in parallel carbon metabolic pathways (e.g., galactose) (Conrad et al., 2014; Broach, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "e22d9383-c298-4aff-b8d4-2b3ad4e8cf00",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C59",
+      "claim": "The distance after which MIG1 fluorescence was not present in the nucleus of the cells was around 400 \u00b5m at C0 = 2% w/vol glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Observing the cells at high magnification, we quantified the distance after which MIG1 fluorescence was not present in the nucleus of the cells (Figure 5b). This distance, around 400 \u00b5m at C0 = 2% w/vol glucose, was in excellent agreement with the data obtained by HXT7 profiling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation, supported by a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "dfb45e8d-2942-4ffe-a557-abfd22687f92",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C60",
+      "claim": "The spatial transition from nuclear MIG1 to cytoplasmic MIG1 localisation was very sharp and occurred over just a few cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the spatial transition from nuclear MIG1 to cytoplasmic MIG1 localisation was very sharp and occurred over just a few cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "aea426a5-6b36-434b-b0b8-72108451a273",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C61",
+      "claim": "HXT5 is expressed under very low and no glucose conditions and appears to be a good marker of growth arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the batch culture observations, we found HXT5 was only expressed in regions with very low or no glucose concentrations where the cells did not seem to divide over several hours (Figure 5a). Therefore, HXT5 appears to be an excellent marker of growth arrest in this context (Verwaal et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation and inference, supported by a figure and citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "106a5373-a275-4159-9a59-cea00e5c5fbd",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C62",
+      "claim": "The expression landscapes of HXK1 and HXK2 were consistent with the batch measurements and validated the existence of a glucose gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression landscapes of two hexokinases involved in glucose metabolism, HXK1 and HXK2 (Figure 5c) that are expressed when cells are grown on non-glucose carbon sources, were also consistent with the batch measurements (Figure 5d, Figure 5\u2014figure supplement 3) and further validated the existence of a glucose gradient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation and inference, supported by figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "99739a69-93b8-4e53-be8b-c553fc17c8fa",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C63",
+      "claim": "Maximal HXK1 and HXK2 expression were observed at a glucose concentration of about 0.016% w/vol in batch measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The batch measurements indicated maximal HXK1 and HXK2 expression were observed at a glucose concentration of about 0.016% w/vol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a result from batch culture measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "5605df01-2daf-4360-9260-d357c2b38e6b",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C64",
+      "claim": "Neither HXK1 nor HXK2 was expressed at very high glucose concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, neither enzyme was expressed at very high glucose concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "a1c82975-8492-4f5a-941c-05f51385180b",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C65",
+      "claim": "The HXK1 and HXK2 expression maxima were around 300 \u00b5m at C0 = 1% and 500 \u00b5m at 2% w/vol.",
+      "claim_type": "EXPLICIT",
+      "source": "The HXK1 and HXK2 expression maxima were similar at the two other glucose concentrations studied, around 300 \u00b5m at C0 = 1% and 500 \u00b5m at 2% w/vol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "7412a25d-def5-4e1e-9f61-6b79d0feedf1",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C66",
+      "claim": "PDC1 and SDH2 expression landscapes were inversely correlated, indicating a transition from fermentative metabolic activity at the nutrient front of the colony to respiratory metabolic activity towards the dead end of the chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined the expression of PDC1 and SDH2, which are overexpressed in fermenting and respiring cells, respectively (Otterstedt et al., 2004; Bonander et al., 2008; Ohlmeier et al., 2004). Their expression landscapes were inversely correlated (Figure 6a, Figure 6\u2014figure supplement 1), indicating a transition from fermentative metabolic activity at the nutrient front of the colony to respiratory metabolic activity towards the dead end of the chamber where glucose is scarce.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental observation and inference, supported by figures and citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "88754419-0fbb-4355-b61b-e7be2481c024",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C67",
+      "claim": "PDC1 is overexpressed in fermenting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined the expression of PDC1 and SDH2, which are overexpressed in fermenting and respiring cells, respectively (Otterstedt et al., 2004; Bonander et al., 2008; Ohlmeier et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "97f1417c-8a17-4f75-a068-52405e0baa4c",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C68",
+      "claim": "SDH2 is overexpressed in respiring cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we examined the expression of PDC1 and SDH2, which are overexpressed in fermenting and respiring cells, respectively (Otterstedt et al., 2004; Bonander et al., 2008; Ohlmeier et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "b472dc8c-a07d-4f52-9cd3-17fd0aabf712",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C69",
+      "claim": "All gene expression landscapes showed a high level of spatial correlation.",
+      "claim_type": "EXPLICIT",
+      "source": "We decided to compare the landscapes of gene expression for the entire set of reporter genes by aligning the different landscapes across varied nutrient conditions (Figure 7a). Strikingly, all landscapes showed a high level of spatial correlation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observation from comparing multiple gene expression landscapes, supported by a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "5650d015-5a30-4330-9dc2-eb3e800d8902",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C70",
+      "claim": "Two major landscape types emerged: peaking (e.g., HXT7) and switching (e.g., HXT1 or MIG1).",
+      "claim_type": "EXPLICIT",
+      "source": "Two major landscapes emerged: peaking (e.g., HXT7) and switching (e.g., HXT1 or MIG1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a classification of the observed gene expression landscapes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "d502e265-07b8-4338-aa05-eb3307249cce",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C71",
+      "claim": "The typical lengths of all gene expression landscapes for different reporter genes were remarkably close.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined and extracted the typical lengths of the peaking and switching landscapes (Figure 7b) and plotted them as function of the external glucose concentration (Figure 7c). The typical lengths of all of these landscapes for different reporter genes were remarkably close, despite the fact that we looked at different cellular components: a transcription factor (MIG1), glucose transporters (HXTs), metabolic enzymes (HXKs) and metabolic state reporters (SDH2, PDC1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an observation from the analysis, supported by figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "6e5914f6-c02a-4ecf-8d4b-fa5eec2c83c3",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C72",
+      "claim": "The colonies were structured into two regions: an actively growing region where cells divide abundantly and ferment glucose, and a quiescent area where cells do not divide much and have switched to respiratory metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we gained a global view of gene expression landscapes and their interrelationships along a monolayer colony. All data showed the colonies were structured into two regions with very different properties (Figure 7d): an actively growing region, where cells divide abundantly and ferment glucose, and a quiescent area, where cells do not divide much and have switched to respiratory metabolism to compensate for the very low glucose availability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a conclusion from the study, supported by a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "c5a8c6bb-711e-4ff1-a565-0f6bcbb4f5e9",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C73",
+      "claim": "Genetic programs enable multicellular assemblies to spatially self-organize through long-range metabolic interactions governed by physical rules of diffusion and uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is not surprising to see the expression levels of metabolic genes vary with the glucose concentration, our approach demonstrates genetic programs not only allow individual cells to adapt to changes in the nutrient environment, but also enable multicellular assemblies to spatially self-organize through long-range metabolic interactions governed by physical rules of diffusion and uptake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "b4c007b5-9073-4f91-a890-e6140288032c",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C74",
+      "claim": "All experiments were performed using haploid S. cerevisiae strains derived from the S288C background - BY4741.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed using haploid S. cerevisiae strains derived from the S288C background - BY4741: MATa his3\u03941 leu2\u03940 met15\u03940 ura3\u03940.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental materials used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "bb2cf164-1f8c-4204-b53f-f7c412de200d",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C75",
+      "claim": "Microfluidic devices were constructed using soft lithography techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Microfluidic devices were constructed using soft lithography techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used to fabricate the devices.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "783c9a7e-3fdd-4f47-a7d5-3dfef59fd581",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C76",
+      "claim": "Cells were precultured overnight in 5 mL of synthetic complete (SC) medium containing 2% w/vol glucose in a shaking incubator at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were precultured overnight in 5 mL of synthetic complete (SC) medium containing 2% w/vol glucose in a shaking incubator at 30\u00b0C, diluted 50-fold into 50 mL of SC +2% w/vol glucose, cultured for 5\u20136 hr in a shaking incubator at 30\u00b0C to an OD600 of 0.2\u20130.4, collected by centrifugation, and loaded into the microfluidic system with a pipette.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for cell preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "85984ce5-d0c2-40c2-b227-345f90a17403",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C77",
+      "claim": "The microfluidic system was centrifuged for 2 min at 1000 rpm to force the cells into the dead-end cell chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "The microfluidic system was centrifuged for 2 min at 1000 rpm using 3D-printed adaptors (Laurell WS-650 spin coater) to force the cells into the dead-end cell chambers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for cell loading.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "63a171fb-8feb-4ceb-bbb6-267c3f1bcdb8",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C78",
+      "claim": "Liquid media was flowed rapidly through the flow channel to remove excess cells and the flow rate was set to 5 \u00b5L/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Liquid media was flowed rapidly through the flow channel to remove excess cells and the flow rate was set to 5 \u00b5L/min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for media flow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "377f4ed3-d0c3-4e95-9c79-9c13bdd563a2",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C79",
+      "claim": "Flow cytometry experiments were performed on a Gallios Flow Cytometer using a 488 nm excitation laser and 530/30 nm FL1 emission filter to detect GFP fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow cytometry experiments were performed on a Gallios Flow Cytometer (Beckman Coulter) using a 488 nm excitation laser and 530/30 nm FL1 emission filter to detect GFP fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method for flow cytometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "32a21edc-4130-4fe9-8b01-54abc5adc42d",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C80",
+      "claim": "Approximately 104 cells were inoculated in 10 mL of SC medium containing various glucose concentrations and cultured in a shaking incubator at 30\u00b0C to an OD600 of ~0.02\u20130.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 104 cells were inoculated in 10 mL of SC medium containing various glucose concentrations (log2 dilutions from 8% to 0.0078125%, and 0% w/vol glucose) and cultured in a shaking incubator at 30\u00b0C to an OD600 of ~0.02\u20130.2 depending on the starting glucose concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for batch culture experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "85dc48a5-8220-49c8-8c63-2739ee6bb429",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C81",
+      "claim": "Cells were then diluted 10-fold into 10 mL of fresh SC media containing the same starting glucose concentration and grown for 4\u20135 hr in a shaking incubator at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells were then diluted 10-fold into 10 mL of fresh SC media containing the same starting glucose concentration and grown for 4\u20135 hr in a shaking incubator at 30\u00b0C, centrifuged at 4000 rpm for 10 min, re-suspended in 300 \u00b5L of PBS pH 7.4 buffer (Gibco) and fluorescence was measured using the flow cytometer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for batch culture experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "b4f5ee57-7e4b-4525-81a8-bcbcf633201d",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C82",
+      "claim": "The glucose concentration remained at similar levels during the growth phase in batch culture experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The supernatant of each sample was collected, and the glucose concentration was measured using the Glucose (HK) Assay Kit (Sigma) to confirm that the glucose concentration remained at similar levels during the growth phase (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a control measurement performed in the study, supported by a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "b16cc3be-b4d6-4748-abc5-1965f324e8a7",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C83",
+      "claim": "Image analysis was performed using open-source ImageJ 1.51 p software.",
+      "claim_type": "EXPLICIT",
+      "source": "Image analysis was performed using open-source ImageJ 1.51 p software (Schneider et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software used for image analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "64e01f91-f16c-45fa-9ab9-c69dc7de39cc",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "claim_id": "C84",
+      "claim": "TrackMate v3.5.1 was used to track cell trajectories to compute the local speed of the cells inside the cell assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "To compute the local speed of the cells inside the cell assembly, we used the plugin TrackMate (Tinevez et al., 2017) v3.5.1 to track cell trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software used for cell tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "665227ff-25d6-43df-be1c-906f5c283265",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a microfluidic device ('yeast machine') with 800 \u00b5m long, 50 \u00b5m wide, and 4.5 \u00b5m high dead-end chambers optimized to induce nutrient gradients and facilitate single-cell imaging of yeast monolayers. The device was fabricated using soft lithography and cells were loaded by centrifugation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 and C75-C78 provide detailed specifications and design rationale for the microfluidic device, supported by figures and methodological descriptions. The device dimensions and fabrication methods are clearly documented with appropriate technical detail.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "792cc2ce-8514-4a1f-bff3-b82b8d831cfb",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Yeast cells formed growing monolayers of ~2500 cells that progressed toward the nutrient source. Under standard conditions (2% glucose, 5\u00d7 CSM), front velocity reached steady-state at ~100 \u00b5m/h, and the glucose penetration distance was ~400 \u00b5m.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 and C35 describe fundamental observations of colony growth dynamics with quantitative measurements supported by figures and video. The measurements are consistent and reproducible across replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "79819f99-2275-4d18-8e5a-b1c9d951829e",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Increasing external glucose concentration (0.01% to 8% w/vol) led to higher terminal front velocities and higher local velocities deeper in the colony, but front velocity plateaued at very high glucose concentrations (>4% w/vol).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C32, and C36 describe dose-response relationships between glucose concentration and colony expansion rates, supported by multiple figures showing systematic trends across concentration ranges.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "d6aca536-107b-41a1-92ff-2df8e44930f6",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using standard amino acid concentrations resulted in significantly lower terminal front velocities at high glucose concentrations, suggesting amino acid availability can limit cellular growth when glucose is abundant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 demonstrate that amino acids can be growth-limiting at high glucose concentrations, supported by supplementary figure data comparing 1\u00d7 and 5\u00d7 CSM conditions. This is an important control showing glucose is not the only limiting nutrient.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "3e994206-99e9-4b12-8521-7626f3ffc84c",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Stable glucose gradients emerged in yeast monolayers, observed using fluorescently labeled hexose transporters HXT1 and HXT7. HXT1 (low-affinity, high-glucose transporter) and HXT7 (high-affinity, low-glucose transporter) displayed inversely correlated expression landscapes, with HXT7 showing membrane localization at peak expression and vacuolar localization deeper in the colony.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, and C37-C43 describe the primary method for detecting glucose gradients using endogenous fluorescent reporters. The inverse correlation between HXT1 and HXT7 is well-documented with figures showing spatial patterns and subcellular localization consistent with known transporter biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "ae4d822f-7785-4245-9469-97a5fa2e612f",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The peak of HXT7 expression corresponded to ~0.016% w/vol glucose at ~500 \u00b5m from the front at 2% external glucose. At different external glucose concentrations, HXT7 peak position shifted: at 0.1% glucose the peak was at ~20 \u00b5m, moving deeper with increasing glucose, and disappearing at 8% glucose. HXT1 expression increased with external glucose concentration, being expressed throughout the chamber at 8% glucose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C53 describe systematic changes in transporter expression patterns across glucose concentrations. The assumption that HXT7 peak corresponds to 0.016% glucose (C44) is reasonable based on batch culture calibration, though this introduces some uncertainty. The spatial patterns are well-documented across multiple concentrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "4dca9f1f-6b43-481c-9cc7-c61ef2abd0bf",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Assuming local HXT7 expression is set only by local glucose concentration, the authors reconstructed glucose gradients for different initial concentrations using batch culture calibration. Similar results were obtained using HXT1. Glucose concentrations decayed quickly from the chamber opening then exhibited a long tail deeper in the colony.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C57 describe glucose gradient reconstruction based on a critical assumption (C54) that local expression depends only on local glucose concentration. This assumption may not fully account for cellular history, adaptation kinetics, or other microenvironmental factors. While the approach is reasonable and results from HXT1 and HXT7 are consistent, the reconstruction method has inherent limitations that are not fully validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "7e7a1ef8-ca08-49a0-be8d-1b8c6f49d21d",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MIG1, a transcription factor that localizes to the nucleus in the presence of glucose, showed nuclear localization up to ~400 \u00b5m at 2% glucose, with a very sharp spatial transition occurring over just a few cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 provide independent validation of glucose gradients using MIG1 localization. The ~400 \u00b5m distance agrees well with HXT7 data, and the sharp transition is clearly documented. This strengthens the glucose gradient inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "12ad3f0d-b4e3-47e0-9721-88ae59e198c9",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HXT5 was expressed only in regions with very low or no glucose where cells did not divide, appearing to be a good marker of growth arrest. HXK1 and HXK2 (hexokinases) showed expression landscapes consistent with batch measurements, with maximal expression at ~0.016% glucose, and peaks at ~300 \u00b5m (1% external glucose) and ~500 \u00b5m (2% external glucose).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 describe additional gene expression patterns that validate the glucose gradient model. The consistency between microfluidic and batch culture measurements, and agreement with HXT7 peak positions, provides strong supporting evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "800bb3b7-957c-453f-9340-4539c706c26b",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PDC1 (overexpressed in fermenting cells) and SDH2 (overexpressed in respiring cells) showed inversely correlated expression landscapes, indicating a transition from fermentative metabolism at the nutrient front to respiratory metabolism toward the dead end where glucose is scarce.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 demonstrate metabolic zonation within colonies using established markers of fermentation and respiration. The inverse correlation is well-documented with figures and consistent with the glucose gradient model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "19e583c3-fa70-4715-9df8-891c8c0e31fe",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "All gene expression landscapes showed high spatial correlation and fell into two major types: peaking (e.g., HXT7) and switching (e.g., HXT1, MIG1). The typical lengths of landscapes for different reporter genes were remarkably close despite examining different cellular components. Colonies were structured into two regions: an actively growing region with fermentation and a quiescent area with respiratory metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, and C69-C72 synthesize the major findings showing coordinated gene expression patterns across multiple reporters. The spatial correlation and two-region structure are well-documented with comprehensive figure panels showing multiple genes and conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "aa9174b2-d395-4b98-865c-45f66762952b",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Regulatory genetic networks governing cellular physiological adaptation are key to internal structuration of cellular assemblies. Genetic programs enable multicellular assemblies to spatially self-organize through long-range metabolic interactions governed by physical rules of diffusion and uptake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C73 present the main conceptual conclusion of the work. This is well-supported by the comprehensive gene expression landscape data showing coordinated adaptation to self-generated gradients. The conclusion appropriately synthesizes the experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "12feffa2-9f3b-4990-ac36-eaf81e1b3862",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study used S. cerevisiae BY4741 strains with appropriate experimental protocols including batch culture calibration, flow cytometry, and image analysis using ImageJ and TrackMate. Glucose concentrations remained stable during batch culture growth phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74 and C79-C84 describe standard methods and controls. The glucose stability measurement (C82) is an important control validating that batch culture measurements reflect the intended glucose concentrations. Methods are adequately described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    },
+    {
+      "id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94",
+      "content_id": "a86b3955-6189-40b1-954e-2f9446bf9120",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The introduction establishes that cells in multicellular assemblies experience heterogeneous microenvironments due to spatial gradients, leading to position-dependent cellular physiology. Previous studies have shown physiological variations in various systems, but most research has focused on homogeneous environments. Prior microfluidic and imaging approaches had limitations in studying extended colonies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C7-C20 provide background context supported by appropriate citations. These claims establish the motivation and gap in existing approaches that the current work addresses. The characterization of prior work appears accurate based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:55:27.485363Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0fefe32c-ced6-4822-9890-daf232263526",
+      "result_id": "665227ff-25d6-43df-be1c-906f5c283265"
+    },
+    {
+      "claim_id": "49c24da5-406c-4c8d-a2f3-d262ebd06e45",
+      "result_id": "665227ff-25d6-43df-be1c-906f5c283265"
+    },
+    {
+      "claim_id": "59b81a5b-2432-48f1-898d-3b8d4ef42a72",
+      "result_id": "665227ff-25d6-43df-be1c-906f5c283265"
+    },
+    {
+      "claim_id": "ef86d898-d322-4703-8e07-1923d91cf974",
+      "result_id": "665227ff-25d6-43df-be1c-906f5c283265"
+    },
+    {
+      "claim_id": "5101af77-9f96-4271-987a-4cc83e19faa7",
+      "result_id": "665227ff-25d6-43df-be1c-906f5c283265"
+    },
+    {
+      "claim_id": "bb2cf164-1f8c-4204-b53f-f7c412de200d",
+      "result_id": "665227ff-25d6-43df-be1c-906f5c283265"
+    },
+    {
+      "claim_id": "783c9a7e-3fdd-4f47-a7d5-3dfef59fd581",
+      "result_id": "665227ff-25d6-43df-be1c-906f5c283265"
+    },
+    {
+      "claim_id": "85984ce5-d0c2-40c2-b227-345f90a17403",
+      "result_id": "665227ff-25d6-43df-be1c-906f5c283265"
+    },
+    {
+      "claim_id": "63a171fb-8feb-4ceb-bbb6-267c3f1bcdb8",
+      "result_id": "665227ff-25d6-43df-be1c-906f5c283265"
+    },
+    {
+      "claim_id": "abe28c2c-b00a-4a21-9315-b6e47fb14f52",
+      "result_id": "792cc2ce-8514-4a1f-bff3-b82b8d831cfb"
+    },
+    {
+      "claim_id": "1e6f212a-44f8-4504-9fd7-60ff1979d153",
+      "result_id": "792cc2ce-8514-4a1f-bff3-b82b8d831cfb"
+    },
+    {
+      "claim_id": "27385cff-bf65-4688-a6b6-e21d1b8807dc",
+      "result_id": "792cc2ce-8514-4a1f-bff3-b82b8d831cfb"
+    },
+    {
+      "claim_id": "95e65fc9-1a83-4eb7-a1da-f9697605e0b3",
+      "result_id": "792cc2ce-8514-4a1f-bff3-b82b8d831cfb"
+    },
+    {
+      "claim_id": "747d529e-d2c1-46ac-ba96-ac234927ec78",
+      "result_id": "792cc2ce-8514-4a1f-bff3-b82b8d831cfb"
+    },
+    {
+      "claim_id": "c8ffc008-98d4-4d5d-8d38-2d7b95c4f126",
+      "result_id": "792cc2ce-8514-4a1f-bff3-b82b8d831cfb"
+    },
+    {
+      "claim_id": "cb42c85d-bbdc-445d-b6b7-a3f2ba46754f",
+      "result_id": "79819f99-2275-4d18-8e5a-b1c9d951829e"
+    },
+    {
+      "claim_id": "bf4dd6b2-b09e-43d4-a32f-56d3ef7961c7",
+      "result_id": "79819f99-2275-4d18-8e5a-b1c9d951829e"
+    },
+    {
+      "claim_id": "6a1f2c66-3ddd-47d7-9f2e-aa3e472e493e",
+      "result_id": "79819f99-2275-4d18-8e5a-b1c9d951829e"
+    },
+    {
+      "claim_id": "837d3edf-7c97-4f6d-b85d-81c5e76d6a5a",
+      "result_id": "d6aca536-107b-41a1-92ff-2df8e44930f6"
+    },
+    {
+      "claim_id": "4c8b4781-5fda-4530-9b28-e50b1fc2ad0e",
+      "result_id": "d6aca536-107b-41a1-92ff-2df8e44930f6"
+    },
+    {
+      "claim_id": "c53affac-51ea-477a-9354-ee3aabecf333",
+      "result_id": "3e994206-99e9-4b12-8521-7626f3ffc84c"
+    },
+    {
+      "claim_id": "dc48724f-0e1a-454a-9d91-d0d81e5c42e7",
+      "result_id": "3e994206-99e9-4b12-8521-7626f3ffc84c"
+    },
+    {
+      "claim_id": "18870a11-acf6-40b8-b0ef-8423d68f51d0",
+      "result_id": "3e994206-99e9-4b12-8521-7626f3ffc84c"
+    },
+    {
+      "claim_id": "f6f3df24-4d42-4265-9095-bf026ea33d0a",
+      "result_id": "3e994206-99e9-4b12-8521-7626f3ffc84c"
+    },
+    {
+      "claim_id": "39c7985f-db47-4240-9fa3-9879dfc07801",
+      "result_id": "3e994206-99e9-4b12-8521-7626f3ffc84c"
+    },
+    {
+      "claim_id": "b90b96a7-5b55-40af-956f-53ad447662c8",
+      "result_id": "3e994206-99e9-4b12-8521-7626f3ffc84c"
+    },
+    {
+      "claim_id": "602992c9-c4b7-465e-92fb-b158145e6537",
+      "result_id": "3e994206-99e9-4b12-8521-7626f3ffc84c"
+    },
+    {
+      "claim_id": "3b1e7cfb-ae28-4f49-8a5d-6aa9f50d988d",
+      "result_id": "3e994206-99e9-4b12-8521-7626f3ffc84c"
+    },
+    {
+      "claim_id": "136acfe3-c7c2-4ce8-aa5f-823c97550d4b",
+      "result_id": "3e994206-99e9-4b12-8521-7626f3ffc84c"
+    },
+    {
+      "claim_id": "7370265e-3f0a-422a-b561-74763a5eea70",
+      "result_id": "ae4d822f-7785-4245-9469-97a5fa2e612f"
+    },
+    {
+      "claim_id": "c81650d2-3c3b-4e1c-8ab8-f0551b89e36e",
+      "result_id": "ae4d822f-7785-4245-9469-97a5fa2e612f"
+    },
+    {
+      "claim_id": "2e138a70-7c19-4eb2-8dd7-a9d86d182856",
+      "result_id": "ae4d822f-7785-4245-9469-97a5fa2e612f"
+    },
+    {
+      "claim_id": "3e7ee028-fabe-4efb-a352-58869e311c3c",
+      "result_id": "ae4d822f-7785-4245-9469-97a5fa2e612f"
+    },
+    {
+      "claim_id": "70725707-0dae-4897-abee-ed0a21cea9ec",
+      "result_id": "ae4d822f-7785-4245-9469-97a5fa2e612f"
+    },
+    {
+      "claim_id": "49cdde82-4f57-4139-8a0b-092ee9287133",
+      "result_id": "ae4d822f-7785-4245-9469-97a5fa2e612f"
+    },
+    {
+      "claim_id": "e3a4d0a3-fae8-4d7b-9eed-b399f3cf3d1b",
+      "result_id": "ae4d822f-7785-4245-9469-97a5fa2e612f"
+    },
+    {
+      "claim_id": "7f652665-fca1-4ccc-8d6b-6e00e8149727",
+      "result_id": "ae4d822f-7785-4245-9469-97a5fa2e612f"
+    },
+    {
+      "claim_id": "53f71767-f811-48d5-81f0-111c7fcde186",
+      "result_id": "ae4d822f-7785-4245-9469-97a5fa2e612f"
+    },
+    {
+      "claim_id": "f30f9be7-778d-4589-913e-41308782c929",
+      "result_id": "ae4d822f-7785-4245-9469-97a5fa2e612f"
+    },
+    {
+      "claim_id": "425ba388-7b98-4dd6-8575-1f8bc91d216e",
+      "result_id": "4dca9f1f-6b43-481c-9cc7-c61ef2abd0bf"
+    },
+    {
+      "claim_id": "46c02311-5883-4052-ba47-92f78b7ad05f",
+      "result_id": "4dca9f1f-6b43-481c-9cc7-c61ef2abd0bf"
+    },
+    {
+      "claim_id": "ac5a4eb9-67a0-42a1-a57c-fa1788549ac8",
+      "result_id": "4dca9f1f-6b43-481c-9cc7-c61ef2abd0bf"
+    },
+    {
+      "claim_id": "5185c5bf-87e4-49e0-a39c-98c86f9d8eb2",
+      "result_id": "4dca9f1f-6b43-481c-9cc7-c61ef2abd0bf"
+    },
+    {
+      "claim_id": "15811d01-9784-4189-95a7-565a4f66b077",
+      "result_id": "7e7a1ef8-ca08-49a0-be8d-1b8c6f49d21d"
+    },
+    {
+      "claim_id": "e22d9383-c298-4aff-b8d4-2b3ad4e8cf00",
+      "result_id": "7e7a1ef8-ca08-49a0-be8d-1b8c6f49d21d"
+    },
+    {
+      "claim_id": "dfb45e8d-2942-4ffe-a557-abfd22687f92",
+      "result_id": "7e7a1ef8-ca08-49a0-be8d-1b8c6f49d21d"
+    },
+    {
+      "claim_id": "aea426a5-6b36-434b-b0b8-72108451a273",
+      "result_id": "12ad3f0d-b4e3-47e0-9721-88ae59e198c9"
+    },
+    {
+      "claim_id": "106a5373-a275-4159-9a59-cea00e5c5fbd",
+      "result_id": "12ad3f0d-b4e3-47e0-9721-88ae59e198c9"
+    },
+    {
+      "claim_id": "99739a69-93b8-4e53-be8b-c553fc17c8fa",
+      "result_id": "12ad3f0d-b4e3-47e0-9721-88ae59e198c9"
+    },
+    {
+      "claim_id": "5605df01-2daf-4360-9260-d357c2b38e6b",
+      "result_id": "12ad3f0d-b4e3-47e0-9721-88ae59e198c9"
+    },
+    {
+      "claim_id": "a1c82975-8492-4f5a-941c-05f51385180b",
+      "result_id": "12ad3f0d-b4e3-47e0-9721-88ae59e198c9"
+    },
+    {
+      "claim_id": "7412a25d-def5-4e1e-9f61-6b79d0feedf1",
+      "result_id": "800bb3b7-957c-453f-9340-4539c706c26b"
+    },
+    {
+      "claim_id": "88754419-0fbb-4355-b61b-e7be2481c024",
+      "result_id": "800bb3b7-957c-453f-9340-4539c706c26b"
+    },
+    {
+      "claim_id": "97f1417c-8a17-4f75-a068-52405e0baa4c",
+      "result_id": "800bb3b7-957c-453f-9340-4539c706c26b"
+    },
+    {
+      "claim_id": "a7e280e2-38f3-4cb2-a641-e5e8d8b4175a",
+      "result_id": "19e583c3-fa70-4715-9df8-891c8c0e31fe"
+    },
+    {
+      "claim_id": "d3f26fea-a5ea-4991-916c-9a40071376a3",
+      "result_id": "19e583c3-fa70-4715-9df8-891c8c0e31fe"
+    },
+    {
+      "claim_id": "b472dc8c-a07d-4f52-9cd3-17fd0aabf712",
+      "result_id": "19e583c3-fa70-4715-9df8-891c8c0e31fe"
+    },
+    {
+      "claim_id": "5650d015-5a30-4330-9dc2-eb3e800d8902",
+      "result_id": "19e583c3-fa70-4715-9df8-891c8c0e31fe"
+    },
+    {
+      "claim_id": "d502e265-07b8-4338-aa05-eb3307249cce",
+      "result_id": "19e583c3-fa70-4715-9df8-891c8c0e31fe"
+    },
+    {
+      "claim_id": "6e5914f6-c02a-4ecf-8d4b-fa5eec2c83c3",
+      "result_id": "19e583c3-fa70-4715-9df8-891c8c0e31fe"
+    },
+    {
+      "claim_id": "d2f93ae9-6291-4166-b987-9bacb937996a",
+      "result_id": "aa9174b2-d395-4b98-865c-45f66762952b"
+    },
+    {
+      "claim_id": "c5a8c6bb-711e-4ff1-a565-0f6bcbb4f5e9",
+      "result_id": "aa9174b2-d395-4b98-865c-45f66762952b"
+    },
+    {
+      "claim_id": "b4c007b5-9073-4f91-a890-e6140288032c",
+      "result_id": "12feffa2-9f3b-4990-ac36-eaf81e1b3862"
+    },
+    {
+      "claim_id": "377f4ed3-d0c3-4e95-9c79-9c13bdd563a2",
+      "result_id": "12feffa2-9f3b-4990-ac36-eaf81e1b3862"
+    },
+    {
+      "claim_id": "32a21edc-4130-4fe9-8b01-54abc5adc42d",
+      "result_id": "12feffa2-9f3b-4990-ac36-eaf81e1b3862"
+    },
+    {
+      "claim_id": "85dc48a5-8220-49c8-8c63-2739ee6bb429",
+      "result_id": "12feffa2-9f3b-4990-ac36-eaf81e1b3862"
+    },
+    {
+      "claim_id": "b4f5ee57-7e4b-4525-81a8-bcbcf633201d",
+      "result_id": "12feffa2-9f3b-4990-ac36-eaf81e1b3862"
+    },
+    {
+      "claim_id": "b16cc3be-b4d6-4748-abc5-1965f324e8a7",
+      "result_id": "12feffa2-9f3b-4990-ac36-eaf81e1b3862"
+    },
+    {
+      "claim_id": "64e01f91-f16c-45fa-9ab9-c69dc7de39cc",
+      "result_id": "12feffa2-9f3b-4990-ac36-eaf81e1b3862"
+    },
+    {
+      "claim_id": "f29d9657-8900-4ca8-bf18-56e37dffcd27",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "4f63294a-e203-4b37-8774-913c1e20f2b7",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "04c57afe-b015-43d2-a164-35b19b2aa8a3",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "f8e36a6c-5143-4ba6-850a-b42769010b16",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "879561ac-6d56-458a-9466-e0850387f9c8",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "01dcc426-135a-47e2-a9fa-53302ce3997a",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "7d5a9f11-70d5-4613-bed3-69ff6b400b22",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "ad5c51c3-6746-49a2-889b-58909dfc18c9",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "da985c28-6145-4e2e-af2c-f60c32497046",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "564accb3-0c8f-4f16-94f2-7436ae60e950",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "4746ad08-d4fb-4056-96b2-eb4b9a301477",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "c8ccc84c-849b-4b68-be14-54637a56e2d3",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "290d43c9-fd46-466d-8143-037c01f22752",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "920ee5a5-90ef-4333-ac5d-d1cbc443c7f5",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    },
+    {
+      "claim_id": "f00861dd-f0f8-4da9-95e5-0be7c5802b66",
+      "result_id": "0ac41fd6-d719-4ad8-912d-0ac502d7bb94"
+    }
+  ],
+  "comparisons": []
+}

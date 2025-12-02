@@ -1,0 +1,387 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C21",
+      "C125"
+    ],
+    "result": "This study presents the first comprehensive map of regulatory elements across the entire lifespan of an animal (C. elegans), identifying 42,245 accessible elements across development and ageing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10, C21, and C125 collectively establish the novelty and scope of this work. The authors provide comprehensive ATAC-seq data across six developmental stages and five ageing timepoints (C29-C32), identifying 42,245 accessible elements. The claim of being 'first' is supported by C10 and C21 documenting the absence of prior comprehensive studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53"
+    ],
+    "result": "The study functionally annotates accessible elements based on transcription patterns, defining 15,714 protein-coding promoters and 19,231 putative enhancers using nuclear transcription elongation and initiation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C46-C50, C52-C53 describe the annotation methodology and results. The approach uses transcription elongation signal (long cap RNA-seq) to distinguish promoters from enhancers (C47-C50), avoiding reliance on histone marks alone. The numbers are consistently reported and the methodology is clearly described in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C83"
+    ],
+    "result": "Both promoters and enhancers can drive orientation-independent transcription, as demonstrated by transgenic assays showing that inverted regulatory elements maintain activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C77-C79, C81, C83 are supported by transgenic experiments testing inverted promoters and enhancers. Two promoters (ztf-11, F58D5.5) and two enhancers drove expression in both orientations (C77, C83), though ztf-11 showed reduced activity when inverted (C78). The sample size is small (n=4 elements tested) but results are consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58"
+    ],
+    "result": "More than 1000 promoters (35.1% of unassigned promoters) produce antisense transcripts within protein-coding genes, suggesting a widespread regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C57-C58 describe antisense transcription from unassigned promoters. The quantification (1090 of 3106 unassigned promoters = 35.1%) is clearly stated and based on genomic location analysis. However, the functional significance ('regulatory mechanism') is speculative and not experimentally validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C27",
+      "C84",
+      "C85",
+      "C86",
+      "C130"
+    ],
+    "result": "The accessibility of most regulatory elements changes during development (71% of elements, 10,199 of 13,596 promoters), supporting a key role for chromatin structure in developmental regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C27, C84-C86, C130 are supported by DESeq2 analysis showing 71% of elements with \u22652-fold changes (FDR<0.01) during development. The statistical approach is appropriate and thresholds are clearly defined. The interpretation about chromatin structure's role (C130) is reasonable but somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C28",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C98",
+      "C103",
+      "C112",
+      "C131"
+    ],
+    "result": "Promoters with shared accessibility patterns cluster into groups enriched for tissue-specific expression and GO terms related to specific developmental processes, identifying 16 developmental clusters including tissue-specific clusters (gonad, intestine, hypodermis, neural/muscle).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C28, C88-C93, C98, C103, C112, C131 describe clustering analysis results. K-medoid clustering identified 16 developmental clusters (C88) with correlation between accessibility and RNA levels (mean r=0.47, C89). Half show tissue-enriched expression (C91) with corresponding GO term enrichments (C98). The analysis is comprehensive though based on bulk tissue profiling which may miss cell-type-specific signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Transcription factor binding enrichment analysis identifies known tissue-specific regulators (ELT-2, BLMP-1, NHR-25, ELT-3, XND-1) and novel associations (ZTF-18, ATHP-1, CRH-2) in developmental promoter clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 describe TF binding enrichment using modENCODE/modERN data. Known TF-tissue associations are confirmed (C106-C108) and novel associations identified (C109). The analysis excludes HOT regions appropriately. However, the enrichments are computational and not experimentally validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "During ageing, most promoters remain stable (87% unchanged), with only 1,800 promoters showing changes. Eight ageing clusters were identified, with DAF-16/FoxO and related ageing TFs enriched in five clusters, particularly in intestinal genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 describe ageing analysis. Only 13% of promoters change during ageing (C113), contrasting with 71% in development. DAF-16 enrichment in five clusters (C117) is supported by TF binding analysis. The intestinal enrichment (C119) is consistent with known DAF-16 biology. The analysis appropriately uses glp-1 mutants to avoid progeny contamination (C30-C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "H3K4me3 levels at promoters inversely correlate with gene expression variability (CV=-0.64, p<10^-15), with high H3K4me3 marking promoters of broadly expressed genes and low H3K4me3 marking regulated genes, demonstrating that chromatin state alone is insufficient for element annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64, C66-C68 describe histone modification patterns. The strong inverse correlation between H3K4me3 and CV (C63) is statistically robust. About 50% of promoters have atypical histone patterns (C62), supporting the conclusion that chromatin state is unreliable for annotation (C67). This validates the transcription-based annotation approach used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "ATAC-seq provides signal similar to low-concentration DNase I or MNase but with the highest signal-to-noise ratio among chromatin accessibility methods tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by direct comparison of methods shown in Figure 1\u2014figure supplement 1. The comparison includes concentration courses for DNase I and MNase. This validates the choice of ATAC-seq as the primary method, though the comparison is limited to technical metrics rather than biological validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "72.8% of accessible elements overlap transcription factor binding sites from modENCODE/modERN. Comparison with previous studies shows partial overlap (33.7% with Ho et al., 47.9% with Daugherty et al.), with differences attributable to peak calling methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 describe validation and comparison with prior work. The TF binding overlap (C40) supports regulatory function. The modest overlap with prior studies (C41-C42) is explained by methodological differences (C43-C45), particularly the requirement for focal peaks versus broad regions. The analysis of non-overlapping sites supports this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C73",
+      "C74"
+    ],
+    "result": "Promoter annotations show good overlap (76.8-85.1%) with four previous TSS mapping studies, and three tested promoters (hlh-2, ztf-11, bed-3) drove robust GFP expression in transgenic assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C73-C74 provide validation of promoter annotations. The overlap with prior TSS studies (C54) is substantial. Direct testing of three promoters (C74) provides experimental validation, though the sample size is small. Of 23 previously validated promoters, 19 were correctly annotated (C73), showing good concordance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Promoters and enhancers share sequence features (INR elements, CpG enrichment) but differ in TATA motif presence, with TATA motifs enriched at regulated promoters with low H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 describe sequence feature analysis. Both element types show INR and CpG enrichment (C69-C70), with CpG content correlating with H3K4me3 levels (C71). TATA motifs distinguish promoters from enhancers and correlate with regulated expression (C72). The analysis is descriptive and correlative rather than mechanistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The experimental design includes six developmental stages (wild-type) and five ageing timepoints (glp-1 mutants), profiled using ATAC-seq, nuclear RNA-seq (long and short cap), ChIP-seq for four histone marks, and DNase I concentration courses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 describe the experimental design. The approach is comprehensive and appropriate. Using glp-1 mutants for ageing (C30-C31) prevents progeny contamination. The combination of methods allows functional annotation based on transcription rather than chromatin state alone. Biological replicates are included for all assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C55",
+      "C56"
+    ],
+    "result": "Accessible sites are enriched in outrons and intergenic regions. Enhancers were assigned to 6,668 genes based on location between the most upstream promoter and gene end, with 3,240 genes having multiple enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C55-C56 describe genomic distribution and enhancer-gene assignments. The enrichment in outrons/intergenic regions (C51) is expected for regulatory elements. The enhancer assignment method (C55) is proximity-based and may not reflect true regulatory targets, which is a limitation acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Most protein-coding promoters (74.0%) show bidirectional transcription initiation, but 82.6% are unidirectional promoters producing stable transcripts in only one direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 describe transcription patterns at promoters. The bidirectional initiation (C75) is similar to mammals, while unidirectional elongation (C76) distinguishes productive from non-productive transcription. This is based on short cap RNA-seq (initiation) and long cap RNA-seq (elongation) data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Changes in accessibility during development could reflect either regulation of accessibility or changes in cell number (e.g., germ line nuclei increase from 2 in L1 to ~2000 in young adults).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 appropriately acknowledges a limitation of bulk tissue profiling. The authors cannot distinguish between true regulatory changes and changes in cell type composition. This is an important caveat for interpreting developmental accessibility changes, particularly for germline clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The map did not identify promoters for every gene, missing those expressed only in males, dauer larvae, or under non-laboratory conditions, as well as promoters active in small cell numbers. Future cell-type-specific profiling should identify these missed elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 acknowledge limitations and suggest future directions. The limitations are reasonable given the experimental design (hermaphrodites, standard conditions, bulk profiling). The suggestion for cell-type-specific profiling (C129) is appropriate but speculative regarding what would be found.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C65",
+      "C80",
+      "C111",
+      "C118"
+    ],
+    "result": "Background claims about chromatin accessibility, C. elegans biology, transcription at regulatory elements, histone modifications, trans-splicing, and prior studies establish the scientific context for this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C11-C20, C22-C26, C65, C80, C111, C118 provide background knowledge and cite prior work appropriately. These establish the rationale for the study and the methodological approaches used. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C59",
+      "C124"
+    ],
+    "result": "21.7% of unassigned promoters are intergenic and may define promoters for unannotated transcripts. CEBP-1 may activate genes during ageing, similar to its mouse homologue CEBP-\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59 and C124 are speculative. C59 suggests intergenic promoters may represent unannotated transcripts but provides no validation. C124 infers CEBP-1 function from binding enrichment and mouse homology without experimental evidence. Both are reasonable hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Specific examples of cluster characteristics: stable promoters drive widely expressed genes; gonad clusters G1 and G2 show similar but different amplitude increases at L3; cluster H contains hypodermal genes with cuticle GO terms; four gonad clusters and two intestinal clusters have different functional enrichments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97, C99-C102 provide specific examples supporting the general clustering results. These details illustrate the biological coherence of clusters and the ability to distinguish functionally distinct groups within the same tissue. The examples are well-supported by the data shown in Figure 4 and supplements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Hypodermal TFs (BLMP-1, ELT-1, ELT-3) are enriched in one I+H ageing cluster, while CEBP-1 binding is enriched in Mix3 and Mix4 clusters showing continuous accessibility increases during ageing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 describe specific TF enrichments in ageing clusters. These are based on the same TF binding enrichment analysis used for developmental clusters. The patterns are consistent with known TF functions, though experimental validation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "The promoters with shared accessibility changes provide starting points for future studies of cell- and process-specific gene expression, and this resource will enable future studies of transcriptional regulation in development and ageing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 are concluding statements about the resource's utility. These are reasonable assessments of the work's value to the field. The comprehensive dataset, functional annotations, and clustering analysis do provide a valuable resource, though the actual utility will be determined by future studies.",
+    "result_type": "MINOR"
+  }
+]

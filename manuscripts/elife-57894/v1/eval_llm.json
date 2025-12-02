@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C42"
+    ],
+    "result": "The authors establish the clinical context that WEE1 inhibitor AZD1775 shows promise in cancer trials but lacks predictive biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C42 establish the rationale for the study by citing clinical trial results and the absence of response markers. These are appropriately supported by citations to prior work and represent accurate characterization of the field's knowledge gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Basal-like breast cancer (BLBC) cell lines show differential sensitivity to AZD1775 monotherapy, with a subset being highly sensitive and failing to recover after drug removal, while others recover and show minimal replication-associated DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 are well-supported by high-content imaging data (Figure 1), crystal violet recovery assays, EdU/\u03b3H2AX flow cytometry, and Annexin V/PI apoptosis measurements across multiple BLBC cell lines. The differential response phenotype is clearly demonstrated with appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C100"
+    ],
+    "result": "PTEN expression is identified as one of the strongest predictors of AZD1775 sensitivity, with low PTEN correlating with high sensitivity, failure to recover, and increased replication-associated DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 and C100 are strongly supported by proteomics/transcriptomics correlation analysis (Figure 2A-C, p=0.0002), CRISPR knockout experiments showing loss of recovery in PTEN-deleted cells (Figure 2E), increased \u03b3H2AX in replicating PTEN-deficient cells (Figure 2F), and rescue experiments with PTEN reconstitution (Figure 2G-H). The correlation with WEE1 dependency (r=0.70, p=0.008) provides orthogonal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The combination of AZD1775 with ATR inhibitor AZD6738 synergistically inhibits recovery and tumor growth in PTEN-high recovering BLBC cells by inducing persistent S-phase arrest and preventing DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 are well-supported by in vitro recovery assays (Figure 3A), xenograft tumor growth data (Figure 3B, p<0.05), EdU incorporation showing only 13% replicating cells (Figure 3C), and BrdU immunohistochemistry in vivo (Figure 3\u2014figure supplement 1B). The synergy is consistent with recent publications (Bukhari et al., 2019; Jin et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "AZD1775+AZD6738 combination treatment leads to persistent DNA damage, reduced RAD51 expression, cellular senescence, and impaired re-expression of cell cycle regulators compared to monotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are supported by \u03b2-galactosidase staining showing senescence (Figure 3\u2014figure supplement 1D, p=0.001), native BrdU staining for ssDNA (Figure 3E), \u03b3H2AX/RAD51 immunofluorescence (Figure 3F), and immunoblots showing impaired CDC25/CDT1/Cyclin A re-expression (Figure 3G). The data consistently demonstrate irreversible cell cycle arrest with the combination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "High-content siRNA screening identifies DNA-PK (PRKDC) and other NHEJ factors as synthetic lethal with AZD1775, with DNA-PK inhibitors showing synergy with AZD1775 in multiple BLBC cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by siRNA screen data (Figure 4A-B) showing HR and NHEJ gene depletion sensitizes to AZD1775, with GO enrichment analysis (p=0.035 for HR genes), and drug synergy analysis with NU7441 (Figure 4C). The screen design appears appropriate with z-score analysis, though details on statistical correction for multiple testing are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "AZD1775 induces phosphorylation of DNA-PK independently of ATR, and DNA-PK maintains CHK1 phosphorylation when ATR is inhibited, suggesting a compensatory checkpoint pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 are well-supported by immunoblot analysis showing preserved pCHK1 relative to total CHK1 with combination treatment (Figure 4D), RPA phosphorylation accumulation (Figure 4E), sustained CHK1 phosphorylation after washout (Figure 4F), DNA-PK phosphorylation by both treatments (Figure 4G-H), co-localization with pCHK1 and ssDNA (Figure 4\u2014figure supplements 1E, 2A), and in vivo IHC confirmation (Figure 4\u2014figure supplement 2C). The specificity is demonstrated by DNA-PK but not ATM inhibitors blocking RPA phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "DNA-PK knockout prevents cellular recovery following AZD1775 monotherapy, with DNA-PK-deficient cells showing reduced CHK1 phosphorylation when ATR is inhibited and increased replication-associated DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 are strongly supported by CRISPR knockout validation (Figure 5A, Figure 5\u2014figure supplement 2A-B), recovery assays showing complete failure to proliferate (Figure 5B), immunofluorescence quantification of pCHK1 and pDNA-PK (Figure 5C), immunoblot confirmation (Figure 5D), and EdU/\u03b3H2AX analysis showing increased DNA damage in replicating cells (Figure 5E, p<0.01). RAD51/PALB2 knockouts serve as appropriate HR-deficient controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "AZD1775-sensitive HCC38 cells show DNA-PK phosphorylation but lower total pS345-CHK1 levels compared to recovering cells, and PTEN knockout enhances DNA-PK phosphorylation while attenuating CHK1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by immunofluorescence and immunoblot data (Figure 6A-C) showing DNA-PK phosphorylation in sensitive cells, reduced CHK1 activation, and altered signaling in PTEN-knockout cells with expected AKT hyperphosphorylation. This establishes that DNA-PK phosphorylation deficiency is not the cause of sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "AZD1775-sensitive BLBC cells display elevated cyclin E levels, and AZD1775 treatment drastically reduces cyclin E in control cells but only partially in PTEN- or DNA-PK-deleted cells, with cyclin E knockdown reducing DNA damage and increasing viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 are supported by proteomics analysis (Figure 6E) showing elevated cyclin E in sensitive cells including CCNE1-amplified MDA-MB-157, immunoblot time courses (Figure 6F-G) demonstrating impaired cyclin E downregulation in knockout cells, and siRNA experiments (Figure 6\u2014figure supplement 1D) directly linking cyclin E to replication stress. The data support cyclin E as a mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C106"
+    ],
+    "result": "The authors conclude that PTEN and DNA-PK are essential regulators of replication checkpoint arrest in response to AZD1775, with PTEN proposed as a promising biomarker for WEE1 cancer therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18-C20 and C106 represent the main conclusions synthesizing the experimental findings. While the data strongly support PTEN and DNA-PK roles in checkpoint regulation and recovery, the designation of PTEN as a 'promising biomarker' requires validation in patient samples and clinical trials. The mechanistic model (Figure 6H) is well-supported but some molecular details remain unclear. The term 'essential' may be overstated without rescue experiments fully restoring function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "AZD1775 treatment decreases Y15 phosphorylation of CDK1/CDK2 (CDK activation), and the DNA-damaging effect is attributed to CDK activation as shown by rescue with CDK2 inhibitor Milciclib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by immunoblot data (Figure 1\u2014figure supplement 1E-G) showing decreased pY15-CDK1/2 and increased \u03b3H2AX with AZD1775, with Milciclib attenuating the DNA damage. This confirms the expected mechanism of WEE1 inhibition and validates that CDK activation drives the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The authors speculate that PTEN loss deregulates PIK3/AKT/mTOR signaling, which could impact replication stress through multiple mechanisms including cyclin E regulation and checkpoint function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C108 are mechanistic speculations supported by citations to relevant literature but not directly tested in this study. While plausible and consistent with known PTEN/AKT biology, the specific pathways linking PTEN loss to impaired CHK1 activation and elevated cyclin E remain to be definitively established. AKT hyperphosphorylation is shown (C99) but downstream effects are inferred.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors cite prior work establishing that PTEN-deficient breast cancers show HR deficiency, RAD51 dissociation from replication forks, increased origin density, and impaired CHK1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 accurately cite and summarize prior work (Nik-Zainal et al., 2016; He et al., 2015; Puc et al., 2005; Aarts et al., 2012) establishing PTEN's role in DNA repair and replication stress. These citations appropriately contextualize the current findings within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors cite prior work on CHK1 activation in AZD1775 resistance, RRM2 downregulation, DNA-PK's role in CHK1 regulation during ATR inhibition, and cyclin E as a biomarker for AZD1775 response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 appropriately cite relevant prior work (Sen et al., 2017; Pfister et al., 2015; Buisson et al., 2015; Lin et al., 2014; Dungrawala et al., 2015; Hughes et al., 2013; Chen et al., 2018) that supports and contextualizes the current findings. The citations are accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The introduction establishes background knowledge on replication stress, DNA damage checkpoints, synthetic lethality, WEE1 function, and clinical context through citations to established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C41 represent accurate summaries of established knowledge in the field, appropriately supported by citations to seminal papers (Hanahan and Weinberg, 2011; Bartkova et al., 2006; Ashworth, 2008; Toledo et al., 2013; Parker and Piwnica-Worms, 1992; etc.). These provide appropriate context for the study.",
+    "result_type": "MINOR"
+  }
+]

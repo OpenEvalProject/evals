@@ -1,0 +1,1440 @@
+{
+  "submission": {
+    "id": "d3727ddc-23ac-4c74-9e8c-0febeeedcc61",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:35:42.392295Z",
+    "updated_at": "2025-12-02T20:35:42.392295Z"
+  },
+  "content": [
+    {
+      "id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "submission_id": "d3727ddc-23ac-4c74-9e8c-0febeeedcc61",
+      "content_type": "manuscript",
+      "content_text": "# Effects of lifelong testosterone exposure on health and disease using Mendelian randomization\n\n## Authors\n\n- Pedrum Mohammadi-Shemirani<sup>1</sup> ([ORCID: 0000-0001-6740-7858](https://orcid.org/0000-0001-6740-7858))\n- Michael Chong<sup>1</sup>\n- Marie Pigeyre<sup>1</sup>\n- Robert W Morton<sup>6</sup> ([ORCID: 0000-0003-0099-4167](https://orcid.org/0000-0003-0099-4167))\n- Hertzel C Gerstein<sup>1</sup>\n- Guillaume Par\u00e9<sup>1</sup> ([ORCID: 0000-0002-6795-4760](https://orcid.org/0000-0002-6795-4760)) \u2020\n\n### Affiliations\n\n1. Population Health Research Institute, David Braley Cardiac, Vascular and Stroke Research Institute Hamilton Canada\n2. Thrombosis and Atherosclerosis Research Institute, David Braley Cardiac, Vascular and Stroke Research Institute Hamilton Canada\n3. Department of Medical Sciences, McMaster University Hamilton Canada\n4. Department of Biochemistry and Biomedical Sciences, McMaster University Hamilton Canada\n5. Department of Medicine, McMaster University, Hamilton Health Sciences Hamilton Canada\n6. Department of Kinesiology, McMaster University Hamilton Canada\n7. Department of Pathology and Molecular Medicine, McMaster University, Michael G. DeGroote School of Medicine Hamilton Canada\n8. Department of Health Research Methods, Evidence, and Impact, McMaster University Hamilton Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nTestosterone products are prescribed to males for a variety of possible health benefits, but causal effects are unclear. Evidence from randomized trials are difficult to obtain, particularly regarding effects on long-term or rare outcomes. Mendelian randomization analyses were performed to infer phenome-wide effects of free testosterone on 461 outcomes in 161,268 males from the UK Biobank study. Lifelong increased free testosterone had beneficial effects on increased bone mineral density, and decreased body fat; adverse effects on decreased HDL, and increased risks of prostate cancer, androgenic alopecia, spinal stenosis, and hypertension; and context-dependent effects on increased hematocrit and decreased C-reactive protein. No benefit was observed for type 2 diabetes, cardiovascular or cognitive outcomes. Mendelian randomization suggests benefits of long-term increased testosterone should be considered against adverse effects, notably increased prostate cancer and hypertension. Well-powered randomized trials are needed to conclusively address risks and benefits of testosterone treatment on these outcomes.\n\n## Introduction\n\nIn developed countries, rising rates of both serum testosterone level testing and therapy initiation have been observed among older male patients (Handelsman, 2013; Layton et al., 2014). In the USA alone, it is estimated 1.5\u20131.7% of males are prescribed testosterone (Baillargeon et al., 2018; Jasuja et al., 2017). Randomized clinical trials (RCT) have attempted to elucidate the benefits and risks of testosterone treatment (Bhasin et al., 2018a; Gagliano-Juc\u00e1 and Basaria, 2019). These studies identified short-term beneficial effects on bone mineral density (BMD), sexual function, body fat and muscle mass, and anaemia; potential adverse effects on venous thrombosis and coronary artery plaque; and no effects on cognitive function, fatigue, or hemoglobin A1c (HbA1c) (Bhasin et al., 2018a; Gagliano-Juc\u00e1 and Basaria, 2019; Mohler et al., 2018; Snyder et al., 2018). However, given the logistic and financial challenges involved in a well-powered RCT with appropriate follow-up, there is unlikely to be satisfactory evidence regarding long-term effects and risks of adverse outcomes, such as myocardial infarction (MI), stroke and cancer (Gagliano-Juc\u00e1 and Basaria, 2019). Given the rates of testosterone prescription, efforts to resolve the causal effects of testosterone on health outcomes have important public health implications (Bhasin et al., 2018a).\n\nMendelian randomization (MR) is a technique for causal inference that leverages the random allocation of genetic variants to infer the unconfounded relationship between an exposure and outcome. Similar to the random assignment of participants to experimental groups in a RCT, genetic variants are randomly allocated at meiosis (Davies et al., 2018). For instance, if individuals genetically randomized to produce higher testosterone develop different rates of cardiovascular disease (CVD), then MR analysis supports a causal effect of testosterone on risk of CVD (Figure 1\u2014figure supplement 1). Notably, this technique has previously replicated RCT findings, among others demonstrating causal roles for LDL cholesterol and dysglycemia on CVD risk (Holmes et al., 2015; Ross et al., 2015). Earlier MR studies investigating the effects of testosterone have demonstrated harmful effects on lipid levels but inconsistent effects on CVD, and they were limited by the small number of genetic variants (Schooling et al., 2018; Zhao et al., 2014). A recent MR study using the UK Biobank identified a large number of genetic variants associated with testosterone and found evidence for harmful effects on several types of cancers but sex-specific effects on type 2 diabetes (T2D) (Ruth et al., 2020). This study highlighted the importance of performing sex-specific analyses for testosterone, but it was focused on glycemic and oncologic traits (Ruth et al., 2020). Therefore, we sought to expand the scope of prior studies by performing a comprehensive scan of the effects of free testosterone on human disease in males.\n\nWe hypothesized that MR and genetic risk score (GRS) analyses would enable estimation of the causal effects of longstanding exposure to high levels of free testosterone on health outcomes in males. We first conducted a genome-wide association study (GWAS) for calculated free testosterone (CFT) in male participants of the UK Biobank (n\u00a0=\u00a0161,268) cohort to identify genetic determinants of free testosterone levels. Then, using MR, we investigated the causal effects of lifelong genetically-elevated free testosterone levels on a priori health outcomes previously investigated in RCTs of testosterone treatment, encompassing: expected clinical benefits (physical activity, strength, fat-free body mass, body fat, BMD, dementia, depression) and potential adverse effects (androgenic alopecia, heematocrit, T2D, prostate cancer, benign prostate hyperplasia, blood pressure, CVD, heart failure, ischemic stroke) (Figure 1;\u00a0Bhasin et al., 2018a; Gagliano-Juc\u00e1 and Basaria, 2019; Mohler et al., 2018; Snyder et al., 2018). Finally, we used GRS to investigate the associations of lifelong genetically-elevated free testosterone levels on 439 health outcomes, encompassing diseases (n\u00a0=\u00a0415) and biomarkers of health (n\u00a0=\u00a024) (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-v2.jpg)\n\n**Figure 1.:** Free testosterone levels were calculated in males from the UK Biobank cohort. Then, genetic variants were tested for association with levels of CFT and carried forward if: genome-wide significant (p<5\u00d710\u22128) and unassociated with SHBG (p<0.05). In the subset of unrelated males, these genetic variants were used to investigate the effect of genetically-predicted CFT on: (1) 22 a priori outcomes relevant to suspected effects of testosterone treatment using Mendelian randomization, and (2) 439 outcomes in a hypothesis-free approach using a weighted genetic risk score. CFT, calculated free testosterone; MR, Mendelian randomization; SHBG, sex hormone-binding globulin.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In accordance with Mendel\u2019s second law, random and independent inheritance of alleles can be thought of akin to random allocation of treatment vs. placebo in RCT. Therefore, by the same reasoning, if MR finds genetic variants affecting testosterone are associated with a difference in CVD risk, it provides evidence that testosterone causally affects CVD.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp2-v2.jpg)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp3-v2.jpg)\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Distribution of raw sex hormone-binding globulin levels in males from the UK Biobank cohort (B) Distribution of natural log-transformed sex hormone-binding globulin levels in males from the UK Biobank cohort.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Plot shows observed test statistics (y-axis) relative to expected test statistics under a null model (x-axis), and lambda (\u03bb) represents genomic inflation factor.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig1-figsupp6-v2.jpg)\n\n## Results\n\n### Genetic determinants of CFT in males\n\nTo calculate free testosterone levels, 187,524 males in the white, British subset of the UK Biobank cohort were excluded if they had missing levels of total testosterone, SHBG and albumin, or self-reported taking androgen medications. After these exclusions, the study population consisted of 161,268 males with an average CFT of 0.210 nmol/L (Supplementary file 1 - Table 1 and Figure 1\u2014figure supplement 2).\n\nThere were 13,338 genetic variants associated with CFT that reached genome-wide significance (p<5\u00d710\u22128). After removing genetic variants associated with natural-log-transformed SHBG, there were 7048 genetic variants that comprised 93 independent signals carried forward for subsequent genetic analyses (Supplementary file 1 - Table 2 and Figure 1\u2014figure supplement 3). Overall, chip-based heritability of CFT was estimated at 15% (95% CI\u00a0=\u00a014 to 16), while these 93 independent genetic variants associated with CFT explained 3.7% of the total variance of CFT levels in males from the UK Biobank.\n\n### Effect of genetically-predicted free testosterone on 22 a priori health outcomes\n\nIn males from the UK Biobank, sample size for the quantitative risk factors ranged from 30,439 to 156,403, while number of cases for dichotomous outcomes ranged from 1003 to 70,283 (Table 1). After adjusting for the 22 outcomes tested, one-sample MR analysis using IVW regression identified significant effects of CFT on hematocrit percentage, body fat-free percentage, body fat percentage, heel BMD, androgenic alopecia, and prostate cancer (Table 1). Each 0.1 nmol/L higher CFT had beneficial effects on increased heel BMD (0.40 SD; 95% CI\u00a0=\u00a00.25 to 0.54; p=1.10\u00d710\u22127), increased body fat-free percentage (1.91%; 95% CI\u00a0=\u00a01.48 to 2.35; p=9.06\u00d710\u221218), and decreased body fat percentage (\u22121.88%; 95% CI\u00a0=\u00a0\u22122.31 to \u22121.45; p=1.65\u00d710\u221217), but deleterious effects on increased hematocrit percentage (1.37%; 95% CI\u00a0=\u00a01.12 to 1.62; p=1.03\u00d710\u221227), risk of prostate cancer (OR\u00a0=\u00a01.51; 95% CI\u00a0=\u00a01.21 to 1.88; p=2.1\u00d710\u22124), and risk of androgenic alopecia (OR\u00a0=\u00a01.49; 95% CI\u00a0=\u00a01.19 to 1.86; p=5.28\u00d710\u22124) (Figure 3\u2014figure supplements 1\u20136). Leave-one-out analyses did not identify any outlying individual genetic variants responsible for the observed effects on any significant outcomes.\n\n**Table 1.**\n Effect of calculated free testosterone on 22 health outcomes from the UK Biobank relevant to effects of testosterone treatment in males.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Outcome</th>\n      <th>Effect per 0.1 nmol/L increased CFT (95% CI)</th>\n      <th>P-value</th>\n      <th>Sample Size Cases/Controls</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">Outcomes with Expected Clinical Benefits</td>\n    </tr>\n    <tr>\n      <td>Body fat-free percentage*</td>\n      <td>1.91% (1.48 to 2.35)</td>\n      <td>9.06E-18</td>\n      <td>154254</td>\n    </tr>\n    <tr>\n      <td>Body fat percentage*</td>\n      <td>\u22121.88% (\u22122.31 to \u22121.45)</td>\n      <td>1.65E-17</td>\n      <td>153772</td>\n    </tr>\n    <tr>\n      <td>Heel bone mineral density*</td>\n      <td>0.40 SD (0.25 to 0.54)</td>\n      <td>1.10E-07</td>\n      <td>90676</td>\n    </tr>\n    <tr>\n      <td>Depression</td>\n      <td>OR\u00a0=\u00a01.45 (1.1 to 1.91)</td>\n      <td>7.77E-03</td>\n      <td>4725/152485</td>\n    </tr>\n    <tr>\n      <td>Accelerometer-based physical activity</td>\n      <td>0.89 milligravity (\u22120.05 to 1.82)</td>\n      <td>0.06</td>\n      <td>30439</td>\n    </tr>\n    <tr>\n      <td>All fracture</td>\n      <td>OR\u00a0=\u00a00.89 (0.71 to 1.11)</td>\n      <td>0.30</td>\n      <td>9133/148077</td>\n    </tr>\n    <tr>\n      <td>Handgrip strength</td>\n      <td>0.29 kg (\u22120.31 to 0.89)</td>\n      <td>0.34</td>\n      <td>156400</td>\n    </tr>\n    <tr>\n      <td>All dementia</td>\n      <td>OR\u00a0=\u00a01.26 (0.67 to 2.34)</td>\n      <td>0.47</td>\n      <td>1003/156207</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Outcomes with Potential Adverse Effects</td>\n    </tr>\n    <tr>\n      <td>Hematocrit percentage*</td>\n      <td>1.37% (1.12 to 1.62)</td>\n      <td>1.03E-27</td>\n      <td>152872</td>\n    </tr>\n    <tr>\n      <td>Prostate cancer*</td>\n      <td>OR\u00a0=\u00a01.51 (1.21 to 1.88)</td>\n      <td>2.10E-04</td>\n      <td>7586/149624</td>\n    </tr>\n    <tr>\n      <td>Androgenic alopecia*</td>\n      <td>OR\u00a0=\u00a01.49 (1.19 to 1.86)</td>\n      <td>5.28E-04</td>\n      <td>70283/85756</td>\n    </tr>\n    <tr>\n      <td>Benign prostatic hyperplasia</td>\n      <td>OR\u00a0=\u00a01.36 (1.10 to 1.67)</td>\n      <td>3.80E-03</td>\n      <td>10894/146316</td>\n    </tr>\n    <tr>\n      <td>Myocardial infarction</td>\n      <td>OR\u00a0=\u00a01.23 (1 to 1.53)</td>\n      <td>0.05</td>\n      <td>9398/147812</td>\n    </tr>\n    <tr>\n      <td>Glucose</td>\n      <td>\u22120.06 mmol/L (\u22120.14 to 0.02)</td>\n      <td>0.12</td>\n      <td>138307</td>\n    </tr>\n    <tr>\n      <td>Hemoglobin A1c</td>\n      <td>\u22120.34 mmol/mol (\u22120.82 to 0.15)</td>\n      <td>0.17</td>\n      <td>149828</td>\n    </tr>\n    <tr>\n      <td>All stroke</td>\n      <td>OR\u00a0=\u00a01.18 (0.90 to 1.56)</td>\n      <td>0.23</td>\n      <td>4569/152641</td>\n    </tr>\n    <tr>\n      <td>Diastolic blood pressure</td>\n      <td>0.27 mmHg (\u22120.30 to 0.85)</td>\n      <td>0.35</td>\n      <td>148384</td>\n    </tr>\n    <tr>\n      <td>Ischemic stroke</td>\n      <td>OR\u00a0=\u00a00.92 (0.61 to 1.37)</td>\n      <td>0.67</td>\n      <td>2122/155088</td>\n    </tr>\n    <tr>\n      <td>Systolic blood pressure</td>\n      <td>\u22120.12 mmHg (\u22121.23 to 1.00)</td>\n      <td>0.84</td>\n      <td>148383</td>\n    </tr>\n    <tr>\n      <td>Type 2 diabetes</td>\n      <td>OR\u00a0=\u00a01.02 (0.81 to 1.28)</td>\n      <td>0.87</td>\n      <td>11079/146131</td>\n    </tr>\n    <tr>\n      <td>Venous thromboembolism</td>\n      <td>OR\u00a0=\u00a01.02 (0.74 to 1.4)</td>\n      <td>0.92</td>\n      <td>4127/153083</td>\n    </tr>\n    <tr>\n      <td>Heart failure</td>\n      <td>OR\u00a0=\u00a01.01 (0.76 to 1.34)</td>\n      <td>0.95</td>\n      <td>4288/152922</td>\n    </tr>\n  </tbody>\n</table>\n\n_* Significant adjusting for Bonferroni correction of 22 outcomes (p<2.27\u00d710\u22123)\ufeff.CFT,\u00a0calculated free testosterone._\n\nSensitivity analyses were performed to detect violations of MR assumptions. Egger regression did not detect evidence of directional pleiotropy for any outcomes (pintercept\u00a0<0.05) (Supplementary file 1 - Table 3). Results using MR-RAPS were consistent with IVW regression method for all significant outcomes (Supplementary file 1 \u2013 Table 4). However, MR-PRESSO detected evidence of pleiotropic variants for hematocrit percentage, body fat-free percentage, body fat percentage, heel BMD, androgenic alopecia, whole body fat-free mass, hemoglobin A1C, glucose, handgrip strength, systolic blood pressure, diastolic blood pressure, T2D, and benign prostate hyperplasia (Supplementary file 1 - Table 5). However, removal of pleiotropic variants made no changes to the significance or interpretation of earlier results using IVW regression (Supplementary file 1 - Table 5).\n\n### Phenome-wide effects of genetically-predicted free testosterone\n\nTo discover novel effects of free testosterone, we tested for the association of a GRS for testosterone with 415 diseases and 24 biomarkers in the same subpopulation of unrelated males from the UK Biobank. Sample size for biomarkers ranged from 118,783 for lipoprotein(a) to 149,940 for total cholesterol, while number of cases for diseases ranged from 876 for \u2018localized superficial swelling, mass, or lump\u2019 to 40,960 for \u2018hypertension\u2019 (Figure 2\u2014source data 1). After adjusting for the 439 outcomes tested, each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with beneficial effects on lowered C-reactive protein (\u03b2\u00a0=\u00a0\u22120.085 SD; 95% CI\u00a0=\u00a0\u22120.119 to \u22120.052; p=6.15\u00d710\u22127) but adverse effects on increased creatinine (\u03b2\u00a0=\u00a00.113 SD; 95% CI\u00a0=\u00a00.079 to 0.146; p=4.78\u00d710\u221211), lowered apolipoprotein A (\u03b2\u00a0=\u00a0\u22120.018 g/L; 95% CI\u00a0=\u00a0\u22120.026 to \u22120.01; p=1.55\u00d710\u22125), lowered HDL (\u03b2\u00a0=\u00a0\u22120.074 SD; 95% CI\u00a0=\u00a0\u22120.109 to \u22120.039; p=3.62\u00d710\u22125), and increased risks of hypertension (OR\u00a0=\u00a01.17; 95% CI\u00a0=\u00a01.08 to 1.26; p=2.83\u00d710\u22125), and spinal stenosis (OR\u00a0=\u00a02.03; 95% CI\u00a0=\u00a01.51 to 2.75; p=3.82\u00d710\u22126) (Table 2 and Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig2-v2.jpg)\n\n**Figure 2.:** Logistic or linear regression was used to assess the association of the genetic score for free testosterone against each dichotomous or quantitative outcome, respectively. -log10(p-values) for the association of each outcome on the y-axis are stratified into subcategories on the x-axis. Labelled outcomes were statistically significant adjusting for multiple hypothesis testing (p<1.14\u00d710\u22124).\n\n**Table 2.**\n Effects of calculated free testosterone on 439 health outcomes in males from the UK Biobank significant after adjusting for multiple hypothesis testing using Bonferroni correction (p<1.14\u00d710\u22124).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Outcome</th>\n      <th>Effect per 0.1 nmol/L increased CFT (95% CI)</th>\n      <th>P-value</th>\n      <th>Sample Size Cases/Controls</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Creatinine</td>\n      <td>0.113 SD (0.079 to 0.146)</td>\n      <td>4.78 \u00d7 10\u221211</td>\n      <td>149849</td>\n    </tr>\n    <tr>\n      <td>C-reactive protein</td>\n      <td>\u22120.085 SD (\u22120.119 to \u22120.052)</td>\n      <td>6.15 \u00d7 10\u22127</td>\n      <td>149547</td>\n    </tr>\n    <tr>\n      <td>Spinal stenosis</td>\n      <td>OR\u00a0=\u00a02.03 (1.51 to 2.75)</td>\n      <td>3.82 \u00d7 10\u22126</td>\n      <td>1917/150919</td>\n    </tr>\n    <tr>\n      <td>Apolipoprotein A</td>\n      <td>\u22120.018 g/L (\u22120.026 to \u22120.01)</td>\n      <td>1.55 \u00d7 10\u22125</td>\n      <td>138185</td>\n    </tr>\n    <tr>\n      <td>HDL cholesterol</td>\n      <td>\u22120.074 SD (\u22120.109 to \u22120.039)</td>\n      <td>3.62 \u00d7 10\u22125</td>\n      <td>138394</td>\n    </tr>\n    <tr>\n      <td>Essential hypertension</td>\n      <td>OR\u00a0=\u00a01.17 (1.08 to 1.27)</td>\n      <td>7.53 \u00d7 10\u22125</td>\n      <td>40809/115957</td>\n    </tr>\n    <tr>\n      <td>Hypertension</td>\n      <td>OR\u00a0=\u00a01.17 (1.08 to 1.26)</td>\n      <td>1.05 \u00d7 10\u22124</td>\n      <td>40960/115957</td>\n    </tr>\n  </tbody>\n</table>\n\n_CFT, calculated free testosterone; HDL, high density lipoprotein; GRS, genetic risk score._\n\nAs confirmation, we demonstrated the GRS was indeed not associated with natural log-transformed natural log-transformed SHBG levels in males (p=0.12). For all statistically significant outcomes, associations were directionally consistent after removing participants taking blood pressure medication (Supplementary file 1 - Table 6) or cholesterol-lowering medication (Supplementary file 1 - Table 7). Further sensitivity analyses were performed by repeating the one-sample MR analysis using 52 genetic variants associated with total testosterone in males from the UK Biobank (Supplementary file 1 - Table 8). For all statistically significant outcomes, effects observed using total testosterone genetic variants were directionally consistent with CFT, and results for all outcomes are presented in Supplementary file 1 - Tables 9 and 10. Finally, most effect estimates for genetically-predicted testosterone in this stu\ufeffdy were comparable in magnitude to effect sizes reported in RCTs except bone mineral density (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-v2.jpg)\n\n**Figure 3.:** Error bars indicate 95% confidence intervals around the effect estimate. MR effect estimates are reported in terms of 0.1 nmol/L of CFT to approximate expected effect sizes after initiation of testosterone treatment (Bhasin et al., 2018b).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp1-v2.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp3-v2.jpg)\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp4-v2.jpg)\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp5-v2.jpg)\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/58914/elife-58914-fig3-figsupp6-v2.jpg)\n\n## Discussion\n\nWe herein perform MR and GRS analyses of CFT to identify effects of endogenous free testosterone in males on 461 health outcomes. All effects are reported in terms of 0.1 nmol/L of CFT to approximate expected effect sizes after initiation of testosterone treatment (Bhasin et al., 2018b). Among 22 a priori outcomes with suspected effects based on RCTs of testosterone treatment, MR analyses demonstrated that each 0.1 nmol/L increase in CFT was associated with adverse effects on increased risk of prostate cancer, risk of androgenic alopecia, and hematocrit percentage, but beneficial effects on increased heel BMD, increased body fat-free percentage and decreased body fat percentage. Findings on body composition, hematocrit, and BMD are consistent with short-term effects in randomized trials of testosterone treatment (Bhasin et al., 2018a). Although testosterone treatment has not been conclusively shown to increase risk of prostate cancer and androgenic alopecia in RCTs, androgen suppression therapies, such as of 5\u03b1-reductase inhibitors, are used as treatment for androgenic alopecia and prostate cancer (Adil and Godwin, 2017; Andriole et al., 2010). The increased risk of prostate cancer replicates effects of testosterone observed in a previous MR analysis using independent data from the PRACTICAL consortium, and further supports the role of testosterone in development of these outcomes. As the leading cause of cancer among men, the predicted 1.5-fold increased risk as a result of changes in testosterone observed after initiation of testosterone treatment warrants further investigation in clinical trials and greater scrutiny in at-risk patient populations (American Cancer Society, 2019; Bhasin et al., 2018b). Furthermore, these results cast doubt on cardiovascular, cognitive, or metabolic benefit for increased testosterone, as we do not find evidence of a beneficial effect of CFT on hard endpoints, such as dementia, MI, stroke, fractures, or T2D (Aukrust et al., 2009). Most of the estimates from MR analyses were comparable with effect sizes from RCTs (Figure 3). There was only significant heterogeneity between the effects on BMD for MR and RCT, but it is difficult to make direct comparisons due to variable change in testosterone levels after administration of testosterone in each RCT, different methods and anatomical sites of BMD estimation, and differences between short-term effects in RCTs relative to lifelong effects in MR.\n\nAmong the remaining outcomes without well-established effects from RCTs, we identified evidence of novel associations between an increased GRS for CFT with adverse effects on creatinine, HDL, apolipoprotein A, hypertension, and spinal stenosis, but beneficial effects on C-reactive protein. Higher genetically-predicted free testosterone was associated with increased creatinine (\u03b2\u00a0=\u00a00.113 SD; 95% CI\u00a0=\u00a00.079 to 0.146; p=4.78\u00d710\u221211). Mechanistically, effects of testosterone on renal function are unclear, but this effect may be mediated through the known effect of testosterone on increased muscle mass which is tightly related to serum creatinine (Carrero et al., 2009; Filler et al., 2016; Schutte et al., 1981). HDL cholesterol (\u03b2\u00a0=\u00a0\u22120.074 SD; 95% CI\u00a0=\u00a0\u22120.109 to \u22120.039; p=3.62\u00d710\u22125) and its main protein component, apolipoprotein A (\u03b2\u00a0=\u00a0\u22120.018 g/L; 95% CI\u00a0=\u00a0\u22120.026 to \u22120.01; p=1.55\u00d710\u22125), were both decreased with higher genetically-predicted free testosterone. Likewise, the Testosterone Trials found male participants over 65 years of age randomized to testosterone experienced mildly lowered HDL cholesterol levels after 12 months (Mohler et al., 2018; Snyder et al., 2018). Higher free testosterone was associated with decreased C-reactive protein (CRP) (\u03b2\u00a0=\u00a0\u22120.085 SD; 95% CI\u00a0=\u00a0\u22120.119 to \u22120.052; p=6.15\u00d710\u22127). Although the Testosterone Trials did not find any change in CRP in its testosterone arm, testosterone is widely-believed to have suppressive effects on the immune system which may extend to markers of inflammation such as CRP (Trigunaite et al., 2015). Furthermore, despite no effect on SBP or DBP, our analyses suggest 0.1 mol/L higher free testosterone is associated with increased risk of hypertension (OR\u00a0=\u00a01.17; 95% CI\u00a0=\u00a01.08 to 1.27; p=1.05\u00d710\u22124). Given the multifactorial nature of this disease, the apparent discrepancy between blood pressure and hypertension may be explained by an effect on other risk factors that develop into hypertension. Moreover, both human and animal studies suggest a role of testosterone on hypertension. A randomized controlled trial found testosterone administration increased levels of NT-proBNP, and studies of both transgender men and anabolic steroid users have found testosterone increased arterial stiffness and blood pressure (Bachmann et al., 2019; Hartgens and Kuipers, 2004; Velho et al., 2017). Meanwhile, animal models have shown testosterone may aggravate hypertension and exacerbate increased production of reactive oxygen species specifically in hypertensive but not normotensive rat vascular endothelial tissue (Chignalia et al., 2012; Reckelhoff et al., 1998). Testosterone is widely-believed to have anti-inflammatory and osteogenic effects, but our analyses showed an association with higher risk of spinal stenosis (OR\u00a0=\u00a02.03; 95% CI\u00a0=\u00a01.51 to 2.75; p=3.82\u00d710\u22126). However, the literature shows some evidence that higher testosterone is associated with greater loss of cartilage in healthy older males, and evidence from mouse models suggest testosterone has a sex-specific role in worsening osteoarthritis, a common risk factor for spinal stenosis (Hanna, 2005; Hl et al., 2007).\n\nIn comparison to previous MR studies, our results broaden the scope of the existing literature by comprehensively assessing the effects of testosterone on 461 health outcomes including hard endpoints and intermediate biomarkers. Moreover, a key strength of this study was the stringent attempt to control for pleiotropic effects of SHBG on free testosterone by conservatively removing any genetic variants in the GRS that were associated with SHBG (p<0.05). The apparent difference between protective effects of testosterone observed in a previous MR analysis of testosterone and lack of protective effect in our study might be a result of less stringent control for pleiotropic effects of SHBG in the previous study. Given studies have identified associations between SHBG and risk of T2D independent of testosterone and a direct role of SHBG in mediating signalling on target cells, insufficient controls for SHBG may lead to residual pleiotropic effects (Lakshman et al., 2010; Rosner et al., 2010; Vikan et al., 2010). Other reasons may include genetic variants explaining less variation in testosterone levels in our study, fewer cases of T2D leading to inadequate statistical power to detect weaker effects in our study, or other differences between the populations of the UK Biobank in our study and DIAGRAM consortium used by Ruth et al., 2020.\n\nThere are several limitations of this study. First, an assumption of the MR analysis is that the effect of the genetic variant on the outcome occurs only through free testosterone levels, such that there are no pleiotropic effects through other proteins or mechanisms (Davies et al., 2018). This concern was minimized by the use of multiple genetic variants, which limited the likelihood of a common alternative pathway confounding our observation. Moreover, we performed several sensitivity analyses and excluded genetic variants associated with SHBG levels, which is a potential source of pleiotropy through its effects on other hormones. Although a stringent p-value threshold was selected for genetic variants, the winner\u2019s curse phenomenon may still bias genetic effect sizes due to the same sample being used to select genetic variants and estimate effect sizes on testosterone. Additionally, one-sample MR may be susceptible to bias towards the confounded estimate if the genetic variants are \u2018weak instruments\u2019, which can occur if the genetic variants don\u2019t explain enough of the variance in free testosterone levels (Davies et al., 2018). To address this concern, we confirmed the selected genetic variants were strong instruments using a common threshold in MR literature (F-statistic\u00a0>10) (Davies et al., 2018). Next, the UK Biobank is generally healthier and higher socioeconomic status than the general population, so there are insufficient cases to detect effects on certain rarer outcomes, such as Alzheimer\u2019s disease, and inadequate power to identify weaker effects of free testosterone on common outcomes. Relatedly, an inherent limitation for outcomes ascertained using linked electronic medical records is a lack of adjudication and consistent application of codes in clinical practice. In the UK Biobank, CFT levels were below the reference ranges for young healthy individuals, which may be attributable to the older age of the cohort and inherent inaccuracy of immunoassays at lower levels of total testosterone. Total testosterone levels are similarly low relative to reference ranges and comparable to previous studies in the UK Biobank (Peila et al., 2020; Petermann-Rocha et al., 2020). Additional sources of variability introduced into the total testosterone measurements include differences in fasting times, diets, and time of day at which blood was drawn from participants. Nevertheless, genetic variants associated with testosterone consistently replicated known effects of testosterone on established outcomes, such as body fat, body fat-free mass, and hematocrit (Table 1). Furthermore, although the free hormone hypothesis is still debated by experts, we found largely consistent effects on outcomes using genetically-predicted free testosterone and total testosterone (Handelsman, 2017). The only significant outcomes from MR analyses with free testosterone that showed no significant effect with total testosterone across all MR methods were HDL (p=0.55) and apolipoprotein A (p=0.45). Finally, these results represent lifelong effects of endogenous free testosterone and may not necessarily reflect effects of exogenous testosterone treatment, which can vary in duration, age of initiation, and dosage.\n\nTaken altogether, the decision to initiate long-term testosterone use warrants careful consideration of benefits and risk. Beneficial effects on body composition, sexual function, hematocrit, and BMD should be weighed against detrimental effects on androgenic alopecia, prostate cancer, hypertension and spinal stenosis, and no detectable beneficial effects on other major clinical endpoints. Ultimately, well-designed and appropriately powered RCTs, such as the ongoing TRAVERSE trials (clinicaltrials.gov, NCT03518034), are necessary to conclusively address questions of safety and effectiveness of testosterone treatment. However, as demonstrated in this study, genetically-informed analyses can be powerful tools to aid health professionals in prioritizing allocation of limited resources towards investigating the most pressing questions.\n\n## Materials and methods\n\n### Study population - UK Biobank\n\nThe UK Biobank is a large-scale longitudinal cohort study that recruited over 500,000 people between the ages of 37\u201373 across the United Kingdom from 2006 to 2010 (Sudlow et al., 2015) (RRID:SCR_012815). UK Biobank received ethical approval from the North West Multi-Centre Research Ethics Committee (REC reference: 11/NW/0382). This research was conducted using the UK Biobank under Application Number 15255. For this study, UK Biobank participants were included if white British ancestry, and no self-reported androgen medication at recruitment based on field ID 20003.\n\n### Measurement of testosterone and sex hormone-binding globulin in UK Biobank\n\nIn the UK Biobank, total testosterone and sex hormone-binding globulin (SHBG) were measured on a Beckman Coulter Unicel DXI 800 using a one-step competitive analysis and two-step sandwich immunoassay, respectively. Analytical range for the immunoassays of total testosterone and SHBG were 0.35 to 55.52 and 0.33 to (226-242) nmol/L, respectively. For total testosterone, within-laboratory CV for high, medium, and low concentration quality control samples were 4.15, 3.66, and 8.34%. For SHBG, within-laboratory CV for high, medium, and low concentration quality control samples were 5.22, 5.25, and 5.67%. For each blood sample drawn at recruitment, testosterone, SHBG, and albumin were each measured only once. Testosterone and SHBG measurements were flagged if they fell outside the manufacturer\u2019s observed reportable range, or samples reported high levels of bilirubin, hemoglobin or lipids/turbidity that might interfere with the assay. Testosterone measurements were flagged if levels of total protein (<55 or>85 g/L) or triglycerides (>20 mmol/L) could interfere with the assay measurements. To monitor assay consistency, all samples were run with internal quality control samples between batches and operations used external quality assurance schemes against the ISO 17025:2005 standard.\n\n### Genome-wide association study of CFT\n\nIndividual-level genetic data was available for 488,317 participants that consented to blood collection and genotyping. Genotyping was performed with the Applied Biosystems UK Biobank Lung Exome Variant Evaluation (UK BiLEVE) and UK Biobank Axiom arrays (Affymetrix Research Services Laboratory, Santa Clara, California, USA). Description of quality control has been previously described in detail (Bycroft et al., 2017). Genetic variants located in the human leukocyte antigen gene complex were excluded due to extensive pleiotropic effects.\n\nFor genome-wide association testing, samples were restricted to a subset of 161,268 males with white British ancestry, no androgen medication (n\u00a0=\u00a02,137), and no missing values of testosterone, SHBG, or albumin at recruitment. Free testosterone at recruitment was calculated using the Vermeulen equation (Vermeulen et al., 1999). CFT levels were winsorized such that outlying values greater or less than four standard deviations (SD) away from the mean in males were set to 4 SD.\n\nThis study was restricted to genetic variants from \u2018v3\u2019 release of the UK Biobank data including those present in the Haplotype Reference Consortium and 1000 Genomes panels with imputation imputation quality greater than 0.7, no deviation from Hardy-Weinberg equilibrium (p>1\u00d710\u221210) and minor allele frequency greater than 1% (McCarthy et al., 2016). To allow for genetic relatedness between participants, linear mixed models in BOLT-LMM were used to test for associations of genetic variants (Loh et al., 2015). The model was adjusted for age, age2, chip type, assessment center, and the first 20 genetic principal components. Genetic variants near the SHBG gene may alter binding affinity for testosterone thereby violating assumptions of the Vermeulen equation, or risk having pleiotropic effects through binding of other sex hormones (Ohlsson et al., 2011). Therefore, any genetic variants associated with CFT reaching genome-wide significance (p\u22645\u00d710\u22128) were excluded if associated with natural log-transformed SHBG levels at a stringent threshold (p<0.05) in the same subset of the UK Biobank (Figure 1\u2014figure supplement 4). To arrive at an independent set of genetic variants, variants associated with CFT but not SHBG were pruned based on linkage disequilibrium (LD) at a threshold of r2\u00a0<0.01 using Europeans from 1000 Genomes phase three as reference panel (Abecasis et al., 2012) (RRID:SCR_006828).\n\nGenomic inflation factor (\u03bb) was 1.2 and calculated as the ratio of the median test statistic from the GWAS relative to the expected median test statistic under a null model (Figure 1\u2014figure supplement 5). To distinguish between an inflated \u03bb due to population stratification or polygenic inheritance of the trait, the intercept of an LD score regression line was determined to be 1.03 indicating the observed inflation could be attributed to polygenicity rather than uncontrolled population stratification. LD score regression was performed and intercept was calculated with LDSC software (Bulik-Sullivan et al., 2015) using 1000 Genomes Europeans phase three data as the LD reference panel (Abecasis et al., 2012).\n\n### Definition of health-related UK Biobank outcomes\n\nFor MR analyses, 22 health outcomes were selected a priori based on relevance with known or suspected effects of testosterone treatment and categorized based on expected beneficial or adverse effects from RCT data. Outcomes with expected beneficial effects were fractures at any site, heel BMD, body fat percentage, body fat-free percentage, dementia, depression, handgrip strength, and physical activity level measured by wrist-worn accelerometer. Outcomes with potential adverse effects were stroke, androgenic alopecia, benign prostate hyperplasia (BPH), blood pressure, glucose, hematocrit percentage, hemoglobin A1c, heart failure, prostate cancer, MI, type 2 diabetes (T2D), and venous thromboembolism. Depression was coded using a \u2018broad\u2019 definition as previously described, which included self-reported depressive symptoms with associated impairment, or having sought help for \u2018nerves, anxiety, tensions or depression\u2019 (Howard et al., 2018). Androgenic alopecia was defined based on participants\u2019 responses to the question, \u2018Which of the following best describes your hair/balding pattern?\u2019 (field ID 2395). Available options were four pictures of hair patterns (Supplementary file 1 \u2013 Figure 1). Individuals with pattern 3 or four were cases, pattern 1 and 2 were controls, and \u2018do not know\u2019 or \u2018prefer not to answer\u2019 responses were excluded. Physical activity was assessed using the overall acceleration average from wrist-worn accelerometer devices over the course of approximately 7 days. Following UK Biobank recommendations, individuals were excluded from the analysis based on poorly calibrated data (field ID: 90016) or having worn the device for insufficient time to get a stable measure of physical activity (field ID: 90015) (Doherty et al., 2017). Blood pressure measures were coded as the average of two automated measurements of blood pressure taken a few moments apart by a registered nurse using an Omron 705 IT electronic blood pressure monitor. Body fat percentage and whole body fat-free mass were estimated based on impedance measurements from a Tanita BC418MA body composition analyser. Heel BMD was estimated as a T-score based on quantitative ultrasound index through the calcaneus relative to that expected in someone of the same sex. Handgrip strength was calculated as the average of right and left hands measured using a Jamar J00105 hydraulic hand dynamometer. hemoglobin A1C was measured using high performance liquid chromatography analysis on a Bio-Rad VARIANT II Turbo. Glucose was measured using hexokinase analysis on a Beckman Coulter AU5800. Hematocrit percentage was measured using a Coulter LH750 and calculated as the relative volume of packed erythrocytes to whole blood, computed by the formula: $\\frac{redbloodcells\u2217meancorpuscularvolume}{10}$. Detailed descriptions of all 22 outcomes are shown in Supplementary file 1 \u2013 Table 11.\n\nFor hypothesis-free GRS analyses, we included 24 blood biomarkers measured at recruitment and 415 diseases derived from linked electronic medical records (Supplementary file 1 - Table 12;\u00a0Brion et al., 2013; Denny et al., 2013; Wu et al., 2019). Disease outcomes were defined using the previously published \u2018PheCode\u2019 scheme to aggregate ICD-10 codes from hospital episodes (field ID 41270), death registry (field ID 40001 and 40002), and cancer registry (field ID 40006) records (Denny et al., 2013; Wu et al., 2019). Given the small number of cases for many disease outcomes, any outcomes with detectable odds ratios less than 0.5 or greater than 2 per 0.1 nmol/L at 80% power were excluded (ncases\u00a0<\u00a0871) based on approximate changes in response to testosterone supplementation (Bhasin et al., 2018b; Brion et al., 2013; Traustad\u00f3ttir et al., 2018). After these exclusions, there were 415 diseases that remained for subsequent analyses in this study. Furthermore, all blood biomarkers measured by the UK Biobank at recruitment were included except estradiol and rheumatoid factor, which were complicated by majority missing values below the limit of detection of the assay (nbiomarkers\u00a0=\u00a024). Detailed descriptions of all 439 outcomes (415 diseases and 24 biomarkers) are shown in Supplementary file 1 \u2013 Table 12.\n\n### Mendelian randomization analysis\n\nIn a subset of unrelated males with White British ancestry, the association of all independent genetic variants associated with CFT were determined for each of the 22 a priori outcomes using additive genetic models in BGENIE v1.2 and adjusted for the same covariates as the model for CFT (Bycroft et al., 2017). For each of the 22 outcomes, one-sample MR analysis was used to combine the effect of each independent genetic variant on CFT with its effect on the outcome using the inverse variance-weighted (IVW) method (Burgess et al., 2016). Effect estimates were reported per 0.1 nmol/L increase in CFT levels based on approximate changes in response to testosterone treatment (Bhasin et al., 2018b). For dichotomous outcomes, odds ratios were approximated as previously described (Adams et al., 2018) by converting linear effect estimates from BGENIE to log-odds scale using:\n\n$log\u2061OR=\\frac{}{k(1-k)}$,\u00a0where k is the proportion of cases for the given outcome.\n\nGiven the polygenic nature of testosterone and potential for pleiotropy, for outcomes with statistically significant effects using the IVW method, standard sensitivity analyses were conducted to correct for pleiotropic effects, such as MR-Egger, MR-RAPS, and MR-PRESSO (Bowden et al., 2015; Verbanck et al., 2018). To investigate and correct for directional pleiotropy on each outcome, we performed Egger regression. For outcomes with y-intercept of the regression line significantly different from 0 (p<0.05), there was evidence of directional pleiotropy and the causal estimate from MR Egger was reported to attempt to control for pleiotropic effects (Bowden et al., 2015). As a sensitivity analysis robust to idiosyncratic pleiotropy and weak instrument bias, MR-RAPS (Robust Adjusted Profile Score) was conducted using overdispersion and Tukey\u2019s loss function (Zhao et al., 2018). To detect and correct for potential bias from invalid variants with pleiotropic effects, we performed the MR-PRESSO (Mendelian Randomization Pleiotropy RESidual Sum and Outlier) test with 10,000 simulations (Verbanck et al., 2018). The global test p-value evaluated whether there was any overall horizontal pleiotropy among all genetic variants. For outcomes with significant p-values (p<0.05), outlying genetic variants with predicted pleiotropic effects were removed and MR analysis repeated to correct for horizontal pleiotropy. The distortion test evaluated whether removal of the pleiotropic variants resulted in a significantly different causal estimate (p<0.05). Leave-one-out analysis was performed such that the IVW MR analysis was repeated after each genetic variant was excluded to identify effects on an outcome that are driven by a single outlying genetic variant. Furthermore, the set of genetic variants used in MR analysis were assessed for \u2018weak instrument bias\u2019, which can result in biased estimates if genetic variants don\u2019t explain enough variance in exposure (e.g., CFT) levels (Pierce et al., 2011). Lastly, as a sensitivity analysis, all MR and GRS analyses were repeated using genetic variants associated with total testosterone. Finally, for significant outcomes, we compared estimated effect sizes from this MR study with reported effect sizes from random controlled trials of testosterone therapy, where possible, in Figure 3 (Cui et al., 2014; Fern\u00e1ndez-Balsells et al., 2010; Ng Tang Fui et al., 2016; Zhang et al., 2020).\n\nIn consideration of \u2018weak instrument bias\u2019, the F-statistic was 66 for the genetic variants associated with CFT, which was considered a strong instrument based on the recommended threshold of greater than 10 (Davies et al., 2018). MR-PRESSO was performed using the MR-PRESSO package and all other MR analyses were implemented using the TwoSampleMR package (Hemani et al., 2018; Verbanck et al., 2018) (RRID:SCR_019010).\n\n### Genetic risk score analysis\n\nA genetically-predicted value of CFT was determined for each individual by constructing weighted GRS in the unrelated White British subset of UK Biobank males (n\u00a0=\u00a0157,252). Weighted GRS were calculated by multiplying the effect of each CFT-associated genetic variant by the number of effect-corresponding alleles and summing this value for each individual. The GRS was tested for association with outcomes using logistic or linear regression models for case-control or quantitative outcomes, respectively, and adjusted for the same covariates as the GWAS for CFT. Effect estimates were reported per 0.1 nmol/L increase in CFT levels based on approximate changes in response to testosterone treatment (Bhasin et al., 2018b). As sensitivity analyses, we repeated GRS analyses after excluding males that self-reported taking blood pressure (n\u00a0=\u00a038,676) or cholesterol medication (n\u00a0=\u00a035,737) at recruitment based on field ID 6177.\n\n### Genetic determinants and effects of total testosterone in males\n\nAs a set of sensitivity checks, we repeated all GWAS, MR, and GRS analyses using total testosterone. In the White British subset of the UK Biobank, there were 175,421 males with total testosterone measured with an average 11.9 nmol/L (Figure 1\u2014figure supplement 6). In this population, a genome-wide association study was conducted for total testosterone as described herein for CFT. After removing genetic variants associated with natural-log-transformed SHBG and LD pruning for independent SNPs (r2\u00a0<0.01), there were 52 independent genetic variants associated (p<5\u00d710\u22128) with total testosterone in males from the UK Biobank (Supplementary file 1 \u2013 Table 8).\n\nAll statistical analyses were performed under R version 3.6.0, unless otherwise specified (RRID:SCR_001905). A two-sided p-value less than 5 \u00d7 10\u22128 for GWAS, 2.27 \u00d7 10\u22123 (0.05/22 outcomes) for a priori MR analyses, and 1.14 \u00d7 10\u22124 (0.05/439 outcomes) for hypothesis-free GRS analyses was considered statistically significant.\n",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "930a79d5-cc53-4d69-a460-98b7987ac31b",
+      "submission_id": "d3727ddc-23ac-4c74-9e8c-0febeeedcc61",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dolores Shoback, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58914.sa1](https://doi.org/10.7554/eLife.58914.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nWe appreciate the key role of Mendelian randomization analyses in assessing the wide spectrum of testosterone related outcomes in men that you explore in this paper. The approach well complements rigorous randomized trials and provides important information that such large data sets can inform on. Given the increasing use of testosterone in older men in many countries, these data are important in both confirming and extending what trials have shown and in highlighting the lack of effects of lifelong testosterone levels on cardiovascular, cognitive and metabolic outcomes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Effects of lifelong testosterone exposure on health and disease: a Mendelian randomization study\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eduardo Franco as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nThis paper provides a large amount of new data on the role of testosterone levels in metabolic outcomes. It provides support for insights gained from trials as well as new insights in especially controversial areas.\n\nPlease direct your revisions to the matters discussed by the reviewers as below and consider the additional analyses that are requested as the editors believe addressing these issues will strengthen your paper.\n\nReviewer #1:\n\nThe long-term benefits and risks of testosterone are incompletely understood. Recent randomized trials, especially the TTrials, have taught us a great deal about the efficacy of testosterone replacement therapy, the long-term risks of MACE, prostate cancer, and diabetes remain unclear. Although randomized controlled trials remain the gold standard, MR studies, such as these, can provide useful complementary data.\n\nIn this manuscript, the authors performed Mendelian randomization analyses to infer phenome-wide effects of free testosterone on large number of outcomes in male participants of the UK Biobank study. The analyses yielded several very interesting findings, including the positive association of genetically-determined free testosterone levels with increased bone mineral density, and decreased body fat; decreased HDL, and increased risks of prostate cancer, androgenic alopecia, hypertension; and some other phenotypes. The analyses included individual-level data from a large sample from the UK Biobank. Some of the outcomes that were analyzed are especially important: diabetes, prostate cancer, venous thrombosis, myocardial infarction, and stroke because testosterone's effects on these outcomes have remain unclear from the RCTs published so far. The authors performed several sensitivity analyses to ensure that the effects were not driven by any single variant. Additional, Egger regression and MR-PRESSO were performed to detect and correct for potential pleiotropy. For prostate cancer, a two-sample MR analysis was performed using data from the PRACTICAL Consortium and the UK Biobank.\n\nA small number of MR studies have previously investigated the effects of total testosterone on lipids, bone mineral density, and CVD risk; many of them have included relatively smaller samples. This study represents a comprehensive effort to estimate the relation of genetic loci associated with calculated free testosterone levels with a large number of outcomes.\n\nAnother recently published MR study by Ruth et al. in Nature Medicine (cited in this paper) reported that genetically determined testosterone levels were associated with sexually dimorphic effects on diabetes risk (Ruth et al., 2020). Although some of the conditions and phenotypes analyzed by Ruth et al. are similar to those reported in this manuscript, the current manuscript includes additional analyses that were not evaluated by Ruth et al. Furthermore, some of the findings differ from those reported by Ruth et al. Therefore, the manuscript includes some important novel information beyond that which was reported by Ruth et al.\n\nA very large body of data are presented, representing a huge amount of work. Thus, the information presented in this manuscript represents an important addition to the extant literature on this topic.\n\nSpecific comments:\n\n1) The ascertainment of outcomes and diagnoses using electronic medical records has some inherent problems. These problems are greater for ascertaining some outcomes such as dementia, Alzheimer's dementia, depression, BPH, etc because of the lack of rigorously defined pre-specified diagnostic criteria in clinical practice, lack of prospective adjudication, and nonuniform application of diagnostic codes by clinicians in practice. Many types of lower urinary tract symptoms get coded as BPH. These limitations should be acknowledged in the Discussion.\n\n2) A substantial fraction of adult men (1.5 to 1.7% in the US) are being treated with testosterone. Were testosterone-treated men excluded from the analyses? This is important because testosterone treatment. could confound the analyses. Also, men with genetically-determined low testosterone level are at increased risk of getting treated with testosterone. Therefore, it would be important to know what fraction of people in the UK Biobank data were treated with testosterone and whether they were excluded from the analyses.\n\n3) Total testosterone levels were measured using a platform-based immunoassay that are well known to lack accuracy, especially in the low range. More importantly, free testosterone levels were calculated using an equation that is based on a linear model of testosterone binding to SHBG, which has been shown to be erroneous. The measurement problems are perhaps reflected in the fact that the average calculated free testosterone level in the sample (0.21 nmol/L) is substantially lower than the mean free testosterone levels determined by equilibrium dialysis, the reference method. The reviewer recognizes that the authors had no choice but to use the data that were available in the UK Biobank. But acknowledging this limitation in the Discussion would be important.\n\n4) Also, the basic characteristics (LLOQ, precision and accuracy, specificity, analytical range) of the assays should be provided.\n\n5) How much of the variation in calculated free T levels was explained by the genetic loci that were associated with CFT levels? The Manhattan plot in Figure 1\u2014figure supplement 3 shows the distribution of p-values from genome-wide association study of calculated free testosterone after exclusion of SHBG-associated variants based on chromosomal location. This figure contains really important data. Although the GWAS of total and free T levels have been published, it would be very useful to include the information on these loci and whether any new loci were discovered.\n\n6) Figure 1\u2014figure supplement 1. The units for SHBG are in log units which would be difficult for the readers to comprehend; changing the units to nmol/L would make it easier to get a sense of the distribution of values.\n\n7) The authors found significant associations with some really clinically important outcomes, such as prostate cancer, prostate cancer, androgenic alopecia, and hypertension. Some discussion of the effect size and meaningfulness of the observed effect would be valuable in putting these observations in clinical context.\n\n8) Some of the findings of the analyses, especially on diabetes and prostate cancer risk, differ from those reported by Ruth et al. The authors should comment on why the findings differ in the two sets of analyses that used the same body of UK Biobank data.\n\n9) It is stated that the methods for outcome ascertainment are included in a table in a supplementary file. Criteria for some of the outcomes are provided (e.g., alopecia, depression); I may have missed it, but I did not find the criteria for outcome ascertainment that were used in the definition of a number of other outcomes (e.g., dementia, diabetes, BPH, prostate cancer, etc.).\n\nReviewer #2:\n\nThis is a very interesting and valuable study using a mendelian randomization approach to infer (with the appropriate caveats) causal effects of genetically determined serum testosterone on a variety of phenotypes considered to be androgen sensitive. Strengths include the large cohort (albeit limited to white UK men), and the careful analyses conducted. Some outcomes are expected, others perhaps less so, and may represent chance finding.\n\nComments to the authors:\n\n1) Given that one of the view aspects that all testosterone guidelines agree on is that total testosterone is the principal measurement to confirm a clinical diagnosis of androgen deficiency, it would be interesting to present results according to total testosterone-or at least defend decision to not do so; while the \u201cfree hormone hypothesis\u201d is supported by some studies, not all experts agree on this, as the evidence is not definitive.\n\n2) It is not clear whether testosterone (and SHGB) were measured only once, and if so whether they were drawn in the morning in the fasted state. This is important given the diurnal variability of testosterone measurements, effects of food intake and day to day variability. Moreover, immunoassay for testosterone can be imprecise, especially at the lower range. All these factors may have limited the precision of the GWAS.\n\n3) Interestingly, the average CFT was 0.21 nmol/L in the population (Results first paragraph) is, in the context of sexual symptoms, below the cutoff for diagnosing \"Late onset hypogonadism\" DOI: 10.1056/NEJMoa0911101. It is not clear whether serum testosterone was measured across the population or only in men in whom it was clinically indicated; either way the low average is surprising and requires further explanation.\n\n4) Discussion paragraph one: \"the predicted 1.5-fold increase...observed after initiation of testosterone supplementations\", please clarify where these data are from.\n\n5) Discussion paragraph five: the dichotomy between \u201clifestyle\u201d and \u201cclinical\u201d perspective is a little forced-please rephrase. The clinical approach to testosterone treatment involves weighing benefits (e.g. body composition that may be metabolically favourable or on BMD that may (or may not) reduce fracture risk) against risks. As a matter of course while testosterone replacement in men with organic hypogonadism is undisputed, the role of testosterone treatment for symptomatic men with age-related decline in testosterone remains uncertain. I suggest to avoid the term \u201csupplementation\u201d as it infers correcting a clear hormone deficiency state and instead use the more neutral term \u201ctreatment\u201d which acknowledges the possibility that treatment may be pharmacological instead of replacement.\n\n6) Abstract: \"MR suggests lifestyle benefits\" this is not clear please rephrase.\n\nReviewer #3:\n\nThis manuscript applies Mendelian randomization to investigate potential causal effects of testosterone on biomarkers and health outcomes. Although the statistical methods used by the authors are generally appropriate, there is still some room for improvement (see the comments below). I hope the authors can address them in a revision.\n\n1) I think the Mendelian randomization results will become a lot stronger if the authors can compare the estimated effects on the 22 a priori outcomes with the existing results from RCT (for example, using a scatterplot of MR effects versus RCT effects, with standard error bars in both directions). This will not only reveal whether there is any systematic bias of the MR design/method for testosterone but also how much the \"lifelong\" effect estimated by MR is larger than short term effect estimated by RCT.\n\n2) Given all the methodological developments for MR, I am surprised to see that the authors chose to report the results of inverse variance weighting (IVW) estimator instead of the other more robust methods. IVW is only valid in the ideal theoretical setting, which is rarely the case for empirical applications. For example, in Figure 3\u2014figure supplement 3 it is very clear that there are a few negative outliers and the IVW slope (or MR-Egger slope) seems to underestimate the positive effect suggested by the majority of the SNPs. This issue can be addressed by MR-PRESSO, but an even better alternative is MR-RAPS that handles outliers, overdispersion, and the many weak instrument asymptotic variance. Related software resources and discussion can be found in the links below:\n\nhttps://github.com/qingyuanzhao/mr.raps\n\nhttps://doi.org/10.1093/ije/dyz142\n\n3) A statistical issue unaddressed by the authors is the winner's curse in selecting the genetic instruments. This happens if the same GWAS is used to both select instruments and make statistical inference. In general, the winner's curse biases the point estimator towards 0 in two-sample MR, but that bias can be more complicated when compounded with other issues like outliers. The winner's curse can be eliminated by using a three-sample MR design, in which a separate dataset is used to select instruments; see the paper in the second link above. If this is not possible, the best alternative I know is to use a very strict significance threshold for instrument selection (which the authors have already done) and acknowledge the potential bias from winner's curse in the discussion.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Effects of lifelong testosterone exposure on health and disease using Mendelian randomization\" for further consideration by eLife. Your revised article has been evaluated by the editors after consultation with the original reviewers.\n\nThe manuscript has been improved but there are two remaining issues that need to be addressed before full acceptance is made, as outlined below:\n\nOne of the reviewers, who is enthusiastic about this paper, strongly requests that you make two additional analyses and/or explanations. That reviewer, an expert in the testosterone field, states:\n\n1) One issue that I am still puzzled about is the difference in the findings from the data reported by Ruth et al. with respect to the association between genetically determined free testosterone and diabetes risk. The authors list \"fewer cases of T2D leading to inadequate statistical power or other differences in the populations used for T2D analysis.\" If the same database of UK Biobank was used in both the analyses, why would there be a difference in the number of T2D cases or in the study population?\n\n2) I also continue to be concerned about the calculated free T concentrations that are substantially lower than those described previously in community-dwelling men. I recognize that these are the numbers that the UK Biobank has provided, but it would be worth re-checking the calculations to make sure there is no inadvertent systematic error in computation.\n\nComment: The authors have been very diligent in providing a very large body of data in the supplementary tables and figures. I do not recommend inclusion of any additional data beyond what is included in the current manuscript.\n",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2c0c0f14-81f7-487f-9864-06b6248a62cf",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C1",
+      "claim": "In developed countries, rising rates of both serum testosterone level testing and therapy initiation have been observed among older male patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In developed countries, rising rates of both serum testosterone level testing and therapy initiation have been observed among older male patients (Handelsman, 2013; Layton et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Handelsman, 2013 and Layton et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "87d027aa-a746-4cf2-b3cc-059b6e6ea52d",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C2",
+      "claim": "In the USA, it is estimated 1.5\u20131.7% of males are prescribed testosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "In the USA alone, it is estimated 1.5\u20131.7% of males are prescribed testosterone (Baillargeon et al., 2018; Jasuja et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Baillargeon et al., 2018 and Jasuja et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "0ffa4d77-cdbc-4f7a-aae0-7b18a7e6f606",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C3",
+      "claim": "Randomized clinical trials have identified short-term beneficial effects of testosterone treatment on bone mineral density, sexual function, body fat and muscle mass, and anaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies identified short-term beneficial effects on bone mineral density (BMD), sexual function, body fat and muscle mass, and anaemia; potential adverse effects on venous thrombosis and coronary artery plaque; and no effects on cognitive function, fatigue, or hemoglobin A1c (HbA1c) (Bhasin et al., 2018a; Gagliano-Juc\u00e1 and Basaria, 2019; Mohler et al., 2018; Snyder et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple RCT studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "bb010a9d-5a92-40f6-a2fd-79d2a449de83",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C4",
+      "claim": "Randomized clinical trials have identified potential adverse effects of testosterone treatment on venous thrombosis and coronary artery plaque.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies identified short-term beneficial effects on bone mineral density (BMD), sexual function, body fat and muscle mass, and anaemia; potential adverse effects on venous thrombosis and coronary artery plaque; and no effects on cognitive function, fatigue, or hemoglobin A1c (HbA1c) (Bhasin et al., 2018a; Gagliano-Juc\u00e1 and Basaria, 2019; Mohler et al., 2018; Snyder et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple RCT studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "cfb0d8c2-7b44-41bc-8dfa-b249a163a8f4",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C5",
+      "claim": "Randomized clinical trials have found no effects of testosterone treatment on cognitive function, fatigue, or hemoglobin A1c.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies identified short-term beneficial effects on bone mineral density (BMD), sexual function, body fat and muscle mass, and anaemia; potential adverse effects on venous thrombosis and coronary artery plaque; and no effects on cognitive function, fatigue, or hemoglobin A1c (HbA1c) (Bhasin et al., 2018a; Gagliano-Juc\u00e1 and Basaria, 2019; Mohler et al., 2018; Snyder et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple RCT studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "ef2173b0-11d0-4e63-b34e-38326e0d5c54",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C6",
+      "claim": "Mendelian randomization has previously replicated RCT findings, demonstrating causal roles for LDL cholesterol and dysglycemia on CVD risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this technique has previously replicated RCT findings, among others demonstrating causal roles for LDL cholesterol and dysglycemia on CVD risk (Holmes et al., 2015; Ross et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Holmes et al., 2015 and Ross et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "ee393a7d-4279-4ae0-bb51-3469e990cad8",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C7",
+      "claim": "Earlier MR studies investigating the effects of testosterone have demonstrated harmful effects on lipid levels but inconsistent effects on CVD.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier MR studies investigating the effects of testosterone have demonstrated harmful effects on lipid levels but inconsistent effects on CVD, and they were limited by the small number of genetic variants (Schooling et al., 2018; Zhao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schooling et al., 2018 and Zhao et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "1972678d-5f22-44da-88a0-49012b3d8944",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C8",
+      "claim": "A recent MR study using the UK Biobank found evidence for harmful effects of testosterone on several types of cancers but sex-specific effects on type 2 diabetes.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent MR study using the UK Biobank identified a large number of genetic variants associated with testosterone and found evidence for harmful effects on several types of cancers but sex-specific effects on type 2 diabetes (T2D) (Ruth et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ruth et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "c1ef37f4-0130-429f-a3a1-47dc6442d58b",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C9",
+      "claim": "The study population consisted of 161,268 males with an average CFT of 0.210 nmol/L.",
+      "claim_type": "EXPLICIT",
+      "source": "After these exclusions, the study population consisted of 161,268 males with an average CFT of 0.210 nmol/L (Supplementary file 1 - Table 1 and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript with reference to supplementary data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "b749acd3-3c84-4fc1-beee-633076f0e1ba",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C10",
+      "claim": "There were 13,338 genetic variants associated with CFT that reached genome-wide significance (p<5\u00d710\u22128).",
+      "claim_type": "EXPLICIT",
+      "source": "There were 13,338 genetic variants associated with CFT that reached genome-wide significance (p<5\u00d710\u22128).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the GWAS analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "817ecf8e-d877-4237-a947-e4a626c8996d",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C11",
+      "claim": "After removing genetic variants associated with natural-log-transformed SHBG, there were 7048 genetic variants that comprised 93 independent signals carried forward for subsequent genetic analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing genetic variants associated with natural-log-transformed SHBG, there were 7048 genetic variants that comprised 93 independent signals carried forward for subsequent genetic analyses (Supplementary file 1 - Table 2 and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the GWAS analysis with reference to supplementary data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "9d097072-f578-4fe1-81d9-19366042ff98",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C12",
+      "claim": "Chip-based heritability of CFT was estimated at 15% (95% CI = 14 to 16).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, chip-based heritability of CFT was estimated at 15% (95% CI = 14 to 16), while these 93 independent genetic variants associated with CFT explained 3.7% of the total variance of CFT levels in males from the UK Biobank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the heritability analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "f27693f7-ee16-4efe-909e-26fe2f24899c",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C13",
+      "claim": "93 independent genetic variants associated with CFT explained 3.7% of the total variance of CFT levels in males from the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, chip-based heritability of CFT was estimated at 15% (95% CI = 14 to 16), while these 93 independent genetic variants associated with CFT explained 3.7% of the total variance of CFT levels in males from the UK Biobank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the variance analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "879b80e8-ac0a-4f2b-b672-3e06431c7182",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C14",
+      "claim": "Each 0.1 nmol/L higher CFT had beneficial effects on increased heel BMD (0.40 SD; 95% CI = 0.25 to 0.54; p=1.10\u00d710\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "Each 0.1 nmol/L higher CFT had beneficial effects on increased heel BMD (0.40 SD; 95% CI = 0.25 to 0.54; p=1.10\u00d710\u22127), increased body fat-free percentage (1.91%; 95% CI = 1.48 to 2.35; p=9.06\u00d710\u221218), and decreased body fat percentage (\u22121.88%; 95% CI = \u22122.31 to \u22121.45; p=1.65\u00d710\u221217), but deleterious effects on increased hematocrit percentage (1.37%; 95% CI = 1.12 to 1.62; p=1.03\u00d710\u221227), risk of prostate cancer (OR = 1.51; 95% CI = 1.21 to 1.88; p=2.1\u00d710\u22124), and risk of androgenic alopecia (OR = 1.49; 95% CI = 1.19 to 1.86; p=5.28\u00d710\u22124) (Figure 3\u2014figure supplements 1\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the MR analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "06efa753-0108-4739-bb43-88bec97ac5d7",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C15",
+      "claim": "Each 0.1 nmol/L higher CFT had beneficial effects on increased body fat-free percentage (1.91%; 95% CI = 1.48 to 2.35; p=9.06\u00d710\u221218).",
+      "claim_type": "EXPLICIT",
+      "source": "Each 0.1 nmol/L higher CFT had beneficial effects on increased heel BMD (0.40 SD; 95% CI = 0.25 to 0.54; p=1.10\u00d710\u22127), increased body fat-free percentage (1.91%; 95% CI = 1.48 to 2.35; p=9.06\u00d710\u221218), and decreased body fat percentage (\u22121.88%; 95% CI = \u22122.31 to \u22121.45; p=1.65\u00d710\u221217), but deleterious effects on increased hematocrit percentage (1.37%; 95% CI = 1.12 to 1.62; p=1.03\u00d710\u221227), risk of prostate cancer (OR = 1.51; 95% CI = 1.21 to 1.88; p=2.1\u00d710\u22124), and risk of androgenic alopecia (OR = 1.49; 95% CI = 1.19 to 1.86; p=5.28\u00d710\u22124) (Figure 3\u2014figure supplements 1\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the MR analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "657c9dc5-b680-4872-bb6e-03043ce62ce9",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C16",
+      "claim": "Each 0.1 nmol/L higher CFT had beneficial effects on decreased body fat percentage (\u22121.88%; 95% CI = \u22122.31 to \u22121.45; p=1.65\u00d710\u221217).",
+      "claim_type": "EXPLICIT",
+      "source": "Each 0.1 nmol/L higher CFT had beneficial effects on increased heel BMD (0.40 SD; 95% CI = 0.25 to 0.54; p=1.10\u00d710\u22127), increased body fat-free percentage (1.91%; 95% CI = 1.48 to 2.35; p=9.06\u00d710\u221218), and decreased body fat percentage (\u22121.88%; 95% CI = \u22122.31 to \u22121.45; p=1.65\u00d710\u221217), but deleterious effects on increased hematocrit percentage (1.37%; 95% CI = 1.12 to 1.62; p=1.03\u00d710\u221227), risk of prostate cancer (OR = 1.51; 95% CI = 1.21 to 1.88; p=2.1\u00d710\u22124), and risk of androgenic alopecia (OR = 1.49; 95% CI = 1.19 to 1.86; p=5.28\u00d710\u22124) (Figure 3\u2014figure supplements 1\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the MR analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "f7c1c091-9aeb-4ba8-9c9e-fc600a03c7d8",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C17",
+      "claim": "Each 0.1 nmol/L higher CFT had deleterious effects on increased hematocrit percentage (1.37%; 95% CI = 1.12 to 1.62; p=1.03\u00d710\u221227).",
+      "claim_type": "EXPLICIT",
+      "source": "Each 0.1 nmol/L higher CFT had beneficial effects on increased heel BMD (0.40 SD; 95% CI = 0.25 to 0.54; p=1.10\u00d710\u22127), increased body fat-free percentage (1.91%; 95% CI = 1.48 to 2.35; p=9.06\u00d710\u221218), and decreased body fat percentage (\u22121.88%; 95% CI = \u22122.31 to \u22121.45; p=1.65\u00d710\u221217), but deleterious effects on increased hematocrit percentage (1.37%; 95% CI = 1.12 to 1.62; p=1.03\u00d710\u221227), risk of prostate cancer (OR = 1.51; 95% CI = 1.21 to 1.88; p=2.1\u00d710\u22124), and risk of androgenic alopecia (OR = 1.49; 95% CI = 1.19 to 1.86; p=5.28\u00d710\u22124) (Figure 3\u2014figure supplements 1\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the MR analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "83ae2c27-bfc7-4a79-85b6-c41eb8d9368d",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C18",
+      "claim": "Each 0.1 nmol/L higher CFT had deleterious effects on increased risk of prostate cancer (OR = 1.51; 95% CI = 1.21 to 1.88; p=2.1\u00d710\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "Each 0.1 nmol/L higher CFT had beneficial effects on increased heel BMD (0.40 SD; 95% CI = 0.25 to 0.54; p=1.10\u00d710\u22127), increased body fat-free percentage (1.91%; 95% CI = 1.48 to 2.35; p=9.06\u00d710\u221218), and decreased body fat percentage (\u22121.88%; 95% CI = \u22122.31 to \u22121.45; p=1.65\u00d710\u221217), but deleterious effects on increased hematocrit percentage (1.37%; 95% CI = 1.12 to 1.62; p=1.03\u00d710\u221227), risk of prostate cancer (OR = 1.51; 95% CI = 1.21 to 1.88; p=2.1\u00d710\u22124), and risk of androgenic alopecia (OR = 1.49; 95% CI = 1.19 to 1.86; p=5.28\u00d710\u22124) (Figure 3\u2014figure supplements 1\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the MR analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "cce747f9-4f20-4d3f-9994-c9ad5f16705c",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C19",
+      "claim": "Each 0.1 nmol/L higher CFT had deleterious effects on increased risk of androgenic alopecia (OR = 1.49; 95% CI = 1.19 to 1.86; p=5.28\u00d710\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "Each 0.1 nmol/L higher CFT had beneficial effects on increased heel BMD (0.40 SD; 95% CI = 0.25 to 0.54; p=1.10\u00d710\u22127), increased body fat-free percentage (1.91%; 95% CI = 1.48 to 2.35; p=9.06\u00d710\u221218), and decreased body fat percentage (\u22121.88%; 95% CI = \u22122.31 to \u22121.45; p=1.65\u00d710\u221217), but deleterious effects on increased hematocrit percentage (1.37%; 95% CI = 1.12 to 1.62; p=1.03\u00d710\u221227), risk of prostate cancer (OR = 1.51; 95% CI = 1.21 to 1.88; p=2.1\u00d710\u22124), and risk of androgenic alopecia (OR = 1.49; 95% CI = 1.19 to 1.86; p=5.28\u00d710\u22124) (Figure 3\u2014figure supplements 1\u20136).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the MR analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "eca0d9db-67c6-4e1b-a40e-a7f635141f54",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C20",
+      "claim": "Egger regression did not detect evidence of directional pleiotropy for any outcomes (pintercept <0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Egger regression did not detect evidence of directional pleiotropy for any outcomes (pintercept <0.05) (Supplementary file 1 - Table 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the sensitivity analysis with reference to supplementary data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "5742da41-13b7-4137-9fc1-4ce1fa9b471a",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C21",
+      "claim": "Results using MR-RAPS were consistent with IVW regression method for all significant outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Results using MR-RAPS were consistent with IVW regression method for all significant outcomes (Supplementary file 1 \u2013 Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the sensitivity analysis with reference to supplementary data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "81bc0728-0d2b-466c-9799-a026646cbd7f",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C22",
+      "claim": "Each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with beneficial effects on lowered C-reactive protein (\u03b2 = \u22120.085 SD; 95% CI = \u22120.119 to \u22120.052; p=6.15\u00d710\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "After adjusting for the 439 outcomes tested, each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with beneficial effects on lowered C-reactive protein (\u03b2 = \u22120.085 SD; 95% CI = \u22120.119 to \u22120.052; p=6.15\u00d710\u22127) but adverse effects on increased creatinine (\u03b2 = 0.113 SD; 95% CI = 0.079 to 0.146; p=4.78\u00d710\u221211), lowered apolipoprotein A (\u03b2 = \u22120.018 g/L; 95% CI = \u22120.026 to \u22120.01; p=1.55\u00d710\u22125), lowered HDL (\u03b2 = \u22120.074 SD; 95% CI = \u22120.109 to \u22120.039; p=3.62\u00d710\u22125), and increased risks of hypertension (OR = 1.17; 95% CI = 1.08 to 1.26; p=2.83\u00d710\u22125), and spinal stenosis (OR = 2.03; 95% CI = 1.51 to 2.75; p=3.82\u00d710\u22126) (Table 2 and Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the GRS analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "92d2f872-d184-41af-ae28-0ea229f58ce9",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C23",
+      "claim": "Each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with adverse effects on increased creatinine (\u03b2 = 0.113 SD; 95% CI = 0.079 to 0.146; p=4.78\u00d710\u221211).",
+      "claim_type": "EXPLICIT",
+      "source": "After adjusting for the 439 outcomes tested, each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with beneficial effects on lowered C-reactive protein (\u03b2 = \u22120.085 SD; 95% CI = \u22120.119 to \u22120.052; p=6.15\u00d710\u22127) but adverse effects on increased creatinine (\u03b2 = 0.113 SD; 95% CI = 0.079 to 0.146; p=4.78\u00d710\u221211), lowered apolipoprotein A (\u03b2 = \u22120.018 g/L; 95% CI = \u22120.026 to \u22120.01; p=1.55\u00d710\u22125), lowered HDL (\u03b2 = \u22120.074 SD; 95% CI = \u22120.109 to \u22120.039; p=3.62\u00d710\u22125), and increased risks of hypertension (OR = 1.17; 95% CI = 1.08 to 1.26; p=2.83\u00d710\u22125), and spinal stenosis (OR = 2.03; 95% CI = 1.51 to 2.75; p=3.82\u00d710\u22126) (Table 2 and Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the GRS analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "b486402f-92f9-42a9-a0e8-38570702e28d",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C24",
+      "claim": "Each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with adverse effects on lowered apolipoprotein A (\u03b2 = \u22120.018 g/L; 95% CI = \u22120.026 to \u22120.01; p=1.55\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "After adjusting for the 439 outcomes tested, each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with beneficial effects on lowered C-reactive protein (\u03b2 = \u22120.085 SD; 95% CI = \u22120.119 to \u22120.052; p=6.15\u00d710\u22127) but adverse effects on increased creatinine (\u03b2 = 0.113 SD; 95% CI = 0.079 to 0.146; p=4.78\u00d710\u221211), lowered apolipoprotein A (\u03b2 = \u22120.018 g/L; 95% CI = \u22120.026 to \u22120.01; p=1.55\u00d710\u22125), lowered HDL (\u03b2 = \u22120.074 SD; 95% CI = \u22120.109 to \u22120.039; p=3.62\u00d710\u22125), and increased risks of hypertension (OR = 1.17; 95% CI = 1.08 to 1.26; p=2.83\u00d710\u22125), and spinal stenosis (OR = 2.03; 95% CI = 1.51 to 2.75; p=3.82\u00d710\u22126) (Table 2 and Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the GRS analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "d5965d56-2a64-49ff-9094-4206273df39d",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C25",
+      "claim": "Each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with adverse effects on lowered HDL (\u03b2 = \u22120.074 SD; 95% CI = \u22120.109 to \u22120.039; p=3.62\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "After adjusting for the 439 outcomes tested, each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with beneficial effects on lowered C-reactive protein (\u03b2 = \u22120.085 SD; 95% CI = \u22120.119 to \u22120.052; p=6.15\u00d710\u22127) but adverse effects on increased creatinine (\u03b2 = 0.113 SD; 95% CI = 0.079 to 0.146; p=4.78\u00d710\u221211), lowered apolipoprotein A (\u03b2 = \u22120.018 g/L; 95% CI = \u22120.026 to \u22120.01; p=1.55\u00d710\u22125), lowered HDL (\u03b2 = \u22120.074 SD; 95% CI = \u22120.109 to \u22120.039; p=3.62\u00d710\u22125), and increased risks of hypertension (OR = 1.17; 95% CI = 1.08 to 1.26; p=2.83\u00d710\u22125), and spinal stenosis (OR = 2.03; 95% CI = 1.51 to 2.75; p=3.82\u00d710\u22126) (Table 2 and Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the GRS analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "40914eb6-960a-4918-a872-5459ed1630a5",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C26",
+      "claim": "Each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with increased risks of hypertension (OR = 1.17; 95% CI = 1.08 to 1.26; p=2.83\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "After adjusting for the 439 outcomes tested, each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with beneficial effects on lowered C-reactive protein (\u03b2 = \u22120.085 SD; 95% CI = \u22120.119 to \u22120.052; p=6.15\u00d710\u22127) but adverse effects on increased creatinine (\u03b2 = 0.113 SD; 95% CI = 0.079 to 0.146; p=4.78\u00d710\u221211), lowered apolipoprotein A (\u03b2 = \u22120.018 g/L; 95% CI = \u22120.026 to \u22120.01; p=1.55\u00d710\u22125), lowered HDL (\u03b2 = \u22120.074 SD; 95% CI = \u22120.109 to \u22120.039; p=3.62\u00d710\u22125), and increased risks of hypertension (OR = 1.17; 95% CI = 1.08 to 1.26; p=2.83\u00d710\u22125), and spinal stenosis (OR = 2.03; 95% CI = 1.51 to 2.75; p=3.82\u00d710\u22126) (Table 2 and Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the GRS analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "586c6c7c-66cb-489f-b3a2-854549d85fe6",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C27",
+      "claim": "Each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with increased risks of spinal stenosis (OR = 2.03; 95% CI = 1.51 to 2.75; p=3.82\u00d710\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "After adjusting for the 439 outcomes tested, each 0.1 nmol/L increase in genetically-predicted CFT was significantly associated with beneficial effects on lowered C-reactive protein (\u03b2 = \u22120.085 SD; 95% CI = \u22120.119 to \u22120.052; p=6.15\u00d710\u22127) but adverse effects on increased creatinine (\u03b2 = 0.113 SD; 95% CI = 0.079 to 0.146; p=4.78\u00d710\u221211), lowered apolipoprotein A (\u03b2 = \u22120.018 g/L; 95% CI = \u22120.026 to \u22120.01; p=1.55\u00d710\u22125), lowered HDL (\u03b2 = \u22120.074 SD; 95% CI = \u22120.109 to \u22120.039; p=3.62\u00d710\u22125), and increased risks of hypertension (OR = 1.17; 95% CI = 1.08 to 1.26; p=2.83\u00d710\u22125), and spinal stenosis (OR = 2.03; 95% CI = 1.51 to 2.75; p=3.82\u00d710\u22126) (Table 2 and Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the GRS analysis with statistical support",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "134af70c-d76f-4f0a-8ea9-87af98277a91",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C28",
+      "claim": "Findings on body composition, hematocrit, and BMD are consistent with short-term effects in randomized trials of testosterone treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Findings on body composition, hematocrit, and BMD are consistent with short-term effects in randomized trials of testosterone treatment (Bhasin et al., 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with RCT findings supported by citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "5a486882-3d68-4d90-ad61-1dba17f7f88e",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C29",
+      "claim": "Androgen suppression therapies, such as of 5\u03b1-reductase inhibitors, are used as treatment for androgenic alopecia and prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Although testosterone treatment has not been conclusively shown to increase risk of prostate cancer and androgenic alopecia in RCTs, androgen suppression therapies, such as of 5\u03b1-reductase inhibitors, are used as treatment for androgenic alopecia and prostate cancer (Adil and Godwin, 2017; Andriole et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Adil and Godwin, 2017 and Andriole et al., 2010",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "b9ff5641-e263-42e6-b210-c173b508b3d6",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C30",
+      "claim": "The increased risk of prostate cancer replicates effects of testosterone observed in a previous MR analysis using independent data from the PRACTICAL consortium.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased risk of prostate cancer replicates effects of testosterone observed in a previous MR analysis using independent data from the PRACTICAL consortium, and further supports the role of testosterone in development of these outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previous MR study findings",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "b506a72b-af43-41e3-b938-acd7c07cc381",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C31",
+      "claim": "Prostate cancer is the leading cause of cancer among men.",
+      "claim_type": "EXPLICIT",
+      "source": "As the leading cause of cancer among men, the predicted 1.5-fold increased risk as a result of changes in testosterone observed after initiation of testosterone treatment warrants further investigation in clinical trials and greater scrutiny in at-risk patient populations (American Cancer Society, 2019; Bhasin et al., 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to American Cancer Society, 2019",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "ad5a6b36-8a08-4f0d-a909-ca02bf2a4ff7",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C32",
+      "claim": "The Testosterone Trials found male participants over 65 years of age randomized to testosterone experienced mildly lowered HDL cholesterol levels after 12 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the Testosterone Trials found male participants over 65 years of age randomized to testosterone experienced mildly lowered HDL cholesterol levels after 12 months (Mohler et al., 2018; Snyder et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mohler et al., 2018 and Snyder et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "8a65209f-ca86-4d64-80e7-245277faa6aa",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C33",
+      "claim": "The Testosterone Trials did not find any change in CRP in its testosterone arm.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Testosterone Trials did not find any change in CRP in its testosterone arm, testosterone is widely-believed to have suppressive effects on the immune system which may extend to markers of inflammation such as CRP (Trigunaite et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with RCT findings and citation to Trigunaite et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "93daaf8e-41e4-49bf-9c69-5a24981f91f5",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C34",
+      "claim": "Testosterone is widely-believed to have suppressive effects on the immune system which may extend to markers of inflammation such as CRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the Testosterone Trials did not find any change in CRP in its testosterone arm, testosterone is widely-believed to have suppressive effects on the immune system which may extend to markers of inflammation such as CRP (Trigunaite et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Trigunaite et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "e1b62964-b760-4330-8472-cdb275776c42",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C35",
+      "claim": "A randomized controlled trial found testosterone administration increased levels of NT-proBNP.",
+      "claim_type": "EXPLICIT",
+      "source": "A randomized controlled trial found testosterone administration increased levels of NT-proBNP, and studies of both transgender men and anabolic steroid users have found testosterone increased arterial stiffness and blood pressure (Bachmann et al., 2019; Hartgens and Kuipers, 2004; Velho et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bachmann et al., 2019; Hartgens and Kuipers, 2004; Velho et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "76ab73b0-4424-4dbc-8067-6a7da5ca4d27",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C36",
+      "claim": "Studies of both transgender men and anabolic steroid users have found testosterone increased arterial stiffness and blood pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "A randomized controlled trial found testosterone administration increased levels of NT-proBNP, and studies of both transgender men and anabolic steroid users have found testosterone increased arterial stiffness and blood pressure (Bachmann et al., 2019; Hartgens and Kuipers, 2004; Velho et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bachmann et al., 2019; Hartgens and Kuipers, 2004; Velho et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "bbd2f54c-4b27-49f5-8141-c124e08ef3f3",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C37",
+      "claim": "Animal models have shown testosterone may aggravate hypertension and exacerbate increased production of reactive oxygen species specifically in hypertensive but not normotensive rat vascular endothelial tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, animal models have shown testosterone may aggravate hypertension and exacerbate increased production of reactive oxygen species specifically in hypertensive but not normotensive rat vascular endothelial tissue (Chignalia et al., 2012; Reckelhoff et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chignalia et al., 2012 and Reckelhoff et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "bd83f008-bf36-4b18-8665-6d545cda7c6b",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C38",
+      "claim": "The literature shows some evidence that higher testosterone is associated with greater loss of cartilage in healthy older males.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the literature shows some evidence that higher testosterone is associated with greater loss of cartilage in healthy older males, and evidence from mouse models suggest testosterone has a sex-specific role in worsening osteoarthritis, a common risk factor for spinal stenosis (Hanna, 2005; Hl et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hanna, 2005 and Hl et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "10e2b4dc-8cb5-4858-bfab-8a054210b29e",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C39",
+      "claim": "Evidence from mouse models suggest testosterone has a sex-specific role in worsening osteoarthritis, a common risk factor for spinal stenosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the literature shows some evidence that higher testosterone is associated with greater loss of cartilage in healthy older males, and evidence from mouse models suggest testosterone has a sex-specific role in worsening osteoarthritis, a common risk factor for spinal stenosis (Hanna, 2005; Hl et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hanna, 2005 and Hl et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "c027ef3a-d07e-4691-b247-d7f7b273eaed",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C40",
+      "claim": "Studies have identified associations between SHBG and risk of T2D independent of testosterone.",
+      "claim_type": "EXPLICIT",
+      "source": "Given studies have identified associations between SHBG and risk of T2D independent of testosterone and a direct role of SHBG in mediating signalling on target cells, insufficient controls for SHBG may lead to residual pleiotropic effects (Lakshman et al., 2010; Rosner et al., 2010; Vikan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lakshman et al., 2010; Rosner et al., 2010; Vikan et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "3d4219e2-09ae-4f3f-bcdf-380514dce90e",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C41",
+      "claim": "SHBG has a direct role in mediating signalling on target cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Given studies have identified associations between SHBG and risk of T2D independent of testosterone and a direct role of SHBG in mediating signalling on target cells, insufficient controls for SHBG may lead to residual pleiotropic effects (Lakshman et al., 2010; Rosner et al., 2010; Vikan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lakshman et al., 2010; Rosner et al., 2010; Vikan et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "eaf50f2e-dce6-4f68-8ddd-063a68038021",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C42",
+      "claim": "The UK Biobank is generally healthier and higher socioeconomic status than the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, the UK Biobank is generally healthier and higher socioeconomic status than the general population, so there are insufficient cases to detect effects on certain rarer outcomes, such as Alzheimer's disease, and inadequate power to identify weaker effects of free testosterone on common outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known limitation of the UK Biobank cohort",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "82d395ac-2151-4a84-8af0-cdd26adc0293",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C43",
+      "claim": "In the UK Biobank, CFT levels were below the reference ranges for young healthy individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK Biobank, CFT levels were below the reference ranges for young healthy individuals, which may be attributable to the older age of the cohort and inherent inaccuracy of immunoassays at lower levels of total testosterone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated observation about the data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "cfed8cbc-a38f-4325-b74b-11ffef2a82f8",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C44",
+      "claim": "Total testosterone levels in the UK Biobank are comparable to previous studies in the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "Total testosterone levels are similarly low relative to reference ranges and comparable to previous studies in the UK Biobank (Peila et al., 2020; Petermann-Rocha et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Peila et al., 2020 and Petermann-Rocha et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "1b334b77-bbe6-4891-8f44-0aea1871086c",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C45",
+      "claim": "Genetic variants associated with testosterone consistently replicated known effects of testosterone on established outcomes, such as body fat, body fat-free mass, and hematocrit.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, genetic variants associated with testosterone consistently replicated known effects of testosterone on established outcomes, such as body fat, body fat-free mass, and hematocrit (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with reference to Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "294a29f0-1450-4d52-911e-3d6e94b0f987",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C46",
+      "claim": "The F-statistic was 66 for the genetic variants associated with CFT, which was considered a strong instrument based on the recommended threshold of greater than 10.",
+      "claim_type": "EXPLICIT",
+      "source": "In consideration of 'weak instrument bias', the F-statistic was 66 for the genetic variants associated with CFT, which was considered a strong instrument based on the recommended threshold of greater than 10 (Davies et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with citation to Davies et al., 2018 for the threshold",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "c0662ddc-5f1d-4829-84c0-18e38bfe0bc3",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C47",
+      "claim": "In the White British subset of the UK Biobank, there were 175,421 males with total testosterone measured with an average 11.9 nmol/L.",
+      "claim_type": "EXPLICIT",
+      "source": "In the White British subset of the UK Biobank, there were 175,421 males with total testosterone measured with an average 11.9 nmol/L (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "032391af-8656-492e-926d-fef593286a5c",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C48",
+      "claim": "After removing genetic variants associated with natural-log-transformed SHBG and LD pruning for independent SNPs (r2 <0.01), there were 52 independent genetic variants associated (p<5\u00d710\u22128) with total testosterone in males from the UK Biobank.",
+      "claim_type": "EXPLICIT",
+      "source": "After removing genetic variants associated with natural-log-transformed SHBG and LD pruning for independent SNPs (r2 <0.01), there were 52 independent genetic variants associated (p<5\u00d710\u22128) with total testosterone in males from the UK Biobank (Supplementary file 1 \u2013 Table 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with reference to supplementary data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "457fc202-b87b-4db8-bacc-342b087ace04",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C49",
+      "claim": "Mendelian randomization is a technique for causal inference that leverages the random allocation of genetic variants to infer the unconfounded relationship between an exposure and outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Mendelian randomization (MR) is a technique for causal inference that leverages the random allocation of genetic variants to infer the unconfounded relationship between an exposure and outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of the MR method",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "1eb51ee8-c517-489e-a3f0-fdb3dfe12595",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C50",
+      "claim": "Genetic variants are randomly allocated at meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the random assignment of participants to experimental groups in a RCT, genetic variants are randomly allocated at meiosis (Davies et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Davies et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "02df6365-7109-4357-88a5-8e6921b2dc1c",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C51",
+      "claim": "The genomic inflation factor (\u03bb) was 1.2.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic inflation factor (\u03bb) was 1.2 and calculated as the ratio of the median test statistic from the GWAS relative to the expected median test statistic under a null model (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with reference to figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "9b8bb9f1-347d-4f8b-a8e9-e0d31ad516e2",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C52",
+      "claim": "The intercept of an LD score regression line was determined to be 1.03 indicating the observed inflation could be attributed to polygenicity rather than uncontrolled population stratification.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish between an inflated \u03bb due to population stratification or polygenic inheritance of the trait, the intercept of an LD score regression line was determined to be 1.03 indicating the observed inflation could be attributed to polygenicity rather than uncontrolled population stratification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the LD score regression analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "eac9686e-d506-423a-9e1b-94a2419837ac",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C53",
+      "claim": "The UK Biobank recruited over 500,000 people between the ages of 37\u201373 across the United Kingdom from 2006 to 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "The UK Biobank is a large-scale longitudinal cohort study that recruited over 500,000 people between the ages of 37\u201373 across the United Kingdom from 2006 to 2010 (Sudlow et al., 2015) (RRID:SCR_012815).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sudlow et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "c3fba27f-aae3-4570-b46a-720a7ad246d0",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C54",
+      "claim": "In the UK Biobank, total testosterone and sex hormone-binding globulin (SHBG) were measured on a Beckman Coulter Unicel DXI 800 using a one-step competitive analysis and two-step sandwich immunoassay, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK Biobank, total testosterone and sex hormone-binding globulin (SHBG) were measured on a Beckman Coulter Unicel DXI 800 using a one-step competitive analysis and two-step sandwich immunoassay, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated description of measurement methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "e94bfe1c-ea25-4acb-a028-bcc5cc7f2488",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C55",
+      "claim": "Free testosterone at recruitment was calculated using the Vermeulen equation.",
+      "claim_type": "EXPLICIT",
+      "source": "Free testosterone at recruitment was calculated using the Vermeulen equation (Vermeulen et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vermeulen et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "8f047d2b-bb0e-4c02-b394-df6afa753a64",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C56",
+      "claim": "Genotyping was performed with the Applied Biosystems UK Biobank Lung Exome Variant Evaluation (UK BiLEVE) and UK Biobank Axiom arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotyping was performed with the Applied Biosystems UK Biobank Lung Exome Variant Evaluation (UK BiLEVE) and UK Biobank Axiom arrays (Affymetrix Research Services Laboratory, Santa Clara, California, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated description of genotyping methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "a051ed6d-62f9-413f-9fda-8913425b93dd",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C57",
+      "claim": "Linear mixed models in BOLT-LMM were used to test for associations of genetic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "To allow for genetic relatedness between participants, linear mixed models in BOLT-LMM were used to test for associations of genetic variants (Loh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Loh et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "46b956ab-5819-48f0-a672-23e562ebce4a",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C58",
+      "claim": "Genetic variants near the SHBG gene may alter binding affinity for testosterone thereby violating assumptions of the Vermeulen equation.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic variants near the SHBG gene may alter binding affinity for testosterone thereby violating assumptions of the Vermeulen equation, or risk having pleiotropic effects through binding of other sex hormones (Ohlsson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ohlsson et al., 2011",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "73706fde-ef08-4c5a-b0a9-0d299a703fe8",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C59",
+      "claim": "Most of the estimates from MR analyses were comparable with effect sizes from RCTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the estimates from MR analyses were comparable with effect sizes from RCTs (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated with reference to Figure 3",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "4e4f5e4a-ffee-4491-88e6-8f7617008d36",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C60",
+      "claim": "There was only significant heterogeneity between the effects on BMD for MR and RCT.",
+      "claim_type": "EXPLICIT",
+      "source": "There was only significant heterogeneity between the effects on BMD for MR and RCT, but it is difficult to make direct comparisons due to variable change in testosterone levels after administration of testosterone in each RCT, different methods and anatomical sites of BMD estimation, and differences between short-term effects in RCTs relative to lifelong effects in MR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated observation with explanation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "f32fe71c-b41e-461b-9e48-c453daa8379b",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C61",
+      "claim": "Effects of testosterone on renal function are unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, effects of testosterone on renal function are unclear, but this effect may be mediated through the known effect of testosterone on increased muscle mass which is tightly related to serum creatinine (Carrero et al., 2009; Filler et al., 2016; Schutte et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as unclear with citations to relevant literature",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "df4bcf77-a6d1-43af-87b7-670026fad897",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C62",
+      "claim": "The effect of testosterone on creatinine may be mediated through the known effect of testosterone on increased muscle mass which is tightly related to serum creatinine.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, effects of testosterone on renal function are unclear, but this effect may be mediated through the known effect of testosterone on increased muscle mass which is tightly related to serum creatinine (Carrero et al., 2009; Filler et al., 2016; Schutte et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Carrero et al., 2009; Filler et al., 2016; Schutte et al., 1981",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "d00dcb82-d33f-494b-ba80-2c8fa95f48df",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C63",
+      "claim": "For all statistically significant outcomes, associations were directionally consistent after removing participants taking blood pressure medication.",
+      "claim_type": "EXPLICIT",
+      "source": "For all statistically significant outcomes, associations were directionally consistent after removing participants taking blood pressure medication (Supplementary file 1 - Table 6) or cholesterol-lowering medication (Supplementary file 1 - Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with reference to supplementary data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "4d619271-5d1e-4463-8d0c-fec62612c551",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C64",
+      "claim": "For all statistically significant outcomes, associations were directionally consistent after removing participants taking cholesterol-lowering medication.",
+      "claim_type": "EXPLICIT",
+      "source": "For all statistically significant outcomes, associations were directionally consistent after removing participants taking blood pressure medication (Supplementary file 1 - Table 6) or cholesterol-lowering medication (Supplementary file 1 - Table 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with reference to supplementary data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "adae28fe-6a4d-4836-9a42-694af4d65e8e",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C65",
+      "claim": "For all statistically significant outcomes, effects observed using total testosterone genetic variants were directionally consistent with CFT.",
+      "claim_type": "EXPLICIT",
+      "source": "Further sensitivity analyses were performed by repeating the one-sample MR analysis using 52 genetic variants associated with total testosterone in males from the UK Biobank (Supplementary file 1 - Table 8). For all statistically significant outcomes, effects observed using total testosterone genetic variants were directionally consistent with CFT, and results for all outcomes are presented in Supplementary file 1 - Tables 9 and 10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with reference to supplementary data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "5248bd4e-4768-44de-9947-c4a6c196cf2c",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C66",
+      "claim": "MR-PRESSO detected evidence of pleiotropic variants for hematocrit percentage, body fat-free percentage, body fat percentage, heel BMD, androgenic alopecia, whole body fat-free mass, hemoglobin A1C, glucose, handgrip strength, systolic blood pressure, diastolic blood pressure, T2D, and benign prostate hyperplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MR-PRESSO detected evidence of pleiotropic variants for hematocrit percentage, body fat-free percentage, body fat percentage, heel BMD, androgenic alopecia, whole body fat-free mass, hemoglobin A1C, glucose, handgrip strength, systolic blood pressure, diastolic blood pressure, T2D, and benign prostate hyperplasia (Supplementary file 1 - Table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with reference to supplementary data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "74eab68d-da17-401f-a232-63c76408aeb7",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C67",
+      "claim": "Removal of pleiotropic variants made no changes to the significance or interpretation of earlier results using IVW regression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, removal of pleiotropic variants made no changes to the significance or interpretation of earlier results using IVW regression (Supplementary file 1 - Table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with reference to supplementary data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "8d1e1453-1b43-441a-98d1-c9ce76916547",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C68",
+      "claim": "Leave-one-out analyses did not identify any outlying individual genetic variants responsible for the observed effects on any significant outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Leave-one-out analyses did not identify any outlying individual genetic variants responsible for the observed effects on any significant outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated as a result from the sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "1bafb009-22d9-4788-88a6-d1065306fe9a",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C69",
+      "claim": "The decision to initiate long-term testosterone use warrants careful consideration of benefits and risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken altogether, the decision to initiate long-term testosterone use warrants careful consideration of benefits and risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion based on the study findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "7c4198b5-0387-4f94-9eeb-8a3aad8ec29c",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "claim_id": "C70",
+      "claim": "Well-designed and appropriately powered RCTs are necessary to conclusively address questions of safety and effectiveness of testosterone treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, well-designed and appropriately powered RCTs, such as the ongoing TRAVERSE trials (clinicaltrials.gov, NCT03518034), are necessary to conclusively address questions of safety and effectiveness of testosterone treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion with reference to ongoing trials",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A GWAS of calculated free testosterone (CFT) in 161,268 UK Biobank males identified 93 independent genetic variants (after excluding SHBG-associated variants) that explained 3.7% of CFT variance, with chip-based heritability estimated at 15%. The F-statistic of 66 indicated strong instruments for Mendelian randomization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 and C46, C51-C52 provide consistent evidence for the GWAS results with appropriate quality control measures (genomic inflation factor, LD score regression). The study used established methods (BOLT-LMM) and appropriate thresholds for variant selection. The F-statistic confirms adequate instrument strength for MR analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "fe51c379-936d-4c3f-b2b5-109badba7a18",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mendelian randomization analysis of 22 a priori outcomes found that each 0.1 nmol/L higher CFT had beneficial effects on bone mineral density, body fat-free percentage, and decreased body fat percentage, but deleterious effects on hematocrit, prostate cancer risk (OR=1.51), and androgenic alopecia risk (OR=1.49). Sensitivity analyses (Egger regression, MR-RAPS, MR-PRESSO, leave-one-out) supported these findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 report statistically significant MR results with appropriate p-values and confidence intervals. Multiple sensitivity analyses (C20-C21, C66-C68) support the robustness of findings. Comparison with RCT data (C28, C59-C60) shows general consistency except for BMD, which is acknowledged and explained. The comprehensive sensitivity testing strengthens causal inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "af996b83-9efa-49bb-9f70-f4efedd9ce67",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phenome-wide genetic risk score analysis of 439 outcomes identified novel associations: each 0.1 nmol/L increase in genetically-predicted CFT was associated with beneficial effects on lowered C-reactive protein but adverse effects on increased creatinine, lowered HDL, lowered apolipoprotein A, and increased risks of hypertension (OR=1.17) and spinal stenosis (OR=2.03). Findings were robust to sensitivity analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 report statistically significant associations after appropriate multiple testing correction (p<1.14\u00d710\u207b\u2074 for 439 outcomes). Sensitivity analyses excluding participants on blood pressure or cholesterol medications (C63-C64) and using total testosterone variants (C65) showed directional consistency, supporting the robustness of findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "87dc0410-7d1a-4572-a97e-1ac9c31220ad",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The observed increased risk of prostate cancer with higher testosterone replicates findings from a previous independent MR analysis using PRACTICAL consortium data, and is consistent with the use of androgen suppression therapies for treating prostate cancer and androgenic alopecia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 appropriately contextualize the prostate cancer finding with prior literature and clinical practice. The replication in independent data (C30) strengthens the causal inference. The citation to American Cancer Society (C31) appropriately emphasizes the clinical significance given prostate cancer's prevalence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "c0b46085-3279-4f46-80db-80d571830379",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The finding of lowered HDL with higher testosterone is consistent with the Testosterone Trials, which found mildly lowered HDL after 12 months. The decreased C-reactive protein finding, while not observed in the Testosterone Trials, is consistent with testosterone's known immunosuppressive effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 appropriately compare MR findings with RCT evidence. The HDL finding shows direct concordance with RCTs (C32). For CRP, the authors acknowledge the discrepancy with RCTs (C33) but provide mechanistic rationale from the literature (C34), demonstrating appropriate scientific reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "c6c4f7ca-069f-4f97-94db-cbd65f383973",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The association between testosterone and hypertension is supported by evidence from RCTs showing increased NT-proBNP, studies in transgender men and anabolic steroid users showing increased arterial stiffness and blood pressure, and animal models demonstrating testosterone's role in aggravating hypertension specifically in hypertensive conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 provide converging evidence from multiple sources (RCTs, observational studies, animal models) supporting the biological plausibility of the hypertension finding. The citations appropriately support each claim, and the mechanistic evidence from animal models (C37) adds biological context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "46e0296a-628c-49e3-811b-ed5560c7b867",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The association between testosterone and spinal stenosis is supported by evidence that higher testosterone is associated with greater cartilage loss in older males and mouse models showing testosterone's sex-specific role in worsening osteoarthritis, a risk factor for spinal stenosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C39 provide some mechanistic support for the spinal stenosis finding, but the evidence is described as limited ('some evidence'). The connection between osteoarthritis and spinal stenosis is stated but not strongly established. The large effect size (OR=2.03) for spinal stenosis warrants additional validation given the indirect mechanistic evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "567c34c2-0c50-45c5-8bd7-84831748989b",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mechanism underlying the association between testosterone and increased creatinine is unclear but may be mediated through testosterone's effect on increased muscle mass, which is tightly related to serum creatinine levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C61 explicitly states the mechanism is unclear, and C62 offers a plausible but speculative explanation. While the muscle mass-creatinine relationship is well-established, the authors appropriately acknowledge uncertainty about whether this fully explains the observed association. The speculation is reasonable but requires validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "05844421-84d4-4486-b30e-a87295bafd3f",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study controlled for potential pleiotropy from SHBG by excluding genetic variants associated with SHBG (p<0.05), addressing concerns that SHBG has independent associations with outcomes like type 2 diabetes and direct signaling roles on target cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 and C58 describe the rationale and implementation of SHBG control. The approach is methodologically sound and addresses a key limitation of prior MR studies. The stringent p<0.05 threshold for excluding SHBG-associated variants is conservative and appropriate for minimizing pleiotropy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "59c8ad0e-da71-42dc-92c8-61e19e36d7f8",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Study limitations include UK Biobank's healthier population limiting power for rare outcomes, CFT levels below reference ranges (potentially due to older age and immunoassay inaccuracy), though genetic variants consistently replicated known testosterone effects on body composition and hematocrit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 appropriately acknowledge study limitations. The low CFT levels (C43) are contextualized with prior UK Biobank studies (C44), and the validation through replication of known effects (C45) supports the validity of the genetic instruments despite measurement limitations. These are honest assessments of study constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "c634a55b-1783-4704-88d3-2385c7c545bd",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sensitivity analyses using 52 genetic variants for total testosterone (rather than calculated free testosterone) showed directionally consistent effects for all statistically significant outcomes, supporting the robustness of the main findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 describe the alternative genetic instrument, and C65 reports directional consistency. This sensitivity analysis strengthens confidence in the findings by showing results are not dependent on the specific testosterone measure (free vs. total) or the calculation method (Vermeulen equation).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "b15ac1c2-8d97-4438-8ed5-d6f49a4d70d7",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has established rising testosterone testing and therapy rates in developed countries (1.5-1.7% of US males), with RCTs showing short-term benefits on BMD, body composition, and anemia but potential adverse effects on venous thrombosis and coronary plaque. Earlier MR studies showed inconsistent CVD effects, while a recent UK Biobank MR study found harmful effects on cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 appropriately summarize prior literature with proper citations. These background claims establish the rationale for the current study and are supported by the cited references. The characterization of prior MR studies' limitations (small number of variants, inconsistent findings) justifies the current comprehensive approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "1ce6be80-3a0f-4d56-ad20-5af3793673f5",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mendelian randomization leverages random allocation of genetic variants at meiosis to infer unconfounded relationships between exposures and outcomes, analogous to randomization in RCTs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 accurately describe the MR method with appropriate citation (Davies et al., 2018). This is a standard and accurate description of the MR approach that provides necessary methodological context for interpreting the study's causal inference framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    },
+    {
+      "id": "a5bc17c9-fdd0-4177-a8fa-4184fd00d346",
+      "content_id": "4a0c2487-72b0-4ee3-a8f4-01aed0c7b506",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors conclude that decisions to initiate long-term testosterone use warrant careful consideration of benefits and risks, and that well-designed, appropriately powered RCTs (such as the ongoing TRAVERSE trials) are necessary to conclusively address safety and effectiveness questions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 provide appropriate conclusions based on the study findings. The call for careful risk-benefit consideration (C69) is justified by the mixed beneficial and adverse effects identified. The acknowledgment that RCTs remain necessary (C70) appropriately recognizes MR's limitations and the need for experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:35:42.392295Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c1ef37f4-0130-429f-a3a1-47dc6442d58b",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "b749acd3-3c84-4fc1-beee-633076f0e1ba",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "817ecf8e-d877-4237-a947-e4a626c8996d",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "9d097072-f578-4fe1-81d9-19366042ff98",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "f27693f7-ee16-4efe-909e-26fe2f24899c",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "294a29f0-1450-4d52-911e-3d6e94b0f987",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "02df6365-7109-4357-88a5-8e6921b2dc1c",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "9b8bb9f1-347d-4f8b-a8e9-e0d31ad516e2",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "eac9686e-d506-423a-9e1b-94a2419837ac",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "c3fba27f-aae3-4570-b46a-720a7ad246d0",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "e94bfe1c-ea25-4acb-a028-bcc5cc7f2488",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "8f047d2b-bb0e-4c02-b394-df6afa753a64",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "a051ed6d-62f9-413f-9fda-8913425b93dd",
+      "result_id": "3e3c2607-1cba-49bd-ac71-1ace7c8e5950"
+    },
+    {
+      "claim_id": "879b80e8-ac0a-4f2b-b672-3e06431c7182",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "06efa753-0108-4739-bb43-88bec97ac5d7",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "657c9dc5-b680-4872-bb6e-03043ce62ce9",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "f7c1c091-9aeb-4ba8-9c9e-fc600a03c7d8",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "83ae2c27-bfc7-4a79-85b6-c41eb8d9368d",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "cce747f9-4f20-4d3f-9994-c9ad5f16705c",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "eca0d9db-67c6-4e1b-a40e-a7f635141f54",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "5742da41-13b7-4137-9fc1-4ce1fa9b471a",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "134af70c-d76f-4f0a-8ea9-87af98277a91",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "73706fde-ef08-4c5a-b0a9-0d299a703fe8",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "4e4f5e4a-ffee-4491-88e6-8f7617008d36",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "5248bd4e-4768-44de-9947-c4a6c196cf2c",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "74eab68d-da17-401f-a232-63c76408aeb7",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "8d1e1453-1b43-441a-98d1-c9ce76916547",
+      "result_id": "fe51c379-936d-4c3f-b2b5-109badba7a18"
+    },
+    {
+      "claim_id": "81bc0728-0d2b-466c-9799-a026646cbd7f",
+      "result_id": "af996b83-9efa-49bb-9f70-f4efedd9ce67"
+    },
+    {
+      "claim_id": "92d2f872-d184-41af-ae28-0ea229f58ce9",
+      "result_id": "af996b83-9efa-49bb-9f70-f4efedd9ce67"
+    },
+    {
+      "claim_id": "b486402f-92f9-42a9-a0e8-38570702e28d",
+      "result_id": "af996b83-9efa-49bb-9f70-f4efedd9ce67"
+    },
+    {
+      "claim_id": "d5965d56-2a64-49ff-9094-4206273df39d",
+      "result_id": "af996b83-9efa-49bb-9f70-f4efedd9ce67"
+    },
+    {
+      "claim_id": "40914eb6-960a-4918-a872-5459ed1630a5",
+      "result_id": "af996b83-9efa-49bb-9f70-f4efedd9ce67"
+    },
+    {
+      "claim_id": "586c6c7c-66cb-489f-b3a2-854549d85fe6",
+      "result_id": "af996b83-9efa-49bb-9f70-f4efedd9ce67"
+    },
+    {
+      "claim_id": "d00dcb82-d33f-494b-ba80-2c8fa95f48df",
+      "result_id": "af996b83-9efa-49bb-9f70-f4efedd9ce67"
+    },
+    {
+      "claim_id": "4d619271-5d1e-4463-8d0c-fec62612c551",
+      "result_id": "af996b83-9efa-49bb-9f70-f4efedd9ce67"
+    },
+    {
+      "claim_id": "adae28fe-6a4d-4836-9a42-694af4d65e8e",
+      "result_id": "af996b83-9efa-49bb-9f70-f4efedd9ce67"
+    },
+    {
+      "claim_id": "5a486882-3d68-4d90-ad61-1dba17f7f88e",
+      "result_id": "87dc0410-7d1a-4572-a97e-1ac9c31220ad"
+    },
+    {
+      "claim_id": "b9ff5641-e263-42e6-b210-c173b508b3d6",
+      "result_id": "87dc0410-7d1a-4572-a97e-1ac9c31220ad"
+    },
+    {
+      "claim_id": "b506a72b-af43-41e3-b938-acd7c07cc381",
+      "result_id": "87dc0410-7d1a-4572-a97e-1ac9c31220ad"
+    },
+    {
+      "claim_id": "ad5a6b36-8a08-4f0d-a909-ca02bf2a4ff7",
+      "result_id": "c0b46085-3279-4f46-80db-80d571830379"
+    },
+    {
+      "claim_id": "8a65209f-ca86-4d64-80e7-245277faa6aa",
+      "result_id": "c0b46085-3279-4f46-80db-80d571830379"
+    },
+    {
+      "claim_id": "93daaf8e-41e4-49bf-9c69-5a24981f91f5",
+      "result_id": "c0b46085-3279-4f46-80db-80d571830379"
+    },
+    {
+      "claim_id": "e1b62964-b760-4330-8472-cdb275776c42",
+      "result_id": "c6c4f7ca-069f-4f97-94db-cbd65f383973"
+    },
+    {
+      "claim_id": "76ab73b0-4424-4dbc-8067-6a7da5ca4d27",
+      "result_id": "c6c4f7ca-069f-4f97-94db-cbd65f383973"
+    },
+    {
+      "claim_id": "bbd2f54c-4b27-49f5-8141-c124e08ef3f3",
+      "result_id": "c6c4f7ca-069f-4f97-94db-cbd65f383973"
+    },
+    {
+      "claim_id": "bd83f008-bf36-4b18-8665-6d545cda7c6b",
+      "result_id": "46e0296a-628c-49e3-811b-ed5560c7b867"
+    },
+    {
+      "claim_id": "10e2b4dc-8cb5-4858-bfab-8a054210b29e",
+      "result_id": "46e0296a-628c-49e3-811b-ed5560c7b867"
+    },
+    {
+      "claim_id": "f32fe71c-b41e-461b-9e48-c453daa8379b",
+      "result_id": "567c34c2-0c50-45c5-8bd7-84831748989b"
+    },
+    {
+      "claim_id": "df4bcf77-a6d1-43af-87b7-670026fad897",
+      "result_id": "567c34c2-0c50-45c5-8bd7-84831748989b"
+    },
+    {
+      "claim_id": "c027ef3a-d07e-4691-b247-d7f7b273eaed",
+      "result_id": "05844421-84d4-4486-b30e-a87295bafd3f"
+    },
+    {
+      "claim_id": "3d4219e2-09ae-4f3f-bcdf-380514dce90e",
+      "result_id": "05844421-84d4-4486-b30e-a87295bafd3f"
+    },
+    {
+      "claim_id": "46b956ab-5819-48f0-a672-23e562ebce4a",
+      "result_id": "05844421-84d4-4486-b30e-a87295bafd3f"
+    },
+    {
+      "claim_id": "eaf50f2e-dce6-4f68-8ddd-063a68038021",
+      "result_id": "59c8ad0e-da71-42dc-92c8-61e19e36d7f8"
+    },
+    {
+      "claim_id": "82d395ac-2151-4a84-8af0-cdd26adc0293",
+      "result_id": "59c8ad0e-da71-42dc-92c8-61e19e36d7f8"
+    },
+    {
+      "claim_id": "cfed8cbc-a38f-4325-b74b-11ffef2a82f8",
+      "result_id": "59c8ad0e-da71-42dc-92c8-61e19e36d7f8"
+    },
+    {
+      "claim_id": "1b334b77-bbe6-4891-8f44-0aea1871086c",
+      "result_id": "59c8ad0e-da71-42dc-92c8-61e19e36d7f8"
+    },
+    {
+      "claim_id": "c0662ddc-5f1d-4829-84c0-18e38bfe0bc3",
+      "result_id": "c634a55b-1783-4704-88d3-2385c7c545bd"
+    },
+    {
+      "claim_id": "032391af-8656-492e-926d-fef593286a5c",
+      "result_id": "c634a55b-1783-4704-88d3-2385c7c545bd"
+    },
+    {
+      "claim_id": "adae28fe-6a4d-4836-9a42-694af4d65e8e",
+      "result_id": "c634a55b-1783-4704-88d3-2385c7c545bd"
+    },
+    {
+      "claim_id": "2c0c0f14-81f7-487f-9864-06b6248a62cf",
+      "result_id": "b15ac1c2-8d97-4438-8ed5-d6f49a4d70d7"
+    },
+    {
+      "claim_id": "87d027aa-a746-4cf2-b3cc-059b6e6ea52d",
+      "result_id": "b15ac1c2-8d97-4438-8ed5-d6f49a4d70d7"
+    },
+    {
+      "claim_id": "0ffa4d77-cdbc-4f7a-aae0-7b18a7e6f606",
+      "result_id": "b15ac1c2-8d97-4438-8ed5-d6f49a4d70d7"
+    },
+    {
+      "claim_id": "bb010a9d-5a92-40f6-a2fd-79d2a449de83",
+      "result_id": "b15ac1c2-8d97-4438-8ed5-d6f49a4d70d7"
+    },
+    {
+      "claim_id": "cfb0d8c2-7b44-41bc-8dfa-b249a163a8f4",
+      "result_id": "b15ac1c2-8d97-4438-8ed5-d6f49a4d70d7"
+    },
+    {
+      "claim_id": "ef2173b0-11d0-4e63-b34e-38326e0d5c54",
+      "result_id": "b15ac1c2-8d97-4438-8ed5-d6f49a4d70d7"
+    },
+    {
+      "claim_id": "ee393a7d-4279-4ae0-bb51-3469e990cad8",
+      "result_id": "b15ac1c2-8d97-4438-8ed5-d6f49a4d70d7"
+    },
+    {
+      "claim_id": "1972678d-5f22-44da-88a0-49012b3d8944",
+      "result_id": "b15ac1c2-8d97-4438-8ed5-d6f49a4d70d7"
+    },
+    {
+      "claim_id": "457fc202-b87b-4db8-bacc-342b087ace04",
+      "result_id": "1ce6be80-3a0f-4d56-ad20-5af3793673f5"
+    },
+    {
+      "claim_id": "1eb51ee8-c517-489e-a3f0-fdb3dfe12595",
+      "result_id": "1ce6be80-3a0f-4d56-ad20-5af3793673f5"
+    },
+    {
+      "claim_id": "1bafb009-22d9-4788-88a6-d1065306fe9a",
+      "result_id": "a5bc17c9-fdd0-4177-a8fa-4184fd00d346"
+    },
+    {
+      "claim_id": "7c4198b5-0387-4f94-9eeb-8a3aad8ec29c",
+      "result_id": "a5bc17c9-fdd0-4177-a8fa-4184fd00d346"
+    }
+  ],
+  "comparisons": []
+}

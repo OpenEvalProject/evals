@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript establishes background knowledge about Parkinson's disease, including its motor symptoms, the role of dopamine depletion in basal ganglia dysfunction, and existing theoretical models (rate model and pattern model) that attempt to explain motor deficits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C11 are well-supported by established knowledge and citations to prior literature. These claims accurately represent the current understanding of PD pathophysiology and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript identifies a gap in the field: while individual physiological parameters of basal ganglia dysfunction are well-established, their correlations with motor symptoms are weak, and most studies examine only end-stage depletion. Early intervention during the prodromal phase could improve patient outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C12-C13 are supported by citations to clinical and experimental literature. These claims accurately identify limitations in prior work and establish the rationale for studying progressive dopamine depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C86"
+    ],
+    "result": "At end-stage dopamine depletion (acute and gradual models with ~4% striatal TH remaining), SNr neurons show decreased firing rates, increased irregularity (CVISI), increased burst firing, and increased synchronous pairs compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C22, and C86 present primary experimental findings with appropriate statistical tests (Kruskal-Wallis, z-tests, Dunnett post-hoc) and adequate sample sizes. The data are shown in Figure 1D-F, J with clear quantification and significance levels reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C67"
+    ],
+    "result": "Beta oscillations (13-30 Hz) were not significantly elevated in 6-OHDA depleted mice compared to controls, suggesting that elevated \u03b2-oscillations are not a robust feature of SNr pathophysiology in this mouse model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C67 are supported by statistical analysis (ANOVA, p=0.076) and are consistent with a previous report (Lobb et al., 2013). The negative result is appropriately reported and interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A machine learning classifier could not discriminate between acute and gradual depletion models at end-stage (60.2% accuracy, not above chance), but successfully discriminated end-stage mice from controls (84.9% accuracy), indicating stereotyped SNr pathophysiology at end-stage regardless of depletion rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by appropriate classification analysis with cross-validation (jackknife procedure) and statistical testing (right-tail t-tests). The methodology is described in detail in Materials and Methods, and results are shown in Figure 1L-M.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "During gradual dopamine depletion, firing rate decreases occur early (at 85% TH remaining) and persist, while changes in irregularity and bursting emerge more gradually and become pronounced at <60% TH remaining. Synchrony increases significantly only at end-stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by statistical analysis across multiple depletion stages with appropriate post-hoc tests. The hierarchical progression of physiological changes is clearly demonstrated in Figure 2C-F with adequate sample sizes at each stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C88"
+    ],
+    "result": "Principal component analysis reveals that SNr physiology follows a biphasic decline during gradual dopamine depletion: an initial early transition reflecting acute sensitivity to dopamine loss, followed by a stable intermediate period, and a final sharp decline at end-stage. The gradual depletion model accurately predicts acute depletion physiology at end-stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C88 are supported by PCA analysis (Figure 2H-I) with appropriate polynomial fitting (Adj-R\u00b2=0.368). The biphasic pattern is clearly visible and the overlap between gradual and acute models at end-stage validates the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C89"
+    ],
+    "result": "Behavioral deficits (open field velocity, rearing, pole task, wire hang) remain relatively intact until dopamine levels drop below 25-35%, after which performance declines rapidly. This sharp transition mirrors symptomatic onset in human PD patients. The gradual depletion model accurately predicts acute depletion behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C89 are supported by behavioral testing across multiple tasks with PCA analysis (Figure 3A-G). The polynomial fit (Adj-R\u00b2=0.545) demonstrates the monophasic behavioral decline, and comparison to clinical literature is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "A 2D polynomial model shows that physiology and behavior are correlated over the course of dopamine loss (Adj-R\u00b2=0.615), with early physiological changes aligning with the prodromal period and late changes aligning with the symptomatic period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by 2D polynomial regression analysis (Figure 3H) with appropriate model selection based on confidence intervals of coefficients. The relationship between physiology, behavior, and dopamine levels is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C90",
+      "C91"
+    ],
+    "result": "Striatal inoculation with preformed \u03b1-synuclein fibrils (PFF \u03b1-syn) produces progressive dopamine loss and Lewy body-like inclusions over 2-6 months, but TH levels do not drop below 30% even after 6 months, preventing examination of end-stage pathophysiology in this model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C90-C91 are supported by immunohistochemistry data (Figure 4A-B) and citations to prior literature establishing the PFF \u03b1-syn model. The limitation of not reaching end-stage is clearly acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "PFF \u03b1-syn mice at intermediate depletion stages (85-30% TH remaining) show behavioral trends similar to 6-OHDA gradual depletion mice, including modest hyperactivity, though most differences from control are not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by behavioral testing (Figure 4C-H) with appropriate statistical analysis. The similarity to 6-OHDA mice is demonstrated through PCA and polynomial fitting, though the lack of statistical significance for most measures is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In PFF \u03b1-syn mice, SNr firing rates decrease early (at 85% TH) and persist, while changes in firing patterns (irregularity, bursting) emerge at later stages (<60% TH), mirroring the progression in 6-OHDA mice. This suggests SNr pathophysiology depends more on dopamine depletion magnitude than depletion model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by electrophysiology data (Figure 5A-C) with appropriate statistical analysis. The comparison between PFF \u03b1-syn and 6-OHDA models is valid and supports the interpretation that pathophysiology is stereotyped across models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In unilaterally depleted mice, the ipsilateral (depleted) hemisphere shows reduced firing rates and elevated irregularity similar to bilateral depletion, while the contralateral hemisphere shows normal firing rates but elevated irregularity. Increased TH immunoreactivity in the contralateral hemisphere (211\u00b191%) suggests compensatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by electrophysiology and immunohistochemistry data (Figure 6A-E) with appropriate statistical analysis. The interpretation of compensatory mechanisms is supported by citations to prior literature on dopamine system compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A classifier cannot discriminate among four end-stage depletion models (acute, gradual, unilateral ipsilateral, asymmetric ipsilateral) above chance (30.4% vs 25% chance), but successfully discriminates combined end-stage conditions from controls (84.7% accuracy), demonstrating stereotyped end-stage pathophysiology across models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by multinomial classification analysis (Figure 6N-O) with appropriate cross-validation and statistical testing. The inability to discriminate among end-stage models supports the conclusion of stereotyped pathophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "A multinomial classifier successfully separates mice into 'early', 'intermediate', and 'late' depletion groups 52.9% of the time (significantly above 33% chance, p=0.004), suggesting SNr physiology deteriorates through discrete state transitions: normal \u2192 moderate \u2192 severe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by multinomial classification analysis (Figure 7C) with appropriate statistical testing (multi-class Matthew's Correlation Coefficient, permutation test). The three-state model is validated by the classifier's performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Analysis of multinomial classifier coefficients reveals that transitions from normal to moderate state are driven by increased irregularity and firing rate interactions with spike patterns, while transitions from moderate to severe state are driven by increased synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by examination of model coefficients (Figure 7D) with significance determined by 95% confidence intervals. The interpretation is consistent with the hierarchical progression of physiological changes observed in earlier results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C78"
+    ],
+    "result": "Cross-correlation analysis of physiological parameters with end-stage values reveals that during early depletion, firing rate decreases and synchrony increases push SNr toward pathology (normal\u2192moderate transition). During intermediate stages, increases in irregularity and bursting are offset by decreased synchrony and partial firing rate recovery, buffering the SNr in a moderate state. At late stages, buffering breaks down and all parameters align, transitioning to severe pathophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C78 are supported by similarity-to-end-stage analysis (Figure 7E) using cross-correlation with smoothing spline fits. The interpretation of buffering and breakdown is consistent with the observed biphasic physiological progression and provides a mechanistic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The study's main finding is that SNr pathophysiology progresses through discrete state transitions (normal\u2192moderate\u2192severe) that are highly stereotyped across depletion models and correlate with prodromal and symptomatic behavioral stages. The SNr is initially sensitive to small dopamine decreases, remains buffered in a moderate state across a range of dopamine levels, then transitions to severe pathophysiology when dopamine drops below 25-35%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C14-C16 represent the study's central conclusions and are well-supported by the comprehensive experimental data across multiple depletion models, classification analyses, and correlation with behavior. The discrete state model is validated by multiple independent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The discrete progression of SNr pathophysiology suggests different therapeutic windows: interventions affecting firing rate (e.g., L-DOPA) are predicted to be more effective at early stages, while interventions affecting regularity and synchrony (e.g., DBS) are predicted to be more effective at late stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C62 are predictions based on the experimental findings but lack direct experimental validation. While the predictions are logical extensions of the data and consistent with cited literature on L-DOPA and DBS mechanisms (C65-C66), they remain speculative without testing in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The study proposes a mechanistic model to explain the paradox that individual physiological parameters correlate with symptom alleviation but rarely predict symptom onset: motor symptoms emerge when the SNr is in the severe state (requiring alignment of multiple parameters), while changes in any single parameter can transition the SNr out of the severe state to the moderate state where motor deficits are minimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 provide a mechanistic interpretation supported by the experimental data showing hierarchical progression of physiological changes and their correlation with behavior. The model reconciles prior contradictory findings cited in the literature (C98-C99), though direct experimental validation of the prediction in C64 is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study found decreased SNr firing rates with dopamine depletion, contrary to the classical rate model's prediction of increased rates. This discrepancy is discussed in the context of variable findings across studies, potential mechanisms involving TRPC3 channels, and possible differences between rodent SNr and primate GPi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 appropriately discuss the unexpected finding of decreased firing rates. The discussion acknowledges variability in the literature (C69), proposes a plausible mechanism (C70-C71), and considers species/regional differences (C72-C74), all supported by appropriate citations. The speculation is clearly identified as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The study discusses the role of compensatory plasticity in maintaining the intermediate physiological state. Evidence from the literature shows compensation throughout the basal ganglia system, and the current results suggest bursting/irregularity may emerge as compensatory mechanisms to counteract aberrant firing rates, with circuit-level plasticity promoting pathological synchrony at later stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 and C79-C82 provide a speculative mechanistic interpretation of the intermediate buffered state. While the interpretation is consistent with cited literature on compensatory plasticity and the observed physiological progression, the study does not directly test compensatory mechanisms or establish causal relationships between firing rate changes and subsequent pattern changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The stereotyped severe physiological state at end-stage across all depletion models (regardless of time course or symmetry) suggests that end-stage deficits are not influenced by previous compensation, and the transition to the symptomatic stage represents the tipping point where compensatory capabilities are overwhelmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by the classification analyses showing inability to discriminate among end-stage models (C50, C52) and the convergence of all models to similar end-stage physiology. The interpretation about compensation being overwhelmed is reasonable given the data, though speculative elements are appropriately identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C93"
+    ],
+    "result": "The study employed appropriate methodological controls: SNr recording locations were confirmed by physiological criteria and post-mortem immunohistochemistry, rest periods were used for analysis due to minimal movement in depleted mice, and TH immunoreactivity was validated as a measure of dopamine levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C87, and C93 describe methodological validations that are appropriately documented. The recording location confirmation (C85) is shown in Figure 1B, the rest period analysis rationale (C87) is clearly stated, and TH immunoreactivity validation (C93) is supported by citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C92",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The discussion contextualizes findings within prior literature on therapeutic mechanisms (L-DOPA affects firing rates, DBS affects patterns), clinical observations (\u03b2-oscillations in humans, asymmetric dopamine loss), and the paradox that individual parameters correlate with symptom alleviation but not onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C92-C102 accurately represent prior literature with appropriate citations. These claims provide important context for interpreting the current findings and are used to support the study's mechanistic model.",
+    "result_type": "MINOR"
+  }
+]

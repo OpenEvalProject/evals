@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "A genome-wide screen for coadapted genetic elements in V. parahaemolyticus identified 90 interaction groups (IGs) involving 1,560 coding genes. The screen used >14 billion Fisher exact tests with P<10^-10 cutoff on a discovery dataset of 198 strains from the Asian population, after rigorous filtering to remove population structure. 82 IGs are between accessory genes, only 8 involve both core and accessory genomes, and 35 include multiple genome regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C33 provide comprehensive methodological details and quantitative results from the coadaptation screen. The statistical approach is clearly described (C24-C25), the dataset filtering is rigorous (C26-C28), and the quantitative findings are specific and internally consistent. The enrichment of non-synonymous variants (C34) provides additional validation that selection drives the observed linkage disequilibrium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C39",
+      "C40",
+      "C36",
+      "C37",
+      "C38",
+      "C84"
+    ],
+    "result": "The largest interaction group (IG1) has a complex hierarchical structure encoding at least four distinct ecological strategies (ecogroups). IG1 accounts for 82% of interacting SNPs and 23% of accessory genome elements. Hierarchical clustering revealed four distinct ecogroups (EG1a, EG1b, EG1c, EG1d), with three having large numbers of associated variants (50-965) while one strategy involves divergent profiles in multiple genome regions and others involve fewer genes and are more plastic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C36-C40, and C84 describe the hierarchical structure of IG1 and the identification of four ecogroups through clustering analysis. The quantitative characterization is detailed and consistent across claims. The hierarchical clustering methodology is appropriate for identifying structure in complex interaction data, and the results are visualized in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C88",
+      "C89",
+      "C90",
+      "C43",
+      "C44",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Within IG1, genes involved in cell wall biosynthesis (COG M) and cell motility (COG N) are substantially overrepresented (P<0.01). 27% of IG1 SNPs localize to the lateral flagella gene cluster. EG1a strains are highly diverged with 831 core SNPs in 47 genes and 134 accessory genes, including 114 fixed/nearly-fixed non-synonymous differences at the lateral flagellar gene cluster. Phylogenetic analysis shows the lateral flagellar locus has been inherited vertically but with substantially elevated evolutionary rate in EG1a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 and C68-C70 provide detailed functional and evolutionary characterization of IG1, particularly focusing on lateral flagella. The statistical enrichment is significant (P<0.01), quantitative measures are specific, and phylogenetic analysis (Figure 3\u2014figure supplement 3) supports the inference of elevated evolutionary rate in EG1a. The convergence of multiple lines of evidence strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C91",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "EG1a strains show distinct phenotypic characteristics including faster growth rate, significantly higher biofilm formation ability, and rough colony morphology under low salinity conditions compared to EG1b-d strains. Laboratory experiments used 11 strains (4 EG1a, 1 EG1b, 2 EG1c, 4 EG1d) with five replicates per strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C47 report phenotypic differences, but the experimental design has limitations. Only 11 strains were tested with unbalanced representation across ecogroups (1 EG1b strain). No statistical tests or p-values are reported for the phenotypic comparisons. The claim of 'significantly higher' biofilm formation (C46) lacks statistical support. The authors themselves note challenges interpreting natural variation under laboratory conditions and acknowledge failure to detect expected motility differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "EG1a strains (60 total in global collection) are predominantly from environmental samples (80%) rather than clinical samples (4 strains), suggesting low virulence potential in humans. All but one EG1a strain is from the VppAsia population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide clear quantitative data on the distribution and sources of EG1a strains. The inference of low virulence (C52) is reasonable given the low proportion of clinical isolates (4/60 = 6.7%) compared to other ecogroups (453/1043 = 43.4% or 268/798 = 33.6% excluding major pathogenic lineages), though this remains correlative rather than mechanistically demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C109"
+    ],
+    "result": "The most common type of interaction group is 'genome island-like' (52 of 90 IGs), consisting of single accessory genome regions between 3-57 kb. For example, IG2 consists of 10 genes in a single block, with 9 genes related to carbohydrate metabolism/transport. The IG2 island shows different frequencies between VppAsia (52%) and other populations (90%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 and C109 describe the most common interaction pattern with specific quantitative details and a concrete example (IG2). The characterization is consistent with established knowledge about genomic islands (cited Dobrindt et al., 2004) and the frequency differences between populations are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "24 interaction groups (27% of total) involve incompatibility between different accessory genome elements. Class G genes (carbohydrate transport/metabolism) are substantially overrepresented in these groups (22% vs 6%, p<0.01). Accessory genes in IGs have higher mean GC content than other accessory genes. Examples include IG3 (mutual exclusivity between yniC and VP0363-VP0367 genes) and IG42 (three mutually incompatible genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C127-C130 describe incompatibility interactions with statistical support (p<0.01 for COG G enrichment) and specific examples. The patterns are clearly illustrated in Figure 6, and the quantitative characterizations are precise. The GC content difference (C59) is shown in Figure 5a.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "A large majority of strains (439/469) either carry genes encoding T6SS or cellulose biosynthesis, but few have both. T6SS is used to inject toxins into nearby bacteria while cellulose production provides a protective coating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 provide clear quantitative data on the incompatibility between T6SS and cellulose biosynthesis gene clusters. Claims C73-C74 cite established functions (Salomon et al., 2013; Tischler and Camilli, 2004). The pattern is shown in Figure 3a and represents a clear example of functional incompatibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C92",
+      "C93",
+      "C104"
+    ],
+    "result": "Chromosome painting shows sharp peaks of differentiation around IG1 loci, especially for EG1a, but little differentiation elsewhere in the genome. This pattern indicates ecogroup structure is maintained by natural selection rather than barriers to gene flow, with coadaptation maintained despite frequent recombination. The linkage disequilibrium associated with IG1 is highly localized within the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 and C92-C93 describe chromosome painting results (Figure 3d) showing localized differentiation. The inference that selection rather than barriers to gene flow maintains ecogroup structure (C66) is well-supported by the sharp, localized peaks contrasting with genome-wide patterns expected from population structure (Figure 3\u2014figure supplement 2). The pattern is qualitatively distinct from clonal or geographic structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C131"
+    ],
+    "result": "Comparison of methods showed SuperDCA failed to identify EG1a SNPs among top 5,000 couplings despite perfect associations (P values as low as 1.4\u00d710^-30), due to coupling values being distributed among many SNPs with similar patterns. Excluding EG1a SNPs, there is strong correlation between SuperDCA and Fisher exact test. At stringent cutoff (10^-2.2), SuperDCA identifies the same interactions as Fisher exact test (P<10^-10). Fisher exact test P values are almost perfectly correlated with SpydrPick MI statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C131 provide detailed methodological comparison shown in Figure 7. The explanation for SuperDCA's failure to detect EG1a associations (C61) is logical given the large number of correlated SNPs. The correlations between methods are clearly demonstrated, and the computational requirements are documented (C138-C140). This represents a valuable methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Interacting SNPs are enriched for non-synonymous variants (26% vs 16%, P<0.01), consistent with natural selection generating the observed linkage disequilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide statistical evidence (P<0.01 from Fisher exact test) for enrichment of non-synonymous variants among interacting SNPs. This enrichment is expected if selection drives the associations and provides validation for the overall approach. The inference (C35) is appropriately cautious ('consistent with').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The first principal coordinate of accessory genome variation accounts for around 10% of variance and distinguishes EG1a strains from others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 describes PCoA results shown in Figure 1b,d. The quantitative measure (10% variance) is specific and the separation of EG1a is clearly visible in the figures. This provides independent validation of the ecogroup structure identified by hierarchical clustering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C86"
+    ],
+    "result": "The results imply most genetic alliances are ephemeral but increasingly complex strategies can evolve and eventually cause speciation. EG1a represents an intermediate stage of divergence prior to speciation, demonstrating that substantial adaptive divergence can precede barriers to genetic exchange. Lateral motility has a central role in structuring ecologically significant variation, and V. parahaemolyticus has progressively modified its fitness landscape through coadaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11-C12 and C80-C82 make broad evolutionary inferences that extend beyond the data. While EG1a shows extensive differentiation at specific loci (supported), the claims about speciation (C12, C80) are speculative. The statement that 'most genetic alliances are ephemeral' (C11) is not directly quantified. Claims C85-C86 about progressive fitness landscape modification and the central role of lateral motility are reasonable interpretations but represent high-level conclusions that would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Natural selection has a central role in determining accessory genome composition, as evidenced by more interactions between accessory elements than between core and accessory genomes. The rarity of core-accessory interactions reflects evolution of 'plug and play' architecture where accessory elements are functional immediately upon arrival in diverse genetic backgrounds, promoting genomic architecture that facilitates casual gain and loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 makes a reasonable inference from the relative frequencies of interaction types. However, claims C110-C113 propose a 'plug and play' explanation that, while plausible, is speculative. The rarity of core-accessory interactions could have alternative explanations (e.g., different timescales of evolution, different selective pressures). The theoretical arguments (C111-C113) are logical but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Initial divergence in flagellar function likely led to ecological differentiation and broadening of functional categories under divergent selection. The evolution of promiscuity and fastidiousness can both be self-reinforcing. At some point, coadaptation of core loci in EG1a likely became irreversible, and progressive enlargement of coadapted regions may eventually prompt evolution of mechanistic barriers to genetic exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C101 present a theoretical framework for understanding the evolution of coadaptation, illustrated in Figure 8. While the logic is internally consistent and the model is plausible, these claims are largely speculative ('likely', 'is likely to', 'might prompt'). The self-reinforcing nature of promiscuity/fastidiousness evolution (C96-C97) is a theoretical argument not directly tested. The predictions about future evolution (C99-C101) are explicitly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Distinguishing direct associations from those arising due to mutual correlation with other interacting genes is a substantial and largely unaddressed challenge. ARACNE filtering still left too many interactions to interpret as causal for complex interaction groups. Hierarchical clustering organized interactions in a manner allowing informal interpretation, but new statistical methodology is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 honestly acknowledge methodological limitations. The statement that ARACNE left too many interactions (C106) is supported by the reduction from 414,785 to only 103,241 interactions for IG1. The acknowledgment that hierarchical clustering allows only 'informal interpretation' (C107) is appropriately cautious. These represent important methodological insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "In V. parahaemolyticus, it has been possible to distinguish clearly between adaptive processes and neutral ones. However, coadaptation can itself generate genome-wide linkage disequilibrium that might be difficult to distinguish from clonal or population structure in other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 provide appropriate context about the advantages and limitations of the study system. The ability to distinguish adaptive from neutral processes (C102) is supported by the localized LD patterns and rigorous population structure filtering. The caveat about other species (C103) is appropriately cautious and acknowledges that V. parahaemolyticus may be unusual in its population genetic properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Approximately 0.017% of the V. parahaemolyticus genome recombines each year, implying approximately 50 million generations between recombination events at a given locus. The Asian population has had a large effective population size for at least 15,000 years (~130 million generations), resulting in approximate linkage equilibrium between most loci >3 kb apart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C22-C23 cite prior work (Yang et al., 2018; 2019a) for recombination rate and population size estimates. Claim C21 is a straightforward calculation based on C20 and generation time estimates. These claims establish the unusual population genetic properties of V. parahaemolyticus that make the coadaptation screen feasible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The study used 1,103 global V. parahaemolyticus genomes, identifying 565,466 bi-allelic SNPs in 198 VppAsia genomes. After filtering for minor allele frequency >2%, 151,957 SNPs and 14,486 accessory genes were used in coadaptation detection. Pan-genome analysis identified 41,052 pan-genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 provide clear methodological details about the dataset and variant calling. The numbers are specific and internally consistent. The filtering criteria (MAF >2%, presence in 2-98% of strains) are reasonable for reducing noise while retaining informative variation.",
+    "result_type": "MINOR"
+  }
+]

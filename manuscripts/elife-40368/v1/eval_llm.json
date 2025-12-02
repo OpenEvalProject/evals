@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C42",
+      "C43",
+      "C46",
+      "C47"
+    ],
+    "result": "Condorcet's Jury Theorem implicitly assumes only one type of error can be made, but signal detection theory shows two types of errors exist (false positives and false negatives). This implicit assumption is equivalent to assuming equal probabilities for both error types, which does not reflect most real-world decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C25, C26, C42, C43, C46 establish that Condorcet assumes one error type while signal detection theory recognizes two. Claims C27, C47 note this assumption's unrealistic nature. This is a well-founded critique based on established signal detection theory and represents a key conceptual contribution of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C22",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C112",
+      "C113"
+    ],
+    "result": "Majority voting is frequently sub-optimal and can be optimally replaced by quorum decision-making. The study shows that: (i) when decision-makers are good (a>0.5), majority decisions may decrease accuracy; (ii) when decision-makers are poor (a<0.5), majority decisions may increase accuracy; and (iii) pooling decisions is always beneficial with appropriate quorum-based rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C38-C41 state the main findings, supported by theoretical analysis (C22, C37) and summarized in C112-C113. The mathematical derivations in the Results section and simulations in Figures 2-3 provide converging evidence. This represents the paper's central theoretical contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C58",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors develop an extended model incorporating two world states (+ and -) with state-specific accuracies (a+ and a-), where decision-makers are characterized by two parameters rather than one. Signal detection theory determines optimal values for these parameters based on prior probabilities and error costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 describe the extended model structure, while C58, C62-C63 explain how signal detection theory optimizes individual decision-makers. This methodological framework is clearly presented and logically sound, providing the foundation for subsequent analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "ROC space can be divided into regions where majority voting is optimal (white region where a+>0.5 and a->0.5) versus sub-optimal (light grey regions). The equal accuracy line (a+=a-) always occupies the region where Condorcet predictions are fulfilled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 describe findings illustrated in Figure 1, showing the geometric relationship between ROC space and Condorcet optimality. The figure clearly depicts these regions and the analysis is mathematically grounded in signal detection theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Error Ia occurs when Condorcet predicts group accuracy approaches 1, but majority groups converge to a non-unity value (either p or 1-p). This error can be avoided by choosing an appropriate super-majority quorum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 describe Error Ia with reference to Figures 2a and 3a-b. The mathematical conditions are derived in the text, and simulations demonstrate both the error and its remediation through super-majority quorums.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Error Ib refines Error Ia by showing cases where Condorcet predicts group accuracy approaching 1, but groups actually have lower accuracy than individuals. This error can also be avoided by choosing an appropriate super-majority quorum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 define Error Ib mathematically, while C91-C93 reference supporting data in Figures 2b and 3c-d. The mathematical derivation builds logically on Error Ia conditions, and simulations demonstrate the phenomenon and solution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Error II occurs when individual expected accuracy is below 0.5, Condorcet predicts group accuracy converges to 0, but groups actually converge to a non-zero accuracy. This error can be avoided by choosing an appropriate sub-majority quorum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 describe Error II, while C98-C100 reference supporting data in Figures 2c and 3e-f. The mathematical conditions are clearly derived, and simulations demonstrate both the error and its remediation through sub-majority quorums.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "There is no 'Error IIb' case parallel to Error Ib. When Condorcet predicts group accuracy approaches 0, majority groups will always be worse than individuals, even if group accuracy remains positive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 present a mathematical inference about the impossibility of Error IIb. The reasoning is based on algebraic incompatibility of the relevant conditions, which can be verified. This represents a completeness result for the error taxonomy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Figure 2d shows that Condorcet makes at least one predictive error in the majority of decision scenarios. These scenarios correspond exactly to cases where majority decision-making is sub-optimal and outperformed by appropriate quorum rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 summarize findings illustrated in Figure 2d, which combines all error types. The figure clearly shows that the white region (where Condorcet is correct) is smaller than the grey regions (where it errs), supporting the quantitative claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C13"
+    ],
+    "result": "The analysis relates decision ecology to optimal quorum type: sub-majority quorums are required when a+<0.5 (when positive state is rarer and/or false positives are expensive), while super-majority quorums are required when 1-a+>0.5 (converse conditions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 describe the relationship between ecological parameters and optimal quorum thresholds, derived from mathematical analysis and illustrated in Figure 2d. Claim C13 states this as a main finding. The logic connecting error costs, prior probabilities, and quorum type is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Condorcet implicitly assumes equal accuracies in both world states (a+=a-), which occurs when states are equally likely and error costs are equal, though asymmetric problems can also yield equal accuracies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 present mathematical inferences about Condorcet's implicit assumptions, derived from Equation 1 and supplementary analysis. The reasoning is sound and helps explain why Condorcet's framework is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Group accuracy converges on the appropriate accuracy for the true state of the world as group size increases. By setting a quorum between the two state-specific accuracies, the true state can be determined with high probability for sufficiently large groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 explain the intuition behind optimal quorum placement, based on probability theory. This reasoning is mathematically sound and provides insight into why quorums work, though it is explanatory rather than a novel empirical finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C23",
+      "C120",
+      "C130",
+      "C131"
+    ],
+    "result": "The results help explain the ubiquity of quorum decision-making in nature by showing their fundamental importance even in the simplest collective behavior scenarios (single-shot decisions in homogeneous groups with aligned interests).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12, C120, C131 are speculative about explaining natural quorum prevalence. While C23 documents that quorums are ubiquitous (supported by citations), and C130 correctly states the scope of the analysis, the causal link between the theoretical results and natural quorum evolution remains speculative without empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Bacterial quorum sensing may provide a good testbed for the theory given its binary nature and asymmetric state priors and error costs, though evolutionary conflicts of interest may create confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C134 suggest bacterial quorum sensing as a test system. While C132 cites evidence for bacterial quorum sensing, C133-C134 are speculative suggestions for future work. The suitability of this system for testing the theory remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Human decision-making experiments may provide a powerful approach to test the predictions, as humans have been shown to employ quorum rules and adaptively adjust quorum thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C135 is supported by citations showing humans use quorums, but C136's suggestion that human experiments would powerfully test the predictions is speculative. No such experiments are presented or designed in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Ben-Yashar and Nitzan (1997) analytically solved for optimal decision rules considering error costs and prior asymmetry, but treated true/false positive rates as independent of ecological parameters. By applying signal detection theory to optimize individuals, the current study reveals the complex nonlinear relationship between these quantities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 accurately describe prior work (supported by citation), C150-C151 identify its limitation, and C152 summarizes the current contribution. This correctly positions the work relative to the closest prior result and explains the advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ROC curve shape is determined by decision difficulty, with hard decisions near the diagonal and easy decisions approaching the upper-left corner. Optimal decision-makers select points on the ROC curve based on prior probabilities and error costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe established signal detection theory (C59 cites Shettleworth 2010) and its application to the current problem. This is well-established knowledge correctly applied, illustrated in Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The results may inform design of artificial decision-making systems, machine learning, and robotics. In ensemble learning, variable quorums ('threshold shift') are used, but majority voting remains ubiquitous, suggesting the perspective presented here may yield technological insight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C164 correctly describe ensemble learning practices (supported by citations), but C14, C162, C165 are speculative about potential applications. No concrete applications or implementations are demonstrated, making these claims uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Condorcet's Jury Theorem states that for pairwise decisions, majority-voting groups are superior to individuals when individual accuracy exceeds 50%, and inferior when below 50%. This leads to three common interpretations about when to pool judgments and the power of majority rule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C28-C33 accurately summarize Condorcet's theorem (established knowledge, supported by citations). Claims C34-C36 describe common interpretations in the field (also supported by citations). This provides accurate background for the paper's critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In animal behavior and other fields, Condorcet's prescription has been widely used to recommend when to pool opinions and when to favor experts. While useful for highlighting benefits of information pooling, such studies implicitly neglect that most decisions have two error types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 document widespread use of Condorcet reasoning (supported by multiple citations). Claims C118-C119 acknowledge prior work's value while identifying its limitation. This fairly characterizes the state of the field and motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Prior work on quorums (Sumpter & Pratt, Ward et al., Conradt & Roper, Wolf et al., Kirstein & von Wangenheim, Sorkin et al., Laan et al.) has considered various aspects but did not fully integrate signal detection theory to optimize individuals and systematically delineate when Condorcet reasoning fails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C147 systematically review prior work on quorums and signal detection theory in collective decisions, accurately describing each study's contributions and limitations (all supported by citations). This provides thorough context for the current contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Future approaches could optimize individual quorums (rather than setting them in intervals) for greater benefits to smaller groups, or apply Bayesian decision theory to handle complexities like non-independence of decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C158 suggest future research directions. While C156 cites prior work on optimizing individual quorums and C158 cites Bayesian approaches, these remain speculative suggestions for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "While errors and correct decisions may be correlated in many scenarios, information can be considered independent due to sensory noise even when individuals observe the same stimulus. The simple approach has the benefit of tractability while revealing complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C160 acknowledge potential limitations of the independence assumption while citing justification (Marshall et al. 2017). Claim C161 provides methodological justification for the simplified approach. This represents a fair assessment of the model's scope and limitations.",
+    "result_type": "MINOR"
+  }
+]

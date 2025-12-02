@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C61"
+    ],
+    "result": "MD simulations of myosin motor domains reveal extensive P-loop conformational heterogeneity not captured by crystal structures. While crystal structures rarely sample P-loop conformations with RMSD >0.6 \u00c5 from the reference (only 9% of 114 structures), simulations show 58% of the conformational distribution exceeds this threshold, demonstrating that simulations access excited states invisible to crystallography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 and C61 provide converging evidence from both crystal structure analysis and simulation data (Figure 2A-B). The quantitative comparison between crystal structures (9% >0.6 \u00c5 RMSD) and simulations (58% >0.6 \u00c5 RMSD) is well-documented and statistically robust. The unprecedented 2 milliseconds of simulation time provides sufficient sampling to support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The P-loop conformational landscape contains two distinct basins with different nucleotide compatibility. The lower basin (<0.6 \u00c5 RMSD) contains 91% of crystal structures with 80% nucleotide-bound, while the upper basin (\u22650.6 \u00c5 RMSD) contains only 9% of structures with just 11% nucleotide-bound (odds ratio = 0.03, p<1.3\u00d710\u207b\u2075), indicating the lower basin represents nucleotide-favorable conformations and the upper basin represents nucleotide-unfavorable conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 present a coherent analysis of crystal structure data with appropriate statistical testing (Fisher's exact test). The significant depletion of nucleotide-bound structures in the upper basin provides strong evidence for the functional interpretation. However, the inference that these regions are nucleotide-incompatible (C23, C27) is based on correlation rather than direct binding measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "MSM analysis identifies five P-loop states (A-E) with distinct structural and functional properties. State A (49% probability) represents the nucleotide-favorable conformation with S180 carbonyl oriented away from the nucleotide binding site. States B-D (50% combined probability) represent nucleotide-unfavorable conformations with S180 carbonyl oriented toward the phosphates, creating steric clashes and unfavorable electrostatic interactions. The key structural difference is the orientation of the peptide bond between S180 and G181.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 and C81-C84 describe the MSM-derived states with structural analysis from Figure 3. The identification of the S180 carbonyl orientation as the key distinguishing feature is well-supported by the data. The mechanistic interpretation of steric clashes and electrostatic repulsion (C82-C84) is reasonable based on structural principles, though these are inferences rather than direct measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C85",
+      "C86"
+    ],
+    "result": "High duty ratio motors preferentially sample nucleotide-favorable P-loop conformations compared to low duty ratio motors. In simulations, high duty ratio motors strongly prefer the lower basin (state A) while low duty ratio motors explore both basins. Crystal structure analysis supports this: 0/9 (0%) high duty ratio motors crystallized outside state A versus 8/20 (40%) low duty ratio motors (p<0.034). The free energy difference between states A and B correlates strongly with experimentally measured duty ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C85-C86 present converging evidence from simulations (Figure 4A) and crystal structures with appropriate statistical testing. The correlation between simulated conformational preferences and experimental duty ratios (Figure 4B) provides strong validation. The sample size for crystal structures is modest but the statistical significance is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "P-loop transition rates P(A\u2192B) from MSMs predict ADP release rates better than loop 1 length alone. For the Sweeney dataset of chicken gizzard myosin constructs, P(A\u2192B) shows strong correlation with ADP release rates (Pearson's R = 0.99) compared to the length-based model (R = 0.72). The model correctly ranks all four isoforms and captures sequence-specific effects of just five residue changes at ~25 \u00c5 distance from the P-loop, demonstrating exquisite sensitivity to distant mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C87-C95 present a rigorous comparison between the MSM-based model and the length-based model using the well-controlled Sweeney dataset. The correlation coefficients are strong and the model's ability to capture distant allosteric effects (C93-C95) is impressive. However, the absolute timescales differ from experimental values (acknowledged by authors), so only rank ordering can be validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The P(A\u2192B) model generalizes across diverse experimental conditions and motor isoforms. Despite different experimental conditions (temperature, Mg\u00b2\u207a, light chains), P(A\u2192B) shows reasonable correlation with ADP release rates across all datasets (Pearson's R = 0.75) compared to the length-based model (R = 0.14). The model correctly predicts the rank order for MYH7 and MYH13 (which differ by an order of magnitude in ADP release despite similar loop 1 lengths) and identifies MYO1B and MYH10 as very slow ADP releasers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 and C96-C101 demonstrate broader applicability but with important caveats. The correlation (R = 0.75) is reasonable but weaker than for the controlled Sweeney dataset. The authors acknowledge that MYH10 is an outlier and attribute this to missing light chains in simulations (C101). The diverse experimental conditions (C98) make direct quantitative comparison problematic, though qualitative trends are preserved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "In high duty ratio motor MYO6, the nucleotide-favorable A state is stabilized by an interaction between the P-loop serine backbone carbonyl and switch-II residue K670. Low duty ratio myosin-II motors (MYH13, MYH7, MYH10) have isoleucine at this position, eliminating this stabilizing interaction. This substitution may be specific to myosin-IIs, as other low duty ratio motors like MYO1B retain lysine at this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C105-C107 present structural analysis from Figure 6A-B showing clear differences in interaction patterns between MYO6 and MYH7. The distance analysis (Figure 6B) quantitatively supports the presence/absence of the interaction. The proposed mechanism (C105) is reasonable but speculative. The observation that this substitution may be myosin-II-specific (C107) appropriately acknowledges complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "In low duty ratio motor MYH7, the nucleotide-unfavorable B state is stabilized by an interaction between switch-I loop residue S242 and P-loop S180 sidechain. This interaction requires switch-I to move toward the small alanine at position 463. High duty ratio motor MYO7A has bulky phenylalanine (F439) at this position, preventing the interaction and destabilizing state B. However, MYO6 has alanine at this position, indicating this substitution is not strictly required for high duty ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C108-C114 present structural analysis from Figure 6C-D with mechanistic interpretation. The proposed steric mechanism (C111) is reasonable based on the structural data. The acknowledgment that MYO6 has alanine at position 463 (C113-C114) appropriately recognizes that multiple mechanisms contribute to duty ratio, preventing oversimplification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C62",
+      "C63",
+      "C102",
+      "C103",
+      "C104",
+      "C115",
+      "C116"
+    ],
+    "result": "Duty ratio and ADP release rate are encoded by the distribution of conformations explored by the motor domain, not by single structural elements. Despite identical P-loop sequences across motors, their conformational distributions differ due to interactions with other structural elements throughout the motor domain. The model captures allosteric effects from mutations ~25 \u00c5 distant involving only a few dozen atoms in a ~12,500 atom molecule. Multiple interactions are necessary to fully explain duty ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C62-C63, and C102-C104, C115-C116 present the central conceptual framework supported by the entire study. The observation that P-loop sequences are identical yet distributions differ (C102) is key evidence. The model's ability to capture distant allosteric effects (C51) is demonstrated by the Sweeney dataset results. The acknowledgment that multiple interactions are necessary (C116) shows appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C71",
+      "C72",
+      "C120",
+      "C121"
+    ],
+    "result": "MD simulations and MSMs constitute a powerful platform for predicting myosin biochemical properties from sequence. The equilibrium between nucleotide-favorable and nucleotide-unfavorable conformations predicts duty ratio, while transition rates predict ADP release rates. MSMs capture sufficient thermodynamic and kinetic information to produce reasonable estimates of these parameters by identifying systematic shifts in conformational distributions that correlate with biochemical differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C71-C72, and C120-C121 summarize the methodological contribution. The evidence from duty ratio predictions (Figure 4B) and ADP release rate predictions (Figure 5C, 5E) supports these conclusions. The word 'reasonable estimates' (C72) appropriately acknowledges limitations in absolute quantitative accuracy while emphasizing the success in capturing relative differences and rank ordering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C117",
+      "C118",
+      "C119",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The simulation approach requires only homology models as starting points and should be applicable to diverse motor variants including disease mutations. A successful design pipeline would involve selecting mutations based on structural logic, simulating to verify intended behavior in silico, then experimental validation. This approach has proved powerful in other protein systems and may enable studying patient-specific mutations and developing therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 and C117-C119, C124-C126 discuss future applications and broader applicability. While the use of homology models is demonstrated (C55), the claims about applicability to disease mutations (C56) and other proteins (C124) are speculative. The proposed design strategy (C118) is reasonable but untested in this system. Claims C125-C126 about therapeutic applications are highly speculative and represent aspirational future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C122",
+      "C123"
+    ],
+    "result": "The predictive power of isolated motor domain simulations stems from a link between isolated and bound conformational distributions. Motor domains must adopt key conformations during functional interactions with binding partners and are nearly guaranteed to transiently sample these conformations even without binding partners. Motors preferring nucleotide-favorable conformations in isolation pay lower energetic costs when forming nucleotide complexes. Despite binding partners affecting conformational distributions, reasonable estimates of unloaded biochemical properties can be extracted from isolated motor domain simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C65-C68, and C122-C123 present the theoretical framework explaining why the approach works. The logic is sound and consistent with conformational selection principles in protein dynamics (C64-C65, supported by citations). The acknowledgment that binding partners affect distributions (C122) while still enabling predictions (C123) appropriately balances limitations with demonstrated success. The thermodynamic reasoning (C68) is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C70"
+    ],
+    "result": "The excited P-loop states observed in silico may correspond to biochemically-observed 'open' and 'closed' states of nucleotide-free myosin motors in vitro. A preference for the nucleotide-favorable A state should correlate with low duty ratio based on the observation that large free energy differences between ADP-bound and nucleotide-free states associate with low duty ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52 and C70 present speculative interpretations. C52 is explicitly described as 'tantalizing interpretation' and C70 as a hypothesis. While the logic connecting these observations is reasonable and supported by prior work (C69), these remain untested hypotheses requiring experimental validation. The correlation between simulated states and biochemical states is plausible but not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C60",
+      "C64",
+      "C69",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Background and motivation: Myosin motors perform diverse biological functions despite sharing a common mechanochemical cycle. Functional diversity arises from differences in motor domains themselves, with duty ratios and ADP release rates varying by orders of magnitude across isoforms. Existing approaches (sequence analysis, loop 1 length, crystal structures, limited simulations) have not enabled routine prediction of biochemical properties from sequence. The P-loop is a highly conserved nucleotide-binding element suitable for comparative analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15, C60, C64, C69, C73-C80 establish the scientific context through established knowledge and prior work (supported by numerous citations). These claims accurately represent the state of the field and the challenges that motivated this study. The characterization of myosin diversity (C1-C14) and limitations of existing methods (C73-C75) appropriately frames the research problem.",
+    "result_type": "MINOR"
+  }
+]

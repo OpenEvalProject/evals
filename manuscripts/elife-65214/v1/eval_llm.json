@@ -1,0 +1,97 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The authors developed a template-matching coherence metric based on a coupled oscillator model to quantify how closely observed limb coordination matches canonical gait templates. The metric ranges from 0 to 1, with 1 indicating perfect match to a template phase configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 describe a methodological development that is clearly stated and mathematically well-defined. The metric's properties (range and interpretation) are explicitly defined, and the approach is referenced to Materials and methods for implementation details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Analysis of coherence distributions shows that tripod gait has a sharply peaked distribution around 0.9 coherence indicating close template match, while other canonical gaits (tetrapod, wave) show broader distributions peaked at lower coherences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 are directly supported by Figure 3H showing the coherence distributions. The tripod gait shows distinctly higher and more concentrated coherence values compared to other canonical gaits, providing clear quantitative evidence for the dominance of tripod coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C16"
+    ],
+    "result": "The conditional coherence distributions across walking speeds do not show prominent peaks characteristic of preferential gait usage at specific speeds. At all but the lowest speeds, tripod is the most coherent phase template, though all coherences show low average values at slow walking speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C16 are supported by Figures 3I and 3J. The absence of distinct peaks in conditional coherence distributions (C7) contradicts the expectation (C6) that would arise if flies preferentially used different gaits at different speeds. The corrected figures show this pattern clearly, with tripod dominance except at lowest speeds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "At slow walking speeds where mean coherences are low, tetrapod coherences become more likely to be the highest coherence. This observation is consistent with tetrapod-like coordination patterns and increased spread of relative phase distributions at low speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by multiple figures (3F-G, 3D-E, 3J, and supplements 2-3) and citation to Wosnitza et al., 2013. The corrected Figure 3J clearly shows increased tetrapod coherence at low speeds, and this is appropriately contextualized with prior observations of phase variability at slow speeds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C17"
+    ],
+    "result": "Even when non-tripod gaits show the highest coherence, these coherence values are lower than when tripod coherence is highest. Non-tripod mode coherences remain quite low even among instances best described by canonical gaits other than tripod.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C17 are supported by Figure 3\u2014figure supplement 3 (both original and corrected versions). This finding indicates that even when alternative gaits appear to be used, they do not match their canonical templates as closely as tripod gait matches its template.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The tetrapod coherence of a perfect tripod gait is mathematically 3^(-1/2) \u2248 0.6, which means the coherence metric may not show strong contrasts under some deformations in coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C14 present a mathematical property and its implication for metric sensitivity. The calculation is correct (3^(-1/2) \u2248 0.577), and the authors appropriately acknowledge this as a limitation of their metric. This cross-sensitivity between gait templates is an important caveat for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C18"
+    ],
+    "result": "The template-matching analyses do not provide strong evidence for the preferred use of canonical tetrapod and wave gaits in Drosophila walking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C18 represent the main conclusion, which is appropriately supported by the collective evidence from claims C3-C12 and C17. The corrected version (C15) uses more cautious language ('strong evidence' vs 'significant evidence') that better reflects the nuanced findings, particularly the metric limitation noted in C13-C14 and the low coherence values for non-tripod gaits even when they are highest.",
+    "result_type": "MAJOR"
+  }
+]

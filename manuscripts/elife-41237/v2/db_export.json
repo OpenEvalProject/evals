@@ -1,0 +1,1943 @@
+{
+  "submission": {
+    "id": "ec156be4-d524-45ce-95a2-12a46a857302",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:10:17.739230Z",
+    "updated_at": "2025-12-02T07:10:17.739230Z"
+  },
+  "content": [
+    {
+      "id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "submission_id": "ec156be4-d524-45ce-95a2-12a46a857302",
+      "content_type": "manuscript",
+      "content_text": "# Lipidation-independent vacuolar functions of Atg8 rely on its noncanonical interaction with a vacuole membrane protein\n\n## Authors\n\n- Xiao-Man Liu<sup>1</sup>\n- Akinori Yamasaki<sup>2</sup>\n- Xiao-Min Du<sup>1</sup>\n- Valerie C Coffman<sup>4</sup>\n- Yoshinori Ohsumi<sup>5</sup>\n- Hitoshi Nakatogawa<sup>6</sup> ([ORCID: 0000-0002-5828-0741](https://orcid.org/0000-0002-5828-0741))\n- Jian-Qiu Wu<sup>4</sup>\n- Nobuo N Noda<sup>2</sup> ([ORCID: 0000-0002-6940-8069](https://orcid.org/0000-0002-6940-8069)) \u2020\n- Li-Lin Du<sup>1</sup> ([ORCID: 0000-0002-1028-7397](https://orcid.org/0000-0002-1028-7397)) \u2020\n\n### Affiliations\n\n1. National Institute of Biological Sciences Beijing China\n2. Institute of Microbial Chemistry Tokyo Japan\n3. College of Life Sciences Beijing Normal University Beijing China\n4. The Ohio State University Columbus United States\n5. Unit for Cell Biology, Institute of Innovative Research Tokyo Institute of Technology Yokohama Japan\n6. School of Life Science and Technology Tokyo Institute of Technology Yokohama Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ubiquitin-like protein Atg8, in its lipidated form, plays central roles in autophagy. Yet, remarkably, Atg8 also carries out lipidation-independent functions in non-autophagic processes. How Atg8 performs its moonlighting roles is unclear. Here we report that in the fission yeast Schizosaccharomyces pombe and the budding yeast Saccharomyces cerevisiae, the lipidation-independent roles of Atg8 in maintaining normal morphology and functions of the vacuole require its interaction with a vacuole membrane protein Hfl1 (homolog of human TMEM184 proteins). Crystal structures revealed that the Atg8-Hfl1 interaction is not mediated by the typical Atg8-family-interacting motif (AIM) that forms an intermolecular \u03b2-sheet with Atg8. Instead, the Atg8-binding regions in Hfl1 proteins adopt a helical conformation, thus representing a new type of AIMs (termed helical AIMs here). These results deepen our understanding of both the functional versatility of Atg8 and the mechanistic diversity of Atg8 binding.\n\n## Introduction\n\nMacroautophagy (hereafter autophagy) is an evolutionarily conserved bulk degradation pathway essential for cellular homeostasis. In autophagy, cytosolic materials to be degraded are sequestered and enclosed inside double-membrane vesicles termed autophagosomes. Autophagosome formation is a complicated process that requires many autophagy-related (Atg) proteins (Mizushima et al., 2011). Among them, the ubiquitin-like protein Atg8 (called LC3/GABARAP proteins in humans) plays a central role. Atg8 is conjugated to the membrane lipid phosphatidylethanolamine (PE) through a series of enzymatic reactions including its processing by the protease Atg4, activation by an E1-like enzyme Atg7, and covalent linking of its G116 residue to PE by the collaborative activities of an E2-like enzyme Atg3 and an E3-like complex Atg12\u2013Atg5-Atg16 (Ichimura et al., 2000; Hanada et al., 2007). This covalent attachment of Atg8 to lipid is termed lipidation. Lipidated Atg8 on autophagic membranes is critically important for autophagosome formation (Kirisako et al., 1999), and also serves as a recruitment platform for selective autophagy receptors (Shintani et al., 2002).\n\nSelective autophagy receptors and other Atg8-interacting proteins bind to Atg8 using a short linear motif termed Atg8-family-interacting motif (AIM) or LC3-interacting region (LIR) (Pankiv et al., 2007; Ichimura et al., 2008; Noda et al., 2008; Noda et al., 2010; Birgisdottir et al., 2013). The core consensus sequence of the AIM motif is the four-amino-acid sequence W/F/YxxL/I/V, in which \u2018x\u2019 denotes any amino acid. When bound to Atg8, this motif adopts an extended \u03b2 strand conformation and forms an intermolecular parallel \u03b2-sheet with the \u03b22 strand of Atg8. The conserved aromatic residue (W/F/Y) and hydrophobic residue (L/I/V) in the AIM motif insert into two hydrophobic pockets on Atg8, termed the \u2018W-site\u2019 and the \u2018L-site\u2019, respectively (Noda et al., 2010). In addition to these two most conserved residues, acidic residues within or flanking the core consensus sequence also contribute to Atg8 binding by electrostatic interactions with basic residues on Atg8.\n\nApart from its lipidation-dependent roles in autophagy, Atg8 has been shown to play lipidation-independent roles in both autophagic and non-autophagic processes. The lipidation-independent roles that have been discovered in model yeast species are those related to the vacuole, an equivalent of the lysosome in animals. Yeast vacuoles are usually spherical or near-spherical in shape. In the methylotrophic yeast Pichia pastoris, the loss of Atg8 caused aberrant vacuole morphology, a phenotype not shared by atg7\u0394 and atg8-G116A, two mutants defective in Atg8 lipidation (Mukaiyama et al., 2004; Tamura et al., 2010). In another model yeast species, the fission yeast Schizosaccharomyces pombe, the loss of Atg8 was also shown to cause abnormal vacuole morphologies, including the formation of tubular-shaped vacuoles, but the lipidation- and autophagy-deficient atg8-G116A mutant did not exhibit any vacuole morphology abnormalities (Mikawa et al., 2010). Lipidation-independent functions of Atg8 have also been reported in animals (Al-Younes et al., 2011; Cal\u00ec et al., 2008; Chang et al., 2013; Reggiori et al., 2010; Sharma et al., 2014). The molecular mechanisms underlying the lipidation-independent functions of Atg8 remain unclear.\n\nIn this study, we found that in both S. pombe and Saccharomyces cerevisiae, Atg8 physically interacts with Hfl1, a vacuole membrane protein. This interaction promotes the localization of Atg8 at the vacuole membrane in a lipidation-independent manner. hfl1\u0394 and atg8\u0394 caused the same vacuole-related phenotypes, which are not shared by other atg mutants. We solved the crystal structures of Atg8 in complex with Atg8-interacting regions of Hfl1 proteins. The structures showed that the Atg8-Hfl1 interaction is mediated by noncanonical mechanisms\u2014using Hfl1 sequences adopting helical conformation (termed helical AIMs here) and in the case of budding yeast, involving a previously unreported binding site on Atg8. These results unveil the molecular basis of the lipidation-independent vacuolar functions of Atg8 and expand our understanding of the diversity of Atg8-binding mechanisms.\n\n## Results\n\n### Atg8 interacted with Hfl1 and was recruited to the vacuole membrane by Hfl1\n\nTo identify Atg8-binding proteins in S. pombe, we performed affinity purification coupled with mass spectrometry analysis of C-terminally YFP-FLAG-His6 (YFH)-tagged Atg8 expressed in atg4\u0394 cells (without the Atg4 protease, Atg8-YFH cannot be processed and lipidated). Among the proteins that specifically co-purified with Atg8-YFH is a protein called Hfl1 (systematic ID SPAC30D11.06c) (Supplementary file 1). Hfl1 was found in an unpublished study to be a vacuole membrane protein whose absence resulted in abnormal vacuole morphology (the name stands for \u2018Has Fused Lysosomes\u2019) (Lilavivat, 2013). It belongs to a conserved eukaryotic protein family (InterPro ID: IPR005178; PFAM ID: PF03619, formerly DUF300). Like other proteins in this family, Hfl1 is predicted to contain seven transmembrane helices followed by a C-terminal cytosolic tail (Figure 1A and Figure 1\u2014figure supplement 1A). In the model yeasts S. pombe, S. cerevisiae, and P. pastoris, there is one protein belonging to this family per species, whereas in other fungi and in animals, there are often two or more proteins belonging to this family per species (Figure 1\u2014figure supplement 1B). In humans, members of this family include three TMEM184 proteins (TMEM184A, TMEM184B, and TMEM184C) and SLC51A (also known as organic solute transporter subunit alpha or OST\u03b1). The TMEM184 proteins are more closely related to the fungal members of this family than SLC51A is (Figure 1\u2014figure supplement 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic depicting the transmembrane topology of Hfl1 and its related proteins, as predicted using PolyPhobius (see Figure 1\u2014figure supplement 1A for a sequence alignment). (B) SpHfl1 was co-immunoprecipitated with SpAtg8. (C) ScAtg8 was co-immunoprecipitated with ScHfl1. Scatg4\u0394 background was used to prevent the processing of ScAtg8-mCherry. (D) SpHfl1 localized to the vacuole membrane. Zhf1 is a vacuole membrane marker. (E) mYFP-SpAtg8 exhibited both cytosolic and vacuole membrane localizations in the wild-type cells, and the vacuole membrane localization was abolished in Sphfl1\u0394 cells. (F) Overexpression of SpHfl1 using the nmt1 promoter resulted in the concentration of mYFP-SpAtg8 on the vacuole membrane. (G) Overexpression of ScHfl1 using the TEF1 promoter resulted in the concentration of ScAtg8-mCherry on the vacuole membrane. Scatg4\u0394 background was used to prevent the processing of ScAtg8-mCherry. Bars, 3 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Multiple sequence alignment of the transmembrane regions of SpHfl1, ScHfl1, and four human proteins belonging to the InterPro IPR005178 protein family. Alignment was generated using MAFFT and visualized using Jalview. Transmembrane helices (TM) were predicted using PolyPhobius. (B) Maximum likelihood phylogenetic tree of IPR005178 protein family members in six fungal species (S. cerevisiae, P. pastoris, Y. lipolytica, S. pombe, M. oryzae, and C. neoformans), one ciliate species (T. thermophila), and three animal species (C. elegans, D. melanogaster, and H. sapiens). ScHfl1 and SpHfl1 are highlighted in red. Protein sequences were aligned using the L-INS-i iterative refinement algorithm of MAFFT and maximum likelihood analysis was performed using IQ-TREE version 1.5.3 for Mac OS X with the command line option -m TEST -alrt 1000 -bb 1000. The tree was rooted by midpoint rooting and visualized using FigTree. Blue-colored node labels are the SH-aLRT and the ultrafast bootstrap support values (in percentage) calculated by IQ-TREE. Scale bar indicates 0.5 substitutions per site.\n\nWe confirmed that Atg8 interacts with Hfl1 in S. pombe using a co-immunoprecipitation analysis (Figure 1B). To determine whether this interaction is conserved, we performed a co-immunoprecipitation analysis in S. cerevisiae, and found that the homolog of Hfl1 in S. cerevisiae, a previously uncharacterized protein YKR051W, can interact with S. cerevisiae Atg8 (Figure 1C). We named YKR051W Hfl1. Hereafter, we will use SpHfl1 and ScHfl1 to refer to the Hfl1 proteins in these two yeasts, and use SpAtg8 and ScAtg8 to refer to the Atg8 proteins in these two yeasts.\n\nIn fission yeast, endogenously C-terminally GFP-tagged SpHfl1 localized to the vacuole membrane (Figure 1D). Endogenously N-terminally mYFP-tagged SpAtg8 exhibited both a cytosolic distribution and a faint but detectable vacuole membrane localization (Figure 1E). The vacuole membrane localization of mYFP-SpAtg8 was completely abolished in Sphfl1\u0394 cells (Figure 1E). Furthermore, when SpHfl1 was overexpressed from a strong nmt1 promoter, the cytosolic signal of mYFP-SpAtg8 disappeared and the vacuole membrane localization of mYFP-SpAtg8 became much more conspicuous (Figure 1F). In budding yeast, we could not detect endogenously tagged ScHfl1 using live cell imaging, presumably because of low abundance. Using a strong TEF1 promoter to express ScHfl1, we found that like SpHfl1, it also localized to the vacuole membrane (Figure 1G). Similar to the situation in fission yeast, the overexpression of ScHfl1 resulted in the relocalization of ScAtg8 from the cytosol to the vacuole membrane (Figure 1G). Thus, as a vacuole-membrane-localized integral membrane protein, Hfl1 binds to Atg8 and is able to recruit Atg8 to the vacuole membrane in both yeasts.\n\n### Loss of Hfl1 resulted in the same vacuole defects as those caused by the loss of Atg8\n\nGiven the essential role of Atg8 in autophagy, we examined whether Hfl1 is also important for autophagy. Using CFP-SpAtg8 in fission yeast and GFP-ScAtg8 in budding yeast as reporters to monitor autophagy, we found that neither the loss of SpHfl1 in fission yeast nor the loss of ScHfl1 in budding yeast affected starvation-induced autophagy (Figure 2\u2014figure supplement 1A\u2013C).\n\nWe then investigated the possibility that Hfl1 is involved in the lipidation-independent non-autophagic functions of Atg8. In fission yeast, loss of SpAtg8 but not loss of SpAtg8 lipidation caused aberrant vacuole morphologies (Mikawa et al., 2010). The most striking Spatg8\u0394 phenotype reported by Mikawa et al. was tubular-shaped vacuoles, which became more frequent upon treatment with the oxidative-stress-inducing agent paraquat. In our hands, tubular-shaped vacuoles were not readily observed in untreated or paraquat-treated Spatg8\u0394 cells (Figure 2A and data not shown), possibly owing to differences in experimental details. After testing a number of other stress-inducing conditions, we found that treating cells with the reducing agent dithiothreitol (DTT) resulted in the formation of tubular-shaped vacuoles in Spatg8\u0394 but not wild-type cells (Figure 2A and B). DTT may perturb vacuole function either directly by affecting ion channel activities (Carpaneto et al., 1999; Palmer et al., 2001), or indirectly by triggering the unfolded protein response (UPR) (Kimmig et al., 2012; Guydosh et al., 2017). This phenotype of Spatg8\u0394 was shared by Sphfl1\u0394 but not by Spatg1\u0394, Spatg2\u0394, Spatg3\u0394, Spatg4\u0394, Spatg5\u0394, Spatg6\u0394, Spatg7\u0394, and Spatg8-G116A (Figure 2A and B, and Figure 2\u2014figure supplement 1D), indicating that SpHfl1 and SpAtg8 act in a non-autophagic process to maintain normal vacuole morphology.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) Micrographs (A) and quantitation (B) showing\u00a0that DTT treatment induced the formation of tubular-shaped vacuoles in Spatg8\u0394 and Sphfl1\u0394 cells, but not in wild-type cells. Hmt1-mCherry and Cpy1-Venus are a vacuole membrane marker and a vacuole lumen marker, respectively. A representative result of three independent experiments is shown. (C) Spatg8\u0394 and Sphfl1\u0394 exhibited the same metal hyper-sensitivity. Five-fold serial dilutions of cells were spotted on a YES plate and YES plates with metal salts at the indicated concentrations. (D) Spatg8\u0394 Sphfl1\u0394 double mutant exhibited no enhanced metal sensitivity compared with the two single mutants, and mutants defective in Atg8 lipidation did not show metal hyper-sensitivity. See Figure 2\u2014figure supplement 2 for the results of CoCl2 and MnCl2 treatment. (E, F) Micrographs (E) and quantitation (F) showing\u00a0that Scatg8\u0394 and Schfl1\u0394, but not Scatg1\u0394 and Scatg7\u0394, were defective in stationary-phase-induced vacuolar microdomain formation. A representative result of three independent experiments is shown. Bars, 3 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) CFP-SpAtg8 processing assay showed that SpHfl1 is not required for starvation-induced autophagy. (B) GFP-ScAtg8 processing assay showed that ScHfl1 is not required for starvation-induced autophagy. (C) Imaging the localization of GFP-ScAtg8 showed that ScHfl1 is not required for starvation-induced autophagy. (D) Fission yeast autophagy mutants other than Spatg8\u0394 exhibited normal vacuole morphology upon DTT treatment. Bars, 3 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig2-figsupp2-v2.jpg)\n\nThe vacuole is important for metal homeostasis and mutants defective in vacuole functions often exhibit altered metal sensitivity (Ortiz et al., 1992; Ramsay and Gadd, 1997). To further explore the vacuole-related function(s) of SpAtg8 and SpHfl1, we examined whether the loss of SpAtg8 or SpHfl1 affects metal sensitivity. Among the metal salts we tested, which include NaCl, KCl, LiCl, MgSO4, CaCl2, ZnCl2, CoCl2, and MnCl2, Spatg8\u0394 and Sphfl1\u0394 cells exhibited stronger sensitivity to ZnCl2, CoCl2, and MnCl2 than the wild type (Figure 2C and data not shown). The metal sensitivity phenotype was not shared by the lipidation-defective mutants Spatg8-G116A, Spatg3\u0394, and Spatg7\u0394 (Figure 2D and Figure 2\u2014figure supplement 2). Notably, the severity of the metal sensitivity phenotype was the same for Spatg8\u0394 and Sphfl1\u0394, and the double mutant Spatg8\u0394 Sphfl1\u0394 did not show stronger phenotype than the two single mutants (Figure 2C and D, and Figure 2\u2014figure supplement 2), demonstrating that SpAtg8 and SpHfl1 act in the same pathway to confer normal metal tolerance.\n\nCompared to S. pombe and P. pastoris, the lipidation-independent function(s) of Atg8 in S. cerevisiae has been less well characterized. It was reported that Scatg8\u0394 but not Scatg7\u0394 was partially defective in hypo-osmotic stress-induced vacuole fusion (Tamura et al., 2010). However, we could not detect this Scatg8\u0394 phenotype, perhaps because it is too mild. Another study reported that vacuolar microdomain formation in stationary phase required ScAtg8 but not ScAtg8 lipidation (Wang et al., 2014). We were able to reproduce this observation and found that vacuolar microdomains manifested as the reticular Vph1-mCherry pattern were readily observed in wild-type but not Scatg8\u0394 cells at day 1 (D1) of the stationary phase (Figure 2E and F). This phenotype of Scatg8\u0394 was shared by Schfl1\u0394 but not by Scatg1\u0394 and Scatg7\u0394 (Figure 2E and F), indicating that ScHfl1 and ScAtg8, but not ScAtg8 lipidation or autophagy, are important for vacuolar microdomain formation in cells cultured to D1 of the stationary phase. Given that Hfl1 physically interacts with Atg8 in both yeasts, the mutant phenotype data strongly suggest that Hfl1 is required for the lipidation-independent vacuolar functions of Atg8 in these two species.\n\n### Mapping the SpAtg8-interacting region of SpHfl1 to amino acids 386\u2013409\n\nTo dissect the structure-function relationship of SpHfl1, we first examined which regions of SpHfl1, when removed, disrupt the ability of SpHfl1 to recruit SpAtg8 to the vacuole membrane. The N-terminal 7-transmembrane-helix region of SpHfl1, SpHfl1(1-269), when expressed from a plasmid in Sphfl1\u0394 cells, was able to localize properly to the vacuole membrane but failed to recruit SpAtg8 (Figure 3\u2014figure supplement 1A), indicating that SpAtg8 recruitment requires the C-terminal cytosolic tail of SpHfl1. We then examined a series of C-terminally truncated versions of SpHfl1, and found that SpHfl1(1-410), which lacks the last 16 amino acids, retained the ability to recruit SpAtg8, whereas SpHfl1(1-385) and several shorter fragments lost the ability (Figure 3\u2014figure supplement 1A), indicating that the region between amino acids 385 and 410 is critical for SpAtg8 recruitment. Consistent with this idea, SpHfl1\u0394(386-409), which lacks 24 amino acids, also failed to recruit SpAtg8 (Figure 3\u2014figure supplement 1A). Using the same set of plasmids to complement the vacuole morphology defect of Sphfl1\u0394, we found that only SpHfl1(1-410) was able to complement (Figure 3\u2014figure supplement 1B), suggesting that the SpAtg8-recruitment ability of SpHfl1 is important for maintaining normal vacuole morphology.\n\nWe hypothesized that the recruitment of SpAtg8 to the vacuole membrane by SpHfl1 is mediated by the SpAtg8-SpHfl1 interaction. Supporting this idea, we found that SpHfl1(1-410) but not SpHfl1(1-385) or SpHfl1\u0394(386-409) was able to co-immunoprecipitate SpAtg8 (Figure 3\u2014figure supplement 2A and B). Furthermore, the cytosolic tail region, SpHfl1(270-426), was sufficient for co-immunoprecipitating SpAtg8 (Figure 3\u2014figure supplement 2A). As Atg8 binding is usually mediated by short sequence segments on Atg8-binding proteins, we proceeded to test whether the 24 amino acids required for SpAtg8 co-immunoprecipitation, SpHfl1(386-409), are sufficient for SpAtg8 binding. We synthesized an SpHfl1(386-409) peptide and performed in vitro pull-down analysis. SpHfl1(386-409) could efficiently pull down recombinant SpAtg8 but not a control protein Yng2-PHD (Figure 3\u2014figure supplement 2C). Using the same assay, we found that SpHfl1(386-409) could pull down ScAtg8 as efficiently as SpAtg8 (Figure 3\u2014figure supplement 2C), despite that this region of SpHfl1 is not well conserved in ScHfl1 (Figure 3\u2014figure supplement 2D).\n\n### Structural basis of the noncanonical interactions between Atg8 and Hfl1\n\nThere is no recognizable AIM motif in SpHfl1(386-409) (Figure 3\u2014figure supplement 2D), suggesting a novel mode of Atg8 binding. To understand the atomic details of the SpHfl1-SpAtg8 interaction, we solved the crystal structure of SpAtg8 complexed with SpHfl1(386-409) at 2.2 \u00c5 resolution (Figure 3A and B, Figure 3\u2014figure supplement 2E, and Supplementary file 2\u2014Table S1). The structure of SpAtg8 is similar to other Atg8-family proteins, consisting of a ubiquitin fold and two \u03b1-helices attached at the N-terminus. The structure of SpAtg8 can be superimposed on that of ScAtg8 with an rms difference of 0.8 \u00c5 for main-chain atoms except for those of terminal tails (Figure 3\u2014figure supplement 2F). As a result, the two AIM-binding hydrophobic pockets (W-site and L-site) on SpAtg8 resemble those on ScAtg8 and other Atg8 homologs (Figure 3B and D). SpHfl1(386-409) is comprised of an extended coil followed by an \u03b1-helix, and interacts with the W-site, the L-site, as well as \u03b13 of SpAtg8, burying\u00a0~2000 \u00c52 of surface area (detailed interactions are summarized in Figure 3\u2014figure supplement 3A). SpHfl1(386-409) forms little interaction with crystallographically adjacent SpAtg8 molecules (Figure 3\u2014figure supplement 3B), suggesting that the complex structure is not markedly affected by crystal packing. In the case of canonical AIMs, the consensus W/F/YxxL/I/V sequence (x is any residue) adopts an extended \u03b2-conformation and forms an intermolecular \u03b2-sheet with \u03b22 of Atg8 (Figure 3\u2014figure supplement 2G, top), with the side chain of W/Y/F binding to the W-site and that of L/I/V to the L-site. The number of residues intervening the two hydrophobic residues is strictly two (Figure 3E). Strikingly, SpHfl1(386-409) neither forms an intermolecular \u03b2-sheet with \u03b22 of Atg8 (Figure 3\u2014figure supplement 2G, middle), nor uses two hydrophobic residues separated by two residues to engage the W-site and the L-site. Instead, SpHfl1(386-409) uses Phe388 at the coil and Tyr398 at the helix for binding to the W-site and the L-site, respectively, with as many as nine residues between them (Figure 3E and F). In addition, a hydrophobic interaction is formed between Leu386 of SpHfl1 and a hydrophobic pocket near the W-site, some electrostatic interactions are formed between the side-chains of Asp391 and Glu395 of SpHfl1 and Lys46 and Arg28 of SpAtg8, respectively, and two hydrogen bonds are formed between the main-chain of SpHfl1 and the side-chain of SpAtg8 (Figure 3B and F, Figure 3\u2014figure supplement 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig3-v2.jpg)\n\n**Figure 3.:** (A, C) Overall structures of the SpAtg8-SpHfl1(386-409) complex (A) and the ScAtg8-ScHfl1(368-389) complex (C) in ribbon diagrams. (B, D) Electrostatic surface potentials calculated for the surfaces of SpAtg8 (B) and ScAtg8 (D). (E) Structural comparison of a canonical AIM and the helical AIMs in SpHfl1 and ScHfl1. Crystal structures of ScAtg8-ScAtg19 (PDB 2ZPN; a representative structure of canonical AIMs bound to Atg8), SpAtg8-SpHfl1 and ScAtg8-ScHfl1 complexes were superimposed with each other by minimizing the rms differences of main-chain atoms of Atg8. The main chains of ScAtg19, SpHfl1, and ScHfl1 are shown with stick models, and the side chains of the two hydrophobic residues that bind to the W-site and the L-site are also shown. The residues intervening the two hydrophobic residues are numbered. (F) Summary of the interactions observed between Atg8 and Hfl1. The residues forming hydrophobic interactions are colored yellow, while those forming electrostatic interactions are colored blue (basic) and red (acidic). Hfl1\u00a0residues that when mutated affect the affinity with Atg8 by ITC measurements are highlighted with bold letters.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Amino acids 386\u2013409 of SpHfl1 are necessary for its ability to recruit SpAtg8 to the vacuole membrane. (B) Amino acids 386\u2013409 of SpHfl1 are necessary for its ability to rescue the vacuole morphology defect of Sphfl1\u0394. Bars, 3 \u00b5m.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Amino acids 386\u2013409 in SpHfl1 are required for SpAtg8 binding. (B) Schematic summarizing the results shown in Figure 3\u2014figure supplement 1A and B, and Figure 3\u2014figure supplement 2A. ND, not determined. (C) Amino acids 386\u2013409 in SpHfl1 are sufficient for specific in-vitro interactions with SpAtg8 and ScAtg8. (D) Sequences corresponding to the Atg8-interacting region of SpHfl1 in SpHfl1-related proteins from nine representative fungal species. SpHfl1-related proteins were identified using NCBI BLASTP and aligned using MAFFT. The alignment was manually adjusted and visualized using Jalview. The accession numbers of the sequences (from top to bottom) are: NP_012977.3, XP_002554458.1, XP_011275000.1, XP_013933679.1, CDK27935.1, XP_002494035.1, NP_593211.1, XP_012053683.1, and EPZ35735.1. (E, I) Stereo views of the 2Fo-Fc electron density maps for the SpAtg8-SpHfl1(386-409) complex (E) and the ScAtg8-ScHfl1(368-389) complex (I) calculated using COOT. (F) Structural comparison between SpAtg8 and ScAtg8. Crystal structure of ScAtg8 (PDB 2ZPN) was superimposed on that of SpAtg8 by minimizing the rms differences of main-chain atoms. (G) Intermolecular \u03b2-sheet is not formed between Atg8 and Hfl1. Crystal structures of the ScAtg8-ScAtg19(412-415) complex (top; PDB 2ZPN), the SpAtg8-SpHfl1(386-409) complex (middle), and the ScAtg8-ScHfl1(368-389) complex (bottom) are shown with stick models. Broken lines indicate hydrogen bonds responsible for forming the intra- and inter-molecular \u03b2-sheets. Numbers indicate distances in \u00c5. For clarity, only main chains are shown except for the two hydrophobic residues that bind to the W-site and the L-site. (H) Amino acids 368\u2013389 in ScHfl1 are important for strong in-vitro interactions with ScAtg8. (J) Head-to-tail interactions of seven copies of the ScHfl1(368-389)-ScAtg8 fusion protein observed in the asymmetric unit. (K) Superimposition of seven copies of the ScAtg8-ScHfl1 complex shown in a main-chain trace. Two copies, colored dark and light gray, show a slightly different conformation. (L) Crystal-packing interactions observed between two copies of ScHfl1. Dark and light gray copies correspond to those in (K).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) 2D protein interaction diagrams (LigPlot+\u00a0diagrams) of SpHfl1-SpAtg8 and ScHfl1-ScAtg8 complexes. (B) Crystal packing of SpAtg8-SpHfl1(386-409).\n\nWe next studied the molecular interaction between ScAtg8 and ScHfl1. Using the sequence alignment between SpHfl1 and ScHfl1 as a guide to identify the ScAtg8-binding region in ScHfl1, our GST pulldown analysis indicated that residues 368\u2013389 of ScHfl1 correspond to a minimal region for a strong binding with ScAtg8 (Figure 3\u2014figure supplement 2H). Because a complex formed by ScAtg8 and ScHfl1(368-389) did not crystallize, we resorted to a fusion between them for crystallization, a strategy widely utilized for crystallization of a complex between an Atg8-family protein and a canonical AIM (Suzuki et al., 2014; Wu et al., 2015). The crystal structure of ScHfl1(368-389)-ScAtg8 fusion protein was determined at 2.45 \u00c5 resolution (Figure 3\u2014figure supplement 2I and Supplementary file 2\u2014Table S1). The asymmetric unit of the crystal contains seven copies of the fusion protein, all of which form an intermolecular ScAtg8-ScHfl1(368-389) complex in a head-to-tail manner (Figure 3\u2014figure supplement 2J). Among the seven copies of ScHfl1(368-389), two have a slightly different conformation from the others due to crystal packing, while the other five copies have almost the same conformation (Figure 3\u2014figure supplement 2K and L); therefore, we use one representative structure of the ScAtg8-ScHfl1(368-389) complex from the five copies hereafter (Figure 3C and D). ScHfl1(368-389) has an elongated conformation with a short helical conformation at the residues 374\u2013377, and forms extensive interactions with the W-site, the L-site, \u03b13, as well as \u03b23 of ScAtg8, burying\u00a0~2400 \u00c52 of surface area (detailed interactions are summarized in Figure 3\u2014figure supplement 3A). As is the case with SpHfl1, ScHfl1 neither forms an intermolecular \u03b2-sheet with Atg8 \u03b22 (Figure 3\u2014figure supplement 2G, bottom), nor uses a canonical AIM sequence for binding to the W-site and the L-site. Instead, ScHfl1(368-389) uses Trp371 at the coil and Ile375 at the short helix for binding to the W-site and the L-site, respectively, with three residues between them (Figure 3E and F, Figure 3\u2014figure supplement 3A). Unexpectedly, Tyr387 of ScHfl1 binds to a hydrophobic pocket formed between \u03b13 and \u03b23 of ScAtg8. This pocket, which has never been reported to be a binding site for AIMs, is named \u2018Y-site\u2019 because it accommodates a conserved Tyr residue in Hfl1. In addition to the hydrophobic interactions, electrostatic interactions are formed between the side-chains of Asp373, Asp374, and Asp384 of ScHfl1 and Arg28, Arg67, and Arg65 of ScAtg8, respectively, and as many as 12 hydrogen bonds are formed between ScHfl1 and ScAtg8 using both the main-chain and side-chain atoms (Figure 3\u2014figure supplement 3A). Because the Atg8-binding regions in both SpHfl1 and ScHfl1 do not form an intermolecular \u03b2-sheet with Atg8 (a strictly conserved feature of canonical AIMs) and instead use a helical conformation to bind to the L-site, we named this new type of Atg8-binding sequences \u2018helical AIMs\u2019.\n\n### Isothermal titration calorimetry (ITC) analysis of helical AIM mutants\n\nTo determine the binding affinity of helical AIMs to Atg8, we performed ITC analysis. SpHfl1(386-413) and ScHfl1(362-391), which encompass the Atg8-binding regions in the crystal structures, showed Kd values of 161 nM and 1.38 \u03bcM to SpAtg8 and ScAtg8, respectively (Figure 4A and Figure 4\u2014figure supplement 1A). These affinities, especially that of SpHfl1, are strong compared with canonical AIMs that typically show a Kd value of 1\u2013100 \u03bcM (Zaffagnini and Martens, 2016). The versions used for crystallographic studies, SpHfl1(386-409) and ScHfl1(368-389), showed only a small decrease in affinity (327 nM and 2.20 \u03bcM, respectively), whereas further truncations markedly reduced the affinities, confirming that the regions of Hfl1 used for structural studies are necessary and sufficient for strong Atg8 binding (Figure 4A and Figure 4\u2014figure supplement 1A). Next, we designed helical AIM mutants to validate the interactions observed in the crystal. Alanine-substitution of SpHfl1 Phe388 (F388A) and Tyr398 (Y398A), which bind to the W-site and the L-site in SpAtg8, resulted in\u00a0~4 fold and\u00a0~1000 fold decrease in the affinity with SpAtg8, respectively (Figure 4A). This result suggests that binding to the L-site is much more important than that to the W-site for the SpHfl1-SpAtg8 interaction, which is in contrast to the interactions between canonical AIMs and Atg8 where the W-site binding is usually more important than the L-site binding (Noda et al., 2008). In this regard, ScHfl1 is more similar to canonical AIMs than SpHfl1: ScHfl1 uses Trp371 and Ile375 for binding to the W-site and the\u00a0L-site, respectively, and the W371A mutation showed a much more pronounced reduction in affinity with ScAtg8 (~170 fold) than the I375A mutation (~13 fold) (Figure 4A). Canonical AIMs often contain acidic residues between or upstream of the two hydrophobic residues. Alanine substitution of several acidic residues located between the two hydrophobic residues of Hfl1 (D391A and E395A in SpHfl1, and D373A and D374A in ScHfl1) moderately reduced the affinity with Atg8 (Figure 4\u2014figure supplement 1B), indicating that electrostatic interactions also contribute to the affinity to some extent. Besides the residues binding to the canonical binding surfaces of Atg8, alanine substitution of Tyr387 and Asp384 in ScHfl1, which bind to the Y-site and Arg65 of Atg8, showed\u00a0~5 fold and\u00a0~7 fold reduction in affinity, respectively (Figure 4A and Figure 4\u2014figure supplement 1B). Interestingly, even though SpHfl1(386-409) binds to SpAtg8 almost as strongly as SpHfl1(386-413), in the context of SpHfl1(386-413), the Y411A mutation (corresponding to the Y387A mutation in ScHfl1) resulted in\u00a0~24 fold decrease in the affinity with SpAtg8 (Figure 4A). Y409A mutation in SpHfl1(386-413) resulted in\u00a0~6 fold decrease in the affinity with SpAtg8, whereas the same mutation in SpHfl1(386-409) showed almost no effect on the affinity (Figure 4\u2014figure supplement 1C). These observations suggest that additional interactions involving Y411 and Y409 are important for the longer SpHfl1 peptide to bind with SpAtg8 strongly, probably because of the larger entropic cost of the longer peptide (London et al., 2010). Thus, it is likely that helical AIMs from both SpHfl1 and ScHfl1 utilize the Y-site of Atg8 for reinforcing the interaction. In sum, ITC data revealed that the L-site-binding Tyr398 is by far the most important residue in SpHfl1 for the SpHfl1-SpAtg8 interaction, while the W-site-binding Trp371 is the most important residue in ScHfl1 for the ScHfl1-ScAtg8 interaction, and that additional hydrophobic and electrostatic contacts play reinforcing roles.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig4-v2.jpg)\n\n**Figure 4.:** (A) ITC results obtained by titration of SpHfl1(386-413) into SpAtg8 or ScHfl1(368-389) into ScAtg8. (B) The effects of point mutations in the SpAtg8-binding region of SpHfl1 on the ability of SpHfl1 to recruit SpAtg8 to the vacuole membrane. (C) The effects of point mutations in the SpAtg8-binding region of SpHfl1 on the ability of SpHfl1 to complement the vacuole morphology phenotype of Sphfl1\u0394. (D) Quantitation of the vacuole morphology phenotype shown in (C). A representative result of three independent experiments is shown. (E) Y398A mutation strongly diminished the ability of SpHfl1 to complement the metal hyper-sensitivity phenotype of Sphfl1\u0394 and fusion with SpAtg8 restored this ability. (F) The effects of point mutations in the ScAtg8-binding region of ScHfl1 on the ability of ScHfl1 to recruit ScAtg8 to the vacuole membrane. ScHfl1 was expressed using the strong TEF1 promoter. (G) The effects of point mutations in the ScAtg8-binding region of ScHfl1 on the ability of ScHfl1 to complement the microdomain formation phenotype of Schfl1\u0394. ScHfl1 was expressed using the strong TEF1 promoter. (H) Quantitation of the microdomain formation phenotype shown in (G). A representative result of three independent experiments is shown. (I) ITC results obtained by titration of ScHfl1(368-389) with an additional Tyr residue at the C-terminus into ScAtg8. Addition of Tyr allowed the quantification of the concentration of the ScHfl1(W371A I375A D384A Y387A) by absorbance at 280 nm. (J) Fusing ScAtg8 to ScHfl1(W371A I375A D384A Y387A) restored the ability to complement the microdomain formation phenotype of Schfl1\u0394. A representative result of three independent experiments is shown. Bars, 3 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) ITC results obtained by titration of SpHfl1 and ScHfl1 fragments of different lengths into SpAtg8 and ScAtg8, respectively. (B) ITC results obtained by titration of SpHfl1(386-413) and ScHfl1(368-389) mutants into SpAtg8 and ScAtg8, respectively. (C) ITC results obtained by titration of the Y409A mutant forms of SpHfl1(386-409) and SpHfl1(386-413) into SpAtg8, respectively. (D) Structural comparison with helical LIR and synthetic peptide K1. Crystal structures of LC3B-helical LIR complex (PDB ID 5W9A) and GABARAP-K1 complex (PDB ID 3D32) were superimposed on that of SpAtg8-SpHfl1 complex by minimizing the rms of main-chain atoms of Atg8-family proteins. LC3B and GABARAP were removed from the figure for clarity. The side-chains of hydrophobic residues that bind to the W-site and the L-site are shown with stick models.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Assessing whether fusing with SpAtg8 can rescue the ability of SpHfl1-Y398A to complement the vacuole morphology defect of Sphfl1\u0394. Bar, 3 \u00b5m. (B) Quantitation of the DTT 4 h data shown in (A). A representative result of three independent experiments is shown.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Assessing whether fusing SpAtg8 with non-SpHfl1 vacuole membrane proteins can rescue the vacuole morphology defect of Sphfl1\u0394. Bar, 3 \u00b5m. (B) Quantitation of the DTT 4 h data shown in (A). A representative result of three independent experiments is shown.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/41237/elife-41237-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) The effects of point mutations in the ScAtg8-binding region of ScHfl1 on the ability of ScHfl1 to complement the microdomain formation phenotype of Schfl1\u0394. ScHfl1 was expressed using the weak URA3 promoter. Bar, 3 \u00b5m. (B) Quantitation of the microdomain formation phenotype shown in (A). A representative result of three independent experiments is shown.\n\n### Atg8-Hfl1 interactions are essential for the lipidation-independent vacuolar functions of Atg8\n\nTo determine the functional importance of the Atg8-Hfl1 interactions, we analyzed the in vivo functions of helical AIM mutants. In fission yeast, the point mutations L386A, E393A, L397A, or Y411A affected neither the ability of SpHfl1 to recruit SpAtg8 to the vacuole membrane, nor the ability of SpHfl1 to complement the vacuole morphology defect of Sphfl1\u0394 (Figure 4B\u2013D). F388A and E395A moderately weakened the SpAtg8-recruitment ability, but did not substantially affect the ability to complement Sphfl1\u0394, probably because the residual recruitment of SpAtg8 is largely sufficient for fulfilling the vacuole morphology maintenance function. The point mutation that had the strongest effect in the in vitro ITC analysis, Y398A, completely abolished the SpAtg8-recruitment ability and strongly diminished the ability to complement the vacuole morphology phenotype of Sphfl1\u0394. Furthermore, we found that SpHfl1(Y398A) lost the ability to complement the metal sensitivity phenotype of Sphfl1\u0394 (Figure 4E). To determine whether the phenotype caused by the Y398A mutation is mainly due to a loss of SpHfl1-SpAtg8 association, we performed a fusion rescue analysis. SpHfl1 and SpAtg8 were fused respectively to the N terminus and the C terminus of the same mCherry protein. Because the N and C termini of mCherry are at the same end of the \u03b2-barrel structure of mCherry, the spatial proximity of SpHfl1 and SpAtg8 is likely to be preserved. We found that such a fusion restored the ability of SpHfl1(Y398A) to complement Sphfl1\u0394 (Figure 4E and Figure 4\u2014figure supplement 2), thus demonstrating that the phenotypic consequences of the Y398A mutation mainly result from a disruption of the SpHfl1-SpAtg8 binding. Together, these results indicate that the physical association between SpHfl1 and SpAtg8 is essential for the lipidation-independent vacuolar functions of SpAtg8.\n\nTo assess whether the role of SpHfl1 is solely the recruitment of SpAtg8 to the vacuole membrane, we applied the fusion approach to determine whether we can bypass the requirement of SpHfl1 by fusing SpAtg8 to other vacuole membrane proteins with a C-terminal cytosolic tail. Neither fusion to the vacuolar phytochelatin transporter Hmt1 nor fusion to the vacuolar zinc transporter Zhf1 was able to rescue the vacuole morphology phenotype of Sphfl1\u0394 (Figure 4\u2014figure supplement 3), suggesting that SpHfl1 may have role(s) beyond recruiting SpAtg8 to the vacuole membrane.\n\nIn budding yeast, consistent with the ITC results, the W371A, I375A, D384A, and Y387A mutations each strongly diminished the ability of TEF1-promoter-expressed ScHfl1 to recruit ScAtg8 to the vacuole membrane (Figure 4F). Surprisingly, none of these mutations individually had an obvious effect on the ability of ScHfl1 expressed from either the strong TEF1 promoter or the weak URA3 promoter to complement the microdomain formation defect of Schfl1\u0394 (Figure 4G and H, and Figure 4\u2014figure supplement 4), suggesting that the residual Atg8-binding ability is sufficient for the microdomain formation function. To further reduce the ScAtg8-binding ability of ScHfl1, we combined mutations together and found that combining W371A and I375A to simultaneously disrupt the interactions at the W-site and the L-site was not able to abolish the ability of ScHfl1 to complement Schfl1\u0394, whereas combining W371A, I375A, D384A, and Y387A together led to the complete loss of the complementing ability (Figure 4G and H, and Figure 4\u2014figure supplement 4). We confirmed by ITC measurements that the double mutant (W371A I375A) retained weak affinity, but that the quadruple mutant (W371A I375A D384A Y387A) showed no binding with ScAtg8 (Figure 4I and Figure 4\u2014figure supplement 1B). Thus, ScAtg8-ScHfl1 interactions outside of the W-site and the L-site are sufficient for supporting the microdomain formation function. The ability of ScHfl1(W371A I375A D384A Y387A) to complement Schfl1\u0394 was restored by fusing it with ScAtg8 (Figure 4J), indicating that the microdomain formation defect of this ScHfl1 mutant is indeed due to a loss of ScAtg8-binding ability. In sum, our results showed that the physical interaction between Atg8 and Hfl1 is vitally important to the lipidation-independent vacuolar functions of Atg8 in these two model yeast species.\n\n## Discussion\n\nIn this study, we discovered the molecular underpinnings of the lipidation-independent vacuolar functions of Atg8 in yeasts. Our results provide new insights on two fronts: on the one hand, we identified the integral membrane protein Hfl1 as a key partner of Atg8 in fulfilling its lipidation-independent vacuolar functions, and thus opening up the \u2018black box\u2019 in this special aspect of Atg8 functions; on the other hand, we found that, unlike canonical Atg8 binders, Hfl1 proteins employ a heretofore-unknown Atg8-binding mode\u2014helical AIMs.\n\nCanonical AIMs/LIRs share two common features: one is that they adopt an extended \u03b2-conformation and form an intermolecular \u03b2-sheet with the \u03b22 strand of Atg8, and the other is that they use the two conserved hydrophobic residues in the W/F/YxxL/I/V motif to bind to the W- and L-sites, respectively, on Atg8. The helical AIMs we identified in SpHfl1 and ScHfl1 do not conform to these rules: they do not form an intermolecular \u03b2-sheet with Atg8 and they do not have a W/F/YxxL/I/V motif. Instead, SpHfl1 and ScHfl1 respectively use FxxxxxxxxxY and WxxxI sequences for Atg8 binding. The larger numbers of intervening residues between the two hydrophobic residues are possible because helical AIMs do not have to form an intermolecular \u03b2-sheet\u2014if an intermolecular \u03b2-sheet is formed, the number of intervening residues must be strictly two.\n\nOther than the helical AIMs described here, there have been two reports describing Atg8 binding sequences that possess a helical conformation and do not form an intermolecular \u03b2-sheet with Atg8 (Figure 4\u2014figure supplement 1D). One example is a non-natural synthetic peptide named K1 that binds to GABARAP with high affinity (Kd\u00a0=\u00a0354 nM) (Weiergr\u00e4ber et al., 2008). The K1 peptide contains a WxxLxW sequence, and interestingly the sequence binds to GABARAP in a reverse direction: the N-terminal WxxL portion with a helical conformation binds to the L-site using both Trp and Leu, while the C-terminal Trp in the sequence binds to the W-site. It remains to be elucidated whether such binding sequence is present in natural proteins. Another example is the coiled-coil region of the retroviral restriction factor Trim5\u03b1, which was reported very recently to bind to mammalian ATG8 proteins using the coiled-coil architecture, and thus is named helical LIR (Keown et al., 2018). Helical LIR of Trim5\u03b1 uses Trp196 to bind to the W-site, but lacks a hydrophobic residue that binds to the L-site, which may be one reason for its weak affinity with mammalian Atg8 homologs (Kd\u00a0=\u00a080\u00a0~\u00a0100 \u03bcM). The functional importance of helical-LIR-mediated Trim5\u03b1-Atg8 interaction remains unclear.\n\nThe helical AIMs described here are distinct from canonical AIMs with an accessory helix such as the AIM/LIR in FYCO1 (Cheng et al., 2016), which uses a canonical W/F/YxxL/I/V motif for interaction and forms an intermolecular \u03b2-sheet with Atg8. In FYCO1, a helix is attached to the canonical AIM and increases the affinity by additional interactions. Extended AIMs/LIRs in ankyrin proteins also possess a helix attached to a canonical AIM and show exceptionally strong affinity to mammalian Atg8 family proteins (Li et al., 2018). The noncanonical LIR motif of NDP52 (termed CLIR) uses LVV sequence for specific interaction with LC3C, a mammalian Atg8 homolog (von Muhlinen et al., 2012). Although the sequence is quite distinct from canonical AIMs, CLIR also forms an intermolecular \u03b2-sheet with LC3C in a manner similar to canonical AIMs.\n\nIn canonical AIMs, the aromatic residue that binds to the W-site of Atg8 is essential for the interaction\u2014without it almost no interaction is observed. In the case of helical AIMs, the aromatic residue that binds to the W-site can be much less important: the F388A mutation in SpHfl1 only mildly reduced the binding affinity with SpAtg8. Although the W371A mutation in ScHfl1 severely reduced the binding affinity with ScAtg8, it did not disrupt the function of ScHfl1 in maintaining vacuole morphology. Usage of the \u2018Y-site\u2019 as another binding site may contribute to the low dependence on W-site.\n\nAnother extraordinary characteristic of helical AIMs is that Tyr can be used to bind to the L-site of Atg8. In the case of canonical AIMs, Leu, Ile, and Val are favored L-site-binding residues because the distance between the L-site and the L-site-binding residue is restrained owing to the intermolecular \u03b2-sheet, which makes it difficult for larger residues such as Tyr to bind to the L-site without steric clash. In contrast, in the case of helical AIMs, the distance between the L-site-binding residue and the L-site can be optimized by repositioning the helix, thus allowing a large residue to fit the L-site.\n\nBoth Atg8 and Hfl1 are conserved eukaryotic proteins. Yeast Hfl1 proteins closely resemble the mammalian TMEM184 proteins in the seven-transmembrane helix region. TMEM184A (also called Sdmg1) localizes to endosomes in mouse Sertoli cells and is required for the normal localization of the plasma membrane SNARE protein Stx2 (Best et al., 2008). TMEM184A also acts as a heparin receptor in vascular cells and regulates angiogenesis (Farwell et al., 2017; Pugh et al., 2016). TMEM184B localizes to recycling endosomes in mouse neurons and is important for the maintenance of synaptic architecture (Bhattacharya et al., 2016). In the model plant Arabidopsis thaliana, two TMEM184-related proteins, LAZ1 and LAZ1H1, localize to the vacuole membrane and are redundantly required for normal vacuole morphology and functions (Liu et al., 2018). Thus, yeast Hfl1 proteins and their closest homologs in animals and plants share a common attribute of localizing to either endosomal or lysosomal compartments, but whether they share a common function remains to be determined.\n\nMore distantly related to the yeast Hfl1 proteins but belonging to the same InterPro IPR005178 protein family are the animal SLC51A/OST\u03b1 proteins, which bind to the single-transmembrane SLC51B/OST\u03b2 proteins and transport bile acids and steroids at the plasma membrane (Ballatori et al., 2013; Dawson et al., 2010). It is tempting to speculate that like SLC51A proteins, Hfl1 and TMEM184 proteins may also act as transporters. However, a recent phylogenetic study has grouped TMEM184 proteins and SLC51A proteins into the transporter\u2013opsin\u2013GPCR (TOG) superfamily, which includes non-transporter proteins such as the G protein-coupled receptors (GPCRs) (Saier et al., 2016; Yee et al., 2013), hinting that the InterPro IPR005178 family proteins may not necessarily all be transporters. It is possible that Hfl1, as a GPCR-like transmembrane protein on the vacuole membrane, could play a sensing role to monitor changes occurring inside the vacuole lumen, and Atg8 may facilitate signal transduction in the cytoplasm.\n\nThe two vacuole-related phenotypes of Spatg8\u0394 and Sphfl1\u0394 mutants\u2014metal sensitivity and abnormal vacuole morphology\u2014may share the same underlying cause, as the same perturbation of vacuole organization or function may reduce the ability of this organelle to sequester metals, and at the same time, alter its morphology. Consistent with this idea, genome-wide deletion library screens in S. cerevisiae have shown that a substantial fraction of deletion mutants sensitive to metals are those exhibiting abnormal vacuole morphology (Pagani et al., 2007; Ruotolo et al., 2008). Even though vacuole morphology maintenance has not been as extensively investigated in S. pombe as in S. cerevisiae, the tubular vacuole morphology phenotype of Spatg8\u0394 and Sphfl1\u0394 mutants seems quite distinctive. To our knowledge, the only other genetic perturbation that can result in tubular vacuoles in fission yeast is the overexpression of the dynamin homolog Vps1 (R\u00f6thlisberger et al., 2009). Furthermore, vps1\u0394 suppressed the tubular vacuole phenotype of Spatg8\u0394 (Mikawa et al., 2010). Thus, SpAtg8 and SpHfl1 may directly or indirectly restrain the vacuole tubulation activity of Vps1.\n\nThe microdomain formation defect of Scatg8\u0394 and Schfl1\u0394 mutants indicates that ScAtg8 and ScHfl1 contribute to the stationary-phase-induced vacuole membrane partitioning process (Toulmay and Prinz, 2013). Previous studies have implicated a diverse group of proteins in this process, including the lipid kinase Fab1, the protein phosphatase Nem1, the MAP kinase Slt2/Mpk1, the ESCRT pathway protein Vps4, the vacuolar protease Pep4, the phosphatidylinositol-3 kinase subunit Atg6, sterol ester synthesis enzymes Are1 and Are2, and sterol transport proteins Lam6/Ltc1, Ncr1, and Npc2 (Murley et al., 2015; Toulmay and Prinz, 2013; Tsuji et al., 2017; Wang et al., 2014). Further studies will be needed to clarify the mechanism of microdomain formation and determine how ScAtg8 and ScHfl1 are involved.\n\nLipidation-independent functions of Atg8 in both autophagic and non-autophagic processes have been reported in animals. In Drosophila, a form of noncanonical autophagy required for programmed midgut removal is dependent on Atg8 but not Atg7 and Atg3, the E1 and E2 proteins needed for Atg8 lipidation (Chang et al., 2013). How Atg8 is recruited to the autophagosomal membrane during this process is unknown. In mammalian cells, a non-autophagic process, the formation of ERAD tuning vesicle/EDEMosome, depends on non-lipidated LC3, but the exact mechanism is unclear (Cal\u00ec et al., 2008; Reggiori et al., 2010). Our findings on the lipidation-independent vacuolar functions of Atg8 in yeasts suggest the possibility that interactions between Atg8 and a transmembrane protein may underlie these lipidation-independent functions of Atg8 in animals.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (Schizosaccharomyces pombe)</td>\n      <td>hfl1</td>\n      <td>NA</td>\n      <td>PomBase: SPAC30D11.06c</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (Saccharomyces cerevisiae)</td>\n      <td>HFL1</td>\n      <td>NA</td>\n      <td>SGD:YKR051W</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Schizosaccharomyces pombe)</td>\n      <td>Fission yeast strains used in this study</td>\n      <td>this paper</td>\n      <td></td>\n      <td>See Supplementary file 2\u2014Table S2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (Saccharomyces cerevisiae)</td>\n      <td>Budding yeast strains used in this study</td>\n      <td>this paper</td>\n      <td></td>\n      <td>See Supplementary file 2\u2014Table S3</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFP (mouse monoclonal)</td>\n      <td>Roche</td>\n      <td>Cat# 11814460001; RRID:AB_390913</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-mCherry (mouse monoclonal)</td>\n      <td>Abmart</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>Plasmids used for this study</td>\n      <td>this paper</td>\n      <td></td>\n      <td>See Supplementary file 2\u2014Table S4</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>GFP-Trap agarose beads</td>\n      <td>ChromoTek</td>\n      <td>Cat# gta-20; RRID: AB_2631357</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Pierce High Capacity Streptavidin Agarose</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 20359</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Yeast strain construction\n\nFission yeast and budding yeast strains used in this study are listed in Supplementary file 2\u2014Table S2 and S3, respectively, and plasmids used for yeast strain construction are listed in Supplementary file 2\u2014Table S4. The deletion strains used in this study were constructed either by PCR amplifying the deletion cassettes in the Bioneer fission yeast deletion strains and transforming them into our laboratory strains, or by standard PCR-based gene targeting. Strains expressing proteins with tags (mCherry, GFP, Venus, etc.) under native promoters were generated by PCR-based tagging. The strain expressing SpAtg8 fused at the N-terminus with a CFP tag was as previous described (Sun et al., 2013). Plasmids expressing proteins under the control of the Pnmt1 or P41nmt1 promoter were constructed using modified pDUAL vectors (Wei et al., 2014). To construct atg8-G116A fission yeast strain, we used overlap-extension PCR to assemble the following three fragments into one final PCR product: the C-terminal region of the atg8 ORF (amplified using the primer 5\u2019-TTAATTAACCCGGGGATCCGctaaaaaggaaacactgttGcaaat-3\u2019, which introduces the G116A mutation, and the primer 5\u2019-acaacacccattgtttttgtca-3\u2019), a kanMX marker from pFA6a plasmid (amplified using primers 5\u2019- CGGATCCCCGGGTTAATTAA-3\u2019 and 5\u2019- CGATGAATTCGAGCTCGTTT-3\u2019), and the sequence downstream of the atg8 ORF (amplified using primers 5\u2019-AAACGAGCTCGAATTCATCGatcaacaatttgcctgttttaaga-3\u2019 and 5\u2019-aaggatagaatcagctgatgat-3\u2019), and transformed the final PCR product into fission yeast. Plasmids expressing proteins in budding yeast under the control of the pTEF1 promoter were constructed using pNH605 vectors (plasmids cut with PmeI before transformation) (Zhang et al., 2017). To create a fission yeast strain expressing Atg8 tagged at its N-terminus with mYFP or mEGFP, Patg8 promoter, from \u2212609 to\u00a0+3 bp with respect to the start codon of the atg8 gene, was cloned between the BglII and PacI sites of pFA6a-kanMX6-P41nmt1-mYFP or pFA6a-kanMX6-P41nmt1-mEGFP plasmid to replace the P41nmt1 promoter (B\u00e4hler et al., 1998). The kanMX6-Patg8-mYFP and kanMX6-Patg8-mEGFP regions of the resulting plasmids were then PCR amplified with primers containing sequences homologous to regions immediately upstream or downstream of the start codon of atg8 and used to transform a wild type strain JW81 (h- ade6-M210 leu1-32 ura4-D18), as previously described (B\u00e4hler et al., 1998). Colonies resistant to geneticin (G418) were further verified by PCR amplification across the homologous recombination junctions.\n\n### Affinity purification coupled with mass spectrometry (AP-MS) analysis\n\nWe used an Spatg4 deletion mutant fission yeast strain overexpressing SpAtg8 fused at the C terminus with an YFP-FLAG-His6 (YFH) tag to perform affinity purification of SpAtg8. For specificity control, a parallel affinity purification was performed using a fission yeast strain overexpressing YFH-tagged SPBC16E9.02c. About 1500 OD600 units of cells nitrogen-starved for 2 hr were harvested and washed once with ice-cold water and once with ice-cold lysis buffer (50 mM HEPES-NaOH, pH 7.5, 150 mM NaCl, 1 mM EDTA, 1 mM DTT, 10% glycerol). The cell pellet was mixed with equal volume of lysis buffer containing detergent and protease inhibitors (50 mM HEPES-NaOH, pH 7.5, 150 mM NaCl, 1 mM EDTA, 1 mM DTT, 1 mM PMSF, 0.05% NP-40, 10% glycerol, 1\u00a0\u00d7\u00a0Roche protease inhibitor cocktail) and 2\u00a0\u00d7\u00a0volume ice-cold 0.5 mm glass beads (BioSpec). Cell lysates were prepared by the bead-beating lysis method using a FastPrep-24 instrument at a setting of 6.5 m/s for four cycles of 20 s bead beating and 5 min on-ice cooling. After centrifugation at 13,200 rpm for 30 min twice, the supernatant was incubated with GFP-Trap agarose beads (Chromotek) for 3 hr. After incubation, the beads were washed twice using lysis buffer and twice using lysis buffer without NP-40. Bead-bound proteins were eluted twice by incubation at 65\u00b0 with elution buffer (1% SDS, 100 mM Tris, pH 8.0). Eluted proteins were precipitated with 20% TCA. Protein precipitates were washed three times using ice-cold acetone and then dissolved in 8 M urea, 100 mM Tris, pH 8.5, reduced with 5 mM TCEP for 20 min, and alkylated with 10 mM iodoacetamide for 15 min in the dark. Then the samples were diluted four folds using 100 mM Tris, pH 8.5, and digested by trypsin (Promega) in 2 M urea, 1 mM CaCl2, 100 mM Tris, pH 8.5. The LC-MS/MS analysis was performed as described previously (Liu et al., 2015).\n\n### Antibodies\n\nThe antibodies used for immunoblotting were as follows: anti-GFP mouse monoclonal antibody (Roche), anti-mCherry mouse monoclonal antibody (Abmart, Shanghai, China).\n\n### Immunoprecipitation\n\nCells were lysed in lysis buffer (50 mM HEPES-NaOH, pH 7.5, 150 mM NaCl, 1 mM EDTA, 1 mM DTT, 1 mM PMSF, 0.05% NP-40, 10% glycerol, 1\u00a0\u00d7\u00a0Roche protease inhibitor cocktail) by bead beating using a FastPrep instrument. After centrifugation at 13,200 rpm for 30 min, the supernatant was incubated with GFP-Trap agarose beads (Chromotek). After incubation, the beads were washed three times with lysis buffer and bead-bound proteins were eluted using SDS-PAGE sample buffer.\n\n### Fluorescence microscopy\n\nLive cell imaging was performed using a DeltaVision PersonalDV system (Applied Precision) equipped with an mCherry/YFP/CFP filter set (Chroma 89006 set) and a 100 \u00d7 1.4 NA objective. Images were acquired with a Photometrics CoolSNAP HQ2 camera or a Photometrics Evolve 512 EMCCD camera, and were analyzed with the SoftWoRx software. For quantitation, at least 140 cells were analyzed for each sample.\n\n### Spot assay\n\nFor metal sensitivity analysis, including NaCl, KCl, LiCl, MgSO4, CaCl2, ZnCl2, CoCl2, and MnCl2, five-fold serial dilutions of cells were spotted onto YES solid medium with or without indicated concentration of the chemicals. The plates were incubated for 4 to 6 days at 30\u00b0C before scanning.\n\n### CFP-Atg8 processing assay\n\nAbout 10 OD600 units of yeast cells before and after treatment with nitrogen starvation were harvested and lysed using a post-alkaline extraction method (Sun et al., 2013). 10 \u03bcl of samples were separated on an SDS-PAGE gel and immunoblotted with anti-GFP antibody.\n\n### Protein expression and purification for peptide pull-down\n\nPlasmids for purification of SpAtg8 and ScAtg8 were generated through In-Fusion cloning technology using pETDuet vector cut with HindIII and EcoRI. His6-tagged SpAtg8 and ScAtg8 were expressed from BL21 E. coli cells. After adding 0.4 mM of isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) to induce protein expression, 200 ml of culture was incubated at 18\u00b0C for 20 hr. Bacteria cells were lysed in lysing buffer (50 mM phosphate buffer, pH 8.0, 0.3 M NaCl, 10 mM imidazole, 10% glycerol, 1 mM PMSF) by sonication. Purification was performed using Ni-NTA-agarose (QIAGEN). The buffer of the eluate was changed to storage buffer (50 mM Tris-HCl, pH 7.5, 0.1 M NaCl, 10% glycerol).\n\n### Peptide pull-down assay\n\n30 \u00b5g of recombinant protein purified from E. coli and 2 \u00b5g of biotin-labeled peptide (1 mg/ml, GenScript) were mixed together in binding buffer (50 mM Tris-HCl, pH 7.5, 0.1 M NaCl, 0.05% NP-40, 1 mM PMSF) and incubated with rotation at 4\u00b0C for 3 hr. 15 \u00b5l of streptavidin agarose beads (Thermo) was added and incubated for 1 hr at 4\u00b0C. Beads were washed with 1 ml of binding buffer for four times. Bead-bound protein was eluted by SDS sample buffer. Samples were analyzed by SDS-PAGE and Coomassie Brilliant Blue (CBB) staining.\n\n### Plasmids for expressing recombinant protein used in structural analysis\n\nAll mutations were generated by PCR-based mutagenesis. SpAtg8 gene optimized for bacteria expression was purchased from GenScript. cDNA encoding ScAtg8(1-116) with K26P mutation and the synthesized gene encoding wild-type SpAtg8(1-116) were inserted into pGEX-6P-1 (GE Healthcare) with NdeI and BamHI. As a result, artificial Gly-Pro-His residues were generated ahead of the original first Met of these proteins after GST-tag removal. ScHfl1 variants and ScHfl1(368-389)-ScAtg8 K26P fusion were cloned into the downstream of human rhinovirus (HRV) 3C recognition sequence (HRV 3C seq) of pGEX-6P-1 by using NEBuilder HiFi DNA Assembly Master Mix (New England Biolabs). MBP expression vector was based on a pET15b vector in which HRV 3C seq and MBP gene were inserted with NcoI and NdeI. SpHfl1 variants were cloned into the upstream of HRV 3C seq in the MBP expression vector. As a result, artificial Met and Leu-Glu-Val-Leu-Phe-Gln were added to N- and C-termini of SpHfl1 variants, respectively.\n\n### Protein expression and purification for structural analysis\n\nAll proteins for crystallizations and in vitro experiments were expressed in E. coli BL21 (DE3). After cultivating bacteria at 37\u00b0C until OD600 reached 0.8 to 1.2, overnight culturing with 100 \u03bcM IPTG was performed at 16\u00b0C. After centrifugation, the bacteria were resuspended to PBS with 5 mM EDTA and lysed by sonication for 10 min. After centrifugation, the supernatants were incubated with affinity resin column: GST accept resin (Nacalai Tesque) for GST-fused proteins and Amylose Resin High Flow resin for MBP-fused proteins (New England Biolabs). After washing the resin with PBS three times, the proteins were eluted with glutathione buffer (10 mM glutathione and 50 mM Tris-HCl pH 8.0) for GST-fused proteins or maltose buffer (10 mM maltose, 20 mM Tris-HCl pH 8.0, 200 mM sodium chloride) for MBP-fused proteins. The eluates were then digested by HRV 3C protease at 4\u00b0C for overnight to remove the affinity tag. The proteins were further subjected to size exclusion chromatography (SEC) with 20 mM HEPES pH 6.8 and 150 mM sodium chloride by using Superdex 75 26/60 or Superdex 75 10/300 column (GE Healthcare). Synthesized SpHfl1(386-398) peptide (purchased from Bex Co.) was dissolved in water and purified by SEC with 20 mM HEPES pH 6.8 and 150 mM sodium chloride by using Superdex peptide 10/300 column (GE Healthcare).\n\n### Crystallization\n\nAll crystallization trials were performed by the sitting-drop vapor-diffusion method. Protein and reservoir solutions were mixed at 1:1 vol ratio and equilibrated against the reservoir solution at 20\u00b0C. To crystallize the complex of SpHfl1(386-409) with SpAtg8, 4.5 mg/ml of SpHfl1(386-409) and 5.9 mg/ml of SpAtg8 were mixed at a molar ratio of 1:1 and incubated for 1 hr at 4\u00b0C. The crystals were obtained after 24 hr incubation using 27.5% PEG8000, 0.2 M sodium acetate, 0.1 M Bis-Tris pH 5.5 as a reservoir solution. To crystallize ScHfl1(368-389)-ScAtg8 K26P fusion proteins, 50.3 mg/ml of the fusion protein was used. The crystals were obtained after 24 hr incubation using 6% PEG6000, 0.1 M sodium citrate pH 5.0.\n\n### Diffraction data collection\n\nThe crystals of SpHfl1-SpAtg8 complex were soaked in the reservoir supplemented with 5% MPD and transferred to liquid nitrogen. The ScHfl1 crystals were sequentially soaked in the reservoir supplemented with 75 mM sodium chloride and 10, 20, or 27% glycerol and transferred to liquid nitrogen. The flash-cooled crystals were kept in a stream of nitrogen gas at \u2212178\u00b0C during data collection. Diffraction data of the SpHfl1-SpAtg8 crystals and the ScHfl1-ScAtg8 crystals were collected by using EIGER X 9M detector at the beamline of BL32XU, SPring-8, Japan and ADSC Quantum 315 r detector at the beamline of BL-5A, KEK, Japan, respectively. The diffraction data were indexed, integrated, and scaled using XDS (Kabsch, 2010) for the SpHfl1-SpAtg8 crystals and the HKL2000 program suite (Otwinowski and Minor, 1997) for the ScHfl1-ScAtg8 crystals.\n\n### Structure determination\n\nThe structures of the SpHfl1-SpAtg8 complex and the ScHfl1-ScAtg8 fusion protein were solved by the molecular replacement method with the program Phenix (Adams et al., 2010). For both structures, the crystal structure of ScAtg8 (Noda et al., 2008) (PDBID: 2ZPN) was used as a search model. Crystallographic refinement was performed with Phenix. Manual model building was done with the COOT program (Emsley et al., 2010). Ramachandran plot analysis with the program Rampage (Lovell et al., 2003) showed that 96.9% and 3.1% residues of the SpAtg8-SpHfl1 complex structure and 97.1% and 2.9% residues of the ScAtg8-ScHfl1 complex structure are in the favored and allowed regions, respectively. All structural models in this manuscript were prepared with the program PyMOL except for those with electron-density map (Figure 3\u2014figure supplement 2E and I), which were prepared with COOT. Superimposition of structures in Figure 3E, and Figure 3\u2014figure supplement 2F and K was performed by minimizing the rms difference of main-chain atoms of Atg8 using COOT.\n\n### 2D protein interaction diagrams (LigPlot+\u00a0diagrams)\n\nDiagrams were generated with PDB ID 6AAF (chain A and B) and 6AAG (chain A and F) using LigPlot+\u00a0ver 2.1 (Laskowski and Swindells, 2011). Hydrogen-bond calculation parameters were set to 2.70 and 3.35 as maximum H-A and D-A distances, respectively. Non-bonded contact parameters were set to 2.90 and 3.90 as minimum and maximum contact distances, respectively. Representative-hydrophobic-only option was used for clarity.\n\n### GST pulldown assay\n\nGST pulldown assay was performed as previously described (Yamasaki et al., 2016). Briefly, 50 \u03bcg of GST-fused ScHfl1 variants were incubated with 7.5 \u03bcl of GST-accept resin in 300 \u03bcl of PBS for 1 hr. After short centrifugation, the supernatants were removed, and 50 \u03bcg of ScAtg8 were added with 300 \u03bcl of PBS. The resin was incubated for 60 min, washed three times with PBS, and eluted with glutathione buffer. Sample buffer was added to the eluate and boiled. Samples were analyzed by SDS-PAGE and stained with CBB. The gel images were captured by Gel-Doc EZ (Bio-rad).\n\n### Isothermal titration calorimetry\n\nITC experiments were done using Microcal iTC200 calorimeter (Malvern Panalytical), with stirring at 1000 rpm at 25\u00b0C. Hfl1 peptides and Atg8 were prepared at the concentrations of 250 \u03bcM and 25 \u03bcM for SpHfl1(386-413) WT data in Figure 4A and all data in Figure 4\u2014figure supplements 1A, 300 \u03bcM and 30 \u03bcM for SpHfl1(386-413) variants and ScHfl1(368-389) WT and Y387A data in Figure 4A and SpHfl1(386-413) variants and ScHfl1(368-389) D384A data in Figure 4\u2014figure supplement 1B, or 2 mM and 200 \u03bcM for ScHfl1(368-389) W371A and I375A data in Figure 4A, all data in Figure 4I, and ScHfl1(368-389) D373A, D374A and W371A I375A data in Figure 4\u2014figure supplement 1B, respectively. 2 \u03bcl of Hfl1 peptides in the syringe were injected into a sample cell filled with 200 \u03bcl Atg8 for 18 times at intervals of 120 s. The same set of syringe samples were also titrated to a sample cell filled with 200 \u03bcl buffer and the obtained reference data were used for subtraction of heat of dilution. MicroCal Origin 7.0 software was used to determine the enthalpy (\u0394H), dissociation constant (Kd) and stoichiometry of binding (N). Thermal titration data were fit to a single-site binding model, and thermodynamic parameters \u0394H and Kd were obtained by fitting to the model. When the fitting was not convergent due to weak interaction, N was fixed to 1.0 in order to acquire values of other parameters. The error of each parameter shows the fitting error.\n\n### Data\u00a0availability\n\nThe atomic coordinates and reflection data of the crystal structures of fission yeast and budding yeast Atg8-Hfl1 complexes have been deposited in the Protein Data Bank under accession codes 6AAF and 6AAG, respectively.\n",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "43651e92-cabb-428e-9af9-da11c4eb4763",
+      "submission_id": "ec156be4-d524-45ce-95a2-12a46a857302",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Noboru Mizushima, The University of Tokyo Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.41237.024](https://doi.org/10.7554/eLife.41237.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Lipidation-independent functions of Atg8 rely on its noncanonical interaction with vacuole membrane protein Hfl1\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Noboru Mizushima as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Andrea Musacchio as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAtg8 is one of the autophagy proteins and is covalently conjugated with phosphatidylethanolamine to promote autophagy. However, it has been known that Atg8 has autophagy- and lipidation-independent functions. This study identifies a novel Atg8-binding vacuolar protein, Hfl1, and shows that it is required for the lipidation-independent functions of Atg8 at the vacuole such as maintenance of vacuolar morphology and metal resistance. Furthermore, this study determines the crystal structure of Atg8 in complex with the Atg8-interacting region of Hfl1 and reveals a novel binding motif in Hfl1, which is termed \"helical Atg8-family-interacting motif (AIM)\" and distinct from canonical AIM. These findings are mostly conserved in the two yeast species Schizosaccharomyces pombe and Saccharomyces cerevisiae and may be applied to other organisms including mammals. This is a well-organized study addressing an important question in the field.\n\nEssential revisions:\n\n1) The authors suggest that the Y-site in Hfl1 is important for interaction with both ScAtg8 and SpAtg8. In Figure 3B, a clear pocket for accommodating the tyrosine residue is shown in ScAtg8, but it needs to be confirmed also in SpAtg8 using a longer SpHfl1 peptide including Y409 and Y411. In the ITC data, the Y411A mutant peptide shows significantly reduced (~24 fold) affinity (Figure 4A), but SpHfl1(386-409) shows only a modest reduction (~2 fold) (Figure 4\u2014figure supplement 1). This is unreasonable because a point mutant should show a milder effect than a deletion mutant in general. Therefore, it would be important to provide the SpAtg8 structure in complex with a longer peptide. If the experiment takes more than the usual 2-month revision period, at least, the authors should provide the ITC data using the SpHfl1(386-413) Y409A mutant.\n\n2) In general, if a protein-protein interaction is analyzed, a major binding affinity comes from a non-specific interaction between the main chains, and the binding specificity comes from the interaction involving side-chain atoms. However, the current data in Figure 3F does not provide specific interactions at the atomic level and Figure 3\u2014figure supplement 2G does not provide enough information throughout all binding interaction. For clarity of the interaction between Atg8 and Hfl1, it would be nice to include a figure showing detailed interactions such as \"Ligplot\" for both structures. It will give us more detailed answers regarding the exceptional contribution of the Y398 residue in SpHfl1 to the \"L-site\" and additional roles of other residues including L386 in SpHfl1 and many acidic residues in both species.\n\n3) The authors show the crystal packing of the ScAtg8-ScHfl1 fusion protein (Figure 3\u2014figure \u2013 supplement 2J), but not SpAtg8-SpHfl1(386-409). It would be necessary to show the interaction between the bound SpHfl1 peptide and the symmetry equivalent SpAtg8 protein whether there is an additional force for stabilizing the current structure.\n\n4) In Figure 4F and 4G, what are the expression levels of these ScHfl1 mutants? As shown in Figure 1G, overexpression of Hfl1 could affect the results.\n\n5) The methods and results of the mass spectrometry screen should be included.\n",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ff88b094-cee8-4558-8ee6-213869c17083",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C1",
+      "claim": "Atg8 is a ubiquitin-like protein that plays central roles in autophagy in its lipidated form.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitin-like protein Atg8, in its lipidated form, plays central roles in autophagy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the autophagy field, supported by extensive prior research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "43bdb915-93b3-4769-9967-ddf2e6cf0f12",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C2",
+      "claim": "Atg8 carries out lipidation-independent functions in non-autophagic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, remarkably, Atg8 also carries out lipidation-independent functions in non-autophagic processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and data presented throughout the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "d0d51018-5cc7-44e9-a37a-5d8c34f520ea",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C3",
+      "claim": "In S. pombe and S. cerevisiae, the lipidation-independent roles of Atg8 in maintaining normal vacuole morphology and functions require its interaction with Hfl1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that in the fission yeast Schizosaccharomyces pombe and the budding yeast Saccharomyces cerevisiae, the lipidation-independent roles of Atg8 in maintaining normal morphology and functions of the vacuole require its interaction with a vacuole membrane protein Hfl1 (homolog of human TMEM184 proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing co-immunoprecipitation, localization studies, and phenotypic rescue experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "fefaf0f1-85bd-4212-ae9f-8ee325e1bb25",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C4",
+      "claim": "Hfl1 is a homolog of human TMEM184 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that in the fission yeast Schizosaccharomyces pombe and the budding yeast Saccharomyces cerevisiae, the lipidation-independent roles of Atg8 in maintaining normal morphology and functions of the vacuole require its interaction with a vacuole membrane protein Hfl1 (homolog of human TMEM184 proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "31e350ca-3de4-4929-aaaf-42a6ce68fb65",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C5",
+      "claim": "The Atg8-Hfl1 interaction is not mediated by the typical Atg8-family-interacting motif (AIM) that forms an intermolecular \u03b2-sheet with Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal structures revealed that the Atg8-Hfl1 interaction is not mediated by the typical Atg8-family-interacting motif (AIM) that forms an intermolecular \u03b2-sheet with Atg8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystal structure data presented in Figure 3 and described in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "47bb6e3b-54f8-4aa6-b1ce-31b26ad3a611",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C6",
+      "claim": "The Atg8-binding regions in Hfl1 proteins adopt a helical conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the Atg8-binding regions in Hfl1 proteins adopt a helical conformation, thus representing a new type of AIMs (termed helical AIMs here).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystal structure data presented in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "2a4d55e9-e45d-4df0-9e76-6157ac69ca5a",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C7",
+      "claim": "Helical AIMs represent a new type of Atg8-family-interacting motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the Atg8-binding regions in Hfl1 proteins adopt a helical conformation, thus representing a new type of AIMs (termed helical AIMs here).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural analysis and comparison with canonical AIMs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "ccd0b936-8d3e-447c-931c-61bd9edcee86",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C8",
+      "claim": "Atg8 is conjugated to phosphatidylethanolamine (PE) through a series of enzymatic reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Atg8 is conjugated to the membrane lipid phosphatidylethanolamine (PE) through a series of enzymatic reactions including its processing by the protease Atg4, activation by an E1-like enzyme Atg7, and covalent linking of its G116 residue to PE by the collaborative activities of an E2-like enzyme Atg3 and an E3-like complex Atg12\u2013Atg5-Atg16 (Ichimura et al., 2000; Hanada et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "aa5df3c8-3713-4d45-9d80-3355505cd6af",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C9",
+      "claim": "Lipidated Atg8 on autophagic membranes is critically important for autophagosome formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipidated Atg8 on autophagic membranes is critically important for autophagosome formation (Kirisako et al., 1999), and also serves as a recruitment platform for selective autophagy receptors (Shintani et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "9954199b-5205-4a45-af7d-2d71f7a93393",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C10",
+      "claim": "Lipidated Atg8 serves as a recruitment platform for selective autophagy receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipidated Atg8 on autophagic membranes is critically important for autophagosome formation (Kirisako et al., 1999), and also serves as a recruitment platform for selective autophagy receptors (Shintani et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "c89b5c70-6ca2-45f3-b1a2-81a2b60cdd65",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C11",
+      "claim": "The core consensus sequence of the AIM motif is W/F/YxxL/I/V.",
+      "claim_type": "EXPLICIT",
+      "source": "The core consensus sequence of the AIM motif is the four-amino-acid sequence W/F/YxxL/I/V, in which 'x' denotes any amino acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "8eb3d20b-8c83-473a-95b1-2707d3e9523b",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C12",
+      "claim": "When bound to Atg8, the AIM motif adopts an extended \u03b2 strand conformation and forms an intermolecular parallel \u03b2-sheet with the \u03b22 strand of Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "When bound to Atg8, this motif adopts an extended \u03b2 strand conformation and forms an intermolecular parallel \u03b2-sheet with the \u03b22 strand of Atg8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "8497dd6e-9a1c-4407-bf76-9183733cc63e",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C13",
+      "claim": "The conserved aromatic residue (W/F/Y) in the AIM motif inserts into the W-site on Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved aromatic residue (W/F/Y) and hydrophobic residue (L/I/V) in the AIM motif insert into two hydrophobic pockets on Atg8, termed the 'W-site' and the 'L-site', respectively (Noda et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e5714bce-8393-4b05-ac1d-26f0cacc5571",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C14",
+      "claim": "The conserved hydrophobic residue (L/I/V) in the AIM motif inserts into the L-site on Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved aromatic residue (W/F/Y) and hydrophobic residue (L/I/V) in the AIM motif insert into two hydrophobic pockets on Atg8, termed the 'W-site' and the 'L-site', respectively (Noda et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "6c73dbc8-a75f-4c32-9bd4-fcac201c0071",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C15",
+      "claim": "In P. pastoris, the loss of Atg8 caused aberrant vacuole morphology, a phenotype not shared by atg7\u0394 and atg8-G116A mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In the methylotrophic yeast Pichia pastoris, the loss of Atg8 caused aberrant vacuole morphology, a phenotype not shared by atg7\u0394 and atg8-G116A, two mutants defective in Atg8 lipidation (Mukaiyama et al., 2004; Tamura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "6899f473-256e-410a-b3cf-1f7e46cc2bdb",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C16",
+      "claim": "In S. pombe, the loss of Atg8 caused abnormal vacuole morphologies, including the formation of tubular-shaped vacuoles.",
+      "claim_type": "EXPLICIT",
+      "source": "In another model yeast species, the fission yeast Schizosaccharomyces pombe, the loss of Atg8 was also shown to cause abnormal vacuole morphologies, including the formation of tubular-shaped vacuoles, but the lipidation- and autophagy-deficient atg8-G116A mutant did not exhibit any vacuole morphology abnormalities (Mikawa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "3692525e-5af5-4b39-98f7-5cd418a34f66",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C17",
+      "claim": "In S. pombe, the lipidation- and autophagy-deficient atg8-G116A mutant did not exhibit any vacuole morphology abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "In another model yeast species, the fission yeast Schizosaccharomyces pombe, the loss of Atg8 was also shown to cause abnormal vacuole morphologies, including the formation of tubular-shaped vacuoles, but the lipidation- and autophagy-deficient atg8-G116A mutant did not exhibit any vacuole morphology abnormalities (Mikawa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "95acba12-9b71-4efa-9a1d-57bed5a23fdb",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C18",
+      "claim": "Hfl1 was identified as a protein that specifically co-purified with Atg8-YFH in atg4\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the proteins that specifically co-purified with Atg8-YFH is a protein called Hfl1 (systematic ID SPAC30D11.06c) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by AP-MS data presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "946fec6b-8231-4213-a0a8-8c2d8d4fb632",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C19",
+      "claim": "Hfl1 is a vacuole membrane protein whose absence resulted in abnormal vacuole morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Hfl1 was found in an unpublished study to be a vacuole membrane protein whose absence resulted in abnormal vacuole morphology (the name stands for 'Has Fused Lysosomes') (Lilavivat, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to an unpublished study and confirmed by data in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "68fda6da-6f14-487f-a7b7-e38ba3b3d8dc",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C20",
+      "claim": "Hfl1 belongs to a conserved eukaryotic protein family (InterPro ID: IPR005178; PFAM ID: PF03619).",
+      "claim_type": "EXPLICIT",
+      "source": "It belongs to a conserved eukaryotic protein family (InterPro ID: IPR005178; PFAM ID: PF03619, formerly DUF300).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on database annotations and phylogenetic analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "6e4eebfa-f358-4686-866a-add4a3a23a64",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C21",
+      "claim": "Hfl1 is predicted to contain seven transmembrane helices followed by a C-terminal cytosolic tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other proteins in this family, Hfl1 is predicted to contain seven transmembrane helices followed by a C-terminal cytosolic tail (Figure 1A and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational prediction using PolyPhobius and shown in Figure 1A and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "a31ae6fc-7611-4313-9c09-e2f206e9d550",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C22",
+      "claim": "In humans, members of the InterPro IPR005178 family include three TMEM184 proteins (TMEM184A, TMEM184B, and TMEM184C) and SLC51A.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, members of this family include three TMEM184 proteins (TMEM184A, TMEM184B, and TMEM184C) and SLC51A (also known as organic solute transporter subunit alpha or OST\u03b1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phylogenetic analysis shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "c13b6f0d-6b1c-4e5b-9804-6d5239674fe6",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C23",
+      "claim": "TMEM184 proteins are more closely related to the fungal members of the InterPro IPR005178 family than SLC51A is.",
+      "claim_type": "EXPLICIT",
+      "source": "The TMEM184 proteins are more closely related to the fungal members of this family than SLC51A is (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "6eff1a65-3602-4937-b5ed-d2555ebeecf0",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C24",
+      "claim": "SpHfl1 was co-immunoprecipitated with SpAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that Atg8 interacts with Hfl1 in S. pombe using a co-immunoprecipitation analysis (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "bffefe8a-0a92-472d-9dd3-00356467ee3c",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C25",
+      "claim": "ScAtg8 was co-immunoprecipitated with ScHfl1.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether this interaction is conserved, we performed a co-immunoprecipitation analysis in S. cerevisiae, and found that the homolog of Hfl1 in S. cerevisiae, a previously uncharacterized protein YKR051W, can interact with S. cerevisiae Atg8 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "d1ebae7b-9166-4697-b0e3-ccebe64cfec3",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C26",
+      "claim": "SpHfl1 localized to the vacuole membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In fission yeast, endogenously C-terminally GFP-tagged SpHfl1 localized to the vacuole membrane (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "8d31d3e3-e1ca-4a03-9186-23a1fc386a56",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C27",
+      "claim": "Endogenously N-terminally mYFP-tagged SpAtg8 exhibited both a cytosolic distribution and a faint but detectable vacuole membrane localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenously N-terminally mYFP-tagged SpAtg8 exhibited both a cytosolic distribution and a faint but detectable vacuole membrane localization (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "967be57a-b883-402d-85fb-232db2dfe188",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C28",
+      "claim": "The vacuole membrane localization of mYFP-SpAtg8 was completely abolished in Sphfl1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The vacuole membrane localization of mYFP-SpAtg8 was completely abolished in Sphfl1\u0394 cells (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "c622a4c3-f985-4976-a6dd-b88bdf639399",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C29",
+      "claim": "Overexpression of SpHfl1 resulted in the concentration of mYFP-SpAtg8 on the vacuole membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when SpHfl1 was overexpressed from a strong nmt1 promoter, the cytosolic signal of mYFP-SpAtg8 disappeared and the vacuole membrane localization of mYFP-SpAtg8 became much more conspicuous (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "506533b5-74df-4bf6-860f-e635817e77a8",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C30",
+      "claim": "ScHfl1 localized to the vacuole membrane when overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a strong TEF1 promoter to express ScHfl1, we found that like SpHfl1, it also localized to the vacuole membrane (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "6f4b3c66-a57d-4ecc-9cb3-8c28787f441d",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C31",
+      "claim": "Overexpression of ScHfl1 resulted in the relocalization of ScAtg8 from the cytosol to the vacuole membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the situation in fission yeast, the overexpression of ScHfl1 resulted in the relocalization of ScAtg8 from the cytosol to the vacuole membrane (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "d7d1bdd8-734a-4102-bfeb-f4a2c4212634",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C32",
+      "claim": "Loss of SpHfl1 in fission yeast did not affect starvation-induced autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CFP-SpAtg8 in fission yeast and GFP-ScAtg8 in budding yeast as reporters to monitor autophagy, we found that neither the loss of SpHfl1 in fission yeast nor the loss of ScHfl1 in budding yeast affected starvation-induced autophagy (Figure 2\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by autophagy assay data shown in Figure 2\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "8ef6869e-e875-42eb-a348-baa842a3facc",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C33",
+      "claim": "Loss of ScHfl1 in budding yeast did not affect starvation-induced autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CFP-SpAtg8 in fission yeast and GFP-ScAtg8 in budding yeast as reporters to monitor autophagy, we found that neither the loss of SpHfl1 in fission yeast nor the loss of ScHfl1 in budding yeast affected starvation-induced autophagy (Figure 2\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by autophagy assay data shown in Figure 2\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e872a9ad-2e68-4515-8992-20c2556aeeb7",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C34",
+      "claim": "DTT treatment resulted in the formation of tubular-shaped vacuoles in Spatg8\u0394 but not wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After testing a number of other stress-inducing conditions, we found that treating cells with the reducing agent dithiothreitol (DTT) resulted in the formation of tubular-shaped vacuoles in Spatg8\u0394 but not wild-type cells (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "8030e145-3b24-4ff6-b26c-5b1092198825",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C35",
+      "claim": "The tubular-shaped vacuole phenotype of Spatg8\u0394 was shared by Sphfl1\u0394 but not by Spatg1\u0394, Spatg2\u0394, Spatg3\u0394, Spatg4\u0394, Spatg5\u0394, Spatg6\u0394, Spatg7\u0394, and Spatg8-G116A.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype of Spatg8\u0394 was shared by Sphfl1\u0394 but not by Spatg1\u0394, Spatg2\u0394, Spatg3\u0394, Spatg4\u0394, Spatg5\u0394, Spatg6\u0394, Spatg7\u0394, and Spatg8-G116A (Figure 2A and B, and Figure 2\u2014figure supplement 1D), indicating that SpHfl1 and SpAtg8 act in a non-autophagic process to maintain normal vacuole morphology.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2A and B, and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "acf621b5-cc2d-4a92-8a65-2e7f0cd4860d",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C36",
+      "claim": "Spatg8\u0394 and Sphfl1\u0394 cells exhibited stronger sensitivity to ZnCl2, CoCl2, and MnCl2 than the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the metal salts we tested, which include NaCl, KCl, LiCl, MgSO4, CaCl2, ZnCl2, CoCl2, and MnCl2, Spatg8\u0394 and Sphfl1\u0394 cells exhibited stronger sensitivity to ZnCl2, CoCl2, and MnCl2 than the wild type (Figure 2C and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spot assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "ec66ce44-821e-43bd-8c7d-ce1cf234acac",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C37",
+      "claim": "The metal sensitivity phenotype was not shared by the lipidation-defective mutants Spatg8-G116A, Spatg3\u0394, and Spatg7\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "The metal sensitivity phenotype was not shared by the lipidation-defective mutants Spatg8-G116A, Spatg3\u0394, and Spatg7\u0394 (Figure 2D and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spot assay data shown in Figure 2D and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "40beb60a-4cdc-48dc-b486-6a9601aa20bb",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C38",
+      "claim": "The severity of the metal sensitivity phenotype was the same for Spatg8\u0394 and Sphfl1\u0394, and the double mutant Spatg8\u0394 Sphfl1\u0394 did not show stronger phenotype than the two single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the severity of the metal sensitivity phenotype was the same for Spatg8\u0394 and Sphfl1\u0394, and the double mutant Spatg8\u0394 Sphfl1\u0394 did not show stronger phenotype than the two single mutants (Figure 2C and D, and Figure 2\u2014figure supplement 2), demonstrating that SpAtg8 and SpHfl1 act in the same pathway to confer normal metal tolerance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spot assay data shown in Figure 2C and D, and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "6d964a9d-9497-4bfc-b1de-b1dd3640ca93",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C39",
+      "claim": "Vacuolar microdomains were readily observed in wild-type but not Scatg8\u0394 cells at day 1 (D1) of the stationary phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to reproduce this observation and found that vacuolar microdomains manifested as the reticular Vph1-mCherry pattern were readily observed in wild-type but not Scatg8\u0394 cells at day 1 (D1) of the stationary phase (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "2a43c9c0-3df4-4d0d-8ea1-c5fdb0cb6023",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C40",
+      "claim": "The vacuolar microdomain formation phenotype of Scatg8\u0394 was shared by Schfl1\u0394 but not by Scatg1\u0394 and Scatg7\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype of Scatg8\u0394 was shared by Schfl1\u0394 but not by Scatg1\u0394 and Scatg7\u0394 (Figure 2E and F), indicating that ScHfl1 and ScAtg8, but not ScAtg8 lipidation or autophagy, are important for vacuolar microdomain formation in cells cultured to D1 of the stationary phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "80d7bff9-ef7b-4755-af4b-28a35644f755",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C41",
+      "claim": "SpHfl1(1-269) was able to localize properly to the vacuole membrane but failed to recruit SpAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal 7-transmembrane-helix region of SpHfl1, SpHfl1(1-269), when expressed from a plasmid in Sphfl1\u0394 cells, was able to localize properly to the vacuole membrane but failed to recruit SpAtg8 (Figure 3\u2014figure supplement 1A), indicating that SpAtg8 recruitment requires the C-terminal cytosolic tail of SpHfl1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "c078d2ab-d5e8-47fe-acc4-f44f62a334be",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C42",
+      "claim": "SpHfl1(1-410) retained the ability to recruit SpAtg8, whereas SpHfl1(1-385) and several shorter fragments lost the ability.",
+      "claim_type": "EXPLICIT",
+      "source": "We then examined a series of C-terminally truncated versions of SpHfl1, and found that SpHfl1(1-410), which lacks the last 16 amino acids, retained the ability to recruit SpAtg8, whereas SpHfl1(1-385) and several shorter fragments lost the ability (Figure 3\u2014figure supplement 1A), indicating that the region between amino acids 385 and 410 is critical for SpAtg8 recruitment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e5103a34-7d49-40d1-8a08-bbe42ac1fafa",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C43",
+      "claim": "SpHfl1\u0394(386-409) failed to recruit SpAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, SpHfl1\u0394(386-409), which lacks 24 amino acids, also failed to recruit SpAtg8 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e52bfa44-7a59-4127-94a5-3cb485b185c2",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C44",
+      "claim": "Only SpHfl1(1-410) was able to complement the vacuole morphology defect of Sphfl1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same set of plasmids to complement the vacuole morphology defect of Sphfl1\u0394, we found that only SpHfl1(1-410) was able to complement (Figure 3\u2014figure supplement 1B), suggesting that the SpAtg8-recruitment ability of SpHfl1 is important for maintaining normal vacuole morphology.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "f04eeeda-2d75-4c74-bf6c-9e64ca3de957",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C45",
+      "claim": "SpHfl1(1-410) but not SpHfl1(1-385) or SpHfl1\u0394(386-409) was able to co-immunoprecipitate SpAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting this idea, we found that SpHfl1(1-410) but not SpHfl1(1-385) or SpHfl1\u0394(386-409) was able to co-immunoprecipitate SpAtg8 (Figure 3\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 3\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "876b3c47-0395-4fe3-b23c-075e6deac216",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C46",
+      "claim": "The cytosolic tail region, SpHfl1(270-426), was sufficient for co-immunoprecipitating SpAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the cytosolic tail region, SpHfl1(270-426), was sufficient for co-immunoprecipitating SpAtg8 (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 3\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "9d73932e-50cf-40fd-b042-57c3fd8b6054",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C47",
+      "claim": "SpHfl1(386-409) could efficiently pull down recombinant SpAtg8 but not a control protein Yng2-PHD.",
+      "claim_type": "EXPLICIT",
+      "source": "We synthesized an SpHfl1(386-409) peptide and performed in vitro pull-down analysis. SpHfl1(386-409) could efficiently pull down recombinant SpAtg8 but not a control protein Yng2-PHD (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by peptide pull-down data shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "c6fd3fb8-04ef-4aca-9934-ce8de78e3173",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C48",
+      "claim": "SpHfl1(386-409) could pull down ScAtg8 as efficiently as SpAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same assay, we found that SpHfl1(386-409) could pull down ScAtg8 as efficiently as SpAtg8 (Figure 3\u2014figure supplement 2C), despite that this region of SpHfl1 is not well conserved in ScHfl1 (Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by peptide pull-down data shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e707ed5f-da43-4a7b-9fc6-42a941a0960e",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C49",
+      "claim": "The crystal structure of SpAtg8 complexed with SpHfl1(386-409) was solved at 2.2 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the atomic details of the SpHfl1-SpAtg8 interaction, we solved the crystal structure of SpAtg8 complexed with SpHfl1(386-409) at 2.2 \u00c5 resolution (Figure 3A and B, Figure 3\u2014figure supplement 2E, and Supplementary file 2\u2014Table S1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic data presented in Figure 3A and B, Figure 3\u2014figure supplement 2E, and Supplementary file 2\u2014Table S1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e5b2752b-97d3-4db7-a982-2c2a587e8f9b",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C50",
+      "claim": "The structure of SpAtg8 can be superimposed on that of ScAtg8 with an rms difference of 0.8 \u00c5 for main-chain atoms except for those of terminal tails.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of SpAtg8 can be superimposed on that of ScAtg8 with an rms difference of 0.8 \u00c5 for main-chain atoms except for those of terminal tails (Figure 3\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 3\u2014figure supplement 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "a3363652-8bca-4378-87fe-e8762b28baba",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C51",
+      "claim": "SpHfl1(386-409) is comprised of an extended coil followed by an \u03b1-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "SpHfl1(386-409) is comprised of an extended coil followed by an \u03b1-helix, and interacts with the W-site, the L-site, as well as \u03b13 of SpAtg8, burying ~2000 \u00c52 of surface area (detailed interactions are summarized in Figure 3\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystal structure data shown in Figure 3A and B, and Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e5645949-39c8-41c3-ab96-ce1816f4b8d4",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C52",
+      "claim": "SpHfl1(386-409) interacts with the W-site, the L-site, as well as \u03b13 of SpAtg8, burying ~2000 \u00c52 of surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "SpHfl1(386-409) is comprised of an extended coil followed by an \u03b1-helix, and interacts with the W-site, the L-site, as well as \u03b13 of SpAtg8, burying ~2000 \u00c52 of surface area (detailed interactions are summarized in Figure 3\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystal structure data shown in Figure 3A and B, and Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "2ad65c6d-7c92-45d4-b7b5-da2b89eefc43",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C53",
+      "claim": "SpHfl1(386-409) neither forms an intermolecular \u03b2-sheet with \u03b22 of Atg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, SpHfl1(386-409) neither forms an intermolecular \u03b2-sheet with \u03b22 of Atg8 (Figure 3\u2014figure supplement 2G, middle), nor uses two hydrophobic residues separated by two residues to engage the W-site and the L-site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystal structure data shown in Figure 3\u2014figure supplement 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "fdf71849-173a-47f3-9227-3f9597d1aae9",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C54",
+      "claim": "SpHfl1(386-409) uses Phe388 at the coil and Tyr398 at the helix for binding to the W-site and the L-site, respectively, with as many as nine residues between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, SpHfl1(386-409) uses Phe388 at the coil and Tyr398 at the helix for binding to the W-site and the L-site, respectively, with as many as nine residues between them (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystal structure data shown in Figure 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "dea4aedd-cec0-4b92-8c3f-4787c8176fe7",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C55",
+      "claim": "The crystal structure of ScHfl1(368-389)-ScAtg8 fusion protein was determined at 2.45 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of ScHfl1(368-389)-ScAtg8 fusion protein was determined at 2.45 \u00c5 resolution (Figure 3\u2014figure supplement 2I and Supplementary file 2\u2014Table S1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystallographic data presented in Figure 3\u2014figure supplement 2I and Supplementary file 2\u2014Table S1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "b63f0e48-eb0e-4e37-8fb4-5fa1cd0c339d",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C56",
+      "claim": "ScHfl1(368-389) has an elongated conformation with a short helical conformation at the residues 374\u2013377.",
+      "claim_type": "EXPLICIT",
+      "source": "ScHfl1(368-389) has an elongated conformation with a short helical conformation at the residues 374\u2013377, and forms extensive interactions with the W-site, the L-site, \u03b13, as well as \u03b23 of ScAtg8, burying ~2400 \u00c52 of surface area (detailed interactions are summarized in Figure 3\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystal structure data shown in Figure 3C and D, and Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "661fc8f7-8929-4947-a813-c8da50124271",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C57",
+      "claim": "ScHfl1(368-389) forms extensive interactions with the W-site, the L-site, \u03b13, as well as \u03b23 of ScAtg8, burying ~2400 \u00c52 of surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "ScHfl1(368-389) has an elongated conformation with a short helical conformation at the residues 374\u2013377, and forms extensive interactions with the W-site, the L-site, \u03b13, as well as \u03b23 of ScAtg8, burying ~2400 \u00c52 of surface area (detailed interactions are summarized in Figure 3\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystal structure data shown in Figure 3C and D, and Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "40b11c04-2e4f-4eb9-a344-84263ada7cae",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C58",
+      "claim": "ScHfl1 neither forms an intermolecular \u03b2-sheet with Atg8 \u03b22.",
+      "claim_type": "EXPLICIT",
+      "source": "As is the case with SpHfl1, ScHfl1 neither forms an intermolecular \u03b2-sheet with Atg8 \u03b22 (Figure 3\u2014figure supplement 2G, bottom), nor uses a canonical AIM sequence for binding to the W-site and the L-site.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystal structure data shown in Figure 3\u2014figure supplement 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "b742f200-3ed6-4831-9713-cf7a88ff94c7",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C59",
+      "claim": "ScHfl1(368-389) uses Trp371 at the coil and Ile375 at the short helix for binding to the W-site and the L-site, respectively, with three residues between them.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, ScHfl1(368-389) uses Trp371 at the coil and Ile375 at the short helix for binding to the W-site and the L-site, respectively, with three residues between them (Figure 3E and F, Figure 3\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by crystal structure data shown in Figure 3E and F, and Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "c424e1e5-3f50-4309-a16c-af56a459bc15",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C60",
+      "claim": "Tyr387 of ScHfl1 binds to a hydrophobic pocket formed between \u03b13 and \u03b23 of ScAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, Tyr387 of ScHfl1 binds to a hydrophobic pocket formed between \u03b13 and \u03b23 of ScAtg8. This pocket, which has never been reported to be a binding site for AIMs, is named 'Y-site' because it accommodates a conserved Tyr residue in Hfl1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystal structure data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "a48721e3-2848-46ff-b68b-f8bb29699ad1",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C61",
+      "claim": "The Y-site has never been reported to be a binding site for AIMs.",
+      "claim_type": "EXPLICIT",
+      "source": "This pocket, which has never been reported to be a binding site for AIMs, is named 'Y-site' because it accommodates a conserved Tyr residue in Hfl1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a review of the literature and the novelty of the finding.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "81e77d88-9777-49fa-a830-4134373e6fae",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C62",
+      "claim": "SpHfl1(386-413) and ScHfl1(362-391) showed Kd values of 161 nM and 1.38 \u03bcM to SpAtg8 and ScAtg8, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "SpHfl1(386-413) and ScHfl1(362-391), which encompass the Atg8-binding regions in the crystal structures, showed Kd values of 161 nM and 1.38 \u03bcM to SpAtg8 and ScAtg8, respectively (Figure 4A and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC data shown in Figure 4A and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "cbc736b8-2703-422a-978d-89a663e101fe",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C63",
+      "claim": "The affinities of SpHfl1 and ScHfl1 for Atg8 are strong compared with canonical AIMs that typically show a Kd value of 1\u2013100 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "These affinities, especially that of SpHfl1, are strong compared with canonical AIMs that typically show a Kd value of 1\u2013100 \u03bcM (Zaffagnini and Martens, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison with published data on canonical AIMs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "c9bd57e0-3e79-4f22-b367-a64bd6913743",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C64",
+      "claim": "Alanine-substitution of SpHfl1 Phe388 (F388A) resulted in ~4 fold decrease in the affinity with SpAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine-substitution of SpHfl1 Phe388 (F388A) and Tyr398 (Y398A), which bind to the W-site and the L-site in SpAtg8, resulted in ~4 fold and ~1000 fold decrease in the affinity with SpAtg8, respectively (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "4023183b-8e9c-4e08-aeb3-92fdaf7ec9e9",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C65",
+      "claim": "Alanine-substitution of SpHfl1 Tyr398 (Y398A) resulted in ~1000 fold decrease in the affinity with SpAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Alanine-substitution of SpHfl1 Phe388 (F388A) and Tyr398 (Y398A), which bind to the W-site and the L-site in SpAtg8, resulted in ~4 fold and ~1000 fold decrease in the affinity with SpAtg8, respectively (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "63449820-ca11-48a0-a280-eb474dc69e39",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C66",
+      "claim": "Binding to the L-site is much more important than that to the W-site for the SpHfl1-SpAtg8 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that binding to the L-site is much more important than that to the W-site for the SpHfl1-SpAtg8 interaction, which is in contrast to the interactions between canonical AIMs and Atg8 where the W-site binding is usually more important than the L-site binding (Noda et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ITC data showing differential effects of F388A and Y398A mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "aeea7cd8-f7f0-4614-869c-879abfde4ece",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C67",
+      "claim": "ScHfl1 W371A mutation showed a much more pronounced reduction in affinity with ScAtg8 (~170 fold) than the I375A mutation (~13 fold).",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, ScHfl1 is more similar to canonical AIMs than SpHfl1: ScHfl1 uses Trp371 and Ile375 for binding to the W-site and the L-site, respectively, and the W371A mutation showed a much more pronounced reduction in affinity with ScAtg8 (~170 fold) than the I375A mutation (~13 fold) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "4fcf56d4-6268-4dfc-ab77-5c408373d20d",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C68",
+      "claim": "Alanine substitution of Tyr387 and Asp384 in ScHfl1 showed ~5 fold and ~7 fold reduction in affinity, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the residues binding to the canonical binding surfaces of Atg8, alanine substitution of Tyr387 and Asp384 in ScHfl1, which bind to the Y-site and Arg65 of Atg8, showed ~5 fold and ~7 fold reduction in affinity, respectively (Figure 4A and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC data shown in Figure 4A and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "a22d26bb-d8cc-4a65-9d02-d464d9be80fb",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C69",
+      "claim": "The Y398A mutation in SpHfl1 completely abolished the SpAtg8-recruitment ability.",
+      "claim_type": "EXPLICIT",
+      "source": "The point mutation that had the strongest effect in the in vitro ITC analysis, Y398A, completely abolished the SpAtg8-recruitment ability and strongly diminished the ability to complement the vacuole morphology phenotype of Sphfl1\u0394.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "3b943c05-aeb1-487e-a78d-3238bc8a27e0",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C70",
+      "claim": "SpHfl1(Y398A) lost the ability to complement the metal sensitivity phenotype of Sphfl1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that SpHfl1(Y398A) lost the ability to complement the metal sensitivity phenotype of Sphfl1\u0394 (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spot assay data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "5715f232-d95e-44f2-9614-1978953a8de0",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C71",
+      "claim": "Fusing SpHfl1 and SpAtg8 to the same mCherry protein restored the ability of SpHfl1(Y398A) to complement Sphfl1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that such a fusion restored the ability of SpHfl1(Y398A) to complement Sphfl1\u0394 (Figure 4E and Figure 4\u2014figure supplement 2), thus demonstrating that the phenotypic consequences of the Y398A mutation mainly result from a disruption of the SpHfl1-SpAtg8 binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spot assay and microscopy data shown in Figure 4E and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "ae23d8ca-e41c-46f4-ad4c-4c18b59ea331",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C72",
+      "claim": "The physical association between SpHfl1 and SpAtg8 is essential for the lipidation-independent vacuolar functions of SpAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that the physical association between SpHfl1 and SpAtg8 is essential for the lipidation-independent vacuolar functions of SpAtg8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutational analysis and rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "5ba3244f-05a2-40f9-810f-c6c7cf98ca00",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C73",
+      "claim": "Neither fusion of SpAtg8 to Hmt1 nor fusion to Zhf1 was able to rescue the vacuole morphology phenotype of Sphfl1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither fusion to the vacuolar phytochelatin transporter Hmt1 nor fusion to the vacuolar zinc transporter Zhf1 was able to rescue the vacuole morphology phenotype of Sphfl1\u0394 (Figure 4\u2014figure supplement 3), suggesting that SpHfl1 may have role(s) beyond recruiting SpAtg8 to the vacuole membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "b6d30e64-09ad-4e37-bb9b-96b5346df2cb",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C74",
+      "claim": "The W371A, I375A, D384A, and Y387A mutations each strongly diminished the ability of TEF1-promoter-expressed ScHfl1 to recruit ScAtg8 to the vacuole membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, consistent with the ITC results, the W371A, I375A, D384A, and Y387A mutations each strongly diminished the ability of TEF1-promoter-expressed ScHfl1 to recruit ScAtg8 to the vacuole membrane (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "ad86b7c6-1b43-4449-85a3-cfc217a5de5e",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C75",
+      "claim": "None of the W371A, I375A, D384A, and Y387A mutations individually had an obvious effect on the ability of ScHfl1 to complement the microdomain formation defect of Schfl1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, none of these mutations individually had an obvious effect on the ability of ScHfl1 expressed from either the strong TEF1 promoter or the weak URA3 promoter to complement the microdomain formation defect of Schfl1\u0394 (Figure 4G and H, and Figure 4\u2014figure supplement 4), suggesting that the residual Atg8-binding ability is sufficient for the microdomain formation function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4G and H, and Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "d91508b0-9070-41f5-b93e-444841863376",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C76",
+      "claim": "Combining W371A, I375A, D384A, and Y387A together led to the complete loss of the ability of ScHfl1 to complement Schfl1\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "To further reduce the ScAtg8-binding ability of ScHfl1, we combined mutations together and found that combining W371A and I375A to simultaneously disrupt the interactions at the W-site and the L-site was not able to abolish the ability of ScHfl1 to complement Schfl1\u0394, whereas combining W371A, I375A, D384A, and Y387A together led to the complete loss of the complementing ability (Figure 4G and H, and Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4G and H, and Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "97e41e3b-1086-47fc-a8ab-1fea956070b5",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C77",
+      "claim": "The quadruple mutant ScHfl1(W371A I375A D384A Y387A) showed no binding with ScAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed by ITC measurements that the double mutant (W371A I375A) retained weak affinity, but that the quadruple mutant (W371A I375A D384A Y387A) showed no binding with ScAtg8 (Figure 4I and Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ITC data shown in Figure 4I and Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "26b5ea18-9ced-4338-a455-1b5aee501131",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C78",
+      "claim": "The ability of ScHfl1(W371A I375A D384A Y387A) to complement Schfl1\u0394 was restored by fusing it with ScAtg8.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of ScHfl1(W371A I375A D384A Y387A) to complement Schfl1\u0394 was restored by fusing it with ScAtg8 (Figure 4J), indicating that the microdomain formation defect of this ScHfl1 mutant is indeed due to a loss of ScAtg8-binding ability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by microscopy data shown in Figure 4J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "2ec43cff-f528-4afe-9c29-3decc42cadf5",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C79",
+      "claim": "The physical interaction between Atg8 and Hfl1 is vitally important to the lipidation-independent vacuolar functions of Atg8 in S. pombe and S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, our results showed that the physical interaction between Atg8 and Hfl1 is vitally important to the lipidation-independent vacuolar functions of Atg8 in these two model yeast species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comprehensive mutational analysis and rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "78cc9bb8-f92e-46c1-9a03-6b68aa99cbbb",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C80",
+      "claim": "Helical AIMs do not conform to the two common features of canonical AIMs/LIRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The helical AIMs we identified in SpHfl1 and ScHfl1 do not conform to these rules: they do not form an intermolecular \u03b2-sheet with Atg8 and they do not have a W/F/YxxL/I/V motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "46b0b7c7-0e74-4e0e-b5a4-420a57dd6089",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C81",
+      "claim": "SpHfl1 and ScHfl1 respectively use FxxxxxxxxxY and WxxxI sequences for Atg8 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, SpHfl1 and ScHfl1 respectively use FxxxxxxxxxY and WxxxI sequences for Atg8 binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "6357d4b4-4db2-4635-968a-513f56f8fadc",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C82",
+      "claim": "The larger numbers of intervening residues between the two hydrophobic residues in helical AIMs are possible because helical AIMs do not have to form an intermolecular \u03b2-sheet.",
+      "claim_type": "EXPLICIT",
+      "source": "The larger numbers of intervening residues between the two hydrophobic residues are possible because helical AIMs do not have to form an intermolecular \u03b2-sheet\u2014if an intermolecular \u03b2-sheet is formed, the number of intervening residues must be strictly two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "4ebf4725-b245-4643-9ab7-a62ca58b810b",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C83",
+      "claim": "TMEM184A localizes to endosomes in mouse Sertoli cells and is required for the normal localization of the plasma membrane SNARE protein Stx2.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM184A (also called Sdmg1) localizes to endosomes in mouse Sertoli cells and is required for the normal localization of the plasma membrane SNARE protein Stx2 (Best et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "48e45134-e933-4a3b-91f2-3943c6b15483",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C84",
+      "claim": "TMEM184A acts as a heparin receptor in vascular cells and regulates angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM184A also acts as a heparin receptor in vascular cells and regulates angiogenesis (Farwell et al., 2017; Pugh et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "41893d13-704d-4ab5-b90a-542fdae1cc0c",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C85",
+      "claim": "TMEM184B localizes to recycling endosomes in mouse neurons and is important for the maintenance of synaptic architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "TMEM184B localizes to recycling endosomes in mouse neurons and is important for the maintenance of synaptic architecture (Bhattacharya et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "0cd38740-6acf-4b14-9eb0-1f4ac7899e37",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C86",
+      "claim": "In Arabidopsis thaliana, two TMEM184-related proteins, LAZ1 and LAZ1H1, localize to the vacuole membrane and are redundantly required for normal vacuole morphology and functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model plant Arabidopsis thaliana, two TMEM184-related proteins, LAZ1 and LAZ1H1, localize to the vacuole membrane and are redundantly required for normal vacuole morphology and functions (Liu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "f73b8268-fafd-42bf-809e-3c5f023069c4",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C87",
+      "claim": "Yeast Hfl1 proteins and their closest homologs in animals and plants share a common attribute of localizing to either endosomal or lysosomal compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, yeast Hfl1 proteins and their closest homologs in animals and plants share a common attribute of localizing to either endosomal or lysosomal compartments, but whether they share a common function remains to be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the localization data for Hfl1 and its homologs.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e8f541e4-e252-423a-a429-112b35190155",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C88",
+      "claim": "SLC51A/OST\u03b1 proteins bind to the single-transmembrane SLC51B/OST\u03b2 proteins and transport bile acids and steroids at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "More distantly related to the yeast Hfl1 proteins but belonging to the same InterPro IPR005178 protein family are the animal SLC51A/OST\u03b1 proteins, which bind to the single-transmembrane SLC51B/OST\u03b2 proteins and transport bile acids and steroids at the plasma membrane (Ballatori et al., 2013; Dawson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e2351395-4820-4d6f-a90b-73db9a214a53",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C89",
+      "claim": "The InterPro IPR005178 family proteins may not necessarily all be transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a recent phylogenetic study has grouped TMEM184 proteins and SLC51A proteins into the transporter\u2013opsin\u2013GPCR (TOG) superfamily, which includes non-transporter proteins such as the G protein-coupled receptors (GPCRs) (Saier et al., 2016; Yee et al., 2013), hinting that the InterPro IPR005178 family proteins may not necessarily all be transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from phylogenetic analysis cited from prior research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "c23d26c5-bb41-4344-8256-2dbe84f9e13e",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C90",
+      "claim": "Hfl1, as a GPCR-like transmembrane protein on the vacuole membrane, could play a sensing role to monitor changes occurring inside the vacuole lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that Hfl1, as a GPCR-like transmembrane protein on the vacuole membrane, could play a sensing role to monitor changes occurring inside the vacuole lumen, and Atg8 may facilitate signal transduction in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the structural similarity to GPCRs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "9697b521-5d6b-4430-9104-5fd657aeda4a",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C91",
+      "claim": "The two vacuole-related phenotypes of Spatg8\u0394 and Sphfl1\u0394 mutants\u2014metal sensitivity and abnormal vacuole morphology\u2014may share the same underlying cause.",
+      "claim_type": "EXPLICIT",
+      "source": "The two vacuole-related phenotypes of Spatg8\u0394 and Sphfl1\u0394 mutants\u2014metal sensitivity and abnormal vacuole morphology\u2014may share the same underlying cause, as the same perturbation of vacuole organization or function may reduce the ability of this organelle to sequester metals, and at the same time, alter its morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed phenotypes.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "bcc6f86f-01f0-4ec9-aaba-ca643981d4bf",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C92",
+      "claim": "A substantial fraction of deletion mutants sensitive to metals in S. cerevisiae are those exhibiting abnormal vacuole morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, genome-wide deletion library screens in S. cerevisiae have shown that a substantial fraction of deletion mutants sensitive to metals are those exhibiting abnormal vacuole morphology (Pagani et al., 2007; Ruotolo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "1f35945e-1058-46f6-9442-4c8e2e88c39b",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C93",
+      "claim": "The only other genetic perturbation that can result in tubular vacuoles in fission yeast is the overexpression of the dynamin homolog Vps1.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, the only other genetic perturbation that can result in tubular vacuoles in fission yeast is the overexpression of the dynamin homolog Vps1 (R\u00f6thlisberger et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a review of the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "15598eb7-6fd2-4594-b07a-b84495c81ce6",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C94",
+      "claim": "vps1\u0394 suppressed the tubular vacuole phenotype of Spatg8\u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, vps1\u0394 suppressed the tubular vacuole phenotype of Spatg8\u0394 (Mikawa et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "f46b03f2-a8dc-4450-bd93-38d045ece258",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C95",
+      "claim": "SpAtg8 and SpHfl1 may directly or indirectly restrain the vacuole tubulation activity of Vps1.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SpAtg8 and SpHfl1 may directly or indirectly restrain the vacuole tubulation activity of Vps1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic interaction data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "0fed636f-1139-4685-b9b1-a6c5703fab30",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C96",
+      "claim": "The microdomain formation defect of Scatg8\u0394 and Schfl1\u0394 mutants indicates that ScAtg8 and ScHfl1 contribute to the stationary-phase-induced vacuole membrane partitioning process.",
+      "claim_type": "EXPLICIT",
+      "source": "The microdomain formation defect of Scatg8\u0394 and Schfl1\u0394 mutants indicates that ScAtg8 and ScHfl1 contribute to the stationary-phase-induced vacuole membrane partitioning process (Toulmay and Prinz, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed phenotypes and cited prior research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "52bebc6d-db0e-46b9-839a-1901d15615ee",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C97",
+      "claim": "In Drosophila, a form of noncanonical autophagy required for programmed midgut removal is dependent on Atg8 but not Atg7 and Atg3.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, a form of noncanonical autophagy required for programmed midgut removal is dependent on Atg8 but not Atg7 and Atg3, the E1 and E2 proteins needed for Atg8 lipidation (Chang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "5c719d13-ff72-4ee1-9dd9-65f34a1f2548",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C98",
+      "claim": "In mammalian cells, the formation of ERAD tuning vesicle/EDEMosome depends on non-lipidated LC3.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammalian cells, a non-autophagic process, the formation of ERAD tuning vesicle/EDEMosome, depends on non-lipidated LC3, but the exact mechanism is unclear (Cal\u00ec et al., 2008; Reggiori et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e6848164-7d13-4beb-8133-59172892dc51",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "claim_id": "C99",
+      "claim": "Interactions between Atg8 and a transmembrane protein may underlie lipidation-independent functions of Atg8 in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings on the lipidation-independent vacuolar functions of Atg8 in yeasts suggest the possibility that interactions between Atg8 and a transmembrane protein may underlie these lipidation-independent functions of Atg8 in animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the findings in yeast.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4da91040-0732-4b20-aa9d-866572eb5448",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Atg8 physically interacts with Hfl1, a vacuole membrane protein, in both S. pombe and S. cerevisiae. Hfl1 recruits Atg8 to the vacuole membrane in a lipidation-independent manner, as demonstrated by co-immunoprecipitation and localization studies showing that Atg8 vacuole membrane localization depends on Hfl1 and is enhanced by Hfl1 overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C31 provide strong biochemical (co-IP) and cell biological (localization) evidence for the Atg8-Hfl1 interaction and Hfl1-dependent recruitment of Atg8 to vacuole membranes in both yeast species. The data are internally consistent and use appropriate controls (e.g., loss of vacuole localization in hfl1\u0394 cells).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "6c07db9a-4a58-433c-849c-ac2af438264a",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Loss of Hfl1 phenocopies the lipidation-independent vacuolar defects of atg8\u0394 mutants. In S. pombe, both Spatg8\u0394 and Sphfl1\u0394 exhibit tubular vacuole morphology under DTT stress and hypersensitivity to metal ions (Zn, Co, Mn), phenotypes not shared by lipidation-defective mutants. In S. cerevisiae, both Scatg8\u0394 and Schfl1\u0394 are defective in stationary-phase vacuolar microdomain formation. Double mutants show no additive phenotypes, indicating Atg8 and Hfl1 act in the same pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C40 present comprehensive genetic evidence that Hfl1 and Atg8 function in the same lipidation-independent pathway. The phenotypic data (vacuole morphology, metal sensitivity, microdomain formation) are well-controlled with appropriate mutants (atg1\u0394, atg7\u0394, atg8-G116A) demonstrating specificity. The lack of additivity in double mutants (C38) strongly supports epistasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "e8d2fffd-e8b0-4e84-b25a-bcf3ddba209e",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The C-terminal cytosolic tail of SpHfl1, specifically amino acids 386-409, is necessary and sufficient for SpAtg8 binding. Deletion mapping and complementation studies show that SpHfl1(1-410) retains Atg8-recruitment and complementation ability, while shorter truncations or internal deletions removing residues 386-409 lose these functions. In vitro peptide pull-down assays confirm that SpHfl1(386-409) directly binds SpAtg8 and also cross-reacts with ScAtg8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 provide convergent evidence from deletion mapping (C41-C43), functional complementation (C44), co-IP (C45-C46), and in vitro binding assays (C47-C48) that consistently identify the same minimal Atg8-binding region. The experimental approaches are appropriate and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Crystal structures of Atg8-Hfl1 complexes reveal a novel 'helical AIM' binding mode. SpHfl1(386-409) adopts an extended coil followed by an \u03b1-helix and binds SpAtg8 using Phe388 and Tyr398 (separated by 9 residues) to engage the W-site and L-site, without forming an intermolecular \u03b2-sheet with Atg8. ScHfl1(368-389) similarly uses Trp371 and Ile375 (separated by 3 residues) in a helical conformation. ScHfl1 additionally engages a novel 'Y-site' on Atg8 via Tyr387, a binding pocket not previously reported for AIMs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C61 are supported by high-resolution crystal structures (2.2 \u00c5 and 2.45 \u00c5) with appropriate data quality metrics provided. The structural observations are clearly described and distinguish helical AIMs from canonical \u03b2-sheet AIMs. The identification of the Y-site (C60-C61) is novel and well-documented structurally. The structures provide atomic-level detail supporting the noncanonical binding mode.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "a2ff475e-bfd7-481d-a377-5e770070753d",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ITC measurements reveal that helical AIMs bind Atg8 with high affinity (SpHfl1: Kd=161 nM; ScHfl1: Kd=1.38 \u03bcM), stronger than typical canonical AIMs (1-100 \u03bcM). Mutagenesis shows that for SpHfl1, the L-site-binding Tyr398 is critical (~1000-fold reduction when mutated), while the W-site-binding Phe388 is less important (~4-fold reduction). For ScHfl1, the W-site-binding Trp371 is most critical (~170-fold reduction), more similar to canonical AIMs. Additional residues binding the Y-site and forming electrostatic interactions contribute moderately to affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 present quantitative ITC data with appropriate controls and systematic mutagenesis. The differential importance of W-site vs L-site binding between SpHfl1 and ScHfl1 is clearly demonstrated and contrasts with canonical AIMs. The data are internally consistent with the structural observations and provide functional validation of the crystal structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "32e35dec-639a-487c-989d-e764c7e7470f",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The physical Atg8-Hfl1 interaction is essential for lipidation-independent vacuolar functions in S. pombe. The Y398A mutation in SpHfl1, which abolishes Atg8 binding in vitro, eliminates SpAtg8 recruitment to vacuoles and fails to complement vacuole morphology and metal sensitivity phenotypes of Sphfl1\u0394. Fusion of SpHfl1(Y398A) to SpAtg8 via mCherry restores complementation, demonstrating that the phenotypic defects result specifically from loss of Atg8-Hfl1 binding. However, fusing SpAtg8 to other vacuole membrane proteins (Hmt1, Zhf1) does not rescue Sphfl1\u0394, suggesting Hfl1 has additional roles beyond Atg8 recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 provide strong functional validation through structure-guided mutagenesis (C69-C70), rescue experiments (C71), and appropriate controls (C73). The fusion rescue experiment (C71) elegantly demonstrates that the Y398A phenotype is due to loss of Atg8 binding rather than other effects. The negative result with non-Hfl1 fusions (C73) appropriately qualifies the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "7238de02-5a3c-4f7a-bdba-e3b5f4625767",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In S. cerevisiae, the physical Atg8-Hfl1 interaction is essential for vacuolar microdomain formation. Individual mutations (W371A, I375A, D384A, Y387A) that reduce ScAtg8 binding in vitro do not abolish ScHfl1 function, suggesting residual binding is sufficient. However, the quadruple mutant ScHfl1(W371A I375A D384A Y387A) completely loses ScAtg8 binding by ITC and fails to complement Schfl1\u0394. Fusion of this quadruple mutant to ScAtg8 restores complementation, confirming the defect is due to loss of Atg8 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 demonstrate that ScHfl1 function requires Atg8 binding but is more tolerant of partial binding defects than SpHfl1. The systematic combination of mutations (C75-C76) and correlation with ITC data (C77) provide rigorous evidence. The fusion rescue (C78) confirms causality. The conclusion (C79) is well-supported by the comprehensive mutational analysis in both yeast species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "b7aace83-47be-4a70-85b0-22dd7dc86fd4",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Helical AIMs represent a new class of Atg8-interacting motifs distinct from canonical AIMs. Unlike canonical AIMs that form intermolecular \u03b2-sheets with Atg8 \u03b22 and use W/F/YxxL/I/V motifs, helical AIMs adopt helical conformations and use FxxxxxxxxxY (SpHfl1) or WxxxI (ScHfl1) sequences with variable numbers of intervening residues. The helical structure allows flexibility in the spacing between hydrophobic residues that would be impossible in \u03b2-sheet conformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 and C80-C82 synthesize the structural findings into a clear conceptual advance. The distinction from canonical AIMs is well-established by the crystal structures and the mechanistic explanation for variable spacing (C82) is logical and supported by structural principles. This represents a genuine expansion of the known diversity of Atg8-binding mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "f0bb1ac9-cd2d-4e04-9487-318ee35de345",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Hfl1 belongs to a conserved eukaryotic protein family (InterPro IPR005178) and is homologous to human TMEM184 proteins. Hfl1 is predicted to contain seven transmembrane helices followed by a C-terminal cytosolic tail. Phylogenetic analysis shows that TMEM184 proteins are more closely related to fungal Hfl1 proteins than the more distantly related SLC51A proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C20-C23 are supported by database annotations, computational predictions (PolyPhobius), and phylogenetic analysis shown in Figure 1\u2014figure supplement 1. The evolutionary relationships are clearly documented and provide important context for the functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "ac9cca6f-e5c0-41eb-8e75-64173647840f",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Hfl1 was identified as an Atg8-interacting protein through affinity purification-mass spectrometry (AP-MS) of Atg8-YFH in atg4\u0394 S. pombe cells. Hfl1 is a vacuole membrane protein whose deletion causes abnormal vacuole morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 describe the initial discovery of the Atg8-Hfl1 interaction. C18 is supported by AP-MS data (Supplementary file 1), and C19 cites an unpublished study but is confirmed by data in the manuscript. This provides the foundation for subsequent investigations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "9569f476-4f6c-4077-8948-25c84d3bf690",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on Atg8 function and canonical AIM motifs. Atg8 is lipidated through enzymatic reactions and plays critical roles in autophagosome formation and selective autophagy receptor recruitment. Canonical AIMs have a W/F/YxxL/I/V consensus sequence that adopts a \u03b2-strand conformation and forms an intermolecular \u03b2-sheet with Atg8, with conserved residues binding to the W-site and L-site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C8-C14 summarize well-established background knowledge supported by appropriate citations. These provide essential context for understanding the novelty of the helical AIM findings but do not represent new results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "4624a954-a73d-41d9-a019-c36e40676427",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior studies in P. pastoris and S. pombe showed that loss of Atg8 causes vacuole morphology defects not shared by lipidation-defective mutants (atg7\u0394, atg8-G116A), indicating lipidation-independent functions of Atg8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 accurately cite prior research establishing lipidation-independent functions of Atg8. These provide important precedent for the current study but represent prior work rather than new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "2b7b554e-c9c0-4df6-9004-c3f0f1722f7a",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TMEM184 and related proteins in animals and plants localize to endosomal/lysosomal compartments and have diverse functions. TMEM184A regulates SNARE localization and angiogenesis, TMEM184B maintains synaptic architecture, and plant LAZ1/LAZ1H1 regulate vacuole morphology. SLC51A proteins transport bile acids and steroids. The family may include both transporters and non-transporters (e.g., GPCRs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C89 accurately summarize published literature on Hfl1 homologs with appropriate citations. This provides valuable evolutionary and functional context but represents synthesis of prior work rather than new experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "ee7f7fbf-4808-40ec-938e-3696c98a8d45",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Speculative discussion of potential mechanisms. Hfl1 may function as a GPCR-like sensor on the vacuole membrane with Atg8 facilitating cytoplasmic signal transduction. The metal sensitivity and vacuole morphology phenotypes may share a common underlying cause. SpAtg8/SpHfl1 may restrain Vps1 vacuole tubulation activity. ScAtg8/ScHfl1 may contribute to vacuole membrane partitioning. Similar Atg8-transmembrane protein interactions may underlie lipidation-independent functions in animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C91, C95-C96, and C99 are explicitly speculative (C90, C91, C99) or inferential (C95, C96) without direct experimental support. While these are reasonable hypotheses based on the data and literature, they represent future directions rather than established results. The speculation is appropriately qualified in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    },
+    {
+      "id": "57724dde-b83f-47cc-9033-39beded61692",
+      "content_id": "7509536b-7da4-4ebc-b833-0b7ba8b94acb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Additional context from literature. Genome-wide screens in S. cerevisiae show overlap between metal-sensitive and vacuole morphology mutants. Vps1 overexpression causes tubular vacuoles in S. pombe, and vps1\u0394 suppresses the Spatg8\u0394 tubular vacuole phenotype. Lipidation-independent Atg8 functions have been reported in Drosophila midgut removal and mammalian ERAD vesicle formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 and C97-C98 accurately cite relevant prior research with appropriate references. These provide important context for interpreting the current findings but represent literature review rather than new experimental results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:10:17.739230Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d0d51018-5cc7-44e9-a37a-5d8c34f520ea",
+      "result_id": "4da91040-0732-4b20-aa9d-866572eb5448"
+    },
+    {
+      "claim_id": "6eff1a65-3602-4937-b5ed-d2555ebeecf0",
+      "result_id": "4da91040-0732-4b20-aa9d-866572eb5448"
+    },
+    {
+      "claim_id": "bffefe8a-0a92-472d-9dd3-00356467ee3c",
+      "result_id": "4da91040-0732-4b20-aa9d-866572eb5448"
+    },
+    {
+      "claim_id": "d1ebae7b-9166-4697-b0e3-ccebe64cfec3",
+      "result_id": "4da91040-0732-4b20-aa9d-866572eb5448"
+    },
+    {
+      "claim_id": "8d31d3e3-e1ca-4a03-9186-23a1fc386a56",
+      "result_id": "4da91040-0732-4b20-aa9d-866572eb5448"
+    },
+    {
+      "claim_id": "967be57a-b883-402d-85fb-232db2dfe188",
+      "result_id": "4da91040-0732-4b20-aa9d-866572eb5448"
+    },
+    {
+      "claim_id": "c622a4c3-f985-4976-a6dd-b88bdf639399",
+      "result_id": "4da91040-0732-4b20-aa9d-866572eb5448"
+    },
+    {
+      "claim_id": "506533b5-74df-4bf6-860f-e635817e77a8",
+      "result_id": "4da91040-0732-4b20-aa9d-866572eb5448"
+    },
+    {
+      "claim_id": "6f4b3c66-a57d-4ecc-9cb3-8c28787f441d",
+      "result_id": "4da91040-0732-4b20-aa9d-866572eb5448"
+    },
+    {
+      "claim_id": "d7d1bdd8-734a-4102-bfeb-f4a2c4212634",
+      "result_id": "6c07db9a-4a58-433c-849c-ac2af438264a"
+    },
+    {
+      "claim_id": "8ef6869e-e875-42eb-a348-baa842a3facc",
+      "result_id": "6c07db9a-4a58-433c-849c-ac2af438264a"
+    },
+    {
+      "claim_id": "e872a9ad-2e68-4515-8992-20c2556aeeb7",
+      "result_id": "6c07db9a-4a58-433c-849c-ac2af438264a"
+    },
+    {
+      "claim_id": "8030e145-3b24-4ff6-b26c-5b1092198825",
+      "result_id": "6c07db9a-4a58-433c-849c-ac2af438264a"
+    },
+    {
+      "claim_id": "acf621b5-cc2d-4a92-8a65-2e7f0cd4860d",
+      "result_id": "6c07db9a-4a58-433c-849c-ac2af438264a"
+    },
+    {
+      "claim_id": "ec66ce44-821e-43bd-8c7d-ce1cf234acac",
+      "result_id": "6c07db9a-4a58-433c-849c-ac2af438264a"
+    },
+    {
+      "claim_id": "40beb60a-4cdc-48dc-b486-6a9601aa20bb",
+      "result_id": "6c07db9a-4a58-433c-849c-ac2af438264a"
+    },
+    {
+      "claim_id": "6d964a9d-9497-4bfc-b1de-b1dd3640ca93",
+      "result_id": "6c07db9a-4a58-433c-849c-ac2af438264a"
+    },
+    {
+      "claim_id": "2a43c9c0-3df4-4d0d-8ea1-c5fdb0cb6023",
+      "result_id": "6c07db9a-4a58-433c-849c-ac2af438264a"
+    },
+    {
+      "claim_id": "80d7bff9-ef7b-4755-af4b-28a35644f755",
+      "result_id": "e8d2fffd-e8b0-4e84-b25a-bcf3ddba209e"
+    },
+    {
+      "claim_id": "c078d2ab-d5e8-47fe-acc4-f44f62a334be",
+      "result_id": "e8d2fffd-e8b0-4e84-b25a-bcf3ddba209e"
+    },
+    {
+      "claim_id": "e5103a34-7d49-40d1-8a08-bbe42ac1fafa",
+      "result_id": "e8d2fffd-e8b0-4e84-b25a-bcf3ddba209e"
+    },
+    {
+      "claim_id": "e52bfa44-7a59-4127-94a5-3cb485b185c2",
+      "result_id": "e8d2fffd-e8b0-4e84-b25a-bcf3ddba209e"
+    },
+    {
+      "claim_id": "f04eeeda-2d75-4c74-bf6c-9e64ca3de957",
+      "result_id": "e8d2fffd-e8b0-4e84-b25a-bcf3ddba209e"
+    },
+    {
+      "claim_id": "876b3c47-0395-4fe3-b23c-075e6deac216",
+      "result_id": "e8d2fffd-e8b0-4e84-b25a-bcf3ddba209e"
+    },
+    {
+      "claim_id": "9d73932e-50cf-40fd-b042-57c3fd8b6054",
+      "result_id": "e8d2fffd-e8b0-4e84-b25a-bcf3ddba209e"
+    },
+    {
+      "claim_id": "c6fd3fb8-04ef-4aca-9934-ce8de78e3173",
+      "result_id": "e8d2fffd-e8b0-4e84-b25a-bcf3ddba209e"
+    },
+    {
+      "claim_id": "e707ed5f-da43-4a7b-9fc6-42a941a0960e",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "e5b2752b-97d3-4db7-a982-2c2a587e8f9b",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "a3363652-8bca-4378-87fe-e8762b28baba",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "e5645949-39c8-41c3-ab96-ce1816f4b8d4",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "2ad65c6d-7c92-45d4-b7b5-da2b89eefc43",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "fdf71849-173a-47f3-9227-3f9597d1aae9",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "dea4aedd-cec0-4b92-8c3f-4787c8176fe7",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "b63f0e48-eb0e-4e37-8fb4-5fa1cd0c339d",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "661fc8f7-8929-4947-a813-c8da50124271",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "40b11c04-2e4f-4eb9-a344-84263ada7cae",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "b742f200-3ed6-4831-9713-cf7a88ff94c7",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "c424e1e5-3f50-4309-a16c-af56a459bc15",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "a48721e3-2848-46ff-b68b-f8bb29699ad1",
+      "result_id": "4cc109ee-95d1-4bb4-a5dc-11cddf607171"
+    },
+    {
+      "claim_id": "81e77d88-9777-49fa-a830-4134373e6fae",
+      "result_id": "a2ff475e-bfd7-481d-a377-5e770070753d"
+    },
+    {
+      "claim_id": "cbc736b8-2703-422a-978d-89a663e101fe",
+      "result_id": "a2ff475e-bfd7-481d-a377-5e770070753d"
+    },
+    {
+      "claim_id": "c9bd57e0-3e79-4f22-b367-a64bd6913743",
+      "result_id": "a2ff475e-bfd7-481d-a377-5e770070753d"
+    },
+    {
+      "claim_id": "4023183b-8e9c-4e08-aeb3-92fdaf7ec9e9",
+      "result_id": "a2ff475e-bfd7-481d-a377-5e770070753d"
+    },
+    {
+      "claim_id": "63449820-ca11-48a0-a280-eb474dc69e39",
+      "result_id": "a2ff475e-bfd7-481d-a377-5e770070753d"
+    },
+    {
+      "claim_id": "aeea7cd8-f7f0-4614-869c-879abfde4ece",
+      "result_id": "a2ff475e-bfd7-481d-a377-5e770070753d"
+    },
+    {
+      "claim_id": "4fcf56d4-6268-4dfc-ab77-5c408373d20d",
+      "result_id": "a2ff475e-bfd7-481d-a377-5e770070753d"
+    },
+    {
+      "claim_id": "a22d26bb-d8cc-4a65-9d02-d464d9be80fb",
+      "result_id": "32e35dec-639a-487c-989d-e764c7e7470f"
+    },
+    {
+      "claim_id": "3b943c05-aeb1-487e-a78d-3238bc8a27e0",
+      "result_id": "32e35dec-639a-487c-989d-e764c7e7470f"
+    },
+    {
+      "claim_id": "5715f232-d95e-44f2-9614-1978953a8de0",
+      "result_id": "32e35dec-639a-487c-989d-e764c7e7470f"
+    },
+    {
+      "claim_id": "ae23d8ca-e41c-46f4-ad4c-4c18b59ea331",
+      "result_id": "32e35dec-639a-487c-989d-e764c7e7470f"
+    },
+    {
+      "claim_id": "5ba3244f-05a2-40f9-810f-c6c7cf98ca00",
+      "result_id": "32e35dec-639a-487c-989d-e764c7e7470f"
+    },
+    {
+      "claim_id": "b6d30e64-09ad-4e37-bb9b-96b5346df2cb",
+      "result_id": "7238de02-5a3c-4f7a-bdba-e3b5f4625767"
+    },
+    {
+      "claim_id": "ad86b7c6-1b43-4449-85a3-cfc217a5de5e",
+      "result_id": "7238de02-5a3c-4f7a-bdba-e3b5f4625767"
+    },
+    {
+      "claim_id": "d91508b0-9070-41f5-b93e-444841863376",
+      "result_id": "7238de02-5a3c-4f7a-bdba-e3b5f4625767"
+    },
+    {
+      "claim_id": "97e41e3b-1086-47fc-a8ab-1fea956070b5",
+      "result_id": "7238de02-5a3c-4f7a-bdba-e3b5f4625767"
+    },
+    {
+      "claim_id": "26b5ea18-9ced-4338-a455-1b5aee501131",
+      "result_id": "7238de02-5a3c-4f7a-bdba-e3b5f4625767"
+    },
+    {
+      "claim_id": "2ec43cff-f528-4afe-9c29-3decc42cadf5",
+      "result_id": "7238de02-5a3c-4f7a-bdba-e3b5f4625767"
+    },
+    {
+      "claim_id": "31e350ca-3de4-4929-aaaf-42a6ce68fb65",
+      "result_id": "b7aace83-47be-4a70-85b0-22dd7dc86fd4"
+    },
+    {
+      "claim_id": "47bb6e3b-54f8-4aa6-b1ce-31b26ad3a611",
+      "result_id": "b7aace83-47be-4a70-85b0-22dd7dc86fd4"
+    },
+    {
+      "claim_id": "2a4d55e9-e45d-4df0-9e76-6157ac69ca5a",
+      "result_id": "b7aace83-47be-4a70-85b0-22dd7dc86fd4"
+    },
+    {
+      "claim_id": "78cc9bb8-f92e-46c1-9a03-6b68aa99cbbb",
+      "result_id": "b7aace83-47be-4a70-85b0-22dd7dc86fd4"
+    },
+    {
+      "claim_id": "46b0b7c7-0e74-4e0e-b5a4-420a57dd6089",
+      "result_id": "b7aace83-47be-4a70-85b0-22dd7dc86fd4"
+    },
+    {
+      "claim_id": "6357d4b4-4db2-4635-968a-513f56f8fadc",
+      "result_id": "b7aace83-47be-4a70-85b0-22dd7dc86fd4"
+    },
+    {
+      "claim_id": "fefaf0f1-85bd-4212-ae9f-8ee325e1bb25",
+      "result_id": "f0bb1ac9-cd2d-4e04-9487-318ee35de345"
+    },
+    {
+      "claim_id": "68fda6da-6f14-487f-a7b7-e38ba3b3d8dc",
+      "result_id": "f0bb1ac9-cd2d-4e04-9487-318ee35de345"
+    },
+    {
+      "claim_id": "6e4eebfa-f358-4686-866a-add4a3a23a64",
+      "result_id": "f0bb1ac9-cd2d-4e04-9487-318ee35de345"
+    },
+    {
+      "claim_id": "a31ae6fc-7611-4313-9c09-e2f206e9d550",
+      "result_id": "f0bb1ac9-cd2d-4e04-9487-318ee35de345"
+    },
+    {
+      "claim_id": "c13b6f0d-6b1c-4e5b-9804-6d5239674fe6",
+      "result_id": "f0bb1ac9-cd2d-4e04-9487-318ee35de345"
+    },
+    {
+      "claim_id": "95acba12-9b71-4efa-9a1d-57bed5a23fdb",
+      "result_id": "ac9cca6f-e5c0-41eb-8e75-64173647840f"
+    },
+    {
+      "claim_id": "946fec6b-8231-4213-a0a8-8c2d8d4fb632",
+      "result_id": "ac9cca6f-e5c0-41eb-8e75-64173647840f"
+    },
+    {
+      "claim_id": "ff88b094-cee8-4558-8ee6-213869c17083",
+      "result_id": "9569f476-4f6c-4077-8948-25c84d3bf690"
+    },
+    {
+      "claim_id": "43bdb915-93b3-4769-9967-ddf2e6cf0f12",
+      "result_id": "9569f476-4f6c-4077-8948-25c84d3bf690"
+    },
+    {
+      "claim_id": "ccd0b936-8d3e-447c-931c-61bd9edcee86",
+      "result_id": "9569f476-4f6c-4077-8948-25c84d3bf690"
+    },
+    {
+      "claim_id": "aa5df3c8-3713-4d45-9d80-3355505cd6af",
+      "result_id": "9569f476-4f6c-4077-8948-25c84d3bf690"
+    },
+    {
+      "claim_id": "9954199b-5205-4a45-af7d-2d71f7a93393",
+      "result_id": "9569f476-4f6c-4077-8948-25c84d3bf690"
+    },
+    {
+      "claim_id": "c89b5c70-6ca2-45f3-b1a2-81a2b60cdd65",
+      "result_id": "9569f476-4f6c-4077-8948-25c84d3bf690"
+    },
+    {
+      "claim_id": "8eb3d20b-8c83-473a-95b1-2707d3e9523b",
+      "result_id": "9569f476-4f6c-4077-8948-25c84d3bf690"
+    },
+    {
+      "claim_id": "8497dd6e-9a1c-4407-bf76-9183733cc63e",
+      "result_id": "9569f476-4f6c-4077-8948-25c84d3bf690"
+    },
+    {
+      "claim_id": "e5714bce-8393-4b05-ac1d-26f0cacc5571",
+      "result_id": "9569f476-4f6c-4077-8948-25c84d3bf690"
+    },
+    {
+      "claim_id": "6c73dbc8-a75f-4c32-9bd4-fcac201c0071",
+      "result_id": "4624a954-a73d-41d9-a019-c36e40676427"
+    },
+    {
+      "claim_id": "6899f473-256e-410a-b3cf-1f7e46cc2bdb",
+      "result_id": "4624a954-a73d-41d9-a019-c36e40676427"
+    },
+    {
+      "claim_id": "3692525e-5af5-4b39-98f7-5cd418a34f66",
+      "result_id": "4624a954-a73d-41d9-a019-c36e40676427"
+    },
+    {
+      "claim_id": "4ebf4725-b245-4643-9ab7-a62ca58b810b",
+      "result_id": "2b7b554e-c9c0-4df6-9004-c3f0f1722f7a"
+    },
+    {
+      "claim_id": "48e45134-e933-4a3b-91f2-3943c6b15483",
+      "result_id": "2b7b554e-c9c0-4df6-9004-c3f0f1722f7a"
+    },
+    {
+      "claim_id": "41893d13-704d-4ab5-b90a-542fdae1cc0c",
+      "result_id": "2b7b554e-c9c0-4df6-9004-c3f0f1722f7a"
+    },
+    {
+      "claim_id": "0cd38740-6acf-4b14-9eb0-1f4ac7899e37",
+      "result_id": "2b7b554e-c9c0-4df6-9004-c3f0f1722f7a"
+    },
+    {
+      "claim_id": "f73b8268-fafd-42bf-809e-3c5f023069c4",
+      "result_id": "2b7b554e-c9c0-4df6-9004-c3f0f1722f7a"
+    },
+    {
+      "claim_id": "e8f541e4-e252-423a-a429-112b35190155",
+      "result_id": "2b7b554e-c9c0-4df6-9004-c3f0f1722f7a"
+    },
+    {
+      "claim_id": "e2351395-4820-4d6f-a90b-73db9a214a53",
+      "result_id": "2b7b554e-c9c0-4df6-9004-c3f0f1722f7a"
+    },
+    {
+      "claim_id": "c23d26c5-bb41-4344-8256-2dbe84f9e13e",
+      "result_id": "ee7f7fbf-4808-40ec-938e-3696c98a8d45"
+    },
+    {
+      "claim_id": "9697b521-5d6b-4430-9104-5fd657aeda4a",
+      "result_id": "ee7f7fbf-4808-40ec-938e-3696c98a8d45"
+    },
+    {
+      "claim_id": "f46b03f2-a8dc-4450-bd93-38d045ece258",
+      "result_id": "ee7f7fbf-4808-40ec-938e-3696c98a8d45"
+    },
+    {
+      "claim_id": "0fed636f-1139-4685-b9b1-a6c5703fab30",
+      "result_id": "ee7f7fbf-4808-40ec-938e-3696c98a8d45"
+    },
+    {
+      "claim_id": "e6848164-7d13-4beb-8133-59172892dc51",
+      "result_id": "ee7f7fbf-4808-40ec-938e-3696c98a8d45"
+    },
+    {
+      "claim_id": "bcc6f86f-01f0-4ec9-aaba-ca643981d4bf",
+      "result_id": "57724dde-b83f-47cc-9033-39beded61692"
+    },
+    {
+      "claim_id": "1f35945e-1058-46f6-9442-4c8e2e88c39b",
+      "result_id": "57724dde-b83f-47cc-9033-39beded61692"
+    },
+    {
+      "claim_id": "15598eb7-6fd2-4594-b07a-b84495c81ce6",
+      "result_id": "57724dde-b83f-47cc-9033-39beded61692"
+    },
+    {
+      "claim_id": "52bebc6d-db0e-46b9-839a-1901d15615ee",
+      "result_id": "57724dde-b83f-47cc-9033-39beded61692"
+    },
+    {
+      "claim_id": "5c719d13-ff72-4ee1-9dd9-65f34a1f2548",
+      "result_id": "57724dde-b83f-47cc-9033-39beded61692"
+    }
+  ],
+  "comparisons": []
+}

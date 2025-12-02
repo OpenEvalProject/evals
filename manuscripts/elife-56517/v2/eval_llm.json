@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C64"
+    ],
+    "result": "The single-input module (SIM) is a prevalent network motif in E. coli where a single transcription factor (TF) autoregulates itself and multiple target genes to coordinate their expression temporally and quantitatively. This coordination is thought to occur through differential TF-binding affinities among target genes, with examples spanning metabolism (ArgR), stress response (LexA), and other biological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the SIM motif structure and function with appropriate citations (Alon 2006, Santos-Zavaleta et al. 2019). Claims C54-C58 provide well-documented biological examples (ArgR and LexA systems) that illustrate temporal ordering through differential binding affinities. Claim C64 provides quantitative support showing ~60% of E. coli TFs are autoregulated. These claims collectively establish the biological context and are well-supported by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Increasing the number of competing TF-binding sites (decoys) monotonically increases expression of both the autorepressed TF gene and its target genes, despite increasing total TF numbers, because the number of free (unbound) TFs decreases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 are directly supported by both simulation and experimental data shown in Figure 2A-B. The mechanistic explanation (decreasing free TF despite increasing total TF) is validated by simulation data in Figure 2B and is consistent with prior work (Nevozhay et al. 2009). The counterintuitive finding that more repressor correlates with more expression is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C16",
+      "C44",
+      "C45"
+    ],
+    "result": "Genes with identical promoters and regulatory sequences in the same cell experience asymmetric regulation in the SIM motif, with the TF gene being more strongly repressed than target genes. This asymmetry is an inherent property of the network architecture rather than differences in biological processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C16 are supported by experimental and simulation data in Figures 2A and 3D showing clear asymmetry between TF and target gene expression despite identical regulatory sequences. Claims C44-C45 synthesize this finding as a fundamental property of the motif. The agreement between simulations and experiments across multiple conditions provides strong support for this core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C60",
+      "C61"
+    ],
+    "result": "A simple deterministic model based on mass action equilibrium kinetics predicts symmetric regulation for identical promoters and works well for constitutive or induced TF systems, but fails to predict the asymmetric regulation observed in autoregulatory circuits, with both TF and target genes deviating from deterministic predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 establish that the deterministic model works well for non-autoregulatory systems (Figure 3A, Phillips et al. 2019). Claims C14-C15 and C60-C61 demonstrate the model's failure for autoregulatory circuits (Figure 3C). The comparison is rigorous and the limitations are clearly documented with appropriate citations to prior successful applications of the deterministic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C49"
+    ],
+    "result": "The magnitude of regulatory asymmetry is sufficient to compensate for differences in binding site affinity: when the target gene has the stronger Oid operator and the TF gene has O1, regulation becomes roughly symmetric despite the affinity difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C49 are directly supported by experimental and simulation data in Figure 3D (blue data points and lines) showing that O1 TF with Oid target produces symmetric regulation. This demonstrates the quantitative significance of the asymmetry effect and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C46"
+    ],
+    "result": "The mechanism of asymmetry arises from differential TF concentrations in different regulatory states: when only the target gene is bound (state 3), TF production continues, leading to higher TF concentration than when only the TF gene is bound (state 2). This causes the system to spend less time in state 2, resulting in stronger regulation of the TF gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 provide a logical mechanistic explanation validated by simulation data in Figure 4B showing differential TF concentrations and residence times in states 2 and 3. Claim C21 provides theoretical support through CME analysis (Appendix 9, Figure 4C). The mechanism is internally consistent and well-supported by both theoretical derivation and simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C62",
+      "C63"
+    ],
+    "result": "A modified deterministic model that explicitly tracks TF concentration in each regulatory state can qualitatively predict asymmetry, but does not achieve quantitative agreement with stochastic simulations because it does not account for variability in TF numbers within each state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C62-C63 describe the development and limitations of a modified ODE model (detailed in Appendix 10). The claim that the simple ODE fails (C23) is supported by Figure 3C. The modified model's partial success and quantitative limitations are acknowledged and explained through comparison with stochastic results. This represents appropriate model development and honest assessment of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C50"
+    ],
+    "result": "TF-binding affinity and TF degradation rate are the primary drivers of regulatory asymmetry in the SIM motif. Stronger binding sites show more prominent asymmetry, while target gene production and decay rates have no effect on asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by comparison across binding sites in Figures 3B-C. Claims C27-C28 are supported by systematic parameter variation in Appendix 7\u2014figure 1B. Claim C50 synthesizes these findings and is supported by data in Figures 4E-F and Figure 5. The parameter sensitivity analysis appears thorough and the conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Asymmetry shows a non-monotonic dependence on TF degradation rate, with maximum asymmetry occurring at intermediate degradation rates (TF lifetimes of 10-100 min) that coincide with typical E. coli doubling times. At extreme degradation rates (very fast or very slow), asymmetry is minimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by simulation data in Figure 4E and citations about E. coli physiology (Marr 1991, Neidhardt and Curtiss 1996). Claims C31-C33 provide mechanistic explanations for the non-monotonic behavior based on state occupancy dynamics. The connection to physiological relevance strengthens the biological significance of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Experimental manipulation of TF degradation rate using synthetic ssrA degradation tags confirms model predictions: the slowest tag (DAS) shows strong asymmetry, intermediate tags show reduced asymmetry, and the fastest tag (LAA) shows no asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by experimental data in Figure 4F with appropriate citations for tag effectiveness (McGinness et al. 2006, 2007). The qualitative agreement between experiments and model predictions is clearly demonstrated. While exact quantitative degradation rates in vivo are acknowledged as uncertain, the ordering and trends match predictions well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Growth rate modulates regulatory asymmetry as predicted by the model: faster-growing cells show more asymmetry while slower-growing cells show little to no asymmetry. This effect depends on binding site strength, with O2 showing symmetry at all growth rates, O1 showing growth-rate-dependent asymmetry, and Oid showing asymmetry at all growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by experimental data across growth conditions in Figure 5A. Claims C40-C41 are supported by data in Figures 5B-C. The authors acknowledge a methodological limitation (inability to measure constitutive expression for O2 and Oid TF genes) and address it through normalization to simulations. The growth rate dependence is consistent with the degradation rate predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Regulatory asymmetry is a population-wide phenomenon, not due to outliers or bimodality. At high growth rates and competition levels, almost every single cell expresses the target gene at higher levels than the TF gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are directly supported by single-cell histogram data in Figure 5D showing that asymmetry is distributed across the entire cell population. The bottom panel of Figure 5D clearly shows population-wide shifts in asymmetry with increasing competition. This addresses an important alternative explanation and strengthens the main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The regulatory asymmetry has important implications for gene regulation: it challenges prediction of regulation from promoter sequence alone, represents a distinct mechanism from enzymatic regulation, and suggests that genes can experience systematically different regulatory environments even without compartmentalization or localization mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 draw reasonable inferences about functional implications supported by the demonstrated asymmetry. Claims C51-C53 discuss broader implications for the field with appropriate citation (Schikora-Tamarit et al. 2018) to distinguish from other regulatory mechanisms. These interpretive claims are well-grounded in the experimental findings, though they represent implications rather than direct experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C65",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The experimental system uses E. coli with LacI-mCherry as an autoregulated TF and YFP as a target gene with identical promoters, with decoys on plasmids and various tools to control binding affinity, degradation rate, and growth rate. The system is well-characterized with at least 500 cells analyzed per sample and appropriate controls for fluorescence crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C59-C76 describe the experimental system, methodology, and validation. The system design is appropriate for testing the hypotheses, with good agreement between simulations and experiments. Claim C65 establishes LacI as a well-characterized system with multiple citations. Sample sizes (C76) are adequate. The methodological details appear sound and well-documented.",
+    "result_type": "MINOR"
+  }
+]

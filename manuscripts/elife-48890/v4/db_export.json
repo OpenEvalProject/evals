@@ -1,0 +1,1729 @@
+{
+  "submission": {
+    "id": "f05d230b-6427-45d0-a01d-a4f3affdd62e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:15:13.682578Z",
+    "updated_at": "2025-12-02T14:15:13.682578Z"
+  },
+  "content": [
+    {
+      "id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "submission_id": "f05d230b-6427-45d0-a01d-a4f3affdd62e",
+      "content_type": "manuscript",
+      "content_text": "# Development, calibration, and validation of a novel human ventricular myocyte model in health, disease, and drug block\n\n## Authors\n\n- Jakub Tomek<sup>1</sup> ([ORCID: 0000-0002-0157-4386](https://orcid.org/0000-0002-0157-4386)) \u2020\n- Alfonso Bueno-Orovio<sup>1</sup>\n- Elisa Passini<sup>1</sup>\n- Xin Zhou<sup>1</sup>\n- Ana Minchole<sup>1</sup>\n- Oliver Britton<sup>1</sup>\n- Chiara Bartolucci<sup>2</sup>\n- Stefano Severi<sup>2</sup> ([ORCID: 0000-0003-4306-8294](https://orcid.org/0000-0003-4306-8294))\n- Alvin Shrier<sup>3</sup>\n- Laszlo Virag<sup>4</sup>\n- Andras Varro<sup>4</sup>\n- Blanca Rodriguez<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Computer Science, British Heart Foundation Centre of Research Excellence University of Oxford Oxford United Kingdom\n2. Department of Electrical, Electronic, and Information Engineering \"Guglielmo Marconi\" University of Bologna Bologna Italy\n3. Department of Physiology McGill University Montreal Canada\n4. Department of Pharmacology and Pharmacotherapy, Faculty of Medicine University of Szeged Szeged Hungary\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman-based modelling and simulations are becoming ubiquitous in biomedical science due to their ability to augment experimental and clinical investigations. Cardiac electrophysiology is one of the most advanced areas, with cardiac modelling and simulation being considered for virtual testing of pharmacological therapies and medical devices. Current models present inconsistencies with experimental data, which limit further progress. In this study, we present the design, development, calibration and independent validation of a human-based ventricular model (ToR-ORd) for simulations of electrophysiology and excitation-contraction coupling, from ionic to whole-organ dynamics, including the electrocardiogram. Validation based on substantial multiscale simulations supports the credibility of the ToR-ORd model under healthy and key disease conditions, as well as drug blockade. In addition, the process uncovers new theoretical insights into the biophysical properties of the L-type calcium current, which are critical for sodium and calcium dynamics. These insights enable the reformulation of L-type calcium current, as well as replacement of the hERG current model.\n\n## Introduction\n\nHuman-based computer modelling and simulation are a fundamental asset of biomedical research. They augment experimental and clinical research through enabling detailed mechanistic and systematic investigations. Owing to a large body of research across biomedicine, their credibility has expanded beyond academia, with vigorous activity also in regulatory and industrial settings. Thus, human in silico clinical trials are now becoming a central paradigm, for example, in the development of medical therapies (Pappalardo et al., 2018). They exploit mature human-based modelling and simulation technology to perform virtual testing of pharmacological therapies or devices.\n\nHuman cardiac electrophysiology is one of the most advanced areas in physiological modelling and simulation. Current human models of cardiac electrophysiology include detailed information on the ionic processes underlying the action potential such as the sodium, potassium and calcium ionic currents, exchangers such as the Na/Ca exchanger and pumps such as the Na/K pump. They also include representation of the excitation-contraction coupling system in the sarcoplasmic reticulum, an important modulator of the calcium transient, through the calcium-induced calcium-release mechanisms and the SERCA pump. Several human models have been proposed for ventricular electrophysiology, and amongst them the ORd model (O'Hara et al., 2011). Its key strengths are the representation of CaMKII signalling, capability to manifest arrhythmia precursors such as alternans and early afterdepolarisation, and good response to simulated drug block and disease remodelling (Dutta et al., 2016; Dutta et al., 2017a; Passini et al., 2016; Tomek et al., 2017). Consequently, ORd was selected by a panel of experts as the model best suited for regulatory purposes (Dutta et al., 2017a).\n\nMost of the ORd model development has focused on repolarisation properties such as its response to drug block, repolarisation abnormalities and its rate dependence. However, a more holistic comparison of ORd-based simulations with human ventricular experimental data reveals important inconsistencies. Firstly, the plateau of the action potential (AP) is significantly higher in the ORd model than in experimental data used for ORd model construction (O'Hara et al., 2011; Britton et al., 2017) and in data from additional studies using human cardiomyocytes (Coppini et al., 2013; Jost et al., 2013). Secondly, the dynamics of accommodation of the AP duration (APD) to heart rate acceleration, which are known to be modulated by sodium dynamics, show only limited agreement with a comparable experimental dataset (Franz et al., 1988; O'Hara et al., 2011). Thirdly, we identify that simulations of the sodium current block has an inotropic effect in the ORd model, increasing the amplitude of the calcium transient, in disagreement with its established negatively inotropic effect in experimental/clinical data (encainide, flecainide, and TTX) (Gottlieb et al., 1990; Tucker et al., 1982; Legrand et al., 1983; Bhattacharyya and Vassalle, 1982). All those properties, namely AP plateau potential, APD adaptation and response to sodium current block, have strong dependencies on sodium and calcium dynamics. We therefore hypothesise that ionic balances during repolarisation require further research. We specifically focus on an in-depth re-evaluation of the L-type calcium current (ICaL) formulation, given its fundamental role in determining the AP, the calcium transient and sodium homeostasis through the Na/Ca exchanger. The second main focus is the re-assessment of the rapid delayed rectifier current (IKr), the dominant repolarisation current in human ventricle, under conditions that reflect experimental data-driven plateau potentials.\n\nUsing a development strategy based on strictly separated model calibration and validation, we sought to design, develop, calibrate and validate a novel model of human ventricular electrophysiology and excitation contraction coupling, the ToR-ORd model (for Tomek, Rodriguez \u2013 following ORd). Our aim for simulations using the ToR-ORd model is to be able to reproduce all key depolarisation, repolarisation and calcium dynamics properties in healthy ventricular cardiomyocytes, under drug block, and in key diseased conditions such as hyperkalemia (central to acute myocardial ischemia), and hypertrophic cardiomyopathy.\n\n## Materials and methods\n\n### Strategy for construction, calibration and validation of the ToR-ORd model\n\nTable 1 lists the properties (left column) and key references (right column) of experimental and clinical datasets considered for the calibration (top) and independent validation (bottom) of the ToR-ORd model. This represents a comprehensive list of properties, known to characterize human ventricular electrophysiology under multiple stimulation rates, and also drug action and disease. The recordings in were obtained in human ventricular preparations primarily using measurements with microelectrode recordings, unipolar electrograms, and monophasic APs, therefore avoiding photon scattering effects or potential dye artefacts present in optical mapping experiments. In addition, the ToR-ORd model was calibrated to manifest depolarisation of resting membrane potential in response to an IK1 block, based on evidence in a range of studies summarised in Dhamoon and Jalife (2005). The calibration criteria are chosen to be fundamental properties of ionic currents, action potential and single-cell pro-arrhythmic phenomena (described in more detail in Appendix 1-1). The validation criteria include response to rate changes, drug action and disease, to explore the predictive power of the model under clinically-relevant conditions.\n\n**Table 1.**\n Criteria and human-based studies used in ToR-ORd calibration and validation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Calibration</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Action potential morphology</td>\n      <td>(Britton et al., 2017; Coppini et al., 2013; Jost et al., 2013)</td>\n    </tr>\n    <tr>\n      <td>Calcium transient time to peak, duration, and amplitude</td>\n      <td>(Coppini et al., 2013)</td>\n    </tr>\n    <tr>\n      <td>I-V relationship and steady-state inactivation of L-type calcium current</td>\n      <td>(Magyar et al., 2000)</td>\n    </tr>\n    <tr>\n      <td>Sodium blockade is negatively inotropic</td>\n      <td>(Gottlieb et al., 1990; Tucker et al., 1982; Legrand et al., 1983; Bhattacharyya and Vassalle, 1982).</td>\n    </tr>\n    <tr>\n      <td>L-type calcium current blockade shortens the action potential</td>\n      <td>(O'Hara et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>Early depolarisation formation under hERG block</td>\n      <td>(Guo et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>Alternans formation at rapid pacing</td>\n      <td>(Koller et al., 2005)</td>\n    </tr>\n    <tr>\n      <td>Conduction velocity of ca. 65 m/s</td>\n      <td>(Taggart et al., 2000)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Validation</td>\n    </tr>\n    <tr>\n      <td>Action potential accommodation</td>\n      <td>(Franz et al., 1988)</td>\n    </tr>\n    <tr>\n      <td>S1-S2 restitution</td>\n      <td>(O'Hara et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>Drug blocks and action potential duration</td>\n      <td>(Dutta et al., 2017a; O'Hara et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>Hyperkalemia promotes postrepolarisation refractoriness</td>\n      <td>(Coronel et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>Hypertrophic cardiomyopathy phenotype</td>\n      <td>(Coppini et al., 2013)</td>\n    </tr>\n    <tr>\n      <td>Drug safety prediction using populations of models</td>\n      <td>(Passini et al., 2017)</td>\n    </tr>\n    <tr>\n      <td>Physiological QRS and QT intervals in ECG</td>\n      <td>(Engblom et al., 2005; van Oosterom et al., 2000; Bousseljot et al., 1995; Goldberger et al., 2000)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe initially performed the evaluation of the ORd model (O'Hara et al., 2011) by conducting simulations for each of the calibration criteria in Table 1. Further details are described throughout the\u00a0Materials and methods section and Appendix 1-15.1. Simulations with the existing versions of the ORd model failed to fulfil key criteria such as AP morphology, calcium transient duration, several properties of the L-type calcium current, negative inotropic effect of sodium blockers, or the depolarising effect of IK1 block. The results are later demonstrated in Figures 2 and 3, and Methods: Calibration of IK1 block and resting membrane potential. Secondly, we attempted parameter optimisation using a multiobjective genetic algorithm (Torres et al., 2012). However, simulations with the ORd-based models were unable to fulfil key criteria such as AP and Ca morphology, and the effect of sodium and calcium block on calcium transient amplitude and APD, respectively.\n\nWe then proceeded to reevaluate the ionic current formulations based on experimental data and biophysical knowledge. Key currents included ICaL and specifically its driving force and activation, as well as the INa, IKr, IK1 and chloride currents. The multiobjective genetic algorithm optimisation was repeated several times, throughout the introduction of structural changes to the model. Once simulations with an optimised model fulfilled all calibration criteria, validation was conducted through evaluation against additional experimental recordings for drug block, disease, tissue and whole-ventricular simulations.\n\nDetails concerning the simulations are given in Appendix 1-15.1, namely the description of simulation protocols and ionic concentrations used (Appendix 1-15.1.1), representation of heart disease (Appendix 1-15.1.2), 1D fibre simulations (Appendix 1-15.1.3), population-of-models and drug safety assessment (Appendix 1-15.1.4), transmurality and whole-heart simulations with ECG extraction (Appendix 1-15.1.5), and a technical note on the update to the Matlab ODE solver which facilitates efficient simulation of the multiobjective GA (Appendix 1-15.1.6). Unless specified otherwise, the baseline ORd model (O'Hara et al., 2011) was used for comparison with the ToR-ORd model.\n\n### ToR-ORd model structure\n\nThe ToR-ORd model follows the general ORd structure (Figure 1A). The cardiomyocyte is subdivided into several compartments: main cytosolic space, junctional subspace, and the sarcoplasmic reticulum (SR, further subdivided into junctional and network SR). Within these compartments are placed ionic currents and fluxes described by Hodgkin-Huxley equations or Markov models. The main ionic current formulations altered compared to ORd are highlighted in orange in Figure 1A.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48890/elife-48890-fig1-v4.jpg)\n\n**Figure 1.:** (A) A schematic of the novel human ventricular myocyte model for electrophysiology and calcium handling. Orange indicates components, substituted, or added, compared to the original ORd model. \u2018SS\u2019 indicates junctional subspace compartment, where calcium influx via L-type calcium current occurs and where calcium is released from the sarcoplasmic reticulum. \u2018JSR\u2019 and \u2018NSR\u2019 are junctional and network sarcoplasmic reticulum compartments, respectively. \u2018Main cytosolic pool\u2019 is the remaining intracellular space. Transmembrane currents are indicated with an \u2018I\u2019 in their name, with fluxes indicated as \u2018J\u2019. Components with a green underscore are modulated by CaMKII signalling. (B) The structure of the Lu-Vandenberg (Lu et al., 2001) Markov model used for the rapidly activating delayed rectifier repolarisation current (IKr). The transition rates are given in Appendix 1-15.3.5.\n\n### In-depth revision of the L-type calcium current\n\nThe ICaL current was deeply revisited, particularly with respect to its driving force, based on biophysical principles. This reformulation is of relevance to almost all models of cardiac electrophysiology.\n\nThe ICaL formulation in the ORd model is based on Hodgkin-Huxley equations, with the total current being a product of three components: 1) Open channel permeability, 2) A set of gating variables determining the fraction of channels being open, 3) The electrochemical driving force which acts on ions to move through the open channel based on the membrane potential and ionic concentrations on both sides of the membrane (more details in Appendix 1-5). In most Hodgkin-Huxley models of cardia currents, the driving force is computed as (V-Eion), that\u00a0is, the membrane potential minus equilibrium potential, either computed from the Nernst equation, or measured experimentally. However, starting with the Luo-Rudy model (LRd) of 1994 (Luo and Rudy, 1994), the driving force of ions via ICaL in cardiac models is modelled based on the Goldman-Hodgkin-Katz (GHK) flux equation. The driving force based on the GHK equation is:\n\n$$\n\\phi_{CaL}=z^{2}\u22c5\u00a0\\frac{V\u22c5F^{2}}{R\u22c5T}\u22c5\u00a0\\frac{[S]_{i}\u22c5e^{\\frac{z\u22c5V\u22c5F}{R\u22c5T}}\u2212[S]_{o}}{e^{\\frac{z\u22c5V\u22c5F}{R\u22c5T}}\u22121},\n$$\n\nwhere z is the charge of the given ion, V is the membrane potential, F,R,T are conventional thermodynamic constants, and [S]i, [S]o are intracellular and extracellular activities of the given ionic specie. $S=\\gamma\u2219m$, where $\\gamma$ is the ionic activity coefficient and $m$ the concentration (in either the intracellular or extracellular space, yielding $S_{i}$ or $S_{o}$).\n\n#### Determining ionic activity coefficients\n\nIn order to compute the ionic driving force via the GHK equation, it is necessary to know the ionic activity coefficients of the intracellular (\u03b3i) and extracellular (\u03b3o) space. The Luo-Rudy model and other Rudy-family models use \u03b3o\u00a0=\u00a00.341 for extracellular space and \u03b3i\u00a0=\u00a01 for the intracellular space. Models based on the Shannon model (Shannon et al., 2004) use 0.341 for both intracellular and extracellular space, but we were unable to find the motivation for this change.\n\nThe Debye-H\u00fcckel theory is commonly used to compute the activity coefficients. We used the Davies equation, which extends the basic Debye-H\u00fcckel equation to be accurate for ionic concentrations found in living cells (Mortimer, 2008):\n\n$$\nlog\u2061\\gamma_{i}=-A\u2219z_{i}^{2}\u2219\\frac{\\sqrt{I}}{1+\\sqrt{I}}-0.3\u2219I,\n$$\n\nwhere A is a constant (~0.5 for water at 25\u00b0C,\u00a0~0.5238 at 37\u00b0C), zi is the charge of the respective ion, and I is the ionic strength of the solution. The ionic strength is defined as:\n\n$$\nI=0.5\u2219\\sumim_{i}\u2219z_{i}^{2},\n$$\n\nwhere mi is the concentration of the i-th ionic specie present. For concentrations in a study measuring properties of ICaL (Magyar et al., 2000), I is ca. 0.15-0.17. This warrants the use of Davies equation, which was shown to be accurate for I up to 0.5, unlike the basic Debye-H\u00fcckel equation, which is accurate for I up to 0.01 only (Mortimer, 2008).\n\nWe implemented the computation of ionic coefficients based on the Davies equation dynamically, so that the activity coefficients are estimated at every simulation step. This allows accurate representation of the driving force when ionic concentrations are disturbed, such as at varying pacing rates, or during homeostatic imbalance. The dynamic computation is also used to estimate ionic activity coefficients for potassium and sodium flowing through the calcium channels, taking into account their different charge.\n\nThroughout our simulations, both intracellular and extracellular activity coefficients generally lie between 0.61 and 0.66. Importantly, this estimate shows that the intracellular and extracellular activity coefficients are relatively similar (corresponding to the broadly similar total concentration of charged molecules), in contrast with the original values. Particularly, the origin of the intracellular activity coefficient \u03b3i\u00a0=\u00a01 in the Luo-Rudy model is unclear, as by the Davies (or by any Debye-H\u00fcckel variant) equation, I would have to be zero, which is possible only when there are no ions present.\n\n#### Activation curve extraction\n\nAn additional improvement in the ICaL formulation is the estimation of its activation curve. In brief, we implement a consistent use of the GHK equation for the extraction of the activation curve and for the ICaL formulation in the ToR-ORd model. The activation curve is obtained via dividing the experimentally\u00a0measured I-V relationship of the current by the expected driving force for each pulse potential (see Appendix 1-3 for a graphical overview of the process). However, we identified a theoretical inconsistency in previous cardiac models across species (e.g. Luo and Rudy, 1994; Hund et al., 2008; O'Hara et al., 2011; Shannon et al., 2004; Grandi et al., 2010; Carro et al., 2011): whereas the Nernstian driving force of (V-ECa) is used to derive the activation curve, the GHK driving force is then used to calculate ICaL. Indeed, experimental studies reporting the activation curve of ICaL generally use the Nernstian driving force of (V-ECa) with ECa being the experimentally\u00a0measured reversal potential of approximately 60 mV. This is explicitly stated in Linz and Meyer (2000), and also the activation curve by Magyar et al. (2000) used in the ORd model is consistent with dividing the IV relationship with (V-60).\n\nIn this study, we propose that, for consistency, the same equation needs to be applied both to obtain the activation curve from the I-V curve and to represent the driving force in the current formulation. Thus, in the ToR-ORd model, the activation curve for ICaL was obtained by dividing the I-V curve from Magyar et al. (2000) by the GHK-based driving force, computed using ionic activity coefficients based on the Davies equation (as explained in the previous Section) and intracellular and extracellular ionic concentrations as in Magyar et al. (2000). The following capped Gompertz function (a flexible sigmoid) was found to be the best fit to the resulting steady-state activation curve:\n\n$$\nd_{\u221e}=1.0763\u2219e^{-1.007\u2219e^{-0.0829\u2219V}}forV\\leq31.49781otherwise,\n$$\n\nwhere V is the membrane potential.\n\n#### Other ICaL changes\n\n20% of ICaL was placed in the main cytosolic space, consistent with the literature (Scriven et al., 2010). This increases the plateau-supporting capability of ICaL, given that the myoplasmic ICaL is subject to a weaker calcium-dependent inactivation than ICaL in the junctional subspace. Other minor changes are given in Appendix 1-15.3.3.\n\n### IKr replacement\n\nThe calibration of the ToR-ORd model\u2019s AP morphology to experimental data resulted in problematic response to calcium blockade during an early phase of the model development when the original IKr formulation was used (further details in Appendix 1-12). ICaL block is known to shorten APD experimentally (O'Hara et al., 2011) but resulted in a major APD prolongation in simulations instead. This discrepancy could not be resolved through parameter optimisation. A mechanistic analysis revealed that this follows from the lack of ORd IKr activation, which is however not consistent with relevant experimental data (Lu et al., 2001). We therefore considered alternative IKr formulations and specifically the Lu-Vandenberg (Lu et al., 2001) Markov model (Figure 1B). The Lu-Vandenberg IKr model is based on extensive experimental data allowing the dissection of activation and recovery from inactivation and provided the best agreement with experimental data, specifically when considering the AP plateau potentials reported experimentally. In Appendix 1-12, we: (1) provide a detailed explanation of origins of AP prolongation following ICaL block in a model which manifests experimental data-like plateau potentials and which contains the ORd IKr formulation; (2) explain why this phenomenon occurs only in a model with experimental data-like plateau potentials, but not in the original high-plateau ORd model; (3) compare the ORd and Lu-Vandenberg IKr formulations with experimental data, demonstrating the good agreement with experimental data of the Lu-Vandenberg formulation but not the ORd.\n\nFollowing the inclusion of the Lu-Vandenberg IKr formulation, all models generated during model calibration exhibited APD shortening in response to ICaL block.\n\n### Changes in INa, I(Ca)Cl, IClb and IK1\n\nThe INa current formulation was replaced by an alternative human-based formulation (Grandi et al., 2010), given established limitations of the original model with regards to conduction velocity and excitability (O'Hara et al., 2011), comment on article from 05 Oct 2012). The Grandi INa model was updated to account for CaMKII phosphorylation (Appendix 1-15.3.1).\n\nAlso from the Grandi model, we added the calcium-sensitive chloride current I(Ca)Cl and background chloride current IClb formulation (Grandi et al., 2010). Neither model was changed compared to the original formulations, but the intracellular concentration of Cl- was slightly increased (Appendix 1-15.1.1). In accordance with recent observations, I(Ca)Cl was placed in the junctional subspace (Magyar et al., 2017). The motivation to add these currents was to facilitate the shaping of post-peak AP morphology (via I(Ca)Cl), with IClb playing a dual role stemming from its reversal potential of ca. \u221250 mV. It slightly reduces plateau potentials during the action potential, but during the diastole, it depolarises the cell slightly, improving the reaction to IK1 block as explained in the next subsection.\n\nThe IK1 model was replaced with the human-based formulation by Carro et al. (2011), as it was shown to be key for simulations of hyperkalemic conditions. The IK1 replacement was done before hyperkalemia simulation, not violating the classification of hyperkalemia criterion as a validation step. Extracellular potassium concentration in a healthy cell was reduced from 5.4 to 5 mM to fall within the physiological range (Zacchia et al., 2016).\n\n### Calibration of IK1 block and resting membrane potential\n\nWhen evaluating the baseline ORd model against the selected criteria, we observed that a reduction in IK1 results in hyperpolarisation of the cell (from \u221288 to \u221288.16 mV at 1 Hz pacing). However, it is established that IK1 reduction depolarises cells experimentally (Dhamoon and Jalife, 2005). Changes made during ToR-ORd calibration (predominantly the altered balance of currents during diastole and the inclusion of background chloride current) result in ToR-ORd manifesting depolarization in response to IK1 block, consistent with experimental data.\n\n### Multiobjective genetic algorithm\n\nWe applied a multiobjective genetic algorithm (MGA, @gamultiobj function in Matlab,\u00a0Deb, 2001) to automatically re-fit various model parameters. Based on preliminary experimentation, we used a two-dimensional fitness. We used MGA rather than an ordinary genetic algorithm or particle swarm optimisation, given that MGA optimises towards a Pareto front rather than a single optimum, implicitly maintaining population diversity. The Pareto front is the set of all creatures which are not dominated by any other creature in the population, that\u00a0is creatures for which there is no other creature better in all fitness dimensions. Therefore, a subpopulation of diverse solutions is maintained, and the optimiser consequently has less of a tendency to converge to a single local optimum compared to single-number fitness approaches. In addition, the crossover operator of GA is well suited for a task where multiple criteria are optimised, given that creatures in the population may efficiently share partial solutions to various subcriteria. The fitness used in this study is described in greater detail in Appendix 1-1.\n\n### Evaluation pipeline and code\n\nTo facilitate the model validation and future work, we also provide an automated \u2018single-click\u2019 evaluation pipeline. It runs automatic simulations to extract and visualise single-cell biomarkers including those related to AP morphology, effect of key channel blockers, early afterdepolarisations (EAD), and alternans measurement. The pipeline generates a single HTML report containing all the results; see Appendix 1-15.2 for a visualisation. The code for our model (Matlab and CellML), the validation pipeline, and the experimental data on human AP morphology are available at https://github.com/jtmff/torord\u00a0(Tomek, 2019; copy archived at https://github.com/elifesciences-publications/torord).\u00a0An informal blog giving further insight into the choices we made, as well as general thoughts on the development of ToR-ORd and computer models in general, is available at https://underlid.blogspot.com/.\n\nWe designed the Matlab code used to simulate our model so that the simulation core is structured into functions computing currents, making the high-level organisation of code clear, and facilitating inclusion of alternative current formulations. In addition, a CellML file encoding our model is also provided. This makes the model readily runnable in several simulators in addition to Matlab (e.g. Chaste [Pitt-Francis et al., 2009] and OpenCOR [Garny and Hunter, 2015]). Furthermore, the Myokit library (Clerx et al., 2016) enables conversion of the CellML file to other languages (such as C or Python).\n\n## Results\n\n### Calibration based on AP, calcium transient, and L-type calcium current properties\n\nThe AP morphology of the ToR-ORd is within or at the border of the interquartile range of the Szeged-ORd experimental data (Figure 2A). This is a major improvement compared to the original ORd morphology, which overestimates plateau potentials, particularly during early plateau (Figure 2A). The fact that the early plateau potential is around 20\u201323 mV is clearly apparent from experimental recordings and is further corroborated by additional studies in human tissue samples (Jost et al., 2013, Figure 6) and isolated human cardiomyocytes (Coppini et al., 2013). We note that compared to the Szeged-ORd dataset (Britton et al., 2017), our model manifests a slightly increased peak membrane potential in the single-cell form, similar to single-cell experimental data (Coppini et al., 2013). This is a design choice related to the fact that the Szeged-ORd dataset contains recordings of small tissue samples, which are expected to manifest a reduced peak potential compared to single-cell. When coupled in a fibre, ToR-ORd manifests conduction velocity of 65 cm/s, which is consistent with clinical data (Taggart et al., 2000).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48890/elife-48890-fig2-v4.jpg)\n\n**Figure 2.:** Action potential (A) and calcium transient (B) at 1 Hz obtained with the ToR-ORd model following calibration, compared to those obtained with the ORd model and experimental data from O'Hara et al. (2011) and Coppini et al. (2013), respectively. The purple and green zones in (B) stand for mean\u00a0\u00b1\u00a0standard deviation. The duration of calcium transient at 90% recovery was extracted from figures in Coppini et al. (2013), adding the time to peak and time from peak to 90% recovery. (C) Activation curves used in the ToR-ORd and ORd models (blue and red lines, respectively). The points correspond to the IV relationship measured in Magyar et al. (2000) normalised by the Nernstian driving force (d.f.) assuming reversal potential of +60 mV (blue points) and the GHK driving force (red points).\u00a0(D,\u00a0E) I-V relationship and steady-state inactivation as measured in ToR-ORd (red line) versus ORd model (blue line) versus experimental data from Magyar et al. (2000) (black points with line). ICaL,tot is the sum of currents corresponding to all ions (Ca2+, Na+, and K+) passing through the L-type calcium current channels. (F) L-type calcium current of a midmyocardial cell, showing current reversal in ORd, but not in ToR-ORd. Only the calcium component of ICaL,tot is shown to demonstrate that the current reversal is not due to other ions. We note that the difference in total amplitude of ICaLin Figure 2F follows predominantly from different action potential shape in ToR-ORd vs ORd, consistent with the I-V relationship.\n\nBoth time to peak calcium and duration of calcium transient at 90% recovery obtained with the ToR-ORd model are within the standard deviation of experimental data in isolated human myocytes (Coppini et al., 2013), whereas ORd slightly overestimated the calcium transient duration (Figure 2B). The calcium transient amplitude of ToR-ORd also matches the Coppini et al. data after accounting for the different APD (Appendix 1-8).\n\nAs described in Materials\u00a0and\u00a0methods, the ToR-ORd ICaL activation curve was extracted from experimental data, using the Goldman-Hodgkin-Katz formulation of ionic driving force, ensuring theoretical consistency, unlike the ORd ICaL formulation (Figure 2C). This considerably improves the results of simulated protocols to obtain IV relationship (Figure 2D), validating the theory-driven changes (see Appendix 1-4 for the demonstration of how the updated activation curve underlies the improvement). The simulation of the protocol measuring steady-state inactivation also reveals improved agreement of ToR-ORd with experimental data compared to ORd (Figure 2E). The difference between measured ORd steady state inactivation and the experimental data (ca. two times stronger inactivation at around \u221215 mV, which is relevant for EAD formation) is initially surprising, given that the equation of ORd ICaL steady-state inactivation curve provides a good fit to the same experimental data. This difference follows from the formulation of calcium-dependent inactivation of ICaL (see Appendix 1-5 for details).\n\nWe observed that in cases of elevated ICaL (e.g. in midmyocardial cells), ORd reverses current direction towards positive values, which is an unexpected behaviour given its reversal potential of 60 mV. Conversely, the ToR-ORd model yields negative ICaL values in such conditions, consistent with it being an inward current (Figure 2F). This is a direct consequence of the updates to the extracellular/intracellular calcium activity coefficients (as explained in Appendix 1-6), which supports their credibility and it is important for cases of elevated ICaL, such as under \u00df-adrenergic stimulation.\n\nWe have also simulated a P2/P1 protocol as measured experimentally by F\u00fcl\u00f6p et al. (2004), where two rectangular pulses are applied with varying interval between them. Both ORd and ToR-ORd qualitatively agree with the experimental data (Appendix 1-7).\n\n### Calibration: inotropic effects of sodium blockers\n\nFigure 3A-D\u00a0illustrates AP and calcium transient changes caused by block of sodium currents in ToR-ORd (left) and ORd (right). As sodium blockers act on channel Nav1.5 mediating both the fast (INa) and late (INaL) sodium current (Makielski, 2016), we simulate the effect of combined partial INa and INaL block. The ToR-ORd model manifests a small reduction in calcium transient amplitude (Figure 3C), unlike ORd, which gives a sizeable increase (Figure 3D); ToR-ORd is thus consistent with the observed negative inotropy of sodium blockers (Gottlieb et al., 1990; Tucker et al., 1982; Legrand et al., 1983; Bhattacharyya and Vassalle, 1982). This is a major improvement in the ToR-ORd model, as sodium current reduction is involved in a range of disease conditions in addition to pharmacological block.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48890/elife-48890-fig3-v4.jpg)\n\n**Figure 3.:** Simulated effect of sodium current block on the action potential (A, B) and calcium transient (C,D) using the ToR-ORd (left) and ORd (right) models. Control simulations are shown as blue traces, whereas results for 50% block of INa and INaL are shown as red traces. Panels (E,F) show values of changes in calcium transient amplitude with respect to control (\u2018rel. CaTA\u2019) for varying degrees of INa/INaL block for ToR-ORd and ORd respectively (one is no change, values\u00a0>\u00a01 correspond to an increase the calcium transient amplitude).\n\nExperimental evidence shows that the ratio of INa and INaL block is drug and dose-dependent, with INaL usually being blocked more than INa (Appendix 1-9). Figure 3E,F illustrates the change in calcium transient amplitude obtained with the ToR-ORd and ORd models, respectively, for several combinations of INa and INaL availability. Both models show a similar general trend where reduced INa availability increases calcium transient amplitude and reduced INaL availability diminishes it; however, the models differ strongly in relative contributions of these components. The ToR-ORd model shows negative inotropy for almost all combinations of blocks. A mild increase in inotropy may be achieved only under near-exclusive INa block. Conversely, ORd shows a general tendency for increased calcium transient amplitude; a reduction occurs only when the sodium current block targets near-exclusively INaL. ToR-ORd presents a greater calcium transient amplitude reduction than ORd in response to INaL block, as the current has a greater role in indirect modulation the cell\u2019s calcium loading via APD change. At the same time, ToR-ORd shows a much smaller calcium transient amplitude increase in response to INa block than ORd because of the updated ICaL activation curve (Figure 2C), as well as closer-to experimental data AP morphology (Figure 2A) and its effect on ICaL. A detailed explanation is given in Appendix 1-10.\n\nFibre simulations carried out to assess the effect of cell coupling on the effect of sodium block are consistent with the single-cell simulations (Appendix 1-11). The difference in response to half-block of INa and INaL between ToR-ORd and ORd is even larger, as ToR-ORd in fibre predicts a greater reduction in calcium transient amplitude than in single cell (\u221214% vs \u22126% respectively), while ORd in fibre predicts a slightly greater increase in calcium transient amplitude than in single cell (+25% vs +24%).\n\nWith the ToR-ORd model, the 14% reduction in CaT amplitude in the electrically\u00a0coupled fibre with 50% block of both INa and INaL is generally consistent with clinical data on sodium blockers: Encainide reduced stroke work index by 15% and cardiac index by 8% (Tucker et al., 1982). In another study using encainide, the cardiac index was reduced by 18% and the stroke volume index by 28% (Gottlieb et al., 1990). Flecainide reduced left ventricular stroke index by 12% and the left ventricular ejection fraction by 9% (Legrand et al., 1983). Simulations with the ToR-ORd model show overall agreement with the clinical data. However, a direct quantitative comparison is challenging given the different indices of contractility measured (CaT amplitude versus clinical indices) and that it is not possible to estimate the exact ratios of INa and INaL block in clinical data (Appendix 1-9).\n\n### Calibration: proarrhythmic behaviours (alternans and early afterdepolarisations)\n\nEADs are an important precursor to arrhythmia, manifesting as a membrane potential depolarisation during late plateau and/or early repolarisation. They are thought to arise mainly from ICaL current reactivation (Weiss et al., 2010). The ToR-ORd model manifests EADs at conditions used experimentally in nondiseased human endocardium (Guo et al., 2011; Figure 4A). The amplitude of simulated EADs is 14 mV (Figure 4B), which matches the maximum EAD amplitude shown by Guo et al. (2011). We also note that the experimental data by Guo et al. manifest early plateau potential of ca. 23 mV (which is matched by ToR-ORd), in line with other studies we referred to previously regarding this matter.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48890/elife-48890-fig4-v4.jpg)\n\n**Figure 4.:** (A) Experimentally observed EADs produced in nondiseased human myocytes exposed to 0.1 \u00b5M dofetilide (\u223c85% IKr block) paced at 0.25 Hz (Guo et al., 2011) and the corresponding simulation using the ORd model (O'Hara et al., 2011), figure reproduced as allowed by the CC-BY license). See Appendix 1-15.1.1 for ionic concentrations used. (B) An EAD produced by the ToR-ORd model at the same conditions. (C,E) APD and calcium transient amplitude versus pacing base cycle length (bcl); the bifurcation indicates alternans. (D,F) Example of APD and calcium transient alternans at the bcl of 260 ms.\n\nRepolarisation alternans is another established precursor to arrhythmia, facilitating the formation of conduction block (Weiss et al., 2006). It is induced by rapid pacing and it is mostly thought to arise from calcium transient amplitude oscillations being translated to APD oscillations (Pruvot et al., 2004), although purely voltage-driven mechanism was also proposed (Nolasco and Dahlen, 1968). Alternans in the ToR-ORd model is calcium-driven and appears via the same mechanism as in the ORd: sarcoplasmic reticulum calcium cycling refractoriness (Tomek et al., 2018). It occurs at rapid pacing, in both calcium and APD (Figure 4C\u2013F). The peak APD alternans amplitude (difference in APD between consecutive beats) is 12 ms, which is matches the value 11\u00a0\u00b1\u00a02 ms reported in human hearts without a structural disease (Koller et al., 2005). Direct quantitative comparison is however slightly limited by the fact that the data were recorded in RV septum, which may or may not differ from endocardial cells in alternans amplitude.\n\n### Validation: drug-induced effects on rate dependence of APD\n\nFigure 5\u00a0illustrates simulations of drug action using the ToR-ORd model (red traces), compared to experimental data (black traces) and to simulations with the ORd model reparametrised by\u00a0Dutta et al. (2017a) (blue dashed lines). APD is shown in the presence of IKr block (E-4031, Figure 5A), IKs block (HMR-1556 Figure 5B), multichannel block of INaL, ICaL, IKr (mexiletine, Figure 5C), and a ICaL block (nisoldipine, Figure 5D), at base cycle lengths of 500, 1000, and 2000 ms. We note that while the Dutta et al. model was specifically optimised for response of APD to these drug blocks, no such treatment was applied to the ToR-ORd model, making the results presented here an independent validation. Appendix 1-13 contains further details on the choice and use of the drug data.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48890/elife-48890-fig5-v4.jpg)\n\n**Figure 5.:** All four panels contain mean and standard deviation of experimental data (black) as measured in O'Hara et al. (2011) for three basic cycle lengths (bcl), predictions of the Dutta optimised dynamic-IKr ORd model (blue, Dutta et al., 2017a), and the predictions of the ToR-ORd model (red). (A) 1 \u00b5M E-4031 (70% IKr block). (B) 1 \u00b5M HMR-1556 (90% IKs block). (C) 10 \u00b5M mexiletine (54% INaL, 9% IKr, 20% ICaL block). (D) 1 \u00b5M nisoldipine (90% ICaL block). Drug concentrations and their effects on channel blocks are based on Dutta et al. (2017b).\n\nThe predictions produced by the ToR-ORd model are in good agreement with experimental data, particularly given the lack of optimisation towards this result. Simulating E-4031, ToR-ORd provides a prediction similar to the experimental data mean and the Dutta model (Figure 5A). This is crucial, given the key role of IKr in the repolarisation reserve of human cardiomyocytes. The response to IKs blockade via HMR-1556 is even better in ToR-ORd than in the Dutta model, which is also within standard deviation of the data, but carries a clear trend towards AP prolongation (Figure 5B). When simulating the multichannel blocker mexiletine, ToR-ORd prediction is within standard deviation of the experimental data, with the Dutta model giving similar or closer-to-mean predictions at 0.5 and 1 Hz (Figure 5C). The predicted effect of the calcium blocker nisoldipine in the ToR-ORd model matches well the experimental data mean (Figure 5D), even better than the Dutta model (also within standard deviation). We note that the good performance of the simulated nisoldipine effect critically relies on the IKr replacement (Materials and methods and Appendix 1-12).\n\n### Validation: APD accommodation and S1-S2 restitution\n\nExperimental measurements in human cardiomyocytes (Franz et al., 1988; Bueno-Orovio et al., 2012) show how the APD shortens upon increase in pacing frequency, and then prolongs again, as the pacing frequency returns to control (Figure 6A, top). APD adaptation dynamics with changes in heart rate are regulated by changes in sodium homeostasis (Pueyo et al., 2011), and their manifestation in QT adaptation have been shown to be useful for arrhythmia risk prediction (Pueyo et al., 2004). While simulations with the ORd model capture the general trend of APD accommodation, there are differences compared to the experimental data (Figure 6A). First, changes in pacing rate are followed by slow-dynamics (~30 s) APD prolongation not present in the experimental recordings. Second, the time constant of accommodation is generally slow. Conversely, the ToR-ORd model reproduces the pattern of accommodation well, where the change in APD soon after change in frequency is relatively fast, and then gradually slows down (Figure 6B). This suggests that the ionic balance in ToR-ORd is likely to have been improved compared to ORd.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48890/elife-48890-fig6-v4.jpg)\n\n**Figure 6.:** (A) APD accommodation measured experimentally (Franz et al., 1988) and in simulation of the ORd model (reproduced as allowed by the CC-BY licence from O'Hara et al., 2011). (B) APD accommodation in ToR-ORd. (C) S1-S2 restitution curve (S1\u00a0=\u00a01000 ms) in ToR-ORd fibre, ORd fibre (including INa modification to facilitate propagation\u00a0Passini et al., 2016) and human tissue samples data (O'Hara et al., 2011).\n\nA second indicator of how a model responds to a change in pacing frequency is the S1-S2 restitution protocol. The S1-S2 restitution curve obtained with the ToR-ORd model is given in Figure (Figure 6C), showing a good agreement with the experimental data (O'Hara et al., 2011).\n\n### Validation: populations of models and drug safety prediction\n\nDrug safety testing is one of the key applications of computer modelling which has yielded highly promising results (Passini et al., 2017). To assess the suitability of ToR-ORd for drug safety testing, we replicated the study by Passini et al. (2017), which was carried out using populations of models based on the ORd model. Two populations were created based on ToR-ORd similarly to the original study, altering conductances of important currents within the ranges of 50\u2013150% and 0\u2013200%. Models in both populations are stable under significant perturbation of ionic conductances, which supports the robustness of the model (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/48890/elife-48890-fig7-v4.jpg)\n\n**Figure 7.:** (A) Percentile-based summary of AP and calcium transient traces for the two populations of human ToR-ORd models (left side) and distribution of ionic current conductances among models in the population (right side), in the ranges [50-150]% (top row) and [0\u2013200]% (bottom row) of the baseline values. (B) A comparison of 0\u2013200% populations based on ToR-ORd (left) and ORd (right, based on Passini et al., 2017) in response to high-dose mexiletine (100-fold effective therapeutic dose). Traces classified as EADs are plotted in red (manifesting only in the ORd population). (C) TdP score obtained for simulations of the 62 reference compounds, based on the occurrence of drug-induced repolarisation abnormalities at all tested concentrations in the [0\u2013200]% population of ToR-ORd models. The colours associated with drugs signify their established torsadogenicity as specified in Appendix 1-15.1.4. The logarithmic scale was considered to maximise the visual separation between safe and risky drugs. The classification based on the TdP score is summarised as a confusion matrix on the right, and also compared with the corresponding results obtained in a population of models based on the original ORd model (Passini et al., 2017).\n\nPrediction of the risk of drug-induced Torsades de Pointes based on simulated drug-induced repolarisation abnormalities using ToR-ORd population yielded similar results to the original study, with predicted risk being correct for 54 out of 62 compounds (87% accuracy). Compared to Passini et al. (2017), the assessment of Mexiletine (a predominantly sodium blocker that is safe) was improved from false positive to true negative. High-dose Mexiletine led to formation of many EADs in ORd, but not in ToR-ORd (Figure 7B), highlighting the importance of the advances on sodium blockers presented in this work. At the same time, Procainamide and Metrodinazole were misclassified as false negatives compared to Passini et al. (2017). However, these drugs are controversial, as Metrodinazole is considered non-torsadogenic by Lancaster and Sobie (2016), and this study predicted both the drugs to be non-risky. Torsadogenic risk for all evaluated compounds and the confusion matrix of the classification are given in Figure 7C.\n\n### Validation: response to disease\n\n#### Hyperkalemia\n\nHyperkalemia, the elevation of extracellular potassium, is a hallmark of acute myocardial ischemia caused by the occlusion of coronary artery. It was shown that hyperkalemia can significantly inhibit sodium channel excitability following repolarisation, leading to the prolongation of postrepolarisation refractoriness (Coronel et al., 2012). The dispersion of effective refractory periods (ERPs) between normal and ischemic zones forms a substrate for the initiation of re-entrant arrhythmia. In this new model, we tested the effect of hyperkalemia on tissue excitability using 1D fibres. As shown in Figure 8A, the elevation of extracellular potassium level led to an increase of the resting membrane potential (RMP) and the decrease of AP upstroke amplitude. As a result of weaker upstroke and more depolarised RMP, the APD shortened under hyperkalemia; however, the ERPs were prolonged due to the stronger sodium channel inactivation caused by the elevation of RMP (Figure 8B). Therefore, this new model successfully reproduced the longer post-repolarization refractoriness under hyperkalemia observed in experiments, and it can be used in the simulations of re-entrant arrhythmia under acute ischemia. In this regard, it presents an improvement over the original ORd model, which did not manifest postrepolarisation refractoriness without further modifications (Dutta et al., 2017b).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/48890/elife-48890-fig8-v4.jpg)\n\n**Figure 8.:** (A) The effect of hyperkalemia on AP morphology; measured in the centre of a simulated fibre. (B) APD90 and effective refractory period (ERP) at varying extracellular potassium concentration. For extracellular potassium higher than 9 mM, full AP did not develop, but low-amplitude activation propagated through the fibre (Appendix 1-14). Membrane potential (C) and calcium transient (D) at 1 Hz pacing compared between a single healthy and HCM cell. (E) 50% IKr block induces EADs in HCM cell, but not in a healthy one.\n\n#### Hypertrophic cardiomyopathy\n\nHypertrophic cardiomyopathy (HCM) is among the most common cardiomyopathies, manifesting as abnormal thickening of the cardiac muscle without an obvious cause (Coppini et al., 2013). Beyond mechanical remodelling, the disease predisposes the hearts to arrhythmia formation, increasing the vulnerability to early afterdepolarisations. HCM induces complex multifactorial remodelling of cell electrophysiology and calcium handling, making it a challenging validation problem for a computer model. We applied the available human experimental data on HCM remodelling (based predominantly on Coppini et al., 2013) to our baseline model using an approach similar to Passini et al. (2016), observing that the dominant features of the remodelling observed by Coppini et al. are captured. The HCM variant of the computer model corresponds to experimental data in the AP morphology, manifesting a significantly higher plateau potential and an overall APD prolongation (Figure 8C). The calcium transient amplitude of the HCM model is slightly reduced, has longer time to peak, and a noticeably longer duration at 90% recovery (Figure 8D), also consistent with the data by Coppini et al. (2013). Ultimately, the HCM variant of our model is more prone to the formation of EADs (Figure 8E), as was shown experimentally (Coppini et al., 2013). This difference is in line with postulated key role of ICaL and NCX in EAD formation (Luo and Rudy, 1994; Weiss et al., 2010), both of which are markedly increased in HCM. Excessive prolongation of APD due to a strong increase in late sodium current in HCM also contributes to the EAD formation as well, as shown by Coppini et al. (2013).\n\n### Validation: human whole-ventricular simulations - from ionic currents to ECG\n\nWe conducted 3D electrophysiological simulations using the ToR-ORd model, representing the membrane kinetics of endocardial, epicardial and mid-myocardial cells to investigate their ability to simulate the ECG (see Appendix 1-15.1.5). Transmural and apex-to-base spatial heterogeneities as well as fibre orientations based on the Streeter rule were incorporated into a human ventricular anatomical model derived from cardiac magnetic resonance (Lyon et al., 2018).\n\nFigure 9A shows the resulting electrocardiogram computed based on virtual electrodes positioned on a torso model shown in Figure 9B. The ECG manifests a QRS duration of 80 ms (normal range 78\u00a0\u00b1\u00a08 ms), and a QT interval of 350 ms (healthy:<430 ms); all of these quantitative measurements are in the range of ECGs of healthy persons (Engblom et al., 2005; van Oosterom et al., 2000). ECG morphology also showed normal features, such as R wave progression in the precordial leads from V1 to V6, isoelectric ST segment, and upright T waves in leads V2 to V6, with inverted T wave in aVR. Figure 9C shows the activation sequence is in agreement with Durrer et al. (1970). The APD map shows longer APD in the endocardium and the base, and shorter APDs in the epicardium and the apex, respectively (Figure 9D).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/48890/elife-48890-fig9-v4.jpg)\n\n**Figure 9.:** (A) 12-lead ECGs at 1 Hz: simulation using the ToR-ORd model in an MRI-based human torso-ventricular model (top) and a healthy patient ECG record (bottom, https://physionet.org, PTB database, subject 122; Bousseljot et al., 1995; Goldberger et al., 2000). (B) Electrode positions on the simulated torso. (C) Activation time map. (D) APD map.\n\n## Discussion\n\nIn this study, we present a new model of human ventricular electrophysiology and excitation contraction coupling, which is able to replicate key features of human ventricular depolarisation, repolarisation and calcium transient dynamics. The ToR-ORd model was developed using a defined set of calibration criteria and subsequently validated on features not considered during calibration to demonstrate its predictive power. This article also unravels several important theoretical findings with implications for computational electrophysiology reaching beyond the ToR-ORd model and cardiac electrophysiology: firstly, the reformulation of the L-type calcium current, which is broadly relevant and generally applicable to human and other species, and secondly, the mechanistically\u00a0guided replacement of IKr. Discovering the necessity to carry out these theoretical reformulations was enabled by the comprehensive set of calibration criteria and the use of a genetic algorithm to fulfil them. Finally, to enable reproducibility, we openly provide an automated model evaluation pipeline, which provides a rapid assessment of a comprehensive set of calibration or validation criteria.\n\nThe AP morphology of ToR-ORd is in agreement with the Szeged endocardial myocyte dataset used to construct the state-of-the art ORd model (O'Hara et al., 2011). The agreement is considerably better than that of ORd itself, which has important implications for multiple aspects studied in this work. The calcium transient also recapitulates key features of human myocyte measurements (Coppini et al., 2013). The validation of ToR-ORd shows that the model responds well to drug block with regards to APD (Dutta et al., 2017a). Good APD accommodation (reaction to abrupt, but persisting changes in pacing frequency) indicates a good balance between ionic currents (Franz et al., 1988; Pueyo et al., 2010). Replication of arrhythmia precursors such as early afterdepolarisations (Guo et al., 2011) and alternans (Koller et al., 2005) makes the model useful for simulations and understanding of arrhythmogenesis. This is particularly important in the context of heart disease, where ToR-ORd is shown to replicate key features of hyperkalemia (Coronel et al., 2012) and hypertrophic cardiomyopathy (Coppini et al., 2013). The model is also shown to be promising in drug safety testing, and whole-heart simulations demonstrate physiological conduction velocity (Taggart et al., 2000) and produce a plausible ECG signal. Among the improved behaviours compared to the state-of-the-art ORd model (O'Hara et al., 2011), the good response of the ToR-ORd model to sodium blockade is particularly noteworthy. ToR-ORd predicts the negative inotropic effect of sodium blockade, consistent with data (Gottlieb et al., 1990; Tucker et al., 1982; Legrand et al., 1983; Bhattacharyya and Vassalle, 1982), unlike ORd, which suggests a strong pro-inotropic effect. The improvement in ToR-ORd follows from the relatively complex interplay of the theoretically driven reformulation of the L-type calcium current and data-driven changes to the AP morphology. This result is of great importance in the context of pharmacological sodium blockers, but it also plays a crucial role in disease modelling, where both fast (Pu and Boyden, 1997) and late (Coppini et al., 2013) sodium current are altered.\n\nAn important feature of a model is its predictive power, and validation of a model using data not employed in model calibration is a central aspect of model credibility (Pathmanathan and Gray, 2018; Carusi et al., 2012). With this in mind, we designed our study to first calibrate the developed model using a set of given criteria, with subsequent validation of the model using separate data that were not optimised for during development. The fact that ToR-ORd manifests a wide range of behaviours consistent with experimental studies, even though it was not optimised for these purposes, suggests its generality and a large degree of credibility. To facilitate future model development, we also created an automated \u2018single-click\u2019 pipeline, which evaluates a wide range of calibration and validation criteria and creates a comprehensive HTML report. New follow-up models can thus be immediately tested against criteria presented here, making it clear which features of the model are improved and/or deteriorated by any changes made.\n\nThe greatest theoretical contribution of this work is the theory-driven reformulation of the L-type calcium current, namely the ionic activity coefficients and activation curve extraction. Activation curve of the current in previous cardiac models was based on the use of Nernst driving force in experimental studies, but the models then used Goldman-Hodgkin-Katz driving force to compute the current. This yields a theoretical inconsistency present in existing influential models of guinea pig, rabbit, dog, or human, for\u00a0example (Luo and Rudy, 1994; Hund et al., 2008; O'Hara et al., 2011; Shannon et al., 2004; Grandi et al., 2010; Carro et al., 2011). We propose and demonstrate that in order to obtain consistent behaviour, the experimental I-V relationship measurements are to be normalised using the Goldman-Hodgkin-Katz driving force instead. Updated ionic activity coefficients and activation of the L-type calcium current improve key features of the current observed in the study underlying the ORd L-type calcium current model (Magyar et al., 2000), and strongly contribute to the improved reaction of the model to sodium blockade. The changes made are relevant in development of future models which use the Goldman-Hodgkin-Katz equation for L-type calcium current or other currents.\n\nA second major contribution of this work reaching beyond the model itself is the set of observations on modelling of IKr, the dominant repolarising current in human ventricle. We noticed limitations of the ORd IKr model, which may be a result of the single-pulse voltage clamp protocol to characterise the current behaviour. Approaches enabling the dissection of activation and recovery from inactivation based on more comprehensive experimental data, such as Lu et al. (2001) used in our work, may yield a more general and plausible model. In this study, this change was important predominantly for the response of the ventricular cell to calcium block, but our observations are highly relevant also for models of cells with naturally low plateau, such as Purkinje fibres or atrial myocytes.\n\nWe anticipate that the main future development of the presented model will focus on the ryanodine receptor and the respective release from sarcoplasmic reticulum. Similarly to most existing cardiac models, the equations governing the release depend directly on the L-type calcium current, rather than on the calcium concentration adjacent to the ryanodine receptors, which is the case in cardiomyocytes. Future development of the ryanodine receptor model and calcium handling will extend the applicability of the model to other calcium-driven modes of arrhythmogenesis, such as delayed afterdepolarisations. Also, while the model represents to a certain degree the locality of ICaL calcium influx and calcium release via the utilization of the junctional calcium subspace, a more direct representation of local control (Stern, 1992; Hinch et al., 2004), realistic spatially distributed calcium handling (Colman et al., 2017), or representation of stochasticity, may improve the insights the model can give into calcium-driven arrhythmogenesis. However, we note that such changes (particularly the detailed distributed calcium handling) will increase computational cost of the model's simulation. In addition, further research on the mechanisms regulating AP dependence on extracellular calcium concentration is needed to update this feature, not currently reproduced by most current human models (Passini and Severi, 2014).\n",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "47733525-ed3c-43b2-b2a8-1a57e7f2c3e6",
+      "submission_id": "f05d230b-6427-45d0-a01d-a4f3affdd62e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jos\u00e9 D Faraldo-G\u00f3mez, National Heart, Lung and Blood Institute, National Institutes of Health United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.48890.sa1](https://doi.org/10.7554/eLife.48890.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis work constitutes a significant advancement in the field of theoretical cardiac electrophysiology. Not only is the proposed mathematical model of the human ventricular myocyte an improvement over existing models, in terms of its correspondence with experimental data and its potential to accelerate therapeutic developments in human cardiac electrophysiology; in addition, the calibration and validation of this model also exemplifies a rigorous methodology that will hopefully become standard in this field.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Development, calibration, and validation of a novel human ventricular myocyte model in health, disease, and drug block\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Jos\u00e9 D. Faraldo-G\u00f3mez as Reviewing Editor and Naama Barkai as the Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Thomas Hund (Reviewer #1); Molly Maleckar (Reviewer #3).\n\nAlthough it is customary for eLife to condense reviewers' reports into a concise decision letter, in this case the Reviewing Editor believes it would be best to enclose these reports as originally submitted. Based on these reports, we would like to invite you to submit a revised version of your manuscript that addresses the questions and concerns raised.\n\nReviewer #1:\n\nThis paper presents a modified model of the human ventricular action potential based on a published model from the Rudy group (O'hara Rudy \u2013 ORd model). Changes were made to improve the ability of the model to reproduce different aspects of the action potential \u2013 especially the plateau potential and APD accommodation. To achieve this goal, Tomek et al. modified the L-Type calcium channel, as well as replacing the formulation of the sodium channel and rapid delayed rectifier channel. The L-Type channel was modified by re-deriving the ionic activity, and treating it as variable in subspaces and time. The L-Type was then also refit using the activation curve normalized to the GHK driving force, rather than the Nerst driving force as was done previously. Additionally, the formulation of the sodium channel was replaced with a version from Grandi et al., 2010, and IKr was replaced with a version from Lu et al., 2001. The changes were than fit to data from the original O'Hara Rudy paper and elsewhere. Finally, the model was validated against APD accommodation from O'Hara, 2011, drug safety predictions, and more, including ECG results from whole heart simulations. This model introduces several notable improvements to the O'Hara Rudy model that will be of interest to mathematical modeling researchers.\n\n1) Chloride current is added to the model without fitting or showing how it affects the model. Additionally, it would be helpful to have a justification of why these currents were added, as well as validated.\n\n2) In Figure 2, inclusion of the other main dataset used by O'Hara to fit the L-Type channel would help in the comparison of the new L-Type formulation to the old formulation. (Fulop et al., 2004).\n\n3) In Figure 5, the fit of the fifth drug, BaCl2, would still be interesting to see as it was used in both O'Hara and Dutta et al., 2017, despite BaCl2 having off-target effects.\n\n4) Please review all equations for typos.\n\nReviewer #2:\n\nTomek et al. have put a tremendous amount of effort into improving the O'Hara et al. mathematical model of the human ventricular myocyte. The correspondence of the new model with experimental data is quite impressive, and the authors have done a laudable job of separating the calibration and validation steps in model development. Because these steps have often been combined and/or blurred in previous work in this field, the study provides additional rigor by separating the two steps. Moreover, given the central importance of the O'Hara et al. model in the field, there is a need for improvements, and this work most likely represents a major step in the right direction. These are all reasons to like the paper.\n\nAll of that being said, there are certain aspects of the manuscript that are rather confusing and need to be improved. Although the comments below may seem excessive to the authors, it did in fact take multiple readings and considerable additional thinking for this reviewer to fully comprehend some of what the authors had done. It can be a difficult goal to achieve, but the authors should aim for a paper that can be readily understood, even by non-experts, after a single reading. The manuscript doesn't meet that standard at present.\n\n1) One of the most interesting aspects of the manuscript is the discussion of activity coefficients, ICaL current-voltage plots, and the extraction of activation curves (subsection \u201cIn-depth revision of the L-type calcium current\u201d). The reviewer absolutely concurs that because many formulations have been inherited from previous models, often without rigorous examination of these formulations, it is entirely appropriate to examine these assumptions and re-formulate currents if necessary. However, this discussion is ultimately unconvincing, and the presentation needs to be modified for this section to be fully understood.\n\n1a) The discussion of the activity coefficients is interesting and will be informative to readers unfamiliar with this primary literature. However, although the authors make a compelling case that different activity coefficients, i.e. closer to 0.6, should be used, the manuscript leaves out the most important question, namely: how do these changes affect the I-V curves?\n\n1b) Speaking of I-V curves, examination of Figure 1D makes a convincing case that the new model has a different shape and matches the experimental data better. However, it's not clear why this occurs \u2013 what allows this better fit? Is this due to the changes in activity coefficients? Is it just from the better activation curve shown in Figure 1C? Another fact that can affect this curve is the relative permeability of the channel to Na and K compared with Ca. It's odd that this is never addressed in the manuscript. Did the authors modify this to try to fit the curves better, or were these numbers considered fixed based on original data?\n\n1c) The term \"driving force\" is used in the manuscript in a way that is inconsistent with prior literature. One of the appeals of Ohmic formulations is that driving force is expressed in units of volts, and conductance can be derived from current plots by simple division. But with a GHK formulation, things are not so simple. The term called \"driving force\" here does not appear to be in units of volts, so what exactly is this term representing?\n\n1d) Finally, on this same topic, the Discussion states: \"Activation curve of the current in previous cardiac models was based on the use of Nernst driving force in experimental studies, but the models then used Goldman-Hodgkin-Katz driving force to compute the current.\" Again, it's not completely clear how the authors derive one set of numbers (i.e. activation at defined voltages) from a different set of numbers (i.e. current at those same voltages). As I have been writing this, it has occurred to me that perhaps the units of driving force are less relevant, as long as one set of numbers can be multiplied by a different set of numbers to ultimately produce current. However, the fact that I've had to think so hard about this demonstrates that the manuscript needs to do better. Because the ICaL formulation is claimed in the Discussion as \"the greatest theoretical contribution of this work,\" the explanations here need to be crystal clear. Perhaps the supplement should contain flow charts of the conventional method for extracting ICaL activation versus how the new approach improves this, as well as plots showing how the changes to the activity coefficients influence the IV curves.\n\n2) The discussion of Na current blockade and inotropy is relatively weak. Perhaps the authors need to reproduce some original experimental data, or, at the very least, provide some numbers extracted from the earlier studies. The description of Figure 3 discusses the \"negative inotropy\" previously reported with Na channel blockers, but with no numbers provided. The change in Ca transient amplitude shown in Figure 3C is very small, probably undetectable experimentally. If experiments have reported a 50% decrease in contraction strength, I would say that neither model is consistent, although ToR-ORd is slightly better. Obviously the heatmaps in 3E and 3F provide additional information, but in general here the correspondence with data can be discussed in a more quantitative way. In the Discussion, the phrase \"good response of the ToR-ORd model to sodium blockade\" sticks out as rather vague.\n\n2a) Again on the Na channel block-inotropy issue. The authors have an opportunity to obtain new mechanistic insight here given that the response of the two models is different. My suspicion is that it might have less to do with the AP morphology, as speculated in the Discussion, and more to do with intracellular [Na] regulation. However, since mechanisms are not explored, we don't know which idea is correct. It might be considered beyond the scope of this study to obtain this mechanistic insight, but it's an interesting question, and the new model provides a means for addressing it.\n\n3) The description of hyperkalemia simulation in Figure 8 should be improved. First, the text claims that Figure 8A shows a \"progressive\" increase in resting potential and slowing of upstroke velocity. But since the figure only shows 2 examples, it's hard to see that this is progressive. Second, PRR is used in this description but has not been previously defined. It took a few seconds to figure out what the authors meant. Is it really necessary to have an abbreviation for a term that's only used once in the manuscript?\n\n4) The last paragraph of the Discussion, discussing future directions, should be modified. This paragraph states: \"Similarly to most existing cardiac models, the equations governing the release depend directly on the L-type calcium current, rather than on the calcium concentration adjacent to the ryanodine receptors, which is the case in cardiomyocytes. Future development of the ryanodine receptor model and calcium handling will extend the applicability of the model.\u2026\"\n\nThe first sentence is correct, the second is not. The challenge is not to improve the representation of the ryanodine receptor. This will not fix the problems; the problems arise from the fact that Ca release in cells is controlled locally rather than globally \u2013 this is why whole cell models, that use a single variable to describe ryanodine receptor gating, need to use shortcuts such as making release directly dependent on ICaL. This general problem was rigorously analyzed by Stern way back in 1992 (PMID: 1330031). For more discussion, see also PMIDs: 15465866, 20346962, 21586292.\n\nIt's great to discuss potential future improvements to the EC coupling part of the model, but these discussions should acknowledge that the issue is not just improving the RyR model, but that stochastic triggering of locally-controlled Ca sparks will need to be described.\n\nReviewer #3:\n\nMature models and simulation techniques in human cardiac electrophysiology can now be exploited to accelerate therapeutic development and validation e.g. devices, drug development/cardiotoxicity. The authors identify key weaknesses in a model of the human ventricular action potential (ORd, which has been chosen previously by an expert-led initiative to represent the human ventricular AP in validation studies incorporating models and simulation), and present an updated (novel) model of the human AP, the ToR-ORd, to address these.\n\nOverall, the work addresses an important need: in order to effectively translate value from models and simulations in the hoped-for context of human ventricular electrophysiology, the primary model's weaknesses must absolutely be addressed for utility, and so I would consider this work far beyond incremental and a very useful contribution in terms of model to the field at this juncture. The work also nicely leverages a plethora of prior experimental work using direct electrophysiological measurements for calibration and validation. In general, the work is very well organized and well-written.\n\nComments:\n\n- Cogent, well-motivated Introduction. Weaknesses of ORd (AP plateau potential, APD adaptation and response to sodium current block) and solutions (L-type calcium, excitation contraction coupling and hERG current re-assessment and reformulations) clear.\n\n- Overall goal to design, develop, calibrate and validate the novel ToR-ORd model, with aim of reproducing all key depolarization, repolarization and calcium dynamics properties in healthy human ventricular cells and when these are under drug block, as well as in diseased conditions e.g. hyperkalemia and hypertrophic cardiomyopathy is both timely and useful.\n\n- Importantly, calibration and validation processes are independent, using independent datasets\n\n- \"The ICaL current was deeply revisited, particularly with respect to its driving force, based on biophysical principles.\" \u2013 well-motivated, needed, seldom done, valuable to other models. \"This allows accurate representation of the driving force when ionic concentrations are disturbed,\"\n\n- Really encouraging to see disease-based, multi-scale validation of this nature. Impact for translational work made abundantly clear.\n\nConcerns/areas to address:\n\n1) Given the journal's wide appeal, there is a need to better introduce the strategy and process going into the Materials and methods section, from \"We initially performed the evaluation of the ORd model (O'Hara et al., 2011) against calibration criteria\u2026\". While I appreciated the simplicity of explanation in general, this guiding summary can be improved to clarify what was initially done and why and how the strategy developed\n\n2) It's also not immediately clear what the calibration criteria actually are (Table 1) \u2013 I assume that, in addition to the listed references, that these exist in a supplement somewhere and it would be great to point the reader to this\n\n3) \"Simulations with the existing versions of the ORd model failed to fulfil key criteria such as AP morphology, calcium transient duration, several properties of the L-type calcium current, negative inotropic effect of sodium blockers, or the depolarising effect of IK1 block\" \u2013 where is this shown? Is there a supplementary figure?\n\n4) In-depth revisions based on fundamental physical principles is a much-needed process. Some motivation and/or discussion of the state of the art in this particular field (i.e. how some attention to the underlying biophysics was laid by the wayside in model redevelopment, experimental assimilation, and subsequent versioning, and conjectures as to why e.g. computational tools like versioning tools did not exist, would be appropriate\n\n5) Given the progressive, savvy lean of this work, it seems reasonable to ask why authors did not consider making the code available in other formats, e.g. python as well, or at least justify/mention the relevance of language and tools for reuse/reproducibility/versioning. Similarly, reference to other recent forays into systematic model improvement, e.g. functional curation and web lab, seems warranted\n\n6) Results: \"This [ToR-ORd model yields negative ICaL values in such conditions] is a direct consequence of the updates to the extracellular/intracellular calcium activity coefficients, which supports its credibility and it is important for cases of elevated ICaL, such as under \u00df-adrenergic stimulation.\" \u2013 while this is likely true, it also seems likely a throwaway \u2013 were any simulations run using the model to demonstrate the importance in this vein? Important how?\n\n7) Results/Figure 3: Besides noting that the ToR-ORd is consistent with observed negative inotropy of sodium blockers, it is unclear from text how updated model compares in terms of available experimental data, i.e. \"A mild increase in inotropy may be achieved only under near-exclusive INa block.\" \u2013 or whether this comparison is available at all.\n\n8) Figure 5A, B, C \u2013 the slope of the APD90 dependence on BCL for the ToR-ORd differs consistently from that of the data for BCLs > 1s \u2013 any musings as to mechanism? Either briefly in main text or supplement.\n\n9) Figure 6C: would strengthen the case for the ToR-ORd further to compare restitution for ORd in a fibre under same protocol?\n\n10) Seems like suitability of ToR-ORd for drug safety testing is clear \u2013 and discussion around this is adequate and encouraging. However, there still does not seem to be a marked improvement in the example given over the ORd (Figure 7), particularly in terms of false negatives. Authors note \"further improvement to the score is likely with development of a population optimised towards drug safety assessment\" \u2013 so it will be interesting to see results there.\n",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "966b1bcd-18b4-4774-9a1f-ceca1eca31d0",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C1",
+      "claim": "The ORd model was selected by a panel of experts as the model best suited for regulatory purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, ORd was selected by a panel of experts as the model best suited for regulatory purposes (Dutta et al., 2017a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dutta et al., 2017a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "19355968-e68a-4151-9c30-83523e4357fd",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C2",
+      "claim": "The plateau of the action potential is significantly higher in the ORd model than in experimental data used for ORd model construction.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, the plateau of the action potential (AP) is significantly higher in the ORd model than in experimental data used for ORd model construction (O'Hara et al., 2011; Britton et al., 2017) and in data from additional studies using human cardiomyocytes (Coppini et al., 2013; Jost et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with experimental data from multiple studies cited",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "470bc169-a0b6-401f-a531-f9dadf33b129",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C3",
+      "claim": "The dynamics of accommodation of the AP duration to heart rate acceleration show only limited agreement with a comparable experimental dataset in the ORd model.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the dynamics of accommodation of the AP duration (APD) to heart rate acceleration, which are known to be modulated by sodium dynamics, show only limited agreement with a comparable experimental dataset (Franz et al., 1988; O'Hara et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with experimental data from Franz et al., 1988 and O'Hara et al., 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "0457cf22-89f2-4025-84f6-4d608d757a37",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C4",
+      "claim": "Simulations of sodium current block have an inotropic effect in the ORd model, increasing the amplitude of the calcium transient.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, we identify that simulations of the sodium current block has an inotropic effect in the ORd model, increasing the amplitude of the calcium transient, in disagreement with its established negatively inotropic effect in experimental/clinical data (encainide, flecainide, and TTX) (Gottlieb et al., 1990; Tucker et al., 1982; Legrand et al., 1983; Bhattacharyya and Vassalle, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results compared with experimental/clinical data from multiple cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "9da25717-8819-4e86-8092-d989ae309dae",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C5",
+      "claim": "Sodium current blockers have a negatively inotropic effect in experimental/clinical data.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, we identify that simulations of the sodium current block has an inotropic effect in the ORd model, increasing the amplitude of the calcium transient, in disagreement with its established negatively inotropic effect in experimental/clinical data (encainide, flecainide, and TTX) (Gottlieb et al., 1990; Tucker et al., 1982; Legrand et al., 1983; Bhattacharyya and Vassalle, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple experimental/clinical studies cited",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "f1701d89-d5e8-4caa-beb6-6e7d6009e003",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C6",
+      "claim": "AP plateau potential, APD adaptation and response to sodium current block have strong dependencies on sodium and calcium dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "All those properties, namely AP plateau potential, APD adaptation and response to sodium current block, have strong dependencies on sodium and calcium dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding of cardiac electrophysiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "54b7c730-5392-4372-9ff5-73b9d64331e0",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C7",
+      "claim": "The L-type calcium current formulation requires in-depth re-evaluation given its fundamental role in determining the AP, the calcium transient and sodium homeostasis through the Na/Ca exchanger.",
+      "claim_type": "EXPLICIT",
+      "source": "We specifically focus on an in-depth re-evaluation of the L-type calcium current (ICaL) formulation, given its fundamental role in determining the AP, the calcium transient and sodium homeostasis through the Na/Ca exchanger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of ICaL's role in cardiac electrophysiology",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "eb288ef0-d397-414b-baea-2cc1dc18dc04",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C8",
+      "claim": "The ToR-ORd model can reproduce all key depolarisation, repolarisation and calcium dynamics properties in healthy ventricular cardiomyocytes, under drug block, and in key diseased conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our aim for simulations using the ToR-ORd model is to be able to reproduce all key depolarisation, repolarisation and calcium dynamics properties in healthy ventricular cardiomyocytes, under drug block, and in key diseased conditions such as hyperkalemia (central to acute myocardial ischemia), and hypertrophic cardiomyopathy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of research aim, validated through subsequent results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "d7943a13-a60f-4243-af78-fec63acd7a66",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C9",
+      "claim": "The recordings used for calibration were obtained in human ventricular preparations primarily using measurements with microelectrode recordings, unipolar electrograms, and monophasic APs.",
+      "claim_type": "EXPLICIT",
+      "source": "The recordings in were obtained in human ventricular preparations primarily using measurements with microelectrode recordings, unipolar electrograms, and monophasic APs, therefore avoiding photon scattering effects or potential dye artefacts present in optical mapping experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methodology used in calibration data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "50f7ce28-8dd2-4747-824a-cd8e7d04f426",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C10",
+      "claim": "The ToR-ORd model was calibrated to manifest depolarisation of resting membrane potential in response to an IK1 block.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the ToR-ORd model was calibrated to manifest depolarisation of resting membrane potential in response to an IK1 block, based on evidence in a range of studies summarised in Dhamoon and Jalife (2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calibration criterion based on evidence from cited study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "181d88b8-7673-4681-9e46-cbcd56819102",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C11",
+      "claim": "Simulations with the existing versions of the ORd model failed to fulfil key criteria such as AP morphology, calcium transient duration, several properties of the L-type calcium current, negative inotropic effect of sodium blockers, or the depolarising effect of IK1 block.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations with the existing versions of the ORd model failed to fulfil key criteria such as AP morphology, calcium transient duration, several properties of the L-type calcium current, negative inotropic effect of sodium blockers, or the depolarising effect of IK1 block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from simulations evaluating ORd model against calibration criteria",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "2aafd6aa-3391-436c-a552-3958eedf180d",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C12",
+      "claim": "Parameter optimisation using a multiobjective genetic algorithm was unable to fulfil key criteria such as AP and Ca morphology, and the effect of sodium and calcium block on calcium transient amplitude and APD with ORd-based models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, simulations with the ORd-based models were unable to fulfil key criteria such as AP and Ca morphology, and the effect of sodium and calcium block on calcium transient amplitude and APD, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from optimization attempts on ORd model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "4aa51a0b-1066-423f-8613-9a3ed96f39c7",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C13",
+      "claim": "The ToR-ORd model follows the general ORd structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The ToR-ORd model follows the general ORd structure (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "6c2fb48e-9486-40f7-bec0-9d975cbac0d2",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C14",
+      "claim": "The cardiomyocyte is subdivided into several compartments: main cytosolic space, junctional subspace, and the sarcoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "The cardiomyocyte is subdivided into several compartments: main cytosolic space, junctional subspace, and the sarcoplasmic reticulum (SR, further subdivided into junctional and network SR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "5104f03b-a1d0-4639-a63a-d0e91bf1eab8",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C15",
+      "claim": "Starting with the Luo-Rudy model of 1994, the driving force of ions via ICaL in cardiac models is modelled based on the Goldman-Hodgkin-Katz flux equation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, starting with the Luo-Rudy model (LRd) of 1994 (Luo and Rudy, 1994), the driving force of ions via ICaL in cardiac models is modelled based on the Goldman-Hodgkin-Katz (GHK) flux equation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Historical statement about cardiac modeling practice, supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "31218fa5-d061-42b4-b0d2-cedf260b40e1",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C16",
+      "claim": "The Luo-Rudy model uses \u03b3o = 0.341 for extracellular space and \u03b3i = 1 for the intracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "The Luo-Rudy model and other Rudy-family models use \u03b3o = 0.341 for extracellular space and \u03b3i = 1 for the intracellular space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of parameter values used in existing models",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "7862cd3b-1857-4066-aed9-f7a9bd8d3ecc",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C17",
+      "claim": "Models based on the Shannon model use 0.341 for both intracellular and extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "Models based on the Shannon model (Shannon et al., 2004) use 0.341 for both intracellular and extracellular space, but we were unable to find the motivation for this change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of parameter values in Shannon model with citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "e1aad708-279c-4a4a-aa8d-c1a0e9056add",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C18",
+      "claim": "The Davies equation extends the basic Debye-H\u00fcckel equation to be accurate for ionic concentrations found in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Davies equation, which extends the basic Debye-H\u00fcckel equation to be accurate for ionic concentrations found in living cells (Mortimer, 2008):",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about Davies equation properties, supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "0692d88e-cf6c-4d89-930a-74899322ba89",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C19",
+      "claim": "The Davies equation was shown to be accurate for I up to 0.5, unlike the basic Debye-H\u00fcckel equation, which is accurate for I up to 0.01 only.",
+      "claim_type": "EXPLICIT",
+      "source": "This warrants the use of Davies equation, which was shown to be accurate for I up to 0.5, unlike the basic Debye-H\u00fcckel equation, which is accurate for I up to 0.01 only (Mortimer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about accuracy ranges of equations, supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "1d27040a-1a76-4246-bbea-dd079b822ad8",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C20",
+      "claim": "Both intracellular and extracellular activity coefficients generally lie between 0.61 and 0.66 in ToR-ORd simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout our simulations, both intracellular and extracellular activity coefficients generally lie between 0.61 and 0.66.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from ToR-ORd simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "a3bc41c4-5066-4a32-b12e-aa93bfe62952",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C21",
+      "claim": "The intracellular and extracellular activity coefficients are relatively similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this estimate shows that the intracellular and extracellular activity coefficients are relatively similar (corresponding to the broadly similar total concentration of charged molecules), in contrast with the original values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from simulation results and biophysical reasoning",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "3e835f97-20da-4bbf-8d33-40b195999da7",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C22",
+      "claim": "There is a theoretical inconsistency in previous cardiac models: the Nernstian driving force is used to derive the activation curve, but the GHK driving force is then used to calculate ICaL.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we identified a theoretical inconsistency in previous cardiac models across species (e.g. Luo and Rudy, 1994; Hund et al., 2008; O'Hara et al., 2011; Shannon et al., 2004; Grandi et al., 2010; Carro et al., 2011): whereas the Nernstian driving force of (V-ECa) is used to derive the activation curve, the GHK driving force is then used to calculate ICaL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical analysis of existing models with citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "6aacebb7-557e-439d-80a2-710154236444",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C23",
+      "claim": "Experimental studies reporting the activation curve of ICaL generally use the Nernstian driving force of (V-ECa) with ECa being the experimentally measured reversal potential of approximately 60 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, experimental studies reporting the activation curve of ICaL generally use the Nernstian driving force of (V-ECa) with ECa being the experimentally measured reversal potential of approximately 60 mV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methodology in literature",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "9c26676f-de69-4172-9b0e-6a423fcd941e",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C24",
+      "claim": "20% of ICaL was placed in the main cytosolic space in the ToR-ORd model, consistent with the literature.",
+      "claim_type": "EXPLICIT",
+      "source": "20% of ICaL was placed in the main cytosolic space, consistent with the literature (Scriven et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model design choice supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "350bb8f5-151f-4d29-ab78-18cacd3ab1a7",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C25",
+      "claim": "Placing 20% of ICaL in the main cytosolic space increases the plateau-supporting capability of ICaL.",
+      "claim_type": "EXPLICIT",
+      "source": "This increases the plateau-supporting capability of ICaL, given that the myoplasmic ICaL is subject to a weaker calcium-dependent inactivation than ICaL in the junctional subspace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic explanation based on biophysical reasoning",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "74eb8119-ac11-4124-a3bb-0076e2d5c3fd",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C26",
+      "claim": "ICaL block is known to shorten APD experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "ICaL block is known to shorten APD experimentally (O'Hara et al., 2011) but resulted in a major APD prolongation in simulations instead.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "9df75126-9b22-4285-ae48-26f7e2d413db",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C27",
+      "claim": "The ORd IKr formulation lacks activation that is consistent with relevant experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "A mechanistic analysis revealed that this follows from the lack of ORd IKr activation, which is however not consistent with relevant experimental data (Lu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of ORd model compared with experimental data from Lu et al., 2001",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "67ddfd94-6d0b-4fcc-94c3-a4758ad7469c",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C28",
+      "claim": "The Lu-Vandenberg IKr model is based on extensive experimental data allowing the dissection of activation and recovery from inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lu-Vandenberg IKr model is based on extensive experimental data allowing the dissection of activation and recovery from inactivation and provided the best agreement with experimental data, specifically when considering the AP plateau potentials reported experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of Lu-Vandenberg model properties",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "b0bb8248-d152-4647-a1ee-b6c4e0b4dfab",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C29",
+      "claim": "Following the inclusion of the Lu-Vandenberg IKr formulation, all models generated during model calibration exhibited APD shortening in response to ICaL block.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the inclusion of the Lu-Vandenberg IKr formulation, all models generated during model calibration exhibited APD shortening in response to ICaL block.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from model calibration simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "f70a32b1-2aaf-4d48-b60b-0e5df599bb0c",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C30",
+      "claim": "The INa current formulation was replaced by an alternative human-based formulation from Grandi et al., 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "The INa current formulation was replaced by an alternative human-based formulation (Grandi et al., 2010), given established limitations of the original model with regards to conduction velocity and excitability (O'Hara et al., 2011), comment on article from 05 Oct 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model design choice with citations supporting the rationale",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "051f7c56-20d6-43af-9802-96a9494c7a88",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C31",
+      "claim": "The IK1 model was replaced with the human-based formulation by Carro et al., 2011, as it was shown to be key for simulations of hyperkalemic conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The IK1 model was replaced with the human-based formulation by Carro et al. (2011), as it was shown to be key for simulations of hyperkalemic conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model design choice with citation and rationale",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "583efb19-a55e-4d72-af28-0d7cc1549f1c",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C32",
+      "claim": "A reduction in IK1 results in hyperpolarisation of the cell in the baseline ORd model.",
+      "claim_type": "EXPLICIT",
+      "source": "When evaluating the baseline ORd model against the selected criteria, we observed that a reduction in IK1 results in hyperpolarisation of the cell (from \u221288 to \u221288.16 mV at 1 Hz pacing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results from ORd model evaluation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "ed76ee9e-911e-41e1-b617-0588b74b44b4",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C33",
+      "claim": "IK1 reduction depolarises cells experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is established that IK1 reduction depolarises cells experimentally (Dhamoon and Jalife, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation supported by citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "f33a4557-614e-43b0-bf22-a06871d4c8a3",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C34",
+      "claim": "ToR-ORd manifests depolarization in response to IK1 block, consistent with experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes made during ToR-ORd calibration (predominantly the altered balance of currents during diastole and the inclusion of background chloride current) result in ToR-ORd manifesting depolarization in response to IK1 block, consistent with experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results compared with experimental data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "0a0733e0-85c0-4099-acb5-c889f1c7478e",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C35",
+      "claim": "The AP morphology of the ToR-ORd is within or at the border of the interquartile range of the Szeged-ORd experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "The AP morphology of the ToR-ORd is within or at the border of the interquartile range of the Szeged-ORd experimental data (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of simulation results with experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "7b6e2504-a31c-4104-9404-55c3148ab5d6",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C36",
+      "claim": "The original ORd morphology overestimates plateau potentials, particularly during early plateau.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a major improvement compared to the original ORd morphology, which overestimates plateau potentials, particularly during early plateau (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "e0cff391-ffeb-485a-90e9-fe1be03a24d3",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C37",
+      "claim": "The early plateau potential is around 20\u201323 mV in experimental recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the early plateau potential is around 20\u201323 mV is clearly apparent from experimental recordings and is further corroborated by additional studies in human tissue samples (Jost et al., 2013, Figure 6) and isolated human cardiomyocytes (Coppini et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental data from multiple cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "1f5b5080-76dd-4cbd-a4a7-75b203c202d3",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C38",
+      "claim": "When coupled in a fibre, ToR-ORd manifests conduction velocity of 65 cm/s, which is consistent with clinical data.",
+      "claim_type": "EXPLICIT",
+      "source": "When coupled in a fibre, ToR-ORd manifests conduction velocity of 65 cm/s, which is consistent with clinical data (Taggart et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation result compared with clinical data from citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "d4c795b2-978d-467d-b2c9-dfbe669847ff",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C39",
+      "claim": "Both time to peak calcium and duration of calcium transient at 90% recovery obtained with the ToR-ORd model are within the standard deviation of experimental data in isolated human myocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Both time to peak calcium and duration of calcium transient at 90% recovery obtained with the ToR-ORd model are within the standard deviation of experimental data in isolated human myocytes (Coppini et al., 2013), whereas ORd slightly overestimated the calcium transient duration (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of simulation results with experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "1346d670-ca6d-460e-9be2-4857b53e62d8",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C40",
+      "claim": "In cases of elevated ICaL, ORd reverses current direction towards positive values.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in cases of elevated ICaL (e.g. in midmyocardial cells), ORd reverses current direction towards positive values, which is an unexpected behaviour given its reversal potential of 60 mV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "fb59397c-602b-4f74-ad42-eeb6dfdb6c1b",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C41",
+      "claim": "The ToR-ORd model yields negative ICaL values in conditions of elevated ICaL, consistent with it being an inward current.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the ToR-ORd model yields negative ICaL values in such conditions, consistent with it being an inward current (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "ca527d28-bbc9-4820-b5e9-71e2a5f04f42",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C42",
+      "claim": "The ToR-ORd model manifests a small reduction in calcium transient amplitude in response to combined partial INa and INaL block.",
+      "claim_type": "EXPLICIT",
+      "source": "The ToR-ORd model manifests a small reduction in calcium transient amplitude (Figure 3C), unlike ORd, which gives a sizeable increase (Figure 3D); ToR-ORd is thus consistent with the observed negative inotropy of sodium blockers (Gottlieb et al., 1990; Tucker et al., 1982; Legrand et al., 1983; Bhattacharyya and Vassalle, 1982).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 3C compared with experimental data from citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "70669c2d-5d9a-4024-aae4-1fcde5414b26",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C43",
+      "claim": "The ToR-ORd model shows negative inotropy for almost all combinations of INa and INaL blocks.",
+      "claim_type": "EXPLICIT",
+      "source": "The ToR-ORd model shows negative inotropy for almost all combinations of blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from systematic simulation of different block combinations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "6db2b588-cb13-4249-baa4-f230e85bce2a",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C44",
+      "claim": "ORd shows a general tendency for increased calcium transient amplitude in response to sodium current block.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, ORd shows a general tendency for increased calcium transient amplitude; a reduction occurs only when the sodium current block targets near-exclusively INaL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from systematic simulation of different block combinations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "eeb32b78-6d1c-4845-bbed-3d6dd2342968",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C45",
+      "claim": "The ToR-ORd model manifests EADs at conditions used experimentally in nondiseased human endocardium.",
+      "claim_type": "EXPLICIT",
+      "source": "The ToR-ORd model manifests EADs at conditions used experimentally in nondiseased human endocardium (Guo et al., 2011; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results compared with experimental conditions from citation, shown in Figure 4A",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "aed47dae-c950-4c2b-9291-62d1fc40b7f8",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C46",
+      "claim": "The amplitude of simulated EADs is 14 mV, which matches the maximum EAD amplitude shown by Guo et al. (2011).",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of simulated EADs is 14 mV (Figure 4B), which matches the maximum EAD amplitude shown by Guo et al. (2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation result shown in Figure 4B compared with experimental data from citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "937271c3-784b-4683-9897-6cc35c1cd534",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C47",
+      "claim": "Alternans in the ToR-ORd model is calcium-driven and appears via the same mechanism as in the ORd: sarcoplasmic reticulum calcium cycling refractoriness.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternans in the ToR-ORd model is calcium-driven and appears via the same mechanism as in the ORd: sarcoplasmic reticulum calcium cycling refractoriness (Tomek et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Mechanistic analysis with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "828ccba9-785d-4211-95fd-5b4a790f76f8",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C48",
+      "claim": "The peak APD alternans amplitude in ToR-ORd is 12 ms, which matches the value 11 \u00b1 2 ms reported in human hearts without a structural disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak APD alternans amplitude (difference in APD between consecutive beats) is 12 ms, which is matches the value 11 \u00b1 2 ms reported in human hearts without a structural disease (Koller et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation result compared with experimental data from citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "bdec3c8e-0116-4486-822d-c5aac2530542",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C49",
+      "claim": "The predictions produced by the ToR-ORd model for drug action are in good agreement with experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictions produced by the ToR-ORd model are in good agreement with experimental data, particularly given the lack of optimisation towards this result.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of simulation results with experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "97dba4de-ce7e-4659-a9bc-ec8bccbdb4a2",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C50",
+      "claim": "Models in both ToR-ORd populations are stable under significant perturbation of ionic conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "Models in both populations are stable under significant perturbation of ionic conductances, which supports the robustness of the model (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Results from population of models simulations shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "761525af-5eb1-42d2-8c83-1c7f91b3267c",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C51",
+      "claim": "Prediction of the risk of drug-induced Torsades de Pointes using ToR-ORd population yielded 87% accuracy (54 out of 62 compounds correct).",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction of the risk of drug-induced Torsades de Pointes based on simulated drug-induced repolarisation abnormalities using ToR-ORd population yielded similar results to the original study, with predicted risk being correct for 54 out of 62 compounds (87% accuracy).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Results from drug safety prediction simulations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "8e7bf093-98f1-4461-9078-90946fe14b02",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C52",
+      "claim": "High-dose Mexiletine led to formation of many EADs in ORd, but not in ToR-ORd.",
+      "claim_type": "EXPLICIT",
+      "source": "High-dose Mexiletine led to formation of many EADs in ORd, but not in ToR-ORd (Figure 7B), highlighting the importance of the advances on sodium blockers presented in this work.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of simulation results shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "c6013eb5-4e85-4385-86dd-dc020f8d1869",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C53",
+      "claim": "The elevation of extracellular potassium level led to an increase of the resting membrane potential and the decrease of AP upstroke amplitude in ToR-ORd simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 8A, the elevation of extracellular potassium level led to an increase of the resting membrane potential (RMP) and the decrease of AP upstroke amplitude.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 8A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "1468f9b6-5a2b-49c4-b20f-5e7c7f2bb31b",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C54",
+      "claim": "The APD shortened under hyperkalemia in ToR-ORd simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of weaker upstroke and more depolarised RMP, the APD shortened under hyperkalemia; however, the ERPs were prolonged due to the stronger sodium channel inactivation caused by the elevation of RMP (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 8B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "ac38a314-9892-400a-bd60-d9b804bcc8fa",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C55",
+      "claim": "The ERPs were prolonged under hyperkalemia due to the stronger sodium channel inactivation caused by the elevation of RMP in ToR-ORd simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of weaker upstroke and more depolarised RMP, the APD shortened under hyperkalemia; however, the ERPs were prolonged due to the stronger sodium channel inactivation caused by the elevation of RMP (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results with mechanistic explanation shown in Figure 8B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "9a7b6c4d-3f22-4837-857c-942a7156567f",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C56",
+      "claim": "The ToR-ORd model successfully reproduced the longer post-repolarization refractoriness under hyperkalemia observed in experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this new model successfully reproduced the longer post-repolarization refractoriness under hyperkalemia observed in experiments, and it can be used in the simulations of re-entrant arrhythmia under acute ischemia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of simulation results with experimental observations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "16e6dee8-996c-4778-a57d-18d36c70673f",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C57",
+      "claim": "The original ORd model did not manifest postrepolarisation refractoriness without further modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it presents an improvement over the original ORd model, which did not manifest postrepolarisation refractoriness without further modifications (Dutta et al., 2017b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with ORd model behavior, supported by citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "3ef3d52e-b3bb-4bc6-841b-a644d9c05563",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C58",
+      "claim": "The HCM variant of the ToR-ORd model corresponds to experimental data in the AP morphology, manifesting a significantly higher plateau potential and an overall APD prolongation.",
+      "claim_type": "EXPLICIT",
+      "source": "The HCM variant of the computer model corresponds to experimental data in the AP morphology, manifesting a significantly higher plateau potential and an overall APD prolongation (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results compared with experimental data shown in Figure 8C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "a7b471ec-6cf8-4823-92bd-816658821997",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C59",
+      "claim": "The calcium transient amplitude of the HCM model is slightly reduced, has longer time to peak, and a noticeably longer duration at 90% recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "The calcium transient amplitude of the HCM model is slightly reduced, has longer time to peak, and a noticeably longer duration at 90% recovery (Figure 8D), also consistent with the data by Coppini et al. (2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results compared with experimental data shown in Figure 8D",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "f8471418-586f-498d-a298-e7526978ac8a",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C60",
+      "claim": "The HCM variant of ToR-ORd model is more prone to the formation of EADs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, the HCM variant of our model is more prone to the formation of EADs (Figure 8E), as was shown experimentally (Coppini et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results compared with experimental data shown in Figure 8E",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "ac3a4e82-9ab1-4968-95c1-16a3ba07da7d",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C61",
+      "claim": "The ECG from ToR-ORd simulations manifests a QRS duration of 80 ms (normal range 78 \u00b1 8 ms), and a QT interval of 350 ms (healthy:<430 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "The ECG manifests a QRS duration of 80 ms (normal range 78 \u00b1 8 ms), and a QT interval of 350 ms (healthy:<430 ms); all of these quantitative measurements are in the range of ECGs of healthy persons (Engblom et al., 2005; van Oosterom et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Simulation results compared with normal ranges from cited studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "efe3f045-90bb-4eb7-b902-f400bb6ad23b",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C62",
+      "claim": "ECG morphology from ToR-ORd simulations showed normal features, such as R wave progression in the precordial leads from V1 to V6, isoelectric ST segment, and upright T waves in leads V2 to V6, with inverted T wave in aVR.",
+      "claim_type": "EXPLICIT",
+      "source": "ECG morphology also showed normal features, such as R wave progression in the precordial leads from V1 to V6, isoelectric ST segment, and upright T waves in leads V2 to V6, with inverted T wave in aVR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of simulation results showing normal ECG features",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "be6a8b81-1641-4e0a-a11a-c9c0eecd97ae",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C63",
+      "claim": "The activation sequence in ToR-ORd whole-heart simulations is in agreement with Durrer et al. (1970).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 9C shows the activation sequence is in agreement with Durrer et al. (1970).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 9C compared with experimental data from citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "b388a0c5-019a-4b36-b13a-753f57fc9a4a",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C64",
+      "claim": "The APD map from ToR-ORd simulations shows longer APD in the endocardium and the base, and shorter APDs in the epicardium and the apex.",
+      "claim_type": "EXPLICIT",
+      "source": "The APD map shows longer APD in the endocardium and the base, and shorter APDs in the epicardium and the apex, respectively (Figure 9D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Simulation results shown in Figure 9D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "b06ced36-3932-44a8-8584-f32bc28ef386",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C65",
+      "claim": "The ToR-ORd model was developed using a defined set of calibration criteria and subsequently validated on features not considered during calibration.",
+      "claim_type": "EXPLICIT",
+      "source": "The ToR-ORd model was developed using a defined set of calibration criteria and subsequently validated on features not considered during calibration to demonstrate its predictive power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model development methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "f2a3403a-c9c4-43ec-8886-7e916960db2f",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C66",
+      "claim": "The reformulation of the L-type calcium current is broadly relevant and generally applicable to human and other species.",
+      "claim_type": "EXPLICIT",
+      "source": "This article also unravels several important theoretical findings with implications for computational electrophysiology reaching beyond the ToR-ORd model and cardiac electrophysiology: firstly, the reformulation of the L-type calcium current, which is broadly relevant and generally applicable to human and other species, and secondly, the mechanistically guided replacement of IKr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the generalizability of the theoretical findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "13ce8fdf-16b7-44fb-8a16-cf327c234bec",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C67",
+      "claim": "The good response of the ToR-ORd model to sodium blockade is particularly noteworthy among the improved behaviours compared to the ORd model.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the improved behaviours compared to the state-of-the-art ORd model (O'Hara et al., 2011), the good response of the ToR-ORd model to sodium blockade is particularly noteworthy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Evaluation of model improvements",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "9ea691f8-5b15-452c-8333-c59069eb0b2c",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C68",
+      "claim": "ToR-ORd predicts the negative inotropic effect of sodium blockade, consistent with data, unlike ORd, which suggests a strong pro-inotropic effect.",
+      "claim_type": "EXPLICIT",
+      "source": "ToR-ORd predicts the negative inotropic effect of sodium blockade, consistent with data (Gottlieb et al., 1990; Tucker et al., 1982; Legrand et al., 1983; Bhattacharyya and Vassalle, 1982), unlike ORd, which suggests a strong pro-inotropic effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of simulation results with experimental data from citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "3902bb9e-db65-4f79-8224-0f2c3eb3f5b1",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C69",
+      "claim": "The improvement in ToR-ORd follows from the relatively complex interplay of the theoretically driven reformulation of the L-type calcium current and data-driven changes to the AP morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "The improvement in ToR-ORd follows from the relatively complex interplay of the theoretically driven reformulation of the L-type calcium current and data-driven changes to the AP morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of the mechanistic basis for model improvements",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "86748619-bffd-4bf9-aa11-e68bdaa4236a",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C70",
+      "claim": "Validation of a model using data not employed in model calibration is a central aspect of model credibility.",
+      "claim_type": "EXPLICIT",
+      "source": "An important feature of a model is its predictive power, and validation of a model using data not employed in model calibration is a central aspect of model credibility (Pathmanathan and Gray, 2018; Carusi et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about model validation methodology, supported by citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "a918e5ad-2285-4f03-9b1b-23c9a86903c8",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C71",
+      "claim": "The fact that ToR-ORd manifests a wide range of behaviours consistent with experimental studies, even though it was not optimised for these purposes, suggests its generality and a large degree of credibility.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that ToR-ORd manifests a wide range of behaviours consistent with experimental studies, even though it was not optimised for these purposes, suggests its generality and a large degree of credibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from validation results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "4da151e2-3c81-4e0b-9869-52465b67744e",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C72",
+      "claim": "Activation curve of the current in previous cardiac models was based on the use of Nernst driving force in experimental studies, but the models then used Goldman-Hodgkin-Katz driving force to compute the current.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation curve of the current in previous cardiac models was based on the use of Nernst driving force in experimental studies, but the models then used Goldman-Hodgkin-Katz driving force to compute the current.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of existing modeling approaches",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "b1edec9a-645f-41c1-b875-ca6bca30d1cb",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C73",
+      "claim": "This theoretical inconsistency is present in existing influential models of guinea pig, rabbit, dog, or human.",
+      "claim_type": "EXPLICIT",
+      "source": "This yields a theoretical inconsistency present in existing influential models of guinea pig, rabbit, dog, or human, for example (Luo and Rudy, 1994; Hund et al., 2008; O'Hara et al., 2011; Shannon et al., 2004; Grandi et al., 2010; Carro et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of existing models with citations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "80db9186-28fc-4f42-bcba-f93be9125f8b",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C74",
+      "claim": "Updated ionic activity coefficients and activation of the L-type calcium current improve key features of the current observed in the study underlying the ORd L-type calcium current model.",
+      "claim_type": "EXPLICIT",
+      "source": "Updated ionic activity coefficients and activation of the L-type calcium current improve key features of the current observed in the study underlying the ORd L-type calcium current model (Magyar et al., 2000), and strongly contribute to the improved reaction of the model to sodium blockade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of model behavior with experimental data from citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "392eb493-121f-4c7a-96db-a4c82f897d09",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C75",
+      "claim": "Limitations of the ORd IKr model may be a result of the single-pulse voltage clamp protocol to characterise the current behaviour.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed limitations of the ORd IKr model, which may be a result of the single-pulse voltage clamp protocol to characterise the current behaviour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about the source of model limitations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "78148582-1cd0-40ba-8d60-8a930435d526",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C76",
+      "claim": "Approaches enabling the dissection of activation and recovery from inactivation based on more comprehensive experimental data may yield a more general and plausible model.",
+      "claim_type": "EXPLICIT",
+      "source": "Approaches enabling the dissection of activation and recovery from inactivation based on more comprehensive experimental data, such as Lu et al. (2001) used in our work, may yield a more general and plausible model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reasoning about modeling approaches with citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "32029429-9ce9-4e3f-841e-74fd7a14074a",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C77",
+      "claim": "The main future development of the ToR-ORd model will focus on the ryanodine receptor and the respective release from sarcoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that the main future development of the presented model will focus on the ryanodine receptor and the respective release from sarcoplasmic reticulum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about anticipated future work",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "f13850fe-8f35-487b-abb8-845a6cedeb75",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C78",
+      "claim": "In most existing cardiac models, the equations governing the release depend directly on the L-type calcium current, rather than on the calcium concentration adjacent to the ryanodine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to most existing cardiac models, the equations governing the release depend directly on the L-type calcium current, rather than on the calcium concentration adjacent to the ryanodine receptors, which is the case in cardiomyocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of current modeling approach compared with biological reality",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "8c6dc4d9-6fd5-491b-8141-3eea361bef4f",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "claim_id": "C79",
+      "claim": "Future development of the ryanodine receptor model and calcium handling will extend the applicability of the model to other calcium-driven modes of arrhythmogenesis, such as delayed afterdepolarisations.",
+      "claim_type": "EXPLICIT",
+      "source": "Future development of the ryanodine receptor model and calcium handling will extend the applicability of the model to other calcium-driven modes of arrhythmogenesis, such as delayed afterdepolarisations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about anticipated future improvements",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "21364b15-45be-4b95-a1c6-c174c4af33a7",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The existing ORd model exhibits significant discrepancies with experimental data, including elevated action potential plateau, limited agreement in APD accommodation dynamics, and incorrect prediction of positive inotropic effects from sodium current block (contrary to established negative inotropic effects). Parameter optimization using genetic algorithms failed to resolve these issues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 and C11-C12 collectively demonstrate well-documented limitations of the ORd model through comparison with multiple experimental datasets. The claims are supported by citations to experimental studies and simulation results showing specific quantitative discrepancies. The failure of optimization approaches (C12) strengthens the case that structural model changes were necessary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "80a2e46e-4a2e-48a9-882a-367cc05fea61",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A theoretical inconsistency exists in previous cardiac models where the Nernstian driving force is used to derive ICaL activation curves from experimental data, but the Goldman-Hodgkin-Katz (GHK) driving force is then used in model calculations. The authors propose using GHK consistently for both activation curve extraction and current calculation, and implement dynamic ionic activity coefficients using the Davies equation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C23 and C72-C73 identify a fundamental theoretical inconsistency across multiple influential cardiac models with appropriate citations. The mathematical framework using the Davies equation is well-established (C18-C19), and the computed activity coefficients (C20-C21) are physically reasonable. This represents a significant theoretical contribution with broad applicability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "1ecc7106-0c2e-41e0-85cd-6f69feb7d8a4",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ToR-ORd model places 20% of ICaL in the main cytosolic space (consistent with literature), which increases plateau-supporting capability due to weaker calcium-dependent inactivation. The updated ionic activity coefficients and activation curve improve agreement with experimental ICaL properties and contribute to improved sodium blockade response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 and C74 describe specific model design choices supported by citations (C24) and mechanistic reasoning (C25). The improvements are validated through comparison with experimental data from Magyar et al., 2000 (C74). The mechanistic explanation for increased plateau support is biophysically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "ff15f68e-007a-4dde-99e8-38ca17e190d1",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The ORd IKr formulation lacks activation consistent with experimental data, causing incorrect APD prolongation in response to ICaL block. Replacement with the Lu-Vandenberg IKr model, based on comprehensive experimental data allowing dissection of activation and inactivation, resolved this issue and resulted in physiologically correct APD shortening upon ICaL block.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 identify a specific mechanistic problem with the ORd IKr formulation (C27) supported by experimental data citations. The Lu-Vandenberg model is well-characterized (C28), and the claim that all calibrated models exhibited correct APD shortening after IKr replacement (C29) provides strong validation. The experimental observation (C26) is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "2c334f33-1222-42f3-819d-a5c1b317e098",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The INa formulation was replaced with the Grandi et al. 2010 model due to established limitations in conduction velocity and excitability, and the IK1 model was replaced with the Carro et al. 2011 formulation for improved hyperkalemia simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 describe model component replacements with clear rationales supported by citations. These are methodological choices based on known limitations of the original ORd formulations and established alternative models from the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "1d4d4811-5ce8-455c-8cb6-08649ab48ecb",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The baseline ORd model incorrectly shows hyperpolarization in response to IK1 reduction, contrary to experimental evidence showing depolarization. The ToR-ORd model, through altered diastolic current balance and inclusion of background chloride current, correctly manifests depolarization in response to IK1 block.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 identify a specific discrepancy between ORd simulations and experimental data (C32-C33 with citation support), and demonstrate that ToR-ORd resolves this issue (C34). The mechanistic explanation involving diastolic current balance is provided. This represents successful calibration against an important physiological criterion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "388876c4-9b39-4889-9146-8baa9e2e3ce8",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The ToR-ORd model's action potential morphology falls within or at the border of the interquartile range of experimental data, representing major improvement over ORd which overestimates plateau potentials. Calcium transient kinetics and conduction velocity (65 cm/s) also match experimental/clinical data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 demonstrate successful calibration through quantitative comparison with experimental data from multiple sources (Figures 2A-B, citations to Britton, Coppini, Jost, Taggart studies). The improvements over ORd are clearly documented (C36), and the experimental plateau potential value (C37) is corroborated by multiple independent studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "69c16778-8bd3-4624-a97f-f65f0412d795",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In conditions of elevated ICaL, the ORd model exhibits unphysical current reversal toward positive values despite a reversal potential of 60 mV, while ToR-ORd correctly maintains negative (inward) current values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 identify a biophysically implausible behavior in ORd (current reversal inconsistent with reversal potential) and demonstrate that ToR-ORd resolves this issue. The observation is supported by simulation data (Figure 2F). This validates the theoretical improvements to the ICaL formulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "1bcd45a0-7a30-405c-a050-21a23740a94d",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The ToR-ORd model correctly predicts negative inotropic effects of sodium current block (small reduction in calcium transient amplitude) for almost all combinations of INa and INaL block, consistent with experimental/clinical data. In contrast, ORd incorrectly predicts positive inotropic effects (increased calcium transient amplitude) for most block combinations. This improvement results from the interplay of reformulated ICaL and improved AP morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 and C67-C69 demonstrate a critical improvement in ToR-ORd through systematic comparison with experimental data from multiple studies (Gottlieb, Tucker, Legrand, Bhattacharyya). The systematic exploration of INa/INaL block combinations (Figure 3E-F) strengthens the evidence. The mechanistic explanation (C69) is provided, though detailed validation of the mechanism could be stronger.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "f5ba54fe-1d48-49fc-8d7e-6c7ab712d278",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ToR-ORd model manifests early afterdepolarizations (EADs) under experimental conditions used in nondiseased human endocardium, with simulated EAD amplitude (14 mV) matching the maximum amplitude reported experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 demonstrate successful calibration for EAD formation through quantitative comparison with experimental data from Guo et al. 2011 (Figure 4A-B). The matching of both conditions and amplitude provides strong validation of this proarrhythmic behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "6c24c494-d482-40fe-a479-a3b0f177322c",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The ToR-ORd model exhibits calcium-driven alternans via sarcoplasmic reticulum calcium cycling refractoriness (same mechanism as ORd), with peak APD alternans amplitude of 12 ms matching experimental data (11 \u00b1 2 ms) from human hearts without structural disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 demonstrate successful calibration for alternans with quantitative agreement with experimental data from Koller et al. 2005. The mechanistic explanation is provided with citation (C47). Minor limitation noted in text regarding RV septum vs endocardial comparison, but overall agreement is strong.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "508a21c4-0f09-4721-9be5-b6f8879f8a9e",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The ToR-ORd model's predictions for drug action (IKr block, IKs block, multichannel block, ICaL block) are in good agreement with experimental data across multiple pacing rates, particularly notable given lack of optimization toward these specific results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is supported by detailed comparison with experimental data shown in Figure 5 for four different drugs at three pacing rates. The fact that this represents validation (not calibration) data strengthens the credibility. The agreement is generally within experimental standard deviations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "2ab032d6-d55f-4e95-a97f-530703296840",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Population-based drug safety prediction using ToR-ORd achieved 87% accuracy (54/62 compounds) for Torsades de Pointes risk, similar to the original ORd-based study. ToR-ORd showed improved assessment of Mexiletine (corrected from false positive to true negative) and avoided EAD formation at high Mexiletine doses unlike ORd.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 demonstrate successful validation through population modeling with quantitative accuracy metrics (C51) and specific improvements over ORd (C52). The robustness under conductance perturbations (C50, Figure 7A) supports model stability. The Mexiletine improvement directly relates to the sodium blocker advances, providing mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "54965a54-120e-4490-a60e-90c3a736a300",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Under hyperkalemia, ToR-ORd simulations show increased resting membrane potential, decreased AP upstroke amplitude, shortened APD, but prolonged effective refractory periods due to stronger sodium channel inactivation. This successfully reproduces experimental post-repolarization refractoriness, an improvement over the original ORd model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C57 demonstrate successful validation for hyperkalemia with mechanistic explanation (C55) and comparison to experimental observations (C56). The improvement over ORd is documented with citation (C57). The simulation results (Figure 8A-B) show physiologically reasonable responses to elevated extracellular potassium.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "9aecd2d4-4c98-4482-9b73-a6ce478cc06d",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The hypertrophic cardiomyopathy (HCM) variant of ToR-ORd reproduces key experimental features including elevated plateau potential, prolonged APD, altered calcium transient kinetics (reduced amplitude, longer time to peak and duration), and increased susceptibility to EAD formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 demonstrate successful validation for HCM disease modeling through comparison with experimental data from Coppini et al. 2013 (Figure 8C-E). Multiple features are correctly reproduced, and mechanistic explanation for increased EAD susceptibility is provided. This represents validation against complex multifactorial remodeling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "0dfd27a7-2c08-4384-9813-ff6038832a84",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Whole-heart simulations using ToR-ORd produce physiological ECG features including QRS duration (80 ms, normal range 78\u00b18 ms), QT interval (350 ms, healthy <430 ms), normal morphological features (R wave progression, isoelectric ST segment, appropriate T wave polarity), activation sequence matching Durrer et al. 1970, and physiological APD distribution patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 demonstrate successful validation at the whole-heart level through quantitative ECG metrics within normal ranges (C61 with citations) and qualitative morphological features (C62-C64). The activation sequence validation (C63) and APD distribution (C64) are shown in Figure 9. This represents successful multi-scale validation from ion channels to ECG.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "6e74e6c5-7993-42cd-800c-686d70edac93",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The ToR-ORd model was developed using strict separation of calibration and validation criteria to demonstrate predictive power. The model's ability to reproduce a wide range of behaviors consistent with experimental studies without optimization toward those specific features suggests generality and high credibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C65, C70-C71 describe the methodological approach and its implications for model credibility. The separation of calibration and validation is clearly documented (Table 1), and the validation results across multiple independent datasets support the claim of predictive power (C71). The methodological principle (C70) is supported by appropriate citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "423ebe75-afb3-4826-adc3-f40400948275",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The reformulation of the L-type calcium current is broadly relevant and generally applicable to human and other species, representing a theoretical contribution beyond the ToR-ORd model itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by the demonstration that the theoretical inconsistency exists across multiple species models (C73) and the biophysical foundation of the corrections (Davies equation, GHK formulation). The improvements in ICaL properties (Figure 2D-F) validate the approach. The generalizability claim is reasonable given the fundamental nature of the corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "825f4946-11c7-4eda-ba96-58454ef62e26",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Limitations of the ORd IKr model may result from single-pulse voltage clamp protocols, and approaches using more comprehensive experimental data enabling dissection of activation and recovery from inactivation may yield more general and plausible models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C76 represent speculation about the source of ORd IKr limitations and suggestions for future modeling approaches. While the Lu-Vandenberg model used in ToR-ORd demonstrates improvement, the specific claim about single-pulse protocols causing the limitations (C75) is not directly tested. These are reasonable hypotheses but lack definitive evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "c184550f-d2af-4ec1-880f-a58ef1f54aab",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Future development of the ToR-ORd model should focus on the ryanodine receptor and sarcoplasmic reticulum calcium release. Current models (including ToR-ORd) have calcium release depend directly on ICaL rather than on calcium concentration adjacent to ryanodine receptors. Improved calcium handling would extend applicability to other arrhythmogenic modes like delayed afterdepolarizations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 identify a known limitation of current cardiac models (C78, described as general knowledge) and propose future directions (C77, C79). These are reasonable assessments of model limitations and appropriate suggestions for future work. However, as these are prospective statements, they represent acknowledged limitations rather than current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "cb53e0f5-bd13-4800-8bbc-b2da7fe658a0",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The ORd model was selected by a panel of experts as the model best suited for regulatory purposes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a factual statement about prior work supported by citation to Dutta et al., 2017a. This provides context for why improving upon the ORd model is important but is not a result of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "31a25781-9565-4801-93e6-161e32c85381",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "AP plateau potential, APD adaptation, and response to sodium current block have strong dependencies on sodium and calcium dynamics, motivating in-depth re-evaluation of the L-type calcium current formulation given its fundamental role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 represent established knowledge about cardiac electrophysiology (C6) and the rationale for focusing on ICaL (C7). These provide scientific justification for the study's approach but are not novel results themselves.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "460f8040-8df9-49f2-97c6-9990dc63e350",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Calibration data were obtained using microelectrode recordings, unipolar electrograms, and monophasic APs (avoiding optical mapping artifacts), and the model was calibrated to show depolarization in response to IK1 block based on literature evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 describe methodological choices in model calibration. These are clearly documented with appropriate citations (C10) and represent sound experimental methodology (C9), but are methodological details rather than scientific results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    },
+    {
+      "id": "1f94e008-51b9-4787-9afb-bc515ed2d424",
+      "content_id": "dede4801-9e6a-4a08-82b1-8a1176ed1745",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The ToR-ORd model follows the general ORd structure with compartmentalization into main cytosolic space, junctional subspace, and sarcoplasmic reticulum (subdivided into junctional and network SR).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 describe the basic model structure shown in Figure 1A. These are straightforward descriptions of model architecture rather than scientific results, though they provide necessary context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:15:13.682578Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "19355968-e68a-4151-9c30-83523e4357fd",
+      "result_id": "21364b15-45be-4b95-a1c6-c174c4af33a7"
+    },
+    {
+      "claim_id": "470bc169-a0b6-401f-a531-f9dadf33b129",
+      "result_id": "21364b15-45be-4b95-a1c6-c174c4af33a7"
+    },
+    {
+      "claim_id": "0457cf22-89f2-4025-84f6-4d608d757a37",
+      "result_id": "21364b15-45be-4b95-a1c6-c174c4af33a7"
+    },
+    {
+      "claim_id": "9da25717-8819-4e86-8092-d989ae309dae",
+      "result_id": "21364b15-45be-4b95-a1c6-c174c4af33a7"
+    },
+    {
+      "claim_id": "181d88b8-7673-4681-9e46-cbcd56819102",
+      "result_id": "21364b15-45be-4b95-a1c6-c174c4af33a7"
+    },
+    {
+      "claim_id": "2aafd6aa-3391-436c-a552-3958eedf180d",
+      "result_id": "21364b15-45be-4b95-a1c6-c174c4af33a7"
+    },
+    {
+      "claim_id": "5104f03b-a1d0-4639-a63a-d0e91bf1eab8",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "31218fa5-d061-42b4-b0d2-cedf260b40e1",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "7862cd3b-1857-4066-aed9-f7a9bd8d3ecc",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "e1aad708-279c-4a4a-aa8d-c1a0e9056add",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "0692d88e-cf6c-4d89-930a-74899322ba89",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "1d27040a-1a76-4246-bbea-dd079b822ad8",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "a3bc41c4-5066-4a32-b12e-aa93bfe62952",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "3e835f97-20da-4bbf-8d33-40b195999da7",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "6aacebb7-557e-439d-80a2-710154236444",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "4da151e2-3c81-4e0b-9869-52465b67744e",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "b1edec9a-645f-41c1-b875-ca6bca30d1cb",
+      "result_id": "80a2e46e-4a2e-48a9-882a-367cc05fea61"
+    },
+    {
+      "claim_id": "9c26676f-de69-4172-9b0e-6a423fcd941e",
+      "result_id": "1ecc7106-0c2e-41e0-85cd-6f69feb7d8a4"
+    },
+    {
+      "claim_id": "350bb8f5-151f-4d29-ab78-18cacd3ab1a7",
+      "result_id": "1ecc7106-0c2e-41e0-85cd-6f69feb7d8a4"
+    },
+    {
+      "claim_id": "80db9186-28fc-4f42-bcba-f93be9125f8b",
+      "result_id": "1ecc7106-0c2e-41e0-85cd-6f69feb7d8a4"
+    },
+    {
+      "claim_id": "74eb8119-ac11-4124-a3bb-0076e2d5c3fd",
+      "result_id": "ff15f68e-007a-4dde-99e8-38ca17e190d1"
+    },
+    {
+      "claim_id": "9df75126-9b22-4285-ae48-26f7e2d413db",
+      "result_id": "ff15f68e-007a-4dde-99e8-38ca17e190d1"
+    },
+    {
+      "claim_id": "67ddfd94-6d0b-4fcc-94c3-a4758ad7469c",
+      "result_id": "ff15f68e-007a-4dde-99e8-38ca17e190d1"
+    },
+    {
+      "claim_id": "b0bb8248-d152-4647-a1ee-b6c4e0b4dfab",
+      "result_id": "ff15f68e-007a-4dde-99e8-38ca17e190d1"
+    },
+    {
+      "claim_id": "f70a32b1-2aaf-4d48-b60b-0e5df599bb0c",
+      "result_id": "2c334f33-1222-42f3-819d-a5c1b317e098"
+    },
+    {
+      "claim_id": "051f7c56-20d6-43af-9802-96a9494c7a88",
+      "result_id": "2c334f33-1222-42f3-819d-a5c1b317e098"
+    },
+    {
+      "claim_id": "583efb19-a55e-4d72-af28-0d7cc1549f1c",
+      "result_id": "1d4d4811-5ce8-455c-8cb6-08649ab48ecb"
+    },
+    {
+      "claim_id": "ed76ee9e-911e-41e1-b617-0588b74b44b4",
+      "result_id": "1d4d4811-5ce8-455c-8cb6-08649ab48ecb"
+    },
+    {
+      "claim_id": "f33a4557-614e-43b0-bf22-a06871d4c8a3",
+      "result_id": "1d4d4811-5ce8-455c-8cb6-08649ab48ecb"
+    },
+    {
+      "claim_id": "0a0733e0-85c0-4099-acb5-c889f1c7478e",
+      "result_id": "388876c4-9b39-4889-9146-8baa9e2e3ce8"
+    },
+    {
+      "claim_id": "7b6e2504-a31c-4104-9404-55c3148ab5d6",
+      "result_id": "388876c4-9b39-4889-9146-8baa9e2e3ce8"
+    },
+    {
+      "claim_id": "e0cff391-ffeb-485a-90e9-fe1be03a24d3",
+      "result_id": "388876c4-9b39-4889-9146-8baa9e2e3ce8"
+    },
+    {
+      "claim_id": "1f5b5080-76dd-4cbd-a4a7-75b203c202d3",
+      "result_id": "388876c4-9b39-4889-9146-8baa9e2e3ce8"
+    },
+    {
+      "claim_id": "d4c795b2-978d-467d-b2c9-dfbe669847ff",
+      "result_id": "388876c4-9b39-4889-9146-8baa9e2e3ce8"
+    },
+    {
+      "claim_id": "1346d670-ca6d-460e-9be2-4857b53e62d8",
+      "result_id": "69c16778-8bd3-4624-a97f-f65f0412d795"
+    },
+    {
+      "claim_id": "fb59397c-602b-4f74-ad42-eeb6dfdb6c1b",
+      "result_id": "69c16778-8bd3-4624-a97f-f65f0412d795"
+    },
+    {
+      "claim_id": "ca527d28-bbc9-4820-b5e9-71e2a5f04f42",
+      "result_id": "1bcd45a0-7a30-405c-a050-21a23740a94d"
+    },
+    {
+      "claim_id": "70669c2d-5d9a-4024-aae4-1fcde5414b26",
+      "result_id": "1bcd45a0-7a30-405c-a050-21a23740a94d"
+    },
+    {
+      "claim_id": "6db2b588-cb13-4249-baa4-f230e85bce2a",
+      "result_id": "1bcd45a0-7a30-405c-a050-21a23740a94d"
+    },
+    {
+      "claim_id": "13ce8fdf-16b7-44fb-8a16-cf327c234bec",
+      "result_id": "1bcd45a0-7a30-405c-a050-21a23740a94d"
+    },
+    {
+      "claim_id": "9ea691f8-5b15-452c-8333-c59069eb0b2c",
+      "result_id": "1bcd45a0-7a30-405c-a050-21a23740a94d"
+    },
+    {
+      "claim_id": "3902bb9e-db65-4f79-8224-0f2c3eb3f5b1",
+      "result_id": "1bcd45a0-7a30-405c-a050-21a23740a94d"
+    },
+    {
+      "claim_id": "eeb32b78-6d1c-4845-bbed-3d6dd2342968",
+      "result_id": "f5ba54fe-1d48-49fc-8d7e-6c7ab712d278"
+    },
+    {
+      "claim_id": "aed47dae-c950-4c2b-9291-62d1fc40b7f8",
+      "result_id": "f5ba54fe-1d48-49fc-8d7e-6c7ab712d278"
+    },
+    {
+      "claim_id": "937271c3-784b-4683-9897-6cc35c1cd534",
+      "result_id": "6c24c494-d482-40fe-a479-a3b0f177322c"
+    },
+    {
+      "claim_id": "828ccba9-785d-4211-95fd-5b4a790f76f8",
+      "result_id": "6c24c494-d482-40fe-a479-a3b0f177322c"
+    },
+    {
+      "claim_id": "bdec3c8e-0116-4486-822d-c5aac2530542",
+      "result_id": "508a21c4-0f09-4721-9be5-b6f8879f8a9e"
+    },
+    {
+      "claim_id": "97dba4de-ce7e-4659-a9bc-ec8bccbdb4a2",
+      "result_id": "2ab032d6-d55f-4e95-a97f-530703296840"
+    },
+    {
+      "claim_id": "761525af-5eb1-42d2-8c83-1c7f91b3267c",
+      "result_id": "2ab032d6-d55f-4e95-a97f-530703296840"
+    },
+    {
+      "claim_id": "8e7bf093-98f1-4461-9078-90946fe14b02",
+      "result_id": "2ab032d6-d55f-4e95-a97f-530703296840"
+    },
+    {
+      "claim_id": "c6013eb5-4e85-4385-86dd-dc020f8d1869",
+      "result_id": "54965a54-120e-4490-a60e-90c3a736a300"
+    },
+    {
+      "claim_id": "1468f9b6-5a2b-49c4-b20f-5e7c7f2bb31b",
+      "result_id": "54965a54-120e-4490-a60e-90c3a736a300"
+    },
+    {
+      "claim_id": "ac38a314-9892-400a-bd60-d9b804bcc8fa",
+      "result_id": "54965a54-120e-4490-a60e-90c3a736a300"
+    },
+    {
+      "claim_id": "9a7b6c4d-3f22-4837-857c-942a7156567f",
+      "result_id": "54965a54-120e-4490-a60e-90c3a736a300"
+    },
+    {
+      "claim_id": "16e6dee8-996c-4778-a57d-18d36c70673f",
+      "result_id": "54965a54-120e-4490-a60e-90c3a736a300"
+    },
+    {
+      "claim_id": "3ef3d52e-b3bb-4bc6-841b-a644d9c05563",
+      "result_id": "9aecd2d4-4c98-4482-9b73-a6ce478cc06d"
+    },
+    {
+      "claim_id": "a7b471ec-6cf8-4823-92bd-816658821997",
+      "result_id": "9aecd2d4-4c98-4482-9b73-a6ce478cc06d"
+    },
+    {
+      "claim_id": "f8471418-586f-498d-a298-e7526978ac8a",
+      "result_id": "9aecd2d4-4c98-4482-9b73-a6ce478cc06d"
+    },
+    {
+      "claim_id": "ac3a4e82-9ab1-4968-95c1-16a3ba07da7d",
+      "result_id": "0dfd27a7-2c08-4384-9813-ff6038832a84"
+    },
+    {
+      "claim_id": "efe3f045-90bb-4eb7-b902-f400bb6ad23b",
+      "result_id": "0dfd27a7-2c08-4384-9813-ff6038832a84"
+    },
+    {
+      "claim_id": "be6a8b81-1641-4e0a-a11a-c9c0eecd97ae",
+      "result_id": "0dfd27a7-2c08-4384-9813-ff6038832a84"
+    },
+    {
+      "claim_id": "b388a0c5-019a-4b36-b13a-753f57fc9a4a",
+      "result_id": "0dfd27a7-2c08-4384-9813-ff6038832a84"
+    },
+    {
+      "claim_id": "eb288ef0-d397-414b-baea-2cc1dc18dc04",
+      "result_id": "6e74e6c5-7993-42cd-800c-686d70edac93"
+    },
+    {
+      "claim_id": "b06ced36-3932-44a8-8584-f32bc28ef386",
+      "result_id": "6e74e6c5-7993-42cd-800c-686d70edac93"
+    },
+    {
+      "claim_id": "86748619-bffd-4bf9-aa11-e68bdaa4236a",
+      "result_id": "6e74e6c5-7993-42cd-800c-686d70edac93"
+    },
+    {
+      "claim_id": "a918e5ad-2285-4f03-9b1b-23c9a86903c8",
+      "result_id": "6e74e6c5-7993-42cd-800c-686d70edac93"
+    },
+    {
+      "claim_id": "f2a3403a-c9c4-43ec-8886-7e916960db2f",
+      "result_id": "423ebe75-afb3-4826-adc3-f40400948275"
+    },
+    {
+      "claim_id": "392eb493-121f-4c7a-96db-a4c82f897d09",
+      "result_id": "825f4946-11c7-4eda-ba96-58454ef62e26"
+    },
+    {
+      "claim_id": "78148582-1cd0-40ba-8d60-8a930435d526",
+      "result_id": "825f4946-11c7-4eda-ba96-58454ef62e26"
+    },
+    {
+      "claim_id": "32029429-9ce9-4e3f-841e-74fd7a14074a",
+      "result_id": "c184550f-d2af-4ec1-880f-a58ef1f54aab"
+    },
+    {
+      "claim_id": "f13850fe-8f35-487b-abb8-845a6cedeb75",
+      "result_id": "c184550f-d2af-4ec1-880f-a58ef1f54aab"
+    },
+    {
+      "claim_id": "8c6dc4d9-6fd5-491b-8141-3eea361bef4f",
+      "result_id": "c184550f-d2af-4ec1-880f-a58ef1f54aab"
+    },
+    {
+      "claim_id": "966b1bcd-18b4-4774-9a1f-ceca1eca31d0",
+      "result_id": "cb53e0f5-bd13-4800-8bbc-b2da7fe658a0"
+    },
+    {
+      "claim_id": "f1701d89-d5e8-4caa-beb6-6e7d6009e003",
+      "result_id": "31a25781-9565-4801-93e6-161e32c85381"
+    },
+    {
+      "claim_id": "54b7c730-5392-4372-9ff5-73b9d64331e0",
+      "result_id": "31a25781-9565-4801-93e6-161e32c85381"
+    },
+    {
+      "claim_id": "d7943a13-a60f-4243-af78-fec63acd7a66",
+      "result_id": "460f8040-8df9-49f2-97c6-9990dc63e350"
+    },
+    {
+      "claim_id": "50f7ce28-8dd2-4747-824a-cd8e7d04f426",
+      "result_id": "460f8040-8df9-49f2-97c6-9990dc63e350"
+    },
+    {
+      "claim_id": "4aa51a0b-1066-423f-8613-9a3ed96f39c7",
+      "result_id": "1f94e008-51b9-4787-9afb-bc515ed2d424"
+    },
+    {
+      "claim_id": "6c2fb48e-9486-40f7-bec0-9d975cbac0d2",
+      "result_id": "1f94e008-51b9-4787-9afb-bc515ed2d424"
+    }
+  ],
+  "comparisons": []
+}

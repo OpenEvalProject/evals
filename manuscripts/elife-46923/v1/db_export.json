@@ -1,0 +1,1860 @@
+{
+  "submission": {
+    "id": "c3ac3750-08ff-487d-8164-eecfc148a699",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T12:06:19.422367Z",
+    "updated_at": "2025-12-02T12:06:19.422367Z"
+  },
+  "content": [
+    {
+      "id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "submission_id": "c3ac3750-08ff-487d-8164-eecfc148a699",
+      "content_type": "manuscript",
+      "content_text": "# Consistent and correctable bias in metagenomic sequencing experiments\n\n## Authors\n\n- Michael R McLaren<sup>1</sup> ([ORCID: 0000-0003-1575-473X](https://orcid.org/0000-0003-1575-473X))\n- Amy D Willis<sup>2</sup> ([ORCID: 0000-0002-2802-4317](https://orcid.org/0000-0002-2802-4317))\n- Benjamin J Callahan<sup>1</sup> ([ORCID: 0000-0002-8752-117X](https://orcid.org/0000-0002-8752-117X)) \u2020\n\n### Affiliations\n\n1. Department of Population Health and Pathobiology North Carolina State University Raleigh United States\n2. Department of Biostatistics University of Washington Seattle United States\n3. Bioinformatics Research Center North Carolina State University Raleigh United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMarker-gene and metagenomic sequencing have profoundly expanded our ability to measure biological communities. But the measurements they provide differ from the truth, often dramatically, because these experiments are biased toward detecting some taxa over others. This experimental bias makes the taxon or gene abundances measured by different protocols quantitatively incomparable and can lead to spurious biological conclusions. We propose a mathematical model for how bias distorts community measurements based on the properties of real experiments. We validate this model with 16S rRNA gene and shotgun metagenomics data from defined bacterial communities. Our model better fits the experimental data despite being simpler than previous models. We illustrate how our model can be used to evaluate protocols, to understand the effect of bias on downstream statistical analyses, and to measure and correct bias given suitable calibration controls. These results illuminate new avenues toward truly quantitative and reproducible metagenomics measurements.\n\n## Introduction\n\nMarker-gene and metagenomic sequencing (jointly, MGS) have transformed the study of biological communities. Extracting and sequencing total DNA from a community can identify thousands of taxa along with their genes and potential functions, while sequencing a phylogenetic marker gene (e.g. 16S rRNA) can quantify taxon abundances (Li, 2015; Quince et al., 2017). MGS measurements of microbial communities are yielding fundamental new insights into the structure and dynamics of microbial ecosystems and the roles of microbes as drivers of host and ecosystem health (Zeevi et al., 2015; Graham et al., 2016; Knight et al., 2017; Callahan et al., 2017; Lehman et al., 2015). Applications of MGS, often under the alternative terms eDNA sequencing or metabarcoding, increasingly extend beyond microbes to the measurement and monitoring of plants, insects, and vertebrates (Bell et al., 2019; Krehenwinkel et al., 2017; Thomas et al., 2016). MGS methods are now being adopted in fields ranging from food safety (Cocolin et al., 2018) to wastewater remediation (Rosso et al., 2018) to forensics (Metcalf et al., 2017) along with biology and medicine. Unfortunately, however, the community compositions measured by MGS are wrong.\n\nMGS measurements are biased: The measured relative abundances of the taxa and genes in the sample are systematically distorted from their true values (Brooks, 2016; Sinha et al., 2017). Bias arises because each step in an experimental MGS workflow preferentially measures (i.e. preserves, extracts, amplifies, sequences, or bioinformatically identifies) some taxa over others (Brooks, 2016; Hugerth and Andersson, 2017; Pollock et al., 2018). For example, bacterial species differ in how easily they are lysed and therefore how much DNA they yield during DNA extraction (Morgan et al., 2010; Costea et al., 2017), and they differ in their number of 16S rRNA gene copies and thus how much PCR product we expect to obtain per cell (Kembel et al., 2012). Most sources of bias are protocol-dependent: Different PCR primers preferentially amplify different sets of taxa (Sipos et al., 2007), different extraction protocols can produce 10-fold or greater differences in the measured proportion of a taxon from the same sample (Costea et al., 2017), and almost every choice in an MGS experiment has been implicated as contributing to bias (D'Amore et al., 2016;\u00a0Hugerth and Andersson, 2017; Sinha et al., 2017; Pollock et al., 2018). Every MGS experiment is biased to some degree, and measurements from different protocols are quantitatively incomparable (Nayfach and Pollard, 2016; Hiergeist et al., 2016; Mallick et al., 2017; Sinha et al., 2017; Gibbons et al., 2018).\n\nThe biases of MGS protocols and the error those biases introduce remain unknown. Thus we do not know whether the measured taxonomic or gene compositions derived from MGS are accurate, or to what extent the biological conclusions derived from them are valid. It is common to assume that conclusions drawn from measurements using the same protocol are robust to MGS bias. But simulated examples have shown that bias can lead to qualitatively incorrect conclusions about which taxa dominate different samples (Kembel et al., 2012; Edgar, 2017), which ecosystems are more similar (Kembel et al., 2012), and which taxa are associated with a given disease (Brooks, 2016). Furthermore, variation in bias limits our ability to make the direct comparisons between results from different experiments that are central to the scientific process. It has been suggested that these issues would be circumvented if bias were the same in every experiment, leading to a number of efforts to define and promulgate standardized MGS protocols (Gilbert et al., 2014; Costea et al., 2017). However, methodological standardization has several limitations. For example, it can be overly restrictive given the variety of ecosystems and biological questions where MGS methods are applied as well as the continual advance in technology, and unmeasured technical variability can introduce experiment-specific biases into nominally standardized methods (Yeh et al., 2018). More important, standardized protocols remain biased and thus still do not provide accurate measurements of the underlying communities.\n\nCurrent attempts to counter bias are limited and of unknown efficacy because of our poor understanding of how bias across the full experimental workflow distorts MGS measurements. Hundreds of published studies compare MGS measurements of defined samples to their expected composition in an effort to characterize the bias of the given protocol (many cited in Hugerth and Andersson, 2017; Pollock et al., 2018). But this approach has limited value so long as we do not know how the error observed in one sample translates to differently composed samples. If we understood how bias acts across samples we might be able to estimate the effect of bias from measurements of samples of defined composition and use those estimates to calibrate measurements of samples of interest to their true values (Thomas et al., 2016; Hardwick et al., 2017). Alternatively, natural communities measured by multiple experiments could be used to calibrate measurements between experiments using different protocols. A quantitative understanding of how bias distorts MGS measurements would also elucidate how statistical analyses and diagnostics are affected by bias and suggest more robust alternatives.\n\nHere we propose and test a mathematical model of how bias distorts taxonomic compositions measured by MGS from their true values. In our model, bias manifests as a multiplication of the true relative abundances by taxon- and protocol-specific factors that are constant across samples of varying compositions. We validate key components of this model, including that bias acts independently on each taxon in a sample, in 16S rRNA gene and shotgun metagenomic sequencing data from bacterial communities of defined composition. We use our proposed model to quantify bias, to partition bias into steps such as DNA extraction and PCR amplification, and to reason about the effects of bias on downstream statistical analyses. Finally, we demonstrate how this model can be used to correct biased MGS measurements when suitable controls are available.\n\n## Results\n\n### A mathematical model of MGS bias\n\nConsider a marker-gene or metagenomic sequencing (MGS) experiment as a multi-step transformation that takes as input biological material and provides as output the taxonomic profile corresponding to each sample\u2014the set of measured taxa and their associated relative abundances (Figure 1A). Each step introduces systematic and random errors that cumulatively lead to error in the measured taxonomic profiles. Bias is a particular, ubiquitous form of systematic error that arises from the different efficiencies with which various taxa are measured (i.e. preserved, extracted, amplified, sequenced, or bioinformatically identified and quantified) at each step.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig1-v1.jpg)\n\n**Figure 1.:** Panel A illustrates a hypothetical marker-gene measurement of an even mixture of three taxa. The observed composition differs from the actual composition due to the bias at each step in the workflow. Panel B illustrates our mathematical model of bias, in which bias multiplies across steps to create the bias for the MGS protocol as a whole.\n\nMany bias mechanisms are thought to act multiplicatively on the taxon abundances, at least to first approximation. For instance, the DNA concentration of a taxon after DNA extraction equals its initial cell concentration multiplied by its DNA yield per cell. This per-cell yield indicates the efficiency of extraction for the taxon, which is is expected to depend on factors such as genome size and the structure of the taxon\u2019s cell wall (Morgan et al., 2010). Therefore, we expect extraction efficiencies to vary among taxa, but be approximately constant for any specific taxon across samples treated with the same protocol. Other multiplicative sources of bias include variation in PCR binding and amplification efficiencies (Wagner et al., 1994; Suzuki and Giovannoni, 1996; Polz and Cavanaugh, 1998; Edgar, 2017) and in marker-gene copy number (Kembel et al., 2012).\n\nInspired by these observations, we propose that at every step in an MGS experiment, the output abundances of individual taxa differ from the input abundances by taxon-specific multiplicative factors (Figure 1), which we refer to as the measurement efficiencies in that step. The measurement efficiencies are determined by the interaction between the experimental protocol and the biological/chemical/physical/informatic state of each taxon in that step, and are therefore independent of the composition of the sample. Typical MGS experiments only measure relative rather than absolute abundances (Gloor et al., 2017), and the change in the relative abundances during a step depend only on the relative efficiencies. This yields the following mathematical model of bias (Figure 1): The relative abundances measured in an MGS experiment are equal to the input relative abundances multiplied by taxon-specific but composition-independent factors (the relative efficiencies) at every step.\n\nThe mathematical accounting of bias is simplified by the use of compositional vectors: vectors for which only the ratios among elements carry meaning. The relative abundances and relative efficiencies can be described as compositional vectors with $K$ non-negative elements, where $K$ is the number of possible taxa. Two vectors $\ud835\udc17$ and $\ud835\udc18$ are compositionally equivalent, denoted $\ud835\udc17\u223c\ud835\udc18$, if $\ud835\udc17=a\u2062\ud835\udc18$ for some positive constant $a$ because the ratios among the elements of $\ud835\udc17$ and $\ud835\udc18$ are the same: $X_{i}/X_{j}=a\u2062Y_{i}/a\u2062Y_{j}$\u00a0(Barcel\u00f3-Vidal et al., 2001). A compositional vector $\ud835\udc17$ of relative abundances can be converted to proportions, which we denote $Pr\u2061(\ud835\udc17)$, by dividing the taxon abundances by their sum, $Pr\u2061(\ud835\udc17)=\ud835\udc17/\\sum_{i}X_{i}$, without changing its meaning in terms of the ratios among taxa. For example, the vector of observed proportions in Figure 1 of (4%, 72%, 24%) is compositionally equivalent to the vector (1,\u00a018,\u00a06) obtained by dividing all abundances by that of the first taxon.\n\nFor a given sample, let $\ud835\udc00$ be the vector of actual relative abundances and $\ud835\udc0e$ be the vector of observed (measured) relative abundances. Subscripts denote\u00a0specific taxa; for\u00a0example $A_{i}$ is the relative abundance of taxon $i$. Similarly, let $\ud835\udc01^{(P_{l})}$ be the vector of the relative efficiencies of each taxon at step $l$ in Protocol $P$. (Interactions between steps are allowed; see Appendix 1.) Our model of bias can be stated mathematically as\n\n$$\n\ud835\udc0e\u223c\ud835\udc00\u22c5\ud835\udc01^{(P_{1})}\u22c5\ud835\udc01^{(P_{2})}\u22c5\u22ef\u22c5\ud835\udc01^{(P_{L})},\n$$\n\nwhere $\u22c5$ denotes element-wise multiplication of two vectors (Figure 1). We define the bias of Protocol $P$ by the product over all steps, $\ud835\udc01^{(P)}\u223c\ud835\udc01^{(P_{1})}\u22c5\ud835\udc01^{(P_{2})}\u22c5\u22ef\u22c5\ud835\udc01^{(P_{L})}$. The observed composition is then simply the actual composition multiplied by the protocol\u2019s bias,\n\n$$\nO\u223cA\u22c5B^{(P)}.\n$$\n\nWhen considering samples measured by the same protocol, we will drop the superscript $P$ and simply refer to the total protocol bias as $\ud835\udc01$.\n\nFrom Equation 2 we see that the ratio between the observed relative abundances of any two taxa $i$ and $j$ is\n\n$$\n\\frac{O_{i}}{O_{j}}=\\frac{A_{i}B_{i}}{A_{j}B_{j}},\n$$\n\nand the observed proportion of taxon $i$ is\n\n$$\nPr(\ud835\udc0e)_{i}=\\frac{O_{i}}{\\sum_{j=1}^{K}O_{j}}=\\frac{Pr(\ud835\udc00)_{i}B_{i}}{\\sum_{j=1}^{K}Pr(\ud835\udc00)_{j}B_{j}}.\n$$\n\nThe denominator, $\\sum_{j=1}^{K}Pr(\ud835\udc00)_{j}B_{j}$, is the sample mean efficiency\u2014the average efficiency of the sampled individuals.\n\nThe systematic error in the measured composition under our model is $\ud835\udc0e/\ud835\udc00\u223c\ud835\udc01$, where $/$ denotes element-wise division and is referred to as the compositional difference (Aitchison, 1992). The compositional difference unites the experimental notion of bias\u2014variation in the efficiencies with which different taxa are measured\u2014with the statistical notion of bias\u2014the difference between the expected value of an estimate and the true value\u2014with the understanding we are considering the compositional difference rather than the conventional Euclidean difference between compositions.\n\n#### Properties and implications of the model\n\n##### Bias is fully described by the relative efficiencies of the total workflow\n\nThe bias of individual steps only influences the measurement error through their product, $\ud835\udc01^{(P)}$. Consequently, knowledge of the total protocol bias is sufficient to determine how bias affects the measured taxonomic profiles even if the biases of the individual protocol steps (the $\ud835\udc01^{(P_{l})}$) remain unknown. The bias $\ud835\udc01^{(P)}$ has just $K$\u22121 parameters, denoting the relative efficiencies with which the $K$ taxa of interest are measured by the protocol as a whole, and fully describes the effect of bias on measurements of those $K$ taxa in all samples.\n\n##### Systematic error in taxon ratios, but not in taxon proportions, is independent of sample composition\n\nThe fold-error in the observed ratios of the abundances of taxon $i$ and taxon $j$ relative to the actual ratio in their abundances is $(O_{i}/O_{j})/(A_{i}/A_{j})=B_{i}/B_{j}$ (Equation 3). This error depends only on the ratio between the total protocol efficiencies of taxon $i$ and taxon $j$ and is independent of the rest of the sample. Critically, this means that the systematic error in taxon ratios caused by bias will remain the same in samples of varying composition.\n\nIn contrast, the error in the proportion of a taxon depends on the sample composition. The fold-error in the observed proportion of taxon $i$ relative to its actual proportion is\n\n$$\n\\frac{Pr(O)_{i}}{Pr(A)_{i}}=\\frac{B_{i}}{\\sumj=1KPr\u2061(A)_{j}B_{j}}.\n$$\n\nThis error depends on the sample mean efficiency $\\sum_{j}Pr(\ud835\udc00)_{j}B_{j}$ and thus depends on the proportions of all the other taxa in the sample. Intuitively, bias leads to over-estimation of taxa that are more easily measured than the community average in the given sample. As a result, the same taxon can be over-estimated in samples dominated by low-efficiency taxa and under-estimated in samples dominated by high-efficiency taxa.\n\nTo illustrate, we consider the hypothetical measurement of a second community sample (Sample $S_{2}$ in Figure 2) alongside that of the even sample from Figure 1 (Sample $S_{1}$ in Figure 2). The dominance of the low-efficiency Taxon 1 in Sample $S_{2}$ substantially lowers its sample mean efficiency compared to the even-mixture Sample $S_{1}$, changing the fold-error in all taxon proportions. In particular, Taxon 3 changes from having a lower-than-average efficiency in Sample $S_{1}$ to a higher-than-average efficiency in Sample $S_{2}$. As a result, its observed proportion is lower than its actual proportion in Sample $S_{1}$, but higher than its actual proportion in Sample $S_{2}$! Yet the fold-error in the ratios among taxa is identical in both samples and equal to the bias (Figure 2, bottom row).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig2-v1.jpg)\n\n**Figure 2.:** The even community from Figure 1 and a second community containing the same three taxa in different proportions are measured by a common MGS protocol. Measurements of both samples are subject to the same bias, but the magnitude and direction of error in the taxon proportions depends on the underlying composition (top row). In contrast, when the relative abundances and bias are both viewed as ratios to a fixed taxon (here, Taxon 1), the consistent action of bias across samples is apparent (bottom row).\n\n##### Analyses based on fold-changes in taxon ratios are insensitive to bias, while analyses based on taxon proportions can give spurious results\n\nAlthough it is widely understood that bias distorts individual community profiles, it is often thought to effectively \u2018cancel out\u2019 when analyzing the differences between samples that have been measured by the same protocol. Unfortunately, simulating measurement under our model easily provides examples where common analyses give qualitatively incorrect results. In Figure 2, for example, bias causes the uneven Sample $S_{2}$ to appear to have a more even distribution of taxa than the perfectly even Sample $S_{1}$. As a result, any analysis of alpha diversity that incorporates evenness (e.g. the Shannon or Inverse Simpson indices) will incorrectly conclude that Sample $S_{2}$ is more diverse. The previous section provides a general explanation as to why, for many analyses, bias does not simply cancel: The underlying statistics are functions of the individual taxon proportions, the error of which varies inconsistently across samples. Consequently, proportion-based analyses can lead to qualitatively incorrect conclusions. As a further example, the actual proportion of Taxon 3 decreases from Sample $S_{1}$ to Sample $S_{2}$ in Figure 2, but the measured proportion increases!\n\nIn contrast, the fold-error in taxon ratios is independent of sample composition, and fold-changes in taxon ratios across samples are insensitive to bias. Consider the fold-change in the ratio of a pair of taxa $i$ and $j$ between two samples $s$ and $t$. Following Equation 3, the observed change is\n\n$$\n\\frac{O_{i}(s)}{O_{j}(s)}/\\frac{O_{i}(t)}{O_{j}(t)}=\\frac{A_{i}(s)B_{i}}{A_{j}(s)B_{j}}/\\frac{A_{i}(t)B_{i}}{A_{j}(t)B_{j}}=\\frac{A_{i}(s)}{A_{j}(s)}/\\frac{A_{i}(t)}{A_{j}(t)},\n$$\n\nand thus equals the true change. That is, the fold-change in taxon ratios between samples is invariant to bias. More generally, the compositional difference between samples is invariant to multiplication by a fixed vector (Aitchison, 1992) and thus to bias,\n\n$$\nO(s)/O(t)\u223c(A(s)\u22c5B)/(A(t)\u22c5B)\u223cA(s)/A(t).\n$$\n\nReturning to the samples in Figure 2, the actual and observed ratios of Taxon 2 to Taxon 1 both change by the same factor of 1/15 from Sample $S_{1}$ to Sample $S_{2}$, and the actual and observed compositional difference between samples is (1,\u00a01/15,\u00a04/15). Equation 7 shows that any analysis that depends only on the compositional differences between samples will be invariant to bias under our model.\n\n##### The systematic difference between measurements from different protocols is given by the difference in their biases\n\nConsider Protocol $P$ with bias $\ud835\udc01^{(P)}$ and reference Protocol $R$ with bias $\ud835\udc01^{(R)}$. If both protocols measure the same sample with actual composition $\ud835\udc00$, the compositional difference between their measurements is\n\n$$\nO^{(P)}/O^{(R)}\u223cA\u22c5B^{(P)}/(A\u22c5B^{(R)})=B^{(P)}/B^{(R)}.\n$$\n\nThe actual composition drops from the equations and the difference in their measurements is simply the compositional difference in the biases of each protocol, which we refer to as the differential bias $\ud835\udc01^{(P/R)}\u2261\ud835\udc01^{(P)}/\ud835\udc01^{(R)}$ of Protocol $P$ relative to the reference Protocol $R$. Measurements on common samples are related to one another by $\ud835\udc0e^{(P)}\u223c\ud835\udc0e^{(R)}\u22c5\ud835\udc01^{(P/R)}$, independent of the actual composition of the sample. Usefully, differential bias is mathematically equivalent to bias if we consider the \u2018reference\u2019 compositions measured by Protocol $R$ as the truth.\n\n##### Estimates of bias from control samples can be used to correct measurements of other samples\n\nThe consistency of bias across samples makes it possible to estimate bias from samples of known composition, referred to as calibration controls, and to use that estimate $\ud835\udc01^$ to calibrate, or remove the bias from, measurements of other samples with unknown compositions. A point estimate of the bias of $K$ taxa present with known relative abundances in control sample $c$ is given by the compositional difference between the observed and actual compositions, $\ud835\udc01^\u223c\ud835\udc0e\u2062(c)/\ud835\udc00\u2062(c)$. In Materials and methods, we describe a general method for estimating bias from multiple controls by maximizing the explained compositional error in the control measurements. Measurements from controls containing different taxa can be combined into a single estimate of bias provided that the controls have sufficient taxonomic overlap (Appendix 2).\n\nOnce bias has been estimated for a set of taxa, it can be used to calibrate the relative abundances of those taxa in an unknown sample. Letting $\ud835\udc0e$ denote the measured relative abundances for these taxa, the estimate $\ud835\udc00^$ of the actual relative abundances is\n\n$$\nA^\u223cO/B^.\n$$\n\nThat is, the calibrated abundances are found by compositionally subtracting the estimated bias from the original measurement. Through its use of compositional vectors, Equation 9 automatically accounts for differences in composition between the controls and the target sample. Calibrated estimates of the true taxon proportions are obtained by normalizing the elements of $\ud835\udc00^$ to sum to 1.\n\nAn alternative form of calibration we call reference calibration can be performed using control samples whose true composition is unknown but that have been measured by a reference Protocol $R$. Estimation and calibration proceed as before but with the control composition $\ud835\udc00\u2062(c)$ replaced by the reference measurement $\ud835\udc0e^{(R)}\u2062(c)$. In this case, the calibrated composition is an estimate of the measurement we would expect if the target sample had been measured by the reference protocol.\n\n### Testing the model with mock communities\n\nWe tested our model of bias in data from two studies, Brooks et al.\u00a0(2015) and Costea et al. (2017), that evaluated the bias of marker-gene and shotgun metagenomic sequencing, respectively, using mock microbial communities in samples of varying composition.\n\n#### Marker-gene sequencing of even mixtures of various bacterial taxa\n\nBrooks et al.\u00a0(2015) generated taxonomic profiles from 71 samples of 58 unique mock communities by amplicon sequencing of\u00a0the V1-V3 region of the 16S rRNA gene. Each unique mock community consisted of an even mixture of between two and seven bacterial taxa. Each sample was measured in three experiments employing a common experimental workflow, but beginning from different starting points: even mixtures of cells, of extracted DNA, and of PCR product. The authors reported large systematic errors in the taxon proportions measured from the cell and DNA mixtures, which they explained in part by a highly parameterized linear model with many interaction terms. Here we re-analyze the data from this study in order to evaluate our model of bias and its performance relative to alternatives.\n\nThe proportions measured from the cell-mixture mock communities differed greatly from the expected even proportions of each taxon (Figure 3A). The ratios between pairs of taxa also diverged sharply from the ratio of 1 expected in these even mixtures (Figure 3D). However, and as predicted by our model (see Properties and implications), the error in the ratios was consistent across samples (Figure 3D) while the error in the proportions varied dramatically in both magnitude and direction (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig3-v1.jpg)\n\n**Figure 3.:** The top row compares the observed proportions of individual taxa to the actual proportions (Panel A) and to those predicted by our fitted bias model (Panel B). Panel A shows significant error across all taxa and mixture types that is almost entirely removed once bias is accounted for in Panel B. Panel C shows the observed error in proportions of individual taxa, while Panel D shows the error in the ratios of pairs of taxa for five of the seven taxa. The ratio predicted by the fitted model is given by the black cross in Panel D. As predicted by our model, the error in individual proportions (Panel C) depends highly on sample composition, while the error in ratios (Panel D) does not.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The observed error in taxon ratios (colored dots) against the fitted model prediction (black cross) for the three mixture experiments of Brooks et al. (2015).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Comparison of the observed proportions with three types of expected proportions\u2014the actual proportions, the proportions predicted from the estimated 16S copy numbers in Table 3, and the proportions predicted by the fitted bias model\u2014for the three mixture experiments of Brooks et al.\u00a0(2015). Proportions $p$ are transformed to log-odds ($ln\u2061[p/(1-p)]$) to avoid compressing errors near $p=0$ and $p=1$, and average mean squared error (MSE) of the log-odds are shown.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Comparison of the model fits for the simple linear model, the linear interactions model of Brooks et al.\u00a0(2015), and our model. The simple linear model has a poor fit, while the Brooks et al.\u00a0(2015) model closely fits the data but does so by having more parameters per taxon (63 per taxon) than distinct sample compositions (58). Our model fits nearly as well as the Brooks et al.\u00a0(2015) model for the Cells and DNA mixtures, while having vastly fewer parameters (6 versus 441 for all taxa). Proportions $p$ are transformed to log-odds ($ln\u2061[p/(1-p)]$) to avoid compressing errors near $p=0$ and $p=1$. The simple linear model with and without an intercept term gives nearly identical results except near zero; here shown without. Only taxa with non-zero actual abundance are plotted, and proportions predicted to be greater than one by the simple linear model are not shown.\n\nOur model explained almost all of the error in the measured compositions of the cell mixtures. We estimated bias from all samples by a simple point-estimation procedure (Materials and\u00a0methods; Table 1). We then used the estimated bias to predict the observed compositions from the expected even mixtures using Equation 2. The measured pairwise ratios closely matched the ratios predicted by our model\u2014the ratios of the efficiencies of the two taxa (black crosses in Figure 3D). The proportions predicted from the fitted model reduced the mean squared error by 98.8% and closely matched the observed proportions (Figure 3B).\n\n**Table 1.**\n Estimated bias for the three Brooks et al.\u00a0(2015) mixture experiments.The first three columns show the bias estimated in each mixture experiment; the second three columns show the bias estimated for individual protocol steps from the mixture estimates. In each case, bias is shown as relative to the average taxon; that is, the efficiency of each taxon is divided by the geometric mean efficiency of all seven taxa. The last three rows summarize the multiplicative error in taxon ratios due to bias and noise. Taxa are ordered by decreasing efficiency in the cell mixtures. Abbreviations: PCR prod.: PCR product; Seq.\u00a0+\u00a0Inf.: Sequencing\u00a0+\u00a0Informatics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Mixtures</th>\n      <th colspan=\"3\">Steps</th>\n    </tr>\n    <tr>\n      <th>Taxon</th>\n      <th>Cells</th>\n      <th>DNA</th>\n      <th>PCR prod.</th>\n      <th>Extraction</th>\n      <th>PCR</th>\n      <th>Seq.+Inf.</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Lactobacillus iners</td>\n      <td>4.7</td>\n      <td>2.3</td>\n      <td>1.2</td>\n      <td>2.0</td>\n      <td>1.9</td>\n      <td>1.2</td>\n    </tr>\n    <tr>\n      <td>Sneathia amnii</td>\n      <td>4.6</td>\n      <td>2.4</td>\n      <td>1.3</td>\n      <td>1.9</td>\n      <td>1.8</td>\n      <td>1.3</td>\n    </tr>\n    <tr>\n      <td>Lactobacillus crispatus</td>\n      <td>2.3</td>\n      <td>0.5</td>\n      <td>0.9</td>\n      <td>4.3</td>\n      <td>0.6</td>\n      <td>0.9</td>\n    </tr>\n    <tr>\n      <td>Prevotella bivia</td>\n      <td>1.8</td>\n      <td>0.4</td>\n      <td>0.9</td>\n      <td>4.6</td>\n      <td>0.4</td>\n      <td>0.9</td>\n    </tr>\n    <tr>\n      <td>Atopobium vaginae</td>\n      <td>0.3</td>\n      <td>1.1</td>\n      <td>1.0</td>\n      <td>0.3</td>\n      <td>1.0</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>Streptococcus agalactiae</td>\n      <td>0.2</td>\n      <td>2.0</td>\n      <td>0.9</td>\n      <td>0.1</td>\n      <td>2.2</td>\n      <td>0.9</td>\n    </tr>\n    <tr>\n      <td>Gardnerella vaginalis</td>\n      <td>0.2</td>\n      <td>0.4</td>\n      <td>0.8</td>\n      <td>0.4</td>\n      <td>0.5</td>\n      <td>0.8</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Max pairwise bias</td>\n      <td>29.3</td>\n      <td>6.1</td>\n      <td>1.6</td>\n      <td>36.6</td>\n      <td>5.2</td>\n      <td>1.6</td>\n    </tr>\n    <tr>\n      <td>Avg. pairwise bias</td>\n      <td>5.6</td>\n      <td>2.7</td>\n      <td>1.2</td>\n      <td>5.5</td>\n      <td>2.3</td>\n      <td>1.2</td>\n    </tr>\n    <tr>\n      <td>Avg. pairwise noise</td>\n      <td>1.2</td>\n      <td>1.2</td>\n      <td>1.3</td>\n      <td>\u2014</td>\n      <td>\u2014</td>\n      <td>\u2014</td>\n    </tr>\n  </tbody>\n</table>\n\nThe DNA and PCR-product mixture experiments confirmed that our model can also effectively describe partial MGS workflows. The compositions measured from DNA mixtures were affected by large systematic errors that were well explained by our model, while the systematic error in compositions measured from the PCR mixtures was small compared to the random errors (Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2). Notably, the bias in DNA mixtures substantially differed from the bias in the cell mixtures (Table 1 and Figure 3\u2014figure supplement 1). This observation suggests that PCR (performed in both experiments) and DNA extraction (performed only in the cell-mixture experiment) are both large, independent sources of bias that each act in accordance with our model.\n\nOur model better explains the data from the cell and DNA mixtures than proposed alternatives while employing a small number of parameters (6, equal to the number of taxa minus 1). Two recent studies (Krehenwinkel et al., 2017; Bell et al., 2019) used simple linear regression of the observed proportion of a taxon against its actual proportion, which uses 7 or 14 parameters for all taxa depending on whether intercept terms are included. Such models do not constrain the observed proportions to the [0,\u00a01] interval. More critically, they cannot explain that the observed proportion of a given taxon can be higher than or lower than its actual proportion in samples of different composition (e.g. L. crispatus in Figure 3C), while such behavior is a straightforward consequence of our model. Brooks et al.\u00a0(2015) attempted to overcome this limitation by adding second and third-order interaction terms between taxa to the linear model. This model obtains a close fit at the cost of vastly increased model complexity\u2014441 parameters for all taxa instead of just 6. As a result, the interactions model is likely to overfit and poorly predict the measured compositions with different compositions from which it is trained on. Figure 3\u2014figure supplement 3 compares the fit of our model to the simple linear model and the linear interactions model.\n\n#### Metagenomic sequencing of fecal samples with a spike-in mock community\n\nThe Phase III experiment of Costea et al. (2017) performed shotgun metagenomic sequencing of a cellular mock community spiked into fecal samples. The mock spike-in contained 10 bacterial taxa with known abundance spanning 2.5 orders of magnitude and (unintentionally) an Escherichia/Shigella contaminant with unknown true abundance. It was added to fecal specimens from eight individuals as well as a blank \u2018mock-only\u2019 sample. DNA was then extracted from each specimen using three distinct DNA extraction protocols (Protocols H, Q, and W) and measured via a common shotgun sequencing protocol. Here we test whether bias among the spike-in taxa is consistent across the varying backgrounds of the nine specimens.\n\nTaxonomic profiles measured by MetaPhlAn2 (Materials and methods) showed substantial variation in the native bacterial composition across fecal specimens and in the proportion formed by the spike-in, both of which were protocol-dependent (Figure 4A). In contrast, the observed relative abundances of the spike-in taxa were consistent across specimens for a given protocol (Figure 4A). This observation is what we expect given that the true spike-in composition is fixed, since our model predicts that the error in the ratios among the spike-in taxa is independent of the presence and abundance of other taxa. Figure 4A shows abundances relative to the geometric mean of the 10 mock taxa. The average difference between the observed and actual abundance for each taxon estimates the bias of the protocol in terms of the taxon\u2019s efficiency relative to the average taxon (Figure 4\u2014figure supplement 1 and Table 2). The bias shows qualitative differences between protocols, with certain mock taxa being enriched by one protocol and diminished by another. Also, the consistent difference in the observed relative abundance of the contaminant indicates a consistent differential bias between Protocol W and the other two protocols of the contaminant relative to the 10 mock taxa. These results indicate a consistent and unique bias associated with each protocol when bias is measured in accordance to our model.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig4-v1.jpg)\n\n**Figure 4.:** Panel A shows the variation in bacterial composition across protocols and specimens (Labels 1 through 8 denote fecal specimens; M denotes the mock-only specimen) and Panel B shows the relative abundance of the 10 mock taxa and the spike-in contaminant (dots) against the actual composition (black line). In Panel A, color indicates source (mock, contaminant, or native gut taxon) and Family for native bacterial taxa with a proportion of 0.02 in at least one sample. Families are colored by phylum (Red: Actinobacteria, Green: Bacteroidetes, Blue: Firmicutes, Orange: Verrucomicrobia). In Panel B, abundance is divided by the geometric mean of the mock (non-contaminant) taxa in that sample.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Estimated bias for the 10 mock taxa for the three protocols in the Costea et al. (2017) experiment. Bias is shown as relative to the average taxon; that is, the efficiency of each taxon is divided by the geometric mean efficiency of all taxa. The estimated efficiencies are shown as the best estimate (dark dot) multiplied and divided by two geometric standard errors (lines), along with the observations from individual samples (translucent dots).\n\n**Table 2.**\n Estimated bias and differential bias among the spike-in taxa for the three protocols (Protocols H, Q, and W) in the Costea et al.\u00a0(2017) experiment.The first three columns show the bias of the given protocol for the 10 mock taxa; the second three columns show the differential bias between protocols for the 10 mock taxa and the contaminant. In each case, bias is shown as relative to the average mock (non-contaminant) taxon; that is, the efficiency of each taxon is divided by the geometric mean efficiency of the 10 mock taxa. The last three rows summarize the multiplicative error in taxon ratios due to bias and noise; the contaminant is excluded from these statistics to allow direct comparison between bias and differential bias. Taxa are ordered as in Figure 4B.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Protocol</th>\n      <th colspan=\"3\">Protocol/Reference</th>\n    </tr>\n    <tr>\n      <th>Taxon</th>\n      <th>H</th>\n      <th>Q</th>\n      <th>W</th>\n      <th>H/Q</th>\n      <th>H/W</th>\n      <th>Q/W</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Prevotella melaninogenica</td>\n      <td>2.81</td>\n      <td>1.55</td>\n      <td>1.37</td>\n      <td>1.82</td>\n      <td>2.05</td>\n      <td>1.12</td>\n    </tr>\n    <tr>\n      <td>Clostridium perfringens</td>\n      <td>1.18</td>\n      <td>0.49</td>\n      <td>1.14</td>\n      <td>2.41</td>\n      <td>1.04</td>\n      <td>0.43</td>\n    </tr>\n    <tr>\n      <td>Salmonella enterica</td>\n      <td>1.77</td>\n      <td>2.29</td>\n      <td>0.79</td>\n      <td>0.77</td>\n      <td>2.25</td>\n      <td>2.90</td>\n    </tr>\n    <tr>\n      <td>Clostridium difficile</td>\n      <td>0.11</td>\n      <td>0.09</td>\n      <td>0.22</td>\n      <td>1.24</td>\n      <td>0.49</td>\n      <td>0.40</td>\n    </tr>\n    <tr>\n      <td>Lactobacillus plantarum</td>\n      <td>0.02</td>\n      <td>0.77</td>\n      <td>0.35</td>\n      <td>0.02</td>\n      <td>0.05</td>\n      <td>2.18</td>\n    </tr>\n    <tr>\n      <td>Vibrio cholerae</td>\n      <td>2.10</td>\n      <td>1.16</td>\n      <td>0.89</td>\n      <td>1.81</td>\n      <td>2.37</td>\n      <td>1.31</td>\n    </tr>\n    <tr>\n      <td>Clostridium saccharolyticum</td>\n      <td>1.21</td>\n      <td>1.44</td>\n      <td>0.59</td>\n      <td>0.84</td>\n      <td>2.05</td>\n      <td>2.45</td>\n    </tr>\n    <tr>\n      <td>Yersinia pseudotuberculosis</td>\n      <td>1.46</td>\n      <td>1.35</td>\n      <td>0.66</td>\n      <td>1.08</td>\n      <td>2.21</td>\n      <td>2.05</td>\n    </tr>\n    <tr>\n      <td>Blautia hansenii</td>\n      <td>0.54</td>\n      <td>0.74</td>\n      <td>1.80</td>\n      <td>0.72</td>\n      <td>0.30</td>\n      <td>0.41</td>\n    </tr>\n    <tr>\n      <td>Fusobacterium nucleatum</td>\n      <td>46.29</td>\n      <td>4.98</td>\n      <td>16.51</td>\n      <td>9.30</td>\n      <td>2.80</td>\n      <td>0.30</td>\n    </tr>\n    <tr>\n      <td>Contaminant</td>\n      <td>\u2014</td>\n      <td>\u2014</td>\n      <td>\u2014</td>\n      <td>0.89</td>\n      <td>2.13</td>\n      <td>2.38</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Max pairwise\u00a0bias</td>\n      <td>2751</td>\n      <td>56</td>\n      <td>74</td>\n      <td>428</td>\n      <td>59</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>Avg. pairwise bias</td>\n      <td>9.7</td>\n      <td>3.2</td>\n      <td>3.5</td>\n      <td>4.7</td>\n      <td>3.9</td>\n      <td>2.8</td>\n    </tr>\n    <tr>\n      <td>Avg. pairwise noise</td>\n      <td>1.3</td>\n      <td>1.5</td>\n      <td>1.1</td>\n      <td>1.5</td>\n      <td>1.3</td>\n      <td>1.5</td>\n    </tr>\n  </tbody>\n</table>\n\n### Applications of the model\n\n#### Calibration\n\nOur model implies that a protocol\u2019s bias can be estimated from control sample(s) of known composition and used to calibrate (through Equation 9) the measured compositions of unknown samples towards their true compositions. In the Brooks et al.\u00a0(2015) cell mixtures, we estimated the bias from two samples containing all seven taxa and used this estimate to calibrate the measurements of the other 69 samples. Calibration reduced the mean squared error of the proportions in the calibrated samples by 92.6% and the average Bray-Curtis dissimilarity between the actual and observed compositions from 0.35 to 0.08. In the Costea et al. (2017) dataset, the measured composition of the spike-in mock community deviated from the truth in a\u00a0protocol-specific fashion (Figure 5, top row). We estimated the bias of each protocol on the mock taxa from three fecal specimens and used those estimates to calibrate all samples (Materials and methods). Calibration removed most of the systematic error and greatly increased the accuracy of the measurements (Figure 5, middle row).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig5-v1.jpg)\n\n**Figure 5.:** For the sub-community defined by the mock spike-in of the Costea et al. (2017) dataset, we estimated bias from three specimens (the estimation set \u2018Est\u2019) and used the estimate to calibrate all specimens. The left column shows taxon relative abundances as in Figure 4B and the right column shows the first two principal components from a compositional principle-components analysis (Gloor et al., 2017). The top row shows the measurements before calibration; the middle, after calibration to the actual composition; and the bottom, after calibration to Protocol W.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Precision in bias estimate decreases with the number of control samples and depends on the noise associated with each taxon. For Protocol H in the Costea et al. (2017) experiment, Panel A shows the geometric standard error in the relative efficiencies of the 10 mock taxa (which jointly form the estimated bias) versus the number of control samples used to estimate the bias. As elsewhere, the efficiency of each taxon is divided by the geometric mean efficiency of all 10 mock taxa. Panel B shows the observed against the actual relative abundances, as in Figure 4. The two marked samples (from Individual 5 and the mock-only sample M) have unusually high observed abundances of L. plantarum and B. hansenii and are largely responsible for the much higher standard error seen for these two taxa.\n\nRandom error, or noise, in the measurement process creates error in the estimated bias that propagates into the calibrated measurements. To evaluate the effect of noise on the accuracy of bias estimation, we picked the protocol with an intermediate noise level (Protocol H) and estimated the standard error in the relative efficiencies as a function of the number of control samples (Figure 5\u2014figure supplement 1). Because noise was much weaker than bias, standard errors were less than the bias even for a single control measurement, suggesting substantial benefits from calibration even with a limited number of control observations. The results further suggest that three or four control measurements for a taxon substantially reduces the risk of inaccurate bias estimates due to occasional large random errors.\n\nDifferential bias between experiments (Equation 8) can be estimated from samples common to each experiment, even if the actual composition of the common samples is unknown. Differential bias can then be used to calibrate measurements from various experiments to those of a chosen reference protocol, thereby making measured compositions from different experiments quantitatively comparable even if their fidelity to the true compositions remains unclear. We illustrate calibration to a reference protocol using the multi-protocol design of the Costea et al. (2017) experiment (Figure 5). We defined the measurements by Protocol W as the reference composition that was then used in place of the actual composition in our calibration procedure. This greatly reduced the systematic differences between measurements from different protocols, without necessarily improving the accuracy compared to the actual composition (Figure 5, bottom row).\n\n#### Bias measurement as a means of evaluating and improving protocols\n\nUnder our model, the compositional vector of relative efficiencies completely describes the effect of bias in samples of any composition, and thus is the correct way to measure and evaluate bias.\n\nFor the purpose of selecting less-biased protocols, the overall magnitude of bias can be quantified through the use of ratio-based summary statistics. We provide two such statistics for the Brooks et al.\u00a0(2015) experiment in Table 1 and the Costea et al. (2017) experiment in Table 2. The maximum pairwise bias, equal to the geometric range of the relative efficiencies, indicates the maximum error due to bias in the ratio of any two taxa. The average pairwise bias indicates the magnitude of the multiplicative error averaged over all pairs of taxa. For the three shotgun protocols in Table 2, these statistics indicate that Protocol H has a much larger bias than the other two protocols, though one should keep in mind that the large values for Protocol H are heavily influenced by its extremely low efficiency for L. plantarum and high efficiency for F. nucleatum. Summarizing the residual error in the control samples leads to an analogous average pairwise measure of the noise, or random error, associated with each protocol, which we also include in the tables. The noise measure for the three shotgun protocols indicates that, in this case, the least biased protocol (Protocol Q) also yielded the noisiest measurements of the mock taxa. However, the average noise of the protocols decreases with the propensity of the protocol to sequence the mock over the native gut taxa (Figure 4A), indicating that the greater noise of Protocol Q may be at least partially an artifact of limited sequencing depth.\n\nGiven suitable experimental designs, the estimated vectors of relative efficiencies can be used to quantify the bias attributable to specific parts of the workflow (Materials and methods and Appendix 1). In the Brooks et al.\u00a0(2015) study, the same MGS workflow was run from different starting points: cells, extracted DNA, and PCR product. Comparing the bias resulting from different starting points leads to estimates of the bias attributable to DNA extraction, PCR amplification, and sequencing plus (bio)informatics (Figure 3; Figure 6A). For instance, dividing the relative efficiencies measured in the cell mixtures by those in the PCR mixtures provides an estimate of the bias that arises during DNA extraction. These estimates indicate that for these taxa and workflow, DNA extraction is the largest single source of bias, although PCR bias was also substantial. We can alternately understand these estimates through their predicted effect on the composition of an even mixture of taxa as it moves through the experimental workflow (Figure 6B), which clearly shows how extraction and PCR can oppose each other or work together. PCR and extraction bias acted in opposite directions for some taxa, such as L. crispatus and P. bivia, and in the same direction for others, such as G. vaginalis and for L. iners, leading to more moderate or extreme total relative efficiencies, respectively.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig6-v1.jpg)\n\n**Figure 6.:** Panel A shows the bias estimate for each step in the experimental workflow (DNA extraction, PCR amplification, and sequencing + (bio)informatics), as well as the bias imposed by performing 16S CN correction (i.e. dividing by the estimated number of 16S copies per genome). Bias is shown as relative to the average taxon\u2014that is, the efficiency of each taxon is divided by the geometric mean efficiency of all seven taxa\u2014and the estimated efficiencies are shown as the best estimate multiplied and divided by two geometric standard errors. Panel B shows the composition through the workflow, starting from an even mixture of all seven taxa, obtained by sequentially multiplying the best estimates in Panel A.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46923/elife-46923-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** In the Brooks et al.\u00a0(2015) experiment, variation in 16S copy number is moderately predictive of PCR bias (A) but not of total bias (B). The grey line corresponds to $y=x$, or perfect agreement between CN and the estimated bias.\n\nIn the Costea et al. (2017) study, the same MGS workflow with different DNA extraction protocols was used to measure a common set of samples. This design implies that the differential bias between protocols (Table 2) can be attributed specifically to the effect of extraction (including possible effects of extraction on downstream steps; see Appendix 1). The differential bias of Protocol H relative to Protocols Q or W is substantially less than its bias (relative to the actual abundances), as can be seen from the summary statistics in Table 2 and visually in Figure 4\u2014figure supplement 1. This observation suggests that components of bias are shared between protocols, either due to similarities among the extraction protocols or bias from shared steps such as library preparation.\n\nEstimates of bias can be used to test mechanistic hypotheses and proposed methods for predicting bias. To demonstrate this application, we considered the effect of 16S copy number (CN) on bias in the Brooks et al.\u00a0(2015) data. We estimated 16S CN per genome and per bp for the seven taxa using available CN and genome size estimates (Materials and methods; Table 3). We then compared the bias predicted by CN to the estimated PCR bias and the estimated bias of the total protocol without CN correction (Figure 6\u2014figure supplement 1). 60% of the variance in estimated PCR bias was explained by CN variation (log relative efficiency scale; coefficient of determination $\u22480.60$;\u00a0$p\u22480.021$ by permutation test). In contrast, total bias was poorly explained by CN variation (coefficient of determination $\u22480.10$;\u00a0$p\u22480.23$ by permutation test). Accordingly, CN correction reduced the mean squared error in the taxon proportions by about half in the DNA mixtures but only slightly in the cell mixtures (Figure 3\u2014figure supplement 2). The limited effect of CN correction can also be seen in Figure 6B. These results indicate that CN variation is just one component of PCR bias, which itself is just one component of total bias, and thus even perfect correction of CN bias may not substantially ameliorate total bias in marker-gene sequencing experiments.\n\n**Table 3.**\n Estimated genome size and 16S copy number for the seven mock taxa in the Brooks et al.\u00a0(2015) experiment (Materials\u00a0and\u00a0methods).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Taxon</th>\n      <th>Genome size (Mbp)</th>\n      <th>Copy number</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Atopobium vaginae</td>\n      <td>1.44</td>\n      <td>2*</td>\n    </tr>\n    <tr>\n      <td>Gardnerella vaginalis</td>\n      <td>1.64</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Lactobacillus crispatus</td>\n      <td>2.04</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Lactobacillus iners</td>\n      <td>1.28</td>\n      <td>5*</td>\n    </tr>\n    <tr>\n      <td>Prevotella bivia</td>\n      <td>2.52</td>\n      <td>4*</td>\n    </tr>\n    <tr>\n      <td>Sneathia amnii</td>\n      <td>1.33</td>\n      <td>3*</td>\n    </tr>\n    <tr>\n      <td>Streptococcus agalactiae</td>\n      <td>2.16</td>\n      <td>7</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Denotes copy numbers that were instead estimated to be 1 by Brooks et al.\u00a0(2015)._\n\n## Discussion\n\nThe lack of a rigorous understanding of how bias distorts marker-gene and metagenomic sequencing (jointly, MGS) measurements stands in the way of accurate and reproducible community-composition measurements. Previous analyses of bias in MGS experiments have largely relied on descriptive statistical models (Brooks et al., 2015; Sinha et al., 2017; Krehenwinkel et al., 2017; Bell et al., 2019) whose parameters cannot be identified with biophysical quantities that one might expect to apply to differently composed samples. Failure to develop more mechanistic models may have stemmed from the seeming hopelessness of accounting for the many verified sources of bias. Here we proposed a mathematical model of bias in MGS experiments as a set of taxon-specific factors (the relative efficiencies) that multiply the true relative abundances to produce the measured relative abundances. Our model was inspired by the observation that many sources of bias, such as differences in DNA extraction efficiency (Morgan et al., 2010), PCR primer binding and amplification efficiency (Wagner et al., 1994; Suzuki and Giovannoni, 1996; Polz and Cavanaugh, 1998; Edgar, 2017), and marker-gene copy number (Kembel et al., 2012), are thought to act multiplicatively, and hence so could their cumulative effect. The parameters in our model (the relative efficiencies) have biophysical interpretations as the relative yield per unit of input for each taxon, for individual steps or for the workflow overall. Our hypothesis that the relative efficiencies are consistent across samples is grounded in existing understanding of individual bias mechanisms and was supported by marker-gene and shotgun-metagenomic sequencing measurements of mock bacterial communities with varying composition. We further showed how our model could be used to measure, understand, and correct bias.\n\nWe found bias to be independent of sample composition only after accounting for the compositional nature of MGS measurements. Bias appeared inconsistent when viewed in terms of taxon proportions\u2014for example the measured proportion of L. crispatus was both higher and lower than its true value in different samples (Figure 3C). However, these apparent inconsistencies did not reflect inconsistency in the action of bias, but instead were a consequence of the compositional nature of MGS data. A limited number of sequencing reads are generated from each sample, so if one taxon is enriched by bias then other taxa must be correspondingly diminished. Therefore, a taxon's proportional over- or under-representation depends not on its absolute measurement efficiency but on its efficiency relative to the average individual (e.g. microbial cell) in the sample\u2014L. crispatus increased in proportion when its efficiency was greater than the sample average, and decreased otherwise. Models that do not account for this effect (such as those of Brooks et al., 2015; Krehenwinkel et al., 2017; Bell et al., 2019; Kevorkian et al., 2018) will yield parameter estimates that do not extrapolate to differently-composed samples. Once we accounted for compositionality it became clear that relative efficiencies were consistent across differently composed samples. Bias had the same effect in each sample when we divided out the effect of compositionality by considering ratios of taxa (Figure 3D), and when we fully modeled the normalization involved in constructing proportions we found that a single set of relative efficiencies explained the observed proportions in every sample (Figure 3B).\n\nA quantitative model allows the sensitivity of downstream analyses to bias to be rigorously evaluated. Consider the often unstated assumption that analyses of the differences between samples measured in the same experiment should be robust to bias, because each sample is biased in the same way. We can formally evaluate this assumption in the simple numerical example shown in Figure 2: Sample $S_{1}$ has higher Shannon diversity than Sample $S_{2}$ but the measured diversity of Sample $S_{1}$ is lower than Sample $S_{2}$, and Sample $S_{1}$ has a higher proportion of Taxon 3 than Sample $S_{2}$ but is observed to have a lower proportion of Taxon 3, despite the same bias distorting each sample. Whether such qualitative errors are likely can be investigated by simulating our model with empirical distributions of bias and community compositions. For example, consider the Bacteroidetes:Firmicutes ratio, a repeatedly-proposed diagnostic of gut health (Ley et al., 2006; Finucane et al., 2014). The range of relative efficiencies within the Firmicutes indicates that the Bacteroidetes:Firmicutes ratio measured by the metagenomic sequencing protocols evaluated in Costea et al. (2017) can differ from the true ratio by very little, or by as much as 100-fold, depending on which Firmicutes species is dominant in the sample!\n\nIf bias acts (as we propose) as a consistent multiplication of the relative abundances, then analyses of MGS data based on taxon ratios could reduce the possibility for spurious results and make results from different experiments more comparable. The key insight is that the fold changes between samples in the ratios between taxa is invariant to consistent multiplicative bias, because the relative efficiencies divide out (Equation 6 and Equation 7). In contrast, such canceling does not occur for the fold-changes in taxon proportions, as exemplified by the spurious observed increase of Taxon 2 in Figure 2. To be clear, this bias-invariance property for ratio-based analyses only holds for samples biased in the same way, so these analyses still must be conducted within experiments sharing a common MGS protocol. But by controlling for study-specific bias, these analyses may give results that are more concordant across studies than other analyses. One ready source of such methods is the field of Compositional Data Analysis (CoDA) (Aitchison, 1986; Gloor et al., 2017). In fact, our model of bias is equivalent to what is referred to as a compositional perturbation in the CoDA field; many CoDA methods are invariant to compositional perturbations (Aitchison, 2003; van den Boogaart and Tolosana-Delgado, 2013) and thus would be invariant to bias. CoDA methods are being increasingly used to analyze MGS data, but to date this has been motivated by the need to account for the compositionality of MGS data. The possibility that such methods could also reduce or remove the effect of bias has not been widely appreciated.\n\nStudies investigating bias and/or optimizing protocols should evaluate the systematic errors introduced by bias in a way that accounts for the compositional nature of MGS data. Most previous studies of bias quantified bias with taxon proportions (e.g.\u00a0Brooks et al., 2015; Krehenwinkel et al., 2017; Bell et al., 2019) or proportion-based summary statistics such as Bray-Curtis dissimilarities (Sinha et al., 2017) or differences in Shannon diversity (Song et al., 2016). Proportion-based measurements do not consistently measure bias in differently composed samples, and thus are difficult to interpret and can mislead researchers attempting to reduce the effect of bias on their experiments. The adoption of compositionally aware analytical methods to study bias may lead to insights that generalize beyond the specific sample compositions considered in these studies. In particular, quantification of bias in the form of the \u2018bias vector\u2019 of relative efficiencies we proposed here has a natural biological interpretation as the relative yields of each taxon and can be naturally decomposed into an element-wise product of bias vectors for each step in a workflow, allowing for granular investigation of MGS protocol choices.\n\nOur results suggest that calibration could become a practical approach to improving the accuracy of MGS analyses and diagnostics. If bias is composition independent, then it can be estimated from one or more control samples and those estimates used to correct the relative abundances in target samples. Our results overcomes major limitations in recent attempts at MGS calibration (Brooks et al., 2015; Thomas et al., 2016; Krehenwinkel et al., 2017; Bell et al., 2019) by indicating how to obtain a compositionally independent estimate of bias for many taxa from a small number of control samples. Intriguingly, we show that the differential bias between protocols behaves in the same manner as the bias of an individual protocol. This property opens the possibility of calibration based on a reference protocol's measurements of control samples even if their true composition is not known. Reference calibration does not give the abundances in terms of biologically tangible units like cell concentration, but can make measurements from differently biased experiments quantitatively comparable, allowing diagnostic criteria to be applied outside of the lab in which they were defined. Reference calibration may sidestep the practical challenges of creating defined cellular mixtures of many taxa by using natural samples (or aggregations of natural samples) as calibration controls that would then contain the full range of taxa naturally present.\n\n### Limitations and next steps\n\nWe found bias to act multiplicatively in accordance with our model in two mock-community experiments; however, many sources of bias may deviate from multiplicativity under non-ideal conditions. For example, it has been observed that the efficiency of a target sequence is altered by saturation during PCR amplification when the target is either rare or highly abundant (Suzuki and Giovannoni, 1996; Gonzalez et al., 2012). In a non-microbial marker-gene experiment, Thomas et al. (2016) found a strong and consistent saturation effect that may have been caused by such a mechanism. The opposite of saturation, where taxa have lower efficiencies when rarer in the sample, may occur if low-abundance taxa are culled by the minimum-abundance thresholds used by taxonomic profilers such as MetaPhlAn2 (Truong et al., 2015). Such deviations from multiplicativity may be eliminated through protocol design (e.g. to avoid PCR saturation; Polz and Cavanaugh, 1998) or accounted for with extensions allowing for deterministic and random variation in efficiencies.\n\nEven when bias does act multiplicatively on individual microbial taxa, that multiplicativity will not hold for aggregates of taxa that vary in their efficiencies (Appendix 1). Consider again the Bacteroidetes:Firmicutes ratio diagnostic. We know that within the Firmicutes phylum there is tremendous phenotypic variation, and that variation manifested itself in the Costea et al. (2017) study as order-of-magnitude differences between the relative efficiencies of various Firmicutes species. As a result, consistent multiplicative bias could dramatically enrich or diminish the relative abundance of the Firmicutes phylum depending on which Firmicutes species were present. Unfortunately, the potential for bias to act inconsistently on aggregates of taxa cannot be entirely circumvented by eschewing aggregation in our analyses because even the fundamental units we derive from MGS data effectively aggregate variation at some level (McLaren and Callahan, 2018). In the bacterial context, the traditional 97% ribosomal OTU groups variation at roughly the genus level (Yarza et al., 2014), exact short-read ribosomal sequence variants and common shotgun profilers group variation at roughly the species level (Edgar, 2018; Hillmann et al., 2018), and metagenome assembly combines strains too similar to be separated by the assembler or by the subsequent binning (Dick, 2018, p. 79). This does not make bias an intractable problem, but it does mean that additional work is needed to understand the phylogenetic scales over which bias significantly varies. Methods to control bias will need to operate on taxonomic objects with commensurate or finer resolution than that of variation in the bias phenotype (McLaren and Callahan, 2018).\n\nCellular phenotype and matrix chemistry can vary substantially between samples of different types, which may cause bias to vary among samples. For example, different cellular growth states may change the cellular membrane and thus the efficiency of DNA extraction for a given taxon, and inhibitors in soil samples are known to influence the efficiency of PCR (Schrader et al., 2012). In the Costea et al. (2017) experiment, protocols differentially extracted the mock and native gut taxa (Figure 4A), which may have been due to physiological differences between the lab-grown cells and the preserved fecal cells. Potential phenotype and matrix effects are particularly relevant for calibration applications, as accurate calibration will require that bias measured in the controls is representative of the bias in the target samples.\n\nThe development of effective calibration methodologies will be limited by our ability to develop control samples that cover the range of taxa present in target communities. The bias estimation procedure we developed here is limited to those taxa present in the controls, and thus only allows for partial calibration of the subcomposition of the target samples consisting of those taxa. However, even partial calibration is useful when controls with key taxa in the target community are available. For example, vaginal microbiome samples from a patient over several clinical visits analyzed by Brooks et al.\u00a0(2015) were mostly comprised of the seven taxa in their mock mixtures. It may be possible to effectively augment the range of taxa with credible bias estimates beyond those included in control samples by using phylogenetic inference methods to predict the bias of related taxa (Goberna and Verd\u00fa, 2016). It will be easier to broadly cover the taxa in a given environment when calibrating to a reference protocol, because any sample measured by the reference protocol can be used as a reference calibration control, including samples from the environment of interest.\n\nOur discussion has so far ignored another ubiquitous source of error in MGS experiments\u2014contamination, either from the lab, reagents, or other samples (Eisenhofer et al., 2019). Contamination may be more important than bias in certain scenarios, such as the study of low biomass samples or analyses that are sensitive to very low frequency taxa, and bias correction may be insufficient for accurate measurement and inference in such settings. Accurate bias inference also requires accurate removal of contaminant reads prior to estimation through manual filtering or automated removal methods (Davis et al., 2018; Larsson et al., 2018). Incorporation of our bias model with models of contamination may allow for simultaneous and improved estimation and correction of both error processes.\n\nThe model of bias we explored in this paper treats bias and measurement error more generally as deterministic. In practice, however, there is variability in the error of taxon ratios around the mean (Figure 3D; Figure 4\u2014figure supplement 1). We developed a point-estimation method with a bootstrapping procedure to estimate the bias with associated uncertainty from random observations (Materials and methods). However, robust estimation and calibration may require a statistical model of bias that explicitly accounts for sources of random error such as variation in relative efficiencies across samples and limited sequencing depth. A statistical model would facilitate the construction of confidence intervals for the calibrated taxon proportions in a sample. Challenges associated with building such a model include modeling the presence of taxa thought to be absent from the community (but observed due to contamination or index switching; Eisenhofer et al., 2019), the absence of taxa known to be present (Yeh et al., 2018), and accounting for the noise associated with the count nature of sequencing data. Our finding that multiplicative error in taxon ratios provides a parsimonious model for bias paves the way for the development of a such a statistical model, which we leave for future work.\n\n### Conclusion\n\nWe suggest a simple yet profound change in how researchers view MGS measurements. Currently, researchers tend to either 1) take MGS measurements as telling us only about presence and absence of detectable taxa, 2) hope that bias in the measurements of individual samples will somehow cancel out when analyzing differences between samples within a given experiment, or 3) pretend bias doesn\u2019t exist. We propose a new view in which the measured relative abundances within an experiment are biased by unknown\u2014but constant\u2014multiplicative factors. When bias acts consistently in this manner it can be accounted for through the use of bias-insensitive analyses or corrected by a calibration procedure. Our results lay a foundation for the rigorous understanding of bias in marker-gene and metagenomic sequencing measurements that is required for accurate and reproducible research using MGS methods and for the development of reliable MGS diagnostics and interventions.\n\n## Materials and methods\n\n### Bias estimation\n\nWe describe a procedure for averaging multiple control observations to obtain a single estimate of the protocol\u2019s bias; additional details and motivation are given in Appendix 2. For sample $s$ in a set of control samples $S$, let $\ud835\udc00\u2062(s)$ denote the actual composition and $\ud835\udc0e\u2062(s)$ be the observed composition. We assume that $\ud835\udc0e\u2062(s)$ and $\ud835\udc00\u2062(s)$ are non-zero for the same taxa; in practice, this assumption requires ignoring sequencing reads from taxa not supposed to be in the sample and adding a small abundance to taxa actually present but not detected. Under our deterministic model, the observed composition is given exactly by Equation 2. In practice, however, each measurement will vary\u2014for example, due to random error in sample construction, variation in sample handling, and random sampling of reads during sequencing. We decompose the error $\ud835\udc0e\u2062(s)/\ud835\udc00\u2062(s)$ into a deterministic component $\ud835\udc01$ and a random component $\u03f5\u2062(s)$,\n\n$$\n\ud835\udc0e\u2062(s)\u223c\ud835\udc00\u2062(s)\u22c5\ud835\udc01\u22c5\u03f5\u2062(s).\n$$\n\nThe random error $\u03f5\u2062(s)$ is a random compositional vector that we assume has an expected value of $(1,\u2026,1)$ in the compositional Aitchison geometry (given by the element-wise geometric mean; Aitchison, 2003, p. 38). Intuitively, we estimate $\ud835\udc01$ by the vector $\ud835\udc01^$ that minimizes the residual errors, $\u03f5^\u2062(s)\u223c\ud835\udc0e\u2062(s)/(\ud835\udc00\u2062(s)\u22c5\ud835\udc01^)$.\n\nWe quantify the magnitude of errors by the Aitchison norm. The Aitchison norm (Pawlowsky-Glahn, 2015; Aitchison, 2003, Chapter 2) of a $K$-element composition $\ud835\udc17$ is given by\n\n$$\n\u2016X\u2016=\\sqrt{\\frac{1}{K}\\sumi<j[ln\u2061\\frac{X_{i}}{X_{j}}]^{2}}=\\sqrt{\\sumi=1K[ln\u2061\\frac{X_{i}}{g(X)}]^{2}},\n$$\n\nwhere $g\u2062(\ud835\udc17)=(\\prod_{i=1}^{K}X_{i})^{1/K}$ is the geometric mean of the elements of $\ud835\udc17$. When estimating the bias from a sample $s$ that is missing some of the taxa, the elements of $\ud835\udc0e\u2062(s)/\ud835\udc00\u2062(s)$ and of the residual error $\u03f5^\u2062(s)$ corresponding to the missing taxa are undefined. We define $\u2016\u03f5^(s)\u2016$ in this case by restricting to just the defined elements (and adjusting $K$ accordingly) before applying Equation 11.\n\nWe take our estimate of $\ud835\udc01$ to be the compositional vector that minimises the sum of squared residual error over all samples,\n\n$$\nB^\u223cargminB\u2061\\sums\\inS\u2016O(s)/(A(s)\u22c5B)\u2016^{2}.\n$$\n\nThis definition equates $\ud835\udc01^$ with the compositional mean, or center, of the compositional errors $O(s)/A(s)$ when the center is defined to allow missing values (Appendix 2). If all samples contain all $K$ taxa, then $\ud835\udc01^$ is given by the element-wise geometric mean of the\u00a0set\u00a0${\ud835\udc0e\u2062(s)/\ud835\udc00\u2062(s)}$,\n\n$$\nB^\u223c([\\prods\\inS\\frac{O_{1}(s)}{A_{1}(s)}]^{1/|S|},\u2026,[\\prods\\inS\\frac{O_{K}(s)}{A_{K}(s)}]^{1/|S|}),\n$$\n\nwhere $|S|$ is the number of samples in the set $S$. More generally, the solution to $B^$ can be computed using the projection approach of van den Boogaart et al. (2006). The solution is unique up to compositional equivalence given sufficient taxonomic overlap among the samples (Appendix 2).\n\nDifferential bias of the given protocol to a reference Protocol $R$ that has also measured the samples in $S$ can be estimated without knowing the actual sample compositions by replacing the actual compositions $A\u2062(s)$ in the above with the reference measurements $\ud835\udc0e^{(R)}\u2062(s)$.\n\nWe describe a bootstrap procedure for estimating the uncertainty of the bias estimate in Appendix 2. Each bootstrap replicate consists of drawing either multinomial or Dirichlet weights for the control samples and computing the weighted center to obtain the replicate value of $\ud835\udc01^$. Standard errors for the relative efficiencies are estimated by the geometric standard deviation of the corresponding efficiency ratio across replicates.\n\n### Bioinformatics and statistical analysis\n\n#### Data and code availability\n\nFunctions and a tutorial for estimating and visualizing bias and performing calibration are provided in the \u2018metacal\u2019 R package, available on GitHub (McLaren, 2019a, copy archived at https://github.com/elifesciences-publications/metacal). The raw data for our analysis is available in the \u2018Additional files\u2019 of Brooks et al.\u00a0(2015) and in European Nucleotide Archive study\u00a0accession PRJEB14847 for Costea et al. (2017). The processed data\u2014along with all code used to download and process the raw data, perform all statistical analyses, and generate all figures and tables\u2014is contained in the manuscript\u2019s GitHub repository (McLaren, 2019b, copy archived at https://github.com/elifesciences-publications/mgs-bias-manuscript). Analysis and visualization is performed using the R software environment (R Development Core Team, 2018) with the \u2018metacal\u2019 package, the \u2018tidyverse\u2019 suite of R packages (Wickham, 2019), and the \u2018cowplot\u2019 R package (Wilke, 2019). Analysis code is contained in R-markdown documents that can be executed to generate all numerical results, tables, and figures. Versions that have been \u2018knit\u2019 into html documents showing code interlaced with output and figures are available in the GitHub repository.\n\n#### Brooks et al.\u00a0(2015) experiment\n\nWe used taxonomic profiles generated in the original study and provided as supplemental information. Specifically, we used the sample information and read assignments in Additional Files 2, 10, and 11 of\u00a0Brooks et al.\u00a0(2015)\u00a0to build a table of amplicon sequences assigned to each of the seven mock taxa in each sample. Brooks et al.\u00a0(2015) used a classification method and 16S reference database designed for species-level classification of vaginally associated taxa from V1-V3 region amplicons (Fettweis et al., 2012). Reads were assigned to species in the database according to a 97% sequence identity threshold, resulting in 93.5% of reads assigned and for which the vast majority (99.98%) were assigned to species corresponding to the seven mock taxa. We discarded the small fraction (0.0002%) of reads assigned to other species. Most samples were assigned a small fraction of their reads from species not expected to be in the sample. These out-of-sample species generally had much lower frequency than the expected species, suggesting they were the result of cross-sample contamination rather than mislabeling or misconstruction of the samples. We therefore removed these reads before evaluating and estimating bias.\n\nWe took the actual composition of each sample to be an even mixture of the taxa added to that sample, in units of cell concentration, DNA concentration, or PCR-product concentration. Brooks et al.\u00a0(2015) constructed the cell mixtures to be even mixtures based on CFUs (a proxy for cell concentration); the DNA mixtures based on DNA concentration; and the PCR mixtures based on volume from amplification of a fixed weight of DNA. Extraction and PCR protocols differed somewhat when using pure cultures to create the DNA and PCR-product mixtures than when applied to communities in the cell experiment. Thus, the DNA and PCR product in the second and third experiments may differ qualitatively from that in the cell mixture experiments, which could in principle affect the bias of downstream steps.\n\nWe estimated genome size and 16S copy number for the seven mock taxa from available genome databases and experimental measurements. We estimated genome size by the average genome size for the given species in NCBI RefSeq release 86 as collated by the GTDB (Parks et al., 2018). We estimated 16S copy number (CN) through a combination of RefSeq annotations for the given species; CN estimates in the rrnDB for the given species or their nearby relatives identified in the GTDB phylogeny (Parks et al., 2018); and measurement by pulse-field gel electrophoresis reported by Yuan et al. (2012) for A. vaginae and L. iners. A full account is given in the manuscript GitHub repository. The resulting genome size estimates approximately agree with those of Brooks et al.\u00a0(2015), but the 16S\u00a0CN estimates differ substantially for several taxa (compare our Table 3 to their Table 5). In particular, Brooks et al.\u00a0(2015) estimated four taxa to have CNs of 1 based on NCBI annotations then available, but we suspect these numbers to be artifacts of poor assembly and annotation.\n\nWe estimated the bias predicted due to CN variation for each mixture type as follows. Cell mixtures: CN bias is simply the compositional vector of CNs (16S copies per genome). DNA mixtures: CN bias is the compositional vector of CN divided by genome size (16S copies per bp). PCR-product mixtures: CN bias is the compositional identity vector (1,...,\u00a01) (i.e. no bias). Denoting the estimated CN bias as $\ud835\udc01^^{(CN)}$ for the given experiment, the CN-corrected proportions are $Pr\u2061[\ud835\udc0e/\ud835\udc01^^{(CN)}]$.\n\nFor each mixture experiment, we estimated bias as described above\u00a0in\u00a0\u2018Bias estimation\u2019. We then used these estimates to partition our estimate of the total protocol bias into three steps\u20141) DNA extraction, 2) PCR amplification, and 3) sequencing and bioinformatics\u2014under the simplifying assumption that the bias of shared steps are the same across experiments. We assume the bias of the cell mixture experiments is $\ud835\udc01^{(Cells)}=\ud835\udc01^{(P_{1})}\u22c5\ud835\udc01^{(P_{2})}\u22c5\ud835\udc01^{(P_{3})}$, of the DNA mixtures is $\ud835\udc01^{(DNA)}=\ud835\udc01^{(P_{2})}\u22c5\ud835\udc01^{(P_{3})}$, and of the PCR-product mixtures is $B^{(PCR\\ product)}=B^{(P_{3})}$. We therefore estimate the extraction bias as $\ud835\udc01^^{(P_{1})}=\ud835\udc01^^{(Cells)}/\ud835\udc01^^{(DNA)}$, the PCR bias as $B^^{(P_{2})}=B^^{(PCR\\ product)}/B^^{(DNA)}$, and the sequencing and bioinformatics bias as $B^^{(P_{3})}=B^^{(PCR\\ product)}$.\n\n#### Costea et al. (2017) Phase III experiment\n\nWe downloaded raw sequencing reads for the Phase III experiment from European Nucleotide Archive study accession PRJEB14847\u00a0and generated taxonomic profiles using MetaPhlAn2 version 2.7.6 (Truong et al., 2015) with the command-line options --min_cu_len 0 --stat avg_g. These options were chosen to increase sensitivity and accuracy for the rarest spike-in taxa and resulted in the detection of all spike-in taxa in every sample. Taxonomic profiles generated by MetaPhlAn2 provide estimated proportions of taxa at various taxonomic levels. We restricted our analysis to species-level abundances and the kingdom Bacteria, which constituted over 99% of non-viral abundance in each sample.\n\nCostea et al. (2017) reported Escherichia coli as a likely spike-in contaminant due to its presence in sequence data from the mock-only samples. Consistent with this report, the MetaPhlAn2 profiles showed a substantial presence of Shigella flexneri in the mock-only samples and we identified this species as the \u2018Contaminant\u2019 in our subsequent analyses and in all figures and tables.\n\nWe estimated the true mock-community composition using the flow cytometry (FACS) measurements reported in Costea et al. (2017). We used the arithmetic mean of two replicate measurements where available and ignored any measurement error in the resulting actual mock composition for our analysis. The FACS measurements provided by Costea et al. (2017) disagree with those shown in their Figure 6 for three taxa (V. cholerae, C. saccharolyticum, and Y. pseudotuberculosis). Analysis of our MetaPhlAn2 profiles indicates that these taxa are most likely mislabeled in the figure and not in the FACS measurements. A mislabeling in the FACS measurements would change the specific bias values we estimate for these taxa but not our main results or conclusions.\n\nWe estimated the bias of each protocol and the differential bias between protocols as described in \u2018Bias estimation\u2019. We estimated standard errors using the Dirichlet-weighted bootstrap method described in Appendix 2. To determine how precision in the bias estimate for Protocol H varies with the number of control samples (Figure 4\u2014figure supplement 1), we computed standard errors using the multinomial-weighted bootstrap method with the number of trials in the multinomial distribution equal to the specified number of control samples (Appendix 2).\n\nTo demonstrate calibration, we randomly chose three fecal specimens to use as the \u2018estimation set\u2019 to estimate bias, and then calibrated all samples using Equation 9. We excluded the mock-only specimen from the estimation set since its atypical values for a few taxa resulted in an unrepresentative picture of the success of calibration; however, we included it when evaluating the effect of noise on bias estimation in Figure 4\u2014figure supplement 1.\n",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "8c87ecf7-0337-4e36-9cd1-abea3712ccd9",
+      "submission_id": "c3ac3750-08ff-487d-8164-eecfc148a699",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Peter Turnbaugh, University of California, San Francisco United States\n\nReviewers:\n- Peter Turnbaugh, University of California, San Francisco United States\n- Christopher Quince, University of Warwick United Kingdom\n- Sean Gibbons\n\n## Review text\n\nDOI: [10.7554/eLife.46923.026](https://doi.org/10.7554/eLife.46923.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Consistent and correctable bias in metagenomic sequencing experiments\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Peter Turnbaugh as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Wendy Garrett as the Senior Editor. The following individuals involved in review of your submission have also agreed to reveal their identity: Christopher Quince (Reviewer #2); Sean Gibbons (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe independent replication of microbiome research can produce very different results due to biases inherent in different protocols for studying complex microbial communities. Here, McLaren, Willis, and Callahan focus on multiplicative biases in microbiome experiments and quantify their effect on distorting the resulting abundance distributions. The authors formulate a rigorous framework in treating multiplicative biases based on individual protocol steps and derive a correction of that bias. Application of their correction methods to two mock community data sets validates their findings and provides improved estimates of microbial abundances. Together, this work provides an important framework to begin to more robustly compare data across experiments and research groups. This work is incredibly timely and provides a significant advance in our understanding of biases in microbiome data and a framework that will be built on to address them in the future.\n\nEssential revisions:\n\n1) The github repository is great but might not be enough of a tutorial for inexperienced users. I'd recommend writing a step by step tutorial (a la http://qiime.org/tutorials/).\n\nAlso, are there any plans in place to update this code as new approaches become available? It may also help to name the package/tool.\n\n2) More discussion is needed regarding the propagation of noise or errors across multiplicative factors as opposed to bias. For instance, is noise in the extraction protocol more important than PCR because it occurs earlier? Or are the errors simply multiplicative too so that there is no purpose in trying to reduce noise in the earlier steps? In any case noise is perhaps more important than bias as it cannot be corrected so in their Tables 1 and 2 it would be good to have an estimate of the average error associated with each protocol. In some cases, a more biased but reproducible protocol could be preferable.\n\n3) Both data sets used by the authors are derived from mock communities with known ground truth. The authors argue that their methods can be used even in the absence of a ground truth by using relative efficiencies. I feel that this is an important use case for real-world data sets. Standard communities, including all/most of the detected taxa across a set of real-world samples, are usually not available for any given microbiome study. Here, one could still estimate relative efficiencies by using technical replicates (samples co-processed across batches \u2013 how many samples need to be co-processed across batches for this approach to be useful?). However, that particular use case is discussed only briefly and there is no quantitative study with any data set that is not a mock data set. I feel that inclusion of a non-mock data set with technical replicates may be more informative here since that is closer to most published microbiome data sets. Based on that the authors could formulate a protocol that can be proposed for future microbiome experiments and that would allow systematic elimination of multiplicative biases. One challenge I foresee is that relative efficiencies will be very difficult to estimate for low-abundance taxa that are often unique to a small number of samples, unless every sample is processed across all batches.\n\n4) The authors start by arguing that major biases should be multiplicative. Even though they provide a wide array of references describing the existence of bias in microbiome assays, there is no reference that supports the assumption that the strongest bias has to be multiplicative. This is addressed later in the manuscript by showing that multiplicative bias captures the error in mock communities well and by stating this multiplicative limitation in the Discussion. I would have liked a more systematic study of the potential magnitudes of multiplicative vs. additive/other biases.\n\na) For instance, what is the amount of variance explained by multiplicative bias vs. potentially additive biases (e.g. saturating effects, contamination from external sources, or well-to-well contamination)? I would expect that additive biases, like well-to-well contamination, to be more important in low-biomass samples. Further discussion of this point would be useful.\n\nb) In the two data sets analyzed in this study the authors removed contamination manually. However, this approach likely won't be possible for non-mock data.\n\nc) All bias estimates reported in the text are usually reported without dispersion measures, even though the formulated point estimate should induce an appropriate dispersion measure as well. It would be interesting to see how much uncertainty there is regarding the bias as a function of samples used for correction. This could aid in determining how many samples should be used to estimate the bias.\n\n5) It would be worthwhile to discuss the observed bias structure with other data transformations (not only the ones from compositional data analysis). For instance, Equation 7 essentially makes fold changes of the same taxon across samples invariant to the bias. This would mean that the established transformation from RNA-seq analysis would also be applicable here (log-transformation and comparison by log-fold change rather than absolute difference).\n\n6) I feel that some further investigation into correlations of the identified biases with taxonomy may be helpful to gain mechanistic insight into the sources of bias. For instance, does the bias correlate with the abundance of the taxon, or do phylogenetically similar taxa show similar biases? This could help to formulate strategies for estimating bias for taxa that are undetected in the batch replicates. The authors also argue that summarization of taxa into higher phylogenetic ranks may introduce additional errors, but they do not state which rank is permissible here (species, genus, family?).\n\nThe reviewers were all enthusiastic about publication and realize that all of these points may be difficult to accomplish within the next couple months. We would encourage the authors to use their best judgement in deciding what can be addressed in a substantive way and which points would be best addressed with additional discussion.\n",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c6d31d76-39b0-4abb-be33-989f9e077926",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C1",
+      "claim": "Marker-gene and metagenomic sequencing have profoundly expanded our ability to measure biological communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Marker-gene and metagenomic sequencing have profoundly expanded our ability to measure biological communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the impact of MGS technologies, supported by the broader scientific literature and context provided in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "8073c3ba-f23a-42e6-86d0-74e2f2f84c3e",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C2",
+      "claim": "MGS measurements differ from the truth, often dramatically, because these experiments are biased toward detecting some taxa over others.",
+      "claim_type": "EXPLICIT",
+      "source": "But the measurements they provide differ from the truth, often dramatically, because these experiments are biased toward detecting some taxa over others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations throughout the manuscript and is a central premise of the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "4947782d-ee6a-411c-bc47-9e8da3ac604c",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C3",
+      "claim": "Experimental bias makes the taxon or gene abundances measured by different protocols quantitatively incomparable.",
+      "claim_type": "EXPLICIT",
+      "source": "This experimental bias makes the taxon or gene abundances measured by different protocols quantitatively incomparable and can lead to spurious biological conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations in the introduction and is a key motivation for the study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "a34a96b1-cea4-4e87-bf4d-d9cfb64dba76",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C4",
+      "claim": "The proposed mathematical model better fits experimental data despite being simpler than previous models.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model better fits the experimental data despite being simpler than previous models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the comparison shown in Figure 3\u2014figure supplement 3 and the analysis of the Brooks et al. (2015) data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "1e871caa-fd13-4c56-a19c-2ac7edcf2d3c",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C5",
+      "claim": "MGS measurements are biased because each step in an experimental MGS workflow preferentially measures some taxa over others.",
+      "claim_type": "EXPLICIT",
+      "source": "Bias arises because each step in an experimental MGS workflow preferentially measures (i.e. preserves, extracts, amplifies, sequences, or bioinformatically identifies) some taxa over others (Brooks, 2016; Hugerth and Andersson, 2017; Pollock et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "4216f08d-e791-41fb-98bd-a4593f5bba1c",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C6",
+      "claim": "Bacterial species differ in how easily they are lysed and therefore how much DNA they yield during DNA extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, bacterial species differ in how easily they are lysed and therefore how much DNA they yield during DNA extraction (Morgan et al., 2010; Costea et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Morgan et al., 2010 and Costea et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "4158a56d-3218-4c7b-80a9-ec4d09cb4b4c",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C7",
+      "claim": "Bacterial species differ in their number of 16S rRNA gene copies and thus how much PCR product we expect to obtain per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "and they differ in their number of 16S rRNA gene copies and thus how much PCR product we expect to obtain per cell (Kembel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kembel et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "8aeeb1ce-acc5-48b2-8069-6c03d544d769",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C8",
+      "claim": "Different PCR primers preferentially amplify different sets of taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Different PCR primers preferentially amplify different sets of taxa (Sipos et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sipos et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "29975257-d401-40e7-a6bf-2a39acd96a95",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C9",
+      "claim": "Different extraction protocols can produce 10-fold or greater differences in the measured proportion of a taxon from the same sample.",
+      "claim_type": "EXPLICIT",
+      "source": "different extraction protocols can produce 10-fold or greater differences in the measured proportion of a taxon from the same sample (Costea et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Costea et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "8d8c783f-33f0-46bc-8ef3-7d3bae19293c",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C10",
+      "claim": "Every MGS experiment is biased to some degree.",
+      "claim_type": "EXPLICIT",
+      "source": "Every MGS experiment is biased to some degree, and measurements from different protocols are quantitatively incomparable (Nayfach and Pollard, 2016; Hiergeist et al., 2016; Mallick et al., 2017; Sinha et al., 2017; Gibbons et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "9d0ce863-b647-41da-849d-1e7a0092fd45",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C11",
+      "claim": "Bias can lead to qualitatively incorrect conclusions about which taxa dominate different samples.",
+      "claim_type": "EXPLICIT",
+      "source": "But simulated examples have shown that bias can lead to qualitatively incorrect conclusions about which taxa dominate different samples (Kembel et al., 2012; Edgar, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kembel et al., 2012 and Edgar, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "cd8118f5-b2f1-4d4b-818f-b48f38a12f27",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C12",
+      "claim": "Bias can lead to qualitatively incorrect conclusions about which ecosystems are more similar.",
+      "claim_type": "EXPLICIT",
+      "source": "which ecosystems are more similar (Kembel et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kembel et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "7cf447ff-0fb7-42a4-84ac-896ddd5bd130",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C13",
+      "claim": "Bias can lead to qualitatively incorrect conclusions about which taxa are associated with a given disease.",
+      "claim_type": "EXPLICIT",
+      "source": "and which taxa are associated with a given disease (Brooks, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Brooks, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "9e04bafc-21e3-4c7e-b544-97e3f64cac44",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C14",
+      "claim": "The DNA concentration of a taxon after DNA extraction equals its initial cell concentration multiplied by its DNA yield per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the DNA concentration of a taxon after DNA extraction equals its initial cell concentration multiplied by its DNA yield per cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical statement based on basic principles of DNA extraction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "03ec8cb7-1591-46f8-ba58-44aa9f552ae2",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C15",
+      "claim": "Per-cell DNA yield indicates the efficiency of extraction for the taxon, which is expected to depend on factors such as genome size and the structure of the taxon's cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "This per-cell yield indicates the efficiency of extraction for the taxon, which is is expected to depend on factors such as genome size and the structure of the taxon's cell wall (Morgan et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Morgan et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "1270ac04-ffa9-44d5-a26b-7f641925d526",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C16",
+      "claim": "Extraction efficiencies are expected to vary among taxa, but be approximately constant for any specific taxon across samples treated with the same protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we expect extraction efficiencies to vary among taxa, but be approximately constant for any specific taxon across samples treated with the same protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the understanding of extraction mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "8fbbbc0a-1a73-4290-80b0-931415228287",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C21",
+      "claim": "The systematic error in taxon ratios caused by bias will remain the same in samples of varying composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, this means that the systematic error in taxon ratios caused by bias will remain the same in samples of varying composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the independence of ratio error from sample composition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "396f81ba-e6d7-46f1-ab78-0e77d257bff4",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C22",
+      "claim": "The error in the proportion of a taxon depends on the sample composition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the error in the proportion of a taxon depends on the sample composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated mathematically in Equation 5 and illustrated in Figure 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "24e414e8-7b2b-4362-a62d-339255de08cc",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C23",
+      "claim": "Bias leads to over-estimation of taxa that are more easily measured than the community average in the given sample.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, bias leads to over-estimation of taxa that are more easily measured than the community average in the given sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an intuitive explanation of the mathematical relationship in Equation 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "eede4caa-e1eb-4809-9a8f-42c4b1790db4",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C24",
+      "claim": "The same taxon can be over-estimated in samples dominated by low-efficiency taxa and under-estimated in samples dominated by high-efficiency taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the same taxon can be over-estimated in samples dominated by low-efficiency taxa and under-estimated in samples dominated by high-efficiency taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is illustrated in Figure 2 with Taxon 3.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "72dcbb87-8a9f-46c4-ac6f-2a98e551a585",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C27",
+      "claim": "The fold-change in taxon ratios between samples is invariant to bias.",
+      "claim_type": "EXPLICIT",
+      "source": "the fold-change in taxon ratios between samples is invariant to bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated mathematically in Equation 6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "f5ab2aec-84ac-41e1-97bf-ed6ac6fcff3f",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C29",
+      "claim": "Any analysis that depends only on the compositional differences between samples will be invariant to bias under the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Equation 7 shows that any analysis that depends only on the compositional differences between samples will be invariant to bias under our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical consequence of Equation 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "afa45109-06db-48b8-93cd-af4522dcf4d2",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C32",
+      "claim": "Brooks et al. (2015) generated taxonomic profiles from 71 samples of 58 unique mock communities by amplicon sequencing of the V1-V3 region of the 16S rRNA gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Brooks et al. (2015) generated taxonomic profiles from 71 samples of 58 unique mock communities by amplicon sequencing of the V1-V3 region of the 16S rRNA gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from Brooks et al. (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "5a86b444-7405-4b6f-8887-f73b904c5e5b",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C33",
+      "claim": "Each unique mock community in Brooks et al. (2015) consisted of an even mixture of between two and seven bacterial taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Each unique mock community consisted of an even mixture of between two and seven bacterial taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from Brooks et al. (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "2ebb7a35-b5ac-4c06-93a0-407062df0e5c",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C34",
+      "claim": "Each sample in Brooks et al. (2015) was measured in three experiments employing a common experimental workflow, but beginning from different starting points: even mixtures of cells, of extracted DNA, and of PCR product.",
+      "claim_type": "EXPLICIT",
+      "source": "Each sample was measured in three experiments employing a common experimental workflow, but beginning from different starting points: even mixtures of cells, of extracted DNA, and of PCR product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from Brooks et al. (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "d31dc24b-24f8-4326-aaae-e6e8ba772fe3",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C35",
+      "claim": "The proportions measured from the cell-mixture mock communities differed greatly from the expected even proportions of each taxon.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportions measured from the cell-mixture mock communities differed greatly from the expected even proportions of each taxon (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "32e67660-7576-44ab-937c-49b5e645493b",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C36",
+      "claim": "The ratios between pairs of taxa diverged sharply from the ratio of 1 expected in the even mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratios between pairs of taxa also diverged sharply from the ratio of 1 expected in these even mixtures (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "1803e7ca-93b1-4b40-bc97-ef63d28a2d17",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C37",
+      "claim": "The error in the ratios was consistent across samples.",
+      "claim_type": "EXPLICIT",
+      "source": "However, and as predicted by our model (see Properties and implications), the error in the ratios was consistent across samples (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D and is consistent with the model prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "f3d0fc79-c0e7-478d-a87a-5b82e1bf3d67",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C38",
+      "claim": "The error in the proportions varied dramatically in both magnitude and direction.",
+      "claim_type": "EXPLICIT",
+      "source": "while the error in the proportions varied dramatically in both magnitude and direction (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "290c3644-c4d6-4a01-9b76-9f4ed7fc4dc3",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C39",
+      "claim": "The model explained almost all of the error in the measured compositions of the cell mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model explained almost all of the error in the measured compositions of the cell mixtures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis of the Brooks et al. (2015) data and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "1ce39add-ea25-4cbf-a01f-7b86dd6c2481",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C40",
+      "claim": "The measured pairwise ratios closely matched the ratios predicted by the model.",
+      "claim_type": "EXPLICIT",
+      "source": "The measured pairwise ratios closely matched the ratios predicted by our model\u2014the ratios of the efficiencies of the two taxa (black crosses in Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "dab483a1-2439-493a-b371-3351d8aaff86",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C41",
+      "claim": "The proportions predicted from the fitted model reduced the mean squared error by 98.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "The proportions predicted from the fitted model reduced the mean squared error by 98.8% and closely matched the observed proportions (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the analysis of the Brooks et al. (2015) data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "436285d0-d9f5-4126-88fe-c50c14e9812e",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C42",
+      "claim": "The bias in DNA mixtures substantially differed from the bias in the cell mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the bias in DNA mixtures substantially differed from the bias in the cell mixtures (Table 1 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 1 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "521ccd0e-0b9d-4a0c-8044-7ab18b726ebc",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C43",
+      "claim": "PCR and DNA extraction are both large, independent sources of bias that each act in accordance with the model.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that PCR (performed in both experiments) and DNA extraction (performed only in the cell-mixture experiment) are both large, independent sources of bias that each act in accordance with our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that bias differs between cell and DNA mixtures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "217a7aa5-3124-4276-87ed-bd353b93f18d",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C44",
+      "claim": "The model better explains the data from the cell and DNA mixtures than proposed alternatives while employing a small number of parameters (6, equal to the number of taxa minus 1).",
+      "claim_type": "EXPLICIT",
+      "source": "Our model better explains the data from the cell and DNA mixtures than proposed alternatives while employing a small number of parameters (6, equal to the number of taxa minus 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "91b5f8b3-c5cc-4cd4-889d-0f83f7148f71",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C45",
+      "claim": "The Phase III experiment of Costea et al. (2017) performed shotgun metagenomic sequencing of a cellular mock community spiked into fecal samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The Phase III experiment of Costea et al. (2017) performed shotgun metagenomic sequencing of a cellular mock community spiked into fecal samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from Costea et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "39fd48e0-e207-4ea7-a9bc-39ee7d4a1107",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C46",
+      "claim": "The mock spike-in contained 10 bacterial taxa with known abundance spanning 2.5 orders of magnitude and an Escherichia/Shigella contaminant with unknown true abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "The mock spike-in contained 10 bacterial taxa with known abundance spanning 2.5 orders of magnitude and (unintentionally) an Escherichia/Shigella contaminant with unknown true abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from Costea et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "da92383b-bbe1-4ae4-9508-67f88e80f865",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C47",
+      "claim": "The mock spike-in was added to fecal specimens from eight individuals as well as a blank 'mock-only' sample.",
+      "claim_type": "EXPLICIT",
+      "source": "It was added to fecal specimens from eight individuals as well as a blank 'mock-only' sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from Costea et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "029042b6-a42c-4cf1-8f96-141d5d724b92",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C48",
+      "claim": "DNA was extracted from each specimen using three distinct DNA extraction protocols (Protocols H, Q, and W) and measured via a common shotgun sequencing protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA was then extracted from each specimen using three distinct DNA extraction protocols (Protocols H, Q, and W) and measured via a common shotgun sequencing protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design from Costea et al. (2017).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "d0dc87e1-9df8-4822-8b92-533518730722",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C49",
+      "claim": "Taxonomic profiles measured by MetaPhlAn2 showed substantial variation in the native bacterial composition across fecal specimens and in the proportion formed by the spike-in, both of which were protocol-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxonomic profiles measured by MetaPhlAn2 (Materials and methods) showed substantial variation in the native bacterial composition across fecal specimens and in the proportion formed by the spike-in, both of which were protocol-dependent (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "dbbebf8b-5293-438b-bd38-141b1462fe72",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C50",
+      "claim": "The observed relative abundances of the spike-in taxa were consistent across specimens for a given protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the observed relative abundances of the spike-in taxa were consistent across specimens for a given protocol (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "28cdb227-36ec-4d42-b0a5-dcf6260f7c67",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C51",
+      "claim": "The model predicts that the error in the ratios among the spike-in taxa is independent of the presence and abundance of other taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is what we expect given that the true spike-in composition is fixed, since our model predicts that the error in the ratios among the spike-in taxa is independent of the presence and abundance of other taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction of the model that is confirmed by the data in Figure 4A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "f1aa69dc-d89b-45ab-a2d2-d3c916f7f128",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C52",
+      "claim": "The bias shows qualitative differences between protocols, with certain mock taxa being enriched by one protocol and diminished by another.",
+      "claim_type": "EXPLICIT",
+      "source": "The bias shows qualitative differences between protocols, with certain mock taxa being enriched by one protocol and diminished by another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "6f99f3e2-bb76-4ed1-b3cc-f6e5e0b7480f",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C53",
+      "claim": "The consistent difference in the observed relative abundance of the contaminant indicates a consistent differential bias between Protocol W and the other two protocols of the contaminant relative to the 10 mock taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the consistent difference in the observed relative abundance of the contaminant indicates a consistent differential bias between Protocol W and the other two protocols of the contaminant relative to the 10 mock taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the consistent pattern observed in Figure 4B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "26df53c0-c38f-4c03-9365-89c7181f1de9",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C54",
+      "claim": "These results indicate a consistent and unique bias associated with each protocol when bias is measured in accordance to the model.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate a consistent and unique bias associated with each protocol when bias is measured in accordance to our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis of the Costea et al. (2017) data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "53bee292-cbd3-4391-9ddf-fd9d78fd7bc9",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C55",
+      "claim": "Calibration reduced the mean squared error of the proportions in the calibrated samples by 92.6% and the average Bray-Curtis dissimilarity between the actual and observed compositions from 0.35 to 0.08.",
+      "claim_type": "EXPLICIT",
+      "source": "Calibration reduced the mean squared error of the proportions in the calibrated samples by 92.6% and the average Bray-Curtis dissimilarity between the actual and observed compositions from 0.35 to 0.08.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the calibration analysis of the Brooks et al. (2015) data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "bb020d67-8ccc-4804-b732-a6a211d9f2bd",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C56",
+      "claim": "The measured composition of the spike-in mock community deviated from the truth in a protocol-specific fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Costea et al. (2017) dataset, the measured composition of the spike-in mock community deviated from the truth in a protocol-specific fashion (Figure 5, top row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5, top row.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "2522c2b7-2092-47bf-8a0b-aa95d3699912",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C57",
+      "claim": "Calibration removed most of the systematic error and greatly increased the accuracy of the measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Calibration removed most of the systematic error and greatly increased the accuracy of the measurements (Figure 5, middle row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5, middle row.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "3d162bb4-3220-485f-823a-ffbcb78d62ef",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C58",
+      "claim": "Because noise was much weaker than bias, standard errors were less than the bias even for a single control measurement, suggesting substantial benefits from calibration even with a limited number of control observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because noise was much weaker than bias, standard errors were less than the bias even for a single control measurement, suggesting substantial benefits from calibration even with a limited number of control observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "2eb3eab6-c9fd-4fd5-9b0a-a21a6abb02b6",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C59",
+      "claim": "Three or four control measurements for a taxon substantially reduces the risk of inaccurate bias estimates due to occasional large random errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The results further suggest that three or four control measurements for a taxon substantially reduces the risk of inaccurate bias estimates due to occasional large random errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "e1013133-0a37-4478-9b27-47861639867b",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C60",
+      "claim": "Calibration to a reference protocol greatly reduced the systematic differences between measurements from different protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "This greatly reduced the systematic differences between measurements from different protocols, without necessarily improving the accuracy compared to the actual composition (Figure 5, bottom row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5, bottom row.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "8a41970d-cda0-43e6-a700-0c108e5459d7",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C61",
+      "claim": "For the three shotgun protocols in Table 2, Protocol H has a much larger bias than the other two protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "For the three shotgun protocols in Table 2, these statistics indicate that Protocol H has a much larger bias than the other two protocols",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "b72ced3e-89e4-47ce-b65b-eb1e057377ae",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C62",
+      "claim": "The least biased protocol (Protocol Q) also yielded the noisiest measurements of the mock taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "The noise measure for the three shotgun protocols indicates that, in this case, the least biased protocol (Protocol Q) also yielded the noisiest measurements of the mock taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "7e3253f7-f8f6-4050-8760-0aa2bebe867d",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C63",
+      "claim": "The average noise of the protocols decreases with the propensity of the protocol to sequence the mock over the native gut taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the average noise of the protocols decreases with the propensity of the protocol to sequence the mock over the native gut taxa (Figure 4A), indicating that the greater noise of Protocol Q may be at least partially an artifact of limited sequencing depth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the patterns observed in Figure 4A and Table 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "2976296c-27f3-42b2-9ac0-8085ba03ca43",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C64",
+      "claim": "DNA extraction is the largest single source of bias for these taxa and workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "These estimates indicate that for these taxa and workflow, DNA extraction is the largest single source of bias, although PCR bias was also substantial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6A and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "5fb14ddd-c079-4843-afe7-83d10e50a220",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C65",
+      "claim": "PCR and extraction bias acted in opposite directions for some taxa, such as L. crispatus and P. bivia, and in the same direction for others, such as G. vaginalis and L. iners.",
+      "claim_type": "EXPLICIT",
+      "source": "PCR and extraction bias acted in opposite directions for some taxa, such as L. crispatus and P. bivia, and in the same direction for others, such as G. vaginalis and for L. iners, leading to more moderate or extreme total relative efficiencies, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "d6a881e8-2be8-4cbf-aa51-374a99baabba",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C68",
+      "claim": "CN correction reduced the mean squared error in the taxon proportions by about half in the DNA mixtures but only slightly in the cell mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, CN correction reduced the mean squared error in the taxon proportions by about half in the DNA mixtures but only slightly in the cell mixtures (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "8e1ffeb2-db20-4f39-9fe4-dd35c96f07cf",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C69",
+      "claim": "CN variation is just one component of PCR bias, which itself is just one component of total bias.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that CN variation is just one component of PCR bias, which itself is just one component of total bias, and thus even perfect correction of CN bias may not substantially ameliorate total bias in marker-gene sequencing experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis of CN effects on bias.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "4b20a130-aec9-476e-9137-ceb642941bac",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C70",
+      "claim": "Bias was independent of sample composition only after accounting for the compositional nature of MGS measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "We found bias to be independent of sample composition only after accounting for the compositional nature of MGS measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the analysis of the mock community data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "0f77cdc1-c464-48a1-9a1c-2243a6c1d377",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C71",
+      "claim": "Bias appeared inconsistent when viewed in terms of taxon proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "Bias appeared inconsistent when viewed in terms of taxon proportions\u2014for example the measured proportion of L. crispatus was both higher and lower than its true value in different samples (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "cdb44ca8-4a14-46a7-bce8-b110fd6152f3",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C72",
+      "claim": "These apparent inconsistencies did not reflect inconsistency in the action of bias, but instead were a consequence of the compositional nature of MGS data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these apparent inconsistencies did not reflect inconsistency in the action of bias, but instead were a consequence of the compositional nature of MGS data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the analysis and understanding of compositional data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "9da4eb75-9b5a-4d85-ab13-2e6e452b70e9",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C73",
+      "claim": "Once compositionality was accounted for, it became clear that relative efficiencies were consistent across differently composed samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Once we accounted for compositionality it became clear that relative efficiencies were consistent across differently composed samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3D and Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "b0f98717-a36d-49b6-bf27-2f57b2c8ab8b",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C74",
+      "claim": "The range of relative efficiencies within the Firmicutes indicates that the Bacteroidetes:Firmicutes ratio measured by the metagenomic sequencing protocols evaluated in Costea et al. (2017) can differ from the true ratio by very little, or by as much as 100-fold, depending on which Firmicutes species is dominant in the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, consider the Bacteroidetes:Firmicutes ratio, a repeatedly-proposed diagnostic of gut health (Ley et al., 2006; Finucane et al., 2014). The range of relative efficiencies within the Firmicutes indicates that the Bacteroidetes:Firmicutes ratio measured by the metagenomic sequencing protocols evaluated in Costea et al. (2017) can differ from the true ratio by very little, or by as much as 100-fold, depending on which Firmicutes species is dominant in the sample!",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed range of efficiencies in the Costea et al. (2017) data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "7e8ca1dc-bd82-4280-ab38-3383a38a5b6a",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C75",
+      "claim": "CoDA methods are invariant to compositional perturbations and thus would be invariant to bias.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, our model of bias is equivalent to what is referred to as a compositional perturbation in the CoDA field; many CoDA methods are invariant to compositional perturbations (Aitchison, 2003; van den Boogaart and Tolosana-Delgado, 2013) and thus would be invariant to bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the mathematical equivalence between the bias model and compositional perturbations in CoDA.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "383b7b6e-dcb2-4096-8735-a79d5d22fcba",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C76",
+      "claim": "Calibration could become a practical approach to improving the accuracy of MGS analyses and diagnostics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that calibration could become a practical approach to improving the accuracy of MGS analyses and diagnostics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the successful calibration demonstrated in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "5a0417fd-bbb6-48e3-858f-490b742f4c8a",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C77",
+      "claim": "Reference calibration does not give the abundances in terms of biologically tangible units like cell concentration, but can make measurements from differently biased experiments quantitatively comparable.",
+      "claim_type": "EXPLICIT",
+      "source": "Reference calibration does not give the abundances in terms of biologically tangible units like cell concentration, but can make measurements from differently biased experiments quantitatively comparable, allowing diagnostic criteria to be applied outside of the lab in which they were defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the reference calibration approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "44b7d664-18c8-4aba-9070-784cdd1fdedd",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C78",
+      "claim": "Many sources of bias may deviate from multiplicativity under non-ideal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found bias to act multiplicatively in accordance with our model in two mock-community experiments; however, many sources of bias may deviate from multiplicativity under non-ideal conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of limitations based on known mechanisms of bias.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "39c6d6e0-308b-4db2-99b5-33cbdcf3e4fb",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C79",
+      "claim": "It has been observed that the efficiency of a target sequence is altered by saturation during PCR amplification when the target is either rare or highly abundant.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it has been observed that the efficiency of a target sequence is altered by saturation during PCR amplification when the target is either rare or highly abundant (Suzuki and Giovannoni, 1996; Gonzalez et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Suzuki and Giovannoni, 1996 and Gonzalez et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "f4e34461-f0c1-4b0f-a066-86a87a8b60d4",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C80",
+      "claim": "Thomas et al. (2016) found a strong and consistent saturation effect that may have been caused by PCR saturation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a non-microbial marker-gene experiment, Thomas et al. (2016) found a strong and consistent saturation effect that may have been caused by such a mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Thomas et al. (2016).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "4b8b77d3-1a60-4c4f-acd3-6b3334644a21",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C81",
+      "claim": "Low-abundance taxa may have lower efficiencies when rarer in the sample if they are culled by the minimum-abundance thresholds used by taxonomic profilers such as MetaPhlAn2.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite of saturation, where taxa have lower efficiencies when rarer in the sample, may occur if low-abundance taxa are culled by the minimum-abundance thresholds used by taxonomic profilers such as MetaPhlAn2 (Truong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential mechanism of non-multiplicative bias.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "66ba9468-81c6-4877-8a09-e752c350ac5a",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C82",
+      "claim": "Even when bias does act multiplicatively on individual microbial taxa, that multiplicativity will not hold for aggregates of taxa that vary in their efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when bias does act multiplicatively on individual microbial taxa, that multiplicativity will not hold for aggregates of taxa that vary in their efficiencies (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the model and is discussed in Appendix 1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "32652e63-01cf-408d-974a-6adfc5be20f8",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C83",
+      "claim": "Within the Firmicutes phylum there is tremendous phenotypic variation that manifested itself in the Costea et al. (2017) study as order-of-magnitude differences between the relative efficiencies of various Firmicutes species.",
+      "claim_type": "EXPLICIT",
+      "source": "We know that within the Firmicutes phylum there is tremendous phenotypic variation, and that variation manifested itself in the Costea et al. (2017) study as order-of-magnitude differences between the relative efficiencies of various Firmicutes species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data from Costea et al. (2017) shown in Table 2.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "c5260950-bf3e-470a-affa-5f78d70dc77e",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C84",
+      "claim": "Consistent multiplicative bias could dramatically enrich or diminish the relative abundance of the Firmicutes phylum depending on which Firmicutes species were present.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, consistent multiplicative bias could dramatically enrich or diminish the relative abundance of the Firmicutes phylum depending on which Firmicutes species were present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed variation in efficiencies among Firmicutes species.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "e1830eee-6249-468c-9dbd-1dae0902b03e",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C85",
+      "claim": "Cellular phenotype and matrix chemistry can vary substantially between samples of different types, which may cause bias to vary among samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular phenotype and matrix chemistry can vary substantially between samples of different types, which may cause bias to vary among samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of potential limitations based on known biological variation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "f66ceb72-20da-4dee-8961-603c5808ced8",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C86",
+      "claim": "Different cellular growth states may change the cellular membrane and thus the efficiency of DNA extraction for a given taxon.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, different cellular growth states may change the cellular membrane and thus the efficiency of DNA extraction for a given taxon",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential source of variation in bias.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "95d0d969-745d-413c-9078-bda4b22e4188",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C87",
+      "claim": "Inhibitors in soil samples are known to influence the efficiency of PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "and inhibitors in soil samples are known to influence the efficiency of PCR (Schrader et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schrader et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "27969b2d-19c3-44db-8b8b-82ab833adb0c",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C88",
+      "claim": "In the Costea et al. (2017) experiment, protocols differentially extracted the mock and native gut taxa, which may have been due to physiological differences between the lab-grown cells and the preserved fecal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Costea et al. (2017) experiment, protocols differentially extracted the mock and native gut taxa (Figure 4A), which may have been due to physiological differences between the lab-grown cells and the preserved fecal cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the observation in Figure 4A.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "76efc4a1-2377-4c15-8f5b-dd9b97dd1840",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C89",
+      "claim": "Accurate calibration will require that bias measured in the controls is representative of the bias in the target samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Potential phenotype and matrix effects are particularly relevant for calibration applications, as accurate calibration will require that bias measured in the controls is representative of the bias in the target samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical requirement for calibration to be effective.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "d788458e-d773-4079-81b1-82d945b20b52",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C90",
+      "claim": "The bias estimation procedure is limited to those taxa present in the controls, and thus only allows for partial calibration of the subcomposition of the target samples consisting of those taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "The bias estimation procedure we developed here is limited to those taxa present in the controls, and thus only allows for partial calibration of the subcomposition of the target samples consisting of those taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical limitation of the calibration approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "a1a64890-2e80-43a0-bb51-df6fff30a058",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C91",
+      "claim": "Even partial calibration is useful when controls with key taxa in the target community are available.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even partial calibration is useful when controls with key taxa in the target community are available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the calibration approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "b587571d-7e92-4a72-bde7-ae6590c49064",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C92",
+      "claim": "It may be possible to effectively augment the range of taxa with credible bias estimates beyond those included in control samples by using phylogenetic inference methods to predict the bias of related taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be possible to effectively augment the range of taxa with credible bias estimates beyond those included in control samples by using phylogenetic inference methods to predict the bias of related taxa (Goberna and Verd\u00fa, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential approach, supported by citation to Goberna and Verd\u00fa, 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "61e671aa-9403-4d9b-ad38-0b25e00befac",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C93",
+      "claim": "It will be easier to broadly cover the taxa in a given environment when calibrating to a reference protocol, because any sample measured by the reference protocol can be used as a reference calibration control.",
+      "claim_type": "EXPLICIT",
+      "source": "It will be easier to broadly cover the taxa in a given environment when calibrating to a reference protocol, because any sample measured by the reference protocol can be used as a reference calibration control, including samples from the environment of interest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the reference calibration approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "f67340be-9ee5-48c9-b1f9-372244c329c1",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C94",
+      "claim": "Contamination may be more important than bias in certain scenarios, such as the study of low biomass samples or analyses that are sensitive to very low frequency taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Contamination may be more important than bias in certain scenarios, such as the study of low biomass samples or analyses that are sensitive to very low frequency taxa, and bias correction may be insufficient for accurate measurement and inference in such settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of limitations based on known issues with contamination.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "e0936e90-6836-4b00-af00-76d349856d8e",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C95",
+      "claim": "Accurate bias inference requires accurate removal of contaminant reads prior to estimation through manual filtering or automated removal methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Accurate bias inference also requires accurate removal of contaminant reads prior to estimation through manual filtering or automated removal methods (Davis et al., 2018; Larsson et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical requirement for accurate bias estimation, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "b1834932-e03d-467e-aa2e-37b651991df9",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C96",
+      "claim": "Incorporation of the bias model with models of contamination may allow for simultaneous and improved estimation and correction of both error processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporation of our bias model with models of contamination may allow for simultaneous and improved estimation and correction of both error processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential future direction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "86d929f3-be38-4373-9d70-4d408abb7950",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C97",
+      "claim": "There is variability in the error of taxon ratios around the mean.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, however, there is variability in the error of taxon ratios around the mean (Figure 3D; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3D and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "6a0de60e-2c30-4cf2-94bb-84cfef16e4d9",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C98",
+      "claim": "Robust estimation and calibration may require a statistical model of bias that explicitly accounts for sources of random error such as variation in relative efficiencies across samples and limited sequencing depth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, robust estimation and calibration may require a statistical model of bias that explicitly accounts for sources of random error such as variation in relative efficiencies across samples and limited sequencing depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of future directions based on observed limitations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "c084a37d-eb47-4197-ba09-08efed769cb4",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C99",
+      "claim": "A statistical model would facilitate the construction of confidence intervals for the calibrated taxon proportions in a sample.",
+      "claim_type": "EXPLICIT",
+      "source": "A statistical model would facilitate the construction of confidence intervals for the calibrated taxon proportions in a sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of developing a statistical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "dc851c9a-c4b1-4c8a-a517-a14e9253f357",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C100",
+      "claim": "The finding that multiplicative error in taxon ratios provides a parsimonious model for bias paves the way for the development of a statistical model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that multiplicative error in taxon ratios provides a parsimonious model for bias paves the way for the development of a such a statistical model, which we leave for future work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the implications of the current work for future research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "a2e05d3e-eb90-4e0b-9985-09929a8b92c9",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "claim_id": "C101",
+      "claim": "When bias acts consistently as constant multiplicative factors, it can be accounted for through the use of bias-insensitive analyses or corrected by a calibration procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose a new view in which the measured relative abundances within an experiment are biased by unknown\u2014but constant\u2014multiplicative factors. When bias acts consistently in this manner it can be accounted for through the use of bias-insensitive analyses or corrected by a calibration procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the model and the demonstrated applications.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "89b649b3-79ba-48d1-a859-269c52add959",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MGS measurements are systematically biased due to preferential detection of some taxa over others at each experimental step, making measurements from different protocols quantitatively incomparable and potentially leading to spurious biological conclusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 establish the problem context through well-cited prior work. The claims about bias sources (C5-C9) and consequences (C10-C13) are supported by multiple citations to peer-reviewed literature. This represents established knowledge in the field rather than novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "d2a6aeda-d36f-41fb-9b2e-0074adbd2ddf",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors propose a mathematical model where bias acts as taxon-specific multiplicative factors that are constant across samples. The model predicts that systematic error in taxon ratios is independent of sample composition, while error in taxon proportions depends on sample composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 establish the biological basis for multiplicative bias, while C21-C24, C27, and C29 describe key mathematical properties. These are logical inferences from the model structure (Equations 2-7) and represent the core theoretical contribution. The mathematical derivations appear sound and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of Brooks et al. (2015) marker-gene sequencing data from even bacterial mixtures shows that the proposed model explains 98.8% of measurement error. Error in taxon ratios was consistent across samples while error in proportions varied dramatically, as predicted by the model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 describe the experimental design (citation-based), while C35-C41 present quantitative validation results shown in Figure 3. The 98.8% error reduction (C41) and consistency of ratio errors (C37) versus variability in proportion errors (C38) directly support the model's predictions. The data strongly validates the model for this dataset.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "b2cedec6-70ed-4cc5-98bb-beb6b67884c4",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model successfully explains bias in DNA and PCR-product mixtures from Brooks et al. (2015), revealing that DNA extraction and PCR are independent sources of bias. The model outperforms alternatives while using only 6 parameters versus 441 for the Brooks et al. interaction model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by Table 1 and Figure 3\u2014figure supplement 3. The differential bias between cell and DNA mixtures (C42) provides evidence for independent bias sources (C43). The model comparison (C44) shows superior parsimony and fit, though the Brooks et al. model may be overfit given more parameters than unique compositions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of Costea et al. (2017) shotgun metagenomic data with spike-in mock communities shows that bias among spike-in taxa was consistent across samples with varying native bacterial backgrounds, supporting the model's prediction that bias is independent of sample composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 describe the experimental design, while C49-C54 present validation results shown in Figure 4 and Table 2. The consistency of spike-in relative abundances across different fecal specimens (C50) despite varying native compositions (C49) directly validates the model's key prediction (C51). Protocol-specific bias patterns (C52-C54) further support the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "f2982b04-4379-43fc-8763-1bd0745d54dd",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Calibration using the proposed model reduced measurement error by 92.6% in Brooks et al. data and substantially improved accuracy in Costea et al. data. Even single control measurements provide substantial benefit, with 3-4 controls substantially reducing risk of inaccurate bias estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 present calibration results shown in Figure 5 and Figure 5\u2014figure supplement 1. The quantitative improvements (C55, C57) demonstrate practical utility. The analysis of noise versus bias (C58-C59) provides guidance on control sample requirements. Reference calibration (C60) shows the method can harmonize measurements across protocols.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "c7c40888-a75d-4f20-9ac2-f9f782a8859c",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Protocol H showed much larger bias than Protocols Q and W in the Costea et al. experiment. Protocol Q, the least biased, also yielded the noisiest measurements, though this may partially reflect limited sequencing depth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are supported by Table 2 and Figure 4A. The bias and noise statistics provide quantitative protocol comparisons. However, the interpretation that Protocol Q's higher noise may be due to sequencing depth (C63) is speculative and would require additional analysis to confirm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "2b739210-84e3-4a5f-9e33-bd189d686ad6",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DNA extraction is the largest single source of bias in the Brooks et al. workflow, though PCR bias is also substantial. PCR and extraction bias can act in opposite or same directions for different taxa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 are supported by Figure 6 and Table 1. The decomposition of total bias into extraction, PCR, and sequencing components provides valuable mechanistic insights. However, this assumes bias sources are independent and multiplicative, which may not hold under all conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "18779f19-836a-4fae-964b-26b4c9f20b89",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "16S copy number correction reduced error by about half in DNA mixtures but only slightly in cell mixtures, indicating that copy number variation is just one component of PCR bias, which itself is just one component of total bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are supported by Figure 3\u2014figure supplement 2 and Figure 6\u2014figure supplement 1. The limited effectiveness of CN correction (C68) supports the conclusion that it addresses only part of the bias problem (C69). This has important implications for bias correction strategies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "aea92b84-e276-4942-8f97-b1af377bb211",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Bias appeared inconsistent when viewed as taxon proportions but became consistent when accounting for the compositional nature of MGS data by examining taxon ratios. This demonstrates that apparent inconsistencies in bias are artifacts of compositionality rather than true variation in bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are supported by Figure 3C-D and Figure 4B. The observation that L. crispatus proportions were both higher and lower than true values (C71) but ratios were consistent (C73) elegantly demonstrates the importance of compositional thinking. This is a key conceptual contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "e76a66ec-7e6d-43a4-a5a9-36a208c67e9a",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The Bacteroidetes:Firmicutes ratio measured by metagenomic protocols can differ from the true ratio by up to 100-fold depending on which Firmicutes species dominate, due to order-of-magnitude variation in relative efficiencies within Firmicutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C74 is an inference from the observed range of efficiencies in Table 2. The calculation is sound given the data, though it represents a worst-case scenario. This has important implications for a widely-used gut health diagnostic, making it a significant finding despite being somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "83936cda-565b-42c8-a64b-f39d23abec38",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Compositional Data Analysis (CoDA) methods that are invariant to compositional perturbations would be invariant to bias as modeled here, providing a theoretical basis for bias-robust analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is supported by the mathematical equivalence between the bias model and compositional perturbations, with appropriate citations. This is a valuable theoretical insight connecting the bias model to existing statistical methodology, though no empirical validation is provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "b468e3d1-deeb-43f6-8eed-4985e74061a0",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Calibration could become a practical approach to improving MGS accuracy and making measurements from different protocols quantitatively comparable, though reference calibration does not provide biologically tangible units.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are supported by the successful calibration demonstrations in the manuscript. However, this represents a conclusion about future potential rather than a fully validated practical method. Additional work would be needed to establish calibration as a routine practice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "7eb5e9d4-bacc-4228-b3dc-299fcdb20079",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors acknowledge that bias may deviate from multiplicativity under non-ideal conditions, such as PCR saturation at extreme abundances or minimum-abundance filtering. Multiplicativity also does not hold for aggregates of taxa with varying efficiencies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 discuss limitations supported by citations (C79-C80) and logical reasoning (C81-C82). These are important caveats that appropriately qualify the model's scope. The acknowledgment of these limitations strengthens rather than weakens the overall contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "c30a7857-dee4-4e43-9244-335130da17c6",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Order-of-magnitude differences in relative efficiencies among Firmicutes species in the Costea et al. study demonstrate that consistent multiplicative bias could dramatically affect phylum-level abundances depending on species composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84 are supported by Table 2 data. This extends the model's implications to taxonomic aggregation, an important practical consideration. However, the specific magnitude of effects would depend on the actual species compositions in real samples.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "70b8d5e4-8475-472c-b160-51fd6c541d94",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Cellular phenotype and matrix chemistry may cause bias to vary among samples of different types. Accurate calibration requires that bias measured in controls is representative of bias in target samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C89 discuss potential sources of bias variation supported by citations (C87) and observations (C88). These are important practical considerations for calibration applications. The requirement for representative controls (C89) is a logical consequence that appropriately qualifies the calibration approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "916ace09-e65f-4c43-a6fa-5f48337e7074",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Bias estimation is limited to taxa present in controls, allowing only partial calibration. However, partial calibration is useful when key taxa are available, and phylogenetic inference or reference calibration may extend coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C93 discuss practical limitations and potential solutions. The limitation to taxa in controls (C90) is inherent to the approach. The suggestions for extending coverage (C92-C93) are logical but speculative, requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "8e944c67-00ee-4761-8aa7-4c929aec6156",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Contamination may be more important than bias in certain scenarios and requires accurate removal before bias estimation. Integration of bias and contamination models may allow simultaneous correction of both error sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 discuss the relationship between bias and contamination. The importance of contamination in low-biomass samples (C94) and need for removal before bias estimation (C95) are well-established. The suggestion for integrated modeling (C96) is speculative but reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "97206aeb-7ece-4a04-82d4-0270045df33c",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "There is variability in taxon ratio errors around the mean. Robust estimation may require a statistical model accounting for random error sources. The finding that multiplicative error in ratios provides a parsimonious model paves the way for such statistical model development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C100 acknowledge limitations of the deterministic model and propose future directions. The observed variability (C97) is shown in figures. The suggestions for statistical modeling (C98-C99) are logical extensions. This appropriately frames the current work as foundational for future statistical development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    },
+    {
+      "id": "f9825f62-291e-4d98-b8c8-0a5399878cc4",
+      "content_id": "b166cb94-4020-4697-bdd2-2a60b95c362a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The proposed model of bias as constant multiplicative factors is simpler than previous models yet better fits experimental data. When bias acts consistently in this manner, it can be accounted for through bias-insensitive analyses or corrected by calibration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C101 summarize the main contribution. The model's superior fit with fewer parameters (C4) is demonstrated in Figure 3\u2014figure supplement 3. The dual approach of bias-insensitive analyses and calibration (C101) is supported by the theoretical development and empirical demonstrations throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T12:06:19.422367Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c6d31d76-39b0-4abb-be33-989f9e077926",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "8073c3ba-f23a-42e6-86d0-74e2f2f84c3e",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "4947782d-ee6a-411c-bc47-9e8da3ac604c",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "1e871caa-fd13-4c56-a19c-2ac7edcf2d3c",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "4216f08d-e791-41fb-98bd-a4593f5bba1c",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "4158a56d-3218-4c7b-80a9-ec4d09cb4b4c",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "8aeeb1ce-acc5-48b2-8069-6c03d544d769",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "29975257-d401-40e7-a6bf-2a39acd96a95",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "8d8c783f-33f0-46bc-8ef3-7d3bae19293c",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "9d0ce863-b647-41da-849d-1e7a0092fd45",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "cd8118f5-b2f1-4d4b-818f-b48f38a12f27",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "7cf447ff-0fb7-42a4-84ac-896ddd5bd130",
+      "result_id": "89b649b3-79ba-48d1-a859-269c52add959"
+    },
+    {
+      "claim_id": "9e04bafc-21e3-4c7e-b544-97e3f64cac44",
+      "result_id": "d2a6aeda-d36f-41fb-9b2e-0074adbd2ddf"
+    },
+    {
+      "claim_id": "03ec8cb7-1591-46f8-ba58-44aa9f552ae2",
+      "result_id": "d2a6aeda-d36f-41fb-9b2e-0074adbd2ddf"
+    },
+    {
+      "claim_id": "1270ac04-ffa9-44d5-a26b-7f641925d526",
+      "result_id": "d2a6aeda-d36f-41fb-9b2e-0074adbd2ddf"
+    },
+    {
+      "claim_id": "8fbbbc0a-1a73-4290-80b0-931415228287",
+      "result_id": "d2a6aeda-d36f-41fb-9b2e-0074adbd2ddf"
+    },
+    {
+      "claim_id": "396f81ba-e6d7-46f1-ab78-0e77d257bff4",
+      "result_id": "d2a6aeda-d36f-41fb-9b2e-0074adbd2ddf"
+    },
+    {
+      "claim_id": "24e414e8-7b2b-4362-a62d-339255de08cc",
+      "result_id": "d2a6aeda-d36f-41fb-9b2e-0074adbd2ddf"
+    },
+    {
+      "claim_id": "eede4caa-e1eb-4809-9a8f-42c4b1790db4",
+      "result_id": "d2a6aeda-d36f-41fb-9b2e-0074adbd2ddf"
+    },
+    {
+      "claim_id": "72dcbb87-8a9f-46c4-ac6f-2a98e551a585",
+      "result_id": "d2a6aeda-d36f-41fb-9b2e-0074adbd2ddf"
+    },
+    {
+      "claim_id": "f5ab2aec-84ac-41e1-97bf-ed6ac6fcff3f",
+      "result_id": "d2a6aeda-d36f-41fb-9b2e-0074adbd2ddf"
+    },
+    {
+      "claim_id": "afa45109-06db-48b8-93cd-af4522dcf4d2",
+      "result_id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d"
+    },
+    {
+      "claim_id": "5a86b444-7405-4b6f-8887-f73b904c5e5b",
+      "result_id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d"
+    },
+    {
+      "claim_id": "2ebb7a35-b5ac-4c06-93a0-407062df0e5c",
+      "result_id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d"
+    },
+    {
+      "claim_id": "d31dc24b-24f8-4326-aaae-e6e8ba772fe3",
+      "result_id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d"
+    },
+    {
+      "claim_id": "32e67660-7576-44ab-937c-49b5e645493b",
+      "result_id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d"
+    },
+    {
+      "claim_id": "1803e7ca-93b1-4b40-bc97-ef63d28a2d17",
+      "result_id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d"
+    },
+    {
+      "claim_id": "f3d0fc79-c0e7-478d-a87a-5b82e1bf3d67",
+      "result_id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d"
+    },
+    {
+      "claim_id": "290c3644-c4d6-4a01-9b76-9f4ed7fc4dc3",
+      "result_id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d"
+    },
+    {
+      "claim_id": "1ce39add-ea25-4cbf-a01f-7b86dd6c2481",
+      "result_id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d"
+    },
+    {
+      "claim_id": "dab483a1-2439-493a-b371-3351d8aaff86",
+      "result_id": "7d3b7398-b544-43d9-a9af-1c9fefdf7b8d"
+    },
+    {
+      "claim_id": "436285d0-d9f5-4126-88fe-c50c14e9812e",
+      "result_id": "b2cedec6-70ed-4cc5-98bb-beb6b67884c4"
+    },
+    {
+      "claim_id": "521ccd0e-0b9d-4a0c-8044-7ab18b726ebc",
+      "result_id": "b2cedec6-70ed-4cc5-98bb-beb6b67884c4"
+    },
+    {
+      "claim_id": "217a7aa5-3124-4276-87ed-bd353b93f18d",
+      "result_id": "b2cedec6-70ed-4cc5-98bb-beb6b67884c4"
+    },
+    {
+      "claim_id": "91b5f8b3-c5cc-4cd4-889d-0f83f7148f71",
+      "result_id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb"
+    },
+    {
+      "claim_id": "39fd48e0-e207-4ea7-a9bc-39ee7d4a1107",
+      "result_id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb"
+    },
+    {
+      "claim_id": "da92383b-bbe1-4ae4-9508-67f88e80f865",
+      "result_id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb"
+    },
+    {
+      "claim_id": "029042b6-a42c-4cf1-8f96-141d5d724b92",
+      "result_id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb"
+    },
+    {
+      "claim_id": "d0dc87e1-9df8-4822-8b92-533518730722",
+      "result_id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb"
+    },
+    {
+      "claim_id": "dbbebf8b-5293-438b-bd38-141b1462fe72",
+      "result_id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb"
+    },
+    {
+      "claim_id": "28cdb227-36ec-4d42-b0a5-dcf6260f7c67",
+      "result_id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb"
+    },
+    {
+      "claim_id": "f1aa69dc-d89b-45ab-a2d2-d3c916f7f128",
+      "result_id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb"
+    },
+    {
+      "claim_id": "6f99f3e2-bb76-4ed1-b3cc-f6e5e0b7480f",
+      "result_id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb"
+    },
+    {
+      "claim_id": "26df53c0-c38f-4c03-9365-89c7181f1de9",
+      "result_id": "cc60ece8-1c2e-4cd4-a0bb-52d833ed79cb"
+    },
+    {
+      "claim_id": "53bee292-cbd3-4391-9ddf-fd9d78fd7bc9",
+      "result_id": "f2982b04-4379-43fc-8763-1bd0745d54dd"
+    },
+    {
+      "claim_id": "bb020d67-8ccc-4804-b732-a6a211d9f2bd",
+      "result_id": "f2982b04-4379-43fc-8763-1bd0745d54dd"
+    },
+    {
+      "claim_id": "2522c2b7-2092-47bf-8a0b-aa95d3699912",
+      "result_id": "f2982b04-4379-43fc-8763-1bd0745d54dd"
+    },
+    {
+      "claim_id": "3d162bb4-3220-485f-823a-ffbcb78d62ef",
+      "result_id": "f2982b04-4379-43fc-8763-1bd0745d54dd"
+    },
+    {
+      "claim_id": "2eb3eab6-c9fd-4fd5-9b0a-a21a6abb02b6",
+      "result_id": "f2982b04-4379-43fc-8763-1bd0745d54dd"
+    },
+    {
+      "claim_id": "e1013133-0a37-4478-9b27-47861639867b",
+      "result_id": "f2982b04-4379-43fc-8763-1bd0745d54dd"
+    },
+    {
+      "claim_id": "8a41970d-cda0-43e6-a700-0c108e5459d7",
+      "result_id": "c7c40888-a75d-4f20-9ac2-f9f782a8859c"
+    },
+    {
+      "claim_id": "b72ced3e-89e4-47ce-b65b-eb1e057377ae",
+      "result_id": "c7c40888-a75d-4f20-9ac2-f9f782a8859c"
+    },
+    {
+      "claim_id": "7e3253f7-f8f6-4050-8760-0aa2bebe867d",
+      "result_id": "c7c40888-a75d-4f20-9ac2-f9f782a8859c"
+    },
+    {
+      "claim_id": "2976296c-27f3-42b2-9ac0-8085ba03ca43",
+      "result_id": "2b739210-84e3-4a5f-9e33-bd189d686ad6"
+    },
+    {
+      "claim_id": "5fb14ddd-c079-4843-afe7-83d10e50a220",
+      "result_id": "2b739210-84e3-4a5f-9e33-bd189d686ad6"
+    },
+    {
+      "claim_id": "d6a881e8-2be8-4cbf-aa51-374a99baabba",
+      "result_id": "18779f19-836a-4fae-964b-26b4c9f20b89"
+    },
+    {
+      "claim_id": "8e1ffeb2-db20-4f39-9fe4-dd35c96f07cf",
+      "result_id": "18779f19-836a-4fae-964b-26b4c9f20b89"
+    },
+    {
+      "claim_id": "4b20a130-aec9-476e-9137-ceb642941bac",
+      "result_id": "aea92b84-e276-4942-8f97-b1af377bb211"
+    },
+    {
+      "claim_id": "0f77cdc1-c464-48a1-9a1c-2243a6c1d377",
+      "result_id": "aea92b84-e276-4942-8f97-b1af377bb211"
+    },
+    {
+      "claim_id": "cdb44ca8-4a14-46a7-bce8-b110fd6152f3",
+      "result_id": "aea92b84-e276-4942-8f97-b1af377bb211"
+    },
+    {
+      "claim_id": "9da4eb75-9b5a-4d85-ab13-2e6e452b70e9",
+      "result_id": "aea92b84-e276-4942-8f97-b1af377bb211"
+    },
+    {
+      "claim_id": "b0f98717-a36d-49b6-bf27-2f57b2c8ab8b",
+      "result_id": "e76a66ec-7e6d-43a4-a5a9-36a208c67e9a"
+    },
+    {
+      "claim_id": "7e8ca1dc-bd82-4280-ab38-3383a38a5b6a",
+      "result_id": "83936cda-565b-42c8-a64b-f39d23abec38"
+    },
+    {
+      "claim_id": "383b7b6e-dcb2-4096-8735-a79d5d22fcba",
+      "result_id": "b468e3d1-deeb-43f6-8eed-4985e74061a0"
+    },
+    {
+      "claim_id": "5a0417fd-bbb6-48e3-858f-490b742f4c8a",
+      "result_id": "b468e3d1-deeb-43f6-8eed-4985e74061a0"
+    },
+    {
+      "claim_id": "44b7d664-18c8-4aba-9070-784cdd1fdedd",
+      "result_id": "7eb5e9d4-bacc-4228-b3dc-299fcdb20079"
+    },
+    {
+      "claim_id": "39c6d6e0-308b-4db2-99b5-33cbdcf3e4fb",
+      "result_id": "7eb5e9d4-bacc-4228-b3dc-299fcdb20079"
+    },
+    {
+      "claim_id": "f4e34461-f0c1-4b0f-a066-86a87a8b60d4",
+      "result_id": "7eb5e9d4-bacc-4228-b3dc-299fcdb20079"
+    },
+    {
+      "claim_id": "4b8b77d3-1a60-4c4f-acd3-6b3334644a21",
+      "result_id": "7eb5e9d4-bacc-4228-b3dc-299fcdb20079"
+    },
+    {
+      "claim_id": "66ba9468-81c6-4877-8a09-e752c350ac5a",
+      "result_id": "7eb5e9d4-bacc-4228-b3dc-299fcdb20079"
+    },
+    {
+      "claim_id": "32652e63-01cf-408d-974a-6adfc5be20f8",
+      "result_id": "c30a7857-dee4-4e43-9244-335130da17c6"
+    },
+    {
+      "claim_id": "c5260950-bf3e-470a-affa-5f78d70dc77e",
+      "result_id": "c30a7857-dee4-4e43-9244-335130da17c6"
+    },
+    {
+      "claim_id": "e1830eee-6249-468c-9dbd-1dae0902b03e",
+      "result_id": "70b8d5e4-8475-472c-b160-51fd6c541d94"
+    },
+    {
+      "claim_id": "f66ceb72-20da-4dee-8961-603c5808ced8",
+      "result_id": "70b8d5e4-8475-472c-b160-51fd6c541d94"
+    },
+    {
+      "claim_id": "95d0d969-745d-413c-9078-bda4b22e4188",
+      "result_id": "70b8d5e4-8475-472c-b160-51fd6c541d94"
+    },
+    {
+      "claim_id": "27969b2d-19c3-44db-8b8b-82ab833adb0c",
+      "result_id": "70b8d5e4-8475-472c-b160-51fd6c541d94"
+    },
+    {
+      "claim_id": "76efc4a1-2377-4c15-8f5b-dd9b97dd1840",
+      "result_id": "70b8d5e4-8475-472c-b160-51fd6c541d94"
+    },
+    {
+      "claim_id": "d788458e-d773-4079-81b1-82d945b20b52",
+      "result_id": "916ace09-e65f-4c43-a6fa-5f48337e7074"
+    },
+    {
+      "claim_id": "a1a64890-2e80-43a0-bb51-df6fff30a058",
+      "result_id": "916ace09-e65f-4c43-a6fa-5f48337e7074"
+    },
+    {
+      "claim_id": "b587571d-7e92-4a72-bde7-ae6590c49064",
+      "result_id": "916ace09-e65f-4c43-a6fa-5f48337e7074"
+    },
+    {
+      "claim_id": "61e671aa-9403-4d9b-ad38-0b25e00befac",
+      "result_id": "916ace09-e65f-4c43-a6fa-5f48337e7074"
+    },
+    {
+      "claim_id": "f67340be-9ee5-48c9-b1f9-372244c329c1",
+      "result_id": "8e944c67-00ee-4761-8aa7-4c929aec6156"
+    },
+    {
+      "claim_id": "e0936e90-6836-4b00-af00-76d349856d8e",
+      "result_id": "8e944c67-00ee-4761-8aa7-4c929aec6156"
+    },
+    {
+      "claim_id": "b1834932-e03d-467e-aa2e-37b651991df9",
+      "result_id": "8e944c67-00ee-4761-8aa7-4c929aec6156"
+    },
+    {
+      "claim_id": "86d929f3-be38-4373-9d70-4d408abb7950",
+      "result_id": "97206aeb-7ece-4a04-82d4-0270045df33c"
+    },
+    {
+      "claim_id": "6a0de60e-2c30-4cf2-94bb-84cfef16e4d9",
+      "result_id": "97206aeb-7ece-4a04-82d4-0270045df33c"
+    },
+    {
+      "claim_id": "c084a37d-eb47-4197-ba09-08efed769cb4",
+      "result_id": "97206aeb-7ece-4a04-82d4-0270045df33c"
+    },
+    {
+      "claim_id": "dc851c9a-c4b1-4c8a-a517-a14e9253f357",
+      "result_id": "97206aeb-7ece-4a04-82d4-0270045df33c"
+    },
+    {
+      "claim_id": "a34a96b1-cea4-4e87-bf4d-d9cfb64dba76",
+      "result_id": "f9825f62-291e-4d98-b8c8-0a5399878cc4"
+    },
+    {
+      "claim_id": "a2e05d3e-eb90-4e0b-9985-09929a8b92c9",
+      "result_id": "f9825f62-291e-4d98-b8c8-0a5399878cc4"
+    }
+  ],
+  "comparisons": []
+}

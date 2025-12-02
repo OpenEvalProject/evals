@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C92"
+    ],
+    "result": "The authors developed a semi-mechanistic unsteady-state mathematical model using master equations to describe RBC population dynamics from routine CBC measurements. The model incorporates drift, diffusion, and clearance terms guided by existing physiological knowledge, and was applied to a cohort of 28 healthy individuals with serial CBC measurements at baseline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 and C92 collectively establish the modeling framework with appropriate citations to prior work (C23, C24, C27, C29, C30, C31) and clear description of the study design (C28, C92). The approach builds on established methods and physiological knowledge, providing a reasonable foundation for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The model detects increased RBC production 1-3 days after blood loss, earlier than the gold standard reticulocyte count (which requires ~5 days). This is evidenced by significant increases in model parameters \u03b1 and Dv, and empirical increases in the fraction of newly produced RBCs with characteristic high volume and low hemoglobin concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41, C48, and C49 provide converging evidence from both model parameters (Figure 2B) and empirical data (Figure 4C) showing early detection of increased production. The interpretation of parameters \u03b1 and Dv (C42, C43) is consistent with the model structure, and the characteristic signature of young RBCs (C47, C48) is well-established. Statistical significance is reported (p<1e-3 in C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The model identifies a previously unrecognized delayed RBC clearance response to blood loss, characterized by decreased vc parameter and significant increases in the fraction of older RBCs during the first 1-3 days after blood loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41, C44, and C46 provide consistent evidence from both model parameters (decreased vc in Figure 2B) and empirical data (increased fraction of older RBCs in Figure 4D, p<1e-3). The model simulations (C45, Figure 3A) show expected changes in the low-u region containing older cells. This represents a novel finding as stated in C4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Both increased production and delayed clearance offset blood loss, with opposing effects on MCHC: clearance delay increases MCHC while increased production decreases it. Empirically, MCHC increases shortly after blood loss (p<0.05) then falls below baseline by 21 days (p<0.01), while CHDW increases and remains elevated (p<0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 and C105-C108 provide logical predictions (C52, C53, C55) that are confirmed by empirical measurements with statistical significance (C54, C105, C106, C107, C108, Figure 5). The biphasic MCHC response and sustained CHDW elevation are consistent with the two-component compensatory mechanism (C5, C37), providing independent validation of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C66",
+      "C109",
+      "C111"
+    ],
+    "result": "The model provides a personalized dimensionless ratio (Dv\u00b7vc/\u03b1) quantifying the production/clearance balance for each individual. This ratio correlates significantly with independent measurements of mean RBC age changes (\u03c1=-0.59, p<0.002), with the typical subject showing ~4% decrease in MRBC by 21 days, indicating production-dominated response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C109, and C111 describe the dimensionless ratio and its validation against independent HbA1c-based MRBC estimates (C59, C60). The significant correlation (C109, Figure 4F) and ability to distinguish production- vs clearance-dominated responses (C66, C111, Figure 4G) provide strong validation. The logical framework (C58) connecting the ratio to MRBC is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "RBC volume-hemoglobin dynamics remain significantly altered for at least 21 days after blood loss, enabling classification of pre- vs post-blood loss CBCs with >98% accuracy (AUC 0.98) using P(v,h) alone, outperforming standard markers (HCT and reticulocyte count: 93% accuracy, AUC 0.90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 demonstrate persistent alterations in RBC dynamics and successful machine learning classification. The high accuracy (>98%) with multiple methods and superior performance compared to standard markers (C70) support the conclusion. However, cross-validation details and potential overfitting concerns are not fully addressed given the small sample size (n=28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The mechanistic model provides advantages over purely statistical approaches by linking (v,h) distributions to RBC age distributions, enabling counterfactual assessment, and having potential for immediate clinical decision support through earlier detection of increased RBC production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C76 discuss the model's capabilities and potential applications. While the mechanistic advantages (C74, C75) are conceptually valid, the clinical utility claims (C76) require validation in clinical populations beyond the healthy athletic cohort studied. The potential for counterfactual assessment (C75) is speculative without demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study assumes that blood draw removes RBCs in a volume- and hemoglobin-independent fashion (random sampling of all ages), based on prior labeling studies. The authors acknowledge this evidence is indirect and awaits direct validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C36 describe a key modeling assumption with acknowledged limitations. While supported by prior labeling studies (C35), the authors explicitly state the evidence is indirect (C36). This assumption is critical for interpreting the model results, and its validity could affect conclusions about clearance dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "No statistically significant sex-specific differences were found in the blood loss response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 reports a negative finding without providing statistical details, effect sizes, or power analysis. With only 18 males and 10 females, the study may be underpowered to detect sex differences. The lack of detail makes it difficult to assess whether this represents true absence of differences or insufficient power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study enrolled 28 healthy, athletically active individuals (18 male, 10 female, ages 18-40) at 1400m altitude in Salt Lake City, with standardized blood collection protocols, IRB approval, and CBC measurements in duplicate using Siemens Advia 2120i.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C91 provide comprehensive methodological details about subject characteristics, ethical approvals, and measurement protocols. The methods are clearly described with appropriate standardization (C84, C89) and ethical oversight (C81-C83). The altitude context (C90, C91) is appropriately noted as a potential factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C38",
+      "C39",
+      "C40",
+      "C47",
+      "C51"
+    ],
+    "result": "The manuscript establishes background knowledge about RBC physiology, clinical blood testing, and the clinical significance of anemia, drawing on established literature and clinical practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21, C38-C40, C47, and C51 provide background context supported by appropriate citations to prior literature. These establish the physiological basis for the study and the clinical relevance of the research question. The claims are consistent with established hematology knowledge.",
+    "result_type": "MINOR"
+  }
+]

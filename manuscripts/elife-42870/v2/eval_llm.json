@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C36",
+      "C37",
+      "C38",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Approximately 30 milliseconds after initial response, neurons in intermediate IT areas (pIT, cIT) decreased their responses to typical face-part configurations relative to atypical configurations, while neurons in higher area (aIT) maintained preference for typical configurations. This was observed in 66% of pIT sites and 84% of sites showing significant changes, with responses to typical configurations decreasing by 18% while atypical responses remained stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims provide converging evidence from multiple analyses: population-level dynamics (C2, C25), individual site analyses (C27), cross-monkey replication (C28), firing rate changes (C29, C30), and contrasting stable aIT responses (C36-C38). The temporal specificity (~30ms), statistical significance (p<0.000), and consistency across analytical approaches strongly support this core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The decreasing preference for typical face-part configurations in pIT persisted across multiple control analyses: when initial responses were matched site-by-site (eliminating activity-dependent confounds), when controlling for number of face parts (1, 2, or 4 parts), and when testing different image sizes (3\u00b0, 6\u00b0, 12\u00b0). Late phase firing patterns could not be predicted from early phase pIT activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These control experiments systematically rule out alternative explanations based on firing rate differences, low-level image properties, and simple adaptation. The persistence of the effect across multiple stimulus manipulations (C32, C34, C35) and the lack of predictability from early responses (C33) strengthen the interpretation that this reflects a computation beyond simple feedforward processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C58"
+    ],
+    "result": "Early response patterns in cIT and aIT were significant predictors of late phase activity in pIT (\u03c1=-0.52 and \u03c1=-0.36, respectively), with negative correlations indicating that images producing high early responses in higher areas led to low late responses in pIT. This correlation was stronger than pIT early-to-late predictions (\u03c1=0.07, p=0.347).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlational analysis (C39, C58) provides evidence for hierarchical interactions, with the negative correlation (C40) being consistent with error-coding models where higher-area predictions modulate lower-area responses. The statistical significance and comparison to within-area correlations strengthen this finding, though causality cannot be established from correlation alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C43",
+      "C44",
+      "C50",
+      "C62"
+    ],
+    "result": "Standard feedforward models with local recurrences (adaptation, lateral inhibition, normalization) failed to capture the observed hierarchical neural dynamics. These models showed increasing selectivity to saturation rather than the observed decreasing preference in intermediate stages, indicating the dynamics were inconsistent with pure feedforward processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational modeling systematically tested multiple feedforward architectures (C18, C43, C62) and demonstrated their failure to reproduce the key empirical pattern (C44). The claims are internally consistent and the modeling approach appears rigorous, though the evaluation is limited by the specific model implementations tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C19",
+      "C42",
+      "C51",
+      "C59",
+      "C64",
+      "C65"
+    ],
+    "result": "Recurrent models computing prediction errors between hierarchical stages captured the observed temporal signatures, with error signals naturally displaying decreased selectivity in early processing stages. This error-coding framework fit the data better than feedforward models and was robust across different cost functions (reconstruction, nonlinear reconstruction, discriminative).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The modeling results (C42, C51, C59) demonstrate that error-coding models can reproduce the empirical dynamics, with robustness across cost functions (C65) strengthening the generality. However, the claims acknowledge this is one possible model class (C5, C19) and that the exact mechanism remains underdetermined (implicit in C64). The fit quality and systematic comparison to alternatives support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study identified 21 images that drove >90% of pIT's early response to intact faces, with 13 containing atypical face-part configurations. Population decoding for typical vs atypical configurations was near chance (50%) in pIT but well above chance in cIT and aIT, indicating the discrimination challenge is solved between pIT and aIT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stimulus design (C21, C22) and decoding results (C23, C24) are clearly described with specific quantitative criteria. The progression from chance-level to above-chance decoding across the hierarchy provides a clear functional characterization of the processing challenge, supporting the experimental design rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C48",
+      "C49"
+    ],
+    "result": "The rapid onset of selectivity changes (~30ms after response onset) argues against high-level mechanisms like arousal, attention, or eye movements, which operate on slower timescales (hundreds of milliseconds). The preference for typical configurations in aIT further argues against general arousal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The timing argument (C31, C48) is well-supported by comparison to known timescales of attention and eye movements, with appropriate citations. The aIT response pattern (C49) provides additional evidence against arousal explanations. The logic is sound, though alternative rapid modulatory mechanisms cannot be completely ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "The study proposes that many IT neurons code error signals in addition to feature representations, with errors depending on spatial (not temporal) statistics and naturally present without training. This provides an alternative interpretation to prior 'extreme feature tuning' observations and suggests mixed populations of state-estimating and error-coding neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the error-coding interpretation (C52, C61) is consistent with the data, it remains one possible explanation among alternatives. The novelty claims (C55, C56, C57) are reasonable but the distinction from prior work may be more incremental than claimed. The reinterpretation of prior findings (C60) is speculative. The hypothesis requires additional validation beyond the current correlational and modeling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The study suggests neural responses may encode top-down prediction errors in addition to bottom-up features, with potential implications for implementing learning algorithms like backpropagation in the brain. Error signals could provide control signals for learning, though the exact mechanism for producing prediction errors remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are largely speculative (C6, C67, C68) and acknowledged as such (C53). While the theoretical framework is interesting and the computational arguments are logical (C66), the evidence for these broader implications is indirect. The claims appropriately hedge with 'may' and 'could,' but require substantial additional work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study recorded from 115 pIT, 70 cIT, and 40 aIT sites in two rhesus macaque monkeys using multi-unit recordings at 300 micron intervals. Images were presented for 100ms with 100ms gaps at 6\u00b0 size (with 3\u00b0 and 12\u00b0 controls). A 13ms latency correction was applied between monkeys, with <10ms latency differences between IT stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological details are clearly specified with appropriate sample sizes, recording parameters, and analytical procedures. The justification for using multi-unit recordings (C75) and latency corrections (C76, C77) is provided. These claims describe standard neurophysiological methods appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C41",
+      "C54"
+    ],
+    "result": "The manuscript establishes background knowledge about the ventral visual stream hierarchy, IT's role in object recognition, the success of feedforward models, and the known dynamic nature of IT responses. Prior work has shown face-selective subregions are hierarchically connected with pIT as primary input, and previous studies have found evidence of error-like signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge in the field, appropriately supported by citations to prior work (C7-C14, C41, C54). The background provides necessary context for the current study and the citations appear appropriate, though detailed verification of each cited claim is beyond this evaluation.",
+    "result_type": "MINOR"
+  }
+]

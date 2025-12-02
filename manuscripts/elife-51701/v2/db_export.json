@@ -1,0 +1,1787 @@
+{
+  "submission": {
+    "id": "bfb646e1-bbe1-425c-b3d1-453c4dc50cba",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:43:22.950029Z",
+    "updated_at": "2025-12-02T14:43:22.950029Z"
+  },
+  "content": [
+    {
+      "id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "submission_id": "bfb646e1-bbe1-425c-b3d1-453c4dc50cba",
+      "content_type": "manuscript",
+      "content_text": "# Development of a confinable gene drive system in the human disease vector Aedes aegypti\n\n## Authors\n\n- Ming Li<sup>1</sup> ([ORCID: 0000-0002-7578-4968](https://orcid.org/0000-0002-7578-4968))\n- Ting Yang<sup>1</sup> ([ORCID: 0000-0001-7201-4231](https://orcid.org/0000-0001-7201-4231))\n- Nikolay P Kandul<sup>1</sup>\n- Michelle Bui<sup>1</sup>\n- Stephanie Gamez<sup>1</sup>\n- Robyn Raban<sup>1</sup> ([ORCID: 0000-0002-5648-6770](https://orcid.org/0000-0002-5648-6770))\n- Jared Bennett<sup>2</sup>\n- H\u00e9ctor M S\u00e1nchez C<sup>3</sup>\n- Gregory C Lanzaro<sup>4</sup>\n- Hanno Schmidt<sup>4</sup> ([ORCID: 0000-0001-8915-891X](https://orcid.org/0000-0001-8915-891X))\n- Yoosook Lee<sup>4</sup>\n- John M Marshall<sup>3</sup> ([ORCID: 0000-0003-0603-7341](https://orcid.org/0000-0003-0603-7341))\n- Omar S Akbari<sup>1</sup> ([ORCID: 0000-0002-6853-9884](https://orcid.org/0000-0002-6853-9884)) \u2020\n\n### Affiliations\n\n1. Section of Cell and Developmental Biology University of California, San Diego San Diego United States\n2. Department of Biophysics University of California, Berkeley Berkeley United States\n3. Division of Epidemiology and Biostatistics, School of Public Health University of California, Berkeley Berkeley United States\n4. Vector Genetics Laboratory, Department of Pathology, Microbiology, and Immunology, School of Veterinary Medicine University of California, Davis Davis United States\n5. Innovative Genomics Institute Berkeley United States\n6. Tata Institute for Genetics and Society University of California, San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAedes aegypti is the principal mosquito vector for many arboviruses that increasingly infect millions of people every year. With an escalating burden of infections and the relative failure of traditional control methods, the development of innovative control measures has become of paramount importance. The use of gene drives has sparked significant enthusiasm for genetic control of mosquitoes; however, no such system has been developed in Ae. aegypti. To fill this void, here we develop several CRISPR-based split gene drives for use in this vector. With cleavage rates up to 100% and transmission rates as high as 94%, mathematical models predict that these systems could spread anti-pathogen effector genes into wild populations in a safe, confinable and reversible manner appropriate for field trials and effective for controlling disease. These findings could expedite the development of effector-linked gene drives that could safely control wild populations of Ae. aegypti to combat local pathogen transmission.\n\n## Introduction\n\nDue to the high annual incidence of vector-borne disease, the associated economic burdens, and the lack of effective vaccines, interest in the innovation of novel population-control methods to prevent pathogen transmission is increasing. Aedes aegypti is the principal mosquito vector of several arboviruses, including yellow fever, chikungunya, dengue, and Zika (Scott and Takken, 2012). This mosquito alone places roughly half of the world's population at risk of acquiring vector-borne diseases while causing an estimated 390 million dengue infections annually (Bhatt et al., 2013). Traditional mosquito control strategies, including long-lasting insecticide-treated bed nets (LLINs), chemical insecticides, and environmental management (Schreck, 1991), have significantly reduced mosquito-borne disease burdens; however these interventions are largely unsustainable due to the development of both genetic and behavioral vector resistance that decrease their efficacy (Vontas et al., 2012), high costs, and the need for repeated applications with limited spatial impact. Furthermore, chemical interventions, a fundamental tool for vector control, negatively affect non-target beneficial organisms, such as pollinators. Therefore, there is a pressing global need for alternative safe and effective approaches to control mosquito disease vectors.\n\nSpecies-specific mosquito population suppression technologies, such as the Wolbachia incompatible insect technique (IIT) and the release of dominant lethal gene (RIDL), are currently being implemented on a small-scale in the field to control populations of Ae. aegypti (Harris et al., 2012; McMeniman et al., 2009; Phuc et al., 2007). While these technologies improve Ae. aegypti control capabilities, they require continuous inundation, which is laborious and cost prohibitive to many areas with the largest vector-borne disease burdens. In addition to IIT, Wolbachia has also been used for population replacement in various locations (Hoffmann et al., 2011; Jiggins, 2017; Schmidt et al., 2017), as certain strains can spread to fixation while reducing the vector\u2019s susceptibility to dengue virus (Walker et al., 2011). However, the literature suggests the effectiveness of different Wolbachia strains varies so far as to even enhance vector competence in some contexts, which may lead to a reevaluation of this technique (Amuzu et al., 2018; Dodson et al., 2014; Hughes et al., 2014; Hughes et al., 2012; King et al., 2018; Murdock et al., 2015; Z\u00e9l\u00e9 et al., 2014). Therefore, there has been renewed interest in developing novel species-specific and cost-effective genetic technologies that provide long-lasting disease reduction with limited effort.\n\nOne innovative technology, first articulated by Burt (2003), utilizes homing-based gene-drive technologies to expedite the elimination and eradication of vector-borne diseases (Burt, 2014; Champer et al., 2016; Esvelt et al., 2014; Marshall and Akbari, 2017; Marshall and Akbari, 2016). Conceptually, these drives function by exploiting the organism\u2019s innate DNA repair machinery to copy or \u2018home\u2019 themselves into a target genomic location prior to meiosis in the germline. This process converts wild type alleles into drive alleles in heterozygotes, thereby forcing super-Mendelian inheritance of the drive into subsequent generations, irrespective of the fitness cost to the organism. Theoretically, this inheritance scheme can spread the drive and any linked anti-pathogen \u2018cargo genes,\u2019 to fixation in a population in a short time frame (Buchman et al., 2019; Dong et al., 2018; Yen et al., 2018), even with modest introduction frequencies (Burt, 2003). Importantly, if these drives are linked with effective anti-pathogen cargo genes, they could deliver efficient and cost-effective vector control (Burt, 2003). The drawback to this scheme came from the difficulty in engineering homing drives with various endonucleases, however the recent CRISPR revolution has streamlined their development (Champer et al., 2016; Esvelt et al., 2014). In fact, proof-of-concept CRISPR-based homing gene drives have recently been developed in several organisms including yeast (Basgall et al., 2018; DiCarlo et al., 2015; Roggenkamp et al., 2018; Shapiro et al., 2018), flies (Champer et al., 2019; Champer et al., 2018; Champer et al., 2017; Kandul et al., 2019a; KaramiNejadRanjbar et al., 2018; Oberhofer et al., 2018), mice (Grunwald et al., 2019), and two malaria vector species, Anopheles gambiae (Hammond et al., 2016; Hammond et al., 2017; Kyrou et al., 2018) and Anopheles stephensi (Gantz et al., 2015). All of these CRISPR-based homing gene drives minimally consist of a Cas9 endonuclease, which facilitates the genome integration of the gene drive and a guide RNA (gRNA) cassette, which encodes the sequence-specific integration site targeted by Cas9. When these two components are expressed together in the germline at the correct time and quantity, they can cause drive conversion at some frequency, a process in which one copy of the drive becomes two copies, thereby biasing the inheritance of the drive.\n\nUnfortunately, a gene-drive system has yet to be developed in Ae. aegypti, the lack of which is principally due to the absence of tools necessary to engineer drives. In response to these deficiencies, here we molecularly characterized drive components and then evaluated and optimized these components in several drive systems in Ae aegypti. As a safety precaution, we engineered \u2018split gene drives (referred to as split drives from hereon)\u2019 with a molecularly unlinked endonuclease, thereby allowing the user to spatially and temporally confine the drive (Akbari et al., 2015a; Champer et al., 2016; Committee on Gene Drive Research in Non-Human Organisms: Recommendations for Responsible Conduct, Board on Life Sciences, Division on Earth and Life Studies, National Academies of Sciences, Engineering, and Medicine, 2016; Esvelt et al., 2014). To improve drive efficiency, we targeted a highly conserved region in a phenotypic gene with cleavage rates, indicating biallelic cutting, of 100% and homing rates, indicating the super-Mendelian transmission rate of the drive, as high as 94%. In addition to demonstrating drive efficiency, we performed mathematical modeling that suggested split drives are particularly valuable in gene drive development since: i) several consecutive releases of male mosquitoes harboring the split drive and anti-pathogen cargo, at an achievable 1:1 ratio with the wild population, could spread disease refractoriness into wild populations, ii) the split drive should not significantly spread into neighboring populations, and iii) dissociation of the unlinked endonuclease and guide RNA components, in addition to the fitness costs associated with the split drive and cargo, may cause the drive to be eliminated from the population on a timescale that could accommodate local arbovirus elimination. These highly desirable features could enable safe testing of a split drive system in the field prior to the release of a more invasive, self-propagating, linked-drive system, and could lead to the development of new technologies to prevent vector-borne disease transmission.\n\n## Results\n\n### Rational target site selection for the drive\n\nTo develop a binary Cas9 gRNA approach that could be leveraged for the development of gene drives, we built on our previous work that generated Ae. aegypti strains expressing the Cas9 endonuclease in both germline and somatic cells and demonstrated their robust cleavage and improved homology directed repair (HDR) efficiencies (Li et al., 2017). We targeted an easily screenable gene with consistent and viable disrupted phenotype, the white gene (AAEL016999), which is an ATP-binding cassette (ABC) transporter (Bhalla, 1968; Coates et al., 1997; Li et al., 2017). To locate a highly conserved target sequence in white, we bioinformatically compared the whole-genome sequences of 143 Ae. aegypti mosquitoes sampled throughout California (n\u00a0=\u00a0127), Florida (n\u00a0=\u00a04), Mexico (n\u00a0=\u00a03), Puerto Rico (n\u00a0=\u00a06), and South Africa (n\u00a0=\u00a03) (Figure 1\u2014figure supplement 1, Figure 1\u2014source data 1) (Lee et al., 2019). From this analysis, we discovered a putative gRNA target sequence in exon 3 of white (gRNAw) that was 100% conserved in these wild populations (Figure 1\u2014figure supplement 2A\u2013B). To target this highly conserved sequence and determine cleavage efficiency at this site, we synthesized and injected gRNAs into embryos derived from exu-Cas9 (Exuperantia, AAEL010097) females that maternally deposit Cas9. We achieved a 92.7 \u00b1 5.8% mutation efficiency in the injected G0s, which is consistent with our previous work in this line (Li et al., 2017), demonstrating that this target site is accessible to Cas9 cleavage and that this gRNA is highly active.\n\n### Characterization of functional polymerase-III promoters\n\nNext, we needed a promoter to ensure proper strength and timing of gRNA expression for cleavage and homing to occur in the germline. U6 non-coding small nuclear RNA (snRNA) polymerase III promoters are ideal for gRNA expression due to their nucleus-associated transcription and unmodified 5' and 3' regions (i.e., no 5' cap or 3' polyA tail); consequently, they have been used to drive gRNA expression in various species (Gantz et al., 2015; Hammond et al., 2016; Kondo and Ueda, 2013). Unfortunately, U6 promoters have not been functionally characterized in Ae. aegypti. There are six known U6 genes in Ae. aegypti (Matthews et al., 2018), however their promoters remain to be characterized. Therefore, to characterize these promoters for gRNA expression, we engineered six constructs each with a predicted U6 promoter (termed U6a-U6f from hereon) derived from Ae. aegypti to drive expression of gRNAw (Figure 1\u2014figure supplement 2C). To transiently assess promoter activity, we microinjected each construct separately into exu-Cas9 derived embryos (Li et al., 2017) (Figure 1A). Of the six injected constructs, only four (U6a-d) induced somatic loss-of-function variegated biallelic white-eye loss-of-function phenotypes in G0 embryos with moderate mutation frequencies ranging from 32.5\u201371.3% (Figure 1B), indicating that these four promoters can transiently express gRNAw. We then evaluated germline mutation rates by outcrossing mosaic G0 mosquitoes to recessive white mutants (w\u220619/w\u220619) harboring a 19 bp deletion at the white gRNA cut site which would lead to heritable the recessive loss-of-function phenotypes in successfully edited mosquitoes. These phenotypes were then scored in the G1 progeny with rates ranging 27.6\u201367.5%, indicating efficient germline editing (Figure 1A\u2013B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig1-v2.jpg)\n\n**Figure 1.:** (A) exu-Cas9 embryos were injected with one of 6 piggyBac plasmids, each utilizing a different U6 promoter expressing a guide RNA targeting the white eye pigmentation gene, gRNAw (Figure 1\u2014figure supplement 2). The frequency of somatic white eye phenotypes in the resulting G0 progeny was used to assess promoter efficiency and to confirm gRNA target site accessibility. Germline mutagenesis rates were assessed by crossing G0 to white loss-of-function (w\u220619/w\u220619) lines to determine the white eye phenotype frequency in G1 progeny. (B). Two types of w\u2013 knockouts were observed: complete white eyes and mosaic white eyes. Out of 6 tested U6 promoters, four U6 promoters (U6a, U6b, U6c, and U6d) induced white knockout phenotypes. Statistical differences between germline and somatic mutation rates were estimated by equal variance t-test. (C) Transgenic males harboring piggyBac-integrated U6-gRNAW were outcrossed to either exu-Cas9 or ubiq-Cas9 females (left panel), and eye phenotypes were scored in G1 trans-heterozygous progeny (right panel, Supplementary file 1). Statistical differences in mutation knockout rates were estimated by equal variance t-test. (P \u2265 0.05ns, p<0.05*, p<0.01**, and p<0.001***).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Left map depicts the location of all samples from California (CA) with the inset enlarging the Fresno/Clovis area. Top center shows a North American map including CA, Florida, and Cuernavaca, Mexico. Bottom central shows southern California near Greater Los Angeles area. Top right shows an African map with three locations in South African sample origin. Bottom right shows a Florida map with sampling locations. Each symbol represents a single individual mosquito. These plots were generated using CleanTOPO2 basemap (Patterson, 2008).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Nucleotide sequence for the gRNAw genomic target sequence in exon 3 of white gene with the PAM sequence indicated in red (A). Conservation of the RNAw genomic target sequence identified among 143 Ae. aegypti mosquitoes sampled from the field (B). Within the target sequence (AaegL5. 1:107,955,440\u2013107,955,462, Vectorbase.org) (Dudchenko et al., 2017)(Matthews et al., 2018) no polymorphism sites were detected. The nearest polymorphic sites detected (red arrows) were \u22121 bp upstream (107,955,439) and +22 bp downstream (107,955,484). Schematic maps of six constructs utilized to functionally test U6 promoter activity in Ae. aegypti (C). Schematic maps of the four split drive elements (GDe) developed in this study. Plasmids generated in the study were deposited at Addgene.org and the corresponding ID numbers are listed.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** To confine a gene drive\u2019s propensity to spread, we separated the complete CRISPR/Cas9 gene drive system into two components: a Gene Drive element (GDe) comprising a gRNA and a fluorescent marker both flanked by Left and Right Homology Arms (LHA and RHA); and Cas9 endonuclease (Cas9). GDe integrated in a target gene, here it was white locus, can spread from the carrier chromosome into a naive chromosome in the presence of Cas9 transgene randomly integrated at a separate locus (A). First, Cas9/gRNA complex cuts the target site (cleavage); when GDe can be copied from the carrier chromosome into a naive chromosome via Homology Directed Repair (HDR). Each element is inactive on its own and can be maintained as a homozygous parental line (P). The cross between the homozygous lines results in 100% trans-heterozygous G1 progeny that carry both elements (B). gRNA expressed by GDe directs cleavage at white locus by Cas9, which can be repaired in three different ways: via HDR using GDe as a repair template and result in homing of GDe, and via Non-Homology End Joining (NHEJ) and lead to a loss-of-function mutant allele or an in-frame functional mutant allele. NHEJ-induced mutated alleles carry insertions/deletions (indels) at the cut site and become resistant to the same Cas9/gRNA system.\n\n### Development of a binary CRISPR approach\n\nTo measure cleavage and mutagenesis efficiencies of genome-integrated drive components, we developed a simple fluorescence-based system that would be compatible and orthogonal to the white mosaic readout. We developed this system by genetically encoding the four functional U6a-U6d-gRNAw transgenes by injecting these constructs into Ae. aegypti embryos (designated as wild type [wt]) and establishing a transgenic line for each construct. Transgenesis was confirmed by the enhanced green fluorescent protein (eGFP) transgenesis marker (Figure 1\u2014figure supplement 2C), and positives were outcrossed to wt strains to establish stocks. Somatic cleavage efficiencies were estimated by crossing males from each line (U6a-U6d-gRNAw) to females of Cas9 expression lines, exu-Cas9 and ubiq-Cas9 (ubiquitin L40, AAEL006511) which rely on different promoters to express Cas9 (Li et al., 2017). The frequency of somatic white mutagenesis was scored in the trans-heterozygous progeny (Figure 1C).\u00a0Interestingly, the rates of mosaicism, an intermediate phenotype with both wt and knockout characteristics (i.e. black and white patchy eyes see Figure 2), varied depending on the Cas9 and the gRNAw promoters. As the timing and level of both Cas9 and gRNA expression is important for inducing mosaicism (Kandul et al., 2019b; Yen et al., 2014), this could contribute to this variation, or it could also be position dependent as the integration of the transgene cassettes was not site specific. Interestingly, the combination of the ubiq-Cas9 strain and the U6b-gRNAw and U6c-gRNAw strains induced up to 100% white somatic knockout frequencies, with varied rates of eye pigment mosaicism, indicating that these U6 promoters are highly active and timing appropriate when encoded in the genome to induce knock-out phenotypes (Figure 1C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig2-v2.jpg)\n\n**Figure 2.:** (A) Crossing scheme of the wGDe and exu-Cas9 parent strains (P) to generate trans-heterozygotes (G1), and the outcrossing of their progeny to wild-type (wt) mosquitoes (G2). tdTomato eye and dsRed abdominal expression were the wGDe and exu-Cas9 transgene inheritance markers, respectively. wGDe transmission and white loss-of-function mutation rates were estimated among G2 progeny of trans-heterozygous female and wt male crosses. Super-Mendelian inheritance of wGDe occurred when the transmission rate of wGDe in G2 progeny was\u00a0>50%, as expected by standard Mendelian inheritance. (B) Examples of G2 progeny eye phenotypes and corresponding genotypes.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Schematic of site-specific integration and sex-linked inheritance of Gene Drive element (GDe) (A). To direct site-specific integration of GDe inside white locus (white stripe on chromosome I) via homology directed repair (HDR), wild type (wt) Ae. aegypti embryos were injected with a Cas9/gRNAw complex and a plasmid carrying GDe flanked by homology regions complementary to left and right genomic regions at the white cut site. GDe contains two genes: U6-gRNAw to direct a site-specific cleavage and the 3xP3-tdTomato transgenesis marker (red stripe). Female mosquitoes carrying wGDe/w+ passed wGDe randomly to both genders, while transgenic males transmitted wGDe either to females (type I) or males (type II) nearly exclusively. Close genetic linkage of white and Nix genes causes tight sex-linked inheritance of wGDe via male founders (B). Nix is located near the centromere of chromosome I (Dudchenko et al., 2017; Matthews et al., 2018) and consequently, type I male (\u2642) founders have wGDe inserted on the chromosome copy without Nix and therefore pass wGDe exclusively to female progeny. On the other hand, type II male founders have wGDe integrated on the chromosome with Nix, and thus they transfer wGDe and Nix together exclusively to male progeny (box). Bars show average\u00a0\u00b1\u00a0SD estimated for 20 data points. Statistical significance between gender frequencies was estimated by an equal variance t test. (P \u2265 0.05ns and p<0.001***).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Schematic showing positions of Left and Right Homology Arms (LHA and RHA) of GDe relative to genomic white sequence. The cut site is presented over the genetic structure of white, with darker gray boxes representing exonic coding sequences. GDe constructs were integrated at the cut site via homology directed repair (HDR) relying on the construct\u2019s LHA and RHA to white. Arrows depict primers (AE20, AE21, AE22 and AE23) used for PCR and their location relative to genomic and constructs sequences. Two gel images showing specific PCR amplicons for each side of integration (B). The same DNA samples, listed in the box to the left, were used to PCR of both fragments. To confirm PCR specificity, amplicons were Sanger sequenced from both ends.\n\n### Engineering split drives\n\nGiven the above promising results, we next wanted to use these components to develop split drives. To engineer split drives, we separated the drive components into two elements: a gene-drive element (GDe) and the Cas9 endonuclease ((Figure 1\u2014figure supplement 3). Because we did not know which U6 promoter would be optimal for homing in the germline, we engineered four GDe\u2019s (U6a-GDe\u2013U6d-GDe), each consisting of gRNAw under the control of a different functional U6 promoter (U6a\u2013U6d) that also contained a dominant tdTomato marker (red fluorescent protein) for tracking and two outer homology arms immediately flanking the gRNAw target site to mediate HDR at the white locus (Figure 1\u2014figure supplements 2D and 3A). While no previous efforts have been undertaken to improve sgRNA function in Ae. aegypti, to attempt to further increase gRNA expression, the gRNA scaffold was modified slightly as previously described (Dang et al., 2015) to eliminate cryptic termination sequences. We established transgenic lines by injecting wt embryos with Cas9 recombinant protein pre-mixed with gRNAw (Cas9/gRNAw) in combination with a GDe construct to serve as the template for site-specific integration via Cas9-mediated HDR (Figure 2\u2014figure supplement 1A). Transgenic mosquitoes, wGDe/w+, were readily identified as G1 larvae by their dominant tdTomato expression and black (w+) eyes, and they were then intercrossed to establish lines. Integration of the GDe\u2019s into the white locus was genetically confirmed by the presence of homozygous (wGDe/wGDe) individuals expressing tdTomato with recessive white (w\u2013) eyes, which was additionally confirmed by genomic sequencing of the left and right insertion boundaries all of which inserted perfectly except U6d-GDe which unexpectedly had an 276 bp insertion in the right homology arm (Figure 2\u2014figure supplement 2).\n\n### Sex-biased inheritance of GDe\n\nNext, we confirmed the Mendelian inheritance of each GDe by reciprocal outcrossing of 20 individual heterozygous (wGDe/w+) individuals to wt (w+/w+). The expected result was that both male and female heterozygous individuals would transmit the wGDe gene to their progeny at the Mendelian rate of 50%. Indeed, the heterozygous wGDe/w+ females did meet this expectation, conferring wGDe inheritance to their progeny at normal Mendelian rates. The wGDe/w+ males, however, displayed sex-segregated transmission of wGDe to either mostly females at 99.8 \u00b1 0.3% (type I \u2642 in Figure 2\u2014figure supplement 1, Supplementary file 2) or to mostly males at 99.8 \u00b1 0.2% (type II \u2642 in Figure 2\u2014figure supplement 1, Supplementary file 2). This result is not unexpected as white has been previously been described as a sex-linked gene in Ae. aegypti (Bhalla, 1968), and recent genome sequencing has confirmed this linkage (Dudchenko et al., 2017; Matthews et al., 2018) as white is located in close proximity to Nix (AAEL022912), a dominant male-determining factor (M-factor) located on chromosome I (Aryan et al., 2019; Hall et al., 2015). There is also little to no recombination in this region, especially in males (Fontaine et al., 2017; Severson et al., 2002; Toups and Hahn, 2010; Hall et al., 2014), which would further support sex-linkage at this loci. Therefore, depending on which chromosome the GDe initially integrated, the GDe and Nix were either linked, producing nearly all male progeny, which inherited both wGDe and Nix to exhibit male-biased inheritance, or the GDe was inherited separately from Nix (wGDe/w+) to exhibit female-biased inheritance (Figure 2\u2014figure supplement 1). Nevertheless, when both sexes were considered, heterozygous wGDe/w+ parents transmitted wGDe to their progeny at the 50% normal Mendelian inheritance rate.\n\n### Split drives induce super-Mendelian inheritance\n\nTo determine whether split drives could selfishly bias transmission, which could be exploited to rapidly and efficiently drive an anti-pathogen effector into a population, we performed a number of genetic crosses to determine transmission efficiencies. First, we estimated somatic cleavage efficiencies by outcrossing each wGDe strain to the exu-Cas9 strain to generate trans-heterozygous wGDe/w+; exu-Cas9/+ individuals. We found that rates of maternal carryover-dependent cleavage, which occurs when mothers maternally deposit high levels of Cas9 into their embryos and is indicated by the presence of mosaic phenotypes, varied depending on U6 promoter (26\u2013100%), while the paternal carryover of Cas9 was not sufficient to induce these phenotypes (Figures 2A and 3A; Supplementary file 3a, Supplementary file 3b). Next, to measure homing efficiencies, we bidirectionally outcrossed G1 trans-heterozygotes wGDe/w+; exu-Cas9/+ to wt and quantified somatic cleavage and inheritance frequencies in G2 progeny (Figure 2). From these crosses, cleavage and homing efficiencies varied, most notably trans-heterozygous wU6b-GDe/w+; exu-Cas9/+ females induced somatic mosaicism in 96.3 \u00b1 4.0% of their progeny (Figure 3B, Supplementary file 3c). Furthermore, modest super-Mendelian inheritance was observed (70.9 \u00b1 7.8% in G2 progeny) which is significantly greater than the expected 50% for normal Mendelian transmission, while no cleavage or homing was observed from trans-heterozygous G1 male outcrosses to wt (Figure 3C; Supplementary file 3d). To distinguish the contribution of maternal effects to differential drive transmission, we repeated these crosses with paternal Cas9 inheritance; however, there were no significant differences in transmission rates in the G1 progeny based on the parentage of the Cas9 donor (Figures 2A and 3B\u2013C; Supplementary files 3e \u2013 3f).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig3-v2.jpg)\n\n**Figure 3.:** We bidirectionally crossed trans-heterozygous mosquitoes that contained both components of a gene drive: the gene drive element (GDe) and the Cas9 transgene (wGDe/w+; Cas9/+). (Figure 2A). (A\u2013C) Four wGDe/w+ lines, each with a different gRNAw U6 promoter, were crossed to the exu-Cas9 strain to compare cleavage and homing activity. (A) Maternally deposited Cas9 protein induced white cleavage in G1 trans-heterozygotes harboring wU6a-GDe, wU6b-GDe, and wU6c-GDe but not wU6d-GDe. (B) In comparison to wGDe/w+, trans-heterozygous wGDe/w+; exu-Cas9/+ females, (C) but not males, exhibited super-Mendelian transmission of wGDe. The wU6b-GDe/w+; exu-Cas9/+ females transmitted wU6b-GDe to 70.9 \u00b1 7.8% of G2 progeny. (D\u2013F) Five lines expressing Cas9 from different promoters were crossed to wU6b-GDe/w+. (D) Maternally deposited Cas9 resulted in white cleavage in G1 trans-heterozygotes. (E) Three out of five tested Cas9 lines, exu-Cas9, nup50-Cas9, and ubiq-Cas9, induced super-Mendelian transmission of wGDe by trans-heterozygous females. The wU6b-GDe/w+; nup50-Cas9/+ females transmitted wU6b-GDe to 80.5 \u00b1 5.0% of G2 progeny. (F) All trans-heterozygous males transmitted wGDe following a regular Mendelian inheritance except for the wU6b-GDe/w+; nup50-Cas9/+ males that induced white cleavage in 51.0 \u00b1 3.9% and transmitted the wU6b-GDe allele to 66.9 \u00b1 5.4% of G2 progeny. Point plots show the average\u00a0\u00b1\u00a0standard deviation (SD) over 20 data points. Grey dotted line indicates standard Mendelian inheritance rates. Statistical significance was estimated using an equal variance t-test. (P \u2265 0.05ns, p<0.05*, p<0.01**, and p<0.001***).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Frequencies of white cleavage and wU6b-GDe transmission were plotted over multiple generations. The wU6b-GDe/w+; exu-Cas9/+ and wU6b-GDe/w+; nup50-Cas9/+ trans-heterozygous females, or males were outcrossed to wt each generation and both transmission and cleavage rates were scored. Average transmission rates at consecutive generations were compared to the corresponding rates at G2. Point plots show the average\u00a0\u00b1\u00a0SD over 20 data points. Statistical significance was estimated using a t test with equal variance. (P \u2265 0.05ns, p<0.05*, and p<0.001***).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Mosquitoes carrying resistance alleles (wR) were identified among progeny of genetic crosses between wU6b-gRNA/w+; nup50-Cas9/+ trans-heterozygous mosquitoes with wt (Supplementary file 6) and were further crossed to the Ae. aegypti loss-of-function w\u220619/w\u220619 line, to place novel knockout alleles (wR) into the recessive genetic background. To sample wR alleles from w\u220619/wR heterozygous mosquitoes, PCR amplicons amplified from an individual mosquitoes were cloned into a plasmid, and a seven clones were Sanger sequenced in both directions and aligned against the w+ and w\u220619 alleles in SnapGene 4.2. Genders and genotypes of analyzed mosquitoes as well as the generation when they were recovered are provided on the left side. Numbers of bases deleted is indicated below the corresponding deletion. Notably, while the deletions of 3 and 18 bases re-established the reading frame for white gene, they still displayed the loss-of-function phenotype.\n\n### Cas9-associated variability in homing efficiency\n\nGiven the modest homing efficiencies in females, and the lack of homing and cleavage in males developed above, we wanted to further optimize the system to ensure better drive performance. To do this, we varied Cas9 expression and timing to test for improved homing efficiencies. The best performing wU6b-GDe/+ line was outcrossed to additional previously developed Cas9 strains (Li et al., 2017), each with a unique promoter expressing Cas9: 4nitro-Cas9 (4-nitrophenyl phosphatase, AAEL007097), trunk-Cas9 (trunk, AAEL007584), nup50-Cas9 (nucleoporin 50 kDa, AAEL005635), or ubiq-Cas9, which enabled us to test the effect of differential Cas9 expression on homing efficiency. Homing and cleavage efficiencies were evaluated in the G1 trans-heterozygotes wU6b-GDe/w+; Cas9/+ with maternally or paternally inherited Cas9 (Figure 2). The G1 trans-heterozygotes resulting from outcrosses of these maternal Cas9 lines to U6b-GDe had a somatic mosaic white phenotype and cleavage rates of 25.3 \u00b1 6.3% (4nitro-Cas9), 85.8 \u00b1 4.6% (trunk-Cas9), and 100% (nup50-Cas9 and ubiq-Cas9) (Figure 3D, Supplementary file 4a). Moreover, zygotic Cas9 activity induced the somatic mosaic white phenotypes 49.0 \u00b1 7.1% of the time in G1 trans-heterozygotes from paternally inherited nup50-Cas9 crosses (Figure 3D, Supplementary file 4b). Interestingly, homing efficiencies varied by Cas9 strain; for example, trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ females induced this somatic mosaicism in 100 \u00b1 0% of their G2 progeny with an average 80.5 \u00b1 5.0% inheritance rate in G2 progeny, while 51.0 \u00b1 3.9% of G2 progeny from wU6b-GDe/w+; nup50-Cas9/+ male crosses had this somatic mosaicism and 66.9 \u00b1 5.4% of the G2 progeny inherited the drive (Figure 3E\u2013F; Supplementary files 4c- 4d). The role of maternal effects in differential drive transmission was assessed by repeating these drive experiments with paternal Cas9 lines in G2, however we did not detect significant differences in drive inheritance between maternal and paternal Cas9 lines (t-test with equal variance, p>0.05; Figure 3E\u2013F; Supplementary files 4e- 4f).\n\n### Multi-generation split drive stability\n\nGene drives need to have a predictable behavior and stability across many generations, so these properties of the split-drive were determined over multiple consecutive generations by bidirectional outcrosses of wU6b-GDe/w+; exu-Cas9/+ and wU6b-GDe/w+; nup50-Cas9/+ females and males to wt lines, which should identify generational variations in cleavage or homing efficiencies indicating instability. In general, the cleavage and transmission rates were relatively stable over multiple generations (Figure 3\u2014figure supplement 1). However, super-Mendelian transmission of wU6b-GDe varied between individual mosquito crosses in both split drive systems. For example, the average transmission rate for wU6b-GDe/w+; exu-Cas9/+ females was 68.9 \u00b1 8.9% (range 50\u201388%) and for wU6b-GDe/w+; nup50-Cas9/+ females was 80.8 \u00b1 8.9% (range 59\u201394%); (Figure 3\u2014figure supplement 1; Supplementary files 5a- 5b). Moreover, wU6b-GDe/w+; exu-Cas9/+ males did not induce somatic white cleavage nor bias wU6b-GDe transmission (50.0 \u00b1 4.2%; Figure 3\u2014figure supplement 1A, Supplementary file 5c), while wU6b-GDe/w+; nup50-Cas9/+ males did induce white cleavage in 48.5 \u00b1 4.0% of progeny and biased transmission of the wU6b-GDe allele to 67.3 \u00b1 5.2% of progeny over multiple generations (Figure 3\u2014figure supplement 1B; Supplementary file 5d).\n\n### Discovery of drive-resistant alleles\n\nWhile tracking drive stability over successive generations, we consistently discovered drive-resistant alleles, which could limit the duration of spread of these drives in real-world settings. For example, wU6b-GDe/w+; nup50-Cas9/+ females transmitted white mutant phenotypes to 0.31 \u00b1 0.07% of progeny that did not inherit both split drive transgenes, indicating that drive-resistant mutations were indeed generated at low frequency (Supplementary file 5b). To determine whether these mutations occurred in the germline, we outcrossed these individuals to white recessive mutants, expecting to see white phenotypes if even one copy of white was disrupted in the germline. These experiments yielded 100% white-eye progeny, indicating that trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ females deposited the Cas9 protein loaded with gRNAw (Cas9/gRNAw) and this complex induced white germline mutations in progeny that did not inherit the wU6b-GDe transgene (Supplementary file 6). To confirm this on a molecular level, we performed genomic PCR/sequencing of the white locus from individual mutant mosquitoes and found variation in cleavage repair events (Figure 3\u2014figure supplement 2). For example, we identified loss-of-function resistance alleles (wR) that frequently contained indels at the gRNAw target site, making them unrecognizable to subsequent cleavage. This maternal carryover effect of the Cas9/gRNAw complex was previously described in other drive systems and will likely be an issue when maternal promoters are utilized for drives (Gantz et al., 2015; Kandul et al., 2019b; Lin and Potter, 2016; Oberhofer et al., 2018).\n\n### Fitness of gene drive lines\n\nThe fitness cost of gene drives and their associated cargo directly impact the behavior and stability of gene drives in wild populations (Burt, 2003). Gene drives with high fitness costs are more likely to go to extinction in a population despite strongly biased gene drive inheritance. To evaluate the potential fitness costs associated with the gene drive components, fecundity, egg hatch rate, larval development time, male competitiveness and adult survival were used as overall indicators of the fitness of the wU6b-GDe, nup50-Cas9 and wU6b-GDe/nup50-Cas9 lines. There were no significant differences in any of these fitness parameters between the transgenic and wt lines, with the exception of female fecundity (Supplementary file 7a). Female fecundity was significantly lower in the nup50-Cas9 and the wU6b-GDe/nup50-Cas9 lines compared to the wt lines. Cas9 expression is toxic to many organisms (Cobb et al., 2015; Jiang et al., 2014; Wendt et al., 2016), particularly when it is expressed at high levels (Cho et al., 2018), so it is not unexpected that germline expression of Cas9 in the nup50-Cas9 and wU6b-GDe/nup50-Cas9 lines may result in the reduced fecundity of these lines. This result is further supported by the fact that there was no significant difference between the wU6b-GDe gRNA only and the wt\u00a0lines. Reduced fecundity was also only demonstrated in females expressing Cas9, while males were unaffected. Maternal deposition of Cas9 has been shown to be high enough in Drosophila melanogaster to facilitate gRNA directed mutagenesis in offspring in the absence of Cas9 inheritance (Kandul et al., 2019b; Lin and Potter, 2016), so presumably Cas9 can be highly abundant early in embryogenesis and perhaps abundant enough to cause toxicity and reduced fecundity.\n\n### Multi-release of split drives results in high-frequency spread\n\nOur next goal was to evaluate weekly releases of males homozygous for the split drive to determine whether this system could effectively drive an anti-pathogen gene (linked to the gRNA allele) into a population at a high frequency (\u226580%) for an extended duration sufficient for disease control. To do this, we used our molecular work to inform the parameters (Supplementary file 7b) of simulated split drive releases of the best-performing system described above (wU6b-GDe/w+; nup50-Cas9/+). Modeling results suggested that 10 consecutive weekly releases of 10,000 homozygous split drive males into a population with an equilibrium size of 10,000 adults would be sufficient to drive the split drive to a high frequency in the population (~97% having at least one copy of the gRNA/anti-pathogen allele) (Figure 4A). Mosquitoes with the gRNA/anti-pathogen alleles would then be slowly eliminated, falling to a frequency of\u00a0~87% within three years of the final release. The inheritance bias induced when the Cas9 and gRNA co-occur would give the split drive system an advantage over a comparable inundative release of mosquitoes with the anti-pathogen allele (Figure 4B). A hypothetical construct with linked Cas9 and gRNA components and identical homing and fitness cost parameters demonstrated substantial spread after a single release of 10,000 adult males homozygous for the construct but was outnumbered by in-frame resistant alleles four years following the release (Figure 4C). The number of in-frame resistant alleles generated could be reduced by carrying out linked system releases of a similar magnitude to those for the split drive system, or by using a linked system with a higher accurate homing rate, perhaps achievable by restricting Cas9 expression to the germline (Hammond et al., 2018; Kandul et al., 2019a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig4-v2.jpg)\n\n**Figure 4.:** Model predictions for releases of Ae. aegypti mosquitoes homozygous for (A) the split drive system, (B) a disease-refractory gene, or (C) a homing drive system in which the components of the split drive system are linked at the same locus. Parameters correspond to those for the best performing split drive system (wU6b-GDe/w+; nup50-Cas9/+) (Supplementary file 7b). Releases are carried out in a population with an equilibrium size of 10,000 adults and a 1% per mosquito per generation migration rate with a neighboring population of the same equilibrium size. Model predictions were computed using 100 realizations of the stochastic implementation of the MGDrivE simulation framework (S\u00e1nchez et al., 2018). Weekly releases of 10,000 homozygous split drive males or the disease-refractory gene were simulated over a 10 week period, while a single release was simulated for the linked homing drive system. Total female population size (\u2018total\u2019, dark blue), adult females with at least one copy of the disease-refractory allele (\u2018H*\u201d, red), and disease-susceptible adult females without the disease-refractory allele (\u2018other\u2019, purple) were plotted for each group. Notably, the split drive system is: i) largely confined to its release population, ii) reversible, and iii) present at a high frequency (>85% of adult females having at least one copy) for over three years. The split drive system outperforms inundative adult male release of the disease-refractory gene in population disease refractoriness and outperforms the confinability of a linked homing drive system. In the right column, heatmaps are shown for (D) the split drive system, (E) inundative releases of a disease-refractory gene, and (F) a\u00a0linked homing drive system, and depict the window of protection in days that the proportion of mosquitoes in the release population with at least one copy of the disease-refractory allele exceeds 80%. The fitness cost (reduction in mean adult lifespan) associated with gRNA/refractory allele homozygotes is varied along the x-axis, and the number of weekly releases along the y-axis. Notably, for the split drive system, the window of protection exceeds three years following 10 or more weekly releases for gRNA/refractory allele fitness costs of 10% in homozygotes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Model predictions for releases of Ae. aegypti mosquitoes homozygous for the split drive system (A), a disease-refractory gene (B), or a homing drive system in which the components of the split drive system are linked at the same locus (C). Parameters correspond to those for the best performing split drive system (wU6b-GDe/w+; nup50-Cas9/+) (Supplementary file 7b). Releases are carried out in a population with an equilibrium size of 10,000 adults that exchanges migrants with a neighboring population of the same equilibrium size at a rate of 1% per mosquito per generation. Model predictions were computed using 100 realizations of the stochastic implementation of the MGDrivE simulation framework (S\u00e1nchez et al., 2018). Weekly releases of 10,000 males homozygous for the split drive system or disease-refractory gene were carried out over a 10 week period, while a single release was carried out for the linked homing drive system. Results are plotted for female allele frequencies. Red denotes the gRNA/disease-refractory allele (H), pink denotes the wild-type allele at this locus (W), and dark blue and green represent in-frame/cost-free and out-of-frame/costly resistant alleles (R and B). Light blue represents the allele frequency of Cas9 at the second locus for the split drive system (C). Notably, the H allele reaches a frequency of\u00a0~30% in the neighboring population for the split drive releases, before being eliminated by virtue of a fitness cost. At the release site, the Cas9 allele is reduced to a population frequency of\u00a0~10% within four years of the final release, leading to a progressive decline of the gRNA/refractory allele in both populations. Reversibility can be accelerated through dilution of transgenes by releases of wild-type males.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51701/elife-51701-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Progeny numbers from 20 individual crosses for each parent combination crossed to wt (w+/w+) mosquitoes of the opposite sex were used to estimate fecundity. To transform progeny numbers into fecundity percentages, each progeny number was normalized to the average progeny number in the corresponding control group, heterozygous wU6b-GDe/w+ females or males crossed to w+/w+ mosquitoes. nup50-Cas9 caused a significant reduction in fecundity, from 100.0 \u00b1 11.6% to 88.8% \u00b1 8.7%. Average fecundity percentages were compared to that in the corresponding control group. Bars show averages\u00a0\u00b1\u00a0SD estimated from 20 data points. Statistical significance was estimated by an equal variance t-test. (p<0.02*).\n\n### Split drives are persistent and confinable\n\nA key strength of a split drive system is that it is expected to be reversible and largely confinable to a partially isolated population, making it of particular interest for field trials. As a comparison, the hypothetical linked homing drive discussed above, assuming a standard migrant exchange rate of 1% per mosquito per year, spreads to an over 67% allele frequency in the neighboring population following a single release (Figure 4C, Figure 4\u2014figure supplement 1C). In contrast, the split drive cargo (gRNA/anti-pathogen allele) reaches a peak frequency of\u00a0~30% in the neighboring population four years after 10 releases (Figure 4\u2014figure supplement 1A) before being gradually eliminated by virtue of the fitness cost. In fact, this fitness cost causes the Cas9 allele to be eliminated in both populations, falling to a frequency of\u00a0~10% in the release population within four years post release, and barely reaches a frequency of 2.4% in the neighboring population, followed by a progressive decline of the gRNA/anti-pathogen allele in both populations. The reversal of the split drive system can be accelerated by the release of wild-type males. After just 10 releases, the frequency of the split drive system in the population is expected to be sufficient for interrupting local disease transmission over a three year period. Figure 4D depicts the duration for which the anti-pathogen allele is predicted to remain in over 80% of female mosquitoes when the number of releases and fitness cost of the gRNA/anti-pathogen allele are varied. This duration exceeds three years for the release scheme described above, and for fitness costs less than 10% in gRNA/disease-refractory allele homozygotes.\n\n## Discussion\n\nAe. aegypti is a globally distributed vector that spreads deadly pathogens to millions of people annually. Current control methods are inadequate for this vector and therefore new innovative technologies need to be developed and implemented. With the aim of providing new tools for Ae. aegypti control, here we engineer and test the first gene drives developed in this species. Importantly, to make these drives safe and confineable, we engineered these systems as split drives. These drives functioned at very high efficiency and may provide a tool to control this vector. To develop these drives, initially we functionally characterized several drive components that performed with high efficiency in both somatic cells and the germline. Additionally, we discovered a drive target sequence, within the white gene, that is highly conserved across many geographically distinct populations, providing a useful phenotypic readout of drive functionality, and demonstrating that highly conserved drive target sites can be found through extensive genomic sequencing of wild populations. Multiple bidirectional genetic crosses of transgenic lines with optimized drive components revealed that homing and cleavage efficiencies are largely dependent on the timing and expression of drive components and maternal deposition can result in embryonic activity and the generation of drive resistant alleles. Despite the creation of resistant alleles, however, mathematical modeling predicts that these split drives can spread locally and are also confinable and reversible, making them suitable for field trials and capable of local disease control once effectors are linked.\n\nNotably, components characterized in this study including the polymerase III U6 promoters crossed with robustly Cas9 expression strains, can also be used to accelerate basic functional gene analysis in Ae aegypti. For example, tissue specific Cas9 strains could be crossed to U6-driven gRNA strains disrupting essential genes, to enable biallelic mutations in specific tissues (e.g. neurons) which otherwise would not be possible due to lethality if disrupted in all cells. Additionally, if linked, these components could generate a potent drive that could self-disseminate for wider regional mosquito control. Our models predict that if these components were directly linked, assuming homing and cleavage rates similar to when unlinked, the drive would provide a window of\u00a0>80% disease resistance among the female Ae. aegypti population for several years following a release (Figure 4F) and spread from one population to another (Figure 4C). These components could also be used in the future to develop self-limiting population suppression technologies, such as a precision-guided sterile insect technique (Kandul et al., 2019b), or to target conserved sex-determination genes such as doublesex (dsx) to generate a potent homing-based population suppression drive similar to the drive recently developed for Anopheles gambiae (Kyrou et al., 2018). Alternatively, these components could be used to generate a novel population suppression design by encoding a functional copy of Nix (Aryan et al., 2019; Hall et al., 2015), as the cargo, thereby converting females into fertile males while the drive spreads through and suppresses the population. Finally, these components support the development of other drives, including trans-acting toxin- and cis-acting antidote- (TA) based drives (Kandul et al., 2019b; Oberhofer et al., 2019), evolutionarily stable homing-based replacement drives that target haplosufficient essential genes and encode a recoded (i.e., cleavage resistant) rescue of the target gene (Champer et al., 2016; Kandul et al., 2019b) or even TA underdominance-based drives (Champer et al., 2016), all of which could be instrumental for spreading anti-pathogen effectors (e.g., Buchman et al., 2019) into wild disease-transmitting populations.\n\nWhile this is a major step towards developing field-worthy gene-drive systems in Ae. aegypti, there are still limited effectors available to link with population modifying drives that will limit the immediate use of these technologies. Most antiviral effectors developed in Ae. aegypti to date rely upon small RNA pathway-directed targeting of viral genomes (Buchman et al., 2019; Franz et al., 2014; Franz et al., 2006; Mathur et al., 2010; Yen et al., 2018); however, these antiviral transgenes are not easily multiplexed and the diversity of arboviruses transmitted by this vector as well as the high mutation rate of these viruses (Steinhauer et al., 1992) makes their practicality in the field tenuous. New, innovative effectors are in development, for example, the recent broad neutralizing antibody-based anti-dengue effector (Buchman et al., 2019), but\u00a0long-term studies of viral resistance to all current antiviral effectors are limited, so their long-term effectiveness is unknown Marshall et al., 2019). Furthermore, effector-associated fitness costs could impact the success of these technologies. While drive technologies should overcome some of these fitness costs, as we balance the optimization of drive efficacy with the minimization of drive risks, we will likely still need to develop effectors with reduced fitness costs. Current effectors have achieved efficacy against only a limited number of viral families and strains, usually those which are most highly lab adapted, and may have concerning fitness costs (Marshall et al. 2019). Therefore, additional resources are needed to develop antiviral effectors that have reduced fitness costs, achieve broad antiviral activity against the diversity of viruses vectored by Ae. aegypti, and limit viral resistance despite high viral mutation rates.\n\nIt should be pointed out that gene-drive technologies are imperfect. Drive efficiencies are impacted by target-site availability, timing, the expression of drive components, host-specific factors such as the timing of meiosis and recombination, as well as the generation of resistant alleles that form as a result of non-homologous end-joining (NHEJ) repair of CRISPR-mediated DNA cleavage as opposed to homology directed repair (HDR). Notwithstanding, significant efforts are underway to optimize next generation drives that incorporate molecular design architectures predicted to mitigate the generation and selection of resistant alleles and improve conversion efficiencies. These efforts include rational target-site design, regulation of the expression and timing of the nuclease, multiplexing drive targets, improved regulatory elements, and targeting ultra-conserved regions in essential genes that are recorded in the drive, enabling the selective elimination of non-functional NHEJ-repaired alleles (Hammond and Galizi, 2017; Raban and Akbari, 2017; Champer et al., 2016; Marshall et al., 2017; Kandul et al., 2019a; Kandul et al., 2019b; Oberhofer et al., 2019). While these future drive designs are expected to be more efficient than current systems, it should be noted that even imperfect drives with modest homing efficiencies are still predicted to be quite invasive (Noble et al., 2017), and will likely be useful for field implementation which could confer long-lasting entomological and epidemiological impacts.\n\nGiven the remarkable progress in the gene drive field and potential of gene drives to spread globally, understandably the discussion of the ethics, risks, governance, and the guidance of gene drives in the field have come to the forefront (Adelman et al., 2017; Akbari et al., 2015a; James et al., 2018; Kaebnick et al., 2016). As gene-drive technologies advance and field trials become a necessary step toward understanding the efficacy and behavior of drives in wild populations, it is important that facilities planning and management, infrastructure upgrades, talent development for deployment and monitoring, and public engagement are advanced to support the sustainability of gene drive technologies. Safe, non-invasive, self-limiting split drive technologies, such as the systems developed here, are a responsible choice for studying gene drives in the wild, as they safeguard against spreading to non-target populations and will allow the assessment of potential risks and unintended consequences. This may help establish the necessary infrastructure, while simultaneously controlling disease burdens, in preparation for a potential subsequent release of an efficient linked-drive system that can self-disseminate catalytically into broader landscapes. Taken together, our results provide compelling evidence for the feasibility of future effector-linked split drive technologies that can contribute to the safe, sustained control and potentially the elimination of pathogens transmitted by this species.\n\n## Materials and methods\n\n### Insect rearing\n\nMosquitoes used in all experiments were derived from the Ae. aegypti Liverpool strain (designated as wild-type [wt], Supplementary file 8a). Of note, the Ae. aegypti reference genome sequences were generated using this strain (Matthews et al., 2018; Nene et al., 2007). Mosquitoes were raised in incubators at 28.0\u00b0C with 70\u201380% humidity and a 12 hr light/dark cycle. Larvae were fed ground fish food (TetraMin Tropical Flakes, Tetra Werke, Melle, Germany) and adults were provided 0.3 M aqueous sucrose ad libitum. Adult females were blood fed three to five days after eclosion using anesthetized mice. Mosquitoes were examined, scored, and imaged using the Leica M165FC fluorescent stereo microscope equipped with the Leica DMC2900 camera. All animals were handled in accordance with the Guide for the Care and Use of Laboratory Animals as recommended by the National Institutes of Health and supervised by the local Institutional Animal Care and Use Committee (S17187).\n\n### Profile of natural variation at white target site\n\nTo assess the natural variation within the white target site, we used data from individual whole genome sequencing of 143 Ae. aegypti specimens sampled in California (N\u00a0=\u00a0127), Florida (N\u00a0=\u00a04), Puerto Rico (N\u00a0=\u00a06), Mexico (N\u00a0=\u00a03), and South Africa (N\u00a0=\u00a03) (Figure 1\u2014figure supplement 1, Figure 1\u2014source data 1) and sequenced to an approximate depth of 10x on an Illumina HiSeq 4000 producing 17.1\u00a0giga base pairs (Gbp). Then 17.1 Gbp of sequence reads were mapped with BWA-MEM v0.7.15 (Li, 2013) to the latest version of the reference genome of Ae. aegypti (AaegL5 [Matthews et al., 2018]). Polymorphisms were called with Freebayes v1.0.1 (Garrison and Marth, 2012), applying all the default parameters except for \u2018theta\u00a0=\u00a00.01\u2019 and \u2018max-complex-gap=3\u2019. We employed the most conservative approach by applying no filtering to the called polymorphisms to maintain the broadest possible set of potential variation. Additionally, we checked the polymorphism data for Ae. aegypti available on https://www.vectorbase.org (accessed 1/2/19) and found no published SNP\u2019s in the region of the white target site. We therefore consider the target site likely conserved in natural populations.\n\n### Construct design and assembly\n\nThe Gibson enzymatic assembly method was used to build all constructs. To generate the gRNA constructs, the piggyBac plasmid (Akbari et al., 2015b) was digested with FseI and AscI, and the linearized fragment was used as a backbone for construct assembly. Constructs for the U6 promoter screen contained the following fragments: the 5\u2019-end flanking sequence of the U6 snRNA, which was selected as the promoter region; a 20-base sequence of the gRNAw (Figure 1\u2014figure supplement 2A); a 76-base fragment with a gRNA scaffold; and a 3xP3-eGFP-SV40 fragment. The first three fragments were generated using commercial gene synthesis (gBLOCK by IDT and GenScript). The 3xP3-eGFP fragment was amplified from a previously described plasmid harboring the 3xP3 promoter and coding sequence of eGFP (Addgene #104968 and 100705) using primers AE01, AE02, AE03, and AE04 (Supplementary file 8a, Supplementary file 8b). A total of six plasmids were generated and are referred to as follows: U6a-T, U6b-T, U6c-T, U6d-T, U6e-T andU6f-T (Figure 1\u2014figure supplement 2C, Supplementary file 8a).\n\nWe engineered four gene-drive element (GDe) constructs carrying different U6 promoters for site-specific integration at the white locus: U6a-GDe, U6b-GDe, U6c-GDe, and U6d-GDe. Each plasmid contained the following fragments (Figure 1\u2014figure supplement 2D): (1) left and right homology arms of\u00a0~1 kb in length, which are complementary to the Ae. aegypti white locus immediately adjacent to the 5\u2019 and 3\u2019 ends of the gRNAw cut site, respectively, were gene synthesized by GenScript; (2) a U6 promoter with a 20-base gRNAw sequence and a 76-base gRNA scaffold, which was PCR amplified from U6a-T, U6b-T, U6c-T, and U6d-T constructs with the following primers: AE05 and AE06, AE07 and AE08, AE09 and AE10, AE11 and AE12, respectively; (3) the 3\u2019UTR region of the corresponding U6 snRNA was gene synthesized by GenScript; (4) a 3xP3-tdTomato-SV40 fragment, which was amplified from the previously described plasmid (Addgene #104968) using the following primers: AE13 and AE14, AE15 and AE14, AE16 and AE14, AE17 and AE14; (5) an Opie2-dsRed-SV40 fragment, which was amplified from the previously described plasmid (Addgene #100705) using primers AE18 and AE19 (Supplementary file 8a, Supplementary file 8b). All plasmids were grown in JM109 chemically competent cells (Zymo Research #T3005) and isolated using Zyppy Plasmid Miniprep (Zymo Research #D4037) and Maxiprep (Zymo Research #D4028) kits (Supplementary file 8a). Each construct sequence was verified using Source Bioscience Sanger sequencing services. A list of primer sequences used in the above construct assembly can be found in Supplementary file 8b. We have also made all plasmids and sequence maps available for download and/or order at Addgene (www.addgene.com) with identification numbers listed in Figure 1\u2014figure supplement 2.\n\n### Embryo microinjection and mutation screening\n\nEmbryonic collection and CRISPR microinjections were performed following previously established procedures (Aryan et al., 2014; Kistler et al., 2015). The concentration of plasmids used for the U6 promoter screen was 300 ng/\u00b5L. Injected G0 and G1 progeny were visualized at the larval, pupal, and adult life stages under a dissecting microscope (Olympus SZ51 and Leica M165FC). The heritable mutation rates were calculated as the number of G1 progeny with the loss-of-function mutation out of the number of all G1 progeny crossed with the white eye (w\u2013) strain mosquitoes. To integrate each GDe construct at the white locus, a mixture containing 100 ng/\u00b5L of synthetic gRNAw, 100 ng/\u00b5L of each U6-GDe plasmid (U6a-GDe, U6b-GDe, U6c-GDe, and U6d-GDe), and 100 ng/\u00b5L of Cas9 protein was injected into 500 wt embryos for each plasmid. Synthetic gRNAs (Synthego) and recombinant Streptococcus pyogenes Cas9 protein (PNA Bio Inc, Supplementary file 8a) were obtained commercially and diluted to 1,000 ng/\u00b5L in nuclease-free water and stored in aliquots at \u201380\u00b0C. A total of 233, 271, 191, 215 G0 adults were recovered for U6a-, U6b-, U6c-, and U6d-GDe injections, respectively. Successful integration into the white locus was determined by visually identifying the eye-specific 3xP3-tdTomato fluorescence in G1 heterozygous mosquito larvae with black eyes (wU6-GDe/w+) and in G2 homozygous mosquito larvae with white eyes (wU6-GDe/wU6-GDe). In addition, site-specific integration of U6-GDe constructs was confirmed by amplifying and Sanger sequencing both the left and right integration points (Figure 2\u2014figure supplement 2) from a genomic DNA prep of each wU6-GDe line with the following primers: AE20, AE21, AE22, and AE23 (Supplementary file 8b).\n\n### Assessment of split gene-drive efficacy\n\nBoth gene-drive (GD) and Cas9 elements are required for a functional split drive. To generate G1 trans-heterozygous wU6-GDe/w+; Cas9/+ male and female mosquitoes with an active split drive, we reciprocally crossed wU6-GDe/w+ and Cas9/Cas9 strains. While selecting trans-heterozygous mosquitoes, we scored the loss-of-function mutation of white in all G1 progeny. Then, G1 trans-heterozygous mosquitoes were mated to wt for 4 days, and the white mutation and wU6-GDe transmission frequencies were calculated in G2 progeny. Females were blood fed on anesthetized mice on the fifth day. Three days later, more than twenty females were allowed to lay eggs individually into a 50 mL vial filled with water and lined with wet filter paper. The larval progeny from each female were counted and scored for wU6-GDe and Cas9 by 3xP3-tdTomato and Opie2-dsRed expression, respectively. Females that failed to take blood and produce progeny were excluded from the analysis. According to Mendelian inheritance, the expected G2 transmission rate of wU6-GDe is 50% under this crossing scheme; the higher rate indicates super-Mendelian inheritance (Figure 2A). White mutagenesis and wU6-GDe transmission rates by trans-heterozygous wU6-GDe/w+; Cas9/+ mosquitoes each carrying GDe with four different U6 promoters were compared to those of the corresponding wU6-GDe/w+ line without Cas9 in the genetic background. The homing and cleavage efficiencies of the two split-drive systems, wU6b-GDe/w+; exu-Cas9/+ and wU6b-GDe/w+; nup50-Cas9/+, were observed for the following four generations by scoring the markers in the progeny from reciprocal crosses of trans-heterozygous and wt mosquitoes.\n\n### Molecular characterization of wR alleles\n\nTo test whether wR-resistant alleles were present in germ cells, mosquitoes harboring wR alleles were genetically crossed into the w19\u2206/w19\u2206 recessive mutant background, and their progeny was scored for white loss-of-function mutations. Genomic DNA was extracted from an individual mosquito of each progeny group using the DNeasy Blood and Tissue Kit (QIAGEN) following the manufacturer's protocol, and a white region carrying the gRNAw target site was PCR amplified with primers AE24 and AE25. Because the tested mosquitoes were heterozygous wR/w19\u2206 for white alleles, a PCR amplicon from each mosquito was first cloned into an open plasmid using Gibson enzymatic assembly, and seven clones were PCR amplified and Sanger sequenced to identify novel wR alleles. De novo-mutated wR alleles were identified by comparing them with both w+ and w19\u2206 alleles using Sequencher and 5.0 SnapGene 4.2. The same method was used to confirm the presence of w+ non-cleaved alleles in a few mosquitoes with black eyes, which were later inferred to be w+/w19\u2206 and w+/wU6b-GDe.\n\n### Fitness of transgenic strains\n\nTo determine if the presence of a transgene(s) conferred a fitness cost, multiple fitness parameters were evaluated between wU6b-GDe/nup50-Cas9, wU6b-GDe; nup50-Cas9 and wt mosquitoes. Insectary conditions were as described in the insect rearing section. Fecundity and fertility were assessed from reciprocal male and female crosses to the wt strain. For the female fecundity and fertility assessments, 20 females were mated to 20 wt males and for the male fecundity and fertility assessments, single males were mated to 20 wt females. After four days, female mosquitoes were blood fed until fully engorged and individually transferred into plastic vials with tap water and lined with an egg paper. Mosquitoes were allowed to oviposit for three days and after fecundity was assessed as the number of eggs laid per female. Eggs were stored in the insectary for four days to allow full embryonic development then hatched in a vacuum chamber. Larvae were counted on the third day post hatch. Fertility was calculated as the percentage of eggs hatched per female. An analysis of variance (ANOVA) and Tukey post-hoc test were performed to compare differences in fecundity and fertility between all groups. To assess larval to pupal development time, transgenic and wt were distributed into pans, at a density of 10 larvae per pan, containing 2.5 L of ddH2O and 0.6 mL of 1:1 Tetramin fish food:water. Larvae were counted twice daily until pupation and then date of pupation and emergence were recorded. Larval development time was calculated for each sex as there are sex-specific differences in larval development time in this species. An ANOVA and Tukey post-hoc test were performed to compare differences in larval development between all groups. Male mating competitiveness was assessed by 1:1 transgenic male:wt male competition studies in 30 small cages. Transgenic and wt males 2 days post emergence and raised under the same standardized larval conditions were placed into a small cage containing a female wt mosquito. Females were allowed to acclimate to the cage for\u00a072 hours\u00a0prior to male release. Mating, blood feeding and oviposition, as well as egg collection and hatching conditions, were as described for the fertility and fecundity studies. Larvae at three days post hatch were screened for transgene markers under a Leica M165FC fluorescent microscope. Females with transgenic offspring were scored as mated to transgenic males and females with no transgenic offspring were scored as mated to wt males. All females produced eggs. A chi-squared test was used to determine whether there were differences in the number of observed and expected matings to a transgenic male. To assess adult mosquito survival, one cage of each transgenic or wt strain containing equal numbers of male and females were monitored daily for survival until all mosquitoes had died. Median time to death and differences between transgenic and wt\u00a0survival curves were calculated by a Mantel-Cox log rank test. Due to sex specific differences in survival, analyses also were separated by sex. All statistical analyses were performed using GraphPad Prism software (GraphPad Software, La Jolla, California, USA). P values\u00a0>\u00a00.05 were considered not significant.\n\n### Mathematical modeling\n\nTo model the expected performance of a split drive functioning as a confinable and reversible gene-drive system and as a test system prior to the release of a linked homing drive for Ae. aegypti, we simulated release schemes for split drive, linked homing drive, and inundative releases of males carrying a refractory allele using the MGDrivE simulation framework (S\u00e1nchez et al., 2018) (https://marshalllab.github.io/MGDrivE/). This framework models the egg, larval, pupal, and adult mosquito life stages (both male and female adults are modeled) implementing a daily time step, overlapping generations, and a mating structure in which adult males mate throughout their lifetime while adult females mate once upon emergence, retaining the genetic material of the adult male with whom they mate for the duration of their adult lifespan. Density-independent mortality rates for the juvenile life stages are assumed to be identical and are chosen for consistency with the population growth rate in the absence of density-dependent mortality. Additional density-dependent mortality occurs at the larval stage, the form of which is taken from previous studies (Deredec et al., 2011). The inheritance patterns for the split drive, linked homing drive, and refractory gene systems are modeled within the inheritance module of the MGDrivE framework (S\u00e1nchez et al., 2018) along with their impacts on female fecundity and adult mortality rate. We parameterized our split drive model according to the best-performing system in this study (wU6b-GDe/w+; nup50-Cas9/+): i) a cleavage frequency of 100.0% in females and 51.0% in males, ii) HDR frequency 80.5% in females and 66.9% in males, and iii) each Cas9 allele was associated with a 7.8% reduction in female fecundity (Figure 4\u2014figure supplement 2). Ballpark parameter estimates were used in cases where direct measurements were not available: i) a sixth of non-HDR events were assumed to lead to in-frame/cost-free resistant alleles (i.e. half of the mutations that preserve the reading frame), with the remaining leading to out-of-frame/costly resistant alleles, and ii) by default, we assumed a 10% reduction in mean lifespan associated with gRNA/disease-refractory allele homozygotes, and no fitness cost in heterozygotes, although a range of values were explored for this parameter. We implemented the stochastic version of the MGDrivE framework to capture the randomness associated with rare events such as resistant allele generation. We simulated two partially isolated populations each consisting of 10,000 adults at equilibrium, exchanging migrants at a rate of 1% per mosquito per generation, with weekly releases of 10,000 adult males over a defined period. Ae. aegypti life history and intervention parameter values are listed in Supplementary file 7b.\n\n### Statistical analysis\n\nUnless described previously, statistical analysis was performed in JMP 8.0.2 by SAS Institute Inc. Twenty replicates were used to generate statistical means for comparisons. P values were calculated for a two-sample Student\u2019s t-test with equal variance. Point plots were built in Prism 7 by GraphPad.\n",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "0d394f4e-aa48-42ca-ace7-6d14651f5dce",
+      "submission_id": "bfb646e1-bbe1-425c-b3d1-453c4dc50cba",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hugo J Bellen, Baylor College of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51701.sa1](https://doi.org/10.7554/eLife.51701.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nLi et al. describe the first two-component 'split-drive' system for Aedes aegypti. They provide a proof-of-principle example of drive activity. They identify combinations of U6-sgRNA lines and Cas9 expression lines that generate somatic and germline mutagenesis and support super-Mendelian inheritance of the U6-sgRNA drive component. Strains exhibiting these properties might be effective tools for mosquito control while retaining self-limiting properties. This is a significant advance for the field. A caveat is that it is based on a single gene proof of principle. In summary, the paper reports a successful proof-of-principle of a genetically encoded CRISPR/Cas9 gene drive in Aedes aegypti.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Development of a confinable gene-drive system in the human disease vector, Aedes aegypti\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. From an experimental point of view, both reviewers have emphasized the need to measure the fitness cost of these transgenic lines. They argue that this can be done in a timely period.\n\nSummary:\n\nIn their manuscript, \"Development of a confinable gene-drive system in the human disease vector, Aedes aegypti,\" Li and colleagues describe a two-component 'split-drive' system in the yellow fever mosquito Aedes aegypti and provide a proof-of-principle example of drive activity at a single genomic locus. They analyze U6 pol-III regulatory sequences suitable for driving sgRNA expression from plasmids or transgenic strains, and identify combinations of transgenic U6-sgRNA lines and existing Cas9 expression lines that generate somatic and germline mutagenesis and support super-Mendelian inheritance of the U6-sgRNA drive component at the white gene on chromosome 1. They extrapolate from the inheritance and somatic mutagenesis data generated when targeting the white gene and perform modelling to suggest that strains exhibiting these properties might be effective tools for mosquito control while retaining self-limiting properties that might be desirable from a regulatory standpoint. Overall, the characterization of U6 regulatory sequences that function to drive sgRNA expression is a significant advance for the field. However, based on these results, it seems premature to extrapolate from results seen at a single genomic locus to generalizations regarding the relative merits of different drive systems in Aedes aegypti. In particular, the authors make the point that alterations in the timing, spatial patterns, and levels of expression of the gene drive components induce significant variability in somatic mutagenesis and drive phenotypes, meaning that any attempt to adapt the system described here to a novel genomic locus (or even a system utilizing the same genomic locus but with a different drive cargo) may require re-optimization of each genetic element comprising the drive. Thus, as a whole, this work represents a successful proof-of-principle of a genetically encoded CRISPR/Cas9 gene drive in Ae. aegypti, but it is unclear how generalizable these optimizations and results will be to future control efforts.\n\nSpecific issues to be addressed include:\n\n1) The conservation analysis of the white gene sgRNA site is based almost entirely on mosquitoes from the Americas. The authors should either temper the conclusion that this sgRNA recognition site is likely 'fixed in wild populations' and/or do a more thorough analysis of existing sequencing data from additional geographical regions. In addition, the sequencing is reported to be to 'approximate depth of 10x' which raise concerns about the accuracy and sensitivity of variant calling as it is unclear how many reads map to the desired locus \u2013 the authors should instead report the coverage of the white region for each individual and exclude any samples for which there is not sufficient read depth at this site to confidently call variants.\n\n2) Only one line was established for the U6[a-d] lines in the experiment shown in Figure 1C, raising a significant likelihood of position-dependent effects confounding interpretation of the relative efficacy of these four promoters. The results seen with U6d-sgRNA appear to be an indicator of this, showing efficacy when injected as plasmid but not as a transgenic cross. If it is not feasible to test additional insertions, the authors should acknowledge this limitation of this particular experiment and tone down their interpretation presented in subsection \u201cDevelopment of a binary CRISPR approach\u201d.\n\n3) The sex-linkage of transgenic components introduced to the white gene is not unexpected. The authors should cite the numerous studies (e.g. Fontaine et al., 2017) showing that there is an extensive region (> 100Mb in some strains) of markedly reduced recombination on chromosome 1.\n\n4) The modelling in Figure 4 suggests that the split drive would outperform a linked system based on the discovery of resistance alleles \u2013 however, if more work was done to restrict Cas9 to the germline as in recently reported Anopheline gene drives (using 3' regulatory sequences that likely act to restrict Cas9 expression to the germline and reduce somatic leakiness, for example), that might not be an issue. The authors should discuss whether the development of resistance alleles is in fact a desirable trait, and if so, they should justify this when discussing the modelling results comparing linked and split drives.\n\n5) In the molecular genotyping of the wGDe insertions in Figure 2\u2014figure supplement 2B, it looks as if the band for the right-side integration of the U6d construct is larger than [a-c]. Is this expected? Did Sanger sequencing reveal an imperfect integration that might explain why U6d was no effective in this context?\n\n6) One thing that is consistently missing in most of the work published on gene-drive and gene-editing is the lack of fitness-cost studies. It would very informative to perform a dedicated, in-depth fitness cost studies to validate the mathematical model presented here and elsewhere.\n",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5d348f97-ae00-471e-8b86-4eda0f84b187",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C1",
+      "claim": "Aedes aegypti is the principal mosquito vector for many arboviruses including yellow fever, chikungunya, dengue, and Zika.",
+      "claim_type": "EXPLICIT",
+      "source": "Aedes aegypti is the principal mosquito vector of several arboviruses, including yellow fever, chikungunya, dengue, and Zika (Scott and Takken, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Scott and Takken, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "4454c545-c27e-44fd-afef-98526acff6bb",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C2",
+      "claim": "Aedes aegypti places roughly half of the world's population at risk of acquiring vector-borne diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "This mosquito alone places roughly half of the world's population at risk of acquiring vector-borne diseases while causing an estimated 390 million dengue infections annually (Bhatt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bhatt et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "ed9f9003-0b7b-4154-9d8d-d61ea952af67",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C3",
+      "claim": "Aedes aegypti causes an estimated 390 million dengue infections annually.",
+      "claim_type": "EXPLICIT",
+      "source": "This mosquito alone places roughly half of the world's population at risk of acquiring vector-borne diseases while causing an estimated 390 million dengue infections annually (Bhatt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bhatt et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "a1ca1adb-d774-4a0c-9a69-3ad5b792cf62",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C4",
+      "claim": "Traditional mosquito control strategies have significantly reduced mosquito-borne disease burdens.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional mosquito control strategies, including long-lasting insecticide-treated bed nets (LLINs), chemical insecticides, and environmental management (Schreck, 1991), have significantly reduced mosquito-borne disease burdens",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schreck, 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "c94d30b3-4626-468a-b8a6-0a2bf08c2d23",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C5",
+      "claim": "Traditional mosquito control interventions are largely unsustainable due to the development of both genetic and behavioral vector resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "however these interventions are largely unsustainable due to the development of both genetic and behavioral vector resistance that decrease their efficacy (Vontas et al., 2012), high costs, and the need for repeated applications with limited spatial impact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Vontas et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "d18a77f6-8f99-453f-9510-11ac7ccccdc7",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C6",
+      "claim": "Chemical interventions negatively affect non-target beneficial organisms, such as pollinators.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, chemical interventions, a fundamental tool for vector control, negatively affect non-target beneficial organisms, such as pollinators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about chemical intervention impacts",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "a42a44a9-9e18-4ce3-8394-c432b27b738f",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C7",
+      "claim": "Wolbachia incompatible insect technique (IIT) is currently being implemented on a small-scale in the field to control populations of Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Species-specific mosquito population suppression technologies, such as the Wolbachia incompatible insect technique (IIT) and the release of dominant lethal gene (RIDL), are currently being implemented on a small-scale in the field to control populations of Ae. aegypti (Harris et al., 2012; McMeniman et al., 2009; Phuc et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Harris et al., 2012; McMeniman et al., 2009; Phuc et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "71333837-dc6f-4bfc-8e32-195de6a67876",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C8",
+      "claim": "Release of dominant lethal gene (RIDL) is currently being implemented on a small-scale in the field to control populations of Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Species-specific mosquito population suppression technologies, such as the Wolbachia incompatible insect technique (IIT) and the release of dominant lethal gene (RIDL), are currently being implemented on a small-scale in the field to control populations of Ae. aegypti (Harris et al., 2012; McMeniman et al., 2009; Phuc et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Harris et al., 2012; McMeniman et al., 2009; Phuc et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "86e2fe99-6821-49a6-b9b1-e8a77eb0b5f3",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C9",
+      "claim": "IIT and RIDL technologies require continuous inundation, which is laborious and cost prohibitive to many areas with the largest vector-borne disease burdens.",
+      "claim_type": "EXPLICIT",
+      "source": "While these technologies improve Ae. aegypti control capabilities, they require continuous inundation, which is laborious and cost prohibitive to many areas with the largest vector-borne disease burdens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on inference from the nature of these technologies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "74cbe110-c3b7-415c-939e-7cd316073dee",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C10",
+      "claim": "Certain Wolbachia strains can spread to fixation while reducing the vector's susceptibility to dengue virus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to IIT, Wolbachia has also been used for population replacement in various locations (Hoffmann et al., 2011; Jiggins, 2017; Schmidt et al., 2017), as certain strains can spread to fixation while reducing the vector's susceptibility to dengue virus (Walker et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hoffmann et al., 2011; Jiggins, 2017; Schmidt et al., 2017; Walker et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "8413d905-9921-4e6c-948d-c7d1a7c4940e",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C11",
+      "claim": "The effectiveness of different Wolbachia strains varies so far as to even enhance vector competence in some contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the literature suggests the effectiveness of different Wolbachia strains varies so far as to even enhance vector competence in some contexts, which may lead to a reevaluation of this technique (Amuzu et al., 2018; Dodson et al., 2014; Hughes et al., 2014; Hughes et al., 2012; King et al., 2018; Murdock et al., 2015; Z\u00e9l\u00e9 et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to Amuzu et al., 2018; Dodson et al., 2014; Hughes et al., 2014; Hughes et al., 2012; King et al., 2018; Murdock et al., 2015; Z\u00e9l\u00e9 et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "56e682ae-d368-4c9b-a26a-a05fe8493a36",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C12",
+      "claim": "Homing-based gene-drive technologies can expedite the elimination and eradication of vector-borne diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "One innovative technology, first articulated by Burt (2003), utilizes homing-based gene-drive technologies to expedite the elimination and eradication of vector-borne diseases (Burt, 2014; Champer et al., 2016; Esvelt et al., 2014; Marshall and Akbari, 2017; Marshall and Akbari, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burt, 2003; Burt, 2014; Champer et al., 2016; Esvelt et al., 2014; Marshall and Akbari, 2017; Marshall and Akbari, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "eacc3180-23a4-4e49-a5cd-540a16128c28",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C13",
+      "claim": "Gene drives function by exploiting the organism's innate DNA repair machinery to copy or 'home' themselves into a target genomic location prior to meiosis in the germline.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceptually, these drives function by exploiting the organism's innate DNA repair machinery to copy or 'home' themselves into a target genomic location prior to meiosis in the germline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about gene drive mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "a1c008a8-5702-439e-b73d-7bb63ad7de79",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C14",
+      "claim": "Gene drives convert wild type alleles into drive alleles in heterozygotes, thereby forcing super-Mendelian inheritance of the drive into subsequent generations.",
+      "claim_type": "EXPLICIT",
+      "source": "This process converts wild type alleles into drive alleles in heterozygotes, thereby forcing super-Mendelian inheritance of the drive into subsequent generations, irrespective of the fitness cost to the organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about gene drive mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "526ee283-a1b1-4ccf-b5ac-1137286076a3",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C15",
+      "claim": "Gene drives can spread the drive and any linked anti-pathogen 'cargo genes,' to fixation in a population in a short time frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretically, this inheritance scheme can spread the drive and any linked anti-pathogen 'cargo genes,' to fixation in a population in a short time frame (Buchman et al., 2019; Dong et al., 2018; Yen et al., 2018), even with modest introduction frequencies (Burt, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Buchman et al., 2019; Dong et al., 2018; Yen et al., 2018; Burt, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "f559dc14-b175-4676-b77b-fb665e5bc19e",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C16",
+      "claim": "CRISPR-based homing gene drives have been developed in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, proof-of-concept CRISPR-based homing gene drives have recently been developed in several organisms including yeast (Basgall et al., 2018; DiCarlo et al., 2015; Roggenkamp et al., 2018; Shapiro et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Basgall et al., 2018; DiCarlo et al., 2015; Roggenkamp et al., 2018; Shapiro et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "a8cdcee1-e4d6-4d3e-8723-5fc03eabfa3d",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C17",
+      "claim": "CRISPR-based homing gene drives have been developed in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "flies (Champer et al., 2019; Champer et al., 2018; Champer et al., 2017; Kandul et al., 2019a; KaramiNejadRanjbar et al., 2018; Oberhofer et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Champer et al., 2019; Champer et al., 2018; Champer et al., 2017; Kandul et al., 2019a; KaramiNejadRanjbar et al., 2018; Oberhofer et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "6cbbeb25-dbd9-4324-bca7-315ea926068f",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C18",
+      "claim": "CRISPR-based homing gene drives have been developed in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "mice (Grunwald et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Grunwald et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "d7bbabb3-1f7d-4cbc-9b13-c69a641a59ad",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C19",
+      "claim": "CRISPR-based homing gene drives have been developed in Anopheles gambiae.",
+      "claim_type": "EXPLICIT",
+      "source": "and two malaria vector species, Anopheles gambiae (Hammond et al., 2016; Hammond et al., 2017; Kyrou et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hammond et al., 2016; Hammond et al., 2017; Kyrou et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "869944a5-88ea-4e25-be9c-2f3fc8654ef8",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C20",
+      "claim": "CRISPR-based homing gene drives have been developed in Anopheles stephensi.",
+      "claim_type": "EXPLICIT",
+      "source": "and Anopheles stephensi (Gantz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gantz et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "8926fa4b-26e1-45e4-9e9a-1b5751e9e4e3",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C21",
+      "claim": "CRISPR-based homing gene drives minimally consist of a Cas9 endonuclease and a guide RNA (gRNA) cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these CRISPR-based homing gene drives minimally consist of a Cas9 endonuclease, which facilitates the genome integration of the gene drive and a guide RNA (gRNA) cassette, which encodes the sequence-specific integration site targeted by Cas9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about CRISPR gene drive components",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "cd36de71-efaa-45e1-b52a-3f4e5a3172a4",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C22",
+      "claim": "A gene-drive system has not yet been developed in Ae. aegypti prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, a gene-drive system has yet to be developed in Ae. aegypti, the lack of which is principally due to the absence of tools necessary to engineer drives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the state of the field prior to this work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "3c5d8ce0-2e74-4a8c-bc3d-20eb86db6150",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C23",
+      "claim": "The authors developed split gene drives with a molecularly unlinked endonuclease to allow spatial and temporal confinement of the drive.",
+      "claim_type": "EXPLICIT",
+      "source": "As a safety precaution, we engineered 'split gene drives (referred to as split drives from hereon)' with a molecularly unlinked endonuclease, thereby allowing the user to spatially and temporally confine the drive (Akbari et al., 2015a; Champer et al., 2016; Committee on Gene Drive Research in Non-Human Organisms: Recommendations for Responsible Conduct, Board on Life Sciences, Division on Earth and Life Studies, National Academies of Sciences, Engineering, and Medicine, 2016; Esvelt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Akbari et al., 2015a; Champer et al., 2016; Committee on Gene Drive Research in Non-Human Organisms: Recommendations for Responsible Conduct, Board on Life Sciences, Division on Earth and Life Studies, National Academies of Sciences, Engineering, and Medicine, 2016; Esvelt et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "efa60686-c3f8-4cd9-b0f6-f1c345a68ed8",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C24",
+      "claim": "The authors achieved cleavage rates indicating biallelic cutting of up to 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve drive efficiency, we targeted a highly conserved region in a phenotypic gene with cleavage rates, indicating biallelic cutting, of 100%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "4f936bc8-bf4e-4c1e-9893-df759d01405c",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C25",
+      "claim": "The authors achieved homing rates as high as 94%.",
+      "claim_type": "EXPLICIT",
+      "source": "and homing rates, indicating the super-Mendelian transmission rate of the drive, as high as 94%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "e682b93c-452b-4e51-8342-8e1b37206ac7",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C26",
+      "claim": "Mathematical models predict that split drives could spread anti-pathogen effector genes into wild populations in a safe, confinable and reversible manner.",
+      "claim_type": "EXPLICIT",
+      "source": "With cleavage rates up to 100% and transmission rates as high as 94%, mathematical models predict that these systems could spread anti-pathogen effector genes into wild populations in a safe, confinable and reversible manner appropriate for field trials and effective for controlling disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mathematical modeling results presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "73c1676d-628e-4315-998e-a63ea2eabe83",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C27",
+      "claim": "The white gene (AAEL016999) is an ATP-binding cassette (ABC) transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted an easily screenable gene with consistent and viable disrupted phenotype, the white gene (AAEL016999), which is an ATP-binding cassette (ABC) transporter (Bhalla, 1968; Coates et al., 1997; Li et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bhalla, 1968; Coates et al., 1997; Li et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "04b6c302-0604-425d-a18c-8b0fabbec343",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C28",
+      "claim": "A putative gRNA target sequence in exon 3 of white (gRNAw) was 100% conserved in 143 wild Ae. aegypti populations sampled.",
+      "claim_type": "EXPLICIT",
+      "source": "From this analysis, we discovered a putative gRNA target sequence in exon 3 of white (gRNAw) that was 100% conserved in these wild populations (Figure 1\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bioinformatic analysis data and Figure 1\u2014figure supplement 2A\u2013B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "c30413af-4e6e-47d8-98b8-e6360a5b168b",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C29",
+      "claim": "The gRNAw achieved a 92.7 \u00b1 5.8% mutation efficiency in injected G0 embryos from exu-Cas9 females.",
+      "claim_type": "EXPLICIT",
+      "source": "We achieved a 92.7 \u00b1 5.8% mutation efficiency in the injected G0s, which is consistent with our previous work in this line (Li et al., 2017), demonstrating that this target site is accessible to Cas9 cleavage and that this gRNA is highly active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from injection experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "01537ba0-13d2-41dc-9fb1-0cce4bd09b29",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C30",
+      "claim": "Four U6 promoters (U6a-d) induced somatic loss-of-function variegated biallelic white-eye loss-of-function phenotypes in G0 embryos with moderate mutation frequencies ranging from 32.5\u201371.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the six injected constructs, only four (U6a-d) induced somatic loss-of-function variegated biallelic white-eye loss-of-function phenotypes in G0 embryos with moderate mutation frequencies ranging from 32.5\u201371.3% (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "56c2fe38-edd4-497f-8e1b-98c12daf989e",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C31",
+      "claim": "Four U6 promoters (U6a-d) showed germline mutation rates ranging 27.6\u201367.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "These phenotypes were then scored in the G1 progeny with rates ranging 27.6\u201367.5%, indicating efficient germline editing (Figure 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A\u2013B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "adff1d57-0d52-4ef4-98b1-9443a77a7ee7",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C32",
+      "claim": "The combination of the ubiq-Cas9 strain and the U6b-gRNAw and U6c-gRNAw strains induced up to 100% white somatic knockout frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the combination of the ubiq-Cas9 strain and the U6b-gRNAw and U6c-gRNAw strains induced up to 100% white somatic knockout frequencies, with varied rates of eye pigment mosaicism, indicating that these U6 promoters are highly active and timing appropriate when encoded in the genome to induce knock-out phenotypes (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "3d67373a-ea3c-4caf-83a7-020d493c071c",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C33",
+      "claim": "The white gene has been previously described as a sex-linked gene in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is not unexpected as white has been previously been described as a sex-linked gene in Ae. aegypti (Bhalla, 1968), and recent genome sequencing has confirmed this linkage (Dudchenko et al., 2017; Matthews et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bhalla, 1968; Dudchenko et al., 2017; Matthews et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "34770ec1-d5de-4029-85db-71a47d5329df",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C34",
+      "claim": "The white gene is located in close proximity to Nix (AAEL022912), a dominant male-determining factor (M-factor) located on chromosome I.",
+      "claim_type": "EXPLICIT",
+      "source": "as white is located in close proximity to Nix (AAEL022912), a dominant male-determining factor (M-factor) located on chromosome I (Aryan et al., 2019; Hall et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aryan et al., 2019; Hall et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "af7b6121-52fa-48b4-89d1-d7c94ef2f1cd",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C35",
+      "claim": "There is little to no recombination in the white-Nix region, especially in males.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also little to no recombination in this region, especially in males (Fontaine et al., 2017; Severson et al., 2002; Toups and Hahn, 2010; Hall et al., 2014), which would further support sex-linkage at this loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fontaine et al., 2017; Severson et al., 2002; Toups and Hahn, 2010; Hall et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "997f26c9-122d-43a7-a606-230730e90abf",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C36",
+      "claim": "Trans-heterozygous wU6b-GDe/w+; exu-Cas9/+ females induced somatic mosaicism in 96.3 \u00b1 4.0% of their progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "From these crosses, cleavage and homing efficiencies varied, most notably trans-heterozygous wU6b-GDe/w+; exu-Cas9/+ females induced somatic mosaicism in 96.3 \u00b1 4.0% of their progeny (Figure 3B, Supplementary file 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B and Supplementary file 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "9534c832-6112-4e86-890c-6bf5d965ceb4",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C37",
+      "claim": "Trans-heterozygous wU6b-GDe/w+; exu-Cas9/+ females showed modest super-Mendelian inheritance at 70.9 \u00b1 7.8% in G2 progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, modest super-Mendelian inheritance was observed (70.9 \u00b1 7.8% in G2 progeny) which is significantly greater than the expected 50% for normal Mendelian transmission",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from genetic crosses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "9cc60916-6cf1-402e-8b9f-a8ab180d6f17",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C38",
+      "claim": "No cleavage or homing was observed from trans-heterozygous G1 male outcrosses to wt with the wU6b-GDe/w+; exu-Cas9/+ system.",
+      "claim_type": "EXPLICIT",
+      "source": "while no cleavage or homing was observed from trans-heterozygous G1 male outcrosses to wt (Figure 3C; Supplementary file 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C and Supplementary file 3d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "f89f9329-481f-4296-bec5-d32f57faa8ae",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C39",
+      "claim": "Trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ females induced somatic mosaicism in 100 \u00b1 0% of their G2 progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "for example, trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ females induced this somatic mosaicism in 100 \u00b1 0% of their G2 progeny",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from genetic crosses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "dc73bf72-401d-467f-8c0c-05eaac61e700",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C40",
+      "claim": "Trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ females showed an average 80.5 \u00b1 5.0% inheritance rate in G2 progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "with an average 80.5 \u00b1 5.0% inheritance rate in G2 progeny",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from genetic crosses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "2cf35ebb-7b21-40dd-85f1-3f711c5b6b2f",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C41",
+      "claim": "Trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ males induced somatic mosaicism in 51.0 \u00b1 3.9% of G2 progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "while 51.0 \u00b1 3.9% of G2 progeny from wU6b-GDe/w+; nup50-Cas9/+ male crosses had this somatic mosaicism",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from genetic crosses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "06af5697-2492-4479-bf15-14b35a59071c",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C42",
+      "claim": "Trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ males transmitted the drive to 66.9 \u00b1 5.4% of the G2 progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "and 66.9 \u00b1 5.4% of the G2 progeny inherited the drive (Figure 3E\u2013F; Supplementary files 4c- 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3E\u2013F and Supplementary files 4c-4d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "71329c7d-08bc-49f1-b75a-5996c64c4c4b",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C43",
+      "claim": "The cleavage and transmission rates of the split-drive systems were relatively stable over multiple generations.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the cleavage and transmission rates were relatively stable over multiple generations (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "8bce971b-814f-452b-be9b-dcd3e0e6912d",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C44",
+      "claim": "Trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ females transmitted white mutant phenotypes to 0.31 \u00b1 0.07% of progeny that did not inherit both split drive transgenes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, wU6b-GDe/w+; nup50-Cas9/+ females transmitted white mutant phenotypes to 0.31 \u00b1 0.07% of progeny that did not inherit both split drive transgenes, indicating that drive-resistant mutations were indeed generated at low frequency (Supplementary file 5b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in Supplementary file 5b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "4629669e-cad8-489c-8299-501eb7fdcd23",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C45",
+      "claim": "Female fecundity was significantly lower in the nup50-Cas9 and the wU6b-GDe/nup50-Cas9 lines compared to the wt lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Female fecundity was significantly lower in the nup50-Cas9 and the wU6b-GDe/nup50-Cas9 lines compared to the wt lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fitness assessment data in Supplementary file 7a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "78606d22-15ca-4127-870a-c1a7fd330b39",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C46",
+      "claim": "Cas9 expression is toxic to many organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Cas9 expression is toxic to many organisms (Cobb et al., 2015; Jiang et al., 2014; Wendt et al., 2016), particularly when it is expressed at high levels (Cho et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cobb et al., 2015; Jiang et al., 2014; Wendt et al., 2016; Cho et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "e4f9dfe8-25b8-4ccd-9057-ff984c929d86",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C47",
+      "claim": "Mathematical modeling suggests that 10 consecutive weekly releases of 10,000 homozygous split drive males into a population with an equilibrium size of 10,000 adults would be sufficient to drive the split drive to a high frequency in the population (~97% having at least one copy of the gRNA/anti-pathogen allele).",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling results suggested that 10 consecutive weekly releases of 10,000 homozygous split drive males into a population with an equilibrium size of 10,000 adults would be sufficient to drive the split drive to a high frequency in the population (~97% having at least one copy of the gRNA/anti-pathogen allele) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mathematical modeling results shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "cd063162-95fd-4c16-868e-58af93bd1f99",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C48",
+      "claim": "Mosquitoes with the gRNA/anti-pathogen alleles would be slowly eliminated, falling to a frequency of ~87% within three years of the final release.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosquitoes with the gRNA/anti-pathogen alleles would then be slowly eliminated, falling to a frequency of ~87% within three years of the final release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mathematical modeling results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "20dc1c3b-a10a-42eb-8de7-87bebe1105b2",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C49",
+      "claim": "The split drive cargo (gRNA/anti-pathogen allele) reaches a peak frequency of ~30% in the neighboring population four years after 10 releases.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the split drive cargo (gRNA/anti-pathogen allele) reaches a peak frequency of ~30% in the neighboring population four years after 10 releases (Figure 4\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mathematical modeling results shown in Figure 4\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "d8068356-ad8d-4089-81c5-ca3b028c2ad0",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C50",
+      "claim": "The Cas9 allele falls to a frequency of ~10% in the release population within four years post release.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, this fitness cost causes the Cas9 allele to be eliminated in both populations, falling to a frequency of ~10% in the release population within four years post release",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mathematical modeling results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "b87c9885-9664-4494-9ee6-829edc443ce2",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C51",
+      "claim": "The Cas9 allele barely reaches a frequency of 2.4% in the neighboring population.",
+      "claim_type": "EXPLICIT",
+      "source": "and barely reaches a frequency of 2.4% in the neighboring population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mathematical modeling results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "a2469eb7-4ef7-4032-a3d8-4020323872aa",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C52",
+      "claim": "The frequency of the split drive system in the population is expected to be sufficient for interrupting local disease transmission over a three year period after just 10 releases.",
+      "claim_type": "EXPLICIT",
+      "source": "After just 10 releases, the frequency of the split drive system in the population is expected to be sufficient for interrupting local disease transmission over a three year period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mathematical modeling results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "1d3fb34f-ee1d-4346-b724-f08a16a38532",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C53",
+      "claim": "The duration for which the anti-pathogen allele remains in over 80% of female mosquitoes exceeds three years for the release scheme described, for fitness costs less than 10% in gRNA/disease-refractory allele homozygotes.",
+      "claim_type": "EXPLICIT",
+      "source": "This duration exceeds three years for the release scheme described above, and for fitness costs less than 10% in gRNA/disease-refractory allele homozygotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mathematical modeling results shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "f5133ac8-9cd5-4efc-9108-736b9fc9acc9",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C55",
+      "claim": "The authors functionally characterized several drive components that performed with high efficiency in both somatic cells and the germline.",
+      "claim_type": "EXPLICIT",
+      "source": "To develop these drives, initially we functionally characterized several drive components that performed with high efficiency in both somatic cells and the germline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "d1c66890-fa05-44f6-9fd3-69c4d125aea7",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C56",
+      "claim": "Homing and cleavage efficiencies are largely dependent on the timing and expression of drive components.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple bidirectional genetic crosses of transgenic lines with optimized drive components revealed that homing and cleavage efficiencies are largely dependent on the timing and expression of drive components",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from genetic crosses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "4acb38a9-65bc-4099-a856-543978ecc906",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C57",
+      "claim": "Maternal deposition can result in embryonic activity and the generation of drive resistant alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "and maternal deposition can result in embryonic activity and the generation of drive resistant alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data on resistant allele generation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "dff7f12b-c0d5-4fcf-bc7b-1fef0457c825",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C58",
+      "claim": "Most antiviral effectors developed in Ae. aegypti to date rely upon small RNA pathway-directed targeting of viral genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Most antiviral effectors developed in Ae. aegypti to date rely upon small RNA pathway-directed targeting of viral genomes (Buchman et al., 2019; Franz et al., 2014; Franz et al., 2006; Mathur et al., 2010; Yen et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Buchman et al., 2019; Franz et al., 2014; Franz et al., 2006; Mathur et al., 2010; Yen et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "4f6ceff8-0f19-45e2-b3d7-46729edc53bc",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C59",
+      "claim": "Small RNA pathway-directed antiviral transgenes are not easily multiplexed.",
+      "claim_type": "EXPLICIT",
+      "source": "however, these antiviral transgenes are not easily multiplexed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on knowledge of the technology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "20c17109-6950-4b1c-86f1-dbc338abe3b5",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C60",
+      "claim": "Arboviruses transmitted by Ae. aegypti have high mutation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "and the diversity of arboviruses transmitted by this vector as well as the high mutation rate of these viruses (Steinhauer et al., 1992) makes their practicality in the field tenuous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Steinhauer et al., 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "315d582c-1b80-4b07-8e39-ef78ba9ace74",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C61",
+      "claim": "Drive efficiencies are impacted by target-site availability, timing, the expression of drive components, host-specific factors such as the timing of meiosis and recombination, as well as the generation of resistant alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Drive efficiencies are impacted by target-site availability, timing, the expression of drive components, host-specific factors such as the timing of meiosis and recombination, as well as the generation of resistant alleles that form as a result of non-homologous end-joining (NHEJ) repair of CRISPR-mediated DNA cleavage as opposed to homology directed repair (HDR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge of gene drive mechanisms",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "652be2ea-7c06-4336-9503-5bdb231931dd",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C62",
+      "claim": "Even imperfect drives with modest homing efficiencies are predicted to be quite invasive.",
+      "claim_type": "EXPLICIT",
+      "source": "While these future drive designs are expected to be more efficient than current systems, it should be noted that even imperfect drives with modest homing efficiencies are still predicted to be quite invasive (Noble et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Noble et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "22b96de7-107c-44be-bb43-19dad96e4c2b",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C63",
+      "claim": "Split drive technologies are a responsible choice for studying gene drives in the wild as they safeguard against spreading to non-target populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Safe, non-invasive, self-limiting split drive technologies, such as the systems developed here, are a responsible choice for studying gene drives in the wild, as they safeguard against spreading to non-target populations and will allow the assessment of potential risks and unintended consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on inference from the properties of split drives",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "fc08c053-0592-4476-a165-1116e94aac8b",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C64",
+      "claim": "Mosquitoes used in all experiments were derived from the Ae. aegypti Liverpool strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosquitoes used in all experiments were derived from the Ae. aegypti Liverpool strain (designated as wild-type [wt], Supplementary file 8a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "aa193bd2-0d2e-4ab3-9674-ce97cd47ef56",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C65",
+      "claim": "The Ae. aegypti reference genome sequences were generated using the Liverpool strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the Ae. aegypti reference genome sequences were generated using this strain (Matthews et al., 2018; Nene et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Matthews et al., 2018; Nene et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "b09cc40a-32fa-4d35-ae00-05575979bd0c",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C67",
+      "claim": "U6 non-coding small nuclear RNA (snRNA) polymerase III promoters are ideal for gRNA expression due to their nucleus-associated transcription and unmodified 5' and 3' regions.",
+      "claim_type": "EXPLICIT",
+      "source": "U6 non-coding small nuclear RNA (snRNA) polymerase III promoters are ideal for gRNA expression due to their nucleus-associated transcription and unmodified 5' and 3' regions (i.e., no 5' cap or 3' polyA tail)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established knowledge of U6 promoters",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "2b94f732-598c-4d64-95f4-49d9e34ea5b6",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C68",
+      "claim": "U6 promoters have been used to drive gRNA expression in various species.",
+      "claim_type": "EXPLICIT",
+      "source": "consequently, they have been used to drive gRNA expression in various species (Gantz et al., 2015; Hammond et al., 2016; Kondo and Ueda, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gantz et al., 2015; Hammond et al., 2016; Kondo and Ueda, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "1cf8b01d-71da-4433-b3f1-da5fedb66373",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C69",
+      "claim": "U6 promoters have not been functionally characterized in Ae. aegypti prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, U6 promoters have not been functionally characterized in Ae. aegypti.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the state of the field prior to this work",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "10e7cc2b-c322-47fc-9db1-be4f293561fd",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C70",
+      "claim": "There are six known U6 genes in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "There are six known U6 genes in Ae. aegypti (Matthews et al., 2018), however their promoters remain to be characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Matthews et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "cde25d0f-f888-4bf3-97bf-8e8da3d21f7d",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C71",
+      "claim": "The gRNA scaffold was modified to eliminate cryptic termination sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "While no previous efforts have been undertaken to improve sgRNA function in Ae. aegypti, to attempt to further increase gRNA expression, the gRNA scaffold was modified slightly as previously described (Dang et al., 2015) to eliminate cryptic termination sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dang et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "ad7ceb67-f83f-494f-a421-6dba63243138",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C72",
+      "claim": "The U6d-GDe construct had an unexpected 276 bp insertion in the right homology arm.",
+      "claim_type": "EXPLICIT",
+      "source": "Integration of the GDe's into the white locus was genetically confirmed by the presence of homozygous (wGDe/wGDe) individuals expressing tdTomato with recessive white (w\u2013) eyes, which was additionally confirmed by genomic sequencing of the left and right insertion boundaries all of which inserted perfectly except U6d-GDe which unexpectedly had an 276 bp insertion in the right homology arm (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "cc488f0c-d0d6-4d40-a6b9-659d6528f8e3",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C73",
+      "claim": "Heterozygous wGDe/w+ females transmitted the wGDe gene to their progeny at normal Mendelian rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the heterozygous wGDe/w+ females did meet this expectation, conferring wGDe inheritance to their progeny at normal Mendelian rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from genetic crosses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "198ee232-8cec-45df-8edb-3927bce73acc",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C74",
+      "claim": "Heterozygous wGDe/w+ males displayed sex-segregated transmission of wGDe to either mostly females at 99.8 \u00b1 0.3% (type I) or to mostly males at 99.8 \u00b1 0.2% (type II).",
+      "claim_type": "EXPLICIT",
+      "source": "The wGDe/w+ males, however, displayed sex-segregated transmission of wGDe to either mostly females at 99.8 \u00b1 0.3% (type I \u2642 in Figure 2\u2014figure supplement 1, Supplementary file 2) or to mostly males at 99.8 \u00b1 0.2% (type II \u2642 in Figure 2\u2014figure supplement 1, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1 and Supplementary file 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "c20d888b-420c-44af-afb9-cdf8a8be7e90",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C75",
+      "claim": "When both sexes were considered, heterozygous wGDe/w+ parents transmitted wGDe to their progeny at the 50% normal Mendelian inheritance rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, when both sexes were considered, heterozygous wGDe/w+ parents transmitted wGDe to their progeny at the 50% normal Mendelian inheritance rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from genetic crosses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "851aaeec-7050-482a-ab3c-fc647d0bf81d",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C76",
+      "claim": "Rates of maternal carryover-dependent cleavage varied depending on U6 promoter (26\u2013100%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that rates of maternal carryover-dependent cleavage, which occurs when mothers maternally deposit high levels of Cas9 into their embryos and is indicated by the presence of mosaic phenotypes, varied depending on U6 promoter (26\u2013100%)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from genetic crosses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "86cec17e-9f83-4b24-be00-6a2a7e534981",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C77",
+      "claim": "Paternal carryover of Cas9 was not sufficient to induce mosaic phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "while the paternal carryover of Cas9 was not sufficient to induce these phenotypes (Figures 2A and 3A; Supplementary file 3a, Supplementary file 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 2A and 3A; Supplementary file 3a, Supplementary file 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "b661c488-911d-4f40-b3f6-718e7ac2166e",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C78",
+      "claim": "There were no significant differences in transmission rates in the G1 progeny based on the parentage of the Cas9 donor.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish the contribution of maternal effects to differential drive transmission, we repeated these crosses with paternal Cas9 inheritance; however, there were no significant differences in transmission rates in the G1 progeny based on the parentage of the Cas9 donor (Figures 2A and 3B\u2013C; Supplementary files 3e \u2013 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figures 2A and 3B\u2013C; Supplementary files 3e \u2013 3f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "a94905a9-e61a-4f42-ae1b-337adde8ada2",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C79",
+      "claim": "Trans-heterozygous wU6b-GDe/w+; exu-Cas9/+ males did not induce somatic white cleavage nor bias wU6b-GDe transmission (50.0 \u00b1 4.2%).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, wU6b-GDe/w+; exu-Cas9/+ males did not induce somatic white cleavage nor bias wU6b-GDe transmission (50.0 \u00b1 4.2%; Figure 3\u2014figure supplement 1A, Supplementary file 5c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1A and Supplementary file 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "02ae3f9a-8645-4067-a090-23a68e9543d7",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C80",
+      "claim": "Trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ males induced white cleavage in 48.5 \u00b1 4.0% of progeny and biased transmission of the wU6b-GDe allele to 67.3 \u00b1 5.2% of progeny over multiple generations.",
+      "claim_type": "EXPLICIT",
+      "source": "while wU6b-GDe/w+; nup50-Cas9/+ males did induce white cleavage in 48.5 \u00b1 4.0% of progeny and biased transmission of the wU6b-GDe allele to 67.3 \u00b1 5.2% of progeny over multiple generations (Figure 3\u2014figure supplement 1B; Supplementary file 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3\u2014figure supplement 1B and Supplementary file 5d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "1c086bb0-7deb-441a-9938-dc33a7a7208f",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C81",
+      "claim": "Trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ females deposited the Cas9 protein loaded with gRNAw (Cas9/gRNAw) and this complex induced white germline mutations in progeny that did not inherit the wU6b-GDe transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments yielded 100% white-eye progeny, indicating that trans-heterozygous wU6b-GDe/w+; nup50-Cas9/+ females deposited the Cas9 protein loaded with gRNAw (Cas9/gRNAw) and this complex induced white germline mutations in progeny that did not inherit the wU6b-GDe transgene (Supplementary file 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data in Supplementary file 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "70d27814-b0e9-4e45-b1a1-ef517e0e86f5",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C82",
+      "claim": "Loss-of-function resistance alleles (wR) frequently contained indels at the gRNAw target site, making them unrecognizable to subsequent cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we identified loss-of-function resistance alleles (wR) that frequently contained indels at the gRNAw target site, making them unrecognizable to subsequent cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic sequencing data shown in Figure 3\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "7e08fa8e-1faf-403f-84c0-405ce43ce305",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C83",
+      "claim": "Maternal carryover effect of the Cas9/gRNAw complex was previously described in other drive systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This maternal carryover effect of the Cas9/gRNAw complex was previously described in other drive systems and will likely be an issue when maternal promoters are utilized for drives (Gantz et al., 2015; Kandul et al., 2019b; Lin and Potter, 2016; Oberhofer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gantz et al., 2015; Kandul et al., 2019b; Lin and Potter, 2016; Oberhofer et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "1ed10888-57d5-47eb-8c06-d8d14d574812",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C84",
+      "claim": "There were no significant differences in fitness parameters between the transgenic and wt lines, with the exception of female fecundity.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no significant differences in any of these fitness parameters between the transgenic and wt lines, with the exception of female fecundity (Supplementary file 7a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fitness assessment data in Supplementary file 7a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "036cab1c-cd88-40ac-ac95-36f971aa9c20",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C85",
+      "claim": "Germline expression of Cas9 in the nup50-Cas9 and wU6b-GDe/nup50-Cas9 lines may result in the reduced fecundity of these lines.",
+      "claim_type": "EXPLICIT",
+      "source": "so it is not unexpected that germline expression of Cas9 in the nup50-Cas9 and wU6b-GDe/nup50-Cas9 lines may result in the reduced fecundity of these lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on known Cas9 toxicity and observed fecundity reduction",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "c02c51fb-eb3a-4d20-b526-f49e47b5de15",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C86",
+      "claim": "Maternal deposition of Cas9 has been shown to be high enough in Drosophila melanogaster to facilitate gRNA directed mutagenesis in offspring in the absence of Cas9 inheritance.",
+      "claim_type": "EXPLICIT",
+      "source": "Maternal deposition of Cas9 has been shown to be high enough in Drosophila melanogaster to facilitate gRNA directed mutagenesis in offspring in the absence of Cas9 inheritance (Kandul et al., 2019b; Lin and Potter, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kandul et al., 2019b; Lin and Potter, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "dca88ce6-a57d-4520-8edb-b9f672edcebc",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C87",
+      "claim": "The inheritance bias induced when the Cas9 and gRNA co-occur gives the split drive system an advantage over a comparable inundative release of mosquitoes with the anti-pathogen allele.",
+      "claim_type": "EXPLICIT",
+      "source": "The inheritance bias induced when the Cas9 and gRNA co-occur would give the split drive system an advantage over a comparable inundative release of mosquitoes with the anti-pathogen allele (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mathematical modeling results shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "b903eecf-1248-4262-b882-488d105cd58c",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C88",
+      "claim": "A hypothetical construct with linked Cas9 and gRNA components demonstrated substantial spread after a single release of 10,000 adult males homozygous for the construct but was outnumbered by in-frame resistant alleles four years following the release.",
+      "claim_type": "EXPLICIT",
+      "source": "A hypothetical construct with linked Cas9 and gRNA components and identical homing and fitness cost parameters demonstrated substantial spread after a single release of 10,000 adult males homozygous for the construct but was outnumbered by in-frame resistant alleles four years following the release (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mathematical modeling results shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "2574a31d-ce24-4a09-8913-96457ee0a0fe",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C89",
+      "claim": "The number of in-frame resistant alleles generated could be reduced by carrying out linked system releases of a similar magnitude to those for the split drive system, or by using a linked system with a higher accurate homing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of in-frame resistant alleles generated could be reduced by carrying out linked system releases of a similar magnitude to those for the split drive system, or by using a linked system with a higher accurate homing rate, perhaps achievable by restricting Cas9 expression to the germline (Hammond et al., 2018; Kandul et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on modeling results and citations to Hammond et al., 2018; Kandul et al., 2019a",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "2bd7c460-0e7e-48e1-87de-4f3be0b82316",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C90",
+      "claim": "The linked homing drive spreads to an over 67% allele frequency in the neighboring population following a single release, assuming a standard migrant exchange rate of 1% per mosquito per year.",
+      "claim_type": "EXPLICIT",
+      "source": "As a comparison, the hypothetical linked homing drive discussed above, assuming a standard migrant exchange rate of 1% per mosquito per year, spreads to an over 67% allele frequency in the neighboring population following a single release (Figure 4C, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mathematical modeling results shown in Figure 4C and Figure 4\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "a796fdf5-4e6b-43a8-933c-d85244830a4b",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "claim_id": "C91",
+      "claim": "The reversal of the split drive system can be accelerated by the release of wild-type males.",
+      "claim_type": "EXPLICIT",
+      "source": "The reversal of the split drive system can be accelerated by the release of wild-type males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on modeling results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b79c2bf5-940f-44ea-8169-4ad499fd6551",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Aedes aegypti is a major disease vector responsible for transmitting multiple arboviruses and placing approximately half the world's population at risk, causing an estimated 390 million dengue infections annually.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 establish the public health significance of Ae. aegypti as a disease vector. All three claims are supported by appropriate citations to peer-reviewed literature (Scott and Takken, 2012; Bhatt et al., 2013), providing a well-established foundation for the study's motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "b9ed5dc8-dffd-42ab-92f5-c571bbe568cf",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Traditional and current mosquito control methods have limitations including development of resistance, high costs, environmental impacts, and requirements for continuous application, motivating the need for novel control technologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C11 provide context for existing control methods and their limitations. These claims are well-supported by citations to relevant literature and establish the rationale for developing gene drive technologies. The claims about Wolbachia effectiveness variability (C11) are particularly well-documented with multiple citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CRISPR-based homing gene drives have been successfully developed in multiple organisms but not yet in Ae. aegypti, representing a gap in vector control technology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C22 establish the state of gene drive technology prior to this work. The claims are well-supported by extensive citations documenting gene drive development in other species (yeast, flies, mice, Anopheles species) and correctly identify the absence of such systems in Ae. aegypti (C22), establishing the novelty of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "55ba29e4-5b4b-4d36-bebc-78e17ba923a8",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The white gene was selected as a drive target due to its screenable phenotype, and a highly conserved gRNA target sequence (100% conserved across 143 wild populations) was identified that achieved 92.7 \u00b1 5.8% mutation efficiency in injection experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 describe rational target selection. C28 is supported by bioinformatic analysis of 143 wild mosquitoes (Figure 1\u2014figure supplement 2A\u2013B), demonstrating target conservation. C29 is supported by experimental injection data showing high mutation efficiency, validating the target site accessibility and gRNA activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "1f886c21-eb08-44ac-9c87-fc16e48c1f00",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Four U6 promoters (U6a-d) were functionally characterized for gRNA expression in Ae. aegypti, showing somatic mutation frequencies of 32.5-71.3% and germline mutation rates of 27.6-67.5%, with U6b and U6c achieving up to 100% somatic knockout when combined with ubiq-Cas9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 and C67-C71 describe the characterization of U6 promoters, which had not been functionally tested in Ae. aegypti prior to this work (C69). The experimental data (Figure 1B, 1C) support the reported mutation frequencies. This represents a significant technical advance enabling gene drive development in this species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "aa5dc820-7061-4b73-afcf-30f575512574",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Split gene drives with unlinked Cas9 and gRNA components were successfully engineered in Ae. aegypti, achieving cleavage rates up to 100% and homing rates as high as 94%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 and C55 describe the core achievement of the study. The split drive design is supported by appropriate citations (C23), and the reported cleavage and homing rates are supported by experimental data throughout the Results section. C72 notes an unexpected insertion in one construct, demonstrating appropriate quality control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "d30495e5-9145-4300-9894-e88e02fbda63",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The white gene exhibits sex-linked inheritance due to its proximity to the male-determining factor Nix on chromosome I, resulting in sex-biased transmission patterns in males but normal Mendelian inheritance when both sexes are considered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 establish the genetic basis for observed inheritance patterns, supported by multiple citations. Claims C73-C75 report experimental observations consistent with this genetic architecture. The sex-biased transmission in males (C74) is well-documented experimentally (Figure 2\u2014figure supplement 1), and the overall 50% transmission rate (C75) confirms Mendelian inheritance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "e620cae5-25a7-430b-82d4-6e2aafb933a7",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Split drive performance varied by Cas9 promoter, with wU6b-GDe/w+; nup50-Cas9/+ showing the best performance: 100% somatic mosaicism and 80.5 \u00b1 5.0% inheritance in females, and 51.0 \u00b1 3.9% mosaicism and 66.9 \u00b1 5.4% inheritance in males, demonstrating that homing and cleavage efficiencies depend on timing and expression of drive components.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C42 and C56 report systematic testing of different Cas9 promoters. The data are well-documented in Figures 3B-F and supplementary files. The variation in performance across different promoter combinations (C56) is supported by the experimental comparisons. The best-performing system (nup50-Cas9) shows super-Mendelian inheritance in both sexes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "ef06fb63-ef0f-4146-bf7d-43bc6489979b",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The split-drive systems showed relatively stable cleavage and transmission rates over multiple generations, with the wU6b-GDe/w+; nup50-Cas9/+ system maintaining drive activity in males across generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C79, and C80 address multi-generational stability. C43 is supported by Figure 3\u2014figure supplement 1 showing stability across generations. C79 and C80 demonstrate differential performance between exu-Cas9 and nup50-Cas9 systems in males, with nup50-Cas9 maintaining drive activity. The data support the conclusion of relative stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "9980fd76-33d5-4bc0-b597-332bcb94cf92",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Maternal deposition of Cas9 results in embryonic cleavage activity and generation of drive-resistant alleles at low frequency (0.31 \u00b1 0.07%), with resistance alleles containing indels at the gRNA target site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C57, C76-C78, and C81-C83 describe maternal carryover effects and resistant allele generation. C44 quantifies resistant allele frequency with experimental data (Supplementary file 5b). C82 provides molecular characterization (Figure 3\u2014figure supplement 2). C83 appropriately contextualizes this as a known issue in gene drive systems with supporting citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "d3cbef1e-5c78-45a5-abf2-6076ec1d171c",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Female fecundity was significantly reduced in nup50-Cas9 and wU6b-GDe/nup50-Cas9 lines compared to wild-type, likely due to Cas9 toxicity, while other fitness parameters showed no significant differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C84 report fitness assessment results supported by Supplementary file 7a. C46 and C86 provide context from the literature about Cas9 toxicity. C85 offers a reasonable inference connecting germline Cas9 expression to reduced fecundity. The fitness cost is specific to Cas9-expressing lines, supporting the toxicity hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "482ec295-2f83-4aed-a888-46130ebbbd90",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mathematical modeling predicts that 10 consecutive weekly releases of 10,000 homozygous split drive males can drive the system to ~97% frequency in the release population, remaining above 87% for three years, with limited spread to neighboring populations (~30% peak frequency), demonstrating confinability and reversibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C47-C53 describe modeling predictions supported by Figure 4A and related figures. The modeling uses experimentally determined parameters (Supplementary file 7b) and the MGDrivE framework. C87 demonstrates the advantage over inundative releases (Figure 4B). The predictions are internally consistent and appropriately parameterized based on experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "66b21c13-91f1-44a1-a655-9f6fa8fad449",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A hypothetical linked homing drive would spread more extensively than the split drive, reaching >67% frequency in neighboring populations after a single release, but would be outnumbered by resistant alleles within four years.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 compare split drive to linked drive systems using modeling. The predictions are supported by Figure 4C and Figure 4\u2014figure supplement 1C. C89 appropriately suggests strategies to reduce resistant allele generation, supported by citations. The comparison demonstrates the confinability advantage of split drives.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "430e3f55-f59a-4033-a8a0-8c3072727eab",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The reversal of the split drive system can be accelerated by releasing wild-type males.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 describes a strategy for accelerating drive reversal. This is a logical inference from the modeling framework and is consistent with the split drive design where fitness costs and component separation lead to natural decline. The claim is reasonable given the system's properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "bfaf6026-707d-4d63-bdc3-1a7326ef0de0",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Current antiviral effectors have limitations including difficulty in multiplexing and viral mutation, and gene drive efficiencies are impacted by multiple factors, but split drive technologies offer a responsible approach for field testing due to their confinability and reversibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 discuss limitations of current effectors and advantages of split drives. C58-C60 are supported by appropriate citations. C61 summarizes established knowledge about factors affecting drive efficiency. C62 and C63 make reasonable inferences about the value of split drives for field testing, though C63 is somewhat speculative about real-world performance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    },
+    {
+      "id": "01309c10-d641-446c-b9f7-32fd97febcdc",
+      "content_id": "208cf1d0-1df3-4e6f-8e03-d05fd1f31eb1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "All experiments used the Ae. aegypti Liverpool strain, which is the strain used to generate the reference genome sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64 and C65 describe the mosquito strain used in experiments. These are straightforward methodological statements supported by citations (Matthews et al., 2018; Nene et al., 2007). Using the reference strain is appropriate for this proof-of-concept work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:43:22.950029Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5d348f97-ae00-471e-8b86-4eda0f84b187",
+      "result_id": "b79c2bf5-940f-44ea-8169-4ad499fd6551"
+    },
+    {
+      "claim_id": "4454c545-c27e-44fd-afef-98526acff6bb",
+      "result_id": "b79c2bf5-940f-44ea-8169-4ad499fd6551"
+    },
+    {
+      "claim_id": "ed9f9003-0b7b-4154-9d8d-d61ea952af67",
+      "result_id": "b79c2bf5-940f-44ea-8169-4ad499fd6551"
+    },
+    {
+      "claim_id": "a1ca1adb-d774-4a0c-9a69-3ad5b792cf62",
+      "result_id": "b9ed5dc8-dffd-42ab-92f5-c571bbe568cf"
+    },
+    {
+      "claim_id": "c94d30b3-4626-468a-b8a6-0a2bf08c2d23",
+      "result_id": "b9ed5dc8-dffd-42ab-92f5-c571bbe568cf"
+    },
+    {
+      "claim_id": "d18a77f6-8f99-453f-9510-11ac7ccccdc7",
+      "result_id": "b9ed5dc8-dffd-42ab-92f5-c571bbe568cf"
+    },
+    {
+      "claim_id": "a42a44a9-9e18-4ce3-8394-c432b27b738f",
+      "result_id": "b9ed5dc8-dffd-42ab-92f5-c571bbe568cf"
+    },
+    {
+      "claim_id": "71333837-dc6f-4bfc-8e32-195de6a67876",
+      "result_id": "b9ed5dc8-dffd-42ab-92f5-c571bbe568cf"
+    },
+    {
+      "claim_id": "86e2fe99-6821-49a6-b9b1-e8a77eb0b5f3",
+      "result_id": "b9ed5dc8-dffd-42ab-92f5-c571bbe568cf"
+    },
+    {
+      "claim_id": "74cbe110-c3b7-415c-939e-7cd316073dee",
+      "result_id": "b9ed5dc8-dffd-42ab-92f5-c571bbe568cf"
+    },
+    {
+      "claim_id": "8413d905-9921-4e6c-948d-c7d1a7c4940e",
+      "result_id": "b9ed5dc8-dffd-42ab-92f5-c571bbe568cf"
+    },
+    {
+      "claim_id": "56e682ae-d368-4c9b-a26a-a05fe8493a36",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "eacc3180-23a4-4e49-a5cd-540a16128c28",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "a1c008a8-5702-439e-b73d-7bb63ad7de79",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "526ee283-a1b1-4ccf-b5ac-1137286076a3",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "f559dc14-b175-4676-b77b-fb665e5bc19e",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "a8cdcee1-e4d6-4d3e-8723-5fc03eabfa3d",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "6cbbeb25-dbd9-4324-bca7-315ea926068f",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "d7bbabb3-1f7d-4cbc-9b13-c69a641a59ad",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "869944a5-88ea-4e25-be9c-2f3fc8654ef8",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "8926fa4b-26e1-45e4-9e9a-1b5751e9e4e3",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "cd36de71-efaa-45e1-b52a-3f4e5a3172a4",
+      "result_id": "cd2e3d4c-244c-4916-9a1e-be6713cef1fc"
+    },
+    {
+      "claim_id": "73c1676d-628e-4315-998e-a63ea2eabe83",
+      "result_id": "55ba29e4-5b4b-4d36-bebc-78e17ba923a8"
+    },
+    {
+      "claim_id": "04b6c302-0604-425d-a18c-8b0fabbec343",
+      "result_id": "55ba29e4-5b4b-4d36-bebc-78e17ba923a8"
+    },
+    {
+      "claim_id": "c30413af-4e6e-47d8-98b8-e6360a5b168b",
+      "result_id": "55ba29e4-5b4b-4d36-bebc-78e17ba923a8"
+    },
+    {
+      "claim_id": "01537ba0-13d2-41dc-9fb1-0cce4bd09b29",
+      "result_id": "1f886c21-eb08-44ac-9c87-fc16e48c1f00"
+    },
+    {
+      "claim_id": "56c2fe38-edd4-497f-8e1b-98c12daf989e",
+      "result_id": "1f886c21-eb08-44ac-9c87-fc16e48c1f00"
+    },
+    {
+      "claim_id": "adff1d57-0d52-4ef4-98b1-9443a77a7ee7",
+      "result_id": "1f886c21-eb08-44ac-9c87-fc16e48c1f00"
+    },
+    {
+      "claim_id": "b09cc40a-32fa-4d35-ae00-05575979bd0c",
+      "result_id": "1f886c21-eb08-44ac-9c87-fc16e48c1f00"
+    },
+    {
+      "claim_id": "2b94f732-598c-4d64-95f4-49d9e34ea5b6",
+      "result_id": "1f886c21-eb08-44ac-9c87-fc16e48c1f00"
+    },
+    {
+      "claim_id": "1cf8b01d-71da-4433-b3f1-da5fedb66373",
+      "result_id": "1f886c21-eb08-44ac-9c87-fc16e48c1f00"
+    },
+    {
+      "claim_id": "10e7cc2b-c322-47fc-9db1-be4f293561fd",
+      "result_id": "1f886c21-eb08-44ac-9c87-fc16e48c1f00"
+    },
+    {
+      "claim_id": "cde25d0f-f888-4bf3-97bf-8e8da3d21f7d",
+      "result_id": "1f886c21-eb08-44ac-9c87-fc16e48c1f00"
+    },
+    {
+      "claim_id": "3c5d8ce0-2e74-4a8c-bc3d-20eb86db6150",
+      "result_id": "aa5dc820-7061-4b73-afcf-30f575512574"
+    },
+    {
+      "claim_id": "efa60686-c3f8-4cd9-b0f6-f1c345a68ed8",
+      "result_id": "aa5dc820-7061-4b73-afcf-30f575512574"
+    },
+    {
+      "claim_id": "4f936bc8-bf4e-4c1e-9893-df759d01405c",
+      "result_id": "aa5dc820-7061-4b73-afcf-30f575512574"
+    },
+    {
+      "claim_id": "f5133ac8-9cd5-4efc-9108-736b9fc9acc9",
+      "result_id": "aa5dc820-7061-4b73-afcf-30f575512574"
+    },
+    {
+      "claim_id": "ad7ceb67-f83f-494f-a421-6dba63243138",
+      "result_id": "aa5dc820-7061-4b73-afcf-30f575512574"
+    },
+    {
+      "claim_id": "3d67373a-ea3c-4caf-83a7-020d493c071c",
+      "result_id": "d30495e5-9145-4300-9894-e88e02fbda63"
+    },
+    {
+      "claim_id": "34770ec1-d5de-4029-85db-71a47d5329df",
+      "result_id": "d30495e5-9145-4300-9894-e88e02fbda63"
+    },
+    {
+      "claim_id": "af7b6121-52fa-48b4-89d1-d7c94ef2f1cd",
+      "result_id": "d30495e5-9145-4300-9894-e88e02fbda63"
+    },
+    {
+      "claim_id": "cc488f0c-d0d6-4d40-a6b9-659d6528f8e3",
+      "result_id": "d30495e5-9145-4300-9894-e88e02fbda63"
+    },
+    {
+      "claim_id": "198ee232-8cec-45df-8edb-3927bce73acc",
+      "result_id": "d30495e5-9145-4300-9894-e88e02fbda63"
+    },
+    {
+      "claim_id": "c20d888b-420c-44af-afb9-cdf8a8be7e90",
+      "result_id": "d30495e5-9145-4300-9894-e88e02fbda63"
+    },
+    {
+      "claim_id": "997f26c9-122d-43a7-a606-230730e90abf",
+      "result_id": "e620cae5-25a7-430b-82d4-6e2aafb933a7"
+    },
+    {
+      "claim_id": "9534c832-6112-4e86-890c-6bf5d965ceb4",
+      "result_id": "e620cae5-25a7-430b-82d4-6e2aafb933a7"
+    },
+    {
+      "claim_id": "9cc60916-6cf1-402e-8b9f-a8ab180d6f17",
+      "result_id": "e620cae5-25a7-430b-82d4-6e2aafb933a7"
+    },
+    {
+      "claim_id": "f89f9329-481f-4296-bec5-d32f57faa8ae",
+      "result_id": "e620cae5-25a7-430b-82d4-6e2aafb933a7"
+    },
+    {
+      "claim_id": "dc73bf72-401d-467f-8c0c-05eaac61e700",
+      "result_id": "e620cae5-25a7-430b-82d4-6e2aafb933a7"
+    },
+    {
+      "claim_id": "2cf35ebb-7b21-40dd-85f1-3f711c5b6b2f",
+      "result_id": "e620cae5-25a7-430b-82d4-6e2aafb933a7"
+    },
+    {
+      "claim_id": "06af5697-2492-4479-bf15-14b35a59071c",
+      "result_id": "e620cae5-25a7-430b-82d4-6e2aafb933a7"
+    },
+    {
+      "claim_id": "d1c66890-fa05-44f6-9fd3-69c4d125aea7",
+      "result_id": "e620cae5-25a7-430b-82d4-6e2aafb933a7"
+    },
+    {
+      "claim_id": "71329c7d-08bc-49f1-b75a-5996c64c4c4b",
+      "result_id": "ef06fb63-ef0f-4146-bf7d-43bc6489979b"
+    },
+    {
+      "claim_id": "a94905a9-e61a-4f42-ae1b-337adde8ada2",
+      "result_id": "ef06fb63-ef0f-4146-bf7d-43bc6489979b"
+    },
+    {
+      "claim_id": "02ae3f9a-8645-4067-a090-23a68e9543d7",
+      "result_id": "ef06fb63-ef0f-4146-bf7d-43bc6489979b"
+    },
+    {
+      "claim_id": "8bce971b-814f-452b-be9b-dcd3e0e6912d",
+      "result_id": "9980fd76-33d5-4bc0-b597-332bcb94cf92"
+    },
+    {
+      "claim_id": "4acb38a9-65bc-4099-a856-543978ecc906",
+      "result_id": "9980fd76-33d5-4bc0-b597-332bcb94cf92"
+    },
+    {
+      "claim_id": "851aaeec-7050-482a-ab3c-fc647d0bf81d",
+      "result_id": "9980fd76-33d5-4bc0-b597-332bcb94cf92"
+    },
+    {
+      "claim_id": "86cec17e-9f83-4b24-be00-6a2a7e534981",
+      "result_id": "9980fd76-33d5-4bc0-b597-332bcb94cf92"
+    },
+    {
+      "claim_id": "b661c488-911d-4f40-b3f6-718e7ac2166e",
+      "result_id": "9980fd76-33d5-4bc0-b597-332bcb94cf92"
+    },
+    {
+      "claim_id": "1c086bb0-7deb-441a-9938-dc33a7a7208f",
+      "result_id": "9980fd76-33d5-4bc0-b597-332bcb94cf92"
+    },
+    {
+      "claim_id": "70d27814-b0e9-4e45-b1a1-ef517e0e86f5",
+      "result_id": "9980fd76-33d5-4bc0-b597-332bcb94cf92"
+    },
+    {
+      "claim_id": "7e08fa8e-1faf-403f-84c0-405ce43ce305",
+      "result_id": "9980fd76-33d5-4bc0-b597-332bcb94cf92"
+    },
+    {
+      "claim_id": "4629669e-cad8-489c-8299-501eb7fdcd23",
+      "result_id": "d3cbef1e-5c78-45a5-abf2-6076ec1d171c"
+    },
+    {
+      "claim_id": "78606d22-15ca-4127-870a-c1a7fd330b39",
+      "result_id": "d3cbef1e-5c78-45a5-abf2-6076ec1d171c"
+    },
+    {
+      "claim_id": "1ed10888-57d5-47eb-8c06-d8d14d574812",
+      "result_id": "d3cbef1e-5c78-45a5-abf2-6076ec1d171c"
+    },
+    {
+      "claim_id": "036cab1c-cd88-40ac-ac95-36f971aa9c20",
+      "result_id": "d3cbef1e-5c78-45a5-abf2-6076ec1d171c"
+    },
+    {
+      "claim_id": "c02c51fb-eb3a-4d20-b526-f49e47b5de15",
+      "result_id": "d3cbef1e-5c78-45a5-abf2-6076ec1d171c"
+    },
+    {
+      "claim_id": "e682b93c-452b-4e51-8342-8e1b37206ac7",
+      "result_id": "482ec295-2f83-4aed-a888-46130ebbbd90"
+    },
+    {
+      "claim_id": "e4f9dfe8-25b8-4ccd-9057-ff984c929d86",
+      "result_id": "482ec295-2f83-4aed-a888-46130ebbbd90"
+    },
+    {
+      "claim_id": "cd063162-95fd-4c16-868e-58af93bd1f99",
+      "result_id": "482ec295-2f83-4aed-a888-46130ebbbd90"
+    },
+    {
+      "claim_id": "20dc1c3b-a10a-42eb-8de7-87bebe1105b2",
+      "result_id": "482ec295-2f83-4aed-a888-46130ebbbd90"
+    },
+    {
+      "claim_id": "d8068356-ad8d-4089-81c5-ca3b028c2ad0",
+      "result_id": "482ec295-2f83-4aed-a888-46130ebbbd90"
+    },
+    {
+      "claim_id": "b87c9885-9664-4494-9ee6-829edc443ce2",
+      "result_id": "482ec295-2f83-4aed-a888-46130ebbbd90"
+    },
+    {
+      "claim_id": "a2469eb7-4ef7-4032-a3d8-4020323872aa",
+      "result_id": "482ec295-2f83-4aed-a888-46130ebbbd90"
+    },
+    {
+      "claim_id": "1d3fb34f-ee1d-4346-b724-f08a16a38532",
+      "result_id": "482ec295-2f83-4aed-a888-46130ebbbd90"
+    },
+    {
+      "claim_id": "dca88ce6-a57d-4520-8edb-b9f672edcebc",
+      "result_id": "482ec295-2f83-4aed-a888-46130ebbbd90"
+    },
+    {
+      "claim_id": "b903eecf-1248-4262-b882-488d105cd58c",
+      "result_id": "66b21c13-91f1-44a1-a655-9f6fa8fad449"
+    },
+    {
+      "claim_id": "2574a31d-ce24-4a09-8913-96457ee0a0fe",
+      "result_id": "66b21c13-91f1-44a1-a655-9f6fa8fad449"
+    },
+    {
+      "claim_id": "2bd7c460-0e7e-48e1-87de-4f3be0b82316",
+      "result_id": "66b21c13-91f1-44a1-a655-9f6fa8fad449"
+    },
+    {
+      "claim_id": "a796fdf5-4e6b-43a8-933c-d85244830a4b",
+      "result_id": "430e3f55-f59a-4033-a8a0-8c3072727eab"
+    },
+    {
+      "claim_id": "dff7f12b-c0d5-4fcf-bc7b-1fef0457c825",
+      "result_id": "bfaf6026-707d-4d63-bdc3-1a7326ef0de0"
+    },
+    {
+      "claim_id": "4f6ceff8-0f19-45e2-b3d7-46729edc53bc",
+      "result_id": "bfaf6026-707d-4d63-bdc3-1a7326ef0de0"
+    },
+    {
+      "claim_id": "20c17109-6950-4b1c-86f1-dbc338abe3b5",
+      "result_id": "bfaf6026-707d-4d63-bdc3-1a7326ef0de0"
+    },
+    {
+      "claim_id": "315d582c-1b80-4b07-8e39-ef78ba9ace74",
+      "result_id": "bfaf6026-707d-4d63-bdc3-1a7326ef0de0"
+    },
+    {
+      "claim_id": "652be2ea-7c06-4336-9503-5bdb231931dd",
+      "result_id": "bfaf6026-707d-4d63-bdc3-1a7326ef0de0"
+    },
+    {
+      "claim_id": "22b96de7-107c-44be-bb43-19dad96e4c2b",
+      "result_id": "bfaf6026-707d-4d63-bdc3-1a7326ef0de0"
+    },
+    {
+      "claim_id": "fc08c053-0592-4476-a165-1116e94aac8b",
+      "result_id": "01309c10-d641-446c-b9f7-32fd97febcdc"
+    },
+    {
+      "claim_id": "aa193bd2-0d2e-4ab3-9674-ce97cd47ef56",
+      "result_id": "01309c10-d641-446c-b9f7-32fd97febcdc"
+    }
+  ],
+  "comparisons": []
+}

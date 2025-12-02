@@ -1,0 +1,386 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C34",
+      "C35"
+    ],
+    "result": "ORF3d is a novel overlapping gene in SARS-CoV-2 that is distinct from ORF3b and is present only in SARS-CoV-2 and Guangxi pangolin-CoVs. The gene was identified using the codon permutation method (p=0.0104) and comprises 58 codons in a different reading frame and genomic position than ORF3b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12-C18, C34-C35 provide converging computational and comparative genomic evidence for ORF3d as a novel gene. The codon permutation analysis (C12), sequence analysis showing distinct genomic positions and reading frames (C16-C17), and taxonomic distribution data (C2, C34) collectively support this finding. The distinction from ORF3b is well-documented through multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C15",
+      "C55"
+    ],
+    "result": "ORF3d has been misclassified as ORF3b in multiple studies, leading to confusion in the literature about these two distinct genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C15, and C55 document the misclassification through citations to multiple studies and analysis of the literature. The evidence shows systematic confusion between these genes due to naming ambiguity, supported by specific examples of misattribution in published work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "ORF3d shows evidence of active translation based on ribosome profiling data, including upstream peaks at the expected P-site offset and frame-specific enrichment of reads at the ORF3d locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide multiple lines of ribosome profiling evidence for ORF3d translation. The upstream peak at ~12 nt (C19), strong correlation between ribosome profiling and mass spectrometry (C20, rS=0.89, p=0.0004), and frame-specific read enrichment (C23) collectively support active translation. The inference is well-grounded in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27"
+    ],
+    "result": "ORF3d elicits strong antibody responses in COVID-19 patients and is sufficient to diagnose the majority of COVID-19 cases, providing independent evidence of translation during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C27 are supported by citation to Hachim et al., 2020 showing strong antibody responses. The taxonomic restriction of ORF3d (C27) strengthens the argument against cross-reactivity. This provides independent validation of ORF3d expression through immunological data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "ORF3d can be stably expressed in overexpression experiments and interacts with the mitochondrial protein STOML2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by citation to Gordon et al., 2020 demonstrating stable expression and protein-protein interaction. This provides experimental validation of ORF3d as a functional protein, though the citation indicates it was misnamed as 'ORF3b' in that study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "ORF3d has the lowest predicted CD8+ T cell epitope density among SARS-CoV-2 proteins, while ORF3d, N, and ORF8 show both low T cell epitope density and strong antibody responses, suggesting a possible immune balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 present computational epitope prediction data with appropriate statistical testing. The correlation between low T cell epitope density and strong antibody responses (C29) is supported by both computational predictions and citation to Hachim et al., 2020. The ORF3d-2 isoform showing zero predicted epitopes (C30, p=0.001) is particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "ORF3d shows strong conservation of hydrophobicity profiles with ORF3a (rS=0.87, p=5.79\u00d710\u207b\u00b9\u00b3), suggesting inheritance of structure-related properties from the overlapping reading frame.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 provide computational analysis of hydrophobicity profiles with strong statistical support. The correlation is much stronger in the ORF3d region than in non-overlapping regions of ORF3a, and the inference about functional predisposition is reasonable given the data and citation to Bartonek et al., 2020.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The taxonomic distribution of ORF3d is incongruent with whole-genome phylogenies, with evidence of recombination breakpoints in ORF3a near ORF3d.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 document phylogenetic incongruence through comparative analysis and citations to studies identifying recombination (Boni et al., 2020; Rehman et al., 2020). The observation that ORF3d is intact in more distantly related pangolin-CoV but not closely related ones is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The nucleocapsid gene N shows significant purifying selection at all three evolutionary levels and is the most highly expressed gene, confirming that selection acts more strongly on highly expressed proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 provide dN/dS analysis across three evolutionary levels and expression data from mass spectrometry and ribosome profiling. The finding that N is under purifying selection specifically in non-OLG regions and constitutes ~80% of viral protein content is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "ORF3d shows evidence of purifying selection between SARS-CoV-2 and pangolin-CoV GX/P5L, with OLG dN/dS=0.14 (p=0.264) and frame-specific constraint in sliding window analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 present selection analysis data, but the p-value of 0.264 does not reach statistical significance. While the sliding window analysis (C42) shows frame-specific patterns consistent with constraint, the lack of statistical significance and small sample size (only 2-3 sequences with intact ORF3d) limit the strength of this conclusion. Additional sequences would be needed for definitive evidence of purifying selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The ORF3d-LOF mutation (G25563U) causes a STOP codon in ORF3d while causing nonsynonymous changes in ORF3a and ORF3c, and increased in frequency during the early pandemic in multiple locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 document the ORF3d-LOF mutation through sequence analysis and temporal frequency data. The mutation's effects on multiple overlapping genes (C44) and its increase in frequency (C46) are well-documented, though the authors appropriately note that causation (selection vs. drift/founder effects) cannot be definitively determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The EP haplotype, despite being an early founder in Germany, is extremely rare compared to EP+1 and EP+1+LOF haplotypes that carry additional mutations including ORF3d-LOF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 present haplotype frequency data showing the unexpected rarity of EP despite its founder status (C47, supported by Rothe et al., 2020) and the predominance of EP+1 variants (C49). The data are clearly presented in Table 2 and Figure 7, though the authors appropriately discuss multiple possible explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "ORF3d shows no significant evidence of selection at the within-host level (\u03c0N/\u03c0S=1.5, p=0.584), with ORF3d-LOF observed as a minor allele in only 0.94% of samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 present within-host diversity analysis with appropriate statistical testing. The lack of significant selection signal and low frequency of ORF3d-LOF as a minor allele are clearly documented. The analysis appropriately uses OLGenie for overlapping gene regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "A STOP mutation in NSP1 (A404U; NSP1-L47*) is observed at low frequencies in 44% of within-host samples, which is unexplainable by mutational bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 presents within-host recurrent mutation data showing an unexpectedly high frequency of a STOP mutation. The observation is well-documented in Figure 8 and Figure 8\u2014figure supplement 1, and the authors appropriately note this warrants further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "ORF3d-2, a shorter isoform of ORF3d, shows evidence of higher overall expression than full-length ORF3d based on ribosome profiling data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by ribosome profiling data shown in Figure 2A. The observation of higher expression for the shorter isoform is clearly documented, though the authors note that analysis is complicated by the triple overlap with ORF3a and ORF3c.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "ORF3c shows deep conservation among viruses of this species, the lowest \u03c0N/\u03c0S ratio in between-host analysis, strong translation evidence, and the highest predicted CD8+ T cell epitope density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 integrates multiple lines of evidence (conservation, selection, translation, epitope prediction) supported by citations and data presented in Figures 2, 3, and 5. The convergence of evidence from different approaches strongly supports ORF3c as a functional, conserved gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "S-iORF2 shows evidence of translation from ribosome profiling and purifying selection (\u03c0N/\u03c0S=0.22, p=0.0278) in between-host comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 presents evidence for S-iORF2 through citation to Finkel et al., 2020 for translation and original selection analysis with significant p-value. The combination of translation evidence and significant purifying selection supports S-iORF2 as a functional gene.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Many genes in SARS-CoV-2 are under relaxed purifying selection consistent with exponential viral growth, with \u03c0N/\u03c0S remaining relatively constant at 0.46 (\u00b10.030 SEM) during the early pandemic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 present comprehensive selection analysis across the genome with appropriate citation to theory (Gazave et al., 2013). The temporal stability of \u03c0N/\u03c0S despite increasing diversity (Figure 5\u2014figure supplement 1B) is well-documented and consistent with population expansion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ORF3d and ORF8 are among the youngest genes in SARS-CoV-2, both exhibit strong antibody responses and predicted T cell epitope depletion, suggesting their loss or truncation may share an immunological basis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 integrate comparative genomic data, immunological data from Hachim et al., 2020, and epitope predictions. The parallel between ORF3d and ORF8 in terms of age, turnover, antibody responses, and epitope depletion is well-documented, though the speculation about shared immunological basis (C68) is appropriately tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Multiple plausible explanations exist for the spread of ORF3d-LOF that do not require natural selection, including sampling bias, independent introduction, and linkage with other variants like Spike-D614G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 present alternative explanations for the observed haplotype patterns with appropriate citations (Worobey et al., 2020; Korber et al., 2020; Plante et al., 2020; Yurkovetskiy et al., 2020). The authors appropriately acknowledge uncertainty and multiple possible mechanisms, demonstrating scientific caution in interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Multiple technical and biological reasons may explain why ORF3d was not detected by mass spectrometry, including low expression, short length, poor peptide detectability, and potential post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 provide reasonable explanations for the lack of mass spectrometry detection, supported by knowledge of MS limitations (C74) and citation to Gordon et al., 2020 showing low MS intensity even in overexpression (C75). The authors appropriately acknowledge this limitation while providing multiple lines of alternative evidence for translation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Overlapping genes are common in viruses, compress genomic information, allow genetic innovation, but are typically missed by annotation methods and constrain evolution of pre-existing genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C7 present established knowledge about overlapping genes supported by appropriate citations (Keese and Gibbs, 1992; Bartonek et al., 2020; Warren et al., 2010). These claims provide important context for the study and are well-grounded in prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Overlapping genes are inconsistently reported in SARS-related coronaviruses, with examples including absent or conflicting annotations of ORF9b and ORF9c, and inappropriate annotation of truncated ORF3b in SARS-CoV-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 document annotation inconsistencies through examination of reference genomes and citations to studies. The specific examples of ORF9b, ORF9c (C9), and ORF3b (C10) are well-documented and provide motivation for the study's focus on careful annotation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "In HIV-1, the novel OLG asp is actively expressed and associated with the pandemic M group lineage, providing precedent for OLGs playing roles in viral emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by citations to Affram et al., 2019 and Cassan et al., 2016. This provides important precedent for the study's hypothesis about ORF3d's potential role in SARS-CoV-2 emergence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Annotation of newly emerged viruses is difficult and requires both de novo and homology-based approaches followed by multi-omic expression and evolutionary analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 present methodological recommendations based on the study's approach and general knowledge about annotation challenges. These are reasonable conclusions drawn from the work presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The absence of full-length ORF3b in SARS-CoV-2 may be immunologically important, particularly for interferon suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is speculative, supported by citations to studies on ORF3b function (Yuen et al., 2020; Konno et al., 2020; Lokugamage et al., 2020) but lacking direct experimental evidence for the immunological consequences of ORF3b absence in SARS-CoV-2. This is appropriately presented as speculation requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The presence of ORF3d coincident with SARS-CoV-2 entry into humans suggests functional relevance for emergent viral properties, analogous to asp in HIV-1-M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 is speculative, drawing an analogy to HIV-1 (Cassan et al., 2016) based on the taxonomic distribution of ORF3d. While the parallel is interesting, direct evidence for functional relevance to emergence is lacking. The phylogenetic incongruence and recombination complicate interpretation of the timing of ORF3d acquisition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Failure to account for overlapping genes can lead to erroneous inference of natural selection because synonymous variants in one frame are typically nonsynonymous in overlapping frames, affecting dN/dS calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 present established knowledge about selection analysis in overlapping genes, supported by citations (Holmes et al., 2006; Sabath et al., 2008; Nelson et al., 2020a). This provides important methodological context for the study's use of OLGenie.",
+    "result_type": "MINOR"
+  }
+]

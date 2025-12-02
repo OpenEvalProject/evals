@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "GGN is an exceptionally large neuron with complex morphology. The authors provide detailed morphological reconstruction showing GGN has a maximum path length of ~2 mm, physical length of ~1 mm, total branch length of ~65 mm, and neurites up to 20 \u03bcm in diameter. GGN ranks in the 99.75th percentile for total branch length and 99.95th percentile for branch points compared to nearly 97,000 cataloged neurons. Novel observations include thin feather-like neurites wrapping around the peduncle and bouton-like structures in the calyx and lateral horn.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 and C102-C107 provide converging morphological evidence from confocal imaging, 3D reconstruction, and comparative analysis. The measurements are quantitative and the novel structural features are documented with imaging data (Figure 1). The comparative analysis against a large database provides context for GGN's exceptional size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C89",
+      "C96"
+    ],
+    "result": "Computational modeling predicts that despite substantial signal attenuation, GGN can transmit signals from its \u03b1 lobe to the calyx sufficiently to provide global inhibition to KCs. A 10 mV depolarization in the \u03b1 lobe yields 5-9 mV depolarization in the calyx, which exceeds the 2-5 mV threshold for synaptic transmission in non-spiking interneurons. Signal attenuation varies with location and biophysical parameters, but remains robust across most of the explored parameter space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C47, and C89 are supported by detailed biophysical modeling (Figure 2) with parameter exploration. The model is based on realistic morphology (C107) and established biophysical parameters (C108-C110). The conclusion that signals remain above functional threshold is supported by comparison to published data on non-spiking interneurons (C38, C87, C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C97"
+    ],
+    "result": "The model predicts that feedback inhibition from GGN expands the dynamic range of KCs. Simulations show that while GGN inhibition increases KC spiking threshold, GGN-coupled KCs continue to spike over a much larger range of current injection compared to isolated KCs, which quickly saturate. This prediction is consistent with observations in Drosophila where blocking inhibition narrowed KC dynamic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by computational simulations (Figure 3) showing quantitative differences in input-output relationships. The prediction is consistent with published work in Drosophila (C51, C97) and vertebrate cortex (C50), providing cross-species validation of the principle. However, this prediction has not been directly tested in locust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C75"
+    ],
+    "result": "In vivo recordings reveal that GGN exhibits complex odor-evoked responses including novel patterns of hyperpolarization. GGN responses vary with odor identity and across animals, with approximately 25% of odor-GGN pairs showing reliable hyperpolarization. These complex responses include combinations of depolarization and hyperpolarization that were not previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56-C60, and C75 are directly supported by in vivo electrophysiological recordings (Figure 4) from multiple animals and odors. The quantification (40/169 odor-GGN pairs showing hyperpolarization) provides statistical support. These are novel observations that extend beyond previous characterizations of GGN responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Realistic GGN responses require both heterogeneous synaptic strengths and temporally structured PN activity patterns. Models with uniform synaptic strengths or simplified PN firing patterns produce unrealistic synchronized KC activity and isolated peaks in GGN. Only models combining lognormal-distributed synaptic strengths with temporally evolving PN activity patterns generate sustained GGN depolarization matching in vivo observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by systematic computational experiments (Figure 5) comparing different model architectures. The requirement for heterogeneous connectivity is well-justified by published data on synaptic strength distributions (C113). The temporal structure requirement is supported by published PN response patterns (C114). This reveals important network constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C98"
+    ],
+    "result": "Both simulations and in vivo recordings show that while most KCs respond sparsely (0-2 spikes), a small subset fires at higher rates. In simulations, removing high-firing KCs causes new KCs to become active, but in fewer numbers, demonstrating this is an emergent network property. High-firing KCs augment GGN depolarization to realistic levels. In vivo patch clamp recordings from 147 KCs confirm this distribution with a long rightward tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are supported by both computational modeling (Figure 6a, Figure 7) and extensive in vivo recordings (C68-C70, Figure 6b-g). The systematic deletion experiments (Figure 7) demonstrate the emergent nature of high-firing KCs. The agreement between model predictions and experimental observations strengthens both. Published reports (C98) provide additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C99"
+    ],
+    "result": "The model predicts a yet-undiscovered excitatory pathway to IG. In vivo recordings show IG firing rate increases before GGN returns to baseline, ruling out disinhibition as the sole mechanism. The model reproduces realistic GGN hyperpolarization by adding excitatory input to IG from either KCs or PNs. Spontaneous IG activity persists when PNs and KCs are silenced, suggesting intrinsic activity or another unknown source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C79-C81, and C85 represent a logical inference from in vivo data (Figure 8) showing IG activity timing inconsistent with simple disinhibition. The model prediction (C82-C83, Figure 9) demonstrates sufficiency of the proposed mechanism. The nerve-cutting experiment (C84, Figure 9j) provides additional constraint. However, the actual pathway remains unidentified, making this a prediction rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C37"
+    ],
+    "result": "GGN is characterized as a unique giant GABAergic non-spiking interneuron that receives input from all 50,000 KCs in the \u03b1 lobe and provides inhibitory feedback to KCs 400-500 \u03bcm away in the calyx. GGN also receives inhibitory input from IG in a reciprocal circuit. GGN depolarizes in response to odors, KC activity, and current injection, but never generates action potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19-C24, and C37 summarize established knowledge about GGN supported by multiple citations and the authors' own observations. These characterizations are well-established in the literature and confirmed by the current work. This provides essential context for interpreting the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The locust olfactory system transforms dense peripheral representations into sparse central representations. ORNs respond vigorously to odors, while KCs in the mushroom body respond with only 1-2 spikes. This transformation involves multiple mechanisms including GABAergic inhibition, with information encoded in both population identity and spike timing. KC sparseness arises from specialized membrane properties and feedback inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C18 summarize well-established features of the locust olfactory system, each supported by multiple citations to published work. This background information is accurate and provides necessary context for the study. These are not novel findings but rather established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Feedback inhibition from GGN sparsens KC responses by increasing spiking threshold and restricting spiking to brief temporal windows defined by antennal lobe oscillations. Similar mechanisms operate in vertebrate cortex and Drosophila, where inhibition expands dynamic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by citations to published work in both locust and other systems. This represents established knowledge about GGN/APL function that provides context for the current study's predictions about dynamic range expansion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Studies in Drosophila APL (GGN analog) show spatial heterogeneity in calcium activity, differential KC effectiveness in activating APL, diverse inhibition levels to KC subsets, and both local and global inhibition depending on stimulus strength. Electron microscopy confirms KC synapses throughout APL's arbor including the calyx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 summarize published findings from Drosophila that parallel and inform the locust work. All claims are supported by appropriate citations. This comparative information strengthens the interpretation of the locust results by showing conserved principles across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C111",
+      "C112"
+    ],
+    "result": "The model implements biologically realistic connectivity and activity patterns. Each KC receives input from 50% of 830 PNs (matching in vivo observations), with 77% of PNs spontaneously active at 2.6 spikes/s. During odor stimulation, 20% of PNs fire at 20 Hz with 20 Hz oscillations, and 10% are inhibited. This connectivity ensures KCs share approximately 50% of presynaptic PNs as observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 and C111-C112 describe model parameters based on published in vivo observations (C61 cites Jortner et al., 2007; C62-C64 based on Mazor and Laurent, 2005). The connectivity calculation (C112) is mathematically correct. These design choices are well-justified and appropriate for the modeling goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The GGN model uses biophysically realistic parameters: membrane resistivity of 33 k\u03a9-cm\u00b2 (from locust non-spiking neurons), membrane capacitance of 1 \u03bcF/cm\u00b2 (standard for cell membranes), and cytoplasmic resistivity of 100 \u03a9-cm (typical for neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 describe model parameters, each supported by appropriate citations to published measurements. These are standard values used in neuronal modeling and are appropriately justified for the GGN model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C100",
+      "C101"
+    ],
+    "result": "Prior work established that signals in GGN's \u03b1 lobe propagate to the calyx for global KC inhibition, that small depolarizations (2-5 mV) in non-spiking interneurons can affect postsynaptic neurons, that KCs require strong coincident PN input to spike, and that different KC classes differentially activate APL in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88, C100-C101 summarize relevant prior work, each supported by appropriate citations. These provide important context and justification for the current study's approach and interpretations.",
+    "result_type": "MINOR"
+  }
+]

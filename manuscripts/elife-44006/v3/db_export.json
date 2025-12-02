@@ -1,0 +1,1717 @@
+{
+  "submission": {
+    "id": "6036fd64-013c-4895-98d2-abbcde4fe5e1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:18:42.740503Z",
+    "updated_at": "2025-12-02T10:18:42.740503Z"
+  },
+  "content": [
+    {
+      "id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "submission_id": "6036fd64-013c-4895-98d2-abbcde4fe5e1",
+      "content_type": "manuscript",
+      "content_text": "# Context-dependent signaling of coincident auditory and visual events in primary visual cortex\n\n## Authors\n\n- Thomas Deneux<sup>1</sup> ([ORCID: 0000-0002-9330-7655](https://orcid.org/0000-0002-9330-7655))\n- Evan R Harrell<sup>1</sup> ([ORCID: 0000-0002-4376-9405](https://orcid.org/0000-0002-4376-9405))\n- Alexandre Kempf<sup>1</sup>\n- Sebastian Ceballo<sup>1</sup>\n- Anton Filipchuk<sup>1</sup>\n- Brice Bathellier<sup>1</sup> ([ORCID: 0000-0001-9211-1960](https://orcid.org/0000-0001-9211-1960)) \u2020\n\n### Affiliations\n\n1. Department for Integrative and Computational Neuroscience (ICN) Paris-Saclay Institute of Neuroscience (NeuroPSI), UMR9197 CNRS, University Paris Sud Gif-sur-Yvette France\n\n\u2020 Corresponding author\n\n## Abstract\n\nDetecting rapid, coincident changes across sensory modalities is essential for recognition of sudden threats or events. Using two-photon calcium imaging in identified cell types in awake, head-fixed mice, we show that, among the basic features of a sound envelope, loud sound onsets are a dominant feature coded by the auditory cortex neurons projecting to primary visual cortex (V1). In V1, a small number of layer 1 interneurons gates this cross-modal information flow in a context-dependent manner. In dark conditions, auditory cortex inputs lead to suppression of the V1 population. However, when sound input coincides with a visual stimulus, visual responses are boosted in V1, most strongly after loud sound onsets. Thus, a dynamic, asymmetric circuit connecting AC and V1 contributes to the encoding of visual events that are coincident with sounds.\n\n## Introduction\n\nNumerous multisensory illusions (Bonath et al., 2007; Maeda et al., 2004; Sekuler et al., 1997; Shams et al., 2000) show that audition and vision have strong perceptual bonds. For example, in the double flash illusion (Shams et al., 2000) a brief sequence of two sounds played during a single visual flash leads to the perception of two flashes. While the mechanisms of cross-modal perceptual interactions remain unclear, the anatomy of the mammalian brain shows multiple sites of auditory-visual convergence. One of the best studied integrative regions is the superior colliculus, where visual and auditory cues are combined in the networks computing gaze direction (Stein and Stanford, 2008; Witten and Knudsen, 2005). In cortex, associative areas such as those in the parietal cortex (Raposo et al., 2014; Song et al., 2017) are not the only cortical sites demonstrating auditory-visual convergence: increasing evidence shows that functional auditory-visual interactions exist already in primary sensory cortex (Ibrahim et al., 2016; Iurilli et al., 2012; Kayser et al., 2010; Kayser et al., 2008; Meijer et al., 2017). Moreover, axonal tracing studies indicate that numerous direct connections exist between primary auditory and visual cortex (Bizley et al., 2007; Driver and Noesselt, 2008; Falchier et al., 2002; Ghazanfar and Schroeder, 2006; Innocenti et al., 1988; Leinweber et al., 2017; Zingg et al., 2014), suggesting that auditory-visual cross-talk is present before the associative stage. The existence of these direct connections in mice has initiated some experimental inquiry into their potential role. Recent studies indicate that auditory to visual connections are much stronger than their reciprocals, and that they provide inputs to visual cortex that can modulate visually\u00a0driven activity (Ibrahim et al., 2016; Iurilli et al., 2012). Nevertheless, the computational role of primary auditory-visual connections remains unclear. First and foremost, information is lacking about the auditory features channeled from auditory to visual cortex and how they are integrated into the visual processing stream.\n\nMouse auditory cortex encodes a wide variety of acoustic features (Mizrahi et al., 2014). Spectral content (Issa et al., 2014; Kanold et al., 2014) and temporal features such as modulations of frequency (Trujillo et al., 2011) or intensity (Gao and Wehr, 2015) are the most well-studied, and intensity variations occurring at sound onsets and offsets (Deneux et al., 2016b; Scholl et al., 2010) are particularly salient auditory features. The question of how sound frequency information would map onto visual cortex is a difficult one, because of the lack of perceptual and ethological data on the particular frequency cues that could potentially be associated with particular visual stimuli in mice. In contrast, temporal coincidence is known to be used for perceptually assigning auditory and visual stimuli to the same object and is implicated in the double flash (Slutsky and Recanzone, 2001) and ventriloquist illusions (Bonath et al., 2007; Recanzone, 2009). Detection of temporal coincidence involves determining when sounds begin and end, and therefore might implicate neurons that encode particular intensity envelope features such as onsets and offsets. Also, covariations of the size of a visual input and sound intensity envelope are important for binding looming and receding auditory-visual stimuli (Tyll et al., 2013). This suggests that there could be preferential cross-talk between some intensity envelope features and visual information. We have recently demonstrated that envelope features such as onsets, offsets and sustained temporal dynamics are encoded in separate cells with further selectivity for different sound amplitudes. Some neurons respond only to high amplitude, \u2018loud\u2019 sound onsets, whereas others only respond to low amplitude, \u2018quiet\u2019 onsets, and neurons responding to offsets and sustained phases are also tuned to precise intensity ranges (Deneux et al., 2016b). Some neurons also encode combinations of these features. Such a coding scheme possibly allows constructing finer sound categories or interpretations. For example, mechanical shocks produce sounds that rise abruptly in intensity and tend to activate loud onset neurons, while more continuous events produce sounds that progressively ramp up in intensity and first activate quiet onset neurons. This complexity opens the possibility that some envelope features are more relevant to complement visual information related to external events. However, the precise intensity envelope features that characterize sound onsets and offsets which are transmitted through the direct connection between AC and V1 and how they impact visual processing remain unknown.\n\nTo address this question, we used two-photon calcium imaging and intersectional genetics to identify some of the intensity envelope features encoded by AC neurons that project to V1, and showed that V1-projecting neurons are predominantly tuned to loud onsets while other tested envelope features are less prominently represented, at least when comparing with supragranular cortical layers that lack V1-projecting cells. We also show that this cross-modal information impacts V1 in a context-dependent manner, with a net inhibitory effect in darkness and a net positive effect in the light, probably mediated by a subpopulation of L1 inhibitory neurons. Furthermore, we show that this mechanism also allows for a boosting of visual responses that occurs together with auditory events, particularly when those include loud sound onsets, increasing the saliency of visual events that co-occur with abrupt sounds.\n\n## Results\n\n### Abrupt sound onsets are a dominant feature encoded by V1-projecting neurons\n\nTo evaluate if particular on- and offset features are preferentially channeled from AC to V1, we compared the feature encoding in the overall population of AC neurons and in AC neurons projecting to the primary visual cortex. To identify these V1-projecting cells, we injected a canine adenovirus (CAV) expressing Cre, which is retrogradely transported through axons, into V1. In the same mice, we injected into AC an adeno-associated virus (AAV) expressing GCAMP6s (Chen et al., 2013b) in a Cre-dependent manner (Figure 1A). As a result, GCAMP6s expression was obtained exclusively in AC neurons that project to V1. Consistent with previous reports, we observed that these neurons were located predominantly in layer 5 (Figure 1B) (Ibrahim et al., 2016). As a comparison, in another set of mice, we injected an AAV1-syn-GCAMP6s virus to express the calcium reporter in AC neurons, independent of cell type. However, we selected cells according to their vertical localization: upper layer 5 (370\u2013430 \u00b5m, corresponding to the depth at which V1-projecting cells were imaged) and layer 2/3 (150\u2013250 \u00b5m depth). Using two-photon microscopy, we imaged calcium responses at single cell resolution in these three sets of mice (layer 2/3: 4616 neurons, 29 sessions, 11 mice; upper layer 5: 7757 neurons, 12 sessions, four mice; V1-projecting: 2474 neurons, 15 sessions, three mice) while playing white noise sounds ramping up or down in intensity (range 50 to 85 dB SPL).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig1-v3.jpg)\n\n**Figure 1.:** (A)\u00a0Viral expression strategy for GCAMP6s labeling of V1-projecting neurons in AC. (B) Epifluorescence image of an AC histological section (blue\u00a0=\u00a0DAPI, green\u00a0=\u00a0GCAMP6 s) showing V1-projecting neurons (cortical layers are matched to A). (C) Matrix of sound response correlation for all cells that could be assigned to a cluster for auditory cortex neurons that project to V1. The average response traces of each cluster (mean deconvolved calcium signal across cells) are shown on the right with a color code corresponding to the functional label given to the cluster. The bottom trace (black) shows the average response for the cells that were not assigned to a cluster (non- or weakly-responsive cells). (D) Top: Example of a 1 \u00d7 0.8 mm imaging field of view showing GCAMP6s-expressing neurons in upper layer 5 of auditory cortex (depth: 400 \u00b5m) with a magnification in the top-right inset. Bottom: Example raw calcium traces for four neurons during sound presentation. Red, black and gray traces are different samples for the same neuron. Scale bars 50% \u0394F/F. Right: Average response traces of each cluster obtained with neurons recorded in upper layer 5 (370 to 430 \u00b5m depth). The color code corresponds to the functional label used in C. The black trace stands for non- or weakly-responsive cells. (E) Average response traces of each cluster obtained with neurons recorded in layer 2/3. (F) Fraction of neurons corresponding to each cluster shown in C-E. The functional cell class distributions are significantly different across the three anatomical cell types (L5, L2/3 or V1-projecting) as assessed together and pairwise across cell type using the \u03c72 test of independence (p<10\u221264). The fraction of loud onset cells is significantly different (\u03c72 test of independence, performed pairwise across anatomical cell types p<10\u22129).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Matrix of sound response correlation for all cells that could be assigned to a cluster,\u00a0(A) for auditory cortex neurons that project to V1 (same as Figure 1C), (B) for auditory cortex neurons in upper layer 5 (370 to 430 \u00b5m depth), (C) for auditory cortex neurons in layer 2/3 (150 to 250 \u00b5m depth). The average response trace of each cluster (mean deconvolved calcium signal across cells) is shown on the right with a color code corresponding to the functional label given to the cluster. The bottom trace (black) shows the average response for the cells that were not assigned to a cluster (non- or weakly-responsive cells).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u00a0Sketch of optical imaging of intrinsic signals experimental setup. (B) Localization of AC by intrinsic imaging. Left, 5 mm cranial window on the right hemisphere of an anesthetized mouse under green LED light. Middle and Right, Mean intrinsic signal response map and mean\u00a0+\u00a0single trial response traces for White Noise stimulation (WN) from the mouse shown on the left. Responses traces are derived from the region of interest delineated on the left image. (C) Sketch of silicon probe-based electrophysiology experiments in awake mice. (D) Left: Cranial window of the same animal as in B, after placing the probe into AC. Recordings were usually performed at 400, 600 700 and 800 \u00b5m in a single penetration for each animal. Middle: A raster plot and a peristimulus histogram of the responses to up- and down-ramp presentations for a sample single unit. Right: Spike waveform and autocorrelogram of spike train for the same unit. (E) Correlation-based, template matching method to detect the six main response types observed in two-photon calcium imaging (onset, offset, tonic response with a quiet or loud intensity tuning). Because of the small number of cells, only these prominent, simple response types were selected. They capture also some of the composite response types (ON, Loud Tonic\u00a0+\u00a0OFF) which are more difficult to capture\u00a0using a binary model. For each unit (n\u00a0=\u00a0410 isolated units in 4 mice and 15 recording locations), the correlation between its average response histogram and the six templates (represented by dashed lines) was computed. Each cell was assigned to the template to which its response was most correlated provided that the correlation was above 0.4 (112 cells passed this threshold). (F) Mean response profiles smoothed with a Gaussian filter, \u03c3\u00a0=\u00a030 ms) for the different groups of cells identified by template matching. On the right, the\u00a0heat map depicts\u00a0the mean response of each unit to up- (left) and down- (right) ramps. Black and white triangles correspond to sound onsets and offsets respectively. Note that a small fraction of neurons classified as Loud or Quiet ON are equally responsive for both types of onset, corresponding to the ON cluster label defined for two-photon calcium imaging data.\u00a0(G) Histogram of the fractions of neurons that were assigned to each of the six templates shown together with the number of neurons in each group. The plot shows that Loud ON responses types are dominant in layer 5, as seen with two-photon calcium imaging (Figure 1F).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A)\u00a0Response profiles to up- and down-ramping white noise sounds (ramping range 60\u201385 dB SPL) and to 2s-long constant white noise stimuli at 50, 60 70 and 80 dB SPL, for 11 functional clusters of V1-projecting neurons labeled with different colors. Cell count per cluster is shown on the right. Some clusters respond to the same features and are labeled with similar colors (blue colors for Loud onsets, red colors for quiet onsets). The cluster labeled in black corresponds to all neurons that show no response to the stimuli. These clusters are derived from a dataset of 484 neurons, imaged in six sessions in two mice (different from the dataset shown in Figure 1). Gray shading: up or down ramping sound presentation. The cluster responding only to loud or only to quiet onsets or offsets in ramped stimuli display amplitude tuning with the constant stimuli. (B) Response profiles to constant 2s-long pure tones (4, 6, 8, 10, 15, 24 kHz) at 60 (left) and 80 dB SPL (right) for 10 functional clusters of V1-projecting neurons labeled with different colors. Cell count per cluster is shown on the right. We represented clusters responding to the same intensity range and sound epoch (onset or offset) with similar colors (blue colors for Loud onsets, red colors for quiet onsets). The cluster labeled in black corresponds to all neurons that show no response to the stimuli. These clusters are derived from a dataset of 412 neurons imaged in 6 sessions in two mice. This data shows that neurons responding to a particular sound epoch and intensity range can be themselves tuned to different frequencies.\n\nAfter automated ROI extraction (Roland et al., 2017), calcium signals were deconvolved (Bathellier et al., 2012; Yaksi and Friedrich, 2006) to obtain a temporally more accurate estimate of actual neuronal firing rates by reverse-filtering the slow decay dynamics of calcium signals and smoothed with a sliding window filter (190 ms) to reduce fast noise. The resulting averaged response profiles were then submitted to a hierarchical clustering (Deneux et al., 2016b) (see Materials\u00a0and\u00a0methods) to group together cells with similar response profiles and thereby identify different functional response types. In order to better appreciate the variety of responses, we over-clustered the data, based on the same homogeneity threshold for all datasets, so that most response types are represented by multiple clusters (Figure 1C\u2013E). The clustering also identified a number of weakly or non-responsive cells that were not included in the analysis. We obtained 19, 31 and 21 functional clusters explaining 52.3 \u00b1 7.2%, 51.9 \u00b1 6.4% and 51.3 \u00b1 6.5% of the total variance (mean\u00a0\u00b1STD) for V1-projecting, layer 5 and layer 2/3 cells, respectively. These high fractions of explained variance and the strong homogeneity of the clusters as seen in response correlation matrices (Figure 1C and Figure 1\u2014figure supplement 1) indicate that the clustering provides an accurate dimensionality reduction of the dataset. Within these clusters, we identified a maximum of 9 response types (Figure 1C\u2013E), including onset (ON), offset (OFF) and sustained (Tonic) responses with loud or quiet intensity tuning, and also clusters combining loud OFF and sustained responses (labeled as \u2018loud OFF\u00a0+tonic\u2019) or quiet and loud ON responses (labeled as \u2018ON\u2019), as described previously (Deneux et al., 2016b). Note that the terms \u2018loud\u2019 and \u2018quiet\u2019 are used here in their relative sense and correspond to high (~85 dB) and lower (~50 dB) sound pressure levels respectively, within the range used in this study. As a validation of the approach, many of these response types could also be observed in layer 5 targeted extracellular recordings in roughly the same proportion as in two-photon calcium imaging (Figure 1\u2014figure supplement 2). Interestingly, the distribution of these response types was different across layer 2/3, layer 5 and V1-projecting populations (Figure 1F). While some slight differences could be seen for almost all response types, the largest discrepancies were observed for neurons signaling loud onsets which represented 48% of the clustered neurons in V1-projecting cells, and only 36% and 21% in layer 5 and layer 2/3, respectively (Figure 1F). Thus, loud onset responses were enriched in layer 5 which contains most of the cells with direct projections to V1 and predominant in cells retrogradely labeled as V1-projecting neurons, indicating that AC is organized to favor the transfer of this particular sound envelope information even if other envelope features are also conveyed by V1-projecting cells (Figure 1C), as well as some sound frequency information (Figure 1\u2014figure supplement 3).\n\n### The sign of auditory responses in V1 depends on the illumination context\n\nHow do these structured AC inputs impact V1? One study in which mice received no visual input (dark environment) suggested an inhibitory effect (Iurilli et al., 2012) while another study in which mice received visual stimuli described excitatory effects (Ibrahim et al., 2016). Thus, the sign of AC inputs to V1 pyramidal cells could be context-dependent. To address this question, we performed two-photon calcium imaging in head-fixed awake mice (Figure 2A) using the calcium sensor GCAMP6s (Figure 2B) expressed in V1 through stereotactic injection of an AAV-syn-GCAMP6s viral vector. The recordings were done either in complete darkness or in front of a gray screen at low luminance (0.57 cd/m2; when screen is on, the diffuse light allows the mouse to see its immediate surroundings). To monitor gaze stability, pupil position and diameter were tracked during the experiment (Figure 2C,D). V1 was identified using Fourier intrinsic imaging (Marshel et al., 2011) as the largest retinotopic field in the visual areas (Figure 2E,F), and all two-photon imaging fields-of-view were mapped to the retinotopic field using blood vessel landmarks (Figure 2E). All neurons imaged outside V1 (Figure 2E,F) were analyzed separately.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig2-v3.jpg)\n\n**Figure 2.:** (A)\u00a0Sketch of the experimental setup. (B) (top) Example of a 0.5 \u00d7 0.5 imaging field of view showing GCAMP6s-expressing neurons in V1 (top with magnification in inset) and the ROIs that were automatically detected as putative neurons (bottom, see Materials\u00a0and\u00a0methods). (C) Examples of eye tracking images. (D) (top) Eye tracking showing a large saccade during a blank trial. The blue, purple, and yellow-red traces indicate apertures between eye lids, pupil diameter and x-y motion of pupil center. (bottom) Examples of raw GCAMP6s traces from individual neurons recorded concomitantly in V1 (each color is a single neuron, frame rate: 31 Hz) and population average (gray) showing saccade-related neuronal activity. (E) Example of a retinotopic map obtained with Fourier intrinsic imaging (see Materials\u00a0and\u00a0methods) and segregation between neuron locations inside (white) and outside (black) V1. The color code indicates the azimuth in the visual field. (F) Registered maps across nine mice.\n\nAs visual search behavior can be influenced by auditory stimuli (Stein and Stanford, 2008), we first measured whether sounds motivated eye-movements. We found that sounds occasionally triggered predominantly horizontal saccadic eye movements, especially sounds with loud onsets (Figure 3A). Sound-induced changes in pupil diameter were also observed (Figure 3B). In the lit condition, the saccades triggered responses in V1 (e.g. Figure 2D). Therefore, we excluded all trials with a saccade larger than mouse visual acuity (2\u00b0 of visual angle) from our analyses (Figure 3A). After this correction, we pooled together the activity of 18925 V1 neurons (35 sessions, nine mice) and observed that sounds alone trigger responses in supra-granular V1 neurons. The responses were stronger for the down-ramping sounds, similar to what we saw in the activity of V1-projecting AC neurons (Figure 3B,C). Strikingly however, we observed that the net population response was globally excitatory when mice were in the light and inhibitory when mice were in complete darkness (Figure 3B,C). The observed inhibition was seen consistently across cells and sound presentations, likely corresponding to a transient decrease in basal firing rates (Figure 3\u2014figure supplement 1). Interestingly, covering the contralateral eye was sufficient to obtain the same inhibition as in darkness (Figure 3\u2014figure supplement 2), suggesting a possible role of direct unilateral visual inputs in the context dependence of auditory responses in V1. As a sanity check, we verified that unfiltered micro-saccades did not cause the excitatory effects, and indeed the amplitude of these small saccades was not correlated with sound responses (Figure 3E). Also, excitatory responses to sounds in the light cannot be attributed to sound-induced pupil dilation as these movements occurred after V1 responses (Figure 3B). Taken together, our observations corroborate the idea that the sign of V1 auditory responses depends on the visual context (darkness vs dimly lit visual scene).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig3-v3.jpg)\n\n**Figure 3.:** (A)\u00a0(left) Horizontal and vertical pupil movements recorded during three presentations of the down-ramp (gray shading). (center and right) Distribution of saccades across all mice (n\u00a0=\u00a07) and trials. The blue portion indicates trials where pupil movement did not exceed visual acuity in the mouse (2\u00b0 of visual angle: 84% of all trials). The trials with larger eye movements (red) were removed from the analysis (trial filtering). Inset: average saccade responses to up-ramps and down-ramps, before (orange) and after (gray) trial filtering.\u00a0(B) Averaged deconvolved calcium traces of V1 neurons in the light (light green) and in the dark (dark green) (6207 neurons, n\u00a0=\u00a017 sessions in seven mice). The purple line is the average pupil diameter. Left: Down ramp responses, Right: Up ramp responses. Up- and down ramping gray shadings indicate the timing of up- and down ramping sounds. (C) Average V1 responses are larger in the light than in the dark (n\u00a0=\u00a017 recording sessions in seven mice, Wilcoxon signed rank test). (D) Smoothed maps (Gaussian filter, \u03c3\u00a0=\u00a0320 \u00b5m) of the local responses to the down-ramping sound, averaged across sessions and animals after registration with respect to the retinotopic map. (E) Single trial saccade amplitudes (below the 2\u00b0 visual acuity threshold) do not correlate with the amplitude of V1 population responses to sounds (Pearson correlation coefficient 0.05, p=0.42). (F) (top) Mean deconvolved signal for 2474 V1 projecting cells recorded in AC in light and in dark conditions. (bottom) Average onset response (0 to 500 ms) to up- and down-ramps for each recording session, showing no significant difference between light and dark conditions (Wilcoxon sign test, p=0.6 and p=1, n\u00a0=\u00a015 sessions).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Mean V1 population responses to a down-ramping sound in lit and dark conditions measured without neuropil subtraction (top), or with the conventional neuropil subtraction (factor 0.7 applied to neuropil signal, middle) or with a larger correction (factor 1 applied to neuropil signal, bottom). In all cases, a clear decrease in fluorescence is observed in the dark. (B) Heat map showing the deconvolved and raw calcium signal responses to the down-ramp for all recorded V1 neurons. Inhibition is observed robustly across cells. (C) Single-trial, raw calcium signal responses to a down-ramp (left) and spontaneous activity (right) for a cell inhibited (top) and another excited by the sound (bottom). The inhibition corresponds to both a decrease in fluorescence and a decrease in the occurrence of spontaneous positive calcium events. (D) Simulations of GCAMP6s \u0394F/F signal for Poisson spike trains at 1 Hz and 2 Hz (see on top raster plots for 40 instantiations), with a 1 s period where all spikes are removed (inhibition). In the simulation, each spike produced a transient of peak amplitude \u0394F/F\u00a0=\u00a010% and modeled as a difference of exponentials with rise and decay time constants of 70 ms and 1870 ms respectively. All parameters are derived from Deneux et al. (2016a). All transients were summed (convolution of the spike train with the single spike kernel) and Gaussian white noise (5% standard deviation) was added to produce the simulated calcium traces. The plots, for the 40 spike trains shown on the top, show that a 1 s firing pause during a low Poisson firing rate yielded trial-averaged (black trace) and single-trial traces highly compatible with inhibition traces observed in vivo, for\u00a0example in C. Thus, inhibitory responses observed in calcium signals from V1 neurons could result from the downward modulation of a low, basal firing rate (of the order of 1 Hz) in each cell commonly observed in awake cortex (Hrom\u00e1dka et al., 2008).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** This suggests that the absence of visual inputs to the visual hemifield corresponding to the imaged V1 area is sufficient to obtain sound-induced inhibition.\n\nTo test whether this context-dependence was a general property of auditory inputs to non-auditory cortical areas or if it was specific to auditory inputs impacting V1, we measured auditory responses in the secondary visual or associative areas next to V1 which also receive inputs from AC (Zingg et al., 2014). Unlike V1, these areas displayed excitatory responses in\u00a0both the lit and dark conditions\u00a0(Figure 3D). We then wondered whether the context-dependence was a property arising in the circuit of V1 or if it is due to a modulation of auditory inputs by the light context. We imaged sound responses in V1-projecting neurons of auditory cortex specifically labeled using the CAV-Cre retrograde virus approach (see Figure 1). We observed no response modulation between the dark and lit conditions (Figure 3F), indicating that context-dependent modulation arises in V1.\n\nFinally, we verified that, as suggested by previous studies (Ibrahim et al., 2016; Iurilli et al., 2012), context-dependent auditory inputs to V1 are mediated by direct AC to V1 projections. Injections of the GABA-receptor agonist muscimol into AC during imaging almost completely abolished auditory responses in V1 and in the neighboring areas (Figure 4 and Figure 4\u2014figure supplement 1). We also used targeted chemogenetic inhibition (systemic CNO injections) of V1-projecting neurons in AC, expressing the hM4Di channel by co-injection of a CAV-Cre virus in V1 and an AAV8-flex-hM4di in AC (Figure 4). This produced a decrease of sound responses which was consistent across sound repetitions for the imaged neural population (Figure 4C). However, probably because this strategy impacts an incomplete subset of all V1-projecting neurons, the effects were smaller and more variable across experiments (Figure 4\u2014figure supplement 1). Taking these results together, we conclude that V1 implements a mechanism that inverts the impact of AC inputs depending on whether or not visual information is available.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig4-v3.jpg)\n\n**Figure 4.:** (A)\u00a0Schematics of the AC inactivation experiment (blue) and of the chemogenetic inactivation experiment in which V1-projecting neurons in AC are specifically silenced (magenta). (B) (top) Mean deconvolved calcium signal of V1 neurons in dark (dark green) or in light (light green) during saline injections (n\u00a0=\u00a0765 neurons in four experiments and three mice) or muscimol inactivation of AC (n\u00a0=\u00a0825 neurons in five experiments, same three mice). (bottom) Same as top graphs but for chemogenetic inactivation of V1-projecting neurons in AC (same n\u00a0=\u00a0743 neurons before and after CNO activation, in three experiments and two mice). Shading indicates SEM. (C) Mean deconvolved calcium signal from the population responses shown in B for the saline (green) versus muscimol (blue) conditions and for Control (green) versus CNO (magenta) conditions (computed from 200 to 500 ms after sound onset for the negative responses in the dark, and from 200 to 1000 ms for the positive response in the light). The p-values are derived from a two-sided Wilcoxon sign test (n\u00a0=\u00a040 stimulus repetitions).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** p-values indicate the result of a one-sided Wilcoxon signed-rank test for chemogenetic (n\u00a0=\u00a03, magenta) and muscimol (n\u00a0=\u00a05, blue) experiments.\n\n### Layer 1 contains an interneuron sub-population delivering context-dependent inhibition\n\nTo investigate the circuit mechanisms of this context-dependence, we reasoned that the occurrence of context-dependent inhibition in L2/3 neurons could result from a cortical inhibitory population that receives auditory inputs but is itself inhibited in light condition. To identify such a population, we used GAD2-Cre x flex-TdTomato mice injected with AAV-syn-GCAMP6s to image identified excitatory and inhibitory neurons (Figure 5A) in L1 and L2/3 where AC to V1 projections are concentrated (Ibrahim et al., 2016). We observed that in layer 2/3 both excitatory (n\u00a0=\u00a04348) and inhibitory neurons (n\u00a0=\u00a0726) were globally inhibited by sounds in the dark and excited in the light, while the layer 1 interneuron population seemed globally unaffected in the dark and excited in the light (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig5-v3.jpg)\n\n**Figure 5.:** (A)\u00a0In vivo two-photon images of GAD2-positive V1 neurons in L1 and L2/3 expressing td-Tomato. Superimposed are the contours of the active regions of interest identified by GCAMP6s imaging, blue: putative pyramidal cells, white: putative GABAergic cells. (B) Mean responses to the down-ramping sound (gray shading) for inhibitory and excitatory neurons in L2/3 and L1. (C) Fraction of neurons significantly excited (red) or inhibited (blue) by sounds for each layer and cell type (Wilcoxon rank sum test, p<0.01: the dashed lines indicate chance level). (D) Scatter plot of the mean responses of all L1 inhibitory neurons to the down-ramping sound in the light against in the dark. Small gray dots indicate neurons that do not significantly respond in any condition. Larger, colored dots indicate significantly responding neurons. Dark blue indicates neurons significantly inhibited in the dark and responding more in light than in dark. Dark red dots indicate neurons significantly activated in the dark and responding more in dark than in light. Neurons responding equally in dark and light are marked with light blue (negative response) and light red (positive response) dots. Neurons that are non-responsive in the dark but respond more or less in the light are marked in white and dark, respectively.\u00a0(E) Single trial deconvolved traces for an L1 interneuron responding to a down-ramping sound (gray shading) in the dark and inactive in the light. (F) Fractions of neurons responding significantly more in light than in dark (blue) or more in dark than in light (red) (Wilcoxon rank sum test, p<0.01). (G) Fraction of neurons that can mediate context-dependent inhibition in each layer that\u00a0is interneurons significantly excited by sounds in the dark and responding significantly less in the light than in the dark. (H) Simplified schematic of the proposed mechanism for context-dependent auditory responses in V1. Cells unaffected by visual context are not displayed.\n\nHowever, the population trend concealed functionally distinct subpopulations. When we tested for significant positive or negative responses in the dark in single neurons (Wilcoxon rank-sum test, p<0.01), we found a large fraction of neurons significantly inhibited, but also, a subpopulation of 12.8% of all L1 inhibitory neurons that were significantly activated in the dark (Figure 5C). This positive response was rare in L2/3 with only 2.1% of inhibitory and 1% of excitatory cells significantly activated (chance levels\u00a0=\u00a01%, Figure 5C). When plotting the responses of L1 neurons in the dark against their responses in the light (Figure 5D), it is apparent that the L1 neurons that are excited by sounds in the dark tend to be less excited in the light (e.g. Figure 5E). In contrast, L1 neurons inhibited or unaffected by sounds in the dark became more activated in the light (Figure 5D). Consistently, statistical assessment showed that a significant percentage (5.3%) of L1 neurons (Wilcoxon rank-sum test, p<0.01) respond less in light than in dark (Figure 5F), and that almost all these neurons are significantly excited in the dark (4.9%, Figure 5G). In contrast, based on the same tests, there was no significant population of L2/3 neurons that responded less in the light than in the dark (Figure 5F,G). Thus, we conclude that layer 1 contains the only supragranular subpopulation of GABAergic neurons that can provide a context-dependent, sound-induced inhibition gated by visual inputs. These neurons are thus good candidates to mediate the context-dependence of sound responses observed in the bulk of L2/3 V1 neurons (Figure 5H).\n\n### Loud onsets boost the representation of coincident visual events\n\nAs we have shown that sounds can excite neurons in V1 in lit conditions, we next wanted to know the impact of AC inputs to V1 on the representations of coincident visual inputs. To this end, we recorded 9849 L2/3 neurons (23 sessions, seven mice) in mice injected with AAV-syn-GCAMP6s in V1. In these experiments, we presented the up-ramping and down-ramping auditory stimuli coincidently with a white looming or receding disk on the screen (sounds and visual stimuli were 2 s duration). The loudspeaker was placed such that auditory and visual stimuli came from the same direction. Unimodal stimuli were also delivered to assess additivity for the bimodal conditions.\n\nWe first observed that 11% of the V1 neurons displayed significant (Generalized Linear Model, p<0.05) supra-additive boosting of their visual responses when coincident with the loud onset of down-ramps (e.g. Figure 6A), an effect even visible at the population level (Figure 6B) and dependent on AC as assessed with muscimol silencing (Figure 6D,E). Because looming and receding disks trigger different types of responses in V1, we performed a clustering in order to identify the main types of visual responses and sound-induced modulations (see Materials\u00a0and\u00a0methods, note that only the V1 neurons with high signal-to-noise and sufficient number of trials without eye movement, n\u00a0=\u00a0499, were clustered). This analysis identified seven distinct clusters (Figure 6C) capturing 49.5 \u00b1 11.2% of the response variance. Four clusters (#1,4,6,7; 358 neurons) responded more to looming than receding disks, and three clusters (#2,3,5; 141 neurons) had the opposite preference. Four clusters (#1,2,6,7) were tightly direction-specific and responded only for their preferred stimulus, at its beginning or end, while the three others (#3,4,5) were less specific to direction, but also responded to specific parts of the stimulus (clusters 3 and 4: larger disk; cluster 5: smaller disk). This specificity was probably due to the location in the retinotopic field of the neurons with respect to the stimulus center.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig6-v3.jpg)\n\n**Figure 6.:** (A)\u00a0Sample neuron in V1. Raw GCAMP6s traces for a visual stimulus (blue), a sound (green) and a combination of both (red) show a large neuronal response for the bimodal condition compared to the additive prediction (dashed black line) based on unimodal responses. Individual trials (thin lines) and their average (thick lines) show that the multisensory responses are robust for this neuron. (B) Average deconvolved calcium responses (mean\u00a0\u00b1sem) in V1 for up- and down-ramping sounds (green), looming and receding visual stimuli (blue) and the four bimodal combinations. Black dashed lines: linear prediction. (C) Uni- and bimodal responses, displayed as in B., of the seven different functional cell types identified by hierarchical clustering. (D) Average deconvolved responses to the receding disk in absence (blue) and presence (red) of a simultaneous down-ramping sound, upon saline injection in AC (left, n\u00a0=\u00a0765 neurons in four experiments and three mice) and upon muscimol inactivation of AC (right, n\u00a0=\u00a0825 neurons in five experiments, same three mice). (E) Distribution of AC inactivation effects across experiments for the data shown in D, one-sided Wilcoxon signed-rank test (n\u00a0=\u00a05). Throughout the figure the ramping green shadings mark the presentation of up- or down-ramping sounds, and the ramping blue shadings the presentation of looming and receding visual stimuli.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Population responses (3076 neurons, nine sessions, four mice) to the four unimodal stimuli and four bimodal stimuli in the area anteromedial to V1 (see Figure 3D). Down-ramping sounds alone elicit strong onset responses which at the population level sum linearly with visual responses. (B) Result of the clustering of uni- and multimodal responses in the anteromedial area. Six clusters were identified, five of which integrate mostly linearly auditory and visual responses and only one (bottom right) shows non-linear auditory-visual responses. Interestingly also, one cluster shows auditory responses that are stronger than visual responses (top right), corroborating the idea that auditory input to the associative region anteromedial to V1 has also a driving role and not only a modulatory role as we observe in V1.\n\nThe bimodal conditions revealed pronounced supra-additive responses. Down-ramping sounds boosted the responses of all cell clusters that responded to the onset of visual stimuli. (Figure 6C, black arrows for clusters 1\u20135, bootstrap test, see Materials\u00a0and\u00a0methods). Very little boosting was observed with the quiet onset of up-ramps (Figure 6C), consistent with its reduced representation in AC to V1 projections (Figure 1). Responses occurring towards the end of the stimulus were minimally (although significantly, cluster 5) boosted, probably because they correspond to auditory features (\u2018loud and quiet tonic\u2019) that have less of an impact on V1 (see Figure 3B). Our data suggest that visual responses in V1 are boosted preferentially by the coincidence of loud sound onsets with respect to other basic envelope features. Note that a moderate response suppression was also observed, but only in cluster 7 (Figure 6C, blue arrow). Moreover, the boosting of visual responses appeared to be a strong feature of V1, as the same analysis identified only one supra-linear cluster out of six clusters in the associative area medial to V1 (Figure 6\u2014figure supplement 1).\n\n### Interplay between AC inputs and neuronal non-linearities can explain all auditory-driven responses in V1\n\nHow can the same circuit implement context-dependent sound-driven inhibition and a boosting of specific visual responses? To propose a mechanism, we established a minimal model in which AC projections excite both a population of excitatory neurons (pyramidal cells) and a population of interneurons in V1 (putatively, the identified L1 population), consistent with connectivity studies (Ibrahim et al., 2016). The interneuron population directly inhibits excitatory neurons in our model (Figure 7A). We used two critical mechanisms to render interneurons context-dependent: (i) a connection which inhibits interneurons in the presence of visual inputs (light modulation, Figure 7A, and (ii) a non-linear response function (response threshold). Then, provided that they are close to activation threshold (i.e. spike threshold) in the dark and that inhibition by visual inputs brings them well below threshold in the lit condition, interneurons will be less active in the light than in the dark. As a result, the excitatory population experiences a dominance of sound-driven excitation in the light and of sound-driven inhibition in the dark (Figure 7B,C) as observed experimentally. Biophysically, this mechanism requires a tonic inhibitory drive to the identified subset of L1 interneurons which could be provided by another inhibitory population. Interestingly, we observed that the subpopulation of L1 interneurons that are less responsive to sounds in light also have a smaller baseline fluorescence in light, an effect that is not observed for other L1 interneurons (Figure 7B). This could be a possible manifestation of the tonic drive hypothesized in our model.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/44006/elife-44006-fig7-v3.jpg)\n\n**Figure 7.:** (A)\u00a0Sketch of a minimal model for the switch between negative and positive sound responses in dark vs in light and boost of visual responses to sounds. An inhibitory (I-neurons) population endowed with a non-linear response function (bottom) receives a positive auditory input and a negative visual input. When both inputs are active (lit condition), the auditory drive to I-neurons is below threshold and no inhibition is delivered to the excitatory non-linear neuronal population (E-neurons). In the dark condition, the visual modulation is reduced releasing sound triggered inhibition. Both I- and E-neurons are non-linear with a low and a high output gain. Auditory and visual inputs are typically converted with a low-gain, while coincident auditory and preferred-visual inputs pass the threshold and yield a high-gain output (boosting). (B) Input currents and output response of I-neurons during auditory simulation in light and dark conditions. Inset: Change in baseline fluorescence between light and dark conditions in L1 interneurons. A significant baseline decrease in light is observed for interneurons that are more sound responsive in dark than in light (i.e.\u00a0putative\u00a0I-neurons,\u00a0red) as compared to interneurons that are more responsive in the light (Wilcoxon rank sum test, p=0.00989, n1\u00a0=\u00a057 \u2018dark\u00a0<light\u2019 cells, n2\u00a0=\u00a014 \u2018light\u00a0<dark\u2019 cells). (C) Same for E-neurons. (D) Input currents and output response of E-neurons during visual simulation alone (blue) and bimodal stimulation for a sub-threshold (non-preferred) visual input. Superimposed are the auditory responses in light and dark from panel (C) (E)\u00a0Same as in D. but for a preferred, supra-threshold visual input.\n\nWe then showed that the same model can reproduce boosting of visual responses by sounds (Figure 7D,E) if excitatory neurons also have a simple non-linear response function. When excitatory neurons have a low, subthreshold output gain and a high, supra-threshold gain (Figure 7A), it is possible to reproduce the observations that the response to sound alone (low gain regime) is weaker than the bimodal boosting effect (high-gain regime) (Figure 7D\u2013E). With this design, we also reproduced the observation that boosting mainly occurs for the preferred visual stimulus (Figures 6C and 7D\u2013E), provided that the auditory and non-preferred visual inputs are driving excitatory neurons in the low-gain regime (Figure 7D) while the preferred input brings excitatory neurons close to or above the high-gain threshold (Figure 7E). In this case, the auditory response sums with a high gain for the preferred stimulus and a low gain for the non-preferred. While less conventional than a regular spike threshold, this mechanism could be biophysically implemented with\u00a0non-linear dendritic processing. Apical dendrites of layer 2/3 pyramidal cells are known to produce large calcium spikes which boost somatic output when somatic activity coincides with excitatory inputs arriving in the apical tree (Larkum et al., 2007). As AC axon terminals are concentrated in layer 1 where they likely contact the apical dendrites of pyramidal cells, sound-driven boosting of visual responses could rely on this dendritic phenomenon.\n\nTaken together, our data and modeling indicate that a minimal circuit including a direct excitation from auditory cortex onto L2/3 pyramidal cells and an indirect inhibition via a subpopulation of L1 interneurons is sufficient to provide a context-dependent auditory modulation that emphasizes visual events coincident with loud sound onsets.\n\n## Discussion\n\nUsing two-photon calcium imaging in identified excitatory and inhibitory neurons during auditory and visual stimulation, we demonstrated three important features of AC to V1 connections. First, we showed that V1-projecting neurons have a different bias in the distribution of sound envelope features they encode, as compared to layer 2/3 neurons in AC and also, although to a lesser extent, as compared to layer 5 in which they are located. In particular, the V1-projecting neuron population predominantly encodes loud sound onsets. Second, they are gated by a context-dependent inhibitory mechanism likely implemented by a subpopulation of L1 interneurons. Third, their impact on V1 representations is to produce a strong boosting of responses to dynamical visual stimuli coincident with different sound envelope features, particularly with loud sound onsets.\n\nThe shifts in the distribution of sound envelope features that we observed across layers and cell subpopulations is an interesting case of coding bias in different neural populations of auditory cortex (Figure 1). As observed earlier, in layer 2/3, there is a balance between the main neuron types that signal the beginning and the end of sounds with equivalent fractions of neurons responding to quiet or loud onsets and loud offsets (Figure 1F, note that \u2018tonic\u00a0+loud OFF\u2019 neurons are included in this count. Quiet offset neurons are rare and not robustly detected across datasets. Detection of tonic responses by clustering is also variable.). In upper layer 5, the distribution becomes more biased toward loud onsets at the expense of offset neurons, a trend that is further increased in the layer 5-located V1-projecting cells in which half of the neurons respond to loud onsets and 10% of the cells to loud offsets. Similar results have been found in somatosensory cortex for neurons projecting to secondary somatosensory or motor cortex (Chen et al., 2013a). In AC, it is well-established that specific acoustic features are related to the localization of neurons tangentially to the cortical surface in different subfields (Kanold et al., 2014; Schreiner, 1995; Schreiner and Winer, 2007) and that, at least in higher mammals such as cats, particular auditory cortical fields may play different functional roles in behavior, such as sound localization (where) or identification (what) (Lomber and Malhotra, 2008). Our results show that projection specificity can also be a determinant of feature selectivity, at least for some intensity modulation features at sound onsets and offsets.\n\nAs a result of these fine adjustments of feature distributions, layer 2/3 neurons in V1 are more impacted by abrupt sounds with loud onsets (e.g. down-ramps) than by sounds with softer onsets (e.g. up-ramps). This asymmetry is particularly striking for excitatory effects seen in light or with visual stimuli (Figures 3B and 6), but less pronounced for inhibitory effects in the dark (Figure 3B). It is thus possible that the projection targets also depend on encoded features. For example, L2/3 V1 pyramidal cells may receive projections almost exclusively from AC loud onset neurons while interneurons providing inhibition in the dark still receive a significant fraction of quiet onset and loud offset inputs.\n\nThe context-dependence of sound-triggered inhibitory and excitatory auditory responses in V1 is interesting in two respects. First, it reconciles conflicting reports of sound-induced inhibition or excitation in V1 (Ibrahim et al., 2016; Iurilli et al., 2012). Second, context-dependent inhibition could serve to decrease V1 activity in the dark when visual information is irrelevant for sound source localization, while leaving possibilities to integrate auditory and visual information in light conditions. The context-dependence of auditory responses in V1 is reminiscent of the recent observation that AC to V1 projections, activated by loud sounds and acting through L1, boost preferred orientation responses in V1 and inhibit non-preferred orientations (Ibrahim et al., 2016). The two effects share several properties including selectivity to high sound levels, the dominance of inhibition for weaker visual inputs and of excitation for stronger visual inputs, and the involvement of L1 neurons for mediating cross-modal inhibition. The main discrepancy is the apparent lack of visual input specificity of our illumination-dependent excitation of V1 neurons by AC inputs alone (i.e. no inhibition of responses to non-preferred visual stimuli). This could be due to differences in the type of visual inputs used. One important result appearing in our data is that only a fraction of all L1 interneurons have response properties compatible with the function of releasing a context-dependent, sound-triggered inhibition while these properties are not found in L2/3 neurons (Figure 5C,F,G). Thus, the silencing of visual processing by sounds in the dark is not a generic function of L1 interneurons, compatible with the observation that only VIP-negative interneurons receive AC inputs in V1 (Ibrahim et al., 2016) and the observation that L1 interneurons serve other functions (Hattori et al., 2017), such as disinhibition of L2/3 in various contexts (Fu et al., 2014; Lee et al., 2013; Letzkus et al., 2015; Pfeffer et al., 2013; Pi et al., 2013). An interesting question that cannot be addressed with the current data is how the specific L1 interneurons that mediate sound-induced inhibition are themselves inhibited in the presence of visual inputs. Several putative mechanisms are compatible with the data, including disinhibition. We can however exclude that visual responses in AC (Morrill and Hasenstaub, 2018) modulate a fraction of the AC input to V1, based on context-independent responses of retrogradely identified V1-projecting cells (Figure 3F).\n\nInterestingly, our data obtained outside V1 indicate that, independent of the exact mechanism of context-dependence of auditory responses, this phenomenon is restricted to V1 (Figure 3D). This indicates that AC projections to associative areas impact the local circuit differently than in V1. A possible explanation could be that projections to excitatory neurons are favored or that the layer 1 interneurons that provide strong sound-driven inhibition in V1 in the dark are nonexistent or excluded by AC projections in associative areas.\n\nAnother important phenomenon observed in our data is the boosting of visual responses coincident with loud sound onsets (Figure 6), an effect that could even potentially be amplified if visual stimuli led sounds by a few tens of milliseconds as observed in monkey auditory cortex (Kayser et al., 2008). Our model suggests that this can result directly from the non-linear summation of visual and auditory inputs in V1 pyramidal cells, while sound-triggered inhibition is abolished by the visual context (Figure 7). The large amplitude of the sound-induced boosting as compared to the weaker responses observed when sounds are played without coincident visual input (Figures 3 and 5 vs Figure 6, see also Figure 7) points toward a threshold mechanism, allowing for amplification of the auditory input only if sufficient visual input concomitantly arrives. Such a gated amplification mechanism could be implemented directly in L2/3 pyramidal neurons using the direct inputs they receive from auditory cortex (Ibrahim et al., 2016; Leinweber et al., 2017). For example, amplification of L1 input by coincident somatic inputs triggering calcium spikes in apical dendrites has been described both in L5 (Larkum et al., 1999) and L2/3 (Larkum et al., 2007) pyramidal cells. While this is a good candidate cellular mechanism for the observed boosting effect, we cannot exclude alternative or complementary mechanisms such as a disinhibition mediated by a subpopulation of L1 interneurons (Ibrahim et al., 2016; Lee et al., 2013; Pfeffer et al., 2013; Pi et al., 2013), a different population from the subpopulation providing direct inhibition (Figure 5). Also, as down-ramping sounds are startling stimuli, a cholinergic input to visual cortex, known to increase cortical responses via disinhibition (Fu et al., 2014; Letzkus et al., 2015; Letzkus et al., 2011) could also contribute to modulation of visual responses by sounds in V1. Independent of the mechanism, our data show that sound-induced boosting is a strong effect in V1 which tightly relates to coincidence with the loud onsets of sounds. An interesting hypothesis for the role of this mechanism, among other possibilities, is that this effect could provide a powerful way to highlight, in visual space, the visual events potentially responsible for the sound, and thus might be an element of the cortical computations related to the localization of sound sources (Stein and Stanford, 2008).\n\n## Materials and methods\n\n### Animals\n\nAll animals used were 8\u201316 week-old male C57Bl6J and GAD2-Cre (Jax #010802) x RCL-TdT (Jax #007909) mice. All animal procedures were approved by the French Ethical Committee (authorization 00275.01). Animals were allocated in experimental groups without randomization and masking, but all scoring and analysis is done with computer programs.\n\n### Two-photon calcium imaging in awake mice\n\nThree to four weeks before imaging, mice were anaesthetized under ketamine medetomidine. A large craniotomy (5 mm diameter) was performed above the right primary visual cortex (V1) or the right auditory cortex (rostro-caudal, lateral and dorso-ventral stereotaxic coordinates from bregma, V1: \u22123.5, 2.5, 1 mm; AC: \u22122.5, 4, 2.2 mm). For the imaging of the auditory cortex (AC), the right masseter was removed before the craniotomy. We typically performed three to four injections of 150 nl (30 nl.min\u22121), AAV1.Syn.GCaMP6s.WPRE virus obtained from Vector Core (Philadelphia, PA) and diluted x10. For imaging V1-projecting neurons in AC, a stereotaxic injection of 5x diluted CAV-2-Cre viral solution (obtained from the Plateforme de Vectorologie de Montpellier) was performed just before the AC craniotomy. The craniotomy was sealed with a glass window and a metal post was implanted using cyanolite glue followed by dental cement. A few days before imaging, mice were trained to stand still, head-fixed under the microscope for 30\u201360 min/day. Then mice were imaged 1\u20132 hr/day. Imaging was performed using a two-photon microscope (Femtonics, Budapest, Hungary) equipped with an 8 kHz resonant scanner combined with a pulsed laser (MaiTai-DS, SpectraPhysics, Santa Clara, CA) tuned at 920 nm. We used 20x or 10x Olympus objectives (XLUMPLFLN and XLPLN10XSVMP), obtaining a field of view of 500 \u00d7 500, or 1000 \u00d7 1000 microns, respectively. To prevent light from the visual stimulation monitor from entering the microscope objective, we designed a ring silicon mask that covered the gap between the metal chamber and the objective. Images were acquired at 31.5 Hz during blocks of 5 s interleaved with 3 s intervals. A single stimulus was played in each block and stimulus order was randomized. All stimuli were repeated 20 times except drifting gratings (10 repetitions).\n\nDrifting square gratings (2 Hz, 0.025 cyc/\u00b0) of eight different directions (0\u00b0 from bottom to top, anti-clockwise, 45\u00b0, 90\u00b0, 135\u00b0, 180\u00b0, 225\u00b0, 270\u00b0, 315\u00b0), and a size- increasing (18\u00b0 to 105\u00b0 of visual angle) or decreasing white disk over a black background were presented on a screen placed 11 cm to the mouse left eye. The luminance of the black background and white disks was 0.57 and 200 cd/m2,\u00a0respectively. The screen (10VG BeeTronics, 22 \u00d7 13 cm) was located 11 cm from the contra-lateral eye, thus covering 90\u00b0 x 61\u00b0 of its visual field including some of the binocular segment. For auditory cortex recording, we used 250 ms constant white noise sounds at four different intensity modulations, and two up- and down-intensity ramping sounds between 50 and 85 dB SPL. For all sounds, the intensity envelope was linearly ramped from or to 0 during 10 ms at the beginning and the end of the sound. Note that microscope scanners emit a constant background sound of about 45 dB SPL. For visual cortex experiments, we used only the two intensity ramps and added two frequency modulated sounds, going linearly from 8 kHz to 16 kHz and vice versa. Up- and down- amplitude ramps were combined with the increasing and decreasing disks to form four multisensory stimuli. The loudspeaker was placed just next to the stimulation screen, facing the contralateral eye. All stimuli were 2 s long. Auditory and visual stimuli were driven by Elphy (G. Sadoc, UNIC, France). All sounds were delivered at 192 kHz with a NI-PCI-6221 card (National Instruments) an amplifier and high-frequency loudspeakers (SA1 and MF1-S, Tucker-Davis Technologies, Alachua, FL). Sounds were calibrated in intensity at the location of the mouse ear using a probe microphone (Bruel and Kjaer).\n\nFor V1 recordings, auditory only stimulations were performed in two different contexts: either in complete darkness (screen turned off in the sound and light isolated box enclosing the microscope) or in dim light (screen turned on with black background, luminance measured to 0.57 candela per square meter).\n\n### AC inactivation experiments\n\nTo perform muscimol inactivation of AC during V1 imaging a stereotaxic muscimol injection (100 or 150 nL, 1 mg/mL) was performed before imaging under light isoflurane (~1.5%) anesthesia via a hole drilled through cement and bone on the lateral side of the V1 cranial window. The hole was sealed with Kwik-Cast and the animal was allowed to recover 20 min from anesthesia in its cage before being placed under the microscope and imaged during auditory-visual stimulation. Saline controls were performed using the same procedure on the next day, imaging the same V1 region and a similar optical plane (the exact same neurons were not tracked across days but the imaging plane was as similar as possible). To perform chemogenetic inactivation of V1 projecting neurons in AC during V1 imaging, three stereotaxic injections of undiluted AAV8-hSyn-DIO-hM4D(Gi)-mCherry virus were done in AC and immediately after CAV-2-Cre virus (5x) was co-injected with the AAV1.Syn.GCaMP6s.WPRE virus in V1 during window implantation. Four to five weeks later, a control imaging session was performed, followed by a subcutaneous CNO injection (3 mg/kg) under light isoflurane anesthesia (~1.5%) in the imaging setup. After a 60 min waiting period in the setup, the animal was imaged again to monitor the effect of the chemogenetic manipulation in the exact same neurons as during the control session.\n\n### Intrinsic optical imaging recordings\n\nTo localize the calcium-imaging recordings with respect to the global functional organization of the cortex, we performed intrinsic optical imaging experiments under isoflurane anesthesia (1%). The brain and blood vessels were illuminated through the cranial window by a red (intrinsic signal: wavelength 780 nm) or a green (blood vessel pattern: wavelength 525 nm) light-emitting diode.\n\nTo localize the visual cortex, the reflected light was collected at 15 Hz by a charge-coupled device (CCD) camera (Foculus IEEE 1394) coupled to the epifluorescence light path of the Femtonics microscope (no emission or excitation filter). A slow drifting bar protocol was used: a white vertical bar was drifting horizontally over the screen width for 10 cycles at 0.1 Hz, from left to right in half of the trials, and from right to left in the other half. After band-passing, the measured signals around 0.1 Hz, and determining their phase in each pixel and for each condition, both the preferred bar location and the hemodynamic delay could be determined for each pixel, yielding azimuth maps as in (Figure 2E). Similarly, elevation maps were obtained in a subset of the animals using a horizontal bar drifting vertically. These maps coincided with those obtained in previous studies (Marshel et al., 2011), so we could determine V1 border as the limit between pixels displaying and not displaying retinotopy.\n\nTo localize the auditory cortex, the reflected light was collected at 20 Hz by a CCD camera (Smartek Vision, GC651M) attached to a custom-made macroscope. The focal plane was placed 400 \u00b5m below superficial blood vessels. A custom-made Matlab program controlled image acquisition and sound delivery. Sounds were trains of 20 white noise bursts or pure tone pips separated by smooth 20 ms gaps (down and up 10 ms linear ramps). We acquired a baseline and a response image (164 \u00d7 123 pixels,~3.7\u00d72.8 mm) corresponding to the average images recorded 3 s before and 3 s after sound onset, respectively. The change in light reflectance (\u0394R/R) was computed then averaged over the 20 trials for each sound frequency (4, 8, 16, 32 kHz, whitenoise). A 2D Gaussian filter (\u03c3\u00a0=\u00a045.6 \u00b5m) was used to build the response map. The functional localization of the auditory cortex in this study corresponded to the response map produced by white noise.\n\n### Eye tracking and trial filtering\n\nLeft eye measurements (eye size, pupil diameter, pupil movement) were made by tracking the eye using a CCD camera (Smartek Vision, GC651M). A Python software was used to capture images from the camera at 50 Hz, synchronized with the cortical recordings.\n\nThese movies were analyzed off-line using custom automatic Matlab programs that traced the contours, first of the eyelid, second of the pupil. The eye lid shape was approximated by two arcs and involved the estimation of 6 parameters (four for the coordinates of the two points where the arcs join, two for the y-coordinates of the crossings of the arcs with the vertical line at halfway between these two points; see Figure 2C, bounds for the parameters were set by hands and appear in yellow). The pupil shape was approximated by an ellipse, described by four parameters (center x and y, radius and eccentricity). Both estimations were performed by maximizing the difference between average luminance inside and outside the shape, as well as the luminance gradient normal to the shape boundary; in addition, they were inspected manually and corrected occasionally inside a dedicated graphical user interface. In the \u2018dim light\u2019 and \u2018bimodal\u2019 (but not the \u2018dark\u2019) contexts, it was observed that saccades correlated with population activity increases (e.g. Figure 2D), therefore we discarded all trials from these contexts displaying saccades. To do so, we computed the maximal distance between pupil center positions (xc,yc) at different instants t and t\u2019 during the 2 s of stimulation $max0<t,t^{\u2032}<2s\\sqrt{(x_{c}(t^{\u2032})\u2212x_{c}(t))^{2}+(y_{c}(t^{\u2032})\u2212y_{c}(t))^{2}}$ and discarded trials where the change in gaze exceeded the mouse visual acuity of 2\u00b0, that\u00a0is where this distance exceeded 57.6 \u00b5m (assuming an eye radius of 1.65 mm).\n\n### Calcium imaging data summary\n\nThe data obtained from the different imaging experiments consisted of the following.\n\nA1 recordings of auditory responses: 4616 cortical neurons from 29 L2/3 imaging areas in 11 animals. In 18 sessions (seven mice), animals were also stimulated with looming visual stimuli and bimodal stimuli from which we observed no response or modulation. 7757 neurons from upper layer 5 recorded in 12 sessions across four mice during sound only protocols. 2474 neurons projecting to V1 recorded in 15 sessions across three mice during sound only protocols repeated in light or in dark conditions.\n\nV1 recordings: 18,925 neurons from 35 L2/3 imaging areas in nine mice, and included the three \u2018dark\u2019, \u2018dim light\u2019 and \u2018bimodal\u2019 blocks in random order. Eye tracking was performed in 23 of these sessions (9849 neurons, seven mice; only these sessions where used for the analyses of the \u2018dim light\u2019 and \u2018bimodal\u2019 context, which required filtering out trials with saccades).\n\nV1 recordings with labeling of Gad-positive interneurons: an additional 4348 neurons from 12 L2/3 imaging sessions (depth ranging from 140 to 300 microns), and 265 GAD2 positive neurons from 7 L1 imaging sessions (depth from 30 to 100 microns). All of these sessions had eye tracking, and included the \u2018dark\u2019 and \u2018dim light\u2019 blocks. 6 L2/3 sessions also included \u2018bimodal\u2019 blocks, whereas the 13 remaining sessions included a second \u2018dim light\u2019 block where the left (contralateral) eye was covered by a dark mask (Figure 3F).\n\n### Calcium imaging pre-processing\n\nData analysis was performed with custom-made Matlab scripts available upon request. Every frame recorded was corrected for horizontal motion to a template image using rigid body registration (all sessions with visible z motion were discarded). Regions of interest were then automatically selected and human checked as the cell bodies of neurons with visually identifiable activity (Roland et al., 2017) and the mean fluorescence signal F(t) was extracted for each region. We also estimated the local neuropil signal Fnp(t) for each neuron\u00a0and subtracted a fraction of it from the neuron signal Fc(t)=F(t) - 0.7 Fnp(t). This fraction was set to 0.7, according to a previous calibration for GCAMP6s in mouse visual cortex (Chen et al., 2013b). Baseline fluorescence Fc0 was calculated as the minimum of a Gaussian-filtered trace over the 5 neighboring 5 s imaging blocks and fluorescence variations were computed as f(t) = (Fc(t) - Fc0)/Fc0. Analyses were performed either on these normalized fluorescence signals, or on estimations of the firing rate obtained by temporal deconvolution (Bathellier et al., 2012; Yaksi and Friedrich, 2006) as r(t)=f'(t)\u00a0+\u00a0f(t)/\u03c4, in which f'(t) is the first derivative (computed at successive samples separated by\u00a0~30 ms) of f(t) and \u03c4\u00a0=\u00a02 s, as estimated from the decays of the GCAMP6s fluorescent transients (Chen et al., 2013b). This simple method efficiently corrects the strong discrepancy between fluorescence and firing rate time courses due to the slow decay of spike-triggered calcium rises (Bathellier et al., 2012), and was preferred to more advanced deconvolution methods (Deneux et al., 2016b) because it does not bias deconvolution towards absence of activity (i.e. interpreting small signal as noise) in cells displaying poor signal to noise ratio. However, it does not correct for the relatively slow rise time of GCAMP6s, producing a time delay on the order of 70 ms between peak firing rate and peak deconvolved signal.\n\n### Calcium imaging analysis\n\nData analysis was performed with custom-made Matlab and Python scripts. Clustering of auditory responses in the auditory and visual cortices (Figure 1), and of bimodal conditions in the visual cortex (Figure 6) was performed using the following procedure. Deconvolved calcium responses were averaged across all valid trials (eye movement filtering). We then subtracted the baseline (average activity from 0 to 0.5 s before stimulus onset) and the average activity profile in trials with no stimulation. Hierarchical clustering was performed using the Euclidean metric and Ward method for computing distance between clusters. To determine the number of clusters, we moved down the clustering threshold (100 clusters for all AC datasets, 25 clusters for V1 data) until clusters became redundant (overclustering) as assessed visually. This method clusters neurons irrespective of whether they significantly responded to the stimuli. As a large number of neurons were not (or very weakly) responsive to the stimuli, a fraction of the clusters were merged into a cluster of \u2018noisy\u2019 non- or weakly responsive cells, which were eliminated from the final cluster list based on their heterogeneity measured as the mean correlation across the responses of each cell (only clusters with homogeneity larger than 0.4 were kept). These thresholds were chosen by visual inspection of the obtained clusters. Some clusters which were homogeneous but obviously captured a systematic perturbation of the signal (correlated noise) were also manually put in the non-responsive cluster. To make sure cell type distributions were not skewed by the fact that clustering outputs the most robust auditory responses (Figure 1), we re-aggregated neurons discarded as non-responsive if the mean correlation of their activity signature with any of the identified clusters was larger than 0.4. This procedure did not change the mean cluster response profiles and did not qualitatively impact the conclusions drawn on the distributions of the different clusters in V1-projecting and L2/3 neurons.\n\n### Awake electrophysiology\n\nMulti-electrode silicon probe recordings were done in mice already implanted with a cranial window above AC at least 2 or 3 weeks before the experiment. The brain was exposed by removing some of the dental cement and part of the cranial window\u2019s cover slip with the animal under light isoflurane anesthesia (similar to intrinsic imaging). The brain was covered with Kwik-CastTM silicon (World precision Instruments) and the animal was removed from the setup to recover from anesthesia for at least 1 hr. Electrophysiological recordings were done using four shank Buzsaki32 silicon probes (Neuronexus). The animal was placed back on the setup-up and the Kwik-Cast was removed. The brain was then covered with warm Ringer\u2019s solution. The insertion of the probe was controlled by a micromanipulator (MP-225, Butter Instrument). Recordings were usually performed at 400, 600 700 and 800 \u00b5m depths in each animal using a pre-amplifier and multiplexer coupled to a USB acquisition card (Intan Technologies).\n\n### Electrophysiology data analysis\n\nSingle unit spikes were detected automatically using the klusa Suite (https://github.com/kwikteam/phy). Spikes were then sorted using KlustaKwik spike sorting algorithm (Harris et al., 2000) (Klusta, https://github.com/kwikteam/klusta). All posterior data analyses were performed using custom Python scripts. Firing rates were calculated in 25 ms time bins, averaging over 20 sound repetitions.\n\n### Statistics\n\nData are displayed as mean and S.E.M. Sample size was chosen without explicit power analysis to large enough (n\u00a0>\u00a04) to allow detection of significance with typical non-parametric tests.\n\nTo assess the significance of the relative distribution of functional cell types in V1-projecting neurons and in layer 2/3 neurons, we performed a bootstrap analysis. The null-hypothesis is that both populations have the same distribution of clusters. To simulate this hypothesis, we pooled together all neurons and performed 10,000 random partitions of the pool population into the number of V1-projecting and L2/3 neurons. For each partition, we computed the difference between the fractions of each cluster across the two partitions. This led to distributions of expected fractional differences for each cluster under the null hypothesis. The p-value was computed from the percentile of which the actual observed fractional difference was located.\n\nSignificant responses for individual neurons were detected using the non-parametric Wilcoxon rank-sum test. Raw calcium fluorescence traces were subtracted for pre-stimulus level, and averaged over a time window near the response peak. The vector of such responses for different trials was compared to the same computations performed on blank trials (unless responses to two different conditions were compared, such as auditory responses in the dark vs. in a dim light). Unless specified otherwise, we used a statistical threshold of 1% for detecting responding neurons; by definition this means that on average 1% of the neurons not responding to the condition would be detected as responding (false positive). Therefore, in all the histogram displays of the fractions of responding neurons (e.g. Figure 5C,F) we masked the first 1% as being potentially only false positive detections.\n\nTo assess the significance of supra- or sub-linear responses to audio-visual combinations in individual clusters resulting from the clustering of bimodal responses, we used a bootstrap consisting in shuffling the different trial repetitions. The null hypothesis is that the cluster\u2019s average bimodal responses can be predicted as the sum of average visual and auditory responses, after baseline has been subtracted. To test this hypothesis, we first computed, for each neuron, individual \u2018repetitions\u2019 of the linear predictions by adding responses to one visual presentation and to one auditory presentation. Then we performed one million shuffles of the labels of \u2018linear prediction\u2019 and \u2018bimodal response\u2019 trials, yielding a distribution of the expected difference between their averages under the null hypothesis. The p-values were computed from the percentile in which the actual nonlinear difference was located.\n\n### Model\n\nSimulations were performed using a rate model with 2 or 3 populations and no synaptic delay. The spiking activity $r_{i}$ of population i followed the equation:\n\n$$\nr_{i}(t)=f(b_{context}^{i}+g_{auditory}^{i}\u00a0s_{auditory}(t)+g_{visual}^{i}\u00a0s_{visual}(t)+\\sumjg_{j}^{i}\u00a0r_{j}(t\u22121)),\n$$\n\nWhere t is time, $s_{auditory}$\u00a0and $s_{visual}$ are the auditory and visual input (displaying an exponentially decaying signal and a plateauing signal, respectively), $g_{auditory}^{i}$, $g_{visual}^{i}$, and $g_{j}^{i}$ the connectivities to input and to the other populations (see model schematics in Figure 7A for which connections are non-zero). $b_{context}^{i}$\u00a0is a baseline accounting for other inputs, and whose value can depend on the context ('dark' or 'light'). $f$\u00a0is a nonlinear function consisting of two linear segments (Figure 7A) that accounts for spiking threshold or further nonlinear (e.g. dendritic) computations. The first segment is not a constant zero accounts for the fact that the other inputs summarized in $b_{context}^{i}$ are in fact stochastic and can lead the cell to fire even when its average potential is below threshold.\n\n### Data and software availability\n\nThe data that support the findings of this study are freely available at https://www.bathellier-lab.org/downloads or at Dryad, doi:10.5061/dryad.82r5q83.\u00a0Custom analysis scripts are available in Source Code 1.\n",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "26505a43-ebd6-453a-a302-cad6ae7e3487",
+      "submission_id": "6036fd64-013c-4895-98d2-abbcde4fe5e1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karel Svoboda, Janelia Research Campus, Howard Hughes Medical Institute United States\n\nReviewers:\n- Adi Mizrahi, The Hebrew University of Jerusalem Israel\n- Anthony Holtmaat, University of Geneva Switzerland\n\n## Review text\n\nDOI: [10.7554/eLife.44006.021](https://doi.org/10.7554/eLife.44006.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Context-dependent signaling of coincident auditory and visual events in primary visual cortex\" for consideration by eLife. Your article has been reviewed by three reviewers and the evaluation has been overseen by a Reviewing Editor andAndrew King as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Adi Mizrahi (Reviewer #1); Anthony Holtmaat (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nPsychophysical data suggest that the auditory and visual systems are intimately connected. This paper is about the circuit mechanisms that support these multimodal interactions. Deneux and colleagues perform an elegant set of experiments characterizing neuronal responses in specific cell types in both auditory and visual cortex to reveal a circuit that could support context-dependent integration of both modalities in the visual cortex. They find that neurons in auditory cortex that project to visual cortex are more likely to be responsive to loud sounds (and to loud sounds getting quieter). They show that these same sounds preferentially modulate the activity of neurons in the visual cortex, but that they do so in a context-dependent and layer-specific manner which depends on the ambient luminance. Some of the data are of high quality and the authors perform a range of controls that lend rigor and confidence to their study. This will be of great interest to a wide audience interested in sensory integration and cortical circuits.\n\nHowever, the reviewers noted some major concerns that need to be addressed before publication. The reviewers believe that these issues can be addressed in a couple of months.\n\nConceptual issues:\n\nSpecificity for \"loud onsets sounds\" has not been demonstrated. Although the effects they describe may be stronger for loud onsets than for quiet onsets, the results seem more of a bias within a continuous distribution rather than true specificity.\n\nAnother major concern relates to the strong conclusion that the gating of context must occur in the visual cortex instead of in the inputs from the auditory cortex to the visual cortex. This does not seem supported by the data.\n\nThese concerns can be addressed by toning down the conclusions in the paper.\n\nEssential revisions:\n\nThe concerns listed below require some changes in analysis or data presentation and possibly some experiments that can be done rapidly.\n\n1) The authors state that the majority of V1-projecting neurons in AC originate in L5. However, when they image neurons in AC to monitor sound-evoked responses they compare these responses to L2/3 neurons. What was the rationale behind this comparison? Wouldn't it have been more interesting to compare with the 'overall' population in L5? It is critical to provide images and fluorescence traces in L5 neurons. Along similar lines, the authors do not describe all differences in the response types between V1-projecting AC neurons and the control population. It seems that cluster 7 (OFF-response type) is not present in V1-procting neurons. More histological data needs to be provided to sow which other targets the AC neurons have. This needs to be cleared up.\n\nAlso, in the realm of image analysis, the hierarchical clustering should be unpacked in a supplemental figure. How similar are neurons in each cluster? How much variance do the clusters explain etc.\n\nIt would have been more convincing to show data from mice where both V1-projecting and those that do not are imaged in the same mice (you already have the tools to do this). Imaging separate neurons in separate experiments (with and without specificity) is less compelling. It\u2019s not absolutely necessary, but if possible, such an experiment (even for a limited number of example) could strengthen these results.\n\n2) The new aspects of the modulation described here relate to the inhibition in darkness vs excitation in light, and the supralinear responses between perceptually matching stimuli. Therefore, the inhibitory responses need to be understood well, especially given that the 'switch' in the model strongly hinges on this finding.\n\nHowever, the inhibitory effects of sound in darkness are a bit enigmatic and not very well supported by the figures. The authors provide mean deconvolved traces, but these are difficult to digest in the context of these types of responses, as this assumes that there is high baseline activity in V1 in darkness. Either there is a general but very consistent small decrease in all neurons, or a decreased response in a few neurons that are highly active under darkness \u2013 but then why the low variance.\n\nFor negative responses it is important to exclude the possibilities that technical issues have seeped in. For example, can the authors rule out changes due to vertical movements; and how much does the neuropil signal subtraction affect these responses? 0.7Fnp is a general and accepted rule for neuropil subtraction. However, neutral responses (i.e. no change) might be very sensitive to the 0.7x threshold (especially in densely labeled populations). Could the authors 'play' with these parameters to see how they affect the outcome (e.g. same analysis with and without NP correction or varying thresholds), and convincingly show at the level of individual neurons that their responses were indeed reduced?\n\nAltogether, it is essential to provide example images of groups of neurons (preferably time lapse images) and traces of individual neurons. They should also compare baseline neuronal activity of those neurons that are inhibited versus those who are not, and possibly perform movement (z-plane) correction in images in which they have neurons labeled in red.\n\n3) The authors try and exclude the possibility that a difference in arousal state between the dark and light trials could explain the V1 sign switching. However, it is unclear that closing one eye could simply test the influence of arousal, as this would by itself represent yet a different state of arousal. It is not simply a matter of being in light or darkness, as there are many factors in an experimental setup that determine arousal.\n\n4) In Figure 4, the authors inhibited AC to test whether auditory responses in V1 are caused by AC projections. Where are the statistical comparisons for the DREADD experiments (n=3)? The authors report that this showed a \"similar effect, but less robust\" as compared to the muscimol experiment. Whereas this trend might be true for the experiments under light, this remains inconclusive for the DREADD experiments in darkness since in one animal the average responses were drastically reduced. The authors should report the statistical comparison for the DREADD experiment and increase the n if they feel that this addition is necessary to support the conclusions.\n\n5) Why opt out of showing 'sound only' averages in Figure 6D? For unimodal stimuli was there any background stimulus in either modality (e.g. for sound only, dim light; and for light only, white noise)? If not, why is the sound-only inhibitory response in V1 (as seen in Figure 5) not reproduced in Figure 6?\n\n6) The results of what they call context are the most interesting part of the paper. The claims of effect-specificity to loud onset sounds and looming stimuli are too strong. After all, they only tested a limited amount of stimuli, both auditory and visual. And even within this limited set, the effects are not binary.\n\n7) The value of the minimal model of Figure 7 is unclear. Reproducing the empirical results with a model is a good starting point but eventually it has to provide something more (e.g. some hypotheses to test in the context of mechanism). Do they suggest specific biophysical mechanisms of the neurons are involved? This should be clarified.\n\n8) The authors' major conclusion is that (from the Abstract) \"a small number of layer 1 interneurons gates this cross-modal information flow\". They then design a model to demonstrate how this might work through the application of distinct gain conditions and a non-linear threshold. However, another possibility (as the authors acknowledge in the Discussion section) is that the gating might occur in the auditory cortex such that the inputs to the L1 population are only active in the dark. Evidence that the A1->V1 population is insensitive to ambient light conditions would add significant support to the authors assumed model.\n\n9) The authors' model suggests that ambient light alters the excitability (and therefore gain) of L1 interneurons. This is a hypothesis that the authors could test by measuring F in baseline conditions (in the absence of auditory stimulation) in the light and dark. Evidence that the L1 neurons that are driven only in the dark have higher baseline F in the dark (while other less selective L1 interneurons do not show such strong modulation) would significantly strengthen the authors' argument.\n\n10 The authors' proposed model assumes a functionally homogeneous input to V1. However, while the majority of V1->A1 neurons prefer down-ramp sounds, there are still a significant number that respond to up-ramps. In fact, up-ramp sounds are sufficient to drive suppression in the dark, though unlike down-ramp sounds do not evoke either excitation or inhibition in the light (at least not on average as shown in Figure 3B). This suggests that down-ramp preferring neurons may only contact L1 interneurons and not provide direct excitation to L2/3. Thus, the authors should make it clear that there are anatomical specializations that might also support the observed gating.\n",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b8f7c32b-4106-4e14-87bf-76fe41c0aff9",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C1",
+      "claim": "Loud sound onsets are a dominant feature coded by auditory cortex neurons projecting to primary visual cortex (V1).",
+      "claim_type": "EXPLICIT",
+      "source": "Using two-photon calcium imaging in identified cell types in awake, head-fixed mice, we show that, among the basic features of a sound envelope, loud sound onsets are a dominant feature coded by the auditory cortex neurons projecting to primary visual cortex (V1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from two-photon calcium imaging experiments showing the distribution of sound envelope features in V1-projecting neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "f62edbaf-85cf-4ba6-a4de-e5c41a944654",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C2",
+      "claim": "A small number of layer 1 interneurons gates cross-modal information flow from auditory cortex to V1 in a context-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In V1, a small number of layer 1 interneurons gates this cross-modal information flow in a context-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from two-photon calcium imaging of identified interneurons in layer 1 of V1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "719dae03-fb20-4297-bc4a-6eea9343f11a",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C3",
+      "claim": "In dark conditions, auditory cortex inputs lead to suppression of the V1 population.",
+      "claim_type": "EXPLICIT",
+      "source": "In dark conditions, auditory cortex inputs lead to suppression of the V1 population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing V1 neuronal responses to auditory stimuli in darkness.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "a975f54f-bd90-498b-a6d0-a1bf579a7c24",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C4",
+      "claim": "When sound input coincides with a visual stimulus, visual responses are boosted in V1, most strongly after loud sound onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when sound input coincides with a visual stimulus, visual responses are boosted in V1, most strongly after loud sound onsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from bimodal stimulation experiments showing enhanced visual responses when paired with sounds.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "0eac4b21-de30-4ce2-b3ed-48d83507a543",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C5",
+      "claim": "A dynamic, asymmetric circuit connecting AC and V1 contributes to the encoding of visual events that are coincident with sounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a dynamic, asymmetric circuit connecting AC and V1 contributes to the encoding of visual events that are coincident with sounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing context-dependent modulation and boosting effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "3c1876eb-4f79-4479-b481-8f37ae3d4698",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C6",
+      "claim": "Audition and vision have strong perceptual bonds as demonstrated by multisensory illusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous multisensory illusions (Bonath et al., 2007; Maeda et al., 2004; Sekuler et al., 1997; Shams et al., 2000) show that audition and vision have strong perceptual bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research on multisensory illusions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "bcebc1e0-0398-415e-b419-a59ba7ff3f10",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C7",
+      "claim": "In the double flash illusion, a brief sequence of two sounds played during a single visual flash leads to the perception of two flashes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the double flash illusion (Shams et al., 2000) a brief sequence of two sounds played during a single visual flash leads to the perception of two flashes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research on the double flash illusion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "219e1469-160e-435b-af63-6a75eec5dddf",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C8",
+      "claim": "The superior colliculus is one of the best studied integrative regions where visual and auditory cues are combined in networks computing gaze direction.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the best studied integrative regions is the superior colliculus, where visual and auditory cues are combined in the networks computing gaze direction (Stein and Stanford, 2008; Witten and Knudsen, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research on the superior colliculus.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "f7d5ca84-2e39-4a1e-933c-e1390ab090c7",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C9",
+      "claim": "Functional auditory-visual interactions exist in primary sensory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "increasing evidence shows that functional auditory-visual interactions exist already in primary sensory cortex (Ibrahim et al., 2016; Iurilli et al., 2012; Kayser et al., 2010; Kayser et al., 2008; Meijer et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research demonstrating auditory-visual interactions in primary sensory cortex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "dd209964-7f87-4d59-a3b4-38105cfa5853",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C10",
+      "claim": "Numerous direct connections exist between primary auditory and visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, axonal tracing studies indicate that numerous direct connections exist between primary auditory and visual cortex (Bizley et al., 2007; Driver and Noesselt, 2008; Falchier et al., 2002; Ghazanfar and Schroeder, 2006; Innocenti et al., 1988; Leinweber et al., 2017; Zingg et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to axonal tracing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "c972d29c-0cea-4e50-a875-941544d52f1c",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C11",
+      "claim": "Auditory to visual connections are much stronger than their reciprocals.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies indicate that auditory to visual connections are much stronger than their reciprocals, and that they provide inputs to visual cortex that can modulate visually driven activity (Ibrahim et al., 2016; Iurilli et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to recent studies on auditory-visual connections.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "2ecc242f-802c-4a99-acc4-bd52eb7130e8",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C12",
+      "claim": "Mouse auditory cortex encodes a wide variety of acoustic features.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse auditory cortex encodes a wide variety of acoustic features (Mizrahi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research on mouse auditory cortex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "e9a16662-a78c-408f-a740-7626fc6a801f",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C13",
+      "claim": "Spectral content and temporal features such as modulations of frequency or intensity are the most well-studied features in auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectral content (Issa et al., 2014; Kanold et al., 2014) and temporal features such as modulations of frequency (Trujillo et al., 2011) or intensity (Gao and Wehr, 2015) are the most well-studied",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research on auditory cortex feature encoding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "bd52e8de-5db2-46c4-92bc-b11c49b59cb7",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C14",
+      "claim": "Intensity variations occurring at sound onsets and offsets are particularly salient auditory features.",
+      "claim_type": "EXPLICIT",
+      "source": "intensity variations occurring at sound onsets and offsets (Deneux et al., 2016b; Scholl et al., 2010) are particularly salient auditory features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research on sound onset and offset encoding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "5404a501-aaca-485f-ad4f-e65163765e6a",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C15",
+      "claim": "Temporal coincidence is used for perceptually assigning auditory and visual stimuli to the same object.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, temporal coincidence is known to be used for perceptually assigning auditory and visual stimuli to the same object and is implicated in the double flash (Slutsky and Recanzone, 2001) and ventriloquist illusions (Bonath et al., 2007; Recanzone, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research on temporal coincidence in multisensory perception.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "b4f1ea5c-d306-468a-8b6f-076dc3508925",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C16",
+      "claim": "Covariations of the size of a visual input and sound intensity envelope are important for binding looming and receding auditory-visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, covariations of the size of a visual input and sound intensity envelope are important for binding looming and receding auditory-visual stimuli (Tyll et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research on audiovisual binding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "ae44da76-5ab2-431f-b9e7-45bd317795c0",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C17",
+      "claim": "Some neurons in auditory cortex respond only to high amplitude, 'loud' sound onsets, whereas others only respond to low amplitude, 'quiet' onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Some neurons respond only to high amplitude, 'loud' sound onsets, whereas others only respond to low amplitude, 'quiet' onsets, and neurons responding to offsets and sustained phases are also tuned to precise intensity ranges (Deneux et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research on intensity tuning in auditory cortex neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "9adceffb-1c19-40eb-988e-56ba1a00cbc4",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C18",
+      "claim": "Mechanical shocks produce sounds that rise abruptly in intensity and tend to activate loud onset neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mechanical shocks produce sounds that rise abruptly in intensity and tend to activate loud onset neurons, while more continuous events produce sounds that progressively ramp up in intensity and first activate quiet onset neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference about how different types of sounds activate different neuron types.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "56aeb99b-6c3e-4a6c-a36a-c5cdc942023b",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C19",
+      "claim": "V1-projecting neurons in auditory cortex are predominantly tuned to loud onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "we used two-photon calcium imaging and intersectional genetics to identify some of the intensity envelope features encoded by AC neurons that project to V1, and showed that V1-projecting neurons are predominantly tuned to loud onsets while other tested envelope features are less prominently represented",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from two-photon calcium imaging of retrogradely labeled V1-projecting neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "536846ee-0695-44c5-82d3-4a17560d89c7",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C20",
+      "claim": "Cross-modal information from auditory cortex impacts V1 in a context-dependent manner, with a net inhibitory effect in darkness and a net positive effect in the light.",
+      "claim_type": "EXPLICIT",
+      "source": "We also show that this cross-modal information impacts V1 in a context-dependent manner, with a net inhibitory effect in darkness and a net positive effect in the light, probably mediated by a subpopulation of L1 inhibitory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing different V1 responses to auditory stimuli in dark versus light conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "91c321f1-0e74-456a-887b-ad148e9ea67f",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C21",
+      "claim": "The context-dependent mechanism allows for a boosting of visual responses that occurs together with auditory events, particularly when those include loud sound onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we show that this mechanism also allows for a boosting of visual responses that occurs together with auditory events, particularly when those include loud sound onsets, increasing the saliency of visual events that co-occur with abrupt sounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from bimodal stimulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "df7d5cfe-0afe-47ec-8736-2d9f783760c6",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C22",
+      "claim": "V1-projecting neurons in auditory cortex are located predominantly in layer 5.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports, we observed that these neurons were located predominantly in layer 5 (Figure 1B) (Ibrahim et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observation and citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "ad1636e5-0ecf-4d1d-ab5d-2cd36ea30eb1",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C23",
+      "claim": "Loud onset responses represented 48% of the clustered neurons in V1-projecting cells, and only 36% and 21% in layer 5 and layer 2/3, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "the largest discrepancies were observed for neurons signaling loud onsets which represented 48% of the clustered neurons in V1-projecting cells, and only 36% and 21% in layer 5 and layer 2/3, respectively (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of clustered neuronal responses shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "130ad618-0219-491a-980c-bf0e485e0d2e",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C24",
+      "claim": "Loud onset responses were enriched in layer 5 which contains most of the cells with direct projections to V1 and predominant in cells retrogradely labeled as V1-projecting neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loud onset responses were enriched in layer 5 which contains most of the cells with direct projections to V1 and predominant in cells retrogradely labeled as V1-projecting neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing distribution of response types across layers and cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "e702a122-7b04-4d71-82ac-d840129d5391",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C25",
+      "claim": "Other envelope features are also conveyed by V1-projecting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that AC is organized to favor the transfer of this particular sound envelope information even if other envelope features are also conveyed by V1-projecting cells (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1C demonstrating multiple response types in V1-projecting neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "cc91ff5f-98bc-4bca-96d7-8755f9b51a2e",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C26",
+      "claim": "V1-projecting cells convey some sound frequency information.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as some sound frequency information (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "ad543ae2-88ce-4b1e-b881-51795ec669d7",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C27",
+      "claim": "Sounds occasionally triggered predominantly horizontal saccadic eye movements, especially sounds with loud onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that sounds occasionally triggered predominantly horizontal saccadic eye movements, especially sounds with loud onsets (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by eye tracking data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "6d4151f2-bdf5-44cb-94d0-6cc239c13750",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C28",
+      "claim": "Sound-induced changes in pupil diameter were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Sound-induced changes in pupil diameter were also observed (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pupil tracking data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "df8265ed-abd2-4285-b75c-fdae91dbc0e6",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C29",
+      "claim": "Saccades triggered responses in V1 in the lit condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lit condition, the saccades triggered responses in V1 (e.g. Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by calcium imaging data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "81077061-1e4f-4b1c-8e83-a85237bf685b",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C30",
+      "claim": "Sounds alone trigger responses in supra-granular V1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "After this correction, we pooled together the activity of 18925 V1 neurons (35 sessions, nine mice) and observed that sounds alone trigger responses in supra-granular V1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from two-photon calcium imaging of V1 neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "9eb99aef-a58d-4ade-af1b-1a69cba605ce",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C31",
+      "claim": "The responses to sounds in V1 were stronger for the down-ramping sounds, similar to what was seen in the activity of V1-projecting AC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The responses were stronger for the down-ramping sounds, similar to what we saw in the activity of V1-projecting AC neurons (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of data from V1 and V1-projecting AC neurons shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "ee5eea8e-85b4-4211-bf24-c10fc3e855e7",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C32",
+      "claim": "The net population response in V1 was globally excitatory when mice were in the light and inhibitory when mice were in complete darkness.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly however, we observed that the net population response was globally excitatory when mice were in the light and inhibitory when mice were in complete darkness (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data comparing V1 responses in light versus dark conditions shown in Figure 3B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "8a7e763d-efd9-4f32-8a71-f3c0dba089b7",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C33",
+      "claim": "The observed inhibition in V1 in darkness was seen consistently across cells and sound presentations, likely corresponding to a transient decrease in basal firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed inhibition was seen consistently across cells and sound presentations, likely corresponding to a transient decrease in basal firing rates (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 3\u2014figure supplement 1 and inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "7d4ea121-590b-4ab0-8f8f-b102f257ab0a",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C34",
+      "claim": "Covering the contralateral eye was sufficient to obtain the same inhibition as in darkness.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, covering the contralateral eye was sufficient to obtain the same inhibition as in darkness (Figure 3\u2014figure supplement 2), suggesting a possible role of direct unilateral visual inputs in the context dependence of auditory responses in V1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "527a51ef-4fbd-443c-91d4-09976f7a9c2b",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C35",
+      "claim": "Excitatory responses to sounds in the light cannot be attributed to sound-induced pupil dilation as these movements occurred after V1 responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, excitatory responses to sounds in the light cannot be attributed to sound-induced pupil dilation as these movements occurred after V1 responses (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on temporal analysis of pupil dilation and V1 responses shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "a8d657bb-8811-4adb-9c8a-cbf2503763fe",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C36",
+      "claim": "V1 implements a mechanism that inverts the impact of AC inputs depending on whether or not visual information is available.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking these results together, we conclude that V1 implements a mechanism that inverts the impact of AC inputs depending on whether or not visual information is available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing context-dependent responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "a94c2885-ca69-4f30-8d01-c70bc70489d4",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C37",
+      "claim": "Areas next to V1 (secondary visual or associative areas) displayed excitatory responses in both the lit and dark conditions, unlike V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike V1, these areas displayed excitatory responses in both the lit and dark conditions (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data comparing V1 and neighboring areas shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "99d29457-afd8-43ab-b6bc-36be7d1364c6",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C38",
+      "claim": "No response modulation between the dark and lit conditions was observed in V1-projecting neurons of auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no response modulation between the dark and lit conditions (Figure 3F), indicating that context-dependent modulation arises in V1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from imaging V1-projecting AC neurons shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "a42d54eb-fd6b-4a87-abd5-fd4b395e1edf",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C39",
+      "claim": "Context-dependent auditory inputs to V1 are mediated by direct AC to V1 projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we verified that, as suggested by previous studies (Ibrahim et al., 2016; Iurilli et al., 2012), context-dependent auditory inputs to V1 are mediated by direct AC to V1 projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from AC inactivation experiments and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "8d6aed9e-5546-4ef8-8fb9-ce2fc3077c9a",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C40",
+      "claim": "Injections of muscimol into AC almost completely abolished auditory responses in V1 and in the neighboring areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Injections of the GABA-receptor agonist muscimol into AC during imaging almost completely abolished auditory responses in V1 and in the neighboring areas (Figure 4 and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from muscimol inactivation experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "cf08cf8e-7f47-4833-aeff-335c2507e53b",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C41",
+      "claim": "Targeted chemogenetic inhibition of V1-projecting neurons in AC produced a decrease of sound responses in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "We also used targeted chemogenetic inhibition (systemic CNO injections) of V1-projecting neurons in AC, expressing the hM4Di channel by co-injection of a CAV-Cre virus in V1 and an AAV8-flex-hM4di in AC (Figure 4). This produced a decrease of sound responses which was consistent across sound repetitions for the imaged neural population (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from chemogenetic inhibition experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "eab14fc8-9cfe-491b-85ec-62779f0d87e8",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C42",
+      "claim": "In layer 2/3, both excitatory and inhibitory neurons were globally inhibited by sounds in the dark and excited in the light.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in layer 2/3 both excitatory (n = 4348) and inhibitory neurons (n = 726) were globally inhibited by sounds in the dark and excited in the light",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from imaging identified excitatory and inhibitory neurons in layer 2/3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "1c4d0773-880b-41ee-b1da-dd128c0ec26d",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C43",
+      "claim": "The layer 1 interneuron population seemed globally unaffected in the dark and excited in the light.",
+      "claim_type": "EXPLICIT",
+      "source": "while the layer 1 interneuron population seemed globally unaffected in the dark and excited in the light (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from imaging layer 1 interneurons shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "8ed79614-63a0-4ebc-b21a-6fa98cfeebfb",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C44",
+      "claim": "A subpopulation of 12.8% of all L1 inhibitory neurons were significantly activated in the dark.",
+      "claim_type": "EXPLICIT",
+      "source": "we found a large fraction of neurons significantly inhibited, but also, a subpopulation of 12.8% of all L1 inhibitory neurons that were significantly activated in the dark (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of single neuron responses shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "16ea649b-6077-4e48-9133-34df96a3a38d",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C45",
+      "claim": "Only 2.1% of inhibitory and 1% of excitatory cells in L2/3 were significantly activated by sounds in the dark.",
+      "claim_type": "EXPLICIT",
+      "source": "This positive response was rare in L2/3 with only 2.1% of inhibitory and 1% of excitatory cells significantly activated (chance levels = 1%, Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of single neuron responses shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "c170e8e3-0a70-4fcb-8e2a-b033b6ac664f",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C46",
+      "claim": "L1 neurons that are excited by sounds in the dark tend to be less excited in the light.",
+      "claim_type": "EXPLICIT",
+      "source": "it is apparent that the L1 neurons that are excited by sounds in the dark tend to be less excited in the light (e.g. Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of individual neuron responses shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "d28aa5f6-a72b-4ce0-bc1e-2cc8b64ca18a",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C47",
+      "claim": "L1 neurons inhibited or unaffected by sounds in the dark became more activated in the light.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, L1 neurons inhibited or unaffected by sounds in the dark became more activated in the light (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of individual neuron responses shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "fd231e3e-9988-4eee-84b8-ef41f458a059",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C48",
+      "claim": "A significant percentage (5.3%) of L1 neurons respond less in light than in dark.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, statistical assessment showed that a significant percentage (5.3%) of L1 neurons (Wilcoxon rank-sum test, p<0.01) respond less in light than in dark (Figure 5F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "d7bd0c10-9c1d-488a-be38-f54282e3d55f",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C49",
+      "claim": "Almost all L1 neurons that respond less in light than in dark are significantly excited in the dark (4.9%).",
+      "claim_type": "EXPLICIT",
+      "source": "and that almost all these neurons are significantly excited in the dark (4.9%, Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "e24b43ee-0268-43fc-ac12-fd8bde8b91d8",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C50",
+      "claim": "There was no significant population of L2/3 neurons that responded less in the light than in the dark.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, based on the same tests, there was no significant population of L2/3 neurons that responded less in the light than in the dark (Figure 5F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 5F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "18789181-1181-416d-a3de-21b31a4f7186",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C51",
+      "claim": "Layer 1 contains the only supragranular subpopulation of GABAergic neurons that can provide a context-dependent, sound-induced inhibition gated by visual inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that layer 1 contains the only supragranular subpopulation of GABAergic neurons that can provide a context-dependent, sound-induced inhibition gated by visual inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data comparing L1 and L2/3 interneurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "c8f45059-1be3-4b87-b359-2527968bf3ab",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C52",
+      "claim": "11% of the V1 neurons displayed significant supra-additive boosting of their visual responses when coincident with the loud onset of down-ramps.",
+      "claim_type": "EXPLICIT",
+      "source": "We first observed that 11% of the V1 neurons displayed significant (Generalized Linear Model, p<0.05) supra-additive boosting of their visual responses when coincident with the loud onset of down-ramps (e.g. Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of bimodal responses shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "19f61d48-4fa8-4486-b0b5-76faa3f91fbc",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C53",
+      "claim": "The boosting effect is visible at the population level and dependent on AC as assessed with muscimol silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "an effect even visible at the population level (Figure 6B) and dependent on AC as assessed with muscimol silencing (Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by population data and AC inactivation experiments shown in Figure 6B,D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "099d53cb-08f5-4f7b-8e64-7b1c57b7a453",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C54",
+      "claim": "Clustering of bimodal responses identified seven distinct clusters capturing 49.5 \u00b1 11.2% of the response variance.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis identified seven distinct clusters (Figure 6C) capturing 49.5 \u00b1 11.2% of the response variance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by clustering analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "7ff37f62-ea94-4794-ae91-74c95f783705",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C55",
+      "claim": "Four clusters responded more to looming than receding disks, and three clusters had the opposite preference.",
+      "claim_type": "EXPLICIT",
+      "source": "Four clusters (#1,4,6,7; 358 neurons) responded more to looming than receding disks, and three clusters (#2,3,5; 141 neurons) had the opposite preference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by clustering analysis of visual responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "58daee02-26d2-490c-8102-1b966074c347",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C56",
+      "claim": "Down-ramping sounds boosted the responses of all cell clusters that responded to the onset of visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Down-ramping sounds boosted the responses of all cell clusters that responded to the onset of visual stimuli. (Figure 6C, black arrows for clusters 1\u20135, bootstrap test, see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of bimodal responses shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "4e8381fd-c160-410e-bc5b-668d9ef19c42",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C57",
+      "claim": "Very little boosting was observed with the quiet onset of up-ramps, consistent with its reduced representation in AC to V1 projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Very little boosting was observed with the quiet onset of up-ramps (Figure 6C), consistent with its reduced representation in AC to V1 projections (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of bimodal responses to different sound types and relates to earlier findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "dedf6ebd-914f-4cb5-bdd7-cc5f6e805c92",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C58",
+      "claim": "Visual responses in V1 are boosted preferentially by the coincidence of loud sound onsets with respect to other basic envelope features.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that visual responses in V1 are boosted preferentially by the coincidence of loud sound onsets with respect to other basic envelope features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data on bimodal responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "cb78565e-1744-4946-ba35-30fed7c4e837",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C59",
+      "claim": "A moderate response suppression was observed, but only in cluster 7.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that a moderate response suppression was also observed, but only in cluster 7 (Figure 6C, blue arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "f228ab61-e832-415c-80a4-8b1d114bbf78",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C60",
+      "claim": "The boosting of visual responses appeared to be a strong feature of V1, as the same analysis identified only one supra-linear cluster out of six clusters in the associative area medial to V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the boosting of visual responses appeared to be a strong feature of V1, as the same analysis identified only one supra-linear cluster out of six clusters in the associative area medial to V1 (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of V1 and neighboring area responses shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "522ad3fa-8156-4527-86c5-c57a4d13d779",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C61",
+      "claim": "A minimal model in which AC projections excite both a population of excitatory neurons and a population of interneurons in V1 can explain context-dependent sound-driven inhibition and boosting of visual responses.",
+      "claim_type": "EXPLICIT",
+      "source": "To propose a mechanism, we established a minimal model in which AC projections excite both a population of excitatory neurons (pyramidal cells) and a population of interneurons in V1 (putatively, the identified L1 population), consistent with connectivity studies (Ibrahim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational modeling informed by experimental data and previous connectivity studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "ee0d0d54-1038-44f2-8f93-1af6ea44bd04",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C62",
+      "claim": "The subpopulation of L1 interneurons that are less responsive to sounds in light also have a smaller baseline fluorescence in light.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that the subpopulation of L1 interneurons that are less responsive to sounds in light also have a smaller baseline fluorescence in light, an effect that is not observed for other L1 interneurons (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of baseline fluorescence shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "bfcf8e1d-2bff-4212-a0f5-bb1d9684628d",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C63",
+      "claim": "The model can reproduce boosting of visual responses by sounds if excitatory neurons have a simple non-linear response function with a low, subthreshold output gain and a high, supra-threshold gain.",
+      "claim_type": "EXPLICIT",
+      "source": "We then showed that the same model can reproduce boosting of visual responses by sounds (Figure 7D,E) if excitatory neurons also have a simple non-linear response function. When excitatory neurons have a low, subthreshold output gain and a high, supra-threshold gain (Figure 7A), it is possible to reproduce the observations that the response to sound alone (low gain regime) is weaker than the bimodal boosting effect (high-gain regime) (Figure 7D\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on computational modeling shown in Figure 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "6a6adfc9-5e51-4af7-a457-99b4c0a2162f",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C64",
+      "claim": "Sound-driven boosting of visual responses could rely on dendritic calcium spikes in apical dendrites of layer 2/3 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Apical dendrites of layer 2/3 pyramidal cells are known to produce large calcium spikes which boost somatic output when somatic activity coincides with excitatory inputs arriving in the apical tree (Larkum et al., 2007). As AC axon terminals are concentrated in layer 1 where they likely contact the apical dendrites of pyramidal cells, sound-driven boosting of visual responses could rely on this dendritic phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from known dendritic properties and anatomical connectivity, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "1063b983-33a2-4815-9af3-4f24d6c8067f",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C65",
+      "claim": "A minimal circuit including a direct excitation from auditory cortex onto L2/3 pyramidal cells and an indirect inhibition via a subpopulation of L1 interneurons is sufficient to provide a context-dependent auditory modulation that emphasizes visual events coincident with loud sound onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data and modeling indicate that a minimal circuit including a direct excitation from auditory cortex onto L2/3 pyramidal cells and an indirect inhibition via a subpopulation of L1 interneurons is sufficient to provide a context-dependent auditory modulation that emphasizes visual events coincident with loud sound onsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on integration of experimental data and computational modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "801d34ca-2204-429b-bf23-861e0bdd17e8",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C66",
+      "claim": "V1-projecting neurons have a different bias in the distribution of sound envelope features they encode, as compared to layer 2/3 neurons in AC and also to layer 5 in which they are located.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we showed that V1-projecting neurons have a different bias in the distribution of sound envelope features they encode, as compared to layer 2/3 neurons in AC and also, although to a lesser extent, as compared to layer 5 in which they are located.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes findings from the experimental data on feature distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "f784e8f7-e2ce-4a10-89be-e06e07b49454",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C67",
+      "claim": "The V1-projecting neuron population predominantly encodes loud sound onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the V1-projecting neuron population predominantly encodes loud sound onsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "53a892ba-c0d8-452e-a884-61ff295ec5b5",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C68",
+      "claim": "V1-projecting neurons are gated by a context-dependent inhibitory mechanism likely implemented by a subpopulation of L1 interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, they are gated by a context-dependent inhibitory mechanism likely implemented by a subpopulation of L1 interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes findings from the experimental data on context-dependent responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "7ba9f015-a2e3-48eb-b457-f9d5ff4fc447",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C69",
+      "claim": "The impact of AC inputs on V1 representations is to produce a strong boosting of responses to dynamical visual stimuli coincident with different sound envelope features, particularly with loud sound onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, their impact on V1 representations is to produce a strong boosting of responses to dynamical visual stimuli coincident with different sound envelope features, particularly with loud sound onsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes findings from the bimodal stimulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "d968201d-7816-4fc2-9399-a844df62db4e",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C70",
+      "claim": "In layer 2/3, there is a balance between the main neuron types that signal the beginning and the end of sounds with equivalent fractions of neurons responding to quiet or loud onsets and loud offsets.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed earlier, in layer 2/3, there is a balance between the main neuron types that signal the beginning and the end of sounds with equivalent fractions of neurons responding to quiet or loud onsets and loud offsets (Figure 1F, note that 'tonic +loud OFF' neurons are included in this count. Quiet offset neurons are rare and not robustly detected across datasets. Detection of tonic responses by clustering is also variable.).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1F and relates to previous observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "d1fa3eef-5e50-4bcb-bef1-a36c829707c5",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C71",
+      "claim": "In upper layer 5, the distribution becomes more biased toward loud onsets at the expense of offset neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In upper layer 5, the distribution becomes more biased toward loud onsets at the expense of offset neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of feature distributions across layers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "bbe45536-73b3-4e11-8064-00c116936d0b",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C72",
+      "claim": "In the layer 5-located V1-projecting cells, half of the neurons respond to loud onsets and 10% of the cells to loud offsets.",
+      "claim_type": "EXPLICIT",
+      "source": "a trend that is further increased in the layer 5-located V1-projecting cells in which half of the neurons respond to loud onsets and 10% of the cells to loud offsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of V1-projecting neuron responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "370898a8-d744-45a3-8e53-6e356aa904fe",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C73",
+      "claim": "Similar results have been found in somatosensory cortex for neurons projecting to secondary somatosensory or motor cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results have been found in somatosensory cortex for neurons projecting to secondary somatosensory or motor cortex (Chen et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research in somatosensory cortex.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "1092ce7f-b075-42cf-89f9-e98143ad398d",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C74",
+      "claim": "Projection specificity can be a determinant of feature selectivity, at least for some intensity modulation features at sound onsets and offsets.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that projection specificity can also be a determinant of feature selectivity, at least for some intensity modulation features at sound onsets and offsets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental findings on feature distributions in projection neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "53a44577-cb9d-40ab-8d73-b49b583b9fbf",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C75",
+      "claim": "Layer 2/3 neurons in V1 are more impacted by abrupt sounds with loud onsets than by sounds with softer onsets.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of these fine adjustments of feature distributions, layer 2/3 neurons in V1 are more impacted by abrupt sounds with loud onsets (e.g. down-ramps) than by sounds with softer onsets (e.g. up-ramps).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data on V1 responses to different sound types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "02eebe6a-3af8-429b-86ee-3e6ed8bf4e79",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C76",
+      "claim": "The asymmetry in V1 responses to different sound types is particularly striking for excitatory effects seen in light or with visual stimuli, but less pronounced for inhibitory effects in the dark.",
+      "claim_type": "EXPLICIT",
+      "source": "This asymmetry is particularly striking for excitatory effects seen in light or with visual stimuli (Figures 3B and 6), but less pronounced for inhibitory effects in the dark (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of data from different experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "882fb9df-fa26-4a23-9dec-55ec2659491f",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C77",
+      "claim": "L2/3 V1 pyramidal cells may receive projections almost exclusively from AC loud onset neurons while interneurons providing inhibition in the dark still receive a significant fraction of quiet onset and loud offset inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus possible that the projection targets also depend on encoded features. For example, L2/3 V1 pyramidal cells may receive projections almost exclusively from AC loud onset neurons while interneurons providing inhibition in the dark still receive a significant fraction of quiet onset and loud offset inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the observed asymmetries in responses.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "2a3244d4-0607-4ac2-8640-1acf025f71a5",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C78",
+      "claim": "Context-dependent inhibition could serve to decrease V1 activity in the dark when visual information is irrelevant for sound source localization, while leaving possibilities to integrate auditory and visual information in light conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it reconciles conflicting reports of sound-induced inhibition or excitation in V1 (Ibrahim et al., 2016; Iurilli et al., 2012). Second, context-dependent inhibition could serve to decrease V1 activity in the dark when visual information is irrelevant for sound source localization, while leaving possibilities to integrate auditory and visual information in light conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the functional role of context-dependent inhibition.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "08a7be72-1c0c-4f75-85b1-da9a94f596c0",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C79",
+      "claim": "The context-dependence of auditory responses in V1 is reminiscent of the observation that AC to V1 projections, activated by loud sounds and acting through L1, boost preferred orientation responses in V1 and inhibit non-preferred orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "The context-dependence of auditory responses in V1 is reminiscent of the recent observation that AC to V1 projections, activated by loud sounds and acting through L1, boost preferred orientation responses in V1 and inhibit non-preferred orientations (Ibrahim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim relates current findings to previous research through citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "968f7fa0-2175-46a1-8b91-9b612bf2b0b3",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C80",
+      "claim": "Only VIP-negative interneurons receive AC inputs in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "compatible with the observation that only VIP-negative interneurons receive AC inputs in V1 (Ibrahim et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "e36475ba-4119-4a04-bf4b-58496a29971d",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C81",
+      "claim": "L1 interneurons serve other functions such as disinhibition of L2/3 in various contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "and the observation that L1 interneurons serve other functions (Hattori et al., 2017), such as disinhibition of L2/3 in various contexts (Fu et al., 2014; Lee et al., 2013; Letzkus et al., 2015; Pfeffer et al., 2013; Pi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research on L1 interneuron functions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "45d27867-c30f-4fdb-9251-9db82d48e8c0",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C82",
+      "claim": "Visual responses in AC do not modulate a fraction of the AC input to V1, based on context-independent responses of retrogradely identified V1-projecting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We can however exclude that visual responses in AC (Morrill and Hasenstaub, 2018) modulate a fraction of the AC input to V1, based on context-independent responses of retrogradely identified V1-projecting cells (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data and citation to previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "9dc9287d-db66-43a4-b740-ef5e645f3dfc",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C83",
+      "claim": "The context-dependence of auditory responses is restricted to V1 and not observed in associative areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our data obtained outside V1 indicate that, independent of the exact mechanism of context-dependence of auditory responses, this phenomenon is restricted to V1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison of V1 and neighboring area responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "12720811-03e3-4eff-a428-b3c9b4977977",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C84",
+      "claim": "AC projections to associative areas impact the local circuit differently than in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that AC projections to associative areas impact the local circuit differently than in V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed differences between V1 and associative areas.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "4e61bffa-aad2-4c62-b281-21bc305860e5",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C85",
+      "claim": "The large amplitude of the sound-induced boosting as compared to the weaker responses observed when sounds are played without coincident visual input points toward a threshold mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The large amplitude of the sound-induced boosting as compared to the weaker responses observed when sounds are played without coincident visual input (Figures 3 and 5 vs Figure 6, see also Figure 7) points toward a threshold mechanism, allowing for amplification of the auditory input only if sufficient visual input concomitantly arrives.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from comparison of unimodal and bimodal responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "a9a15699-a78a-444a-af79-9e8b54a1ac58",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C86",
+      "claim": "Amplification of L1 input by coincident somatic inputs triggering calcium spikes in apical dendrites has been described both in L5 and L2/3 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, amplification of L1 input by coincident somatic inputs triggering calcium spikes in apical dendrites has been described both in L5 (Larkum et al., 1999) and L2/3 (Larkum et al., 2007) pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research on dendritic mechanisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "f9c6b0a2-51e0-4a74-a1ec-9ed27b069edb",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C87",
+      "claim": "A cholinergic input to visual cortex, known to increase cortical responses via disinhibition, could contribute to modulation of visual responses by sounds in V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, as down-ramping sounds are startling stimuli, a cholinergic input to visual cortex, known to increase cortical responses via disinhibition (Fu et al., 2014; Letzkus et al., 2015; Letzkus et al., 2011) could also contribute to modulation of visual responses by sounds in V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about potential mechanisms, supported by citations to previous research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "b61ad21a-21dd-4264-81c0-2c19c2f8f833",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C88",
+      "claim": "Sound-induced boosting is a strong effect in V1 which tightly relates to coincidence with the loud onsets of sounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of the mechanism, our data show that sound-induced boosting is a strong effect in V1 which tightly relates to coincidence with the loud onsets of sounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes key findings from the bimodal stimulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "a0a334d8-27d4-4218-a989-99e636f4df3c",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "claim_id": "C89",
+      "claim": "The boosting effect could provide a powerful way to highlight, in visual space, the visual events potentially responsible for the sound, and thus might be an element of the cortical computations related to the localization of sound sources.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting hypothesis for the role of this mechanism, among other possibilities, is that this effect could provide a powerful way to highlight, in visual space, the visual events potentially responsible for the sound, and thus might be an element of the cortical computations related to the localization of sound sources (Stein and Stanford, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative about the functional role of the boosting effect, with citation to relevant research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "V1-projecting neurons in auditory cortex (AC) are predominantly located in layer 5 and show enrichment for loud onset responses (48% of clustered neurons) compared to layer 2/3 (21%) and layer 5 overall (36%). These neurons also convey other envelope features and some frequency information, indicating projection specificity influences feature selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C19, C22-C26, C66-C67, C70-C72, and C74 collectively demonstrate through two-photon calcium imaging with retrograde labeling that V1-projecting AC neurons show a distinct bias toward loud onset encoding. The quantitative data (Figure 1F) and statistical comparisons (\u03c72 test, p<10\u22129) provide strong evidence. Electrophysiological validation (Figure 1\u2014figure supplement 2) and frequency tuning data (Figure 1\u2014figure supplement 3) further support the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "c3579bee-0501-4113-906c-c0b3e327496d",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Auditory responses in V1 are context-dependent: sounds produce net inhibition in darkness and net excitation in dim light. This context-dependence arises within V1 (not in AC inputs), is sufficient when the contralateral eye is covered, and shows stronger asymmetry for loud onsets in excitatory conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C20, C30-C36, C38, C75-C76 are well-supported by calcium imaging data from 18,925 V1 neurons across multiple conditions (Figure 3B,C). The context-dependence is demonstrated with appropriate controls including eye-tracking to exclude saccade artifacts (C27-C29, C35), imaging of V1-projecting AC neurons showing no modulation (C38, Figure 3F), and contralateral eye occlusion experiments (C34). Statistical significance is shown (Wilcoxon signed rank test, Figure 3C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "d8139696-8e4e-434c-ae61-9a4e183bf1c9",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Context-dependent auditory inputs to V1 are mediated by direct AC to V1 projections, as demonstrated by muscimol inactivation and chemogenetic silencing experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by pharmacological (muscimol) and chemogenetic (hM4Di/CNO) inactivation experiments (Figure 4). Muscimol injections almost completely abolished auditory responses in V1 (C40), and targeted chemogenetic inhibition of V1-projecting AC neurons decreased sound responses (C41). However, the chemogenetic effects were more variable and incomplete, likely due to incomplete targeting of all V1-projecting neurons as acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A small subpopulation of layer 1 interneurons (12.8% significantly activated in dark, 4.9% responding more in dark than light) gates cross-modal information flow in a context-dependent manner. This is the only supragranular GABAergic population showing this property, while L2/3 neurons (both excitatory and inhibitory) show uniform context-dependent responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C42-C51, C68 are supported by calcium imaging of identified GABAergic neurons using GAD2-Cre mice (Figure 5). Statistical analysis (Wilcoxon rank-sum test, p<0.01) identifies the specific L1 interneuron subpopulation with context-dependent properties (C44-C49). The comparison with L2/3 neurons (C42, C45, C50) strengthens the conclusion. The inference that this population gates information flow (C2, C51) is reasonable given the data, though the mechanism requires modeling support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "3382897f-379b-4098-ac87-530a994abdc4",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "When sound coincides with visual stimuli, visual responses in V1 are boosted, most strongly after loud sound onsets. This boosting is visible at population level, AC-dependent, affects 11% of neurons significantly, and is preferential for loud onsets over quiet onsets. The effect is stronger in V1 than in neighboring associative areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C21, C52-C60, C69, C88 are well-supported by bimodal stimulation experiments (Figure 6). Statistical analysis using Generalized Linear Model (p<0.05) identifies 11% of neurons with significant supra-additive boosting (C52). Clustering analysis (7 clusters, 49.5\u00b111.2% variance explained, C54) with bootstrap testing demonstrates boosting across multiple cell types responding to visual onsets (C56). Muscimol inactivation confirms AC-dependence (C53). The preferential boosting by loud onsets is supported by comparison with up-ramps (C57) and relates to earlier findings on AC projection bias (C1, C19).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "f4dfe840-a7e0-48b8-a14f-d5e7fd7f54a6",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A minimal computational model incorporating AC excitation of both pyramidal cells and L1 interneurons, with visual modulation of interneurons and non-linear response functions in both populations, can explain both context-dependent inhibition and visual response boosting. The model suggests threshold mechanisms and possible dendritic calcium spike involvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C61-C65, C85 present a computational model that integrates the experimental findings. The model successfully reproduces key observations: context-dependent sign inversion (C61, Figure 7B-C) and boosting effects (C63, Figure 7D-E). Supporting experimental observation of baseline fluorescence changes in the relevant L1 interneuron subpopulation (C62, Figure 7B inset) provides biological plausibility. The proposed dendritic mechanism (C64) is speculative but well-grounded in cited literature (Larkum et al., 2007). The model is appropriately described as 'minimal' and sufficient rather than unique or complete.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "321278dd-76bf-4e16-b01e-c68d9972d0cf",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Areas adjacent to V1 (secondary visual or associative areas) display excitatory responses to sounds in both lit and dark conditions, unlike V1. This context-dependence is restricted to V1, indicating AC projections impact local circuits differently across cortical areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C83-C84 are supported by imaging data from areas outside V1 (Figure 3D). The comparison clearly shows that neighboring areas lack the context-dependent sign inversion observed in V1. The inference that AC projections impact circuits differently (C84) is reasonable given the data, though the underlying mechanisms remain unexplored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "d3f51583-6007-49e9-af74-c0ceadb548cf",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sounds, especially those with loud onsets, occasionally trigger predominantly horizontal saccadic eye movements and changes in pupil diameter. In lit conditions, saccades trigger responses in V1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by eye-tracking data (Figure 3A-B, Figure 2D). These observations are important for experimental design as they necessitate trial filtering to exclude saccade-related confounds. The data justify the authors' decision to exclude trials with saccades >2\u00b0 visual angle (84% of trials retained).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "76bbf263-2507-433a-99d4-96fe54270b96",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about multisensory integration, auditory-visual connections, and auditory cortex feature encoding, including the existence of intensity-tuned onset/offset neurons and the role of temporal coincidence in multisensory perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C18 are background/context claims supported by appropriate citations to prior literature. These establish the scientific foundation for the current work. C18 involves some inference about sound types and neuron activation but is reasonable given cited work (Deneux et al., 2016b).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "f4965752-5a0d-4d17-a313-f4d4655c4ea1",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Discussion claims relating current findings to prior work, including similar results in somatosensory cortex, reconciliation with conflicting prior reports, connections to orientation tuning studies, VIP-negative interneuron involvement, and potential mechanisms including dendritic calcium spikes and cholinergic modulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73, C78-C82, C86-C87 appropriately contextualize the findings within existing literature through citations. C78 and C87 are somewhat speculative about functional roles and mechanisms but are clearly presented as hypotheses. C82 makes a specific exclusion claim based on data (Figure 3F) and is well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    },
+    {
+      "id": "fc9f2386-8a9a-4cd9-a089-16f8498c2ad6",
+      "content_id": "2e4bda04-f40b-45d6-9ff5-2e95df022cd3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Speculative claims about potential mechanisms and functional roles: L2/3 pyramidal cells may receive projections almost exclusively from AC loud onset neurons while interneurons receive mixed inputs; the boosting effect might highlight visual events responsible for sounds and contribute to sound source localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77 and C89 are explicitly speculative (C77: 'It is thus possible'; C89: 'An interesting hypothesis'). While C77 is a reasonable inference from the observed asymmetries in responses (C76), it lacks direct experimental support. C89 proposes a functional role that is plausible given the data but would require behavioral experiments to validate. These are appropriately presented as hypotheses for future work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:18:42.740503Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b8f7c32b-4106-4e14-87bf-76fe41c0aff9",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "56aeb99b-6c3e-4a6c-a36a-c5cdc942023b",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "df7d5cfe-0afe-47ec-8736-2d9f783760c6",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "ad1636e5-0ecf-4d1d-ab5d-2cd36ea30eb1",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "130ad618-0219-491a-980c-bf0e485e0d2e",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "e702a122-7b04-4d71-82ac-d840129d5391",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "cc91ff5f-98bc-4bca-96d7-8755f9b51a2e",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "801d34ca-2204-429b-bf23-861e0bdd17e8",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "f784e8f7-e2ce-4a10-89be-e06e07b49454",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "d968201d-7816-4fc2-9399-a844df62db4e",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "d1fa3eef-5e50-4bcb-bef1-a36c829707c5",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "bbe45536-73b3-4e11-8064-00c116936d0b",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "1092ce7f-b075-42cf-89f9-e98143ad398d",
+      "result_id": "e0870185-dfdd-4f1b-9501-dfbffa50fcbe"
+    },
+    {
+      "claim_id": "719dae03-fb20-4297-bc4a-6eea9343f11a",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "536846ee-0695-44c5-82d3-4a17560d89c7",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "81077061-1e4f-4b1c-8e83-a85237bf685b",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "9eb99aef-a58d-4ade-af1b-1a69cba605ce",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "ee5eea8e-85b4-4211-bf24-c10fc3e855e7",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "8a7e763d-efd9-4f32-8a71-f3c0dba089b7",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "7d4ea121-590b-4ab0-8f8f-b102f257ab0a",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "527a51ef-4fbd-443c-91d4-09976f7a9c2b",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "a8d657bb-8811-4adb-9c8a-cbf2503763fe",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "99d29457-afd8-43ab-b6bc-36be7d1364c6",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "53a44577-cb9d-40ab-8d73-b49b583b9fbf",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "02eebe6a-3af8-429b-86ee-3e6ed8bf4e79",
+      "result_id": "c3579bee-0501-4113-906c-c0b3e327496d"
+    },
+    {
+      "claim_id": "a42d54eb-fd6b-4a87-abd5-fd4b395e1edf",
+      "result_id": "d8139696-8e4e-434c-ae61-9a4e183bf1c9"
+    },
+    {
+      "claim_id": "8d6aed9e-5546-4ef8-8fb9-ce2fc3077c9a",
+      "result_id": "d8139696-8e4e-434c-ae61-9a4e183bf1c9"
+    },
+    {
+      "claim_id": "cf08cf8e-7f47-4833-aeff-335c2507e53b",
+      "result_id": "d8139696-8e4e-434c-ae61-9a4e183bf1c9"
+    },
+    {
+      "claim_id": "f62edbaf-85cf-4ba6-a4de-e5c41a944654",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "eab14fc8-9cfe-491b-85ec-62779f0d87e8",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "1c4d0773-880b-41ee-b1da-dd128c0ec26d",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "8ed79614-63a0-4ebc-b21a-6fa98cfeebfb",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "16ea649b-6077-4e48-9133-34df96a3a38d",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "c170e8e3-0a70-4fcb-8e2a-b033b6ac664f",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "d28aa5f6-a72b-4ce0-bc1e-2cc8b64ca18a",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "fd231e3e-9988-4eee-84b8-ef41f458a059",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "d7bd0c10-9c1d-488a-be38-f54282e3d55f",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "e24b43ee-0268-43fc-ac12-fd8bde8b91d8",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "18789181-1181-416d-a3de-21b31a4f7186",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "53a892ba-c0d8-452e-a884-61ff295ec5b5",
+      "result_id": "d3ae2884-dba2-4029-aac5-e87d9900d9a4"
+    },
+    {
+      "claim_id": "a975f54f-bd90-498b-a6d0-a1bf579a7c24",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "91c321f1-0e74-456a-887b-ad148e9ea67f",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "c8f45059-1be3-4b87-b359-2527968bf3ab",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "19f61d48-4fa8-4486-b0b5-76faa3f91fbc",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "099d53cb-08f5-4f7b-8e64-7b1c57b7a453",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "7ff37f62-ea94-4794-ae91-74c95f783705",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "58daee02-26d2-490c-8102-1b966074c347",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "4e8381fd-c160-410e-bc5b-668d9ef19c42",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "dedf6ebd-914f-4cb5-bdd7-cc5f6e805c92",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "cb78565e-1744-4946-ba35-30fed7c4e837",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "f228ab61-e832-415c-80a4-8b1d114bbf78",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "7ba9f015-a2e3-48eb-b457-f9d5ff4fc447",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "b61ad21a-21dd-4264-81c0-2c19c2f8f833",
+      "result_id": "3382897f-379b-4098-ac87-530a994abdc4"
+    },
+    {
+      "claim_id": "0eac4b21-de30-4ce2-b3ed-48d83507a543",
+      "result_id": "f4dfe840-a7e0-48b8-a14f-d5e7fd7f54a6"
+    },
+    {
+      "claim_id": "522ad3fa-8156-4527-86c5-c57a4d13d779",
+      "result_id": "f4dfe840-a7e0-48b8-a14f-d5e7fd7f54a6"
+    },
+    {
+      "claim_id": "ee0d0d54-1038-44f2-8f93-1af6ea44bd04",
+      "result_id": "f4dfe840-a7e0-48b8-a14f-d5e7fd7f54a6"
+    },
+    {
+      "claim_id": "bfcf8e1d-2bff-4212-a0f5-bb1d9684628d",
+      "result_id": "f4dfe840-a7e0-48b8-a14f-d5e7fd7f54a6"
+    },
+    {
+      "claim_id": "6a6adfc9-5e51-4af7-a457-99b4c0a2162f",
+      "result_id": "f4dfe840-a7e0-48b8-a14f-d5e7fd7f54a6"
+    },
+    {
+      "claim_id": "1063b983-33a2-4815-9af3-4f24d6c8067f",
+      "result_id": "f4dfe840-a7e0-48b8-a14f-d5e7fd7f54a6"
+    },
+    {
+      "claim_id": "4e61bffa-aad2-4c62-b281-21bc305860e5",
+      "result_id": "f4dfe840-a7e0-48b8-a14f-d5e7fd7f54a6"
+    },
+    {
+      "claim_id": "a94c2885-ca69-4f30-8d01-c70bc70489d4",
+      "result_id": "321278dd-76bf-4e16-b01e-c68d9972d0cf"
+    },
+    {
+      "claim_id": "9dc9287d-db66-43a4-b740-ef5e645f3dfc",
+      "result_id": "321278dd-76bf-4e16-b01e-c68d9972d0cf"
+    },
+    {
+      "claim_id": "12720811-03e3-4eff-a428-b3c9b4977977",
+      "result_id": "321278dd-76bf-4e16-b01e-c68d9972d0cf"
+    },
+    {
+      "claim_id": "ad543ae2-88ce-4b1e-b881-51795ec669d7",
+      "result_id": "d3f51583-6007-49e9-af74-c0ceadb548cf"
+    },
+    {
+      "claim_id": "6d4151f2-bdf5-44cb-94d0-6cc239c13750",
+      "result_id": "d3f51583-6007-49e9-af74-c0ceadb548cf"
+    },
+    {
+      "claim_id": "df8265ed-abd2-4285-b75c-fdae91dbc0e6",
+      "result_id": "d3f51583-6007-49e9-af74-c0ceadb548cf"
+    },
+    {
+      "claim_id": "3c1876eb-4f79-4479-b481-8f37ae3d4698",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "bcebc1e0-0398-415e-b419-a59ba7ff3f10",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "219e1469-160e-435b-af63-6a75eec5dddf",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "f7d5ca84-2e39-4a1e-933c-e1390ab090c7",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "dd209964-7f87-4d59-a3b4-38105cfa5853",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "c972d29c-0cea-4e50-a875-941544d52f1c",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "2ecc242f-802c-4a99-acc4-bd52eb7130e8",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "e9a16662-a78c-408f-a740-7626fc6a801f",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "bd52e8de-5db2-46c4-92bc-b11c49b59cb7",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "5404a501-aaca-485f-ad4f-e65163765e6a",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "b4f1ea5c-d306-468a-8b6f-076dc3508925",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "ae44da76-5ab2-431f-b9e7-45bd317795c0",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "9adceffb-1c19-40eb-988e-56ba1a00cbc4",
+      "result_id": "76bbf263-2507-433a-99d4-96fe54270b96"
+    },
+    {
+      "claim_id": "370898a8-d744-45a3-8e53-6e356aa904fe",
+      "result_id": "f4965752-5a0d-4d17-a313-f4d4655c4ea1"
+    },
+    {
+      "claim_id": "2a3244d4-0607-4ac2-8640-1acf025f71a5",
+      "result_id": "f4965752-5a0d-4d17-a313-f4d4655c4ea1"
+    },
+    {
+      "claim_id": "08a7be72-1c0c-4f75-85b1-da9a94f596c0",
+      "result_id": "f4965752-5a0d-4d17-a313-f4d4655c4ea1"
+    },
+    {
+      "claim_id": "968f7fa0-2175-46a1-8b91-9b612bf2b0b3",
+      "result_id": "f4965752-5a0d-4d17-a313-f4d4655c4ea1"
+    },
+    {
+      "claim_id": "e36475ba-4119-4a04-bf4b-58496a29971d",
+      "result_id": "f4965752-5a0d-4d17-a313-f4d4655c4ea1"
+    },
+    {
+      "claim_id": "45d27867-c30f-4fdb-9251-9db82d48e8c0",
+      "result_id": "f4965752-5a0d-4d17-a313-f4d4655c4ea1"
+    },
+    {
+      "claim_id": "a9a15699-a78a-444a-af79-9e8b54a1ac58",
+      "result_id": "f4965752-5a0d-4d17-a313-f4d4655c4ea1"
+    },
+    {
+      "claim_id": "f9c6b0a2-51e0-4a74-a1ec-9ed27b069edb",
+      "result_id": "f4965752-5a0d-4d17-a313-f4d4655c4ea1"
+    },
+    {
+      "claim_id": "882fb9df-fa26-4a23-9dec-55ec2659491f",
+      "result_id": "fc9f2386-8a9a-4cd9-a089-16f8498c2ad6"
+    },
+    {
+      "claim_id": "a0a334d8-27d4-4218-a989-99e636f4df3c",
+      "result_id": "fc9f2386-8a9a-4cd9-a089-16f8498c2ad6"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34"
+    ],
+    "result": "TbDYRK (Tb927.10.15020) is a divergent DYRK kinase with atypical structural features. Phylogenetic analysis places it in a paraphyletic DYRK2 group, and it contains divergent DH-box and NAPA-1 motifs, lacks NAPA-2, has three long inserts in the kinase core, and possesses an unconventional DFS motif (S856 instead of G) and HxY activation loop motif (H866 instead of a phosphorylable residue).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C30, C33-C34 are supported by phylogenetic analysis (Figure 1a), multiple sequence alignments (Figure 1\u2014figure supplement 1, 2), and sequence comparisons across species. The structural characterization is based on direct sequence data and comparative analysis with well-characterized DYRK family members from model organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "TbDYRK activity is required for slender to stumpy differentiation in T. brucei. TbDYRK KO cells show reduced differentiation competence (23% vs 60% growth inhibition in WT), while ectopic expression of active TbDYRK (NM) enhances differentiation (86% growth inhibition). The K592A 'kinase dead' mutant retains ~48% activity and acts as a dominant negative. In vivo, ectopic NM expression drives earlier differentiation at lower parasitemia with increased PAD1 expression and G1/G0 arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44 are well-supported by in vitro growth assays (Figure 2a), kinase activity assays, in vivo mouse infection experiments (Figure 2b-d), and cell cycle analysis. The data consistently demonstrate TbDYRK's role in differentiation across multiple experimental approaches with appropriate controls (WT, KO, NM, K592A mutants).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "N-terminal phosphosites (T76, S77, S472) and the HxY activation loop motif are essential for TbDYRK activity. Mutations T76A, S77A, and S472A completely abolished kinase activity. Mutations in the HxY motif (H866A, Y868F, H866A_Y868F) severely reduced activity to 6.84%, 10.54%, and 18.02% of NM levels, respectively. The S472A mutant generated resistance to 8-pCPT-cAMP treatment, suggesting dominant-negative effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 are supported by kinase activity assays (Figure 3c) and phenotypic analysis (Figure 3a). Multiple independent mutants were tested with consistent results showing loss of activity. The phenotypic consequences correlate with the biochemical activity measurements, providing convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The three inserts in the TbDYRK kinase core are essential for phosphotransferase activity. Deletion of each insert (\u0394I, \u0394II, \u0394III) abolished kinase activity. The \u0394I mutant rendered cells resistant to 8-pCPT-cAMP despite high expression. The \u0394II mutant, despite lacking activity, produced a phenotype similar to NM expression but caused cell death upon 8-pCPT-cAMP exposure, suggesting toxicity specific to differentiation conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by kinase activity assays and phenotypic analysis (Figure 3). The viability assay (Figure 3\u2014figure supplement 2) provides direct evidence for \u0394II toxicity. However, the mechanism of \u0394II toxicity remains unclear and would benefit from further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The unconventional DFS motif (S856 instead of G) is critical for TbDYRK function and suggests a pre-activation state. Analysis of the T. brucei kinome revealed 18.5% of ePKs have unconventional DFG motifs, with the DFS motif present in 2.5% of T. brucei ePKs vs 0.4% in humans. Structural modeling predicts the DFS motif maintains a 'DFS-in' pre-active conformation. Mutation to alanine (S856A) retained ~70% activity, while mutation to glycine (S856G) reduced activity to ~13%, suggesting glycine mobility is detrimental.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 are supported by kinome analysis (Figure 4a), structural modeling (Figure 4b, Figure 3\u2014figure supplement 1), and mutagenesis experiments (Figure 4c). The modeling predictions are consistent with the functional data. However, the structural model has limitations (c-score = -2.73) and would benefit from experimental structural validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Phosphoproteomic comparison of TbDYRK KO vs WT parasites identified differential phosphorylation of 404 peptides (213 less phosphorylated, 191 more phosphorylated) on 321 proteins. TbDYRK itself was the most depleted protein. Two sites on PAD2 (S324, S309) showed reduced phosphorylation in the KO. The analysis revealed enrichment of proteins involved in gene expression regulation, posttranscriptional regulation, RNA regulation, phosphorylation, and protein/vesicle transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by quantitative phosphoproteomics with TMT labeling (Figure 5a, Supplementary file 2). The analysis showed excellent reproducibility (>99% peptide correlation, 0.88-0.99 phosphopeptide correlation, Figure 5\u2014figure supplement 1). Statistical filtering (FC>1.5, adj p<0.05) was appropriately applied. GO enrichment analysis supports functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Lysate phosphorylation analysis identified 38 phosphopeptides on 29 proteins significantly phosphorylated by active TbDYRK (NM) but not by inactive H866A mutant. Comparison of both phosphoproteomic approaches revealed 45 common proteins (|FC|>1.5) and 8 common phosphosites on 7 proteins, with 2 statistically significant sites: NOT5 S395 and cytoskeleton protein Tb927.7.3550 S1048.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 are supported by direct kinase-substrate phosphoproteomics (Figure 5b) and cross-analysis with the KO comparison (Figure 5, Supplementary file 4). The identification of common substrates between two independent approaches strengthens confidence. However, the use of procyclic lysates for the direct assay may miss bloodstream-specific substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Genetic validation identified TbDYRK substrates with opposing roles in differentiation. TbZC3H20 KO cells were unable to differentiate, showing high parasitemia, no PAD1 expression, and no cell cycle arrest, identifying TbZC3H20 as a 'stumpy inducer'. Knock-down of Tb927.4.2750 increased sensitivity to 8-pCPT-cAMP, and NOT5 depletion accelerated PAD1-positive cell generation, identifying these as 'slender retainers'. This reveals TbDYRK acts on both inhibitory and stimulatory arms of the differentiation pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 are supported by genetic knock-out/knock-down experiments with in vivo and in vitro phenotypic analysis (Figure 6a-c, Figure 6\u2014figure supplements 3-4). Multiple phenotypic readouts (parasitemia, PAD1 expression, cell cycle) provide convergent evidence. The opposing effects of different substrates logically support the dual-arm model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "TbZC3H20 regulation of differentiation depends on TbDYRK phosphorylation site T283. The TbZC3H20 T283A/- phosphosite mutant was hypervirulent, retained slender morphology, showed no PAD1 expression, and no G1/G0 arrest, phenocopying the full KO. Reintroduction of WT TbZC3H20 partially restored cell cycle arrest at peak parasitemia but did not restore PAD1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C93 are supported by CRISPR-mediated phosphosite mutagenesis and phenotypic analysis (Figure 6d-f, Figure 6\u2014figure supplements 5-7). The T283A mutation phenocopies the KO, supporting direct phosphorylation dependence. However, the incomplete rescue with WT add-back (C92-C93) raises concerns. The authors attribute this to experimental challenges (multiple transfection rounds, potential selection against pleomorphism), but this weakens the definitive link between T283 phosphorylation and TbDYRK activity. Additional experiments with inducible expression or alternative rescue strategies would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C62",
+      "C63",
+      "C96",
+      "C97"
+    ],
+    "result": "TbDYRK exhibits a pre-activated conformation maintained by the DFS motif and atypical HxY activation loop. The structural model predicts a 'DFS-in' conformation with close ATP binding pocket (Q607-K592 distance 3.5\u00c5, similar to active p38 at 3.8\u00c5) and aligned R- and C-spines. The kinase is proposed to be auto-phosphorylated on Y868 during translation and activated by phosphorylation at N-terminal sites (T76, S77, S472) in response to stumpy induction signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C5, C62-C63, C96-C97 combine structural modeling predictions with functional data. The mutagenesis data (C64-C66) support the functional importance of the DFS motif. However, the structural model has significant limitations (c-score = -2.73, estimated RMSD = 14.5\u00b13.7\u00c5, Figure 3\u2014figure supplement 1), and the pre-activation hypothesis relies heavily on computational predictions. The proposed activation mechanism (C96-C97) is speculative and based on inference from mutagenesis data and comparison to other DYRKs. Experimental structural data (e.g., crystal structure, cryo-EM) would be needed to definitively establish the pre-activated conformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Ectopic expression of TbDYRK influences total TbDYRK mRNA levels (endogenous + ectopic), with control relaxed when cells show reduced differentiation. This feedback regulation may be mediated via the 3'UTR, as the ectopic gene with an aldolase 3'UTR was not subject to the same control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by RT-qPCR data (Figure 2a, 3b, 4c middle panels). The observation that total TbDYRK mRNA levels remain relatively constant despite ectopic expression suggests feedback regulation. The 3'UTR hypothesis (C99) is a reasonable inference from the experimental design (ectopic gene uses aldolase 3'UTR), though direct testing of this mechanism was not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Comparison of TbDYRK and MEKK1 null mutant phosphoproteomes identified 12 shared proteins with reduced phosphorylation, including RBP31, KKT4, and NEK17. NEK17 shows reduced phosphorylation on T195 in both analyses, suggesting its phosphorylation requires both TbDYRK and MEKK1, either directly or indirectly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by cross-analysis of published MEKK1 data with the current TbDYRK phosphoproteomics. The identification of shared substrates suggests pathway convergence or hierarchy. The inference about NEK17 requiring both kinases (C101) is reasonable but speculative without direct testing of epistasis or sequential phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "TbDYRK's involvement in trypanosome differentiation highlights evolutionarily conserved roles of DYRK kinases in differentiation across eukaryotes. Despite conservation, TbDYRK possesses unique kinetoplastid-specific features. Like DYRK3 in other eukaryotes (which regulates stress granules and mTOR), TbDYRK\u2014with features of both DYRK2 and DYRK3\u2014may functionally connect TOR regulation and RNA binding protein dynamics with stress granules to control cell cycle exit and stumpy formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C95 are reasonable conclusions supported by the functional data. However, C102-C104 are highly speculative. While the parallel to DYRK3's role in stress granule regulation (C102, supported by citations) is interesting, the connection to trypanosome differentiation (C103-C104) is inferential and not directly tested. The authors acknowledge this speculation with 'may functionally connect' language. Direct evidence for TbDYRK involvement in stress granule dynamics or TOR regulation would be needed to support this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "TbDYRK acts as a pivotal regulator of the QS pathway, phosphorylating both 'slender retainers' (Tb927.4.2750, NOT5) to inactivate them and 'stumpy inducers' (TbZC3H20) to activate them. This positions TbDYRK at the intersection of signal transduction and posttranscriptional gene regulation, linking environmental sensing to developmental gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C113 synthesize the major findings into a coherent model. The dual role of TbDYRK on both arms of the pathway (C112) is well-supported by the genetic validation experiments (C105-C111). The link to posttranscriptional regulation (C113) is supported by TbZC3H20's known role in mRNA regulation (with citations). This represents a well-supported integrative conclusion from the study's findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background claims establishing the biological context: T. brucei uses quorum sensing to regulate differentiation, involving a signal transduction cascade with ~30 molecules including TbDYRK. Kinetoplastids separated from other eukaryotes ~500 million years ago and encode ~190 kinases. The DYRK family has five subfamilies with conserved structural features and roles in differentiation across eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C21 are background/context claims supported by appropriate citations to prior literature. These establish the scientific foundation for the current work and are not novel findings of this study. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Analysis of unconventional activation loop motifs across species revealed they are absent in yeast DYRKs, present in 1 of 11 human DYRKs and 1 of 6 Drosophila DYRKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by sequence analysis across species. This comparative analysis provides context for the prevalence of unconventional activation motifs in T. brucei (4 of 7 DYRKs, C33), suggesting this is a more developed regulatory mode in trypanosomes.",
+    "result_type": "MINOR"
+  }
+]

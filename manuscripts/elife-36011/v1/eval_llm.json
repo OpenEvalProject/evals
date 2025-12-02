@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Young APOE-\u03b54 carriers (N=51) and non-carriers (N=108) showed no significant differences in demographics, cognitive performance, or brain structure. The only cognitive difference (NAB Mazes task, p=0.03) did not survive multiple comparison correction, and no differences were found in cortical thickness, volume, area, or hippocampal volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 collectively demonstrate that the two groups were well-matched at baseline. Statistical tests with appropriate multiple comparison corrections were applied (C25), and structural MRI analyses found no significant differences (C26). This establishes that subsequent functional differences cannot be attributed to demographic, cognitive, or structural confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C93"
+    ],
+    "result": "Young APOE-\u03b54 carriers showed increased oscillatory connectivity compared to non-carriers, predominantly in beta band (224 valid connections, 13 edges p<0.05) and most robustly in Combined frequency maps (282 edges, 31 significant at edge-level). Effects were predominantly hyperconnectivity in right-hemisphere connections involving parietal cortex and precuneus, overlapping with posterior default-mode network regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 and C93 provide converging evidence from multiple statistical approaches (edge-level, cluster-level, cohort resampling) showing consistent hyperconnectivity patterns. The Combined frequency approach (C29-C30) showed enhanced sensitivity, and the spatial pattern was consistently right-lateralized (C32) with DMN overlap (C33). The findings are supported by Figure 1 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C94"
+    ],
+    "result": "Young APOE-\u03b54 carriers showed gamma-band hyperactivity (40-60 Hz and 60-140 Hz) exclusively in right-lateralized regions including lateral parietal, temporal, and frontal areas. With conservative correction, only right middle and inferior frontal gyri survived in the 60-140 Hz range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C94 describe oscillatory activity differences using TFCE-corrected voxelwise analysis. The findings are spatially specific and statistically rigorous with multiple comparison correction. The right-hemisphere lateralization matches the connectivity findings. Figure 2 provides supporting visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C95"
+    ],
+    "result": "AD patients showed strongly decreased oscillatory connectivity in predominantly parieto-temporal connections compared to elderly controls, with most significant effects in Alpha and Beta ranges. In contrast to young APOE-\u03b54 carriers, AD patients showed predominantly hypoconnectivity. No significant differences in oscillatory activity were found at AAL nodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C95 describe the AD cohort analysis using the same pipeline as the APOE-\u03b54 study. The contrast between hyperconnectivity in young APOE-\u03b54 carriers and hypoconnectivity in AD (C39) is a key finding. The lack of activity differences (C40) contrasts with the gamma hyperactivity in young carriers. Figure 3 supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Direct comparison of APOE-\u03b54 carriers and AD patients revealed specific connections showing opposite effects: one Alpha band occipital connection showed hypoconnectivity in both groups, one Beta band precuneus-parietal connection showed hyperconnectivity in APOE-\u03b54 but hypoconnectivity in AD, and three Combined analysis connections in right lateral-parietal/temporal regions showed the same opposing pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 identify specific anatomical connections with statistically significant effects in both experiments, documented in Table 2. The opposing directionality (hyperconnectivity in young APOE-\u03b54 vs. hypoconnectivity in AD) in key connections supports the hyperconnectivity-to-hypoconnectivity progression hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C96",
+      "C97"
+    ],
+    "result": "Machine learning classification using connectivity features achieved significant performance: AD vs. elderly controls (AUC=77.6%, p<0.02), APOE-\u03b54 carriers vs. non-carriers (AUC=63.5%, p<0.005). Cross-experiment classification (training on APOE-\u03b54, testing on AD) performed significantly below chance (AUC=31.8%), equivalent to 68.2% with reversed labels (p<0.14 trend).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C96-C97 demonstrate that connectivity patterns contain diagnostic information. The below-chance cross-experiment performance (C48) that becomes above-chance with reversed labels (C49) provides additional evidence for opposite connectivity patterns in young APOE-\u03b54 carriers vs. AD patients. Leave-one-out cross-validation was appropriately used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors conclude that right parietal cortex is particularly important in AD risk and development, proposing that initial hyperconnectivity/hyperactivity in this region may cascade to eventual disconnection in AD. They suggest hyperconnectivity is present decades before AD symptomology and may initially be right-dominant before spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C52 and C98-C99 represent interpretive conclusions and speculations. While the spatial overlap between young APOE-\u03b54 hyperconnectivity and AD hypoconnectivity is demonstrated, the causal cascade and temporal progression (C51-C52, C99) are speculative. The cross-sectional design cannot establish temporal relationships or causality, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors interpret their findings in the context of theories about frequency-specific neural processing: gamma oscillations reflect local processing while alpha/beta underpin long-range interactions, and higher gamma (60-140 Hz) may correlate with neuronal spiking rates. They speculate the gamma hyperactivity in APOE-\u03b54 carriers may reflect neuronal hyperactivity associated with increased amyloid-\u03b2 seen in rodent models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 appropriately contextualize findings within established theories (C53-C55 with citations). The speculation about gamma hyperactivity reflecting neuronal hyperactivity (C56) is clearly labeled as conditional ('If true then...') and appropriately tentative given the correlational nature of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The exploratory Combined frequency approach (vector sum across frequency bands) revealed more robust connectivity patterns with increased valid edge connections and enhanced sensitivity to both APOE-\u03b54 and AD-related connectivity changes compared to individual frequency bands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 describe a methodological finding supported by the data showing the Combined maps had more valid connections (C29: 282 edges) and more significant effects (C30: 31 edge-level, 19 cluster-level, 26 resampling) than individual frequency bands. This represents a useful methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on APOE-\u03b54: It is the greatest genetic risk factor for late-onset AD. APOE protein has three isoforms differing at two amino acids, plays a role in lipid transport, and APOE-\u03b54 increases amyloid-\u03b2 production through multiple mechanisms including increased APP recycling, modified LRP1 receptor interactions, less stable amyloid-\u03b2 complexes, and downregulation of insulin-degrading enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide established background information supported by appropriate citations. These are literature-based claims that contextualize the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on APOE-\u03b54 clinical associations: Carriers have increased risk of developing sporadic AD, progression from MCI to AD, and earlier age of AD onset. Within AD patients and elderly controls, APOE-\u03b54 carriers show stronger AD-like alterations including temporal atrophy and elevated tau and amyloid-\u03b2 in temporo-parietal areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 summarize established clinical and imaging findings from the literature with appropriate citations. These provide important context but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on prior M/EEG studies: Neural oscillations, particularly alpha band, are linked to white matter connectivity. APOE plays a role in myelination. Prior M/EEG studies in elderly APOE-\u03b54 carriers showed changes in alpha and delta bands. One small study (N=8) found increased theta oscillations in medial frontal cortex of young APOE-\u03b54 carriers during a working memory task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 accurately summarize prior literature with appropriate citations, establishing the gap that this study addresses (large sample of young APOE-\u03b54 carriers with resting-state MEG examining connectivity).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Comparison with prior MEG/EEG studies: Previous MEG studies identified parietal cortex as the most affected hub in AD connectivity loss. Beta band is thought important for long-range connectivity. Prior studies in elderly APOE-\u03b54 carriers found delta band differences (Cuesta et al.), and one small study (N=8) found theta increases in young carriers during working memory tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 appropriately contextualize the current findings within prior MEG/EEG literature with proper citations. The comparison highlights how this study extends prior work with larger sample size and different methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Comparison with fMRI studies: BOLD response in DMN is reduced in healthy aging and accelerated in AD. Prior fMRI studies found increased DMN connectivity in young APOE-\u03b54 carriers (Filippini et al.: hippocampal/frontal; Westlye et al.: also posterior DMN including right-hemisphere precuneus and lateral parietal). Task-based fMRI studies also showed DMN hyperactivity in APOE-\u03b54 carriers, potentially reflecting reduced network efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C69 appropriately compare the current MEG findings with prior fMRI literature, noting concordance particularly with Westlye et al.'s finding of right-hemisphere posterior DMN increases (C67). The citations are appropriate and the comparison strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The authors note that their cohort and previous studies show little evidence of cortical volume changes including hippocampal volume decreases in young APOE-\u03b54 carriers, suggesting functional changes (haemodynamic and oscillatory) can be detected before structural changes in the AD risk pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by the structural MRI analysis in this study (C26) and multiple prior studies (citations provided). The inference that functional changes precede structural changes (C71) is reasonable given the consistent pattern across studies, though longitudinal data would be needed for definitive proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Mechanistic discussion of APOE-\u03b54 effects: Rodent models show amyloid-\u03b2 accumulation with synaptic hyperactivity in early Braak stages, progressing to hypoactivity with plaques. APOE-\u03b54 leads to multiple brain effects including impaired myelination, mitochondrial dysfunction, and reduced IDE. Elderly APOE-\u03b54 carriers show increased amyloid PET uptake, and middle-aged carriers show increased amyloid-\u03b2 plaques. APOE-\u03b54 mouse models show hyperactivity even without overt pathology via decreased inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 synthesize findings from animal models and human studies with appropriate citations to provide mechanistic context for the observed hyperconnectivity/hyperactivity. The discussion appropriately distinguishes between established findings (with citations) and speculative connections to the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors note important caveats: increased amyloid-\u03b2 is not sufficient to cause AD, and APOE-\u03b54 does not guarantee AD progression. They cite PET studies showing AD-related hypometabolism in similar parieto-temporal regions, and note that areas with hyperconnectivity may be prone to amyloid-\u03b2 accumulation, supported by longitudinal studies showing hippocampal hyperactivation leading to amyloid-\u03b2 deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 provide important caveats (C81-C82) and supporting evidence from other modalities (C83-C85) with appropriate citations. The discussion appropriately acknowledges limitations of the amyloid hypothesis while connecting findings to broader literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C101",
+      "C102"
+    ],
+    "result": "Study design and methods: The study used MEG to examine resting-state neural activity in 51 APOE-\u03b54 carriers and 108 non-carriers, assessing oscillatory activity and connectivity across frequency bands decades before potential AD onset. A separate AD cohort included 14 patients meeting probable AD criteria and 11 age-matched controls. Appropriate ethical approvals were obtained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 and C101-C102 describe the study design, participant characteristics, and ethical approvals. These are factual descriptions of the methods that are clearly stated and appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

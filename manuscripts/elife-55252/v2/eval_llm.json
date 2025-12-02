@@ -1,0 +1,413 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Place cells are significantly less abundant in the lateral septum (26.5%, 100/378 cells) compared to hippocampal CA1 (63.0%, 104/165 cells), with LS cells showing significantly lower spatial information content (0.73\u00b10.7 bits/spike) than CA1 cells (1.54\u00b11.2 bits/spike, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C41, C51-C53 provide converging evidence from multiple metrics (bits/spike thresholds, place field criteria, statistical comparisons) demonstrating fewer place cells in LS versus CA1. The data are internally consistent, include appropriate statistical tests, and are validated against artificial Poisson units (C42-C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Place field sizes are comparable between LS (28.8\u00b116.6 cm) and CA1 (29.1\u00b114.7 cm), with no significant difference between regions (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C54-C56 consistently report similar field lengths in both regions with appropriate statistical testing. The data are clearly presented with means, standard deviations, and non-significant t-test results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The number of place fields per cell is similar between LS and CA1, with distributions not significantly different (KS test, p>0.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47-C49 provide detailed field counts per cell and appropriate non-parametric statistical comparison. The distributions are well-characterized and the statistical test is appropriate for comparing distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C57",
+      "C88"
+    ],
+    "result": "LS place cells are slightly but significantly less spatially accurate than CA1 cells, with LS showing greater average distance from field center (5.12 cm vs 4.70 cm, p<0.05) despite both regions having accurate place fields from the first lap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C57, C88 are supported by lap-by-lap analysis showing both regions have accurate fields initially, but LS maintains slightly lower precision. Statistical tests support the difference, though the effect size is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Place fields in both HPC and LS significantly increase firing rates with experience on the track.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by data in Figure 4G-H showing progressive increases in within-field firing across laps, with statistical significance noted for most spatial bins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C31",
+      "C32",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C67",
+      "C68",
+      "C89",
+      "C90"
+    ],
+    "result": "LS place fields show reward-biased spatial distributions and skew patterns distinct from hippocampus: LS has 1.4\u00d7 more fields in choice (reward) arms (41.1% vs 29.2%, p<0.05), and LS skew values differ significantly by travel direction relative to reward (p<0.05), while HPC skew patterns follow direction of travel regardless of reward proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C31-C32, C60-C63, C67-C68, C89-C90 provide converging evidence from field location distributions, skew analyses, and directional comparisons. Statistical tests are appropriate (chi-square for distributions, t-tests for skew). The FRAI analysis (C65-C66) rules out speed confounds. However, some LS directional skew comparisons approach but don't reach significance (p=0.09, C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The spatial distribution of place fields differs significantly between hippocampus and lateral septum (chi-square test, p<0.05), with LS showing significantly more fields in choice arms versus forced arms (p<0.001) while HPC shows no such preference (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 provide detailed field counts by maze location and appropriate statistical comparisons. The chi-square test for overall distribution and t-tests for specific arm comparisons are properly applied and support the conclusion of differential spatial biases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C108",
+      "C109"
+    ],
+    "result": "Place field probability distributions differ between HPC and LS: HPC shows peaks at decision points (forced/choice points, 200-220 cm and 80-60 cm from reward) with modest increase in final 60 cm of reward approach, while LS shows overrepresentation throughout forced arms and increased probability upon reward approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78, C108-C109 are supported by probability distributions in Figure 6H-I. The descriptive findings are clear, though the interpretation of what constitutes 'overrepresentation' could benefit from statistical comparison to uniform distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C79",
+      "C80",
+      "C106",
+      "C107"
+    ],
+    "result": "HPC-LS place cell pairs with reward-proximate fields (choice arm) show significantly higher spike cross-correlations (p<0.05 vs both forced and middle arms) with HPC leading by ~20 ms, consistent with hippocampal-to-LS information flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33, C79-C80, C106-C107 provide cross-correlation analysis with appropriate controls (shuffled spike trains) and statistical tests. The 20 ms lag is consistent with known sharp-wave ripple propagation times (C81). Controls rule out confounds from firing rate (C82) and field proximity (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Cross-correlations between reward-proximate HPC-LS cell pairs remain consistently higher than reward-distal pairs across all training periods (first, middle, last third), with no significant within-group changes across training (p>0.05), suggesting correlations are established early or not developed within sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 report appropriate within-session temporal analysis. The lack of significant changes across training periods is properly tested, and the inference (C86) appropriately acknowledges alternative explanations. However, the conclusion is somewhat limited by not examining across-session development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Spatial firing in LS place cells is not explained by correlations with speed or acceleration, with median r\u00b2 of 0.06 from multiple linear regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is supported by regression analysis showing minimal variance explained by speed/acceleration. Only 2/100 cells had r\u00b2>0.5, indicating spatial firing is largely independent of these movement variables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Place field skew cannot be explained by animal's speed, as demonstrated by highly significant relationship between skew and firing rate asymmetry index (FRAI).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 appropriately use FRAI as a speed-independent measure of asymmetry. The significant correlation between skew and FRAI validates that skew reflects genuine spatial asymmetry rather than speed artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C34",
+      "C35",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors suggest that LS relays task-relevant reward-related hippocampal spatial information to downstream areas like VTA through selective innervation by reward-proximate HPC place cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C34-C35, C91-C92 represent interpretive conclusions based on the cross-correlation and spatial distribution data. While the data support preferential representation of reward-proximate information in LS, the mechanistic claims about 'relaying' and 'selective innervation' are inferences that would require additional experiments (e.g., anatomical tracing, perturbation studies) for direct support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Higher cross-correlations between reward-proximate HPC-LS cells may result from either selective innervation by reward-proximate HPC cells or dilution of non-reward signals by competing inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C116 present mechanistic hypotheses (Models 1-3 in Figure 7D) to explain the cross-correlation findings. These are reasonable interpretations but remain speculative without direct circuit-level evidence. The authors appropriately frame these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C37",
+      "C38",
+      "C93",
+      "C95",
+      "C97",
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C110",
+      "C112",
+      "C122",
+      "C124",
+      "C125"
+    ],
+    "result": "Background claims about hippocampal-LS anatomy, place cell properties, and connections to reward systems are established by prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C11, C17-C23, C27-C28, C37-C38, C93, C95, C97, C101, C103-C105, C110, C112, C122, C124-C125 cite appropriate prior literature to establish the anatomical and functional context. These are standard background claims properly attributed to published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C21",
+      "C24",
+      "C25",
+      "C113"
+    ],
+    "result": "The authors identify knowledge gaps regarding LS spatial representation during reward seeking and hypothesize that LS place fields would be preferentially located at reward locations compared to hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16, C21, C24-C25, C113 appropriately frame the study's motivation by identifying gaps in current knowledge and stating testable hypotheses. These are properly distinguished as hypotheses rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C26",
+      "C36"
+    ],
+    "result": "The authors simultaneously recorded 452 caudodorsal LS units and 178 CA1 units from six rats during a spatial working memory task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C36 describe the basic experimental design and sample sizes. These are straightforward methodological facts supported by the methods section and histological verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Artificial Poisson-distributed LS units show significantly different and lower bits/spike distributions than actual LS units (KS test p<10\u207b\u00b9\u2075), with only 7.96% exceeding 0.8 bits/spike threshold versus 33.6% of actual units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 provide important validation that observed spatial information content exceeds chance expectations. The Poisson control is appropriate and the statistical comparison is properly conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "CA1 units have significantly higher bits/sec (1.34\u00b11.4) than LS cells (0.82\u00b11.1, p<0.001), providing a firing-rate-independent measure of spatial information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 complement the bits/spike analysis by providing rate-independent information measures. The statistical test is appropriate and the finding is consistent with the bits/spike results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Skew values do not differ significantly between uni- and bi-directional place cells in either HPC or LS (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by statistical tests in Figure 5\u2014figure supplement 4. This control analysis shows that directionality per se does not confound the skew findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "26.5% of LS cells are characterized as place cells based on bits/spike cutoff and spatial firing characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 summarizes the main prevalence finding, which is well-supported by the detailed analyses in C39-C53. This represents a clear quantitative characterization using explicit criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C96",
+      "C99",
+      "C100",
+      "C102",
+      "C111",
+      "C114",
+      "C118",
+      "C121",
+      "C123",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors speculate about various mechanisms and functional implications of their findings, including potential regional differences in LS place cell prevalence, effects of speed/acceleration on precision, roles in memory/planning, and communication to VTA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96, C99-C100, C102, C111, C114, C118, C121, C123, C127-C128 represent speculative interpretations and hypotheses about mechanisms and functions. These are appropriately framed as possibilities in the discussion but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98",
+      "C117"
+    ],
+    "result": "Prior work shows LS cells' firing may be affected by speed/acceleration and that LS place cells are less likely to contain speed/acceleration information than non-place cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C117 cite the authors' previous work (Wirtshafter and Wilson, 2019) to support interpretations. These are properly attributed to prior published findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Reward sites are overrepresented in LS place fields after being visited, and LS place cells ramp up firing during reward approach within place fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by data in Figures 6G and 5E showing spatial distributions and within-field firing patterns. These findings complement the main reward-bias results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "The significance of reward-related locations has been established downstream of LS in VTA, as inferred from VTA reactivation patterns during ripples and reward approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 is an inference based on cited VTA findings (Gomperts et al., 2015). The inference is reasonable given the cited evidence, though it represents interpretation of others' work rather than direct demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C29",
+      "C87"
+    ],
+    "result": "Summary claim that LS contains place cells with properties similar to hippocampus in field size and number but with differences in abundance and precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C87 accurately summarize the main findings from the detailed analyses. These summary statements are well-supported by the collective evidence from multiple specific results.",
+    "result_type": "MINOR"
+  }
+]

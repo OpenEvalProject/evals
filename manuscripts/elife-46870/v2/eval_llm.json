@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C8",
+      "C50",
+      "C84",
+      "C117"
+    ],
+    "result": "Climbing fiber complex spikes encode expected reward size at cue presentation. When monkeys were presented with a cue indicating a large reward, complex spike rates transiently increased (40/220 cells, 34/40 showing large-reward-specific increases), but not when cued for small rewards. This modulation occurred temporally distinct from behavior and reward delivery, indicating that climbing fibers encode reward prediction rather than reward consumption or motor execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C26-C31 provide converging quantitative evidence from population and single-cell analyses showing differential complex spike responses to large vs. small reward cues. The temporal specificity (C30, C50) and the conclusion that this represents reward prediction (C8, C84, C117) are well-supported by the data. Statistical tests and multiple analytical approaches (PSTHs, single-cell analyses, spike count distributions) strengthen the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C88",
+      "C89"
+    ],
+    "result": "Complex spike activity does not differentiate reward size at reward delivery. Population and single-cell analyses showed overlapping PSTHs for large and small rewards during delivery, with no correlation between cells' reward encoding during cue vs. delivery epochs. This indicates that complex spike reward signals are predictive rather than consummatory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 provide multiple lines of evidence (population PSTHs, single-cell comparisons, correlation analyses) demonstrating lack of reward size modulation at delivery. The inference that this dissociates reward prediction from consumption (C88, C89) is logically sound given the temporal dissociation. Statistical tests confirm non-significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C90",
+      "C102"
+    ],
+    "result": "Reward expectation does not modulate complex spike responses to movement parameters. Directionally tuned complex spikes showed no reward-dependent modulation during pursuit eye movements (preferred vs. null directions), and reward did not affect responses to target motion onset across different speeds. This indicates that reward signals and motor error signals are independently encoded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 provide statistical evidence (permutation tests, population tuning curves) showing no reward modulation of directional tuning. Claims C60-C61 demonstrate similar findings for speed. The inference that reward and error signals are independent (C90, C102) is well-supported by the temporal and parametric dissociations. Control analyses rule out confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Reward-related complex spike modulations are not explained by behavioral confounds. Extensive control analyses ruled out licking behavior and saccades/microsaccades as explanations for the observed complex spike modulation. The temporal patterns of these behaviors differed from complex spike patterns, and approximated contributions were negligible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C49 provide comprehensive control analyses including temporal pattern comparisons, trial-by-trial analyses with/without behaviors, and quantitative approximations of behavioral contributions. Multiple complementary approaches (PETHs, predicted PSTHs, drift corrections) strengthen the conclusion that the reward signal is genuine and not a behavioral artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C91",
+      "C96"
+    ],
+    "result": "Complex spike-simple spike interactions differ between movement and reward coding. During movement, complex and simple spikes showed the expected negative correlation (opposite modulation), but this relationship was absent for reward-related modulations following cue presentation. This suggests different plasticity mechanisms or network states for reward vs. error processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 demonstrate negative correlations during movement with appropriate controls (phase/direction shuffling). Claims C79-C82 show lack of correlation for reward modulation using multiple analytical approaches. The inference that different mechanisms operate (C83, C91, C96) is reasonable given the established literature on complex-simple spike interactions, though the specific mechanisms remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Simple spike responses to reward cues are heterogeneous at the single-cell level. Individual Purkinje cells showed varied responses to reward cues (some increased for large rewards, some for small, some unchanged), resulting in population-level averaging out of reward effects. This contrasts with the consistent complex spike response to large rewards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 provide clear evidence from single-cell examples and population analyses showing heterogeneous simple spike responses. The quantification of cells with different response patterns (C68-C69) and the demonstration of population averaging (C70) are well-documented. This heterogeneity is important for understanding the distinct roles of complex vs. simple spikes in reward processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C58",
+      "C59"
+    ],
+    "result": "Behavioral validation confirms reward association and modulation. Monkeys showed faster and more accurate eye velocities when tracking large-reward targets compared to small-reward targets, evident at both population and single-session levels. Choice task performance confirmed that monkeys correctly associated target colors with reward sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 provide behavioral evidence from pursuit tracking and choice tasks demonstrating that monkeys learned the reward associations. Claims C58-C59 extend this to the speed task. Statistical tests (signed-rank) confirm significance. This behavioral validation is essential for interpreting the neural findings as reward-related rather than reflecting other stimulus properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C87",
+      "C120"
+    ],
+    "result": "The cerebellum has a general role in associative learning beyond error correction. The findings suggest the cerebellum receives information about future reward size that could allow it to adjust behavior to maximize reward, extending beyond the traditional error-correction framework to include reward-based associative learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C9, C87, and C120 represent important interpretive conclusions, they extend beyond what the current data directly demonstrate. The study shows reward prediction signals exist in climbing fibers but does not demonstrate how these signals affect learning or behavior. The mechanistic link between reward signals and behavioral adjustment (C120) remains speculative without causal manipulations or learning experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Alternative plasticity mechanisms may mediate reward-related complex spike effects. The absence of expected simple spike depression following reward-related complex spike increases suggests that other plasticity rules or network state-dependent mechanisms may be engaged during reward processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C95 are largely speculative, citing literature on alternative plasticity sites and state-dependent mechanisms but not directly testing these possibilities. While the observation that classical depression is absent (C91) is supported, the specific mechanisms proposed remain hypothetical. This represents an important direction for future work but is not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Complex spike rate did not increase monotonically with target speed, possibly due to speed prior expectations. The authors speculate that because most trials used 20\u00b0/s targets, monkeys may have developed a speed prior, with violations at slower speeds potentiating responses and masking speed tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 documents the observation, but claims C104-C107 are speculative explanations. While behavioral evidence (C108) shows eye speed overshooting at low target speeds, this is indirect support for the speed prior hypothesis. The lack of monotonic speed tuning could have alternative explanations (population sampled, stimulus properties) that are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Neural findings provide mechanistic explanation for behavioral dissociation of reward and learning. Previous behavioral work showed reward size modulated movement execution but not learning itself. The current finding that directionally tuned complex spikes (which drive learning) are not modulated by reward provides a neural implementation-level explanation for this behavioral observation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 accurately cite prior behavioral and neural findings. Claim C101 makes a reasonable inference connecting the current neural results to previous behavioral results. The logic is sound: if the neural signals that drive learning (directionally tuned complex spikes) are not modulated by reward, then learning should be reward-independent. This represents a strong integration of behavioral and neural levels of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Complex spike representation of reward may be relative rather than absolute. Small reward cues, despite predicting future reward, did not elicit complex spike responses, suggesting the representation may encode relative motivational value rather than absolute reward magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C114 is supported by data (Figure 2D), but the inference that representation is relative vs. absolute (C116) is speculative. The study only tested two reward sizes, insufficient to distinguish relative from absolute coding. Additional experiments with varied reward contexts or ranges would be needed to test this hypothesis definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Cerebellar reward signals may interact with dopaminergic systems. The reward signal in climbing fibers is similar to reward expectation signals in VTA/SNc dopamine neurons. Anatomical connections exist between VTA and inferior olive, and between cerebellum and VTA, suggesting potential circuits for reward signal integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 accurately cite anatomical and functional literature establishing connections between cerebellar and dopaminergic systems. The comparison to dopaminergic reward signals (C109) is appropriate given the temporal properties. However, the functional significance of these connections for the observed reward signals is not directly tested and remains inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Neural recordings were obtained from floccular complex of two monkeys. Data included 220 Purkinje cells with complex spike recordings (148 from monkey B, 72 from monkey C), with 47 cells showing directional tuning of simple spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 provide straightforward methodological descriptions of subjects and sample sizes. These are factual statements about the data collection that are verifiable from the methods section and consistent with the reported analyses.",
+    "result_type": "MINOR"
+  }
+]

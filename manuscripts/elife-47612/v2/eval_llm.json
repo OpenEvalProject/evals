@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors established an experimental evolution system using A. baumannii ATCC 17978 in planktonic and biofilm conditions with three antibiotic treatments (no antibiotics, subinhibitory CIP, and increasing CIP concentrations). The experimental design included a 10-day pre-adaptation phase, controlled population sizes (~1\u00d710^7 CFU/mL), and selection of ciprofloxacin based on its clinical relevance and ability to penetrate biofilms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 and C100-C101 describe the experimental design with appropriate methodological justifications. The choice of CIP is well-supported by citations (C17-C20), population sizes are controlled and justified (C100), and mutation supply calculations are provided (C101). The experimental framework is clearly defined and appropriate for testing the stated hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C24",
+      "C27",
+      "C28"
+    ],
+    "result": "Planktonic populations evolved dramatically higher resistance to CIP (~160x ancestral MIC) compared to biofilm populations (~6x ancestral MIC) under evolutionary rescue conditions. Planktonic populations also evolved resistance more rapidly (10x after 24 hr) and reached higher resistance levels (20x) even under constant subinhibitory CIP exposure compared to biofilm populations (4x).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C24, C27-C28 are directly supported by experimental MIC measurements shown in Figure 1B and Table 1. The data clearly demonstrate quantitative differences in resistance evolution between lifestyles, with statistical support and multiple timepoints. The measurements follow standard clinical protocols (CLSI guidelines), strengthening the validity of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C29"
+    ],
+    "result": "The authors infer that mutations conferring higher resistance also increased fitness in planktonic populations because resistance evolved far beyond the selective requirement. They conclude that biofilm growth favors mutants with low resistance levels better adapted to biofilm life rather than high-level resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C29 are reasonable inferences from the observed data (C21-C22, C24). The evolution of resistance exceeding selective requirements (C23) is consistent with fitness advantages of high-resistance mutations in planktonic conditions. The inference about biofilm selection (C29) is supported by the consistent pattern of lower resistance in biofilm populations and is later validated by direct fitness measurements (C66, C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C56"
+    ],
+    "result": "In biofilm population B2, resistance initially increased ~50x but then declined to 6x, suggesting a highly resistant mutant was replaced by a more fit but less resistant mutant. This pattern indicates that mutants with higher-than-necessary resistance are maladaptive in biofilm conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 and C56 describe an exceptional dynamic in population B2 supported by Figure 1B data. The interpretation (C26, C56) is reasonable given the observed resistance trajectory and is later supported by genomic data showing competing mutations in different efflux pump regulators (C47-C48, C54-C55). This provides evidence for fitness trade-offs in biofilm environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "MIC measurements increased when performed in biofilm versus planktonic conditions (Table 2). Clinical isolates producing more biofilm were less resistant than non-biofilm-forming isolates. Exposing bacteria to subinhibitory antibiotic concentrations risks selection for high-level resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by Table 2 data showing higher MICs in biofilm measurements. C31 is supported by citation to Wang et al., 2018, providing external validation. C32 is supported by the experimental data (Table 1) showing 20-fold resistance increase in planktonic populations at subinhibitory CIP and is reinforced by citation. These claims provide important context for interpreting the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C83",
+      "C102"
+    ],
+    "result": "The authors argue that mutation supply was not limiting in their experiments. They calculate that ~10^6 mutations occur per day, leading to high probability (0.98) that every genome site is mutated at least once during the 12-day experiment. Fluoroquinolones and biofilm growth may further increase mutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C83 are supported by population genetics theory (citations in C33) and calculations detailed in supplementary materials (C34). The logic is sound: large population sizes (>10^5 cells) with rapid reproduction generate sufficient mutations for selection to act upon. C102 appropriately notes that CIP and biofilm may increase mutation rates further, though this is presented as additional support rather than a critical assumption. The conclusion that observed differences reflect selection rather than mutation availability is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Genomic analysis revealed signatures of strong positive selection: high nonsynonymous/synonymous ratios (8.5 planktonic, 9.7 biofilm), enrichment of indels (43% planktonic, 34% biofilm), and enrichment of intergenic mutations (~30% vs. 13.5% expected). Many intergenic mutations occurred in regulatory regions (72% planktonic, 18% biofilm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by whole-genome sequencing data with appropriate statistical analysis (C37: chi-squared test, p=0.016). The mutation spectrum is consistent with strong positive selection rather than neutral evolution. Comparisons to neutral mutation rates (C36, citing Lynch et al., 2016; Dillon et al., 2017) strengthen the interpretation. The data quality appears robust with high coverage (219\u00b151x) and genome coverage (98.7\u00b10.128%).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Planktonic populations experienced rapid selective sweeps with one or two mutations fixing, while biofilm populations maintained more contending mutations and fewer sweeps, especially at lower antibiotic concentrations. Biofilm populations were significantly more diverse than planktonic populations (Shannon index; Kruskal-Wallis, p=0.005), though increasing drug concentrations eliminated diversity differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by population genomic sequencing data shown in Figure 2 and Figure 2\u2014figure supplement 1. Statistical analysis (C41: Kruskal-Wallis test, p=0.005) supports the diversity difference. The pattern is consistent with theoretical predictions about spatial structure increasing clonal interference. The observation that high drug concentrations eliminate diversity differences (C42) provides important nuance and suggests strong selection can override lifestyle effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Drug-free control populations contained no high-frequency mutations during the experiment, suggesting the ancestral strain was already well-adapted to both planktonic and biofilm lifestyles after the 10-day pre-adaptation phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by Figure 2C-D showing no selective sweeps in controls. The inference (C44) is reasonable given the pre-adaptation protocol (C16) and the observation of fixed mutations in three genes during pre-adaptation (Supplementary file 2). This control is important for demonstrating that observed mutations in antibiotic-treated populations are responses to drug selection rather than general laboratory adaptation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Different efflux pump regulators were selected in different lifestyles. Biofilm populations primarily acquired mutations in adeL (regulating AdeFGH) and adeS (regulating AdeABC), while planktonic populations predominantly acquired mutations in adeN (regulating AdeIJK). These pumps have different substrate specificities and effects on biofilm formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 are supported by genomic sequencing data (Figure 2E, Figure 2\u2014figure supplement 2) and extensive citations describing the functions of these efflux systems. The lifestyle-specific selection of different regulators is clearly demonstrated. The mechanistic explanations (C50, C52-C53) are supported by citations, though some involve inference (e.g., C53 about why adeN is prevalent in planktonic populations). The genetic and functional characterization is thorough and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "In biofilm lines, different adeL mutations were detected after 24 hr and eventually fixed as CIP concentrations increased. This pattern suggests adeL alterations generate adaptations to the combination of CIP and biofilm, supported by increased biofilm formation in adeL mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by temporal genomic data (Figure 2B) and biofilm formation assays (Figure 2\u2014figure supplement 3). The inference (C55) that adeL mutations adapt to combined CIP+biofilm conditions is reasonable given the observed dynamics and phenotypic data. The increased biofilm formation by adeL mutants provides functional validation of the genomic observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "All planktonic populations under increasing CIP eventually underwent selective sweeps of the canonical gyrA S81L mutation. These gyrA mutations evolved in genetic backgrounds containing either adeN or pgpB mutations, with pgpB encoding a membrane-associated lipid phosphatase co-regulated by adeN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by genomic sequencing data showing consistent gyrA S81L fixation in planktonic populations. The genetic background information (C58) is from sequencing data, and the functional annotation of pgpB (C59) is supported by citation (Hua et al., 2014). The consistent evolution of this canonical resistance mutation in planktonic but not biofilm populations is a key finding demonstrating lifestyle-dependent evolutionary trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Bacterial lifestyle influences evolutionary dynamics and targets of selection for antimicrobial resistance. Planktonic populations experienced selective sweeps of topoisomerase mutations (gyrA, parC), while biofilm populations acquired mutations in efflux pump regulators (adeL, adeS). Different efflux pumps have different effects on biofilm formation and resistance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 and C95-C97 summarize the major findings supported by extensive genomic and phenotypic data (C21-C59). The conclusion that lifestyle influences AMR evolution (C60) is well-supported by the differential selection of mutations in different environments. The mechanistic explanations (C61-C62) are supported by citations and experimental data. This represents the core finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Biofilm-evolved clones were less resistant than planktonic-evolved clones (MIC 0.58 vs. 8.53 mg/L, p<0.05) but more fit in the absence of antibiotic (p=0.008). One planktonic clone with both gyrA and parC mutations showed no fitness cost with high resistance, suggesting compensatory epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 are supported by direct fitness measurements (Figure 3) with appropriate statistical tests (t-tests with reported p-values, t-statistics, and degrees of freedom). The fitness-resistance trade-off is clearly demonstrated for most clones. The exception (C67-C68) of a gyrA+parC double mutant with no fitness cost is supported by data and analogy to P. aeruginosa (citation). This challenges conventional wisdom about resistance-fitness trade-offs (C63-C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C98"
+    ],
+    "result": "Biofilm-evolved mutants were less resistant than planktonic mutants but produced more biofilm and paid little or no fitness cost in the absence of antibiotics. This cost-free resistance implies these subpopulations could persist without drug, limiting treatment options.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 and C98 synthesize findings from multiple experiments (Figures 1B, 2\u2014figure supplement 3, Figure 3). The integration of resistance, biofilm formation, and fitness data provides strong support for the conclusion. The clinical implication (C70) is a reasonable inference supported by citation (Baym et al., 2016b). This represents a key finding with important therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Lifestyle-dependent changes in susceptibility to 13 antibiotics were observed. Planktonic-evolved populations showed cross-resistance to cefpodoxime and ceftazidime (associated with adeN, adeS, gyrA, pgpB mutations), while biofilm-evolved populations showed collateral sensitivity to these cephalosporins (associated with adeL mutations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by antimicrobial susceptibility testing data (Figure 4) and genomic data linking specific mutations to phenotypes. The observation of collateral sensitivity in biofilm populations is particularly important and well-documented. The genetic associations (C74-C75) are supported by the correlation between genotypes and phenotypes across multiple clones and populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Each RND efflux pump has specificity for certain antibiotic classes. AdeABC and AdeIJK increase resistance to some \u03b2-lactams when overexpressed, while AdeFGH decreases resistance to some \u03b2-lactams by an unknown mechanism. Similar patterns have been reported in P. aeruginosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by citations (Table 4, Yoon et al., 2015; Leus et al., 2018; Azimi and Rastegar Lari, 2017) and are consistent with the experimental observations (Figure 4). The mechanistic basis for collateral sensitivity (C78) is acknowledged as unknown, which is appropriate. The cross-species comparison (C79) strengthens the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Biofilm growth may generate collateral sensitivity during treatment with CIP and potentially other fluoroquinolones, which could be exploited therapeutically. Exploiting collateral sensitivity has been proposed to counteract resistant populations in bacteria and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by multiple citations about collateral sensitivity strategies. Claim C81 is a reasonable inference from the experimental data (C71-C75) showing biofilm-specific collateral sensitivity to cephalosporins. The therapeutic implication is appropriately cautious (\"may generate\") and represents an important potential application of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Experimental evolution is a powerful method for identifying fitness-enhancing mutations. The mutations selected here (gyrA S81L, parC S80L, RND efflux pump regulators) are commonly found in clinical isolates worldwide, suggesting similar selective pressures. Evolution experiments may forecast mutations and treatment outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C84-C86 are supported by citations. The correspondence between experimentally evolved mutations and clinical isolates (C84-C85) provides important validation that the experimental system recapitulates clinically relevant evolutionary processes. The forward-looking statement about forecasting (C86) is appropriately cautious and supported by citation (Brockhurst et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Knowledge of pathogen lifestyle may be critically important for treatment design. Biofilm-forming clinical isolates are more susceptible to antibiotics than non-biofilm-forming isolates. The relationship between fitness and resistance can be altered by growth mode, with biofilms aligning resistance and fitness traits, challenging conventional wisdom about antagonistic fitness-resistance relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 synthesize the study's implications. C88-C89 are supported by citations showing clinical relevance. C90-C92 provide examples from other systems (P. aeruginosa, N. gonorrhoeae) supported by citations. C93-C94 articulate the key conceptual advance: biofilms can alter the fitness-resistance relationship. This is well-supported by the experimental data (C66, C69) and represents an important challenge to conventional understanding (C93, supported by citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C103"
+    ],
+    "result": "Biofilm populations developed collateral sensitivity to cephalosporins, and biofilm clones produced significantly more biofilm than planktonic clones across multiple CIP concentrations (p<0.05 for all concentrations tested).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 summarizes a key finding supported by Figure 4 data. Claim C103 is supported by biofilm formation assays with appropriate statistical testing (multiple t-tests with reported p-values, t-statistics, and degrees of freedom for different CIP concentrations, shown in Figure 2\u2014figure supplement 3). The consistent statistical significance across conditions strengthens the conclusion.",
+    "result_type": "MAJOR"
+  }
+]

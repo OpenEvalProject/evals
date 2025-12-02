@@ -1,0 +1,374 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C126"
+    ],
+    "result": "The experimental setup using a solenoid RF coil effectively isolates signal from the spinal cord sample, with aCSF contributing only ~5% of the total signal. The solenoid coil is oriented perpendicular to the gradient to measure diffusion perpendicular to the spinal cord, and aCSF is well-described by a single diffusion coefficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 and C126 collectively demonstrate that the experimental setup successfully isolates spinal cord signal from the surrounding aCSF bath. The low aCSF contribution (5%, C41) validates the solenoid coil design (C42, C126), and the monoexponential behavior of aCSF (C39) provides a clean reference for comparison. The regularization effects on distribution analysis are acknowledged (C40).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The NMR system achieves SNR > 500 with Gaussian noise (mean=0.001, SD=0.002), enabling detection of signal components comprising as little as 1% of total signal. Measurement variability on fixed samples is determined solely by SNR, with repeated measurements over 30 hours showing consistency comparable to background noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 and C109-C112 establish the high performance characteristics of the measurement system. The achieved SNR > 500 (C47, C111) exceeds the requirement for distribution analysis (C110), and the stability of repeated measurements (C48) demonstrates that variability is SNR-limited (C49). The system modifications (C112) are described but their individual contributions to performance are not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Approximately 25% of water in fixed spinal cord tissue is restricted on the 1 ms timescale, with the majority of water being free. The restricted fraction is consistently measured as 0.22-0.23 from both raw signal and distribution analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 provide converging evidence for the restricted water fraction from multiple analysis methods. The agreement between raw signal analysis (0.22\u00b10.002, C54) and distribution analysis (0.23\u00b10.006, C53) strengthens the result. The correction for aCSF contribution to arrive at ~25% tissue restriction (C55) is appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C67",
+      "C68"
+    ],
+    "result": "2-D DEXSY measurements reveal water exchange between free and restricted environments with an apparent exchange rate (AXR) of approximately 100 s\u207b\u00b9, with consistent behavior observed across five different spinal cord samples. Exchange between restricted components is also observed but not well-resolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C67-C68 demonstrate water exchange between compartments using DEXSY. The consistency across five samples (C67) and the quantified AXR (C68) provide robust evidence. However, the inability to resolve exchange between restricted components (C62) represents a limitation of the method that is acknowledged but not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C190",
+      "C191"
+    ],
+    "result": "A rapid exchange measurement method was developed and validated against full DEXSY, reducing measurement time from 8 hours to approximately 1 minute per exchange fraction. The rapid method yields AXR = 110\u00b130 s\u207b\u00b9, statistically consistent with full DEXSY results, with high reproducibility across samples (110\u00b120 s\u207b\u00b9 across 15 measurements on 5 samples).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C72, C75-C77, C190-C191 establish the development and validation of a rapid exchange measurement method. The statistical agreement between methods (C76) validates the approach, and the reproducibility across samples (C77) demonstrates robustness. The dramatic reduction in measurement time (C70) enables application to live tissue, fulfilling a key methodological goal (C191).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C174"
+    ],
+    "result": "Theoretical models and experimental fitting indicate that the static gradient diffusion measurement provides a window on membrane structures in the 200-1400 nm range, with an estimated volume-averaged restriction radius of R=900 nm. Structures smaller than 200 nm cannot be differentiated, while structures larger than 1400 nm show mixed free and localized water behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C83 and C174 present structure size estimates based on theoretical models and fitting. However, the authors acknowledge in the Discussion that the estimate is 'simplistic' and that the data may fall into an intermediate regime between localization and motional averaging. The heterogeneity of restriction sizes and the presence of exchange complicate interpretation. The 900 nm estimate should be viewed as approximate rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Water mobility on the millisecond timescale is very similar in live and fixed spinal cord specimens, with live tissue showing only slightly faster (non-significant) signal attenuation. Electrophysiological recordings of mono- and polysynaptic reflexes in all live samples (n=4) after 2 hours of NMR measurements confirm tissue viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 demonstrate that the experimental protocol preserves tissue viability and that water diffusion properties are similar between live and fixed tissue on the measurement timescale. The electrophysiological validation (C86-C88) provides strong evidence that the NMR measurements do not compromise tissue function. The small sample size for viability testing (n=4) is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C144"
+    ],
+    "result": "D2O washing experiments demonstrate that all diffusion coefficient distribution components are primarily composed of water rather than biomacromolecules. After two successive washes with D2O aCSF, all distribution components decreased uniformly, indicating water accounts for the vast majority of measured signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 and C144 provide clear evidence that the measured signal arises from water protons rather than biomacromolecules. The uniform decrease of all distribution components after D2O exchange (C90) is the key observation supporting this conclusion. This control experiment is critical for interpreting the restricted water components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C154",
+      "C156",
+      "C157"
+    ],
+    "result": "Delipidation with Triton X removes barriers restricting water mobility, demonstrating that lipid membranes are the sole source of water diffusion restriction in spinal cord tissue from micron to sub-micron length scales. After complete delipidation, the free water component increases from ~75% to 99%, and signal attenuation becomes monoexponential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96, C154, C156-C157 provide strong evidence that lipid membranes are responsible for water restriction. The progressive removal of restricted components during delipidation (C93-C94) and the final monoexponential behavior (C154, C156) demonstrate that proteins and other biomacromolecules do not significantly restrict water diffusion. This result is consistent with prior work (C157) and extends it to sub-micron scales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C102",
+      "C103",
+      "C158",
+      "C161"
+    ],
+    "result": "After complete delipidation and washing, the diffusion coefficient distribution is not significantly different from pure aCSF, with 99% free water and only ~1% restricted component (possibly residual Triton X). The remaining slight reduction in diffusivity (D/D\u2080=0.90) can be attributed to volume obstruction by proteins (8% of neural tissue).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C102-C103, C158, C161 describe the state of tissue after membrane removal. The near-complete conversion to free water (C100, C103) and the attribution of remaining obstruction to proteins (C158, C161) are well-supported. The speculation about residual Triton X (C102) is reasonable but acknowledged as uncertain. The consistency with obstruction models strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Variability of 1-D diffusion signal is much larger across samples than within samples, likely due to structural and size differences. In contrast, AXR measurements show similar variability across samples and repeat measurements, indicating AXR variability is SNR-driven and the measurement is insensitive to large-scale structural differences. AXR is sensitive to local (within tens of microns) surface-to-volume and permeability characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C125 provide a coherent explanation for the different variability patterns observed in diffusion and exchange measurements. The interpretation that AXR measures local membrane properties (C124) while being insensitive to sample-scale variations (C122) is well-reasoned and supported by the data. The timescale argument (C123) strengthens this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The ex vivo experimental approach with a wet/dry chamber design removes variability from blood flow and motion while providing constant oxygenation without convection artifacts. This design improves upon previous studies that used imaging (which provided no additional specificity) or perfusion (which can cause artifacts), enabling high SNR and rapid measurements ideal for live tissue diffusion studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 and C127-C136 justify the experimental design choices. The advantages of the wet/dry chamber (C131, C136) over perfusion systems (C132-C134) are well-articulated. The observation that previous imaging studies analyzed whole-sample ROIs (C128) supports the decision to forgo imaging (C129-C130). These methodological choices are appropriate for the study goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Neonatal mice (P2-P4) were studied rather than adult mice because ex vivo spinal cord viability decreases with age due to increased susceptibility to hypoxia as tissue grows larger and oxygen consumption exceeds diffusion to the center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 provide appropriate justification for the choice of neonatal tissue, supported by citations. This is a reasonable experimental design decision given the constraints of ex vivo tissue viability. However, it limits the generalizability of findings to adult tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The experimental setup reveals signal from highly restricted water pools with diffusivities three orders of magnitude lower than free water, extending the range of resolvable water mobility components beyond the two orders of magnitude reported in previous nerve tissue studies. These highly restricted pools are exclusively membrane-restricted water, not biomacromolecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 establish the enhanced resolution of the method compared to prior work. The three-order-of-magnitude range (C142) vs. two orders in previous studies (C141) demonstrates improved capability. The identification as membrane-restricted water (C140) is supported by the delipidation experiments. The comparison to biomacromolecule diffusivities (C143) and the D2O control experiments strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The data inversion approach uses regularization to stabilize distributions, which smooths and broadens peaks. A conservative approach was taken in regularization and interpretation, with individual peaks in the restricted region not interpreted as arising from specific compartment types or sizes. Future development of nonparametric diffusion models may enable more detailed interpretations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C153 appropriately acknowledge the limitations of the distribution analysis method. The conservative interpretation (C151-C152) is scientifically appropriate given the smoothing effects of regularization (C149-C150). The suggestion for future work (C153) is reasonable. This transparent discussion of methodological limitations strengthens confidence in the reported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Real-time measurements during D2O and Triton X penetration show water penetration occurs on a ~1 minute timescale (consistent with theory), while Triton X delipidation occurs over ~1 day (longer than the ~3 hour prediction). The slower delipidation is attributed to a reaction front that develops as Triton X removes membranes. No significant increase in exchange rate was observed during delipidation, contrasting with permeabilization effects reported in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C173 describe real-time monitoring of tissue perturbations. The water penetration timescale (C168) matches theoretical predictions, while the slower Triton X penetration has a reasonable explanation (C169). The lack of permeabilization (C170-C171) differs from yeast studies but is explained by the progressive removal of membranes (C172-C173) rather than transient permeabilization. The interpretation is internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "The neonatal mouse spinal cord contains mostly gray matter with structures smaller than 1400 nm including axons, dendrites, glial processes, myelin, and various organelles. However, the fixed gradient direction prevents separation of restrictions from elongated cellular structures versus round organelles. Combined pulsed and static gradient methods are suggested for future work to isolate organelle contributions and broaden the window of resolvable structure sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C176 and C183-C188 acknowledge a key limitation of the method and propose appropriate future directions. The inability to measure anisotropy (C183-C184) is an inherent limitation of the single-sided magnet design. The suggestion for combined methods (C186-C188) is well-reasoned and supported by citations. This represents an honest assessment of current limitations and productive future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198"
+    ],
+    "result": "The measured AXR of ~100 s\u207b\u00b9 is significantly faster than intracellular-extracellular exchange rates (0.5-5 s\u207b\u00b9) previously measured in neural tissue, but similar to red blood cell exchange rates due to aquaporin expression. The fast AXR can be explained by the system's resolution of membrane structures with high permeability and large surface-to-volume ratios. This is consistent with recent modeling work suggesting fast exchange rates (30-100 s\u207b\u00b9) in gray matter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C190 and C192-C198 provide context and interpretation for the measured exchange rates. The comparison to previous neural tissue measurements (C192) and red blood cells (C193) is appropriate. The mechanistic explanation involving surface-to-volume ratio (C196-C198) is well-reasoned. The consistency with recent modeling work (C194-C195) strengthens the plausibility of the findings. However, the interpretation that this represents subcellular rather than cellular exchange requires the assumption that the method resolves subcellular structures, which depends on the uncertain size estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "The fast exchange rates measured indicate that extending structure size estimation methods to neural applications beyond myelinated axons requires considering both gradient strength and diffusion encoding time. Significant exchange causes structure sizes to be overestimated, with the overestimation increasing for smaller structures due to their higher surface-to-volume ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C204 draw important implications for diffusion MRI methodology. The argument that exchange must be considered for size estimation in structures beyond myelinated axons (C202) follows logically from the measured fast exchange rates. The explanation of size-dependent overestimation (C203-C204) is mechanistically sound. This represents an important contribution to understanding limitations of current microstructure imaging methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The strong static gradient (15.3 T/m) overcomes many hardware and biological limitations of pulsed gradients. Previous work by K\u00f6pf et al. (1996) and Carlton et al. (2000) demonstrated the capability of static gradient methods on biological tissue and bacteria, with Carlton noting enhanced intracellular signal due to shorter encoding times reducing exchange effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 appropriately contextualize the current work within prior static gradient studies. The citations support the historical development of the method and its advantages. This provides appropriate background for understanding the novelty of the current application to neural tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C180",
+      "C182"
+    ],
+    "result": "The interplay between different attenuation regimes (motional averaging and localization), heterogeneity of restriction sizes, and exchange makes modeling of water diffusion in biological tissue very challenging and an important topic for future research. Both regimes and higher-order terms may contribute to the observed attenuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180 and C182 acknowledge the complexity of modeling diffusion in heterogeneous tissue. This honest assessment of modeling challenges is appropriate and highlights important areas for future theoretical development. The acknowledgment that multiple regimes may contribute (C180) is consistent with the uncertainty expressed about the size estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C162",
+      "C166"
+    ],
+    "result": "Previous work by Leuze et al. (2017) using a different lipid clearing method determined that lipids are the dominant source of MRI contrast. The decreased diffusivity from cytoplasm observed by Latour et al. (1994) could arise from residual organelles and membrane particles in their red blood cell preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162 and C166 place the current findings in context of prior work. The consistency with Leuze et al. (C162) strengthens the membrane restriction conclusion. The speculative explanation for differences with Latour et al. (C166) is reasonable but acknowledged as uncertain. These comparisons appropriately situate the work within the broader literature.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C73",
+      "C81",
+      "C82"
+    ],
+    "result": "Mice learned an RSC-dependent landmark navigation task in which they used visual cues to locate hidden reward zones. Training required an average of 32.3 \u00b1 3.6 sessions, and optogenetic inactivation of RSC significantly impaired task performance (task score: 43.7 \u00b1 7.4 cm vs. 24.3 \u00b1 6.2 cm, p = 0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31-C35, C73, C81-C82 collectively demonstrate successful task learning and RSC dependence. Behavioral metrics (C31-C33), optogenetic inactivation results (C34-C35), and task design (C73, C81) provide converging evidence. Statistical significance is properly reported with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C74"
+    ],
+    "result": "The majority of task-active RSC neurons (22.3 \u00b1 1.6%) were aligned to visual landmarks, with smaller fractions aligned to trial onset (5.6 \u00b1 0.3%) or reward (11.6 \u00b1 0.7%). Landmark neurons provided significantly higher trial-type decoding accuracy (82.56%) compared to trial onset (53.44%) or reward neurons (62.1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C37-C45, C74 are supported by systematic neuron classification using two-photon calcium imaging (C36: 120.0 \u00b1 17.56 neurons/mouse, n=7 mice). Statistical tests (one-way ANOVA with post-hoc corrections) and decoder analysis provide robust quantitative support. Layer-specific differences (C43) add additional detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C75",
+      "C83"
+    ],
+    "result": "Landmarks anchored the spatial code in RSC, with the spatial representation being sharpest at the landmark. Location reconstruction error was significantly lower when neural activity was aligned to landmarks (3.7 \u00b1 0.61 cm short, 3.23 \u00b1 0.48 cm long) compared to trial onset (5.27 \u00b1 0.56 cm short, 5.26 \u00b1 0.42 cm long, p<0.016 and p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50, C75, C83 are supported by population vector cross-correlation analysis with appropriate controls (random trial splitting, multiple iterations). The quantitative reconstruction error analysis provides clear evidence for landmark anchoring. Statistical significance is properly assessed with appropriate tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C76",
+      "C92",
+      "C96"
+    ],
+    "result": "Spatial encoding in RSC became more robust after task acquisition. Naive animals showed significantly degraded spatial representations compared to expert animals, with higher reconstruction errors. Some neurons that lacked spatial tuning in naive animals developed clear receptive fields after learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C64-C67, C76, C92, C96 are supported by longitudinal imaging of the same neurons before and after learning (n=3 mice). Population vector analysis and reconstruction error comparisons provide quantitative evidence. However, the sample size is relatively small (n=3 mice) which limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C77",
+      "C86"
+    ],
+    "result": "Decoupling the virtual environment from mouse behavior significantly degraded spatial representations in RSC. Neural responses decreased (mean VR: 0.17 \u00b1 0.005 vs. decoupled: 0.059 \u00b1 0.004, p<0.001), spatial specificity was reduced (reconstruction error increased from 3.7 \u00b1 0.61 cm to 7.88 \u00b1 0.78 cm for short trials, p<0.001), and transients showed increased spatial jitter and reduced frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C51-C57, C77, C86 are supported by within-session comparisons of active navigation vs. decoupled stimulus presentation. Multiple metrics (response amplitude, reconstruction error, transient properties) converge on the same conclusion. However, decoupling simultaneously changes multiple factors (motor-visual coupling, reward availability), making it difficult to isolate the specific mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C78",
+      "C84",
+      "C85",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Supralinear integration of visual and motor inputs contributes to landmark encoding in RSC. The linear sum of 'motor only' and 'landmark, no motor' responses remained lower than observed 'landmark + motor' responses. Locomotion during decoupled presentation increased response robustness but did not improve spatial tuning fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C58-C60, C62, C78, C84-C85, C88-C91 provide evidence for supralinear integration through systematic comparison of visual-only, motor-only, and combined conditions. The analysis is rigorous with appropriate statistical tests (Kruskal-Wallis, Mann-Whitney U with Bonferroni correction). However, the mechanism underlying supralinearity is inferred rather than directly demonstrated, and alternative explanations (e.g., attention, arousal) are not fully excluded despite pupil dilation measurements (C4-figure supplement 1F-H).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C79",
+      "C80",
+      "C98"
+    ],
+    "result": "V1 axonal boutons in RSC exhibited comparable spatial tuning to RSC neurons but were substantially less modulated by task engagement. V1 boutons showed similar receptive field properties but encoded visual features more faithfully than RSC neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C68-C72, C79-C80, C98 are supported by imaging of V1 axonal boutons in RSC during the same task (n=77 unique boutons, 4 mice). The comparison reveals hierarchical processing differences. However, the interpretation that V1 'encodes visual features more faithfully' (C70, C72) is somewhat circular\u2014less modulation by task engagement could reflect multiple mechanisms beyond faithful encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C23",
+      "C103",
+      "C105"
+    ],
+    "result": "Landmark representations in RSC result from local integration of visual, motor, and spatial information. RSC is positioned to integrate these inputs and may act as a critical processing node that gates behaviorally relevant visual inputs for relay to entorhinal cortex and other navigation areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C23, C103, C105 represent high-level interpretations and speculations about RSC function. While the experimental data (supralinear integration, V1 input properties, task dependence) are consistent with local integration, direct evidence for the proposed circuit-level role is limited. Claims C103 and C105 are explicitly speculative, citing functional imaging studies but not directly testing RSC outputs to downstream areas.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C87"
+    ],
+    "result": "Only a small fraction of neurons showed running speed modulation of transient amplitude (0.5% short trials, 15.6% long trials). Transient amplitude was unchanged between active navigation and decoupled presentation, suggesting a thresholding process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C87 are supported by correlation analysis and comparison of transient properties across conditions. However, the interpretation of 'thresholding' (C87) is speculative\u2014unchanged amplitude with reduced frequency could reflect multiple mechanisms. The low percentage of speed-modulated neurons (C63) strengthens the argument that speed per se is not the primary driver of observed effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C99",
+      "C101",
+      "C102",
+      "C108"
+    ],
+    "result": "The supralinear integration mechanism may result from learning the spatial significance of visual landmarks. Modulation in V1 may arise from top-down feedback from RSC or other regions. Future studies of RSC may provide insights into cognition and its dysfunction in Alzheimer's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93, C99, C101-C102, C108 are explicitly speculative (labeled as 'SPECULATION' in evidence_type). While these speculations are reasonable given the data and cited literature, they represent hypotheses for future work rather than supported conclusions from the current study. The connection to Alzheimer's disease (C108) is particularly tenuous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C94",
+      "C100",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "Prior literature establishes that visual landmarks are critical for navigation, anchor spatially-tuned cells, and that RSC plays a key role in landmark-based navigation in humans and rodents. RSC exhibits early metabolic dysfunction in Alzheimer's disease and is involved in mnemonic processing and route planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C30, C94, C100, C104, C106-C107 summarize prior work through citations. These are appropriately supported by references to existing literature. The authors correctly represent the state of the field and identify the knowledge gap (C16) that motivates their study. No evaluation of the cited work's validity is possible without examining the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "On average, 120.0 \u00b1 17.56 RSC neurons were recorded per mouse (n=7 mice) using two-photon calcium imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 reports a straightforward methodological detail with appropriate sample size and error reporting. This is adequately supported by the imaging data described in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C97"
+    ],
+    "result": "RSC is strongly biased to encode behaviorally relevant visual cues that inform the animal about reward location. This bias is particularly interesting in light of V1 inputs to RSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C97 are supported by the observation that the majority of neurons are landmark-aligned (C37) and the characterization of V1 inputs (C68-C72). These represent reasonable inferences from the data, connecting RSC encoding properties to its inputs.",
+    "result_type": "MINOR"
+  }
+]

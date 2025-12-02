@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "MeCP2 displays unique dynamic behavior in granule cell nuclei, distinct from both transcription factors and histones. Single-molecule imaging reveals that ~50% of MeCP2 is stably bound with residence times of ~7s (shorter than Sox2/TBP), while unbound MeCP2 diffuses slowly (~1 \u03bcm\u00b2/s), similar to linker histone H1.0 but distinct from rapidly diffusing transcription factors (~2 \u03bcm\u00b2/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C33 collectively demonstrate MeCP2's unique dynamics through comprehensive single-molecule tracking data (Figure 1). The dwell time analysis (C24-C26), SpotOn analysis (C27-C32), and comparative measurements with H1.0, Sox2, TBP, H2b, and NLS controls provide converging quantitative evidence for MeCP2's intermediate behavior between histones and transcription factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The MeCP2-HaloTag fusion protein is functional and recapitulates endogenous MeCP2 dynamics. Animals expressing MeCP2-HaloTag are viable without disease phenotype, and both endogenous and exogenous MeCP2 show identical nuclear dynamics in granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 validate the experimental system through viability data and quantitative comparison of endogenous vs. exogenous MeCP2 (Figure 1F, Figure 1\u2014figure supplement 2-3). The lack of significant differences in bound fraction and diffusion rates between conditions establishes the HaloTag system as appropriate for studying MeCP2 dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C92",
+      "C93"
+    ],
+    "result": "MeCP2 stable binding is quantitatively sensitive to DNA methylation levels. Dnmt3a deletion (~20% decrease in 5mC) reduces bound MeCP2 from ~55% to ~45%, while Tet triple knockout (eliminating 5hmC) increases bound fraction from ~55% to ~60%. Importantly, diffusion of unbound MeCP2 remains unchanged by these modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52, C92-C93 demonstrate DNA methylation-dependent binding through genetic manipulation experiments (Figure 2). Mass spectrometry and bisulfite sequencing quantify methylation changes, while SpotOn analysis shows corresponding changes in bound fraction without affecting diffusion rates. The data directly link DNA modification status to MeCP2 binding dynamics in live neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C96"
+    ],
+    "result": "Rett syndrome mutations in the MBD differentially affect MeCP2 dynamics. R106W completely abolishes stable binding and increases diffusion of unbound MeCP2, while R133C maintains stable binding but subtly increases diffusion rate, consistent with their distinct clinical severities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62, C96 characterize two Rett mutations through single-molecule imaging (Figure 3). The R106W data show dramatic loss of binding and increased diffusion, while R133C shows preserved binding with modest diffusion changes. These findings align with prior biochemical studies and clinical phenotypes, providing mechanistic insight into mutation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C102"
+    ],
+    "result": "AT-hook domains are critical determinants of MeCP2 diffusion. Deletion of all three AT-hooks eliminates the slow diffusion characteristic of MeCP2 without affecting stable binding. The ID and NID domains require AT-hooks to constrain diffusion, with ID requiring AT-hook 1 and NID requiring at least two AT-hooks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C74, C102 demonstrate AT-hook function through systematic domain deletion experiments (Figure 4). The minimal MBD construct maintains binding but diffuses faster, while progressive addition of domains reveals AT-hook-dependent constraints on diffusion. The R106W-\u0394AT-Hooks construct provides definitive evidence that AT-hooks alone determine slow diffusion independently of stable binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "MeCP2 dynamics are surprisingly similar in euchromatin and heterochromatin within granule cells. While average diffusion coefficients are slightly lower in heterochromatin, the fraction of stably bound MeCP2 and residence times show little difference between these chromatin domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 report chromatin domain-specific analysis using HP1\u03b1-BFP to distinguish heterochromatin from euchromatin (Figure 5). The data show modest differences in diffusion coefficients but similar bound fractions and residence times, suggesting MeCP2 behavior is relatively insensitive to local chromatin compaction within granule cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C105"
+    ],
+    "result": "MeCP2 dynamics vary dramatically between cell types with different nuclear architectures. In large euchromatic Purkinje cell nuclei, unbound MeCP2 diffuses ~2X faster than in compact granule cell nuclei (~2 vs ~1 \u03bcm\u00b2/s), resembling conventional transcription factors, while bound fractions remain similar (70% vs 60%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86, C105 demonstrate cell-type-specific dynamics through lattice light sheet microscopy in acute brain slices (Figure 6). The comparison between granule and Purkinje cells reveals that nuclear architecture profoundly affects MeCP2 diffusion but not binding. The data are internally consistent and supported by quantitative measurements across multiple parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "MeCP2 is not sufficiently abundant to simultaneously occupy all methylated sites in the neuronal genome. With ~10\u2078 5mC sites but only ~2\u00d710\u2077 MeCP2 molecules per nucleus, the global ChIP distribution likely reflects dynamic, sparse interactions rather than static occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 present a quantitative argument based on genome size, methylation percentage, and MeCP2 abundance from prior studies. The calculation is straightforward and the inference about dynamic interactions is logical, though it relies on cited values rather than new measurements. This provides important context for interpreting the single-molecule data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "MeCP2-chromatin interactions are complex and multifaceted, being sensitive to DNA methylation status, dependent on multiple protein domains (MBD and AT-hooks), and varying with cell-specific nuclear architecture. These features allow MeCP2 function to be modulated locally and support a dynamic role in chromatin structure regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 synthesize the major findings into an integrated model. The complexity of MeCP2 interactions is well-supported by the experimental data from DNA modification, domain deletion, and cell-type comparison experiments. The inference about local modulation and dynamic chromatin regulation is reasonable given the evidence, though the functional consequences remain to be fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C17",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C109"
+    ],
+    "result": "Background claims establish the biological context for MeCP2 studies, including its role in Rett syndrome, expression patterns, DNA binding properties, and prior characterization of its domains. These claims cite established literature and provide foundation for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10, C17, C38-C42, C67-C70, C88-C91, C98-C101, C109 are background statements supported by appropriate citations to prior literature. These establish the scientific context and justify the experimental approach. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C94",
+      "C95",
+      "C97",
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors propose that MeCP2 function may vary between cell types based on nuclear architecture, with AT-hooks dominating in compact nuclei and NID-mediated protein complex assembly more important in large nuclei. They suggest mutation consequences may be cell-type-specific and that epigenetic modifications determine local MeCP2 enrichment and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87, C94-C95, C97, C103-C108 are largely speculative inferences about functional consequences and mechanisms. While these hypotheses are reasonable given the dynamic data, they lack direct functional validation. The speculation is clearly marked in the text (e.g., \"may influence,\" \"one might speculate\"), but the functional implications remain to be tested experimentally.",
+    "result_type": "MINOR"
+  }
+]

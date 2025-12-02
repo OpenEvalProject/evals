@@ -1,0 +1,190 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Four types of eFOV-microendoscopes (type I-IV) were designed with varying dimensions (lateral diameter 0.35-0.5 mm, length 1.1-4.1 mm, all 0.5 NA), each composed of a GRIN rod, glass coverslip (100 or 200 \u00b5m thick), and microfabricated corrective aspheric lens, without requiring additional cannulas or clamping devices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide comprehensive design specifications for the four microendoscope types with explicit dimensional parameters and structural components. The design is well-documented with figure references and represents a clear methodological achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Ray-trace simulations at \u03bb=920 nm demonstrated that corrective lenses improved the Strehl ratio to >80% across larger radial distances (up to ~165 \u00b5m for type I vs ~70 \u00b5m uncorrected), resulting in ~5-fold increase in diffraction-limited FOV area for type I and ~2-9 times larger FOV for types II-IV, with improved axial PSF homogeneity across the FOV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 present simulation results with specific quantitative metrics (Strehl ratio, radial distances, fold improvements) and cite the Mar\u00e9chal criterion appropriately. The simulations provide theoretical validation for the optical design with clear performance improvements documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C54"
+    ],
+    "result": "Corrective lenses were fabricated using two-photon lithography (TPL) and plastic molding replication with ~100% yield, producing lenses with profiles largely overlapping with simulated designs, with all experiments performed using lens replicas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C54 describe the fabrication methodology with appropriate citations and report excellent yield. The agreement between fabricated and simulated profiles validates the manufacturing approach, though quantitative metrics of overlap are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Experimental characterization showed eFOV-microendoscopes had similar on-axis axial resolution to uncorrected probes but displayed higher and more homogeneous axial resolution across a larger FOV, resulting in ~3.2-9.4 fold larger effective FOV (defined as FWHMz <10 \u00b5m) compared to uncorrected probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 present experimental validation of optical performance with specific quantitative metrics and appropriate definition of effective FOV. The results confirm simulation predictions (C20 references Figure 2) and demonstrate substantial practical improvements with multiple figure references and supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The corrective lenses maintained Strehl ratio >0.8 within \u00b115 nm from \u03bb=920 nm and provided 1.7-3.7 times larger volume with Strehl ratio >0.8 compared to uncorrected endoscopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide important characterization of chromatic performance and volumetric improvement with specific quantitative values and figure references. These results demonstrate the robustness of the correction across wavelength and depth.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The small cross-section of eFOV-microendoscopes preserved thalamocortical and corticothalamic connectivity, with no significant difference in the percentage of pixels displaying green (thalamocortical) and red (corticothalamic) signals in implanted vs. non-implanted mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 demonstrate minimal tissue damage with appropriate anatomical controls. The quantitative comparison between implanted and control animals provides strong evidence for preserved connectivity, which is critical for physiological validity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Active periods displayed significant increases in both frequency (fQ=1.95\u00b10.02 Hz vs fA=2.22\u00b10.02 Hz, p=2E-74) and amplitude (AQ=0.137\u00b10.005 vs AA=0.245\u00b10.008 \u0394F/F0, p=2E-128) of calcium signals across VPM neurons compared to quiet periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 presents statistically robust findings with appropriate sample sizes (n=24 t-series from 4 mice), highly significant p-values, and clear quantitative differences between behavioral states. The statistical analysis is appropriate for the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Corrected probes enabled segmentation of more ROIs with high SNR, shifting the SNR distribution to higher mean values (p=1E-5 for interaction), and ROIs from eFOV-microendoscopes showed larger correlation with ground truth signals and lower cross-contamination from nearby neurons compared to uncorrected probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by synthetic calcium imaging data with appropriate statistical analysis (two-way ANOVA) and ground truth comparisons. The results demonstrate practical advantages of aberration correction for signal quality and accuracy, validated through simulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Pairwise correlations as a function of radial distance showed significantly positive slope for uncorrected endoscopes but no significant slope for corrected endoscopes, indicating elimination of artifactual correlation increases in peripheral FOV regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 demonstrate that aberration correction eliminates systematic bias in correlation measurements across the FOV. The finding is validated in both synthetic (Figure 4g) and experimental data (Figure 4m) with appropriate permutation tests, representing an important methodological improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Many VPM neurons encoded whisking information with cell-specific and spatially sparse distribution, with information content constant across radial distance and positively correlated with SNR; adding neurons from peripheral FOV regions improved population decoding performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present a coherent picture of information encoding in VPM with appropriate information-theoretic analyses. The findings demonstrate that eFOV-microendoscopes enable unbiased measurement of neural coding across the entire FOV, with statistical validation of key relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Non-negative matrix factorization revealed functional modules with 89.6\u00b10.4% positively modulated and 10.4\u00b10.4% negatively modulated by whisking, with module sparseness negatively correlated with whisking modulation index; modules spanned hundreds of micrometers across the eFOV, significantly larger than chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe population-level functional organization with appropriate computational methods (NMF) and statistical validation (permutation tests). The results reveal complex spatial organization of functional networks that could only be detected with the extended FOV capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The manuscript establishes the scientific context by describing the importance of deep brain imaging, limitations of current GRIN microendoscopes (intrinsic aberrations, uneven SNR/resolution), alternative approaches (adaptive optics with limitations), and the biological significance of VPM as a model system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C53 provide appropriate background context with relevant citations to prior work. These claims establish the motivation and scientific framework for the study, accurately representing the state of the field and the challenges being addressed.",
+    "result_type": "MINOR"
+  }
+]

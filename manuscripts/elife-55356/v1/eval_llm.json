@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Reeler mice exhibit visible severe gait ataxia, walk more slowly than controls, and show impaired hindlimb control with lower forward velocities and increased swing duration in hind paws. Front paw forward trajectories are preserved, and off-axis (side-to-side and vertical) paw movements are altered in both front and hind paws. Despite severe ataxia, reeler mice do not show increased width of base of support. Stride parameters (stride length, cadence, stance duration) can be accurately predicted by previously established models based on walking speed and body size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C30 and C106-C115 provide comprehensive kinematic data with statistical support (Figures 1D-K) showing specific patterns of hindlimb impairment while front limb forward motion is relatively preserved. The data include appropriate controls, statistical tests with reported p-values, and sample sizes (N=7 reeler, N=12 controls). The finding that previously established models accurately predict stride parameters validates the approach and demonstrates that basic stride mechanics follow expected relationships despite ataxia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Direct comparison reveals that both reeler and pcd mutants exhibit nearly identical alterations in off-axis (side-to-side and vertical) paw movements, with forward hind paw trajectories profoundly affected in reelers. However, reeler shows increased movement variability in hind paw forward motion and vertical movements of both front and hind paws, while pcd does not exhibit increased variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are well-supported by comparative data in Figure 2E-I with appropriate statistical tests. The finding of shared alterations in 3D trajectories but differential variability patterns is a key distinction between the two mutants. The data include proper controls (size and speed-matched) and quantitative measures of variability (coefficient of variation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Both reeler and pcd mutants show identical impairments in front-hind limb coordination with delayed hind paw touchdowns, while left-right phasing remains intact. Reeler mice exhibit increased 3-paw support patterns and unstable support configurations. Uniquely, reeler mice show increased reliance on front paw supports and decreased hind paw double support compared to both controls and pcd, likely due to impaired hindlimb control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C49 are supported by detailed interlimb coordination analysis in Figure 3 with appropriate statistical tests and quantitative comparisons. The finding that front-hind phasing alterations are identical between mutants while support patterns differ is well-documented. The inference that decreased hind paw double support results from impaired hindlimb control (C49) is reasonable given the data in Figures 1-2, though it remains an interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Both reeler and pcd exhibit large side-to-side oscillations of tail and nose that become increasingly phase-lagged at faster speeds. However, the phase relationships differ dramatically between mutants. In reeler, tail movements relate to front limb motion (not hind limbs as in pcd), and tail and nose oscillate along a single body axis. An analytical model based on front limb oscillations accurately predicts reeler tail and nose movements across speeds, while hindlimb-driven models perform poorly. This suggests passive consequences of limb movement with a shift in support patterns from hind to front paws in reeler.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C65 are well-supported by data in Figure 4 and supplementary figures. The geometric model successfully predicts tail and nose trajectories in reeler when aligned to front limbs (Figure 4J, Figure 4\u2014figure supplement 1A-C), and hindlimb models perform worse (Figure 4\u2014figure supplement 1D-F). The single-axis model is appropriate for reeler but not pcd (C63, Figure 4\u2014figure supplement 1G). The interpretation that this reflects passive consequences of altered support patterns is logical and consistent with the data, though it remains a mechanistic inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Linear discriminant analysis reveals two orthogonal axes that separate controls from mutants (LD1) and the two mutants from each other (LD2). LD1 is influenced by 3D paw trajectories and interlimb/whole-body coordination, representing shared features of ataxia. LD2 captures differences between mutants through hindpaw movement, variability, and tail/nose phase relationships. This demonstrates that multijoint, interlimb, and whole-body coordination are shared and possibly fundamental features of locomotor ataxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 are supported by the LDA analysis in Figure 5 with appropriate methodology (PCA preprocessing to address correlation, 10 PCs explaining 88% variance). The separation of shared vs. distinct features is clearly demonstrated. However, the conclusion that these represent 'fundamental' features of cerebellar ataxia (C73) is somewhat overstated given the analysis is limited to two mutants. The approach is sound but generalizability requires additional models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The visible gait differences between reeler and pcd stem specifically from increased movement variability and additional hindlimb involvement in reelers. Reelers use front paws as main supports while walking, and their inability to walk in a straight line likely results from front limbs being unable to provide both support and steering control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 synthesize findings from multiple analyses (LDA, support patterns, body movements) to explain visible phenotypic differences. C78 and C79 are well-supported by the data. C80 is more speculative, using 'likely' appropriately to indicate this is an inference rather than directly demonstrated causation. The reasoning is logical given the data on support patterns and body center movements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The anatomical differences between pcd (cerebellar Purkinje cell degeneration) and reeler (widespread aberrant cell localization with altered rather than removed Purkinje cell activity) likely explain behavioral differences. Increased variability in reeler vs. decreased variability in pcd may reflect altered vs. absent Purkinje cell output. Differences in hindlimb involvement may be extracerebellar, possibly from spinal cord defects in reeler.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C88 discuss anatomical correlates of behavioral findings. C81-C83 accurately describe known anatomical features of the mutants (supported by citations). However, C84, C87, and C88 are explicitly speculative ('likely,' 'may,' 'perhaps') mechanistic interpretations linking anatomy to behavior. While reasonable hypotheses, these lack direct experimental support in this study. The speculation is appropriately qualified but the causal links remain unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The pattern of coordination deficits in both pcd and reeler, particularly passive tail oscillations and inability to learn on locomotor tasks requiring predictive control, is consistent with lack of an internal forward model that predicts and compensates for movement consequences. This suggests these may represent core features of cerebellar contributions to coordinated locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 integrate current findings with prior work on locomotor learning (C91, citing Darmohray et al., 2019). The interpretation regarding forward models (C89-C90, C92) is a theoretical framework supported by multiple citations and consistent with the passive tail oscillation data. C93's conclusion about 'core features' is reasonable given the consistency across mutants and paradigms, though it remains an interpretation. The logic is sound and appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background context establishing that ataxic mouse mutants exhibit varying neuropathology and motor deficits, that existing analysis methods have limitations, and that prior work with LocoMouse in pcd mice revealed specific coordination deficits. Reeler mice have mutations in the reelin gene causing widespread brain abnormalities, particularly in cerebellum. Both pcd and reeler share abnormal cerebellar circuitry but differ in specific connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide background and context, primarily citing prior literature. These are well-established facts about the mutants and methodological approaches. C3, C12, C13 reference the authors' prior work appropriately. C4 is the main finding stated in the abstract, which is supported by the subsequent data. All claims are appropriately supported by citations or represent the study's main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Discussion of methodological tradeoffs in assessing motor coordination, noting that rotarod lacks specificity while CatWalk provides detailed but difficult-to-interpret measurements. LocoMouse aims to provide both comprehensive quantitative description and interpretable conceptual framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 discuss methodological considerations in the field. These are reasonable characterizations of existing approaches supported by citations (C76) and general knowledge. C77 is a statement of the authors' methodological goals, which is appropriate in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Methodological details including mouse sources, sample sizes (N=7 reeler, N=12 controls, thousands of strides per group), experimental setup (LocoMouse system with glass corridor, high-speed camera, automated detection), tracking system with updates for reeler tail movements, and statistical analysis approach (PCA followed by LDA, using first 10 PCs explaining 88% variance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C105 provide essential methodological details. Sample sizes are adequate for the analyses performed. The PCA preprocessing before LDA (C104-C105) is appropriate given the known correlation structure in gait data. The updated tail tracking (C103) addresses a specific technical challenge with reeler mice. Methods are clearly described and appropriate for the research questions.",
+    "result_type": "MINOR"
+  }
+]

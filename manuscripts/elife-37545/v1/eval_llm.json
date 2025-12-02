@@ -1,0 +1,414 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Mathematical modeling predicts that off-DNA polymerization creates a regime where strong SAM-SAM interactions sequester Yan away from DNA. At wildtype affinity, off-DNA polymerization reduces occupancy only at high Yan concentrations. Across a range of affinities, saturated DNA binding occurs only under moderate self-association where lower-order species remain available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C43-C44, C47-C49 collectively describe modeling predictions that are internally consistent and supported by the computational results shown in Figure 1. The model incorporates biophysical principles (Stokes-Einstein relation) and produces testable predictions about the relationship between SAM affinity and DNA occupancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A structure-guided mutagenesis screen identified four residues at the Yan SAM-SAM interface whose substitution increased binding affinity over four orders of magnitude (5.6 \u03bcM to 0.13 nM). Native gel assays and SPR measurements confirmed a graded series of SuperYan (SY1-5) mutants spanning this affinity range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C52-C63 describe a systematic mutagenesis approach with multiple orthogonal validation methods (native gels, SPR, co-IP). The measured affinities are internally consistent across assays, and the wildtype measurement (5.6 \u03bcM) matches published values (7 \u03bcM), validating the approach. The structural rationale based on TEL-Yan divergence is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Co-immunoprecipitation experiments demonstrated that SY1-5 mutants show increasingly robust self-association under stringent conditions, and that wildtype Yan and SY5 can form heterotypic complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by the co-IP data in Figure 3D and Figure 3\u2014figure supplement 3. The graded increase in co-IP signal correlates with measured affinities, and the bidirectional heterotypic interactions are clearly demonstrated. However, the interpretation that stronger co-IP in one direction (lane 6 vs 7) reflects homotypic SY5-SY5 interactions is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CRISPR-generated yanSY3-5 alleles are viable but show reduced fitness and increased embryonic lethality that correlates with SAM affinity. YanSY5 shows the strongest phenotypes including ~40% embryonic lethality with anterior-open defects and rough adult eyes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are well-supported by the viability data (Figure 4A-B) and phenotypic observations. The graded severity correlating with affinity strengthens the conclusion. Statistical tests (chi-square) are appropriate. The comparison to yan null lethality provides important context. The anterior-open phenotype is consistent with known yan loss-of-function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Overexpression experiments and transcription assays demonstrate that SuperYan mutants have reduced repressive activity compared to wildtype Yan. SY5 shows significantly impaired transcriptional repression while maintaining normal subcellular localization and signaling responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by overexpression phenotypes (Figure 4\u2014figure supplement 1) and transcription assays (Figure 4C). The inverse correlation between SAM affinity and phenotypic severity is striking. The comparable protein levels and localization (C74, C76) rule out trivial explanations. However, only SY5 shows statistically significant reduction in the transcription assay (C75), while SY3-4 are indistinguishable from wildtype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "SuperYan mutants show dramatically increased formation of punctate structures throughout eye imaginal discs (10-20 fold increase) and ~50% elevated total Yan levels. This cellular phenotype matches modeling predictions of off-DNA sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are strongly supported by immunofluorescence data (Figure 5). The quantification is rigorous (n=6 measurements, appropriate statistics). The 10-20 fold increase in puncta is dramatic and correlates with SAM affinity. The connection to modeling predictions (C81) is reasonable but somewhat inferential\u2014puncta could reflect other aggregation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Genetic manipulations that reduce effective polymerization\u2014heterozygosity with wildtype Yan or overexpression of hyperactive MAPK\u2014dramatically reduce SY5 puncta formation, supporting a sequestration model where increased polymerization drives aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by the data in Figure 5\u2014figure supplement 1. Both manipulations produce the predicted effects. The interpretation that wildtype Yan intercalates into SY polymers (C85) is reasonable given the co-IP data, though direct evidence for 'capping' is lacking. The MAPK result (C86) is particularly compelling as it connects to known Yan regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "SuperYan mutants show photoreceptor over-recruitment with a striking bias: ~30% of ommatidia have extra outer (R3/R4) photoreceptors while <10% have extra R7s. This pattern differs markedly from other yan hypomorphs and is confirmed by increased Salm expression in larval discs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 are well-supported by histological sections (Figure 6G-I), quantification (Figure 6F), and marker analysis (Figure 6L, O). The differential effect on R3/R4 vs R7 is striking and statistically robust. The Salm and Pros staining in larval discs corroborates the adult phenotypes. This is a novel observation that distinguishes SuperYan from other yan alleles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Comparison to published yan alleles reveals that SuperYan mutants have an inverted phenotypic ratio compared to yan1 and yanP: strong R3/R4 but weak R7 phenotypes. This suggests that SY can assemble functional complexes for R7 regulation but not for R3/R4 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 make a compelling comparison to published data. The cited frequencies for yan1 (88% extra R7s, 27% extra outers) and yanP (20% extra R7s, rare outers) provide clear context. The interpretation (C98) that SY retains function for R7 but not R3/R4 is reasonable given the data, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The monomeric yanV105R allele shows the opposite pattern from SuperYan: strong R7 phenotype (70% extra R7s) with moderate R3/R4 phenotype (28% extra outers), confirmed in both adult sections and larval disc marker expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by histological data (Figure 6F, J) and marker analysis (Figure 6M, P). The phenotype is consistent with published characterization of yanV105R as a strong hypomorph. This provides a critical comparison point for interpreting the SuperYan phenotypes and supports the model of differential oligomer requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "ChIP-seq analysis identified a high-confidence Yan binding peak upstream of salm in eye discs but not in embryos, suggesting context-specific regulation. No significant occupancy was detected at the known pros enhancer, while aos and aop showed similar occupancy in both tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by ChIP-seq data (Figure 7, Figure 7\u2014figure supplement 1) with MACS peak calling. The context-specific occupancy at salm is interesting and well-documented. However, the failure to detect pros occupancy (C105) is concerning given pros is a known Yan target. The authors acknowledge this limitation and offer reasonable speculation (C111), but it raises questions about ChIP sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113"
+    ],
+    "result": "ChIP-qPCR validation shows that SY5 occupancy at salm is less than half that of wildtype Yan, while occupancy at aos and aop is equivalent. This suggests that salm regulation is uniquely sensitive to Yan polymerization state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 are supported by ChIP-qPCR data (Figure 7E) with appropriate replication (n=3) and statistics. The differential effect on salm vs aos/aop is clear and statistically significant. This is a key result connecting altered polymerization to target-specific effects. However, the sample size is modest and only one R3/R4-specific target is examined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "A salm reporter is repressed by wildtype Yan but shows reduced repression by SY5 in transcription assays. In vivo, the salm reporter shows R3/R4-specific de-repression in yanSY5 discs but not wildtype, while a pros reporter is unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by transcription assays (Figure 7F) and reporter expression in discs (Figure 7G-J). The cell-type-specific de-repression of the salm reporter in yanSY5 background is compelling. The pros reporter control strengthens the conclusion. However, the salm reporter shows weaker induction than the king tubby reporter, raising questions about its sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Salm is identified as a novel direct R3/R4-specific target of Yan whose regulation is uniquely sensitive to increased Yan polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 synthesize multiple lines of evidence: ChIP-seq peak, ChIP-qPCR validation, reduced SY5 occupancy, transcription assays, and in vivo reporter de-repression. The convergence of these results strongly supports salm as a direct Yan target. The R3/R4 specificity is well-demonstrated. The claim of unique sensitivity to polymerization is supported but based on limited comparison (mainly aos and aop).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors propose a model where increased SAM affinity drives off-DNA sequestration, limiting functional complex formation. Different Yan polymer distributions regulate different target genes, and tuning SAM affinity to a middle regime optimizes these requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 represent the central model integrating all results. The sequestration model (C121) is well-supported by modeling, puncta formation, and functional defects. The proposal of differential polymer requirements (C122-C123) is supported by the contrasting phenotypes of SuperYan vs monomeric Yan and the differential target sensitivity. However, direct evidence for specific polymer sizes at specific targets is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors conclude that protein-protein interaction affinity must be evolutionarily tuned to balance complex stability with assembly capability. This principle likely extends beyond polymerizing TFs to many transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 represent broader conclusions and principles derived from the Yan results. The core principle (C124) is well-supported by the experimental data showing loss-of-function from both too-weak and too-strong interactions. The extension to other TFs (C126-C127) is reasonable speculation supported by general principles, though direct evidence is limited to Yan.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors propose that target genes requiring lower-order Yan species (like salm/R3/R4 genes) are most compromised by increased SAM affinity, while those requiring higher-order species (like R7 genes) are most sensitive to reduced affinity. This explains the differential phenotypes of SuperYan vs monomeric Yan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C139 present a mechanistic model to explain the differential phenotypes. The model is logical and consistent with the data, but it remains largely speculative. Direct evidence for the oligomeric state of Yan at specific targets is lacking. The model makes testable predictions but requires additional experiments (e.g., measuring Yan oligomer distributions in vivo, testing intermediate affinity mutants on specific targets).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C50",
+      "C51"
+    ],
+    "result": "The modeling assumes that smaller Yan species can diffuse effectively to bind DNA, while larger oligomers have reduced diffusion. This is supported by the Stokes-Einstein relation, published observations of differential diffusion rates for Yan wildtype/monomers/dimers, and ChIP-seq data showing similar occupancy patterns for monomers and wildtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C50-C51 describe key modeling assumptions that are reasonably justified. The Stokes-Einstein relation is well-established physics. The cited diffusion differences (C42) and ChIP-seq similarity (C50) provide experimental support. However, the assumption that only monomers nucleate DNA binding is simplifying\u2014the control calculations allowing dimers and trimers (mentioned in text) would strengthen this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The comparable ratio of total to nuclear Yan in wildtype and SuperYan discs suggests that cytoplasmic self-association primarily slows degradation rather than affecting nuclear import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C83 present an interpretation of the comparable total:nuclear ratios. While the observation (C82) is supported by the data in Figure 5, the mechanistic interpretation (C83) is speculative. Alternative explanations (e.g., compensatory changes in import/export rates) are not ruled out. This would require direct measurements of protein stability and import/export kinetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Recent imaging studies show that eukaryotic TFs rely on 3D diffusion with transient chromatin associations. Strong SAM affinity should increase time in higher-order complexes, limiting diffusion-based search. Conversely, monomeric Yan may have insufficient residence time to form stable complexes despite effective diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 accurately cite published imaging studies. Claims C131-C132 are reasonable inferences connecting these principles to the Yan results. However, C132 is speculative\u2014no direct measurements of Yan residence times are presented. The logic is sound but would benefit from experimental validation (e.g., single-molecule tracking).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The authors propose two non-exclusive mechanisms for context-specific regulation: (1) regulatory grammar where different binding site arrangements favor different oligomer sizes, and (2) signaling-mediated modulation of polymerization. They speculate that heterotypic vs homotypic sites could facilitate smaller vs larger complexes, and that AP-1 factors might mediate heterotypic Yan complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C145 present speculative mechanisms that are logical but lack direct experimental support. The importance of tandem ETS sites (C144) is documented, but the specific predictions about heterotypic vs homotypic sites (C143) are untested. The speculation about AP-1 factors (C145) is based on genetic interactions and mammalian data but needs direct testing in the Yan system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The authors propose that differential RTK signaling levels could modulate Yan polymerization in different cell types. High RTK signaling in R7 precursors might disrupt SY polymers more effectively than lower signaling in R3/R4 cells. This is supported by the observation that MAPK overexpression reduces SY5 puncta and the proximity of a key MAPK phosphorylation site to the SAM domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147-C150 present a plausible mechanism connecting signaling levels to polymerization. The rlSEM overexpression result (C148) supports the general idea that MAPK can modulate polymerization. However, the specific proposal about differential effects in R7 vs R3/R4 (C147) is speculative and not directly tested. The proximity of the phosphorylation site (C149) is suggestive but the mechanistic speculation (C150) requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The authors speculate that Yan may use smaller species for accurate recognition of single enhancer sites (like salm) and larger polymers for coordinated repression across loci with broader occupancy (like aos/aop). This is consistent with prior ChIP-seq data showing reduced peak density at extensively occupied loci in Yan monomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C154 present an interesting model connecting oligomer size to regulatory mode. The speculation is logical and consistent with the differential ChIP occupancy patterns. The reference to prior monomer ChIP-seq data (C155) provides some support. However, this remains largely speculative without direct measurements of oligomer distributions at specific loci or functional tests of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The authors discuss how TEL might function with nanomolar affinity, proposing several possibilities: lower expression levels, heterotypic interactions, post-translational modifications, or that extensive off-DNA polymerization provides a regulatory strategy. They note that SY5 has even stronger affinity than TEL, suggesting TEL is tuned to sub-maximal affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C160 present reasonable speculation about TEL function. The observation that SY5 is stronger than TEL (C159-C160) is well-supported by the data. However, the various explanations for how TEL operates (C156-C158) are entirely speculative without measurements of TEL expression levels, interaction partners, or modifications in relevant contexts. These are interesting hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The mutagenesis results emphasize the importance of charged residues at the SAM interface periphery. SY5 represents the strongest quantitatively measured SAM-SAM interaction, suggesting evolutionary selection against sub-nanomolar affinities to prevent excessive aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C162 are well-supported by the structural analysis and mutagenesis results, with validation from prior TEL studies. Claim C163 is supported by comparison to published SAM affinity measurements. Claim C164 is a reasonable inference but somewhat speculative\u2014the evolutionary argument assumes SY5-like affinities would be deleterious across contexts, which is supported by the Yan data but not directly tested in other SAM-containing proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The authors speculate that Yan puncta may represent phase-separated complexes. They note that wildtype Yan shows some puncta, that low-complexity domains important for phase separation are enriched in TFs including Yan, and that Yan's genome-wide occupancy patterns resemble super-enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C165-C166 accurately cite the phase separation literature. Claims C167-C169 present interesting speculation connecting Yan puncta to phase separation. The observations (some wildtype puncta, presence of disordered regions, super-enhancer-like patterns) are consistent with phase separation but not definitive. Direct tests of phase separation behavior (e.g., FRAP, sensitivity to 1,6-hexanediol, in vitro droplet formation) are needed.",
+    "result_type": "MINOR"
+  }
+]

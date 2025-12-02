@@ -1,0 +1,1647 @@
+{
+  "submission": {
+    "id": "4bfff706-ef80-4d56-b8bf-3aab978d0cdb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T19:17:56.486295Z",
+    "updated_at": "2025-12-02T19:17:56.486295Z"
+  },
+  "content": [
+    {
+      "id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "submission_id": "4bfff706-ef80-4d56-b8bf-3aab978d0cdb",
+      "content_type": "manuscript",
+      "content_text": "# Antagonistic effects of intraspecific cooperation and interspecific competition on thermal performance\n\n## Authors\n\n- Hsiang-Yu Tsai<sup>1</sup>\n- Dustin R Rubenstein<sup>3</sup> ([ORCID: 0000-0002-4999-3723](https://orcid.org/0000-0002-4999-3723))\n- Bo-Fei Chen<sup>1</sup> ([ORCID: 0000-0003-3005-8724](https://orcid.org/0000-0003-3005-8724))\n- Mark Liu<sup>1</sup>\n- Shih-Fan Chan<sup>1</sup>\n- De-Pei Chen<sup>1</sup>\n- Syuan-Jyun Sun<sup>1</sup>\n- Tzu-Neng Yuan<sup>1</sup>\n- Sheng-Feng Shen<sup>1</sup> ([ORCID: 0000-0002-0631-6343](https://orcid.org/0000-0002-0631-6343)) \u2020\n\n### Affiliations\n\n1. Biodiversity Research Center, Academia Sinica Taipei Taiwan\n2. Institute of Ecology and Evolutionary Biology, College of Life Science, National Taiwan University Taipei Taiwan\n3. Department of Ecology, Evolution and Environmental Biology, Columbia University New York United States\n4. Center for Integrative Animal Behavior, Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding how climate-mediated biotic interactions shape thermal niche width is critical in an era of global change. Yet, most previous work on thermal niches has ignored detailed mechanistic information about the relationship between temperature and organismal performance, which can be described by a thermal performance curve. Here, we develop a model that predicts the width of thermal performance curves will be narrower in the presence of interspecific competitors, causing a species\u2019 optimal breeding temperature to diverge from that of its competitor. We test this prediction in the Asian burying beetle Nicrophorus nepalensis, confirming that the divergence in actual and optimal breeding temperatures is the result of competition with their primary competitor, blowflies. However, we further show that intraspecific cooperation enables beetles to outcompete blowflies by recovering their optimal breeding temperature. Ultimately, linking abiotic factors and biotic interactions on niche width will be critical for understanding species-specific responses to climate change.\n\n## Introduction\n\nRecent anthropogenic climate warming makes understanding species vulnerability to changing temperatures one of the most pressing issues in modern biology. A cornerstone for understanding the distribution and associated ecological impacts of climate change on organismal fitness is the concept of the ecological niche, which describes a hyperspace with permissive conditions and requisite resources under which an organism, population, or species has positive fitness (Hutchinson, 1957; Chase and Leibold, 2003; Colwell and Rangel, 2009). More than a half century ago, Hutchinson (Hutchinson, 1957) distinguished the fundamental niche\u2014characterized by abiotic environmental measures like temperature and precipitation\u2014from the realized niche\u2014characterized by biological interactions like competition and predation. Although numerous studies since then have used the relationship between a species\u2019 distribution and the climate in which it occurs to estimate a species\u2019 fundamental niche (Kearney and Porter, 2009; Quintero and Wiens, 2013; Ga\u00fcz\u00e8re et al., 2015), a growing number of studies have also employed theoretical, observational, or experimental approaches to evaluate the detailed mechanisms (e.g. physiological limits)\u00a0(Huey et al., 2012), demographic factors, and species interactions that shape a species\u2019 fundamental and realized niches (Monahan, 2009; Nilsson-\u00d6rtman et al., 2013; Estay et al., 2014). In general, differentiating between how abiotic factors and biotic interactions influence niche width is critical for understanding species-specific responses to climate change. Ultimately, generating a complete understanding of a species\u2019 ecological niche not only requires understanding how abiotic and biotic factors interact to affect organismal performance and fitness, but also identifying the detailed mechanisms that shape differences in the fundamental and realized niches.\n\nThe concept of the thermal performance curve (TPC) was first developed to study how body temperature affects ectotherms\u2019 physiological responses and behaviors (Kearney and Porter, 2009; Quintero and Wiens, 2013; Ga\u00fcz\u00e8re et al., 2015). Although the TPC concept has received increasing attention in studies of how warming temperatures influence organismal fitness (Clusella-Trullas et al., 2011; Sinclair et al., 2016), it has been developed largely independently from niche-based studies. Yet, characterizing the TPC is essentially a way to mechanistically quantify a species\u2019 thermal niche. Since the TPC describes the detailed relationship between temperature and fitness, the concept may actually be more informative than that of the thermal niche, which is typically defined as the range of temperatures over which organisms occur in nature (i.e. thermal niche width) (Huey and Stevenson, 1979; Hillaert et al., 2015). In other words, the TPC concept not only describes thermal niche width, it also quantifies an organism\u2019s optimal temperature and how fitness varies with changes in temperature. In contrast, most TPC studies focus largely on what amounts to the fundamental TPC and do not explicitly consider biotic interactions (Dillon et al., 2010; Gunderson et al., 2016; Swaddle and Ingrassia, 2017). The few TPC studies that have considered biotic interactions have almost all focused on predator-prey interactions (Ockendon et al., 2014; Gibert et al., 2016). To the best of our knowledge, no study has differentiated between fundamental and realized TPCs, nor experimentally quantified a species\u2019 realized TPC in the context of interspecific competition, despite the fact that ecologists have long acknowledged that interspecific competition is a key driving force shaping a species\u2019 realized niche (Schoener, 1983; Eurich et al., 2018; Freeman et al., 2019). Furthermore, although a few studies have shown that intraspecific cooperation can also help social species expand their realized niche width (Sun et al., 2014; Lin et al., 2019), little is known about how intraspecific cooperation influences the realized TPCs of social organisms.\n\nBurying beetles (Silphidae, Nicrophorus) are ideal for investigating how social interactions influence both fundamental and realized TPCs because the potentially antagonistic effects of interspecific competition and intraspecific cooperation on the realized TPC can be studied simultaneously. Burying beetles rely on vertebrate carcasses for reproduction and often face intense intra- and interspecific competition for using these limiting resources (Pukowski, 1933; Scott, 1998; Rozen et al., 2008). Competition for carcass access is temperature-dependent because the beetle\u2019s main competitors, blowflies (family Calliphoridae), are more abundant and active at higher ambient temperatures (Sun et al., 2014). Blowfly maggots also grow faster and digest carcasses more quickly at higher temperatures (Donovan et al., 2006; Kotz\u00e9 et al., 2016). In addition to interspecific competition, intraspecific cooperative behavior among beetles may also modulate their realized TPC. Previous studies have shown that cooperative carcass preparation and burial enables beetles to outcompete blowflies and expand their thermal niche to warmer environments (Sun et al., 2014; Chan et al., 2019; Chen et al., 2020; Liu et al., 2020).\n\nHere, we extend classic ecological niche theory by introducing the concepts of fundamental and realized TPCs. We first construct a theoretical model by using a hypothetical TPC to predict how interspecific competition influences the width and optimal temperature of realized TPCs in order to provide a general understanding of the relationship between fundamental and realized TPCs. We then describe a series of laboratory and field experiments designed to test the predicted relationship between fundamental and realized TPCs in the Asian burying beetle Nicrophorus nepalensis (Figure 1). We began our empirical work by measuring breeding performance without interspecific competitors in the laboratory and field to determine N. nepalensis\u2019s fundamental TPC. We also measured the beetle\u2019s locomotor ability, which is less likely to be influenced by biotic interactions, at different temperatures to determine the physiological basis of the fundamental breeding TPCs. We then quantified breeding performance in the presence of interspecific competitors, mainly blowflies (Putman, 1978; Putman, 1983; Scott, 1994; Sun et al., 2014), to determine the beetle\u2019s realized TPC. Finally, we used a group size manipulation in the presence of interspecific competitors in the field to explicitly examine the role of intraspecific cooperation and interspecific competition on the beetle\u2019s realized TPC. Experimentally distinguishing between fundamental and realized TPCs will not only serve as a starting point for better understanding the relationships between abiotic and biotic drivers of organismal performance and fitness, but also for better predicting responses to climate change as the earth continues to warm.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/57022/elife-57022-fig1-v2.jpg)\n\n**Figure 1.:** We examined locomotor and breeding performance in the lab and field without competitors to determine the fundamental TPC. We examined breeding performance in the field in the presence of interspecific competitors to determine the realized TPC. We also manipulated group size in the field to determine how cooperation influenced the realized TPC. The results of these experiments are depicted in Figures 3\u20135.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/57022/elife-57022-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Fundamental and (b) realized thermal performance curves (TPC) when a high temperature specialist species (blue lines) competes with a low temperature generalist species (orange lines). Toptimal represents the optimal temperature of the TPCs, as shown by vertical dashed lines. The horizontal dashed line represents the relative performance of the two species, which are equal to each other.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/57022/elife-57022-fig1-figsupp2-v2.jpg)\n\n## Materials and methods\n\n### Beetle collection and maintenance\n\nLab experiments were conducted using N. nepalensis individuals from a laboratory-reared population. Our stable lab population was established in 2014 from 24 male and 24 female beetles caught near Meifeng, which is 2100 m above sea level on Mt. Hehuan, Taiwan (24\u00b05' N, 121\u00b010'E). Since establishment, we have supplemented the lab strain with new individuals from the same location every one or two years to avoid inbreeding. We used hanging pitfall traps baited with rotting pork (mean\u00a0\u00b1\u00a0SE: 100\u00a0\u00b1\u00a010 g) to collect adult beetles in the field. We checked traps and collected beetles on the fourth day after traps were set. In every generation, we established at least 20 families, approximately 600 individuals in total, to maintain the population within the lab. To ensure that beetles in the lab population were unrelated to each other, we always paired beetles collected from different traps. We then put one female and one male in a 20\u00a0\u00d7\u00a013\u00a0\u00d7\u00a013 cm box with 10 cm of soil and a rat carcass (75\u00a0\u00b1\u00a07.5 g). Approximately two weeks after introducing adult beetles, all of the dispersing larvae that were ready to pupate from each breeding box were collected and allocated to a small, individual pupation box. After roughly 45 days, beetles that emerged from pupae were housed individually in 320 ml transparent plastic cups and fed once a week with superworms (Zophobas morio). All breeding experiments were conducted in walk-in growth chambers that imitated natural conditions where the lab population was collected at 2100 m on Mt. Hehuan. Temperature was set to daily cycles between 19\u00b0C at noon and 13\u00b0C at midnight, and relative humidity was set to 83\u2013100%. We completed all of the laboratory experiments within three generations.\n\n### Breeding performance in the common garden experiment\n\nTo investigate breeding TPCs, we conducted solitary pairing experiments in six temperature conditions\u20148, 10, 12, 16, 20\u00b0C and 22\u00b0C\u2014in a common garden with no temperature variation in the lab. For each replicate, one male and one female were arbitrarily chosen from different nests to avoid inbreeding. We chose adult beetles that were sexually mature, roughly 2 to 3 weeks after their emergence. Each individual was weighed to the nearest 0.1 mg. We then placed the pair with a mouse carcass (75\u00a0\u00b1\u00a07.5 g) under each temperature condition in a transparent plastic container (21\u00a0\u00d7\u00a013\u00a0\u00d7\u00a013 cm with 10 cm of soil depth) for two weeks. Cases in which pairs fully buried the carcass and produced offspring were regarded as successful breeding attempts. Cases in which pairs failed to bury a carcass, or they buried it but did not produce offspring, were regarded as failed breeding attempts. The only instance (of 118 replicates) when beetles died during the experiment was excluded from analysis.\n\n### Thermal regulation of locomotor performance\n\nTo determine the TPC for locomotor behaviors, we conducted a series of treadmill experiments under three temperature conditions\u201412, 16\u00b0C and 20\u00b0C\u2014in a common garden with no temperature variation in the lab. We chose these temperatures because 16\u00b0C is the optimal performance temperature for reproduction, and\u00a0we wanted to further test whether this optimal temperature coincided with optimal physiological function.\n\nWe set 72 replicates in total (12\u00b0C: 25 replicates; 16\u00b0C: 25 replicates; 20\u00b0C: 22 replicates). We arbitrarily selected individuals from different nests for replicates at each temperature. The beetles were brought to the experimental chamber one day before data collection began. Monofilament glued to the pronotum by UV glue attached each beetle to the treadmill, where it was allowed to walk at a stable speed of 150 cm/min. We turned off the treadmill if a beetle\u2019s abdomen began to drag or if the beetle started to fly, both behaviors that indicated that the beetle could no longer walk. An individual was tested only once per day. After each experiment, beetles were returned to the transparent container with 3 cm of soil for recovery.\n\nWe measured each beetle\u2019s pronotum and the ambient temperature during running with a thermal imaging infrared camera (FLIR Systems, Inc, SC305; thermal sensitivity of\u00a0<0.05\u00b0C) at a resolution of 320*240 pixels. Pronotum temperature was measured at the center of the thorax and calculated as the average pronotum body temperature each minute until an individual dragged its abdomen or started flying. The ambient temperature was the average temperature of a 6 \u00d7 6 cm surface of the treadmill located near where the beetle was tested. The temperature difference was depicted by the difference between the beetle\u2019s body and ambient temperatures.\n\n### Breeding performance in the field\n\nSince our previous study showed that blowflies are the beetle\u2019s main interspecific competitor (Sun et al., 2014), we conducted series of experiments in the field to investigate the breeding TPC with and without interspecific competition. In 2013 to 2016 (May-October), we investigated the natural pattern of N. nepalensis reproduction and its breeding success along an elevational gradient from 673 m to 3422 m on Mt. Hehuan in central Taiwan (24\u00b011\u2019 N, 121\u00b017\u2019 E) that encompasses broadleaf forests at lower elevations and mixed conifer-broadleaf forests at higher elevations. We chose 37 study sites, primarily in natural forests to avoid cultivated or open areas where temperatures are more variable (De Frenne et al., 2019) and replicated each treatment at least three times at each site. In each trial, a 75 g (\u00b1\u00a07.5 g) rat carcass was placed on the soil to attract beetles and covered with a 21\u00a0\u00d7\u00a021\u00a0\u00d7\u00a021 cm (length x width x height) iron cage with 2\u00a0\u00d7\u00a02 cm mesh to prevent vertebrate scavengers from accessing the carcass. We checked each carcass daily until it began to decay due to microbial activity (Payne, 1965), was consumed by maggots or other insects, or was buried under the soil by beetles. If burying beetles completely buried the carcass, we checked the experiment after 14 days to determine if third-instar larvae appeared. Cases in which pairs produced third-instar larvae were regarded as successful breeding attempts. Cases in which pairs failed to produce larvae were regarded as failed breeding attempts.\n\nBreeding experiments without blowflies were conducted in the same experimental sites from 2014 to 2017, and 2019 (May-October). The experimental design was the same as that described above, but we used screen mesh above the pots to also keep blowflies out. To record air temperature at every site, we placed iButton devices approximately 120 cm above the ground within a T-shaped PVC pipe to prevent direct exposure to the sun but allow for air to circulate. One male and one female beetle that were reared in the lab were released into the pot to record fundamental breeding performance. After 14 days, we checked the pots to determine whether the burying beetles\u2019 third-instar larvae appear. Cases in which pairs fully buried the carcass and produced larvae after 14 days were regarded as successful breeding attempts. Cases in which pairs failed to bury a carcass, or they buried it but did not produce larvae, were regarded as failed breeding attempts. Criteria of data exclusion were the same as the common garden experiments. Three instances (of 178 replicates) when beetles died during the experiment were excluded from analysis.\n\n### The influence of cooperation on thermal performance in the field\n\nTo investigate how cooperative behavior influences TPCs, we manipulated the group size of beetles in the field at 38 sites along the elevational gradient. Our experimental device comprised a small plastic container (21\u00a0\u00d7\u00a013\u00a0\u00d7\u00a013 cm with 10 cm of soil) placed inside a large container (41\u00a0\u00d7\u00a031\u00a0\u00d7\u00a021.5 cm with 11 cm of soil). There were several holes on the small container\u2019s side wall that allowed beetles to move freely between the two containers. A 2 \u00d7 2 cm iron mesh was placed around the top of the large container\u2019s wall to let flies access the carcass but to keep out larger animals that might scavenge the carcass. Small, non-cooperative groups contained one male and one female, whereas large, cooperative groups contained three males and three females (Chen et al., 2020; Liu et al., 2020). We captured the local beetles using the same hanging pitfall traps described above, and then conducted two group size treatments at each site. Based on our previous work exploring the natural pattern of arrival times, we released the marked beetles into the experimental device 1, 2 and 3 days after the trials began at elevations of 1700\u20132000 m (low), 2000\u20132400 m (intermediate) and 2400\u20132800 m (high), respectively (for details, see Sun et al., 2014).\n\nEach experiment was recorded by a digital video recorder (DVR) to determine whether N. nepalensis successfully buried the carcass. We placed the same temperature measurement device as described above at every site. Cases in which beetles buried the carcass completely and produced larvae after 14 days after were regarded as successful breeding attempts. Cases in which beetles failed to produce larvae were regarded as failed breeding attempts.\n\n### Data analysis\n\nWe used generalized linear mixed models (GLMMs) with binomial error structure to compare thermal performance curves among treatments (with/without interspecific competitors; with/without intraspecific cooperation) in the field. The outcome of breeding success (1\u00a0=\u00a0success, 0\u00a0=\u00a0failure) was fitted as a binomial response term to test for differences in the probability of breeding successfully. The variables of interest (i.e. mean daily temperature, type of experimental treatment) were fitted as fixed factors. Other environmental factors (elevation, daily minimum air temperature) were fitted to test the generality of the results. However, since elevation, daily minimum air temperature, and mean air temperature were highly correlated, we only included mean daily temperature in the final model. We also modeled the potential nonlinear effects of the environmental factors by fitting a quadratic regression model and compared the model fit with the linear model. Thus, the thermal performance curves (TPC) were determined statistically by the GLMM. To account for repeated sampling in the same plot, we set the field plot ID as a random factor (coded as 1|plot ID) in the R package lme4 (Bates et al., 2014). We also included year as a random factor to account for sampling at different time points (See Source code 1 for further details).\n\nWe used a general linear models (GLMs) to determine N. nepalensis's breeding rate\u00a0and locomotor performance in the lab. The outcome (1\u00a0=\u00a0success, 0\u00a0=\u00a0failure) was fitted as a binomial response term to test the difference in the probabilities of interest (burial or non-burial) under different temperatures. For locomotor performance, the outcome (1\u00a0=\u00a0flying, 0\u00a0=\u00a0not flying) was fitted as a binomial response term to test for a difference in the probability of interest (flying or not) under different temperatures conditions. The relationship of temperature difference (body temperature minus ambient temperature) was fitted as a Gaussian response to different temperature conditions. (See Source code 1 for further details).\n\nFinally, the optimal temperature (Toptimal) of the TPC was calculated by taking the derivative of the regression line that described the relationship between temperature and the likelihood of breeding successfully. In other words, Toptimal was estimated from the unimodal statistical model of the TPC. To estimate TPC breadth, we calculated the 95% confidence interval of the regression line. The boundaries of the TPC were the points that there was not significant difference between regression lines and zero. All statistical analyses were performed in the R v3.0.2 statistical software package (R Development Core Team, 2018). (See Source code 1 for further details).\n\n### Theoretical model\n\nWe employed the following commonly-used thermal performance curve (TPC) function (Deutsch et al., 2008; Vasseur et al., 2014) to describe the fundamental TPCs of two competing species with strategies similar to those in our empirical system of beetles and blowflies. A low-temperature thermal specialist species resembles the burying beetle\u2019s breeding thermal performance (Tsai et al., 2020), whereas a high temperature generalist species that has a similar life history to the blowfly (Figure 1a):\n\n$$\nP(T)={exp\u2061(\u2212(T\u2212T_{opt})/2\\sigma_{p})^{2}),\u00a0when\u00a0T\\leqT_{opt}1\u2212((T\u2212T_{opt})/(T_{opt}\u2212T_{max}))^{2},\u00a0when\u00a0T>T_{opt}}\n$$\n\nwhere $T$ is environmental temperature, $\\sigma_{p}$ is the shape parameter describing the steepness of the curve at the lower end, $T_{opt}$ is the optimal environmental temperature at which organisms have their highest performance, and $T_{max}$ is the upper critical temperature. We assumed that performance becomes zero when $T$ > $T_{max}$.\n\nSince environmental conditions also directly influence a species\u2019 average performance, we used a Gaussian function to describe the chance of encountering a particular temperature:\n\n$$\nf(T|T_{mean})=(2\\piV)^{\u22120.5exp(\u2212(T_{s}\u2212T_{m})^{2}/2V)}\n$$\n\nwhere $fT|T_{mean}$ represents the probability of getting $T$ given $T_{mean}$, $T_{mean}$ represents the mean environmental temperature, and $V$ describes the environmental temperature variability. We combined equations (1) and (2) to obtain the temperature-weighted performance function:\n\n$$\nw(T)=\\int\u2212\u221e+\u221e[P(T)f(T|T_{mean})]dt\n$$\n\nby integrating the product of performance and probability of the temperature across all environmental temperatures. We then used the relative performance of the two species (i.e. wS(T)/wG(T) and wG(T)/wS(T)) to represent the realized TPCs of specialist and generalist species, respectively.\n\nWe began by addressing how interspecific competition influences the realized TPC of a focal species, finding that when a low temperature specialist species (e.g. burying beetle) competes with a high temperature generalist species (e.g. blowfly), the optimal temperature of the realized TPC of the thermal specialist shifts towards a lower temperature and the width of the TPC decreases (Figure 2b). In other words, our model predicts that the optimal temperature of the realized TPC will decrease to below that of the optimal of fundamental TPC when a low temperature specialist competes with a high temperature generalist. To make the theoretical framework complete, we also explored the scenario of a high temperature specialist competing with a low temperature generalist. We found that if a high temperature specialist species competes with the low temperature generalist species (Figure 1\u2014figure supplement 1a), the optimal temperature of the realized TPC of the thermal specialist shifts towards a higher temperature and the width of the realized TPC decreases (Figure 1\u2014figure supplement 1b), which suggests that a shift in the optimal realized TPC away from the optimal temperature of the competing species is a general result. (See Source code 2 for further details).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/57022/elife-57022-fig2-v2.jpg)\n\n**Figure 2.:** Blue lines represent the TPCs of the low temperature specialist species, whereas orange lines depict the high temperature generalist species. Toptimal indicates the optimal temperature of the realized TPCs, as shown by vertical dashed lines. The horizontal dashed line represents the relative performance of the two species, which are equal to each other.\n\n## Results\n\nWe first explored N. nepalensis\u2019s fundamental breeding TPC in a controlled lab environment. We found that the probability N. nepalensis breeding successfully changed unimodally with ambient temperature (Figure 3a, GLM, \u03c7\u00b22\u00a0=\u00a026.29, p\u00a0<\u00a00.001, n\u00a0=\u00a0117). Accordingly, we found that the beetle\u2019s optimal breeding temperature or fundamental TPC\u2014defined as the mean temperature at which breeding success was highest (calculated from our GLM)\u2014was 15.6\u00b0C. To determine the physiological basis of this optimal breeding TPC, we measured locomotion ability at different temperatures by performing a treadmill running experiment. We found that beetles had a greater likelihood of flying at 16\u00b0C while running at a stable speed on the treadmill (Figure 3b, GLM, \u03c7\u00b22\u00a0=\u00a013.22, p\u00a0=\u00a00.001, n\u00a0=\u00a072). In other words, N. nepalensis took less energy to raise its body temperature enough to begin flying at 16\u00b0C than at other temperatures (Figure 3c and d, GLM, \u03c7\u00b22\u00a0=\u00a023.18, p\u00a0<\u00a00.001, n\u00a0=\u00a029).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/57022/elife-57022-fig3-v2.jpg)\n\n**Figure 3.:** (a) The probability of breeding successfully at different temperatures in the lab in the absence of competitors. The shaded orange area depicts the 95% confidence interval. The optimal temperature of the TPC, which is calculated by taking the derivative of the regression line, is indicated (\u03c7\u00b22\u00a0=\u00a026.29, p\u00a0<\u00a00.001, n\u00a0=\u00a0117). (b) The probability of flying in the three different ambient temperature conditions (\u03c7\u00b22\u00a0=\u00a013.22, p\u00a0=\u00a00.001, n\u00a0=\u00a072) (c) Infrared thermal image of N. nepalensis running on the treadmill, and (d) the temperature difference between the body temperature of beetles that started flying and the ambient temperature in the three temperature conditions while beetles were running on the treadmill at a stable speed of 150 cm/min (\u03c7\u00b22\u00a0=\u00a023.18, p\u00a0<\u00a00.001, n\u00a0=\u00a029).\n\nNext, we investigated N. nepalensis\u2019s realized and fundamental breeding TPCs by studying breeding performance along an elevational gradient (1600 to 2800 m above sea level). As predicted by our model, in the presence of interspecific competitors (blowflies) in the wild, the optimal breeding temperature (i.e. the realized TPC) of N. nepalensis was roughly 13.1\u00b0C, which is lower than the optimal temperature in the lab in the absence of blowflies (i.e. the fundamental TPC) (Figure 4a, GLMM, \u03c7\u00b22\u00a0=\u00a016.56, p\u00a0<\u00a00.001, n\u00a0=\u00a0343). Intriguingly, when excluding blowflies and removing the threat of intraspecific competition in the field, the optimal breeding temperature of N. nepalensis increased to approximately 14.6\u00b0C,\u00a0such that the realized TPC began to approach the fundamental TPC in the absence of blowflies, ultimately becoming broader than when in the presence of interspecific competitors (Figure 4b, GLMM, \u03c7\u00b22\u00a0=\u00a016.08, p\u00a0<\u00a00.001, n\u00a0=\u00a0175). Thus, our experiment confirmed the causal relationship between interspecific competition and the shift in the realized TPC under natural conditions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/57022/elife-57022-fig4-v2.jpg)\n\n**Figure 4.:** The probability of breeding successfully along the temperature gradient (a) with the potential for interspecific competition (\u03c7\u00b22\u00a0=\u00a016.56, p\u00a0<\u00a00.001, n\u00a0=\u00a0343) and (b) in the absence of interspecific competition. The shaded orange area depicts the 95% confidence interval (\u03c7\u00b22\u00a0=\u00a016.08, p\u00a0<\u00a00.001, n\u00a0=\u00a0175). The optimal temperatures of the TPCs, which were calculated by taking the derivatives of the regression lines, are indicated. Pictures correspond to experiments detailed in Figure 1.\n\nSince our previous study found that N. nepalensis will cooperate at carcasses to compete against blowflies, particularly in warmer environments (Sun et al., 2014), we predicted that a group of N. nepalensis in a warm environment would have a better chance of expanding its realized TPC towards the fundamental TPC than would an individual pair. To test this prediction, we performed a group size manipulation to determine the realized TPCs of cooperative groups and solitary beetles. We found that N. nepalensis in cooperative groups had an optimal breeding temperature (i.e. realized TPC) of 15.6\u00b0C, which is identical to their optimal temperature from the fundamental TPC in the lab. In contrast, the optimal breeding temperature of solitary pairs was 14.1\u00b0C, similar to that of the realized TPC of 14.6\u00b0C in the field (Figure 5, group size\u00a0\u00d7\u00a0temperature interaction, \u03c722\u00a0=\u00a06.84, p\u00a0=\u00a00.033, n\u00a0=\u00a0328; for large groups, \u03c722\u00a0=\u00a09.40, p\u00a0=\u00a00.009, n\u00a0=\u00a0162; for small groups, \u03c722\u00a0=\u00a018.42, p\u00a0<\u00a00.001, n\u00a0=\u00a0166). These results suggest that beetles that cooperate are able to expand their realized TPCs such that they converge on their fundamental TPCs, whereas those do not cooperate have divergent realized and fundamental TPCs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/57022/elife-57022-fig5-v2.jpg)\n\n**Figure 5.:** The shaded areas depict 95% confidence intervals (group size\u00a0\u00d7temperature interaction, \u03c722\u00a0=\u00a06.84, p\u00a0=\u00a00.033, n\u00a0=\u00a0328; for large groups \u03c722\u00a0=\u00a09.40, p\u00a0=\u00a00.009, n\u00a0=\u00a0162; for small groups, \u03c722\u00a0=\u00a018.42, p\u00a0<\u00a00.001, n\u00a0=\u00a0166). The optimal temperatures of the TPCs, which were calculated by taking the derivatives of the regression lines, are indicated. Pictures correspond to experiments detailed in Figure 1.\n\n## Discussion\n\nBy combining the concepts of fundamental and realized niches from ecological niche theory with the that of the thermal performance curve (TPC), we found that a species\u2019 realized thermal performance curve is likely to change in time and space in response to biotic factors such as interspecific competition (see Figure 1\u2014figure supplement 2 for the summary). Our theoretical model suggests that if thermal specialist species compete with thermal generalist species adapted to higher or lower temperatures, the optimal performance temperature of specialists will decrease or increase, respectively. Our empirical results examining competition between burying beetles (thermal specialists) and blowflies (thermal generalists) for access to carcasses support this theoretical prediction, finding that blowflies force the beetle\u2019s optimal breeding temperature lower and the realized TPC narrower. Intriguingly, our experiment also showed that intraspecific cooperation in this facultatively social species not only enables beetles to overcome interspecific competition (Sun et al., 2014; Shen et al., 2017; Lin et al., 2019), but to better match their fundamental and realized TPCs (from 14.1\u00b0C to 15.6\u00b0C). Therefore, the mechanism that enables cooperative beetles to expand their range to lower elevations relative to non-cooperative beetles (Sun et al., 2014; Liu et al., 2020) appears to be their ability to align their fundamental and realized thermal niches.\n\nThe idea that interspecific competition will reduce the realized niche width of a species is well-accepted in ecology. However, our study further suggests that a more mechanistic understanding of how interspecific competitors affect the optimal temperature performance of species will be critical for understanding how climate change affects species\u2019 vulnerability. Since it is generally assumed in studies of macroecology and climate change that thermal performance is largely influenced by physiology, a single function is often used to describe a species\u2019 thermal performance curve (Sinclair et al., 2016). However, if biotic interactions are key to indirectly influencing the thermal performance of a species, as we have shown here, the realized TPC of a species is likely to change in time and space and should not be described by a single function to represent the thermal performance of a species.\n\nIntegrating the idea of TPCs into the ecological niche concept helps bridge two rich, but largely independent, traditions of studying thermal adaptation. By simply recognizing the concept of realized TPCs, it becomes clear that we know little about how realized and fundamental TPCs differ in most species. We show that the realized TPC provides a way to quantify how temperature mediates species interactions, which also influence organismal fitness. Thus, the realized TPC extends the realized thermal niche concept, which only considers the temperature ranges in which a species can occupy or breed successfully (Huff et al., 2005; Rehfeldt et al., 2008) by considering how abiotic factors (i.e. climate) additionally indirectly affect fitness by driving biotic interactions like species competition. For example, a greater population size can facilitate intraspecific cooperation because there are more individuals to form groups quickly to outcompete interspecific competitors, as we found in burying beetles at lower elevations. We predict that Allee effects\u2014when higher population density has a positive effect on individual fitness and population growth rate until it reaches the maximum (Allee, 1931; Courchamp et al., 1999; Stephens and Sutherland, 1999)\u2014will likely occur in N. nepalensis in warmer environments. Therefore, conserving high population densities, especially at lower elevations, will be crucial for N. nepalensis to compete against blowflies under increased climate warming. By examining the relationship between cooperative behavior and interspecific competition, our study thus helps understand the pressing issue of how habitat destruction affects the vulnerability of social organisms to climate change (Travis, 2003). When population density influences the likelihood of intraspecific cooperation in social species, habitat destruction will not only decrease habitat availability but also weaken a species\u2019 competitive ability against interspecific competitors, which in turn will lower the realized thermal performance of social organisms.\n\nOur study has implications beyond interspecific competition in insects. Many classic studies of TPCs investigate how changes in body temperature influence physiological or behavioral performance (Chen et al., 2003; Zhang and Ji, 2004; Huey et al., 2012). Body temperature is often assumed to be the same as the environmental temperature in ectotherms. However, accumulating evidence suggests that many ectotherms can at least partially regulate their own body temperature behaviorally or physiologically (Heinrich, 1993; Tattersall et al., 2016; Clarke, 2017). Thus, to identify fundamental TPCs, it is crucial to perform both lab and field experiments in order to understand the exact relationship between body and ambient temperature, as well as how realistic environmental conditions (e.g. temperature variation, humidity, or precipitation) influence the fundamental TPC. For example, TPCs are often considered to be left-skewed for physiological reasons (e.g. the response of thermoregulation proceeds faster at higher temperatures) (Woodin et al., 2013; Huey and Pianka, 2018), but our results and those of many other studies have shown that TPCs can be diverse in their shape (Dell et al., 2011; Monaco et al., 2017). Although we show that variation in the shape of TPCs can be due to interspecific competition, other types of biotic interactions, including mutualistic and host-parasites interactions (Cohen et al., 2017), should also be carefully considered and compared when quantifying fundamental TPCs. Ultimately, separating and experimentally quantifying fundamental and realized thermal performance in the field and lab will be critical for understanding how both biotic and abiotic factors interact to influence organismal fitness, particularly in an era of rapid climate change.\n\nThe concept of the TPC has received renewed interest because the earth has been warming rapidly for the past few decades. Yet, apparent gaps exist between studies of physiological function and those examining fitness consequences in changing environments. Our study shows that employing the concepts of fundamental and realized TPCs can help us predict the ecological impacts of climate change, especially because environmental change will likely reshuffle ecological communities and alter the strength of species interaction (Alexander et al., 2016). The importance of biotic interactions in shaping species distributions and community composition is intuitively obvious, yet historically has been difficult to quantify. We believe that the concept of realized TPCs can help fill this important knowledge gap and, ultimately, deepen our understanding of the ecological impact of climate change.\n",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "9437bae6-e3b2-484a-8f39-a1265d1274d1",
+      "submission_id": "4bfff706-ef80-4d56-b8bf-3aab978d0cdb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Samuel L D\u00edaz-Mu\u00f1oz, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.57022.sa1](https://doi.org/10.7554/eLife.57022.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis paper combines theory with lab and field experiments to address an interesting and important question: how does competition between species, and its interaction with cooperation within species, influence the thermal performance curve of animals (burying beetles) and thus their potential distribution? The resulting work is novel and provides important insights into the role that biotic interactions play in shaping the ecological niche of a population and thereby how populations will respond to climate change.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Antagonistic Effects of Intraspecific Cooperation and Interspecific Competition on Thermal Performance\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Samuel L D\u00edaz-Mu\u00f1oz as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Christian Rutz as the Senior Editor. The following individual involved in the review of your submission has agreed to reveal their identity: Per Smiseth (Reviewer #2).\n\nThe reviewers have discussed their reviews with one another, and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis manuscript describes impressive work that addresses an interesting and important question: how does interspecific competition, and its interaction with intraspecific cooperation, influence the thermal performance curve of burying beetles? The authors answer this question using a combination of lab and field experiments, together with theory, to show that temperature-dependent breeding performance in burying beetles varies with the density of competing blowflies and the number of cooperative beetles. This paper combines two currents in the field: (1) the use of physiology to understand niches and how species distributions may track climate change; and (2) an examination of how inter- and intra-species interactions may change realized niches. The work is novel and likely to provide important new insights into the role that biotic interactions play in shaping the thermal niche of a population, and thereby how populations will respond to climate change. In sum, this manuscript has the potential to become a landmark paper in the field, because it integrates important research currents with formal theory and empirical data.\n\nIn preparing your response and manuscript modifications, please pay special attention to the Essential revisions section below. There are a number of them, but the majority pertain to added detail in the manuscript, and should not require new data. There was concern that the manuscript is short on detail on some key aspects of the methodology, with potential implications for the interpretation of the results.\n\nEssential revisions:\n\n1) The authors should indicate more clearly the model they used and the parameters they estimated to obtain TPCs from their data (e.g., Figure 3B). They state that they used a GLMM to model a binomial response to temperature, but the nice humped shape of the curve for the probability of success requires a more complex statistical model than is suggested in the data analysis section. If they are fitting the theoretical model described in Equation 1, then they should give the parameter estimates for Topt, Tmax and \u03c3. If they are fitting Equation 3, they should provide parameter estimates for that equation. And, if they are estimating the parameter Topt statistically, then it is unclear why they would need to derive Topt by taking the derivative of the curve generated with the estimated Topt.\n\n2) Why does the text referring to the TPC in Figure 3A provide Chi-square and p-values? What is the null hypothesis here? Is it that breeding performance does not vary with temperature? If so, that should be stated clearly.\n\n3) The authors mention that they included environmental covariates, elevation and daily minimum temperature, but did not indicate whether these had any influence on breeding success. Also, was there any attempt to account for year in the analysis?\n\n4) The fact that the field group size experiments match the realized TPC in the field and the fundamental TPC in the lab exactly is curious, given how variable experiments (especially those in the field) can be. Perhaps the use of more significant figures and listing the uncertainty around these estimates would allay any concerns from readers.\n\n5) Related to the above point: The code underlying the analyses should be included so readers can evaluate how the results were arrived at, also addressing concerns above regarding the model. (If it is not already planned to be included in the Dryad Repository, especially given the nice data break down by figure).\n\n6) How is competition between blowflies and beetles modeled in the theoretical section? There must be some equation used to represent how access to a carcass varies with temperature due to the activity of blowflies, but we couldn't see the equation or any reference to it.\n\n7) Materials and methods: How many traps were placed within the altitudinal range, and how far apart were they?\n\n8) Origins of the lab strains of beetles used in the laboratory experiments: Please provide more details on how many lab strains were used in the experiments and the extent to which these lab strains originated from separate populations with distinct thermal conditions. Currently, the manuscript simply states that each lab strain derived from 2 males and 2 females caught in the field.\n\n9) Breeding performance in the common garden experiment: Please explain why males and females from different populations were paired up in this experiment, and whether this approach had any implications for the interpretation of the results. If lab strains originated from separate populations with distinct thermal conditions, and there is local adaptation to these thermal conditions, could this approach alter the offspring's TPC compared to that of natural populations? If so, could this have implications for the interpretation of your results, such as for comparisons of breeding performance under laboratory and natural conditions?\n\n10) Thermal regulation of locomotor performance: This experiment was conducted by beetles from different lab strains. Given that each lab strain derived from 2 males and 2 females caught in the field, there is likely to be some inbreeding in each lab strain. Could this have implications for the interpretation of these results, such as for comparisons of TPC for locomotory and breeding performance?\n\n11) Breeding performance in the field: Our understanding is that different treatments were replicated (at least to some degree) in different years. The treatment 'with interspecific competition' was replicated in 2014 and 2015, whilst the treatment 'without interspecific competition' in 2014 and 2019? What implications, if any, could this have for the interpretation of your results?\n\n12) The Introduction (like the Abstract) doesn't emphasize, or rather weave together, the two important currents of niche research (TPC and cooperation, as mentioned above in the summary) that are addressed explicitly and simultaneously in this paper. As in the Abstract, it may be helpful to highlight cooperation (or competition/cooperation balance) earlier in the paper. Something akin to the gem of a paragraph that starts with \"Integrating the idea of TPCs into the ecological niche concept helps bridge two rich, but largely independent, traditions of studying thermal adaptation.\" in the Discussion. A similarly strong argument earlier in the Introduction can help tie together the TPC/behavior currents.\n",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b63a19cf-fde5-4853-8617-e57c90ac254d",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C1",
+      "claim": "Understanding how climate-mediated biotic interactions shape thermal niche width is critical in an era of global change.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding how climate-mediated biotic interactions shape thermal niche width is critical in an era of global change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of research in the context of global change, drawing on established scientific consensus about climate change impacts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "a2444692-fa4a-4fa6-8fc1-bad3046d1cdf",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C2",
+      "claim": "Most previous work on thermal niches has ignored detailed mechanistic information about the relationship between temperature and organismal performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, most previous work on thermal niches has ignored detailed mechanistic information about the relationship between temperature and organismal performance, which can be described by a thermal performance curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the existing literature, based on the authors' review of previous research.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "8c7cbce7-e133-468c-9598-00d955af7f6a",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C3",
+      "claim": "The width of thermal performance curves will be narrower in the presence of interspecific competitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we develop a model that predicts the width of thermal performance curves will be narrower in the presence of interspecific competitors, causing a species' optimal breeding temperature to diverge from that of its competitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is derived from a theoretical model developed in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "bfd873fc-d994-4055-ae63-46fd24b4e08a",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C4",
+      "claim": "Interspecific competition causes a species' optimal breeding temperature to diverge from that of its competitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we develop a model that predicts the width of thermal performance curves will be narrower in the presence of interspecific competitors, causing a species' optimal breeding temperature to diverge from that of its competitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "52b4af47-bff5-496e-8f65-7a9a33f3f444",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C5",
+      "claim": "The divergence in actual and optimal breeding temperatures in Nicrophorus nepalensis is the result of competition with blowflies.",
+      "claim_type": "EXPLICIT",
+      "source": "We test this prediction in the Asian burying beetle Nicrophorus nepalensis, confirming that the divergence in actual and optimal breeding temperatures is the result of competition with their primary competitor, blowflies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript testing the model prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "351e1a83-c825-48c4-ae0c-e8c34c07fe5e",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C6",
+      "claim": "Intraspecific cooperation enables beetles to outcompete blowflies by recovering their optimal breeding temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we further show that intraspecific cooperation enables beetles to outcompete blowflies by recovering their optimal breeding temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from group size manipulation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "8d19fd04-575a-46df-9fbf-75757c0325a5",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C7",
+      "claim": "The ecological niche describes a hyperspace with permissive conditions and requisite resources under which an organism, population, or species has positive fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "A cornerstone for understanding the distribution and associated ecological impacts of climate change on organismal fitness is the concept of the ecological niche, which describes a hyperspace with permissive conditions and requisite resources under which an organism, population, or species has positive fitness (Hutchinson, 1957; Chase and Leibold, 2003; Colwell and Rangel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This definition is supported by citations to foundational ecological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "1f770896-7ad0-4634-9dab-2da1dfcd2817",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C8",
+      "claim": "Hutchinson distinguished the fundamental niche from the realized niche.",
+      "claim_type": "EXPLICIT",
+      "source": "More than a half century ago, Hutchinson (Hutchinson, 1957) distinguished the fundamental niche\u2014characterized by abiotic environmental measures like temperature and precipitation\u2014from the realized niche\u2014characterized by biological interactions like competition and predation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact about ecological theory, supported by citation to Hutchinson's work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "655e5af0-5e49-40dd-a66c-d1d42c5546b0",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C9",
+      "claim": "The fundamental niche is characterized by abiotic environmental measures like temperature and precipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "More than a half century ago, Hutchinson (Hutchinson, 1957) distinguished the fundamental niche\u2014characterized by abiotic environmental measures like temperature and precipitation\u2014from the realized niche\u2014characterized by biological interactions like competition and predation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from ecological niche theory, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "98d104fc-4adf-4387-92c5-cec28a15a7fa",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C10",
+      "claim": "The realized niche is characterized by biological interactions like competition and predation.",
+      "claim_type": "EXPLICIT",
+      "source": "More than a half century ago, Hutchinson (Hutchinson, 1957) distinguished the fundamental niche\u2014characterized by abiotic environmental measures like temperature and precipitation\u2014from the realized niche\u2014characterized by biological interactions like competition and predation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition from ecological niche theory, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "3052b14c-10cb-4bc4-a197-521c03a83299",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C11",
+      "claim": "Numerous studies have used the relationship between a species' distribution and the climate in which it occurs to estimate a species' fundamental niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Although numerous studies since then have used the relationship between a species' distribution and the climate in which it occurs to estimate a species' fundamental niche (Kearney and Porter, 2009; Quintero and Wiens, 2013; Ga\u00fcz\u00e8re et al., 2015), a growing number of studies have also employed theoretical, observational, or experimental approaches to evaluate the detailed mechanisms (e.g. physiological limits) (Huey et al., 2012), demographic factors, and species interactions that shape a species' fundamental and realized niches (Monahan, 2009; Nilsson-\u00d6rtman et al., 2013; Estay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the literature supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "b93ab4f2-e672-4180-9651-768d1350dd4b",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C12",
+      "claim": "A growing number of studies have employed theoretical, observational, or experimental approaches to evaluate the detailed mechanisms, demographic factors, and species interactions that shape a species' fundamental and realized niches.",
+      "claim_type": "EXPLICIT",
+      "source": "Although numerous studies since then have used the relationship between a species' distribution and the climate in which it occurs to estimate a species' fundamental niche (Kearney and Porter, 2009; Quintero and Wiens, 2013; Ga\u00fcz\u00e8re et al., 2015), a growing number of studies have also employed theoretical, observational, or experimental approaches to evaluate the detailed mechanisms (e.g. physiological limits) (Huey et al., 2012), demographic factors, and species interactions that shape a species' fundamental and realized niches (Monahan, 2009; Nilsson-\u00d6rtman et al., 2013; Estay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of recent research trends, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "d5286793-d655-418d-9e00-37e0c47a8a52",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C13",
+      "claim": "Differentiating between how abiotic factors and biotic interactions influence niche width is critical for understanding species-specific responses to climate change.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, differentiating between how abiotic factors and biotic interactions influence niche width is critical for understanding species-specific responses to climate change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of research approaches, based on logical inference from ecological theory.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "90053fd4-d738-465d-8f0d-a865ece0ae7d",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C14",
+      "claim": "The concept of the thermal performance curve was first developed to study how body temperature affects ectotherms' physiological responses and behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The concept of the thermal performance curve (TPC) was first developed to study how body temperature affects ectotherms' physiological responses and behaviors (Kearney and Porter, 2009; Quintero and Wiens, 2013; Ga\u00fcz\u00e8re et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about the development of the TPC concept, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "f563e1f5-f882-4251-acc2-15cb5a6ad0db",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C15",
+      "claim": "The TPC concept has received increasing attention in studies of how warming temperatures influence organismal fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the TPC concept has received increasing attention in studies of how warming temperatures influence organismal fitness (Clusella-Trullas et al., 2011; Sinclair et al., 2016), it has been developed largely independently from niche-based studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of research trends, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "3a66374d-fcb5-4714-b3c9-05b5ef5c40b4",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C16",
+      "claim": "The TPC concept has been developed largely independently from niche-based studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the TPC concept has received increasing attention in studies of how warming temperatures influence organismal fitness (Clusella-Trullas et al., 2011; Sinclair et al., 2016), it has been developed largely independently from niche-based studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the historical development of two research traditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "261ceab0-a09f-4967-b9a5-fd39f9a4867f",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C17",
+      "claim": "Characterizing the TPC is a way to mechanistically quantify a species' thermal niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, characterizing the TPC is essentially a way to mechanistically quantify a species' thermal niche.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual claim linking two theoretical frameworks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "4ed469ac-c25c-4497-869e-4a103a6f98b1",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C18",
+      "claim": "The TPC concept is more informative than that of the thermal niche, which is typically defined as the range of temperatures over which organisms occur in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the TPC describes the detailed relationship between temperature and fitness, the concept may actually be more informative than that of the thermal niche, which is typically defined as the range of temperatures over which organisms occur in nature (i.e. thermal niche width) (Huey and Stevenson, 1979; Hillaert et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative evaluation of two concepts, based on logical inference and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "0928d364-2210-4452-b817-bdff555fc65e",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C19",
+      "claim": "The TPC concept describes thermal niche width and quantifies an organism's optimal temperature and how fitness varies with changes in temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the TPC concept not only describes thermal niche width, it also quantifies an organism's optimal temperature and how fitness varies with changes in temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of what the TPC concept encompasses, based on the definition of TPCs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "ac11f1d4-fa9a-4d96-b7f0-8a5d6d684f59",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C20",
+      "claim": "Most TPC studies focus largely on the fundamental TPC and do not explicitly consider biotic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, most TPC studies focus largely on what amounts to the fundamental TPC and do not explicitly consider biotic interactions (Dillon et al., 2010; Gunderson et al., 2016; Swaddle and Ingrassia, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the TPC literature, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "a75b6a96-712f-4aa5-961f-e922360cd2f4",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C21",
+      "claim": "The few TPC studies that have considered biotic interactions have almost all focused on predator-prey interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The few TPC studies that have considered biotic interactions have almost all focused on predator-prey interactions (Ockendon et al., 2014; Gibert et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of a subset of the TPC literature, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "01551abb-7af9-4b9a-9641-b23e65c78290",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C22",
+      "claim": "No study has differentiated between fundamental and realized TPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, no study has differentiated between fundamental and realized TPCs, nor experimentally quantified a species' realized TPC in the context of interspecific competition, despite the fact that ecologists have long acknowledged that interspecific competition is a key driving force shaping a species' realized niche (Schoener, 1983; Eurich et al., 2018; Freeman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about a gap in the literature, based on the authors' review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "c4e5b833-84ef-4e55-8fb7-536b08b16c37",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C23",
+      "claim": "No study has experimentally quantified a species' realized TPC in the context of interspecific competition.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, no study has differentiated between fundamental and realized TPCs, nor experimentally quantified a species' realized TPC in the context of interspecific competition, despite the fact that ecologists have long acknowledged that interspecific competition is a key driving force shaping a species' realized niche (Schoener, 1983; Eurich et al., 2018; Freeman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about a gap in the literature, based on the authors' review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "5fce66f6-021e-4c41-b387-1e8e5df5b25b",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C24",
+      "claim": "Ecologists have long acknowledged that interspecific competition is a key driving force shaping a species' realized niche.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, no study has differentiated between fundamental and realized TPCs, nor experimentally quantified a species' realized TPC in the context of interspecific competition, despite the fact that ecologists have long acknowledged that interspecific competition is a key driving force shaping a species' realized niche (Schoener, 1983; Eurich et al., 2018; Freeman et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established ecological theory, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "ee9fb79c-417a-4767-a092-0299da769b25",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C25",
+      "claim": "A few studies have shown that intraspecific cooperation can help social species expand their realized niche width.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although a few studies have shown that intraspecific cooperation can also help social species expand their realized niche width (Sun et al., 2014; Lin et al., 2019), little is known about how intraspecific cooperation influences the realized TPCs of social organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of existing research, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "bfd5a17b-5105-48ef-9199-ca4e984be1e6",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C26",
+      "claim": "Little is known about how intraspecific cooperation influences the realized TPCs of social organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although a few studies have shown that intraspecific cooperation can also help social species expand their realized niche width (Sun et al., 2014; Lin et al., 2019), little is known about how intraspecific cooperation influences the realized TPCs of social organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about a knowledge gap in the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "dea62919-41cb-4366-a356-f9f540695cc2",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C27",
+      "claim": "Burying beetles rely on vertebrate carcasses for reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Burying beetles (Silphidae, Nicrophorus) are ideal for investigating how social interactions influence both fundamental and realized TPCs because the potentially antagonistic effects of interspecific competition and intraspecific cooperation on the realized TPC can be studied simultaneously. Burying beetles rely on vertebrate carcasses for reproduction and often face intense intra- and interspecific competition for using these limiting resources (Pukowski, 1933; Scott, 1998; Rozen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about burying beetle biology, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "7d772bff-5771-4b9b-a810-5175a84b108a",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C28",
+      "claim": "Burying beetles often face intense intra- and interspecific competition for using vertebrate carcasses.",
+      "claim_type": "EXPLICIT",
+      "source": "Burying beetles rely on vertebrate carcasses for reproduction and often face intense intra- and interspecific competition for using these limiting resources (Pukowski, 1933; Scott, 1998; Rozen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about burying beetle ecology, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "1d23a252-604f-40ae-bdfc-4cc4315bdca3",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C29",
+      "claim": "Competition for carcass access is temperature-dependent because blowflies are more abundant and active at higher ambient temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Competition for carcass access is temperature-dependent because the beetle's main competitors, blowflies (family Calliphoridae), are more abundant and active at higher ambient temperatures (Sun et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the temperature-dependence of competition, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "a6d8c5c6-27a9-4dcd-9f65-5f61c8a770c2",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C30",
+      "claim": "Blowfly maggots grow faster and digest carcasses more quickly at higher temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Blowfly maggots also grow faster and digest carcasses more quickly at higher temperatures (Donovan et al., 2006; Kotz\u00e9 et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about blowfly biology, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "1af2629e-4da1-4c01-afba-e7bde235f106",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C31",
+      "claim": "Cooperative carcass preparation and burial enables beetles to outcompete blowflies and expand their thermal niche to warmer environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that cooperative carcass preparation and burial enables beetles to outcompete blowflies and expand their thermal niche to warmer environments (Sun et al., 2014; Chan et al., 2019; Chen et al., 2020; Liu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the effects of cooperation, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "403f8292-e91b-4a22-821c-8fc7d8b71999",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C32",
+      "claim": "The optimal breeding temperature of N. nepalensis without interspecific competitors in the laboratory is 15.6\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that the beetle's optimal breeding temperature or fundamental TPC\u2014defined as the mean temperature at which breeding success was highest (calculated from our GLM)\u2014was 15.6\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from laboratory experiments, calculated from statistical models of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "1eeca19d-d0c4-47bc-84ee-233e70de6613",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C33",
+      "claim": "The probability of N. nepalensis breeding successfully changed unimodally with ambient temperature in the laboratory.",
+      "claim_type": "EXPLICIT",
+      "source": "We first explored N. nepalensis's fundamental breeding TPC in a controlled lab environment. We found that the probability N. nepalensis breeding successfully changed unimodally with ambient temperature (Figure 3a, GLM, \u03c7\u00b22 = 26.29, p < 0.001, n = 117).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of experimental data and shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "7e5afd89-1210-490a-8a11-57562079928d",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C34",
+      "claim": "Beetles had a greater likelihood of flying at 16\u00b0C while running at a stable speed on the treadmill.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that beetles had a greater likelihood of flying at 16\u00b0C while running at a stable speed on the treadmill (Figure 3b, GLM, \u03c7\u00b22 = 13.22, p = 0.001, n = 72).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of treadmill experiments and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "3ecdb805-6e86-4393-ab7d-6ad5a1ab9549",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C35",
+      "claim": "N. nepalensis took less energy to raise its body temperature enough to begin flying at 16\u00b0C than at other temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, N. nepalensis took less energy to raise its body temperature enough to begin flying at 16\u00b0C than at other temperatures (Figure 3c and d, GLM, \u03c7\u00b22 = 23.18, p < 0.001, n = 29).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the temperature difference data, supported by statistical analysis and shown in Figures 3c and 3d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "5ca88f1c-a0d1-4205-87df-84f22c0a2594",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C36",
+      "claim": "In the presence of interspecific competitors (blowflies) in the wild, the optimal breeding temperature (realized TPC) of N. nepalensis was roughly 13.1\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by our model, in the presence of interspecific competitors (blowflies) in the wild, the optimal breeding temperature (i.e. the realized TPC) of N. nepalensis was roughly 13.1\u00b0C, which is lower than the optimal temperature in the lab in the absence of blowflies (i.e. the fundamental TPC) (Figure 4a, GLMM, \u03c7\u00b22 = 16.56, p < 0.001, n = 343).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by field experimental data and statistical analysis, shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "3a1335fd-7734-481d-b5d7-7346362fe425",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C37",
+      "claim": "The optimal breeding temperature of N. nepalensis in the presence of blowflies (13.1\u00b0C) is lower than the optimal temperature in the lab in the absence of blowflies (15.6\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted by our model, in the presence of interspecific competitors (blowflies) in the wild, the optimal breeding temperature (i.e. the realized TPC) of N. nepalensis was roughly 13.1\u00b0C, which is lower than the optimal temperature in the lab in the absence of blowflies (i.e. the fundamental TPC) (Figure 4a, GLMM, \u03c7\u00b22 = 16.56, p < 0.001, n = 343).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of experimental results from different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "c4bb19cd-ea37-4d2f-8dae-e75e6e8e1f27",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C38",
+      "claim": "When excluding blowflies in the field, the optimal breeding temperature of N. nepalensis increased to approximately 14.6\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, when excluding blowflies and removing the threat of intraspecific competition in the field, the optimal breeding temperature of N. nepalensis increased to approximately 14.6\u00b0C, such that the realized TPC began to approach the fundamental TPC in the absence of blowflies, ultimately becoming broader than when in the presence of interspecific competitors (Figure 4b, GLMM, \u03c7\u00b22 = 16.08, p < 0.001, n = 175).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by field experimental data with blowfly exclusion, shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "ffa71dff-7897-439b-91a1-9a0e28ecfb23",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C39",
+      "claim": "The realized TPC of N. nepalensis became broader when blowflies were excluded in the field compared to when in the presence of interspecific competitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, when excluding blowflies and removing the threat of intraspecific competition in the field, the optimal breeding temperature of N. nepalensis increased to approximately 14.6\u00b0C, such that the realized TPC began to approach the fundamental TPC in the absence of blowflies, ultimately becoming broader than when in the presence of interspecific competitors (Figure 4b, GLMM, \u03c7\u00b22 = 16.08, p < 0.001, n = 175).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of TPC widths under different experimental conditions, shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "421756c1-9c4e-4331-adf6-4ee96e1805e5",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C40",
+      "claim": "N. nepalensis in cooperative groups had an optimal breeding temperature (realized TPC) of 15.6\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that N. nepalensis in cooperative groups had an optimal breeding temperature (i.e. realized TPC) of 15.6\u00b0C, which is identical to their optimal temperature from the fundamental TPC in the lab.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by group size manipulation experiments in the field.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "b3e4fd23-e8c1-4f24-bdae-361e6fe344d0",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C41",
+      "claim": "The optimal breeding temperature of N. nepalensis in cooperative groups (15.6\u00b0C) is identical to their optimal temperature from the fundamental TPC in the lab.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that N. nepalensis in cooperative groups had an optimal breeding temperature (i.e. realized TPC) of 15.6\u00b0C, which is identical to their optimal temperature from the fundamental TPC in the lab.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of experimental results showing convergence of realized and fundamental TPCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "a0372b61-b30a-4e8e-921b-fd0f4ff19b47",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C42",
+      "claim": "The optimal breeding temperature of solitary pairs of N. nepalensis was 14.1\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the optimal breeding temperature of solitary pairs was 14.1\u00b0C, similar to that of the realized TPC of 14.6\u00b0C in the field (Figure 5, group size \u00d7 temperature interaction, \u03c722 = 6.84, p = 0.033, n = 328; for large groups, \u03c722 = 9.40, p = 0.009, n = 162; for small groups, \u03c722 = 18.42, p < 0.001, n = 166).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by group size manipulation experiments, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "c762e515-8461-4d0b-a70d-d5f0d9bd2429",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C43",
+      "claim": "Beetles that cooperate are able to expand their realized TPCs such that they converge on their fundamental TPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that beetles that cooperate are able to expand their realized TPCs such that they converge on their fundamental TPCs, whereas those do not cooperate have divergent realized and fundamental TPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the group size manipulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "fb2ab744-3d10-47b3-8146-f71fd62a262a",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C44",
+      "claim": "Beetles that do not cooperate have divergent realized and fundamental TPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that beetles that cooperate are able to expand their realized TPCs such that they converge on their fundamental TPCs, whereas those do not cooperate have divergent realized and fundamental TPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the group size manipulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "85ff1279-61ba-46db-9a3a-8f5bf1d7cae6",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C45",
+      "claim": "If thermal specialist species compete with thermal generalist species adapted to higher temperatures, the optimal performance temperature of specialists will decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theoretical model suggests that if thermal specialist species compete with thermal generalist species adapted to higher or lower temperatures, the optimal performance temperature of specialists will decrease or increase, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "70aadbb3-1e0a-4b20-9ba5-9235527ba2c7",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C46",
+      "claim": "If thermal specialist species compete with thermal generalist species adapted to lower temperatures, the optimal performance temperature of specialists will increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theoretical model suggests that if thermal specialist species compete with thermal generalist species adapted to higher or lower temperatures, the optimal performance temperature of specialists will decrease or increase, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "12616be1-f7ff-4cc8-a90f-c8f58d90ab4d",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C47",
+      "claim": "Blowflies force the beetle's optimal breeding temperature lower and the realized TPC narrower.",
+      "claim_type": "EXPLICIT",
+      "source": "Our empirical results examining competition between burying beetles (thermal specialists) and blowflies (thermal generalists) for access to carcasses support this theoretical prediction, finding that blowflies force the beetle's optimal breeding temperature lower and the realized TPC narrower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the empirical findings from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "6570e38b-845c-4e58-8cc7-6f785faad788",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C48",
+      "claim": "The mechanism that enables cooperative beetles to expand their range to lower elevations relative to non-cooperative beetles is their ability to align their fundamental and realized thermal niches.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the mechanism that enables cooperative beetles to expand their range to lower elevations relative to non-cooperative beetles (Sun et al., 2014; Liu et al., 2020) appears to be their ability to align their fundamental and realized thermal niches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation linking the current findings to previous research, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "b5869025-ebae-4fdf-97b3-631448c35f2f",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C49",
+      "claim": "The idea that interspecific competition will reduce the realized niche width of a species is well-accepted in ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "The idea that interspecific competition will reduce the realized niche width of a species is well-accepted in ecology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about established ecological theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "f7aff8b5-90bb-4ecc-8a6e-f8e60f250e49",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C50",
+      "claim": "A more mechanistic understanding of how interspecific competitors affect the optimal temperature performance of species will be critical for understanding how climate change affects species' vulnerability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our study further suggests that a more mechanistic understanding of how interspecific competitors affect the optimal temperature performance of species will be critical for understanding how climate change affects species' vulnerability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "d151703f-67fa-403a-8830-d46c73d87ff9",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C51",
+      "claim": "It is generally assumed in studies of macroecology and climate change that thermal performance is largely influenced by physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it is generally assumed in studies of macroecology and climate change that thermal performance is largely influenced by physiology, a single function is often used to describe a species' thermal performance curve (Sinclair et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of assumptions in the literature, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "34e91e67-0610-416b-90ba-0926e4d90954",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C52",
+      "claim": "A single function is often used to describe a species' thermal performance curve in studies of macroecology and climate change.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it is generally assumed in studies of macroecology and climate change that thermal performance is largely influenced by physiology, a single function is often used to describe a species' thermal performance curve (Sinclair et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of common practice in the literature, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "811262b1-e655-4491-9359-cce3ec9fdde8",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C53",
+      "claim": "If biotic interactions are key to indirectly influencing the thermal performance of a species, the realized TPC of a species is likely to change in time and space.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if biotic interactions are key to indirectly influencing the thermal performance of a species, as we have shown here, the realized TPC of a species is likely to change in time and space and should not be described by a single function to represent the thermal performance of a species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the study's findings about the importance of biotic interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "8292f490-9118-4122-a8d1-7fd88dd58944",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C54",
+      "claim": "The realized TPC should not be described by a single function to represent the thermal performance of a species.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if biotic interactions are key to indirectly influencing the thermal performance of a species, as we have shown here, the realized TPC of a species is likely to change in time and space and should not be described by a single function to represent the thermal performance of a species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "c0381758-ab1a-4ac7-af64-85ec9c14285b",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C55",
+      "claim": "Integrating the idea of TPCs into the ecological niche concept helps bridge two rich, but largely independent, traditions of studying thermal adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrating the idea of TPCs into the ecological niche concept helps bridge two rich, but largely independent, traditions of studying thermal adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual claim about the contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "d50a5748-f219-484a-bb31-853ef898e554",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C56",
+      "claim": "We know little about how realized and fundamental TPCs differ in most species.",
+      "claim_type": "EXPLICIT",
+      "source": "By simply recognizing the concept of realized TPCs, it becomes clear that we know little about how realized and fundamental TPCs differ in most species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about a knowledge gap in the field.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "85e8e6c5-3baf-4deb-89c5-f1153a4ebf5b",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C57",
+      "claim": "The realized TPC provides a way to quantify how temperature mediates species interactions, which also influence organismal fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the realized TPC provides a way to quantify how temperature mediates species interactions, which also influence organismal fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual claim about the utility of the realized TPC concept.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "68fe909f-48c8-44e1-9556-b3d3548f6298",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C58",
+      "claim": "The realized TPC extends the realized thermal niche concept by considering how abiotic factors additionally indirectly affect fitness by driving biotic interactions like species competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the realized TPC extends the realized thermal niche concept, which only considers the temperature ranges in which a species can occupy or breed successfully (Huff et al., 2005; Rehfeldt et al., 2008) by considering how abiotic factors (i.e. climate) additionally indirectly affect fitness by driving biotic interactions like species competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual claim about how the realized TPC extends existing concepts, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "57bbe64f-81a5-4d40-a680-d1ef4017df31",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C59",
+      "claim": "A greater population size can facilitate intraspecific cooperation because there are more individuals to form groups quickly to outcompete interspecific competitors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a greater population size can facilitate intraspecific cooperation because there are more individuals to form groups quickly to outcompete interspecific competitors, as we found in burying beetles at lower elevations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings about cooperation and competition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "3c067793-93c6-467f-a473-728e77d52406",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C60",
+      "claim": "Allee effects will likely occur in N. nepalensis in warmer environments.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that Allee effects\u2014when higher population density has a positive effect on individual fitness and population growth rate until it reaches the maximum (Allee, 1931; Courchamp et al., 1999; Stephens and Sutherland, 1999)\u2014will likely occur in N. nepalensis in warmer environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the study's findings and ecological theory, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "bcbd02cc-2da8-430d-aa78-92a2a8115398",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C61",
+      "claim": "Conserving high population densities, especially at lower elevations, will be crucial for N. nepalensis to compete against blowflies under increased climate warming.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, conserving high population densities, especially at lower elevations, will be crucial for N. nepalensis to compete against blowflies under increased climate warming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conservation recommendation based on the study's findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "094c2e2a-347f-4440-9325-d34f82359484",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C62",
+      "claim": "When population density influences the likelihood of intraspecific cooperation in social species, habitat destruction will not only decrease habitat availability but also weaken a species' competitive ability against interspecific competitors.",
+      "claim_type": "EXPLICIT",
+      "source": "When population density influences the likelihood of intraspecific cooperation in social species, habitat destruction will not only decrease habitat availability but also weaken a species' competitive ability against interspecific competitors, which in turn will lower the realized thermal performance of social organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of habitat destruction for social species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "c25b4d1b-583a-4e20-b199-b96764b92566",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C63",
+      "claim": "Habitat destruction will lower the realized thermal performance of social organisms when population density influences the likelihood of intraspecific cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "When population density influences the likelihood of intraspecific cooperation in social species, habitat destruction will not only decrease habitat availability but also weaken a species' competitive ability against interspecific competitors, which in turn will lower the realized thermal performance of social organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of habitat destruction for social species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "aa489352-a538-4c5a-883d-437f0e99497d",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C64",
+      "claim": "Many classic studies of TPCs investigate how changes in body temperature influence physiological or behavioral performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Many classic studies of TPCs investigate how changes in body temperature influence physiological or behavioral performance (Chen et al., 2003; Zhang and Ji, 2004; Huey et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of classic TPC studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "48477c36-773a-4a07-a864-a3bd6523b056",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C65",
+      "claim": "Body temperature is often assumed to be the same as the environmental temperature in ectotherms.",
+      "claim_type": "EXPLICIT",
+      "source": "Body temperature is often assumed to be the same as the environmental temperature in ectotherms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a common assumption in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "e69b0c80-f218-4e5b-8577-cb466f67d355",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C66",
+      "claim": "Accumulating evidence suggests that many ectotherms can at least partially regulate their own body temperature behaviorally or physiologically.",
+      "claim_type": "EXPLICIT",
+      "source": "However, accumulating evidence suggests that many ectotherms can at least partially regulate their own body temperature behaviorally or physiologically (Heinrich, 1993; Tattersall et al., 2016; Clarke, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of recent research findings, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "d3d41914-6f1b-461f-9ba3-6150c7445167",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C67",
+      "claim": "To identify fundamental TPCs, it is crucial to perform both lab and field experiments in order to understand the exact relationship between body and ambient temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, to identify fundamental TPCs, it is crucial to perform both lab and field experiments in order to understand the exact relationship between body and ambient temperature, as well as how realistic environmental conditions (e.g. temperature variation, humidity, or precipitation) influence the fundamental TPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological recommendation based on the study's approach and findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "37a46102-782a-4eab-be11-dcb48ec7b0fc",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C68",
+      "claim": "TPCs are often considered to be left-skewed for physiological reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TPCs are often considered to be left-skewed for physiological reasons (e.g. the response of thermoregulation proceeds faster at higher temperatures) (Woodin et al., 2013; Huey and Pianka, 2018), but our results and those of many other studies have shown that TPCs can be diverse in their shape (Dell et al., 2011; Monaco et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a common assumption in the literature, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "0abd5720-08b4-459e-a951-f3aef14fbf01",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C69",
+      "claim": "TPCs can be diverse in their shape.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TPCs are often considered to be left-skewed for physiological reasons (e.g. the response of thermoregulation proceeds faster at higher temperatures) (Woodin et al., 2013; Huey and Pianka, 2018), but our results and those of many other studies have shown that TPCs can be diverse in their shape (Dell et al., 2011; Monaco et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the current study's results and other research, with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "62983634-3492-4fbc-8031-34ffad521546",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C70",
+      "claim": "Variation in the shape of TPCs can be due to interspecific competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we show that variation in the shape of TPCs can be due to interspecific competition, other types of biotic interactions, including mutualistic and host-parasites interactions (Cohen et al., 2017), should also be carefully considered and compared when quantifying fundamental TPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "ef1df38a-bc1b-4e1d-8f0b-2cc49b1a91fa",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C71",
+      "claim": "Other types of biotic interactions, including mutualistic and host-parasite interactions, should be carefully considered when quantifying fundamental TPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we show that variation in the shape of TPCs can be due to interspecific competition, other types of biotic interactions, including mutualistic and host-parasites interactions (Cohen et al., 2017), should also be carefully considered and compared when quantifying fundamental TPCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future research, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "5a15a1b6-542e-45b0-8f2c-dcc027f35741",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C72",
+      "claim": "Separating and experimentally quantifying fundamental and realized thermal performance in the field and lab will be critical for understanding how both biotic and abiotic factors interact to influence organismal fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately, separating and experimentally quantifying fundamental and realized thermal performance in the field and lab will be critical for understanding how both biotic and abiotic factors interact to influence organismal fitness, particularly in an era of rapid climate change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the importance of the study's approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "ad83ebb0-5d1b-4435-a3cb-bd8399e830f8",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C73",
+      "claim": "The concept of the TPC has received renewed interest because the earth has been warming rapidly for the past few decades.",
+      "claim_type": "EXPLICIT",
+      "source": "The concept of the TPC has received renewed interest because the earth has been warming rapidly for the past few decades.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about research trends in the context of climate change.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "d26a239a-177a-4d51-98bc-804264439dc3",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C74",
+      "claim": "Apparent gaps exist between studies of physiological function and those examining fitness consequences in changing environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, apparent gaps exist between studies of physiological function and those examining fitness consequences in changing environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about gaps in the literature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "966edb18-6a8b-4672-a393-e4257907b650",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C75",
+      "claim": "Employing the concepts of fundamental and realized TPCs can help predict the ecological impacts of climate change.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that employing the concepts of fundamental and realized TPCs can help us predict the ecological impacts of climate change, especially because environmental change will likely reshuffle ecological communities and alter the strength of species interaction (Alexander et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the utility of the study's conceptual framework, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "0582c19d-dc49-4477-8f71-063c90dd7cb3",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C76",
+      "claim": "Environmental change will likely reshuffle ecological communities and alter the strength of species interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that employing the concepts of fundamental and realized TPCs can help us predict the ecological impacts of climate change, especially because environmental change will likely reshuffle ecological communities and alter the strength of species interaction (Alexander et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about the effects of environmental change, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "41123131-5c5d-48e1-ad45-e5f9ffd84179",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C77",
+      "claim": "The importance of biotic interactions in shaping species distributions and community composition is intuitively obvious, yet historically has been difficult to quantify.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of biotic interactions in shaping species distributions and community composition is intuitively obvious, yet historically has been difficult to quantify.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a challenge in ecology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "fbb1eccd-810a-403e-812b-6fba85f5591f",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C78",
+      "claim": "The concept of realized TPCs can help fill the knowledge gap about quantifying biotic interactions in shaping species distributions and community composition.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that the concept of realized TPCs can help fill this important knowledge gap and, ultimately, deepen our understanding of the ecological impact of climate change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the potential contribution of the realized TPC concept.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "8ca56f5a-29ad-4d58-b41b-f6b21f6c2e2e",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C79",
+      "claim": "When a low temperature specialist species competes with a high temperature generalist species, the optimal temperature of the realized TPC of the thermal specialist shifts towards a lower temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We began by addressing how interspecific competition influences the realized TPC of a focal species, finding that when a low temperature specialist species (e.g. burying beetle) competes with a high temperature generalist species (e.g. blowfly), the optimal temperature of the realized TPC of the thermal specialist shifts towards a lower temperature and the width of the TPC decreases (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the theoretical model, shown in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "ae171d0a-0d56-49b3-a437-bcb5e3eb07fa",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C80",
+      "claim": "When a low temperature specialist species competes with a high temperature generalist species, the width of the realized TPC of the thermal specialist decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "We began by addressing how interspecific competition influences the realized TPC of a focal species, finding that when a low temperature specialist species (e.g. burying beetle) competes with a high temperature generalist species (e.g. blowfly), the optimal temperature of the realized TPC of the thermal specialist shifts towards a lower temperature and the width of the TPC decreases (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the theoretical model, shown in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "444f66b2-dd7b-4b48-9fae-8170c28542cd",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C81",
+      "claim": "The optimal temperature of the realized TPC will decrease to below that of the optimal of fundamental TPC when a low temperature specialist competes with a high temperature generalist.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, our model predicts that the optimal temperature of the realized TPC will decrease to below that of the optimal of fundamental TPC when a low temperature specialist competes with a high temperature generalist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "fd4e71ca-3f22-45b5-82e9-b189a8039d22",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C82",
+      "claim": "If a high temperature specialist species competes with a low temperature generalist species, the optimal temperature of the realized TPC of the thermal specialist shifts towards a higher temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that if a high temperature specialist species competes with the low temperature generalist species (Figure 1\u2014figure supplement 1a), the optimal temperature of the realized TPC of the thermal specialist shifts towards a higher temperature and the width of the realized TPC decreases (Figure 1\u2014figure supplement 1b), which suggests that a shift in the optimal realized TPC away from the optimal temperature of the competing species is a general result.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the theoretical model, shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "2af19059-16fb-456b-b7e6-9c0be0de4eea",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C83",
+      "claim": "If a high temperature specialist species competes with a low temperature generalist species, the width of the realized TPC of the thermal specialist decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that if a high temperature specialist species competes with the low temperature generalist species (Figure 1\u2014figure supplement 1a), the optimal temperature of the realized TPC of the thermal specialist shifts towards a higher temperature and the width of the realized TPC decreases (Figure 1\u2014figure supplement 1b), which suggests that a shift in the optimal realized TPC away from the optimal temperature of the competing species is a general result.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the theoretical model, shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "062009b5-93db-40fe-b8f8-53675ae5e200",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C84",
+      "claim": "A shift in the optimal realized TPC away from the optimal temperature of the competing species is a general result.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that if a high temperature specialist species competes with the low temperature generalist species (Figure 1\u2014figure supplement 1a), the optimal temperature of the realized TPC of the thermal specialist shifts towards a higher temperature and the width of the realized TPC decreases (Figure 1\u2014figure supplement 1b), which suggests that a shift in the optimal realized TPC away from the optimal temperature of the competing species is a general result.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a generalization from the theoretical model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "12487ce0-e465-46a8-be99-772dfcea7596",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C85",
+      "claim": "The laboratory-reared population of N. nepalensis was established in 2014 from 24 male and 24 female beetles caught near Meifeng at 2100 m above sea level on Mt. Hehuan, Taiwan.",
+      "claim_type": "EXPLICIT",
+      "source": "Our stable lab population was established in 2014 from 24 male and 24 female beetles caught near Meifeng, which is 2100 m above sea level on Mt. Hehuan, Taiwan (24\u00b05' N, 121\u00b010'E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methods used to establish the laboratory population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "8eb2a3e9-aed9-49ac-9f7f-5775f0937ebc",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C86",
+      "claim": "The lab strain of N. nepalensis has been supplemented with new individuals from the same location every one or two years to avoid inbreeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Since establishment, we have supplemented the lab strain with new individuals from the same location every one or two years to avoid inbreeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methods used to maintain the laboratory population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "4fc549be-0252-4d17-b84f-ce026ae66b76",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C87",
+      "claim": "Field experiments were conducted from 2013 to 2016 (May-October) along an elevational gradient from 673 m to 3422 m on Mt. Hehuan in central Taiwan.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2013 to 2016 (May-October), we investigated the natural pattern of N. nepalensis reproduction and its breeding success along an elevational gradient from 673 m to 3422 m on Mt. Hehuan in central Taiwan (24\u00b011' N, 121\u00b017' E) that encompasses broadleaf forests at lower elevations and mixed conifer-broadleaf forests at higher elevations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the field study design and location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "ea80dc7f-2e57-476a-9525-6d9bff4611b0",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C88",
+      "claim": "The elevational gradient on Mt. Hehuan encompasses broadleaf forests at lower elevations and mixed conifer-broadleaf forests at higher elevations.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2013 to 2016 (May-October), we investigated the natural pattern of N. nepalensis reproduction and its breeding success along an elevational gradient from 673 m to 3422 m on Mt. Hehuan in central Taiwan (24\u00b011' N, 121\u00b017' E) that encompasses broadleaf forests at lower elevations and mixed conifer-broadleaf forests at higher elevations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the habitat types along the elevational gradient.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "65314ae2-9d85-4e5c-9b0c-824dfcb12123",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C89",
+      "claim": "Blowflies are the beetle's main interspecific competitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our previous study showed that blowflies are the beetle's main interspecific competitor (Sun et al., 2014), we conducted series of experiments in the field to investigate the breeding TPC with and without interspecific competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "9e5ff0a9-8347-4bed-9072-22e79917d26f",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C90",
+      "claim": "Small, non-cooperative groups of N. nepalensis contained one male and one female.",
+      "claim_type": "EXPLICIT",
+      "source": "Small, non-cooperative groups contained one male and one female, whereas large, cooperative groups contained three males and three females (Chen et al., 2020; Liu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design for group size manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "e19b362a-beff-4020-86b6-6dd7a8a43707",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "claim_id": "C91",
+      "claim": "Large, cooperative groups of N. nepalensis contained three males and three females.",
+      "claim_type": "EXPLICIT",
+      "source": "Small, non-cooperative groups contained one male and one female, whereas large, cooperative groups contained three males and three females (Chen et al., 2020; Liu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design for group size manipulation, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "eea9071c-ca36-4105-bdb7-c61cad115e3c",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A theoretical model predicts that when thermal specialist species compete with thermal generalist species, the optimal temperature of the specialist's realized TPC shifts away from the generalist's optimum and the TPC width decreases. Specifically, low-temperature specialists competing with high-temperature generalists shift to lower optimal temperatures, while high-temperature specialists competing with low-temperature generalists shift to higher optimal temperatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The theoretical model is mathematically derived from established TPC functions (C79-C84) and provides clear, testable predictions (C3, C4, C45, C46). The model uses standard thermal performance equations and integrates them with competition theory. The predictions are internally consistent and shown in Figures 1-2. However, the model's assumptions (e.g., specific functional forms, parameter values) should be validated against empirical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "0d942f61-f292-408e-b380-ac99c0affaf5",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Laboratory experiments without interspecific competitors established N. nepalensis's fundamental breeding TPC with an optimal temperature of 15.6\u00b0C. This optimal temperature corresponds to the temperature at which beetles show optimal locomotor performance, requiring minimal energy to initiate flight at 16\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by statistically significant GLM results (\u03c7\u00b2\u2082 = 26.29, p < 0.001, n = 117) showing unimodal breeding success with temperature (Figure 3a). Claims C34-C35 are supported by independent locomotor experiments (\u03c7\u00b2\u2082 = 13.22, p = 0.001, n = 72; \u03c7\u00b2\u2082 = 23.18, p < 0.001, n = 29) demonstrating physiological basis for the optimal temperature (Figures 3b-d). The convergence of breeding and locomotor optima strengthens the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "34c3d14e-e065-44b0-ab98-bb43d2f32d54",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Field experiments demonstrate that in the presence of blowfly competitors, N. nepalensis's realized TPC has an optimal breeding temperature of 13.1\u00b0C, which is 2.5\u00b0C lower than the fundamental TPC optimum (15.6\u00b0C). When blowflies are excluded in the field, the optimal temperature increases to 14.6\u00b0C and the TPC becomes broader, approaching the fundamental TPC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 are supported by field data with significant statistical support (GLMM, \u03c7\u00b2\u2082 = 16.56, p < 0.001, n = 343) shown in Figure 4a. Claims C38-C39 are supported by blowfly exclusion experiments (GLMM, \u03c7\u00b2\u2082 = 16.08, p < 0.001, n = 175) shown in Figure 4b. The experimental manipulation (presence/absence of blowflies) provides strong evidence for causality. The results directly test and confirm the theoretical model's predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "c15341dc-4aed-42ed-ab00-c9aa7024bd77",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Group size manipulation experiments show that cooperative groups (3 males, 3 females) achieve an optimal breeding temperature of 15.6\u00b0C, identical to the fundamental TPC, while solitary pairs have an optimal temperature of 14.1\u00b0C. This demonstrates that intraspecific cooperation enables beetles to recover their fundamental thermal optimum despite interspecific competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by statistically significant group size \u00d7 temperature interaction (\u03c7\u00b2\u2082 = 6.84, p = 0.033, n = 328) with separate analyses for large groups (\u03c7\u00b2\u2082 = 9.40, p = 0.009, n = 162) and small groups (\u03c7\u00b2\u2082 = 18.42, p < 0.001, n = 166) shown in Figure 5. The experimental design directly manipulates group size while controlling for other factors. Claims C43-C44 are reasonable interpretations of these data, though they represent inferences rather than direct measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "b452e507-6ad2-4404-8d6a-2570ccf63c09",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Empirical results confirm the theoretical model's predictions: blowfly competition forces the beetle's optimal breeding temperature lower (from 15.6\u00b0C to 13.1\u00b0C) and narrows the realized TPC compared to the fundamental TPC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C5, C47) synthesize results from multiple experiments (C32-C39) that collectively demonstrate agreement between theoretical predictions and empirical observations. The laboratory fundamental TPC (15.6\u00b0C optimum), field realized TPC with competition (13.1\u00b0C optimum), and field TPC without competition (14.6\u00b0C optimum) form a coherent pattern supporting the model. The statistical significance of all component experiments strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "aa98c63a-e9a5-4700-95e5-4cd06a4cf237",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The mechanism enabling cooperative beetles to expand their range to lower elevations is their ability to align fundamental and realized thermal niches through cooperation that overcomes interspecific competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 integrates current findings (C40-C44) with previous research (cited as Sun et al., 2014; Liu et al., 2020). The current study provides mechanistic evidence that cooperation allows beetles to achieve their fundamental thermal optimum (15.6\u00b0C) even in the presence of competitors. This explains previous observations of range expansion. However, the claim relies partly on cited work rather than being fully demonstrated in the current study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "eeb15508-6192-43e4-a05d-452953b64d25",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The study demonstrates that TPCs can be diverse in shape and that variation in TPC shape can be due to interspecific competition, challenging the common assumption that TPCs are uniformly left-skewed for physiological reasons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is supported by the current study's data showing different TPC shapes under different competitive conditions (Figures 3-5) and is corroborated by citations to other studies (Dell et al., 2011; Monaco et al., 2017). Claim C70 is directly demonstrated by the experimental manipulation of competition showing changes in TPC shape. The evidence challenges the assumption stated in C68 that TPCs are typically left-skewed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "ba5ee5c3-dd7a-4368-8d5a-9a002f785035",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study used a laboratory-reared population of N. nepalensis established from wild-caught beetles and supplemented regularly to avoid inbreeding. Field experiments were conducted along an elevational gradient (673-3422 m) on Mt. Hehuan, Taiwan, with group size manipulations comparing solitary pairs (1 male, 1 female) to cooperative groups (3 males, 3 females).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological claims (C85-C91) describe the study design and are internally consistent. The laboratory population maintenance strategy (C85-C86) is appropriate for avoiding inbreeding. The field site description (C87-C88) provides adequate spatial context. The experimental design details (C89-C91) are clearly stated and supported by citations to previous work establishing blowflies as the main competitor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "823ed1f2-5765-4be2-af59-d6f3777be9cf",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors identify gaps in the literature: no previous study has differentiated between fundamental and realized TPCs or experimentally quantified realized TPCs in the context of interspecific competition, and little is known about how intraspecific cooperation influences realized TPCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C22, C23, and C26 assert the novelty of the study by identifying literature gaps. While the authors state these are gaps \"to the best of our knowledge,\" comprehensive verification would require systematic literature review. The claims are plausible given the citations provided, but the strength of evidence depends on the completeness of the literature search, which cannot be fully evaluated from the manuscript alone.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "4dadd968-d595-4677-bf2e-8d3a2f96eb92",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors predict that Allee effects will likely occur in N. nepalensis in warmer environments and that conserving high population densities at lower elevations will be crucial for competing against blowflies under climate warming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61 are predictions and conservation recommendations based on the study's findings about cooperation and competition. While the logic connecting cooperation, population density, and competitive ability is sound (C59), these are speculative extrapolations rather than tested hypotheses. The predictions are reasonable given the data but would require additional research (e.g., population density manipulations, long-term monitoring) to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "8c88c3da-785f-47f8-bb63-a064f3d5b2bb",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "If biotic interactions are key to influencing thermal performance, the realized TPC of a species is likely to change in time and space and should not be described by a single function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are logical inferences from the study's findings that competition significantly alters TPC shape and optimal temperature (C36-C44). The data demonstrate that the same species has different TPCs under different biotic conditions (with/without competitors, with/without cooperation), supporting the conclusion that a single function is inadequate. This challenges the common practice described in C51-C52.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "a70ef277-d73e-420c-99bf-78ac0927279b",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Integrating TPCs into ecological niche concepts bridges two independent research traditions and reveals that we know little about how realized and fundamental TPCs differ in most species. The realized TPC provides a way to quantify how temperature mediates species interactions and extends the realized thermal niche concept.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 present conceptual contributions of the study. C55 is supported by the successful integration demonstrated in the manuscript. C56 is a reasonable inference given the literature gaps identified (C22-C23). C57 is demonstrated by the study's results showing temperature-mediated competition effects. C58 is supported by the conceptual framework and citations (Huff et al., 2005; Rehfeldt et al., 2008), though it represents a conceptual extension rather than an empirical finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "7109d60b-dc12-4cc6-85a2-32015d74f788",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "When population density influences intraspecific cooperation in social species, habitat destruction will weaken competitive ability against interspecific competitors and lower realized thermal performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are logical inferences from the study's findings about cooperation and competition (C40-C44, C59). The reasoning chain is: habitat destruction \u2192 lower population density \u2192 reduced cooperation opportunities \u2192 weakened competitive ability \u2192 lower realized thermal performance. Each link is supported by the study's data or reasonable ecological theory. However, this represents an extrapolation rather than a directly tested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "5c109616-c790-4d47-a3f4-44a4663f529f",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "To identify fundamental TPCs, it is crucial to perform both lab and field experiments to understand the relationship between body and ambient temperature and how realistic environmental conditions influence the fundamental TPC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is a methodological recommendation supported by the study's approach and findings. The manuscript demonstrates differences between lab and field TPCs (C32-C39) and shows that body temperature regulation affects performance (C34-C35, C66). The recommendation is justified by the study's results showing that environmental context matters, though it represents a methodological prescription rather than an empirical finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    },
+    {
+      "id": "a0ec9cc2-b823-43c3-acb7-5ae92cba81bc",
+      "content_id": "334b781e-5f63-4f35-bf1a-d0663f02f42d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Employing the concepts of fundamental and realized TPCs can help predict ecological impacts of climate change and fill the knowledge gap about quantifying biotic interactions in shaping species distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75 and C78 present the broader implications of the study's conceptual framework. C75 is supported by the study's demonstration that biotic interactions significantly affect thermal performance and by citation (Alexander et al., 2016). C78 follows logically from the study's success in quantifying competition effects on TPCs. However, these claims represent potential applications rather than demonstrated outcomes, as actual climate change predictions would require additional work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T19:17:56.486295Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8c7cbce7-e133-468c-9598-00d955af7f6a",
+      "result_id": "eea9071c-ca36-4105-bdb7-c61cad115e3c"
+    },
+    {
+      "claim_id": "bfd873fc-d994-4055-ae63-46fd24b4e08a",
+      "result_id": "eea9071c-ca36-4105-bdb7-c61cad115e3c"
+    },
+    {
+      "claim_id": "85ff1279-61ba-46db-9a3a-8f5bf1d7cae6",
+      "result_id": "eea9071c-ca36-4105-bdb7-c61cad115e3c"
+    },
+    {
+      "claim_id": "70aadbb3-1e0a-4b20-9ba5-9235527ba2c7",
+      "result_id": "eea9071c-ca36-4105-bdb7-c61cad115e3c"
+    },
+    {
+      "claim_id": "8ca56f5a-29ad-4d58-b41b-f6b21f6c2e2e",
+      "result_id": "eea9071c-ca36-4105-bdb7-c61cad115e3c"
+    },
+    {
+      "claim_id": "ae171d0a-0d56-49b3-a437-bcb5e3eb07fa",
+      "result_id": "eea9071c-ca36-4105-bdb7-c61cad115e3c"
+    },
+    {
+      "claim_id": "444f66b2-dd7b-4b48-9fae-8170c28542cd",
+      "result_id": "eea9071c-ca36-4105-bdb7-c61cad115e3c"
+    },
+    {
+      "claim_id": "fd4e71ca-3f22-45b5-82e9-b189a8039d22",
+      "result_id": "eea9071c-ca36-4105-bdb7-c61cad115e3c"
+    },
+    {
+      "claim_id": "2af19059-16fb-456b-b7e6-9c0be0de4eea",
+      "result_id": "eea9071c-ca36-4105-bdb7-c61cad115e3c"
+    },
+    {
+      "claim_id": "062009b5-93db-40fe-b8f8-53675ae5e200",
+      "result_id": "eea9071c-ca36-4105-bdb7-c61cad115e3c"
+    },
+    {
+      "claim_id": "403f8292-e91b-4a22-821c-8fc7d8b71999",
+      "result_id": "0d942f61-f292-408e-b380-ac99c0affaf5"
+    },
+    {
+      "claim_id": "1eeca19d-d0c4-47bc-84ee-233e70de6613",
+      "result_id": "0d942f61-f292-408e-b380-ac99c0affaf5"
+    },
+    {
+      "claim_id": "7e5afd89-1210-490a-8a11-57562079928d",
+      "result_id": "0d942f61-f292-408e-b380-ac99c0affaf5"
+    },
+    {
+      "claim_id": "3ecdb805-6e86-4393-ab7d-6ad5a1ab9549",
+      "result_id": "0d942f61-f292-408e-b380-ac99c0affaf5"
+    },
+    {
+      "claim_id": "5ca88f1c-a0d1-4205-87df-84f22c0a2594",
+      "result_id": "34c3d14e-e065-44b0-ab98-bb43d2f32d54"
+    },
+    {
+      "claim_id": "3a1335fd-7734-481d-b5d7-7346362fe425",
+      "result_id": "34c3d14e-e065-44b0-ab98-bb43d2f32d54"
+    },
+    {
+      "claim_id": "c4bb19cd-ea37-4d2f-8dae-e75e6e8e1f27",
+      "result_id": "34c3d14e-e065-44b0-ab98-bb43d2f32d54"
+    },
+    {
+      "claim_id": "ffa71dff-7897-439b-91a1-9a0e28ecfb23",
+      "result_id": "34c3d14e-e065-44b0-ab98-bb43d2f32d54"
+    },
+    {
+      "claim_id": "421756c1-9c4e-4331-adf6-4ee96e1805e5",
+      "result_id": "c15341dc-4aed-42ed-ab00-c9aa7024bd77"
+    },
+    {
+      "claim_id": "b3e4fd23-e8c1-4f24-bdae-361e6fe344d0",
+      "result_id": "c15341dc-4aed-42ed-ab00-c9aa7024bd77"
+    },
+    {
+      "claim_id": "a0372b61-b30a-4e8e-921b-fd0f4ff19b47",
+      "result_id": "c15341dc-4aed-42ed-ab00-c9aa7024bd77"
+    },
+    {
+      "claim_id": "c762e515-8461-4d0b-a70d-d5f0d9bd2429",
+      "result_id": "c15341dc-4aed-42ed-ab00-c9aa7024bd77"
+    },
+    {
+      "claim_id": "fb2ab744-3d10-47b3-8146-f71fd62a262a",
+      "result_id": "c15341dc-4aed-42ed-ab00-c9aa7024bd77"
+    },
+    {
+      "claim_id": "52b4af47-bff5-496e-8f65-7a9a33f3f444",
+      "result_id": "b452e507-6ad2-4404-8d6a-2570ccf63c09"
+    },
+    {
+      "claim_id": "12616be1-f7ff-4cc8-a90f-c8f58d90ab4d",
+      "result_id": "b452e507-6ad2-4404-8d6a-2570ccf63c09"
+    },
+    {
+      "claim_id": "6570e38b-845c-4e58-8cc7-6f785faad788",
+      "result_id": "aa98c63a-e9a5-4700-95e5-4cd06a4cf237"
+    },
+    {
+      "claim_id": "0abd5720-08b4-459e-a951-f3aef14fbf01",
+      "result_id": "eeb15508-6192-43e4-a05d-452953b64d25"
+    },
+    {
+      "claim_id": "62983634-3492-4fbc-8031-34ffad521546",
+      "result_id": "eeb15508-6192-43e4-a05d-452953b64d25"
+    },
+    {
+      "claim_id": "12487ce0-e465-46a8-be99-772dfcea7596",
+      "result_id": "ba5ee5c3-dd7a-4368-8d5a-9a002f785035"
+    },
+    {
+      "claim_id": "8eb2a3e9-aed9-49ac-9f7f-5775f0937ebc",
+      "result_id": "ba5ee5c3-dd7a-4368-8d5a-9a002f785035"
+    },
+    {
+      "claim_id": "4fc549be-0252-4d17-b84f-ce026ae66b76",
+      "result_id": "ba5ee5c3-dd7a-4368-8d5a-9a002f785035"
+    },
+    {
+      "claim_id": "ea80dc7f-2e57-476a-9525-6d9bff4611b0",
+      "result_id": "ba5ee5c3-dd7a-4368-8d5a-9a002f785035"
+    },
+    {
+      "claim_id": "65314ae2-9d85-4e5c-9b0c-824dfcb12123",
+      "result_id": "ba5ee5c3-dd7a-4368-8d5a-9a002f785035"
+    },
+    {
+      "claim_id": "9e5ff0a9-8347-4bed-9072-22e79917d26f",
+      "result_id": "ba5ee5c3-dd7a-4368-8d5a-9a002f785035"
+    },
+    {
+      "claim_id": "e19b362a-beff-4020-86b6-6dd7a8a43707",
+      "result_id": "ba5ee5c3-dd7a-4368-8d5a-9a002f785035"
+    },
+    {
+      "claim_id": "01551abb-7af9-4b9a-9641-b23e65c78290",
+      "result_id": "823ed1f2-5765-4be2-af59-d6f3777be9cf"
+    },
+    {
+      "claim_id": "c4e5b833-84ef-4e55-8fb7-536b08b16c37",
+      "result_id": "823ed1f2-5765-4be2-af59-d6f3777be9cf"
+    },
+    {
+      "claim_id": "bfd5a17b-5105-48ef-9199-ca4e984be1e6",
+      "result_id": "823ed1f2-5765-4be2-af59-d6f3777be9cf"
+    },
+    {
+      "claim_id": "3c067793-93c6-467f-a473-728e77d52406",
+      "result_id": "4dadd968-d595-4677-bf2e-8d3a2f96eb92"
+    },
+    {
+      "claim_id": "bcbd02cc-2da8-430d-aa78-92a2a8115398",
+      "result_id": "4dadd968-d595-4677-bf2e-8d3a2f96eb92"
+    },
+    {
+      "claim_id": "811262b1-e655-4491-9359-cce3ec9fdde8",
+      "result_id": "8c88c3da-785f-47f8-bb63-a064f3d5b2bb"
+    },
+    {
+      "claim_id": "8292f490-9118-4122-a8d1-7fd88dd58944",
+      "result_id": "8c88c3da-785f-47f8-bb63-a064f3d5b2bb"
+    },
+    {
+      "claim_id": "c0381758-ab1a-4ac7-af64-85ec9c14285b",
+      "result_id": "a70ef277-d73e-420c-99bf-78ac0927279b"
+    },
+    {
+      "claim_id": "d50a5748-f219-484a-bb31-853ef898e554",
+      "result_id": "a70ef277-d73e-420c-99bf-78ac0927279b"
+    },
+    {
+      "claim_id": "85e8e6c5-3baf-4deb-89c5-f1153a4ebf5b",
+      "result_id": "a70ef277-d73e-420c-99bf-78ac0927279b"
+    },
+    {
+      "claim_id": "68fe909f-48c8-44e1-9556-b3d3548f6298",
+      "result_id": "a70ef277-d73e-420c-99bf-78ac0927279b"
+    },
+    {
+      "claim_id": "094c2e2a-347f-4440-9325-d34f82359484",
+      "result_id": "7109d60b-dc12-4cc6-85a2-32015d74f788"
+    },
+    {
+      "claim_id": "c25b4d1b-583a-4e20-b199-b96764b92566",
+      "result_id": "7109d60b-dc12-4cc6-85a2-32015d74f788"
+    },
+    {
+      "claim_id": "d3d41914-6f1b-461f-9ba3-6150c7445167",
+      "result_id": "5c109616-c790-4d47-a3f4-44a4663f529f"
+    },
+    {
+      "claim_id": "966edb18-6a8b-4672-a393-e4257907b650",
+      "result_id": "a0ec9cc2-b823-43c3-acb7-5ae92cba81bc"
+    },
+    {
+      "claim_id": "fbb1eccd-810a-403e-812b-6fba85f5591f",
+      "result_id": "a0ec9cc2-b823-43c3-acb7-5ae92cba81bc"
+    }
+  ],
+  "comparisons": []
+}

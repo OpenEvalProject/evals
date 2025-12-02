@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The effective attenuation length (EAL) at 1320 nm in the mouse cortex is 297 \u00b1 11 \u03bcm, which is almost twice that at 920 nm (153 \u00b1 10 \u03bcm), measured experimentally in n=4 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 present consistent experimental measurements of EAL at both wavelengths with appropriate statistical reporting (mean \u00b1 SD, n=4). The measurements are shown in Figure 1A and are fundamental to the subsequent power efficiency comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "At the brain surface, 3PE at 1320 nm requires 15\u00d7 more pulse energy than 2PE at 920 nm for fluorescein-labeled blood vessels and 8\u00d7 more for GCaMP6s-labeled neurons. However, 3PE becomes more power-efficient than 2PE at depths around 700-750 \u03bcm (the cross-over depth), with measurements agreeing well with theoretical calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 present a coherent set of experimental measurements with confidence intervals showing the depth-dependent transition in power efficiency. The agreement between measurement and theory (C39) and the conclusion about 3PM efficiency in deep cortex (C40) are well-supported by the data in Figure 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "At the sample surface, both 2PM and 3PM show negligible background (SBR ~100). However, 2PM background increases rapidly beyond 600 \u03bcm depth in cortex, with SBR reaching 1 at ~4.7 EALs (consistent with theory for 2\u00b11% fractional vascular volume and ~50 staining inhomogeneity). In contrast, 3PM shows no background increase until the white matter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 present a comprehensive characterization of SBR with depth, including quantification of sample properties (C45-C46) and validation against theory (C47). The experimental measurements in Figure 2A-B support the dramatic difference in background generation between 2PM and 3PM at depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "In shallow cortical layers (200-400 \u03bcm depth), 2PM and 3PM produce nearly identical calcium traces with a Pearson's correlation of 0.98 \u00b1 0.01 (n=60 traces).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 demonstrate equivalence of the two methods at shallow depths with strong statistical support (high correlation, adequate sample size). This validates the comparison methodology and shows both techniques perform similarly when background is not limiting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Through combined analysis of signal attenuation and background generation, the authors quantified that 1320 nm 3PM outperforms 920 nm 2PM in signal generation efficiency beyond ~700 \u03bcm depth regardless of labeling density, and is preferred beyond ~600 \u03bcm (SBR~1, ~4 EALs) in densely labeled samples. In practice, 3PM may be considered at ~450 \u03bcm (~3 EALs) to prevent recording bias against dimmer neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C87-C91 synthesize the experimental findings into practical recommendations. The cross-over depths are well-supported by the signal and SBR measurements. The suggestion to use 3PM at shallower depths (C91) is a reasonable inference from the observation of \u0394F/F deterioration in dimmer neurons, though this is more conservative guidance than strictly required by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Monte Carlo simulations predict that at 1 mm imaging depth with 1320 nm excitation, brain temperature rises above 37\u00b0C at 80 mW average power after the objective lens, increasing at ~3\u00b0C per 50 mW thereafter. Immunohistochemistry validation showed no tissue response at 100 mW (n=5 mice), but detectable responses in some mice at 150 mW (1/4 at 1 mm, 1/3 at 1.2 mm), suggesting an upper temperature bound of ~41\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C68-C72 present a well-integrated computational and experimental approach to characterizing thermal damage. The Monte Carlo simulations (C68-C69) are validated by immunohistochemistry (C70-C71), and the inference about temperature limits (C72) reasonably connects the two datasets. The sample sizes are adequate for the binary outcome measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C103"
+    ],
+    "result": "Maximum brain temperature is lower with larger imaging depth or larger scanning FOV for the same excitation power, with tissue heating being higher with smaller FOV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 and C103 describe general trends from the Monte Carlo simulations shown in Figure 3\u2014figure supplements 3-4. These are physically reasonable results arising from heat dissipation geometry and are supported by the simulation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C93",
+      "C94"
+    ],
+    "result": "The water absorption coefficient at 1280 nm is ~65% of that at 1320 nm, allowing ~50% more average power with similar EAL. However, this only generates ~50% more signal since signal scales linearly with average power when peak intensity is fixed. Brain heating is significantly increased beyond 1350 nm and much reduced at 1280 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 and C93-C94 present a coherent analysis of wavelength optimization based on water absorption data (Table 1) and physical principles. The reasoning about signal scaling (C94) is sound. However, the conclusion favors 1320 nm over 1280 nm based partly on unpresented data about GCaMP6 sensitivity differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C84",
+      "C85",
+      "C86",
+      "C97"
+    ],
+    "result": "Fluorescence saturation of GCaMP6s occurs at 4-5 nJ under 3PE. Tissue ablation occurs at ~10 nJ at the focus. Previous work showed 1-2 nJ pulses do not alter neuronal physiological responses. Therefore, 1-2 nJ pulse energy at the focus is reasonable for 3PM to maximize signal while avoiding nonlinear photodamage and fluorophore saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C84-C86, and C97 synthesize calculations (C80) with experimental observations (C84) and cited literature (C85) to arrive at practical recommendations. The calculation of saturation is based on appropriate equations, and the experimental observation of ablation provides an upper bound. The recommendation (C86, C97) is well-justified by the converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Imaging power grows exponentially with depth, much faster than the quasi-linear growth of heat dissipation capacity, causing maximum repetition rate to decrease rapidly with depth. At 600 \u03bcm depth, maximum repetition rate is 7 MHz; at 1 mm depth (hippocampus), it must be reduced to 1.2 MHz to avoid thermal damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 present calculations based on the experimental EAL measurements, thermal simulations, and signal requirements. The specific examples (C100-C101) show explicit calculations that can be verified from the presented data. These provide practical guidance for experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "At ~1 mm imaging depth, 2PM repetition rate would have to be reduced to the same level as 3PM (~1 MHz) to avoid tissue heating, consistent with previous deep brain 2PM studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 present a logical inference from the power efficiency comparison (C41) that is validated by citation to previous work (C42). This strengthens the conclusion by showing consistency with independent observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "For depths beyond the white matter, measured 3PM SBR is lower than theoretical prediction, possibly due to point spread function deterioration from strong aberration induced by white matter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 identifies a discrepancy between measurement and theory but offers only a speculative explanation. While the observation is valid, the proposed mechanism (aberration) is not tested or validated. Alternative explanations are not considered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Similar \u0394F/F deterioration in 2PM has been observed in other densely labeled transgenic lines by independent studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 cites independent validation of the key finding about 2PM performance degradation in densely labeled samples, strengthening the generalizability of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C111",
+      "C112"
+    ],
+    "result": "The experimental setup used a NOPA pumped by an ultrafast amplifier for 1320 nm 3PM and a Ti:Sapphire laser for 920 nm 2PM. The two beams had similar spatial resolution, and the imaging system was confirmed to be shot-noise limited. Calcium activities were recorded at 13.6 Hz frame rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 and C108-C109, C111-C112 describe the experimental setup and validation. The verification of shot-noise limited performance (C112) and similar spatial resolution (C108) are important controls that validate the comparison methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background context establishing that 3PM has emerged as a useful technique for deep brain calcium imaging, addressing limitations of 2PM including background accumulation and the challenges of using red-shifted indicators or shorter wavelengths with GCaMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C24 provide literature context supported by appropriate citations. These establish the motivation for the study and are generally accepted knowledge in the field, though they represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C75",
+      "C76",
+      "C81",
+      "C82",
+      "C83",
+      "C102",
+      "C104"
+    ],
+    "result": "Background on laser-induced tissue damage mechanisms (thermal vs. nonlinear), brain tissue cooling rates, and imaging parameter considerations including pixel size and frame rate requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66, C75-C76, C81-C83, C102, and C104 provide methodological context and established principles, mostly supported by citations. These are necessary background for interpreting the thermal damage experiments but represent known principles rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Increased immunoreactivity was observed with 150 mW excitation power at both 1 mm and 1.2 mm imaging depths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are explicitly stated in the abstract and supported by the immunohistochemistry data in Figure 3D-E. However, these are better understood as part of the broader thermal damage characterization (already grouped with C71) rather than as standalone results.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,450 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C45",
+      "C46",
+      "C59",
+      "C60"
+    ],
+    "result": "Chromosomal expression of AapA3 toxin is lethal in the absence of IsoA3 antitoxin. Inactivation of the IsoA3 promoter prevents viable strain generation unless additional mutations are introduced in the toxin gene, demonstrating constitutive and toxic expression from the chromosomal locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C45, C46, C59, and C60 collectively demonstrate that chromosomal AapA3 expression is lethal without IsoA3. The transformation experiments (C45, C59) show strong reduction in viable transformants, and the requirement for suppressor mutations (C45, C46) confirms toxicity. The experimental design is sound with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C67",
+      "C68"
+    ],
+    "result": "Single point mutations are sufficient to suppress AapA3 toxicity. FASTBAC-Seq analysis revealed that over half of transformants (51.8%) contained single nucleotide mutations, demonstrating that single substitutions can abolish toxin activity or expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32, C67, and C68 are well-supported by deep-sequencing data showing that single point mutations are sufficient for suppression. The FASTBAC-Seq methodology provides comprehensive coverage with three biological replicates showing consistent results (C72), and the quantitative data (C67) strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C35",
+      "C36",
+      "C37",
+      "C97",
+      "C109"
+    ],
+    "result": "Suppressor mutations in the 5' UTR and ORF inhibit toxin translation by stabilizing SD-sequestering hairpins. The A40T mutation (5' UTR) and T78C mutation (ORF) stabilize stem-loop structures that mask the Shine-Dalgarno sequence through base-pairing with upstream (aSD1) or downstream (aSD2) anti-SD sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C35-C37, C97, and C109 are supported by multiple experimental approaches including polysome fractionation (C84-C95), in vitro translation assays (C96), RNase H protection assays (C107-C108), and compensatory mutation analysis (C103-C106). The convergence of evidence from different methodologies strongly supports the structural mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C38",
+      "C39",
+      "C123",
+      "C127",
+      "C128"
+    ],
+    "result": "Two metastable hairpin structures (MeSt1 and MeSt2) form transiently during transcription to prevent premature toxin expression. These structures sequentially sequester the SD sequence before being replaced by a stable long-distance interaction (LDI) upon transcription termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C38, C39, C123, C127, and C128 propose a model of sequential metastable structures. This is supported by in vivo DMS footprinting (C129-C130), covariation analysis (C131), thermodynamic calculations (C170-C172), and the observation that only the two closest aSD sequences can suppress toxicity (C126). The model is well-supported by experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C161",
+      "C176",
+      "C188"
+    ],
+    "result": "Co-transcriptional inhibition of translation represents an additional layer of toxin-antitoxin regulation in bacteria. This work provides the first in vivo evidence of sequential RNA metastable structures that transiently prevent co-transcriptional translation of a toxin-encoding mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C161, C176, and C188 present the major conclusion that co-transcriptional translation inhibition is a regulatory mechanism. This is supported by the demonstration of functional metastable structures (C129-C131), their transient nature (C127, C169), and their role in preventing premature translation (C162). The novelty claim (C176) is justified by the comprehensive in vivo characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The aapA3/IsoA3 locus encodes an 80-nucleotide antisense RNA (IsoA3) and a 30-amino acid toxic peptide (AapA3) that shares 60% sequence identity with AapA1. The antitoxin promoter was inactivated by introducing two point mutations in its -10 box while maintaining the toxin amino acid sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe the basic characterization of the TA system and experimental design. These are supported by sequence analysis (C40-C42), citation to previous work showing AapA1 toxicity (C43), and the described mutagenesis strategy (C44). The approach is standard and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Two aapA3 mRNA species exist: a full-length transcript (aapA3-FL, 225 nt) and a truncated form (aapA3-Tr, lacking 35 nt). Only aapA3-Tr is efficiently translated in vitro, and IsoA3 specifically targets aapA3-Tr in vivo without affecting aapA3-FL levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by Northern blot analysis (C47-C48, C51) and in vitro translation assays (C49-C50). The specificity of IsoA3 for aapA3-Tr (C52) is demonstrated by the differential accumulation pattern. The experimental evidence is clear and consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C58"
+    ],
+    "result": "IsoA3 represses aapA3 expression at the translational level by forming a stable 80-base-pair RNA heteroduplex with aapA3-Tr that is translationally inert.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 and C58 are supported by in vitro structure probing (C53) showing IsoA3 interaction only with aapA3-Tr, formation of an 80-bp heteroduplex (C54), and in vitro translation assays demonstrating translational inertness (C55). The conclusion (C58) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Polysome fractionation demonstrates that aapA3-FL is translationally inert (only 3% in polysomes) while aapA3-Tr is translationally active (73% in monosome/disome fractions). This establishes polysome fractionation as a powerful tool for studying toxin mRNA translation efficiency in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 are supported by polysome fractionation experiments with quantification (C84-C85). The inference about ribosome accommodation (C86) is reasonable given the short ORF length. The conclusion about differential translatability (C87) and the utility of the method (C88) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Mutations in the start codon or SD sequence (G43A) prevent ribosome binding and toxin translation. The G43A mutation reduces aapA3-Tr in translating fractions to approximately 4%, confirming that a single SD mutation is sufficient to impair translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by polysome fractionation experiments showing near absence of aapA3-Tr in polysome fractions for both start and G43A mutants (C89-C90). The quantification for G43A (C92) and the conclusion (C93) are well-supported. The observation of mRNA degradation (C91) is a reasonable inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The A40T and A28C suppressor mutations reduce AapA3 translation efficiency, with A40T having the strongest effect (7% of aapA3-Tr in translating ribosomes) compared to A28C (19%). In vitro translation assays confirmed both mutations act by reducing translation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by polysome fractionation data with quantification (C94-C95) and in vitro translation assays (C96). The convergence of in vivo and in vitro evidence strengthens the conclusion. The quantitative differences between mutants are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The A28C and A40T mutations stabilize a local hairpin by creating additional base pairs (one G-C for A28C, two A-U for A40T) that sequester the SD via aSD1. Destabilizing this hairpin with the compensatory A33T mutation restores toxicity, demonstrating structural rather than sequence-level action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are supported by secondary structure predictions (C100-C102), transformation assays showing toxicity restoration (C103-C104), and demonstration that toxicity requires AapA3 synthesis (C105-C106). The compensatory mutation experiment is a strong test of the structural hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "RNase H/oligonucleotide accessibility assays demonstrate that both A28C and A40T mutations reduce SD accessibility in vitro, confirming they inhibit toxin expression by reducing SD accessibility rather than acting at the sequence level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by RNase H protection assays showing reduced oligonucleotide accessibility for both mutants compared to WT and the compensatory mutant. This biochemical evidence directly supports the structural mechanism and complements the genetic and polysome data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The synonymous T78C mutation (Ser9, UCU\u2192UCC) acts as a suppressor by inhibiting AapA3 translation. The T78C strain shows 34% of aapA3-Tr in monosome/disome fractions, intermediate between the control (73%) and other suppressors (7-19%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 are supported by FASTBAC-Seq identification (C110), Northern blot analysis (C111), polysome fractionation with quantification (C112), and in vitro translation assays (C113). The intermediate phenotype is well-documented and suggests partial suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The T78C mutation reveals a second SD-sequestering hairpin involving aSD2 within the AapA3 ORF. This synonymous substitution stabilizes the hairpin by replacing a G-U with a G-C pair, creating a perfect aSD sequence (5'-CUCCU-3'). RNase H assays show strong reduction in SD accessibility, demonstrating that a single hydrogen bond is sufficient to suppress toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 are supported by secondary structure predictions (C114-C116), RNase H protection assays (C117), and the conclusion about structural action (C119). The observation that a single hydrogen bond is sufficient (C118) is a strong inference from the G-U to G-C conversion. The evidence converges to support the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Sequence conservation analysis of 49 H. pylori strains reveals that the Ser9 codon is one of the most highly conserved in the AapA3 ORF, indicating a crucial role in SD sequestration. Only the UM066 strain has a proline at position 9, which likely abolishes toxicity by disrupting the alpha-helix structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 are supported by sequence conservation analysis across multiple strains. The inference about the crucial role of Ser9 (C121) is reasonable given the high conservation. The interpretation of the proline substitution (C122) is supported by citation to previous work on toxin structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The stabilized hairpins involving aSD1 and aSD2 form in aapA3-Tr but not in aapA3-FL, explaining why they inhibit translation without affecting full-length mRNA stability. Of thirteen possible aSD sequences in aapA3 mRNA, only the two closest to the SD can suppress toxicity when mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by secondary structure predictions showing differential folding (C124), the observation that suppressor mutations don't affect aapA3-FL stability (C125), and FASTBAC-Seq data showing only proximal aSD sequences are selected (C126). The distance-dependence observation is particularly informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "In vivo DMS RNA footprinting confirms that both metastable hairpins (MeSt1 and MeSt2) form in vivo and that the A40T mutation stabilizes MeSt1. Covariation analysis shows compensatory mutations in these hairpins across numerous H. pylori strains, supporting their functional importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 are supported by in vivo DMS footprinting experiments (C129-C130) and phylogenetic covariation analysis (C131). The combination of direct structural probing and evolutionary evidence provides strong support for the existence and functional importance of these structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The A28C and A40T mutations create one or two additional base pairs within a stem-loop formed by SD-aSD1 pairing. Destabilizing the A40T-mutated stem with the compensatory A33T mutation restores toxicity, demonstrating that A40T acts at the mRNA structural level despite being located within the SD sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149 are supported by secondary structure predictions, RNase H assays, and the critical compensatory mutation experiment. The demonstration that A40T acts structurally despite being in the SD sequence (C149) is a key finding that distinguishes structural from sequence-level effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C150",
+      "C151"
+    ],
+    "result": "The T78C synonymous substitution (UCU\u2192UCC at Ser9) reveals a second aSD sequence (aSD2) located downstream of the SD within the toxin coding region, creating a perfect aSD sequence (5'-CUCCU-3').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C151 are supported by sequence analysis and secondary structure predictions. The identification of aSD2 through a synonymous mutation is a key finding that reveals the second metastable structure. The evidence is clear and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The three suppressor mutations (A28C, A40T, T78C) act post-transcriptionally after 3'-end processing by stabilizing SD-sequestering hairpins. These mutations do not interfere with full-length mRNA folding, transcription, stability, or 3'-end maturation, indicating they exclusively act on the truncated aapA3-Tr form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 are supported by Northern blot analysis showing no effect on aapA3-FL levels, polysome fractionation showing specific effects on aapA3-Tr translation, and secondary structure predictions showing differential folding. The conclusion that mutations act exclusively on aapA3-Tr is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "In the wild-type context, the SD-sequestering hairpins (MeSt1 and MeSt2) are only transiently formed to co-transcriptionally prevent premature translation. Their transient character is achieved through hierarchically increasing thermodynamic stabilities, with suppressor mutations providing insufficient stabilization to block formation of subsequent structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C173 are supported by thermodynamic calculations showing the energy hierarchy (C172), the observation that suppressor mutations are required for stable inhibition (C168), and the inference about transient formation (C169). The thermodynamic analysis (C170-C173) provides a mechanistic explanation for the sequential folding pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "FASTBAC-Seq reveals highest mutation densities in the AapA3 ORF (53%), the -10 box (66.7%), and the SD sequence (42.8%). Analysis of the -10 box mutations defines the minimal functional motif as 5'-TANNNT-3', and 17 mutations were identified in the 5' and 3' UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by deep-sequencing data analysis with statistical significance testing. The mutation density analysis (C74) and minimal motif determination (C76) are well-supported by the data. The identification of UTR mutations (C77) is a key finding that led to the discovery of metastable structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Among the seven SD positions (5'-AAAGGAG-3'), the two central guanines (+42, +43) are most frequently mutated, defining minimal functional SD motifs as 5'-AGG-3' or 5'-GGA-3'. Notably, unique transversion mutations A40T and A28C were also selected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by FASTBAC-Seq data showing mutation frequencies at each SD position. The identification of the minimal SD motif (C80) is well-supported by the data. The selection of unique transversions (C82-C83) is a key observation that led to the discovery of structural suppressors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "None of the IsoA RNAs from the five other aapA/IsoA chromosomal loci (I, II, IV, V, VI) can replace IsoA3, demonstrating strictly module-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by experimental observations and citation to previous in vitro translation work. The demonstration of module specificity is important for understanding the regulation of this TA family. The evidence is clear though the experimental details are limited in the text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Deep-sequencing analysis shows 97.7% of pIsoA3* transformants contain mutations, with single-nucleotide substitutions being the predominant mutation type (96% of single mutations). Hierarchical clustering confirms high reproducibility across three biological replicates. Single-nucleotide indels are almost exclusively in the ORF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C70-C73 describe the FASTBAC-Seq data quality and mutation spectrum. The high mutation rate in WT (C66) is acknowledged as a technical artifact. The reproducibility (C72) and mutation type distribution (C70-C71, C73) are well-documented. These are important methodological findings that validate the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "The chromosomal expression of AapA3 toxin is constitutive and lethal in absence of IsoA3 antitoxin, consistent with the bactericidal activity observed for overexpressed AapA1 toxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 is supported by the transformation experiments and is consistent with previous work on AapA1. This conclusion integrates the current findings with prior knowledge and is well-supported by the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "5'-AGG-3' and 5'-GGA-3' are the minimal functional SD motifs allowing AapA3 translation, in agreement with the previously identified H. pylori SD consensus sequence (5'-AAGGA-3').",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 is supported by FASTBAC-Seq data showing which SD positions can be mutated and is consistent with previous work on H. pylori SD sequences. The agreement with prior consensus sequences validates the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C154"
+    ],
+    "result": "Despite the presence of thirteen CU-rich sequences in aapA3 mRNA, only mutations in the sequences closest to the SD could be selected, reflecting distance-dependence of these translation regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 is supported by FASTBAC-Seq data showing selective enrichment of only proximal aSD mutations. This distance-dependence is an important finding that explains the specificity of the regulatory mechanism and is consistent with prior work on other systems (C155-C156).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C174",
+      "C175"
+    ],
+    "result": "The strict conservation of the UCU Serine codon at position 9 across H. pylori strains attests to the importance of metastable structures. A synonymous UCC codon at this position would inhibit toxin expression, rendering the TA locus non-functional and promoting its loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C175 are supported by sequence conservation analysis and the experimental demonstration that T78C inhibits translation. The inference about TA locus loss (C175) is reasonable given that non-functional TA systems would be subject to deletion. This provides evolutionary support for the functional importance of the metastable structures.",
+    "result_type": "MINOR"
+  }
+]

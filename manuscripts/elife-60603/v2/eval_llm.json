@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Electrophysiology experiments in Xenopus oocytes demonstrate that GFB-9289, GFB-8438, and GFB-8749 do not activate TRPC4 on their own but inhibit (-)-Englerin A-induced activation in a dose-dependent manner. Competition assays show that (-)-Englerin A and these pyridazinone-based compounds are competitive antagonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are directly supported by experimental electrophysiology data shown in Figure 1. The dose-response curves, IC50 determinations, and competition assays provide robust evidence for the inhibitory mechanism. The experimental design includes appropriate positive controls ((-)-Englerin A activation) and demonstrates reproducibility (n \u2265 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Cryo-EM structures of TRPC4 in complex with three pyridazinone-based inhibitors (GFB-8438, GFB-9289, and GFB-8749) were determined to resolutions of 3.6 \u00c5, 3.2 \u00c5, and 3.8 \u00c5, respectively. These structures are similar to the previously determined apo structure of TRPC4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are well-supported by cryo-EM data with appropriate resolution determination using gold-standard FSC criteria. The data processing workflow is clearly described, including particle numbers, classification steps, and validation statistics. The resolutions achieved are sufficient for modeling the inhibitor binding modes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C51",
+      "C52",
+      "C53",
+      "C56",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "All three pyridazinone-based inhibitors bind to the same cavity within the voltage-sensing-like (VSL) domain of TRPC4, formed by helices S1-S4, the TRP helix, and re-entrant loop. The binding involves specific hydrogen bonds, halogen bonds, and hydrophobic interactions with conserved residues including N442, Y373, S488, F413, and M441.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C51-C53, C56, C59-C61 are directly supported by high-resolution cryo-EM density maps showing clear ligand density and detailed protein-ligand interactions. The structural data at 3.2-3.8 \u00c5 resolution is sufficient to identify specific interaction types. The common binding site for all three inhibitors is clearly demonstrated through structural superposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The inhibitor binding residues are identical between TRPC4 and TRPC5, explaining their similar IC50 values (0.29 \u03bcM for TRPC4 and 0.18 \u03bcM for TRPC5). In contrast, TRPC6 has key substitutions (N442\u2192L534 and F413\u2192M505) that explain its much lower binding affinity for GFB-8438 (>30 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C64-C67 are supported by sequence alignment data, structural comparison, and IC50 values from Yu et al., 2019. The structural basis for selectivity is clearly demonstrated through comparison of binding pockets. However, the IC50 values are cited from prior work rather than measured in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "GFB-8438 and GFB-8749 interact with both the VSL domain and TRP helix, whereas GFB-9289 exclusively interacts with the VSL domain. This difference correlates with their relative potencies, suggesting that interaction with the TRP helix amplifies the inhibitory effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C68-C70 are supported by structural observations and correlation with IC50 values. The structural data clearly shows differential interactions with the TRP helix. The inference about amplification of inhibitory effect is reasonable based on the structure-activity relationship, though direct mechanistic proof would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Upon ligand binding, residues in the binding pocket undergo conformational changes to accommodate the ligands, indicating an induced-fit mechanism or conformational selection. In the apo structure, these residues interact with each other via hydrophobic and hydrophilic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by structural comparison between apo and ligand-bound states. The conformational changes are clearly visible in the structures. The citation to Hammes et al., 2009 provides theoretical support for the induced-fit/conformational selection interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The VSL domain acts as a general regulatory region in TRP channels, with inhibitors binding to this domain in multiple TRP family members. Direct stabilizing interaction with the TRP helix may constrain it and the adjacent S6 helix, arresting the channel in a closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72-C73 are supported by comparison with other TRP channel structures and citations. However, C71 is explicitly stated as a hypothesis without direct experimental validation. The proposed mechanism of TRP helix constraint is speculative and would require additional experiments (e.g., molecular dynamics simulations or mutagenesis studies) to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In all inhibitor-bound structures, TRPC4 remains closed at the lower gate with a constriction of ~0.7 \u00c5 at N621. The selectivity filter shows a slightly wider radius in ligand-bound structures compared to apo, with density indicating a bound cation (presumably Ca2+ or Na+) in the filter of ligand-bound structures but not in apo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by pore radius calculations and direct observation of cryo-EM density. The measurements are quantitative and reproducible across multiple structures. The identification of cation density is reasonable based on the density shape and location, though the specific ion identity cannot be definitively determined at these resolutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "A characteristic lipid density (phosphatidic acid or ceramide-1-phosphate) is observed near the pore in ligand-bound structures. This lipid likely co-purified with the protein and may be crucial for channel gating, as small molecules can bind in this region and modulate the channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 are supported by cryo-EM density and the experimental protocol. However, C80 is explicitly stated as a hypothesis. The functional importance of this lipid site is speculative and based on comparison with TRPC6 rather than direct experimental evidence in TRPC4. Additional experiments would be needed to confirm the role in gating.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "A putative Ca2+ ion was identified in the VSL domain binding site, coordinated by D438, N435, E417, and Q420. An oxo group of the ligands could complete octahedral coordination via a bridging water molecule, potentially stabilizing bound Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by cryo-EM density and coordination geometry analysis, with citation support for favorable Ca2+ coordination residues. Claims C83-C84 are reasonable inferences based on coordination geometry, though the presence of a bridging water molecule cannot be directly visualized at these resolutions. The functional significance remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "TRPC4 binds Ca2+-dependent CaM in a pull-down assay and forms a complex that was structurally characterized by cryo-EM to 3.3 \u00c5 resolution. 3D classification revealed variable stoichiometry: 13% with one CaM, 35% with two, 31% with three, and 20% with four CaMs bound. Only one lobe of CaM was resolved in the structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are well-supported by biochemical pull-down data and cryo-EM analysis. The variable stoichiometry is directly determined from 3D classification without symmetry. The partial resolution of CaM (one lobe only) is clearly documented and explained by flexibility of the second lobe. The experimental design appropriately uses Ca2+ and EGTA controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "CaM binds to the rib helix tip (residues 691-703) and connecting loop (residues 677-690) of TRPC4, as well as an adjoining loop (residues 273-277). This binding results in ordering of a previously disordered region, fixing the channel in its closed conformation. The core of CaM forms hydrophobic interactions while peripheral residues form hydrophilic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C98-C103 are supported by cryo-EM density and structural modeling. The binding site partially overlaps with previously identified CaM-binding peptides (Tang et al., 2001), providing independent validation. The conclusion that residues 695-703 are sufficient for binding is a reasonable inference from the structural data. The ordering of disordered regions is directly observed by comparing apo and CaM-bound structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A high-resolution (2.85 \u00c5) apo structure of TRPC4 in LMNG revealed a previously unidentified horizontal helix (residues 666-676) at the transmembrane-cytoplasmic interface. This amphipathic helix has hydrophobic residues facing the membrane and hydrophilic residues projecting into the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are well-supported by high-resolution cryo-EM data. The 2.85 \u00c5 resolution is sufficient to accurately model this structural feature. The amphipathic nature is directly observed in the structure. This represents a genuine structural discovery that was not visible in previous lower-resolution structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Both apo and CaM-bound TRPC4 show the same closed constriction (0.7 \u00c5) at the lower gate. CaM binding stabilizes a flexible region (residues 677-692) and slightly widens the selectivity filter, which contains cation density. CaM binding likely reduces overall channel flexibility, fixing it in the closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 are supported by structural comparison and pore radius calculations. The stabilization of previously flexible regions is directly observed. The inference about reduced flexibility fixing the closed state (C111) is reasonable based on the structural data, though dynamic studies would provide stronger support. The correlation between high Ca2+ concentration and stronger VSL domain density (C109) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The CaM-mediated regulation of TRPC4 represents a novel mechanism distinct from TRPV5/6. In TRPC4, up to four CaMs bind to peripheral rib helices (potentially fine-tuning activity), whereas in TRPV5/6, one CaM binds centrally to plug the pore. The TRPC4 mechanism is proposed to be paradigmatic for all TRPC channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C112-C118 are supported by structural comparison with TRPV5/6 and other TRPC channels. The variable stoichiometry (C112) is directly observed. The distinction from TRPV5/6 mechanism is clear from structural data. The proposal that this mechanism is paradigmatic for TRPCs (C118) is a reasonable inference based on conservation of structural features (coiled coil helix and rib helix) in other TRPCs, though direct experimental validation in other TRPCs would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "A model for TRPC4 modulation proposes that the channel switches between closed and open conformations. Activator binding opens the channel transiently, while inhibitor binding locks it closed. Subtle conformational changes in the VSL domain are sufficient to transmit signals to the pore. High activator concentrations can reverse inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 represent a mechanistic model based on the structural and functional data. C119-C120 are based on general ion channel principles. C121-C122 are reasonable inferences from the structural data showing closed conformations and VSL domain binding. C123 is directly supported by competition assay data in Figure 1. The model is internally consistent with all presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "TRPC4 contains multiple molecular switch regions that can be modulated by small molecules or regulatory proteins. The rib helix binds both inhibitory CaM and activating IP3 receptor (likely at the same site with opposing effects). DAG likely binds to a lipid binding site near the pore to directly open the channel. Signals from different switches are integrated to determine the final channel state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124 and C128-C129 are reasonable inferences from the structural data showing multiple binding sites. However, C125-C127 involve significant speculation. The IP3 receptor binding site is cited from prior work (Tang et al., 2001), but structural details are lacking. The DAG binding mechanism is inferred from a lipid binding site location and prior work, but no DAG-bound structure is presented. These claims represent a plausible model but require additional structural and functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background information on TRPC channels establishes their roles in cellular signaling, disease, tissue distribution, regulation by various proteins and lipids, and pharmacological modulation. This includes information on TRPC4/5 sequence identity, channel properties, regulatory mechanisms (ROC vs SOC), and therapeutic potential of inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C42 represent background information supported by numerous citations to prior literature. These are well-established facts in the field and provide appropriate context for the current study. The citations appear appropriate and the claims accurately represent the cited work. This is standard background material for a manuscript in this field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Background on Ca2+-dependent regulation of TRPC4/5 and comparison with TRPM4/8. TRPC4/5 activation is Ca2+-dependent, and CaM binds to TRPC4 in a Ca2+-dependent manner to inhibit the channel. At low Ca2+, CaM dissociates. CaM binding prevents spontaneous activation by IP3 receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by appropriate citations to prior literature. These establish the known regulatory mechanisms that provide context for the structural studies. The information is accurately represented and appropriately cited.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,471 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "P-bodies (PBs) in HEK293 cells predominantly contain AU-rich mRNAs, with mRNA accumulation in PBs showing strong negative correlation with GC content (rs = -0.64, p<0.0001) and moderate positive correlation with mRNA length (rs = 0.39, p<0.0001). The GC content of both CDS and 3'UTR strongly correlates with PB localization, and this relationship is independent of mRNA length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are well-supported by comprehensive transcriptomic analysis with strong statistical correlations and multiple independent validations. The data show consistent patterns across different mRNA regions and length categories, with appropriate statistical tests (Spearman correlations with p<0.0001) and controls for confounding variables including meiotic recombination and genomic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C13"
+    ],
+    "result": "PB-enriched mRNAs exhibit systematic bias toward AU-rich codons and low-usage codons, with the absolute number of low usage codons per CDS correlating with both protein yield (rs = -0.46) and PB localization (rs = 0.49). CDS with >100 low usage codons are particularly enriched in PBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C12-C13 are supported by systematic codon usage analysis showing consistent patterns across all amino acids with synonymous codons. The correlation analyses are statistically robust (p<0.0001) and the threshold analysis (100 low usage codons) provides a clear quantitative distinction between PB-enriched and PB-excluded mRNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C94"
+    ],
+    "result": "PB-enriched mRNAs have 20-fold lower protein yield than PB-excluded mRNAs, which is not due to translational repression within PBs but rather to intrinsic mRNA properties, likely the high number of low usage codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C94 are supported by previous published data (Hubstenberger et al., 2017) and logical inference based on the observation that only ~15% of any given mRNA is in PBs at any time. The mechanistic link to low usage codons (C94) is supported by correlation analysis (C12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "DDX6 silencing in HEK293 cells (90% depletion) shows opposite effects on mRNA stability versus translation rate depending on GC content: GC-rich mRNAs (>50% GC) are preferentially stabilized (rs = 0.45 for total RNA), while AU-rich mRNAs (<45% GC) show increased translation rate (rs = -0.53). Similar patterns are observed in K562 cells (rs = 0.59 for stability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 are well-supported by polysome profiling and RNA-seq data from multiple cell lines with appropriate controls. The 90% knockdown efficiency is validated by Western blot, polysome profiles show no global translation disruption, and the opposite correlations for stability vs. translation are statistically robust (all p<0.0001) and replicated in independent datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "DDX6 CLIP targets in K562 cells are GC-rich (rs = 0.41) and are particularly stabilized after DDX6 knockdown but not translationally derepressed. DDX6-dependent decay shows marginal preference for short transcripts (rs = -0.09) while translation repression is independent of CDS length but higher on mRNAs with long 3'UTRs (rs = 0.16). Both CDS and 3'UTR GC content are similarly predictive of DDX6 sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 are supported by integration of CLIP data with knockdown experiments across multiple cell lines. The correlations are statistically significant (p<0.0001) and the analysis appropriately separates effects on stability versus translation. The similar predictive power of CDS and 3'UTR GC content is quantitatively demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C37"
+    ],
+    "result": "XRN1-dependent decay preferentially acts on GC-rich mRNAs in both HeLa (rs = 0.41) and HCT116 (rs = 0.49) cells, with targets localized out of PBs (rs = -0.35). DDX6 functions as a cofactor of XRN1 5'-3' exonuclease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C37 are supported by XRN1 silencing experiments in two independent cell lines showing consistent GC-rich target preference. The inference that DDX6 is a cofactor of XRN1 (C37) is reasonable based on similar target preferences and read coverage patterns, though direct biochemical evidence is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "PAT1B targets are AU-rich (rs = -0.50) and PAT1B silencing does not result in increased 5' coverage of target mRNAs, while XRN1 silencing does. PAT1B target mRNAs have higher 5' coverage than average in control cells, while XRN1 targets have lower 5' coverage. PAT1B affects 3' to 5' mRNA degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36, C38 are supported by read coverage analysis showing distinct patterns for PAT1B versus XRN1 targets. The inference that PAT1B affects 3' to 5' decay (C38) is reasonable based on the absence of 5' bias in read coverage, though direct evidence of 3' to 5' decay is not provided. The contrasting patterns with XRN1 strengthen this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Group I mRNA decay factors (SMG6, YTHDF2, G4-containing) target GC-rich mRNAs that are dependent on DDX6 and XRN1 but not PAT1B for stability, do not accumulate in PBs, and have DDX6-independent translation. Group II translation regulators (except TOP, ATXN2, 4E-T) target AU-rich mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are supported by comprehensive analysis of published CLIP, PARE, and motif data integrated with the authors' knockdown experiments. The systematic differences between Group I and Group II factors are consistently demonstrated across multiple datasets with appropriate statistical tests (p<0.0001 for most comparisons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Group II mRNA targets (except TOP, ATXN2, 4E-T) are stabilized following PAT1B silencing, enriched in PBs, and translationally derepressed after DDX6 silencing. ATXN2 targets are excluded from PBs while 4E-T targets are markedly enriched in PBs but poorly affected by PAT1B/DDX6, indicating PB localization is not sufficient for PAT1B-dependent stability and DDX6-dependent translation repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are well-supported by systematic analysis showing mirror-image behavior of Group II versus Group I factors. The dissociation between PB localization and regulation for 4E-T targets (C50-C51) is particularly important and well-documented, providing key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "In HEK293 cells, suboptimal codons do not enhance DDX6 recruitment to trigger mRNA decay, as the correlation between polysomal retention and DDX6-dependent decay is weak (rs = 0.10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by correlation analysis and consistent with findings in mouse stem cells (Freimer et al., 2018). The weak correlation (rs = 0.10) provides quantitative evidence against the codon-mediated recruitment hypothesis, though the p-value is still significant (p<0.0001) suggesting some minor contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "AGO protein and miRNA targets are generally AU-rich, accumulate in PBs, have DDX6-dependent translation, and PAT1B-dependent stability. Different miRNAs show variation in PB storage extent, with miR21-5p targets particularly AU-rich and strongly enriched in PBs, while miR-99b-5p targets are the most GC-rich and not enriched in PBs. The median GC content of miRNA targets correlates with the GC content of the miRNA itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C62 are supported by comprehensive analysis of AGO CLIP data and miRNA target databases integrated with the authors' datasets. The variation among different miRNAs (C59-C61) and the correlation between miRNA and target GC content (C62) provide important mechanistic insights. Statistical significance is demonstrated throughout (p<0.0001 for most comparisons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "mRNA GC content is a major parameter for PB localization and regulation by DDX6, XRN1 and PAT1B in steady-state conditions, with the fold changes of RBP targets generally falling close to the tendency plot based on GC content only, indicating that binding sites for regulatory proteins make subsidiary contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by systematic comparison of specific RBP targets to GC-content-binned transcriptome showing that most targets behave according to their GC content. This is a key integrative finding demonstrating that GC content is the primary determinant with RBP binding providing secondary modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "AU-rich mRNAs excluded from PBs are more sensitive to XRN1-dependent decay than other AU-rich transcripts but not more sensitive to DDX6-dependent decay, suggesting XRN1 preference for GC-rich mRNAs is partly related to their exclusion from PBs, whereas DDX6 has a true preference for GC-rich mRNAs independent of PB localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by stratified analysis of AU-rich mRNAs by PB localization. The differential sensitivity to XRN1 versus DDX6 provides important mechanistic insight distinguishing direct GC preference from indirect effects of PB exclusion. The logic of the inference is sound and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "PB-excluded AU-rich mRNAs are strongly enriched for genes encoding secreted proteins and proteins associated with membranous organelles, with GO categories related to mitochondria, intracellular organelles and extracellular matrix proteins representing up to 36% of the transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by gene ontology analysis with appropriate statistical testing. This finding provides biological context for why some AU-rich mRNAs are excluded from PBs, suggesting that localization to membranous organelles may compete with PB recruitment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The correlation between lncRNA GC content and PB accumulation (rs = -0.20) is much weaker than for mRNAs (rs = -0.64), with AU-rich lncRNAs poorly accumulating in PBs, suggesting that the coding capacity of mRNAs is important for PB localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by analysis of lncRNA PB enrichment with appropriate statistical comparison of correlation coefficients (p<0.0001 for difference). The inference that coding capacity is important (C72) is reasonable based on the differential behavior of lncRNAs versus mRNAs, though the mechanism is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The CDS GC content is systematically lower (9-13% GC difference) in PB mRNAs than PB-excluded mRNAs across all 3'UTR GC content groups. The importance of 3'UTR GC content for PB localization becomes visible only for CDS with GC3 higher than 50%, with AU-rich 3'UTR allowing accumulation in PBs despite a GC-rich CDS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by stratified analysis examining the independent and interactive effects of CDS and 3'UTR GC content. The threshold effect at 50% GC3 is clearly demonstrated and provides important mechanistic insight into how different mRNA regions contribute to PB localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Haplo-insufficient mRNAs are significantly enriched in PBs based on published haplo-insufficiency scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by analysis using published haplo-insufficiency prediction scores with appropriate statistical testing (p<0.0001). This provides functional validation of the biological relevance of PB localization for genes requiring tight dosage control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "AU-rich Rluc reporter mRNA has 4.5-fold lower protein yield than GC-rich version despite similar mRNA levels, and PBs containing AU-rich Rluc mRNA clusters are five times more frequent than those containing GC-rich Rluc mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by experimental validation using reporter constructs that differ only in CDS GC content. The luciferase assays and smiFISH quantification provide direct experimental evidence supporting the correlative transcriptomic findings. Multiple independent experiments strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "In cell-free extract, AU-rich RNA increases the number of PB-like granules in a dose-dependent manner while GC-rich RNA prevents their formation. Uncapped non-polyadenylated AU-rich RNA specifically favors condensation of DDX6-dependent granules containing LSM14A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by in vitro reconstitution experiments with flow cytometry quantification. The dose-dependent effect of AU-rich RNA and the inhibitory effect of GC-rich RNA provide direct mechanistic evidence for GC content effects on granule formation independent of translation. The characterization of granules as DDX6-dependent and containing LSM14A validates their PB-like nature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Low GC content in the CDS likely acts through codon usage and low translation efficiency for PB localization, while low GC content in the 3'UTR could allow for binding of RBPs with affinity for AU-rich motifs and/or influence RNA secondary structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is a reasonable inference based on correlations between GC content, codon usage, and protein yield, but lacks direct mechanistic validation. Claim C83 is explicitly speculative about 3'UTR mechanisms. While the inferences are logical, additional experiments would be needed to definitively establish these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The integrated model proposes that GC-rich mRNAs are excluded from PBs and controlled at the mRNA level by DDX6 and XRN1 (5' decay), while AU-rich mRNAs are enriched in PBs, controlled at the translation level by DDX6, and their stability depends on PAT1B (likely 3' decay). NMD and m6A-associated decay pathways target GC-rich mRNAs, while most translation regulators and miRNAs target AU-rich mRNAs. This suggests 5' decay preferentially controls optimally translated GC-rich mRNAs, while translation regulation controls mRNAs with limiting efficiency (AU-rich).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 represent the integrated model synthesizing all major findings. The model is well-supported by the comprehensive dataset including transcriptomics, CLIP data, and experimental validation. The logic connecting GC content to codon usage to translation efficiency to regulatory mechanism is coherent and supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The model of GC-content-dependent post-transcriptional regulation applies specifically to pathways involving PBs, XRN1, DDX6 and PAT1B, was consistent in proliferating cells of various origins (HEK293, HeLa, HCT116, K562), but may not apply to different physiological states such as developmental stages or differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 appropriately define the scope and limitations of the model. The consistency across multiple cell lines (C92) is demonstrated by the data. The caveats about applicability to different physiological states (C93) are appropriate scientific caution, though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C100"
+    ],
+    "result": "The authors speculate that suboptimal translation of AU-rich CDS makes mRNAs optimal targets for translation regulation (since control requires a limiting step), while optimally translated GC-rich transcripts are better controlled at the stability level. DDX6 may facilitate XRN1 progression by unwinding GC-rich double-stranded regions over the entire mRNA length, potentially acting in concert with other helicases like UPF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97, C100 are explicitly speculative mechanistic proposals. While the logic is sound and consistent with the data, these represent hypotheses requiring experimental validation rather than established findings. The speculation about DDX6 unwinding activity (C97) is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "UPF1 helicase and NMD pathway targets show GC-rich bias (restricted to 3'UTR for NMD), and skin fibroblasts from patients with DDX6 missense mutations show accumulation of GC-rich mRNAs. Yeast XRN1 associates with ribosomes and decays mRNAs during translation, which if conserved in human would explain XRN1 preference for GC-rich mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99, C101 are supported by citations to published work showing consistent patterns with the current findings. Claim C102 cites recent yeast work, and C103 is a reasonable speculation about implications for human cells. The convergent evidence from multiple systems strengthens the overall model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Yeast studies show Dhh1/DDX6 and Pat1/PAT1B decay targets poorly overlap, though both target poorly translated mRNAs in yeast (unlike human where only PAT1B targets are poorly translated). Genome-wide evidence in yeast and CLIP data suggest Pat1/Lsm1 preferentially bind 3' ends and promote 3' to 5' decay. The authors favor the possibility that PAT1B affects mRNA stability in human cells prominently through 3' to 5' decay, potentially involving CCR4/CNOT deadenylase and LSM1-7 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 are supported by citations to yeast studies and integration with the authors' read coverage analysis. The inference about 3' to 5' decay mechanism (C109) is reasonable based on multiple lines of evidence, though direct demonstration is lacking. Claim C110 is speculation based on interactome data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "The authors speculate that ARE-BPs could behave as enhancers or inhibitors of PAT1B activity in mRNA decay, and that the miRNA pathway could activate PAT1B activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112 are explicitly speculative proposals about regulatory relationships. While consistent with the observation that ARE-BP and miRNA targets are PAT1B-dependent, these represent hypotheses requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "DDX6 contributes to repression of maternal mRNAs in Xenopus oocytes as a component of the CPEB complex, represses translation of thousands of mRNAs during maternal to zygotic transition in Drosophila, collaborates with FMRP and AGO proteins for translation repression in fly neurons, and is a general co-factor of the miRNA pathway in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 are supported by citations to published work establishing DDX6 function across multiple systems. These provide important evolutionary and functional context for the current findings, though they represent prior knowledge rather than new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "4E-T function in PBs is partly independent of DDX6, and PB localization and translation repression by DDX6 can be separated to some extent, based on the observation that 4E-T targets are in PBs but not DDX6-regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 are supported by the data showing dissociation between PB localization and DDX6-dependent regulation for 4E-T targets, combined with citation to previous mutational studies. This provides important mechanistic insight into PB assembly and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors speculate that long CDS could favor mRNA recruitment in PBs by decreasing translation efficiency, long 3'UTR should increase probability of binding translation regulators, and DDX6/LSM14A coat repressed mRNAs at multiple positions according to their length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C120 are speculative mechanistic proposals, though reasonable based on the data. Claim C121 is supported by citation to previous biochemical and imaging studies, providing some support for the coating model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The GC-rich part of the human genome only emerged in amniotes, while yeast, C. elegans, Drosophila and Xenopus have narrow, mostly AU-rich GC content distributions. Despite conservation of DDX6, XRN1 and PAT1B proteins in eukaryotes, distinct modes of mRNA stability control depending on GC content may have evolved more recently, and DDX6 enzymatic properties could have adapted to higher GC content of human transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by citations to genome evolution studies and analysis of GC content distributions across organisms. Claims C124-C125 are reasonable evolutionary inferences based on the mismatch between protein conservation and genome GC content evolution, though C125 is speculative about DDX6 adaptation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The GC-rich part of the human genome was acquired through GC-biased gene conversion (gBGC) linked with meiotic recombination, but mRNA base composition and PB enrichment are associated independently of meiotic recombination or genomic context. The authors propose that the genome of higher eukaryotes has evolved partly to facilitate control of regulators at the translation level by limiting their protein yield through GC content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by citation to gBGC mechanism and statistical analysis controlling for meiotic recombination. Claim C128 is a speculative evolutionary model, though logical. Claim C129 is a well-supported summary statement integrating all findings about GC content effects.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C60",
+      "C73",
+      "C85"
+    ],
+    "result": "Mubritinib does not directly inhibit HER2 as previously reported. Western blot analysis showed minimal effect on HER2 phosphorylation compared to the specific HER2 inhibitor lapatinib (C1), and radiometric kinase assays demonstrated no decrease in 32P incorporation even at 10 \u03bcM mubritinib (C3). Additionally, mubritinib displayed no activity against almost 300 other kinases screened (C4), contradicting prior reports that mubritinib acts as a HER2 inhibitor (C60, C73, C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, and C4 provide converging experimental evidence from multiple orthogonal assays (Western blot, radiometric kinase assays, kinase screening) demonstrating that mubritinib does not directly inhibit HER2 or other kinases. The data directly contradict the previously reported mechanism (C60, C73), making this a well-supported finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C39",
+      "C74",
+      "C75"
+    ],
+    "result": "Mubritinib and CAI alter phosphorylation of proteins downstream of the energy sensor AMPK (e.g., ACC) and impact mTOR signaling (e.g., RPS6 phosphorylation). This pattern is similar to known mitochondrial complex I inhibitors but distinct from the specific HER2 inhibitor lapatinib, which affects RPS6 but not ACC phosphorylation (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (C2, C39) demonstrate changes in ACC and RPS6 phosphorylation following treatment with mubritinib and CAI. The differential effects compared to lapatinib (C75) provide strong evidence that these compounds act through energy sensing pathways rather than direct HER2 inhibition. The data are internally consistent across multiple compounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C48",
+      "C50",
+      "C63",
+      "C88"
+    ],
+    "result": "Mubritinib causes ATP depletion and functional impairment in cardiac cells. In H9c2 cells and hESC-cardiomyocytes grown in galactose media, mubritinib treatment led to 50% ATP decrease within 2 hours (C5), progressive depletion to 10% over 24 hours (C6), cell death (C7), and profound reduction in cardiomyocyte beat rate (C9, C50). These effects were specific to galactose media, indicating dependence on oxidative phosphorylation (C8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays (ATP measurements, cell viability, multi-electrode array for beat rate) in two cardiac cell models (H9c2 and hESC-cardiomyocytes) provide strong convergent evidence for cardiac toxicity. The glucose/galactose differential (C8) strengthens the mechanistic interpretation. This addresses an important clinical safety concern (C48, C63, C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C49",
+      "C78"
+    ],
+    "result": "Mubritinib directly inhibits mitochondrial respiratory complex I. Oxygen consumption rate measurements showed ~50% reduction in rotenone-sensitive respiration in H9c2 and hESC-CM cells (C11). In permeabilized cells, mubritinib inhibited pyruvate/malate-driven (complex I) respiration, but this inhibition was rescued by succinate addition (C12, C13), demonstrating specific complex I inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of intact cell OCR measurements (C11) and permeabilized cell substrate-specific respiration assays (C12, C13) provides strong mechanistic evidence. The succinate rescue experiment is particularly compelling as it demonstrates specificity for complex I versus downstream respiratory chain components. Multiple independent experimental approaches converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Mubritinib inhibits complex I by blocking ubiquinone reduction at the ubiquinone-binding site with an IC50 of 19.2 nM. In mitochondrial membranes, mubritinib showed dose-dependent inhibition of NADH oxidation (C14) but no effect on succinate oxidation (C15). Using purified complex I, mubritinib abolished ubiquinone reduction (C18) while leaving APAD+ and FeCN reduction unaffected (C17), indicating inhibition at the ubiquinone-binding site rather than the NADH-binding site (C19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The progression from mitochondrial membranes to purified complex I with artificial electron acceptors provides rigorous mechanistic dissection. The differential inhibition of ubiquinone versus APAD+/FeCN reduction (C17, C18) is particularly strong evidence for site-specific inhibition. The nanomolar IC50 (C16) indicates high potency. The experimental design is sound and the conclusions well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C51",
+      "C52"
+    ],
+    "result": "Structure-activity relationship studies identified the heterocyclic 1,3-nitrogen motif within the 1H-1,2,3-triazol-1-yl substituent as the toxicophore responsible for complex I inhibition. Compounds retaining the N1-linked triazole (2-4) maintained inhibitory activity (C20), while modifications that disrupted the 1,3-nitrogen pattern (compounds 5, 6, 8) lost activity (C21-C23). Notably, the N-linked imidazole (compound 7) retained activity (C24), supporting the importance of the 1,3-amidine-like motif (C25). ATP depletion patterns matched complex I inhibition across the compound series (C26, C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic SAR study with 8 compounds provides strong evidence for the structural requirements of complex I inhibition. The correlation between complex I inhibition and ATP depletion (C26) strengthens the mechanistic link. The retention of activity with imidazole (C24) while losing it with pyrrole (C23) or triazol-2-yl (C21) provides clear structure-activity patterns supporting the 1,3-nitrogen motif hypothesis (C25, C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C53",
+      "C64",
+      "C65"
+    ],
+    "result": "CAI does not directly inhibit its reported target (calcium channels) despite being trialed as an anti-cancer agent based on this proposed mechanism. Radioligand binding assays showed no significant binding of CAI to non-voltage gated Ca2+ channels (C30), contradicting the proposed mechanism (C29). Like mubritinib, CAI contains the same 1H-1,2,3-triazole toxicophore (C53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The radioligand binding assay data (C30) directly refutes the proposed calcium channel mechanism (C29). This is a critical finding given CAI's clinical trial history (C28, C64). The identification of the same toxicophore in CAI (C53) provides a mechanistic link to mubritinib and suggests a common mode of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C54",
+      "C66",
+      "C67"
+    ],
+    "result": "CAI is a potent complex I inhibitor, and this activity depends on the triazole toxicophore. CAI and compound 12 (imidazole variant) strongly inhibited ATP production (C32) and oxygen consumption (C33) in H9c2 cells, while compounds 10 and 11 (pyrazole variants lacking the 1,3-nitrogen motif) had minimal effect. Similar patterns were observed in A549 lung cancer cells (C34, C35). Permeabilized cell studies showed CAI inhibited complex I-driven respiration with succinate rescue (C36, C37), and mitochondrial membrane assays confirmed direct complex I inhibition (C38). Chemical modification of the triazole abolished activity (C67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple cell types (H9c2, A549) and experimental approaches (ATP measurement, OCR, permeabilized cells, mitochondrial membranes) provide convergent evidence. The SAR with CAI variants (C32-C38) parallels the mubritinib findings, strengthening the toxicophore hypothesis. The succinate rescue experiment (C37) is particularly strong evidence for complex I specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C55",
+      "C56",
+      "C68",
+      "C69"
+    ],
+    "result": "Complex I inhibition is directly linked to anti-cancer activity, with toxicophore modification ablating effects on cancer cell proliferation and apoptosis. In HL60 (AML) cells, both mubritinib and CAI caused cell death in glucose and galactose media, while inactive variants (compounds 5 and 11) had no effect (C41, C42). Other cancer cell lines (M059K, A549, U-20S, HeLa) showed toxicophore-dependent cell death in galactose (C44) but not glucose (C43). Cell proliferation assays in BT474 and A549 cells showed growth inhibition only with compounds containing the toxicophore (C45, C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consistent correlation between toxicophore presence and anti-cancer effects across multiple cell lines (HL60, M059K, A549, U-20S, HeLa, BT474) and assays (cell death, proliferation) provides strong evidence. The glucose/galactose differential in most cell lines (C43, C44) supports the mitochondrial mechanism. The HL60 results showing toxicity in both glucose and galactose (C41) align with known OXPHOS dependence of AML cells. The loss of activity with inactive variants (C42, C46) directly links the toxicophore to therapeutic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C86",
+      "C87",
+      "C102"
+    ],
+    "result": "A novel toxicophoric motif (heterocyclic 1,3-nitrogen) has been identified that is mechanistically linked to adverse cardiac effects through complex I inhibition. The authors demonstrate that drug mechanisms can be easily misattributed when mitochondrial function is disrupted, as mitochondria have pleiotropic roles in cell signaling, metabolism, and apoptosis (C72, C86, C87). This finding emphasizes the need for detailed SAR analysis in drug development (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of the toxicophore (C70) is well-supported by the extensive SAR data. The demonstration that both mubritinib and CAI were misattributed to their reported targets (HER2 and calcium channels) when they actually inhibit complex I provides compelling evidence for the ease of misattribution (C87, C102). The mechanistic link between the toxicophore, complex I inhibition, and cardiac toxicity is well-established through the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The glucose/galactose system effectively reveals mitochondrial liabilities. In galactose-containing media, cells are predominantly reliant on mitochondria for ATP production, allowing mitochondrial toxicities masked in glucose to be revealed (C76). Control experiments confirmed that oligomycin A (ATP synthase inhibitor) had no effect on rotenone-sensitive OCR in the presence of FCCP (C77), validating the experimental approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The glucose/galactose differential is consistently observed across multiple experiments and cell types, supporting its utility as a method to reveal mitochondrial liabilities (C76). The oligomycin control (C77) validates the experimental design by confirming that ATP synthase inhibition doesn't affect complex I-driven respiration under uncoupled conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Preliminary screening identified additional compounds (ketoconazole, terconazole) containing the heterocyclic 1,3-nitrogen motif that inhibit complex I (C81). Rufinamide, despite structural similarity to CAI, showed no complex I inhibitory activity (C82), potentially due to key structural differences including lack of anilino nitrogen and lower lipophilicity (logP 1.3 vs 3.1) (C83, C84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the identification of ketoconazole and terconazole as complex I inhibitors (C81) supports the generalizability of the toxicophore, the data are described as preliminary without detailed characterization. The rufinamide negative result (C82) is interesting but the explanation involving multiple structural differences and lipophilicity (C83, C84) is speculative. More systematic SAR would be needed to definitively determine which structural features account for the lack of activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C97"
+    ],
+    "result": "The authors recommend monitoring cardiac function in future clinical trials of mubritinib and CAI (C89) and suggest that new drug development programs using the amidine-like nitrogen substructure could target glycolysis-deficient tumors, provided cardiac liabilities are assessed (C97).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are reasonable recommendations based on the experimental findings, but they represent future work and speculation rather than tested results. The cardiac monitoring recommendation (C89) is a logical inference from the cell-based cardiac toxicity data, but clinical relevance remains to be established. The drug development suggestion (C97) is speculative about future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10",
+      "C62"
+    ],
+    "result": "Prior work by Baccelli et al. (2019) demonstrated that mubritinib targets respiratory complex I and inhibits growth of AML cancer cells that are highly dependent on oxidative phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a citation to prior published work (C10, C62) that is appropriately referenced and provides important context for the current study. The authors build upon this prior finding to investigate cardiac toxicity and identify the toxicophore.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C57",
+      "C58",
+      "C59",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Background claims about mitochondrial toxicity and tissue-specific sensitivity. Mitochondrial toxicity is responsible for up to 50% of post-market drug withdrawals (C58) and has a major role in idiosyncratic drug toxicity (C57). Cardiomyocytes are particularly sensitive to mitochondrial toxins due to high energy requirements and mitochondrial content (C59, C100). Mitochondrial toxins have differential tissue effects due to organ-specific variations in mitochondrial proteome and function (C98, C99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by appropriate citations to the literature (C57, C58, C59, C98, C99, C100, C101). They provide important context for understanding the significance of the findings but are not novel results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background and discussion of therapeutic context. Mubritinib has been used to chemo-sensitize tumor cells (C90, C91), and sole complex I inhibition is a viable treatment for some cancers (C92). Many cancer cell subpopulations depend on OXPHOS (C93), and compounds targeting complex I or ATP synthase show efficacy in glycolysis-deficient tumors (C94). IACS-010759 contains a similar triazole motif suggesting similar mechanism (C95). The efficacy of mubritinib and CAI depends on the amidine-like nitrogen substructure (C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide therapeutic context and are supported by citations (C90-C95) or by the experimental data in the paper (C96). The IACS-010759 observation (C95) is an interesting inference based on structural similarity. These are primarily discussion points that contextualize the findings rather than novel experimental results.",
+    "result_type": "MINOR"
+  }
+]

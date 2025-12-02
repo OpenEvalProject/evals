@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors developed an optogenetic system (OptoRal) that enables light-controlled, selective activation of Ral proteins at the plasma membrane. Upon blue light illumination, RalGEF-CRY2 translocates to the membrane within seconds, leading to efficient Ral activation (1.4-fold increase in Sec5GBD reporter) without cross-activating Rac1 or Cdc42.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 provide converging evidence from multiple reporters (Sec5GBD for Ral activity, Pak1GBD for Rac1/Cdc42 activity), pull-down assays, and FRET biosensors. The temporal dynamics, specificity controls (OptoControl cells), and validation with multiple methods strongly support the successful development of a selective Ral activation system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Light-controlled Ral activation triggers membrane protrusions independently of Rac1. OptoRal cells show increased positive edge velocities (protrusions) but not retractions upon illumination, which is reversible and controllable. Rac inhibition with NSC23766 (reducing Rac1-GTP by ~60%) does not impair protrusion formation, and RalB depletion, but not RalA depletion, abolishes the light-induced protrusion phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 demonstrate the protrusion phenotype through quantitative edge velocity analysis with appropriate controls (OptoControl cells, dark conditions). The Rac1 independence is supported by both pharmacological inhibition (NSC23766) with validated Rac1-GTP reduction and lack of Pak1GBD recruitment. The RalB-specific requirement is shown by differential siRNA depletion effects. The convergence of multiple experimental approaches strongly supports this unexpected finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Ral activation recruits the Wave Regulatory Complex (WRC) to the plasma membrane via the exocyst complex. Light-induced Ral activation causes immediate iRFP-Abi1 (WRC reporter) recruitment to both the leading edge and ventral membrane in OptoRal but not OptoControl cells. The Abi1Q56A mutant, which cannot bind exocyst, shows significantly reduced recruitment and impaired protrusion dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 establish the Ral-exocyst-WRC pathway through multiple lines of evidence: proper incorporation of iRFP-Abi1 into WRC (size exclusion chromatography), light-dependent recruitment (TIRF microscopy with quantification), and loss-of-function analysis with the Abi1Q56A mutant. The correlation between reduced WRC recruitment and decreased protrusion dynamics with the mutant provides functional validation. The use of prior work (C48) and new experimental data converge to support this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Light-controlled Ral activation is sufficient to drive invasion of non-transformed cells through the exocyst-WRC pathway. OptoRal cells show substantially increased invasion upon illumination compared to OptoControl cells, and this invasion requires the exocyst-WRC interaction as OptoRal cells expressing Abi1Q56A fail to invade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 demonstrate that Ral activation is not only necessary but also instructive for invasion using Transwell invasion assays with optogenetic control. The requirement for exocyst-WRC interaction is validated by the Abi1Q56A mutant experiment. This establishes causality through the optogenetic approach and confirms the molecular pathway identified in earlier results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In the HEK-HT/HEK-HT-RasV12 isogenic cell model, RasV12 expression confers strong invasive capacity, and RalB is the primary mediator of this Ras-driven invasion. RalB depletion reduces invasion by ~60%, RalA depletion has no effect, and combined depletion reaches ~90% inhibition, indicating RalB is essential while RalA may partially compensate when RalB is absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C68 use a well-characterized isogenic cell model with appropriate controls and multiple invasion assays (Transwell and Inverted Invasion). The differential effects of RalA vs RalB depletion are clearly demonstrated with validated knockdown efficiencies. The additive effect of double depletion supports the compensation hypothesis. The use of two different invasion assay formats strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "In HEK-HT-RasV12 cells, Ras-dependent MAPK and PI3K pathway hyperactivation are dispensable for invasion, while the Ras-RalB axis is necessary. The RasV12G37 mutant (MAPK-deficient) invades as efficiently as RasV12, and PI3K inhibition with PIK90 does not impair invasion. Individual or combined pharmacological inhibition of MAPK and PI3K pathways does not significantly reduce invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 use both genetic (RasV12G37 mutant) and pharmacological approaches (trametinib, PIK90) with validated pathway inhibition (Western blots showing reduced Erk/Akt phosphorylation). The convergence of multiple experimental strategies and the contrast with the strong RalB requirement (from previous results) support this unexpected finding. However, the authors appropriately note this is specific to their experimental context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "RGL1 and RGL2 are the specific RalGEFs that mediate Ras-dependent invasion by activating RalB. Depletion of RGL1 and RGL2 substantially reduces invasion in HEK-HT-RasV12 cells, while depletion of other RalGEFs (RGL3, RalGDS, RalGPS1) has no effect. Both RGL2 and RalB show increased localization at cell edges in RasV12-transformed cells compared to normal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 systematically test all six RalGEFs using siRNA depletion with RT-qPCR validation and identify RGL1/RGL2 as the critical mediators. The conclusion is strengthened by knowledge that RGL1/RGL2 contain Ras-association domains (C79) and by immunofluorescence showing increased edge localization of both RGL2 and RalB in transformed cells. This completes the molecular pathway from Ras to RalB.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "In human breast cancer samples, RalB protein expression progressively increases from normal tissue through in situ, invasive, to metastatic stages (median H-scores: 0.5, 1, 1.5, 2 respectively), while RalA expression remains unchanged. RalB depletion impairs invasion in both Ras-mutant (MDA-MB-231) and Ras-wild-type (BT549) triple-negative breast cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 provide clinical relevance through IHC analysis of a large patient cohort (n=448-466 for Ral proteins) with appropriate statistical analysis (Wilcoxon signed-rank tests on paired samples). The progressive increase in RalB but not RalA expression correlates with disease progression. The functional validation in breast cancer cell lines (both Ras-mutant and wild-type) supports RalB's role. The authors appropriately note the limitation that protein levels don't necessarily reflect activity (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C105"
+    ],
+    "result": "The authors establish a complete molecular model: Active Ras recruits RGL1/RGL2 to activate RalB, which binds and recruits the exocyst complex to the leading edge; exocyst then recruits WRC, which stimulates actin polymerization and drives protrusion formation and invasion independently of Rac1. Optogenetic Ral activation is instructive (not just permissive) for invasion in non-transformed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes the major findings from multiple experimental approaches (optogenetics, siRNA depletion, mutant analysis, invasion assays). Each component of the pathway is supported by the individual results evaluated above. The Rac1-independence is particularly well-supported by multiple lines of evidence. The instructive nature of RalB activation (C92, C105) is demonstrated by the optogenetic experiments showing that Ral activation alone is sufficient to drive invasion in non-transformed cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors provide background context on Ras mutations in cancer, the three major Ras downstream pathways (MAPK, PI3K, Ral), the failure of MAPK/PI3K-targeted therapies, and the established role of RalB (but not RalA) in invasion and metastasis across multiple cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 are primarily literature-based background claims supported by appropriate citations. These establish the rationale for studying the Ral pathway and provide context for the experimental work. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors describe the technical details and validation of their optogenetic system, including the CRY2-CIBN dimerization properties, the catalytic activity of the RGL2 GEF domain, the HEK-HT cell line characteristics, and the specificity of various reporter constructs (Sec5GBD, Pak1GBD, WRC size).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C106-C115 provide methodological details and validation supported by citations to published literature and experimental data. These technical details are important for reproducibility and interpretation but are supporting information rather than primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors discuss the broader context of Ral pathway activation in cancer, noting that while Ral gene mutations are rare (1.5-2%), alterations in Ral regulators are more common (e.g., RGL1/RalGPS1 amplified in 11% of breast cancers), and Ral overexpression/activation is observed across many cancer types regardless of Ras mutation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103, C116-C117 provide discussion context supported by citations to published literature and database information (cBioPortal). These claims place the findings in broader context and suggest clinical relevance, but are primarily literature-based rather than new experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C104"
+    ],
+    "result": "The authors propose that RalB pathway contribution to invasion is more important than MAPK and PI3K pathways in their experimental context, and suggest that pharmacological inhibition of the Ras-RGL1/2-RalB-exocyst-WRC pathway holds promise as an anticancer strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 is supported by the experimental data in the HEK-HT-RasV12 model but the authors appropriately qualify this as context-dependent. Claim C104 is a forward-looking proposal that requires future validation. The generalizability of the MAPK/PI3K dispensability finding (C6) is uncertain given the extensive prior literature showing MAPK/PI3K involvement in invasion (C116) and the authors' acknowledgment that this may be model-specific. The therapeutic proposal (C104) is speculative and would require extensive additional work including drug development and in vivo validation.",
+    "result_type": "MAJOR"
+  }
+]

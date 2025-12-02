@@ -1,0 +1,1913 @@
+{
+  "submission": {
+    "id": "e3132c7a-dd51-4e15-8634-cf8ffa247d58",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T16:07:06.601465Z",
+    "updated_at": "2025-12-02T16:07:06.601465Z"
+  },
+  "content": [
+    {
+      "id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "submission_id": "e3132c7a-dd51-4e15-8634-cf8ffa247d58",
+      "content_type": "manuscript",
+      "content_text": "# Measuring the distribution of fitness effects in somatic evolution by combining clonal dynamics with dN/dS ratios\n\n## Authors\n\n- Marc J Williams<sup>1</sup> ([ORCID: 0000-0001-5524-4174](https://orcid.org/0000-0001-5524-4174)) \u2020\n- Luis Zapata<sup>3</sup> ([ORCID: 0000-0002-1386-2019](https://orcid.org/0000-0002-1386-2019))\n- Benjamin Werner<sup>1</sup> ([ORCID: 0000-0002-6857-8699](https://orcid.org/0000-0002-6857-8699))\n- Chris P Barnes<sup>4</sup> ([ORCID: 0000-0002-9459-1395](https://orcid.org/0000-0002-9459-1395))\n- Andrea Sottoriva<sup>3</sup> ([ORCID: 0000-0001-6709-9533](https://orcid.org/0000-0001-6709-9533)) \u2020\n- Trevor A Graham<sup>1</sup> ([ORCID: 0000-0001-9582-1597](https://orcid.org/0000-0001-9582-1597)) \u2020\n\n### Affiliations\n\n1. Centre for Genomics and Computational Biology, Barts Cancer Institute, Barts and the London School of Medicine and Dentistry, Queen Mary University of London London United Kingdom\n2. Computational Oncology, Department of Epidemiology and Biostatistics, Memorial Sloan Kettering Cancer Center New York United States\n3. Evolutionary Genomics and Modelling Lab, Centre for Evolution and Cancer, The Institute of Cancer Research London United Kingdom\n4. Department of Cell and Developmental Biology, University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe distribution of fitness effects (DFE) defines how new mutations spread through an evolving population. The ratio of non-synonymous to synonymous mutations (dN/dS) has become a popular method to detect selection in somatic cells. However the link, in somatic evolution, between dN/dS values and fitness coefficients is missing. Here we present a quantitative model of somatic evolutionary dynamics that determines the selective coefficients of individual driver mutations from dN/dS estimates. We then measure the DFE for somatic mutant clones in ostensibly normal oesophagus and skin. We reveal a broad distribution of fitness effects, with the largest fitness increases found for TP53 and NOTCH1 mutants (proliferative bias 1\u20135%). This study provides the theoretical link between dN/dS values and selective coefficients in somatic evolution, and measures the DFE of mutations in human tissues.\n\n## Introduction\n\nOne of the principal goals of large-scale genome sequencing of somatic tissues is to uncover genetic loci under positive selection, so-called \u2018driver\u2019 genes, that lead to clonal expansions. Measurement of the selective advantage of each driver mutation enables prediction of future evolutionary dynamics (Williams et al., 2019), provided the selective regime remains constant. In evolutionary biology, the distribution of fitness effects (DFE) is a fundamental entity that describes the selective consequences of a (large) number of individual mutations of an ancestral genome (Eyre-Walker and Keightley, 2007). In somatic evolution, particularly in\u00a0cancer genomes, we have an extensive knowledge of the catalogue of recurrent, and likely positively selected, somatic mutations (Martincorena et al., 2017), but the fitness changes associated with each mutation remain largely unquantified.\n\nExtensive experimental effort is ongoing to determine the fitness effects of mutations. Most prominently is lineage tracing of mutations in mouse models (Vermeulen et al., 2013; Rogers et al., 2018), but these methods are not sufficiently high-throughput to produce the DFE for all somatic mutations. Other studies have estimated the selective coefficient of somatic mutations by measuring their\u00a0frequency\u00a0over time in the same individual using longitudinal sampling (K\u00f6rber et al., 2019), however this method is broadly limited to somatic evolution in the blood (Gibson and Steensma, 2018) (where it is feasible to take samples from healthy individuals over time) and in rare cases of patients under active surveillance.\n\nAn alternative approach is to infer selective coefficients directly from genome sequencing data. Methods to identify positively-selected (driver) mutations rely on finding genes that have significantly more mutational \u2018hits\u2019 (typically hits are non-synonymous mutations) than would be expected by chance, after correction for factors known to influence the mutation rate across the genome (Bailey et al., 2018). Conversely, negatively selected genes are expected to show a paucity of mutations (Weghorn and Sunyaev, 2017; Zapata et al., 2018). This idea is formalised in the calculation of the dN/dS ratio \u2013 a method originally developed in molecular species evolution \u2013 that has recently been adapted to study somatic evolution (both cancer and normal tissue) (Martincorena et al., 2017; Weghorn and Sunyaev, 2017; Zapata et al., 2018; Wu et al., 2016; Greenman et al., 2006; Yang et al., 2003; Martincorena et al., 2018; Lee-Six et al., 2018). The intuitive idea behind dN/dS is to measure the rate of non-synonymous (dN) mutations (possibly under selection) and compare that to the rate of synonymous (dS) mutations (presumed neutral). The ratio of these two numbers, each normalised for the local sequence-specific biases in the mutation rate, putatively identifies a signature of selection: dN/dS\u00a0>1 indicating positive selection, dN/dS\u00a0=\u00a01 indicating neutral evolution and dN/dS\u00a0<1 indicating negative selection.\n\nTransforming dN/dS values to selective coefficients in somatic evolution is an unaddressed problem. dN/dS was originally developed in the context of species evolution using the Wright-Fisher process, a classical population genetics model that assumes that evolution occurs over very long timescales, which permits new mutations to fix within lineages. The Wright-Fisher model assumes constant population sizes, non-overlapping generations and that all individuals have equal potency. Under the Wright-Fisher model, the dN/dS of a locus is related to its selective coefficient by the relation (Nielsen and Yang, 2003):\n\n$$\n\\frac{dN}{dS}=\\frac{2Ns}{1\u2212e^{\u22122Ns}}\n$$\n\nWhere $N$ is the effective population size and $s$ the selection coefficient.\n\nHowever, in somatic evolution the assumptions of the Fisher-Wright model are violated. Somatic evolution is rapid and new mutations are infrequently fixed in the population (McGranahan and Swanton, 2017), clonal dynamics are complex\u00a0(Williams et al., 2019),\u00a0and population sizes unlikely to be constant (Sottoriva et al., 2015). Further, the lack of recombination in somatic evolution can result in strong hitchhiking effects\u00a0(Tilk et al., 2019). In addition, since in somatic evolution, the ancestral genome is known, the need to measure dN/dS across a phylogeny is circumvented (a necessary step for dN/dS analysis in species evolution). Violations of some of these assumptions was previously recognised to make the interpretation of dN/dS problematic (Kryazhimskiy and Plotkin, 2008; Mugal et al., 2014), and consequently the relationship between selective coefficients and dN/dS values is uncertain.\n\nThe size distribution of clones (called the site frequency spectrum in population genetics nomenclature) also contains information on the selective coefficients of newly arising mutations. Mathematical descriptions of the dynamics of populations of cells can make predictions on the shape of the clone size distribution under different demographic and evolutionary models (Simons, 2016a; Durrett, 2013). This approach has been used to quantify the dynamics and cell fate properties of stem cells across many tissues in model systems (Klein et al., 2010; Lopez-Garcia et al., 2010; Vermeulen et al., 2013). We and others have also used similar approaches applied to deep sequencing data to infer the evolutionary dynamics of tumours (Williams et al., 2016; Williams et al., 2018; Bozic et al., 2016; Ling et al., 2015) and of clonal haematopoiesis in the blood (Watson et al., 2019).\n\nTo date, dN/dS analysis and the analysis of the clone size distribution have been performed independently, with conflictual results (Simons, 2016b; Martincorena et al., 2016). Here we develop the mathematical population genetics theory necessary to combine these approaches and explore how the inter-individual measure of selection at a locus as provided by dN/dS values, is related to the underlying cell population dynamics that generate intra-individual clone size distributions. This approach naturally accounts for the nuances in somatic evolution that can make the interpretation of dN/dS difficult. We show how this unified approach allows for greater insight into patterns of selection than either method in isolation, and importantly reveal the precise mathematical relationship between dN/dS values and selective coefficients in somatic evolution. We use this approach to infer the selective advantage of mutations in normal tissue.\n\n## Results\n\n### A general approach to integrate dN/dS and clone size distributions\n\nWe present a general mathematical framework for the interpretation of frequency-dependent dN/dS values in somatic evolution. First, we construct null models of the evolutionary dynamics in the absence of selection, and then augment these models to incorporate the consequences of selection. Evolutionary dynamics differ between normal tissues and cancer cells: in normal tissues maintained by stem cells, the long-term population dynamics is controlled by an approximately fixed-size set of equipotent stem cells undergoing a process of neutral competition (Klein and Simons, 2011), whereas in tumour growth the overall population increases over time. We develop a null model to predict the expected genetic diversity in the population in the absence of selection. Positive selection causes selected variants to rise to higher frequency than expected under neutral evolution (Figure 1a), and negative selection has the opposite effect. This insight guides how we model the effects of selection,\u00a0namely\u00a0the diversity of non-synonymous mutations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig1-v1.jpg)\n\n**Figure 1.:** (a) Variants under positive selection are enriched at high frequency, this means dN/dS estimates are dependent on the frequency of mutation, (b).\u00a0The strength of selection influences the degree to which positively selected variants are enriched at high frequencies (c).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig1-figsupp1-v1.jpg)\n\nSpecifically, we defined the function $g(\\theta,\\mu,s,f)$ as the expected number of mutations with selective (dis)advantage $s$ found at a frequency\u00a0$f$, for a given evolutionary dynamics scenario, where mutations accumulate at a rate \u00b5\u00a0per\u00a0division. For the remainder of the paper we use passenger mutations to refer to those mutations that have no functional effect (s=0) and driver mutations those that have s>0. When comparing to data, driver mutations are taken as equivalent to non-synonymous mutations and passengers equivalent to synonymous mutations.\n\nThe functional form of $g(\\theta,\\mu,s,f)$ encapsulates the population dynamics of the system with parameter vector $\\theta$, which may, for example, include the growth rate of a tumour, or loss replacement rate of stem cells in normal tissue. The direct interpretation of $s$ depends on the system under question. Following the logic of the effect of selection above, for $s^{\u2032}>s$ we have that:\n\n$$\ng(\\theta,\\mu,s^{\u2032},f)>g(\\theta,\\mu,s,f)\n$$\n\nSince dN/dS measures the excess or deficiency of mutations due to selection, taking the ratio of $g(\\theta,\\mu,s,f)$ when\u00a0$s\\neq0$ to $s=0$ and normalizing for the mutation rates, which may differ for passenger ($\\mu_{p}$) and driver ($\\mu_{d}$) mutations respectively, informs how dN/dS is expected to change as a function of the frequency $f$ of mutations in the population (Equation 1).\n\n$$\n\\frac{dN}{dS}=\\frac{\\mu_{p}}{\\mu_{d}}\\frac{g(\\theta,\\mu_{d},s,f)}{g(\\theta,\\mu_{p},s=0,\u00a0f)}\n$$\n\nWe discuss the general properties of this model. Firstly, when $s=0$ (neutral evolution), and provided that the mutation rates are correctly normalised, the numerator and denominator are equal resulting in $\\frac{dN}{dS}=1$, as expected. Secondly, dN/dS increases as a function of frequency $f$ (clone size) for positive selection, and decreases as a function of $f$ for negative selection (Figure 1b), for all $g(\\theta,\\mu,s,f)$ that we explored. Thirdly, the shape of the curves predicted by the underlying population model encodes the value of the selection coefficient; for example the steepness of the increase is proportional to the selection coefficient $s$ (Figure 1c). These observations are a natural consequence of positive selection driving selected mutations to higher frequency (Figure 1a).\n\nUnfortunately, directly using Equation (1) to measure selective coefficients from the slope of the dN/dS curve as function of frequency is often impractical. Real sequencing data often suffers from a limited number of mutations detected at any particular frequency and measurement uncertainties in these frequencies. To circumvent these issues, we introduce \u2018interval dN/dS\u2019 (i-dN/dS) that aggregates over a frequency range to reduce the influence of these sources of noise. Interval dN/dS is defined as:\n\n$$\ni\\frac{dN}{dS}=\\frac{\\mu_{p}}{\\mu_{d}}\\frac{\\int_{f_{min}}^{f_{max}}g(\\theta,\\mu_{d},s,f)df}{\\int_{f_{min}}^{f_{max}}g(\\theta,\\mu_{p},s=0,f)df}\n$$\n\nFixing the integration range $[f_{min},f_{max}]$ allows for robust inference of $s$ in potentially sparse and noisy sequencing data using maximum likelihood methods (see Materials\u00a0and\u00a0methods).\n\n### Frequency-dependent dN/dS values in stem cell populations\n\nIn healthy tissue, only mutations that are acquired in the stem cells will persist over long times, and so we restrict our attention to these cells. Quantitative analysis of lineage tracing data has shown that the stem cell dynamics of many tissues conform to a process of population asymmetry (Klein and Simons, 2011). In this paradigm, under homeostasis, the loss of stem cells through differentiation is compensated by the replication of a neighbouring stem cell, thus maintaining an approximately constant number of stem cells. These dynamics are represented by the rate equations:\n\n$$\nSC\u00a0\u21922r\\lambda\u00a0SC+SCD+D\u00a0{p=\u00a0(1+\u0394)/2p=\u00a0(1\u2212\u0394)/2\n$$\n\nwhere SC refers to a single stem cell which divides symmetrically to produce either two stem cells or two differentiated cells (denoted as D above), $\\lambda$ is the rate of cell division per unit time, and $r$ is the probability of a symmetric divisions. The product $r\\lambda$ is referred to as the loss/replacement rate. Differentiated cells will ultimately be lost from the population over long time scales. Under homeostasis, loss\u00a0and\u00a0replacement should be exactly balanced, so \u0394\u00a0=\u00a00. With \u0394\u00a0\u2260\u00a00, the fate of a stem cell is \u2018biased\u2019, introducing positive or negative selection into the model. Previous mathematical analysis shows that this model is a good description of the clonal dynamics in the oesophagus and skin (Klein et al., 2010; Doup\u00e9 et al., 2012; Alcolea et al., 2014). Using previous analytical results describing the temporal evolution of the clone size distribution (see methods for detailed discussion) we derive the frequency distribution $g\\theta,\\mu,s,A$ for oesophagus and skin as (Simons, 2016a; Klein et al., 2010; Nicholson and Antal, 2016):\n\n$$\ng(\\theta,\\mu,s,A)=\\frac{\\mun_{0}}{r\\lambda\u03c1A}e^{-\\frac{\u03c1A}{N(t)}}\n$$\n\nWhere A is the area of the clone, $\u03c1$ is density of stem cells per mm2,\u00a0$n_{0}$ is the starting population size and \u03bc the mutation rate, which may be different for drivers $(s>0)$ and passenger mutations $(s=0)$, ie drivers and passengers may accumulate at different rates. $N(t)$ is a scaling factor that depends on \u0394, the bias toward self-renewal, which we interpret as our selection coefficient in this system. Specifically:\n\n$$\nN_{\u0394=0}t=1+r\\lambdat\n$$\n\n\n\n$$\nN_{\u0394}t=\\frac{1+\u0394e^{2r\\lambda\u0394t}-(1-\u0394)}{2\u0394}\n$$\n\n$N(t)$ can be interpreted as the average size of a labelled clone after time $t$, which even under homeostasis grows over time and compensates for some clones being lost due to drift. From these expressions, we can then write down an expression for i-dN/dS as a function of clone frequency (see Materials\u00a0and\u00a0methods) that allows for maximum likelihood estimation of parameter values (\u0394). We confirmed the accuracy of our derivation using simulations (Figure 2a), and performed power calculations to determine the minimum number of mutations required to correctly infer the underlying population dynamics: we determined that 8 mutations per gene was sufficient to accurately recover \u0394 (Figure 2b) with accuracy increasing for higher mutation burdens (Figure 2c). We also performed simulations where \u0394 was itself a random variable, simulating the effect of different sites within the gene having different fitness effects. We assumed \u0394 was exponentially distributed and generated 500 simulated cohorts. Fitting i-dN/dS demonstrated that on average we infer the mean value of the exponential distribution, Figure 2\u2014figure supplement 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig2-v1.jpg)\n\n**Figure 2.:** (a) Interval dN/dS as a function of clone area for 2 simulated cohorts where driver mutations induce different biases, theoretical model captures the dynamics well and enables us to recover the bias \u2206, accurately. As the number of mutations increases ability to recover the correct \u2206 and the model fit (measured using R2) improves (b) and (c). (d) Data and model fit for all neutral genes, shows i-dN/dS = 1 across the frequency range and inferred bias of 0. Data and model fit for (e) NOTCH1 missense mutations in patient PD31182, (f) missense TP53 mutations in PD30273 and NOTCH1 nonsense mutations in PD31182\u00a0(g). Data are black points and model fits are solid lines with shaded areas denoting 95% CI.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** For each panel the mean of the exponential distribution used for \u0394 is stated above and illustrated by the red dashed lines.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Purple points are data and red lines model fits, shaded areas denote 95% confidence intervals. Fits were performed separately for missense, (a) and nonsense mutations, (b). Each plot is annotated with the inferred bias \u2206 and the R2 value.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Inferred loss replacement rates, r\u03bb for each patient based on missense, (c) and nonsense mutations, (d).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Points are data and lines are model fits. Analysis performed separately for nonsense, a and missense, b.\n\n### Selection advantages in histopathologically-normal human oesophagus\n\nWe inferred the selective advantage of driver mutations in human oesophagus using published deep sequencing data from Martincorena and colleagues\u00a0(Martincorena et al., 2018)\u00a0that documents the clonal expansion of a panel of putative driver mutations in histopathologically-normal oesophageal biopsies.\n\nWe used the dndscv bioinformatics tool (Martincorena et al., 2017) to calculate frequency-dependent dN/dS values from these data (clone size measured in fraction of mutant reads multiplied by 2 mm2 \u2013 the area of the biopsy \u2013 and assuming 5000 stem cells per mm2 (Eyre-Walker and Keightley, 2007) tissue). dN/dS values varied considerably as a function of mutation area (Figure 1\u2014figure supplement 1).\n\nWe considered the average frequency-dependent dN/dS values simultaneously across all genes in the panel, on a patient-by-patient basis. Our theoretical model of i-dN/dS calculated from these data fitted strikingly well\u00a0(Figure 2\u2014figure supplement 2).\u00a0Estimates of the loss/replacement rate $r\\lambda$ of the stem cell population were in the range 1.2-5.0 per year (Figure 2\u2014figure supplements 2 and 3). Inference of the selective advantage $s$ (measured in terms of the bias towards self renewal \u0394) revealed an average bias of 0.004 (0.002 \u2013 0.005 95% CI) per missense mutation (Figure 2\u2014figure supplement 3). Nonsense mutations caused a five-fold greater bias towards self-renewal of 0.021 (0.008 \u2013 0.032 95% CI) (Figure 2\u2014figure supplement 3). After removal of all genes that are strongly selected, global dN/dS values on the remaining 48 genes show dN/dS of approximately 1 across the frequency range (Figure 2d), and i-dN/dS analysis revealed that\u00a0these\u00a0somatic mutations\u00a0do not associate with a proliferative bias (\u0394=0).\n\nWe then fitted the data on a gene-by-gene and patient-by-patient basis for cases where sufficient mutations were available to perform the fit (Figure 2e\u2013g; Figure 2\u2014figure supplement 4). A broad range of selective advantages were inferred (Figure 3 and Figure 3\u2014figure supplement 1). Mutations in TP53 showed large biases across all patients for both missense, \u0394\u00a0=\u00a00.057 (0.05\u20130.068 95% CI) and nonsense mutations, \u0394\u00a0=\u00a00.094 (0.091\u20130.097 95% CI) (Figure 3a\u2013b). This was also true for mutations in NOTCH1 with \u0394\u00a0=\u00a00.029 (0.019\u20130.036 95% CI) for missense and \u0394\u00a0=\u00a00.072 (0.034\u20130.089 95% CI) for nonsense mutations. NOTCH2, PIK3CA, CREBBP and FAT1 also showed a bias toward self-proliferation in multiple patients (Figure 3a\u2013b), though most had a small effect on fitness (range 0.003\u20130.029 for missense mutations and 0.030\u20130.041 for nonsense mutations). Together these data suggest a distribution of fitness effects (DFE) characterized by many small effect mutations with few large effect mutations (Figure 3c\u2013d), as is seen in organismal evolution (Eyre-Walker and Keightley, 2007). We recognize that there may be intra-gene variation of selection coefficients, that is, some sites within genes may have stronger fitness effects than others. This is supported by clustering of mutations within particular domains and hotspots of mutations as documented in the original study (Martincorena et al., 2018). In future, larger cohorts and methods to estimate site level dN/dS values would allow this approach to be extended to the site level.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig3-v1.jpg)\n\n**Figure 3.:** Inferred biases \u2206 for genes where at least 2 patients had good model fits (R2 > 0.6 & >7 mutations) for missense mutations (a), and nonsense mutations (b). Inferred distribution of fitness effects for all genes across all patients for missense mutations (c), and nonsense mutations (d).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Left hand plot shows inferred loss replacement rates \u03bb and right hand plot inferred biases \u2206.\n\nAs our model assumes that clones emerge and expand independently we checked that the data is not overly influenced by hitchhiking mutations,which would violate these assumptions. For this, we leveraged the spatial sampling of tissue pieces. Approximately 90 patches were sampled from each patient. We reasoned that patches with selected clones might be expected to have more hitchhiking mutations, and for those mutations to be at a higher frequency when compared to patches without selected clones. To test this hypothesis, we counted the number of non-synonymous NOTCH1 and TP53 mutations and the number of synonymous mutations in each patch. If the synonymous mutations we observe in the data are largely due to hitchhiking effects we would expect the number and size of synonymous variants to correlate with the number of driver mutations per patch. While there =was a statistically significant correlation for both NOTCH1 (linear regression, p<0.001) and TP53 mutations (p=0.031), the effect was small (Figure 5\u2014figure supplement 1): for each additional driver there was on average 0.05 additional synonymous variants (0.047 for NOTCH1 and 0.056 for TP53). We note too that the correlation was very noisy (R2 < 0.02) and we observed no statistically significant relationship between VAF of synonymous mutations and the number of TP53\u00a0or\u00a0NOTCH1\u00a0mutations\u00a0(linear regression, p>0.1). This analysis suggests that the majority of synonymous mutations are not hitchhikers, and consequently\u00a0that assuming the independence of clones isreasonable.\n\n### Driver mutation selective advantage in normal skin\n\nMartincorena and colleagues had also published data on the expansion of driver mutations in ostensibly normal human skin (Martincorena et al., 2015).\u00a0Analyses of these data with interval dN/dS revealed a per-patient average selective advantage per mutation (again measured in terms of the bias towards self renewal) of \u0394 =\u00a00.001 for missense mutations and four-fold higher (\u0394 =\u00a0\ufeff0.004) for nonsense mutations (Figure 4a-c). Performing the analysis on a gene-by-gene basis was limited by the lower number of detected mutations, and the limited frequency range (clone size range) compared to the oesophagus dataset. Good fits to the data were obtainable for NOTCH1 missense mutations in patient PD18003 with fitness estimated to be \u0394 =\u00a00.0149 (0.0148-0.0150 95% CI), and TP53 missense mutations also in patient PD18003, \u0394\u00a0=\u00a00.0054 (0.0051-0.0058 95% CI) Figure 4. These fitness coefficients were similar to the oesophagus data. For missense mutations we were also able to produce the distribution of fitness effects across the skin cohort, which showed similar characteristics to the oesophagus data of a small number of high effect mutations and a larger number of smaller effect mutations, Figure 4f.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig4-v1.jpg)\n\n**Figure 4.:** Model fits per patient and per gene per patient when there were sufficient mutations in the skin dataset.\u00a0Points are data and lines are model fits, (a-e). (f) Shows the distributions of fitness effects for missense mutations across the cohort. There were insufficient nonsense mutations in the majority of genes to draw the equivalent plot for nonsense mutations.\n\n### Site frequency spectra\n\nWe next sought to challenge our model by directly fitting the site frequency spectra across ages, taking a similar approach to studies of the blood (Watson et al., 2019), colon (Lopez-Garcia et al., 2010), skin (Simons, 2016a) and other tissues (Klein and Simons, 2011). Our model of stem cell dynamics makes predictions on the properties of these distributions as a function of the age of donors. In particular, Equations (5) and (6) predict that the characteristic frequency N(t) increases exponentially for non-neutral mutations and linearly for neutral mutations as a function of time. Plotting the distribution of clone size areas showed a widening of the distribution as a function of age, which was particularly striking for mutations in the NOTCH1 and TP53 genes, consistent with these genes conferring large selective advantages (Figure 5a).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig5-v1.jpg)\n\n**Figure 5.:** (a) Site frequency spectra become wider for older donors, with increases in the median clone area which is more pronounced for mutations in TP53 and NOTCH1. (b) Using WAIC to perform model selection, we found a model with an exponential term and a power law to be the best fitting model (lowest WAIC). (c) Posterior parameter estimates for $n_{0}\\mu$. (d). The characteristic frequency $N(t)/\u03c1$, Interval represent 66% and 95% credible intervals respectively. (e) Site frequency spectra from data (black dots) and posterior predictive fits for 50, 80% and 95% credible intervals (blue ribbons) for non-synonymous mutations in each don or.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The mean VAF of synonymous mutations as a function of the number of NOTCH1 (c) and TP53 (d) mutations per tissue piece.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Inferred values for n0\u03bc, (a) and N(t)/\u03c1, (b). Red points are true values, black points are median posterior values and whiskers are 66% and 95% credible intervals. Example fits across ages for \u0394\u00a0= 0.1. Individual fits across different age cohorts (c), black dots are data points (from simulation) and blue shaded areas are 50%, 80% and 95% credible intervals.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Posterior values for N(t)/\u03c1 showing large uncertainty in these values\u00a0(b).\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (a)\u00a0Summary of all posterior regression coefficients for all genes showing TP53 and NOTCH1 cause the largest increase in frequency as a function of age.\u00a0(b) Regression coefficients with inferred selection coefficients from interval-dN/dS are positively correlated.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/48714/elife-48714-fig5-figsupp5-v1.jpg)\n\n**Figure 5\u2014figure supplement 5.:** Fit for TP53 missense mutations in donor PD30273 using SSB-dN/dS results (a). Comparison of inferred \u0394 values for NOTCH1 and TP53 mutations (b). Comparison of global dN/dS values for all mutations, missense and nonsense mutations (c).\n\nTo quantitively test the predictions of the model and to infer parameters of interest we implemented a Bayesian non-linear fitting method (see methods) to fit the following model:\n\n$$\ny=\\frac{\\alpha}{A}e^{-\\frac{A}{exp\u2061(\\beta)}}\n$$\n\nWith the parameters $\\alpha=\\mun_{0}/r\\lambda\u03c1$, and $\\beta=log\u2061(Nt/\u03c1)$ to be estimated. We first validated that the approach could correctly infer known parameters from synthetic data generated from our simulation framework, Figure 5\u2014figure supplement 2.\u00a0Next, we fitted the model to the oesophagus dataset, separately for non-synonymous and synonymous mutations and across ages, Figure 5e. Posterior estimates of the compound parameter\u00a0$\\mun_{0}/r\\lambda\u03c1$ showed consistent estimates for both non-synonymous and synonymous mutations (taking into account the approximate 3:1 ratio of mutable sites), Figure 5c. Unfortunately decoupling $\\mun_{0}/r\\lambda\u03c1$\u00a0directly from the data is not possible and requires independent estimates of either the mutation rate or number of stem cells. Posterior estimates of the characteristic frequency N(t) showed an increase as a function of age for non-synonymous mutations and a more modest increase for synonymous as would be predicted from theory, Figure 5d.\n\nAs another challenge to the proposed model, we also fitted the following two models which are simpler subsets of the full model we derive theoretically, thus testing two alternate decay functions.\n\n$$\ny=\\frac{\\alpha}{A}\n$$\n\n\n\n$$\ny=\\alphae^{-\\frac{A}{\\beta}}\n$$\n\nHere, $\\alpha$ and $\\beta$ are parameters to be estimated. Comparison of the fits using the widely applicable information criteria, WAIC (a generalized version of information criteria such as AIC and BIC) found that our theoretical model with an exponential term and a power law term (Equation 7) provided the best predictive accuracy (lowest WAIC), Figure 5b. Bayes factors for the proposed theoretical model also strongly supported this as the best model (BF > 103 for both models).\n\nWe also attempted to fit the model on a gene by gene basis. However due to the limited data points at the gene level we found that our posterior estimates for the parameters were very wide, precluding further insight from the site frequency spectrum at the gene level, Figure 5\u2014figure supplement 3. This reveals one of the strengths of our i-dN/dS approach, which by leveraging information across genes to infer the background mutation model and integrating over clone sizes we can perform the inference with a limited number of data points. As an alternative to fitting the full clone size distribution, we performed a Bayesian multi-level regression to assess which mutations showed the largest increase in clone size as a function of age. This analysis revealed that TP53 and NOTCH1 had the largest regression coefficients, consistent with these genes having the largest selection coefficients,\u00a0Figure 5\u2014figure supplement 4,\u00a0providing qualitative support for our approach. Our inferred selection coefficients from i-dN/dS were also correlated with the regression coefficients from the statistical model (linear regression, p=0.004, R2\u00a0=\u00a00.47). Taken together, analysis of the site frequency spectrum on a patient by patient basis and a gene level statistical model are consistent with our inferences from i-dN/dS. We find that the proposed model provides the best fit to data when compared to other similar models, that the characteristic frequency of non-synonymous mutations increases rapidly with age and that NOTCH1 and TP53 exhibit the largest increase in clone size as a function of age.\n\n## Discussion\n\nHere we have shown that the combination of dN/dS values with mutation frequency-based information provides additional quantitative insight into dynamics of somatic evolution than either method alone. Specifically, the combined approach enables direct inference of the selection coefficients of mutations in somatic tissues. We note that our study also shows that the magnitude of the selection coefficient is not necessarily represented by simply calculating a \u2018point estimate\u2019 of dN/dS that neglects mutation subclonal frequency information.\n\nUsing this methodology, we have begun the construction of the distribution of fitness effects (DFE) in somatic evolution, observing a distribution where most mutations that we analysed were near-neutral, with a tail of highly selected variants. In both skin and oesophagus, the most highly selected mutant genes were NOTCH1 and TP53 (increased proliferative bias of\u00a0>1% and>5% respectively). We observed that values of selective coefficients of individual genes varies between patients, likely because of inter-patient difference in the precise location of point mutations, but potentially also because of inter-patient variation in selective pressure from the microenvironment. Nevertheless, the comparative rank of per-gene fitness coefficients was broadly consistent across patients (e.g. for missense mutations across patients, TP53 mutations always had the highest fitness, followed by NOTCH1 mutations). This consistency in selective coefficients is in agreement with the observation of highly recurrent gene mutations in cancer (Lawrence et al., 2013) and evidence of repeatability in cancer evolution (Caravagna et al., 2018).\n\nNon-synonymous NOTCH1 mutations were observed approximately 3-fold more frequently that non-synonymous TP53 mutations in oesophagus, and approximately 5-fold more frequently in skin, suggesting that the mutation rate of NOTCH1 is greater than for TP53. Coupling these data with our quantitative measurements of the fitness coefficients leads to the prediction that the oesophagus will become transiently repopulated by NOTCH1-mutant cells during ageing, before subsequent replacement by fitter mutant-TP53 clones.\n\nOn a cautionary note, our theoretical work shows that the clonality of mutations strongly determine the observed value of dN/dS, and so a misleading picture of the selective forces will be produced if dN/dS frequency-dependent effects are not corrected for. The accuracy of any estimate of evolutionary dynamics from dN/dS values is of course dependent on the underlying accuracy of the dN/dS measure itself, which is compromised by uncharacterised variability in the mutation rate across the genome (Van den Eynden and Larsson, 2017) and in the uncertain pathogenicity of individual single nucleotide variants (extensions to estimate site level selection coefficients may circumvent some of these issues [Cannataro et al., 2018; Temko et al., 2018]). We also recognize that our model assumes a well-mixed population, while the data used in our study is from spatially structured epithelia. Spatial structure influences the distribution of clone sizes. Effects include: the influence of the boundary that enable rapid growth of mutants on the expanding front and conversely \u2018encapsulation\u2019 within a growing mass that slows clone growth (Fusco et al., 2016; Chkhaidze et al., 2019), and clonal interference that slows the growth of two similarly fit competing clones (Martens et al., 2011; Hall et al., 2019).\n\nCombining population genetics methods with comparative genomics is a powerful way to infer selection pressures in human somatic evolution, giving new insight into the fundamental parameters that determine evolutionary dynamics in health and disease.\n\n## Materials and methods\n\n### Oesophagus and skin data\n\nFor the oesophagus and skin data we used mutation calls provided by the original studies. In the oesophagus data when a mutation was present in multiple adjacent biopsies we used the sum of the mutation frequency times the area of the biopsies (2 mm2) as our readout of clone size and performed the dN/dS analysis on a patient by patient basis.\n\n### dN/dS calculations\n\nFor calculating dN/dS ratios the dndscv R package was used, which calculates both global dN/dS ratios across the whole exome or a panel of genes as well as per gene dN/dS ratios using a covariate based model to infer dN/dS values with a limited number of mutations (Martincorena et al., 2017). We used the default settings of dndscv, using the default hg19 transcript reference provided by the package. dndscv can also take into account small insertions and deletions, which we included in our analysis. Therefore, where we refer to mutation this includes indels in addition to SNVs.\n\nTo calculate the interval dN/dS measure we took the clone size measurements and determined a low cutoff $f_{min}$ based on the minimum\u00a0clone\u00a0size. We then created a vector of clone sizes that covered the total range and calculated dN/dS between $f_{min}$ and all values of $f_{max}$. This allowed us to plot dN/dS as a function of $f_{max}$ and fit our interval dN/dS models.\u00a0In our data, clone size is measured in units of area (mm2).\n\nAccurately estimating dN/dS from sequencing data of somatic tissues can be challenging due to the strong sequence context dependence of mutations and variability of mutation rates across the genome. To confirm our inferences were not dependent on the choice of dN/dS methodology we calculated dN/dS values using SSB-dNdS and then fitted our model\u00a0(Zapata et al., 2018).\u00a0As SSB-dNdS only uses SNVs, we reran dndscv after removing indels. Inferences on a patient by patient basis were highly consistent between the methods, see Figure 5\u2014figure supplement 4. There was more variability at the gene level, perhaps due to differences in the approaches used to control for variability in mutation rates across the genome.\n\n### Model fitting\n\nWe used a maximum likelihood approach to fit our models to the data. Defining the observed interval dN/dS as $y$ and the model dN/dS as $y^(\\theta)=\\frac{\\mu_{p}}{\\mu_{d}}\\frac{\\int_{f_{min}}^{f_{max}}g(\\theta,\\mu_{d},s,f)df}{\\int_{f_{min}}^{f_{max}}g(\\theta,\\mu_{p},s=0,f)df}$. First of all we define the residuals between the data and the model as $R=y\u2212y^(\\theta)$. Assuming that the residuals are normally distributed with mean 0 we can write down the negative log likelihood (NLL) as\n\n$$\nNLL(\\theta)=\u2212\\sumy\u2212y^(\\theta)logN(y\u2212y^(\\theta),\\mu=0,\u00a0\\sigma)\n$$\n\nwhere N denotes the normal probability density function. We can then find the parameters $\\theta$ that minimize the NLL and calculate confidence intervals on these estimates using the Fisher information matrix.\u00a0When fitting to data we ensured that there were a minimum of 8 mutations and only included model fits with R2 > 0.6 for downstream analysis. We used a maximum likelihood approach over a Bayesian approach to fit the model because the integral of the clone size distribution does not have a closed form solution, making it unfeasible to use readily available MCMC samplers which we adopt later.\n\n### Interval dN/dS model\n\nFor the stem cell model, using Equations 2, 3, 4, 5, 6 in the main text, interval dN/dS is given by:\n\n$$\ni\\frac{dN}{dS}=\\frac{1}{1+\u0394}\\frac{[E_{i}(\u2212\\frac{\u03c1A_{max}}{N_{\u0394}(t)})\u2212E_{i}(\u2212\\frac{\u03c1A_{min}}{N_{\u0394}(t)})+\\frac{1}{2}(\\frac{e^{\u2212\\frac{\u03c1A_{max}}{N_{\u0394}(t)}}}{\u03c1A_{max}}+\\frac{e^{\u2212\\frac{\u03c1A_{min}}{N_{\u0394}(t)}}}{\u03c1A_{min}})]}{[E_{i}(\u2212\\frac{\u03c1A_{max}}{N(t)})\u2212E_{i}(\u2212\\frac{\u03c1A_{max}}{N(t)})+\\frac{1}{2}(\\frac{e^{\u2212\\frac{\u03c1A_{max}}{N(t)}}}{\u03c1A_{max}}+\\frac{e^{\u2212\\frac{\u03c1A_{min}}{N(t)}}}{\u03c1A_{min}})]}\n$$\n\nWhere $E_{i}$ is the exponential integral $E_{i}x=-\\int_{x}^{\u221e}\\frac{e^{-n}}{n}dn$. $\u03c1$ is density of stem cells per mm2, which we set to 5,000 cells /mm2 for fitting\u00a0(Hall et al., 2019).\n\n### Simulations\n\nTo confirm the accuracy of our analytical model and investigate the influence of uncertainty in mutation frequencies due to sequencing noise and to challenge some of the underlying assumptions of our theoretical approach, we developed a simulation based model.\n\nWe seed a population of $N_{s}$ stem cells that then undergo loss/replacement as described by the following rate equations\n\n$$\nSC\u00a0\u21922r\\lambda\u00a0SC+SCD+D\u00a0{p=\u00a0(1+\u0394)/2p=\u00a0(1\u2212\u0394)/2\n$$\n\nAs only the stem cells are long lived the differentiated cells are not explicitly modelled such that when a stem cell 'differentiates' it is effectively lost from the population. During division, daughter cells acquire mutations with a fitness effect at rate $\\mu_{d}$ and passenger mutations at rate $\\mu_{p}$. Fitness increases the bias toward self-proliferation $\u0394$ of a stem cell lineage. Additional driver mutations do not further increase the fitness of stem cells.\n\nTo calculate dN/dS across a cohort of tissue biopsies we count the number of driver mutations $N_{d}$ and the number of passenger mutations, $N_{p}$ and then normalize by their respective mutation rates. In our model drivers = non-synonymous and thus every driver has an effect on fitness. Then the ratio of these two numbers gives us the excess or deficit of mutations due to selection \u2013 ie the dN/dS ratio.\n\n$$\n\\frac{dN}{dS}=\\frac{N_{d}/\\mu_{d}}{N_{p}/\\mu_{p}}\n$$\n\nFor the interval dN/dS we simply calculate the $N_{x}$ between $f_{min}$ and $f_{max}$.\n\nTo introduce uncertainty into mutation frequencies we perform a process of empirically motivated sampling to the true underlying frequency $f$. Firstly, we specify the average depth of sequencing D, then the depth of sequencing for mutation i is given by\n\n$$\nD_{i}=Poisson(D)\n$$\n\nThe sampled number of read counts is then\n\n$$\nn_{s}=Binomial(n=D_{i},p=f)\n$$\n\nAnd the sampled variant frequency is then $f_{s}=n_{s}/D_{i}$.\n\nThe simulation framework was written in Julia (Bezanson et al., 2017) and is available at https://github.com/marcjwilliams1/StemCellModels.jl.\n\n### Fitting site frequency spectra\n\nTo fit the site frequency spectra we first removed mutations with clone size area\u00a0<\u00a00.008. This cutoff was determined by inspection of the point of highest density of the clone size area histograms, reasoning that below this frequency the data was limited due to the resolution of the sequencing assay. We then binned the data using a bin size of 0.005 and counted the number of mutations in each bin. We did this for each donor and separately for non-synonymous and synonymous mutations. We then used the brms (Bayesian Regression Modeling with Stan) R package (B\u00fcrkner, 2017) to fit the following non-linear model jointly across all patients:\n\n$$\nC=\\frac{\\alpha}{A}e^{\u2212\\frac{A}{exp(\\beta)}}\n$$\n\nWith the parameters $\\alpha=\\frac{\\mun_{0}}{r\\lambda\u03c1}$, and $\\alpha=\\mun_{0}$ to be estimated and C being the number of mutations and A the area. We used the following priors for the parameters:\n\n$$\n\\beta=log\u2061(Nt)\n$$\n\n\n\n$$\nA~Normal(5,2)\n$$\n\nWe ran 4 chains with 5000 iterations with the first 2500 used as warmup. To assess convergence we ensured that the scale reduction factor $R^$ (a measure of mixing of chains) was\u00a0<\u00a01.01 as recommended.\n\nWe also fitted the following two models:\n\n$$\nC=\\frac{\\alpha}{A}\n$$\n\n\n\n$$\nC=\\frac{\\alpha}{A}\n$$\n\nWe used the same prior distributions as above. We then compared the predictive accuracy of the different models using the widely applicable information criteria (WAIC) (Vehtari et al., 2017). This found that the functional form derived from theory provided the best fit, Figure 5b. Bayes factors to compare models were calculated using the bayestestR package (Makowski et al., 2019). The log10(BF) of the proposed theoretical model vs the power law was 52 and 44 when compared against the exponential model.\n\n### Bayesian multi-level regression\n\nWe performed a Bayesian multi-level regression of clone size\u00a0~\u00a0age with the gene as a random effect. This allowed us to determine which genes cause the largest increase in frequency as a function of age. This was done using brms in R with default priors, 4 chains and 5000 iterations. Using R\u2019s statistical modelling syntax the model is given by clone size\u00a0~age + (1 + age|gene). We fit the model assuming a normal distribution as well as a log-normal distribution, finding the latter to provide the best predictive accuracy (lowest WAIC) and superior posterior predictive check.\n\n### Site frequency spectra for a model of stem cell proliferation\n\nOur mathematical model of stem cell proliferation drew on results from a range of studies analysing the clone size distribution from lineage tracing experiments. Particularly useful are the results from Klein et al. (2010), which we took as a starting point for our model. We follow the notation used in this study to a large extent. Other studies that are also illuminating and relevant are the theoretical work of Nicholson and Antal (2016), while similar theoretical models have also been applied to the oesophagus (Doup\u00e9 et al., 2012), airway epithelia (Teixeira et al., 2013) and the blood (Watson et al., 2019) amongst others. In this section we outline the key results relevant to our approach.\n\nWe begin with the set of rate equations presented in the main text:\n\n$$\nSC\u00a0\u21922r\\lambda\u00a0SC+SCD+D\u00a0{p=\u00a0(1+\u0394)/2p=\u00a0(1\u2212\u0394)/2\n$$\n\nFrom this we are interested in the clone size distribution, that is, the probability of observing a clone of size n after time t.\u00a0In other fields such as population genetics, this distribution is equivalent to the site frequency spectrum. Given the above rate equations, we can express the dynamics as a birth-death process with birth rate $b=r\\lambda(1+\u0394)$ and death rate $d=r\\lambda(1\u2212\u0394)$ which allows us to write down the master equation for the probability of observing a clone of size n at time t, $b=r\\lambda(1-\u0394)$.\n\n$$\np_{n}\n$$\n\n\n\n$$\n\\frac{dp_{n}}{dt}=bn-1p_{n-1}-b+dnp_{n}+d(n+1)p_{n+1}\n$$\n\nThis has the following solution (see Bailey, 1990 p92)\n\n$$\n\\frac{dp_{0}}{dt}=dp_{1}\n$$\n\n\n\n$$\np_{n}t=1-\\alpha(t)1-\\betat\\beta(t)^{n-1}\n$$\n\nWith $p_{0}t=\\alpha(t)$ and $\\alpha(t)$ defined as follows:\n\n$$\n\\beta(t)\n$$\n\n\n\n$$\nat=\\frac{de^{b-dt}-1}{be^{b-dt}-d}\n$$\n\nFrom these results we can obtain the average size of surviving clones, $\\betat=\\frac{be^{b-dt}-1}{be^{b-dt}-d}$:\n\n$$\nN(t)\n$$\n\nWhich, as will become apparent, gives a characteristic scale for the distribution.\n\nThus far we have only considered a single mutant at time 0, while we are interested in the case when mutants continually enter the population at a rate $Nt=\\sumn=0\u221en\\times\\frac{p_{n}}{1-p_{0}}=\\frac{1}{1-\\beta(t)}=\\frac{1+\u0394e^{2r\\lambda\u0394t}-(1-\u0394)}{2\u0394}$ where \u00b5 is the mutation rate per cell division and $n_{0}$ is the number of stem cells. To derive the clone size distribution in this case, we take the integral over time multiplied by the mutation rate.\n\n$$\nn_{0}\n$$\n\nWe can approximate $g_{n}=\\frac{\\mun_{0}}{r\\lambda}\\int_{0}^{t}p_{n}\\taud\\tau=\\frac{\\mun_{0}}{r\\lambdan}\\beta(t)^{n}$ which gives\n\n$$\n\\beta(t)^{n}=1-1/N(t)^{n}\u2248e^{-\\frac{n}{N(t)}}\n$$\n\nThe data we make use of doesn\u2019t provide integer clone sizes but rather area of clones, so we can make the transformation $g_{n}\u2248\\frac{\\mun_{0}}{r\\lambdan}e^{-\\frac{n}{N(t)}}$:\n\n$$\nn=\u03c1A\n$$\n\nThis is the result presented in the main text.\n\n### Code and data availability\n\nCode to reproduce all the figures in the manuscript (using a snakemake [K\u00f6ster and Rahmann, 2012] workflow) is available at github.com/marcjwilliams1/dnds-clonesize (Williams, 2020; copy archived at https://elifesciences-publications/dnds-clonesize).\u00a0We also created a singularity image with all software dependencies which is available at shub://marcjwilliams1/dnds-clonesize-R-container. Julia (Bezanson et al., 2017) was used for the simulations and R (R Development Core Team, 2019) was used to analyse the data and generate the figures. Some of the analysis rely in bespoke packages written for this study which are freely available under an open source licence.\n",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "1e60fa47-66bf-4c41-8fc9-c1200b309240",
+      "submission_id": "e3132c7a-dd51-4e15-8634-cf8ffa247d58",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alfonso Valencia, Barcelona Supercomputing Center - BSC Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.48714.sa1](https://doi.org/10.7554/eLife.48714.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe paper represents first a new contribution to the methodology to infer selection coefficients associated of mutations, and, second, the application of the methodology to the comparative study of mutations in normal versus cancer sub-clones. The general findings contribute to our understanding of somatic mutations and tumor evolution, as well as to the ongoing discussion on the role of potential cancer-related mutations in normal tissues.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Measuring the distribution of fitness effects in somatic evolution by combining clonal dynamics with dN/dS ratios\" for consideration by eLife. Your article has been reviewed by Patricia Wittkopp as the Senior Editor, a Reviewing Editor, and three reviewers. The following individuals involved in review of your submission have agreed to reveal their identity: Ferran Muinos (Reviewer #1); Jamie Blundell (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper deals with the important issue of understanding how selection of quantifying the selective advantage provided by somatic mutations as a key element to understand tumor evolution.\n\nThe proposed method infers selection coefficients associated with mutations that expand in normal tissues as well as subclonal mutations in oesophageal and skin data set (Martincorena et al.,) linking dN/dS and clone size and provides a model of somatic evolution in normal tissues, applying it to the and infer selective advantages for specific genetic loci in normal and cancer tissues, effectively linking SFS and dN/dS ratios..\n\nThe paper is timely, since a number of intriguing reports have detected somatic evolution (potential positive selection) in normal tissues that should not be pathogenic. It also aligns well with previous publications; bioRxiv 569566; doi: https://doi.org/10.1101/569566\n\nEssential revisions:\n\nThe referees and editors truly appreciate the approach and consider it an important contribution to the field. Still, we find that it is important to validate the main hypothesis on the estimation of the selection coefficient on mutations in normal tissues.\n\nWe will also ask you to consider if the section on cancer is essential for the paper, as it is it is problematic in terms reproducibility and seems rather a distraction of the main argument.\n\nDuring the revision, you will have the opportunity to address following issues related with clarifications and additional information. We find particularly important to address the ones related with the importance of different mutations in the same gene and the influence of history, e.g. influence of germline mutations in clonal evolution and the potentially transient nature of fitness gains.\n\nLimited applicability questioning the application to cancer cases.\n\n- The method for inferring selective advantages in tumors has one important limitation which is made very clear in the text: the method is not ready for the commonly available data sets. Remarkably, it is apparent that even in the case of high-quality histopathologically-normal tissue data the method has still limited resolution. I wonder whether this low resolution may compromise some of the conclusions drawn after the analysis.\n\n- It is very reassuring from the modeling perspective that the model and subsequent fitting approach yields consistent results with the simulations when applied to the normal tissue data. However, the validation in tumors is lacking. Simulation analyses only confirm that the implementation of the fitting method correctly reflects the model, regardless of the validity of the model.\n\n- The method heavily resorts to the estimation of mutation frequencies. However, this estimation may be difficult, particularly from tumor data with complex chromosomal architectures.\n\n- In summary, there is not enough data for cancer. It is unclear if the section of application to cancer adds much, given the clear statement that there is not enough subclonal recurrence to say very much.\n\nDifferent mutations in the same gene\n\n- Although it may not affect the validity of the method, the conceptualization of driver mutation presented in the manuscript may obfuscate the interpretation of the results. It is very likely that any mutation found in a gene subject to high selective pressure confers a selective advantage itself, but for genes under mild positive selection this may not be true, whence not all mutations may be bound to drive. Moreover, different driver mutations may confer distinct selective advantages.\n\n- A challenge in using the skin / esophagus data is that the lack of large numbers of people sampled means data is rather sparse. Our experience looking at the blood makes clear that there is often a wide spectrum of fitness effects even for non-syn mutations within the same gene. This effect is not discussed here. Can the authors present an analysis of say the bottom few genes in Figure 3A to test whether there is evidence that the \u0394 are the same or whether some of the wide variation could be attributable to a variation of \u0394 even within the gene? I appreciate the data might not be there for a thorough analysis of this though.\n\n- To easily track all the assumptions implied by the models it would be very beneficial for the manuscript to include sketches of the proofs that formally derive the two main functional forms adopted for the mutation density g. This would make the line of reasoning much more transparent and spare the reader the time for literature scrapping.\n\n- Although from the text it seems that the variants implied under the term \"mutation\" are just coding SNVs, the analysis may well be valid for other types of mutations such as small insertions and deletions or splicing affecting SNVs, as the dN/dS method of choice is equipped to handle them. Please, clarify. Moreover, dNdScv is dependent on the choice of a transcript for the genes analyzed: this choice should be pointed out somewhere in the manuscript.\n\n- The method heavily resorts to the availability of a sufficiently robust method to estimate dN/dS at genetic loci from mutational data. Thus, all the caveats of the method of choice may propagate downstream onto the method described, it is good that these limitations are discussed in the text.\n\n- Motivated by (Introduction) \"Enumeration of the selective advantage of each driver mutation enables prediction of future evolutionary dynamics\". This claim is more difficult to interpret in the light of your own findings, namely, that there are somatic mutations showing a very significant fitness gain in normal tissues. Consider that those mutations may confer a transient fitness gain until a new homeostatic equilibrium is attained.\n\n- How are the step-sizes of the clone size intervals decided? How coarse these bins can be while still rendering a meaningful fit for the selective coefficients?\n\n- The Discussion section is mainly descriptive and methodological. What can be concluded about the role of NOTCH1 and TP53 in aging and/or tumor initiation in the light of the results in normal tissues?\n\n- The methods are essentially the same (e.g. Equation 4 in this work is Equation 1 in Watson et al., except Watson et al., focusses on SFS view whereas Williams et al. focus on the frequency-dependent dN/dS view \u2013 though, as the authors know well, these are different ways of viewing exactly the same info!). It should be made very clear that this has been independently developed by Watson et al. This is especially true since the way Watson et al., is cited at the moment is wholly incorrect!\n\n- Internal consistency between syn and non-syn mutations and validating N. The framework presented here, at its heart, analyses the SFS of two classes of mutations (syn vs non-syn) and takes the ratio of these in bins of increasing frequency. However, taking the ratio of the SFS for these classes of mutation throws away important information and means the authors lose the ability to validate N. If instead of taking the ratios they simply plot the SFS for both the syn and nonsyn variants independently then the amplitude of these curves at low frequency will be given by N\u03bc, which given one can estimate \u03bc enables one to calculate N, which serves as an important validation since you can check agreement with known estimates of 5000/mm2 (as quoted in the text). I would strongly suggest plotting the SFS of each class of mutation independently as outlined in Watson et al., since this does not throw out the N dependence. Furthermore, this inference of N from the amplitude provides an important internal consistency check on characteristic frequency of the clones (what the authors term N(t) in their main text \u2013 although as outlined at the end of my review there is a minor error in their equation). The value of N enables one to predict where the synonynous variants should appear as outlined in (Watson et al. bioRxiv 569566; doi: https://doi.org/10.1101/569566). This analysis would greatly strengthen this work as it would challenge the model more substantially.\n\n- Validation of \u0394. One major flaw of the work as presented is that the inferences for \u0394 are not validated or challenged. One approach we found useful is that the \u0394 make clear predictions for how the SFS should evolve with age. Even though there is no longitudinal sampling, there is a very wide range of ages in the esophagus data and reasonably wide range in the skin data. The authors should check whether the \u0394 inferred is consistent with how the SFS changes with age. i.e there should be a wider spectrum of frequencies in the older people and a narrower spectrum in younger people. In fact, the characteristic frequency of the clones should increase exponentially with age since the N(t) (characteristic size of the extant non-syn clones) increases exponentially with age so this makes a clear prediction to be checked. Including this analysis would strengthen the manuscript considerably.\n\n- Spatial effects. A challenge with using data from skin and esophagus to check this theoretical framework is that these tissues evolve on a 2D spatially constrained sheet of cells. There was no development or real discussion of how this might affect the theory (which has no explicit spatial effects built in). While a full theoretical treatment of this does seem beyond the scope of this work, it would be nice to see a thorough discussion of it, especially relating to some of the findings in the recent literature e.g. Hall et al., bioRxiv 480756; doi: https://doi.org/10.1101/480756 and Fusco et al., 2016, neither of which were cited.\n\n- High frequency synonymous variants are likely to be genetic hitchhikers. While there was a short discussion of hitchhikers at the end, it was somewhat cursory and not quantitative. Given the theory, the authors can predict what fraction of syn variants are expected to be hitchhikers in the skin / esophagus data and their frequency distribution (this analysis has been performed in Supplementary note 7 of Watson et al., 2019). It would be an important check on the inferences to perform a similar analysis and see if there is agreement with predictions.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Measuring the distribution of fitness effects in somatic evolution by combining clonal dynamics with dN/dS ratios\" for further consideration by eLife. Your revised article has been evaluated by Patricia Wittkopp (Senior Editor), a Reviewing Editor, and the original reviewers.\n\nThe manuscript has been improved but the two referees still have a number of points that require additional clarification or a better explanation. The one that I find compulsory is a better description of Figure 5, as detailed by the second referee.\n\nReviewer #1:\n\n- From this reviewer's perspective, the main concerns raised during the first round of reviews have been addressed. The authors have conceded to reshape the paper so as to exclude the cancer part in the interest of applicability and reproducibility.\n\n- The authors have thoroughly addressed all the comments including additional explanations and new figures for the sake of completeness and clarification. In particular, the authors have now conducted a supplementary analysis of the impact of the dN/dS calculation method of choice; have completed the methodological description; have added clarification to the relationship between predictiveness and selective regime; have completed the discussion hypothesizing a temporal dynamics for the expansion of NOTCH1 vs TP53 variants in histopathologically normal oesophageal tissue; have tackled the relevance and limitations of the study regarding the per-site inference of selective advantages; have clarified the impact of bin-sizes at model fitting; and have carried an important new analysis suggested by one of the reviewers to validate \u0394.\n\n- The manuscript has clearly improved and feels to have reached a point so that exposure to public scientific debate cannot wait anymore.\n\nReviewer #2:\n\nGenerally I find the manuscript improved relative to the first draft. However there remain a few issues that I believe need to be addressed to really demonstrate whether the numbers inferred using this method are meaningful.\n\nI am glad to see the suggestion made in my first review on ways to challenge the inferred \u0394 was used by the authors as the basis for the substantial new analysis resulting in Figure 5. I believe the additional analysis strengthens the manuscript. Given that the idea for this analysis comes from an analysis performed in Watson et al., it would be appropriate to clearly acknowledge this in the main text e.g. words to the effect of \"Following closely the analysis laid out in Watson et al. we reasoned\u2026\" subsection \u201cSite frequency spectra\u201d.\n\nI also have a few questions about this current analysis. First, as mentioned by the authors, the theoretical prediction is that N(t) should increase exponentially with age with the gradient being approximately \u0394. In Figure 5D it is not clear to me what data has been used for this plot and how numbers were estimated. If this data is grouped across many genes the predicted increase should not be exponential at all, so it is not clear if this fit is appropriate. The authors need to clarify this. It is more appropriate to perform the analysis on a gene-by-gene basis as shown in Figure 5\u2014figure supplement 1 but this figure highlights that the agreement between the values of \u0394 using the two methods are not very good (e.g. TP53 is inferred to be ~0.018 on basis of age change vs 0.06 on basis of dN/dS). The log scale on Figure 5\u2014figure supplement 1B obfuscates this. Is the correlation between the methods still significant on a (more standard) linear scale? The y-axis scale on Figure 5C is incorrect: there is a missing factor of r\u03bb (see below too). Generally I think this new analysis is encouraging but would benefit from a more cautionary telling: highlighting how the agreement between inferred values of \u0394 is far from perfect and might point to more complex dynamics e.g. environmental effects which alter \u0394.\n\nThere remains an error in Equation. 4. The units are not correct. The density is dimensionless while at present it is proportional to mutation rate (units of 1/time). There is a timescale missing from the expression: which I believe is r \\\u03bb and should be in the denominator. The authors should check this.\n\nI am still not convinced the authors have satisfactorily addressed the issue of sites within a gene having different \u0394 values. While I accept that the current data sets do not have the power to resolve \u0394 on a site by site basis they can, and in my opinion should, simulate this with some parameterised distribution and test what value of \u0394 they would infer using their grouped method. Because, if there is a range of \u0394 for mutations within the same gene, and a single value is inferred, it is not clear that the value inferred represents the average value of \u0394 across the gene as the authors claim in their rebuttal. This claim should be backed up with simulations if the data do not exist.\n",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6469aec2-4e9e-4314-855b-a535fb566551",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C1",
+      "claim": "The distribution of fitness effects (DFE) defines how new mutations spread through an evolving population.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of fitness effects (DFE) defines how new mutations spread through an evolving population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement presented in the abstract without supporting data in the manuscript itself, but represents established knowledge in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "6c27fd61-b4cd-4409-9198-4c4ede4b329f",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C2",
+      "claim": "The ratio of non-synonymous to synonymous mutations (dN/dS) has become a popular method to detect selection in somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of non-synonymous to synonymous mutations (dN/dS) has become a popular method to detect selection in somatic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established practice in the field, as evidenced by the citations provided later in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "6ae8789e-b421-4218-8489-68885a3727c7",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C3",
+      "claim": "The link between dN/dS values and fitness coefficients in somatic evolution is missing.",
+      "claim_type": "EXPLICIT",
+      "source": "However the link, in somatic evolution, between dN/dS values and fitness coefficients is missing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a gap in knowledge identified by the authors as motivation for their study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "49e41ae2-2867-478e-8597-1319576acec1",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C4",
+      "claim": "This study presents a quantitative model of somatic evolutionary dynamics that determines the selective coefficients of individual driver mutations from dN/dS estimates.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present a quantitative model of somatic evolutionary dynamics that determines the selective coefficients of individual driver mutations from dN/dS estimates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary methodological contribution claimed by the authors, developed throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "4bdc4efd-e4e4-4bd3-8d0e-6f5186d3bd78",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C5",
+      "claim": "The study measures the DFE for somatic mutant clones in ostensibly normal oesophagus and skin.",
+      "claim_type": "EXPLICIT",
+      "source": "We then measure the DFE for somatic mutant clones in ostensibly normal oesophagus and skin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by data analysis presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "fea19a94-7c90-441e-b84c-bf6b05c9efc1",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C6",
+      "claim": "The study reveals a broad distribution of fitness effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal a broad distribution of fitness effects, with the largest fitness increases found for TP53 and NOTCH1 mutants (proliferative bias 1\u20135%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "4e47afc4-5b55-46b9-b6dc-1f4bc3fb488d",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C7",
+      "claim": "TP53 and NOTCH1 mutants have the largest fitness increases with proliferative bias of 1-5%.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal a broad distribution of fitness effects, with the largest fitness increases found for TP53 and NOTCH1 mutants (proliferative bias 1\u20135%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding supported by the interval dN/dS analysis presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "10073c8e-27d0-45c0-bba0-bde8314762d8",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C8",
+      "claim": "Measurement of the selective advantage of each driver mutation enables prediction of future evolutionary dynamics, provided the selective regime remains constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of the selective advantage of each driver mutation enables prediction of future evolutionary dynamics (Williams et al., 2019), provided the selective regime remains constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "73bceb03-a772-402f-91a7-5a3e7e77503e",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C9",
+      "claim": "In somatic evolution, particularly in cancer genomes, there is extensive knowledge of the catalogue of recurrent, and likely positively selected, somatic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In somatic evolution, particularly in cancer genomes, we have an extensive knowledge of the catalogue of recurrent, and likely positively selected, somatic mutations (Martincorena et al., 2017), but the fitness changes associated with each mutation remain largely unquantified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to Martincorena et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "57ce7626-349f-4669-bb0a-c522d78b41c9",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C10",
+      "claim": "The fitness changes associated with each mutation in somatic evolution remain largely unquantified.",
+      "claim_type": "EXPLICIT",
+      "source": "In somatic evolution, particularly in cancer genomes, we have an extensive knowledge of the catalogue of recurrent, and likely positively selected, somatic mutations (Martincorena et al., 2017), but the fitness changes associated with each mutation remain largely unquantified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge that motivates the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "a9d5ef25-7bd6-4f0f-88ff-eab8ec1c1360",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C11",
+      "claim": "Lineage tracing of mutations in mouse models is a prominent experimental method to determine the fitness effects of mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Most prominently is lineage tracing of mutations in mouse models (Vermeulen et al., 2013; Rogers et al., 2018), but these methods are not sufficiently high-throughput to produce the DFE for all somatic mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "d49aa121-5e3b-4b94-8e08-d5a41a0c5432",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C12",
+      "claim": "Lineage tracing methods are not sufficiently high-throughput to produce the DFE for all somatic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Most prominently is lineage tracing of mutations in mouse models (Vermeulen et al., 2013; Rogers et al., 2018), but these methods are not sufficiently high-throughput to produce the DFE for all somatic mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the limitations of existing methods.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "181d494d-e75a-4842-8fcd-4498c9ac158f",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C13",
+      "claim": "Some studies have estimated the selective coefficient of somatic mutations by measuring their frequency over time in the same individual using longitudinal sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have estimated the selective coefficient of somatic mutations by measuring their frequency over time in the same individual using longitudinal sampling (K\u00f6rber et al., 2019), however this method is broadly limited to somatic evolution in the blood (Gibson and Steensma, 2018) (where it is feasible to take samples from healthy individuals over time) and in rare cases of patients under active surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "3d60444b-786e-4587-bc35-30614910b25e",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C14",
+      "claim": "Longitudinal sampling methods for estimating selective coefficients are broadly limited to somatic evolution in the blood and rare cases of patients under active surveillance.",
+      "claim_type": "EXPLICIT",
+      "source": "Other studies have estimated the selective coefficient of somatic mutations by measuring their frequency over time in the same individual using longitudinal sampling (K\u00f6rber et al., 2019), however this method is broadly limited to somatic evolution in the blood (Gibson and Steensma, 2018) (where it is feasible to take samples from healthy individuals over time) and in rare cases of patients under active surveillance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the practical limitations of longitudinal sampling methods, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "e2d9d775-b996-4d04-8778-415123349a21",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C15",
+      "claim": "Methods to identify positively-selected (driver) mutations rely on finding genes that have significantly more mutational 'hits' than would be expected by chance, after correction for factors known to influence the mutation rate across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Methods to identify positively-selected (driver) mutations rely on finding genes that have significantly more mutational 'hits' (typically hits are non-synonymous mutations) than would be expected by chance, after correction for factors known to influence the mutation rate across the genome (Bailey et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes established methodology in the field, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "deb53982-e566-446a-9cca-230d4541ea85",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C16",
+      "claim": "Negatively selected genes are expected to show a paucity of mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, negatively selected genes are expected to show a paucity of mutations (Weghorn and Sunyaev, 2017; Zapata et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical expectation supported by citations to relevant work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "9c74b251-2f23-43fe-af9b-639b1f42f493",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C17",
+      "claim": "The dN/dS ratio method was originally developed in molecular species evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is formalised in the calculation of the dN/dS ratio \u2013 a method originally developed in molecular species evolution \u2013 that has recently been adapted to study somatic evolution (both cancer and normal tissue) (Martincorena et al., 2017; Weghorn and Sunyaev, 2017; Zapata et al., 2018; Wu et al., 2016; Greenman et al., 2006; Yang et al., 2003; Martincorena et al., 2018; Lee-Six et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about the origin of the method, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "eabba087-ae6b-4f92-92c8-66bb54a91798",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C18",
+      "claim": "The dN/dS ratio method has recently been adapted to study somatic evolution in both cancer and normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea is formalised in the calculation of the dN/dS ratio \u2013 a method originally developed in molecular species evolution \u2013 that has recently been adapted to study somatic evolution (both cancer and normal tissue) (Martincorena et al., 2017; Weghorn and Sunyaev, 2017; Zapata et al., 2018; Wu et al., 2016; Greenman et al., 2006; Yang et al., 2003; Martincorena et al., 2018; Lee-Six et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "68c48b12-1bb5-488e-b2db-07f34654549f",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C19",
+      "claim": "dN/dS >1 indicates positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of these two numbers, each normalised for the local sequence-specific biases in the mutation rate, putatively identifies a signature of selection: dN/dS >1 indicating positive selection, dN/dS = 1 indicating neutral evolution and dN/dS <1 indicating negative selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established interpretation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "667d5fb0-b1e3-44fa-a3f7-1a9e4bc4bbda",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C20",
+      "claim": "dN/dS = 1 indicates neutral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of these two numbers, each normalised for the local sequence-specific biases in the mutation rate, putatively identifies a signature of selection: dN/dS >1 indicating positive selection, dN/dS = 1 indicating neutral evolution and dN/dS <1 indicating negative selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established interpretation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "6aca36c6-10e7-496d-a80a-81f8bcd86a6c",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C21",
+      "claim": "dN/dS <1 indicates negative selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of these two numbers, each normalised for the local sequence-specific biases in the mutation rate, putatively identifies a signature of selection: dN/dS >1 indicating positive selection, dN/dS = 1 indicating neutral evolution and dN/dS <1 indicating negative selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established interpretation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "07481918-e2cc-404f-8c32-b244e655d955",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C22",
+      "claim": "Transforming dN/dS values to selective coefficients in somatic evolution is an unaddressed problem.",
+      "claim_type": "EXPLICIT",
+      "source": "Transforming dN/dS values to selective coefficients in somatic evolution is an unaddressed problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies the key gap in knowledge that the study addresses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "8b5d3148-5f46-4ef4-be29-8baf0e13d16b",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C23",
+      "claim": "dN/dS was originally developed in the context of species evolution using the Wright-Fisher process.",
+      "claim_type": "EXPLICIT",
+      "source": "dN/dS was originally developed in the context of species evolution using the Wright-Fisher process, a classical population genetics model that assumes that evolution occurs over very long timescales, which permits new mutations to fix within lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical statement about the development of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "e58bf1f6-3f4d-472e-860d-1566481ec0f4",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C24",
+      "claim": "The Wright-Fisher model assumes constant population sizes, non-overlapping generations and that all individuals have equal potency.",
+      "claim_type": "EXPLICIT",
+      "source": "The Wright-Fisher model assumes constant population sizes, non-overlapping generations and that all individuals have equal potency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assumptions of a classical population genetics model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "0349ea6a-c2a2-46be-8ebd-517d1d06f633",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C26",
+      "claim": "In somatic evolution the assumptions of the Fisher-Wright model are violated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in somatic evolution the assumptions of the Fisher-Wright model are violated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key observation that motivates the development of new theory in this study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "9f330442-b06f-4a1d-b96f-62a61855d4fb",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C27",
+      "claim": "Somatic evolution is rapid and new mutations are infrequently fixed in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic evolution is rapid and new mutations are infrequently fixed in the population (McGranahan and Swanton, 2017), clonal dynamics are complex (Williams et al., 2019), and population sizes unlikely to be constant (Sottoriva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "74569dd8-5a23-4774-ac5e-5812c89b1c02",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C28",
+      "claim": "Clonal dynamics in somatic evolution are complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic evolution is rapid and new mutations are infrequently fixed in the population (McGranahan and Swanton, 2017), clonal dynamics are complex (Williams et al., 2019), and population sizes unlikely to be constant (Sottoriva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "9db0ebe5-ce64-46c3-a565-d3479ca454ab",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C29",
+      "claim": "Population sizes in somatic evolution are unlikely to be constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic evolution is rapid and new mutations are infrequently fixed in the population (McGranahan and Swanton, 2017), clonal dynamics are complex (Williams et al., 2019), and population sizes unlikely to be constant (Sottoriva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "881e2aa1-ec46-40f3-8c9e-110548487dc1",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C30",
+      "claim": "The lack of recombination in somatic evolution can result in strong hitchhiking effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the lack of recombination in somatic evolution can result in strong hitchhiking effects (Tilk et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "aec59db8-d2a2-4a93-91d5-4cbfce6474fa",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C31",
+      "claim": "In somatic evolution, the ancestral genome is known, which circumvents the need to measure dN/dS across a phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, since in somatic evolution, the ancestral genome is known, the need to measure dN/dS across a phylogeny is circumvented (a necessary step for dN/dS analysis in species evolution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key difference between somatic and species evolution that simplifies the analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "44b4966e-72fc-4dbb-874d-94f81b35e439",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C32",
+      "claim": "Violations of Wright-Fisher assumptions make the interpretation of dN/dS problematic.",
+      "claim_type": "EXPLICIT",
+      "source": "Violations of some of these assumptions was previously recognised to make the interpretation of dN/dS problematic (Kryazhimskiy and Plotkin, 2008; Mugal et al., 2014), and consequently the relationship between selective coefficients and dN/dS values is uncertain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "1ad6bde6-c329-4952-853a-77a9b64e2eda",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C33",
+      "claim": "The relationship between selective coefficients and dN/dS values is uncertain.",
+      "claim_type": "EXPLICIT",
+      "source": "Violations of some of these assumptions was previously recognised to make the interpretation of dN/dS problematic (Kryazhimskiy and Plotkin, 2008; Mugal et al., 2014), and consequently the relationship between selective coefficients and dN/dS values is uncertain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies the key problem that the study addresses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "0faae91f-a79c-4173-8ebb-d80f307929a8",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C34",
+      "claim": "The size distribution of clones contains information on the selective coefficients of newly arising mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The size distribution of clones (called the site frequency spectrum in population genetics nomenclature) also contains information on the selective coefficients of newly arising mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical insight from population genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "457af8a5-bd7a-4064-9219-807acddb4ec1",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C35",
+      "claim": "Mathematical descriptions of the dynamics of populations of cells can make predictions on the shape of the clone size distribution under different demographic and evolutionary models.",
+      "claim_type": "EXPLICIT",
+      "source": "Mathematical descriptions of the dynamics of populations of cells can make predictions on the shape of the clone size distribution under different demographic and evolutionary models (Simons, 2016a; Durrett, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "bac15e83-ba94-48cc-9efc-f12c8226a515",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C36",
+      "claim": "This approach has been used to quantify the dynamics and cell fate properties of stem cells across many tissues in model systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach has been used to quantify the dynamics and cell fate properties of stem cells across many tissues in model systems (Klein et al., 2010; Lopez-Garcia et al., 2010; Vermeulen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "737cf7f7-2100-4d4b-8ef0-a475d523125e",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C37",
+      "claim": "Similar approaches have been applied to deep sequencing data to infer the evolutionary dynamics of tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have also used similar approaches applied to deep sequencing data to infer the evolutionary dynamics of tumours (Williams et al., 2016; Williams et al., 2018; Bozic et al., 2016; Ling et al., 2015) and of clonal haematopoiesis in the blood (Watson et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "8ddf36e6-0b38-417e-98aa-066f3e31ac0f",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C38",
+      "claim": "dN/dS analysis and the analysis of the clone size distribution have been performed independently, with conflictual results.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, dN/dS analysis and the analysis of the clone size distribution have been performed independently, with conflictual results (Simons, 2016b; Martincorena et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations and identifies a problem in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "8759accc-9894-439b-8650-1b0d6b77ebff",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C39",
+      "claim": "The study develops mathematical population genetics theory to combine dN/dS analysis with clone size distribution analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we develop the mathematical population genetics theory necessary to combine these approaches and explore how the inter-individual measure of selection at a locus as provided by dN/dS values, is related to the underlying cell population dynamics that generate intra-individual clone size distributions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "5239f4a9-c515-4d45-acfd-1eb47d6a1f1b",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C40",
+      "claim": "The unified approach naturally accounts for the nuances in somatic evolution that can make the interpretation of dN/dS difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach naturally accounts for the nuances in somatic evolution that can make the interpretation of dN/dS difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claimed advantage of the new approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "bd5c9a87-2ac4-4319-b385-a2e2857d78a6",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C41",
+      "claim": "The study reveals the precise mathematical relationship between dN/dS values and selective coefficients in somatic evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We show how this unified approach allows for greater insight into patterns of selection than either method in isolation, and importantly reveal the precise mathematical relationship between dN/dS values and selective coefficients in somatic evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary theoretical contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "760248a2-47f3-4227-b9f1-75b4988b2931",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C42",
+      "claim": "The study uses the approach to infer the selective advantage of mutations in normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We use this approach to infer the selective advantage of mutations in normal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the application of the method to real data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "4f1feade-73d8-4d46-aaa2-287c06ff3e79",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C43",
+      "claim": "Positive selection causes selected variants to rise to higher frequency than expected under neutral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive selection causes selected variants to rise to higher frequency than expected under neutral evolution (Figure 1a), and negative selection has the opposite effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a fundamental principle of population genetics, illustrated in Figure 1a.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "ab313a77-e54d-44a3-9144-11b46c3e538a",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C44",
+      "claim": "Negative selection causes selected variants to be at lower frequency than expected under neutral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Positive selection causes selected variants to rise to higher frequency than expected under neutral evolution (Figure 1a), and negative selection has the opposite effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of population genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "7d80fd28-1cc4-4f53-930d-4bd2203a3480",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C48",
+      "claim": "Real sequencing data often suffers from a limited number of mutations detected at any particular frequency and measurement uncertainties in these frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Real sequencing data often suffers from a limited number of mutations detected at any particular frequency and measurement uncertainties in these frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical observation about limitations of sequencing data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "63142ff5-ac10-4c85-9cf3-c3b4a8744139",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C49",
+      "claim": "Interval dN/dS (i-dN/dS) aggregates over a frequency range to reduce the influence of noise in sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "To circumvent these issues, we introduce 'interval dN/dS' (i-dN/dS) that aggregates over a frequency range to reduce the influence of these sources of noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological innovation introduced in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "4951b618-57f2-4898-bd4c-cf4c5e7ffe01",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C50",
+      "claim": "In healthy tissue, only mutations that are acquired in the stem cells will persist over long times.",
+      "claim_type": "EXPLICIT",
+      "source": "In healthy tissue, only mutations that are acquired in the stem cells will persist over long times, and so we restrict our attention to these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a biological principle that justifies focusing on stem cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "3fc6de86-1d75-4167-8f98-37959316cfa4",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C51",
+      "claim": "Quantitative analysis of lineage tracing data has shown that the stem cell dynamics of many tissues conform to a process of population asymmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis of lineage tracing data has shown that the stem cell dynamics of many tissues conform to a process of population asymmetry (Klein and Simons, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "400c5a0b-2160-44ec-a152-a67a885fa99a",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C52",
+      "claim": "Under homeostasis, the loss of stem cells through differentiation is compensated by the replication of a neighbouring stem cell, thus maintaining an approximately constant number of stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paradigm, under homeostasis, the loss of stem cells through differentiation is compensated by the replication of a neighbouring stem cell, thus maintaining an approximately constant number of stem cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the population asymmetry model of stem cell dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "70bd0474-c0fa-4a95-8c24-38937caff36c",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C53",
+      "claim": "The population asymmetry model is a good description of the clonal dynamics in the oesophagus and skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous mathematical analysis shows that this model is a good description of the clonal dynamics in the oesophagus and skin (Klein et al., 2010; Doup\u00e9 et al., 2012; Alcolea et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "bba03180-7abf-40a1-97df-e6f149d3bc19",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C54",
+      "claim": "The accuracy of the derivation was confirmed using simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the accuracy of our derivation using simulations (Figure 2a), and performed power calculations to determine the minimum number of mutations required to correctly infer the underlying population dynamics: we determined that 8 mutations per gene was sufficient to accurately recover \u0394 (Figure 2b) with accuracy increasing for higher mutation burdens (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation of the theoretical model using simulations, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "cd7b4ffe-fd15-4d58-8a33-01fffce3350d",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C55",
+      "claim": "8 mutations per gene is sufficient to accurately recover the bias parameter \u0394.",
+      "claim_type": "EXPLICIT",
+      "source": "we determined that 8 mutations per gene was sufficient to accurately recover \u0394 (Figure 2b) with accuracy increasing for higher mutation burdens (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from power calculations shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "899a4e97-17e7-43cf-ad8c-4d4a7fb115df",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C56",
+      "claim": "Accuracy of recovering \u0394 increases for higher mutation burdens.",
+      "claim_type": "EXPLICIT",
+      "source": "we determined that 8 mutations per gene was sufficient to accurately recover \u0394 (Figure 2b) with accuracy increasing for higher mutation burdens (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from power calculations shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "bc4da9fd-b59d-4458-a4a2-b5b99d74d266",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C57",
+      "claim": "Fitting i-dN/dS when \u0394 is exponentially distributed recovers the mean value of the exponential distribution on average.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed simulations where \u0394 was itself a random variable, simulating the effect of different sites within the gene having different fitness effects. We assumed \u0394 was exponentially distributed and generated 500 simulated cohorts. Fitting i-dN/dS demonstrated that on average we infer the mean value of the exponential distribution, Figure 2\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from simulations shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "250b33f7-e55f-4b09-ac73-859c63abb5f5",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C58",
+      "claim": "The study inferred the selective advantage of driver mutations in human oesophagus using published deep sequencing data from Martincorena and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "We inferred the selective advantage of driver mutations in human oesophagus using published deep sequencing data from Martincorena and colleagues (Martincorena et al., 2018) that documents the clonal expansion of a panel of putative driver mutations in histopathologically-normal oesophageal biopsies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used for the analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "6af10d62-cadf-4b59-882c-fe53e23d765e",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C59",
+      "claim": "dN/dS values varied considerably as a function of mutation area in the oesophagus data.",
+      "claim_type": "EXPLICIT",
+      "source": "dN/dS values varied considerably as a function of mutation area (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "564b8885-ef23-4513-94f5-a1b44036353f",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C60",
+      "claim": "The theoretical model of i-dN/dS fitted strikingly well to the oesophagus data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theoretical model of i-dN/dS calculated from these data fitted strikingly well (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from fitting the model to data, shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "10892864-0ea2-476b-ac66-e6c3e21d8043",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C63",
+      "claim": "Nonsense mutations in oesophagus caused a five-fold greater bias towards self-renewal of 0.021 (0.008 \u2013 0.032 95% CI) compared to missense mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonsense mutations caused a five-fold greater bias towards self-renewal of 0.021 (0.008 \u2013 0.032 95% CI) (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the analysis shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "ac5b2d80-9c97-4b65-9858-e479a1f0396e",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C64",
+      "claim": "After removal of all genes that are strongly selected, global dN/dS values on the remaining 48 genes show dN/dS of approximately 1 across the frequency range.",
+      "claim_type": "EXPLICIT",
+      "source": "After removal of all genes that are strongly selected, global dN/dS values on the remaining 48 genes show dN/dS of approximately 1 across the frequency range (Figure 2d), and i-dN/dS analysis revealed that these somatic mutations do not associate with a proliferative bias (\u0394=0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "8ff8acc1-cec9-470b-a671-6db05aeb0c7f",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C65",
+      "claim": "Somatic mutations in the remaining 48 genes (after removal of strongly selected genes) do not associate with a proliferative bias (\u0394=0).",
+      "claim_type": "EXPLICIT",
+      "source": "After removal of all genes that are strongly selected, global dN/dS values on the remaining 48 genes show dN/dS of approximately 1 across the frequency range (Figure 2d), and i-dN/dS analysis revealed that these somatic mutations do not associate with a proliferative bias (\u0394=0).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the i-dN/dS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "b635228f-3091-44be-9aaf-ac4d4417d7eb",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C66",
+      "claim": "A broad range of selective advantages were inferred for different genes in oesophagus.",
+      "claim_type": "EXPLICIT",
+      "source": "We then fitted the data on a gene-by-gene and patient-by-patient basis for cases where sufficient mutations were available to perform the fit (Figure 2e\u2013g; Figure 2\u2014figure supplement 4). A broad range of selective advantages were inferred (Figure 3 and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the gene-by-gene analysis shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "85cc4639-1ef0-40a6-b3bb-5963a2ccc321",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C67",
+      "claim": "Mutations in TP53 showed large biases across all patients for both missense (\u0394 = 0.057, 95% CI: 0.05\u20130.068) and nonsense mutations (\u0394 = 0.094, 95% CI: 0.091\u20130.097) in oesophagus.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in TP53 showed large biases across all patients for both missense, \u0394 = 0.057 (0.05\u20130.068 95% CI) and nonsense mutations, \u0394 = 0.094 (0.091\u20130.097 95% CI) (Figure 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the analysis shown in Figure 3a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "af39c1ae-67e7-4863-8f72-e351b92855b2",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C68",
+      "claim": "Mutations in NOTCH1 showed biases of \u0394 = 0.029 (95% CI: 0.019\u20130.036) for missense and \u0394 = 0.072 (95% CI: 0.034\u20130.089) for nonsense mutations in oesophagus.",
+      "claim_type": "EXPLICIT",
+      "source": "This was also true for mutations in NOTCH1 with \u0394 = 0.029 (0.019\u20130.036 95% CI) for missense and \u0394 = 0.072 (0.034\u20130.089 95% CI) for nonsense mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "959d1bbc-f36d-47f8-8e80-21975b38e9cd",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C69",
+      "claim": "NOTCH2, PIK3CA, CREBBP and FAT1 showed a bias toward self-proliferation in multiple patients in oesophagus.",
+      "claim_type": "EXPLICIT",
+      "source": "NOTCH2, PIK3CA, CREBBP and FAT1 also showed a bias toward self-proliferation in multiple patients (Figure 3a\u2013b), though most had a small effect on fitness (range 0.003\u20130.029 for missense mutations and 0.030\u20130.041 for nonsense mutations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the analysis shown in Figure 3a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "b09738e2-ce1c-4cc0-a617-6efb2c6b96ba",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C70",
+      "claim": "Most mutations in NOTCH2, PIK3CA, CREBBP and FAT1 had a small effect on fitness (range 0.003\u20130.029 for missense mutations and 0.030\u20130.041 for nonsense mutations) in oesophagus.",
+      "claim_type": "EXPLICIT",
+      "source": "NOTCH2, PIK3CA, CREBBP and FAT1 also showed a bias toward self-proliferation in multiple patients (Figure 3a\u2013b), though most had a small effect on fitness (range 0.003\u20130.029 for missense mutations and 0.030\u20130.041 for nonsense mutations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "61f9cbb7-1c05-4454-bab0-b9c1d1aaaebd",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C71",
+      "claim": "The data suggest a distribution of fitness effects (DFE) characterized by many small effect mutations with few large effect mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data suggest a distribution of fitness effects (DFE) characterized by many small effect mutations with few large effect mutations (Figure 3c\u2013d), as is seen in organismal evolution (Eyre-Walker and Keightley, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the findings shown in Figure 3c-d, supported by comparison to organismal evolution.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "044939d8-6aee-4bf0-b209-81da98f3812b",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C72",
+      "claim": "There may be intra-gene variation of selection coefficients, with some sites within genes having stronger fitness effects than others.",
+      "claim_type": "EXPLICIT",
+      "source": "We recognize that there may be intra-gene variation of selection coefficients, that is, some sites within genes may have stronger fitness effects than others. This is supported by clustering of mutations within particular domains and hotspots of mutations as documented in the original study (Martincorena et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation, supported by citation to the original data source.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "6d7427a5-b6a8-4034-bf26-5420548982ab",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C73",
+      "claim": "Approximately 90 patches were sampled from each patient in the oesophagus study.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 90 patches were sampled from each patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sampling design of the original study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "e6de46f1-6a96-4530-94ab-739a8b433a60",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C74",
+      "claim": "There was a statistically significant correlation between the number of driver mutations per patch and the number of synonymous mutations for both NOTCH1 (p<0.001) and TP53 mutations (p=0.031).",
+      "claim_type": "EXPLICIT",
+      "source": "While there =was a statistically significant correlation for both NOTCH1 (linear regression, p<0.001) and TP53 mutations (p=0.031), the effect was small (Figure 5\u2014figure supplement 1): for each additional driver there was on average 0.05 additional synonymous variants (0.047 for NOTCH1 and 0.056 for TP53).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the hitchhiking analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "e9653c7c-3a80-4690-a893-b8e0d6f87746",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C75",
+      "claim": "For each additional driver mutation there was on average 0.05 additional synonymous variants (0.047 for NOTCH1 and 0.056 for TP53).",
+      "claim_type": "EXPLICIT",
+      "source": "While there =was a statistically significant correlation for both NOTCH1 (linear regression, p<0.001) and TP53 mutations (p=0.031), the effect was small (Figure 5\u2014figure supplement 1): for each additional driver there was on average 0.05 additional synonymous variants (0.047 for NOTCH1 and 0.056 for TP53).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the hitchhiking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "7d3b719d-4b04-4e2e-b012-dbad2667e74f",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C76",
+      "claim": "The correlation between driver mutations and synonymous mutations was very noisy (R2 < 0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "We note too that the correlation was very noisy (R2 < 0.02) and we observed no statistically significant relationship between VAF of synonymous mutations and the number of TP53 or NOTCH1 mutations (linear regression, p>0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the hitchhiking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "48f4ce22-a6e6-440c-9708-dd6ef6ecc4e6",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C77",
+      "claim": "There was no statistically significant relationship between VAF of synonymous mutations and the number of TP53 or NOTCH1 mutations (p>0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "We note too that the correlation was very noisy (R2 < 0.02) and we observed no statistically significant relationship between VAF of synonymous mutations and the number of TP53 or NOTCH1 mutations (linear regression, p>0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the hitchhiking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "fafd0639-8eba-4b95-9e49-53823272deed",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C78",
+      "claim": "The analysis suggests that the majority of synonymous mutations are not hitchhikers.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis suggests that the majority of synonymous mutations are not hitchhikers, and consequently that assuming the independence of clones isreasonable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the hitchhiking analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "35377850-e347-431f-bf55-9f0d42f10e62",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C79",
+      "claim": "Assuming the independence of clones is reasonable for the oesophagus data.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis suggests that the majority of synonymous mutations are not hitchhikers, and consequently that assuming the independence of clones isreasonable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the hitchhiking analysis that validates a model assumption.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "c3993973-68b3-4c57-b65a-d32c2852f7c4",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C80",
+      "claim": "The per-patient average selective advantage per mutation in normal skin is \u0394 = 0.001 for missense mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of these data with interval dN/dS revealed a per-patient average selective advantage per mutation (again measured in terms of the bias towards self renewal) of \u0394 = 0.001 for missense mutations and four-fold higher (\u0394 = \ufeff0.004) for nonsense mutations (Figure 4a-c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the skin data analysis shown in Figure 4a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "816685fb-6688-4ff9-ba9e-e8007cd331b4",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C81",
+      "claim": "The per-patient average selective advantage per mutation in normal skin is \u0394 = 0.004 for nonsense mutations, four-fold higher than missense mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of these data with interval dN/dS revealed a per-patient average selective advantage per mutation (again measured in terms of the bias towards self renewal) of \u0394 = 0.001 for missense mutations and four-fold higher (\u0394 = \ufeff0.004) for nonsense mutations (Figure 4a-c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the skin data analysis shown in Figure 4a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "85dccc0a-ac5b-420d-bd8f-99d275e58391",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C82",
+      "claim": "Good fits to the skin data were obtainable for NOTCH1 missense mutations in patient PD18003 with fitness estimated to be \u0394 = 0.0149 (95% CI: 0.0148-0.0150).",
+      "claim_type": "EXPLICIT",
+      "source": "Good fits to the data were obtainable for NOTCH1 missense mutations in patient PD18003 with fitness estimated to be \u0394 = 0.0149 (0.0148-0.0150 95% CI), and TP53 missense mutations also in patient PD18003, \u0394 = 0.0054 (0.0051-0.0058 95% CI) Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the gene-level analysis in skin shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "f16ac8ac-be3f-440f-88a4-7cbf2e112515",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C83",
+      "claim": "Good fits to the skin data were obtainable for TP53 missense mutations in patient PD18003 with fitness estimated to be \u0394 = 0.0054 (95% CI: 0.0051-0.0058).",
+      "claim_type": "EXPLICIT",
+      "source": "Good fits to the data were obtainable for NOTCH1 missense mutations in patient PD18003 with fitness estimated to be \u0394 = 0.0149 (0.0148-0.0150 95% CI), and TP53 missense mutations also in patient PD18003, \u0394 = 0.0054 (0.0051-0.0058 95% CI) Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the gene-level analysis in skin shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "1cc6c8fd-aab2-440b-990e-8df6e3fbb937",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C84",
+      "claim": "The fitness coefficients for NOTCH1 and TP53 in skin were similar to the oesophagus data.",
+      "claim_type": "EXPLICIT",
+      "source": "These fitness coefficients were similar to the oesophagus data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the skin and oesophagus findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "ae19a3ad-53f1-412c-8f42-b49b4f09b6ab",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C85",
+      "claim": "The distribution of fitness effects for missense mutations in skin showed similar characteristics to the oesophagus data of a small number of high effect mutations and a larger number of smaller effect mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "For missense mutations we were also able to produce the distribution of fitness effects across the skin cohort, which showed similar characteristics to the oesophagus data of a small number of high effect mutations and a larger number of smaller effect mutations, Figure 4f.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the DFE analysis in skin shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "02a4797a-b073-4720-ba07-dafd1a65db6c",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C86",
+      "claim": "Plotting the distribution of clone size areas showed a widening of the distribution as a function of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the distribution of clone size areas showed a widening of the distribution as a function of age, which was particularly striking for mutations in the NOTCH1 and TP53 genes, consistent with these genes conferring large selective advantages (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the site frequency spectrum analysis shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "6a1424b2-32e3-4f6d-a6f7-9abf779a6151",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C87",
+      "claim": "The widening of the clone size distribution as a function of age was particularly striking for mutations in the NOTCH1 and TP53 genes, consistent with these genes conferring large selective advantages.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting the distribution of clone size areas showed a widening of the distribution as a function of age, which was particularly striking for mutations in the NOTCH1 and TP53 genes, consistent with these genes conferring large selective advantages (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the site frequency spectrum analysis shown in Figure 5a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "6475f7da-0111-46f0-be21-bc15f5f88b18",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C88",
+      "claim": "Using WAIC to perform model selection, a model with an exponential term and a power law was found to be the best fitting model (lowest WAIC).",
+      "claim_type": "EXPLICIT",
+      "source": "Using WAIC to perform model selection, we found a model with an exponential term and a power law to be the best fitting model (lowest WAIC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "f6c06419-b77c-438f-a8f4-c9f62477bf34",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C90",
+      "claim": "Posterior estimates of the characteristic frequency N(t) showed an increase as a function of age for non-synonymous mutations and a more modest increase for synonymous mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Posterior estimates of the characteristic frequency N(t) showed an increase as a function of age for non-synonymous mutations and a more modest increase for synonymous as would be predicted from theory, Figure 5d.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Bayesian fitting shown in Figure 5d, consistent with theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "d6243a6a-e439-4b7d-acd7-7425d3fb7bb5",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C91",
+      "claim": "Bayes factors for the proposed theoretical model strongly supported it as the best model (BF > 10\u00b3 for both alternative models).",
+      "claim_type": "EXPLICIT",
+      "source": "Bayes factors for the proposed theoretical model also strongly supported this as the best model (BF > 103 for both models).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the model comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "43d4b0a1-4a08-4e82-afdf-cc217ba17c4c",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C92",
+      "claim": "Bayesian multi-level regression revealed that TP53 and NOTCH1 had the largest regression coefficients, consistent with these genes having the largest selection coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "As an alternative to fitting the full clone size distribution, we performed a Bayesian multi-level regression to assess which mutations showed the largest increase in clone size as a function of age. This analysis revealed that TP53 and NOTCH1 had the largest regression coefficients, consistent with these genes having the largest selection coefficients, Figure 5\u2014figure supplement 4, providing qualitative support for our approach.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the statistical analysis shown in Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "53fceb89-d646-40e1-87b8-30f54c349760",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C93",
+      "claim": "Inferred selection coefficients from i-dN/dS were correlated with the regression coefficients from the statistical model (linear regression, p=0.004, R\u00b2 = 0.47).",
+      "claim_type": "EXPLICIT",
+      "source": "Our inferred selection coefficients from i-dN/dS were also correlated with the regression coefficients from the statistical model (linear regression, p=0.004, R2 = 0.47).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding showing consistency between different analytical approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "4b8abc9a-0104-4a24-bd30-820a18626e7d",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C94",
+      "claim": "The proposed model provides the best fit to data when compared to other similar models.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, analysis of the site frequency spectrum on a patient by patient basis and a gene level statistical model are consistent with our inferences from i-dN/dS. We find that the proposed model provides the best fit to data when compared to other similar models, that the characteristic frequency of non-synonymous mutations increases rapidly with age and that NOTCH1 and TP53 exhibit the largest increase in clone size as a function of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the site frequency spectrum analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "950830a1-1524-4b00-9246-9601dc04237e",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C95",
+      "claim": "The characteristic frequency of non-synonymous mutations increases rapidly with age.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the proposed model provides the best fit to data when compared to other similar models, that the characteristic frequency of non-synonymous mutations increases rapidly with age and that NOTCH1 and TP53 exhibit the largest increase in clone size as a function of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the site frequency spectrum analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "24abf595-7b12-4490-87d2-9393c3ce72e7",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C96",
+      "claim": "NOTCH1 and TP53 exhibit the largest increase in clone size as a function of age.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the proposed model provides the best fit to data when compared to other similar models, that the characteristic frequency of non-synonymous mutations increases rapidly with age and that NOTCH1 and TP53 exhibit the largest increase in clone size as a function of age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the site frequency spectrum analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "7beeafd6-38a8-4532-aa00-39255d08f172",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C97",
+      "claim": "The combination of dN/dS values with mutation frequency-based information provides additional quantitative insight into dynamics of somatic evolution than either method alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have shown that the combination of dN/dS values with mutation frequency-based information provides additional quantitative insight into dynamics of somatic evolution than either method alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the study's contribution.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "5ebc48a1-15ee-437a-8497-bbbe1447e02a",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C98",
+      "claim": "The combined approach enables direct inference of the selection coefficients of mutations in somatic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the combined approach enables direct inference of the selection coefficients of mutations in somatic tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the methodological contribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "e502a969-4b7e-4960-b4d2-6390809609ad",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C99",
+      "claim": "The magnitude of the selection coefficient is not necessarily represented by simply calculating a 'point estimate' of dN/dS that neglects mutation subclonal frequency information.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that our study also shows that the magnitude of the selection coefficient is not necessarily represented by simply calculating a 'point estimate' of dN/dS that neglects mutation subclonal frequency information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an important methodological insight from the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "00f22b0b-eb1f-42fd-948f-354e0b3be7f5",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C100",
+      "claim": "In both skin and oesophagus, the most highly selected mutant genes were NOTCH1 and TP53 (increased proliferative bias of >1% and >5% respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "In both skin and oesophagus, the most highly selected mutant genes were NOTCH1 and TP53 (increased proliferative bias of >1% and>5% respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary finding from the analyses of both tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "ab183ab7-5751-44e2-a147-16c13b786055",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C101",
+      "claim": "Values of selective coefficients of individual genes varies between patients, likely because of inter-patient difference in the precise location of point mutations, but potentially also because of inter-patient variation in selective pressure from the microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that values of selective coefficients of individual genes varies between patients, likely because of inter-patient difference in the precise location of point mutations, but potentially also because of inter-patient variation in selective pressure from the microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data with proposed explanations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "42531a81-99cd-4c5e-a99b-d1d87b6f77b8",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C102",
+      "claim": "The comparative rank of per-gene fitness coefficients was broadly consistent across patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the comparative rank of per-gene fitness coefficients was broadly consistent across patients (e.g. for missense mutations across patients, TP53 mutations always had the highest fitness, followed by NOTCH1 mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "e602f239-3209-43e8-a3c7-6de04bb21dc2",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C103",
+      "claim": "For missense mutations across patients, TP53 mutations always had the highest fitness, followed by NOTCH1 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the comparative rank of per-gene fitness coefficients was broadly consistent across patients (e.g. for missense mutations across patients, TP53 mutations always had the highest fitness, followed by NOTCH1 mutations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific observation from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "0f231974-ea97-4096-8a59-bf9ba81d30ee",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C104",
+      "claim": "The consistency in selective coefficients is in agreement with the observation of highly recurrent gene mutations in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "This consistency in selective coefficients is in agreement with the observation of highly recurrent gene mutations in cancer (Lawrence et al., 2013) and evidence of repeatability in cancer evolution (Caravagna et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This connects the findings to previous observations in cancer, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "9d3fd625-fedc-42ac-bd33-8683bd2a2a6f",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C105",
+      "claim": "Non-synonymous NOTCH1 mutations were observed approximately 3-fold more frequently than non-synonymous TP53 mutations in oesophagus.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-synonymous NOTCH1 mutations were observed approximately 3-fold more frequently that non-synonymous TP53 mutations in oesophagus, and approximately 5-fold more frequently in skin, suggesting that the mutation rate of NOTCH1 is greater than for TP53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "93364090-0fe2-43e4-875c-37990f114885",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C106",
+      "claim": "Non-synonymous NOTCH1 mutations were observed approximately 5-fold more frequently than non-synonymous TP53 mutations in skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-synonymous NOTCH1 mutations were observed approximately 3-fold more frequently that non-synonymous TP53 mutations in oesophagus, and approximately 5-fold more frequently in skin, suggesting that the mutation rate of NOTCH1 is greater than for TP53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "0f43b982-8685-4d78-890b-e3b629b5acc7",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C107",
+      "claim": "The mutation rate of NOTCH1 is greater than for TP53.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-synonymous NOTCH1 mutations were observed approximately 3-fold more frequently that non-synonymous TP53 mutations in oesophagus, and approximately 5-fold more frequently in skin, suggesting that the mutation rate of NOTCH1 is greater than for TP53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed mutation frequencies.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "2d94f69c-3e72-424a-b29d-0be465123ece",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C108",
+      "claim": "The oesophagus will become transiently repopulated by NOTCH1-mutant cells during ageing, before subsequent replacement by fitter mutant-TP53 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupling these data with our quantitative measurements of the fitness coefficients leads to the prediction that the oesophagus will become transiently repopulated by NOTCH1-mutant cells during ageing, before subsequent replacement by fitter mutant-TP53 clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the combination of mutation rates and fitness coefficients.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "e1e0b6a2-7987-4687-b68b-ee85b5541aca",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C109",
+      "claim": "The clonality of mutations strongly determine the observed value of dN/dS.",
+      "claim_type": "EXPLICIT",
+      "source": "On a cautionary note, our theoretical work shows that the clonality of mutations strongly determine the observed value of dN/dS, and so a misleading picture of the selective forces will be produced if dN/dS frequency-dependent effects are not corrected for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical insight from the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "4337cb28-d009-4b63-9351-c45bb5a5d988",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C110",
+      "claim": "A misleading picture of the selective forces will be produced if dN/dS frequency-dependent effects are not corrected for.",
+      "claim_type": "EXPLICIT",
+      "source": "On a cautionary note, our theoretical work shows that the clonality of mutations strongly determine the observed value of dN/dS, and so a misleading picture of the selective forces will be produced if dN/dS frequency-dependent effects are not corrected for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary conclusion from the theoretical work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "1e1cebe1-16eb-4ebf-b6d5-ff1694337ff3",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C111",
+      "claim": "The accuracy of any estimate of evolutionary dynamics from dN/dS values is dependent on the underlying accuracy of the dN/dS measure itself.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of any estimate of evolutionary dynamics from dN/dS values is of course dependent on the underlying accuracy of the dN/dS measure itself, which is compromised by uncharacterised variability in the mutation rate across the genome (Van den Eynden and Larsson, 2017) and in the uncertain pathogenicity of individual single nucleotide variants (extensions to estimate site level selection coefficients may circumvent some of these issues [Cannataro et al., 2018; Temko et al., 2018]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges limitations of the approach, supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "1ae50062-6734-4810-8b27-ecb4ed7b3f5b",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C112",
+      "claim": "The model assumes a well-mixed population, while the data used in the study is from spatially structured epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "We also recognize that our model assumes a well-mixed population, while the data used in our study is from spatially structured epithelia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "00faf7f1-25f9-417b-a3f5-678d04c967cb",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C113",
+      "claim": "Spatial structure influences the distribution of clone sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial structure influences the distribution of clone sizes. Effects include: the influence of the boundary that enable rapid growth of mutants on the expanding front and conversely 'encapsulation' within a growing mass that slows clone growth (Fusco et al., 2016; Chkhaidze et al., 2019), and clonal interference that slows the growth of two similarly fit competing clones (Martens et al., 2011; Hall et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "a6e704d2-b9fb-485c-a7b9-fb987297ac55",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "claim_id": "C114",
+      "claim": "Combining population genetics methods with comparative genomics is a powerful way to infer selection pressures in human somatic evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining population genetics methods with comparative genomics is a powerful way to infer selection pressures in human somatic evolution, giving new insight into the fundamental parameters that determine evolutionary dynamics in health and disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the value of the approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "71a1accc-b662-459f-9d2f-d5ee4ec60c9f",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study develops a mathematical framework (interval dN/dS, i-dN/dS) that links dN/dS values to selective coefficients in somatic evolution by integrating clone size distribution analysis with dN/dS measurements. The approach was validated through simulations showing that 8 mutations per gene are sufficient for accurate parameter recovery, with accuracy increasing for higher mutation burdens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C39, C41, C49 describe the theoretical contribution, while C54-C57 provide simulation-based validation. The mathematical derivation is presented with equations, validated against simulations (Figure 2a-c), and power calculations demonstrate practical applicability. The approach addresses the identified gap (C3, C22, C33) by accounting for somatic evolution-specific features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Application of i-dN/dS to oesophageal data revealed a broad distribution of fitness effects with TP53 and NOTCH1 mutations showing the largest selective advantages (\u0394 = 0.057 and 0.029 for missense; 0.094 and 0.072 for nonsense, respectively). The DFE is characterized by many small-effect mutations and few large-effect mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C71 collectively describe the oesophageal analysis with specific quantitative findings supported by Figures 2 and 3. The model fits the data well (C60, Figure 2\u2014figure supplement 2), neutral genes show dN/dS \u2248 1 (C64-C65), and gene-specific estimates are provided with confidence intervals. The DFE characterization (C71) is supported by data in Figures 3c-d and comparison to organismal evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "647d0c96-48dd-428d-8c60-940b96b760e1",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Analysis of normal skin data using i-dN/dS revealed selective advantages of \u0394 = 0.001 for missense and \u0394 = 0.004 for nonsense mutations on average. Gene-specific analysis showed NOTCH1 (\u0394 = 0.0149) and TP53 (\u0394 = 0.0054) mutations in patient PD18003, with fitness coefficients similar to oesophagus and a comparable DFE structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C85 describe skin tissue analysis with quantitative estimates and confidence intervals shown in Figure 4. The consistency between skin and oesophagus (C84) and similar DFE characteristics (C85, Figure 4f) strengthen the findings. However, the analysis was limited by fewer mutations and narrower frequency range compared to oesophagus data, which is acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Site frequency spectrum analysis validated the i-dN/dS approach, showing that the theoretically-derived model (exponential + power law) provided the best fit (lowest WAIC, BF > 10\u00b3). The characteristic frequency N(t) increased with age for non-synonymous mutations, with TP53 and NOTCH1 showing the largest age-dependent increases in clone size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C96 describe independent validation using site frequency spectra. Model comparison using WAIC (C88, Figure 5b) and Bayes factors (C91) strongly support the theoretical model. Bayesian regression (C92-C93) provides qualitative support with correlation between methods (p=0.004, R\u00b2=0.47). The convergence of multiple analytical approaches strengthens confidence in the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "2a39440a-ade8-4579-a3ed-e4ba99741d02",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Hitchhiking analysis showed statistically significant but weak correlations between driver mutations and synonymous mutations (0.05 additional synonymous variants per driver, R\u00b2 < 0.02), suggesting that the majority of synonymous mutations are not hitchhikers and that the assumption of clone independence is reasonable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C79 describe a critical validation of model assumptions. While statistical significance was found (p<0.001 for NOTCH1, p=0.031 for TP53), the effect size was small (C75) and correlation noisy (C76, R\u00b2<0.02). No significant relationship was found between VAF and driver count (C77, p>0.1). This supports the independence assumption (C79), though the statistical significance with small effect size warrants caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "86206c04-9271-4839-853f-ef260bc2595c",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TP53 and NOTCH1 were consistently the most highly selected genes across both tissues (proliferative bias >1% and >5% respectively). While absolute selective coefficients varied between patients, the comparative rank of fitness coefficients was broadly consistent, with TP53 always showing highest fitness followed by NOTCH1 for missense mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C100-C104 synthesize findings across tissues and patients. The consistency in gene ranking (C102-C103) despite inter-patient variation (C101) is well-supported by data in Figures 3 and 4. The connection to cancer recurrence patterns (C104) provides biological context through citations. The proposed explanations for variation (mutation location, microenvironment) are reasonable but speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "5e95a6a8-9f40-4e27-9d04-34b0adf33f51",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NOTCH1 mutations were observed 3-fold more frequently than TP53 mutations in oesophagus and 5-fold more frequently in skin, suggesting higher mutation rate for NOTCH1. Combined with fitness measurements, this predicts transient NOTCH1-mutant repopulation during aging followed by replacement by fitter TP53-mutant clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C105-C106 report observed mutation frequencies from data. The inference about mutation rates (C107) is reasonable but assumes equal detection and other factors are controlled. The prediction about temporal dynamics (C108) is logical given the mutation rate and fitness data, but is speculative and would require longitudinal validation. This represents a testable hypothesis rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "803c8959-a44e-4392-9ba5-238f6976985e",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The combined dN/dS and clone size distribution approach provides superior quantitative insight into somatic evolution dynamics compared to either method alone, enabling direct inference of selection coefficients. Importantly, point estimates of dN/dS that neglect frequency information do not accurately represent selection coefficient magnitude, and frequency-dependent effects must be corrected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C99 summarize the methodological contribution supported by the entire study. The superiority of the combined approach is demonstrated through model comparisons (C88, C91) and consistency checks (C93). The cautionary note about frequency-dependence (C109-C110) is supported by theoretical derivations and empirical observations (Figure 1b-c, Figure 1\u2014figure supplement 1). This represents a key conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "59699bcd-ec8e-4f3e-b3d5-8b5e06438ceb",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors acknowledge important limitations: accuracy depends on underlying dN/dS measurement quality (affected by uncharacterized mutation rate variability and uncertain variant pathogenicity), the model assumes well-mixed populations while data comes from spatially structured epithelia, and spatial structure influences clone size distributions through boundary effects and clonal interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C113 represent honest acknowledgment of limitations with appropriate citations. These are conceptual/theoretical limitations rather than empirical findings. The recognition of these issues (particularly spatial structure, C112-C113) is important for interpreting results, though the authors provide evidence that violations may not be severe (hitchhiking analysis, C74-C79).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "acc5c16e-8bbd-42a3-9290-d6535fdf976b",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Somatic evolution violates Wright-Fisher model assumptions: it is rapid with infrequent fixation, has complex clonal dynamics, non-constant population sizes, and lacks recombination (causing hitchhiking). The known ancestral genome circumvents phylogenetic analysis needs. These violations make dN/dS interpretation problematic and the relationship between dN/dS and selective coefficients uncertain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 establish the motivation for the study by identifying violations of classical assumptions. Each violation is supported by citations (C27-C30, C32). This represents established knowledge synthesized to identify the research gap. The claims are well-supported by prior literature and provide clear rationale for developing new theory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "5d7f60b0-9de3-415c-8e7e-f74160c308d7",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study focuses on stem cells because only mutations acquired in stem cells persist long-term in healthy tissue. The population asymmetry model, where stem cell loss through differentiation is compensated by neighboring stem cell replication, is well-established for oesophagus and skin based on lineage tracing studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 establish the biological foundation for the modeling approach. C50 states a biological principle, while C51-C53 are supported by citations to lineage tracing studies (Klein and Simons 2011; Klein et al. 2010; Doup\u00e9 et al. 2012; Alcolea et al. 2014). This represents appropriate use of established knowledge to justify model assumptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    },
+    {
+      "id": "332a281e-b780-4078-bc2d-3c1bc4e34025",
+      "content_id": "b923dd56-2079-425a-aa04-b31de4297915",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Positive selection causes variants to rise to higher frequency than expected under neutral evolution, while negative selection has the opposite effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 state fundamental principles of population genetics illustrated in Figure 1a. These are well-established theoretical expectations that form the conceptual basis for the dN/dS approach. The claims represent foundational knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T16:07:06.601465Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "49e41ae2-2867-478e-8597-1319576acec1",
+      "result_id": "71a1accc-b662-459f-9d2f-d5ee4ec60c9f"
+    },
+    {
+      "claim_id": "8759accc-9894-439b-8650-1b0d6b77ebff",
+      "result_id": "71a1accc-b662-459f-9d2f-d5ee4ec60c9f"
+    },
+    {
+      "claim_id": "bd5c9a87-2ac4-4319-b385-a2e2857d78a6",
+      "result_id": "71a1accc-b662-459f-9d2f-d5ee4ec60c9f"
+    },
+    {
+      "claim_id": "63142ff5-ac10-4c85-9cf3-c3b4a8744139",
+      "result_id": "71a1accc-b662-459f-9d2f-d5ee4ec60c9f"
+    },
+    {
+      "claim_id": "bba03180-7abf-40a1-97df-e6f149d3bc19",
+      "result_id": "71a1accc-b662-459f-9d2f-d5ee4ec60c9f"
+    },
+    {
+      "claim_id": "cd7b4ffe-fd15-4d58-8a33-01fffce3350d",
+      "result_id": "71a1accc-b662-459f-9d2f-d5ee4ec60c9f"
+    },
+    {
+      "claim_id": "899a4e97-17e7-43cf-ad8c-4d4a7fb115df",
+      "result_id": "71a1accc-b662-459f-9d2f-d5ee4ec60c9f"
+    },
+    {
+      "claim_id": "bc4da9fd-b59d-4458-a4a2-b5b99d74d266",
+      "result_id": "71a1accc-b662-459f-9d2f-d5ee4ec60c9f"
+    },
+    {
+      "claim_id": "4bdc4efd-e4e4-4bd3-8d0e-6f5186d3bd78",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "fea19a94-7c90-441e-b84c-bf6b05c9efc1",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "4e47afc4-5b55-46b9-b6dc-1f4bc3fb488d",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "250b33f7-e55f-4b09-ac73-859c63abb5f5",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "6af10d62-cadf-4b59-882c-fe53e23d765e",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "564b8885-ef23-4513-94f5-a1b44036353f",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "10892864-0ea2-476b-ac66-e6c3e21d8043",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "ac5b2d80-9c97-4b65-9858-e479a1f0396e",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "8ff8acc1-cec9-470b-a671-6db05aeb0c7f",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "b635228f-3091-44be-9aaf-ac4d4417d7eb",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "85cc4639-1ef0-40a6-b3bb-5963a2ccc321",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "af39c1ae-67e7-4863-8f72-e351b92855b2",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "959d1bbc-f36d-47f8-8e80-21975b38e9cd",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "b09738e2-ce1c-4cc0-a617-6efb2c6b96ba",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "61f9cbb7-1c05-4454-bab0-b9c1d1aaaebd",
+      "result_id": "1c4e85de-f62a-4fc4-9dda-44b244a129ed"
+    },
+    {
+      "claim_id": "c3993973-68b3-4c57-b65a-d32c2852f7c4",
+      "result_id": "647d0c96-48dd-428d-8c60-940b96b760e1"
+    },
+    {
+      "claim_id": "816685fb-6688-4ff9-ba9e-e8007cd331b4",
+      "result_id": "647d0c96-48dd-428d-8c60-940b96b760e1"
+    },
+    {
+      "claim_id": "85dccc0a-ac5b-420d-bd8f-99d275e58391",
+      "result_id": "647d0c96-48dd-428d-8c60-940b96b760e1"
+    },
+    {
+      "claim_id": "f16ac8ac-be3f-440f-88a4-7cbf2e112515",
+      "result_id": "647d0c96-48dd-428d-8c60-940b96b760e1"
+    },
+    {
+      "claim_id": "1cc6c8fd-aab2-440b-990e-8df6e3fbb937",
+      "result_id": "647d0c96-48dd-428d-8c60-940b96b760e1"
+    },
+    {
+      "claim_id": "ae19a3ad-53f1-412c-8f42-b49b4f09b6ab",
+      "result_id": "647d0c96-48dd-428d-8c60-940b96b760e1"
+    },
+    {
+      "claim_id": "02a4797a-b073-4720-ba07-dafd1a65db6c",
+      "result_id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8"
+    },
+    {
+      "claim_id": "6a1424b2-32e3-4f6d-a6f7-9abf779a6151",
+      "result_id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8"
+    },
+    {
+      "claim_id": "6475f7da-0111-46f0-be21-bc15f5f88b18",
+      "result_id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8"
+    },
+    {
+      "claim_id": "f6c06419-b77c-438f-a8f4-c9f62477bf34",
+      "result_id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8"
+    },
+    {
+      "claim_id": "d6243a6a-e439-4b7d-acd7-7425d3fb7bb5",
+      "result_id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8"
+    },
+    {
+      "claim_id": "43d4b0a1-4a08-4e82-afdf-cc217ba17c4c",
+      "result_id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8"
+    },
+    {
+      "claim_id": "53fceb89-d646-40e1-87b8-30f54c349760",
+      "result_id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8"
+    },
+    {
+      "claim_id": "4b8abc9a-0104-4a24-bd30-820a18626e7d",
+      "result_id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8"
+    },
+    {
+      "claim_id": "950830a1-1524-4b00-9246-9601dc04237e",
+      "result_id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8"
+    },
+    {
+      "claim_id": "24abf595-7b12-4490-87d2-9393c3ce72e7",
+      "result_id": "19a5a62f-76d7-4c6e-985d-890fc4910cc8"
+    },
+    {
+      "claim_id": "e6de46f1-6a96-4530-94ab-739a8b433a60",
+      "result_id": "2a39440a-ade8-4579-a3ed-e4ba99741d02"
+    },
+    {
+      "claim_id": "e9653c7c-3a80-4690-a893-b8e0d6f87746",
+      "result_id": "2a39440a-ade8-4579-a3ed-e4ba99741d02"
+    },
+    {
+      "claim_id": "7d3b719d-4b04-4e2e-b012-dbad2667e74f",
+      "result_id": "2a39440a-ade8-4579-a3ed-e4ba99741d02"
+    },
+    {
+      "claim_id": "48f4ce22-a6e6-440c-9708-dd6ef6ecc4e6",
+      "result_id": "2a39440a-ade8-4579-a3ed-e4ba99741d02"
+    },
+    {
+      "claim_id": "fafd0639-8eba-4b95-9e49-53823272deed",
+      "result_id": "2a39440a-ade8-4579-a3ed-e4ba99741d02"
+    },
+    {
+      "claim_id": "35377850-e347-431f-bf55-9f0d42f10e62",
+      "result_id": "2a39440a-ade8-4579-a3ed-e4ba99741d02"
+    },
+    {
+      "claim_id": "00f22b0b-eb1f-42fd-948f-354e0b3be7f5",
+      "result_id": "86206c04-9271-4839-853f-ef260bc2595c"
+    },
+    {
+      "claim_id": "ab183ab7-5751-44e2-a147-16c13b786055",
+      "result_id": "86206c04-9271-4839-853f-ef260bc2595c"
+    },
+    {
+      "claim_id": "42531a81-99cd-4c5e-a99b-d1d87b6f77b8",
+      "result_id": "86206c04-9271-4839-853f-ef260bc2595c"
+    },
+    {
+      "claim_id": "e602f239-3209-43e8-a3c7-6de04bb21dc2",
+      "result_id": "86206c04-9271-4839-853f-ef260bc2595c"
+    },
+    {
+      "claim_id": "0f231974-ea97-4096-8a59-bf9ba81d30ee",
+      "result_id": "86206c04-9271-4839-853f-ef260bc2595c"
+    },
+    {
+      "claim_id": "9d3fd625-fedc-42ac-bd33-8683bd2a2a6f",
+      "result_id": "5e95a6a8-9f40-4e27-9d04-34b0adf33f51"
+    },
+    {
+      "claim_id": "93364090-0fe2-43e4-875c-37990f114885",
+      "result_id": "5e95a6a8-9f40-4e27-9d04-34b0adf33f51"
+    },
+    {
+      "claim_id": "0f43b982-8685-4d78-890b-e3b629b5acc7",
+      "result_id": "5e95a6a8-9f40-4e27-9d04-34b0adf33f51"
+    },
+    {
+      "claim_id": "2d94f69c-3e72-424a-b29d-0be465123ece",
+      "result_id": "5e95a6a8-9f40-4e27-9d04-34b0adf33f51"
+    },
+    {
+      "claim_id": "7beeafd6-38a8-4532-aa00-39255d08f172",
+      "result_id": "803c8959-a44e-4392-9ba5-238f6976985e"
+    },
+    {
+      "claim_id": "5ebc48a1-15ee-437a-8497-bbbe1447e02a",
+      "result_id": "803c8959-a44e-4392-9ba5-238f6976985e"
+    },
+    {
+      "claim_id": "e502a969-4b7e-4960-b4d2-6390809609ad",
+      "result_id": "803c8959-a44e-4392-9ba5-238f6976985e"
+    },
+    {
+      "claim_id": "e1e0b6a2-7987-4687-b68b-ee85b5541aca",
+      "result_id": "803c8959-a44e-4392-9ba5-238f6976985e"
+    },
+    {
+      "claim_id": "4337cb28-d009-4b63-9351-c45bb5a5d988",
+      "result_id": "803c8959-a44e-4392-9ba5-238f6976985e"
+    },
+    {
+      "claim_id": "1e1cebe1-16eb-4ebf-b6d5-ff1694337ff3",
+      "result_id": "59699bcd-ec8e-4f3e-b3d5-8b5e06438ceb"
+    },
+    {
+      "claim_id": "1ae50062-6734-4810-8b27-ecb4ed7b3f5b",
+      "result_id": "59699bcd-ec8e-4f3e-b3d5-8b5e06438ceb"
+    },
+    {
+      "claim_id": "00faf7f1-25f9-417b-a3f5-678d04c967cb",
+      "result_id": "59699bcd-ec8e-4f3e-b3d5-8b5e06438ceb"
+    },
+    {
+      "claim_id": "0349ea6a-c2a2-46be-8ebd-517d1d06f633",
+      "result_id": "acc5c16e-8bbd-42a3-9290-d6535fdf976b"
+    },
+    {
+      "claim_id": "9f330442-b06f-4a1d-b96f-62a61855d4fb",
+      "result_id": "acc5c16e-8bbd-42a3-9290-d6535fdf976b"
+    },
+    {
+      "claim_id": "74569dd8-5a23-4774-ac5e-5812c89b1c02",
+      "result_id": "acc5c16e-8bbd-42a3-9290-d6535fdf976b"
+    },
+    {
+      "claim_id": "9db0ebe5-ce64-46c3-a565-d3479ca454ab",
+      "result_id": "acc5c16e-8bbd-42a3-9290-d6535fdf976b"
+    },
+    {
+      "claim_id": "881e2aa1-ec46-40f3-8c9e-110548487dc1",
+      "result_id": "acc5c16e-8bbd-42a3-9290-d6535fdf976b"
+    },
+    {
+      "claim_id": "aec59db8-d2a2-4a93-91d5-4cbfce6474fa",
+      "result_id": "acc5c16e-8bbd-42a3-9290-d6535fdf976b"
+    },
+    {
+      "claim_id": "44b4966e-72fc-4dbb-874d-94f81b35e439",
+      "result_id": "acc5c16e-8bbd-42a3-9290-d6535fdf976b"
+    },
+    {
+      "claim_id": "1ad6bde6-c329-4952-853a-77a9b64e2eda",
+      "result_id": "acc5c16e-8bbd-42a3-9290-d6535fdf976b"
+    },
+    {
+      "claim_id": "4951b618-57f2-4898-bd4c-cf4c5e7ffe01",
+      "result_id": "5d7f60b0-9de3-415c-8e7e-f74160c308d7"
+    },
+    {
+      "claim_id": "3fc6de86-1d75-4167-8f98-37959316cfa4",
+      "result_id": "5d7f60b0-9de3-415c-8e7e-f74160c308d7"
+    },
+    {
+      "claim_id": "400c5a0b-2160-44ec-a152-a67a885fa99a",
+      "result_id": "5d7f60b0-9de3-415c-8e7e-f74160c308d7"
+    },
+    {
+      "claim_id": "70bd0474-c0fa-4a95-8c24-38937caff36c",
+      "result_id": "5d7f60b0-9de3-415c-8e7e-f74160c308d7"
+    },
+    {
+      "claim_id": "4f1feade-73d8-4d46-aaa2-287c06ff3e79",
+      "result_id": "332a281e-b780-4078-bc2d-3c1bc4e34025"
+    },
+    {
+      "claim_id": "ab313a77-e54d-44a3-9144-11b46c3e538a",
+      "result_id": "332a281e-b780-4078-bc2d-3c1bc4e34025"
+    }
+  ],
+  "comparisons": []
+}

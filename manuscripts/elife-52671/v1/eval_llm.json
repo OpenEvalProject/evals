@@ -1,0 +1,136 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C34",
+      "C35"
+    ],
+    "result": "The manuscript corrects figure labels across four figures, systematically replacing KEAP1WT/KEAP1MUT nomenclature with NRF2LOW/NRF2HIGH nomenclature. This correction establishes that KEAP1 wild-type cells correspond to NRF2LOW status and KEAP1 mutant cells correspond to NRF2HIGH status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 explicitly document the label corrections in four specific figures, while C34-C35 establish the biological equivalence between KEAP1 mutation status and NRF2 activity levels. This is a straightforward nomenclature correction that is clearly documented and internally consistent across all corrected figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C19",
+      "C20",
+      "C33"
+    ],
+    "result": "CDO1 protein accumulates to higher levels in NRF2HIGH (KEAP1 mutant) NSCLC cell lines compared to NRF2LOW cells, and CDO1 protein levels correlate with intracellular cysteine concentrations across 13 cell lines. The NRF2HIGH group includes KEAP1 mutant cell lines H1792, HCC15, A549, H322, and H460.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 describe the Western blot methodology and correlation analysis with appropriate normalization (\u03b1-Tubulin) and sample size (N=13). Claims C19-C20 report the differential accumulation pattern, noting higher levels in NRF2HIGH cells while acknowledging accumulation also occurs in many NRF2LOW lines. C33 identifies the specific KEAP1 mutant cell lines. The correlation analysis and differential expression are supported by referenced figure data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "A doxycycline-inducible lentiviral system was generated to express GFP, CDO1WT, or catalytically inactive CDO1Y157F at single copy in NSCLC cell lines, achieving CDO1 expression levels similar to physiological levels in mouse lung and liver tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 describe the experimental system with appropriate citation support (Ye et al., 2007) for the Y157F catalytically inactive mutant. C17 validates that expression levels are physiologically relevant by comparison to mouse tissues, with C18 providing context that liver is a high CDO1-expressing tissue. The methodology is well-documented with proper controls and citation support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "GOT1 and CSAD protein levels were analyzed by Western blot in NRF2LOW and NRF2HIGH NSCLC cell lines, with mouse liver included as a positive control and cells fed with fresh media 4 hours prior to lysate collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 describe a straightforward Western blot experiment with appropriate positive controls (mouse liver for GOT1/CSAD) and standardized sample preparation (fresh media 4 hr before collection). The methodology is clearly documented and includes proper experimental controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C24"
+    ],
+    "result": "Cystine starvation for 3 days was universally toxic to both NRF2LOW and NRF2HIGH NSCLC cell lines, with toxicity independent of NRF2 activity status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 describe the experimental methodology (3-day starvation, crystal violet analysis, N=3 replicates) with appropriate normalization. C24 reports the key finding that toxicity was universal and NRF2-independent. The experimental design includes adequate replication and proper controls (cystine-containing media), supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C22",
+      "C25"
+    ],
+    "result": "Na2SO3 treatment (0-10 mM for 3 days) was universally toxic to both NRF2LOW and NRF2HIGH NSCLC cell lines, with toxicity independent of NRF2 activity status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 describe the experimental methodology (dose-response over 3 days, CellTiter-Glo viability assay, N=3 replicates) with appropriate normalization to untreated cells. C22 and C25 report the toxicity findings. The dose-response design and adequate replication support the conclusion of universal, NRF2-independent toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C23"
+    ],
+    "result": "CSA treatment induced cytotoxicity in NSCLC cells, while HTAU treatment did not cause cytotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C23 report differential toxicity of CDO1 metabolic products, with CSA being toxic and HTAU being non-toxic. Both claims reference figure data (Figure 5\u2014figure supplement 4A). The contrasting results provide insight into which CDO1 pathway products are responsible for cellular toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CDO1, CSA, and Na2SO3 all sensitized A549 cells to oxidative stress, consistent with their ability to deplete intracellular cystine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 report the sensitization effects with reference to figure data (Figure 5\u2014figure supplement 4D,E). C29 provides the mechanistic interpretation linking sensitization to cystine depletion. The convergent effects of three different treatments support the proposed mechanism, though the mechanistic claim (C29) is inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "CSA and sulfite are toxic to NSCLC cells regardless of NRF2 activity, indicating that resistance to cystine starvation is not an inherent property of NRF2HIGH cells. Instead, NRF2HIGH cells are selectively sensitive to CDO1 expression due to high intracellular cysteine levels and CDO1 protein stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 synthesize the toxicity data to conclude that NRF2HIGH status does not confer inherent resistance to cystine starvation. C32 provides the mechanistic explanation for selective CDO1 sensitivity in NRF2HIGH cells. These conclusions are well-supported by the convergent evidence from multiple experiments (cystine starvation, Na2SO3 treatment, CDO1 expression, and correlation with intracellular cysteine), though the mechanistic claims are partially inferential.",
+    "result_type": "MAJOR"
+  }
+]

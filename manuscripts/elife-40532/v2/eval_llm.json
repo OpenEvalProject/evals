@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C76",
+      "C77"
+    ],
+    "result": "A viable Ttn\u0394112-158 mouse model was successfully created by deleting 47 PEVK exons (exons 112-158) from titin's I-band region, resulting in a skeletal-muscle-specific effect. Homozygous mice followed Mendelian genetics, survived without obvious phenotype for up to 1 year, and had normal skeleton size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21, C76-C77 collectively demonstrate successful creation of the mouse model with appropriate characterization. The deletion is well-documented (genomic coordinates, protein size), viability is confirmed (Mendelian ratios, survival), and skeletal-muscle specificity is established through exon expression patterns in cardiac tissue. The data in Figures 1A-D provide strong supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Ttn\u0394112-158 mice had normal body weight at 60 days but developed significant weight reduction with age, while maintaining normal skeleton size as indicated by identical tibia lengths compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by two-way ANOVA showing significant genotype effect on body weight across ages (Figure 1D) and no difference in tibia length (Figure 1\u2014figure supplement 2). The statistical analysis is appropriate and the measurements are straightforward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Protein analysis confirmed that T1 titin has higher gel mobility in Ttn\u0394112-158 mice while T2 mobility is unchanged, and total titin expression levels remain normal across all muscle types studied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by gel electrophoresis data (Figure 1E) and quantification (Figure 1\u2014figure supplement 3). The higher T1 mobility is consistent with the expected 181 kDa deletion, and unchanged T2 mobility is explained by T2 lacking the targeted PEVK segment. Expression analysis shows no compensatory changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "RNA sequencing confirmed absence of PEVK exons 112-158 in Ttn\u0394112-158 transcripts across all three muscle types, with minimal compensatory splicing changes except for consistent upregulation of Z-disk exons 12-13 and PEVK exon 159. The PEVK segment was reduced from ~1600 to ~420 residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are well-supported by comprehensive RNAseq data (Figure 2, Figure 2\u2014source data 1). PSI analysis quantitatively demonstrates the deletion and minimal off-target effects. The calculated PEVK residue numbers are based on appropriate methodology. The similarity across muscle types is notable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Super-resolution microscopy measurements showed reduced PEVK segment extension in Ttn\u0394112-158 mice, and wormlike chain modeling predicted greatly increased titin-based stiffness compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by SR-SIM measurements (Figure 3A-B) and biophysical modeling (Figure 3C). The methodology is appropriate, using antibodies flanking the PEVK segment. The WLC modeling uses established parameters and the prediction logically follows from the shortened PEVK segment. However, this is a prediction requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Passive tension measurements in intact diaphragm, EDL, and soleus muscles showed much steeper increases with sarcomere length in Ttn\u0394112-158 mice, with passive stiffness increased approximately 5-10 fold in the physiological sarcomere length range (2.45-2.75 \u03bcm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are strongly supported by direct mechanical measurements on intact muscles (Figure 4). The methodology is sound, with appropriate sarcomere length determination and stiffness calculation. The several-fold increase is consistent across all three muscle types studied, providing robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C78"
+    ],
+    "result": "Skinning had minimal effect on passive tension, and KCl/KI extraction experiments demonstrated that titin-based tension dominates over ECM-based tension in both WT and Ttn\u0394112-158 muscles within the physiological sarcomere length range. Titin stiffness was increased ~5-fold in Ttn\u0394112-158 while ECM stiffness increased but remained much lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42, C78 are supported by systematic extraction experiments (Figure 5). The validation using single fibers (which lack ECM) to confirm that KCl/KI extraction specifically removes titin-based tension is a critical control. The quantitative comparison shows titin stiffness exceeds ECM stiffness ~5-10 fold, directly addressing a major controversy in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Maximal active tension was unaffected by genotype in all muscle types studied, but the time to half-maximal tension was significantly reduced in all Ttn\u0394112-158 muscle types. This occurred without changes in myosin isoform composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by force-frequency measurements (Figure 6) and myosin isoform analysis (Figure 6\u2014figure supplement 1). The lack of effect on maximal tension is important for ruling out certain proposed mechanisms. The faster force development without fiber type changes suggests a titin-mediated mechanism, though the exact mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Exercise performance was not impaired in Ttn\u0394112-158 mice, with no differences in voluntary free-wheel running speed/distance or maximal treadmill performance including VO2 consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by comprehensive exercise testing (Figure 7). The lack of functional impairment despite dramatically increased passive stiffness is surprising and suggests successful adaptation. However, the manuscript notes these are female mice, and sex-specific effects should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C80"
+    ],
+    "result": "Ttn\u0394112-158 mice showed a shifted physiological sarcomere length working range to shorter lengths in diaphragm (2.85-2.22 \u03bcm in WT vs 2.37-1.88 \u03bcm in Ttn\u0394112-158) and peripheral muscles, while maintaining normal diaphragm strain amplitude during respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C80 are supported by perfusion-fixation studies combined with ultrasound imaging (Figure 8). The methodology is rigorous, fixing muscles in known physiological states. The shift to shorter sarcomere lengths is consistent across multiple muscle types and represents a major adaptive response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C81"
+    ],
+    "result": "Single fiber measurements revealed significantly increased fiber lengths (13.5%) and a large increase (~30-34%) in the number of sarcomeres in series in all examined Ttn\u0394112-158 muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54, C81 are supported by direct measurements on dissected fibers (Figure 8\u2014figure supplement 1, Figure 9). The methodology is appropriate, using laser diffraction for sarcomere length and calculating sarcomere number from fiber length. The ~30% increase is substantial and consistent across muscle types, providing the mechanism for the shifted sarcomere length range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C58",
+      "C82",
+      "C83"
+    ],
+    "result": "Most Ttn\u0394112-158 muscle types showed significantly increased muscle weight relative to WT controls across multiple ages, without increased cross-sectional area, indicating longitudinal muscle growth. Two-way ANOVA showed both genotype and age effects on muscle weight with no significant interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C57-C58, C82-C83 are supported by systematic muscle weight measurements (Figure 10, Figure 10\u2014figure supplement 1) and cross-sectional area analysis (Figure 10D). The statistical analysis is appropriate. The lack of genotype-age interaction suggests the hypertrophy occurs early and is maintained. The inference that increased weight is due to longitudinal growth is logical given the lack of CSA increase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C79"
+    ],
+    "result": "Thin filament length was significantly reduced from 1165 nm to 1102 nm in Ttn\u0394112-158 diaphragm. Force-sarcomere length modeling showed that WT mice operate on the descending limb while Ttn\u0394112-158 mice operate on the plateau and ascending limb, with average forces within working ranges of 91% (WT) and 96% (Ttn\u0394112-158) of maximum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61, C79 are supported by SR-SIM measurements of thin filament length (Figure 11A) and theoretical force-SL modeling (Figure 11B). The thin filament shortening is a novel finding that compensates for the shifted sarcomere length range. The modeling is based on established principles and measured parameters. However, the force-SL predictions are theoretical and would benefit from direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The upregulation of Z-disk exons 12 and 13 is proposed to be triggered by increased titin-based tension to mechanically strengthen the Z-disk region when titin stiffness is high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is a mechanistic proposal based on the observation of Z-disk exon upregulation and the absence of fiber type switching (C46). While the reasoning is logical, this is explicitly stated as a proposal/speculation without direct experimental validation of the mechanism. The claim requires functional studies to test whether these exons actually strengthen the Z-disk under high tension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The adaptation in physiological sarcomere length range is remarkably effective at normalizing passive stiffness, with identical passive stiffness in the two genotypes when measured within their respective physiological ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by analysis shown in Figure 12, which demonstrates that despite dramatically different stiffness at identical sarcomere lengths, the operating stiffness within physiological ranges is normalized. This is a key finding showing the functional importance of the sarcomere number adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "Ttn\u0394112-158 mice are likely to have lower body fat content based on increased muscle weights combined with reduced body weight and normal body size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 is an inference based on the combination of reduced body weight (C23), increased muscle weight (C55), and normal skeleton size (C24). While the logic is reasonable, this is explicitly stated as a suggestion without direct measurement of body composition. Body fat measurement would be needed to confirm this inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C71"
+    ],
+    "result": "At the macroscopic scale of whole muscle contracting at L0, the titin unfolding/refolding mechanism is unlikely to significantly add to tetanic tension, despite this being a proposed mechanism in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C71 are supported by the lack of increased active tension in Ttn\u0394112-158 muscles despite higher passive tension at L0 (Figure 6B). The manuscript appropriately tests a hypothesis from the literature (C71, citing Eckels et al., 2018) and provides evidence against its significance at the whole muscle level. However, the authors note the mechanism might operate at longer lengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C72"
+    ],
+    "result": "The more rapid force development in Ttn\u0394112-158 muscle is speculated to result from higher passive tension increasing the thick filament ON state, which accelerates force generation upon stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67 and C72 represent speculation about mechanism based on the observed faster force development (C45) and literature on thick filament regulation (C72, citing Piazzesi et al., 2018; Fusi et al., 2016). While the hypothesis is reasonable and consistent with the data, it is explicitly stated as speculation without direct experimental validation of thick filament state or structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The nebulin-free distal segment of the thin filament is speculated to be reduced in length in Ttn\u0394112-158 mice in response to the shifted sarcomere length working range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is speculation about the mechanism of thin filament shortening. While the thin filament shortening is well-documented (C59), and nebulin expression is unchanged (Figure 11\u2014figure supplement 1), the specific mechanism involving the nebulin-free segment is proposed without direct experimental evidence. This would require detailed structural analysis of the thin filament pointed end.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C84"
+    ],
+    "result": "The extensive adaptations required to normalize passive stiffness through serial sarcomere addition indicate that increased passive stiffness is functionally detrimental and must be avoided, though this adaptation is energetically costly as suggested by reduced body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C84 represent interpretations of the extensive adaptations observed (sarcomere addition, thin filament shortening, Z-disk strengthening). The conclusion that increased stiffness is detrimental is logical given the magnitude of compensatory responses. The energetic cost inference is supported by reduced body weight (C23) despite increased muscle mass (C55), though direct metabolic measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Within the physiological sarcomere length range, titin dominates whole muscle passive stiffness analogous to cardiac muscle, allowing rapid regulation through post-translational modifications. ECM functions as a brake at extreme sarcomere lengths beyond the physiological range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 represent major conclusions synthesizing the experimental findings. C73 is directly supported by the extraction experiments (C38-C42). C74 is a logical inference about regulatory advantages with appropriate citation. C75 is supported by the observation that ECM stiffness increases at longer lengths (Figure 5D). These conclusions appropriately integrate the findings with broader muscle physiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Future work should focus on early developmental changes to elucidate mechanisms of serial sarcomere addition, with mechano-signaling involving titin strain and titin-binding proteins as a candidate mechanism. The signaling is speculated to be transiently active and dialed down once adaptation is complete.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 represent recommendations for future work and mechanistic speculation. C85 appropriately identifies the need for developmental studies. C86 proposes a candidate mechanism with citation (van der Pijl et al., 2018), but the manuscript notes that expression analysis did not reveal consistent changes. C87 is speculation based on the age-independence of hypertrophy (C82-C83). These are reasonable hypotheses but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background on titin structure and function: Titin is the largest protein (~3800 kDa) spanning the half-sarcomere from Z-disk to M-band, with an I-band region functioning as a molecular spring consisting of tandem Ig and PEVK segments with different biophysical properties. Titin maintains sarcomere structural integrity and limits sarcomere length variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 represent established background knowledge appropriately cited from the literature. These are not novel findings of this study but provide necessary context. All claims are supported by appropriate citations to primary literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background on controversy: While titin's contribution to single fiber passive stiffness is widely accepted, there are conflicting views on its relevance at the whole muscle level, with some proposing ECM dominance and others proposing titin dominance, with cardiac muscle showing titin dominance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 accurately describe the controversy in the field that this study addresses. The claims are appropriately supported by citations representing different viewpoints. This establishes the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on disease relevance: Titin-based stiffness is altered in various muscle diseases, being increased in FSHD and cerebral palsy, and decreased in COPD diaphragm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 provide clinical context with appropriate citations. These establish the translational relevance of understanding titin's role in passive stiffness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The Ttn\u0394112-158 model provides a unique opportunity to test effects of altered titin-based tension on active muscle function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is a valid statement about the utility of the model, supported by the subsequent experiments testing active function (C44-C46). The model does provide a unique tool for mechanistic studies.",
+    "result_type": "MINOR"
+  }
+]

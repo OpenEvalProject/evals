@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors designed and validated sgRNAs targeting the HPRT gene and AluY retrotransposons. For HPRT, sgHPRT-0 and sgHPRT-1 showed strong disruption activity (p\u22640.001), with sgHPRT-0 achieving 57.1% editing efficiency by TIDE assay. For AluY, sgAluY-1 and sgAluY-2 showed DNA fragmentation activity in vitro, with sequencing confirming Cas9-mediated cleavage at AluY consensus sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 provide comprehensive validation of sgRNA functionality through multiple complementary assays (6-TG resistance, TIDE, in vitro cleavage, sequencing). The data demonstrate both functional activity and sequence specificity, with appropriate statistical analysis and controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors generated three dCas9 fusion constructs (dCas9-SB100X, dCas9-N57, N57-dCas9) and validated their expression and functionality. The dCas9-SB100X fusion retained ~30% transposition activity compared to unfused SB100X. The dCas9-N57 fusion showed DNA binding by EMSA, while N57-dCas9 did not and was excluded. Cas9 fusion proteins retained ~30% cleavage activity, confirming DNA-binding capability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are well-supported by Western blot, transposition assay, EMSA, and functional cleavage data. The characterization is thorough with appropriate controls and quantification. The inference that cleavage-competent fusions can bind DNA (C46) is reasonable given established Cas9 mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C52",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors demonstrate proof-of-concept RNA-guided targeting of Sleeping Beauty transposon integrations to endogenous Alu retrotransposons in human cells. Using dCas9-SB100X with sgAluY-1, they observed statistically significant enrichment (~1.5-fold, p=0.019) in a 300 bp window downstream of sgRNA target sites. This represents the first demonstration of RNA-guided transposition for the SB system analyzed at genome-wide scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C52, C97-C99 constitute the main finding and are supported by genome-wide integration site sequencing with statistical validation. The enrichment is modest but statistically significant with appropriate controls (sgL1-1). The novelty claims (C98-C99) are appropriately contextualized relative to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors failed to detect targeted transposition to the single-copy HPRT locus. No insertions were recovered within 5 kb of the sgHPRT-0 binding site. The authors speculate this could be due to characteristics of the HPRT target itself or insufficient system specificity for single-copy sites, noting that even untargeted SB100X showed no integrations within 50 kb of HPRT in a large control dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C73-C77 accurately report a negative result with appropriate speculation about causes. The control data (C74) showing HPRT is generally disfavored by SB, along with citations to similar failures with other systems (C75-C76), provide context. The inference about target site importance (C77) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "The targeted integration sites within AluY elements are normally disfavored by SB transposition machinery. The 300 bp downstream window where enrichment occurs has lower TA dinucleotide frequency than neighboring regions, weaker match to the preferred ATATATAT consensus, and higher nucleosome occupancy. This indicates the CRISPR/Cas9 targeting mechanism forces integration into genomically unfavorable regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C55-C58, C60-C61 are well-supported by sequence analysis, nucleosome occupancy predictions, and comparison to established SB preferences. The data converge to show targeting overcomes intrinsic SB biases. The inference (C58) logically follows from the presented evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "The dCas9-N57 + SB100X system showed weak, non-significant enrichment (~15% in 200 bp window), while dCas9-SB100X showed slight enrichment in a 500 bp window (~20%, not significant). Some enrichment was also detected near imperfect target matches (one mismatch), though not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C53 accurately report non-significant trends in the data. The authors appropriately distinguish these from the significant result with dCas9-SB100X in the 300 bp downstream window. The observation about mismatch tolerance (C53) aligns with known dCas9 properties (C54).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors suggest the observed enrichment likely underestimates true targeting efficiency because their PCR-based method cannot detect independent events at the same TA dinucleotide. The narrow enrichment window suggests physical docking of the transpositional complex and that dCas9 binding and SB integration occur within a short timeframe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C64 involve speculation about technical limitations and mechanistic interpretation. While the reasoning is plausible, these are inferences not directly tested. The narrow window observation (C63) is data-supported, but the mechanistic interpretation (C64) remains speculative without additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The asymmetric distribution of insertions downstream of sgRNA targets was unexpected given that C-terminal Cas9 fusions should localize upstream. The authors speculate this could be due to the flexible linker allowing reach to the far side, or fewer background insertions downstream making the targeting effect more apparent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C69 contextualize the asymmetric pattern with prior work (C65-C66) and structural expectations (C67), but the explanations (C68-C69) are speculative. The observation itself is data-supported, but the mechanistic basis remains unclear and would require additional experiments to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The poor performance of dCas9-N57 compared to previous N57 fusions may be due to the large size of dCas9 (158 kDa) masking N57 function. Previously successful N57 fusions used much smaller DNA-binding domains. The binding activity detected by EMSA may have been too weak for effective recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 provide reasonable speculation about why dCas9-N57 underperformed, supported by comparison to prior work (C71) and EMSA data (C72). However, these remain hypotheses without direct experimental testing of the proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors propose that appropriate target site selection is paramount for targeted transposition. Minimal requirements include accessibility and presence of TA dinucleotides. They suggest targeting transposition 'hot spots' (sites with natural SB insertion clusters) might improve efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C82 synthesize observations from current and prior work to propose design principles. While grounded in data (C79-C81 cite supporting studies), the recommendations (C78, C82) are prospective suggestions not tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The main obstacle to targeted transposition is the low ratio of targeted to non-targeted insertions. Unlike nucleases where activity depends on specific DNA binding, transposition is not dependent on site-specific target binding. The transposase can catalyze integrations without DBD binding to target, creating overwhelming competition from non-specific genomic DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C86-C89 provide a mechanistic explanation for the fundamental challenge of targeted transposition. This is supported by the observed data (low targeting ratios), established transposon biology (C86), and logical inference about competitive binding (C88-C89). Citations to prior work (C83) support the generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose several strategies to improve targeting efficiency: engineering transposase to reduce non-specific DNA affinity (exploiting the positively charged surface), designing mutants deficient in target binding but proficient in catalysis, or implementing temporal control by supplying targeting factors before transposon. They cite a recent piggyBac study where mutant transposase enabled successful dCas9-mediated targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C96 propose future directions based on structural knowledge (C91) and prior work (C94-C95). While the suggestions are scientifically reasonable, they are speculative proposals not tested in this study. The piggyBac precedent (C95) provides some support for the mutant transposase strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors argue that targeted transposition offers advantages over HR-based gene editing: SB works in non-dividing cells (unlike HR which requires S/G2 phase), can transfer large genes (>100 kb), and uses concerted transesterification avoiding problems with free DNA ends and complex rearrangements associated with HR-based insertion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 accurately summarize established differences between transposition and HR-based methods, supported by appropriate citations. These are well-established properties from prior work, correctly applied to contextualize the potential applications of improved targeted transposition systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The introduction establishes background on integrating vectors (retroviruses and transposons), their advantages and limitations, DNA repair pathways, targeted nucleases (ZFNs, TALENs, CRISPR/Cas9), and prior attempts at targeted transposition including dCas9 fusions with other transposon systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C28 constitute background knowledge appropriately cited from prior literature. These establish the scientific context and rationale for the current study. The citations appear appropriate and the characterizations of prior work are consistent with the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C54",
+      "C59"
+    ],
+    "result": "The sgAluY-1 sgRNA has 299,339 target sites in hg38 (exceeding AluY copy number due to conservation in other Alu subfamilies). The specificity of dCas9 binding is lower than Cas9 cleavage. Nucleosome positioning is primarily sequence-driven.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C54, C59 report bioinformatic analysis (C49) and cite established knowledge (C54, C59). The target site count is verifiable from genome sequence, and the cited properties of dCas9 and nucleosome positioning are well-established in the literature.",
+    "result_type": "MINOR"
+  }
+]

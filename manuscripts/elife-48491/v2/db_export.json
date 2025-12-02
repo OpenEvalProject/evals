@@ -1,0 +1,1175 @@
+{
+  "submission": {
+    "id": "47951dc3-2e68-406e-b508-dca9328d4239",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:02:20.267641Z",
+    "updated_at": "2025-12-02T14:02:20.267641Z"
+  },
+  "content": [
+    {
+      "id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "submission_id": "47951dc3-2e68-406e-b508-dca9328d4239",
+      "content_type": "manuscript",
+      "content_text": "# Efficient conversion of chemical energy into mechanical work by Hsp70 chaperones\n\n## Authors\n\n- Salvatore Assenza<sup>1</sup> ([ORCID: 0000-0001-9983-8927](https://orcid.org/0000-0001-9983-8927))\n- Alberto Stefano Sassi<sup>3</sup> ([ORCID: 0000-0002-1269-4746](https://orcid.org/0000-0002-1269-4746))\n- Ruth Kellner<sup>5</sup>\n- Benjamin Schuler<sup>5</sup> ([ORCID: 0000-0002-5970-4251](https://orcid.org/0000-0002-5970-4251))\n- Paolo De Los Rios<sup>3</sup> ([ORCID: 0000-0002-5394-5062](https://orcid.org/0000-0002-5394-5062))\n- Alessandro Barducci<sup>8</sup> ([ORCID: 0000-0002-1911-8039](https://orcid.org/0000-0002-1911-8039)) \u2020\n\n### Affiliations\n\n1. Laboratory of Food and Soft Materials ETH Z\u00fcrich Z\u00fcrich Switzerland\n2. Departmento de F\u00edsica Te\u00f3rica de la Materia Condensada Universidad Aut\u00f3noma de Madrid Madrid Spain\n3. Institute of Physics, School of Basic Sciences \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL) Lausanne Switzerland\n4. IBM TJ Watson Research Center Yorktown Heights New York United States\n5. Department of Biochemistry University of Zurich Zurich Switzerland\n6. Department of Physics University of Zurich Zurich Switzerland\n7. Institute of Bioengineering, School of Life Sciences Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL) Lausanne Switzerland\n8. Centre de Biochimie Structurale (CBS) INSERM, CNRS, Universit\u00e9 de Montpellier Montpellier France\n\n\u2020 Corresponding author\n\n## Abstract\n\nHsp70 molecular chaperones are abundant ATP-dependent nanomachines that actively reshape non-native, misfolded proteins and assist a wide variety of essential cellular processes. Here, we combine complementary theoretical approaches to elucidate the structural and thermodynamic details of the chaperone-induced expansion of a substrate protein, with a particular emphasis on the critical role played by ATP hydrolysis. We first determine the conformational free-energy cost of the substrate expansion due to the binding of multiple chaperones using coarse-grained molecular simulations. We then exploit this result to implement a non-equilibrium rate model which estimates the degree of expansion as a function of the free energy provided by ATP hydrolysis. Our results are in quantitative agreement with recent single-molecule FRET experiments and highlight the stark non-equilibrium nature of the process, showing that Hsp70s are optimized to effectively convert chemical energy into mechanical work close to physiological conditions.\n\n## Introduction\n\nEven though in vitro most proteins can reach their native structure spontaneously\u00a0(Anfinsen, 1973), this is not always the case in cellular conditions and proteins can populate misfolded states which can form cytotoxic aggregates\u00a0(Dobson, 2003). In order to counteract misfolding and aggregation, cells employ specialized proteins, called molecular chaperones, which act on non-native protein substrates by processes that stringently depend on ATP hydrolysis for most chaperone families\u00a0(Hartl, 1996). Among them, the ubiquitous 70 kDa heat-shock proteins (Hsp70s) play a special role because they assist a plethora of fundamental cellular processes beyond prevention of aggregation (Clerico et al., 2019; Rosenzweig et al., 2019).\n\nDecades of biochemical and structural studies have clarified the core elements of the Hsp70 functional cycle at the molecular level\u00a0(Mayer, 2013). Hsp70s consist of two domains: the substrate binding domain (SBD) interacts with disparate substrate proteins, whereas the nucleotide binding domain (NBD) is responsible for the binding and hydrolysis of ATP. The two domains are allosterically coupled, and the nature of the nucleotide bound to the NBD affects the structure of the SBD and as a consequence the affinity for the substrate and its association/dissociation rates. More precisely, when the chaperone is in the ATP-bound state, the SBD is open and easily accessible to the substrate, whereas the SBD is closed when ADP is bound. These structural differences result in substrate binding and unbinding rates when ATP is bound that are orders of magnitude faster than when ADP is bound (Mayer et al., 2000). Furthermore, the coupling is bidirectional: the substrate, together with a co-localized J-domain protein (JDP) that serves as cochaperone (Kampinga and Craig, 2010; Kampinga et al., 2019), greatly accelerates the hydrolysis of ATP. Substrate binding thus benefits from the fast association rate of the ATP-bound state and the slow dissociation rate of the ADP-bound state, resulting in a non-equilibrium affinity (ultra-affinity) that can be enhanced beyond the maximum limit allowed by thermodynamic equilibrium, namely the affinity of the ADP-bound state (De Los Rios and Barducci, 2014; Barducci and De Los Rios, 2015).\n\nMore recently, the consequences of Hsp70 binding on the conformational ensembles of its substrates have also been investigated. Several lines of evidence indicate that the binding of Hsp70s to a polypeptide induces its expansion. Biochemical assays revealed that binding of Hsp70 increases the sensitivity of misfolded Luciferase to proteolysis and decreases its propensity to bind Thioflavin-T, strongly suggesting a loss of compactness (Sharma et al., 2010).\u00a0Nuclear Magnetic Resonance (NMR) measurements have shown that Hsp70s destabilize the tertiary structure of several different substrates (Lee et al., 2015; Sekhar et al., 2015). Moreover, a single-molecule study based on F\u00f6rster resonance energy transfer (FRET) spectroscopy quantified the considerable expansion of unfolded rhodanese in native conditions upon binding of multiple Hsp70 chaperones. In particular, this study revealed that the expansion is stringently ATP-dependent, because upon ATP exhaustion the system relaxes to the expansion values observed in the absence of chaperones (Kellner et al., 2014).\n\nDespite these advances in the characterization of Hsp70 functioning, the mechanistic understanding of how the energy of ATP hydrolysis is used to expand a substrate has lagged behind. Our goal here is precisely to fill this gap between the molecular and functional characterization of Hsp70. To this aim, we first explore the structural and energetic features of Hsp70-bound rhodanese using Molecular Dynamics (MD) simulations. We next integrate this molecular information into a rate model that explicitly includes the Hsp70-rhodanese interactions and the chaperone ATPase cycle, thus elucidating how Hsp70s convert the chemical energy of ATP into mechanical work necessary to expand their substrates.\n\n## Results\n\n### Structural and thermodynamic characterization of chaperone-substrate complexes\n\nTo characterize the main features of chaperone-induced expansion, we performed MD simulations of the Hsp70/rhodanese complexes. We relied on a one-bead-per-residue Coarse Grained (CG) force field (Smith et al., 2014), which has been tailored to match experimental FRET data of intrinsically\u00a0disordered proteins and satisfactorily reproduces the compactness of unfolded rhodanese in native conditions without any further tuning (see Materials\u00a0and\u00a0methods). Hsp70 chaperones were modeled with a structure-based potential to account for their excluded volume and they were artificially restrained to binding sites on the substrate. We identified six binding sites on the rhodanese sequence using two distinct bioinformatic algorithms (R\u00fcdiger et al., 1997; Van Durme et al., 2009). Considering that each binding site could be either free or bound to a Hsp70 protein, we thus took into account a total of 26\u00a0=\u00a064 distinct chaperone/substrate complexes, which were exhaustively simulated. In Figure 1, we report the distributions of the substrate potential energy and of the radius of gyration ($R_{g}$) for three representative complexes with one (left), three (center) and six (right) bound chaperones. Consistently with FRET results (Kellner et al., 2014),\u00a0chaperone binding leads to larger radii of gyration and higher potential energies, implying that the excluded-volume interactions due to the large Hsp70s progressively expand the complex and disrupt the attractive intra-chain interactions in rhodanese.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/48491/elife-48491-fig1-v2.jpg)\n\n**Figure 1.:** Probability density maps of substrate potential energy and radius of gyration for representative Hsp70/rhodanese complexes with one (left), three (center) and six (right) bound chaperones. The different Hsp70 chaperones have been represented with different colors to ease their discernibility.\n\nWe then calculated the conformational free energy of all the possible chaperone/rhodanese complexes to obtain a quantitative picture of the energy landscape governing the chaperone-induced expansion. To this aim, we performed extensive sets of non-equilibrium steering MD trajectories for each complex, and measured the work needed to steer it to a completely extended reference structure ($R_{g}>260$\u00a0\u00c5), whose conformational free\u00a0energy is not affected by chaperone binding. Equilibrium free-energy differences with respect to this reference state were then estimated from non-equilibrium work distributions via the Jarzynski equality (Jarzynski, 1997), thus allowing the determination of the conformational free\u00a0energy $\u0394\u2062G$ of each distinct chaperone/substrate complex (see Figure 2\u2014figure supplement 1 and Materials\u00a0and\u00a0methods).\n\nIn Figure 2 (main), we report $\u0394\u2062G$ for each complex as a function of its mean radius of gyration using different colors for different stoichiometries. The conformational free energy increased with the swelling of the substrate due to the progressive binding of the chaperones. The increase in substrate potential energy due to the loss of intra-chain interactions upon Hsp70 binding is therefore only marginally compensated by the gain in conformational entropy. Notably, the conformational free\u00a0energy is not uniquely determined by the stoichiometry, and is significantly affected by the specific binding pattern. The conformational free-energy cost $\u0394\u2062\u0394\u2062G$ of adding a single chaperone (inset in Figure 2) is positive for all complexes, but it varies from 2 kcal/mol up to 7 kcal/mol depending on the stoichiometry of the complex and on the particular choice of the binding sites. The increase of $\u0394\u2062G$ as a function of $R_{g}$ is quantitatively captured by Sanchez (1979) theory\u00a0for the coil-to-globule collapse transition in polymers (see Figure 2 and Materials\u00a0and\u00a0methods). Remarkably, the excellent agreement is not the outcome of a fitting procedure since all the parameters were extracted from experiments (see Appendix 2). This result further reinforces the reliability of our simulations as well as the general applicability of the present setup beyond the particular system considered in this work.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/48491/elife-48491-fig2-v2.jpg)\n\n**Figure 2.:** Conformational free-energy differences $\u0394\u2062G$ of the Hsp70/rhodanese complexes with respect to the unbound substrate (n\u00a0=\u00a00) plotted as a function of the corresponding radius of gyration $R_{g}$. Each point represents one of the 64 possible binding configurations with color code indicating the number of bound chaperones. The black curve was obtained using the model in Sanchez (1979) (see Appendix 2). (inset) Distribution of $\u0394\u2062\u0394\u2062G$ corresponding to the free-energy cost for binding an additional Hsp70 to a chaperone/substrate complex.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/48491/elife-48491-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Top: representative chaperone/rhodanese complex in the fully-stretched conformation.\u00a0Bottom: Free-energy difference $\\delta\u2062G$ between equilibrium conformations and the fully-stretched state for rhodanese (red line) and two representative chaperone/rhodanese complexes. The double arrows indicate the final value of $\u0394\u2062G$ for the corresponding complex.\n\n### ATP hydrolysis promotes multiple chaperone binding\n\nThe structural and thermodynamic characterization obtained by molecular simulations can be profitably complemented by a kinetic model encompassing relevant biochemical processes in order to determine the probability of each chaperone/substrate complex as a function of the chemical conditions. Notably, a model of the Hsp70 biochemical cycle based on experimental rates was previously used to illustrate how ATP-hydrolysis may result into non-equilibrium ultra-affinity for peptide substrates (De Los Rios and Barducci, 2014). Here, we extend this result to the more complex case of Hsp70-induced expansion by taking into account multiple chaperone binding events and their consequences on the conformational free energy of the substrate.\n\nIn our model, each state corresponds to a single configuration of the chaperone/substrate complex, which is defined by the occupation state of the six Hsp70 binding sites on rhodanese. Each site can be either free or occupied by an ADP- or ATP-bound chaperone for a total of 36\u00a0=\u00a0729 different states. All the relevant molecular processes corresponding to transitions between these states are explicitly modeled, including chaperone binding/unbinding, nucleotide exchange and ATP hydrolysis (see Figure 3). We took advantage of available biochemical data for determining the rate constants associated to all the relevant reactions (see Materials\u00a0and\u00a0methods). Importantly, kinetic rates for Hsp70 binding were modulated by the conformational free\u00a0energies determined by CG MD simulations. Indeed, the unbinding rates of Hsp70 from large-sized protein substrates were observed to be similar to the ones from small peptides, whereas the binding rates can be up to two orders of magnitude smaller (Schmid et al., 1994; Mayer et al., 2000; Kellner et al., 2014). This evidence was further corroborated by a recent NMR study\u00a0(Sekhar et al., 2018) suggesting a conformational selection scenario where the energetic cost due to substrate expansion mostly affects the Hsp70/rhodanese binding rate. Accordingly, we thus considered a substrate-independent unbinding rate constant $k_{o\u2062f\u2062f}$, while we expressed the binding rate constant as\n\n$$\nk_{o\u2062n,i\u2062j}=k_{o\u2062n}^{0}\u2062exp\u2061[-\\beta\u2062\u0394\u2062\u0394\u2062G_{i\u2062j}],\n$$\n\nwhere $\\beta=1/k_{B}T$,\u00a0$k_{B}$ is the Boltzmann constant, T is the absolute temperature, $k_{o\u2062n}^{0}$ is the binding rate measured for a peptide substrate, and $\u0394\u2062\u0394\u2062G_{i\u2062j}$ is the conformational free-energy cost of Hsp70 binding, which depends on the specific initial and final binding patterns $i$ and $j$ in the rhodanese/chaperone complex (see Figure 2, inset). The interactions with JDP cochaperones were not explicitly modeled but the cochaperones were assumed to be colocalized with the substrate, so that their effect was implicitly taken into account in the choice of the rate constants for ATP hydrolysis (Kampinga and Craig, 2010; Hu et al., 2006).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/48491/elife-48491-fig3-v2.jpg)\n\n**Figure 3.:** Each chaperone binding site on rhodanese (black dots) can be either free or occupied by an Hsp70 (yellow), which in turn can be either ADP- or ATP-bound. We depict here for the sake of clarity only a representative portion of the full model, which takes into account six binding sites. The reaction cycle is governed by the rates for chaperone binding/unbinding to the substrate ($k_{o\u2062n}^{A\u2062T\u2062P},k_{o\u2062n}^{A\u2062D\u2062P},k_{o\u2062f\u2062f}^{A\u2062T\u2062P},k_{o\u2062f\u2062f}^{A\u2062D\u2062P}$) and for hydrolysis ($k_{h}^{s}$), synthesis ($k_{s}^{s}$) and exchange ($k_{e\u2062x,D\u2062T}^{e\u2062f\u2062f},k_{e\u2062x,T\u2062D}^{e\u2062f\u2062f})$ of nucleotides bound to the chaperones (see Materials\u00a0and\u00a0methods for further details). Importantly, the binding rate constants, $k_{o\u2062n}^{A\u2062T\u2062P}$ and $k_{o\u2062n}^{A\u2062D\u2062P}$, take into account the conformational free\u00a0energies, according to Equation (1).\n\nThe analytical solution of the model provides the steady-state probability of each binding configuration and allows the exploration of their dependence on external conditions. It is particularly instructive to investigate the system behavior as a function of the ratio between the concentrations of ATP and ADP, which is intimately connected to the energy released by ATP hydrolysis. At thermodynamic equilibrium, the $[A\u2062T\u2062P]/[A\u2062D\u2062P]$ ratio is greatly tilted in favor of ADP ($[A\u2062T\u2062P]_{e\u2062q}/[A\u2062D\u2062P]_{e\u2062q}\u224310^{-9}-10^{-8}$; Alberty, 2005), whereas in the cell ATP is maintained in excess over ADP by energy-consuming chemostats ($[A\u2062T\u2062P]/[A\u2062D\u2062P]>1$; Milo and Phillips, 2015). The $[A\u2062T\u2062P]/[A\u2062D\u2062P]$ ratio hence determines how far the system is from equilibrium, thus representing a natural control parameter for the non-equilibrium biochemical cycle. We thus report in Figure 4\u00a0(top panel) the compound probabilities for complexes with the same stoichiometry $n$ as a function of this nucleotide ratio. In conditions close to equilibrium (very low values of $[A\u2062T\u2062P]/[A\u2062D\u2062P]$), the vast majority of the substrate proteins are free and only about 10% of them are bound to a single chaperone. The population of equimolar complexes increases for $[A\u2062T\u2062P]/[A\u2062D\u2062P]$ between 10\u22122 and 10\u22121 and gives way to larger complexes with multiple chaperones for higher values of the nucleotide ratio. For $[A\u2062T\u2062P]/[A\u2062D\u2062P]>1$, most substrates are bound to at least 4 chaperones, with an average stoichiometry $\u27e8n\u27e9\u223c4.9$ (solid line in Figure 4), bottom panel). Further increase of the nucleotide ratio does not significantly change this scenario indicating an almost constant behaviour in large excess of ATP $([A\u2062T\u2062P]/[A\u2062D\u2062P]>10)$. It is important here to underscore that the binding of the chaperones in these conditions is a non-equilibrium effect, driven by the Hsp70-induced hydrolysis of ATP, and it is not a mere consequence of the excess of ATP over ADP or of the large difference between the substrate association rates to the ATP- and ADP-bound chaperones. Indeed, if we neglect Hsp70 ATPase activity ($k_{h}^{h},k_{s}^{h}=0$) without changing any of the other model parameters, efficient chaperone binding is abolished ($\u27e8n\u27e9\u226a1$, as shown in the bottom panel of Figure 4, dashed line). As a matter of fact, in such equilibrium scenario an excess of ATP over ADP actually slightly disfavors chaperone binding, because the Hsp70 affinity for the substrate is slightly lower in the ATP-bound state than in the ADP-bound state ($k_{o\u2062f\u2062f}^{A\u2062T\u2062P}/k_{o\u2062n}^{A\u2062T\u2062P}>k_{o\u2062f\u2062f}^{A\u2062D\u2062P}/k_{o\u2062n}^{A\u2062D\u2062P}$, see De Los Rios and Barducci, 2014 for further discussion.)\n\n![Figure 4.](https://cdn.elifesciences.org/articles/48491/elife-48491-fig4-v2.jpg)\n\n**Figure 4.:** (Top) compound probabilities for Hsp70/substrate complexes with given number of bound chaperones $n$ as a function of [ATP]/[ADP]. (Bottom) Mean value $\u27e8n\u27e9$ as a function of [ATP]/[ADP] with (solid line) and without (dashed line) ATP hydrolysis.\n\nCombining the steady-state probabilities derived from the rate model with the results of the MD simulations, we can now exhaustively characterize the structural properties of the system. This provides the opportunity to directly compare our model with the results from FRET experiments both in equilibrium and non-equilibrium conditions. To this aim, we first focused on the average radius of gyration of the system at thermodynamic equilibrium ($[A\u2062T\u2062P]\u226a[A\u2062D\u2062P]$) or in non-equilibrium conditions with ATP in large excess over ADP ($[A\u2062T\u2062P]/[A\u2062D\u2062P]>10$). In order to probe the robustness of our results with respect to inaccuracies in the molecular model, we also took into account normally\u00a0distributed errors on the conformational free energies $\u0394\u2062G_{i}$.\n\nThe results are reported as histograms in Figure 5 and they suggest that at equilibrium the average radius of gyration is extremely close to what would be measured in the case of free substrate (dashed line). This is in agreement with the experimental observation that the formation of rhodanese\u2013DnaK complexes is strictly dependent on the hydrolysis of ATP and that ADP cannot trigger the expansion of the substrate (Kellner et al., 2014). Conversely, in large excess of ATP we observe a substantial swelling of the substrate ($75<R_{g}<95$\u00a0\u00c5) due to the ultra-affine binding of Hsp70s. This finding is fully compatible with the size of DnaK/DnaJ/rhodanese complexes determined by single-molecule\u00a0FRET experiments in excess of ATP (Kellner et al., 2014). In this regime, the limited effects of cochaperone binding on substrate conformations, which are not explicitly included in the model, play a minor role in determining the global expansion of the complex.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/48491/elife-48491-fig5-v2.jpg)\n\n**Figure 5.:** Histograms of the radius of gyration for equilibrium (blue) and non equilibrium (red) values of [ATP]. The black dashed line indicates the average radius of unbound rhodanese. (inset) FRET transfer efficiencies as a function of the sequence separation between the fluorescent dyes. The black circles correspond to the experimental values (Kellner et al., 2014). Calculated efficiencies taking into account uncertainties are reported as blue (equilibrium conditions) and red circles (ATP excess).\n\nA more quantitative comparison between the model and the FRET results can be achieved by back-calculating the transfer efficiencies that were experimentally measured for five distinct pairs of fluorescent dyes\u00a0(Kellner et al., 2014). In equilibrium conditions, namely when $[ATP]/[ADP]\u226a1$, the calculated FRET efficiency is ~0.8 for all considered pairs of fluorescent dyes (inset of Figure 5, blue circles) and it matches the experimental results for the compact unbound rhodanese (\u223c0.8). A dramatic difference is instead observed in excess of ATP (red circles), where the expansion of the substrate leads to a significant decrease of the calculated efficiency , in excellent agreement with the experimental values measured in similar conditions\u00a0(black circles). Remarkably, the results correctly captured the non-monotonic behaviour of FRET efficiency as a function of the sequence separation between the dyes, which was not reproduced in previous calculations\u00a0(Kellner et al., 2014). This agreement corroborates the prediction of the DnaK binding sites on the rhodanese sequence and the overall reliability of our model.\n\n### Energy balance and thermodynamic efficiency\n\nMolecular chaperones consume energy via ATP hydrolysis in order to expand rhodanese. It is hence important to determine how effective they are as molecular machines, as well as to assess how favorable the physiological conditions are to perform their biological task.\n\nTo this aim, we calculated the global increase in the overall conformational free energy of the substrate with respect to equilibrium conditions, $\u0394\u2062G_{S\u2062w\u2062e\u2062l\u2062l}$\u00a0(Figure 6, top). This quantity measures the excess probability of each complex with respect to equilibrium conditions weighted by its corresponding conformational free\u00a0energy $\u0394\u2062G_{i}$.\n\n$$\n\u0394\u2062G_{S\u2062w\u2062e\u2062l\u2062l}=\\sumi[p_{i}\u2062(\\frac{[A\u2062T\u2062P]}{[A\u2062D\u2062P]})-p_{i}^{e\u2062q}]\u2062\u0394\u2062G_{i},\n$$\n\nwhere $p_{i}\u2062(\\frac{[A\u2062T\u2062P]}{[A\u2062D\u2062P]})$ is the probability of complex $i$ for a given value of $[A\u2062T\u2062P]/[A\u2062D\u2062P]$ and $p_{i}^{e\u2062q}$ is the same quantity computed at equilibrium conditions. In order to investigate the conversion of chemical energy into mechanical work, it is instructive to focus on the ratio between $\u0394\u2062G_{S\u2062w\u2062e\u2062l\u2062l}$ and the free energy of hydrolysis of ATP $\u0394\u2062G_{h}$,\n\n$$\n\u0394G_{h}=k_{B}T[ln\u2061(\\frac{[ATP]}{[ADP]})\u2212ln\u2061(\\frac{[ATP]_{eq}}{[ADP]_{eq}})].\n$$\n\nThe ratio $\u0394\u2062G_{S\u2062w\u2062e\u2062l\u2062l}/\u0394\u2062G_{h}$ reports on the effectiveness of the transduction process. We plot in Figure 6 (top) this quantity as a function of the $[A\u2062T\u2062P]/[A\u2062D\u2062P]$ ratio considering the estimated inaccuracies of the model as previously done for the gyration radius. Not surprisingly, all these curves exhibit a maximum because the probabilities of the different states, and thus also $\u0394\u2062G_{S\u2062w\u2062e\u2062l\u2062l}$, attain plateaus for $[A\u2062T\u2062P]\u226b[A\u2062D\u2062P]$ (see 4, top panel), whereas $\u0394\u2062G_{h}$ increases monotonically with the nucleotide ratio. The regime where transduction is maximally efficient intriguingly corresponds to values of $[A\u2062T\u2062P]/[A\u2062D\u2062P]$ that are typical of cellular conditions (grey area).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/48491/elife-48491-fig6-v2.jpg)\n\n**Figure 6.:** (Top) Ratio between the conformational free energy and the free energy of ATP hydrolysis, as a function of [ATP]/[ADP]. Dark green curve results from data from molecular simulations and light green curves takes into account normally-distributed uncertainties on calculated $\u0394\u2062G_{i}$. (Bottom) Effective dissociation constant in the case of a single binding site normalized with respect to the corresponding value in equilibrium, as a function of [ATP]/[ADP] (solid black line). Ratio between the non-equilibrium excess of binding free energy $\u0394\u2062G_{b}$ and the free energy of ATP hydrolysis $\u0394\u2062G_{h}$, as a function of [ATP]/[ADP] (dashed red line). The gray region indicates the interval corresponding to physiological conditions.\n\nWe highlight that in our model Hsp70 functioning encompasses two distinct yet intertwined processes: the ATP-dependent binding of the chaperones to the substrate, and its consequent expansion. In this two-step mechanism, the amount of energy available for the mechanical expansion is limited by that provided by non-equilibrium Hsp70 binding, which does not explicitly depend on the overall conformational properties of the substrate. To further dissect the energetic determinants of Hsp70 functioning and obtain more general conclusions, we thus analyzed the energy balance of chaperone binding to a model substrate, such as a peptide with a single binding site. To this aim, we focused on a simplified reaction cycle, which essentially corresponds to a single triangle within the overall scheme in Figure 3 and does not imply any conformational free-energy variation upon Hsp70 binding. We report in Figure 6 (bottom panel, black solid line) the non-equilibrium dissociation constant, $K_{d}^{n\u2062e\u2062q}$, normalized with respect to its equilibrium value $K_{d}^{e\u2062q}$, as a function of [ATP]/[ADP]. When the ratio between the concentrations of ATP and ADP approaches the physiological regime, the dissociation constant drops significantly until it settles at a value that is two orders of magnitude lower than its equilibrium counterpart, as already discussed in De Los Rios and Barducci (2014). Here, we convert the dissociation constant into a binding free-energy excess with respect to equilibrium\n\n$$\n\u0394\u2062G_{b}=-k_{B}\u2062T\u2062ln\u2061[\\frac{K_{d}^{n\u2062e\u2062q}}{K_{d}^{e\u2062q}}]\n$$\n\nthat we can compare to the free energy of ATP hydrolysis, $\u0394\u2062G_{h}$, as previously done in the case of $\u0394\u2062G_{S\u2062w\u2062e\u2062l\u2062l}$. Interestingly, also in this case the energy ratio is maximal in cellular conditions (red dashed line in Figure 6, bottom panel), suggesting that the optimality of the overall expansion process does not depend on specific features of the substrate but it is a direct consequence of the intrinsic kinetic parameters of Hsp70 chaperones.\n\n## Discussion\n\nIntegrating molecular simulations, polymer theory, single-molecule experimental data and non-equilibrium rate models, we have developed a comprehensive framework that provides a quantitative picture of Hsp70-induced expansion of substrate proteins and offers a broad insight into the cellular functioning of this versatile chaperone machine.\n\nWe relied on molecular simulations for characterizing the structural and thermodynamic features of the complexes formed by the bacterial chaperone DnaK and its unfolded substrate rhodanese. Notably, we investigated a large variety of possible chaperone-substrate complexes for determining their conformational free\u00a0energy as a function of stoichiometry and chaperone binding patterns. This computational strategy based on an enhanced-sampling protocol confirmed that excluded-volume interactions upon chaperone binding can greatly perturb the conformational ensemble of the unfolded substrate leading to its expansion. Remarkably, simulation results were found to be in excellent agreement with the predictions of Sanchez theory for globule to coil transition, thus providing another example of how polymer theory can be successfully used to decipher the behaviour of disordered proteins (Sherman and Haran, 2006; Hofmann et al., 2012; Schuler et al., 2016). We then combined conformational free\u00a0energies with available biochemical data to develop an analytical rate model of the chaperone/substrate reaction cycle, which included both chaperone binding/unbinding and nucleotide hydrolysis/exchange processes.\n\nThis model fully takes into account non-equilibrium effects due to ATP hydrolysis and represents a natural extension of the ultra-affinity framework originally developed for peptide substrates with a single Hsp70 binding site\u00a0(De Los Rios and Barducci, 2014). We could thus investigate the population of each complex and the average structural properties of the system as a function of the ATP/ADP nucleotide ratio, which measures how far the system is from thermodynamic equilibrium. The reliability of the model was corroborated by a quantitative comparison with recent single-molecule\u00a0FRET data, indicating that our non-equilibrium framework accurately captures the salient features of the ATP-dependent expansion. We then used this unprecedented access to the thermodynamics details of this complex molecular process to compare the free-energy cost associated with substrate swelling with the chemical energy released by ATP-hydrolysis. Remarkably, this analysis revealed that energy transduction is maximally efficient for ATP/ADP values in cellular conditions. This result hints at the possibility that Hsp70 chaperones have been tuned by evolution to optimize the conversion of chemical energy into mechanical work for substrate expansion. Further analysis indicated that this optimality is likely inherited from the intrinsic properties of Hsp70 chaperones, which can convert up to 20% of the ATP chemical energy into non-equilibrium, excess binding energy at physiological conditions (Figure 6, bottom panel).\n\nFrom a broader perspective, the ATP-driven action of Hsp70s induces a non-equilibrium redistribution of their protein-substrates over their structural ensemble. In particular, thanks to the fine-tuning of the process by co-chaperones (J-domain proteins and Nucleotide Exchange Factors), the expansion process highlighted here, followed by substrate release, may result in the enhancement of the native state population beyond the predictions of thermodynamic equilibrium, as recently observed even under otherwise denaturing conditions (Goloubinoff et al., 2018). Consistently, Zhao and coworkers have recently observed that Hsp70 chaperones crucially contribute in vivo to the solubility and functionality of a sizeable fraction of the E. coli proteome that, in their absence, would instead spontaneously misfold and aggregate (Zhao et al., 2019). Remarkably, a similar effect has been observed in vitro for the GroEL chaperonin (Chakrabarti et al., 2017; Goloubinoff et al., 2018), hinting at the possibility that multiple chaperone families might reshape the equilibrium conformational distribution of proteins through energy-consuming processes. These considerations might have important consequences for our ability to translate results from in vitro experiments to the active cellular context (Bershtein et al., 2013). Likewise, they raise fundamental questions about the evolution of protein sequences: indeed, since chaperones are ubiquitous and very much conserved across the different kingdoms of life, their ability to favor native states might have partially relieved the selection pressure for strong equilibrium thermodynamic stability, thus allowing evolution to proceed faster and to be more tolerant for slightly destabilizing mutations, as suggested in Rutherford and Lindquist (1998); Tokuriki and Tawfik (2009).\n\nBesides the unfolding of non-native substrates discussed in this work, Hsp70s are highly versatile machines that play a fundamental role in a variety of diverse cellular functions such as protein translocation, protein translation, and disassembly of protein complexes. All these processes share basic analogies from the mechanistic point of view: in all these cases, Hsp70 binding to flexible substrates in constrained environments requires the energy of ATP hydrolysis (ultra-affinity) and results in the generation of effective forces due to excluded volume effects (entropic pulling), which ultimately drive protein translocation into mitochondria (De Los Rios et al., 2006; Assenza et al., 2015), clathrin cage disassembly (Sousa et al., 2016) and/or prevention of ribosome stalling (Liu et al., 2013). Here, by detailing how energy flows from ATP hydrolysis to mechanical work due to entropic pulling, we have elucidated a general force-generating mechanism of Hsp70 chaperones. This mechanism does not rely on any power-stroke conformational change but it rather depends on the efficient conversion of ATP chemical energy into ultra-affinity.\n\n## Materials and methods\n\n### Molecular model\n\nIn all the simulations, rhodanese and Hsp70 were coarse grained at the single-residue level as collections of beads centered on the $C_{\\alpha}$ atom of each amino acid. The unfolded state of bovine rhodanese (PDB:2RHS) was modeled according to the force field for disordered proteins from Smith et al. (2014). Two- and three-body bonded interactions along the substrate backbone were included via harmonic potentials, namely $V_{bond}=k_{l}\\sumb(r_{b}\u2212l)^{2}/2$ and $V_{bend}=\\frac{1}{2}k_{\\theta}\\sum\\alpha(\\theta_{\\alpha}\u2212\\theta_{0})^{2}$, respectively. In the previous formulas, $r_{b}$ denotes bond lengths; $\\theta_{\\alpha}$ the bend angles; $l=3.9$\u00a0\u00c5; $(k_{l}/k_{B}T)^{\u22121/2}=0.046$\u00a0\u00c5; $\\theta_{0}=2.12$ rad; $(k_{\\theta}/k_{B}\u2062T)^{-\\frac{1}{2}}=0.26$; and $k_{B}\u2062T$ is the thermal energy. Four-body bonded interactions were implemented as Fourier terms, $V_{dihed}=k_{B}T\\sumd\\sums=14[A_{s}cos\u2061(s\u03d5_{d})+B_{s}sin\u2061(s\u03d5_{d})]$, where $\u03d5_{d}$ is the torsion angle and $A_{1}=0.705$, $A_{2}=-0.313$, $A_{3}=-0.079$, $A_{4}=0.041$, $B_{1}=-0.175$, $B_{2}=-0.093$, $B_{3}=0.030$, $B_{4}=0.030$. The steric repulsion was implemented through a Weeks-Chandler-Andersen potential, $V_{W\u2062C\u2062A}=\\sum_{i\u2062j}V_{r}$, where\n\n$$\nV_{r}={4k_{B}T[(\\frac{\\sigma}{r_{ij}})^{12}\u2212(\\frac{\\sigma}{r_{ij}})^{6}]+k_{B}Tif\u00a0r_{ij}\\leq2^{\\frac{1}{6}}\\sigma0otherwise.\n$$\n\nIn the previous formula, $r_{i\u2062j}$ is the distance between beads $i$ and $j$, while $\\sigma=4.8$\u00a0\u00c5. The hydrophobic part of the potential is specific to the interacting residues and is modeled as the attractive part of the Lennard-Jones potential, $V_{hydro}=\u03f5_{h}\\sumijV_{h}$, where\n\n$$\nV_{h}={4\u03f5_{ij}[(\\frac{\\sigma}{r_{ij}})^{12}\u2212(\\frac{\\sigma}{r_{ij}})^{6}]if\u00a0r_{ij}\\geq2^{\\frac{1}{6}}\\sigma\u2212\u03f5_{ij}otherwise.\n$$\n\nIn the previous formula, $\u03f5_{h}=0.7722\u2062k_{B}\u2062T$ sets the overall strength of the hydrophobic interactions, while $\u03f5_{i\u2062j}$ depends on the residues $i$ and $j$ involved in the interaction, and is defined as the geometric mean of their hydrophobicities, $\u03f5_{i\u2062j}\u2261\\sqrt{\u03f5_{i}\u2062\u03f5_{j}}$. The values of the hydrophobicities considered are based on a shifted and normalized Monera hydrophobicity scale\u00a0(Smith et al., 2014). Electrostatic interactions were neglected based on control FRET experiments (see section 5.3). Without further tuning, this force field gives a radius of gyration of unbound rhodanese equal to $R_{g}=(23.3\\pm0.1)$\u00a0\u00c5, which is in good agreement with the experimental value $R_{g}=(20.1\\pm0.8)$\u00a0\u00c5\u00a0(Kellner et al., 2014; Hofmann et al., 2014).\n\nWe modeled Hsp70 by means of a simple structure-based potential (Assenza et al., 2015) built on the conformation of ADP-bound Hsp70 (Bertelsen et al., 2009,\u00a0PDB:2KHO). We described both the NBD (residues 4\u2013680) and the SBD (residues 690\u2013603) as rigid bodies whereas the interdomain linker (residues 681\u2013689) was modeled according to the potential for flexible proteins described above. Importantly, non-bonded interactions of Hsp70 residues were limited to excluded volume effects and described by WCA potential (see Equation (5)). Electrostatic interactions were not explicitly included due to their marginal role in Hsp70/rhodanese complexes evidenced by FRET experiments (Appendix 1).\n\nThe binding sites for DnaK on the substrate were identified by applying the algorithms by R\u00fcdiger et al. (1997) and Van Durme et al., 2009 on rhodanese and selecting only fragments for which at least partial consensus between the two predictions was obtained. Following this procedure, we identified six binding sites roughly centered on residues 10, 118, 131, 162, 188, 260 of the rhodanese sequence. The residues of the binding site were aligned to a SBD-bound peptide reported in the literature (PDB:1DKX Zhu et al., 1996) and constrained to move rigidly with the corresponding SBD, thus ensuring that each chaperone was irreversibly bound to the substrate. Following this procedure, 26\u00a0=\u00a064 different chaperone/substrate complexes were built depending on the occupancy of each binding site.\n\n### Simulation protocols\n\nAll the simulations were performed with a version of LAMMPS (Plimpton, 1995) patched with the open-source, community-developed PLUMED library (Bonomi et al., 2019), version 2.1\u00a0(Tribello et al., 2014). The temperature $T=293\u2062K$ was controlled through a Langevin thermostat with damping parameter 16\u00a0ns-1. The time step was set equal to 1 fs, and each residue had a mass equal to 1 Da.\n\nIn order to obtain conformational properties, for each of the 64 chaperone/rhodanese complexes we performed at least 10 independent simulations of 2\u00a0\u00b7\u00a0107 timesteps. To ensure that full equilibration was achieved, only the last 107 timesteps of the obtained trajectories were considered for analysis. Statistical errors on the computed quantities were estimated as standard errors of the mean computed across independent realizations and are smaller than the size of symbols reported in the figures. The FRET efficiency E for a given couple of dyes was computed starting from the distance $r$ separating the corresponding amino acids as\n\n$$\nE=\\frac{1}{1+(\\frac{r}{r_{0}})^{6}},\n$$\n\nwhere r0\u00a0=\u00a054\u00a0\u00c5, as in Kellner et al. (2014). For each realization, the time average of E was computed. The final values employed to compute the results reported in the inset of Figure 5 in the main text were obtained as the average between independent realizations.\n\nThe conformational free energies were computed by means of steered simulations, where for each complex rhodanese was pulled from equilibrium until an elongated conformation was obtained (Figure 2\u2014figure supplement 1, top panel). Due to the large intermolecular distances, the effect of chaperones on the conformational properties of fully-stretched rhodanese is negligible, so that this state can be used as a reference to compute the free-energy differences between different chaperone/rhodanese complexes. The pulling was implemented by adding a harmonic potential acting on the radius of gyration $R_{g}$ of rhodanese. The equilibrium position of the harmonic trap was increased at a constant pulling speed v\u00a0=\u00a010-5\u00c5/fs from the equilibrium value up to $R_{g}=R_{g}^{fin}$. For each chaperone/substrate complex, 100 independent pulling simulations were performed, starting from uncorrelated initial snapshots extracted from the equilibrium distribution. For each realization, the work\u00a0$W$ performed by the bias potential during the steering process was measured. The free-energy difference $\\delta\u2062G$ between the equilibrium starting point and the reference state (corresponding to $R_{g}^{fin}$) was then computed via the Jarzynski (1997) equality:\n\n$$\ne^{-\\frac{\\delta\u2062G}{k_{B}\u2062T}}=\u27e8e^{-\\frac{W}{k_{B}\u2062T}}\u27e9,\n$$\n\nwhere $\u27e8\u2026\u27e9$ denotes statistical average. The error on $\\delta\u2062G$ was estimated according to the bootstrap method. The quantity $\u0394\u2062G$ considered in the main text was finally computed as $\u0394\u2062G=\\delta\u2062G_{0}-\\delta\u2062G$, where $\\delta\u2062G_{0}$ corresponds to the case of rhodanese alone (Figure 2\u2014figure supplement 1, bottom panel). The uncertainty on $\u0394\u2062G$ was estimated by propagating the error bars on $\\delta\u2062G$ and is always smaller than the size of symbols. In order to enhance the robustness of the results, the final values reported in the main text were obtained as a further average over the values of $R_{g}^{fin}$ within the range 260 \u00c5 \u2264 $R_{g}^{fin}$ \u2264 290 \u00c5.\n\n### Rate model\n\nFor the kinetic model we consider a system in which each of the six binding sites can either be occupied by a chaperone in the ATP or ADP state, or it can be free, so that in total there are 36\u00a0=\u00a0729 possible configurations. The concentration $c_{i}$ of each state evolves in time according to a system of rate equations\n\n$$\n\\frac{d\u2062c_{i}}{d\u2062t}=\\sumjk_{j\u2062i}\u2062c_{j}-\\sumjk_{i\u2062j}\u2062c_{i}\n$$\n\nwhere $k_{i\u2062j}$ is the transition rate from state $i$\u00a0to state $j$. The first term in the right hand side (r.h.s.) of Equation (9) represents the total flux of molecules from the other states toward state $i$, while the second term in the r.h.s. of Equation (9) accounts for the flux of molecules from state $i$ to any other state. We focused on the steady-state, when the concentrations of the various states do not change over time, which is defined by\n\n$$\n\\frac{d\u2062c_{i}}{d\u2062t}=0\n$$\n\nHere, we provide a list of the relevant reactions that must be taken into account and of their corresponding rates. Each configuration is labelled by means of six symbols: 0\u00a0for empty sites, $T$ for sites occupied by an ATP-bound chaperone and $D$ for sites occupied by an ADP-bound chaperone (e.g.\u00a0$(0,T,0,D,0,0)$, where the first, third, fifth and sixth Hsp70 binding sites are unoccupied, the second binding site is associated to a chaperone in the ATP-bound state while the fourth binding site is associated with a chaperone in the ADP-bound state). With this notation, the rates corresponding to every reaction are easily determined. Examples of the reactions that need to be considered are\n\n$$\n(0,T,0,0,0,0)\u21cck_{off}^{adp}[Hsp70\u22c5ADP]k_{on}^{adp}e^{\u2212\\beta\u0394\u0394G}(0,T,0,D,0,0)(0,T,0,0,0,0)\u21cck_{off}^{atp}[Hsp70\u22c5ADP]k_{on}^{atp}e^{\u2212\\beta\u0394\u0394G}(0,T,0,T,0,0)\n$$\n\n$$\n(0,T,0,T,0,0)\u21cck_{s}^{s}k_{h}^{s}(0,T,0,D,0,0)\n$$\n\n$$\n(0,T,0,D,0,0)\u21cck_{ex,TD}^{eff}k_{ex,DT}^{eff}(0,T,0,T,0,0).\n$$\n\nWe further provide, as an example, the equation for a precise configuration, say $(0,T,0,D,0,0)$ (here the label stands for the concentration of the configuration). The two binding sites that are occupied can undergo chaperone unbinding, ATP hydrolysis/synthesis or nucleotide exchange. The remaining unoccupied binding sites can bind either an ATP- or an ADP-bound chaperone. We thus have\n\n$$\n\\frac{d}{dt}(0,T,0,D,0,0)=\u2212(0,T,0,D,0,0)\u2217(k_{ex,DT}^{eff}+k_{s}^{s}+k_{ex,TD}^{eff}+k_{h}^{s}+k_{off}^{atp}+k_{off}^{adp})++(0,0,0,D,0,0)[Hsp70\u22c5ATP]k_{on}^{atp}e^{\u2212\\beta\u0394\u0394G}++(0,T,0,0,0,0)[Hsp70\u22c5ADP]k_{on}^{adp}e^{\u2212\\beta\u0394\u0394G}++(T,T,0,D,0,0)k_{off}^{atp}++(D,T,0,D,0,0)k_{off}^{adp}++(0,T,T,D,0,0)k_{off}^{atp}++(0,T,D,D,0,0)k_{off}^{adp}++(0,T,0,D,T,0)k_{off}^{atp}++(0,T,0,D,D,0)k_{off}^{adp}++(0,T,0,D,0,T)k_{off}^{atp}++(0,T,0,D,0,D)k_{off}^{adp}.\n$$\n\nBelow we further detail the rates of our model.\n\nIt is possible to move from an ATP-state to an ADP-state either via hydrolysis/synthesis or via nucleotide exchange. In the case of exchange, effective constants are used, which take into account the unbinding of one nucleotide species and the binding of the different one. The effective exchange rates are thus a function of the ratio [ATP]/[ADP] (see also De Los Rios and Barducci, 2014):\n\n$$\nk_{ex,DT}^{eff}=\\frac{k_{\u2212D}k_{+T}\\frac{[ATP]}{[ADP]}}{k_{+D}+k_{+T}\\frac{[ATP]}{[ADP]}}\n$$\n\n\n\n$$\nk_{ex,TD}^{eff}=\\frac{k_{\u2212T}k_{+D}}{k_{+D}+k_{+T}\\frac{[ATP]}{[ADP]}},\n$$\n\nwhere $k_{+D}$, $k_{+T}$, $k_{-D}$ and $k_{-T}$ are the binding and unbinding rates for ADP and ATP respectively.\n\nThe rates of binding between the chaperone and single peptides have been previously determined experimentally (Mayer et al., 2000), and they were corrected in order to take into account the conformational change of the full polypeptide substrate upon binding, as we illustrated in the main text.\n\nSubstrate binding enhances the chaperone ATPase activity. Furthermore, the stimulation of ATP hydrolysis always takes place in cooperation with JDP co-chaperones. In our model, we did not consider them explicitly but their contribution was implicitly included through the choice of the rate constants.\n\nIn particular, the hydrolysis rate in the absence of the substrate, $k_{h}$, is much smaller than the same rate in the presence of the substrate, $k_{h}^{s}$ ($k_{h}\u226ak_{h}^{s}$). We assumed that the ratio between the rate of hydrolysis $k_{h}$ and the rate of synthesis $k_{s}$ is not altered by the substrate:\n\n$$\n\\frac{k_{h}}{k_{s}}=\\frac{k_{h}^{s}}{k_{s}^{s}}.\n$$\n\nThe substrate binding/unbinding rates, the rates of nucleotide exchange and the hydrolysis and synthesis rates are collectively constrained by thermodynamic relations. Indeed, when the ratio between the concentrations of ATP and ADP is equal its equilibrium value (when the spontaneous hydrolysis and synthesis reactions are at steady state and compensate each other), detailed balance must be satisfied (Ge et al., 2012). As a consequence, for every closed cycle in the reaction network the product of the rates in one direction must be equal to the product of the rates in the opposite direction. Therefore, if $k_{o\u2062n}^{a\u2062t\u2062p}$, $k_{o\u2062n}^{a\u2062d\u2062p}$, $k_{o\u2062f\u2062f}^{a\u2062t\u2062p}$ and $k_{o\u2062f\u2062f}^{a\u2062d\u2062p}$ are the rate of substrate binding and unbinding from a chaperone in the ATP and ADP states, we must have\n\n$$\n\\frac{k_{o\u2062n}^{a\u2062t\u2062p}\u2062k_{h}^{s}\u2062k_{o\u2062f\u2062f}^{a\u2062d\u2062p}\u2062k_{s}}{k_{o\u2062n}^{a\u2062d\u2062p}\u2062k_{s}^{s}\u2062k_{o\u2062f\u2062f}^{a\u2062t\u2062p}\u2062k_{h}}=\\frac{k_{o\u2062n}^{a\u2062t\u2062p}\u2062k_{o\u2062f\u2062f}^{a\u2062d\u2062p}}{k_{o\u2062n}^{a\u2062d\u2062p}\u2062k_{o\u2062f\u2062f}^{a\u2062t\u2062p}}=1.\n$$\n\nRemarkably, taking the rates as provided in Mayer et al. (2000); Hu et al. (2006); Kellner et al. (2014), this relation is not satisfied, and we had thus to modify them. We thus calculated the product in the formula above and then corrected the rates in the following way:\n\n$$\n\\frac{k_{on}^{atp}k_{off}^{adp}}{k_{on}^{adp}k_{off}^{atp}}=r\n$$\n\n\n\n$$\nk_{on}^{atp},k_{off}^{adp}\u2192k_{on}^{atp}/r^{1/4},k_{off}^{adp}/r^{1/4}\n$$\n\n\n\n$$\nk_{on}^{adp},k_{off}^{atp}\u2192k_{on}^{adp}\u2217r^{1/4},k_{off}^{atp}\u2217r^{1/4}.\n$$\n\nThe concentration of free chaperones in the ATP and in the ADP states was obtained, at the leading order, by solving a three-state system whose reactions have the form\n\n$$\nHsp70+ADP\u21ccHsp70\u22c5ADP\u21ccHsp70\u22c5ATP\u21ccHsp70+ATP.\n$$\n\nSince we worked in the assumption of excess of chaperones in the system, once these concentrations were obtained, they remained fixed once for all, without being considered as a variable of the biochemical network.\n\nWe report in the following table the rates used in the model.\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Parameters of the model (Mayer et al., 2000; Hu et al., 2006; Kellner et al., 2014)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ko\u2062f\u2062fa\u2062t\u2062p\u2003\u20032.31\u2062s-1</td>\n      <td>ko\u2062f\u2062fa\u2062d\u2062p\u2003\u20032*10-3\u2062s-1</td>\n    </tr>\n    <tr>\n      <td>k-T\u2003\u20031.33*10-4\u2062s-1</td>\n      <td>k-D\u2003\u20030.022\u2062s-1</td>\n    </tr>\n    <tr>\n      <td>ko\u2062na\u2062t\u2062p\u2003\u20031.28*106\u2062M-1\u2062s-1</td>\n      <td>ko\u2062na\u2062d\u2062p\u2003\u2003103\u2062M-1\u2062s-1</td>\n    </tr>\n    <tr>\n      <td>k+T\u2003\u20031.3*105\u2062M-1\u2062s-1</td>\n      <td>k+D\u2003\u20032.67*105\u2062M-1\u2062s-1</td>\n    </tr>\n    <tr>\n      <td>kh\u2003\u20036*10-4\u2062s-1</td>\n      <td>khs\u2003\u20031.8\u2062s-1</td>\n    </tr>\n  </tbody>\n</table>\n\nTo test the robustness of the model for the radius of gyration, the average FRET efficiency and the free-energy $\u0394\u2062G_{s\u2062w\u2062e\u2062l\u2062l}$, 100 realizations were implemented, taking each time the values $\u0394\u2062G_{i}$ from a Gaussian distribution with $\\sigma=0.3$ kcal/mol and mean equal to the value obtained with the MD simulations.\n\n### Molecular graphics\n\nMolecular graphics in Figures 1 and 6 have been generated with UCSF Chimera, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from NIH P41-GM103311 (Pettersen et al., 2004).\n",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "b9c26f60-c8a3-414e-9a23-12a3f4b52dbf",
+      "submission_id": "47951dc3-2e68-406e-b508-dca9328d4239",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arup K Chakraborty, Massachusetts Institute of Technology United States\n\nReviewers:\n- Elena Papaleo, Danish Cancer Society Research Center Denmark\n\n## Review text\n\nDOI: [10.7554/eLife.48491.sa1](https://doi.org/10.7554/eLife.48491.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nIn this paper, the authors provide a very nice description of how non-equilibrium effects can drive a particular biological phenomenon.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Efficient conversion of chemical energy into mechanical work by Hsp70 chaperones\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Arup Chakraborty as the Senior and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal their identity: Elena Papaleo (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYour paper, which builds on a previous publication, provides new insights into a non-equilibrium biological problem, and also represents a nice use of MD calculations coupled to Jarzinsky's relation. There are two major comments that need to be addressed.\n\nEssential revisions:\n\n1) The kinetic rate model is very simple, however with many parameters. The innovation seems to be that you incorporate the free energies \u2206\u2206G (calculated from MD) into the kinetic rate model, and obtain the probabilities of n. If we understood correctly, the end result that higher the concentration of ATP, higher the occupation number n seems simple enough, because you choose konATP\u226bkonADP in the table of parameters, and therefore one should naturally expect it. So, it is unclear what is non-trivial in this interpretation given the choice konATP\u226bkonADP.\n\n2) The paper is not written very clearly, especially for a general biological audience, which constitutes the readership of eLife.\n\nWe have appended the two reviews below, so you can directly address other points that need to be addressed.\n\nReviewer #1:\n\nThe authors study the probability of binding of chaperones to protein substrates. The article utilizes (i) MD simulations towards calculating free energy differences (\u2206\u2206G) of incremental binding of chaperon complexes onto the substrate, (ii) uses a simple polymer model to predict the \"free energy differences\" (\u2206G), and (iii) implement a multi-parameter kinetic rate model to predict the probability of number of occupied chaperones as a function of ratio of ATP and ADP concentrations. These studies seem to be extensions of some of the authors' previous studies on chaperones, as they utilize some parameters from their earlier studies.\n\n1) The article utilizes Jarzynski's equality for calculating the free energy differences. The free energy calculations are very expensive in nature due to the possibility of many conformations and number of states. The calculations appear fine. The agreement between polymer theory and the MD calculations is nice. The calculations by taking the stretched end state as a reference is clever. This work provides another example for the utility of non-equilibrium work calculations in obtaining the free energies for biological systems. I liked this aspect of the work.\n\n2) Here is my main comment: The kinetic rate model is very simple, however with many parameters. The innovation seems to be that they incorporate the free energies \u2206\u2206G (calculated from MD) into the kinetic rate model, and obtain the probabilities of n. If I did not misunderstand, the end result that higher the concentration of ATP, higher the occupation number n seems simple enough, because they choose konATP\u226bkonADP in the table of parameters, and therefore one should naturally expect it. So, I would like to know what is non-trivial in this interpretation given the choice konATP\u226bkonADP.\n\nA far more interesting study would have been to understand the mechanisms that help us understand konATP\u226bkonADP depending on the protein and chaperon configurations and allostery, but this is beyond the scope of the current article. So, the authors may take this as a suggestion for future works.\n\n3) Also, the authors arguments on energy efficiencies in converting the chemical energy to mechanical energy are not motivated properly, as the choice for the definition of efficiency is not clear. Why is Equation 2 a good definition for efficiency? It\u2019s just that the system is not in thermal equilibrium and because of the rates chosen, one will expect to see increased probabilities of occupation of chaperones with increased concentration ratio of ATP to ADP?\n\nDecision: I am inclined to consider the article for publication in eLife when I see the response for point 2.\n\nReviewer #2:\n\nThe work by Barducci's group and collaborators illustrates an elegant computational study, validated against experimental data, to unveil thermodynamics and kinetic details of the mechanism of substrate expansion induced by the Hsp70 chaperone.\n\nThe work is technically sound and well designed, the agreement with the FRET data are encouraging in the direction that this kind of models can provide important insight into the mechanistic aspects of the process and the critical role played by ATP.\n\nDespite the impressive work, the presentation of the data in the manuscript can be improved and guides the reader better in conveying some of the main messages. I thus encourage the authors to revise the writing and data presentation in figures and supplementary information carefully. Sometimes the writing sounds rather technical. A revision could be done to make it more accessible to a broader readership, especially more biology-oriented so that the outcome of this nice work can be better appreciated not only by specialists and does not risk to get lost.\n\nSubsection \u201cStructural and thermodynamic characterisation of chaperone-substrate complexes\u201d \u2013 the authors say that they used a coarse-grained force field tailored to disordered proteins and it works appropriately for the unfolded state of the substrate of interest, but are they using the same model also for the chaperone protein? How did they ensure that this model is a good compromise to simulate at the same time the unfolded substrate and the folded chaperone? Could the authors discuss more in details about this?\n\nDiscussion \u2013 how much it is expected to be a specific mechanism for Hsp70 or could be common to other chaperones? Perhaps the authors could consider having a more general discussion and future perspective.\n\nAnother concern that I have is about data availability to reproduce the calculations/simulations and comparisons with experimental data. There are different options that the authors can consider and widely used by the molecular modeling and computational community. For example, they could use a GitHub repository to release the input files for the simulations, scripts to reproduce them, along with scripts to reproduce the analyses. GitHub, of course, has limitation to raw data if the authors want to make accessible the trajectories, they should probably look for repositories that provide more space than GitHub. Otherwise, they could add a statement in the manuscript that the trajectories will be available upon request, as it has been done in other similar publications. I believe that the input files and scripts would already be a significant advantage in the direction of accessibility and reproducibility.\n\nThe corresponding author is one of the members of the recently established PLUMED consortium, and I would encourage to deposit the input files also in the PLUMED-NEST repository.\n",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3672e5ee-411f-4a86-9112-e6069bf9b0d6",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C1",
+      "claim": "Most proteins can reach their native structure spontaneously in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though in vitro most proteins can reach their native structure spontaneously (Anfinsen, 1973), this is not always the case in cellular conditions and proteins can populate misfolded states which can form cytotoxic aggregates (Dobson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Anfinsen, 1973",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "e2eee53d-0f2e-468b-a662-b0ec13767361",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C2",
+      "claim": "Proteins can populate misfolded states which can form cytotoxic aggregates in cellular conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though in vitro most proteins can reach their native structure spontaneously (Anfinsen, 1973), this is not always the case in cellular conditions and proteins can populate misfolded states which can form cytotoxic aggregates (Dobson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dobson, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "765fa35e-30e3-433f-b0ca-d7e9f6f8644d",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C3",
+      "claim": "Cells employ specialized proteins called molecular chaperones to counteract misfolding and aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to counteract misfolding and aggregation, cells employ specialized proteins, called molecular chaperones, which act on non-native protein substrates by processes that stringently depend on ATP hydrolysis for most chaperone families (Hartl, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hartl, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "a7093060-4ea4-49b0-a833-793d31481f4d",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C4",
+      "claim": "Molecular chaperone processes stringently depend on ATP hydrolysis for most chaperone families.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to counteract misfolding and aggregation, cells employ specialized proteins, called molecular chaperones, which act on non-native protein substrates by processes that stringently depend on ATP hydrolysis for most chaperone families (Hartl, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hartl, 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "a307d1eb-a7ae-4632-8961-2125c9c3971c",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C5",
+      "claim": "Hsp70s assist a plethora of fundamental cellular processes beyond prevention of aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Among them, the ubiquitous 70 kDa heat-shock proteins (Hsp70s) play a special role because they assist a plethora of fundamental cellular processes beyond prevention of aggregation (Clerico et al., 2019; Rosenzweig et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Clerico et al., 2019 and Rosenzweig et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "e585eb1d-42ef-4fa0-892b-7c70b1b4713a",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C6",
+      "claim": "Hsp70s consist of two domains: the substrate binding domain (SBD) and the nucleotide binding domain (NBD).",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp70s consist of two domains: the substrate binding domain (SBD) interacts with disparate substrate proteins, whereas the nucleotide binding domain (NBD) is responsible for the binding and hydrolysis of ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayer, 2013 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "49c11a43-9305-4e7d-a19d-4a6dc21b8fce",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C7",
+      "claim": "The substrate binding domain (SBD) interacts with disparate substrate proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp70s consist of two domains: the substrate binding domain (SBD) interacts with disparate substrate proteins, whereas the nucleotide binding domain (NBD) is responsible for the binding and hydrolysis of ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayer, 2013 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "15b6ed32-e39f-46cb-b500-29a4998f4d70",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C8",
+      "claim": "The nucleotide binding domain (NBD) is responsible for the binding and hydrolysis of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Hsp70s consist of two domains: the substrate binding domain (SBD) interacts with disparate substrate proteins, whereas the nucleotide binding domain (NBD) is responsible for the binding and hydrolysis of ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayer, 2013 in the preceding sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "c506ff8e-0869-4ae1-9635-587ebd351154",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C9",
+      "claim": "The two domains of Hsp70 are allosterically coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "The two domains are allosterically coupled, and the nature of the nucleotide bound to the NBD affects the structure of the SBD and as a consequence the affinity for the substrate and its association/dissociation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayer, 2013 in the preceding context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "242733cc-9a52-4c5c-8326-1748ffbdb4e4",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C10",
+      "claim": "When the chaperone is in the ATP-bound state, the SBD is open and easily accessible to the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, when the chaperone is in the ATP-bound state, the SBD is open and easily accessible to the substrate, whereas the SBD is closed when ADP is bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayer, 2013 in the preceding context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "b2ed36be-5269-46ee-90fb-36e3f303133b",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C11",
+      "claim": "The SBD is closed when ADP is bound to Hsp70.",
+      "claim_type": "EXPLICIT",
+      "source": "More precisely, when the chaperone is in the ATP-bound state, the SBD is open and easily accessible to the substrate, whereas the SBD is closed when ADP is bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayer, 2013 in the preceding context",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "11d6ad46-5b11-44f0-b44a-2ad383620076",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C12",
+      "claim": "Substrate binding and unbinding rates when ATP is bound are orders of magnitude faster than when ADP is bound.",
+      "claim_type": "EXPLICIT",
+      "source": "These structural differences result in substrate binding and unbinding rates when ATP is bound that are orders of magnitude faster than when ADP is bound (Mayer et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayer et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "1bc57f03-1672-4d9b-bc83-4c99afb789df",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C13",
+      "claim": "The substrate, together with a co-localized J-domain protein (JDP), greatly accelerates the hydrolysis of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the coupling is bidirectional: the substrate, together with a co-localized J-domain protein (JDP) that serves as cochaperone (Kampinga and Craig, 2010; Kampinga et al., 2019), greatly accelerates the hydrolysis of ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kampinga and Craig, 2010 and Kampinga et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "ddfb76a4-22a2-44a7-b325-4ea9483e43bd",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C14",
+      "claim": "J-domain protein (JDP) serves as cochaperone.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the coupling is bidirectional: the substrate, together with a co-localized J-domain protein (JDP) that serves as cochaperone (Kampinga and Craig, 2010; Kampinga et al., 2019), greatly accelerates the hydrolysis of ATP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kampinga and Craig, 2010 and Kampinga et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "ea57d7f2-4bc7-4826-a86a-908e5b1c3ace",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C15",
+      "claim": "Non-equilibrium affinity (ultra-affinity) can be enhanced beyond the maximum limit allowed by thermodynamic equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Substrate binding thus benefits from the fast association rate of the ATP-bound state and the slow dissociation rate of the ADP-bound state, resulting in a non-equilibrium affinity (ultra-affinity) that can be enhanced beyond the maximum limit allowed by thermodynamic equilibrium, namely the affinity of the ADP-bound state (De Los Rios and Barducci, 2014; Barducci and De Los Rios, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Los Rios and Barducci, 2014 and Barducci and De Los Rios, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "aaef3af8-83aa-46ef-a230-ebe7f57a9306",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C16",
+      "claim": "Binding of Hsp70 increases the sensitivity of misfolded Luciferase to proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical assays revealed that binding of Hsp70 increases the sensitivity of misfolded Luciferase to proteolysis and decreases its propensity to bind Thioflavin-T, strongly suggesting a loss of compactness (Sharma et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sharma et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "1f046e40-0454-48d6-b26f-0848f0ed730d",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C17",
+      "claim": "Binding of Hsp70 decreases the propensity of misfolded Luciferase to bind Thioflavin-T.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical assays revealed that binding of Hsp70 increases the sensitivity of misfolded Luciferase to proteolysis and decreases its propensity to bind Thioflavin-T, strongly suggesting a loss of compactness (Sharma et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sharma et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "cf4857f8-0100-483e-9957-39f036b79d16",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C18",
+      "claim": "Hsp70s destabilize the tertiary structure of several different substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear Magnetic Resonance (NMR) measurements have shown that Hsp70s destabilize the tertiary structure of several different substrates (Lee et al., 2015; Sekhar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lee et al., 2015 and Sekhar et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "7f5b1147-cd41-4e95-82c2-0f6d629f8e02",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C19",
+      "claim": "Single-molecule FRET spectroscopy quantified the considerable expansion of unfolded rhodanese in native conditions upon binding of multiple Hsp70 chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a single-molecule study based on F\u00f6rster resonance energy transfer (FRET) spectroscopy quantified the considerable expansion of unfolded rhodanese in native conditions upon binding of multiple Hsp70 chaperones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kellner et al., 2014 in the following sentence",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "97238e22-5b2a-42ad-bdb9-37848232b6e8",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C20",
+      "claim": "The expansion of rhodanese is stringently ATP-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, this study revealed that the expansion is stringently ATP-dependent, because upon ATP exhaustion the system relaxes to the expansion values observed in the absence of chaperones (Kellner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kellner et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "97ec6f0c-a5be-43e0-be8b-34aff70650d2",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C21",
+      "claim": "Upon ATP exhaustion the system relaxes to the expansion values observed in the absence of chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, this study revealed that the expansion is stringently ATP-dependent, because upon ATP exhaustion the system relaxes to the expansion values observed in the absence of chaperones (Kellner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kellner et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "b920f86a-85f6-46be-b947-7ca5826b069b",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C22",
+      "claim": "MD simulations were performed using a one-bead-per-residue Coarse Grained (CG) force field.",
+      "claim_type": "EXPLICIT",
+      "source": "We relied on a one-bead-per-residue Coarse Grained (CG) force field (Smith et al., 2014), which has been tailored to match experimental FRET data of intrinsically disordered proteins and satisfactorily reproduces the compactness of unfolded rhodanese in native conditions without any further tuning (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "5c36370a-2f98-4930-bae3-84ee229268f0",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C23",
+      "claim": "The CG force field satisfactorily reproduces the compactness of unfolded rhodanese in native conditions without any further tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "We relied on a one-bead-per-residue Coarse Grained (CG) force field (Smith et al., 2014), which has been tailored to match experimental FRET data of intrinsically disordered proteins and satisfactorily reproduces the compactness of unfolded rhodanese in native conditions without any further tuning (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smith et al., 2014 and reference to Materials and methods",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "a51ab6f3-dd99-422e-9fc1-e461db6a659d",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C24",
+      "claim": "Six binding sites on the rhodanese sequence were identified using two distinct bioinformatic algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified six binding sites on the rhodanese sequence using two distinct bioinformatic algorithms (R\u00fcdiger et al., 1997; Van Durme et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to R\u00fcdiger et al., 1997 and Van Durme et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "c3f7bae8-66b3-4e0c-967a-56ae25f2beb6",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C25",
+      "claim": "A total of 64 distinct chaperone/substrate complexes were simulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that each binding site could be either free or bound to a Hsp70 protein, we thus took into account a total of 26 = 64 distinct chaperone/substrate complexes, which were exhaustively simulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on computational methodology described in the text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "dedafc29-6088-4c15-96b5-320c8334e90d",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C26",
+      "claim": "Chaperone binding leads to larger radii of gyration and higher potential energies.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with FRET results (Kellner et al., 2014), chaperone binding leads to larger radii of gyration and higher potential energies, implying that the excluded-volume interactions due to the large Hsp70s progressively expand the complex and disrupt the attractive intra-chain interactions in rhodanese.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Kellner et al., 2014 and data shown in Figure 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "ad53dc19-b735-49c0-9a34-c64414f2961f",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C27",
+      "claim": "Excluded-volume interactions due to the large Hsp70s progressively expand the complex and disrupt the attractive intra-chain interactions in rhodanese.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with FRET results (Kellner et al., 2014), chaperone binding leads to larger radii of gyration and higher potential energies, implying that the excluded-volume interactions due to the large Hsp70s progressively expand the complex and disrupt the attractive intra-chain interactions in rhodanese.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from simulation data shown in Figure 1 and supported by citation to Kellner et al., 2014",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "b4965165-cffb-470e-a2d5-043292b3fb71",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C29",
+      "claim": "The conformational free energy increased with the swelling of the substrate due to the progressive binding of the chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformational free energy increased with the swelling of the substrate due to the progressive binding of the chaperones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "ae8e3950-cce5-477f-a559-21e571611483",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C30",
+      "claim": "The increase in substrate potential energy due to the loss of intra-chain interactions upon Hsp70 binding is only marginally compensated by the gain in conformational entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in substrate potential energy due to the loss of intra-chain interactions upon Hsp70 binding is therefore only marginally compensated by the gain in conformational entropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that conformational free energy increases with swelling",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "d81c8faa-0ab7-47c7-9eeb-282335879aa1",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C31",
+      "claim": "The conformational free energy is not uniquely determined by the stoichiometry, and is significantly affected by the specific binding pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the conformational free energy is not uniquely determined by the stoichiometry, and is significantly affected by the specific binding pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "d1176db5-9011-4040-bc7b-a495738fd807",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C34",
+      "claim": "The excellent agreement with Sanchez theory is not the outcome of a fitting procedure since all the parameters were extracted from experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the excellent agreement is not the outcome of a fitting procedure since all the parameters were extracted from experiments (see Appendix 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on methodology described in Appendix 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "ac2213c6-873b-4266-91b8-0c574f8f09c6",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C35",
+      "claim": "The kinetic model encompasses 729 different states corresponding to different configurations of the chaperone/substrate complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, each state corresponds to a single configuration of the chaperone/substrate complex, which is defined by the occupation state of the six Hsp70 binding sites on rhodanese. Each site can be either free or occupied by an ADP- or ATP-bound chaperone for a total of 36 = 729 different states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the kinetic model described in the text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "848f6270-14d2-463e-895a-5ebeadf6d70f",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C36",
+      "claim": "Kinetic rates for Hsp70 binding were modulated by the conformational free energies determined by CG MD simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, kinetic rates for Hsp70 binding were modulated by the conformational free energies determined by CG MD simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the methodology described in the text",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "f9d86c74-8a06-43d6-9de0-0157a0860819",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C37",
+      "claim": "The unbinding rates of Hsp70 from large-sized protein substrates are similar to the ones from small peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the unbinding rates of Hsp70 from large-sized protein substrates were observed to be similar to the ones from small peptides, whereas the binding rates can be up to two orders of magnitude smaller (Schmid et al., 1994; Mayer et al., 2000; Kellner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schmid et al., 1994, Mayer et al., 2000, and Kellner et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "d7a0e9e7-9655-4fb4-8822-f952d814f0f0",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C38",
+      "claim": "The binding rates of Hsp70 to large-sized protein substrates can be up to two orders of magnitude smaller than to small peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the unbinding rates of Hsp70 from large-sized protein substrates were observed to be similar to the ones from small peptides, whereas the binding rates can be up to two orders of magnitude smaller (Schmid et al., 1994; Mayer et al., 2000; Kellner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schmid et al., 1994, Mayer et al., 2000, and Kellner et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "0d00361f-de7a-4969-b9ee-77a627aa0cc4",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C39",
+      "claim": "A recent NMR study suggests a conformational selection scenario where the energetic cost due to substrate expansion mostly affects the Hsp70/rhodanese binding rate.",
+      "claim_type": "EXPLICIT",
+      "source": "This evidence was further corroborated by a recent NMR study (Sekhar et al., 2018) suggesting a conformational selection scenario where the energetic cost due to substrate expansion mostly affects the Hsp70/rhodanese binding rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sekhar et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "2e601ead-03fa-42d1-bcb0-80936aa7bce9",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C42",
+      "claim": "The binding of the chaperones in conditions with ATP excess is a non-equilibrium effect, driven by the Hsp70-induced hydrolysis of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important here to underscore that the binding of the chaperones in these conditions is a non-equilibrium effect, driven by the Hsp70-induced hydrolysis of ATP, and it is not a mere consequence of the excess of ATP over ADP or of the large difference between the substrate association rates to the ATP- and ADP-bound chaperones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the model results",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "474e2620-c9eb-47b9-be55-bcc43948f91c",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C44",
+      "claim": "At thermodynamic equilibrium, the average radius of gyration is extremely close to what would be measured in the case of free substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The results are reported as histograms in Figure 5 and they suggest that at equilibrium the average radius of gyration is extremely close to what would be measured in the case of free substrate (dashed line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "6cf65e46-0cc0-4129-9e2b-34b47310e773",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C45",
+      "claim": "The formation of rhodanese\u2013DnaK complexes is strictly dependent on the hydrolysis of ATP and ADP cannot trigger the expansion of the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with the experimental observation that the formation of rhodanese\u2013DnaK complexes is strictly dependent on the hydrolysis of ATP and that ADP cannot trigger the expansion of the substrate (Kellner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kellner et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "bed4e727-7259-40fe-8ded-851fb10c3e94",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C47",
+      "claim": "The size of DnaK/DnaJ/rhodanese complexes determined by single-molecule FRET experiments in excess of ATP is compatible with the model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is fully compatible with the size of DnaK/DnaJ/rhodanese complexes determined by single-molecule FRET experiments in excess of ATP (Kellner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kellner et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "9150c2cc-8c54-4103-bf32-0454c3b01a61",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C48",
+      "claim": "The calculated FRET efficiency correctly captured the non-monotonic behaviour as a function of the sequence separation between the dyes.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the results correctly captured the non-monotonic behaviour of FRET efficiency as a function of the sequence separation between the dyes, which was not reproduced in previous calculations (Kellner et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data shown in Figure 5 inset and citation to Kellner et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "1565469c-63f1-41ee-9cf9-d33b314a567c",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C49",
+      "claim": "Energy transduction is maximally efficient for ATP/ADP values in cellular conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this analysis revealed that energy transduction is maximally efficient for ATP/ADP values in cellular conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "8600fed6-79e2-448f-8870-5047b0b67723",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C50",
+      "claim": "Hsp70 chaperones have been tuned by evolution to optimize the conversion of chemical energy into mechanical work for substrate expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "This result hints at the possibility that Hsp70 chaperones have been tuned by evolution to optimize the conversion of chemical energy into mechanical work for substrate expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the data shown in Figure 6",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "6f45efb5-69c8-4dc4-ae6f-6fb3e0a246d3",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C51",
+      "claim": "Hsp70 chaperones can convert up to 20% of the ATP chemical energy into non-equilibrium, excess binding energy at physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis indicated that this optimality is likely inherited from the intrinsic properties of Hsp70 chaperones, which can convert up to 20% of the ATP chemical energy into non-equilibrium, excess binding energy at physiological conditions (Figure 6, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data shown in Figure 6 bottom panel",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "261f26fd-8e53-4a6e-bb32-0ce1562cd781",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C52",
+      "claim": "The ATP-driven action of Hsp70s induces a non-equilibrium redistribution of their protein-substrates over their structural ensemble.",
+      "claim_type": "EXPLICIT",
+      "source": "From a broader perspective, the ATP-driven action of Hsp70s induces a non-equilibrium redistribution of their protein-substrates over their structural ensemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the overall results of the study",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "ec6fc9b6-7e1a-4396-aa38-46df18fb94da",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C53",
+      "claim": "The expansion process followed by substrate release may result in the enhancement of the native state population beyond the predictions of thermodynamic equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, thanks to the fine-tuning of the process by co-chaperones (J-domain proteins and Nucleotide Exchange Factors), the expansion process highlighted here, followed by substrate release, may result in the enhancement of the native state population beyond the predictions of thermodynamic equilibrium, as recently observed even under otherwise denaturing conditions (Goloubinoff et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goloubinoff et al., 2018",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "97b54505-ebc0-49a0-94a3-a9233803a019",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C54",
+      "claim": "Hsp70 chaperones crucially contribute in vivo to the solubility and functionality of a sizeable fraction of the E. coli proteome that would otherwise spontaneously misfold and aggregate.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, Zhao and coworkers have recently observed that Hsp70 chaperones crucially contribute in vivo to the solubility and functionality of a sizeable fraction of the E. coli proteome that, in their absence, would instead spontaneously misfold and aggregate (Zhao et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhao et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "6dc8e0db-8b65-4171-8649-8b716cbcf334",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C55",
+      "claim": "A similar effect has been observed in vitro for the GroEL chaperonin.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, a similar effect has been observed in vitro for the GroEL chaperonin (Chakrabarti et al., 2017; Goloubinoff et al., 2018), hinting at the possibility that multiple chaperone families might reshape the equilibrium conformational distribution of proteins through energy-consuming processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chakrabarti et al., 2017 and Goloubinoff et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "c366688d-be87-42e5-a515-46d3c329fec4",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C56",
+      "claim": "Multiple chaperone families might reshape the equilibrium conformational distribution of proteins through energy-consuming processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, a similar effect has been observed in vitro for the GroEL chaperonin (Chakrabarti et al., 2017; Goloubinoff et al., 2018), hinting at the possibility that multiple chaperone families might reshape the equilibrium conformational distribution of proteins through energy-consuming processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on citations to Chakrabarti et al., 2017 and Goloubinoff et al., 2018",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "6d8677c4-e707-4c5d-9515-e2f8f9233b87",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C57",
+      "claim": "The ability of chaperones to favor native states might have partially relieved the selection pressure for strong equilibrium thermodynamic stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, they raise fundamental questions about the evolution of protein sequences: indeed, since chaperones are ubiquitous and very much conserved across the different kingdoms of life, their ability to favor native states might have partially relieved the selection pressure for strong equilibrium thermodynamic stability, thus allowing evolution to proceed faster and to be more tolerant for slightly destabilizing mutations, as suggested in Rutherford and Lindquist (1998); Tokuriki and Tawfik (2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation supported by citations to Rutherford and Lindquist, 1998 and Tokuriki and Tawfik, 2009",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "dab2c781-438b-437a-86c7-e74d2a6b7138",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C58",
+      "claim": "Hsp70s play a fundamental role in protein translocation, protein translation, and disassembly of protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides the unfolding of non-native substrates discussed in this work, Hsp70s are highly versatile machines that play a fundamental role in a variety of diverse cellular functions such as protein translocation, protein translation, and disassembly of protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "d66c0e62-f546-4eaf-a1e1-0bf9150124a1",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C59",
+      "claim": "In all Hsp70 processes, Hsp70 binding to flexible substrates in constrained environments requires the energy of ATP hydrolysis (ultra-affinity) and results in the generation of effective forces due to excluded volume effects (entropic pulling).",
+      "claim_type": "EXPLICIT",
+      "source": "All these processes share basic analogies from the mechanistic point of view: in all these cases, Hsp70 binding to flexible substrates in constrained environments requires the energy of ATP hydrolysis (ultra-affinity) and results in the generation of effective forces due to excluded volume effects (entropic pulling), which ultimately drive protein translocation into mitochondria (De Los Rios et al., 2006; Assenza et al., 2015), clathrin cage disassembly (Sousa et al., 2016) and/or prevention of ribosome stalling (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to De Los Rios et al., 2006, Assenza et al., 2015, Sousa et al., 2016, and Liu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "32aff918-c109-4862-a814-3ecd32373ae8",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "claim_id": "C60",
+      "claim": "The force-generating mechanism of Hsp70 chaperones does not rely on any power-stroke conformational change but rather depends on the efficient conversion of ATP chemical energy into ultra-affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism does not rely on any power-stroke conformational change but it rather depends on the efficient conversion of ATP chemical energy into ultra-affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the overall findings of the study",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5e7d6d0a-7199-4c11-ab14-abf676fd4261",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about protein folding and the role of molecular chaperones, particularly Hsp70s, in cellular protein homeostasis. These claims describe that while proteins can fold spontaneously in vitro, they may misfold in cells, necessitating ATP-dependent molecular chaperones like Hsp70s that assist multiple cellular processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are all supported by appropriate citations to established literature (Anfinsen 1973, Dobson 2003, Hartl 1996, Clerico et al. 2019, Rosenzweig et al. 2019). These represent well-established background knowledge in the field and provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "15549a83-8797-4f22-9139-12f0d15e6d77",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript describes the established mechanistic framework of Hsp70 function, including its two-domain structure (SBD and NBD), allosteric coupling between domains, nucleotide-dependent conformational states, differential binding kinetics in ATP vs ADP states, and the role of J-domain protein cochaperones in accelerating ATP hydrolysis, leading to ultra-affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C15 are well-supported by citations to established literature (Mayer 2013, Mayer et al. 2000, Kampinga and Craig 2010, Kampinga et al. 2019, De Los Rios and Barducci 2014, Barducci and De Los Rios 2015). These describe the canonical Hsp70 mechanism and provide essential background for understanding the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "9a3876ff-2de6-49d8-a1ef-06a1810ebba5",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior experimental evidence demonstrates that Hsp70 binding induces substrate expansion, as shown by increased proteolysis sensitivity, decreased Thioflavin-T binding, NMR-detected tertiary structure destabilization, and single-molecule FRET measurements showing ATP-dependent expansion of rhodanese that reverses upon ATP exhaustion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 are supported by appropriate citations to experimental studies (Sharma et al. 2010, Lee et al. 2015, Sekhar et al. 2015, Kellner et al. 2014). These prior results establish the phenomenon that the current manuscript aims to explain mechanistically.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "780ce403-8d44-4fcb-a962-87e18aebc3dd",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors performed coarse-grained molecular dynamics simulations using a one-bead-per-residue force field that reproduces rhodanese compactness without tuning. Six Hsp70 binding sites were identified using bioinformatic algorithms, and all 64 possible binding configurations were simulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 describe the computational methodology. The force field choice (C22, C23) is validated by citation to Smith et al. 2014 and agreement with experimental data. The binding site identification (C24) uses two established algorithms. The exhaustive simulation approach (C25) is mathematically sound (2^6 = 64 configurations).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "23c9389a-21a3-4161-adf6-2ec95df61f60",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MD simulations reveal that chaperone binding leads to larger radii of gyration and higher potential energies due to excluded-volume interactions that expand the complex and disrupt intra-chain interactions. The conformational free energy increases with substrate swelling, with entropy gains only marginally compensating for potential energy increases, and depends on both stoichiometry and specific binding patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 are supported by simulation data shown in Figures 1 and 2. The results are consistent with prior FRET experiments (Kellner et al. 2014). The interpretation that excluded volume drives expansion (C27) is reasonable given the simulation design. The free energy analysis (C29-C31) is based on appropriate enhanced sampling methods (Jarzynski equality).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "c7a8fefc-71e9-4e4b-bd0a-c5c06faff524",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The agreement between simulation results and Sanchez polymer theory was achieved without fitting, using only experimentally-derived parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is supported by reference to Appendix 2 where parameter extraction is described. This strengthens the validity of the simulation approach by showing agreement with established polymer physics theory without adjustable parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "70f07e2d-439e-4205-b1b5-2b44f717f348",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A kinetic model encompassing 729 states (3^6 configurations) was developed where binding rates are modulated by conformational free energies from MD simulations. The model incorporates experimental observations that unbinding rates are similar for proteins and peptides, while binding rates can be 100-fold slower for proteins, consistent with a conformational selection mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 describe the kinetic model methodology. The state space calculation (C35) is correct (3^6 = 729). The integration of MD free energies into kinetic rates (C36) is methodologically sound. Claims C37-C39 are supported by appropriate citations (Schmid et al. 1994, Mayer et al. 2000, Kellner et al. 2014, Sekhar et al. 2018).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "65097171-c090-47d1-adc2-2d3cca6633a1",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chaperone binding in ATP excess is a non-equilibrium effect driven by ATP hydrolysis, not merely a consequence of ATP/ADP ratio or differential binding rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is supported by model results shown in Figure 4 (bottom panel), where eliminating ATPase activity abolishes efficient binding despite maintaining other parameters. This demonstrates the non-equilibrium nature of the process and is a key mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "5ce14264-6161-4c08-8efd-d100d913b62d",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "At thermodynamic equilibrium (low ATP/ADP), the model predicts substrate radius of gyration similar to free substrate, consistent with experimental observations that rhodanese-DnaK complex formation requires ATP hydrolysis and ADP cannot trigger expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 are supported by data in Figure 5 and agreement with experimental observations (Kellner et al. 2014). This validates the model's ability to reproduce equilibrium behavior and confirms the ATP-dependence of the expansion mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "fcfeffa9-ae88-49b0-b853-9d9c1cc2d56d",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In ATP excess, the model predicts substantial substrate swelling (Rg = 75-95 \u00c5) compatible with FRET experiments, and correctly captures the non-monotonic FRET efficiency as a function of dye separation, which previous calculations failed to reproduce.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are strongly supported by quantitative agreement with experimental FRET data shown in Figure 5 inset. The ability to reproduce the non-monotonic behavior (C48) that previous models missed represents a significant validation of the approach and demonstrates predictive power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "54fd2a56-03f4-4078-bb1f-00984c4d05b9",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Energy transduction analysis reveals that Hsp70s are maximally efficient at ATP/ADP ratios corresponding to cellular conditions, converting up to 20% of ATP chemical energy into non-equilibrium excess binding energy at physiological conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C51 are supported by data in Figure 6. The analysis of energy conversion efficiency is methodologically sound, comparing conformational free energy changes to ATP hydrolysis free energy. The finding that efficiency peaks near physiological ATP/ADP ratios is a significant result, though the evolutionary interpretation (C50) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "526e9880-fd2e-4a1e-9dd8-fc584dade6b8",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors suggest that Hsp70 chaperones may have been evolutionarily tuned to optimize chemical-to-mechanical energy conversion for substrate expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C50 is explicitly speculative ('hints at the possibility'). While the observation that efficiency peaks at physiological conditions is intriguing, this correlation does not establish evolutionary optimization. Alternative explanations (e.g., constraint-based optimization, historical contingency) are not excluded. This remains a hypothesis requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "92b1d6ab-e464-4b5e-849a-84188ee4ba71",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors conclude that Hsp70s induce non-equilibrium redistribution of substrate conformational ensembles through a force-generating mechanism that depends on efficient ATP-to-ultra-affinity conversion rather than power-stroke conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52 and C60 represent the central mechanistic conclusion of the study. These are well-supported by the combined computational and kinetic modeling results showing that ATP hydrolysis drives non-equilibrium binding (C42), which causes substrate expansion through excluded volume effects (C26-C27), with efficient energy conversion (C49, C51).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "5097bdc5-01e9-490d-83c7-62a07381a68f",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discuss broader implications, suggesting that Hsp70-mediated expansion followed by release may enhance native state populations beyond equilibrium predictions, consistent with recent observations that Hsp70s maintain proteome solubility in vivo and similar effects observed for GroEL chaperonin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C56 extend beyond the direct findings. While C54 and C55 cite supporting literature (Goloubinoff et al. 2018, Zhao et al. 2019, Chakrabarti et al. 2017), claims C53 and C56 are speculative extrapolations. The current study demonstrates expansion but does not directly show enhancement of native state populations or test whether this mechanism generalizes to other chaperone families.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "b23edb98-6053-4e58-80f5-932d7c2a0c95",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors speculate that chaperone ability to favor native states may have reduced evolutionary selection pressure for thermodynamic stability, allowing faster evolution and tolerance for destabilizing mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C57 is explicitly speculative and extends well beyond the study's findings. While supported by citations (Rutherford and Lindquist 1998, Tokuriki and Tawfik 2009), this evolutionary hypothesis is not tested by the current work and represents a broader theoretical framework rather than a result of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    },
+    {
+      "id": "eec592b2-fc9d-4c12-9a07-761e361d6ba5",
+      "content_id": "9245d38f-3304-414b-b219-53c40cb73203",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that the Hsp70 mechanism elucidated here (ultra-affinity and entropic pulling) applies broadly to other Hsp70 functions including protein translocation, translation, and complex disassembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 are supported by citations to studies of these other Hsp70 functions (De Los Rios et al. 2006, Assenza et al. 2015, Sousa et al. 2016, Liu et al. 2013). While the current study focuses on substrate expansion, the mechanistic principles (ATP-dependent binding and excluded volume effects) are reasonably generalizable to these related processes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:02:20.267641Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3672e5ee-411f-4a86-9112-e6069bf9b0d6",
+      "result_id": "5e7d6d0a-7199-4c11-ab14-abf676fd4261"
+    },
+    {
+      "claim_id": "e2eee53d-0f2e-468b-a662-b0ec13767361",
+      "result_id": "5e7d6d0a-7199-4c11-ab14-abf676fd4261"
+    },
+    {
+      "claim_id": "765fa35e-30e3-433f-b0ca-d7e9f6f8644d",
+      "result_id": "5e7d6d0a-7199-4c11-ab14-abf676fd4261"
+    },
+    {
+      "claim_id": "a7093060-4ea4-49b0-a833-793d31481f4d",
+      "result_id": "5e7d6d0a-7199-4c11-ab14-abf676fd4261"
+    },
+    {
+      "claim_id": "a307d1eb-a7ae-4632-8961-2125c9c3971c",
+      "result_id": "5e7d6d0a-7199-4c11-ab14-abf676fd4261"
+    },
+    {
+      "claim_id": "e585eb1d-42ef-4fa0-892b-7c70b1b4713a",
+      "result_id": "15549a83-8797-4f22-9139-12f0d15e6d77"
+    },
+    {
+      "claim_id": "49c11a43-9305-4e7d-a19d-4a6dc21b8fce",
+      "result_id": "15549a83-8797-4f22-9139-12f0d15e6d77"
+    },
+    {
+      "claim_id": "15b6ed32-e39f-46cb-b500-29a4998f4d70",
+      "result_id": "15549a83-8797-4f22-9139-12f0d15e6d77"
+    },
+    {
+      "claim_id": "c506ff8e-0869-4ae1-9635-587ebd351154",
+      "result_id": "15549a83-8797-4f22-9139-12f0d15e6d77"
+    },
+    {
+      "claim_id": "242733cc-9a52-4c5c-8326-1748ffbdb4e4",
+      "result_id": "15549a83-8797-4f22-9139-12f0d15e6d77"
+    },
+    {
+      "claim_id": "b2ed36be-5269-46ee-90fb-36e3f303133b",
+      "result_id": "15549a83-8797-4f22-9139-12f0d15e6d77"
+    },
+    {
+      "claim_id": "11d6ad46-5b11-44f0-b44a-2ad383620076",
+      "result_id": "15549a83-8797-4f22-9139-12f0d15e6d77"
+    },
+    {
+      "claim_id": "1bc57f03-1672-4d9b-bc83-4c99afb789df",
+      "result_id": "15549a83-8797-4f22-9139-12f0d15e6d77"
+    },
+    {
+      "claim_id": "ddfb76a4-22a2-44a7-b325-4ea9483e43bd",
+      "result_id": "15549a83-8797-4f22-9139-12f0d15e6d77"
+    },
+    {
+      "claim_id": "ea57d7f2-4bc7-4826-a86a-908e5b1c3ace",
+      "result_id": "15549a83-8797-4f22-9139-12f0d15e6d77"
+    },
+    {
+      "claim_id": "aaef3af8-83aa-46ef-a230-ebe7f57a9306",
+      "result_id": "9a3876ff-2de6-49d8-a1ef-06a1810ebba5"
+    },
+    {
+      "claim_id": "1f046e40-0454-48d6-b26f-0848f0ed730d",
+      "result_id": "9a3876ff-2de6-49d8-a1ef-06a1810ebba5"
+    },
+    {
+      "claim_id": "cf4857f8-0100-483e-9957-39f036b79d16",
+      "result_id": "9a3876ff-2de6-49d8-a1ef-06a1810ebba5"
+    },
+    {
+      "claim_id": "7f5b1147-cd41-4e95-82c2-0f6d629f8e02",
+      "result_id": "9a3876ff-2de6-49d8-a1ef-06a1810ebba5"
+    },
+    {
+      "claim_id": "97238e22-5b2a-42ad-bdb9-37848232b6e8",
+      "result_id": "9a3876ff-2de6-49d8-a1ef-06a1810ebba5"
+    },
+    {
+      "claim_id": "97ec6f0c-a5be-43e0-be8b-34aff70650d2",
+      "result_id": "9a3876ff-2de6-49d8-a1ef-06a1810ebba5"
+    },
+    {
+      "claim_id": "b920f86a-85f6-46be-b947-7ca5826b069b",
+      "result_id": "780ce403-8d44-4fcb-a962-87e18aebc3dd"
+    },
+    {
+      "claim_id": "5c36370a-2f98-4930-bae3-84ee229268f0",
+      "result_id": "780ce403-8d44-4fcb-a962-87e18aebc3dd"
+    },
+    {
+      "claim_id": "a51ab6f3-dd99-422e-9fc1-e461db6a659d",
+      "result_id": "780ce403-8d44-4fcb-a962-87e18aebc3dd"
+    },
+    {
+      "claim_id": "c3f7bae8-66b3-4e0c-967a-56ae25f2beb6",
+      "result_id": "780ce403-8d44-4fcb-a962-87e18aebc3dd"
+    },
+    {
+      "claim_id": "dedafc29-6088-4c15-96b5-320c8334e90d",
+      "result_id": "23c9389a-21a3-4161-adf6-2ec95df61f60"
+    },
+    {
+      "claim_id": "ad53dc19-b735-49c0-9a34-c64414f2961f",
+      "result_id": "23c9389a-21a3-4161-adf6-2ec95df61f60"
+    },
+    {
+      "claim_id": "b4965165-cffb-470e-a2d5-043292b3fb71",
+      "result_id": "23c9389a-21a3-4161-adf6-2ec95df61f60"
+    },
+    {
+      "claim_id": "ae8e3950-cce5-477f-a559-21e571611483",
+      "result_id": "23c9389a-21a3-4161-adf6-2ec95df61f60"
+    },
+    {
+      "claim_id": "d81c8faa-0ab7-47c7-9eeb-282335879aa1",
+      "result_id": "23c9389a-21a3-4161-adf6-2ec95df61f60"
+    },
+    {
+      "claim_id": "d1176db5-9011-4040-bc7b-a495738fd807",
+      "result_id": "c7a8fefc-71e9-4e4b-bd0a-c5c06faff524"
+    },
+    {
+      "claim_id": "ac2213c6-873b-4266-91b8-0c574f8f09c6",
+      "result_id": "70f07e2d-439e-4205-b1b5-2b44f717f348"
+    },
+    {
+      "claim_id": "848f6270-14d2-463e-895a-5ebeadf6d70f",
+      "result_id": "70f07e2d-439e-4205-b1b5-2b44f717f348"
+    },
+    {
+      "claim_id": "f9d86c74-8a06-43d6-9de0-0157a0860819",
+      "result_id": "70f07e2d-439e-4205-b1b5-2b44f717f348"
+    },
+    {
+      "claim_id": "d7a0e9e7-9655-4fb4-8822-f952d814f0f0",
+      "result_id": "70f07e2d-439e-4205-b1b5-2b44f717f348"
+    },
+    {
+      "claim_id": "0d00361f-de7a-4969-b9ee-77a627aa0cc4",
+      "result_id": "70f07e2d-439e-4205-b1b5-2b44f717f348"
+    },
+    {
+      "claim_id": "2e601ead-03fa-42d1-bcb0-80936aa7bce9",
+      "result_id": "65097171-c090-47d1-adc2-2d3cca6633a1"
+    },
+    {
+      "claim_id": "474e2620-c9eb-47b9-be55-bcc43948f91c",
+      "result_id": "5ce14264-6161-4c08-8efd-d100d913b62d"
+    },
+    {
+      "claim_id": "6cf65e46-0cc0-4129-9e2b-34b47310e773",
+      "result_id": "5ce14264-6161-4c08-8efd-d100d913b62d"
+    },
+    {
+      "claim_id": "bed4e727-7259-40fe-8ded-851fb10c3e94",
+      "result_id": "fcfeffa9-ae88-49b0-b853-9d9c1cc2d56d"
+    },
+    {
+      "claim_id": "9150c2cc-8c54-4103-bf32-0454c3b01a61",
+      "result_id": "fcfeffa9-ae88-49b0-b853-9d9c1cc2d56d"
+    },
+    {
+      "claim_id": "1565469c-63f1-41ee-9cf9-d33b314a567c",
+      "result_id": "54fd2a56-03f4-4078-bb1f-00984c4d05b9"
+    },
+    {
+      "claim_id": "6f45efb5-69c8-4dc4-ae6f-6fb3e0a246d3",
+      "result_id": "54fd2a56-03f4-4078-bb1f-00984c4d05b9"
+    },
+    {
+      "claim_id": "8600fed6-79e2-448f-8870-5047b0b67723",
+      "result_id": "526e9880-fd2e-4a1e-9dd8-fc584dade6b8"
+    },
+    {
+      "claim_id": "261f26fd-8e53-4a6e-bb32-0ce1562cd781",
+      "result_id": "92b1d6ab-e464-4b5e-849a-84188ee4ba71"
+    },
+    {
+      "claim_id": "32aff918-c109-4862-a814-3ecd32373ae8",
+      "result_id": "92b1d6ab-e464-4b5e-849a-84188ee4ba71"
+    },
+    {
+      "claim_id": "ec6fc9b6-7e1a-4396-aa38-46df18fb94da",
+      "result_id": "5097bdc5-01e9-490d-83c7-62a07381a68f"
+    },
+    {
+      "claim_id": "97b54505-ebc0-49a0-94a3-a9233803a019",
+      "result_id": "5097bdc5-01e9-490d-83c7-62a07381a68f"
+    },
+    {
+      "claim_id": "6dc8e0db-8b65-4171-8649-8b716cbcf334",
+      "result_id": "5097bdc5-01e9-490d-83c7-62a07381a68f"
+    },
+    {
+      "claim_id": "c366688d-be87-42e5-a515-46d3c329fec4",
+      "result_id": "5097bdc5-01e9-490d-83c7-62a07381a68f"
+    },
+    {
+      "claim_id": "6d8677c4-e707-4c5d-9515-e2f8f9233b87",
+      "result_id": "b23edb98-6053-4e58-80f5-932d7c2a0c95"
+    },
+    {
+      "claim_id": "dab2c781-438b-437a-86c7-e74d2a6b7138",
+      "result_id": "eec592b2-fc9d-4c12-9a07-761e361d6ba5"
+    },
+    {
+      "claim_id": "d66c0e62-f546-4eaf-a1e1-0bf9150124a1",
+      "result_id": "eec592b2-fc9d-4c12-9a07-761e361d6ba5"
+    }
+  ],
+  "comparisons": []
+}

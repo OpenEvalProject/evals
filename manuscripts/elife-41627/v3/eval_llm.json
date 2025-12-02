@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Pre-B cells were infected with C/EBP\u03b1ER-hCD4 retrovirus, sorted for hCD4 expression, and induced to either transdifferentiate into macrophages (via \u03b2-estradiol treatment) or reprogram into iPSCs (via 18 hr C/EBP\u03b1 pulse followed by OSKM induction). Cells were collected at multiple time points during both processes and sequenced using MARS-Seq, yielding expression profiles for 17,183 genes in 3,152 cells after quality control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C8 describe the experimental design and data collection methodology. The methods are clearly stated with appropriate citations (MARS-Seq method), and the resulting dataset dimensions are explicitly reported. This represents standard methodology for single-cell RNA-seq studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Diffusion map analysis revealed branching between transdifferentiation and reprogramming trajectories at the 18 hr time-point, with cells moving along two distinct trajectories to reach homogeneous final populations (iMac or iPSC-like cells). No branching into alternative routes was observed, supporting the notion that both transcription factor-induced transdifferentiation and reprogramming represent deterministic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 describe trajectory analysis results with appropriate computational methods (diffusion maps) and cite relevant figures. The interpretation that these are deterministic processes is supported by the observation of distinct trajectories without alternative branching, though the authors appropriately contrast this with other systems showing stochastic behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "During transdifferentiation, C/EBP\u03b1 expression induces sequential gene expression changes: B cell-specific transcripts are downregulated at 6 hr, granulocyte/GMP restricted genes (Mpo, Prtn3) are transiently expressed at 18 hr, and myeloid markers (Csf1r, Lyz1/2, Mmp8, Msr1, Ctsc, Ccl6) are expressed after sustained C/EBP\u03b1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe temporal gene expression dynamics during transdifferentiation with specific gene markers and time points. These observations are supported by the single-cell RNA-seq data and referenced figures, representing standard differential expression analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "During reprogramming, OSKM induction of C/EBP\u03b1-pulsed cells leads to sequential activation of pluripotency factors (Pou5f1 at day 2, Nanog at day 6, Sox2 at day 8), consistent with bulk RNA-seq studies. OSKM induction also downregulates B cell and inflammatory genes while upregulating biosynthetic and energy metabolism genes at D2, followed by activation of proliferation/cell cycle genes at D6 and histone deacetylase/methylase genes at D8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 describe temporal gene expression dynamics during reprogramming with specific markers and time points. The sequential activation of pluripotency factors is validated by consistency with prior bulk studies (C23), and the broader transcriptional changes are supported by the single-cell data with appropriate figure references.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "At intermediate time points during transdifferentiation (particularly at 42 hr), cells show heterogeneity in their progression, with some cells highly similar to earlier time points and others similar to later time points. This heterogeneity in marker gene expression suggests asynchrony in the speed of transdifferentiation conversion among single cells despite a homogeneous final cell population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 describe observed heterogeneity at intermediate time points with appropriate visualization methods (diffusion maps, expression space projections) and figure references. The interpretation of asynchrony is reasonable given the spread of cells along the trajectory, though alternative explanations are not explicitly ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A Myc component (component five), highly enriched in Myc target genes, negatively correlates with progression of cells at intermediate time points of transdifferentiation. This component varies extensively across cells within each time point but overall changes little during transdifferentiation, suggesting that cells with lower Myc component transdifferentiate more rapidly into macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 describe identification and characterization of the Myc component using ICA and gene set enrichment analysis (Fisher's test). The negative correlation with transdifferentiation progression is supported by the data and figures, though the causal interpretation (C35) is appropriately stated as a suggestion rather than definitive conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Low Myc component is more strongly associated with rapid gain of the macrophage state than with rapid loss of the B cell state. High Myc component cells resemble GMPs up to 42 hr after C/EBP\u03b1 induction and pass through a more pronounced GMP-like state, suggesting they acquire the macrophage fate more slowly than low Myc component cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 describe the relationship between Myc component and cell state transitions during transdifferentiation. The observations are supported by similarity analyses to reference cell types with appropriate figure references. The interpretation that high Myc cells transdifferentiate more slowly through a GMP-like state is consistent with the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "At intermediate time points (D2 and D4) during reprogramming, cells show variable similarity to ESCs, suggesting asynchronous behavior. The Myc component correlates best with progression toward pluripotency, especially at early stages. In contrast to transdifferentiation, high Myc component positively correlates with a more advanced state of reprogramming, and the Myc component increases during reprogramming. High Myc component correlates more with gain of pluripotency than with loss of the B cell program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe the relationship between Myc component and reprogramming progression. The positive correlation with reprogramming (opposite to transdifferentiation) is well-supported by the data and figures. The distinction between correlation with pluripotency gain versus B cell loss is supported by the trajectory analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "During reprogramming, cells with high Myc component maintain high similarity to ICM cells at D8, while cells with low Myc component show low similarity to ICM cells and acquire a placental-like signature at D8, suggesting they may eventually branch toward the extra-embryonic lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C47 describe observations about ICM and placental similarity supported by the data. However, C48 is explicitly speculative ('suggesting that...may eventually branch'), and no functional validation or trajectory analysis confirming this branching is provided. The observation is interesting but requires additional evidence to confirm the proposed extra-embryonic fate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "There is a correlation between high Myc component and cell susceptibility to reprogramming towards pluripotency, and a subset of low Myc component cells along the reprogramming trajectory acquires properties of extraembryonic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 summarize the findings about Myc component and reprogramming. C49 is well-supported by the correlation analyses. C50 is supported by the similarity analyses showing placental-like signatures, though the functional significance remains to be validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Uninduced pre-B cells show variable Myc component that partially correlates with higher expression of G1/S and G2/M phase cell cycle genes. t-SNE visualization revealed sub-structure associated with the Myc component. The Myc component scales with total mRNA content (varying over a three-fold range), suggesting Myc-associated heterogeneity in cell size in the starting population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe pre-existing heterogeneity in the starting population with appropriate computational analyses (t-SNE, correlation with mRNA content). The interpretation that Myc component reflects cell size heterogeneity is reasonable given the correlation with total mRNA content, which is a proxy for cell size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "During B cell development, large pre-BII cells undergo proliferation and differentiate into quiescent small pre-BII cells via Bcl6-induced Myc repression, constituting an important immunological checkpoint. Computational comparison with reference B cell development data revealed that cells with higher Myc component are more similar to large and cycling pre-BII cells, while cells with lower Myc component are more similar to small and non-cycling pre-BII cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 cite established knowledge about B cell development with appropriate references. C57 describes computational validation of the hypothesis that Myc component heterogeneity reflects the large/small pre-BII cell transition, supported by similarity analyses to reference datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Flow cytometry analysis resolved the starting pre-B cell population into two discrete subpopulations (72% large, 25% small cells). Intracellular Myc staining confirmed that large cells express abundant Myc while smaller cells are essentially Myc negative. Large pre-B cells incorporate 400 times more EdU within 2 hr than small cells, confirming known differences in cycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 describe experimental validation of the computational predictions using flow cytometry. The methods are appropriate (intracellular staining, EdU incorporation), and the results clearly validate the presence of two distinct populations with different Myc levels and proliferation rates, consistent with large and small pre-BII cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "In response to continuous C/EBP\u03b1 exposure, small pre-BII cells upregulated Mac-1 faster and downregulated CD19 slightly more rapidly than large pre-BII cells. Small cells also acquired higher granularity and slightly increased volume compared to large cells during transdifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 describe experimental validation that small pre-BII cells transdifferentiate more rapidly than large cells, consistent with the computational predictions. The flow cytometry measurements of Mac-1, CD19, granularity, and volume are appropriate markers for transdifferentiation progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "When 18 hr C/EBP\u03b1-pulsed cells were tested for reprogramming, large pre-BII cells generated 30 times more iPSC colonies than small pre-B cells, which die out during reprogramming. Previous work showed 18 hr C/EBP\u03b1 treatment maximally enhanced reprogramming efficiency, while longer exposures decreased efficiency. Testing a 6 hr C/EBP\u03b1 pulse showed small cells remained highly resistant to reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 describe experimental validation that large pre-BII cells reprogram much more efficiently than small cells, consistent with computational predictions. The 30-fold difference is substantial and well-documented with figures. The timing experiments (C65-C67) appropriately cite prior work and test alternative explanations, strengthening the conclusion that small cells are intrinsically resistant to reprogramming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Large and small pre-BII cells exhibit intrinsic differences in their cell conversion plasticities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a summary conclusion supported by the experimental validation in C58-C67, showing that the two cell types differ in both transdifferentiation speed and reprogramming efficiency. The use of 'intrinsic' is justified by the timing experiments showing the differences persist across different treatment durations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "High Myc expression levels in the starting cell type strongly correlate with high iPSC reprogramming efficiency across nine different hematopoietic cell types (R = 0.93, p<0.0001), with GMPs and MPPs exhibiting the highest levels. Myc component levels also correlate with reprogramming efficiency of various non-hematopoietic cell types (R = 0.66, p=0.0016), showing that high Myc expression is strongly predictive for reprogramming susceptibility across a broad variety of somatic cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 describe correlation analyses between Myc expression and reprogramming efficiency across multiple cell types. The correlations are strong (R=0.93 for hematopoietic, R=0.66 for non-hematopoietic) with significant p-values. The analysis appropriately uses published reprogramming efficiency data matched to Myc expression from the cell atlas. This represents a major generalization of the findings beyond the pre-B cell system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The observed high frequencies of both cell type conversions are consistent with deterministic processes. However, there is unexpected heterogeneity among cells in the speed and paths by which transcription factors induce transdifferentiation and reprogramming. Computational analyses predicted an inverse relationship between the ability of cells to either transdifferentiate or to reprogram.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 summarize key findings about deterministic processes with heterogeneity in kinetics. C73 is supported by the trajectory analysis showing no alternative branching. C74 is supported by the asynchrony observations. C75 is supported by the computational predictions that were subsequently validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Two distinct cell subsets exist in the starting pre-B cell population, corresponding to large and small pre-BII cells. Large pre-BII cells efficiently reprogram into iPSCs through a GMP-like state but transdifferentiate more slowly, while small pre-BII cells reprogram much less efficiently but transdifferentiate more rapidly. This inverse coupling suggests that transdifferentiation and reprogramming represent intrinsically different types of plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 summarize the main experimental findings validating the computational predictions. The inverse relationship between transdifferentiation and reprogramming propensity is well-supported by the experimental data (C58-C67). The interpretation that these represent intrinsically different types of plasticity is reasonable given the opposite correlations with Myc component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The Myc component correlates with both types of plasticity in a reciprocal manner. High Myc levels correlate with high reprogramming efficiencies not only in hematopoietic progenitors but also in a wide range of other somatic cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 summarize the key finding about Myc's reciprocal role in the two types of plasticity. This is well-supported by the computational analyses (negative correlation with transdifferentiation, positive with reprogramming) and the cross-cell-type correlation analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Expression of endogenous Myc is essential for efficient reprogramming of MEFs into pluripotent cells (from literature). Together with the current findings, this suggests an important role of Myc for the plasticity of both hematopoietic and non-hematopoietic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 appropriately cites published findings consistent with the current results. C84 is a reasonable interpretation synthesizing the current findings with prior literature, though the mechanistic role of Myc remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "A subset of low Myc component cells at D8 of reprogramming resembles extra-embryonic cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 describes an observation supported by similarity analyses and cites a related report. However, as noted in the earlier result about C47-C48, functional validation of this extra-embryonic fate is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Myc's effect could be mediated by its ability to induce cell proliferation, its association with global chromatin changes, its capacity to transcriptionally activate and amplify genes, and/or its induction of metabolic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C89 are explicitly speculative ('could be mediated') and cite various known functions of Myc from the literature. No experiments in the current study directly test which of these mechanisms underlies the observed effects. These represent reasonable hypotheses for future work but are not tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The unique features of Myc are likely central for its capacity to act as a major driver of cancer and for its role in early embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are interpretations connecting the findings to broader biological contexts (cancer, development) with appropriate citations. While not directly tested in this study, these are reasonable connections given Myc's well-established roles in these processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "High Myc expression in somatic cells is not sufficient to enable efficient OSKM-induced reprogramming; large pre-BII cells must still be primed by transient C/EBP\u03b1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 describe an important limitation of the Myc effect, showing that high Myc alone is insufficient for reprogramming. This is supported by the experimental design where C/EBP\u03b1 priming is required even for high-Myc large cells, and cites prior work establishing this requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "C/EBP\u03b1 has multiple functions including acting as a pioneer transcription factor, activating key pluripotency TFs such as Klf4, recruiting chromatin-related factors (LSD1/Kdm1a, Hdac1, Brd4, Tet2), and inducing changes in genome topology preceding pluripotent transcription factor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 cite published findings about C/EBP\u03b1 functions from the literature. These are appropriately referenced and provide context for understanding why C/EBP\u03b1 priming is required for efficient reprogramming.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "During OSKM-induced MEF to iPSC reprogramming, pluripotency factors first target and inactivate enhancers of specific somatic TFs (including Cebpa, Cebpb, Fra1, Runx1) before engaging pluripotency gene enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 cites published findings about MEF reprogramming to draw parallels with the current system. This is appropriately referenced and provides relevant context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Efficient reprogramming of somatic into pluripotent stem cells requires three waves of transcription factor activity: i) Expression of high Myc levels in the starting cells, ii) transient expression of specific lineage regulators, and iii) activation of key pluripotency transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 synthesizes the findings into a three-wave model of reprogramming. This is well-supported by the data showing: i) high Myc correlates with reprogramming efficiency, ii) C/EBP\u03b1 priming is required, and iii) sequential activation of pluripotency factors occurs. This represents a conceptual advance in understanding reprogramming mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "Similar transcriptional waves may be required for some of the earliest developmental decisions such as for the formation of pluripotent and extraembryonic cells during pre-implantation embryo development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 is explicitly speculative ('tempting to speculate') about broader implications for embryonic development. While the parallel is interesting given the ICM/placental observations, no experiments directly test this hypothesis in the developmental context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "D2-D4 cells transit through a state that partially resembles neuronal cell types, though the significance is unclear as these cells are overall quite dissimilar to any cell type in the reference atlas. D6 cells are more similar to ICM cells than D8 cells, which are in turn more similar to ESCs. This observation is reminiscent of findings that intermediate-stage MEF-to-iPSC cells can generate diverse somatic tissues upon injection into tetraploid blastocysts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13-C16 describe interesting observations about intermediate cell states during reprogramming. However, C13 explicitly states the significance is unclear, and the neuronal similarity is weak. The ICM/ESC progression (C14-C15) is better supported. C16 draws a parallel to published work but doesn't functionally validate the developmental potential of the intermediate cells in this system.",
+    "result_type": "MINOR"
+  }
+]

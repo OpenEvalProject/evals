@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The GzmB-mTFP knock-in mouse was successfully generated using CRISPR-Cas9 technology by replacing the stop codon in exon 5 of the mouse Gzmb gene with a sequence encoding a GGSGGSGGS linker (designed to be cleaved in acidic environments), mTFP, and a stop codon. PCR analyses verified the expected genotypes, and one founder mouse carrying the desired mutation was obtained from 32 offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C15, C66-C68 collectively demonstrate successful generation of the knock-in mouse. The CRISPR-Cas9 strategy is clearly described with appropriate technical details (C13, C66, C67), PCR verification is shown (C15), and the low efficiency (1/32 offspring) is typical for knock-in approaches. The linker design rationale is supported by citation (C14).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Homozygous GzmB-mTFP knock-in mice are viable, fertile, and maintain wild-type-like killing capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C3 are directly supported by multiple functional assays shown in the manuscript. Viability and fertility are stated (C2), and wild-type-like killing capacity is demonstrated through multiple independent assays including FRET-based killing assays (C27, C28) and degranulation assays (C24, C25, C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C22",
+      "C54"
+    ],
+    "result": "The GzmB-mTFP fusion protein is efficiently cleaved into GzmB and mTFP within cytotoxic granules, and GzmB expression is continuously up-regulated following CTL activation. This cleavage contributes substantially to the preserved functionality of GzmB in the knock-in.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C22, and C54 are well-supported by Western blot data (Figure 1C-D) showing efficient cleavage and FACS data (Figure 1E) showing up-regulation. The co-localization data (C18-C21) support that cleavage occurs within CGs (C22). The interpretation that cleavage preserves function (C54) is reasonable given the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Structured illumination microscopy demonstrated excellent co-localization of mTFP with GzmB (Pearson's coefficient 0.84 \u00b1 0.02) and perforin (Pearson's coefficient 0.69 \u00b1 0.03), and with Syb2-mRFP in double knock-in mice (Pearson's coefficient 0.88 \u00b1 0.10 on poly-ornithine, 0.86 \u00b1 0.08 on anti-CD3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide quantitative co-localization data with appropriate statistical measures (Pearson's and Manders' coefficients). The high correlation coefficients (>0.69) support excellent co-localization. Sample sizes are adequate (n=10 for GzmB/perforin, n=25 for Syb2-mRFP). Both Pearson's and Manders' coefficients are reported, providing complementary measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C74"
+    ],
+    "result": "Live STED microscopy revealed that cytotoxic granules are transported along microtubules at an average distance of 137.5 \u00b1 19.6 nm (19 cells, 80 granules), demonstrating that CTLs from the GzmB-mTFP-KI mouse are ideally suited for super-resolution imaging of CG maturation and trafficking in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C74 are supported by live STED imaging data (Figure 2G-I). The quantitative measurement of CG-microtubule distance is provided with adequate sample size (19 cells, 80 granules). The distance is stated to be comparable to wild-type controls, supporting preserved function. The conclusion about suitability for super-resolution imaging (C74) is justified by the demonstrated capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C75",
+      "C76"
+    ],
+    "result": "TIRFM imaging demonstrated that CG fusion events at the immune synapse can be reliably observed in GzmB-mTFP-KI CTLs. The percentage of CTLs showing fusion (57.7 \u00b1 4.6% for KI vs 59.0 \u00b1 2.9% for WT) and fusion events per cell (7.23 \u00b1 0.64 for KI vs 7.09 \u00b1 0.48 for WT) were indistinguishable between knock-in and wild-type CTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26, C75-C76 are well-supported by TIRFM data (Figure 3). Quantitative comparisons show no significant differences between KI and WT (N=3, n=70), with appropriate sample sizes. The observation of fusion events in both mTFP and mRFP channels in double KI mice (C26) provides additional validation. The conclusion about reliability (C75, C76) is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "GzmB-mTFP-KI CTLs killed target cells with similar frequency (57.7 \u00b1 4.6% for KI vs 59.0 \u00b1 2.9% for WT) and efficiency (fold ratio change 2.34 \u00b1 0.22 for KI vs 2.40 \u00b1 0.33 for WT) as wild-type CTLs in vitro, demonstrating that the killing capacity is indistinguishable from wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, and C30 are supported by FRET-based killing assays using Casper3-GR target cells (Figure 4A). The quantitative data show no significant differences between KI and WT CTLs (N=3, n=70 for frequency; n=7-8 for efficiency). The conclusion (C30) is appropriately conservative and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In the anterior chamber of the eye (ACE) allograft rejection model, transplanted islets became capillarized and blood-perfused between POD4-7. GzmB-mTFP positive cells invaded the islets starting between POD7-14, reaching a maximum of 26 \u00b1 8.3 cells/100 \u03bcm\u00b3 within two weeks. These cells were predominantly CD8+ CTLs with minimal CD4+ overlap. Syngeneic control islets showed no GzmB-mTFP positive cells or rejection over three months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe the in vivo ACE model results with appropriate controls. The timeline of engraftment and CTL invasion is documented (C31, C32), quantitative data are provided (N=4 animals, n=11 islets), and the syngeneic control (C33) demonstrates specificity. Immunohistochemical analysis (C34) confirms CTL identity. The control experiment is critical and well-executed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C72"
+    ],
+    "result": "In vivo two-photon microscopy of CTLs in the ACE model revealed an average migration velocity of 5.52 \u00b1 1.5 \u03bcm/min at POD14 and enabled visualization of individual cytotoxic granules in migrating CTLs. The nominal lateral resolution was ~0.7 \u03bcm (pixel size 340 \u00d7 340 nm), with typical resolution of ~1 \u03bcm within the first 40 \u03bcm from the islet surface. Two-photon microscopy substantially increased signal-to-noise ratio and light-penetration depth compared to confocal microscopy without increasing maximal resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 and C72 provide detailed technical characterization of in vivo imaging capabilities. The migration velocity measurement (C36) has adequate sample size (n=81 cells). The resolution measurements (C38, C39) are clearly stated with appropriate caveats about depth-dependence. The comparison between two-photon and confocal microscopy (C72) is appropriately nuanced, noting improved SNR and penetration without resolution improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C73",
+      "C57"
+    ],
+    "result": "The GzmB-mTFP-KI mouse enables quantitative analyses of cytotoxic granule maturation, transport, and fusion in vitro with super-resolution imaging, and two-photon microscopy in living mice enables visualization of tissue rejection through individual target cell-killing events in vivo. The mouse is an ideal tool to study CTL biology and optimize personalized immunotherapy in cancer treatment, allowing investigation of rate-limiting processes in CTL function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C73, and C57 represent the main conclusions about the utility of the mouse model. These are well-supported by the comprehensive characterization data showing: (1) preserved CTL function (C24-C30), (2) successful in vitro super-resolution imaging (C18-C26, C74-C76), and (3) successful in vivo imaging (C31-C39). The conclusions are appropriately stated as enabling future studies rather than claiming completed investigations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "mTFP is a monomeric (26.9 kDa) derivative of cyan fluorescent protein from Clavularia coral with high brightness, photostability, quantum yield, weak acid sensitivity, narrow emission spectrum, and is tolerated by the immune system upon adoptive transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe the properties of mTFP based on cited literature (Ai et al., 2006; Day et al., 2008; Gossa et al., 2015). These are established properties from prior work and are appropriately cited. The rationale for choosing mTFP is well-justified based on these properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "GzmB is synthesized as a zymogen and cleaved by cathepsin C in lysosomes, which removes an N-terminal 18-residue signal peptide and the downstream activation dipeptide Gly-Glu.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 describe established GzmB biology from cited literature (Jenne and Tschopp, 1988; Krahenbuhl et al., 1988; Caputo et al., 1993; Peri\u0161i\u0107 Nanut et al., 2014; Voskoboinik et al., 2015). This background information is appropriately cited and provides context for the C-terminal fusion strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In contrast to a previously published GzmB-tdTomato-KI that exhibited 75% reduction in GzmB expression, 30% reduction in CTL degranulation, and 25% reduction in GzmB protease activity, the GzmB-mTFP-KI showed no changes in GzmB expression, CG transport, CG fusion efficiency, degranulation capacity, or killing efficiency. This may be partly due to the smaller size of mTFP (26.9 kDa) compared to tdTomato (54.2 kDa), but more importantly due to efficient cleavage of the fusion protein in the acidic CG lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide important comparison to prior work and mechanistic explanation for superior performance. The comparison to GzmB-tdTomato-KI (C51) is appropriately cited (Mouchacca et al., 2013; 2015). The lack of functional defects in GzmB-mTFP-KI (C52) is supported by data from Figures 1C-D, 2G-H, 3C-D, 4A-B. The explanations (C53, C54) are reasonable hypotheses supported by the cleavage data (Figure 1C-D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The anterior chamber of the eye (ACE) model, originally developed to follow insulin secretion from Langerhans islets in diabetes treatment, allows longitudinal, non-invasive in vivo imaging of anti-islet immune responses with single-cell resolution in real time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 describe the ACE model based on cited literature (Speier et al., 2008a; Rodriguez-Diaz et al., 2012; Abdulreda et al., 2013; Abdulreda et al., 2019). This is established methodology appropriately cited. The application to the current study is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C62",
+      "C63"
+    ],
+    "result": "CTLs are essential for removal of foreign agents and play a key role in cancer immunotherapy. However, CTL function in isolation differs considerably from in vivo function, and in vivo studies have been scarce due to technical difficulties and lack of suitable markers. While the release of perforin and granzymes has been studied in detail using cultured CTLs, these approaches have neglected that CTLs act in concert with other immune cells in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C62-C63 provide background context with appropriate citations. These are well-established concepts in the field and the citations are appropriate. The motivation for developing the GzmB-mTFP-KI is clearly established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Granzyme B belongs to a family of serine proteases that induce apoptosis of target cells and is present in cytotoxic granules of natural killer cells and CD4+ and CD8+ T lymphocytes. Unlike perforin, GzmB deletion does not lead to a killing defect in CTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 describe established GzmB biology with appropriate citations (Young et al., 1986; Masson and Tschopp, 1987; Krahenbuhl et al., 1988; Peters et al., 1991; Simon et al., 1997). The rationale for choosing GzmB as the fusion partner (non-essential for killing) is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Two-photon imaging of lymph nodes in living mice demonstrated that CTLs kill on average only 4.5 target cells per day and require cooperativity of several CTLs acting in concert. This surprising inefficiency in vivo is most likely caused by rate-limiting steps like CTL priming, trafficking, CTL properties, and target cell properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 cite prior work (Halle et al., 2016; Nolz and Hill, 2016; Halle et al., 2017) to establish the context for why the GzmB-mTFP-KI is needed. These are appropriately cited findings from the literature that motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Synaptobrevin-2 (Syb2) is almost exclusively localized to CGs in CTLs and acts as the vSNARE in CG fusion with the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 cites prior work from the same group (Matti et al., 2013) establishing the Syb2-mRFP-KI. This provides appropriate context for the double knock-in experiments and is properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The activation of caspase-3 by GzmB during apoptosis leads to cleavage of the DEVD sequence in the Casper3-GR sensor, eliminating FRET, which can be detected as a decrease in red emission of TagRFP and simultaneous increase in green emission of TagGFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C70 describe the mechanism of the Casper3-GR FRET sensor with appropriate citation (Shcherbo et al., 2009). This is established methodology appropriately applied to measure CTL killing efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The small number of GzmB-mTFP positive, but CD8 negative cells might represent natural killer (NK) cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 is explicitly stated as speculation ('might represent'). While reasonable given that NK cells also express GzmB, no direct evidence is provided to confirm this identity. Additional markers would be needed to definitively identify these cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C55",
+      "C77",
+      "C78"
+    ],
+    "result": "The subcellular targeting of GzmB-mTFP to CGs allows investigation of individual CGs without compromising analyses of single CTLs in tissue. Unlike many current in vivo studies that require CTL removal, exogenous labeling, and re-injection, no manipulations are necessary for confocal or two-photon imaging in the GzmB-mTFP-KI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C77, and C78 describe advantages of the GzmB-mTFP-KI approach. The subcellular localization is demonstrated (C18-C21), and the in vivo imaging without manipulation is shown (Figure 5). The comparison to current methods (C77) is reasonable, though no specific citations are provided for this general statement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "In combination with FRET-based apoptosis reporters expressed in the islets, the GzmB-mTFP-KI might shed new light on the degranulation process in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is explicitly speculative ('might shed new light') and describes potential future applications with appropriate citations (Breart et al., 2008; Shcherbo et al., 2009; Garrod et al., 2012; Cazaux et al., 2019). While reasonable, this is a proposed future direction rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "New technological developments, like a combination of two-photon microscopy with STED microscopy, will further improve 3D resolution in in vivo studies and will, in combination with the GzmB-mTFP-KI, allow the observation of individual CG fusion events in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64 and C65 describe future technological possibilities with appropriate citation (Takasaki and Sabatini, 2014). While the current study demonstrates individual granule visualization (C37), observation of fusion events in vivo is stated as a future goal requiring improved technology. This is appropriately presented as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "At later PODs, the velocity of CTL migration increased due to the advanced tissue clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 states that data are not shown ('data not shown'), making it impossible to evaluate the evidence. While the explanation is plausible, the lack of presented data makes this claim uncertain. This should either be supported with data or removed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The GzmB-mTFP-KI mouse line will be deposited at the European Mouse Mutant Archive (EMMA) after publication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is a straightforward statement of intent regarding mouse line availability. This is appropriate for resource sharing and is clearly stated in the methods section.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1863 @@
+{
+  "submission": {
+    "id": "48a669ea-5907-4e20-b38a-9adf307e7383",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:54:07.934934Z",
+    "updated_at": "2025-12-02T14:54:07.934934Z"
+  },
+  "content": [
+    {
+      "id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "submission_id": "48a669ea-5907-4e20-b38a-9adf307e7383",
+      "content_type": "manuscript",
+      "content_text": "# Actin assembly ruptures the nuclear envelope by prying the lamina away from nuclear pores and nuclear membranes in starfish oocytes\n\n## Authors\n\n- Natalia Wesolowska<sup>1</sup>\n- Ivan Avilov<sup>2</sup>\n- Pedro Machado<sup>3</sup>\n- Celina Geiss<sup>1</sup>\n- Hiroshi Kondo<sup>1</sup>\n- Masashi Mori<sup>1</sup>\n- Peter Lenart<sup>1</sup> ([ORCID: 0000-0002-3927-248X](https://orcid.org/0000-0002-3927-248X)) \u2020\n\n### Affiliations\n\n1. Cell Biology and Biophysics Unit European Molecular Biology Laboratory (EMBL) Heidelberg Germany\n2. Max Planck Institute for Biophysical Chemistry G\u00f6ttingen Germany\n3. Electron Microscopy Core Facility European Molecular Biology Laboratory (EMBL) Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe nucleus of oocytes (germinal vesicle) is unusually large and its nuclear envelope (NE) is densely packed with nuclear pore complexes (NPCs) that are stockpiled for embryonic development. We showed that breakdown of this specialized NE is mediated by an Arp2/3-nucleated F-actin \u2018shell\u2019 in starfish oocytes, in contrast to microtubule-driven tearing in mammalian fibroblasts. Here, we address the mechanism of F-actin-driven NE rupture by correlated live-cell, super-resolution and electron microscopy. We show that actin is nucleated within the lamina, sprouting filopodia-like spikes towards the nuclear membranes. These F-actin spikes protrude pore-free nuclear membranes, whereas the adjoining stretches of membrane accumulate NPCs that are associated with the still-intact lamina. Packed NPCs sort into a distinct membrane network, while breaks appear in ER-like, pore-free regions. We reveal a new function for actin-mediated membrane shaping in nuclear rupture that is likely to have implications in other contexts, such as nuclear rupture observed in cancer cells.\n\n## Introduction\n\nThe nuclear envelope (NE), composed of inner and outer nuclear membranes, is a specialized sub-compartment of the endoplasmic reticulum (ER) that separates the nucleus and the cytoplasm in eukaryotic cells. The inner and outer NE is fused at nuclear pore complexes (NPCs) to mediate nucleo-cytoplasmic transport. This complex NE membrane structure is mechanically supported by a network of intermediate filaments, the lamina, which\u00a0lines the nucleoplasmic side (Burke and Ellenberg, 2002).\n\nAcross species and cell types a considerable diversity of nuclear structure allows adaptation to physiological function. For example, the composition of the lamina is adapted to provide the high mechanical stability that is necessary in muscle cells, or sufficient flexibility in immune cells, which need to squeeze through confined spaces (Thiam et al., 2016). Oocytes have a very specialized nuclear architecture with an exceptionally large nucleus, also known as the\u00a0germinal vesicle, which\u00a0stores nuclear components that are necessary to support early embryonic development. The oocyte NE is densely packed with NPCs that\u00a0serve as a stockpile of these complexes (rendering oocytes a popular model in\u00a0which\u00a0to study NPCs), and the lamina is thick so that it is able to provide mechanical support for\u00a0this very large structure (Goldberg and Allen, 1995).\n\nThe NE must be dismantled at the onset of every cell\u00a0division to give microtubules access to chromosomes, and then reassembled at the end of division once the chromosomes are segregated. Depending on the species and nuclear architecture, there is a broad diversity in disassembly mechanisms. In Drosophila and Caenorhabditis elegans embryos, the NE and the lamina remains partially intact\u00a0during cell\u00a0division, whereas in vertebrates and deuterostomes (including the echinoderm starfish), the complex NE structure is fully disassembled during division. In somatic mammalian cells, NE disassembly involves the complete dismantling of the NPCs, depolymerization of the lamina, and re-absorption of the nuclear membranes into the ER (Hetzer, 2010; Ungricht and Kutay, 2017).\n\nIn all species in which nuclear envelope breakdown (NEBD) has been investigated in detail, including somatic cells and oocytes from various species,\u00a0NEBD begins with a partial permeabilization of the NE resulting\u00a0from phosphorylation-driven disassembly of the NPCs and other NE components (Dultz et al., 2008; M\u00fchlh\u00e4usser and Kutay, 2007; Terasaki et al., 2001; L\u00e9n\u00e1rt et al., 2003; Martino et al., 2017; Linder et al., 2017). This allows proteins, and smaller dextrans up to\u00a0~70 kDa, to leak in or out of the nucleus (L\u00e9n\u00e1rt et al., 2003). Furthermore, it is likely that the mechanical properties of the NE are affected, that\u00a0is the NE is weakened and destabilized as a result of the\u00a0phosphorylation of lamins and lamina-associated proteins (Ungricht and Kutay, 2017). Importantly, however, during this first phase of\u00a0NEBD,\u00a0the overall structure of the NE\u00a0(as observed by electron microscopy (EM)) is still intact and the\u00a0compartmentalization of large protein complexes (e.g. ribosomes\u00a0and microtubules) is maintained (Terasaki et al., 2001; L\u00e9n\u00e1rt et al., 2003).\n\nIn all of the species and cell types investigated\u00a0to\u00a0date, the slow, phosphorylation-driven weakening of the NE is followed by a sudden rupture of the NE leading to rapid and complete mixing of cyto- and nucleoplasm. As this dramatic change is easily visible, even by transmitted light microscopy, this second step is commonly identified as \u2018NEBD,\u2019 marking the transition between the\u00a0prophase and the\u00a0prometaphase of cell division. Observations from several cell types suggest that this sudden rupture requires mechanical force generated by the cytoskeleton. In cultured mammalian cells, microtubules tear the NE in a dynein-dependent process (Beaudouin et al., 2002; Salina et al., 2002). By contrast, we have shown recently that in the large oocyte nucleus, the actin cytoskeleton\u00a0rather than the microtubule cytoskeleton is required for NE rupture. A transient F-actin \u2018shell\u2019 is polymerized by the Arp2/3 complex on the inner surface of the NE and membranes undergo complete rupture within\u00a0two minutes of its formation (Mori et al., 2014). The rapid and dramatic reorganization of the NE during NEBD that is mediated by cytoskeletal forces, involving either microtubule-driven rupture in somatic cells\u00a0or\u00a0the F-actin shell in oocytes, has not been well understood.\n\nHere, we use a combination of live-cell and super-resolution light microscopy, together\u00a0with correlated electron microscopy, to capture these sudden changes in NE organization. We find that the F-actin shell is nucleated within the still-intact lamina and projects filopodia-like spikes into the nuclear membranes. The resulting nuclear membrane protrusions are free of NPCs, but are juxtaposed by NPC-dense clusters. Subsequently, these NPC-dense conglomerates invaginate and sort into the\u00a0NPC-rich membrane network, while breaks appear on the pore-free regions.\n\n## Results\n\n### F-actin assembly causes reorganization of the nuclear membranes leading to rupture\n\nWe have shown previously that NE rupture, characterized by a wave-like entry of large cytoplasmic molecules into the nucleus, is mediated by a transient F-actin shell on the inner side of the NE, which\u00a0is\u00a0nucleated by the Arp2/3 complex (Mori et al., 2014). The F-actin shell first appears as an equatorial band of foci when the NE is still intact and impermeable to large dextrans (Figure 1A,\u00a00 s). Approximately 30\u201345 s later, as the F-actin foci grow and intensify, merging to\u00a0form a continuous F-actin shell, the first breaks on the NE appear, allowing a large 500 kDa dextran to flood into the nucleus (Figure 1A,\u00a045 s). The shell then spreads towards the poles before a wave of membrane rupture takes\u00a0place after\u00a0a\u00a0delay of\u00a0~30\u00a0s\u00a0(Figure 1A, 90 s).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig1-v2.jpg)\n\n**Figure 1.:** (A) Live imaging of UtrCH-3mEGFP (white) and Cy5-labeled\u00a0Dextran-500 kDa (red) in a starfish oocyte undergoing NEBD. Selected single confocal sections are shown from a time series. scale bar: 20 \u00b5m. Yellow asterisks mark F-actin foci. (B) Live imaging of a section of the rupturing NE in an oocyte injected with recombinant AlexaFluor488-labeled UtrCH, AlexaFluor647-labeled importin-\u03b2 (45-462)\u00a0(Imp), and DiIC18(3)\u00a0(Dil). Selected frames are shown from a deconvolved AiryScan time series.\u00a0Scale bar: 1 \u00b5m. Yellow asterisks mark the first visible sites of membrane reorganization. (C) As in\u00a0panel\u00a0(B) except that the oocyte was injected with a 500 kDa dextran instead of UtrCH. (D) Similar to panel\u00a0(B) except that the oocyte was injected with DiIC18(3) alone and imaged at the highest possible frame rate and resolution. (E) In an experiment similar to that shown in panel (B), oocytes were injected with either low (~1 \u00b5M) or a\u00a0very high amount (~20 \u00b5M) of UtrCH-AlexaFluor488 and equal amounts of DiIC18(3). At high concentrations, UtrCH depletes the\u00a0available actin\u00a0monomers by stabilizing cytoplasmic F-actin networks, and thereby efficiently prevents Arp2/3-driven assembly\u00a0and NE rupture.\n\nIt became obvious to us that we needed to address what happens in the 30\u201345 s period between the start of actin assembly and NE rupture, as this appears to be a critical moment in F-actin-driven NE rupture. Our previous live-cell imaging assays lacked sufficient resolution to tackle the question (Mori et al., 2014), therefore we established brighter, recombinant-protein-based probes and used the AiryScan technology combined with deconvolution to visualize changes in NE reorganization at the sub-micrometer scale.\n\nWhen we looked at the process with our new approach, we saw that as the first F-actin foci began to assemble, the NE still appeared smooth and continuous, as visualized by a membrane probe (DiIC18(3)) and a marker of NPCs (a fragment of importin-\u03b2) (Figure 1B, \u221213 s). 10\u201315 s later, we observed the first spike-like membrane protrusions towards the cytoplasm, which then rapidly escalated into a complex, convoluted and fragmented membrane structure (Figure 1B\u2013D). Intriguingly, during this process NPCs appeared to separate partially\u00a0from the membrane towards the nucleoplasmic side. Dextran entry did not coincide with the formation of the initial membrane spikes, it occurred 20\u201330 s later, when membrane reorganization had progressed to a rather advanced stage (Figure 1C).\n\nThis membrane reorganization is dependent on actin assembly. If the F-actin shell is inhibited by injecting a large amount of the actin-binding UtrCH domain to deplete available actin monomers, the NE membrane stays smooth and continuous (Figure 1E). Even in this case, the nucleus does collapse and the NE ruffles and folds as a result of the progressing partial NE disassembly. However, unlike in control oocytes, these large and folded membrane fragments remain intact long after NEBD, as we showed in\u00a0earlier work\u00a0(Mori et al., 2014).\n\nThus, we concluded that, in starfish oocytes, actin assembly mediates a reorganization of nuclear membranes that\u00a0leads to NE rupture.\n\n### Lamina remains intact during NE rupture\n\nWe next turned to immunofluorescence to visualize the endogenous NE components at an even higher resolution in order to reveal fine details of\u00a0the F-actin-mediated NE rearrangements. We developed an antibody against the only identified starfish lamin protein, which together with the pan-NPC antibody mAb414 enabled us to visualize endogenous NE components together with phalloidin-stained F-actin. However, the F-actin shell is very transient, polymerizing and depolymerizing within 2 min, so\u00a0the\u00a0development of a reliable temporal reference for fixed-cell assays was also necessary. Fortunately, the F-actin shell emerges in a highly reproducible spatial pattern, which enabled us to time the fixed samples by correlating them with morphologies observed live (compare Figures 1A and 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig2-v2.jpg)\n\n**Figure 2.:** (A) Fixed samples with F-actin labeled by phalloidin-AlexaFluor568. Individual confocal sections are shown and ordered to match the live time series shown in Figure 1A. Scale bar: 20 \u00b5m. (B) Immunostained starfish oocytes with anti-lamin antibody shown in cyan and phalloidin-AlexaFluor568 in red. The images show three time-points: early shell, full shell and post shell. Each panel shows a maximum projection of the whole z-stack (left), a single selected optical section across the equatorial plane (right), and a\u00a0close-up of the area in the single section highlighted with dashed rectangle (bottom). The small insets on the bottom right show en face views of the lamina in oocytes stained with the anti-lamin antibody and imaged by stimulated emission depletion\u00a0(STED)\u00a0microscopy at the corresponding stages. Scale bars: 20 \u00b5m (top), 5 \u00b5m (bottom left) and 0.5 \u00b5m\u00a0(bottom\u00a0right).\n\nWith this assay in hand, we first wanted to clarify whether the F-actin shell destabilizes the NE by tearing the lamin network, as this\u00a0mechanism has been reported for microtubule-driven NE rupture\u00a0in somatic cells (Beaudouin et al., 2002; Salina et al., 2002). We have addressed this question in starfish oocytes\u00a0before, but in this earlier work, we exogenously overexpressed a GFP fusion of human lamin B, which could have had different disassembly kinetics (L\u00e9n\u00e1rt et al., 2003). To visualize the endogenous lamina directly\u00a0this time, we analyzed samples stained with the starfish anti-lamin antibody at different stages of NE rupture. This confirmed our previous observations that the endogenous lamin network remains continuous\u00a0even minutes after NE rupture, although it folds and ruffles as the nucleus collapses during NEBD (Figure 2B). In\u00a0addition, imaging portions of the lamina en face by stimulated emission depletion (STED) microscopy suggests that the lamin mesh gradually coarsens during the process of NEBD (Figure 2B).\n\nWe conclude that the rupture of the NE does not proceed by F-actin-induced tearing or rapid disassembly of the lamina, which remains a continuous network throughout NEBD.\n\n### The F-actin shell assembles within the lamina sprouting spikes that separate nuclear membranes\n\nIn order to localize the F-actin shell relative to NE components, we next co-localized the lamina or the nuclear membranes (as marked by NPCs) at the time of shell formation, with the F-actin shell stained by phalloidin. We observed that although the lamina co-localized with phalloidin, the NPC staining formed a separate layer of fragmented appearance up to 500 nm \u2018above\u2019 the F-actin shell (Figure 3A,B). Thus, the still-intact lamina appears to serve as the scaffold upon which the F-actin shell assembles, whereas the nuclear membranes appear to fragment and separate away from the lamina and the F-actin shell.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig3-v2.jpg)\n\n**Figure 3.:** (A) Left: portion of the NE undergoing rupture immunostained with mAb414 for NPCs (cyan) and phalloidin-AlexaFluor568 for F-actin (red). A crop of a portion of NE from a confocal Z-section\u00a0is\u00a0shown.\u00a0Scale bar:\u00a02 \u00b5m. Right: plot of a line profile over the region marked with a white rectangle; normalized intensities of both channels are shown. (B) Same as panel\u00a0(A)\u00a0but stained with anti-lamin antibody and phalloidin-AlexaFluor568. (C) Portions of the NE stained with anti-lamin antibody (cyan) and mAb414 (red) and imaged by STED. Left, before NEBD; middle, after NEBD; right,\u00a0after NEBD but first treated with CK-666 to inhibit the formation of the F-actin shell. Scale bars: 2 \u00b5m. (D) Phalloidin-Abberior Star RED staining of the\u00a0F-actin shell imaged by STED microscopy. Scale bars: 5 \u00b5m\u00a0(left)\u00a0and 2 \u00b5m\u00a0(right). (E) F-actin shell stained with mAb414 to label NPCs, an anti-ArpC1 antibody to label the Arp2/3 complex, and Phalloidin-Abberior Star RED to label F-actin, imaged by STED microscopy. Scale bar: 2 \u00b5m.\n\nWe confirmed these observations by STED imaging of the lamina and NPCs (note that these samples were co-stained with phalloidin for staging, but it was not possible to image the third color on this particular STED setup). Before NE rupture, the NPC and lamina stainings overlapped at the approx. 50 nm resolution afforded by STED, which is consistent with the known ultrastructure of the NE (Figure 3C, pre-NEBD) (Burke and Ellenberg, 2002). In stark contrast, at the shell stage, we were able to visualize NPC-stained NE fragments \u2018floating\u2019 above the intact lamina (Figure 3C, post-NEBD). This separation of lamina and membranes is dependent on the F-actin shell, because this process did not occur when we prevented F-actin shell formation by inhibiting Arp2/3 using the small molecule inhibitor\u00a0CK-666 (Figure 3C, post-NEBD + CK-666). Consistent with\u00a0the live imaging described\u00a0above, the NE appears ruffled due to collapse of nuclear volume\u00a0even if the F-actin shell is inhibited.\n\nSTED imaging of samples that\u00a0were\u00a0optimally fixed for phalloidin staining revealed filopodia-like F-actin spikes of 0.5\u20132 \u03bcm in length, spaced\u00a0at\u00a0~0.1 \u03bcm, and extending from the base of the F-actin shell towards the\u00a0nuclear membranes (Figure 3D). Furthermore, using a starfish-specific anti-ArpC1 antibody, we localized the Arp2/3 complex at the base of the F-actin shell just beneath the NE, whereas the F-actin spikes extending from the base were not labeled by ArpC1 (Figure 3E).\n\nTaken together, our data show that the F-actin shell is nucleated by the Arp2/3 complex localized in the lamina and extends filopodia-like spikes, which\u00a0separate\u00a0the nuclear membranes away from the lamina.\n\n### Correlative EM captures intermediates of NE rupture\n\nUnfortunately, although live imaging showed dramatic rearrangement of membranes, we were unable to visualize fine membrane structures in immunofluorescent samples\u00a0directly, because preserving F-actin in fixed oocytes requires the\u00a0addition of detergents to the fixative. The oocyte NE is,\u00a0however, densely packed with NPCs, so\u00a0NPC staining does provide a good proxy for the nuclear membrane, as shown above. Nonetheless, during NE rupture, this organization may change. Therefore, to clarify the F-actin mediated rearrangements of nuclear membranes, we decided to target the\u00a0early stages of the F-actin shell formation using electron microscopy (EM). In this time-window of approximately 30 s, when the actin shell has just partially propagated, we expected to observe intermediate steps of NE rupture, with parts of the NE already ruptured while other regions are still intact (see Figure 1A).\n\nFor this purpose, we developed a correlative electron microscopy protocol using high-pressure freezing and freeze substitution, which\u00a0resulted in excellent preservation of the\u00a0cellular structures (Burdyniuk et al., 2018). Correlation to light microscopy was achieved by using fluorescently\u00a0labeled dextrans, which are directly visible on EM sections, as indicators of NEBD progression (Figure 4A,B): the small, 25-kDa dextran enters the nucleus during the first phase of NEBD through the disassembling NPCs, whereas the large, 160-kDa dextran only enters when the NE is ruptured (L\u00e9n\u00e1rt et al., 2003). Thus, the\u00a0stage\u00a0when the 25-kDa dextran almost completely fills the nucleus but the large, 160-kDa dextran is still excluded identifies the time-window of F-actin shell formation and NE rupture.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig4-v2.jpg)\n\n**Figure 4.:** (A) Live imaging of a starfish oocyte undergoing NEBD and injected with a 25-kDa Cy5-labeled dextran (cyan), a\u00a0160-kDa TRITC-labeled dextran (red) and UtrCh-3mEGFP (white).Selected 2-frame projections from a confocal time-series imaged at one frame per second\u00a0are\u00a0shown. The\u00a0orange line marks the moment immediately\u00a0before rupture of the membrane, corresponding to the predicted time for the EM sample shown in panels\u00a0(B) and (C). Scale bar: 20 \u00b5m. (B) Wide-field fluorescence image of a 70-nm section of a Lowicryl-embedded oocyte undergoing NEBD and injected with a\u00a025-kDa Cy5-labeled dextran (cyan) and a\u00a0160-kDa TRITC-labeled (red) dextran. Scale bar: 20 \u00b5m. (C) A whole-nucleus tile of transmission EM images stitched automatically for the oocyte section\u00a0shown in panel\u00a0(B). Symbols around the nucleus correspond to NE rupture intermediates. A\u00a0symbol legend with examples (crops from the tiled image) is shown to the right. Under each symbol, numbers correspond to the count of these events in the section shown, and the count in two adjacent sections is given in parentheses (shown in Figure 4\u2014figure supplements 1\u20133). The band that\u00a0traces the NE within the nuclear space demarcates areas with color-code for predominant membrane features. For a\u00a0full resolution image, see Figure 4\u2014figure supplement 1. Scale bar: 10 \u00b5m. (D) An oocyte fixed and stained with anti-lamin antibody (cyan) and phalloidin-AlexaFluor568 at early shell formation. A maximal Z projection\u00a0is\u00a0shown. Right: scheme illustrating the 3D geometry of the EM section. Scale bar: 20 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Scale bar: 10 \u00b5m.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Scale bar: 10 \u00b5m.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig4-figsupp3-v2.jpg)\n\nWe then performed automated large field-of-view montage transmission EM imaging of the whole nuclear cross-section to assess the state of the NE. An overview is shown in Figure 4C, this and two additional montages are available at high resolution as Supplemental Data (Figure 4\u2014figure supplements 1\u20133). The montage illustrates the key advantage of the system, which\u00a0allows the progression of NE rupture to be observed spatially ordered on a single section of the large oocyte nucleus. The arrangement of the rupture site is fully consistent with the\u00a0live and fixed light microscopy data: NE rupture initiates near the \u2018equator\u2019 of the nucleus and\u00a0spreads as a wave towards the poles (Figure 4D).\n\nWe carefully examined these large montages and observed a set of frequently recurring characteristic membrane configurations. We assigned them to\u00a0one\u00a0of four categories and gave each a symbol to mark their incidence (Figure 4C). Numbers under each category quantify the occurrence of each feature within the section, and numbers in parentheses represent similar quantifications in two other sections shown in Figure 4\u2014figure supplements 2 and 3, illustrating that these are structures that occur frequently at the time of NE rupture.\n\nTaken together, using our correlative light and electron microscopy approach, we were able to capture oocytes in the process of NE rupture.\n\n### F-actin spikes protrude pore-free nuclear membranes\n\nThe large dataset (Figure 4\u2014figure supplements 1\u20133), the high frequency of events observed and, importantly, the spatial arrangement from the equatorial rupture site towards the still-intact poles allowed us to reconstruct the steps of NE rupture and to\u00a0correlate these to observations made in live and fixed cells.\n\nFirst, as consistent with earlier observations, the NE is smooth, continuous and is tightly packed with NPCs with a regular spacing of\u00a0~200\u00a0nm\u00a0in immature oocytes, as well as in oocytes just before NE rupture and even in the intact polar regions of the NE undergoing rupture (see Figure 5A,B for image examples, and Figure 6C\u00a0for\u00a0quantification) (L\u00e9n\u00e1rt et al., 2003). By contrast, in areas closer to the rupture site, we observed regions with gaps in NPC occupancy, the number and size of which increased proximal to this region (Figure 5C). In the vicinity of the site, gaps appeared to evolve into \u2018bumps\u2019 and membrane spikes (Figure 5D). Although reconstructing the full 3D architecture of these spikes is challenging, even in 300-nm-thick tomographic sections, the most prominent spikes that\u00a0we observed rose\u00a0~1 \u00b5m above the level of the NE (Figure 5D,E). These spikes contain fibrous densities consistent with actin filaments (Figure 5D and Figure 5\u2014figure supplement 1A) and\u00a0are\u00a0even more clearly distinguishable on tomographic reconstructions (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013D) Transmission EM images from the oocyte shown in Figure 4C showing intermediates of NE rupture. Transparency coloring distinguishes the cytoplasm (green) from the\u00a0nuclear area (pink) on the basis of the presence of ribosomes. Scale bars are 1 \u00b5m, except in the zooms, where they are 250 nm. In\u00a0panel (D) arrows point to nucleoplasmic bodies. Zooms of the\u00a0areas outlined with white rectangles are shown below. (E) Tomogram of a NE spike from a 300-nm thick section of the oocyte shown in Figure 4C, with model overlay segmented manually. Scale bar: 200 nm. (F) Selected single frame from a deconvolved 3D Airyscan recording at the time of NE rupture. F-actin is labeled with recombinant UtrCH-AlexaFluor488, and\u00a0endomembranes are stained by DiIC18(3). Arrows mark prominent F-actin spikes. Scale bar: 1 \u00b5m. (G) STED image of the NE at the shell stage stained for NPCs (mAb414), lamina and phalloidin-Abberior Star Red. Separate channels and overlays are shown in the combinations indicated. Arrows point at nucleoplasmic bodies. Scale bars: 1 \u00b5m\u00a0and 0.5 \u00b5m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Crops from an\u00a0EM montage of membrane evaginations containing actin filaments. (B) Crops each show a membrane feature identified\u00a0as NPC clusters: a concave NE-membrane portion that\u00a0is\u00a0rich in NPCs. To help orientation, the first crop in each row is pseudo-colored for cytoplasm (green), nucleus (pink) and NPC-rich cluster (orange). Scale bar: 500 nm.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig6-v2.jpg)\n\n**Figure 6.:** (A) Transmission EM images from the oocyte shown in Figure 4C and colored as in Figure 5A\u2013D, showing invaginating NPC clusters. Zooms of portions outlined with white rectangles are shown below without color transparencies. Scale bars: 1 \u00b5m (left)\u00a0and 500 nm(zooms). See Figure 5\u2014figure supplement 1A for more examples. (B) Transmission EM images as in panel\u00a0(A) showing an area with nucleoplasmic bodies. Arrows point at ribosomes that\u00a0are\u00a0present within nucleoplasmic bodies. Scale bar: 1 \u00b5m. (C) Quantification of pore-to-pore distance on electron micrographs similar to those\u00a0shown in Figure 4\u2014figure supplements 1\u20133. n refers to the number of pore-pairs measured in each of the respective samples or regions. n.s. denotes no significant difference, *,\u00a0p\u22640.05, ***,\u00a0p\u22640.001, as calculated by Student\u2019s T-test. (D) En face views of NPCs in the indicated regions along the NE. Scale bars: 500 nm. (E) Tomogram of a nucleoplasmic body (left), with a model overlaid (middle). Right: re-slicing of the volume perpendicular to the view on the left corresponding to the area outlined with an orange dashed rectangle in the\u00a0top panel. Scale bars: 200 nm (top and middle) and 100 nm\u00a0(bottom). (F) Selected frames from a live-cell recording of an oocyte injected with DiIC18(3) undergoing NE rupture. Scale bar: 1 \u00b5m. (G) STED image of the NE at the shell stage stained for NPCs (mAb414) (red), lamina (cyan) and phalloidin-AlexaFluor488 (gray). Scale bar: 1 \u00b5m.\n\nIntriguingly, on both\u00a0thin sections and tomographic reconstructions, we observed that\u00a0these spikes were covered by continuous nuclear membranes and\u00a0almost completely free of NPCs (Figure 5D). These pore-free areas are surrounded by NPC-dense adjacent regions (Figure 5D and Figure 5\u2014figure supplement 1A,B). We are unable to estimate the 3D membrane areas from 2D sections, nevertheless, our data suggest that NPC-free areas pushed out by the F-actin shell may cause the crowding of NPCs in juxtaposed regions (Figure 6C).\n\nThese observations are further supported by light microscopy. AiryScan imaging in live oocytes shows membrane-covered spike-like F-actin protrusions extending from the NE, and these protrusions are consistent in size and number with our observations by EM (Figure 5F). In fixed samples imaged by STED, we were\u00a0unable\u00a0to visualize membranes\u00a0directly, but\u00a0we observed F-actin spikes extending out of the lamina with no NPC staining covering them except for dense NPC clusters at their base, an arrangement that is fully consistent with that seen on EM samples (Figure 5G). In\u00a0addition, we were able to visualize that the lamina runs at the base of the F-actin shell, below but still attached to NPC clusters, suggesting that NPCs might be held back at the base of spikes by their attachments to the lamina (Figure 5G).\n\nTogether, our data\u00a0from EM correlated with live cell and immunofluorescence suggest that the growing gaps between NPCs, which then develop into bumps and spikes, are protrusions generated by Arp2/3-driven actin polymerization,\u00a0which pries nuclear membranes and lamina apart. Membrane evaginations are largely free of NPCs, most probably because NPCs are still attached to the lamina, and thus NPCs are held back and cluster at the base of spikes.\n\n### NPC-dense clusters invaginate and segregate from NPC-free regions\n\nIn regions closer to rupture sites, we observed an increasing segregation of pore-free and pore-dense segments (Figure 6A). Furthermore, accompanying spikes and NPC-rich clusters, we observed additional frequent membrane structures, which we call nucleoplasmic bodies.\u00a0These\u00a0are dense, round structures 200\u2013500 nm in diameter beneath the NE in the nucleoplasm (Figures 5D and 6B). These bodies often appear in a beads-on-a-string arrangement with a slightly electron-denser material connecting them (Figure 6B). Above them, the NE appears to be still intact, consisting mostly of NPC-free nuclear membranes and maintaining the nucleo-cytoplasmic boundary, as judged by the distribution of ribosomes. In pore-dense segments, as well as in nucleoplasmic bodies, our quantification shows that pore-to-pore distance decreased substantially from\u00a0~200 nm in intact areas to\u00a0~100 nm (Figure 6C), suggesting that the NPC-free membranes are generated by redistribution of NPCs.\n\nCareful examination of intermediates suggests that nucleoplasmic bodies may form by invagination of NPC-rich clusters, initially inducing pits that\u00a0curve into the nucleoplasm and then forming inverted NE tubules filled inside with cytoplasm (Figure 6A,B and Figure 5\u2014figure supplement 1B). Sections capturing these structures en face and tomograms confirm that the electron density along the boundary of the bodies corresponds to closely juxtaposed NPCs with an intact central ring structure, similar to NPCs in still-intact areas (see \u2018nucleoplasmic bodies\u2019 in Figure 6D,E).\n\nComparing these structures to membrane intermediates observed in live cells suggests that they correspond to the convoluted morphology seen just before rupture (Figure 6F). In fixed samples, large spots of NPC accumulations that appear to\u00a0be\u00a0attached to the underlying lamina are also strongly reminiscent of the nucleoplasmic bodies (Figure 6G).\n\nFinally, the EM montages revealed that\u00a0the membranes were interrupted\u00a0in areas where the\u00a0segregation of pore-dense and pore-free regions was strongest and NPC invaginations frequent and most dramatic (Figure 7A). Here, no continuous membrane boundary was seen to separate cyto- and nucleoplasm, but nucleoplasmic bodies were abundant. Light microscopy of the corresponding stage revealed a complex tubular-vesicular network that\u00a0was\u00a0densely labeled by NPC staining, occasionally resolving cross-sections of tubules consistent with our EM data (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/49774/elife-49774-fig7-v2.jpg)\n\n**Figure 7.:** (A) Transmission EM images like\u00a0those\u00a0in Figure 6A showing examples of NE rupture events. Zooms of the areas outlined with white squares are shown below. Scale bars: 1 \u00b5m, and 500 nm for zooms. (B) En face STED image of the NE at the shell stage stained for NPCs (mAb414) (red). Scale bars: 1 \u00b5m\u00a0(top)\u00a0and 0.5 \u00b5m\u00a0(bottom). (C) Model of F-actin-driven NE rupture. Intact NE: interphase organization of nuclear membranes (black lines) with regularly spaced NPCs (yellow cylinders) featuring cytoplasmic filaments and nuclear baskets. Nuclear baskets are embedded in the lamin network (blue filaments). Phase I of NEBD: peripheral NPC components are gradually released, but the NPC core and the\u00a0overall NE structure remains intact. Phase II: NE rupture. First, small patches of F-actin (red) form within the lamina. F-actin patches grow and merge to form\u00a0a shell, pushing apart NPCs that\u00a0are\u00a0still partially anchored in the lamina. As frequent F-actin spikes further sever the lamin-to-NE attachments, NPCs segregate into conglomerates, leaving stretches of unstable bare membrane, where breaks appear.\n\nTogether, our data show that NE rupture proceeds by F-actin-driven sorting of NE membranes into pore-dense and pore-free segments. Pore-dense segments invaginate, forming a network of nucleoplasmic bodies, whereas rupture occurs in evaginating pore-free segments.\n\n## Discussion\n\nHere, we resolved structural intermediates of rapid NE rearrangements mediated by the transient F-actin shell by using live-cell imaging, super-resolution light microscopy and correlative EM in starfish oocytes. On the basis of our data, we propose the following model for NE rupture (Figure 7D).\n\nThe first step is\u00a0the formation of F-actin foci within the lamina. We hypothesize that these foci form at the time when cytoplasmic components, such as the Arp2/3 complex and actin monomers, reach a critical concentration in the nucleus as a result of the gradual, phosphorylation-driven disassembly and increasing leakiness of the NPCs in the first phase of NEBD. Once triggered, F-actin foci grow rapidly, which is expected as a result of the autocatalytic nature of Arp2/3-mediated nucleation of branched F-actin networks. As the\u00a0foci spread, they merge to form\u00a0a continuous shell. The filaments seem to grow preferentially\u00a0from the shell base in the lamina towards nuclear membranes, and push against them. This asymmetry may be explained by\u00a0the fact that force imposed on actin filaments promotes the\u00a0nucleation of a\u00a0branched meshwork (Bieling et al., 2016). Intriguingly, F-actin networks that\u00a0are\u00a0nucleated in vitro on micropatterned activated Arp2/3 show a morphology that\u00a0is\u00a0strikingly similar to that of the F-actin shell, with filopodia-like bundles pointing away from a base of dense branched network (Reymann et al., 2010). This suggests that localized activation of Arp2/3 within the lamina may be sufficient to explain the morphology of the F-actin shell.\n\nOur light and electron microscopy data clearly show that the F-actin shell protrudes pore-free nuclear membranes, separating these from the lamina. We propose that these membranes are cleared of NPCs, because most NPCs are attached to the still-intact lamina at this stage, and thus are held back, while membranes are protruded by actin assembly. Then, as the NPCs accumulate between pore-free spikes, the membranes in these NPC-rich dimples buckle into the nucleoplasm and invaginate to form nucleoplasmic bodies. Our data suggest that pore-free nuclear membranes that\u00a0are\u00a0separated from the lamina are unstable, and thus rupture and rearrange into an ER-like reticular structure.\n\nThe exact mechanism of rupture remains unclear. However, in agreement with our model, it has been shown in various other physiological contexts that detaching the nuclear membranes from the lamin network leads to NE rupture. For example, NE rupture frequently occurs in cancer cells, in particular in micronuclei, where breaching of the NE barrier is preceded by local lamin disruption (Hatch et al., 2013). Recent work shows that the \u2018breakability\u2019 of the nucleus in migrating cells is dependent on lamin composition (Thiam et al., 2016; Davidson and Lammerding, 2014; Denais et al., 2016). Indeed, in somatic cells, it has been shown that NEBD proceeds by microtubule-mediated tearing of the lamina (Beaudouin et al., 2002; Salina et al., 2002), but the precise morphology of the NE intermediates at a resolution comparable to that\u00a0which\u00a0we achieved in starfish oocytes is not known. Therefore, it is possible that a similar mechanism, based on the\u00a0segregation of lamina, NPCs and membranes, plays a critical role in destabilizing the NE during NE rupture in somatic cells.\n\nOne possibility is that membranes actually break (fission), but this is complicated by the fact that this process would probably require a coordinated fission of inner nuclear membranes. Another alternative mechanism of NE rupture may be the disassembly of the central ring of a nuclear pore. This could allow the nuclear envelope to rearrange into an ER-like network without the need for an actual change in membrane topology. It is clear that only a small subset of NPCs may undergo such complete disassembly, because we can visualize the majority of NPCs with still intact central ring structure long after rupture. F-actin assembly may facilitate this process by increasing membrane tension in evaginations, or by causing extreme membrane curvatures, for example at the boundary of invaginations, thereby facilitating NE rupture or possibly complete NPC disassembly.\n\nIn addition, although this hypothesis remains rather speculative at this point, it is intriguing to consider links between our work and what has been shown for repair of interphase NE rupture, as well as reassembly of NE after division, both instances involving the ESCRT machinery (Denais et al., 2016; Raab et al., 2016; Olmos et al., 2015). In our NEBD intermediates, we observe membrane topologies that are similar to those involved in NE repair, suggesting that the ESCRT complex may also be involved in these membrane rearrangements.\n\nAs mentioned in the 'Introduction', there is wide diversity across species and cell types in the extent of NE disassembly during division. For example, the lamina persists much longer in many species as compared to mammalian somatic cells (Gruenbaum et al., 2003). Intriguingly, an F-actin shell similar to that in starfish oocytes has been observed in several species, although these structures are yet to be characterized in detail. These\u00a0species include other echinoderm species, such as sea urchin (Burkel et al., 2007), the cnidarian model Nematostella vectensis (DuBuc et al., 2014), and polychaete worms (Jacobsohn, 1999). These examples strongly suggest that F-actin-mediated NE rupture may be widely spread across animal species, and we speculate that the presence or absence of this mechanism may be correlated with differences in NE disassembly dynamics, nuclear size and other differences in physiology.\n\nFinally, the clearing of NPCs off the membrane during\u00a0NEBD\u00a0appears to be conserved in organisms with partially open mitosis. Tearing of the NE has been observed in the fungus Ustilago maydis and the yeast Schizosaccharomyces japonicus. In U. maydis, the shearing is caused by microtubules pulling the nucleus through a small opening into the bud of the daughter cell (Straube et al., 2005). Sz. japonicus, on the other hand, splits the NE by stretching the nucleus between the two poles of a dividing cell (Aoki et al., 2011). Thus, NE rupture occurs by different means, but intriguingly, both show evidence of clearing NPCs before the NE is torn: Sz. japonicus redistributes the NPCs to the two poles, freeing naked membranes at the NE regions destined to be broken. NPCs of U. maydis on the other hand initiate release of nucleoporins prior to rupture just as in higher eukaryotes (Straube et al., 2005; Aoki et al., 2011; Theisen et al., 2008).\n\nTaken together, our data suggest that the F-actin shell destabilizes the NE by segregating pore-dense and pore-free membranes, providing the first mechanistic explanation for the sudden collapse of the NE structure during its breakdown. As discussed above, this mechanism is likely to function in many animal species.\u00a0In other species, forces may be generated by means\u00a0other than Arp2/3-mediated actin polymerization, but the segregation of nuclear membranes from the lamin network appears to be a general feature of nuclear rupture observed in dividing mammalian somatic cells, as well as during the\u00a0interphase NE rupture that\u00a0is\u00a0frequent in cancer cells.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Biological sample (Patiria miniata)</td>\n      <td>starfish oocytes</td>\n      <td>https://scbiomarine.com/ http://www.marinusscientific.com/</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Biological sample (Patiria pectinifera)</td>\n      <td>starfish oocytes</td>\n      <td>Kazuyoshi Chiba, Ochanomizu University, Tokyo, Japan</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>mEGFP3-UtrCH, 3mCherry-UtrCH</td>\n      <td>doi:10.1002/cm.20226</td>\n      <td></td>\n      <td>synthetic mRNA (Utrophin CH domain (human))</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Importin</td>\n      <td>doi: 10.1093/emboj/16.6.1153</td>\n      <td></td>\n      <td>(Importin-\u00df (45-462))</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>UtrCH</td>\n      <td>doi:10.1002/cm.20226</td>\n      <td></td>\n      <td>(Utrophin CH domain (human))</td>\n    </tr>\n    <tr>\n      <td>Antibody, mouse (mAb414)</td>\n      <td>mAb414, mouse monoclonal</td>\n      <td>Sigma, BioLegend</td>\n      <td>Sigma #N8786, Biologend #902907</td>\n      <td>1:250</td>\n    </tr>\n    <tr>\n      <td>Antibody, rabbit (lamin)</td>\n      <td>lamin, rabbit polyclonal</td>\n      <td>see 'Materials and methods' for details</td>\n      <td></td>\n      <td>1:250</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>AmpliCap-Max T7 High Yield Message Maker</td>\n      <td>CellScript</td>\n      <td>C-ACM04037</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Poly(A) tailing kit</td>\n      <td>CellScript</td>\n      <td>C-PAP5104H</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Alexa Fluor 647 maleimide</td>\n      <td>ThermoFisher</td>\n      <td>A20347</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Alexa Fluor 488 maleimide</td>\n      <td>ThermoFisher</td>\n      <td>A10254</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Alexa Fluor 647 NHS Ester</td>\n      <td>ThermoFisher</td>\n      <td>A20006</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Alexa Fluor 488 NHS Ester</td>\n      <td>ThermoFisher</td>\n      <td>A20000</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Cy5 NHS Ester</td>\n      <td>discontinued</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DiIC18(3)</td>\n      <td>ThermoFisher</td>\n      <td>D282</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>1-methyladenine (1-MA)</td>\n      <td>ACROS organics</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Phalloidin-AlexaFluor 488</td>\n      <td>ThermoFisher</td>\n      <td>A12379</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Phalloidin-AlexaFluor 568</td>\n      <td>ThermoFisher</td>\n      <td>A12380</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Phalloidin-AlexaFluor 647</td>\n      <td>ThermoFisher</td>\n      <td>A22287</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Abberior STAR RED phalloidin</td>\n      <td>Abberior</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CK-666</td>\n      <td>Merck</td>\n      <td>182515</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Amino-dextran 500,000 MW</td>\n      <td>ThermoFisher</td>\n      <td>D7144</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Amino-dextran 70,000 MW</td>\n      <td>ThermoFisher</td>\n      <td>D1862</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TRITC\u2013Dextran 155,000 MW</td>\n      <td>Sigma</td>\n      <td>T1287</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Oocyte collection and injection\n\nStarfish (Patiria miniata or P.\u00a0pectinifera) were obtained in the springtime from Southern California (South Coast Bio-Marine LLC, Monterey Abalone Company or Marinus Scientific Inc) or were kindly provided by Kazoyushi Chiba (Ochanomizu University, Tokyo, Japan). They\u00a0were kept at 16\u00b0C for the rest of the year in seawater aquariums at EMBL\u2019s or MPI-BPC\u2019s marine facilities. Oocytes were extracted from the animals fresh for each experiment as described earlier (L\u00e9n\u00e1rt et al., 2003). mRNAs and other fluorescent markers were injected using microneedles, as described previously (Jaffe and Terasaki, 2004; Borrego-Pinto et al., 2016). mRNA was injected the day before to allow protein expression, whereas fluorescently labeled protein markers or dextrans were injected a few hours prior to imaging. Meiosis was induced at the\u00a0initiation of the\u00a0experiment by addition of 1-methyladenine (1-MA, 10 \u00b5M, Acros Organics). NEBD normally started 20\u201325 min after 1-MA addition, and\u00a0only oocytes that\u00a0initiated NEBD within 40 min of 1-MA addition were considered. Every experiment was repeated at least three times, with oocytes taken from at least two different animals.\n\n### Fluorescent markers and antibodies\n\nTo label F-actin, 3mEGFP-UtrCH (Burkel et al., 2007) mRNA was synthesized in vitro from linearized DNA templates using the AmpliCap-Max T7 High Yield Message Maker kit (Cellscript), followed by polyA-tail elongation (A-Plus Poly(A) Polymerase Tailing Kit, Cellscript). mRNAs were dissolved in water (typical concentration 3\u20135 \u00b5g/\u00b5l) and injected into the oocyte up to 5% of the oocyte volume.\n\nAlternatively, the UtrCH domain was cloned and expressed in\u00a0E. coli, purified and labeled with Alexa Fluor 488- or 647-maleimide. Importin-\u03b2 (45-462)-AlexaFluor488/647 protein was a generous gift from Dirk G\u00f6rlich.\n\nPhalloidin labeled with the indicated Alexa or Abberior fluorophores (Invitrogen) was dissolved in methanol, and was then air-dried prior to use and dissolved in PBS for immunostaining.\n\nFor dextrans, amino-dextrans were labeled with succinimidyl ester dye derivatives (Cy5 or AlexaFluor647) or purchased in already\u00a0labeled form (TRITC), purified and injected into oocytes as described earlier (L\u00e9n\u00e1rt et al., 2003). DiIC18(3) (ThermoFisher) was dissolved in sunflower oil to saturation and injected to oocytes.\n\nFor CK-666 (Merck) treatments, oocytes were treated at 0.5 mM final concentration and incubated for 1 hr prior to hormone addition.\n\nThe pan-NPC antibody mAb414 was purchased from BioLegend or Sigma (catalogue #902907\u00a0or\u00a0#N8786, respectively). To produce the anti-starfish-lamin antibody, the Patiria miniata lamin sequence was first\u00a0identified by BLAST searches in our transcriptome-based database by comparisons to the human lamin B amino acid sequence, and then\u00a0confirmed by reverse searches to other species. Furthermore, the corresponding mRNA was expressed as a mEGFP fusion and showed the expected localization to the NE in starfish oocytes (not shown). Peptide antibodies were then produced against the \u2018histone-interaction peptide\u2019 region of starfish lamin (GTKRRRLDEEESMVQSS), which was used as the antigen for rabbit immunization. Antibody production and affinity purification was performed by Cambridge Research Biochemicals. The antibody\u2019s specificity was confirmed by Western blots,\u00a0which showed an expected-sized band, and by immunostaining, which showed localization to the nuclear rim in starfish oocytes.\n\n### Immunostaining\n\nOocytes were fixed at the\u00a0desired times in a PFA/GA fixative (100 mM HEPES [pH 7.0], 50 mM EGTA, 10 mM MgSO4, 0.5% Triton-X100, 1 or 2% formaldehyde, 0.2 or 0.4% glutaraldehyde) modified from Strickland et al. (2004). Active aldehyde groups that\u00a0remained post fixation were quenched by 0.1% solution of NaBH4 or by\u00a0200 mM NH4Cl and 200 mM glycine. Subsequently, samples were permeabilized and blocked in PBS+0.1% Triton-X100 plus 3% BSA and the Image-IT reagent (ThermoFisher Scientific). Antibody staining was done overnight for the primary antibody and for 2\u20133 hr for the secondary antibody in PBS+0.1% Triton-X100 at room temperature. Oocytes were mounted with the antifade agent ProLongGold (ThermoFisher Scientific) under a coverslip pressed quite firmly onto tiny pillars of grease or double-sided tape (Scotch).\n\n### Light microscopy\n\nLive-cell movies were acquired on a Leica SP5 confocal microscope using a 40x HCX PL AP 1.10 NA water immersion objective lens (Leica Microsystems), or a Zeiss LSM880 AiryScan microscope using a C-Apochromat 40 \u00d7 1.20 NA water immersion objective lens. For live-cell imaging experiments, at least 3\u20135 oocytes were recorded per session.\n\nFixed oocytes were imaged on a Leica SP8 microscope equipped with the HC PL APO 1.40 NA 100x oil immersion objective according to Nyquist criteria. For STED imaging, suitable Abberior STAR 580 and Abberior STAR RED or Abberior STAR 635P secondary antibodies or nanobodies were used (Abberior, NanoTag). Samples were imaged on a Leica SP8 STED microscope, with the HC PL APO CS2 1.40 NA 100x oil immersion objective and using the 775 nm depletion laser. Alternatively, we used an Abberior Instruments STEDYCON scan head mounted onto a Nikon Ti2 microscope equipped with a\u00a0100x CFI Plan Apochromat Lambda NA 1.45 oil immersion objective lens, or with\u00a0an Abberior Instruments Expert Line STED microscope using an Olympus 100x UPLSAPO 100XS NA 1.4 oil\u00a0immersion objective. At least five oocytes were recorded per sample.\n\nLive and fixed oocyte images were processed and deconvolved using the Huygens software (Scientific Volume Imaging) with either confocal, AiryScan or STED settings as appropriate.\n\n### Electron microscopy\n\nThe electron\u00a0microscopy\u00a0protocol is described in detail in Burdyniuk et al. (2018). In brief, oocytes were injected with a mixture of dextrans and a small batch was tested for meiosis timing. At the approximate time of NEBD, they were transferred into a carrier (three oocytes in 0.3 \u00b5l of sea water) and most of the water was removed with filter paper. Oocytes were immediately covered with a drop of 1-hexedecene, and immediately high-pressure frozen. Oocytes were freeze-substituted into Lowicryl HM-20. To stage the oocytes, light microscopy of EM sections was used to determine the progress of dextran entry. Selected sections were then post-stained with lead citrate and imaged using a BioTwin CM120 Philips transmission electron microscope at 120 kV. Large TEM montages were acquired using a JEOL JEM-2100Plus transmission electron microscope at 120 kV. Tomograms were reconstructed from tilt series acquired on a\u00a0FEI Tecnai F30 transmission electron microscope at 300 kV with 1.554 nm pixel size.\n\nMore than 50 oocytes were processed by the above described method, and a few of these oocytes were found to be at the correct stage, showing NE rupture intermediates. The data shown in\u00a0the\u00a0figures are from a single oocyte that had perfect preservation throughout and has been sectioned through the entire nuclear volume. Of these sections, more than ten have been imaged and have been scanned as a large montage, and analyzed carefully. Three of these montages are shown as figure supplements.\n",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "79ff425b-c9ba-415c-98e3-4fed5dc99229",
+      "submission_id": "48a669ea-5907-4e20-b38a-9adf307e7383",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- R Dyche Mullins, University of California, San Francisco United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.49774.sa1](https://doi.org/10.7554/eLife.49774.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThe revised version of the manuscript is greatly improved. The most important improvement is the inclusion of Airy-scan/deconvolution experiments that provide simultaneous imaging of multiple key elements of nuclear envelope breakdown, including: (i) the nuclear envelope; (ii) filamentous actin; (iii) nuclear pore complexes; and (iv) nuclear permeability. Also the recasting of actin's role as 'prying the nuclear envelope away from the lamina' ties the data together into a more coherent story. The localization of the Arp2/3 complex to the base of spikes is also important, and the only (slight) disappointment is that no experiments were performed to try and identify the upstream nucleation promoting factor that turns on the Arp2/3 complex at the nuclear periphery. Overall this does a nice job of advancing our understanding of actin's role in driving nuclear envelope breakdown in starfish oocytes.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Nuclear envelope rupture in starfish oocytes proceeds by actin-driven segregation of pore-dense and pore-free membranes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including R Dyche Mullins as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Anna Akhmanova as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: William M. Bement (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript presents novel interesting features of nuclear envelope breakdown at the onset of meiosis in starfish oocytes. The authors characterize the spatial relationships between the actin filaments, the nuclear envelope, the nuclear lamins, and the nuclear pore complexes and propose that actin assembly is needed for prying the nuclear envelope away from the underlying nuclear lamins. This mechanism represents a refinement of the previous view of actin's role in NEB in this system.\n\nEssential revisions:\n\n1) In several figures, such as Figure 4C, there are gaps in the organization of NPCs without deformation of the inner nuclear membrane (neither bumps nor spikes). The authors mention as well that \"gaps appeared to evolve into bumps and membrane spikes\". Doesn't this suggest that NPCs-free membrane areas are generated prior to actin spikes rather than \"by F-actin-driven sorting of NE membranes into pore-dense and pore-free, ER-like membrane networks\"? Is it possible that rupture occurs -as in other systems- via NPC disassembly, but that in these cells NPC disassembly is promoted by actin-dependent changes in membrane tension?\n\nTo strengthen the claim that actin assembly generates NPC-free membrane protrusions the authors should provide EM images of the envelope under conditions where the shell is prevented from forming. The fluorescence images are not sufficient, since the membrane cannot be seen. In this context, it would be useful to see the NE independently of NPCs, e.g. using ER tracker or WGA.\n\n2) The authors conclude that the pore-free membrane is unstable and thus serves as the site of ruptures. There is, however, no evidence that the ruptures arise first at the points of maximum membrane delamination. The authors need to address this point by determining whether the rupture occurs at the tips of spikes, at the shoulders of spikes, or elsewhere.\n\n3) The authors need to marshal quantitative support for their main conclusions. It appears that there is just a single image in the paper that shows actin filaments inside one of the membrane delaminations (Figure 4E). Thus, it is important to know just how frequent this phenomenon is. This point is particularly important given the fact that the authors have shown that when F-actin assembly is suppressed by CK666, the nuclear envelope nonetheless becomes uneven. Other points that would benefit from quantification include the relative density of nuclear pores on the shoulders of delamination sites.\n\nFor your information, we include the complete reviews below, but please focus on the revision points listed above.\n\nReviewer #1:\n\nThis manuscript presents previously undescribed features of nuclear envelope breakdown at the onset of meiosis in starfish oocytes. Using these same cells the authors previously uncovered a role for actin filaments in confining chromosomes and facilitating their capture by spindle microtubules. They also demonstrated that nuclear envelope breakdown in starfish oocytes requires transient assembly of a branched actin network on the inner surface of the nuclear envelope (Mori et al., 2014). The 2014 Current Biology paper reported the presence of radially oriented actin bundles, or spikes, growing out of a lamin-associated actin network and into the nuclear envelope. At the time the authors interpreted the role of these spikes as puncturing or forcefully fragmenting the nuclear envelope.\n\nIn the current work the authors have employed higher resolution light microscopy techniques to characterize the spatial relationships between the actin filaments, the nuclear envelope, the nuclear lamins, and the nuclear pore complexes. The major result is that the role of actin assembly appears to be 'delamination' of the nucleus by prying the nuclear envelope away from the underlying nuclear lamins. This is not a brand new mechanism but certainly represents a refinement of the previous view of actin's role in NEB in this system. I am inclined to think it justifies publication as a brief report, but there are a few points that should be addressed before publication.\n\n1) The authors previously localized the Arp2/3 complex to the nuclear actin shell (in the 2014 Curr Biol paper), but they show no Arp2/3 localization in the current paper. They should use their super-resolution light microscopy to investigate the relationship between Arp2/3, filamentous actin, and the nuclear envelope. My suspicion is that the Arp2/3 will be associated with the lamins, but not with the actin spikes or the overlying nuclear envelope.\n\n2) Which nucleation promoting factors are activating the Arp2/3 complex in this system? The obvious candidate is WASP. Do any WASP antibodies cross-react with the starfish protein?\n\n3) The filopodia-like morphology of the actin spikes suggests that perhaps some nuclear envelope-associated polymerase is promoting filament elongation. Have the authors looked for VASP et al. on the inner surface of the nuclear envelope?\n\nReviewer #2:\n\nIn this manuscript, Wesolowska et al. use super-resolution light and electron microscopy in combination to study how actin contributes to nuclear envelope rupture in starfish oocytes. This builds upon previous work from the team published in Current Biology that described an important role for Arp2.3 nucleated actin spikes in NEB.\n\nIn their new paper, the authors study the ultrastructure in more detail. They show that nuclear envelope is uniform and densely packed with NPCs in immature oocytes, before becoming heterogeneous with the generation of actin spikes, when it breaks up into regions that have a high or low density of NPCs prior to nuclear envelope rupture. The authors argue that the actin filaments nucleated by the Arp2/3 complex embedded within the nuclear lamina push on the nuclear envelope to induce membrane deformations (bumps and spikes), which lead to the separation of NPCs-free and NPCs-rich membranes and to subsequent ruptures of the envelope.\n\nThe paper is well written, and the data are presented clearly. There is some valuable new information about how the ultrastructure of the nuclear envelope evolves from immature oocyte to the NEBD with a complete rupture of the nuclear envelope. Some questions remain, however, about precisely how actin spikes contributes to rupture.\n\nIn the model depicted in Figure 6, the key events are 1) A mitotic specific change in NPCs 2) The actin-dependent partitioning of NPCs into rich and poor regions. 3) Rupture.\n\nThis series of events is not exactly demonstrated in the data:\n\n1) In several figures, such as Figure 4C, there are gaps in the organization of NPCs without deformation of the inner nuclear membrane (bumps neither spikes). The authors mention as well that \"gaps appeared to evolve into bumps and membrane spikes\". Doesn't this suggest that NPCs-free membrane areas are generated prior to actin spikes rather than \"by F-actin-driven sorting of NE membranes into pore-dense and pore-free, ER-like membrane networks\".\n\n2) The paper doesn't do enough to explain how changes in NPCs themselves contribute to this process. Where does NPC re-modelling come into the picture?\n\n3) The link between membrane rupture and local actin spikes remains a bit unclear. In images, the most obvious effect of an actin spike is the separation of inner and outer envelopes. One might then expect rupture within spike regions to sometimes break one membrane \u2013 which would seem a very bad thing to do. Isn't it more likely that in the end rupture occurs via NPC disassembly as in other systems \u2013 but that this is membrane tension (and therefore actin) dependent ?\n\nReviewer #3:\n\nNuclear envelope breakdown is a fundamental feature of the cell cycle in most animal cells and yet its basis remains poorly understood. In the textbook view, it somehow arises as a consequence of phosphorylation of lamins and components of the nuclear envelope such as the nucleoporins. There is also evidence that cell cycle-regulated, microtubule motor-dependent transport can tear the envelope in some cell types and that polymerizing actin can tear it in other cell types. But in neither case, has the process been studied in anywhere near sufficient detail for anything more than vague conclusions to be drawn.\n\nIn the current study, using a careful combination of light and electron microscopy, the authors have obtained evidence that during the disassembly of the germinal vesicle (the large oocyte nucleus) in starfish, spikes of actin that assemble from within the nuclear lamina drive evagination of the nuclear envelope concomitant with displacement of the nuclear pore complexes. That is, as the spikes extend outward (i.e. toward the cytoplasm) the nuclear pore complexes are left behind in patches flanking the spikes while the nuclear envelope overlying the spikes is nuclear pore complex-free. The authors propose that the evaginations of pore-free envelope are unstable and consequently rupture.\n\nThis is fascinating, and beautifully executed work. However, the authors should address the following points before their conclusions can be accepted with confidence.\n\n1) The authors need to marshal quantitative support for their main conclusions. As far as I can tell, there is just a single image in the paper that shows actin filaments inside one of the evaginations (Figure 4E). Thus, it is important to know just how frequent this phenomenon is. This point is particularly important given the fact that the authors have shown that when F-actin assembly is suppressed by CK666, the nuclear envelope nonetheless becomes uneven. Other points that would benefit from quantification include the relative density of nuclear pores in evaginations versus the shoulders of evaginations.\n\n2) The authors state \"Our EM data clearly show that the F-actin shell protrudes pore-free nuclear membranes, separating these from the lamina\". This is not quite true as there are no EM data showing the envelope under conditions where the shell is prevented from forming. Such data should be provided. The fluorescence imaging does not allow this point to be tested as the membrane cannot be seen.\n\n3) The authors also conclude that the pore-free membrane is unstable and thus serves as the site of ruptures. However, unless I missed it, there is no evidence that the ruptures arise first at the points of the evaginations. Given that one of the goals of the study is to understand how rupturing occurs, the authors need to address this point by determining whether the rupture occurs at the tips of spikes, at the shoulders of spikes, or elsewhere.\n",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f9568d9f-417c-4d5f-bfe0-c45b3bbb2411",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C1",
+      "claim": "Breakdown of the specialized nuclear envelope in starfish oocytes is mediated by an Arp2/3-nucleated F-actin 'shell', in contrast to microtubule-driven tearing in mammalian fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that breakdown of this specialized NE is mediated by an Arp2/3-nucleated F-actin 'shell' in starfish oocytes, in contrast to microtubule-driven tearing in mammalian fibroblasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the authors' previous work (Mori et al., 2014) and contrasts with established mechanisms in mammalian cells (Beaudouin et al., 2002; Salina et al., 2002).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "e64c2456-23f8-4d7f-9b8a-f322446694c5",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C2",
+      "claim": "Actin is nucleated within the lamina, sprouting filopodia-like spikes towards the nuclear membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that actin is nucleated within the lamina, sprouting filopodia-like spikes towards the nuclear membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by STED microscopy data showing F-actin spikes extending from the lamina (Figure 3D, E) and EM data showing membrane protrusions with fibrous densities consistent with actin filaments (Figure 5D, E).",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "4012958e-f916-4bee-b1a9-970cbc1351b1",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C3",
+      "claim": "F-actin spikes protrude pore-free nuclear membranes, whereas the adjoining stretches of membrane accumulate NPCs that are associated with the still-intact lamina.",
+      "claim_type": "EXPLICIT",
+      "source": "These F-actin spikes protrude pore-free nuclear membranes, whereas the adjoining stretches of membrane accumulate NPCs that are associated with the still-intact lamina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by EM showing membrane spikes free of NPCs with NPC-dense regions at their base (Figure 5D, G), and STED imaging showing similar patterns (Figure 5G).",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "4331de10-64ea-4420-8d57-60240b1cf891",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C4",
+      "claim": "Packed NPCs sort into a distinct membrane network, while breaks appear in ER-like, pore-free regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Packed NPCs sort into a distinct membrane network, while breaks appear in ER-like, pore-free regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by EM data showing NPC-dense nucleoplasmic bodies and rupture occurring in pore-free membrane regions (Figures 6, 7A).",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "250197b4-847b-49ce-a6d1-4ddca3558a1e",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C5",
+      "claim": "The nuclear envelope is composed of inner and outer nuclear membranes that are fused at nuclear pore complexes (NPCs) to mediate nucleo-cytoplasmic transport.",
+      "claim_type": "EXPLICIT",
+      "source": "The nuclear envelope (NE), composed of inner and outer nuclear membranes, is a specialized sub-compartment of the endoplasmic reticulum (ER) that separates the nucleus and the cytoplasm in eukaryotic cells. The inner and outer NE is fused at nuclear pore complexes (NPCs) to mediate nucleo-cytoplasmic transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nuclear envelope structure, supported by citation to Burke and Ellenberg, 2002.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "b5120cbc-1f62-42bc-9e85-6581ede4c590",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C6",
+      "claim": "The lamina is a network of intermediate filaments that lines the nucleoplasmic side of the nuclear envelope and provides mechanical support.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex NE membrane structure is mechanically supported by a network of intermediate filaments, the lamina, which lines the nucleoplasmic side (Burke and Ellenberg, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about lamina structure and function, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "69aa6c44-677b-4d49-a022-6fe4e19cd1e0",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C7",
+      "claim": "Oocytes have an exceptionally large nucleus known as the germinal vesicle.",
+      "claim_type": "EXPLICIT",
+      "source": "Oocytes have a very specialized nuclear architecture with an exceptionally large nucleus, also known as the germinal vesicle, which stores nuclear components that are necessary to support early embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about oocyte nuclear structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "d28a8226-1f65-4d8f-ab41-1eed31c483f8",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C8",
+      "claim": "The oocyte nuclear envelope is densely packed with NPCs that serve as a stockpile for early embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "The oocyte NE is densely packed with NPCs that serve as a stockpile of these complexes (rendering oocytes a popular model in which to study NPCs), and the lamina is thick so that it is able to provide mechanical support for this very large structure (Goldberg and Allen, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Goldberg and Allen, 1995, and is consistent with the EM data showing high NPC density (Figure 5A, B).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "d3e2ed00-851a-42c3-bcfa-b07641b8c58e",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C9",
+      "claim": "In vertebrates and deuterostomes (including the echinoderm starfish), the complex NE structure is fully disassembled during division.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila and Caenorhabditis elegans embryos, the NE and the lamina remains partially intact during cell division, whereas in vertebrates and deuterostomes (including the echinoderm starfish), the complex NE structure is fully disassembled during division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about differences in NE disassembly across species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "2e38fdcf-4b6e-4d91-ae9d-f1f05a91abc2",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C10",
+      "claim": "In somatic mammalian cells, NE disassembly involves the complete dismantling of the NPCs, depolymerization of the lamina, and re-absorption of the nuclear membranes into the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "In somatic mammalian cells, NE disassembly involves the complete dismantling of the NPCs, depolymerization of the lamina, and re-absorption of the nuclear membranes into the ER (Hetzer, 2010; Ungricht and Kutay, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Hetzer, 2010 and Ungricht and Kutay, 2017.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "d9ebfad4-6b9c-4986-9cb6-0a0a9ef2f023",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C11",
+      "claim": "NEBD begins with a partial permeabilization of the NE resulting from phosphorylation-driven disassembly of the NPCs and other NE components.",
+      "claim_type": "EXPLICIT",
+      "source": "In all species in which nuclear envelope breakdown (NEBD) has been investigated in detail, including somatic cells and oocytes from various species, NEBD begins with a partial permeabilization of the NE resulting from phosphorylation-driven disassembly of the NPCs and other NE components (Dultz et al., 2008; M\u00fchlh\u00e4usser and Kutay, 2007; Terasaki et al., 2001; L\u00e9n\u00e1rt et al., 2003; Martino et al., 2017; Linder et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations documenting this mechanism across species.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "b4579922-82b8-406e-b722-20d7b97922d4",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C12",
+      "claim": "During the first phase of NEBD, partial permeabilization allows proteins and smaller dextrans up to ~70 kDa to leak in or out of the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows proteins, and smaller dextrans up to ~70 kDa, to leak in or out of the nucleus (L\u00e9n\u00e1rt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to L\u00e9n\u00e1rt et al., 2003, and is consistent with the experimental use of 25 kDa dextran as a marker of partial permeabilization (Figure 4A, B).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "40041e2f-ffff-45bc-9174-0c44827292d5",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C13",
+      "claim": "During the first phase of NEBD, the overall structure of the NE is still intact and the compartmentalization of large protein complexes is maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, during this first phase of NEBD, the overall structure of the NE (as observed by electron microscopy (EM)) is still intact and the compartmentalization of large protein complexes (e.g. ribosomes and microtubules) is maintained (Terasaki et al., 2001; L\u00e9n\u00e1rt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Terasaki et al., 2001 and L\u00e9n\u00e1rt et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "8423b77f-d924-4a18-93d6-f3cb04b0fa70",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C14",
+      "claim": "In cultured mammalian cells, microtubules tear the NE in a dynein-dependent process.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured mammalian cells, microtubules tear the NE in a dynein-dependent process (Beaudouin et al., 2002; Salina et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beaudouin et al., 2002 and Salina et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "792906c0-b997-4868-9b5a-c5af9db93968",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C15",
+      "claim": "In the large oocyte nucleus, the actin cytoskeleton rather than the microtubule cytoskeleton is required for NE rupture.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we have shown recently that in the large oocyte nucleus, the actin cytoskeleton rather than the microtubule cytoskeleton is required for NE rupture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the authors' previous work (Mori et al., 2014) and the current data showing F-actin shell formation and its requirement for NE rupture (Figures 1, 2).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "5065e187-01fb-41d5-8972-a45ec9310cd0",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C16",
+      "claim": "A transient F-actin 'shell' is polymerized by the Arp2/3 complex on the inner surface of the NE and membranes undergo complete rupture within two minutes of its formation.",
+      "claim_type": "EXPLICIT",
+      "source": "A transient F-actin 'shell' is polymerized by the Arp2/3 complex on the inner surface of the NE and membranes undergo complete rupture within two minutes of its formation (Mori et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mori et al., 2014 and the current live-cell imaging data (Figure 1A).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "49c8a2c8-c350-47ac-9555-5778d052f7be",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C17",
+      "claim": "The F-actin shell first appears as an equatorial band of foci when the NE is still intact and impermeable to large dextrans.",
+      "claim_type": "EXPLICIT",
+      "source": "The F-actin shell first appears as an equatorial band of foci when the NE is still intact and impermeable to large dextrans (Figure 1A, 0 s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in live-cell imaging data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "f33dae5d-4db2-43b5-8924-def1fba18f50",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C18",
+      "claim": "Approximately 30\u201345 s after the F-actin shell first appears, as the F-actin foci grow and intensify, merging to form a continuous F-actin shell, the first breaks on the NE appear, allowing a large 500 kDa dextran to flood into the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 30\u201345 s later, as the F-actin foci grow and intensify, merging to form a continuous F-actin shell, the first breaks on the NE appear, allowing a large 500 kDa dextran to flood into the nucleus (Figure 1A, 45 s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in live-cell imaging data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "d4f4d317-2eb9-43ef-bb80-f994cf80af05",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C19",
+      "claim": "The F-actin shell spreads towards the poles before a wave of membrane rupture takes place after a delay of ~30 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The shell then spreads towards the poles before a wave of membrane rupture takes place after a delay of ~30 s (Figure 1A, 90 s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in live-cell imaging data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "ce91d165-0209-456c-96ba-7979d5f919d5",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C20",
+      "claim": "As the first F-actin foci began to assemble, the NE still appeared smooth and continuous.",
+      "claim_type": "EXPLICIT",
+      "source": "When we looked at the process with our new approach, we saw that as the first F-actin foci began to assemble, the NE still appeared smooth and continuous, as visualized by a membrane probe (DiIC18(3)) and a marker of NPCs (a fragment of importin-\u03b2) (Figure 1B, \u221213 s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in high-resolution live-cell imaging data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "7191e4e9-83d0-4c5f-ad2d-931e48a28caa",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C21",
+      "claim": "10\u201315 s after F-actin foci begin to assemble, the first spike-like membrane protrusions towards the cytoplasm are observed, which then rapidly escalate into a complex, convoluted and fragmented membrane structure.",
+      "claim_type": "EXPLICIT",
+      "source": "10\u201315 s later, we observed the first spike-like membrane protrusions towards the cytoplasm, which then rapidly escalated into a complex, convoluted and fragmented membrane structure (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in high-resolution live-cell imaging data shown in Figures 1B-D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "b404eb09-15bf-4ff4-b500-0e561103fc59",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C22",
+      "claim": "During membrane reorganization, NPCs appeared to separate partially from the membrane towards the nucleoplasmic side.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, during this process NPCs appeared to separate partially from the membrane towards the nucleoplasmic side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in live-cell imaging data (Figure 1B) and confirmed by STED microscopy (Figure 3C).",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "1f9422c3-97dc-45f8-bccb-a5cff5003d4d",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C23",
+      "claim": "Dextran entry did not coincide with the formation of the initial membrane spikes, it occurred 20\u201330 s later, when membrane reorganization had progressed to a rather advanced stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Dextran entry did not coincide with the formation of the initial membrane spikes, it occurred 20\u201330 s later, when membrane reorganization had progressed to a rather advanced stage (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in live-cell imaging data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "9fc68a7d-3e40-48c2-9afd-34f9b207b765",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C24",
+      "claim": "Membrane reorganization is dependent on actin assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "This membrane reorganization is dependent on actin assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing that inhibiting F-actin shell formation by depleting actin monomers prevents membrane reorganization (Figure 1E).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "5ac7b0e4-3bd8-4a54-86d5-e47215c13ca4",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C25",
+      "claim": "If the F-actin shell is inhibited by injecting a large amount of the actin-binding UtrCH domain to deplete available actin monomers, the NE membrane stays smooth and continuous.",
+      "claim_type": "EXPLICIT",
+      "source": "If the F-actin shell is inhibited by injecting a large amount of the actin-binding UtrCH domain to deplete available actin monomers, the NE membrane stays smooth and continuous (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "fb68960f-0a9b-4fad-bcad-a70424f28c3d",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C26",
+      "claim": "Even when F-actin shell formation is inhibited, the nucleus does collapse and the NE ruffles and folds as a result of the progressing partial NE disassembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in this case, the nucleus does collapse and the NE ruffles and folds as a result of the progressing partial NE disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in experiments with UtrCH-mediated actin depletion (Figure 1E) and is consistent with previous work (Mori et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "619df860-3ee5-42df-b62f-925a7c4afb7d",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C27",
+      "claim": "When F-actin shell formation is inhibited, large and folded membrane fragments remain intact long after NEBD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike in control oocytes, these large and folded membrane fragments remain intact long after NEBD, as we showed in earlier work (Mori et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous work (Mori et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "512878a2-0ffa-4edf-b9ef-c3150cc6ea7c",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C28",
+      "claim": "In starfish oocytes, actin assembly mediates a reorganization of nuclear membranes that leads to NE rupture.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that, in starfish oocytes, actin assembly mediates a reorganization of nuclear membranes that leads to NE rupture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the live-cell imaging data showing membrane reorganization dependent on F-actin assembly (Figures 1B-E).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "4489877d-2f89-488f-b69a-fcc9afafe419",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C29",
+      "claim": "The endogenous lamin network remains continuous even minutes after NE rupture, although it folds and ruffles as the nucleus collapses during NEBD.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirmed our previous observations that the endogenous lamin network remains continuous even minutes after NE rupture, although it folds and ruffles as the nucleus collapses during NEBD (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in immunofluorescence data shown in Figure 2B and is consistent with previous observations.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "d3c52daa-7775-4f9b-8e22-4083af478a40",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C30",
+      "claim": "The lamin mesh gradually coarsens during the process of NEBD.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, imaging portions of the lamina en face by stimulated emission depletion (STED) microscopy suggests that the lamin mesh gradually coarsens during the process of NEBD (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in STED microscopy data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "98c03e73-3d9c-4e50-aba0-c3be4fd1d8b7",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C31",
+      "claim": "The rupture of the NE does not proceed by F-actin-induced tearing or rapid disassembly of the lamina, which remains a continuous network throughout NEBD.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the rupture of the NE does not proceed by F-actin-induced tearing or rapid disassembly of the lamina, which remains a continuous network throughout NEBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on immunofluorescence and STED data showing continuous lamina throughout NEBD (Figure 2B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "942a40e8-239d-4fda-8e3e-530ba11c39da",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C32",
+      "claim": "The lamina co-localized with phalloidin, while the NPC staining formed a separate layer of fragmented appearance up to 500 nm 'above' the F-actin shell.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that although the lamina co-localized with phalloidin, the NPC staining formed a separate layer of fragmented appearance up to 500 nm 'above' the F-actin shell (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in immunofluorescence data with line profile analysis shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "6f74afcd-75f1-4914-b4eb-6a0e7209d1ce",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C33",
+      "claim": "The still-intact lamina appears to serve as the scaffold upon which the F-actin shell assembles, whereas the nuclear membranes appear to fragment and separate away from the lamina and the F-actin shell.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the still-intact lamina appears to serve as the scaffold upon which the F-actin shell assembles, whereas the nuclear membranes appear to fragment and separate away from the lamina and the F-actin shell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the co-localization data showing lamina with F-actin and separation of NPCs/membranes (Figures 3A, B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "89891bfb-0f2b-44dc-aa2d-5a74b631e32f",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C34",
+      "claim": "Before NE rupture, the NPC and lamina stainings overlapped at the approx. 50 nm resolution afforded by STED, which is consistent with the known ultrastructure of the NE.",
+      "claim_type": "EXPLICIT",
+      "source": "Before NE rupture, the NPC and lamina stainings overlapped at the approx. 50 nm resolution afforded by STED, which is consistent with the known ultrastructure of the NE (Figure 3C, pre-NEBD) (Burke and Ellenberg, 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in STED data (Figure 3C) and is consistent with established knowledge (Burke and Ellenberg, 2002).",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "510f4e26-4a16-4345-a135-ec2ca0edba87",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C35",
+      "claim": "At the shell stage, NPC-stained NE fragments 'float' above the intact lamina.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, at the shell stage, we were able to visualize NPC-stained NE fragments 'floating' above the intact lamina (Figure 3C, post-NEBD).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in STED data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "a7cdd4a4-b5b2-4995-86dd-63a325e6afb5",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C36",
+      "claim": "The separation of lamina and membranes is dependent on the F-actin shell.",
+      "claim_type": "EXPLICIT",
+      "source": "This separation of lamina and membranes is dependent on the F-actin shell, because this process did not occur when we prevented F-actin shell formation by inhibiting Arp2/3 using the small molecule inhibitor CK-666 (Figure 3C, post-NEBD + CK-666).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data using CK-666 inhibitor shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "99e0ff38-3aa0-42a2-afa5-e76fd3cae3c5",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C37",
+      "claim": "STED imaging of optimally fixed samples revealed filopodia-like F-actin spikes of 0.5\u20132 \u03bcm in length, spaced at ~0.1 \u03bcm, and extending from the base of the F-actin shell towards the nuclear membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "STED imaging of samples that were optimally fixed for phalloidin staining revealed filopodia-like F-actin spikes of 0.5\u20132 \u03bcm in length, spaced at ~0.1 \u03bcm, and extending from the base of the F-actin shell towards the nuclear membranes (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed and measured in STED microscopy data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "fbabaf9f-d8f6-4a00-ae49-5c2c0c313b3f",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C38",
+      "claim": "The Arp2/3 complex is localized at the base of the F-actin shell just beneath the NE, whereas the F-actin spikes extending from the base are not labeled by ArpC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, using a starfish-specific anti-ArpC1 antibody, we localized the Arp2/3 complex at the base of the F-actin shell just beneath the NE, whereas the F-actin spikes extending from the base were not labeled by ArpC1 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in STED microscopy data with ArpC1 antibody staining shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "451b56d3-45ab-4769-8661-0338801bc7fc",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C40",
+      "claim": "Membrane evaginations are largely free of NPCs, most probably because NPCs are still attached to the lamina, and thus NPCs are held back and cluster at the base of spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane evaginations are largely free of NPCs, most probably because NPCs are still attached to the lamina, and thus NPCs are held back and cluster at the base of spikes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from EM and STED data showing pore-free spikes with NPC clusters at their base (Figures 5D, G).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "e3ba3fb4-472f-4cea-9845-611d1af213c3",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C41",
+      "claim": "The NE is smooth, continuous and is tightly packed with NPCs with a regular spacing of ~200 nm in immature oocytes, as well as in oocytes just before NE rupture and even in the intact polar regions of the NE undergoing rupture.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as consistent with earlier observations, the NE is smooth, continuous and is tightly packed with NPCs with a regular spacing of ~200 nm in immature oocytes, as well as in oocytes just before NE rupture and even in the intact polar regions of the NE undergoing rupture (see Figure 5A,B for image examples, and Figure 6C for quantification) (L\u00e9n\u00e1rt et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM data (Figures 5A, B) with quantification (Figure 6C) and is consistent with previous observations (L\u00e9n\u00e1rt et al., 2003).",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "46763dd9-6ff6-4d74-9cfd-4616b49fb5c1",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C42",
+      "claim": "In areas closer to the rupture site, regions with gaps in NPC occupancy are observed, the number and size of which increased proximal to this region.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in areas closer to the rupture site, we observed regions with gaps in NPC occupancy, the number and size of which increased proximal to this region (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "bad57cc3-4ef9-4066-94f4-de1b827396b8",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C43",
+      "claim": "In the vicinity of the rupture site, gaps appeared to evolve into 'bumps' and membrane spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the vicinity of the site, gaps appeared to evolve into 'bumps' and membrane spikes (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "83ade2df-6e0a-47b5-b823-4e586fe2da3b",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C44",
+      "claim": "The most prominent spikes observed rose ~1 \u00b5m above the level of the NE.",
+      "claim_type": "EXPLICIT",
+      "source": "Although reconstructing the full 3D architecture of these spikes is challenging, even in 300-nm-thick tomographic sections, the most prominent spikes that we observed rose ~1 \u00b5m above the level of the NE (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured in EM and tomographic data shown in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "1cb02d4a-01c7-4801-b3ae-b47d60d648ef",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C45",
+      "claim": "Membrane spikes contain fibrous densities consistent with actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "These spikes contain fibrous densities consistent with actin filaments (Figure 5D and Figure 5\u2014figure supplement 1A) and are even more clearly distinguishable on tomographic reconstructions (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM and tomographic data shown in Figure 5D, E and Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "046fc51a-077c-4be0-9c36-10b52992f964",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C46",
+      "claim": "Membrane spikes observed by EM were covered by continuous nuclear membranes and almost completely free of NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, on both thin sections and tomographic reconstructions, we observed that these spikes were covered by continuous nuclear membranes and almost completely free of NPCs (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM and tomographic data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "fd6c047f-41a9-4811-962f-331bd2230241",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C47",
+      "claim": "Pore-free areas pushed out by the F-actin shell are surrounded by NPC-dense adjacent regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These pore-free areas are surrounded by NPC-dense adjacent regions (Figure 5D and Figure 5\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM data shown in Figure 5D and Figure 5\u2014figure supplement 1A, B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "764e0798-86a4-4140-8874-c3efe799ede4",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C48",
+      "claim": "NPC-free areas pushed out by the F-actin shell may cause the crowding of NPCs in juxtaposed regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We are unable to estimate the 3D membrane areas from 2D sections, nevertheless, our data suggest that NPC-free areas pushed out by the F-actin shell may cause the crowding of NPCs in juxtaposed regions (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from EM observations and quantification of NPC spacing shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "88bedb23-2321-45c9-b0d7-24b11e9e40af",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C49",
+      "claim": "The lamina runs at the base of the F-actin shell, below but still attached to NPC clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we were able to visualize that the lamina runs at the base of the F-actin shell, below but still attached to NPC clusters, suggesting that NPCs might be held back at the base of spikes by their attachments to the lamina (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in STED microscopy data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "db41e200-ef8f-48f4-82b2-c1bdd5e936ca",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C50",
+      "claim": "NPCs might be held back at the base of spikes by their attachments to the lamina.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we were able to visualize that the lamina runs at the base of the F-actin shell, below but still attached to NPC clusters, suggesting that NPCs might be held back at the base of spikes by their attachments to the lamina (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from STED microscopy data showing lamina at the base of F-actin shell with attached NPC clusters (Figure 5G).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "e1fc5c0c-5dcf-4329-bffc-018a1c90dff3",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C51",
+      "claim": "The growing gaps between NPCs develop into bumps and spikes that are protrusions generated by Arp2/3-driven actin polymerization, which pries nuclear membranes and lamina apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data from EM correlated with live cell and immunofluorescence suggest that the growing gaps between NPCs, which then develop into bumps and spikes, are protrusions generated by Arp2/3-driven actin polymerization, which pries nuclear membranes and lamina apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple lines of evidence including EM, live-cell imaging, and immunofluorescence (Figures 3, 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "c822e754-f73d-4fb9-ba5e-6a18a50b9fea",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C52",
+      "claim": "In regions closer to rupture sites, an increasing segregation of pore-free and pore-dense segments is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In regions closer to rupture sites, we observed an increasing segregation of pore-free and pore-dense segments (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "5ae316d0-5f46-46e2-b92b-c0e7807aa95d",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C53",
+      "claim": "Nucleoplasmic bodies are dense, round structures 200\u2013500 nm in diameter beneath the NE in the nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, accompanying spikes and NPC-rich clusters, we observed additional frequent membrane structures, which we call nucleoplasmic bodies. These are dense, round structures 200\u2013500 nm in diameter beneath the NE in the nucleoplasm (Figures 5D and 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed and measured in EM data shown in Figures 5D and 6B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "b5724816-777a-422b-8522-abdbcf16e30a",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C54",
+      "claim": "Nucleoplasmic bodies often appear in a beads-on-a-string arrangement with a slightly electron-denser material connecting them.",
+      "claim_type": "EXPLICIT",
+      "source": "These bodies often appear in a beads-on-a-string arrangement with a slightly electron-denser material connecting them (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "7d5b1efa-da6e-4db8-87ad-88c2448d34e0",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C55",
+      "claim": "Above nucleoplasmic bodies, the NE appears to be still intact, consisting mostly of NPC-free nuclear membranes and maintaining the nucleo-cytoplasmic boundary, as judged by the distribution of ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Above them, the NE appears to be still intact, consisting mostly of NPC-free nuclear membranes and maintaining the nucleo-cytoplasmic boundary, as judged by the distribution of ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in EM data (Figure 6B) based on ribosome distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "c0afa453-2c50-4516-81bb-b4f45f3d92b1",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C56",
+      "claim": "In pore-dense segments and nucleoplasmic bodies, pore-to-pore distance decreased substantially from ~200 nm in intact areas to ~100 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "In pore-dense segments, as well as in nucleoplasmic bodies, our quantification shows that pore-to-pore distance decreased substantially from ~200 nm in intact areas to ~100 nm (Figure 6C), suggesting that the NPC-free membranes are generated by redistribution of NPCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and quantified from EM data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "97c241c6-f37d-436a-ad6b-fc980c93fa10",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C57",
+      "claim": "NPC-free membranes are generated by redistribution of NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In pore-dense segments, as well as in nucleoplasmic bodies, our quantification shows that pore-to-pore distance decreased substantially from ~200 nm in intact areas to ~100 nm (Figure 6C), suggesting that the NPC-free membranes are generated by redistribution of NPCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the quantification of NPC spacing showing increased density in some regions and decreased density in others (Figure 6C).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "25332a4f-d0a4-45cb-8451-f55b2691dcaf",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C58",
+      "claim": "Nucleoplasmic bodies may form by invagination of NPC-rich clusters, initially inducing pits that curve into the nucleoplasm and then forming inverted NE tubules filled inside with cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful examination of intermediates suggests that nucleoplasmic bodies may form by invagination of NPC-rich clusters, initially inducing pits that curve into the nucleoplasm and then forming inverted NE tubules filled inside with cytoplasm (Figure 6A,B and Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from examination of EM intermediates shown in Figures 6A, B and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "cf0ca819-a01e-4575-af2f-30e32f57aac4",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C59",
+      "claim": "The electron density along the boundary of nucleoplasmic bodies corresponds to closely juxtaposed NPCs with an intact central ring structure, similar to NPCs in still-intact areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Sections capturing these structures en face and tomograms confirm that the electron density along the boundary of the bodies corresponds to closely juxtaposed NPCs with an intact central ring structure, similar to NPCs in still-intact areas (see 'nucleoplasmic bodies' in Figure 6D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM sections and tomograms shown in Figures 6D and 6E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "149a0450-f3c4-4c9b-bcbc-7460ac71ae7a",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C60",
+      "claim": "The membranes were interrupted in areas where the segregation of pore-dense and pore-free regions was strongest and NPC invaginations frequent and most dramatic.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the EM montages revealed that the membranes were interrupted in areas where the segregation of pore-dense and pore-free regions was strongest and NPC invaginations frequent and most dramatic (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM montages shown in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "bd62d4e9-f523-4a67-a4d8-9b27a7183277",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C61",
+      "claim": "In areas of membrane rupture, no continuous membrane boundary was seen to separate cyto- and nucleoplasm, but nucleoplasmic bodies were abundant.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, no continuous membrane boundary was seen to separate cyto- and nucleoplasm, but nucleoplasmic bodies were abundant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in EM data (Figure 7A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "2ca4a8d5-566b-4833-ab72-87a1ee2054db",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C62",
+      "claim": "Light microscopy of the stage corresponding to membrane rupture revealed a complex tubular-vesicular network that was densely labeled by NPC staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Light microscopy of the corresponding stage revealed a complex tubular-vesicular network that was densely labeled by NPC staining, occasionally resolving cross-sections of tubules consistent with our EM data (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in STED microscopy data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "a511e8f1-75db-4955-9473-f498100cb5be",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C63",
+      "claim": "NE rupture proceeds by F-actin-driven sorting of NE membranes into pore-dense and pore-free segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data show that NE rupture proceeds by F-actin-driven sorting of NE membranes into pore-dense and pore-free segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on multiple lines of evidence from EM, live-cell imaging, and immunofluorescence showing membrane segregation (Figures 5, 6, 7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "0a403a32-8de7-4c27-b552-aac05c5bd6a7",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C64",
+      "claim": "Pore-dense segments invaginate, forming a network of nucleoplasmic bodies, whereas rupture occurs in evaginating pore-free segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Pore-dense segments invaginate, forming a network of nucleoplasmic bodies, whereas rupture occurs in evaginating pore-free segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on EM data showing invaginating NPC-dense regions and rupture in pore-free regions (Figures 6, 7).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "0c8b9f4e-a4eb-4e55-b40f-5afe8135a851",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C65",
+      "claim": "F-actin foci form within the lamina when cytoplasmic components, such as the Arp2/3 complex and actin monomers, reach a critical concentration in the nucleus as a result of the gradual, phosphorylation-driven disassembly and increasing leakiness of the NPCs in the first phase of NEBD.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that these foci form at the time when cytoplasmic components, such as the Arp2/3 complex and actin monomers, reach a critical concentration in the nucleus as a result of the gradual, phosphorylation-driven disassembly and increasing leakiness of the NPCs in the first phase of NEBD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the known mechanism of NPC disassembly and the observed timing of F-actin foci formation.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "384bb202-070e-45c5-bab2-e51f6d29d2b3",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C66",
+      "claim": "Once triggered, F-actin foci grow rapidly, which is expected as a result of the autocatalytic nature of Arp2/3-mediated nucleation of branched F-actin networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Once triggered, F-actin foci grow rapidly, which is expected as a result of the autocatalytic nature of Arp2/3-mediated nucleation of branched F-actin networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Arp2/3-mediated actin polymerization and is consistent with the observed rapid growth of F-actin foci (Figure 1A).",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "89bc673c-9131-4d03-8ba4-ebb5176cc7a5",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C67",
+      "claim": "The filaments seem to grow preferentially from the shell base in the lamina towards nuclear membranes, and push against them.",
+      "claim_type": "EXPLICIT",
+      "source": "As the foci spread, they merge to form a continuous shell. The filaments seem to grow preferentially from the shell base in the lamina towards nuclear membranes, and push against them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed morphology of F-actin spikes extending from the lamina towards membranes (Figures 3D, 5D, E).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "1a0c194e-73cc-40de-96e3-5d4c3e784edb",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C68",
+      "claim": "The asymmetry in filament growth may be explained by the fact that force imposed on actin filaments promotes the nucleation of a branched meshwork.",
+      "claim_type": "EXPLICIT",
+      "source": "This asymmetry may be explained by the fact that force imposed on actin filaments promotes the nucleation of a branched meshwork (Bieling et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on established knowledge from Bieling et al., 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "5001bbeb-8bb3-46c5-a439-daf694060aef",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C69",
+      "claim": "F-actin networks that are nucleated in vitro on micropatterned activated Arp2/3 show a morphology that is strikingly similar to that of the F-actin shell, with filopodia-like bundles pointing away from a base of dense branched network.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, F-actin networks that are nucleated in vitro on micropatterned activated Arp2/3 show a morphology that is strikingly similar to that of the F-actin shell, with filopodia-like bundles pointing away from a base of dense branched network (Reymann et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Reymann et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "ea924f16-a8d7-4c61-8e38-c95f11863e05",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C70",
+      "claim": "Localized activation of Arp2/3 within the lamina may be sufficient to explain the morphology of the F-actin shell.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that localized activation of Arp2/3 within the lamina may be sufficient to explain the morphology of the F-actin shell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity to in vitro F-actin networks (Reymann et al., 2010) and the observed localization of Arp2/3 at the base of the shell (Figure 3E).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "d136a359-a45d-41df-932f-9171fef7df5f",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C71",
+      "claim": "The F-actin shell protrudes pore-free nuclear membranes, separating these from the lamina, because most NPCs are attached to the still-intact lamina at this stage, and thus are held back, while membranes are protruded by actin assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Our light and electron microscopy data clearly show that the F-actin shell protrudes pore-free nuclear membranes, separating these from the lamina. We propose that these membranes are cleared of NPCs, because most NPCs are attached to the still-intact lamina at this stage, and thus are held back, while membranes are protruded by actin assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on EM and light microscopy data showing pore-free membrane protrusions with NPCs remaining at the base attached to lamina (Figures 5, 6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "e01c508a-e690-401a-8733-b648fa9c0cef",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C72",
+      "claim": "As the NPCs accumulate between pore-free spikes, the membranes in these NPC-rich dimples buckle into the nucleoplasm and invaginate to form nucleoplasmic bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, as the NPCs accumulate between pore-free spikes, the membranes in these NPC-rich dimples buckle into the nucleoplasm and invaginate to form nucleoplasmic bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on EM data showing NPC-rich invaginations forming nucleoplasmic bodies (Figures 6A, B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "be76a32b-e3bf-423f-a919-7b7d8d1e0a7b",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C73",
+      "claim": "Pore-free nuclear membranes that are separated from the lamina are unstable, and thus rupture and rearrange into an ER-like reticular structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that pore-free nuclear membranes that are separated from the lamina are unstable, and thus rupture and rearrange into an ER-like reticular structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from EM data showing rupture occurring in pore-free regions (Figure 7A).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "06289201-fc03-400a-bba7-82559a221fcf",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C74",
+      "claim": "Detaching the nuclear membranes from the lamin network leads to NE rupture in various physiological contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in agreement with our model, it has been shown in various other physiological contexts that detaching the nuclear membranes from the lamin network leads to NE rupture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by examples from cancer cells and micronuclei (Hatch et al., 2013) and migrating cells (Thiam et al., 2016; Davidson and Lammerding, 2014; Denais et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "7d0d4f4c-4c17-448c-b15b-b5f904451f8e",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C75",
+      "claim": "NE rupture frequently occurs in cancer cells, in particular in micronuclei, where breaching of the NE barrier is preceded by local lamin disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, NE rupture frequently occurs in cancer cells, in particular in micronuclei, where breaching of the NE barrier is preceded by local lamin disruption (Hatch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hatch et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "a5166f45-d41f-4274-8cf4-b51d21f5bbe9",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C76",
+      "claim": "The 'breakability' of the nucleus in migrating cells is dependent on lamin composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work shows that the 'breakability' of the nucleus in migrating cells is dependent on lamin composition (Thiam et al., 2016; Davidson and Lammerding, 2014; Denais et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Thiam et al., 2016; Davidson and Lammerding, 2014; and Denais et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "61358169-a0ae-46c8-bd21-131affcea64c",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C77",
+      "claim": "In somatic cells, NEBD proceeds by microtubule-mediated tearing of the lamina.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in somatic cells, it has been shown that NEBD proceeds by microtubule-mediated tearing of the lamina (Beaudouin et al., 2002; Salina et al., 2002), but the precise morphology of the NE intermediates at a resolution comparable to that which we achieved in starfish oocytes is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beaudouin et al., 2002 and Salina et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "50a38e83-32a3-4bab-a1cf-0e604cd22982",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C78",
+      "claim": "A mechanism based on the segregation of lamina, NPCs and membranes may play a critical role in destabilizing the NE during NE rupture in somatic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is possible that a similar mechanism, based on the segregation of lamina, NPCs and membranes, plays a critical role in destabilizing the NE during NE rupture in somatic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the mechanism observed in starfish oocytes and the lack of detailed structural information for somatic cells.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "a3e5d9af-bd42-4881-89ed-0008cca6f95f",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C79",
+      "claim": "F-actin assembly may facilitate NE rupture by increasing membrane tension in evaginations, or by causing extreme membrane curvatures at the boundary of invaginations.",
+      "claim_type": "EXPLICIT",
+      "source": "F-actin assembly may facilitate this process by increasing membrane tension in evaginations, or by causing extreme membrane curvatures, for example at the boundary of invaginations, thereby facilitating NE rupture or possibly complete NPC disassembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism by which F-actin assembly leads to membrane rupture.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "b7f1c36e-a7ad-45c4-ac7a-a22bd6507998",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C80",
+      "claim": "The ESCRT machinery may be involved in membrane rearrangements during NEBD.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, although this hypothesis remains rather speculative at this point, it is intriguing to consider links between our work and what has been shown for repair of interphase NE rupture, as well as reassembly of NE after division, both instances involving the ESCRT machinery (Denais et al., 2016; Raab et al., 2016; Olmos et al., 2015). In our NEBD intermediates, we observe membrane topologies that are similar to those involved in NE repair, suggesting that the ESCRT complex may also be involved in these membrane rearrangements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on similarities in membrane topology to processes known to involve ESCRT (Denais et al., 2016; Raab et al., 2016; Olmos et al., 2015).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "07114f73-a29f-4321-ad0a-51b1a1e847fb",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C81",
+      "claim": "An F-actin shell similar to that in starfish oocytes has been observed in several species, including other echinoderm species such as sea urchin, the cnidarian model Nematostella vectensis, and polychaete worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, an F-actin shell similar to that in starfish oocytes has been observed in several species, although these structures are yet to be characterized in detail. These species include other echinoderm species, such as sea urchin (Burkel et al., 2007), the cnidarian model Nematostella vectensis (DuBuc et al., 2014), and polychaete worms (Jacobsohn, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Burkel et al., 2007; DuBuc et al., 2014; and Jacobsohn, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "d0d300cc-2766-4bae-be52-541521b52c54",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C82",
+      "claim": "F-actin-mediated NE rupture may be widely spread across animal species.",
+      "claim_type": "EXPLICIT",
+      "source": "These examples strongly suggest that F-actin-mediated NE rupture may be widely spread across animal species, and we speculate that the presence or absence of this mechanism may be correlated with differences in NE disassembly dynamics, nuclear size and other differences in physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation of F-actin shells in multiple species (Burkel et al., 2007; DuBuc et al., 2014; Jacobsohn, 1999).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "e6077009-0819-4305-b327-306088ac4ccf",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C83",
+      "claim": "The clearing of NPCs off the membrane during NEBD appears to be conserved in organisms with partially open mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the clearing of NPCs off the membrane during NEBD appears to be conserved in organisms with partially open mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by examples from Ustilago maydis and Schizosaccharomyces japonicus (Straube et al., 2005; Aoki et al., 2011; Theisen et al., 2008).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "e31c6023-0bf9-45c4-a54f-c54f5144d88e",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C84",
+      "claim": "In Ustilago maydis, tearing of the NE is caused by microtubules pulling the nucleus through a small opening into the bud of the daughter cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Tearing of the NE has been observed in the fungus Ustilago maydis and the yeast Schizosaccharomyces japonicus. In U. maydis, the shearing is caused by microtubules pulling the nucleus through a small opening into the bud of the daughter cell (Straube et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Straube et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "fd1f7a39-f63a-4ab5-bd9e-a96842771c08",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C85",
+      "claim": "Schizosaccharomyces japonicus splits the NE by stretching the nucleus between the two poles of a dividing cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Sz. japonicus, on the other hand, splits the NE by stretching the nucleus between the two poles of a dividing cell (Aoki et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aoki et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "d2fd0dc8-518f-4b38-aa60-edae95d98bf3",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C86",
+      "claim": "Schizosaccharomyces japonicus redistributes the NPCs to the two poles, freeing naked membranes at the NE regions destined to be broken.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, NE rupture occurs by different means, but intriguingly, both show evidence of clearing NPCs before the NE is torn: Sz. japonicus redistributes the NPCs to the two poles, freeing naked membranes at the NE regions destined to be broken.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aoki et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "fe3f9710-78f0-4f8f-b910-0bc01634043d",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C87",
+      "claim": "NPCs of Ustilago maydis initiate release of nucleoporins prior to rupture just as in higher eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "NPCs of U. maydis on the other hand initiate release of nucleoporins prior to rupture just as in higher eukaryotes (Straube et al., 2005; Aoki et al., 2011; Theisen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Straube et al., 2005; Aoki et al., 2011; and Theisen et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "4e43c8d0-db70-48e3-9974-e39464622fec",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C88",
+      "claim": "The F-actin shell destabilizes the NE by segregating pore-dense and pore-free membranes, providing the first mechanistic explanation for the sudden collapse of the NE structure during its breakdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that the F-actin shell destabilizes the NE by segregating pore-dense and pore-free membranes, providing the first mechanistic explanation for the sudden collapse of the NE structure during its breakdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all the presented data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "5447b308-43b7-4863-b8c5-1206f7aa489c",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C89",
+      "claim": "The mechanism of F-actin-mediated NE rupture is likely to function in many animal species.",
+      "claim_type": "EXPLICIT",
+      "source": "As discussed above, this mechanism is likely to function in many animal species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of similar F-actin structures in multiple species (Burkel et al., 2007; DuBuc et al., 2014; Jacobsohn, 1999).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "597b37fa-34c6-46ef-83e1-2f3e27337bb1",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C90",
+      "claim": "The segregation of nuclear membranes from the lamin network appears to be a general feature of nuclear rupture observed in dividing mammalian somatic cells, as well as during the interphase NE rupture that is frequent in cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In other species, forces may be generated by means other than Arp2/3-mediated actin polymerization, but the segregation of nuclear membranes from the lamin network appears to be a general feature of nuclear rupture observed in dividing mammalian somatic cells, as well as during the interphase NE rupture that is frequent in cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mechanism observed in starfish oocytes and examples from other systems (Hatch et al., 2013; Thiam et al., 2016; Davidson and Lammerding, 2014; Denais et al., 2016).",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "92381a1d-bd25-420e-8d10-00a8f232890f",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C91",
+      "claim": "The stage when the 25-kDa dextran almost completely fills the nucleus but the large, 160-kDa dextran is still excluded identifies the time-window of F-actin shell formation and NE rupture.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the stage when the 25-kDa dextran almost completely fills the nucleus but the large, 160-kDa dextran is still excluded identifies the time-window of F-actin shell formation and NE rupture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the known permeability properties of the NE during NEBD (L\u00e9n\u00e1rt et al., 2003) and is used as a staging criterion for EM samples (Figure 4A, B).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "e6382951-eb52-4e07-9ade-0417d72445f9",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "claim_id": "C92",
+      "claim": "NE rupture initiates near the 'equator' of the nucleus and spreads as a wave towards the poles.",
+      "claim_type": "EXPLICIT",
+      "source": "The montage illustrates the key advantage of the system, which allows the progression of NE rupture to be observed spatially ordered on a single section of the large oocyte nucleus. The arrangement of the rupture site is fully consistent with the live and fixed light microscopy data: NE rupture initiates near the 'equator' of the nucleus and spreads as a wave towards the poles (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in EM montages (Figure 4C) and is consistent with live and fixed light microscopy data (Figures 1A, 2A, 4D).",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e5a257bc-e3d7-44b8-80ea-8c1606a98898",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Nuclear envelope breakdown (NEBD) in starfish oocytes is mediated by an Arp2/3-nucleated F-actin shell, which destabilizes the NE by segregating pore-dense and pore-free membranes. This mechanism contrasts with microtubule-driven tearing observed in mammalian somatic cells and provides the first mechanistic explanation for the sudden collapse of the NE structure during its breakdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C15, C16, and C88 are well-supported by multiple lines of evidence including live-cell imaging (Figure 1A), EM data (Figures 5-7), STED microscopy (Figures 3, 5G), and inhibitor experiments (Figures 1E, 3C). The data consistently demonstrate that F-actin assembly is required for NE rupture and that this mechanism differs from the microtubule-driven process in mammalian cells. The conclusion is based on comprehensive structural and functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "5f94354c-ceee-44e9-96b2-6bd584086135",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Actin is nucleated by the Arp2/3 complex within the lamina and forms filopodia-like spikes (0.5-2 \u03bcm in length, spaced at ~0.1 \u03bcm) that extend towards and protrude nuclear membranes. These spikes contain fibrous densities consistent with actin filaments and grow preferentially from the shell base in the lamina towards nuclear membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C37, C38, C45, C51, and C67 are strongly supported by STED microscopy showing F-actin spikes with precise measurements (Figure 3D), EM and tomographic data showing membrane protrusions with actin filaments (Figures 5D, E), and ArpC1 localization at the base of the shell (Figure 3E). The morphology and dimensions are consistently observed across multiple imaging modalities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "6e998a85-7340-4f7b-a819-89bd8ccb223f",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "F-actin spikes protrude pore-free nuclear membranes while NPCs accumulate at the base of spikes, remaining attached to the still-intact lamina. The membrane evaginations are largely free of NPCs because NPCs are held back by their attachments to the lamina while membranes are protruded by actin assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C40, C46, C47, C49, C50, and C71 are well-supported by EM data showing membrane spikes free of NPCs with NPC-dense regions at their base (Figures 5D, G), STED imaging showing similar patterns (Figure 5G), and quantification of NPC spacing (Figure 6C). The proposed mechanism that NPCs are held back by lamina attachments is a reasonable inference from the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "19024c44-427b-4410-80c0-d22b561cb5e8",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The lamina remains continuous throughout NEBD, gradually coarsening but not undergoing rapid disassembly or F-actin-induced tearing. The NE rupture does not proceed by tearing or rapid disassembly of the lamina.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C30, and C31 are supported by immunofluorescence data showing continuous lamina throughout NEBD (Figure 2B) and STED microscopy showing gradual coarsening of the lamin mesh (Figure 2B). This conclusion is consistent with previous observations and contrasts with the microtubule-driven tearing mechanism in somatic cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "8389c7dc-d017-4494-8ac9-c4170de1e850",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NE rupture proceeds by F-actin-driven sorting of NE membranes into pore-dense and pore-free segments. Pore-dense segments invaginate to form nucleoplasmic bodies, while rupture occurs in evaginating pore-free segments. NPC-free membranes are generated by redistribution of NPCs, with pore-to-pore distance decreasing from ~200 nm to ~100 nm in pore-dense regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C52, C56, C57, C63, and C64 are strongly supported by EM data showing segregation of pore-free and pore-dense segments (Figure 6A), quantification of NPC spacing (Figure 6C), and observation of rupture in pore-free regions (Figure 7A). The conclusion that NPC-free membranes are generated by redistribution is a reasonable inference from the quantitative data showing increased NPC density in some regions and decreased density in others.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "95b98aab-8b9e-4c23-99ee-47b109e34a60",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Nucleoplasmic bodies are dense, round structures (200-500 nm in diameter) that form by invagination of NPC-rich clusters. They often appear in a beads-on-a-string arrangement and are bounded by closely juxtaposed NPCs with intact central ring structures. As NPCs accumulate between pore-free spikes, the membranes in these NPC-rich dimples buckle into the nucleoplasm and invaginate to form nucleoplasmic bodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C54, C55, C58, C59, and C72 are well-supported by EM data showing nucleoplasmic bodies with precise measurements (Figures 5D, 6B), tomograms confirming NPC structure (Figures 6D, E), and examination of intermediates suggesting the invagination mechanism (Figures 6A, B). The proposed mechanism of formation is a reasonable inference from the structural intermediates observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "3eb5eb3d-e8a1-4a12-bf97-0f69f46ac621",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The F-actin shell first appears as an equatorial band of foci when the NE is still intact and impermeable to large dextrans. Approximately 30-45 s later, as F-actin foci grow and merge to form a continuous shell, the first breaks appear allowing large dextrans to enter. During this process, spike-like membrane protrusions appear 10-15 s after F-actin foci begin to assemble, and NPCs appear to separate partially from the membrane. Dextran entry occurs 20-30 s after the initial membrane spikes, when membrane reorganization has progressed to an advanced stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C23 are directly supported by high-resolution live-cell imaging data (Figures 1A-D) showing the temporal sequence of events with precise timing. The observations are consistent across multiple experiments and provide a detailed timeline of the membrane reorganization process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "76f9c0ff-3e6d-46c9-a461-f25f6ddf3d94",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Membrane reorganization during NEBD is dependent on actin assembly. Inhibiting F-actin shell formation by depleting actin monomers or inhibiting Arp2/3 prevents membrane reorganization and the separation of lamina and membranes, though the nucleus still collapses and the NE ruffles due to partial NE disassembly. Without F-actin assembly, large membrane fragments remain intact long after NEBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 and C36 are supported by experimental data using UtrCH-mediated actin depletion (Figure 1E) and CK-666 inhibitor (Figure 3C), which demonstrate that preventing F-actin shell formation blocks membrane reorganization while allowing nuclear collapse. This provides strong functional evidence for the role of actin assembly in membrane reorganization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "9595e19b-b57e-453c-ab92-40c5c0c0f2f6",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The lamina co-localizes with F-actin at the base of the shell, while NPCs form a separate layer up to 500 nm above the F-actin shell. Before NE rupture, NPC and lamina stainings overlap at ~50 nm resolution, but at the shell stage, NPC-stained NE fragments 'float' above the intact lamina. The still-intact lamina serves as the scaffold upon which the F-actin shell assembles, while nuclear membranes fragment and separate away from the lamina and F-actin shell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by immunofluorescence data with line profile analysis (Figures 3A, B), STED data showing separation of NPCs from lamina (Figure 3C), and comparison to pre-NEBD state (Figure 3C). The conclusion that lamina serves as a scaffold is a reasonable inference from the co-localization data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "5d1bbee2-d89d-4ace-8ab6-a705a89f94ee",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The NE is smooth, continuous, and tightly packed with NPCs at regular spacing (~200 nm) in immature oocytes and intact regions. In areas closer to the rupture site, gaps in NPC occupancy appear and increase in number and size, evolving into bumps and membrane spikes that rise ~1 \u03bcm above the level of the NE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 are directly supported by EM data (Figures 5A-D) with quantification (Figure 6C) and measurements from tomographic data (Figures 5D, E). The observations are consistent with previous work (L\u00e9n\u00e1rt et al., 2003) and provide a detailed spatial progression of NE changes leading to rupture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "843ed1ac-7c48-4ceb-b4cd-d9e9aaa87d92",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Membranes are interrupted in areas where segregation of pore-dense and pore-free regions is strongest and NPC invaginations are most dramatic. In these rupture areas, no continuous membrane boundary separates cyto- and nucleoplasm, but nucleoplasmic bodies are abundant. Light microscopy reveals a complex tubular-vesicular network densely labeled by NPC staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 are supported by EM montages showing rupture sites (Figure 7A) and STED microscopy showing tubular-vesicular networks (Figure 7B). The correlation between EM and light microscopy data strengthens the conclusion about the nature of membrane rupture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "aa722d28-86d4-4082-88bf-2c2e3f0a26b0",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The stage when 25-kDa dextran fills the nucleus but 160-kDa dextran is excluded identifies the time-window of F-actin shell formation and NE rupture. NE rupture initiates near the equator of the nucleus and spreads as a wave towards the poles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91 and C92 are supported by correlative light and EM data (Figures 4A-D) and are consistent with established knowledge about NE permeability during NEBD (L\u00e9n\u00e1rt et al., 2003). The spatial arrangement of rupture is directly observed in EM montages and confirmed by live and fixed light microscopy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "d2067cd1-c3ff-48a9-a88c-48cdc2459039",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "NPC-free areas pushed out by the F-actin shell may cause crowding of NPCs in juxtaposed regions. Pore-free nuclear membranes separated from the lamina are unstable and rupture, rearranging into an ER-like reticular structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C73 are inferred from EM observations and quantification of NPC spacing (Figure 6C) showing increased density in some regions. While the authors acknowledge they cannot estimate 3D membrane areas from 2D sections, the inference is reasonable based on the observed redistribution of NPCs and rupture occurring in pore-free regions (Figure 7A).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "270d503a-f4ed-4b15-b5a0-256bd3a08bcc",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "F-actin foci form within the lamina when cytoplasmic components reach critical concentration due to NPC disassembly. Once triggered, foci grow rapidly due to autocatalytic Arp2/3-mediated nucleation. The asymmetry in filament growth may be explained by force-promoted nucleation of branched meshwork. The morphology is similar to in vitro F-actin networks on micropatterned Arp2/3, suggesting localized Arp2/3 activation within the lamina may be sufficient to explain the F-actin shell morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65, C66, C68, C69, and C70 are largely speculative or based on analogy to in vitro systems (Reymann et al., 2010; Bieling et al., 2016). While C66 is consistent with observed rapid growth (Figure 1A) and C70 is supported by Arp2/3 localization data (Figure 3E), the specific trigger mechanism (C65) and force-based explanation for asymmetry (C68) remain hypothetical. Additional experiments would be needed to directly test these mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "0a611d40-edd1-408f-9aa2-d1e48cebe7d4",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Detaching nuclear membranes from the lamin network leads to NE rupture in various physiological contexts including cancer cells, micronuclei, and migrating cells. In somatic cells, NEBD proceeds by microtubule-mediated tearing of the lamina, but a similar mechanism based on segregation of lamina, NPCs, and membranes may play a critical role in destabilizing the NE. The segregation of nuclear membranes from the lamin network appears to be a general feature of nuclear rupture in dividing mammalian somatic cells and during interphase NE rupture in cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C78 and C90 are supported by citations to other work (Hatch et al., 2013; Thiam et al., 2016; Davidson and Lammerding, 2014; Denais et al., 2016; Beaudouin et al., 2002; Salina et al., 2002), but the extension of the starfish oocyte mechanism to mammalian somatic cells (C78, C90) is speculative. The authors acknowledge that the precise morphology of NE intermediates in somatic cells at comparable resolution is not known, making this inference uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "d0bd8888-ffba-4107-bdb5-22a1920b6b33",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "F-actin assembly may facilitate NE rupture by increasing membrane tension in evaginations or causing extreme membrane curvatures at invagination boundaries. The ESCRT machinery may be involved in membrane rearrangements during NEBD based on similarities in membrane topology to NE repair processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79 and C80 are explicitly speculative. While the authors observe membrane topologies similar to those in ESCRT-mediated processes (Denais et al., 2016; Raab et al., 2016; Olmos et al., 2015), no direct evidence for ESCRT involvement or specific mechanisms of membrane rupture is provided. These remain hypotheses requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "174ba95e-8d4d-4609-9d2a-06d741cfcfc2",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "F-actin shells similar to those in starfish oocytes have been observed in several species including sea urchin, Nematostella vectensis, and polychaete worms. F-actin-mediated NE rupture may be widely spread across animal species, and this mechanism is likely to function in many animal species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C82, and C89 are supported by citations showing F-actin shells in multiple species (Burkel et al., 2007; DuBuc et al., 2014; Jacobsohn, 1999). While the detailed characterization is lacking in these other species, the observation of similar structures across diverse taxa provides reasonable support for the inference that this mechanism may be widespread.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "06839e2c-4186-4e9a-a378-7b10e6ecb8c8",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The clearing of NPCs off the membrane during NEBD appears to be conserved in organisms with partially open mitosis. In Ustilago maydis, microtubules tear the NE by pulling the nucleus through a small opening, and NPCs initiate release of nucleoporins prior to rupture. In Schizosaccharomyces japonicus, the NE is split by stretching the nucleus between poles, and NPCs are redistributed to the poles, freeing naked membranes at regions destined to be broken.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 are supported by citations to work in U. maydis and Sz. japonicus (Straube et al., 2005; Aoki et al., 2011; Theisen et al., 2008). The observation that NPC clearing occurs before NE rupture in these organisms, despite different rupture mechanisms, supports the authors' conclusion that this may be a conserved feature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    },
+    {
+      "id": "7773a935-3a99-460f-810e-752710dc98fe",
+      "content_id": "25a26669-1903-41e7-89f9-bc51d1759298",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background information on nuclear envelope structure, oocyte nuclear architecture, and established mechanisms of NEBD across species. The NE is composed of inner and outer membranes fused at NPCs, supported by the lamina. Oocytes have large nuclei densely packed with NPCs. NEBD begins with phosphorylation-driven partial permeabilization allowing small molecules to leak while maintaining overall NE structure. In mammalian cells, microtubules tear the NE in a dynein-dependent process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C14 represent established knowledge supported by appropriate citations (Burke and Ellenberg, 2002; Goldberg and Allen, 1995; Hetzer, 2010; Ungricht and Kutay, 2017; Dultz et al., 2008; M\u00fchlh\u00e4usser and Kutay, 2007; Terasaki et al., 2001; L\u00e9n\u00e1rt et al., 2003; Martino et al., 2017; Linder et al., 2017; Beaudouin et al., 2002; Salina et al., 2002). These provide necessary context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:54:07.934934Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f9568d9f-417c-4d5f-bfe0-c45b3bbb2411",
+      "result_id": "e5a257bc-e3d7-44b8-80ea-8c1606a98898"
+    },
+    {
+      "claim_id": "792906c0-b997-4868-9b5a-c5af9db93968",
+      "result_id": "e5a257bc-e3d7-44b8-80ea-8c1606a98898"
+    },
+    {
+      "claim_id": "5065e187-01fb-41d5-8972-a45ec9310cd0",
+      "result_id": "e5a257bc-e3d7-44b8-80ea-8c1606a98898"
+    },
+    {
+      "claim_id": "4e43c8d0-db70-48e3-9974-e39464622fec",
+      "result_id": "e5a257bc-e3d7-44b8-80ea-8c1606a98898"
+    },
+    {
+      "claim_id": "e64c2456-23f8-4d7f-9b8a-f322446694c5",
+      "result_id": "5f94354c-ceee-44e9-96b2-6bd584086135"
+    },
+    {
+      "claim_id": "99e0ff38-3aa0-42a2-afa5-e76fd3cae3c5",
+      "result_id": "5f94354c-ceee-44e9-96b2-6bd584086135"
+    },
+    {
+      "claim_id": "fbabaf9f-d8f6-4a00-ae49-5c2c0c313b3f",
+      "result_id": "5f94354c-ceee-44e9-96b2-6bd584086135"
+    },
+    {
+      "claim_id": "1cb02d4a-01c7-4801-b3ae-b47d60d648ef",
+      "result_id": "5f94354c-ceee-44e9-96b2-6bd584086135"
+    },
+    {
+      "claim_id": "e1fc5c0c-5dcf-4329-bffc-018a1c90dff3",
+      "result_id": "5f94354c-ceee-44e9-96b2-6bd584086135"
+    },
+    {
+      "claim_id": "89bc673c-9131-4d03-8ba4-ebb5176cc7a5",
+      "result_id": "5f94354c-ceee-44e9-96b2-6bd584086135"
+    },
+    {
+      "claim_id": "4012958e-f916-4bee-b1a9-970cbc1351b1",
+      "result_id": "6e998a85-7340-4f7b-a819-89bd8ccb223f"
+    },
+    {
+      "claim_id": "451b56d3-45ab-4769-8661-0338801bc7fc",
+      "result_id": "6e998a85-7340-4f7b-a819-89bd8ccb223f"
+    },
+    {
+      "claim_id": "046fc51a-077c-4be0-9c36-10b52992f964",
+      "result_id": "6e998a85-7340-4f7b-a819-89bd8ccb223f"
+    },
+    {
+      "claim_id": "fd6c047f-41a9-4811-962f-331bd2230241",
+      "result_id": "6e998a85-7340-4f7b-a819-89bd8ccb223f"
+    },
+    {
+      "claim_id": "88bedb23-2321-45c9-b0d7-24b11e9e40af",
+      "result_id": "6e998a85-7340-4f7b-a819-89bd8ccb223f"
+    },
+    {
+      "claim_id": "db41e200-ef8f-48f4-82b2-c1bdd5e936ca",
+      "result_id": "6e998a85-7340-4f7b-a819-89bd8ccb223f"
+    },
+    {
+      "claim_id": "d136a359-a45d-41df-932f-9171fef7df5f",
+      "result_id": "6e998a85-7340-4f7b-a819-89bd8ccb223f"
+    },
+    {
+      "claim_id": "4489877d-2f89-488f-b69a-fcc9afafe419",
+      "result_id": "19024c44-427b-4410-80c0-d22b561cb5e8"
+    },
+    {
+      "claim_id": "d3c52daa-7775-4f9b-8e22-4083af478a40",
+      "result_id": "19024c44-427b-4410-80c0-d22b561cb5e8"
+    },
+    {
+      "claim_id": "98c03e73-3d9c-4e50-aba0-c3be4fd1d8b7",
+      "result_id": "19024c44-427b-4410-80c0-d22b561cb5e8"
+    },
+    {
+      "claim_id": "4331de10-64ea-4420-8d57-60240b1cf891",
+      "result_id": "8389c7dc-d017-4494-8ac9-c4170de1e850"
+    },
+    {
+      "claim_id": "c822e754-f73d-4fb9-ba5e-6a18a50b9fea",
+      "result_id": "8389c7dc-d017-4494-8ac9-c4170de1e850"
+    },
+    {
+      "claim_id": "c0afa453-2c50-4516-81bb-b4f45f3d92b1",
+      "result_id": "8389c7dc-d017-4494-8ac9-c4170de1e850"
+    },
+    {
+      "claim_id": "97c241c6-f37d-436a-ad6b-fc980c93fa10",
+      "result_id": "8389c7dc-d017-4494-8ac9-c4170de1e850"
+    },
+    {
+      "claim_id": "a511e8f1-75db-4955-9473-f498100cb5be",
+      "result_id": "8389c7dc-d017-4494-8ac9-c4170de1e850"
+    },
+    {
+      "claim_id": "0a403a32-8de7-4c27-b552-aac05c5bd6a7",
+      "result_id": "8389c7dc-d017-4494-8ac9-c4170de1e850"
+    },
+    {
+      "claim_id": "5ae316d0-5f46-46e2-b92b-c0e7807aa95d",
+      "result_id": "95b98aab-8b9e-4c23-99ee-47b109e34a60"
+    },
+    {
+      "claim_id": "b5724816-777a-422b-8522-abdbcf16e30a",
+      "result_id": "95b98aab-8b9e-4c23-99ee-47b109e34a60"
+    },
+    {
+      "claim_id": "7d5b1efa-da6e-4db8-87ad-88c2448d34e0",
+      "result_id": "95b98aab-8b9e-4c23-99ee-47b109e34a60"
+    },
+    {
+      "claim_id": "25332a4f-d0a4-45cb-8451-f55b2691dcaf",
+      "result_id": "95b98aab-8b9e-4c23-99ee-47b109e34a60"
+    },
+    {
+      "claim_id": "cf0ca819-a01e-4575-af2f-30e32f57aac4",
+      "result_id": "95b98aab-8b9e-4c23-99ee-47b109e34a60"
+    },
+    {
+      "claim_id": "e01c508a-e690-401a-8733-b648fa9c0cef",
+      "result_id": "95b98aab-8b9e-4c23-99ee-47b109e34a60"
+    },
+    {
+      "claim_id": "49c8a2c8-c350-47ac-9555-5778d052f7be",
+      "result_id": "3eb5eb3d-e8a1-4a12-bf97-0f69f46ac621"
+    },
+    {
+      "claim_id": "f33dae5d-4db2-43b5-8924-def1fba18f50",
+      "result_id": "3eb5eb3d-e8a1-4a12-bf97-0f69f46ac621"
+    },
+    {
+      "claim_id": "d4f4d317-2eb9-43ef-bb80-f994cf80af05",
+      "result_id": "3eb5eb3d-e8a1-4a12-bf97-0f69f46ac621"
+    },
+    {
+      "claim_id": "ce91d165-0209-456c-96ba-7979d5f919d5",
+      "result_id": "3eb5eb3d-e8a1-4a12-bf97-0f69f46ac621"
+    },
+    {
+      "claim_id": "7191e4e9-83d0-4c5f-ad2d-931e48a28caa",
+      "result_id": "3eb5eb3d-e8a1-4a12-bf97-0f69f46ac621"
+    },
+    {
+      "claim_id": "b404eb09-15bf-4ff4-b500-0e561103fc59",
+      "result_id": "3eb5eb3d-e8a1-4a12-bf97-0f69f46ac621"
+    },
+    {
+      "claim_id": "1f9422c3-97dc-45f8-bccb-a5cff5003d4d",
+      "result_id": "3eb5eb3d-e8a1-4a12-bf97-0f69f46ac621"
+    },
+    {
+      "claim_id": "9fc68a7d-3e40-48c2-9afd-34f9b207b765",
+      "result_id": "76f9c0ff-3e6d-46c9-a461-f25f6ddf3d94"
+    },
+    {
+      "claim_id": "5ac7b0e4-3bd8-4a54-86d5-e47215c13ca4",
+      "result_id": "76f9c0ff-3e6d-46c9-a461-f25f6ddf3d94"
+    },
+    {
+      "claim_id": "fb68960f-0a9b-4fad-bcad-a70424f28c3d",
+      "result_id": "76f9c0ff-3e6d-46c9-a461-f25f6ddf3d94"
+    },
+    {
+      "claim_id": "619df860-3ee5-42df-b62f-925a7c4afb7d",
+      "result_id": "76f9c0ff-3e6d-46c9-a461-f25f6ddf3d94"
+    },
+    {
+      "claim_id": "512878a2-0ffa-4edf-b9ef-c3150cc6ea7c",
+      "result_id": "76f9c0ff-3e6d-46c9-a461-f25f6ddf3d94"
+    },
+    {
+      "claim_id": "a7cdd4a4-b5b2-4995-86dd-63a325e6afb5",
+      "result_id": "76f9c0ff-3e6d-46c9-a461-f25f6ddf3d94"
+    },
+    {
+      "claim_id": "942a40e8-239d-4fda-8e3e-530ba11c39da",
+      "result_id": "9595e19b-b57e-453c-ab92-40c5c0c0f2f6"
+    },
+    {
+      "claim_id": "6f74afcd-75f1-4914-b4eb-6a0e7209d1ce",
+      "result_id": "9595e19b-b57e-453c-ab92-40c5c0c0f2f6"
+    },
+    {
+      "claim_id": "89891bfb-0f2b-44dc-aa2d-5a74b631e32f",
+      "result_id": "9595e19b-b57e-453c-ab92-40c5c0c0f2f6"
+    },
+    {
+      "claim_id": "510f4e26-4a16-4345-a135-ec2ca0edba87",
+      "result_id": "9595e19b-b57e-453c-ab92-40c5c0c0f2f6"
+    },
+    {
+      "claim_id": "e3ba3fb4-472f-4cea-9845-611d1af213c3",
+      "result_id": "5d1bbee2-d89d-4ace-8ab6-a705a89f94ee"
+    },
+    {
+      "claim_id": "46763dd9-6ff6-4d74-9cfd-4616b49fb5c1",
+      "result_id": "5d1bbee2-d89d-4ace-8ab6-a705a89f94ee"
+    },
+    {
+      "claim_id": "bad57cc3-4ef9-4066-94f4-de1b827396b8",
+      "result_id": "5d1bbee2-d89d-4ace-8ab6-a705a89f94ee"
+    },
+    {
+      "claim_id": "83ade2df-6e0a-47b5-b823-4e586fe2da3b",
+      "result_id": "5d1bbee2-d89d-4ace-8ab6-a705a89f94ee"
+    },
+    {
+      "claim_id": "149a0450-f3c4-4c9b-bcbc-7460ac71ae7a",
+      "result_id": "843ed1ac-7c48-4ceb-b4cd-d9e9aaa87d92"
+    },
+    {
+      "claim_id": "bd62d4e9-f523-4a67-a4d8-9b27a7183277",
+      "result_id": "843ed1ac-7c48-4ceb-b4cd-d9e9aaa87d92"
+    },
+    {
+      "claim_id": "2ca4a8d5-566b-4833-ab72-87a1ee2054db",
+      "result_id": "843ed1ac-7c48-4ceb-b4cd-d9e9aaa87d92"
+    },
+    {
+      "claim_id": "92381a1d-bd25-420e-8d10-00a8f232890f",
+      "result_id": "aa722d28-86d4-4082-88bf-2c2e3f0a26b0"
+    },
+    {
+      "claim_id": "e6382951-eb52-4e07-9ade-0417d72445f9",
+      "result_id": "aa722d28-86d4-4082-88bf-2c2e3f0a26b0"
+    },
+    {
+      "claim_id": "764e0798-86a4-4140-8874-c3efe799ede4",
+      "result_id": "d2067cd1-c3ff-48a9-a88c-48cdc2459039"
+    },
+    {
+      "claim_id": "be76a32b-e3bf-423f-a919-7b7d8d1e0a7b",
+      "result_id": "d2067cd1-c3ff-48a9-a88c-48cdc2459039"
+    },
+    {
+      "claim_id": "0c8b9f4e-a4eb-4e55-b40f-5afe8135a851",
+      "result_id": "270d503a-f4ed-4b15-b5a0-256bd3a08bcc"
+    },
+    {
+      "claim_id": "384bb202-070e-45c5-bab2-e51f6d29d2b3",
+      "result_id": "270d503a-f4ed-4b15-b5a0-256bd3a08bcc"
+    },
+    {
+      "claim_id": "1a0c194e-73cc-40de-96e3-5d4c3e784edb",
+      "result_id": "270d503a-f4ed-4b15-b5a0-256bd3a08bcc"
+    },
+    {
+      "claim_id": "5001bbeb-8bb3-46c5-a439-daf694060aef",
+      "result_id": "270d503a-f4ed-4b15-b5a0-256bd3a08bcc"
+    },
+    {
+      "claim_id": "ea924f16-a8d7-4c61-8e38-c95f11863e05",
+      "result_id": "270d503a-f4ed-4b15-b5a0-256bd3a08bcc"
+    },
+    {
+      "claim_id": "06289201-fc03-400a-bba7-82559a221fcf",
+      "result_id": "0a611d40-edd1-408f-9aa2-d1e48cebe7d4"
+    },
+    {
+      "claim_id": "7d0d4f4c-4c17-448c-b15b-b5f904451f8e",
+      "result_id": "0a611d40-edd1-408f-9aa2-d1e48cebe7d4"
+    },
+    {
+      "claim_id": "a5166f45-d41f-4274-8cf4-b51d21f5bbe9",
+      "result_id": "0a611d40-edd1-408f-9aa2-d1e48cebe7d4"
+    },
+    {
+      "claim_id": "61358169-a0ae-46c8-bd21-131affcea64c",
+      "result_id": "0a611d40-edd1-408f-9aa2-d1e48cebe7d4"
+    },
+    {
+      "claim_id": "50a38e83-32a3-4bab-a1cf-0e604cd22982",
+      "result_id": "0a611d40-edd1-408f-9aa2-d1e48cebe7d4"
+    },
+    {
+      "claim_id": "597b37fa-34c6-46ef-83e1-2f3e27337bb1",
+      "result_id": "0a611d40-edd1-408f-9aa2-d1e48cebe7d4"
+    },
+    {
+      "claim_id": "a3e5d9af-bd42-4881-89ed-0008cca6f95f",
+      "result_id": "d0bd8888-ffba-4107-bdb5-22a1920b6b33"
+    },
+    {
+      "claim_id": "b7f1c36e-a7ad-45c4-ac7a-a22bd6507998",
+      "result_id": "d0bd8888-ffba-4107-bdb5-22a1920b6b33"
+    },
+    {
+      "claim_id": "07114f73-a29f-4321-ad0a-51b1a1e847fb",
+      "result_id": "174ba95e-8d4d-4609-9d2a-06d741cfcfc2"
+    },
+    {
+      "claim_id": "d0d300cc-2766-4bae-be52-541521b52c54",
+      "result_id": "174ba95e-8d4d-4609-9d2a-06d741cfcfc2"
+    },
+    {
+      "claim_id": "5447b308-43b7-4863-b8c5-1206f7aa489c",
+      "result_id": "174ba95e-8d4d-4609-9d2a-06d741cfcfc2"
+    },
+    {
+      "claim_id": "e6077009-0819-4305-b327-306088ac4ccf",
+      "result_id": "06839e2c-4186-4e9a-a378-7b10e6ecb8c8"
+    },
+    {
+      "claim_id": "e31c6023-0bf9-45c4-a54f-c54f5144d88e",
+      "result_id": "06839e2c-4186-4e9a-a378-7b10e6ecb8c8"
+    },
+    {
+      "claim_id": "fd1f7a39-f63a-4ab5-bd9e-a96842771c08",
+      "result_id": "06839e2c-4186-4e9a-a378-7b10e6ecb8c8"
+    },
+    {
+      "claim_id": "d2fd0dc8-518f-4b38-aa60-edae95d98bf3",
+      "result_id": "06839e2c-4186-4e9a-a378-7b10e6ecb8c8"
+    },
+    {
+      "claim_id": "fe3f9710-78f0-4f8f-b910-0bc01634043d",
+      "result_id": "06839e2c-4186-4e9a-a378-7b10e6ecb8c8"
+    },
+    {
+      "claim_id": "250197b4-847b-49ce-a6d1-4ddca3558a1e",
+      "result_id": "7773a935-3a99-460f-810e-752710dc98fe"
+    },
+    {
+      "claim_id": "b5120cbc-1f62-42bc-9e85-6581ede4c590",
+      "result_id": "7773a935-3a99-460f-810e-752710dc98fe"
+    },
+    {
+      "claim_id": "69aa6c44-677b-4d49-a022-6fe4e19cd1e0",
+      "result_id": "7773a935-3a99-460f-810e-752710dc98fe"
+    },
+    {
+      "claim_id": "d28a8226-1f65-4d8f-ab41-1eed31c483f8",
+      "result_id": "7773a935-3a99-460f-810e-752710dc98fe"
+    },
+    {
+      "claim_id": "d3e2ed00-851a-42c3-bcfa-b07641b8c58e",
+      "result_id": "7773a935-3a99-460f-810e-752710dc98fe"
+    },
+    {
+      "claim_id": "2e38fdcf-4b6e-4d91-ae9d-f1f05a91abc2",
+      "result_id": "7773a935-3a99-460f-810e-752710dc98fe"
+    },
+    {
+      "claim_id": "d9ebfad4-6b9c-4986-9cb6-0a0a9ef2f023",
+      "result_id": "7773a935-3a99-460f-810e-752710dc98fe"
+    },
+    {
+      "claim_id": "b4579922-82b8-406e-b722-20d7b97922d4",
+      "result_id": "7773a935-3a99-460f-810e-752710dc98fe"
+    },
+    {
+      "claim_id": "40041e2f-ffff-45bc-9174-0c44827292d5",
+      "result_id": "7773a935-3a99-460f-810e-752710dc98fe"
+    },
+    {
+      "claim_id": "8423b77f-d924-4a18-93d6-f3cb04b0fa70",
+      "result_id": "7773a935-3a99-460f-810e-752710dc98fe"
+    }
+  ],
+  "comparisons": []
+}

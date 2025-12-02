@@ -1,0 +1,386 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Phosphoproteomic analysis of bovine retinas identified three phosphorylation sites in IMPDH1: Thr159/Ser160 (light-preferential, p=0.03), Ser416 (no light/dark difference, p=0.08), and Ser477 (dark-preferential, p=0.19). All phosphorylated residues are conserved in mammalian IMPDHs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are supported by mass spectrometry data from phosphoproteomic analysis with appropriate biological replicates (n=3 per condition). The statistical significance is marginal for Thr159/Ser160 (p=0.03) and not significant for Ser477 (p=0.19), but the technical quality of the MS data and conservation analysis provide converging evidence. The light preference for Thr159/Ser160 is the most robust finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "In vivo metabolic labeling with 32P showed that the 603/604aa retinal-specific IMPDH1 isoform is extensively phosphorylated (~60-70% of total protein) in both dark and light conditions, with monophosphorylated forms predominating over diphosphorylated forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 are supported by 32P metabolic labeling and isoelectrofocusing data. The quantification shows high phosphorylation levels in both conditions, though the statistical analysis shows no significant difference between dark and light (C8, p>0.18). The IEF data clearly demonstrates the presence and relative abundance of phosphorylated species, supporting the claim of ~60-70% phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The S416D phosphomimetic mutation significantly reduces IMPDH1 catalytic activity by increasing Km for IMP and decreasing Vmax, with the strongest effect in the hIMPDH1\u03b1 (546aa) splice variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by Michaelis-Menten kinetic analysis with purified recombinant proteins. The data show clear effects on both Km and Vmax parameters across multiple splice variants. However, since Ser416 phosphorylation shows no light/dark preference (C4), the physiological relevance to light adaptation is questionable, as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "The S477D phosphomimetic mutation does not affect IMPDH1 catalytic activity or GTP allosteric regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by enzymatic assay data showing no effect on kinetics or allosteric regulation. This negative result is important for interpreting the functional significance of Ser477 phosphorylation, which may have other regulatory roles (e.g., filament assembly/disassembly).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C54",
+      "C58",
+      "C80"
+    ],
+    "result": "Phosphorylation at Thr159/Ser160 desensitizes IMPDH1 to GDP/GTP allosteric inhibition, increasing the K1/2 for GDP/GTP by approximately 5-fold in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C54, C58, and C80 are strongly supported by enzymatic assays with phosphomimetic mutants (T159D/E, S160D/E) showing ~5-fold increases in K1/2 values for both GDP and GTP. This is a key mechanistic finding linking phosphorylation to enzyme regulation. The data are robust with appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C64",
+      "C65"
+    ],
+    "result": "GTP levels in the retina are equimolar or higher than ATP levels in both dark and light conditions, which is unusual compared to most cell types where ATP:GTP ratios are 3:1 to 5:1. Both AMP and GMP levels increase with light exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C64-C65 are supported by HPLC nucleotide measurements with appropriate biological replicates (n=4). The finding of equimolar or higher GTP:ATP ratios is consistent with cited literature on photoreceptor cells. The increase in AMP and GMP with light is statistically significant and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C69"
+    ],
+    "result": "Exposure of living mice to bright light (1600 lux) causes reversible, time-dependent accumulation of IMPDH1 aggregates at the rod outer segment layer without changes in total IMPDH1 protein levels, indicating protein translocation rather than transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C69 are supported by immunofluorescence microscopy with quantitative image analysis showing statistically significant increases in aggregate size and number (p<0.0001). The reversibility upon dark adaptation and lack of protein level changes (immunoblot data) support the translocation interpretation. Multiple independent experiments strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C55",
+      "C59"
+    ],
+    "result": "Metabolic flux analysis using 13C2,15N-glycine shows that bright light exposure increases the global flux through de novo purine nucleotide synthesis, with significant increases in labeled IMP, AMP, and GMP (p<0.02 for all), while IMP levels nearly double.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26, C55, and C59 are supported by LC-MS/MS metabolic flux analysis with appropriate biological replicates (n\u22657). The incorporation of labeled glycine into purine nucleotides provides direct evidence of increased de novo synthesis. The statistical significance is robust (p<0.02 for all labeled nucleotides). This is a key finding demonstrating increased metabolic flux with light.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C56",
+      "C60"
+    ],
+    "result": "Pharmacological inhibition of IMPDH activity with benzamide riboside or mycophenolate mofetil causes a modest but statistically significant delay in rod mass response recovery (p<0.005 at multiple time points) without affecting the amplitude of the test flash, indicating that de novo GTP synthesis contributes to recovery but not to phototransduction activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C56, and C60 are supported by paired-flash ERG recordings with appropriate controls (contralateral eye injection). The statistical analysis shows significant effects at multiple interstimulus intervals (p<0.005). The lack of effect on test flash amplitude (C28) is an important control. The effect size is modest but consistent across two different inhibitors, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C73",
+      "C74"
+    ],
+    "result": "PKC\u03b1 specifically phosphorylates IMPDH1 at Thr159 and Ser160 in vitro, and is likely the kinase responsible for this phosphorylation in vivo, as demonstrated by in vitro kinase assays and the effect of PKC inhibition on retinal GTP levels and rod recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C73, and C74 are supported by in vitro phosphorylation assays showing PKC\u03b1 specificity for Thr159/Ser160 among multiple kinases tested. The in vivo relevance is supported by PKC inhibitor experiments showing decreased GTP levels with light (C31, p=0.007) and delayed rod recovery (C32). However, the claim that PKC is 'the' kinase (C74) is somewhat overstated as other PKC isoforms or kinases were not exhaustively tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Treatment with the PKC inhibitor bisindolylmaleimide substantially decreases retinal GTP levels upon light exposure (p=0.007) and delays rod mass recovery similar to IMPDH inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by HPLC nucleotide measurements (n=3, p=0.007) and ERG recordings showing effects similar to direct IMPDH inhibition. This provides functional evidence linking PKC activity to IMPDH1 regulation in vivo. The consistency between biochemical and electrophysiological data strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C76"
+    ],
+    "result": "Disease-associated mutations N198K and R224P reduce PKC\u03b1-mediated phosphorylation of IMPDH1 (p<0.004), while H372P increases phosphorylation (p=0.0013), suggesting that H372P indirectly causes GDP/GTP desensitization through enhanced phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 and C76 are supported by in vitro phosphorylation assays with disease mutants showing statistically significant effects (n=3 independent experiments). The interpretation that H372P causes indirect desensitization through enhanced phosphorylation (C76) is a reasonable inference but remains speculative without direct demonstration of altered allosteric regulation in the H372P mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The phosphorylation sites map to functionally important regions: Thr159/Ser160 are in CBS motif 1 of the Bateman domain near disease mutations and directly involved in purine nucleotide binding; Ser416 is in the mobile flap required for catalysis; Ser477 is at the C-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by structural data (Figure 2C-E) and cited literature on IMPDH structure-function relationships. The mapping of phosphorylation sites to functionally relevant regions provides important context for interpreting their regulatory roles. The structural analysis is consistent with the functional effects observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "IMPDH1 cytoophidia are not visible in retinas under standard light/dark cycles but can be induced by mycophenolic acid treatment, forming at the outer nuclear and inner segment layers rather than the outer segment layer where light-induced aggregates form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by immunofluorescence microscopy showing MPA-induced cytoophidia formation with quantification (p<0.0001). The differential localization (inner layers for MPA vs. outer segment for light) is an important observation suggesting different mechanisms or functional contexts for aggregate formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Guanine nucleotide levels in whole retinal extracts largely reflect photoreceptor cell content, as cGMP and GTP levels are reduced to <20% in retinas lacking photoreceptors (rd1 mice).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by cited literature (Du et al., 2016) on nucleotide levels in rd1 mice. This is an important methodological consideration validating the use of whole retinal extracts for assessing photoreceptor nucleotide metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Benzamide riboside and mycophenolate mofetil are reversible noncompetitive IMPDH inhibitors that cause characteristic SDS-PAGE mobility shifts upon binding to IMPDH1 in retinas 20 minutes after intravitreal injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by established knowledge about these inhibitors and SDS-PAGE data (Figure 8G) showing mobility shifts. This validates that the drugs reached their target in vivo, which is an important control for the ERG experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors propose a model where light triggers PKC\u03b1 activation, which phosphorylates IMPDH1 at Thr159/Ser160, desensitizing the enzyme to GDP/GTP inhibition and adjusting de novo GTP synthesis to illumination conditions. In darkness, IMPDH1 remains sensitive to GDP/GTP allosteric control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C78-C80 represent the proposed regulatory model, which is well-supported by the combined experimental evidence: light-dependent phosphorylation (C3), PKC\u03b1 specificity (C30), desensitization to GDP/GTP by phosphomimetic mutants (C15), increased metabolic flux with light (C25), and functional effects of IMPDH/PKC inhibition (C27, C32). The model integrates multiple lines of evidence coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors propose that depletion of guanine nucleotides and high IMP levels promote IMPDH1 filament formation, which leads to the observed accumulation of aggregates at the outer segment layer during bright light exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C83 combine cited structural studies (C81) with the authors' observations of IMP increases (C24) and aggregate formation (C18) to propose a mechanism. While the correlation is suggestive, direct evidence that the observed aggregates are filaments with the predicted structural properties is lacking. The speculation (C83) is reasonable but requires validation by electron microscopy or other structural methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors conclude that de novo GTP synthesis is required to sustain the GTP pool during light exposure to support increased GTP consumption by transducin GTPase and cGMP synthesis, contributing to cGMP replenishment during recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C85-C86, C88-C90 represent integrated conclusions supported by multiple lines of evidence: increased metabolic flux (C25), aggregate localization at outer segments (C18), and delayed recovery with IMPDH inhibition (C27). The interpretation that GTP demand is due to phototransduction (C88) is a reasonable inference from the outer segment localization. The conclusion is well-supported though some elements involve inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors propose that IMPDH1 mutations cause retinal dystrophies by disrupting GDP/GTP allosteric regulation, either directly (most mutations) or indirectly through altered phosphorylation (H372P), potentially leading to abnormally high activity or irreversible filament formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77, C96-C98 represent the proposed disease mechanism. While C98 is supported by cited biochemical studies, the pathogenic mechanisms proposed in C77, C96-C97 are speculative. The model is plausible and consistent with the data, but lacks direct experimental validation in disease models. The speculation about irreversible filament formation (C96-C97) is reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "IMPDH1 regulation is likely part of a coordinated regulation of the entire purine synthesis pathway involving other metabolic enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is a reasonable speculation given that the entire pathway flux increases (C26), but no direct evidence for coordinated regulation of other enzymes is provided. This represents an important direction for future work but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Retinal GTP levels are maintained during light exposure in living mice or in situ retinas with metabolic support, while isolated preparations show GTP decreases, suggesting the importance of metabolic support for maintaining nucleotide pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by the authors' HPLC data and cited literature comparing different experimental systems. This is an important methodological consideration explaining discrepancies in the literature and supporting the physiological relevance of the authors' findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Impdh1-/- mice show only slowly progressive retinal degeneration with maintained structure but gradually diminished ERG responses from normal at 5 months to nearly extinguished at 13 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are based on cited literature (Aherne et al., 2004) describing the Impdh1 knockout phenotype. This is relevant context for interpreting the proposed gain-of-function nature of disease mutations, though the authors acknowledge potential compensatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Abnormally high IMPDH1 activity could result in abnormally high cGMP synthesis, a known cause of photoreceptor damage, or cause ATP/GTP imbalance in darkness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is speculative, based on cited literature about cGMP toxicity but without direct experimental evidence. This represents a plausible hypothesis for disease mechanism but requires validation in appropriate models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Background information on IMPDH1 mutations, enzyme function, and regulation based on established knowledge and cited literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C53 represent background information from the introduction, supported by appropriate citations. These provide essential context for the study but are not novel findings. The information is accurately presented and properly attributed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "IMPDH1 filament formation in T cells is triggered by NFAT or mTOR signaling and serves to increase guanine nucleotide levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is based on cited literature (Duong-Ly et al., 2018b) and provides relevant context for interpreting IMPDH1 aggregate formation in the retina. This supports the general concept that filament formation is a regulated response to increased GTP demand.",
+    "result_type": "MINOR"
+  }
+]

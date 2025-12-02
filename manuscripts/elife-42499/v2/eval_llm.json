@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "MAP-C is a novel method that enables simultaneous characterization of hundreds of cis or trans-acting mutations on a chromosomal contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 describes the core methodological innovation of the manuscript. The method is demonstrated through multiple experimental applications (cis and trans MAP-C screens) throughout the Results section, with detailed protocols provided in Materials and Methods. The capability to test hundreds of mutations simultaneously is validated by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Three transcription factors (Leu3, Sdd4, and Rgt1) mediate inducible interchromosomal pairing between HAS1pr-TDA1pr alleles in saturated cultures, with their coincident binding being strongest at this locus and specific to saturated conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 represent the primary biological finding of the manuscript. These are supported by convergent evidence from cis MAP-C (C44-C49), trans MAP-C (C50-C53), ChIP-qPCR (C54-C55), and ChIP-seq (C56-C58) experiments. The condition-specificity is demonstrated through comparative analysis between exponential and saturated growth conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A ~150 bp minimal pairing region is necessary and sufficient for HAS1pr-TDA1pr interchromosomal pairing, containing six clusters of positions required for pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by cis MAP-C experiments using tiling subsequences (Figure 1B) and error-prone PCR mutagenesis (Figure 1D). The sufficiency is demonstrated by ectopic insertion experiments showing >30-fold increase in pairing (C45, Figure 1C). The necessity is shown by depletion of specific substitutions in 3C libraries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The six clusters of positions required for pairing align to binding motifs for Leu3, Sdd4/Mig1, and Rgt1 transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 connect the cis-regulatory requirements to specific transcription factors through motif analysis. The alignment of depleted positions to known TF motifs (Figures 1E-I) provides strong evidence. This is further validated by the trans MAP-C results showing these same TFs are required for pairing (C50-C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C53"
+    ],
+    "result": "Trans MAP-C screens identify Leu3, Rgt1, and Sdd4 as required for HAS1pr-TDA1pr pairing, with deletions causing 4-20 fold decreases in pairing strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C53 are supported by trans MAP-C experimental data (Figure 2B-C). The pilot screen identified RGT1 (~20-fold decrease), the full screen confirmed LEU3 and RGT1 (~4-fold depletion), and the validation screen confirmed SDD4. The quantitative effects are consistently measured across replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Leu3, Sdd4, and Rgt1 bind strongly to HAS1pr-TDA1pr in saturated conditions but show minimal binding during exponential growth, demonstrating condition-specific binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by both ChIP-qPCR (Figure 2D-E) and ChIP-seq (Figure 2F) data. The condition-specificity is quantified: all three TFs show robust binding in saturated conditions, while only Leu3 shows a significant (but 20-fold weaker) peak in exponential growth. Technical replicates support reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "TDA1pr exhibits the strongest combinatorial TF binding among loci with all three motifs; HXT3pr also shows weaker inducible pairing; pairing is sequence-specific beyond simple presence of TF binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by genome-wide motif cluster analysis combined with ChIP-seq (Figure 3A-C) and Hi-C data (Figure 3D-E). TDA1pr shows highest combined ChIP signal; HXT3pr shows 1.6-2.7-fold increased interactions in saturated conditions. The lack of cross-pairing between HAS1pr-TDA1pr and HXT3pr (C62) supports sequence-specificity (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "RGT1 and SDD4 are upregulated ~2-fold and ~6-fold respectively in saturated cultures, while LEU3 transcript levels remain constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by RNA-seq data (Figure 4A) with statistical significance indicated (p<0.01 for RGT1, p<0.001 for SDD4). Biological triplicates are used. This provides one mechanism for condition-specific pairing regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Individual overexpression of Leu3, Sdd4, or Rgt1 is not sufficient to produce pairing in non-saturated culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by estradiol induction experiments (Figure 4B, Figure 4\u2014figure supplement 1A) showing no increase in pairing despite 2-10-fold increases in transcript levels. This suggests combinatorial requirements or additional regulatory mechanisms beyond TF abundance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Deletion of TUP1 or SSN6 increases pairing, indicating that the Tup1/Ssn6 co-repressor complex inhibits pairing, while deletion of MTH1 or STD1 has minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by trans MAP-C data (Figure 4C). The increased pairing upon TUP1/SSN6 deletion is consistent with known inhibition of Rgt1 DNA binding by this complex. The minimal effect of MTH1/STD1 deletion suggests these known Rgt1 interactors are not essential for pairing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Much of the C-terminal half of Rgt1 is required for pairing, with required regions aligning to predicted structured domains (alpha helices).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by trans MAP-C with 10 amino acid deletion scan of Rgt1 (Figure 4D). The alignment with predicted secondary structure provides mechanistic insight. However, the structural predictions are computational and not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Deletion of Rgt1's zinc finger or C-terminal domain abolishes pairing, deletion of the Q/N-rich domain increases pairing, and phosphorylation site mutations (S88A, S758A) have weak effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by trans MAP-C with Rgt1 domain deletions and point mutations (Figure 4F). The unexpected finding that Q/N-rich domain deletion increases pairing (C75-C76) suggests this domain inhibits pairing, distinguishing pairing from phase separation mechanisms. Multiple barcoded replicates support reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Leu3, Sdd4, and Rgt1 do not play major roles in transcriptional regulation of HAS1 or TDA1 in saturated conditions; only Rgt1 shows minor cis-repression of TDA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by RNA-seq experiments with TF binding site mutations (Figure 5B-C) and TF deletion strains (Figure 5D). The lack of major transcriptional effects despite strong binding and pairing requirement suggests pairing may have alternative functions or subtle regulatory roles not detected by steady-state RNA-seq. Biological triplicates and statistical testing support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "HAS1pr-TDA1pr pairing requires the structured regulatory domain of Rgt1 but not known interaction partners of Rgt1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are supported by the Rgt1 domain analysis (C71-C77) and interaction partner deletion experiments (C68-C70). The structured C-terminal domain is required (C73-C74), while known interactors like Mth1/Std1 are not essential (C70), and Tup1/Ssn6 actually inhibit pairing (C68-C69). This suggests a direct role for Rgt1 structure in mediating pairing.",
+    "result_type": "MAJOR"
+  }
+]

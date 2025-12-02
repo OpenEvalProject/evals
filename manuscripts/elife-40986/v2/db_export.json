@@ -1,0 +1,1610 @@
+{
+  "submission": {
+    "id": "1648749a-c394-459e-a8b6-edb20b7bb50c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T07:42:26.516473Z",
+    "updated_at": "2025-12-02T07:42:26.516473Z"
+  },
+  "content": [
+    {
+      "id": "417c6633-4028-4320-9910-baf061fa6261",
+      "submission_id": "1648749a-c394-459e-a8b6-edb20b7bb50c",
+      "content_type": "manuscript",
+      "content_text": "# Spatial control of neuronal metabolism through glucose-mediated mitochondrial transport regulation\n\n## Authors\n\n- Anamika Agrawal<sup>1</sup> ([ORCID: 0000-0002-1213-2321](https://orcid.org/0000-0002-1213-2321))\n- Gulcin Pekkurnaz<sup>2</sup> \u2020\n- Elena F Koslover<sup>1</sup> ([ORCID: 0000-0003-4139-9209](https://orcid.org/0000-0003-4139-9209)) \u2020\n\n### Affiliations\n\n1. Department of Physics University of California, San Diego San Diego United States\n2. Section of Neurobiology, Division of Biological Sciences University of California, San Diego San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEukaryotic cells modulate their metabolism by organizing metabolic components in response to varying nutrient availability and energy demands. In rat axons, mitochondria respond to glucose levels by halting active transport in high glucose regions. We employ quantitative modeling to explore physical limits on spatial organization of mitochondria and localized metabolic enhancement through regulated stopping of processive motion. We delineate the role of key parameters, including cellular glucose uptake and consumption rates, that are expected to modulate mitochondrial distribution and metabolic response in spatially varying glucose conditions. Our estimates indicate that physiological brain glucose levels fall within the limited range necessary for metabolic enhancement. Hence mitochondrial localization is shown to be a plausible regulatory mechanism for neuronal metabolic flexibility in the presence of spatially heterogeneous glucose, as may occur in long processes of projection neurons. These findings provide a framework for the control of cellular bioenergetics through organelle trafficking.\n\n## Introduction\n\nCellular metabolism comprises an intricate system of reactions whose fine-tuned control is critical to cell health and function. A number of quantitative studies have focused on metabolic control through modulating reactant and enzyme concentrations and turnover rates (Grima and Schnell, 2006; Amar et al., 2008). However, these studies generally neglect the spatial organization of metabolic components within the cell. By localizing specific enzymes in regions of high metabolic demand (Laughton et al., 2007; Zecchin et al., 2015), as well as clustering together consecutively acting enzymes (O'Connell et al., 2012), cells have the potential to substantially enhance their metabolism.\n\nSpatial organization is particularly critical in highly extended cells, such as mammalian neurons, whose axons can grow to lengths on the meter scale. Metabolic demand in neurons is spatially and temporally heterogeneous, with especially rapid ATP turnover found in the presynaptic boutons (Rangaraju et al., 2014), and ATP requirements peaking during synaptic activity and neuronal firing (Shulman et al., 2004; Ferreira et al., 2011; Weisov\u00e1 et al., 2009). Neurons rely primarily on glucose as the energy source for meeting these metabolic demands (Peppiatt and Attwell, 2004). Due to the long lengths of neural processes, the glucose supply can vary substantially over different regions of the cell (Ferreira et al., 2011; Weisov\u00e1 et al., 2009; Hall et al., 2012). In myelinated neurons, for instance, it has been speculated that glucose transport into the cell is localized primarily to narrow regions around the nodes of Ranvier (Magnani et al., 1996; Harris and Attwell, 2012; Rosenbluth, 2009), which can be spaced hundreds of microns apart (Ibrahim et al., 1995; Butt et al., 1998). Glucose transporters in neurons have also been shown to dynamically mobilize to active synapses, providing a source of intracellular glucose heterogeneity (Ashrafi et al., 2017). Furthermore, varying levels of activity in the mammalian brain may lead to varying extracellular glucose levels, resulting in spatially heterogeneous nutrient access (Hawkins et al., 1979).\u00a0Individual axons have been shown to span across multiple regions of the brain (Matsuda et al., 2009), enabling them to encounter regions with different glucose concentrations.\n\nMost ATP production in neurons occurs within mitochondria: motile organelles that range from interconnected networks to individual globular structures that extend throughout the cell. As energy powerhouses and metabolic signaling centers of the cell, mitochondria are critical for neuronal health (Nunnari and Suomalainen, 2012). Their spatial organization within the neuron plays a pivotal role in growth and cell physiology (Li et al., 2004). Defects in mitochondrial transport are involved in the pathologies of several neurological disorders such as peripheral neuropathy and Charcot-Marie-Tooth disease (Baloh, 2008; Baloh et al., 2007).\n\nA number of studies have shown that mitochondria are localized preferentially to regions of high metabolic demand, such as the synaptic terminals (Li et al., 2004; Chang and Reynolds, 2006). Such localization can occur via several molecular mechanisms, mediated by the Miro-Milton mitochondrial motor adaptor complex that links mitochondria to the molecular motors responsible for transport (Mishra and Chan, 2016). Increased Ca2+ levels at active synapses lead to loading of calcium binding sites on Miro, releasing mitochondria from the microtubule and thereby halting transport (Wang and Schwarz, 2009; Macaskill et al., 2009). High glucose levels can also lead to stalling, through the glycosylation of motor adaptor protein Milton by the glucose-activated enzyme O-GlcNAc transferase (OGT) (Pekkurnaz et al., 2014). This mechanism has been shown to lead to mitochondrial accumulation at glucose-rich regions in cultured neurons (Pekkurnaz et al., 2014). It is postulated to regulate mitochondrial spatial distribution, allowing efficient metabolic response to heterogeneous glucose availability.\n\nMitochondrial positioning relies on an interplay between heterogeneously distributed diffusive signaling molecules (such as Ca2+ and glucose), their consumption through metabolic and other pathways, and their effect on motor transport kinetics. While the biochemical mechanisms and physiological consequences of mitochondrial localization have been a topic of much interest in recent years (MacAskill and Kittler, 2010; Mishra and Chan, 2016), no quantitative framework for this phenomenon has yet been developed.\n\nIn this work we focus on glucose-mediated regulation of mitochondrial transport, developing quantitative models to examine the consequences of this phenomenon for metabolism under spatially varying glucose conditions. Our approach relies on a reaction-diffusion formalism, which describes the behavior of species subject to both consumption and diffusion. Reaction-diffusion systems have been applied to describe the spatial organization of a broad array of cellular processes (Kondo and Miura, 2010), ranging from protein oscillations in E. coli (Howard et al., 2001), to coordination of mitotic signalling (Chang and Ferrell, 2013), to pattern formation in developing embryos (Bunow et al., 1980; Gregor et al., 2005). The response of actively moving particles to spatially heterogeneous, diffusive regulators has also been extensively investigated in the context of chemotaxis (Van Haastert and Devreotes, 2004). In contrast to most chemotactic cells, however, mitochondria have no currently known mechanism for directly sensing glucose gradients. Instead, they are expected to accumulate in response to local glucose concentration only. Our goal is to delineate the regimes in which such a crude form of chemotaxis can lead to substantial spatial organization and enhancement of metabolism.\n\nSpecifically, we model the modulation of mitochondrial density with glucose concentration in a tubular axonal region, focusing on two forms of spatial heterogeneity. In one case, we consider an axonal domain between two localized regions of glucose entry, representing the internodal region between nodes of Ranvier in myelinated neurons (Figure 1a). The second case focuses on an unmyelinated cellular region with continuous glucose permeability, embedded in an external glucose gradient (Figure 1b). In both cases, we show that mitochondrial accumulation and enhanced metabolic flux is expected to occur over a limited range of glucose concentrations, which overlaps with physiological brain glucose levels. Our simplified quantitative model allows identification of a handful of key parameters that govern the extent to which glucose-mediated mitochondrial halting can modulate metabolism. We establish the region of parameter space where this mechanism has a substantial effect, and highlight its potential importance in neuronal metabolic flexibility and ability to respond to spatially varying glucose.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/40986/elife-40986-fig1-v2.jpg)\n\n**Figure 1.:** (a) Myelinated axonal region, with glucose entry localized at the nodes of Ranvier. Mitochondria accumulate at nodes due to the higher glucose concentration (b) Unmyelinated axonal region, subject to a linear glucose gradient. Glucose permeability is uniform throughout, with mitochondrial accumulation occuring at the region of high external glucose (c) Key steps of the metabolic pathway linking glucose availability and mitochondrial halting. (d) Mitochondrial transport states and rates of transition between them ($W_{\\pm}$ represents retrograde and anterograde motion, $S$ represents the stationary state).\n\n## Results\n\n### Minimal model for mitochondrial and glucose dynamics\n\nWe begin by formulating a quantitative model to describe the spatial localization of mitochondria that halt in a glucose-dependent manner, in the presence of localized sources of glucose. This situation arises in myelinated neurons, which have glucose transporters enriched at the nodes of Ranvier, leading to highly localized sources of glucose spaced hundreds of micrometers apart within the cell (Saab et al., 2013).\n\nNeuronal glucose transporters are known to be bidirectional (Simpson et al., 2007), allowing glucose concentration within the cell to equilibrate with external glucose. For simplicity, we assume rapid transport of glucose through these transporters, so that the internal concentration of glucose at the nodes where transporters are present is assumed to be fixed. The cellular region between two glucose sources is modeled as a one-dimensional interval of length L with glucose concentration fixed to a value c0 at the interval boundaries (Figure 1a). Glucose diffuses throughout this interval with diffusivity D, while being metabolized by hexokinase enzyme in the first step of mammalian glucose utilization (Figure 1c) (Wilson, 2003).\n\nThe concentration of glucose is thus governed by the reaction-diffusion equation,\n\n$$\n\\frac{dG}{dt}=D\\frac{\u2202^{2}G}{\u2202x^{2}}\u2212k(x)G(x)\n$$\n\nwhere $k\u2062(x)$ describes the spatial distribution of the hexokinase enzyme as well as the rate of consumption. In the case of spatially uniform, linear consumption [$k\u2062(x)=k$, a constant] this equation can be solved directly, yielding a distribution of glucose that falls exponentially from each source boundary, with a decay length $\\lambda=\\sqrt{D/k}$ (Kholodenko, 2006).\n\nHexokinase 1 (HK1), the predominant form of hexokinase expressed in neurons, is known to localize preferentially to mitochondria (John et al., 2011), which in mammalian axons can form individual organelles approximately 1\u00a0\u00b5m in length (Fawcett, 1981). We carry out numerical simulations of Equation 1 where consumption is limited to locations of individual discrete mitochondria, represented by short intervals of length $\u0394$. Specifically, we define the mitochondria density as $M\u2062(x)=n\u2062(x)/(\\pi\u2062r^{2}\u2062\u0394)$, where $n\u2062(x)$ is the number of mitochondria overlapping position $x$, and $r$ is the axon radius. The phosphorylation of glucose by mitochondrial hexokinase is assumed to follow Michaelis-Menten kinetics, described by\n\n$$\nk(x)=\\frac{k_{g}M(x)}{G(x)+K_{M}}\n$$\n\nwhere $K_{M}$ is the saturation constant and kg is the turnover rate of glucose (per unit time per mitochondrion). The turnover rate kg incorporates both the catalytic rate of hexokinase and the number of hexokinase enzymes per mitochondrion. This expression reduces to the case of constant linear consumption when glucose concentration is low ($G\u226aK_{M}$) and mitochondria are uniformly distributed throughout the region.\n\nIn general, glucose consumption depends on the location of mitochondria within the domain. Mitochondrial distribution in neurons is known to be mediated through regulation of their motor-driven motility (Chang and Reynolds, 2006; Pekkurnaz et al., 2014). Individual mitochondria switch between processively moving and paused states, modulated by the interplay between kinesin and dynein motors and the adaptor proteins that link these motors to the mitochondria (Schwarz, 2013). In our model, we simulate mitochondria as stochastically switching between a processive walking state that moves in either direction with velocity $v$ and a stationary state. The rate of initiating a walk (kw) is assumed to be constant, while the halting rate ($k_{s}\u2062(x)$) can be spatially heterogeneous. For simplicity, we assume the mitochondria are equally likely to move in the positive (+) or negative (-) direction each time they initiate a processive walk (Figure 1b).\n\nIt has recently been demonstrated that the key motor adaptor protein (Milton) is sensitive to glucose levels, halting mitochondrial motility when it is modified through O-GlcNAcylation by the OGT enzyme (Pekkurnaz et al., 2014). Our model employs a highly simplified description of mitochondrial dynamics, which assumes that all pauses are associated with such an O-GlcNAcylation event. Recovery from the pause at the constant rate kw corresponds to removal of the modification through the activity of the complementary enzyme O-GlcNAcase (OGA). Although there is evidence indicating long-term glucose deprivation can reduce OGA expression (Zou et al., 2012), for simplicity we assume in our model that OGA activity is independent of glucose levels. In vivo axonal mitochondria have been observed to undergo short-lived sporadic pausing while continuing to move processively in their previous anterograde or retrograde direction (Russo et al., 2009; Wang and Schwarz, 2009). Such pauses are subsumed into an effective processive velocity $v$ in our model. Other sources of pausing, such as Ca2+-regulated motor disengagement, PINK1/Parkin-mediated detachment of motors, and anchoring to the microtubules by syntaphilin (Schwarz, 2013), are not considered here in order to focus specifically on the effect of glucose-dependent mitochondrial spatial organization.\n\nUpon entry into the cell, the first rate-limiting step of glucose metabolism is its conversion into glucose-6-phosphate by hexokinase. Further downstream metabolic pathways split, with much of the flux going to glycolysis while a small fraction is funneled into the pentose phosphate pathway and the hexosamine biosynthetic pathway (HBP). The HBP produces UDP-GlcNAc, the sugar substrate for O-GlcNAcylation (Figure 1c) (Hart et al., 2011). In our model, we assume that the rate of UDP-GlcNAc production equals the rate of glucose conversion by hexokinase, scaled by the fraction of G6P that is channeled into the hexosamine biosynthetic pathway. This assumption is valid if, at each point of pathway branching, the Michaelis-Menten saturation constants for the two branches are similar. This in fact appears to be the case for both the branching of the pentose phosphate pathway and glycolysis from the hexosamine biosynthetic pathway which is the focus of this work (see Appendix 2).\u00a0Consequently, saturation of the initial glucose conversion step will imply saturation of the entire hexosamine biosynthetic pathway. We therefore model the kinetics of Milton modification using the same Michaelis-Menten form as for hexokinase activity, with the pathway flux leading to Milton modification subsumed within a rate constant for mitochondrial stopping (ks).\n\nWe note that the subcellular organization of the intermediates in the conversion from glucose into O-GlcNAcylated Milton is largely unknown. In our model, we make the extreme case assumption that all intermediates are localized to mitochondria, with only the initial glucose substrate capable of diffusing through the cytoplasm. We note that cytoplasmic diffusion of any of the pathway intermediates would attenuate the effect on mitochondrial localization. Our simplified model thus gives an upper limit on the extent to which mitochondria can localize at high glucose regions through the Milton modification mechanism. Following these simplified assumptions, we treat the kinetics of mitochondrial halting as dependent only on the local glucose concentration, according to the functional form\n\n$$\nk_{s}(x)=\\frac{k_{s}G(x)}{G(x)+K_{M}}\n$$\n\nwhere $K_{M}$ is the Michaelis-Menten constant of hexokinase.\n\nWe proceed to evolve the simulation forward in time, with glucose consumption localized to regions within $\\pm\u0394/2$ of each discrete mitochondrial position (details in Materials and methods). A snapshot of one simulation run is shown in Figure 2a, highlighting the accumulation of stationary mitochondria in the high glucose regions near the ends of the domain.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/40986/elife-40986-fig2-v2.jpg)\n\n**Figure 2.:** (a) Glucose distribution and positions of individual mitochondria (b) Normalized mitochondrial distribution, $M\u2062(x)/M\u00af$, obtained from simulating discrete mitochondrial motion (histogram compiled from 100 independent simulations), compared to numerical calculation of steady state continuous mitochondrial disribution (black curve).\u00a0Results shown are for parameter values: $\\lambda^=0.08$, $c_{0}^=1$, $k^_{s}=100$.\n\nWe are interested primarily in investigating the steady-state distribution of mitochondria and glucose in this system, averaged over all possible mitochondrial trajectories. We thus proceed to coarse-grain our model by treating the distribution of mitochondria as a continuous field $M\u2062(x)=W_{+}\u2062(x)+W_{-}\u2062(x)+S\u2062(x)$, where $W_{+}\u2062(x)$ is the distribution of mitochondria walking in the positive direction, $W_{-}\u2062(x)$ is the distribution of those walking in the negative direction, and $S\u2062(x)$ is the distribution of stationary mitochondria. We can then write down the coupled differential equations governing the behavior of the mitochondrial distributions as:\n\n$$\n\\frac{dW_{+}}{dt}=\u2212v\\frac{\u2202W_{+}}{\u2202x}\u2212k_{s}(x)W_{+}+\\frac{k_{w}S}{2}\\frac{dW_{\u2212}}{dt}=v\\frac{\u2202W_{\u2212}}{\u2202x}\u2212k_{s}(x)W_{\u2212}+\\frac{k_{w}S}{2}\\frac{dS}{dt}=k_{s}(x)[W_{+}+W_{\u2212}]\u2212k_{w}S.\n$$\n\nThe glucose distribution evolves according to Equation 1 with consumption rate $k\u2062(x)$ given by Equation 2. The boundary conditions at the ends of the domain are assumed to be reflective for the mitochondrial distributions, and to have a fixed glucose concentration $c_{0}$. The stationary state for this system can be calculated numerically (see Materials and methods). The formulation with a continuous mitochondrial density faithfully represents the behavior of simulations with discrete mitochondria, as illustrated in Figure 2b.\n\nThe steady-state spatial distribution of mitochondria and glucose in the continuous system depend on six parameters: $k_{s}/k_{w},K_{M},c_{0},D,L,k_{g}\u2062M\u00af$ where $M\u00af$ is the average mitochondrial density in the axon (number of mitochondria per unit volume) . Estimates of physiologically relevant values are provided in Table 1. Dimensional analysis indicates that three of these parameters can be used to define units of time, length, and glucose concentration, leaving three dimensionless groups. We choose to use the following three dimensionless parameters, each of which has an intuitive physical meaning:\n\n$$\n\\lambda^=\\sqrt{\\frac{DK_{M}}{k_{g}M\u00afL^{2}}},c^_{0}=\\frac{c_{0}}{K_{M}},k^_{s}=\\frac{k_{s}}{k_{w}}\n$$\n\nHere $\\lambda^$ is the length-scale of glucose decay relative to the domain length, $c^_{0}$ is the boundary glucose concentration relative to the saturation constant $K_{M}$, and $k^_{s}$ is the ratio of stopped to walking mitochondria at high glucose levels. We proceed to explore the steady-state distribution of mitochondria and glucose as a function of these three parameters.\n\n**Table 1.**\n Physiological parameter values estimated from published data.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Cytoplasmic glucose diffusivity</td>\n      <td>D</td>\n      <td>140\u00a0\u00b5m2/s</td>\n    </tr>\n    <tr>\n      <td>glucose turnover per mitochondrion</td>\n      <td>kg</td>\n      <td>1.3\u00a0\u00d7\u00a0105s\u22121</td>\n    </tr>\n    <tr>\n      <td>axon radius</td>\n      <td>r</td>\n      <td>0.4\u00a0\u00b5m</td>\n    </tr>\n    <tr>\n      <td>internodal distance</td>\n      <td>L</td>\n      <td>250\u00a0\u00b5m</td>\n    </tr>\n    <tr>\n      <td>mitochondrial density</td>\n      <td>M\u00af</td>\n      <td>0.3\u00a0\u00b5m\u22123</td>\n    </tr>\n    <tr>\n      <td>hexokinase Michaelis-Menten constant</td>\n      <td>KM</td>\n      <td>0.03\u00a0mM</td>\n    </tr>\n    <tr>\n      <td>brain glucose levels</td>\n      <td>c0</td>\n      <td>0.7\u00a0\u2212\u00a01.3\u00a0mM</td>\n    </tr>\n    <tr>\n      <td>ratio of stopped to moving mitochondria at high glucose</td>\n      <td>ks/kw</td>\n      <td>19</td>\n    </tr>\n    <tr>\n      <td>glucose permeability</td>\n      <td>P</td>\n      <td>20\u00a0nm/s</td>\n    </tr>\n    <tr>\n      <td>glucose transporter (GLUT3) Michaelis-Menten constant</td>\n      <td>KMP</td>\n      <td>3\u00a0mM</td>\n    </tr>\n  </tbody>\n</table>\n\n_Source: see Appendix 1 for details of parameter estimates._\n\n### Mitochondrial localization requires limited range of external glucose\n\nIn order for mitochondria to preferentially accumulate at the source of glucose via a glucose-dependent stopping mechanism, three criteria must be met. First, the glucose concentration needs to be higher at the source than in the bulk of the cell, as occurs when the decay length due to consumption is much smaller than the size of the domain ($\\lambda^\u226a1$). Second, if glucose levels become too high ($c^_{0}\u226b1$) then both glucose consumption rates and stopping rates of the mitochondria become saturated, leading to a flattening of glucose and mitochondrial distributions (Figure 3). There is thus an upper limit on the possible external glucose concentrations that will yield mitochondrial localization at the edges of the domain. Finally, the mitochondria must spend a substantial amount of time in the stationary state, since walking mitochondria will be broadly distributed throughout the domain. Because the stopping rate is itself dependent on the glucose concentration, this criterion implies that very low concentrations will also not allow mitochondrial localization. Figure 3 shows the distribution of glucose and mitochondria at different values of the external glucose $c^_{0}$, illustrating that accumulation of mitochondria at the edges requires intermediate glucose levels.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/40986/elife-40986-fig3-v2.jpg)\n\n**Figure 3.:** (a) Normalized mitochondrial distribution ($M\u2062(x)/M\u00af$), for different values of edge concentration $c_{0}^$. The curve with $c^_{0}=56$ illustrates the accumulation cutoff $A=0.2$. (b) Glucose distribution normalized by edge concentration ($G\u2062(x)/c_{0}$). The black dashed line in both panels indicates the analytical solution for the low glucose limit (Materials and methods, Equation 13). Source data provided in \u2018Figure 3\u2014source data 1\u2019.\n\nTo characterize the distribution of mitochondria along the interval, we introduce an accumulation metric $A$, defined by\n\n$$\nA=6\\sigma^{2}/L^{2}\u22120.5\n$$\n\nwhere $\\sigma^{2}$ is the variance in the mitochondrial distribution. This metric scales from $A=0$ for a uniform distribution to $A=1$ for two narrow peaks at the domain edges. Mitochondrial distributions with several different values of the accumulation metric are shown in Figure 3a.\u00a0We use a cutoff of $A=0.2$ to define distributions where the mitochondria are localized at the glucose source.\n\nWe explore the dependence of the mitochondrial accumulation on the three dimensionless parameters defining the behavior of the system: the stopping rate constant $k^_{s}$, the glucose decay length $\\lambda^$, and the external concentration $c^_{0}$. Because only the stopped mitochondria localize near the glucose sources, increasing the fraction of mitochondria in the stopped state (increased $k^_{s}$) inevitably raises the overall accumulation (Figure 4a). The fraction of mitochondria in the stopped state will depend on both $k^_{s}$ and the overall levels of glucose, as dictated by $c^_{0}$ (Figure 4b). Experimental measurements indicate that at high glucose concentrations, approximately 95% of mitochondria are in the stationary state (Pekkurnaz et al., 2014). We are thus interested primarily in the parameter regime of high stopping rates: $k^_{s}\u227310$. The limited range of concentrations that lead to mitochondrial accumulation at the edges of the domain can be seen in Figure 4a.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/40986/elife-40986-fig4-v2.jpg)\n\n**Figure 4.:** (a) Accumulation metric as a function of boundary glucose levels and mitochondrial stopping rate. (b) Fraction of mitochondria in the stopped state. Black dashed line indicates parameters corresponding to 95% stopped mitochondria. (c) Accumulation metric as a function of glucose levels $c^_{0}$ and decay length $\\lambda^$. (d) Phase diagram for mitochondrial accumulation, showing upper and lower concentration cutoffs for accumulation above the cutoff of $A_{cut}=0.2$. Dashed black line shows limit of high stopping rate $k^_{s}$. Dotted black line indicates estimate of $\\lambda^$ for physiological parameters, and corresponding upper concentration cutoff. Source data provided in \u2018Figure 4\u2014source datas 1\u20133\u2019.\n\nFor a high stopping rate ($k^_{s}=10$), we then calculate the mitochondrial accumulation as a function of the remaining two parameters: $\\lambda^,c^_{0}$. Here, again, we note that only intermediate glucose concentrations result in accumulation, with the range of concentrations becoming narrower as the decay length $\\lambda^$ becomes comparable to the domain size (Figure 4c). We can establish the concentration range within which substantial accumulation is expected, by setting a cutoff $A=0.2$ on the accumulation metric and calculating the resulting phase diagram (Figure 4d). Below the lower concentration cutoff, insufficient mitochondria are in the stationary state and so no localization is seen. This lower cutoff disappears in the limit of infinite $k^_{s}$. At intermediate concentrations, mitochondria are localized near the domain edges. Above the upper concentration cutoff, no localization is observed due to saturation of the Michaelis-Menten kinetics.\n\nUsing empirically derived approximations for the rate of glucose consumption by mitochondria and the diffusivity of glucose in cytoplasm (see Table 1), we estimate the decay length parameter as $\\lambda^\u22480.03$. The mitochondria are then expected to localize near the glucose source only if $c^_{0}<66$. Because the saturation concentration for hexokinase is quite low ($K_{M}\u22480.03$mM) (Wilson, 2003), we would expect mitochondrial accumulation for glucose concentrations below about $2$ mM. We note that physiological brain glucose levels have been measured at 0.7\u00a0\u2212\u00a01.3\u00a0mM, depending on the brain region (McNay et al., 2001), implying that glucose-dependent halting of mitochondrial transport would be expected to result in localization of mitochondria at nodes of Ranvier.\n\n### Glucose-dependent halting can increase metabolic flux under physiological conditions\n\nLocalizing mitochondria to the glucose entry points is expected to increase the flux of glucose entering the cell, thereby potentially enhancing the overall metabolic rate. We calculate the overall effect of transport-based regulation on the net metabolic flux within the simplified model with localized glucose entry.\u00a0Figure 5 shows the effect of increasing mitochondrial stopping rates ($k^_{s}$) on the total rate of glucose consumption in the interval between nodes of glucose influx. At low $k^_{s}$ values, mitochondria are distributed uniformly throughout the interval. At high $k^_{s}$ values and at sufficiently low glucose concentrations, the mitochondria cluster in the regions of glucose entry, increasing the overall consumption rate by up to 40% at physiologically relevant glucose levels (c0\u00a0=\u00a01\u00a0mM). We note that in hypoglycemic conditions, glucose levels can drop to 0.1\u00a0mM (Silver and Ereci\u0144ska, 1994), further increasing the magnitude of this effect.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/40986/elife-40986-fig5-v2.jpg)\n\n**Figure 5.:** Total glucose consumption per mitochondrion, averaged over the full interval, is shown for different edge glucose concentrations ($c_{0}$) as a function of the mitochondrial stopping rate $k^_{s}$. The limit of small $k^_{s}$ corresponds to uniform mitochondria distribution. Parameters for the model are taken from Table I. Source data is provided in \u2018Figure 5\u2014source data 1\u2019.\n\nIn the case of limited glucose transport into the cell, intracellular glucose levels could be significantly below the concentrations outside the cell. Measurements of intracellular glucose in a variety of cultured mammalian cell types indicate internal concentrations within the range of 0.07\u00a0\u2212\u00a01mM, up to an order of magnitude lower than glucose concentrations in the medium (John et al., 2008). However, neuronal cells are known to express a particularly efficient glucose transporter (GLUT3) (Simpson et al., 2008), and these transporters have been shown to be highly concentrated near the nodes of Ranvier (Magnani et al., 1996; Rosenbluth, 2009). We therefore assume that glucose import into the nodes is not rate limiting for myelinated neurons in physiological conditions. Introducing a finite rate of glucose transport would effectively decrease the intracellular glucose concentration at the nodes $c_{0}$, increasing the enhancement in metabolic flux due to mitochondrial localization. In subsequent sections, we explore the role of limited glucose import in unmyelinated axons with spatially uniform glucose permeability.\n\n### Model for spatial organization in a glucose gradient\n\nExtracellular brain glucose levels exhibit substantial regional variation, particularly under hypoglycemic conditions where more than ten-fold differences in local glucose concentrations have been reported (Paschen et al., 1986). Because individual neurons can traverse multiple different brain regions (Matsuda et al., 2009), a single axon can be subjected to heterogeneous glucose levels along its length. This raises the possibility that glucose-dependent mitochondrial localization can play a role in neuronal metabolic flexibility even in the case where glucose entry into the cell is not localized to distinct nodes. We thus extend our model to quantify the distribution of mitochondria in an axon with limited but spatially uniform glucose permeability that is subjected to a gradient of external glucose. This situation is relevant, for instance, to unmyelinated neurons in infant brains, as well as to in vitro experiments with neurons cultured in a glucose gradient (Pekkurnaz et al., 2014).\n\nIn this model, the extracellular environment provides a continuous source of glucose whose influx is limited by the permeability of the cell membrane. Intracellular glucose dynamics are then defined by the reaction-diffusion equation\n\n$$\n\\frac{dG}{dt}=D\\frac{\u2202^{2}G}{\u2202x^{2}}\u2212k(x)G+P(x)(G_{ext}(x)\u2212G)\n$$\n\nwhere the first term corresponds to diffusive glucose spread, the second to a spatially varying metabolism of glucose, and the third to the entry of glucose into the cell. Here, $G_{ext}$ is the external glucose concentration, and $P\u2062(x)$ is the membrane permeability to glucose, which we assume to depend in a Michaelis-Menten fashion on the difference between external and internal glucose concentration:\n\n$$\nP(x)=\\frac{(2/r)PK_{MP}}{K_{MP}+|G_{ext}(x)\u2212G(x)|}\n$$\n\nwhere $P$ is the spatially uniform permeability constant in units of length per time. This functional form incorporates two known features of glucose transporters: (1) they are bidirectional, so that the overall flux through the transporter at low glucose levels should scale linearly with the difference between external and internal glucose (Carruthers, 1990); (2) neuronal glucose transporters saturate at high glucose levels (GLUT3 $K_{MP}\u22483$mM (Maher et al., 1996), with an even higher saturation constant for GLUT4 (Nishimura et al., 1993). When the difference in glucose levels is low, the overall flux of glucose entering the cell reduces to $P(G_{ext}(x)\u2212G(x))$. Mitochondria dynamics are defined as before (Equation 4), and we again assume Michaelis-Menten kinetics for glucose metabolism by hexokinase localized to mitochondria (Equation 2).\n\nWe note that the dynamics in Equation 6 are governed by three time-scales: the rate of glucose transport down the length of the axon, rate of glucose consumption, and rate of glucose entry. The first of these rates becomes negligibly small in the limit $L\u226b\\sqrt{D\u2062(G+K_{M})/(k_{g}\u2062M\u00af)}$. Because internal glucose levels can never exceed the external concentrations, in the range where $G_{ext}<10$mM, the rate of diffusive transport should become negligible for $L\u226b150\\mum$. In the limit where intracellular glucose is much less than KM, this criterion reduces to $\\lambda^\u226a1$, indicating that glucose diffuses over a very small fraction of the interval before being consumed. The interval length $L$ in this model represents an axonal length which can range over many orders of magnitude. We focus on axon lengths above several hundred microns, allowing us to neglect the diffusive transport of intracellular glucose (see Appendix 3).\n\nThe steady-state glucose profile can then be determined entirely by the local concentration of mitochondria and external glucose. For a given mitochondrial density $M\u2062(x)$ and external glucose profile $G_{ext}(x)$, the corresponding intracellular glucose concentration can be found directly by solving the quadratic steady-state version of Equation 6 without the diffusive term. However, the steady-state mitochondrial distribution cannot be solved locally, because the limited number of mitochondria within the axon couples the mitochondrial density at different positions. We thus employ an iterative approach to numerically compute the steady-state solution for both glucose and mitochondrial density under a linear external glucose gradient $G_{ext}=G_{min}+(G_{max}\u2212G_{min})\\frac{x}{L}$ (see Materials and methods).\n\nFor parameter combinations where intracellular glucose concentrations are above KM but well below $G_{ext}$, the entry and consumption processes for glucose are both saturated. There is then a steep transition between two different regimes. In one regime, glucose entry exceeds consumption and internal glucose levels approach the external concentrations. In the other, consumption dominates and glucose levels drop below saturating concentrations.\u00a0The key dimensionless parameter governing this transition can be defined as the ratio of entry to consumption rates:\n\n$$\n\\gamma=\\frac{2PK_{MP}G\u00af_{ext}}{k_{g}M\u00afr(K_{MP}+G\u00af_{ext})}\n$$\n\nThis ratio can be modulated in the cell either by recruiting varying amounts of glucose transporters (adjusting $P$) or changing the total amount of active hexokinase (adjusting $k_{g}\u2062M\u00af$).\n\nThe remaining dimensionless parameters determining the behavior of this simplified model are the external glucose concentration relative to the hexokinase saturation constant ($G^_{ext}=G\u00af_{ext}/K_{M}$), the relative magnitude of the glucose gradient, $\u0394G^_{ext}=(G_{max}\u2212G_{min})/G\u00af_{ext}$, the ratio of stopped to walking mitochondria $k_{s}^=k_{s}/k_{w}$, and the saturation constant for glucose transporters $K_{MP}/K_{M}\u224896$. The last parameter is expected to remain approximately constant in neuronal cells. The average external glucose concentration and glucose gradient are expected to vary substantially depending on the glycemic environment to which the neuron is exposed. We note that $\u0394G^_{ext}$ has a maximum possible value since the minimal glucose concentration cannot drop below $0$zero. We proceed to analyze the limiting case where the glucose gradient is as steep as possible for any given value of average external glucose ($\u0394G^_{ext}=2$).\n\n### Mitochondrial arrest enables metabolic enhancement under glucose gradient\n\nWe quantify the amount of mitochondrial accumulation at the high glucose side of the domain by calculating the total mitochondrial density within the distal 10% of the interval compared to a uniform distribution, in analogy to experimental measurements (Pekkurnaz et al., 2014). Substantial enrichment in the high glucose region occurs when glucose entry into the cell cannot keep up with consumption ($\\gamma\u226a1$) and the intracellular glucose levels drop below the hexokinase saturation concentration KM, as can be seen in the glucose and mitochondrial distributions plotted in Figure 6a\u2013c. The interplay between external glucose levels and the entry/consumption rates is illustrated in Figure 6d. For external glucose concentrations well above KM there is a sharp transition to mitochondrial enrichment at $\\gamma<1$. At the lowest levels of intracellular glucose, accumulation is again reduced because a very small fraction of mitochondria are found in the stopped state. In the limit of high ks, mitochondrial accumulation would occur for arbitrarily low values of $\\gamma$ (Figure 6\u2014figure supplement 1). We note that because glucose entry and turnover are much faster than diffusive spread for biologically relevant parameter regimes, the model results do not depend on the cell length $L$ (Appendix 3).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/40986/elife-40986-fig6-v2.jpg)\n\n**Figure 6.:** (a) Internal glucose levels for the steady state solution with $G\u00af_{ext}/K_{M}=17$ ($G\u00af_{ext}=0.5$ mM) and varying ratios of entry to consumption rate $\\gamma$. Black dashed line shows external glucose levels. (b) Corresponding normalized distribution of internal glucose. (c) Corresponding normalized mitochondrial distribution. Shaded box indicates distal region used for calculating mitochondrial enrichment and metabolic enhancement in panels (d-e). (d) Mitochondrial enrichment in the distal 10% of the interval at highest external glucose, compared to a uniform distribution. White dot marks estimated parameter values for neuronal cell culture experiments ($G\u00af_{ext}=2.5$\u00a0mM). (e) Enhancement in metabolic flux in the distal region at high glucose, compared to a uniform mitochondrial distribution. (f) Enhancement in metabolic flux over full interval. White line in (d\u2013f) shows estimated parameter range for physiological glycemic levels $0.5mM<G\u00af_{ext}<1.5$\u00a0mM. Parameter values $k^_{s}=19$, $\u0394G^_{ext}=2$ used throughout. Source data is provided in \u2018Figure 6\u2014source datas 1\u20133\u2019.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/40986/elife-40986-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** For the high ks limit, we show (a) mitochondrial enrichment in the distal region and (b) metabolic enhancement in the distal region. In this limit, mitochondrial accumulation occurs for arbitrarily low values of $\\gamma$ as nearly all mitochondria are in the stopped state even at very low internal glucose concentrations. However, metabolic enhancement still occurs only within a narrow range of $\\gamma$ values.\n\nExperimental measurements of mitochondrial enrichment in cultured neurons subjected to a gradient of $0$ to $5$mM glucose have indicated an approximately 20% enrichment in mitchondrial counts at the axonal region exposed to high glucose. We note that using published estimates of typical glucose permeability and mitochondrial glucose turnover for mammalian cells (Table 1) yields a ratio of entrance and consumption rates of $\\gamma\u22481.9$ for this experimental system. Because this ratio is above 1, we would not expect to see substantial mitochondrial enrichment. To result in the experimentally observed enrichment at high glucose, the ratio $\\gamma$ would need to be reduced by approximately a factor of 2, implying the existence of additional regulatory mechanisms. Modulation of $\\gamma$ could be achieved by either decreasing the number of glucose transporters in the cell (reducing $P$) or upregulating total hexokinase levels (increasing kg). Neurons are believed to regulate both the density of glucose transporters and hexokinase activity in response to external glucose concentrations and varying metabolic demand (Fujii and Beutler, 1985; Robey et al., 1999; Duelli and Kuschinsky, 2001). In particular, adaptation to glycemic levels well above physiological values, as well as possibly reduced synaptic activity in a cultured environment, may result in downregulation of glucose transporters, lowering the value of $\\gamma$. The discrepancy between model prediction and observed mitochondrial accumulation highlights the existence of additional regulatory pathways not included in the current model whose role could be explored in further studies that directly quantify glucose entry and consumption rates in cultured neurons.\n\nPhysiological brain glucose levels have been measured at 0.7\u00a0mM - 1.3\u00a0mM (McNay et al., 2001), with hypoglycemic levels dipping as low as 0.1\u00a0mM and hyperglycemic levels rising up to $4$mM (Silver and Ereci\u0144ska, 1994). Axons that stretch across different brain regions with varying glucose levels can thus be subject to a glucose gradient with $G\u00af_{ext}$ on the order of 1\u00a0mM (white line on Figure 6d). We note that the physiological range overlaps substantially with the region of high mitochondrial accumulation, indicating that glucose-dependent halting can modulate mitochondrial distribution under physiologically relevant glycemic levels.\n\nBy accumulating mitochondria at the cellular region subjected to higher external glucose, the metabolic flux in that region can be substantially enhanced. In (Figure 6e) we plot the enhancement in glucose consumption rates (compared to the case with uniformly distributed mitochondria) within the $10%$ of cellular length subjected to the highest glucose concentrations. Metabolic enhancement occurs within a narrow band of the $\\gamma$ parameter. The drop-off in enhancement at low values of the internal glucose concentration (low $\\gamma$) is due to the coupling between glucose levels and mitochondrial localization. Specifically, mitochondrial accumulation at the region subject to high glucose concentration increases the local rate of consumption in that region, driving down local internal glucose levels. Consequently, the difference in internal glucose concentrations between the two ends of the cell is decreased when internal levels fall substantially below M (Figure 6b), reducing the enhancement of metabolic flux. Although mitochondrial accumulation decreases metabolic flux in the low glucose region, the total rate of glucose consumption integrated throughout the cell is enhanced by up to approximately 14% when $\\gamma\u22481$ (Figure 6f).\n\nIt is interesting to note that the typical physiological range of external glucose levels spans the narrow band of parameter space where metabolic enhancement is expected (white lines on Figure 6e,f). These results implicate glucose-dependent mitochondrial stopping as a quantitatively plausible mechanism of metabolic flexibility, increasing metabolism in regions with high nutrient availability for axonal projections that span between hypoglycemic and euglycemic regions. The magnitude of this effect can be tightly controlled by the cell through modulating overall rates of glucose entry and consumption. Thus, by coupling mitochondrial transport to local glucose levels, whole-cell changes in hexokinase or glucose transporter recruitment can be harnessed to tune the cell\u2019s response to spatially heterogeneous glucose concentrations.\n\n## Discussion\n\nThe minimal model described here provides a quantitative framework to explore the interdependence of glucose levels and mitochondrial motility and their combined effect on neuronal metabolic flux. Glucose-mediated halting of mitochondrial transport is shown to be a plausible regulatory mechanism for enhancing metabolism in cases with spatially heterogeneous glucose availability in the neuron.\n\nWe have quantitatively delineated the regions in parameter space where such a mechanism can have a substantial effect on mitochondrial localization and metabolic flux. Specifically, mitochondrial positioning requires both sufficient spatial variation in intracellular glucose and sufficiently low absolute glucose levels compared to the saturation constant of the hexokinase enzyme. In the case of tightly localized glucose entry (as at the nodes of Ranvier), intracellular spatial heterogeneity requires a small value of the dimensionless length scale for glucose decay ($\\lambda^=\\sqrt{D\u2062K_{M}/k_{g}\u2062M\u00af\u2062L^{2}}\u226a1$). For physiologically estimated values, mitochondrial localization to the nodes is expected to occur for glucose levels below approximately 2\u00a0mM, comparable to physiological brain glucose concentrations (McNay et al., 2001; John et al., 2008). In the case where glucose can enter homogeneously throughout the cell surface (as with unmyelinated axons), heterogeneity can arise from an external glucose gradient. We show that metabolic enhancement through mitochondrial positioning occurs in a narrow range of the key parameter $\\gamma=(2PK_{MP}G\u00af_{ext})/(k_{g}M\u00af(K_{MP}+G\u00af_{ext}))$, which describes the ratio of glucose entry to glucose metabolism, and that this narrow range intersects with physiological estimates.\n\nThe model developed here is intentionally highly simplified, encompassing a minimal set of parameters necessary to describe glucose-dependent mitochondrial localization. Other regulatory pathways that determine mitochondrial positioning are not included in this basal model. In particular, we do not consider here calcium-based transport regulation, which is known to localize mitochondria to regions of synaptic activity (Zhang et al., 2010; Wang and Schwarz, 2009; MacAskill and Kittler, 2010; Macaskill et al., 2009). Upregulating OGT signaling in cultured cells has been shown to decrease the fraction of motile mitochondria by a factor of three, while reducing endogenous OGT nearly doubles the motile fraction, indicating that a substantial number of stationary mitochondria are stopped as a result of OGT activity (Pekkurnaz et al., 2014). Our model assumes the extreme case where all stopping events are triggered in a glucose-dependent manner, thereby isolating the effect of glucose heterogeneity. Stopping mechanisms dependent on neuronal firing activity could alter mitochondrial distribution in concert with glucose-dependent halting, increasing the density of mitochondria at presynaptic boutons or near areas of localized calcium influx as at the nodes of Ranvier (Zhang et al., 2010). We note that mitochondria have previously been shown to accumulate at spinal nodes of Ranvier in response to neuronal firing activity (Fabricius et al., 1993; Zhang et al., 2010). The mechanism described here provides an additional driving force for mitochondrial localization near the nodes even in quiescent neurons.\n\nAdditional metabolic feedback loops, not included in our model, may result in a more complex dependence of mitochondrial stopping on glucose concentration. In particular, both the pentose phosphate pathway and glycolysis generate intermediates that feed back into UDP-GlcNAc production by the hexosamine biosynthetic pathway (Kruger and von Schaewen, 2003; Shirato et al., 2011). Furthermore, several of the enzymes involved in the metabolic pathways linking glucose levels to Milton O-GlcNacylation may be regulated in a glucose-dependent manner. For example, the activity of the fructose-6-phosphate metabolizing enzyme GFAT is believed to be regulated by intermediates in the hexosamine pathway (Traxinger and Marshall, 1991) and O-GlcNAc transferase (OGT) itself is directly regulated by UDP-GlcNAc levels (Hart et al., 2007). Other enzymes, such as the de-GlcNAcylating enzyme OGA exhibit long term regulation of expression in response to altered glucose levels (Zou et al., 2012).\u00a0These regulatory mechanisms provide additional potential routes of metabolic control through mitochondrial positioning.\n\nSeveral key parameters that regulate mitochondrial localization in response to glucose heterogeneity can be dynamically regulated in neurons. Specifically, the rate of glucose consumption ($k_{g}\u2062M\u00af$) can be tuned by modulating the concentration or activity of hexokinase within mitochondria or by altering total mitochondrial size and number. This parameter controls both the glucose decay length $\\lambda^$ in the case of localized glucose influx and the ratio of glucose entry to consumption $\\gamma$ in the case of spatially distributed entry. We note that our model assumes hexokinase to be localized exclusively to mitochondria. The predominant form of hexokinase in the brain (HK1) is known to bind reversibly to the mitochondrial membrane, with exchange between a mitochondria-bound and a cytoplasmic state believed to contribute to the regulation of its activity (Golestani et al., 2007). Release of hexokinase into the cytoplasm would result in more spatially uniform glucose consumption, negating the metabolic enhancement achieved through mitochondrial localization.\n\nAn additional parameter known to be under regulatory control is the rate of glucose entry into the neuron ($P$). The glucose transporters GLUT3 (Simpson et al., 2008; Duelli and Kuschinsky, 2001; Weisov\u00e1 et al., 2009) and GLUT4 (Ashrafi et al., 2017) have been shown to be recruited to the plasma membrane in response to neuronal firing activity. Interestingly, transporter densities are themselves spatially heterogeneous, concentrating near regions of synaptic activity (Ashrafi et al., 2017; Ashrafi and Ryan, 2017). The model described in this work quantifies the extent to which a locally increased glucose influx can enhance total metabolic flux, given the ability of mitochondria to accumulate at regions of high intracellular glucose.\n\nA number of possible feedback pathways linking glucose distribution and mitochondrial positioning are not included in our basic model. For instance, hexokinase release from mitochondria into the cytoplasm (potentially altering kg) is known to be triggered at least in part by glucose-6-phosphate, the first byproduct in glucose metabolism (Crane and Sols, 1954). Chronic hypoglycemia has been linked to an upregulation in GLUT3 in rat neurons (Uehara et al., 1997), which would in turn lead to an increased glucose uptake ($P$). The fraction of glucose funneled into the hexosamine biosynthetic pathway (incorporated within ks) can also be modified through feedback inhibition of GFAT by the downstream metabolic product UDP-GlcNAc (Li et al., 2007). Such feedback loops imply that several of our model parameters ($P$, kg, ks) are themselves glucose-dependent and may become spatially non-uniform in response to heterogeneous glucose. Incorporating these effects into a spatially resolved model of metabolism would require quantifying the dynamics of both the feedback pathways and mitochondrial positioning, and forms a promising avenue for future study.\n\nControl of glucose entry and consumption underlies cellular metabolic flexiblity, and defects in the associated regulatory pathways can have grave consequences for neuronal health. Misregulation of hexokinase has been highlighted as a contributor to several neurological disorders, ranging from depression (Regenold et al., 2012) to schizophrenia (Shan et al., 2014). Neuronal glucose transporter deficiency has been linked to autism spectrum disorders (Zhao et al., 2010) and Alzheimer\u2019s disease (Liu et al., 2008). Furthermore, defects in mitochondrial transport, with the consequent depletion of mitochondria in distal axonal regions, contribute to peripheral neuropathy disorders (Baloh, 2008).\n\nGlucose-dependent mitochondrial localization provides an additional layer of control, beyond conventionally studied regulatory mechanisms, which allows the cell to respond to spatial heterogeneity in glucose concentration. Our analysis paves the way for quantitative understanding of how flexible regulation of metabolism can be achieved by controlling the spatial distribution of glucose entry and consumption.\n\n## Materials and methods\n\nSource code (in MATLAB [The MathWorks Inc, 2015]) for all simulations and numerical calculations is available at:\u00a0https://github.com/lenafabr/mitoManuscriptCodes (copy archived at https://github.com/elifesciences-publications/mitoManuscriptCodes).\n\n### Discrete mitochondria simulations\n\nWe simulate the internodal space of the axon, between localized nodes of glucose entry, as a one-dimensional domain for a reaction diffusion system with motile reaction sinks. The glucose concentration field is discretized over 100 equidistant points along the domain. Its dynamics are governed by the reaction diffusion equation (Equation 1), evolved forward over time-steps of $\\delta\u2062t$ using the forward Euler method. Because forward Euler methods have stringent conditions for stability and convergence, we use a time-step that is much smaller than both the glucose decay time-scale and the time-scale associated with diffusion over our spatially discretized grid (see below).\n\nThe number of mitochondria in the domain is calculated according to $N=M\u00af\u2062L\u2062\\pi\u2062r^{2}\u224838$, where the mitochondrial density $M\u00af$, internodal distance $L$, and axonal radius $r$ are estimated from published data (Table 1; Appendix 1).\u00a0The mitochondria are treated as discrete intervals of length $\u0394$\u00a0=\u00a01\u00a0\u03bcm, with the position of each mitochondrial center updated at each timestep. Over each time step, every motile mitochondrion moves a distance of $\\pmv\u2062\\delta\u2062t$, (with transport velocity $v$\u00a0=\u00a01\u00a0\u03bcm/s) and switches to a stationary state with probability $1-exp\u2061(-k_{s}\u2062\\delta\u2062t)$, where $k_{s}\u2062(x)$ is a function of the center position of that mitochondrion (Equation 3). Mitochondria that reach within a distance of $\u0394/2$ from the ends of the domain are reflected, reversing their velocity while remaining motile. Analogously, every stationary mitochondrion switches to a motile state on each time-step with probability $1-exp\u2061(-k_{w}\u2062\\delta\u2062t)$. Processive walks are initiated with equal probability in either direction.\n\nAt any given time, the spatial density of mitochondria is calculated from the location of mitochondrial centers at positions $x_{1},\u2026\u2062x_{N}$, according to $M\u2062(x)=n\u2062(x)/(\\pi\u2062r^{2}\u2062\u0394)$, where\n\n$n(x)=\\sumi=1N[\\theta(x\u2212x_{i}+\u0394/2)\u2212\\theta(x\u2212x_{i}\u2212\u0394/2)]$,\n\nis the number of mitochondria overlapping spatial position $x$ and $\\theta$ is the Heaviside step function.\n\nWe integrate the simulation forward in time-steps of $\\delta\u2062t=0.2\u2062\\frac{\u0394\u2062x^{2}}{D}$, where $\u0394\u2062x$ is the spatial discretization. This time-scale is much smaller than the relevant decay time for glucose consumption $[\\tau_{g}=(\\frac{k_{g}\u2062M\u00af}{K_{M}})^{-1}]$. Using these small time-steps allows for stability and robust convergence with the forward Euler method.\u00a0The simulation proceeds for 107 steps. Simulations are repeated 100 times to obtain the histogram shown in Figure 2. Convergence to steady-state is established by comparing to calculations with the continuum model described in the subsequent sections.\n\n### Mitochondrial distribution for spatially varying stopping rate\n\nFor an arbitrary spatial distribution of stopping rates $k_{s}\u2062(x)$ the corresponding steady-state mitochondrial distribution can be calculated directly by solving the equations for mitochondrial transport (Equation 4):\n\n$$\nS=\\frac{k_{s}(x)(W_{\u2212}+W_{+})}{k_{w}}v\\frac{dW_{+}}{dx}=\\frac{1}{2}k_{s}(x)(W_{\u2212}\u2212W_{+})v\\frac{dW_{\u2212}}{dx}=\\frac{1}{2}k_{s}(x)(W_{\u2212}\u2212W_{+}).\n$$\n\nBecause our model assumes symmetry between anterograde and retrograde mitochondrial transport, as well as equal glucose concentrations at either boundary of the domain, we take $W_{-}=W_{+}$, implying that the population of walking mitochondria must be spatially constant. Consequently, the population of stopped mitochondria is proportional to the stopping rate ($S=C\u2062k_{s}\u2062(x)/k_{w}$). The constant $C$ can be calculated from the normalization condition,\n\n$$\n\\int_{0}^{L}M(x)dx=\\int_{0}^{L}[W_{\u2212}(x)+W_{+}(x)+S(x)]dx=M\u00afL\n$$\n\nThe overall steady-state distribution of mitochondria is then given by,\n\n$$\nM\u2062(x)=W_{-}\u2062(x)+W_{+}\u2062(x)+S\u2062(x)=\\frac{M\u00af}{1+\\frac{1}{L}\u2062\\int_{0}^{L}\\frac{k_{s}\u2062(x)}{k_{w}}\u2062d\u2062x}\u2062[\\frac{k_{s}\u2062(x)}{k_{w}}+1]\n$$\n\nBecause the stopping rate is an explicit function of glucose concentrations $[k_{s}\u2062(x)=\\frac{k_{s}\u2062G\u2062(x)}{K_{M}+G\u2062(x)}]$, this approach allows us to find the steady-state mitochondrial distribution for any fixed distribution of glucose.\n\n### Numerical solution for steady-state distributions with localized glucose entry\n\nWe solve for steady-state glucose and mitochondrial distributions using a numerical method that evolves the glucose concentration forward in time while explicitly setting the mitochondrial concentration to its steady-state value at each step.\u00a0The glucose distribution is initialized according to the steady-state solution for uniform consumption (Equation 13). Mitochondrial density $M\u2062(x)$ is calculated from the glucose distribution according to Equation 11 and Equation 3.\n\nThe glucose distribution $G\u2062(x)$, in turn, evolves according to the mitochondrial distribution as given by Equation 1 and Equation 2.\u00a0The glucose profile is integrated forward with a timestep $\\delta\u2062t=10^{-5}\u2062L^{2}/D$. The distributions are assumed to be converged once the root mean squared rate of glucose change drops below the minimal cutoff: $10^{-6}\u2062k_{g}\u2062M\u00af$. Results of the continuous mitochondrial distribution model are shown to match the discrete mitochondria simulations (Figure 2b). All subsequent analysis is done in the continuum limit.\n\n### Analytical solution for low glucose limit\n\nWe validate our numerical calculations by comparing to the analytically tractable solution in the limit of low glucose and nearly uniform mitochondrial distribution. In the limit of spatially uniform, linear consumption, the steady-state reaction-diffusion equation for glucose can be expressed as\n\n$$\n0=D\\frac{\u2202^{2}G}{\u2202x^{2}}\u2212kG(x)\n$$\n\nwhere $k=k_{g}\u2062M\u00af/K_{M}$ is the constant consumption rate.\n\nAssuming fixed glucose concentrations (c0) at the boundaries of the domain, the steady-state glucose distribution is then given by\n\n$$\nG(x)=\\frac{c_{0}cosh\u2061(\\frac{x}{\\lambda})}{cosh\u2061(\\frac{L}{2\\lambda})}\n$$\n\nwith $\\lambda=\\sqrt{\\frac{D}{k}}$ defining the glucose decay length-scale. This quantity is a measure of how far glucose diffusively penetrates into the domain before being consumed by hexokinase. It is scaled by the size of the domain to give the dimensionless decay length scale $\\lambda^=\\sqrt{\\frac{D\u2062K_{M}}{k_{g}\u2062M\u00af\u2062L^{2}}}$ used as a key parameter in our model with localized glucose entry:\n\n### Steady-state distribution with uniform permeability in the slow diffusion limit\n\nFor the model with spatially uniform glucose permeability, we solve directly for the steady state distributions of glucose and mitochondria in the limit of slow diffusivity. When diffusion along the domain is slow compared to the timescales of glucose consumption and glucose import, the steady-state equation for glucose concentration is given by a simplified form of Equation 6:\n\n$$\n\u2212k(x)G(x)+P(x)(G_{ext}(x)\u2212G(x))=0\n$$\n\nSubstituting $k(x)=\\frac{k_{g}M(x)G(x)}{G(x)+K_{M}}$ and $P(x)=\\frac{(2/r)PK_{MP}}{K_{MP}+|G_{ext}(x)\u2212G(x)|}$, we get a quadratic equation in $G\u2062(x)$;\n\n$$\n[1\u2212\\frac{2PK_{MP}}{rk_{g}M}]G(x)^{2}+[\\frac{2PK_{MP}G_{ext}}{rk_{g}M}\u2212\\frac{2PK_{MP}K_{M}}{rk_{g}M}\u2212G_{ext}\u2212K_{MP}]G(x)+[\\frac{2PK_{MP}K_{M}G_{ext}}{rk_{g}M}]=0\n$$\n\nFor a given mitochondrial profile, this quadratic equation is solved to find $G\u2062(x)=G\u2062(M\u2062(x))$. The mitochondrial distribution, $M\u2062(x)$ is then updated according to Equation 11 and Equation 3.\u00a0We thus arrive at an iterative solution for $G\u2062(x)$ and $M\u2062(x)$.\n",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "d9b41791-d164-4290-b6a0-e0473c72a071",
+      "submission_id": "1648749a-c394-459e-a8b6-edb20b7bb50c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.40986.031](https://doi.org/10.7554/eLife.40986.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Spatial control of neuronal metabolism through glucose-mediated mitochondrial transport regulation\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Naama Barkai as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Timothy A Ryan (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes a general framework for examining the quantitative details of how the feed-forward control of mitochondrial motility by a downstream sensing of glucose metabolism (through OGlcNAc modification) might lead to both changes in the spatial distribution of mitochondria and the potential enhancement of overall metabolic flux that would ensue. The referees agreed that the manuscript was interesting, well-written, and timely.\n\nEssential revisions:\n\n1) The treatments seem to treat the OGT modification as irreversible as no terms describing the reverse reaction that would be driven by an O0GlcNAcase.\n\n2) The authors also only consider two possible fates of Glucose 6P (glycolysis and the hexosamine pathway). The pentose phosphate pathway is another possible shunt that should probably at the very least be discussed or its omission justified.\n\n3) A forward Euler scheme was used to solve the reaction-diffusion Equation 1. Such schemes are known to be generally unstable, so the authors need to justify their use and/or re-do the numerics with a proper scheme (e.g. Crank-Nicholson) to confirm the results.\n",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e7e9394d-b803-4ac1-a009-4ecc5e782c7a",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C1",
+      "claim": "In rat axons, mitochondria respond to glucose levels by halting active transport in high glucose regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In rat axons, mitochondria respond to glucose levels by halting active transport in high glucose regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established observation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "8c29b81b-4a13-4d63-a2ef-aa367193708c",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C2",
+      "claim": "Physiological brain glucose levels fall within the limited range necessary for metabolic enhancement through mitochondrial localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our estimates indicate that physiological brain glucose levels fall within the limited range necessary for metabolic enhancement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling work presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "6ea1c17d-5968-45fe-807f-e12f854bde62",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C3",
+      "claim": "Mitochondrial localization is a plausible regulatory mechanism for neuronal metabolic flexibility in the presence of spatially heterogeneous glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence mitochondrial localization is shown to be a plausible regulatory mechanism for neuronal metabolic flexibility in the presence of spatially heterogeneous glucose, as may occur in long processes of projection neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "1fe3c5af-f12d-4280-828d-14034a805b7c",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C4",
+      "claim": "Cells can substantially enhance their metabolism by localizing specific enzymes in regions of high metabolic demand.",
+      "claim_type": "EXPLICIT",
+      "source": "By localizing specific enzymes in regions of high metabolic demand (Laughton et al., 2007; Zecchin et al., 2015), as well as clustering together consecutively acting enzymes (O'Connell et al., 2012), cells have the potential to substantially enhance their metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "7edbe709-c248-4f42-8db9-8867eac82211",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C5",
+      "claim": "Mammalian neuron axons can grow to lengths on the meter scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial organization is particularly critical in highly extended cells, such as mammalian neurons, whose axons can grow to lengths on the meter scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about neuronal anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "ed2a11c4-f6fe-4c2f-a925-b0b4782905bd",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C6",
+      "claim": "Metabolic demand in neurons is spatially and temporally heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic demand in neurons is spatially and temporally heterogeneous, with especially rapid ATP turnover found in the presynaptic boutons (Rangaraju et al., 2014), and ATP requirements peaking during synaptic activity and neuronal firing (Shulman et al., 2004; Ferreira et al., 2011; Weisov\u00e1 et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "8b9b22fe-5fdf-4327-9373-c97c9c2b5fcd",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C7",
+      "claim": "Neurons rely primarily on glucose as the energy source for meeting metabolic demands.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons rely primarily on glucose as the energy source for meeting these metabolic demands (Peppiatt and Attwell, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "07751131-e376-44f8-ae61-137cc71ecf4d",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C8",
+      "claim": "Glucose supply can vary substantially over different regions of the neuron due to long lengths of neural processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the long lengths of neural processes, the glucose supply can vary substantially over different regions of the cell (Ferreira et al., 2011; Weisov\u00e1 et al., 2009; Hall et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "aeceba62-7007-4803-ba06-0b462776eb47",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C9",
+      "claim": "In myelinated neurons, glucose transport into the cell is localized primarily to narrow regions around the nodes of Ranvier.",
+      "claim_type": "EXPLICIT",
+      "source": "In myelinated neurons, for instance, it has been speculated that glucose transport into the cell is localized primarily to narrow regions around the nodes of Ranvier (Magnani et al., 1996; Harris and Attwell, 2012; Rosenbluth, 2009), which can be spaced hundreds of microns apart (Ibrahim et al., 1995; Butt et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations and is described as speculative.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "1c10edcb-0658-4358-86c3-1fdf7a0f84d9",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C10",
+      "claim": "Glucose transporters in neurons dynamically mobilize to active synapses, providing a source of intracellular glucose heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose transporters in neurons have also been shown to dynamically mobilize to active synapses, providing a source of intracellular glucose heterogeneity (Ashrafi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "8f7d06bc-ab21-440c-a8cd-e9bb77bc43b8",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C11",
+      "claim": "Varying levels of activity in the mammalian brain may lead to varying extracellular glucose levels, resulting in spatially heterogeneous nutrient access.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, varying levels of activity in the mammalian brain may lead to varying extracellular glucose levels, resulting in spatially heterogeneous nutrient access (Hawkins et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and uses the word 'may', indicating some speculation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "6e8bc801-34af-43a9-9193-1adf93b67863",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C12",
+      "claim": "Individual axons have been shown to span across multiple regions of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual axons have been shown to span across multiple regions of the brain (Matsuda et al., 2009), enabling them to encounter regions with different glucose concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "b1ea8c37-8bdf-4716-b8d6-5ddc72545ead",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C13",
+      "claim": "Most ATP production in neurons occurs within mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Most ATP production in neurons occurs within mitochondria: motile organelles that range from interconnected networks to individual globular structures that extend throughout the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about neuronal metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "a24156ab-a618-4f91-9efa-700d8625c0fb",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C14",
+      "claim": "Mitochondria are critical for neuronal health as energy powerhouses and metabolic signaling centers of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "As energy powerhouses and metabolic signaling centers of the cell, mitochondria are critical for neuronal health (Nunnari and Suomalainen, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "87f7b3da-cb46-4c53-a49e-e935780061d7",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C15",
+      "claim": "The spatial organization of mitochondria within the neuron plays a pivotal role in growth and cell physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Their spatial organization within the neuron plays a pivotal role in growth and cell physiology (Li et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "110efecc-9463-4b68-bc96-acac38df5b6f",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C16",
+      "claim": "Defects in mitochondrial transport are involved in the pathologies of several neurological disorders such as peripheral neuropathy and Charcot-Marie-Tooth disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in mitochondrial transport are involved in the pathologies of several neurological disorders such as peripheral neuropathy and Charcot-Marie-Tooth disease (Baloh, 2008; Baloh et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "c471b0f2-c3ad-4136-9ae4-12b3ce2c7274",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C17",
+      "claim": "Mitochondria are localized preferentially to regions of high metabolic demand, such as the synaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have shown that mitochondria are localized preferentially to regions of high metabolic demand, such as the synaptic terminals (Li et al., 2004; Chang and Reynolds, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "ce5a7f35-ff59-4d3f-a324-07e20476eae9",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C18",
+      "claim": "Increased Ca2+ levels at active synapses lead to loading of calcium binding sites on Miro, releasing mitochondria from the microtubule and thereby halting transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased Ca2+ levels at active synapses lead to loading of calcium binding sites on Miro, releasing mitochondria from the microtubule and thereby halting transport (Wang and Schwarz, 2009; Macaskill et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "acbf2a08-a1e2-4925-b000-390e576bf1a9",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C19",
+      "claim": "High glucose levels can lead to mitochondrial stalling through the glycosylation of motor adaptor protein Milton by the glucose-activated enzyme O-GlcNAc transferase (OGT).",
+      "claim_type": "EXPLICIT",
+      "source": "High glucose levels can also lead to stalling, through the glycosylation of motor adaptor protein Milton by the glucose-activated enzyme O-GlcNAc transferase (OGT) (Pekkurnaz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "74dbee81-2792-4d0d-bab5-8f2af9f1c6ec",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C20",
+      "claim": "The glucose-mediated halting mechanism has been shown to lead to mitochondrial accumulation at glucose-rich regions in cultured neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism has been shown to lead to mitochondrial accumulation at glucose-rich regions in cultured neurons (Pekkurnaz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "2ee8089a-f607-46e0-8b08-ff72af4ef228",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C21",
+      "claim": "The glucose-mediated halting mechanism is postulated to regulate mitochondrial spatial distribution, allowing efficient metabolic response to heterogeneous glucose availability.",
+      "claim_type": "EXPLICIT",
+      "source": "It is postulated to regulate mitochondrial spatial distribution, allowing efficient metabolic response to heterogeneous glucose availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described as a postulate, indicating it is a hypothesis or speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "2e002c92-000e-4aeb-8f8a-79a89b6a21b0",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C22",
+      "claim": "Neuronal glucose transporters are bidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal glucose transporters are known to be bidirectional (Simpson et al., 2007), allowing glucose concentration within the cell to equilibrate with external glucose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "c3c29f8f-1077-4cc5-a472-7b2b998266eb",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C23",
+      "claim": "Hexokinase 1 (HK1) is the predominant form of hexokinase expressed in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexokinase 1 (HK1), the predominant form of hexokinase expressed in neurons, is known to localize preferentially to mitochondria (John et al., 2011), which in mammalian axons can form individual organelles approximately 1 \u00b5m in length (Fawcett, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "f588778a-89c3-40f7-badc-b792a3f8d0ec",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C24",
+      "claim": "HK1 is known to localize preferentially to mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexokinase 1 (HK1), the predominant form of hexokinase expressed in neurons, is known to localize preferentially to mitochondria (John et al., 2011), which in mammalian axons can form individual organelles approximately 1 \u00b5m in length (Fawcett, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "4840f07a-e4ff-41cc-95fc-4866020f9cb7",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C25",
+      "claim": "In mammalian axons, mitochondria can form individual organelles approximately 1 \u00b5m in length.",
+      "claim_type": "EXPLICIT",
+      "source": "Hexokinase 1 (HK1), the predominant form of hexokinase expressed in neurons, is known to localize preferentially to mitochondria (John et al., 2011), which in mammalian axons can form individual organelles approximately 1 \u00b5m in length (Fawcett, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "92bd0785-daf7-4980-9a84-a9dd4d6467d4",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C28",
+      "claim": "There is an upper limit on the possible external glucose concentrations that will yield mitochondrial localization at the edges of the domain.",
+      "claim_type": "EXPLICIT",
+      "source": "There is thus an upper limit on the possible external glucose concentrations that will yield mitochondrial localization at the edges of the domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "6c85deec-160f-423b-afee-27ee400c4b35",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C29",
+      "claim": "Mitochondria must spend a substantial amount of time in the stationary state for localization to occur, since walking mitochondria will be broadly distributed throughout the domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the mitochondria must spend a substantial amount of time in the stationary state, since walking mitochondria will be broadly distributed throughout the domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "377880bf-7f2d-446c-8e76-59951241d9ed",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C30",
+      "claim": "Very low glucose concentrations will not allow mitochondrial localization because the stopping rate is dependent on glucose concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the stopping rate is itself dependent on the glucose concentration, this criterion implies that very low concentrations will also not allow mitochondrial localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "4abfef9c-499a-4c3b-b132-81e9b51359e4",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C33",
+      "claim": "At high glucose concentrations, approximately 95% of mitochondria are in the stationary state.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental measurements indicate that at high glucose concentrations, approximately 95% of mitochondria are in the stationary state (Pekkurnaz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "e065487d-4dc9-42d8-b231-5987191f9b37",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C37",
+      "claim": "Physiological brain glucose levels have been measured at 0.7 \u2212 1.3 mM, depending on the brain region.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that physiological brain glucose levels have been measured at 0.7 \u2212 1.3 mM, depending on the brain region (McNay et al., 2001), implying that glucose-dependent halting of mitochondrial transport would be expected to result in localization of mitochondria at nodes of Ranvier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "20a18ce8-df62-4bb1-a273-df3966fe975e",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C38",
+      "claim": "Glucose-dependent halting of mitochondrial transport would be expected to result in localization of mitochondria at nodes of Ranvier under physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that physiological brain glucose levels have been measured at 0.7 \u2212 1.3 mM, depending on the brain region (McNay et al., 2001), implying that glucose-dependent halting of mitochondrial transport would be expected to result in localization of mitochondria at nodes of Ranvier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing model predictions with physiological measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "e50063d4-1340-4a86-a10e-d929709027d1",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C39",
+      "claim": "Localizing mitochondria to the glucose entry points is expected to increase the flux of glucose entering the cell, thereby potentially enhancing the overall metabolic rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Localizing mitochondria to the glucose entry points is expected to increase the flux of glucose entering the cell, thereby potentially enhancing the overall metabolic rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "b7d9fc9b-5fcb-4659-9bf0-ab21a7fe9579",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C41",
+      "claim": "In hypoglycemic conditions, glucose levels can drop to 0.1 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in hypoglycemic conditions, glucose levels can drop to 0.1 mM (Silver and Ereci\u0144ska, 1994), further increasing the magnitude of this effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "dfab98f0-eac1-4cd2-836c-2ffe6f6d5fbd",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C42",
+      "claim": "Intracellular glucose levels could be significantly below the concentrations outside the cell in the case of limited glucose transport into the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of limited glucose transport into the cell, intracellular glucose levels could be significantly below the concentrations outside the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the effect of limited transport.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "7d2730b2-d6ac-4330-a4b6-885cb97f7bdb",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C43",
+      "claim": "Measurements of intracellular glucose in a variety of cultured mammalian cell types indicate internal concentrations within the range of 0.07 \u2212 1mM, up to an order of magnitude lower than glucose concentrations in the medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of intracellular glucose in a variety of cultured mammalian cell types indicate internal concentrations within the range of 0.07 \u2212 1mM, up to an order of magnitude lower than glucose concentrations in the medium (John et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "02710b8d-03d7-400a-8ed2-b3451c7b67e3",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C44",
+      "claim": "Neuronal cells express a particularly efficient glucose transporter (GLUT3).",
+      "claim_type": "EXPLICIT",
+      "source": "However, neuronal cells are known to express a particularly efficient glucose transporter (GLUT3) (Simpson et al., 2008), and these transporters have been shown to be highly concentrated near the nodes of Ranvier (Magnani et al., 1996; Rosenbluth, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "bd511dc2-ef14-4d20-b933-a66b02cc90e2",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C45",
+      "claim": "GLUT3 transporters have been shown to be highly concentrated near the nodes of Ranvier.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neuronal cells are known to express a particularly efficient glucose transporter (GLUT3) (Simpson et al., 2008), and these transporters have been shown to be highly concentrated near the nodes of Ranvier (Magnani et al., 1996; Rosenbluth, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "b2dd54ae-5957-4323-b38d-64f1dde74646",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C46",
+      "claim": "Glucose import into the nodes is not rate limiting for myelinated neurons in physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore assume that glucose import into the nodes is not rate limiting for myelinated neurons in physiological conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption made in the model based on the properties of GLUT3.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "5f1906df-ae96-4cac-9329-960e534e6e63",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C47",
+      "claim": "Extracellular brain glucose levels exhibit substantial regional variation, particularly under hypoglycemic conditions where more than ten-fold differences in local glucose concentrations have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular brain glucose levels exhibit substantial regional variation, particularly under hypoglycemic conditions where more than ten-fold differences in local glucose concentrations have been reported (Paschen et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "8e575a2e-0874-481f-a6ce-82b0d457a848",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C48",
+      "claim": "Individual neurons can traverse multiple different brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Because individual neurons can traverse multiple different brain regions (Matsuda et al., 2009), a single axon can be subjected to heterogeneous glucose levels along its length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "799a4c9c-2588-48d4-bf7f-a901a1986d6f",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C49",
+      "claim": "Glucose-dependent mitochondrial localization can play a role in neuronal metabolic flexibility even in the case where glucose entry into the cell is not localized to distinct nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the possibility that glucose-dependent mitochondrial localization can play a role in neuronal metabolic flexibility even in the case where glucose entry into the cell is not localized to distinct nodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis or speculation based on the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "adef3b78-1551-478b-9664-32c85ae62c70",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C53",
+      "claim": "There is a steep transition between two different regimes when entry and consumption processes are both saturated: one where glucose entry exceeds consumption and internal glucose levels approach external concentrations, and another where consumption dominates and glucose levels drop below saturating concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "There is then a steep transition between two different regimes. In one regime, glucose entry exceeds consumption and internal glucose levels approach the external concentrations. In the other, consumption dominates and glucose levels drop below saturating concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "b27369b8-b0fd-43bd-bfac-aaabd4a2af04",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C58",
+      "claim": "Neurons are believed to regulate both the density of glucose transporters and hexokinase activity in response to external glucose concentrations and varying metabolic demand.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons are believed to regulate both the density of glucose transporters and hexokinase activity in response to external glucose concentrations and varying metabolic demand (Fujii and Beutler, 1985; Robey et al., 1999; Duelli and Kuschinsky, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "f0e100fd-3eb6-4b9d-84dd-11fbe482fc51",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C62",
+      "claim": "The physiological range of glucose levels overlaps substantially with the region of high mitochondrial accumulation predicted by the model.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the physiological range overlaps substantially with the region of high mitochondrial accumulation, indicating that glucose-dependent halting can modulate mitochondrial distribution under physiologically relevant glycemic levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing model predictions with physiological measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "58a0cae6-e0cd-45d3-9e15-4c5e4fc3effc",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C63",
+      "claim": "By accumulating mitochondria at the cellular region subjected to higher external glucose, the metabolic flux in that region can be substantially enhanced.",
+      "claim_type": "EXPLICIT",
+      "source": "By accumulating mitochondria at the cellular region subjected to higher external glucose, the metabolic flux in that region can be substantially enhanced.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the model shown in Figure 6e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "6f8a7b46-717f-4576-b517-f76fb76d688c",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C66",
+      "claim": "The typical physiological range of external glucose levels spans the narrow band of parameter space where metabolic enhancement is expected.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the typical physiological range of external glucose levels spans the narrow band of parameter space where metabolic enhancement is expected (white lines on Figure 6e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing model predictions with physiological measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "d03ea0fa-c5d9-4475-92cb-31a5b0b6c4e2",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C67",
+      "claim": "Glucose-dependent mitochondrial stopping is a quantitatively plausible mechanism of metabolic flexibility, increasing metabolism in regions with high nutrient availability for axonal projections that span between hypoglycemic and euglycemic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results implicate glucose-dependent mitochondrial stopping as a quantitatively plausible mechanism of metabolic flexibility, increasing metabolism in regions with high nutrient availability for axonal projections that span between hypoglycemic and euglycemic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "6b39be12-51eb-47c6-a849-0e4b30a91dc3",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C68",
+      "claim": "The magnitude of the metabolic enhancement effect can be tightly controlled by the cell through modulating overall rates of glucose entry and consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of this effect can be tightly controlled by the cell through modulating overall rates of glucose entry and consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model showing how \u03b3 affects metabolic enhancement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "4da764f5-1d1e-4534-8b3a-fb69b15836f9",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C69",
+      "claim": "By coupling mitochondrial transport to local glucose levels, whole-cell changes in hexokinase or glucose transporter recruitment can be harnessed to tune the cell's response to spatially heterogeneous glucose concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by coupling mitochondrial transport to local glucose levels, whole-cell changes in hexokinase or glucose transporter recruitment can be harnessed to tune the cell's response to spatially heterogeneous glucose concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "5c5c74eb-220b-4b3c-9072-24e93fd90242",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C70",
+      "claim": "Glucose-mediated halting of mitochondrial transport is a plausible regulatory mechanism for enhancing metabolism in cases with spatially heterogeneous glucose availability in the neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose-mediated halting of mitochondrial transport is shown to be a plausible regulatory mechanism for enhancing metabolism in cases with spatially heterogeneous glucose availability in the neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "5521a00e-4d50-4629-abe6-384748293cbc",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C71",
+      "claim": "Mitochondrial positioning requires both sufficient spatial variation in intracellular glucose and sufficiently low absolute glucose levels compared to the saturation constant of the hexokinase enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, mitochondrial positioning requires both sufficient spatial variation in intracellular glucose and sufficiently low absolute glucose levels compared to the saturation constant of the hexokinase enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "dfda85b8-aa6e-4c9c-8660-32448d0b45d5",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C73",
+      "claim": "For physiologically estimated values, mitochondrial localization to the nodes is expected to occur for glucose levels below approximately 2 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "For physiologically estimated values, mitochondrial localization to the nodes is expected to occur for glucose levels below approximately 2 mM, comparable to physiological brain glucose concentrations (McNay et al., 2001; John et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model using physiological parameter estimates.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "6e08a7df-b86e-45ee-a429-46cf32a0f5ff",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C76",
+      "claim": "Upregulating OGT signaling in cultured cells has been shown to decrease the fraction of motile mitochondria by a factor of three.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulating OGT signaling in cultured cells has been shown to decrease the fraction of motile mitochondria by a factor of three, while reducing endogenous OGT nearly doubles the motile fraction, indicating that a substantial number of stationary mitochondria are stopped as a result of OGT activity (Pekkurnaz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "d3147b51-63f7-4d55-b8fb-bb209de22282",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C77",
+      "claim": "Reducing endogenous OGT nearly doubles the motile fraction of mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulating OGT signaling in cultured cells has been shown to decrease the fraction of motile mitochondria by a factor of three, while reducing endogenous OGT nearly doubles the motile fraction, indicating that a substantial number of stationary mitochondria are stopped as a result of OGT activity (Pekkurnaz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "0a29fe6e-e077-49cc-8265-54d965b4d6fe",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C78",
+      "claim": "A substantial number of stationary mitochondria are stopped as a result of OGT activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulating OGT signaling in cultured cells has been shown to decrease the fraction of motile mitochondria by a factor of three, while reducing endogenous OGT nearly doubles the motile fraction, indicating that a substantial number of stationary mitochondria are stopped as a result of OGT activity (Pekkurnaz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited experimental observations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "766fe466-7b3c-4518-bc25-71b02dc2f23f",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C79",
+      "claim": "Mitochondria have previously been shown to accumulate at spinal nodes of Ranvier in response to neuronal firing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that mitochondria have previously been shown to accumulate at spinal nodes of Ranvier in response to neuronal firing activity (Fabricius et al., 1993; Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "b1f341f6-9564-440b-8906-2c151bc24558",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C80",
+      "claim": "The glucose-dependent halting mechanism provides an additional driving force for mitochondrial localization near the nodes even in quiescent neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism described here provides an additional driving force for mitochondrial localization near the nodes even in quiescent neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "506b013d-22b7-4803-aa65-a81318d52411",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C81",
+      "claim": "Both the pentose phosphate pathway and glycolysis generate intermediates that feed back into UDP-GlcNAc production by the hexosamine biosynthetic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, both the pentose phosphate pathway and glycolysis generate intermediates that feed back into UDP-GlcNAc production by the hexosamine biosynthetic pathway (Kruger and von Schaewen, 2003; Shirato et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "60e7c0ad-f82c-4e8a-ba78-b29adaffee88",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C82",
+      "claim": "The activity of the fructose-6-phosphate metabolizing enzyme GFAT is believed to be regulated by intermediates in the hexosamine pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the activity of the fructose-6-phosphate metabolizing enzyme GFAT is believed to be regulated by intermediates in the hexosamine pathway (Traxinger and Marshall, 1991) and O-GlcNAc transferase (OGT) itself is directly regulated by UDP-GlcNAc levels (Hart et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "2236afec-36ee-47c7-9738-94e2b3719e0e",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C83",
+      "claim": "O-GlcNAc transferase (OGT) itself is directly regulated by UDP-GlcNAc levels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the activity of the fructose-6-phosphate metabolizing enzyme GFAT is believed to be regulated by intermediates in the hexosamine pathway (Traxinger and Marshall, 1991) and O-GlcNAc transferase (OGT) itself is directly regulated by UDP-GlcNAc levels (Hart et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "a4e26103-44e1-4411-9149-03b8a5a193e1",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C84",
+      "claim": "The de-GlcNAcylating enzyme OGA exhibits long term regulation of expression in response to altered glucose levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Other enzymes, such as the de-GlcNAcylating enzyme OGA exhibit long term regulation of expression in response to altered glucose levels (Zou et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "9f5d3b85-bb02-4850-9b8c-0776f16762ad",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C86",
+      "claim": "The predominant form of hexokinase in the brain (HK1) is known to bind reversibly to the mitochondrial membrane, with exchange between a mitochondria-bound and a cytoplasmic state believed to contribute to the regulation of its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The predominant form of hexokinase in the brain (HK1) is known to bind reversibly to the mitochondrial membrane, with exchange between a mitochondria-bound and a cytoplasmic state believed to contribute to the regulation of its activity (Golestani et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "61091798-a56c-44d5-9548-966463e2dbc8",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C87",
+      "claim": "Release of hexokinase into the cytoplasm would result in more spatially uniform glucose consumption, negating the metabolic enhancement achieved through mitochondrial localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of hexokinase into the cytoplasm would result in more spatially uniform glucose consumption, negating the metabolic enhancement achieved through mitochondrial localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "71b61552-91bd-478a-bd51-46907d7c15bf",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C88",
+      "claim": "The glucose transporters GLUT3 and GLUT4 have been shown to be recruited to the plasma membrane in response to neuronal firing activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The glucose transporters GLUT3 (Simpson et al., 2008; Duelli and Kuschinsky, 2001; Weisov\u00e1 et al., 2009) and GLUT4 (Ashrafi et al., 2017) have been shown to be recruited to the plasma membrane in response to neuronal firing activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "bc3afe8d-e880-408b-b2f0-9568f1096beb",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C89",
+      "claim": "Transporter densities are spatially heterogeneous, concentrating near regions of synaptic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, transporter densities are themselves spatially heterogeneous, concentrating near regions of synaptic activity (Ashrafi et al., 2017; Ashrafi and Ryan, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "e4c58857-00af-4686-8dd9-84a4738e403a",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C90",
+      "claim": "Hexokinase release from mitochondria into the cytoplasm is known to be triggered at least in part by glucose-6-phosphate, the first byproduct in glucose metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, hexokinase release from mitochondria into the cytoplasm (potentially altering kg) is known to be triggered at least in part by glucose-6-phosphate, the first byproduct in glucose metabolism (Crane and Sols, 1954).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "ecc502cd-acc5-4e7d-a549-60a439fe72d8",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C92",
+      "claim": "The fraction of glucose funneled into the hexosamine biosynthetic pathway can be modified through feedback inhibition of GFAT by the downstream metabolic product UDP-GlcNAc.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of glucose funneled into the hexosamine biosynthetic pathway (incorporated within ks) can also be modified through feedback inhibition of GFAT by the downstream metabolic product UDP-GlcNAc (Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "6c61b00a-d0bb-4546-a7f7-cfe9dbaf2f31",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C93",
+      "claim": "Misregulation of hexokinase has been highlighted as a contributor to several neurological disorders, ranging from depression to schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Misregulation of hexokinase has been highlighted as a contributor to several neurological disorders, ranging from depression (Regenold et al., 2012) to schizophrenia (Shan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "7e9e64ad-8b61-4316-a19f-8e770c5b1f5b",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C94",
+      "claim": "Neuronal glucose transporter deficiency has been linked to autism spectrum disorders and Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal glucose transporter deficiency has been linked to autism spectrum disorders (Zhao et al., 2010) and Alzheimer's disease (Liu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "d0b6b35c-0534-41f0-9ff6-5df508f3fffc",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C95",
+      "claim": "Defects in mitochondrial transport, with the consequent depletion of mitochondria in distal axonal regions, contribute to peripheral neuropathy disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, defects in mitochondrial transport, with the consequent depletion of mitochondria in distal axonal regions, contribute to peripheral neuropathy disorders (Baloh, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "71012faf-6765-4eef-b78d-3f4bf113defc",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C96",
+      "claim": "Glucose-dependent mitochondrial localization provides an additional layer of control, beyond conventionally studied regulatory mechanisms, which allows the cell to respond to spatial heterogeneity in glucose concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucose-dependent mitochondrial localization provides an additional layer of control, beyond conventionally studied regulatory mechanisms, which allows the cell to respond to spatial heterogeneity in glucose concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "e8c4a364-6516-4e40-870d-dcc0a09cea9d",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C97",
+      "claim": "The model assumes rapid transport of glucose through glucose transporters, so that the internal concentration of glucose at the nodes where transporters are present is assumed to be fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "For simplicity, we assume rapid transport of glucose through these transporters, so that the internal concentration of glucose at the nodes where transporters are present is assumed to be fixed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit assumption made in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "6bd86492-f0a3-4f5b-9b9a-6857a714b98f",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C98",
+      "claim": "The model assumes that all pauses in mitochondrial motility are associated with an O-GlcNAcylation event.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model employs a highly simplified description of mitochondrial dynamics, which assumes that all pauses are associated with such an O-GlcNAcylation event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit assumption made in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "ee1cf087-ea7f-4bfb-ad32-de57a188ca4c",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C99",
+      "claim": "The model assumes that OGA activity is independent of glucose levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is evidence indicating long-term glucose deprivation can reduce OGA expression (Zou et al., 2012), for simplicity we assume in our model that OGA activity is independent of glucose levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit assumption made in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "186cab0b-377c-44c5-8ced-933b5568b73e",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C100",
+      "claim": "The model assumes that the rate of UDP-GlcNAc production equals the rate of glucose conversion by hexokinase, scaled by the fraction of G6P that is channeled into the hexosamine biosynthetic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, we assume that the rate of UDP-GlcNAc production equals the rate of glucose conversion by hexokinase, scaled by the fraction of G6P that is channeled into the hexosamine biosynthetic pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit assumption made in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "34636d84-964f-4fe1-a21b-c2d67e118dcb",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C101",
+      "claim": "The model makes the extreme case assumption that all intermediates in the conversion from glucose into O-GlcNAcylated Milton are localized to mitochondria, with only the initial glucose substrate capable of diffusing through the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, we make the extreme case assumption that all intermediates are localized to mitochondria, with only the initial glucose substrate capable of diffusing through the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit assumption made in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "04ef9cda-8a7a-4da1-a64f-92d316651cfd",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C102",
+      "claim": "Cytoplasmic diffusion of any of the pathway intermediates would attenuate the effect on mitochondrial localization.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that cytoplasmic diffusion of any of the pathway intermediates would attenuate the effect on mitochondrial localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "4f710ec8-50c7-4fc2-9e12-f8994bf7910d",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C103",
+      "claim": "The simplified model gives an upper limit on the extent to which mitochondria can localize at high glucose regions through the Milton modification mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simplified model thus gives an upper limit on the extent to which mitochondria can localize at high glucose regions through the Milton modification mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the implications of the model assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "0ca99696-3f90-457b-8e0a-45420cdea475",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C105",
+      "claim": "The formulation with a continuous mitochondrial density faithfully represents the behavior of simulations with discrete mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "The formulation with a continuous mitochondrial density faithfully represents the behavior of simulations with discrete mitochondria, as illustrated in Figure 2b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing the continuous and discrete models in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "d00e3e84-c06c-4ddf-8dd7-b8e028dd319b",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "claim_id": "C107",
+      "claim": "Dimensional analysis indicates that three of the six parameters can be used to define units of time, length, and glucose concentration, leaving three dimensionless groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimensional analysis indicates that three of these parameters can be used to define units of time, length, and glucose concentration, leaving three dimensionless groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result of dimensional analysis of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "47bac6cb-afee-45f1-819e-171a4d809612",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate through quantitative modeling that physiological brain glucose levels (0.7-1.3 mM) fall within the narrow parameter range where glucose-dependent mitochondrial localization can enhance neuronal metabolism. The model predicts mitochondrial localization at nodes of Ranvier occurs for glucose levels below approximately 2 mM, and that this mechanism is plausible for metabolic flexibility in neurons with spatially heterogeneous glucose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C37, C38, C62, C66, C73 collectively demonstrate strong overlap between physiological glucose concentrations and model predictions for effective mitochondrial localization. The modeling framework (C3, C67, C70, C71) provides mechanistic support showing this occurs within a limited glucose range requiring both spatial variation and subsaturating glucose levels. The convergence of empirical glucose measurements with model predictions provides robust support for this major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "4edf1fad-3eed-4fad-bb88-3d100739f571",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The model identifies three necessary conditions for mitochondrial localization via glucose-dependent halting: (1) glucose concentration must be higher at the source than in bulk cytoplasm, (2) glucose levels cannot be too high or both consumption and stopping rates saturate, and (3) mitochondria must spend substantial time in the stationary state, which requires intermediate glucose concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 logically derive necessary conditions from the model structure, while C33 provides experimental validation that ~95% of mitochondria are stationary at high glucose. These conditions are internally consistent with the Michaelis-Menten kinetics framework and define the operational parameter space for the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "813d7fe7-3c58-4426-993e-eba1a451b918",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model predicts that localizing mitochondria to glucose entry points can enhance metabolic flux by up to 40% at physiological glucose levels (1 mM), with even greater enhancement under hypoglycemic conditions (0.1 mM). This enhancement can be modulated by the cell through regulating glucose entry and consumption rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C63 establish the metabolic enhancement prediction from the model, supported by Figure 5 and Figure 6e data. Claims C41, C68, C69 extend this to show the effect is tunable and physiologically relevant. The quantitative predictions are internally consistent with the model framework, though experimental validation of the predicted enhancement magnitude is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "40a583b6-2559-406b-b5e3-9884a9c8c527",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model makes several simplifying assumptions: rapid glucose transport at nodes, all mitochondrial pauses are O-GlcNAcylation events, OGA activity is glucose-independent, UDP-GlcNAc production scales with hexokinase activity, and all metabolic intermediates are mitochondria-localized. These assumptions represent an upper limit on mitochondrial localization effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C103 explicitly state model assumptions and acknowledge their limitations. C102-C103 correctly note that relaxing these assumptions (e.g., allowing cytoplasmic diffusion of intermediates) would attenuate the predicted effects, making this an upper-bound estimate. The transparency about assumptions and their implications is appropriate for a theoretical modeling study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "aceb140f-f3d3-4323-8bca-f8d323cd5404",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The continuous mitochondrial density formulation faithfully represents discrete mitochondria simulations (Figure 2b), and dimensional analysis reduces the six-parameter system to three dimensionless groups that capture the essential physics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C105 is directly validated by Figure 2b showing agreement between discrete and continuous models. Claim C107 follows from standard dimensional analysis. This methodological validation supports the use of the continuous model for subsequent analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "687b6aa3-476c-458c-986a-5def1c48fd8a",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In the glucose gradient model with uniform permeability, there is a steep transition between regimes where glucose entry exceeds consumption versus where consumption dominates. Neurons can regulate this transition through modulating glucose transporter density and hexokinase activity, and the physiological glucose range overlaps with the high mitochondrial accumulation region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 describes a key model prediction about the transition between metabolic regimes controlled by the \u03b3 parameter. Claims C58 and C62 connect this to biological regulation and physiological relevance. The predictions are internally consistent with the model structure and supported by Figure 6d-f, though direct experimental validation is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "af9dde12-67e6-4ac2-a582-624c07fa6769",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Prior experimental work has shown that mitochondria in rat axons halt active transport in high glucose regions through OGT-mediated glycosylation of Milton, leading to mitochondrial accumulation at glucose-rich regions in cultured neurons. This mechanism is postulated to regulate mitochondrial spatial distribution for efficient metabolic response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C19, C20 cite published experimental evidence (Pekkurnaz et al., 2014) establishing the glucose-dependent halting mechanism. Claim C21 appropriately characterizes this as a postulate/hypothesis that the current modeling work aims to evaluate quantitatively. The distinction between established observations and hypotheses is clear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "152ea563-9d0d-453d-b965-06e87b62e005",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Experimental manipulation of OGT signaling shows that upregulating OGT decreases motile mitochondria by 3-fold while reducing OGT nearly doubles the motile fraction, indicating substantial OGT-dependent mitochondrial stopping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 cite published experimental data (Pekkurnaz et al., 2014) that validates the importance of OGT in mitochondrial stopping. This provides empirical support for the model's focus on glucose-OGT-mediated transport regulation, though the model assumes all stopping is OGT-mediated (an acknowledged simplification).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "832b5639-64be-4916-aa1b-d556afb688fe",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Neuronal glucose transporters are bidirectional, and neurons express efficient GLUT3 transporters highly concentrated at nodes of Ranvier. Hexokinase 1 (HK1), the predominant neuronal form, localizes to mitochondria (~1 \u03bcm organelles in axons). The model assumes glucose import at nodes is not rate-limiting under physiological conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25, C44-C45 cite established literature on neuronal glucose handling and enzyme localization. Claim C46 is a reasonable modeling assumption given the high efficiency and concentration of GLUT3 at nodes. These biological details appropriately constrain the model parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "d5bdc60d-929a-43a2-91d3-6e3267a4f6bc",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mitochondria have been shown to accumulate at nodes of Ranvier in response to neuronal firing activity. The glucose-dependent halting mechanism provides an additional driving force for this localization even in quiescent neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 cites prior experimental observations of activity-dependent mitochondrial accumulation. Claim C80 appropriately positions the glucose-dependent mechanism as complementary to, rather than replacing, calcium-dependent mechanisms. This contextualizes the model's contribution within existing knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript establishes biological context: neurons have meter-scale axons with spatially/temporally heterogeneous metabolic demand, rely primarily on glucose, and can experience substantial spatial variation in glucose supply. Mitochondria are critical for neuronal ATP production and health, localize to high-demand regions, and their transport defects contribute to neurological disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C18 provide well-cited background establishing the biological motivation for the study. These claims appropriately reference published literature and established knowledge about neuronal metabolism, mitochondrial function, and glucose heterogeneity. This context justifies the modeling approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "0133fd80-d84d-4a86-a1bd-c89a40018beb",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Intracellular glucose can be significantly below extracellular levels with limited transport. Brain glucose exhibits substantial regional variation (>10-fold under hypoglycemia), and individual axons can traverse multiple brain regions, suggesting glucose-dependent mitochondrial localization may function even without localized glucose entry at nodes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 cite measurements of intracellular glucose in cultured cells. Claims C47-C48 cite evidence for regional brain glucose variation and long-range axonal projections. Claim C49 appropriately characterizes the extension to gradient scenarios as a possibility/hypothesis to be tested by modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "9ed236fa-9769-4b9a-a9fa-97588696659e",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript discusses additional regulatory mechanisms not included in the minimal model: metabolic feedback loops affecting UDP-GlcNAc production, glucose-dependent regulation of pathway enzymes (GFAT, OGT, OGA), hexokinase release from mitochondria triggered by glucose-6-phosphate, and activity-dependent recruitment of glucose transporters to synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84, C86, C88-C90, C92 cite published evidence for various regulatory mechanisms. Claim C87 logically infers that hexokinase release would negate localization benefits. These claims appropriately acknowledge model limitations and identify potential extensions, demonstrating awareness of biological complexity beyond the minimal model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    },
+    {
+      "id": "47b68c0f-29c3-46c9-93b0-7c791ccf0538",
+      "content_id": "417c6633-4028-4320-9910-baf061fa6261",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Misregulation of hexokinase and glucose transporters has been linked to various neurological disorders (depression, schizophrenia, autism, Alzheimer's, peripheral neuropathy). Glucose-dependent mitochondrial localization provides an additional control layer allowing cells to respond to spatial glucose heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 cite published associations between metabolic dysregulation and neurological disorders, providing clinical motivation. Claim C96 appropriately positions the proposed mechanism as complementary to known regulatory pathways. The connection to disease is speculative but reasonably motivated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T07:42:26.516473Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8c29b81b-4a13-4d63-a2ef-aa367193708c",
+      "result_id": "47bac6cb-afee-45f1-819e-171a4d809612"
+    },
+    {
+      "claim_id": "6ea1c17d-5968-45fe-807f-e12f854bde62",
+      "result_id": "47bac6cb-afee-45f1-819e-171a4d809612"
+    },
+    {
+      "claim_id": "e065487d-4dc9-42d8-b231-5987191f9b37",
+      "result_id": "47bac6cb-afee-45f1-819e-171a4d809612"
+    },
+    {
+      "claim_id": "20a18ce8-df62-4bb1-a273-df3966fe975e",
+      "result_id": "47bac6cb-afee-45f1-819e-171a4d809612"
+    },
+    {
+      "claim_id": "f0e100fd-3eb6-4b9d-84dd-11fbe482fc51",
+      "result_id": "47bac6cb-afee-45f1-819e-171a4d809612"
+    },
+    {
+      "claim_id": "6f8a7b46-717f-4576-b517-f76fb76d688c",
+      "result_id": "47bac6cb-afee-45f1-819e-171a4d809612"
+    },
+    {
+      "claim_id": "d03ea0fa-c5d9-4475-92cb-31a5b0b6c4e2",
+      "result_id": "47bac6cb-afee-45f1-819e-171a4d809612"
+    },
+    {
+      "claim_id": "5c5c74eb-220b-4b3c-9072-24e93fd90242",
+      "result_id": "47bac6cb-afee-45f1-819e-171a4d809612"
+    },
+    {
+      "claim_id": "5521a00e-4d50-4629-abe6-384748293cbc",
+      "result_id": "47bac6cb-afee-45f1-819e-171a4d809612"
+    },
+    {
+      "claim_id": "dfda85b8-aa6e-4c9c-8660-32448d0b45d5",
+      "result_id": "47bac6cb-afee-45f1-819e-171a4d809612"
+    },
+    {
+      "claim_id": "92bd0785-daf7-4980-9a84-a9dd4d6467d4",
+      "result_id": "4edf1fad-3eed-4fad-bb88-3d100739f571"
+    },
+    {
+      "claim_id": "6c85deec-160f-423b-afee-27ee400c4b35",
+      "result_id": "4edf1fad-3eed-4fad-bb88-3d100739f571"
+    },
+    {
+      "claim_id": "377880bf-7f2d-446c-8e76-59951241d9ed",
+      "result_id": "4edf1fad-3eed-4fad-bb88-3d100739f571"
+    },
+    {
+      "claim_id": "4abfef9c-499a-4c3b-b132-81e9b51359e4",
+      "result_id": "4edf1fad-3eed-4fad-bb88-3d100739f571"
+    },
+    {
+      "claim_id": "e50063d4-1340-4a86-a10e-d929709027d1",
+      "result_id": "813d7fe7-3c58-4426-993e-eba1a451b918"
+    },
+    {
+      "claim_id": "b7d9fc9b-5fcb-4659-9bf0-ab21a7fe9579",
+      "result_id": "813d7fe7-3c58-4426-993e-eba1a451b918"
+    },
+    {
+      "claim_id": "58a0cae6-e0cd-45d3-9e15-4c5e4fc3effc",
+      "result_id": "813d7fe7-3c58-4426-993e-eba1a451b918"
+    },
+    {
+      "claim_id": "6b39be12-51eb-47c6-a849-0e4b30a91dc3",
+      "result_id": "813d7fe7-3c58-4426-993e-eba1a451b918"
+    },
+    {
+      "claim_id": "4da764f5-1d1e-4534-8b3a-fb69b15836f9",
+      "result_id": "813d7fe7-3c58-4426-993e-eba1a451b918"
+    },
+    {
+      "claim_id": "e8c4a364-6516-4e40-870d-dcc0a09cea9d",
+      "result_id": "40a583b6-2559-406b-b5e3-9884a9c8c527"
+    },
+    {
+      "claim_id": "6bd86492-f0a3-4f5b-9b9a-6857a714b98f",
+      "result_id": "40a583b6-2559-406b-b5e3-9884a9c8c527"
+    },
+    {
+      "claim_id": "ee1cf087-ea7f-4bfb-ad32-de57a188ca4c",
+      "result_id": "40a583b6-2559-406b-b5e3-9884a9c8c527"
+    },
+    {
+      "claim_id": "186cab0b-377c-44c5-8ced-933b5568b73e",
+      "result_id": "40a583b6-2559-406b-b5e3-9884a9c8c527"
+    },
+    {
+      "claim_id": "34636d84-964f-4fe1-a21b-c2d67e118dcb",
+      "result_id": "40a583b6-2559-406b-b5e3-9884a9c8c527"
+    },
+    {
+      "claim_id": "04ef9cda-8a7a-4da1-a64f-92d316651cfd",
+      "result_id": "40a583b6-2559-406b-b5e3-9884a9c8c527"
+    },
+    {
+      "claim_id": "4f710ec8-50c7-4fc2-9e12-f8994bf7910d",
+      "result_id": "40a583b6-2559-406b-b5e3-9884a9c8c527"
+    },
+    {
+      "claim_id": "0ca99696-3f90-457b-8e0a-45420cdea475",
+      "result_id": "aceb140f-f3d3-4323-8bca-f8d323cd5404"
+    },
+    {
+      "claim_id": "d00e3e84-c06c-4ddf-8dd7-b8e028dd319b",
+      "result_id": "aceb140f-f3d3-4323-8bca-f8d323cd5404"
+    },
+    {
+      "claim_id": "adef3b78-1551-478b-9664-32c85ae62c70",
+      "result_id": "687b6aa3-476c-458c-986a-5def1c48fd8a"
+    },
+    {
+      "claim_id": "b27369b8-b0fd-43bd-bfac-aaabd4a2af04",
+      "result_id": "687b6aa3-476c-458c-986a-5def1c48fd8a"
+    },
+    {
+      "claim_id": "f0e100fd-3eb6-4b9d-84dd-11fbe482fc51",
+      "result_id": "687b6aa3-476c-458c-986a-5def1c48fd8a"
+    },
+    {
+      "claim_id": "e7e9394d-b803-4ac1-a009-4ecc5e782c7a",
+      "result_id": "af9dde12-67e6-4ac2-a582-624c07fa6769"
+    },
+    {
+      "claim_id": "acbf2a08-a1e2-4925-b000-390e576bf1a9",
+      "result_id": "af9dde12-67e6-4ac2-a582-624c07fa6769"
+    },
+    {
+      "claim_id": "74dbee81-2792-4d0d-bab5-8f2af9f1c6ec",
+      "result_id": "af9dde12-67e6-4ac2-a582-624c07fa6769"
+    },
+    {
+      "claim_id": "2ee8089a-f607-46e0-8b08-ff72af4ef228",
+      "result_id": "af9dde12-67e6-4ac2-a582-624c07fa6769"
+    },
+    {
+      "claim_id": "6e08a7df-b86e-45ee-a429-46cf32a0f5ff",
+      "result_id": "152ea563-9d0d-453d-b965-06e87b62e005"
+    },
+    {
+      "claim_id": "d3147b51-63f7-4d55-b8fb-bb209de22282",
+      "result_id": "152ea563-9d0d-453d-b965-06e87b62e005"
+    },
+    {
+      "claim_id": "0a29fe6e-e077-49cc-8265-54d965b4d6fe",
+      "result_id": "152ea563-9d0d-453d-b965-06e87b62e005"
+    },
+    {
+      "claim_id": "2e002c92-000e-4aeb-8f8a-79a89b6a21b0",
+      "result_id": "832b5639-64be-4916-aa1b-d556afb688fe"
+    },
+    {
+      "claim_id": "c3c29f8f-1077-4cc5-a472-7b2b998266eb",
+      "result_id": "832b5639-64be-4916-aa1b-d556afb688fe"
+    },
+    {
+      "claim_id": "f588778a-89c3-40f7-badc-b792a3f8d0ec",
+      "result_id": "832b5639-64be-4916-aa1b-d556afb688fe"
+    },
+    {
+      "claim_id": "4840f07a-e4ff-41cc-95fc-4866020f9cb7",
+      "result_id": "832b5639-64be-4916-aa1b-d556afb688fe"
+    },
+    {
+      "claim_id": "02710b8d-03d7-400a-8ed2-b3451c7b67e3",
+      "result_id": "832b5639-64be-4916-aa1b-d556afb688fe"
+    },
+    {
+      "claim_id": "bd511dc2-ef14-4d20-b933-a66b02cc90e2",
+      "result_id": "832b5639-64be-4916-aa1b-d556afb688fe"
+    },
+    {
+      "claim_id": "b2dd54ae-5957-4323-b38d-64f1dde74646",
+      "result_id": "832b5639-64be-4916-aa1b-d556afb688fe"
+    },
+    {
+      "claim_id": "766fe466-7b3c-4518-bc25-71b02dc2f23f",
+      "result_id": "d5bdc60d-929a-43a2-91d3-6e3267a4f6bc"
+    },
+    {
+      "claim_id": "b1f341f6-9564-440b-8906-2c151bc24558",
+      "result_id": "d5bdc60d-929a-43a2-91d3-6e3267a4f6bc"
+    },
+    {
+      "claim_id": "1fe3c5af-f12d-4280-828d-14034a805b7c",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "7edbe709-c248-4f42-8db9-8867eac82211",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "ed2a11c4-f6fe-4c2f-a925-b0b4782905bd",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "8b9b22fe-5fdf-4327-9373-c97c9c2b5fcd",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "07751131-e376-44f8-ae61-137cc71ecf4d",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "aeceba62-7007-4803-ba06-0b462776eb47",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "1c10edcb-0658-4358-86c3-1fdf7a0f84d9",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "8f7d06bc-ab21-440c-a8cd-e9bb77bc43b8",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "6e8bc801-34af-43a9-9193-1adf93b67863",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "b1ea8c37-8bdf-4716-b8d6-5ddc72545ead",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "a24156ab-a618-4f91-9efa-700d8625c0fb",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "87f7b3da-cb46-4c53-a49e-e935780061d7",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "110efecc-9463-4b68-bc96-acac38df5b6f",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "c471b0f2-c3ad-4136-9ae4-12b3ce2c7274",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "ce5a7f35-ff59-4d3f-a324-07e20476eae9",
+      "result_id": "6ef8c7d6-1659-4bea-9dc1-4fd3409569fc"
+    },
+    {
+      "claim_id": "dfab98f0-eac1-4cd2-836c-2ffe6f6d5fbd",
+      "result_id": "0133fd80-d84d-4a86-a1bd-c89a40018beb"
+    },
+    {
+      "claim_id": "7d2730b2-d6ac-4330-a4b6-885cb97f7bdb",
+      "result_id": "0133fd80-d84d-4a86-a1bd-c89a40018beb"
+    },
+    {
+      "claim_id": "5f1906df-ae96-4cac-9329-960e534e6e63",
+      "result_id": "0133fd80-d84d-4a86-a1bd-c89a40018beb"
+    },
+    {
+      "claim_id": "8e575a2e-0874-481f-a6ce-82b0d457a848",
+      "result_id": "0133fd80-d84d-4a86-a1bd-c89a40018beb"
+    },
+    {
+      "claim_id": "799a4c9c-2588-48d4-bf7f-a901a1986d6f",
+      "result_id": "0133fd80-d84d-4a86-a1bd-c89a40018beb"
+    },
+    {
+      "claim_id": "506b013d-22b7-4803-aa65-a81318d52411",
+      "result_id": "9ed236fa-9769-4b9a-a9fa-97588696659e"
+    },
+    {
+      "claim_id": "60e7c0ad-f82c-4e8a-ba78-b29adaffee88",
+      "result_id": "9ed236fa-9769-4b9a-a9fa-97588696659e"
+    },
+    {
+      "claim_id": "2236afec-36ee-47c7-9738-94e2b3719e0e",
+      "result_id": "9ed236fa-9769-4b9a-a9fa-97588696659e"
+    },
+    {
+      "claim_id": "a4e26103-44e1-4411-9149-03b8a5a193e1",
+      "result_id": "9ed236fa-9769-4b9a-a9fa-97588696659e"
+    },
+    {
+      "claim_id": "9f5d3b85-bb02-4850-9b8c-0776f16762ad",
+      "result_id": "9ed236fa-9769-4b9a-a9fa-97588696659e"
+    },
+    {
+      "claim_id": "61091798-a56c-44d5-9548-966463e2dbc8",
+      "result_id": "9ed236fa-9769-4b9a-a9fa-97588696659e"
+    },
+    {
+      "claim_id": "71b61552-91bd-478a-bd51-46907d7c15bf",
+      "result_id": "9ed236fa-9769-4b9a-a9fa-97588696659e"
+    },
+    {
+      "claim_id": "bc3afe8d-e880-408b-b2f0-9568f1096beb",
+      "result_id": "9ed236fa-9769-4b9a-a9fa-97588696659e"
+    },
+    {
+      "claim_id": "e4c58857-00af-4686-8dd9-84a4738e403a",
+      "result_id": "9ed236fa-9769-4b9a-a9fa-97588696659e"
+    },
+    {
+      "claim_id": "ecc502cd-acc5-4e7d-a549-60a439fe72d8",
+      "result_id": "9ed236fa-9769-4b9a-a9fa-97588696659e"
+    },
+    {
+      "claim_id": "6c61b00a-d0bb-4546-a7f7-cfe9dbaf2f31",
+      "result_id": "47b68c0f-29c3-46c9-93b0-7c791ccf0538"
+    },
+    {
+      "claim_id": "7e9e64ad-8b61-4316-a19f-8e770c5b1f5b",
+      "result_id": "47b68c0f-29c3-46c9-93b0-7c791ccf0538"
+    },
+    {
+      "claim_id": "d0b6b35c-0534-41f0-9ff6-5df508f3fffc",
+      "result_id": "47b68c0f-29c3-46c9-93b0-7c791ccf0538"
+    },
+    {
+      "claim_id": "71012faf-6765-4eef-b78d-3f4bf113defc",
+      "result_id": "47b68c0f-29c3-46c9-93b0-7c791ccf0538"
+    }
+  ],
+  "comparisons": []
+}

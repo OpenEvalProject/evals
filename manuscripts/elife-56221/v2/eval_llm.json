@@ -1,0 +1,459 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Thymic morphological changes including cortical thinning and medullary island coalescence were evident by 4 weeks of age in female C57BL/6 mice (C28). These gross tissue changes coincided with changes in thymocyte and TEC cellularity (C29), with total thymic and TEC cellularity halving between 4 and 16 weeks of age (C30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are well-supported by histological data (Figure 1a) and cellularity measurements (Figures 1b,c). The findings are corroborated by previous studies (Gray et al., 2006; Manley, 2011; Ki et al., 2014), providing strong evidence for age-related thymic involution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Negative selection of CD8+ SP thymocytes increased after the first week of life (Wave 1b) (C31), while the proportions of both CD4+ and CD8+ semi-mature thymocytes undergoing negative selection in the medulla diminished with age (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by flow cytometry data shown in Figure 1d and supplementary figures. The opposing trends in different thymocyte populations provide clear evidence of age-dependent changes in negative selection dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "TCR sequencing of mature CD4+ SP thymocytes revealed that 1-week-old mice exhibited shorter CDR3 lengths (C33) and lower proportions of non-productive TCR sequences (C34) than older mice. V(D)J segment usage was altered by age (C35), with approximately one-third of \u03b2 chain V or J segments showing age-dependent use (C36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by TCR-seq data shown in Figure 1\u2014figure supplement 2e,f and Figure 1e,f. The findings demonstrate age-related changes in TCR repertoire composition with appropriate statistical analysis and sample sizes determined by simulation (Figure 1\u2014figure supplement 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "TCR repertoire diversity among the most mature thymocytes increased significantly over age (C37), along with increased incorporation of non-templated nucleotides (C38). This increase in non-templated nucleotides is inversely correlated with post-puberty decline in terminal deoxynucleotidyl transferase expression (C39).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by TCR-seq data (Figure 1g,h) with statistical significance demonstrated (p=7.92\u00d710\u207b\u00b3 for Shannon entropy). C39 provides a mechanistic interpretation supported by citation (Cherrier et al., 2002), though the inverse correlation is inferred rather than directly demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Single-cell RNA-sequencing identified nine TEC subtypes (C40), providing greater richness than previously appreciated (C41). Four novel subtypes were identified: perinatal cTEC (marked by Syngr1, Gper1) (C42, C43), Intertypical TEC (Ccl21a, Krt5) (C44), neural TEC (Sod3, Dpt) (C45), and structural TEC (Cd177, Car8) (C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are well-supported by single-cell RNA-seq data (Figure 2b,c) with marker gene expression validated (Figure 2\u2014figure supplements 4-6). The classification is robust to different clustering methods (Figure 2\u2014figure supplement 7) and provides greater resolution than previous studies (Bornstein et al., 2018; Park et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Neural TEC (nTEC) lack expression of Rest (RE1 silencing transcription factor) (C47) and express genes silenced by REST including Snap25, Chga, and Syp (C48), markers shared with enteroendocrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by single-cell RNA-seq data with appropriate citations (Nechiporuk et al., 2016; Borges et al., 2010; Engelstoft et al., 2015). The characterization of nTEC as having neurotransmitter-like properties is novel and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Structural TEC (sTEC) express numerous collagens and proteoglycans indicating a possible role in extracellular matrix maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by single-cell RNA-seq data showing expression of extracellular matrix genes (Col1a1, Dcn, Fbn1). However, the functional role is speculative and would require additional validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Perinatal cTEC were derived almost exclusively from the cytometric cTEC population (C50) and express \u03b2\u22125t encoded by Psmb11 (C51), which is a component of the cortical thymoproteosome and TEC progenitor marker (C52). These cells were characterized by a highly proliferative transcriptional signature (C53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by single-cell RNA-seq data (Figure 2c, Figure 2\u2014figure supplement 4, 6) with appropriate citations for \u03b2\u22125t function (Mayer et al., 2016; Ohigashi et al., 2013). The proliferative signature is clearly demonstrated in pathway enrichment analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Intertypical TEC were present in both cortical and medullary subpopulations (C54) and expressed progenitor-like TEClo markers (C55). They displayed restricted \u03b2\u22125t expression yet had transcripts for other canonical cTEC markers (C56), illustrating that conventional cTEC FAC-sorting captures heterogeneous cells (C57). Intertypical TEC express markers concordant with previously described CMJ populations (C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are well-supported by single-cell RNA-seq data (Supplementary file 1-table 4) and comparison with previous studies (Mayer et al., 2016). The heterogeneity revealed by scRNA-seq provides important insights into limitations of conventional FACS-based classifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Intertypical TEC might provide the progenitors of mature mTEC found at high density at the CMJ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is speculative based on marker gene expression patterns and comparison with previous studies. While the data are suggestive, definitive proof of progenitor function requires lineage-tracing experiments, which are provided later in the manuscript (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The cellular abundance of most TEC subtypes (6 of 9) varied significantly over age (C60). Perinatal cTEC represented approximately one-third of all TEC at week 1 but less than 1% three weeks later (C61), while mature cTEC and Intertypical TEC increased to ~30% and ~60% respectively by 1 year (C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by statistical modeling using negative binomial GLM (Figure 3b,c) with appropriate multiple testing correction (FDR 1%). The dramatic changes in TEC subtype composition are clearly demonstrated and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Many ageing signatures characteristic of diverse organs and species were evident in individual ageing TEC subtypes (C63). Mature mTEC showed up-regulation of inflammatory signaling, apoptosis, and KRAS signaling (C64) and down-regulation of cholesterol homeostasis and oxidative phosphorylation (C65). Intertypical TEC displayed an opposite pattern with decreased cytokine signaling (C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by gene set enrichment analysis (Figure 3a) comparing to established ageing signatures (Benayoun et al., 2019). The opposing patterns between mature mTEC and Intertypical TEC are clearly demonstrated and provide important insights into cell-type-specific ageing processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Mouse thymus involution is mirrored by alterations in both TEC subtype composition and transcriptional states (C67). The transcriptional signature of inflamm-ageing was restricted to mature cTEC and mTEC (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are well-supported summary conclusions from the single-cell RNA-seq analysis (Figure 3\u2014figure supplement 1). The restriction of inflamm-ageing signatures to mature TEC subtypes is clearly demonstrated and represents an important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Promiscuous gene expression (PGE) of AIRE-controlled genes was diminished at later ages even when Aire transcripts persisted (C69). Tissue-restricted antigens from eye, pancreas, and epididymis showed striking reductions (C70), while macrophage-associated transcripts increased (C71). PGE in mature mTEC is increasingly compromised with age (C72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by tissue-restricted antigen analysis (Figure 4b,d) using negative binomial modeling with appropriate statistical testing (FDR 1%). The findings demonstrate functional decline in self-antigen representation, though the mechanism beyond AIRE abundance remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Intertypical cells represent a TEC progenitor state (C73), exhibiting transcriptional signatures including marker genes for both mature cTEC and mature mTEC (C74) and expressing markers associated with previously described mTEC precursors (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by single-cell RNA-seq data (Supplementary file 1-tables 2,4) and comparison with previous studies. However, definitive proof of progenitor function requires lineage-tracing, which is provided in subsequent experiments (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "ZsG+ cells from 1-week-old mice were predominantly classified as mature mTEC or Intertypical TEC (C77) and lie on a common differentiation trajectory from Intertypical TEC to mTEC lineage (C78). Intertypical TEC and mature mTEC are derived from a common \u03b2\u22125t+ progenitor (C79), and Intertypical TEC include cells with potential to differentiate into mTEC (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are well-supported by lineage-tracing experiments using 3xtg\u03b25t mice combined with single-cell RNA-seq (Figure 5). Random forest classification and diffusion map analysis provide strong evidence for the progenitor-progeny relationship, though the analysis is limited to 1-week-old mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The majority of cTEC in 1-week-old mice were labelled after 2 days of doxycycline treatment (C81), but this fraction declined considerably in 4-week-old mice (C82). An accumulation of mTEC was noted 28 days after labelling 1-week-old mice (C83), but accumulation of ZsG+ cells in 16-week-old mice was not maintained 4 weeks later (C84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by pulse-chase lineage-tracing experiments (Figure 6a) with appropriate replicates (n=5 mice). The findings demonstrate age-dependent changes in TEC dynamics, though the interpretation requires integration with other data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Ageing Intertypical TEC displayed evidence of progressive quiescence, illustrated by down-regulation of Myc target genes (C85) and expression of Itga6 (CD49f), a marker of quiescent radioresistant TEC (C86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by gene set enrichment analysis (Figure 3a) and marker gene expression (Supplementary file 1-table 2) with appropriate citation (Dumont-Lagac\u00e9 et al., 2017). The evidence for quiescence is strong and provides mechanistic insight into thymic involution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Most sorted ZsG+ cells were concordant with Intertypical TEC phenotype across all ages (C87), with their proportion increasing with age (C88). Fewer ZsG+ mature cTEC (~30%) were captured from 1-week-old mice compared to older animals (\u226580%) (C89). ZsG+ cells increased modestly in mature mTEC reflecting longer half-life (C90), while ZsG+ proliferating TEC declined (C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by droplet single-cell RNA-seq of lineage-traced cells (Figure 6d,e) with appropriate quality control and demultiplexing. The findings demonstrate age-dependent accumulation of Intertypical TEC and provide strong evidence for their quiescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A single cortical trajectory and bifurcating medulla lineage originate from Intertypical TEC (C92). There was considerable increase in ZsG+ cells in the earliest progenitor state (State 1) of the medulla lineage (C93) and concordant decline in mature mTEC (State 3) (C94), indicating that age-related expansion of Intertypical TEC is a consequence of constrained differentiation into mature mTEC (C95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by diffusion pseudotime analysis (Figure 7) with statistical modeling using Poisson GLM (p<10\u207b\u00b9\u2076 for State 1, p=7.25\u00d710\u207b\u2076\u2070 for State 3). The analysis provides strong evidence for a differentiation block, though alternative explanations (e.g., increased cell death) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11"
+    ],
+    "result": "Mouse ageing leads to less efficient T cell selection (C3), decreased self-antigen representation (C4), and increased TCR repertoire diversity (C5). Ageing disrupts thymic progenitor differentiation (C10) and impairs core immunological functions of the thymus (C11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C10-C11 are high-level summary conclusions supported by multiple lines of evidence including flow cytometry (Figure 1d), TCR-seq (Figure 1g), TRA analysis (Figure 4), and lineage-tracing (Figures 5-7). The conclusions are well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Progenitor cells are the principal targets of ageing in the thymus (C6), whereas the function of individual mature thymic epithelial cells is compromised only modestly (C7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 are supported by the combination of single-cell RNA-seq showing modest transcriptional changes in mature TEC (Figure 3\u2014figure supplement 1) and lineage-tracing showing dramatic changes in progenitor dynamics (Figures 6-7). This represents a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "An early-life precursor cell population (perinatal cTEC) retained in the mouse cortex postnatally is virtually extinguished at puberty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 is supported by single-cell RNA-seq showing perinatal cTEC represent ~33% of TEC at week 1 but <1% by week 4 (Figure 3b). This dramatic loss represents a major finding about cortical TEC dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "A medullary precursor cell (Intertypical TEC) quiesces during ageing, impairing maintenance of the medullary epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by evidence of Intertypical TEC quiescence (C85-C86), accumulation (C87-C88), and differentiation block (C93-C95). This represents a major mechanistic finding about thymic involution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Re-modelling of TEC maturation and inflamm-ageing alter thymus function resulting in increased TCR diversity (C96). Diminution of mature TEC cellularity and blockage of TEC maturation contribute to reduced self-antigen presentation (C97) and less efficient negative selection (C98), consistent with age-related thymic involution features (C99).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are well-supported summary conclusions integrating multiple findings from the study. The mechanistic links between TEC changes and functional outcomes are clearly demonstrated, though some aspects remain correlative rather than causally proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The involuting thymus is rapidly purged of its distinctive perinatal cTEC population (C100), likely resulting in further loss of antigen-presenting cTEC and reduced support of thymocyte maturation (C101).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is well-supported by data (Figure 3b). Claim C101 is speculative about functional consequences, though reasonable given the proliferative and antigen-presenting characteristics of perinatal cTEC. Additional experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "TEC changes impair maintenance of central tolerance and could explain increased incidence of autoimmunity with advancing age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is speculative about clinical implications. While the data support impaired central tolerance (reduced TRA expression, less efficient negative selection), the link to autoimmunity incidence is correlative and would require additional studies in autoimmune disease models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "CD4+ thymocytes contribute to maintenance of mature Aire+ mTEC (C103), and the overall decrease in CD4+ thymocyte cellularity with age may play a role in loss of mature mTEC (C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C103 is supported by citation (Irla et al., 2008). Claim C104 is speculative based on correlation between CD4+ thymocyte decline (Figure 1\u2014figure supplement 1) and mTEC loss. The causal relationship is not demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The altered transcriptomes of mature TEC subtypes reflect the functional changes they are undergoing with advancing age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is a well-supported summary conclusion integrating transcriptional changes (Figure 3) with functional outcomes (Figures 1, 4). The study provides strong evidence linking molecular and functional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Ageing leads to cellular senescence, imbalanced tissue maintenance, cell death and compromised organ function (C1), first observed in the thymus (C2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent established knowledge about ageing and thymic involution, appropriately cited and providing context for the study. These are background claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims about inflamm-ageing (C12-C13), thymus structure and function (C14-C19), and thymic involution in humans (C20-C27) provide established context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C27 represent established knowledge appropriately cited from previous literature. These provide necessary background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Mature mTEC are derived from progenitor cells located at the CMJ which express \u03b2\u22125t.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is established knowledge from previous work (Mayer et al., 2016; Ohigashi et al., 2013) that provides important context for the lineage-tracing experiments in this study.",
+    "result_type": "MINOR"
+  }
+]

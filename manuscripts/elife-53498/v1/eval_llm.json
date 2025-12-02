@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C38",
+      "C39"
+    ],
+    "result": "Uncorrected sequential hypothesis testing on the same dataset by multiple researchers dramatically inflates false positive rates. Simulations with 100 sequential tests where true covariance was 0 showed nearly 100% probability of at least one false positive, far exceeding the desired 5% familywise error rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C16, C38, and C39 are strongly supported by simulation data (Figure 1A) demonstrating that uncorrected sequential testing leads to dramatically increased false positive rates. The simulation methodology is clearly described with appropriate null hypothesis conditions (covariance=0), and results show the probability of false positives approaches 1.0 with 100 tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C41",
+      "C43",
+      "C46"
+    ],
+    "result": "Three sequential correction procedures (\u03b1-debt, \u03b1-spending, \u03b1-investing) can reduce false positives compared to uncorrected sequential testing. Simulations show \u03b1-spending and \u03b1-investing maintain familywise error rate below 0.05, while \u03b1-debt allows controlled increase but ensures type II error equal to or better than Bonferroni.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C41, C43, and C46 are supported by simulation results (Figures 1B-D) showing all three sequential correction methods reduce false positives relative to uncorrected testing. The mathematical properties of each method are described and simulation results confirm their behavior, though \u03b1-debt's mathematical guarantee (C41) lacks explicit proof in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C53"
+    ],
+    "result": "The order of sequential tests critically affects performance of sequential correction procedures. Sequential methods show increased true positive rates when true positives appear earlier in the test sequence, while uncorrected and simultaneous correction procedures are order-independent. Uncorrected procedures show very high false positive and false discovery rates regardless of order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C53 are supported by simulation results (Figure 2) that systematically vary test order using the \u03bb parameter. The simulations appropriately test order effects and show clear differential performance, with sequential methods being order-sensitive while simultaneous methods are not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C64"
+    ],
+    "result": "Empirical analysis of HCP data demonstrates that sequentially uncorrected tests produce 30/44 positive findings and 29/30 publications with positive results (1,400% increase) compared to baseline of 2 findings with simultaneous correction. Sequential correction procedures (\u03b1-spending, \u03b1-investing) can be more conservative than Bonferroni.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C58, and C64 are supported by empirical analysis on HCP data (Figure 3, C89-C91). The analysis uses 12,376 statistical tests on real neuroimaging data and clearly demonstrates the dramatic increase in positive findings without sequential correction. The comparison to simultaneous correction baselines is appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C18",
+      "C68",
+      "C69",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "No sequential correction procedure can simultaneously satisfy all three desiderata (sharing incentive, open access, stable false positive rate). \u03b1-spending violates sharing incentive and open access; \u03b1-investing violates open access and potentially stable false positive rate; \u03b1-debt violates stable false positive rate but best preserves other desiderata.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C18, and C68-C75 present logical analysis of trade-offs between correction procedures and desiderata, supported by Table 1 and simulation/empirical results. The reasoning about practical implementation challenges and incentive structures is sound, though some aspects (e.g., C68, C69, C71) are speculative inferences about researcher behavior rather than empirically demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The potential of a dataset to identify new statistically significant relationships decays over time as the number of sequential statistical tests increases when controlling for sequential tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported as a general conclusion from both simulation (Figures 1-2) and empirical analyses (Figure 3). The 'dataset decay' concept is demonstrated through decreasing \u03b1 thresholds in sequential correction procedures and reduced ability to detect true positives in later tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Sequential tests on open data performed by different researchers at different times can constitute the same statistical family. Neither temporal displacement nor different investigators performing tests is sufficient to create a new statistical family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 present a logical argument about statistical family definitions. The reasoning is sound: allowing time or investigator identity to define new families would enable trivial circumvention of multiple testing corrections. This is a conceptual/theoretical result rather than empirical, but the logic is internally consistent and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The empirical analysis used 68 cortical thickness estimates and 182 behavioral measures from the HCP 1200-subject dataset, resulting in 12,376 statistical tests across 182 linear models with appropriate ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 describe the empirical dataset and analysis methodology. These are straightforward methodological claims supported by appropriate citations (Van Essen et al., 2012, 2013) and IRB documentation. The dataset and analysis parameters are clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C20"
+    ],
+    "result": "Simultaneous correction procedures correct for all tests at once, while sequential procedures correct for the latest in a non-simultaneous series of tests. A statistical family is a set of tests related to the same error rate (familywise error).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, and C20 are definitional statements about statistical correction procedures and families. These are standard statistical concepts accurately described and form the foundation for the manuscript's arguments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "There has been a recent push toward open data sharing, which allows researchers to reproduce analyses and ask new questions of existing datasets, potentially making research more efficient and yielding new discoveries. The availability of open datasets will increase as funders mandate data sharing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 describe the open data movement and are supported by appropriate citations (Nosek et al., 2015; Molloy, 2011; Pisani et al., 2016; Weston et al., 2019; McKiernan et al., 2016). These are contextual claims establishing motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The definition of a statistical family has been challenging to precisely define, with considerable disagreement about inclusion criteria. Generally, tests are considered part of a family when exploring multiple variables without predefined hypotheses or when multiple tests support the same research questions. Recommendations direct researchers to define families a priori.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 discuss the ambiguity in defining statistical families, supported by multiple citations (Cox, 1965; Games, 1971; Hancock and Klockars, 1996; Hochberg and Tamhane, 1987; Miller, 1981; Maxwell and Delaney, 2004; Cramer et al., 2016). The factorial ANOVA example effectively illustrates the disagreement in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "There has been effort to distinguish exploratory from confirmatory research, with one prominent definition requiring preregistration before seeing data. Current practice of releasing data with publications means data reuse may be guided by previous analyses (HARKing-like problem), making most open data reuse exploratory unless preregistered, though some argue confirmatory analyses on open data are possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 discuss the exploratory/confirmatory distinction in the context of open data, supported by citations (Open Science Collaboration, 2015; Wagenmakers et al., 2012; Button, 2019; Jebb et al., 2017; Weston et al., 2019). The logical inference about data reuse being exploratory (C32) follows from the cited definition, though alternative views are acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "fMRI BOLD activation was found in a dead salmon when appropriate corrections for multiple tests were not performed, illustrating consequences of uncorrected simultaneous statistical tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 references the famous Bennett et al. dead salmon study (2009, 2010) as an illustrative example of multiple testing problems. This is an accurate citation of prior work used for pedagogical purposes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "\u03b1-spending constrains the sum of all statistical thresholds to never exceed total \u03b1-wealth. \u03b1-investing allows significance thresholds to increase or decrease with additional tests and ensures control of false discovery rate at an assigned level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44, and C45 describe properties of \u03b1-spending and \u03b1-investing methods from Foster and Stine (2008). These are accurate descriptions of previously published methods, appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Sequential correction procedures are harder to implement than simultaneous procedures as they require keeping track of the total number of tests performed by others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is a logical inference about practical implementation challenges. This is self-evidently true: sequential correction requires knowledge of all previous tests, which is more difficult than knowing only one's own tests for simultaneous correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "There is a bias towards publication of positive findings compared to null findings (file drawer problem), which makes implementing sequential correction procedures problematic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 references the well-established file drawer problem (Rosenthal, 1979) and correctly identifies it as a challenge for sequential correction implementation. This is an accurate citation of prior work and valid concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Multiple comparisons in Bayesian frameworks are often circumnavigated by partial pooling and regularizing priors. While Bayesian statistics can suffer from similar problems as NHST if misapplied, it may provide an avenue for avoiding sequential correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C81 discuss Bayesian approaches to multiple comparisons, supported by appropriate citations (Gelman et al., 2013; Kruschke and Liddell, 2017; Gigerenzer and Marewski, 2014). The discussion acknowledges both potential advantages and limitations of Bayesian methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Overfitting is a well-known problem when creating predictive models, and reusing test data will occur with sequential open data reuse. Machine learning has developed reusable held-out data methods, though cross-validation may not be optimal for small sample sizes common in open data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 discuss prediction frameworks and overfitting, supported by citations (Dwork et al., 2015, 2017; Rogers et al., 2019; Varoquaux, 2018). The discussion accurately represents established knowledge about overfitting and recent developments in adaptive data analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "In exploratory data analysis (EDA), the primary utility is generating hypotheses and testing method assumptions. Accepting that all analyses on open data are EDA would involve less focus on statistical inference, making the sequential testing problem disappear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 discuss EDA as a potential solution, supported by citations (Donoho, 2017; Jebb et al., 2017; Thompson et al., 2020; Tukey, 1980). The logical inference that treating all open data analyses as exploratory eliminates the sequential testing problem is sound, though the authors acknowledge this requires institutional change.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Ensuring findings are replicated using independent samples will greatly decrease the false positive rate, since the chance of two identical false positive relationships occurring, even on well-explored datasets, is small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is a logical inference about the value of replication. This is statistically sound reasoning: the probability of the same false positive occurring independently in two datasets is the product of individual false positive probabilities, which is very small.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9"
+    ],
+    "result": "Open data allows researchers to explore datasets in new ways. Currently, researchers reusing datasets tend to correct for their own statistical tests, but it is important to account for all statistical tests performed on the datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, and C9 establish the paper's motivation and main argument. C1 and C8 describe current practices (general knowledge claims), while C9 states the paper's central thesis, which is subsequently supported by the simulation and empirical results.",
+    "result_type": "MAJOR"
+  }
+]

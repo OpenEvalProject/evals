@@ -1,0 +1,386 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C8",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C74",
+      "C78",
+      "C122",
+      "C123",
+      "C175"
+    ],
+    "result": "Mbf1, Rps3, and Asc1 cooperate to prevent frameshifting at inhibitory CGA codon pairs in yeast. Genetic screens identified mutations in MBF1 and RPS3 that cause frameshifting at CGA codon repeats. Epistasis analysis shows that Mbf1 and Rps3 function in a common pathway, while Asc1 plays a distinct but related role. This represents a eukaryotic-specific reading frame maintenance system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide strong genetic evidence that MBF1 mutations cause frameshifting (complementation, deletion phenotypes, sequencing of 19/19 mutants). Claims C60-C61 identify RPS3 mutations by whole genome sequencing. Claims C72-C74 demonstrate epistasis between mbf1\u0394 and RPS3 mutations, and claims C75-C78 show MBF1 overexpression suppresses RPS3 mutant phenotypes, supporting a common pathway. The data collectively support the main conclusion (C1, C122, C175).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C124"
+    ],
+    "result": "Mutations in RPS3 that allow frameshifting map to eukaryotic-conserved residues (S104, L113, G121, K108) located on two \u03b1-helices near the mRNA entry site on the ribosomal surface. These residues are conserved in eukaryotes but differ in bacteria and archaea, consistent with a eukaryotic-specific mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 identify specific RPS3 mutations by sequencing. Claims C64-C66 provide structural and evolutionary evidence for the location and conservation of these residues. The structural analysis (C64, C145) is supported by reference to PDB structure 3J78 shown in Figure 2A. The conservation pattern (C66, C124) supports the eukaryotic-specific nature of this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C94",
+      "C95",
+      "C132"
+    ],
+    "result": "Asc1 mediates distinct events including mRNA decay and RQC recruitment at CGA codon pairs, while also influencing the Mbf1/Rps3 reading frame maintenance pathway. Deletion of ASC1 increases mRNA levels and causes frameshifting, with the frameshifting effect disproportionate to the mRNA increase. The asc1\u0394 mbf1\u0394 double mutant shows similar protein/mRNA ratios to mbf1\u0394 alone, suggesting Asc1 influences the Mbf1 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 show that asc1\u0394 increases both mRNA and protein for in-frame reporters, while C86-C87 demonstrate that the >50-fold increase in frameshifted protein cannot be explained by the 2.7-fold mRNA increase alone. Claims C88-C89 provide epistasis data showing similar protein/mRNA in mbf1\u0394 and asc1\u0394 mbf1\u0394 mutants. Claims C91-C92 show MBF1 overexpression suppresses frameshifting in asc1\u0394. These data support distinct but related roles for Asc1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C116",
+      "C117",
+      "C165"
+    ],
+    "result": "Frameshifting occurs through a +1 shift with the CGA codon in the P site of the ribosome. Mass spectrometry analysis of purified frameshifted peptides identified the sequence VTNLRGTTWSHPQFEK, corresponding to a +1 frameshift beginning with CGA in the P site, yielding one Arg residue before switching to the glycine codon GGC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 provides direct mass spectrometry evidence for the frameshifted peptide sequence. The experimental design (C5, Figure 5A-C) includes appropriate controls (in-frame construct) and the peptide sequence unambiguously identifies the frameshift position and direction. This is strong biochemical evidence for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C164",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Frameshifting involves competition between tRNAs entering the A site, with the wobble interaction of the P site CGA codon destabilizing translation elongation. Overexpression of tRNAArg(CCG) (decoding in-frame CGG) reduces frameshifting, while overexpression of tRNAGly(GCC) (decoding +1 frame GGC) increases frameshifting. The wobble I\u2022A interaction in the P site may facilitate acceptance of out-of-frame tRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 provide experimental evidence that tRNA availability modulates frameshifting in the expected directions. The data show specific effects for relevant tRNAs and no effect for control tRNAs. Claims C166-C168 provide supporting evidence that CGA in the P site is important (6 of 7 frameshifting pairs are CGA-NNN). The mechanistic speculation (C169-C170) is reasonable but remains to be directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C106"
+    ],
+    "result": "Mbf1 and Asc1 act on the same inhibitory codon pairs. Frameshifting occurs with high efficiency at three codon pairs (CGA-CGA, CGA-CGG, CGA-CCG) in mbf1\u0394 mutants, the same pairs where Asc1 modulates in-frame expression. Lower levels of frameshifting occur at four additional pairs in asc1\u0394 mbf1\u0394 double mutants. Frameshifting was detected at the seven most slowly translated codon pairs in the yeast genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by data in Figure 4A-B showing frameshifting at specific codon pairs. Claims C99-C101 show differential effects in single versus double mutants. Claim C102 is supported by citation to previous work on translation rates. The data demonstrate overlapping substrate specificity for Mbf1 and Asc1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The CGA-CGG-C 7-mer sequence is required for efficient frameshifting. Mutations downstream of CGA-CGG eliminate frameshifting, while upstream changes have no effect. Frameshifting occurs at native yeast gene sequences containing CGA-CGG-C, indicating that frameshifting-prone contexts have not been eliminated from the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by systematic mutagenesis data in Figure 4D showing that downstream but not upstream changes affect frameshifting. Claims C112-C113 show frameshifting at 7/7 tested native sequences, with 2/2 sequences containing CGA-CGG-C showing frameshifting in single mutants (Figure 4E). This provides strong evidence for the sequence requirements and biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The RPS3-K108E mutation allows frameshifting at CGA codon repeats but does not affect in-frame expression. The RPS3-K108E mbf1\u0394 double mutant shows only slight increases over single mutants, indicating epistasis. Similar epistasis is observed for RPS3-S104Y and G121D mutations with mbf1\u0394.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by data in Figure 2B showing specific effects on frameshifted but not in-frame reporters. Claims C72-C73 demonstrate epistasis with quantitative data in Figures 2B-C. The epistasis analysis is appropriate and the lack of additivity supports a common pathway. The choice of K108E is justified by citation showing minimal effects on polysome/monosome ratio (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C91",
+      "C92",
+      "C93",
+      "C139"
+    ],
+    "result": "Overexpression of MBF1 suppresses frameshifting in RPS3 mutants and in asc1\u0394 mutants. MBF1 overexpression reduces frameshifted GFP to 30% in RPS3-S104Y and 60% in RPS3-G121D mutants, and to 1/3 in asc1\u0394 mutants. This suppression is not due to reduced Mbf1 abundance in asc1\u0394 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by data in Figure 2D and Figure 2\u2014figure supplement 1C showing dose-dependent suppression. Claims C91-C92 show similar suppression in asc1\u0394 with Western blot evidence that Mbf1 levels are not reduced. The overexpression experiments provide functional evidence for the relationships between these proteins. However, the mechanism of suppression (e.g., whether Mbf1 becomes limiting) remains speculative (C139).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Mbf1 and Asc1 regulate reading frame maintenance at translational pauses (no-go sites) but do not affect programmed frameshifting at TY1. In the absence of Mbf1 and Asc1, ribosomes frameshift efficiently at single CGA-CGG pairs in native yeast sequences. The coordinated activities of both pathways are important, with Mbf1/Rps3 preventing frameshifting and Asc1 mediating mRNA decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by data in Figure 4C showing frameshifting at no-go sequences in mutants. Claim C105 shows no effect on TY1 programmed frameshifting (Figure 4\u2014figure supplement 1C), demonstrating specificity. Claims C126-C127 summarize the main findings. The model of coordinated pathways (C128-C131) is supported by the epistasis and overexpression data, though some aspects remain speculative (C130).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Expression of a non-native exact-match tRNAArg(UCG)* suppresses the Ura+ frameshifting phenotype of mutant P25, confirming that inefficient decoding of CGA codons is required for frameshifting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by data in Figure 1C showing suppression of the Ura+ phenotype. Claim C45 cites previous work showing this tRNA enables efficient CGA decoding. This provides important validation that the frameshifting phenotype is specifically due to CGA codon translation problems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The frameshifting defect in mbf1 mutants is unlikely to be related to Mbf1's role in transcriptional activation via Gcn4. Frameshifting mbf1 point mutants show no growth defect on 3-AT, and deletion of GCN4 does not affect frameshifting in asc1\u0394 mutants. Mbf1 has been previously implicated in translation based on suppression of frameshifting mutations and weak ribosome association of the archaeal homolog.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by data in Figure 1\u2014figure supplement 3B. Claim C56 is supported by citation to previous work. These data effectively rule out the Gcn4 transcription pathway as the relevant function. Claims C58-C59 provide context from prior work supporting a translation role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "Western blot analysis confirms that the +1 GFP signal detected by flow cytometry is due to full-length frameshifted protein, with the amount corresponding to GFP/RFP fluorescence ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by data in Figure 3B showing Western blot bands of the expected size that correlate with flow cytometry measurements. This validates the flow cytometry assay and confirms that frameshifting produces full-length protein.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Reading frame maintenance is challenging due to multiple movements of tRNAs, mRNA, and ribosomal conformational changes during elongation. Various structural features and tRNA modifications contribute to reading frame maintenance in bacteria, including ribosome head swiveling, rRNA base intercalation, EF-G contacts, and modified tRNA bases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C9-C19) provide background context supported by multiple citations to established literature on translation mechanisms and reading frame maintenance. They establish the biological importance and complexity of the problem being studied. All claims are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Programmed frameshifting occurs in response to specific mRNA sequences and structures across organisms, with ribosome stalling as a common feature. Various factors including ribosomal proteins, translation factors, and regulatory proteins can affect frameshifting. In wild-type yeast, ribosomes stall at CGA codon repeats but frameshifting was not previously detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C20-C38) provide literature context for frameshifting mechanisms and prior work on the specific system studied. All claims are supported by appropriate citations. Claims C37-C38 establish the specific biological context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Eukaryotes have evolved pathways to regulate inefficient translation, including the RQC pathway and mRNA decay mechanisms. mRNA cleavage occurs upstream of ribosome stalls and is modulated by Asc1. mRNA decay is triggered by various translation problems including nonsense-mediated decay, no-go decay, and slow translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide context on eukaryotic quality control mechanisms, all supported by appropriate citations to the literature. They establish the broader framework for understanding Asc1's role in the system being studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "Deletion of ASC1 in an mbf1\u0394 mutant results in increased frameshifted protein proportional to increased mRNA. However, asc1\u0394 mutants show a 50-fold increase in frameshifting with less than 3-fold increase in mRNA, indicating a reading frame maintenance defect beyond mRNA stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 is inferred from data showing similar protein/mRNA ratios in mbf1\u0394 and asc1\u0394 mbf1\u0394 mutants (Figure 3A). Claim C138 is calculated from the same data. These observations support the conclusion that Asc1 affects both mRNA levels and reading frame maintenance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Two models are proposed for how Mbf1 and Rps3 prevent frameshifting: (1) Mbf1 associates with mRNA and is recruited to stalled ribosomes via Rps3, restricting mRNA movement; (2) Mbf1 is recruited to colliding ribosomes to buffer collision effects. Asc1 might play a direct role in reading frame maintenance through interactions with Rps3 or Mbf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C140-C163) are largely speculative models based on the data and known properties of the proteins. While the speculation is reasonable and grounded in the experimental results, direct evidence for the proposed mechanisms is lacking. Claims about protein interactions (C141-C142), mRNA binding (C149-C151), and specific mechanisms (C155-C163) require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The eukaryotic-specific reading frame maintenance system involving Mbf1, Rps3, and Asc1 is likely important for translation accuracy in the yeast genome. Mutations in MBF1 and ASC1 cause detectable frameshifting at native gene sequences, though the frameshifting potential is not simply determined by the presence of a single inhibitory codon pair. The evolutionary reason for this eukaryote-specific system remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C173 are supported by data showing frameshifting at native sequences (Figure 4E) and citations to previous work. Claim C174 is supported by the observation of variable frameshifting among different native sequences with the same codon pair. Claim C176 acknowledges the limitation that the evolutionary rationale remains unclear. The biological significance is well-supported by the data.",
+    "result_type": "MAJOR"
+  }
+]

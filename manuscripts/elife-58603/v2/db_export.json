@@ -1,0 +1,1291 @@
+{
+  "submission": {
+    "id": "5884fbd4-0bdc-4a23-8c01-a6f8bd2ef4cd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T17:19:49.714533Z",
+    "updated_at": "2025-12-02T17:19:49.714533Z"
+  },
+  "content": [
+    {
+      "id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "submission_id": "5884fbd4-0bdc-4a23-8c01-a6f8bd2ef4cd",
+      "content_type": "manuscript",
+      "content_text": "# SARS-CoV-2 strategically mimics proteolytic activation of human ENaC\n\n## Authors\n\n- Praveen Anand<sup>1</sup> ([ORCID: 0000-0002-2478-7042](https://orcid.org/0000-0002-2478-7042))\n- Arjun Puranik<sup>2</sup>\n- Murali Aravamudan<sup>2</sup>\n- AJ Venkatakrishnan<sup>2</sup> ([ORCID: 0000-0003-2819-3214](https://orcid.org/0000-0003-2819-3214)) \u2020\n- Venky Soundararajan<sup>2</sup> ([ORCID: 0000-0001-7434-9211](https://orcid.org/0000-0001-7434-9211)) \u2020\n\n### Affiliations\n\n1. nference Labs Bengaluru India\n2. nference, Inc Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMolecular mimicry is an evolutionary strategy adopted by viruses to exploit the host cellular machinery. We report that SARS-CoV-2 has evolved a unique S1/S2 cleavage site, absent in any previous coronavirus sequenced, resulting in the striking mimicry of an identical FURIN-cleavable peptide on the human epithelial sodium channel \u03b1-subunit (ENaC-\u03b1). Genetic alteration of ENaC-\u03b1 causes aldosterone dysregulation in patients, highlighting that the FURIN site is critical for activation of ENaC. Single cell RNA-seq from 66 studies shows significant overlap between expression of ENaC-\u03b1 and the viral receptor ACE2 in cell types linked to the cardiovascular-renal-pulmonary pathophysiology of COVID-19. Triangulating this cellular characterization with cleavage signatures of 178 proteases highlights proteolytic degeneracy wired into the SARS-CoV-2 lifecycle. Evolution of SARS-CoV-2 into a global pandemic may be driven in part by its targeted mimicry of ENaC-\u03b1, a protein critical for the homeostasis of airway surface liquid, whose misregulation is associated with respiratory conditions.\n\n## Introduction\n\nThe surface of SARS-CoV-2 virions is coated with the spike (S) glycoprotein, whose proteolysis is key to the infection lifecycle. After the initial interaction of the S-protein with the ACE2 receptor (Walls et al., 2020), host cell entry is mediated by two key proteolytic steps. The S1 subunit of the S-protein engages ACE2, and viral entry into the host cell is facilitated by proteases that catalyze S1/S2 cleavage (Belouzard et al., 2012; Belouzard et al., 2009) at Arginine-667/Serine-668 (Figure 1a). This is followed by S2\u2019 site cleavage that is required for fusion of viral-host cell membranes (Hoffmann et al., 2020; Walls et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/58603/elife-58603-fig1-v2.jpg)\n\n**Figure 1.:** (a) The cartoon representation of the S-protein homotrimer from SARS-CoV-2 is shown (PDB ID: 6VSB). One of the monomers is highlighted in\u00a0red. The alignment of the S1/S2 cleavage site required for the activation of SARS-CoV-2, SARS-CoV, Pangolin-CoV, and Bat-CoV RaTG13 are shown. The four amino acid insertion evolved by SARS-CoV-2, along with the abutting cleavage site is shown in a box. (b) The cartoon representation of human ENaC protein is depicted (PDB ID: 6BQN; chain in green), highlighting the ENaC-\u0251 chain in green. The alignment on the right captures FURIN cleavage at the S1/S2 site of SARS-CoV-2, along with its striking molecular mimicry of the identical peptide from human ENaC-\u0251 protein (dotted\u00a0loop in the cartoon rendering of human ENaC). The alignment further shows the equivalent 8-mer peptide of mouse ENaC-\u0251 that is also known to be cleaved by FURIN. One of the known genetic alterations on human ENaC-\u0251 is highlighted as well (Welzel et al., 2013). (c) The single cell transcriptomic co-expression of ACE2, ENaC-\u0251, and FURIN is summarized. The heatmap depicts the mean relative expression of each gene across the identified cell populations. The human and mouse single cell RNA-seq are visualized independently. The cell types are ranked based on decreasing expression of ACE2. The box highlights the ACE2 positive cell types in human and mouse samples.\n\n## Results\n\nWe hypothesized that the virus may mimic host substrates to achieve proteolysis. Comparing human-infecting SARS-CoV-2 with SARS-CoV strains, as well as with candidates of zoonotic origin (Pangolin-CoV and Bat-CoV RaTG13), shows that SARS-CoV-2 has evolved a unique sequence insertion at the S1/S2 site (Zhang et al., 2020; Figure 1a). Although the S protein of SARS-CoV-2 shares high sequence identity with the S proteins of Pangolin-CoV (92%) and Bat-CoV RaTG13 (97%), the furin insertion site seems to be uniquely acquired by SARS-CoV-2. The resulting tribasic 8-mer peptide (RRARSVAS) on the SARS-CoV-2 S1/S2 site is conserved among 10,956 of 10,967 circulating strains deposited at GISAID\u00a0(https://www.gisaid.org/) (Elbe and Buckland-Merrett, 2017), as of April 28, 2020 (Supplementary file 1a). This peptide is also absent in over 13,000 non-COVID-19 coronavirus S-proteins from the VIPR database (Carrillo-Tripp et al., 2009). Strikingly, examining over 10 million peptides (8-mers) of 20,350 canonical human proteins from UniProtKB shows that the peptide of interest (RRARSVAS) is present exclusively in human ENaC-\u0251, also known as SCNN1A (p-value=4E-4) (see Materials and methods). The location of this SARS-CoV-2 mimicked peptide in the ENaC-\u0251 structure is in the extracellular domain (Noreng et al., 2018; Figure 1b). This suggests that the SARS-CoV-2 may have specifically evolved to mimic a human protease substrate.\n\nENaC regulates sodium ion (Na+) and water homeostasis, and ENaC\u2019s expression levels are controlled by aldosterone and the associated Renin-Angiotensin-Aldosterone System (RAAS)6. In distal lung airways, ENaC is known to play a key role in controlling fluid reabsorption at the air\u2013liquid interface (Rossier and Stutts, 2009), and similar to SARS-CoV2, ENaC-\u0251 also needs to be proteolytically activated for its function (Vallet et al., 1997). FURIN cleaves the equivalent peptide on mouse ENaC-\u0251 between the Arginine and Serine residues in the 4th and 5th positions respectively (RSAR|SASS) (Hughey et al., 2004a; Hughey et al., 2004b), akin to the recent report establishing FURIN cleavage at the S1/S2 site of SARS-CoV-2 (Walls et al., 2020; Figure 1b). It is conceivable that human ENaC activation may be compromised in SARS-CoV-2 infected cells, for instance by SARS-CoV-2 exploiting host FURIN for its own activation. The likely consequence would be low ENaC activity on the surface of the airways leading to compromised fluid reabsorption\u00a0(Plan\u00e8s et al., 2010; Yurdak\u00f6k, 2010), an important lung pathology in COVID-19 patients with acute respiratory distress syndrome (ARDS). Indeed, the exact mechanism of SARS-CoV-2\u2019s potential impact of ENaC activation needs to be investigated.\n\nAlthough the furin-like cleavage motifs can be found in other viruses (Coutard et al., 2020), the exact mimicry of human ENaC-\u0251 cleavage site raises the specter that SARS-CoV-2 may be hijacking the protease network of ENaC-\u0251 for viral activation. We asked whether there is an overlap between putative SARS-CoV-2 infecting cells and ENaC-\u0251 expressing cells. Systematic single cell expression profiling of the ACE2 receptor and ENaC-\u0251 was performed across human and mouse samples comprising\u00a0~1.3 million cells (Venkatakrishnan et al., 2020; Figure 1c). Interestingly, ENaC-\u0251 is expressed in the nasal epithelial cells, type II alveolar cells of the lungs, tongue keratinocytes, and colon enterocytes (Figure 1c and Figure 2\u2014figure supplements 1\u20136), which are all implicated in COVID-19 pathophysiology (Shweta et al., 2020; Venkatakrishnan et al., 2020). Further, ACE2 and ENaC-\u0251 are known to be expressed generally in the apical membranes of polarized epithelial cells (Butterworth, 2010; Musante et al., 2019). The overlap of the cell-types expressing ACE2 and ENaC-\u0251, and similar spatial distributions at the apical surfaces, suggest that SARS-CoV-2 may be leveraging the protease network responsible for ENaC cleavage.\n\nBeyond FURIN, which cleaves the S1/S2 site (Walls et al., 2020), we were intrigued by the possibility of other host proteases also being exploited by SARS-CoV-2. We created a 160-dimensional vector space (20 amino acids x eight positions on the peptide) for assessment of cleavage similarities between the 178 human proteases with biochemical validation from the MEROPS database (see Materials and methods; 0\u00a0<\u00a0protease similarity metric\u00a0<1) (Rawlings et al., 2018). This shows that FURIN (PCSK3) has overall proteolytic similarity to select PCSK family members, specifically PCSK5 (0.99), PCSK7 (0.99), PCSK6 (0.99), PCSK4 (0.98), and PCSK2 (0.94) (Supplementary file 1b). It is also known that the protease PLG cleaves the \u0263-subunit of ENaC (ENaC-\u0263)(Passero et al., 2008).\n\nIn order to extrapolate the tissue tropism of SARS-CoV-2 from the lens of the host proteolytic network, we assessed the co-expression of these proteases concomitant with the viral receptor ACE2 and ENaC-\u0251 (Figure 2). This analysis shows that FURIN is expressed with ACE2 and ENaC-\u0251 in the colon (immature enterocytes, transit amplifying cells) and pancreas (ductal cells, acinar cells) of human tissues, as well as tongue (keratinocytes) of mouse tissues. PCSK5 and PCSK7 are broadly expressed across multiple cell types with ACE2 and ENaC-\u0251, making it a plausible broad-spectrum protease that may cleave the S1/S2 site. In humans, concomitant with ACE2 and ENaC-\u0251, PCSK6 appears to be expressed in cells from the intestines, pancreas, and lungs, whereas PCSK2 is noted to be co-expressed in the pancreas (Figure 2). It is worth noting that the extracellular proteases need not necessarily be expressed in the same cells as ACE2 and ENaC-\u0251. Among the PCSK family members with the potential to cleave the mimicked 8-mer peptide, it is intriguing that the same tissue can house multiple proteases and also that multiple tissues do share the same set of proteases.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/58603/elife-58603-fig2-v2.jpg)\n\n**Figure 2.:** The heatmap depicts the relative expression of ACE2 and ENaC-\u0251 along with a list of proteases that can potentially cleave the S1/S2 site. The relative expression levels are denoted on a scale of blue (low) to red (high). The rows denote proteases and columns denote cell-types.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/58603/elife-58603-fig2-figsupp1-v2.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/58603/elife-58603-fig2-figsupp2-v2.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/58603/elife-58603-fig2-figsupp3-v2.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/58603/elife-58603-fig2-figsupp4-v2.jpg)\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/58603/elife-58603-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Although only 2.77% of the proximal tubule cells had detectable expression of SCNN1A, a higher percentage (8.46%) of these cells were also observed to express ACE2 (Primary data processed from Pubmed ID: 31604275 and hosted on https://academia.nferx.com/).\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/58603/elife-58603-fig2-figsupp6-v2.jpg)\n\n## Discussion\n\nOur findings emphasize that redundancy may be wired into the mechanisms of host proteolytic activation of SARS-CoV-2. This study should stimulate the design of experiments that confirm the working hypothesis generated by our unbiased and systematic computational analysis. The mimicry of a cleavable host peptide central to pulmonary, renal, and cardiovascular function provides a new perspective to the evolution of SARS-CoV-2 in\u00a0causing a\u00a0global coronavirus pandemic.\n\n## Materials and methods\n\n### Alignment of coronavirus spike proteins\n\nThe complete S-protein sequence for SARS-CoV (Uniprot ID: P59594) and SARS-CoV-2 was obtained from uniprot (ftp://ftp.uniprot.org/pub/databases/uniprot/pre_release/). The sequences of Pangolin-CoV and Bat-CoV RaTG13 were obtained from the VIPR database (https://www.viprbrc.org/). Sequence alignments using Clustal-W, and comparison of SARS-CoV-2 versus other coronavirus strains were performed using JalView17.\n\n### Analysis of 8-mers of the human proteome\n\nWe enumerated 10,257,893 (10.26M) 8-mers from 20,350 reviewed uniprot reference sequences from human proteome (Proteome ID: UP000005640, as accessed on May 4th 2020). The previously identified SARS-CoV-2 8-mer \u2018RRARSVAS\u2019 was in fact found in ENaC-\u0251 protein (Uniprot ID: P37088; p-value \u2248 10.26M/208 = 4E-4; chance of finding that particular 8-mer anywhere in the reference sequences).\n\n### Calculating the cosine similarity metric for protease cleavage site\n\nThe position frequency matrix (PFM) of the individual proteases obtained from the MEROPS database (Rawlings et al., 2018) was converted to a probability weight matrix (PWM) (normalized and scaled) (Supplementary file 1b). Out of 178 proteases, there were 146 proteases that had specificity information available on the eight mer peptide spanning the cleavage site (\u00b14). The 20 (amino acids) x 8 (position) matrix defined for each of the proteases were flattened into a single vector with 160 elements. We performed a cosine similarity calculation between all pairs (X,Y) of protease specificity vector. The similarity was derived as the normalized dot product of X and Y: K(X, Y) =\u00a0<X, Y> / (||X||*||Y||)).\n\n### Overlap of cell types expressing ENaC-\u0251, ACE2, and proteases from scRNA-seq datasets\n\nWe performed a systematic expression profiling of the ACE2 and ENaC-\u0251 across 65 published human and mouse single-cell studies comprising\u00a0~1.3 million cells using nferX Single Cell platform (Supplementary file 1c, https://academia.nferx.com/) (Venkatakrishnan et al., 2020). The ACE2 expression could be detected in 66 studies (59 studies of human samples and 7\u00a0studies of mouse samples) spanning across\u00a0~50 tissues, over 450 cell-types and\u00a0~1.05 million cells. In order to call a given cell-type to be positive for both ACE2 and a protease we applied a cutoff of 1% of the cells in the total cell-type cluster population to have a non-zero count associated with both ACE2 and the respective protease. The mean expression of the proteases, ENaC-\u0251 and ACE2 was derived for individual cell population within each of the studies. The cell-type information was obtained from the author annotations provided for each of the studies. The analysis was performed separately on the mouse and human datasets. For each protease, the mean expression of given cell-population (mean log[cp10k +1] counts) was Z-score normalized (to ensure the sd\u00a0=\u00a01 and mean\u00a0~0 for all the genes) to obtain relative expression profiles across all the samples. The same normalization was applied to ACE2 and ENaC-\u0251 and both human and mouse datasets were analyzed independently by generating heatmaps. The cell types having zero-expression values of ACE2 were also included as negative control to probe the expression of various proteases.\n\nWe performed an analysis to identify the cell types with significant overlap of ACE2 and ENaC-\u0251 expression. To this end, we shortlisted cell types in which ENaC-\u0251 is expressed in a significantly higher proportion of ACE2-expressing cells than in the overall population of cells of that sub-type. We computed the ratios of these proportions, and used a corresponding Fisher exact test to compute significance.\n",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "40d609da-51f4-4746-adf2-4a04588fd0f7",
+      "submission_id": "5884fbd4-0bdc-4a23-8c01-a6f8bd2ef4cd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gian Paolo Rossi, University of Padova Italy\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.58603.sa1](https://doi.org/10.7554/eLife.58603.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nThis study entails an extensive computer analyses in silico demonstrating that the amino acid sequences of the cleavage site of protein S1/S2 of the SARS-CoV2 virus, which is essential for the penetration of the virus into the host cell, corresponds exactly to the cleavage site of ENAC-\u03b1 subunit. The latter is cleaved by furin, a host protease that, in doing so, activates the Na+ channel. A literature analysis carried out by the authors also indicates a significant overlap between the expression of ENAC-\u03b1 and ACE2, the receptor of the virus, supporting the idea that the SARS-CoV-2 virus has evolved the identity of the cleavage peptide of ENAC-\u03b1 in order to facilitate its entry inside the host cell. This paper should stimulate the design of experiments aimed at confirming the working hypothesis generated by this in silico analysis.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"SARS-CoV-2 strategically mimics a cleavable pulmonary renal peptide\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Guest Reviewing Editor and Matthias Barton, MD, as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Bernard Rossier (Reviewer #3).\n\nThis decision letter is to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThis study entails an in silico evaluation that demonstrates, through extensive computer analyses, that the amino acid sequences of the cleavage site of protein S1/S2 of the SARS-CoV2 virus, essential for the penetration of the virus into the host cell, corresponds exactly to the cleavage site of ENAC-\u03b1 subunit. The latter is cleaved by Furin, a host protease that, in doing so, activates the Na+ channel. A literature analysis carried out by the authors also indicates a significant overlap between the expression of ENAC-\u03b1 and ACE2, the receptor of the virus, supporting the idea that the SARS-CoV-2 virus has evolved the identity of the cleavage peptide of ENAC-\u03b1 in order to facilitate its entry inside the host cell.\n\nEssential revisions:\n\nThe information that furin is the protease that cleaves the S1/S2 site of the virus is already known (Hofmann et al., Cell, 2020 , Walls et al., 2020. The previous work noted that SARS-CoV-2 contains a polybasic furin recognition site between the S1 and S2 subunits of the spike protein. In this current study, Anand et al. identified that in addition to the furin cleavage site, SARS-CoV-2 contains an 8-mer peptide that is identical to the furin cleavage site in the \u03b1 subunit of ENaC located at the C-terminal end of the putative inhibitory segment. These results are striking as they seem to suggest that the virus has evolved to cleverly trick the cells by specifically mimicking an ion channel that is known to regulate salt and water in humans.\n\nHence, the authors should better stress the novelty of their paper, which resides in the correlation be-tween this cleavage site that is present only in SARS-CoV-2 (and not in other coronaviruses) and the ENAC-\u03b1, and by emphasizing the evolutionary aspects of their study in relation to the virus pandemics.\n\nThere is one particular section in the manuscript that authors should revise. In the third paragraph, the authors overstate the importance of the defined 8-mer peptide by citing a work that identified a premature stop codon in the middle of the 8-mer peptide that truncates the \u03b1 subunit giving rise to a salt-wasting disease, PHA1. The phenotype is not due to the truncation of the 8-mer peptide but is more likely due to a lack of a formation of a functional ion channel.\n\nOverall, the Authors should thus make an effort to put their findings in the context of the published literature on the control of airway surface liquid (including Rossier and Stutts, 2009). They are right in stating that genetic truncation at the ENaC-\u03b1 cleavage site causes aldosterone dysregulation in patients. However, it would be important to stress that the furin site is critical for the activation of ENaC. If this activation site is blocked by mimicry of the unique S1/S2 cleavage site, its likely consequence would be very low ENaC activity on the surface of the airways, compromising severely fluid reabsorption, which can explain an important lung phenotype observed in COVID19. The so called \"wet lung\" syndrome, that can occur in premature babies because ENaC is only fully expressed at the time of birth, should be mentioned to support this contention. The PHA Type 1 case described in Welzel et al., 2013, also supports the importance of the furin site for ENaC activation.\n\nAdditional issues:\n\n1) The authors reported in Figure 2\u2014figure supplement 5 ENaC expression in the proximal tubule, which is wrong as ENac is expressed only in the aldosterone sensitive distal nephron (ASDN) (Distal Convoluted Tubule DCT2, Connecting Tubule CNT and Collecting Duct CD).\n\n2) References should be better placed and selected. For example in the second paragraph, last sentence: the structure of human ENaC (Noreng et al., 2018) should be cited here and not in the third paragraph where earlier work on structure by Vallet et al., 1997 or by Orce et al., 1980 should be cited.\n\n3) The title is too generic and should mention ENaC rather than \u201ca cleavable pulmonary renal peptide\u201d.\n",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6a2e560d-b213-46ae-a14d-2febb3fee2d6",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C1",
+      "claim": "Molecular mimicry is an evolutionary strategy adopted by viruses to exploit the host cellular machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular mimicry is an evolutionary strategy adopted by viruses to exploit the host cellular machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about viral evolutionary strategies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "de9fc517-d9bc-42a0-b8de-9f6ae925acdc",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C2",
+      "claim": "SARS-CoV-2 has evolved a unique S1/S2 cleavage site that is absent in any previous coronavirus sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that SARS-CoV-2 has evolved a unique S1/S2 cleavage site, absent in any previous coronavirus sequenced, resulting in the striking mimicry of an identical FURIN-cleavable peptide on the human epithelial sodium channel \u03b1-subunit (ENaC-\u03b1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence alignment data comparing SARS-CoV-2 with other coronaviruses and analysis of coronavirus databases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "ba330ab6-4817-4963-9755-4f6e1a2afea0",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C3",
+      "claim": "The SARS-CoV-2 S1/S2 cleavage site mimics an identical FURIN-cleavable peptide on human ENaC-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "We report that SARS-CoV-2 has evolved a unique S1/S2 cleavage site, absent in any previous coronavirus sequenced, resulting in the striking mimicry of an identical FURIN-cleavable peptide on the human epithelial sodium channel \u03b1-subunit (ENaC-\u03b1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence comparison data showing the identical peptide sequence between SARS-CoV-2 and ENaC-\u03b1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "367c488f-4a07-46f4-9f05-8e13d51d7e11",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C4",
+      "claim": "Genetic alteration of ENaC-\u03b1 causes aldosterone dysregulation in patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic alteration of ENaC-\u03b1 causes aldosterone dysregulation in patients, highlighting that the FURIN site is critical for activation of ENaC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references established clinical knowledge about ENaC-\u03b1 mutations and their effects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "32be3645-0a70-42a9-9d80-74a903edb95a",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C5",
+      "claim": "The FURIN site is critical for activation of ENaC.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic alteration of ENaC-\u03b1 causes aldosterone dysregulation in patients, highlighting that the FURIN site is critical for activation of ENaC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic alteration data and supported by literature on ENaC activation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "f16149b0-15a8-484b-af8d-251bc228ad5b",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C6",
+      "claim": "There is significant overlap between expression of ENaC-\u03b1 and ACE2 in cell types linked to cardiovascular-renal-pulmonary pathophysiology of COVID-19.",
+      "claim_type": "EXPLICIT",
+      "source": "Single cell RNA-seq from 66 studies shows significant overlap between expression of ENaC-\u03b1 and the viral receptor ACE2 in cell types linked to the cardiovascular-renal-pulmonary pathophysiology of COVID-19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single cell RNA-seq data analysis from 66 studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "25cf21ac-8e61-4194-8169-37f5df2dc3d4",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C7",
+      "claim": "Proteolytic degeneracy is wired into the SARS-CoV-2 lifecycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Triangulating this cellular characterization with cleavage signatures of 178 proteases highlights proteolytic degeneracy wired into the SARS-CoV-2 lifecycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of 178 protease cleavage signatures and their relationship to SARS-CoV-2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "9d5a1022-a77e-48f6-8932-7623a4af7d7e",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C8",
+      "claim": "Evolution of SARS-CoV-2 into a global pandemic may be driven in part by its targeted mimicry of ENaC-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolution of SARS-CoV-2 into a global pandemic may be driven in part by its targeted mimicry of ENaC-\u03b1, a protein critical for the homeostasis of airway surface liquid, whose misregulation is associated with respiratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the molecular mimicry findings and the role of ENaC-\u03b1 in respiratory function.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "f8e6fa0e-eb02-4c27-9bba-dea6757fd64c",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C9",
+      "claim": "ENaC-\u03b1 is critical for the homeostasis of airway surface liquid.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolution of SARS-CoV-2 into a global pandemic may be driven in part by its targeted mimicry of ENaC-\u03b1, a protein critical for the homeostasis of airway surface liquid, whose misregulation is associated with respiratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ENaC-\u03b1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "92596e9a-50b5-4dcf-9c6e-1746b9d3cba9",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C10",
+      "claim": "Misregulation of ENaC-\u03b1 is associated with respiratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolution of SARS-CoV-2 into a global pandemic may be driven in part by its targeted mimicry of ENaC-\u03b1, a protein critical for the homeostasis of airway surface liquid, whose misregulation is associated with respiratory conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ENaC-\u03b1 and respiratory disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "fbd14ba6-1a54-4236-9975-024c68827403",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C11",
+      "claim": "The S-protein is key to the SARS-CoV-2 infection lifecycle through proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The surface of SARS-CoV-2 virions is coated with the spike (S) glycoprotein, whose proteolysis is key to the infection lifecycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about SARS-CoV-2 infection mechanisms, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "f2a9af61-841c-4caa-9a93-7e7529fca38b",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C12",
+      "claim": "The S1 subunit of the S-protein engages ACE2 receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "After the initial interaction of the S-protein with the ACE2 receptor (Walls et al., 2020), host cell entry is mediated by two key proteolytic steps. The S1 subunit of the S-protein engages ACE2, and viral entry into the host cell is facilitated by proteases that catalyze S1/S2 cleavage (Belouzard et al., 2012; Belouzard et al., 2009) at Arginine-667/Serine-668 (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on SARS-CoV-2 entry mechanisms.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "64383150-dbf2-49e6-8c8a-f5ba375d96e7",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C13",
+      "claim": "Viral entry into the host cell is facilitated by proteases that catalyze S1/S2 cleavage at Arginine-667/Serine-668.",
+      "claim_type": "EXPLICIT",
+      "source": "The S1 subunit of the S-protein engages ACE2, and viral entry into the host cell is facilitated by proteases that catalyze S1/S2 cleavage (Belouzard et al., 2012; Belouzard et al., 2009) at Arginine-667/Serine-668 (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cited literature and structural data shown in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "c779b44f-1356-4304-95b4-cb70ce591c86",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C14",
+      "claim": "S2' site cleavage is required for fusion of viral-host cell membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is followed by S2' site cleavage that is required for fusion of viral-host cell membranes (Hoffmann et al., 2020; Walls et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on SARS-CoV-2 membrane fusion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "f200820b-c055-4b79-aaee-0dd77048e01e",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C15",
+      "claim": "SARS-CoV-2 has evolved a unique sequence insertion at the S1/S2 site compared to SARS-CoV, Pangolin-CoV, and Bat-CoV RaTG13.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing human-infecting SARS-CoV-2 with SARS-CoV strains, as well as with candidates of zoonotic origin (Pangolin-CoV and Bat-CoV RaTG13), shows that SARS-CoV-2 has evolved a unique sequence insertion at the S1/S2 site (Zhang et al., 2020; Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1a and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "6b966f7d-6e4b-437d-a1c8-7578c76ebca3",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C16",
+      "claim": "The S protein of SARS-CoV-2 shares 92% sequence identity with Pangolin-CoV S protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the S protein of SARS-CoV-2 shares high sequence identity with the S proteins of Pangolin-CoV (92%) and Bat-CoV RaTG13 (97%), the furin insertion site seems to be uniquely acquired by SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "82ce74e3-9ab5-4ca3-92e5-413eeb353e98",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C17",
+      "claim": "The S protein of SARS-CoV-2 shares 97% sequence identity with Bat-CoV RaTG13 S protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the S protein of SARS-CoV-2 shares high sequence identity with the S proteins of Pangolin-CoV (92%) and Bat-CoV RaTG13 (97%), the furin insertion site seems to be uniquely acquired by SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "b70eb062-9f29-4629-a974-c6c220b489c9",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C18",
+      "claim": "The furin insertion site is uniquely acquired by SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the S protein of SARS-CoV-2 shares high sequence identity with the S proteins of Pangolin-CoV (92%) and Bat-CoV RaTG13 (97%), the furin insertion site seems to be uniquely acquired by SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from sequence comparison data showing the absence of this site in related coronaviruses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "56c46ebe-9e3a-4e08-852b-d55c5b365217",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C19",
+      "claim": "The tribasic 8-mer peptide RRARSVAS at the SARS-CoV-2 S1/S2 site is conserved among 10,956 of 10,967 circulating strains deposited at GISAID as of April 28, 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting tribasic 8-mer peptide (RRARSVAS) on the SARS-CoV-2 S1/S2 site is conserved among 10,956 of 10,967 circulating strains deposited at GISAID (https://www.gisaid.org/) (Elbe and Buckland-Merrett, 2017), as of April 28, 2020 (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of sequence data from the GISAID database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "771c97e9-f973-4056-9a10-0158086ec12a",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C20",
+      "claim": "The RRARSVAS peptide is absent in over 13,000 non-COVID-19 coronavirus S-proteins from the VIPR database.",
+      "claim_type": "EXPLICIT",
+      "source": "This peptide is also absent in over 13,000 non-COVID-19 coronavirus S-proteins from the VIPR database (Carrillo-Tripp et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on database analysis of coronavirus sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "058c71c3-ab51-474d-a8c1-20bedd25501c",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C21",
+      "claim": "The peptide RRARSVAS is present exclusively in human ENaC-\u03b1 among over 10 million peptides from 20,350 canonical human proteins in UniProtKB with p-value=4E-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, examining over 10 million peptides (8-mers) of 20,350 canonical human proteins from UniProtKB shows that the peptide of interest (RRARSVAS) is present exclusively in human ENaC-\u0251, also known as SCNN1A (p-value=4E-4) (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational analysis of the human proteome database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "0fe86e0f-ee2d-42d1-817d-11f1566c6d04",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C22",
+      "claim": "The SARS-CoV-2 mimicked peptide in ENaC-\u03b1 is located in the extracellular domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of this SARS-CoV-2 mimicked peptide in the ENaC-\u0251 structure is in the extracellular domain (Noreng et al., 2018; Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data from cited literature and shown in Figure 1b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "74ace783-7752-4bd8-b0ff-052cd7cacb64",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C23",
+      "claim": "SARS-CoV-2 may have specifically evolved to mimic a human protease substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the SARS-CoV-2 may have specifically evolved to mimic a human protease substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the molecular mimicry findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "245f983f-1ed5-484d-b17c-f3ba0790d708",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C24",
+      "claim": "ENaC regulates sodium ion and water homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "ENaC regulates sodium ion (Na+) and water homeostasis, and ENaC's expression levels are controlled by aldosterone and the associated Renin-Angiotensin-Aldosterone System (RAAS)6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ENaC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "ec2fdcc8-317d-464e-9880-6e6a8fdbdf5e",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C25",
+      "claim": "ENaC's expression levels are controlled by aldosterone and the Renin-Angiotensin-Aldosterone System (RAAS).",
+      "claim_type": "EXPLICIT",
+      "source": "ENaC regulates sodium ion (Na+) and water homeostasis, and ENaC's expression levels are controlled by aldosterone and the associated Renin-Angiotensin-Aldosterone System (RAAS)6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about ENaC regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "785c6d94-e8da-451c-8f16-114613b0ba64",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C26",
+      "claim": "ENaC plays a key role in controlling fluid reabsorption at the air-liquid interface in distal lung airways.",
+      "claim_type": "EXPLICIT",
+      "source": "In distal lung airways, ENaC is known to play a key role in controlling fluid reabsorption at the air\u2013liquid interface (Rossier and Stutts, 2009), and similar to SARS-CoV2, ENaC-\u0251 also needs to be proteolytically activated for its function (Vallet et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on ENaC function in the lungs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "b4a0121e-7dda-4314-b555-7dfbd92f33e2",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C27",
+      "claim": "ENaC-\u03b1 needs to be proteolytically activated for its function.",
+      "claim_type": "EXPLICIT",
+      "source": "In distal lung airways, ENaC is known to play a key role in controlling fluid reabsorption at the air\u2013liquid interface (Rossier and Stutts, 2009), and similar to SARS-CoV2, ENaC-\u0251 also needs to be proteolytically activated for its function (Vallet et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on ENaC activation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "409704ce-51a0-464c-83c3-ccb57cb0dc17",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C28",
+      "claim": "FURIN cleaves the equivalent peptide on mouse ENaC-\u03b1 between the Arginine and Serine residues in the 4th and 5th positions respectively (RSAR|SASS).",
+      "claim_type": "EXPLICIT",
+      "source": "FURIN cleaves the equivalent peptide on mouse ENaC-\u0251 between the Arginine and Serine residues in the 4th and 5th positions respectively (RSAR|SASS) (Hughey et al., 2004a; Hughey et al., 2004b), akin to the recent report establishing FURIN cleavage at the S1/S2 site of SARS-CoV-2 (Walls et al., 2020; Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cited literature on FURIN cleavage of mouse ENaC-\u03b1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "da00119d-9159-458c-94dc-eff66ec65ad9",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C29",
+      "claim": "FURIN cleaves at the S1/S2 site of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "FURIN cleaves the equivalent peptide on mouse ENaC-\u0251 between the Arginine and Serine residues in the 4th and 5th positions respectively (RSAR|SASS) (Hughey et al., 2004a; Hughey et al., 2004b), akin to the recent report establishing FURIN cleavage at the S1/S2 site of SARS-CoV-2 (Walls et al., 2020; Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cited literature on SARS-CoV-2 cleavage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "fc7d745a-21ad-4ed1-b208-6998f3593a44",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C30",
+      "claim": "Human ENaC activation may be compromised in SARS-CoV-2 infected cells by the virus exploiting host FURIN for its own activation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is conceivable that human ENaC activation may be compromised in SARS-CoV-2 infected cells, for instance by SARS-CoV-2 exploiting host FURIN for its own activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the molecular mimicry findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "37239df4-72bd-4444-9435-42bf008e3173",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C31",
+      "claim": "Low ENaC activity on the surface of airways leads to compromised fluid reabsorption.",
+      "claim_type": "EXPLICIT",
+      "source": "The likely consequence would be low ENaC activity on the surface of the airways leading to compromised fluid reabsorption (Plan\u00e8s et al., 2010; Yurdak\u00f6k, 2010), an important lung pathology in COVID-19 patients with acute respiratory distress syndrome (ARDS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on ENaC function and lung pathology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "4852f094-5b04-40d0-a673-77f220f1b459",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C32",
+      "claim": "Compromised fluid reabsorption is an important lung pathology in COVID-19 patients with acute respiratory distress syndrome (ARDS).",
+      "claim_type": "EXPLICIT",
+      "source": "The likely consequence would be low ENaC activity on the surface of the airways leading to compromised fluid reabsorption (Plan\u00e8s et al., 2010; Yurdak\u00f6k, 2010), an important lung pathology in COVID-19 patients with acute respiratory distress syndrome (ARDS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on clinical observations of COVID-19 pathology and cited literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "d3416a1a-98bc-478a-bd4e-e09e0d29f7ed",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C33",
+      "claim": "Furin-like cleavage motifs can be found in other viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the furin-like cleavage motifs can be found in other viruses (Coutard et al., 2020), the exact mimicry of human ENaC-\u0251 cleavage site raises the specter that SARS-CoV-2 may be hijacking the protease network of ENaC-\u0251 for viral activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on viral cleavage motifs.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "1aa1a9d1-ea12-4b79-9d3b-2ab84d987e80",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C34",
+      "claim": "SARS-CoV-2 may be hijacking the protease network of ENaC-\u03b1 for viral activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the furin-like cleavage motifs can be found in other viruses (Coutard et al., 2020), the exact mimicry of human ENaC-\u0251 cleavage site raises the specter that SARS-CoV-2 may be hijacking the protease network of ENaC-\u0251 for viral activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the molecular mimicry findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "fbbe7759-c6e4-4d42-b646-02f8fcf4a8e9",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C35",
+      "claim": "ENaC-\u03b1 is expressed in nasal epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ENaC-\u0251 is expressed in the nasal epithelial cells, type II alveolar cells of the lungs, tongue keratinocytes, and colon enterocytes (Figure 1c and Figure 2\u2014figure supplements 1\u20136), which are all implicated in COVID-19 pathophysiology (Shweta et al., 2020; Venkatakrishnan et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single cell RNA-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "37e10996-8a92-4b17-9b55-367be800d1fa",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C36",
+      "claim": "ENaC-\u03b1 is expressed in type II alveolar cells of the lungs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ENaC-\u0251 is expressed in the nasal epithelial cells, type II alveolar cells of the lungs, tongue keratinocytes, and colon enterocytes (Figure 1c and Figure 2\u2014figure supplements 1\u20136), which are all implicated in COVID-19 pathophysiology (Shweta et al., 2020; Venkatakrishnan et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single cell RNA-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "40086477-68f2-4f28-98e6-ed7e2e6a384a",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C37",
+      "claim": "ENaC-\u03b1 is expressed in tongue keratinocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ENaC-\u0251 is expressed in the nasal epithelial cells, type II alveolar cells of the lungs, tongue keratinocytes, and colon enterocytes (Figure 1c and Figure 2\u2014figure supplements 1\u20136), which are all implicated in COVID-19 pathophysiology (Shweta et al., 2020; Venkatakrishnan et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single cell RNA-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "517ead3d-6543-419a-8914-b6d6996260a8",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C38",
+      "claim": "ENaC-\u03b1 is expressed in colon enterocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ENaC-\u0251 is expressed in the nasal epithelial cells, type II alveolar cells of the lungs, tongue keratinocytes, and colon enterocytes (Figure 1c and Figure 2\u2014figure supplements 1\u20136), which are all implicated in COVID-19 pathophysiology (Shweta et al., 2020; Venkatakrishnan et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single cell RNA-seq data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "e1b7c634-00af-46fb-8737-4c8269314350",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C39",
+      "claim": "Nasal epithelial cells, type II alveolar cells of the lungs, tongue keratinocytes, and colon enterocytes are all implicated in COVID-19 pathophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ENaC-\u0251 is expressed in the nasal epithelial cells, type II alveolar cells of the lungs, tongue keratinocytes, and colon enterocytes (Figure 1c and Figure 2\u2014figure supplements 1\u20136), which are all implicated in COVID-19 pathophysiology (Shweta et al., 2020; Venkatakrishnan et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on COVID-19 pathophysiology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "4a54fca6-a53f-47ed-b2fc-a9e0effd736e",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C40",
+      "claim": "ACE2 and ENaC-\u03b1 are expressed in the apical membranes of polarized epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, ACE2 and ENaC-\u0251 are known to be expressed generally in the apical membranes of polarized epithelial cells (Butterworth, 2010; Musante et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on cellular localization of ACE2 and ENaC-\u03b1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "f8faa4e0-71d3-482b-bd36-1570a14d63e2",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C41",
+      "claim": "The overlap of cell-types expressing ACE2 and ENaC-\u03b1 suggests that SARS-CoV-2 may be leveraging the protease network responsible for ENaC cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "The overlap of the cell-types expressing ACE2 and ENaC-\u0251, and similar spatial distributions at the apical surfaces, suggest that SARS-CoV-2 may be leveraging the protease network responsible for ENaC cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the co-expression data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "93bf1b99-285e-4adb-98fb-92af041df0b4",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C42",
+      "claim": "FURIN (PCSK3) has overall proteolytic similarity to PCSK5 (0.99), PCSK7 (0.99), PCSK6 (0.99), PCSK4 (0.98), and PCSK2 (0.94).",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that FURIN (PCSK3) has overall proteolytic similarity to select PCSK family members, specifically PCSK5 (0.99), PCSK7 (0.99), PCSK6 (0.99), PCSK4 (0.98), and PCSK2 (0.94) (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational analysis of protease cleavage specificity using a cosine similarity metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "20066724-dce1-4726-a8ed-9459dc06ed59",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C43",
+      "claim": "The protease PLG cleaves the \u03b3-subunit of ENaC (ENaC-\u03b3).",
+      "claim_type": "EXPLICIT",
+      "source": "It is also known that the protease PLG cleaves the \u0263-subunit of ENaC (ENaC-\u0263)(Passero et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on ENaC cleavage.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "cb46a550-6959-492a-8e75-790cd3954b01",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C44",
+      "claim": "FURIN is expressed with ACE2 and ENaC-\u03b1 in the colon (immature enterocytes, transit amplifying cells) and pancreas (ductal cells, acinar cells) of human tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that FURIN is expressed with ACE2 and ENaC-\u0251 in the colon (immature enterocytes, transit amplifying cells) and pancreas (ductal cells, acinar cells) of human tissues, as well as tongue (keratinocytes) of mouse tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on single cell RNA-seq co-expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "ac51d205-6e12-43d1-8aeb-933a04a8d572",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C45",
+      "claim": "FURIN is expressed with ACE2 and ENaC-\u03b1 in tongue keratinocytes of mouse tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that FURIN is expressed with ACE2 and ENaC-\u0251 in the colon (immature enterocytes, transit amplifying cells) and pancreas (ductal cells, acinar cells) of human tissues, as well as tongue (keratinocytes) of mouse tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on single cell RNA-seq co-expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "f7a31e61-64cb-45b4-be79-031d948a7189",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C46",
+      "claim": "PCSK5 and PCSK7 are broadly expressed across multiple cell types with ACE2 and ENaC-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "PCSK5 and PCSK7 are broadly expressed across multiple cell types with ACE2 and ENaC-\u0251, making it a plausible broad-spectrum protease that may cleave the S1/S2 site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on single cell RNA-seq co-expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "f36cef96-0019-44b6-a155-2fe53fd6b782",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C47",
+      "claim": "PCSK5 and PCSK7 are plausible broad-spectrum proteases that may cleave the S1/S2 site.",
+      "claim_type": "EXPLICIT",
+      "source": "PCSK5 and PCSK7 are broadly expressed across multiple cell types with ACE2 and ENaC-\u0251, making it a plausible broad-spectrum protease that may cleave the S1/S2 site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the co-expression data and proteolytic similarity.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "93442628-c47c-4003-88d1-5ee5bab0c0c9",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C48",
+      "claim": "PCSK6 is expressed concomitant with ACE2 and ENaC-\u03b1 in cells from the intestines, pancreas, and lungs in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, concomitant with ACE2 and ENaC-\u0251, PCSK6 appears to be expressed in cells from the intestines, pancreas, and lungs, whereas PCSK2 is noted to be co-expressed in the pancreas (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on single cell RNA-seq co-expression analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "0342039a-6263-4501-9f22-3abd904fe2ee",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C49",
+      "claim": "PCSK2 is co-expressed with ACE2 and ENaC-\u03b1 in the pancreas in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, concomitant with ACE2 and ENaC-\u0251, PCSK6 appears to be expressed in cells from the intestines, pancreas, and lungs, whereas PCSK2 is noted to be co-expressed in the pancreas (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on single cell RNA-seq co-expression analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "7ef0ae5d-f5aa-447c-a941-7e39f638d2aa",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C50",
+      "claim": "Extracellular proteases need not necessarily be expressed in the same cells as ACE2 and ENaC-\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the extracellular proteases need not necessarily be expressed in the same cells as ACE2 and ENaC-\u0251.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on biological knowledge about extracellular protease function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "8b434275-1a97-4995-a3ce-6bb936fbc61b",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C51",
+      "claim": "Redundancy may be wired into the mechanisms of host proteolytic activation of SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings emphasize that redundancy may be wired into the mechanisms of host proteolytic activation of SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis showing multiple proteases with similar cleavage specificity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "00ced345-2bc1-4aee-96d1-f2a35f90bd28",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C52",
+      "claim": "The mimicry of a cleavable host peptide central to pulmonary, renal, and cardiovascular function provides a new perspective to the evolution of SARS-CoV-2 in causing a global coronavirus pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The mimicry of a cleavable host peptide central to pulmonary, renal, and cardiovascular function provides a new perspective to the evolution of SARS-CoV-2 in causing a global coronavirus pandemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the molecular mimicry findings in the context of pandemic evolution.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "2196480a-258b-427d-92ec-a8b8dc181b34",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C53",
+      "claim": "The analysis examined approximately 1.3 million cells from 66 single cell RNA-seq studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Systematic single cell expression profiling of the ACE2 receptor and ENaC-\u0251 was performed across human and mouse samples comprising ~1.3 million cells (Venkatakrishnan et al., 2020; Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "7fa0b323-72cf-4f21-a6a5-2940adcb3c03",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C54",
+      "claim": "10,257,893 8-mers were enumerated from 20,350 reviewed uniprot reference sequences from human proteome.",
+      "claim_type": "EXPLICIT",
+      "source": "We enumerated 10,257,893 (10.26M) 8-mers from 20,350 reviewed uniprot reference sequences from human proteome (Proteome ID: UP000005640, as accessed on May 4th 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational analysis performed on the human proteome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "bc127d36-f398-4fd9-8c79-cc36fd6451a1",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C55",
+      "claim": "The SARS-CoV-2 8-mer 'RRARSVAS' was found in ENaC-\u03b1 protein (Uniprot ID: P37088) with p-value approximately 4E-4.",
+      "claim_type": "EXPLICIT",
+      "source": "The previously identified SARS-CoV-2 8-mer 'RRARSVAS' was in fact found in ENaC-\u0251 protein (Uniprot ID: P37088; p-value \u2248 10.26M/208 = 4E-4; chance of finding that particular 8-mer anywhere in the reference sequences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on computational analysis of the human proteome database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "fdc39bef-cb16-4635-ad09-6c740c0188fb",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C56",
+      "claim": "ACE2 expression could be detected in 66 studies spanning approximately 50 tissues, over 450 cell-types and approximately 1.05 million cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The ACE2 expression could be detected in 66 studies (59 studies of human samples and 7 studies of mouse samples) spanning across ~50 tissues, over 450 cell-types and ~1.05 million cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the single cell RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "fd17e56c-fcdd-455e-8780-065d4f35b944",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C57",
+      "claim": "A genetic alteration on human ENaC-\u03b1 results in a frameshift mutation causing S205X truncation leading to Pseudohypoaldosteronism type 1 (PHA 1).",
+      "claim_type": "EXPLICIT",
+      "source": "One of the known genetic alterations on human ENaC-\u0251 is highlighted as well (Welzel et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1b with citation to Welzel et al., 2013, indicating a frameshift mutation resulting in S205X truncation causing Pseudohypoaldosteronism type 1 (PHA 1).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "168490bd-0002-4b2c-b598-0db4313a6d4c",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C58",
+      "claim": "Only 2.77% of proximal tubule cells had detectable expression of SCNN1A (ENaC-\u03b1).",
+      "claim_type": "EXPLICIT",
+      "source": "Although only 2.77% of the proximal tubule cells had detectable expression of SCNN1A, a higher percentage (8.46%) of these cells were also observed to express ACE2 (Primary data processed from Pubmed ID: 31604275 and hosted on https://academia.nferx.com/).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on single cell RNA-seq data analysis shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "6c65ee40-8c5b-47a1-9654-0d5d1ff8808c",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "claim_id": "C59",
+      "claim": "8.46% of proximal tubule cells express ACE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Although only 2.77% of the proximal tubule cells had detectable expression of SCNN1A, a higher percentage (8.46%) of these cells were also observed to express ACE2 (Primary data processed from Pubmed ID: 31604275 and hosted on https://academia.nferx.com/).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on single cell RNA-seq data analysis shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e61731a6-a1b8-40ea-b8de-3f7543c0e294",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 has evolved a unique S1/S2 cleavage site insertion (RRARSVAS) that is absent in related coronaviruses including SARS-CoV, Pangolin-CoV, and Bat-CoV RaTG13, and is conserved in 10,956 of 10,967 circulating SARS-CoV-2 strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15-C20 provide converging evidence from sequence alignments (Figure 1a), database searches (GISAID, VIPR), and comparative genomics showing the unique insertion. The high conservation rate (99.9%) across circulating strains and absence in >13,000 other coronavirus sequences strongly support this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "d3d3d05a-b132-46d3-b503-647450e7b62b",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The SARS-CoV-2 S1/S2 cleavage site peptide (RRARSVAS) is identical to a peptide found exclusively in human ENaC-\u03b1 among 20,350 canonical human proteins, located in the extracellular domain of ENaC-\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C21-C22, C54-C55 demonstrate molecular mimicry through systematic computational analysis of the human proteome. The p-value of 4E-4 and exclusive match to ENaC-\u03b1 (P37088) among >10 million 8-mers, combined with structural localization data (Figure 1b), provide strong evidence for this specific mimicry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "f4ac54ab-7466-425b-bfd8-76fc4b8bcd24",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FURIN cleaves both the mouse ENaC-\u03b1 equivalent peptide (RSAR|SASS) and the SARS-CoV-2 S1/S2 site at analogous positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by multiple cited studies (Hughey et al., 2004a/b; Walls et al., 2020) demonstrating FURIN cleavage at equivalent positions in both substrates. This establishes the functional parallel between viral and host protein processing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "5aaca276-0150-4d02-91dd-97660b502c76",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single-cell RNA-seq analysis of ~1.3 million cells from 66 studies reveals significant overlap in expression of ENaC-\u03b1 and ACE2 in cell types implicated in COVID-19 pathophysiology, including nasal epithelial cells, type II alveolar cells, tongue keratinocytes, and colon enterocytes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C35-C40, C53, C56, C58-C59 are supported by comprehensive single-cell RNA-seq data across multiple tissues and cell types (Figures 1c, 2, and supplements). The large dataset (~1.05 million ACE2-expressing cells across ~50 tissues and >450 cell types) provides robust evidence for co-expression patterns, though expression percentages vary considerably by cell type (e.g., 50% in alveolar type 2 cells vs. 2.77% in proximal tubule cells).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "81533e4d-411a-47fa-8426-ec7f1c30eca2",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multiple PCSK family proteases (PCSK5, PCSK7, PCSK6, PCSK4, PCSK2) show high proteolytic similarity to FURIN (0.94-0.99) and are co-expressed with ACE2 and ENaC-\u03b1 in various tissues including colon, pancreas, lungs, and tongue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C44-C46, C48-C49 are supported by computational analysis of 178 protease cleavage signatures using cosine similarity metrics and single-cell RNA-seq co-expression data (Figure 2). The high similarity scores and tissue-specific co-expression patterns provide evidence for proteolytic redundancy, though the functional significance requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "c373e048-c247-4753-bcaa-05a2f5fff231",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Proteolytic degeneracy and redundancy are wired into the SARS-CoV-2 lifecycle through multiple host proteases with similar cleavage specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C51 are supported by the integration of protease similarity analysis (C42) and co-expression data (C44-C49), demonstrating that multiple proteases with high similarity to FURIN are available across different tissues. This provides computational evidence for redundancy in viral activation mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "3ecbb85b-bd1f-406c-ac37-75e3be6c7954",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 may have specifically evolved to mimic a human protease substrate and hijack the ENaC-\u03b1 protease network for viral activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C23, C34, C41 are speculative hypotheses based on the molecular mimicry findings (C3, C21) and co-expression data (C6). While the sequence identity and co-expression are well-documented, the evolutionary directionality and functional hijacking mechanism require experimental validation. The claims appropriately use cautious language ('may have,' 'suggest') but lack direct experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "8a614f79-cf20-4c23-8900-2ae160fb13fc",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 infection may compromise ENaC activation by exploiting host FURIN, leading to low ENaC activity and compromised fluid reabsorption, contributing to ARDS pathology in COVID-19.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C32 propose a mechanistic link between viral mimicry and COVID-19 pathology. While C31-C32 are supported by cited literature on ENaC function and ARDS, C30 is speculative ('conceivable,' 'may be compromised') and lacks direct experimental evidence showing that SARS-CoV-2 infection actually impairs ENaC activation or that this contributes to disease pathology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "0a14e91f-bbdc-43f5-b076-51db3862b598",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Evolution of SARS-CoV-2 into a global pandemic may be driven in part by its targeted mimicry of ENaC-\u03b1, providing a new perspective on pandemic evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8 and C52 are highly speculative interpretations that extend beyond the data presented. While the molecular mimicry is well-documented, attributing pandemic success to this specific feature requires epidemiological, evolutionary, and functional evidence that is not provided. The claims are appropriately hedged ('may be driven') but represent conjecture rather than supported conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "4305cba9-ef8a-464d-b295-5b23171b807c",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Genetic alterations of ENaC-\u03b1 cause aldosterone dysregulation in patients, with a frameshift mutation causing S205X truncation leading to Pseudohypoaldosteronism type 1, highlighting that the FURIN site is critical for ENaC activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C57 are supported by cited clinical literature (Welzel et al., 2013) and established knowledge about ENaC mutations. The genetic evidence from human disease provides independent validation that the FURIN cleavage site region is functionally critical for ENaC, supporting the biological significance of the mimicked sequence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "2d8a27f0-521e-46d4-ad46-f6344848eda1",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "SARS-CoV-2 infection requires proteolytic processing of the S-protein, with S1 engaging ACE2 and proteases catalyzing S1/S2 cleavage at R686/S687, followed by S2' cleavage for membrane fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 describe established mechanisms of SARS-CoV-2 entry supported by multiple citations (Walls et al., 2020; Belouzard et al., 2012; Hoffmann et al., 2020) and structural data (Figure 1a). This provides necessary background context for understanding the significance of the S1/S2 site.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "6367b270-64a6-45b7-a74b-49c4a2e7d458",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ENaC regulates sodium and water homeostasis, is controlled by aldosterone and RAAS, plays a key role in airway fluid reabsorption, requires proteolytic activation, and its misregulation is associated with respiratory conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27, C9-C10 describe established biological knowledge about ENaC function supported by cited literature (Rossier and Stutts, 2009; Vallet et al., 1997). This background information is well-documented and provides essential context for understanding the potential significance of ENaC mimicry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "a7a19567-2964-42fa-9a86-4f1384bdeb42",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Molecular mimicry is an evolutionary strategy adopted by viruses to exploit host cellular machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 represents established scientific knowledge about viral evolution strategies. This provides the conceptual framework for interpreting the SARS-CoV-2 findings but is not a novel result of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "2eda9bc4-a88e-4729-bd00-68464e7a4d5d",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Furin-like cleavage motifs can be found in other viruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 is supported by cited literature (Coutard et al., 2020) and provides context that furin cleavage sites are not unique to SARS-CoV-2, though the exact mimicry of ENaC-\u03b1 distinguishes this case.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "8393b8eb-6edc-46fb-9926-94428caafbd7",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The protease PLG cleaves the \u03b3-subunit of ENaC (ENaC-\u03b3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by cited literature (Passero et al., 2008) and provides additional context about ENaC proteolytic regulation, though it is not central to the main findings about the \u03b1-subunit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "431a7a16-fb39-42b0-a8f7-91e710dfda91",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Extracellular proteases need not necessarily be expressed in the same cells as ACE2 and ENaC-\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 represents established biological knowledge about extracellular protease function and provides important context for interpreting the co-expression analysis, acknowledging that spatial proximity at the tissue level may be sufficient for protease activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    },
+    {
+      "id": "3595ef70-94fa-429d-acd3-634be458cb72",
+      "content_id": "06abb158-38fb-4db6-ad8e-ffa48644ecab",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "PCSK5 and PCSK7 are plausible broad-spectrum proteases that may cleave the S1/S2 site based on their broad co-expression with ACE2 and ENaC-\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C47 is a speculative inference based on co-expression data (C46) and proteolytic similarity (C42). While the computational evidence supports the possibility, actual cleavage activity has not been experimentally demonstrated. The claim appropriately uses cautious language ('plausible,' 'may cleave').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T17:19:49.714533Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "de9fc517-d9bc-42a0-b8de-9f6ae925acdc",
+      "result_id": "e61731a6-a1b8-40ea-b8de-3f7543c0e294"
+    },
+    {
+      "claim_id": "f200820b-c055-4b79-aaee-0dd77048e01e",
+      "result_id": "e61731a6-a1b8-40ea-b8de-3f7543c0e294"
+    },
+    {
+      "claim_id": "6b966f7d-6e4b-437d-a1c8-7578c76ebca3",
+      "result_id": "e61731a6-a1b8-40ea-b8de-3f7543c0e294"
+    },
+    {
+      "claim_id": "82ce74e3-9ab5-4ca3-92e5-413eeb353e98",
+      "result_id": "e61731a6-a1b8-40ea-b8de-3f7543c0e294"
+    },
+    {
+      "claim_id": "b70eb062-9f29-4629-a974-c6c220b489c9",
+      "result_id": "e61731a6-a1b8-40ea-b8de-3f7543c0e294"
+    },
+    {
+      "claim_id": "56c46ebe-9e3a-4e08-852b-d55c5b365217",
+      "result_id": "e61731a6-a1b8-40ea-b8de-3f7543c0e294"
+    },
+    {
+      "claim_id": "771c97e9-f973-4056-9a10-0158086ec12a",
+      "result_id": "e61731a6-a1b8-40ea-b8de-3f7543c0e294"
+    },
+    {
+      "claim_id": "ba330ab6-4817-4963-9755-4f6e1a2afea0",
+      "result_id": "d3d3d05a-b132-46d3-b503-647450e7b62b"
+    },
+    {
+      "claim_id": "058c71c3-ab51-474d-a8c1-20bedd25501c",
+      "result_id": "d3d3d05a-b132-46d3-b503-647450e7b62b"
+    },
+    {
+      "claim_id": "0fe86e0f-ee2d-42d1-817d-11f1566c6d04",
+      "result_id": "d3d3d05a-b132-46d3-b503-647450e7b62b"
+    },
+    {
+      "claim_id": "7fa0b323-72cf-4f21-a6a5-2940adcb3c03",
+      "result_id": "d3d3d05a-b132-46d3-b503-647450e7b62b"
+    },
+    {
+      "claim_id": "bc127d36-f398-4fd9-8c79-cc36fd6451a1",
+      "result_id": "d3d3d05a-b132-46d3-b503-647450e7b62b"
+    },
+    {
+      "claim_id": "409704ce-51a0-464c-83c3-ccb57cb0dc17",
+      "result_id": "f4ac54ab-7466-425b-bfd8-76fc4b8bcd24"
+    },
+    {
+      "claim_id": "da00119d-9159-458c-94dc-eff66ec65ad9",
+      "result_id": "f4ac54ab-7466-425b-bfd8-76fc4b8bcd24"
+    },
+    {
+      "claim_id": "f16149b0-15a8-484b-af8d-251bc228ad5b",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "fbbe7759-c6e4-4d42-b646-02f8fcf4a8e9",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "37e10996-8a92-4b17-9b55-367be800d1fa",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "40086477-68f2-4f28-98e6-ed7e2e6a384a",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "517ead3d-6543-419a-8914-b6d6996260a8",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "e1b7c634-00af-46fb-8737-4c8269314350",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "4a54fca6-a53f-47ed-b2fc-a9e0effd736e",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "2196480a-258b-427d-92ec-a8b8dc181b34",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "fdc39bef-cb16-4635-ad09-6c740c0188fb",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "168490bd-0002-4b2c-b598-0db4313a6d4c",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "6c65ee40-8c5b-47a1-9654-0d5d1ff8808c",
+      "result_id": "5aaca276-0150-4d02-91dd-97660b502c76"
+    },
+    {
+      "claim_id": "93bf1b99-285e-4adb-98fb-92af041df0b4",
+      "result_id": "81533e4d-411a-47fa-8426-ec7f1c30eca2"
+    },
+    {
+      "claim_id": "cb46a550-6959-492a-8e75-790cd3954b01",
+      "result_id": "81533e4d-411a-47fa-8426-ec7f1c30eca2"
+    },
+    {
+      "claim_id": "ac51d205-6e12-43d1-8aeb-933a04a8d572",
+      "result_id": "81533e4d-411a-47fa-8426-ec7f1c30eca2"
+    },
+    {
+      "claim_id": "f7a31e61-64cb-45b4-be79-031d948a7189",
+      "result_id": "81533e4d-411a-47fa-8426-ec7f1c30eca2"
+    },
+    {
+      "claim_id": "93442628-c47c-4003-88d1-5ee5bab0c0c9",
+      "result_id": "81533e4d-411a-47fa-8426-ec7f1c30eca2"
+    },
+    {
+      "claim_id": "0342039a-6263-4501-9f22-3abd904fe2ee",
+      "result_id": "81533e4d-411a-47fa-8426-ec7f1c30eca2"
+    },
+    {
+      "claim_id": "25cf21ac-8e61-4194-8169-37f5df2dc3d4",
+      "result_id": "c373e048-c247-4753-bcaa-05a2f5fff231"
+    },
+    {
+      "claim_id": "8b434275-1a97-4995-a3ce-6bb936fbc61b",
+      "result_id": "c373e048-c247-4753-bcaa-05a2f5fff231"
+    },
+    {
+      "claim_id": "74ace783-7752-4bd8-b0ff-052cd7cacb64",
+      "result_id": "3ecbb85b-bd1f-406c-ac37-75e3be6c7954"
+    },
+    {
+      "claim_id": "1aa1a9d1-ea12-4b79-9d3b-2ab84d987e80",
+      "result_id": "3ecbb85b-bd1f-406c-ac37-75e3be6c7954"
+    },
+    {
+      "claim_id": "f8faa4e0-71d3-482b-bd36-1570a14d63e2",
+      "result_id": "3ecbb85b-bd1f-406c-ac37-75e3be6c7954"
+    },
+    {
+      "claim_id": "fc7d745a-21ad-4ed1-b208-6998f3593a44",
+      "result_id": "8a614f79-cf20-4c23-8900-2ae160fb13fc"
+    },
+    {
+      "claim_id": "37239df4-72bd-4444-9435-42bf008e3173",
+      "result_id": "8a614f79-cf20-4c23-8900-2ae160fb13fc"
+    },
+    {
+      "claim_id": "4852f094-5b04-40d0-a673-77f220f1b459",
+      "result_id": "8a614f79-cf20-4c23-8900-2ae160fb13fc"
+    },
+    {
+      "claim_id": "9d5a1022-a77e-48f6-8932-7623a4af7d7e",
+      "result_id": "0a14e91f-bbdc-43f5-b076-51db3862b598"
+    },
+    {
+      "claim_id": "00ced345-2bc1-4aee-96d1-f2a35f90bd28",
+      "result_id": "0a14e91f-bbdc-43f5-b076-51db3862b598"
+    },
+    {
+      "claim_id": "367c488f-4a07-46f4-9f05-8e13d51d7e11",
+      "result_id": "4305cba9-ef8a-464d-b295-5b23171b807c"
+    },
+    {
+      "claim_id": "32be3645-0a70-42a9-9d80-74a903edb95a",
+      "result_id": "4305cba9-ef8a-464d-b295-5b23171b807c"
+    },
+    {
+      "claim_id": "fd17e56c-fcdd-455e-8780-065d4f35b944",
+      "result_id": "4305cba9-ef8a-464d-b295-5b23171b807c"
+    },
+    {
+      "claim_id": "fbd14ba6-1a54-4236-9975-024c68827403",
+      "result_id": "2d8a27f0-521e-46d4-ad46-f6344848eda1"
+    },
+    {
+      "claim_id": "f2a9af61-841c-4caa-9a93-7e7529fca38b",
+      "result_id": "2d8a27f0-521e-46d4-ad46-f6344848eda1"
+    },
+    {
+      "claim_id": "64383150-dbf2-49e6-8c8a-f5ba375d96e7",
+      "result_id": "2d8a27f0-521e-46d4-ad46-f6344848eda1"
+    },
+    {
+      "claim_id": "c779b44f-1356-4304-95b4-cb70ce591c86",
+      "result_id": "2d8a27f0-521e-46d4-ad46-f6344848eda1"
+    },
+    {
+      "claim_id": "245f983f-1ed5-484d-b17c-f3ba0790d708",
+      "result_id": "6367b270-64a6-45b7-a74b-49c4a2e7d458"
+    },
+    {
+      "claim_id": "ec2fdcc8-317d-464e-9880-6e6a8fdbdf5e",
+      "result_id": "6367b270-64a6-45b7-a74b-49c4a2e7d458"
+    },
+    {
+      "claim_id": "785c6d94-e8da-451c-8f16-114613b0ba64",
+      "result_id": "6367b270-64a6-45b7-a74b-49c4a2e7d458"
+    },
+    {
+      "claim_id": "b4a0121e-7dda-4314-b555-7dfbd92f33e2",
+      "result_id": "6367b270-64a6-45b7-a74b-49c4a2e7d458"
+    },
+    {
+      "claim_id": "f8e6fa0e-eb02-4c27-9bba-dea6757fd64c",
+      "result_id": "6367b270-64a6-45b7-a74b-49c4a2e7d458"
+    },
+    {
+      "claim_id": "92596e9a-50b5-4dcf-9c6e-1746b9d3cba9",
+      "result_id": "6367b270-64a6-45b7-a74b-49c4a2e7d458"
+    },
+    {
+      "claim_id": "6a2e560d-b213-46ae-a14d-2febb3fee2d6",
+      "result_id": "a7a19567-2964-42fa-9a86-4f1384bdeb42"
+    },
+    {
+      "claim_id": "d3416a1a-98bc-478a-bd4e-e09e0d29f7ed",
+      "result_id": "2eda9bc4-a88e-4729-bd00-68464e7a4d5d"
+    },
+    {
+      "claim_id": "20066724-dce1-4726-a8ed-9459dc06ed59",
+      "result_id": "8393b8eb-6edc-46fb-9926-94428caafbd7"
+    },
+    {
+      "claim_id": "7ef0ae5d-f5aa-447c-a941-7e39f638d2aa",
+      "result_id": "431a7a16-fb39-42b0-a8f7-91e710dfda91"
+    },
+    {
+      "claim_id": "f36cef96-0019-44b6-a155-2fe53fd6b782",
+      "result_id": "3595ef70-94fa-429d-acd3-634be458cb72"
+    }
+  ],
+  "comparisons": []
+}

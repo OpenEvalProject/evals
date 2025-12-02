@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study used iPSC-derived macrophages from 123 donors (HipSci project), with 71 lines used for acLDL stimulation (100 \u00b5g/ml for 24 hr). Cell lines were screened for mycoplasma and cultured in either feeder-dependent or feeder-free conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide clear documentation of sample sources, culture conditions, and experimental design. The sample sizes (123 total donors, 71 for acLDL) are explicitly stated with appropriate quality control measures (mycoplasma screening, sample exclusion based on PCA). The experimental protocol is sufficiently detailed for the acLDL stimulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "RNA-seq data were processed using standard bioinformatics pipelines: STAR v2.4.0j for alignment to GRCh38, VerifyBamID for sample QC, featureCounts v1.5.0 for quantification, and conditional quantile normalization (cqn) for normalization. After filtering, 12,660 genes (IFN\u03b3+Salmonella) and 12,103 genes (acLDL) were analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C13 describe a well-established RNA-seq processing pipeline with appropriate tools and version numbers cited. The filtering criteria (mean expression >1 TPM in at least one condition) is reasonable and clearly stated. Sample QC procedures (VerifyBamID, PCA-based outlier removal) are appropriate. The resulting gene counts are explicitly reported for both datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C18"
+    ],
+    "result": "The authors developed txrevise, an R package that extends truncated transcripts using exons from the longest annotated transcript. This addresses the problem that 25-35% of exon-exon junctions in RNA-seq data are not in transcript databases and up to 60% of Ensembl transcripts are truncated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C18 establish the rationale and methodology for txrevise. The cited statistics about missing junctions (C18) from prior work (Ongen and Dermitzakis, 2015) and truncated transcripts provide strong motivation. The extension methodology is clearly described and illustrated in referenced figures. The package is made publicly available.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C65",
+      "C66"
+    ],
+    "result": "Txrevise detected approximately 30% more QTL associations than other methods (1500-3500 QTLs per condition at 10% FDR), with 55% affecting promoter or 3' end usage. Txrevise identified multiple associations for ~24% of genes, while Leafcutter consistently detected the fewest QTLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C65-C66 present quantitative comparisons between methods with specific percentages and ranges. The increased detection by txrevise is explained by its ability to detect multiple events per gene and capture promoter/3' end changes. The comparison is fair as all methods used the same FDR threshold (10%) and the same input data. Figures are referenced to support the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C51"
+    ],
+    "result": "Different quantification methods capture complementary sets of genetic associations. Txrevise and full-length transcript usage showed >60% overlap (high LD), while only 44% of txrevise internal exon QTLs and ~20% of promoter/3' end QTLs overlapped with Leafcutter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 and C51 demonstrate method complementarity through LD analysis (r\u00b2>0.8). The differential overlap rates (44% for internal exons vs ~20% for promoter/3' ends with Leafcutter) logically support the conclusion that Leafcutter is less suited for promoter/3' end detection. The replication analysis methodology is clearly described and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C47",
+      "C58"
+    ],
+    "result": "Promoter usage, splicing, and 3' end usage are regulated by largely independent genetic variants enriched in distinct genomic features. eQTLs are enriched in open chromatin (log enrichment 3.31), transcript-level QTLs in splicing factor binding sites (2.29), promoter QTLs at promoters (2.76) and open chromatin (1.58), and 3' end QTLs at 3' UTRs (3.60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33, C47, C58 present enrichment analysis results with specific log enrichment values and 95% confidence intervals. The use of fgwas with hierarchical modeling is appropriate. The distinct enrichment patterns (eQTLs in open chromatin, splicing QTLs at splicing factor sites, promoter QTLs at promoters, 3' end QTLs at 3' UTRs) provide strong evidence for independent regulatory mechanisms. The confidence intervals indicate statistical precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "15.8% of promoter usage QTLs were in high LD with chromatin accessibility QTLs (vs 10.2% for internal exon/3' end QTLs, p=3.87\u00d710\u207b\u2075). When restricted to local promoter regions (within 1000 bp), 5.8% of promoter usage QTLs showed coordinated effects on promoter accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 present specific overlap statistics with appropriate statistical testing (Fisher's exact test). The enrichment of promoter usage QTLs overlapping with accessibility QTLs is statistically significant. The authors appropriately acknowledge that the small overlap (5.8% for local effects) may reflect limited power in the accessibility dataset (only 41 individuals) rather than true lack of coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Over 50% of genetic effects colocalizing with complex traits regulated transcript usage without affecting total gene expression (91/138 colocalized QTLs). Of transcript-level colocalisations, 42% affected promoter or 3' end usage, with promoter usage QTLs constituting 25% of transcript-level colocalisations. Leafcutter captured only 1/10 3' end events but half of promoter/internal exon events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42, C48-C50 present colocalisation analysis results using appropriate statistical methods (coloc with PP3+PP4>0.8, PP4/PP3>9). The finding that >50% of trait-associated QTLs affect transcript usage but not total expression is well-supported by the data (91/138). The method-specific detection rates are clearly quantified. The authors appropriately note that method-specificity estimates may be inflated due to power differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C59"
+    ],
+    "result": "Promoter usage QTLs were 50% more likely to be response QTLs than other tuQTLs (Fisher's exact test p=2.79\u00d710\u207b\u2076). On average, 12% of GWAS colocalisations were response QTLs. An example is an IFN\u03b3-specific promoter usage QTL for CD40 (rs4239702) that colocalises with rheumatoid arthritis GWAS signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C59 demonstrate context-specificity of promoter usage QTLs with appropriate statistical testing and a well-documented example. The 50% increased likelihood is statistically significant (p=2.79\u00d710\u207b\u2076). The CD40 example is supported by colocalisation analysis (cited GWAS study) and illustrated with coverage plots. The conclusion that context-specific promoter usage regulation may be an underappreciated mechanism is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The manuscript cites prior work establishing that alternative transcript start/end sites underlie most tissue differences, are dynamically regulated by stimuli, are dysregulated in cancer, and that complex trait variants are enriched in regulatory elements and splicing QTLs. Incorporating splicing QTLs increased disease-associated genes by twofold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 appropriately cite relevant prior literature to establish context and motivation. The citations appear appropriate for the claims made (Pal et al., 2011; Reyes and Huber, 2018 for tissue differences; Alasoo et al., 2015; Richards et al., 2017 for stimulus response; Li et al., 2018 for twofold increase in disease genes). These background claims provide important context for the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C75",
+      "C76"
+    ],
+    "result": "QTL mapping used QTLtools with appropriate parameters: \u00b1100 kb window for permutation pass, \u00b1500 kb for nominal pass, first six PCs as covariates. Response QTLs were defined using interaction tests (FDR<10%) and variance component analysis (\u03c3\u00b2relative>0.5) with linear mixed models (lme4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70, C75-C76 describe appropriate QTL mapping methodology. The use of QTLtools with permutation testing is standard. The window sizes (\u00b1100 kb for discovery, \u00b1500 kb for nominal pass) are reasonable. The response QTL definition combining interaction test significance with variance component filtering (\u03c3\u00b2relative>0.5) is a sensible approach to identify QTLs with meaningful effect size differences between conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Colocalisation analysis used coloc v2.3-1 on 400 kb regions centered on lead QTL variants within 100 kb of GWAS variants (p<10\u207b\u2075). Prior probabilities were p1=10\u207b\u2074, p2=10\u207b\u2074, p12=10\u207b\u2075. MHC region results were excluded due to complex LD patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 describe appropriate colocalisation methodology. The use of coloc with specified prior probabilities is standard. The 400 kb window and proximity threshold (100 kb from GWAS variant with p<10\u207b\u2075) are reasonable. Exclusion of the MHC region is appropriate and well-justified given known complex LD patterns that can lead to false positive colocalisations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "GWAS summary statistics were obtained for 33 traits: 10 immune-mediated disorders (IBD, UC, CD, AD, RA, SLE, T1D, SCZ, MS, CEL, NAR), metabolic traits (T2D, CAD, MI), and 20 cardiometabolic traits from a meta-analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 document the GWAS datasets used with appropriate citations. The breadth of traits (33 total) provides good coverage of immune and metabolic phenotypes relevant to macrophage biology. All GWAS studies are cited, allowing verification of the data sources. This is appropriate documentation of input data for the colocalisation analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C80",
+      "C81"
+    ],
+    "result": "All data, code, and software are publicly available: txrevise R package on GitHub, RNA-seq data on ENA/EGA, genotypes on ENA/EGA, processed data and QTL summary statistics on Zenodo, analysis code (Snakemake) on GitHub, and wiggleplotr on Bioconductor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64, C80-C81 document comprehensive data and code availability with specific accession numbers and URLs. This meets high standards for reproducibility. Raw data are in appropriate public repositories (ENA/EGA), processed data and summary statistics are on Zenodo, and all analysis code is on GitHub. The software packages are available from appropriate repositories (GitHub, Bioconductor).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Detailed methods are provided for transcript quantification (Salmon, tximport), Leafcutter parameters (\u226550 reads, \u2264500 kb introns), genotype filtering (IMP2>0.4, MAF>0.05), coordinate conversion (CrossMap), enrichment analysis (fgwas), and genomic annotations (promoters: -2000 to +200 bp; poly(A) sites: \u00b125 bp; 93 RBPs from eCLIP in K562 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C96 provide comprehensive methodological details with appropriate tool citations and parameter specifications. The methods are standard and well-established in the field. Parameters are clearly stated (e.g., Leafcutter thresholds, genotype filtering criteria, promoter definition). The use of K562 eCLIP data for RBP binding sites is reasonable given the lack of macrophage-specific data, though this represents a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The iPSC lines are commercially available via the European Collection of Authenticated Cell Cultures. No new primary samples were collected. All HipSci samples were from consented volunteers from NIHR Cambridge BioResource with ethics approval from East of England - Cambridge East Research Ethics Committee.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 provide appropriate documentation of ethics approval, consent, and sample availability. The use of existing, consented samples from the HipSci project is clearly stated. Commercial availability of cell lines supports reproducibility. Ethics approval is documented with the specific committee named. This meets standards for ethical conduct and transparency.",
+    "result_type": "MINOR"
+  }
+]

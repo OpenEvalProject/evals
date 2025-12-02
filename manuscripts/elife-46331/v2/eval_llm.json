@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C50",
+      "C79"
+    ],
+    "result": "Across six perceptual decision-making datasets spanning multiple modalities and task protocols, individual choice history biases in overt behavior were consistently explained by history-dependent changes in drift bias (evidence accumulation rate) rather than starting point shifts. Model comparison using AIC showed that models with history-dependent drift bias better explained the data, and critically, only the history shift in drift bias\u2014not starting point\u2014robustly correlated with individual probability of choice repetition across datasets (Bayes factor for drift bias correlation >100, for starting point ~0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C42, C50, and C79 collectively demonstrate the main finding through multiple converging lines of evidence: formal model comparison (C35-C36), conditional bias functions showing biased choices across all RTs including slow responses (C37-C38), robust correlations between drift bias and choice repetition but not starting point (C39, C41-C42), and consistency across alternative fitting procedures (C43-C46). The Bayesian evidence strongly supports drift bias over starting point as the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The drift diffusion model (DDM) provided good fits to behavioral data across all six datasets, with RT distributions matching model predictions, individual drift rates correlating with perceptual sensitivity (d'), and drift rates monotonically increasing with sensory evidence strength. The DDM successfully fit both response time and fixed duration tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 establish that the DDM is an appropriate modeling framework for these data through multiple validation checks: RT distribution matches (C28-C29), correlation with sensitivity measures (C31), monotonic relationship with evidence strength (C32), and consistency with previous work on fixed duration tasks (C33). These validation steps are necessary to justify the subsequent model comparisons and parameter interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "History-dependent drift biases did not require external feedback about choice outcome and were predominantly induced by the previous choice itself. Individual repetition probability was best explained by history shifts in drift bias (not starting point) after both correct and error trials, with even erroneous choices biasing evidence accumulation in the same direction as correct choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 demonstrate that the drift bias effect is independent of feedback through analysis of datasets without feedback (C51) and separate analysis of post-correct and post-error trials (C52-C53). The finding that most participants were biased by choice alone rather than outcome (C54) further supports this conclusion. This rules out reward-based explanations for the drift bias effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The biasing effect of choice history on evidence accumulation extends across multiple past trials (2-4 trials back), with drift bias showing slower decay (\u03c4 \u2248 2.38 trials) than starting point (\u03c4 \u2248 1.39 trials). Regression weights for drift bias at lags 2+ significantly correlated with choice repetition probability at those lags, while starting point did not show consistent shifts in the direction of individual history bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 establish the temporal dynamics of choice history effects through multi-lag regression models. The finding that drift bias effects persist longer than starting point effects (C61), and that only drift bias weights correlate with repetition probability at longer lags (C62), extends the main finding beyond lag-1 effects. Model comparison showing best fits with 2-4 lags of drift bias (C57-C59) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Using motion energy estimates as time-varying input to extended bounded accumulation models in one dataset, the leaky accumulator with biased accumulator input best explained the data among all models tested. A constant drift bias provided better fits than ramping drift bias, and the main conclusion held even when including collapsing bounds to account for urgency signals. The effective bias signal accelerated over time, consistent with rational combination of prior information with current evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C75 demonstrate robustness of the main finding to model complexity and provide mechanistic insight. The leaky accumulator with input bias winning model comparison (C71-C72) suggests choice history biases the internal representation of sensory evidence. The accelerating effective bias dynamics (C74-C75) and superiority of constant over ramping drift bias (C66-C67) provide additional constraints. The conclusion holding with collapsing bounds (C68-C70) shows independence from urgency signal modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The main findings were robust to alternative fitting procedures (non-hierarchical G2 optimization), additional model complexity (across-trial variability in non-decision time, separate non-decision times per evidence level), pharmacological manipulations, and held for both 'repeater' and 'alternator' subgroups of participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 establish robustness through multiple control analyses. The consistency across fitting methods (C43), model variants (C44), pharmacological conditions (C46), and participant subgroups (C47) strengthens confidence that the drift bias finding is not an artifact of specific modeling choices or limited to particular populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C92",
+      "C93"
+    ],
+    "result": "History shifts in starting point were mostly negative (toward choice alternation) across participants regardless of individual repetition/alternation tendency, reaching statistical significance in three of six datasets. This small but consistent negative effect may explain why model comparison favored the hybrid model (both drift and starting point) over drift-only models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C92-C93 document a consistent but secondary finding about starting point. The negative starting point shift (C48, C92) being independent of individual bias direction (C48) and statistically significant in half the datasets (C93) explains the model comparison results (C49). However, this effect does not correlate with individual choice repetition (C39, C41), distinguishing it from the primary drift bias finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Choice history-dependent biases in evidence accumulation were accompanied by effects on drift rate and boundary separation, consistent with previous work on post-error slowing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 reports additional effects on other DDM parameters beyond the bias parameters, with citation to previous work on post-error slowing. This is supported by Figure 4\u2014figure supplement 1 showing these effects. However, these effects are secondary to the main finding about drift bias vs. starting point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Choice history explains trial-to-trial variability specifically in evidence accumulation across widely used perceptual choice tasks. Ignoring such trial-to-trial variations will lead to overestimation of noise in the evidence accumulation process and resulting behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 state the broader implications of the findings for understanding decision noise. C77 summarizes the main empirical finding, while C78 draws a logical inference about the consequences of ignoring history effects. This is supported by the consistent finding of history-dependent drift bias across all datasets (C3, C35-C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The findings call for revision of current models of choice history biases that postulate starting point shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 states the theoretical implication of the findings, with citations to previous models (Yu and Cohen, 2008; Zhang et al., 2014) that assumed starting point biases. This is justified by the strong evidence against starting point as the mechanism (C39, C41) and for drift bias (C42, C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The observed starting point shift toward alternation may reflect either stereotypical response alternation from motor cortex dynamics (e.g., beta rebound) or more complex decision dynamics (non-linear drift biases or leak biases) that manifest as opposite effects on starting point and drift bias when fit with the standard DDM. Negative correlations between starting point and drift bias estimates were present but weak and not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94-C100 propose speculative explanations for the starting point findings. While the motor cortex explanation (C94-C95) has some empirical support from cited work, and the complex dynamics explanation (C97-C98) is supported by simulations, the weak and non-significant negative correlations (C99) make it difficult to definitively support either explanation. The authors appropriately acknowledge this uncertainty (C100).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "A plausible mechanism underlying choice history-dependent drift bias is top-down modulation of sensory representations by choice history signals in prefrontal and parietal regions, analogous to attention. This could occur either through choices directing attention or through spontaneous fluctuations in attention sampling different features across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C108 propose mechanistic explanations drawing on the attention literature (C102-C103) and known neural substrates (C104). However, these are explicitly speculative (C105, C107) and not directly tested in the current study. While plausible given the cited literature and the finding of input bias in the leaky accumulator model (C73), these mechanisms require future neurophysiological testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Choice history biases may reflect application of an internal model of environmental stability (appropriate for real-world auto-correlated environments) to randomized laboratory experiments. People flexibly adjust history biases to environmental stability, and the accelerating effective bias dynamics suggest rational combination of prior and evidence, though based on erroneous environmental assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C91 propose a normative explanation for why history biases occur. While C90 cites evidence for flexible adjustment to environmental statistics, and C75 shows accelerating bias dynamics consistent with rational inference, the claim that participants apply an erroneous environmental model (C89, C91) is speculative. The cited work (C88-C90) supports the general framework but does not directly test this specific explanation in the current datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "History-dependent evidence accumulation biases might index the interplay between different effective timescales in cortical hierarchy, with long-timescale accumulators at higher stages biasing short-timescale accumulators at intermediate stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 proposes a hierarchical timescale interpretation of the findings, drawing on cited neurophysiological work (C109-C111). While the finding of multi-trial history effects (C63) is consistent with this framework, the specific hierarchical mechanism is speculative and not directly tested. This represents an interesting hypothesis for future work but lacks direct empirical support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Perceptual choices are influenced by behavioral context including choice history, which varies substantially across individuals and occurs even in uncorrelated environments. Choice history biases are prevalent across species, and neural signals reflecting previous choices are found throughout sensorimotor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 establish the background and motivation for the study through citations to extensive prior literature. These claims about the prevalence (C7-C8), cross-species nature (C8), environmental independence (C9), individual variability (C10), and neural basis (C11) of choice history biases are well-supported by the cited literature and provide essential context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Current accumulation-to-bound models posit that biases can arise through starting point shifts or changes in accumulation rate. Previous theoretical accounts postulated starting point shifts based on slow decay of decision variables, but previous experimental work either did not analyze within-trial dynamics or only tested starting point biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 establish the theoretical framework and identify the gap in the literature. The description of accumulation-to-bound models (C12-C16) is supported by extensive citations, as are the claims about previous theoretical (C17-C18) and experimental (C20) work. This effectively motivates why the current study is needed to distinguish between biasing mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The DDM framework allows distinguishing between starting point and drift bias through their differential effects on RT distributions: starting point bias predominantly affects fast RTs and the leading edge of the distribution, while drift bias affects the entire RT range including slow RTs and the trailing edge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 describe the theoretical predictions that enable distinguishing the two biasing mechanisms. These predictions (C22-C25) follow from the mathematical properties of the DDM and are illustrated in Figure 1. The claim about other parameters being insufficient to bias choices (C26) is supported by theoretical argument and Figure 4\u2014figure supplement 1. This establishes the key diagnostic features used in the empirical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study analyzed six datasets spanning different modalities (visual motion, visual contrast, auditory), task types (2AFC, 2IFC, yes/no), and protocols (RT, fixed duration), with sample sizes ranging from 23-62 participants per dataset. All data, model fits, and analysis code are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 describe the datasets and data availability. These are straightforward factual claims about the study design and materials, supported by the detailed methods descriptions and the provided data repository link (C119). The diversity of datasets (C113-C118) is important for establishing the generality of the findings.",
+    "result_type": "MINOR"
+  }
+]

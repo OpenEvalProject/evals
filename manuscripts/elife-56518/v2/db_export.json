@@ -1,0 +1,1323 @@
+{
+  "submission": {
+    "id": "9d05c751-0a96-42fb-a67f-be178fb4843a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:50:54.595897Z",
+    "updated_at": "2025-12-02T18:50:54.595897Z"
+  },
+  "content": [
+    {
+      "id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "submission_id": "9d05c751-0a96-42fb-a67f-be178fb4843a",
+      "content_type": "manuscript",
+      "content_text": "# Structure and dynamics of a nanodisc by integrating NMR, SAXS and SANS experiments with molecular dynamics simulations\n\n## Authors\n\n- Tone Bengtsen<sup>1</sup>\n- Viktor L Holm<sup>2</sup>\n- Lisbeth Ravnkilde Kj\u00f8lbye<sup>3</sup>\n- S\u00f8ren R Midtgaard<sup>2</sup>\n- Nicolai Tidemand Johansen<sup>2</sup>\n- Giulio Tesei<sup>1</sup> ([ORCID: 0000-0003-4339-4460](https://orcid.org/0000-0003-4339-4460))\n- Sandro Bottaro<sup>1</sup> ([ORCID: 0000-0003-1606-890X](https://orcid.org/0000-0003-1606-890X))\n- Birgit Schi\u00f8tt<sup>3</sup>\n- Lise Arleth<sup>2</sup> \u2020\n- Kresten Lindorff-Larsen<sup>1</sup> ([ORCID: 0000-0002-4750-6039](https://orcid.org/0000-0002-4750-6039)) \u2020\n\n### Affiliations\n\n1. Structural Biology and NMR Laboratory and Linderstr\u00f8m-Lang Centre for Protein Science, Department of Biology, University of Copenhagen Copenhagen Denmark\n2. Structural Biophysics, X-ray and Neutron Science, Niels Bohr Institute, University of Copenhagen Copenhagen Denmark\n3. Department of Chemistry, Aarhus University Aarhus Denmark\n4. Novo Nordisk A/S M\u00e5l\u00f8v Denmark\n\n\u2020 Corresponding author\n\n## Abstract\n\nNanodiscs are membrane mimetics that consist of a protein belt surrounding a lipid bilayer, and are broadly used for characterization of membrane proteins. Here, we investigate the structure, dynamics and biophysical properties of two small nanodiscs, MSP1D1\u0394H5 and \u0394H4H5. We combine our SAXS and SANS experiments with molecular dynamics simulations and previously obtained NMR and EPR data to derive and validate a conformational ensemble that represents the structure and dynamics of the nanodisc. We find that it displays conformational heterogeneity with various elliptical shapes, and with substantial differences in lipid ordering in the centre and rim of the discs. Together, our results reconcile previous apparently conflicting observations about the shape of nanodiscs, and pave the way for future integrative studies of larger complex systems such as membrane proteins embedded in nanodiscs.\n\n## Introduction\n\nNanodiscs are widely used membrane models that facilitate biophysical studies of membrane proteins (Bayburt et al., 2002). They are derived from, and very similar to, the human ApoA1 protein from high density lipoproteins (HDL particles) and consist of two amphipatic membrane scaffold proteins (MSPs) that stack and encircle a small patch of lipids in a membrane bilayer to form a discoidal assembly. The popularity of nanodiscs arises from their ability to mimic a membrane while at the same time ensuring a small system of homogeneous composition, the size of which can be controlled and can give diameters in a range from about 7 to 13 nm (Denisov et al., 2004; Hagn et al., 2013).\n\nDespite the importance of nanodiscs in structural biology research and the medical importance of HDL particles, we still lack detailed structural models of these protein-lipid particles. The nanodisc has so far failed to crystallize, so a range of different biophysical methods have been used to provide information about specific characteristics. For example, mass spectrometry experiments have provided insight into lipid-water interactions and heterogeneous lipid compositions (Marty et al., 2014; Marty et al., 2015), solid state NMR has been used to quantify lipid phase transition states and lipid order (M\u00f6rs et al., 2013; Martinez et al., 2017) and small angle X-ray scattering (SAXS) and -neutron scattering (SANS) have provided insight into the size and low resolution shape of nanodiscs in solution (Denisov et al., 2004; Skar-Gislinge et al., 2010; Midtgaard et al., 2014). These experiments have been complemented by molecular dynamics (MD) simulations that provided both pioneering insights into the structure (Shih et al., 2005; Shih et al., 2007) as well as a better understanding of the assembly process, lipid-protein interactions and how much a nanodisc mimicks the\u00a0membrane bilayer (Siuda and Tieleman, 2015; Debnath and Sch\u00e4fer, 2015; Vestergaard et al., 2015).\n\nA high resolution structure of the MSP protein belt encircling the nanodisc was recently obtained from the small, helix-5-deleted nanodisc, MSP1D1\u0394H5 (henceforth \u0394H5), reconstituted with DMPC lipids (\u0394H5-DMPC) (Bibow et al., 2017) by combining nuclear magnetic resonance (NMR) spectroscopy, electron paramagnetic resonance (EPR) spectroscopy and transmission electron microscopy (TEM) (Bibow et al., 2017). While these experiments were performed on lipid-loaded nanodiscs, the study focused on the protein components, and on determining a time- and ensemble averaged structure of these, but left open the question of the role of the lipids (Martinez et al., 2017) as well as any structural dynamics of the overall nanodisc. Intriguingly, the resulting structure of the belt proteins corresponded to that of an almost circularly-shaped disc, while our previous SAXS/SANS investigations are clearly consistent with discs with an on-average elliptical cross-section (Skar-Gislinge et al., 2010; Midtgaard et al., 2015).\n\nHere, we build upon this work to study the structure and dynamics of the nanodisc and the lipid properties in the disc. We performed SAXS and SANS experiments on the \u0394H5-DMPC variant, and integrated these with MD simulations and the NMR data (Bibow et al., 2017) through an integrative Bayesian/maximum entropy (BME) approach (Hummer and K\u00f6finger, 2015; R\u00f3\u017cycki et al., 2011; Bottaro et al., 2020; Bottaro et al., 2018; Orioli et al., 2020). We thereby obtain a model of the conformational ensemble of the \u0394H5-DMPC nanodisc that is consistent with the structural information obtained from each method, as well as our molecular simulations, and\u00a0which successfully explains differences in previous structural interpretations. In addition, we study the lipid ordering in our ensemble, and use the results to aid in the interpretation of Differential Scanning Calorimetry (DSC) measurements of the melting transition of DMPC in differently sized nanodiscs. Our study exemplifies how these integrative methods can be used to protein-lipid systems, possibly paving the way for future studies of membrane proteins embedded in nanodiscs.\n\n## Results and discussion\n\n### Structural investigations of \u0394H5-DMPC and \u0394H4H5-DMPC nanodiscs by SAXS and SANS\n\nWe determined optimal reconstitution ratios between the DMPC lipids and the \u0394H5 and \u0394H4H5 protein belts to form lipid-saturated nanodiscs based on a size-exclusion chromatography (SEC) analysis (Figure 1\u2014figure supplement 1 and Materials and methods). In line with previous studies (Hagn et al., 2013), we found that reconstitution ratios of 1:33 for \u0394H4H5:DMPC and 1:50 for \u0394H5:DMPC were optimal in order to form single and relatively narrow symmetric peaks. Building upon earlier work for other discs (Denisov et al., 2004; Skar-Gislinge et al., 2010) we performed combined SEC-SAXS and SEC-SANS experiments to determine the size and shape of DMPC loaded \u0394H5 and \u0394H4H5 nanodiscs (Figure 1). These experiments were performed at 10\u00b0C, and based on results from previous NMR experiments on nanodiscs (Martinez et al., 2017) as well as a melting temperature TM \u2248 24\u00b0C for DMPC,\u00a0where we expect the lipids to be in the gel-phase. Our SAXS and SANS data all exhibit a flat Guinier region at low q and indicate no signs of aggregation (Figure 1A,B). In both the \u0394H5-DMPC and \u0394H4H5-DMPC systems, the SAXS data exhibit an oscillation at medium to high q ([0.05:0.2] \u00c5-1) arising from the combination of a negative excess scattering length density of the hydrophobic alkyl-chain bilayer core and positive excess scattering length densities of the hydrophilic lipid PC-headgroups and the amphipathic protein belt. The SANS data decreases monotonically as a function of q in accordance with the homogeneous contrast situation present here. These two different contrast situations, core-shell-contrast for SAXS and bulk-contrast for SANS, are also clearly reflected in the obtained p(r)-functions (Figure 1C,D), which also confirm that the \u0394H5-DMPC nanodiscs are slightly larger than the \u0394H4H5-DMPC nanodiscs.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig1-v2.jpg)\n\n**Figure 1.:** (A) SEC-SAXS (dark purple) and SEC-SANS (light purple) for \u0394H5-DMPC nanodiscs at 10\u00b0C. The continuous curve show the model fit corresponding to the geometric nanodisc model shown in E. (B) SEC-SAXS (dark orange) and SEC-SANS (light orange) data for the \u0394H4H5-DMPC nanodiscs at 10\u00b0C. (C,D) Corresponding pair-distance distribution functions. (E, F) Fitted geometrical models for the respective nanodiscs (drawn to scale relative to one another).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) \u0394H4H5 with DMPC at variable molar ratios of DMPC to \u0394H4H5 with the molar stoichiometry indicated in the plot. (B) \u0394H5 with DMPC at variable molar ratios of DMPC to \u0394H4H5. In both plots, a reconstitution of MSP1D1:DMPC is inserted as reference (black line). The SEC analysis is performed using a GE Healthcare Life Science Superdex 200 10/300 GL column.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Top left) SAXS data from \u0394H5\u0394His (I.e. \u0394H5 with removed his-tags) obtained at 30\u00b0C (red) and 10\u00b0C (blue). Experimental data (points) and model fits (full lines). Top right) His-tagged \u0394H5-DMPC nanodiscs measured at 10\u00b0C with SEC-SAXS (dark violet) and SEC-SANS (light violet). Data were fitted with the analytical model for nanodiscs with elliptical cross-section (see description in main article). Bottom) Table with the parameter values of the shown best model fits for the different samples. In all cases, that\u00a0is, with/without His-tag and below and above the DMPC melting temperature, we found an axis ratio of the formed discs different from unity (between 1.2 and 1.4). Hence neither the variation of temperature nor the removal of the His-tag affects the overall conclusion that the elliptically-shaped nanodiscs describe the obtained small-angle scattering data.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** We repeated the parameterization of the coarse-grained model by scanning a range of fixed values of the axis ratio and refitted the remaining parameters to optimize the fit. (A) Comparison between experimental SAXS data and those calculated from the model with different values of the axis ratio (AR). (B) Quantification of the agreement between experiment and model. (C and D) show zoom ins on regions highlighted in A.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** We implemented a model for the nanodiscs that included a normally distributed dispersity around the average number of embedded lipids, where the width of the Gaussian was defined by its relative standard deviation in the number of embedded lipids, $\\sigma_{l\u2062i\u2062p}$, and truncated the Gaussian at $\\pm3\u2062\\sigma_{l\u2062i\u2062p}$. An upper hard limit for the number of lipids in the distribution was furthermore defined by the value that yielded circular and hence fully loaded discs. A lower hard limit was defined by the value that yielded discs with axis ratios exceeding 2. (A) Comparison between experimental SAXS data and those calculated from the model with different values of $\\sigma_{l\u2062i\u2062p}$, with $\\sigma_{l\u2062i\u2062p}=10^{-4}$ representing a monodisperse system. (B) Quantification of the agreement between experiment and model. (C and D) show zoom ins on regions highlighted in A.\n\nOur data are in qualitative agreement with the SAXS and SANS data obtained for MSP1D1 nanodiscs (Denisov et al., 2004; Skar-Gislinge et al., 2010) and similar systems (Midtgaard et al., 2014; Midtgaard et al., 2015), and indicate an \u2018on average\u2019 discoidal structure. Therefore,\u00a0w first analyzed the scattering data by global fitting of a previously developed molecular-constrained geometrical model for the nanodiscs (Skar-Gislinge et al., 2010; Skar-Gislinge and Arleth, 2011; Pedersen et al., 2013). The model (see Materials\u00a0and\u00a0methods) describes the lipid\u00a0interior of the nanodisc as a stack of flat, elliptically-shaped discs that\u00a0consists\u00a0of the hydrophobic bilayer that is sandwiched in between the two hydrophilic headgroup layers. The inner lipid part of the nanodisc is encircled by a hollow cylinder with an elliptical cross-section, which models the two protein MSP-belts stacked upon one another (Figure 1E,F). Using this model, we obtained excellent simultaneous fits to SAXS and SANS data for both the \u0394H4H5-DMPC and \u0394H5-DMPC nanodiscs (Figure 1A,B).\n\nWe find the area per headgroup,\u00a0$A_{head}$,\u00a0for DMPC for both systems (ca. 55 \u00c52 ; Table 1 left), somewhat higher than the $A_{head}$ of gel-phase DMPC (47.2\u00a0\u00b1\u00a00.5 \u00c52 at 10\u00b0C) (Tristram-Nagle et al., 2002), but in agreement with the very broad melting transition observed in our DSC data (see below). We find 65\u00a0\u00b1\u00a013 and 100\u00a0\u00b1\u00a014 DMPC molecules in the nanodiscs for \u0394H4H5 and \u0394H5, respectively, in agreement with the reconstitution ratios reported above.\n\n**Table 1.**\n Parameters of the SAXS and SANS model fit.Left: Parameters for the simultaneous model fits to SEC-SAXS and SEC-SANS of His-tagged nanodiscs (denoted -His) for both \u0394H4H5-DMPC and \u0394H5-DMPC. Both measurements were obtained at 10\u00b0C. Right: Standard solution SAXS measurements of the \u0394H5-DMPC nanodisc without His-tags (denoted -\u0394His) obtained at two different temperatures, in the gel phase at 10\u00b0C and in the liquid phase at 30\u00b0C. * marks parameters kept constant.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">SEC-SAXS+SEC-SANS</th>\n      <th colspan=\"2\">SAXS</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>\u0394H4H5-His</th>\n      <th>\u0394H5-His</th>\n      <th>\u0394H5-\u0394His</th>\n      <th>\u0394H5-\u0394His</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>T</td>\n      <td>10\u00b0C</td>\n      <td>10\u00b0C</td>\n      <td>10\u00b0C</td>\n      <td>30\u00b0C</td>\n    </tr>\n    <tr>\n      <td>\u03c72reduced</td>\n      <td>1.95</td>\n      <td>5.12</td>\n      <td>3.76</td>\n      <td>2.40</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"4\">Fitting Parameters</td>\n    </tr>\n    <tr>\n      <td>Axis Ratio</td>\n      <td>1.3\u00a0\u00b1\u00a00.4</td>\n      <td>1.2\u00a0\u00b1\u00a00.2</td>\n      <td>1.4\u00a0\u00b1\u00a00.1</td>\n      <td>1.3\u00a0\u00b1\u00a00.1</td>\n    </tr>\n    <tr>\n      <td>AH\u2062e\u2062a\u2062d</td>\n      <td>55\u00a0\u00b1\u00a05 \u00c52</td>\n      <td>54\u00a0\u00b1\u00a02 \u00c52</td>\n      <td>52\u00a0\u00b1\u00a02 \u00c52</td>\n      <td>60\u00a0\u00b1\u00a03</td>\n    </tr>\n    <tr>\n      <td>HB\u2062e\u2062l\u2062t</td>\n      <td>24* \u00c52</td>\n      <td>24* \u00c52</td>\n      <td>24* \u00c52</td>\n      <td>24* \u00c52</td>\n    </tr>\n    <tr>\n      <td>NL\u2062i\u2062p\u2062i\u2062d</td>\n      <td>65\u00a0\u00b1\u00a013</td>\n      <td>100\u00a0\u00b1\u00a014</td>\n      <td>102\u00a0\u00b1\u00a07</td>\n      <td>104\u00a0\u00b1\u00a09</td>\n    </tr>\n    <tr>\n      <td>C\u2062Vb\u2062e\u2062l\u2062t</td>\n      <td>1*</td>\n      <td>1*</td>\n      <td>1*</td>\n      <td>0.97\u00a0\u00b1\u00a00.02</td>\n    </tr>\n    <tr>\n      <td>C\u2062Vl\u2062i\u2062p\u2062i\u2062d</td>\n      <td>1.00\u00a0\u00b1\u00a00.02</td>\n      <td>1.01\u00a0\u00b1\u00a00.01</td>\n      <td>1.003\u00a0\u00b1\u00a00.007</td>\n      <td>1.044\u00a0\u00b1\u00a00.007</td>\n    </tr>\n    <tr>\n      <td>Scalex\u2013ray</td>\n      <td>1.13\u00a0\u00b1\u00a00.28</td>\n      <td>1.1\u00a0\u00b1\u00a00.2</td>\n      <td>1.2\u00a0\u00b1\u00a00.1</td>\n      <td>1.2\u00a0\u00b1\u00a00.2</td>\n    </tr>\n    <tr>\n      <td>Scaleneutron</td>\n      <td>1.7\u00a0\u00b1\u00a00.5</td>\n      <td>0.8\u00a0\u00b1\u00a00.2</td>\n      <td>-</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"4\">Results From Fits</td>\n    </tr>\n    <tr>\n      <td>Hl\u2062i\u2062p\u2062i\u2062d</td>\n      <td>40 \u00c5</td>\n      <td>41 \u00c5</td>\n      <td>41 \u00c5</td>\n      <td>38 \u00c5</td>\n    </tr>\n    <tr>\n      <td>Ht\u2062a\u2062i\u2062l\u2062s</td>\n      <td>28 \u00c5</td>\n      <td>28 \u00c5</td>\n      <td>29 \u00c5</td>\n      <td>26 \u00c5</td>\n    </tr>\n    <tr>\n      <td>Rm\u2062a\u2062j\u2062o\u2062r</td>\n      <td>27 \u00c5</td>\n      <td>32 \u00c5</td>\n      <td>34 \u00c5</td>\n      <td>36 \u00c5</td>\n    </tr>\n    <tr>\n      <td>Rm\u2062i\u2062n\u2062o\u2062r</td>\n      <td>21 \u00c5</td>\n      <td>27 \u00c5</td>\n      <td>25 \u00c5</td>\n      <td>28 \u00c5</td>\n    </tr>\n    <tr>\n      <td>Wb\u2062e\u2062l\u2062t</td>\n      <td>10 \u00c5</td>\n      <td>9 \u00c5</td>\n      <td>9 \u00c5</td>\n      <td>9 \u00c5</td>\n    </tr>\n  </tbody>\n</table>\n\n### Temperature dependence probed by SAXS and SANS\n\nWe continued to investigate the impact of temperature and His-tags on both the SAXS measurements and the resulting geometrical model of \u0394H5-DMPC. We acquired standard solution SAXS data for a new preparation of the \u0394H5-DMPC nanodiscs, this time without His-tags and measured at both 10\u00b0C and 30\u00b0C. At these two temperatures the DMPC is expected to be dominantly in the gel and liquid phase, respectively, as they are below and above the melting transition temperature (Martinez et al., 2017) (see also DSC analysis below). We used a standard solution SAXS setup for these measurements, as this at present provides a better control of both the sample temperature and sample concentration than in the SEC-SAXS based measurement. The effect of the DMPC melting transition is clearly reflected in the SAXS data (Figure 1\u2014figure supplement 2) where both the position of the first minimum and the shape of the oscillation changes as the DMPC transitions from the gel to the molten state. We observe that the intensity of the forward scattering decreases significantly with increasing temperature, a result of the small but significant temperature-dependent change of the partial specific molecular volume of the DMPC.\n\nTo analyze the data, we again applied the molecular constrained geometrical model for the nanodiscs (Table 1, Right). Here, the effect of the DMPC melting transition can clearly be seen on the obtained DMPC area per headgroup which increases significantly as a result of the melting. Qualitatively similar observations of the melting transition of DMPC and DPPC based nanodiscs were previously reported in the MSP1D1 and MSP1E3D1 nanodiscs using DSC, SAXS and fluorescence (Denisov et al., 2005; Graziano et al., 2018). Regarding the shape of the \u0394H5 nanodiscs without the His-tag (Figure 1\u2014figure supplement 2), we find parameters similar to those derived from SEC-SAXS/SANS experiments including an elliptical shape with ratios of the two axes between 1.2 and 1.4. This observation is in apparent contrast to the recently described integrative NMR/EPR structural model of the \u0394H5-DMPC nanodisc which was found to be more circular (Bibow et al., 2017). We therefore examined the fit to the model varying the axis ratios from 1.0 to 1.6 and indeed find that a number of features are best explained with a slightly asymmetric model (Figure 1\u2014figure supplement 3). Both in the SEC-SAXS/SANS experiments, but perhaps particularly in the standard solution SAXS setup, it is possible that polydispersity in the number of lipids embedded in the nanodiscs is present (Skar-Gislinge et al., 2018), and contributes to the shapes obtained from our models (Caponetti et al., 1993). We therefore analyzed our data using a model where we include polydispersity through a normally-distributed number of lipids, parameterized via the relative standard deviation ($\\sigma_{l\u2062i\u2062p}$). Our results show that while a modest level of polydispersity (ca. 1%) cannot be ruled out, greater levels lead to worsening of the fit to the data (Figure 1\u2014figure supplement 4).\n\n### Molecular dynamics simulations\n\nThe results described above suggest an apparent discrepancy of the solution structure of the \u0394H5-DMPC nanodisc when viewed either by NMR/EPR or SAXS/SANS. In particular, the NMR/EPR structure revealed a circular shape whereas the SAXS/SANS experiments suggested an elliptical shape. The two kinds of experiments, however, differ substantially in the aspects of the structure that they are sensitive to. Further, both sets of models were derived in a way to represent the distribution of conformations in the experiments by a single \u2018average\u2019 structure.\n\nIn order to understand the structural discrepancies between the two solution methods better, and to include effects of conformational averaging, we performed atomistic MD simulations of the His-tag truncated \u0394H5-DMPC nanodisc. In these simulations, we mimicked the experimental conditions of the standard solution SAXS measurements obtained at 30\u00b0C and used 100 DMPC lipids in the bilayer as found above. We performed two simulations (total simulation time of 1196 ns) using the CHARMM36m force field (Huang et al., 2017). We visualized the conformational ensemble of the \u0394H5-DMPC nanodisc by clustering the simulations, and found that the three most populated clusters represent 95% of the simulations. Notably, these structures all have elliptical shapes, but differ in the directions of the major axis (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig2-v2.jpg)\n\n**Figure 2.:** (A) Visualization of the conformational ensemble from the MD simulation by clustering (blue). Only the protein parts of the nanodisc are visualized while the lipids are left out to emphasize the shape. The top three clusters contain 95% of all frames. The previous NMR/EPR-structure is shown for comparison (red). (B) Comparison of experimental standard solution SAXS data (red) and SAXS calculated from the simulation (blue). Green dotted line is the back-calculated SAXS from the integrative NMR/EPR-structure (labelled PDB). Residuals for the calculated SAXS curves are shown below. Only the high q-range is shown as the discrepancy between simulation and experiments are mainly located here (for the entire q-range see Figure 2\u2014figure supplement 1). (C) Comparison of average distances from simulations (blue) to upper-bound distance measurements (red) between methyl NOEs. The labels show the residues which the atoms of the NOEs belong to.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** This figure is an expanded version of that in the main text, which shows only part of the q-range (marked in white).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Comparison of average distances from simulations (blue) to upper-bound distance measurements (red) between HN-NOEs.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig2-figsupp3-v2.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig2-figsupp4-v2.jpg)\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Each panel corresponds a different probe position as indicated by the labels. We show the experimental values (black), those calculated from the structure determined using these and other data (grey) and our MD simulations both before (blue) and after (red) reweighting. For many probe positions and residues, the values calculated from the PDB structure and our simulations are very similar, so that the colored lines appear hidden beneath the grey line.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Each panel corresponds a different probe position as indicated by the labels. We show the distance distributions estimated from the experimental measurements (black), and compare to those calculated from the structure determined using these and other data (grey) and our MD simulations both before (blue) and after (red) reweighting.\n\nWe then examined the extent to which the simulations agree with the ensemble-averaged experimental data, focusing on the SAXS experiments and NOE-derived distance information from NMR. We calculated the SAXS intensities from the simulation frames using both FOXS (Schneidman-Duhovny et al., 2013; Schneidman-Duhovny et al., 2016, Figure 2B) and CRYSOL (Svergun et al., 1995, Figure 2\u2014figure supplement 1) and compared to the corresponding standard solution SAXS experiments obtained at 30\u00b0C. Similarly, we used $r^{-3}$-weighted averaging to calculate the effective distances in the simulations and compared them to the previously reported methyl (Figure 2C) and amide NOEs (Figure 2\u2014figure supplement 2, Bibow et al., 2017). The discrepancy observed between the simulation and the experiments were quantified by calculating \u03c72 (Table 2).\n\n**Table 2.**\n Comparing experiments and simulations.We quantify agreement between SAXS and NMR NOE experiments by calculating the \u03c72. The previously determined NMR structure (Bibow et al., 2017) (PDB ID 2N5E) is labelled PDB, the unbiased MD simulation by MD, and simulations reweighted by experiments are labelled by MD and the experiments used in reweighting. $S_{r\u2062e\u2062l}$ is a measure of the amount of reweighting used to fit the data (Bottaro et al., 2018) (see Methods for more details).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data for integration</th>\n      <th>Srel</th>\n      <th colspan=\"2\">\u03c72</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>SAXS</th>\n      <th>NOE</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDB</td>\n      <td>\u2013</td>\n      <td>2.9</td>\n      <td>9.5</td>\n    </tr>\n    <tr>\n      <td>MD</td>\n      <td>0</td>\n      <td>10.0</td>\n      <td>8.2</td>\n    </tr>\n    <tr>\n      <td>MD + SAXS</td>\n      <td>-1.7</td>\n      <td>1.5</td>\n      <td>7.9</td>\n    </tr>\n    <tr>\n      <td>MD + NOE</td>\n      <td>-1.9</td>\n      <td>8.9</td>\n      <td>4.2</td>\n    </tr>\n    <tr>\n      <td>MD + SAXS + NOE</td>\n      <td>-1.7</td>\n      <td>1.9</td>\n      <td>6.0</td>\n    </tr>\n  </tbody>\n</table>\n\nThe comparison between experiments and simulations reveal an overall good agreement between the two. Interestingly, the simulations agree well with the SAXS data in the q-region where scattering is dominated by the lipid bilayer and where our geometric fitting of the models for SAXS generally are very sensitive. The MD simulation trajectory captures accurately the depth of the SAXS minimum around $q$\u00a0=\u00a00.07\u00a0\u00c5\u20131; however, the shoulder observed in the experiments in the range 0.15\u00a0\u00c5\u20131\u20130.20\u00a0\u00c5\u20131 is not captured accurately.\n\nDirect comparison of the previously determined integrative NMR/EPR structure (Bibow et al., 2017) to the SAXS data is made difficult by the missing lipids in the structure. We thus built a model of the lipidated structure by first adding DMPC lipids to the NMR/EPR solved structure (PDB ID 2N5E), and then equilibrating only the lipids by MD, keeping the protein conformation fixed. When we use this structure to calculate the SAXS data, the back-calculated data overshoots the depth of the SAXS minimum but captures well the shoulder observed in the experimental data (Figure 2B). Thus, neither the MD trajectory nor the NMR/EPR structure fit perfectly with the measured SAXS data.\n\nWhen comparing the simulations to the NMR-derived distances between methyl groups (Figure 2C), we generally find good agreement, but observe a few distances that exceed the experimental upper bounds. A similar trend is observed in the comparison to amide NOEs (Figure 2\u2014figure supplement 2) which shows overall good agreement but with a few NOEs violating at similar positions as for the methyl NOEs. As the amide NOEs are mostly sensitive to the local helical structure, the good agreement with this data mostly reflects that the secondary structures are maintained during the simulations.\n\nWe also compared the simulations to the SANS data for \u0394H5-DMPC. The scattering contrast is very different in SAXS and SANS, and the scattering from the lipid bilayer has a relatively higher amplitude in the latter. This gives an independent check that the simulation provides a good description of the structure of the lipid bilayer. As the SEC-SANS data were measured on a His-tagged \u0394H5-DMPC nanodisc, we therefore simulated this situation by creating an ensemble of His-tag structures and randomly sampled and attached these to the outer MSP-belts in the simulation frames under the assumption that the His-tags are disordered on the nanodiscs (Figure 2\u2014figure supplement 3). As for the SAXS and NOE data we also here find a generally good agreement (Figure 2\u2014figure supplement 4).\n\nAs a final consistency check, we compared our simulations to NMR paramagnetic relaxation enhancement (PRE) data (Figure 2\u2014figure supplement 5) and EPR data (Figure 2\u2014figure supplement 6), that both use spin-labels to probe longer range distances. As reference, we used the calculation of the PRE and EPR data from the structure that was derived using these and the remaining NMR data (Bibow et al., 2017) and find comparable agreement.\n\n### Integrating experiments and simulations\n\nWhile the MD simulations are overall in good agreement with the SAXS and NMR NOE data, there remain discrepancies that could contain information about the conformational ensemble of \u0394H5-DMPC in solution. We therefore used a previously described Bayesian/Maximum Entropy (BME) approach (Hummer and K\u00f6finger, 2015; R\u00f3\u017cycki et al., 2011; Bottaro et al., 2018; Cesari et al., 2016; Bottaro et al., 2020) to integrate the MD simulations with the SAXS and NMR data. Briefly, the BME method refines the simulation against measured experimental averages by balancing (1) minimizing the discrepancy between the simulation and the observed experimental averages and (2) ensuring as little perturbation of the original simulation as possible thereby limiting chances of overfitting. The outcome is a conformational ensemble that is more likely to represent \u0394H5-DMPC in solution. In practice, this is achieved by changing the weight of each configuration in the ensemble obtained from the MD simulations, and we therefore call this a \u2018reweighted ensemble\u2019 (Bottaro and Lindorff-Larsen, 2018; Bottaro et al., 2020). The amount of reweighting can be quantified by an entropy change ($S_{r\u2062e\u2062l}$) that reports on how much the weights had to be changed to fit the data (Bottaro et al., 2018) (see Materials\u00a0and\u00a0methods). Alternatively, the value $\u03d5_{e\u2062f\u2062f}=exp\u2061(S_{r\u2062e\u2062l})$ reports on the effective ensemble size, that is what fraction of the original frames that were used to derive the final ensemble (Orioli et al., 2020). We note that we reweight each individual conformation in the ensemble, and thus that the clustering is only used for presenting the results. In this way we avoid uncertainties that come from difficulties in clustering heterogeneous ensembles.\n\nWe used both the SAXS and NOE data individually, as well as combined, to understand the effects of each source of data on the reweighted conformational ensemble (Table 2). We note that when a specific type of data is used to generate the ensemble, the resulting \u03c72 simply reports on how well the simulation has been fitted to the data; because of the maximum-entropy regularization to avoid overfitting, we do not fit the data as accurately as possible. The two types of experimental data complement each other in structural information content. Specifically, the SAXS data report on the overall size and shape, and is sensitive to both protein and lipids through atom-atom pair distributions in a range starting from \u224810 \u00c5, whereas the NOEs contain local, specific atom-atom distances from the protein belts of the \u0394H5 but not any direct information about the lipids.\n\nWe find that refining against a single of the two data types only improves the MD trajectory with respect to the structural properties it is sensitive to, highlighting the orthogonal information in the two sources of information. In addition, we performed reweighting with the methyl NOEs and the amide NOEs separately (Figure 3\u2014figure supplement 4). The already low discrepancy of the amide NOEs barely improves while the discrepancies of both methyl NOEs and SAXS are unaffected by integration with amide NOEs alone, implying that the structural information content contained in the amide NOEs (mostly secondary structure) is already correctly captured by the force field and starting structure. Because the NOE and SAXS experiments provide independent information we refined the ensemble against both sets of data (Figure 3). We find that we can fit both sources of data at reasonable accuracy without dramatic changes of the weights away from the Boltzmann distribution of the force field ($\u03d5_{eff}=18%$).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig3-v2.jpg)\n\n**Figure 3.:** (A) SAXS data calculated from the simulation before and after reweighting the ensemble using experimental data. Only the high q-range is shown as the discrepancy between simulation and experiments are mainly located here (for the entire q-range see Figure 3\u2014figure supplement 1). Agreement with the NOEs before and after integration are likewise shown in Figure 3\u2014figure supplement 2. (B). Histogram of the acylindricity of the simulations ($\\sqrt{C}$) both before integration (dark blue) and after integration (light blue). (C) Visualization of the conformational ensemble showing structures sampled every 100 ns in cartoon representation (blue), the original NMR/EPR structure is shown in rope representation for comparison (red). The table below shows the acylindricity of the entire conformational ensemble before and after integration and compared to the original NMR/EPR (NMR) structure and the SAXS/SANS model fit. (D) Weights and acylindricity of the three main clusters of the MD simulation (blue) before and after integration.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** This figure is an expanded version of that in the main text and shows agreement with the simulation after reweighting. SAXS data were calculated using FOXS.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig3-figsupp2-v2.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** \u03b8 is a hyperparameter that tunes the balance between fitting the data accurately (low $\u03c7_{r}^{2}$) and not deviating too much from the prior (low $S_{rel}$) thereby avoiding overfitting. It is here determined by plotting $S_{rel}$ vs $\u03c7_{r}^{2}$ and selecting a value of \u03b8 near the natural kink and at a step where a similar decrease in $\u03c7_{r}^{2}$ gives rise to a much lower $S_{rel}$, indicating that we cannot fit the to the experiments further without a risk of overfitting. The value of \u03b8 that produce the given ($S_{rel}$,$\u03c7_{r}^{2}$) is annotated above the given point together with a measure of the effective number of frames used from the original simulation this gives rise to. Red dot marks the chosen \u03b8.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Similar analysis to the main text, but with the methyl- and HN-NOEs integrated individually. As can be seen, the methyl-NOE distances have a larger impact, likely due to the longer distances measured in methyl-NOE whereas the HN-NOEs mainly report on distances between atom pairs of 4 residues or less apart in the sequences and, thus, likely mainly on the helical secondary structure.\n\nFinally, we used the PRE and EPR data to validate the refined ensemble. In general we find comparable and overall good agreement between the original NMR/EPR structure and our MD refined ensembles, suggesting that our ensembles are in good agreement with data that was not used directly as input in the refinement (Figure 2\u2014figure supplement 5 and Figure 2\u2014figure supplement 6). We further find that reweighting the MD simulations against the SAXS and NOE data generally improves the agreement to the EPR data. We thus proceed with our analysis of the structural features of \u0394H5-DMPC using an ensemble of conformations that is based on integrating the MD simulations with both the SAXS and NOE experiments.\n\nAnalysis of the measured SAXS and SANS revealed an elliptical shape of the \u0394H5-DMPC upon fitting of a single structure to the data. In contrast, the structure obtained by fitting the NMR/EPR data to a single structure gave rise to a more circular configuration. Combining the results of the two studies, we hypothesized that the nanodisc possesses underlying elliptical fluctuations with the major axis changing within the nanodisc. In such a system NMR and EPR measurements, which build on ensemble averaged information of specific atom-atom interactions, will give rise to an on-average circular structure. SAXS and SANS, on the contrary, which build on distributions of global distances rather than specific atom-atom distances, will not distinguish between the orientation of the major axis within the nanodisc and thus give rise to observations of an elliptical shape. By complementing the experiments with MD simulations we obtained a ensemble with structural features that support this hypothesis.\n\nWe thus quantified the degree of ellipticity in terms of an acylindricity parameter, C, defined as the difference between the x and y components of the gyration tensor (see Materials and methods for details). C is thus a measure of how far from a perfect circular cylinder the shape is, and C\u00a0=\u00a00 corresponds to a circular shape. We calculated both the average and distribution of the acylindricity from the simulated ensemble both before and after reweighting against the experimental data (Figure 3B and C). In addition, we calculated the acylindricity of both the integrative NMR structure and from the structural model obtained from the SAXS and SANS measurements.\n\nWe find that the acylindricity decreased from $\\sqrt{C}=17$ \u00c5 in the original MD simulation trajectory to $\\sqrt{C}=15$ \u00c5 after integration of the NMR and SAXS data, showing that the experiments indeed affect the structural features. This value is in the middle of that obtained from the analytical geometric model fitted to the SAXS data ($\\sqrt{C}=22$ \u00c5) and that of the integrative NMR/EPR structure ($\\sqrt{C}=8$ \u00c5) (Bibow et al., 2017). Thus, the acylindricity of the final, heterogenous ensemble lies between that of the two conformations that were fitted as single structures to fit either the NMR or SAXS data.\n\nTo understand better the elliptical shape of the \u0394H5-DMPC nanodisc and the role played by reweighting against experiments, we calculated the average acylindricity for each cluster of conformations of \u0394H5-DMPC both before and after integration with experimental data (Figure 3D). We note that because our reweighting procedure acts on the individual conformations and not at the coarser level of clusters, the average acylindricity changes slightly for each cluster upon reweighting. Clusters 1 and 2, which together constitute about 80% of the conformational ensemble (both before and after reweighting), are both clusters with high acylindricity, but with almost orthogonal directions of the major axis in the elliptical structure. The major change after integration is the exchange in populations of the two clusters resulting in cluster 2 to be weighted highest, underlining the influence and importance of the integration. Thus, our MD simulations and the integration with the experiments support the hypothesis of underlying elliptical fluctuations with the major axis changing direction inside the nanodisc, and we note that the detailed molecular description of this was only possible by combining the MD simulations with both the SAXS and NMR data.\n\n### Analyses of the lipid properties in nanodiscs\n\nNanodiscs are often used as models for extended lipid bilayers, but the presence and interactions with the protein belt \u2014 and the observed shape fluctuations \u2014 could impact the properties of the lipid molecules in the nanodisc compared to a standard bilayer. Building on earlier experimental (M\u00f6rs et al., 2013; Martinez et al., 2017) and simulation work (Siuda and Tieleman, 2015; Debnath and Sch\u00e4fer, 2015) work, we therefore used our experimentally-derived ensemble of nanodisc structures to investigate the properties of lipids in the small \u0394H5-DMPC nanodisc, and compared them to those in a DMPC bilayer. Specifically, we calculated the thickness of the DMPC bilayer (Figure 4A) and the order parameters, $S_{C\u2062H}$, of the DMPC lipids (Figure 4B,C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig4-v2.jpg)\n\n**Figure 4.:** 2D plots of the (A) thickness and (B) order parameters averaged over the ensemble and all C-H bonds in the two aliphatic tails of the DMPC lipids in the \u0394H5 nanodisc. The core and rim zones are indicated in panel B. Arrows indicate the average value in simulations of a DMPC bilayer. (C) The order parameters as a function of carbon number in the lipid tails in the \u0394H5-DMPC disc. The rim zone is defined as all lipids within 10 \u00c5 of the MSPs, while the core zone is all the lipids not within 10 \u00c5 of the MSPs.\n\nAs done previously (Siuda and Tieleman, 2015; Debnath and Sch\u00e4fer, 2015), we subdivide the lipid area in the nanodisc into zones dependent on the distance from the MSP protein belts (above or below 10 \u00c5). The results of both the thickness and order parameter analyses show the same trend: a clear difference between the lipids close to the protein belt and those more central in the nanodisc. The results illustrates that the DMPC lipid bilayer in the \u0394H5 nanodiscs is not homogeneous but rather thinner and un-ordered near the protein belt and thicker and more ordered in the core of the nanodisc, which in turn is more similar to a pure bilayer (Figure 4). These results are in line with previous simulation studies on the larger DMPC nanodiscs, MSP1, MSP1E1 and MSP1E2 (Siuda and Tieleman, 2015; Debnath and Sch\u00e4fer, 2015), albeit performed without experimental reweighting, as well as with solid state NMR data on the both \u0394H5-DMPC and the larger MSP1-DMPC (M\u00f6rs et al., 2013; Martinez et al., 2017).\n\nWe proceeded by performing DSC experiments on nanodiscs of different sizes to examine the impact of the differentiated lipid order in the core and rim of the nanodisc. Specifically, we examined the lipid melting transition of DMPC inside \u0394H4H5, \u0394H5 and the larger MSP1D1 nanodiscs, and used pure DMPC vesicles as reference. In line with earlier DSC experiments (Shaw et al., 2004), our results show that the melting transition peak broadens significantly in all three nanodisc systems compared to that of pure DMPC vesicles (Figure 5). The broader melting transition is in line with the observed differentiated lipid ordering in nanodiscs from the reweighted simulations, as the\u00a0observed differences in how ordered the lipids are necessarily will cause differences in the melting temperature and thus give rise to the broader peaks. Furthermore, the broadened peaks are in line with results observed in previous solid state NMR experiments which found a substantially broadened and diminished lipid gel-liquid phase transition in the \u0394H5-DMPC nanodisc in the temperature range 10-28\u00b0C (Martinez et al., 2017). Our results show that the transition enthalpy per mole of DMPC, i.e. the area under the curves, increases with the nanodisc size, in line with previous observations for, respectively, DMPC and DPPC in MSP1D1 and in the larger MSP1E3D1 systems (Denisov et al., 2005), where it was proposed to be due to the absence of a cooperative melting transition of the lipids at the nanodisc rim (Denisov et al., 2005).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/56518/elife-56518-fig5-v2.jpg)\n\n**Figure 5.:** The three DMPC-filled nanodiscs studied, listed by increasing size, are \u0394H4H5-DMPC (orange), \u0394H5-DMPC (purple) and MSP1D1-DMPC (green). DSC data from plain DMPC-vesicles (black) are shown for comparison. Arrows indicate the temperature with maximal heat capacity. DSC data from the three nanodisc samples are normalized by DMPC concentration, while the data from the DMPC liposome is on an arbitrary scale.\n\nInterestingly, we observe that the maximum of the melting transition, TM, depends on nanodisc belt and can fall both below and above the TM of plain DMPC vesicles (24\u00b0C). In the smallest \u0394H4H5 nanodisc, the DMPC has a TM\u00a0\u2248 22.5\u00b0C. In \u0394H5 the DMPC has TM at 24.5\u00b0C which is close to that of the DMPC vesicles, while the larger MSP1D1 nanodisc has a TM \u2248 28\u00b0C. This TM value is similar to the value of 28.5\u00b0C measured for DMPC melting in MSP1D1 by Denisov et al., 2005, who in addition measured a TM value of 27.5\u00b0C in the even larger MSP1E3D1 discs.\n\nTogether our results are in line with previous NMR experiments (Martinez et al., 2017), and suggest that the state of the ordering of the lipids in the nanodiscs is inhomogeneous compared to the DMPC vesicle, and that the behaviour of the lipids is modulated by their interaction with the membrane scaffold proteins. Our results point towards a non-trivial effect of the DMPC-MSP interactions. They can both destabilize DMPC in the gel-phase in the smaller nanodiscs (\u0394H4H5-DMPC) where the low area-to-rim ratio leads to the lower TM compared to the DMPC vesicles, but also stabilize the DMPC gel-phase in larger nanodiscs with larger area-to-rim ratios such as MSP1D1-DMPC and MSP1E3D1-DMPC. Thus, when using nanodiscs as membrane mimics it is relevant to keep in mind that the given lipid gel/liquid state might be affected. We also note that even if lipids in larger discs are less perturbed than those in the smallest discs, introduction of membrane proteins into the discs might in itself perturb the lipids in ways similar to the MSPs.\n\n### Conclusions\n\nLipid nanodiscs are versatile membrane mimetics with a wide potential for studies of the structure, function and dynamics of membrane proteins. Despite their widespread use and numerous studies, we still do not have a full and detailed understanding of the structural and dynamic features of nanodiscs. This in turn limits our ability to interpret e.g. solution scattering experiments when membrane proteins are embedded into such nanodiscs. In order to further our understanding of the conformations and structural fluctuations of both the protein and lipid components in nanodiscs, we have performed a series of biophysical experiments on DMPC-loaded \u0394H5 and \u0394H4H5 nanodiscs.\n\nUsing SEC-SAXS and SEC-SANS measurements, we investigated the solution structure of the \u0394H4H5-DMPC and \u0394H5-DMPC\u00a0discs. Model-based analysis of this data showed an \u2018average\u2019 elliptical shape of both nanodiscs. In contrast, a previously determined integrative NMR/EPR (Bibow et al., 2017) method gave rise to a more circular average structure of the \u0394H5 nanodisc.\n\nWe reconcile these two apparently opposing views and provide a richer and more detailed view of the nanodisc proteins and lipids and their dynamics by performing MD simulations. In particular, we used a Bayesian/Maximum Entropy approach to integrate the MD simulations with the SAXS and NMR data to uncover the existence of underlying fluctuations between elliptical shapes with orthogonal major axes in consistency with both sources of data. We note that the NMR/EPR-derived structure, and our MD simulations initiated from this structure, provide good agreement with the SAXS data even without reweighting. Because our SAXS data are rather precise, however, we were able to detect subtle deviations that enabled us to refine our model. An interesting avenue for further analysis might be to use our structural ensembles to interpret electron microscopy data of nanodiscs. Negative stain transmission electron microscopy of \u0394H5 appears to show discs of different shapes (Bibow et al., 2017), whereas class-averaged cryo-electron microscopy of a membrane protein embedded in a different nanodisc appears more symmetric (Frauenfeld et al., 2011). Direct comparisons between solution structures and electron microscopy data should also take into account any possible changes in shape that might happen during the freezing process. We have previously used contrast-variation to prepare specifically deuterated nanodiscs that become invisible to neutrons in D2O (Maric et al., 2014). In the future it would be interesting to use a similar strategy to study the belt proteins and lipids independently by matching out each component separately.\n\nIn addition to studying the overall shape fluctuations, we also analyzed the lipid structure and dynamics in the nanodiscs, and find an inhomogeneous distribution. Specifically, we find substantially perturbed lipid properties near the belt proteins, whereas the lipids more central in the disc behaved more similar to those in a pure DMPC bilayer. We used DSC to investigate the lipid melting transition in the small nanodiscs in comparison to the lipid vesicles and found that the melting takes place over a much broader temperature range in the small nanodiscs. The observed correlation between the size of the belt proteins and the lipid melting enthalpy give support to the proposition (Denisov et al., 2005), that the arrangement of the lipids near the nanodisc rim must be substantially perturbed. In particular, our results suggest that the belt proteins induces additional disorder to the lipid tails near the rim.\n\nTogether, our results provide an integrated view of both the protein and lipid components of nanodiscs. Approaches such as the one described here takes advantage of the increasing possibilities for accurate NMR and scattering data in solution, improved computational models for lipid bilayers as well as new approaches to integrate experiments and simulations. In this way, our study exemplifies how integrating multiple biophysical experiments and simulations may lead to new insight into a complex system and paves the way for future studies of membrane proteins inside nanodiscs.\n\n## Materials and methods\n\n### Expression of membrane scaffold protein (MSP) variants\n\nWe used previously reported constructs for \u0394H4H5, \u0394H5 and MSP1D1 (Hagn et al., 2013; Ritchie et al., 2009). We expressed and purified the proteins as previously described (Ritchie et al., 2009), with minor modifications to the purification protocol: The cells were opened in lysis buffer containing 50 mM Tris/HCl pH 8.0, 300 mM NaCl, 1% Triton X-100 and 6 M GuHCl by vigorous shaking for 15 min. Insoluble material was subsequently removed by centrifugation at 18,000 rpm for 1 hr using an SS-34 rotor. The supernatant was loaded on Ni-NTA resin pre-equilibrated in lysis buffer and washed extensively with the same buffer. Extensive washes using lysis buffer without GuHCl and subsequently wash buffer containing 50 mM Tris/HCl pH 8.0, 300 mM NaCl, 20 mM Imidazole and 50 mM Cholate was performed in order to remove GuHCl and Triton X-100. Protein was eluded in buffer containing 50 mM Tris/HCl pH 8.0, 300 mM NaCl, 500 mM Imidazole, concentrated, flash frozen and stored at \u221280\u00b0C until further use. Cleavage of the TEV-site was performed by addition of 1:20 TEV protease, and dialysing at room temperature for 6\u201312 hr against 20 mM TrisHCl pH 8, 100 mM NaCl, 0.5 mM EDTA, 1 mM DTT. TEV protease and any un-cleaved MSP was removed by passing the solution over Ni-NTA resin again.\n\n### Reconstitution of \u0394H5-DMPC and \u0394H4H5-DMPC nanodiscs\n\nBefore assembly, the DMPC lipids (Avanti Polar Lipids) were suspended in a buffer containing 100 mM NaCl, 20 mM Tris/HCl pH 7.5, and 100 mM sodium cholate detergent to a final lipid concentration of 50 mM. We determined optimal reconstitution ratios between the DMPC lipids and the \u0394H5 and \u0394H4H5 by first mixing the lipid and MSP stock solutions at a series of different molar concentration ratios in the range from 1:9 to 1:80 depending on the MSP type (Figure 1\u2014figure supplement 1). In all samples, cholate was removed after mixing by addition of an excess amount of Amberlite detergent absorbing beads to start the assembly of the nanodiscs. The samples were left in a thermomixer for 4 hr at 28\u00b0C and the Amberlite was removed by centrifugation at 5000 rpm. Purification was performed using size exclusion chromatography (SEC) on an \u00c4kta purifier (FPLC) system with a Superdex200 10/300 column from (GE Healthcare Life Science; S200). We found that reconstitution ratios of 1:33 for \u0394H4H5:DMPC and 1:50 for \u0394H5:DMPC resulted in a single and relatively narrow symmetric peak, in good agreement with the previously reported ratios of 1:20 for \u0394H4H5:DMPC and 1:50 for \u0394H5:DMPC (Hagn et al., 2013). More narrow and well-defined SEC-peaks were obtained if the reconstitution took place at or above the melting temperature, TM, of DMPC at 24\u00b0C (Ritchie et al., 2009).\n\n### Differential scanning calorimetry (DSC)\n\nThe measurements were performed on a VP-DSC (MicroCal) using a constant pressure of 1.7 bar (25 psi) and a scan rate of 1\u00b0C/min between 6\u00b0C and 40\u00b0C. All samples had been purified in PBS buffer prior to the measurement. We used the Origin instrument software for background subtraction and baseline correction using a \u2018Cubic Connect\u2019 baseline correction. Finally, the data were normalized by the lipid concentration of the individual samples.\n\n### SEC-SANS\n\nSEC-SANS was performed at the D22 small-angle scattering diffractometer at the ILL, Grenoble, France using a recently developed SEC-SANS setup (Jordan et al., 2016; Johansen et al., 2018). Briefly, the setup was as follows: the in situ SEC was done using a modular HPLC system (Serlabo) equipped with a Superdex\u00a0200 GL gel filtration column (GE) with a void volume of approximately 7.5 ml and a flow rate of 0.25 ml/min. The SmartLine 2600 diode-array spectrophotometer (Knauer) was connected via optic fibers either to an optic cell of 3 mm path length placed at the outlet of the chromatography column, enabling the simultaneous recording of chromatograms at four different wavelengths, including 280 nm which we used for the concentration determination. All components of the HPLC setup including buffers and the column were placed in a closed cabinet connected to an air-cooling system set to 10\u00b0C to control the temperature of the sample. Before measurements, we equilibrated the column in a D2O-based buffer, and the buffer in the sample was exchanged to a D2O-based buffer using an illustra NAP-25 gravity flow column (GE). The D2O buffer contained 20 mM Tris/DCl pH 7.5 and 100 mM NaCl.\n\nThe experiments were carried out with a nominal neutron wavelength, \u03bb, of 6.0 \u00c5 and a wavelength distribution, $\u0394\u2062\\lambda/\\lambda=10%$ FWHM, a rectangular collimation of 40 mm \u00d7 55 mm and a rectangular sample aperture of 7 mm \u00d7 10 mm. The distance of the sample-detector used for the characterization of the nanodiscs was 5.6 m (with collimation of 5.6 m), covering a momentum transfer range, q, of 0.0087 \u00c5\u22121 to 0.17 \u00c5\u22121, with $q=4\u2062\\pi\u2062sin\u2061(\\theta)/\\lambda$, where \u03b8 is half the angle between the incoming and the scattered neutrons. Measured intensities were binned into 30 s frames. Sample transmission was approximated by the buffer measured at the sample-detector distance of 11.2 m. The measured intensity was brought to absolute scale in units of scattering cross section per unit volume (cm\u22121) using direct beam flux measured for each collimation prior to the experiment. Data reduction was performed using the GRASP software (https://www.ill.eu/fr/users-en/scientific-groups/large-scale-structures/grasp/). The SANS data appropriate for buffer subtraction was identified based on when the 280 nm absorption during the SEC curve showed no trace of protein.\n\n### SEC-SAXS\n\nSEC-SAXS was performed at the BioSAXS instrument at BM29 at the ESRF, Grenoble, France (Pernot et al., 2013). Briefly, the setup at BM29 included an HPLC controlled separately from the SAXS measurement, coupled to a UV-Vis array spectrophotometer collecting absorption from 190 nm to 800 nm. Data were collected with a wavelength of 0.9919 \u00c5 using a sample-detector distance of 2.87 m which provided scattering momentum transfers ranging from 0.003 \u00c5\u22121 to 0.49 \u00c5\u22121. The capillary was cooled to 10\u00b0C, however, the HPLC including the SEC-column was placed at ambient temperature. Size exclusion chromatography was performed using the same column as for SEC-SANS and equivalent H2O-based buffer. A flow rate of 0.5 ml/min was used. Data reduction was carried out using the in-house software, and subsequent conversion to absolute units was done with water as calibration standard (Orthaber et al., 2000). The 1 s frames recorded were subsequently averaged in 10 s bins.\n\n### Standard solution SAXS\n\nStandard solution SAXS data were obtained at the P12 beamline at the PETRA III storage ring in Hamburg, Germany (Blanchet et al., 2015) using a wavelength of 1.24 \u00c5, a sample-detector distance of 3 m, providing a momentum transfers covering from 0.0026 \u00c5\u22121 to 0.498 \u00c5\u22121 and a variable temperature in the exposure unit. 20 exposures of 0.045 s were averaged, background subtracted and normalized to absolute scale units (cm\u22121) using Bovine Serum Albumin, BSA as calibration standard by the available software at the beamline. The measurements were performed at both 10\u00b0C and 30\u00b0C.\n\n### SAXS and SANS data analysis\n\nThe output of the SAXS and SANS experiments were small-angle scattering data in terms of absolute intensities $I(q)$. $I(q)$ was transformed into the pair distance distribution function, $p\u2062(r)$, by indirect Fourier transformations using BayesApp (Hansen, 2014). Further SAXS/SANS modelling was carried out using our previously developed WillItFit software (Pedersen et al., 2013) (https://sourceforge.net/projects/willitfit/). The applied structural models (see further description below) are an adaptation of similar models previously developed to analyse SAXS and SANS data from MSP1D1 nanodiscs (Skar-Gislinge et al., 2010; Skar-Gislinge and Arleth, 2011). Briefly, the model describes the nanodiscs as coarse-grained elliptical shapes and is based on analytical form factors (Pedersen, 1997; Skar-Gislinge et al., 2010; Skar-Gislinge and Arleth, 2011). The ellipticity, in terms of the axis ratio of the embedded bilayer patch is allowed to vary in the fit and can also take the size of unity corresponding to a circular disc. The model is fitted on absolute scale and utilizes information on the composition of the protein belt and lipids, and the molecular volumes, v, of the DMPC lipids and the different belts with/without His-tag. These are taken to be $\u03bd_{D\u2062M\u2062P\u2062C}=1085\u2062\u00c5^{-3}$, $\u03bd_{\u0394\u2062H\u20624\u2062H\u20625}=20349\u2062\u00c5^{-3}$, $\u03bd_{\u0394\u2062H\u20624\u2062H\u20625}=24298\u2062\u00c5^{-3}$, $\u03bd_{H\u2062i\u2062s}=3142\u2062\u00c5^{-3}$. The X-ray and neutron scattering lengths of the different components are calculated from their chemical composition.\n\nApart from the parameters listed in Table 1, the model also fits a small constant background added to the model, and includes a term accounting for interface roughness, fixed to 2 \u00c5 in the present analysis, and where relevant, a Gaussian random coil description of the linked TEV-His-tag with RG\u00a0=\u00a012.7 \u00c5 consistent with the assumption that the 23 amino acids of the tag are in a fully disordered state (Kohn et al., 2004). As our measurements are on a calibrated absolute intensity scale, we can compare the observed intensities with those expected from the composition of the sample. Both the SAXS and SANS data had to be re-scaled by a constant close to unity to fit the data (Table 1), but in the case of the \u0394H4H5-DMPC SANS data, the scaling constant (1.7\u00a0\u00b1\u00a00.5) was larger than expected, most likely the result of a less accurate protein concentration determination for this system.\n\n### MD simulations\n\nWe initiated our MD simulations from the first model in PDB ID 2N5E (Bibow et al., 2017). A total of 50 pre-equilibrated DMPC lipids (Doma\u0144ski et al., 2010; Dickson et al., 2012) were inserted into each monolayer inside the protein belt. The number of lipids was chosen from the measured optimal reconstitution ratio, and in accordance with the reconstitution ratio used in the experiments for the NMR structure (Bibow et al., 2017) as well as obtained from our fit of the geometric model to the SAXS and SANS data. The MD simulations were performed using GROMACS 5.0.7 (Pronk et al., 2013; Abraham et al., 2015) and the CHARMM36m force field (Huang et al., 2017). The system was solvated in a cubic box and neutralized by addition of Na+ counter ions followed by a minimization of the solvent. Equilibration was performed in six steps following the protocol from CHARMM-GUI (Lee et al., 2016) with slow decrease in the positional restraint forces on both lipids and protein. The volume of the box was then equilibrated in the NPT ensemble at 303.15 K and 1 bar giving a final box with side lengths 13.2 nm. The production run was performed in the NVT ensemble at 303.15 K (above the phase transition of the DMPC lipids) using the stochastic velocity rescaling thermostat (Bussi et al., 2007), 2 fs time steps and the LINCS algorithm to constrain bonds. We performed two production runs (lengths 600 ns and 595 ns) starting from the same equilibrated structure. We concatenated these two MD simulations into a single trajectory, which then represents our sample of the dynamics of the system. We clustered the conformations from the simulations (one structure extracted for every nanosecond) with the RMSD based Quality Threshold method (Heyer et al., 1999; Melvin et al., 2016) using C\u03b1 atoms only and with a cluster diameter cutoff of 0.58 nm; this resulted in six clusters. We also performed a 50ns-long simulation of a pure DMPC bilayer. The simulation parameters were the same as for the nanodisc system apart from using the NPT ensemble and anisotropic pressure control.\n\n### Calculating SAXS and SANS from simulations\n\nWe performed SAXS calculations using both CRYSOL (Svergun et al., 1995) and FOXS (Schneidman-Duhovny et al., 2013; Schneidman-Duhovny et al., 2016) on structures extracted every 1 ns from the simulations and for the q-range from 0.0 \u00c5\u22121 to 0.25 \u00c5\u22121. Most of the overall structural information is contained within this q-range, and the calculations of SAXS intensities from the structures are also less accurate in the wide-angle regime. We used standard solution SAXS data recorded at 30\u00b0C on the \u0394H5-DMPC (without His-TEV-tags) to compare to our simulations, as this setup is most similar to that used to derive the NMR/EPR structure. The SAXS profile of the NMR/EPR structure was calculated by adding DMPC lipids to the first model of the PDB entry and subsequent equilibration of the lipids by MD (fixing the protein), and then using FOXS to back-calculate the SAXS.\n\nBoth CRYSOL and FOXS are implicit solvent methods that use fitting parameters to take into account the buffer subtraction and the solvation layer around the solute. The programs automatically optimize these parameters by fitting to experimental data for each input frame, but applying this approach to many frames in a molecular dynamics trajectory could lead to over-fitting. Instead, we calculated the average of each fitted parameter over the trajectory and re-calculate the SAXS with the parameters fixed to this average. FOXS has two parameters, c1 (scaling of atomic radius for adjustment of excluded volume) and c2 (solvation layer adjustment) which, after the fitting, are set to small intervals around the averages $[1.01:1.02]$ and $[-0.148:-0.140]$, respectively. Narrow intervals are used as the program only takes an interval for the parameters. CRYSOL\u2019s fitting parameters dro (Optimal hydration shell contrast), Ra (Optimal atomic group radius) and $E\u2062x\u2062V\u2062o\u2062l$ (relative background) are set to $[0.0090:0.0098]$, $[1.72:1.76]$ and $[162300:162320]$, respectively. Both CRYSOL and FOXS calculations were performed with hydrogens explicitly included in order to limit artifacts from the excluded volume parameter settings, that\u00a0is, buffer subtraction, that is suspected to arise from the lipid tails (Chen and Hub, 2015). For CRYSOL the additional settings Maximum order of harmonics was set to 50, the Order of Fibonacci grid to 18 while the Electron density of the solvent was set to 0.334\u00a0e/\u00c53 .\n\nSANS calculations were performed using CRYSON (Svergun et al., 1998) setting the maximum order of harmonics to 50, the order of the Fibonacci grid to 18 and the fraction of D2O in solution to 1.0 in accordance with the experimental measurements. The experimental SANS data were measured on a His-TEV tagged nanodisc. For comparison, we used the simulation frames and added His-TEV tags computationally by extracting conformations from our simulation (w/o His-tags) every 1 ns and attaching a random His-tag structure generated from Flexible Meccano (Ozenne et al., 2012) and Pulchra (Rotkiewicz and Skolnick, 2008) from a pool of 10000 structures to the tails of the nanodisc. If there we detected any clash of the attached His-TEV-tag structure with the protein belt or lipids of the nanodisc or with the second His-TEV-tag, the His-TEV-tag was discarded and a new random structure from the pool was attached. By sampling randomly from a pool of 10.000 His-tag structures together with having in total 1195 frames from the simulation of the nanodisc (1ns per frame) we assume that the His-TEV-tags represents a sufficiently realistic distribution to model the impact on the SANS data.\n\n### Comparing simulations to NOEs\n\nWe calculated distances corresponding to the experimentally observed NOEs on structures extracted every 1 ns from the simulations. To compare with the experimental distances, available as upper bounds, we averaged the distances, R, between the respective atoms (or the geometric center for pseudo atoms) as $\u27e8R^{-3}\u27e9^{-1/3}$ (Tropp, 1980). When calculating \u03c72 for validation we only include those distances where this average exceeded the experimentally-determined upper-bounds.\n\n### Calculating EPR and PRE data from simulations\n\nWe used a previously developed rotamer library for MTSL spin-label probes (Polyhach et al., 2011; Klose et al., 2012) to calculate both EPR and PRE data using the DEER-PREdict software\u00a0(Tesei et al., 2020; https://github.com/KULL-Centre/DEERpredict). In the case of the EPR DEER data, we calculated the distance distribution of spin-label probes and compared to those estimated from experiments (Bibow et al., 2017). For the NMR data we used a Model Free approach to calculate the PREs (Iwahara et al., 2004) and estimated intensity ratios as previously described (Battiste and Wagner, 2000) using $R_{2,dia}=60s^{\u22121}$, $\\tau_{c}=34ns$, $\\tau_{t}=1ns$ and an INEPT delay of 10 ms.\n\n### Integrating experiments and simulations\n\nWe used a Bayesian/maximum entropy approach (R\u00f3\u017cycki et al., 2011; Hummer and K\u00f6finger, 2015; Bottaro et al., 2018), as implemented in the BME software (Bottaro et al., 2020) (github.com/KULL-Centre/BME), to integrate the molecular simulations with the SAXS and NMR experiments. The name originates from the two equivalent approaches, Bayesian and Maximum Entropy ensemble refinement, which are equivalent when the errors are modelled as Gaussians (Hummer and K\u00f6finger, 2015; Cesari et al., 2016; Bottaro et al., 2020). We here provide a brief overview of the approach and refer the reader to recent papers for more details (Hummer and K\u00f6finger, 2015; Cesari et al., 2016; Bottaro et al., 2020; Orioli et al., 2020).\n\nGiven that our MD simulations provide a good, but non-perfect, agreement with experiments the goal is to find an improved description of the nanodisc that simultaneously satisfies two criteria: (i) the new ensemble should match the data better than the original MD ensemble and (ii) the new ensemble should be a minimal perturbation of that obtained in our simulations with the CHARMM36m force field in accordance with the maximum entropy principle. In a Bayesian formulation, the MD simulation is treated as a prior distribution and we seek a posterior that improves agreement with experiments. This may be achieved by changing the weight, wj, of each conformation in the MD-derived ensemble by minimizing the negative log-likelihood function (Hummer and K\u00f6finger, 2015; Bottaro et al., 2020):\n\n$$\n\u2112\u2062(w_{1}\u2062\u2026\u2062w_{n})=\\frac{m}{2}\u2062\u03c7_{r}^{2}\u2062(w_{1}\u2062\u2026\u2062w_{n})-\\theta\u2062S_{r\u2062e\u2062l}\u2062(w_{1}\u2062\u2026\u2062w_{n}).\n$$\n\nHere, the reduced $\u03c7_{r}^{2}$ quantifies the agreement between the experimental data ($F_{i}^{E\u2062X\u2062P}$) and the corresponding ensemble values, ($F\u2062(\ud835\udc31)$), calculated from the weighted conformers ($\ud835\udc31$):\n\n$$\n\u03c7_{r}^{2}\u2062(w_{1}\u2062\u2026\u2062w_{n})=\\frac{1}{m}\u2062\\sumim\\frac{(\\sum_{j}^{n}w_{j}\u2062F_{i}\u2062(\ud835\udc31_{j})-F_{i}^{E\u2062X\u2062P})^{2}}{\\sigma_{i}^{2}}.\n$$\n\nThe second term contains the relative entropy, $S_{r\u2062e\u2062l}$, which measures the deviation between the original ensemble (with initial weights $w_{j}^{0}$ that are uniform in the case of a standard MD simulation) and the reweighted ensemble $S_{r\u2062e\u2062l}=-\\sum_{j}^{n}w_{j}\u2062log\u2061(\\frac{w_{j}}{w_{j}^{0}})$. The temperature-like parameter \u03b8 tunes the balance between fitting the data accurately (low $\u03c7_{r}^{2}$) and not deviating too much from the prior (low $S_{r\u2062e\u2062l}$). It is a hyperparameter that needs to be determined (Figure 3\u2014figure supplement 3). In practice it turns out that minimizing $\u2112$ can be done efficiently by finding Lagrange multipliers in an equivalent Maximum Entropy formalism and we refer the reader to previous papers for a full description and discussion of the approaches including how to determine \u03b8 (Hummer and K\u00f6finger, 2015; Cesari et al., 2016; Bottaro et al., 2020). The weights from the BME analysis, the MD simulations as well as the various data that we analyzed are available online at https://github.com/KULL-Centre/papers/tree/master/2020/nanodisc-bengtsen-et-al (copy archived at https://github.com/elifesciences-publications/KULL-CENTREpapers/tree/master/2020/nanodisc-bengtsen-et-al;\u00a0KULL-Centre, 2020).\n\n### Acylindricity\n\nIn order to quantify how \u2018elliptical\u2019 the different nanodisc conformations are, we calculated the square root of the acylindricity, $\\sqrt{C}$, where the acylindricity is defined from the principal components of the gyration tensor as $C:=\\lambda_{x}^{2}-\\lambda_{y}^{2}$, where the z-axis is orthogonal to the membrane and has the smallest principal component. In our calculations we included only the protein backbone atoms (excluding also the flexible tails from residues 55\u201363). This choice also makes it possible to compare with a similar calculation from the geometric model fitted from the SAXS and SANS data where the acylindricity was calculated using the major and minor axes from the geometric fit.\n\n### Lipid properties\n\nWe calculated the bilayer thickness and lipid order parameters for both the nanodisc and a simulated DMPC lipid bilayer. The values obtained for the nanodisc were from the reweighted ensemble every 1 ns. We defined the bilayer thickness as the minimum distance along the bilayer normal between two phosphate headgroup pairs in the two leaflets. The headgroup pairs were identified and saved for each leaflet, top and bottom, along with the corresponding thickness and xy-coordinates. The pairs were further distributed unto a 6\u00a0\u00d7\u00a06 grid in the xy-plane with each bin corresponding to 22 \u00c5 for both the top and bottom leaflet. An averaged grid was then obtained from the two grids of the leaflets. The order parameters $S_{C\u2062H}$ where calculated as (Piggot et al., 2017): $S_{C\u2062H}=\\frac{1}{2}\u2062\u27e83\u2062c\u2062o\u2062s^{2}\u2062\\theta-1\u27e9,$ where \u03b8 is the angle between the C-H bond and the bilayer normal. The order parameters were calculated for each lipid and each carbon along the two lipid tails every 1 ns. The values were further averaged across the two lipid tails before distributed unto a 6\u00a0\u00d7\u00a06 grid. An average across frames and lipids were then obtained for each bin. In order to study the profile of the lipid tails, an average across frames, lipids, and tails were likewise obtained. Parameters were calculated from the simulations of the DMPC bilayer in the same way.\n",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "7889f5ab-8dd9-457a-a8fc-6ffb9904b589",
+      "submission_id": "9d05c751-0a96-42fb-a67f-be178fb4843a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lucie Delemotte, KTH Royal Institute of Technology Sweden\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.56518.sa1](https://doi.org/10.7554/eLife.56518.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nComputer simulations are increasingly used in structural biology as a means to integrate different kinds of experimental biophysical data, so as to facilitate a coherent and physically realistic molecular-level interpretation. This paper reports a structural refinement strategy of a previously determined NMR structure of a lipid nanodisc using orthogonal scattering data and advanced MD simulations. The elegant integrative simulation/experimental Ansatz leads to the insightful conclusion that the nanodisc undergoes elliptical structural fluctuations. Such elliptic fluctuations are \"averaged out\" in the NMR signal, but not in the scattering experiments data, thus resolving the apparent discrepancy between the different experimental methods.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Structure and dynamics of a nanodisc by integrating NMR, SAXS and SANS experiments with molecular dynamics simulations\" for consideration by eLife. Your article has been reviewed by four peer reviewers, including Lucie Delemotte as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Jos\u00e9 Faraldo-G\u00f3mez as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Franz Hagn (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, we are asking editors to accept without delay manuscripts, like yours, that they judge can stand as eLife papers without additional data, even if they feel that they would make the manuscript stronger. Thus the revisions requested below only address clarity and presentation.\n\nSummary:\n\nThe present manuscript builds up on previous work by the same authors (e.g. Skar-Gislinge, 2010, Midtgaard, 2015) towards the goal of understanding the structure and dynamics of MSP1D1-\u0394H5 and MSP1D1-\u0394H4H5 nanodiscs and their membrane mimicking capabilities. In particular, small angle X-ray and neutron scattering experiments are performed and used together with previously determined NMR distance restraints (Bibow et al., 2017)) and molecular dynamics simulations to obtain additional information on the structural properties of a lipid nanodisc particle in solution.\n\nIn essence, this paper reports on a structural refinement strategy of a previously determined NMR structure of a lipid nanodisc using orthogonal scattering data and advanced MD simulations. According to a procedure established by the Lindorff-Larsen lab, the conformational clusters obtained in the simulations are re-weighted to obtain a better fit to the experimental data.\n\nA key question addressed by the authors is whether the NDs are circular, as suggested by the previous NMR experiments, or slightly elliptical, as suggested by the scattering experiments carried out by the authors. The elegant integrative simulation/experimental Ansatz leads to the insightful conclusion that the ND undergoes elliptical structural fluctuations, with the major axes changing direction and being largely orthogonal to each other. Such elliptic fluctuations are \"averaged out\" in the NOEs from NMR, but not in the SAXS data, thus resolving the apparent discrepancy between the different experimental methods.\n\nEssential revisions:\n\n1) The reviewers agreed unanimously that the work was methodologically rigorous, technically well done, and the scientific conclusions fully supported by the data. They also agreed that this manuscript was clearly written, and that the presentation of the data was thorough and well organized. However, it was not entirely clear what aspects of this manuscript were novel. SAXS and SANS on MSP1D1 nanodiscs, lipid melting transition temperature dependence probed by SAXS on MSP1D1 and MSP1E3D1, analysis of lipid properties in MSP1 nanodiscs, broadening of gel-liquid phase transition in MSP1D1-\u0394H5, size-dependent increase of the transition enthalpy in MSP1D1 and MSP1E3D1 had been reported beforehand. The MD methodology as well as SAXS/SANS model building and fitting has been previously published by the authors.\n\nIt thus appeared to the reviewers that the novel aspect of this paper was the combination of various structural data and simulations to obtain better structures of challenging systems. Thus, while this paper provided a valuable protocol for dealing with structural data of various sources, this was not entirely clear from the paper in the present form.\n\nAdditionally the relevance of an oval nanodisc shape for their membrane mimicking properties was not entirely clear, since the shape might change in presence of a membrane protein. It was also unclear whether the conclusions around ellipticity could be generalized for all nanodiscs.\n\nThe reviewers thus recommended that the paper be rewritten to reflect the novel aspects of the work and to highlight its strengths while clarifying which aspects were already tackled by previous work.\n\n2) In addition to the circular NMR structure from Bibow et al., 2017, a circular nanodisc structure was solved in a cryo-electron microscopy study by Frauenfeld et al., 2011. How would the authors compare their results to this single particle cryo-electron microscopy structure? It would be interesting to use also these restraints into the MD simulation. Could the oval shape of an empty nanodisc also be seen in (cryo-)electron microscopy single particle data (before class averaging)?\n\n3) The work by Bibow et al. also includes PRE distance restraints and EPR distance restraints (and for the latter also a size distribution) which are of medium range and thus on almost a similar level of information as the SAXS and SANS data. These restraints should also be used in the reweighing procedure and discussed.\n\n4) The authors show the good fit between SAXS and SANS data towards an elliptical model. The authors should illustrate how a circular model would fit with the data as well as different elliptical models to access the request for an elliptical model.\n\n5) The major problem of any bulk studies is the potential presence of a heterogenous sample likely to be the case for nanodiscs because they may contain a distinct number of lipids. While the authors state that a single SEC peak is present that of course is not sufficient evidence for a single entity. First, this potential issue must be stated. Second, it is suggested to calculate the SAXS and SANS curves for a heterogenous sample with several cyclic nanodiscs having a distinct radius. Third, some argumentation may be put forward that indicate that the heterogeneity is of dynamic nature (such as a single set of NMR peaks, the dynamics of the MD simulation).\n\n6) What do the authors mean with \"membrane mimicking capabilities\"? Just physical properties of lipids in nanodiscs as compared to liposomes?\n\n7) It is not clearly described how SAXS and SANS data have been scaled for data fitting. Is it just a hardware-dependent correction or does it have an underlying physical meaning? This requires a short explanation.\n\n8) For comparing the NMR structure with the simulation results, have the authors considered the entire NMR structural bundle (10 structures) or just a single structure? This might have a marked impact on the chi-square value for the NMR structure.\n\n9) Correlation of MD with amide NOES (subsection \u201cIntegrating experiments and simulations\u201d): The authors might want to add here that the amide-amide NOEs report on the \u03b1-helical secondary structure of the individual MSPs and are not quite sensitive to slight changes in the shape of the overall MSP belt. Thus, a good correlation with these restraints is very much expected.\n\n10) Subsection \u201cIntegrating experiments and simulations\u201d, seventh paragraph: it seems like the square root(C) value for the NMR/EPR structure is missing.\n\n11) Order parameters (Figure 4B): What C-H moieties in DMPC have been used to calculate the numbers plotted in the figure? Also, it seems counter-intuitive that lipids in the rim region are more mobile than lipids in the core.\n\n12) It is very good that the authors make their MD data publicly available on GitHub. It would be nice if the refined ensemble (or some number of representative frames) could be made available to the scientific community also via a database, such as PDB-dev.\n\n13) The clustering step of the MD simulations seems quite important for the rest of the paper, and the choice of methods and parameters is not rationalized. Were other methods/parameters tested and why did the authors settle on this specific choice?\n\n14) Additionally, the reviewers had the following suggestion, but did not strictly require additional experiments to be performed: Have the authors tried to perform SANS contrast matching experiments to obtain scattering data of the protein belt and the lipid patch only, respectively? Since the NMR structure does not contain lipids, such experiments would be helpful to validate the \"lipid-free\" structure.\n",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9340cb11-7fa9-419e-8b38-4b4c7c4500a3",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C1",
+      "claim": "Nanodiscs are membrane mimetics that consist of a protein belt surrounding a lipid bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanodiscs are membrane mimetics that consist of a protein belt surrounding a lipid bilayer, and are broadly used for characterization of membrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about nanodiscs found in the abstract, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "b0e809dc-9644-4069-a49b-53750ddcda49",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C2",
+      "claim": "Nanodiscs are broadly used for characterization of membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanodiscs are membrane mimetics that consist of a protein belt surrounding a lipid bilayer, and are broadly used for characterization of membrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established practice in the field, supported by citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "50d07322-8550-4a89-81e7-e8e97a4e3348",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C3",
+      "claim": "The \u0394H5-DMPC and \u0394H4H5-DMPC nanodiscs display conformational heterogeneity with various elliptical shapes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that it displays conformational heterogeneity with various elliptical shapes, and with substantial differences in lipid ordering in the centre and rim of the discs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by SAXS/SANS data, MD simulations, and integrative analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "e6ac97e9-c671-46d1-b211-d392fc0367d1",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C4",
+      "claim": "There are substantial differences in lipid ordering in the centre and rim of the nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that it displays conformational heterogeneity with various elliptical shapes, and with substantial differences in lipid ordering in the centre and rim of the discs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by MD simulation analysis of lipid order parameters shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "67187b08-faac-457a-9ad8-bb6e54f087af",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C5",
+      "claim": "Nanodiscs are derived from and very similar to the human ApoA1 protein from high density lipoproteins (HDL particles).",
+      "claim_type": "EXPLICIT",
+      "source": "They are derived from, and very similar to, the human ApoA1 protein from high density lipoproteins (HDL particles) and consist of two amphipatic membrane scaffold proteins (MSPs) that stack and encircle a small patch of lipids in a membrane bilayer to form a discoidal assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the origin and design of nanodiscs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "8972eb62-6392-4b47-be26-91b53d87d718",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C6",
+      "claim": "Nanodiscs consist of two amphipathic membrane scaffold proteins (MSPs) that stack and encircle a small patch of lipids in a membrane bilayer to form a discoidal assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "They are derived from, and very similar to, the human ApoA1 protein from high density lipoproteins (HDL particles) and consist of two amphipatic membrane scaffold proteins (MSPs) that stack and encircle a small patch of lipids in a membrane bilayer to form a discoidal assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of nanodiscs based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "c0f2a0eb-a2ff-48fa-8616-a1e37b8426a5",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C7",
+      "claim": "Nanodisc diameters can be controlled and can range from about 7 to 13 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The popularity of nanodiscs arises from their ability to mimic a membrane while at the same time ensuring a small system of homogeneous composition, the size of which can be controlled and can give diameters in a range from about 7 to 13 nm (Denisov et al., 2004; Hagn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "f23ff3c8-5999-4919-a810-28551c3ed180",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C8",
+      "claim": "Mass spectrometry experiments have provided insight into lipid-water interactions and heterogeneous lipid compositions in nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mass spectrometry experiments have provided insight into lipid-water interactions and heterogeneous lipid compositions (Marty et al., 2014; Marty et al., 2015), solid state NMR has been used to quantify lipid phase transition states and lipid order (M\u00f6rs et al., 2013; Martinez et al., 2017) and small angle X-ray scattering (SAXS) and -neutron scattering (SANS) have provided insight into the size and low resolution shape of nanodiscs in solution (Denisov et al., 2004; Skar-Gislinge et al., 2010; Midtgaard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous mass spectrometry studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "df4eca35-6962-457b-95e0-7722c8eba64c",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C9",
+      "claim": "Solid state NMR has been used to quantify lipid phase transition states and lipid order in nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mass spectrometry experiments have provided insight into lipid-water interactions and heterogeneous lipid compositions (Marty et al., 2014; Marty et al., 2015), solid state NMR has been used to quantify lipid phase transition states and lipid order (M\u00f6rs et al., 2013; Martinez et al., 2017) and small angle X-ray scattering (SAXS) and -neutron scattering (SANS) have provided insight into the size and low resolution shape of nanodiscs in solution (Denisov et al., 2004; Skar-Gislinge et al., 2010; Midtgaard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous NMR studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "5734a176-1600-477b-96ec-9045fec93219",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C10",
+      "claim": "SAXS and SANS have provided insight into the size and low resolution shape of nanodiscs in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mass spectrometry experiments have provided insight into lipid-water interactions and heterogeneous lipid compositions (Marty et al., 2014; Marty et al., 2015), solid state NMR has been used to quantify lipid phase transition states and lipid order (M\u00f6rs et al., 2013; Martinez et al., 2017) and small angle X-ray scattering (SAXS) and -neutron scattering (SANS) have provided insight into the size and low resolution shape of nanodiscs in solution (Denisov et al., 2004; Skar-Gislinge et al., 2010; Midtgaard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous SAXS/SANS studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "ec1a4cfe-b12a-4e20-8093-b69982f87ca7",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C11",
+      "claim": "MD simulations have provided pioneering insights into the structure of nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments have been complemented by molecular dynamics (MD) simulations that provided both pioneering insights into the structure (Shih et al., 2005; Shih et al., 2007) as well as a better understanding of the assembly process, lipid-protein interactions and how much a nanodisc mimicks the membrane bilayer (Siuda and Tieleman, 2015; Debnath and Sch\u00e4fer, 2015; Vestergaard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous MD simulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "d652ffa8-6033-42cd-bb15-77ef6b740113",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C12",
+      "claim": "MD simulations have provided understanding of the assembly process, lipid-protein interactions and how much a nanodisc mimics the membrane bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments have been complemented by molecular dynamics (MD) simulations that provided both pioneering insights into the structure (Shih et al., 2005; Shih et al., 2007) as well as a better understanding of the assembly process, lipid-protein interactions and how much a nanodisc mimicks the membrane bilayer (Siuda and Tieleman, 2015; Debnath and Sch\u00e4fer, 2015; Vestergaard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous MD simulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "6e641442-0443-4070-89b3-4a637fd2388f",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C13",
+      "claim": "A high resolution structure of the MSP protein belt encircling the nanodisc was recently obtained from the small, helix-5-deleted nanodisc, MSP1D1\u0394H5 (\u0394H5), reconstituted with DMPC lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "A high resolution structure of the MSP protein belt encircling the nanodisc was recently obtained from the small, helix-5-deleted nanodisc, MSP1D1\u0394H5 (henceforth \u0394H5), reconstituted with DMPC lipids (\u0394H5-DMPC) (Bibow et al., 2017) by combining nuclear magnetic resonance (NMR) spectroscopy, electron paramagnetic resonance (EPR) spectroscopy and transmission electron microscopy (TEM) (Bibow et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the Bibow et al. 2017 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "56df36db-9ef5-41ff-b998-fe21d9ec6b77",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C14",
+      "claim": "The high resolution structure of \u0394H5-DMPC was obtained by combining NMR spectroscopy, EPR spectroscopy and TEM.",
+      "claim_type": "EXPLICIT",
+      "source": "A high resolution structure of the MSP protein belt encircling the nanodisc was recently obtained from the small, helix-5-deleted nanodisc, MSP1D1\u0394H5 (henceforth \u0394H5), reconstituted with DMPC lipids (\u0394H5-DMPC) (Bibow et al., 2017) by combining nuclear magnetic resonance (NMR) spectroscopy, electron paramagnetic resonance (EPR) spectroscopy and transmission electron microscopy (TEM) (Bibow et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the Bibow et al. 2017 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "17a9485f-d42b-4616-92c9-3d6c81d0d7c3",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C15",
+      "claim": "The NMR/EPR-derived structure of the belt proteins corresponded to an almost circularly-shaped disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the resulting structure of the belt proteins corresponded to that of an almost circularly-shaped disc, while our previous SAXS/SANS investigations are clearly consistent with discs with an on-average elliptical cross-section (Skar-Gislinge et al., 2010; Midtgaard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the structure from Bibow et al. 2017, cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "4b2d589c-2381-445f-8ee1-b8da6727bcc8",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C16",
+      "claim": "Previous SAXS/SANS investigations are clearly consistent with discs with an on-average elliptical cross-section.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the resulting structure of the belt proteins corresponded to that of an almost circularly-shaped disc, while our previous SAXS/SANS investigations are clearly consistent with discs with an on-average elliptical cross-section (Skar-Gislinge et al., 2010; Midtgaard et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous SAXS/SANS studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "0f2ff398-1e5f-4d06-8f42-0fe1456823f1",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C17",
+      "claim": "Optimal reconstitution ratios between DMPC lipids and \u0394H5 and \u0394H4H5 protein belts were determined based on SEC analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined optimal reconstitution ratios between the DMPC lipids and the \u0394H5 and \u0394H4H5 protein belts to form lipid-saturated nanodiscs based on a size-exclusion chromatography (SEC) analysis (Figure 1\u2014figure supplement 1 and Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "e4e1f574-7281-4a8e-824d-d729028c1b8e",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C18",
+      "claim": "Reconstitution ratios of 1:33 for \u0394H4H5:DMPC and 1:50 for \u0394H5:DMPC were optimal to form single and relatively narrow symmetric peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous studies (Hagn et al., 2013), we found that reconstitution ratios of 1:33 for \u0394H4H5:DMPC and 1:50 for \u0394H5:DMPC were optimal in order to form single and relatively narrow symmetric peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SEC data and is consistent with previous studies cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "da203723-7ba0-44c6-abae-38501996226a",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C19",
+      "claim": "SAXS and SANS data exhibit a flat Guinier region at low q and indicate no signs of aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our SAXS and SANS data all exhibit a flat Guinier region at low q and indicate no signs of aggregation (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the SAXS and SANS data shown in Figure 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "0546934a-9ab9-44f7-bb27-f5e78397eac5",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C20",
+      "claim": "In both \u0394H5-DMPC and \u0394H4H5-DMPC systems, the SAXS data exhibit an oscillation at medium to high q ([0.05:0.2] \u00c5-1) arising from the combination of a negative excess scattering length density of the hydrophobic alkyl-chain bilayer core and positive excess scattering length densities of the hydrophilic lipid PC-headgroups and the amphipathic protein belt.",
+      "claim_type": "EXPLICIT",
+      "source": "In both the \u0394H5-DMPC and \u0394H4H5-DMPC systems, the SAXS data exhibit an oscillation at medium to high q ([0.05:0.2] \u00c5-1) arising from the combination of a negative excess scattering length density of the hydrophobic alkyl-chain bilayer core and positive excess scattering length densities of the hydrophilic lipid PC-headgroups and the amphipathic protein belt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the SAXS data based on scattering theory and the known structure of nanodiscs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "ed662428-d70e-431b-bf2f-7bab3501ab38",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C21",
+      "claim": "The SANS data decreases monotonically as a function of q in accordance with the homogeneous contrast situation present.",
+      "claim_type": "EXPLICIT",
+      "source": "The SANS data decreases monotonically as a function of q in accordance with the homogeneous contrast situation present here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the SANS data with interpretation based on scattering theory.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "5b20e230-846c-4f5e-859f-aea3d332d82b",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C22",
+      "claim": "The \u0394H5-DMPC nanodiscs are slightly larger than the \u0394H4H5-DMPC nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "These two different contrast situations, core-shell-contrast for SAXS and bulk-contrast for SANS, are also clearly reflected in the obtained p(r)-functions (Figure 1C,D), which also confirm that the \u0394H5-DMPC nanodiscs are slightly larger than the \u0394H4H5-DMPC nanodiscs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the p(r)-functions shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "71d9b2c3-520f-4c12-80c8-b98ac7bb4708",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C25",
+      "claim": "There are 65 \u00b1 13 DMPC molecules in \u0394H4H5 nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find 65 \u00b1 13 and 100 \u00b1 14 DMPC molecules in the nanodiscs for \u0394H4H5 and \u0394H5, respectively, in agreement with the reconstitution ratios reported above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model fitting to SAXS/SANS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "d2b40c5c-0908-4f6a-a671-d38497fcd75f",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C26",
+      "claim": "There are 100 \u00b1 14 DMPC molecules in \u0394H5 nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "We find 65 \u00b1 13 and 100 \u00b1 14 DMPC molecules in the nanodiscs for \u0394H4H5 and \u0394H5, respectively, in agreement with the reconstitution ratios reported above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model fitting to SAXS/SANS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "291b0f74-2184-468c-97de-0cb09fbebfed",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C27",
+      "claim": "The effect of the DMPC melting transition is clearly reflected in the SAXS data where both the position of the first minimum and the shape of the oscillation changes as the DMPC transitions from the gel to the molten state.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of the DMPC melting transition is clearly reflected in the SAXS data (Figure 1\u2014figure supplement 2) where both the position of the first minimum and the shape of the oscillation changes as the DMPC transitions from the gel to the molten state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by SAXS data at different temperatures shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "ff7be2e6-a564-4e16-aa13-fccf8bfb5948",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C28",
+      "claim": "The intensity of the forward scattering decreases significantly with increasing temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that the intensity of the forward scattering decreases significantly with increasing temperature, a result of the small but significant temperature-dependent change of the partial specific molecular volume of the DMPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from SAXS data with interpretation based on physical properties of DMPC.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "0b80d70b-2b89-4ae6-bdc9-30680fa97a45",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C29",
+      "claim": "The DMPC area per headgroup increases significantly as a result of the melting transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the effect of the DMPC melting transition can clearly be seen on the obtained DMPC area per headgroup which increases significantly as a result of the melting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model fitting to SAXS data at different temperatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "fae726eb-c188-41dd-93ea-a32dd7d1cdd9",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C30",
+      "claim": "An axis ratio of the formed discs different from unity (between 1.2 and 1.4) was found in all cases (with/without His-tag and below and above the DMPC melting temperature).",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, that is, with/without His-tag and below and above the DMPC melting temperature, we found an axis ratio of the formed discs different from unity (between 1.2 and 1.4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model fitting to SAXS data under various conditions, shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "a06a8743-f2cc-4ca9-81ff-ec3f81280973",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C31",
+      "claim": "Neither the variation of temperature nor the removal of the His-tag affects the overall conclusion that elliptically-shaped nanodiscs describe the obtained small-angle scattering data.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence neither the variation of temperature nor the removal of the His-tag affects the overall conclusion that the elliptically-shaped nanodiscs describe the obtained small-angle scattering data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on analysis of SAXS data under different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "7a924106-5b22-4a66-8e13-400befcfb8a3",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C32",
+      "claim": "MD simulations were performed using the CHARMM36m force field.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed two simulations (total simulation time of 1196 ns) using the CHARMM36m force field (Huang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the simulations performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "f38af2d1-82c0-4156-9806-cd0ccc3c866d",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C33",
+      "claim": "The three most populated clusters from MD simulations represent 95% of the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We visualized the conformational ensemble of the \u0394H5-DMPC nanodisc by clustering the simulations, and found that the three most populated clusters represent 95% of the simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from clustering analysis of the MD simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "8d372b6b-6808-4652-b504-e657caae833c",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C34",
+      "claim": "The three most populated clusters all have elliptical shapes, but differ in the directions of the major axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these structures all have elliptical shapes, but differ in the directions of the major axis (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation is supported by visualization of the clusters shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "8404dfd1-50a5-4bcd-babc-afe36f601ce3",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C37",
+      "claim": "The back-calculated SAXS from the NMR/EPR structure overshoots the depth of the SAXS minimum but captures well the shoulder observed in the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "When we use this structure to calculate the SAXS data, the back-calculated data overshoots the depth of the SAXS minimum but captures well the shoulder observed in the experimental data (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between SAXS calculated from the NMR/EPR structure and experimental SAXS data, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "4b517fe1-5754-434b-b4d5-711955c8f5cd",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C38",
+      "claim": "Neither the MD trajectory nor the NMR/EPR structure fit perfectly with the measured SAXS data.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, neither the MD trajectory nor the NMR/EPR structure fit perfectly with the measured SAXS data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparison of calculated and experimental SAXS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "a2d479b8-1f19-44c0-aaa2-d453c94e7757",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C39",
+      "claim": "The simulations show overall good agreement with NMR-derived distances between methyl groups.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the simulations to the NMR-derived distances between methyl groups (Figure 2C), we generally find good agreement, but observe a few distances that exceed the experimental upper bounds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between distances calculated from simulations and experimental NOE data, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "0bad8120-0782-46bc-9ff3-2fa52cb8333c",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C40",
+      "claim": "A few distances calculated from simulations exceed the experimental upper bounds for methyl NOEs.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing the simulations to the NMR-derived distances between methyl groups (Figure 2C), we generally find good agreement, but observe a few distances that exceed the experimental upper bounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between distances calculated from simulations and experimental NOE data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "4b18fa34-0a64-48bc-bdc0-ec661013ef9b",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C41",
+      "claim": "The good agreement with amide NOEs mostly reflects that the secondary structures are maintained during the simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "As the amide NOEs are mostly sensitive to the local helical structure, the good agreement with this data mostly reflects that the secondary structures are maintained during the simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the comparison between simulations and amide NOE data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "99ff9ca6-63ee-453e-9e10-f6c6ca600c36",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C42",
+      "claim": "The BME method refines the simulation against measured experimental averages by balancing minimizing the discrepancy between simulation and experiments and ensuring minimal perturbation of the original simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, the BME method refines the simulation against measured experimental averages by balancing (1) minimizing the discrepancy between the simulation and the observed experimental averages and (2) ensuring as little perturbation of the original simulation as possible thereby limiting chances of overfitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the BME method used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "d0d4cfb8-85a2-43bb-8392-0cec4b8a8d6c",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C43",
+      "claim": "Refining against SAXS data only improves the MD trajectory with respect to SAXS but not NOE data.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that refining against a single of the two data types only improves the MD trajectory with respect to the structural properties it is sensitive to, highlighting the orthogonal information in the two sources of information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from BME reweighting analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "ee66b966-fc17-4f4e-9142-80b7caec8336",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C47",
+      "claim": "Clusters 1 and 2 together constitute about 80% of the conformational ensemble both before and after reweighting.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters 1 and 2, which together constitute about 80% of the conformational ensemble (both before and after reweighting), are both clusters with high acylindricity, but with almost orthogonal directions of the major axis in the elliptical structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from cluster analysis of the ensemble.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "42718963-bfce-4bfe-be8a-1366ac259c65",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C48",
+      "claim": "Clusters 1 and 2 are both clusters with high acylindricity, but with almost orthogonal directions of the major axis in the elliptical structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters 1 and 2, which together constitute about 80% of the conformational ensemble (both before and after reweighting), are both clusters with high acylindricity, but with almost orthogonal directions of the major axis in the elliptical structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from cluster analysis of the ensemble.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "835b725c-9ec8-42e8-9c84-7522a00799e7",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C49",
+      "claim": "The major change after integration is the exchange in populations of clusters 1 and 2, resulting in cluster 2 being weighted highest.",
+      "claim_type": "EXPLICIT",
+      "source": "The major change after integration is the exchange in populations of the two clusters resulting in cluster 2 to be weighted highest, underlining the influence and importance of the integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from BME reweighting analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "2d005dde-6efa-4c7a-8bab-e92111918dba",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C50",
+      "claim": "The DMPC lipid bilayer in the \u0394H5 nanodiscs is thinner and un-ordered near the protein belt and thicker and more ordered in the core of the nanodisc.",
+      "claim_type": "EXPLICIT",
+      "source": "The results illustrates that the DMPC lipid bilayer in the \u0394H5 nanodiscs is not homogeneous but rather thinner and un-ordered near the protein belt and thicker and more ordered in the core of the nanodisc, which in turn is more similar to a pure bilayer (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from analysis of lipid properties in the reweighted ensemble, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "b3b03b93-5d71-4e21-afc2-77fee3af6d30",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C51",
+      "claim": "The core of the \u0394H5 nanodisc is more similar to a pure bilayer than the rim.",
+      "claim_type": "EXPLICIT",
+      "source": "The results illustrates that the DMPC lipid bilayer in the \u0394H5 nanodiscs is not homogeneous but rather thinner and un-ordered near the protein belt and thicker and more ordered in the core of the nanodisc, which in turn is more similar to a pure bilayer (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from analysis of lipid properties in the reweighted ensemble, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "874a1635-5e3a-43dc-baa8-196be3348a3d",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C52",
+      "claim": "The melting transition peak broadens significantly in all three nanodisc systems (\u0394H4H5, \u0394H5, MSP1D1) compared to that of pure DMPC vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with earlier DSC experiments (Shaw et al., 2004), our results show that the melting transition peak broadens significantly in all three nanodisc systems compared to that of pure DMPC vesicles (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from DSC experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "8f0270ff-f777-4437-b3c9-1003d47deed8",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C53",
+      "claim": "The transition enthalpy per mole of DMPC increases with the nanodisc size.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the transition enthalpy per mole of DMPC, i.e. the area under the curves, increases with the nanodisc size, in line with previous observations for, respectively, DMPC and DPPC in MSP1D1 and in the larger MSP1E3D1 systems (Denisov et al., 2005), where it was proposed to be due to the absence of a cooperative melting transition of the lipids at the nanodisc rim (Denisov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from DSC experiments, consistent with previous observations cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "52b5dc58-0ab6-418a-b465-c0b19f5feb3b",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C54",
+      "claim": "In the smallest \u0394H4H5 nanodisc, the DMPC has a TM \u2248 22.5\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In the smallest \u0394H4H5 nanodisc, the DMPC has a TM \u2248 22.5\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from DSC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "f05f22be-a068-4a9c-a4af-3ba0ec9d534b",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C55",
+      "claim": "In \u0394H5 the DMPC has TM at 24.5\u00b0C which is close to that of the DMPC vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u0394H5 the DMPC has TM at 24.5\u00b0C which is close to that of the DMPC vesicles, while the larger MSP1D1 nanodisc has a TM \u2248 28\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from DSC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "fa2aa9ba-a69a-4fda-bfb6-7af0a122e7db",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C56",
+      "claim": "The larger MSP1D1 nanodisc has a TM \u2248 28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u0394H5 the DMPC has TM at 24.5\u00b0C which is close to that of the DMPC vesicles, while the larger MSP1D1 nanodisc has a TM \u2248 28\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from DSC experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "9a755c2c-0027-4bf7-8e09-5264a7f6c66a",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C57",
+      "claim": "The TM value of 28\u00b0C for DMPC in MSP1D1 is similar to the value of 28.5\u00b0C measured for DMPC melting in MSP1D1 by Denisov et al., 2005.",
+      "claim_type": "EXPLICIT",
+      "source": "This TM value is similar to the value of 28.5\u00b0C measured for DMPC melting in MSP1D1 by Denisov et al., 2005, who in addition measured a TM value of 27.5\u00b0C in the even larger MSP1E3D1 discs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to literature values from Denisov et al., 2005.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "b2d65258-429e-434c-b45c-176745cdbd62",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C58",
+      "claim": "DMPC-MSP interactions can both destabilize DMPC in the gel-phase in the smaller nanodiscs (\u0394H4H5-DMPC) and stabilize the DMPC gel-phase in larger nanodiscs (MSP1D1-DMPC and MSP1E3D1-DMPC).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results point towards a non-trivial effect of the DMPC-MSP interactions. They can both destabilize DMPC in the gel-phase in the smaller nanodiscs (\u0394H4H5-DMPC) where the low area-to-rim ratio leads to the lower TM compared to the DMPC vesicles, but also stabilize the DMPC gel-phase in larger nanodiscs with larger area-to-rim ratios such as MSP1D1-DMPC and MSP1E3D1-DMPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the DSC results in the context of nanodisc size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "d9d03b77-c87a-4b21-b34d-e4bcce666d4a",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C59",
+      "claim": "The study reconciles previous apparently conflicting observations about the shape of nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results reconcile previous apparently conflicting observations about the shape of nanodiscs, and pave the way for future integrative studies of larger complex systems such as membrane proteins embedded in nanodiscs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the overall contribution of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "1fc5cd21-b5e6-4db1-867b-27074252bda6",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C60",
+      "claim": "The study paves the way for future integrative studies of larger complex systems such as membrane proteins embedded in nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results reconcile previous apparently conflicting observations about the shape of nanodiscs, and pave the way for future integrative studies of larger complex systems such as membrane proteins embedded in nanodiscs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about the implications of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "6b6d683e-0fc9-483b-aa3a-5e9f92fd983d",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C61",
+      "claim": "The nanodisc possesses underlying elliptical fluctuations with the major axis changing within the nanodisc.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the results of the two studies, we hypothesized that the nanodisc possesses underlying elliptical fluctuations with the major axis changing within the nanodisc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that was tested and supported by the integrative analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "b11a2462-6bfa-48b7-992c-b76cdfbbcd8e",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C62",
+      "claim": "NMR and EPR measurements, which build on ensemble averaged information of specific atom-atom interactions, will give rise to an on-average circular structure in a system with elliptical fluctuations where the major axis changes direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a system NMR and EPR measurements, which build on ensemble averaged information of specific atom-atom interactions, will give rise to an on-average circular structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how NMR/EPR data would appear for a dynamically elliptical system.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "ba83c83a-fed6-4797-9a13-9b1f7e6827ec",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C63",
+      "claim": "SAXS and SANS, which build on distributions of global distances rather than specific atom-atom distances, will not distinguish between the orientation of the major axis within the nanodisc and thus give rise to observations of an elliptical shape.",
+      "claim_type": "EXPLICIT",
+      "source": "SAXS and SANS, on the contrary, which build on distributions of global distances rather than specific atom-atom distances, will not distinguish between the orientation of the major axis within the nanodisc and thus give rise to observations of an elliptical shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how SAXS/SANS data would appear for a dynamically elliptical system.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "3b108acb-16dd-493a-9abc-d4f42c3e2f99",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C64",
+      "claim": "The MD simulations and integration with experiments support the hypothesis of underlying elliptical fluctuations with the major axis changing direction inside the nanodisc.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our MD simulations and the integration with the experiments support the hypothesis of underlying elliptical fluctuations with the major axis changing direction inside the nanodisc, and we note that the detailed molecular description of this was only possible by combining the MD simulations with both the SAXS and NMR data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the integrative analysis of MD simulations with SAXS and NMR data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "82989454-7240-4348-b902-943f3f131c9f",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C65",
+      "claim": "The detailed molecular description of the elliptical fluctuations was only possible by combining the MD simulations with both the SAXS and NMR data.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our MD simulations and the integration with the experiments support the hypothesis of underlying elliptical fluctuations with the major axis changing direction inside the nanodisc, and we note that the detailed molecular description of this was only possible by combining the MD simulations with both the SAXS and NMR data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the necessity of the integrative approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "e41d7f3a-92ab-46b1-9e95-9f184946fab3",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C66",
+      "claim": "The results are in line with previous simulation studies on larger DMPC nanodiscs (MSP1, MSP1E1 and MSP1E2).",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with previous simulation studies on the larger DMPC nanodiscs, MSP1, MSP1E1 and MSP1E2 (Siuda and Tieleman, 2015; Debnath and Sch\u00e4fer, 2015), albeit performed without experimental reweighting, as well as with solid state NMR data on the both \u0394H5-DMPC and the larger MSP1-DMPC (M\u00f6rs et al., 2013; Martinez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous simulation studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "8a9c5ba9-e6c8-450a-aa9c-769bdf23e4dd",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C67",
+      "claim": "The results are in line with solid state NMR data on both \u0394H5-DMPC and the larger MSP1-DMPC.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with previous simulation studies on the larger DMPC nanodiscs, MSP1, MSP1E1 and MSP1E2 (Siuda and Tieleman, 2015; Debnath and Sch\u00e4fer, 2015), albeit performed without experimental reweighting, as well as with solid state NMR data on the both \u0394H5-DMPC and the larger MSP1-DMPC (M\u00f6rs et al., 2013; Martinez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous NMR studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "23e8e02a-4a8b-42e0-b75b-240d2e8e416b",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C68",
+      "claim": "The broader melting transition in nanodiscs is in line with the observed differentiated lipid ordering from the reweighted simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The broader melting transition is in line with the observed differentiated lipid ordering in nanodiscs from the reweighted simulations, as the observed differences in how ordered the lipids are necessarily will cause differences in the melting temperature and thus give rise to the broader peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting DSC results to simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "41b5be10-b301-46cf-b2cb-1fd61bff16b5",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C69",
+      "claim": "The broadened peaks in DSC are in line with results observed in previous solid state NMR experiments which found a substantially broadened and diminished lipid gel-liquid phase transition in the \u0394H5-DMPC nanodisc in the temperature range 10-28\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the broadened peaks are in line with results observed in previous solid state NMR experiments which found a substantially broadened and diminished lipid gel-liquid phase transition in the \u0394H5-DMPC nanodisc in the temperature range 10-28\u00b0C (Martinez et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous NMR results cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "b02e2e53-0d43-4ac1-8e99-f87d974b3471",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "claim_id": "C70",
+      "claim": "The belt proteins induce additional disorder to the lipid tails near the rim.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, our results suggest that the belt proteins induces additional disorder to the lipid tails near the rim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the lipid order parameter results from simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5788426f-30d4-4ca4-b9c1-5e697b0c6330",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Optimal reconstitution ratios for DMPC-loaded \u0394H5 and \u0394H4H5 nanodiscs were determined using SEC analysis, yielding ratios of 1:50 for \u0394H5:DMPC and 1:33 for \u0394H4H5:DMPC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C18 describe methodological optimization supported by SEC data (Figure 1\u2014figure supplement 1) and are consistent with previous studies. The experimental approach is standard and the results are reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "d3e580c2-5644-45ff-9c2b-b168109d5988",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SAXS and SANS experiments reveal that \u0394H5-DMPC and \u0394H4H5-DMPC nanodiscs are monodisperse, discoidal structures with no aggregation. \u0394H5-DMPC is slightly larger than \u0394H4H5-DMPC, containing approximately 100\u00b114 and 65\u00b113 DMPC molecules, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22, C25-C26 are supported by SAXS/SANS data (Figure 1A-D) and model fitting (Table 1). The flat Guinier region confirms no aggregation, and the p(r) functions confirm size differences. The lipid counts agree with reconstitution ratios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "a56633fa-df8b-410a-8b22-8a3db6cb1c38",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Temperature-dependent SAXS measurements show that DMPC melting transitions affect nanodisc structure, with increased lipid headgroup area and decreased forward scattering intensity at higher temperatures. Elliptical shapes (axis ratios 1.2-1.4) persist across temperatures and His-tag conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by temperature-dependent SAXS data (Figure 1\u2014figure supplement 2, Table 1). The observations are consistent with known DMPC phase behavior and demonstrate robustness of the elliptical shape finding across experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "805886fd-8caf-47f7-aa71-541a5fbcf55f",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MD simulations using CHARMM36m force field reveal that \u0394H5-DMPC nanodiscs adopt multiple elliptical conformations, with three major clusters representing 95% of the ensemble differing in the orientation of their major axes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 describe MD simulation results supported by clustering analysis (Figure 2A). The methodology is appropriate and the finding of elliptical conformations with varying major axis orientations is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "afa143ab-612e-4316-892a-30415c03b1b1",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neither MD simulations nor the NMR/EPR structure perfectly fit experimental SAXS data, though both show overall good agreement with NMR NOE distance constraints. MD simulations maintain secondary structure but show some NOE violations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by comparisons between calculated and experimental data (Figure 2B-C, Table 2). The discrepancies motivate the integrative approach and are honestly reported. The \u03c7\u00b2 values quantify the level of agreement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "fb6bdc47-d3c0-4da6-9582-0abe78e64b64",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BME reweighting against SAXS and NOE data individually improves agreement with the respective data types, highlighting their orthogonal information content. Integration shifts populations between clusters 1 and 2, which together constitute ~80% of the ensemble and have orthogonal elliptical orientations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C47-C49 describe BME reweighting results supported by Table 2 and Figure 3D. The analysis demonstrates that SAXS and NOE provide complementary structural information, and the population shifts are quantified with appropriate entropy metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "14059890-0170-4c1d-944f-5559514b0c90",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The integrative analysis reconciles apparent discrepancies between NMR/EPR (circular) and SAXS/SANS (elliptical) structures by revealing that nanodiscs undergo elliptical fluctuations with changing major axis orientations. NMR/EPR averages specific atom-atom distances yielding circular structures, while SAXS/SANS reports global distance distributions yielding elliptical shapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C65 present the central conceptual advance of the paper. The hypothesis is well-supported by the integrative analysis combining MD, SAXS, and NMR data (Figure 3). The explanation for why different techniques yield different apparent shapes is physically sound and demonstrates the necessity of the integrative approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "235a8018-ecd7-4178-9ecd-5f8f184ada5d",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Analysis of the reweighted ensemble reveals spatial heterogeneity in lipid properties: lipids near the protein belt are thinner and less ordered, while the nanodisc core is thicker, more ordered, and more similar to a pure bilayer. These findings are consistent with previous simulation and NMR studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51, C66-C67 are supported by lipid property analysis from the reweighted ensemble (Figure 4) and comparison to literature. The spatial heterogeneity is well-characterized and the agreement with independent studies strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "9b0b6677-35a3-4e16-9551-2f179a88da6d",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DSC experiments show that DMPC melting transitions in nanodiscs are significantly broadened compared to vesicles, with transition enthalpy increasing with nanodisc size. Melting temperatures vary non-monotonically with size (\u0394H4H5: 22.5\u00b0C, \u0394H5: 24.5\u00b0C, MSP1D1: 28\u00b0C). The broadening is consistent with differentiated lipid ordering observed in simulations and previous NMR studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57, C68-C70 are supported by DSC data (Figure 5) and are consistent with previous studies. The interpretation connecting DSC observations to simulation results on lipid ordering is logical. The non-trivial size-dependence of melting temperature is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "7a8def35-fca7-4478-9c77-6e1bd512ff4c",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DMPC-MSP interactions have non-trivial effects on lipid phase behavior, destabilizing the gel phase in smaller nanodiscs (\u0394H4H5) but stabilizing it in larger nanodiscs (MSP1D1, MSP1E3D1), attributed to differences in area-to-rim ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is an interpretation of DSC results (C54-C57) that is well-supported by the data and provides a mechanistic explanation for the observed size-dependent melting temperature variations. The area-to-rim ratio explanation is physically reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "43c2fda8-a03c-4f1a-8ffa-0a083e889fa1",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study reconciles previous apparently conflicting observations about nanodisc shape from different experimental techniques.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is a summary statement supported by the entire integrative analysis (C61-C65). The reconciliation of NMR/EPR and SAXS/SANS data through the dynamic elliptical model is the central achievement of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "8f6f69ee-3cae-4c9d-b7a1-ec70c0b8278e",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Nanodiscs are membrane mimetics consisting of two amphipathic MSP proteins encircling a lipid bilayer patch, derived from human ApoA1, with controllable diameters ranging from 7-13 nm, and are broadly used for membrane protein characterization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C5-C7 provide background knowledge about nanodiscs that is well-established in the field and supported by citations. These are definitional and contextual statements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "5e4d4934-400c-44c0-9214-7b46c1e9aac9",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Previous studies using mass spectrometry, NMR, SAXS/SANS, and MD simulations have provided various insights into nanodisc structure and properties. A recent NMR/EPR/TEM study determined a high-resolution structure of \u0394H5-DMPC showing a nearly circular shape, contrasting with previous SAXS/SANS studies indicating elliptical shapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16 summarize prior work and establish the apparent discrepancy that motivates the current study. All claims are supported by appropriate citations and accurately represent the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "1cf7a5e9-342f-4b2b-93ae-4d0571bf7b93",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The BME method balances fitting experimental data with minimal perturbation of the original simulation to avoid overfitting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 accurately describes the BME methodology used in the study. This is a methodological description of an established technique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    },
+    {
+      "id": "332aff2d-fe6d-4fa5-ba0a-f41dd3a6486a",
+      "content_id": "d37eb5ca-2123-4734-99ec-68c4720974f1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study paves the way for future integrative studies of membrane proteins embedded in nanodiscs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C60 is a forward-looking statement about potential future applications. While the integrative approach demonstrated here could be applied to membrane protein systems, this remains speculative and has not been demonstrated in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:50:54.595897Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0f2ff398-1e5f-4d06-8f42-0fe1456823f1",
+      "result_id": "5788426f-30d4-4ca4-b9c1-5e697b0c6330"
+    },
+    {
+      "claim_id": "e4e1f574-7281-4a8e-824d-d729028c1b8e",
+      "result_id": "5788426f-30d4-4ca4-b9c1-5e697b0c6330"
+    },
+    {
+      "claim_id": "da203723-7ba0-44c6-abae-38501996226a",
+      "result_id": "d3e580c2-5644-45ff-9c2b-b168109d5988"
+    },
+    {
+      "claim_id": "0546934a-9ab9-44f7-bb27-f5e78397eac5",
+      "result_id": "d3e580c2-5644-45ff-9c2b-b168109d5988"
+    },
+    {
+      "claim_id": "ed662428-d70e-431b-bf2f-7bab3501ab38",
+      "result_id": "d3e580c2-5644-45ff-9c2b-b168109d5988"
+    },
+    {
+      "claim_id": "5b20e230-846c-4f5e-859f-aea3d332d82b",
+      "result_id": "d3e580c2-5644-45ff-9c2b-b168109d5988"
+    },
+    {
+      "claim_id": "71d9b2c3-520f-4c12-80c8-b98ac7bb4708",
+      "result_id": "d3e580c2-5644-45ff-9c2b-b168109d5988"
+    },
+    {
+      "claim_id": "d2b40c5c-0908-4f6a-a671-d38497fcd75f",
+      "result_id": "d3e580c2-5644-45ff-9c2b-b168109d5988"
+    },
+    {
+      "claim_id": "291b0f74-2184-468c-97de-0cb09fbebfed",
+      "result_id": "a56633fa-df8b-410a-8b22-8a3db6cb1c38"
+    },
+    {
+      "claim_id": "ff7be2e6-a564-4e16-aa13-fccf8bfb5948",
+      "result_id": "a56633fa-df8b-410a-8b22-8a3db6cb1c38"
+    },
+    {
+      "claim_id": "0b80d70b-2b89-4ae6-bdc9-30680fa97a45",
+      "result_id": "a56633fa-df8b-410a-8b22-8a3db6cb1c38"
+    },
+    {
+      "claim_id": "fae726eb-c188-41dd-93ea-a32dd7d1cdd9",
+      "result_id": "a56633fa-df8b-410a-8b22-8a3db6cb1c38"
+    },
+    {
+      "claim_id": "a06a8743-f2cc-4ca9-81ff-ec3f81280973",
+      "result_id": "a56633fa-df8b-410a-8b22-8a3db6cb1c38"
+    },
+    {
+      "claim_id": "7a924106-5b22-4a66-8e13-400befcfb8a3",
+      "result_id": "805886fd-8caf-47f7-aa71-541a5fbcf55f"
+    },
+    {
+      "claim_id": "f38af2d1-82c0-4156-9806-cd0ccc3c866d",
+      "result_id": "805886fd-8caf-47f7-aa71-541a5fbcf55f"
+    },
+    {
+      "claim_id": "8d372b6b-6808-4652-b504-e657caae833c",
+      "result_id": "805886fd-8caf-47f7-aa71-541a5fbcf55f"
+    },
+    {
+      "claim_id": "8404dfd1-50a5-4bcd-babc-afe36f601ce3",
+      "result_id": "afa143ab-612e-4316-892a-30415c03b1b1"
+    },
+    {
+      "claim_id": "4b517fe1-5754-434b-b4d5-711955c8f5cd",
+      "result_id": "afa143ab-612e-4316-892a-30415c03b1b1"
+    },
+    {
+      "claim_id": "a2d479b8-1f19-44c0-aaa2-d453c94e7757",
+      "result_id": "afa143ab-612e-4316-892a-30415c03b1b1"
+    },
+    {
+      "claim_id": "0bad8120-0782-46bc-9ff3-2fa52cb8333c",
+      "result_id": "afa143ab-612e-4316-892a-30415c03b1b1"
+    },
+    {
+      "claim_id": "4b18fa34-0a64-48bc-bdc0-ec661013ef9b",
+      "result_id": "afa143ab-612e-4316-892a-30415c03b1b1"
+    },
+    {
+      "claim_id": "d0d4cfb8-85a2-43bb-8392-0cec4b8a8d6c",
+      "result_id": "fb6bdc47-d3c0-4da6-9582-0abe78e64b64"
+    },
+    {
+      "claim_id": "ee66b966-fc17-4f4e-9142-80b7caec8336",
+      "result_id": "fb6bdc47-d3c0-4da6-9582-0abe78e64b64"
+    },
+    {
+      "claim_id": "42718963-bfce-4bfe-be8a-1366ac259c65",
+      "result_id": "fb6bdc47-d3c0-4da6-9582-0abe78e64b64"
+    },
+    {
+      "claim_id": "835b725c-9ec8-42e8-9c84-7522a00799e7",
+      "result_id": "fb6bdc47-d3c0-4da6-9582-0abe78e64b64"
+    },
+    {
+      "claim_id": "6b6d683e-0fc9-483b-aa3a-5e9f92fd983d",
+      "result_id": "14059890-0170-4c1d-944f-5559514b0c90"
+    },
+    {
+      "claim_id": "b11a2462-6bfa-48b7-992c-b76cdfbbcd8e",
+      "result_id": "14059890-0170-4c1d-944f-5559514b0c90"
+    },
+    {
+      "claim_id": "ba83c83a-fed6-4797-9a13-9b1f7e6827ec",
+      "result_id": "14059890-0170-4c1d-944f-5559514b0c90"
+    },
+    {
+      "claim_id": "3b108acb-16dd-493a-9abc-d4f42c3e2f99",
+      "result_id": "14059890-0170-4c1d-944f-5559514b0c90"
+    },
+    {
+      "claim_id": "82989454-7240-4348-b902-943f3f131c9f",
+      "result_id": "14059890-0170-4c1d-944f-5559514b0c90"
+    },
+    {
+      "claim_id": "2d005dde-6efa-4c7a-8bab-e92111918dba",
+      "result_id": "235a8018-ecd7-4178-9ecd-5f8f184ada5d"
+    },
+    {
+      "claim_id": "b3b03b93-5d71-4e21-afc2-77fee3af6d30",
+      "result_id": "235a8018-ecd7-4178-9ecd-5f8f184ada5d"
+    },
+    {
+      "claim_id": "e41d7f3a-92ab-46b1-9e95-9f184946fab3",
+      "result_id": "235a8018-ecd7-4178-9ecd-5f8f184ada5d"
+    },
+    {
+      "claim_id": "8a9c5ba9-e6c8-450a-aa9c-769bdf23e4dd",
+      "result_id": "235a8018-ecd7-4178-9ecd-5f8f184ada5d"
+    },
+    {
+      "claim_id": "874a1635-5e3a-43dc-baa8-196be3348a3d",
+      "result_id": "9b0b6677-35a3-4e16-9551-2f179a88da6d"
+    },
+    {
+      "claim_id": "8f0270ff-f777-4437-b3c9-1003d47deed8",
+      "result_id": "9b0b6677-35a3-4e16-9551-2f179a88da6d"
+    },
+    {
+      "claim_id": "52b5dc58-0ab6-418a-b465-c0b19f5feb3b",
+      "result_id": "9b0b6677-35a3-4e16-9551-2f179a88da6d"
+    },
+    {
+      "claim_id": "f05f22be-a068-4a9c-a4af-3ba0ec9d534b",
+      "result_id": "9b0b6677-35a3-4e16-9551-2f179a88da6d"
+    },
+    {
+      "claim_id": "fa2aa9ba-a69a-4fda-bfb6-7af0a122e7db",
+      "result_id": "9b0b6677-35a3-4e16-9551-2f179a88da6d"
+    },
+    {
+      "claim_id": "9a755c2c-0027-4bf7-8e09-5264a7f6c66a",
+      "result_id": "9b0b6677-35a3-4e16-9551-2f179a88da6d"
+    },
+    {
+      "claim_id": "23e8e02a-4a8b-42e0-b75b-240d2e8e416b",
+      "result_id": "9b0b6677-35a3-4e16-9551-2f179a88da6d"
+    },
+    {
+      "claim_id": "41b5be10-b301-46cf-b2cb-1fd61bff16b5",
+      "result_id": "9b0b6677-35a3-4e16-9551-2f179a88da6d"
+    },
+    {
+      "claim_id": "b02e2e53-0d43-4ac1-8e99-f87d974b3471",
+      "result_id": "9b0b6677-35a3-4e16-9551-2f179a88da6d"
+    },
+    {
+      "claim_id": "b2d65258-429e-434c-b45c-176745cdbd62",
+      "result_id": "7a8def35-fca7-4478-9c77-6e1bd512ff4c"
+    },
+    {
+      "claim_id": "d9d03b77-c87a-4b21-b34d-e4bcce666d4a",
+      "result_id": "43c2fda8-a03c-4f1a-8ffa-0a083e889fa1"
+    },
+    {
+      "claim_id": "9340cb11-7fa9-419e-8b38-4b4c7c4500a3",
+      "result_id": "8f6f69ee-3cae-4c9d-b7a1-ec70c0b8278e"
+    },
+    {
+      "claim_id": "b0e809dc-9644-4069-a49b-53750ddcda49",
+      "result_id": "8f6f69ee-3cae-4c9d-b7a1-ec70c0b8278e"
+    },
+    {
+      "claim_id": "67187b08-faac-457a-9ad8-bb6e54f087af",
+      "result_id": "8f6f69ee-3cae-4c9d-b7a1-ec70c0b8278e"
+    },
+    {
+      "claim_id": "8972eb62-6392-4b47-be26-91b53d87d718",
+      "result_id": "8f6f69ee-3cae-4c9d-b7a1-ec70c0b8278e"
+    },
+    {
+      "claim_id": "c0f2a0eb-a2ff-48fa-8616-a1e37b8426a5",
+      "result_id": "8f6f69ee-3cae-4c9d-b7a1-ec70c0b8278e"
+    },
+    {
+      "claim_id": "f23ff3c8-5999-4919-a810-28551c3ed180",
+      "result_id": "5e4d4934-400c-44c0-9214-7b46c1e9aac9"
+    },
+    {
+      "claim_id": "df4eca35-6962-457b-95e0-7722c8eba64c",
+      "result_id": "5e4d4934-400c-44c0-9214-7b46c1e9aac9"
+    },
+    {
+      "claim_id": "5734a176-1600-477b-96ec-9045fec93219",
+      "result_id": "5e4d4934-400c-44c0-9214-7b46c1e9aac9"
+    },
+    {
+      "claim_id": "ec1a4cfe-b12a-4e20-8093-b69982f87ca7",
+      "result_id": "5e4d4934-400c-44c0-9214-7b46c1e9aac9"
+    },
+    {
+      "claim_id": "d652ffa8-6033-42cd-bb15-77ef6b740113",
+      "result_id": "5e4d4934-400c-44c0-9214-7b46c1e9aac9"
+    },
+    {
+      "claim_id": "6e641442-0443-4070-89b3-4a637fd2388f",
+      "result_id": "5e4d4934-400c-44c0-9214-7b46c1e9aac9"
+    },
+    {
+      "claim_id": "56df36db-9ef5-41ff-b998-fe21d9ec6b77",
+      "result_id": "5e4d4934-400c-44c0-9214-7b46c1e9aac9"
+    },
+    {
+      "claim_id": "17a9485f-d42b-4616-92c9-3d6c81d0d7c3",
+      "result_id": "5e4d4934-400c-44c0-9214-7b46c1e9aac9"
+    },
+    {
+      "claim_id": "4b2d589c-2381-445f-8ee1-b8da6727bcc8",
+      "result_id": "5e4d4934-400c-44c0-9214-7b46c1e9aac9"
+    },
+    {
+      "claim_id": "99ff9ca6-63ee-453e-9e10-f6c6ca600c36",
+      "result_id": "1cf7a5e9-342f-4b2b-93ae-4d0571bf7b93"
+    },
+    {
+      "claim_id": "1fc5cd21-b5e6-4db1-867b-27074252bda6",
+      "result_id": "332aff2d-fe6d-4fa5-ba0a-f41dd3a6486a"
+    }
+  ],
+  "comparisons": []
+}

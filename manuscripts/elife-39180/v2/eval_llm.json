@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C22",
+      "C23",
+      "C27",
+      "C31",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C79"
+    ],
+    "result": "PICK1 and PSD-95 exhibit binding strengths to membrane-embedded ligands that are 2-3 orders of magnitude higher than intrinsic PDZ domain affinities measured in solution. For PICK1 binding to SF-GluA2, the apparent Kd* was 67 \u00b1 6 nM (~100-fold higher than solution measurements), and similar enhancements were observed for TAC-YFP-GluA2 (73 \u00b1 19 nM), TAC-YFP-DAT (47 \u00b1 5 nM), and PSD-95 binding to \u03b21-adrenergic receptor (EC50 = 3 \u00b1 2 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by direct experimental measurements using SCMS assays (C22, C27, C31, C35) and comparisons with in-solution fluorescence polarization data (C23, C34, C36). Multiple independent constructs and proteins show consistent 100-1000 fold increases in binding strength, providing strong convergent evidence for the central finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "PICK1 binding kinetics to membrane-embedded ligands are remarkably slow, with association half-times of 14-24 minutes and dissociation showing biphasic behavior for LKV (fast component t\u00bd=21 \u00b1 8 min, slow component t\u00bd=373 \u00b1 51 min) versus monophasic slow dissociation for LKI (t\u00bd=431 \u00b1 16 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic data are directly measured from time-course experiments (C43-C46) and provide clear quantitative evidence for slow binding kinetics. The differential dissociation behavior between LKV and LKI is particularly well-documented and forms the basis for the dual binding mode hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Changes in intrinsic PDZ affinity (through C-terminal mutations V\u2192I\u2192A, representing 20-fold affinity changes) do not affect apparent binding strength (Kd* values remain 37-59 nM) but instead alter maximal binding (Bmax: LKV=100%, LKI=56%, LKA=41%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data clearly demonstrate that mutations causing large changes in intrinsic affinity (C39, C41) result in unchanged Kd* but reduced Bmax (C42). This counterintuitive finding is well-documented across multiple measurements and is central to the dual binding mode model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C88"
+    ],
+    "result": "PICK1 exhibits dual scaffold modes: at low PICK1 concentrations or low intrinsic affinity, both PDZ domains bind membrane ligands (1:2 stoichiometry); at high PICK1 concentrations or high intrinsic affinity, one PDZ domain binds while the other remains free (1:1 stoichiometry). Mathematical modeling using bivalent binding kinetics reproduces experimental saturation and dissociation curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual binding mode model is supported by: (1) differential dissociation kinetics (C46-C47), (2) mathematical simulations that match experimental data (C52, C54), and (3) mechanistic predictions based on thermodynamic principles (C51, C53). The model successfully explains the Bmax differences and provides a coherent framework for all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Heterodimer experiments with PICK1 WT/A87L (one functional PDZ domain) eliminate the Bmax difference between LKV and LKI, confirming that dual binding modes require two functional PDZ domains. For LKV, WT/A87L maintains high affinity (24 \u00b1 21 nM), while for LKI, affinity decreases significantly (123 \u00b1 41 nM vs 29 \u00b1 4 nM for WT/WT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The heterodimer experiments provide critical validation of the dual binding mode model. The A87L mutation eliminates PDZ binding (C56), and the WT/A87L heterodimers show predicted behavior: loss of Bmax differences (C58) and differential effects on affinity depending on ligand (C59-C60). This is strong experimental support for the model's predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C92"
+    ],
+    "result": "PICK1 inhibits receptor recycling in a ligand-dependent manner: LKV recycling is reduced to 41.5 \u00b1 12% with PICK1 expression, while LKI and LKA recycling remains unaffected (88.8 \u00b1 14% and 95.9 \u00b1 3.9%). This functional difference correlates with formation of the ternary complex (1:1 binding mode) that leaves one PDZ domain free for kinase recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional data from surface ELISA assays (C64-C66) clearly demonstrate differential effects on recycling that correlate with the binding modes. The interpretation linking this to ternary complex formation (C67, C92) is reasonable given the binding data, though the specific mechanism (kinase recruitment) remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C82"
+    ],
+    "result": "The amphipathic helix contributes to PICK1 binding strength: PICK1 V121E,L125E shows 10-fold reduced affinity (286 \u00b1 126 nM vs ~40 nM for WT) but maintains the ability to inhibit LKV recycling, suggesting membrane binding enhances avidity but is not essential for the 1:1 binding mode function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The amphipathic helix mutant data (C68, C70) clearly show reduced binding strength but preserved function. This supports the interpretation that membrane binding contributes to avidity (C69, C82) but that sufficiently high PICK1 concentration can compensate (C71). The data are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "In hippocampal neurons, PICK1 V121E,L125E shows normal somatic expression (101 \u00b1 8% of WT) but dramatically reduced synaptic localization: total PICK1 clusters reduced to 48.5 \u00b1 7% and co-clustering with PSD-95 nearly abolished (0.17 \u00b1 0.04 vs 1.0 for WT), demonstrating that membrane binding via the amphipathic helix is essential for stable synaptic localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The neuronal imaging data provide clear quantitative evidence for the role of the amphipathic helix in synaptic localization. Multiple independent measures (C75, C77) show dramatic reductions in synaptic PICK1 without affecting overall expression (C73) or PSD-95 distribution (C76). This strongly supports the conclusion about membrane binding's role in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "PICK1 binding to SCMS is PDZ-dependent: adding alanine to the GluA2 C-terminus (+A mutation) significantly reduces both apparent affinity and maximal binding compared to wild-type GluA2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The +A control experiments (C24-C26) demonstrate specificity of PDZ-mediated binding. This is a standard control that validates the SCMS approach and confirms that observed binding depends on the PDZ interaction motif.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "High apparent affinity of PICK1 for membrane-embedded ligands is independent of receptor oligomerization state and transmembrane domains, as demonstrated by similar Kd* values for tetrameric SF-GluA2 (67 \u00b1 6 nM) and monomeric TAC-YFP-GluA2 (73 \u00b1 19 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between full-length tetrameric receptors and minimal TAC constructs (C27, C28) provides clear evidence that the enhanced binding strength does not require receptor oligomerization or transmembrane domains. This is an important control that narrows the mechanistic possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C32"
+    ],
+    "result": "Binding strength measured in SCMS correlates poorly with intrinsic PDZ affinity: despite DAT C-terminus having 10-fold higher intrinsic affinity than GluA2, the apparent Kd* values on SCMS are similar (47 \u00b1 5 nM for DAT vs 67-73 nM for GluA2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between DAT and GluA2 binding (C30-C32) demonstrates that SCMS binding strength does not simply reflect intrinsic affinity. This observation is critical for establishing that avidity effects dominate in the membrane context and foreshadows the Bmax findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Competition binding experiments confirm PICK1 binding specificity and quantify binding strength: Ki* from competition (29 \u00b1 5 nM) matches direct saturation binding and shows 100-fold enhancement over solution measurements (2.1 \u00b1 0.4 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The competition binding data (C33-C34) provide independent validation of the saturation binding measurements and rule out artifacts from the SNAP-tag. This is a methodological control that strengthens confidence in the SCMS measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "PICK1 binds native membrane proteins in SCMS using the PDZ domain and does not bind membrane in absence of PDZ interactions, as demonstrated by the A87L mutant showing no binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The A87L control (C56, C80-C81) demonstrates that PDZ binding is required for membrane association in the SCMS system. This is an important control establishing that PICK1 does not bind membranes non-specifically through its BAR domain alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "SCMS technique enables quantitative measurement of scaffold protein binding to membrane-embedded receptors by exposing the intracellular membrane surface and allowing fluorescence-based quantification of protein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SCMS methodology is well-established (cited from previous work) and the manuscript demonstrates its successful application. The technique is clearly described and validated through multiple controls throughout the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C89",
+      "C90"
+    ],
+    "result": "Bivalent binding increases affinity through multiple rebinding events, but when bulk concentration is high, penalties from entropy, strain, and steric hindrance favor binding of a second molecule over intramolecular closure. This effect is enhanced by the large (~20 nm) distance between PICK1 PDZ domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe established principles of bivalent binding (C50, supported by citations) and apply them to the PICK1 system (C89-C90). The reasoning is sound and supported by both literature and the structural data on PICK1 domain spacing. This provides the theoretical foundation for the dual binding mode model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The high binding strengths observed suggest scaffold proteins may often be at saturating concentrations in vivo, making affinity tuning relatively inefficient for regulation. Instead, slow kinetics imply non-equilibrium conditions where kinetic factors and slow off-rates may enable conversion of transient signals into long-lived effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent reasonable inferences from the data (C83-C85) but extend beyond what is directly demonstrated. The speculation about biological implications (C86-C87) is plausible but not experimentally validated in this study. The claim about affinity tuning being inefficient (C84) is partially supported by the V121E,L125E functional data but remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "The dual scaffold modes enable different functions: high-affinity ligands (DAT, NET) leave one PDZ domain free for recruiting cytosolic proteins, while low-affinity ligands (GluA2, ASIC1a, etc.) engage both PDZ domains, potentially causing clustering and changes in lateral diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The functional interpretation for high-affinity ligands (C91) is partially supported by the recycling data (C65-C66), but the specific mechanism of kinase recruitment is not directly demonstrated. The predictions for low-affinity ligands (C93-C94) are reasonable inferences from the binding model but lack direct experimental validation of clustering or changes in diffusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "PICK1 N-BAR domain recruitment to curved membranes could increase local PICK1 concentration by nearly two orders of magnitude in endocytic structures, endosomes, or biosynthetic vesicles, potentially driving the 1:1 binding configuration in these locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is based on known properties of N-BAR domains (C95, supported by citation) but the specific predictions about PICK1 concentration and binding mode in curved membrane regions (C96) are speculative. While plausible, these ideas are not tested experimentally in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background and context claims about PDZ domain scaffold proteins, their role in cellular signaling, limitations of in vitro assays, and prior knowledge about PICK1 structure and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are primarily literature-based claims establishing context for the study. They are well-supported by appropriate citations and represent accurate summaries of prior knowledge in the field. These provide necessary background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Intrinsic PDZ domain affinities are finely tuned and encode specific cellular responses, enabling multiplexed cellular functions of PDZ scaffolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C6) is well-supported by the combination of binding data (showing affinity-dependent Bmax changes), functional data (showing ligand-specific effects on recycling), and modeling (explaining the mechanism). The data collectively support that intrinsic affinities encode different binding modes with distinct functional consequences.",
+    "result_type": "MAJOR"
+  }
+]

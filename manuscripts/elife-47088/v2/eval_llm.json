@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C68",
+      "C69"
+    ],
+    "result": "Antibiotic-resistant E. coli strains (38% of 23 strains) exhibited significant fitness costs in antibiotic-free medium, with aminoglycoside-resistant strains showing especially high costs. Fitness costs correlated with the number of resistance mutations and resistance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C68-C69 are well-supported by fitness measurements (Figure 1) and statistical analyses showing significant correlations between fitness costs, mutation numbers (\u03c1=-0.7488, p<0.0001), and resistance levels (\u03c1=-0.658, p=0.0006). The antibiotic-specific patterns are clearly demonstrated with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C70"
+    ],
+    "result": "After 60 days (480 generations) of evolution in antibiotic-free medium, 51% of evolved lines (T60) showed significantly improved fitness. Fitness recovery varied significantly across antibiotics, indicating adaptation was driven by the initial resistance mutation profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C70 are supported by fitness measurements across 138 evolved lines (Figure 2) with appropriate statistical testing (Kruskal-Wallis test, p<0.0001). The antibiotic-specific patterns are clearly demonstrated with sufficient replication (6 parallel lines per strain).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C54",
+      "C73",
+      "C74"
+    ],
+    "result": "Resistance declined in 54.8% of antibiotic-T60 line combinations, with 64.7% of T60 lines showing decline to at least one antibiotic. Resistance loss was antibiotic-specific: doxycycline and tetracycline resistance was frequently lost while aminoglycoside resistance was generally maintained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C31, C54, C73-C74 are well-supported by MIC measurements across 195 antibiotic-strain combinations (Figure 3) with appropriate statistical tests (Fisher's Exact tests with significant p-values). The antibiotic-specific patterns are clearly demonstrated with CLSI breakpoint categorization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C71",
+      "C72"
+    ],
+    "result": "Fitness compensation was associated with decline in antibiotic resistance levels. A significant negative correlation (\u03c1=-0.35, p=0.0031) was observed between relative fitness and resistance levels in T60 lines, with temporal coupling between fitness recovery and resistance decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-C33, C71-C72 are supported by statistical analyses (Spearman correlation, Mann-Whitney U-tests) and temporal data (Figure 4). The correlation is statistically significant and the temporal coupling is demonstrated in Figure 4\u2014figure supplement 1, though the correlation is moderate (\u03c1=-0.35).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C17",
+      "C34",
+      "C35",
+      "C36",
+      "C55"
+    ],
+    "result": "Phenotypic reversion to antibiotic sensitivity occurred through compensatory mutations rather than molecular reversion. Whole-genome sequencing of 15 T60 strains revealed no reversion of original resistance mutations, but identified 43 new mutational events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C17, C34-C36, C55 are supported by whole-genome sequencing data showing absence of reversion mutations and presence of 43 new mutations (C37). The conclusion that compensatory mutations drive phenotypic reversion is well-supported by the genomic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C52"
+    ],
+    "result": "Whole-genome sequencing identified 43 independent mutational events (16 SNPs, 16 deletions, 13 insertions) in T60 strains. Several mutations affected functionally-related transcriptional regulatory proteins involved in anti-drug defense and stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C52 are supported by whole-genome sequencing data (Supplementary file 1) with appropriate bioinformatics analysis using Breseq. The functional categorization is supported by citations to prior research on gene functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C44"
+    ],
+    "result": "A compensatory mutation in the marR promoter (marR*) exhibited epistatic effects: it increased fitness by 4.4% in the antibiotic-resistant T0 strain but reduced wild-type fitness, demonstrating background-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C44 are supported by fitness measurements of engineered strains (Figure 5A) showing significant epistatic interactions. The genetic engineering approach using MAGE provides strong evidence for the causal role of marR* in fitness compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C45",
+      "C59"
+    ],
+    "result": "The marR* compensatory mutation caused loss of resistance to multiple antibiotics and restored membrane permeability to wild-type levels. Introduction of marR* into the T0 strain recapitulated the resistance loss phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C45, C59 are supported by MIC measurements (Figure 5B) and membrane permeability assays (Figure 5C) of engineered strains. The causal relationship is demonstrated through genetic reconstruction, though the mechanistic explanation involves some speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The marR* mutation restored membrane permeability of the resistant T0 strain to wild-type levels. The T0 strain showed exceptionally low Hoechst dye accumulation, while T0+marR* displayed 166% larger membrane permeability compared to T0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C75-C78 are supported by Hoechst 33342 accumulation assays (Figure 5C) with appropriate positive controls (CCCP treatment) and statistical testing (Tukey's post-hoc tests, p<0.0001). The assay is well-established for measuring membrane permeability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "Similar epistatic patterns were observed for a compensatory mutation in envZ, showing fitness improvement in resistant backgrounds but fitness costs in wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by fitness and MIC measurements of engineered strains with envZ mutations (Figure 5\u2014figure supplement 2). This provides independent validation of the epistatic compensation mechanism observed with marR*.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Compensatory mutations themselves have associated fitness costs in wild-type backgrounds, preventing antibiotic-resistant bacteria from reaching full fitness of sensitive variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by the observation that compensatory mutations (marR*, envZ*) reduce fitness in wild-type backgrounds (C40, C46). This inference is logical and supported by the experimental data showing background-dependent fitness effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C65"
+    ],
+    "result": "Restricting antimicrobial usage could be a useful policy for controlling multidrug-resistant bacteria, but effectiveness is antibiotic-specific based on differential patterns of resistance loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C60, C65 are supported by the antibiotic-specific patterns of resistance loss demonstrated throughout the study (C4, C29-C30). The policy recommendation is appropriately qualified and based on experimental evidence, though extrapolation to clinical settings requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Laboratory findings on ciprofloxacin resistance loss (66% of populations) align with clinical observations from Finland showing decreased quinolone resistance following reduced antibiotic consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by MIC data from the current study (Figure 3D) and citation to clinical observations (Gottesman et al., 2009). The concordance between laboratory and clinical data strengthens the translational relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Laboratory findings on trimethoprim resistance maintenance align with clinical observations from Sweden. All five trimethoprim-resistant strains with folA mutations maintained resistance in antibiotic-free medium, consistent with clinical persistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by MIC data from the current study and citation to clinical observations (Brolund et al., 2010). The concordance between laboratory and clinical data for trimethoprim provides additional validation of the study's translational relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MarR is a transcriptional regulatory protein controlling the mar regulon in E. coli, which regulates genes involved in antibiotic resistance including the AcrA/AcrB/TolC multidrug-efflux system. MarR is regularly mutated in response to antibiotic stress in clinical and laboratory settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 represent established knowledge about the mar regulon supported by citations to prior research (Praski Alzrigat et al., 2017) and illustrated in Figure 6. This background information is well-established and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Fitness estimated by area under the growth curve (AUGC) showed significant positive correlations with growth rate (r=0.41) and yield (r=0.78), with AUGC being more robust than yield (median CV 8.3% vs 14.1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by statistical analyses validating the fitness measurement approach. The correlations are statistically significant and the robustness comparison is quantitative, providing methodological validation for the fitness measurements used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establishing that antibiotic resistance typically induces fitness costs, can be mitigated by compensatory mutations, and that fitness costs correlate with clinical prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C10 represent established knowledge supported by citations to prior research. These background claims provide appropriate context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background claims about compensatory evolution, clinical observations of resistance dynamics, and limitations of prior laboratory studies focusing on single resistance mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14, C47-C51 represent established knowledge and prior observations supported by appropriate citations. These claims establish the rationale and novelty of studying multidrug-resistant strains but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Description of the 23 drug-resistant E. coli strains used in this study, which were derived from prior work and carry 2-13 mutations conferring up to 328-fold increases in MIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C20-C22 describe the experimental materials from prior work (L\u00e1z\u00e1r et al., 2014). These are appropriately cited and provide necessary context for the current study's experimental design.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The study recruited 53 healthy volunteers who completed an n-back working memory task during fMRI scanning. After exclusions, 51 participants were included in the final fMRI analysis (mean age 25.8 years, 30 male), with 48 of these also completing PET scans to measure striatal D2/3R availability using [11C]-(+)-PHNO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C117-C120 provide clear methodological details about participant recruitment, exclusions, and final sample sizes. The exclusion criteria are reasonable (imaging artifacts, non-performance), and the sample size is adequate for the multimodal imaging approach employed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Standard fMRI activation analysis revealed parametric activation in a widespread frontoparietal network and deactivation in ventromedial prefrontal cortex and posterior cingulate cortex with increasing working memory load. Within the striatum, activation extended primarily into the dorsal striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe expected fMRI activation patterns that are well-documented in the working memory literature. The findings are statistically significant (P < 0.05, whole-brain FWE corrected) and consistent with prior work (Owen et al., 2005; Dahlin et al., 2008), providing validation of the task paradigm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Increasing working memory load was associated with reduced functional connectivity within the default mode network (DMN), and this reduction was associated with poorer task performance. The DMN is characterized as a 'task negative network' that includes ventromedial prefrontal cortex and posterior cingulate cortex, while task positive networks (TPN) show increases in activity during working memory tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 report primary findings with statistical support (C3: t50 = -2.33, P = 0.02; correlation between DMN connectivity change and performance: rho = 0.45, P < 0.001). Claims C21-C26 provide established background knowledge supported by appropriate citations. The characterization of DMN and TPN is well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Lower striatal D2/3R availability, particularly in the caudate, was associated with greater task-induced reduction in DMN functional connectivity. Specifically, there was a positive correlation between caudate D2/3R availability and task-induced DMN connectivity change (rho = 0.45, P = 0.002), with similar but weaker relationships for accumbens and whole striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39-C44 present the core finding with robust statistical support. The correlation coefficients are reported with confidence intervals and appropriate degrees of freedom. The regional specificity (caudate > accumbens) is supported by statistical comparisons. However, the difference between DMN and TPN correlations was not statistically significant (C39-C41), which somewhat limits the specificity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C113"
+    ],
+    "result": "The relationship between striatal D2/3R availability (particularly caudate) and working memory performance was mediated by task-induced DMN connectivity changes. Participants with higher D2/3R availability showed less pronounced DMN connectivity decreases, which predicted more robust task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56-C58, C113 describe the mediation analysis results with statistical support (ACME = 0.03, P = 0.015 for caudate). The mediation framework is appropriate for testing the proposed mechanistic pathway. However, the observational nature of the study (acknowledged in C101) limits causal inference, and the direct effect of D2/3R on performance was not significant (C6: rp = 0.26, P = 0.08), suggesting the relationship operates primarily through the mediator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The relationship between D2/3R availability and DMN connectivity was specific to task-induced changes rather than whole-session connectivity. Additionally, D2/3R availability in the substantia nigra/ventral tegmental area (SN/VTA) showed no relationship with cortical network connectivity changes, and this correlation was significantly weaker than that with caudate D2/3R.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 provide important specificity controls. The null findings for whole-session connectivity (C45) and SN/VTA (C46) strengthen the interpretation that task-induced DMN changes are specifically related to striatal (particularly caudate) D2/3R. The statistical comparison (C48: z = 2.54, P = 0.01) supports regional specificity. Claim C47 provides established tracer properties from prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C85"
+    ],
+    "result": "There was no evidence for a relationship between striatal D2/3R availability and task-induced BOLD activation using either mass-univariate or multivariate (PLS) approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C85 report null findings from complementary analytical approaches (mass-univariate and PLS). While null results are inherently difficult to interpret, the use of multiple methods strengthens confidence. However, the absence of effect size estimates or power calculations limits interpretation of whether this represents true absence of effect or insufficient sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Using the d' discriminability index as an alternative performance metric, there was no relationship between task-induced DMN connectivity change and performance, nor between D2/3R availability and performance in any striatal sub-region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 report null findings with an alternative performance metric. The authors note that d' is insensitive to reaction time differences and cannot differentiate certain response types, which may explain the discrepancy with pRT results. However, this raises questions about which performance metric more accurately captures working memory function, and whether the primary findings are specific to the pRT metric. Additional validation would strengthen confidence in the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The [11C]-(+)-PHNO tracer has regional differences in D2R:D3R binding, with negligible D3R contribution in dorsal caudate, 20-25% in ventral striatum, and approaching 100% in SN/VTA. The striatum is functionally organized with dorsal regions (caudate) supporting working memory and ventral regions (accumbens) supporting limbic/reward processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C67-C70 provide essential background on tracer properties and striatal functional organization, all supported by appropriate citations to prior literature. This information is critical for interpreting the regional specificity findings. However, the ambiguity in tracer binding (C68-C70) complicates interpretation of whether findings reflect D2R, D3R, or combined D2/3R effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "D2R and D3R may have different effects on cognitive processes, and the relationship between D2/3R signaling and cognition may differ across the lifespan, as evidenced by a study in older adults finding no relationship between caudate D2R availability and working memory performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 provide important context from prior literature. C71 is supported by citations showing differential D2R/D3R effects. C72 accurately cites a prior study in older adults. C73 is a reasonable speculation based on comparing the current young adult sample with prior older adult findings, though direct comparison would require within-study age variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Animal studies show that striatal D2R overexpression causes deficits in PFC inhibitory signaling, reduced VTA dopamine neuron activity, reduced VTA-PFC synchrony during working memory, and impaired working memory performance. These findings suggest that striatal D2/3Rs may influence cortical activity and working memory through effects on mesocortical dopaminergic projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19, C76-C83 accurately summarize prior animal research with appropriate citations. The mechanistic interpretation (C83) is appropriately speculative. However, C84 correctly notes uncertainty in translating animal model findings (D2R overexpression) to natural variation in healthy humans, which is an important limitation for mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Prior research shows heterogeneous relationships between dopamine measures and cognitive performance, potentially reflecting inverted-U relationships where both excess and deficient D2/3R signaling impair performance. Different dopamine receptor subtypes (D1R vs D2R) and measures (synthesis capacity vs receptor availability) show distinct relationships with cortical activity and cognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C98 provide comprehensive context from prior literature, all supported by appropriate citations. The discussion of heterogeneous findings (C88) and inverted-U relationships (C89-C90) is important for interpreting the current linear findings in healthy volunteers. Claims C91-C92 offer reasonable speculation about how findings in healthy volunteers might differ from clinical populations, though this remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The relationship between task-induced DMN connectivity decreases and impaired performance may reflect recent evidence that the DMN is activated during conditions requiring large attentional shifts, and failure to recruit the DMN may hamper cognitively demanding selection/deselection of representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 offer a speculative reinterpretation of DMN function based on recent literature. While the citations support that DMN can be task-positive under certain conditions, this interpretation seems somewhat at odds with the observed pattern where greater DMN connectivity reduction (i.e., less DMN activity) is associated with worse performance. The mechanistic explanation requires additional empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study has important limitations: causal inferences cannot be made from observational data, unmeasured variables may confound the relationships, and the [11C]-(+)-PHNO signal reflects both receptor density and endogenous dopamine levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 appropriately acknowledge key limitations. C101 correctly notes that observational designs cannot establish causality, which is critical for interpreting the mediation analysis. C102 acknowledges potential confounding. C103 identifies an inherent ambiguity in PET tracer interpretation. These are honest and important limitations that appropriately temper interpretation of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The findings have potential clinical relevance for understanding cognitive deficits in aging (associated with reduced D2R availability) and neuropsychiatric disorders like schizophrenia (elevated dopamine, abnormal DMN connectivity, working memory deficits) and Parkinson's disease. However, whether relationships are similar or show inverted-U patterns in clinical populations remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C111, C114-C116 discuss clinical implications with appropriate citations. The speculation about clinical relevance is reasonable given the established links between dopamine dysfunction and cognitive impairment in these conditions. However, C111 appropriately notes that the relationship in clinical populations remains an open question, and the speculation about inverted-U relationships (C91, C111) requires empirical testing.",
+    "result_type": "MINOR"
+  }
+]

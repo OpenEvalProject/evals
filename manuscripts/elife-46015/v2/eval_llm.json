@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Neurons in dorsal motor cortex showed significant modulation during speech production in both participants, with active neurons distributed throughout the sampled area and most modulating to multiple syllables, suggesting a broadly distributed coding scheme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 provide converging evidence: statistical testing (C2) demonstrates significant modulation (p<0.05) in the majority of electrodes during speech, spatial analysis (C3) shows distributed activation across the arrays, quantification (C4) confirms multi-syllable responses, and the inference (C5) of distributed coding is well-supported by the preceding observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Neural modulation was significantly stronger during speech production compared to after hearing auditory prompts, with firing rate changes 2.12-6.71 times higher after the go cue across all datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 provide quantitative evidence that neural activity is motor-related rather than purely sensory. The consistent pattern across both participants and both task types (syllables and words), with specific fold-change measurements, strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Neural population activity showed phonemic structure, with phonemes grouped by place of articulation showing significantly more similar neural patterns within groups than between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by statistical testing (p<0.001, shuffle test) on a dataset with 41 phonemes. The use of appropriate controls and the highly significant p-value provide strong evidence for phonemic organization in the neural representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The vast majority of electrodes and neurons active during speech syllables were also active during non-speech orofacial movements (99 of 120 electrodes, 24 of 25 neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 provide direct counts from experimental data showing extensive overlap between speech and non-speech orofacial movement representations. The high proportions (>80% for electrodes, 96% for neurons) provide strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Weak but significant firing rate correlations with breathing were observed, but modulation for speaking was substantially stronger than for both unattended (~4.7x) and instructed (~2.6x) breathing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 establish that while breathing-related activity exists, it is much weaker than speech-related activity. The quantitative comparisons and statistical significance testing support the conclusion that breathing is not the primary driver of the observed neural modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Modulation for attempted arm movements was approximately 2.8 times stronger than for speaking and orofacial movements in participant T5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by quantitative comparison in the T5-comparisons dataset. This provides important context about the relative strength of different motor representations in this cortical area.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Syllables and words could be decoded from single-trial neural activity with high accuracy (54.7-84.6%) during speech production, but classification was only marginally better than chance during the auditory prompt period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 demonstrate successful decoding with appropriate cross-validation and shuffle controls. The contrast between high accuracy during speech and near-chance accuracy during the prompt period (C22) strengthens the interpretation that the signals reflect motor production rather than sensory processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Decoding mistakes and neural representations followed phonetic similarities, consistent with previous ECoG studies, with neural correlate similarities potentially reflecting similarities in underlying articulator movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe patterns in the decoding results that are consistent with prior literature (C56) and provide mechanistic interpretation (C57-C58). The observations are well-documented in the confusion matrices and low-dimensional visualizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A condition-invariant signal was observed at movement initiation across all six datasets, with the largest dPCA component being 87.3-98.7% condition-invariant and showing similar temporal dynamics across different spoken words.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide quantitative evidence from dPCA analysis across multiple datasets. The consistency across six independent datasets (C27) and the high percentages of condition-invariance (C23-C24) strongly support this finding, though T8 showed less clean invariance (C26).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Rotatory dynamics during speech production were observed in participant T5 but not T8, with statistical testing confirming significance in T5 and specificity to the speech production epoch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 document rotatory dynamics using jPCA analysis with appropriate statistical controls (tensor maximum entropy method). The finding is significant in T5 (C29) but not T8 (C30), which the authors attribute to signal quality differences. The control analysis (C31) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Neural state rotations occurred after the condition-invariant translation, with the CIS1 and jPCA dimensions being largely orthogonal, though the temporal relationship differed somewhat from monkey arm reaching data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe the temporal and geometric relationships between the two dynamical motifs. The observations are supported by quantitative measurements and appropriate comparisons to prior work (C60), though differences from previous studies are noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Speech-related activity in dorsal 'hand knob' motor cortex has not been previously reported, though imaging meta-analyses occasionally show responses in this area, and prior studies have reported hand-mouth interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 accurately characterize the novelty of the finding (C32) while acknowledging hints in prior literature (C33-C34). The citations are appropriate and the characterization of prior work appears accurate, though the novelty claim depends on the specific definition of 'explicitly reported'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The presence of neurons responding to both speech and non-speech orofacial movements in dorsal motor cortex indicates that sensorimotor maps are more widespread and overlapping than previously thought, challenging the conventional motor homunculus model at the single-neuron scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 draw appropriate inferences from the experimental findings (C2-C13) in the context of established knowledge about motor cortex organization. The challenge to the homunculus model is well-supported by the data showing mixed selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Spoken words and syllables could be decoded from single trials, demonstrating the potential of intracortical recordings for brain-computer interfaces to restore speech.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by the decoding results (C18-C21). However, the inference about BCI potential (C39) is somewhat speculative as it extrapolates from offline decoding in able-bodied speakers to potential clinical applications, which the authors acknowledge requires future work (C93-C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Two neural population dynamics features previously reported for arm movements (condition-invariant component and rotatory dynamics) were present during speaking, suggesting common neural dynamical motifs may underlie movement of arm and speech articulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 summarize the main population dynamics findings (detailed in C23-C31). The suggestion of common motifs (C42) is appropriately framed as speculative, though it is supported by the empirical observations of similar dynamics in both domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Detailed participant demographics, clinical characteristics, electrode placement information, and experimental timeline are provided for both participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54 provide essential methodological details about participants, electrode placement, and timing. These are straightforward factual statements supported by clinical records and surgical documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Dorsal motor cortex may participate in neural computations underlying speech production, with previous studies potentially missing single-neuron modulation due to coarser ECoG resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 provide reasonable interpretations of the findings. The suggestion about why prior studies missed this (C63) is speculative but plausible given the known differences in spatial resolution between recording methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The motor homunculus is overly simplistic, though it is recognized that motor cortex does not follow rigid somatotopy and Penfield intended it as a simplified summary, with current views still featuring dorsal-to-ventral body region separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 accurately characterize the historical and current understanding of motor cortex organization. The citations are appropriate and the characterization of how the present findings challenge existing models is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The observed neural overlap between hand and speech articulators may reflect either interlocked speech-manual systems or distributed whole-body coding, with emerging evidence suggesting broad body representation in dorsal motor cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C72 present two alternative interpretations of the findings. While both are plausible and supported by citations to relevant theories, the data presented cannot definitively distinguish between these hypotheses. The emerging evidence cited (C70) is from ongoing work, limiting assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The observed neural activity reflects movements of the speech articulators (tongue, lips, jaw, larynx) based on multiple lines of evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 synthesizes evidence from multiple findings (C6-C11, C12-C13) to support the interpretation that the activity is motor-related. The inference is well-supported by the convergence of evidence, though direct kinematic measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Cortical remapping due to tetraplegia is unlikely to explain the results based on multiple lines of evidence, though definitive resolution would require recordings from able-bodied individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 present a thorough argument against the remapping hypothesis, citing multiple lines of evidence including preserved arm/hand representation (C75-C76) and recent literature on limited remapping (C77-C80). The acknowledgment of uncertainty (C81) is appropriate given the limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Dorsal motor cortex is not necessary for speech production based on lesion studies, but may play a supporting role or reflect efference copy, consistent with theories about mixed selectivity enabling complex computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 appropriately interpret the findings in light of lesion evidence (C82-C83) and propose plausible functional roles (C84-C85). The theoretical framework (C86) is well-cited, though the specific functional role remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Intracortical recordings show promise for speech BCIs, with results comparing favorably to ECoG despite suboptimal recording locations, and potential for improvement with ventral motor cortex placement and higher-density arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by the decoding results (C18-C21) and appropriate comparisons to prior work (C89). The suggestions for improvement (C90-C92) are reasonable extrapolations, though they remain speculative until tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The results are a first step in establishing speech BCI feasibility, with future studies needed to assess broader phoneme discrimination, decoding without overt speech, continuous speech synthesis, and performance variability across participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 appropriately acknowledge limitations and identify necessary future work. The observation of worse performance in T8 (C97) and the call for additional participants (C98) demonstrate appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Two motor cortical population dynamical motifs from arm movements (condition-invariant change at initiation and rotatory dynamics during generation) were significant features of speech activity, observed in both participants for the former and one participant for the latter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 accurately summarize the population dynamics findings. The observation in both participants for condition-invariance (C100) and one participant for rotatory dynamics (C101) is consistent with the detailed analyses (C23-C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Neural state rotations may be suited for generating muscle commands for speech articulator movements, potentially indicating a conserved computational mechanism, though the causal role and relationship to other speech areas remains unresolved and requires future research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C109 present speculative interpretations (C102-C103) with appropriate caveats (C104-C106) and identify necessary future work (C107-C109). While the speculation is reasonable and well-grounded in theory, the causal role and functional significance remain uncertain.",
+    "result_type": "MAJOR"
+  }
+]

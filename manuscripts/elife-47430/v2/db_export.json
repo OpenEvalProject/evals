@@ -1,0 +1,1902 @@
+{
+  "submission": {
+    "id": "c4e8ec2d-3bf1-473e-bc37-88372d1fde98",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:06:52.675943Z",
+    "updated_at": "2025-12-02T14:06:52.675943Z"
+  },
+  "content": [
+    {
+      "id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "submission_id": "c4e8ec2d-3bf1-473e-bc37-88372d1fde98",
+      "content_type": "manuscript",
+      "content_text": "# TLE3 loss confers AR inhibitor resistance by facilitating GR-mediated human prostate cancer cell growth\n\n## Authors\n\n- Sander AL Palit<sup>1</sup> ([ORCID: 0000-0003-2487-4311](https://orcid.org/0000-0003-2487-4311)) \u2020\n- Daniel Vis<sup>1</sup>\n- Suzan Stelloo<sup>3</sup>\n- Cor Lieftink<sup>1</sup>\n- Stefan Prekovic<sup>3</sup>\n- Elise Bekers<sup>4</sup>\n- Ingrid Hofland<sup>5</sup>\n- Ton\u0107i \u0160u\u0161ti\u0107<sup>1</sup>\n- Liesanne Wolters<sup>1</sup>\n- Roderick Beijersbergen<sup>1</sup>\n- Andries M Bergman<sup>6</sup>\n- Bal\u00e1zs Gy\u0151rffy<sup>7</sup>\n- Lodewyk FA Wessels<sup>1</sup>\n- Wilbert Zwart<sup>3</sup> ([ORCID: 0000-0002-9823-7289](https://orcid.org/0000-0002-9823-7289))\n- Michiel S van der Heijden<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Molecular Carcinogenesis Netherlands Cancer Institute Amsterdam Netherlands\n2. Division of Molecular Carcinogenesis, Oncode Institute Netherlands Cancer Institute Amsterdam Netherlands\n3. Division of Oncogenomics, Oncode Institute Netherlands Cancer Institute Amsterdam Netherlands\n4. Division of Pathology Netherlands Cancer Institute Amsterdam Netherlands\n5. Core Facility Molecular Pathology & Biobanking Netherlands Cancer Institute Amsterdam Netherlands\n6. Department of Medical Oncology Netherlands Cancer Institute Amsterdam Netherlands\n7. Department of Bioinformatics Semmelweis University Budapest Hungary\n8. TTK Cancer Biomarker Research Group Institute of Enzymology Budapest Hungary\n9. Department of Pediatrics Semmelweis University Budapest Hungary\n10. Laboratory of Chemical Biology and Institute for Complex Molecular Systems, Department of Biomedical Engineering Eindhoven University of Technology Eindhoven Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nAndrogen receptor (AR) inhibitors represent the mainstay of prostate cancer treatment. In a genome-wide CRISPR-Cas9 screen using LNCaP prostate cancer cells, loss of co-repressor TLE3 conferred resistance to AR antagonists apalutamide and enzalutamide. Genes differentially expressed upon TLE3 loss share AR as the top transcriptional regulator, and TLE3 loss rescued the expression of a subset of androgen-responsive genes upon enzalutamide treatment. GR expression was strongly upregulated upon AR inhibition in a TLE3-negative background. This was consistent with binding of TLE3 and AR at the GR locus. Furthermore, GR binding was observed proximal to TLE3/AR-shared genes. GR inhibition resensitized TLE3KO cells to enzalutamide. Analyses of patient samples revealed an association between TLE3 and GR levels that reflected our findings in LNCaP cells, of which the clinical relevance is yet to be determined. Together, our findings reveal a mechanistic link between TLE3 and GR-mediated resistance to AR inhibitors in human prostate cancer.\n\n## Introduction\n\nProstate cancer is the second most common cancer and the fifth leading cause of cancer-related death in men worldwide (Torre et al., 2015). Deregulated androgen receptor (AR) signaling is a major driver of prostate cancer (Taylor et al., 2010). Consequently, androgen deprivation therapy (ADT) is used to treat locally advanced and metastatic prostate cancer, achieving remission in most patients. However, despite castrate-levels of androgens in the serum, the disease inevitably progresses to a castration-resistant state (Perlmutter and Lepor, 2007). AR signaling remains a pivotal driver in castration-resistant prostate cancer (CRPC), which is illustrated by the efficacy of AR-directed drugs such as abiraterone and enzalutamide. Unfortunately, patients develop resistance to these drugs and invariably succumb to the disease (Clegg et al., 2012; Beer et al., 2014; Chi et al., 2019).\n\nSeveral resistance mechanisms to AR inhibitors have been proposed, including mutations in AR (Korpal et al., 2013; Joseph et al., 2013; Prekovic et al., 2016; Prekovic et al., 2018) and expression of splice variants (Li et al., 2013; Antonarakis et al., 2014; Culig, 2017). For example, the F877L missense mutation in AR was shown to confer resistance to enzalutamide and apalutamide (Korpal et al., 2013; Joseph et al., 2013; Balbas et al., 2013). Upregulation of the glucocorticoid receptor (GR, gene symbol NR3C1) was shown to be associated with clinical resistance to enzalutamide (Arora et al., 2013). Using the preclinical model LREX (LNCaP/AR Resistant to Enzalutamide Xenograft derived), it was shown that AR and GR have overlapping cistromes and transcriptomes, allowing GR to drive enzalutamide-resistant growth by regulating expression of a subset of AR target genes. (Arora et al., 2013; Shah et al., 2017). Significant overlap between AR and GR cistromes and transcription programs in prostate cancer cells was also described by others (Sahu et al., 2013). GR upregulation was found to occur through abrogation of the repressive function of AR and EZH2-mediated methylation of the GR enhancer (Shah et al., 2017). How exactly GR deregulation is mediated is incompletely understood. Combined, these studies have provided valuable insights into the molecular mechanisms underlying enzalutamide resistance in prostate cancer. However, to the best of our knowledge, a genome-scale approach aimed at identifying novel regulators of AR inhibitor sensitivity has hitherto not been reported. Loss-of-function genetic screens facilitate the unbiased identification of genes that have a central role in biological processes in various genetic and pharmacological backgrounds. Consequently, large-scale gene perturbation experiments are a powerful tool to identify novel drug targets and biomarkers of drug response (Mullenders and Bernards, 2009). Using this technology, we aimed to discover genes not previously implicated in enzalutamide resistance. Through a genome-wide CRISPR-Cas9 screen we identified transducin-like enhancer of split 3 (TLE3) as a modulator of AR inhibitor sensitivity that, upon loss, confers resistance to enzalutamide in prostate cancer cells.\n\nThe well-conserved TLE protein family of transcriptional co-repressors is expressed in the nucleus of metazoans and regulate various biological processes including development, cell metabolism, growth and differentiation. At the chromatin, TLE protein family members maintain a silenced chromatin structure (Agarwal et al., 2015; Chen and Courey, 2000; Cinnamon and Paroush, 2008). TLE3 is deregulated in various cancers including hormone-driven breast cancer (Jangal et al., 2014), colorectal cancer (Yang et al., 2016) and prostate cancer (Nakaya et al., 2007). Here, we report an unexpected role for TLE3 in regulating AR-mediated repression of the GR locus affecting AR inhibitor sensitivity in prostate cancer cells.\n\n## Results\n\n### A genome-wide CRISPR-Cas9 resistance screen identifies TLE3 as a novel regulator of AR inhibitor sensitivity\n\nThe androgen-dependent prostate cancer cell line LNCaP is sensitive to AR inhibitors such as apalutamide (Figure 1\u2014figure supplement 1A) and enzalutamide (Figure 1\u2014figure supplement 1B), making it a model system well-suited for the unbiased discovery of novel regulators of AR inhibitor sensitivity in prostate cancer cells. LNCaP cells were infected with a lentiviral pool containing the genome-wide scale CRISPR Knock-Out (GeCKO) half-library A (Sanjana et al., 2014), targeting 19052 genes with 3 gRNAs per gene. Infected cells were cultured in the presence of vehicle or 2 \u03bcM of the AR inhibitor apalutamide for 6 weeks to allow selection of resistant cells. Subsequently, barcodes were recovered from the cells and submitted for massively parallel sequencing (Figure 1A and Figure 1\u2014source data 1). DESeq2 (Love et al., 2014) analysis (Figure 1\u2014source data 2) and MAGeCK (Li et al., 2014) analysis (Figure 1\u2014source data 3) both identified TLE3 as the top hit with all three gRNAs enriched in cells treated with apalutamide compared to untreated cells (Figure 1B and Figure 1\u2014figure supplement 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig1-v2.jpg)\n\n**Figure 1.:** (A) Overview of the genome-wide CRISPR-Cas9 resistance screen. (B) Representation of the relative abundance of the gRNA barcode sequences of the CRISPR-Cas9 resistance screen. The y-axis shows the enrichment (relative abundance of apalutamide treated/untreated) and the x-axis shows the average sequence reads of the untreated samples. (C) Long-term growth assay (14 days) showing the functional phenotype of LNCaP cells harboring TLE3 knockout or knockdown vectors, cultured in the presence of vehicle or enzalutamide. Cells harboring a non-targeting sgRNA (sgNT) or scrambled shRNA (shSCR) were used as a control. (D) Quantitative analysis of live cell proliferation in real-time for control cells and TLE3KO cells in the absence or presence of enzalutamide. (E) Western blot showing TLE3 protein levels for control cells and TLE3KO cells shown in C and D.\u00a0Vinculin was used as a loading control.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) Long-term growth assay of LNCaP cells treated with apalutamide or enzalutamide for 14 days.\u00a0Enzalutamide-resistant\u00a022rv1 cells were used as control. (C) MAGeCK analysis showing hits obtained from the CRISPR-Cas9 resistance screen. (D) TLE3 mRNA expression levels in LNCaP cells harboring shRNAs targeting TLE3. Cells with scrambled shRNA (shSCR) were used as a control. (E) Long-term growth assays showing the functional phenotype for control and TLE3KO LNCaP cells cultured in the presence of vehicle or apalutamide at indicated concentrations for 14 days. (F\u2013G) Long-term growth assays showing the functional phenotypes for indicated cell lines carrying control or TLE3-targeting gRNAs , cultured in the presence of vehicle or enzalutamide at indicated concentrations. (H) Western blot analysis showing TLE3 expression levels for the cells shown in F and G. GAPDH was used as a loading control.\n\nThe screen was performed using apalutamide (SPARTAN Investigators et al., 2018), which is a next-generation AR inhibitor structurally similar to enzalutamide. Subsequently, we validated the screen hit TLE3 using both compounds. Abrogation of TLE3 expression using independent single guide RNAs (sgRNAs), as well as short hairpin RNAs (shRNAs) targeting TLE3, conferred resistance to both enzalutamide and apalutamide in LNCaP cells in long-term growth assays (14 days) with drug concentrations up to 8 \u03bcM (Figure 1C\u2013E and Figure 1\u2014figure supplement 1D and E). Because enzalutamide is the current standard used in the clinic for the treatment of castration-resistant prostate cancer (CRPC), we used this drug for subsequent experiments. As prostate cancer is considered a heterogenous disease, for which only a few cell lines are available of which a subset is AR-driven, we next tested whether drug resistance as a result of TLE3\u00a0loss could be confirmed in two other prostate cancer cell lines; CWR-R1 and LAPC4. As TLE3 loss did not confer drug resistance in these two cell lines (Figure 1\u2014figure supplement 1F\u2013H), we conclude a context-dependency of this mode of resistance that is not commonly observed in all model systems.\n\n### Loss of TLE3 leads to persistent expression of a subset of androgen-responsive genes in the presence of enzalutamide\n\nTLE3 is known to be a negative regulator of the Wnt pathway. Analysis of active \u00df-catenin levels and expression of the bona fide Wnt target gene AXIN2 in TLE3KO cells treated with vehicle or enzalutamide revealed no changes compared to control cells (Figure 2\u2014figure supplement 1A and B), indicating Wnt signaling is not altered in this context.\n\nTo investigate the transcriptional consequences of TLE3 abrogation in LNCaP prostate cancer cells, the transcriptomes of control and TLE3KO cells were compared (Figure 2\u2014source data 1 and GSE130246). Because TLE3 is a transcription co-factor, we analyzed differentially expressed genes for transcription factor enrichment to explore which pathways could be involved in enzalutamide resistance conferred by TLE3 loss. Enrichment analysis revealed AR as the top transcription factor associated with genes differentially expressed in control cells versus TLE3KO cells in vehicle condition (Figure 2\u2014figure supplement 1C). Genes differentially expressed in control cells versus TLE3KO cells, cultured in the presence of enzalutamide, also shared AR as the top regulator (Figure 2A). An overview of the most differentially expressed genes in control cells versus TLE3KO cells treated with enzalutamide is shown in Figure 2B. We validated expression for several of these genes both in the absence and presence of enzalutamide and found that loss of TLE3 rescued expression of these genes in cells exposed to enzalutamide (Figure 2C and Figure 2\u2014figure supplement 1D). We next asked the question whether general AR signaling is restored upon TLE3 loss in enzalutamide-treated cells. To test this, we performed gene set enrichment analysis (GSEA) selectively focusing on AR-responsive genesets. Overall, AR signaling was maintained in the presence of enzalutamide in TLE3KO cells but not in control cells, implying a rescue of AR signaling despite enzalutamide treatment (Figure 2D and E and Figure 2\u2014figure supplement 1E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig2-v2.jpg)\n\n**Figure 2.:** (A) Enrichment analysis for transcription factors associated with genes differentially expressed in enzalutamide-treated control cells compared to TLE3KO cells. (B) Overview of the fold changes in gene expression of the most differentially expressed genes in control cells versus TLE3KO cells treated with enzalutamide. (C) Validation (qPCR) of mRNA expression levels for several genes shown in B. Bars represent average data from at least three independent experiments\u00a0\u00b1\u00a0SEM. P-values are indicated with ***p<0.001, **p<0.01 and *p<0.05 (two-tailed t-test). (D\u2013E) GSEA for genes differentially expressed in control cells compared to TLE3KO cells, treated with 10 \u03bcM enzalutamide using indicated gene sets.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Western blot results showing expression levels of active \u00df-catenin, TLE3 and Vinculin (loading control) in indicated cell lines cultured with and without enzalutamide.\u00a0(B) Expression levels of AXIN2 as determined by qPCR in control and TLE3KO cells cultured in the presence of absence enzalutamide. (C) Top five transcription factors associated with genes differentially expressed in control versus TLE3KO cells in the untreated condition. (D) Validation of several genes most differentially expressed in TLE3KO cells compared to control cells cultured in the presence of enzalutamide. (E) GSEA for genes differentially expressed in control versus TLE3KO cells treated with enzalutamide, using the indicated geneset. (F) Western blot analysis for TLE3 expression levels in LNCaP cells cultured as indicated for 5 days. GAPDH was used as a loading control. (G) Western blot showing TLE3 protein expression levels in LAPC4 and CWR-R1 cells cultured with indicated drugs for 5 days. (H) Snapshot of coverage profiles for TLE3 and AR binding at the TLE3 locus under indicated conditions. (I) RNA-seq data showing TLE3 mRNA levels of LNCaP cells treated with vehicle or R1881 for 24 hr (time course). (J) RT-qPCR analysis showing AR expression in untreated control and TLE3KO cells.\n\nBased on its role in the regulation of AR target genes and AR inhibitor resistance, we hypothesized that TLE3 itself may be androgen-regulated. Indeed, western blot analysis showed that in wild-type (WT) cells, the expression of TLE3 is induced by enzalutamide (Figure 2\u2014figure supplement 1F). Conversely, stimulation with the synthetic androgen R1881 led to a decrease in TLE3 protein levels (Figure 2\u2014figure supplement 1F). Hormone manipulation led to similar changes in LAPC4 and CWR-R1 cells, although to a much lesser extent (Figure 2\u2014figure supplement 1G). Analysis of publicly available ChIP-seq data (Stelloo et al., 2018) revealed binding of both TLE3 and AR at enhancer sites of the TLE3 gene (Figure 2\u2014figure supplement 1H) suggesting that these transcription factors regulate TLE3 expression, indicating a feedback loop controlling TLE3 transcription. This is supported by analysis of publicly available RNA-seq data\u00a0(Massie et al., 2011 ) showing that TLE3 mRNA levels are downregulated over time in LNCaP cells that are treated with R1881 (Figure 2\u2014figure supplement 1I). Finally, we also investigated the effect of TLE3 loss on AR gene expression using qPCR and found no differential expression for AR mRNA between control and TLE3KO cells (Figure 2\u2014figure supplement 1J).\n\n### TLE3 localizes at AR binding sites proximal to genes differentially expressed in TLE3KO cells compared to control cells\n\nGene expression profiling of TLE3KO cells revealed persistent expression of androgen-responsive genes in the presence of enzalutamide. Recently, protein interactome profiling of AR revealed that TLE3 binds together with FOXA1 at androgen response elements (AREs) (Stelloo et al., 2018). We next analyzed publicly available ChIP-seq data (Stelloo et al., 2018) for the genome-wide binding profiles of AR, TLE3 and FOXA1 in LNCaP cells to explore the role of these transcription factors in the direct regulation of genes differentially expressed in control cells compared to TLE3KO cells under enzalutamide treatment. Genes showing the strongest log2 fold-change expression in TLE3KO compared to control cells were indeed bound by TLE3 (Figure 3\u2014figure supplement 1A). In Figure 3A, the coverage profiles for TLE3 and AR are shown at the loci of two genes (RND3 and GNAI1) whose expression was found to correlate with TLE3KO and enzalutamide treatment (Figure 3A and Figure 2B and C). Genome-wide analysis of the binding patterns for AR, TLE3 and FOXA1 at the regulatory elements of differentially expressed genes extended our findings more broadly showing overlap for these proteins at these sites with markedly similar binding profiles observed for TLE3 and FOXA1 (Figure 3B). We found that co-binding of TLE3 and AR was enriched at loci of the differentially expressed geneset when compared to a random geneset (Figure 3C). Furthermore, significantly enriched sequence motifs at TLE3 binding sites of differentially expressed genes included members of the forkhead box transcription factor family (including FOXA1), AR, HOXB13 and the glucocorticoid receptor (GR) (Supplementary file 1). Since TLE3 acts as a repressor, the chromatin binding profiles for TLE3, FOXA1 and AR substantiate the expression data indicating that loss of TLE3 alters expression of androgen-responsive genes towards an active-AR-like profile in spite of anti-hormonal treatment, thereby allowing continued growth when these cells are exposed to enzalutamide.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig3-v2.jpg)\n\n**Figure 3.:** (A) Coverage profiles for TLE3 and AR at the loci of two genes (RND3 and GNAI1). (B) Heatmap of AR, TLE3 and FOXA1. (co-)binding at genes differentially expressed in TLE3KO compared to control cells treated with enzalutamide are shown. The binding of AR, TLE3 and FOXA1 at these sites is shown for androgen-depleted or R1881-stimulated (4 hr) conditions in parental LNCaP cells. (C) ChIP-seq peak enrichment near the Transcription Start Sites (TSS) of differentially expressed (DE) genes and a random set of genes. The fraction of genes with a peak for TLE3, AR or both transcription factors at indicated distance from the TSS is shown for both genesets.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Boxplot showing the Log2 fold change expression of genes associated with TLE3KO and enzalutamide treatment. Genes have been grouped based on TLE3 binding status at the loci of these genes; no TLE3 binding (black) and TLE3 binding (orange).\n\n### Enzalutamide resistance in TLE3KO cells occurs through GR which is upregulated upon AR inhibition\n\nGene expression analysis revealed that GR was one of the most upregulated genes upon enzalutamide treatment in a TLE3-loss background (Figure 2B and C). Western blot analysis for GR confirmed this upregulation on protein level (Figure 4A). The binding of TLE3 and AR at the GR enhancer provides further evidence that both proteins play a role in the transcriptional repression of GR (Figure 4B). Moreover, TLE3 and AR binding at this region occurs at the same regulatory element described previously to be relevant in the regulation of GR in prostate cancer progression (Shah et al., 2017) (Figure 4\u2014figure supplement 1A). The core GR and AR consensus sequences are highly similar (Figure 4\u2014figure supplement 1B), and GR sequence motifs were enriched at genes differentially expressed in control versus TLE3KO cells cultured with enzalutamide (Supplementary file 1). Interestingly, GR has been implicated in mediating resistance to AR inhibitors (Arora et al., 2013; Shah et al., 2017) so we decided to further investigate the link between TLE3 and GR in the context of antihormonal therapy. To assess whether GR can act as a key effector in TLE3KO cells resulting in drug resistance, we performed inhibition experiments for this receptor in the context of enzalutamide treatment comparing control and TLE3KO cells. Inhibition of GR using shRNAs in control and TLE3KO cells resensitized TLE3KO cells to enzalutamide (Figure 4C\u2013E and Figure 4\u2014figure supplement 1C). Inhibition of GR using the small molecule inhibitor mifepristone in conjunction with enzalutamide, reduced the proliferation of TLE3KO when compared to single-drug treatments (Figure 4F). We next performed ChIP-qPCR to determine GR chromatin binding proximal to several of the most-differentially expressed genes in control versus TLE3KO cells, in the presence of enzalutamide (listed in Figure 2B). This experiment showed binding of GR at these loci only in TLE3KO cells treated with enzalutamide (Figure 4G). As TLE3 is known to recruit HDACs (Chen and Courey, 2000; Cinnamon and Paroush, 2008), we also investigated histone acetylation at the GR locus and AR/TLE3 target gene RND3 and found that loss of TLE3 resulted in an upregulation of H3K27 acetylation at these enhancers (Figure 4\u2014figure supplement 1D). Thus, abrogation of the repressive function mediated by both AR and TLE3 at the GR locus allows for increased expression of GR which, in turn, is able to confer enzalutamide resistance by substituting for AR in this context. Interestingly, we found overlap between several of the most-differentially expressed genes listed in Figure 2 (RND3, GNAI1, GR, UGT2B17 and PMP22) and GR-regulated genes described in a model for GR-mediated enzalutamide resistance as reported by others (Arora et al., 2013) (Figure 4\u2014figure supplement 1E). These results are further supported by previous findings showing that AR and GR have overlapping transcriptomes and cistromes in the LNCaP-derived enzalutamide-resistant cell model LREX where GR was shown to confer enzalutamide resistance (Arora et al., 2013; Shah et al., 2017). Together, our data shows that loss of TLE3 in conjunction with AR inhibition results in GR upregulation, leading to enzalutamide-resistance in LNCaP prostate cancer cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig4-v2.jpg)\n\n**Figure 4.:** (A) Western blot showing protein expression levels of TLE3 and GR in control and TLE3KO cells cultured vehicle or enzalutamide (B) Coverage profiles for TLE3 and AR binding at the GR locus. (C) Long-term growth assay (14 days) showing the drug resistance phenotype of control and TLE3KO cells with and without GR knockdown in the presence of vehicle or enzalutamide. (D) Western blot analysis for TLE3 protein levels in control and TLE3KO cells shown in C, using GAPDH as a loading control. (E) mRNA levels for GR in control and TLE3KO cells carrying shSCR or shGR constructs, shown in C. (F) Long-term growth assay (14 days) for cells harboring a control sgRNA or TLE3-targeting sgRNA cultured in the presence of vehicle, enzalutamide, mifepristone or the combination at indicated concentrations. (G) ChIP-qPCR showing GR occupancy at enhancers proximal to indicated genes. All samples were cultured in the presence of 10 \u03bcM enzalutamide with or without 1 \u03bcg/ml hydrocortisone (HC) as indicated.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Coverage profiles for TLE3 or H3K4me1 at the GR locus in LNCaP and LREX\u2019 cells.\u00a0(B) Core consensus sequences for AR and GR. (C) Quantification of long-term colony formation assays showing the functional phenotype of control and TLE3KO, with or without GR knockdown, in cells treated with vehicle or enzalutamide. (D) ChIP-qPCR for H3K27 acetylation in control and TLE3KO cells at indicated loci. (E) Overview of the genes listed in Figure 2B with GR-regulated genes (as shown by Arora et al., 2013) highlighted in green.\n\n### TLE3 and GR expression are inversely correlated in prostate cancer patients and TLE3low/GRhigh expression is associated with poor response to antihormonal therapy\n\nAnalysis of two publicly available RNA-seq datasets (TCGA prostate and Abida et al., 2019 ) revealed an inverse correlation between TLE3 expression and GR expression in biopsy samples from prostate cancer patients with early-stage disease (Figure 5A) as well as advanced prostate cancer (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013B) RNA-seq analysis showing the correlation between TLE3 and GR expression in tumor samples from prostate cancer patients. (C) Kaplan-Meier curve showing the biochemical recurrence of prostate cancer patients from the TCGA dataset, only patients receiving anti-hormonal therapy were included (65 patients) using an optimal cut-off for high versus low TLE3 expression. (D) Immunohistochemistry for H and E, TLE3 and GR in tumor biopsy samples collected from two CRPC patients pre- and post-enzalutamide treatment.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Immunohistochemistry for H and E, TLE3 and GR in tumor biopsy samples collected from two CRPC patients pre- and post-enzalutamide treatment.\n\nWe next investigated the effect of TLE3 expression levels on disease progression in prostate cancer patients. Analysis of the TCGA prostate cancer patient dataset filtered for patients who had undergone anti-hormonal therapy revealed a correlation between TLE3 expression and biochemical recurrence (p\u00a0=\u00a00.033, n\u00a0=\u00a065) (Figure 5C). These data show that TLE3 expression is a prognostic factor for prostate cancer patients treated with anti-hormonal therapy.\n\nAs part of a clinical trial run in-house (PRESTO), matched tissue samples of metastatic sites were collected before treatment and after progression on enzalutamide treatment for four CRPC patients. These paired biopsies were analyzed by immunohistochemistry for expression of TLE3 and GR, to investigate whether expression of these proteins is altered upon selection pressure by enzalutamide. Two patients had a short PSA response to enzalutamide (<6 months), without radiological response. Tumor tissue of these patients showed moderate to high GR expression at baseline with weak or negative staining for TLE3 (Figure 5D, and Figure 5\u2014figure supplement 1A). This was also observed in the post-treatment samples from these patients, in agreement with our hypothesis of low TLE3 and high GR in resistant tumors. Moreover, for one of these patients, the inverse association between TLE3 and GR became more pronounced upon enzalutamide treatment (Figure 5D). The third patient, having a more profound response (PSA response\u00a0>12 months, radiological response), had weak staining for TLE3 and moderate staining for GR at baseline. In the post-treatment staining, TLE3 was low, whereas GR expression had increased (Figure 5D). The fourth patient had a protracted response to enzalutamide (>2 years) and showed low expression of both TLE3 and GR in pre- and post-treatment tissue (Figure 5\u2014figure supplement 1A). In this patient, amplification of AR was observed upon treatment, potentially explaining resistance not related to TLE3 expression. Combined, these data show that TLE3 and GR are inversely correlated in prostate cancer patient samples and that low TLE3 and high GR expression were observed in several cases of enzalutamide resistance.\n\n## Discussion\n\nThe efficacy of the AR antagonists enzalutamide and apalutamide illustrates the importance of persistent signaling through the AR pathway in CRPC (Clegg et al., 2012; Beer et al., 2014). The transient nature of these drug responses underscores the relevance of improving therapeutic approaches and mechanistic understanding of drug resistance (Prekovic et al., 2018). Using a genome-wide CRISPR-Cas9 resistance screen we identified TLE3 as a novel regulator of AR inhibitor sensitivity that binds to and regulates the expression of androgen-responsive genes.\n\nTLE3 was shown to co-localize with FOXA1 and AR at enhancer elements, which are selectively activated during prostate tumorigenesis (Stelloo et al., 2018), underscoring the importance of these transcription factors in this context. Our gene expression analyses show that loss of TLE3 results in an active-AR-like profile despite anti-hormonal treatment. Our findings are in line with TLE3\u2019s known role as a transcriptional repressor (Agarwal et al., 2015; Chen and Courey, 2000; Cinnamon and Paroush, 2008) and the fact that TLE3 binds AR target genes. Similarly, TLE3 was described as a co-repressor in breast cancer cells, where it co-regulates the expression of a subset of ER\u03b1 target genes (Jangal et al., 2014). The same study showed that the binding of TLE3 to the chromatin at ER\u03b1 target genes was dependent on FOXA1 (Jangal et al., 2014).\n\nPathway reactivation or feedback activation of parallel signaling pathways are commonly described mechanisms found in drug-resistant tumors treated with targeted therapy (Prahallad et al., 2012; Pawar et al., 2018). In enzalutamide-resistant prostate tumors, upregulation of GR was described as a resistance mechanism where the receptor was able to substitute for AR and drive expression of a subset of target genes (Arora et al., 2013). In this study, the GR upregulation observed in the preclinical LREX model was not immediate in response to enzalutamide but required treatment with the drug for an extended amount of time for adaptation in vitro (Arora et al., 2013). This extended period of time needed for adaptation could suggest an acquired loss of TLE3 expression over time, resulting in deregulated GR expression. The work of Shah et al. (2017) showed that loss of the repressive signals of both AR binding and EZH2-mediated methylation of a tissue-specific enhancer at the GR locus lead to upregulation of GR and drug resistance in prostate cancer cells. TLE3 is a known transcriptional repressor and is able to bind the same GR enhancer (Figure 4B and Figure 4\u2014figure supplement 1A). Our finding that TLE3 loss, in conjunction with AR inhibition, leads to GR upregulation provides deeper insight into the epigenetic regulation of the GR locus in prostate cancer cells and supports the previously undescribed role of TLE3 in conferring enzalutamide sensitivity via GR. GR occupancy at several TLE3/AR target genes provides further evidence for the role of GR in mediating enzalutamide resistance. Importantly, several of the most differentially expressed target genes in enzalutamide-treated control cells compared to TLE3KO cells (RND3, GNAI1, GR, UGT2B17 and PMP22) were previously described to be GR-regulated in a model of AR inhibitor resistance. Together, our results provide novel insights into the regulation of the GR locus in the context of AR inhibition in prostate cancer cells, implicating TLE3 as a regulator of GR-mediated enzalutamide resistance.\n\nA limitation of our study is the fact that, of the in vitro models we tested, loss of TLE3 conferred resistance to enzalutamide only in LNCaP cells and not in LAPC4 and CWR-R1. The availability of in vitro prostate cancer models is limited, and the heterogeneous nature of resistance mechanisms to antihormonal therapies in prostate cancer may explain why TLE3 loss did not confer resistance to enzalutamide in LAPC4 and CWR-R1 cells. To study broader applicability, we investigated several clinical data-sets. Analysis of RNA expression in two prostate cancer patient cohorts, showed an inverse correlation between TLE3 and GR expression and worse prognosis of prostate cancer patients with low TLE3 expression treated with antihormonal therapy. Additionally, immunohistochemistry on GR and TLE3 of tumor tissue collected from CRPC patients pre- and post-enzalutamide treatment support our findings in LNCaP cells. Although these observations are in agreement with our hypothesis, the clinical implications of our findings are yet to be resolved and need to be determined in larger cohorts. Thus, our results warrant further investigation into the role of TLE3 and enzalutamide resistance in prostate cancer patients.\n\nIn summary, we have identified TLE3 loss as a novel resistance mechanism to AR-targeted therapeutics in prostate cancer cells. Based on previously reported work and the data in our study, we propose a model in which loss of TLE3 and AR function at the GR enhancer leads to upregulation of GR, which is able to substitute for AR, resulting in enzalutamide resistance (Figure 6). Our data, implicating TLE3 in the regulation of GR expression and drug resistance, complements increasing evidence describing the role of this receptor in bypassing AR blockade in prostate cancer cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/47430/elife-47430-fig6-v2.jpg)\n\n**Figure 6.:** In the presence of androgens, TLE3 expression is repressed and enhancers are active. AR regulates target gene expression, including repression of the GR locus (top panel). Upon enzalutamide treatment, TLE3 is upregulated and enhancers are inactive. TLE3 represses expression of AR target genes including GR (middle panel). Enzalutamide treatment in the context of TLE3 loss leads to upregulation of GR which is able to substitute for AR at active enhancers, leading to drug resistance (bottom panel).\n\n## Materials and methods\n\nFor an overview of the resources used for this study see Supplementary file 2: Key Resources Table.\n\n### Cell culture and generation of knockout and knockdown cells\n\nThe human prostate cancer cell lines were maintained in RPMI (LNCaP, CWR-R1, 22rv1) or IMDM (LAPC4). HEK293T cells were cultured in DMEM. Medium was supplemented with 10% FBS and 1% penicillin/streptomycin. Cells were maintained at 37 \u00b0C in 5% CO2. All cell lines were STR profiled. Control and TLE3KO cells were created by infecting target cells with lentiviral particles containing LentiCRISPR v2.0 harboring non-targeting or TLE3-targeting gRNAs, which were cloned in using Gibson Assembly (NEB cat#: E2611S) utilizing BsmBI restriction sites. For gRNA and shRNA sequences see Supplementary file 2: Key Resources Table. HEK293 were co-transfected with lentiviral CRISPR, or in-house shRNA constructs, using PEI. Target cells were seeded 1 day prior to infection. Lentiviral supernatant was added to the medium along with 5 \u03bcg/ml polybrene. Infected cells were selected with 2 \u03bcg/ml puromycin.\n\n### CRISPR-Cas9 resistance screen\n\nLNCaP cells were infected with lentiviral particles containing GeCKO half-library A at low M.O.I. (~0.2) for single viral integration, at a\u00a0~\u00a0150 fold coverage, and cultured in the presence of vehicle or 2 \u03bcM apalutamide for 6 weeks. Barcodes were recovered and sequenced as described (Brunen et al., 2018). DESeq2 (Love et al., 2014) analysis was performed using a paired design. The treated samples were compared with the untreated samples. A sgRNA was considered to be a hit, if the log2FC\u00a0\u2265\u00a03 and the FDR\u00a0\u2264\u00a00.1. TLE3 was the only gene for which all three sgRNAs were a hit. The MAGeCK (Li et al., 2014) analysis was done using the default settings, which produced TLE3 as top hit with a FDR of 0.002.\n\n### Proliferation assays\n\nColony formation assays were performed as previously described (Brunen et al., 2018). Used seeding densities were 20,000 (LNCaP, LAPC4) or 10,000 (22rv1, CWR-R1) cells/well in 6-well plates. After 12\u201314 days of growth in presence of the drugs as indicated, when control cells reached confluence, all cells were fixed in 2% formaldehyde and stained with 0.1% crystal violet.\n\nLive cell proliferation was monitored in real-time using the Incucyte ZOOM (11 days). Cells were seeded in a 384-well plate at 600 cells/well and drugs were added as indicated.\n\nR1881, apalutamide, enzalutamide, mifepristone (Medkoo Biosciences) were dissolved in DMSO and stored at \u221220\u00b0C.\n\n### Protein lysate preparation and western blot analysis\n\nTypically, LNCaP cells were plated at density of 200,000 cells in 6-well plates and cultured in the presence of enzalutamide for 5 days before harvesting. Samples were prepared and western blot was performed as described previously (Brunen et al., 2018), using primary antibodies directed against TLE3 (Santa Cruz Biotechnology, #sc-514798, 1:250), Vinculin (Sigma-Aldrich, #V4139, 1:1000), and GAPDH (Cell Signaling Technology, #5174S, 1:10000). Secondary antibodies were obtained from Bio-Rad laboratories.\n\n### RNA-seq\n\nRNA-seq data was generated by seeding 500,000 LNCaP control or TLE3KO cells in 10 cm dishes in the presence of 10 \u03bcM enzalutamide or vehicle for 5 days, followed by RNA isolation using the ISOLATE II RNA mini kit (Bioline). RNA was then submitted for Illumina sequencing (HiSeq 2500). The differential expression was based on the ratio of normalized read counts (FPKM, after library size correction). An absolute fold-change threshold of 2 was used. Genes with a coverage\u00a0<50 in both conditions were excluded from the analyses to prevent spurious results. Data were further analyzed using Enrichr (Chen et al., 2013) and javaGSEA desktop application (http://software.broadinstitute.org/gsea). Data was uploaded to GEO (GSE130246).\n\n### Quantitative RT-PCR\n\nLNCaP cells were plated at density of 200,000 cells in 6-well plates and cultured in the presence of enzalutamide for 5 days before harvesting. Total mRNA isolation, cDNA synthesis and qPCR analysis were performed as described elsewhere (Brunen et al., 2018). An overview of the used primers is listed in Supplementary file 2: Key Resources Table.\n\n### ChIP-seq and ChIP-qPCR\n\nThe ChIP-seq data from Figure 3 was sourced from Stelloo et al. (2018), GSEA94682. The sequencing (bam) files and the peaks called by Peaks were called using DFilter (Kumar et al., 2013) and MACS peak caller version 1.4 (Zhang et al., 2008). The ChIP peaks were sorted by intensity. For each set of differentially expressed genes, the genomic locations were intersected with the peaks called, padding with 20 Kb for genes and 5 Kb for peaks prior to intersecting. Seqminer (Ye et al., 2011) was used to obtain the coverage data at the intersecting regions, and to generate the heatmaps. Coverage profile snapshots were made using Easeq (Lerdrup et al., 2016).\n\nChIP-qPCR data was generated according to the protocol described by Singh et al. (2019). Cells were plated at\u00a0~30% confluency in 15 cm dishes and cultured in the presence of 10 \u03bcM enzalutamide for 5 days. In case of hydrocortisone stimulation, hydrocortisone was added 2 hr prior to harvesting of the cells. The antibodies that were used were: 7,5 \u03bcl of anti-GR (CST, #12041) and 5 \u03bcg of H3K27ac (Active Motif, 39133). Regions for qPCR were selected based on AR ChIP-seq data in Figure 3, choosing the peaks closest the target gene. For an overview of the primers see Supplementary file 2: Key Resources Table.\n\n### Immunohistochemistry\n\nImmunohistochemistry of the FFPE tumor samples was performed on a BenchMark Ultra autostainer (TLE3) or Discovery Ultra autostainer (Glucocorticoid Receptor). Briefly, paraffin sections were cut at 3 \u00b5m, heated at 75\u00b0C for 28 min and deparaffinized in the instrument with EZ prep solution (Ventana Medical Systems). Heat-induced antigen retrieval was carried out using Cell Conditioning 1 (CC1, Ventana Medical Systems) for 64 min at 95\u00b0C.Glucocorticoid Receptor clone D6H2L (Cell Signaling) was detected using 1/600 dilution, 1 hr at 370C and TLE3 using clone CL3573 (1/250 dilution, 1 hr at RT). Bound TLE3 was detected using the OptiView DAB Detection Kit (Ventana Medical Systems). Glucocorticoid Receptor bound antibody was visualized using Anti-Rabbit HQ (Ventana Medical systems) for 12 min at 370C, Anti-HQ HRP (Ventana Medical systems) for 12 min at 37\u00b0C, followed by ChromoMap DAB Detection Kit (Ventana Medical Systems). Slides were counterstained with Hematoxylin and Bluing Reagent (Ventana Medical Systems).\n",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "9096e62b-166f-4020-8a58-d71f690085fe",
+      "submission_id": "c4e8ec2d-3bf1-473e-bc37-88372d1fde98",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Myles Brown, Dana-Farber Cancer Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.47430.sa1](https://doi.org/10.7554/eLife.47430.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nAndrogen receptor (AR) inhibitors are commonly used to treat prostate cancer, but resistance to these drugs is a problem. Up-regulation of the glucocorticoid receptor (GR) is associated with drug resistance. This paper provides a mechanistic link between the transcriptional co-repressor TLE3 and GR-mediated resistance to AR inhibitors in a prostate cancer cell line. This link involves TLE3 and AR binding to the GR locus as well as GR binding to TLE3/AR regulated genes. An association between TLE3 and GR expression in patient samples suggests the possibility of clinical relevance.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"TLE3 loss confers AR inhibitor resistance by facilitating GR-mediated prostate cancer cell growth\" for peer review at eLife. Your article is being evaluated by three peer reviewers, and the evaluation is being overseen by a guest Reviewing Editor and Kevin Struhl as the Senior Editor.\n\nSummary:\n\nWhile the reviewers found your work to be of generally high quality, there were concerns about the lack of adequate novel mechanistic insights. There are two main issues. First, there is a worry that the results are observed in a single cell line and that other cell lines behave differently. Thus, the reviewers are interested in additional mechanistic understanding, particularly with respect to this cell-line specificity. Second, given the single cell line issue, the reviewers request some connection of the mechanism shown here with human cancer. For example, is there any evidence for cancer relevance of the pathway in the various databases of human cancer?\n\nReviewer #1:\n\nThis is a very interesting study by Palit et al. that reports on the loss of the transcription factor co-repressor, TLE3, by CRISPR-library screening that renders LNCaP cells (not any of the other tested CRPC lines) resistant to AR-antagonist treatment with Enzalutamide or Apalutamide. TLE3 appears to be itself negatively regulated by AR. The initial findings were followed by RNA-seq assessment of TLE3 KO cells treated with Enz versus vehicle and led to the identification of GR as one of the top differentially expressed genes. The network analysis indicated that TLE3 KO facilitates reactivation of AR-targeted genes under Enz treatment, suggesting involvement of GR as the most likely mechanism of AR-bypass. Both pharmacological and genetic inhibition of GR was sufficient to reverse the resistant phenotype acquired by TLE3 KO. While the phenotypic assessments of TLE3's role in the context of AR and GR inhibition are promising with clear results, the study lacks sufficient mechanistic exploration and evidence for a conclusive story.\n\nMajor comments:\n\n1) Please provide GR protein expression data wherever the transcript levels are analyzed because this is purported to be a critical part of the mechanistic link.\n\n2) The CRISPR-screen was performed with treatment and selection of CRISPR-targeted Enz-na\u00efve cells for 6 weeks. However, the emergence and expansion of resistant WT LNCaP cells takes considerably longer. Is TLE3 downregulated in parental cells that become Enz-resistant, when compared to Enz-na\u00efve cells? In other words, is TLE3 depletion naturally required to allow for emergence of Enz resistance?\n\n3) To conclude that depletion of TLE3 frees AR binding regions for GR occupancy (as in the Figure 5 model), the authors would require genome wide ChIP-seq of AR, GR and TLE3 in Enz-treated control vs TLE3KO cells. While the results clearly indicate an enhanced GR induction as a result of TLE3 depletion, no other data presented appears to support TLE3 inhibition as a pre-requisite for GR occupancy.\n\n4) TLE3 is a known inhibitor of the Wnt pathway whose activation has been reported by several groups to be essential for Enz-resistance. Is it possible that TLE3 loss functions through the Wnt pathway (e.g., via \u03b2-catenin) instead of stimulating GR expression/action? Have the authors tested this alternative hypothesis?\n\n5) The TCGA patient dataset is not well described. TCGA data are mainly obtained from local prostate cancer and biochemical recurrence usually refers to recurrence after local therapy (i.e., surgery or radiation), which is usually not relevant to hormone therapy resistance. What is the \"anti-hormonal therapy\" the authors refer to? How was the expression cut point defined and identified?\n\n6) Overall, there appears to be insufficient data to support the model proposed in Figure 5.\n\nReviewer #2:\n\nA couple previous studies have indicated an association between TLE3 and AR, but its functional significance for AR function has not been determined. This study found that TLE3 loss enhanced LNCaP cell growth in response to AR antagonist in a CRISPR screen. Further ChIP-seq and transcriptome data support TLE3 coregulation of a subset of AR regulated genes. Finally, in a TLE3 KO background the investigators found that AR inhibition caused an increase in GR, and that GR inhibition could resensitize the cells to ENZ. Together these data support a role for TLE3 in the regulation of a subset of AR regulated genes. However, there are a number of concerns related to functional significance that should be addressed, as indicated below.\n\n1) The generality of the findings is unclear as TLE3 depletion only conferred drug resistance in LNCaP, but not in CWR-R1 or LAPC4. It would be of value to explore the basis for this difference a bit more. In particular, does ENZ stimulate TLE3 in these latter cells.\n\n2) The significance would also certainly be enhanced by in vivo data confirming that the TLE3 depleted cells are resistant to ENZ.\n\n3) AR was the top TF associated with genes that were differentially expressed in TLE3 KO cells in the presence of androgen or with ENZ. One would predict that expression of these genes would increase in the TLE3 KO cells. Figure 2B shows fold change, but it is not clear what is being compared. Moreover, the description is somewhat cryptic (genes that show an interaction with TLE3 KO and ENZ treatment). The effect of TLE3 on AR/TLE3 shared genes, as well as on TLE3 alone genes should be clearly described.\n\n4) It is not clear how UGT2B17 fits with the hypothesis that TLE3 is repressing AR regulated genes in response to ENZ (Figure 2B).\n\n5) It is an attractive hypothesis that AR directly represses TLE3 expression. However, supplemental Figure 2 only shows effects on protein, with no indication of how long the cells were treated. The authors should show a time course of TLE3 mRNA induction and loss in response to ENZ and DHT in order to address whether the effects are likely direct.\n\n6) Figure 3 seems to show that TLE3 binding at AR regulated genes does not decrease with R1881 stimulation. This would seem to be inconsistent with the feedback model, and with the marked decrease in TLE3 protein in R1881 treated cells.\n\n7) The growth data in Figure 4 is qualitative and only a single plate is shown for each condition. It should be quantified, and a growth curve would help.\n\n8) The authors show that GR KO confers sensitivity to ENZ in the TLE3 KO cells, and suggest this reflects GR activation of AR/TLE3 regulated genes. To assess this mechanism, they should address whether GR KO in this context does indeed suppress the expression of AR/TLE3 coregulated genes.\n\n9) While GR may contribute to ENZ resistance in TLE3 KO cells, the significance of this finding for TLE3 intact cells is not addressed. Is there increased GR recruitment to AR/TLE3 regulated genes in response to ENZ in wild-type cells?\n\n10) In Supplemental Figure 4 it is unclear if the authors are assessing BCR after RP or after ADT. It is probably the former, which would only mean that TLE3 expression is associated with aggressiveness, and would not provide evidence that it is involved with response to ADT.\n\nReviewer #3:\n\nThe authors identify TLE3 loss as a cause of apalutamide resistance in a genome-wide in vitro CRISPR screen in LNCaP prostate cancer cells. Transcriptomic and ChIP-seq studies support a model whereby TLE3 loss rescues suppression of AR pathway signaling by antiandrogens. Mechanistically this occurs, at least in part, through upregulation of GR based on experiments showing that shRNAs targeting GR restore sensitivity to enzalutamide. This model is supported by ChIP-seq data showing overlapping binding of TLE3 and FOXA1 at various AREs across the genome including a GR enhancer.\n\nThe data supporting TLE3 as screen hit as well as the proposed mechanism for causing antiandrogen resistance through GR upregulation,is convincing, but the work has two significant shortcomings.\n\n1) The apparent context dependence of TLE3 loss for LNCAP cells only (negative results in CWR-R1 and LAPC4) raises concerns about the broader relevance of the TLE3 loss in prostate cancer. The authors could address this in several ways:\n\ni) testing of more models\n\nii) mechanistic insight into why resistance is not seen in CWR-R1 and LAPC4 (does TLE3 loss cause similar perturbations in AR signaling in these models?)\n\niii) deeper interrogation of TLE3 status in human datasets, particularly in the castration-resistant setting (several are now available from SU2C Prostate Dream team projects)\n\n2) The prior work on GR in castration resistance diminishes the novelty. This could perhaps be overcome with additional mechanistic insight beyond that reported in the earlier publications. For example, how does TLE3 loss impact the chromatin landscape (particularly repressive histone marks) across the genome and more specifically at the GR locus?\n\nOverall I would be supportive of considering a revised manuscript but it would need to have additional data.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"TLE3 loss confers AR inhibitor resistance by facilitating GR-mediated human prostate cancer cell growth\" for further consideration by eLife. Your revised article has been evaluated by Kevin Struhl (Senior Editor) and a guest Reviewing Editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nPlease revise the manuscript as requested by the reviewers.\n\nReviewer #1:\n\nPalit, et al., provide a revised manuscript on TLE3 loss and enzalutamide resistance. The strength of the original manuscript is with the enzalutamide resistant phenotype conferred by TLE3 KO but was lacking in mechanistic characterization and there were some concerns about clinical relevance of this finding. In general, the authors have put forth a reasonable effort to address reviewer comments.\n\nThe additional evaluation on inverse correlation between GR and TLE3 expression from clinical data sets (Figure 5A and 5B) are not really convincing and requested in vivo experiments by one of the other reviewers on TLE3 KO and resistance are not provided. Together, with a CRISPR KO generated mechanism of resistance that occurs in a single cell line model, if moving forward with this manuscript I would suggest that the authors pull back on the potential clinical relevance and explicitly state this as a major caveat of their story (in the Abstract and Discussion).\n\nReviewer #2:\n\nThe authors have responded to the points raised in the initial review. There are still concerns that the observations are limited to one cell line and are only in vitro. However, the authors do now show an inverse correlation between TLE3 and GR in public domain data. It should be noted that the previous study from Arora et al. found that GR was not immediately increased by ENZ, but required some substantial time for adaptation. Therefore, overall the data support the hypothesis that loss of TLE3 is a mechanism that contributes to increasing GR in response to ENZ in at least a subset of patients. One minor point is that in response to the question of whether TLE3 loss increased WNT signaling, the authors showed no increase in active b-catenin. However, TLE3 loss would presumably increase TCF activity without an increase in active b-catenin. The more relevant data would be effects on TCF regulated genes such as AXIN2.\n\nReviewer #3:\n\nThe authors have responded to my earlier review with additional evidence from clinical datasets that extends the TLE3 work beyond the LNCaP cell line. I believe the revised manuscript is suitable for publication at eLife.\n",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4c9aa4ad-f3fe-4d00-98f3-5d1a973fce54",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C1",
+      "claim": "Prostate cancer is the second most common cancer in men worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Prostate cancer is the second most common cancer and the fifth leading cause of cancer-related death in men worldwide (Torre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Torre et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "be75ce4b-f7d7-49ab-bd6b-d8d14b0c5828",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C2",
+      "claim": "Prostate cancer is the fifth leading cause of cancer-related death in men worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "Prostate cancer is the second most common cancer and the fifth leading cause of cancer-related death in men worldwide (Torre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Torre et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "30ee9c16-8f21-4dbd-8ae6-681fdee3fc38",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C3",
+      "claim": "Deregulated androgen receptor (AR) signaling is a major driver of prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Deregulated androgen receptor (AR) signaling is a major driver of prostate cancer (Taylor et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Taylor et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "cee687ed-51ec-4453-846d-d4b57914380e",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C4",
+      "claim": "Androgen deprivation therapy (ADT) is used to treat locally advanced and metastatic prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, androgen deprivation therapy (ADT) is used to treat locally advanced and metastatic prostate cancer, achieving remission in most patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established clinical practice and knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "687f6d30-4021-4a8d-ad44-3c60d156121b",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C5",
+      "claim": "ADT achieves remission in most prostate cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, androgen deprivation therapy (ADT) is used to treat locally advanced and metastatic prostate cancer, achieving remission in most patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established clinical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "c44b8ec5-dd30-454c-87ad-6f90f97d80b5",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C6",
+      "claim": "Prostate cancer inevitably progresses to a castration-resistant state despite castrate-levels of androgens in the serum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite castrate-levels of androgens in the serum, the disease inevitably progresses to a castration-resistant state (Perlmutter and Lepor, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perlmutter and Lepor, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "279e7518-4522-4400-b16f-13a1f8e1dd48",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C7",
+      "claim": "AR signaling remains a pivotal driver in castration-resistant prostate cancer (CRPC).",
+      "claim_type": "EXPLICIT",
+      "source": "AR signaling remains a pivotal driver in castration-resistant prostate cancer (CRPC), which is illustrated by the efficacy of AR-directed drugs such as abiraterone and enzalutamide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by inference from the efficacy of AR-directed drugs",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "9ac4c62e-3dae-4fcb-98af-d793f39c9f5a",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C8",
+      "claim": "Patients develop resistance to AR-directed drugs and invariably succumb to the disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, patients develop resistance to these drugs and invariably succumb to the disease (Clegg et al., 2012; Beer et al., 2014; Chi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Clegg et al., 2012; Beer et al., 2014; Chi et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "7d10619c-6c73-4984-856e-df53ff40a607",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C9",
+      "claim": "Mutations in AR are a proposed resistance mechanism to AR inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Several resistance mechanisms to AR inhibitors have been proposed, including mutations in AR (Korpal et al., 2013; Joseph et al., 2013; Prekovic et al., 2016; Prekovic et al., 2018) and expression of splice variants (Li et al., 2013; Antonarakis et al., 2014; Culig, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Korpal et al., 2013; Joseph et al., 2013; Prekovic et al., 2016; Prekovic et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "e7234e91-4f9b-4248-8642-98216da33a71",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C10",
+      "claim": "Expression of AR splice variants is a proposed resistance mechanism to AR inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Several resistance mechanisms to AR inhibitors have been proposed, including mutations in AR (Korpal et al., 2013; Joseph et al., 2013; Prekovic et al., 2016; Prekovic et al., 2018) and expression of splice variants (Li et al., 2013; Antonarakis et al., 2014; Culig, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Li et al., 2013; Antonarakis et al., 2014; Culig, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "5f8482ed-2d97-4588-bfe7-f6d14c1563a3",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C11",
+      "claim": "The F877L missense mutation in AR confers resistance to enzalutamide and apalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the F877L missense mutation in AR was shown to confer resistance to enzalutamide and apalutamide (Korpal et al., 2013; Joseph et al., 2013; Balbas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Korpal et al., 2013; Joseph et al., 2013; Balbas et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "ff47a04d-dc8b-472b-878a-8572699d8338",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C12",
+      "claim": "Upregulation of the glucocorticoid receptor (GR) is associated with clinical resistance to enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Upregulation of the glucocorticoid receptor (GR, gene symbol NR3C1) was shown to be associated with clinical resistance to enzalutamide (Arora et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Arora et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "f0f0421c-87d9-4039-b794-14206001fb30",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C13",
+      "claim": "AR and GR have overlapping cistromes and transcriptomes in the LREX model.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the preclinical model LREX (LNCaP/AR Resistant to Enzalutamide Xenograft derived), it was shown that AR and GR have overlapping cistromes and transcriptomes, allowing GR to drive enzalutamide-resistant growth by regulating expression of a subset of AR target genes. (Arora et al., 2013; Shah et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Arora et al., 2013; Shah et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "412ceda7-d8e6-48e1-81be-75f1fc5785c0",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C14",
+      "claim": "GR drives enzalutamide-resistant growth by regulating expression of a subset of AR target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the preclinical model LREX (LNCaP/AR Resistant to Enzalutamide Xenograft derived), it was shown that AR and GR have overlapping cistromes and transcriptomes, allowing GR to drive enzalutamide-resistant growth by regulating expression of a subset of AR target genes. (Arora et al., 2013; Shah et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Arora et al., 2013; Shah et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "116bd57b-254e-431e-8ede-e0c2536d4d14",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C15",
+      "claim": "Significant overlap exists between AR and GR cistromes and transcription programs in prostate cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant overlap between AR and GR cistromes and transcription programs in prostate cancer cells was also described by others (Sahu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sahu et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "96b3fbfc-a9da-4574-8a08-aa4463f40130",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C16",
+      "claim": "GR upregulation occurs through abrogation of the repressive function of AR and EZH2-mediated methylation of the GR enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "GR upregulation was found to occur through abrogation of the repressive function of AR and EZH2-mediated methylation of the GR enhancer (Shah et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shah et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "dc0f8cdc-fab9-4e39-b0c9-199a4fe37146",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C17",
+      "claim": "A genome-scale approach aimed at identifying novel regulators of AR inhibitor sensitivity has not been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "However, to the best of our knowledge, a genome-scale approach aimed at identifying novel regulators of AR inhibitor sensitivity has hitherto not been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on authors' knowledge of the literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "132b3f7b-bf19-434a-9df8-0de0804a4072",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C18",
+      "claim": "Loss-of-function genetic screens facilitate the unbiased identification of genes that have a central role in biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function genetic screens facilitate the unbiased identification of genes that have a central role in biological processes in various genetic and pharmacological backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about genetic screening methods",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "16184c6e-a2e9-4bfe-92c4-e0f7e733250d",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C19",
+      "claim": "Large-scale gene perturbation experiments are a powerful tool to identify novel drug targets and biomarkers of drug response.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, large-scale gene perturbation experiments are a powerful tool to identify novel drug targets and biomarkers of drug response (Mullenders and Bernards, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mullenders and Bernards, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "a52caf04-9376-474a-9061-ae913ff652ac",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C20",
+      "claim": "A genome-wide CRISPR-Cas9 screen identified TLE3 as a modulator of AR inhibitor sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Through a genome-wide CRISPR-Cas9 screen we identified transducin-like enhancer of split 3 (TLE3) as a modulator of AR inhibitor sensitivity that, upon loss, confers resistance to enzalutamide in prostate cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the genome-wide CRISPR-Cas9 screen described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "46c45297-a590-4cb5-a0bd-45728e78ef17",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C21",
+      "claim": "TLE3 loss confers resistance to enzalutamide in prostate cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Through a genome-wide CRISPR-Cas9 screen we identified transducin-like enhancer of split 3 (TLE3) as a modulator of AR inhibitor sensitivity that, upon loss, confers resistance to enzalutamide in prostate cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the genome-wide CRISPR-Cas9 screen and validation experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "57c30508-185f-4f92-b25a-c1ad5e313780",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C22",
+      "claim": "The TLE protein family of transcriptional co-repressors is well-conserved and expressed in the nucleus of metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "The well-conserved TLE protein family of transcriptional co-repressors is expressed in the nucleus of metazoans and regulate various biological processes including development, cell metabolism, growth and differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about TLE proteins",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "adbfdef1-ad75-4108-a0cd-29d0c4e29e37",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C23",
+      "claim": "TLE protein family members regulate various biological processes including development, cell metabolism, growth and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The well-conserved TLE protein family of transcriptional co-repressors is expressed in the nucleus of metazoans and regulate various biological processes including development, cell metabolism, growth and differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about TLE proteins",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "87962120-775f-4dfd-803c-5d3dc4146474",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C24",
+      "claim": "TLE protein family members maintain a silenced chromatin structure at the chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "At the chromatin, TLE protein family members maintain a silenced chromatin structure (Agarwal et al., 2015; Chen and Courey, 2000; Cinnamon and Paroush, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Agarwal et al., 2015; Chen and Courey, 2000; Cinnamon and Paroush, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "44ffe2ac-ec35-4142-ab7a-f1b678015d57",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C25",
+      "claim": "TLE3 is deregulated in hormone-driven breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "TLE3 is deregulated in various cancers including hormone-driven breast cancer (Jangal et al., 2014), colorectal cancer (Yang et al., 2016) and prostate cancer (Nakaya et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jangal et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "f6f0a627-27df-499f-ada2-ba2aae485628",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C26",
+      "claim": "TLE3 is deregulated in colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "TLE3 is deregulated in various cancers including hormone-driven breast cancer (Jangal et al., 2014), colorectal cancer (Yang et al., 2016) and prostate cancer (Nakaya et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "52e8c42e-786f-4771-8288-47431f825cac",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C27",
+      "claim": "TLE3 is deregulated in prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "TLE3 is deregulated in various cancers including hormone-driven breast cancer (Jangal et al., 2014), colorectal cancer (Yang et al., 2016) and prostate cancer (Nakaya et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nakaya et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "0ef6f03d-106d-4463-bb0a-4898de35cfd6",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C28",
+      "claim": "LNCaP is an androgen-dependent prostate cancer cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "The androgen-dependent prostate cancer cell line LNCaP is sensitive to AR inhibitors such as apalutamide (Figure 1\u2014figure supplement 1A) and enzalutamide (Figure 1\u2014figure supplement 1B), making it a model system well-suited for the unbiased discovery of novel regulators of AR inhibitor sensitivity in prostate cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about LNCaP cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "f8745a89-2f05-46e6-9e7b-555efb4cbf54",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C29",
+      "claim": "LNCaP cells are sensitive to apalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "The androgen-dependent prostate cancer cell line LNCaP is sensitive to AR inhibitors such as apalutamide (Figure 1\u2014figure supplement 1A) and enzalutamide (Figure 1\u2014figure supplement 1B), making it a model system well-suited for the unbiased discovery of novel regulators of AR inhibitor sensitivity in prostate cancer cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "c4fea7ff-715b-4be1-b77c-a55357f53683",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C30",
+      "claim": "LNCaP cells are sensitive to enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "The androgen-dependent prostate cancer cell line LNCaP is sensitive to AR inhibitors such as apalutamide (Figure 1\u2014figure supplement 1A) and enzalutamide (Figure 1\u2014figure supplement 1B), making it a model system well-suited for the unbiased discovery of novel regulators of AR inhibitor sensitivity in prostate cancer cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "9b5324e1-3805-4b7c-a4ce-3a9afeedb94d",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C31",
+      "claim": "LNCaP cells were infected with a lentiviral pool containing the genome-wide scale CRISPR Knock-Out (GeCKO) half-library A targeting 19052 genes with 3 gRNAs per gene.",
+      "claim_type": "EXPLICIT",
+      "source": "LNCaP cells were infected with a lentiviral pool containing the genome-wide scale CRISPR Knock-Out (GeCKO) half-library A (Sanjana et al., 2014), targeting 19052 genes with 3 gRNAs per gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "0ff426fa-74a2-46de-9a34-39207c6022bc",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C32",
+      "claim": "Infected LNCaP cells were cultured in the presence of vehicle or 2 \u03bcM apalutamide for 6 weeks to allow selection of resistant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Infected cells were cultured in the presence of vehicle or 2 \u03bcM of the AR inhibitor apalutamide for 6 weeks to allow selection of resistant cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "2381b3d5-86d0-493c-bfc4-1142615801cf",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C33",
+      "claim": "DESeq2 analysis identified TLE3 as the top hit with all three gRNAs enriched in cells treated with apalutamide compared to untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DESeq2 (Love et al., 2014) analysis (Figure 1\u2014source data 2) and MAGeCK (Li et al., 2014) analysis (Figure 1\u2014source data 3) both identified TLE3 as the top hit with all three gRNAs enriched in cells treated with apalutamide compared to untreated cells (Figure 1B and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data analyzed using DESeq2 and shown in Figure 1B and Figure 1\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "389fecc8-78c4-46e8-a4ee-4927d2080700",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C34",
+      "claim": "MAGeCK analysis identified TLE3 as the top hit with all three gRNAs enriched in cells treated with apalutamide compared to untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "DESeq2 (Love et al., 2014) analysis (Figure 1\u2014source data 2) and MAGeCK (Li et al., 2014) analysis (Figure 1\u2014source data 3) both identified TLE3 as the top hit with all three gRNAs enriched in cells treated with apalutamide compared to untreated cells (Figure 1B and Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data analyzed using MAGeCK and shown in Figure 1B and Figure 1\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "6c63e887-d28d-4a08-8e7e-a423e4aa7176",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C35",
+      "claim": "Abrogation of TLE3 expression using independent single guide RNAs (sgRNAs) conferred resistance to enzalutamide in LNCaP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Abrogation of TLE3 expression using independent single guide RNAs (sgRNAs), as well as short hairpin RNAs (shRNAs) targeting TLE3, conferred resistance to both enzalutamide and apalutamide in LNCaP cells in long-term growth assays (14 days) with drug concentrations up to 8 \u03bcM (Figure 1C\u2013E and Figure 1\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C\u2013E and Figure 1\u2014figure supplement 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "2221d086-32b2-4295-97a5-9d5cf419d4ea",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C36",
+      "claim": "Abrogation of TLE3 expression using short hairpin RNAs (shRNAs) conferred resistance to enzalutamide in LNCaP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Abrogation of TLE3 expression using independent single guide RNAs (sgRNAs), as well as short hairpin RNAs (shRNAs) targeting TLE3, conferred resistance to both enzalutamide and apalutamide in LNCaP cells in long-term growth assays (14 days) with drug concentrations up to 8 \u03bcM (Figure 1C\u2013E and Figure 1\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C\u2013E and Figure 1\u2014figure supplement 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "0a9f606e-768c-4fd8-be6b-4d33332dfefa",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C37",
+      "claim": "Abrogation of TLE3 expression using sgRNAs conferred resistance to apalutamide in LNCaP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Abrogation of TLE3 expression using independent single guide RNAs (sgRNAs), as well as short hairpin RNAs (shRNAs) targeting TLE3, conferred resistance to both enzalutamide and apalutamide in LNCaP cells in long-term growth assays (14 days) with drug concentrations up to 8 \u03bcM (Figure 1C\u2013E and Figure 1\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C\u2013E and Figure 1\u2014figure supplement 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "bd69212b-2580-491b-84c6-956489b4a63f",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C38",
+      "claim": "Abrogation of TLE3 expression using shRNAs conferred resistance to apalutamide in LNCaP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Abrogation of TLE3 expression using independent single guide RNAs (sgRNAs), as well as short hairpin RNAs (shRNAs) targeting TLE3, conferred resistance to both enzalutamide and apalutamide in LNCaP cells in long-term growth assays (14 days) with drug concentrations up to 8 \u03bcM (Figure 1C\u2013E and Figure 1\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C\u2013E and Figure 1\u2014figure supplement 1D and E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "46ede7a4-f4cb-4c50-ad09-c8ab803e8b0c",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C39",
+      "claim": "Enzalutamide is the current standard used in the clinic for the treatment of castration-resistant prostate cancer (CRPC).",
+      "claim_type": "EXPLICIT",
+      "source": "Because enzalutamide is the current standard used in the clinic for the treatment of castration-resistant prostate cancer (CRPC), we used this drug for subsequent experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established clinical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "0102f002-6c5a-48b5-a9f3-e235675c2532",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C40",
+      "claim": "TLE3 loss did not confer drug resistance in CWR-R1 and LAPC4 prostate cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "As TLE3 loss did not confer drug resistance in these two cell lines (Figure 1\u2014figure supplement 1F\u2013H), we conclude a context-dependency of this mode of resistance that is not commonly observed in all model systems.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1F\u2013H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "697764fc-e460-410c-ac2d-1f05ca165402",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C41",
+      "claim": "TLE3-mediated resistance to AR inhibitors is context-dependent and not commonly observed in all model systems.",
+      "claim_type": "EXPLICIT",
+      "source": "As TLE3 loss did not confer drug resistance in these two cell lines (Figure 1\u2014figure supplement 1F\u2013H), we conclude a context-dependency of this mode of resistance that is not commonly observed in all model systems.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data showing TLE3 loss does not confer resistance in all cell lines tested",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "81ee423b-85ac-4128-9082-30ded324470f",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C42",
+      "claim": "TLE3 is a negative regulator of the Wnt pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "TLE3 is known to be a negative regulator of the Wnt pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about TLE3 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "0712ebbd-4e3d-4a12-bbba-f2ed5fabd2d0",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C43",
+      "claim": "Analysis of active \u00df-catenin levels in TLE3KO cells treated with vehicle or enzalutamide revealed no changes compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of active \u00df-catenin levels and expression of the bona fide Wnt target gene AXIN2 in TLE3KO cells treated with vehicle or enzalutamide revealed no changes compared to control cells (Figure 2\u2014figure supplement 1A and B), indicating Wnt signaling is not altered in this context.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "bbeab943-10dd-44c6-9d49-b9fb4d00506d",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C44",
+      "claim": "Expression of AXIN2 in TLE3KO cells treated with vehicle or enzalutamide revealed no changes compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of active \u00df-catenin levels and expression of the bona fide Wnt target gene AXIN2 in TLE3KO cells treated with vehicle or enzalutamide revealed no changes compared to control cells (Figure 2\u2014figure supplement 1A and B), indicating Wnt signaling is not altered in this context.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "cb1d9911-9a5b-4d7d-81e2-54f4fc4ed5aa",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C45",
+      "claim": "Wnt signaling is not altered in TLE3KO cells in the context of enzalutamide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of active \u00df-catenin levels and expression of the bona fide Wnt target gene AXIN2 in TLE3KO cells treated with vehicle or enzalutamide revealed no changes compared to control cells (Figure 2\u2014figure supplement 1A and B), indicating Wnt signaling is not altered in this context.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data showing no changes in \u00df-catenin and AXIN2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "df2dee88-e751-40a5-9128-ed10348de5e5",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C46",
+      "claim": "AR is the top transcription factor associated with genes differentially expressed in control cells versus TLE3KO cells in vehicle condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Enrichment analysis revealed AR as the top transcription factor associated with genes differentially expressed in control cells versus TLE3KO cells in vehicle condition (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enrichment analysis data shown in Figure 2\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "610db73a-e040-4896-b0bb-c38c95660c23",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C47",
+      "claim": "AR is the top transcription factor associated with genes differentially expressed in control cells versus TLE3KO cells cultured in the presence of enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes differentially expressed in control cells versus TLE3KO cells, cultured in the presence of enzalutamide, also shared AR as the top regulator (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enrichment analysis data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "7943323e-a5fe-4228-8795-86e879170e00",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C48",
+      "claim": "Loss of TLE3 rescued expression of androgen-responsive genes in cells exposed to enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated expression for several of these genes both in the absence and presence of enzalutamide and found that loss of TLE3 rescued expression of these genes in cells exposed to enzalutamide (Figure 2C and Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental validation data shown in Figure 2C and Figure 2\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "29fdc1c0-7d04-4b5a-be76-19066b416a21",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C49",
+      "claim": "Overall AR signaling was maintained in the presence of enzalutamide in TLE3KO cells but not in control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, AR signaling was maintained in the presence of enzalutamide in TLE3KO cells but not in control cells, implying a rescue of AR signaling despite enzalutamide treatment (Figure 2D and E and Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSEA data shown in Figure 2D and E and Figure 2\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "05f6a30e-d203-4fa4-b445-e793f751ed0b",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C50",
+      "claim": "TLE3KO cells show a rescue of AR signaling despite enzalutamide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, AR signaling was maintained in the presence of enzalutamide in TLE3KO cells but not in control cells, implying a rescue of AR signaling despite enzalutamide treatment (Figure 2D and E and Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from GSEA data showing maintained AR signaling in TLE3KO cells treated with enzalutamide",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "6ee96b90-42bb-4ce9-82fc-9b35c5c56051",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C51",
+      "claim": "TLE3 expression is induced by enzalutamide in wild-type LNCaP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, western blot analysis showed that in wild-type (WT) cells, the expression of TLE3 is induced by enzalutamide (Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 2\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "1b52ef70-07a4-40bc-8802-1d62be4e7404",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C52",
+      "claim": "Stimulation with the synthetic androgen R1881 led to a decrease in TLE3 protein levels in LNCaP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, stimulation with the synthetic androgen R1881 led to a decrease in TLE3 protein levels (Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 2\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "7ca94f71-b4de-4a39-b849-278d2e8ea259",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C53",
+      "claim": "Both TLE3 and AR bind at enhancer sites of the TLE3 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of publicly available ChIP-seq data (Stelloo et al., 2018) revealed binding of both TLE3 and AR at enhancer sites of the TLE3 gene (Figure 2\u2014figure supplement 1H) suggesting that these transcription factors regulate TLE3 expression, indicating a feedback loop controlling TLE3 transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data from Stelloo et al., 2018 shown in Figure 2\u2014figure supplement 1H",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "792591c5-f2f6-4b44-94e7-2616a7ba23e2",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C54",
+      "claim": "TLE3 and AR regulate TLE3 expression, indicating a feedback loop controlling TLE3 transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of publicly available ChIP-seq data (Stelloo et al., 2018) revealed binding of both TLE3 and AR at enhancer sites of the TLE3 gene (Figure 2\u2014figure supplement 1H) suggesting that these transcription factors regulate TLE3 expression, indicating a feedback loop controlling TLE3 transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from ChIP-seq data showing TLE3 and AR binding at TLE3 gene enhancers",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "1b25f438-317a-4cbc-b24b-22ba4f1eb4b3",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C55",
+      "claim": "TLE3 mRNA levels are downregulated over time in LNCaP cells treated with R1881.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by analysis of publicly available RNA-seq data (Massie et al., 2011 ) showing that TLE3 mRNA levels are downregulated over time in LNCaP cells that are treated with R1881 (Figure 2\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data from Massie et al., 2011 shown in Figure 2\u2014figure supplement 1I",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "cd047845-7024-43c3-b3a9-3b9700b2814a",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C56",
+      "claim": "TLE3 loss does not affect AR gene expression in LNCaP cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also investigated the effect of TLE3 loss on AR gene expression using qPCR and found no differential expression for AR mRNA between control and TLE3KO cells (Figure 2\u2014figure supplement 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 2\u2014figure supplement 1J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "0abea45e-304b-4d6b-b1c1-6cd791a3405f",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C57",
+      "claim": "TLE3 binds together with FOXA1 at androgen response elements (AREs).",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, protein interactome profiling of AR revealed that TLE3 binds together with FOXA1 at androgen response elements (AREs) (Stelloo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stelloo et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "2bac2182-0862-4c71-8ac7-4562e269045b",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C58",
+      "claim": "Genes showing the strongest log2 fold-change expression in TLE3KO compared to control cells were bound by TLE3.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes showing the strongest log2 fold-change expression in TLE3KO compared to control cells were indeed bound by TLE3 (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq analysis shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "c853f7c5-2d1c-4641-b264-12b8f673a369",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C59",
+      "claim": "Co-binding of TLE3 and AR was enriched at loci of differentially expressed genes when compared to a random geneset.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that co-binding of TLE3 and AR was enriched at loci of the differentially expressed geneset when compared to a random geneset (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq peak enrichment analysis shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "2c142dad-5d17-4898-a417-279f52b18966",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C60",
+      "claim": "Significantly enriched sequence motifs at TLE3 binding sites of differentially expressed genes included members of the forkhead box transcription factor family (including FOXA1), AR, HOXB13 and the glucocorticoid receptor (GR).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, significantly enriched sequence motifs at TLE3 binding sites of differentially expressed genes included members of the forkhead box transcription factor family (including FOXA1), AR, HOXB13 and the glucocorticoid receptor (GR) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by motif enrichment analysis data in Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "438b3c46-5607-42fd-9012-1348c46745b3",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C61",
+      "claim": "Loss of TLE3 alters expression of androgen-responsive genes towards an active-AR-like profile in spite of anti-hormonal treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Since TLE3 acts as a repressor, the chromatin binding profiles for TLE3, FOXA1 and AR substantiate the expression data indicating that loss of TLE3 alters expression of androgen-responsive genes towards an active-AR-like profile in spite of anti-hormonal treatment, thereby allowing continued growth when these cells are exposed to enzalutamide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from chromatin binding profiles and expression data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "e07eadf6-4fcc-4328-b971-ef8d0e85ee95",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C62",
+      "claim": "Loss of TLE3 allows continued growth of cells exposed to enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Since TLE3 acts as a repressor, the chromatin binding profiles for TLE3, FOXA1 and AR substantiate the expression data indicating that loss of TLE3 alters expression of androgen-responsive genes towards an active-AR-like profile in spite of anti-hormonal treatment, thereby allowing continued growth when these cells are exposed to enzalutamide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from chromatin binding profiles, expression data, and proliferation assays",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "ff85fc4e-889d-404d-8a31-860933596b1a",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C63",
+      "claim": "GR was one of the most upregulated genes upon enzalutamide treatment in a TLE3-loss background.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression analysis revealed that GR was one of the most upregulated genes upon enzalutamide treatment in a TLE3-loss background (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression data shown in Figure 2B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "0355c492-636b-4cd7-b084-993be0563638",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C64",
+      "claim": "Western blot analysis confirmed GR upregulation on protein level in TLE3KO cells treated with enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis for GR confirmed this upregulation on protein level (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "0e4785c7-9e07-4ac1-97f4-7fc0ccf421c7",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C65",
+      "claim": "TLE3 and AR bind at the GR enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of TLE3 and AR at the GR enhancer provides further evidence that both proteins play a role in the transcriptional repression of GR (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "3b2b52ac-88d7-4fd5-8377-0b2c0cf8ca3b",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C66",
+      "claim": "TLE3 and AR play a role in the transcriptional repression of GR.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of TLE3 and AR at the GR enhancer provides further evidence that both proteins play a role in the transcriptional repression of GR (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from ChIP-seq data showing TLE3 and AR binding at GR enhancer",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "5c5ea385-5116-4a7a-aac0-4b9afe71dd00",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C67",
+      "claim": "TLE3 and AR binding at the GR locus occurs at the same regulatory element described previously to be relevant in the regulation of GR in prostate cancer progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TLE3 and AR binding at this region occurs at the same regulatory element described previously to be relevant in the regulation of GR in prostate cancer progression (Shah et al., 2017) (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 4\u2014figure supplement 1A and citation to Shah et al., 2017",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "e0718e76-b2e9-4a2f-96f6-480f896134b8",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C68",
+      "claim": "The core GR and AR consensus sequences are highly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "The core GR and AR consensus sequences are highly similar (Figure 4\u2014figure supplement 1B), and GR sequence motifs were enriched at genes differentially expressed in control versus TLE3KO cells cultured with enzalutamide (Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence comparison shown in Figure 4\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "dd455497-64e5-49d8-b67e-5bcaad03b64d",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C69",
+      "claim": "GR sequence motifs were enriched at genes differentially expressed in control versus TLE3KO cells cultured with enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "The core GR and AR consensus sequences are highly similar (Figure 4\u2014figure supplement 1B), and GR sequence motifs were enriched at genes differentially expressed in control versus TLE3KO cells cultured with enzalutamide (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by motif enrichment analysis data in Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "88724e8b-66e2-4fdd-9ba4-62522c186171",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C70",
+      "claim": "Inhibition of GR using shRNAs in TLE3KO cells resensitized TLE3KO cells to enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of GR using shRNAs in control and TLE3KO cells resensitized TLE3KO cells to enzalutamide (Figure 4C\u2013E and Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C\u2013E and Figure 4\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "be8725cb-bc41-4254-9bf2-9d5cefe4a749",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C71",
+      "claim": "Inhibition of GR using mifepristone in conjunction with enzalutamide reduced the proliferation of TLE3KO cells when compared to single-drug treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of GR using the small molecule inhibitor mifepristone in conjunction with enzalutamide, reduced the proliferation of TLE3KO when compared to single-drug treatments (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "9df75b42-cf7c-4d53-aa37-a8b8aa09e03d",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C72",
+      "claim": "GR binds at chromatin sites proximal to several of the most-differentially expressed genes in control versus TLE3KO cells in the presence of enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "We next performed ChIP-qPCR to determine GR chromatin binding proximal to several of the most-differentially expressed genes in control versus TLE3KO cells, in the presence of enzalutamide (listed in Figure 2B). This experiment showed binding of GR at these loci only in TLE3KO cells treated with enzalutamide (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "d4cf76c4-91c5-4b07-9b5d-cf3b792a4646",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C73",
+      "claim": "Loss of TLE3 resulted in an upregulation of H3K27 acetylation at the GR locus and AR/TLE3 target gene RND3.",
+      "claim_type": "EXPLICIT",
+      "source": "As TLE3 is known to recruit HDACs (Chen and Courey, 2000; Cinnamon and Paroush, 2008), we also investigated histone acetylation at the GR locus and AR/TLE3 target gene RND3 and found that loss of TLE3 resulted in an upregulation of H3K27 acetylation at these enhancers (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 4\u2014figure supplement 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "492fa564-ba12-4c28-a1c9-f348b8c564d6",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C74",
+      "claim": "TLE3 is known to recruit HDACs.",
+      "claim_type": "EXPLICIT",
+      "source": "As TLE3 is known to recruit HDACs (Chen and Courey, 2000; Cinnamon and Paroush, 2008), we also investigated histone acetylation at the GR locus and AR/TLE3 target gene RND3 and found that loss of TLE3 resulted in an upregulation of H3K27 acetylation at these enhancers (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chen and Courey, 2000; Cinnamon and Paroush, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "671183e1-ab94-4a40-863b-28b11841c128",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C75",
+      "claim": "Abrogation of the repressive function mediated by both AR and TLE3 at the GR locus allows for increased expression of GR.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, abrogation of the repressive function mediated by both AR and TLE3 at the GR locus allows for increased expression of GR which, in turn, is able to confer enzalutamide resistance by substituting for AR in this context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing TLE3/AR binding at GR locus, GR upregulation upon TLE3 loss, and GR-mediated resistance",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "3dfb3fcb-302a-462c-bd3e-1a5515032bb8",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C76",
+      "claim": "GR is able to confer enzalutamide resistance by substituting for AR.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, abrogation of the repressive function mediated by both AR and TLE3 at the GR locus allows for increased expression of GR which, in turn, is able to confer enzalutamide resistance by substituting for AR in this context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing GR upregulation, GR binding at AR target genes, and resensitization upon GR inhibition",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "a0fc635d-0f86-4114-bd78-654c724d6a83",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C77",
+      "claim": "Several of the most-differentially expressed genes (RND3, GNAI1, GR, UGT2B17 and PMP22) overlap with GR-regulated genes described in a model for GR-mediated enzalutamide resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found overlap between several of the most-differentially expressed genes listed in Figure 2 (RND3, GNAI1, GR, UGT2B17 and PMP22) and GR-regulated genes described in a model for GR-mediated enzalutamide resistance as reported by others (Arora et al., 2013) (Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison with data from Arora et al., 2013 shown in Figure 4\u2014figure supplement 1E",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "e4148c46-091e-4009-a9dc-960d9bcb1d05",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C78",
+      "claim": "AR and GR have overlapping transcriptomes and cistromes in the LNCaP-derived enzalutamide-resistant cell model LREX.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are further supported by previous findings showing that AR and GR have overlapping transcriptomes and cistromes in the LNCaP-derived enzalutamide-resistant cell model LREX where GR was shown to confer enzalutamide resistance (Arora et al., 2013; Shah et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Arora et al., 2013; Shah et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "7b5cc731-b751-4e8f-a57b-a3a644989311",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C79",
+      "claim": "GR confers enzalutamide resistance in the LREX model.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are further supported by previous findings showing that AR and GR have overlapping transcriptomes and cistromes in the LNCaP-derived enzalutamide-resistant cell model LREX where GR was shown to confer enzalutamide resistance (Arora et al., 2013; Shah et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Arora et al., 2013; Shah et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "f3c57b19-abac-4ae9-a276-6be2fdbad929",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C80",
+      "claim": "Loss of TLE3 in conjunction with AR inhibition results in GR upregulation, leading to enzalutamide-resistance in LNCaP prostate cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data shows that loss of TLE3 in conjunction with AR inhibition results in GR upregulation, leading to enzalutamide-resistance in LNCaP prostate cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple experimental data including gene expression, western blot, ChIP, and proliferation assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "12ff1348-5481-447e-b7ae-f42970831553",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C81",
+      "claim": "TLE3 expression and GR expression are inversely correlated in biopsy samples from prostate cancer patients with early-stage disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of two publicly available RNA-seq datasets (TCGA prostate and Abida et al., 2019 ) revealed an inverse correlation between TLE3 expression and GR expression in biopsy samples from prostate cancer patients with early-stage disease (Figure 5A) as well as advanced prostate cancer (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "881a76c0-6140-4485-8e00-52ad7a68d5e2",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C82",
+      "claim": "TLE3 expression and GR expression are inversely correlated in biopsy samples from prostate cancer patients with advanced prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of two publicly available RNA-seq datasets (TCGA prostate and Abida et al., 2019 ) revealed an inverse correlation between TLE3 expression and GR expression in biopsy samples from prostate cancer patients with early-stage disease (Figure 5A) as well as advanced prostate cancer (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data analysis shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "cbe1edc5-e4ff-402e-844a-3f4f619ae1fd",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C83",
+      "claim": "TLE3 expression is a prognostic factor for prostate cancer patients treated with anti-hormonal therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the TCGA prostate cancer patient dataset filtered for patients who had undergone anti-hormonal therapy revealed a correlation between TLE3 expression and biochemical recurrence (p = 0.033, n = 65) (Figure 5C). These data show that TLE3 expression is a prognostic factor for prostate cancer patients treated with anti-hormonal therapy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by survival analysis data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "c5d585ce-a5d5-40ad-b754-a20f6d974b0c",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C84",
+      "claim": "Low TLE3 expression correlates with biochemical recurrence in prostate cancer patients treated with anti-hormonal therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the TCGA prostate cancer patient dataset filtered for patients who had undergone anti-hormonal therapy revealed a correlation between TLE3 expression and biochemical recurrence (p = 0.033, n = 65) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by survival analysis data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "22fad892-bb8d-4a79-b037-720368a8d812",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C85",
+      "claim": "Two CRPC patients with short PSA response to enzalutamide (<6 months) had moderate to high GR expression at baseline with weak or negative staining for TLE3.",
+      "claim_type": "EXPLICIT",
+      "source": "Two patients had a short PSA response to enzalutamide (<6 months), without radiological response. Tumor tissue of these patients showed moderate to high GR expression at baseline with weak or negative staining for TLE3 (Figure 5D, and Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 5D and Figure 5\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "992d0d81-1f8a-40bb-b220-767a6558d39c",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C86",
+      "claim": "For one CRPC patient with short response to enzalutamide, the inverse association between TLE3 and GR became more pronounced upon enzalutamide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, for one of these patients, the inverse association between TLE3 and GR became more pronounced upon enzalutamide treatment (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "13c5e57d-f883-41c5-9013-717288b405c4",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C87",
+      "claim": "A CRPC patient with profound response to enzalutamide (PSA response >12 months, radiological response) had weak staining for TLE3 and moderate staining for GR at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "The third patient, having a more profound response (PSA response >12 months, radiological response), had weak staining for TLE3 and moderate staining for GR at baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunohistochemistry data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "f0f27c80-f11b-4b0a-a3a1-0a44a61f51e4",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C88",
+      "claim": "In a CRPC patient with profound response to enzalutamide, TLE3 was low and GR expression had increased in post-treatment tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In the post-treatment staining, TLE3 was low, whereas GR expression had increased (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "4cb5c5ea-f97d-4c0e-b479-89c1dccf4788",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C89",
+      "claim": "A CRPC patient with protracted response to enzalutamide (>2 years) showed low expression of both TLE3 and GR in pre- and post-treatment tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The fourth patient had a protracted response to enzalutamide (>2 years) and showed low expression of both TLE3 and GR in pre- and post-treatment tissue (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 5\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "f2afa41c-8e46-46fe-ab55-a3ce44bd4507",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C90",
+      "claim": "In a CRPC patient with protracted response to enzalutamide, amplification of AR was observed upon treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In this patient, amplification of AR was observed upon treatment, potentially explaining resistance not related to TLE3 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by clinical observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "a3770a6c-6190-4f32-a462-051738a3992e",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C91",
+      "claim": "TLE3 and GR are inversely correlated in prostate cancer patient samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, these data show that TLE3 and GR are inversely correlated in prostate cancer patient samples and that low TLE3 and high GR expression were observed in several cases of enzalutamide resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNA-seq analysis and immunohistochemistry data from patient samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "4cc68bc6-6847-4475-8956-fae8a5acb1fe",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C92",
+      "claim": "Low TLE3 and high GR expression were observed in several cases of enzalutamide resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, these data show that TLE3 and GR are inversely correlated in prostate cancer patient samples and that low TLE3 and high GR expression were observed in several cases of enzalutamide resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunohistochemistry data from CRPC patient samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "ecb489b2-1dbc-4c60-bcf7-f4115d84e212",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C93",
+      "claim": "TLE3 co-localizes with FOXA1 and AR at enhancer elements which are selectively activated during prostate tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "TLE3 was shown to co-localize with FOXA1 and AR at enhancer elements, which are selectively activated during prostate tumorigenesis (Stelloo et al., 2018), underscoring the importance of these transcription factors in this context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stelloo et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "e88c3be1-4265-4ad7-bb52-b213a478a603",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C94",
+      "claim": "Loss of TLE3 results in an active-AR-like profile despite anti-hormonal treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our gene expression analyses show that loss of TLE3 results in an active-AR-like profile despite anti-hormonal treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene expression and GSEA data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "d99b86db-cdff-4dc9-a6e2-5decf5ff4435",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C95",
+      "claim": "TLE3 acts as a co-repressor in breast cancer cells where it co-regulates the expression of a subset of ER\u03b1 target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, TLE3 was described as a co-repressor in breast cancer cells, where it co-regulates the expression of a subset of ER\u03b1 target genes (Jangal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jangal et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "482605f7-6ba6-4155-953d-b76c90492e75",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C96",
+      "claim": "The binding of TLE3 to the chromatin at ER\u03b1 target genes was dependent on FOXA1 in breast cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The same study showed that the binding of TLE3 to the chromatin at ER\u03b1 target genes was dependent on FOXA1 (Jangal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jangal et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "a4c85604-54c9-4aac-9b76-f809fcf3efce",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C97",
+      "claim": "Pathway reactivation or feedback activation of parallel signaling pathways are commonly described mechanisms found in drug-resistant tumors treated with targeted therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway reactivation or feedback activation of parallel signaling pathways are commonly described mechanisms found in drug-resistant tumors treated with targeted therapy (Prahallad et al., 2012; Pawar et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Prahallad et al., 2012; Pawar et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "ad7d04b4-0471-477a-ae74-788e1c81320c",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C98",
+      "claim": "GR upregulation in the LREX model was not immediate in response to enzalutamide but required treatment with the drug for an extended amount of time for adaptation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, the GR upregulation observed in the preclinical LREX model was not immediate in response to enzalutamide but required treatment with the drug for an extended amount of time for adaptation in vitro (Arora et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Arora et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "ed34684e-9c4f-486f-b63f-635af8ff76f1",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C99",
+      "claim": "The extended period of time needed for GR upregulation in the LREX model could suggest an acquired loss of TLE3 expression over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This extended period of time needed for adaptation could suggest an acquired loss of TLE3 expression over time, resulting in deregulated GR expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on the authors' findings and previous literature",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "8898c0a1-b086-4bc6-80ca-ae2513319d03",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C100",
+      "claim": "Loss of the repressive signals of both AR binding and EZH2-mediated methylation of a tissue-specific enhancer at the GR locus lead to upregulation of GR and drug resistance in prostate cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The work of Shah et al. (2017) showed that loss of the repressive signals of both AR binding and EZH2-mediated methylation of a tissue-specific enhancer at the GR locus lead to upregulation of GR and drug resistance in prostate cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shah et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "8276a8ef-dc97-4ab3-bf5c-87b6cf1f0caf",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C101",
+      "claim": "TLE3 is able to bind the same GR enhancer as AR and EZH2.",
+      "claim_type": "EXPLICIT",
+      "source": "TLE3 is a known transcriptional repressor and is able to bind the same GR enhancer (Figure 4B and Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 4B and Figure 4\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "68130456-e9ea-4155-9d9b-b1aa3ed51a0e",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C102",
+      "claim": "TLE3 loss, in conjunction with AR inhibition, leads to GR upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that TLE3 loss, in conjunction with AR inhibition, leads to GR upregulation provides deeper insight into the epigenetic regulation of the GR locus in prostate cancer cells and supports the previously undescribed role of TLE3 in conferring enzalutamide sensitivity via GR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data including gene expression, western blot, and ChIP analyses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "c41e208e-7c7a-4e77-be2d-0f0fe2c4bf31",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C103",
+      "claim": "TLE3 has a previously undescribed role in conferring enzalutamide sensitivity via GR.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that TLE3 loss, in conjunction with AR inhibition, leads to GR upregulation provides deeper insight into the epigenetic regulation of the GR locus in prostate cancer cells and supports the previously undescribed role of TLE3 in conferring enzalutamide sensitivity via GR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on the novel findings presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "d8814cea-e132-4821-9e15-aac7542e20c6",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C104",
+      "claim": "The availability of in vitro prostate cancer models is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "The availability of in vitro prostate cancer models is limited, and the heterogeneous nature of resistance mechanisms to antihormonal therapies in prostate cancer may explain why TLE3 loss did not confer resistance to enzalutamide in LAPC4 and CWR-R1 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about prostate cancer models",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "e7740e0a-26cb-4fe6-a9c0-cd306d7ec240",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C105",
+      "claim": "The heterogeneous nature of resistance mechanisms to antihormonal therapies in prostate cancer may explain why TLE3 loss did not confer resistance to enzalutamide in LAPC4 and CWR-R1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The availability of in vitro prostate cancer models is limited, and the heterogeneous nature of resistance mechanisms to antihormonal therapies in prostate cancer may explain why TLE3 loss did not confer resistance to enzalutamide in LAPC4 and CWR-R1 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for experimental observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "71999bea-ed25-43de-9fee-a0b581da5ef5",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C106",
+      "claim": "The clinical implications of TLE3 expression in prostate cancer are yet to be resolved and need to be determined in larger cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these observations are in agreement with our hypothesis, the clinical implications of our findings are yet to be resolved and need to be determined in larger cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' acknowledgment of study limitations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "ffa21339-3e11-43bb-b6d1-3d22bbe9a1e8",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C107",
+      "claim": "The findings warrant further investigation into the role of TLE3 and enzalutamide resistance in prostate cancer patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results warrant further investigation into the role of TLE3 and enzalutamide resistance in prostate cancer patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' recommendation based on their findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "685874be-cc1c-4eae-8714-bac4c39c1339",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "claim_id": "C108",
+      "claim": "Apalutamide is a next-generation AR inhibitor structurally similar to enzalutamide.",
+      "claim_type": "EXPLICIT",
+      "source": "The screen was performed using apalutamide (SPARTAN Investigators et al., 2018), which is a next-generation AR inhibitor structurally similar to enzalutamide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge about apalutamide and citation to SPARTAN Investigators et al., 2018",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "39499d7a-9e85-427b-859b-cd01a1757e82",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A genome-wide CRISPR-Cas9 screen identified TLE3 as a modulator of AR inhibitor sensitivity, with TLE3 loss conferring resistance to both enzalutamide and apalutamide in LNCaP prostate cancer cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C38 provide converging evidence from the CRISPR screen (C31-C34), independent validation using sgRNAs and shRNAs (C35-C38), and proliferation assays demonstrating that TLE3 loss confers resistance to AR inhibitors. The screen methodology is described, analysis methods are specified (DESeq2 and MAGeCK), and validation experiments confirm the phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "2044fe18-233a-437d-8d42-b75eb539200e",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TLE3 loss did not confer drug resistance in CWR-R1 and LAPC4 prostate cancer cell lines, indicating context-dependency of this resistance mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by experimental data showing lack of resistance in two additional cell lines. This negative result is important for understanding the generalizability of the findings and is appropriately characterized as context-dependent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "f181dee8-c8aa-41c7-b8b2-01462f26e62d",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Wnt signaling is not altered in TLE3KO cells in the context of enzalutamide treatment, as measured by \u03b2-catenin levels and AXIN2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by western blot and qPCR data showing no changes in Wnt pathway markers. This rules out Wnt signaling as the mechanism of resistance, which is important for focusing on the AR/GR mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "39a46596-65f9-4a82-86bc-b0acbacddb37",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loss of TLE3 leads to persistent expression of androgen-responsive genes and maintenance of AR signaling in the presence of enzalutamide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are supported by transcription factor enrichment analysis, gene expression validation, and GSEA showing that AR signaling is maintained in TLE3KO cells despite enzalutamide treatment. Multiple independent lines of evidence converge on this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "55e3833d-d306-4c11-ba0d-f874c93f2bf7",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TLE3 expression is regulated by AR and androgens, with enzalutamide inducing TLE3 expression and R1881 decreasing it, suggesting a feedback loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by western blot data, ChIP-seq data showing TLE3 and AR binding at the TLE3 locus, and RNA-seq data from published datasets. The feedback loop interpretation (C54) is a reasonable inference from the binding and expression data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "7632c9b6-3ce8-4892-9eee-24b6376307a8",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TLE3 localizes with FOXA1 and AR at androgen response elements, and loss of TLE3 alters expression of androgen-responsive genes toward an active-AR-like profile despite anti-hormonal treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62 are supported by ChIP-seq analysis showing co-binding of TLE3, AR, and FOXA1 at differentially expressed genes, motif enrichment analysis, and integration with expression data. The mechanistic interpretation is well-supported by the chromatin binding profiles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "e1ceb39b-f4e8-44b8-80c2-f4d34e02b11c",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GR is upregulated upon enzalutamide treatment in TLE3KO cells, with TLE3 and AR binding at the GR enhancer and playing a role in transcriptional repression of GR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69 are supported by gene expression data, western blot confirmation, ChIP-seq data showing TLE3/AR binding at the GR enhancer, and motif enrichment analysis. The data converge to support the mechanism of GR derepression upon TLE3 loss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "b3145d12-6a01-4582-8723-8fb73eb4b1fb",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Inhibition of GR resensitizes TLE3KO cells to enzalutamide, and GR binds at chromatin sites proximal to differentially expressed genes in TLE3KO cells treated with enzalutamide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 are supported by genetic (shRNA) and pharmacological (mifepristone) inhibition experiments, ChIP-qPCR showing GR binding at target genes, and histone acetylation data. These experiments establish GR as a functional mediator of resistance in TLE3KO cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "1f42fd49-c78d-4cd3-9481-c2bece818a7d",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Abrogation of the repressive function mediated by both AR and TLE3 at the GR locus allows for increased GR expression, which confers enzalutamide resistance by substituting for AR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C76, and C80 represent the integrated mechanistic model supported by multiple lines of evidence including ChIP data, expression data, and functional rescue experiments. The model is well-supported by the experimental data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "e334355a-e633-4908-863b-178d7e328725",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Several differentially expressed genes in TLE3KO cells overlap with GR-regulated genes described in the LREX model of GR-mediated enzalutamide resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 are supported by comparison with published data from the LREX model. This provides independent validation that the TLE3 loss mechanism converges on known GR-mediated resistance pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "2e765be9-9154-4362-9238-9eaa8e1be805",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TLE3 and GR expression are inversely correlated in prostate cancer patient samples, and low TLE3 expression is a prognostic factor associated with biochemical recurrence in patients treated with anti-hormonal therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C84 are based on analysis of public datasets (TCGA and Abida et al. 2019). While the correlation is statistically significant (p=0.033, n=65), the sample size for the survival analysis is relatively small and the authors acknowledge that clinical implications need validation in larger cohorts (C106). The correlation supports the model but clinical significance remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "6f046772-44db-4dc1-b45e-99fa5bd7c02e",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Immunohistochemistry analysis of matched pre- and post-treatment biopsies from CRPC patients shows that low TLE3 and high GR expression are observed in several cases of enzalutamide resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85-C92 are based on immunohistochemistry of only 4 patients with variable responses to enzalutamide. While the observations are consistent with the hypothesis (low TLE3/high GR in resistant cases), the very small sample size, lack of quantification, and confounding factors (e.g., AR amplification in one patient, C90) make this evidence suggestive but not conclusive. The authors appropriately acknowledge this limitation (C106).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "95234a8f-a514-44eb-abc5-e42e36b6f1b9",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TLE3 loss does not affect AR gene expression in LNCaP cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by qPCR data showing no differential AR mRNA expression between control and TLE3KO cells. This control experiment is important for ruling out changes in AR expression as a mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    },
+    {
+      "id": "7e2d9275-e58a-410a-b828-ba91697949f2",
+      "content_id": "a35349b7-8402-407b-9ec8-aac2b0e81ca1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TLE3 loss, in conjunction with AR inhibition, leads to GR upregulation and represents a previously undescribed role of TLE3 in conferring enzalutamide sensitivity via GR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 summarize the novel findings of the study. The role of TLE3 in regulating GR expression and enzalutamide sensitivity is well-supported by the experimental data including expression, ChIP, and functional studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:06:52.675943Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a52caf04-9376-474a-9061-ae913ff652ac",
+      "result_id": "39499d7a-9e85-427b-859b-cd01a1757e82"
+    },
+    {
+      "claim_id": "46c45297-a590-4cb5-a0bd-45728e78ef17",
+      "result_id": "39499d7a-9e85-427b-859b-cd01a1757e82"
+    },
+    {
+      "claim_id": "9b5324e1-3805-4b7c-a4ce-3a9afeedb94d",
+      "result_id": "39499d7a-9e85-427b-859b-cd01a1757e82"
+    },
+    {
+      "claim_id": "0ff426fa-74a2-46de-9a34-39207c6022bc",
+      "result_id": "39499d7a-9e85-427b-859b-cd01a1757e82"
+    },
+    {
+      "claim_id": "2381b3d5-86d0-493c-bfc4-1142615801cf",
+      "result_id": "39499d7a-9e85-427b-859b-cd01a1757e82"
+    },
+    {
+      "claim_id": "389fecc8-78c4-46e8-a4ee-4927d2080700",
+      "result_id": "39499d7a-9e85-427b-859b-cd01a1757e82"
+    },
+    {
+      "claim_id": "6c63e887-d28d-4a08-8e7e-a423e4aa7176",
+      "result_id": "39499d7a-9e85-427b-859b-cd01a1757e82"
+    },
+    {
+      "claim_id": "2221d086-32b2-4295-97a5-9d5cf419d4ea",
+      "result_id": "39499d7a-9e85-427b-859b-cd01a1757e82"
+    },
+    {
+      "claim_id": "0a9f606e-768c-4fd8-be6b-4d33332dfefa",
+      "result_id": "39499d7a-9e85-427b-859b-cd01a1757e82"
+    },
+    {
+      "claim_id": "bd69212b-2580-491b-84c6-956489b4a63f",
+      "result_id": "39499d7a-9e85-427b-859b-cd01a1757e82"
+    },
+    {
+      "claim_id": "0102f002-6c5a-48b5-a9f3-e235675c2532",
+      "result_id": "2044fe18-233a-437d-8d42-b75eb539200e"
+    },
+    {
+      "claim_id": "697764fc-e460-410c-ac2d-1f05ca165402",
+      "result_id": "2044fe18-233a-437d-8d42-b75eb539200e"
+    },
+    {
+      "claim_id": "0712ebbd-4e3d-4a12-bbba-f2ed5fabd2d0",
+      "result_id": "f181dee8-c8aa-41c7-b8b2-01462f26e62d"
+    },
+    {
+      "claim_id": "bbeab943-10dd-44c6-9d49-b9fb4d00506d",
+      "result_id": "f181dee8-c8aa-41c7-b8b2-01462f26e62d"
+    },
+    {
+      "claim_id": "cb1d9911-9a5b-4d7d-81e2-54f4fc4ed5aa",
+      "result_id": "f181dee8-c8aa-41c7-b8b2-01462f26e62d"
+    },
+    {
+      "claim_id": "df2dee88-e751-40a5-9128-ed10348de5e5",
+      "result_id": "39a46596-65f9-4a82-86bc-b0acbacddb37"
+    },
+    {
+      "claim_id": "610db73a-e040-4896-b0bb-c38c95660c23",
+      "result_id": "39a46596-65f9-4a82-86bc-b0acbacddb37"
+    },
+    {
+      "claim_id": "7943323e-a5fe-4228-8795-86e879170e00",
+      "result_id": "39a46596-65f9-4a82-86bc-b0acbacddb37"
+    },
+    {
+      "claim_id": "29fdc1c0-7d04-4b5a-be76-19066b416a21",
+      "result_id": "39a46596-65f9-4a82-86bc-b0acbacddb37"
+    },
+    {
+      "claim_id": "05f6a30e-d203-4fa4-b445-e793f751ed0b",
+      "result_id": "39a46596-65f9-4a82-86bc-b0acbacddb37"
+    },
+    {
+      "claim_id": "6ee96b90-42bb-4ce9-82fc-9b35c5c56051",
+      "result_id": "55e3833d-d306-4c11-ba0d-f874c93f2bf7"
+    },
+    {
+      "claim_id": "1b52ef70-07a4-40bc-8802-1d62be4e7404",
+      "result_id": "55e3833d-d306-4c11-ba0d-f874c93f2bf7"
+    },
+    {
+      "claim_id": "7ca94f71-b4de-4a39-b849-278d2e8ea259",
+      "result_id": "55e3833d-d306-4c11-ba0d-f874c93f2bf7"
+    },
+    {
+      "claim_id": "792591c5-f2f6-4b44-94e7-2616a7ba23e2",
+      "result_id": "55e3833d-d306-4c11-ba0d-f874c93f2bf7"
+    },
+    {
+      "claim_id": "1b25f438-317a-4cbc-b24b-22ba4f1eb4b3",
+      "result_id": "55e3833d-d306-4c11-ba0d-f874c93f2bf7"
+    },
+    {
+      "claim_id": "0abea45e-304b-4d6b-b1c1-6cd791a3405f",
+      "result_id": "7632c9b6-3ce8-4892-9eee-24b6376307a8"
+    },
+    {
+      "claim_id": "2bac2182-0862-4c71-8ac7-4562e269045b",
+      "result_id": "7632c9b6-3ce8-4892-9eee-24b6376307a8"
+    },
+    {
+      "claim_id": "c853f7c5-2d1c-4641-b264-12b8f673a369",
+      "result_id": "7632c9b6-3ce8-4892-9eee-24b6376307a8"
+    },
+    {
+      "claim_id": "2c142dad-5d17-4898-a417-279f52b18966",
+      "result_id": "7632c9b6-3ce8-4892-9eee-24b6376307a8"
+    },
+    {
+      "claim_id": "438b3c46-5607-42fd-9012-1348c46745b3",
+      "result_id": "7632c9b6-3ce8-4892-9eee-24b6376307a8"
+    },
+    {
+      "claim_id": "e07eadf6-4fcc-4328-b971-ef8d0e85ee95",
+      "result_id": "7632c9b6-3ce8-4892-9eee-24b6376307a8"
+    },
+    {
+      "claim_id": "ff85fc4e-889d-404d-8a31-860933596b1a",
+      "result_id": "e1ceb39b-f4e8-44b8-80c2-f4d34e02b11c"
+    },
+    {
+      "claim_id": "0355c492-636b-4cd7-b084-993be0563638",
+      "result_id": "e1ceb39b-f4e8-44b8-80c2-f4d34e02b11c"
+    },
+    {
+      "claim_id": "0e4785c7-9e07-4ac1-97f4-7fc0ccf421c7",
+      "result_id": "e1ceb39b-f4e8-44b8-80c2-f4d34e02b11c"
+    },
+    {
+      "claim_id": "3b2b52ac-88d7-4fd5-8377-0b2c0cf8ca3b",
+      "result_id": "e1ceb39b-f4e8-44b8-80c2-f4d34e02b11c"
+    },
+    {
+      "claim_id": "5c5ea385-5116-4a7a-aac0-4b9afe71dd00",
+      "result_id": "e1ceb39b-f4e8-44b8-80c2-f4d34e02b11c"
+    },
+    {
+      "claim_id": "e0718e76-b2e9-4a2f-96f6-480f896134b8",
+      "result_id": "e1ceb39b-f4e8-44b8-80c2-f4d34e02b11c"
+    },
+    {
+      "claim_id": "dd455497-64e5-49d8-b67e-5bcaad03b64d",
+      "result_id": "e1ceb39b-f4e8-44b8-80c2-f4d34e02b11c"
+    },
+    {
+      "claim_id": "88724e8b-66e2-4fdd-9ba4-62522c186171",
+      "result_id": "b3145d12-6a01-4582-8723-8fb73eb4b1fb"
+    },
+    {
+      "claim_id": "be8725cb-bc41-4254-9bf2-9d5cefe4a749",
+      "result_id": "b3145d12-6a01-4582-8723-8fb73eb4b1fb"
+    },
+    {
+      "claim_id": "9df75b42-cf7c-4d53-aa37-a8b8aa09e03d",
+      "result_id": "b3145d12-6a01-4582-8723-8fb73eb4b1fb"
+    },
+    {
+      "claim_id": "d4cf76c4-91c5-4b07-9b5d-cf3b792a4646",
+      "result_id": "b3145d12-6a01-4582-8723-8fb73eb4b1fb"
+    },
+    {
+      "claim_id": "671183e1-ab94-4a40-863b-28b11841c128",
+      "result_id": "1f42fd49-c78d-4cd3-9481-c2bece818a7d"
+    },
+    {
+      "claim_id": "3dfb3fcb-302a-462c-bd3e-1a5515032bb8",
+      "result_id": "1f42fd49-c78d-4cd3-9481-c2bece818a7d"
+    },
+    {
+      "claim_id": "f3c57b19-abac-4ae9-a276-6be2fdbad929",
+      "result_id": "1f42fd49-c78d-4cd3-9481-c2bece818a7d"
+    },
+    {
+      "claim_id": "a0fc635d-0f86-4114-bd78-654c724d6a83",
+      "result_id": "e334355a-e633-4908-863b-178d7e328725"
+    },
+    {
+      "claim_id": "e4148c46-091e-4009-a9dc-960d9bcb1d05",
+      "result_id": "e334355a-e633-4908-863b-178d7e328725"
+    },
+    {
+      "claim_id": "7b5cc731-b751-4e8f-a57b-a3a644989311",
+      "result_id": "e334355a-e633-4908-863b-178d7e328725"
+    },
+    {
+      "claim_id": "12ff1348-5481-447e-b7ae-f42970831553",
+      "result_id": "2e765be9-9154-4362-9238-9eaa8e1be805"
+    },
+    {
+      "claim_id": "881a76c0-6140-4485-8e00-52ad7a68d5e2",
+      "result_id": "2e765be9-9154-4362-9238-9eaa8e1be805"
+    },
+    {
+      "claim_id": "cbe1edc5-e4ff-402e-844a-3f4f619ae1fd",
+      "result_id": "2e765be9-9154-4362-9238-9eaa8e1be805"
+    },
+    {
+      "claim_id": "c5d585ce-a5d5-40ad-b754-a20f6d974b0c",
+      "result_id": "2e765be9-9154-4362-9238-9eaa8e1be805"
+    },
+    {
+      "claim_id": "22fad892-bb8d-4a79-b037-720368a8d812",
+      "result_id": "6f046772-44db-4dc1-b45e-99fa5bd7c02e"
+    },
+    {
+      "claim_id": "992d0d81-1f8a-40bb-b220-767a6558d39c",
+      "result_id": "6f046772-44db-4dc1-b45e-99fa5bd7c02e"
+    },
+    {
+      "claim_id": "13c5e57d-f883-41c5-9013-717288b405c4",
+      "result_id": "6f046772-44db-4dc1-b45e-99fa5bd7c02e"
+    },
+    {
+      "claim_id": "f0f27c80-f11b-4b0a-a3a1-0a44a61f51e4",
+      "result_id": "6f046772-44db-4dc1-b45e-99fa5bd7c02e"
+    },
+    {
+      "claim_id": "4cb5c5ea-f97d-4c0e-b479-89c1dccf4788",
+      "result_id": "6f046772-44db-4dc1-b45e-99fa5bd7c02e"
+    },
+    {
+      "claim_id": "f2afa41c-8e46-46fe-ab55-a3ce44bd4507",
+      "result_id": "6f046772-44db-4dc1-b45e-99fa5bd7c02e"
+    },
+    {
+      "claim_id": "a3770a6c-6190-4f32-a462-051738a3992e",
+      "result_id": "6f046772-44db-4dc1-b45e-99fa5bd7c02e"
+    },
+    {
+      "claim_id": "4cc68bc6-6847-4475-8956-fae8a5acb1fe",
+      "result_id": "6f046772-44db-4dc1-b45e-99fa5bd7c02e"
+    },
+    {
+      "claim_id": "cd047845-7024-43c3-b3a9-3b9700b2814a",
+      "result_id": "95234a8f-a514-44eb-abc5-e42e36b6f1b9"
+    },
+    {
+      "claim_id": "68130456-e9ea-4155-9d9b-b1aa3ed51a0e",
+      "result_id": "7e2d9275-e58a-410a-b828-ba91697949f2"
+    },
+    {
+      "claim_id": "c41e208e-7c7a-4e77-be2d-0f0fe2c4bf31",
+      "result_id": "7e2d9275-e58a-410a-b828-ba91697949f2"
+    }
+  ],
+  "comparisons": []
+}

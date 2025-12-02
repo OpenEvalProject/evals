@@ -1,0 +1,2475 @@
+{
+  "submission": {
+    "id": "440fd332-a750-4943-b688-08be9bcb64f8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T20:18:38.015800Z",
+    "updated_at": "2025-12-02T20:18:38.015800Z"
+  },
+  "content": [
+    {
+      "id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "submission_id": "440fd332-a750-4943-b688-08be9bcb64f8",
+      "content_type": "manuscript",
+      "content_text": "# Lef1 expression in fibroblasts maintains developmental potential in adult skin to regenerate wounds\n\n## Authors\n\n- Quan M Phan<sup>1</sup>\n- Gracelyn M Fine<sup>1</sup>\n- Lucia Salz<sup>1</sup>\n- Gerardo G Herrera<sup>1</sup>\n- Ben Wildman<sup>1</sup>\n- Iwona M Driskell<sup>1</sup>\n- Ryan R Driskell<sup>1</sup> ([ORCID: 0000-0001-7673-2564](https://orcid.org/0000-0001-7673-2564)) \u2020\n\n### Affiliations\n\n1. School of Molecular Biosciences, Washington State University Pullman United States\n2. Center for Reproductive Biology, Washington State University Pullman United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nScars are a serious health concern for burn victims and individuals with skin conditions associated with wound healing. Here, we identify regenerative factors in neonatal murine skin that transforms adult skin to regenerate instead of only repairing wounds with a scar, without perturbing development and homeostasis. Using scRNA-seq to probe unsorted cells from regenerating, scarring, homeostatic, and developing skin, we identified neonatal papillary fibroblasts that form a transient regenerative cell type that promotes healthy skin regeneration in young skin. These fibroblasts are defined by the expression of a canonical Wnt transcription factor Lef1 and using gain- and loss of function genetic mouse models, we demonstrate that Lef1 expression in fibroblasts primes the adult skin macroenvironment to enhance skin repair, including regeneration of hair follicles with arrector pili muscles in healed wounds. Finally, we share our genomic data in an interactive, searchable companion website (https://skinregeneration.org/). Together, these data and resources provide a platform to leverage the regenerative abilities of neonatal skin to develop clinically tractable solutions that promote the regeneration of adult tissue.\n\n## Introduction\n\nUnderstanding how to induce skin regeneration instead of scarring will have broad implications clinically and cosmetically (Walmsley et al., 2015b). One of the main characteristics of scars is the absence of hair follicles, indicating that their regeneration in a wound may be a critical step in achieving scar-less skin repair (Yang and Cotsarelis, 2010). Interestingly, human embryonic skin has the capacity to regenerate without scars (Lo et al., 2012). Similarly, neonatal and adult mouse skin has the capacity to regenerate small non-functional hair follicles under specific conditions (Figure 1c\u2013d;\u00a0Ito et al., 2007; Rognoni et al., 2016; Telerman et al., 2017). These insights have prompted efforts in the field to define the molecular triggers that promote hair development in skin, with the ultimate goal of devising a way to regenerate fully functional hairs in adult skin wounds as a therapeutic modality (Yang and Cotsarelis, 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig1-v1.jpg)\n\n**Figure 1.:** (a\u2013d) Immunostaining analysis and histological map of the dermis in developing Post-natal day 2 (P2) skin (a), homeostatic skin at P21 (b), skin undergoing regeneration P2 7 days post wound (7dwp) (c), and skin repairing a wound via scarring P21 7dpw (d). (e) Schematic representation of single-cell isolation, library preparation, and sequencing analysis for unsorted cells from developing (P2), regenerating (P2 7dpw), homeostatic (P21), and scarring (P21 7dpw) conditions. (f) UMAP visualization of all cell populations for all conditions. Each cell is color coded based according to condition as labeled. (g) Clustering analysis of the UMAP plot, color coded based on cell types. (h) Overlaying gene expression on UMAP clusters to identify cell types. (i) Quantification of the percentage of all cells represented within a cluster. (j) Subset and re-clustering of Clusters 3, 4, and 16 by computational integration. (k) Cluster analysis of integrated fibroblast clusters 3, 4, and 16. (l) Quantitation of fibroblasts within each cluster represented by condition. n\u00a0=\u00a03 biological replicates for each condition. Each biological replicate was used to generate a single library. Scale bars are 100 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Over-laying gene expression for cell markers on UMAP plots. (b) Dotplot of genes based on expression in cluster.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a\u2013d) Batch analysis of all conditions revealed minimal batch effect.\n\nHuman and mouse skin are similar in their overall structural complexity, indicating that mouse skin can be a useful model to study skin development and wound repair (Chen et al., 2013). Murine hair follicle and skin development primarily occurs between embryonic day 12.5 (E12.5) to post-natal day 21 (P21) (M\u00fcller-R\u00f6ver et al., 2001). During this time, different fibroblast lineages are established that respond to the changes in the environment to support hair follicle and skin development (Driskell et al., 2013; Jiang et al., 2018; Rinkevich et al., 2015; Rognoni et al., 2016). Fibroblasts that support hair follicle development differentiate from the papillary fibroblast lineage, into dermal papilla (DP), dermal sheath (DS), and arrector pili (AP) cells (Driskell et al., 2013; Plikus et al., 2017). Reticular fibroblasts, which cannot differentiate into papillary fibroblast lineages, secrete extra-cellular-matrix (ECM) and form adipocytes (Driskell et al., 2013; Schmidt and Horsley, 2013). By post-natal day 2 (P2) fibroblast heterogeneity is fully established with the presence of the defined layers of the dermis (Figure 1a;\u00a0Driskell et al., 2013). Skin maturation occurs after P2 with the formation of the AP and the completion of the first hair follicle cycle, which results in the loss of a defined papillary fibroblast layer (Figure 1b;\u00a0Driskell et al., 2013; Rognoni et al., 2016; Salzer et al., 2018). We have previously shown that papillary fibroblasts are the primary source of de-novo dermal papilla during skin development, which are required for hair formation (Driskell et al., 2013). Furthermore, it has been suggested that adult murine skin form scars due to the lack of a defined papillary layer (Driskell et al., 2013; Driskell and Watt, 2015). Consequently, expanding this fibroblast\u00a0layer in adult skin might support skin regeneration in adult mice.\n\nThe use of scRNA-seq in the murine skin has established useful cell atlases of the skin during development and homeostasis (Guerrero-Juarez et al., 2019; Haensel et al., 2020; Joost et al., 2020; Joost et al., 2018; Joost et al., 2016; Mok et al., 2019). In addition, scRNA-seq studies investigating wound healing have so far focused on comparing scarring, non-scarring, or regenerating conditions (Guerrero-Juarez et al., 2019; Haensel et al., 2020; Joost et al., 2018). These studies have helped to identified key markers of the newly discovered skin fascia, including Gpx3, Plac8, and Mest, which recently has been shown to contribute to scar formation (Correa-Gallegos et al., 2019; Grachtchouk et al., 2000; Joost et al., 2020). These, scRNA-seq studies have revealed that transgenic activation of the Shh pathway in the alpha-smooth-actin cells in scarring wounds, which includes pericytes, blood vessels, and myofibroblasts, can support small non-functional hair regeneration (Lim et al., 2018). However, activation of Shh pathway in dermal fibroblasts is associated with malignant phenotypes and may perturb development and homeostasis such that it may not be a safe target to support human skin regeneration clinically (Fan et al., 1997; Grachtchouk et al., 2000; Oro et al., 1997; Sun et al., 2020). Altogether, these findings suggest that an overall comparison of developing, homeostatic, scarring, and regenerating skin conditions will yield important discoveries for molecular factors that can safely support skin regeneration without harmful side effects.\n\nThe Wnt signaling pathway is involved in regulating development, wound healing, disease and cancer (Nusse and Clevers, 2017). Studies that activated Wnt and beta-catenin in skin have led to important discoveries for wound healing but have produced contrasting results in the context of fibroblast biology and hair follicle formation (Chen et al., 2012; Enshell-Seijffers et al., 2010; Hamburg-Shields et al., 2015; Lim et al., 2018; Rognoni et al., 2016). Wnts are a group of secreted protein that activates a cascade of events that stabilizes nuclear beta-catenin, which operates as a powerful co-transcription factor of gene expression. Importantly, beta-catenin alone cannot activate the expression of Wnt target genes without co-transcription factors. There are four Wnt co-transcription factors Tcf7 (Tcf1), Lef1, Tcf3 (Tcf7l1), and Tcf4 (Tcf7l2). These co-transcription factors modulate the functional outcome of Wnt signaling by binding to different target genes (Adam et al., 2018; Nguyen et al., 2009; Yu et al., 2012). In the context of wound healing and regeneration, it is not known how differential expression of Tcf/Lef can modulate fibroblast activity via Wnt signaling.\n\nSince it has been shown that embryonic and neonatal skin have the potential to regenerate hair follicles upon wounding (Hu et al., 2018; Rognoni et al., 2016), we set out to identify the cell types and molecular factors that define this ability in order to transfer this regenerative potential to adult tissue. Our work has identified Lef1, as the factor in fibroblast of developing skin, that can transform adult tissue to regenerate.\n\n## Results\n\n### Developing fibroblasts are distinct cells that are associated with the ability to support hair follicle regeneration\n\nWe and others have previously shown that there are differences between neonatal and adult skin in terms of their cellular and biological properties (Ge et al., 2020; Rognoni et al., 2016; Salzer et al., 2018). These differences influence how skin can repair or if it can regenerate hair follicles in a wound. We showed that neonatal developing skin at P2 (Figure 1a) can regenerate small hair follicles 7 days after wounding (7dpw) (Figure 1c), while adult homeostatic skin at P21 (Figure 1b) heals by scarring 7dpw (Figure 1d). In order to identify the cell types and molecular pathways that define the ability of developing skin to regenerate, we performed a comparison of unsorted cells from four conditions using scRNA-seq (Figure 1e). A total of 66,407 cells from 12 libraries (n\u00a0=\u00a03 for each condition) met the preprocessing threshold, showed little batch variation (Figure 1\u2014figure supplement 2), and were used for downstream analysis. Each condition was represented as different colors (Figure 1e\u2013f). UMAP plotting of the 66,407 sequenced cells revealed distinct clusters (Figure 1f\u2013g). To identify cell clusters, we used Louvain modulating analysis (Joost et al., 2016; Wolf et al., 2018), which resulted in 18 distinct clusters (Figure 1g). We assigned seven main classes of cells to the clusters. Keratinocytes represented the largest portion of cell types in the analysis (blue clusters - 0, 1, 2, 5, 8, 9, 11, 12, 17) (Figure 1h). We identified three distinct fibroblast clusters (green clusters - 3, 4, 16). These clusters expressed Twist2, Pdgfra, and En1 (Figure 1h). We also identified other clusters based on their distinct gene expression profile (Figure 1h; Supplementary file 1), such as immune cells (cluster 6), vasculature (clusters\u00a0-\u00a07, 15), Schwann cells (cluster 10), melanocytes (cluster 13), and a pericyte population (cluster 14).\n\nTo identify a unique cell type that supports the ability to regenerate hair follicles, we quantified the number of cells for each condition within a cluster and graphed them as a percentage of cell condition within a cluster (Figure 1i). Unexpectedly, there was no cluster exclusively defined by over-representation of the regenerating condition. Regenerating (green) and scarring (red) conditions were found in similar proportions amongst Keratinocytes, lymphocytes/blood, melanocytes, Schwann cells, blood vessels and fibroblasts (Figure 1i). However, there were two clusters that were distinct based on the percentage of cell types from a specific condition. Cluster 16 consisted of 99.9% of fibroblasts from homeostatic skin, while Cluster 3 consisted of 67.8% of developing fibroblasts (Figure 1i). In addition, cluster 4 consisted of 25.7% of regenerating condition, 57.6% of the scarring conditions. Since fibroblasts are known to play a critical role in regulating hair follicle reformation in wounds by differentiating into de-novo DP (Driskell et al., 2013; Plikus et al., 2017; Rognoni et al., 2016), we chose to further analyze clusters 3, 4, and 16.\n\nWe subset the fibroblast clusters 3,\u00a04,\u00a016 and re-clustered them by performing an integration analysis (Pola\u0144ski et al., 2020). This allowed us to test if different fibroblast subtypes, such as the papillary and reticular/hypodermal/fascia lineages, would be represented uniquely within a condition (Figure 1j\u2013l). UMAP plotting of the integrated analysis revealed 10 distinct clusters (Figure 1k). The largest cluster (cluster 0) expressed markers of the papillary fibroblast lineage (Figure 1e\u2013g). Four clusters (clusters 1, 2, 3, 4) distinctly expressed markers of the reticular/hypodermal/fascia layers of the dermis (Figure 1k; Figure 1\u2014figure supplement 1a\u2013b; Supplementary file 1;\u00a0Correa-Gallegos et al., 2019; Joost et al., 2018). Three clusters (clusters 6,\u00a07,\u00a08) expressed markers of the dermal papilla and dermal sheath (Figure 1e\u2013g). One cluster was distinctly represented by Acta2 indicating a myofibroblast subtype (cluster 9).\n\nTo identify conditions that are represented within specific fibroblast subtypes, we quantified the percentage of cells from each condition within the sub-clusters (Figure 1l). Our results revealed that four clusters were uniquely represented by four conditions. The myofibroblast sub-cluster (cluster 9) contained 69% of cells from the regenerating condition, while a hypodermal fascia cluster (cluster 1) contained 92.2% of cells from the scarring condition. Cluster 4, identified by the high expression of Cochlin (Coch), an inner ear ECM protein, contained 80.8% of cells from the homeostasis condition and a DP/DS sub-clusters (cluster 6) contained 95.0% of cells from the homeostasis condition. The papillary fibroblast cluster (cluster 0) contained 98.1% of cells from the developing skin condition. The DP sub-cluster (cluster 7) consisted of 56.5% cells from the developing condition and 37.1% cells from the regenerating condition. These results indicate that there is a distinct separation based on condition between fibroblast sub-types neonatal papillary fibroblasts versus reticular/hypodermal/fascia. Moreover, regenerating, and scarring conditions were present in similar proportions across multiple fibroblasts subtypes, besides clusters of hypodermal and fascia cells that were mainly composed of the scarring condition. This suggested that both wounding conditions shared similar cellular and molecular signatures that may be driven by the wound healing process.\n\nSince our goal was to identify a cell type that uniquely represented the ability to support hair follicle formation that does not include a wound induced signature, we focused on cluster 0 which are developing fibroblasts. Developing fibroblasts migrate into wounds and support the reformation of hair follicles (Driskell et al., 2013; Rognoni et al., 2016). In homeostatic skin DP and DS are critical for hair follicle growth and cycling. However, they do not migrate into wounds to support hair follicle reformation (Johnston et al., 2013; Kaushal et al., 2015; Abbasi et al., 2020). Myofibroblasts are a major contributor to scar formation but may not normally differentiate into dermal papilla during hair follicle regeneration (Lim et al., 2018; Plikus et al., 2017). Furthermore, reticular and fascia fibroblasts contribute to scar formation but do not differentiate into dermal papilla (Correa-Gallegos et al., 2019; Driskell et al., 2013). We conclude that the developing fibroblasts are unique and might harbor the potential to support hair follicle regeneration in wounds.\n\n### Lef1 drives neonatal papillary lineage trajectory in developing fibroblasts\n\nNeonatal developing skin has been extensively studied in the context of functional fibroblasts heterogeneity (Driskell et al., 2013). To identify fibroblasts lineages in scRNA-seq data, we isolated cell clusters from developing skin using pan fibroblast marker Pdgfra and Twist2 (Figure 2d, Figure 2\u2014figure supplement 1;\u00a0Collins et al., 2011)\u00a0and then overlaid previously identified molecular markers of different lineages including papillary (Dpp4+/Dlk1-/Ly6a-), reticular (Dpp4-/Dlk1+/Ly6a+/-) and hypodermal fibroblasts (Dpp4-/Dlk1-/Ly6a+) on the developing scRNA-seq UMAP (Figure 2a\u2013e). We also identified small populations of fascia utilizing the new marker Gpx3 (Figure 2d; Joost et al., 2020). Furthermore, the dermal sheath cluster was identified by expression of Acan and Acta2 (Heitman et al., 2020; Figure 2d, Figure 2\u2014figure supplement 1), which is plotted between the dermal papilla (DP) and papillary fibroblasts clusters (Figure 2d\u2013e). The DP clusters were defined by expression of Corin, a well-established marker for DP (Enshell-Seijffers et al., 2008). Interestingly, we also found novel heterogeneity within papillary fibroblast clusters. Besides the Dpp4+ clusters, Lef1 and Dkk1 expressions marked distinct papillary fibroblast clusters (Figure 2i, Figure 2\u2014figure supplement 1). Overall, we concluded that the previously identified fibroblasts heterogeneity and the lineages could be identified in the scRNA-seq analysis of developing skin, with the additional subclusters of papillary fibroblasts (Figure 2e; Driskell et al., 2013).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig2-v1.jpg)\n\n**Figure 2.:** (a\u2013c) Immunostaining development (P2) skin for Papillary (a) (Dpp4), Reticular/Hypodermal (b) (Dlk1/Pref1), and Hypodermal makers (c) (Ly6a). (d) Overlaying fibroblast lineage markers on UMAP projections of developing fibroblasts. (e) UMAP analysis of developing fibroblasts (f\u2013g) RNA Velocity analysis overlaid on UMAP projection of developing fibroblasts. Clusters are colored coded and labeled. (h) GO Analysis of 195 driver genes of RNA Velocity for developing fibroblasts. (i) Top 5 Velocity driver genes of developing fibroblast clusters. (j) Phase contrast analysis of Lef1 and Wnt5a. (i\u2013m) Immunostaining developing (P2) and homeostatic (P21) time points for Lef1 expression and counterstained with Itga6. Red arrows indicate areas of papillary dermis expressing Lef1. White arrows indicate papillary dermal region. (n\u2013o) Immunostaining developing (P2) and homeostatic (P21) skin for Lef1 and Dpp4. Scale bars are 100 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Over-laying gene expression for fibroblast lineage markers.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Comparative clustering analysis of regenerating and scarring fibroblasts projected as a UMAP. (b) Velocity analysis of regenerating and scarring fibroblasts. (c) Expression analysis of fibroblast markers in regenerating and scarring fibroblasts. (d) Comparative clustering analysis of developing and regenerating fibroblasts projected as a UMAP. (e) Velocity analysis of developing and regenerating fibroblasts. (f) Expression analysis of fibroblast markers in developing and regenerating fibroblasts.\n\nTo estimate and predict the future state of developing fibroblasts and to identify the driver genes for fibroblast heterogeneity, we performed RNA velocity analysis (Figure 2f; Bergen et al., 2020). RNA velocity computationally compares the ratio of spliced and un-spliced mRNA from scRNA-seq data to estimate differentiation trajectories. The overall velocity analysis of developing fibroblasts is projected as arrows on the UMAP plot and it is defined by a list of putative driver genes (Supplementary file 2). Velocity analysis predicts that the dermal papilla is a differentiation endpoint, while papillary fibroblasts converge into the Dpp4 subcluster. Interestingly, the predicted differentiation trajectory of reticular fibroblasts suggests that they differentiate into arrector pili and also converge into the Dpp4 papillary subcluster. This contradicts previous in vivo lineage-tracing studies of the Dlk1+ fibroblast populations but agrees with ex vivo studies that tested the differentiation potential of Dpp4-/Dlk1+/Ly6a- fibroblast populations in chamber grafting and hydrogel assays (Driskell et al., 2013). Hypodermal and fascia fibroblast clusters were predicted to maintain the lower lineage (Figure 2f).\n\nRNA velocity analysis predicts cellular trajectories using a list of the same driver genes that are ranked differently in each cluster (Figure 2i, Supplementary file 2). These genes are ranked based on their roles in driving the velocity trajectories. We performed PANTHER pathway classification on this list genes and found that the most highly represented pathways included Integrin signaling, Wnt signaling, Cadherin signaling and TGFb signaling pathways (Figure 2h; Supplementary file 5). We next ranked the top five genes that drive the velocity of each cluster (Figure 2i). We found that Dkk2, Mef2c, Lef1, and Egfl6 were identified to drive the velocity for different papillary clusters (Figure 2i). Col25a1, Smoc2, Fn1, Dcn, and Col4a1 were found to drive velocity to reticular and fascia clusters. Interestingly, Lef1 was found in the Papillary Dkk1 fibroblasts and the Dividing Papillary subclusters (Figure 2i). This suggests that the expression of Lef1 may drive RNA velocity toward papillary fibroblast and dermal papilla. We further analyzed Wnt signaling genes found in the papillary and dermal papilla clusters to determine the direction of the trajectory by phase contrast analysis (Figure 2j) Phase contrast analysis predicts that Lef1 and Wnt5a velocity increases towards to the papillary fibroblast and dermal papilla clusters (Figure 2j\u2013k).\n\nTo validate the expression and localization of Lef1 in developing skin fibroblasts, we visualized the in vivo expression pattern via immunostaining (Figure 2l\u2013o). Our results confirmed the population of neonatal papillary fibroblasts that is found only in developing skin (Figure 2j, red arrows) and not in juvenile homeostatic skin (Figure 2k, white arrows). Co-staining with Dpp4 confirmed that Lef1 marked a subset of neonatal papillary fibroblasts (Figure 2l) that was also not found in juvenile skin (Figure 2m).\n\nThe transient expression of Lef1 in neonatal papillary fibroblast correlates with the ability of neonatal developing skin to regenerate hair follicles in wounds (Rognoni et al., 2016). In addition, velocity analysis predicts that Lef1 drives developing fibroblast velocity to papillary fibroblast and DP. Importantly, subset analysis of regenerating and scarring fibroblasts did not identify fibroblasts defined by Lef1 expression, indicating that this transient population is unique to developing skin (Figure 2\u2014figure supplement 2a\u2013f; Supplementary file 4). We hypothesize that Lef1 expression in fibroblasts marks the ability of developing skin to regenerate hair follicles during the wound healing process.\n\n### Neonatal skin regeneration requires Lef1 expression in fibroblasts\n\nBased on our scRNA-seq findings, we postulated that Lef1 defines a neonatal papillary fibroblast that supports skin regeneration during neonatal wound healing. To test if Lef1 in fibroblasts is required to support neonatal regeneration, we produced a tissue-specific knockout model. We utilized the dermal specific promoter Twist2 to drive Cre expression, bred with a mouse line with flox sites flanking Exon 7 and 8 of the Lef1 locus (Yu et al., 2012). We called this mouse line Twist-Lef1cKO (Figure 3a). Twist-Lef1cKO mice were viable and fertile with small shifts in hair follicle phenotypes that resulted in less dense fur (Fine et al., 2020). We confirmed dermal Lef1 ablation from the papillary fibroblast at P2 and from adult DP by immunostaining (Figure 3b\u2013e). We also performed 2 mm wounds on P2 Twist-Lef1cKO and wild-type littermates harvesting at 7dpw (Figure 3f). Our analyses revealed that Lef1 was expressed in the de-novo DP and regenerating hair follicle buds of wild-type mice (Figure 3g,i), but that wounded Twist-Lef1cKO mice lacked regeneration (Figure 3h,j,k). We conclude that Lef1 expression in neonatal fibroblasts is required for neonatal hair follicle regeneration in wounds.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig3-v1.jpg)\n\n**Figure 3.:** (a) Schematic representation of transgenic strategy to ablate Lef1 expression in dermal fibroblasts. Scale bars are 50 \u03bcm (b\u2013e) Verifying dermal Lef1 ablation by immunostaining. White arrows indicate papillary regions (b\u2013c) or dermal papilla (d\u2013e). Scale bars are 50 \u03bcm (f) Schematic describing 2 mm circular wounds and harvest times to test if dermal Lef1 is required for regeneration. (g\u2013i) Immunostaining of P2 7 days post wound (7dpw) skin for Itga6 and Lef1. (g-h Scale bars are 100 \u03bcm) Wound beds are highlighted by white outline. White arrows indicate regenerating hair follicles. (i-j Scale bars are 50 \u03bcm) (k) Quantification of regenerating hair follicles in wounds beds of n\u00a0=\u00a04 Lef1fl/fl (WT) and n\u00a0=\u00a03 Twist-Lef1cKO mice. p<0.003.\n\n### Dermal Lef1 expression primes adult skin to enhance regeneration in large wounds\n\nOur scRNA-seq data, together with tissue-specific knockout, implies that Lef1 expression in the dermis could convey the regenerative ability of neonatal papillary fibroblasts in adult skin. We hypothesize that constitutively active Lef1 expression in dermal fibroblasts will prime skin to support regeneration. To induce Lef1 expression in the dermis of the skin, we utilized a previously published transgenic mouse model Lef1KI (Lynch et al., 2016) bred with Twist2-Cre mouse line called the Twist-Lef1KI line (Figure 4a). We verified that Lef1 was expressed in all dermal fibroblast compartments in Twist-Lef1KI mice during development and in adult homeostatic skin conditions (Figure 4b\u2013e). Importantly, the only phenotype detected was the early entry of the hair follicle cycling into anagen at P21 in Twist-Lef1KI mice (Figure 2d\u2013e). In addition, Twist-Lef1KI mice have similar life spans as wild type mice without any adverse effects (Figure 4\u2014figure supplement 1). Our results reveal that induced expression of Lef1 in fibroblasts does not negatively affect the development and homeostasis of murine skin.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig4-v1.jpg)\n\n**Figure 4.:** (a) Schematic representation of transgenic strategy to ectopically express Lef1 in fibroblasts during development, homeostasis, and wound healing. (b\u2013c) Immunostaining for Lef1 and GFP in P0 Lef1KI and Twist-Lef1KI (Twist-Cre+/Lef1KI+) mice. (d\u2013e) Immunostaining for Lef1 and PDGFRa in P21 Lef1KI and Twist-Lef1KI mice. (f) Schematic representation of wound healing approach. (g\u2013k) Immunostaining tissue for Lef1 and Itga8 (arrector pili) from the wounds of Lef1KI and Twist-Lef1KI mice. Regenerating hair follicles in Lef1KI mice can be found by red arrows. Wound beds are marked by white\u00a0dotted\u00a0outlines. High resolution area of regenerating hair follicles in Twist-Lef1KI mice (i). (j) Quantification of regenerating hair follicles growing out of the wound beds of Lef1KI n\u00a0=\u00a06 and Twist-Lef1KI n\u00a0=\u00a04 mice p<0.004. (k) Quantification of regenerating hair follicles detected in 60 \u03bcm sections of wound beds. p<0.001. Scale bars at b-d\u00a0are 100 \u03bcm.\u00a0Scale bars at g-i\u00a0are 200 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Images of P4 litter from Twist-Lef1KI mice revealing viability of line. (b\u2013c) P28 of wild type (b) and Twist-Lef1KI (c) mice. (d) The growth curve of male WT (Lef1KI) mice (24 male mice total) compared to Twist-Lef1KI (15 male mice total) mice at P24, P40, and P90. P24 p<0.005. (e) Macroscopic images of different hair follicle types from WT (Lef1KI) and Twist-Lef1KI hair follicles. (f\u2013g) Immunostaining analysis of sections from P21 skin from WT (Lef1KI) and Twist-Lef1KI mice stained for Itga6 and Lef1. Scale bars are 100 \u03bcm.\n\nAdult skin normally does not regenerate but has the capacity to reform non-functional hair follicles (small and lack arrector pili) in wounds 1 cm2 or larger\u00a0(Ito et al., 2007). To test if overexpression of Lef1 in adult dermal fibroblasts enhances hair regeneration in adult skin, we wounded wild type (Lef1KI) and Twist-Lef1KI mice at P24 with 1.2 cm2 wounds and harvested at 24dpw (Figure 4f). Our analysis comparing Lef1KI and Twist-Lef1KI wound beds revealed enhanced hair regeneration (Figure 4f\u2013k). There were five times more regenerating hair follicles on average in Twist-Lef1KI wound beds compared to wild type wounds (Figure 4j\u2013k). The non-functional hair follicles that typically regenerate in large adult wounds are small and lack the arrector pili, a smooth muscle that makes hair stand up when contracted. Strikingly, the hair follicles regenerating in the Twist-Lef1KI wound beds contained arrector pili (Figure 4i) and were larger than hair follicles found in wild-type wounds. We conclude that Lef1 expression in the dermis of the skin leads to enhances regeneration.\n\n### Dermal Lef1 transforms scarring wounds to be regenerative\n\nWound healing studies utilize a standardized approach to account for the hair follicle cycle, which influences the wound healing process\u00a0(Ansell et al., 2011). Consequently, the bulk of wound healing and regeneration studies are performed at 3 weeks of age (~P21) or at 7\u20138 weeks of age (~P57) (Gay et al., 2013; Guerrero-Juarez et al., 2019; Ito et al., 2007; Lim et al., 2018; Plikus et al., 2017; Plikus et al., 2008). In addition, a standard size wound of roughly 8 mm in diameter or smaller is used, which heal by scarring (Driskell et al., 2013; Lim et al., 2018; Rognoni et al., 2016). Since Lef1KI mice showed enhanced regenerative capacity in large wounds, we explored the regeneration potential of Twist-Lef1KI skin in wounds that normally scar. To determine if the hair follicle cycle influences skin regeneration we performed wounds at different time points: P24 which undergoes a hair follicle cycle during wound healing; P40 which heals during the resting phase of the hair cycle; and P90 which is the beginning of the un-synchronized hair follicle cycling that occurs in adult mice (Figure 5a). Scars formed in wounds performed at P24 in both WT and Twist-Lef1KI mice (Figure 5b\u2013c,l). However, hair follicle regeneration with arrector pili occurred in wounds performed at P40 and P90 in Twist-Lef1KI mice (Figure 5d\u2013k,l; Figure 5\u2014figure supplement 1; Figure 5\u2014figure supplement 2). Occasionally, we observed cyst-like structures in regenerated wounds, similar to that observed in WIHN (Ito et al., 2007). We conclude that Lef1 expression in the dermis induces skin to support hair follicle regeneration in wounds with variation depends on the timepoints and hair follicle cycle.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig5-v1.jpg)\n\n**Figure 5.:** (a) Schematic of the differential wound healing analysis from different time points of the hair follicle cycle in murine skin. (b\u2013g,j) Immunostaining analysis of wounds 24dpw from P24 (b\u2013d), P40 (d\u2013e), and P90 (f\u2013g,j). Sections were stained for either Itga8 and Lef1 (b\u2013c,f\u2013g,j) or GFP and Lef1 (d\u2013e). Itga8 labels arrector pili. (h\u2013i) Macroscopic analysis of wound beds from WT (Lef1KI) and Twist-Lef1KI mice. Hair follicles could be seen growing out of the wound bed of Twist-Lef1KI mice. (k) Quantification of the average number of regenerating hair follicles detected in wounds beds of 60 \u03bcm sections from P24 24dpw (ns, WT-n\u00a0=\u00a04, Twist-Lef1KI -n\u00a0=\u00a04), P40 24dpw (p<0.0009 WT-n\u00a0=\u00a04, Twist-Lef1KI -n\u00a0=\u00a04), and P90 24dpw (p<0.007 WT-n\u00a0=\u00a03, Twist-Lef1KI -n\u00a0=\u00a04). (l) Schematic representation of different wound healing approaches above a heatmap of microarray data (Lin et al., 2009) from key time points during hair follicle cycling. Heatmap is generated from a list of Activator and Inhibitor genes reported to regulate the progression of the hair follicle cycle (Wang et al., 2017). Scale bars are 100 \u03bcm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Schematic describing the wounding and tissue collection strategy. (b\u2013j) Immunostaining analysis of wild type (Lef1KI) and Twist-Lef1KI mice wounded at P40 and collected at 14 dpw (b\u2013d), 24\u00a0dpw (e\u2013f), and 30\u00a0dpw (g\u2013i). All sections were immunostained for Itga8 and Lef1. (j) Quantification of hair follicles in 60 \u03bcm sections of WT (Lef1KI) (n\u00a0=\u00a03) and Twist-Lef1KI (n\u00a0=\u00a03) skin 30\u00a0dpw. p<0.04. Scale bars are 200 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/60066/elife-60066-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a\u2013b) Immunostain of histological sections of 8 mm wounds from P40 harvested at 24\u00a0dpw. Immunostains were for GFP and Lef1.\n\nOur wound healing studies mirror previous work suggesting that the size of a wound can dictate the potential of skin to regenerate instead of scar (Ito et al., 2007). To explain \u2018why size matters\u2019 we investigated and mapped the timing of wound closure and regeneration in the context of molecular signals within the dermal macro-environment that are dynamically changing throughout the hair follicle cycle (Plikus et al., 2008; Wang et al., 2017). Previous studies have defined the activators and inhibitors that regulate hair follicle cycling during this time (Wang et al., 2017; Supplementary file 3). Activators include the Wnt signaling pathway, Noggin, Tgfb, and fibroblast markers such as Pdgfra. Inhibitors include the BMP signaling pathway. These activators and inhibitors have been previously shown to modulate Lef1 activity (Jamora et al., 2003). To explain why Twist-Lef1KI mice scar at P24, we generated a diagram of wound re-epithelization and healing time points comparing 8 mm circular wounds to 1.2 cm2 wound in the context of gene expression for inhibitors and activators at all time points during the hair follicle cycle (Figure 5l). 8 mm circular wounds re-epithelialize 7\u00a0dpw (Driskell et al., 2013) in a macro-environment with high levels of Lef1 inhibitors, which are not inductive to hair follicle formation (Figure 5l). In contrast, large 1.2 cm2 wounds re-epithelialize during the time point of the hair cycle that has high activators and low inhibitors (Figure 5l). We conclude that the size of a wound dictates the time point when wound closure occurs which is associated with inhibitor or inductive regenerative signals.\n\n## Discussion\n\nIt is well established that embryonic and neonatal skin has the potential to heal in a scar-less manner (Walmsley et al., 2015a). However, the cell types and signals that can transfer this ability to adult skin have not been identified. In this study, we identify developing papillary fibroblasts as a transient cell population that is defined by Lef1 expression. Inducing Lef1 expression in the adult dermis will prime skin to support enhanced hair follicle regeneration. Interestingly, ectopic Lef1 expression in the dermis did not result in any adverse phenotypes during development (Supplementary file 4).\n\nscRNA-seq has provided an unprecedented insight in the cell types and molecular pathways that are represented within regenerating and scarring wounds (Guerrero-Juarez et al., 2019; Haensel et al., 2020; Joost et al., 2018; Abbasi et al., 2020). For example, comparisons of these different conditions have identified the activation of the Shh pathway as a key pathway to support hair follicle regeneration in wounds of different sizes (Lim et al., 2018). However, the activation of ectopic Shh in either the epidermis or dermis is associated with unwanted phenotypes and cancer (Fan et al., 1997; Grachtchouk et al., 2000; Oro et al., 1997; Sun et al., 2020). Unexpectedly, we discovered a neonatal papillary fibroblast population that is defined by Lef1 expression in developing skin instead of in regenerating conditions. Importantly, our comparative analysis of regenerating and scarring wounds reveals their similarities (Figure 1i, Figure 2\u2014figure supplement 2) more than their differences suggesting that the wound environment is a powerful driving force for gene expression even with a heterogeneous population of cells. Consequently, the basic mechanisms occurring during development and maintenance of neonatal tissue may hold the keys to transforming adult tissue to regenerate instead of scarring.\n\nStudies involving the activation of the Wnt and beta-catenin pathways in skin have led to important discoveries in wound healing research, but have produced contrasting results in the context of fibroblast biology and hair follicle formation (Chen et al., 2012; Hamburg-Shields et al., 2015; Ito et al., 2007; Lim et al., 2018; Mastrogiannaki et al., 2016; Rognoni et al., 2016). The activation of beta-catenin in fibroblasts during wound healing has been shown to inhibit hair follicle reformation in scars (Lim et al., 2018; Rognoni et al., 2016) while deactivating Wnt signaling inhibited hair reformation (Myung et al., 2013). Moreover, persistent Wnt activity in the dermis has been recently shown to drive WIHN toward fibrotic wound healing (Gay et al., 2020). In contrast, the activation of beta-catenin during development increases hair formation and size (Chen et al., 2012; Enshell-Seijffers et al., 2010). One explanation for these conflicting results is the presence of different fibroblast lineages present in either development or wounds, which express different Lef/Tcf factors to direct a Wnt/beta-catenin-specific response (Driskell et al., 2013; Philippeos et al., 2018; Rognoni et al., 2016). We and others have shown that Lef1 is expressed in embryonic and neonatal papillary fibroblasts, which is lost in adult fibroblasts (Driskell et al., 2013; Mastrogiannaki et al., 2016; Philippeos et al., 2018; Rognoni et al., 2016). Here, we demonstrate that Lef1 is a key transcription factor in developing fibroblasts that supports hair follicle formation in adult wounds. Our data indicates that Lef1 expression in the dermis of the skin primes a response to support hair follicle neogenesis and arrector pili reformation in the wound. Our results align with studies that induced Lef1 expression in cultured human dermal papilla cells to enhance hair follicle formation in vitro (Abaci et al., 2018). In humans, at the age of 50+, the quality of the papillary dermis gradually deteriorates, which correlates with the aging skin decreased wound healing abilities (Haydont et al., 2019; Marcos-Garc\u00e9s et al., 2014). Our data suggests that activating the papillary region to retain its identity by expression of Lef1 has the potential to enhance wound healing in humans.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Dermo1-Cre or Twist2-Cre, C57Bl6/BalbC</td>\n      <td>Jackson Laboratory</td>\n      <td>RRID:MGI:3840442</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Lef1KI, C57Bl6/BalbC</td>\n      <td>Engelhardt lab - University of Iowa</td>\n      <td>Other</td>\n      <td>A gift from the Engelhardt lab</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (M. musculus)</td>\n      <td>Lef1KO, C57Bl6/BalbC</td>\n      <td>Xue lab - University of Iowa</td>\n      <td>RRID:MGI:5447957</td>\n      <td>A gift from the Xue lab</td>\n    </tr>\n    <tr>\n      <td>Sequencing kit</td>\n      <td>Single Cell 3\u2019 Library and Gel Bead Kit v2</td>\n      <td>10X Genomics</td>\n      <td>Cat#: PN-120267</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Integrin alpha 8 (Itga8) (goat polyclonal)</td>\n      <td>R and D Systems</td>\n      <td>Cat#: AF4076</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Pref1/Dlk1 (rabbit monoclonal)</td>\n      <td>R and D Systems</td>\n      <td>Cat#: AF8277</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Dpp4/CD26 (goat polyclonal)</td>\n      <td>R and D Systems</td>\n      <td>Cat#: AF954</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Pdgfra (goat polyclonal)</td>\n      <td>R and D Systems</td>\n      <td>Cat#: AF1062</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Lef1 (rabbit monoclonal)</td>\n      <td>Cell Signaling</td>\n      <td>Cat#: 2230S</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Alpha smooth muscle actin (Acta2) (rabbit polyclonal)</td>\n      <td>abcam</td>\n      <td>Cat#: ab5694</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti GFP (chicken polyclonal)</td>\n      <td>abcam</td>\n      <td>Cat#: ab13970</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Ly6a/Sca1 (rat monoclonal)</td>\n      <td>Biolegend</td>\n      <td>Cat#: 108108</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-CD49f/Integrin alpha 6 (Itga6) (rat monoclonal)</td>\n      <td>BD Biosciences</td>\n      <td>Cat#: 555735</td>\n      <td>IF(1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-goat Alexa Fluor 488 (Donkey polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#: A-11055</td>\n      <td>IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-goat Alexa Fluor 555 (Donkey polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#: A-21432</td>\n      <td>IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-goat Alexa fluor 647 (Donkey polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#: A-21447</td>\n      <td>IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit Alexa fluor Plus 555 (Donkey polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#: A32794</td>\n      <td>IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit Alexa fluor 647 (Donkey polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#: A-31573</td>\n      <td>IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-chicken Alexa fluor 488 (Goat polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>Cat#: A-11039</td>\n      <td>IF(1:500)</td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Dispase</td>\n      <td>Corning</td>\n      <td>Cat#: 3254235</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Collagenase Type I</td>\n      <td>ThermoFisher</td>\n      <td>Cat#: 17100017</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cellranger v3.0.2</td>\n      <td>10X Genomics</td>\n      <td>RRID:SCR_017344</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>scanpy</td>\n      <td>scanpy</td>\n      <td>RRID:SCR_018139</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>scvelo</td>\n      <td>scVelo</td>\n      <td>RRID:SCR_018168</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Mouse models\n\nAll mice were outbred on a C57BL6/CBA background, with male and female mice used in all experiments. The following transgenic mouse lines were used in this study, Twist2-Cre (RRID:MGI:3840442)\u00a0(Cat# 008712). The ROSA26-CAG-flox-GFP-STOP-flox-Lef1 and Lef1-flox-Exon7,8-flox mice (RRID:MGI:5447957) were a kind gift and have been previously described (Lynch et al., 2016; Yu et al., 2012). Wild-type mice utilized in scRNA-seq experiments were an outbred background of C57BL6/CBA mice.\n\n### Wounding experiments\n\nAll wounding experiments were done in accordance with the guidelines from approved protocols Washington State University IACUC. Mice were wounded at post-natal day (P) 2, P24, P40 and P90 as stated in the results section. All wounding experiments were carried out with mice under anesthetization. The dorsal hair was shaved, and wounding areas were disinfected. For full-thickness circular wound, 2 mm and 8 mm punch biopsy and surgical scissors were used to create circular wounds on P2 and P24/P40 mice, respectively. For large wounds, 1.44 cm2 (1.2 \u00d7 1.2 cm) squares were excised using surgical scissors. Wounds were harvested at 7 dpw, 14 dpw, 24 dpw, and 30 dpw.\n\n### Horizontal whole mount\n\nThis procedure was described in Salz and Driskell, 2017. Briefly, full thickness skin samples were collected and fixed in 4% Paraformaldehyde (PFA), before being frozen in OCT compound in cryo-block. Samples were sectioned using cryostat at 60 micro\u00a0m thickness. Skin sections were then stained with primary antibodies at 4\u00b0C overnight in PB buffer and with secondary antibodies in PB buffer for 1 hr. Samples were mounted on glass cover slip with glycerol as mounting medium.\n\n### Generation of single-cell RNA-sequencing data\n\nTissues were collected from dorsal regions of unwounded P2 and P21 mice, and right on the edge of 2 mm wounds 7 days post wound from P2 wound and P21 wound. Cells isolation procedure was previously described in Jensen and\u00a0Driskell 2009 Nature Protocols (Jensen et al., 2010). Single-cell cDNA libraries were prepared using the 10X Genomics Chromium Single Cell 3\u2019 kit. For each condition, three mice were used to generate three separate libraries, making it a total of 12 libraries across all four conditions. All samples were processed individually. The prepared libraries were sequenced on Illumina HiSeq 4000 (100 bp Paired-End). Demultiplexed Paired-End fastq files were aligned to mm10 reference genome using 10X Genomics CellRanger function (RRID:SCR_017344)(Cellranger version 3.0.2). FASTQ files for this manuscript can be access at NCBI Geo-Datasets: GSE153596. The outputs of CellRanger alignment were used to create loom files by Velocyto \u2018run10x\u2019 function (La Manno et al., 2018). Loom files are the preferred input data for scVelo package (RRID:SCR_018168) to perform RNA Velocity analysis (Bergen et al., 2020).\n\n### Single-cell RNA-seq data preprocessing\n\nFor basic filtering of our data, we filtered out cells have expressed less than 200 genes and genes that are expressed in less than three cells. To ensure that the data is comparable among cells, we normalized the number of counts per cell to 10,000 reads per cell as suggested by the Scanpy pipeline (RRID:SCR_018139) (Wolf et al., 2018). Data were then log-transformed for downstream analysis and visualization. We also regressed out effects of total counts per cell and the percentage of mitochondrial genes expressed, then scaled the data to unit variance with the maximum standard deviation 10.\n\n### Single-cell RNA-seq data analysis\n\nNeighborhood graph of cells was computed using PCA presentation (n PCs\u00a0=\u00a040, n neighbors\u00a0=\u00a010). The graph was embedded in two dimensions using Uniform Manifold Approximation and Projection (UMAP) as suggested by Scanpy developers. Clusters of cell types were defined by Louvain and Leiden method for community detection on the generated UMAP graph at resolution of 0.2. The analysis pipeline is published on the Driskell lab Github page as Jupyter Notebook (https://github.com/DriskellLab/Priming-Skin-to-Regenerate-by-Inducing-Lef1-Expression-in-Fibroblasts-; copy archived at https://github.com/elifesciences-publications/Priming-Skin-to-Regenerate-by-Inducing-Lef1-Expression-in-Fibroblasts-;\u00a0DriskellLab, 2020).\n\n### Microarray analysis\n\nThe microarray data were previously published (GEO GSE11186) (Lin et al., 2009). RMA normalization was used, and the bottom twentieth percentile of genes were excluded from the analysis.\n",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "e4e8d52d-acdb-4a08-9fb5-8abafc56c6f1",
+      "submission_id": "440fd332-a750-4943-b688-08be9bcb64f8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Valerie Horsley, Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.60066.sa1](https://doi.org/10.7554/eLife.60066.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nOverall this is an interesting paper whose ssRNA seq dataset and experimental analysis of phenotypes provides a valuable resource for investigating gene expression differences associated with key phases of skin development and repair. The enhancement of HF regeneration upon Lef1 overexpression is a striking result and will be of general interest to many fields including developmental, stem cell, and epithelial biologists. The work is well conducted, the results are new, and significant for skin wound healing and HF regeneration, and in sum a good fit for eLife.\n\nDecision letter after peer review:\n\nThank you for submitting your article \"Lef1 expression in fibroblasts maintains developmental potential in adult skin to regenerate wounds\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kathryn Cheah as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs the editors have judged that your manuscript is of interest, but as described below that additional experiments are required before it is published, we would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). First, because many researchers have temporarily lost access to the labs, we will give authors as much time as they need to submit revised manuscripts. We are also offering, if you choose, to post the manuscript to bioRxiv (if it is not already there) along with this decision letter and a formal designation that the manuscript is \"in revision at eLife\". Please let us know if you would like to pursue this option. (If your work is more suitable for medRxiv, you will need to post the preprint yourself, as the mechanisms for us to do so are still in development.)\n\nSummary:\n\nOverall this is an interesting paper whose ssRNA seq dataset and experimental analysis of phenotypes provides a valuable resource for investigating gene expression differences associated with key phases of skin development and repair. The enhancement of HF regeneration upon Lef1 overexpression is a striking result and will be of general interest to many fields including developmental, stem cell, and epithelial biologists. The work is well conducted, the results are new, and significant for skin wound healing and HF regeneration, and in sum a good fit for eLife.\n\nEssential revisions:\n\nThe overall tone of all reviewers is enthusiastic and favorable, however with very important points raised:\n\n1) Dermo1-Cre seems not specific to fibroblasts (and it is non-inducible). Ideally this should be addressed by using an inducible/more specific Cre mouse line. However, as the enhancement of HF regeneration is an exciting finding by itself and a new mouse model is likely out of scope of a revision, this point could be addressed textually by changing the conclusions to reference stromal cells instead of fibroblasts specifically.\n\n2) The interpretation of the scRNA data should be bolstered with additional analyses. It is important for the authors to revisit the data and figures (including making some improved analysis), and carefully state the actual results and conclusions supporting their claims and following next steps in the manuscript.\n\na) ScRNA-seq analysis was superficial in relation to regeneration versus repair, especially comparison of the time points that model regeneration and scarring. Does velocity analysis predicting Lef1, or other genes, driving differentiation of one population of fibroblasts into a papillary fibroblast or DP-like state? Do multiple fibroblast subsets follow this trajectory? How do these finding compare between the two wounding time points? Does gene ontology suggest differences within one subcluster of fibroblasts between two conditions or are the major differences in the gene expression profile/function associated with each subcluster? A more complete analysis of this could shed more light on the involvement of fibroblast lineages in regenerative versus reparative healing.\n\nb) From the ssRNA seq analysis the authors state \"we identify Developing papillary fibroblasts as a transient cell population that is defined by Lef1 expression.\", but this is not clear from the ssRNA seq analysis. In Figure 2\u2014figure supplement 1, Lef1 expression seems to be largely excluded from cells within the Dpp4 expression cluster (cluster 2), and Dkk1 (Cluster 0), which define the major papillary FB clusters. Can the authors expand upon how the Velocity Analysis identifies different genes than overlaying relative expression levels on the UMAPS?\n\n3) Surrounding the claim of a transient papillary fibroblast population (which is an important part in their paper), several parts are unclear;\n\nI.e. they could/should explore the fibroblast populations of all conditions to compare regeneration vs. scaring and regeneration vs. development (e.g. R2Q2, R3Q5).\n\nwhich of the two papillary fibroblast population(s) is/are transient? How to explain the rather minor overlap of Lef1 expression with these two papillary fib populations? Where are the two populations in situ in developing and in regenerating skin?\n\n4) Given that the WIHN generates a significant amount of cysts, the authors have to down-tone their statement of \"without adverse phenotype\". As the authors also refer to Hedgehog-pathway induced de novo HF formation (a model giving rise to tumors and new HFs), they likely meant that their model does not induce apparent tumors (the cysts look different compared to the obvious BCC-like lesions trough Hh-pathway activation) \u2013 however the authors totally neglect the fact (don't mention) that the mice apparently develop cysts in addition to HFs in wounds.\n\nFigure 5E, G, J. The regenerated HFs appear very abnormal and cyst-like. The authors state several times in the paper that Lef1 overexpression enhances regeneration without other adverse phenotypes, but these regenerated structure are very abnormal. Are they cancerous? P90 wounds appear to generate a significant amount of cysts; is this representative for all conditions or something more specific for the P90 timepoint?\n",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6b4148c5-ab6c-4c20-b83e-bfd52d446dcf",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C1",
+      "claim": "Scars are a serious health concern for burn victims and individuals with skin conditions associated with wound healing.",
+      "claim_type": "EXPLICIT",
+      "source": "Scars are a serious health concern for burn victims and individuals with skin conditions associated with wound healing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the clinical significance of scars, drawing from established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "b2439091-05db-4d7a-b820-16963beb18b6",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C2",
+      "claim": "Neonatal papillary fibroblasts form a transient regenerative cell type that promotes healthy skin regeneration in young skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Using scRNA-seq to probe unsorted cells from regenerating, scarring, homeostatic, and developing skin, we identified neonatal papillary fibroblasts that form a transient regenerative cell type that promotes healthy skin regeneration in young skin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by scRNA-seq data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "b5075432-da32-4310-908f-985e4c3d3320",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C3",
+      "claim": "Neonatal papillary fibroblasts are defined by the expression of Lef1.",
+      "claim_type": "EXPLICIT",
+      "source": "These fibroblasts are defined by the expression of a canonical Wnt transcription factor Lef1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by scRNA-seq data and immunostaining validation shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "1bc4d7de-f8d3-4915-b8f5-d6321dffa8e8",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C4",
+      "claim": "Lef1 expression in fibroblasts primes the adult skin macroenvironment to enhance skin repair.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate that Lef1 expression in fibroblasts primes the adult skin macroenvironment to enhance skin repair, including regeneration of hair follicles with arrector pili muscles in healed wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through gain- and loss-of-function genetic mouse models described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "bb91e57d-2041-4582-845a-c6ba0c8a8511",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C5",
+      "claim": "Lef1 expression in fibroblasts enables regeneration of hair follicles with arrector pili muscles in healed wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate that Lef1 expression in fibroblasts primes the adult skin macroenvironment to enhance skin repair, including regeneration of hair follicles with arrector pili muscles in healed wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data showing arrector pili in regenerated hair follicles in Twist-Lef1KI mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "8c85bedf-4caf-4152-b94a-762dc355e1b9",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C6",
+      "claim": "One of the main characteristics of scars is the absence of hair follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main characteristics of scars is the absence of hair follicles, indicating that their regeneration in a wound may be a critical step in achieving scar-less skin repair (Yang and Cotsarelis, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "7e371e8f-9813-4f7f-9707-17cfb775265a",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C7",
+      "claim": "Hair follicle regeneration in a wound may be a critical step in achieving scar-less skin repair.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main characteristics of scars is the absence of hair follicles, indicating that their regeneration in a wound may be a critical step in achieving scar-less skin repair (Yang and Cotsarelis, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that scars lack hair follicles, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "691b7864-1b96-4d07-8eb0-5298f05013eb",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C8",
+      "claim": "Human embryonic skin has the capacity to regenerate without scars.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, human embryonic skin has the capacity to regenerate without scars (Lo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "f9b4ee53-709a-4a45-8114-6c6af3e36147",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C9",
+      "claim": "Neonatal and adult mouse skin has the capacity to regenerate small non-functional hair follicles under specific conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, neonatal and adult mouse skin has the capacity to regenerate small non-functional hair follicles under specific conditions (Figure 1c\u2013d; Ito et al., 2007; Rognoni et al., 2016; Telerman et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous literature and reference to Figure 1c-d showing regenerating hair follicles.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "0239f6d8-d510-4e1d-bd3c-7ce968d2a093",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C10",
+      "claim": "Human and mouse skin are similar in their overall structural complexity.",
+      "claim_type": "EXPLICIT",
+      "source": "Human and mouse skin are similar in their overall structural complexity, indicating that mouse skin can be a useful model to study skin development and wound repair (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "33f44d05-7f10-4013-ad06-77f86b9424ba",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C11",
+      "claim": "Mouse skin can be a useful model to study skin development and wound repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Human and mouse skin are similar in their overall structural complexity, indicating that mouse skin can be a useful model to study skin development and wound repair (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural similarity between human and mouse skin, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "da5cb792-1d7d-4afe-a498-016579593907",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C12",
+      "claim": "Murine hair follicle and skin development primarily occurs between embryonic day 12.5 (E12.5) to post-natal day 21 (P21).",
+      "claim_type": "EXPLICIT",
+      "source": "Murine hair follicle and skin development primarily occurs between embryonic day 12.5 (E12.5) to post-natal day 21 (P21) (M\u00fcller-R\u00f6ver et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "e09ec98d-841f-42e1-a9d9-09d6909af170",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C13",
+      "claim": "Different fibroblast lineages are established during skin development that respond to changes in the environment to support hair follicle and skin development.",
+      "claim_type": "EXPLICIT",
+      "source": "During this time, different fibroblast lineages are established that respond to the changes in the environment to support hair follicle and skin development (Driskell et al., 2013; Jiang et al., 2018; Rinkevich et al., 2015; Rognoni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "124c46a3-5551-4013-b510-6f7219967a76",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C14",
+      "claim": "Fibroblasts that support hair follicle development differentiate from the papillary fibroblast lineage into dermal papilla (DP), dermal sheath (DS), and arrector pili (AP) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibroblasts that support hair follicle development differentiate from the papillary fibroblast lineage, into dermal papilla (DP), dermal sheath (DS), and arrector pili (AP) cells (Driskell et al., 2013; Plikus et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "fd6e420d-369a-4ada-a380-0b5107d5a6d0",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C15",
+      "claim": "Reticular fibroblasts cannot differentiate into papillary fibroblast lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Reticular fibroblasts, which cannot differentiate into papillary fibroblast lineages, secrete extra-cellular-matrix (ECM) and form adipocytes (Driskell et al., 2013; Schmidt and Horsley, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "9f46058f-efe4-4ed1-97a5-9234f3bd2a86",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C16",
+      "claim": "Reticular fibroblasts secrete extra-cellular-matrix (ECM) and form adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Reticular fibroblasts, which cannot differentiate into papillary fibroblast lineages, secrete extra-cellular-matrix (ECM) and form adipocytes (Driskell et al., 2013; Schmidt and Horsley, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "5083dd6c-79e5-4618-9859-02c46789bca1",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C17",
+      "claim": "By post-natal day 2 (P2) fibroblast heterogeneity is fully established with the presence of defined layers of the dermis.",
+      "claim_type": "EXPLICIT",
+      "source": "By post-natal day 2 (P2) fibroblast heterogeneity is fully established with the presence of the defined layers of the dermis (Figure 1a; Driskell et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and reference to Figure 1a showing the dermal layers.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "6d14bf49-629a-4e28-a212-728ea15a6ca4",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C18",
+      "claim": "Skin maturation occurs after P2 with the formation of the arrector pili and the completion of the first hair follicle cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Skin maturation occurs after P2 with the formation of the AP and the completion of the first hair follicle cycle, which results in the loss of a defined papillary fibroblast layer (Figure 1b; Driskell et al., 2013; Rognoni et al., 2016; Salzer et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and reference to Figure 1b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "33abdf61-8ba0-4706-9672-f57b3152ac6f",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C19",
+      "claim": "Skin maturation results in the loss of a defined papillary fibroblast layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Skin maturation occurs after P2 with the formation of the AP and the completion of the first hair follicle cycle, which results in the loss of a defined papillary fibroblast layer (Figure 1b; Driskell et al., 2013; Rognoni et al., 2016; Salzer et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and reference to Figure 1b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "aaec1640-4b00-499e-ac5a-95afb68769a8",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C20",
+      "claim": "Papillary fibroblasts are the primary source of de-novo dermal papilla during skin development.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that papillary fibroblasts are the primary source of de-novo dermal papilla during skin development, which are required for hair formation (Driskell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "46727f84-68a4-43e0-b21a-fdd19251d2ed",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C21",
+      "claim": "De-novo dermal papilla are required for hair formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that papillary fibroblasts are the primary source of de-novo dermal papilla during skin development, which are required for hair formation (Driskell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "5a992758-d7bc-401f-a5f3-e4d4dd576560",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C22",
+      "claim": "Adult murine skin forms scars due to the lack of a defined papillary layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been suggested that adult murine skin form scars due to the lack of a defined papillary layer (Driskell et al., 2013; Driskell and Watt, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "604b36d0-1bca-4633-aa6a-524453a68b48",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C23",
+      "claim": "Expanding the papillary fibroblast layer in adult skin might support skin regeneration in adult mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, expanding this fibroblast layer in adult skin might support skin regeneration in adult mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observation that adult skin lacks a defined papillary layer.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "bd6428f7-83b6-4946-8ff2-2d6d3a6420ef",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C24",
+      "claim": "scRNA-seq studies investigating wound healing have focused on comparing scarring, non-scarring, or regenerating conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, scRNA-seq studies investigating wound healing have so far focused on comparing scarring, non-scarring, or regenerating conditions (Guerrero-Juarez et al., 2019; Haensel et al., 2020; Joost et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "cedb4376-fb34-4f7d-a680-acfecfd329a6",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C25",
+      "claim": "scRNA-seq studies have helped identify key markers of the newly discovered skin fascia, including Gpx3, Plac8, and Mest.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have helped to identified key markers of the newly discovered skin fascia, including Gpx3, Plac8, and Mest, which recently has been shown to contribute to scar formation (Correa-Gallegos et al., 2019; Grachtchouk et al., 2000; Joost et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "df902d97-4da3-43d4-b2a1-588dadaa9b41",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C26",
+      "claim": "Skin fascia markers Gpx3, Plac8, and Mest have been shown to contribute to scar formation.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies have helped to identified key markers of the newly discovered skin fascia, including Gpx3, Plac8, and Mest, which recently has been shown to contribute to scar formation (Correa-Gallegos et al., 2019; Grachtchouk et al., 2000; Joost et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "3fa76f07-2346-4881-9cdc-68d50b36675d",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C27",
+      "claim": "Transgenic activation of the Shh pathway in alpha-smooth-actin cells in scarring wounds can support small non-functional hair regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "These, scRNA-seq studies have revealed that transgenic activation of the Shh pathway in the alpha-smooth-actin cells in scarring wounds, which includes pericytes, blood vessels, and myofibroblasts, can support small non-functional hair regeneration (Lim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "bafb759b-85ee-4896-838a-0b615c2478c7",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C28",
+      "claim": "Alpha-smooth-actin cells in scarring wounds include pericytes, blood vessels, and myofibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "These, scRNA-seq studies have revealed that transgenic activation of the Shh pathway in the alpha-smooth-actin cells in scarring wounds, which includes pericytes, blood vessels, and myofibroblasts, can support small non-functional hair regeneration (Lim et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "d0117802-30a8-4b9f-9269-599514acca4e",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C29",
+      "claim": "Activation of Shh pathway in dermal fibroblasts is associated with malignant phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, activation of Shh pathway in dermal fibroblasts is associated with malignant phenotypes and may perturb development and homeostasis such that it may not be a safe target to support human skin regeneration clinically (Fan et al., 1997; Grachtchouk et al., 2000; Oro et al., 1997; Sun et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "5505a892-4591-46e8-a4af-041150411787",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C30",
+      "claim": "Activation of Shh pathway in dermal fibroblasts may perturb development and homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, activation of Shh pathway in dermal fibroblasts is associated with malignant phenotypes and may perturb development and homeostasis such that it may not be a safe target to support human skin regeneration clinically (Fan et al., 1997; Grachtchouk et al., 2000; Oro et al., 1997; Sun et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "ae1e9b8b-a631-4912-969b-d7dad4830936",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C31",
+      "claim": "Shh pathway may not be a safe target to support human skin regeneration clinically.",
+      "claim_type": "EXPLICIT",
+      "source": "However, activation of Shh pathway in dermal fibroblasts is associated with malignant phenotypes and may perturb development and homeostasis such that it may not be a safe target to support human skin regeneration clinically (Fan et al., 1997; Grachtchouk et al., 2000; Oro et al., 1997; Sun et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the association of Shh activation with malignant phenotypes, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "4604dcd1-ef98-4cdc-8dca-c718ea1d938f",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C32",
+      "claim": "The Wnt signaling pathway is involved in regulating development, wound healing, disease and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The Wnt signaling pathway is involved in regulating development, wound healing, disease and cancer (Nusse and Clevers, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "c4a94fab-c804-4df0-b67b-0d11dfddec40",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C33",
+      "claim": "Studies that activated Wnt and beta-catenin in skin have produced contrasting results in the context of fibroblast biology and hair follicle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies that activated Wnt and beta-catenin in skin have led to important discoveries for wound healing but have produced contrasting results in the context of fibroblast biology and hair follicle formation (Chen et al., 2012; Enshell-Seijffers et al., 2010; Hamburg-Shields et al., 2015; Lim et al., 2018; Rognoni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "22332d35-aebe-4059-a92a-d41324a74095",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C34",
+      "claim": "Beta-catenin cannot activate the expression of Wnt target genes without co-transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, beta-catenin alone cannot activate the expression of Wnt target genes without co-transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of Wnt signaling mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "d1c24bf0-3a35-491c-8013-6e2874194659",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C35",
+      "claim": "There are four Wnt co-transcription factors: Tcf7 (Tcf1), Lef1, Tcf3 (Tcf7l1), and Tcf4 (Tcf7l2).",
+      "claim_type": "EXPLICIT",
+      "source": "There are four Wnt co-transcription factors Tcf7 (Tcf1), Lef1, Tcf3 (Tcf7l1), and Tcf4 (Tcf7l2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of Wnt signaling components.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "8d6a14c4-902e-40aa-b324-8cd9b5fe28d0",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C36",
+      "claim": "Wnt co-transcription factors modulate the functional outcome of Wnt signaling by binding to different target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These co-transcription factors modulate the functional outcome of Wnt signaling by binding to different target genes (Adam et al., 2018; Nguyen et al., 2009; Yu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "0c593d60-ad30-4519-9203-90a939705929",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C37",
+      "claim": "It is not known how differential expression of Tcf/Lef can modulate fibroblast activity via Wnt signaling in the context of wound healing and regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of wound healing and regeneration, it is not known how differential expression of Tcf/Lef can modulate fibroblast activity via Wnt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "cd416726-5593-4a37-9a35-0763b3c908eb",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C38",
+      "claim": "Embryonic and neonatal skin have the potential to regenerate hair follicles upon wounding.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it has been shown that embryonic and neonatal skin have the potential to regenerate hair follicles upon wounding (Hu et al., 2018; Rognoni et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "8dd95aa1-7488-4a05-81c6-875d2a9b0a42",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C39",
+      "claim": "There are differences between neonatal and adult skin in terms of their cellular and biological properties.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have previously shown that there are differences between neonatal and adult skin in terms of their cellular and biological properties (Ge et al., 2020; Rognoni et al., 2016; Salzer et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "997bc72b-ccb0-4c1f-afc8-6f8db3a5058b",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C40",
+      "claim": "Differences between neonatal and adult skin influence how skin can repair or if it can regenerate hair follicles in a wound.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences influence how skin can repair or if it can regenerate hair follicles in a wound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed differences between neonatal and adult skin.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "65afb3de-a0ee-4bd9-a097-28c986b01f9b",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C41",
+      "claim": "Neonatal developing skin at P2 can regenerate small hair follicles 7 days after wounding.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that neonatal developing skin at P2 (Figure 1a) can regenerate small hair follicles 7 days after wounding (7dpw) (Figure 1c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to Figure 1a and 1c showing the regenerating hair follicles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "a80b7658-ac7b-4ce9-8a43-b3e935320aa7",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C42",
+      "claim": "Adult homeostatic skin at P21 heals by scarring 7 days post wound.",
+      "claim_type": "EXPLICIT",
+      "source": "while adult homeostatic skin at P21 (Figure 1b) heals by scarring 7dpw (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to Figure 1b and 1d showing the scar tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "f6258f52-6b76-4eeb-9e2b-f5d2318428d7",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C43",
+      "claim": "A total of 66,407 cells from 12 libraries met the preprocessing threshold for scRNA-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 66,407 cells from 12 libraries (n = 3 for each condition) met the preprocessing threshold, showed little batch variation (Figure 1\u2014figure supplement 2), and were used for downstream analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of the data processing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "cb73023a-232e-4fc2-94d7-1b661126e633",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C44",
+      "claim": "The scRNA-seq data showed little batch variation.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 66,407 cells from 12 libraries (n = 3 for each condition) met the preprocessing threshold, showed little batch variation (Figure 1\u2014figure supplement 2), and were used for downstream analysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "eaf8da26-c7b4-4553-aad7-73702b2144ed",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C45",
+      "claim": "Louvain modulating analysis resulted in 18 distinct clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify cell clusters, we used Louvain modulating analysis (Joost et al., 2016; Wolf et al., 2018), which resulted in 18 distinct clusters (Figure 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct report of the clustering analysis results, supported by Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "495173da-de00-4d20-9890-9adf80efa8df",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C46",
+      "claim": "Keratinocytes represented the largest portion of cell types in the scRNA-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Keratinocytes represented the largest portion of cell types in the analysis (blue clusters - 0, 1, 2, 5, 8, 9, 11, 12, 17) (Figure 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the clustering analysis shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "141562a2-a81b-43b6-a56c-8bdd328e56f2",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C47",
+      "claim": "Three distinct fibroblast clusters were identified that expressed Twist2, Pdgfra, and En1.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified three distinct fibroblast clusters (green clusters - 3, 4, 16). These clusters expressed Twist2, Pdgfra, and En1 (Figure 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gene expression analysis shown in Figure 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "4e6e2912-a99b-48be-be4d-eb85182927c6",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C48",
+      "claim": "There was no cluster exclusively defined by over-representation of the regenerating condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, there was no cluster exclusively defined by over-representation of the regenerating condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of cell conditions within clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "7149c5f8-af22-400b-b03a-df363f786b6e",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C49",
+      "claim": "Cluster 16 consisted of 99.9% of fibroblasts from homeostatic skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 16 consisted of 99.9% of fibroblasts from homeostatic skin, while Cluster 3 consisted of 67.8% of developing fibroblasts (Figure 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "bbf4c332-3b4c-48a4-bc32-051a5a261ac2",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C50",
+      "claim": "Cluster 3 consisted of 67.8% of developing fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 16 consisted of 99.9% of fibroblasts from homeostatic skin, while Cluster 3 consisted of 67.8% of developing fibroblasts (Figure 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantification shown in Figure 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "6854695d-6605-4bd4-8272-99cdc620a438",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C51",
+      "claim": "Fibroblasts play a critical role in regulating hair follicle reformation in wounds by differentiating into de-novo DP.",
+      "claim_type": "EXPLICIT",
+      "source": "Since fibroblasts are known to play a critical role in regulating hair follicle reformation in wounds by differentiating into de-novo DP (Driskell et al., 2013; Plikus et al., 2017; Rognoni et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "21ed3d38-73c6-4088-b77e-96630e091d7f",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C52",
+      "claim": "Integration analysis of fibroblast clusters revealed 10 distinct clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "UMAP plotting of the integrated analysis revealed 10 distinct clusters (Figure 1k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the UMAP plot shown in Figure 1k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "68b8a2f1-85fc-4bfc-b07a-9ceda7071f0d",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C53",
+      "claim": "The largest fibroblast cluster (cluster 0) expressed markers of the papillary fibroblast lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest cluster (cluster 0) expressed markers of the papillary fibroblast lineage (Figure 1e\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by marker expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "b04bd6c1-3def-4bb6-993d-8d0391cf4de9",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C54",
+      "claim": "Four fibroblast clusters distinctly expressed markers of the reticular/hypodermal/fascia layers of the dermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Four clusters (clusters 1, 2, 3, 4) distinctly expressed markers of the reticular/hypodermal/fascia layers of the dermis (Figure 1k; Figure 1\u2014figure supplement 1a\u2013b; Supplementary file 1; Correa-Gallegos et al., 2019; Joost et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by marker expression analysis and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "51b0dc35-f716-446e-b408-4f5bbba37933",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C55",
+      "claim": "Three fibroblast clusters expressed markers of the dermal papilla and dermal sheath.",
+      "claim_type": "EXPLICIT",
+      "source": "Three clusters (clusters 6, 7, 8) expressed markers of the dermal papilla and dermal sheath (Figure 1e\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by marker expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "959d424f-2806-43a5-a8a4-819d222cef15",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C56",
+      "claim": "One fibroblast cluster was distinctly represented by Acta2 indicating a myofibroblast subtype.",
+      "claim_type": "EXPLICIT",
+      "source": "One cluster was distinctly represented by Acta2 indicating a myofibroblast subtype (cluster 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on marker expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "779013cc-570d-4e70-980c-eaa8b8527de7",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C57",
+      "claim": "The myofibroblast sub-cluster (cluster 9) contained 69% of cells from the regenerating condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The myofibroblast sub-cluster (cluster 9) contained 69% of cells from the regenerating condition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of cell conditions within clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "8bd964d5-021e-46b5-840b-343c516fbecd",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C58",
+      "claim": "A hypodermal fascia cluster (cluster 1) contained 92.2% of cells from the scarring condition.",
+      "claim_type": "EXPLICIT",
+      "source": "while a hypodermal fascia cluster (cluster 1) contained 92.2% of cells from the scarring condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of cell conditions within clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "e5b6f354-c5e9-490f-abf1-e11617105afe",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C59",
+      "claim": "Cluster 4, identified by high expression of Cochlin (Coch), contained 80.8% of cells from the homeostasis condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Cluster 4, identified by the high expression of Cochlin (Coch), an inner ear ECM protein, contained 80.8% of cells from the homeostasis condition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of cell conditions within clusters and marker expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "1f48ff9b-0fe9-49a9-8db1-3a17a9f59418",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C60",
+      "claim": "A DP/DS sub-cluster (cluster 6) contained 95.0% of cells from the homeostasis condition.",
+      "claim_type": "EXPLICIT",
+      "source": "and a DP/DS sub-clusters (cluster 6) contained 95.0% of cells from the homeostasis condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of cell conditions within clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "1e8cf830-efc4-40e2-ae92-1abc002fe27e",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C61",
+      "claim": "The papillary fibroblast cluster (cluster 0) contained 98.1% of cells from the developing skin condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The papillary fibroblast cluster (cluster 0) contained 98.1% of cells from the developing skin condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of cell conditions within clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "568e5b13-b02c-4b63-9b2c-d7f50526d990",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C62",
+      "claim": "The DP sub-cluster (cluster 7) consisted of 56.5% cells from the developing condition and 37.1% cells from the regenerating condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The DP sub-cluster (cluster 7) consisted of 56.5% cells from the developing condition and 37.1% cells from the regenerating condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of cell conditions within clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "061f6bd0-718c-470d-bc0b-8442b4636c1f",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C63",
+      "claim": "There is a distinct separation based on condition between fibroblast sub-types neonatal papillary fibroblasts versus reticular/hypodermal/fascia.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that there is a distinct separation based on condition between fibroblast sub-types neonatal papillary fibroblasts versus reticular/hypodermal/fascia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the quantification of cell conditions within clusters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "d6b25cd3-8798-40e8-afca-6ae4fecc3608",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C64",
+      "claim": "Regenerating and scarring conditions were present in similar proportions across multiple fibroblast subtypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, regenerating, and scarring conditions were present in similar proportions across multiple fibroblasts subtypes, besides clusters of hypodermal and fascia cells that were mainly composed of the scarring condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantification of cell conditions within clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "f1bb8865-2fa4-4cd1-8c2b-12960a1d3329",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C65",
+      "claim": "Both wounding conditions shared similar cellular and molecular signatures that may be driven by the wound healing process.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that both wounding conditions shared similar cellular and molecular signatures that may be driven by the wound healing process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity in cell type proportions between regenerating and scarring conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "2898a51e-2604-4b4c-93c3-5dd445645ad0",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C66",
+      "claim": "Developing fibroblasts migrate into wounds and support the reformation of hair follicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Developing fibroblasts migrate into wounds and support the reformation of hair follicles (Driskell et al., 2013; Rognoni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "f213caaf-6ba6-4475-b27a-42fd1b265973",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C67",
+      "claim": "DP and DS do not migrate into wounds to support hair follicle reformation in homeostatic skin.",
+      "claim_type": "EXPLICIT",
+      "source": "In homeostatic skin DP and DS are critical for hair follicle growth and cycling. However, they do not migrate into wounds to support hair follicle reformation (Johnston et al., 2013; Kaushal et al., 2015; Abbasi et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "ae28d0fc-a1ca-4335-a34b-58bd9dda7118",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C68",
+      "claim": "Myofibroblasts are a major contributor to scar formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Myofibroblasts are a major contributor to scar formation but may not normally differentiate into dermal papilla during hair follicle regeneration (Lim et al., 2018; Plikus et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "46be9694-9d0d-4963-aa31-c9d55b14f42b",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C69",
+      "claim": "Myofibroblasts may not normally differentiate into dermal papilla during hair follicle regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Myofibroblasts are a major contributor to scar formation but may not normally differentiate into dermal papilla during hair follicle regeneration (Lim et al., 2018; Plikus et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "49ddf643-f421-44a6-8185-08f1a83e70f6",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C70",
+      "claim": "Reticular and fascia fibroblasts contribute to scar formation but do not differentiate into dermal papilla.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, reticular and fascia fibroblasts contribute to scar formation but do not differentiate into dermal papilla (Correa-Gallegos et al., 2019; Driskell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "56594a1c-35ce-4ddb-bfc0-7618553e0274",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C71",
+      "claim": "The developing fibroblasts are unique and might harbor the potential to support hair follicle regeneration in wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the developing fibroblasts are unique and might harbor the potential to support hair follicle regeneration in wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analysis of fibroblast subtypes and their properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "62f5a3f3-f36d-4375-870b-5eb6a28b1f3a",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C72",
+      "claim": "Previously identified fibroblast heterogeneity and lineages could be identified in the scRNA-seq analysis of developing skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we concluded that the previously identified fibroblasts heterogeneity and the lineages could be identified in the scRNA-seq analysis of developing skin, with the additional subclusters of papillary fibroblasts (Figure 2e; Driskell et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of scRNA-seq data with previously published lineage markers.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "1afd43a7-2c11-40f2-8520-b95a8b600868",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C73",
+      "claim": "Novel heterogeneity within papillary fibroblast clusters was found, with Lef1 and Dkk1 expressions marking distinct papillary fibroblast clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we also found novel heterogeneity within papillary fibroblast clusters. Besides the Dpp4+ clusters, Lef1 and Dkk1 expressions marked distinct papillary fibroblast clusters (Figure 2i, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on gene expression analysis in scRNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "22438484-05fc-4a9e-9479-2ad30e18e936",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C74",
+      "claim": "RNA velocity analysis predicts that the dermal papilla is a differentiation endpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Velocity analysis predicts that the dermal papilla is a differentiation endpoint, while papillary fibroblasts converge into the Dpp4 subcluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA velocity computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "2a879d20-75a9-4997-80e7-370f39d5d2c3",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C75",
+      "claim": "RNA velocity analysis predicts that papillary fibroblasts converge into the Dpp4 subcluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Velocity analysis predicts that the dermal papilla is a differentiation endpoint, while papillary fibroblasts converge into the Dpp4 subcluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA velocity computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "57535abe-cad3-48eb-a06b-8d7aa6f25415",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C76",
+      "claim": "The predicted differentiation trajectory of reticular fibroblasts suggests that they differentiate into arrector pili and also converge into the Dpp4 papillary subcluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the predicted differentiation trajectory of reticular fibroblasts suggests that they differentiate into arrector pili and also converge into the Dpp4 papillary subcluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA velocity computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "523a81c2-cf8c-4962-88a1-cee9fab16855",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C77",
+      "claim": "The RNA velocity prediction that reticular fibroblasts differentiate into papillary fibroblasts contradicts previous in vivo lineage-tracing studies.",
+      "claim_type": "EXPLICIT",
+      "source": "This contradicts previous in vivo lineage-tracing studies of the Dlk1+ fibroblast populations but agrees with ex vivo studies that tested the differentiation potential of Dpp4-/Dlk1+/Ly6a- fibroblast populations in chamber grafting and hydrogel assays (Driskell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between computational predictions and previous experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "b8afb3ff-aea5-4dc8-bf54-a60b9d20069d",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C78",
+      "claim": "The RNA velocity prediction that reticular fibroblasts differentiate into papillary fibroblasts agrees with ex vivo studies testing differentiation potential in chamber grafting and hydrogel assays.",
+      "claim_type": "EXPLICIT",
+      "source": "This contradicts previous in vivo lineage-tracing studies of the Dlk1+ fibroblast populations but agrees with ex vivo studies that tested the differentiation potential of Dpp4-/Dlk1+/Ly6a- fibroblast populations in chamber grafting and hydrogel assays (Driskell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between computational predictions and previous experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "7ecea14f-ce1a-43a3-a698-9f3fa0b62f01",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C79",
+      "claim": "Hypodermal and fascia fibroblast clusters were predicted to maintain the lower lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypodermal and fascia fibroblast clusters were predicted to maintain the lower lineage (Figure 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on RNA velocity analysis shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "8a486c03-bea8-473d-8fd6-3f2783772cdb",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C80",
+      "claim": "The most highly represented pathways in RNA velocity driver genes included Integrin signaling, Wnt signaling, Cadherin signaling and TGFb signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed PANTHER pathway classification on this list genes and found that the most highly represented pathways included Integrin signaling, Wnt signaling, Cadherin signaling and TGFb signaling pathways (Figure 2h; Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pathway analysis of RNA velocity driver genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "daafd8c4-e9c9-4fa7-a275-555dc8f31568",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C81",
+      "claim": "Lef1 was found in the Papillary Dkk1 fibroblasts and the Dividing Papillary subclusters as a velocity driver gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Lef1 was found in the Papillary Dkk1 fibroblasts and the Dividing Papillary subclusters (Figure 2i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of top velocity driver genes for each cluster.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "24c031dd-ad0f-482e-904d-d1614ce4ee58",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C82",
+      "claim": "The expression of Lef1 may drive RNA velocity toward papillary fibroblast and dermal papilla.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the expression of Lef1 may drive RNA velocity toward papillary fibroblast and dermal papilla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the identification of Lef1 as a velocity driver gene.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "cbd4bc85-55d5-4ce5-a708-0589d6a1f63a",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C83",
+      "claim": "Phase contrast analysis predicts that Lef1 and Wnt5a velocity increases towards the papillary fibroblast and dermal papilla clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase contrast analysis predicts that Lef1 and Wnt5a velocity increases towards to the papillary fibroblast and dermal papilla clusters (Figure 2j\u2013k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on phase contrast analysis of Wnt signaling genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "4e96a188-b6eb-4989-93e5-4a882ae9e6cc",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C84",
+      "claim": "Immunostaining confirmed the population of neonatal papillary fibroblasts expressing Lef1 is found only in developing skin and not in juvenile homeostatic skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results confirmed the population of neonatal papillary fibroblasts that is found only in developing skin (Figure 2j, red arrows) and not in juvenile homeostatic skin (Figure 2k, white arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunostaining validation shown in Figure 2j-k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "e79a5bc5-b717-40b6-8e8a-b3ef20ad9797",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C85",
+      "claim": "Co-staining with Dpp4 confirmed that Lef1 marked a subset of neonatal papillary fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-staining with Dpp4 confirmed that Lef1 marked a subset of neonatal papillary fibroblasts (Figure 2l) that was also not found in juvenile skin (Figure 2m).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on co-immunostaining shown in Figure 2l-m.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "5d755832-a675-41f2-86e5-81d897529e86",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C86",
+      "claim": "The transient expression of Lef1 in neonatal papillary fibroblast correlates with the ability of neonatal developing skin to regenerate hair follicles in wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "The transient expression of Lef1 in neonatal papillary fibroblast correlates with the ability of neonatal developing skin to regenerate hair follicles in wounds (Rognoni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a correlation based on the temporal expression pattern of Lef1 and regenerative capacity, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "ebab3095-f152-443c-905c-d3a8876051af",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C87",
+      "claim": "Velocity analysis predicts that Lef1 drives developing fibroblast velocity to papillary fibroblast and DP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, velocity analysis predicts that Lef1 drives developing fibroblast velocity to papillary fibroblast and DP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNA velocity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "396fb0f6-1256-4717-8b6e-e38a2bec8d24",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C88",
+      "claim": "Subset analysis of regenerating and scarring fibroblasts did not identify fibroblasts defined by Lef1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, subset analysis of regenerating and scarring fibroblasts did not identify fibroblasts defined by Lef1 expression, indicating that this transient population is unique to developing skin (Figure 2\u2014figure supplement 2a\u2013f; Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative analysis of fibroblast populations across conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "79251146-cc37-4d12-bdb3-2aef5698dad6",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C89",
+      "claim": "Lef1 expression in fibroblasts marks the ability of developing skin to regenerate hair follicles during the wound healing process.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that Lef1 expression in fibroblasts marks the ability of developing skin to regenerate hair follicles during the wound healing process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the correlation between Lef1 expression and regenerative capacity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "6d6de3a3-c9b6-488b-84cc-2c3cf8bc0f9e",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C90",
+      "claim": "Lef1 in fibroblasts is required to support neonatal regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if Lef1 in fibroblasts is required to support neonatal regeneration, we produced a tissue-specific knockout model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is tested through a loss-of-function genetic experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "477e2312-e29a-42d1-8845-f6250c94574f",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C91",
+      "claim": "Twist-Lef1cKO mice were viable and fertile with small shifts in hair follicle phenotypes that resulted in less dense fur.",
+      "claim_type": "EXPLICIT",
+      "source": "Twist-Lef1cKO mice were viable and fertile with small shifts in hair follicle phenotypes that resulted in less dense fur (Fine et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation of the phenotype of the knockout mice, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "ea1cb168-fce9-4849-9563-ebdf48a8f04a",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C92",
+      "claim": "Dermal Lef1 ablation from the papillary fibroblast at P2 and from adult DP was confirmed by immunostaining.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed dermal Lef1 ablation from the papillary fibroblast at P2 and from adult DP by immunostaining (Figure 3b\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunostaining validation shown in Figure 3b-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "5fe2411d-da33-4537-b8c2-30e56610ce69",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C93",
+      "claim": "Lef1 was expressed in the de-novo DP and regenerating hair follicle buds of wild-type mice at P2 7dpw.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses revealed that Lef1 was expressed in the de-novo DP and regenerating hair follicle buds of wild-type mice (Figure 3g,i)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunostaining analysis shown in Figure 3g,i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "ebcbbac6-1220-4d1f-b2fe-d663e96b52ab",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C94",
+      "claim": "Wounded Twist-Lef1cKO mice lacked regeneration at P2 7dpw.",
+      "claim_type": "EXPLICIT",
+      "source": "but that wounded Twist-Lef1cKO mice lacked regeneration (Figure 3h,j,k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunostaining and quantification shown in Figure 3h,j,k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "802e84d4-c38d-4b2a-951b-a9e258d645ea",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C95",
+      "claim": "Lef1 expression in neonatal fibroblasts is required for neonatal hair follicle regeneration in wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Lef1 expression in neonatal fibroblasts is required for neonatal hair follicle regeneration in wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the loss-of-function experiment showing lack of regeneration in Twist-Lef1cKO mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "99790c61-db91-41c2-9735-39b5990d7ada",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C96",
+      "claim": "Constitutively active Lef1 expression in dermal fibroblasts will prime skin to support regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that constitutively active Lef1 expression in dermal fibroblasts will prime skin to support regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis to be tested with gain-of-function experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "4993b2ec-34bb-4c98-95dd-d00af93a9433",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C97",
+      "claim": "Lef1 was expressed in all dermal fibroblast compartments in Twist-Lef1KI mice during development and in adult homeostatic skin conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified that Lef1 was expressed in all dermal fibroblast compartments in Twist-Lef1KI mice during development and in adult homeostatic skin conditions (Figure 4b\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunostaining validation shown in Figure 4b-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "65d70337-c11d-4ac7-aa19-a90afb9b9d61",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C98",
+      "claim": "The only phenotype detected in Twist-Lef1KI mice was the early entry of the hair follicle cycling into anagen at P21.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the only phenotype detected was the early entry of the hair follicle cycling into anagen at P21 in Twist-Lef1KI mice (Figure 2d\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on observation of hair follicle cycling in Twist-Lef1KI mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "55f2642c-a618-487d-b329-0999917867aa",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C99",
+      "claim": "Twist-Lef1KI mice have similar life spans as wild type mice without any adverse effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Twist-Lef1KI mice have similar life spans as wild type mice without any adverse effects (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on longitudinal observation of the mice shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "5aee4c8b-12da-4368-bcb1-101fdae5601a",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C100",
+      "claim": "Induced expression of Lef1 in fibroblasts does not negatively affect the development and homeostasis of murine skin.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that induced expression of Lef1 in fibroblasts does not negatively affect the development and homeostasis of murine skin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the observation that Twist-Lef1KI mice are viable with minimal phenotypic changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "8e0961fd-2110-4840-8bd2-5531a151ef44",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C101",
+      "claim": "There were five times more regenerating hair follicles on average in Twist-Lef1KI wound beds compared to wild type wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "There were five times more regenerating hair follicles on average in Twist-Lef1KI wound beds compared to wild type wounds (Figure 4j\u2013k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantification of regenerating hair follicles shown in Figure 4j-k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "617fbd77-8dbd-4651-9cfb-f460d6d39165",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C102",
+      "claim": "The hair follicles regenerating in the Twist-Lef1KI wound beds contained arrector pili.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the hair follicles regenerating in the Twist-Lef1KI wound beds contained arrector pili (Figure 4i)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on immunostaining for arrector pili marker shown in Figure 4i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "51212c22-30e6-4106-b025-20ecf0a8aba2",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C103",
+      "claim": "Hair follicles regenerating in Twist-Lef1KI wound beds were larger than hair follicles found in wild-type wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "and were larger than hair follicles found in wild-type wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on morphological comparison of regenerated hair follicles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "fe18c145-e1d4-43f0-ac5d-3049e24c88c2",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C104",
+      "claim": "Lef1 expression in the dermis of the skin leads to enhanced regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Lef1 expression in the dermis of the skin leads to enhances regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the gain-of-function experiment showing enhanced regeneration in Twist-Lef1KI mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "3469cb32-f086-47fd-b897-2820f5457ac6",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C105",
+      "claim": "Wound healing studies utilize a standardized approach to account for the hair follicle cycle, which influences the wound healing process.",
+      "claim_type": "EXPLICIT",
+      "source": "Wound healing studies utilize a standardized approach to account for the hair follicle cycle, which influences the wound healing process (Ansell et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "fd98679c-fd90-4347-be79-74da418b665b",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C106",
+      "claim": "The bulk of wound healing and regeneration studies are performed at 3 weeks of age (~P21) or at 7\u20138 weeks of age (~P57).",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the bulk of wound healing and regeneration studies are performed at 3 weeks of age (~P21) or at 7\u20138 weeks of age (~P57) (Gay et al., 2013; Guerrero-Juarez et al., 2019; Ito et al., 2007; Lim et al., 2018; Plikus et al., 2017; Plikus et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "eff1ea9c-55c4-4393-a6a6-1dd1a85defb3",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C107",
+      "claim": "A standard size wound of roughly 8 mm in diameter or smaller is used in wound healing studies, which heal by scarring.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a standard size wound of roughly 8 mm in diameter or smaller is used, which heal by scarring (Driskell et al., 2013; Lim et al., 2018; Rognoni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "71098b47-ca0b-4bc7-a2c2-319751ea39c2",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C108",
+      "claim": "Scars formed in wounds performed at P24 in both WT and Twist-Lef1KI mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Scars formed in wounds performed at P24 in both WT and Twist-Lef1KI mice (Figure 5b\u2013c,l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological analysis shown in Figure 5b-c,l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "3db0541b-9cbe-4dfe-8f00-3a16f72e4c65",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C109",
+      "claim": "Hair follicle regeneration with arrector pili occurred in wounds performed at P40 and P90 in Twist-Lef1KI mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hair follicle regeneration with arrector pili occurred in wounds performed at P40 and P90 in Twist-Lef1KI mice (Figure 5d\u2013k,l; Figure 5\u2014figure supplement 1; Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on histological analysis and immunostaining shown in Figure 5d-k,l and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "844d9b64-8334-4b52-a32a-a442b825b52b",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C110",
+      "claim": "Lef1 expression in the dermis induces skin to support hair follicle regeneration in wounds with variation depending on the timepoints and hair follicle cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Lef1 expression in the dermis induces skin to support hair follicle regeneration in wounds with variation depends on the timepoints and hair follicle cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the differential regeneration outcomes at different time points.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "5d1d246f-7a74-45c9-9166-da521429c497",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C111",
+      "claim": "The size of a wound can dictate the potential of skin to regenerate instead of scar.",
+      "claim_type": "EXPLICIT",
+      "source": "Our wound healing studies mirror previous work suggesting that the size of a wound can dictate the potential of skin to regenerate instead of scar (Ito et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature and the authors' own observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "bcce6ddf-7ee0-4f6a-b9e3-e6053b0ecc93",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C112",
+      "claim": "8 mm circular wounds re-epithelialize 7 days post wound in a macro-environment with high levels of Lef1 inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "8 mm circular wounds re-epithelialize 7 dpw (Driskell et al., 2013) in a macro-environment with high levels of Lef1 inhibitors, which are not inductive to hair follicle formation (Figure 5l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of gene expression during hair follicle cycling shown in Figure 5l, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "4dfca546-5b0f-4b6b-a9b9-84efe16e33cc",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C113",
+      "claim": "Large 1.2 cm2 wounds re-epithelialize during the time point of the hair cycle that has high activators and low inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, large 1.2 cm2 wounds re-epithelialize during the time point of the hair cycle that has high activators and low inhibitors (Figure 5l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of gene expression during hair follicle cycling shown in Figure 5l.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "53b2519a-f200-4128-a1d1-2e9b2ff7b110",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C114",
+      "claim": "The size of a wound dictates the time point when wound closure occurs which is associated with inhibitor or inductive regenerative signals.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the size of a wound dictates the time point when wound closure occurs which is associated with inhibitor or inductive regenerative signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the correlation between wound size, closure timing, and gene expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "cf4dac9b-0f91-4e5d-9260-449ed0191c6f",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C115",
+      "claim": "Embryonic and neonatal skin has the potential to heal in a scar-less manner.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well established that embryonic and neonatal skin has the potential to heal in a scar-less manner (Walmsley et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "28c6a684-520f-4abe-b50f-fbb7b0e88694",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C116",
+      "claim": "The cell types and signals that can transfer the regenerative ability of embryonic/neonatal skin to adult skin have not been identified prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the cell types and signals that can transfer this ability to adult skin have not been identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in knowledge that the current study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "8c952612-2c3c-4493-8936-6d9d39b80d5f",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C117",
+      "claim": "Developing papillary fibroblasts are a transient cell population defined by Lef1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identify developing papillary fibroblasts as a transient cell population that is defined by Lef1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "fca716b6-577e-4432-97c8-8b628684a639",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C118",
+      "claim": "Inducing Lef1 expression in the adult dermis will prime skin to support enhanced hair follicle regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Inducing Lef1 expression in the adult dermis will prime skin to support enhanced hair follicle regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding from the gain-of-function experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "a70f48a2-f1c6-4fd5-a31c-427a150cea3c",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C119",
+      "claim": "Ectopic Lef1 expression in the dermis did not result in any adverse phenotypes during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ectopic Lef1 expression in the dermis did not result in any adverse phenotypes during development (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observation of Twist-Lef1KI mice during development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "979823e2-0cbe-47f2-ae52-c89db2f1f9f1",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C120",
+      "claim": "Comparisons of regenerating and scarring wounds reveal their similarities more than their differences.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we discovered a neonatal papillary fibroblast population that is defined by Lef1 expression in developing skin instead of in regenerating conditions. Importantly, our comparative analysis of regenerating and scarring wounds reveals their similarities (Figure 1i, Figure 2\u2014figure supplement 2) more than their differences",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative scRNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "18448529-7c5c-4872-aaf1-bcd59a3cf102",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C121",
+      "claim": "The wound environment is a powerful driving force for gene expression even with a heterogeneous population of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the wound environment is a powerful driving force for gene expression even with a heterogeneous population of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity between regenerating and scarring conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "732ee2ea-8f79-45d5-bf87-568ca28b324f",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C122",
+      "claim": "The basic mechanisms occurring during development and maintenance of neonatal tissue may hold the keys to transforming adult tissue to regenerate instead of scarring.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the basic mechanisms occurring during development and maintenance of neonatal tissue may hold the keys to transforming adult tissue to regenerate instead of scarring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the finding that developing fibroblasts, not wound-induced cells, drive regeneration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "0e31d570-fe7d-4356-af9d-a659b13a548b",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C123",
+      "claim": "Studies involving the activation of Wnt and beta-catenin pathways in skin have produced contrasting results in the context of fibroblast biology and hair follicle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies involving the activation of the Wnt and beta-catenin pathways in skin have led to important discoveries in wound healing research, but have produced contrasting results in the context of fibroblast biology and hair follicle formation (Chen et al., 2012; Hamburg-Shields et al., 2015; Ito et al., 2007; Lim et al., 2018; Mastrogiannaki et al., 2016; Rognoni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "77bf19e7-906e-4214-9aee-3b8edc9523c0",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C124",
+      "claim": "The activation of beta-catenin in fibroblasts during wound healing has been shown to inhibit hair follicle reformation in scars.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of beta-catenin in fibroblasts during wound healing has been shown to inhibit hair follicle reformation in scars (Lim et al., 2018; Rognoni et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "d7918c89-c84e-4e52-b295-8c69aa45d544",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C125",
+      "claim": "Deactivating Wnt signaling inhibited hair reformation.",
+      "claim_type": "EXPLICIT",
+      "source": "while deactivating Wnt signaling inhibited hair reformation (Myung et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "d3ff39c3-7208-4c90-9b97-f1fe50a2358d",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C126",
+      "claim": "Persistent Wnt activity in the dermis has been shown to drive WIHN toward fibrotic wound healing.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, persistent Wnt activity in the dermis has been recently shown to drive WIHN toward fibrotic wound healing (Gay et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "116dc7f2-0ff6-4e0c-bcba-ac4038851aaa",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C127",
+      "claim": "The activation of beta-catenin during development increases hair formation and size.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the activation of beta-catenin during development increases hair formation and size (Chen et al., 2012; Enshell-Seijffers et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "cb1d7df5-f637-4604-a237-3f0b26e66f2c",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C128",
+      "claim": "The presence of different fibroblast lineages in development or wounds, which express different Lef/Tcf factors, may explain conflicting results of Wnt/beta-catenin activation.",
+      "claim_type": "EXPLICIT",
+      "source": "One explanation for these conflicting results is the presence of different fibroblast lineages present in either development or wounds, which express different Lef/Tcf factors to direct a Wnt/beta-catenin-specific response (Driskell et al., 2013; Philippeos et al., 2018; Rognoni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation proposed by the authors, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "5656ce41-7092-44fb-8b6b-6f9c681bb453",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C129",
+      "claim": "Lef1 is expressed in embryonic and neonatal papillary fibroblasts, which is lost in adult fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have shown that Lef1 is expressed in embryonic and neonatal papillary fibroblasts, which is lost in adult fibroblasts (Driskell et al., 2013; Mastrogiannaki et al., 2016; Philippeos et al., 2018; Rognoni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature including the authors' own work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "034cefa0-d773-4fcb-a995-066ea0df33f0",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C130",
+      "claim": "Lef1 is a key transcription factor in developing fibroblasts that supports hair follicle formation in adult wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that Lef1 is a key transcription factor in developing fibroblasts that supports hair follicle formation in adult wounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "cf38edc5-4962-4e73-b77d-d34c1c59bb0c",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C131",
+      "claim": "Lef1 expression in the dermis of the skin primes a response to support hair follicle neogenesis and arrector pili reformation in the wound.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicates that Lef1 expression in the dermis of the skin primes a response to support hair follicle neogenesis and arrector pili reformation in the wound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the gain-of-function experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "dd04ed85-0188-4320-9092-468d03dc0192",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C132",
+      "claim": "Inducing Lef1 expression in cultured human dermal papilla cells enhances hair follicle formation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results align with studies that induced Lef1 expression in cultured human dermal papilla cells to enhance hair follicle formation in vitro (Abaci et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "10e6fc57-1305-4f7a-90b3-920f195a4da7",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C133",
+      "claim": "At the age of 50+, the quality of the papillary dermis gradually deteriorates in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, at the age of 50+, the quality of the papillary dermis gradually deteriorates, which correlates with the aging skin decreased wound healing abilities (Haydont et al., 2019; Marcos-Garc\u00e9s et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "c8ff09a9-650b-408b-8291-8a123d793ce0",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C134",
+      "claim": "The deterioration of the papillary dermis correlates with aging skin's decreased wound healing abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, at the age of 50+, the quality of the papillary dermis gradually deteriorates, which correlates with the aging skin decreased wound healing abilities (Haydont et al., 2019; Marcos-Garc\u00e9s et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "fa2f9a13-e769-4e39-9f41-232497cd33f7",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "claim_id": "C135",
+      "claim": "Activating the papillary region to retain its identity by expression of Lef1 has the potential to enhance wound healing in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggests that activating the papillary region to retain its identity by expression of Lef1 has the potential to enhance wound healing in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extrapolation from mouse data to potential human applications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Using scRNA-seq analysis of unsorted cells from developing (P2), regenerating (P2 7dpw), homeostatic (P21), and scarring (P21 7dpw) skin conditions, the authors identified neonatal papillary fibroblasts as a transient regenerative cell type defined by Lef1 expression. This population is unique to developing skin (98.1% of cluster 0) and is not found in regenerating or scarring wounds, suggesting that developmental mechanisms rather than wound-induced signals drive regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The scRNA-seq data with 66,407 cells from 12 libraries (n=3 per condition) shows minimal batch effects and identifies distinct fibroblast populations. The clustering analysis, marker expression data, and immunostaining validation (Figures 1-2) consistently demonstrate that Lef1+ papillary fibroblasts are specific to developing skin and correlate with regenerative capacity. The comparative analysis showing similarities between regenerating and scarring conditions further supports that developmental cell types, not wound-induced populations, are key to regeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "2edcba99-0216-45aa-bd1d-d677da64e772",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RNA velocity analysis of developing fibroblasts predicts that Lef1 is a key driver gene directing differentiation trajectories toward papillary fibroblasts and dermal papilla. The analysis identified Wnt signaling, Integrin signaling, Cadherin signaling, and TGF\u03b2 signaling as the most highly represented pathways among velocity driver genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While RNA velocity is a computational prediction method that can provide insights into differentiation trajectories, the predictions (particularly that reticular fibroblasts differentiate into papillary fibroblasts) contradict established in vivo lineage-tracing studies. The authors acknowledge this discrepancy (C77) but note agreement with ex vivo studies. The computational predictions require experimental validation through lineage tracing or functional studies to confirm the predicted trajectories and the role of Lef1 as a driver gene.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "13a6fede-cf08-4bc3-98b9-475bc3166055",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Loss-of-function experiments using Twist-Lef1cKO mice demonstrate that Lef1 expression in neonatal fibroblasts is required for hair follicle regeneration in P2 wounds. Wounded Twist-Lef1cKO mice lacked regeneration at P2 7dpw, while wild-type littermates showed Lef1 expression in de-novo dermal papilla and regenerating hair follicle buds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic knockout experiment provides clear loss-of-function evidence. Immunostaining confirms dermal Lef1 ablation in papillary fibroblasts at P2 and adult DP (Figure 3b-e). Quantification shows significant reduction in regenerating hair follicles in Twist-Lef1cKO mice (p<0.003, n=4 WT vs n=3 cKO, Figure 3k). The experimental design with littermate controls and immunostaining validation supports the conclusion that Lef1 is required for neonatal regeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Gain-of-function experiments using Twist-Lef1KI mice show that constitutive Lef1 expression in dermal fibroblasts primes adult skin to support enhanced hair follicle regeneration in large wounds (1.2 cm\u00b2). Twist-Lef1KI mice showed five times more regenerating hair follicles compared to wild-type controls, and these follicles were larger and contained arrector pili muscles, without adverse effects on development or homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The gain-of-function data is well-supported by immunostaining validation of Lef1 expression in all dermal compartments (Figure 4b-e), quantification showing significant increase in hair follicle regeneration (p<0.004 for hairs growing out, p<0.001 for hairs in sections, n=6 WT vs n=4 KI, Figure 4j-k), and demonstration of arrector pili presence (Figure 4i). The mice are viable with similar lifespans and only minor phenotypic changes (early anagen entry at P21), supporting safety. However, the mechanism by which Lef1 primes the macroenvironment remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "0a2530ad-03a5-4400-844e-a81d24bcd032",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The regenerative capacity of Twist-Lef1KI mice depends on wound timing relative to the hair follicle cycle. Wounds at P24 (during active cycling) formed scars in both WT and Twist-Lef1KI mice, while wounds at P40 and P90 (during resting phase or unsynchronized cycling) showed hair follicle regeneration with arrector pili in Twist-Lef1KI mice. The authors propose that wound size dictates closure timing, which correlates with the presence of Lef1 activators versus inhibitors in the macroenvironment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The temporal analysis is supported by histological data at multiple time points (Figure 5b-k) with quantification showing significant regeneration at P40 (p<0.0009) and P90 (p<0.007) but not P24 (ns) in Twist-Lef1KI mice. The correlation with hair cycle gene expression (activators/inhibitors) from microarray data (Figure 5l) provides a mechanistic framework. However, the proposed mechanism linking wound size, closure timing, and macroenvironment signals is correlative rather than causally demonstrated. Direct manipulation of these signals would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "021d7a93-2299-46d7-b1b1-6167673a3d15",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context that scars lack hair follicles, that embryonic/neonatal skin can regenerate, and that mouse skin development involves establishment of distinct fibroblast lineages (papillary and reticular) by P2, with subsequent loss of the defined papillary layer during maturation. The authors propose that expanding the papillary layer in adult skin might support regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by citations to established literature (C6-C22) and the authors' own previous work. The immunostaining data (Figure 1a-b) validates the presence of defined dermal layers at P2 and their loss by P21. The speculation about expanding papillary fibroblasts (C23) is reasonable given the established biology, though it remains a hypothesis tested by subsequent experiments in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors review prior scRNA-seq studies of wound healing and the role of Wnt/\u03b2-catenin signaling in skin, noting that previous studies focused on comparing wound conditions and that Wnt pathway activation has produced contrasting results. They identify a knowledge gap regarding how differential expression of Tcf/Lef transcription factors modulates fibroblast activity in wound healing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize the state of the field based on appropriate citations. The review of prior scRNA-seq work (C24-C28), the safety concerns about Shh pathway activation (C29-C31), and the complexity of Wnt signaling (C32-C36) are all well-documented in the cited literature. The identification of the knowledge gap (C37) appropriately motivates the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "b6318539-a4d7-49d9-86f0-9d2bac2c8ac7",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors establish that different fibroblast populations have distinct roles in wound healing: developing papillary fibroblasts migrate into wounds and differentiate into de-novo dermal papilla to support hair follicle reformation, while DP/DS from homeostatic skin do not migrate into wounds, myofibroblasts contribute to scarring, and reticular/fascia fibroblasts contribute to scarring without differentiating into dermal papilla.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by citations to established literature documenting the behavior of different fibroblast populations during wound healing. This biological context is essential for interpreting the scRNA-seq results and justifies the focus on developing papillary fibroblasts (cluster 0) as the key regenerative population.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "3e336342-41c9-478c-9ba9-71adcc85b9b4",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The comparative scRNA-seq analysis reveals that regenerating and scarring wounds share more similarities than differences in their cellular and molecular signatures, suggesting that the wound environment is a powerful driver of gene expression. The authors conclude that developmental mechanisms in neonatal tissue, rather than wound-induced signals, hold the key to transforming adult tissue to regenerate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The quantification data (Figure 1i, Figure 2\u2014figure supplement 2) shows that regenerating and scarring conditions are present in similar proportions across multiple fibroblast subtypes, supporting the similarity claim. The absence of a regeneration-specific cluster (C48) and the finding that Lef1+ fibroblasts are unique to developing skin (C88) support the conclusion that developmental rather than wound-induced mechanisms drive regeneration. This is a key conceptual insight of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "1703a395-3032-4915-be64-92a9c269e185",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors review the contradictory results from studies activating Wnt/\u03b2-catenin in skin, noting that activation during wound healing inhibits hair follicle reformation while activation during development increases hair formation. They propose that differential expression of Lef/Tcf factors in different fibroblast lineages may explain these conflicting results, and note that Lef1 is expressed in embryonic/neonatal papillary fibroblasts but lost in adult fibroblasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The review of contradictory Wnt/\u03b2-catenin results is well-supported by citations (C123-C127). The proposed explanation involving differential Lef/Tcf expression (C128) is reasonable and supported by citations. The temporal expression pattern of Lef1 (C129) is supported by the authors' own work and other studies. This contextualizes the current findings within the broader Wnt signaling literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    },
+    {
+      "id": "f603939d-e1a0-4c22-ac09-cef89962473b",
+      "content_id": "2ae6b66c-6e11-4261-8c90-5a20f18370e7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors note that their results align with in vitro studies showing Lef1 enhances hair follicle formation in cultured human dermal papilla cells, and that the papillary dermis deteriorates with age in humans (50+), correlating with decreased wound healing. They suggest that activating Lef1 expression to retain papillary identity has potential to enhance wound healing in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the alignment with in vitro human studies (C132) and the age-related deterioration of papillary dermis (C133-C134) are supported by citations, the extrapolation to human therapeutic potential (C135) is speculative. The mouse model results are promising, but translation to human wound healing requires consideration of species differences, delivery methods, safety in humans, and efficacy in human wounds. This represents a reasonable future direction but not a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T20:18:38.015800Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b2439091-05db-4d7a-b820-16963beb18b6",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "b5075432-da32-4310-908f-985e4c3d3320",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "65afb3de-a0ee-4bd9-a097-28c986b01f9b",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "a80b7658-ac7b-4ce9-8a43-b3e935320aa7",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "f6258f52-6b76-4eeb-9e2b-f5d2318428d7",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "cb73023a-232e-4fc2-94d7-1b661126e633",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "eaf8da26-c7b4-4553-aad7-73702b2144ed",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "495173da-de00-4d20-9890-9adf80efa8df",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "141562a2-a81b-43b6-a56c-8bdd328e56f2",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "4e6e2912-a99b-48be-be4d-eb85182927c6",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "7149c5f8-af22-400b-b03a-df363f786b6e",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "bbf4c332-3b4c-48a4-bc32-051a5a261ac2",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "21ed3d38-73c6-4088-b77e-96630e091d7f",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "68b8a2f1-85fc-4bfc-b07a-9ceda7071f0d",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "b04bd6c1-3def-4bb6-993d-8d0391cf4de9",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "51b0dc35-f716-446e-b408-4f5bbba37933",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "959d424f-2806-43a5-a8a4-819d222cef15",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "779013cc-570d-4e70-980c-eaa8b8527de7",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "8bd964d5-021e-46b5-840b-343c516fbecd",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "e5b6f354-c5e9-490f-abf1-e11617105afe",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "1f48ff9b-0fe9-49a9-8db1-3a17a9f59418",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "1e8cf830-efc4-40e2-ae92-1abc002fe27e",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "568e5b13-b02c-4b63-9b2c-d7f50526d990",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "061f6bd0-718c-470d-bc0b-8442b4636c1f",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "d6b25cd3-8798-40e8-afca-6ae4fecc3608",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "f1bb8865-2fa4-4cd1-8c2b-12960a1d3329",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "56594a1c-35ce-4ddb-bfc0-7618553e0274",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "62f5a3f3-f36d-4375-870b-5eb6a28b1f3a",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "1afd43a7-2c11-40f2-8520-b95a8b600868",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "4e96a188-b6eb-4989-93e5-4a882ae9e6cc",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "e79a5bc5-b717-40b6-8e8a-b3ef20ad9797",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "5d755832-a675-41f2-86e5-81d897529e86",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "396fb0f6-1256-4717-8b6e-e38a2bec8d24",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "8c952612-2c3c-4493-8936-6d9d39b80d5f",
+      "result_id": "d2c7ae0b-8ebf-41b8-aa26-d4cf08bd0960"
+    },
+    {
+      "claim_id": "22438484-05fc-4a9e-9479-2ad30e18e936",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "2a879d20-75a9-4997-80e7-370f39d5d2c3",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "57535abe-cad3-48eb-a06b-8d7aa6f25415",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "523a81c2-cf8c-4962-88a1-cee9fab16855",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "b8afb3ff-aea5-4dc8-bf54-a60b9d20069d",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "7ecea14f-ce1a-43a3-a698-9f3fa0b62f01",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "8a486c03-bea8-473d-8fd6-3f2783772cdb",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "daafd8c4-e9c9-4fa7-a275-555dc8f31568",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "24c031dd-ad0f-482e-904d-d1614ce4ee58",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "cbd4bc85-55d5-4ce5-a708-0589d6a1f63a",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "ebab3095-f152-443c-905c-d3a8876051af",
+      "result_id": "2edcba99-0216-45aa-bd1d-d677da64e772"
+    },
+    {
+      "claim_id": "6d6de3a3-c9b6-488b-84cc-2c3cf8bc0f9e",
+      "result_id": "13a6fede-cf08-4bc3-98b9-475bc3166055"
+    },
+    {
+      "claim_id": "477e2312-e29a-42d1-8845-f6250c94574f",
+      "result_id": "13a6fede-cf08-4bc3-98b9-475bc3166055"
+    },
+    {
+      "claim_id": "ea1cb168-fce9-4849-9563-ebdf48a8f04a",
+      "result_id": "13a6fede-cf08-4bc3-98b9-475bc3166055"
+    },
+    {
+      "claim_id": "5fe2411d-da33-4537-b8c2-30e56610ce69",
+      "result_id": "13a6fede-cf08-4bc3-98b9-475bc3166055"
+    },
+    {
+      "claim_id": "ebcbbac6-1220-4d1f-b2fe-d663e96b52ab",
+      "result_id": "13a6fede-cf08-4bc3-98b9-475bc3166055"
+    },
+    {
+      "claim_id": "802e84d4-c38d-4b2a-951b-a9e258d645ea",
+      "result_id": "13a6fede-cf08-4bc3-98b9-475bc3166055"
+    },
+    {
+      "claim_id": "99790c61-db91-41c2-9735-39b5990d7ada",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "4993b2ec-34bb-4c98-95dd-d00af93a9433",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "65d70337-c11d-4ac7-aa19-a90afb9b9d61",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "55f2642c-a618-487d-b329-0999917867aa",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "5aee4c8b-12da-4368-bcb1-101fdae5601a",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "8e0961fd-2110-4840-8bd2-5531a151ef44",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "617fbd77-8dbd-4651-9cfb-f460d6d39165",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "51212c22-30e6-4106-b025-20ecf0a8aba2",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "fe18c145-e1d4-43f0-ac5d-3049e24c88c2",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "fca716b6-577e-4432-97c8-8b628684a639",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "a70f48a2-f1c6-4fd5-a31c-427a150cea3c",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "034cefa0-d773-4fcb-a995-066ea0df33f0",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "cf38edc5-4962-4e73-b77d-d34c1c59bb0c",
+      "result_id": "679901ca-8d9a-4e0f-8b2b-7ad9f82c5269"
+    },
+    {
+      "claim_id": "3469cb32-f086-47fd-b897-2820f5457ac6",
+      "result_id": "0a2530ad-03a5-4400-844e-a81d24bcd032"
+    },
+    {
+      "claim_id": "fd98679c-fd90-4347-be79-74da418b665b",
+      "result_id": "0a2530ad-03a5-4400-844e-a81d24bcd032"
+    },
+    {
+      "claim_id": "eff1ea9c-55c4-4393-a6a6-1dd1a85defb3",
+      "result_id": "0a2530ad-03a5-4400-844e-a81d24bcd032"
+    },
+    {
+      "claim_id": "71098b47-ca0b-4bc7-a2c2-319751ea39c2",
+      "result_id": "0a2530ad-03a5-4400-844e-a81d24bcd032"
+    },
+    {
+      "claim_id": "3db0541b-9cbe-4dfe-8f00-3a16f72e4c65",
+      "result_id": "0a2530ad-03a5-4400-844e-a81d24bcd032"
+    },
+    {
+      "claim_id": "844d9b64-8334-4b52-a32a-a442b825b52b",
+      "result_id": "0a2530ad-03a5-4400-844e-a81d24bcd032"
+    },
+    {
+      "claim_id": "5d1d246f-7a74-45c9-9166-da521429c497",
+      "result_id": "0a2530ad-03a5-4400-844e-a81d24bcd032"
+    },
+    {
+      "claim_id": "bcce6ddf-7ee0-4f6a-b9e3-e6053b0ecc93",
+      "result_id": "0a2530ad-03a5-4400-844e-a81d24bcd032"
+    },
+    {
+      "claim_id": "4dfca546-5b0f-4b6b-a9b9-84efe16e33cc",
+      "result_id": "0a2530ad-03a5-4400-844e-a81d24bcd032"
+    },
+    {
+      "claim_id": "53b2519a-f200-4128-a1d1-2e9b2ff7b110",
+      "result_id": "0a2530ad-03a5-4400-844e-a81d24bcd032"
+    },
+    {
+      "claim_id": "8c85bedf-4caf-4152-b94a-762dc355e1b9",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "7e371e8f-9813-4f7f-9707-17cfb775265a",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "691b7864-1b96-4d07-8eb0-5298f05013eb",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "f9b4ee53-709a-4a45-8114-6c6af3e36147",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "0239f6d8-d510-4e1d-bd3c-7ce968d2a093",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "33f44d05-7f10-4013-ad06-77f86b9424ba",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "da5cb792-1d7d-4afe-a498-016579593907",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "e09ec98d-841f-42e1-a9d9-09d6909af170",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "124c46a3-5551-4013-b510-6f7219967a76",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "fd6e420d-369a-4ada-a380-0b5107d5a6d0",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "9f46058f-efe4-4ed1-97a5-9234f3bd2a86",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "5083dd6c-79e5-4618-9859-02c46789bca1",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "6d14bf49-629a-4e28-a212-728ea15a6ca4",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "33abdf61-8ba0-4706-9672-f57b3152ac6f",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "aaec1640-4b00-499e-ac5a-95afb68769a8",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "46727f84-68a4-43e0-b21a-fdd19251d2ed",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "5a992758-d7bc-401f-a5f3-e4d4dd576560",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "604b36d0-1bca-4633-aa6a-524453a68b48",
+      "result_id": "021d7a93-2299-46d7-b1b1-6167673a3d15"
+    },
+    {
+      "claim_id": "bd6428f7-83b6-4946-8ff2-2d6d3a6420ef",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "cedb4376-fb34-4f7d-a680-acfecfd329a6",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "df902d97-4da3-43d4-b2a1-588dadaa9b41",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "3fa76f07-2346-4881-9cdc-68d50b36675d",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "bafb759b-85ee-4896-838a-0b615c2478c7",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "d0117802-30a8-4b9f-9269-599514acca4e",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "5505a892-4591-46e8-a4af-041150411787",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "ae1e9b8b-a631-4912-969b-d7dad4830936",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "4604dcd1-ef98-4cdc-8dca-c718ea1d938f",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "c4a94fab-c804-4df0-b67b-0d11dfddec40",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "22332d35-aebe-4059-a92a-d41324a74095",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "d1c24bf0-3a35-491c-8013-6e2874194659",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "8d6a14c4-902e-40aa-b324-8cd9b5fe28d0",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "0c593d60-ad30-4519-9203-90a939705929",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "cd416726-5593-4a37-9a35-0763b3c908eb",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "8dd95aa1-7488-4a05-81c6-875d2a9b0a42",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "997bc72b-ccb0-4c1f-afc8-6f8db3a5058b",
+      "result_id": "2d587a23-bf13-4ef0-b4c6-fc380e8f1d41"
+    },
+    {
+      "claim_id": "2898a51e-2604-4b4c-93c3-5dd445645ad0",
+      "result_id": "b6318539-a4d7-49d9-86f0-9d2bac2c8ac7"
+    },
+    {
+      "claim_id": "f213caaf-6ba6-4475-b27a-42fd1b265973",
+      "result_id": "b6318539-a4d7-49d9-86f0-9d2bac2c8ac7"
+    },
+    {
+      "claim_id": "ae28d0fc-a1ca-4335-a34b-58bd9dda7118",
+      "result_id": "b6318539-a4d7-49d9-86f0-9d2bac2c8ac7"
+    },
+    {
+      "claim_id": "46be9694-9d0d-4963-aa31-c9d55b14f42b",
+      "result_id": "b6318539-a4d7-49d9-86f0-9d2bac2c8ac7"
+    },
+    {
+      "claim_id": "49ddf643-f421-44a6-8185-08f1a83e70f6",
+      "result_id": "b6318539-a4d7-49d9-86f0-9d2bac2c8ac7"
+    },
+    {
+      "claim_id": "6854695d-6605-4bd4-8272-99cdc620a438",
+      "result_id": "b6318539-a4d7-49d9-86f0-9d2bac2c8ac7"
+    },
+    {
+      "claim_id": "979823e2-0cbe-47f2-ae52-c89db2f1f9f1",
+      "result_id": "3e336342-41c9-478c-9ba9-71adcc85b9b4"
+    },
+    {
+      "claim_id": "18448529-7c5c-4872-aaf1-bcd59a3cf102",
+      "result_id": "3e336342-41c9-478c-9ba9-71adcc85b9b4"
+    },
+    {
+      "claim_id": "732ee2ea-8f79-45d5-bf87-568ca28b324f",
+      "result_id": "3e336342-41c9-478c-9ba9-71adcc85b9b4"
+    },
+    {
+      "claim_id": "0e31d570-fe7d-4356-af9d-a659b13a548b",
+      "result_id": "1703a395-3032-4915-be64-92a9c269e185"
+    },
+    {
+      "claim_id": "77bf19e7-906e-4214-9aee-3b8edc9523c0",
+      "result_id": "1703a395-3032-4915-be64-92a9c269e185"
+    },
+    {
+      "claim_id": "d7918c89-c84e-4e52-b295-8c69aa45d544",
+      "result_id": "1703a395-3032-4915-be64-92a9c269e185"
+    },
+    {
+      "claim_id": "d3ff39c3-7208-4c90-9b97-f1fe50a2358d",
+      "result_id": "1703a395-3032-4915-be64-92a9c269e185"
+    },
+    {
+      "claim_id": "116dc7f2-0ff6-4e0c-bcba-ac4038851aaa",
+      "result_id": "1703a395-3032-4915-be64-92a9c269e185"
+    },
+    {
+      "claim_id": "cb1d7df5-f637-4604-a237-3f0b26e66f2c",
+      "result_id": "1703a395-3032-4915-be64-92a9c269e185"
+    },
+    {
+      "claim_id": "5656ce41-7092-44fb-8b6b-6f9c681bb453",
+      "result_id": "1703a395-3032-4915-be64-92a9c269e185"
+    },
+    {
+      "claim_id": "dd04ed85-0188-4320-9092-468d03dc0192",
+      "result_id": "f603939d-e1a0-4c22-ac09-cef89962473b"
+    },
+    {
+      "claim_id": "10e6fc57-1305-4f7a-90b3-920f195a4da7",
+      "result_id": "f603939d-e1a0-4c22-ac09-cef89962473b"
+    },
+    {
+      "claim_id": "c8ff09a9-650b-408b-8291-8a123d793ce0",
+      "result_id": "f603939d-e1a0-4c22-ac09-cef89962473b"
+    },
+    {
+      "claim_id": "fa2f9a13-e769-4e39-9f41-232497cd33f7",
+      "result_id": "f603939d-e1a0-4c22-ac09-cef89962473b"
+    }
+  ],
+  "comparisons": []
+}

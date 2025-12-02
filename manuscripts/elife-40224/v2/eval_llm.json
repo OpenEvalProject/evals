@@ -1,0 +1,383 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C45",
+      "C46",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors developed a novel Bayesian mapping approach that combines fMRI retinotopic measurements with a learned retinotopic atlas. This method automatically draws areal boundaries, corrects discontinuities, and predicts validation data more accurately than atlas alone or data alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 describe the core methodological contribution and its advantages, which are demonstrated quantitatively in the cross-validation analysis (Figure 7). The method builds on prior work (C51) and is explicitly formulated as a Bayesian optimization (C50). The claims are well-supported by experimental data showing improved prediction accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Cross-validation analysis on 8 subjects with 12 scans each demonstrates that Bayesian-inferred maps achieve high accuracy (scaled MSE ~0.4-0.5) that is largely independent of scan time (3.2-19.2 min), outperforming both prior alone and data alone for short scan times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design (C52-C55) and quantitative results (C74-C86) are clearly described with specific error metrics. Figure 7 provides strong visual and quantitative support. The cross-validation scheme is appropriate, though the validation and training datasets share some dependencies (same session). The conclusion that Bayesian inference improves accuracy for modest amounts of data is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The Bayesian method performs two sequential deformations: anatomical registration (mean 3.3\u00b0 \u00b1 0.6\u00b0) and retinotopic registration (mean 3.4\u00b0 \u00b1 0.4\u00b0), which are approximately orthogonal (83.0\u00b0 \u00b1 9.6\u00b0). This reveals substantial individual differences in structure-function mapping that remain after anatomical alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-step deformation process is clearly described (C59-C61) and quantified (C66-C68). The orthogonality of deformations (C68) and increased curvature variability after retinotopic alignment (C69) support the interpretation that these represent distinct sources of variation. However, C62 acknowledges this interpretation is approximate and could partly reflect imperfect anatomical alignment. The evidence supports substantial individual differences (C72-C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The near-independence of Bayesian map accuracy from scan time suggests individual variability is captured by low-dimensional warping from the template. However, the topological constraint (vertices cannot pass through one another) limits the method's accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation that low-dimensional warping captures individual variability (C87-C88) is a reasonable inference from the flat accuracy curve in Figure 7. The topological constraint (C89) is clearly described as a hard constraint in the method, and C90 correctly identifies this as an upper limit on accuracy. These are logical consequences of the method design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Measured retinotopic maps contain systematic imperfections from various sources (partial voluming, vessel artifacts, negative BOLD). The Bayesian-inferred maps produce topologically smooth transformations without discontinuities, which the authors argue is closer to ground truth than validation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The presence of systematic imperfections in measured maps (C91-C93) is well-documented with citations. However, the claim that Bayesian maps are closer to ground truth than validation data (C94) is speculative and cannot be verified without true ground truth. The argument relies on the assumption that topological smoothness (C96-C99) is a fundamental property of V1, which is reasonable but not definitively proven. C100 acknowledges the error estimates are conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The Bayesian model accurately predicts retinotopic organization beyond the stimulus aperture, extending to 90\u00b0 eccentricity despite training data limited to ~8-12\u00b0. This is validated by limited eccentricity fits and wide-field data from one subject.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 provide two lines of evidence for accurate extrapolation: (1) fits using only inner 3\u00b0 or 6\u00b0 remain accurate to 12\u00b0 (Figure 9A), and (2) comparison to wide-field data from subject S1201 extending to 48\u00b0 (Figure 9B). However, the wide-field validation is limited to one subject (C105 acknowledges this), which limits generalizability. The extrapolation capability is demonstrated but would benefit from additional subjects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The method extends prior work by predicting pRF size based on a linear relationship with eccentricity. Cortical magnification measurements from inferred maps are broadly consistent with prior work (Horton & Hoyt, 1991), though the V1/V2-V3 crossover occurs at higher eccentricity (~3\u00b0) than previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extension to pRF size prediction (C108-C110) is clearly described and shown in Figure 10A. The cortical magnification analysis (C111-C114) shows reasonable agreement with prior work, with the noted discrepancy in crossover eccentricity (C114) being a quantitative observation from the data. The linear relationship assumption (C110) is reasonable given the literature, though the authors acknowledge measurement factors affect absolute scale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors developed a new retinotopic model extending beyond V1-V3 to include 9 additional visual areas (hV4, VO1, VO2, V3a, V3b, LO1, LO2, TO1, TO2) using a new method that accommodates cortical surface distortions. These areas are considered preliminary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extension of the model to 12 areas (C118) and the new modeling method (C119-C120) are clearly described. The authors appropriately acknowledge these additional areas as preliminary (C121) due to ongoing disputes about their organization (C122) and lower data quality (C123). This is a methodological contribution that enables future work but is not analyzed in detail in the current paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The method is formulated as an explicit Bayesian framework with prior probability distributions for vertex positions and likelihood functions dependent on data quality. The prior assumes zero probability for topology-violating solutions and uniform distributions across vertices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Bayesian formulation (C124-C125) is explicitly described with mathematical detail in the manuscript. The assumptions about prior distributions (C127, C130-C131) and likelihood functions (C132-C134) are clearly stated. C128 appropriately notes that edge-specific priors could be derived with ground truth data. This provides theoretical grounding for the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The method has limitations for edge-case subjects with atypical retinotopic organization. Testing on two HCP subjects with unusual maps shows the method cannot reproduce atypical polar angle topology but captures most maps accurately, particularly eccentricity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitation for edge cases (C145-C146) is appropriately acknowledged and tested on two HCP subjects (C147-C148). The results (C149-C151) show both the limitation (cannot reproduce atypical topology) and partial success (accurate eccentricity). The explanation (C152) correctly identifies the zero-probability assumption for topology violations as the cause. This is an honest assessment of method limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Generic voxel-wise pRF models also fail for subjects with highly unusual retinotopic organizations (e.g., achiasma), requiring specialized models. The authors suggest alternate formulations of the prior could be developed for edge-case populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to limitations of other methods (C153-C154) is supported by citation to prior work on achiasmic patients. The suggestion for alternate priors (C155) is a reasonable speculation about how the method could be adapted. This contextualizes the method's limitations within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The prior assumes polar angle reversals at map boundaries lie on vertical/horizontal meridians, but HCP group-average data shows reversals often occur several degrees away. This causes systematic differences between Bayesian maps and observed data, though it's unclear if these features reflect true neuronal organization or measurement limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assumption in the prior (C156) and its discrepancy with HCP data (C157) are clearly stated. The consequences (C158-C159) are logical given the method's constraints. The uncertainty about interpretation (C160) is appropriately acknowledged. This represents an honest discussion of a systematic bias in the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "After surface registration, substantial individual differences in functional mapping remain, as evidenced by the additional warping needed for retinotopic alignment. This is consistent with prior studies showing differences in structural and functional alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding of substantial individual differences after anatomical alignment (C137) is demonstrated in Figure 6 and supported by the deformation analysis. The consistency with prior work (C138-C139) is appropriately cited. This addresses an important question in neuroscience (C135-C136) about structure-function relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The anatomical atlas (prior alone) produces reasonably good predictions with advantages like topological smoothness and complete visual field coverage, but fails to capture individual idiosyncrasies. Combining prior with data produces higher-quality predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The relationship to prior work (C140) is clearly stated. The performance of the prior alone (C141-C142) and its limitations (C143) are demonstrated in Figures 3, 5, and 7. The improvement from combining prior with data (C144) is quantitatively shown in Figure 7. This effectively demonstrates the value of the Bayesian approach over either component alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The method has been made publicly available through the Neuropythy software library, a Docker image, and open data/code repositories. Runtime is less than one hour per subject on a contemporary desktop computer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The availability of software (C162), Docker image (C163), and data/code (C165) is clearly stated with specific DOIs and URLs. The runtime claim (C164) is a straightforward performance metric. This demonstrates good scientific practice for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "The study used standard fMRI acquisition and preprocessing methods on 8 subjects (4 female, mean age 31) with 12 retinotopic mapping scans each, using HCP stimulus protocols and population receptive field modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods are described in appropriate detail with standard protocols and citations to established techniques. The sample size (C167) is modest but reasonable for this type of study. Ethical approval (C166) is documented. The preprocessing and analysis steps (C181-C190) follow standard practices in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "The anatomically-defined atlas was constructed by hand-drawing boundaries on HCP group-average data (181 subjects), projecting to 2D, and minimizing a potential function that balances smoothness and orthogonality while maintaining topological constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The atlas construction method (C191-C208) is described in mathematical detail with clear explanation of the minimization procedure, constraints, and convergence behavior. The use of HCP data (C195) provides a high-quality foundation. The method is technically sound and builds appropriately on prior work (C208).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C214",
+      "C215"
+    ],
+    "result": "For individual subjects, the Bayesian inference process aligns the subject's cortical surface to the fsaverage atlas, arranges data according to the prior, then performs additional warping to match individual retinotopic measurements to the prior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The individual subject processing pipeline (C209-C215) is clearly described and follows logically from the atlas construction. The resampling for computational efficiency (C214) is a reasonable optimization. The process appropriately combines anatomical and functional information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C216",
+      "C217",
+      "C218",
+      "C219"
+    ],
+    "result": "Cortical magnification was calculated by projecting vertices to the visual field and computing the ratio of cortical surface area to visual field area within disks of radius \u03b1 = \u03c1/3, where \u03c1 is eccentricity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cortical magnification calculation method (C216-C219) is clearly described with specific mathematical details. The choice of radius parameter (C219) is stated explicitly. This is a standard analysis approach for retinotopic data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2069 @@
+{
+  "submission": {
+    "id": "478ebd20-08d6-4712-a19e-ae63424916d9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T14:20:04.356337Z",
+    "updated_at": "2025-12-02T14:20:04.356337Z"
+  },
+  "content": [
+    {
+      "id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "submission_id": "478ebd20-08d6-4712-a19e-ae63424916d9",
+      "content_type": "manuscript",
+      "content_text": "# Cell-specific non-canonical amino acid labelling identifies changes in the de novo proteome during memory formation\n\n## Authors\n\n- Harrison Tudor Evans<sup>1</sup> ([ORCID: 0000-0003-0322-0554](https://orcid.org/0000-0003-0322-0554))\n- Liviu-Gabriel Bodea<sup>1</sup> \u2020\n- J\u00fcrgen G\u00f6tz<sup>1</sup> ([ORCID: 0000-0001-8501-7896](https://orcid.org/0000-0001-8501-7896)) \u2020\n\n### Affiliations\n\n1. Clem Jones Centre for Ageing Dementia Research, Queensland Brain Institute The University of Queensland Brisbane Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe formation of spatial long-term memory (LTM) requires the de novo synthesis of distinct sets of proteins; however, a non-biased examination of the de novo proteome in this process is lacking. Here, we generated a novel mouse strain, which enables cell-type-specific labelling of newly synthesised proteins with non-canonical amino acids (NCAAs) by genetically restricting the expression of the mutant tRNA synthetase, NLL-MetRS, to hippocampal neurons. By combining this labelling technique with an accelerated version of the active place avoidance task and bio-orthogonal non-canonical amino acid tagging (BONCAT) followed by SWATH quantitative mass spectrometry, we identified 156 proteins that were altered in synthesis in hippocampal neurons during spatial memory formation. In addition to observing increased synthesis of known proteins important in memory-related processes, such as glutamate receptor recycling, we also identified altered synthesis of proteins associated with mRNA splicing as a potential mechanism involved in spatial LTM formation.\n\n## Introduction\n\nNeurons are highly complex, compartmentalized cells that respond to a wide range of physiological and pathological signals by regulated changes to their transcriptome and proteome. A critical component in this process is the synthesis of new proteins, both in the cell body and at the synapse (Davis and Squire, 1984; Hafner et al., 2019; Li and G\u00f6tz, 2017; Schanzenb\u00e4cher et al., 2016). New protein synthesis is required for the formation, retrieval, and updating of long-term memories (LTMs), distinguishing this process from short-term memory (Costa-Mattioli et al., 2009; Jarome and Helmstetter, 2014; Lopez et al., 2015). One form of LTM is spatial LTM, which is used by organisms to recall spatial information about the environment, and is formed through the process of spatial LTM consolidation (Squire et al., 2015). During this process, neurons undergo a series of changes in different brain regions, with the hippocampus being identified as one of the most important brain structures in both spatial learning and LTM (Clopath, 2012; Mayford et al., 2012; Ziegler et al., 2015). Furthermore, inhibition of protein synthesis in the hippocampus, especially within the first 24 hr following spatial learning, has been demonstrated to prevent the formation of spatial LTM (Alkon et al., 2005; Inda et al., 2005; Jarome and Helmstetter, 2014). Therefore, identifying precisely which proteins need to be newly synthesised during spatial LTM consolidation is crucial in dissecting the underlying molecular mechanisms.\n\nSeveral proteins and pathways have been linked to spatial LTM formation, as shown by candidate-based studies in which rodents were subjected to behavioural paradigms, such as the active place avoidance (APA) or Morris water maze test in order to induce spatial LTM formation (Merlo et al., 2015; Paul et al., 2009; Plath et al., 2006). However, a non-biased proteomic analysis of de novo protein synthesis during the formation of spatial LTM has not been previously achievable, because de novo synthesised proteins are chemically indistinguishable from those that are already present in the cell. This limitation can, however, be overcome through non-canonical amino acid (NCAA) labelling of newly synthesised proteins. In this technique, NCAAs can be administered for a given period, during which they are integrated into the nascent polypeptide chain (Figure 1A) (Hinz et al., 2013). Unlike most other de novo protein tagging techniques, NCAA incorporation enables newly synthesised proteins to be visualised using fluorescent non-canonical amino acid tagging (FUNCAT), or to be purified using bio-orthogonal non-canonical amino acid tagging (BONCAT) (Figure 1B) (Hinz et al., 2013). This is achieved by reacting the azide group of the NCAA with a dibenzocyclooctyne (DIBO)-bearing tag, using strain-promoted azide-alkyne cycloaddition (Figure 1B) (Beatty et al., 2010).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig1-v1.jpg)\n\n**Figure 1.:** (A) AHA is recognised by mouse methionine tRNA synthetase, MetRS (Mars1), and labels de novo synthesised proteins at amino-terminal and internal methionine residues using the endogenous translational machinery.\u00a0(B) NCAA-labelled proteins can be covalently bonded to various tags through reaction of the azide group (orange) of the NCAA with the alkyne group (purple) of the tag. This enables NCAA-labelled proteins to either be visualised using fluorescent non-canonical amino acid tagging (FUNCAT) or to be purified using bio-orthogonal non-canonical amino acid tagging (BONCAT). (C) The 30 min APA paradigm results in spatial long-term memory formation. Mice trained over 30 min learned to avoid a designated shock zone (red), with significantly fewer entries into the shock zone being recorded between 25\u201330 min compared to between 0\u20135 min. In a 5 min probe trial held 24 hr after training, mice continued to avoid entering the shock zone, even in the absence of shocks, indicative of the formation of spatial LTM (n\u00a0=\u00a06 mice, one-way ANOVA, Dunnett\u2019s MCT, *p\u22640.05, **p\u22640.01). (D) Scheme of 30 min APA task for trained and non-trained mice. Trained mice received foot shocks upon entry into the designated shock zone, while non-trained mice received foot shocks at the same time as their trained partner and were therefore unable to undergo spatial LTM formation. Upon completion of the 30 min APA, mice were administered AHA and were perfused 16 hr later without undergoing a probe trial. (E) A significant increase in protein synthesis was observed in the hippocampus of trained compared to non-trained mice using FUNCAT (n\u00a0=\u00a04 mice, three sections per mouse, Student\u2019s paired t-test, *p\u22640.05). Scale bar\u00a0=\u00a0400 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Both mice treated with either AHA or PBS immediately after training using the 30 min APA test could recall the location of the shock zone in a probe trial conducted 16 hr after training (n\u00a0=\u00a04 mice, two way ANOVA, Dunnett\u2019s MCT, ***p\u22640.001). There was no significant difference in performance in this probe trial between the two groups (two-way ANOVA, Sidak\u2019s MCT, n.s.\u00a0=\u00a0non significant, p=0.85).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Both trained and non-trained mice show increased plasma levels of corticosterone (a marker of increased stress) compared to a na\u00efve controls which exposed to the 30 min APA arena without receiving foot shocks (n\u00a0=\u00a03 mice, one-way ANOVA, Tukey\u2019s MCT, **p\u22640.01). There was no significant difference in plasma corticosterone levels between trained and non-trained mice (n.s.\u00a0=\u00a0non significant, p=0.78).\n\nTwo widely used NCAAs are the methionine surrogates azidohomoalanine (AHA) and azidonorleucine (ANL). In AHA labelling, the endogenous translational machinery is used to tag newly synthesised proteins with AHA (Figure 1A) (Dieterich et al., 2006; Hinz et al., 2013; Ullrich et al., 2014). ANL, on the other hand, allows for cell-type-specific NCAA labelling, as it is not recognized by the eukaryotic methionine tRNA synthetase and therefore does not natively integrate into de novo synthesised proteins (Link et al., 2006). ANL instead requires the presence of a mutant tRNA synthetase, such as NLL-MetRS, for its incorporation (Figure 2A) (Ngo et al., 2013). Genetically restricting NLL-MetRS expression enables cell-type- or tissue-specific incorporation of ANL. Both AHA and ANL labelling have been used in a wide range of cell-types, tissues and organisms (Alvarez-Castelao et al., 2019; Alvarez-Castelao et al., 2017; Erdmann et al., 2015; Liang et al., 2014; Lopez et al., 2015; McClatchy et al., 2015; Ullrich et al., 2014). However, even though AHA and ANL labelling display an enhanced versatility compared to other de novo protein labelling techniques, such as stable isotype labelling with amino acids in cell culture (SILAC) or puromycin labelling, they are yet to be more widely used to examine the de novo proteomic changes which occur during complex rodent behaviour.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig2-v1.jpg)\n\n**Figure 2.:** (A) Incorporation of ANL requires the expression of NLL-MetRS, which allows this NCAA to be incorporated at the amino-terminus as proteins are being synthesized.\u00a0(B) In RC3 mice, the expression of NLL-MetRS-EGFP is prevented by an upstream FLOX-STOP cassette. In RC3xCamk2a-Cre mice, Cre-recombinase is expressed in the hippocampus, resulting in the excision of the FLOX-STOP cassette from the RC3 transgene. This enables expression of NLL-MetRS-EGFP restricted to hippocampal neurons. (C) Immunohistochemical analysis confirmed Cre-specificity of NLL-MetRS-EGFP expression in RC3xCamk2a-Cre mice, with the EGFP signal being confined to neurons in the CA1, CA2, CA2 and dentate gyrus regions of the hippocampus. Scale bar\u00a0=\u00a0400 \u00b5m (D) FUNCAT staining confirms that ANL integration was restricted to hippocampal neurons in RC3xCamk2a-Cre mice. Scale bar\u00a0=\u00a040 \u00b5m. (E) BONCAT-WB analysis of RC3xCamk2a-Cre mice reveals maximal ANL labelling when mice were administered 100 \u00b5g ANL/gbw via i.p. injection (n\u00a0=\u00a03 mice, one way ANOVA, Tukey\u2019s multiple comparison test, *p\u22640.05). (F) BONCAT-WB analysis of RC3xCamk2a-Cre mice reveals maximal ANL labelling approximately 16 hr post injection (n\u00a0=\u00a03 mice, one way ANOVA, Tukey\u2019s multiple comparison test **p\u22640.01, ***p\u22640.001, ****p\u22640.0001).\n\nHere, we detail the use of NCAA labelling to identify changes in de novo protein synthesis which occur during the formation of spatial LTM in mice. For this, we generated the RC3 mouse strain, which enables Cre recombinase-dependent targeting of NLL-MetRS expression for cell-type- or tissue-specific incorporation of ANL. Upon crossing the RC3 strain with Camk2a-Cre mice, we successfully restricted ANL labelling of newly synthesised proteins to hippocampal neurons. We combined this labelling technique with SWATH-MS (sequential window acquisition of all theoretical fragment ions mass spectrometry) to examine how the hippocampal de novo proteome is altered in mice following spatial LTM formation. Our results confirmed a number of previously established memory-related proteins to be altered in synthesis during spatial LTM formation, and also highlight potential novel memory mechanisms, such as alterations in mRNA splicing.\n\n## Results\n\n### AHA labelling reveals increased hippocampal protein synthesis during spatial LTM formation\n\nGiven the well-established role of de novo protein synthesis in the process of spatial LTM consolidation (Davis and Squire, 1984), we sought to use NCAA labelling in combination with an unbiased proteomic analysis to identify which proteins were altered in synthesis during spatial LTM formation in mice, using a simple and robust behavioural paradigm.\n\nTo achieve this, we subjected mice to an accelerated version of the active place avoidance (APA) test, referred to as '30 min APA'. Mice were trained over 30 min to use spatial cues to avoid entering a designated shock zone (Figure 1C). Wild-type mice undertaking this task demonstrated spatial learning as revealed by their ability to significantly decrease the number of entries into the shock zone over the training period (Figure 1C). We also found that the mice were able to recall the location of the shock zone in a probe trial 24 hr later (Figure 1C), indicative of spatial LTM formation (Plath et al., 2006).\n\nHaving established this behavioural paradigm, we next sought to use AHA labelling to examine brain-wide de novo protein synthesis during spatial LTM formation. We have previously demonstrated that optimal AHA labelling following intraperitoneal (i.p.) injection occurs over a time-frame of 16 hr at a concentration of 50 \u00b5g AHA/gram body weight (gbw) (Evans et al., 2019). We therefore first confirmed that mice treated with 50 \u00b5g AHA/gbw immediately after training performed similarly to PBS-treated controls in a probe trial conducted 16 hr post-training, demonstrating that AHA treatment does not interfere with spatial LTM formation (Figure 1\u2014figure supplement 1).\n\nTo differentiate spatial LTM-induced protein synthesis from background levels, we compared mice trained in the 30 min APA (\u2018trained mice\u2019) to 'non-trained' controls (Figure 1D). Each non-trained mouse underwent a yoked version of the 30 min APA protocol, where instead of being shocked upon entry into the designated shock zone, the animal received shocks at the same time as a trained mouse with which it was paired (Figure 1D). These control mice were therefore unable to undergo spatial learning, while still being exposed to the same environment, number of foot shocks, and a similar level of stress. The latter was confirmed by analysing plasma levels of the stress-related hormone, corticosterone (Gong et al., 2015), which were found to be similar between trained and non-trained mice (Figure 1\u2014figure supplement 2).\n\nImmediately following the behavioural task, both trained and non-trained mice were administered 50 \u00b5g AHA/gbw intraperitoneally and perfused 16 hr later without undergoing a probe test (Figure 1D). Using FUNCAT to visualise AHA-labelled proteins, we observed an increase in this signal in the hippocampus of trained mice compared to non-trained controls (Figure 1E), indicating that protein synthesis is increased in this brain region during the formation of spatial LTM. Our findings, in combination with the wealth of data demonstrating that hippocampal protein synthesis is essential for spatial LTM formation and storage (Jarome and Helmstetter, 2014; Kleinknecht et al., 2012; Poucet et al., 2003), led us to examine in more detail how spatial LTM formation alters the de novo proteome in the hippocampus.\n\n### Novel MetRS mutant transgenic mice enable cell-type-specific in vivo labelling of newly synthesised proteins\n\nFollowing our observation that hippocampal protein synthesis is increased during spatial LTM formation, we sought to refine our approach by developing an experimental system for cell-specific NCAA labelling in order to examine protein synthesis specifically in neurons of the hippocampus. To restrict protein labelling to hippocampal neurons, we exploited the fact that ANL can only be incorporated into nascent proteins in cells expressing mutant tRNA synthetases, such as NLL-MetRS (Figure 2A). We therefore generated a mouse strain that expresses NLL-MetRS in a Cre-dependent manner, allowing tissue- or cell-type-specific incorporation of ANL. This mouse strain, referred to as ROSA26a Cre-inducible Click Chemistry (RC3) strain, was generated by inserting the RC3 transgene (consisting of NLL-MetRS fused to EGFP downstream of a floxed stop cassette) into the permissive ROSA26a locus (Bouabe and Okkenhaug, 2013) using CRISPR/CAS9-mediated genome editing (Figure 2B). Thus, upon expression of Cre-recombinase in mice, the floxed-STOP cassette is excised, enabling expression of NLL-MetRS-EGFP and incorporation of ANL into newly synthesised proteins (Figure 2B).\n\nFor our study, we crossed the RC3 mice with the Camk2a-Cre (T29-1) strain that constitutively expresses Cre recombinase specifically in hippocampal neurons (Tsien et al., 1996). We validated confinement of NLL-MetRS-EGFP expression to hippocampal neurons in the resulting double transgenic strain by immunohistochemistry (Figure 2C), and, following ANL injection, revealed a similarly confined labelling of de novo synthesised proteins (Figure 2D). We next used BONCAT followed by western blotting (BONCAT-WB) to examine the dynamics of ANL labelling in the hippocampus. This allowed us to confirm that ANL labelling followed a similar time course to that of AHA labelling, with a dosage of 100 \u00b5g ANL/gbw resulting in maximal labelling at 16 hr (Figure 2E&F). We also confirmed that this labelling did not prevent spatial LTM formation, with ANL-treated RC3xCamk2a-Cre mice being able to recall the location of the shock-zone a week after training (Figure 3\u2014figure supplement 1).\n\n### De novo proteomic analysis identifies altered hippocampal synthesis of select proteins and pathways during spatial LTM formation\n\nWe next sought to identify de novo proteomic changes which occur in the hippocampal neurons during spatial LTM consolidation. We therefore induced spatial LTM formation in 5 month-old female RC3xCamk2a-Cre mice using the 30 min APA protocol (Figure 3B). This was immediately followed by intraperitoneal injection of 100 \u00b5g ANL/gbw of both trained and non-trained mice, which were perfused 16 hr later (Figure 3A). Using FUNCAT and immunohistochemistry, we observed an increase in total protein synthesis in the hippocampal neurons of the trained mice compared to non-trained controls (Figure 3C), recapitulating the above AHA findings. Moreover, we confirmed that blocking protein synthesis through the administration of anisomycin prevented spatial LTM formation (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the 30 min APA task for trained and non-trained (yoked) RC3xCamk2-Cre mice.\u00a0Trained mice received foot shocks upon entry into the designated shock zone, while non-trained mice were paired by receiving foot shocks at the same time as their trained partner. Upon completion of the 30 min APA task, mice were administered ANL and then perfused 16 hr later. (B) RC3xCamk2a-Cre mice trained in the 30 min APA task reduced the number of entries (red circles) into the shock zone (red) over the 30 min training period (n\u00a0=\u00a04 mice, one-way ANOVA, Dunnett\u2019s MCT, **p\u22640.01). (C) Following spatial LTM formation, total protein synthesis was significantly increased in the hippocampal neurons of RC3xCamk2a-Cre mice. This was reflected by the increased FUNCAT signal observed in trained compared to non-trained mice (n\u00a0=\u00a04 mice, 30 neurons per mouse, Student\u2019s paired t-test, *p\u22640.05). Scale bar\u00a0=\u00a040 \u00b5m. (D) Volcano plot representing the relative abundance of de novo synthesised proteins in the hippocampus of trained and non-trained RC3xCam2ka-Cre mice. In total, 1782 proteins were quantified in four trained and non-trained mice each, using BONCAT-SWATH-MS. Proteins which were significantly increased in synthesised in trained mice (fold-change\u00a0\u22651.5, p\u22640.05) are shown in red, whereas proteins which exhibited significantly decreased synthesis (fold-change\u00a0\u22640.66, p\u22640.05) are shown in blue (n\u00a0=\u00a04 mice, Student\u2019s t-test). Subsequently validated proteins are encircled in green (see Figure 5).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** RC3xCamk2a-Cre treated with either ANL or PBS immediately after training showed a reduced number of shock zone entries in probe trials held 16 hr and one week following training (n\u00a0=\u00a04 mice, two way ANOVA, Dunnett\u2019s MCT, ***p\u22640.001, ****p\u22640.0001). There was no significant difference in probe trial performance between ANL- and PBS-treated mice (two-way ANOVA, Sidak\u2019s MCT, n.s.\u00a0=\u00a0non significant, p=0.99).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** RC3xCamk2a-Cre mice were trained with the 30 min APA task, then administered ANL and then either the protein synthesis inhibitor anisomycin, or PBS. Mice were subsequently tested for their ability to form spatial LTMs using a probe trial held 16 hr following training. Unlike the PBS-treated control, anisomycin-treated mice did not show a reduced number of shock zone entries in the probe trail (n\u00a0=\u00a04 mice, two way ANOVA, Dunnett\u2019s MCT, n.s.\u00a0=\u00a0non significant, p=0.51), and had significantly more shock zone entries than the PBS control (two-way ANOVA, Sidak\u2019s MCT, **p\u22640.01), indicating that anisomycin-treatment blocked spatial LTM formation. Anisomcyin-treatment was confirmed to block hippocampal protein synthesis using FUNCAT staining.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) The overlap of peptides purified by BONCAT from ANL-treated RC3xCamk2a mice compared to background.\u00a0Using 2D LC MS/MS, 7105 unique peptides were identified from ANL-treated trained and non-trained RC3xCamk2a-Cre mice following BONCAT purification. In order to control for background purification, we removed 119 peptides which had been identified in BONCAT purification from PBS-treated negative control animals. The remaining 6986 peptides were then used to form a custom peptide library for SWATH-MS analysis. (B) Heatmap of the relative abundance in individual samples of the 1782 de novo synthesised proteins from trained and non-trained mice. Euclidian cluster analysis revealed that trained RC3xCamk2a-Cre mice cluster separately from their non-trained RC3xCamk2a-Cre pairs.\n\nNext, we identified which proteins were altered in synthesis in hippocampal neurons during spatial LTM formation using mass spectrometry-based proteomics. For this, ANL-labelled proteins from trained and non-trained mice were purified using BONCAT, and analysed via sequential window acquisition of all theoretical fragment ions mass spectrometry (SWATH-MS). Of the 1782 proteins quantified, 156 were identified to have significantly altered synthesis (|FC|\u00a0\u2265\u00a01.5, p\u22640.05) in trained mice compared to non-trained controls, comprising of 88 proteins showing increased and 68 proteins showing decreased synthesis (Figure 3D). Euclidian clustering analysis revealed that the de novo proteomes of trained mice were more similar to each other than those of their paired non-trained controls, demonstrating a distinctive change in the proteome composition of the experimental groups (Figure 3\u2014figure supplement 3B).\n\nThe 156 proteins with significantly altered synthesis during spatial LTM formation were next analysed using STRING network analysis. Of these proteins, 125 (\u224880%) formed a highly interconnected, large network, with a median of four protein-protein interactions per node (Figure 4). Using the Molecular Complex Detection (MCODE) clustering algorithm (Bader and Hogue, 2003), we identified five distinct clusters of de novo synthesised proteins (Figure 4). Gene ontology (GO), KEGG and Reactome analysis revealed that the proteins in these clusters were associated with mRNA splicing, ATP hydrolysis coupled proton transport, vesicle-mediated transport, biogenesis of complex I, and Rho GTPase effectors (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig4-v1.jpg)\n\n**Figure 4.:** Network analysis using the STRING database reveals that of the 156 proteins identified to be altered in synthesis during spatial LTM formation (|fold-change|\u00a0\u2265\u00a01.5, p\u22640.05), 125 (\u224880%) showed evidence of interaction (STRING score cut off\u00a0\u22650.4) with at least one other significantly regulated protein, forming a highly interconnected network. Within this network, there was a median of 4 interactions per node. MCODE cluster analysis revealed the presence of 5 distinct clusters which were associated with mRNA splicing, ATP hydrolysis-coupled proton transport, vesicle-mediated transport, biogenesis of mitochondrial complex I, and Rho GTPase effectors. Proteins in clusters are depicted by a coloured border and are magnified in the inserts. The distance between each node is representative of the STRING score. Proteins which did not display interactions are not shown. The absolute fold-change is represented by the node size, and the directionality of the fold-change by the node colour.\n\n### Validation of key proteins identified in the de novo proteomic analysis using BONCAT western blotting\n\nGiven that our de novo proteomic analysis revealed distinct changes in hippocampal protein synthesis during LTM formation, we next performed a validation of a subset of proteins within our identified clusters using BONCAT-WB. This revealed increased synthesis of \u03b1-adaptin (Ap2a1), neuron specific enolase (NSE: Eno2), V-ATPase subunit B2 (V-ATPase B2: Atp6v1b2), and the \u03b1 isoform of the structural subunit A of protein phosphatase 2A (PP2A-A: Ppp2r1a), in the hippocampal neurons of trained mice (Figure 5). We also confirmed that the synthesis of ARE/poly(U)-binding/degradation factor 1 (AUF-1: Hnrnpd) was decreased 16 hr following training (Figure 5). Lastly, as an unaltered control, we examined the synthesis of the housekeeping protein glyceraldehyde 3-phosphate dehydrogenase (GAPDH). As expected from our BONCAT-SWATH-MS analysis, BONCAT-WB revealed that its synthesis was not altered during spatial LTM formation (Figure 5). Together, these results validate our de novo proteomic analysis and provide further evidence that the formation of spatial LTM is associated with regulated changes in the synthesis of specific proteins in hippocampal neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig5-v1.jpg)\n\n**Figure 5.:** RC3xCamk2a-Cre mice using BONCAT western blotting BONCAT-WB confirms that in trained mice, there is increased hippocampal synthesis of \u03b1- \u03b1-adaptin (Ap2a1), neuron specific enolase (NSE: Eno2), V-ATPase subunit B2 (V-ATPase B2: Atp6v1b2), and the \u03b1 isoform of the structural subunit of protein phosphatase 2A (PP2A-A: Ppp2r1a) compared to non-trained controls.\u00a0Synthesis of the ARE binding protein ARE/poly(U)-binding/degradation factor 1 (AUF-1: Hnrnpd) was also confirmed to be decreased during spatial LTM formation. The synthesis of the housekeeping gene, glyceraldehyde 3-phosphate dehydrogenase (GAPDH), was unchanged in the hippocampal neurons of trained RC3xCamk2a-Cre mice compared to non-trained controls (p=0.48), together validating the SWATH analysis (n\u00a0=\u00a04 mice, Student\u2019s paired t-test, *p\u22640.05, **p\u22640.01, ***p\u22640.001).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/52990/elife-52990-fig5-figsupp1-v1.jpg)\n\n## Discussion\n\nIn our study, we used NCAA labelling in combination with FUNCAT, BONCAT and SWATH quantitative proteomics to examine how de novo protein synthesis is altered in the initial stages of spatial LTM consolidation. Using FUNCAT labelling with the non-canonical amino acid AHA, we first observed that as expected, protein synthesis was increased in the hippocampus of mice during spatial LTM formation (Jarome and Helmstetter, 2014). We further refined our approach by generating the RC3 mouse strain, which, upon crossing with the Camk2a-Cre strain and administration of ANL, allowed for neuron-specific labelling of de novo synthesised proteins specifically in the hippocampus. Using BONCAT in combination with SWATH-MS quantitative de novo proteomics, we identified a total of 1782 proteins which were newly synthesised in hippocampal neurons, 156 of which were found to be significantly altered in synthesis following spatial LTM formation, with BONCAT-WB being used to independently validate a subset of these proteins. These regulated proteins are involved in a wide range of cellular functions, including mRNA splicing, ATP hydrolysis-coupled proton transport, vesicle-mediated transport, biogenesis of mitochondrial complex I, and signalling through Rho GTPases. Our de novo proteomic data suggest a role for these proteins, and the pathways they are involved in, in spatial LTM formation and, more generally, demonstrate that NCAA labelling is a robust, non-biased experimental strategy to examine how the de novo proteome is altered during complex rodent behaviour.\n\nPreviously, NCAA labelling has been used in rodents to observe changes in de novo protein synthesis during development (Calve et al., 2016), to compare different cell-types following environmental enrichment (Alvarez-Castelao et al., 2017), and to examine changes which occur in mouse models of disease (Evans et al., 2019; McClatchy et al., 2015). To the best of our knowledge, the current study represents the first use of NCAA labelling to examine spatial LTM formation in mice.\n\nNCAAs, such as AHA and ANL, have typically been delivered to mice through diet, with labelling periods ranging from 6 to 21 days (Alvarez-Castelao et al., 2017; McClatchy et al., 2015). Spatial LTM consolidation is dependent on multiple temporally spaced phases of protein synthesis (Fioriti et al., 2015; Meiri and Rosenblum, 1998; Ozawa et al., 2017), with the first 24 hr following training being the most sensitive to the inhibition of protein synthesis (Freeman et al., 1995; Quevedo et al., 1999). Given that the majority of changes to the hippocampal de novo proteome are thought to occur within this time frame, we considered the longer labelling periods used in previous studies not to be suitable for examining spatial LTM-induced protein synthesis. We therefore delivered AHA and ANL via intraperitoneal injection rather than dietary administration, enabling us to label newly synthesised proteins within a 16 hr time window (Figure 2F). An additional advantage of labelling for this shorter period is the increased temporal specificity, with a higher proportion of tagged proteins being synthesised only in response to the behavioural paradigm studied, compared to those that would be synthesised after a longer period of time.\n\nUsing ANL labelling in combination with SWATH-MS, we obtained a similar degree of proteome coverage to the only other study we are aware of that has used ANL labelling in mice (Alvarez-Castelao et al., 2017). However, given that the neuronal proteome is believed to consist of around 6000 proteins (Schanzenb\u00e4cher et al., 2016), more invasive delivery techniques such as cranially implanted osmotic pumps may be required to achieve a deeper degree of labelling than observed in either study.\n\nIn order to investigate protein synthesis specifically during spatial LTM formation, we established an accelerated version of the five-day APA paradigm, which relies upon a singular training event (Figure 1C), making it easier to capture the time-period during which spatial LTM formation occurs. We confirmed that this 30 min APA task induces spatial LTM by examining two defining characteristics of long-term memory; the ability to persist for long periods of time and the requirement of new protein synthesis (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2) (Costa-Mattioli et al., 2009; Rosenberg et al., 2014).\n\nMice that are exposed to a novel environments and stimuli could potentially experience increased levels of stress while undertaking behavioural tasks, which may alter protein synthesis (Chandran et al., 2013; Moncada and Viola, 2007). We controlled for this by using paired, yoked controls and confirmed that these non-trained mice showed similar levels of stress as their trained counterparts (Figure 1\u2014figure supplement 2). We therefore conclude that the observed changes in protein synthesis between trained and non-trained mice were likely induced by spatial LTM formation, rather than confounding factors including training and stress.\n\nIn our analysis we focused on the hippocampus, as protein synthesis in this region plays a critical role in spatial LTM (Burgess et al., 2002; Jarome and Helmstetter, 2014; Kleinknecht et al., 2012; Merlo et al., 2015). As our initial AHA labelling and FUNCAT analysis confirmed that protein synthesis is altered in the hippocampus during spatial LTM formation (Figure 1E), we chose to use cell-type-specific NCAA labelling in order to restrict de novo protein labelling to hippocampal neurons in vivo.\n\nTo restrict the expression of NLL-MetRS to hippocampal neurons, we crossed RC3 mice with the Camk2a-Cre T29-1Stl/J mouse strain. When originally generated, this mouse strain expressed Cre-recombinase only in the CA1 pyramidal neurons of the hippocampus and the testes (Tsien et al., 1996); however, more recent analyses revealed expression in other regions of the hippocampus (Alvarez-Castelao et al., 2017; McGill et al., 2017), possibly reflecting a genetic drift. Our results are consistent with these more recent studies, with RC3xCamk2a-Cre mice expressing NLL-MetRS-EGFP in the neurons of the CA1, CA2, CA3, as well as dentate gyrus regions of the hippocampus (Figure 2D).\n\nRecently, another Cre-dependent mouse strain was established that expresses the mutant tRNA synthetase MetRS-L247G (Alvarez-Castelao et al., 2017). Unlike NLL-MetRS, which is considered to label proteins with ANL only at their amino-terminus (Ngo et al., 2013), MetRS-L247G also replaces internal methionine residues with ANL (M\u00fcller et al., 2015; Yang et al., 2018), which likely results in a wider range of protein labelling.\n\nBy combining hippocampal neuron-specific ANL labelling with BONCAT-SWATH-MS, we identified 156 proteins which were significantly altered in synthesis during spatial LTM formation induced by the 30 min APA paradigm (Figure 3D). While these changes represent a small proportion of the total-ANL proteome, these findings are in line with previous studies assessing the total proteome in different stages of memory consolidation (Borovok et al., 2016). STRING analysis of the 156 significantly altered proteins revealed that the vast majority of these proteins interact with a least one other significantly altered protein, forming a large, highly interconnected network (Figure 4). This high degree of interconnection would suggest that, as expected, spatial LTM formation induces changes not only in the synthesis of specific proteins but also pathways.\n\nInterestingly, while FUNCAT analysis revealed an overall increase in the amount of new protein synthesis during spatial LTM formation (Figure 3B), our de novo proteomic analysis identified a similar number of proteins with decreased and increased synthesis (68 and 88, respectively) in the 16 hr following training. This would suggest that rather than simply inducing the synthesis of memory-related proteins, spatial LTM memory formation causes neurons to selectively modulate certain pathways and molecular processes.\n\nMCODE analysis of the network-regulated proteins identified five distinct clusters of newly synthesised proteins. These were associated with mRNA splicing, ATP hydrolysis-coupled proton transport, vesicle-mediated transport, biogenesis of mitochondrial complex I, and Rho GTPase effectors. We confirmed the validity of our de novo analysis by examining a number of proteins from these clusters using BONCAT-WB, with all of the examined proteins showing similar changes in synthesis for both detection methods (Figure 5).\n\nMany of the proteins and pathways identified by our analysis have previously been associated with memory formation. Examples are \u03b1- and \u03b2-adaptin (Ap2b1), which were increased in synthesis during spatial LTM formation (Figure 4 and Figure 5). These two proteins are subunits of the clathrin adaptor protein 2 (AP2) complex, which regulates synaptic levels of GluR1- and GluR2/GluR3-containing AMPA receptors (Garafalo et al., 2015). This process is important in the memory-related processes of long-term potentiation (LTP) and long-term depression (LTD) (Barth and Wheeler, 2008; Hardt et al., 2014), as well as complex rodents behaviours such as visual recognition memory, which is disrupted when the interaction between AP2 and the GluR2 subunit is blocked (Griffiths et al., 2008).\n\nAnother memory-related protein identified to be altered in synthesis in our de novo proteomic analysis was the structural subunit A of protein phosphatase 2A, PP2A-A. Both BONCAT-SWATH-MS and BONCAT-WB found that the \u03b1 isoform of PP2A-A was increased in synthesis during the 16 hr following training (Figure 3D and Figure 5). Inhibition of PP2A has been demonstrated to block LTP (Belmeguenai, 2005), with hippocampal PP2A knock-out animals presenting altered extinction of long-term memory (Wang et al., 2019).\n\nOur de novo proteomic analysis also identified several molecular processes which have yet to be robustly linked to spatial LTM formation. One such process is the regulation of mRNA splicing. We observed that during memory and learning, there was increased synthesis of pre-mRNA-processing factor 31 (Prp31) and \u03b2-catenin-like protein 1 (Ctnnbl1), both of which are required for the formation and activation of the spliceosome (Ganesh et al., 2011; Yuan et al., 2005) (Figure 4), while the synthesis of the pre-mRNA-splicing factor ATP-dependent RNA helicase DHX15 (DHX15), which is involved in the disassembly of spliceosomes, was decreased (Wen et al., 2008) (Figure 4). We further observed decreased synthesis of serine/arginine-rich splicing factor 6 (SRSF6), which inhibits the splicing of exon 10 of the microtubule associated protein tau (Yin et al., 2012). Taken together, these results suggest that during spatial LTM formation, there may be an alteration the activity of spliceosomes, leading to altered splicing of certain mRNAs such as MAPT, although further examination will be required to confirm if these molecular process are altered in spatial LTM.\n\nThe current working model of spatial LTM formation suggests that following spatial training, hippocampal neurons undergo protein synthesis in response to certain stimuli (Kandel et al., 2014; Squire et al., 2015). In our study, we used cell-type-specific NCAA labelling, in combination with a novel 30 min APA protocol and quantitative SWATH-MS de novo proteomics, to examine how the hippocampal de novo proteome is changed during spatial LTM formation. We found that in hippocampal neurons, there was altered synthesis of specific sets of proteins associated with a diverse, yet interconnected set of neuronal pathways and cellular processes following spatial training. In addition to observing altered synthesis of a number proteins already associated with memory, such as \u03b1-adaptin, \u03b2-adaptin and PP2A-A, we also identified alterations in mRNA splicing as a potential neuronal mechanism which underpins spatial LTM formation. More generally, our findings highlight the potential of cell-type specific NCAA labelling using transgenic mouse strains such as the RC3 mice as a robust tool for identifying and characterising cell-type-specific changes in de novo protein synthesis that occur in response to a wide range of both physiological and pathological stimuli, including complex rodent behaviours.\n\n## Materials and methods\n\n### Animals and ethics\n\n4\u20135 month old female C57BL/6, ROSA26a Cre-inducible Click chemistry (RC3), and RC3 mice crossed with Camk2a-Cre T29-1 Stl/j mice (Jackson Labs, 0005359) were used. Mice were provided access to food and water and housed on a 12 hr light/dark cycle. All experiments were approved by and carried out in accordance with the guidelines of the Animal Ethics Committee of the University of Queensland (QBI/554/17/NHMRC).\n\n### Generation of RC3 mouse strain\n\nThe RC3 donor plasmid was obtained by subcloning the NLL-MetRS-EGFP transgene into the ROSA26A-targetting mammalian expression vector Ai2 (Ai2 was a gift from Hongkui Zeng, Addgene plasmid #22796). The RC3 transgenic mouse strain was generated by CRISPR/CAS9-mediated insertion of the linearized RC3 donor into the ROSA26 locus using a previously published sgRNA (Chu et al., 2015). The CAS9-sgRNA complexes and linearized donor plasmid were introduced into fertilised eggs by pronuclear injection as previously described, with minor modifications (Ittner and G\u00f6tz, 2007). Offspring were genotyped by PCR using EGFP genotyping primers, with positive pups being confirmed by Sanger sequencing conducted at the Australian Equine Genetics Research Centre (AEGRC).\n\n### Non-canonical amino acid treatment of mice\n\nThe non-canonical amino acid AHA (ThermoFisher, C10102) was dissolved in phosphate-buffered saline (PBS) and administered to wild-type mice as previously described (Evans et al., 2019). Optimal ANL (Jena Bioscience, CLK-AA009) labelling conditions were examined using BONCAT-WB. A dosage of 100 \u00b5g Anl/gbw and a labelling period of 16 hr resulted in maximal labelling and was used for all further experiments.\n\nAfter treatment, mice were deeply anaesthetised with pentobarbitone sodium and then intracardially perfused with 25 mL of PBS. The brains were subsequently dissected, with one hemisphere being processed for immunohistochemistry and FUNCAT, and the other for BONCAT.\n\n### Behavioural analysis\n\nSpatial memory was assessed using a modified APA test. In brief, mice were trained over 30 min to use spatial cues to avoid a shock zone within an arena rotating at 1 rpm. Mice were handled daily for 2 min over a seven day period, prior to being habituated to the rotating arena during a 30 min exploration session. 24 hr after habituation, mice were placed into the arena with a fixed 60\u00b0 shock zone extending from the centre point of the arena to the southern side of the room.\n\nMice were separated into two groups, trained and non-trained. Trained mice received a 0.5 mA shock upon entry into the shock zone, with an entrance shock delay of 0.5 s, and a 1.5 s interval between shocks. The number of shocks received and the number of entries into the shock zone were analysed in 5 min intervals. In the non-trained group, mice were paired to individual littermates from the trained group, receiving shocks at the same time as the trained mouse, irrespective of the spatial location of the non-trained mouse. Behavioural analysis was performed at the same time on sequential days in order to control from differences in protein synthesis due to circadian rhythm. Following sacrifice, further sample preparation and analysis for trained and non-trained mice was performed simultaneously.\n\nIn order to determine if the mice trained with the 30 min APA underwent spatial LTM formation, they were assessed for their ability to recall the location of the shock zone in 5 min probe trials, where mice did not receive shocks, conducted either 16 hr, 24 hr or 1 week after training. Probe trials were also used to confirm that NCAA treatment did not interfere with spatial LTM formation. In experiments where protein synthesis was inhibited, mice were administered anisomycin (Sigma-Aldrich, A9789) 150 \u03bcg/gwb via subcutaneous injection immediately after training as this has been previously demonstrated to inhibit hippocampal protein synthesis for\u00a0>9 hr (Wanisch and Wotjak, 2008). For all trained and non-trained experiments, mice were administered 50 \u00b5g AHA/gbw or 100 \u00b5g ANL/gbw immediately after training and were perfused 16 hr later without undergoing a probe trial.\n\n### Plasma corticosterone quantification\n\nIn order to assess stress levels in mice during the 30 min APA, trained, non-trained and na\u00efve (habituated but not shocked) mice were sacrificed immediately following their respective behaviour tasks. Blood was then collected via cardiac puncture and left to clot for 1 hr, with plasma then being collected via centrifugation. Plasma corticosterone levels were quantified in three mice from each group via ELISA which was performed in triplicate (Enzo Life Sciences, ADI-900\u2013097).\n\n### FUNCAT and immunohistochemical analysis\n\nFollowing PBS perfusion, brain hemispheres were fixed in 4% paraformaldehyde for 24 hr and then placed in cryoprotectant solution (30% glycerol, 30% ethylene glycol in 1x PBS) for 48 hr at 4\u00b0C. 25 \u03bcm thick free floating sections were then cut between Bregma \u22121.34 and \u22122.06 \u03bcm using a vibratome (Leica VT1000).\n\nPrior to FUNCAT staining sections were placed in blocking solution (1% bovine serum albumin (BSA), 0.05% Tween in PBS) for 1 hr at room temperature, with three sections per mouse being analysed. AHA- and ANL- labelled proteins were then visualised by incubating sections with 6.25 \u03bcM Alexa555-DIBO (ThermoFisher, C20021) in blocking solution overnight at 4\u00b0C under constant agitation. Neurons were visualised by staining with a MAP2 antibody (Abcam, ab5392, 1:1000) and anti-chicken Alexa Fluor647 (ThermoFisher, A21449, 1:1000). Sections were washed repeatedly with 0.05% Tween in PBS and then stained with DAPI. As negative controls, sections of PBS-treated mice stained with Alexa555-DIBO were used throughout all experiments. Images were taken using a Zeiss 710 laser scanning confocal microscope.\n\n### BONCAT purification\n\nFollowing PBS perfusion the hippocampus of RC3xCamk2a-Cre mice was dissected. The samples were snap-frozen and then extracted in radioimmunoprecipitation assay (RIPA) buffer (Cell Signalling, 9806) as previously described (Bodea et al., 2017), with protein concentrations being determined using the bicinchoninic acid (BCA) assay (ThermoFisher, 23225).\n\nBONCAT purification was carried out as previously described (Evans et al., 2019). Briefly, for samples to be analysed via western blot following BONCAT purification (BONCAT-WB), 100 \u03bcg of protein was used. Proteins were first alkylated with iodoacetamide (IAA) as this has been shown to reduce non-specific reactions when using the strain-promoted azide-alkyne cycloaddition (van Geel et al., 2012). Anl labelled proteins were then reacted with 100 \u03bcM DIBO-biotin (Click Chemistry Tools, A112) for 2 hr at room temperature. 40 \u03bcg of streptavidin-coated Dynabeads (ThermoFisher, 11205D) were then used to purify biotinylated proteins, with beads being washed multiple times with IP wash buffer (0.1% SDS and 0.05% Tween in Tris-buffered saline (TBS)). Bound proteins were removed from the beads by boiling in 1x Laemmli buffer.\n\nFor BONCAT-SWATH-MS analysis, samples were purified as above, but using 250 \u03bcg of protein and 100 \u03bcg of streptavidin-coated Dynabeads per sample. Beads were then washed in IP wash buffer and resuspended in TBS.\n\n### Western blot analysis\n\nFollowing BONCAT purification, equal volumes of the elution fraction were loaded and separate by SDS-PAGE and analysed via western blotting as previously described (Evans et al., 2019). The total amount of newly synthesised proteins was quantified using the REVERT total protein stain (LI-COR, 926\u201311010), with representative proteins for each cluster were detected using the following primary antibodies: \u03b1 adaptin (ThermoFisher, MA3-061, 1:500), neuron specific enolase (NSE) (Abcam, ab53025, 1:500), AT6V1B2 (Abcam, ab73404, 1:500), PP2A-A (Sigma-Aldrich, 07\u2013250, 1:1000), AUF-1 (Sigma-Aldrich, 07\u2013260, 1:500), and GAPDH (Millipore, MAB374, 1:1000).\n\n### BONCAT-SWATH-MS analysis\n\nIn order to identify proteins newly synthesised during spatial memory formation, Anl-labelled proteins from both trained and non-trained RC3xCamk2a-Cre mice were analysed by BONCAT-SWATH-MS mostly as previously described (Evans et al., 2019). Briefly, BONCAT-purified proteins bound to beads from four trained and four untrained samples were placed in Triethylammonium bicarbonate (TEAB) buffer and subsequently reduced with DTT, followed by alkylation with iodoacetamide. Samples were then digested with 80 ng of trypsin overnight. For generation of the custom ion library, samples were then pulled and resuspended in 5 mM ammonium hydroxide solution (pH 10.5). Peptides were then fractionated using high pH RP-HPLC, with the resulting 17 fractions being analysed via non-LC MS/MS to form the custom ion library used for SWATH analysis. In order to control for background purified proteins, BONCAT purification was performed on an RC3xCamk2a-Cre PBS-treated negative control. Peptides identified from this negative control were excluded from further analysis, in addition to peptides identified in previous BONCAT-SWATH-MS negative control experiments (Figure 3\u2014figure supplement 3A, Supplementary file 1).\n\nUsing this custom ion library, samples were then analysed using SWATH-MS using a false discovery rate (FDR) of 1% for peptide and protein identification as previously described (Evans et al., 2019).\n\n### Bioinformatic analysis SWATH-MS data\n\nProteins identified using SWATH-MS were statistically compared using paired t-tests. We opted to use an unadjusted p-value cut off of p\u22640.05 and an absolute fold-change cut off of\u00a0\u22651.5 to identify proteins with significantly altered synthesis. This is because we observed that correcting for multiple comparisons greatly reduced the number of significantly altered proteins from 156 to 27, resulting in the exclusion of a number of true positives, such as NSE and AUF-1, which were confirmed to be altered in synthesis using BONCAT-WB (Figure 5,\u00a0Supplementary file 2). This culling effect on true positives is commonly observed in proteomics studies with smaller sample sizes using multiple comparisons (Pascovici et al., 2016). Previous SWATH-MS experiments using spiked lysates have demonstrated that the cut offs used in our study result in estimated quantitative FDRs of\u00a0<10% (Wu et al., 2016). Similar cut offs were also used in other studies (Ganief et al., 2017; Liu et al., 2019). Network analysis was performed using Cytoscape (v3.6.0). Data from the SWATH-MS analysis were mapped to the STRING protein query database for Mus musculus using the UniProt identifier. A confidence of interaction score cut-off of 0.4 was used. A network map of the 156 proteins which exhibited significantly altered synthesis in trained mice was then generated using the edge-weighted spring-embedded layout. Clusters of regulated proteins were identified using Molecular Complex Detection (MCODE). The proteins in these clusters where then analysed using the GO, KEGG and Reactome databases. Cluster names, which were both informative and contained a majority of proteins within the cluster, were manually assigned. Heatmapper was used to perform a Euclidian clustering analysis of the relative abundance of all 1782 quantified proteins for each sample (Babicki et al., 2016).\n\n### Image analysis\n\nAnalysis of images obtained by confocal microscopy was performed blinded and carried out using ImageJ. Protein synthesis in AHA-treated mice was quantified by measuring the median FUNCAT intensity in rectangular regions of interest of the same size around the CA1 neurons of the hippocampus, with each data point representing the mean of three sections analysed per animal. For RC3xCamk2a-Cre mice, the presence of NLL-MetRS-EGFP expression enabled FUNCAT intensity to be quantified per neuron. ANL labelling was quantified by measuring the median FUNCAT intensity, with each data point representing the mean of 30 hippocampal CA1 neurons analysed per animal. Western blots were analysed using the LI-COR Light Studio software.\n\n### Statistical analysis\n\nStatistical analysis was performed in GraphPad Prism 7.0 software using Student\u2019s paired t-test, Student\u2019s unpaired t-test, one way ANOVA, or two-way ANOVA, with Tukey\u2019s multiple comparisons test (MCT), Sidak\u2019s MCT, or Dunnett\u2019s MCT being used as appropriate. All values are given as mean\u00a0\u00b1\u00a0standard error of the mean (SEM).\n\n### Data availability\n\nThe RAW mass spectrometry proteomics data used in this study has been deposited to the ProteomeXchange Consortium via the PRIDE partner repository (Perez-Riverol et al., 2019) with the dataset identifier PXD015820.\n",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "e8225cd7-c5ad-4985-832a-b5907dc07aec",
+      "submission_id": "478ebd20-08d6-4712-a19e-ae63424916d9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University United States\n\nReviewers:\n- Sacha B Nelson, Brandeis University United States\n- Erin Margaret Schuman, Max Planck Institute for Brain Research Germany\n\n## Review text\n\nDOI: [10.7554/eLife.52990.sa1](https://doi.org/10.7554/eLife.52990.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your work entitled \"Cell-specific non-canonical amino acid labelling identifies changes in the de novo proteome during memory formation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Sacha B Nelson as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Erin Schuman (Reviewer #3).\n\nAs you will see below, the reviewers identified a number of distinct and overlapping problems with the present manuscript that preclude its acceptance despite significant enthusiasm for the overall topic and several features of the study. Performing the required additional experiments and analyses is likely to require significant additional effort, but the reviewers were in agreement that several of these issues would need to be addressed to support the conclusions of the paper. It is eLife policy to reject manuscripts for which significant additional work is required. In this case, if key issues can be addressed, we would encourage a resubmission, and would endeavor to ensure that it is handled by the same reviewers, although we cannot guarantee this.\n\nIn an effort to make this process as transparent as possible, we are including the original reviews, but note that some of the issues were viewed as more critical than others. Specifically:\n\n1) All reviewers agreed that identifying background proteins associated with the purification was a critical control (e.g. Rev 3 point 3).\n\n2) In addition, showing that the task requires protein synthesis was felt to be important.\n\n3) Improvement of the statistical analysis was also felt to be critical.\n\n4) Finally, clarifying what was learned about the underlying biology was also deemed important.\n\nIn contrast, after discussion, reviewers agreed that characterization of the specificity of the driver mouse could potentially be addressed by referring to other studies. It was also felt that the small number of proteins identified could be discussed without requiring additional experiments. Finally, the concern of reviewer 1 about the possibility of stress-dependent effects rather than learning being required for the changes seen could be addressed by the purity controls and demonstration that the task requires protein synthesis.\n\nReviewer #1:\n\nThe authors describe creation of a transgenic mouse strain permitting cre-dependent expression of a mutant tRNA synthetase from the ROSA26 locus. The transgene permits BONCAT and FUNCAT labeling of newly synthesized proteins in specific cell types. Using this strain, they demonstrate a change in the synthesis of 167 proteins in the hippocampus following a spatial learning paradigm. Although there is a long history of showing that hippocampal learning depends on synthesis of new proteins this is one of the first attempts to provide the list of which new proteins contribute.\n\nDespite significant enthusiasm for the overall goal, for the tool the authors have generated and for some aspects of their experiments, I am concerned about one aspect of their experimental design and one aspect of their statistical analyses.\n\nThe design compares animals that learn to avoid a shock in a spatial region with yoked control animals that receive the same shocks but cannot (by design) learn to avoid them. This is in many respects a wonderful control for the stress of animals receiving shocks. However a weakness of the design is that it may actually be much more stressful to receive repeated shocks that one cannot avoid by altering behavior, than to receive the same number of shocks but which one comes to avoid by altering one's behavior. If this is true, the change in protein synthesis could either be due to the learning or could reflect the heightened stress in the control animals. An additional set of untrained controls would resolve this.\n\nThe statistical concern has to do with the multiple comparisons that come from simultaneously examining many proteins. The authors do not use a threshold for fold-change and do not do any correction for multiple comparisons across proteins.\n\nReviewer #2:\n\nHere the authors use non-canonical amino acid labeling, proteomics, immunohistochemical labeling and Western blots to identify changes in the makeup of newly-synthesized proteins in the mouse hippocampus following learning paradigm ('accelerated' active place avoidance). They first establish the learning paradigm. They then demonstrate that incorporation of AHA in hippocampi of trained mice is greater than that observed in non-trained mice. They then describe and characterize a novel mouse strain (RC3 mice) that conditionally expresses a mutant tRNA synthetase. These are crossed with CaMK2a-Cre mice resulting in selective expression of mutant tRNA synthetase in the hippocampus. They then compare the population of newly synthesized proteins in trained and non-trained mice by labeling with ANL and analyzing the ANL-containing proteins by FUNCAT, BONCAT, MS and Western blots. They report training associated changes in the synthesis of 167 proteins, which are clustered into several groups; changes for a subset of these were then verified using western blots.\n\nThe approach taken here is valid and has the potential to address many interesting and open questions related to changes in protein synthesis associated with a variety of phenomena, in this case, training on a specific task. As far as I can tell, the behavioral tasks were performed appropriately and the controls are in place. My enthusiasm is dampened, however, by the superficial analysis and treatment of the results. Consequently, the findings, as they stand, are not particularly insightful or useful. Having said this, this can be remedied by 1) deeper and better analyses and; 2) contrasting the findings with the literature.\n\n1) The bioinformatics analyses and conclusions are rather superficial and not very convincing. First, attribution of 'change' is based on the statistical significance of a paired Students t-test (4 pairs), regardless of the magnitude of the change. Thus, for about half of such proteins, the measured change was less than 30%. Such low change thresholds are uncommon in such studies as they are rarely reliable. A reasonable way to set a threshold would be to estimate the variance within each group, and set a threshold based on, say, 2 standard variations of the internal variance. Second, the clustering into functional groups (the four distinct clusters mentioned) is questionable. For example, one of these is 'synaptic vesicle recycling'. This cluster contains only 3 protein (complexes): the vacuolar ATPase, WD Repeat Domain 7, and Dmx Like 2. These proteins have been associated with synaptic vesicles but not exclusively so, thus referring to this tiny group as a 'synaptic vesicle recycling' cluster is not justified. Third, proteins that exhibited the strongest changes are kind of ignored (for example a sodium-coupled bicarbonate transporter, 5-fold increase), or Glyoxalase I (14-fold change).\n\n2) The details on the 167 proteins identified are scant. No table is provided in the main text that lists these proteins, their common names, the degree of change following training, the statistical significance of the change, etc. Such a table is provided as supplementary data, but no details are provided to explain it (for example, what does 'NumberPeptides' mean? How can 8 measurements be made from 1 peptide?). This being so, it is difficult to appreciate what proteins change beyond those mentioned explicitly in the text.\n\n3) The literature on protein synthesis and learning is vast. How do prior expectations and findings compare with those described here? Given the importance attributed to local protein synthesis in synaptic plasticity, are any relationships observed between the proteins identified here and dendritic (and axonal) mRNAs identified so far? Along these lines, were postsynaptic proteins and receptors identified (I noted, for example that newly synthesized GluA1 was markedly increased in 3 of the 4 experiments)? Presynaptic proteins? (I noted changes in Synataxin 1B, Munc-18-1, \u0391-SNAP). Were any of the identified proteins unique in the sense that they were synthesized only after training (so called 'plasticity proteins')? This is not to criticize the veracity of the findings, but contrasting the findings with prior studies and common hypotheses on protein synthesis and memory would help clarify the insights the study provides beyond a catalog of protein names. Unfortunately, the Discussion is not enlightening in this regard as it is, for the most part, a reiteration of the results.\n\n4) Figure 2F is rather surprising as it suggests that half of newly synthesized protein is lost within 8 hours (from 16 to 24 hours). How do such rapid degradation rates compare with the long half-lives (many days and even weeks) reported for most neuronal proteins (e.g. Fornasiero et al., 2018, PMID30315172)? What might be the explanation?\n\nReviewer #3:\n\nSummary:\n\nThe authors analyze the newly-synthesized proteome of hippocampal neurons using ANL and SWATH; they investigate changes in treated/untreated animals in an active place avoidance test. They identified 700 proteins in total, observing differential expression in 167. To validate their findings, they used BONCAT-WB finding similar trends in most candidate proteins.\n\nScope:\n\nLTM consolidation is of general interest. Cell-type specific proteome labeling using ncAAs has been described previously, with a much higher overall proteome coverage than reported here. From a neurobiological point of view, the topic is potentially interesting but enthusiasm is diminished by the very low proteome coverage and the absence of many important controls. Hopefully the authors conducted the control experiments but just left them out of the current manuscript. There are several major issues/suggestions, as outlined below.\n\n1) Does long-term memory in the active place avoidance task require protein synthesis? This is an important experiment to include since it would establish that the changes in protein synthesis observed are important for the long-term change in behavior.\n\n2)The authors are using a new mouse line that they created using CRISPR/CAS to mutagenize the methionyl t-RNA synthetase (NLL-MetRS). There is no characterization of the mouse line in the paper. While the crossed mouse uses a well-established CRE driver, each new line can be slightly different, and ectopic expression of the CRE drivers is not unusual. It is thus highly recommended to include least one staining showing the co-localization of the GFP with a neuronal marker. (In Figure 2E the authors report that GFP is expressed in neurons, but no neuronal marker is shown, just a region rich in neurons and ectopic expression cannot be evaluated.\n\n3) Re: proteomics. There were no controls for the purification of newly-synthesized proteins included in the manuscript. Have these purification tests been done? Data should be included that compares non-specific protein absorption in control samples (from e.g. methionine-injected mutant mice or ANL injected wild-type mice, but ideally both) to specifically purified newly-synthesized proteins. This is an essential point that needs to be addressed as the purification of proteins always results in some background proteins associated with the purification procedure (stickiness of the beads). In the present manuscript, all differentially regulated proteins described in the Results section could be derived from non-specifically adsorbing proteins also from other cell types. The authors need to show their enrichment efficiency and thresholds for accepting proteins for inclusion.\n\n4) Re: proteomics: only a very limited number of proteins were identified and quantified, likely representing the \"tip of the iceberg\" of the cellular proteome. Previous studies showed more than triple the numbers described in this manuscript. Can the authors comment on their relatively low protein numbers?\n\n5) Also, data upload to an online repository is common practice nowadays, and its commendable that the authors plan to do this. PRIDE offers anonymous reviewer accounts after uploading- this allows the possibility that the reviewers can look at the data.\n\n6) It is very interesting and surprising that the authors report a global change in protein translation 16h after a relatively short learning paradigm. Given the big increase in translation that is shown in the FUNCAT experiment (Figure 1E), it is quite surprising that the final number of differential expressed proteins is only 167, and in this regulated pool only 99/167 increased expression, while the remainder showed a decrease in expression. This regulation seems inconsistent with the global FUNCAT measurement. The proteome of single cells is estimated to include ~ 5000 proteins- making it difficult to understand how regulation of 167- with about half going up and half going down- would have a visible effect on the total visualized new proteome. How do the authors explain this?\n\n7) How were the experimental and control MS samples handled? were the 4 control mice samples obtained at the same time, clicked and then analyzed at the same time as the experimental samples (or with interleaving of experimental and control samples)?\n\n8) Data analysis: The authors should provide an analysis of the overlap in replicates for the MS experiments with ANL labelled proteins and the negative control.\n\n9) How were the MS data normalized?\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Cell-specific non-canonical amino acid labelling identifies changes in the de novo proteome during memory formation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Sacha B Nelson as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by a Reviewing Editor and Laura Colgin as the Senior Editor. The following individual involved in review of your submission has agreed to reveal their identity: Erin Margaret Schuman (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nEssential revisions:\n\nThe statistical issues raised by reviewer 1 and 3 have not been adequately addressed. It is necessary to compute a false discovery rate and to provide the additional replicate information requested by reviewer #3.\n\nReviewer #1:\n\nThe authors have revised their manuscripts and performed some of the requested additional control experiments and analyses. Importantly, they have addressed the key issues of background labeling, the dependence of the learning task on new protein synthesis, and to some degree, the statistical analysis of the data.\n\nI leave it to other more expert reviewers to address the question of whether the issues of background have been adequately dealt with, and to assess whether or not the question of what has been learned from the study has been adequately discussed. The experiments do appear to confirm that the learning requires new protein synthesis. The statistical approach is improved but still lacks adequate control for multiple comparisons. The expected false discovery rate has not been addressed.\n\nIn the future it would be helpful for the authors to include the specific changes in the manuscript made with explicit references to where in the manuscript these are to be found.\n\nReviewer #2:\n\nThe authors have addressed the points I raised in my original review. I have no further major comments.\n\nTechnology-wise, the approach and genetic model developed will probably be useful for many projects in the future.\n\nAs to what has been learned on relationships between protein synthesis and spatial learning, matters remain fuzzy. Perhaps this might be expected in such unbiased studies, and explanatory context might emerge in future studies. Alternatively, perhaps the fuzziness is part of the answer (in analogy to realizations emerging from genome-wide association studies aiming to identify genetic sources of complex traits/diseases).\n\nTime will tell.\n\nReviewer #3:\n\nThe authors have improved the manuscript and now show the data from control experiments. On a positive note, their S/N ratio for ANL-containing proteins compared to PBS-treated control is very good (6986 peptides vs. 207 shared peptides, Figure 3\u2014figure supplement 3A).\n\nTwo major remaining points.\n\nRe: statistical analysis of significantly regulated proteins (reviewer 1 comment 2 and reviewer 2 comment 1). The authors have used an absolute fold-change cut-off when the standard in the proteomics field is to use a false-discovery-rate. The papers that the authors cite in their response to the reviewers actually use an FDR- not a simple threshold. I don't understand the reluctance to use an FDR- the Volcano plot looks \"ok\" (evenly distributed clouds, reasonable shape). The authors should use the FDR method to report statistical significance.\n\n\u2022 Biological replicates and experiment numbers: The authors report that they have 3 replicates per experiment (3 mice), but the information on whether the mice belong to the same litter or how many independent experiments were conducted is still missing. This is a key point to understand the power of the data shown. The authors should clearly state litters, biological and technical replicates. Example; In the slice experiment Figure 1E, it is stated that there are 4 mice per experiment, is not clear if they imaged one slice per mouse or more. Again not clear if they are from the same litter and/or experiment. This should be clarified. Related to this- it is desirable if the data uploaded on PRIDE can also be clearly recognized as biological and technical replicates and if the file names used make sense and are easy to cross-walk with the manuscript.\n",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e8871352-8308-475a-8ce7-7d029b202d73",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C1",
+      "claim": "The formation of spatial long-term memory (LTM) requires the de novo synthesis of distinct sets of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of spatial long-term memory (LTM) requires the de novo synthesis of distinct sets of proteins; however, a non-biased examination of the de novo proteome in this process is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract, drawing on established scientific consensus about memory formation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "cdc2ef1f-7372-4719-b2aa-75294c9cf687",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C2",
+      "claim": "A novel mouse strain was generated that enables cell-type-specific labelling of newly synthesised proteins with non-canonical amino acids (NCAAs) by genetically restricting the expression of the mutant tRNA synthetase, NLL-MetRS, to hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we generated a novel mouse strain, which enables cell-type-specific labelling of newly synthesised proteins with non-canonical amino acids (NCAAs) by genetically restricting the expression of the mutant tRNA synthetase, NLL-MetRS, to hippocampal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental work performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "a861c5a8-6a02-4ab4-8c4c-234d45f55ad0",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C3",
+      "claim": "156 proteins were altered in synthesis in hippocampal neurons during spatial memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining this labelling technique with an accelerated version of the active place avoidance task and bio-orthogonal non-canonical amino acid tagging (BONCAT) followed by SWATH quantitative mass spectrometry, we identified 156 proteins that were altered in synthesis in hippocampal neurons during spatial memory formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the SWATH-MS experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "b711c6e6-f809-4177-8ee3-b4c66a7df49f",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C4",
+      "claim": "Increased synthesis of proteins important in glutamate receptor recycling was observed during spatial memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to observing increased synthesis of known proteins important in memory-related processes, such as glutamate receptor recycling, we also identified altered synthesis of proteins associated with mRNA splicing as a potential mechanism involved in spatial LTM formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "7c10a0e7-a1c4-470c-9519-1ba02992cb18",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C5",
+      "claim": "Altered synthesis of proteins associated with mRNA splicing is a potential mechanism involved in spatial LTM formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to observing increased synthesis of known proteins important in memory-related processes, such as glutamate receptor recycling, we also identified altered synthesis of proteins associated with mRNA splicing as a potential mechanism involved in spatial LTM formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "e93c6bbb-6d48-4349-88c5-d74e5432918c",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C6",
+      "claim": "New protein synthesis is required for the formation, retrieval, and updating of long-term memories (LTMs), distinguishing this process from short-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "New protein synthesis is required for the formation, retrieval, and updating of long-term memories (LTMs), distinguishing this process from short-term memory (Costa-Mattioli et al., 2009; Jarome and Helmstetter, 2014; Lopez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "966ef6c1-0d27-492e-9d91-404d022e876e",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C7",
+      "claim": "Spatial LTM is formed through the process of spatial LTM consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "One form of LTM is spatial LTM, which is used by organisms to recall spatial information about the environment, and is formed through the process of spatial LTM consolidation (Squire et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "b78ca102-8e3e-4461-be64-a86e18c87892",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C8",
+      "claim": "The hippocampus is one of the most important brain structures in both spatial learning and LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "During this process, neurons undergo a series of changes in different brain regions, with the hippocampus being identified as one of the most important brain structures in both spatial learning and LTM (Clopath, 2012; Mayford et al., 2012; Ziegler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "e68077b2-561e-42ef-b9f2-d6a1a7d9bf82",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C9",
+      "claim": "Inhibition of protein synthesis in the hippocampus, especially within the first 24 hr following spatial learning, prevents the formation of spatial LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inhibition of protein synthesis in the hippocampus, especially within the first 24 hr following spatial learning, has been demonstrated to prevent the formation of spatial LTM (Alkon et al., 2005; Inda et al., 2005; Jarome and Helmstetter, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "c04eab10-2ae2-4d39-8dbc-d32233db670c",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C10",
+      "claim": "AHA is recognised by mouse methionine tRNA synthetase, MetRS (Mars1), and labels de novo synthesised proteins at amino-terminal and internal methionine residues using the endogenous translational machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "AHA is recognised by mouse methionine tRNA synthetase, MetRS (Mars1), and labels de novo synthesised proteins at amino-terminal and internal methionine residues using the endogenous translational machinery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "958e19e5-fd75-48a6-8cb3-3a6872356bd7",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C11",
+      "claim": "NCAA-labelled proteins can be covalently bonded to various tags through reaction of the azide group of the NCAA with the alkyne group of the tag.",
+      "claim_type": "EXPLICIT",
+      "source": "NCAA-labelled proteins can be covalently bonded to various tags through reaction of the azide group (orange) of the NCAA with the alkyne group (purple) of the tag.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and illustrated in Figure 1B.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "5aac5cab-b2df-4619-9c6b-15c4f46f4d47",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C12",
+      "claim": "The 30 min APA paradigm results in spatial long-term memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The 30 min APA paradigm results in spatial long-term memory formation. Mice trained over 30 min learned to avoid a designated shock zone (red), with significantly fewer entries into the shock zone being recorded between 25\u201330 min compared to between 0\u20135 min. In a 5 min probe trial held 24 hr after training, mice continued to avoid entering the shock zone, even in the absence of shocks, indicative of the formation of spatial LTM (n = 6 mice, one-way ANOVA, Dunnett's MCT, *p\u22640.05, **p\u22640.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "1bf210d1-7571-45f2-a068-dfca550d6da8",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C13",
+      "claim": "Mice trained over 30 min learned to avoid a designated shock zone, with significantly fewer entries into the shock zone being recorded between 25\u201330 min compared to between 0\u20135 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice trained over 30 min learned to avoid a designated shock zone (red), with significantly fewer entries into the shock zone being recorded between 25\u201330 min compared to between 0\u20135 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative behavioral observation from the experiment shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "94945560-83e4-4e78-ac36-f1b0d682dffe",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C14",
+      "claim": "In a 5 min probe trial held 24 hr after training, mice continued to avoid entering the shock zone, even in the absence of shocks, indicative of the formation of spatial LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "In a 5 min probe trial held 24 hr after training, mice continued to avoid entering the shock zone, even in the absence of shocks, indicative of the formation of spatial LTM (n = 6 mice, one-way ANOVA, Dunnett's MCT, *p\u22640.05, **p\u22640.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral observation from the experiment shown in Figure 1C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "c98c552c-3893-4463-87cf-2c8b02437d75",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C15",
+      "claim": "A significant increase in protein synthesis was observed in the hippocampus of trained compared to non-trained mice using FUNCAT.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase in protein synthesis was observed in the hippocampus of trained compared to non-trained mice using FUNCAT (n = 4 mice, three sections per mouse, Student's paired t-test, *p\u22640.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from FUNCAT imaging shown in Figure 1E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "c1b11369-0730-43ba-be12-e3771c6602a6",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C16",
+      "claim": "Both mice treated with either AHA or PBS immediately after training using the 30 min APA test could recall the location of the shock zone in a probe trial conducted 16 hr after training.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mice treated with either AHA or PBS immediately after training using the 30 min APA test could recall the location of the shock zone in a probe trial conducted 16 hr after training (n = 4 mice, two way ANOVA, Dunnett's MCT, ***p\u22640.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral observation from the experiment shown in Figure 1\u2014figure supplement 1 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "931237b6-61d2-484a-9bec-d5dec7a16901",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C17",
+      "claim": "There was no significant difference in performance in the probe trial between AHA-treated and PBS-treated groups.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in performance in this probe trial between the two groups (two-way ANOVA, Sidak's MCT, n.s. = non significant, p=0.85).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison from the experiment shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "b522bd27-4024-4232-b438-00af9a8b314c",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C18",
+      "claim": "Both trained and non-trained mice show increased plasma levels of corticosterone compared to na\u00efve controls which were exposed to the 30 min APA arena without receiving foot shocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Both trained and non-trained mice show increased plasma levels of corticosterone (a marker of increased stress) compared to a na\u00efve controls which exposed to the 30 min APA arena without receiving foot shocks (n = 3 mice, one-way ANOVA, Tukey's MCT, **p\u22640.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experiment shown in Figure 1\u2014figure supplement 2 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "a1df5b26-939c-43f2-b856-5b2d980c9aa4",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C19",
+      "claim": "There was no significant difference in plasma corticosterone levels between trained and non-trained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in plasma corticosterone levels between trained and non-trained mice (n.s. = non significant, p=0.78).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison from the experiment shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "05a2acc1-f438-462a-9b13-9586d4825835",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C20",
+      "claim": "ANL requires the expression of NLL-MetRS for incorporation into nascent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporation of ANL requires the expression of NLL-MetRS, which allows this NCAA to be incorporated at the amino-terminus as proteins are being synthesized.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and illustrated in Figure 2A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "fd2930dd-0bd1-4321-b8be-ad5f34696215",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C21",
+      "claim": "In RC3 mice, the expression of NLL-MetRS-EGFP is prevented by an upstream FLOX-STOP cassette.",
+      "claim_type": "EXPLICIT",
+      "source": "In RC3 mice, the expression of NLL-MetRS-EGFP is prevented by an upstream FLOX-STOP cassette.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and illustrated in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "4d726316-b1a8-42e1-9b04-ccf4c55c7c11",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C22",
+      "claim": "In RC3xCamk2a-Cre mice, Cre-recombinase is expressed in the hippocampus, resulting in the excision of the FLOX-STOP cassette from the RC3 transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "In RC3xCamk2a-Cre mice, Cre-recombinase is expressed in the hippocampus, resulting in the excision of the FLOX-STOP cassette from the RC3 transgene. This enables expression of NLL-MetRS-EGFP restricted to hippocampal neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and illustrated in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "ddf869f2-2615-4e4a-b402-fdfd278d5d3d",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C23",
+      "claim": "Immunohistochemical analysis confirmed Cre-specificity of NLL-MetRS-EGFP expression in RC3xCamk2a-Cre mice, with the EGFP signal being confined to neurons in the CA1, CA2, CA3 and dentate gyrus regions of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemical analysis confirmed Cre-specificity of NLL-MetRS-EGFP expression in RC3xCamk2a-Cre mice, with the EGFP signal being confined to neurons in the CA1, CA2, CA2 and dentate gyrus regions of the hippocampus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from immunohistochemistry shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "7ef27e1c-a74b-40cc-8a68-2790f008ccc9",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C24",
+      "claim": "FUNCAT staining confirms that ANL integration was restricted to hippocampal neurons in RC3xCamk2a-Cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "FUNCAT staining confirms that ANL integration was restricted to hippocampal neurons in RC3xCamk2a-Cre mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from FUNCAT imaging shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "f07ed37a-54a8-4ac7-b681-3a05b59f31b7",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C25",
+      "claim": "Maximal ANL labelling in RC3xCamk2a-Cre mice was achieved when mice were administered 100 \u00b5g ANL/gbw via i.p. injection.",
+      "claim_type": "EXPLICIT",
+      "source": "BONCAT-WB analysis of RC3xCamk2a-Cre mice reveals maximal ANL labelling when mice were administered 100 \u00b5g ANL/gbw via i.p. injection (n = 3 mice, one way ANOVA, Tukey's multiple comparison test, *p\u22640.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from BONCAT-WB shown in Figure 2E with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "2c76dd40-bc68-4e53-8643-823cf4130756",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C26",
+      "claim": "Maximal ANL labelling in RC3xCamk2a-Cre mice occurs approximately 16 hr post injection.",
+      "claim_type": "EXPLICIT",
+      "source": "BONCAT-WB analysis of RC3xCamk2a-Cre mice reveals maximal ANL labelling approximately 16 hr post injection (n = 3 mice, one way ANOVA, Tukey's multiple comparison test **p\u22640.01, ***p\u22640.001, ****p\u22640.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from BONCAT-WB shown in Figure 2F with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "fabb3602-47e8-4cbc-92a1-fbd6ba00f003",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C27",
+      "claim": "RC3xCamk2a-Cre mice trained in the 30 min APA task reduced the number of entries into the shock zone over the 30 min training period.",
+      "claim_type": "EXPLICIT",
+      "source": "RC3xCamk2a-Cre mice trained in the 30 min APA task reduced the number of entries (red circles) into the shock zone (red) over the 30 min training period (n = 4 mice, one-way ANOVA, Dunnett's MCT, **p\u22640.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral observation from the experiment shown in Figure 3B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "2d41b335-d55d-468a-9473-46bc29461100",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C28",
+      "claim": "Following spatial LTM formation, total protein synthesis was significantly increased in the hippocampal neurons of RC3xCamk2a-Cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Following spatial LTM formation, total protein synthesis was significantly increased in the hippocampal neurons of RC3xCamk2a-Cre mice. This was reflected by the increased FUNCAT signal observed in trained compared to non-trained mice (n = 4 mice, 30 neurons per mouse, Student's paired t-test, *p\u22640.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from FUNCAT imaging shown in Figure 3C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "226681ef-3efd-442d-a284-48e4b70e4f93",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C29",
+      "claim": "1782 proteins were quantified in four trained and non-trained mice each, using BONCAT-SWATH-MS.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 1782 proteins were quantified in four trained and non-trained mice each, using BONCAT-SWATH-MS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the SWATH-MS analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "2c3227d0-3697-4344-abc9-5d765fae2972",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C30",
+      "claim": "88 proteins showed significantly increased synthesis in trained mice compared to non-trained controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins which were significantly increased in synthesised in trained mice (fold-change \u22651.5, p\u22640.05) are shown in red",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3D volcano plot.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "b45747f4-5501-4f31-9aa3-30f32a052ae7",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C31",
+      "claim": "68 proteins showed significantly decreased synthesis in trained mice compared to non-trained controls.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas proteins which exhibited significantly decreased synthesis (fold-change \u22640.66, p\u22640.05) are shown in blue (n = 4 mice, Student's t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 3D volcano plot.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "adc9bc83-c47b-480b-aa72-3c04168b2a63",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C32",
+      "claim": "RC3xCamk2a-Cre mice treated with either ANL or PBS immediately after training showed a reduced number of shock zone entries in probe trials held 16 hr and one week following training.",
+      "claim_type": "EXPLICIT",
+      "source": "RC3xCamk2a-Cre treated with either ANL or PBS immediately after training showed a reduced number of shock zone entries in probe trials held 16 hr and one week following training (n = 4 mice, two way ANOVA, Dunnett's MCT, ***p\u22640.001, ****p\u22640.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral observation from the experiment shown in Figure 3\u2014figure supplement 1 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "b9f713fa-f5b1-4d14-a85c-d988fbb36415",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C33",
+      "claim": "There was no significant difference in probe trial performance between ANL- and PBS-treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in probe trial performance between ANL- and PBS-treated mice (two-way ANOVA, Sidak's MCT, n.s. = non significant, p=0.99).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison from the experiment shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "9da6e4c3-414a-4fb1-b164-1fd07c0e92ba",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C34",
+      "claim": "Anisomycin-treated RC3xCamk2a-Cre mice did not show a reduced number of shock zone entries in the probe trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the PBS-treated control, anisomycin-treated mice did not show a reduced number of shock zone entries in the probe trail (n = 4 mice, two way ANOVA, Dunnett's MCT, n.s. = non significant, p=0.51)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral observation from the experiment shown in Figure 3\u2014figure supplement 2 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "93115f96-ca52-4ce5-bddc-48e55f6afd15",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C35",
+      "claim": "Anisomycin-treated mice had significantly more shock zone entries than the PBS control, indicating that anisomycin-treatment blocked spatial LTM formation.",
+      "claim_type": "EXPLICIT",
+      "source": "and had significantly more shock zone entries than the PBS control (two-way ANOVA, Sidak's MCT, **p\u22640.01), indicating that anisomycin-treatment blocked spatial LTM formation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a behavioral observation from the experiment shown in Figure 3\u2014figure supplement 2 with statistical analysis and interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "51555184-91a8-4f5d-aad9-5e91de76db22",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C36",
+      "claim": "7105 unique peptides were identified from ANL-treated trained and non-trained RC3xCamk2a-Cre mice following BONCAT purification using 2D LC MS/MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Using 2D LC MS/MS, 7105 unique peptides were identified from ANL-treated trained and non-trained RC3xCamk2a-Cre mice following BONCAT purification.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the mass spectrometry analysis shown in Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "1a81a8d5-01c4-43fa-a1a5-2198ae172223",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C37",
+      "claim": "119 peptides identified in BONCAT purification from PBS-treated negative control animals were removed to control for background purification.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to control for background purification, we removed 119 peptides which had been identified in BONCAT purification from PBS-treated negative control animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological step described in the analysis shown in Figure 3\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "f99dd238-f245-4933-a426-a1e951f7ebcd",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C38",
+      "claim": "Euclidian cluster analysis revealed that trained RC3xCamk2a-Cre mice cluster separately from their non-trained RC3xCamk2a-Cre pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Euclidian cluster analysis revealed that trained RC3xCamk2a-Cre mice cluster separately from their non-trained RC3xCamk2a-Cre pairs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an analytical result from the heatmap shown in Figure 3\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "456329d5-f1da-41a1-a1f8-efaec4b6fb90",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C39",
+      "claim": "Of the 156 proteins with significantly altered synthesis during spatial LTM formation, 125 (\u224880%) formed a highly interconnected, large network, with a median of four protein-protein interactions per node.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these proteins, 125 (\u224880%) formed a highly interconnected, large network, with a median of four protein-protein interactions per node (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the STRING network analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "02b7d1fd-32ae-434a-ab54-a56417a90130",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C40",
+      "claim": "MCODE clustering algorithm identified five distinct clusters of de novo synthesised proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Molecular Complex Detection (MCODE) clustering algorithm (Bader and Hogue, 2003), we identified five distinct clusters of de novo synthesised proteins (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analytical result from the MCODE analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "bb6501e3-0b86-4959-a9cd-cd3d72a7f57f",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C41",
+      "claim": "The proteins in the five clusters were associated with mRNA splicing, ATP hydrolysis coupled proton transport, vesicle-mediated transport, biogenesis of complex I, and Rho GTPase effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology (GO), KEGG and Reactome analysis revealed that the proteins in these clusters were associated with mRNA splicing, ATP hydrolysis coupled proton transport, vesicle-mediated transport, biogenesis of complex I, and Rho GTPase effectors (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from GO, KEGG and Reactome pathway analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "9ab5558b-87e8-44ad-ac15-92dcd30030e9",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C42",
+      "claim": "BONCAT-WB revealed increased synthesis of \u03b1-adaptin (Ap2a1) in the hippocampal neurons of trained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed increased synthesis of \u03b1-adaptin (Ap2a1), neuron specific enolase (NSE: Eno2), V-ATPase subunit B2 (V-ATPase B2: Atp6v1b2), and the \u03b1 isoform of the structural subunit A of protein phosphatase 2A (PP2A-A: Ppp2r1a), in the hippocampal neurons of trained mice (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result from BONCAT-WB shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "e20accd3-67b1-43a8-84eb-0f052f4fc95a",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C43",
+      "claim": "BONCAT-WB revealed increased synthesis of neuron specific enolase (NSE: Eno2) in the hippocampal neurons of trained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed increased synthesis of \u03b1-adaptin (Ap2a1), neuron specific enolase (NSE: Eno2), V-ATPase subunit B2 (V-ATPase B2: Atp6v1b2), and the \u03b1 isoform of the structural subunit A of protein phosphatase 2A (PP2A-A: Ppp2r1a), in the hippocampal neurons of trained mice (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result from BONCAT-WB shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "a189c4ed-c930-4b86-a157-61b0eea09885",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C44",
+      "claim": "BONCAT-WB revealed increased synthesis of V-ATPase subunit B2 (V-ATPase B2: Atp6v1b2) in the hippocampal neurons of trained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed increased synthesis of \u03b1-adaptin (Ap2a1), neuron specific enolase (NSE: Eno2), V-ATPase subunit B2 (V-ATPase B2: Atp6v1b2), and the \u03b1 isoform of the structural subunit A of protein phosphatase 2A (PP2A-A: Ppp2r1a), in the hippocampal neurons of trained mice (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result from BONCAT-WB shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "a73e4151-d166-4296-810a-455a8d7412b4",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C45",
+      "claim": "BONCAT-WB revealed increased synthesis of the \u03b1 isoform of the structural subunit A of protein phosphatase 2A (PP2A-A: Ppp2r1a) in the hippocampal neurons of trained mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed increased synthesis of \u03b1-adaptin (Ap2a1), neuron specific enolase (NSE: Eno2), V-ATPase subunit B2 (V-ATPase B2: Atp6v1b2), and the \u03b1 isoform of the structural subunit A of protein phosphatase 2A (PP2A-A: Ppp2r1a), in the hippocampal neurons of trained mice (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result from BONCAT-WB shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "638b652f-7ab7-497f-bece-b309651d0f3b",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C46",
+      "claim": "The synthesis of ARE/poly(U)-binding/degradation factor 1 (AUF-1: Hnrnpd) was decreased 16 hr following training.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that the synthesis of ARE/poly(U)-binding/degradation factor 1 (AUF-1: Hnrnpd) was decreased 16 hr following training (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result from BONCAT-WB shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "bdfd2bdd-a6cf-4f81-baca-0b5e16b8c6d9",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C47",
+      "claim": "The synthesis of glyceraldehyde 3-phosphate dehydrogenase (GAPDH) was not altered during spatial LTM formation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from our BONCAT-SWATH-MS analysis, BONCAT-WB revealed that its synthesis was not altered during spatial LTM formation (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result from BONCAT-WB shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "68b44b12-d90d-4f64-b640-b9f1f95e5dc1",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C48",
+      "claim": "\u03b1- and \u03b2-adaptin (Ap2b1) were increased in synthesis during spatial LTM formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples are \u03b1- and \u03b2-adaptin (Ap2b1), which were increased in synthesis during spatial LTM formation (Figure 4 and Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the experimental data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "6c6d208b-c58e-4a49-ac5c-715a43575f2c",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C49",
+      "claim": "\u03b1- and \u03b2-adaptin are subunits of the clathrin adaptor protein 2 (AP2) complex, which regulates synaptic levels of GluR1- and GluR2/GluR3-containing AMPA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These two proteins are subunits of the clathrin adaptor protein 2 (AP2) complex, which regulates synaptic levels of GluR1- and GluR2/GluR3-containing AMPA receptors (Garafalo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "f71a70e3-c774-436b-aef7-8c71de99a671",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C50",
+      "claim": "The AP2 complex process is important in the memory-related processes of long-term potentiation (LTP) and long-term depression (LTD).",
+      "claim_type": "EXPLICIT",
+      "source": "This process is important in the memory-related processes of long-term potentiation (LTP) and long-term depression (LTD) (Barth and Wheeler, 2008; Hardt et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "136ee7d6-933a-46f7-ac01-bfe1eff70faf",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C51",
+      "claim": "Visual recognition memory is disrupted when the interaction between AP2 and the GluR2 subunit is blocked.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as complex rodents behaviours such as visual recognition memory, which is disrupted when the interaction between AP2 and the GluR2 subunit is blocked (Griffiths et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "5e6cb74e-7613-44b3-b6e5-bb7f6830224e",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C52",
+      "claim": "The \u03b1 isoform of PP2A-A was increased in synthesis during the 16 hr following training.",
+      "claim_type": "EXPLICIT",
+      "source": "Both BONCAT-SWATH-MS and BONCAT-WB found that the \u03b1 isoform of PP2A-A was increased in synthesis during the 16 hr following training (Figure 3D and Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the experimental data shown in Figures 3D and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "acc3f469-edaf-4343-8ccb-c10aeb8a1af5",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C53",
+      "claim": "Inhibition of PP2A has been demonstrated to block LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of PP2A has been demonstrated to block LTP (Belmeguenai, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "ed6a0b2b-3fc7-4050-be12-f2884b91a2b9",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C54",
+      "claim": "Hippocampal PP2A knock-out animals present altered extinction of long-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "with hippocampal PP2A knock-out animals presenting altered extinction of long-term memory (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "937a9ef2-ef4a-4e9c-9b25-60672dc3dbfa",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C55",
+      "claim": "During memory and learning, there was increased synthesis of pre-mRNA-processing factor 31 (Prp31) and \u03b2-catenin-like protein 1 (Ctnnbl1), both of which are required for the formation and activation of the spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that during memory and learning, there was increased synthesis of pre-mRNA-processing factor 31 (Prp31) and \u03b2-catenin-like protein 1 (Ctnnbl1), both of which are required for the formation and activation of the spliceosome (Ganesh et al., 2011; Yuan et al., 2005) (Figure 4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the experimental data shown in Figure 4, with citations supporting the functional role.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "647615de-a78c-4e76-8166-f5ba8e84c8d6",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C56",
+      "claim": "The synthesis of the pre-mRNA-splicing factor ATP-dependent RNA helicase DHX15 (DHX15), which is involved in the disassembly of spliceosomes, was decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "while the synthesis of the pre-mRNA-splicing factor ATP-dependent RNA helicase DHX15 (DHX15), which is involved in the disassembly of spliceosomes, was decreased (Wen et al., 2008) (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the experimental data shown in Figure 4, with a citation supporting the functional role.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "35151375-4e3c-430f-ac10-1a1b30f51b6e",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C57",
+      "claim": "Decreased synthesis of serine/arginine-rich splicing factor 6 (SRSF6), which inhibits the splicing of exon 10 of the microtubule associated protein tau, was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We further observed decreased synthesis of serine/arginine-rich splicing factor 6 (SRSF6), which inhibits the splicing of exon 10 of the microtubule associated protein tau (Yin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the experimental data, with a citation supporting the functional role.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "6a417281-f979-481d-9577-5e419251fb62",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C58",
+      "claim": "During spatial LTM formation, there may be an alteration in the activity of spliceosomes, leading to altered splicing of certain mRNAs such as MAPT.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that during spatial LTM formation, there may be an alteration the activity of spliceosomes, leading to altered splicing of certain mRNAs such as MAPT, although further examination will be required to confirm if these molecular process are altered in spatial LTM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "daadff4e-aec8-4d32-b5ab-3d2bc9a02342",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C59",
+      "claim": "The RC3 donor plasmid was obtained by subcloning the NLL-MetRS-EGFP transgene into the ROSA26A-targetting mammalian expression vector Ai2.",
+      "claim_type": "EXPLICIT",
+      "source": "The RC3 donor plasmid was obtained by subcloning the NLL-MetRS-EGFP transgene into the ROSA26A-targetting mammalian expression vector Ai2 (Ai2 was a gift from Hongkui Zeng, Addgene plasmid #22796).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of how the plasmid was generated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "396061c4-6352-42ea-a8d5-e3c991a525c4",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C60",
+      "claim": "The RC3 transgenic mouse strain was generated by CRISPR/CAS9-mediated insertion of the linearized RC3 donor into the ROSA26 locus using a previously published sgRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The RC3 transgenic mouse strain was generated by CRISPR/CAS9-mediated insertion of the linearized RC3 donor into the ROSA26 locus using a previously published sgRNA (Chu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description with a citation to the sgRNA source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "ed0f924a-f1fe-47a5-b81b-362e2eef4f26",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C61",
+      "claim": "A dosage of 100 \u00b5g ANL/gbw and a labelling period of 16 hr resulted in maximal labelling and was used for all further experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "A dosage of 100 \u00b5g Anl/gbw and a labelling period of 16 hr resulted in maximal labelling and was used for all further experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological finding from optimization experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "5a3c6ae1-064b-4137-adde-8a84c6515998",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C62",
+      "claim": "Trained mice received a 0.5 mA shock upon entry into the shock zone, with an entrance shock delay of 0.5 s, and a 1.5 s interval between shocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Trained mice received a 0.5 mA shock upon entry into the shock zone, with an entrance shock delay of 0.5 s, and a 1.5 s interval between shocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the training protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "81a7defd-9195-4e11-b15a-dd7d7c1b262d",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C63",
+      "claim": "In the non-trained group, mice were paired to individual littermates from the trained group, receiving shocks at the same time as the trained mouse, irrespective of the spatial location of the non-trained mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In the non-trained group, mice were paired to individual littermates from the trained group, receiving shocks at the same time as the trained mouse, irrespective of the spatial location of the non-trained mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the control protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "5d56c79c-8c92-41b3-8617-310d63c50d47",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C64",
+      "claim": "Anisomycin was administered at 150 \u03bcg/gwb via subcutaneous injection immediately after training as this has been previously demonstrated to inhibit hippocampal protein synthesis for >9 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In experiments where protein synthesis was inhibited, mice were administered anisomycin (Sigma-Aldrich, A9789) 150 \u03bcg/gwb via subcutaneous injection immediately after training as this has been previously demonstrated to inhibit hippocampal protein synthesis for >9 hr (Wanisch and Wotjak, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description with a citation supporting the effectiveness of the treatment.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "11da48e7-e7b1-46cd-bbe8-6885d3f4cfb0",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C65",
+      "claim": "Using 2D LC MS/MS, peptides identified from PBS-treated negative control were excluded from further analysis to control for background purified proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to control for background purified proteins, BONCAT purification was performed on an RC3xCamk2a-Cre PBS-treated negative control. Peptides identified from this negative control were excluded from further analysis, in addition to peptides identified in previous BONCAT-SWATH-MS negative control experiments (Figure 3\u2014figure supplement 3A, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "410fde9c-55b5-44bb-8bf2-4e3efed428cb",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C66",
+      "claim": "An unadjusted p-value cut off of p\u22640.05 and an absolute fold-change cut off of \u22651.5 were used to identify proteins with significantly altered synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We opted to use an unadjusted p-value cut off of p\u22640.05 and an absolute fold-change cut off of \u22651.5 to identify proteins with significantly altered synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the statistical criteria used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "5f347067-f966-475b-a303-52069d6b3113",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C67",
+      "claim": "Correcting for multiple comparisons greatly reduced the number of significantly altered proteins from 156 to 27, resulting in the exclusion of a number of true positives, such as NSE and AUF-1.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because we observed that correcting for multiple comparisons greatly reduced the number of significantly altered proteins from 156 to 27, resulting in the exclusion of a number of true positives, such as NSE and AUF-1, which were confirmed to be altered in synthesis using BONCAT-WB (Figure 5, Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a justification for the statistical approach based on validation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "2a8bcfb7-88b1-4b7a-924a-267851fe6718",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C68",
+      "claim": "Previous SWATH-MS experiments using spiked lysates have demonstrated that the cut offs used in this study result in estimated quantitative FDRs of <10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous SWATH-MS experiments using spiked lysates have demonstrated that the cut offs used in our study result in estimated quantitative FDRs of <10% (Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research validating the statistical approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "b0854a5c-e7ac-47d6-8f30-6432994da2a8",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C69",
+      "claim": "A confidence of interaction score cut-off of 0.4 was used for STRING network analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A confidence of interaction score cut-off of 0.4 was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description of the network analysis parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "a4aaaff8-1801-4092-9259-6efd32d135a5",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C70",
+      "claim": "The RAW mass spectrometry proteomics data used in this study has been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD015820.",
+      "claim_type": "EXPLICIT",
+      "source": "The RAW mass spectrometry proteomics data used in this study has been deposited to the ProteomeXchange Consortium via the PRIDE partner repository (Perez-Riverol et al., 2019) with the dataset identifier PXD015820.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "f6da25e3-06a4-48ee-8b7e-405b08d7d016",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C71",
+      "claim": "NCAAs can be administered for a given period, during which they are integrated into the nascent polypeptide chain.",
+      "claim_type": "EXPLICIT",
+      "source": "In this technique, NCAAs can be administered for a given period, during which they are integrated into the nascent polypeptide chain (Figure 1A) (Hinz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the NCAA labelling technique with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "fa266935-7cd9-4dd7-8594-b93f22e305ed",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C72",
+      "claim": "NCAA incorporation enables newly synthesised proteins to be visualised using fluorescent non-canonical amino acid tagging (FUNCAT), or to be purified using bio-orthogonal non-canonical amino acid tagging (BONCAT).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike most other de novo protein tagging techniques, NCAA incorporation enables newly synthesised proteins to be visualised using fluorescent non-canonical amino acid tagging (FUNCAT), or to be purified using bio-orthogonal non-canonical amino acid tagging (BONCAT) (Figure 1B) (Hinz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the NCAA labelling technique with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "a40a258c-e394-42f3-86bd-7164c827dd10",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C73",
+      "claim": "The azide group of the NCAA reacts with a dibenzocyclooctyne (DIBO)-bearing tag using strain-promoted azide-alkyne cycloaddition.",
+      "claim_type": "EXPLICIT",
+      "source": "This is achieved by reacting the azide group of the NCAA with a dibenzocyclooctyne (DIBO)-bearing tag, using strain-promoted azide-alkyne cycloaddition (Figure 1B) (Beatty et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the chemical reaction with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "18d18e84-d0e8-4c12-b40a-53877258c81c",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C74",
+      "claim": "AHA labelling uses the endogenous translational machinery to tag newly synthesised proteins with AHA.",
+      "claim_type": "EXPLICIT",
+      "source": "In AHA labelling, the endogenous translational machinery is used to tag newly synthesised proteins with AHA (Figure 1A) (Dieterich et al., 2006; Hinz et al., 2013; Ullrich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of AHA labelling with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "65ef73b8-902a-40d4-953e-3643361351c7",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C75",
+      "claim": "ANL is not recognized by the eukaryotic methionine tRNA synthetase and therefore does not natively integrate into de novo synthesised proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "ANL, on the other hand, allows for cell-type-specific NCAA labelling, as it is not recognized by the eukaryotic methionine tRNA synthetase and therefore does not natively integrate into de novo synthesised proteins (Link et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of ANL properties with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "2545d673-2d9f-4138-854c-de9bafd58a7c",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C76",
+      "claim": "ANL requires the presence of a mutant tRNA synthetase, such as NLL-MetRS, for its incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "ANL instead requires the presence of a mutant tRNA synthetase, such as NLL-MetRS, for its incorporation (Figure 2A) (Ngo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of ANL incorporation requirements with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "35062ba2-4b48-47a1-9205-e328fe82c9f5",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C77",
+      "claim": "Both AHA and ANL labelling have been used in a wide range of cell-types, tissues and organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Both AHA and ANL labelling have been used in a wide range of cell-types, tissues and organisms (Alvarez-Castelao et al., 2019; Alvarez-Castelao et al., 2017; Erdmann et al., 2015; Liang et al., 2014; Lopez et al., 2015; McClatchy et al., 2015; Ullrich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "231f20dc-4c95-4523-ab33-0d067808a7e7",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C78",
+      "claim": "The Camk2a-Cre T29-1Stl/J mouse strain originally expressed Cre-recombinase only in the CA1 pyramidal neurons of the hippocampus and the testes.",
+      "claim_type": "EXPLICIT",
+      "source": "When originally generated, this mouse strain expressed Cre-recombinase only in the CA1 pyramidal neurons of the hippocampus and the testes (Tsien et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the original characterization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "99048af5-fe86-44da-82f9-a584f054bf3f",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C79",
+      "claim": "More recent analyses revealed Cre expression in other regions of the hippocampus beyond CA1, possibly reflecting a genetic drift.",
+      "claim_type": "EXPLICIT",
+      "source": "however, more recent analyses revealed expression in other regions of the hippocampus (Alvarez-Castelao et al., 2017; McGill et al., 2017), possibly reflecting a genetic drift.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to more recent characterizations, with speculation about genetic drift.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "a65acc37-2a4f-4bed-827a-b97767a071ab",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C80",
+      "claim": "MetRS-L247G labels proteins with ANL at both their amino-terminus and internal methionine residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike NLL-MetRS, which is considered to label proteins with ANL only at their amino-terminus (Ngo et al., 2013), MetRS-L247G also replaces internal methionine residues with ANL (M\u00fcller et al., 2015; Yang et al., 2018)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations comparing the two mutant synthetases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "cd67a506-4951-45d0-b556-61a95c458cbf",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C81",
+      "claim": "MetRS-L247G likely results in a wider range of protein labelling compared to NLL-MetRS.",
+      "claim_type": "EXPLICIT",
+      "source": "which likely results in a wider range of protein labelling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the different labeling properties of the two synthetases.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "48697447-008c-433a-906d-471668630e06",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C82",
+      "claim": "The vast majority of the 156 significantly altered proteins interact with at least one other significantly altered protein, forming a large, highly interconnected network.",
+      "claim_type": "EXPLICIT",
+      "source": "STRING analysis of the 156 significantly altered proteins revealed that the vast majority of these proteins interact with a least one other significantly altered protein, forming a large, highly interconnected network (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the STRING network analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "3fd15e63-1de2-4ebc-b197-a6d0a9cba04c",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C83",
+      "claim": "The high degree of interconnection suggests that spatial LTM formation induces changes not only in the synthesis of specific proteins but also pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This high degree of interconnection would suggest that, as expected, spatial LTM formation induces changes not only in the synthesis of specific proteins but also pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the network analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "02d4dec7-e54f-4c03-a22c-af688bf2104c",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C84",
+      "claim": "Spatial LTM memory formation causes neurons to selectively modulate certain pathways and molecular processes rather than simply inducing the synthesis of memory-related proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This would suggest that rather than simply inducing the synthesis of memory-related proteins, spatial LTM memory formation causes neurons to selectively modulate certain pathways and molecular processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the observation of both increased and decreased protein synthesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "dcba4dad-9671-4ed0-849a-12d85de894e8",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C85",
+      "claim": "NCAAs have typically been delivered to mice through diet, with labelling periods ranging from 6 to 21 days.",
+      "claim_type": "EXPLICIT",
+      "source": "NCAAs, such as AHA and ANL, have typically been delivered to mice through diet, with labelling periods ranging from 6 to 21 days (Alvarez-Castelao et al., 2017; McClatchy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research describing typical delivery methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "7f9971cf-4893-4393-bc85-b7c18ad45c30",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C86",
+      "claim": "Spatial LTM consolidation is dependent on multiple temporally spaced phases of protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial LTM consolidation is dependent on multiple temporally spaced phases of protein synthesis (Fioriti et al., 2015; Meiri and Rosenblum, 1998; Ozawa et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "9551dd7c-b9c9-46f0-b554-a93dd44dc1ba",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C87",
+      "claim": "The first 24 hr following training is the most sensitive period to the inhibition of protein synthesis for spatial LTM formation.",
+      "claim_type": "EXPLICIT",
+      "source": "with the first 24 hr following training being the most sensitive to the inhibition of protein synthesis (Freeman et al., 1995; Quevedo et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "884b1b39-b139-44ee-9bc5-db7007388a67",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C88",
+      "claim": "The neuronal proteome is believed to consist of around 6000 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the neuronal proteome is believed to consist of around 6000 proteins (Schanzenb\u00e4cher et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "bccefd0b-8d10-4ac0-8b6e-a2257316f02d",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C89",
+      "claim": "More invasive delivery techniques such as cranially implanted osmotic pumps may be required to achieve a deeper degree of labelling than observed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "more invasive delivery techniques such as cranially implanted osmotic pumps may be required to achieve a deeper degree of labelling than observed in either study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future methodological improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "ff635279-9713-48bd-9d06-2ccfdff379a6",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C90",
+      "claim": "The 30 min APA task is an accelerated version of the five-day APA paradigm, which relies upon a singular training event.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate protein synthesis specifically during spatial LTM formation, we established an accelerated version of the five-day APA paradigm, which relies upon a singular training event (Figure 1C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the behavioral paradigm developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "aa27462c-a1c0-4952-b71f-d36e302c7d6a",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C91",
+      "claim": "The 30 min APA task makes it easier to capture the time-period during which spatial LTM formation occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "making it easier to capture the time-period during which spatial LTM formation occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated advantage of the accelerated paradigm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "48917985-dd5b-42bb-93db-150696058cab",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C92",
+      "claim": "Two defining characteristics of long-term memory are the ability to persist for long periods of time and the requirement of new protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that this 30 min APA task induces spatial LTM by examining two defining characteristics of long-term memory; the ability to persist for long periods of time and the requirement of new protein synthesis (Figure 3\u2014figure supplement 1, Figure 3\u2014figure supplement 2) (Costa-Mattioli et al., 2009; Rosenberg et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research defining LTM characteristics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "caca61fe-43d0-427f-8450-603e75aaaca2",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C93",
+      "claim": "Mice exposed to novel environments and stimuli could potentially experience increased levels of stress while undertaking behavioural tasks, which may alter protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice that are exposed to a novel environments and stimuli could potentially experience increased levels of stress while undertaking behavioural tasks, which may alter protein synthesis (Chandran et al., 2013; Moncada and Viola, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research on stress effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "05781c0c-9e0e-42df-9d65-f44d7f39a0fe",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C94",
+      "claim": "The observed changes in protein synthesis between trained and non-trained mice were likely induced by spatial LTM formation, rather than confounding factors including training and stress.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that the observed changes in protein synthesis between trained and non-trained mice were likely induced by spatial LTM formation, rather than confounding factors including training and stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the control experiments showing similar stress levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "8813f555-a9f4-40b2-95d8-dff5dfbcf62b",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C95",
+      "claim": "Protein synthesis in the hippocampus plays a critical role in spatial LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis we focused on the hippocampus, as protein synthesis in this region plays a critical role in spatial LTM (Burgess et al., 2002; Jarome and Helmstetter, 2014; Kleinknecht et al., 2012; Merlo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "30f0e93c-8238-4ce6-8244-9198f974d755",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C96",
+      "claim": "This study represents the first use of NCAA labelling to examine spatial LTM formation in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To the best of our knowledge, the current study represents the first use of NCAA labelling to examine spatial LTM formation in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the approach based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "205b03f1-8f7a-42a8-bf43-fa8a44bb46b1",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C97",
+      "claim": "The majority of changes to the hippocampal de novo proteome are thought to occur within the first 24 hr following training.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the majority of changes to the hippocampal de novo proteome are thought to occur within this time frame",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the timing of memory consolidation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "2d1314bb-55c1-4138-b6f9-04b768250e03",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C98",
+      "claim": "Shorter labelling periods provide increased temporal specificity, with a higher proportion of tagged proteins being synthesised only in response to the behavioural paradigm studied.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional advantage of labelling for this shorter period is the increased temporal specificity, with a higher proportion of tagged proteins being synthesised only in response to the behavioural paradigm studied, compared to those that would be synthesised after a longer period of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the advantages of shorter labeling periods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "92e31452-5f85-4268-abfe-6c44c6682579",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "claim_id": "C99",
+      "claim": "Using ANL labelling in combination with SWATH-MS, a similar degree of proteome coverage was obtained to the only other study that has used ANL labelling in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ANL labelling in combination with SWATH-MS, we obtained a similar degree of proteome coverage to the only other study we are aware of that has used ANL labelling in mice (Alvarez-Castelao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior research with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d374b6fb-2c79-461f-b495-faa1ebcbdea8",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A novel RC3 transgenic mouse strain was generated that enables Cre-dependent, cell-type-specific labeling of newly synthesized proteins with ANL. When crossed with Camk2a-Cre mice, NLL-MetRS-EGFP expression and ANL incorporation were restricted to hippocampal neurons in CA1, CA2, CA3, and dentate gyrus regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C21-C24, C59-C60 collectively demonstrate successful generation and validation of the RC3 mouse strain. The genetic construct design (C21-C22, C59-C60), immunohistochemical confirmation of Cre-specific expression (C23), and FUNCAT validation of restricted ANL labeling (C24) provide converging evidence for cell-type-specific protein labeling in hippocampal neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "f6dc581c-b8cb-43cc-a6b3-0652ca045c4d",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "An accelerated 30-minute active place avoidance (APA) paradigm was developed that induces spatial long-term memory formation. Mice learned to avoid a shock zone during training and retained this memory 24 hours later in a probe trial without shocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 provide behavioral data with appropriate statistical analysis (n=6, one-way ANOVA, p\u22640.05) showing both learning during training and memory retention at 24 hours. Claims C90-C91 describe the rationale for this accelerated paradigm. The behavioral results meet established criteria for spatial LTM formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "9d61a83f-4591-4933-aa23-e5e8e9816720",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AHA and ANL treatment do not interfere with spatial long-term memory formation. Mice treated with either NCAA or PBS controls showed equivalent memory performance in probe trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 and C32-C33 demonstrate that NCAA administration does not impair memory formation, with appropriate statistical comparisons (two-way ANOVA, p=0.85 and p=0.99). This is a critical control validating that the labeling technique itself does not confound the biological process being studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "9ff71662-06b0-44b9-b7d5-02479d61ea61",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The yoked control design effectively controls for stress and shock exposure. Trained and non-trained mice showed similar plasma corticosterone levels, indicating equivalent stress responses despite different behavioral outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 provide corticosterone measurements (n=3, one-way ANOVA, p=0.78) demonstrating no significant difference between trained and non-trained groups. Claims C63, C93-C94 describe the yoked control design and its rationale. This validates that observed proteomic differences are due to spatial learning rather than stress or shock exposure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "72f646a4-191a-4665-9b92-30f8496ab624",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Anisomycin treatment blocks spatial LTM formation in the 30-minute APA paradigm. Anisomycin-treated mice showed significantly more shock zone entries than PBS controls in probe trials, confirming protein synthesis dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 provide behavioral data (n=4, two-way ANOVA, p\u22640.01) showing that anisomycin prevents memory formation. Claim C64 describes the dosing protocol with citation support for its effectiveness. This validates that the 30-min APA paradigm produces protein synthesis-dependent LTM consistent with established memory consolidation principles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "1b0a4621-f2a4-460a-a99a-116ada00dbe8",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Total protein synthesis is significantly increased in hippocampal neurons during spatial LTM formation, as measured by FUNCAT in both wild-type and RC3xCamk2a-Cre mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C28 provide FUNCAT quantification with appropriate statistics (paired t-test, p\u22640.05) in both AHA-labeled wild-type mice (n=4, 3 sections/mouse) and ANL-labeled RC3xCamk2a-Cre mice (n=4, 30 neurons/mouse). The replication across two labeling systems strengthens the finding of increased hippocampal protein synthesis during memory formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "761b6880-3361-4fb8-8069-8c2f848fe1b3",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Optimal ANL labeling in RC3xCamk2a-Cre mice is achieved with 100 \u00b5g ANL/gbw administered via i.p. injection with a 16-hour labeling period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 provide BONCAT-WB optimization data (n=3, one-way ANOVA) demonstrating maximal labeling at 100 \u00b5g/gbw and 16 hours post-injection. Claim C61 confirms these parameters were used for all subsequent experiments. This methodological optimization is well-supported by dose-response and time-course data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "7efb4120-ebe0-40b8-985c-9f66d6e2ae7e",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "BONCAT-SWATH-MS identified 1782 proteins in hippocampal neurons, of which 156 showed significantly altered synthesis during spatial LTM formation (88 increased, 68 decreased). Trained mice clustered separately from non-trained controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C29-C31 report the primary proteomic findings with clear quantification. Claims C36-C37 describe background subtraction controls (119 peptides removed). Claim C38 provides clustering analysis showing separation of experimental groups. The methodology includes appropriate controls and the sample size (n=4 per group) is adequate for discovery proteomics, though the use of unadjusted p-values (discussed in C66-C67) is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "0fcfccad-22f0-4ac1-856c-4ed1b0c536c5",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Statistical analysis used unadjusted p-values (p\u22640.05) with fold-change cutoff (\u22651.5) rather than multiple comparison correction, justified by validation experiments and estimated FDR <10%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C68 describe the statistical approach and its justification. While C67 shows that validated proteins (NSE, AUF-1) would be excluded with correction, and C68 cites prior work estimating <10% FDR, the decision to use unadjusted p-values in discovery proteomics with n=4 per group is debatable. The validation of select proteins (C42-C47) partially supports this approach, but the false discovery rate for the full 156-protein list remains uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "f301670e-7fdf-4624-99b3-2d3a510a2c9a",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "STRING network analysis revealed that 125 of 156 proteins (\u224880%) form a highly interconnected network with median of 4 interactions per node. MCODE identified 5 clusters associated with mRNA splicing, ATP hydrolysis-coupled proton transport, vesicle-mediated transport, complex I biogenesis, and Rho GTPase effectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C82-C83 describe network analysis results with appropriate methodology (STRING score \u22650.4, MCODE clustering, GO/KEGG/Reactome enrichment). The high degree of interconnection (80% of proteins in network) and identification of functionally coherent clusters support the biological relevance of the findings, though network analysis inherently favors well-studied proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "98dd0bb9-54b5-4b08-9e35-9b58189ac19f",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "BONCAT-WB validation confirmed increased synthesis of \u03b1-adaptin, NSE, V-ATPase B2, and PP2A-A, decreased synthesis of AUF-1, and unchanged synthesis of GAPDH in trained versus non-trained mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 provide independent validation of SWATH-MS findings using BONCAT-WB (n=4, paired t-test). The validation includes proteins with increased synthesis, decreased synthesis, and an unchanged control (GAPDH, p=0.48), demonstrating specificity. This orthogonal validation strengthens confidence in the proteomic dataset, though only 6 of 156 proteins were validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "a564aa06-3b45-4edc-9b8e-162614998250",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Increased synthesis of \u03b1- and \u03b2-adaptin (AP2 complex subunits) was observed during spatial LTM formation. These proteins regulate AMPA receptor trafficking, a process important for LTP, LTD, and visual recognition memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C48 report the experimental finding of increased adaptin synthesis. Claims C49-C51 provide literature context with appropriate citations linking AP2 to glutamate receptor recycling and memory processes. The connection between the experimental observation and known memory mechanisms is well-supported, though the functional significance in this specific paradigm requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "ce6c0f6c-0bea-4c57-ba24-47d4dda949fd",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The \u03b1 isoform of PP2A-A showed increased synthesis during spatial LTM formation. PP2A inhibition blocks LTP and hippocampal PP2A knockout alters memory extinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 reports the experimental finding confirmed by both SWATH-MS and BONCAT-WB. Claims C53-C54 provide literature support with appropriate citations linking PP2A to LTP and memory processes. The observation of increased PP2A-A synthesis is consistent with its known role in memory, though the specific functional contribution requires further study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "141d144a-fc0e-4c7f-a72c-f5680543999e",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Altered synthesis of mRNA splicing-related proteins (increased Prp31 and Ctnnbl1, decreased DHX15 and SRSF6) suggests potential changes in spliceosome activity during spatial LTM formation, possibly affecting splicing of mRNAs such as MAPT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C57 report experimental observations of altered synthesis of splicing factors with appropriate citations for their functions. However, C58 explicitly states this is speculative and requires further examination. While the proteomic data are sound, the functional interpretation regarding altered spliceosome activity and MAPT splicing is hypothetical and lacks direct experimental support in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "dc252ba2-3c80-4533-8b0c-e9c5154fb3f8",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Spatial LTM formation causes neurons to selectively modulate pathways and molecular processes rather than simply inducing synthesis of memory-related proteins, as evidenced by similar numbers of proteins with increased and decreased synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 provides an interpretation of the observation that 88 proteins increased while 68 decreased in synthesis (C30-C31), despite overall increased protein synthesis (C15, C28). This bidirectional regulation supports selective pathway modulation rather than global upregulation. The interpretation is reasonable given the data, though the specific mechanisms of selective regulation are not elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "fa1b68c7-b912-4b31-abc5-1faf14789917",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "RC3xCamk2a-Cre mice successfully learned the 30-minute APA task, showing reduced shock zone entries over the training period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 provides behavioral data (n=4, one-way ANOVA, p\u22640.01) demonstrating that the transgenic mice perform normally in the spatial learning task. This is an important validation that the genetic modification and ANL labeling system do not impair the behavior being studied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "ac6f2269-6aa1-4e23-9dfd-cce6d861a0df",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "This study represents the first use of NCAA labeling to examine spatial LTM formation in mice, achieving proteome coverage similar to the only other study using ANL labeling in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96 and C99 assert novelty and compare coverage to prior work (Alvarez-Castelao et al., 2017). While the specific application to spatial LTM is novel, the claim is based on the authors' knowledge of the literature. The comparison of proteome coverage provides context for the technical achievement, though deeper coverage may be possible with alternative delivery methods (C89).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "4af3cc2c-72a8-4cd6-a676-43cfd931edbe",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The 16-hour ANL labeling period via i.p. injection provides improved temporal specificity compared to typical dietary delivery (6-21 days), capturing the critical first 24 hours when hippocampal protein synthesis changes are most sensitive for spatial LTM formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 provide literature context for typical NCAA delivery and the timing of memory consolidation. Claims C97-C98 explain the rationale for the shorter labeling period. The approach is well-justified by prior research on memory consolidation timing, though the trade-off is potentially reduced proteome coverage compared to longer labeling periods.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "db52ebed-5df5-4f91-9bff-245530b8f720",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background knowledge claims establish that spatial LTM formation requires de novo protein synthesis in the hippocampus, particularly within the first 24 hours, and that protein synthesis inhibition prevents spatial LTM formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C9, C92, and C95 provide foundational knowledge supported by multiple literature citations. These establish the scientific context and rationale for the study. The claims accurately represent established findings in the memory field and are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Technical background on NCAA labeling methodology: AHA is recognized by endogenous MetRS and labels proteins at methionine residues; ANL requires mutant NLL-MetRS for incorporation; both enable FUNCAT visualization and BONCAT purification via click chemistry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C20, C71-C77 describe the NCAA labeling methodology with appropriate citations. These technical descriptions accurately represent established click chemistry and NCAA labeling techniques. The information provides necessary methodological context and is well-supported by prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "c4916915-81f2-4004-8cce-2a1a0bf698e7",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The Camk2a-Cre T29-1Stl/J strain originally expressed Cre only in CA1 and testes, but more recent analyses show broader hippocampal expression, possibly due to genetic drift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 accurately describe the evolution of Cre expression pattern in this mouse line, supported by citations to both original and recent characterizations. The speculation about genetic drift (C79) is appropriately qualified. This information is important for interpreting the broader hippocampal labeling observed (C23).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "9d4b61bd-385f-497a-b107-370e8091baf9",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "MetRS-L247G labels proteins at both amino-terminus and internal methionine residues, likely resulting in wider protein labeling range compared to NLL-MetRS which labels primarily at the amino-terminus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 describes the difference between mutant synthetases with appropriate citations. Claim C81 provides a reasonable inference about labeling breadth. This comparison provides context for the choice of NLL-MetRS in the RC3 strain and potential future improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "d2852b70-eaf7-4168-8a2b-84fff450d7b4",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Methodological details: trained mice received 0.5 mA shocks with specific timing parameters; background peptides were subtracted from analysis; STRING analysis used 0.4 confidence cutoff; data were deposited in PRIDE (PXD015820).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C65, C69-C70 provide essential methodological details for reproducibility. The behavioral parameters, data processing steps, analysis parameters, and data availability statement are clearly described. These are standard practices that support the rigor and reproducibility of the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    },
+    {
+      "id": "27c6fca2-6624-4e18-9028-ec0dd05775ca",
+      "content_id": "3c1c6d29-d5df-471c-8218-624e3b58c2e9",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The neuronal proteome consists of approximately 6000 proteins; more invasive delivery techniques may be required to achieve deeper proteome coverage than observed in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 provides context from prior literature (citation provided) about proteome size. Claim C89 offers a reasonable speculation about future technical improvements. Together these acknowledge the limitation that ~1782 proteins represents partial coverage of the neuronal proteome and suggest potential solutions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T14:20:04.356337Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cdc2ef1f-7372-4719-b2aa-75294c9cf687",
+      "result_id": "d374b6fb-2c79-461f-b495-faa1ebcbdea8"
+    },
+    {
+      "claim_id": "fd2930dd-0bd1-4321-b8be-ad5f34696215",
+      "result_id": "d374b6fb-2c79-461f-b495-faa1ebcbdea8"
+    },
+    {
+      "claim_id": "4d726316-b1a8-42e1-9b04-ccf4c55c7c11",
+      "result_id": "d374b6fb-2c79-461f-b495-faa1ebcbdea8"
+    },
+    {
+      "claim_id": "ddf869f2-2615-4e4a-b402-fdfd278d5d3d",
+      "result_id": "d374b6fb-2c79-461f-b495-faa1ebcbdea8"
+    },
+    {
+      "claim_id": "7ef27e1c-a74b-40cc-8a68-2790f008ccc9",
+      "result_id": "d374b6fb-2c79-461f-b495-faa1ebcbdea8"
+    },
+    {
+      "claim_id": "daadff4e-aec8-4d32-b5ab-3d2bc9a02342",
+      "result_id": "d374b6fb-2c79-461f-b495-faa1ebcbdea8"
+    },
+    {
+      "claim_id": "396061c4-6352-42ea-a8d5-e3c991a525c4",
+      "result_id": "d374b6fb-2c79-461f-b495-faa1ebcbdea8"
+    },
+    {
+      "claim_id": "5aac5cab-b2df-4619-9c6b-15c4f46f4d47",
+      "result_id": "f6dc581c-b8cb-43cc-a6b3-0652ca045c4d"
+    },
+    {
+      "claim_id": "1bf210d1-7571-45f2-a068-dfca550d6da8",
+      "result_id": "f6dc581c-b8cb-43cc-a6b3-0652ca045c4d"
+    },
+    {
+      "claim_id": "94945560-83e4-4e78-ac36-f1b0d682dffe",
+      "result_id": "f6dc581c-b8cb-43cc-a6b3-0652ca045c4d"
+    },
+    {
+      "claim_id": "ff635279-9713-48bd-9d06-2ccfdff379a6",
+      "result_id": "f6dc581c-b8cb-43cc-a6b3-0652ca045c4d"
+    },
+    {
+      "claim_id": "aa27462c-a1c0-4952-b71f-d36e302c7d6a",
+      "result_id": "f6dc581c-b8cb-43cc-a6b3-0652ca045c4d"
+    },
+    {
+      "claim_id": "c1b11369-0730-43ba-be12-e3771c6602a6",
+      "result_id": "9d61a83f-4591-4933-aa23-e5e8e9816720"
+    },
+    {
+      "claim_id": "931237b6-61d2-484a-9bec-d5dec7a16901",
+      "result_id": "9d61a83f-4591-4933-aa23-e5e8e9816720"
+    },
+    {
+      "claim_id": "adc9bc83-c47b-480b-aa72-3c04168b2a63",
+      "result_id": "9d61a83f-4591-4933-aa23-e5e8e9816720"
+    },
+    {
+      "claim_id": "b9f713fa-f5b1-4d14-a85c-d988fbb36415",
+      "result_id": "9d61a83f-4591-4933-aa23-e5e8e9816720"
+    },
+    {
+      "claim_id": "b522bd27-4024-4232-b438-00af9a8b314c",
+      "result_id": "9ff71662-06b0-44b9-b7d5-02479d61ea61"
+    },
+    {
+      "claim_id": "a1df5b26-939c-43f2-b856-5b2d980c9aa4",
+      "result_id": "9ff71662-06b0-44b9-b7d5-02479d61ea61"
+    },
+    {
+      "claim_id": "81a7defd-9195-4e11-b15a-dd7d7c1b262d",
+      "result_id": "9ff71662-06b0-44b9-b7d5-02479d61ea61"
+    },
+    {
+      "claim_id": "caca61fe-43d0-427f-8450-603e75aaaca2",
+      "result_id": "9ff71662-06b0-44b9-b7d5-02479d61ea61"
+    },
+    {
+      "claim_id": "05781c0c-9e0e-42df-9d65-f44d7f39a0fe",
+      "result_id": "9ff71662-06b0-44b9-b7d5-02479d61ea61"
+    },
+    {
+      "claim_id": "9da6e4c3-414a-4fb1-b164-1fd07c0e92ba",
+      "result_id": "72f646a4-191a-4665-9b92-30f8496ab624"
+    },
+    {
+      "claim_id": "93115f96-ca52-4ce5-bddc-48e55f6afd15",
+      "result_id": "72f646a4-191a-4665-9b92-30f8496ab624"
+    },
+    {
+      "claim_id": "5d56c79c-8c92-41b3-8617-310d63c50d47",
+      "result_id": "72f646a4-191a-4665-9b92-30f8496ab624"
+    },
+    {
+      "claim_id": "c98c552c-3893-4463-87cf-2c8b02437d75",
+      "result_id": "1b0a4621-f2a4-460a-a99a-116ada00dbe8"
+    },
+    {
+      "claim_id": "2d41b335-d55d-468a-9473-46bc29461100",
+      "result_id": "1b0a4621-f2a4-460a-a99a-116ada00dbe8"
+    },
+    {
+      "claim_id": "f07ed37a-54a8-4ac7-b681-3a05b59f31b7",
+      "result_id": "761b6880-3361-4fb8-8069-8c2f848fe1b3"
+    },
+    {
+      "claim_id": "2c76dd40-bc68-4e53-8643-823cf4130756",
+      "result_id": "761b6880-3361-4fb8-8069-8c2f848fe1b3"
+    },
+    {
+      "claim_id": "ed0f924a-f1fe-47a5-b81b-362e2eef4f26",
+      "result_id": "761b6880-3361-4fb8-8069-8c2f848fe1b3"
+    },
+    {
+      "claim_id": "a861c5a8-6a02-4ab4-8c4c-234d45f55ad0",
+      "result_id": "7efb4120-ebe0-40b8-985c-9f66d6e2ae7e"
+    },
+    {
+      "claim_id": "226681ef-3efd-442d-a284-48e4b70e4f93",
+      "result_id": "7efb4120-ebe0-40b8-985c-9f66d6e2ae7e"
+    },
+    {
+      "claim_id": "2c3227d0-3697-4344-abc9-5d765fae2972",
+      "result_id": "7efb4120-ebe0-40b8-985c-9f66d6e2ae7e"
+    },
+    {
+      "claim_id": "b45747f4-5501-4f31-9aa3-30f32a052ae7",
+      "result_id": "7efb4120-ebe0-40b8-985c-9f66d6e2ae7e"
+    },
+    {
+      "claim_id": "51555184-91a8-4f5d-aad9-5e91de76db22",
+      "result_id": "7efb4120-ebe0-40b8-985c-9f66d6e2ae7e"
+    },
+    {
+      "claim_id": "1a81a8d5-01c4-43fa-a1a5-2198ae172223",
+      "result_id": "7efb4120-ebe0-40b8-985c-9f66d6e2ae7e"
+    },
+    {
+      "claim_id": "f99dd238-f245-4933-a426-a1e951f7ebcd",
+      "result_id": "7efb4120-ebe0-40b8-985c-9f66d6e2ae7e"
+    },
+    {
+      "claim_id": "410fde9c-55b5-44bb-8bf2-4e3efed428cb",
+      "result_id": "0fcfccad-22f0-4ac1-856c-4ed1b0c536c5"
+    },
+    {
+      "claim_id": "5f347067-f966-475b-a303-52069d6b3113",
+      "result_id": "0fcfccad-22f0-4ac1-856c-4ed1b0c536c5"
+    },
+    {
+      "claim_id": "2a8bcfb7-88b1-4b7a-924a-267851fe6718",
+      "result_id": "0fcfccad-22f0-4ac1-856c-4ed1b0c536c5"
+    },
+    {
+      "claim_id": "456329d5-f1da-41a1-a1f8-efaec4b6fb90",
+      "result_id": "f301670e-7fdf-4624-99b3-2d3a510a2c9a"
+    },
+    {
+      "claim_id": "02b7d1fd-32ae-434a-ab54-a56417a90130",
+      "result_id": "f301670e-7fdf-4624-99b3-2d3a510a2c9a"
+    },
+    {
+      "claim_id": "bb6501e3-0b86-4959-a9cd-cd3d72a7f57f",
+      "result_id": "f301670e-7fdf-4624-99b3-2d3a510a2c9a"
+    },
+    {
+      "claim_id": "48697447-008c-433a-906d-471668630e06",
+      "result_id": "f301670e-7fdf-4624-99b3-2d3a510a2c9a"
+    },
+    {
+      "claim_id": "3fd15e63-1de2-4ebc-b197-a6d0a9cba04c",
+      "result_id": "f301670e-7fdf-4624-99b3-2d3a510a2c9a"
+    },
+    {
+      "claim_id": "9ab5558b-87e8-44ad-ac15-92dcd30030e9",
+      "result_id": "98dd0bb9-54b5-4b08-9e35-9b58189ac19f"
+    },
+    {
+      "claim_id": "e20accd3-67b1-43a8-84eb-0f052f4fc95a",
+      "result_id": "98dd0bb9-54b5-4b08-9e35-9b58189ac19f"
+    },
+    {
+      "claim_id": "a189c4ed-c930-4b86-a157-61b0eea09885",
+      "result_id": "98dd0bb9-54b5-4b08-9e35-9b58189ac19f"
+    },
+    {
+      "claim_id": "a73e4151-d166-4296-810a-455a8d7412b4",
+      "result_id": "98dd0bb9-54b5-4b08-9e35-9b58189ac19f"
+    },
+    {
+      "claim_id": "638b652f-7ab7-497f-bece-b309651d0f3b",
+      "result_id": "98dd0bb9-54b5-4b08-9e35-9b58189ac19f"
+    },
+    {
+      "claim_id": "bdfd2bdd-a6cf-4f81-baca-0b5e16b8c6d9",
+      "result_id": "98dd0bb9-54b5-4b08-9e35-9b58189ac19f"
+    },
+    {
+      "claim_id": "b711c6e6-f809-4177-8ee3-b4c66a7df49f",
+      "result_id": "a564aa06-3b45-4edc-9b8e-162614998250"
+    },
+    {
+      "claim_id": "68b44b12-d90d-4f64-b640-b9f1f95e5dc1",
+      "result_id": "a564aa06-3b45-4edc-9b8e-162614998250"
+    },
+    {
+      "claim_id": "6c6d208b-c58e-4a49-ac5c-715a43575f2c",
+      "result_id": "a564aa06-3b45-4edc-9b8e-162614998250"
+    },
+    {
+      "claim_id": "f71a70e3-c774-436b-aef7-8c71de99a671",
+      "result_id": "a564aa06-3b45-4edc-9b8e-162614998250"
+    },
+    {
+      "claim_id": "136ee7d6-933a-46f7-ac01-bfe1eff70faf",
+      "result_id": "a564aa06-3b45-4edc-9b8e-162614998250"
+    },
+    {
+      "claim_id": "5e6cb74e-7613-44b3-b6e5-bb7f6830224e",
+      "result_id": "ce6c0f6c-0bea-4c57-ba24-47d4dda949fd"
+    },
+    {
+      "claim_id": "acc3f469-edaf-4343-8ccb-c10aeb8a1af5",
+      "result_id": "ce6c0f6c-0bea-4c57-ba24-47d4dda949fd"
+    },
+    {
+      "claim_id": "ed6a0b2b-3fc7-4050-be12-f2884b91a2b9",
+      "result_id": "ce6c0f6c-0bea-4c57-ba24-47d4dda949fd"
+    },
+    {
+      "claim_id": "7c10a0e7-a1c4-470c-9519-1ba02992cb18",
+      "result_id": "141d144a-fc0e-4c7f-a72c-f5680543999e"
+    },
+    {
+      "claim_id": "937a9ef2-ef4a-4e9c-9b25-60672dc3dbfa",
+      "result_id": "141d144a-fc0e-4c7f-a72c-f5680543999e"
+    },
+    {
+      "claim_id": "647615de-a78c-4e76-8166-f5ba8e84c8d6",
+      "result_id": "141d144a-fc0e-4c7f-a72c-f5680543999e"
+    },
+    {
+      "claim_id": "35151375-4e3c-430f-ac10-1a1b30f51b6e",
+      "result_id": "141d144a-fc0e-4c7f-a72c-f5680543999e"
+    },
+    {
+      "claim_id": "6a417281-f979-481d-9577-5e419251fb62",
+      "result_id": "141d144a-fc0e-4c7f-a72c-f5680543999e"
+    },
+    {
+      "claim_id": "02d4dec7-e54f-4c03-a22c-af688bf2104c",
+      "result_id": "dc252ba2-3c80-4533-8b0c-e9c5154fb3f8"
+    },
+    {
+      "claim_id": "fabb3602-47e8-4cbc-92a1-fbd6ba00f003",
+      "result_id": "fa1b68c7-b912-4b31-abc5-1faf14789917"
+    },
+    {
+      "claim_id": "30f0e93c-8238-4ce6-8244-9198f974d755",
+      "result_id": "ac6f2269-6aa1-4e23-9dfd-cce6d861a0df"
+    },
+    {
+      "claim_id": "92e31452-5f85-4268-abfe-6c44c6682579",
+      "result_id": "ac6f2269-6aa1-4e23-9dfd-cce6d861a0df"
+    },
+    {
+      "claim_id": "dcba4dad-9671-4ed0-849a-12d85de894e8",
+      "result_id": "4af3cc2c-72a8-4cd6-a676-43cfd931edbe"
+    },
+    {
+      "claim_id": "7f9971cf-4893-4393-bc85-b7c18ad45c30",
+      "result_id": "4af3cc2c-72a8-4cd6-a676-43cfd931edbe"
+    },
+    {
+      "claim_id": "9551dd7c-b9c9-46f0-b554-a93dd44dc1ba",
+      "result_id": "4af3cc2c-72a8-4cd6-a676-43cfd931edbe"
+    },
+    {
+      "claim_id": "205b03f1-8f7a-42a8-bf43-fa8a44bb46b1",
+      "result_id": "4af3cc2c-72a8-4cd6-a676-43cfd931edbe"
+    },
+    {
+      "claim_id": "2d1314bb-55c1-4138-b6f9-04b768250e03",
+      "result_id": "4af3cc2c-72a8-4cd6-a676-43cfd931edbe"
+    },
+    {
+      "claim_id": "e8871352-8308-475a-8ce7-7d029b202d73",
+      "result_id": "db52ebed-5df5-4f91-9bff-245530b8f720"
+    },
+    {
+      "claim_id": "e93c6bbb-6d48-4349-88c5-d74e5432918c",
+      "result_id": "db52ebed-5df5-4f91-9bff-245530b8f720"
+    },
+    {
+      "claim_id": "966ef6c1-0d27-492e-9d91-404d022e876e",
+      "result_id": "db52ebed-5df5-4f91-9bff-245530b8f720"
+    },
+    {
+      "claim_id": "b78ca102-8e3e-4461-be64-a86e18c87892",
+      "result_id": "db52ebed-5df5-4f91-9bff-245530b8f720"
+    },
+    {
+      "claim_id": "e68077b2-561e-42ef-b9f2-d6a1a7d9bf82",
+      "result_id": "db52ebed-5df5-4f91-9bff-245530b8f720"
+    },
+    {
+      "claim_id": "48917985-dd5b-42bb-93db-150696058cab",
+      "result_id": "db52ebed-5df5-4f91-9bff-245530b8f720"
+    },
+    {
+      "claim_id": "8813f555-a9f4-40b2-95d8-dff5dfbcf62b",
+      "result_id": "db52ebed-5df5-4f91-9bff-245530b8f720"
+    },
+    {
+      "claim_id": "c04eab10-2ae2-4d39-8dbc-d32233db670c",
+      "result_id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290"
+    },
+    {
+      "claim_id": "958e19e5-fd75-48a6-8cb3-3a6872356bd7",
+      "result_id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290"
+    },
+    {
+      "claim_id": "05a2acc1-f438-462a-9b13-9586d4825835",
+      "result_id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290"
+    },
+    {
+      "claim_id": "f6da25e3-06a4-48ee-8b7e-405b08d7d016",
+      "result_id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290"
+    },
+    {
+      "claim_id": "fa266935-7cd9-4dd7-8594-b93f22e305ed",
+      "result_id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290"
+    },
+    {
+      "claim_id": "a40a258c-e394-42f3-86bd-7164c827dd10",
+      "result_id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290"
+    },
+    {
+      "claim_id": "18d18e84-d0e8-4c12-b40a-53877258c81c",
+      "result_id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290"
+    },
+    {
+      "claim_id": "65ef73b8-902a-40d4-953e-3643361351c7",
+      "result_id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290"
+    },
+    {
+      "claim_id": "2545d673-2d9f-4138-854c-de9bafd58a7c",
+      "result_id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290"
+    },
+    {
+      "claim_id": "35062ba2-4b48-47a1-9205-e328fe82c9f5",
+      "result_id": "5795ffd3-f8e7-46d2-a51e-9cdf9900d290"
+    },
+    {
+      "claim_id": "231f20dc-4c95-4523-ab33-0d067808a7e7",
+      "result_id": "c4916915-81f2-4004-8cce-2a1a0bf698e7"
+    },
+    {
+      "claim_id": "99048af5-fe86-44da-82f9-a584f054bf3f",
+      "result_id": "c4916915-81f2-4004-8cce-2a1a0bf698e7"
+    },
+    {
+      "claim_id": "a65acc37-2a4f-4bed-827a-b97767a071ab",
+      "result_id": "9d4b61bd-385f-497a-b107-370e8091baf9"
+    },
+    {
+      "claim_id": "cd67a506-4951-45d0-b556-61a95c458cbf",
+      "result_id": "9d4b61bd-385f-497a-b107-370e8091baf9"
+    },
+    {
+      "claim_id": "5a3c6ae1-064b-4137-adde-8a84c6515998",
+      "result_id": "d2852b70-eaf7-4168-8a2b-84fff450d7b4"
+    },
+    {
+      "claim_id": "11da48e7-e7b1-46cd-bbe8-6885d3f4cfb0",
+      "result_id": "d2852b70-eaf7-4168-8a2b-84fff450d7b4"
+    },
+    {
+      "claim_id": "b0854a5c-e7ac-47d6-8f30-6432994da2a8",
+      "result_id": "d2852b70-eaf7-4168-8a2b-84fff450d7b4"
+    },
+    {
+      "claim_id": "a4aaaff8-1801-4092-9259-6efd32d135a5",
+      "result_id": "d2852b70-eaf7-4168-8a2b-84fff450d7b4"
+    },
+    {
+      "claim_id": "884b1b39-b139-44ee-9bc5-db7007388a67",
+      "result_id": "27c6fca2-6624-4e18-9028-ec0dd05775ca"
+    },
+    {
+      "claim_id": "bccefd0b-8d10-4ac0-8b6e-a2257316f02d",
+      "result_id": "27c6fca2-6624-4e18-9028-ec0dd05775ca"
+    }
+  ],
+  "comparisons": []
+}

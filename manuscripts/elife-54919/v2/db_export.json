@@ -1,0 +1,1713 @@
+{
+  "submission": {
+    "id": "4aff19d5-ba63-44c4-8561-f2200f882283",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T18:40:47.909970Z",
+    "updated_at": "2025-12-02T18:40:47.909970Z"
+  },
+  "content": [
+    {
+      "id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "submission_id": "4aff19d5-ba63-44c4-8561-f2200f882283",
+      "content_type": "manuscript",
+      "content_text": "# Transposase-assisted tagmentation of RNA/DNA hybrid duplexes\n\n## Authors\n\n- Bo Lu<sup>1</sup> ([ORCID: 0000-0002-5852-0477](https://orcid.org/0000-0002-5852-0477))\n- Liting Dong<sup>1</sup> ([ORCID: 0000-0001-8396-374X](https://orcid.org/0000-0001-8396-374X))\n- Danyang Yi<sup>1</sup>\n- Meiling Zhang<sup>1</sup>\n- Chenxu Zhu<sup>1</sup> ([ORCID: 0000-0003-4216-6562](https://orcid.org/0000-0003-4216-6562))\n- Xiaoyu Li<sup>1</sup>\n- Chengqi Yi<sup>1</sup> ([ORCID: 0000-0003-2540-9729](https://orcid.org/0000-0003-2540-9729)) \u2020\n\n### Affiliations\n\n1. State Key Laboratory of Protein and Plant Gene Research, School of Life Sciences, Peking University Beijing China\n2. Peking-Tsinghua Center for Life Sciences, Peking University Beijing China\n3. Department of Chemical Biology and Synthetic and Functional Biomolecules Center, College of Chemistry and Molecular Engineering, Peking University Beijing China\n\n\u2020 Corresponding author\n\n## Abstract\n\nTn5-mediated transposition of double-strand DNA has been widely utilized in various high-throughput sequencing applications. Here, we report that the Tn5 transposase is also capable of direct tagmentation of RNA/DNA hybrids in vitro. As a proof-of-concept application, we utilized this activity to replace the traditional library construction procedure of RNA sequencing, which contains many laborious and time-consuming processes. Results of Transposase-assisted RNA/DNA hybrids Co-tagmEntation (termed \u2018TRACE-seq\u2019) are compared to traditional RNA-seq methods in terms of detected gene number, gene body coverage, gene expression measurement, library complexity, and differential expression analysis. At the meantime, TRACE-seq enables a cost-effective one-tube library construction protocol and hence is more rapid (within 6 hr) and convenient. We expect this tagmentation activity on RNA/DNA hybrids to have broad potentials on RNA biology and chromatin research.\n\n## Introduction\n\nTransposases exist in both prokaryotes and eukaryotes and catalyze the movement of defined DNA elements (transposon) to another part of the genome in a \u2018cut and paste\u2019 mechanism (Kleckner, 1981; Finnegan, 1989; Curcio and Derbyshire, 2003). Taking advantage of this catalytic activity, transposases are widely used in many biomedical applications: for instance, an engineered, hyperactive Tn5 transposase from E. coli can bind to synthetic 19 bp mosaic end-recognition sequences appended to Illumina sequencing adapters (termed \u2018Tn5 transposome\u2019) (Adey et al., 2010) and has been utilized in an in vitro double-stranded DNA (dsDNA) tagmentation reaction (namely simultaneously fragment and tag a target sequence with sequencing adaptors) to achieve rapid and low-input library construction for next-generation sequencing (Adey et al., 2010; Goryshin and Reznikoff, 1998; Picelli et al., 2014a; Caruccio, 2011; Ramsk\u00f6ld et al., 2012; Gertz et al., 2012). In addition, Tn5 was also used for in vivo transposition of native chromatin to profile open chromatin, DNA-binding proteins and nucleosome position (\u2018ATAC-seq\u2019) (Buenrostro et al., 2013). While Tn5 has been broadly adopted in high-throughput sequencing, bioinformatic analysis and structural studies reveal that it belongs to the retroviral integrase superfamily that act on not only dsDNA but also RNA/DNA hybrids (for instance, RNase H). Despite the distinct substrates, these proteins all share a conserved catalytic RNase H-like domain (Figure 1a; Yang and Steitz, 1995; Savilahti et al., 1995; Nowotny, 2009; Rice and Baker, 2001). Given their structural and mechanistic similarity, we attempted to ask whether or not Tn5 is able to catalyze co-tagmentation reactions to both the RNA and DNA strands of RNA/DNA hybrids (Figure 1b), in addition to its canonical function of dsDNA transposition. In this study, we tested this hypothesis and found that indeed Tn5 possesses in vitro tagmentation activity towards both strands of RNA/DNA hybrids. As a proof of concept, we apply such Transposase-assisted RNA/DNA hybrids Co-tagmEntation (TRACE-seq) to achieve rapid and low-cost RNA sequencing starting from total RNA extracted from 10,000 to 100 cells. We find that TRACE-seq performs well when compared with conventional RNA-seq methods in terms of detected gene number, gene expression measurement, library complexity, GC content and differential expression analysis, although TRACE-seq shows bias in gene body coverage and is not strand-specific. At the same time, it avoids many laborious and time-consuming steps in traditional RNA-seq experiments. Such Tn5-assisted tagmentation of RNA/DNA hybrids could have broad applications in RNA biology and chromatin research.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/54919/elife-54919-fig1-v2.jpg)\n\n**Figure 1.:** (a) Crystal structure of a single subunit of E. coli Tn5 Transposase (PDB code 1MM8) complexed with ME DNA duplex, and zoom-in views of the conserved catalytic core of Tn5 transposase, HIV-1 integrase (PDB code 1BIU), and E. coli RNase HI (PDB code 1G15), all of which are from the retroviral integrase superfamily. Active-site residues are shown as sticks, and the Mn2+ and Mg2+ ions are shown as deep blue and magenta spheres. (b) Schematic of Tn5-assisted tagmentation of RNA/DNA hybrids. (c) Gel pictures (left) and peak pictures (right) represent size distributions of HEK293T mRNA-derived RNA/DNA hybrid fragments after incubation without Tn5 transposome, with Tn5 transposome, and with inactivated Tn5 transposome. The blue and orange patches denote small and large fragments, respectively. (d) qPCR amplification curve of tagmentation products of HEK293T mRNA-derived RT samples with Tn5 treatment, with inactivated Tn5 treatment, or without Tn5 treatment. Average Ct values of two technical replicates are 18.06, 26.25 and 26.41, respectively. (e) qPCR amplification curve of tagmentation products of HEK293T mRNA-derived RT products samples and gDNA samples under different conditions. (Average Ct values of three technical replicates: RT products sample without Tn5 treatment\u00a0=\u00a030.38; RT products sample with PEG200\u00a0=\u00a021.94; RT products sample without PEG200\u00a0=\u00a025.23; gDNA sample without Tn5 treatment\u00a0=\u00a030.71; gDNA sample with PEG200\u00a0=\u00a021.15; gDNA sample without PEG200\u00a0=\u00a021.19).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54919/elife-54919-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Denaturing (8 M urea) polyacrylamide gel analysis of reverse transcription products of an in vitro transcribed mRNA (IRF9). Lane 1: ssRNA marker. Lane 2: in vitro transcribed mRNA (IRF9). Lane 3 and 4: reverse transcription products of an in vitro transcribed mRNA (IRF9). Lane 5: reverse transcription product treated with DNase I. Lane 6: reverse transcription product treated with RNase H. ssRNA and ssDNA is marked with a red asterisk and a blue pound sign, respectively. (b) Gel picture showing size distribution of RNA/DNA hybrids products of 50 \u03bcl reaction systems without Tn5 transposome, and with 5 \u03bcl, 10 \u03bcl, and 15 \u03bcl Tn5 transposome, respectively. The blue and orange patches denote small and large fragments, respectively. (c) qPCR amplification curve of tagmentation products without Tn5 treatment or with Tn5 treatment in three different buffers (see Methods). Average Ct values of two technical replicates are 26.41, 18.39, 18.33 and 18.34, respectively. (d) Sanger sequencing chromatograms of PCR products following RNA/DNA hybrid tagmentation and strand extension. Adaptor A and B sequences are highlighted with blue background color and insert sequences are highlighted with yellow background. (e) Assessment of gDNA contamination by qPCR of represented genes. (f) Dot blot analysis of a series of diluted samples using the anti-hybrid S9.6 antibody. S9.6 antibody showed no cross-reactivity with dsDNA and the successful hybrids productions were confirmed in CLuc annealed products and mRNA RT products. (g) Native PAGE analysis of 150 bp CLuc annealed products under different annealing conditions. (Annealed hybrids 1: RNA:DNA\u00a0=\u00a02:1; Annealed hybrids 2: RNA:DNA\u00a0=\u00a01.2:1; Annealed dsDNA 1: ssDNA:ssDNA-rev\u00a0=\u00a02:1; Annealed dsDNA 2: ssDNA:ssDNA-rev\u00a0=\u00a01.2:1; See Methods). (h) qPCR amplification curve of tagmentation products of CLuc annealed RNA/DNA hybrid and dsDNA products with Tn5 treatment or without Tn5 treatment. Average Ct values of three technical replicates of annealed hybrid products are 22.68 and 30.4, respectively. Average Ct values of three technical replicates of annealed dsDNA products are 18.08 and 30.83, respectively.\n\n## Results\n\nTo test whether Tn5 transposase has tagmentation activity on RNA/DNA hybrids, we prepared RNA/DNA duplexes by performing mRNA reverse transcription. We first validated the efficiency of reverse transcription and the presence of RNA/DNA duplexes using a model mRNA sequence (IRF9,~1000 nt) as template (Figure 1\u2014figure supplement 1a). We then subjected the prepared RNA/DNA hybrids from 293T mRNA to Tn5 transposome, heat-inactivated Tn5 transposome and a blank control (without Tn5), respectively (see Methods). The hybrids were then recovered and their length distribution was analyzed by Fragment Analyzer (Figure 1c). Comparing with the heat-inactivated Tn5 sample or the blank control sample, the Tn5 transposome sample exhibited a modest but clear smear signal corresponding to small fragments ranging from\u00a0~30\u2013650 base-pair (bp) (the blue patches in Figure 1c). Consistent with the fragmentation event, we also observed a down shift of large fragments ranging from\u00a0~700\u20134000 bp (the orange patches in Figure 1c). In addition, the fragmentation efficiency increased in a dose-dependent manner with the transposome, suggesting that fragmentation of RNA/DNA hybrids is dependent on Tn5 (Figure 1\u2014figure supplement 1b).\n\nWe next asked whether RNA/DNA hybrids are tagged by Tn5 and performed quantitative polymerase chain reaction (qPCR) quantification for the three samples. We observed that cycle threshold (Ct) value of the Tn5 transposome sample is about eight cycles smaller than the heat inactivated Tn5 sample or the control sample, indicating approximately 256 times more amplifiable products (Figure 1d). We also tested different buffer conditions and found that the performance of Tn5 remained similar, indicating the robustness of the Tn5 tagmentation activity (Figure 1\u2014figure supplement 1c). Using Sanger sequencing, we validated that the adaptor sequences are indeed ligated to the insert sequences (Figure 1\u2014figure supplement 1d).\n\nTo compare Tn5 tagmentation efficiency between RNA/DNA hybrids and dsDNA, we performed tagmentation and qPCR on equal amount of mRNA RT products and genomic DNA (gDNA). Average Ct value of the hybrids samples was about four cycles more than gDNA samples, indicating the efficiency of Tn5 toward hybrids is about 1/16 of that of dsDNA (Figure 1e). It is known that natural RNA/DNA hybrids favor A-form conformation. Interestingly, in the presence of PEG200, hybrids were found to favor B-form conformation (Pramanik et al., 2011), which we expected to make the hybrids a better substrate of Tn5. Indeed, addition of PEG200 diminishes this difference by greatly improving the Tn5 tagmentation efficiency towards hybrids (Figure 1e). This result indicates that the conformation of substrates certainly affects the preference of Tn5. We also ruled out the possibility of gDNA contamination in RT products (Figure 1\u2014figure supplement 1e). Taken together, under optimized conditions, Tn5 shows significantly improved efficiency towards RNA/DNA hybrids.\n\nAs reverse transcriptase could produce dsDNA from RNA/DNA hybrids, we next designed an experiment by eliminating the RT component and directly assess tagmentation activity using annealed RNA/DNA hybrids where no dsDNA is possible. We annealed in vitro transcribed and purified ssRNA (CLuc, 150 nt, GC%\u00a0=\u00a051%) with chemically synthesized complementary ssDNA. We confirmed the successful production and purity of the RNA/DNA hybrids by dot-blot assay and native-PAGE (Figure 1\u2014figure supplement 1f and g). A 8-cycle difference between Tn5 transposome sample (Ct\u00a0=\u00a022.68) and the control sample (Ct\u00a0=\u00a030.40) was reproducibly observed (Figure 1\u2014figure supplement 1h). As a positive control, we also annealed two complementary ssDNA strands of the same 150bp-CLuc sequence to produce dsDNA and observed that a Ct value of 18.08 for the dsDNA sample (Figure 1\u2014figure supplement 1h). While it is unclear this difference in tagmentation efficiency obtained from short oligos can be applied to long oligos, this result clearly demonstrates that Tn5 has a direct tagmentation activity towards RNA/DNA hybrids.\n\nHaving demonstrated the tagmentation activity of Tn5 on RNA/DNA hybrids, we then thought about its potential applications. RNA/DNA duplexes can be found in many in vivo scenarios, including but not limited to R-loop and chromatin-bound lncRNAs (Santos-Pereira and Aguilera, 2015; Li and Fu, 2019). Under in vitro conditions, RNA/DNA hybrids are also key intermediates in various molecular biology and genomics experiments. For instance, RNA has to be first reverse transcribed into cDNA in a traditional RNA-seq experiment so as to construct a library for sequencing. Because traditional RNA-seq library construction involves many laborious and time-consuming steps, including mRNA purification, fragmentation, reverse transcription, second-strand synthesis, end-repair and adaptor ligation, we attempted to replace the process using the tagmentation activity towards RNA/DNA duplexes. With the help of TRACE-seq, these steps are replaced with a \u2018one-tube\u2019 protocol (Figure 2a), which uses total RNA as input material and involves just three seamless steps (reverse transcription, tagmentation and strand extension and PCR), without the need for a second strand synthesis step. We first conducted TRACE-seq with 200 ng total RNA as input and tested several enzymes and conditions (Supplementary file 1); we observed very high correlation in gene-expression levels among three replicates, indicating TRACE-seq is highly reproducible (Figure 2b). To test the robustness of TRACE-seq, we performed the experiments with 20 ng and 2 ng total RNA. TRACE-seq results are again highly reproducible among replicates (Figure 2\u2014figure supplement 1a,b). More importantly, gene expression levels measured using different amount of starting materials remain consistent with each other (Figure 2c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/54919/elife-54919-fig2-v2.jpg)\n\n**Figure 2.:** (a) Workflow of TRACE-seq. (b) Gene expression, measured by three technical replicates of TRACE-seq with 200 ng total RNA as input, are shown as scatter plots in the upper right half. Pearson's product-moment correlations are displayed in the lower left half. (c) Gene expression, measured by TRACE-seq using 200 ng, 20 ng and 2 ng total RNA as input, are shown as scatter plots in the upper right half. Pearson's product-moment correlations are displayed in the lower left half. (d) Venn diagrams of gene numbers detected by TRACE-seq with 200 ng total RNA as input and NEBNext Ultra II RNA kit with 200 ng mRNA as input (top) and by TRACE-seq with 20 ng total RNA as input and Smart-seq2 with 20 ng mRNA as input (below). (e) Scatterplots showing a set of housekeeping gene expression values for TRACE-seq and NEBNext Ultra II RNA kit with 10 ng mRNA as input (left), and for TRACE-seq with 10 ng mRNA as input and Smart-seq2 with 20 ng total RNA as input (right). Pearson's product-moment correlation is displayed in the upper left corner. (f) Comparison of read coverage over gene body for NEBNext Ultra II RNA kit, Smart-seq2 and TRACE-seq with different amount of RNA as input. The read coverage over gene body is displayed along with gene body percentile from 5\u2019 to 3\u2019 end. (g) Distribution of GC content of all mapped reads from TRACE-seq library with 200 ng total RNA as input and NEBNext Ultra II RNA library with 10 ng mRNA as input (left) or Smart-seq2 library with 20 ng total RNA as input (right). The vertical dashed lines indicate 48% (left) and 48% and 51% respectively (right). (h) Comparison of the distribution of reads across known genome features for NEBNext Ultra II RNA kit, Smart-seq2 and TRACE-seq with different amount of RNA as input. (i) IGV tracks showing the coverage of two representative transcripts (GAPDH and TOP1MT). The data come from NEBNext Ultra II RNA kit, Smart-seq2 and three sets of TRACE-seq with different amount of total RNA as input.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/54919/elife-54919-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Gene expression measured by two technical replicates of TRACE-seq with 20 ng total RNA as input are shown as scatter plots. Pearson's product-moment correlations are displayed in the upper left corner. (b) Gene expression measured by two technical replicates of TRACE-seq with 2 ng total RNA as input are shown as scatter plots. Pearson's product-moment correlations are displayed in the upper left corner. (c) Scatterplots showing gene expression values for TRACE-seq and NEBNext Ultra II RNA kit with 10 ng mRNA as input (left), and for TRACE-seq with 10 ng mRNA as input and Smart-seq2 with 20 ng total RNA as input (right). All expressed genes (FPKM\u00a0>0.5) are included. Pearson's product-moment correlation is displayed in the upper left corner. (d) Distribution of the insert size in NEBNext Ultra II RNA library, Smart-seq2 libraries and TRACE-seq libraries with different amount of RNA as input, respectively. (e) Median coefficient of variation of gene coverage over the 1000 most highly expressed transcripts in NEBNext Ultra II RNA library, Smart-seq2 libraries and TRACE-seq libraries with different amount of RNA as input, respectively. (f) Comparison of read coverage over gene body for NEBNext Ultra II RNA kit, Smart-seq2 and TRACE-seq with different amount of RNA as input. Transcripts were grouped according to annotated lengths and analyzed separately, with the transcript length ranges indicated (top right). The read coverage over gene body is displayed along with gene body percentile from 5\u2019 to 3\u2019 end. (g) Library complexity for each library shown by plotting the number of uniquely occurring read-pairs with respect to total number of sampled read-pairs. (h) Assessment of RNA Integrity number (RIN). RNA of high RIN score (9.5) was used as input, which allows us to rule out the possibility that the 3\u2019 end bias of gene body coverage is due to RNA degradation. (i) Nucleotide versus cycle (NVC) plots showing percentage of observed bases at each position of the first 30 bases of each sequencing read from TRACE-seq library with 10 ng mRNA and 20 ng total RNA as input. (j) WebLogo plot of sequence conservations of the first 10 bases of all sequencing reads from TRACE-seq library with 10 ng mRNA as input. The overall height of the stack indicates the sequence conservation at that position (measured in bits), while the height of symbols within the stack indicates the relative frequency of each nucleic acid at that position.\n\nWe then compared the library quality between TRACE-seq and NEBNext Ultra II RNA library prep kit, a commonly used kit for RNA-seq library construction. In addition, we conducted a comparison to Smart-seq2, which is a similar method in its use of oligo(dT) primed cDNA synthesis and Tn5 tagmentation. The HEK293T RNA used in these libraries was all from the same batch of cells. We found that TRACE-seq libraries exhibited similar percentage of reads mapped to annotated transcripts, rRNA contamination and gene numbers to NEBNext data when mRNA was used as input, but a higher rRNA contamination when total RNA was used as input (~9%, Supplementary file 2). In addition, a similar percentage of rRNA contamination was also observed in Smart-seq2 libraries (Supplementary file 3). Most of the genes detected by TRACE-seq overlap with that of NEBNext and Smart-seq2 (Figure 2d). In addition, TRACE-seq showed comparable performance in terms of gene expression measurement, using either a set of housekeeping genes (Figure 2e) or all genes (Figure 2\u2014figure supplement 1c). The insert size of TRACE-seq library was moderately shorter (Figure 2\u2014figure supplement 1d); in the meanwhile, TRACE-seq shows a higher coefficient of variation of gene coverage (0.54\u20130.70 vs 0.42\u20130.44, Figure 2\u2014figure supplement 1e). We further found that TRACE-seq showed a slight tendency to 3\u2019 end of the gene body (Figure 2f, Figure 2\u2014figure supplement 1f). When transcripts were grouped according to annotated lengths, we found comparable gene body coverage for transcripts shorter than 1 kb among TRACE-seq, NEBNext kit and Smart-seq2 libraries. For transcripts with length between 1\u00a0and\u00a04 kb, a slight 3\u2019 end bias was observed in TRACE-seq library, while for transcripts longer than 4 kb, the central regions of transcripts were less covered by both TRACE-seq and Smart-seq2. We also performed TRACE-seq by using rRNA depletion together with random-primed cDNA synthesis. While this solved the 3\u2019 end bias, a 5\u2019 end bias appeared, which is a common phenomenon when using random primers during reverse transcription (Figure 2\u2014figure supplement 1f). In spite of the gene body coverage bias, GC content (Figure 2g) and library complexity (Figure 2\u2014figure supplement 1g) are unnoticeably affected. In addition, the gene expression measurement (Figure 2e) is also unaffected here because of the use of RNA with high quality (RIN: 9.5, Figure 2\u2014figure supplement 1h); yet, cautions might be taken when the quality of RNA is compromised. Further inspection of reads distribution of TRACE-seq over genome features revealed similar pattern for that of NEBNext and Smart-seq2 (Figure 2h). Coverages of some representative transcripts are shown in Figure 2i.\n\nOne of the most important goals of RNA-seq is to detect differentially expressed genes among different samples. Having assessed the library quality of TRACE-seq, we next compared the performance of TRACE-seq in detecting differentially expressed genes between undifferentiated and differentiated mESCs to NEBNext Ultra II RNA library prep kit. As shown in Figure 3a, TRACE-seq successfully detected 4577 differentially expressed genes (3264 up-regulated genes and 1313 down-regulated genes), while NEBNext detected 4452 differentially expressed genes (3157 up-regulated genes and 1295 down-regulated genes). The overlapping gene number is 4,071, showing very high consistency between methods (Figure 3b). Besides, the fold change of the 4071 overlapping genes is highly correlated between the two methods (R\u00a0>\u00a00.99, Figure 3c). Therefore, TRACE-seq shows excellent performance in differential gene expression analysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/54919/elife-54919-fig3-v2.jpg)\n\n**Figure 3.:** (a) Volcano plot showing differential expressed genes between undifferentiated and differentiated mESCs detected by NEBNext Ultra II RNA kit and TRACE-seq. Significantly up-regulated and down-regulated expressed genes (padj\u00a0<0.05, |log2FoldChage|\u00a0>\u00a01) are highlighted in red and blue, respectively. (b) Venn diagram of differentially expressed gene numbers detected by TRACE-seq and NEBNext Ultra II RNA kit. (c) Correlation between the fold change of the 4071 differentially expressed genes that overlap between NEBNext Ultra II RNA and TRACE-seq library.\n\nPrevious studies found that Tn5 exhibits a slight insertion bias on dsDNA substrates (Goryshin et al., 1998; Green et al., 2012; Lodge et al., 1988). To further investigate whether potential bias exists for TRACE-seq, we thus characterized sites of Tn5-catalyzed adaptor insertion by calculating nucleotide composition of the first 30 bp of each sequence read per library. Similar to dsDNA substrates, we also observed an apparent insertion signature on RNA/DNA hybrids (Figure 2\u2014figure supplement 1i). Nevertheless, per-position information contents were extremely low, suggesting such insertion bias is less likely to affect gene body coverage (Figure 2\u2014figure supplement 1j). Overall, in spite of gene body coverage bias, TRACE-seq allows construction of high complexity RNA libraries and demonstrates similar performance as traditional RNA library preparation methods in terms of detected genes (97% and 93% overlapped with NEBNext and Smart-seq2 library respectively), gene expression measurement (R\u00a0>\u00a00.90) and differential expression analysis (R\u00a0>\u00a00.99), but outcompetes the traditional methods in terms of speed, convenience and cost.\n\n## Discussion\n\nBased on substrate diversity and the conserved catalytic domain of the retroviral integrase superfamily including the Tn5 transposase, we envision in this study that Tn5 may be able to directly tagment RNA/DNA hybrid duplexes, in addition to its canonical dsDNA substrates. Having validated such in vitro tagmentation activity, we developed TRACE-seq, which enables one-tube, low-input and low-cost library construction for RNA-seq experiments and demonstrates excellent performance in DE analysis. Compared to conventional RNA-seq methods, TRACE-seq does not need to pre-extract mRNA and synthesize a second DNA chain after mRNA reverse transcription. Therefore, TRACE-seq bypasses laborious and time-consuming processes, is compatible with low input, and reduces reagent cost (Supplementary file 4). During the preparation of this paper, an independent study also reported the similar finding and developed a RNA-seq method named SHERRY (Di et al., 2020). The major conclusions are very consistent between the two studies.\n\nDespite its unique advantages, there is room to further improve TRACE-seq. For instance, the libraries generated by TRACE-seq in its current form are not strand-specific, which is a significant drawback for RNA-Seq experiments. Yet, TRACE-seq should be able to be converted to 5\u2019 RNA-seq or 3\u2019 RNA-seq, which can directionally preserve the 5\u2019 or 3\u2019 end information of transcripts (Cole et al., 2018; Pallares et al., 2020). In addition, TRACE-seq could be used in multiplex profiling when utilizing Tn5 transposase containing barcoded adaptors (Cusanovich et al., 2015; Zhu et al., 2019). Besides, if home-made Tn5 can be used (as have done in Picelli et al., 2014a; Kia et al., 2017; Kaya-Okur et al., 2019), the costs will be further cut down. The in vitro tagmentation efficiency of Tn5 on RNA/DNA hybrids could also be further improved. We have shown that the addition of PEG200 substantially enhanced the tagmentation efficiency of hybrids. It is also tempting to speculate that hyperactive mutants towards RNA/DNA hybrids could also be obtained through screening and protein engineering, as wild-type Tn5 transposase has been engineered to obtain hyperactive forms (Goryshin and Reznikoff, 1998; Wiegand and Reznikoff, 1992; Weinreich et al., 1994; Zhou and Reznikoff, 1997). Such hyperactive mutants are expected to have immediate utility in single-cell RNA-seq experiments, for instance. Moreover, Tn5 transposition in vivo has been harnessed to profile chromatin accessibility in ATAC-seq (Buenrostro et al., 2013); it remains to be seen whether or not an equivalent version may exist to enable in vivo detection of R-loop, chromatin bound long non-coding RNA and epitranscriptome analysis (Santos-Pereira and Aguilera, 2015; Li and Fu, 2019; Li et al., 2016; Song et al., 2020). To summarize, TRACE-seq manifests a \u2018cryptic\u2019 activity of the Tn5 transposase as a powerful tool, which may have broad biomedical applications in the future.\n\n## Materials and methods\n\n### Cell culture\n\nHEK293T cells (RRID:CVCL_1926) used in this study were daily maintained in DMEM medium (GIBCO) supplemented with 10% FBS (GIBCO) and 1% penicillin/streptomycin (GIBCO) at 37\u00b0C with 5% CO2. We have confirmed no mycoplasma contamination using TransDetect PCR Mycoplasma Detection Kit (TransGen).\n\n### Nucleic acids isolation\n\nTotal RNA was extracted from cells with TRIzol (Invitrogen), according to the manufacturer\u2019s instructions. The resulting total RNA was treated with DNase I (NEB) to avoid genomic DNA contamination. Phenol/chloroform extraction and ethanol precipitation were then performed to purify and concentrate total RNA. For mRNA isolation, two successive rounds of poly(A)+ selection were performed using oligo(dT)25 dynabeads (Invitrogen). Genomic DNA (gDNA) from HEK293T cells was purified using genomic DNA purification kit (Qiagen) according to the manufacturer\u2019s instructions.\n\n### RNA integrity number (RIN) assessment\n\nAssessment of RNA integrity was performed with RNA 6000 Pico kits (Agilent Technologies). HEK293T total RNA sample was analyzed by Agilent 2100 Bioanalyzer (Agilent Technologies), and RIN was calculated using the supplied 2100 software.\n\n### Preparation of RNA/DNA hybrids\n\nA model mRNA (IRF9,~1000 nt) was in vitro transcribed from PCR products and purified by urea-PAGE. The model mRNA, HEK293T total RNA and mRNA were reverse transcribed into RNA/DNA hybrids by SuperScript IV reverse transcriptase (Invitrogen), according to the manufacturer\u2019s protocol, with several modifications: 1) Instead of oligo d(T)20 primer, oligo d(T)23VN primer (NEB) was annealed to template RNA; 2) Instead of SS IV buffer, SS III buffer supplemented with 7.5% PEG8000 was added to the reaction mixture; 3) The reaction was incubated at 55\u00b0C for 2 hr. To test the presence of RNA/DNA hyrids, IRF9 RT products were treated by DNase I (NEB) and RNase H (NEB) respectively according to the manufacturer\u2019s instructions followed by urea-PAGE analysis.\n\nTo generate the 150 bp RNA/DNA hybrid, the CLuc DNA template used for in vitro transcription (5\u2019-TTAGCTTCACAGGAAGTTGGAACTGTGTTTGGTGGATCAGGTTCGTAAGGACAGTCCTGGCAATGAACAGTGGCGCAGTAGACTAATGCAACGGCAAGAATTAAGGTCTTCATGGTGGCGGATCCGAGCTCGGTACCAAGCTTGGGTCTC-3\u2019) was first amplified by PCR from CLuc Control plasmid (NEB) with forward primer (5\u2019-TAATACGACTCACTATAGGG-3\u2019) and reverse primer (5\u2019-TTAGCTTCACAGGAAGTTGG-3\u2019). RNA was produced from CLuc DNA template using in vitro transcription reaction by MAXIscript T7 Transcription Kit (Invitrogen). The resulting 150 nt RNA was treated by DNase I (NEB) and further purified by 6% urea-PAGE. Annealing between the purified in-vitro transcribed RNA and the synthesized complementary CLuc ssDNA sequence was conducted under two different conditions. 400 ng and 240 ng RNA was annealed with 200 ng DNA in group 1 and 2 respectively in the annealing buffer (50 mM Tris\u2013HCl pH 7.6, 250 mM NaCl and 5 mM EDTA). The samples were first incubated for 5 min at 94\u00b0C and then cooled down slowly (1\u00b0C per minute) to room temperature. The annealed products were then purified using 2.2X Agencourt RNAClean XP beads (Beckman Coulter).\n\n### Preparation of annealed dsDNA\n\nTo generate a 150 bp dsDNA, two complementary ssDNA strands were chemically synthesized and purified by 10% urea-PAGE. The resulting forward and reverse ssDNA strands were annealed under two different conditions. 400 ng and 240 ng forward ssDNA was annealed with 200 ng reverse ssDNA in group 1 and 2 respectively in the same annealing buffer as above. The annealing and purification procedure were performed as above.\n\n### Characterization of 150 bp RNA/DNA hybrids by PAGE and Dot blot\n\nThe presence of RNA/DNA hybrids in the CLuc annealed products were confirmed by dot blot assay. Nitrocellulose membrane (Amersham Hybond-N+, GE) was marked and spotted with mRNA RT products, 150 bp CLuc annealed products and 150 bp dsDNA (negative control). The membrane was air dried for 5 min before UV-crosslink (2X auto-crosslink, 1800 UV Stratalinker, STRATAGENE). After crosslinking, the membrane was blocked by 5% non-fat milk in 1X TBST at room temperature for 1 hr. Then the membrane was incubated with anti-hybrid S9.6 antibody (Kerafast, #ENH001, RRID:AB_2687463, 1:2000 dilution in 5% milk) for 1 hr at room temperature, followed by washing three times with 1X TBST. Lastly, the membrane was incubated with HRP linked anti-mouse secondary antibody (CWBiotech, RRID:AB_2736997) for 1 hr at room temperature. Signals were detected with ECL Plus Chemiluminescent reagent (Thermo Pierce).\n\nThe purity of RNA/DNA hybrids in the 150 bp CLuc annealed products were confirmed by 10% native-PAGE. Samples were loaded in an equal volume of native loading buffer (30% (v/v) glycerol, 80 mM HEPES-KOH (pH 7.9), 100 mM KCl, 2 mM magnesium acetate) and electrophoresed in 0.5 X TBE buffer at 180 V for 1.5 hr.\n\ngDNA contamination detection qPCR experiments were performed to assess potential gDNA contamination. After DNase treatment, RNA samples were subjected to reverse transcription (RT). Two other groups (without RT enzyme and without RNA) were set as negative controls. These groups were subjected to qPCR with three pairs of primers respectively, using the method described above. The qPCR primers were designed within exons near the 3' end of three representative housekeeping genes:\n\n### Tn5 in vitro tagmentation on RNA/DNA hybrids\n\nPartial double-stranded adaptor A and B were obtained by separately annealing 10 \u03bcM Tn5ME-A oligonucleotides (5\u2019-TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG-3\u2019) and Tn5ME-B oligonucleotides (5\u2019-GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG-3\u2019) with equal amounts of mosaic-end oligonucleotides (5\u2019-CTGTCTCTTATACACATCT-3\u2019) in annealing buffer (10 mM Tris\u2013HCl pH 7.5, 10 mM NaCl). Samples were incubated for 5 min at 94\u00b0C and then cooled down slowly (1\u00b0C per minute) to 10\u00b0C. Assembly of Tn5 (TruePrep Tagment Enzyme, Vazyme, #S601-01) with equimolar mixture of annealed Adaptor A and B was performed according to the manufacturer\u2019s protocol (Vazyme). The resulting assembled Tn5 was stored at \u221220\u00b0C until use.\n\nTagmentation reaction was set up by adding RNA/DNA hybrids (RT products or CLuc annealed products) or gDNA, 12 ng/\u03bcl assembled Tn5 and 1 U/\u03bcl SUPERase-In RNase Inhibitor (Invitrogen) to the reaction buffer containing 10 mM Tris-HCl, pH\u00a0=\u00a07.5, 5 mM MgCl2, 8% PEG8000% and 5% PEG200. The reaction was performed at 55\u00b0C for 30 min, and then SDS was added to a final concentration of 0.04% and Tn5 was inactivated for 5 min at room temperature.\n\n### Assays of tagmentation activity of Tn5 on RNA/DNA hybrids\n\nThe concentrations of RNA/DNA hybrids and dsDNA were first determined by PicoGreen quantification kit (Invitrogen). For testing tagmentation activity of Tn5 on RNA/DNA hybrids, reactions were carried out as above, with mRNA derived RT products or CLuc annealed products as substrate. The tagmentation products were then purified using 1.8X Agencourt RNAClean XP beads (Beckman Coulter) to remove Tn5 and excess free adaptors and eluted in 6 \u03bcl nuclease-free water. The size distribution of RNA/DNA hybrids after tagmentation was assessed by a Fragment Analyzer Automated CE System with DNF-474 High Sensitivity NGS Fragment Analysis Kit (AATI).\n\nFor testing tagmentation activity of Tn5 on RNA/DNA hybrids by quantitative polymerase chain reaction (qPCR), tagmentation products purified as above (100X-diluted) was firstly strand-extended with 0.32 U/\u03bcl Bst 3.0 DNA Polymerase (NEB) and 1X AceQ Universal SYBR qPCR Master Mix (Vazyme) at 72\u00b0C for 15 min, and then Bst 3.0 Polymerase was inactivated at 95\u00b0C for 5 min. After adding 0.2 \u03bcM qPCR primers (5\u2019-AATGATACGGCGACCACCGAGATCTACACTCGTCGGCAGCGTC-3\u2019; 5\u2019-CAAGCAGAAGACGGCATACGAGATGTCTCGTGGGCTCGG-3\u2019), qPCR was performed in a LightCycler (Roche) with a 5 min pre-incubation at 95\u00b0C followed by 40 cycles of 10 s at 95\u00b0C and 40 s at 60\u00b0C. For testing the effect of different buffers on tagmentation activity of Tn5 on RNA/DNA hybrids, buffers used were as follows: 1) Tagment buffer L (Vazyme); 2) Buffer with 8% PEG8000 (10 mM Tris-HCl at pH 7.5, 5 mM MgCl2 and 8% PEG8000); 3) Buffer with 10% DMF (10 mM Tris-HCl at pH 7.5, 5 mM MgCl2 and 10% DMF); 4) Buffer with 5% PEG200% and 8% PEG8000 (10 mM Tris-HCl at pH 7.5, 5 mM MgCl2, 5% PEG200% and 8% PEG8000).\n\n### Sanger sequencing\n\nThe PCR products following RNA/DNA hybrid tagmentation and strand extension were ligated to a blunt-end cloning vector using pEASY-Blunt Zero Cloning Kit (TransGen), followed by chemical transformation. Then, several single colonies were picked and sequenced with the forward primers of T7 and T3 promoters.\n\n### TRACE-seq library preparation and sequencing\n\nFor TRACE-seq library preparation, all reactions were performed in one tube. Reverse transcription and tagmentation reactions were carried out as above. Strand extension reaction was performed by directly adding 0.32 U/\u03bcl Bst 3.0 DNA Polymerase and 1X NEBNext Q5 Hot Start HiFi PCR Master Mix (NEB) to tagmentation products and incubating at 72\u00b0C for 10 min, followed by Bst 3.0 DNA Polymerase inactivation at 95\u00b0C for 5 min. Next, 0.2 \u03bcM indexed primers were added to perform enrichment PCR as follows: 30 s at 98\u00b0C, and then n cycles of 10 s at 98\u00b0C, 75 s at 65\u00b0C, followed by the last 10 min extension at 65\u00b0C. The PCR cycles \u2018n\u2019 depends on the amount of purified total RNA input (200 ng, n\u00a0=\u00a011; 20 ng, n\u00a0=\u00a014; 2 ng, n\u00a0=\u00a018). After enrichment, the library was purified twice using 1X Agencourt AMPure XP beads (Beckman Coulter) and eluted in 10 \u03bcl nuclease-free water. The concentration of resulting libraries was determined by Qubit 2.0 fluorometer with the Qubit dsDNA HS Assay kit (Invitrogen) and the size distribution of libraries was assessed by a Fragment Analyzer Automated CE System with DNF-474 High Sensitivity NGS Fragment Analysis Kit (AATI). Finally, libraries were sequenced on the Illumina Hiseq X10 platform which generated 2 \u00d7 150 bp of paired-end raw reads.\n\n### NEBNext and Smart-seq2 library preparation\n\nNEBNext Ultra II RNA libraries were constructed using NEBNext Ultra II RNA Library Prep Kit for Illumina (NEB, #E7770S) according to the manufacturer\u2019s instructions. Smart-seq2 libraries were performed according to the previously published protocol (Picelli et al., 2014b).\n\n### Data analysis\n\nRaw reads from sequencing were firstly subjected to Trim Galore (v0.6.4_dev, RRID:SCR_011847) (http://www.bioinformatics.babraham.ac.uk/projects/ trim_galore/) for quality control and adaptor trimming. The minimal threshold of quality was 20, and the minimal length of reads to remain was set as 20 nt. In terms of differential gene expression analysis, we down-sampled reads per library to 60 million. Otherwise, we down-sampled reads per library to 30 million. Then reads were mapped to human genome (hg19) and transcriptome using STAR (v2.7.1a, RRID:SCR_015899) (Dobin et al., 2013), and the transcriptome was prepared based on the Refseq annotation of human (hg19) downloaded from the table browser of UCSC database. rRNA contamination was determined through directly mapping to the dataset of human rRNA sequence downloaded from NCBI (NR_003286.2, NR_003287.2, NR_003285.2, and X71802.1) by bowtie2 (v2.2.9, RRID:SCR_005476) (Langmead and Salzberg, 2012). Performances related to the processing of sam/bam file were done with the help of Samtools (v1.9, RRID:SCR_002105) (Li et al., 2009). The FPKM value for annotated genes was calculated by cuffnorm (v2.2.1, RRID:SCR_014597) (Trapnell et al., 2010), and genes with FPKM\u00a0>0.5 were considered to be expressed. Log-transformed FPKM values of housekeeping genes (Supplementary file 5, list from Eisenberg and Levanon, 2013) were plotted when comparison of gene expression measurement among TRACE-seq2, NEBNext and Smart-seq2 libraries. Gene body coverage and nucleotide composition for each position of the first 30 bases of each sequence read per library were calculated by QoRTs (v1.1.6, RRID:SCR_018665) (Hartley and Mullikin, 2015). Reads distribution and GC content distribution of mapped reads were calculated by RseQC (v2.6.4, RRID:SCR_005275) (Wang et al., 2012), and median coefficient of variation of gene coverage over the 1000 most highly expressed transcripts per library and insert size of library were calculated by Picard Tools (v2.20.6, RRID:SCR_006525) (http://broadinstitute.github.io/picard/). Library complexity was calculated by Preseq (v2.0.0, RRID:SCR_018664) (Daley and Smith, 2013). The sequence conservations of Tn5 insertion sites on RNA/DNA hybrids were analyzed by WebLogo (v2.8.2, RRID:SCR_010236) (https://weblogo.berkeley.edu/). Reads Coverage was visualized using the IGV genome browser (v2.4.16, RRID:SCR_011793) (Robinson et al., 2011). Differential gene expression analysis was conducted using DESeq2 (v1.26.0, RRID:SCR_015687) (Love et al., 2014) with gene count data generated by HTSeq (v 0.11.2, RRID:SCR_005514) (Anders et al., 2015). And all corresponding graphs were plotted using R scripts by RStudio (v1.2.5033, RRID:SCR_000432) (https://rstudio.com/).\n",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "7db0a780-7ae5-462c-a7c6-91af927d792c",
+      "submission_id": "4aff19d5-ba63-44c4-8561-f2200f882283",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Martha L Bulyk, Dana-Farber Cancer Institute United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.54919.sa1](https://doi.org/10.7554/eLife.54919.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nAcceptance summary:\n\nYour revised manuscript addresses the reviewers' prior concerns. We anticipate your new TRACE-Seq method will be of interest to readers as an efficient, lower cost alternative to traditional library construction methods for RNA-Seq.\n\nDecision letter after peer review:\n\nThank you for sending your article entitled \"Transposase assisted tagmentation of RNA/DNA hybrid duplexes\" for peer review at eLife. Your article is being evaluated by three peer reviewers, and the evaluation is being overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor.\n\nAs noted in our prior communications about the competing study that has now been published in PNAS, please be sure to mention that published study appropriately in your revised manuscript and to cite it in the main text.\n\nAlso, with regard to the name of your method, I agree with reviewer #1 that ATRAC-Seq does not make sense as an abbreviation and may be confused with ATAC-Seq, and recommend naming it something else.\n\nReviewer #1:\n\nIn Lu et al. the authors describe a strategy for producing RNA-seq libraries by the direct tagmentation of RNA-DNA hybrids. This method \"ATRAC-seq\" is very similar to \"SHERRY\" recently published in PNAS (\"RNA sequencing by direct tagmentation of RNA/DNA hybrids\") relying on what appears to be transposition activity of the Tn5 transposase into RNA/DNA hybrids. Overall the paper does a good job characterizing the RNA-seq libraries; however, like the PNAS publication, the authors do not have any experiments that explicitly test the RNA/DNA transposition efficiency. Neither the published work or the manuscript presented here take into account the various efficiencies of RT enzymes / mixes to produce dsDNA, varying based on the RNase H efficiency. It is worth noting that this is irrelevant for producing a simplified assay \u2013 it does not matter if the Tn5 is inserting into dsDNA product after the first strand synthesis or to the RNA/DNA hybrids, as both produce a simplified workflow for producing RNA-seq libraries. The issue is that any publication claiming this phenomenon without direct evidence in a controlled setting could result in misguided assumptions to the field. A properly controlled test would eliminate the RT component and directly assess hybrid constructs where no dsDNA is possible. It may be that the efficiency is high, which drives this result and not the dsDNA after RT; however, it needs to be directly demonstrated.\n\nOther than the RNA-DNA transposition assumptions, the rest of the manuscript is a test of the RNA-seq libraries that were generated when compared to standard techniques, which are fairly standard and properly assessed.\n\nReviewer #2:\n\nThe manuscript \"Transposase assisted tagmentation of RNA/DNA hybrid duplexes\" by Lu et al. describes a new approach involving direct tagmentation of RNA/DNA heteroduplexes for a \"one tube\" mRNA-seq library preparation protocol called ATRAC-seq. Involving fewer steps, this workflow is allowing the generation of transcriptomics data with a seemingly similar quality as a conventional RNA-seq workflow and is reportedly faster and cheaper.\n\nIndeed, as a novel approach, direct tagmentation of RNA/DNA hybrids looks very interesting and can potentially provide new grounds for improving a number of existing RNA-seq protocols allowing to bypass the second strand synthesis step.\n\nThe major concern, however, is the novelty of this work. A paper describing very similar results and a comparable transcriptomics approach have just been published recently as a peer-review article (Da et al., PNAS) and last November 2019 as a preprint. Importantly, some authors from the current Lu et al. work seem to be affiliated with the same departments as the co-authors on Da et al., namely the Tsinghua-Peking Center for Life Sciences and College of Chemistry and Molecular Engineering, Peking University. This might be considered as merely an unlucky coincidence, but the overall similarity of the two works is truly puzzling and thus suggests this might not be the case. It involves obvious parallels in the overall flow of the manuscript and its structure: 1) rationale for attempting the tagmentation of hybrids with Tn5; 2) experimental approach; 3) workflow for mRNA-seq benchmarking; 4) figure layouts look (i.e. Figure 1 in both works show protein domain structure similarity between RNAse H superfamily members). The actual RNA-seq method ATRAC-seq described by the authors is apparently identical to SHERRY from Da et al., with slight variations such as the enzyme (Superscript II vs Superscript IV; Bst2 vs Bst3) and tagmentation buffer composition (9% PEG8000 vs 8% PEG8000). In brief, one may think that a number of merely esthetical changes were introduced in the work of Lu et al. to make it appear distinct from Da et al., 2020. That being said, the work of Da et al. also provides more details and mechanistic insights concerning tagmentation of hybrids.\n\nFinally, the benchmarking is rather meager, as at a minimum, differential gene expression should be included as well as other parameters as for example detailed in Levin et al., Nat Meth, 2010; Alpern et al., Genome Biology, 2019; Pallares et al., 2020.\n\nOther comments:\n\n\u2022 How does the 256-fold increase in number of amplifiable fragments after tagmentation with active Tn5 vs inactive with RNA/DNA hybrids compare when dsDNA is used as a substrate? In this regard, what the authors may have addressed is the basis of tagmentation efficiency of RNA/DNA hybrids and dsDNA. It would be interesting to know what drives the preference of the Tn5 for tagmenting one substrate over another.\n\n\u2022 The RNA samples might be contaminated with gDNA, which will presumable serve as a better substrate for Tn5, did the authors check this possibility experimentally or by checking the resulting sequencing reads?\n\n\u2022 What was the reason of using Bst polymerase? Have the authors compared this to the results obtained with the conventional tagmentation protocol involving PCR amplification as described in the protocol of Picceli et al., 2014? This also relates to the shallow benchmarking already mentioned above.\n\nReviewer #3:\n\nGeneral Assessment:\n\nThis manuscript presents a new method termed \"ATRAC-seq,\" which uses Tn5 to fragment RNA/cDNA hybrids to streamline RNA-Seq library construction. This is an interesting advancement, though the standard methods are not that difficult or time-consuming (contrary to the authors' statements). For this method to be widely adopted, the authors would need to show more data about quality and address issues such as Tn5 sequence specificity and 3' coverage bias. Note that essentially the same method has been published on January 27, 2020 as \"SHERRY\" -- https://www.pnas.org/content/early/2020/01/24/1919800117.\n\nNumbered summary of any substantive concerns.\n\n1) One key problem with the manuscript is that the authors do not use a standard sample for which the expression values are known, so that the comparison with the NEBNext Ultra II RNA library prep kit is inconclusive. It's not possible to know whether there is \"comparable performance\" as written about Figure 2E without a known standard or another control. The authors should add a new series of experiments with standard samples, such as \"the well-characterized reference RNA samples A (Universal Human Reference RNA) and B (Human Brain Reference RNA) from the MAQC consortium, adding spike-ins of synthetic RNA from the External RNA Control Consortium (ERCC)\" as published by the SEQC/MAQC-III Consortium in Nature Biotechnology 32:903-914 (2014). In that paper, the authors compare to qRT-PCR data as well as RNA-Seq. Moreover, Figure 2E shows R=0.6970 between the NEB and ATRAC-seq libraries \u2013 that is not particularly good correlation.\n\n2) In addition, it would be interesting to see a comparison to Smart-seq2, which is a similar method in its use of oligo(dT) primed cDNA synthesis and Tn5 tagmentation. This method is much closer to ATRAC-seq than the NEB kit.\n\n3) The authors need to more explicitly address 3' end bias (as shown in Figure 2F), as it relates to sequence coverage of genes based on their length. Analysis could be presented as in Figure 1 of Ramsk\u00f6ld et al. Nature Biotechnology 30:777-782 (2012). The 3' end bias was also observed in Di et al. PNAS (Figure S11 and page 7). How will this affect expression level measurements and downstream analysis? One possible solution is to use rRNA depletion together with random-primed cDNA synthesis?\n\n4) Other analyses that should be considered are evenness of coverage along a transcript (coefficient of variation) and the ability to identify differentially expressed genes (Figure 3B in Di et al.).\n\n5) The authors should explain further the \"per-position\" analysis (Figure 1\u2014figure supplement 1F) as it is not clear what is being shown or how it was calculated.\n\n6) There are experimental and computational details missing from this manuscript. The authors should add the following:\n\na) Were the ATRAC-seq and NEB libraries prepared from the same RNA?\n\nb) What was the RIN score of RNA used in each experiment?\n\nc) How was the NEB library constructed? This is not mentioned in the Materials and methods section.\n\nd) How is the annealing done for Tn5 oligos (concentration, time, temperature, buffers)?\n\ne) What is the full name and catalog # for the Tn5 purchased from Vazyme?\n\nf) How many reads are there for each library? Analyses should be done with the same number of raw reads per library by down-sampling.\n\ng) Accession #'s for human rRNA should be listed.\n\n[Editors' note: further revisions were suggested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Transposase assisted tagmentation of RNA/DNA hybrid duplexes\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Bart Deplancke (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWe would like to draw your attention to changes in our revision policy that we have made in response to COVID-19 (https://elifesciences.org/articles/57162). Specifically, when editors judge that a submitted work as a whole belongs in eLife but that some conclusions require a modest amount of additional new data, as they do with your paper, we are asking that the manuscript be revised to either limit claims to those supported by data in hand, or to explicitly state that the relevant conclusions require additional supporting data.\n\nOur expectation is that the authors will eventually carry out the additional experiments and report on how they affect the relevant conclusions either in a preprint on bioRxiv or medRxiv, or if appropriate, as a Research Advance in eLife, either of which would be linked to the original paper.\n\nSummary:\n\nThe revisions have addressed most of the concerns raised previously by the reviewers. Some additional revisions need to be carried out before the manuscript is acceptable for publication.\n\nRevisions expected in follow-up work:\n\n1) See comment by reviewer #1 regarding a missing positive control and comparisons of efficiency for DNA/RNA hybrids versus dsDNA.\n\n2) A number of concerns made by reviewer #3 regarding the presentation in the manuscript. None of these concerns require additional experiments.\n\nReviewer #1:\n\nI appreciate that the authors went to a good deal of work to test the synthetic constructs that they describe. They note Ct values of 24 (active Tn5), 28 (inactivated Tn5), and 29 (negative control); however, they neglect to include a positive control. I am surprised, as this would be an easy addition \u2013 annealing a ssDNA to the other ssDNA template as opposed to RNA. As it stands, the ct of 24 seems very late for transposed product. Comparing to dsDNA will give a sense of the difference in efficiency between DNA/RNA hybrids and dsDNA. The other edits are fine, this is the last component I believe needs to be addressed.\n\nReviewer #2:\n\nThe authors have adequately addressed our major concerns. No further comments.\n\nReviewer #3:\n\nGeneral Assessment:\n\nThe revised manuscript is much improved. It was good to see the addition of the Smart-seq2 and rRNA depletion with TRACE-seq experiments. It is understandable that the authors could not add an experiment with a standard reference sample or spike-ins due to the COVID-19 outbreak. There are still issues remaining with respect to analysis, presentation, and conclusions.\n\nNumbered summary of any substantive concerns.\n\n1) The authors' use of housekeeping genes to assess correlation in gene expression measurements between different methods is acceptable, but these issues should be addressed.\n\na) The use of a set of housekeeping genes should be clearly identified in the Results section and the figure legends\n\nb) The actual names of the housekeeping genes used should be listed in a Supplementary table rather than \"list from Eisenberg and Levanon, 2013)\" as in the Materials and methods section.\n\nc) They should also present the analysis with all the genes \u2013 noting that one example is shown in the authors' response to reviewers' comments.\n\n2) In several places, the authors minimize the underperformance of their TRACE-seq method. In each place, the authors should modify the text and include the actual numbers for the readers in the text. Finally, the text should be modified from \"are comparable\", \"demonstrates comparable performance\", and \"shows comparable performance\" to something more measured that lists the advantages and disadvantages.\n\na) Coefficient of Variation is actually much worse (Figure 2\u2014figure supplement 1D) not \"slightly higher coefficient of variation\".\n\nb) 5' to 3' bias. This issue is not apparent here because of the use of high quality RNA (RIN 9.5), but with lower quality \"real world\" samples, the bias becomes more of an issue and the gene expression measurements will be affected. This should be noted in relation to the statement \"In spite of the gene body coverage bias, the gene expression measurement (Figure 2E).\u2026 [is] unnoticeably affected.\"\n\nc) rRNA-aligned reads is actually ~100x worse for 200ng total RNA than for 10ng mRNA. That is not \"slightly higher but acceptable\". It is probably acceptable, but that's a judgement for the reader to make.\n\nd) Strandedness. The authors now do mention this, but this is actually a significant drawback for RNA-Seq experiments.\n\n3) The authors' explanation of the \"per-position\" analysis (Figure 2\u2014figure supplement 2I) as still not clear about what is being shown or how it was calculated.\n\n4) The cost comparison between NEBnext and TRACE-seq is good, but the Smart-seq2 should be included and it is likely less expensive than either method ($10-15/library).\n",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8edea72d-51c2-4de4-b14d-f582a8b01c0f",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C1",
+      "claim": "Tn5 transposase belongs to the retroviral integrase superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "bioinformatic analysis and structural studies reveal that it belongs to the retroviral integrase superfamily that act on not only dsDNA but also RNA/DNA hybrids (for instance, RNase H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on structural and bioinformatic analysis",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "7b8a3ca0-122b-4c46-b621-02be18a53fad",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C2",
+      "claim": "Proteins in the retroviral integrase superfamily share a conserved catalytic RNase H-like domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the distinct substrates, these proteins all share a conserved catalytic RNase H-like domain (Figure 1a; Yang and Steitz, 1995; Savilahti et al., 1995; Nowotny, 2009; Rice and Baker, 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations and reference to Figure 1a showing structural comparison",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "1034c688-7429-4d4f-9548-023a9e0a3af1",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C3",
+      "claim": "Tn5 transposase possesses in vitro tagmentation activity towards both strands of RNA/DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we tested this hypothesis and found that indeed Tn5 possesses in vitro tagmentation activity towards both strands of RNA/DNA hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "9a0ef3dd-cedf-44fd-8fc3-9302e636a2ee",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C4",
+      "claim": "The Tn5 transposome sample exhibited a smear signal corresponding to small fragments ranging from ~30\u2013650 base-pair (bp) after tagmentation of RNA/DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing with the heat-inactivated Tn5 sample or the blank control sample, the Tn5 transposome sample exhibited a modest but clear smear signal corresponding to small fragments ranging from ~30\u2013650 base-pair (bp) (the blue patches in Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Fragment Analyzer data shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "d73ed8fc-df31-4094-bd44-ab36ae4d96d1",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C5",
+      "claim": "A down shift of large fragments ranging from ~700\u20134000 bp was observed after Tn5 tagmentation of RNA/DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the fragmentation event, we also observed a down shift of large fragments ranging from ~700\u20134000 bp (the orange patches in Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Fragment Analyzer data shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "3f083cd2-b3a0-4a71-9ddc-a3de0010feae",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C6",
+      "claim": "The fragmentation efficiency of RNA/DNA hybrids increased in a dose-dependent manner with the transposome.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the fragmentation efficiency increased in a dose-dependent manner with the transposome, suggesting that fragmentation of RNA/DNA hybrids is dependent on Tn5 (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response data shown in Figure 1\u2014figure supplement 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "0e857dd6-90c2-4db4-a8ed-91c3a4f2a48f",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C7",
+      "claim": "The Ct value of the Tn5 transposome sample is about eight cycles smaller than the heat inactivated Tn5 sample or the control sample.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cycle threshold (Ct) value of the Tn5 transposome sample is about eight cycles smaller than the heat inactivated Tn5 sample or the control sample, indicating approximately 256 times more amplifiable products (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "2ec4412f-1d6f-4ecf-9a0e-1f6c3e2adcad",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C8",
+      "claim": "Tn5 tagmentation produces approximately 256 times more amplifiable products from RNA/DNA hybrids compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cycle threshold (Ct) value of the Tn5 transposome sample is about eight cycles smaller than the heat inactivated Tn5 sample or the control sample, indicating approximately 256 times more amplifiable products (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the 8-cycle difference in qPCR Ct values",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "c21651d6-11a2-4a64-b7b8-49a198d99950",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C9",
+      "claim": "The performance of Tn5 remained similar across different buffer conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested different buffer conditions and found that the performance of Tn5 remained similar, indicating the robustness of the Tn5 tagmentation activity (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data across different buffer conditions shown in Figure 1\u2014figure supplement 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "b36cff70-57be-428e-bb33-9b252d9d6bf8",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C10",
+      "claim": "Adaptor sequences are ligated to insert sequences during Tn5 tagmentation of RNA/DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Sanger sequencing, we validated that the adaptor sequences are indeed ligated to the insert sequences (Figure 1\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Sanger sequencing data shown in Figure 1\u2014figure supplement 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "ddfcc679-afeb-45dd-b615-8b60d6e68f23",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C11",
+      "claim": "The efficiency of Tn5 toward RNA/DNA hybrids is about 1/16 of that of dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Average Ct value of the hybrids samples was about four cycles more than gDNA samples, indicating the efficiency of Tn5 toward hybrids is about 1/16 of that of dsDNA (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from 4-cycle difference in qPCR Ct values between hybrids and dsDNA",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "44d0a6ba-cb6b-4b08-bd58-65204fe0733c",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C12",
+      "claim": "Natural RNA/DNA hybrids favor A-form conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that natural RNA/DNA hybrids favor A-form conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "2827a19e-4a27-4f16-b7e9-449fb60f09e5",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C13",
+      "claim": "In the presence of PEG200, RNA/DNA hybrids favor B-form conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in the presence of PEG200, hybrids were found to favor B-form conformation (Pramanik et al., 2011), which we expected to make the hybrids a better substrate of Tn5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pramanik et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "e185f6ed-20b8-4c25-a6b3-9e76de353eb7",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C14",
+      "claim": "Addition of PEG200 greatly improves the Tn5 tagmentation efficiency towards RNA/DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, addition of PEG200 diminishes this difference by greatly improving the Tn5 tagmentation efficiency towards hybrids (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data comparing conditions with and without PEG200 shown in Figure 1e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "87397f3c-a3d4-42c9-932c-f429b530cb37",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C15",
+      "claim": "The conformation of substrates affects the preference of Tn5.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that the conformation of substrates certainly affects the preference of Tn5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that PEG200 (which changes conformation) improves tagmentation efficiency",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "86fd4745-c61e-4e43-9688-f1a6921293d8",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C16",
+      "claim": "An 8-cycle difference between Tn5 transposome sample (Ct = 22.68) and the control sample (Ct = 30.40) was reproducibly observed for annealed RNA/DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "A 8-cycle difference between Tn5 transposome sample (Ct = 22.68) and the control sample (Ct = 30.40) was reproducibly observed (Figure 1\u2014figure supplement 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data shown in Figure 1\u2014figure supplement 1h",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "adb6255c-09b4-43ca-9540-d44ba0f059ec",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C17",
+      "claim": "Tn5 has a direct tagmentation activity towards RNA/DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is unclear this difference in tagmentation efficiency obtained from short oligos can be applied to long oligos, this result clearly demonstrates that Tn5 has a direct tagmentation activity towards RNA/DNA hybrids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from annealed RNA/DNA hybrids where no dsDNA is possible",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "2786ce3f-f5ce-4cba-8087-6ec4a722d156",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C18",
+      "claim": "RNA/DNA duplexes can be found in R-loop and chromatin-bound lncRNAs in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA/DNA duplexes can be found in many in vivo scenarios, including but not limited to R-loop and chromatin-bound lncRNAs (Santos-Pereira and Aguilera, 2015; Li and Fu, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "a38a1948-20fb-4b8f-9993-d99f1d741931",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C19",
+      "claim": "Traditional RNA-seq library construction involves many laborious and time-consuming steps, including mRNA purification, fragmentation, reverse transcription, second-strand synthesis, end-repair and adaptor ligation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because traditional RNA-seq library construction involves many laborious and time-consuming steps, including mRNA purification, fragmentation, reverse transcription, second-strand synthesis, end-repair and adaptor ligation, we attempted to replace the process using the tagmentation activity towards RNA/DNA duplexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about traditional RNA-seq methods",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "76530be9-0340-4f17-b0e8-37e4a0012b09",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C20",
+      "claim": "TRACE-seq uses total RNA as input material.",
+      "claim_type": "EXPLICIT",
+      "source": "With the help of TRACE-seq, these steps are replaced with a 'one-tube' protocol (Figure 2a), which uses total RNA as input material and involves just three seamless steps (reverse transcription, tagmentation and strand extension and PCR), without the need for a second strand synthesis step.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in the methods and shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "79062b3d-ece9-4368-9ae9-4441b2988c71",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C21",
+      "claim": "TRACE-seq involves just three seamless steps: reverse transcription, tagmentation and strand extension and PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "With the help of TRACE-seq, these steps are replaced with a 'one-tube' protocol (Figure 2a), which uses total RNA as input material and involves just three seamless steps (reverse transcription, tagmentation and strand extension and PCR), without the need for a second strand synthesis step.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in the methods and shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "b3466710-c14a-4036-8ac1-36d264093343",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C22",
+      "claim": "TRACE-seq does not need a second strand synthesis step.",
+      "claim_type": "EXPLICIT",
+      "source": "With the help of TRACE-seq, these steps are replaced with a 'one-tube' protocol (Figure 2a), which uses total RNA as input material and involves just three seamless steps (reverse transcription, tagmentation and strand extension and PCR), without the need for a second strand synthesis step.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described in the methods and shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "7d474ac8-d04a-4291-a544-b53f49a3276d",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C23",
+      "claim": "TRACE-seq with 200 ng total RNA as input is highly reproducible among three replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "We first conducted TRACE-seq with 200 ng total RNA as input and tested several enzymes and conditions (Supplementary file 1); we observed very high correlation in gene-expression levels among three replicates, indicating TRACE-seq is highly reproducible (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation data shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "107098af-e2de-46a4-b7a5-1aab727185b4",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C24",
+      "claim": "TRACE-seq results are highly reproducible among replicates with 20 ng and 2 ng total RNA input.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the robustness of TRACE-seq, we performed the experiments with 20 ng and 2 ng total RNA. TRACE-seq results are again highly reproducible among replicates (Figure 2\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation data shown in Figure 2\u2014figure supplement 1a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "2dddedc7-da60-42c9-8ac4-0bf2e2bc7521",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C25",
+      "claim": "Gene expression levels measured using different amounts of starting materials remain consistent with each other in TRACE-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, gene expression levels measured using different amount of starting materials remain consistent with each other (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation data shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "8dd917f1-bcb7-4c98-9762-a2582d2a99ed",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C26",
+      "claim": "97% of genes detected by TRACE-seq overlap with NEBNext library.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, in spite of gene body coverage bias, TRACE-seq allows construction of high complexity RNA libraries and demonstrates similar performance as traditional RNA library preparation methods in terms of detected genes (97% and 93% overlapped with NEBNext and Smart-seq2 library respectively), gene expression measurement (R > 0.90) and differential expression analysis (R > 0.99), but outcompetes the traditional methods in terms of speed, convenience and cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from comparison data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "84f0fcba-0d8c-4c29-a6aa-7e8a99a92d4f",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C27",
+      "claim": "93% of genes detected by TRACE-seq overlap with Smart-seq2 library.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, in spite of gene body coverage bias, TRACE-seq allows construction of high complexity RNA libraries and demonstrates similar performance as traditional RNA library preparation methods in terms of detected genes (97% and 93% overlapped with NEBNext and Smart-seq2 library respectively), gene expression measurement (R > 0.90) and differential expression analysis (R > 0.99), but outcompetes the traditional methods in terms of speed, convenience and cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from comparison data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "07d71cd5-2e54-415a-9dbe-0c8a13cb1857",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C28",
+      "claim": "TRACE-seq shows comparable performance to traditional methods in gene expression measurement (R > 0.90).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, in spite of gene body coverage bias, TRACE-seq allows construction of high complexity RNA libraries and demonstrates similar performance as traditional RNA library preparation methods in terms of detected genes (97% and 93% overlapped with NEBNext and Smart-seq2 library respectively), gene expression measurement (R > 0.90) and differential expression analysis (R > 0.99), but outcompetes the traditional methods in terms of speed, convenience and cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "978f9a8b-fe4b-451e-a96d-6cce4f51c77b",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C29",
+      "claim": "TRACE-seq shows comparable performance to traditional methods in differential expression analysis (R > 0.99).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, in spite of gene body coverage bias, TRACE-seq allows construction of high complexity RNA libraries and demonstrates similar performance as traditional RNA library preparation methods in terms of detected genes (97% and 93% overlapped with NEBNext and Smart-seq2 library respectively), gene expression measurement (R > 0.90) and differential expression analysis (R > 0.99), but outcompetes the traditional methods in terms of speed, convenience and cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation data shown in Figure 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "3e588c0b-6a58-4725-a0f5-e4b3c5f736b4",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C30",
+      "claim": "TRACE-seq showed a higher rRNA contamination (~9%) when total RNA was used as input.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TRACE-seq libraries exhibited similar percentage of reads mapped to annotated transcripts, rRNA contamination and gene numbers to NEBNext data when mRNA was used as input, but a higher rRNA contamination when total RNA was used as input (~9%, Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Supplementary file 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "8ec0db7a-f2c4-4ca8-9c4c-d2b298d2795d",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C31",
+      "claim": "A similar percentage of rRNA contamination was observed in Smart-seq2 libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a similar percentage of rRNA contamination was also observed in Smart-seq2 libraries (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in Supplementary file 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "1f9cb5f9-d043-4162-8ccc-50c2545b6a1f",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C32",
+      "claim": "The insert size of TRACE-seq library was moderately shorter than traditional methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The insert size of TRACE-seq library was moderately shorter (Figure 2\u2014figure supplement 1d); in the meanwhile, TRACE-seq shows a higher coefficient of variation of gene coverage (0.54\u20130.70 vs 0.42\u20130.44, Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "b1cbff01-f608-470b-9810-30ec8951ee71",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C33",
+      "claim": "TRACE-seq shows a higher coefficient of variation of gene coverage (0.54\u20130.70 vs 0.42\u20130.44) compared to traditional methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The insert size of TRACE-seq library was moderately shorter (Figure 2\u2014figure supplement 1d); in the meanwhile, TRACE-seq shows a higher coefficient of variation of gene coverage (0.54\u20130.70 vs 0.42\u20130.44, Figure 2\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 2\u2014figure supplement 1e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "daf82be2-21b6-4b34-ad8a-807983f3ec97",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C34",
+      "claim": "TRACE-seq showed a slight tendency to 3' end of the gene body.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that TRACE-seq showed a slight tendency to 3' end of the gene body (Figure 2f, Figure 2\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene body coverage data shown in Figure 2f and Figure 2\u2014figure supplement 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "0d75108e-d416-49e6-acee-b33bccbec86b",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C35",
+      "claim": "For transcripts shorter than 1 kb, TRACE-seq shows comparable gene body coverage to NEBNext kit and Smart-seq2 libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "When transcripts were grouped according to annotated lengths, we found comparable gene body coverage for transcripts shorter than 1 kb among TRACE-seq, NEBNext kit and Smart-seq2 libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene body coverage analysis shown in Figure 2\u2014figure supplement 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "cbc2efd0-d78b-465a-a585-52aa6afd906a",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C36",
+      "claim": "For transcripts with length between 1 and 4 kb, a slight 3' end bias was observed in TRACE-seq library.",
+      "claim_type": "EXPLICIT",
+      "source": "For transcripts with length between 1 and 4 kb, a slight 3' end bias was observed in TRACE-seq library, while for transcripts longer than 4 kb, the central regions of transcripts were less covered by both TRACE-seq and Smart-seq2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene body coverage analysis shown in Figure 2\u2014figure supplement 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "85dd968e-8900-43f7-8bdc-cb70f7c2787a",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C37",
+      "claim": "For transcripts longer than 4 kb, the central regions of transcripts were less covered by both TRACE-seq and Smart-seq2.",
+      "claim_type": "EXPLICIT",
+      "source": "For transcripts with length between 1 and 4 kb, a slight 3' end bias was observed in TRACE-seq library, while for transcripts longer than 4 kb, the central regions of transcripts were less covered by both TRACE-seq and Smart-seq2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene body coverage analysis shown in Figure 2\u2014figure supplement 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "4887a654-0117-444b-b7c7-3a6ad5b13bf0",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C38",
+      "claim": "Using rRNA depletion together with random-primed cDNA synthesis solved the 3' end bias but introduced a 5' end bias.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed TRACE-seq by using rRNA depletion together with random-primed cDNA synthesis. While this solved the 3' end bias, a 5' end bias appeared, which is a common phenomenon when using random primers during reverse transcription (Figure 2\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene body coverage data shown in Figure 2\u2014figure supplement 1f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "eb890b55-fcc6-40db-a19d-4e57b0aad40e",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C39",
+      "claim": "5' end bias is a common phenomenon when using random primers during reverse transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed TRACE-seq by using rRNA depletion together with random-primed cDNA synthesis. While this solved the 3' end bias, a 5' end bias appeared, which is a common phenomenon when using random primers during reverse transcription (Figure 2\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "9a66259e-b864-4e55-afa2-3f2fe0579156",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C40",
+      "claim": "GC content is unnoticeably affected by the gene body coverage bias in TRACE-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of the gene body coverage bias, GC content (Figure 2g) and library complexity (Figure 2\u2014figure supplement 1g) are unnoticeably affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GC content analysis shown in Figure 2g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "6c05fa0f-d9d8-453f-a15b-57d42bc40923",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C41",
+      "claim": "Library complexity is unnoticeably affected by the gene body coverage bias in TRACE-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of the gene body coverage bias, GC content (Figure 2g) and library complexity (Figure 2\u2014figure supplement 1g) are unnoticeably affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by library complexity analysis shown in Figure 2\u2014figure supplement 1g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "87c2c820-ed69-47a0-981b-b15a236340a2",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C42",
+      "claim": "Gene expression measurement is unaffected by gene body coverage bias when using RNA with high quality (RIN: 9.5).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the gene expression measurement (Figure 2e) is also unaffected here because of the use of RNA with high quality (RIN: 9.5, Figure 2\u2014figure supplement 1h); yet, cautions might be taken when the quality of RNA is compromised.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gene expression correlation data and RIN assessment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "9d64bdc1-bbce-4f90-afca-3616fff2f63a",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C43",
+      "claim": "TRACE-seq detected 4577 differentially expressed genes (3264 up-regulated genes and 1313 down-regulated genes) between undifferentiated and differentiated mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3a, TRACE-seq successfully detected 4577 differentially expressed genes (3264 up-regulated genes and 1313 down-regulated genes), while NEBNext detected 4452 differentially expressed genes (3157 up-regulated genes and 1295 down-regulated genes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by differential expression analysis shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "5a4a2fc3-951d-4a54-97e9-9e58770cd8a6",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C44",
+      "claim": "NEBNext detected 4452 differentially expressed genes (3157 up-regulated genes and 1295 down-regulated genes) between undifferentiated and differentiated mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3a, TRACE-seq successfully detected 4577 differentially expressed genes (3264 up-regulated genes and 1313 down-regulated genes), while NEBNext detected 4452 differentially expressed genes (3157 up-regulated genes and 1295 down-regulated genes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by differential expression analysis shown in Figure 3a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "3a80b707-00b0-4c1d-9cb8-21f2f98ab359",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C45",
+      "claim": "The overlapping gene number between TRACE-seq and NEBNext for differentially expressed genes is 4,071.",
+      "claim_type": "EXPLICIT",
+      "source": "The overlapping gene number is 4,071, showing very high consistency between methods (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Venn diagram shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "97fa7022-d9a8-49be-ae52-997d36258236",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C46",
+      "claim": "The fold change of the 4071 overlapping genes is highly correlated between TRACE-seq and NEBNext (R > 0.99).",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, the fold change of the 4071 overlapping genes is highly correlated between the two methods (R > 0.99, Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 3c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "5e33612b-f1ec-446a-9896-f6fd44a1f8d2",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C47",
+      "claim": "TRACE-seq shows excellent performance in differential gene expression analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, TRACE-seq shows excellent performance in differential gene expression analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the high overlap and correlation of differentially expressed genes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "416ffa18-ffdf-40ea-923d-85f3110f897b",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C48",
+      "claim": "Tn5 exhibits a slight insertion bias on dsDNA substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies found that Tn5 exhibits a slight insertion bias on dsDNA substrates (Goryshin et al., 1998; Green et al., 2012; Lodge et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "f8f200ce-22e7-4b35-af7f-615031151be4",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C49",
+      "claim": "An apparent insertion signature on RNA/DNA hybrids was observed for Tn5.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to dsDNA substrates, we also observed an apparent insertion signature on RNA/DNA hybrids (Figure 2\u2014figure supplement 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by nucleotide composition analysis shown in Figure 2\u2014figure supplement 1i",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "29737c14-8062-4869-9b5a-583061c4c742",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C50",
+      "claim": "Per-position information contents of Tn5 insertion sites on RNA/DNA hybrids were extremely low.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, per-position information contents were extremely low, suggesting such insertion bias is less likely to affect gene body coverage (Figure 2\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by WebLogo analysis shown in Figure 2\u2014figure supplement 1j",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "c0c3a13f-4c2c-4dfe-96bf-b9744a3ab68a",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C51",
+      "claim": "The insertion bias of Tn5 on RNA/DNA hybrids is less likely to affect gene body coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, per-position information contents were extremely low, suggesting such insertion bias is less likely to affect gene body coverage (Figure 2\u2014figure supplement 1j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the low information content of insertion sites",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "7e7334d0-476f-4409-8cc5-de53aa97cbd3",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C52",
+      "claim": "TRACE-seq allows construction of high complexity RNA libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, in spite of gene body coverage bias, TRACE-seq allows construction of high complexity RNA libraries and demonstrates similar performance as traditional RNA library preparation methods in terms of detected genes (97% and 93% overlapped with NEBNext and Smart-seq2 library respectively), gene expression measurement (R > 0.90) and differential expression analysis (R > 0.99), but outcompetes the traditional methods in terms of speed, convenience and cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by library complexity analysis shown in Figure 2\u2014figure supplement 1g",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "ab6bf46b-81ea-4096-a921-fbc9a19e51ce",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C53",
+      "claim": "TRACE-seq outcompetes traditional methods in terms of speed, convenience and cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, in spite of gene body coverage bias, TRACE-seq allows construction of high complexity RNA libraries and demonstrates similar performance as traditional RNA library preparation methods in terms of detected genes (97% and 93% overlapped with NEBNext and Smart-seq2 library respectively), gene expression measurement (R > 0.90) and differential expression analysis (R > 0.99), but outcompetes the traditional methods in terms of speed, convenience and cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of methods and cost analysis in Supplementary file 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "093c17fc-56b7-44e5-b78b-3a72d4c8ba17",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C54",
+      "claim": "TRACE-seq does not need to pre-extract mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to conventional RNA-seq methods, TRACE-seq does not need to pre-extract mRNA and synthesize a second DNA chain after mRNA reverse transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "e2aa0c63-03a7-4df2-9831-7e46dcbde12d",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C55",
+      "claim": "TRACE-seq does not need to synthesize a second DNA chain after mRNA reverse transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to conventional RNA-seq methods, TRACE-seq does not need to pre-extract mRNA and synthesize a second DNA chain after mRNA reverse transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "93ef0b73-2326-4f3e-89fa-d2dbafc4ca1d",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C56",
+      "claim": "TRACE-seq bypasses laborious and time-consuming processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, TRACE-seq bypasses laborious and time-consuming processes, is compatible with low input, and reduces reagent cost (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the simplified workflow compared to traditional methods",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "18e18717-da8c-4c5e-9bc5-c03c32389643",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C57",
+      "claim": "TRACE-seq is compatible with low input.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, TRACE-seq bypasses laborious and time-consuming processes, is compatible with low input, and reduces reagent cost (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experiments with 2 ng total RNA input",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "c1b8194c-361d-4617-be00-2e99dec70e03",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C58",
+      "claim": "TRACE-seq reduces reagent cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, TRACE-seq bypasses laborious and time-consuming processes, is compatible with low input, and reduces reagent cost (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cost comparison in Supplementary file 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "4ca72488-1276-4b10-959c-485e5fa34825",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C59",
+      "claim": "An independent study also reported similar findings and developed a RNA-seq method named SHERRY.",
+      "claim_type": "EXPLICIT",
+      "source": "During the preparation of this paper, an independent study also reported the similar finding and developed a RNA-seq method named SHERRY (Di et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Di et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "7c084455-26fc-48e2-8fff-21c3e52dd6c6",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C60",
+      "claim": "The major conclusions are very consistent between TRACE-seq and SHERRY studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The major conclusions are very consistent between the two studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as comparison to independent work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "be878d5b-9b44-4a29-a7d1-b67ad04c4739",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C61",
+      "claim": "The libraries generated by TRACE-seq in its current form are not strand-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the libraries generated by TRACE-seq in its current form are not strand-specific, which is a significant drawback for RNA-Seq experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of the current method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "2341e55d-42c2-45a7-9b85-aabccec66bef",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C62",
+      "claim": "TRACE-seq should be able to be converted to 5' RNA-seq or 3' RNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, TRACE-seq should be able to be converted to 5' RNA-seq or 3' RNA-seq, which can directionally preserve the 5' or 3' end information of transcripts (Cole et al., 2018; Pallares et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on citations to methods that preserve directional information",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "39aa0b99-1ef7-4dc6-8956-6996554f7b00",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C63",
+      "claim": "TRACE-seq could be used in multiplex profiling when utilizing Tn5 transposase containing barcoded adaptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, TRACE-seq could be used in multiplex profiling when utilizing Tn5 transposase containing barcoded adaptors (Cusanovich et al., 2015; Zhu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on citations to barcoding methods",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "714a984d-dc2a-4751-a004-7caa9bc8b549",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C64",
+      "claim": "If home-made Tn5 can be used, the costs will be further cut down.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, if home-made Tn5 can be used (as have done in Picelli et al., 2014a; Kia et al., 2017; Kaya-Okur et al., 2019), the costs will be further cut down.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on citations to studies using home-made Tn5",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "57565ae0-4f5d-4e1b-b412-8a4d93c34475",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C65",
+      "claim": "Wild-type Tn5 transposase has been engineered to obtain hyperactive forms.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also tempting to speculate that hyperactive mutants towards RNA/DNA hybrids could also be obtained through screening and protein engineering, as wild-type Tn5 transposase has been engineered to obtain hyperactive forms (Goryshin and Reznikoff, 1998; Wiegand and Reznikoff, 1992; Weinreich et al., 1994; Zhou and Reznikoff, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work on Tn5 engineering",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "930ae3f3-2b88-48e8-99f0-1fe811505390",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C66",
+      "claim": "Hyperactive mutants towards RNA/DNA hybrids could be obtained through screening and protein engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also tempting to speculate that hyperactive mutants towards RNA/DNA hybrids could also be obtained through screening and protein engineering, as wild-type Tn5 transposase has been engineered to obtain hyperactive forms (Goryshin and Reznikoff, 1998; Wiegand and Reznikoff, 1992; Weinreich et al., 1994; Zhou and Reznikoff, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on analogy to dsDNA hyperactive mutants",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "d3969a0b-5305-45bb-8042-594922f63b9f",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C67",
+      "claim": "Hyperactive mutants for RNA/DNA hybrids are expected to have immediate utility in single-cell RNA-seq experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Such hyperactive mutants are expected to have immediate utility in single-cell RNA-seq experiments, for instance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the low-input capability of TRACE-seq",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "32449b2e-85c1-485b-a4ae-e6611ff1cc3a",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C70",
+      "claim": "TRACE-seq manifests a 'cryptic' activity of the Tn5 transposase as a powerful tool.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, TRACE-seq manifests a 'cryptic' activity of the Tn5 transposase as a powerful tool, which may have broad biomedical applications in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a summary conclusion",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "e7537ec6-c59f-430b-bf5e-10b8855255df",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C71",
+      "claim": "TRACE-seq may have broad biomedical applications in the future.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize, TRACE-seq manifests a 'cryptic' activity of the Tn5 transposase as a powerful tool, which may have broad biomedical applications in the future.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the demonstrated capabilities of the method",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "4e438266-fc3d-47cd-8f9d-8a48d74be450",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C72",
+      "claim": "An engineered, hyperactive Tn5 transposase from E. coli can bind to synthetic 19 bp mosaic end-recognition sequences appended to Illumina sequencing adapters.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of this catalytic activity, transposases are widely used in many biomedical applications: for instance, an engineered, hyperactive Tn5 transposase from E. coli can bind to synthetic 19 bp mosaic end-recognition sequences appended to Illumina sequencing adapters (termed 'Tn5 transposome') (Adey et al., 2010) and has been utilized in an in vitro double-stranded DNA (dsDNA) tagmentation reaction (namely simultaneously fragment and tag a target sequence with sequencing adaptors) to achieve rapid and low-input library construction for next-generation sequencing (Adey et al., 2010; Goryshin and Reznikoff, 1998; Picelli et al., 2014a; Caruccio, 2011; Ramsk\u00f6ld et al., 2012; Gertz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Adey et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "1c5640dc-e1a9-4bbf-b1c5-84b3289c1525",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C73",
+      "claim": "Tn5 transposase has been utilized in an in vitro double-stranded DNA (dsDNA) tagmentation reaction to achieve rapid and low-input library construction for next-generation sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of this catalytic activity, transposases are widely used in many biomedical applications: for instance, an engineered, hyperactive Tn5 transposase from E. coli can bind to synthetic 19 bp mosaic end-recognition sequences appended to Illumina sequencing adapters (termed 'Tn5 transposome') (Adey et al., 2010) and has been utilized in an in vitro double-stranded DNA (dsDNA) tagmentation reaction (namely simultaneously fragment and tag a target sequence with sequencing adaptors) to achieve rapid and low-input library construction for next-generation sequencing (Adey et al., 2010; Goryshin and Reznikoff, 1998; Picelli et al., 2014a; Caruccio, 2011; Ramsk\u00f6ld et al., 2012; Gertz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "df199570-8e96-4162-8e4c-578dea235884",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C74",
+      "claim": "Tn5 was used for in vivo transposition of native chromatin to profile open chromatin, DNA-binding proteins and nucleosome position in ATAC-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Tn5 was also used for in vivo transposition of native chromatin to profile open chromatin, DNA-binding proteins and nucleosome position ('ATAC-seq') (Buenrostro et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Buenrostro et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "526462c6-f4d7-48dd-939b-ea85a334fd34",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C75",
+      "claim": "Tn5 belongs to the retroviral integrase superfamily that act on not only dsDNA but also RNA/DNA hybrids.",
+      "claim_type": "EXPLICIT",
+      "source": "While Tn5 has been broadly adopted in high-throughput sequencing, bioinformatic analysis and structural studies reveal that it belongs to the retroviral integrase superfamily that act on not only dsDNA but also RNA/DNA hybrids (for instance, RNase H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to structural and bioinformatic studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "17c601d7-51ed-43b8-b32d-b9b0ac27b6a5",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C76",
+      "claim": "TRACE-seq is more rapid (within 6 hr) than traditional RNA-seq methods.",
+      "claim_type": "EXPLICIT",
+      "source": "At the meantime, TRACE-seq enables a cost-effective one-tube library construction protocol and hence is more rapid (within 6 hr) and convenient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract based on the simplified workflow",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "0b0e70e8-56f7-4d14-bdfa-0d5970d3504d",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C77",
+      "claim": "TRACE-seq enables a cost-effective one-tube library construction protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "At the meantime, TRACE-seq enables a cost-effective one-tube library construction protocol and hence is more rapid (within 6 hr) and convenient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described in the methods and supported by cost analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "16798b85-3efd-46f5-9609-b1ce37b7a745",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C78",
+      "claim": "This tagmentation activity on RNA/DNA hybrids is expected to have broad potentials on RNA biology and chromatin research.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect this tagmentation activity on RNA/DNA hybrids to have broad potentials on RNA biology and chromatin research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the demonstrated activity and potential applications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "558bfd52-d320-48d7-afd5-bee9ce7e09d8",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C79",
+      "claim": "Transposases catalyze the movement of defined DNA elements (transposon) to another part of the genome in a 'cut and paste' mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Transposases exist in both prokaryotes and eukaryotes and catalyze the movement of defined DNA elements (transposon) to another part of the genome in a 'cut and paste' mechanism (Kleckner, 1981; Finnegan, 1989; Curcio and Derbyshire, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "904f3ed7-0034-4523-9352-b10809781deb",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C80",
+      "claim": "Transposases exist in both prokaryotes and eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transposases exist in both prokaryotes and eukaryotes and catalyze the movement of defined DNA elements (transposon) to another part of the genome in a 'cut and paste' mechanism (Kleckner, 1981; Finnegan, 1989; Curcio and Derbyshire, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "4ad41682-02c1-4bbf-99a6-7731a0e2f9c9",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C81",
+      "claim": "TRACE-seq can be performed starting from total RNA extracted from 10,000 to 100 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As a proof of concept, we apply such Transposase-assisted RNA/DNA hybrids Co-tagmEntation (TRACE-seq) to achieve rapid and low-cost RNA sequencing starting from total RNA extracted from 10,000 to 100 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the introduction based on the low-input experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "d0a3ce3c-7071-4a11-8091-367b67de78f9",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C82",
+      "claim": "TRACE-seq shows bias in gene body coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that TRACE-seq performs well when compared with conventional RNA-seq methods in terms of detected gene number, gene expression measurement, library complexity, GC content and differential expression analysis, although TRACE-seq shows bias in gene body coverage and is not strand-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene body coverage analysis shown in Figure 2f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "a430746d-7672-4667-ab8f-b639658b3c41",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C83",
+      "claim": "TRACE-seq is not strand-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that TRACE-seq performs well when compared with conventional RNA-seq methods in terms of detected gene number, gene expression measurement, library complexity, GC content and differential expression analysis, although TRACE-seq shows bias in gene body coverage and is not strand-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a limitation of the method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "4beba7cf-7efc-49b7-8b6a-9c566dc27cc2",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C84",
+      "claim": "TRACE-seq avoids many laborious and time-consuming steps in traditional RNA-seq experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, it avoids many laborious and time-consuming steps in traditional RNA-seq experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the simplified workflow",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "1a9c1d53-6cf8-40c8-aac8-404bb4e9838f",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "claim_id": "C85",
+      "claim": "Such Tn5-assisted tagmentation of RNA/DNA hybrids could have broad applications in RNA biology and chromatin research.",
+      "claim_type": "EXPLICIT",
+      "source": "Such Tn5-assisted tagmentation of RNA/DNA hybrids could have broad applications in RNA biology and chromatin research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the demonstrated activity",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d6fa321f-d601-44d6-b21e-c0e4081eca1f",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Tn5 transposase belongs to the retroviral integrase superfamily, which shares a conserved catalytic RNase H-like domain and acts on both dsDNA and RNA/DNA hybrids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C75 are well-supported by structural data (Figure 1a) and multiple citations to prior bioinformatic and structural studies. The structural comparison clearly shows the conserved catalytic core across Tn5, HIV-1 integrase, and RNase HI, providing a mechanistic rationale for the hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "0e830308-6d0d-4e37-98da-a0aeb1035b69",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Tn5 transposase possesses in vitro tagmentation activity towards RNA/DNA hybrids, producing fragmented and adapter-tagged products in a dose-dependent manner with robust performance across buffer conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C10 are strongly supported by multiple complementary experimental approaches: Fragment Analyzer data showing fragmentation (C4, C5), dose-response experiments (C6), qPCR quantification showing ~256-fold increase in amplifiable products (C7, C8), buffer robustness testing (C9), and Sanger sequencing validation of adapter ligation (C10). The convergence of evidence from different assays provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "0cb1e382-5e90-4a4a-86c8-297e59fda1c2",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The efficiency of Tn5 toward RNA/DNA hybrids is approximately 1/16 that of dsDNA, but addition of PEG200 greatly improves efficiency by promoting B-form conformation, indicating that substrate conformation affects Tn5 preference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 are supported by qPCR data (Figure 1e) showing 4-cycle Ct difference between hybrids and dsDNA, and improvement with PEG200. The mechanistic explanation invoking A-form to B-form conformational change is supported by citation to Pramanik et al., 2011. However, the exact quantitative relationship between short and long oligos remains uncertain as acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "4c6e0742-3f2f-4c58-aea8-1fe44346e8bf",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Tn5 has direct tagmentation activity towards RNA/DNA hybrids, demonstrated using annealed RNA/DNA hybrids where dsDNA formation is not possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C17 are supported by experiments using in vitro transcribed RNA annealed to complementary DNA (Figure 1\u2014figure supplement 1h), with validation by dot-blot and native-PAGE. The 8-cycle Ct difference between Tn5-treated and control samples provides quantitative evidence. This experiment elegantly addresses the potential confound of reverse transcriptase-generated dsDNA.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "b8648a48-1a73-4867-a614-bf21e32e5b1a",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TRACE-seq is a simplified one-tube RNA-seq library construction method that uses total RNA as input, involves only three steps (reverse transcription, tagmentation, and strand extension/PCR), eliminates second-strand synthesis, and can be completed within 6 hours starting from as little as 2 ng total RNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22, C54-C55, C76-C77, C81, and C84 collectively describe the TRACE-seq workflow, which is clearly documented in Figure 2a and the methods section. The simplified protocol is demonstrated to work with inputs ranging from 2 ng to 200 ng total RNA. The time and workflow advantages are well-documented, though the exact 6-hour timeframe is stated but not explicitly validated with time-course data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "bc9d1676-2b7f-4580-b28c-13f9854dd164",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TRACE-seq demonstrates high reproducibility among technical replicates across different input amounts (200 ng, 20 ng, and 2 ng total RNA), with consistent gene expression measurements between different starting materials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 are strongly supported by correlation data shown in Figures 2b, 2c, and Figure 2\u2014figure supplement 1a,b. The high Pearson correlation coefficients (R > 0.89) across replicates and input amounts demonstrate technical reproducibility. However, these are technical replicates from the same RNA sample, not biological replicates, which limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "2282d379-9529-468d-bdd8-807448835257",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TRACE-seq shows comparable performance to traditional RNA-seq methods (NEBNext and Smart-seq2) in terms of detected genes (97% and 93% overlap), gene expression measurement (R > 0.90), differential expression analysis (R > 0.99), GC content, and library complexity, when using high-quality RNA (RIN 9.5).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29, C40-C42, and C52 are supported by comprehensive benchmarking data (Figures 2d-g, 3c, Figure 2\u2014figure supplement 1g). The high correlations and overlaps demonstrate comparable performance. However, the caveat about RNA quality (C42) is important\u2014the authors acknowledge that performance may be affected with lower quality RNA, which limits the generalizability of these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "73a43b33-3365-42a8-872b-5b57c91ace20",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TRACE-seq exhibits a 3' end bias in gene body coverage, particularly for transcripts between 1-4 kb, with higher coefficient of variation (0.54-0.70 vs 0.42-0.44) and moderately shorter insert sizes compared to traditional methods. Alternative priming strategies can shift but not eliminate coverage bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C39 and C82 are supported by gene body coverage analysis (Figure 2f, Figure 2\u2014figure supplement 1f) and insert size data (Figure 2\u2014figure supplement 1d). The 3' bias is clearly documented and length-dependent. The authors acknowledge this limitation and show that random priming introduces 5' bias instead (C38, C39), which is consistent with known RT behavior. This is a significant limitation that affects the method's utility for certain applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "db8a69b2-fa66-46b8-a13e-aa83d3b6a9bb",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TRACE-seq shows higher rRNA contamination (~9%) when total RNA is used as input compared to mRNA input, with similar contamination levels observed in Smart-seq2 libraries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C31 are supported by data in Supplementary files 2 and 3. The ~9% rRNA contamination with total RNA input is a limitation, though the comparison to Smart-seq2 suggests this is not unique to TRACE-seq. The use of oligo(dT) priming should theoretically reduce rRNA, so the 9% contamination may reflect non-specific priming or other technical issues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "8eae210c-1af7-46f0-bd47-d419b8169bb7",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TRACE-seq detected 4,577 differentially expressed genes between undifferentiated and differentiated mESCs, with 4,071 genes overlapping with NEBNext (which detected 4,452 genes), and fold changes highly correlated between methods (R > 0.99).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by differential expression analysis data (Figure 3a-c). The high overlap (89% of NEBNext genes, 91% of TRACE-seq genes) and very high correlation of fold changes (R > 0.99) demonstrate excellent performance for differential expression analysis. This is a critical validation for the method's utility in a common RNA-seq application.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "59117514-c945-4736-9fff-befd39c3e766",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tn5 exhibits an apparent insertion signature on RNA/DNA hybrids similar to dsDNA substrates, but per-position information contents are extremely low, suggesting minimal impact on gene body coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by nucleotide composition analysis (Figure 2\u2014figure supplement 1i) and WebLogo analysis (Figure 2\u2014figure supplement 1j). The low information content suggests weak sequence bias, which is consistent with the relatively uniform coverage observed. This addresses a potential concern about sequence-dependent bias affecting quantification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "1293335b-7c7d-4274-8e81-e567c7bb2dd2",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TRACE-seq outcompetes traditional methods in terms of speed, convenience, and cost, bypassing laborious processes and being compatible with low input (down to 2 ng total RNA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C56-C58 are supported by the demonstrated workflow simplification, successful experiments with 2 ng input (Figure 2\u2014figure supplement 1b), and cost comparison (Supplementary file 4). The practical advantages are clear, though quantitative time comparisons are not explicitly provided. The low-input compatibility is well-demonstrated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "efcf5a35-49c2-41c7-8caa-87d6d2ec60fa",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TRACE-seq libraries in their current form are not strand-specific, which is a significant limitation for RNA-seq experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is explicitly stated by the authors as a limitation. This is a significant drawback as strand-specific information is important for many RNA-seq applications, particularly for distinguishing sense and antisense transcripts. The authors acknowledge this limitation honestly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "8ca7e196-9b75-4570-8964-96981a770355",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TRACE-seq could potentially be converted to 5' or 3' RNA-seq, used for multiplex profiling with barcoded adaptors, benefit from home-made Tn5 for cost reduction, and be improved through protein engineering to generate hyperactive mutants for RNA/DNA hybrids with utility in single-cell RNA-seq.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C67 are speculative future directions supported by citations to related methods but without experimental validation in this study. While the suggestions are reasonable based on analogies to existing methods, they remain hypothetical until demonstrated. These represent promising directions but are not established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "4d66a6cf-0477-446c-af62-a53adf5d7b6f",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "An independent study (SHERRY, Di et al., 2020) reported similar findings with major conclusions consistent between the two studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C60 are supported by citation to Di et al., 2020. Independent validation of the core finding (Tn5 tagmentation of RNA/DNA hybrids) strengthens confidence in the result, though the authors do not provide detailed comparison of the two methods' performance characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "b5fb28cb-a17a-47d7-8460-995d0db894f8",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background context: RNA/DNA duplexes exist in vivo (R-loops, chromatin-bound lncRNAs), transposases catalyze DNA element movement via 'cut and paste' mechanism, and Tn5 has been widely used for dsDNA tagmentation in sequencing applications including ATAC-seq.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C72-C74, C79-C80 provide established background knowledge supported by appropriate citations. These contextual claims are well-documented in the literature and provide important motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "386b1ecf-b90d-46d7-978c-52e3e019cad0",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "TRACE-seq manifests a 'cryptic' activity of Tn5 transposase as a powerful tool with potential broad applications in RNA biology, chromatin research, and biomedical applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C71, C78, and C85 are speculative statements about future applications. While the demonstrated tagmentation activity is novel and the method shows promise, the 'broad biomedical applications' remain to be demonstrated. The current work establishes proof-of-concept for RNA-seq but does not validate other potential applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    },
+    {
+      "id": "b1ee13d8-ce9b-4215-9e2f-bbddab808cac",
+      "content_id": "ffb59945-30c0-432f-aead-7c29f65e3fe8",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "TRACE-seq is not strand-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 restates the limitation acknowledged in C61. This is a fundamental characteristic of the current method resulting from the tagmentation of both strands of the RNA/DNA hybrid without directional information preservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T18:40:47.909970Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8edea72d-51c2-4de4-b14d-f582a8b01c0f",
+      "result_id": "d6fa321f-d601-44d6-b21e-c0e4081eca1f"
+    },
+    {
+      "claim_id": "7b8a3ca0-122b-4c46-b621-02be18a53fad",
+      "result_id": "d6fa321f-d601-44d6-b21e-c0e4081eca1f"
+    },
+    {
+      "claim_id": "526462c6-f4d7-48dd-939b-ea85a334fd34",
+      "result_id": "d6fa321f-d601-44d6-b21e-c0e4081eca1f"
+    },
+    {
+      "claim_id": "1034c688-7429-4d4f-9548-023a9e0a3af1",
+      "result_id": "0e830308-6d0d-4e37-98da-a0aeb1035b69"
+    },
+    {
+      "claim_id": "9a0ef3dd-cedf-44fd-8fc3-9302e636a2ee",
+      "result_id": "0e830308-6d0d-4e37-98da-a0aeb1035b69"
+    },
+    {
+      "claim_id": "d73ed8fc-df31-4094-bd44-ab36ae4d96d1",
+      "result_id": "0e830308-6d0d-4e37-98da-a0aeb1035b69"
+    },
+    {
+      "claim_id": "3f083cd2-b3a0-4a71-9ddc-a3de0010feae",
+      "result_id": "0e830308-6d0d-4e37-98da-a0aeb1035b69"
+    },
+    {
+      "claim_id": "0e857dd6-90c2-4db4-a8ed-91c3a4f2a48f",
+      "result_id": "0e830308-6d0d-4e37-98da-a0aeb1035b69"
+    },
+    {
+      "claim_id": "2ec4412f-1d6f-4ecf-9a0e-1f6c3e2adcad",
+      "result_id": "0e830308-6d0d-4e37-98da-a0aeb1035b69"
+    },
+    {
+      "claim_id": "c21651d6-11a2-4a64-b7b8-49a198d99950",
+      "result_id": "0e830308-6d0d-4e37-98da-a0aeb1035b69"
+    },
+    {
+      "claim_id": "b36cff70-57be-428e-bb33-9b252d9d6bf8",
+      "result_id": "0e830308-6d0d-4e37-98da-a0aeb1035b69"
+    },
+    {
+      "claim_id": "ddfcc679-afeb-45dd-b615-8b60d6e68f23",
+      "result_id": "0cb1e382-5e90-4a4a-86c8-297e59fda1c2"
+    },
+    {
+      "claim_id": "44d0a6ba-cb6b-4b08-bd58-65204fe0733c",
+      "result_id": "0cb1e382-5e90-4a4a-86c8-297e59fda1c2"
+    },
+    {
+      "claim_id": "2827a19e-4a27-4f16-b7e9-449fb60f09e5",
+      "result_id": "0cb1e382-5e90-4a4a-86c8-297e59fda1c2"
+    },
+    {
+      "claim_id": "e185f6ed-20b8-4c25-a6b3-9e76de353eb7",
+      "result_id": "0cb1e382-5e90-4a4a-86c8-297e59fda1c2"
+    },
+    {
+      "claim_id": "87397f3c-a3d4-42c9-932c-f429b530cb37",
+      "result_id": "0cb1e382-5e90-4a4a-86c8-297e59fda1c2"
+    },
+    {
+      "claim_id": "86fd4745-c61e-4e43-9688-f1a6921293d8",
+      "result_id": "4c6e0742-3f2f-4c58-aea8-1fe44346e8bf"
+    },
+    {
+      "claim_id": "adb6255c-09b4-43ca-9540-d44ba0f059ec",
+      "result_id": "4c6e0742-3f2f-4c58-aea8-1fe44346e8bf"
+    },
+    {
+      "claim_id": "a38a1948-20fb-4b8f-9993-d99f1d741931",
+      "result_id": "b8648a48-1a73-4867-a614-bf21e32e5b1a"
+    },
+    {
+      "claim_id": "76530be9-0340-4f17-b0e8-37e4a0012b09",
+      "result_id": "b8648a48-1a73-4867-a614-bf21e32e5b1a"
+    },
+    {
+      "claim_id": "79062b3d-ece9-4368-9ae9-4441b2988c71",
+      "result_id": "b8648a48-1a73-4867-a614-bf21e32e5b1a"
+    },
+    {
+      "claim_id": "b3466710-c14a-4036-8ac1-36d264093343",
+      "result_id": "b8648a48-1a73-4867-a614-bf21e32e5b1a"
+    },
+    {
+      "claim_id": "093c17fc-56b7-44e5-b78b-3a72d4c8ba17",
+      "result_id": "b8648a48-1a73-4867-a614-bf21e32e5b1a"
+    },
+    {
+      "claim_id": "e2aa0c63-03a7-4df2-9831-7e46dcbde12d",
+      "result_id": "b8648a48-1a73-4867-a614-bf21e32e5b1a"
+    },
+    {
+      "claim_id": "17c601d7-51ed-43b8-b32d-b9b0ac27b6a5",
+      "result_id": "b8648a48-1a73-4867-a614-bf21e32e5b1a"
+    },
+    {
+      "claim_id": "0b0e70e8-56f7-4d14-bdfa-0d5970d3504d",
+      "result_id": "b8648a48-1a73-4867-a614-bf21e32e5b1a"
+    },
+    {
+      "claim_id": "4ad41682-02c1-4bbf-99a6-7731a0e2f9c9",
+      "result_id": "b8648a48-1a73-4867-a614-bf21e32e5b1a"
+    },
+    {
+      "claim_id": "4beba7cf-7efc-49b7-8b6a-9c566dc27cc2",
+      "result_id": "b8648a48-1a73-4867-a614-bf21e32e5b1a"
+    },
+    {
+      "claim_id": "7d474ac8-d04a-4291-a544-b53f49a3276d",
+      "result_id": "bc9d1676-2b7f-4580-b28c-13f9854dd164"
+    },
+    {
+      "claim_id": "107098af-e2de-46a4-b7a5-1aab727185b4",
+      "result_id": "bc9d1676-2b7f-4580-b28c-13f9854dd164"
+    },
+    {
+      "claim_id": "2dddedc7-da60-42c9-8ac4-0bf2e2bc7521",
+      "result_id": "bc9d1676-2b7f-4580-b28c-13f9854dd164"
+    },
+    {
+      "claim_id": "8dd917f1-bcb7-4c98-9762-a2582d2a99ed",
+      "result_id": "2282d379-9529-468d-bdd8-807448835257"
+    },
+    {
+      "claim_id": "84f0fcba-0d8c-4c29-a6aa-7e8a99a92d4f",
+      "result_id": "2282d379-9529-468d-bdd8-807448835257"
+    },
+    {
+      "claim_id": "07d71cd5-2e54-415a-9dbe-0c8a13cb1857",
+      "result_id": "2282d379-9529-468d-bdd8-807448835257"
+    },
+    {
+      "claim_id": "978f9a8b-fe4b-451e-a96d-6cce4f51c77b",
+      "result_id": "2282d379-9529-468d-bdd8-807448835257"
+    },
+    {
+      "claim_id": "9a66259e-b864-4e55-afa2-3f2fe0579156",
+      "result_id": "2282d379-9529-468d-bdd8-807448835257"
+    },
+    {
+      "claim_id": "6c05fa0f-d9d8-453f-a15b-57d42bc40923",
+      "result_id": "2282d379-9529-468d-bdd8-807448835257"
+    },
+    {
+      "claim_id": "87c2c820-ed69-47a0-981b-b15a236340a2",
+      "result_id": "2282d379-9529-468d-bdd8-807448835257"
+    },
+    {
+      "claim_id": "7e7334d0-476f-4409-8cc5-de53aa97cbd3",
+      "result_id": "2282d379-9529-468d-bdd8-807448835257"
+    },
+    {
+      "claim_id": "1f9cb5f9-d043-4162-8ccc-50c2545b6a1f",
+      "result_id": "73a43b33-3365-42a8-872b-5b57c91ace20"
+    },
+    {
+      "claim_id": "b1cbff01-f608-470b-9810-30ec8951ee71",
+      "result_id": "73a43b33-3365-42a8-872b-5b57c91ace20"
+    },
+    {
+      "claim_id": "daf82be2-21b6-4b34-ad8a-807983f3ec97",
+      "result_id": "73a43b33-3365-42a8-872b-5b57c91ace20"
+    },
+    {
+      "claim_id": "0d75108e-d416-49e6-acee-b33bccbec86b",
+      "result_id": "73a43b33-3365-42a8-872b-5b57c91ace20"
+    },
+    {
+      "claim_id": "cbc2efd0-d78b-465a-a585-52aa6afd906a",
+      "result_id": "73a43b33-3365-42a8-872b-5b57c91ace20"
+    },
+    {
+      "claim_id": "85dd968e-8900-43f7-8bdc-cb70f7c2787a",
+      "result_id": "73a43b33-3365-42a8-872b-5b57c91ace20"
+    },
+    {
+      "claim_id": "4887a654-0117-444b-b7c7-3a6ad5b13bf0",
+      "result_id": "73a43b33-3365-42a8-872b-5b57c91ace20"
+    },
+    {
+      "claim_id": "eb890b55-fcc6-40db-a19d-4e57b0aad40e",
+      "result_id": "73a43b33-3365-42a8-872b-5b57c91ace20"
+    },
+    {
+      "claim_id": "d0a3ce3c-7071-4a11-8091-367b67de78f9",
+      "result_id": "73a43b33-3365-42a8-872b-5b57c91ace20"
+    },
+    {
+      "claim_id": "3e588c0b-6a58-4725-a0f5-e4b3c5f736b4",
+      "result_id": "db8a69b2-fa66-46b8-a13e-aa83d3b6a9bb"
+    },
+    {
+      "claim_id": "8ec0db7a-f2c4-4ca8-9c4c-d2b298d2795d",
+      "result_id": "db8a69b2-fa66-46b8-a13e-aa83d3b6a9bb"
+    },
+    {
+      "claim_id": "9d64bdc1-bbce-4f90-afca-3616fff2f63a",
+      "result_id": "8eae210c-1af7-46f0-bd47-d419b8169bb7"
+    },
+    {
+      "claim_id": "5a4a2fc3-951d-4a54-97e9-9e58770cd8a6",
+      "result_id": "8eae210c-1af7-46f0-bd47-d419b8169bb7"
+    },
+    {
+      "claim_id": "3a80b707-00b0-4c1d-9cb8-21f2f98ab359",
+      "result_id": "8eae210c-1af7-46f0-bd47-d419b8169bb7"
+    },
+    {
+      "claim_id": "97fa7022-d9a8-49be-ae52-997d36258236",
+      "result_id": "8eae210c-1af7-46f0-bd47-d419b8169bb7"
+    },
+    {
+      "claim_id": "5e33612b-f1ec-446a-9896-f6fd44a1f8d2",
+      "result_id": "8eae210c-1af7-46f0-bd47-d419b8169bb7"
+    },
+    {
+      "claim_id": "416ffa18-ffdf-40ea-923d-85f3110f897b",
+      "result_id": "59117514-c945-4736-9fff-befd39c3e766"
+    },
+    {
+      "claim_id": "f8f200ce-22e7-4b35-af7f-615031151be4",
+      "result_id": "59117514-c945-4736-9fff-befd39c3e766"
+    },
+    {
+      "claim_id": "29737c14-8062-4869-9b5a-583061c4c742",
+      "result_id": "59117514-c945-4736-9fff-befd39c3e766"
+    },
+    {
+      "claim_id": "c0c3a13f-4c2c-4dfe-96bf-b9744a3ab68a",
+      "result_id": "59117514-c945-4736-9fff-befd39c3e766"
+    },
+    {
+      "claim_id": "ab6bf46b-81ea-4096-a921-fbc9a19e51ce",
+      "result_id": "1293335b-7c7d-4274-8e81-e567c7bb2dd2"
+    },
+    {
+      "claim_id": "93ef0b73-2326-4f3e-89fa-d2dbafc4ca1d",
+      "result_id": "1293335b-7c7d-4274-8e81-e567c7bb2dd2"
+    },
+    {
+      "claim_id": "18e18717-da8c-4c5e-9bc5-c03c32389643",
+      "result_id": "1293335b-7c7d-4274-8e81-e567c7bb2dd2"
+    },
+    {
+      "claim_id": "c1b8194c-361d-4617-be00-2e99dec70e03",
+      "result_id": "1293335b-7c7d-4274-8e81-e567c7bb2dd2"
+    },
+    {
+      "claim_id": "be878d5b-9b44-4a29-a7d1-b67ad04c4739",
+      "result_id": "efcf5a35-49c2-41c7-8caa-87d6d2ec60fa"
+    },
+    {
+      "claim_id": "2341e55d-42c2-45a7-9b85-aabccec66bef",
+      "result_id": "8ca7e196-9b75-4570-8964-96981a770355"
+    },
+    {
+      "claim_id": "39aa0b99-1ef7-4dc6-8956-6996554f7b00",
+      "result_id": "8ca7e196-9b75-4570-8964-96981a770355"
+    },
+    {
+      "claim_id": "714a984d-dc2a-4751-a004-7caa9bc8b549",
+      "result_id": "8ca7e196-9b75-4570-8964-96981a770355"
+    },
+    {
+      "claim_id": "57565ae0-4f5d-4e1b-b412-8a4d93c34475",
+      "result_id": "8ca7e196-9b75-4570-8964-96981a770355"
+    },
+    {
+      "claim_id": "930ae3f3-2b88-48e8-99f0-1fe811505390",
+      "result_id": "8ca7e196-9b75-4570-8964-96981a770355"
+    },
+    {
+      "claim_id": "d3969a0b-5305-45bb-8042-594922f63b9f",
+      "result_id": "8ca7e196-9b75-4570-8964-96981a770355"
+    },
+    {
+      "claim_id": "4ca72488-1276-4b10-959c-485e5fa34825",
+      "result_id": "4d66a6cf-0477-446c-af62-a53adf5d7b6f"
+    },
+    {
+      "claim_id": "7c084455-26fc-48e2-8fff-21c3e52dd6c6",
+      "result_id": "4d66a6cf-0477-446c-af62-a53adf5d7b6f"
+    },
+    {
+      "claim_id": "2786ce3f-f5ce-4cba-8087-6ec4a722d156",
+      "result_id": "b5fb28cb-a17a-47d7-8460-995d0db894f8"
+    },
+    {
+      "claim_id": "4e438266-fc3d-47cd-8f9d-8a48d74be450",
+      "result_id": "b5fb28cb-a17a-47d7-8460-995d0db894f8"
+    },
+    {
+      "claim_id": "1c5640dc-e1a9-4bbf-b1c5-84b3289c1525",
+      "result_id": "b5fb28cb-a17a-47d7-8460-995d0db894f8"
+    },
+    {
+      "claim_id": "df199570-8e96-4162-8e4c-578dea235884",
+      "result_id": "b5fb28cb-a17a-47d7-8460-995d0db894f8"
+    },
+    {
+      "claim_id": "558bfd52-d320-48d7-afd5-bee9ce7e09d8",
+      "result_id": "b5fb28cb-a17a-47d7-8460-995d0db894f8"
+    },
+    {
+      "claim_id": "904f3ed7-0034-4523-9352-b10809781deb",
+      "result_id": "b5fb28cb-a17a-47d7-8460-995d0db894f8"
+    },
+    {
+      "claim_id": "32449b2e-85c1-485b-a4ae-e6611ff1cc3a",
+      "result_id": "386b1ecf-b90d-46d7-978c-52e3e019cad0"
+    },
+    {
+      "claim_id": "e7537ec6-c59f-430b-bf5e-10b8855255df",
+      "result_id": "386b1ecf-b90d-46d7-978c-52e3e019cad0"
+    },
+    {
+      "claim_id": "16798b85-3efd-46f5-9609-b1ce37b7a745",
+      "result_id": "386b1ecf-b90d-46d7-978c-52e3e019cad0"
+    },
+    {
+      "claim_id": "1a9c1d53-6cf8-40c8-aac8-404bb4e9838f",
+      "result_id": "386b1ecf-b90d-46d7-978c-52e3e019cad0"
+    },
+    {
+      "claim_id": "a430746d-7672-4667-ab8f-b639658b3c41",
+      "result_id": "b1ee13d8-ce9b-4215-9e2f-bbddab808cac"
+    }
+  ],
+  "comparisons": []
+}

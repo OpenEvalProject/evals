@@ -1,0 +1,2010 @@
+{
+  "submission": {
+    "id": "7310b324-c111-4735-ad91-9e5cfa6044ab",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T06:42:49.980643Z",
+    "updated_at": "2025-12-02T06:42:49.980643Z"
+  },
+  "content": [
+    {
+      "id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "submission_id": "7310b324-c111-4735-ad91-9e5cfa6044ab",
+      "content_type": "manuscript",
+      "content_text": "# OGT binds a conserved C-terminal domain of TET1 to regulate TET1 activity and function in development\n\n## Authors\n\n- Joel Hrit<sup>1</sup> ([ORCID: 0000-0002-4497-956X](https://orcid.org/0000-0002-4497-956X))\n- Leeanne Goodrich<sup>1</sup> ([ORCID: 0000-0003-0603-4503](https://orcid.org/0000-0003-0603-4503))\n- Cheng Li<sup>3</sup>\n- Bang-An Wang<sup>5</sup> ([ORCID: 0000-0003-4488-1738](https://orcid.org/0000-0003-4488-1738))\n- Ji Nie<sup>6</sup>\n- Xiaolong Cui<sup>6</sup>\n- Elizabeth Allene Martin<sup>1</sup>\n- Eric Simental<sup>1</sup> ([ORCID: 0000-0002-8638-6578](https://orcid.org/0000-0002-8638-6578))\n- Jenna Fernandez<sup>9</sup>\n- Monica Yun Liu<sup>10</sup> ([ORCID: 0000-0003-3936-9377](https://orcid.org/0000-0003-3936-9377))\n- Joseph R Nery<sup>5</sup>\n- Rosa Castanon<sup>5</sup>\n- Rahul M Kohli<sup>10</sup>\n- Natalia Tretyakova<sup>9</sup> ([ORCID: 0000-0002-0621-6860](https://orcid.org/0000-0002-0621-6860))\n- Chuan He<sup>6</sup> ([ORCID: 0000-0003-4319-7424](https://orcid.org/0000-0003-4319-7424))\n- Joseph R Ecker<sup>5</sup> ([ORCID: 0000-0001-5799-5895](https://orcid.org/0000-0001-5799-5895))\n- Mary Goll<sup>3</sup> ([ORCID: 0000-0001-5003-6958](https://orcid.org/0000-0001-5003-6958))\n- Barbara Panning<sup>1</sup> ([ORCID: 0000-0002-8301-1172](https://orcid.org/0000-0002-8301-1172)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Biophysics University of California San Francisco San Francisco United States\n2. TETRAD Graduate Program University of California San Francisco San Francisco United States\n3. Developmental Biology Program Memorial Sloan Kettering Cancer Center New York United States\n4. Program in Biochemistry and Structural Biology, Cell and Developmental Biology, and Molecular Biology (BCMB Allied program) Weill Cornell Graduate School of Medical Sciences, Cornell University New York United States\n5. Genomic Analysis Laboratory and Howard Hughes Medical Institute Salk Institute for Biological Studies La Jolla United States\n6. Department of Chemistry Howard Hughes Medical Institute, University of Chicago Chicago United States\n7. Department of Biochemistry and Molecular Biology University of Chicago Chicago United States\n8. Institute for Biophysical Dynamics University of Chicago Chicago United States\n9. Department of Medicinal Chemistry University of Minnesota Minneapolis United States\n10. Department of Biochemistry and Biophysics Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n11. Department of Medicine Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTET enzymes convert 5-methylcytosine to 5-hydroxymethylcytosine and higher oxidized derivatives. TETs stably associate with and are post-translationally modified by the nutrient-sensing enzyme OGT, suggesting a connection between metabolism and the epigenome. Here, we show for the first time that modification by OGT enhances TET1 activity in vitro. We identify a TET1 domain that is necessary and sufficient for binding to OGT and report a point mutation that disrupts the TET1-OGT interaction. We show that this interaction is necessary for TET1 to rescue hematopoetic stem cell production in tet mutant zebrafish embryos, suggesting that OGT promotes TET1\u2019s function during development. Finally, we show that disrupting the TET1-OGT interaction in mouse embryonic stem cells changes the abundance of TET2 and 5-methylcytosine, which is accompanied by alterations in gene expression. These results link metabolism and epigenetic control, which may be relevant to the developmental and disease processes regulated by these two enzymes.\n\n## Introduction\n\nMethylation at the 5\u2019 position of cytosine in DNA is a widespread epigenetic regulator of gene expression. Proper deposition and removal of this mark is indispensable for normal vertebrate development, and misregulation of DNA methylation is a common feature in many diseases (Guibert and Weber, 2013; Smith and Meissner, 2013). The discovery of the Ten-Eleven Translocation (TET) family of enzymes, which iteratively oxidize 5-methylcytosine (5mC) to 5-hydroxymethylcytosine (5hmC), 5-formylcytosine (5fC), and 5-carboxylcytosine (5caC), has expanded the epigenome (Tahiliani et al., 2009; Ito et al., 2010; Kriaucionis and Heintz, 2009; He et al., 2011; Ito et al., 2011). These modified cytosines have multiple roles, functioning both as transient intermediates in an active DNA demethylation pathway (He et al., 2011; Guo et al., 2011; Cortellino et al., 2011; Gao et al., 2013; Weber et al., 2016) and as stable epigenetic marks (Bachman et al., 2014; Bachman et al., 2015) that may recruit specific readers (Spruijt et al., 2013).\n\nOne interesting interaction partner of TET proteins is O-linked N-acetylglucosamine (O-GlcNAc) Transferase (OGT). OGT is the sole enzyme responsible for attaching a GlcNAc sugar to serine, threonine, and cysteine residues of over 1000 nuclear, cytoplasmic, and mitochondrial proteins (Haltiwanger et al., 1990; Hanover et al., 2012; Maynard et al., 2016). Like phosphorylation, O-GlcNAcylation is a reversible modification that affects the function of target proteins. OGT\u2019s targets regulate gene expression (Lewis and Hanover, 2014; Hardivill\u00e9 and Hart, 2016), metabolism (Hanover et al., 2012; Bullen et al., 2014; Ruan et al., 2013), and signaling (Durning et al., 2016; Hanover et al., 2005), consistent with OGT\u2019s role in development and disease (Hart et al., 2011; Levine and Walker, 2016).\n\nOGT stably interacts with and modifies all three TET proteins and its genome-wide distribution overlaps significantly with TETs (Vella et al., 2013; Deplus et al., 2013; Chen et al., 2013). Two studies in mouse embryonic stem cells (mESCs) have suggested that TET1 and OGT may be intimately linked in regulation of gene expression, as depleting either enzyme reduced the chromatin association of the other and affected expression of its target genes (Vella et al., 2013; Shi et al., 2013). However, it is unclear to what extent these genome-wide changes are direct effects of perturbing the TET1-OGT interaction. Further work is necessary to uncover the biological importance of the partnership between TET1 and OGT.\n\nIn this work, we map the interaction between TET1 and OGT to a small C-terminal region of TET1, which is both necessary and sufficient to bind OGT. We show for the first time that OGT modifies the catalytic domain of TET1 in vitro and enhances its catalytic activity. We also use mutant TET1 to show that the TET1-OGT interaction promotes TET1 function in the developing zebrafish embryo. Finally, we show that in mESCs a mutation in TET1 that impairs its interaction with OGT results in alterations in gene expression and in abundance of 5mC and TET2. Together these results suggest that OGT regulates TET1 activity, indicating that the TET1-OGT interaction may be two-fold in function \u2013 allowing TET1 to recruit OGT to specific genomic loci and allowing OGT to modulate TET1 activity.\n\n## Results\n\n### A short C-terminal region of TET1 is necessary for binding to OGT\n\nTET1 and OGT interact with each other and are mutually dependent for their localization to chromatin(Vella et al., 2013). To understand the role of this association, it is necessary to specifically disrupt the TET1-OGT interaction. All three TETs interact with OGT via their catalytic domains (Deplus et al., 2013; Chen et al., 2013; Ito et al., 2014). We sought to identify the region within the TET1 catalytic domain (TET1 CD) responsible for binding to OGT. The TET1 CD consists of a cysteine-rich N-terminal region necessary for co-factor and substrate binding, a catalytic fold consisting of two lobes separated by a spacer of unknown function, and a short C-terminal region also of unknown function (Figure 1A). We transiently transfected HEK293T cells with FLAG-tagged mouse TET1 CD constructs bearing deletions of each of these regions, some of which failed to express (Figure 1B). Because HEK293T cells have low levels of endogenous OGT, we also co-expressed His-tagged human OGT (identical to mouse at 1042 of 1046 residues). TET1 constructs were immunoprecipitated (IPed) using a FLAG antibody and analyzed for interaction with OGT. We found that deletion of only the 45 residue C-terminus of TET1 (hereafter C45) prevented detectable interaction with OGT (Figure 1B, TET1 CD del. 4). To exclude the possibility that this result is an artifact of OGT overexpression, we repeated the experiment overexpressing only TET1. TET1 CD, but not TET1 CD lacking C45, interacted with endogenous OGT, confirming that the C45 is necessary for this interaction (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig1-v2.jpg)\n\n**Figure 1.:** (A) Domain architecture of TET1. (B) Diagram of FLAG-tagged TET1 CD constructs expressed in HEK293T cells (upper). FLAG and OGT western blot of inputs and FLAG IPs from HEK293T cells transiently expressing FLAG-TET1 CD truncations and His-OGT (lower). (C) Diagram of His-tagged OGT constructs expressed in HEK293T cells (upper). FLAG and His western blot of input and FLAG IPs from HEK293T cells transiently expressing FLAG-TET1 CD and His-OGT TPR deletions (lower).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig1-figsupp1-v2.jpg)\n\nOGT has two major domains: the N-terminus consists of 13.5 tetratricopeptide repeat (TPR) protein\u2013protein interaction domains, and the C-terminus contains the bilobed catalytic domain (Figure 1C). We made internal deletions of several sets of TPRs to ask which are responsible for binding to the TET1 CD. We co-transfected HEK293T cells with FLAG-TET1 CD and His6-tagged OGT constructs and performed FLAG IP and western blot as above. We found that all the TPR deletions tested impaired the interaction with TET1 CD, with deletion of TPRs 7\u00a0\u2013\u00a09, 10\u00a0\u2013\u00a012, or 13\u00a0\u2013\u00a013.5 being most severe (Figure 1C). This result suggests that all of OGT\u2019s TPRs may be involved in binding to the TET1 CD, or that deletion of a set of TPRs disrupts the overall structure of the repeats in a way that disfavors binding.\n\n### Conserved residues in the TET1 C45 are necessary for the TET1-OGT interaction\n\nAn alignment of the TET1 C45 region with the C-termini of TET2 and TET3 revealed several conserved residues (Figure 2A). We mutated clusters of three conserved residues in the TET1 C45 of FLAG-tagged TET1 CD (Figure 2B) and co-expressed these constructs with His-OGT in HEK293T cells. FLAG pulldowns revealed that two sets of point mutations disrupted the interaction with OGT: mutation of D2018, V2021, and T2022, or mutation of V2021, T2022, and S2024 (Figure 2C, mt1 and mt2). These results suggested that the residues between D2018 and S2024 are crucial for the interaction between TET1 and OGT. Further mutational analysis revealed that altering D2018 to A (D2018A) eliminated detectable interaction between FLAG-tagged TET1 CD and His-OGT (Figure 2D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig2-v2.jpg)\n\n**Figure 2.:** (A) Alignment of the C-termini of human (h) and mouse (m) TETs 1, 2, and 3. A conserved aspartate residue mutated in D is highlighted. (B) Diagram of FLAG-tagged TET1 CD constructs expressed in HEK293T cells. (C) FLAG and OGT western blot of inputs and FLAG IPs from HEK293T cells transiently expressing FLAG-TET1 CD triple point mutants and His-OGT. (D) FLAG and His western blot of inputs and FLAG IPs from HEK293T cells transiently expressing His-OGT and FLAG-TET1 CD or FLAG-TET1 CD D2018A.\n\n### The TET1 C-terminus is sufficient for binding to OGT\n\nHaving shown that the TET1 C45 is necessary for the interaction with OGT, we next examined if it is also sufficient to bind OGT. We fused the TET1 C45 to the C-terminus of GFP (Figure 3A) and investigated its interaction with OGT. We transiently transfected GFP or GFP-C45 into HEK293T cells and pulled down with a GFP antibody. We found that GFP-C45, but not GFP alone, bound OGT (Figure 3B), indicating that the TET1 C45 is sufficient for interaction with OGT.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of the TET1 C45 fusion to the C-terminus of GFP. (B) GFP and OGT western blot of inputs and GFP IPs from HEK293T cells transiently expressing GFP or GFP-TET1 C45. *Truncated GFP. (C) Coomassie stained protein gel of inputs and TET1 IPs from in vitro binding reactions containing rOGT and rTET1 CD wild type or D2018A. No UDP-GlcNAc was included in these reactions. (D) GFP and OGT western blot of inputs and OGT IPs from in vitro binding reactions containing rOGT and in vitro translated GFP constructs. *Truncated GFP.\n\nTo determine if the interaction between TET1 CD and OGT is direct, we employed recombinant proteins in pulldown assays using beads conjugated to a TET1 antibody. We used recombinant human OGT (rOGT) isolated from E. coli and recombinant mouse TET1 catalytic domain (aa1367-2039), either wild type (rTET1 wt) or D2018A (rD2018A) purified from sf9 cells. rTET1 wt, but not beads alone, pulled down rOGT, indicating a direct interaction between these proteins (Figure 3C). rD2018A did not pull down rOGT, consistent with our mutational analysis in cells. Then we used an in vitro transcription/translation extract to produce GFP and GFP-C45, incubated each with rOGT, and found that the TET1 C45 is sufficient to confer binding to rOGT (Figure 3D). The D2018A mutation in the GFP-C45 was also sufficient to prevent rOGT binding (Figure 3D), consistent with the behavior of TET1 CD D2018A in cells. Together these results indicate that the TET1-OGT interaction is direct and mediated by the TET1 C45.\n\n### The D2018A mutation impairs TET1 CD stimulation by OGT\n\nWe employed the D2018A mutation to investigate the effects of perturbing the TET1-OGT interaction on rTET1 activity. rTET1 wt and rD2018A catalyzed formation of 5hmC on an in vitro methylated lambda DNA substrate (Figure 4A). Incubation with rOGT and OGT\u2019s cofactor UDP-GlcNAc resulted in O-GlcNAcylation of rTET1 wt but not rD2018A (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig4-v2.jpg)\n\n**Figure 4.:** (A) 5hmC slot blot of biotinylated 5mC containing lambda DNA from rTET1 CD activity assays. Alkaline phosphatase staining was used to detect biotin as a loading control. (B) Western blot for O-GlcNAc in in vitro O-GlcNAcylation reactions. (C) 5hmC slot blot of biotinylated 5mC containing lambda DNA from rTET1 wt activity assays. Alkaline phosphatase staining was used to detect biotin as a loading control. (D) Quantification of 5hmC levels from rTET1 wt activity assays. Results are from 3 to 5 slot blots and normalized to rTET1 wt alone. (E) 5hmC slot blot of biotinylated 5mC containing lambda DNA from rD2018A activity assays. Alkaline phosphatase staining was used to detect biotin as a loading control. (F) Quantification of 5hmC levels from rD2018A activity assays. Results are from 3 to 5 slot blots and normalized to rD2018A alone. Error bars denote s.d. *p<0.01, **p<0.01, N.S. \u2013 not significant.\n\nTo explore whether O-GlcNAcylation affects TET1 CD activity, we incubated rTET1 wt and rD2018A with UDP-GlcNAc and rOGT individually or together and assessed 5hmC production (Figure 4C\u2013F, Figure 4\u2014source data 1). Addition of UDP-GlcNAc did not significantly affect activity of rTET1 wt or rD2018A. Incubation with rOGT alone slightly enhanced 5hmC synthesis by rTET1 wt (1.3 to 1.7-fold), but not rD2018A. We observed robust stimulation (4 to 5-fold) when rTET1 wt but not rD2018A was incubated with rOGT and UDP-GlcNAc. These results suggest that while the TET1-OGT protein-protein interaction may slightly enhance TET1\u2019s activity, the O-GlcNAc modification is responsible for the majority of the observed stimulation.\n\n### The TET-OGT interaction promotes TET1 function in the zebrafish embryo\n\nWe used zebrafish as a model system to ask whether the D2018A mutation affects TET function during development. Deletion analysis of tets in zebrafish showed that Tet2 and Tet3 are the most important in development, while Tet1 contribution is relatively limited (Li et al., 2015). Deletion of both tet2 and tet3 (tet2/3 DM) causes a severe decrease in 5hmC levels accompanied by larval lethality owing to abnormalities including defects in hematopoietic stem cell (HSC) production. Reduced HSC production is visualized by reduction in the transcription factor runx1, which marks HSCs in the dorsal aorta of wild-type embryos, but is largely absent from this region in tet2/3 DM embryos. 5hmC levels and runx1 expression are rescued by injection of human TET2 or TET3 mRNA into one-cell-stage embryos (Li et al., 2015).\n\nGiven strong sequence conservation among vertebrate TET/Tet proteins, we asked if over expression of mouse Tet1 mRNA could also rescue HSC production in tet2/3 DM zebrafish embryos and if this rescue is OGT interaction-dependent. To this end, tet2/3 DM embryos were injected with wild type or D2018A mutant encoding mouse Tet1 mRNA at the one cell stage. At 30 hr post fertilization (hpf) embryos were fixed and the presence of runx1 positive HSCs in the dorsal aorta was assessed by in situ hybridization (Figure 5A). Tet1 wild type mRNA significantly increased the percentage of embryos with strong runx1 labeling in the dorsal aorta (high runx1), while Tet1 D2018A mRNA failed to rescue runx1 positive cells (Figure 5A\u2013B, Figure 5\u2014source data 1). We also performed dot blots with genomic DNA from these embryos to measure levels of 5hmC (Figure 5C). On average, embryos injected with wild type Tet1 mRNA showed a modest but significant increase in 5hmC relative to uninjected tet2/3 DM embryos, while injection of TET1 D2018A mRNA did not show a significant increase (Figure 5D). These results suggest that the TET1-OGT interaction promotes both TET1\u2019s catalytic activity and its ability to rescue runx1 expression in this system.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative images of runx1 labeling in the dorsal aorta of wild type or tet2/3DM zebrafish embryos, uninjected or injected with mRNA encoding mouse Tet1 wild type or D2018A. (B) Percentage of embryos with high runx1 expression along the dorsal aorta. (C) 5hmC dot blot of genomic DNA from wild type or tet2/3DM zebrafish embryos injected with Tet1 wild type or D2018A mRNA. Methylene blue was used as a loading control. (D) Quantification of 5hmC levels from three dot blots, normalized to methylene blue staining. Error bars denote s.d. *p<0.05, **p<0.01, ***p<0.001, N.S. \u2013 not significant.\n\n### The D2018A mutation alters gene expression and 5mC levels in mESCs\n\nGiven the defect of TET1 D2018A in the zebrafish system, we decided to explore the effect of this mutation in mammalian cells. To this end, we generated a D2018A mutation in both copies of the Tet1 gene (Figure 6A) in mESCs (Figure 6\u2014figure supplement 1). A FLAG tag was also introduced onto the C-terminus of wild type (WT) or D2018A mutant (D2018A) TET1. We first tested whether D2018 was necessary for the TET1-OGT interaction in the context of endogenous full length TET1 in these cells. FLAG pulldowns revealed that the D2018A mutation reduced, but did not eliminate, co-IP of OGT with TET1 (Figure 6B). Levels of TET2 protein were significantly increased in D2018A cells compared to WT (Figure 6C), suggesting the cells may be compensating for impaired TET1 function by producing more TET2.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic of WT and D2018A mESC lines. (B) FLAG and OGT western blot of inputs and FLAG IPs from WT and D2018A mESCs. (C) Western blots for FLAG, TET2, and TET3 of protein extracts from WT and D2018A mESCs. (D) Volcano plot showing differentially expressed genes in D2018A vs. WT mESCs. Red: decreased expression (log2 fold change > \u22121, Benjamini-Hochberg adjusted p-value<0.01). Blue: increased expression (log2 fold change\u00a0>1, Benjamini-Hochberg adjusted p-value<0.01) E) qPCR analysis of selected differentially expressed genes. (F) Mass spec quantification of mC and hmC levels in WT and D2018A cells. Error bars denote s.d. *p<0.05, N.S. \u2013 not significant.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Schematic of mESC lines.\u00a0DNA encoding a 3xFLAG tag was added to the 3\u2019 end of both alleles of Tet1, followed by a 2A sequence and a fluorescent protein (GFP or tdTomato). The 2A sequence causes ribosome skipping, resulting in separate translation of TET1-3xFLAG and 2A-GFP or 2A-tdTomato. Purple line: template used for homology-directed repair (HDR). Horizontal arrows: primers used for PCR genotyping. Vertical arrows: D2018 residue. (B) PCR genotyping of independently derived, clonal, targeted mESC lines using primers indicated in A.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Quantification of western blots (TET2 signal normalized to Tubulin signal) of protein lysates from WT and D2018A mESCs treated with cycloheximide (50 \u00b5g/mL) at indicated timepoints.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) and 5hmC-Seal (B) showing\u00a0~25 kb deleted in WT cells. (C) qPCR comparing gene expression in WT, D2018A, and WT single targeted (het-1 and het-2) cell lines. Het-2 cells have wild-type TET1 and one intact copy of the 25 kb region. (D) Mass spec comparing 5mC levels in WT, D2018A, and WT single targeted (het-1 and het-2) cells. Error bars denote s.d. *p<0.05.\n\nTo determine whether the TET1 D2018A mutation affected gene expression, we compared WT and D2018A mESCs using RNA-seq. We identified 378 genes whose expression changed by 2-fold or more in D2018A cells compared to WT (157 upregulated and 221 downregulated)(Figure 6D, Supplementary file 1). In spite of the increased TET2 protein levels in D2018A cells, we did not observe increased abundance of Tet2 transcripts (Figure 6E, Figure 6\u2014source data 1), nor increased stability of TET2 protein in D2018A cells compared to WT (Figure 6\u2014figure supplement 2, Figure 6\u2014figure supplement 2\u2014source data 1).\n\nTo examine how the TET1 D2018A mutation affected DNA modifications, we used LC-MS/MS to measure levels of 5mC and 5hmC in WT and D2018A mESCs. The total amount of 5mC was about 25% lower in D2018A cells compared to WT, while levels of 5hmC were not significantly different (Figure 6F, Figure 6\u2014source data 2).\n\n### The D2018A mutation redistributes 5hmC and reduces 5mC levels\n\nTo determine if perturbing the TET1-OGT interaction affected the distribution of CpG modifications, we performed 5hmC-Seal and whole genome bisulfite sequencing (WGBS) on WT and D2018A mESCs. Our 5hmC-Seal analysis detected very few hydroxymethylated peaks, consistent with the low levels of 5hmC detected by mass spec (Figure 6F). We identified 76 differentially hydroxymethylated regions (DhMRs), which were enriched in genic regions over intergenic regions (Figure 7A). 95 genes were associated with a change in 5hmC levels (DhMGs) \u2013 46 with more 5hmC in D2018A mESCs and 49 with less 5hmC (Figure 7B). Metagene analysis showed no dramatic changes in 5hmC distribution around genes (Figure 7C). Overall, this data suggests a redistribution of 5hmC in the D2018A mESCs at a small subset of genes. The small number of 5hmC changes precludes a statistically meaningful comparison with the differentially expressed genes (DEGs) identified by RNA-seq.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig7-v2.jpg)\n\n**Figure 7.:** (A) Genomic annotations of differentially hydroxymethylated regions in WT vs. D2018A mESCs. (B) Heatmap depicting 95 differentially hydroxymethylated genes in WT vs. D2018A mESCs. (C) Distribution of averaged hmCpG level at all genes.\n\nConsistent with our mass spec results, WGBS showed reduced levels of 5mC\u00a0+\u00a05 hmC in D2018A cells compared to WT (Figure 8A,B). We found no evidence of a change in the distribution of CpG modifications; rather, 5mC\u00a0+\u00a05 hmC was reduced genome-wide in D2018A cells (Figure 8C). To examine whether promoter methylation differences correlate with differential gene expression, we compared the difference in average CpG modification at each promoter to the fold change of the corresponding gene. We found a very small, but statistically significant, negative correlation between promoter CpG modification and gene expression (Pearson r\u00a0=\u00a0\u22120.02, p=0.025)(Figure 8D, Figure 8\u2014figure supplement 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig8-v2.jpg)\n\n**Figure 8.:** (A) Genome-wide levels of mCpG\u00a0+hmCpG. (B) Distribution of mC\u00a0+hmC levels for individual CG sites fitting with kernel density estimate (KDE). (C) Distribution of averaged mCpG\u00a0+hmCpG level at all genes. (D) Scatter plot of difference (D2018A - WT) in average CpG methylation in a 500 bp window around each promoter vs. log2 fold change (D2018A/WT) of corresponding genes. (E) An example of hypo CG-DMRs in exons of Cdcp2 gene in D2018A mESCs. (F) Average mCpG\u00a0+hmCpG level ((h)mCG/CG) of individual ranked DMRs and flanking regions (\u00b11.5 kb). (G) Genomic annotations of hypo CG-DMRs in D2018A mESCs. CGI: CpG island. (H) Overlap between DEGs and the set of genes with\u00a0\u2265 2 DMRs between the gene's start and end sites (hypergeometric p value\u00a0=\u00a01.770e-19).\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Pearson correlations and p-values of comparisons between promoter CpG modifications and fold change of corresponding genes as a function of window size around each promoter.\n\nThe WGBS analysis identified 42,725 differentially methylated regions (DMRs)(Figure 8E\u2013G), none of which overlapped with the 76 DhMRs. Similar to DhMRs, DMRs were significantly enriched in exons over other genomic regions (Figure 8E). Next we asked if there was a correlation between gene body DMRs and gene expression. We identified 3587 genes that contained two or more DMRs between the transcription start and end sites. This group was enriched for DEGs (Figure 8H), suggesting that changes in gene body cytosine modifications may underlie some of the gene expression differences between WT and D2018A mESCs.\n\n## Discussion\n\n### A unique OGT interaction domain\n\nWe identified a 45-amino acid domain of TET1 that is both necessary and sufficient for binding of OGT. To our knowledge, this is the first time that a small protein domain has been identified that confers stable binding to OGT. The vast majority of OGT targets do not bind to OGT tightly enough to be detected in co-IP experiments, suggesting that OGT\u2019s interaction with TET proteins is unusually strong. For determination of the crystal structure of the human TET2 catalytic domain in complex with DNA, the corresponding C-terminal region was deleted (Hu et al., 2013), suggesting that it may be unstructured. When bound to OGT this domain may become structured, and structural studies of OGT bound to C45 could shed light on what features make this domain uniquely able to interact stably with OGT and how OGT may stimulate TET1 activity.\n\nAn alternative or additional role for the stable TET-OGT interaction may be recruitment of OGT to chromatin by TET proteins. Loss of TET1 causes loss of OGT from chromatin (Vella et al., 2013) and induces similar changes in transcription in both wild-type mESCs and mESCs lacking DNA methylation (Williams et al., 2011). This raises the possibility that TET proteins may recruit OGT to chromatin to regulate gene expression independent of 5mC oxidation. Consistent with this possibility, OGT modifies many transcription factors and chromatin regulators in mESCs (Myers et al., 2011)(Figure 9). Thus it may be that the stable TET1-OGT interaction promotes both regulation of TET1 activity by O-GlcNAcylation as well as recruitment of OGT to chromatin. Notably, our results show that TET1 D2018A does not rescue 5hmC levels in tet2/3 DM zebrafish embryos to the same extent as the wild type protein, suggesting that at least part of the role of the TET1-OGT interaction in vivo is regulation of TET1 activity.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/34870/elife-34870-fig9-v2.jpg)\n\n**Figure 9.:** OGT\u2019s activity is regulated by the abundance of its cofactor UDP-GlcNAc, whose synthesis has inputs from nucleotide, glucose, amino acid, and fatty acid metabolism. OGT (blue circle) binds to TET1 (large green circle) via the TET1 C45 (purple line). OGT modifies TET1 and regulates its catalytic activity (small green circles representing modified cytosines). At the same time, TET1 binding to DNA brings OGT into proximity of other DNA-bound transcription factors (orange hexagon), which OGT also modifies and regulates.\n\n### OGT stimulation of TET activity\n\nOur results show for the first time that OGT can modify a TET protein in vitro, and that O-GlcNAcylation stimulates the activity of a TET protein in vitro. We have identified 8 sites of O-GlcNAcylation within the TET1 CD (data not shown), which precludes a simple analysis of which sites are important for stimulation. Detailed studies of individual sites of modification will be required to resolve this question.\n\nOur data are consistent with a role for OGT in TET1 regulation in cells and in vivo. OGT also directly interacts with TET2 and TET3, suggesting that it may regulate all three TET proteins. Notably, although all three TETs catalyze the same reaction, they show a number of differences that are likely to determine their biological role. Different TET proteins are expressed in different cell types and at different stages of development (Koh et al., 2011; Dawlaty et al., 2011; Li et al., 2011; Zhao et al., 2015). TET1 and TET2 appear to target different genomic regions (Huang et al., 2014) and to promote different pluripotent states in mESCs (Fidalgo et al., 2016). The mechanisms responsible for these differences are not well understood. We suggest that OGT is a strong candidate for regulation of TET enzymes.\n\n### Regulation of TETs by OGT in development\n\nOur result that wild type TET1 mRNA, but not TET1 mRNA carrying a mutation that can impair interaction with OGT, can rescue tet2/3 DM zebrafish suggests that OGT regulation of TET enzymes may play a role in development. The importance of both TET proteins and OGT in development has been thoroughly established. Zebrafish lacking tet2 and tet3 die as larvae (Li et al., 2015), and knockout of Tet genes in mice yields developmental phenotypes of varying severities, with knockout of all three Tets together being embryonic lethal (Dawlaty et al., 2011; Li et al., 2011; Dawlaty et al., 2013; Dawlaty et al., 2014). Similarly, OGT is absolutely essential for development in mice (Shafi et al., 2000) and zebrafish (Webster et al., 2009), though its vast number of targets have made it difficult to narrow down more specifically why OGT is necessary. Our results suggest that TETs are important OGT targets in development.\n\n### The TET1-OGT interaction regulates gene expression and DNA methylation in mESCs\n\nThe D2018A mutation reduced the TET1-OGT interaction in mESCs and altered gene expression and CpG modifications. 5hmC-Seal revealed only a small number of DhMRs and DhMGs, with 5hmC increased at about half the DhMGs and decreased at the other half. Together with mass spectrometry showing no change in total 5hmC levels, our data are consistent with a redistribution of 5hmC at a small number of genes without significantly affecting total 5hmC. The D2018A mutation is predicted to decrease TET1 activity, and the increased expression of TET2 in the D2018A cells could explain why total 5hmC levels are unchanged.\n\nBisulfite sequencing showed a genome-wide reduction in 5mC\u00a0+\u00a05 hmC in D2018A cells, while 5hmC-Seal revealed only a small number of DhMRs. Together these results suggest that the bisulfite sequencing largely reflects changes in 5mC. The very small correlation between promoter CpG modification and gene expression suggests that most gene expression changes cannot be explained by CpG modification differences at promoters.\n\nThe enrichment of both DMRs and DhMRs in genic regions and the correlation between gene body DMRs and DEGs suggests that changes to genic CpG modifications may underlie some of the gene expression changes. The result that OGT stimulates TET1 catalytic activity in vitro suggests that in cells the TET1 D2018A mutation should decrease TET enzyme activity, resulting in more 5mC and less 5hmC. Instead, we observed decreased 5mC and no change in 5hmC. This result is consistent with the increased expression of TET2 in D2018A mESCs compared to WT, since gene bodies are targets of TET2 rather than TET1(Huang et al., 2014). Higher levels of TET2 could increase 5mC oxidation at gene bodies, resulting in widespread genic demethylation and an increase in 5hmC at a small subset of genes. This result would explain the loss of 5mC in D2018A cells compared to WT and the enrichment of DMRs in genic regions.\n\n### A connection between metabolism and the epigenome\n\nOGT has been proposed to act as a metabolic sensor because its cofactor, UDP-GlcNAc, is synthesized via the hexosamine biosynthetic pathway (HBP), which is fed by pathways metabolizing glucose, amino acids, fatty acids, and nucleotides (Hart et al., 2011). UDP-GlcNAc levels change in response to flux through these pathways (Marshall et al., 2004; McClain, 2002; Weigert et al., 2003), leading to the hypothesis that OGT activity may vary in response to the nutrient status of the cell. Thus the enhancement of TET1 activity by OGT and the significant overlap of the two enzymes on chromatin (Vella et al., 2013) suggest a model in which OGT may regulate the epigenome in response to nutrient status by controlling TET1 activity (Figure 9).\n\n## Materials and methods\n\n### Cell culture\n\nThe mESC line LF2 and its derivatives were routinely passaged by standard methods in KO-DMEM, 10% FBS, 2 mM glutamine, 1X non-essential amino acids, 0.1 mM b-mercaptoethanol and recombinant leukemia inhibitory factor. HEK293T cells were cultured in DMEM, 10% FBS, and 2 mM glutamine.\n\nThe genotype of LF2 cells was confirmed by whole genome sequencing. Mycoplasma testing is performed annually. Whole genome sequencing of LF2s confirms that there is no mycoplasma contamination.\n\n### Recombinant protein purification\n\nFull-length human OGT in the pBJG vector was transformed into BL-21 DE3 E. coli. A liquid culture was grown in LB\u00a0+50 \u00b5g/mL kanamycin at 37C until OD600 reached 1.0. IPTG was added to 1 mM final and the culture was induced at 16\u00b0C overnight. Cells were pelleted by centrifugation and resuspended in 5 mL BugBuster (Novagen)\u00a0+protease inhibitors (Sigma Aldrich) per gram of cell pellet. Cells were lysed on an orbital shaker for 20 min at room temperature. The lysate was clarified by centrifugation at 30,000 g for 30 min at 4\u00b0C. Clarified lysate was bound to Ni-NTA resin (Qiagen) at 4\u00b0C and then poured over a disposable column. The column was washed with six column volumes of wash buffer 1 (20mM Tris pH 8, 1 mM CHAPS, 10% glycerol, 5 mM BME, 10 mM imidazole, 250 mM NaCl) followed by six column volumes of wash buffer 2 (wash buffer 1 with 50 mM imidazole). The protein was eluted in four column volumes of elution buffer (20 mM Tris pH 8, 1 mM CHAPS, 5 mM BME, 250 mM imidazole, 250 mM NaCl). Positive fractions were pooled and dialyzed into storage buffer (20 mM Tris pH 8, 1 mM CHAPS, 0.5 mM THP, 10% glycerol, 150 mM NaCl, 1 mM EDTA), flash frozen in liquid nitrogen and stored at \u221280\u00b0C in small aliquots.\n\nMouse TET1 catalytic domain (aa1367-2039) was expressed in sf9 insect cells according to the Bac-to-Bac Baculovirus Expression System. Constructs were cloned into the pFastBac HTA vector and transformed in DH10Bac E. coli for recombination into a bacmid. Bacmid containing the insert was isolated and used to transfect adherent sf9 cells for 6 days at 25\u00b0C. Cell media (P1 virus) was isolated and used to infect 20 mL of sf9 cells in suspension for 3 days. Cell media (P2 virus) was isolated and used to infect a larger sf9 suspension culture for 3 days. Cells were pelleted by centrifugation, resuspended in lysis buffer (20 mM Tris pH 8, 1% Triton, 10% glycerol, 20 mM imidazole, 50 mM NaCl, 1 mM MgCl2, 0.5 mM TCEP, protease inhibitors, 2.5 U/mL benzonase), and lysed by douncing and agitation at 4C for 1 hr. The lysate was clarified by centrifugation at 48,000 g for 30 min at 4\u00b0C and bound to Ni-NTA resin (Qiagen) at 4\u00b0C, then poured over a disposable column. The column was washed with five column volumes of wash buffer (20 mM Tris pH 8, 0.3% Triton, 10% glycerol, 20 mM imidazole, 250 mM NaCl, 0.5 mM TCEP, protease inhibitors). The protein was eluted in five column volumes of elution buffer (20 mM Tris pH 8, 250 mM imidazole, 250 mM NaCl, 0.5 mM TCEP, protease inhibitors). Positive fractions were pooled and dialyzed overnight into storage buffer (20 mM Tris pH 8, 150 mM NaCl, 0.5 mM TCEP). Dialyzed protein was purified by size exclusion chromatography on a 120 mL Superdex 200 column (GE Healthcare) in storage buffer. Positive fractions were pooled, concentrated, flash frozen in liquid nitrogen and stored at \u221280C in small aliquots.\n\n### Overexpression in HEK293T cells and immunoprecipitation\n\nMouse Tet1 catalytic domain (aa1367-2039) and truncations and mutations thereof were cloned into the pcDNA3b vector. GFP fusion constructs were cloned into the pcDNA3.1 vector. Human OGT constructs were cloned into the pcDNA4 vector. Plasmids were transiently transfected into adherent HEK293T cells at 70\u00a0\u2013\u00a090% confluency using the Lipofectamine 2000 transfection reagent (ThermoFisher) for 1\u20133 days.\n\nTransiently transfected HEK293T cells were harvested, pelleted, and lysed in IP lysis buffer (50 mM Tris pH 8, 200 mM NaCl, 1% NP40, 1x HALT protease/phosphatase inhibitors). For pulldown of FLAG-tagged constructs, cell lysate was bound to anti-FLAG M2 magnetic beads (Sigma Aldrich) at 4\u00b0C. For pulldown of GFP constructs, cell lysate was bound to magnetic protein G dynabeads (ThermoFisher) conjugated to the JL8 GFP monoclonal antibody (Clontech) at 4\u00b0C. Beads were washed three times with IP wash buffer (50 mM Tris pH 8, 200 mM NaCl, 0.2% NP40, 1x HALT protease/phosphatase inhibitors). Bound proteins were eluted by boiling in SDS sample buffer.\n\n### In vitro transcription/translation and immunoprecipitation\n\nGFP fused to TET C-terminus peptides were cloned into the pcDNA3.1 vector and transcribed and translated in vitro using the TNT Quick Coupled Transcription/Translation System (Promega).\n\nFor immunoprecipitation, recombinant His-tagged OGT was coupled to His-Tag isolation dynabeads (ThermoFisher). Beads were bound to in vitro translation extract diluted 1:1 in binding buffer (40 mM Tris pH 8, 200 mM NaCl, 40 mM imidazole, 0.1% NP40) at 4\u00b0C. Beads were washed 3 times with wash buffer (20 mM Tris pH 8, 150 mM NaCl, 20 mM imidazole, 0.1% NP40). Bound proteins were eluted by boiling in SDS sample buffer.\n\n### Recombinant protein binding assay\n\n20 \u00b5L reactions containing 2.5 \u00b5M rOGT and 2.5 \u00b5M rTET1 CD wt or D2018A were assembled in binding buffer (50 mM Tris pH 7.5, 100 mM NaCl, 0.02% Tween-20) and pre-incubated at room temperature for 15 min. TET1 antibody (Millipore 09\u00a0\u2013\u00a0872) was bound to magnetic Protein G Dynabeads (Invitrogen), and beads were added to reactions following pre-incubation. Reactions were bound to beads for 10 min at room temperature. Beads were washed 3 times with 100 \u00b5L binding buffer, and bound proteins were recovered by boiling in SDS sample buffer and analyzed by SDS-PAGE and coomassie stain.\n\n### Western blots\n\nFor western blot, proteins were separated on a denaturing SDS-PAGE gel and transferred to PVDF membrane. Membranes were blocked in PBST\u00a0+5% nonfat dry milk at room temp for\u00a0>10 min or at 4\u00b0C overnight. Primary antibodies used for western blot were: FLAG M2 monoclonal antibody (Sigma Aldrich F1804), TET2 monoclonal antibody (Millipore MABE462), TET3 polyclonal antibody (Millipore ABE383), OGT polyclonal antibody (Santa Cruz sc32921), OGT monoclonal antibody (Cell Signaling D1D8Q), His6 monoclonal antibody (Thermo MA1-21315), JL8 GFP monoclonal antibody (Clontech), and O-GlcNAc RL2 monoclonal antibody (Abcam ab2739). Secondary antibodies used were goat anti-mouse HRP and goat anti-rabbit HRP from BioRad. Blots were incubated with Pico Chemiluminescent Substrate (ThermoFisher) and exposed to film in a dark room.\n\n### Slot blot\n\nDNA samples were denatured in 400 mM NaOH\u00a0+10 mM EDTA by heating to 95\u00b0C for 10 min. Samples were placed on ice and neutralized by addition of 1 vol of cold NH4OAc pH 7.2. DNA was loaded onto a Hybond N\u00a0+\u00a0nylon membrane (GE) by vacuum using a slot blot apparatus. The membrane was dried at 37\u00b0C and DNA was covalently linked to the membrane by UV crosslinking (700uJ/cm2 for 3 min). Antibody binding and signal detection were performed as outlined for western blotting using 5hmC monoclonal antibody (Active Motif 39791).\n\nFor the loading control, membranes were analyzed using the Biotin Chromogenic Detection Kit (Thermo Scientific) according to the protocol. Briefly, membranes were blocked, probed with streptavidin conjugated to alkaline phosphatase (AP), and incubated in the AP substrate BCIP-T (5-bromo-4-chloro-3-indolyl phosphate, p-toluidine salt). Cleavage of BCIP-T causes formation of a blue precipitate.\n\nFor quantification of slot blots, at least three biological replicates were used. Signal was normalized to the loading control and significance was determined using the unpaired t test.\n\n### Preparation of lambda DNA substrate\n\nLinear genomic DNA from phage lambda (dam-, dcm-) containing 12 bp 5\u2019 overhangs was purchased from Thermo Scientific. Biotinylation was performed by annealing and ligating a complementary biotinylated DNA oligo. Reactions containing 175 ng/\u00b5L lambda DNA, 2 \u00b5M biotinylated oligo, and 10 mM ATP were assembled in 1x T4 DNA ligase buffer, heated to 65\u00b0C, and cooled slowly to room temperature to anneal. 10uL T4 DNA ligase was added and ligation was performed overnight at room temperature. Biotinylated lambda DNA was purified by PEG precipitation. To a 500 \u00b5L ligation reaction, 250 \u00b5L of 60% PEG8000\u00a0+10 mM MgCl2 was added and reaction was incubated at 4\u00b0C overnight with rotation. The next day DNA was pelleted by centrifugation at 14,000 g at 4\u00b0C for 5 min. Pellet was washed with 1 mL of 75% ethanol and resuspended in TE.\n\nBiotinylated lambda DNA was methylated using M.SssI CpG methyltransferase from NEB. 20 \u00b5L reactions containing 500 ng lambda DNA, 640 \u00b5M S-adenosylmethionine, and four units methyltransferase were assembled in 1x NEBuffer 2 supplemented with 20 mM Tris pH eight and incubated at 37\u00b0C for 1 hr. Complete methylation was confirmed by digestion with the methylation-sensitive restriction enzyme BstUI from NEB.\n\n### In vitro TET1 CD O-GlcNAcylation\n\nIn vitro modification of rTET1 CD with rOGT was performed as follows: 10 \u00b5L reactions containing 1 \u00b5M rTET1 CD, 1\u00a0\u2013\u00a05 \u00b5M rOGT, and 1 mM UDP-GlcNAc were assembled in reaction buffer (50 mM HEPES pH 6.8, 150 mM NaCl, 10% glycerol, 0.5 mM TCEP) and incubated at 37C for 30\u00a0\u2013\u00a060 min or at 4\u00b0C for 18\u00a0\u2013\u00a024 hr.\n\n### In vitro TET1 CD activity assays\n\n20 \u00b5L reactions containing 100 ng biotinylated, methylated lambda DNA, rTET1 CD (from frozen aliquots or from in vitro O-GlcNAcylation reactions), and TET cofactors (1 mM alpha-ketoglutarate, 2 mM ascorbic acid, 100 uM ferrous ammonium sulfate) were assembled in reaction buffer (50 mM HEPES pH 6.8, 100 mM NaCl) and incubated at 37\u00b0C for 10\u00a0\u2013\u00a060 min. Reactions were stopped by addition of 1 vol of 2M NaOH\u00a0+50 mM EDTA and DNA was analyzed by slot blot.\n\nGeneration of mouse embryonic stem cell lines mESC lines (Figure 6\u2014figure supplement 1) were derived using CRISPR-Cas9 genome editing. A guide RNA to the Tet1 3\u2019UTR was cloned into the px459-Cas9-2A-Puro plasmid using published protocols (Ran et al., 2013) with minor modifications. Templates for homology directed repair were amplified from Gene Blocks (IDT) (Supplementary file 2 and 3). Plasmid and template were co-transfected into LF2 mESCs using FuGENE HD (Promega) according to manufacturer protocol. After two days cells were selected with puromycin for 48 hr, then allowed to grow in antibiotic-free media. Cells were monitored for green or red fluorescence (indicating homology directed repair) and fluorescent cells were isolated by FACS 1\u00a0\u2013\u00a02 weeks after transfection. All cell lines were propagated from single cells and correct insertion was confirmed by PCR genotyping (Figure 6\u2014figure supplement 1, Supplementary file 2).\n\nGenome-wide profiling of 5mC and 5hmC revealed a 25 kb deletion in WT but not D2018A cells distal to the CRISPR/Cas9 cut site (Figure 6\u2014figure supplement 3A,B). A recent report shows that large deletions like this are more common than previously appreciated(Kosicki et al., 2018). Analysis of cells with wild-type TET1 and one intact copy of this region shows that the differences in gene expression and 5mC levels are caused by the TET1 D2018A mutation rather than the 25 kb deletion (Figure 6\u2014figure supplement 3C,D, Figure 6\u2014figure supplement 3\u2014source datas 1 and 2).\n\n### Nucleotide mass spectrometry\n\nGenomic DNA (3 \u00b5g) was subjected to hydrolysis with PDE I (3.6U), PDE II (3.2U), DNase I (50U), and alkaline phosphatase (10U) in 10 mM Tris HCl/15 mM MgCl2 buffer (pH 7) at 37\u00b0C overnight. The hydrolysates were spiked with 13C1015N2-5-methyl-2\u2032-deoxycytidine (1 pmol) and 5-hydroxymethyl-d2-2\u2032-deoxycytidine-6-d1 (500 fmol) (internal standards for mass spectrometry) and filtered through Nanosep 10K Omega filters (Pall Corporation, Port Washington, NY).\n\nQuantitation of mC and hmC was performed using a Dionex Ultimate 3000UHPLC (Thermo Fisher, Waltham MA) interfaced with a Thermo TSQ Vantage mass spectrometer (Thermo Fisher). Chromatographic separation was achieved on a Luna Omega Polar C18 column (150 \u00d7 1.0 mm, 1.6 \u00b5m, Phenomenex, Torrance CA) heated to 50\u00b0C and eluted at a flow rate of 50 \u03bcL/min with a gradient of 0.1% acetic acid in H2O (A) and acetonitrile (B). A linear gradient of 1% to 5% B in 5.7 min was used, followed by an increase to 20% B over 1.1 min and a further increase to 50% B in 1.1 min. Solvent composition was a returned to initial conditions (1% B) and the column was re-equilibrated for 7 min. Under these conditions, mC and 13C1015N2-MeC eluted at 3.7 min, both hmC and the internal standard D3-hmC eluted at 2.9 min. Quantitation was achieved by monitoring the transitions m/z 258.2 [M + H+] \u2192 m/z 142.1 [M \u2013 deoxyribose + H+] for hmC, m/z 261.2 [M + H+] \u2192 m/z 145.1 [M \u2013 deoxyribose + H+] for D3-hmC, m/z 242.1 [M + H+] \u2192 m/z 126.1 [M + H+] for mC, m/z 254.2 [M + H+] \u2192 m/z 133.1 [M + H+] for 13C1015N2-mC. Optimal mass spectrometry conditions were determined by infusion of authentic standards. Typical settings on the mass spectrometer were: a spray voltage of 3500 V, a sheath gas of 12 units, the declustering voltage was 5 V, the RF lens was 55 V, the vaporizer temperature was 75 \u00b0C, and the ion transfer tube was maintained at 350 \u00b0C. The full-width at half-maximum (FWHM) was maintained at 0.7 for both Q1 and Q3. Fragmentation was induced using a collision gas of 1.5 mTorr and a collision energy of 10.3 V for mC and 10.6 V for hmC.\n\n### RNA-seq\n\nRNA was extracted from mESCs (two biological replicates each for WT and D2018A, and two technical replicates for each biological replicate) using Zymo DirectZol RNA miniprep kit. 200 ng of RNA per sample was used for Lexogen Ribocop rRNA depletion. Libraries were prepared from 8 \u00b5L of Ribocop-treated RNA using Lexogen SENSE Total RNA-seq Library Prep Kit.\n\nLibraries were sequenced on an Illumina Hiseq 4000 with single-end 50 base reads. Reads were aligned to the mouse genome (Ensembl build GRCm38.p6) and gene counts were created using STAR_2.5.3a. Normalization and differential expression analysis was performed with DESeq2 v1.20.0. Data was visualized using Matplotlib.\n\n### Methyl-seq library preparation and whole genome bisulfite sequencing\n\nGenomic DNA was extracted from 1 million mESCs (two biological replicates each for wild type and Tet1 D2018A) using the DNeasy kit from Qiagen. Methyl-Seq libraries were prepared using Accel-NGS Methyl-Seq DNA Library Kit with 30 ng gDNA for each sample and were sequenced on Illumina HiSeq 4000 with 150 bases pair-ended reads. For data processing, the raw reads were first trimmed to remove Illumina adapters and PCR duplicates and then mapped to mm10 mouse reference genome using Bismark (https://www.bioinformatics.babraham.ac.uk/projects/bismark/). The alignment files (BAM file) generated were analyzed by MethylPy (https://github.com/yupenghe/methylpy) (Lister et al., 2013; He, 2018) to get the methylation level at individual cytosines. Generally, the methylation level is defined as the ratio of the sum of methylated basecall counts over the total basecall counts at each individual pairwise cytosine on both strands. The significantly methylated cytosine sites (DMSs) were identified using a binomial test for each CpG context with FDR\u00a0<\u00a00.01 as described previously(Ma et al., 2014). Differentially methylated regions (DMRs) were defined by the DMRfind function in MethylPy by joining at least two DMSs within 250 bp.\n\n### 5hmC-Seal\n\n5hmC profiling was performed as described(Han et al., 2016). Briefly, 100 ng genomic DNA were fragmented in Tagmentation buffer at 55\u00b0C. Fragmented DNA was purified by Zymo DNA Clean and Concentration Kit. Then, the selective 5hmC chemical labeling was performed in glucosylation buffer (50 mM HEPES buffer pH 8.0, 25 mM MgCl2) containing above fragmented DNA, \u03b2GT, N3-UDP-Glc, and incubated at 37\u00b0C for 2 hr. After DNA purification in ddH2O, DBCO-PEG4-Biotin (Click Chemistry Tools) was added and incubated at 37\u00b0C for 2 hr. The biotin labeled DNA was pulled down by C1 Streptavidin beads (Life Technologies) for 15 min at room temperature. Next, the captured DNA fragments were subjected to PCR amplification using Nextera DNA sample preparation kit. The resulting amplified product was purified by 1.0X AMPure XP beads. Input library was made by direct PCR from fragmented DNA directly without labeling and pull-down. The libraries were quantified by a Qubit fluorometer (Life Technologies) and sequenced on NextSeq 500 PE42.\n\nAdaptors and low quality nucleotides were trimmed from raw sequencing reads by Trim_Galore, and bowtie was used to align clean reads to mm9 reference genome. Peak calling was performed by MACS1.4. DESeq2 was further used to calculate differentially hydroxymethylated genes and regions.\n\n### RT-qPCR\n\nTotal RNA was isolated from mESCs using Direct-zol RNA miniprep kit from Zymo. 1 \u00b5g of RNA was used for cDNA synthesis using the iScript Reverse Transcription kit from BioRad. cDNA was used for qPCR using the SensiFAST SYBR Lo-Rox kit from Bioline. Relative gene expression levels were calculated using the \u0394\u0394Ct method. See Supplementary file 4 for primer sequences.\n\n### Zebrafish mRNA rescue experiments\n\nZebrafish husbandry was conducted under full animal use and care guidelines with approval by the Memorial Sloan-Kettering animal care and use committee. For mRNA rescue experiments, mTET1D2018A and mTET1wt plasmids were linearized by NotI digestion. Capped RNA was synthesized using mMessage mMachine (Ambion) with T7 RNA polymerase. RNA was injected into one-cell-stage embryos derived from tet2mk17/mk17, tet3mk18/+ intercrosses at the concentration of 100 pg/embryo (Li et al., 2015). Injected embryos were raised under standard conditions at 28.5\u00b0C until 30 hr post-fertilization (hpf) at which point they were fixed for in situ hybridization using an antisense probe for runx1. The runx1 probe is described in (Kalev-Zylinska et al., 2002); in situ hybridization was performed using standard methods, and runx1 levels were scored across samples without knowledge of the associated experimental conditions (Thisse and Thisse, 2008). Examples of larvae categorized as runx1 high and runx1 low are provided in Supplementary file 5. tet2/3 double mutants were identified based on morphological criteria and mutants were confirmed by PCR genotyping after in situ hybridization using previously described primers (Li et al., 2015).\n\nFor sample size estimation for rescue experiments, we assume a background mean of 20% positive animals in control groups. We anticipate a significant change would result in at least a 30% difference between the experimental and control means with a standard deviation of no more than 10. Using the 1-Sample Z-test method, for a specified power of 95% the minimum sample size is 4. Typically, zebrafish crosses generate far more embryos than required. Experiments are conducted using all available embryos. The experiment is discarded if numbers for any sample are below this minimum threshold when embryos are genotyped at the end of the experimental period. Injections were separately performed on clutches from five independent crosses; p values are based on these replicates and were derived from the unpaired two-tailed t test. Embryo numbers for all five biological replicates are included in Supplementary file 5.\n\nFor the dot blot, genomic DNA was isolated from larvae at 30hpf by phenol-chloroform extraction and ethanol precipitation. Following RNase treatment and denaturation, 2-fold serially diluted DNA was spotted onto nitrocellulose membranes. Cross-linked membranes were incubated with 0.02% methylene blue to validate uniform DNA loading. Membranes were blocked with 5% BSA and incubated with anti-5hmC antibody (1:10,000; Active Motif) followed by a horseradish peroxidase-conjugated antibody (1:15,000; Active Motif). Signal was detected using the ECL Prime Detection Kit (GE). The results of three independent experiments were quantified using ImageJ at the lowest dilution and exposure where signal was observed in Tet1 injected embryos. To normalize across blots, all values are presented as the ratio of 5hmC signal in experimental animals divided by wildtype control signal from the same blot.\n\n### Reproducibility and Rigor\n\nAll IP-Westerns are representative of at least three independent biological replicates (experiments carried out on different days with a different batch of HEK293T cells or mESCs). For targeted mESC lines, three independently derived lines for each genotype were assayed in at least two biological replicates. For in vitro activity and binding assays using recombinant proteins (representing multiple protein preparations), data represent at least three technical replicates (carried out on multiple days). The zebrafish rescue experiment was performed five times (biological replicates), with dot blots carried out three times. We define an outlier as a result in which all the controls gave the expected outcome but the experimental sample yielded an outcome different from other biological or technical replicates. There were no outliers or exclusions.\n",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "b2a77250-99ec-4a31-8f42-51d92bc8a7aa",
+      "submission_id": "7310b324-c111-4735-ad91-9e5cfa6044ab",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daniel Zilberman, John Innes Centre United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.34870.034](https://doi.org/10.7554/eLife.34870.034)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"OGT binds a conserved C-terminal domain of TET1 to regulate TET1 activity and function in development\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Kevin Struhl as the Senior Editor. The reviewers have opted to remain anonymous. eLife\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript identifies a region of the TET1 protein that interacts with the OGT enzyme and demonstrates that OGT-catalyzed modification stimulates TET1 activity in vitro. The authors show that a TET1 mutation (D2018A) that disrupts interaction with OGT prevents TET1 from rescuing hematopoietic stem cell production and 5-hydroxymethylcytosine (5hmC) levels in tet mutant zebrafish embryos, suggesting that OGT stimulates TET1 activity in vivo. The authors also found that the D2018A mutation alters the abundance and composition of TET-containing molecular complexes in mouse embryonic stem cells, and that this mutation alters gene expression and the distribution of 5-methylcytosine (5mC).\n\nEssential revisions:\n\nThe reviewers and editors feel that the biological function of the interaction between OGT and TET1 in ESCs requires further investigation, as the presented phenotypes are complex and somewhat confusing. Specifically:\n\n1) ES cells with homozygous TET1 D2018A mutation have significantly elevated levels of TET2, as well as a higher proportion of TET2 that co-fractionates with OGT and HCF1 within high molecular weight complexes (Figure 6). The elevated levels of TET2 in TET1 D2018A mutant cells may reflect increased stability through formation of large complexes with OGT, HCF1, and potentially other proteins. Although TET2 function is not the primary focus of the study, the phenotype of TET1 D2018A mutant cells, in which 5mC is redistributed and seemingly reduced while 5hmC levels are unchanged, merits further examination. The authors should test whether the stability or expression of TET2 is increased in D2018A mutant cells.\n\n2) The images in Figure 7D suggest that ES cells with the TET1 D2018A mutation have reduced 5mC levels, but the immunofluorescence staining only gives limited information on how TET1-OGT interaction affects the distribution of 5mC and 5hmC. The authors conclude that the distribution of 5mC is altered, but the overall levels are not directly measured, and the interpretation that 5hmC is similar between mutant and WT, but that 5mC (the substrate) is redistributed and potentially reduced is confusing. Changes in bulk 5mC levels should be measured in these cells. The authors should also conduct genome-wide profiling of 5mC and 5hmC, and potentially of TET1, TET2, TET3 and OGT chromatin binding.\n\n3) Although reduction of TET1 activity would not be predicted to cause reduction of 5mC levels on DNA, the authors suggest increased TET2 activity may compensate for reduced TET1 activity in D2018A ES cells. Direct measurement of the 5mC oxidation activities of TET1 and TET2 complexes in wild type and D2018A cells would be difficult, but the authors may be able to restore normal levels and distribution of 5mC in D2018A cells by overexpression of the GFP-C45 fusion, which binds OGT in vitro (Figure 3). This would provide evidence that the OGT interaction domain of TET1 has two important functions, activation of TET1 activity and titration of OGT to limit activation of TET2. Knockdowns of TET2 and/or TET3 in the WT and mutant cells could also isolate the effects of the TET1 mutation.\n\n4) The authors should add more analysis to the RNA-seq data. For example, how does the set of differentially expressed genes overlap with OGT ChIP-seq targets in published studies?\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"OGT binds a conserved C-terminal domain of TET1 to regulate TET1 activity and function in development\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work in its current form will not be considered further for publication in eLife.\n\nThe reviewers and editors found regulation of TET1 activity by OGT-catalyzed O-GlcNAc modification to be potentially very interesting, but a number of serious concerns were raised about the validity of the conclusions in this study. Perhaps the most significant finding is that O-GlcNAc modification of TET1 by OGT strongly stimulates its activity, however the enzymatic activity of the D2018 mutant is similar to that of wild type TET1 in 293T cells, which contain endogenous OGT. The in vivo results therefore are apparently inconsistent with the in vitro results. The data in the paper also do not clearly establish whether O-GlcNAc modification, rather than OGT binding, affects TET1 activity. The finding that all the TPR motifs of OGT are important for the interaction with TET1 raised concerns because different TPR motifs usually interact with different OGT substrates. The interpretations \u2013 and interpretability \u2013 of several key experiments were also questioned by the reviewers.\n\nOverall, given the published link between OGT and TET enzymes, we would expect a manuscript to present a major advance on the biological significance and/or mechanism of this interaction. If the activation of TET1 by OGT-catalyzed O-GlcNAc modification can be unambiguously established in vitro and in vivo, and the biological function and/or mechanism substantively explored, we would be happy to consider a revised manuscript as a new submission.\n\nReviewer #1:\n\nTET enzymes oxidize 5mC towards cytosine demethylation. In this manuscript, the authors characterized the interaction between TET1 and OGT. They showed that C-terminus of TET1 directly interacted with OGT. This interaction might be required for activity of TET1 in vivo. Overall, the authors proposed and tested a novel hypothesis on the interaction between OGT and TET1. However, it is very confusing to see that the D2018A mutant of TET1 lost the interaction with OGT but still retained enzymatic activity in 293T cells. A careful and through study is needed to justify the major conclusions in this manuscript.\n\n1) It is unclear if OGT is required for the enzymatic activity of TET1 in mammalian cells. The authors showed that the D2018A mutant was still able to convert 5mC to 5hmC in 293T cells. The enzymatic activity of the D2018 mutant was similar to that of wild type TET1 (Figure 5B and C). As the expression of OGT is very high in 293T cells, it indicates that without the interaction with OGT, TET1 is still able to oxidize 5mC, which contradicts with the major conclusions of the manuscript.\n\n2) The authors stated \"we mutated these residues individually and found that D2018A eliminated detectable interaction between FLAG-tagged TET1 CD and myc-OGT\". However, in the Figure 3D, only D2018A had been examined. It is unclear if other mutations abolish the interaction between TET1 and OGT. In particular, D2018 is not mutated in TET1 CD mt2. But TET1 CDmt2 still lost the interaction with OGT, indicating that other residues such as V2021 and T2022 may play more important roles for the interaction.\n\n3) The authors have not demonstrated if the enzymatic activity of OGT is required for TET1-dependent functions. The authors need to show if the enzymatic dead OGT is able to activate TET1 both in vitro and in vivo.\n\n4) The study on the TET1 mutant is incomplete. It is unclear if OGT is able to promote the enzymatic activity of the mutant TET1 in vitro.\n\n5) The authors showed a conserved interacting motif existed in both TET2 and TET3. Does TET2 or TET3 interact with OGT via the same motif? Does OGT promote TET2 and TET3 as well?\n\n6) It is very strange to see that all the TPR motifs of OGT are important for the interaction. Usually, different TPR motifs interact with different OGT substrates. If all the TPR repeats are required for the interaction with TET1, will other OGT substrates, such as HIF-1, affect the interaction between OGT and TET1? Especially HIF-1 is in the same complex with TET1 and OGT. Is the catalytic domain of OGT also required for the interaction with TET1?\n\nReviewer #2:\n\nHrit et al. follow up on work from several groups showing O-GlcNAc transferase (OGT) binds to TET proteins, and find that O-GlcNAc modification of TET1 stimulates its methylcytosine oxidation activity in vitro. In addition, the authors perform extensive mapping of the domain of TET1 that binds OGT, and find a 45 amino acid region of the TET1 catalytic domain that is necessary and sufficient for this interaction. Finally, the authors demonstrate that mRNA corresponding to wild type TET1, but not D2018A mutant TET1, can partially rescue HSC development in zebrafish lacking tet2 and tet3, as well as overall hmC levels. These findings contrast with reports that O-GlcNAc modification of TET1 increases Tet1 stability (PMID: 23729667), but have no effect on its catalytic activity (PMID: 24394411).\n\nSeveral studies have established that TET proteins and OGT broadly regulate each other's functions. However, there are conflicting data in the literature regarding the mechanisms by which this occurs. Consequently, the question is important and these findings contribute a new potential mechanism by which OGT regulates TET1. However, the extent to which the D2018A mutant prevents O-GlcNAc modification and stimulation of TET1 activity by OGT is not thoroughly tested. In addition, the study would be strengthened by a deeper analysis of how TET1's activity is regulated by O-GlcNAc modification (see below).\n\n1) Although there is a non-quantitative hmC blot that shows reduced hmC in fish rescued with mutant TET1 mRNA (Figure 6C), it is not clear whether reduction of meC oxidation is due to reduced O-GlcNAc modification, reduced TET1/OGT physical interaction, or both. The relative contributions of TET1/OGT interaction and O-GlcNAc modification on TET1 activity could be measured in the authors' in vitro system.\n\n2) Perhaps the most interesting new finding is the demonstration that O-GlcNAc modification of TET1 by OGT strongly stimulated its activity (Figure 1B and C). This observation would be strengthened by examination of how O-GlcNAc modification leads to enhanced catalytic activity. Does this modification increase the affinity of TET1 for meC? Does O-GlcNAc affect the Km or Vmax of the enzyme? These questions should be testable with existing reagents used in Figure 1.\n\nReviewer #3:\n\nHrit et al. map and characterize the binding site of OGT in Tet1. They identified a 45 amino-acid sequence which is sufficient to mediate TET1-OGT interaction, as well as a single point mutation which abrogates the TET1-OGT interaction. They did this mostly using in vitro biochemical methods, along with some in vivo work to support it.\n\nThe mapping of the site is an interesting finding and the point mutant is a fine tool for further dissection of the contribution of the TET1-OGT interaction to regulating TET1 activity as well as genome maintenance. This paper hints at potentially interesting functions of the TET1-OGT interaction, with some data derived from mESCs and developing zebrafish embryos. However, the function of this interaction in regulating TET proteins, hmC levels, or downstream transcriptional dynamics at specific genomic loci or in different chromatin environments remains somewhat speculative, and further experiments are required in order to build a model of how the TET1-OGT may actually influence transcriptional dynamics.\n\nAlso basic questions remain unanswered, e.g. does the interaction per se activate TET1 or is it the post-translational modification of TET1 and which sites are affected?\n\nWhy do the authors jump from human HEK to mouse ESCs and do the functional assay in fish rescuing a Tet2/3 KO with TET1?\n\nThroughout, rigorous controls, careful quantification and statistical analyses are missing.\n\nFigure 1A-C:\n\nThe co-factor UDP-GlcNAc is certainly required for in vitro O-GlyNAcylation. However, it is unclear if OGT can bind to TET1 without this co-factor. In other words, is active o-GlyNAcylation required for this interaction?\n\nFigure 1E-F:\n\nThe authors suggest a decrease in mC and hmC levels when OGT is overexpressed in mESCs. and attribute this is to stimulation of TET1 activity by OGT. However, overexpression of OGT (or many other nuclear proteins) often comes with pleiotropic effects. To rule out these possible side-effects, the authors should repeat these immunostainings and slot blots on cells where TDG is depleted, and look for an increase in accumulation of TET1 oxidation products hmC, caC and fC when OGT is overexpressed.\n\nThe immunofluorescence images are difficult to interpret \u2013 the images suggest massive changes in mC and hmC levels in cells, whereas the slot blots suggest very slight changes in levels of these modifications (these should be quantified: the AP stained slot blot for mC shows what appears to be less DNA loaded on the membrane for the OGT++ cells). mC staining in WT cells shows strong cytosolic background/unspecific staining, whereas this background is absent in OGT++ cells, which suggests problems with the experiment itself, or unusually altered display contrast settings.\n\nCo-staining with DAPI would help identify nuclei and evaluate the changes in mC/hmC intensity in single cells and would help with basic quantification of the signal. Additionally, it is somewhat unlikely that all cells would show such a change in mC/hmC from transient overexpression of OGT \u2013 this would suggest 100% transfection efficiency, and 100% penetrance of the overexpression phenotype. These efficiencies might be possible, but needs to be shown in detail, possibly by co-expressing cytosolic GFP under the same overexpression promoter, or by tagging OGT itself with a fluorophore.\n\nThese issues, along with the fact that transfection efficiency in Figure 5 appears to be around 25%, point to problems with the IF experiments, and should be entirely repeated, with adequate controls and some degree of quantification.\n\nFinally, no information is given on how these images were acquired, whether identical acquisition settings were used for control and OGT+ conditions, and how the contrast/offset was adjusted for visualization of these images. Additional images, perhaps with lower magnification showing more cells should be supplied in supplemental data.\n\nFigure 3:\n\nHere the authors identify a residue necessary for TET1-OGT interaction. Since this residue seems to be conserved in all three TET proteins, it would important to show whether this residue is minimally required for OGT interaction of each TET protein.\n\nIf that residue is required for OGT interacting with TET2 and TET3, then these would make far more interesting candidates for the rescue experiment described in Figure 6.\n\nIn Figure 3E, the D2018A mutant pulled-down OGT, which the authors suggest are high-molecular weight complexes, possibly involving TET2 and HCFC. It would be helpful to show that this is the case by probing for TET2 and HCFC. This would help with further dissection of OGT's direct interaction with TET vs. indirect interaction via TET-containing complexes.\n\nFigure 5:\n\nHere the authors show that TET1-D2018A is catalytically active when overexpressed in HEK cells. However, the difference in hmC levels is more visible here than in other slot blots, but the authors suggest that hmC levels are comparable, and that the mutation doesn't notably affect hmC generation, which seems misleading.\n\nMore importantly, however, the overexpression itself may mask subtle changes is the rate of hmC production. Therefore, given the availability of Cas9-engineered mESCs expressing the D2018A mutant, it would be more relevant to look at hmC levels in mESCs, and see how hmC levels change/are maintained when TET1-D2018A is expressed at more physiologically relevant levels.\n\nTo further characterize this interaction, a chromatin binding assay comparing soluble vs. chromatin-bound fractions of TET1 and OGT may give further insight into how TET1 recruits OGT to chromatin. Ideally, genome-wide methods such as RNA-seq and/or ChIP-seq would provide definitive evidence of localization and transcriptional regulation mediated by the TET1-OGT interaction, and would shed light on the chromatin/genomic environment where these interactions are active. These data would allow to build a more robust model of how TET1-OGT influences transcriptional dynamics, and where this interaction takes place.\n\nIt should be noted that the imaging data here in Figure 5 is much better interpretable than in Figure 1 \u2013 the images here display the transfection efficiency and how expression levels vary with transient transfection.\n\nFigure 6:\n\nHere the authors partially rescue the low-runx phenotype found in tet2/3 double-mutant zebrafish larvae by overexpressing mouse TET1 and TET1-D2018A. Given the overlapping requirements of TET2 and TET3 as described in Li et al., 2015, it would be more relevant to rescue with TET2 or TET3 proteins in which OGT interaction was abrogated (as suggested above).\n\nIt is unclear how the embryos were sorted into \"high\" or \"low\" runx categories, and whether this was performed in a blind/randomized way. Additionally, for each experiment, the number of embryos and number of clutches should be shown.\n\nIn Figure 6C, the slot blot is not quantified and changes in hmC levels are quite difficult to perceive, thus the claim that hmC levels are affected with TET1 injection is a bit tenuous.\n\nThe claim that TET1-OGT promotes TET1 activity is a bit strong based on this experiment. While the point mutant may well affect TET1-OGT interaction, D2018A may also disrupt the binding of other proteins to TET1, as well as the stability of the protein itself.\n\nFurthermore, the rescue of the high runx phenotype may be a distant downstream effect. Do the authors speculate that TET1-OGT directly modulates runx transcription? Or is this a downstream result from TET1-OGT somehow affecting Notch signalling?\n",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7de8b35b-57e9-42bd-88f6-e8ba93765968",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C1",
+      "claim": "TET enzymes convert 5-methylcytosine to 5-hydroxymethylcytosine and higher oxidized derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "TET enzymes convert 5-methylcytosine to 5-hydroxymethylcytosine and higher oxidized derivatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about TET enzymes supported by citations in the manuscript (Tahiliani et al., 2009; Ito et al., 2010; Kriaucionis and Heintz, 2009; He et al., 2011; Ito et al., 2011).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "4e39fcd5-89b4-4abb-a453-4c6654c5abf7",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C2",
+      "claim": "TETs stably associate with and are post-translationally modified by the nutrient-sensing enzyme OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "TETs stably associate with and are post-translationally modified by the nutrient-sensing enzyme OGT, suggesting a connection between metabolism and the epigenome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Vella et al., 2013; Deplus et al., 2013; Chen et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "fd0aa7cf-99f0-4e3c-9985-247ba1917fa7",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C3",
+      "claim": "Modification by OGT enhances TET1 activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show for the first time that modification by OGT enhances TET1 activity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4, where rTET1 activity is measured with and without OGT and UDP-GlcNAc.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "a61b655e-2009-4c8b-9295-9ec2a3a44a9c",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C4",
+      "claim": "A TET1 domain is necessary and sufficient for binding to OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify a TET1 domain that is necessary and sufficient for binding to OGT and report a point mutation that disrupts the TET1-OGT interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 1, 2, and 3 showing deletion analysis and binding assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "3c54b723-2b45-465c-b079-c8bfd227c624",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C5",
+      "claim": "A point mutation (D2018A) disrupts the TET1-OGT interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify a TET1 domain that is necessary and sufficient for binding to OGT and report a point mutation that disrupts the TET1-OGT interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 2 and 3 showing that the D2018A mutation prevents OGT binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "29ff2e6d-0dc1-484b-9bd9-61dc77e5f713",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C6",
+      "claim": "The TET1-OGT interaction is necessary for TET1 to rescue hematopoietic stem cell production in tet mutant zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this interaction is necessary for TET1 to rescue hematopoetic stem cell production in tet mutant zebrafish embryos, suggesting that OGT promotes TET1's function during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 5 showing that wild-type TET1 but not D2018A mutant rescues runx1 expression in zebrafish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "4d9fa8c1-1e72-4452-99fb-5ed314abb398",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C7",
+      "claim": "Disrupting the TET1-OGT interaction in mouse embryonic stem cells changes the abundance of TET2.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that disrupting the TET1-OGT interaction in mouse embryonic stem cells changes the abundance of TET2 and 5-methylcytosine, which is accompanied by alterations in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 6C showing increased TET2 protein levels in D2018A cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "6977976d-df9f-4901-97ae-b0acd9e5c29f",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C8",
+      "claim": "Disrupting the TET1-OGT interaction in mouse embryonic stem cells changes the abundance of 5-methylcytosine.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that disrupting the TET1-OGT interaction in mouse embryonic stem cells changes the abundance of TET2 and 5-methylcytosine, which is accompanied by alterations in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 6F and Figure 8 showing reduced 5mC levels in D2018A cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "4cd318ac-79fe-45f3-acc5-04b7872521b8",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C9",
+      "claim": "Disrupting the TET1-OGT interaction in mouse embryonic stem cells is accompanied by alterations in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that disrupting the TET1-OGT interaction in mouse embryonic stem cells changes the abundance of TET2 and 5-methylcytosine, which is accompanied by alterations in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 6D showing differentially expressed genes between WT and D2018A cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "64723e53-6e4a-4e3b-b34c-9a015439c104",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C10",
+      "claim": "The TET family of enzymes iteratively oxidize 5-methylcytosine (5mC) to 5-hydroxymethylcytosine (5hmC), 5-formylcytosine (5fC), and 5-carboxylcytosine (5caC).",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of the Ten-Eleven Translocation (TET) family of enzymes, which iteratively oxidize 5-methylcytosine (5mC) to 5-hydroxymethylcytosine (5hmC), 5-formylcytosine (5fC), and 5-carboxylcytosine (5caC), has expanded the epigenome (Tahiliani et al., 2009; Ito et al., 2010; Kriaucionis and Heintz, 2009; He et al., 2011; Ito et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "cc65bd50-7d0c-4ab8-abce-65217caa3e7b",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C11",
+      "claim": "Modified cytosines function both as transient intermediates in an active DNA demethylation pathway and as stable epigenetic marks.",
+      "claim_type": "EXPLICIT",
+      "source": "These modified cytosines have multiple roles, functioning both as transient intermediates in an active DNA demethylation pathway (He et al., 2011; Guo et al., 2011; Cortellino et al., 2011; Gao et al., 2013; Weber et al., 2016) and as stable epigenetic marks (Bachman et al., 2014; Bachman et al., 2015) that may recruit specific readers (Spruijt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "7e840dc6-932c-4c2b-b0ce-5edf8b3749e9",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C12",
+      "claim": "OGT is the sole enzyme responsible for attaching a GlcNAc sugar to serine, threonine, and cysteine residues of over 1000 nuclear, cytoplasmic, and mitochondrial proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "OGT is the sole enzyme responsible for attaching a GlcNAc sugar to serine, threonine, and cysteine residues of over 1000 nuclear, cytoplasmic, and mitochondrial proteins (Haltiwanger et al., 1990; Hanover et al., 2012; Maynard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "d3e316b1-dbc0-4bbd-b5ae-321f6ef8307c",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C13",
+      "claim": "O-GlcNAcylation is a reversible modification that affects the function of target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Like phosphorylation, O-GlcNAcylation is a reversible modification that affects the function of target proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about O-GlcNAcylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "2511b454-6771-42d9-b6b3-d15f9533f387",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C14",
+      "claim": "OGT stably interacts with and modifies all three TET proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "OGT stably interacts with and modifies all three TET proteins and its genome-wide distribution overlaps significantly with TETs (Vella et al., 2013; Deplus et al., 2013; Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "253c7f46-23b2-435b-a251-a86832f50df4",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C15",
+      "claim": "OGT's genome-wide distribution overlaps significantly with TETs.",
+      "claim_type": "EXPLICIT",
+      "source": "OGT stably interacts with and modifies all three TET proteins and its genome-wide distribution overlaps significantly with TETs (Vella et al., 2013; Deplus et al., 2013; Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "11c9c693-bed6-468b-a597-a1669f681bfb",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C16",
+      "claim": "Depleting TET1 in mouse embryonic stem cells reduced the chromatin association of OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "Two studies in mouse embryonic stem cells (mESCs) have suggested that TET1 and OGT may be intimately linked in regulation of gene expression, as depleting either enzyme reduced the chromatin association of the other and affected expression of its target genes (Vella et al., 2013; Shi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "9494d303-19e6-47b1-8826-ebd09ff16a78",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C17",
+      "claim": "Depleting OGT in mouse embryonic stem cells reduced the chromatin association of TET1.",
+      "claim_type": "EXPLICIT",
+      "source": "Two studies in mouse embryonic stem cells (mESCs) have suggested that TET1 and OGT may be intimately linked in regulation of gene expression, as depleting either enzyme reduced the chromatin association of the other and affected expression of its target genes (Vella et al., 2013; Shi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "a21f7a7f-507c-42f5-b1ae-16c9be429ee4",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C18",
+      "claim": "The 45 residue C-terminus of TET1 (C45) is necessary for interaction with OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that deletion of only the 45 residue C-terminus of TET1 (hereafter C45) prevented detectable interaction with OGT (Figure 1B, TET1 CD del. 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "7e22135e-c3d3-44f3-8aa1-6c1fe839ea2a",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C19",
+      "claim": "TET1 CD, but not TET1 CD lacking C45, interacted with endogenous OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "TET1 CD, but not TET1 CD lacking C45, interacted with endogenous OGT, confirming that the C45 is necessary for this interaction (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "92b372ec-8f23-45e7-862f-27e7a83fba00",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C20",
+      "claim": "All three TETs interact with OGT via their catalytic domains.",
+      "claim_type": "EXPLICIT",
+      "source": "All three TETs interact with OGT via their catalytic domains (Deplus et al., 2013; Chen et al., 2013; Ito et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "65d49a5f-3211-427a-b371-ea48833da7c9",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C21",
+      "claim": "Deletion of TPRs 7-9, 10-12, or 13-13.5 of OGT severely impaired the interaction with TET1 CD.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all the TPR deletions tested impaired the interaction with TET1 CD, with deletion of TPRs 7 \u2013 9, 10 \u2013 12, or 13 \u2013 13.5 being most severe (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "a86b35d2-7a65-49a6-92ec-7741bbe65832",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C22",
+      "claim": "Mutation of D2018, V2021, and T2022 in TET1 disrupted the interaction with OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "FLAG pulldowns revealed that two sets of point mutations disrupted the interaction with OGT: mutation of D2018, V2021, and T2022, or mutation of V2021, T2022, and S2024 (Figure 2C, mt1 and mt2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "886e140c-7f3b-4e24-99f4-94394352544c",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C23",
+      "claim": "Mutation of V2021, T2022, and S2024 in TET1 disrupted the interaction with OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "FLAG pulldowns revealed that two sets of point mutations disrupted the interaction with OGT: mutation of D2018, V2021, and T2022, or mutation of V2021, T2022, and S2024 (Figure 2C, mt1 and mt2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "8754afa4-e34e-4a5d-a208-10db9f502ac8",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C24",
+      "claim": "Altering D2018 to A (D2018A) eliminated detectable interaction between FLAG-tagged TET1 CD and His-OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "Further mutational analysis revealed that altering D2018 to A (D2018A) eliminated detectable interaction between FLAG-tagged TET1 CD and His-OGT (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "e0813247-3652-4b01-bcfe-7160a2bf8cd9",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C25",
+      "claim": "The TET1 C45 is sufficient for binding to OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that GFP-C45, but not GFP alone, bound OGT (Figure 3B), indicating that the TET1 C45 is sufficient for interaction with OGT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "f3029bfc-f701-414d-892c-a805cd86dfd2",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C26",
+      "claim": "The interaction between TET1 CD and OGT is direct.",
+      "claim_type": "EXPLICIT",
+      "source": "rTET1 wt, but not beads alone, pulled down rOGT, indicating a direct interaction between these proteins (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data using recombinant proteins shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "52ceb755-e105-4535-8cb0-9213a4517064",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C27",
+      "claim": "rD2018A did not pull down rOGT.",
+      "claim_type": "EXPLICIT",
+      "source": "rD2018A did not pull down rOGT, consistent with our mutational analysis in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "22afcc14-c6f6-4a06-bca0-0ae3ad5f3564",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C28",
+      "claim": "The TET1 C45 is sufficient to confer binding to rOGT.",
+      "claim_type": "EXPLICIT",
+      "source": "Then we used an in vitro transcription/translation extract to produce GFP and GFP-C45, incubated each with rOGT, and found that the TET1 C45 is sufficient to confer binding to rOGT (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "9d2cd9b2-3efa-4afd-9921-1c41355bac32",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C29",
+      "claim": "The D2018A mutation in the GFP-C45 was sufficient to prevent rOGT binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The D2018A mutation in the GFP-C45 was also sufficient to prevent rOGT binding (Figure 3D), consistent with the behavior of TET1 CD D2018A in cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "a5b18091-c8a3-4918-a21a-1d97e9576431",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C30",
+      "claim": "rTET1 wt and rD2018A catalyzed formation of 5hmC on an in vitro methylated lambda DNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "rTET1 wt and rD2018A catalyzed formation of 5hmC on an in vitro methylated lambda DNA substrate (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "47bc53ec-c9de-477d-a0d1-3c1ff448dadc",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C31",
+      "claim": "Incubation with rOGT and OGT's cofactor UDP-GlcNAc resulted in O-GlcNAcylation of rTET1 wt but not rD2018A.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation with rOGT and OGT's cofactor UDP-GlcNAc resulted in O-GlcNAcylation of rTET1 wt but not rD2018A (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "dfc90491-f7f9-4308-9fb6-99e2ba1db912",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C32",
+      "claim": "Addition of UDP-GlcNAc did not significantly affect activity of rTET1 wt or rD2018A.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of UDP-GlcNAc did not significantly affect activity of rTET1 wt or rD2018A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "02ea110e-5a0b-4ddb-866c-718e15afebe6",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C33",
+      "claim": "Incubation with rOGT alone slightly enhanced 5hmC synthesis by rTET1 wt (1.3 to 1.7-fold), but not rD2018A.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation with rOGT alone slightly enhanced 5hmC synthesis by rTET1 wt (1.3 to 1.7-fold), but not rD2018A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "440f15ff-faeb-48a5-9e43-c13cbbf55c14",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C34",
+      "claim": "Incubation of rTET1 wt with rOGT and UDP-GlcNAc resulted in robust stimulation (4 to 5-fold) of 5hmC synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed robust stimulation (4 to 5-fold) when rTET1 wt but not rD2018A was incubated with rOGT and UDP-GlcNAc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "930dc05f-d90f-43d2-8c50-6339a40a89b6",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C35",
+      "claim": "The TET1-OGT protein-protein interaction may slightly enhance TET1's activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that while the TET1-OGT protein-protein interaction may slightly enhance TET1's activity, the O-GlcNAc modification is responsible for the majority of the observed stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing modest enhancement with OGT alone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "d69de0e2-4e97-4b6a-be8c-fd73e5e3dd58",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C36",
+      "claim": "The O-GlcNAc modification is responsible for the majority of the observed stimulation of TET1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that while the TET1-OGT protein-protein interaction may slightly enhance TET1's activity, the O-GlcNAc modification is responsible for the majority of the observed stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing robust enhancement with OGT and UDP-GlcNAc.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "9f13ed6c-511f-4ae4-a30c-18d8ed79bfea",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C37",
+      "claim": "Deletion of both tet2 and tet3 (tet2/3 DM) in zebrafish causes a severe decrease in 5hmC levels accompanied by larval lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of both tet2 and tet3 (tet2/3 DM) causes a severe decrease in 5hmC levels accompanied by larval lethality owing to abnormalities including defects in hematopoietic stem cell (HSC) production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Li et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "89947592-fb6f-4e7d-a059-52a7e19bc323",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C38",
+      "claim": "Reduced HSC production in tet2/3 DM zebrafish is visualized by reduction in the transcription factor runx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced HSC production is visualized by reduction in the transcription factor runx1, which marks HSCs in the dorsal aorta of wild-type embryos, but is largely absent from this region in tet2/3 DM embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Li et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "26501dac-d64f-4f3e-a0a1-8f4bdeaa828a",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C39",
+      "claim": "5hmC levels and runx1 expression are rescued by injection of human TET2 or TET3 mRNA into one-cell-stage tet2/3 DM zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "5hmC levels and runx1 expression are rescued by injection of human TET2 or TET3 mRNA into one-cell-stage embryos (Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work (Li et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "09004a09-ad9f-4ae2-b296-c0b87f079f88",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C40",
+      "claim": "Tet1 wild type mRNA significantly increased the percentage of embryos with strong runx1 labeling in the dorsal aorta.",
+      "claim_type": "EXPLICIT",
+      "source": "Tet1 wild type mRNA significantly increased the percentage of embryos with strong runx1 labeling in the dorsal aorta (high runx1), while Tet1 D2018A mRNA failed to rescue runx1 positive cells (Figure 5A\u2013B, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "2b9d82ff-ddef-49fe-b047-e43c784cfd63",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C41",
+      "claim": "Tet1 D2018A mRNA failed to rescue runx1 positive cells in tet2/3 DM zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Tet1 wild type mRNA significantly increased the percentage of embryos with strong runx1 labeling in the dorsal aorta (high runx1), while Tet1 D2018A mRNA failed to rescue runx1 positive cells (Figure 5A\u2013B, Figure 5\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "ad0c44c0-fbfd-45a0-983d-58046c3f4d87",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C42",
+      "claim": "Embryos injected with wild type Tet1 mRNA showed a modest but significant increase in 5hmC relative to uninjected tet2/3 DM embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, embryos injected with wild type Tet1 mRNA showed a modest but significant increase in 5hmC relative to uninjected tet2/3 DM embryos, while injection of TET1 D2018A mRNA did not show a significant increase (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "1363514b-3b4d-44c5-a2e3-7ae4b346612c",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C43",
+      "claim": "Injection of TET1 D2018A mRNA did not show a significant increase in 5hmC in tet2/3 DM zebrafish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, embryos injected with wild type Tet1 mRNA showed a modest but significant increase in 5hmC relative to uninjected tet2/3 DM embryos, while injection of TET1 D2018A mRNA did not show a significant increase (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "b8ad727f-1ab2-4c4f-a512-4783dd1bbbec",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C44",
+      "claim": "The D2018A mutation reduced, but did not eliminate, co-IP of OGT with TET1 in mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "FLAG pulldowns revealed that the D2018A mutation reduced, but did not eliminate, co-IP of OGT with TET1 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "27caf3e5-f207-48ea-9bfc-3f9289d21314",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C45",
+      "claim": "Levels of TET2 protein were significantly increased in D2018A cells compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of TET2 protein were significantly increased in D2018A cells compared to WT (Figure 6C), suggesting the cells may be compensating for impaired TET1 function by producing more TET2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "62ace899-2e2c-4cb8-8441-494d8d5270cc",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C46",
+      "claim": "378 genes changed expression by 2-fold or more in D2018A cells compared to WT (157 upregulated and 221 downregulated).",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 378 genes whose expression changed by 2-fold or more in D2018A cells compared to WT (157 upregulated and 221 downregulated)(Figure 6D, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "158d57d1-c810-4878-9aa1-a3be27efddd6",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C47",
+      "claim": "Increased abundance of Tet2 transcripts was not observed in D2018A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of the increased TET2 protein levels in D2018A cells, we did not observe increased abundance of Tet2 transcripts (Figure 6E, Figure 6\u2014source data 1), nor increased stability of TET2 protein in D2018A cells compared to WT (Figure 6\u2014figure supplement 2, Figure 6\u2014figure supplement 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qPCR data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "86f71035-bab0-494a-9b7a-5911dac55078",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C48",
+      "claim": "Increased stability of TET2 protein in D2018A cells compared to WT was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In spite of the increased TET2 protein levels in D2018A cells, we did not observe increased abundance of Tet2 transcripts (Figure 6E, Figure 6\u2014source data 1), nor increased stability of TET2 protein in D2018A cells compared to WT (Figure 6\u2014figure supplement 2, Figure 6\u2014figure supplement 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cycloheximide chase data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "0220c15c-608f-4d7a-88a2-833e19465877",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C49",
+      "claim": "The total amount of 5mC was about 25% lower in D2018A cells compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "The total amount of 5mC was about 25% lower in D2018A cells compared to WT, while levels of 5hmC were not significantly different (Figure 6F, Figure 6\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "d96360f5-6e2b-46d0-bfa3-59466c6014f8",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C50",
+      "claim": "Levels of 5hmC were not significantly different between D2018A cells and WT.",
+      "claim_type": "EXPLICIT",
+      "source": "The total amount of 5mC was about 25% lower in D2018A cells compared to WT, while levels of 5hmC were not significantly different (Figure 6F, Figure 6\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by mass spectrometry data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "91025455-5128-416d-873d-1416dbfb1278",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C51",
+      "claim": "76 differentially hydroxymethylated regions (DhMRs) were identified between WT and D2018A mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 76 differentially hydroxymethylated regions (DhMRs), which were enriched in genic regions over intergenic regions (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 5hmC-Seal data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "a07b691f-14a0-43ed-8a2a-96fae03ec311",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C52",
+      "claim": "DhMRs were enriched in genic regions over intergenic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 76 differentially hydroxymethylated regions (DhMRs), which were enriched in genic regions over intergenic regions (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 5hmC-Seal data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "a34e340e-c42c-4e7a-9420-854bd3da4324",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C53",
+      "claim": "95 genes were associated with a change in 5hmC levels (DhMGs) \u2013 46 with more 5hmC in D2018A mESCs and 49 with less 5hmC.",
+      "claim_type": "EXPLICIT",
+      "source": "95 genes were associated with a change in 5hmC levels (DhMGs) \u2013 46 with more 5hmC in D2018A mESCs and 49 with less 5hmC (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 5hmC-Seal data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "bb06753d-1ed5-4bee-8261-678305ec1eb2",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C54",
+      "claim": "Metagene analysis showed no dramatic changes in 5hmC distribution around genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Metagene analysis showed no dramatic changes in 5hmC distribution around genes (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 5hmC-Seal data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "5861f14e-7a44-484b-b9dc-890846aed600",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C55",
+      "claim": "WGBS showed reduced levels of 5mC + 5hmC in D2018A cells compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our mass spec results, WGBS showed reduced levels of 5mC + 5 hmC in D2018A cells compared to WT (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WGBS data shown in Figure 8A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "271b711e-a648-476e-b724-ce8d86c51bf9",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C56",
+      "claim": "5mC + 5hmC was reduced genome-wide in D2018A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no evidence of a change in the distribution of CpG modifications; rather, 5mC + 5 hmC was reduced genome-wide in D2018A cells (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WGBS data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "05c62e76-edba-4694-aabf-b180a43519b1",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C57",
+      "claim": "There is a very small, but statistically significant, negative correlation between promoter CpG modification and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a very small, but statistically significant, negative correlation between promoter CpG modification and gene expression (Pearson r = \u22120.02, p=0.025)(Figure 8D, Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WGBS and RNA-seq data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "e06b6136-69f8-48aa-8b81-35e8f0a34db4",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C58",
+      "claim": "42,725 differentially methylated regions (DMRs) were identified by WGBS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The WGBS analysis identified 42,725 differentially methylated regions (DMRs)(Figure 8E\u2013G), none of which overlapped with the 76 DhMRs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WGBS data shown in Figure 8E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "23f58667-c1ac-48e1-83ab-c5856a045fc3",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C59",
+      "claim": "None of the DMRs overlapped with the 76 DhMRs.",
+      "claim_type": "EXPLICIT",
+      "source": "The WGBS analysis identified 42,725 differentially methylated regions (DMRs)(Figure 8E\u2013G), none of which overlapped with the 76 DhMRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of WGBS and 5hmC-Seal data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "983e4b05-9678-4235-abdb-f2cecdb28cbd",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C60",
+      "claim": "DMRs were significantly enriched in exons over other genomic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to DhMRs, DMRs were significantly enriched in exons over other genomic regions (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WGBS data shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "31c993aa-ad84-4bff-b580-6dbe490bcf40",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C61",
+      "claim": "3587 genes contained two or more DMRs between the transcription start and end sites.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 3587 genes that contained two or more DMRs between the transcription start and end sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by WGBS data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "78d1e8d9-304e-4100-93b2-1a78e0f9a757",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C62",
+      "claim": "Genes with two or more DMRs between the transcription start and end sites were enriched for DEGs.",
+      "claim_type": "EXPLICIT",
+      "source": "This group was enriched for DEGs (Figure 8H), suggesting that changes in gene body cytosine modifications may underlie some of the gene expression differences between WT and D2018A mESCs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by WGBS and RNA-seq data shown in Figure 8H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "ba79e31d-34d1-46d8-868f-b67284c338a3",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C63",
+      "claim": "The TET1 C45 is the first small protein domain identified that confers stable binding to OGT.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first time that a small protein domain has been identified that confers stable binding to OGT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding, based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "8e1bd776-286b-4252-a0f9-1288bdda723d",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C64",
+      "claim": "The vast majority of OGT targets do not bind to OGT tightly enough to be detected in co-IP experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of OGT targets do not bind to OGT tightly enough to be detected in co-IP experiments, suggesting that OGT's interaction with TET proteins is unusually strong.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about OGT interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "d8b53fe9-2657-4402-9cdf-c5c4fe328714",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C65",
+      "claim": "OGT's interaction with TET proteins is unusually strong.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of OGT targets do not bind to OGT tightly enough to be detected in co-IP experiments, suggesting that OGT's interaction with TET proteins is unusually strong.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that TET-OGT interactions can be detected by co-IP while most OGT interactions cannot.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "901aa74d-a4f9-438b-b4a1-2088fd439b25",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C66",
+      "claim": "The C-terminal region of TET2 corresponding to TET1 C45 may be unstructured.",
+      "claim_type": "EXPLICIT",
+      "source": "For determination of the crystal structure of the human TET2 catalytic domain in complex with DNA, the corresponding C-terminal region was deleted (Hu et al., 2013), suggesting that it may be unstructured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that the region was deleted for crystallization, which is often done for unstructured regions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "6484fa4f-fd25-4e20-9e2e-12d0614ab95a",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C67",
+      "claim": "When bound to OGT, the TET1 C45 domain may become structured.",
+      "claim_type": "EXPLICIT",
+      "source": "When bound to OGT this domain may become structured, and structural studies of OGT bound to C45 could shed light on what features make this domain uniquely able to interact stably with OGT and how OGT may stimulate TET1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the structural properties of the C45 domain.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "1e8f3e58-90da-4109-8f8a-209f8a1e8e4b",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C68",
+      "claim": "Loss of TET1 causes loss of OGT from chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of TET1 causes loss of OGT from chromatin (Vella et al., 2013) and induces similar changes in transcription in both wild-type mESCs and mESCs lacking DNA methylation (Williams et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "a0456891-347f-496c-8655-b7738f14e61b",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C69",
+      "claim": "Loss of TET1 induces similar changes in transcription in both wild-type mESCs and mESCs lacking DNA methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of TET1 causes loss of OGT from chromatin (Vella et al., 2013) and induces similar changes in transcription in both wild-type mESCs and mESCs lacking DNA methylation (Williams et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "eaac383a-087e-42bc-8984-5a26cb34fab2",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C70",
+      "claim": "TET proteins may recruit OGT to chromatin to regulate gene expression independent of 5mC oxidation.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the possibility that TET proteins may recruit OGT to chromatin to regulate gene expression independent of 5mC oxidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that TET1 loss affects transcription similarly in cells with and without DNA methylation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "ad5aba49-526b-428e-b19c-5761c79591ba",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C71",
+      "claim": "OGT modifies many transcription factors and chromatin regulators in mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility, OGT modifies many transcription factors and chromatin regulators in mESCs (Myers et al., 2011)(Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "59c618d3-7245-4cc3-927c-55598216c438",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C72",
+      "claim": "The stable TET1-OGT interaction promotes both regulation of TET1 activity by O-GlcNAcylation as well as recruitment of OGT to chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus it may be that the stable TET1-OGT interaction promotes both regulation of TET1 activity by O-GlcNAcylation as well as recruitment of OGT to chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the dual role of the TET1-OGT interaction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "80f5c2b8-62bd-4751-a0e0-f896bc4a0f7d",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C73",
+      "claim": "At least part of the role of the TET1-OGT interaction in vivo is regulation of TET1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our results show that TET1 D2018A does not rescue 5hmC levels in tet2/3 DM zebrafish embryos to the same extent as the wild type protein, suggesting that at least part of the role of the TET1-OGT interaction in vivo is regulation of TET1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the zebrafish rescue data showing that D2018A fails to rescue 5hmC levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "8c31f641-c9e8-4a9f-8197-0ab79ae700c3",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C74",
+      "claim": "OGT can modify a TET protein in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show for the first time that OGT can modify a TET protein in vitro, and that O-GlcNAcylation stimulates the activity of a TET protein in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 4B showing O-GlcNAcylation of rTET1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "7f2a3224-d7ae-48e2-b26f-8e632aa35302",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C75",
+      "claim": "O-GlcNAcylation stimulates the activity of a TET protein in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show for the first time that OGT can modify a TET protein in vitro, and that O-GlcNAcylation stimulates the activity of a TET protein in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figures 4C-F showing enhanced TET1 activity with OGT and UDP-GlcNAc.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "9ea108aa-43fc-4f3f-963a-321e8bc694e1",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C76",
+      "claim": "8 sites of O-GlcNAcylation were identified within the TET1 CD.",
+      "claim_type": "EXPLICIT",
+      "source": "We have identified 8 sites of O-GlcNAcylation within the TET1 CD (data not shown), which precludes a simple analysis of which sites are important for stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data not shown in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "a3ce1ee5-f2bf-4e96-aaba-25c50a2859b6",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C77",
+      "claim": "OGT directly interacts with TET2 and TET3.",
+      "claim_type": "EXPLICIT",
+      "source": "OGT also directly interacts with TET2 and TET3, suggesting that it may regulate all three TET proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from prior work (Deplus et al., 2013; Chen et al., 2013).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "4d0078f5-12ec-40fc-a90b-70a76ea19999",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C78",
+      "claim": "OGT may regulate all three TET proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "OGT also directly interacts with TET2 and TET3, suggesting that it may regulate all three TET proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that OGT interacts with all three TETs and stimulates TET1 activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "738e5bd1-ef09-4eba-bf90-d597fa50d69a",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C79",
+      "claim": "Different TET proteins are expressed in different cell types and at different stages of development.",
+      "claim_type": "EXPLICIT",
+      "source": "Different TET proteins are expressed in different cell types and at different stages of development (Koh et al., 2011; Dawlaty et al., 2011; Li et al., 2011; Zhao et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "56c331ab-0498-49a7-a858-a1e754d4a3e7",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C80",
+      "claim": "TET1 and TET2 appear to target different genomic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "TET1 and TET2 appear to target different genomic regions (Huang et al., 2014) and to promote different pluripotent states in mESCs (Fidalgo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "62430776-afce-41aa-8604-49b0dfaa64e4",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C81",
+      "claim": "TET1 and TET2 promote different pluripotent states in mESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "TET1 and TET2 appear to target different genomic regions (Huang et al., 2014) and to promote different pluripotent states in mESCs (Fidalgo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "0970217f-972a-4482-9b59-5ee543865661",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C82",
+      "claim": "OGT is a strong candidate for regulation of TET enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that OGT is a strong candidate for regulation of TET enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings in this manuscript.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "45c54d58-1ffa-424c-85e5-19fe9330bbd6",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C83",
+      "claim": "Wild type TET1 mRNA, but not TET1 mRNA carrying a mutation that can impair interaction with OGT, can rescue tet2/3 DM zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result that wild type TET1 mRNA, but not TET1 mRNA carrying a mutation that can impair interaction with OGT, can rescue tet2/3 DM zebrafish suggests that OGT regulation of TET enzymes may play a role in development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "b3166d0a-cff9-4443-b7a7-1b5a06e8b567",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C84",
+      "claim": "OGT regulation of TET enzymes may play a role in development.",
+      "claim_type": "EXPLICIT",
+      "source": "Our result that wild type TET1 mRNA, but not TET1 mRNA carrying a mutation that can impair interaction with OGT, can rescue tet2/3 DM zebrafish suggests that OGT regulation of TET enzymes may play a role in development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the zebrafish rescue data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "b5e58c94-c0ed-4e52-a3d6-15c51f29ca02",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C85",
+      "claim": "Zebrafish lacking tet2 and tet3 die as larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish lacking tet2 and tet3 die as larvae (Li et al., 2015), and knockout of Tet genes in mice yields developmental phenotypes of varying severities, with knockout of all three Tets together being embryonic lethal (Dawlaty et al., 2011; Li et al., 2011; Dawlaty et al., 2013; Dawlaty et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "8a63e77a-e606-470e-a67e-ee9fedb80740",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C86",
+      "claim": "Knockout of Tet genes in mice yields developmental phenotypes of varying severities.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish lacking tet2 and tet3 die as larvae (Li et al., 2015), and knockout of Tet genes in mice yields developmental phenotypes of varying severities, with knockout of all three Tets together being embryonic lethal (Dawlaty et al., 2011; Li et al., 2011; Dawlaty et al., 2013; Dawlaty et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "732ae11b-a548-4af0-91ce-3763968af915",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C87",
+      "claim": "Knockout of all three Tets together in mice is embryonic lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Zebrafish lacking tet2 and tet3 die as larvae (Li et al., 2015), and knockout of Tet genes in mice yields developmental phenotypes of varying severities, with knockout of all three Tets together being embryonic lethal (Dawlaty et al., 2011; Li et al., 2011; Dawlaty et al., 2013; Dawlaty et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "d583384c-3048-4dba-9951-680c71d01ff3",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C88",
+      "claim": "OGT is absolutely essential for development in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, OGT is absolutely essential for development in mice (Shafi et al., 2000) and zebrafish (Webster et al., 2009), though its vast number of targets have made it difficult to narrow down more specifically why OGT is necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "4a0ef504-e2b6-4d0b-94a2-be0725a9c469",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C89",
+      "claim": "OGT is absolutely essential for development in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, OGT is absolutely essential for development in mice (Shafi et al., 2000) and zebrafish (Webster et al., 2009), though its vast number of targets have made it difficult to narrow down more specifically why OGT is necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "b5e214ce-7730-4411-a9e2-db10d7a909be",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C90",
+      "claim": "TETs are important OGT targets in development.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that TETs are important OGT targets in development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the zebrafish rescue data showing that the TET1-OGT interaction is important for TET1 function in development.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "ce5033e5-d401-4314-ae34-f1e95783423e",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C91",
+      "claim": "The increased expression of TET2 in the D2018A cells could explain why total 5hmC levels are unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "The D2018A mutation is predicted to decrease TET1 activity, and the increased expression of TET2 in the D2018A cells could explain why total 5hmC levels are unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation to explain the observation that 5hmC levels are unchanged despite the D2018A mutation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "81a69d34-8156-4769-a546-408f7fa4e1dc",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C92",
+      "claim": "Most gene expression changes cannot be explained by CpG modification differences at promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "The very small correlation between promoter CpG modification and gene expression suggests that most gene expression changes cannot be explained by CpG modification differences at promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the weak correlation observed in Figure 8D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "c2021652-1318-4f03-989d-a2f221dc027b",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C93",
+      "claim": "Changes to genic CpG modifications may underlie some of the gene expression changes.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrichment of both DMRs and DhMRs in genic regions and the correlation between gene body DMRs and DEGs suggests that changes to genic CpG modifications may underlie some of the gene expression changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enrichment of DMRs in genic regions and the correlation with DEGs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "e36980cc-3d5f-4f84-b5a8-f5b31c93e6b3",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C94",
+      "claim": "Gene bodies are targets of TET2 rather than TET1.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the increased expression of TET2 in D2018A mESCs compared to WT, since gene bodies are targets of TET2 rather than TET1(Huang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "8d3471d3-d772-4af0-9edc-77a204b5ba11",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C95",
+      "claim": "Higher levels of TET2 could increase 5mC oxidation at gene bodies, resulting in widespread genic demethylation and an increase in 5hmC at a small subset of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher levels of TET2 could increase 5mC oxidation at gene bodies, resulting in widespread genic demethylation and an increase in 5hmC at a small subset of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation to explain the observed changes in 5mC and 5hmC distribution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "babc156f-766c-4f73-b86a-50815a236863",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C96",
+      "claim": "UDP-GlcNAc is synthesized via the hexosamine biosynthetic pathway (HBP).",
+      "claim_type": "EXPLICIT",
+      "source": "OGT has been proposed to act as a metabolic sensor because its cofactor, UDP-GlcNAc, is synthesized via the hexosamine biosynthetic pathway (HBP), which is fed by pathways metabolizing glucose, amino acids, fatty acids, and nucleotides (Hart et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "597e7c9c-4820-44b0-8ccc-32d946df589b",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C97",
+      "claim": "The hexosamine biosynthetic pathway (HBP) is fed by pathways metabolizing glucose, amino acids, fatty acids, and nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "OGT has been proposed to act as a metabolic sensor because its cofactor, UDP-GlcNAc, is synthesized via the hexosamine biosynthetic pathway (HBP), which is fed by pathways metabolizing glucose, amino acids, fatty acids, and nucleotides (Hart et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "7acb883d-25c9-46a2-9523-65dd810de77b",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C98",
+      "claim": "UDP-GlcNAc levels change in response to flux through metabolic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "UDP-GlcNAc levels change in response to flux through these pathways (Marshall et al., 2004; McClain, 2002; Weigert et al., 2003), leading to the hypothesis that OGT activity may vary in response to the nutrient status of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "86966662-7bf5-4fa1-b56b-5cc4c8e24eb7",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C99",
+      "claim": "OGT activity may vary in response to the nutrient status of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "UDP-GlcNAc levels change in response to flux through these pathways (Marshall et al., 2004; McClain, 2002; Weigert et al., 2003), leading to the hypothesis that OGT activity may vary in response to the nutrient status of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observation that UDP-GlcNAc levels change with metabolic flux.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "95e11ac9-9e13-4f0f-8db8-db469f65c374",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "claim_id": "C100",
+      "claim": "OGT may regulate the epigenome in response to nutrient status by controlling TET1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the enhancement of TET1 activity by OGT and the significant overlap of the two enzymes on chromatin (Vella et al., 2013) suggest a model in which OGT may regulate the epigenome in response to nutrient status by controlling TET1 activity (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculation based on the findings in this manuscript and prior work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "859dff3d-0236-44f6-b347-614bf7baa1d0",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The 45-residue C-terminal domain (C45) of TET1 is both necessary and sufficient for binding to OGT. Deletion of C45 prevents detectable interaction with OGT in cells, while fusion of C45 to GFP confers OGT binding in both cellular and in vitro systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C18, C19, C25, and C28 collectively demonstrate through deletion analysis (Figures 1B, 1-figure supplement 1) and gain-of-function experiments (Figures 3B, 3D) that the C45 domain is both necessary and sufficient for TET1-OGT interaction. The data are internally consistent and use appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "bc14fea5-3909-4fc7-ac74-6fcc96bf0fd5",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A single point mutation (D2018A) in the TET1 C45 domain disrupts the TET1-OGT interaction. Mutational analysis identified conserved residues critical for binding, with D2018A being sufficient to eliminate detectable interaction in both cellular and in vitro systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C22-C24, C27, and C29 are supported by systematic mutagenesis data (Figures 2C-D) and validated in multiple experimental systems including co-IP in cells (Figure 2D) and recombinant protein binding assays (Figure 3C-D). The convergent evidence from multiple approaches strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "e4e8d6a3-1f0a-4995-8a38-32bdbb77e02d",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The TET1-OGT interaction is direct, as demonstrated by binding assays using purified recombinant proteins. The D2018A mutation prevents this direct interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 are supported by recombinant protein pulldown experiments (Figure 3C) and in vitro transcription/translation assays (Figure 3D) that exclude the possibility of bridging proteins. These experiments provide strong evidence for direct protein-protein interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "db367b6b-2c3d-4a91-a3a5-4b911d8e0dee",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "OGT modifies TET1 in vitro through O-GlcNAcylation and enhances TET1 catalytic activity 4-5 fold. The protein-protein interaction contributes modestly (1.3-1.7 fold), while O-GlcNAcylation is responsible for the majority of stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31-C36, C74-C75 are supported by systematic in vitro activity assays (Figures 4A-F) that dissect the contributions of protein binding versus enzymatic modification. The experiments include appropriate controls (UDP-GlcNAc alone, OGT alone) and use the D2018A mutant to separate effects. Statistical significance is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "dcccaa02-cfd9-4c2c-8ba1-43a383434c00",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The TET1-OGT interaction is necessary for TET1 to rescue hematopoietic stem cell production in tet2/3 double mutant zebrafish embryos. Wild-type TET1 mRNA, but not D2018A mutant, rescues runx1 expression and modestly increases 5hmC levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C40-C43, C73, and C83 are supported by zebrafish rescue experiments (Figure 5) with five biological replicates showing statistically significant differences. The failure of D2018A to rescue provides functional validation of the interaction's importance in vivo, though the modest 5hmC increase suggests complexity in the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "a17b2bdb-4683-4a5f-b425-e45a65ade41c",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In mESCs, the D2018A mutation reduces but does not eliminate TET1-OGT co-immunoprecipitation and results in significantly increased TET2 protein levels without changes in Tet2 transcript abundance or protein stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C44-C45, C47-C48 are supported by co-IP (Figure 6B), western blot (Figure 6C), qPCR (Figure 6E), and cycloheximide chase experiments (Figure 6-figure supplement 2). The observation that D2018A reduces but doesn't eliminate binding in full-length TET1 suggests additional interaction surfaces may exist. The mechanism of TET2 upregulation remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "77813985-3fba-4eb6-9202-27e05aabd301",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The D2018A mutation in mESCs causes a genome-wide ~25% reduction in 5mC levels as measured by mass spectrometry and whole genome bisulfite sequencing, while total 5hmC levels remain unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C49-C50, C55-C56 are supported by orthogonal methods (LC-MS/MS in Figure 6F and WGBS in Figures 8A-C) showing consistent results. The unchanged 5hmC despite reduced 5mC is explained by compensatory TET2 upregulation (C45), providing internal consistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "af7a696b-ff06-4c42-b6c0-6cb428fb0c42",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The D2018A mutation in mESCs alters expression of 378 genes (157 upregulated, 221 downregulated) by 2-fold or more as determined by RNA-seq.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C46 are supported by RNA-seq data (Figure 6D) with appropriate statistical thresholds (2-fold change, adjusted p<0.01). However, the manuscript notes a 25kb deletion in WT cells (Figure 6-figure supplement 3), which was controlled for using heterozygous lines, strengthening the conclusion that changes are due to D2018A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "f6848035-f566-4a9a-a553-250869d12319",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "5hmC-Seal identified 76 differentially hydroxymethylated regions (DhMRs) between WT and D2018A mESCs, enriched in genic regions, associated with 95 genes showing redistribution of 5hmC without dramatic changes in overall distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by 5hmC-Seal data (Figure 7). The small number of DhMRs is consistent with unchanged total 5hmC levels (C50) and suggests localized redistribution. The enrichment in genic regions is statistically demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "4d7721d6-9596-4407-9ec0-133a73cf507c",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "WGBS identified 42,725 DMRs enriched in exons, with 3,587 genes containing \u22652 DMRs showing enrichment for differentially expressed genes. Promoter CpG modifications show minimal correlation with gene expression (r=-0.02, p=0.025), suggesting gene body modifications may drive expression changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C62, C92-C93 are supported by comprehensive WGBS analysis (Figure 8). The weak promoter correlation (Figure 8D) and enrichment of DMRs in gene bodies with correlation to DEGs (Figure 8H) provide converging evidence. The statistical significance of the promoter correlation is marginal but the effect size is very small, appropriately interpreted by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "3278aa20-2782-4f04-af9e-15d3a31a68f5",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Deletion of TPRs 7-9, 10-12, or 13-13.5 of OGT severely impaired interaction with TET1 CD, suggesting multiple TPR domains contribute to binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 is supported by systematic deletion analysis of OGT TPR domains (Figure 1C). The data show that multiple TPR deletions impair binding, though the authors appropriately note this could reflect either direct binding contributions or structural disruption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "6aa9f81a-a6eb-4934-8ff0-badf6641619a",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Both wild-type rTET1 and rD2018A catalyze formation of 5hmC on methylated DNA substrate in vitro, demonstrating the mutation does not abolish basal catalytic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by in vitro activity assays (Figure 4A) showing both proteins retain catalytic function. This is an important control demonstrating D2018A specifically affects OGT interaction rather than general protein folding or catalytic competence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "09737130-a728-4c88-8035-35c02953e621",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The TET1 C45 represents the first identified small protein domain conferring stable binding to OGT, which is unusual as most OGT targets do not bind tightly enough for co-IP detection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C65 are based on the authors' knowledge of the literature rather than experimental data in this manuscript. While the stable TET-OGT interaction is well-documented by prior work (C2, C14), the claim of novelty (C63) cannot be fully evaluated without comprehensive literature review. The characterization of OGT target binding (C64) is general knowledge but the inference about TET binding strength (C65) is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "75a87215-86ce-4d6a-9bb6-584c32630d7e",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The C-terminal region of TET2 corresponding to TET1 C45 may be unstructured based on its deletion in crystal structures, and may become structured when bound to OGT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C67 are speculative inferences from prior structural work (Hu et al., 2013). While deletion of regions for crystallization often indicates disorder, this is not definitive. The speculation about structure upon OGT binding (C67) is reasonable but untested. These claims appropriately identify future structural studies as needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "b3dfc0ef-03fb-41a7-836e-eb28678b11ad",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The manuscript proposes several speculative models: TET proteins may recruit OGT to chromatin for methylation-independent gene regulation; the TET1-OGT interaction may have dual functions (activity regulation and OGT recruitment); OGT may regulate all three TET proteins; and OGT may link metabolism to epigenetic control through TET regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70, C72, C78, C82, C91, C95, C99-C100 are explicitly speculative, appropriately qualified by the authors with language like \"may\" and \"could.\" These hypotheses are reasonable extensions of the data but require additional experiments for validation. They represent appropriate scientific speculation in a Discussion section.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "183aa55e-ed21-4634-ad79-ef138bd48325",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Eight sites of O-GlcNAcylation were identified within the TET1 CD based on data not shown in the manuscript.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 references unpublished data, making it impossible to evaluate the evidence. While the authors use this to explain why they cannot perform site-specific mutagenesis analysis, the claim itself cannot be assessed without access to the data. This represents a limitation in experimental completeness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "d30c4c2e-7158-4de1-92fe-808426f38034",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript establishes context through well-documented prior findings about TET enzymes, OGT function, their interaction, and their roles in development, all supported by appropriate citations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C17, C20, C37-C39, C68-C69, C71, C77, C79-C81, C85-C89, C94, C96-C98 are background claims supported by citations to prior work. These appropriately establish the scientific context and are consistent with established knowledge in the field. The citations appear appropriate and accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    },
+    {
+      "id": "6a5ee5ce-9efe-487f-a544-283d422e4991",
+      "content_id": "843cc17d-dc6e-4130-92b8-e76161410249",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The zebrafish rescue data suggest OGT regulation of TET enzymes plays a role in development and that TETs are important OGT targets in development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84 and C90 are reasonable inferences from the zebrafish rescue experiments (C6, C40-C43). The failure of D2018A to rescue HSC production provides functional evidence for the importance of the TET1-OGT interaction in development. However, these remain inferences rather than direct demonstrations of mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T06:42:49.980643Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a61b655e-2009-4c8b-9295-9ec2a3a44a9c",
+      "result_id": "859dff3d-0236-44f6-b347-614bf7baa1d0"
+    },
+    {
+      "claim_id": "a21f7a7f-507c-42f5-b1ae-16c9be429ee4",
+      "result_id": "859dff3d-0236-44f6-b347-614bf7baa1d0"
+    },
+    {
+      "claim_id": "7e22135e-c3d3-44f3-8aa1-6c1fe839ea2a",
+      "result_id": "859dff3d-0236-44f6-b347-614bf7baa1d0"
+    },
+    {
+      "claim_id": "e0813247-3652-4b01-bcfe-7160a2bf8cd9",
+      "result_id": "859dff3d-0236-44f6-b347-614bf7baa1d0"
+    },
+    {
+      "claim_id": "22afcc14-c6f6-4a06-bca0-0ae3ad5f3564",
+      "result_id": "859dff3d-0236-44f6-b347-614bf7baa1d0"
+    },
+    {
+      "claim_id": "3c54b723-2b45-465c-b079-c8bfd227c624",
+      "result_id": "bc14fea5-3909-4fc7-ac74-6fcc96bf0fd5"
+    },
+    {
+      "claim_id": "a86b35d2-7a65-49a6-92ec-7741bbe65832",
+      "result_id": "bc14fea5-3909-4fc7-ac74-6fcc96bf0fd5"
+    },
+    {
+      "claim_id": "886e140c-7f3b-4e24-99f4-94394352544c",
+      "result_id": "bc14fea5-3909-4fc7-ac74-6fcc96bf0fd5"
+    },
+    {
+      "claim_id": "8754afa4-e34e-4a5d-a208-10db9f502ac8",
+      "result_id": "bc14fea5-3909-4fc7-ac74-6fcc96bf0fd5"
+    },
+    {
+      "claim_id": "52ceb755-e105-4535-8cb0-9213a4517064",
+      "result_id": "bc14fea5-3909-4fc7-ac74-6fcc96bf0fd5"
+    },
+    {
+      "claim_id": "9d2cd9b2-3efa-4afd-9921-1c41355bac32",
+      "result_id": "bc14fea5-3909-4fc7-ac74-6fcc96bf0fd5"
+    },
+    {
+      "claim_id": "f3029bfc-f701-414d-892c-a805cd86dfd2",
+      "result_id": "e4e8d6a3-1f0a-4995-8a38-32bdbb77e02d"
+    },
+    {
+      "claim_id": "52ceb755-e105-4535-8cb0-9213a4517064",
+      "result_id": "e4e8d6a3-1f0a-4995-8a38-32bdbb77e02d"
+    },
+    {
+      "claim_id": "22afcc14-c6f6-4a06-bca0-0ae3ad5f3564",
+      "result_id": "e4e8d6a3-1f0a-4995-8a38-32bdbb77e02d"
+    },
+    {
+      "claim_id": "9d2cd9b2-3efa-4afd-9921-1c41355bac32",
+      "result_id": "e4e8d6a3-1f0a-4995-8a38-32bdbb77e02d"
+    },
+    {
+      "claim_id": "fd0aa7cf-99f0-4e3c-9985-247ba1917fa7",
+      "result_id": "db367b6b-2c3d-4a91-a3a5-4b911d8e0dee"
+    },
+    {
+      "claim_id": "47bc53ec-c9de-477d-a0d1-3c1ff448dadc",
+      "result_id": "db367b6b-2c3d-4a91-a3a5-4b911d8e0dee"
+    },
+    {
+      "claim_id": "dfc90491-f7f9-4308-9fb6-99e2ba1db912",
+      "result_id": "db367b6b-2c3d-4a91-a3a5-4b911d8e0dee"
+    },
+    {
+      "claim_id": "02ea110e-5a0b-4ddb-866c-718e15afebe6",
+      "result_id": "db367b6b-2c3d-4a91-a3a5-4b911d8e0dee"
+    },
+    {
+      "claim_id": "440f15ff-faeb-48a5-9e43-c13cbbf55c14",
+      "result_id": "db367b6b-2c3d-4a91-a3a5-4b911d8e0dee"
+    },
+    {
+      "claim_id": "930dc05f-d90f-43d2-8c50-6339a40a89b6",
+      "result_id": "db367b6b-2c3d-4a91-a3a5-4b911d8e0dee"
+    },
+    {
+      "claim_id": "d69de0e2-4e97-4b6a-be8c-fd73e5e3dd58",
+      "result_id": "db367b6b-2c3d-4a91-a3a5-4b911d8e0dee"
+    },
+    {
+      "claim_id": "8c31f641-c9e8-4a9f-8197-0ab79ae700c3",
+      "result_id": "db367b6b-2c3d-4a91-a3a5-4b911d8e0dee"
+    },
+    {
+      "claim_id": "7f2a3224-d7ae-48e2-b26f-8e632aa35302",
+      "result_id": "db367b6b-2c3d-4a91-a3a5-4b911d8e0dee"
+    },
+    {
+      "claim_id": "29ff2e6d-0dc1-484b-9bd9-61dc77e5f713",
+      "result_id": "dcccaa02-cfd9-4c2c-8ba1-43a383434c00"
+    },
+    {
+      "claim_id": "09004a09-ad9f-4ae2-b296-c0b87f079f88",
+      "result_id": "dcccaa02-cfd9-4c2c-8ba1-43a383434c00"
+    },
+    {
+      "claim_id": "2b9d82ff-ddef-49fe-b047-e43c784cfd63",
+      "result_id": "dcccaa02-cfd9-4c2c-8ba1-43a383434c00"
+    },
+    {
+      "claim_id": "ad0c44c0-fbfd-45a0-983d-58046c3f4d87",
+      "result_id": "dcccaa02-cfd9-4c2c-8ba1-43a383434c00"
+    },
+    {
+      "claim_id": "1363514b-3b4d-44c5-a2e3-7ae4b346612c",
+      "result_id": "dcccaa02-cfd9-4c2c-8ba1-43a383434c00"
+    },
+    {
+      "claim_id": "80f5c2b8-62bd-4751-a0e0-f896bc4a0f7d",
+      "result_id": "dcccaa02-cfd9-4c2c-8ba1-43a383434c00"
+    },
+    {
+      "claim_id": "45c54d58-1ffa-424c-85e5-19fe9330bbd6",
+      "result_id": "dcccaa02-cfd9-4c2c-8ba1-43a383434c00"
+    },
+    {
+      "claim_id": "4d9fa8c1-1e72-4452-99fb-5ed314abb398",
+      "result_id": "a17b2bdb-4683-4a5f-b425-e45a65ade41c"
+    },
+    {
+      "claim_id": "b8ad727f-1ab2-4c4f-a512-4783dd1bbbec",
+      "result_id": "a17b2bdb-4683-4a5f-b425-e45a65ade41c"
+    },
+    {
+      "claim_id": "27caf3e5-f207-48ea-9bfc-3f9289d21314",
+      "result_id": "a17b2bdb-4683-4a5f-b425-e45a65ade41c"
+    },
+    {
+      "claim_id": "158d57d1-c810-4878-9aa1-a3be27efddd6",
+      "result_id": "a17b2bdb-4683-4a5f-b425-e45a65ade41c"
+    },
+    {
+      "claim_id": "86f71035-bab0-494a-9b7a-5911dac55078",
+      "result_id": "a17b2bdb-4683-4a5f-b425-e45a65ade41c"
+    },
+    {
+      "claim_id": "6977976d-df9f-4901-97ae-b0acd9e5c29f",
+      "result_id": "77813985-3fba-4eb6-9202-27e05aabd301"
+    },
+    {
+      "claim_id": "0220c15c-608f-4d7a-88a2-833e19465877",
+      "result_id": "77813985-3fba-4eb6-9202-27e05aabd301"
+    },
+    {
+      "claim_id": "d96360f5-6e2b-46d0-bfa3-59466c6014f8",
+      "result_id": "77813985-3fba-4eb6-9202-27e05aabd301"
+    },
+    {
+      "claim_id": "5861f14e-7a44-484b-b9dc-890846aed600",
+      "result_id": "77813985-3fba-4eb6-9202-27e05aabd301"
+    },
+    {
+      "claim_id": "271b711e-a648-476e-b724-ce8d86c51bf9",
+      "result_id": "77813985-3fba-4eb6-9202-27e05aabd301"
+    },
+    {
+      "claim_id": "4cd318ac-79fe-45f3-acc5-04b7872521b8",
+      "result_id": "af7a696b-ff06-4c42-b6c0-6cb428fb0c42"
+    },
+    {
+      "claim_id": "62ace899-2e2c-4cb8-8441-494d8d5270cc",
+      "result_id": "af7a696b-ff06-4c42-b6c0-6cb428fb0c42"
+    },
+    {
+      "claim_id": "91025455-5128-416d-873d-1416dbfb1278",
+      "result_id": "f6848035-f566-4a9a-a553-250869d12319"
+    },
+    {
+      "claim_id": "a07b691f-14a0-43ed-8a2a-96fae03ec311",
+      "result_id": "f6848035-f566-4a9a-a553-250869d12319"
+    },
+    {
+      "claim_id": "a34e340e-c42c-4e7a-9420-854bd3da4324",
+      "result_id": "f6848035-f566-4a9a-a553-250869d12319"
+    },
+    {
+      "claim_id": "bb06753d-1ed5-4bee-8261-678305ec1eb2",
+      "result_id": "f6848035-f566-4a9a-a553-250869d12319"
+    },
+    {
+      "claim_id": "05c62e76-edba-4694-aabf-b180a43519b1",
+      "result_id": "4d7721d6-9596-4407-9ec0-133a73cf507c"
+    },
+    {
+      "claim_id": "e06b6136-69f8-48aa-8b81-35e8f0a34db4",
+      "result_id": "4d7721d6-9596-4407-9ec0-133a73cf507c"
+    },
+    {
+      "claim_id": "23f58667-c1ac-48e1-83ab-c5856a045fc3",
+      "result_id": "4d7721d6-9596-4407-9ec0-133a73cf507c"
+    },
+    {
+      "claim_id": "983e4b05-9678-4235-abdb-f2cecdb28cbd",
+      "result_id": "4d7721d6-9596-4407-9ec0-133a73cf507c"
+    },
+    {
+      "claim_id": "31c993aa-ad84-4bff-b580-6dbe490bcf40",
+      "result_id": "4d7721d6-9596-4407-9ec0-133a73cf507c"
+    },
+    {
+      "claim_id": "78d1e8d9-304e-4100-93b2-1a78e0f9a757",
+      "result_id": "4d7721d6-9596-4407-9ec0-133a73cf507c"
+    },
+    {
+      "claim_id": "81a69d34-8156-4769-a546-408f7fa4e1dc",
+      "result_id": "4d7721d6-9596-4407-9ec0-133a73cf507c"
+    },
+    {
+      "claim_id": "c2021652-1318-4f03-989d-a2f221dc027b",
+      "result_id": "4d7721d6-9596-4407-9ec0-133a73cf507c"
+    },
+    {
+      "claim_id": "65d49a5f-3211-427a-b371-ea48833da7c9",
+      "result_id": "3278aa20-2782-4f04-af9e-15d3a31a68f5"
+    },
+    {
+      "claim_id": "a5b18091-c8a3-4918-a21a-1d97e9576431",
+      "result_id": "6aa9f81a-a6eb-4934-8ff0-badf6641619a"
+    },
+    {
+      "claim_id": "ba79e31d-34d1-46d8-868f-b67284c338a3",
+      "result_id": "09737130-a728-4c88-8035-35c02953e621"
+    },
+    {
+      "claim_id": "8e1bd776-286b-4252-a0f9-1288bdda723d",
+      "result_id": "09737130-a728-4c88-8035-35c02953e621"
+    },
+    {
+      "claim_id": "d8b53fe9-2657-4402-9cdf-c5c4fe328714",
+      "result_id": "09737130-a728-4c88-8035-35c02953e621"
+    },
+    {
+      "claim_id": "901aa74d-a4f9-438b-b4a1-2088fd439b25",
+      "result_id": "75a87215-86ce-4d6a-9bb6-584c32630d7e"
+    },
+    {
+      "claim_id": "6484fa4f-fd25-4e20-9e2e-12d0614ab95a",
+      "result_id": "75a87215-86ce-4d6a-9bb6-584c32630d7e"
+    },
+    {
+      "claim_id": "eaac383a-087e-42bc-8984-5a26cb34fab2",
+      "result_id": "b3dfc0ef-03fb-41a7-836e-eb28678b11ad"
+    },
+    {
+      "claim_id": "59c618d3-7245-4cc3-927c-55598216c438",
+      "result_id": "b3dfc0ef-03fb-41a7-836e-eb28678b11ad"
+    },
+    {
+      "claim_id": "4d0078f5-12ec-40fc-a90b-70a76ea19999",
+      "result_id": "b3dfc0ef-03fb-41a7-836e-eb28678b11ad"
+    },
+    {
+      "claim_id": "0970217f-972a-4482-9b59-5ee543865661",
+      "result_id": "b3dfc0ef-03fb-41a7-836e-eb28678b11ad"
+    },
+    {
+      "claim_id": "ce5033e5-d401-4314-ae34-f1e95783423e",
+      "result_id": "b3dfc0ef-03fb-41a7-836e-eb28678b11ad"
+    },
+    {
+      "claim_id": "8d3471d3-d772-4af0-9edc-77a204b5ba11",
+      "result_id": "b3dfc0ef-03fb-41a7-836e-eb28678b11ad"
+    },
+    {
+      "claim_id": "86966662-7bf5-4fa1-b56b-5cc4c8e24eb7",
+      "result_id": "b3dfc0ef-03fb-41a7-836e-eb28678b11ad"
+    },
+    {
+      "claim_id": "95e11ac9-9e13-4f0f-8db8-db469f65c374",
+      "result_id": "b3dfc0ef-03fb-41a7-836e-eb28678b11ad"
+    },
+    {
+      "claim_id": "9ea108aa-43fc-4f3f-963a-321e8bc694e1",
+      "result_id": "183aa55e-ed21-4634-ad79-ef138bd48325"
+    },
+    {
+      "claim_id": "7de8b35b-57e9-42bd-88f6-e8ba93765968",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "64723e53-6e4a-4e3b-b34c-9a015439c104",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "cc65bd50-7d0c-4ab8-abce-65217caa3e7b",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "7e840dc6-932c-4c2b-b0ce-5edf8b3749e9",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "d3e316b1-dbc0-4bbd-b5ae-321f6ef8307c",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "2511b454-6771-42d9-b6b3-d15f9533f387",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "253c7f46-23b2-435b-a251-a86832f50df4",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "11c9c693-bed6-468b-a597-a1669f681bfb",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "9494d303-19e6-47b1-8826-ebd09ff16a78",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "92b372ec-8f23-45e7-862f-27e7a83fba00",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "9f13ed6c-511f-4ae4-a30c-18d8ed79bfea",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "89947592-fb6f-4e7d-a059-52a7e19bc323",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "26501dac-d64f-4f3e-a0a1-8f4bdeaa828a",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "1e8f3e58-90da-4109-8f8a-209f8a1e8e4b",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "a0456891-347f-496c-8655-b7738f14e61b",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "ad5aba49-526b-428e-b19c-5761c79591ba",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "a3ce1ee5-f2bf-4e96-aaba-25c50a2859b6",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "738e5bd1-ef09-4eba-bf90-d597fa50d69a",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "56c331ab-0498-49a7-a858-a1e754d4a3e7",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "62430776-afce-41aa-8604-49b0dfaa64e4",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "b5e58c94-c0ed-4e52-a3d6-15c51f29ca02",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "8a63e77a-e606-470e-a67e-ee9fedb80740",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "732ae11b-a548-4af0-91ce-3763968af915",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "d583384c-3048-4dba-9951-680c71d01ff3",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "4a0ef504-e2b6-4d0b-94a2-be0725a9c469",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "e36980cc-3d5f-4f84-b5a8-f5b31c93e6b3",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "babc156f-766c-4f73-b86a-50815a236863",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "597e7c9c-4820-44b0-8ccc-32d946df589b",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "7acb883d-25c9-46a2-9523-65dd810de77b",
+      "result_id": "d30c4c2e-7158-4de1-92fe-808426f38034"
+    },
+    {
+      "claim_id": "b3166d0a-cff9-4443-b7a7-1b5a06e8b567",
+      "result_id": "6a5ee5ce-9efe-487f-a544-283d422e4991"
+    },
+    {
+      "claim_id": "b5e214ce-7730-4411-a9e2-db10d7a909be",
+      "result_id": "6a5ee5ce-9efe-487f-a544-283d422e4991"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C47",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C8"
+    ],
+    "result": "The somatic mutation theory (SMT) posits that cancer originates from genetic mutations in a single cell, with quiescence as the default cellular state, leading to a unidirectional, deterministic process of tumor formation and dissemination. This theory emphasizes single-factor causality with minimal roles for sequence-dependent or distant causality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C47, C53-C56 provide a consistent characterization of SMT supported by citations (C3, C4) and illustrated in Figure 1 (C47). Claim C8 provides a concrete example (chronic myelogenous leukemia with BCR-ABL fusion) that validates the theory's applicability to specific cancers. The claims are internally consistent and represent established knowledge in cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C48",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The tissue organization field theory (TOFT) proposes that cancer arises from disruption of tissue architecture rather than mutations, with proliferation as the default cellular state. This disruption leads to mutation diffusion, tumor microenvironment activation, and feedback mechanisms that further disrupt tissue architecture, involving multiple causalities including causal variability, intricacy, sequence-dependence, and spatial situatedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C48, C58-C61 provide a coherent description of TOFT supported by citations (C58, C59) and illustrated in Figure 1 (C5-C7, C48). The characterization is internally consistent and distinguishes TOFT from SMT through its emphasis on tissue-level organization and feedback mechanisms. The claims represent established theoretical frameworks in cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C62"
+    ],
+    "result": "Recent evidence tends to support TOFT over SMT for some cancers, including findings that tissue architecture modulates tumor cell phenotypes in pancreatic cancer, cancer-associated driver mutations exist in normal organs, and interactions between tumor, microenvironment, and immune system are critical for progression. However, TOFT's causal connection between tissue disruption and mutations remains debatable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C14 cite specific studies (Ligorio et al., 2019; Yizhak et al., 2019; Laplane et al., 2019) supporting TOFT, but C9 is explicitly qualified as the authors' belief and limited to 'some cancers.' Claim C62 acknowledges a fundamental weakness in TOFT regarding the causal relationship between tissue disruption and mutations. The evidence is suggestive but not definitive, and the authors appropriately express uncertainty about the generalizability of TOFT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C64",
+      "C65"
+    ],
+    "result": "Tumor dissemination is a multistep process involving exit from the primary tumor, circulation through bloodstream/lymphatic system, and colonization of metastatic sites. This process has been historically described by Paget's 'seed and soil' metaphor, which remains relevant despite advances in cellular and molecular understanding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 provide definitional statements about tumor dissemination illustrated in Figure 2, while C64-C65 provide historical context supported by citation (Langley and Fidler, 2011). These claims represent well-established knowledge in cancer biology and are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Exit from the primary tumor involves both tumor-cell-intrinsic factors (EMT, aberrant signaling, loss of adhesion molecules, transcription factor expression, ECM-degrading proteins) and tumor-cell-extrinsic factors (stromal cell-derived pro-migratory factors and TGF-\u03b2), which together enable cancer cell detachment and local invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C66-C69 provide a comprehensive description of exit mechanisms supported by citation (C69: Quail and Joyce, 2013). The claims distinguish intrinsic and extrinsic factors and are consistent with established cancer biology. The description is well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C70"
+    ],
+    "result": "Stromal-cancer cell interactions during EMT demonstrate causal intricacy through reciprocal influences: stromal cells produce TGF-\u03b2 that stimulates EMT, while EMT-undergoing cancer cells influence immune cell phenotypes. TGF-\u03b2 effects are dose-dependent and context-dependent, acting as tumor suppressor in one step and EMT stimulator in another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 are supported by citations (Chockley and Keshamouni, 2016; Bachman and Park, 2005), while C70 provides interpretive framing about causal intricacy. The claims demonstrate complex bidirectional interactions and context-dependent effects, which are well-documented phenomena in cancer biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C71"
+    ],
+    "result": "EMT is permissive rather than necessary for metastasis, as epithelial cells can enter circulation without undergoing EMT through clustered migration (mixing transitioned and non-transitioned cells) and microenvironment remodeling by mesenchymal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C71 describe mechanisms allowing EMT-independent metastasis, while C24 provides the interpretive conclusion supported by citation (Jolly et al., 2017). This challenges the traditional view of EMT as obligatory for metastasis and is supported by recent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C72",
+      "C73"
+    ],
+    "result": "Intravasation requires cancer cells to cross endothelial barriers through both intrinsic factors (adhesion molecules, permeability factors) and extrinsic factors (myeloid/endothelial cell interactions, cytokine feedback loops). The tumor vasculature can undergo endothelial-to-mesenchymal transition (endoEMT), disrupting the endothelial barrier to facilitate tumor cell transmigration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C72-C73 describe intravasation mechanisms with citation support (C73: Su et al., 2014). Claim C25 introduces endoEMT as an example of causal intricacy. The claims are internally consistent and represent established mechanisms in metastasis biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C49",
+      "C50",
+      "C74"
+    ],
+    "result": "Circulating tumor cell survival depends on intrinsic properties (anoikis resistance, immune evasion) and extrinsic factors (vascular protection). Cells form protective clusters that may be homotypic (tumor cells only) or heterotypic (including neutrophils, myeloid suppressor cells, platelets), enhancing migration efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C49-C50, C74 describe circulation mechanisms supported by citations (C26, C28: Szczerba et al., 2019; C74: Strilic and Offermanns, 2017). The distinction between homotypic and heterotypic clusters is clearly defined, and the claims are illustrated in Figure 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C75",
+      "C76"
+    ],
+    "result": "Extravasation at secondary sites involves intrinsic changes (EMT reversal) and extrinsic factors (endoEMT, neutrophil extracellular traps, endothelial surface molecules). Neutrophil extracellular traps facilitate tumor cell removal from circulation to enable extravasation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C75-C76 describe extravasation mechanisms with citation support (C29: Cools-Lartigue et al., 2013). The claims distinguish intrinsic and extrinsic factors and are consistent with established metastasis biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C77"
+    ],
+    "result": "Successful colonization depends on establishing a pre-metastatic niche (favorable local environment) through both intrinsic factors (cytokines, exosomes from primary tumor) and extrinsic factors (bone marrow-derived cells). Site-specific seeding mechanisms include organ predisposition, chemokine-receptor binding (CXCL12-CXCR4), and potentially organ-specific angiocrine signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36, C77 describe colonization mechanisms supported by citations (C32: Tung et al., 2019; C33: Gao et al., 2019; C35: Liotta, 2001). Claim C36 appropriately qualifies angiocrine signaling as suggested by recent research. The claims provide multiple mechanisms for site-specific metastasis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C78",
+      "C79"
+    ],
+    "result": "Metastatic colonization involves cooperation between early and later waves of cancer cells, with early 'inefficient' seeding creating favorable conditions for subsequent cells. Colonization can lead to tumor expansion or dormancy followed by reactivation, with cross-talk between metastatic sites influencing secondary tumor development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C78-C79 describe colonization dynamics supported by citation (C37: Bidard et al., 2008). The claims describe temporal cooperation and inter-site communication, representing established concepts in metastasis biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Cancer dissemination involves non-sequential causal relationships: cancer cells leave primary tissue early in development, can migrate from established metastases to new sites, and can travel back to the primary site ('self-seeding') to promote primary tumor growth, angiogenesis, and stromal cell recruitment. This demonstrates causality more complex than classic sequential models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 describe non-linear dissemination patterns supported by citations (C39-C40: Gundem et al., 2015; C41: Kim et al., 2009). Claims C42-C43 provide definitional and interpretive framing. These findings challenge traditional sequential models and are well-supported by cited evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C44",
+      "C45"
+    ],
+    "result": "The central thesis is that feedback loops and interactions between tumor-cell-intrinsic and tumor-cell-extrinsic factors are critical for tumor formation and dissemination. Causality must be distinguished from temporal sequence due to feedback loops and 'backward' causal connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C44-C45 state the manuscript's main conclusions, which are supported by the extensive examples provided throughout (claims C20-C22 for feedback, C39-C43 for non-sequential causality). The thesis is consistently illustrated across tumor formation and dissemination sections and in Figures 1-2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Dissemination involves cross-step causal influences: EMT initiation in step 1 (exit) enables long-distance circulation in step 2, while secondary tumor microenvironment elements in step 3 (colonization) act as attractors during step 2 (circulation), demonstrating both forward and backward causal connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are explicitly illustrated in Figure 2 as examples of type 'b' (forward) and type 'c' (backward) causal events. These claims directly support the manuscript's thesis about non-sequential causality (C45) and are consistent with the detailed mechanisms described in other claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C46",
+      "C63"
+    ],
+    "result": "The authors argue that philosophical concepts of causality can improve scientific understanding of cancer, that greater awareness of causal complexity will deepen understanding across disciplines, and that comprehensive understanding of dissemination is crucial for therapy design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1, C46, C63 represent aspirational statements about the value of the philosophical approach and its potential impact. While the manuscript demonstrates the application of causal concepts to cancer biology, these claims about future benefits are speculative (C1, C46 marked as SPECULATION; C63 as INFERENCE/SPECULATION). The actual impact on understanding and therapy design remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "The somatic mutation theory can accommodate increased causal complexity through the introduction of mutation sequences, as seen in multistage carcinogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 acknowledges that SMT can be modified to incorporate greater complexity, which is a fair assessment. This represents an important nuance in the comparison between SMT and TOFT, showing that the theories are not entirely incompatible and that SMT can evolve to address some criticisms.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1586 @@
+{
+  "submission": {
+    "id": "dd1bbd2b-9c31-4ef5-94b7-016953e1c0b6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T11:55:25.078484Z",
+    "updated_at": "2025-12-02T11:55:25.078484Z"
+  },
+  "content": [
+    {
+      "id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "submission_id": "dd1bbd2b-9c31-4ef5-94b7-016953e1c0b6",
+      "content_type": "manuscript",
+      "content_text": "# Homology sensing via non-linear amplification of sequence-dependent pausing by RecQ helicase\n\n## Authors\n\n- Yeonee Seol<sup>1</sup>\n- G\u00e1bor M Harami<sup>2</sup>\n- Mih\u00e1ly Kov\u00e1cs<sup>2</sup> ([ORCID: 0000-0002-1200-4741](https://orcid.org/0000-0002-1200-4741)) \u2020\n- Keir C Neuman<sup>1</sup> ([ORCID: 0000-0002-0863-5671](https://orcid.org/0000-0002-0863-5671)) \u2020\n\n### Affiliations\n\n1. Laboratory of Single Molecule Biophysics National Heart, Lung, and Blood Institute, National Institutes of Health Bethesda United States\n2. Department of Biochemistry, ELTE-MTA \u201cMomentum\u201d Motor Enzymology Research Group E\u00f6tv\u00f6s Lor\u00e1nd University Budapest Hungary\n3. Department of Biochemistry, MTA-ELTE Motor Pharmacology Research Group E\u00f6tv\u00f6s Lor\u00e1nd University Budapest Hungary\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecQ helicases promote genomic stability through their unique ability to suppress illegitimate recombination and resolve recombination intermediates. These DNA structure-specific activities of RecQ helicases are mediated by the helicase-and-RNAseD like C-terminal (HRDC) domain, via unknown mechanisms. Here, employing single-molecule magnetic tweezers and rapid kinetic approaches we establish that the HRDC domain stabilizes intrinsic, sequence-dependent, pauses of the core helicase (lacking the HRDC) in a DNA geometry-dependent manner. We elucidate the core unwinding mechanism in which the unwinding rate depends on the stability of the duplex DNA leading to transient sequence-dependent pauses. We further demonstrate a non-linear amplification of these transient pauses by the controlled binding of the HRDC domain. The resulting DNA sequence- and geometry-dependent pausing may underlie a homology sensing mechanism that allows rapid disruption of unstable (illegitimate) and stabilization of stable (legitimate) DNA strand invasions, which suggests an intrinsic mechanism of recombination quality control by RecQ helicases.\n\n## Introduction\n\nRecQ helicases are a family of DNA helicases that play essential roles in maintaining genomic integrity through extensive involvement in DNA recombination, replication, and repair pathways (Bachrati and Hickson, 2003; Bennett and Keck, 2004; Chu and Hickson, 2009). Escherichia coli RecQ (Ec RecQ) helicase is the founding member of the family (Nakayama et al., 1984) and plays roles in both suppressing illegitimate recombination and facilitating various steps of DNA recombinational repair (Hanada et al., 1997; Ryder et al., 1994; Le\u00f3n-Ortiz et al., 2018). RecQ helicases are highly conserved from bacteria to humans and eukaryotic RecQ helicases have been shown to play similar pro- and anti-recombination functions. Most unicellular organisms, such as E. coli and yeast, express a single RecQ homolog, whereas multi-cellular organisms often possess multiple RecQ helicases specialized to different roles in genome maintenance processes.\n\nThe fundamental conserved activity of RecQ helicases is the ATP-dependent unwinding of double-stranded DNA (Nakayama et al., 1984). All RecQ members possess two evolutionarily conserved RecA-like helicase domains with an ATP binding and hydrolysis site located in a cleft between them (Bennett and Keck, 2004; Chu and Hickson, 2009; Bachrati and Hickson, 2008). Similar to other superfamily (SF) one and SF2 helicases, RecQ members also contain N- and C-terminal accessary domains that provide additional or specialized functionalities\u00a0(Fairman-Williams et al., 2010). The RecQ C-terminal domain (RQC) comprises zinc binding and winged-helix (WH) sub-domains associated with protein structural integrity and duplex DNA binding, respectively. Although less conserved, many RecQ-family members, including Ec RecQ and multiple human RecQ homologs, possess an accessory single-stranded (ss) DNA-binding module termed the helicase-and-RNAseD-C-terminal (HRDC) domain (Bernstein and Keck, 2005; Vindigni and Hickson, 2009). The HRDC, while generally dispensable for helicase activity, is critical for certain recombination intermediate processing steps, such as disruption of displacement strand (D-loop) invasion and double Holliday junction resolution (Rezazadeh, 2012; Singh et al., 2012; Chatterjee et al., 2014; Harami et al., 2017). Biochemical studies have established that full length RecQ has a higher ssDNA binding affinity than RecQ constructs lacking the HRDC, which is consistent with the findings that the interaction between the HRDC and ssDNA contributes to DNA substrate specificity of RecQ helicases (Bernstein and Keck, 2005; Vindigni and Hickson, 2009).\n\nRecently, we provided evidence that HRDC interactions contribute to DNA substrate-geometry dependent binding orientation and unwinding by RecQ, and demonstrated that these HRDC-mediated interactions play a role in suppressing illegitimate recombination in E. coli (Harami et al., 2017). Whereas these findings indicate that the HRDC strongly favors binding of RecQ to D-loop structures in an orientation that promotes disruption of the invading DNA strand (Harami et al., 2017), it is not clear how RecQ can subsequently discriminate between homologous and non-homologous strand invasions; once correctly oriented on the D-loop, RecQ can unwind any invading strand and indiscriminately disrupt all D-loop formations. In this work we identify a potential solution to this quandary, suggested by the observation that HRDC-dependent pausing during hairpin DNA unwinding is not random but occurs repeatedly at distinct positions on the DNA hairpin. We reason that if the frequency or duration of the unwinding pauses is related to the degree of DNA homology, then the more than 10-fold decrease in average unwinding rate due to pausing can provide a mechanism of homology sensing. Thus, if pausing is correlated with homology, then the resulting modulation of the average unwinding rate of an oriented RecQ helicase will result in discrimination of legitimate versus illegitimate D-loops.\n\nTo test this theory, we set out to determine the origin of HRDC-mediated pausing by investigating the unwinding mechanism of E. coli RecQ and HRDC-induced pausing using single-molecule magnetic tweezers (MT)-based assays and rapid transient kinetic assays. We found that long-lived HRDC-induced pauses of wild type RecQ (RecQwt) and shorter-lived pauses of RecQ core domain (HRDC deletion mutant; RecQ-dH) are sequence dependent and both correlate with DNA duplex stability. Sequence-dependent pausing is a direct consequence of the unique DNA unwinding mechanism: RecQ unwinds one base-pair per ATP hydrolysis cycle but releases the nascent ssDNA only after unwinding\u00a0~5 bp. The translocation kinetics arising from this 5 bp kinetic step depend on the duplex stability, which results in sequence-dependent pausing of the core RecQ that is further stabilized by the HRDC binding to the displaced ssDNA. Kinetic modeling indicates that the affinity of the HRDC for ssDNA is enhanced at pause sites, rather than remaining constant. The HRDC thus acts as a non-linear amplifier of the transient sequence-dependent pauses of the core enzyme. Our study demonstrates that the coupling between the core unwinding mechanism and the HRDC-ssDNA interactions dramatically alter the mode of unwinding in a sequence dependent manner, and, in conjunction with previous work, potentially implicates a mechanistic basis for recombination quality control provided by RecQ helicases.\n\n## Results\n\n### RecQ pause positions are strongly correlated with DNA sequence\n\nSingle-molecule measurements of RecQ helicase unwinding activity were performed with 174- or 584-base pair DNA hairpins using an MT apparatus (Figure 1A). DNA hairpin substrates were attached to the flow-cell surface and to a 1- or 2.8 \u00b5m magnetic bead via a 1.1 kbp double-stranded DNA handle and 60-nucleotides of single-stranded poly-dT, respectively (Figure 1A). Measurements with the DNA hairpin were performed at a constant force of 8 pN under which the hairpin did not open spontaneously. In the presence of RecQ helicase (20\u2013100 pM), unwinding activity was monitored in real-time by tracking the three-dimensional position of a tethered bead at 60 or 200 Hz. Trajectories of the bead extension as a function of time were analyzed by fitting with a T-test based step finding algorithm to obtain the mean unwinding rate, the \u2018step\u2019 unwinding rate between pauses, the pause positions, and the pause durations (Harami et al., 2017; Seol et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cartoon representation of the experimental scheme (not to scale). The 3\u2032 biotinylated end of the single-stranded poly-dT segment (blue) is attached to a streptavidin-coated 1- or 2.8 \u00b5m magnetic bead (brown sphere), whereas the 5\u2032 digoxigenin-labeled double-stranded handle (black line) is attached via anti-digoxigenin (red square) to the surface of the flow-cell. Small magnets above the flow-cell apply a constant upwards force on the magnetic bead. RecQ (purple and green RecA- like domains, yellow zinc binding and winged helix domain, orange HRDC domain) binds at the base of the hairpin (blue helix) and unwinds it, which results in the increase in the extension of the bead. (B) Individual unwinding events of RecQWT and RecQ-dH. Unwound DNA indicates the amount of DNA hairpin opened by RecQ in base pairs. The ends of unwinding events are indicated by a yellow pointer. Pause locations identified from T-test fitting are indicated as solid red lines. Additional RecQ-dH unwinding traces are displayed to show the range of average unwinding rates (gray lines; note that only the region from the beginning to the maximum unwound positions are plotted).\n\nAs described previously (Harami et al., 2017), frequent pausing and strand-switching by WT RecQ (RecQWT) is caused by the HRDC as the HRDC deletion mutant (RecQ-dH) shows significantly less pausing during DNA hairpin unwinding (Figure 1B). Pausing is attributed to transient binding of the HRDC domain to the displaced single-stranded DNA behind RecQ. Since both the displaced and the translocation strands of ssDNA are under tension in the hairpin substrate, binding of the HRDC to the displaced strand will prevent forward motion of the helicase. HRDC binding to either duplex DNA ahead of the helicase, or to the translocation strand of ssDNA behind the helicase, are ruled out by the lack of pauses during the unwinding of a \u2018gapped\u2019 DNA substrate in which the displaced strand is not constrained (Harami et al., 2017). Given the mechanical origin of the pausing associated with transient binding of the HRDC, the pause positions would be expected to be random, dependent on the stochastic kinetics of the interaction between HRDC and the displaced ssDNA.\n\nInterestingly, the dwell-time histogram as a function of position for RecQWT unwinding traces exhibits peaks at distinct positions along the hairpin (Figure 2A; top). The peaks in the dwell-time histogram of unwinding traces arise from long and/or frequent pauses at specific positions during DNA hairpin unwinding by RecQ helicase (Figure 2\u2014figure supplement 1). To identify the sequence context of the pauses, the extension change associated with DNA hairpin opening was converted to base-pairs via the worm-like chain (WLC) model of DNA (Manosas et al., 2010). Each unwound base pair resulted in the increase of the molecular extension by two ssDNA nucleotides, which at an applied force of 8 pN corresponds to\u00a0~0.8 nm assuming a 1 nm persistence length and a 0.65 nm inter-phosphate distance. With this conversion factor, the extension change for the fully open hairpin was 174 bp, consistent with the actual DNA hairpin size (174 bp). To determine if pausing is related to DNA base-pair energy, we compared the unwinding dwell time histogram (Figure 2A; top) with the DNA base-pair stability calculated by performing a running average (6 bp window) of the exponential of the DNA base-pair energy for the 174 bp DNA hairpin sequence based on the nearest neighbor base-pair energy model (Patten et al., 1984; SantaLucia, 1998; Huguet et al., 2010). We found that the peak locations of pausing and duplex stability were highly correlated (Figure 2A; bottom). The exact locations of peaks were identified by globally fitting the dwell-time histogram and the exponential of the average DNA melting energy with the sums of Gaussian distributions (Figure 2\u2014figure supplement 2). The relationship between pausing during unwinding and the peaks in the dwell-time histogram is explained in Figure 2\u2014figure supplement 2B (top). Consistent with this observation, pause positions from the dwell time histogram of RecQWT were linearly correlated with peak positions from the DNA base-pair energy profile (Figure 2B; top) with a slope of 0.99\u00a0\u00b1\u00a00.03, linear correlation coefficient (Pearson\u2019s r) of 0.97, and \u03c72\u00a0=\u00a00.85, indicating a strong linear correlation. The sequence around the peak positions (\u00b14 bp) contained a high percentage of GC (~70%), consistent with the finding that the pause positions are related to the duplex stability of the DNA. This finding raises the question of how HRDC-dependent pausing is correlated with DNA base-pair melting despite the fact that the HRDC itself does not play a role in unwinding DNA or exhibit sequence-specific ssDNA binding. We hypothesized that the HRDC may amplify or stabilize transient pauses associated with RecQ core domain (RecQ-dH) encountering regions of increased duplex stability (high GC content).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig2-v2.jpg)\n\n**Figure 2.:** (A) An example trace (top), and dwell-time histogram of RecQWT174 bp hairpin unwinding trajectories (red line) plotted with the exponential of the DNA base-pair melting energy averaged over a 6 bp running window (black line) of the 174 bp DNA hairpin (bottom). The gray bars correspond to peaks in the dwell time histogram associated with RecQ pausing. (B) Linear regression analysis of pause positions of RecQwt (top) and of RecQ-dH (bottom) plotted as function of the peak positions of DNA base-pair stability. The pause positions plotted as a function of energy peak positions were fit with straight lines returning fit values: slope of 0.99\u00a0\u00b1\u00a00.03, linear correlation coefficient (Pearson\u2019s r) of 0.97, and \u03c72\u00a0=\u00a00.85 (top); a slope of 0.96\u00a0\u00b1\u00a00.06, Pearson\u2019s r\u00a0=\u00a00.95, and \u03c72\u00a0=\u00a01.1 (bottom). The error bars correspond to the standard error of the mean (SEM).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Example traces show long pauses with repetitive rezipping and unwinding of short stretches (<10 bp) around 55 bp, 90 bp, and 120 bp resulting in multiple peaks in the corresponding histograms.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The peak locations in the calculated sequence-dependent pause probability (proportional to the exponential of the DNA hairpin melting energy averaged over 6 bp) and the experimental position dwell-time histogram as a function of hairpin sequence were identified by fitting with a sum of Gaussians. (A) The relative pause probability (blue dots) was globally fitted with a multi-peak Gaussian function (black line). The labeled individual Gaussian peaks are shown below (red lines). (B) Top: The relationship between pausing during unwinding and the peaks in the dwell-time histogram. Bottom: The 1 bp bin width dwell-time histogram (red dots) of RecQwt unwinding traces was fitted with a multi-peak Gaussian function (black line) and individual Gaussian peaks are shown below (red lines). The zero peak corresponds to the base-line extension when the hairpin is fully closed. (C) The 1 bp bin width dwell-time histogram (green dots) for RecQ-dH unwinding traces with the multi-Gaussian fit shown in black and the individual Gaussian peaks in red below.\n\n### Sequence-dependent pausing originates from sequence-dependent unwinding kinetics\n\nTo test this hypothesis, we determined if the transient pausing positions of RecQ-dH correlated with the peaks in the DNA base-pair stability curve (Figure 2B). The pause positions for RecQ-dH were obtained from dwell time histograms following the same procedure used for RecQWT (Figure 2\u2014figure supplement 2C) and plotted as a function of the peak positions of DNA base-pair stability (Figure 2B). The pause positions of RecQ-dH were linearly correlated with the duplex stability peaks, returning a slope of 0.96\u00a0\u00b1\u00a00.06, Pearson\u2019s r\u00a0=\u00a00.95, and \u03c72\u00a0=\u00a01.1. Moreover, the pause positions of RecQ-dH are statistically identical to those of RecQWT, confirming that HRDC-dependent pausing likely originates from stabilization of sequence-dependent unwinding kinetics of RecQ helicase. Sequence-dependent pausing by RecQ-dH reveals important mechanistic insights into the unwinding and translocation mechanism. If the enzyme unwinds one base pair per each kinetic step, the largest energy difference for a single base-pair opening (G/C vs A/T) is\u00a0~2.0 kBT so the pause duration ratio of G/C to A/T will be a maximum of\u00a0~7 fold. However, the roughly 20-fold difference in the time the enzyme requires to unwind DNA at the longest pause duration sites in comparison to the average unwinding rate, suggests that more than a single base pair is being opened by the enzyme during each kinetic step. Following this simple analysis, we suggest that pausing is governed by a combination of the DNA base-pair stability and the number of base pairs melted by the helicase during each kinetic step. During processive unwinding, this melting step is the rate limiting step that determines the unwinding rate and pause durations.\n\n### Simulation of unwinding mechanism of RecQ reveals multi-base pair kinetic step\n\nTo distinguish among possible models for the unwinding mechanism of RecQ-dH based on its pausing behavior, we simulated unwinding trajectories comprising a series of pauses and translocations (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig3-v2.jpg)\n\n**Figure 3.:** (A) Example simulated 174 bp DNA hairpin unwinding traces (1 bp melt and step (orange line), 1 bp melt and 5 bp step (red line), and 2 bp melt and step (green line)) overlaid with an example RecQ-dH unwinding trace (black line). Unwinding traces were simulated using Equations 1 and 2. The overall unwinding events are composed of pauses of lifetime (\u03c4p) due to melting of the base-pairs, followed by a rapid translocation step in time (\u03c4t). \u03c4p was calculated based on the sequence stability using nearest neighbor energy parameters (Patten et al., 1984; SantaLucia, 1998; Huguet et al., 2010). The total duration was adjusted to match the mean unwinding rate of RecQ-dH. (B) Pause times plotted as a function of the unwound hairpin for the three example models (with the same marker and line colors) in panel (A). Pause times and positions were obtained by analyzing simulated unwinding traces (100 traces for each condition) using T-test analysis and averaging pause times over a 5 bp window. The experimental pause lifetimes of RecQ-dH are shown in the black solid line. (C) Reduced \u03c72 (\u03c7\u03bd2) measure of the correspondence between measured and simulated pause durations as a function of pause position plotted as a function of the kinetic step size for three kinetic stepping models (see main text): 1 bp melt and step (orange filled circles), 1 bp melt and n bp step (red filled circles), and n bp melt and step (green filled circles). \u03c7\u03bd2 for 1 bp melt and step is significantly larger than the minima of the other two models. The \u03c7\u03bd2 is minimized for n\u00a0=\u00a02 bp for the n-bp melt and step model whereas \u03c7\u03bd2 is minimized for n\u00a0=\u00a05 bp for the 1 bp melt and n bp step model. (D) Na+ dependent unwinding rates of RecQ-dH (black filled circles and dashed line) and predictions of the two kinetic models with the kinetic step-size, n, that minimizes \u03c7\u03bd2 for each model: 1 bp melt and 5 bp step (red filled circles and dashed line), and 2 bp melt and step (green filled circles and dashed line). The error bars correspond to the standard error of the mean (SEM).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Measured RecQ-dH unwinding traces compared with simulated traces of 10 different pausing models (see main text).\n\nBased on previous studies of helicases (Manosas et al., 2010; Cheng et al., 2007; Neuman et al., 2005; Cheng et al., 2011; Lin et al., 2017; Myong et al., 2007), we considered two scenarios for RecQ-dH unwinding with an n-bp kinetic step size: either the enzyme unwinds n base-pairs simultaneously then rapidly translocates along the unwound DNA (simultaneous melting model), or it sequentially unwinds n base-pairs then releases the newly melted ssDNA (delayed release model) (Figure 3A). We exclusively simulated RecQ-dH unwinding and pausing kinetics rather than RecQWT due to the significantly more complex behavior of the RecQWT unwinding trajectories (Figure 1B).\n\nIn the simultaneous melting model, the pause duration, \u03c4 is related to the sum of n base-pair energies at the position of the ith kinetic step,\n\n$$\n\\tau_{p}(i)=A_{RecQ}exp\u2061\\sums=1nG_{1bp}i-1+s\n$$\n\nHere G1bp is the free energy required for 1 base-pair melting at the ith position calculated using the nearest-neighbor energy parameters (Patten et al., 1984; SantaLucia, 1998; Huguet et al., 2010), s is a step index ranging from 1 to n, and ARecQ is a pre-factor used to adjust the simulation to give the same average unwinding (46 nt/s) and translocation rate (~100 nt/s) as the RecQ-dH construct (Manosas et al., 2010). In the delayed release model,$\\tau_{p}i$ is the sum of the pause times associated with melting each of n base pairs at the ith kinetic step,\n\n$$\n\\tau_{p}(i)=\\sums=1nA_{RecQ}exp\u2061(G_{1bp}((i\u22121)+s))\n$$\n\nStochastic simulations of both models were run with different step-sizes, n. For each value of n, the pre-factor ARecQ was adjusted to match the measured average rate of RecQ-dH, and the single-strand DNA translocation rate was 100 bp/s (Manosas et al., 2010; Bagchi et al., 2018). Simulated unwinding traces were generated for different kinetic step-sizes for the two different models (100 traces per each condition, example traces are shown in Figure 3\u2014figure supplement 1). Simulated traces were analyzed with a T-test based step finding algorithm with the same parameters used for experimental data analysis. Pause durations were binned over 5 bp intervals for simulation and experimental traces and the mean pause duration for each bin was calculated (Figure 3B). Simulation results were compared with experimental data for RecQ-dH by calculating the reduced \u03c72 (\u03c7\u03bd2) between the simulated and experimental traces (Figure 3C). For the delayed release model, \u03c7\u03bd2 reached a minimum around 5 bp (\u03c7\u03bd2 = 0.9x10\u22121), lower than the minimum for simultaneous melting model that reached a minimum at 2 bp (\u03c7\u03bd2 = 1.4x10\u22121). This suggests that a delayed release scenario may describe the unwinding mechanism of core RecQ. To confirm this finding, we investigated how the RecQ-dH unwinding rate was affected by Na+ concentration and compared the results with the two unwinding models. As DNA base-pair melting energy increases with Na+ concentration (SantaLucia, 1998; Huguet et al., 2010), the average unwinding rate predicted by the simultaneous melting model should decrease more rapidly than that predicted by the delayed release model (Figure 3D). We varied the Na+ concentration from 25 to 500 mM while maintaining Mg2+ at 5 mM under otherwise identical buffer conditions. The unwinding rate of RecQ-dH decreased with increasing Na+ concentration. The relative decrease in unwinding rate was much better described by the delayed release model with a 5 bp kinetic step. than the simultaneous 2 bp DNA melting model (Figure 3D). The small deviation between the delayed release model and the measured Na+ concentration dependence of the unwinding rate suggests that although the duplex unwinding remains the rate-limiting step, the Na+ concentration effects other aspects of unwinding such as protein-DNA interactions, which are beyond the scope of the simple model. Thus, to further test and confirm the delayed release unwinding model, we performed two additional experiments as explained below.\n\n### Unwinding kinetics of forked DNA substrates in ensemble rapid kinetic experiments support the delayed release model\n\nThe significant DNA sequence dependence of the RecQ-catalyzed DNA unwinding rate and pausing characteristics detected in MT single-molecule experiments should be reflected in ensemble unwinding kinetic measurements, which are suitable for the determination of the kinetic step size and the macroscopic dsDNA unwinding rate (Lucius et al., 2003). In these experiments unwinding kinetics are monitored via the appearance of fully unwound reaction products. Thus, ensemble unwinding experiments complement MT experiments, in which individual unwinding steps are monitored. Importantly, these techniques together should allow determination of the microscopic unwinding mechanism of RecQ helicase constructs based on the proposed base-pair energy dependent unwinding models.\n\nTo test this idea, we performed single-turnover unwinding kinetic experiments in which we rapidly mixed complexes of RecQWT or RecQ-dH with forked DNA substrates of varying GC content with ATP and excess unlabeled ssDNA traps in a quenched-flow instrument and monitored the time course of fluorescently-labeled ssDNA generation via gel electrophoresis of reaction products (Figure 4A). Forked DNA substrates used in the experiments comprised two 21-nt ssDNA arms and a 33 bp dsDNA segment containing 12 (gc36), 16 (gc48) or 26 GC (gc79) bps (sequences described in Supplementary file 1Table S1). Unwinding traces comprised a short (~0.1 s) initial lag, followed by a biphasic appearance of the labeled ssDNA reaction product (Figure 4B). The rapid rise originated from single unwinding runs of initially DNA-bound helicase molecules. The slow rise phase originates from premature dissociation, followed by slow rebinding, of the enzyme to the DNA substrate (hindered but not totally inhibited by the ssDNA trap strand) that eventually led to full unwinding of the DNA fork (Harami et al., 2017). To obtain parameters of unwinding, data were analyzed with a modified version of a previously described n-step kinetic model (Lucius et al., 2003). In its simplest form the model assumes that DNA unwinding occurs as a result of n consecutive rate limiting steps that have a uniform rate constant. This model is generally suitable for the determination of the macroscopic dsDNA unwinding rate, the kinetic step size and the number of intermediates in the unwinding reaction (Lucius et al., 2003).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig4-v2.jpg)\n\n**Figure 4.:** (A) Electrophoretogram of a single-turnover unwinding experiment. Preincubation of fluorescein-labeled forked duplex DNA (30 nM, gc36) with RecQ-dH (100 nM) was followed by rapid mixing with ATP (3 mM) plus excess ssDNA trap strand (3 \u00b5M) (final post-mixing concentrations). Reactions were stopped by the addition of EDTA (40 mM) and loading dye at different time points (0\u2013150 s, cf. panel B) using a quenched-flow instrument or by manual mixing. Amounts of DNA species (forked duplex and ssDNA, depicted by cartoons) labeled with fluorescein (asterisk) were detected by a fluorescence imager. \u201c\u2013 \u201cdenotes a 150 s control reaction in which ATP was absent. (B) Single-turnover unwinding kinetics of forked DNA substrates with GC contents of 36% (light gray), 48% (gray) and 79% (black) of RecQ-dH and RecQWT. Error bars represent SEM calculated from three experiments. Solid lines show fits based on: the n-step model at n\u00a0=\u00a05 for both helicase constructs (see scheme on panel C); simultaneous model (Equation 1 and panel C) at n\u00a0=\u00a04 for RecQ-dH and n\u00a0=\u00a05 for RecQWT; and delayed release model (Equation. and panel C) at n\u00a0=\u00a04 for RecQ-dH and n\u00a0=\u00a05 for RecQWT. (C) Common scheme for the modified n-step and derived simultaneous melting and delayed release models. In the models, unwinding starts from the ssDNA-dsDNA junction. Of all DNA-RecQ complexes (D.R), only a fraction (fP, D.Rp, lower row) unwinds the dsDNA segment in a single run, consisting of n consecutive irreversible kinetic steps (k(1)\u2026k(n)). In the n-step model, the rate constant of each unwinding kinetic step is identical (k(1) = k(n)). In contrast to this, in the simultaneous melting and delayed release models, the rate constant of each unwinding kinetic step depends on the base pair energy of the dsDNA segment to be unwound (segment length according to kinetic step size), as described in Equation 1 and 2, respectively. A fraction of DNA bound helicase molecules (fN, D.RN, upper row) is unable to successfully unwind DNA due to the limited processivity of the enzyme and/or more complex unwinding patterns. After dissociating from the DNA substrate, these enzyme molecules can rebind to the substrate at rate constant krebind and start a new unwinding run (D.R). (D\u2013E) Determined \u03c7v2 values from fitting the (D) n-step model for RecQ-dH (filled circles) and RecQWT (open circles) or (E) fitting the simultaneous melting (green) and delayed release models (red) for the indicated helicase construct. Other determined parameters are listed in Supplementary file 1 Table S2.\n\nUsing a modified version of the n-step model (Figure 4C), global fitting of the unwinding kinetics of the gc36, gc48 and gc79 substrates using an integer series of n ranging from 1 to 7 revealed smallest \u03c7v2 values for an apparent kinetic step size of 5 bp for both RecQ and RecQ-dH (Figure 4B\u2013D) with all DNA substrates, similar to that suggested by our MT results (Figure 3A\u2013B) and by previous findings (Lin et al., 2017; Harami et al., 2015). However, the n-step model does not consider the sequence dependence of the rates of elementary unwinding steps, precluding the distinction between different microscopic mechanisms producing the same kinetic step size. Therefore, we used the same physical framework as described for the MT experiments (Equations 1 and 2) and performed global kinetic fitting to all transients of a given helicase construct (RecQWT or RecQ-dH) unwinding the different forked DNA substrates, based on the DNA sequence-dependent simultaneous melting and delayed release unwinding models (Figure 4B\u2013C). For both models, fitting was done using an integer series of n ranging from 1 to 7. In agreement with the results of the MT analysis (Figure 3C), the smallest \u03c7v2 value was obtained for the delayed release model with a kinetic step size of 4 bp for RecQ-dH and 5 bp for RecQWT (Figure 4B and C, other parameters are listed in Supplementary file 1 Table S2).\n\n### Direct measurement of 5 bp kinetic step size and time-dependent release of ssDNA\n\nIf RecQ-dH takes a certain kinetic step size, it could in principle be directly observed in the single-molecule unwinding traces. However, the enzyme unwinds DNA too rapidly at high ATP concentrations for steps to be routinely and accurately detected, given the spatial resolution limits of the measurement. Under our experimental conditions, the average baseline noise was\u00a0~14 nm at 200 Hz data collection rate. Thus, in order to observe, for example, a 4 bp step (i.e. a 3 nm change in DNA extension), the average pause duration should be\u00a0>300 ms or the unwinding rate should be less than 13 bp/s (~3 fold slower than 42 bp/s). We tried three different conditions to decrease the unwinding rate of RecQ: lowering the ATP concentration (Figure 5\u2014figure supplement 1) and including non-hydrolysable ATP analogues, ATP\u03b3S or AMP-PNP, in the assay (Figure 5\u2014figure supplement 2). We found that decreasing the ATP concentration (sufficiently lowering the unwinding rate) resulted in frequent and extensive enzyme backsliding (observable as rapid partial rezipping of the hairpin during an unwinding event), which complicates kinetic step size measurements (Figure 5\u2014figure supplement 1). AMP-PNP showed extremely slow dissociation kinetics from RecQ-dH that were inappropriate for unwinding assays (Figure 5\u2014figure supplement 2). On the other hand, ATP\u03b3S, showed a comparable binding affinity to ATP with a significantly shorter binding time (~1 s) than AMP-PNP (Figure 5\u2014figure supplement 2). In addition, ATP\u03b3S binding transiently locks RecQ in the strong DNA-binding ATP bound state without backsliding, leading to long duration pauses that effectively increased the spatial resolution by permitting longer averaging times (Figure 5A). We measured the unwinding activity of RecQ-dH at different fractions of ATP\u03b3S (0.05\u20130.5 mM) while keeping the total combined concentration of ATP and ATP\u03b3S constant at 1 mM. The unwinding rate decreased with increasing ATP\u03b3S fraction (Figure 5A). We reason that when the concentration of ATP\u03b3S is such that it is bound at least once per kinetic step, then the predominant physical step-size measured in the hairpin unwinding trajectories will correspond to the kinetic step-size. Step-sizes were estimated with two different step finding algorithms: a step finding program originally developed by Kerssemakers and coworkers (Kerssemakers et al., 2006) and the T-test based step finding analysis (Seol et al., 2016). To determine the average kinetic step-size for each condition, the estimated step-sizes were histogrammed and fit with Gaussian distributions (Figure 5B and C). We found that the estimated step size of RecQ-dH from both step-finding algorithms were comparable, converging from\u00a0~8 bp at a low ATP\u03b3S fraction to 5 bp at higher ATP\u03b3S fractions, suggesting that the average kinetic step size of RecQ-dH is 5 bp [T-test: 5.3\u00a0\u00b1\u00a00.1 (center); 3.0\u00a0\u00b1\u00a00.6 (Standard Deviation); Kerssemakers: 5.2\u00a0\u00b1\u00a00.1(center); 2.1\u00a0\u00b1\u00a00.1 (Standard Deviation), errors correspond to the standard deviations from Gaussian fitting]. The broad step-size distribution could reflect the stochastic nature of ssDNA release by RecQ. Also, it is likely that the two ssDNA strands are released asynchronously by RecQ. In line with this, we occasionally observed a 2.5 bp kinetic step at 500 \u00b5M ATP\u03b3S, and the step-size distribution at lower ATP\u03b3S fractions included peaks at 7.5, 10, and 12.5 bp, consistent with a fundamental step-size of 2.5 bp corresponding to the release of one ssDNA strand of 5 nt (Figure 5\u2014figure supplement 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig5-v2.jpg)\n\n**Figure 5.:** (A) Example traces of hairpin unwinding by RecQ-dH with increasing concentration of ATP\u03b3S while maintaining the combined concentration of ATP and ATP\u03b3S at 1 mM. (B) Step-size distributions were obtained by analyzing unwinding traces collected at each ATP\u03b3S concentration with either T-test or Kerssemakers (KM) step analysis algorithms (see main text). (C) The mean step-size obtained by fitting the distributions in panel (B) with Gaussians plotted as a function of ATP\u03b3S concentration. The average step sizes from both the T-test and Kerssemakers (KM) analysis converge to 5 bp with increasing ATP\u03b3S concentration. Inset: An example trace with 5 bp steps (red line) and the T-test fit (blue line). (D) Global fitting of the mean pause duration (green solid triangles) and average unwinding rate (red solid circles) as a function of ATP\u03b3S concentration, using Equations 4 and 5, reveal a tight mechano-chemical coupling ratio of C\u00a0=\u00a01.0\u00a0\u00b1\u00a00.2 bp/ATP.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Unwinding traces at four different ATP concentrations. At lower ATP concentrations, events of rapid backward transitions (\u2018off\u2019) followed by a short pause (off-state) and resumption of unwinding occur more frequently, suggesting an ATP-dependent DNA binding stability and entry into an off-pathway weak DNA-binding state of the enzyme. (B) Global fitting of unwinding rates (v), off-state duration (\u03c4off), and off-state probability (Poff) as function of ATP concentration based on the ATP binding and DNA melting scheme (Scheme A in the Appendix 1). See Supplementary file 1 Table S3 for the fitting parameters.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** In comparison to ATP\u03b3S, increasing AMPPNP concentration from 100 to 500 \u00b5M, with a constant total concentration of ATP and analog of 1 mM, does not gradually slow down the unwinding of RecQ but increases the frequency of very long pauses. These results suggest that AMPPNP is bound significantly less frequently than ATP but it is stably bound for a long time (>5 s) once incorporated by RecQ-dH. In contrast, ATP\u03b3S appears to be bound relatively frequently at higher concentrations, but the resulting pauses in unwinding are significantly shorter than the pauses induced by AMPPNP binding.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig5-figsupp3-v2.jpg)\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** The pauses in the unwinding trajectories in the presence of ATP\u03b3S could arise from slow hydrolysis of ATP\u03b3S, from slow release of ATP\u03b3S, or a combination of both hydrolysis and release. Hydrolysis of ATP\u03b3S by RecQ-dH produces thiophosphate, which can be detected with a Malachite green assay (Saran et al., 2006). To determine the origin of the ATP\u03b3S-induced pauses, we measured the production of thiophosphate (blue circles) by 20 nM RecQ with saturating concentration of ssDNA (200 nM dT54 DNA) in 1 mM ATP\u03b3S. We fitted the linear portion of the data with a line (black line, slope\u00a0=\u00a010.8\u00a0\u00b1\u00a00.9 ATP\u03b3S\u00b7hr\u22121) and normalized the slope of the line by the enzyme concentration to obtain a rate of 0.15\u00a0\u00b1\u00a00.01 ATP\u03b3S\u00b7s\u22121 per RecQ-dH (cf. the markedly higher dT54-activated RecQ ATPase activity measured earlier: 86\u00a0\u00b1\u00a02 ATP\u00b7s\u22121 per RecQ-dH; Harami et al., 2015). The slow rate of hydrolysis suggests that the vast majority of ATP\u03b3S-induced pauses correspond to slow release of ATP\u03b3S, which is faster than the hydrolysis rate.\n\n### Tight mechano-chemical coupling of ATP-dependent unwinding by RecQ\n\nThe prolonged pause state due to ATP\u03b3S binding instead of ATP at the cleft between two RecA domains of RecQ enabled us to probe the mechano-chemical coupling, C, of RecQ helicase that is a measure of the number of ATP hydrolyzed per kinetic step. For C\u00a0=\u00a0m/n (m ATP hydrolysis per n kinetic step size), the average number of bound ATP\u03b3S, l, can be estimated based on the binomial probability distribution.\n\n$$\nl=\\sumi=0mi\\frac{m!}{im-i!}P^{i}1-P^{m-i}\n$$\n\n\n\n$$\nP=\\frac{k_{ATP\\gammaS}[ATP\\gammaS]}{k_{ATP}ATP+k_{ATP\\gammaS}[ATP\\gammaS]}\n$$\n\nP is the probability of ATP\u03b3S binding per each cycle. kATP is the ATP on-rate, kATP\u03b3S is the ATP\u03b3S on-rate, and [ATP\u03b3S] and [ATP] are the concentrations of ATP\u03b3S and ATP, respectively. The hydrolysis rate of ATP\u03b3S by RecQ in the presence of excess dT45 was measured by monitoring thiophosphate production (Saran et al., 2006)\u00a0and estimated to be < 0.2/s (Appendix 1 and Figure 5\u2014figure supplement 1). This is significantly slower than the measured pause escape rate (2.8 \u00b1 0.1/s) at 500 \u00b5M ATP\u03b3S, suggesting that koffATP\u03b3S is much faster than the rate of ATP\u03b3S hydrolysis. Thus, we could simplify the mean pause duration per kinetic step, \u03c4 and the mean unwinding rate, $v$\u00a0as,\n\n$$\n\\tau=l/k_{ATP\\gammaS}^{off}+1/k_{step}\n$$\n\n\n\n$$\nv=\\frac{n}{\\tau}\n$$\n\nwhere kstep is the mean kinetic stepping rate without ATP\u03b3S. We obtained the average pause durations for different fractions of ATP\u03b3S from 5 to 50 % and globally fitted the pause durations and the average unwinding rates as a function of ATP\u03b3S concentration with Eq. 4 and 5 respectively (Figure 5D). From this global fitting, we found that C = 1.0 \u00b1 0.2 bp/ATP, kATP/ kATP\u03b3S = 1.2 \u00b1 0.2, and 1/koffATP\u03b3S =\u00a00.4\u00a0\u00b1\u00a00.1 s suggesting a tight mechano-chemical coupling in agreement with previous ensemble measurements (Harami et al., 2015; Sarl\u00f3s et al., 2012). We note that rebinding of ATP\u03b3S was not taken into account for simplicity in Equations 2 and 3, which is reasonable as ATP\u03b3S concentration is lower than ATP except for 50% ATP\u03b3S, and because the relative on rate (kATP[ATP] vs kATP\u03b3S[ATP\u03b3S]) of ATP\u03b3S is lower than that of ATP. To ensure that this simplification is reasonable, we simulated how many ATP\u03b3S molecules are bound instead of ATP per base pair based on the fitting parameter, kATP/kATP\u03b3S = 1.2 at 50% ATP\u03b3S. We found that the average is less than one ATP\u03b3S per base pair at this condition indicating that repetitive ATP\u03b3S binding at the same site is rare.\n\n### Multi-step HRDC dependent pausing kinetics results in a non-linear amplification of intrinsic sequence-dependent pausing\n\nThe sequence-dependent unwinding mechanism of RecQ consisting of a 5 bp kinetic step results in transient pauses that are further stabilized by the HRDC, which results in the long-lived sequence-dependent pausing of RecQWT (Figure 2). In addition to the sequence dependence, HRDC-dependent pausing exhibits two interesting features: occasional repetitive rezipping and unwinding (shuttling) around the pause position and significantly prolonged pausing durations for certain pausing positions (Figure 2 and Figure 2\u2014figure supplement 1). It appears that HRDC-binding triggers this shuttling behavior in which 5\u201310 bp are repetitively unwound and rezipped at the relatively long-lived (>0.14 s) intrinsic pause positions. Shuttling activity repeats until RecQ passes the sequence-dependent roadblock. This complex shuttling behavior was significantly enhanced at those regions where long pauses of RecQ-dH are clustered, such as at 55, 90, and 120 bps (Figure 2\u2014figure supplement 1) resulting in the apparent high dwell probabilities at these sites (Figure 2A). Since these positions also exhibit the highest base-pair stabilities (Figure 2A), the average dwell time of RecQWT is strongly correlated with the base-pair stability. Indeed, the average dwell times for RecQWT are highly non-linearly correlated with the base-pair stability (Figure 6A). In contrast, the dwell-times for RecQ-dH scale linearly and much less dramatically with the base-pair stability (Figure 6A), indicating that the HRDC-stabilized pausing can be described as a non-linear amplifier of the intrinsic sequence-dependent unwinding kinetics. We found that a simple kinetic competition model in which HRDC binding is in kinetic competition with the forward motion of the helicase (Appendix 1) cannot reproduce the dramatic changes in pause probability observed for RecQWT hairpin unwinding (Figure 6\u2014figure supplement 1). In line with this, the pausing duration distribution for RecQwt is better described by a double rather than single exponential distribution (Figure 6\u2014figure supplement 1B). Both pause lifetimes (1.8\u00a0\u00b1\u00a00.3 s and 0.4\u00a0\u00b1\u00a00.1 s) are longer than the average pause duration (0.14\u00a0\u00b1\u00a00.03 s, see SI) for the core RecQ (RecQ-dH), indicating that there are multiple HRDC-dependent pause states.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig6-v2.jpg)\n\n**Figure 6.:** (A) The average dwell times of RecQWT and RecQ-dH plotted as a function of the exponential of the average base-pair energy over a 10 bp window. The non-linearity of RecQWT dwell time data was analyzed with a power law function (y\u00a0=\u00a0A\u00b7xP solid line). The fit returned A\u00a0=\u00a07\u00a0\u00b1\u00a00.9 (x10\u22124) and Power\u00a0=\u00a017.2\u00a0\u00b1\u00a03.2 (Errors indicate standard deviations of fitting parameters). (B) Dwell-time histograms of RecQ unwinding the 174 bp DNA hairpin with zero mismatches, that\u00a0is perfect homology, one mismatch (90 bp), two mismatches (90 and 104 bp), and three mismatches (90, 104, and 124 bp). The prominent peak around 90 bp (green shaded region) shown in the dwell time histogram of the intact DNA unwinding by RecQWT was significantly reduced in the hairpin with a single mismatch and the additional peak around 120 bp (blue shaded region) was further suppressed by the third mismatch at 124 bp. The mismatch sites are indicated as arrows. (C) Model for D-loop homology discrimination via HRDC-mediated non-linear amplification of sequence-dependent pausing by RecQ. At regions of low GC content (upper row), RecQ rapidly unwinds duplex DNA and the HRDC remains in a weak binding ssDNA mode (light green HRDC). At regions of high GC content (lower row), RecQ pauses and the HRDC can switch to a strong ssDNA binding mode (orange HRDC). The subsequent binding of the HRDC to the displaced ssDNA (red HRDC) results in stabilization of the GC-induced pauses. As ssDNA is under tension or otherwise constrained, this interaction effectively hinders the movement of the RecQ core, resulting in short-range (5\u201310 bp) repetitive unwinding and annealing of DNA. (D) HRDC-dependent pausing regulates D-loop disruption in a homology dependent manner. RecQ can quickly unwind an invading strand of short or only partially homologous DNA, whereas HRDC-dependent pausing slows down unwinding and prevents disruption of an invading strand with an extended homology.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Top: Comparison between the dwell time histograms of RecQWT (red circles, 5 bp binning) and the simulation (black circles, 5 bp binning) based on a simple kinetic competition model. The pause durations of RecQWT for less than 30 bp of unwound duplex (brown shaded region) were not analyzed since long and frequent shuttling activity was difficult to determine from the step finding analysis in this region. Middle: Schematic of the kinetic competition model for HRDC-stabilization of sequence-dependent pauses. HRDC-dependent pausing occurs via kinetic competition between the stepping rate (kstep(i)) and rate of entering into a pause state (kHP), of duration 1/k-HP. Bottom: The rates were estimated from analysis of the pausing around the region of 40 bp opening of the hairpin Pause duration histograms of RecQ-dH and RecQWT with single exponential fits (left). The pauses around 40 bp exceeding 0.4 s, that were not observed in RecQ-dH, show repetitive rezipping and unwinding (black arrows) by RecQWT (right; middle and bottom). There was no apparent shuttling at short pauses less than\u00a0~0.4 s (right; top). (B) Pause duration distribution of RecQWT from T-test analysis fit with single and double exponential functions. The single exponential fit provides an average pause time of 1.1\u00a0\u00b1\u00a00.1 s with \u03c72\u00a0=\u00a067.1; the double exponential fit yields two different time constants: 1.8\u00a0\u00b1\u00a00.3 s and 0.4\u00a0\u00b1\u00a00.1 s with \u03c72\u00a0=\u00a040.3. Note: both of these pause durations are longer than the average pause duration (0.14\u00a0\u00b1\u00a00.03 s, see above) for the core RecQ (RecQ-dH), indicating that there are multiple HRDC-dependent pause states.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/45909/elife-45909-fig6-figsupp2-v2.jpg)\n\nTo test the proposal that base-pair stability-dependent RecQWT pausing underlies a potential mechanism of homology sensing, we investigated the effect of introducing single mismatches at high probability pause sites. We tested hairpin substrates containing 1, 2, or three single mismatches: (i) a mismatch introduced at 90 bp, (ii) mismatches introduced at 90 bp and 104 bp and (ii) mismatches introduced at 90 bp, 104 bp, and 124 bp. All mismatches were generated by changing G to T on the displaced\u00a0strand (detailed sequence information is in Appendix 1). We found that pausing of RecQWT around the 90 bp unwound hairpin position was significantly reduced compared to intact 174 bp hairpin when a mismatch was present at 90 bp and additional mismatch at 124 bp further suppressed pausing around 120 bp (Figure 6B and Figure 6\u2014figure supplement 2). The effect of mismatches on pausing of RecQWT can be clearly demonstrated by comparing the dwell-time histograms of three DNA substrates (Figure 6B). The prominent peaks in the dwell time histogram of the intact hairpin DNA were diminished one by one with the introduction of mismatches at the corresponding positions confirming the correlation between pausing and homology (Figure 6B and Figure 6\u2014figure supplement 2).\n\n## Discussion\n\nRecQ helicases are well-established as critical enzymes that contribute to genome stability through their multiple roles in DNA repair and genome integrity. Whereas the mechanistic basis of many of the specialized activities of RecQ helicases have been established, the mechanism through which RecQ helicases can distinguish legitimate from illegitimate homologous recombination intermediates has not been established. We previously proposed a mechanistic model in which the HRDC domain of RecQ orients the enzyme to preferentially disrupt the strand invasion (or D-loop structure) corresponding to the earliest HR intermediate. In this model, discrimination between legitimate and illegitimate HR was achieved by modulating the degree of HRDC-induced pausing through an unknown mechanism. Here we demonstrate that HRCD-induced pausing is sequence-dependent and establish the mechanistic basis for this behavior. The pronounced pausing of WT RecQ at GC rich sequences results from two amplification steps that convert the\u00a0~kBT energy differences between GC and AT base pairs to a robust readout of sequence stability (Figure 6A). The first amplification step arises from the basic mechanochemistry of DNA unwinding that involves a\u00a0~\u00a05 bp kinetic step in which\u00a0~\u00a05 bp of DNA are unwound in 5 rounds of ATP hydrolysis followed by release of the two DNA strands. By coupling the forward motion of the helicase to the unwinding of 5 bp rather than a single bp, individual dwell times can vary\u00a0~5 fold more in relation to the underlying sequence than they would for single-bp steps. The second amplification step involves the non-linear amplification of the intrinsic difference in unwinding rate in proportion to GC content through the binding and stabilization of short sequence-dependent pauses by the HRDC. Together these two rounds of linear and non-linear amplification result in strong sequence dependent pausing of WT RecQ on hairpin substrates that results in a greater than 10-fold difference in average unwinding rate of legitimate versus illegitimate paired sequences. A recent single molecule study of E. coli RecQWT indicated a switching behavior between a fast unwinding mode, similar to that of RecQ-dH, and a slower unwinding mode that is similar but not identical to what we observed for RecQWT unwinding in the present study (Bagchi et al., 2018). However, we did not observe switching of RecQWT unwinding (frequent and prolonged pausing) to RecQ-dH-like unwinding (transient pausing). It is possible that the switching to the latter mode is caused by sequestration of the HRDC from ssDNA, which may be dependent on physicochemical conditions such as higher temperature and/or low salt concentrations.\n\nOur study reveals how the unwinding mechanism of the core RecQ helicase, for\u00a0example RecQ-dH, directly impacts HRDC-dependent pausing and the subsequent control of biological functions mediated by HRDC- dependent helicase activities. We were able to elucidate the coupling between ATP hydrolysis and the unusual kinetics of DNA unwinding by varying the ATP and ATP\u03b3S concentrations. We find that RecQ hydrolyzes 5 ATP molecules during a 5 bp kinetic unwinding step that concludes with asynchronous release of two five nt ssDNA segments on average (Figures 3\u20135). Furthermore, ATP binding likely stimulates RecQ binding to and melting of DNA duplex prior to hydrolysis (Figure 5\u2014figure supplement 1).\n\n### Sequence-dependent unwinding mechanism\n\nThe fundamental activity of helicases is the unwinding of duplex nucleic acids. In general, the unwinding mechanism has been classified as either passive or active depending on the degree to which the enzyme \u2018actively\u2019 destabilizes the duplex rather than \u2018passively\u2019 waiting for a thermal fluctuation to expose ssDNA (Betterton and J\u00fclicher, 2005; Lohman et al., 2008). For a purely passive helicase, the enzyme does not provide external work to destabilize duplex DNA and translocates only when ssDNA is exposed by thermal fluctuations. On the other hand, an active helicase is actively involved in disrupting the DNA duplex, and in principle, is less sensitive to base-pair energy or sequence. In previous single molecule experiments, E. coli RecQ helicase was identified as an active helicase based on the minimal force and DNA sequence dependence of duplex unwinding (Manosas et al., 2010). In that study, following theoretical work by Betterton et al (Betterton and J\u00fclicher, 2005), RecQ unwinding was modeled as one base-pair melting followed by 1\u20132 bases translocation. However, we found that the pause durations were generally longer than would be expected for melting of 1 base pair when we compared our results with simulations. We considered two different scenarios: RecQ either destabilizes multiple base-pairs (\u22652 bp) during each kinetic step similar to NS3 helicase (Cheng et al., 2007) or delays releasing of multiple unwound base-pairs similar to speculative models suggested in previous studies (Cheng et al., 2011; Lin et al., 2017; Myong et al., 2007; Ma et al., 2018). However, the minimal dependence of the unwinding rate on Na+ concentration in addition to the sequence-dependent pauses cannot be explained by multi-base-pair melting. Rather, we found that an alternative scenario in which RecQ delays the release of nascent single-strand DNA (delayed release) was a better fit to the pause duration and Na+-dependent unwinding rate data, though the associated kinetic step size (number of bp unwound prior to release) was not uniquely constrained by the pause duration or Na+-dependent unwinding rate measurements (Figure 3). This finding is consistent with previous studies revealing \u2018asynchronous\u2019 release of nascent ssDNA (Lin et al., 2017; Ma et al., 2018). Nonetheless, the mechanism of delayed release of newly melted nucleotides remains unclear. Previous results suggest that a putative electrostatic interaction between newly melted ssDNA and RecQ sequesters several nucleotides of ssDNA. We consider a similar possibility in which RecQ releases the nascent ssDNA only when the accumulated torsion or tension on bound ssDNA is high enough to disrupt the interaction (Myong et al., 2007).\n\n### RecQ takes 5-base kinetic steps and unwinds one base-pair per ATP hydrolysis\n\nWe further refined the delayed release model by directly measuring a 5 bp kinetic step size for DNA unwinding using ATP\u03b3S, which sufficiently slows down the unwinding rate without inducing the frequent back-sliding observed at reduced ATP concentrations (Figure 5 and Figure 5\u2014figure supplement 1)). Recent single molecule fluorescent studies showed 2\u20134 bp kinetic step (Lin et al., 2017; Ma et al., 2018). This smaller and more random nature of the kinetic step size is likely due to the low ATP concentration (2\u20135 \u00b5M), at which ATP binding likely becomes the dominant rate-limiting step slower than or on the same order as the intrinsic off-rate of the nascent DNA. Consistent with this model, the study found a correlation between the ATP concentration and the measured kinetic step size.\n\nThe mechano-chemical coupling and kinetic analysis of ssDNA translocation of RecQ have been studied in detail (Sarl\u00f3s et al., 2012; Rad and Kowalczykowski, 2012). Our unwinding kinetic step is consistent with a recent a study in which a five nucleotide kinetic step for RecQ translocation was estimated (Rad and Kowalczykowski, 2012). Other helicases display multi base-pair kinetic unwinding steps under sufficient ATP concentrations (above KM\u00a0~\u00a020 \u00b5M) (Lohman et al., 2008). The mechano-chemical coupling is a measure of how many chemical cycles an enzyme completes to take one mechanical step. In the case of RecQ or other helicases, it corresponds to how many ATP molecules are consumed per one base translocation (or base-pair unwound for unwinding). For translocation, RecQ shows a tight coupling close to one nucleotide step per ATP hydrolysis (Sarl\u00f3s et al., 2012). Our study reveals that the mechano-chemical coupling for unwinding maintains one base-pair melting per ATP hydrolysis (Figure 4C), which is also supported by the results of a recent single-molecule florescence study of RecQ unwinding (Lin et al., 2017). The proposed kinetic model based on our ATP dependent kinetic analysis (Appendix 1; Figure 5\u2014figure supplement 1) suggests that DNA melting precedes ATP hydrolysis. In this model, ATP binding stabilizes the DNA-RecQ interaction and facilitates DNA melting presumably coupled to an ATP binding-dependent conformational change of RecQ such as rotation of the helicase domains relative to one another, which explains more frequent backsliding under lower ATP concentration (Bernstein et al., 2003; Manthei et al., 2015; Pike et al., 2009). Recent structural results suggest that RecQ binding may melt two base-pairs of DNA before ATP binding (Manthei et al., 2015). This may occur at the initial binding of RecQ (or rebinding) as the initiation of unwinding, but not the unwinding rate, is highly dependent on Na+ concentration.\n\nWhereas we establish that pausing arises from the stability of DNA duplex, recent work by Voter et. al suggests an alternative mechanism for sequence-dependent pausing. In their work, they identify a \u2018Guanine binding pocket\u2019 located in the helicase domain that specifically interacts with guanine bases to destabilize G-quadruplex structures. It is possible that these interactions could also slow down the unwinding rate at clusters of guanine bases in the translocation strand by inducing short pauses (Voter et al., 2018). However, the translocation sequence at the strong pause locations of our DNA hairpin is mixture of G and C bases, suggesting that the pauses we observed originate from the duplex stability. Nevertheless, we cannot entirely rule out the possibility that these specific guanine interactions contribute slightly to the pausing of RecQ core over and above the dominant effect of DNA duplex stability.\n\n### HRDC amplifies weak sequence-dependent pauses during unwinding of RecQ core in a DNA substrate geometry-dependent manner\n\nOne of the essential aspects of RecQ is that it processes diverse, non-canonical, DNA substrates in which the HRDC plays an important role in modulating substrate-specific unwinding of RecQ. It has been shown that the HRDC regulates the binding orientation of RecQ core to promote disruption of D-loop structures, early homologous recombination intermediates (Harami et al., 2017). However, it was not clear how it can regulate unwinding of RecQ to selectively disrupt illegitimate or non-homologous invading DNA strands since the HRDC presumably cannot directly sense DNA sequence homology (Harami et al., 2017). Our present study reveals that the HRDC-ssDNA interactions are strongly coupled to DNA sequence-dependent pausing of the RecQ helicase core: ssDNA binding by the HRDC is not random but occurs at DNA sequences where the helicase core pauses due to the high duplex stability (Figure 2). On the other hand, either a low homology (base-pair mismatches) or low duplex stability (low GC regions) strongly reduces RecQ pausing (Figures 2 and 6B and Figure 6\u2014figure supplement 2). Importantly, this feature can support discrimination between legitimate and illegitimate recombination events by RecQ helicases, in accordance with the increased illegitimate recombination frequencies detected in vivo upon compromising RecQ HRDC function (Harami et al., 2017; Wang et al., 2016). Recombination events proceed through the formation of a displacement loop (D-loop) flanked by genomic DNA, which, due to the limited mobility of these large DNA domains, mimics the hairpin geometry of the magnetic tweezers experiments in which the displaced DNA strand is constrained (Figure 6C and D). Previously we showed that the HRDC both targets RecQ to D-loop intermediates and orients the enzyme in a configuration favoring D-loop disruption (Harami et al., 2017). The results obtained here provide a mechanistic basis for the subsequent discrimination between legitimate and illegitimate recombination based on the length and stability of the D-loop structure. RecQ-catalyzed unwinding of long and stable D-loops will be frequently interrupted by HRDC-stabilized pauses that drastically decrease the average unwinding rate. This slow average unwinding rate potentially permits the initiation of down-stream recombination processes associated with DNA synthesis resulting in extension and further stabilization of the D-loop. Conversely, RecQ unwinding of short and/or unstable D-loops will proceed rapidly (60\u201380 bp/s) resulting in the efficient disruption of the D-loop before it can be further extended. Our study reveals that the strategic location of the HRDC relative to the core domain, combined with sequence-dependent DNA unwinding, enable RecQ helicase to control pausing and shuttling in a substrate-dependent manner and expand its biological activity beyond simple duplex DNA unwinding. Whereas this study focused exclusively on E. coli RecQ, the homology sensing mechanism we propose is potentially applicable to the suppression of illegitimate, or so called \u2018homeologous recombination\u2019 by BLM (Wang et al., 2016).\n\nAnother biological role of HRDC domain-mediated pausing and shuttling could be linked to the role of RecQ helicases in G-quadruplex secondary DNA structure processing. G-quadruplex structures were shown to act as replication road blocks and these regions were shown to be recombinational hot spots (van Wietmarschen et al., 2018; Rhodes and Lipps, 2015). RecQ helicases can efficiently unwind G-quadruplex structures, possibly to aid DNA replication, suppress genome instability and to influence transcription of various genes (Voter et al., 2018; Mendoza et al., 2016). Prolonged shuttling at G-quadruplex sites could ensure that these secondary structures remain unfolded until further steps of replication or DNA repair can proceed. In line with this idea, the HRDC domain of human BLM helicase was shown to be essential for efficient, repetitive unwinding of G-quadruplexes\u00a0Chatterjee et al., 2014).\n\nIn this study, we focused on elucidating the sequence-dependent unwinding and pausing mechanism of RecQ helicase in vitro with purified proteins. Whereas our results indicate a possible mechanism for homology sensing by RecQ helicases, the translocation and pausing kinetics on which the model is based could be modulated in vivo due to the interactions with other DNA binding and processing enzymes. For example, single-strand binding protein (SSB) would likely compete with the HRDC for ssDNA binding. However, we recently demonstrated that SSB is displaced by RecQ despite the much higher apparent binding affinity of SSB for ssDNA (Mills et al., 2017). Furthermore, the high local concentration of the HRDC, which is tethered to the RecQ core by a flexible linker, likely results in the HRDC out-competing other ssDNA binding proteins for the newly melted ssDNA. Nonetheless, as is often the case, RecQ helicases play diverse roles in DNA processing through the interaction with other proteins, thus, future experiments in the presence of other proteins that interact with RecQ in vivo including, SSB, RecJ, RecA, and Topoisomerase III are warranted to test our homology model in a context that more closely approximates physiological conditions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species)or resource</th>\n      <th>Designation</th>\n      <th>Source/reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>ER2566</td>\n      <td>New England Biolabs</td>\n      <td>NEB Cat. #: E4130</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>Modified pTXB vector</td>\n      <td>PMID: 26067769</td>\n      <td></td>\n      <td>Transformation and expression of RecQ constructs</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA</td>\n      <td>pKZ1</td>\n      <td>PMID: 28069956</td>\n      <td></td>\n      <td>Template for hairpin DNA substrate</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-digoxigenin (Sheep Polyclonal)</td>\n      <td>Roche</td>\n      <td>Roche Cat# 11333089001, RRID:AB_514496</td>\n      <td>Reconstituted in 1x Phosphate buffered saline (0.6 \u00b5g)</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>IMPACT purification system</td>\n      <td>New England Biolabs</td>\n      <td>NEB Cat. #: E6901S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PCR DNA purification kit</td>\n      <td>Qiagen</td>\n      <td>Qiagen Cat. #: 28104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Streptavidin coated magnetic beads (\u00f8: 1 and 2.8 \u00b5m)</td>\n      <td>Invitrogen</td>\n      <td>Invitrogen Cat. #: 65602 and 65305</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Phusion high-fidelity DNA polymerase</td>\n      <td>New England Biolabs</td>\n      <td>NEB Cat. #: M0530</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>T4 DNA ligase</td>\n      <td>Promega</td>\n      <td>Promega Cat. #: M1801</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>Nt.BbvcI</td>\n      <td>New England Biolabs</td>\n      <td>NEB Cat. #: R0632</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound</td>\n      <td>BsaI-HF</td>\n      <td>New England Biolabs</td>\n      <td>NEB Cat. #: R3535</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>LabVIEW, Instrument control software</td>\n      <td>National Instruments</td>\n      <td>NI Cat. #: 776678\u201335</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Igor pro 7, Data analysis</td>\n      <td>Wavemetrics PMID: 28069956</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MATLAB, Data analysis</td>\n      <td>MathWorks PMID: 16799566</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software,\u00a0algorithm</td>\n      <td>KinTek Global Kinetic Explorer 4.0, Data analysis</td>\n      <td>KinTek</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### DNA substrate preparation\n\n#### DNA hairpin substrates\n\nGeneration of the 174 bp DNA hairpin was previously described in detail (Harami et al., 2017). The 584 bp DNA hairpin was prepared by ligation of a 500 bp DNA hairpin with\u00a0~1.0 kb DNA handle. The 1.0 kb DNA handle was generated first by PCR of pKZ1, which contains two BbvcI sites spaced by 37 bp, between 4550 and 258 using one primer (258 position) containing a BsaI digestion site and the other primer (4550 position) labeled with 5\u00b4-digoxygenin. PCR products were digested by BsaI and gapped with Nt. BbvcI following the same method to generate the handle of the 174 bp DNA hairpin. 3\u00b4 biotin-labeled poly dT with a 33 bp region complementary to the gapped region of the 1 kb DNA handle was ligated to the 37-nt gapped region of 1 kb DNA handle. The 500 bp DNA hairpin was generated by PCR of Lambda DNA (NEB) between 23104 and 23608 and both ends were digested by BsaI. The final product was made by ligation of the 1 kb DNA handle with 3\u00b4 biotin-labeled poly dT, 500 bp DNA hairpin, and 12 bp DNA with a loop of 4 dT nucleotides to form the hairpin from the PCR product.\n\n174 bp DNA hairpin with 1, 2, or 3 specific mismatch mutations (90 bp; 90 and 104 bps; 90, 104, 124 bps on the displacing strand) were generated by first cutting the PCR product for the 174 bp hairpin with NheI, yielding a 5\u00b4CTAG overhang. In order to prevent 100 bp fragments from NheI digestion to religate back to the DNA handle, the digested DNA band was extracted from an agarose gel. The two complementary oligos (88 nucleotides; Appendix 1) were annealed by incubation at 94\u00b0C for 5 min and then subsequent cooling to 4\u00b0C at a rate of \u22121 \u00b0C/s. The final product was made by ligation of the NheI-digested PCR product with 3\u00b4 biotin-labeled poly dT, 84 bp annealed DNA with differential four nt-overhangs, and 12 bp DNA with a loop of 4 dT nucleotides to form the hairpin.\n\n### Enzyme preparation\n\nThe production of RecQWT and RecQ-dH were previously described in detail (Seol et al., 2016).\n\n### Ensemble kinetic measurements\n\nForked DNA substrates (described in Supplementary file 1 Table S1) were generated and single-turnover unwinding experiments were performed as in ref (Harami et al., 2015). Global fitting kinetic analysis was performed using KinTek Global Kinetic Explorer 4.0.\n\n### Single-molecule measurements and data analysis\n\nThe magnetic tweezers and the experimental set-up were previously described (Seol and Neuman, 2011). A mixture of DNA hairpin (3 pmol) and anti-digoxigenin (0.5 \u00b5g) was incubated in phosphate buffered solution (PBS, pH 7.5) for 20 min and introduced into the sample chamber, which was incubated overnight at 4\u00b0C. The sample chamber was washed with 1 ml of wash buffer (WB, 1X PBS, 0.02 % v/v Tween-20, and 0.3 % w/v BSA) to remove unbound DNA molecules and 40 \u00b5l of magnetic beads (MyOne, Invitrogen) were introduced to form DNA hairpin tethers. Correct DNA hairpins were identified by the sharp DNA extension change upon DNA hairpin unfolding under high force (~19 pN). Upon finding a proper DNA substrate, the chamber was washed with 200 \u00b5l of RecQ buffer (30 mM Tris pH 8, 50 mM NaCl, 5 mM MgCl2, 0.3 % w/v BSA, 0.04 % v/v Tween-20, 1 mM DTT, and 1 mM ATP). After washing, RecQ was added at a concentration of 20\u2013100 pM in 200 \u00b5l RecQ buffer. DNA unwinding measurements were done by tracking a DNA tethered magnetic bead in real-time with custom written routines in Labview. During the measurement, a 1 \u00b5m polystyrene stuck bead was tracked to correct sample cell drift by adjusting the sample cell position using 3-D piezo stage (Physik Instrumente) to compensate for the drift. The unwinding traces were analyzed with a custom-written T-test based algorithm in Igor Pro 6 (Wavemetrics) and the Kerssemakers step finding program in MatLab (Seol et al., 2016; Kerssemakers et al., 2006; Carter and Cross, 2005).\n",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "87aa46cc-4d8f-4a2e-aa90-cd0c7d4de4aa",
+      "submission_id": "dd1bbd2b-9c31-4ef5-94b7-016953e1c0b6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Maria Spies, University of Iowa United States\n\nReviewers:\n- James Keck, University of Wisconsin School of Medicine and Public Health United States\n\n## Review text\n\nDOI: [10.7554/eLife.45909.029](https://doi.org/10.7554/eLife.45909.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Legitimate homology sensing via non-linear amplification of sequence dependent pausing by RecQ helicase\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by John Kuriyan as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: James Keck (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Seol and colleagues use a combination of single-molecule and bulk biochemical assays together with simulations to determine DNA unwinding parameters for E. coli RecQ helicase. The authors propose that the core of RecQ helicase pauses during duplex unwinding, that the pauses depend on the bp stability and that the interaction of HRDC with released ssDNA amplifies the pauses. The authors also propose the mechanochemical/kinetic mechanism of the RecQ.\n\nThe reviewers agreed that the work is important and generally interesting, since it investigates the sequence-dependent behavior of RecQ helicase that is involved in controlling homologous recombination. Overall, the experiments are well designed, expertly performed and well controlled. The model describing pause amplification my HRDC is plausible, interesting and have important implications for the RecQ function in heteroduplex rejection and perhaps in other processes of DNA metabolism. The manuscript does a nice job of tying together new and published observations into a cohesive and interesting unwinding mechanism for RecQ. Several points, however, need to be addressed:\n\nEssential revisions:\n\n1) The authors state that they are monitoring homology sensing mechanism. However, the sequence used in the study did not contain any mismatch or non-homologous regions to contrast the case of homology. The authors can either do additional experiments to include such result (preferable) or they can tone down the claim by changing the title and corresponding text.\n\n2) The reviewers agreed that RecQ-WT pauses as discussed in the article, but RecQ-WT also makes significant back steps (Figure 1B), because the position in bp does not only increase with the time, it also decreases. Authors should comment on this, whether it is dissociation of RecQ-WT or something else, such as backstepping, sliding or shuttling? Simulations of the duplex unwinding include only forward stepping and pauses, but no backstepping. Please elaborate.\n\nMinor points:\n\n1) It would be helpful to note segments in the traces for RecQ and RecQ-dH that are considered \"pauses\".\n\n2) The authors note that \"The roughly 20-fold difference in the time the enzyme requires to unwind the DNA at the longest pause duration sites in comparison to the average time required to unwind a single base pair, suggests that more than a single base pair is being opened by the enzyme during each kinetic step in the unwinding reaction.\" This requires further clarification.\n\n3) What evidence is there to show that Na+ titration in Figure 3D is affecting base pair stability only. This experiment could be complicated by multiple ionic effects, including protein/DNA interactions.\n\n4) in vivo RecQ does not act alone but instead works with other factors (SSB or RecJ) that could occlude the HRDC domain from the 5' unwound strand. The authors should discuss how competition between the HRDC domain and these other factors may play out in cells.\n\n5) A recent crystal structure of A bacterial RecQ identified a guanine binding pocket on the surface of the helicase that is important for G-quadruplex unwinding (Voter et al., 2019). Could this pocket be important for pausing at GC-rich sites? Does it matter whether guanines are on the translocation strand versus the displaced strand?\n\n6) When discussing mechanochemical coupling, please explain what do you mean when you say \"ATP-gS incorporation\"?\n\n7) The evidence of sequence-dependent activity is suggested in Figure 2 through the histogram of dwell times and base-pair stability. It is confusing how dwell times peaks are paired with base-pair stability peaks in Figure 2A to generate Figure 2B. I suggest authors use a simpler method such as the correlation function between measured and calculated stability curve. The method of multiple gaussian fits combined with linear fits unnecessarily over processes the data. Figure 2\u2014figure supplement 2A and B also shows a shift between indexed peaks. For example, peak #4 in Figure 2\u2014figure supplement 2A is more than 30 bp away from peak #4 in Figure 2\u2014figure supplement 2B. This is potentially a mistake, and this analysis method should be avoided. The histogram in Figure 2 should be also qualitatively described in terms what do the peaks mean.\n\n8) The authors should show the variability between different observations of RecQ activity. For example, RecQ-dH in Figure 1B shows a trace that is 4 s long, however, that time can be anywhere between 2.5 and 5 s. Perhaps, the authors can superimpose several different traces that all start at 0 time, to show the actual variability between different instances.\n",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "de300319-a709-4957-93d2-2aa2452c48c0",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C1",
+      "claim": "RecQ helicases promote genomic stability through their unique ability to suppress illegitimate recombination and resolve recombination intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "RecQ helicases promote genomic stability through their unique ability to suppress illegitimate recombination and resolve recombination intermediates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about RecQ helicase function that is supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "c1947380-d7dc-402c-9b3c-fcf24cbde2a5",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C2",
+      "claim": "DNA structure-specific activities of RecQ helicases are mediated by the helicase-and-RNAseD like C-terminal (HRDC) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These DNA structure-specific activities of RecQ helicases are mediated by the helicase-and-RNAseD like C-terminal (HRDC) domain, via unknown mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior research knowledge, though the mechanisms are stated as unknown.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "4c539c90-26f8-4722-a7df-90cbe0e9fb85",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C3",
+      "claim": "The HRDC domain stabilizes intrinsic, sequence-dependent pauses of the core helicase in a DNA geometry-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, employing single-molecule magnetic tweezers and rapid kinetic approaches we establish that the HRDC domain stabilizes intrinsic, sequence-dependent, pauses of the core helicase (lacking the HRDC) in a DNA geometry-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data from single-molecule magnetic tweezers and rapid kinetic approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "04434d7e-a99f-4e55-bfe4-c81fb1bafe13",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C4",
+      "claim": "The unwinding rate of RecQ depends on the stability of the duplex DNA leading to transient sequence-dependent pauses.",
+      "claim_type": "EXPLICIT",
+      "source": "We elucidate the core unwinding mechanism in which the unwinding rate depends on the stability of the duplex DNA leading to transient sequence-dependent pauses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic finding supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "13e94ccd-0acf-4e74-9d85-aab3dbc84c90",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C5",
+      "claim": "The HRDC domain causes non-linear amplification of transient pauses through controlled binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate a non-linear amplification of these transient pauses by the controlled binding of the HRDC domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding demonstrated through experimental data and kinetic modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "bc9cdaee-3baf-423f-a620-0c54f679cb4a",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C6",
+      "claim": "DNA sequence- and geometry-dependent pausing may underlie a homology sensing mechanism that allows rapid disruption of unstable (illegitimate) and stabilization of stable (legitimate) DNA strand invasions.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting DNA sequence- and geometry-dependent pausing may underlie a homology sensing mechanism that allows rapid disruption of unstable (illegitimate) and stabilization of stable (legitimate) DNA strand invasions, which suggests an intrinsic mechanism of recombination quality control by RecQ helicases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings regarding the biological function of the observed mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "6b959a17-9cea-4493-92ad-78886aaece7c",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C7",
+      "claim": "Escherichia coli RecQ helicase is the founding member of the RecQ family.",
+      "claim_type": "EXPLICIT",
+      "source": "Escherichia coli RecQ (Ec RecQ) helicase is the founding member of the family (Nakayama et al., 1984) and plays roles in both suppressing illegitimate recombination and facilitating various steps of DNA recombinational repair (Hanada et al., 1997; Ryder et al., 1994; Le\u00f3n-Ortiz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Nakayama et al., 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "ad054e70-d2e7-436e-8855-82cbdb8931be",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C8",
+      "claim": "E. coli RecQ plays roles in both suppressing illegitimate recombination and facilitating various steps of DNA recombinational repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Escherichia coli RecQ (Ec RecQ) helicase is the founding member of the family (Nakayama et al., 1984) and plays roles in both suppressing illegitimate recombination and facilitating various steps of DNA recombinational repair (Hanada et al., 1997; Ryder et al., 1994; Le\u00f3n-Ortiz et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Hanada et al., 1997; Ryder et al., 1994; Le\u00f3n-Ortiz et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "12951e5b-b444-422f-bd3b-95731c6fb39d",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C9",
+      "claim": "RecQ helicases are highly conserved from bacteria to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "RecQ helicases are highly conserved from bacteria to humans and eukaryotic RecQ helicases have been shown to play similar pro- and anti-recombination functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about RecQ helicase conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "9820cadc-7a51-458e-a6ad-1b0eb750665b",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C10",
+      "claim": "Most unicellular organisms express a single RecQ homolog, whereas multi-cellular organisms often possess multiple RecQ helicases specialized to different roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Most unicellular organisms, such as E. coli and yeast, express a single RecQ homolog, whereas multi-cellular organisms often possess multiple RecQ helicases specialized to different roles in genome maintenance processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about RecQ helicase distribution across organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "0a41a0aa-02e7-4f28-bbfe-d41643b16c69",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C11",
+      "claim": "The fundamental conserved activity of RecQ helicases is the ATP-dependent unwinding of double-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental conserved activity of RecQ helicases is the ATP-dependent unwinding of double-stranded DNA (Nakayama et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Nakayama et al., 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "5cb6530c-bdb5-434d-85c4-ade535647957",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C12",
+      "claim": "All RecQ members possess two evolutionarily conserved RecA-like helicase domains with an ATP binding and hydrolysis site located in a cleft between them.",
+      "claim_type": "EXPLICIT",
+      "source": "All RecQ members possess two evolutionarily conserved RecA-like helicase domains with an ATP binding and hydrolysis site located in a cleft between them (Bennett and Keck, 2004; Chu and Hickson, 2009; Bachrati and Hickson, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bennett and Keck, 2004; Chu and Hickson, 2009; Bachrati and Hickson, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "2888ca52-fd9e-4663-9226-ab2d73c015aa",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C13",
+      "claim": "The RecQ C-terminal domain (RQC) comprises zinc binding and winged-helix (WH) sub-domains associated with protein structural integrity and duplex DNA binding, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The RecQ C-terminal domain (RQC) comprises zinc binding and winged-helix (WH) sub-domains associated with protein structural integrity and duplex DNA binding, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about RecQ domain structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "356ca651-0d0e-4ed7-803c-d52f562be1e6",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C14",
+      "claim": "Many RecQ-family members possess an accessory single-stranded DNA-binding module termed the helicase-and-RNAseD-C-terminal (HRDC) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Although less conserved, many RecQ-family members, including Ec RecQ and multiple human RecQ homologs, possess an accessory single-stranded (ss) DNA-binding module termed the helicase-and-RNAseD-C-terminal (HRDC) domain (Bernstein and Keck, 2005; Vindigni and Hickson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bernstein and Keck, 2005; Vindigni and Hickson, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "0a26ead8-d67b-4f68-8471-aba2565c1069",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C15",
+      "claim": "The HRDC domain is generally dispensable for helicase activity but is critical for certain recombination intermediate processing steps.",
+      "claim_type": "EXPLICIT",
+      "source": "The HRDC, while generally dispensable for helicase activity, is critical for certain recombination intermediate processing steps, such as disruption of displacement strand (D-loop) invasion and double Holliday junction resolution (Rezazadeh, 2012; Singh et al., 2012; Chatterjee et al., 2014; Harami et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Rezazadeh, 2012; Singh et al., 2012; Chatterjee et al., 2014; Harami et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "f316d250-cf27-4308-9e92-9dbb6a0c8c46",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C16",
+      "claim": "Full length RecQ has a higher ssDNA binding affinity than RecQ constructs lacking the HRDC.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies have established that full length RecQ has a higher ssDNA binding affinity than RecQ constructs lacking the HRDC, which is consistent with the findings that the interaction between the HRDC and ssDNA contributes to DNA substrate specificity of RecQ helicases (Bernstein and Keck, 2005; Vindigni and Hickson, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bernstein and Keck, 2005; Vindigni and Hickson, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "b3a85464-335d-4122-87a0-4861bacb12f2",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C17",
+      "claim": "HRDC interactions contribute to DNA substrate-geometry dependent binding orientation and unwinding by RecQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we provided evidence that HRDC interactions contribute to DNA substrate-geometry dependent binding orientation and unwinding by RecQ, and demonstrated that these HRDC-mediated interactions play a role in suppressing illegitimate recombination in E. coli (Harami et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Harami et al., 2017, which is prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "744d0ec9-480a-48d4-b5cc-0b83a9ebcfee",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C18",
+      "claim": "The HRDC strongly favors binding of RecQ to D-loop structures in an orientation that promotes disruption of the invading DNA strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas these findings indicate that the HRDC strongly favors binding of RecQ to D-loop structures in an orientation that promotes disruption of the invading DNA strand (Harami et al., 2017), it is not clear how RecQ can subsequently discriminate between homologous and non-homologous strand invasions; once correctly oriented on the D-loop, RecQ can unwind any invading strand and indiscriminately disrupt all D-loop formations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Harami et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "78f5ede5-90aa-49f2-9c63-5f446ae4dbe6",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C19",
+      "claim": "HRDC-dependent pausing during hairpin DNA unwinding occurs repeatedly at distinct positions on the DNA hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work we identify a potential solution to this quandary, suggested by the observation that HRDC-dependent pausing during hairpin DNA unwinding is not random but occurs repeatedly at distinct positions on the DNA hairpin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "3695e037-acb2-40ee-8222-073eab82b2f5",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C20",
+      "claim": "RecQWT and RecQ-dH show different pausing behavior during DNA hairpin unwinding, with RecQWT showing frequent pausing and strand-switching.",
+      "claim_type": "EXPLICIT",
+      "source": "As described previously (Harami et al., 2017), frequent pausing and strand-switching by WT RecQ (RecQWT) is caused by the HRDC as the HRDC deletion mutant (RecQ-dH) shows significantly less pausing during DNA hairpin unwinding (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement is supported by reference to Figure 1B and a citation to Harami et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "458757ea-4bb1-4eaa-96ba-75d8cff3f271",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C21",
+      "claim": "Pausing is attributed to transient binding of the HRDC domain to the displaced single-stranded DNA behind RecQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Pausing is attributed to transient binding of the HRDC domain to the displaced single-stranded DNA behind RecQ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on experimental observations and prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "c7d560f8-13a9-48fc-b1df-1bdd1b48153f",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C22",
+      "claim": "HRDC binding to duplex DNA ahead of the helicase or to the translocation strand of ssDNA behind the helicase are ruled out by the lack of pauses during unwinding of a 'gapped' DNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "HRDC binding to either duplex DNA ahead of the helicase, or to the translocation strand of ssDNA behind the helicase, are ruled out by the lack of pauses during the unwinding of a 'gapped' DNA substrate in which the displaced strand is not constrained (Harami et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Harami et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "39099da6-607b-4554-ab58-918eba87bce2",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C23",
+      "claim": "The dwell-time histogram for RecQWT unwinding traces exhibits peaks at distinct positions along the hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the dwell-time histogram as a function of position for RecQWT unwinding traces exhibits peaks at distinct positions along the hairpin (Figure 2A; top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "8080d1f1-c792-472e-b640-edb94bb32ef5",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C24",
+      "claim": "The peak locations of pausing and duplex stability are highly correlated for RecQWT.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the peak locations of pausing and duplex stability were highly correlated (Figure 2A; bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "f663c064-ccdd-4c16-b12a-38bcc6447dd3",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C25",
+      "claim": "Pause positions from the dwell time histogram of RecQWT are linearly correlated with peak positions from the DNA base-pair energy profile with a slope of 0.99 \u00b1 0.03, Pearson's r of 0.97, and \u03c72 = 0.85.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this observation, pause positions from the dwell time histogram of RecQWT were linearly correlated with peak positions from the DNA base-pair energy profile (Figure 2B; top) with a slope of 0.99 \u00b1 0.03, linear correlation coefficient (Pearson's r) of 0.97, and \u03c72 = 0.85, indicating a strong linear correlation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from statistical analysis of the experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "c2f46f9d-ddd2-4e3f-8c53-fac123fae67c",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C26",
+      "claim": "The sequence around the peak positions contains a high percentage of GC (~70%).",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence around the peak positions (\u00b14 bp) contained a high percentage of GC (~70%), consistent with the finding that the pause positions are related to the duplex stability of the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from sequence analysis of the DNA substrate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "0c8b68bc-395e-4a8f-9933-a6f5764f7bb5",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C27",
+      "claim": "The pause positions of RecQ-dH are linearly correlated with the duplex stability peaks, returning a slope of 0.96 \u00b1 0.06, Pearson's r = 0.95, and \u03c72 = 1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "The pause positions for RecQ-dH were obtained from dwell time histograms following the same procedure used for RecQWT (Figure 2\u2014figure supplement 2C) and plotted as a function of the peak positions of DNA base-pair stability (Figure 2B). The pause positions of RecQ-dH were linearly correlated with the duplex stability peaks, returning a slope of 0.96 \u00b1 0.06, Pearson's r = 0.95, and \u03c72 = 1.1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from statistical analysis of the experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "f149ef05-9cb2-4db9-a47a-919b17f47a57",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C28",
+      "claim": "The pause positions of RecQ-dH are statistically identical to those of RecQWT.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the pause positions of RecQ-dH are statistically identical to those of RecQWT, confirming that HRDC-dependent pausing likely originates from stabilization of sequence-dependent unwinding kinetics of RecQ helicase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical comparison of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "0aeacf70-7140-443c-9fce-3a21e5ad76a3",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C29",
+      "claim": "The roughly 20-fold difference in the time the enzyme requires to unwind DNA at the longest pause duration sites in comparison to the average unwinding rate suggests that more than a single base pair is being opened by the enzyme during each kinetic step.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the roughly 20-fold difference in the time the enzyme requires to unwind DNA at the longest pause duration sites in comparison to the average unwinding rate, suggests that more than a single base pair is being opened by the enzyme during each kinetic step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and theoretical considerations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "340b8d15-07ab-4310-8260-d89b03209978",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C30",
+      "claim": "Pausing is governed by a combination of the DNA base-pair stability and the number of base pairs melted by the helicase during each kinetic step.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this simple analysis, we suggest that pausing is governed by a combination of the DNA base-pair stability and the number of base pairs melted by the helicase during each kinetic step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on inference from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "0a0f8c72-895b-408c-add6-3470c7b75b8d",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C31",
+      "claim": "During processive unwinding, the melting step is the rate limiting step that determines the unwinding rate and pause durations.",
+      "claim_type": "EXPLICIT",
+      "source": "During processive unwinding, this melting step is the rate limiting step that determines the unwinding rate and pause durations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "5d50f0d9-af56-44c0-ab71-2017ebff5e3e",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C32",
+      "claim": "The delayed release model with a 5 bp kinetic step better describes RecQ-dH unwinding than the simultaneous melting model.",
+      "claim_type": "EXPLICIT",
+      "source": "For the delayed release model, \u03c7\u03bd2 reached a minimum around 5 bp (\u03c7\u03bd2 = 0.9x10\u22121), lower than the minimum for simultaneous melting model that reached a minimum at 2 bp (\u03c7\u03bd2 = 1.4x10\u22121). This suggests that a delayed release scenario may describe the unwinding mechanism of core RecQ.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from computational modeling and comparison with experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "288c9f6f-5508-4661-a9b6-5b5228d3ce11",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C33",
+      "claim": "The unwinding rate of RecQ-dH decreases with increasing Na+ concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "We varied the Na+ concentration from 25 to 500 mM while maintaining Mg2+ at 5 mM under otherwise identical buffer conditions. The unwinding rate of RecQ-dH decreased with increasing Na+ concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from varying Na+ concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "e22ce408-e814-463e-ba62-000e68f74c58",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C34",
+      "claim": "The relative decrease in unwinding rate with Na+ concentration is better described by the delayed release model with a 5 bp kinetic step than the simultaneous 2 bp DNA melting model.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative decrease in unwinding rate was much better described by the delayed release model with a 5 bp kinetic step. than the simultaneous 2 bp DNA melting model (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparison of experimental data with computational models shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "b9256b3f-9a7e-43ed-8624-46164d97a898",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C35",
+      "claim": "Unwinding traces comprised a short (~0.1 s) initial lag, followed by a biphasic appearance of the labeled ssDNA reaction product.",
+      "claim_type": "EXPLICIT",
+      "source": "Unwinding traces comprised a short (~0.1 s) initial lag, followed by a biphasic appearance of the labeled ssDNA reaction product (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the ensemble kinetic experiments shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "8fee67a1-9f67-4763-8a60-500ff100303f",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C36",
+      "claim": "Global fitting of the unwinding kinetics revealed smallest \u03c7v2 values for an apparent kinetic step size of 5 bp for both RecQ and RecQ-dH.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a modified version of the n-step model (Figure 4C), global fitting of the unwinding kinetics of the gc36, gc48 and gc79 substrates using an integer series of n ranging from 1 to 7 revealed smallest \u03c7v2 values for an apparent kinetic step size of 5 bp for both RecQ and RecQ-dH (Figure 4B\u2013D) with all DNA substrates, similar to that suggested by our MT results (Figure 3A\u2013B) and by previous findings (Lin et al., 2017; Harami et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from kinetic modeling of ensemble experimental data shown in Figure 4, supported by citations to Lin et al., 2017; Harami et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "f2784fab-2eee-4ec5-8446-d752ffef2cdf",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C37",
+      "claim": "The smallest \u03c7v2 value was obtained for the delayed release model with a kinetic step size of 4 bp for RecQ-dH and 5 bp for RecQWT.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the results of the MT analysis (Figure 3C), the smallest \u03c7v2 value was obtained for the delayed release model with a kinetic step size of 4 bp for RecQ-dH and 5 bp for RecQWT (Figure 4B and C, other parameters are listed in Supplementary file 1 Table S2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from kinetic modeling of ensemble experimental data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "9767cb3f-6f54-433b-bca8-08c422c16f98",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C38",
+      "claim": "Decreasing the ATP concentration resulted in frequent and extensive enzyme backsliding.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that decreasing the ATP concentration (sufficiently lowering the unwinding rate) resulted in frequent and extensive enzyme backsliding (observable as rapid partial rezipping of the hairpin during an unwinding event), which complicates kinetic step size measurements (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experiments at low ATP concentration shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "be472176-d44e-40e1-8d9c-873ecfe817cd",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C39",
+      "claim": "ATP\u03b3S showed a comparable binding affinity to ATP with a significantly shorter binding time (~1 s) than AMP-PNP.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, ATP\u03b3S, showed a comparable binding affinity to ATP with a significantly shorter binding time (~1 s) than AMP-PNP (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from experiments comparing ATP analogs shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "8ad4ac4a-6ce4-45f9-b2f4-8a6f74b50d5f",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C40",
+      "claim": "The unwinding rate decreased with increasing ATP\u03b3S fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the unwinding activity of RecQ-dH at different fractions of ATP\u03b3S (0.05\u20130.5 mM) while keeping the total combined concentration of ATP and ATP\u03b3S constant at 1 mM. The unwinding rate decreased with increasing ATP\u03b3S fraction (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "d4858437-1b90-4589-bebc-2a026efdc65d",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C41",
+      "claim": "The estimated step size of RecQ-dH converged from ~8 bp at a low ATP\u03b3S fraction to 5 bp at higher ATP\u03b3S fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the estimated step size of RecQ-dH from both step-finding algorithms were comparable, converging from ~8 bp at a low ATP\u03b3S fraction to 5 bp at higher ATP\u03b3S fractions, suggesting that the average kinetic step size of RecQ-dH is 5 bp [T-test: 5.3 \u00b1 0.1 (center); 3.0 \u00b1 0.6 (Standard Deviation); Kerssemakers: 5.2 \u00b1 0.1(center); 2.1 \u00b1 0.1 (Standard Deviation), errors correspond to the standard deviations from Gaussian fitting].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from step-size analysis shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "2fb54ee9-b050-4fc3-9df0-1dd47a8be4d1",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C42",
+      "claim": "The average kinetic step size of RecQ-dH is 5 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the estimated step size of RecQ-dH from both step-finding algorithms were comparable, converging from ~8 bp at a low ATP\u03b3S fraction to 5 bp at higher ATP\u03b3S fractions, suggesting that the average kinetic step size of RecQ-dH is 5 bp [T-test: 5.3 \u00b1 0.1 (center); 3.0 \u00b1 0.6 (Standard Deviation); Kerssemakers: 5.2 \u00b1 0.1(center); 2.1 \u00b1 0.1 (Standard Deviation), errors correspond to the standard deviations from Gaussian fitting].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the step-size analysis with quantitative support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "a37167db-4c2c-4842-9f01-e8c1df24601b",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C43",
+      "claim": "A 2.5 bp kinetic step was occasionally observed at 500 \u00b5M ATP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, we occasionally observed a 2.5 bp kinetic step at 500 \u00b5M ATP\u03b3S, and the step-size distribution at lower ATP\u03b3S fractions included peaks at 7.5, 10, and 12.5 bp, consistent with a fundamental step-size of 2.5 bp corresponding to the release of one ssDNA strand of 5 nt (Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "93f640b3-64f8-47a4-8885-b783841c180d",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C44",
+      "claim": "RecQ exhibits tight mechano-chemical coupling with C = 1.0 \u00b1 0.2 bp/ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "From this global fitting, we found that C = 1.0 \u00b1 0.2 bp/ATP, kATP/ kATP\u03b3S = 1.2 \u00b1 0.2, and 1/koffATP\u03b3S = 0.4 \u00b1 0.1 s suggesting a tight mechano-chemical coupling in agreement with previous ensemble measurements (Harami et al., 2015; Sarl\u00f3s et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from global fitting of experimental data shown in Figure 5D, supported by citations to Harami et al., 2015; Sarl\u00f3s et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "98a614bf-5c62-41cc-a3c5-bccd53a76983",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C45",
+      "claim": "RecQWT exhibits occasional repetitive rezipping and unwinding (shuttling) around the pause position.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the sequence dependence, HRDC-dependent pausing exhibits two interesting features: occasional repetitive rezipping and unwinding (shuttling) around the pause position and significantly prolonged pausing durations for certain pausing positions (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "bfe10a43-b505-489b-a206-64573a2769ca",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C46",
+      "claim": "HRDC-binding triggers shuttling behavior in which 5\u201310 bp are repetitively unwound and rezipped at relatively long-lived pause positions.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that HRDC-binding triggers this shuttling behavior in which 5\u201310 bp are repetitively unwound and rezipped at the relatively long-lived (>0.14 s) intrinsic pause positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "5b11da50-4818-4262-81b1-650c41628000",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C47",
+      "claim": "The average dwell times for RecQWT are highly non-linearly correlated with the base-pair stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the average dwell times for RecQWT are highly non-linearly correlated with the base-pair stability (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of the experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "73ab3853-a143-4d51-ae4e-562159ff3d45",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C48",
+      "claim": "The dwell-times for RecQ-dH scale linearly and much less dramatically with the base-pair stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the dwell-times for RecQ-dH scale linearly and much less dramatically with the base-pair stability (Figure 6A), indicating that the HRDC-stabilized pausing can be described as a non-linear amplifier of the intrinsic sequence-dependent unwinding kinetics.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of the experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "0bdfc372-6c10-4047-b4b2-5ea068a7dc48",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C49",
+      "claim": "A simple kinetic competition model cannot reproduce the dramatic changes in pause probability observed for RecQWT hairpin unwinding.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a simple kinetic competition model in which HRDC binding is in kinetic competition with the forward motion of the helicase (Appendix 1) cannot reproduce the dramatic changes in pause probability observed for RecQWT hairpin unwinding (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from kinetic modeling shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "5ec29d27-2b6b-4424-9c1f-fc04c9469268",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C50",
+      "claim": "The pausing duration distribution for RecQwt is better described by a double rather than single exponential distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, the pausing duration distribution for RecQwt is better described by a double rather than single exponential distribution (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of the experimental data shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "1cb3cf13-7330-418c-a199-48422f846cb5",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C51",
+      "claim": "RecQWT has two pause lifetimes of 1.8 \u00b1 0.3 s and 0.4 \u00b1 0.1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Both pause lifetimes (1.8 \u00b1 0.3 s and 0.4 \u00b1 0.1 s) are longer than the average pause duration (0.14 \u00b1 0.03 s, see SI) for the core RecQ (RecQ-dH), indicating that there are multiple HRDC-dependent pause states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from analysis of pause duration distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "a8a12667-785b-48c4-b4bc-d91ed29fd251",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C52",
+      "claim": "Pausing of RecQWT around the 90 bp unwound hairpin position was significantly reduced when a mismatch was present at 90 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that pausing of RecQWT around the 90 bp unwound hairpin position was significantly reduced compared to intact 174 bp hairpin when a mismatch was present at 90 bp and additional mismatch at 124 bp further suppressed pausing around 120 bp (Figure 6B and Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from mismatch experiments shown in Figure 6B and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "71a4ce92-9a6b-452d-8679-cbbe2f8e2a64",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C53",
+      "claim": "The prominent peaks in the dwell time histogram of the intact hairpin DNA were diminished one by one with the introduction of mismatches at the corresponding positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The prominent peaks in the dwell time histogram of the intact hairpin DNA were diminished one by one with the introduction of mismatches at the corresponding positions confirming the correlation between pausing and homology (Figure 6B and Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental finding from mismatch experiments shown in Figure 6B and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "b2804e58-d9da-4ac5-97e4-440414363b5e",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C54",
+      "claim": "The pronounced pausing of WT RecQ at GC rich sequences results from two amplification steps that convert the ~kBT energy differences between GC and AT base pairs to a robust readout of sequence stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The pronounced pausing of WT RecQ at GC rich sequences results from two amplification steps that convert the ~kBT energy differences between GC and AT base pairs to a robust readout of sequence stability (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic interpretation of the experimental findings shown in Figure 6A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "34dacecd-0d53-4b49-82ae-9952bf769b50",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C55",
+      "claim": "The first amplification step arises from the basic mechanochemistry of DNA unwinding that involves a ~ 5 bp kinetic step.",
+      "claim_type": "EXPLICIT",
+      "source": "The first amplification step arises from the basic mechanochemistry of DNA unwinding that involves a ~ 5 bp kinetic step in which ~ 5 bp of DNA are unwound in 5 rounds of ATP hydrolysis followed by release of the two DNA strands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "6533249a-224c-4183-b1ea-ac0d923b4a27",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C56",
+      "claim": "The second amplification step involves the non-linear amplification of the intrinsic difference in unwinding rate through the binding and stabilization of short sequence-dependent pauses by the HRDC.",
+      "claim_type": "EXPLICIT",
+      "source": "The second amplification step involves the non-linear amplification of the intrinsic difference in unwinding rate in proportion to GC content through the binding and stabilization of short sequence-dependent pauses by the HRDC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "f18d146b-cb39-4db0-a66e-38acf4bfb4cd",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C57",
+      "claim": "The two rounds of linear and non-linear amplification result in strong sequence dependent pausing of WT RecQ that results in a greater than 10-fold difference in average unwinding rate of legitimate versus illegitimate paired sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these two rounds of linear and non-linear amplification result in strong sequence dependent pausing of WT RecQ on hairpin substrates that results in a greater than 10-fold difference in average unwinding rate of legitimate versus illegitimate paired sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings and mechanistic interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "54ba6472-6faf-496f-af80-2883e41490e8",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C58",
+      "claim": "A recent single molecule study of E. coli RecQWT indicated a switching behavior between a fast unwinding mode and a slower unwinding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent single molecule study of E. coli RecQWT indicated a switching behavior between a fast unwinding mode, similar to that of RecQ-dH, and a slower unwinding mode that is similar but not identical to what we observed for RecQWT unwinding in the present study (Bagchi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Bagchi et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "f4057bef-d4ed-4743-9900-c3721c596ef7",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C59",
+      "claim": "RecQ hydrolyzes 5 ATP molecules during a 5 bp kinetic unwinding step that concludes with asynchronous release of two five nt ssDNA segments on average.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that RecQ hydrolyzes 5 ATP molecules during a 5 bp kinetic unwinding step that concludes with asynchronous release of two five nt ssDNA segments on average (Figures 3\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the experimental findings shown in Figures 3\u20135.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "b14c5723-acfb-4c57-877e-3610f3adbb81",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C60",
+      "claim": "ATP binding likely stimulates RecQ binding to and melting of DNA duplex prior to hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ATP binding likely stimulates RecQ binding to and melting of DNA duplex prior to hydrolysis (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "8622196e-ae24-41d3-a81c-cd3ecbffacef",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C61",
+      "claim": "E. coli RecQ helicase was identified as an active helicase based on the minimal force and DNA sequence dependence of duplex unwinding in previous single molecule experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous single molecule experiments, E. coli RecQ helicase was identified as an active helicase based on the minimal force and DNA sequence dependence of duplex unwinding (Manosas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Manosas et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "ee767e33-5e5f-47d5-85de-7e57942b12ab",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C62",
+      "claim": "RecQ unwinds one base-pair per ATP hydrolysis cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechano-chemical coupling is a measure of how many chemical cycles an enzyme completes to take one mechanical step. In the case of RecQ or other helicases, it corresponds to how many ATP molecules are consumed per one base translocation (or base-pair unwound for unwinding). For translocation, RecQ shows a tight coupling close to one nucleotide step per ATP hydrolysis (Sarl\u00f3s et al., 2012). Our study reveals that the mechano-chemical coupling for unwinding maintains one base-pair melting per ATP hydrolysis (Figure 4C), which is also supported by the results of a recent single-molecule florescence study of RecQ unwinding (Lin et al., 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study shown in Figure 4C, supported by citations to Sarl\u00f3s et al., 2012 and Lin et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "c2347fe5-6805-4d35-84d5-a18bffd0bfe8",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C63",
+      "claim": "DNA melting precedes ATP hydrolysis in the proposed kinetic model.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed kinetic model based on our ATP dependent kinetic analysis (Appendix 1; Figure 5\u2014figure supplement 1) suggests that DNA melting precedes ATP hydrolysis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from kinetic modeling based on experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "23d70961-80db-45a2-a07a-ef459450d4cb",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C64",
+      "claim": "ATP binding stabilizes the DNA-RecQ interaction and facilitates DNA melting presumably coupled to an ATP binding-dependent conformational change of RecQ.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, ATP binding stabilizes the DNA-RecQ interaction and facilitates DNA melting presumably coupled to an ATP binding-dependent conformational change of RecQ such as rotation of the helicase domains relative to one another, which explains more frequent backsliding under lower ATP concentration (Bernstein et al., 2003; Manthei et al., 2015; Pike et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation supported by citations to Bernstein et al., 2003; Manthei et al., 2015; Pike et al., 2009.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "56d82c6e-6fa7-4d5a-bdaa-5d55f31afadd",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C65",
+      "claim": "Recent structural results suggest that RecQ binding may melt two base-pairs of DNA before ATP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent structural results suggest that RecQ binding may melt two base-pairs of DNA before ATP binding (Manthei et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Manthei et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "bf46647e-42fe-41b5-a8bb-b386c57edea7",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C66",
+      "claim": "A 'Guanine binding pocket' located in the helicase domain specifically interacts with guanine bases to destabilize G-quadruplex structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas we establish that pausing arises from the stability of DNA duplex, recent work by Voter et. al suggests an alternative mechanism for sequence-dependent pausing. In their work, they identify a 'Guanine binding pocket' located in the helicase domain that specifically interacts with guanine bases to destabilize G-quadruplex structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to work by Voter et al. and is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "1cb311c2-d1be-420b-b5c0-94146bcee8cd",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C67",
+      "claim": "The HRDC regulates the binding orientation of RecQ core to promote disruption of D-loop structures.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the HRDC regulates the binding orientation of RecQ core to promote disruption of D-loop structures, early homologous recombination intermediates (Harami et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Harami et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "874e9536-a6c0-40d8-a503-d232db6a359b",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C68",
+      "claim": "ssDNA binding by the HRDC is not random but occurs at DNA sequences where the helicase core pauses due to the high duplex stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our present study reveals that the HRDC-ssDNA interactions are strongly coupled to DNA sequence-dependent pausing of the RecQ helicase core: ssDNA binding by the HRDC is not random but occurs at DNA sequences where the helicase core pauses due to the high duplex stability (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "22921066-375d-44ef-ad62-1180433c8031",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C69",
+      "claim": "Either a low homology (base-pair mismatches) or low duplex stability (low GC regions) strongly reduces RecQ pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, either a low homology (base-pair mismatches) or low duplex stability (low GC regions) strongly reduces RecQ pausing (Figures 2 and 6B and Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data shown in Figures 2 and 6B and Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "a062d073-f520-4c25-9c98-8f15f1a845da",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C70",
+      "claim": "Increased illegitimate recombination frequencies are detected in vivo upon compromising RecQ HRDC function.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this feature can support discrimination between legitimate and illegitimate recombination events by RecQ helicases, in accordance with the increased illegitimate recombination frequencies detected in vivo upon compromising RecQ HRDC function (Harami et al., 2017; Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Harami et al., 2017; Wang et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "11b9b927-1826-4469-b90f-81d611e64bf1",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C71",
+      "claim": "The HRDC both targets RecQ to D-loop intermediates and orients the enzyme in a configuration favoring D-loop disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously we showed that the HRDC both targets RecQ to D-loop intermediates and orients the enzyme in a configuration favoring D-loop disruption (Harami et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Harami et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "fa6d889a-d436-4119-9219-e3471f36c6dd",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C72",
+      "claim": "RecQ-catalyzed unwinding of long and stable D-loops will be frequently interrupted by HRDC-stabilized pauses that drastically decrease the average unwinding rate.",
+      "claim_type": "EXPLICIT",
+      "source": "RecQ-catalyzed unwinding of long and stable D-loops will be frequently interrupted by HRDC-stabilized pauses that drastically decrease the average unwinding rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation and prediction based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "0b0a709f-2a03-4f50-9241-cd0b240f57e9",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C73",
+      "claim": "RecQ unwinding of short and/or unstable D-loops will proceed rapidly (60\u201380 bp/s) resulting in the efficient disruption of the D-loop before it can be further extended.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, RecQ unwinding of short and/or unstable D-loops will proceed rapidly (60\u201380 bp/s) resulting in the efficient disruption of the D-loop before it can be further extended.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation and prediction based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "72984624-28ce-4025-92c8-ff3bcdaa8bdd",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C74",
+      "claim": "The homology sensing mechanism proposed for E. coli RecQ is potentially applicable to the suppression of illegitimate recombination by BLM.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas this study focused exclusively on E. coli RecQ, the homology sensing mechanism we propose is potentially applicable to the suppression of illegitimate, or so called 'homeologous recombination' by BLM (Wang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extension of the findings, supported by a citation to Wang et al., 2016.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "0a2cf486-c33e-4a0d-ae4e-d17bcf92b449",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C75",
+      "claim": "G-quadruplex structures act as replication road blocks and these regions are recombinational hot spots.",
+      "claim_type": "EXPLICIT",
+      "source": "G-quadruplex structures were shown to act as replication road blocks and these regions were shown to be recombinational hot spots (van Wietmarschen et al., 2018; Rhodes and Lipps, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to van Wietmarschen et al., 2018; Rhodes and Lipps, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "f1a8993d-9ca5-4619-951b-da41c3344ddc",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C76",
+      "claim": "RecQ helicases can efficiently unwind G-quadruplex structures.",
+      "claim_type": "EXPLICIT",
+      "source": "RecQ helicases can efficiently unwind G-quadruplex structures, possibly to aid DNA replication, suppress genome instability and to influence transcription of various genes (Voter et al., 2018; Mendoza et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Voter et al., 2018; Mendoza et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "20fd7a49-542a-43bc-a455-3be67d0f64a1",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C77",
+      "claim": "The HRDC domain of human BLM helicase is essential for efficient, repetitive unwinding of G-quadruplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this idea, the HRDC domain of human BLM helicase was shown to be essential for efficient, repetitive unwinding of G-quadruplexes Chatterjee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Chatterjee et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "6ac961fa-9c03-4643-a1c1-79226206831a",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "claim_id": "C78",
+      "claim": "SSB is displaced by RecQ despite the much higher apparent binding affinity of SSB for ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, single-strand binding protein (SSB) would likely compete with the HRDC for ssDNA binding. However, we recently demonstrated that SSB is displaced by RecQ despite the much higher apparent binding affinity of SSB for ssDNA (Mills et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Mills et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "81bdead9-b2d6-4155-ae31-89d95efda5b5",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The HRDC domain stabilizes intrinsic, sequence-dependent pauses of the RecQ core helicase. RecQWT exhibits frequent pausing at distinct positions along DNA hairpins that correlate strongly with DNA duplex stability (high GC content), while RecQ-dH shows significantly less but statistically identical pause positions. The pause positions from both constructs are linearly correlated with DNA base-pair energy profiles (Pearson's r ~0.95-0.97).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C28 provide converging evidence from single-molecule magnetic tweezers experiments showing sequence-dependent pausing. The statistical correlations (C25, C27) are strong with appropriate quantitative measures. The comparison between RecQWT and RecQ-dH (C20, C28) demonstrates that HRDC stabilizes pauses at positions determined by the core helicase mechanism. The experimental data in Figures 1B and 2 support these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "da4b9a2f-baec-4d65-b75d-c55fcbb37ac4",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RecQ-dH unwinds DNA with a ~5 bp kinetic step in a delayed release mechanism where DNA melting is the rate-limiting step. The 20-fold difference in pause durations suggests multi-base-pair kinetic steps. Computational modeling comparing delayed release versus simultaneous melting models, validated by Na+ concentration dependence experiments, supports a 5 bp delayed release mechanism (\u03c7\u03bd\u00b2 = 0.9\u00d710\u207b\u00b9 vs 1.4\u00d710\u207b\u00b9 for 2 bp simultaneous melting).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 present a coherent mechanistic model supported by computational simulations (Figure 3) and experimental validation through Na+ titration. The \u03c7\u03bd\u00b2 values provide quantitative support for model selection. The inference that melting is rate-limiting (C31) follows logically from the experimental observations and modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "a6ce46a5-3d73-47eb-9479-74640222966b",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Ensemble kinetic experiments using forked DNA substrates with varying GC content reveal a 5 bp kinetic step size for both RecQWT and RecQ-dH. Global fitting with an n-step model yielded smallest \u03c7v\u00b2 values at n=5 bp, and the delayed release model provided better fits (4-5 bp kinetic step) than the simultaneous melting model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 describe ensemble kinetic experiments (Figure 4) that complement the single-molecule studies. The global fitting approach across multiple DNA substrates with different GC content strengthens the conclusion. The consistency with prior work (Lin et al., 2017; Harami et al., 2015) cited in C36 adds support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "230b7d31-02ff-4d06-8cbd-9601ca4b288e",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Direct measurement of kinetic step size using ATP\u03b3S to slow unwinding reveals a 5 bp average kinetic step for RecQ-dH. Step-size analysis using two independent algorithms (T-test and Kerssemakers) converged to 5.2-5.3 \u00b1 0.1 bp at high ATP\u03b3S concentrations. Occasional 2.5 bp steps were observed, consistent with asynchronous release of two 5-nt ssDNA strands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 provide direct experimental evidence for the 5 bp kinetic step through clever use of ATP\u03b3S (Figure 5). The convergence of two independent step-finding algorithms (C41) and the observation of 2.5 bp sub-steps (C43) strengthen the conclusion. The experimental design addresses the technical challenge of measuring steps at normal ATP concentrations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "8dab63b0-4cd9-4423-99ef-8e8b57200b96",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RecQ exhibits tight mechano-chemical coupling with C = 1.0 \u00b1 0.2 bp/ATP, meaning one base-pair is unwound per ATP hydrolyzed. This was determined through global fitting of unwinding rates and pause durations as a function of ATP\u03b3S concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C62 present quantitative measurements of mechano-chemical coupling (Figure 5D and 4C). The tight coupling (1 bp/ATP) is consistent with prior ensemble measurements (Harami et al., 2015; Sarl\u00f3s et al., 2012) and recent single-molecule work (Lin et al., 2017) as cited in C62. The global fitting approach provides robust parameter estimation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "db514391-0bfe-42cb-800a-972b7aaf5b0f",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HRDC-dependent pausing exhibits shuttling behavior (repetitive unwinding/rezipping of 5-10 bp) at long-lived pause positions. RecQWT dwell times show highly non-linear correlation with base-pair stability, while RecQ-dH shows linear correlation. Simple kinetic competition models cannot reproduce this behavior; pause duration distributions for RecQWT require double exponential fits with lifetimes of 1.8 \u00b1 0.3 s and 0.4 \u00b1 0.1 s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 characterize the complex HRDC-dependent pausing mechanism (Figure 6 and supplements). The non-linear amplification (C47) versus linear behavior of RecQ-dH (C48) is well-documented. The failure of simple kinetic models (C49) and requirement for multiple pause states (C50-C51) indicate mechanistic complexity. However, the exact molecular mechanism of non-linear amplification remains incompletely resolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "7657ebd5-709b-402a-81ad-27a4b20956ec",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Introduction of mismatches at specific positions significantly reduces RecQWT pausing at those locations, confirming correlation between pausing and DNA homology. HRDC-ssDNA binding is not random but occurs at sequences where the helicase core pauses due to high duplex stability. Low homology or low GC content strongly reduces pausing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 and C68-C69 provide experimental validation of the homology-sensing hypothesis through mismatch experiments (Figure 6B and supplements). The systematic reduction of peaks in dwell-time histograms upon introduction of mismatches at corresponding positions provides strong evidence for sequence-dependent pausing related to homology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "ae951a4f-971d-4ec7-9cba-ca412a3e1711",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The pronounced pausing of RecQWT at GC-rich sequences results from two amplification steps: (1) a ~5 bp kinetic step that amplifies energy differences linearly, and (2) non-linear amplification through HRDC binding and stabilization of sequence-dependent pauses. Together, these produce >10-fold differences in average unwinding rates between legitimate and illegitimate paired sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 synthesize the mechanistic findings into a coherent model of two-step amplification. The first amplification (C55) is well-supported by the kinetic step size measurements. The second amplification (C56) is supported by the non-linear correlation data (C47). The >10-fold discrimination (C57) follows from the combined effects, though this specific quantification could benefit from more direct measurement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "735b1513-090c-4c13-bad6-a508d7392eab",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The sequence- and geometry-dependent pausing mechanism may underlie homology sensing that allows RecQ to rapidly disrupt unstable (illegitimate) D-loops while stabilizing stable (legitimate) D-loops. Long/stable D-loops will be frequently interrupted by HRDC-stabilized pauses, while short/unstable D-loops will be rapidly unwound at 60-80 bp/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C72-C73 propose a biological function for the observed pausing mechanism. While the mechanistic data (pausing, sequence-dependence, HRDC role) are well-supported, the connection to D-loop discrimination in vivo remains speculative. The model is plausible and consistent with prior in vivo data (C70), but direct demonstration of D-loop discrimination based on this mechanism is not provided. The hairpin substrate geometry may not fully recapitulate D-loop structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "5538b4bd-efff-4714-89c6-32cef8cfaa32",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "RecQ hydrolyzes 5 ATP molecules during a 5 bp kinetic unwinding step with asynchronous release of two 5-nt ssDNA segments. ATP binding likely stimulates RecQ binding and DNA melting prior to hydrolysis, stabilizing the DNA-RecQ interaction through conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 and C63-C64 present a detailed mechanistic model of the ATP-dependent unwinding cycle. C59 is well-supported by the combined evidence from Figures 3-5. C60 and C63-C64 involve mechanistic inferences from ATP-dependent kinetic analysis (Figure 5\u2014supplement 1) and are consistent with structural studies (Bernstein et al., 2003; Manthei et al., 2015; Pike et al., 2009). The model is reasonable but some aspects remain inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "45653fee-263c-4f42-9679-952c69d2a95a",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RecQ helicases are conserved enzymes that promote genomic stability through suppression of illegitimate recombination and resolution of recombination intermediates. The HRDC domain mediates DNA structure-specific activities and contributes to substrate specificity through enhanced ssDNA binding, though it is generally dispensable for basic helicase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C16 provide established background on RecQ helicases supported by extensive citations to prior literature. These are well-accepted facts in the field and provide necessary context for the current study. The claims are appropriately cited and represent accurate summaries of prior knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "f9f66f54-f47e-427a-a58a-68492e497c1e",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work established that HRDC interactions contribute to DNA substrate-geometry dependent binding orientation and unwinding by RecQ, strongly favoring binding to D-loop structures in an orientation promoting disruption of invading strands. HRDC-mediated interactions play a role in suppressing illegitimate recombination in E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C22, C67, C70-C71 summarize prior work by the authors (Harami et al., 2017) and others that provides essential context for the current study. These are appropriately cited and accurately represent the prior findings that motivated the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "df75de5a-f1e5-48d9-b50b-97b3fc331d37",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior single-molecule studies showed RecQ switching between fast and slow unwinding modes (Bagchi et al., 2018) and identified RecQ as an active helicase with minimal sequence dependence (Manosas et al., 2010). Structural studies suggest RecQ may melt 2 bp before ATP binding (Manthei et al., 2015), and a guanine binding pocket may contribute to G-quadruplex unwinding (Voter et al.).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C61, C65-C66 cite relevant prior work that provides context and comparison for the current findings. The citations are appropriate and the summaries are accurate. The authors appropriately note differences between their observations and prior work (e.g., not observing the switching behavior in C58).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "97be81d0-1ad6-4aa1-91a9-60dcfd5d8d9c",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The homology sensing mechanism may be applicable to BLM helicase's suppression of homeologous recombination. RecQ helicases can efficiently unwind G-quadruplex structures, which act as replication roadblocks and recombination hotspots. The HRDC domain of BLM is essential for efficient repetitive unwinding of G-quadruplexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C77 extend the findings to other RecQ family members and biological contexts. C74 is speculative about applicability to BLM, appropriately qualified as \"potentially applicable.\" C75-C77 cite relevant prior work on G-quadruplexes. However, the current study does not directly test these extensions, making them speculative though plausible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    },
+    {
+      "id": "f29975e2-4551-4ce5-bebd-9c1654b392f7",
+      "content_id": "421dd417-cd50-4d5e-a3f2-dee77f54833a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "SSB is displaced by RecQ despite SSB's much higher apparent binding affinity for ssDNA, suggesting RecQ can compete effectively with other ssDNA binding proteins in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 cites prior work (Mills et al., 2017) addressing a potential concern about competition with SSB in vivo. This is appropriately cited and provides relevant context for interpreting the biological significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T11:55:25.078484Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4c539c90-26f8-4722-a7df-90cbe0e9fb85",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "04434d7e-a99f-4e55-bfe4-c81fb1bafe13",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "13e94ccd-0acf-4e74-9d85-aab3dbc84c90",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "78f5ede5-90aa-49f2-9c63-5f446ae4dbe6",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "3695e037-acb2-40ee-8222-073eab82b2f5",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "458757ea-4bb1-4eaa-96ba-75d8cff3f271",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "39099da6-607b-4554-ab58-918eba87bce2",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "8080d1f1-c792-472e-b640-edb94bb32ef5",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "f663c064-ccdd-4c16-b12a-38bcc6447dd3",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "c2f46f9d-ddd2-4e3f-8c53-fac123fae67c",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "0c8b68bc-395e-4a8f-9933-a6f5764f7bb5",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "f149ef05-9cb2-4db9-a47a-919b17f47a57",
+      "result_id": "81bdead9-b2d6-4155-ae31-89d95efda5b5"
+    },
+    {
+      "claim_id": "0aeacf70-7140-443c-9fce-3a21e5ad76a3",
+      "result_id": "da4b9a2f-baec-4d65-b75d-c55fcbb37ac4"
+    },
+    {
+      "claim_id": "340b8d15-07ab-4310-8260-d89b03209978",
+      "result_id": "da4b9a2f-baec-4d65-b75d-c55fcbb37ac4"
+    },
+    {
+      "claim_id": "0a0f8c72-895b-408c-add6-3470c7b75b8d",
+      "result_id": "da4b9a2f-baec-4d65-b75d-c55fcbb37ac4"
+    },
+    {
+      "claim_id": "5d50f0d9-af56-44c0-ab71-2017ebff5e3e",
+      "result_id": "da4b9a2f-baec-4d65-b75d-c55fcbb37ac4"
+    },
+    {
+      "claim_id": "288c9f6f-5508-4661-a9b6-5b5228d3ce11",
+      "result_id": "da4b9a2f-baec-4d65-b75d-c55fcbb37ac4"
+    },
+    {
+      "claim_id": "e22ce408-e814-463e-ba62-000e68f74c58",
+      "result_id": "da4b9a2f-baec-4d65-b75d-c55fcbb37ac4"
+    },
+    {
+      "claim_id": "b9256b3f-9a7e-43ed-8624-46164d97a898",
+      "result_id": "a6ce46a5-3d73-47eb-9479-74640222966b"
+    },
+    {
+      "claim_id": "8fee67a1-9f67-4763-8a60-500ff100303f",
+      "result_id": "a6ce46a5-3d73-47eb-9479-74640222966b"
+    },
+    {
+      "claim_id": "f2784fab-2eee-4ec5-8446-d752ffef2cdf",
+      "result_id": "a6ce46a5-3d73-47eb-9479-74640222966b"
+    },
+    {
+      "claim_id": "9767cb3f-6f54-433b-bca8-08c422c16f98",
+      "result_id": "230b7d31-02ff-4d06-8cbd-9601ca4b288e"
+    },
+    {
+      "claim_id": "be472176-d44e-40e1-8d9c-873ecfe817cd",
+      "result_id": "230b7d31-02ff-4d06-8cbd-9601ca4b288e"
+    },
+    {
+      "claim_id": "8ad4ac4a-6ce4-45f9-b2f4-8a6f74b50d5f",
+      "result_id": "230b7d31-02ff-4d06-8cbd-9601ca4b288e"
+    },
+    {
+      "claim_id": "d4858437-1b90-4589-bebc-2a026efdc65d",
+      "result_id": "230b7d31-02ff-4d06-8cbd-9601ca4b288e"
+    },
+    {
+      "claim_id": "2fb54ee9-b050-4fc3-9df0-1dd47a8be4d1",
+      "result_id": "230b7d31-02ff-4d06-8cbd-9601ca4b288e"
+    },
+    {
+      "claim_id": "a37167db-4c2c-4842-9f01-e8c1df24601b",
+      "result_id": "230b7d31-02ff-4d06-8cbd-9601ca4b288e"
+    },
+    {
+      "claim_id": "93f640b3-64f8-47a4-8885-b783841c180d",
+      "result_id": "8dab63b0-4cd9-4423-99ef-8e8b57200b96"
+    },
+    {
+      "claim_id": "ee767e33-5e5f-47d5-85de-7e57942b12ab",
+      "result_id": "8dab63b0-4cd9-4423-99ef-8e8b57200b96"
+    },
+    {
+      "claim_id": "98a614bf-5c62-41cc-a3c5-bccd53a76983",
+      "result_id": "db514391-0bfe-42cb-800a-972b7aaf5b0f"
+    },
+    {
+      "claim_id": "bfe10a43-b505-489b-a206-64573a2769ca",
+      "result_id": "db514391-0bfe-42cb-800a-972b7aaf5b0f"
+    },
+    {
+      "claim_id": "5b11da50-4818-4262-81b1-650c41628000",
+      "result_id": "db514391-0bfe-42cb-800a-972b7aaf5b0f"
+    },
+    {
+      "claim_id": "73ab3853-a143-4d51-ae4e-562159ff3d45",
+      "result_id": "db514391-0bfe-42cb-800a-972b7aaf5b0f"
+    },
+    {
+      "claim_id": "0bdfc372-6c10-4047-b4b2-5ea068a7dc48",
+      "result_id": "db514391-0bfe-42cb-800a-972b7aaf5b0f"
+    },
+    {
+      "claim_id": "5ec29d27-2b6b-4424-9c1f-fc04c9469268",
+      "result_id": "db514391-0bfe-42cb-800a-972b7aaf5b0f"
+    },
+    {
+      "claim_id": "1cb3cf13-7330-418c-a199-48422f846cb5",
+      "result_id": "db514391-0bfe-42cb-800a-972b7aaf5b0f"
+    },
+    {
+      "claim_id": "a8a12667-785b-48c4-b4bc-d91ed29fd251",
+      "result_id": "7657ebd5-709b-402a-81ad-27a4b20956ec"
+    },
+    {
+      "claim_id": "71a4ce92-9a6b-452d-8679-cbbe2f8e2a64",
+      "result_id": "7657ebd5-709b-402a-81ad-27a4b20956ec"
+    },
+    {
+      "claim_id": "874e9536-a6c0-40d8-a503-d232db6a359b",
+      "result_id": "7657ebd5-709b-402a-81ad-27a4b20956ec"
+    },
+    {
+      "claim_id": "22921066-375d-44ef-ad62-1180433c8031",
+      "result_id": "7657ebd5-709b-402a-81ad-27a4b20956ec"
+    },
+    {
+      "claim_id": "b2804e58-d9da-4ac5-97e4-440414363b5e",
+      "result_id": "ae951a4f-971d-4ec7-9cba-ca412a3e1711"
+    },
+    {
+      "claim_id": "34dacecd-0d53-4b49-82ae-9952bf769b50",
+      "result_id": "ae951a4f-971d-4ec7-9cba-ca412a3e1711"
+    },
+    {
+      "claim_id": "6533249a-224c-4183-b1ea-ac0d923b4a27",
+      "result_id": "ae951a4f-971d-4ec7-9cba-ca412a3e1711"
+    },
+    {
+      "claim_id": "f18d146b-cb39-4db0-a66e-38acf4bfb4cd",
+      "result_id": "ae951a4f-971d-4ec7-9cba-ca412a3e1711"
+    },
+    {
+      "claim_id": "bc9cdaee-3baf-423f-a620-0c54f679cb4a",
+      "result_id": "735b1513-090c-4c13-bad6-a508d7392eab"
+    },
+    {
+      "claim_id": "fa6d889a-d436-4119-9219-e3471f36c6dd",
+      "result_id": "735b1513-090c-4c13-bad6-a508d7392eab"
+    },
+    {
+      "claim_id": "0b0a709f-2a03-4f50-9241-cd0b240f57e9",
+      "result_id": "735b1513-090c-4c13-bad6-a508d7392eab"
+    },
+    {
+      "claim_id": "f4057bef-d4ed-4743-9900-c3721c596ef7",
+      "result_id": "5538b4bd-efff-4714-89c6-32cef8cfaa32"
+    },
+    {
+      "claim_id": "b14c5723-acfb-4c57-877e-3610f3adbb81",
+      "result_id": "5538b4bd-efff-4714-89c6-32cef8cfaa32"
+    },
+    {
+      "claim_id": "c2347fe5-6805-4d35-84d5-a18bffd0bfe8",
+      "result_id": "5538b4bd-efff-4714-89c6-32cef8cfaa32"
+    },
+    {
+      "claim_id": "23d70961-80db-45a2-a07a-ef459450d4cb",
+      "result_id": "5538b4bd-efff-4714-89c6-32cef8cfaa32"
+    },
+    {
+      "claim_id": "de300319-a709-4957-93d2-2aa2452c48c0",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "c1947380-d7dc-402c-9b3c-fcf24cbde2a5",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "6b959a17-9cea-4493-92ad-78886aaece7c",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "ad054e70-d2e7-436e-8855-82cbdb8931be",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "12951e5b-b444-422f-bd3b-95731c6fb39d",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "9820cadc-7a51-458e-a6ad-1b0eb750665b",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "0a41a0aa-02e7-4f28-bbfe-d41643b16c69",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "5cb6530c-bdb5-434d-85c4-ade535647957",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "2888ca52-fd9e-4663-9226-ab2d73c015aa",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "356ca651-0d0e-4ed7-803c-d52f562be1e6",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "0a26ead8-d67b-4f68-8471-aba2565c1069",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "f316d250-cf27-4308-9e92-9dbb6a0c8c46",
+      "result_id": "45653fee-263c-4f42-9679-952c69d2a95a"
+    },
+    {
+      "claim_id": "b3a85464-335d-4122-87a0-4861bacb12f2",
+      "result_id": "f9f66f54-f47e-427a-a58a-68492e497c1e"
+    },
+    {
+      "claim_id": "744d0ec9-480a-48d4-b5cc-0b83a9ebcfee",
+      "result_id": "f9f66f54-f47e-427a-a58a-68492e497c1e"
+    },
+    {
+      "claim_id": "c7d560f8-13a9-48fc-b1df-1bdd1b48153f",
+      "result_id": "f9f66f54-f47e-427a-a58a-68492e497c1e"
+    },
+    {
+      "claim_id": "1cb311c2-d1be-420b-b5c0-94146bcee8cd",
+      "result_id": "f9f66f54-f47e-427a-a58a-68492e497c1e"
+    },
+    {
+      "claim_id": "a062d073-f520-4c25-9c98-8f15f1a845da",
+      "result_id": "f9f66f54-f47e-427a-a58a-68492e497c1e"
+    },
+    {
+      "claim_id": "11b9b927-1826-4469-b90f-81d611e64bf1",
+      "result_id": "f9f66f54-f47e-427a-a58a-68492e497c1e"
+    },
+    {
+      "claim_id": "54ba6472-6faf-496f-af80-2883e41490e8",
+      "result_id": "df75de5a-f1e5-48d9-b50b-97b3fc331d37"
+    },
+    {
+      "claim_id": "8622196e-ae24-41d3-a81c-cd3ecbffacef",
+      "result_id": "df75de5a-f1e5-48d9-b50b-97b3fc331d37"
+    },
+    {
+      "claim_id": "56d82c6e-6fa7-4d5a-bdaa-5d55f31afadd",
+      "result_id": "df75de5a-f1e5-48d9-b50b-97b3fc331d37"
+    },
+    {
+      "claim_id": "bf46647e-42fe-41b5-a8bb-b386c57edea7",
+      "result_id": "df75de5a-f1e5-48d9-b50b-97b3fc331d37"
+    },
+    {
+      "claim_id": "72984624-28ce-4025-92c8-ff3bcdaa8bdd",
+      "result_id": "97be81d0-1ad6-4aa1-91a9-60dcfd5d8d9c"
+    },
+    {
+      "claim_id": "0a2cf486-c33e-4a0d-ae4e-d17bcf92b449",
+      "result_id": "97be81d0-1ad6-4aa1-91a9-60dcfd5d8d9c"
+    },
+    {
+      "claim_id": "f1a8993d-9ca5-4619-951b-da41c3344ddc",
+      "result_id": "97be81d0-1ad6-4aa1-91a9-60dcfd5d8d9c"
+    },
+    {
+      "claim_id": "20fd7a49-542a-43bc-a455-3be67d0f64a1",
+      "result_id": "97be81d0-1ad6-4aa1-91a9-60dcfd5d8d9c"
+    },
+    {
+      "claim_id": "6ac961fa-9c03-4643-a1c1-79226206831a",
+      "result_id": "f29975e2-4551-4ce5-bebd-9c1654b392f7"
+    }
+  ],
+  "comparisons": []
+}

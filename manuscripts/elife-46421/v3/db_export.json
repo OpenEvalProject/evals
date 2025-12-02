@@ -1,0 +1,2143 @@
+{
+  "submission": {
+    "id": "109d58e2-1dd3-494c-9354-72ed21fea3de",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T10:52:16.802356Z",
+    "updated_at": "2025-12-02T10:52:16.802356Z"
+  },
+  "content": [
+    {
+      "id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "submission_id": "109d58e2-1dd3-494c-9354-72ed21fea3de",
+      "content_type": "manuscript",
+      "content_text": "# Imaging neuropeptide release at synapses with a genetically engineered reporter\n\n## Authors\n\n- Keke Ding<sup>1</sup> ([ORCID: 0000-0002-5261-4843](https://orcid.org/0000-0002-5261-4843))\n- Yifu Han<sup>2</sup> ([ORCID: 0000-0002-1201-654X](https://orcid.org/0000-0002-1201-654X))\n- Taylor W Seid<sup>1</sup>\n- Christopher Buser<sup>4</sup> ([ORCID: 0000-0002-4379-3878](https://orcid.org/0000-0002-4379-3878))\n- Tomomi Karigo<sup>1</sup>\n- Shishuo Zhang<sup>1</sup>\n- Dion K Dickman<sup>2</sup> ([ORCID: 0000-0003-1884-284X](https://orcid.org/0000-0003-1884-284X))\n- David J Anderson<sup>1</sup> ([ORCID: 0000-0001-6175-3872](https://orcid.org/0000-0001-6175-3872)) \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States\n2. Department of Neurobiology University of Southern California Los Angeles United States\n3. Neuroscience Graduate Program University of Southern California Los Angeles United States\n4. Oak Crest Institute of Science Monrovia United States\n5. Howard Hughes Medical Institute, California Institute of Technology Pasadena United States\n6. Tianqiao and Chrissy Chen Institute for Neuroscience, California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nResearch on neuropeptide function has advanced rapidly, yet there is still no spatio-temporally resolved method to measure the release of neuropeptides in vivo. Here we introduce Neuropeptide Release Reporters (NPRRs): novel genetically-encoded sensors with high temporal resolution and genetic specificity. Using the Drosophila larval neuromuscular junction (NMJ) as a model, we provide evidence that NPRRs recapitulate the trafficking and packaging of native neuropeptides, and report stimulation-evoked neuropeptide release events as real-time changes in fluorescence intensity, with sub-second temporal resolution.\n\n## Introduction\n\nNeuropeptides (NPs) exert an important but complex influence on neural function and behavior (H\u00f6kfelt et al., 2000; Insel and Young, 2000; N\u00e4ssel and Winther, 2010; Bargmann and Marder, 2013). A major lacuna in the study of NPs is the lack of a method for imaging NP release in vivo, with subcellular spatial resolution and subsecond temporal resolution. Available techniques for measuring NP release include microdialysis (Kendrick, 1990), antibody-coated microprobes (Schaible et al., 1990) and GFP-tagged propeptides visualized either by standard fluorescence microscopy (van den Pol, 2012), or by TIRF imaging of cultured neurons (Xia et al., 2009). In Drosophila, a fusion between rat Atrial Natriuretic Peptide/Factor (ANP/F) and GFP was used to investigate neuropeptide trafficking at the fly neuromuscular junction (NMJ) (Rao et al., 2001). Release was measured indirectly, as a decrease in ANP-GFP fluorescence intensity at nerve terminals reporting residual unreleased peptide, on a time-scale of seconds (Wong et al., 2015). None of these methods combines NP specificity, genetically addressable cell type-specificity, high temporal resolution and applicability to in vivo preparations (Supplementary file 1). A major challenge is to develop a tool that encompasses all these features for direct, robust measurement of NP release in vivo.\n\n## Results\n\nNeuropeptides are synthesized as precursors, sorted into dense core vesicles (DCVs), post-translationally modified and cleaved into active forms prior to release (Taghert and Veenstra, 2003). We reasoned that an optimal in vivo real-time NP release reporter should include (1) a reporter domain that reflects the physico-chemical contrast between the intravesicular milieu and the extracellular space (Figure 1\u2014figure supplement 1A); and (2) a sorting domain that ensures its selective trafficking into DCVs (Figure 1\u2014figure supplement 1b). The NP precursor may function as the sorting domain, suggested by studies of DCV fusion using pIAPP-EGFP (Barg et al., 2002) and NPY-pHluorin (Zhu et al., 2007) in cultured neurons, or ANP-GFP in Drosophila (Rao et al., 2001). We therefore developed a pipeline to screen various transgenes comprising NP precursors fused at different sites to fluorescent reporters, in adult flies (Figure 1\u2014figure supplement 1B\u2013C). A total of 54 constructs were tested. We found that optimal trafficking was achieved by substituting the reporter for the NP precursor C-terminal domain that follows the final peptide (Figure 1\u2014figure supplement 1B). In order to maintain covalent linkage with the reporter domain, we removed the dibasic cleavage site C-terminal to the final peptide.\n\nThe DCV lumen has lower pH and free calcium (pH\u00a0=\u00a05.5\u20136.75, [Ca2+]~30 \u00b5M) compared to the extracellular space (pH\u00a0=\u00a07.3, [Ca2+]~2 mM) (Mitchell et al., 2001; Sturman et al., 2006). These differences prompted us to test validated sorting domains in a functional ex vivo screen using either pH-sensitive fluorescent proteins (Miesenb\u00f6ck et al., 1998) or genetically-encoded calcium indicators (GECIs) (Tian et al., 2012; Lin and Schnitzer, 2016)\u00a0(Figure 1\u2014figure supplement 1A\u2013D). Reporters based on pHluorins (Miesenb\u00f6ck et al., 1998) did not perform well in our hands, therefore we focused on GCaMP6s (Chen et al., 2013). The calcium sensitivity threshold of GCaMP6s is below the calcium concentration in both DCVs and the extracellular space. However, GCaMP6s fluorescence is quenched in the acidic DCV lumen (Barykina et al., 2016), enabling it to function as a dual calcium/pH indicator (Figure 1A). These key properties should boost the contrast between GCaMP6s fluorescence in unreleased vs. released DCVs, potentially allowing us to trace NP release at the cellular level in vivo.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic illustrating the principle of NPRRs (Neuropeptide Release Reporters). NPRR molecules in the DCV lumen (low pH/low calcium, left) exhibit increased fluorescence when released by fusion into the extracellular space (neutral pH/high calcium, right). NPRR fluorescent signal is expected to decay following diffusion into the synaptic cleft. New NPRR-containing DCVs are produced by synthesis and transport from the soma, not by recycling. NP: Neuropeptide. DCV: Dense Core Vesicle. SV: Synaptic Vesicle. (B) Distinct motor neuron subtypes at the Drosophila NMJ (muscle 12/13) have different proportions of DCVs vs. SVs. The GAL4 driver R57C10-Gal4 (nsyb-GAL4) labels all subtypes, while R20C11-GAL4 selectively labels only Type III neurons, which lack SVs (\u2018Type III-GAL4\u2019). Light gray circles, black lines and dark gray shading represent boutons, inter-bouton intervals and subsynaptic reticulum respectively. The studies in this paper focus on Type Ib neurons and Type III neurons (in red rectangles). (C) Triple immunolabeling for GFP (green), Bursicon (blue) and vGluT (red), in flies containing nsyb-GAL4 driving UAS-GCaMP6s (upper), or NPRRANP (lower). Type Ib and Type III boutons are indicated. Scale bar, 5 \u00b5m. Inset image (NPRRANP, a-GFP channel) shows details of puncta distribution of NPRRANP in Type Ib neuron. Scale bar, 2 \u00b5m. (D) TEM images of boutons immunolabeled with anti-GFP (5 nm gold particle-conjugated) to detect nsyb>NPRRANP-GFP, which has an identical structure to NPRRANP, but is a GFP rather than GCaMP6s fusion to improve antigenicity (see Figure 1\u2014figure supplement 4). Note strong labeling in DCVs (arrows) and the neuronal plasma membrane (arrowheads). Scale bar, 200 nm. Lower panel shows representative images of labeled DCVs. Scale bar,100 nm. (E) Quantification for TEM images in (D).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A series of reporter-neuropeptide precursor fusions were designed, codon-optimized for Drosophila, cloned into expression vectors under the control of the GAL4 upstream activator sequence (UAS), and used to generate transgenic flies. (A) Candidate reporters interrogated included (constitutive) fluorescent reporters, genetically encoded calcium indicators (GECI) and pH indicators (pHluorins). (B) Sorting domain candidates included different truncated versions of rat Atrial Natriuretic Peptide (ANP; single-precursor-single-peptide) and Drosophila tachykinin (dTK; single-precursor-multiple-peptide) precursors. 52 constructs were built and injected. 44 of 54 were successfully integrated as transgenic lines, while eight were excluded due to lethality or unstable expression. (C\u2013D) Candidate UAS-NPRR lines were crossed with an NPF-Gal4 driver line and selected based on their expression in NPF terminals in the adult fly brain. The raw fluorescence intensity of each NPRR candidate was measured using the same microscope parameters (laser power, HV, offset value). 14 candidates passed this screening. (C) We screened the performance of difference NPRRs (signal-to-noise contrast) by measuring fluorescence before and immediately after 70 mM high-potassium challenge in an ex vivo explant preparation of adult fly brains. The post/pre KCl fluorescence ratio is defined as \u0394F/F. We arbitrarily set the threshold as 100%. 2 NPRRs with highest \u0394F/F passed the final round of screening. Red asterisks indicate the candidates selected for the studies in Figure 2 and Figure 3. Blue asterisk indicates original ANP-GFP fusion)\u00a0(Burke et al., 1997; Rao et al., 2001).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Membrane-bound mCD8::GFP fusion (A), cytosolic GCaMP6s (B) and NPRRANP (C) were expressed pan-neuronally in the larval NMJ and stained for both ANP (red) and NPRR (green, anti-GFP). (C) Note co-localization of ANP and GFP. Scale bar, 5 \u00b5m.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** A GAL4 line (R20C11-GAL4, named Type III-GAL4 in this report) allows specific expression in Type III neurons. Expression patterns of (A) conventional GCaMP, (B) membrane-bound GFP, (C) NPRRdTK and (D) NPRRANP using Type III-GAL4. Arrows indicate boutons in Type III neurons, which contain the neuropeptide Bursicon. Note that anti-vGluT stains other types of motor neurons, which are not labeled by the Type III-specific driver used in this experiment. Scale bar, 5 \u00b5m.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** NPRRANP (labeled as NPRRANP-GCaMP6s) (A) and NPRRANP-GFP (B) were expressed pan-neuronally in the larval NMJ and double immune-labeled with antibodies to vGluT (red) and GFP (green). Note that the distribution of GFP signal is similar whether the reporter fusion is GCaMP6s (A) or GFP (B). Scale bar, 5 \u00b5m.\n\nWe sought to test several NP precursor-GCaMP6s fusion proteins, called NPRRs (NeuroPeptide Release Reporters; unless otherwise indicated all NPRRs refer to fusions with GCaMP6s), in an intact preparation using electrical stimulation to evoke release. Initially for proof-of-principle experiments, we used the Drosophila larval NMJ to test NPRRANP, a GCaMP6s fusion with rat ANP (Burke et al., 1997). NMJ terminals are large, individually identifiable, and easy to image and record. In particular, boutons on muscle 12/13 are diverse -- Type Ib and Type Is boutons contain mostly synaptic vesicles and few DCVs, while Type III boutons contain an abundance of DCVs but no synaptic vesicles (Menon et al., 2013); moreover, Type III-specific GAL4 drivers are available (Koon and Budnik, 2012) (Figure 1B).\n\nExpression of NPRRANP pan-neuronally (under the control of nsyb-GAL4) followed by double immuno-staining for ANP and GCaMP (anti-GFP) indicated that the sorting domain and the reporter domains showed a similar localization in Type III neurons (Figure 1\u2014figure supplement 2). Moreover, the distribution of NPRRANP overlapped that of Bursicon (Figure 1\u2014figure supplement 3D), an NP that is endogenously expressed in Type III neurons (Loveall and Deitcher, 2010). Both GCaMP and Bursicon immunoreactivity were strongest within boutons, consistent with the known subcellular localization of DCVs (Gorczyca and Budnik, 2006).\n\nGlutamate is the only known canonical neurotransmitter used at the larval NMJ (Menon et al., 2013). This allowed visualization of the subcellular localization of small synaptic vesicles (SV) by immuno-staining for vGluT, a vesicular glutamate transporter (Fremeau et al., 2001; Kempf et al., 2013). In Type Ib neurons (which contain relatively few DCVs relative to SVs [Menon et al., 2013]), vGluT staining was observed as patches with\u00a0a dim center, which may reflect clustered SVs, while NPRRANP immunoreactivity was seen in dispersed, non-overlapping punctae (Figure 1C, \u03b1-GFP, inset). In Type III neurons, NPRRs were strongly expressed but no vGluT immunoreactivity was detected (Figure 1C). The subcellular distribution of this NPRR in larval NMJ neurons, therefore, is similar to that of other DCV-targeted markers previously used in this system (Rao et al., 2001; Shakiryanova et al., 2006), and appears to reflect exclusion from SVs.\n\nThe diffraction limit of light microscopy precluded definitive co-localization of NPRRs in DCVs. Therefore, we employed Immuno-Electron microscopy (Immuno-EM) to investigate the subcellular localization of NPRRs at the nanometer scale. To maximize antigenicity for Immuno-EM, we generated constructs that replaced GCaMP6s with GFP (NPRRANP-GFP;). NPRRANP-GFP showed dense labeling in association with DCVs (Figure 1D, arrows), where the average number of gold particles/\u00b5m2 was substantially and significantly higher than in neighboring bouton cytoplasm (DCV/Bouton\u00a0~\u00a014.26) (Figure 1E, Supplementary file 2). Taken together, these data indicate that NPRRANP-GFP is localized to DCVs. By extension, they suggest that NPRRANP-GCaMP6s (which has an identical structure to NPRRANP-GFP except for the modifications that confer calcium sensitivity) is similarly packaged in DCVs. While these two reporters show indistinguishable distributions by immunofluorescence (Figure 1\u2014figure supplement 4), we cannot formally exclude that the substitution of GCaMP for GFP may subtly alter subcellular localization of the NPRR in a manner undetectable by light microscopy.\n\nTo measure the release of NPRRs from DCVs, we next expressed NPRRANP in Type III neurons using a specific GAL4 driver for these cells (Koon and Budnik, 2012) (Figure 2E and Figure 1\u2014figure supplement 3D). We delivered 4 trials of 70 Hz electrical stimulation to the nerve bundle, a frequency reported to trigger NP release as measured by ANF-GFP fluorescence decrease (Rao et al., 2001; Shakiryanova et al., 2006), and used an extracellular calcium concentration that promotes full fusion mode (Al\u00e9s et al., 1999). This stimulation paradigm produced a relative increase in NPRRANP fluorescence intensity (\u0394F/F), whose peak magnitude increased across successive trials (Figure 2A, red bars and 2D; Video 1; Figure 2\u2014figure supplement 1, A1 vs. A7). Responses in each trial showed a tri-phasic temporal pattern: (1) In the \u2018rising\u2019 phase, NPRRANP \u2206F/F peaked 0.5\u20135 secs after stimulation onset, in contrast to the virtually instantaneous peak seen in positive control specimens expressing conventional GCaMP6s in Type III neurons (Figure 2A\u2013B). The NPRRANP latency to peak was similar to the reported DCV fusion latency following depolarization in hippocampal neurons (Xia et al., 2009). This delay is thought to reflect the kinetic difference between calcium influx and DCV exocytosis due to the loose association between DCVs and calcium channels (Xia et al., 2009). (2) In the \u2018falling\u2019 phase, NPRRANP \u2206F/F began to decline 1\u20135 s before the termination of each stimulation trial, presumably reflecting depletion of the available pool of releasable vesicles. In contrast, GCaMP6s fluorescence did not return to baseline until after stimulation offset (Figure 2A\u2013B). (3) Finally, unlike GCaMP6s, NPRRANP exhibited an \u2018undershoot\u2019 (\u2206F/F below baseline) during the post-stimulation intervals, followed by a \u2018recovering\u2019 phase (Figure 2A; Figures 2C,I1\u20134). This undershoot may reflect dilution of released fluorescent NPRR molecules by diffusion into the synaptic cleft (van den Pol, 2012), while recovery may reflect DCV replenishment in the boutons from vesicles proximal to the imaged release site.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig2-v3.jpg)\n\n**Figure 2.:** (A) Trace from a representative experiment showing changes in NPRRANP fluorescence intensity (\u2206F/F) in Type III motor neurons at the larval NMJ evoked by electrical stimulation. BG: background. S1-S4: Stimulation trials 1\u20134. I1-I4: Inter-stimulation Intervals (ISIs) 1\u20134. Green line: \u2206F/F averaged across all boutons in the field of view. Gray shading: s.e.m envelope. Red bar: electrical stimulation trials (70 Hz). The three typical phases of the response are indicated in S4. The peak height of the response on the first trial is characteristically lower (see also (D)), and may reflect competition with unlabeled DCVs in the readily releasable pool. (B) \u0394F/F traces in control flies expressing cytoplasmic GCaMP6s in Type III neurons. (C) Integrated NPRRANP \u0394F/F values during trials S1-4 and intervals I1-4. A.U.: arbitrary units. n\u00a0=\u00a08. ***, p<0.001. (D) Average NPRRANP \u0394F/F peak heights for trials S1-4. n\u00a0=\u00a08. *, p<0.05. Plotted values in (C\u2013D) are mean\u00a0\u00b1\u00a0s.e.m. (E1\u2013E2) Representative selection of ROIs (yellow). Details see Materials and methods. Scale bar, 5 \u00b5m. (F) NPRRANP \u0394F/F response are abolished in Type III GAL4>UAS NPRRANP flies bearing UAS-TNT (F1) but not UAS-TNTimp (F2). (G) Average peak heights of NPRRANP \u0394F/F in combined stimulation trials (S1-4) from (F). ****, p<0.0001. (H) Average \u2018undershoot\u2019, defined as the integrated \u0394F/F during ISIs I1-4 (see (C)). In (C\u2013D) and (G\u2013H).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative still frames (A1\u2013A12) from video recordings of NPRRANP-expressing Type III neurons at the larval NMJ. \u2018On\u2019 (A2,4,7,10) represents the onset of electrical pulses. Color bar: Raw fluorescence intensity. Scale bar, 50 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Left: Segmentation of Type III neurons into boutons (orange) and inter-bouton intervals (IBIs, red). Right: Schematic illustrating DCV distribution in Type III neurons, based on photomicrograph to the left. Green dots, DCVs. (B) Average time-integrated ratio of \u0394F/F in boutons/IBIs (Materials and Methods), within each stimulation periods. n.s., not significant. *, p<0.05. ***, p<0.001. ****, p<0.0001.(C) TNT does not affect GCaMP6s \u0394F/F kinetics. n\u00a0=\u00a06\u20137. GCaMP6s peak magnitudes were reduced slightly in TNT (C1) in comparison to TNTimp (C2) preparations, perhaps reflecting partial vulnerability of the cytosolic GCaMP6s reporter to TNT-mediated cleavage and degradation. NPRRs are expected to be protected from TNT by the DCV membrane.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A1, A2) Tetanus toxin (TNT) blocks vesicle fusion by cleavage of n-synaptobrevin (n-syb).\n\n![Video 1.](https://cdn.elifesciences.org/articles/46421/elife-46421-video1.mp4.jpg)\n\n**Video 1.:** Representative video recording of NPRRANP-expressing Type III neurons at the larval NMJ. In the preparation, the Type III neuron was stimulated as described in Figure 2A.\n\nBecause NPRRANP fluorescence was preferentially accumulated within boutons, we asked whether these regions contributed to \u2206F/F peaks more significantly than the inter-bouton intervals (IBIs). To do this, we partitioned the processes into boutons and IBI fields (Figure 2\u2014figure supplement 2A), and compared the \u2206F/F in these regions during stimulation trials. The time-averaged ratio of bouton/IBI \u0394F/F (see Materials and Methods) was significantly higher for NPRRANP than for GCaMP6s, particularly during later stimulation trials (Figure 2\u2014figure supplement 2B, green bars, S2-4). This contrast indicates that NPRRANP signals are preferentially observed in boutons, where DCVs are located, and do not reflect differences in cytoplasmic free Ca2+ levels between these regions as detected by GCaMP6s.\n\nTo test definitively if NPRRANP \u2206F/F signals are dependent upon NP release, we blocked vesicle fusion at terminals of Type III neurons using expression of tetanus toxin light chain (TNT) (Sweeney et al., 1995), a protease that cleaves n-synaptobrevin, a v-snare required for DCV fusion (Figure 2\u2014figure supplement 3) (Xu et al., 1998). As a control, we used impotent TNT (TNTimp), a reduced activity variant (Sweeney et al., 1995). TNT expression completely abolished stimulation-induced \u2206F/F increases from NPRRANP, while TNTimp did not (Figure 2F). Further analysis revealed that both the \u2206F/F peaks and inter-stimulation undershoots were diminished by TNT (Figure 2G\u2013H). In contrast, neither TNT nor TNTimp affected the kinetics of GCaMP6s signals in Type III neurons (Figure 2\u2014figure supplement 2C), which report cytosolic Ca2+ influx. Taken together, these data support the idea that NPRRANP signals specifically reflect DCV release.\n\nANP is a rat NP that lacks a Drosophila homolog (Rao et al., 2001). To determine whether our method could be applied to detect the release of a specific, endogenous fly NP, we tested NPRRdTK, one of 6 different reporter variants we initially generated from the Drosophila neuropeptide precursor, DTK (Figure 1\u2014figure supplement 1B). In contrast to ANP which encodes a single peptide, DTK yields multiple NP derivatives (Winther et al., 2003). Light microscopy (Figure 3A) and Immuno-EM (Figure 3B, arrows) confirmed that NPRRdTK, like NPRRANP, was localized to DCVs (DCV/bouton\u00a0~\u00a022.19, Figure 3C). Using the Type III-specific GAL4 driver to express NPRRdTK and the same stimulation protocol as used for NPRRANP, the basic tri-phasic response profile was also observed (Figure 3D). However, peak heights and baseline fluorescence fell progressively with successive stimulation trials (Figure 3E), in contrast to NPRRANP where the first peak and undershoot were lower (Figure 2C\u2013D). The reason for this difference is currently unclear.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig3-v3.jpg)\n\n**Figure 3.:** (A) Triple immunolabeling for GFP (green), Bursicon (blue) and vGluT (red) in Type III-GAL4>\u00a0UAS NPRRdTK flies. Scale bar, 5 \u00b5m. (B) TEM images of boutons immunolabeled against GFP (5 nm gold) in nsyb-GAL4>UAS NPRRdTK-GFP flies. Note strong labeling in DCVs (arrows) and bouton plasma membrane (arrowheads). Scale bar, 200 nm. Lower panel shows representative images of labeled DCVs. Scale bar,100 nm. (C) Quantification of TEM images in (B). (D) NPRRdTK \u0394F/F curve; stimulation conditions as in Figure 2A. (E) Average NPRRdTK \u0394F/F peak height above pre-stimulation baseline (corrected; see Materials and methods) for stimulation trials S1-4. n\u00a0=\u00a06. **, p<0.01.\n\nWe next investigated the relationship between NPRR signal and stimulation intensity, by delivering to the Type III neurons a series of low to high frequency electrical stimuli (1\u201370 Hz; Levitan et al., 2007) while imaging the nerve terminals. For direct comparison of NPRR responses across different preparations, we applied a posteriori normalization of fluorescent peaks in each trial to the highest response obtained among all trials. For both NPRRANP and NPRRdTK (Figure 4A\u2013B), the peak responses showed a positive correlation with stimulation frequency, analogous to that observed using cytosolic GCaMP6s (Figure 4C). In Type III neurons, the responses of both NPRRs to stimulation frequencies\u00a0<\u00a030 Hz (1,5,10,20 Hz) were not statistically significant from zero. NPRRANP showed a higher sensitivity to high stimulation frequencies (30 Hz: 18.14%, 50 Hz: 82.40% Normalized peak \u2206F/F), while NPRRdTK showed a higher stimulation threshold and lower sensitivity (30 Hz: 3.57%, 50 Hz: 24.67% Normalized peak \u2206F/F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig4-v3.jpg)\n\n**Figure 4.:** For each preparation, a series of stimulation trials were delivered at frequencies from 1 Hz to 70 Hz, as indicated. In-stimulation response peaks were normalized to 70 Hz. The normalized peaks of NPRRs or calcium responses (measured with cytosolic GCaMP6s) were pooled and plotted for both Type III (A-C) and Type Ib (D-F) neurons. Responses were compared to zero. n\u00a0=\u00a06\u201312. n.s., not significant. *, p<0.05. **, p<0.01. ***, p<0.001. ****, p<0.0001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Normalized \u0394F/F peaks in at 30 Hz (A) and 50 Hz (B) electrical stimulation in Figure 4A,B,D,E are replotted and compared. n\u00a0=\u00a06\u20137. *, p<0.05. **, p<0.01. n.s., not significant.\n\nWe next investigated whether the relatively high stimulation frequency required to observe significant responses with NPRRs was a function of the reporters, or rather of the cell class in which they were tested. To do this, we expressed both NPRRs in Type Ib neurons, a class of motor neurons that contains both SVs and DCVs (Figure 1B, Figure 4D\u2013F), and performed stimulation frequency titration experiments. Strikingly, in Type Ib neurons, significant increases in \u2206F/F could be observed at frequencies as low as 10 Hz (Figure 4D,E; NPRRANP @ 20 Hz: 12.50%, NPRRdTK @ 20 Hz: 17.67% normalized peak \u2206F/F). The reason for the difference in NPRR threshold between Type III and Type Ib neurons is unknown, but parallels their difference in GCaMP6s response to electrical stimulation (Figure 4C vs.\u00a0Figure 4F).\n\nNotably, although NPRRANP and NPRRdTK presented distinct response profiles in Type III neurons, their performance in Type Ib neurons was more similar (Figure 4A vs. Figure 4B; cf. Figure 4D vs. Figure 4E). In summary, the differences in performance we observed between the two NPRRs appeared to be specific to Type III neurons, and were minor in comparison to the differences in performance of both reporters between the two cell classes. The reason for the differences between NPRRANP and NPRRdTK sensitivity and kinetics in Type III neurons is unknown but may reflect differences in how well these reporters compete with the high levels of endogenous neuropeptide (Bursicon) for packaging, transport or release.\n\n## Discussion\n\nHere we present proof-of-principle for a method to detect the release of different neuropeptides in intact neural tissue, with subcellular spatial and sub-second temporal resolution. By exploiting the fluorescent change of GCaMP in response to a shift in pH and [Ca2+], we visualized the release of neuropeptides by capturing the difference between the intravesicular and extracellular microenvironment. NPRR responses exhibited triphasic kinetics, including rising, falling and recovering phases. In the falling phase, a post-stimulus \u2018undershoot\u2019, was observed in which the fluorescent intensity fell below pre-stimulation baseline. This undershoot presumably reflect the slow kinetics of DCV replenishment relative to release.\n\nThe molecular mechanisms of NP release are incompletely understood (Xu and Xu, 2008). It is possible that individual DCVs only unload part of their cargo during stimulation, in which case many DCVs that underwent fusion may still contain unreleased NPRR molecules following a stimulus pulse. Although we are convinced that NPRR signals do indeed reflect NP release, due to the presence of the recovering phase, we cannot formally exclude that unreleased NPRRs may contribute to the signal change due to their experience of intravesicular [Ca2+]/pH changes that occur during stimulation. To resolve this issue in the future, an ideal experiment would be to co-express an NPRR together with a [Ca2+]/pH-invariant NP-reporter fusion. Multiple attempts to generate such fusions with RFP were unsuccessful, due to cryptic proteolytic cleavage sites in the protein which presumably result in degradation by DCV proteases during packaging.\n\nTo test if NPRRANP \u2206F/F signals are dependent on NP release, we expressed the light chain of tetanus toxin (TNT), a reagent shown to effectively block NP release in many (McNabb and Truman, 2008; Hentze et al., 2015; Zandawala et al., 2018), if not all (Umezaki et al., 2011), systems. We observed a striking difference in NPRR kinetics in flies co-expressing TNT vs. its proteolytically inactive \u2018impotent\u2019 control form TNTimp (Figure 2F). The strong reduction of NPRR signals by TNT-mediated n-syb cleavage is consistent with the idea that these signals reflect the release of NPRRs from DCVs.\n\nWe have tested the generalizability of the principles used to generate NPRRs by (1) constructing a surrogate NP reporter NPRRANP as well as a multi-peptide-producing endogenous Drosophila NP reporter NPRRdTK (Figures 2\u20133); (2) characterized NPRR signals in response to varying intensities of electrical stimulation; and (3) recorded NPRR signals in two different classes of NMJ motor neurons containing DCVs with or without SVs, respectively (Figure 4). These experiments revealed, to our surprise, that NPRR responses exhibit cell-type specific characteristics (Figure 4). As NPRRs are applied to other neuropeptides and cell types, a systematic characterization of neuropeptide release properties in different peptidergic neurons should become possible, furthering our understanding of neuropeptide biology.\n\nThe method described here can, in principle, be extended to an in vivo setting. This would open the possibility of addressing several important unresolved issues in the study of NP function in vivo. These include the \u2018which\u2019 problem (which neuron(s) release(s) NPs under particular behavioral conditions?); the \u2018when\u2019 problem (when do these neurons release NPs relative to a particular behavior or physiological event?); the \u2018where\u2019 problem (are NPs released from axons, dendrites or both?); and the \u2018how\u2019 problem (how is NP release regulated?). The application of NPRRs to measuring NP release dynamics in awake, freely behaving animals may yield answers to these important long-standing questions.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-NPRRANP (attp2)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>See Materials and methods, subsection Construction of transgenic animals.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-NPRRdTK (attp2)</td>\n      <td>this paper</td>\n      <td></td>\n      <td>Same as above.</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-TNTimp</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC:28840; FLYB:FBti0038575; RRID:BDSC_28840</td>\n      <td>Flybase symbol: w[*]; P{w[+mC]=UAS TeTxLC.(-)V}A2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-TNT</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC:28838; FLYB:FBti0038527; RRID:BDSC_28838</td>\n      <td>Flybase symbol: w[*]; P{w[+mC]=UAS TeTxLC.tnt}G2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>w; +; UAS-GCaMP6s (su(Hw)attp1)</td>\n      <td>Hoopfer et al., 2015</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFP (chicken polyclonal)</td>\n      <td>Aveslab</td>\n      <td>Aveslab: GFP-1020; RRID:AB_2307313</td>\n      <td>(1:250:Immuno-EM, 1:1000: IHC)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-ANP (rabbit polyclonal)</td>\n      <td>abcam</td>\n      <td>abcam #14348</td>\n      <td>(1:500)</td>\n    </tr>\n  </tbody>\n</table>\n\n### Fly strains\n\nAll experimental flies were reared on a 12/12 hr day-night cycle at 25\u00b0C. Standard chromosomal balancers and genetic strategies were used for all crosses and for maintaining mutant lines. Detailed genotypes used are summarized in Supplementary file 3. The following strains were obtained from Bloomington Stock Center (Indiana University): R20C11-Gal4 (#48887), R57C10-Gal4 (#39171), UAS-mCD8::GFP (#32185), UAS-TNT (#28838), UAS-TNTimp (#28840). UAS-opGCaMP6s was made by Barret Pfeiffer (Gerald Rubin\u2019s lab, Janelia Farm) (Hoopfer et al., 2015).\n\n### Construction of transgenic animals\n\nAll PCR reactions were performed using PrimeSTAR HS DNA polymerase (Takara #R045Q). All constructs were verified via DNA sequencing (Laragen).\n\nTo construct UAS-NPRRANP, Drosophila codon-optimized ANP and GCaMP6s were synthesized using gBlocks service (Integrated DNA Technologies), and subcloned into pJFRC7 vector (from Addgene #26220)\u00a0(Pfeiffer et al., 2010) using Gibson cloning. UAS-dTK-NPRR is built in a similar way except the dTK fragment was cloned from the Drosophila brain cDNA. NPRRdTK-GFP and NPRRANP-GFP were built similarly except Drosophila codon-optimized GFP was used for the subcloning. All the vectors were injected and integrated into attP2 or attp40 sites (Bestgene Inc; see Supplementary file 3 for attP sites used for each genotype employed).\n\n### Expression screening of NPRR candidates\n\nAdult fly brains were dissected in chilled PBS and fixed in 4% formaldehyde for 55 min at room temperature. After three 10 min rinses with PBS, the brains were cleared with Vectashield (#1000, Vectorlabs), mounted, and used for native fluorescence measurements. We trace the NPF neuron somata and arborization as ROIs. We selected regions next to NPF neurons and measured its fluorescent intensity as a reference, which represents background autofluorescence. Candidates whose fluorescence reached at least 2-fold higher than reference were selected for functional screening.\n\n### Functional screening of NPRR candidates\n\nFor the baseline fluorescence measurement, we crossed NPF-Gal4 to the candidate lines and generated NPF-Gal4>NPRRx (x\u00a0=\u00a0candidate label) flies for tests. The dissected adult fly brains were mounted on a petri dish and immersed in Drosophila imaging saline (108 mM NaCl, 5 mM KCl, 2 mM CaCl2, 8.2 mM MgCl2, 4 mM NaHCO3, 1 mM NaH2PO4, 5 mM trehalose, 10 mM sucrose, 5 mM HEPES, pH 7.5). To deliver high potassium challenge, High-K imaging saline was perfused (43 mM NaCl, 70 mM KCl, 2 mM CaCl2, 8.2 mM MgCl2, 4 mM NaHCO3, 1 mM NaH2PO4, 5 mM trehalose, 10 mM sucrose, 5 mM HEPES, pH 7.5). Live imaging series were acquired using a Fluoview FV3000 Confocal laser scanning biological microscope (Olympus) with a 40\u00d7, 0.8 N.A. (Numerical Aperture) water immersion objective (Olympus). Candidates whose post-stimulation fluorescence reached at least 2-fold of baseline fluorescence (measured as averaged pre-stimulation fluorescence) were selected for in vivo tests at NMJ. For each candidate line, at least three brains were tested and fold-change of each was averaged.\n\n### Immunohistochemistry\n\nLarval dissection was performed in chilled HL3 solution (70 mM NaCl, 5 mM KCl, 20 mM MgCl2, 10 mM NaHCO3, 115 mM sucrose, 5 mM trehalose, 5 mM HEPES and 1.5 mM CaCl2, pH 7.2). Dissected tissues were fixed in 4% formaldehyde or Bouin\u2019s solution for 30 min at room temperature. After three 15 min rinses with PBS, tissues were incubated with primary antibodies overnight at 4\u00b0C. Following three 15 min rinses with PBS, tissues were incubated with secondary antibody for 2 hr at room temperature. Following three 15 min rinses, tissues were cleared with Vectashield (#1000, Vectorlabs) and mounted. Confocal serial optical sections were acquired using a Fluoview FV3000 Confocal laser scanning biological microscope (Olympus) with a 60\u00d7, 1.30 N.A. silicone oil objective (Olympus). All image processing and analyses were done using ImageJ (National Institute of Health).\n\nThe following primary antibodies were used: Chicken anti-GFP (1:250-1:1000, Aveslab #1020), Rabbit anti-ANP (1:500, abcam #14348), Guinea pig anti-vGluT\u00a0(Goel and Dickman, 2018) (1:1500), Rabbit anti-syt1\u00a0(Littleton et al., 1993) (1:500) and Rabbit anti-Bursicon (1:2000, a gift from Dr. Benjamin White).\n\nThe following secondary antibodies were used: Alexa Fluor 488 Goat anti-Chicken IgY (#A11039, Invitrogen), Alexa Fluor 488 Goat anti-Rabbit IgG (#A11008, Invitrogen), Alexa Fluor 568 Goat anti-Rabbit IgG(H\u00a0+\u00a0L) (#A11011, Invitrogen), Alexa Fluor 633 Goat anti-Rabbit IgG(H\u00a0+\u00a0L) (#A21070, Invitrogen), Alexa Fluor 488 Goat anti-Guinea Pig IgG(H\u00a0+\u00a0L) (#A11073, Invitrogen), Alexa Fluor 568 Goat anti-Guinea Pig IgG(H\u00a0+\u00a0L) (#A11075, Invitrogen), Alexa Fluor 568 Goat anti-Mouse IgG(H\u00a0+\u00a0L) (#A11004, Invitrogen) and Alexa Fluor 633 Goat anti-Mouse IgG(H\u00a0+\u00a0L) (#A21050, Invitrogen).\n\n### Electron microscopy\n\nDrosophila tissues were fixed in 4% formaldehyde in PBS and stored at 4\u00b0C until preparation by high-pressure freezing (HPF) and freeze-substitution (FS)\u00a0(Buser and Walther, 2008; Buser and Drubin, 2013). Tissues were cryoprotected in 2.3 M sucrose for 45 min, transferred to 200 \u00b5m deep planchettes and high-pressure frozen in an EMPact2 with RTS (Leica, Vienna, Austria). FS was carried out in an AFS2 (Leica, Vienna, Austria) in methanol containing 5% water, 0.05% glutaraldehyde and 0.1% uranyl acetate (\u221290\u00b0C, 3 hr; \u221290 to \u221280\u00b0C, 10 hr; \u221280\u00b0C, 4 hr; \u221280\u00b0C to 4\u00b0C, 24 hr). Samples were washed once in methanol containing 5% water, infiltrated with hard grade LR White (Electron Microscopy Sciences, Hatfield, PA, USA) at 4\u00b0C ([LR White]: [methanol containing 5% water] 1:1, 24 hr; 100% LR White, 3 \u00d7 24 hr) and polymerized in a fresh change of LR White using a Pelco BioWave (Ted Pella, Inc, Redding, CA, USA) set to 750 W, 95\u00b0C for 45 min.\n\n60 nm thin sections (UCT ultramicrotome, Leica, Vienna, Austria) were picked up on formvar-coated 50 mesh copper grids. The sections were blocked for 3 min in blocking buffer (PBS with 0.5% bovine serum albumin, which was used for all antibody dilutions), incubated in anti-GFP antibody (1:500, Aveslab #1020) for 5 min, washed 3 times in blocking buffer, incubated in rabbit anti chicken antibody (1:50, MP Biomedicals #55302) for 5 min, washed 3 times on blocking buffer, incubated on protein A - 5 nm gold (1:50, Utrecht, Netherlands), and washed 3 times in PBS and 3 times in distilled water. The sections were stained in uranyl acetate or uranyl acetate and Reynolds lead citrate depending on the desired contrast and imaged at 80 kV in a Zeiss EM10C (Zeiss, Oberkochen, Germany) using a CCD camera (Gatan, Pleasanton, CA, USA).\n\nLabeling density was estimated using stereological methods\u00a0(Griffiths and Hoppeler, 1986). Cross-sections through boutons were recorded and the following parameters were measured: total image area, total number of gold particles, number of visible dense core vesicles (DCV), number of gold particles within a 50 nm radius of the DCV center, bouton area (grid intersection estimate), gold within the bouton cytoplasm, gold within 20 nm of the bouton plasma membrane, gold outside of the bouton (mainly sER). Background labeling was estimated using internal controls (labeling on blank resin and on muscle fibers) and a biological control (non-GFP expressing genotype). Occasional obvious, large gold aggregates were disregarded. Background was consistently below 0.6 gold/\u00b5m2 in independently repeated labeling experiments.\n\n### Electrical stimulation\n\nThe dissection of third-instar larvae was performed in zero-calcium HL3 saline. The CNS was removed to avoid spontaneous motor neuron activity. To minimize muscle contraction induced by electrical stimulation of motor neurons, the larval body walls were slightly stretched and incubated in HL3 saline supplemented with 10 mM glutamate for 5 mins after dissection to desensitize postsynaptic glutamate receptors. Samples were then shifted to HL3 saline containing 1 mM glutamate and 1.5 mM Ca2+. Motor nerves were sucked into a glass micropipette with a stimulation electrode. In Figure 2 and Figure 3, to induce maximum dense core vesicle release at type III motor neuron terminals, four repetitive bursts (70 Hz stimulation for 18\u201320 s with pulse width of 1 ms) with intervals of 40\u201342 s were programmed and triggered with a Master-9 stimulator (A.M.P.I., Israel) connected to an iso-flex pulse stimulator (A.M.P.I., Israel). The stimulation intensity was tested and set to double the intensity required to induce muscle contraction by a single pulse stimulation.\n\nIn Figure 4, stimulation trials were delivered with the same duration, but with a series of frequencies spanning 1 Hz to 70 Hz.\n\n### Calcium imaging\n\nA Nikon A1R confocal microscope with resonant scanner and NIS Element software were used to acquire live Ca2+ imaging on third instar larvae, bathed with 1 mM glutamate added in 1.5 mM Ca2+ HL3 saline. Type III motor neuron terminals in abdominal segments from A2 to A5 were imaged using a 60x APO 1.4 N.A. water immersion objective with 488 nm excitation laser. A 5 min period was used for time-lapse imaging at a resonance frequency of 1 fps (512 \u00d7 512 pixels or 1024 \u00d7 1024 pixels), with z-stacks (step length varying from 1 to 1.5 \u03bcm) covering the depth of entire type III motor neuron terminals. The repetitive electrical stimulation of 70 Hz was delivered during the imaging session. Samples with severe muscle contractions were abandoned due to imaging difficulties. Maximum intensity projection (MIP) and image registration were conducted using Image J. Plugins including Image Stabilizer (K. Li, CMU) and Template Matching (Q. Tseng) were used for compensating drifting and correcting movement induced by electrical stimulations. ROIs were manually selected by tracing the outer edge of each neuron based on the baseline fluorescence. If the fluorescence was too weak to trace, we established a reference stack by empirically adjusting the contrast on a duplicate of the raw image stack. We used the reference stack for ROI selection and projected the selected ROIs back onto to the raw image stack for measurement. For frames in which the sample movement could not be automatically corrected, we manually outlined the ROIs used for measurements. Preparations with severe movement or deformation artifacts were abandoned to avoid unreliable measurements. Each ROI represent a traceable neuronal branch except Figure 2\u2014figure supplement 2B, in which the ROIs were further manually partitioned into boutons and IBIs (Inter-Bouton Intervals) based on morphology. Fluorescence change were normalized to the pre-stimulation background except for Figure 3E, for which the data in each trial was normalized to the average \u2206F/F during a 5 s period just before stimulation was initiated. No sample size is predetermined based on statistics. Ca2+ imaging data were acquired from at least six independent NMJs from at least five animals.\n\n### Statistical analysis\n\nData are presented as mean\u00a0\u00b1\u00a0s.e.m. All data analysis was performed with Graphpad Prism 6, Microsoft Excel and custom Matlab codes (Source code 1). Mann-Whitney U test was used for comparison except in Figure 4, where One-sample T test was used for comparison with a specified value (0).\n",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "0efbb300-a056-45ae-92f6-30437113e80a",
+      "submission_id": "109d58e2-1dd3-494c-9354-72ed21fea3de",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leslie C Griffith, Brandeis University United States\n\nReviewers:\n- Leslie C Griffith, Brandeis University United States\n- Paul Taghert, Washington University Medical School United States\n\n## Review text\n\nDOI: [10.7554/eLife.46421.sa1](https://doi.org/10.7554/eLife.46421.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Imaging neuropeptide release at synapses with a genetically engineered reporter\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Leslie C Griffith as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Eve Marder as the Senior Editor. The following individual involved in review of your submission has also agreed to reveal their identity: Paul Taghert (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper develops a new set of tools for looking at release of peptides in real time. The idea is a good one and there is a need in the field for such tools. The authors describe a genetically encoded reporter system for dense core vesicle (DCV) fusion in Drosophila. They generate a host of fusions of GCaMP6 to ANF and DTK neuropeptides and identify a specific fusion event that localizes well to DCVs by both immunocytochemistry and immuno-EM. The authors show the sensor can respond to strong stimulation and compare the response to cytosolic GCaMP6 as a read-out of intra-terminal calcium changes. Overall, it's a potentially useful tool for the field, but the study could add a bit more quantification to demonstrate how well the sensor is actually working.\n\nEssential revisions:\n\n1) The major issue the reviewers had with the feasibility of this approach for dissecting DCV release is the conditions needed to trigger these changes \u2013 70 Hz stimulation for 18 secs. These motor neurons would never experience such extreme stimulation in vivo. Peptidergic neurons typically fire in the 1-5 Hz range and while motor neurons fire at higher rates, natural stimulation is not of the duration used here. The signal-to-noise ratio (\u03b4 F changes) of this DCV sensor (compared to GCaMP alone which appears to be at least 5-10x more sensitive) is also rather poor. As such, it would be informative to have more information on the dynamics of their new reporter.\n\na) Provide a dose response curve to demonstrate both the required stimulation frequency (only 70 Hz is reported), the required length of stimulation (only 18 seconds is reported) and the calcium response curve. What does 1 Hz look like? Or 5 Hz?\n\nb) The authors only report changes in the Type 3 terminals. What did the authors see in the Type 1 terminals that have fewer DCVs? Was DCV release detectable in these neurons, as has been reported in the field for the classical ANF-GFP DCV sensor? These data may be more useful than Type III data for investigators contemplating using this tool in neurons that do not have huge numbers of DCVs.\n\nc) It would be helpful to use a benchmark to compare the methodology described here to that currently used in the field \u2013 the loss of ANF-GFP signal following stimulation. Is the current system actually an upgrade over that? There is unique value here in the potential to endogenously target specific neuropeptides for this technique, but if the sensitivity is far below that of ANF-GFP, the older system might still be the one of choice for dissecting the biology of DCV fusion overall. Without these data it is hard to claim an advance.\n\n2) It would be helpful for the authors to further clarify in discussion what they actually think the sensor is reporting over time. It was not clear to reviewers exactly what the rise/falling/undershoot/recovery phases actually represent. The recovery phase is especially mysterious since the soma is gone so it cannot be replenishment via transport. DCVs are known to only release part of their cargo during stimulation, so presumably many of these DCVs still contain GCaMP-tether neuropeptide within them. Do the DCVs that have fused become less acidic and take up come extracellular calcium and thus activate the remaining GCaMP within them? Or do the authors think that the DCVs release all their content, or not take up calcium or lose their acidity during partial fusion events? This seems a potential confound \u2013 the authors are measuring a transient rise in calcium influx and pH change within the lumen of the DCV, not the actual release of the neuropeptide-GCaMP.\n\nWhile the reviewers did not feel that it was required that this point be addressed with new experiments, it would be incredibly informative to assay their sensor in animals concurrently expressing an ANF-mCherry, ANF-mOrange (or other red-shifted tagged neuropeptide) where loss of the neuropeptide is directly reported in addition to the neuropeptide-GCaMP signal. That would really help clarify what is likely to be happening with their sensor during these phases of DCV release or partial fusion.\n",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88fae6c4-c594-4f12-abdf-b734a0daf513",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C1",
+      "claim": "There is no spatio-temporally resolved method to measure the release of neuropeptides in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Research on neuropeptide function has advanced rapidly, yet there is still no spatio-temporally resolved method to measure the release of neuropeptides in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a gap in current research capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "8d3c2564-a6ec-4cfb-99db-987357ecba25",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C2",
+      "claim": "Neuropeptide Release Reporters (NPRRs) are novel genetically-encoded sensors with high temporal resolution and genetic specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we introduce Neuropeptide Release Reporters (NPRRs): novel genetically-encoded sensors with high temporal resolution and genetic specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the paper, stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e108c01e-d875-4160-97ec-50a928ef363f",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C3",
+      "claim": "NPRRs recapitulate the trafficking and packaging of native neuropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Drosophila larval neuromuscular junction (NMJ) as a model, we provide evidence that NPRRs recapitulate the trafficking and packaging of native neuropeptides",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by immunohistochemistry and electron microscopy data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e273c6da-6856-47b0-aa4e-3977176fc62d",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C4",
+      "claim": "NPRRs report stimulation-evoked neuropeptide release events as real-time changes in fluorescence intensity with sub-second temporal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "and report stimulation-evoked neuropeptide release events as real-time changes in fluorescence intensity, with sub-second temporal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the calcium imaging experiments showing fluorescence changes in response to electrical stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "9a6fb9c0-1538-41e7-bd06-3af8084b7829",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C5",
+      "claim": "Neuropeptides exert an important but complex influence on neural function and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides (NPs) exert an important but complex influence on neural function and behavior (H\u00f6kfelt et al., 2000; Insel and Young, 2000; N\u00e4ssel and Winther, 2010; Bargmann and Marder, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "a90e220b-743a-422c-ade8-677b4cd58a7d",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C6",
+      "claim": "A major lacuna in the study of neuropeptides is the lack of a method for imaging NP release in vivo with subcellular spatial resolution and subsecond temporal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A major lacuna in the study of NPs is the lack of a method for imaging NP release in vivo, with subcellular spatial resolution and subsecond temporal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This establishes the research gap that the paper addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "453ef49f-d9da-44b7-8022-fb7ba0e7ec76",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C7",
+      "claim": "Available techniques for measuring NP release include microdialysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Available techniques for measuring NP release include microdialysis (Kendrick, 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "2e7a1c8e-09f8-4ccd-9e15-022c0f12c033",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C8",
+      "claim": "Available techniques for measuring NP release include antibody-coated microprobes.",
+      "claim_type": "EXPLICIT",
+      "source": "antibody-coated microprobes (Schaible et al., 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "756072aa-7f12-42c7-a5eb-988778d5780b",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C9",
+      "claim": "GFP-tagged propeptides have been visualized by standard fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-tagged propeptides visualized either by standard fluorescence microscopy (van den Pol, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "6c489093-b6f3-45e4-925e-955b5f29442e",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C10",
+      "claim": "GFP-tagged propeptides have been visualized by TIRF imaging of cultured neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "or by TIRF imaging of cultured neurons (Xia et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "845b2008-d854-4376-8334-6bcdbaf04a64",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C11",
+      "claim": "In Drosophila, a fusion between rat Atrial Natriuretic Peptide/Factor (ANP/F) and GFP was used to investigate neuropeptide trafficking at the fly neuromuscular junction.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, a fusion between rat Atrial Natriuretic Peptide/Factor (ANP/F) and GFP was used to investigate neuropeptide trafficking at the fly neuromuscular junction (NMJ) (Rao et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "0fc239e6-ae95-4786-8aa1-3ea10a13dee7",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C12",
+      "claim": "ANP-GFP release was measured indirectly as a decrease in fluorescence intensity at nerve terminals on a time-scale of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Release was measured indirectly, as a decrease in ANP-GFP fluorescence intensity at nerve terminals reporting residual unreleased peptide, on a time-scale of seconds (Wong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "4ce4f9cc-e6a1-483e-9d1e-b9734298dd11",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C13",
+      "claim": "None of the existing methods combines NP specificity, genetically addressable cell type-specificity, high temporal resolution and applicability to in vivo preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these methods combines NP specificity, genetically addressable cell type-specificity, high temporal resolution and applicability to in vivo preparations (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a comparison table in the supplementary materials.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "76afd090-0e58-4832-8bae-e20dad6627c0",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C14",
+      "claim": "Neuropeptides are synthesized as precursors, sorted into dense core vesicles (DCVs), post-translationally modified and cleaved into active forms prior to release.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropeptides are synthesized as precursors, sorted into dense core vesicles (DCVs), post-translationally modified and cleaved into active forms prior to release (Taghert and Veenstra, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "4627d80c-49c2-4ef6-bd97-dd60030f096d",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C15",
+      "claim": "An optimal in vivo real-time NP release reporter should include a reporter domain that reflects the physico-chemical contrast between the intravesicular milieu and the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that an optimal in vivo real-time NP release reporter should include (1) a reporter domain that reflects the physico-chemical contrast between the intravesicular milieu and the extracellular space (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a design principle stated by the authors and illustrated in a figure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "82deb13b-20dd-48bb-a4a3-d3ba3e4f1a60",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C16",
+      "claim": "An optimal in vivo real-time NP release reporter should include a sorting domain that ensures its selective trafficking into DCVs.",
+      "claim_type": "EXPLICIT",
+      "source": "and (2) a sorting domain that ensures its selective trafficking into DCVs (Figure 1\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a design principle stated by the authors and illustrated in a figure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "c9efd679-e5df-4d54-9d78-a5ba19bb2560",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C17",
+      "claim": "The NP precursor may function as the sorting domain, as suggested by studies of DCV fusion using pIAPP-EGFP and NPY-pHluorin in cultured neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The NP precursor may function as the sorting domain, suggested by studies of DCV fusion using pIAPP-EGFP (Barg et al., 2002) and NPY-pHluorin (Zhu et al., 2007) in cultured neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "9c071328-dfb7-4e6e-939a-300a5dc6d64c",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C18",
+      "claim": "The NP precursor may function as the sorting domain, as suggested by studies using ANP-GFP in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "or ANP-GFP in Drosophila (Rao et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "a8a8363b-daf4-4702-8ff8-8391236a54e9",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C19",
+      "claim": "A total of 54 constructs were tested in the screening pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 54 constructs were tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "d12b8481-7f41-4f90-8f19-e892b8c6666b",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C20",
+      "claim": "Optimal trafficking was achieved by substituting the reporter for the NP precursor C-terminal domain that follows the final peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that optimal trafficking was achieved by substituting the reporter for the NP precursor C-terminal domain that follows the final peptide (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the screening experiments shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "522ef41b-71e7-4794-9eff-e6798b81a5cf",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C21",
+      "claim": "The dibasic cleavage site C-terminal to the final peptide was removed to maintain covalent linkage with the reporter domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to maintain covalent linkage with the reporter domain, we removed the dibasic cleavage site C-terminal to the final peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a design decision made by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "cd8b1579-3273-4f00-8c38-96a669c07ff3",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C22",
+      "claim": "The DCV lumen has lower pH (5.5\u20136.75) compared to the extracellular space (pH 7.3).",
+      "claim_type": "EXPLICIT",
+      "source": "The DCV lumen has lower pH and free calcium (pH = 5.5\u20136.75, [Ca2+]~30 \u00b5M) compared to the extracellular space (pH = 7.3, [Ca2+]~2 mM) (Mitchell et al., 2001; Sturman et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "52cbbb98-094c-4d68-a19d-1c91c069a860",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C23",
+      "claim": "The DCV lumen has lower free calcium (~30 \u00b5M) compared to the extracellular space (~2 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "The DCV lumen has lower pH and free calcium (pH = 5.5\u20136.75, [Ca2+]~30 \u00b5M) compared to the extracellular space (pH = 7.3, [Ca2+]~2 mM) (Mitchell et al., 2001; Sturman et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "59afd4cc-4d8a-4497-9e6b-7133e42b031a",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C24",
+      "claim": "Reporters based on pHluorins did not perform well in the authors' hands.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporters based on pHluorins (Miesenb\u00f6ck et al., 1998) did not perform well in our hands",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "7d19d434-a570-444b-8f22-3ed79651b7a2",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C25",
+      "claim": "The calcium sensitivity threshold of GCaMP6s is below the calcium concentration in both DCVs and the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "The calcium sensitivity threshold of GCaMP6s is below the calcium concentration in both DCVs and the extracellular space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of GCaMP6s.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "ca7366ab-5f3c-47bf-b862-7495b5a4573f",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C26",
+      "claim": "GCaMP6s fluorescence is quenched in the acidic DCV lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "However, GCaMP6s fluorescence is quenched in the acidic DCV lumen (Barykina et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "6914537d-a30b-48d3-aaf5-c15c8acfb329",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C27",
+      "claim": "GCaMP6s can function as a dual calcium/pH indicator.",
+      "claim_type": "EXPLICIT",
+      "source": "enabling it to function as a dual calcium/pH indicator (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the properties of GCaMP6s and is illustrated in Figure 1A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "995ab913-63ed-4b59-ac39-fe4716907293",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C28",
+      "claim": "The dual calcium/pH sensitivity of GCaMP6s should boost the contrast between fluorescence in unreleased vs. released DCVs.",
+      "claim_type": "EXPLICIT",
+      "source": "These key properties should boost the contrast between GCaMP6s fluorescence in unreleased vs. released DCVs, potentially allowing us to trace NP release at the cellular level in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the properties of GCaMP6s.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "163c8081-b448-4890-b571-f6483e497f2d",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C29",
+      "claim": "The Drosophila larval NMJ was used to test NPRRANP for proof-of-principle experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially for proof-of-principle experiments, we used the Drosophila larval NMJ to test NPRRANP, a GCaMP6s fusion with rat ANP (Burke et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "8b186c0d-cb91-4718-896e-570eef60113b",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C30",
+      "claim": "NMJ terminals are large, individually identifiable, and easy to image and record.",
+      "claim_type": "EXPLICIT",
+      "source": "NMJ terminals are large, individually identifiable, and easy to image and record.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the properties of the experimental system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "9bad4ea5-2234-429b-b21d-a405f781c643",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C31",
+      "claim": "Type Ib and Type Is boutons contain mostly synaptic vesicles and few DCVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, boutons on muscle 12/13 are diverse -- Type Ib and Type Is boutons contain mostly synaptic vesicles and few DCVs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "b4d39769-fac7-4a22-8b08-af26fef069da",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C32",
+      "claim": "Type III boutons contain an abundance of DCVs but no synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "while Type III boutons contain an abundance of DCVs but no synaptic vesicles (Menon et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "5e4eaf8a-f48e-4caa-8836-f649867b8d93",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C33",
+      "claim": "Type III-specific GAL4 drivers are available.",
+      "claim_type": "EXPLICIT",
+      "source": "moreover, Type III-specific GAL4 drivers are available (Koon and Budnik, 2012) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to prior work and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "39d89df7-c744-4bf2-bfbf-fb70aeae1709",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C34",
+      "claim": "The distribution of NPRRANP overlapped that of Bursicon, an NP endogenously expressed in Type III neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the distribution of NPRRANP overlapped that of Bursicon (Figure 1\u2014figure supplement 3D), an NP that is endogenously expressed in Type III neurons (Loveall and Deitcher, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry data shown in the figure and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "2051b9e9-39bf-4deb-bf94-bb246bd90c1f",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C35",
+      "claim": "Both GCaMP and Bursicon immunoreactivity were strongest within boutons, consistent with the known subcellular localization of DCVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both GCaMP and Bursicon immunoreactivity were strongest within boutons, consistent with the known subcellular localization of DCVs (Gorczyca and Budnik, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunohistochemistry data and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "d59ab77d-5515-4f68-884c-5e84b7be422a",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C36",
+      "claim": "Glutamate is the only known canonical neurotransmitter used at the larval NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Glutamate is the only known canonical neurotransmitter used at the larval NMJ (Menon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "07272757-c5c4-4ce1-b75e-54ad26381a56",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C37",
+      "claim": "In Type Ib neurons, vGluT staining was observed as patches with a dim center, which may reflect clustered SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In Type Ib neurons (which contain relatively few DCVs relative to SVs [Menon et al., 2013]), vGluT staining was observed as patches with a dim center, which may reflect clustered SVs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from immunohistochemistry with an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "0a27d615-aa6d-4440-b3d1-8853faabe0e9",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C38",
+      "claim": "In Type Ib neurons, NPRRANP immunoreactivity was seen in dispersed, non-overlapping punctae.",
+      "claim_type": "EXPLICIT",
+      "source": "while NPRRANP immunoreactivity was seen in dispersed, non-overlapping punctae (Figure 1C, \u03b1-GFP, inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from immunohistochemistry shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "09adaddf-429a-49ee-b0fc-dbbb91de6dd3",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C39",
+      "claim": "In Type III neurons, NPRRs were strongly expressed but no vGluT immunoreactivity was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In Type III neurons, NPRRs were strongly expressed but no vGluT immunoreactivity was detected (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from immunohistochemistry shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "fd958d33-72f9-4fcf-8b69-447d6fa71c85",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C40",
+      "claim": "The subcellular distribution of NPRR in larval NMJ neurons is similar to that of other DCV-targeted markers previously used in this system.",
+      "claim_type": "EXPLICIT",
+      "source": "The subcellular distribution of this NPRR in larval NMJ neurons, therefore, is similar to that of other DCV-targeted markers previously used in this system (Rao et al., 2001; Shakiryanova et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "5639eb12-5318-4742-8f19-111b38cf1cd6",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C41",
+      "claim": "The subcellular distribution of NPRR appears to reflect exclusion from SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "and appears to reflect exclusion from SVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the immunohistochemistry data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "8fc76512-f907-4dfc-9fac-2b23ee13f81f",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C42",
+      "claim": "Immuno-Electron microscopy was employed to investigate the subcellular localization of NPRRs at the nanometer scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we employed Immuno-Electron microscopy (Immuno-EM) to investigate the subcellular localization of NPRRs at the nanometer scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "87e1d854-616c-40b5-80e7-0c5bafe300d9",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C43",
+      "claim": "NPRRANP-GFP constructs were generated to maximize antigenicity for Immuno-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "To maximize antigenicity for Immuno-EM, we generated constructs that replaced GCaMP6s with GFP (NPRRANP-GFP;).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "6f073fed-5b2d-4ae1-8cb2-c5a46822adee",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C44",
+      "claim": "NPRRANP-GFP showed dense labeling in association with DCVs.",
+      "claim_type": "EXPLICIT",
+      "source": "NPRRANP-GFP showed dense labeling in association with DCVs (Figure 1D, arrows)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from Immuno-EM shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "aa36d831-7226-41d6-9b37-2bef5263d373",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C45",
+      "claim": "The average number of gold particles/\u00b5m2 in DCVs was substantially and significantly higher than in neighboring bouton cytoplasm (DCV/Bouton ~ 14.26).",
+      "claim_type": "EXPLICIT",
+      "source": "where the average number of gold particles/\u00b5m2 was substantially and significantly higher than in neighboring bouton cytoplasm (DCV/Bouton ~ 14.26) (Figure 1E, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from Immuno-EM shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "921f7f33-536e-462d-b5a9-ab34a87fb923",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C46",
+      "claim": "NPRRANP-GFP is localized to DCVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that NPRRANP-GFP is localized to DCVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the Immuno-EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "9401e887-4ca9-45d2-94b3-6b5c6ef463af",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C47",
+      "claim": "NPRRANP-GCaMP6s is similarly packaged in DCVs as NPRRANP-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "By extension, they suggest that NPRRANP-GCaMP6s (which has an identical structure to NPRRANP-GFP except for the modifications that confer calcium sensitivity) is similarly packaged in DCVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural similarity between the two constructs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "5375f0a5-711b-4567-a55c-01e063223bce",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C48",
+      "claim": "NPRRANP-GFP and NPRRANP-GCaMP6s show indistinguishable distributions by immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "While these two reporters show indistinguishable distributions by immunofluorescence (Figure 1\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from immunofluorescence shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "13d64ab3-8d75-4e88-a4dc-c5f9d1b23d15",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C49",
+      "claim": "The authors cannot formally exclude that the substitution of GCaMP for GFP may subtly alter subcellular localization of the NPRR in a manner undetectable by light microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "we cannot formally exclude that the substitution of GCaMP for GFP may subtly alter subcellular localization of the NPRR in a manner undetectable by light microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat stated by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "2d2363b6-018c-4a81-a9e2-1d7d3c8f4228",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C50",
+      "claim": "70 Hz electrical stimulation is a frequency reported to trigger NP release as measured by ANF-GFP fluorescence decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "We delivered 4 trials of 70 Hz electrical stimulation to the nerve bundle, a frequency reported to trigger NP release as measured by ANF-GFP fluorescence decrease (Rao et al., 2001; Shakiryanova et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "be94a5eb-2f85-4184-b335-dcea1f425902",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C51",
+      "claim": "The stimulation paradigm used an extracellular calcium concentration that promotes full fusion mode.",
+      "claim_type": "EXPLICIT",
+      "source": "and used an extracellular calcium concentration that promotes full fusion mode (Al\u00e9s et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "5c39485c-9db8-4107-af51-91b6ec1989f7",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C52",
+      "claim": "The stimulation paradigm produced a relative increase in NPRRANP fluorescence intensity (\u0394F/F), whose peak magnitude increased across successive trials.",
+      "claim_type": "EXPLICIT",
+      "source": "This stimulation paradigm produced a relative increase in NPRRANP fluorescence intensity (\u0394F/F), whose peak magnitude increased across successive trials (Figure 2A, red bars and 2D; Video 1; Figure 2\u2014figure supplement 1, A1 vs. A7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the calcium imaging experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "aa86d02e-9297-4d8f-be08-6b48bb50ed0e",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C53",
+      "claim": "NPRRANP responses showed a tri-phasic temporal pattern: rising, falling, and recovering phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Responses in each trial showed a tri-phasic temporal pattern: (1) In the 'rising' phase, NPRRANP \u2206F/F peaked 0.5\u20135 secs after stimulation onset",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the calcium imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "0bcc969a-f493-44db-9f09-2f60b8176dc4",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C54",
+      "claim": "NPRRANP \u2206F/F peaked 0.5\u20135 secs after stimulation onset, in contrast to the virtually instantaneous peak seen in positive control specimens expressing conventional GCaMP6s in Type III neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "in contrast to the virtually instantaneous peak seen in positive control specimens expressing conventional GCaMP6s in Type III neurons (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between NPRR and control shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "79fcd6a4-22cd-4236-8978-ac5c6dcb4bd9",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C55",
+      "claim": "The NPRRANP latency to peak was similar to the reported DCV fusion latency following depolarization in hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The NPRRANP latency to peak was similar to the reported DCV fusion latency following depolarization in hippocampal neurons (Xia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "fed7d5d8-eb3d-455d-9c66-cb41619453a2",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C56",
+      "claim": "The delay in NPRRANP response is thought to reflect the kinetic difference between calcium influx and DCV exocytosis due to the loose association between DCVs and calcium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This delay is thought to reflect the kinetic difference between calcium influx and DCV exocytosis due to the loose association between DCVs and calcium channels (Xia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e878bdbe-e65a-434f-9e10-b6dd63fd193a",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C57",
+      "claim": "In the falling phase, NPRRANP \u2206F/F began to decline 1\u20135 s before the termination of each stimulation trial, presumably reflecting depletion of the available pool of releasable vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) In the 'falling' phase, NPRRANP \u2206F/F began to decline 1\u20135 s before the termination of each stimulation trial, presumably reflecting depletion of the available pool of releasable vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation with an interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "54e419d3-3231-4b63-bc16-e80fee43b756",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C58",
+      "claim": "GCaMP6s fluorescence did not return to baseline until after stimulation offset.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, GCaMP6s fluorescence did not return to baseline until after stimulation offset (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the control experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "f6f9fe71-4a2c-4e55-b541-f3ee827a3dec",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C59",
+      "claim": "NPRRANP exhibited an 'undershoot' (\u2206F/F below baseline) during the post-stimulation intervals, followed by a 'recovering' phase.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) Finally, unlike GCaMP6s, NPRRANP exhibited an 'undershoot' (\u2206F/F below baseline) during the post-stimulation intervals, followed by a 'recovering' phase (Figure 2A; Figures 2C,I1\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the calcium imaging experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "4604b85a-1964-4404-8148-1e09e21e884b",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C60",
+      "claim": "The undershoot may reflect dilution of released fluorescent NPRR molecules by diffusion into the synaptic cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "This undershoot may reflect dilution of released fluorescent NPRR molecules by diffusion into the synaptic cleft (van den Pol, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "8e39339e-7c1a-4dd7-9b46-c424e2a578cc",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C61",
+      "claim": "Recovery may reflect DCV replenishment in the boutons from vesicles proximal to the imaged release site.",
+      "claim_type": "EXPLICIT",
+      "source": "while recovery may reflect DCV replenishment in the boutons from vesicles proximal to the imaged release site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "d50d0e03-8f48-49a6-8be5-474145c05976",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C62",
+      "claim": "NPRRANP fluorescence was preferentially accumulated within boutons.",
+      "claim_type": "EXPLICIT",
+      "source": "Because NPRRANP fluorescence was preferentially accumulated within boutons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e22b3489-1b55-4baf-9ef3-bb500828604d",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C63",
+      "claim": "The time-averaged ratio of bouton/IBI \u0394F/F was significantly higher for NPRRANP than for GCaMP6s, particularly during later stimulation trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-averaged ratio of bouton/IBI \u0394F/F (see Materials and Methods) was significantly higher for NPRRANP than for GCaMP6s, particularly during later stimulation trials (Figure 2\u2014figure supplement 2B, green bars, S2-4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the imaging experiments shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "2a7a532c-4e75-4f09-b551-23763672df34",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C64",
+      "claim": "NPRRANP signals are preferentially observed in boutons, where DCVs are located, and do not reflect differences in cytoplasmic free Ca2+ levels between these regions as detected by GCaMP6s.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrast indicates that NPRRANP signals are preferentially observed in boutons, where DCVs are located, and do not reflect differences in cytoplasmic free Ca2+ levels between these regions as detected by GCaMP6s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the comparison between NPRR and GCaMP6s.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "b787eb76-5d03-472a-80a1-077c3b2da2da",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C65",
+      "claim": "Tetanus toxin light chain (TNT) blocks vesicle fusion at terminals by cleaving n-synaptobrevin.",
+      "claim_type": "EXPLICIT",
+      "source": "To test definitively if NPRRANP \u2206F/F signals are dependent upon NP release, we blocked vesicle fusion at terminals of Type III neurons using expression of tetanus toxin light chain (TNT) (Sweeney et al., 1995), a protease that cleaves n-synaptobrevin, a v-snare required for DCV fusion (Figure 2\u2014figure supplement 3) (Xu et al., 1998).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "01895dbd-2b34-4fa7-9d7a-177f7d053339",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C66",
+      "claim": "TNT expression completely abolished stimulation-induced \u2206F/F increases from NPRRANP.",
+      "claim_type": "EXPLICIT",
+      "source": "TNT expression completely abolished stimulation-induced \u2206F/F increases from NPRRANP, while TNTimp did not (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the TNT experiments shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "a3474a4b-c262-48ca-83e1-3ae7c57b4bf2",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C67",
+      "claim": "Both the \u2206F/F peaks and inter-stimulation undershoots were diminished by TNT.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis revealed that both the \u2206F/F peaks and inter-stimulation undershoots were diminished by TNT (Figure 2G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the TNT experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "d77c02f3-a7d6-48db-9e48-d84be3a71029",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C68",
+      "claim": "Neither TNT nor TNTimp affected the kinetics of GCaMP6s signals in Type III neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, neither TNT nor TNTimp affected the kinetics of GCaMP6s signals in Type III neurons (Figure 2\u2014figure supplement 2C), which report cytosolic Ca2+ influx.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the control experiments shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "5049f241-aaca-4c76-bf62-bfc5d1a9079c",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C69",
+      "claim": "NPRRANP signals specifically reflect DCV release.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data support the idea that NPRRANP signals specifically reflect DCV release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the TNT experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "9c158394-6513-4a29-bff8-8514b704996a",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C70",
+      "claim": "ANP is a rat NP that lacks a Drosophila homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "ANP is a rat NP that lacks a Drosophila homolog (Rao et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "078c302e-4e84-41e6-990f-078342debb9a",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C71",
+      "claim": "NPRRdTK is one of 6 different reporter variants generated from the Drosophila neuropeptide precursor, DTK.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether our method could be applied to detect the release of a specific, endogenous fly NP, we tested NPRRdTK, one of 6 different reporter variants we initially generated from the Drosophila neuropeptide precursor, DTK (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "363ae9dc-f42a-48ac-a534-2174826c45a2",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C72",
+      "claim": "DTK yields multiple NP derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to ANP which encodes a single peptide, DTK yields multiple NP derivatives (Winther et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "daa7ae22-8212-4043-ba28-8a5cd6247909",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C73",
+      "claim": "NPRRdTK, like NPRRANP, was localized to DCVs as confirmed by light microscopy and Immuno-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Light microscopy (Figure 3A) and Immuno-EM (Figure 3B, arrows) confirmed that NPRRdTK, like NPRRANP, was localized to DCVs (DCV/bouton ~ 22.19, Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry and EM data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "1bff37a6-d759-42f9-b535-f619e7bcd390",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C74",
+      "claim": "Using the Type III-specific GAL4 driver to express NPRRdTK and the same stimulation protocol as used for NPRRANP, the basic tri-phasic response profile was also observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the Type III-specific GAL4 driver to express NPRRdTK and the same stimulation protocol as used for NPRRANP, the basic tri-phasic response profile was also observed (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the calcium imaging experiments shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "9d352cbc-f3d4-46dd-89cc-fa8b3af3e8ed",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C75",
+      "claim": "For NPRRdTK, peak heights and baseline fluorescence fell progressively with successive stimulation trials, in contrast to NPRRANP where the first peak and undershoot were lower.",
+      "claim_type": "EXPLICIT",
+      "source": "However, peak heights and baseline fluorescence fell progressively with successive stimulation trials (Figure 3E), in contrast to NPRRANP where the first peak and undershoot were lower (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between NPRRdTK and NPRRANP shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e6660994-83a7-433e-858c-bfd69a02fe83",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C76",
+      "claim": "The reason for the difference in response kinetics between NPRRdTK and NPRRANP is currently unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for this difference is currently unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement acknowledging an unexplained observation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "3ed35462-c6d3-4f42-bd1b-57af860573bf",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C77",
+      "claim": "For both NPRRANP and NPRRdTK, the peak responses showed a positive correlation with stimulation frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "For both NPRRANP and NPRRdTK (Figure 4A\u2013B), the peak responses showed a positive correlation with stimulation frequency, analogous to that observed using cytosolic GCaMP6s (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the frequency titration experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "5246ec97-5ba5-4a55-a1d0-cf8173d50603",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C78",
+      "claim": "In Type III neurons, the responses of both NPRRs to stimulation frequencies < 30 Hz (1,5,10,20 Hz) were not statistically significant from zero.",
+      "claim_type": "EXPLICIT",
+      "source": "In Type III neurons, the responses of both NPRRs to stimulation frequencies < 30 Hz (1,5,10,20 Hz) were not statistically significant from zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the frequency titration experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "7690c0f9-4e4f-4cc9-997f-9c4f670430c5",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C79",
+      "claim": "NPRRANP showed a higher sensitivity to high stimulation frequencies (30 Hz: 18.14%, 50 Hz: 82.40% Normalized peak \u2206F/F) in Type III neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "NPRRANP showed a higher sensitivity to high stimulation frequencies (30 Hz: 18.14%, 50 Hz: 82.40% Normalized peak \u2206F/F)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the frequency titration experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "257962ad-c21b-4a51-a7c6-2770d8caa35a",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C80",
+      "claim": "NPRRdTK showed a higher stimulation threshold and lower sensitivity (30 Hz: 3.57%, 50 Hz: 24.67% Normalized peak \u2206F/F) in Type III neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "while NPRRdTK showed a higher stimulation threshold and lower sensitivity (30 Hz: 3.57%, 50 Hz: 24.67% Normalized peak \u2206F/F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the frequency titration experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "c7e84f81-af4f-43c0-ba7d-ccb659c3a417",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C81",
+      "claim": "In Type Ib neurons, significant increases in \u2206F/F could be observed at frequencies as low as 10 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in Type Ib neurons, significant increases in \u2206F/F could be observed at frequencies as low as 10 Hz (Figure 4D,E; NPRRANP @ 20 Hz: 12.50%, NPRRdTK @ 20 Hz: 17.67% normalized peak \u2206F/F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the frequency titration experiments shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "babac7fd-e8ef-46f9-a875-a8714c0dc5fe",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C82",
+      "claim": "The reason for the difference in NPRR threshold between Type III and Type Ib neurons is unknown, but parallels their difference in GCaMP6s response to electrical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for the difference in NPRR threshold between Type III and Type Ib neurons is unknown, but parallels their difference in GCaMP6s response to electrical stimulation (Figure 4C vs. Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation with a comparison to control experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "cc845445-5d3d-44ed-b2e4-422455cfaf8f",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C83",
+      "claim": "Although NPRRANP and NPRRdTK presented distinct response profiles in Type III neurons, their performance in Type Ib neurons was more similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, although NPRRANP and NPRRdTK presented distinct response profiles in Type III neurons, their performance in Type Ib neurons was more similar (Figure 4A vs. Figure 4B; cf. Figure 4D vs. Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of results shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "7abce81b-b083-4a99-b632-e7f6442f454f",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C84",
+      "claim": "The differences in performance observed between the two NPRRs appeared to be specific to Type III neurons, and were minor in comparison to the differences in performance of both reporters between the two cell classes.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the differences in performance we observed between the two NPRRs appeared to be specific to Type III neurons, and were minor in comparison to the differences in performance of both reporters between the two cell classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the comparative results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e0edb412-9f03-4cf3-a5cf-dfb1bc1b669e",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C85",
+      "claim": "The reason for the differences between NPRRANP and NPRRdTK sensitivity and kinetics in Type III neurons is unknown but may reflect differences in how well these reporters compete with the high levels of endogenous neuropeptide (Bursicon) for packaging, transport or release.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for the differences between NPRRANP and NPRRdTK sensitivity and kinetics in Type III neurons is unknown but may reflect differences in how well these reporters compete with the high levels of endogenous neuropeptide (Bursicon) for packaging, transport or release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "88999581-fdc0-4d21-a89f-abf5c1eff4c5",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C86",
+      "claim": "The method presented provides proof-of-principle for detecting the release of different neuropeptides in intact neural tissue, with subcellular spatial and sub-second temporal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present proof-of-principle for a method to detect the release of different neuropeptides in intact neural tissue, with subcellular spatial and sub-second temporal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "d97a1753-e848-4a30-afd9-7621f3986a5e",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C87",
+      "claim": "The method exploits the fluorescent change of GCaMP in response to a shift in pH and [Ca2+] to visualize the release of neuropeptides by capturing the difference between the intravesicular and extracellular microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "By exploiting the fluorescent change of GCaMP in response to a shift in pH and [Ca2+], we visualized the release of neuropeptides by capturing the difference between the intravesicular and extracellular microenvironment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the method's principle.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "44443b98-89b3-41b6-8239-e80a8e394b44",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C88",
+      "claim": "NPRR responses exhibited triphasic kinetics, including rising, falling and recovering phases.",
+      "claim_type": "EXPLICIT",
+      "source": "NPRR responses exhibited triphasic kinetics, including rising, falling and recovering phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the observed response pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "50d1769f-5222-490a-91ce-2ba7f0d625e6",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C89",
+      "claim": "In the falling phase, a post-stimulus 'undershoot' was observed in which the fluorescent intensity fell below pre-stimulation baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "In the falling phase, a post-stimulus 'undershoot', was observed in which the fluorescent intensity fell below pre-stimulation baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the observed response pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "26d5b405-4280-42ab-af22-cd30f14450f7",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C90",
+      "claim": "The undershoot presumably reflects the slow kinetics of DCV replenishment relative to release.",
+      "claim_type": "EXPLICIT",
+      "source": "This undershoot presumably reflect the slow kinetics of DCV replenishment relative to release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed undershoot.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e3d4672d-a7e4-44fc-85b2-1b204f8f668b",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C91",
+      "claim": "The molecular mechanisms of NP release are incompletely understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanisms of NP release are incompletely understood (Xu and Xu, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "62a49466-9f4e-4b46-a9a0-40f45e09eba0",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C92",
+      "claim": "It is possible that individual DCVs only unload part of their cargo during stimulation, in which case many DCVs that underwent fusion may still contain unreleased NPRR molecules following a stimulus pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that individual DCVs only unload part of their cargo during stimulation, in which case many DCVs that underwent fusion may still contain unreleased NPRR molecules following a stimulus pulse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative consideration about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e599eb90-b6ba-466e-9c2f-846eef4ed6b5",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C93",
+      "claim": "The authors are convinced that NPRR signals do indeed reflect NP release, due to the presence of the recovering phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we are convinced that NPRR signals do indeed reflect NP release, due to the presence of the recovering phase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the authors' interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "ce642e3c-23a5-4927-9736-718abbb8fc97",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C94",
+      "claim": "The authors cannot formally exclude that unreleased NPRRs may contribute to the signal change due to their experience of intravesicular [Ca2+]/pH changes that occur during stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "we cannot formally exclude that unreleased NPRRs may contribute to the signal change due to their experience of intravesicular [Ca2+]/pH changes that occur during stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat stated by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "9f86ced4-65fb-4be0-8e87-500e565519a4",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C95",
+      "claim": "Multiple attempts to generate NP-reporter fusions with RFP that are [Ca2+]/pH-invariant were unsuccessful, due to cryptic proteolytic cleavage sites in the protein which presumably result in degradation by DCV proteases during packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple attempts to generate such fusions with RFP were unsuccessful, due to cryptic proteolytic cleavage sites in the protein which presumably result in degradation by DCV proteases during packaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about unsuccessful experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "5458ce1d-814c-4c76-8d22-7b2f8a3d7143",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C96",
+      "claim": "TNT has been shown to effectively block NP release in many systems.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if NPRRANP \u2206F/F signals are dependent on NP release, we expressed the light chain of tetanus toxin (TNT), a reagent shown to effectively block NP release in many (McNabb and Truman, 2008; Hentze et al., 2015; Zandawala et al., 2018), if not all (Umezaki et al., 2011), systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e4fa583e-ee92-4150-b38a-ce1247029ec7",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C97",
+      "claim": "A striking difference in NPRR kinetics was observed in flies co-expressing TNT vs. its proteolytically inactive 'impotent' control form TNTimp.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a striking difference in NPRR kinetics in flies co-expressing TNT vs. its proteolytically inactive 'impotent' control form TNTimp (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the TNT experiments shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "f5c20561-faaf-42a6-9ddf-59ecd3872d0c",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C98",
+      "claim": "The strong reduction of NPRR signals by TNT-mediated n-syb cleavage is consistent with the idea that these signals reflect the release of NPRRs from DCVs.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong reduction of NPRR signals by TNT-mediated n-syb cleavage is consistent with the idea that these signals reflect the release of NPRRs from DCVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the TNT experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "7ab598a6-b98f-4489-b341-1f67f659fb1f",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C99",
+      "claim": "The generalizability of the principles used to generate NPRRs was tested by constructing a surrogate NP reporter NPRRANP as well as a multi-peptide-producing endogenous Drosophila NP reporter NPRRdTK.",
+      "claim_type": "EXPLICIT",
+      "source": "We have tested the generalizability of the principles used to generate NPRRs by (1) constructing a surrogate NP reporter NPRRANP as well as a multi-peptide-producing endogenous Drosophila NP reporter NPRRdTK (Figures 2\u20133)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e70ec70b-d46a-4be5-85f5-f1e739c46fc5",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C100",
+      "claim": "NPRR signals were characterized in response to varying intensities of electrical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) characterized NPRR signals in response to varying intensities of electrical stimulation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e7eccb43-b82d-430d-9f34-49699d575eb3",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C101",
+      "claim": "NPRR signals were recorded in two different classes of NMJ motor neurons containing DCVs with or without SVs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "and (3) recorded NPRR signals in two different classes of NMJ motor neurons containing DCVs with or without SVs, respectively (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct statement about the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "54759573-a3f9-4211-aca5-055b17966353",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C102",
+      "claim": "NPRR responses exhibit cell-type specific characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments revealed, to our surprise, that NPRR responses exhibit cell-type specific characteristics (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the comparative experiments shown in the figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "e8b48c00-988c-444d-93ef-018acb517401",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C103",
+      "claim": "As NPRRs are applied to other neuropeptides and cell types, a systematic characterization of neuropeptide release properties in different peptidergic neurons should become possible.",
+      "claim_type": "EXPLICIT",
+      "source": "As NPRRs are applied to other neuropeptides and cell types, a systematic characterization of neuropeptide release properties in different peptidergic neurons should become possible, furthering our understanding of neuropeptide biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "2cbac07a-a4e6-4c05-abf3-856af27dd548",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C104",
+      "claim": "The method described can, in principle, be extended to an in vivo setting.",
+      "claim_type": "EXPLICIT",
+      "source": "The method described here can, in principle, be extended to an in vivo setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applicability of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "4b3aac27-f755-4c40-b13c-a27dd529b321",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C105",
+      "claim": "Extension to an in vivo setting would open the possibility of addressing several important unresolved issues in the study of NP function in vivo, including the 'which', 'when', 'where', and 'how' problems.",
+      "claim_type": "EXPLICIT",
+      "source": "This would open the possibility of addressing several important unresolved issues in the study of NP function in vivo. These include the 'which' problem (which neuron(s) release(s) NPs under particular behavioral conditions?); the 'when' problem (when do these neurons release NPs relative to a particular behavior or physiological event?); the 'where' problem (are NPs released from axons, dendrites or both?); and the 'how' problem (how is NP release regulated?).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "ec0991c2-a3b1-4b0b-831c-b3dcc8a3ae21",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C106",
+      "claim": "The application of NPRRs to measuring NP release dynamics in awake, freely behaving animals may yield answers to important long-standing questions.",
+      "claim_type": "EXPLICIT",
+      "source": "The application of NPRRs to measuring NP release dynamics in awake, freely behaving animals may yield answers to these important long-standing questions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "58711a65-0828-4164-99a4-049b2e302e86",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C107",
+      "claim": "NPRRANP-GFP is strongly labeled in DCVs with an average of 14.26 times more gold particles per \u00b5m2 than in neighboring bouton cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "NPRRANP-GFP showed dense labeling in association with DCVs (Figure 1D, arrows), where the average number of gold particles/\u00b5m2 was substantially and significantly higher than in neighboring bouton cytoplasm (DCV/Bouton ~ 14.26) (Figure 1E, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from Immuno-EM shown in Figure 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "19e4357a-c9bf-4f93-a65f-65700fbb9839",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C108",
+      "claim": "NPRRdTK is localized to DCVs with an average of 22.19 times more gold particles per \u00b5m2 in DCVs than in bouton cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Light microscopy (Figure 3A) and Immuno-EM (Figure 3B, arrows) confirmed that NPRRdTK, like NPRRANP, was localized to DCVs (DCV/bouton ~ 22.19, Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from Immuno-EM shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "11669e0f-a256-474a-acb4-490f47ffc68e",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C109",
+      "claim": "Type Ib neurons contain relatively few DCVs relative to SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In Type Ib neurons (which contain relatively few DCVs relative to SVs [Menon et al., 2013])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "11adfe89-05dd-4b64-a6e0-a1230600dea1",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C110",
+      "claim": "R57C10-Gal4 (nsyb-GAL4) labels all motor neuron subtypes at the Drosophila NMJ.",
+      "claim_type": "EXPLICIT",
+      "source": "The GAL4 driver R57C10-Gal4 (nsyb-GAL4) labels all subtypes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "4e16e07b-5cb6-4f74-a76d-3b46b5692799",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "claim_id": "C111",
+      "claim": "R20C11-GAL4 selectively labels only Type III neurons, which lack SVs.",
+      "claim_type": "EXPLICIT",
+      "source": "while R20C11-GAL4 selectively labels only Type III neurons, which lack SVs ('Type III-GAL4').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7cf57a44-f41e-497f-9e0b-202eae9c5dc9",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior methods for measuring neuropeptide release lack the combination of neuropeptide specificity, genetically addressable cell type-specificity, high temporal resolution, and applicability to in vivo preparations. Existing techniques include microdialysis, antibody-coated microprobes, GFP-tagged propeptides visualized by fluorescence microscopy or TIRF imaging, and ANP-GFP fusions in Drosophila that measure release indirectly as fluorescence decrease on a seconds timescale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C13 establish the research gap and review prior methods. The characterization of existing methods is supported by appropriate citations (C7-C12) and a comparison table in supplementary materials (C13). The assessment that no existing method combines all desired features is well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "ee43ad50-fc16-4541-8db7-a5a75879d871",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NPRRs are novel genetically-encoded sensors designed with two key components: a reporter domain (GCaMP6s) that exploits pH and calcium differences between the DCV lumen (pH 5.5-6.75, ~30 \u00b5M Ca2+) and extracellular space (pH 7.3, ~2 mM Ca2+), and a sorting domain (neuropeptide precursor) that ensures trafficking into DCVs. The optimal design substitutes the reporter for the C-terminal domain following the final peptide, with removal of the dibasic cleavage site. 54 constructs were screened to identify this optimal configuration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C15-C28 describe the design rationale and screening process for NPRRs. The design principles are well-justified based on known DCV properties (C22-C23, supported by citations) and GCaMP6s characteristics (C25-C27). The screening of 54 constructs (C19) and identification of optimal design (C20) provide empirical support. The dual pH/calcium sensitivity mechanism is logically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "185da070-a08a-4d95-8949-de137491cc09",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NPRRs recapitulate the trafficking and packaging of native neuropeptides in the Drosophila larval NMJ. NPRRANP distribution overlaps with endogenous Bursicon in Type III neurons and shows subcellular localization similar to other DCV-targeted markers. In Type Ib neurons, NPRRANP appears in dispersed punctae distinct from synaptic vesicle markers (vGluT), while in Type III neurons (which lack SVs), NPRRs are strongly expressed without vGluT immunoreactivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C29-C41, C110-C111 demonstrate proper trafficking using immunohistochemistry. The colocalization with endogenous Bursicon (C34), exclusion from SVs (C37-C41), and similarity to prior DCV markers (C40) provide converging evidence. The use of Type III-specific GAL4 drivers (C33, C111) enables cell-type-specific validation. The data are well-supported by figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "693b2df0-2915-4981-a9ce-3c4a2959d02d",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Immuno-electron microscopy confirms that NPRR-GFP constructs are localized to DCVs with 14.26-fold (NPRRANP-GFP) and 22.19-fold (NPRRdTK-GFP) enrichment of gold particles in DCVs compared to bouton cytoplasm. While NPRR-GFP and NPRR-GCaMP6s show indistinguishable distributions by immunofluorescence, the authors cannot formally exclude subtle differences in subcellular localization undetectable by light microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49, C73, C107-C108 provide nanometer-scale validation of DCV localization using immuno-EM. The quantitative enrichment data (C45, C107, C108) are substantial and statistically significant. The caveat about potential differences between GFP and GCaMP6s constructs (C49) is appropriately acknowledged. The use of GFP constructs to maximize antigenicity (C43) is a reasonable experimental design choice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "5b249617-dc09-407d-bc5a-4383c194dfd1",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "NPRRs report stimulation-evoked neuropeptide release as real-time fluorescence changes with sub-second temporal resolution. NPRRANP exhibits a tri-phasic response pattern: (1) rising phase with peak 0.5-5 seconds after stimulation onset (vs. instantaneous for cytosolic GCaMP6s), (2) falling phase beginning 1-5 seconds before stimulation termination, and (3) post-stimulation undershoot followed by recovery. NPRRANP signals are preferentially localized to boutons where DCVs are located, with significantly higher bouton/IBI fluorescence ratios than cytosolic GCaMP6s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C50-C64, C88-C89 demonstrate functional NPRR responses to electrical stimulation. The tri-phasic kinetics (C53, C88) are well-characterized with appropriate controls (cytosolic GCaMP6s). The delayed peak compared to GCaMP6s (C54) is consistent with DCV fusion kinetics cited from prior work (C55-C56). The spatial localization to boutons (C62-C64) provides additional evidence that signals reflect DCV release rather than cytosolic calcium. The data are supported by multiple figures and quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "596905a7-31d3-417f-9ce6-f46217a38a99",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NPRRANP signals specifically reflect DCV release, as demonstrated by tetanus toxin (TNT) experiments. TNT expression completely abolished stimulation-induced \u0394F/F increases, peaks, and undershoots from NPRRANP, while the inactive control TNTimp had no effect. In contrast, neither TNT nor TNTimp affected cytosolic GCaMP6s signals, which report calcium influx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69, C96-C98 provide critical validation that NPRR signals depend on vesicle fusion. The use of TNT (which cleaves n-synaptobrevin required for DCV fusion) with appropriate inactive control (TNTimp) is well-designed. The complete abolition of NPRR signals by TNT (C66-C67) while GCaMP6s signals are unaffected (C68) strongly supports the conclusion that signals reflect DCV release rather than intracellular calcium changes. The experimental logic is sound and well-supported by data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "83c24dd3-c294-41f8-bc20-cfc1eaf6fcd3",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The NPRR approach generalizes to endogenous Drosophila neuropeptides. NPRRdTK, derived from the multi-peptide precursor DTK, localizes to DCVs and exhibits the basic tri-phasic response profile upon stimulation. However, NPRRdTK shows different kinetics than NPRRANP, with progressively falling peak heights and baseline fluorescence across successive trials (vs. lower first peak for NPRRANP). The reason for this difference is unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76, C99 demonstrate generalizability to endogenous neuropeptides. The DCV localization of NPRRdTK is confirmed by both light microscopy and immuno-EM (C73). The tri-phasic response (C74) validates the approach, though kinetic differences from NPRRANP (C75) remain unexplained (C76). The acknowledgment of unexplained differences is appropriate, and the overall demonstration of generalizability is convincing despite these differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NPRR responses exhibit cell-type-specific characteristics. In Type III neurons, both NPRRs show positive correlation with stimulation frequency but require \u226530 Hz for significant responses, with NPRRANP showing higher sensitivity than NPRRdTK. In Type Ib neurons, both NPRRs respond at frequencies as low as 10 Hz with more similar performance. The differences between reporters are specific to Type III neurons and minor compared to differences between cell types. This may reflect competition with endogenous neuropeptides (Bursicon) in Type III neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C85, C100-C102 reveal unexpected cell-type-specific NPRR behavior through systematic frequency titration experiments. The statistical analysis comparing responses to zero (C78) is appropriate. The striking difference in threshold between Type III (\u226530 Hz) and Type Ib (\u226510 Hz) neurons (C81-C82) is well-documented and parallels GCaMP6s responses. The interpretation regarding competition with endogenous peptides (C85) is speculative but reasonable. The demonstration of cell-type specificity is a significant finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "627ca6d1-59e4-47cc-96ea-d54986eabf1e",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study provides proof-of-principle for detecting neuropeptide release in intact neural tissue with subcellular spatial and sub-second temporal resolution by exploiting GCaMP's dual pH/calcium sensitivity. The post-stimulus undershoot presumably reflects slow DCV replenishment kinetics. While the authors are convinced signals reflect release due to the recovery phase, they cannot formally exclude contributions from unreleased NPRRs experiencing intravesicular pH/calcium changes during stimulation. Attempts to generate pH/calcium-invariant RFP controls were unsuccessful due to proteolytic degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C95 present the main conclusions and caveats. While the proof-of-principle is well-demonstrated (C86-C87), the inability to definitively exclude contributions from unreleased NPRRs (C94) is a significant limitation. The failed attempts to generate RFP controls (C95) leave this question unresolved. The TNT experiments provide strong but not absolute evidence for release-dependence. The undershoot interpretation (C90) is reasonable but not definitively proven. Additional controls would strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "f24edce0-321b-4a7c-b214-1cd321c38334",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Future applications of NPRRs to other neuropeptides and cell types should enable systematic characterization of neuropeptide release properties. The method can in principle be extended to in vivo settings to address fundamental questions about which neurons release neuropeptides under specific behavioral conditions, when release occurs relative to behavior, where release occurs (axons vs. dendrites), and how release is regulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C106 discuss future applications and potential. These are appropriately framed as predictions and possibilities rather than demonstrated results. The speculation is reasonable given the proof-of-principle data presented. However, these are forward-looking statements about potential rather than current achievements, so they represent future work rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    },
+    {
+      "id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f",
+      "content_id": "aaeb6c97-e486-4d3e-b233-f5cbcc7777f3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript establishes relevant background knowledge about neuropeptides, DCVs, and the experimental system. This includes neuropeptide synthesis and processing, DCV pH and calcium concentrations, neurotransmitter identity at the NMJ, motor neuron subtype composition, and TNT mechanism of action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C14, C22-C23, C25-C26, C31-C32, C36, C65, C70, C72, C91, C96, C109 present established knowledge supported by appropriate citations. These background claims are accurately represented and properly attributed to prior literature. They provide necessary context for the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T10:52:16.802356Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "88fae6c4-c594-4f12-abdf-b734a0daf513",
+      "result_id": "7cf57a44-f41e-497f-9e0b-202eae9c5dc9"
+    },
+    {
+      "claim_id": "a90e220b-743a-422c-ade8-677b4cd58a7d",
+      "result_id": "7cf57a44-f41e-497f-9e0b-202eae9c5dc9"
+    },
+    {
+      "claim_id": "453ef49f-d9da-44b7-8022-fb7ba0e7ec76",
+      "result_id": "7cf57a44-f41e-497f-9e0b-202eae9c5dc9"
+    },
+    {
+      "claim_id": "2e7a1c8e-09f8-4ccd-9e15-022c0f12c033",
+      "result_id": "7cf57a44-f41e-497f-9e0b-202eae9c5dc9"
+    },
+    {
+      "claim_id": "756072aa-7f12-42c7-a5eb-988778d5780b",
+      "result_id": "7cf57a44-f41e-497f-9e0b-202eae9c5dc9"
+    },
+    {
+      "claim_id": "6c489093-b6f3-45e4-925e-955b5f29442e",
+      "result_id": "7cf57a44-f41e-497f-9e0b-202eae9c5dc9"
+    },
+    {
+      "claim_id": "845b2008-d854-4376-8334-6bcdbaf04a64",
+      "result_id": "7cf57a44-f41e-497f-9e0b-202eae9c5dc9"
+    },
+    {
+      "claim_id": "0fc239e6-ae95-4786-8aa1-3ea10a13dee7",
+      "result_id": "7cf57a44-f41e-497f-9e0b-202eae9c5dc9"
+    },
+    {
+      "claim_id": "4ce4f9cc-e6a1-483e-9d1e-b9734298dd11",
+      "result_id": "7cf57a44-f41e-497f-9e0b-202eae9c5dc9"
+    },
+    {
+      "claim_id": "8d3c2564-a6ec-4cfb-99db-987357ecba25",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "4627d80c-49c2-4ef6-bd97-dd60030f096d",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "82deb13b-20dd-48bb-a4a3-d3ba3e4f1a60",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "c9efd679-e5df-4d54-9d78-a5ba19bb2560",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "9c071328-dfb7-4e6e-939a-300a5dc6d64c",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "a8a8363b-daf4-4702-8ff8-8391236a54e9",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "d12b8481-7f41-4f90-8f19-e892b8c6666b",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "522ef41b-71e7-4794-9eff-e6798b81a5cf",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "cd8b1579-3273-4f00-8c38-96a669c07ff3",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "52cbbb98-094c-4d68-a19d-1c91c069a860",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "59afd4cc-4d8a-4497-9e6b-7133e42b031a",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "7d19d434-a570-444b-8f22-3ed79651b7a2",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "ca7366ab-5f3c-47bf-b862-7495b5a4573f",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "6914537d-a30b-48d3-aaf5-c15c8acfb329",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "995ab913-63ed-4b59-ac39-fe4716907293",
+      "result_id": "ee43ad50-fc16-4541-8db7-a5a75879d871"
+    },
+    {
+      "claim_id": "e108c01e-d875-4160-97ec-50a928ef363f",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "163c8081-b448-4890-b571-f6483e497f2d",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "8b186c0d-cb91-4718-896e-570eef60113b",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "9bad4ea5-2234-429b-b21d-a405f781c643",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "b4d39769-fac7-4a22-8b08-af26fef069da",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "5e4eaf8a-f48e-4caa-8836-f649867b8d93",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "39d89df7-c744-4bf2-bfbf-fb70aeae1709",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "2051b9e9-39bf-4deb-bf94-bb246bd90c1f",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "d59ab77d-5515-4f68-884c-5e84b7be422a",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "07272757-c5c4-4ce1-b75e-54ad26381a56",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "0a27d615-aa6d-4440-b3d1-8853faabe0e9",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "09adaddf-429a-49ee-b0fc-dbbb91de6dd3",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "fd958d33-72f9-4fcf-8b69-447d6fa71c85",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "5639eb12-5318-4742-8f19-111b38cf1cd6",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "11adfe89-05dd-4b64-a6e0-a1230600dea1",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "4e16e07b-5cb6-4f74-a76d-3b46b5692799",
+      "result_id": "185da070-a08a-4d95-8949-de137491cc09"
+    },
+    {
+      "claim_id": "8fc76512-f907-4dfc-9fac-2b23ee13f81f",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "87e1d854-616c-40b5-80e7-0c5bafe300d9",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "6f073fed-5b2d-4ae1-8cb2-c5a46822adee",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "aa36d831-7226-41d6-9b37-2bef5263d373",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "921f7f33-536e-462d-b5a9-ab34a87fb923",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "9401e887-4ca9-45d2-94b3-6b5c6ef463af",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "5375f0a5-711b-4567-a55c-01e063223bce",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "13d64ab3-8d75-4e88-a4dc-c5f9d1b23d15",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "58711a65-0828-4164-99a4-049b2e302e86",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "19e4357a-c9bf-4f93-a65f-65700fbb9839",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "daa7ae22-8212-4043-ba28-8a5cd6247909",
+      "result_id": "693b2df0-2915-4981-a9ce-3c4a2959d02d"
+    },
+    {
+      "claim_id": "e273c6da-6856-47b0-aa4e-3977176fc62d",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "2d2363b6-018c-4a81-a9e2-1d7d3c8f4228",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "be94a5eb-2f85-4184-b335-dcea1f425902",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "5c39485c-9db8-4107-af51-91b6ec1989f7",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "aa86d02e-9297-4d8f-be08-6b48bb50ed0e",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "0bcc969a-f493-44db-9f09-2f60b8176dc4",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "79fcd6a4-22cd-4236-8978-ac5c6dcb4bd9",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "fed7d5d8-eb3d-455d-9c66-cb41619453a2",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "e878bdbe-e65a-434f-9e10-b6dd63fd193a",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "54e419d3-3231-4b63-bc16-e80fee43b756",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "f6f9fe71-4a2c-4e55-b541-f3ee827a3dec",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "4604b85a-1964-4404-8148-1e09e21e884b",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "8e39339e-7c1a-4dd7-9b46-c424e2a578cc",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "d50d0e03-8f48-49a6-8be5-474145c05976",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "e22b3489-1b55-4baf-9ef3-bb500828604d",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "2a7a532c-4e75-4f09-b551-23763672df34",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "44443b98-89b3-41b6-8239-e80a8e394b44",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "50d1769f-5222-490a-91ce-2ba7f0d625e6",
+      "result_id": "5b249617-dc09-407d-bc5a-4383c194dfd1"
+    },
+    {
+      "claim_id": "b787eb76-5d03-472a-80a1-077c3b2da2da",
+      "result_id": "596905a7-31d3-417f-9ce6-f46217a38a99"
+    },
+    {
+      "claim_id": "01895dbd-2b34-4fa7-9d7a-177f7d053339",
+      "result_id": "596905a7-31d3-417f-9ce6-f46217a38a99"
+    },
+    {
+      "claim_id": "a3474a4b-c262-48ca-83e1-3ae7c57b4bf2",
+      "result_id": "596905a7-31d3-417f-9ce6-f46217a38a99"
+    },
+    {
+      "claim_id": "d77c02f3-a7d6-48db-9e48-d84be3a71029",
+      "result_id": "596905a7-31d3-417f-9ce6-f46217a38a99"
+    },
+    {
+      "claim_id": "5049f241-aaca-4c76-bf62-bfc5d1a9079c",
+      "result_id": "596905a7-31d3-417f-9ce6-f46217a38a99"
+    },
+    {
+      "claim_id": "5458ce1d-814c-4c76-8d22-7b2f8a3d7143",
+      "result_id": "596905a7-31d3-417f-9ce6-f46217a38a99"
+    },
+    {
+      "claim_id": "e4fa583e-ee92-4150-b38a-ce1247029ec7",
+      "result_id": "596905a7-31d3-417f-9ce6-f46217a38a99"
+    },
+    {
+      "claim_id": "f5c20561-faaf-42a6-9ddf-59ecd3872d0c",
+      "result_id": "596905a7-31d3-417f-9ce6-f46217a38a99"
+    },
+    {
+      "claim_id": "9c158394-6513-4a29-bff8-8514b704996a",
+      "result_id": "83c24dd3-c294-41f8-bc20-cfc1eaf6fcd3"
+    },
+    {
+      "claim_id": "078c302e-4e84-41e6-990f-078342debb9a",
+      "result_id": "83c24dd3-c294-41f8-bc20-cfc1eaf6fcd3"
+    },
+    {
+      "claim_id": "363ae9dc-f42a-48ac-a534-2174826c45a2",
+      "result_id": "83c24dd3-c294-41f8-bc20-cfc1eaf6fcd3"
+    },
+    {
+      "claim_id": "daa7ae22-8212-4043-ba28-8a5cd6247909",
+      "result_id": "83c24dd3-c294-41f8-bc20-cfc1eaf6fcd3"
+    },
+    {
+      "claim_id": "1bff37a6-d759-42f9-b535-f619e7bcd390",
+      "result_id": "83c24dd3-c294-41f8-bc20-cfc1eaf6fcd3"
+    },
+    {
+      "claim_id": "9d352cbc-f3d4-46dd-89cc-fa8b3af3e8ed",
+      "result_id": "83c24dd3-c294-41f8-bc20-cfc1eaf6fcd3"
+    },
+    {
+      "claim_id": "e6660994-83a7-433e-858c-bfd69a02fe83",
+      "result_id": "83c24dd3-c294-41f8-bc20-cfc1eaf6fcd3"
+    },
+    {
+      "claim_id": "7ab598a6-b98f-4489-b341-1f67f659fb1f",
+      "result_id": "83c24dd3-c294-41f8-bc20-cfc1eaf6fcd3"
+    },
+    {
+      "claim_id": "3ed35462-c6d3-4f42-bd1b-57af860573bf",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "5246ec97-5ba5-4a55-a1d0-cf8173d50603",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "7690c0f9-4e4f-4cc9-997f-9c4f670430c5",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "257962ad-c21b-4a51-a7c6-2770d8caa35a",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "c7e84f81-af4f-43c0-ba7d-ccb659c3a417",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "babac7fd-e8ef-46f9-a875-a8714c0dc5fe",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "cc845445-5d3d-44ed-b2e4-422455cfaf8f",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "7abce81b-b083-4a99-b632-e7f6442f454f",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "e0edb412-9f03-4cf3-a5cf-dfb1bc1b669e",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "e70ec70b-d46a-4be5-85f5-f1e739c46fc5",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "e7eccb43-b82d-430d-9f34-49699d575eb3",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "54759573-a3f9-4211-aca5-055b17966353",
+      "result_id": "68c2ab2f-d3c8-44f5-b50c-a330b7569a8b"
+    },
+    {
+      "claim_id": "88999581-fdc0-4d21-a89f-abf5c1eff4c5",
+      "result_id": "627ca6d1-59e4-47cc-96ea-d54986eabf1e"
+    },
+    {
+      "claim_id": "d97a1753-e848-4a30-afd9-7621f3986a5e",
+      "result_id": "627ca6d1-59e4-47cc-96ea-d54986eabf1e"
+    },
+    {
+      "claim_id": "26d5b405-4280-42ab-af22-cd30f14450f7",
+      "result_id": "627ca6d1-59e4-47cc-96ea-d54986eabf1e"
+    },
+    {
+      "claim_id": "e3d4672d-a7e4-44fc-85b2-1b204f8f668b",
+      "result_id": "627ca6d1-59e4-47cc-96ea-d54986eabf1e"
+    },
+    {
+      "claim_id": "62a49466-9f4e-4b46-a9a0-40f45e09eba0",
+      "result_id": "627ca6d1-59e4-47cc-96ea-d54986eabf1e"
+    },
+    {
+      "claim_id": "e599eb90-b6ba-466e-9c2f-846eef4ed6b5",
+      "result_id": "627ca6d1-59e4-47cc-96ea-d54986eabf1e"
+    },
+    {
+      "claim_id": "ce642e3c-23a5-4927-9736-718abbb8fc97",
+      "result_id": "627ca6d1-59e4-47cc-96ea-d54986eabf1e"
+    },
+    {
+      "claim_id": "9f86ced4-65fb-4be0-8e87-500e565519a4",
+      "result_id": "627ca6d1-59e4-47cc-96ea-d54986eabf1e"
+    },
+    {
+      "claim_id": "e8b48c00-988c-444d-93ef-018acb517401",
+      "result_id": "f24edce0-321b-4a7c-b214-1cd321c38334"
+    },
+    {
+      "claim_id": "2cbac07a-a4e6-4c05-abf3-856af27dd548",
+      "result_id": "f24edce0-321b-4a7c-b214-1cd321c38334"
+    },
+    {
+      "claim_id": "4b3aac27-f755-4c40-b13c-a27dd529b321",
+      "result_id": "f24edce0-321b-4a7c-b214-1cd321c38334"
+    },
+    {
+      "claim_id": "ec0991c2-a3b1-4b0b-831c-b3dcc8a3ae21",
+      "result_id": "f24edce0-321b-4a7c-b214-1cd321c38334"
+    },
+    {
+      "claim_id": "9a6fb9c0-1538-41e7-bd06-3af8084b7829",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "76afd090-0e58-4832-8bae-e20dad6627c0",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "cd8b1579-3273-4f00-8c38-96a669c07ff3",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "52cbbb98-094c-4d68-a19d-1c91c069a860",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "7d19d434-a570-444b-8f22-3ed79651b7a2",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "ca7366ab-5f3c-47bf-b862-7495b5a4573f",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "9bad4ea5-2234-429b-b21d-a405f781c643",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "b4d39769-fac7-4a22-8b08-af26fef069da",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "d59ab77d-5515-4f68-884c-5e84b7be422a",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "b787eb76-5d03-472a-80a1-077c3b2da2da",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "9c158394-6513-4a29-bff8-8514b704996a",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "363ae9dc-f42a-48ac-a534-2174826c45a2",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "e3d4672d-a7e4-44fc-85b2-1b204f8f668b",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "5458ce1d-814c-4c76-8d22-7b2f8a3d7143",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    },
+    {
+      "claim_id": "11669e0f-a256-474a-acb4-490f47ffc68e",
+      "result_id": "29bd0b3e-e00c-4d2d-9c99-16113cf8015f"
+    }
+  ],
+  "comparisons": []
+}

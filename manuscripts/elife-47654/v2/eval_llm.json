@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C40",
+      "C41",
+      "C42",
+      "C100"
+    ],
+    "result": "KRAS4b exhibits unique three-state confined diffusion behavior distinct from other RAS isoforms (HRAS, NRAS, KRAS4a), characterized by fast, intermediate, and slow diffusive states with specific transition probabilities suggesting an ordered assembly process. This behavior is consistent across multiple cell lines and is independent of protein density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18-C30, C40-C42, and C100 collectively demonstrate through HMM and MSD analyses that KRAS4b has unique three-state diffusion with ordered transitions (C26-C27), while other isoforms show two-state behavior (C28-C29). The findings are replicated across HeLa, MEF, and pancreatic cancer cell lines (C42) and are independent of expression levels (C25), providing robust experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C43",
+      "C44",
+      "C45",
+      "C102"
+    ],
+    "result": "The confined diffusion behavior of KRAS4b is primarily determined by the globular (G-) domain rather than the hypervariable region (HVR), as demonstrated by comparing full-length KRAS4b with HVR truncation mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21, C43-C45, and C102 are supported by experimental data comparing full-length KRAS4b with HVR truncation mutants (Figure 1g). The truncated HVR shows free mobility while full-length protein shows confinement, directly demonstrating that the G-domain is responsible for the confined behavior. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C106",
+      "C107",
+      "C118",
+      "C119"
+    ],
+    "result": "Atomistic molecular dynamics simulations identified specific G-domain residues that form transient contacts with lipid head groups, and mutations of these residues to mimic HRAS and NRAS reduce KRAS4b confinement in live cell experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C106-C107, C118-C119 demonstrate strong agreement between computational predictions (simulations showing G-domain-lipid contacts) and experimental validation (mutants showing reduced confinement). The 4b-ESR and 4b-GNK mutants showed less confinement in both simulations (C47) and live cells (C48-C49), providing convergent evidence for the role of specific G-domain residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C67",
+      "C68",
+      "C98"
+    ],
+    "result": "The fast diffusion component of KRAS4b is modulated by the charge state of lysine residues in the HVR, with charge neutralization or reversal leading to increased diffusion rates in a linear manner, while the slow component remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61, C67-C68, and C98 demonstrate through systematic charge mutations that the fast component diffusion rate increases linearly with charge reduction (C55), reaching ~1.2 \u00b5m\u00b2/s for the 5EA mutant (C56), while the slow component and state occupancy remain unchanged (C57, C61). This provides clear evidence for the role of HVR charge in modulating the fast diffusion state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The position of lysine charges in the HVR, particularly K184 adjacent to the farnesylated C-terminus, is critical for membrane association, as demonstrated by differential behavior of charge-matched mutants 4bHVR-5EA and 4bHVR-5EB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 show that 4bHVR-5EA and 4bHVR-5EB have identical net charge but different membrane association (C62), with the difference attributed to K184 position (C63-C64). This is supported by structural data showing K184 interactions with PDE\u03b4 chaperone (C65-C66), providing mechanistic insight into the positional importance of charges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C97",
+      "C99",
+      "C110"
+    ],
+    "result": "The HVR dynamically recruits and clusters negatively charged phosphatidylserine lipids around KRAS4b through electrostatic interactions, leading to membrane reorganization, as demonstrated by atomistic MD simulations showing increased POPS:POPC ratios and closer HVR-membrane association with increasing PS concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74, C97, C99, and C110 are supported by MD simulations showing PS clustering around the HVR (C73, Figure 4e-f), with WT HVR showing closer membrane association than charge-deficient mutants (C70-C71). The simulations show increased POPS:POPC ratios over time (C73) and PS-concentration-dependent membrane proximity (C71), providing mechanistic evidence for lipid reorganization. However, direct experimental observation is lacking (acknowledged in C99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C104",
+      "C105"
+    ],
+    "result": "The confinement level of KRAS4b is related to its activation state and effector binding, with constitutively active Q61R showing increased slow-state occupancy and the RAF-binding-deficient Y40C mutant showing increased fast-state occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84, C104-C105 demonstrate through mutational analysis that Q61R (constitutively GTP-loaded) shows the most confinement and highest slow-state occupancy (C77, C79), while Y40C (RAF-binding deficient) shows reduced confinement and increased fast-state occupancy (C80, C84). This provides strong evidence linking activation state and effector binding to diffusion behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C103"
+    ],
+    "result": "Serum starvation reduces KRAS4b confinement and increases fast-state occupancy, which is rapidly reversed upon serum rescue within 15 minutes, demonstrating that confinement is dynamically regulated by cellular signaling state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 and C103 show that serum starvation reduces confinement (C85, Figure 6a) and increases fast-state occupancy by 8% (C87), with rapid reversal upon serum addition (C86). This is supported by parallel western blot analysis showing corresponding changes in downstream signaling (Figure 6\u2014figure supplement 1), providing strong evidence for dynamic regulation of KRAS4b diffusion by cellular signaling state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C110",
+      "C111",
+      "C120",
+      "C122"
+    ],
+    "result": "The authors propose a three-state model where the fast state represents free RAS diffusing with lipids, the intermediate state represents partially assembled complexes, and the slow state represents fully assembled signaling complexes involving both G-domain-lipid and G-domain-effector interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C110-C111, C120, and C122 present a mechanistic model integrating the experimental findings. The model is well-supported by: (1) three-state diffusion with ordered transitions (C26-C27), (2) G-domain dependence of confinement (C45), (3) HVR-mediated lipid clustering (C74), (4) activation-state-dependent occupancy changes (C79-C80), and (5) serum-responsive dynamics (C85-C87). While speculative elements exist (C95-C96), the model is strongly grounded in the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "HaloTag-RAS fusion proteins are functional, properly localized to the plasma membrane, and sufficient to rescue RAS-less MEF cells from quiescence, with downstream signaling (pAKT, pMEK, pERK) comparable to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 validate the experimental system by showing that HaloTag-RAS constructs rescue MEF proliferation (C33), localize correctly (C34), and maintain normal signaling levels (C35). This is critical for establishing that the tagged proteins are functional and that the observed diffusion behaviors are physiologically relevant rather than artifacts of the tag or overexpression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The C185S mutation, which prevents farnesylation, abolishes stable membrane association of KRAS4b, resulting in transient flashes rather than trackable trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 demonstrate through negative control experiments that farnesylation is required for stable membrane association. The C185S mutant shows significantly reduced residence time (C37) and only transient membrane contacts (C38), confirming that the observed trajectories of wild-type KRAS4b represent genuine membrane-associated molecules rather than artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on RAS biology: RAS proteins are GTP-dependent molecular switches that regulate signaling pathways, are frequently mutated in cancer, associate with the plasma membrane through post-translationally modified HVRs, and require lateral mobility and lipid interactions for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C5-C17 provide established background knowledge about RAS biology, supported by citations to prior literature (C5, C7-C8, C10, C12, C16-C17) and general knowledge in the field (C1-C2, C6, C9, C11, C13-C15). This contextual information is well-established and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Prior work has shown that the plasma membrane is heterogeneous with hierarchical structure, that activated RAS becomes more confined upon growth factor stimulation, and that HVR sequences direct lipid nanoclustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 and C112-C116 accurately summarize prior work from Murakoshi et al. (2004), Lommerse et al. (2005), Zhou et al. (2017), and others, providing appropriate context for the current study. The citations appear accurate and the summaries are consistent with the referenced work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C121",
+      "C123"
+    ],
+    "result": "The study provides insights into KRAS4b dynamics and membrane interactions, with implications for understanding protein-membrane interactions and signaling complex assembly, while other RAS isoforms undergo different mechanisms of membrane interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117, C121, and C123 represent concluding statements that are well-supported by the collective experimental evidence. The study does reveal KRAS4b dynamics (C117), shows that other isoforms differ (C121, supported by C28-C29, C40-C41), and has implications for understanding membrane protein interactions (C123).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39",
+      "C101",
+      "C108"
+    ],
+    "result": "Methodological notes: MSD plot curvature indicates confinement extent, anomalous diffusion of membrane proteins is caused by molecular crowding or subdomain confinement, and membrane diffusion is not linearly dependent on molecular size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C101, and C108 provide methodological context and are supported by established biophysical principles. C39 describes MSD interpretation, C101 explains anomalous diffusion mechanisms, and C108 cites Saffman and Delbr\u00fcck (1975) regarding size-independence of membrane diffusion. These are well-established concepts appropriately applied.",
+    "result_type": "MINOR"
+  }
+]

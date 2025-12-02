@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Drosophila Dzip1 and Fam92 interact with Cby to form a protein complex. Co-immunoprecipitation experiments demonstrate that Dzip1 and Fam92 each interact with Cby individually, but not with each other. When all three proteins are co-expressed, they form a single complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging biochemical evidence from LAP-Tag purification (C1-C2), phylogenetic analysis (C3), and co-IP experiments (C4-C7) demonstrating protein-protein interactions. The experimental design includes appropriate controls (C5) and the inference of complex formation (C7) is well-supported by the co-IP data showing all three proteins can be co-precipitated together (C6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Dzip1, Fam92, and Cby co-localize at the ciliary transition zone in both sensory neurons and male germ cells. In sensory neurons, all three proteins localize at the base of cilia. In spermatocytes, they localize at centriolar distal ends and accumulate at the ring centriole in spermatids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 provide comprehensive localization data using transgenic reporter flies, immunofluorescence, and super-resolution 3D-SIM microscopy. The co-localization of all three proteins at the transition zone in both ciliated tissues (C11, C18-C20) strongly supports their functional interaction at this specific subcellular location. The inference of TZ localization (C12, C21) is well-justified by co-localization with known TZ marker Cby.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Loss of Dzip1 or Fam92 causes behavioral defects in Drosophila consistent with ciliary dysfunction. dzip1\u00b9 mutants show severe geotaxis defects with no flies reaching the top of the tube, while fam92\u00b9 mutants show milder defects with 17% reaching the top. Rescue experiments confirm these phenotypes are specific to the mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 provide quantitative behavioral data (C24, C28) with appropriate genetic controls including deficiency complementation (C25, C29) and rescue experiments (C27, C30). The graded severity of phenotypes (dzip1\u00b9 > fam92\u00b9) is well-documented and the inference that dzip1\u00b9 is hypomorphic (C26) is supported by the more severe phenotype of dzip1\u00b9/Df. Statistical analysis appears adequate though specific p-values are not provided in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Electron microscopy reveals that Dzip1 and Fam92 are required for transition zone assembly and cilia formation in sensory neurons. Cilia are essentially absent in dzip1\u00b9 antennae with completely disorganized transition zones, while fam92\u00b9 antennae retain some cilia but show reduced numbers and structural defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 provide detailed ultrastructural analysis by EM with quantitative data (C34, C35). The observations of TZ disorganization (C36), loss of axoneme-to-membrane linkers (C37), and axoneme abrogation (C38) in dzip1\u00b9 mutants provide strong evidence for the functional requirement. The graded severity matching behavioral phenotypes strengthens the conclusions. Sample sizes appear adequate (n=54 scolopidia for C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Dzip1 and Fam92 are required for flagellum assembly in male germ cells. fam92\u00b9 males show strongly reduced fertility that is rescued by Fam92-GFP expression. Both mutants show nuclear dispersion in testes and axonemal defects, with quantitative EM revealing broken axonemes, missing central pairs, and missing axonemes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C51 provide comprehensive evidence from fertility assays (C40-C41), microscopy (C42-C44), and quantitative EM analysis (C46-C49). The rescue experiment (C41) confirms specificity. The quantitative EM data is particularly strong with large sample sizes (448 axonemes for fam92\u00b9, 126 for dzip1\u00b9). The inference that defective spermatids fail to elongate (C50) is well-supported by comparing early vs. late cysts (C48-C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A functional hierarchy exists among Dzip1, Fam92, and Cby at the transition zone. Dzip1 is required to recruit or stabilize both Fam92 and Cby, but does not depend on them for its own localization. Fam92 and Cby mutually depend on each other for TZ localization, and together they restrict Dzip1 to the proximal TZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C65 establish the functional hierarchy through systematic analysis of protein localization in each mutant background. The reciprocal dependencies are well-documented with quantitative data (C53, C57, C62) and appropriate statistical analysis (referenced in C5D). The inference of the hierarchy (C63-C65) is strongly supported by the pattern of localization dependencies. The occasional domain expansions (C53, C57, C62) provide additional evidence for regulatory interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Dzip1 and Fam92 are required for recruitment or stabilization of the MKS complex at the transition zone. Mks1-GFP is lost or reduced at the TZ in both dzip1\u00b9/Df and fam92\u00b9 mutant flies in both ciliated tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 provide evidence that Dzip1/Fam92 act upstream of the MKS module. The localization data (C68) is supported by imaging in both tissues. The inference of functional requirement (C69) is appropriate given the loss of Mks1 localization. The background information about MKS function in Drosophila (C66-C67) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Dzip1 and Fam92 restrict Cep290 localization to the proximal transition zone through a negative regulatory feedback loop. Loss of Dzip1 causes striking Cep290-GFP domain expansion in both spermatocytes (13%) and antennae (majority). Conversely, Cep290 is required to recruit Dzip1 and Fam92 to the TZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C81 establish bidirectional regulation between Cep290 and Dzip1/Fam92. The Cep290 expansion phenotype is well-quantified (C74) and observed in both tissues. The reciprocal requirement is demonstrated by loss of Dzip1/Fam92 in cep290 mutants (C79). The rescue experiment (C78) confirms the cep290 mutant phenotype. The inference of a negative feedback loop (C81) is well-supported by the domain expansion data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Loss of Dzip1 or Fam92 causes aberrant axonemal microtubule growth in spermatocytes with graded severity (fam92\u00b9: 30%, dzip1\u00b9/Df: 34%, cep290: 76%). The phenotype shows asymmetry between mother and daughter centrioles, with daughter centrioles preferentially affected (79% in fam92\u00b9, 75% in dzip1\u00b9/Df).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C91 provide quantitative analysis of axonemal growth defects using a validated specific marker (C83). The graded severity across genotypes (C85-C87) is well-documented. The mother-daughter asymmetry is rigorously quantified with unambiguous centriole identification (C90-C91). The inference that asymmetry relates to centriole age (C89) is supported by the quantitative data showing preferential daughter centriole defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Dzip1 and Fam92 are required for proper basal body distal elongation and membrane anchoring in spermatocytes. EM analysis reveals undocked or partially docked centrioles with irregular distal ends and microtubules extending from the distal end. This docking is required to regulate TZ elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 provide ultrastructural evidence for BB docking defects with specific examples quantified (n=2 partially docked, n=3 with only mother docked in C92). The inference of functional requirements (C93, C95) is well-supported by the structural defects. The conclusion about mother-daughter asymmetry (C98) integrates multiple lines of evidence. However, the sample sizes for EM analysis are relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Dzip1 and Fam92 form a functional module that constrains Cep290 to the ciliary base and is required for TZ assembly in all Drosophila ciliated cells. This module also regulates basal-body growth and docking during spermatogenesis, demonstrating cell-type-specific functions in BB maturation and TZ organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 synthesize the major findings of the study. These conclusions are well-supported by the comprehensive data from multiple experimental approaches including biochemistry (C1-C7), localization studies (C8-C21, C52-C81), behavioral assays (C22-C31), and ultrastructural analysis (C32-C98). The cell-type-specific functions (C103) are demonstrated by differential phenotypes in sensory neurons vs. spermatocytes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Dzip1 and Fam92 exert negative regulatory feedback on Cep290 localization and show tissue-specific roles in basal body docking. Loss of these proteins does not affect BB docking in sensory cilia but impairs BB-membrane attachment in spermatocytes, leading to aberrant premature axoneme elongation that preferentially affects daughter centrioles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 synthesize key findings about regulatory mechanisms and tissue-specific functions. The negative feedback loop (C115) is supported by Cep290 expansion data. The tissue-specific differences in BB docking (C116-C117) are well-documented by EM. The inference about BB-membrane compartment function (C119) and mother-daughter asymmetry (C120) integrate multiple experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The Dzip1/Fam92/Cby module shows evolutionary conservation from Drosophila to vertebrates, with conserved protein interactions. However, vertebrate paralogs may have acquired specialized functions, and the module is absent from C. elegans, possibly related to cilia diversification or specialized developmental functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C134 discuss evolutionary conservation and comparative biology. While the conservation of interactions (C122-C123) is supported by citations, the speculation about functional divergence in vertebrates (C129) and reasons for C. elegans absence (C133-C134) are explicitly speculative. The observation of phenotypic differences in mouse knockouts (C126-C128) is well-cited but the interpretation requires additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Tissue-specific differences in transition zone organization and dynamics may explain differential sensitivity to Dzip1/Fam92 loss. Structural differences in transition fibers between sensory neurons and spermatocytes, combined with dynamic BB behavior during spermatogenesis, could account for BB docking defects being specific to spermatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C151 provide extensive discussion of possible mechanisms for tissue-specific phenotypes, citing relevant literature (C135-C142, C144, C147). However, much of this is speculative (C139, C143) or identifies gaps in current knowledge (C150-C151). The EM observation of docking failures (C145) provides some direct evidence, but the mechanistic explanations remain largely inferential. Additional experiments are explicitly stated as needed (C151).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Daughter centrioles show greater sensitivity to TZ perturbations than mother centrioles in spermatocytes. The molecular basis for this asymmetry remains unclear, though it may relate to differential docking timing, centrobin distribution, or microtubule rootlet structures, with potential parallels to multiciliated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C153 document the mother-daughter asymmetry with data from multiple mutants. However, the mechanistic explanations (C154-C162) are largely speculative or cite literature showing that known candidates (centrobin, C157) do not explain the asymmetry. The speculation about multiciliated cells (C164) is interesting but requires experimental validation. The asymmetry is well-documented but not mechanistically explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The ciliary cap/membrane compartment regulates axonemal microtubule elongation timing in spermatocytes. Defects appear only at late G2/onset of meiosis, suggesting cell cycle-linked signals control axoneme elongation. The membrane cap may recruit regulatory factors like kinesins or capping proteins, though specific effectors remain unidentified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C165-C175 describe the timing of axonemal elongation defects (C166) and propose regulatory mechanisms. While the observations are data-based (C165-C166), the mechanistic explanations are largely speculative (C167, C169-C171). The manuscript explicitly states that effectors remain unidentified (C175) and cites conflicting evidence about capping protein removal in Drosophila (C173). The linkage to cell cycle (C174) is inferred but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "During Drosophila spermatogenesis, centrioles undergo specific developmental changes including elongation, docking, formation of primary cilium-like structures, internalization during meiosis, and ciliary cap remodeling with ring centriole formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 describe established developmental processes in Drosophila spermatogenesis, citing appropriate literature. These provide essential background context for interpreting the experimental results but represent prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The transition zone is a critical ciliary compartment that functions as a gate controlling ciliary composition. TZ assembly requires multiple protein modules (MKS, NPHP, CEP290) with evolutionary variation. Cby is a conserved TZ component that interacts with various BB-associated proteins including DZIP1/1L and FAM92a/b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C114 provide essential background about TZ structure, function, and protein composition, all well-supported by citations to established literature. These claims establish the scientific context for the study but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  }
+]

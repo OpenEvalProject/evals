@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The manuscript establishes the current state of knowledge regarding aminoglycosides: they are broad-spectrum antibiotics whose mechanism of action remains debated, though it is widely accepted that membrane voltage potentiates their activity through voltage-dependent drug uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 accurately represent established scientific consensus in the field based on prior literature. These claims provide appropriate context for the study and are well-supported by citations throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C32",
+      "C64",
+      "C65"
+    ],
+    "result": "The central finding is that aminoglycoside bactericidal action arises directly from dysregulated membrane potential rather than from voltage-dependent drug uptake. In the absence of voltage, aminoglycosides still enter cells and exert bacteriostatic effects by inhibiting translation, but cell killing occurs immediately upon re-polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This major conclusion is well-supported by multiple converging lines of evidence including CFU assays (C19-C21), ribosomal dissociation studies (C22-C27), PI uptake experiments (C28-C32), calcium transient measurements (C34-C50), and voltage manipulation experiments (C49-C51, C78-C81). The data consistently show that aminoglycosides can enter cells and cause ribosomal dissociation without voltage, but bactericidal activity requires membrane potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Aminoglycosides enter cells and cause ribosomal dissociation independent of membrane voltage. CCCP-treated cells and cells at pH 6 showed bacteriostatic activity with equivalent ribosomal dissociation compared to cells with normal membrane potential, despite dramatic differences in bactericidal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The polysome analysis data (C22-C27, Figure 1B-C) clearly demonstrate equivalent ribosomal dissociation in the presence or absence of CCCP or at low pH, while CFU data (C19-C21, Figure 1A) show the switch from bactericidal to bacteriostatic activity. This directly challenges the prevailing model that voltage is required for drug uptake. The use of nuo operon mutants (C26-C27) provides additional genetic evidence supporting this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Membrane destabilization and pore formation occur in the absence of membrane potential and are not sufficient to cause bactericidal activity. PI uptake was similar in aminoglycoside-treated cells with or without CCCP, while chloramphenicol induced minimal PI uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PI uptake data (C28-C29, Figure 1D) demonstrate that membrane pore formation occurs regardless of voltage status, yet only voltage-polarized cells exhibit bactericidal activity. The chloramphenicol control (C30) and GTTR data (C31) strengthen this conclusion. This is a critical finding that separates pore formation from cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C74",
+      "C75"
+    ],
+    "result": "Aminoglycoside treatment induces large, non-oscillatory calcium transients and membrane hyperpolarization (~72 mV change) after approximately 1.64 hours. These transients are concentration-dependent, specific to aminoglycosides, and persist for >48 hours after treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GCaMP6 imaging data (C34-C38, Figures 2A-B) and TMRM measurements (C39, Figure 2D) provide strong evidence for aminoglycoside-induced electrophysiological changes. The specificity to aminoglycosides (C74-C75, Figure 2\u2014figure supplement 3A,B) and long duration (C36) are well-documented. The voltage sensor PROPS data (C33) corroborates the calcium measurements. The quantification of timing (C37) and concentration-dependence (C38) adds rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C49",
+      "C78"
+    ],
+    "result": "Membrane voltage is necessary for calcium transients to occur. Removing voltage through CCCP addition or pH lowering immediately ceased all transients, and nuo operon knockouts showed altered kinetics and reduced amplitude of calcium responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data from CCCP treatment (C40, C49, Figure 2E, 4A-B) and low pH experiments (C41, Figure 2\u2014figure supplement 4A-B) clearly demonstrate that voltage is required for the calcium transients. The nuo operon knockout data (C42, Figure 2\u2014figure supplement 4C) provides genetic evidence. The immediate cessation of transients upon voltage removal (C49) is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Calcium transients predict cell fate: cells that recovered and reinitiated division (~2% of population) showed no calcium transients during or after antibiotic exposure, while all cells exhibiting transients failed to divide. Recovered cells were not genetically resistant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-cell tracking data (C43-C45, Figure 3A-C, Figure 3\u2014figure supplement 1A-C) provide strong evidence that calcium transients correlate with permanent cell cycle arrest. The observation that recovered cells are not genetically resistant (C45) is important for ruling out selection artifacts. The untreated population data (C46) showing that transient-exhibiting cells don't divide strengthens the correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Calcium transients precede PI entry into the cytoplasm, with PI often increasing in large bursts. This temporal relationship suggests bactericidal activity occurs prior to large pore formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simultaneous GCaMP6 and PI imaging (C47, Figure 3F) provides direct temporal evidence that calcium transients precede large pore formation. This is a critical observation that helps order the sequence of events during aminoglycoside-induced cell death. However, the inference that bactericidal activity occurs before pore formation (C48) is reasonable but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Aminoglycosides can exert bactericidal activity immediately upon reestablishment of membrane voltage. Removal of CCCP after aminoglycoside treatment initiated transients within 7 minutes, and adding CCCP at 1 hour after aminoglycoside treatment resulted in 22-fold increased survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The flow experiments (C50, Figure 4C-D) demonstrate rapid onset of transients upon voltage restoration, and the CFU rescue experiment (C51, C81, Figure 4E) provides strong evidence that voltage is the key determinant of bactericidal activity. The 7-minute onset time (C50) is much faster than the ~1.64 hour delay for initial treatment, suggesting cells are primed for death but require voltage to execute it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C66",
+      "C73"
+    ],
+    "result": "Aminoglycoside-induced hyperpolarization arises from altered ATP flux, which induces reversal of the F1Fo-ATPase to hydrolyze ATP and generate deleterious voltage. Gentamicin treatment increased ATP sensor fluorescence by 50% within 2 hours, though luminescence-based assays showed decreased steady-state ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The iATPSnFR data (C52-C55, Figure 5A-B) show increased ATP sensor signal, while the BacTiter-Glo data (C56, Figure 5\u2014figure supplement 1D) show decreased steady-state ATP. The authors provide a reasonable explanation for this discrepancy (C87): the sensor may buffer ATP flux while the luminescence assay measures absolute levels. The observation that recovered cells have lower ATP (C55) supports the model. However, the discrepancy between the two ATP measurement methods introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "F1Fo-ATPase activity is required for aminoglycoside-induced hyperpolarization and bactericidal activity. Knockouts of Fo domain components increased survival and reduced calcium transients, while atpC and atpH knockouts enhanced killing. Expression of the ATPase inhibitor mgtC completely eliminated bactericidal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic analysis of F1Fo-ATPase knockouts (C57-C60, Figure 5C-E) provides strong genetic evidence for the role of this enzyme in aminoglycoside killing. The differential effects of different subunit knockouts (C58-C59) are consistent with their known functions. The mgtC overexpression experiment (C61, Figure 5F) is particularly compelling, and the control showing these protective strains are more polarized at baseline (C63, Table 1) rules out a simple depolarization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Arrested cells remain metabolically active for at least 2 days after aminoglycoside treatment, as evidenced by calcium transients persisting up to 48 hours post-treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of calcium transients >48 hours after treatment (C36, C68, Figure 2\u2014figure supplement 2E) demonstrates prolonged metabolic activity in non-dividing cells. This is an interesting observation about the post-antibiotic state of cells, though its mechanistic significance is not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The difference between bactericidal activity of aminoglycosides and bacteriostatic activity of other translation inhibitors may be due to mistranslated membrane proteins causing pore formation in the case of aminoglycosides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is presented as speculation (C67) based on the observation that other translation inhibitors don't induce pore formation or calcium transients (C75, Figure 2\u2014figure supplement 3B). While the data on other translation inhibitors is clear, the mechanistic explanation for why aminoglycosides uniquely cause pore formation is not directly tested. The claim requires additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Protonophores enhance aminoglycoside killing in Pseudomonas biofilms, which contrasts with the protective effect observed in planktonic E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by citations to prior work (C69) and represents an interesting observation about species- and context-dependent differences in aminoglycoside response. However, this is cited work rather than data from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Proton concentrations measured by pHuji also show transients, but with much smaller initial amplitude than calcium transients. The calculated membrane voltage after kanamycin treatment is approximately -222 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pHuji data (C76, Figure 2\u2014figure supplement 3C,D) show that proton transients occur but are smaller than calcium transients. The voltage calculation (C77) is based on TMRM data and the Nernst equation, which is a standard approach. However, the assumption of -150 mV resting potential should be validated, and the calculation depends on several assumptions about dye partitioning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript reviews established knowledge about aminoglycoside uptake kinetics, including the three-step process (outer membrane disruption, EDP-I, and EDP-II), with EDP-II thought to be essential for bactericidal activity and requiring respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C9-C18) accurately summarize prior work on aminoglycoside uptake mechanisms based on appropriate citations. They provide necessary background context for the study's findings that challenge aspects of this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The manuscript reviews established knowledge about bacterial metabolism, membrane potential generation, F1Fo-ATPase function, and aminoglycoside effects on cellular processes including NTP leakage and increased respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C70-C72, C82-C86, C88-C91) accurately represent established knowledge from prior literature and provide necessary mechanistic context for interpreting the study's findings. The citations are appropriate and the knowledge claims are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The genetically encoded ATP sensor may act as a buffer absorbing ATP flux from loss of translation, while luminescence-based assays measure absolute ATP values after cell permeabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is presented as speculation (C87) to explain the discrepancy between iATPSnFR and BacTiter-Glo measurements. While this is a reasonable hypothesis, it is not directly tested. The discrepancy between the two ATP measurement methods is a weakness that could benefit from additional validation experiments or alternative explanations.",
+    "result_type": "MINOR"
+  }
+]

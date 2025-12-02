@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Inhibitory synaptic plasticity in a computational model with three interneuron types (PV, SOM, VIP) generates negative prediction-error neurons by balancing excitation and inhibition in pyramidal cells. Before plasticity, PCs respond to both feedback and playback stimuli; after plasticity, they respond only to mismatch stimuli with responses scaling with prediction error magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 provide clear computational evidence showing the emergence of nPE neurons through E/I balance (Figures 1c-e). The model architecture (C11-C13) is well-defined with biologically motivated parameters (C12). The mechanism\u2014balancing excitation and inhibition through inhibitory plasticity\u2014is demonstrated through time-series data and population responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The model establishes nPE neurons independent of whether PCs and PV neurons receive visual or motor inputs, but requires balancing multiple excitatory, inhibitory, disinhibitory, and dis-disinhibitory pathways. PV neuron activity reflects whether PCs receive visual input, with PV responses increasing during feedback/playback only when PCs receive visual input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 are supported by systematic exploration of input configurations (Figure 2c-f). The model demonstrates functional nPE circuits across different input scenarios, though C25 identifies a discrepancy with experimental data (Attinger et al., 2017) when PCs receive no visual input. The multi-pathway balance requirement (C22) is derived from model analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C3"
+    ],
+    "result": "Simulated optogenetic manipulations of PV, SOM, and VIP neurons reveal distinct fingerprints that can distinguish different prediction-error circuit variants. Comparison with experimental optogenetic data suggests that a homogeneous input configuration where all PCs receive visual input and all PV neurons receive motor predictions is unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by systematic simulated optogenetic experiments (Figure 3). The model generates testable predictions about circuit responses to interneuron manipulation. C30 appropriately compares model predictions with experimental data (Attinger et al., 2017) to constrain likely circuit configurations. C3 correctly states these variants can be distinguished.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34"
+    ],
+    "result": "The fraction of PCs developing into nPE neurons depends on the distribution of visual and motor inputs onto SOM and VIP neurons. Reducing the proportion of SOM neurons receiving visual input decreases nPE neuron fraction, while reversing inputs to favor motor predictions to SOM neurons generates positive prediction-error neurons instead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C33-C34 are supported by systematic variation of input distributions (Figure 4). The model demonstrates how input configuration to interneurons controls the fraction and type of prediction-error neurons that emerge. This provides mechanistic insight into circuit flexibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C4"
+    ],
+    "result": "The model's experience-dependence matches experimental observations: random gain training (uncorrelated motor predictions and visual flow) reduces nPE neuron number and mismatch responses compared to quasi-natural training, primarily through changes in PCs and PV neurons while SOM and VIP responses remain largely unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 demonstrate consistency between model and experimental data (Attinger et al., 2017). C36-C37 show specific model predictions about which cell types change with training paradigm (Figure 5b-c). C38 and C4 appropriately conclude the model's experience-dependence is consistent with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "When trained with only perfectly coupled sensorimotor experience (no playback phases), both experimental nPE neurons and model PCs show reduced firing during playback. The model predicts this rate reduction vanishes when playback phases are included during training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 compare model behavior with experimental observations under specific training conditions. C40 shows the model reproduces the experimental finding (C39, Figure 5d). C41 makes a testable prediction about training paradigm effects. The logic is sound: learning rules aim to maintain baseline rates for experienced stimuli.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C62",
+      "C63"
+    ],
+    "result": "nPE neurons can be learned using biologically plausible local plasticity rules as alternatives to backpropagation-like rules. Specifically, SOM\u2192PV and VIP\u2192PV synapses can change based on the difference between excitatory recurrent drive onto PV neurons and a target value, while connections onto PCs follow inhibitory Hebbian plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 demonstrate that biologically plausible alternatives to backpropagation can generate nPE neurons (Figure 6, Figure 1\u2014figure supplement 1c). C62-C63 describe the plasticity rules used. The manuscript shows multiple plasticity rule variants produce similar outcomes, strengthening the biological plausibility of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The model predicts that: (1) cell type-specific modulations can disambiguate circuit input configurations; (2) habituated sensorimotor experience leads to balanced E/I in PCs; (3) E/I balance breaks for rarely encountered experiences; (4) interneuron circuits reconfigure to reestablish E/I balance during altered sensorimotor experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 present testable predictions derived from the model's core mechanism of E/I balance through experience-dependent plasticity. These are logical extensions of the demonstrated principles. C44 follows from the multi-pathway balance results, while C45-C47 follow from the learning rules that minimize deviations from baseline rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "VIP\u2192PV synapses are required for perfect E/I balance during both feedback and playback phases according to mathematical analysis, though they can be excluded when conditions are mildly relaxed and PV neurons receive visual but not motor inputs. These synapses have been found experimentally in multiple cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by mathematical analysis (Appendix 1). C50 provides experimental evidence for VIP\u2192PV synapses across brain regions. C51 describes conditions under which these synapses are not required (Figure 1\u2014figure supplement 2). The claims appropriately acknowledge both theoretical requirements and biological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on prediction error theory: perceptual systems subtract internal predictions from sensory data, with mismatches representing prediction errors. Prediction-error neurons are found throughout the brain, with nPE neurons likely receiving excitatory predictions balanced by inhibitory sensory signals, and pPE neurons receiving excitatory sensory signals balanced by inhibitory predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 cite established literature on prediction error theory and neural correlates. C9-C10 present reasonable hypotheses about circuit mechanisms based on computational requirements. These background claims appropriately frame the study and are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C48",
+      "C52",
+      "C53"
+    ],
+    "result": "Background on cortical circuit organization: PCs, SOM, and PV interneurons show visual responses; motor predictions target VIP neurons and PC apical dendrites; PCs in L2/3 V1 have low spontaneous firing rates; NDNF neurons inhibit apical dendrites and receive SOM inhibition; PV neuron activity is experience-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C48, C52-C53 cite experimental literature to justify model design choices. These are appropriately used to motivate the circuit architecture and plasticity assumptions. The citations support the stated facts about cortical organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "nPE neurons can also develop when excitatory top-down and bottom-up connections undergo experience-dependent plasticity that balances E/I in somatic and dendritic compartments of PCs, as an alternative to the inhibitory plasticity-focused model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 describes an alternative model configuration mentioned in the Discussion. While not extensively demonstrated, this is presented as a possibility rather than a primary result, appropriately acknowledging that the E/I balance principle can be achieved through different plasticity mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C57",
+      "C58",
+      "C60",
+      "C64",
+      "C65"
+    ],
+    "result": "Model implementation details: the network includes PCs (two-compartment) and three interneuron types (point neurons); interneurons follow rectified linear dynamics; nPE neurons are defined by specific response criteria; neurons receive background input; simulations used Python with 2nd-order Runge-Kutta integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C57-C58, C60, C64-C65 describe methodological details that are standard for computational modeling. These are clearly stated and provide sufficient information for model implementation. The classification criteria for nPE neurons (C58) are explicitly defined.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C74",
+      "C75"
+    ],
+    "result": "Tamoxifen and mefloquine (TM) exhibited dramatic synergy in MCF7 and LNCaP cells, reducing viability as early as 6 hr, while TW and MW showed minimal synergistic effects. The synergy of TM was distinct from simple dose response effects, as demonstrated by EOB calculations and combination index measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 and C74-C75 provide converging evidence from multiple experimental approaches (viability assays, EOB calculations, combination index) across multiple time points and cell lines. The dose-response experiments (C22-C24) effectively control for the possibility that synergy is simply an additive dose effect. The data are internally consistent and supported by appropriate statistical measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The transcriptional signature of the synergistic TM combination was unique and distinct from either monotherapy or DMSO control. PCA analysis revealed orthogonal synergistic and additive directions in transcriptional space, with TM diverging substantially from T and M monotherapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C25-C28 are supported by RNAseq data quality controls (C77) and PCA analysis (Figure 1I-J). The observation that gene expression profiles from different doses evolve gradually (C27) while combinations show distinct patterns strengthens the interpretation that synergy represents a qualitatively different response. The orthogonal directions in PCA space (C28) provide a clear visual and quantitative representation of this distinction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Approximately 90% of differentially expressed genes (DEGs) in MCF7 cells treated with TM were synergistically expressed genes (SEGs), not differentially expressed in either monotherapy alone. This pattern was cell-type specific, with LNCaP showing different proportions of SEGs in TW and MW combinations compared to MCF7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C78-C81 are supported by differential expression analysis with appropriate FDR corrections. The sensitivity analysis (C79) demonstrates robustness to the choice of statistical threshold. The cell-type specificity (C80-C81) is well-documented and highlights biological complexity. The 1-2 orders of magnitude difference in DEG numbers (C78) provides strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C82"
+    ],
+    "result": "The number of synergistically expressed genes (SEGs) correlated significantly with phenotypic synergy (EOB) across treatments and time points (Pearson r=0.63, p=0.000044). This relationship held when sham combination pairs from dose experiments were removed and when comparing TM to dose-matched monotherapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C82 provide statistical evidence with appropriate p-values and correlation coefficients. The analysis appropriately addresses potential confounders by removing sham combinations (C34) and comparing to dose-matched controls (C82). The consistency across multiple statistical tests (Pearson and Spearman) strengthens confidence in the relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C66",
+      "C117",
+      "C132",
+      "C133"
+    ],
+    "result": "Correlated transcriptional profiles of monotherapies and the presence of SEGs appear to be necessary but not sufficient conditions for phenotypic synergy. SEGs can represent either protective cellular responses or pro-death processes, with only the latter resulting in phenotypic synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C66, C117, C132-C133 are supported by observations in both MCF7 and LNCaP cells where SEGs appeared in combinations with different phenotypic outcomes. The LNCaP data showing SEGs in TW and MW without strong phenotypic synergy (C80-C81) provides critical evidence for the 'necessary but not sufficient' interpretation. This represents a sophisticated understanding of the relationship between molecular and phenotypic synergy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C139"
+    ],
+    "result": "Gene set enrichment analysis revealed three classes of biological processes: (1) ER stress, estrogen signaling, and kinase activity enriched in both TM and monotherapies; (2) apoptosis, immunity, and metabolic processes markedly more enriched in TM than monotherapies; and (3) cell cycle downregulation occurring earlier in TM. These synergistic effects were not recapitulated by increasing monotherapy dose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C101-C104, and C139 are supported by systematic gene set enrichment analysis (Figure 3) with appropriate statistical testing (Fisher's exact test with FDR correction). The temporal clustering analysis (C101-C104) provides additional validation. The comparison to dose experiments (C139) is a critical control demonstrating that synergistic pathway activation is not simply a dose effect. The biological coherence of the enriched pathways strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C99",
+      "C100",
+      "C105",
+      "C141",
+      "C142"
+    ],
+    "result": "K-means clustering identified four distinct temporal patterns of gene expression, with most genes showing monotonic trajectories saturating at 9 hr. A minority exhibited unique temporal profiles in TM, suggesting temporal synergy. The monotonicity implies that early transcriptional responses might be sufficient to predict synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40, C99-C100, C105, C141-C142 are supported by unsupervised clustering analysis with clear quantitative results (4 clusters, specific gene counts). The observation of monotonic behavior (C39) is well-documented in Figure 4A. However, the inference that early responses are sufficient to predict synergy (C105, C142) is somewhat speculative and would benefit from explicit validation using only early timepoint data to predict later outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C106",
+      "C107"
+    ],
+    "result": "TM induced unique patterns of alternative splicing, with most differentially spliced genes being synergistic. Synergistically spliced genes were generally distinct from synergistically expressed genes, yet both correlated with EOB (r=0.73, p=0.002 for splicing), suggesting two separate molecular mechanisms driving phenotypic synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45, C106-C107 are supported by splicing analysis using diffSplice with appropriate statistical thresholds. The distinction between spliced and expressed genes (C43) is clearly demonstrated in Figure 6A. The correlation with EOB (C44) provides quantitative support. The inference of two separate mechanisms (C45) is reasonable given the distinct gene sets, though the mechanistic details remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C108"
+    ],
+    "result": "Most differentially active transcription factors (DATFs) in TM were not active in monotherapies, with the majority functioning as positive effectors. T and M monotherapies showed remarkably similar TF activity patterns (Spearman r=0.8 at 12 hr), and most DATFs corresponded to differentially expressed or spliced genes, though some exceptions like ATF4 were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 and C108 are supported by systematic TF activity analysis using an MCF7-specific regulatory network. The methodology appropriately distinguishes positive and negative effector functions (Figure 7\u2014figure supplement 1). The high correlation between T and M TF activity (C52) is quantitatively supported. The identification of exceptions like ATF4 (C49) demonstrates analytical rigor. The temporal persistence of TF activity (C50) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Sequential activation of transcription factors through a regulatory network cascade was implicated in drug synergy. The 'double-down' mechanism (where TFs activated by both drugs are reinforced in combination) dominated, explaining 83 synergistic TFs, while the 'AND' mechanism explained only 12. This cascade accounted for 88% of synergistic TFs at 24 hr and 78-79% of SEGs at 12-24 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C53-C59 are supported by detailed network analysis (Figure 9 and supplement). The quantitative breakdown of mechanisms (C56) and the high percentage of explained TFs and genes (C57-C58) provide strong support. The temporal cascade starting from MYC and KLF10 at 3 hr (C54-C55) is well-documented. However, the analysis relies on the accuracy of the MCF7 regulatory network, and alternative network structures could potentially yield different results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C67",
+      "C68"
+    ],
+    "result": "Drug synergy may ensue when transcriptional responses of two drugs are correlated. A simple correlation-based prediction algorithm achieved AUROC=0.77 in an independent DREAM dataset, significantly outperforming the best DREAM Challenge method (DIGRE) with Bayes factors of 3.79 (AUROC) and 34.71 (AUPR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C60-C62, C67-C68 are supported by validation in an independent dataset with appropriate statistical comparisons. The AUROC of 0.77 (C4) represents meaningful predictive performance. The Bayes factor analysis (C67-C68) provides rigorous statistical support for superiority over DIGRE. However, the mechanistic claim (C3) remains somewhat speculative\u2014correlation predicts synergy, but the causal mechanism is not fully established. The DREAM validation strengthens but does not prove the mechanistic hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Phospholipidosis (PLD) was enriched in all treatments and showed some association with monotherapy correlation, but was not associated with EOB. The relationship between correlation and EOB held when PLD genes were removed, indicating PLD accounts for only a small part of the observed transcriptional correlation and synergistic gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C92-C98 provide a thorough analysis of PLD's role with appropriate statistical tests. The lack of association between PLD and EOB (C64) is important for ruling out PLD as the primary driver of synergy. The persistence of the correlation-EOB relationship after removing PLD genes (C65, C94) is a critical control. The near-perfect correlation when comparing with/without PLD genes (C96, r=0.9999) strongly supports the conclusion that PLD is a minor contributor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "In LNCaP cells, distinct patterns of synergistic enrichment were observed across combinations. W-enriched gene sets (cholesterol metabolism, RNA processing) may represent cellular resistance mechanisms, while TM-enriched gene sets (metabolic downregulation, ER stress timing) may distinguish truly synergistic combinations from those whose effects can be resisted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C91, C126-C131 are supported by gene set enrichment analysis in LNCaP cells (Figure 3\u2014figure supplement 1B). However, the mechanistic interpretations (C90-C91, C130) are largely speculative. While the data clearly show different enrichment patterns, the functional significance\u2014whether W-enriched sets represent resistance and TM-enriched sets represent harbingers of synergy\u2014requires experimental validation. The speculation is reasonable but not definitively supported by the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The mechanistic rationale for TM efficacy is not obvious from known drug targets, but mefloquine shows a moderate anti-estrogen effect similar to quinolone derivatives, suggesting unexpected target overlap between T and M. MYC and KLF10, key early TFs in the synergistic response, have known roles in oncogenesis and tumor suppression respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C116 appropriately acknowledge uncertainty about mechanisms while providing evidence-based speculation. The anti-estrogen effect of M (C111) is supported by gene set enrichment data and literature citations. The characterization of MYC (C113) and KLF10 (C115) is well-supported by citations. However, the speculation about their specific roles in the observed synergy (C114, C116) goes beyond the data. The claims appropriately distinguish between what is known from literature and what is inferred from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "A proposed mechanism for TM synergy involves tamoxifen promoting apoptosis while cells activate pro-survival autophagy, which is then abrogated by mefloquine, leading to synergistic metabolic shutdown and apoptosis. Synergistic changes in apoptosis and autophagy were observed in both cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C125 combine well-established facts from literature (C118-C120, C122) with speculation about the mechanism in this specific context (C121, C123-C124). While the observation of synergistic enrichment in apoptosis and autophagy pathways (C125) is supported by data (Figure 3), the proposed causal mechanism (C124) is speculative. The hypothesis is biologically plausible and consistent with the data, but lacks direct experimental validation (e.g., autophagy inhibition experiments, ATP measurements, mitochondrial function assays).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "A proposed mechanism in MCF7 involves MYC-induced cell competition activating IRAK2 and NFkB signaling, with dying cells producing damage-associated molecular patterns that activate TLR3 signaling through a MYD88-independent pathway. These processes are synergistically enriched in TM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C138 combine established biological knowledge (C135) with speculation about specific mechanisms in this context (C134). The enrichment of relevant pathways (TLR3, NFkB, cytokine signaling) is supported by data (C137, Figure 3). The downregulation of MYD88 and IRAK1 (C136) provides some support for the proposed pathway. However, the cell competition hypothesis (C134) and the specific role of crosstalk (C138) are speculative and would require additional experiments (e.g., blocking TLR3 or NFkB signaling) for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C143",
+      "C144"
+    ],
+    "result": "The findings suggest that focusing on known drug targets is insufficient to predict combination effects, and that the identified rules of synergy could enable in silico screening of drug pairs using existing gene expression datasets as an efficient precursor to preclinical studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C140 is reasonably supported by the observation that synergistic effects differ from monotherapy effects and dose responses. However, claims C143-C144 about future applications are speculative. While the correlation-based predictor showed promise in the DREAM dataset (AUROC=0.77), this represents moderate rather than excellent performance. The practical utility for large-scale screening (C143-C144) remains to be demonstrated, and the approach would need validation in additional contexts before being recommended as a general screening strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establish that combination therapy is increasingly relevant in cancer, synergistic behavior is difficult to predict, high-throughput screening is costly, and prior DREAM Challenge winners used correlation-based approaches with limited experimental support and unclear mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C17 are appropriately supported by citations to prior literature. The mathematical calculation of screening costs (C11) is correct. The assessment of prior DREAM Challenge approaches (C15-C17) appropriately identifies gaps in mechanistic understanding that motivate the current study. These background claims provide appropriate context and justification for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77"
+    ],
+    "result": "Methodological details establish that MCF7 is ER\u03b1+ breast cancer, LNCaP is ER\u03b2+ prostate cancer, tamoxifen has clinical utility in ER+ breast cancer, hormetic dose responses were observed, and RNAseq data quality was high with good replicate concordance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are well-supported by citations establishing cell line characteristics and clinical relevance. The observation of hormetic responses (C72-C73) is supported by experimental data and appropriate citations. The RNAseq quality assessment (C77) is supported by quality control analyses (Figure 1\u2014figure supplement 2A-B). These methodological details are appropriately documented and support the validity of the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Some differentially active transcription factors did not correspond to differential expression or splicing and may represent TFs activated by mechanisms not captured by RNA-seq, including post-translational modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by the observation of DATFs without corresponding expression/splicing changes (Figure 8A), with ATF4 as a specific example (C49). The inference about alternative mechanisms is reasonable given established knowledge of TF regulation. This represents appropriate acknowledgment of the limitations of transcriptomic approaches and the complexity of gene regulation.",
+    "result_type": "MINOR"
+  }
+]

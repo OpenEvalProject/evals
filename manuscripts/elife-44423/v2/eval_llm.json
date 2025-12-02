@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C83",
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "The manuscript establishes the background context for ALS pathology, including the differential vulnerability of motor neuron subtypes, the role of protein aggregation, and the involvement of protein degradation pathways. These claims are primarily based on prior literature and establish the scientific foundation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by extensive citations to established literature (C1, C11-C27, C83-C91). They represent accepted knowledge in the ALS field and provide appropriate context for the experimental work. The citations appear appropriate and the claims are consistent with current understanding of ALS pathology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C8"
+    ],
+    "result": "In the hSOD1 G93A mouse model at postnatal day 100, approximately 34% of spinal motor neurons contain misfolded hSOD1 aggregates while oculomotor/trochlear motor neurons show no detectable aggregation and exhibit 5-10 times lower overall levels of misfolded hSOD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C8 are supported by quantitative immunostaining data from Figure 1A-B showing clear differences in hSOD1 aggregation between motor neuron subtypes. The sample size (n=3 mice, 195 SpMNs, 328 O/TrMNs) is adequate for this type of analysis. The imaging methodology accounts for differential signal intensity, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C9"
+    ],
+    "result": "In the hSOD1 G93A mouse model, over 40% of lumbar spinal motor neurons accumulated p62-positive inclusions while no oculomotor neurons contained p62 aggregates at postnatal days 66 and 97.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C9 are supported by immunostaining data in Figure 6D-E from hSOD1 G93A mice. The complete absence of p62 aggregates in oculomotor neurons (0%) versus >40% in SpMNs represents a striking difference. Sample size appears adequate (n=3 mice, ~100 cells per replicate).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C92"
+    ],
+    "result": "ESC-derived iCrMNs show better survival than iSpMNs in culture (87% vs 74% at Day 5, 52% vs 31% at Day 25), recapitulating the differential survival observed in primary motor neurons (88% vs 72% O/TrMNs vs SpMNs at DIV 7, 71% vs 42% at DIV 14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C92 are supported by survival assay data in Figures 1D and 1G. The parallel survival differences between ESC-derived and primary neurons support the validity of the ESC model. Sample sizes are adequate (n=3-8 biological replicates) and statistical significance is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Single-cell RNA sequencing analysis demonstrates that ESC-derived iCrMNs and iSpMNs resemble molecular features of ALS-resistant O/TrMNs and ALS-sensitive SpMNs respectively, supporting the validity of the ESC-based platform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by single-cell RNA-seq data shown in Figures 1H-I and supplementary figures. The PCA analysis showing separation along PC2 (CrMN vs SpMN fate) and expression of appropriate fate markers (Figure 1\u2014figure supplement 1D) provide molecular validation of the cell identities. The analysis of 450 cells after quality control is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C2",
+      "C79"
+    ],
+    "result": "ESC-derived iSpMNs accumulated over 2-fold more soluble hSOD1 mutant proteins and approximately 3-fold more insoluble hSOD1 by Day 15 compared to iCrMNs, recapitulating differential accumulation observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C2, and C79 are supported by western blot data in Figure 3B-D. The quantification shows statistically significant differences (n=4 biological replicates). The use of both soluble and insoluble fractions strengthens the analysis. The differential accumulation despite similar transgene expression (C65) and translation efficiency (C66) supports a post-translational mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The differential accumulation of hSOD1 between iCrMNs and iSpMNs is not due to differences in transgene expression or translation efficiency, suggesting iCrMNs have a cell-autonomous mechanism to restrain hSOD1 accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by RT-qPCR data showing similar mRNA levels and polysome profiling data (Figure 3\u2014figure supplement 1) showing similar translation efficiency. However, the polysome profiling has only n=2 biological replicates, which is a limitation. The inference in C67 is reasonable given the data but represents a hypothesis requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C68",
+      "C69",
+      "C80"
+    ],
+    "result": "Treatment with 100 nM MG-132 (reducing proteasome activity by ~30%) caused iCrMNs to accumulate 5-8.5 fold more insoluble hSOD1 mutants compared to 2-fold in iSpMNs, revealing that iCrMNs rely more heavily on proteasomal degradation of misfolded hSOD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C68-C69, and C80 are supported by western blot data in Figure 4B-C. The differential response to MG-132 is striking and statistically significant (n=3). The use of a mild proteasome inhibition (30% reduction) is appropriate to avoid pleiotropic effects. The conclusion that iCrMNs rely more on proteasomal degradation is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C70"
+    ],
+    "result": "MG-132 treatment resulted in greater accumulation of insoluble ubiquitinated proteins in iCrMNs (13-18 fold) compared to iSpMNs (3-5 fold), and iCrMNs accumulated 6-10 fold more insoluble p62 versus 2-3 fold in iSpMNs, demonstrating an intrinsic difference in proteasome system usage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C70 are supported by western blot data in Figure 5B-E showing differential accumulation of ubiquitinated proteins and p62. The pattern mirrors the hSOD1 accumulation data, strengthening the conclusion that this is a general difference in proteostasis rather than specific to hSOD1. Sample size is adequate (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C96"
+    ],
+    "result": "iSpMNs expressing mutant hSOD1 accumulated significantly more insoluble p62 than iCrMNs by Day 15, and approximately 15% of iSpMNs versus 5% of iCrMNs exhibited p62-positive aggregates on Day 5. MG-132 treatment increased p62 aggregates more in iCrMNs (to ~50%) than iSpMNs (~30%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43-C44, and C96 are supported by western blot (Figure 6B-C) and immunocytochemistry data (Figure 6F). The differential accumulation of p62 is consistent with the hSOD1 and ubiquitin data. The greater effect of MG-132 on iCrMNs further supports their greater reliance on proteasomal degradation. Sample sizes are adequate (n=3, m~100 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C5"
+    ],
+    "result": "ESC-derived iCrMNs showed significantly greater resistance than iSpMNs to tunicamycin (49% vs 11% survival at 300 ng/mL) and CPA (37% vs 9% survival at 40 \u03bcM), demonstrating intrinsic resistance to chemically-induced proteostatic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 and C5 are supported by dose-response survival data in Figure 7B-C. The differential survival is consistent across multiple concentrations and statistically significant. Sample sizes are adequate (n=3-6). The use of multiple ER stressors (tunicamycin, CPA, thapsigargin) strengthens the conclusion about general proteostatic stress resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C71"
+    ],
+    "result": "iSpMNs showed higher induction of UPR markers (sXBP1, GRP78, ATF4) than iCrMNs after CPA treatment, suggesting iSpMNs experienced stronger proteostatic stress due to less efficient protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C71 are supported by RT-qPCR data in Figure 7\u2014figure supplement 1. The differential UPR response provides molecular evidence for greater proteostatic stress in iSpMNs. Sample size is adequate (n=4). The inference in C71 is reasonable but represents an interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C74"
+    ],
+    "result": "Brefeldin A was equally toxic to both iCrMNs and iSpMNs, suggesting culture conditions do not favor iCrMNs' ability to resist all chemical stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C74 are supported by survival data in Figure 7E showing no significant difference between cell types. This negative control is important for demonstrating that the differential resistance is specific to proteostatic stress rather than a general artifact of culture conditions. Sample sizes are adequate (n=7-8).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C72",
+      "C73"
+    ],
+    "result": "CPA treatment significantly increased accumulation of insoluble hSOD1 A4V, but iCrMNs still accumulated less than iSpMNs regardless of treatment, demonstrating that iCrMNs maintain superior capability to handle misfolded proteins even under additional proteostatic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 and C72-C73 are supported by western blot data in Figure 7\u2014figure supplement 2. The maintenance of differential accumulation under stress conditions strengthens the conclusion about intrinsic differences in proteostatic capacity. Sample size is adequate (n=4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C10",
+      "C75",
+      "C81"
+    ],
+    "result": "Primary O/TrMNs were significantly more resistant than primary SpMNs to tunicamycin (100-250 ng/mL) and CPA (10-25 \u03bcM), confirming predictions from ESC-derived neurons and validating the ESC platform's predictive value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52, C10, C75, and C81 are supported by survival data in Figure 8B-C from primary neurons. The concordance between ESC-derived and primary neuron responses is critical for validating the model system. Sample sizes are adequate (n=3-4). This validation strengthens all conclusions drawn from the ESC system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C76"
+    ],
+    "result": "Mass spectrometry revealed that iCrMNs contain higher levels of all 20S proteasome core subunits but not 19S regulatory subunits compared to iSpMNs, with differences appearing to be due to post-transcriptional mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C54 are supported by mass spectrometry data in Figure 9B, but the study has only n=2 biological replicates, which is insufficient for robust proteomic conclusions. Claim C76 about post-transcriptional mechanisms is inferred from the absence of RNA-seq differences, but no RNA-seq data are shown in the figures. Additional replicates and direct comparison of RNA and protein levels would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C4",
+      "C77"
+    ],
+    "result": "Non-transgenic iCrMNs had higher proteasome activity than iSpMNs at Day 2 and Day 5, suggesting iCrMNs have higher capacity to degrade misfolded proteins and prevent aggregate accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C4, and C77 are supported by proteasome activity measurements in Figure 9C using the Suc-LLVY-AMC assay. Sample size is adequate (n=6). The functional data complement the proteomic findings (C53-C54), though the proteomic data have limited replicates. The conclusion in C77 is a reasonable inference combining both datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C6"
+    ],
+    "result": "The p38 inhibitor PD169316 increased proteasome activity in a dose-dependent manner without affecting baseline survival (0.25-2 \u03bcM), and co-treatment with 2 \u03bcM PD169316 improved iSpMN survival to 10 \u03bcM CPA from 66% to 80%, phenocopying basal iCrMN resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 and C6 are supported by proteasome activity data (Figure 10B) and survival data (Figure 10C-D). The dose-response is well-characterized and sample sizes are adequate (n=4-6). The rescue of iSpMN sensitivity to match iCrMN resistance is a key finding supporting the proteasome hypothesis. However, PD169316 has multiple targets beyond p38, which is a limitation not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C7"
+    ],
+    "result": "Lentiviral expression of PSMB5 significantly improved iSpMN survival to CPA treatment compared to LacZ controls but showed no effect in iCrMNs, providing genetic validation of the proteasome activation rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 and C7 are supported by survival data in Figure 10F using lentiviral PSMB5 expression. The genetic approach complements the pharmacological data (C56-C60) and addresses concerns about off-target effects. Sample size is adequate (n=4). The lack of effect in iCrMNs is consistent with their already high proteasome activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C82",
+      "C85"
+    ],
+    "result": "The authors conclude that superior proteostatic capacity through enhanced proteasome function is an intrinsic, disease-relevant mechanism underlying CrMN resistance to ALS, and that p38 inhibitor protective effects may benefit from enhanced proteasome activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C82, and C85 represent the main conclusions synthesizing multiple lines of evidence: in vivo mouse data (C8-C9, C28-C30, C41-C42), ESC-derived neuron data (C35-C40, C45-C48, C53-C55), primary neuron validation (C51-C52), and rescue experiments (C56-C62). The convergence of evidence from multiple experimental systems strongly supports these conclusions, though C85 about p38 inhibitors is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The authors infer that CrMN resistance to ALS neurodegeneration is not limited to SOD1-linked ALS based on non-transgenic iCrMNs being more resistant to general proteostatic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by the observation that non-transgenic iCrMNs show greater resistance to tunicamycin and CPA (C45-C48) and higher proteasome activity (C55). This suggests the mechanism is intrinsic to cell fate rather than specific to SOD1 mutations. However, this remains an inference that would benefit from testing with other ALS-causing mutations.",
+    "result_type": "MAJOR"
+  }
+]

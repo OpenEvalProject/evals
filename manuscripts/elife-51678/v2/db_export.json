@@ -1,0 +1,1662 @@
+{
+  "submission": {
+    "id": "ac15657d-d494-4261-b72b-42c1042960fb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-12-02T15:06:30.938832Z",
+    "updated_at": "2025-12-02T15:06:30.938832Z"
+  },
+  "content": [
+    {
+      "id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "submission_id": "ac15657d-d494-4261-b72b-42c1042960fb",
+      "content_type": "manuscript",
+      "content_text": "# High-dimensional analysis of intestinal immune cells during helminth infection\n\n## Authors\n\n- Laura Ferrer-Font<sup>1</sup>\n- Palak Mehta<sup>1</sup>\n- Phoebe Harmos<sup>1</sup>\n- Alfonso J Schmidt<sup>1</sup>\n- Sally Chappell<sup>1</sup>\n- Kylie M Price<sup>1</sup>\n- Ian F Hermans<sup>1</sup>\n- Franca Ronchese<sup>1</sup>\n- Graham le Gros<sup>1</sup>\n- Johannes U Mayer<sup>1</sup> ([ORCID: 0000-0001-6225-7803](https://orcid.org/0000-0001-6225-7803)) \u2020\n\n### Affiliations\n\n1. Malaghan Institute of Medical Research Wellington New Zealand\n\n\u2020 Corresponding author\n\n## Abstract\n\nSingle cell isolation from helminth-infected murine intestines has been notoriously difficult, due to the strong anti-parasite type 2 immune responses that drive mucus production, tissue remodeling and immune cell infiltration. Through the systematic optimization of a standard intestinal digestion protocol, we were able to successfully isolate millions of immune cells from the heavily infected duodenum. To validate that these cells gave an accurate representation of intestinal immune responses, we analyzed them using a high-dimensional spectral flow cytometry panel and confirmed our findings by confocal microscopy. Our cell isolation protocol and high-dimensional analysis allowed us to identify many known hallmarks of anti-parasite immune responses throughout the entire course of helminth infection and has the potential to accelerate single-cell discoveries of local helminth immune responses that have previously been unfeasible.\n\n## Introduction\n\nRecent advances in single cell analysis have significantly increased our understanding of multiple diseases and cell types in different tissues (Svensson et al., 2018; Hwang et al., 2018). However, many of these technologies require single cell suspensions as an input, which limits our assessment of difficult-to-process tissues (Hwang et al., 2018; Nguyen et al., 2018; Chen et al., 2018). One prominent example is the intestine, which is at the center of many research questions that focus on nutrient uptake (Kiela and Ghishan, 2016), host-microbiome interactions (Belkaid and Hand, 2014; Tilg et al., 2019; Sekirov et al., 2010), local and systemic immune tolerance (Worbs et al., 2006; Harrison and Powrie, 2013; Whibley et al., 2019) and gastrointestinal diseases and infections (Mowat and Agace, 2014; Sell and Dolan, 2018; Fletcher et al., 2013; Hendrickson et al., 2002; Saleh and Elson, 2011), but represents a challenging tissue to digest (Weigmann et al., 2007; Rei\u00dfig et al., 2014).\n\nThe standard digestion procedure to isolate intestinal immune cells located in the small intestinal lamina propria consists of three steps (Weigmann et al., 2007; Rei\u00dfig et al., 2014; Scott et al., 2016; Esterh\u00e1zy et al., 2019) (Figure 1a). First the intestinal segment of interest is collected, opened longitudinally to remove its luminal content, washed and cut into small pieces. These pieces then undergo several wash steps with EDTA containing wash buffers at 37\u00b0C to remove the epithelial layer and make the lamina propria accessible for enzymatic digestion. Lastly, the tissue is enzymatically digested with collagenases (Collagenase VIII from Clostridium histolyticum being among the most popular) and later filtered to obtain a single cell suspension.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic of a general intestinal digestion protocol (created with biorender.com). (b) Digest of na\u00efve and day 14 hr. polygyrus (Hp)-infected duodenal segments using the standard digestion protocol. (c)\u00a0Intestinal cryosections stained with CD45-FITC (green) and DAPI (blue) from na\u00efve and day 14 infected intestines. Scale bar\u00a0=\u00a0100 \u00b5m (representative of\u00a0>10 sections from 3 to 5 mice per group and two independent experiments). (d) Number of live cells isolated from na\u00efve or day 14 infected duodenal segments during the systematic optimization of the standard digestion protocol. Further details can be found in Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2 (n\u00a0=\u00a03\u20135 samples per group, combined data from at least two independent experiments; # depicts the digestion protocol that yielded comparable cell numbers between na\u00efve and infected samples, all other protocols showed a significant difference to the na\u00efve group when compared by ordinary one-way ANOVA followed by Holm-Sidak\u2019s multiple comparisons test). (e) Digest of na\u00efve and day 14 infected duodenal segments using the optimised Hp digestion protocol (#13). (f) Number of live cells isolated from na\u00efve, day 7, day 14 and day 28 infected duodenal segments using the optimized Hp digestion protocol (n\u00a0>\u00a012 samples per group, combined data from at least three independent experiments; Kruskal-Wallis followed by Dunn\u2019s multiple comparisons test compared to the na\u00efve group; ***p\u22640.001). (g) Quantification of CD45+ cells present in the field of view (fov, 635.90\u00b5m\u00a0x\u00a0635.90\u00b5m) in cryosections from the same timepoints (representative of\u00a0>10 sections from 3 to 5 mice per group from two independent experiments; Kruskal-Wallis followed by Dunn\u2019s multiple comparisons test compared to the na\u00efve group; **p\u22640.01).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Dots plots of acquired events from day 14 hr. polygyrus-infected duodenal segments using digestion protocols #1\u20138 (representative of 3\u20135 samples per group from at least two independent experiments). Details for each digestion protocol are annotated. The gating strategy shows cells of interest, viability and CD45 staining.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Dots plots of acquired events from day 14 hr. polygyrus-infected duodenal segments using digestion protocols #9\u201314 (representative of 3\u20135 samples per group from at least two independent experiments). Details for each digestion protocol are annotated. The gating strategy shows cells of interest, viability and CD45 staining.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) H and E stained FFPE (Formalin fixed paraffin embedded) sections from na\u00efve C57BL/6 and day 14 hr. polygyrus-infected C57BL/6 and Stat6ko mice. Scale bar\u00a0=\u00a0100 \u00b5m (representative of\u00a0>10 sections from 3 to 5 mice per group and two independent experiments). (b) Worm counts from day 14 infected C57BL/6 and Stat6ko mice (n\u00a0=\u00a05 mice per group, representative for two independent experiments; unpaired t-test). (c,d) Dots plots of acquired events and number of live cells isolated from na\u00efve C57BL/6 and day 14 hr. polygyrus-infected C57BL/6 and Stat6ko mice using the standard digestion protocol (representative of 3\u20135 samples per group from two independent experiments; ordinary one-way ANOVA followed by Holm-Sidak\u2019s multiple comparisons test compared to the na\u00efve group; ***p\u22640.001). Details for the standard digestion protocol are annotated. The gating strategy shows cells of interest, viability and CD45 staining.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (a) Comparison of Collagenase A digested and non-digested splenocytes stained for each surface marker used in our 23-color spectral flow cytometry panel. Gates and percentages of positively stained populations are shown (representative of two independent experiments). (b) Comparison of MFIs for populations shown in a (unpaired t-test; *p\u22640.05, **p\u22640.01, ***p\u22640.001).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Dots plots of Collagenase A digested lamina propria cells from na\u00efve C57BL/6 mice stained with Zombie NIR, CD45, CD4, ki67, FoxP3 and ROR\u03b3t using four different commercial intracellular staining kits following the respective manufacturers\u2019 instructions (representative of two independent experiments). The eBioscience FoxP3/Transcription Factor Staining Buffer showed the best separation of our cell populations of interest and was used henceforth.\n\nWhile this method results in a high cell yield from steady state intestines, the isolation of cells from severely infected segments remains challenging (Rei\u00dfig et al., 2014; Scott et al., 2016; Webster et al., 2020) (Figure 1b). One of the most prominent examples are infections with intestinal helminths, which represent over 50% of all parasitic infections in human and livestock populations (McSorley and Maizels, 2012; Hotez et al., 2008; Jourdan et al., 2018; Jackson et al., 2009). This has limited our analysis of anti-parasite immune responses to imaging approaches, phenotypical observations in transgenic mouse strains or the assessment of secondary locations like the draining lymph nodes, blood or spleen (McSorley and Maizels, 2012; Maizels and McSorley, 2016; Mishra et al., 2014), which might only partially reflect local immunity. As helminth infections are strongly linked to chronic impairments that affect nutrition availability (Koski and Scott, 2001; Crompton and Nesheim, 2002); memory, cognition and physical development (Ezeamama et al., 2005; Pabalan et al., 2018; Nokes et al., 1992); changes in the microbiota (Gause and Maizels, 2016; Ramanan et al., 2016) and modulation of local and systemic immunity (Mishra et al., 2014; Maizels et al., 2009), an optimized digestion protocol is needed to further investigate the infected intestinal tissue.\n\n## Results and discussion\n\nDifficulties with intestinal digests during helminth infection have been associated with a strong anti-parasite type 2 immune response that drives mucus production (Hashimoto et al., 2009; von Moltke et al., 2016), alters the epithelium (Gerbe et al., 2016; Howitt et al., 2016), induces immune cell infiltration (Inclan-Rico and Siracusa, 2018) and causes tissue remodelling (Motran et al., 2018; Boyett and Hsieh, 2014) (Figure 1c). In order to investigate a model of both acute and chronic helminth infection, we infected C57BL/6 mice with Heligmosomoides polygyrus bakeri (also known as Heligmosomoides bakeri; Behnke and Harris, 2010), a naturally occurring rodent parasite with an exclusive intestinal life cycle (Monroy and Enriquez, 1992; Reynolds et al., 2012). Infective L3 larvae penetrate the intestinal tissue of the duodenum within 24 hr of ingestion, undergo larval development in the muscularis externa and return to the lumen within 10 days post infection, where the adult worms mate and develop a chronic infection in C57BL/6 mice (Reynolds et al., 2012; Smith et al., 2016). The peak of acute immunity is usually studied around day 14 post infection and we focused on this time point and the heavily infected duodenum (Filbey et al., 2014; Elliott et al., 2008), to optimize our digestion protocol.\n\nIn order to develop a digestion protocol for heavily infected intestines, we followed a systematic approach and optimized each step of the standard intestinal digestion protocol. First, we modified the EDTA wash steps to remove the increased amount of mucus but did not observe an improvement in cell yield (Figure 1d and Figure 1\u2014figure supplement 1; digestion protocols #1, 2, 6). This was followed by testing a variety of collagenases that have been reported for intestinal digests, as we hypothesized that the intestinal remodeling that occurred during helminth infection could negatively impact the digestion procedure. Indeed, we found that Collagenase A from Clostridium histolyticum (Figure 1d and Figure 1\u2014figure supplement 1; digestion protocols #7, 8), but not Collagenase VIII, Collagenase D, Dispase or Liberase TM (Figure 1d and Figure 1\u2014figure supplement 1; digestion protocols #3\u20135), showed an increase in cell yield when used in conjunction with the standard digestion protocol.\n\nTo further optimize the protocol, we focused on Collagenase A-based digestion and increased and modified the wash steps and observed a further increase in cell yield (Figure 1d and Figure 1\u2014figure supplement 2; digestion protocols #9\u201312). Importantly, strong vortexing after each wash step significantly improved the outcome of digestion (Figure 1d and Figure 1\u2014figure supplement 2; digestion protocol #13), suggesting that the epithelium is harder to remove in helminth-infected tissues. Indeed, observations from Stat6ko mice confirmed that the physiological changes that impair the intestinal digest using the standard protocol, were all linked to type two immune responses, as intestines from infected Stat6ko mice could readily be digested (Figure 1\u2014figure supplement 3). We also assessed intra-epithelial cells in the EDTA wash, but could not detect any CD45+ cells in preparations from infected animals, emphasizing that our protocol should only be used to isolate lamina propria cells. Several intestinal cell isolation protocols also utilize a final gradient centrifugation step to further isolate immune cells (Weigmann et al., 2007; Esterh\u00e1zy et al., 2019). However, in our hands this resulted in a dramatic drop in cell yield and was therefore omitted (Figure 1d and Figure 1\u2014figure supplement 2; digestion protocol #14). Our optimized lamina propria cell isolation protocol for H. polygyrus-infected intestines thus included three 10 min 2 mM EDTA wash steps (each followed by vigorous vortexing) and a 30 min digest with 1 mg/ml Collagenase A, 20% FCS and 0.05 mg/ml DNase (see Appendix 1 for step-by-step instructions).\n\nWhen we compared intestinal digests from na\u00efve animals using the standard or optimized cell isolation protocol, we observed highly comparable outcomes (Figure 1d; digestion protocols #1 and 13). Both digestion protocols resulted in a cell yield of 3\u20136 million live cells per duodenum with 70\u201380% viability and 20\u201330% frequency of CD45+ cells. To assess the effectiveness of our digestion protocol during the different stages of H. polygyrus infection, we harvested the duodenum from na\u00efve C57BL/6 mice and at day 7, day 14 and day 28 of H. polygyrus infection, which represented time points of larval development in the muscularis externa, as well as acute and chronic adult worm infection, respectively. We observed that samples from all time points could be successfully digested using our optimized digestion protocol and that duodenal digests from 14- and 28 days post infection yielded 3\u20136 million live cells per sample (Figure 1e,f). We furthermore observed a consistent doubling of the cell count to 8\u201311 million live cells per duodenum at day seven post infection and observed a similar trend when we quantified CD45+ cells in cryosections from these time points (Figure 1f,g).\n\nTo understand these differences and validate whether our protocol was suitable for subsequent single cell analysis and immunophenotyping, we characterized the isolated cells further using a 23-color spectral flow cytometry panel that incorporated many of the hallmark surface and intracellular markers for type two immune responses that have been associated with helminth infections (Maizels and McSorley, 2016; Reynolds et al., 2012) (see Supplementary file 1 for details regarding markers, fluorophores, clones and staining concentrations used). Our staining panel was designed to identify both innate and adaptive immune cell populations and allowed us to assess eosinophils, neutrophils, different subsets of monocytes, macrophages and dendritic cells, as well as the three main populations of innate lymphoid cells (ILC1, ILC2, and ILC3) and effector T cells populations (Th1, Th2, Th17), T regulatory cells and B cells as well as their proliferation through ki67 expression within the same panel.\n\nTo guarantee optimal staining conditions, we tested our optimized digestion protocol on splenocytes and compared digested to non-digested cells, as collagenase digests can negatively affect surface epitope integrity. While we observed a reduction in the MFIs of several markers (namely Ly6G, MHCII, CD45 and CD127), all positive stained cell populations could be clearly identified (Figure 1\u2014figure supplement 4). Isolated intestinal lamina propria cells also proved a challenge for intracellular staining, as different commercial intracellular staining kits significantly affected the cellular, but not debris, scatter profiles and varied in the resolution of intracellularly antibody staining (Figure 1\u2014figure supplement 5). In our hands, the eBioscience FoxP3/Transcription Factor Staining Buffer Set yielded the best results and was used henceforth.\n\nWe isolated immune cells from the three main stages of H. polygyrus infection (day 7, day 14 and day 28), representing larval development, as well as acute and chronic worm infection and used a combination of high-dimensional analysis tools and manual gating strategies to assess changes within each immune cell population (Figure 2a and Figure 2\u2014figure supplement 1 and Figure 2\u2014figure supplement 2). In line with previous findings (Inclan-Rico and Siracusa, 2018), we observed a strong infiltration of immune cells such as neutrophils and monocytes at day 7 post infection, which we verified by confocal microscopy and were primarily localized around the developing larvae explaining the increase in total cell number at this timepoint (Figure 2a\u2013c and Figure 2\u2014figure supplement 3). At later time points this inflammatory response receded, which was likely linked to the worms exiting the intestinal tissue and inhabiting the lumen. Peak expression of RELM\u03b1 in resident macrophages, which is a hallmark for their alternative activation and wound repair responses (Esser-von Bieren et al., 2013; Krljanac et al., 2019), was observed at day 14 and was again localized within the granulomas (Figure 2b,c and Figure 2\u2014figure supplement 3). While type two innate lymphoid cells did not increase in frequency over time, ki67 expression increased, suggesting cell proliferation and activation (Figure 2d), as previously described (von Moltke et al., 2016; Schneider et al., 2018). GATA3+ Th2 cells, important drivers of type two immunity (Reynolds et al., 2012; Mohrs et al., 2005), were detected throughout all stages of infection, increased in frequency over time and showed high ki67 expression (Figure 2b). Interestingly, ki67 expression strongly decreased at day 28 post infection for all cell types analyzed (Figure 2d and Figure 2\u2014figure supplement 4), which could be linked to the strong immunomodulatory properties reported during chronic worm infection (Maizels and McSorley, 2016; Grainger et al., 2010) (Figure 2e).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig2-v2.jpg)\n\n**Figure 2.:** (a) FlowSOM (top) and manual (bottom) analysis of live CD45+ cells isolated from na\u00efve, day 7, day 14 and day 28 infected duodenal segments stained with 23 surface and intracellular antibodies and gated as described in Figure 2\u2014figure supplement 1 (n\u00a0=\u00a03\u20138 samples per group, combined data from two independent experiments). (b) Quantification of different innate immune cell populations during the course of H. polygyrus infection (mean\u00a0\u00b1\u00a0s.e.m.; Kruskal-Wallis followed by Dunn\u2019s multiple comparisons test compared to the na\u00efve group; *p\u22640.05, ***p\u22640.001). (c) Representative images from intestinal cryosections stained with Ly6G-PECF594 (orange) and DAPI (blue) from na\u00efve and day 7 infected duodenal segments (top) or stained with RELM\u03b1-APC (red) and DAPI (blue) from na\u00efve, day 7 and day 14 infected duodenal segments (bottom). Scale bar\u00a0=\u00a0100 \u00b5m (representative of\u00a0>10 sections from 3 to 5 mice per group and two independent experiments). (d) Proportions of ILC and CD4 T cell populations and their expression of the proliferation marker ki67 during the course of infection (mean\u00a0\u00b1\u00a0s.e.m.; 2-way ANOVA followed by Dunnett\u2019s multiple comparisons test compared to each of the na\u00efve groups (stacked bar graphs) or compared to the combined na\u00efve group (line graphs); **p\u22640.01, ***p\u22640.001). (e) Schematic of H. polygyrus development, location and associated immune responses during the course of infection.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Contour plots of Collagenase A digested lamina propria cells from day 7 hr. polygyrus-infected C57BL/6 mice stained with our 23-color spectral flow cytometry panel. The gating strategy was used to identify innate and adaptive immune cells that have been associated with helminth infection and used for manual analysis of all stages of infection.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) FlowSOM analysis of live CD45+ cells isolated from na\u00efve, day 7, day 14 and day 28 hr. polygyrus-infected duodenal segments stained with 23 surface and intracellular antibodies and gated as described in Figure 2\u2014figure supplement 6 (n\u00a0=\u00a03\u20138 samples per group, combined data from two independent experiments). (b) Range of expression of each antibody for the combined FlowSOM analysis shown in a). Due to the uptake of Zombie NIR by eosinophils, only live CD45+ Siglec F- cells are shown.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Representative images from intestinal cryosections stained with CD45-FITC (green), RELM\u03b1-APC (red), CD64-PE (white), Ly6G-PECF594 (orange) and DAPI (blue) from na\u00efve, day 7, day 14 and day 28 hr. polygyrus-infected duodenal segments and their quantification per field of view (fov, 635.90\u00b5mx635.90\u00b5m). Scale bar\u00a0=\u00a0100 \u00b5m (representative of\u00a0>10 sections from 3 to 5 mice per group from two independent experiments; Kruskal-Wallis followed by Dunn\u2019s multiple comparisons test compared to the na\u00efve group; **p\u22640.01, ***p\u22640.001).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Analysis of live CD45+ cells (a), B cells (b), CD4 T cells (c), Dendritic cells (d) and CD64+ cells (e) isolated from na\u00efve, day 7, day 14 and day 28 infected H. polygyrus duodenal segments as gated in Figure 2\u2014figure supplement 6 (n\u00a0=\u00a03\u20138 samples per group, combined data from two independent experiments; mean\u00a0\u00b1\u00a0s.e.m.; Kruskal-Wallis followed by Dunn\u2019s multiple comparisons test compared to the na\u00efve group (bar graphs), 2-way ANOVA followed by Dunnett\u2019s multiple comparisons test compared to each of the na\u00efve groups (stacked bar graphs) or compared to the combined na\u00efve group (line graphs); *p\u22640.05, **p\u22640.01, ***p\u22640.001).\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Representative images from intestinal cryosections stained with CD45-FITC, B220-PECF594 (red), Siglec F- PECF594 (yellow), CD3-PE (magenta), CD4-APC (green), CD64-PE (cyan) and DAPI (blue) from na\u00efve (a) or day 14 hr. polygyrus infected (b) duodenal segments. Scale bar\u00a0=\u00a0100 \u00b5m (representative of\u00a0>10 sections from 3 to 5 mice per group from two independent experiments). (c) Quantification of CD45+, B220+, eosinophils (counted as non-epithelial Siglec\u00a0F+ cells), CD3+ CD4+, CD3+ CD4- and CD64+ cells per villi section per mm2 (>15 villi from\u00a0>10 sections from 3 to 5 mice per group from two independent experiments were quantified; unpaired t-test or 2-way ANOVA followed by Sidak\u2019s multiple comparisons test compared to each of the na\u00efve groups; **p\u22640.01, ***p\u22640.001). d, Comparison of immune cell frequencies detected by confocal microscopy (CM, as shown in c) or spectral flow cytometry (SFC, as shown in Figure 1a) from na\u00efve or day 14 infected duodenal segments (mean\u00a0\u00b1\u00a0s.e.m.; 2-way ANOVA followed by Sidak\u2019s multiple comparisons test comparing detected cell frequencies between technologies or between na\u00efve and infected segments; **p\u22640.01, ***p\u22640.001).\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Contour plots of digested duodenal draining mesenteric lymph node cells from day 7 hr. polygyrus-infected C57BL/6 mice stained with our 23-color spectral flow cytometry panel. The gating strategy was used to identify innate and adaptive immune cells that have been associated with helminth infection and used for manual analysis of all stages of infection.\n\n![Figure 2\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig2-figsupp7-v2.jpg)\n\n**Figure 2\u2014figure supplement 7.:** (a) FlowSOM (top) and manual (bottom) analysis of live CD45+ duodenum draining mesenteric lymph node cells from na\u00efve, day 7, day 14 and day 28 hr. polygyrus-infected C57BL/6 mice stained with 23 surface and intracellular antibodies and gated as described in Figure 2\u2014figure supplement 6\u00a0(n\u00a0=\u00a02\u20139 samples per group, combined data from two independent experiments). Number and percentage of live cells (b) CD45+ cells (c) B cells (d), innate immune cells (e,f) ILCs (g) T cells (h) and CD4 T cells (i) are shown (combined data from two independent experiments; mean\u00a0\u00b1\u00a0s.e.m.; Kruskal-Wallis followed by Dunn\u2019s multiple comparisons test compared to the na\u00efve group (bar graphs), 2-way ANOVA followed by Dunnett\u2019s multiple comparisons test compared to each of the na\u00efve groups (stacked bar graphs) or compared to the combined na\u00efve group (line graphs); *p\u22640.05, **p\u22640.01, ***p\u22640.001).\n\n![Figure 2\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/51678/elife-51678-fig2-figsupp8-v2.jpg)\n\n**Figure 2\u2014figure supplement 8.:** (a,b) Frequency of B cells (identified as CD45+ CD19+ CD3- CD64- MHCII+ cells), CD4 T cells (identified as CD45+ CD19- CD3+ CD4+ CD64- MHCII- cells) and macrophages (identified as CD45+ CD19- CD3- CD64+ MHCII+ cells) from na\u00efve or day 14 hr. polygyrus-infected C57BL/6 mice in CD45 enriched single cell suspensions (a) and after cell sorting for each individual population (b) (representative of 3\u20135 samples from three independent experiments). (c,d,e) RNA quality report from the Agilent TapeStation showing the gel image, electropherogram and reported RIN numbers from RNA extracted from 5,000 cells per population (representative of 2\u20133 samples from three independent experiments).\n\nTo validate that our cell isolation protocol resulted in an accurate representation of intestinal immune responses, we quantified B220+, Siglec F+, CD3+ CD4+, CD3+ CD4- and CD64+ cells using confocal microscopy (Figure 2\u2014figure supplement 5a\u2013c) and compared their frequency to our spectral flow cytometry data. We observed that the frequencies of B220+, CD3+ CD4+, and CD64+ cells were highly comparable between confocal microscopy and spectral flow cytometry, while Siglec F+ cells were overrepresented in our spectral flow cytometry data and CD3+ CD4- cells were underrepresented. However, changes within immune cell populations at the peak of H. polygyrus infection were faithfully reported by both confocal microscopy and spectral flow cytometry (Figure 2\u2014figure supplement 5d), emphasizing that cell ratios defined by single cell analysis need to be carefully validated within the tissue before conclusions are drawn.\n\nAnother important conclusion from our analysis was that the strong inflammatory immune responses that we had observed during H. polygyrus development in the muscularis externa, were specific to the infected tissue and were not observed to the same extent in the draining lymph nodes. Furthermore, ratios of ILC populations and T helper subsets were also strikingly different between the lamina propria and the draining lymph nodes at steady state, as were their proliferation kinetics and changes in proportion throughout the course of H. polygyrus infection (Figure 2\u2014figure supplement 6 and Figure 2\u2014figure supplement 7).\n\nTo highlight the potential of our protocol for future studies that utilize current single-cell analysis tools, such as single cell RNA sequencing, we assessed the RNA quality of purified B cells, CD4 T cells and macrophages isolated from na\u00efve or day 14 hr. polygyrus-infected mice (Figure 2\u2014figure supplement 8a,b). Our RNA quality analysis using the Agilent TapeStation resulted in high RIN numbers (range 6.8\u201310 for na\u00efve and 7.0\u201310 for day 14 hr. polygyrus samples) (Figure 2\u2014figure supplement 8e). However, no clear separation of the 18S and 28S peaks could be observed on the gel image or the electropherograms (Figure 2\u2014figure supplement 8c,d). While the RIN numbers might not have been correctly calculated, and a technical optimization of the TapeStation protocol might be necessary, no RNA degradation was observed in na\u00efve and day 14 hr. polygyrus samples, suggesting that the extraction of high-quality RNA is feasible from both na\u00efve and day 14 hr. polygyrus-infected mice using our cell isolation protocol.\n\nThus, our cell isolation protocol and high-dimensional analysis allowed us to characterize many known hallmarks of innate and adaptive anti-parasite immune responses throughout the entire course of helminth infection. We were able to validate these changes using confocal microscopy and while we could observe differences in the reported cell ratios, changes between na\u00efve and infected samples were faithfully reported by both approaches.\n\nImportantly, many of these changes were only observed locally, highlighting the requirement for good cell isolation techniques to investigate intestinal responses against helminths directly.\n\nIn addition to flow cytometric immunophenotyping, we were also able to extract high-quality RNA from cells isolated with our protocol, which could accelerate single-cell discoveries of local helminth immune responses through current single-cell analysis tools, such as single cell RNA sequencing, which has previously been unfeasible.\n\n## Materials and methods\n\n### Ethics statement\n\nAll animal experiments were carried out at the Malaghan Institute of Medical Research, were approved by the Victoria University of Wellington Animal Ethics Committee (permit 24432) and carried out according to institutional guidelines.\n\n### Mice\n\nC57BL/6 and Stat6ko (B6.129S2(C)-Stat6tm1Gru/J) mice were imported from The Jackson Laboratory and bred at the Malaghan Institute of Medical Research, Wellington, New Zealand. Mice were housed under specific pathogen free conditions and age-matched female adult animals were used in each experiment.\n\n### Heligmosomoides polygyrus infection\n\nThe H. polygyrus life cycle was maintained as previously described (Johnston et al., 2015). For experimental infections, mice were infected with 200 L3 larvae by oral gavage at 6\u20138 weeks of age and intestines and draining lymph nodes were harvested at the indicated time points. Adult worm burden was quantified by mounting opened intestines inside a 50 ml falcon filled with PBS. After 3 hr at 37\u00b0C, worms were collected from the bottom of the tube and counted under a microscope.\n\n### Cell isolation\n\nLamina propria cells were isolated from the first 8 cm of intestine according to isolation protocols described in this manuscript. Optimal digestion was achieved when intestinal segments were excised, cleaned and cut into small pieces. Samples were then washed with 2 mM EDTA/HBSS (Gibco) three times for 10 min at 37\u00b0 C and 200 rpm in a shaking incubator, followed by three pulse vortexing steps at 2500 rpm (maximum speed) for 3 s after each incubation. After the final EDTA wash step, samples were digested in 10 ml RPMI (Gibco) containing 20% FBS (Gibco), 1 mg/ml Collagenase A (Roche #10103578001, 0.223 U/mg solid) and 0.05 mg/ml DNAse (Roche #10104159001, 2916 Kunitz units/mgL) for 30 min at 37\u00b0C and 200 rpm in a shaking incubator, with vigorous manual shaking every 5 min. Digestion was quenched with FACS buffer and samples were passed through a 100 \u00b5m and 40 \u00b5m cell strainer to obtain a single cell suspension. An illustrated step-by-step protocol describing the procedure can be found in Appendix 1.\n\nIndividual duodenum draining mesenteric lymph nodes were identified as the most proximal lymph nodes of the mesenteric lymph node chain (Esterh\u00e1zy et al., 2019; Mayer et al., 2017), and were digested with 100 \u00b5g/mL Liberase TL and 100 \u00b5g/mL DNase I (both from Roche, Germany) for 30 min at 37\u00b0C and passed through a 70 \u00b5m cell strainer.\n\n### Conventional and spectral flow cytometry\n\nFor conventional flow cytometry cells were resuspended in 0.5 ml of 20 \u00b5g/ml DNase containing FACS buffer, stained with DAPI to identify dead cells, filtered and analyzed using a BD LSRFortessa SORP flow cytometer. For spectral flow cytometry, intestinal and lymph node samples were washed in 200 \u03bcL FACS buffer and incubated with Zombie NIR Fixable Viability dye (Biolegend) for 15 min at room temperature. After washing, cells were incubated with Fc block (clone 2.4G2, affinity purified from hybridoma culture supernatant) for 10 min followed by the incubation of surface antibodies (see Supplementary file 1) for 25 min at 4\u00b0C in the presence of 20 \u03bcg/ml DNase and Brilliant Buffer Plus (BD Biosciences). Cells were fixed and permeabilized with the FoxP3/Transcription Factor Staining Buffer Set (eBioscience) according to manufacturer\u2019s instructions and incubated with intracellular antibodies (see Supplementary file 1) for 45 min at 4\u00b0C. Cells were then resuspended in FACS buffer, filtered, and analyzed on a 3-laser Aurora spectral flow cytometer (Cytek Biosciences).\n\n### Data analysis\n\nFCS files were manually analyzed using FlowJo (v10.6, Tree Star) or evaluated with high-dimensional data analysis tools using Cytobank (v7.2, Cytobank Inc). After compensation correction in FlowJo, single, live, CD45+ events were imported into Cytobank and transformed to arcsinh scales. FlowSOM analysis was performed on 1,200,000 concatenated lamina propria and 1,000,000 concatenated lymph node cells, with an equal distribution of samples. Different cluster analyses were performed and 121 clusters were identified as the most representative for both data sets.\n\n### Imaging\n\nFor histological sections, 5 \u00b5m FFPE (Formalin fixed paraffin embedded) sections were stained using a standard H and E protocol (Jacobson et al., 2008) and visualized using a BX51 microscope (Olympus) equipped with a 10X NA 0.3 objective. For confocal microscopy, samples were processed and stained using a standard immunofluorescence protocol (Schmidt et al., 2019). Briefly, 1 cm long pieces of intestine were fixed in 4% PFA for 1 hr, incubated in 20% sucrose overnight and rinsed in PBS. Samples were then snap-frozen in OCT compound (Tissue-Tek) using a Stand-Alone Gentle Jane Snap-freezing system (Leica Biosystems). Cryosections of 7 \u00b5m were blocked with Fc Block (clone 2.4G2, affinity purified from hybridoma culture supernatant) for 1 hr and stained with CD45-FITC (clone 30-F11, Biolegend), CD64-PE (clone X54-5/7.1, Biolegend), Ly6G-PECF594 (clone 1A8, Biolegend), RELM\u03b1-APC (clone DSBRELM, eBioscience), B220-PECF594 (clone RA3-6B2, BD Biosciences), CD3-PE (clone 145\u20132 C11, eBioscience) or CD4-APC (clone RM4-5, BD Biosciences) for 1 hr. For nuclear staining, sections were incubated with DAPI (2 \u00b5g/ml) for 10 min. Images were taken with an inverted IX 83 microscope equipped with a FV1200 confocal head (Olympus) using a 20X, N.A 0.75 objective. Images were acquired using the FV10-ASW software (v4.2b, Olympus) and analyzed with ImageJ (Schindelin et al., 2012) (v1.52n). Image quantification analysis per field of view was performed using CellProfiler (Lamprecht et al., 2007) (v3.1.8) and based on the spatial co-expression of immune cell markers and DAPI-positive nuclei. Cell quantification per villi section per mm (Hwang et al., 2018) was based on manual selection of the villi and electronic quantification of the area and positively stained cells.\n\n### Cell sorting, RNA extraction and RNA quality assessment\n\nSingle cell suspensions from na\u00efve or day 14 hr. polygyrus-infected C57BL/6 mice were stained with CD45-BUV395 (clone 30-F11, BD Biosciences), CD64-Al647 (clone X54-5/7.1, Biolegend), MHCII-PE (clone M5/114.15.2, BD Biosciences), CD19-BB515 (clone 1D3, BD Biosciences), CD3-BV605 (clone 17A2, Biolegend), CD4-Pac Blue (clone RM4-5, BD Biosciences) and DAPI. 700,000 CD45+ cells were sorted into FACS buffer using a BD Influx cell sorter (BD Biosciences) followed by purification of B cells, CD4 T cells and macrophages. 5,000 cells of each population were sorted into 100 \u00b5l RNA lysis buffer (Zymo Research) and stored at \u221280C. RNA was extracted using the Quick-RNA MicroPrep Kit (Zymo Research) and its quality assessed using the High Sensitivity RNA Screen Tape (Agilent) and a 4150 TapeStation System (Agilent) according to the manufacturer\u2019s instructions.\n\n### Statistical analysis\n\nExperimental group sizes ranging from 3 to 5 animals were chosen to ensure that a two-fold difference between means could be detected with a power of at least 80%. Prism 6 Software (GraphPad) was used to calculate the s.e.m. and the statistical differences between groups and samples for each data set as detailed in the corresponding figure legends, with p\u22640.05 being considered as significant.\n\n### Source data\n\nAll spectral flow cytometry data sets presented in this study can be downloaded from flowrepository (http://flowrepository.org/id/FR-FCM-Z28B).\n",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "94ea9dff-142a-4ec2-b393-8c97497817d6",
+      "submission_id": "ac15657d-d494-4261-b72b-42c1042960fb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nicola L Harris, Monash University Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.51678.sa1](https://doi.org/10.7554/eLife.51678.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Single-cell analysis of intestinal immune cells during helminth infection\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Nicola L Harris as the Reviewing Editor and Reviewer #1, and the evaluation has been overseen by Satyajit Rath as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: John Grainger (Reviewer #2); Lisa Reynolds (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll reviewers agree that the manuscript by Ferrer-Font et al. has the potential to accelerate discovery in the area of local helminth immune responses by reporting what is a significant methodological advance for the field. This advance, which the authors have enabled through careful comparison of a large variety of digestion techniques, will enable others in the field to investigate the intestinal responses against helminths directly, enabling important experimental tools, including single cell sequencing analysis, to be enacted where such approaches were previously unfeasible.\n\nHowever, it does not offer, in its present form, any major new biological insight. Thus all three reviewers strongly recommended it is re-submitted as a tools and resources manuscript.\n\nThey also agreed the manuscripts main point \u2013 to provide a tool to allow single cell analysis \u2013 needs to be substantiated further by addressing the following points in a revision:\n\nEssential revisions:\n\nExperiment 1) The reviewers agree that a more quantitative comparison of their flow results to histology would be very valuable to confirm how representative their flow results are in reflecting cell types present in the tissue. It would be sufficient to provide this for day 14 (using specific markers for eosinophils, CD4+ or CD4- lymphoid cells, B cells and macrophages). The reviewers acknowledge that no digestion protocol will be able to perfectly preserve cell ratios present in the tissue, but it would be valuable for the reader to have this information and to clearly state in the manuscript the caveats of using single cell analysis to describe cell ratios. Please note that quantitative graphs (cell counts or pixel area if positive staining per mm2 of tissue, using a set number of villi and tissue sections) should be provided.\n\nExperiment 2) To substantiate the claim that this techniques will be useful for single cell analysis it would be useful for the reader to know whether it can be employed for single cell RNA seq experiments. In the regard the authors should provide an indication of RNA quality able to be obtained from distinct cell populations harvested from the day 14 post-infection digest. Note that the reviewers acknowledge high quality RNA is difficult to obtain from neutrophils and eosinophils, thus it would be sufficient if the authors provided data for the other major cell subsets namely macrophages (CD64+MHCII+), T cells and B cells.\n\nExperiment 3) I would be very useful if the authors collected the cells released from the epithelial layer (intra-epithelial cells) during the EDTA and vortexing stages and subjected these to flow cytometric analysis of major CD45+ cells collected including markers, at a minimum, for classical IEL populations and for eosinophils. Although not essential the tissues for this experiment would be available from the same animals as used for exp 2 above (day 14 cells samples would be sufficient) and the information would greatly strengthen the manuscript.\n",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0acdcc15-33b2-43a7-90b1-a02fa4aea96b",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C1",
+      "claim": "Single cell isolation from helminth-infected murine intestines has been notoriously difficult due to strong anti-parasite type 2 immune responses that drive mucus production, tissue remodeling and immune cell infiltration.",
+      "claim_type": "EXPLICIT",
+      "source": "Single cell isolation from helminth-infected murine intestines has been notoriously difficult, due to the strong anti-parasite type 2 immune responses that drive mucus production, tissue remodeling and immune cell infiltration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known challenge in the field, supported by the context of the study and references to tissue changes during infection.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "aab421ad-ae03-4014-a722-bcb39614c755",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C2",
+      "claim": "The optimized cell isolation protocol successfully isolates millions of immune cells from heavily infected duodenum.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the systematic optimization of a standard intestinal digestion protocol, we were able to successfully isolate millions of immune cells from the heavily infected duodenum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a primary finding, supported by experimental data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "5324fa90-403d-4eee-85f9-63fd588c2535",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C3",
+      "claim": "The cell isolation protocol and high-dimensional analysis identified many known hallmarks of anti-parasite immune responses throughout the entire course of helminth infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cell isolation protocol and high-dimensional analysis allowed us to identify many known hallmarks of anti-parasite immune responses throughout the entire course of helminth infection and has the potential to accelerate single-cell discoveries of local helminth immune responses that have previously been unfeasible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by spectral flow cytometry data and confocal microscopy validation throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "6892d280-2031-48b7-85d5-91f5947d6512",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C4",
+      "claim": "Recent advances in single cell analysis have significantly increased understanding of multiple diseases and cell types in different tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in single cell analysis have significantly increased our understanding of multiple diseases and cell types in different tissues (Svensson et al., 2018; Hwang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "1be75fb2-1e4b-41cf-9cba-a3f1d722e09e",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C5",
+      "claim": "Many single cell technologies require single cell suspensions as input, which limits assessment of difficult-to-process tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many of these technologies require single cell suspensions as an input, which limits our assessment of difficult-to-process tissues (Hwang et al., 2018; Nguyen et al., 2018; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature discussing technical limitations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "a4cda98f-701b-49cb-9d4f-112238806484",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C6",
+      "claim": "The intestine is at the center of many research questions focusing on nutrient uptake, host-microbiome interactions, local and systemic immune tolerance, and gastrointestinal diseases and infections.",
+      "claim_type": "EXPLICIT",
+      "source": "One prominent example is the intestine, which is at the center of many research questions that focus on nutrient uptake (Kiela and Ghishan, 2016), host-microbiome interactions (Belkaid and Hand, 2014; Tilg et al., 2019; Sekirov et al., 2010), local and systemic immune tolerance (Worbs et al., 2006; Harrison and Powrie, 2013; Whibley et al., 2019) and gastrointestinal diseases and infections (Mowat and Agace, 2014; Sell and Dolan, 2018; Fletcher et al., 2013; Hendrickson et al., 2002; Saleh and Elson, 2011), but represents a challenging tissue to digest (Weigmann et al., 2007; Rei\u00dfig et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published research in these areas.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "c66fa431-52c6-400d-ac56-15476167ddfa",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C7",
+      "claim": "The intestine represents a challenging tissue to digest.",
+      "claim_type": "EXPLICIT",
+      "source": "One prominent example is the intestine, which is at the center of many research questions that focus on nutrient uptake (Kiela and Ghishan, 2016), host-microbiome interactions (Belkaid and Hand, 2014; Tilg et al., 2019; Sekirov et al., 2010), local and systemic immune tolerance (Worbs et al., 2006; Harrison and Powrie, 2013; Whibley et al., 2019) and gastrointestinal diseases and infections (Mowat and Agace, 2014; Sell and Dolan, 2018; Fletcher et al., 2013; Hendrickson et al., 2002; Saleh and Elson, 2011), but represents a challenging tissue to digest (Weigmann et al., 2007; Rei\u00dfig et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published protocols and the context of the study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "d6bcc95c-b312-470b-8b0f-f59f85bea343",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C8",
+      "claim": "The standard digestion procedure to isolate intestinal immune cells from small intestinal lamina propria consists of three steps: collection and preparation, EDTA wash steps, and enzymatic digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard digestion procedure to isolate intestinal immune cells located in the small intestinal lamina propria consists of three steps (Weigmann et al., 2007; Rei\u00dfig et al., 2014; Scott et al., 2016; Esterh\u00e1zy et al., 2019) (Figure 1a). First the intestinal segment of interest is collected, opened longitudinally to remove its luminal content, washed and cut into small pieces. These pieces then undergo several wash steps with EDTA containing wash buffers at 37\u00b0C to remove the epithelial layer and make the lamina propria accessible for enzymatic digestion. Lastly, the tissue is enzymatically digested with collagenases (Collagenase VIII from Clostridium histolyticum being among the most popular) and later filtered to obtain a single cell suspension.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is described in the text and illustrated in Figure 1a, with citations to established protocols.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "738ef2f1-38d6-412e-a55b-e38bf3816ecd",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C9",
+      "claim": "Collagenase VIII from Clostridium histolyticum is among the most popular enzymes for intestinal digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the tissue is enzymatically digested with collagenases (Collagenase VIII from Clostridium histolyticum being among the most popular) and later filtered to obtain a single cell suspension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as common practice in the field, supported by citations to standard protocols.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "676e35c3-4c7f-4351-bba3-5204688f9d3d",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C10",
+      "claim": "The standard digestion method results in high cell yield from steady state intestines but isolation of cells from severely infected segments remains challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "While this method results in a high cell yield from steady state intestines, the isolation of cells from severely infected segments remains challenging (Rei\u00dfig et al., 2014; Scott et al., 2016; Webster et al., 2020) (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and demonstrated in Figure 1b showing poor cell recovery from infected samples using standard protocol.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "b3723da3-5a3f-40ba-9dc3-c3c2c40d8859",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C11",
+      "claim": "Intestinal helminths represent over 50% of all parasitic infections in human and livestock populations.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most prominent examples are infections with intestinal helminths, which represent over 50% of all parasitic infections in human and livestock populations (McSorley and Maizels, 2012; Hotez et al., 2008; Jourdan et al., 2018; Jackson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statistic is supported by multiple citations to epidemiological literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "5ee75434-fe0f-4fae-ba22-9d8c3d08cc4a",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C12",
+      "claim": "Limited cell isolation from infected intestines has restricted analysis of anti-parasite immune responses to imaging approaches, phenotypical observations in transgenic mouse strains, or assessment of secondary locations.",
+      "claim_type": "EXPLICIT",
+      "source": "This has limited our analysis of anti-parasite immune responses to imaging approaches, phenotypical observations in transgenic mouse strains or the assessment of secondary locations like the draining lymph nodes, blood or spleen (McSorley and Maizels, 2012; Maizels and McSorley, 2016; Mishra et al., 2014), which might only partially reflect local immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of technical limitations, supported by citations to studies using these alternative approaches.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "8ed764bb-a08c-4881-94d5-e7c8a21824cb",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C13",
+      "claim": "Secondary locations like draining lymph nodes, blood, or spleen might only partially reflect local immunity during helminth infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This has limited our analysis of anti-parasite immune responses to imaging approaches, phenotypical observations in transgenic mouse strains or the assessment of secondary locations like the draining lymph nodes, blood or spleen (McSorley and Maizels, 2012; Maizels and McSorley, 2016; Mishra et al., 2014), which might only partially reflect local immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation and later supported by data showing differences between lamina propria and draining lymph nodes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "8d74ac2c-902b-442d-88ff-f6e019747226",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C14",
+      "claim": "Helminth infections are strongly linked to chronic impairments affecting nutrition availability.",
+      "claim_type": "EXPLICIT",
+      "source": "As helminth infections are strongly linked to chronic impairments that affect nutrition availability (Koski and Scott, 2001; Crompton and Nesheim, 2002); memory, cognition and physical development (Ezeamama et al., 2005; Pabalan et al., 2018; Nokes et al., 1992); changes in the microbiota (Gause and Maizels, 2016; Ramanan et al., 2016) and modulation of local and systemic immunity (Mishra et al., 2014; Maizels et al., 2009), an optimized digestion protocol is needed to further investigate the infected intestinal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on helminth-associated pathology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "4e5e1815-fe55-420b-a710-4135aca01bad",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C15",
+      "claim": "Helminth infections are strongly linked to chronic impairments affecting memory, cognition and physical development.",
+      "claim_type": "EXPLICIT",
+      "source": "As helminth infections are strongly linked to chronic impairments that affect nutrition availability (Koski and Scott, 2001; Crompton and Nesheim, 2002); memory, cognition and physical development (Ezeamama et al., 2005; Pabalan et al., 2018; Nokes et al., 1992); changes in the microbiota (Gause and Maizels, 2016; Ramanan et al., 2016) and modulation of local and systemic immunity (Mishra et al., 2014; Maizels et al., 2009), an optimized digestion protocol is needed to further investigate the infected intestinal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on helminth-associated pathology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "ee22d1d6-7dda-4f13-9a02-50a911b1a7d8",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C16",
+      "claim": "Helminth infections are strongly linked to changes in the microbiota.",
+      "claim_type": "EXPLICIT",
+      "source": "As helminth infections are strongly linked to chronic impairments that affect nutrition availability (Koski and Scott, 2001; Crompton and Nesheim, 2002); memory, cognition and physical development (Ezeamama et al., 2005; Pabalan et al., 2018; Nokes et al., 1992); changes in the microbiota (Gause and Maizels, 2016; Ramanan et al., 2016) and modulation of local and systemic immunity (Mishra et al., 2014; Maizels et al., 2009), an optimized digestion protocol is needed to further investigate the infected intestinal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on helminth-microbiota interactions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "09cb031e-3f3e-49dc-b624-fa2911266d65",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C17",
+      "claim": "Helminth infections are strongly linked to modulation of local and systemic immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "As helminth infections are strongly linked to chronic impairments that affect nutrition availability (Koski and Scott, 2001; Crompton and Nesheim, 2002); memory, cognition and physical development (Ezeamama et al., 2005; Pabalan et al., 2018; Nokes et al., 1992); changes in the microbiota (Gause and Maizels, 2016; Ramanan et al., 2016) and modulation of local and systemic immunity (Mishra et al., 2014; Maizels et al., 2009), an optimized digestion protocol is needed to further investigate the infected intestinal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published research on helminth immunomodulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "fc6adae2-6002-47a9-98fa-194365803a02",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C18",
+      "claim": "Difficulties with intestinal digests during helminth infection have been associated with strong anti-parasite type 2 immune response that drives mucus production.",
+      "claim_type": "EXPLICIT",
+      "source": "Difficulties with intestinal digests during helminth infection have been associated with a strong anti-parasite type 2 immune response that drives mucus production (Hashimoto et al., 2009; von Moltke et al., 2016), alters the epithelium (Gerbe et al., 2016; Howitt et al., 2016), induces immune cell infiltration (Inclan-Rico and Siracusa, 2018) and causes tissue remodelling (Motran et al., 2018; Boyett and Hsieh, 2014) (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and demonstrated in Figure 1c showing tissue changes.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "040e3408-f943-48d7-a1a6-6638a675dadc",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C19",
+      "claim": "Strong anti-parasite type 2 immune response alters the epithelium during helminth infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Difficulties with intestinal digests during helminth infection have been associated with a strong anti-parasite type 2 immune response that drives mucus production (Hashimoto et al., 2009; von Moltke et al., 2016), alters the epithelium (Gerbe et al., 2016; Howitt et al., 2016), induces immune cell infiltration (Inclan-Rico and Siracusa, 2018) and causes tissue remodelling (Motran et al., 2018; Boyett and Hsieh, 2014) (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and demonstrated in Figure 1c.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "73225133-0e6e-4bc2-a472-fc678a36ed6b",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C20",
+      "claim": "Strong anti-parasite type 2 immune response induces immune cell infiltration during helminth infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Difficulties with intestinal digests during helminth infection have been associated with a strong anti-parasite type 2 immune response that drives mucus production (Hashimoto et al., 2009; von Moltke et al., 2016), alters the epithelium (Gerbe et al., 2016; Howitt et al., 2016), induces immune cell infiltration (Inclan-Rico and Siracusa, 2018) and causes tissue remodelling (Motran et al., 2018; Boyett and Hsieh, 2014) (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and demonstrated in Figure 1c showing increased CD45+ cells.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "1cf67c15-b491-4f06-947a-43428b310fec",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C21",
+      "claim": "Strong anti-parasite type 2 immune response causes tissue remodelling during helminth infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Difficulties with intestinal digests during helminth infection have been associated with a strong anti-parasite type 2 immune response that drives mucus production (Hashimoto et al., 2009; von Moltke et al., 2016), alters the epithelium (Gerbe et al., 2016; Howitt et al., 2016), induces immune cell infiltration (Inclan-Rico and Siracusa, 2018) and causes tissue remodelling (Motran et al., 2018; Boyett and Hsieh, 2014) (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and demonstrated in Figure 1c.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "d2a53135-689f-4e54-92af-3ed5f116f1f3",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C22",
+      "claim": "C57BL/6 mice were infected with Heligmosomoides polygyrus bakeri to investigate a model of both acute and chronic helminth infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate a model of both acute and chronic helminth infection, we infected C57BL/6 mice with Heligmosomoides polygyrus bakeri (also known as Heligmosomoides bakeri; Behnke and Harris, 2010), a naturally occurring rodent parasite with an exclusive intestinal life cycle (Monroy and Enriquez, 1992; Reynolds et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental model used, supported by citations about the parasite.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "56c7aa72-a189-4550-af6e-fb14dd1f6277",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C23",
+      "claim": "Heligmosomoides polygyrus bakeri is a naturally occurring rodent parasite with an exclusive intestinal life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate a model of both acute and chronic helminth infection, we infected C57BL/6 mice with Heligmosomoides polygyrus bakeri (also known as Heligmosomoides bakeri; Behnke and Harris, 2010), a naturally occurring rodent parasite with an exclusive intestinal life cycle (Monroy and Enriquez, 1992; Reynolds et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on the parasite biology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "fc6d99ba-1d4e-44bd-be74-c6f20c1e1cbe",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C24",
+      "claim": "Infective L3 larvae of H. polygyrus penetrate the intestinal tissue of the duodenum within 24 hr of ingestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Infective L3 larvae penetrate the intestinal tissue of the duodenum within 24 hr of ingestion, undergo larval development in the muscularis externa and return to the lumen within 10 days post infection, where the adult worms mate and develop a chronic infection in C57BL/6 mice (Reynolds et al., 2012; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parasite life cycle, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "b81ba287-e84e-407e-94f6-edf0531bacf7",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C25",
+      "claim": "H. polygyrus larvae undergo larval development in the muscularis externa.",
+      "claim_type": "EXPLICIT",
+      "source": "Infective L3 larvae penetrate the intestinal tissue of the duodenum within 24 hr of ingestion, undergo larval development in the muscularis externa and return to the lumen within 10 days post infection, where the adult worms mate and develop a chronic infection in C57BL/6 mice (Reynolds et al., 2012; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parasite life cycle, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "1d249776-25f8-42d4-b0e2-934e0983f4d7",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C26",
+      "claim": "H. polygyrus larvae return to the lumen within 10 days post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Infective L3 larvae penetrate the intestinal tissue of the duodenum within 24 hr of ingestion, undergo larval development in the muscularis externa and return to the lumen within 10 days post infection, where the adult worms mate and develop a chronic infection in C57BL/6 mice (Reynolds et al., 2012; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parasite life cycle, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "7df7f9f8-6dd9-4146-a90b-6d5cd84e7330",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C27",
+      "claim": "Adult H. polygyrus worms mate and develop a chronic infection in C57BL/6 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Infective L3 larvae penetrate the intestinal tissue of the duodenum within 24 hr of ingestion, undergo larval development in the muscularis externa and return to the lumen within 10 days post infection, where the adult worms mate and develop a chronic infection in C57BL/6 mice (Reynolds et al., 2012; Smith et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parasite life cycle in this mouse strain, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "b5a86b6e-3f5c-4eae-b72f-a2c7a1e21c99",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C28",
+      "claim": "The peak of acute immunity during H. polygyrus infection is usually studied around day 14 post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak of acute immunity is usually studied around day 14 post infection and we focused on this time point and the heavily infected duodenum (Filbey et al., 2014; Elliott et al., 2008), to optimize our digestion protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established practice in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "2091214e-8286-4869-9440-7d5185a7459c",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C29",
+      "claim": "Modifying the EDTA wash steps to remove increased mucus did not improve cell yield from infected intestines.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we modified the EDTA wash steps to remove the increased amount of mucus but did not observe an improvement in cell yield (Figure 1d and Figure 1\u2014figure supplement 1; digestion protocols #1, 2, 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a result of systematic testing, shown in Figure 1d and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "4cc1f583-e9a0-4c8c-9bd9-43e4a37688c3",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C30",
+      "claim": "Collagenase A from Clostridium histolyticum showed an increase in cell yield when used with the standard digestion protocol for infected intestines.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that Collagenase A from Clostridium histolyticum (Figure 1d and Figure 1\u2014figure supplement 1; digestion protocols #7, 8), but not Collagenase VIII, Collagenase D, Dispase or Liberase TM (Figure 1d and Figure 1\u2014figure supplement 1; digestion protocols #3\u20135), showed an increase in cell yield when used in conjunction with the standard digestion protocol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1d and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "a8e26492-1116-4b2c-8df9-d62b055250a1",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C31",
+      "claim": "Collagenase VIII, Collagenase D, Dispase and Liberase TM did not show an increase in cell yield when used with the standard digestion protocol for infected intestines.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that Collagenase A from Clostridium histolyticum (Figure 1d and Figure 1\u2014figure supplement 1; digestion protocols #7, 8), but not Collagenase VIII, Collagenase D, Dispase or Liberase TM (Figure 1d and Figure 1\u2014figure supplement 1; digestion protocols #3\u20135), showed an increase in cell yield when used in conjunction with the standard digestion protocol.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1d and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "d3cd141c-5ab8-41c0-a55b-e537b71f455e",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C32",
+      "claim": "Strong vortexing after each wash step significantly improved the outcome of digestion for infected intestines.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, strong vortexing after each wash step significantly improved the outcome of digestion (Figure 1d and Figure 1\u2014figure supplement 2; digestion protocol #13), suggesting that the epithelium is harder to remove in helminth-infected tissues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1d and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "a7063bc7-2ca1-4240-b35e-182e54569175",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C33",
+      "claim": "The epithelium is harder to remove in helminth-infected tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, strong vortexing after each wash step significantly improved the outcome of digestion (Figure 1d and Figure 1\u2014figure supplement 2; digestion protocol #13), suggesting that the epithelium is harder to remove in helminth-infected tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that vortexing improved digestion outcomes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "02cf8d3c-8639-46ba-a11a-867dd84611e6",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C34",
+      "claim": "Physiological changes that impair intestinal digest using the standard protocol are linked to type two immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, observations from Stat6ko mice confirmed that the physiological changes that impair the intestinal digest using the standard protocol, were all linked to type two immune responses, as intestines from infected Stat6ko mice could readily be digested (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing digestion outcomes in Stat6ko mice (which lack type 2 responses) versus wild-type mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "4eeb4fd6-cabe-4470-aced-5f523b09060c",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C35",
+      "claim": "Intestines from infected Stat6ko mice could readily be digested using the standard protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, observations from Stat6ko mice confirmed that the physiological changes that impair the intestinal digest using the standard protocol, were all linked to type two immune responses, as intestines from infected Stat6ko mice could readily be digested (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "0d3bffdd-3e34-4d0c-94c1-d0219d42ad5a",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C36",
+      "claim": "No CD45+ cells were detected in the EDTA wash from infected animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed intra-epithelial cells in the EDTA wash, but could not detect any CD45+ cells in preparations from infected animals, emphasizing that our protocol should only be used to isolate lamina propria cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "45dd73e0-0146-48cd-a05d-d002b6380cb2",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C37",
+      "claim": "The optimized protocol should only be used to isolate lamina propria cells, not intra-epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed intra-epithelial cells in the EDTA wash, but could not detect any CD45+ cells in preparations from infected animals, emphasizing that our protocol should only be used to isolate lamina propria cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observation that no intra-epithelial cells were recovered.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "adc882cb-2c6e-4a6e-abd4-7d4f6b602b1b",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C38",
+      "claim": "Gradient centrifugation resulted in a dramatic drop in cell yield and was therefore omitted from the optimized protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Several intestinal cell isolation protocols also utilize a final gradient centrifugation step to further isolate immune cells (Weigmann et al., 2007; Esterh\u00e1zy et al., 2019). However, in our hands this resulted in a dramatic drop in cell yield and was therefore omitted (Figure 1d and Figure 1\u2014figure supplement 2; digestion protocol #14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1d and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "34018e9d-4e4f-4c12-b1cb-0636e0ecdd98",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C39",
+      "claim": "The optimized lamina propria cell isolation protocol includes three 10 min 2 mM EDTA wash steps each followed by vigorous vortexing and a 30 min digest with 1 mg/ml Collagenase A, 20% FCS and 0.05 mg/ml DNase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our optimized lamina propria cell isolation protocol for H. polygyrus-infected intestines thus included three 10 min 2 mM EDTA wash steps (each followed by vigorous vortexing) and a 30 min digest with 1 mg/ml Collagenase A, 20% FCS and 0.05 mg/ml DNase (see Appendix 1 for step-by-step instructions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final optimized protocol developed through systematic testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "aaeb944e-dd27-4798-aa43-123228b77288",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C40",
+      "claim": "Intestinal digests from na\u00efve animals using the standard or optimized cell isolation protocol showed highly comparable outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared intestinal digests from na\u00efve animals using the standard or optimized cell isolation protocol, we observed highly comparable outcomes (Figure 1d; digestion protocols #1 and 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "69cb3765-9986-4195-b0b9-ea7110f61c26",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C41",
+      "claim": "Both standard and optimized digestion protocols resulted in a cell yield of 3\u20136 million live cells per duodenum with 70\u201380% viability and 20\u201330% frequency of CD45+ cells from na\u00efve animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Both digestion protocols resulted in a cell yield of 3\u20136 million live cells per duodenum with 70\u201380% viability and 20\u201330% frequency of CD45+ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental result comparing the two protocols on na\u00efve samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "eeca75a0-aa16-4872-a640-61cf6f592822",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C42",
+      "claim": "Samples from all time points of H. polygyrus infection (day 7, 14, and 28) could be successfully digested using the optimized digestion protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that samples from all time points could be successfully digested using our optimized digestion protocol and that duodenal digests from 14- and 28 days post infection yielded 3\u20136 million live cells per sample (Figure 1e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "6c81f991-61ce-4ab1-95c6-2f1ffa742234",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C43",
+      "claim": "Duodenal digests from 14 and 28 days post H. polygyrus infection yielded 3\u20136 million live cells per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that samples from all time points could be successfully digested using our optimized digestion protocol and that duodenal digests from 14- and 28 days post infection yielded 3\u20136 million live cells per sample (Figure 1e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "704aa574-490c-4451-8b7e-e509db4d1509",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C44",
+      "claim": "A consistent doubling of cell count to 8\u201311 million live cells per duodenum was observed at day 7 post H. polygyrus infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore observed a consistent doubling of the cell count to 8\u201311 million live cells per duodenum at day seven post infection and observed a similar trend when we quantified CD45+ cells in cryosections from these time points (Figure 1f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1f,g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "728ac264-2b89-4e53-8841-f9ed2c242a46",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C45",
+      "claim": "A similar trend of increased cell numbers at day 7 was observed when CD45+ cells were quantified in cryosections.",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore observed a consistent doubling of the cell count to 8\u201311 million live cells per duodenum at day seven post infection and observed a similar trend when we quantified CD45+ cells in cryosections from these time points (Figure 1f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by confocal microscopy data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "5b593aa5-42f1-48d8-a0f3-be61da2d6d49",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C46",
+      "claim": "A 23-color spectral flow cytometry panel was used to characterize isolated cells and incorporated hallmark surface and intracellular markers for type two immune responses associated with helminth infections.",
+      "claim_type": "EXPLICIT",
+      "source": "To understand these differences and validate whether our protocol was suitable for subsequent single cell analysis and immunophenotyping, we characterized the isolated cells further using a 23-color spectral flow cytometry panel that incorporated many of the hallmark surface and intracellular markers for type two immune responses that have been associated with helminth infections (Maizels and McSorley, 2016; Reynolds et al., 2012) (see Supplementary file 1 for details regarding markers, fluorophores, clones and staining concentrations used).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used, with citations supporting the marker selection.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "44392042-e4aa-45aa-8a9b-24b23c36a800",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C47",
+      "claim": "The staining panel was designed to identify both innate and adaptive immune cell populations including eosinophils, neutrophils, monocyte subsets, macrophages, dendritic cells, ILC subsets, T helper subsets, T regulatory cells, and B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our staining panel was designed to identify both innate and adaptive immune cell populations and allowed us to assess eosinophils, neutrophils, different subsets of monocytes, macrophages and dendritic cells, as well as the three main populations of innate lymphoid cells (ILC1, ILC2, and ILC3) and effector T cells populations (Th1, Th2, Th17), T regulatory cells and B cells as well as their proliferation through ki67 expression within the same panel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of the flow cytometry panel developed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "17972e71-33a8-445d-9be4-4e0996cccfce",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C48",
+      "claim": "Collagenase digestion can negatively affect surface epitope integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "To guarantee optimal staining conditions, we tested our optimized digestion protocol on splenocytes and compared digested to non-digested cells, as collagenase digests can negatively affect surface epitope integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known concern that motivated the validation experiment.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "854e337d-483d-4bef-bced-db589dfb1296",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C49",
+      "claim": "A reduction in MFIs of Ly6G, MHCII, CD45 and CD127 was observed after collagenase digestion, but all positive stained cell populations could be clearly identified.",
+      "claim_type": "EXPLICIT",
+      "source": "While we observed a reduction in the MFIs of several markers (namely Ly6G, MHCII, CD45 and CD127), all positive stained cell populations could be clearly identified (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "72168749-ab46-4633-acf1-61bdf772eb6b",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C50",
+      "claim": "Different commercial intracellular staining kits significantly affected cellular scatter profiles and varied in the resolution of intracellular antibody staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolated intestinal lamina propria cells also proved a challenge for intracellular staining, as different commercial intracellular staining kits significantly affected the cellular, but not debris, scatter profiles and varied in the resolution of intracellularly antibody staining (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experimental data shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "689ac1f6-129b-4b5f-9ec5-0eb94de45b79",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C51",
+      "claim": "The eBioscience FoxP3/Transcription Factor Staining Buffer Set yielded the best results for intracellular staining of intestinal lamina propria cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In our hands, the eBioscience FoxP3/Transcription Factor Staining Buffer Set yielded the best results and was used henceforth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the result of comparing different commercial kits shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "84fd9c1e-a6f5-4b92-8c67-d3d29ccb3906",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C52",
+      "claim": "A strong infiltration of immune cells such as neutrophils and monocytes was observed at day 7 post H. polygyrus infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous findings (Inclan-Rico and Siracusa, 2018), we observed a strong infiltration of immune cells such as neutrophils and monocytes at day 7 post infection, which we verified by confocal microscopy and were primarily localized around the developing larvae explaining the increase in total cell number at this timepoint (Figure 2a\u2013c and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry and confocal microscopy data, and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "b9a3e58c-f54b-4b44-926e-6fbe0d67a15b",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C53",
+      "claim": "Infiltrating immune cells at day 7 post infection were primarily localized around the developing larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous findings (Inclan-Rico and Siracusa, 2018), we observed a strong infiltration of immune cells such as neutrophils and monocytes at day 7 post infection, which we verified by confocal microscopy and were primarily localized around the developing larvae explaining the increase in total cell number at this timepoint (Figure 2a\u2013c and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by confocal microscopy data shown in Figure 2c and supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "144cbdf1-9f3d-4108-aacf-9e981434661e",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C54",
+      "claim": "The localization of infiltrating immune cells around developing larvae explains the increase in total cell number at day 7 post infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous findings (Inclan-Rico and Siracusa, 2018), we observed a strong infiltration of immune cells such as neutrophils and monocytes at day 7 post infection, which we verified by confocal microscopy and were primarily localized around the developing larvae explaining the increase in total cell number at this timepoint (Figure 2a\u2013c and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the spatial localization data and cell count data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "02c3d85c-bf85-4000-9eff-721583518afe",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C55",
+      "claim": "The inflammatory response receded at later time points after day 7, which was likely linked to the worms exiting the intestinal tissue and inhabiting the lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "At later time points this inflammatory response receded, which was likely linked to the worms exiting the intestinal tissue and inhabiting the lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing decreased inflammation at later timepoints and knowledge of the parasite life cycle.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "38c23d73-17f7-4e04-b2dd-9ac3d72b3ae5",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C56",
+      "claim": "Peak expression of RELM\u03b1 in resident macrophages was observed at day 14 post infection and was localized within the granulomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Peak expression of RELM\u03b1 in resident macrophages, which is a hallmark for their alternative activation and wound repair responses (Esser-von Bieren et al., 2013; Krljanac et al., 2019), was observed at day 14 and was again localized within the granulomas (Figure 2b,c and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry and confocal microscopy data, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "f7f928dd-f0a9-4c0a-ae2a-8bb349d7d96a",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C57",
+      "claim": "RELM\u03b1 expression is a hallmark for alternative activation and wound repair responses in macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Peak expression of RELM\u03b1 in resident macrophages, which is a hallmark for their alternative activation and wound repair responses (Esser-von Bieren et al., 2013; Krljanac et al., 2019), was observed at day 14 and was again localized within the granulomas (Figure 2b,c and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "aa477c43-0d74-4d61-97f8-04e366637daf",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C58",
+      "claim": "Type two innate lymphoid cells did not increase in frequency over time during H. polygyrus infection, but ki67 expression increased suggesting cell proliferation and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "While type two innate lymphoid cells did not increase in frequency over time, ki67 expression increased, suggesting cell proliferation and activation (Figure 2d), as previously described (von Moltke et al., 2016; Schneider et al., 2018).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "81f29125-8850-461d-9fa5-708fa1d015b2",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C59",
+      "claim": "GATA3+ Th2 cells are important drivers of type two immunity during helminth infection.",
+      "claim_type": "EXPLICIT",
+      "source": "GATA3+ Th2 cells, important drivers of type two immunity (Reynolds et al., 2012; Mohrs et al., 2005), were detected throughout all stages of infection, increased in frequency over time and showed high ki67 expression (Figure 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "89c7e0ec-2fcb-44e9-b2ab-22b6c7d53a2a",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C60",
+      "claim": "GATA3+ Th2 cells were detected throughout all stages of H. polygyrus infection, increased in frequency over time and showed high ki67 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "GATA3+ Th2 cells, important drivers of type two immunity (Reynolds et al., 2012; Mohrs et al., 2005), were detected throughout all stages of infection, increased in frequency over time and showed high ki67 expression (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "e1839860-56e7-42cb-9dd9-c33dacc068d7",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C61",
+      "claim": "Ki67 expression strongly decreased at day 28 post infection for all cell types analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ki67 expression strongly decreased at day 28 post infection for all cell types analyzed (Figure 2d and Figure 2\u2014figure supplement 4), which could be linked to the strong immunomodulatory properties reported during chronic worm infection (Maizels and McSorley, 2016; Grainger et al., 2010) (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry data shown in Figure 2d and supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "62c005c2-77ea-4ecf-a40a-f9b168faba94",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C62",
+      "claim": "The decrease in ki67 expression at day 28 could be linked to strong immunomodulatory properties reported during chronic worm infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ki67 expression strongly decreased at day 28 post infection for all cell types analyzed (Figure 2d and Figure 2\u2014figure supplement 4), which could be linked to the strong immunomodulatory properties reported during chronic worm infection (Maizels and McSorley, 2016; Grainger et al., 2010) (Figure 2e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data and supported by citations to literature on chronic helminth immunomodulation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "840e89f3-7981-491b-992f-0f97d3a50cb1",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C63",
+      "claim": "The frequencies of B220+, CD3+ CD4+, and CD64+ cells were highly comparable between confocal microscopy and spectral flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the frequencies of B220+, CD3+ CD4+, and CD64+ cells were highly comparable between confocal microscopy and spectral flow cytometry, while Siglec F+ cells were overrepresented in our spectral flow cytometry data and CD3+ CD4- cells were underrepresented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of comparing the two methods, with data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "6522f157-9792-4c8f-b7b9-5d10ae73bdd0",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C64",
+      "claim": "Siglec F+ cells were overrepresented in spectral flow cytometry data compared to confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the frequencies of B220+, CD3+ CD4+, and CD64+ cells were highly comparable between confocal microscopy and spectral flow cytometry, while Siglec F+ cells were overrepresented in our spectral flow cytometry data and CD3+ CD4- cells were underrepresented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of comparing the two methods, with data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "a63014c3-3b91-4cca-b12c-7e937e879195",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C65",
+      "claim": "CD3+ CD4- cells were underrepresented in spectral flow cytometry data compared to confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the frequencies of B220+, CD3+ CD4+, and CD64+ cells were highly comparable between confocal microscopy and spectral flow cytometry, while Siglec F+ cells were overrepresented in our spectral flow cytometry data and CD3+ CD4- cells were underrepresented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of comparing the two methods, with data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "7a4c8dfd-2db5-425e-bfed-5f814a162f62",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C66",
+      "claim": "Changes within immune cell populations at the peak of H. polygyrus infection were faithfully reported by both confocal microscopy and spectral flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "However, changes within immune cell populations at the peak of H. polygyrus infection were faithfully reported by both confocal microscopy and spectral flow cytometry (Figure 2\u2014figure supplement 5d), emphasizing that cell ratios defined by single cell analysis need to be carefully validated within the tissue before conclusions are drawn.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing the two methods, shown in Figure 2\u2014figure supplement 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "6e63cba0-d0eb-4dc4-ac0f-02d2fb9499f8",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C67",
+      "claim": "Cell ratios defined by single cell analysis need to be carefully validated within the tissue before conclusions are drawn.",
+      "claim_type": "EXPLICIT",
+      "source": "However, changes within immune cell populations at the peak of H. polygyrus infection were faithfully reported by both confocal microscopy and spectral flow cytometry (Figure 2\u2014figure supplement 5d), emphasizing that cell ratios defined by single cell analysis need to be carefully validated within the tissue before conclusions are drawn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the observation of differences in absolute frequencies between methods despite similar trends.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "6eabfc30-48ae-486e-890f-13171e580982",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C68",
+      "claim": "Strong inflammatory immune responses observed during H. polygyrus development in the muscularis externa were specific to the infected tissue and were not observed to the same extent in the draining lymph nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Another important conclusion from our analysis was that the strong inflammatory immune responses that we had observed during H. polygyrus development in the muscularis externa, were specific to the infected tissue and were not observed to the same extent in the draining lymph nodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from comparing lamina propria and lymph node data shown in Figure 2\u2014figure supplement 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "fb1ff1ae-5446-4c59-a551-f8d8b38d7a31",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C69",
+      "claim": "Ratios of ILC populations and T helper subsets were strikingly different between the lamina propria and the draining lymph nodes at steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ratios of ILC populations and T helper subsets were also strikingly different between the lamina propria and the draining lymph nodes at steady state, as were their proliferation kinetics and changes in proportion throughout the course of H. polygyrus infection (Figure 2\u2014figure supplement 6 and Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing data from the two tissues shown in the supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "1a24b6ca-f4c4-4605-a479-650fd8ab258f",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C70",
+      "claim": "Proliferation kinetics and changes in proportion of ILC populations and T helper subsets throughout H. polygyrus infection were different between the lamina propria and draining lymph nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ratios of ILC populations and T helper subsets were also strikingly different between the lamina propria and the draining lymph nodes at steady state, as were their proliferation kinetics and changes in proportion throughout the course of H. polygyrus infection (Figure 2\u2014figure supplement 6 and Figure 2\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing data from the two tissues shown in the supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "2947769f-c5fc-47dc-82dc-f1df327dc5e6",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C71",
+      "claim": "RNA quality analysis using the Agilent TapeStation resulted in high RIN numbers (range 6.8\u201310 for na\u00efve and 7.0\u201310 for day 14 H. polygyrus samples) from purified B cells, CD4 T cells and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RNA quality analysis using the Agilent TapeStation resulted in high RIN numbers (range 6.8\u201310 for na\u00efve and 7.0\u201310 for day 14 hr. polygyrus samples) (Figure 2\u2014figure supplement 8e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RNA quality data shown in Figure 2\u2014figure supplement 8e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "deb36f8c-6def-42f5-8ad0-f51634f7f66c",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C72",
+      "claim": "No clear separation of the 18S and 28S peaks could be observed on the gel image or electropherograms from RNA extracted from intestinal immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no clear separation of the 18S and 28S peaks could be observed on the gel image or the electropherograms (Figure 2\u2014figure supplement 8c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RNA quality data shown in Figure 2\u2014figure supplement 8c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "ca63ab8a-185f-4278-81e9-a73b138ca87d",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C73",
+      "claim": "No RNA degradation was observed in na\u00efve and day 14 H. polygyrus samples, suggesting that extraction of high-quality RNA is feasible using the cell isolation protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "While the RIN numbers might not have been correctly calculated, and a technical optimization of the TapeStation protocol might be necessary, no RNA degradation was observed in na\u00efve and day 14 hr. polygyrus samples, suggesting that the extraction of high-quality RNA is feasible from both na\u00efve and day 14 hr. polygyrus-infected mice using our cell isolation protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the RNA quality analysis data shown in Figure 2\u2014figure supplement 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "39af257d-952e-4680-8ec2-d3620210c0d3",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C74",
+      "claim": "The cell isolation protocol and high-dimensional analysis characterized many known hallmarks of innate and adaptive anti-parasite immune responses throughout the entire course of helminth infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our cell isolation protocol and high-dimensional analysis allowed us to characterize many known hallmarks of innate and adaptive anti-parasite immune responses throughout the entire course of helminth infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary conclusion supported by all the flow cytometry and microscopy data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "eaa80c0e-fd69-47d4-a3c7-7b0065bfd9c4",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C75",
+      "claim": "Changes in immune responses during helminth infection were validated using confocal microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to validate these changes using confocal microscopy and while we could observe differences in the reported cell ratios, changes between na\u00efve and infected samples were faithfully reported by both approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a validation approach, with data shown in Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "482dc627-33a0-4f95-996d-eef9ee1befb5",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C76",
+      "claim": "Many immune response changes during helminth infection were only observed locally in the infected tissue, highlighting the requirement for good cell isolation techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, many of these changes were only observed locally, highlighting the requirement for good cell isolation techniques to investigate intestinal responses against helminths directly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from comparing lamina propria and lymph node data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "71fa20c4-696b-4dbf-8507-2fac66083208",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C77",
+      "claim": "The optimized protocol has the potential to accelerate single-cell discoveries of local helminth immune responses through current single-cell analysis tools such as single cell RNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to flow cytometric immunophenotyping, we were also able to extract high-quality RNA from cells isolated with our protocol, which could accelerate single-cell discoveries of local helminth immune responses through current single-cell analysis tools, such as single cell RNA sequencing, which has previously been unfeasible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application, supported by the RNA quality data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "350f7d43-277d-4aaf-9435-09bfa436e1e9",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C78",
+      "claim": "Single cell RNA sequencing of local helminth immune responses has previously been unfeasible.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to flow cytometric immunophenotyping, we were also able to extract high-quality RNA from cells isolated with our protocol, which could accelerate single-cell discoveries of local helminth immune responses through current single-cell analysis tools, such as single cell RNA sequencing, which has previously been unfeasible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as context for the significance of the work, based on the technical challenges described.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "267b269b-c039-4e2f-9753-a8c9d0721674",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C79",
+      "claim": "All animal experiments were approved by the Victoria University of Wellington Animal Ethics Committee (permit 24432).",
+      "claim_type": "EXPLICIT",
+      "source": "All animal experiments were carried out at the Malaghan Institute of Medical Research, were approved by the Victoria University of Wellington Animal Ethics Committee (permit 24432) and carried out according to institutional guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the ethics statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "a5ec7195-5a59-4011-b46f-4b3e4ca9f197",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C80",
+      "claim": "C57BL/6 and Stat6ko mice were imported from The Jackson Laboratory and bred at the Malaghan Institute of Medical Research.",
+      "claim_type": "EXPLICIT",
+      "source": "C57BL/6 and Stat6ko (B6.129S2(C)-Stat6tm1Gru/J) mice were imported from The Jackson Laboratory and bred at the Malaghan Institute of Medical Research, Wellington, New Zealand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source and handling of experimental animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "808cceaa-ac85-4829-aeba-3d71b0dc0dc6",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C81",
+      "claim": "Mice were housed under specific pathogen free conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were housed under specific pathogen free conditions and age-matched female adult animals were used in each experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the housing conditions for experimental animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "c7ef1387-36b2-472b-8203-94bbdd2ad7ca",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C82",
+      "claim": "Age-matched female adult animals were used in each experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were housed under specific pathogen free conditions and age-matched female adult animals were used in each experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "39ebaf53-49ef-4616-9073-403749ccaa5d",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C83",
+      "claim": "Mice were infected with 200 L3 larvae of H. polygyrus by oral gavage at 6\u20138 weeks of age.",
+      "claim_type": "EXPLICIT",
+      "source": "For experimental infections, mice were infected with 200 L3 larvae by oral gavage at 6\u20138 weeks of age and intestines and draining lymph nodes were harvested at the indicated time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the infection protocol used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "f939610b-4dba-47bb-b48b-a5617e279d1b",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C84",
+      "claim": "Optimal digestion was achieved when intestinal segments were excised, cleaned, cut into small pieces, washed with 2 mM EDTA/HBSS three times for 10 min at 37\u00b0C with pulse vortexing, and digested in RPMI with 20% FBS, 1 mg/ml Collagenase A and 0.05 mg/ml DNAse for 30 min at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Optimal digestion was achieved when intestinal segments were excised, cleaned and cut into small pieces. Samples were then washed with 2 mM EDTA/HBSS (Gibco) three times for 10 min at 37\u00b0 C and 200 rpm in a shaking incubator, followed by three pulse vortexing steps at 2500 rpm (maximum speed) for 3 s after each incubation. After the final EDTA wash step, samples were digested in 10 ml RPMI (Gibco) containing 20% FBS (Gibco), 1 mg/ml Collagenase A (Roche #10103578001, 0.223 U/mg solid) and 0.05 mg/ml DNAse (Roche #10104159001, 2916 Kunitz units/mgL) for 30 min at 37\u00b0C and 200 rpm in a shaking incubator, with vigorous manual shaking every 5 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optimized protocol in detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "4f904052-144c-4728-bae4-251664e331fe",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C85",
+      "claim": "Duodenum draining mesenteric lymph nodes were identified as the most proximal lymph nodes of the mesenteric lymph node chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual duodenum draining mesenteric lymph nodes were identified as the most proximal lymph nodes of the mesenteric lymph node chain (Esterh\u00e1zy et al., 2019; Mayer et al., 2017), and were digested with 100 \u00b5g/mL Liberase TL and 100 \u00b5g/mL DNase I (both from Roche, Germany) for 30 min at 37\u00b0C and passed through a 70 \u00b5m cell strainer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the lymph node identification method, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "619681b4-d9ef-403d-a7b7-dcb030f25549",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C86",
+      "claim": "FlowSOM analysis was performed on 1,200,000 concatenated lamina propria cells with equal distribution of samples.",
+      "claim_type": "EXPLICIT",
+      "source": "FlowSOM analysis was performed on 1,200,000 concatenated lamina propria and 1,000,000 concatenated lymph node cells, with an equal distribution of samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational analysis approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "f63abbf0-a8c3-4772-93ed-6ac7d07e6684",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C87",
+      "claim": "121 clusters were identified as the most representative for both lamina propria and lymph node data sets in FlowSOM analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Different cluster analyses were performed and 121 clusters were identified as the most representative for both data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the result of the FlowSOM clustering analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "4559a36c-b4a6-497a-94ad-55cd975d5909",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "claim_id": "C88",
+      "claim": "Experimental group sizes ranging from 3 to 5 animals were chosen to ensure that a two-fold difference between means could be detected with a power of at least 80%.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental group sizes ranging from 3 to 5 animals were chosen to ensure that a two-fold difference between means could be detected with a power of at least 80%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical power calculation for experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ea7d8d5e-44de-424e-9cf4-44d299779db9",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Helminth-infected intestines are difficult to digest due to type 2 immune responses that drive mucus production, epithelial alterations, immune cell infiltration, and tissue remodeling. Standard digestion protocols fail to isolate cells from severely infected intestinal segments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7, C10, C18-C21 collectively establish the technical challenge addressed by this study. The difficulty is well-documented through citations and demonstrated experimentally in Figure 1b-c showing poor cell recovery and tissue changes during infection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "26724a37-dc55-49e6-b045-3dc2f9262362",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Through systematic optimization, the authors developed an improved digestion protocol using Collagenase A, vigorous vortexing after EDTA washes, and omitting gradient centrifugation. Type 2 immune responses were confirmed as the cause of digestion difficulties using Stat6ko mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35, C38-C39 describe systematic protocol optimization with experimental data in Figure 1d and supplements. The Stat6ko experiment (C34-C35) provides mechanistic validation that type 2 immunity causes digestion difficulties. The optimization is well-documented with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "2d9cbef2-fe2d-4115-9eef-c1267ad71d48",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The optimized protocol successfully isolates millions of immune cells from infected duodenum across all infection timepoints (days 7, 14, 28), with comparable performance to standard protocols on na\u00efve tissue. Cell counts doubled at day 7 post-infection, validated by both flow cytometry and microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C40-C45 demonstrate protocol effectiveness with quantitative data in Figure 1e-g. The protocol yields 3-6 million cells from infected tissue (days 14, 28) and 8-11 million at day 7, with microscopy validation showing similar trends. Sample sizes (n>12) and statistical testing support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "9b63639e-c4fd-41ed-84a4-7a469d86796f",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A 23-color spectral flow cytometry panel was developed and validated for comprehensive immunophenotyping of intestinal immune cells. Collagenase digestion reduced MFI for some markers but maintained population identification. The eBioscience FoxP3 buffer yielded optimal intracellular staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 describe methodological validation with data in Figure 1 supplements 4-5. The panel design is appropriate for helminth immunity, and validation experiments on splenocytes and comparison of staining kits demonstrate technical rigor. However, the MFI reductions (C49) suggest some epitope degradation that could affect quantitative comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "1a208938-b56b-460f-b1b8-c5067a2f20d4",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "High-dimensional analysis identified known hallmarks of anti-helminth immunity throughout infection: neutrophil/monocyte infiltration at day 7 around larvae, peak RELM\u03b1+ macrophages at day 14 in granulomas, ILC2 activation, expanding GATA3+ Th2 cells, and decreased ki67 expression at day 28 suggesting immunomodulation during chronic infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C52-C56, C58, C60-C62, C74 describe immune dynamics supported by flow cytometry (Figure 2a-d) and confocal microscopy (Figure 2c, supplements). The findings align with cited literature and show appropriate temporal patterns. Statistical testing supports significance claims. The interpretation of day 28 ki67 decrease (C62) as immunomodulation is reasonable but somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "d84f0d4b-16ca-462f-8dc8-8c366b39cbea",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Validation by confocal microscopy showed that B cells, CD4+ T cells, and CD64+ macrophages had comparable frequencies between microscopy and flow cytometry, while eosinophils were overrepresented and CD8+ T cells underrepresented in flow cytometry. Despite absolute frequency differences, both methods faithfully reported infection-induced changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 describe cross-validation with data in Figure 2 supplement 5. The comparison is methodologically sound and acknowledges discrepancies in absolute frequencies while demonstrating concordance in trends. Claim C67's conclusion that validation is necessary is well-supported by the observed differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "a78813b2-6f43-4c62-a3bd-73b15a5495be",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inflammatory responses during helminth infection were tissue-specific and not reflected in draining lymph nodes. ILC and T helper subset ratios, proliferation kinetics, and infection-induced changes differed substantially between lamina propria and lymph nodes, demonstrating that secondary lymphoid organs only partially reflect local immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70, C13, C76 compare lamina propria and lymph node responses with data in Figure 2 supplements 6-7. The comparison is comprehensive and demonstrates clear tissue-specific differences. This validates the need for direct tissue analysis and supports the study's rationale.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "1654399f-83a3-4570-9545-c6ca317cb150",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "High-quality RNA (RIN 6.8-10) was extracted from sorted intestinal immune cells, though 18S/28S peak separation was unclear. The protocol enables future single-cell RNA sequencing of local helminth immune responses, previously unfeasible due to technical limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C73 report RNA quality data (Figure 2 supplement 8), but acknowledge technical issues with RIN calculation and peak separation (C72). While no degradation was observed (C73), the unclear peaks raise questions about RNA quality assessment. Claims C77-C78 about enabling scRNA-seq are speculative and require experimental validation. The potential is supported by RNA quality data, but actual scRNA-seq feasibility remains undemonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "75f254f2-cf0d-4c33-9e83-a78624601532",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study used H. polygyrus bakeri infection in C57BL/6 mice as a model of acute and chronic helminth infection. The parasite has an exclusive intestinal life cycle with larvae penetrating duodenal tissue within 24 hours, developing in the muscularis externa, and returning to the lumen by day 10 to establish chronic infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 describe the experimental model with appropriate citations. The parasite biology and infection timeline are well-established in the literature. The choice of day 14 for optimization (C28) is justified by cited studies showing peak acute immunity at this timepoint.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "44397db5-7099-4c09-9148-3f0bc8636873",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study followed appropriate ethical guidelines, used specific pathogen-free age-matched female mice, infected with 200 L3 larvae, and employed validated methods for tissue processing, flow cytometry, microscopy, and computational analysis with adequate statistical power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C88 describe methods and experimental design. Ethics approval is documented (C79), animal husbandry is appropriate (C80-C82), infection protocol is standard (C83), and the optimized digestion protocol is detailed (C84). Computational methods (C86-C87) and power analysis (C88) are adequately described. These methodological details support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "accd1580-7c9c-4266-8fc4-be66650d5a36",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "No CD45+ intra-epithelial cells were detected in EDTA washes from infected animals, indicating the protocol specifically isolates lamina propria cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 describe a limitation of the protocol based on experimental observation. This is an important caveat that appropriately defines the scope of the method. However, the lack of intra-epithelial cell recovery could reflect technical issues rather than true absence, which is not fully explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    },
+    {
+      "id": "f3fec580-4359-4f97-adc8-fa69f0d2e349",
+      "content_id": "732963f0-9d6a-4079-ae7b-716815d7bc53",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Changes in immune responses during helminth infection were validated using confocal microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is supported by extensive microscopy data throughout Figure 2 and supplements showing spatial localization and quantification of immune cells that corroborate flow cytometry findings. The validation strengthens the study's conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-12-02T15:06:30.938832Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0acdcc15-33b2-43a7-90b1-a02fa4aea96b",
+      "result_id": "ea7d8d5e-44de-424e-9cf4-44d299779db9"
+    },
+    {
+      "claim_id": "c66fa431-52c6-400d-ac56-15476167ddfa",
+      "result_id": "ea7d8d5e-44de-424e-9cf4-44d299779db9"
+    },
+    {
+      "claim_id": "676e35c3-4c7f-4351-bba3-5204688f9d3d",
+      "result_id": "ea7d8d5e-44de-424e-9cf4-44d299779db9"
+    },
+    {
+      "claim_id": "fc6adae2-6002-47a9-98fa-194365803a02",
+      "result_id": "ea7d8d5e-44de-424e-9cf4-44d299779db9"
+    },
+    {
+      "claim_id": "040e3408-f943-48d7-a1a6-6638a675dadc",
+      "result_id": "ea7d8d5e-44de-424e-9cf4-44d299779db9"
+    },
+    {
+      "claim_id": "73225133-0e6e-4bc2-a472-fc678a36ed6b",
+      "result_id": "ea7d8d5e-44de-424e-9cf4-44d299779db9"
+    },
+    {
+      "claim_id": "1cf67c15-b491-4f06-947a-43428b310fec",
+      "result_id": "ea7d8d5e-44de-424e-9cf4-44d299779db9"
+    },
+    {
+      "claim_id": "2091214e-8286-4869-9440-7d5185a7459c",
+      "result_id": "26724a37-dc55-49e6-b045-3dc2f9262362"
+    },
+    {
+      "claim_id": "4cc1f583-e9a0-4c8c-9bd9-43e4a37688c3",
+      "result_id": "26724a37-dc55-49e6-b045-3dc2f9262362"
+    },
+    {
+      "claim_id": "a8e26492-1116-4b2c-8df9-d62b055250a1",
+      "result_id": "26724a37-dc55-49e6-b045-3dc2f9262362"
+    },
+    {
+      "claim_id": "d3cd141c-5ab8-41c0-a55b-e537b71f455e",
+      "result_id": "26724a37-dc55-49e6-b045-3dc2f9262362"
+    },
+    {
+      "claim_id": "a7063bc7-2ca1-4240-b35e-182e54569175",
+      "result_id": "26724a37-dc55-49e6-b045-3dc2f9262362"
+    },
+    {
+      "claim_id": "02cf8d3c-8639-46ba-a11a-867dd84611e6",
+      "result_id": "26724a37-dc55-49e6-b045-3dc2f9262362"
+    },
+    {
+      "claim_id": "4eeb4fd6-cabe-4470-aced-5f523b09060c",
+      "result_id": "26724a37-dc55-49e6-b045-3dc2f9262362"
+    },
+    {
+      "claim_id": "adc882cb-2c6e-4a6e-abd4-7d4f6b602b1b",
+      "result_id": "26724a37-dc55-49e6-b045-3dc2f9262362"
+    },
+    {
+      "claim_id": "34018e9d-4e4f-4c12-b1cb-0636e0ecdd98",
+      "result_id": "26724a37-dc55-49e6-b045-3dc2f9262362"
+    },
+    {
+      "claim_id": "aab421ad-ae03-4014-a722-bcb39614c755",
+      "result_id": "2d9cbef2-fe2d-4115-9eef-c1267ad71d48"
+    },
+    {
+      "claim_id": "aaeb944e-dd27-4798-aa43-123228b77288",
+      "result_id": "2d9cbef2-fe2d-4115-9eef-c1267ad71d48"
+    },
+    {
+      "claim_id": "69cb3765-9986-4195-b0b9-ea7110f61c26",
+      "result_id": "2d9cbef2-fe2d-4115-9eef-c1267ad71d48"
+    },
+    {
+      "claim_id": "eeca75a0-aa16-4872-a640-61cf6f592822",
+      "result_id": "2d9cbef2-fe2d-4115-9eef-c1267ad71d48"
+    },
+    {
+      "claim_id": "6c81f991-61ce-4ab1-95c6-2f1ffa742234",
+      "result_id": "2d9cbef2-fe2d-4115-9eef-c1267ad71d48"
+    },
+    {
+      "claim_id": "704aa574-490c-4451-8b7e-e509db4d1509",
+      "result_id": "2d9cbef2-fe2d-4115-9eef-c1267ad71d48"
+    },
+    {
+      "claim_id": "728ac264-2b89-4e53-8841-f9ed2c242a46",
+      "result_id": "2d9cbef2-fe2d-4115-9eef-c1267ad71d48"
+    },
+    {
+      "claim_id": "5b593aa5-42f1-48d8-a0f3-be61da2d6d49",
+      "result_id": "9b63639e-c4fd-41ed-84a4-7a469d86796f"
+    },
+    {
+      "claim_id": "44392042-e4aa-45aa-8a9b-24b23c36a800",
+      "result_id": "9b63639e-c4fd-41ed-84a4-7a469d86796f"
+    },
+    {
+      "claim_id": "17972e71-33a8-445d-9be4-4e0996cccfce",
+      "result_id": "9b63639e-c4fd-41ed-84a4-7a469d86796f"
+    },
+    {
+      "claim_id": "854e337d-483d-4bef-bced-db589dfb1296",
+      "result_id": "9b63639e-c4fd-41ed-84a4-7a469d86796f"
+    },
+    {
+      "claim_id": "72168749-ab46-4633-acf1-61bdf772eb6b",
+      "result_id": "9b63639e-c4fd-41ed-84a4-7a469d86796f"
+    },
+    {
+      "claim_id": "689ac1f6-129b-4b5f-9ec5-0eb94de45b79",
+      "result_id": "9b63639e-c4fd-41ed-84a4-7a469d86796f"
+    },
+    {
+      "claim_id": "5324fa90-403d-4eee-85f9-63fd588c2535",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "84fd9c1e-a6f5-4b92-8c67-d3d29ccb3906",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "b9a3e58c-f54b-4b44-926e-6fbe0d67a15b",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "144cbdf1-9f3d-4108-aacf-9e981434661e",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "02c3d85c-bf85-4000-9eff-721583518afe",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "38c23d73-17f7-4e04-b2dd-9ac3d72b3ae5",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "aa477c43-0d74-4d61-97f8-04e366637daf",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "89c7e0ec-2fcb-44e9-b2ab-22b6c7d53a2a",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "e1839860-56e7-42cb-9dd9-c33dacc068d7",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "62c005c2-77ea-4ecf-a40a-f9b168faba94",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "39af257d-952e-4680-8ec2-d3620210c0d3",
+      "result_id": "1a208938-b56b-460f-b1b8-c5067a2f20d4"
+    },
+    {
+      "claim_id": "840e89f3-7981-491b-992f-0f97d3a50cb1",
+      "result_id": "d84f0d4b-16ca-462f-8dc8-8c366b39cbea"
+    },
+    {
+      "claim_id": "6522f157-9792-4c8f-b7b9-5d10ae73bdd0",
+      "result_id": "d84f0d4b-16ca-462f-8dc8-8c366b39cbea"
+    },
+    {
+      "claim_id": "a63014c3-3b91-4cca-b12c-7e937e879195",
+      "result_id": "d84f0d4b-16ca-462f-8dc8-8c366b39cbea"
+    },
+    {
+      "claim_id": "7a4c8dfd-2db5-425e-bfed-5f814a162f62",
+      "result_id": "d84f0d4b-16ca-462f-8dc8-8c366b39cbea"
+    },
+    {
+      "claim_id": "6e63cba0-d0eb-4dc4-ac0f-02d2fb9499f8",
+      "result_id": "d84f0d4b-16ca-462f-8dc8-8c366b39cbea"
+    },
+    {
+      "claim_id": "6eabfc30-48ae-486e-890f-13171e580982",
+      "result_id": "a78813b2-6f43-4c62-a3bd-73b15a5495be"
+    },
+    {
+      "claim_id": "fb1ff1ae-5446-4c59-a551-f8d8b38d7a31",
+      "result_id": "a78813b2-6f43-4c62-a3bd-73b15a5495be"
+    },
+    {
+      "claim_id": "1a24b6ca-f4c4-4605-a479-650fd8ab258f",
+      "result_id": "a78813b2-6f43-4c62-a3bd-73b15a5495be"
+    },
+    {
+      "claim_id": "8ed764bb-a08c-4881-94d5-e7c8a21824cb",
+      "result_id": "a78813b2-6f43-4c62-a3bd-73b15a5495be"
+    },
+    {
+      "claim_id": "482dc627-33a0-4f95-996d-eef9ee1befb5",
+      "result_id": "a78813b2-6f43-4c62-a3bd-73b15a5495be"
+    },
+    {
+      "claim_id": "2947769f-c5fc-47dc-82dc-f1df327dc5e6",
+      "result_id": "1654399f-83a3-4570-9545-c6ca317cb150"
+    },
+    {
+      "claim_id": "deb36f8c-6def-42f5-8ad0-f51634f7f66c",
+      "result_id": "1654399f-83a3-4570-9545-c6ca317cb150"
+    },
+    {
+      "claim_id": "ca63ab8a-185f-4278-81e9-a73b138ca87d",
+      "result_id": "1654399f-83a3-4570-9545-c6ca317cb150"
+    },
+    {
+      "claim_id": "71fa20c4-696b-4dbf-8507-2fac66083208",
+      "result_id": "1654399f-83a3-4570-9545-c6ca317cb150"
+    },
+    {
+      "claim_id": "350f7d43-277d-4aaf-9435-09bfa436e1e9",
+      "result_id": "1654399f-83a3-4570-9545-c6ca317cb150"
+    },
+    {
+      "claim_id": "d2a53135-689f-4e54-92af-3ed5f116f1f3",
+      "result_id": "75f254f2-cf0d-4c33-9e83-a78624601532"
+    },
+    {
+      "claim_id": "56c7aa72-a189-4550-af6e-fb14dd1f6277",
+      "result_id": "75f254f2-cf0d-4c33-9e83-a78624601532"
+    },
+    {
+      "claim_id": "fc6d99ba-1d4e-44bd-be74-c6f20c1e1cbe",
+      "result_id": "75f254f2-cf0d-4c33-9e83-a78624601532"
+    },
+    {
+      "claim_id": "b81ba287-e84e-407e-94f6-edf0531bacf7",
+      "result_id": "75f254f2-cf0d-4c33-9e83-a78624601532"
+    },
+    {
+      "claim_id": "1d249776-25f8-42d4-b0e2-934e0983f4d7",
+      "result_id": "75f254f2-cf0d-4c33-9e83-a78624601532"
+    },
+    {
+      "claim_id": "7df7f9f8-6dd9-4146-a90b-6d5cd84e7330",
+      "result_id": "75f254f2-cf0d-4c33-9e83-a78624601532"
+    },
+    {
+      "claim_id": "b5a86b6e-3f5c-4eae-b72f-a2c7a1e21c99",
+      "result_id": "75f254f2-cf0d-4c33-9e83-a78624601532"
+    },
+    {
+      "claim_id": "267b269b-c039-4e2f-9753-a8c9d0721674",
+      "result_id": "44397db5-7099-4c09-9148-3f0bc8636873"
+    },
+    {
+      "claim_id": "a5ec7195-5a59-4011-b46f-4b3e4ca9f197",
+      "result_id": "44397db5-7099-4c09-9148-3f0bc8636873"
+    },
+    {
+      "claim_id": "808cceaa-ac85-4829-aeba-3d71b0dc0dc6",
+      "result_id": "44397db5-7099-4c09-9148-3f0bc8636873"
+    },
+    {
+      "claim_id": "c7ef1387-36b2-472b-8203-94bbdd2ad7ca",
+      "result_id": "44397db5-7099-4c09-9148-3f0bc8636873"
+    },
+    {
+      "claim_id": "39ebaf53-49ef-4616-9073-403749ccaa5d",
+      "result_id": "44397db5-7099-4c09-9148-3f0bc8636873"
+    },
+    {
+      "claim_id": "f939610b-4dba-47bb-b48b-a5617e279d1b",
+      "result_id": "44397db5-7099-4c09-9148-3f0bc8636873"
+    },
+    {
+      "claim_id": "4f904052-144c-4728-bae4-251664e331fe",
+      "result_id": "44397db5-7099-4c09-9148-3f0bc8636873"
+    },
+    {
+      "claim_id": "619681b4-d9ef-403d-a7b7-dcb030f25549",
+      "result_id": "44397db5-7099-4c09-9148-3f0bc8636873"
+    },
+    {
+      "claim_id": "f63abbf0-a8c3-4772-93ed-6ac7d07e6684",
+      "result_id": "44397db5-7099-4c09-9148-3f0bc8636873"
+    },
+    {
+      "claim_id": "4559a36c-b4a6-497a-94ad-55cd975d5909",
+      "result_id": "44397db5-7099-4c09-9148-3f0bc8636873"
+    },
+    {
+      "claim_id": "0d3bffdd-3e34-4d0c-94c1-d0219d42ad5a",
+      "result_id": "accd1580-7c9c-4266-8fc4-be66650d5a36"
+    },
+    {
+      "claim_id": "45dd73e0-0146-48cd-a05d-d002b6380cb2",
+      "result_id": "accd1580-7c9c-4266-8fc4-be66650d5a36"
+    },
+    {
+      "claim_id": "eaa80c0e-fd69-47d4-a3c7-7b0065bfd9c4",
+      "result_id": "f3fec580-4359-4f97-adc8-fa69f0d2e349"
+    }
+  ],
+  "comparisons": []
+}

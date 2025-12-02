@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C201"
+    ],
+    "result": "The authors developed a novel HIV-CRISPR vector system by repairing the 3' LTR of lentiCRISPRv2 with complete HIV-1 LTR sequences, enabling packaging of sgRNA-encoding genomes into budding HIV-1 particles. This vector was used to construct the PIKAHIV library containing 15,348 unique sgRNA sequences targeting 1905 ISGs plus 200 non-targeting controls, with 15,339 sgRNAs confirmed by sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33-C37, and C201 are well-supported by the vector design description (Figure 1A-B), library construction methods, and sequencing validation (Figure 1\u2014figure supplement 2). The technical approach is clearly documented with appropriate controls and verification steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "ZAP knockout improved HIV-CRISPR screen performance due to ZAP-mediated inhibition of the vector. The HIV-CRISPR genome contains high CG dinucleotide content (particularly in Cas9 and Puromycin resistance ORFs), which are targets for ZAP. ZAP-KO cells showed increased HIV-CRISPR packaging (from 10.5% to 24.8-31.6%) and better inter-replicate correlation (r\u00b2=0.92-0.94 vs 0.87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46-C51 are strongly supported by ddPCR data (Figure 2B), correlation analysis (Figure 2C), and CG content analysis (Figure 2A). The modest effect of ZAP/N4BP1 KO on HIV-1LAI infection (Figure 2\u2014figure supplement 1) combined with strong effects on vector packaging provides clear mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The PIKAHIV screen identified type I IFN pathway genes (STAT1, IFNAR1, STAT2, IRF9) as the highest-scoring hits, followed by ZAP and TRIM25. Multiple genes rather than a single ISG mediate IFN inhibition, with MxB, IFITM1, Tetherin, and TRIM5alpha being the most significant IFN-induced restriction factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C52-C54 are supported by MAGeCK analysis (Figure 1E, Figure 2E) showing clear enrichment patterns. The identification of IFN pathway genes as top hits validates the screen design, while the panel of restriction factors is consistent with known HIV biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "MxB, IFITM1, Tetherin/BST2, and TRIM5alpha together explain IFN inhibition of HIV-1LAI in THP-1 cells. MxB plays a major role as a dominant early-acting ISG, with MxB-KO showing the largest rescue of IFN inhibition (fold inhibition close to 1). TRIM5alpha and IFITM1 also contribute significantly with reduced IFN inhibition in knockout lines (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56-C57, C72-C74 are well-supported by validation experiments in knockout cell lines (Figures 3B-C, 4B-C). The data show partial rescue in individual knockouts, supporting the conclusion that multiple factors act together. Statistical significance is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "Viral entry route impacts restriction factor sensitivity. For VSV-G pseudotyped HIV-1, IFITMs (particularly IFITM3) are the dominant restriction factors, while MxB's role is masked. MxB-KO cells still show significant IFN inhibition (53-fold) with VSV-G pseudotyped virus, and MxB ranks only as hit #74 in this screen compared to being a top hit with wildtype envelope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68, C70 are supported by comparative screen data (Figure 3D-E) and validation experiments. The differential restriction patterns between wildtype and VSV-G pseudotyped virus are clearly demonstrated, though the mechanistic basis could be explored further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Tetherin is a late-acting ISG contributing to IFN inhibition of HIV-1LAI in THP-1 cells. Tetherin-KO shows no effect on early replication steps but significantly increases virus release for both Vpu-deficient (14-20.5 fold) and wildtype HIV-1LAI (2.14-4.4 fold), suggesting incomplete Vpu antagonism of IFN-induced Tetherin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77, C80-C83 are supported by experiments measuring both early infection (Figure 4B-C) and late virus release (Figure 4D-F). The differential effects on Vpu-deficient vs wildtype virus provide strong evidence for incomplete antagonism, though additional mechanistic studies would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C147",
+      "C149",
+      "C152"
+    ],
+    "result": "A screen with CCR5-tropic HIV-1Q23.BG505 revealed an overlapping but non-identical panel of restriction factors compared to HIV-1LAI. MxB, TRIM5alpha, UBE2L6, and IFITM1 restrict both strains, while IFI16 is specific to HIV-1Q23.BG505 and Tetherin/LGALS3BP/SAMD9L show strain-dependent restriction (strong for HIV-1LAI, weak/absent for HIV-1Q23.BG505).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C106-C107, C109-C111, C147, C149, C152 are supported by comparative screen data (Figure 6A-B). The identification of both common and strain-specific factors is clearly demonstrated, though the mechanistic basis for strain-dependent restriction requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The HIV-CRISPR screen identifies HIV dependency factors. CXCR4 (required for HIV-1LAI entry) is the top hit, followed by SIGLEC1/CD169, an IFN-induced HIV attachment factor. CD169 plays a role in cis-infection of THP-1 cells, with knockdown reducing infection both with and without IFN (6.5-fold vs 4.7-fold effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C84-C91 are supported by negative MAGeCK scores (Figure 5A) and validation experiments (Figure 5B-C). The identification of CXCR4 validates the approach, while the CD169 findings extend previous knowledge about trans-infection to cis-infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C175",
+      "C177",
+      "C178"
+    ],
+    "result": "TLR2 is a dependency factor that enhances HIV-1 infection independent of viral entry route. TLR2-KO reduces infection ~3-fold for both wildtype and VSV-G pseudotyped HIV-1. MYD88, a downstream effector of TLR2 signaling, is also a strong hit, suggesting downstream signaling functions enhance infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96, C175, C177-C178 are supported by screen data (Figure 5A) and validation with both entry routes (Figure 5E). The identification of both TLR2 and MYD88 provides mechanistic insight, though the specific signaling pathways require further characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C120",
+      "C179"
+    ],
+    "result": "SEC62 is a novel HIV dependency factor that affects CD4 receptor cell surface expression. SEC62 knockdown reduces wildtype HIV-1LAI infection but not VSV-G pseudotyped infection, and decreases CD4 surface expression while not affecting CXCR4, indicating specific effects on certain transmembrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105, C120, C179 are supported by knockdown experiments (Figure 5F-H) and differential effects with VSV-G pseudotyping. The specificity for CD4 vs CXCR4 is clearly demonstrated, though the mechanism of selective protein trafficking requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C121",
+      "C122",
+      "C123",
+      "C126",
+      "C127"
+    ],
+    "result": "IFN-induced restriction factors are incompletely antagonized by HIV strains in human cells. The combined action of MxB, TRIM5alpha, IFITM1, and Tetherin mediates robust restriction, with each factor individually imposing only modest restriction. HIV is still partially sensitive to human TRIM5alpha and IFN-induced MxB despite evolved antagonism mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C121-C123, C126-C127 are supported by the observation that multiple restriction factors remain active despite known HIV antagonism mechanisms. The partial rescue in individual knockouts (Figures 3-4) supports the conclusion of incomplete antagonism, though the evolutionary constraints are speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "ZAP and N4BP1 mediate modest inhibition of HIV replication. N4BP1's anti-lentiviral function appears genetically linked to ZAP activity (not a hit in ZAP-KO screens), suggesting N4BP1 may modify ZAP activity. However, N4BP1 does not affect ZAP-mediated inhibition of SFV, indicating viral target-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C168 are supported by modest infection increases in knockout cells (Figure 2\u2014figure supplement 1A-D) and loss of N4BP1 as a hit in ZAP-KO screens (Figure 2\u2014figure supplement 1E). The SFV data provides important specificity, though the mechanism of N4BP1-ZAP interaction requires further study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The HIV-CRISPR screening approach can simultaneously screen thousands of gene targets in a single experiment, use any virus strain, requires no reporter (virus replication provides readout), and captures host factors affecting all HIV lifecycle stages. The screen is sensitive enough to identify key factors in a single round of replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C173 are supported by the successful screening of 1905 genes, use of multiple HIV strains (HIV-1LAI, HIV-1Q23.BG505, VSV-G pseudotyped), identification of both early and late-acting factors, and 3-day single-round protocol. The technical capabilities are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "For HIV-1Q23.BG505, CCR5 is the most significantly depleted gene, SIGLEC1/CD169 is the top dependency factor hit, and SEC62, TLR2, MYD88, and NFKB1 are common dependency factors with HIV-1LAI, suggesting these factors are important across different HIV strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 are supported by negative MAGeCK scores (Figure 6C) and comparison with HIV-1LAI data. The identification of common dependency factors across strains strengthens the biological significance of these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C138",
+      "C141",
+      "C144",
+      "C146",
+      "C155",
+      "C197",
+      "C198"
+    ],
+    "result": "The authors propose that incomplete antagonism of restriction factors may result from conflicting evolutionary pressures on HIV, requiring viral proteins to balance multiple functions including evasion of restriction factors, maintenance of essential functions, and escape from immune responses. Further adaptation may be limited by simultaneous constraints from multiple independent restriction factor barriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C125, C138, C141, C144, C146, C155, C197-C198 represent speculative interpretations of the data. While the observation of incomplete antagonism is supported, the evolutionary explanations are hypotheses that would require additional experimental evidence (e.g., fitness studies, evolutionary experiments) to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C193",
+      "C194"
+    ],
+    "result": "Comparison with the Park et al. CRISPR screen reveals methodological differences (reporter-based vs virus-based readout, multiple rounds vs single round, T cells vs monocytes, whole-genome vs ISG-focused) that likely explain different hits identified. Both screens identify appropriate co-receptors, but PIKAHIV identifies SEC62, TLR2, and CD169 not found by Park et al.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C190, C193-C194 provide a fair comparison of the two approaches with clear documentation of methodological differences. The speculation about reasons for differences (C194) is reasonable given the documented technical variations, though direct experimental comparison would be needed for definitive conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C199",
+      "C200"
+    ],
+    "result": "The PIKAHIV library was constructed by selecting 1905 ISGs from multiple gene expression datasets of type I IFN-stimulated cells, enriching for genes specifically expressed in HIV target cells including THP-1, PBMCs, CD4+ T cells, monocytes, and macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C200 are supported by detailed methods describing ISG selection from multiple datasets (Figure 1\u2014figure supplement 1A) with appropriate cell types. The library design is well-documented and appropriate for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background claims about HIV-1 origins, restriction factors, IFN effects, and previous screening approaches are supported by appropriate citations to the literature. These establish the scientific context for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C32 are background/context claims supported by citations to established literature. These are appropriately used to frame the research question and are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C71",
+      "C78",
+      "C79",
+      "C85",
+      "C87",
+      "C92",
+      "C98",
+      "C108",
+      "C113",
+      "C114",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C139",
+      "C142",
+      "C143",
+      "C145",
+      "C148",
+      "C150",
+      "C151",
+      "C153",
+      "C156",
+      "C157",
+      "C158",
+      "C161",
+      "C176"
+    ],
+    "result": "Additional background claims about specific restriction factors (ZAP, N4BP1, TRIM5alpha, Tetherin, IFITMs, MxB, etc.), their mechanisms, and prior characterization are supported by appropriate literature citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C45, C55, C58-C60, C71, C78-C79, C85, C87, C92, C98, C108, C113-C114, C128-C137, C139, C142-C143, C145, C148, C150-C151, C153, C156-C158, C161, C176 provide necessary background on restriction factor biology with appropriate citations. These contextual claims are accurate based on cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C166",
+      "C191",
+      "C192"
+    ],
+    "result": "Speculative claims about evolutionary tradeoffs in Vpu function, potential benefits of moderate Tetherin antagonism for cell-to-cell transmission, N4BP1 as a ZAP modifier, and interpretation of Park et al. results as reflecting syncytia formation rather than infection per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C159-C160, C166, C191-C192 are speculative interpretations supported by citations to related work but lacking direct experimental evidence in this study. These represent reasonable hypotheses that would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C61",
+      "C69",
+      "C115",
+      "C140",
+      "C162",
+      "C174",
+      "C180",
+      "C181",
+      "C182",
+      "C195",
+      "C196"
+    ],
+    "result": "Summary and interpretive claims about the screen's findings, including that viral entry route impacts restriction, IFITMs dominate VSV-G restriction, SLC35A2/NFKB2 may act IFN-independently, Vpu cannot fully counteract UBE2L6, CD169 acts in cis, NFKB1 is a dependency factor while NFKB2 is a restriction factor, and fewer than eight genes mediate IFN inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C69, C115, C140, C162, C174, C180-C182, C195-C196 are interpretive summaries supported by the experimental data presented. These represent reasonable conclusions from the results, though some (C115, C140) involve speculation about mechanisms.",
+    "result_type": "MINOR"
+  }
+]

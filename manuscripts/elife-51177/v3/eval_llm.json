@@ -1,0 +1,142 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Mutator alleles are prevalent across diverse biological systems including bacteria, viruses, fungi, cancers, and laboratory microbial populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 collectively establish the widespread occurrence of mutators through multiple independent citations to published empirical studies across different organisms and experimental systems. These are well-documented observations from prior work that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Mutators are not directly advantageous but can invade populations through indirect selection via hitchhiking with linked beneficial mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 describe the established theoretical framework for mutator evolution, supported by appropriate citations to prior theoretical and empirical work. This provides the conceptual foundation for understanding mutator dynamics and motivates the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Previous work has interpreted mutator success as frequency-dependent, with mutators proposed to invade only when sufficiently common to produce beneficial mutations first, based on experimental observations of threshold frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 accurately characterize the prevailing interpretation in the literature, supported by appropriate citations including the classic Chao and Cox experiments and subsequent replications. This establishes the hypothesis that the current work challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C16",
+      "C20",
+      "C44",
+      "C45",
+      "C46",
+      "C60",
+      "C61"
+    ],
+    "result": "Indirect selection on mutators is frequency-independent: while overall fixation probability increases with frequency, the per-capita fixation probability remains constant, and mutators consistently outperform neutral expectations at all starting frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C61 present the central finding supported by simulation data in Figures 1B-C and Figure 2. The averaged trajectories (Figure 1C) show mutators increase from all starting frequencies, and Figure 2 demonstrates that per-capita fixation probability equals P_fix(x_0=1/N) at all frequencies, confirming frequency-independence. The simulation approach with 10^5-10^6 replicates provides sufficient statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Fixation in finite populations is stochastic, requiring evaluation across many replicate realizations to distinguish selection from drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 state fundamental principles of population genetics that are well-established knowledge. These principles provide the theoretical justification for the methodological approach of averaging across many simulation replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The transient decline in average mutator frequency reflects selection against deleterious mutation load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 provides a mechanistic interpretation of the dynamics in Figure 1C, supported by citation to Kimura's theoretical work on mutation load. The interpretation is consistent with established theory, though the authors note this will be explored further in future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C36",
+      "C37",
+      "C47"
+    ],
+    "result": "The apparent frequency threshold in experiments is an artifact of limited sampling: rare mutators have low per-capita fixation probability, so few replicates at each frequency produce a sharp observed transition even under frequency-independent selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C47 provide a statistical explanation reconciling prior experimental observations with frequency-independent selection. The low P_fix(x_0=1/N) = 5.6\u00d710^-4 means most replicates with rare mutators fail, creating an apparent threshold with limited sampling. This is a logical inference well-supported by the simulation results and is consistent with the citation to Tanaka et al. 2003.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The threshold-like transition in individual realizations is not unique to mutators but occurs for any allele not under true frequency-dependent selection, including directly beneficial mutations, while only truly frequency-dependent mutations show thresholds in averaged dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by simulation data in Figure 3, which demonstrates that beneficial mutations (panels A-B) show threshold-like behavior in single realizations but not in averages, while truly frequency-dependent mutations (panels C-D) show thresholds in both. This effectively distinguishes stochastic sampling effects from genuine frequency-dependence and strengthens the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "The simulations employ a Wright-Fisher model of asexual haploid populations with 99 fitness loci and 1 mutator locus, using parameter values typical of microbial experiments, with both constant and exponentially-distributed fitness effects tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 describe the simulation methodology with appropriate citations. The Wright-Fisher model is standard, parameter values are justified by citation to prior work (Raynes et al. 2018), and code availability is documented. Testing both constant and exponential fitness distributions (Figure 1 vs Figure 1\u2014supplement 1) demonstrates robustness. However, some details are missing: random seed specification, exact number of replicates for some conditions, and validation against analytical predictions beyond Equation 1.",
+    "result_type": "MINOR"
+  }
+]

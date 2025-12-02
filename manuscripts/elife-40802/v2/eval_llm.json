@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The manuscript establishes the biological context by reviewing established knowledge about pervasive transcription in yeast, transcription termination pathways (CPF-CF and NNS), replication origin specification by ARSs, ORC binding to ACS sequences, and prior findings that strong transcription through ARSs is detrimental to origin function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C8-C32) represent established knowledge from the literature, appropriately cited throughout the introduction. They provide necessary background for understanding the study's motivation and experimental design. The claims are well-supported by citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "RNAPII accumulates upstream of primary ACSs and sharply decreases within 25nt preceding the ACS, suggesting pausing and termination occur before the ACS. RNA 3'-end mapping confirms termination events peak immediately upstream of the ACS, with higher 3'-end counts in exosome-deficient cells, consistent with roadblock termination producing unstable RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C42 are well-supported by RNAPII PAR-CLIP data (Figure 1A), RNA 3'-end mapping (Figure 1B), and statistical analysis (Figure 1\u2014figure supplement 2). The data clearly show RNAPII accumulation and sharp decrease at ACSs, with corresponding 3'-end peaks. The exosome-dependence of released RNAs supports the roadblock mechanism interpretation. Statistical significance is properly demonstrated (p<10^-20).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "When origins are aligned to predicted secondary ACSs, RNAPII occupancy peaks sharpen significantly compared to primary ACS alignment, suggesting RNAPII pauses upstream of secondary ACSs. However, transcription termination (RNA 3'-ends) occurs ~50nt downstream of secondary ACSs, indicating antisense transcription terminates after pausing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by realignment analysis shown in Figures 1C-E and supplementary figures. The sharpening of RNAPII peaks at secondary ACSs is statistically significant (Figure 1\u2014figure supplement 2C). The spatial separation between RNAPII pausing and 3'-end distribution at secondary ACSs is clearly demonstrated, revealing functional asymmetry between primary and secondary ACSs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Analysis of specific origins (ARS305, ARS413, ARS431, ARS453) under conditions of increased readthrough transcription (rna15-2 mutant, Nrd1 depletion) shows that both primary and secondary ACSs can induce RNAPII pausing at origin borders. RNAPII generally pauses and terminates upstream of primary ACSs but pauses at secondary ACSs while terminating downstream, providing in vivo evidence for functional differences between primary and secondary ACSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 are supported by RNAPII CRAC data at individual origins (Figure 2A-D). The experiments manipulating termination pathways provide clear evidence that increased transcription load leads to increased RNAPII accumulation at roadblocks. The asymmetric behavior at primary versus secondary ACSs is consistently observed across multiple origins, supporting the proposed functional difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Using a reporter system, ARS305 confers copper resistance in an ACS-dependent manner, demonstrating transcription termination at the origin. Northern blot analysis shows a short transcript is produced at ARS305, stabilized in rrp6\u0394 cells, and abolished when the ACS is mutated. Mutation analysis reveals that the high-affinity ORC-binding site (ACS) alone is necessary but not sufficient for termination; the secondary ACS (B4) and B1 motif are additionally required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are well-supported by the reporter assay (Figure 3B) and Northern blot analysis (Figure 3C). The experiments systematically test the ACS-dependency of termination and dissect the contributions of different sequence elements (ACS, B1, B4). The data clearly show that B4 mutation has the strongest effect on termination, similar to ACS mutation, while B1 has a minor effect. The conclusion that multiple elements are required is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Comparison of ORC-bound ACSs versus non-recognized ACSs (nr-ACSs) shows that termination patterns around ORC-ACSs are similar to confirmed replication origins, with many unstable transcripts produced (higher 3'-ends in exosome-deficient strains). In contrast, nr-ACSs show radically different termination patterns with transcription crossing the ACS and terminating downstream via the CPF pathway (no exosome-dependence), indicating that ORC binding to the ACS is necessary to roadblock RNAPII.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by comparative analysis of RNA 3'-end distributions at ORC-ACSs versus nr-ACSs (Figure 4A-B). The key observation that nr-ACSs lack the characteristic termination pattern and exosome-dependence seen at ORC-ACSs provides strong evidence that ORC binding, not just the ACS sequence, is required for roadblock termination. The logic is sound and the data are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RT-qPCR analysis at ARS404 and ARS1004 shows efficient ORC roadblocking (1-10% readthrough) in wild-type cells. Mutations affecting ORC binding (orc2-1, orc5-1) or Cdc6 function (cdc6-1) at non-permissive temperature markedly increase transcriptional readthrough, indicating that stable ORC binding to the ACS is necessary but not sufficient for efficient roadblock termination; assembly of an ORC\u2022Cdc6 complex or full pre-RC is essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by RT-qPCR data (Figure 4D) showing increased readthrough in orc2-1, orc5-1, and cdc6-1 mutants at restrictive temperature. The experiments directly test the requirement for ORC binding and pre-RC assembly in roadblock termination. The finding that cdc6-1 has similar effects to ORC mutants is particularly informative, suggesting pre-RC assembly is required. The conclusion is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Origins with the highest levels of transcription (top 30 of 192) show significantly lower licensing efficiency (p=0.003) and lower probability of firing (p=0.012) compared to the rest of the population, demonstrating that physiological levels of pervasive transcription negatively impact origin function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by statistical analysis shown in Figure 5A-B. The comparison between high-transcription origins and the rest of the population is appropriately performed using Student's t-test with significant p-values. The sample sizes are adequate (30 vs 162 origins). The conclusion that transcription negatively impacts licensing and firing is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Detailed analysis of 30 origins with highest incoming transcription reveals that transcription over the ARS strongly anticorrelates with origin competence (p=2\u00d710^-4) and efficiency (p=5\u00d710^-5). Two classes of origins are identified: those with high PF|L (probability of firing given licensing) that are insensitive to transcription and fire early, and those with low PF|L that are sensitive to transcription levels (R\u00b2=0.55, p=0.002) and fire later when transcription increases (R\u00b2=0.44, p=0.009). This demonstrates that transcription impacts both licensing and post-licensing activation for a subset of origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C87 are supported by correlation analyses shown in Figure 6B-F. The statistical analyses are appropriate, with significant p-values and reasonable R\u00b2 values for biological data. The identification of two origin classes based on PF|L is data-driven and reveals important heterogeneity in origin responses to transcription. The conclusions about differential sensitivity to transcription are well-supported by the correlations shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Using ARS1206 in sense (pS) versus antisense (pAS) orientation relative to HSP104 readthrough transcription, the authors show that HSP104 expression and polyadenylation are equivalent in both orientations, but plasmid maintenance is more efficient with pS than pAS. In orc2-1 mutant cells, pAS cannot be efficiently propagated while pS is maintained normally. This demonstrates that transcription approaching from the secondary ACS side affects origin function more severely, and that protection from pervasive transcription by primary and secondary ACSs occurs asymmetrically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 are supported by RT-qPCR (Figure 7B), Northern blot (Figure 7C), plasmid-loss assay (Figure 7D), and transformation assay (Figure 7E). The experimental design cleverly tests the functional asymmetry of primary versus secondary ACSs by inverting the origin orientation. The data clearly show differential effects on plasmid maintenance despite equivalent transcription termination, supporting the conclusion about asymmetric protection. The orc2-1 experiment provides additional support for the role of ORC binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study concludes that ARSs alter the pervasive transcription landscape by pausing and terminating neighboring RNAPII transcription, limiting pervasive transcription within origins. Origins are not porous to transcription and generate characteristic footprints in RNAPII occupancy. Low, physiological levels of pervasive transcription impact origin function, demonstrating that pervasive transcription can shape the replication program and may regulate it according to cellular needs. The authors propose that quasi-symmetrical ORC binding and/or pre-RC formation are responsible for pausing and termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C95-C98 represent the main conclusions of the study, synthesizing findings from multiple experiments. These conclusions are well-supported by the collective evidence: RNAPII mapping shows pausing/termination at ACSs (Figures 1-2), reporter assays confirm ACS-dependent termination (Figure 3), genetic experiments demonstrate ORC/pre-RC requirement (Figure 4), and correlation analyses show transcription impacts origin function (Figures 5-6, 7). The proposed mechanism (C6) is appropriately framed as a proposal based on the data. The speculation about regulation (C98) is reasonable but acknowledged as such.",
+    "result_type": "MAJOR"
+  }
+]

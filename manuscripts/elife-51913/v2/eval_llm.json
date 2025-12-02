@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Aromatic bis-isothiourea compounds inhibit hDMT1 with IC50 values in the low micromolar range, with TEBIT and TMBIT being most potent (0.27 and 0.35 \u03bcM). The isothiourea moieties are critical for inhibitory activity, as their replacement dramatically reduces potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide IC50 measurements from cellular uptake assays with appropriate replicates (Figure 1B). Claims C46-C48 demonstrate structure-activity relationships showing 4-fold and 40-fold reductions in potency when one or both isothiourea groups are modified, supporting their functional importance. The data are internally consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The inhibitory compounds do not chelate metal ions, confirming that inhibition results from specific protein-inhibitor interactions rather than substrate sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by ITC experiments (Figure 1\u2014figure supplement 1B) showing no binding between inhibitors and MnCl2, while EDTA controls show expected chelation. This control experiment is essential for validating the mechanism and is appropriately executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Kinetic analysis reveals that aromatic bis-isothiourea compounds inhibit hDMT1 by a predominantly competitive mechanism, with increased KM but minimal changes in vmax at higher inhibitor concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by Michaelis-Menten kinetic analysis (Figure 1\u2014figure supplement 3, Table 1) showing characteristic competitive inhibition patterns. The KM values agree with prior literature, and fitting to a mixed inhibition model yields Ki values in the micromolar range with high \u03b1 values (>100), consistent with competitive inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The inhibitor compounds are positively charged under physiological conditions (pKa 8.5-9.5) and thus membrane-impermeable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by pKa measurements via titration (Figure 1\u2014figure supplement 1A). The measured pKa values indicate predominant protonation at physiological pH, supporting membrane impermeability and extracellular binding site accessibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "EcoDMT is inhibited by benzyl bis-isothiourea compounds through a competitive mechanism similar to hDMT1, with Ki values of 14.2 \u03bcM for EcoDMT and 3.6 \u03bcM for hDMT1, demonstrating conserved inhibition across prokaryotic and eukaryotic orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 are supported by proteoliposome-based transport assays (Figure 2, Table 1). The incomplete inhibition at high concentrations is appropriately explained by bidirectional transporter orientation (C57, C61-C62). Kinetic analysis shows increased KM with minimal vmax changes, consistent with competitive inhibition. The similar Ki values between species support conserved mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C79",
+      "C80"
+    ],
+    "result": "Crystal structure of EcoDMT-Br-BIT complex at 3.8 \u00c5 resolution reveals the inhibitor bound in an outward-facing funnel-shaped cavity at the base of the extracellular pocket, with the proximal isothiourea group positioned near metal ion coordination residues Asp51 and Asn54.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C80 are supported by X-ray crystallography data (Figure 3, Table 2-3). Anomalous difference density from bromine locates the inhibitor position. The 3.8 \u00c5 resolution is modest but adequate for defining binding mode. Electron density is clear for the aromatic ring and proximal isothiourea but absent for the distal group, consistent with flexibility. The binding position is compatible with competitive inhibition mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Homology modeling of hDMT1 based on 52% sequence similarity with EcoDMT predicts a similar inhibitor binding cavity, with high conservation in the metal coordination site (\u03b11, \u03b16) but differences in \u03b110 and \u03b111 residues that may affect inhibitor interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C93 are supported by sequence analysis and homology modeling (Figure 3\u2014figure supplement 2). The 52% similarity and 29% identity provide reasonable basis for modeling. The model appropriately identifies conserved and divergent regions. However, homology models have inherent limitations and predictions about specific interactions (C91) remain speculative until experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "ITC experiments reveal weak endothermic binding of Br-BIT to EcoDMT (KD = 34.5 \u00b1 5.0 \u03bcM) that is abolished in the D51A mutant, confirming direct interaction between the proximal isothiourea group and the metal binding site aspartate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by ITC data (Figure 4B-C, Figure 4\u2014figure supplement 1). The high-affinity signal is lost in D51A mutant while low-affinity signal persists, demonstrating specificity. The weak enthalpic signal is acknowledged but the differential behavior between WT and mutant validates the interaction. The KD of 34.5 \u03bcM is reasonably consistent with Ki of 14.2 \u03bcM from transport assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "EcoDMT mutants N456A, N456L, and N456A/S459A/Q463A on \u03b111 show only slightly decreased inhibition potency (Ki 23.8-29.3 \u03bcM vs 14.2 \u03bcM WT), indicating minimal energetic contribution of these residues to inhibitor binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by transport and inhibition assays on EcoDMT mutants (Figure 4D, Figure 4\u2014figure supplement 2, Table 1). The mutants retain transport activity and show modest 2-fold changes in Ki, supporting the conclusion that \u03b111 residues contribute minimally to binding in the prokaryotic transporter. This is consistent with the lack of electron density for the distal isothiourea group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "hDMT1 mutants show variable effects on transport: S476V, F523A, Y527A retain activity; Q475A and N520L show reduced activity; A291G, A291V, Q475F, L479F are inactive, likely due to disruption of conformational changes during transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by cellular uptake assays (Figure 5B, Figure 5\u2014figure supplement 1A). The differential effects are appropriately documented. The interpretation that inactive mutants disrupt conformational changes (C105) is reasonable based on structural knowledge but remains inferential without direct structural evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Mutagenesis of hDMT1 reveals that residues on \u03b110 (S476V) and \u03b111 (N520L, F523A) affect inhibitor potency, with differential effects for different inhibitor scaffolds, suggesting variable specificity in the distal binding region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C114 are supported by inhibition assays on hDMT1 mutants (Figure 5C-E, Table 4). The data show clear differential effects: S476V uniformly reduces potency for all compounds, while N520L and F523A show compound-specific effects. The interpretation of variable specificity is well-supported by the data. Sample sizes appear adequate (3-5 replicates).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Comparison of mutagenesis results reveals species-dependent differences in inhibitor interactions, with \u03b111 residues contributing more to binding in hDMT1 than in EcoDMT, despite overall conservation of the binding mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by comparing mutagenesis data between EcoDMT (C99-C101) and hDMT1 (C108-C112). The differential effects of equivalent mutations on \u03b111 between species are clearly demonstrated. This represents a key finding about species-specific pharmacology while maintaining overall mechanistic conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Aromatic bis-isothiourea compounds inhibit SLC11 transporters by competitive binding to an outward-facing cavity, with the aromatic group positioning the proximal isothiourea to interact with the metal coordination site, thereby preventing substrate loading and conformational transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C127 represent the integrated mechanistic model supported by crystallography (C67-C80), kinetics (C49-C52, C58-C66), ITC (C94-C98), and mutagenesis (C99-C114). The model is well-supported by converging lines of evidence. Structure-activity relationships (C125-C126) support the proposed binding mode. The mechanism is consistent across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The proximal isothiourea group strongly interacts with the metal binding site in both species, while the distal group shows conformational flexibility in EcoDMT but stronger interactions in hDMT1, as evidenced by crystallography, mutagenesis, and structure-activity relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 synthesize structural (C71, C130) and functional data (C99-C101, C108-C112, C132) to explain species differences. The interpretation is well-supported by multiple lines of evidence. The entropic explanation for asymmetric compound effects (C133) is speculative but reasonable based on thermodynamic principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Background context establishes that DMT1 is a member of the SLC11/NRAMP family responsible for intestinal iron uptake, that its upregulation is associated with hemochromatosis, and that aromatic bis-isothiourea compounds were previously identified as inhibitors, though their binding mode remained unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C38 provide literature-based background supported by appropriate citations. These establish the biological context, clinical relevance, structural knowledge of SLC11 family, and prior pharmacological work. The assessment that binding mode was unknown (C38) correctly identifies the knowledge gap addressed by this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The study provides a framework for developing improved DMT1 inhibitors with optimized potency and specificity, which could be therapeutically beneficial for treating iron overload disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C134-C136 are speculative statements about potential therapeutic applications and future drug development. While the mechanistic insights (C118-C133) provide a rational basis for these suggestions, no therapeutic validation is presented. The proposed strategy (C134) is reasonable but untested. These represent appropriate forward-looking statements but lack experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "This study provides the first detailed mechanistic insight into SLC11/NRAMP pharmacology, demonstrating that both prokaryotic and eukaryotic transporters are inhibited by a common competitive mechanism involving binding to an extracellular pocket that interferes with substrate loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 represent summary statements of the major findings. These are well-supported by the comprehensive experimental evidence including IC50 measurements (C39-C43), kinetic analysis (C49-C52, C58-C66), crystal structure (C67-C80), ITC (C94-C98), and mutagenesis (C99-C114). The claim of novelty (C7) appears justified given the prior lack of structural and mechanistic understanding (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "EcoDMT is a prokaryotic SLC11 homolog that catalyzes H+-coupled Mn2+ symport and was previously structurally characterized in an outward-facing conformation. When reconstituted in proteoliposomes, it incorporates in both orientations at approximately equal ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by citations to prior work. Claim C57 is supported by protease accessibility experiments (Figure 2\u2014figure supplement 1B) showing ~50% cleavage of C-terminal tags, indicating equal orientation ratios. This is an important control for interpreting incomplete inhibition at high concentrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C77",
+      "C78",
+      "C91"
+    ],
+    "result": "Several structural features involve speculative interpretations: Asn456 might interact with the Br atom, the distal isothiourea might adopt different conformations approaching Ser459/Gln463, and substitutions in hDMT1 could constrain the distal group conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C77-C78, C91 are explicitly speculative statements based on structural proximity or modeling. While reasonable hypotheses, they lack direct experimental validation. The speculation is appropriately qualified in the text. These represent testable predictions that could guide future work but should not be considered established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137"
+    ],
+    "result": "The coordinates of the EcoDMT-Br-BIT complex structure have been deposited in the Protein Data Bank under accession code 6TL2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 is a factual statement about data deposition that can be verified. This represents appropriate data sharing practice and enables reproducibility.",
+    "result_type": "MINOR"
+  }
+]
